@@ -23,7 +23,7 @@ This file tracks bilingual rollout for SRT documents.
 |:--|:--|:--|--:|:--|:--|
 | Core_Law | `Core_Law/` | `en/Core_Law/` | 4 | P0 | done |
 | Core | `Core/` | `en/Core/` | 12 | P0 | in_progress |
-| Physics | `Physics/` | `en/Physics/` | 9 | P1 | pending |
+| Physics | `Physics/` | `en/Physics/` | 9 | P1 | in_progress |
 | Neuroscience | `Neuroscience/` | `en/Neuroscience/` | 13 | P1 | pending |
 | AI | `AI/` | `en/AI/` | 6 | P1 | pending |
 | Philosophy | `Philosophy/` | `en/Philosophy/` | 14 | P2 | pending |
@@ -49,6 +49,10 @@ This file tracks bilingual rollout for SRT documents.
 | `Core/SRT_Core_22_Equations.md` | `en/Core/SRT_Core_22_Equations.md` | done |
 | `Core/SRT_Experimental_Core.md` | `en/Core/SRT_Experimental_Core.md` | in_progress |
 | `Core/SRT_Experimental_Applications.md` | `en/Core/SRT_Experimental_Applications.md` | in_progress |
+| `Physics/_SRT_Phys_Bridge.md` | `en/Physics/_SRT_Phys_Bridge.md` | in_progress |
+| `Physics/SRT_Quant_00_Intro.md` | `en/Physics/SRT_Quant_00_Intro.md` | in_progress |
+| `Physics/SRT_Quant_01_Selection.md` | `en/Physics/SRT_Quant_01_Selection.md` | in_progress |
+| `Physics/SRT_Quant_02_Cosmology.md` | `en/Physics/SRT_Quant_02_Cosmology.md` | in_progress |
 
 ## Per-File Template
 
