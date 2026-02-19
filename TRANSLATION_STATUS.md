@@ -25,7 +25,7 @@ This file tracks bilingual rollout for SRT documents.
 | Core | `Core/` | `en/Core/` | 12 | P0 | in_progress |
 | Physics | `Physics/` | `en/Physics/` | 9 | P1 | in_progress |
 | Neuroscience | `Neuroscience/` | `en/Neuroscience/` | 13 | P1 | in_progress |
-| AI | `AI/` | `en/AI/` | 6 | P1 | pending |
+| AI | `AI/` | `en/AI/` | 6 | P1 | in_progress |
 | Philosophy | `Philosophy/` | `en/Philosophy/` | 14 | P2 | pending |
 | Spirituality | `Spirituality/` | `en/Spirituality/` | 10 | P2 | pending |
 
@@ -71,6 +71,12 @@ This file tracks bilingual rollout for SRT documents.
 | `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | `en/Neuroscience/SRT_Neuro_08_Immune_Dist.md` | in_progress |
 | `Neuroscience/SRT_Neuro_09_Integ_Eq.md` | `en/Neuroscience/SRT_Neuro_09_Integ_Eq.md` | in_progress |
 | `Neuroscience/SRT_Neuro_10_Advanced_Models.md` | `en/Neuroscience/SRT_Neuro_10_Advanced_Models.md` | in_progress |
+| `AI/_SRT_AI_Bridge.md` | `en/AI/_SRT_AI_Bridge.md` | in_progress |
+| `AI/SRT_AI_00_Crisis.md` | `en/AI/SRT_AI_00_Crisis.md` | in_progress |
+| `AI/SRT_AI_01_Ontology.md` | `en/AI/SRT_AI_01_Ontology.md` | in_progress |
+| `AI/SRT_AI_02_Mortality_Wisdom.md` | `en/AI/SRT_AI_02_Mortality_Wisdom.md` | in_progress |
+| `AI/SRT_AI_03_Consciousness_Framework.md` | `en/AI/SRT_AI_03_Consciousness_Framework.md` | in_progress |
+| `AI/SRT_AI_Architecture.md` | `en/AI/SRT_AI_Architecture.md` | in_progress |
 
 ## Per-File Template
 
