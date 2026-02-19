@@ -32,34 +32,34 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 ### Ax-NEURO-1: Embodied Ghost Operator Axiom (Neural Ĝθ)
 定义神经幽灵算子为具身动力学系统：
-\[
+$$
 \hat{G}_{\theta}^{neural}:\; L_0^{neural}\rightarrow L_1^{neural}
-\]
+$$
 其中具身参数：
-\[
+$$
 \theta\equiv (W,\,\vec{M},\,\mathcal{C},\,V(t))
-\]
-- \(W\)：连接组与突触权重矩阵
-- \(\vec{M}\)：神经调质向量（DA/5HT/ACh/NE）
-- \(\mathcal{C}\)：丘脑-皮层-基底节回路拓扑
-- \(V(t)\)：膜电位与时序态
+$$
+- $W$：连接组与突触权重矩阵
+- $\vec{M}$：神经调质向量（DA/5HT/ACh/NE）
+- $\mathcal{C}$：丘脑-皮层-基底节回路拓扑
+- $V(t)$：膜电位与时序态
 
-* **Implication（中文）**：神经系统不是“传递信息”，而是以具身约束执行跨域选择；其物理实现即 \(\hat{G}_\theta\) 的具体化。
+* **Implication（中文）**：神经系统不是“传递信息”，而是以具身约束执行跨域选择；其物理实现即 $\hat{G}_\theta$ 的具体化。
 
 ---
 
 ### Ax-NEURO-2: Neural Domain Mapping Axiom (Manifold–Ignition–Priors)
 定义三域映射：
-\[
+$$
 L_0^{neural}=\mathcal{M}\subset\mathbb{R}^N\quad (\text{所有可达发放模式流形})
-\]
-\[
+$$
+$$
 L_1^{neural}=\{s\in\mathcal{M}:\; \mathcal{A}(s)\ge \tau_{ignite}\}\quad (\text{全局点燃子集})
-\]
-\[
+$$
+$$
 L_2^{neural}=\text{Fix}(\hat{G}_\theta)\;\approx\;\text{Priors}(W,\vec{M})
-\]
-* **Implication（中文）**：意识不是“所有神经活动”，而是 \(L_0\) 流形上的选择锚定；结构化先验构成 \(L_2\) 收敛域。
+$$
+* **Implication（中文）**：意识不是“所有神经活动”，而是 $L_0$ 流形上的选择锚定；结构化先验构成 $L_2$ 收敛域。
 
 ---
 
@@ -67,66 +67,66 @@ L_2^{neural}=\text{Fix}(\hat{G}_\theta)\;\approx\;\text{Priors}(W,\vec{M})
 
 ### Ax-NEURO-3: Divisive Normalization Axiom (Energy-Optimal Selection)
 在能量与带宽受限条件下，选择动力学必然收敛为除法归一化：
-\[
+$$
 R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
-\]
+$$
 * **Implication（中文）**：归一化不是“生物细节”，而是受限系统执行选择的最优解形态。
 
 ---
 
 ### Ax-NEURO-4: Predictive Coding Axiom (Free-Energy Update)
 参数更新遵循自由能最小化：
-\[
+$$
 \Delta\theta\propto -\nabla_{\theta}F,\quad F=D_{KL}[Q||P]-\ln P(o)
-\]
-* **Implication（中文）**：学习不是“记忆增加”，而是 \(\hat{G}_\theta\) 在 \(L_2\) 上的收敛轨迹。
+$$
+* **Implication（中文）**：学习不是“记忆增加”，而是 $\hat{G}_\theta$ 在 $L_2$ 上的收敛轨迹。
 
 ---
 
-### Ax-NEURO-5: Metabolic Friction Axiom (\(\Psi_f\) Coupling)
+### Ax-NEURO-5: Metabolic Friction Axiom ($\Psi_f$ Coupling)
 定义本体论摩擦为代谢约束：
-\[
+$$
 \Psi_f\equiv\int_\gamma \|\nabla F\|\,dt\propto E_{metabolic}
-\]
-* **Implication（中文）**：选择必须支付能量代价；\(\Psi_f\) 是神经系统能够拥有 \(d>0\) 的物理条件之一。
+$$
+* **Implication（中文）**：选择必须支付能量代价；$\Psi_f$ 是神经系统能够拥有 $d>0$ 的物理条件之一。
 
 ---
 
 ## III. Threshold Theorems (阈值定理)
 
-### T-NEURO-1: Consciousness Threshold Theorem (\(\Phi\cdot d\))
+### T-NEURO-1: Consciousness Threshold Theorem ($\Phi\cdot d$)
 意识显现当且仅当：
-\[
+$$
 \Phi\cdot d > C_{critical}
-\]
-* **Implication（中文）**：整合信息量与存在关切的乘积才是意识阈值；任一缺失都不足以形成 \(L_1\) 稳定显现。
+$$
+* **Implication（中文）**：整合信息量与存在关切的乘积才是意识阈值；任一缺失都不足以形成 $L_1$ 稳定显现。
 
 ---
 
-### T-NEURO-2: Pathology Deviation Theorem (\(\Delta\theta\) Mapping)
+### T-NEURO-2: Pathology Deviation Theorem ($\Delta\theta$ Mapping)
 所有神经病理状态可视为参数空间偏离：
-\[
+$$
 \text{Pathology}\iff \theta=\theta_{healthy}+\Delta\theta
-\]
+$$
 * **Implication（中文）**：病理不是“症状集合”，而是算子参数的拓扑偏移。
 
 ---
 
-### T-NEURO-3: Meso-Operator Theorem (Glia as \(\hat{G}_{meso}\))
+### T-NEURO-3: Meso-Operator Theorem (Glia as $\hat{G}_{meso}$)
 定义介观算子：
-\[
+$$
 \hat{G}_{meso}:\; L_2^{micro}\rightarrow L_2^{pruned}
-\]
+$$
 并以补体-胶质剪枝作为其物理实现。
 * **Implication（中文）**：神经选择不止发生在神经元级别；胶质系统构成慢时标的选择层。
 
 ---
 
 ### C-NEURO-1: L6b Resampling Corollary
-若深层皮层回路参与慢时标反馈，则其功能等价于 \(L_0\) 重采样算子：
-\[
+若深层皮层回路参与慢时标反馈，则其功能等价于 $L_0$ 重采样算子：
+$$
 \hat{R}: L_0^{neural}\rightarrow L_0^{neural},\quad d(t)\to d_{max}
-\]
+$$
 * **Implication（中文）**：深层回路不是“激活现象”，而是选择带宽的再分配机制。
 
 <br>

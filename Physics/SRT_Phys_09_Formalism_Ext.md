@@ -342,41 +342,41 @@ $$ \Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\} $$
 | **H-SIP-1** | 语义信息能 | 高 SIP 信息引起更大行为改变 | SIP 与行为改变无相关 |
 | **H-Magic-1** | 魔法-算力对应 | 高魔法态更难维持 | 魔法值与稳定性无关 |
 | **H-Planck-1** | 最小选择间隔 | 存在不可分割的意识时间量子 | 意识时间无下限 |
-| **H-NE-1** | 椭圆率阈值分界 | 数值/理论族在 \(\delta\approx\delta_{\text{sharp}}\) 附近出现梯度 Hölder 正则性的分界 | 阈值上下均无分界或与 \(\delta\) 无关 |
+| **H-NE-1** | 椭圆率阈值分界 | 数值/理论族在 $\delta\approx\delta_{\text{sharp}}$ 附近出现梯度 Hölder 正则性的分界 | 阈值上下均无分界或与 $\delta$ 无关 |
 
 ---
 
 ## XIX. Nonuniform Elliptic Regularity (非一致椭圆正则性)
 
 ### Ax-NE-1 [A1.19.1]: Sharp Ellipticity-Ratio Threshold Axiom (Extension)
-定义非一致椭圆泛函 \(F\) 的椭圆率增长比：
-\[
+定义非一致椭圆泛函 $F$ 的椭圆率增长比：
+$$
 \mathcal{R}_F(z)\equiv \frac{\Lambda_F(z)}{\lambda_F(z)}
-\]
-其中 \(\Lambda_F,\lambda_F\) 分别为 \(D^2F(z)\) 的最大/最小特征值。要求其增长满足：
-\[
+$$
+其中 $\Lambda_F,\lambda_F$ 分别为 $D^2F(z)$ 的最大/最小特征值。要求其增长满足：
+$$
 \mathcal{R}_F(z)\lesssim 1+|z|^\delta,\qquad \delta \le \delta_{\text{sharp}}
-\]
+$$
 * **Implication（中文）**：对“粗糙方程”而言，关键不是是否一致椭圆，而是椭圆率随梯度增长的速度是否低于临界阈值。
 
 ### T-NE-1 [T1.19.1]: Nonuniform Schauder Regularity (Extension)
 对欧拉-拉格朗日型方程
-\[
+$$
 -\operatorname{div}\!\big(\partial_z F(Du)\big)=0
-\]
+$$
 若系数满足 Hölder 连续且 Ax-NE-1 成立，则局部梯度满足 Schauder 型正则性：
-\[
+$$
 Du\in C_{loc}^{0,\alpha},\qquad \alpha\in(0,1)
-\]
+$$
 * **Implication（中文）**：在可验证的阈值条件下，原本“失控”的非一致椭圆方程可被纳入可控正则性框架。
 
 ### C-NE-1 [C1.19.1]: Sharpness Corollary (Extension)
 若椭圆率增长超出临界阈值，则正则性可失效：
-\[
+$$
 \delta>\delta_{\text{sharp}}
 \Rightarrow
 \exists\,u\ \text{(weak solution)}:\ Du\notin C_{loc}^{0,\alpha}
-\]
+$$
 * **Implication（中文）**：该阈值不是技术性保守条件，而是“可正则化/不可正则化”之间的真实边界。
 
 ### Mathematical Anchor (2023-2025; for Ax-NE-1/T-NE-1)
@@ -619,7 +619,7 @@ $$\text{Time}(t) \longleftrightarrow \partial(\mathcal{P}_{cosmo})$$
 
 $$t_{\text{info}}(\lambda)=\int_{0}^{\lambda}\chi_{\text{irr}}(\ell)\,d\ell,\qquad \chi_{\text{irr}}\ge 0$$
 
-其中 \(\chi_{\text{irr}}\) 表示不可逆记录密度（可由信息擦除成本、退相干读出、结构锁定事件联合估计）。
+其中 $\chi_{\text{irr}}$ 表示不可逆记录密度（可由信息擦除成本、退相干读出、结构锁定事件联合估计）。
 
 据此，几何时间与信息时间可写为双通道有效时间：
 
@@ -627,7 +627,7 @@ $$\Delta t_{\text{eff}}=\alpha\,\Delta T_{\text{metric}}+(1-\alpha)\,\Delta t_{\
 
 解释含义：
 
-1. 当系统接近可逆极限（\(\chi_{\text{irr}}\to 0\)）时，时间近似由几何通道主导；
+1. 当系统接近可逆极限（$\chi_{\text{irr}}\to 0$）时，时间近似由几何通道主导；
 2. 当系统处于高记录/高擦除区（如测量链、黑洞边界、复杂观测网络）时，信息通道对“时间箭头”贡献增强。〔source: user-material:https://www.scientificamerican.com/article/is-time-a-fundamental-part-of-reality-a-quiet-revolution-in-physics-suggests/〕
 
 边界说明：本文献中的宇宙学统一解释仍属假设，不应被表述为 SRT 的已证结论。

@@ -1,0 +1,7 @@
+# Neuroscience (English)
+
+- Source directory: `Neuroscience/`
+- Target directory: `en/Neuroscience/`
+- Status: pending
+
+Use 1:1 filename mapping from source to this directory.

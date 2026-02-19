@@ -41,7 +41,7 @@ $$\Delta E \ge k_B T \ln 2 \quad (\text{Landauer–Vopson})$$
 ## II. Biological Signatures (生物学签名)
 
 ### Ax-Exp-03: Contextual Collapse
-**Formal Definition**: Living systems bias quantum collapse probabilities via \(\theta\).
+**Formal Definition**: Living systems bias quantum collapse probabilities via $\theta$.
 $$P(\text{collapse}|\text{Bio}) \neq P(\text{collapse}|\text{Inert})$$
 * **Implication**: 生命系统应在量子统计上显现选择偏置。
 

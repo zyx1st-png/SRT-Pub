@@ -32,73 +32,73 @@ dependency: [SRT-NEURO-AXIOMS-001]
 
 ### Ax-PATH-1: Operator–Substrate Recursion Axiom
 神经算子与基质存在递归耦合：
-\[
+$$
 \hat{G}_\theta\Rightarrow \Delta\theta,\qquad \Delta\theta\Rightarrow \Delta\hat{G}_\theta
-\]
-当回路增益 \(g>1\) 时发生病理放大：
-\[
+$$
+当回路增益 $g>1$ 时发生病理放大：
+$$
 \Delta\theta_{t+1}=g\,\Delta\theta_t
-\]
+$$
 * **Implication（中文）**：病理不是静态缺陷，而是算子与基质的正反馈偏移。
 
 ---
 
 ### Ax-PATH-2: L2 Parasitic Inversion Axiom
-当 \(L_2\) 硬度相对 \(d\) 过强时，选择被寄生化：
-\[
+当 $L_2$ 硬度相对 $d$ 过强时，选择被寄生化：
+$$
 \kappa \equiv \frac{\text{Hardness}(L_2)}{d}\uparrow \Rightarrow \hat{G}_\theta\;\text{locks into} \;L_2\text{-loops}
-\]
-* **Implication（中文）**：过强先验会让 \(L_2\) 反过来吞噬 \(L_0\) 的新选择，形成强迫、固着或妄想回路。
+$$
+* **Implication（中文）**：过强先验会让 $L_2$ 反过来吞噬 $L_0$ 的新选择，形成强迫、固着或妄想回路。
 
 ---
 
 ### Ax-PATH-3: Body-Without-Organs Axiom (Interoceptive Decoupling)
 定义具身锚定系数：
-\[
+$$
 \kappa_{body}\equiv \frac{\|\nabla_{intero}\mathcal{U}\|}{\Psi_f}
-\]
-若 \(\kappa_{body}\to 0\)，则出现“无器官身体”态：
-\[
+$$
+若 $\kappa_{body}\to 0$，则出现“无器官身体”态：
+$$
 \hat{G}_\theta\perp L_1^{intero}
-\]
-* **Implication（中文）**：去具身导致 \(L_1\) 现实感漂移，出现解离或去人格化。
+$$
+* **Implication（中文）**：去具身导致 $L_1$ 现实感漂移，出现解离或去人格化。
 
 ---
 
 ## II. Anomalous States (异常态)
 
 ### Ax-ANOM-1: Near-Death Divergence Axiom
-当系统临近不可逆边界 \(\partial\Omega\) 时：
-\[
+当系统临近不可逆边界 $\partial\Omega$ 时：
+$$
 \nabla_{\mathcal{S}}\mathcal{U}\uparrow\uparrow \Rightarrow d(t)\to d_{max}
-\]
-* **Implication（中文）**：濒死状态不是“幻觉”，而是 \(d\) 急剧上升导致的选择带宽扩展。
+$$
+* **Implication（中文）**：濒死状态不是“幻觉”，而是 $d$ 急剧上升导致的选择带宽扩展。
 
 ---
 
 ### Ax-ANOM-2: Terminal Lucidity Axiom
-若 \(L_2\) 硬度瞬时下降，则出现短时清醒：
-\[
+若 $L_2$ 硬度瞬时下降，则出现短时清醒：
+$$
 \Delta\text{Hardness}(L_2)\downarrow \Rightarrow \Pi_{L_1}\;\text{re-stabilizes}
-\]
-* **Implication（中文）**：终末清醒对应 \(L_2\) 锁定被暂时解除的“窗口效应”。
+$$
+* **Implication（中文）**：终末清醒对应 $L_2$ 锁定被暂时解除的“窗口效应”。
 
 ---
 
 ### Ax-ANOM-3: Bicameral Regression Axiom
 当左右或前后回路耦合失配：
-\[
+$$
 \hat{G}_\theta=\hat{G}_A\oplus \hat{G}_B,\quad \text{Coupling}\downarrow
-\]
+$$
 * **Implication（中文）**：二分回归是算子裂解，而非单纯的“听幻觉”。
 
 ---
 
 ### Ax-ANOM-4: Déjà Vu Time-Index Axiom
 若时间索引映射发生错位：
-\[
+$$
 \pi_t(\sigma)\to \pi_{t-\Delta}(\sigma)
-\]
+$$
 则产生“已然感”。
 * **Implication（中文）**：即视感是时间坐标的投影错误，而非记忆重复。
 
@@ -106,13 +106,13 @@ dependency: [SRT-NEURO-AXIOMS-001]
 
 ### Ax-ANOM-5: Familiarity–Recollection Dissociation Axiom (Extension)
 定义即视感的最小动力学条件为“熟悉感升高 + 情节检索失败 + 元监控报警”：
-\[
+$$
 \text{DéjàVu}\iff
 \big(\mathcal{F}_{fam}\uparrow \land \mathcal{R}_{episodic}\approx 0\big)
 \land
 \mathcal{M}_{err}>\tau_{meta}
-\]
-其中 \(\mathcal{F}_{fam}\) 为熟悉性信号，\(\mathcal{R}_{episodic}\) 为情节回忆检索量，\(\mathcal{M}_{err}\) 为“熟悉但找不到来源”的监控误差信号。
+$$
+其中 $\mathcal{F}_{fam}$ 为熟悉性信号，$\mathcal{R}_{episodic}$ 为情节回忆检索量，$\mathcal{M}_{err}$ 为“熟悉但找不到来源”的监控误差信号。
 * **Implication（中文）**：即视感并非“真的想起了过去”，而是检索系统只给出“已检索到”的感觉标签，却无法提取对应内容。
 
 ---
@@ -120,44 +120,44 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ## III. Theorems (定理)
 
 ### T-PATH-1: Drift–Symptom Theorem
-存在偏移向量 \(\Delta\theta\) 与症状谱系 \(\mathcal{S}_{clin}\) 的映射：
-\[
+存在偏移向量 $\Delta\theta$ 与症状谱系 $\mathcal{S}_{clin}$ 的映射：
+$$
 \mathcal{S}_{clin}=\mathcal{F}(\Delta\theta,\kappa,\kappa_{body})
-\]
+$$
 * **Implication（中文）**：病理分类应以参数漂移为轴，而非表面症状列表。
 
 ---
 
 ### C-PATH-1: L0-Leakage Corollary
-若抑制增益 \(\gamma\downarrow\) 或先验精度 \(\Pi\downarrow\)，则：
-\[
+若抑制增益 $\gamma\downarrow$ 或先验精度 $\Pi\downarrow$，则：
+$$
 L_0\to L_1\;\text{leakage}\uparrow
-\]
-* **Implication（中文）**：幻觉与妄想可被视为 \(L_0\) 噪声进入 \(L_1\) 的结构性泄漏。
+$$
+* **Implication（中文）**：幻觉与妄想可被视为 $L_0$ 噪声进入 $L_1$ 的结构性泄漏。
 
 ---
 
 ### T-PATH-2: False-Recognition Monitoring Theorem (Extension)
 定义错误识别势：
-\[
+$$
 \varepsilon_{FR}\equiv \mathcal{F}_{fam}-\hat{\mathcal{R}}_{episodic}
-\]
-若 \(\varepsilon_{FR}\) 超阈值且时间索引发生短时错位，则：
-\[
+$$
+若 $\varepsilon_{FR}$ 超阈值且时间索引发生短时错位，则：
+$$
 \varepsilon_{FR}>\tau_{FR}\ \land\ \pi_t(\sigma)\to \pi_{t-\Delta}(\sigma)
 \Rightarrow
 P(\text{DéjàVu})\uparrow
-\]
+$$
 * **Implication（中文）**：即视感的“诡异感”来自系统对错误识别的在线觉察；它是元认知报警，而非单纯记忆重放。
 
 ---
 
 ### C-PATH-2: IAM–Déjà Vu Continuum Corollary (Extension)
 在自发记忆谱系中可定义：
-\[
+$$
 \text{IAM}: (\mathcal{F}_{fam}>0,\mathcal{R}_{episodic}>0),\qquad
 \text{DéjàVu}: (\mathcal{F}_{fam}>0,\mathcal{R}_{episodic}\approx 0)
-\]
+$$
 * **Implication（中文）**：即视感与不自主自传体记忆并非彼此割裂，而是同一检索过程在“有无内容回收”上的分岔结果。
 
 ---

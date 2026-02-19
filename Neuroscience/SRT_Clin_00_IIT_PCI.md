@@ -31,57 +31,57 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ## I. IIT as Selection Capacity (IIT 作为选择能力)
 
 ### Ax-IIT-1: Irreducibility–Selection Axiom
-定义整合信息 \(\Phi\) 为选择算子不可分解性的度量：
-\[
+定义整合信息 $\Phi$ 为选择算子不可分解性的度量：
+$$
 \Phi(\hat{G}_\theta) \equiv \min_{\text{cut}} \Delta \mathcal{I}(\hat{G}_\theta)\;\approx\;\text{Irreducibility}(\hat{G}_\theta)
-\]
-* **Implication（中文）**：\(\Phi\) 不等于“体验量”，而是选择算子的结构能力；它刻画 \(\hat{G}_\theta\) 是否可被分解为互不耦合的子算子。
+$$
+* **Implication（中文）**：$\Phi$ 不等于“体验量”，而是选择算子的结构能力；它刻画 $\hat{G}_\theta$ 是否可被分解为互不耦合的子算子。
 
 ---
 
-### Ax-IIT-2: Maximum-\(\Phi\) Anchoring Axiom
+### Ax-IIT-2: Maximum-$\Phi$ Anchoring Axiom
 显现态对应于最大不可约复合体的稳定锚定：
-\[
+$$
 \sigma \in L_1 \iff \sigma = \arg\max_{\sigma'} \Phi(\hat{G}_\theta[\sigma'])
-\]
-* **Implication（中文）**：IIT 的“最大 \(\Phi\)”在 SRT 中对应 \(L_1\) 的锚定优先级，但是否显现仍需 \(d\) 的风险梯度。
+$$
+* **Implication（中文）**：IIT 的“最大 $\Phi$”在 SRT 中对应 $L_1$ 的锚定优先级，但是否显现仍需 $d$ 的风险梯度。
 
 ---
 
-### Ax-IIT-3: \(\Phi\)–\(d\) Complementarity Axiom
+### Ax-IIT-3: $\Phi$–$d$ Complementarity Axiom
 定义意识阈值：
-\[
+$$
 \Phi\cdot d > C_{critical}
-\]
-* **Implication（中文）**：高 \(\Phi\) 仅提供结构能力；缺少 \(d\) 时无法生成稳定显现。
+$$
+* **Implication（中文）**：高 $\Phi$ 仅提供结构能力；缺少 $d$ 时无法生成稳定显现。
 
 ---
 
 ## II. Clinical Metrics as Operator Probes (临床度量即算子探针)
 
 ### Ax-CLIN-1: Blindsight Dissociation Axiom
-盲视定义为 \(L_0\) 处理存在而 \(L_1\) 锚定缺失：
-\[
+盲视定义为 $L_0$ 处理存在而 $L_1$ 锚定缺失：
+$$
 I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
-\]
+$$
 * **Implication（中文）**：盲视是“智能与意识分离”的生物学证据：有处理无显现。
 
 ---
 
 ### Ax-CLIN-2: PCI as Selection Capacity Axiom
 定义 PCI 为扰动后系统分化×整合的复杂度：
-\[
+$$
 \text{PCI}\propto \int_\Omega \mathcal{D}(\sigma)\cdot\mathcal{I}(\sigma)\,d\sigma
-\]
-* **Implication（中文）**：PCI 测量的是 \(\hat{G}_\theta\) 的“可选择容量”，而非直接的体验量。
+$$
+* **Implication（中文）**：PCI 测量的是 $\hat{G}_\theta$ 的“可选择容量”，而非直接的体验量。
 
 ---
 
 ### Ax-CLIN-3: L6b Resampling Axiom
 深层皮层 L6b 爆发放电构成重采样算子：
-\[
+$$
 \hat{R}_{L6b}: L_0^{neural}\rightarrow L_0^{neural},\quad d(t)\uparrow,\;\text{Inertia}\downarrow
-\]
+$$
 * **Implication（中文）**：L6b 不是“觉醒指标”，而是改变选择带宽的动力学开关。
 
 ---
@@ -89,29 +89,29 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 ## III. Theorems & Corollaries (定理与推论)
 
 ### T-CLIN-1: PCI–d Coupling Theorem
-若任务引入不可逆风险 \(\Delta\mathcal{S}\uparrow\)，则：
-\[
+若任务引入不可逆风险 $\Delta\mathcal{S}\uparrow$，则：
+$$
 \Delta d>0\Rightarrow \Delta \text{PCI}>0
-\]
+$$
 * **Implication（中文）**：PCI 应随关切梯度变化而移动，说明它不仅是结构指标，也是动力学指标。
 
 ---
 
 ### T-CLIN-2: Blindsight Non-Report Theorem
-若 \(\hat{G}_\theta\) 无法完成锚定，则：
-\[
+若 $\hat{G}_\theta$ 无法完成锚定，则：
+$$
 \text{Report}(\sigma)=0\quad\text{even if}\quad I(\text{Input};\text{Output})>0
-\]
+$$
 * **Implication（中文）**：无显现不等于无处理；“看见”需要锚定而非仅仅计算。
 
 ---
 
 ### C-CLIN-1: PCI Threshold Corollary
-若 \(\text{PCI}<\tau_{clin}\)（经验阈值），则：
-\[
+若 $\text{PCI}<\tau_{clin}$（经验阈值），则：
+$$
 \hat{G}_\theta\;\text{fragmented}\Rightarrow L_1\;\text{unstable}
-\]
-* **Implication（中文）**：低 PCI 代表 \(L_1\) 维持失败，而非单纯“意识降低”。
+$$
+* **Implication（中文）**：低 PCI 代表 $L_1$ 维持失败，而非单纯“意识降低”。
 
 <br>
 <br>

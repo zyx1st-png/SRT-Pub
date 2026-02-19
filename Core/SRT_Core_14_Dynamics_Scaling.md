@@ -51,7 +51,7 @@ $$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f + \text{Learning}$$
 * **Implication**: 自我维持是摩擦梯度与学习更新的平衡过程。
 
 ### Ax-Auto-02: Insight Phase Transition
-**Formal Definition**: Insight is a topological phase transition triggered by critical \(\theta\).
+**Formal Definition**: Insight is a topological phase transition triggered by critical $\theta$.
 $$\text{Insight} = \hat{G}_\theta[\theta \to \theta_c^+] - \hat{G}_\theta[\theta \to \theta_c^-]$$
 * **Implication**: 顿悟是结构性相变而非渐进改良。
 

@@ -32,19 +32,19 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 ### Ax-NEURO-MECH-1: Neural Manifold Axiom (State Space)
 定义神经态为高维流形上的向量场：
-\[
+$$
 \sigma(t)\in \mathcal{M}\subset\mathbb{R}^N,\qquad \dot{\sigma}=F(\sigma,\theta,u)
-\]
-其中 \(\theta\) 为具身参数，\(u\) 为感觉—动作输入。
+$$
+其中 $\theta$ 为具身参数，$u$ 为感觉—动作输入。
 * **Implication（中文）**：神经系统的“状态”不是离散标签，而是流形上的连续轨迹；选择即在流形上生成稳定轨迹。
 
 ---
 
 ### Ax-NEURO-MECH-2: Selection Flow Axiom (L0→L1 Projection)
-定义神经选择为从 \(L_0^{neural}\) 到 \(L_1^{neural}\) 的投影：
-\[
+定义神经选择为从 $L_0^{neural}$ 到 $L_1^{neural}$ 的投影：
+$$
 \Pi_{ignite}: \mathcal{M}\rightarrow \mathcal{M}_*,\quad \mathcal{M}_*\equiv\{\sigma: \mathcal{A}(\sigma)\ge \tau_{ignite}\}
-\]
+$$
 * **Implication（中文）**：点燃不是“活动增强”，而是跨域投影的可计算阈值。
 
 ---
@@ -53,29 +53,29 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 ### Ax-NEURO-MECH-3: Canonical Normalization Axiom
 在代谢约束下，选择动力学必然收敛为除法归一化：
-\[
+$$
 R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
-\]
+$$
 * **Implication（中文）**：归一化是选择算子的最优形式，不是经验性“电路细节”。
 
 ---
 
 ### T-NEURO-MECH-1: Energy–Information Extremum Theorem
 令目标泛函：
-\[
+$$
 \mathcal{J}=H(\sigma)-\lambda E(\sigma)
-\]
-在 \(\delta\mathcal{J}=0\) 条件下，稳态解必然满足 Ax-NEURO-MECH-3 的归一化结构。
+$$
+在 $\delta\mathcal{J}=0$ 条件下，稳态解必然满足 Ax-NEURO-MECH-3 的归一化结构。
 * **Implication（中文）**：神经归一化是信息最大化与代谢成本最小化的唯一交点。
 
 ---
 
 ### Ax-NEURO-MECH-4: Predictive Update Axiom
-学习对应 \(\theta\) 的自由能梯度下降：
-\[
+学习对应 $\theta$ 的自由能梯度下降：
+$$
 \Delta\theta\propto-\nabla_\theta F,\quad F=D_{KL}[Q||P]-\ln P(o)
-\]
-* **Implication（中文）**：学习是 \(L_2\) 收敛过程，不是 \(L_1\) 的“记忆堆叠”。
+$$
+* **Implication（中文）**：学习是 $L_2$ 收敛过程，不是 $L_1$ 的“记忆堆叠”。
 
 ---
 
@@ -83,28 +83,28 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 ### Ax-NEURO-MECH-5: Loop-Gating Axiom (Thalamo–Basal Gate)
 定义门控算子：
-\[
+$$
 \mathcal{G}_{gate}: \mathcal{M}\rightarrow \mathcal{M}\quad \text{with}\quad \mathcal{G}_{gate}=\mathcal{G}_{thal}\circ\mathcal{G}_{bg}
-\]
-* **Implication（中文）**：丘脑—基底节回路不是“通路”，而是选择门控结构，决定哪些轨迹能够被投影为 \(L_1\)。
+$$
+* **Implication（中文）**：丘脑—基底节回路不是“通路”，而是选择门控结构，决定哪些轨迹能够被投影为 $L_1$。
 
 ---
 
 ### Ax-NEURO-MECH-6: Meso-Operator Axiom (Glial Pruning)
 定义介观算子：
-\[
+$$
 \hat{G}_{meso}: L_2^{micro}\rightarrow L_2^{pruned},\quad P(\text{prune})\propto C3/C4\cdot \mu_{glia}
-\]
-* **Implication（中文）**：胶质剪枝不是“维护”，而是慢时标选择，对 \(L_2\) 结构进行拓扑修剪。
+$$
+* **Implication（中文）**：胶质剪枝不是“维护”，而是慢时标选择，对 $L_2$ 结构进行拓扑修剪。
 
 ---
 
 ### T-NEURO-MECH-2: Stability–Pruning Theorem
-若 \(\hat{G}_{meso}\) 过度偏置，则：
-\[
+若 $\hat{G}_{meso}$ 过度偏置，则：
+$$
 |\text{Aut}(L_2)|\uparrow\Rightarrow \text{Plasticity}\downarrow
-\]
-* **Implication（中文）**：过度剪枝会提高 \(L_2\) 硬度并降低可塑性，形成病理锁定。
+$$
+* **Implication（中文）**：过度剪枝会提高 $L_2$ 硬度并降低可塑性，形成病理锁定。
 
 ---
 
@@ -112,18 +112,18 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 ### Ax-NEURO-MECH-7: Ignition Phase Axiom
 点燃为相变条件：
-\[
+$$
 \mathcal{A}(\sigma)\ge\tau_{ignite}\quad\land\quad \Phi\cdot d > C_{critical}
-\]
+$$
 * **Implication（中文）**：点燃不是简单激活，而是“整合度 × 关切梯度”超过阈值的相变。
 
 ---
 
 ### T-NEURO-MECH-3: Discrete Frame Theorem
 显现为离散更新帧：
-\[
+$$
 L_1(t)=\sum_n \text{Frame}_n\,\delta(t-t_n),\quad t_n\approx n\cdot\Delta t_{\gamma}
-\]
+$$
 * **Implication（中文）**：意识连续感来自离散帧的高频更新，而非连续流。
 
 ---
@@ -131,19 +131,19 @@ L_1(t)=\sum_n \text{Frame}_n\,\delta(t-t_n),\quad t_n\approx n\cdot\Delta t_{\ga
 ## V. Pathology as Parameter Drift (病理作为参数漂移)
 
 ### Ax-NEURO-MECH-8: Parameter-Drift Axiom
-定义病理为 \(\theta\) 的拓扑偏移：
-\[
+定义病理为 $\theta$ 的拓扑偏移：
+$$
 \theta=\theta_{healthy}+\Delta\theta
-\]
+$$
 * **Implication（中文）**：精神病理不是“症状集合”，而是算子参数的系统性偏离。
 
 ---
 
 ### C-NEURO-MECH-1: Pathology Typing Corollary
-若 \(\Delta\theta\) 作用于精度参数 \(\Pi\)、抑制增益 \(\gamma\)、价值梯度 \(\nabla\mathcal{U}\)，则出现不同病理谱系：
-\[
+若 $\Delta\theta$ 作用于精度参数 $\Pi$、抑制增益 $\gamma$、价值梯度 $\nabla\mathcal{U}$，则出现不同病理谱系：
+$$
 \Delta\theta=(\Delta\Pi,\Delta\gamma,\Delta\nabla\mathcal{U})\Rightarrow \text{Syndrome Class}
-\]
+$$
 * **Implication（中文）**：病理分类应由参数偏移模式决定，而不是由表面症状决定。
 
 <br>

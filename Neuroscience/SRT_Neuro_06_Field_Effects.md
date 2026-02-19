@@ -31,20 +31,20 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ## I. Field Coupling (场耦合)
 
 ### Ax-FIELD-1: Ephaptic Binding Axiom
-定义电场耦合项 \(\mathcal{E}(x,t)\) 进入神经动力学：
-\[
+定义电场耦合项 $\mathcal{E}(x,t)$ 进入神经动力学：
+$$
 \dot{\sigma}=F(\sigma,\theta)+\alpha\,\nabla \mathcal{E}(x,t)
-\]
-* **Implication（中文）**：电场不是“背景噪声”，而是 \(\hat{G}_\theta\) 的额外耦合通道，参与选择同步。
+$$
+* **Implication（中文）**：电场不是“背景噪声”，而是 $\hat{G}_\theta$ 的额外耦合通道，参与选择同步。
 
 ---
 
 ### Ax-FIELD-2: Nested-Operator Axiom
 当场耦合产生跨区同步时形成嵌套算子：
-\[
+$$
 \hat{G}_{macro}=\mathcal{C}_{field}\circ \hat{G}_{micro}
-\]
-* **Implication（中文）**：场效应提供多尺度算子叠加，使 \(L_0\to L_1\) 的选择具备全脑一致性。
+$$
+* **Implication（中文）**：场效应提供多尺度算子叠加，使 $L_0\to L_1$ 的选择具备全脑一致性。
 
 ---
 
@@ -52,19 +52,19 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ### Ax-TEMP-1: Operator Refresh Rate Axiom
 定义选择刷新率：
-\[
+$$
 \nu_{refresh}=\frac{1}{\Delta t_{frame}}
-\]
+$$
 * **Implication（中文）**：刷新率决定显现帧的连续感；过低会导致现实“断帧”。
 
 ---
 
 ### Ax-TEMP-2: Beta Gating Axiom
-定义 \(\beta\) 节律为选择带宽门控：
-\[
+定义 $\beta$ 节律为选择带宽门控：
+$$
 B_{sel}(t)=B_0\cdot g(\beta(t))
-\]
-* **Implication（中文）**：\(\beta\) 不是“节律标签”，而是选择带宽的动态开关。
+$$
+* **Implication（中文）**：$\beta$ 不是“节律标签”，而是选择带宽的动态开关。
 
 ---
 
@@ -72,18 +72,18 @@ B_{sel}(t)=B_0\cdot g(\beta(t))
 
 ### Ax-QUALIA-1: Resonome Encoding Axiom
 定义共振组为特征模态集合：
-\[
+$$
 \mathcal{R}=\{\lambda_i,\phi_i\},\quad \sigma(t)=\sum_i a_i\phi_i\,e^{\lambda_i t}
-\]
+$$
 * **Implication（中文）**：感质不是“内容标签”，而是系统共振模态的谱结构。
 
 ---
 
 ### Ax-QUALIA-2: L2 Incompleteness Axiom
-任何 \(L_2\) 结构描述都无法完全重建 \(\mathcal{R}\)：
-\[
+任何 $L_2$ 结构描述都无法完全重建 $\mathcal{R}$：
+$$
 \Pi_{L_2}(\mathcal{R})\neq \mathcal{R}
-\]
+$$
 * **Implication（中文）**：感质具有不可还原的动力学面向，不能被纯符号完全穷尽。
 
 ---
@@ -91,20 +91,20 @@ B_{sel}(t)=B_0\cdot g(\beta(t))
 ## IV. Theorems (定理)
 
 ### T-FIELD-1: Coherence–Binding Theorem
-若场相干度 \(\Gamma\) 超过阈值，则绑定稳定：
-\[
+若场相干度 $\Gamma$ 超过阈值，则绑定稳定：
+$$
 \Gamma>\Gamma_c \Rightarrow \Delta\phi_i\to 0
-\]
+$$
 * **Implication（中文）**：场相干度是绑定稳定性的物理指标。
 
 ---
 
 ### C-FIELD-1: Field-Disruption Corollary
-若 \(\Gamma\downarrow\)，则显现碎裂概率上升：
-\[
+若 $\Gamma\downarrow$，则显现碎裂概率上升：
+$$
 P(\text{fragment})\uparrow
-\]
-* **Implication（中文）**：场相干破坏直接导致 \(L_1\) 统一性下降。
+$$
+* **Implication（中文）**：场相干破坏直接导致 $L_1$ 统一性下降。
 
 <br>
 <br>

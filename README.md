@@ -2,6 +2,9 @@
 
 - Chinese Version: [README.zh-CN.md](README.zh-CN.md)
 - English mirror: `README.en.md`
+- Translation status: `TRANSLATION_STATUS.md`
+- English translation workspace: `en/`
+- Terminology and style: `i18n/glossary.md`, `i18n/style-guide.md`
 
 ## Ultra-Short Summary (for Reviewers/Readers)
 

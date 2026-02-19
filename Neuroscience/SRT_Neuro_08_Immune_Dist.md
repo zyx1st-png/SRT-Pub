@@ -32,28 +32,28 @@ dependency: [SRT-NEURO-07, SRT-CORE-000]
 
 ### Ax-IMM-1: Immune Operator Axiom
 定义免疫系统为分布式选择算子：
-\[
+$$
 \hat{G}_{immune}: L_0^{immune}\rightarrow L_1^{immune}
-\]
+$$
 * **Implication（中文）**：免疫系统不是被动防御，而是独立的选择算子，决定“何为自我”。
 
 ---
 
 ### Ax-IMM-2: Operator Synchronization Axiom
 神经与免疫的耦合为同步项：
-\[
+$$
 \dot{\sigma}_{neuro}=F(\sigma)+\eta\,\sigma_{immune}
-\]
-* **Implication（中文）**：免疫状态可直接改变 \(L_1\) 选择门槛，塑形体验。
+$$
+* **Implication（中文）**：免疫状态可直接改变 $L_1$ 选择门槛，塑形体验。
 
 ---
 
 ### Ax-IMM-3: Gut–Brain Coupling Axiom
-肠脑通路为 \(L_2\) 先验注入：
-\[
+肠脑通路为 $L_2$ 先验注入：
+$$
 L_2^{neural} \leftarrow L_2^{gut}
-\]
-* **Implication（中文）**：肠脑不是“外部影响”，而是 \(L_2\) 先验来源。
+$$
+* **Implication（中文）**：肠脑不是“外部影响”，而是 $L_2$ 先验来源。
 
 ---
 
@@ -61,18 +61,18 @@ L_2^{neural} \leftarrow L_2^{gut}
 
 ### Ax-PHYS-1: Inflammation-as-Friction Axiom
 炎症提高本体论摩擦：
-\[
+$$
 \Psi_f\uparrow \Rightarrow \tau_{ignite}\uparrow
-\]
+$$
 * **Implication（中文）**：炎症会抬高显现阈值，使体验“变钝”。
 
 ---
 
 ### Ax-PHYS-2: Oxidative Cost Axiom
 氧化负担提高选择代价：
-\[
+$$
 \text{Cost}_{sel}\propto \text{ROS}
-\]
+$$
 * **Implication（中文）**：代谢负担直接压缩选择带宽。
 
 ---
@@ -80,19 +80,19 @@ L_2^{neural} \leftarrow L_2^{gut}
 ## III. Theorems (定理)
 
 ### T-IMM-1: Immune–Perception Theorem
-若炎症因子 \(\uparrow\)，则：
-\[
+若炎症因子 $\uparrow$，则：
+$$
 P(\text{Perceive}|S)\downarrow
-\]
+$$
 * **Implication（中文）**：免疫状态会系统性改变感知阈值与注意分配。
 
 ---
 
 ### C-IMM-1: Sickness-Mode Corollary
-当 \(\Psi_f\) 上升时，系统优先选择内感受通道：
-\[
+当 $\Psi_f$ 上升时，系统优先选择内感受通道：
+$$
 B_{intero}\uparrow,\quad B_{extero}\downarrow
-\]
+$$
 * **Implication（中文）**：生病时“世界灰暗化”是选择带宽的结构性重排。
 
 <br>

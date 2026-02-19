@@ -263,7 +263,7 @@ $$Δt_{subjective} \propto \frac{1}{\text{Prediction Confidence}} \propto Φ$$
 
 可兼容映射：
 
-1. 文献提出“时间序由不可逆信息印刻累积产生”，可视作 \(T_{selective}\) 的微观生成机制候选。〔source: user-material:https://www.scientificamerican.com/article/is-time-a-fundamental-part-of-reality-a-quiet-revolution-in-physics-suggests/〕
+1. 文献提出“时间序由不可逆信息印刻累积产生”，可视作 $T_{selective}$ 的微观生成机制候选。〔source: user-material:https://www.scientificamerican.com/article/is-time-a-fundamental-part-of-reality-a-quiet-revolution-in-physics-suggests/〕
 2. 文献提出“时空作为记录介质”，与 SRT 的“选择历史塑造后续约束”方向一致。〔source: user-material:https://www.scientificamerican.com/article/is-time-a-fundamental-part-of-reality-a-quiet-revolution-in-physics-suggests/〕
 
 形式化补丁（候选）：

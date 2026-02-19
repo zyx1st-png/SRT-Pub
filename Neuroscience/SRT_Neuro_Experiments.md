@@ -32,18 +32,18 @@ dependency: [SRT-CORE-000]
 
 ### Ax-EXP-1: Threshold Agency Axiom
 能动性发生于证据累积超过阈值：
-\[
+$$
 \int_0^{t^*} e(t)\,dt \ge \tau_{agency}
-\]
+$$
 * **Implication（中文）**：行为选择不是连续主观意愿，而是阈值触发的跨域锚定。
 
 ---
 
 ### Ax-EXP-2: Selection Latency Axiom
 选择滞后由门控与整合决定：
-\[
+$$
 \tau_{select}=\tau_{sensory}+\tau_{integrative}+\tau_{gate}
-\]
+$$
 * **Implication（中文）**：意识报告总是延迟于选择过程，是动力学事实而非“主观错觉”。
 
 ---
@@ -51,20 +51,20 @@ dependency: [SRT-CORE-000]
 ## II. Unity & Boundaries (统一性与边界)
 
 ### Ax-EXP-3: L2 Synchronization Axiom
-统一体验需要 \(L_2\) 同步：
-\[
+统一体验需要 $L_2$ 同步：
+$$
 \Gamma_{L_2}>\Gamma_c \Rightarrow L_1\;\text{unified}
-\]
-* **Implication（中文）**：统一性来自 \(L_2\) 结构的一致性，而非简单感官整合。
+$$
+* **Implication（中文）**：统一性来自 $L_2$ 结构的一致性，而非简单感官整合。
 
 ---
 
 ### Ax-EXP-4: Exclusionary Anchor Axiom
 显现具有排他锚定：
-\[
+$$
 \sigma_{L_1} \in \arg\max_{\sigma} \mathcal{A}(\sigma)
-\]
-* **Implication（中文）**：同一时刻只能有一套 \(L_1\) 主导显现，解释双稳态与互斥知觉。
+$$
+* **Implication（中文）**：同一时刻只能有一套 $L_1$ 主导显现，解释双稳态与互斥知觉。
 
 ---
 
@@ -72,10 +72,10 @@ dependency: [SRT-CORE-000]
 
 ### Ax-EXP-5: Dynamic Body Boundary Axiom
 身体边界是可塑的选择映射：
-\[
+$$
 \partial\Omega_{body}(t)=\partial\Omega_{body}(t-\Delta t)+\Delta\theta_{body}
-\]
-* **Implication（中文）**：具身不是固定结构，而是 \(\hat{G}_\theta\) 可更新的选择边界。
+$$
+* **Implication（中文）**：具身不是固定结构，而是 $\hat{G}_\theta$ 可更新的选择边界。
 
 ---
 
@@ -83,32 +83,32 @@ dependency: [SRT-CORE-000]
 
 ### Ax-EXP-13: Directional Wave Gating Axiom
 定义行进波方向-任务一致性指数：
-\[
+$$
 D_{align}=\cos\!\big(\angle(\vec{k}_{wave},\vec{k}_{task})\big)
-\]
-其中 \(\vec{k}_{wave}\) 为实测传播方向，\(\vec{k}_{task}\) 为任务所需信息流方向（前馈/反馈）。
-\[
+$$
+其中 $\vec{k}_{wave}$ 为实测传播方向，$\vec{k}_{task}$ 为任务所需信息流方向（前馈/反馈）。
+$$
 D_{align}\uparrow \Rightarrow P(\text{report})\uparrow
-\]
+$$
 * **Implication（中文）**：报告可达性不仅取决于激活强度，还取决于波传播方向是否与任务路由一致。
 
 ---
 
 ### Ax-EXP-14: Coherence-Control Axiom
 在控制总功率后，点燃概率仍由跨区相干调制：
-\[
+$$
 P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta\right)
-\]
+$$
 * **Implication（中文）**：若仅有功率而无相干，点燃概率提升有限；相干是独立贡献项。
 
 ---
 
 ### T-EXP-2: Counterstream Dissociation Theorem
 若前馈与反馈传播方向被选择性扰动，则任务表现出现可分离变化：
-\[
+$$
 \Delta D_{ff}\neq \Delta D_{fb}\Rightarrow
 \Delta \text{Accuracy}_{ff}\neq \Delta \text{Accuracy}_{fb}
-\]
+$$
 * **Implication（中文）**：可用方向性干预区分“看见”与“可报告”阶段的因果窗口。
 
 ---
@@ -116,20 +116,20 @@ P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\de
 ## V. Theorems (定理)
 
 ### T-EXP-1: Unity–Conflict Theorem
-当 \(\Gamma_{L_2}\downarrow\) 时，体验统一性下降：
-\[
+当 $\Gamma_{L_2}\downarrow$ 时，体验统一性下降：
+$$
 \Gamma_{L_2}\downarrow \Rightarrow P(\text{fragment})\uparrow
-\]
+$$
 * **Implication（中文）**：统一性并非天然存在，而是同步维持的结果。
 
 ---
 
 ### C-EXP-1: Illusion Boundary Corollary
-若 \(\Delta\theta_{body}\uparrow\)，则错觉边界外扩：
-\[
+若 $\Delta\theta_{body}\uparrow$，则错觉边界外扩：
+$$
 \text{Ownership}(x)\uparrow\;\text{for}\;x\notin\partial\Omega_{body}
-\]
-* **Implication（中文）**：橡胶手等错觉是 \(L_2\) 具身边界的短时扩张。
+$$
+* **Implication（中文）**：橡胶手等错觉是 $L_2$ 具身边界的短时扩张。
 
 ---
 
@@ -137,37 +137,37 @@ P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\de
 
 ### Ax-EXP-15: Geometric Regularity Symbolization Axiom (Extension)
 定义几何规则性作为进入符号视觉模式的阈值变量：
-\[
+$$
 R_{geo}=w_1\mathcal{S}_{sym}+w_2\mathcal{P}_{parallel}+w_3\mathcal{C}_{closed}
-\]
-\[
+$$
+$$
 R_{geo}\ge \tau_{sym}\Rightarrow \Pi_{sym}:L_0^{visual}\to L_1^{symbolic}
-\]
+$$
 * **Implication（中文）**：视觉系统对“规则几何”并非只做低层特征检测，而会触发从感知表面到关系结构的符号化投影。
 
 ---
 
 ### T-EXP-3: Dorsal-Late Symbolic Routing Theorem (Extension)
 若符号化投影成立，则背侧顶叶-前额网络在晚时窗对可报告性贡献增加：
-\[
+$$
 \frac{\partial A_{dorsal}}{\partial R_{geo}}>0,\qquad
 t\in[t_{late}^-,t_{late}^+]
-\]
-\[
+$$
+$$
 \Delta \mathcal{E}_{late}=
 \mathcal{E}(M_{\text{symbolic}}\oplus M_{\text{CNN}})
 -\mathcal{E}(M_{\text{CNN}})>0
-\]
-其中 \(\mathcal{E}\) 为时变解释度。
+$$
+其中 $\mathcal{E}$ 为时变解释度。
 * **Implication（中文）**：规则图形的神经表征在晚期时间窗（而非早期纯视觉窗）更依赖“符号模型 + 视觉模型”的联合解释，支持“背侧关系计算”机制。
 
 ---
 
 ### C-EXP-2: Early Developmental Availability Corollary (Extension)
-若在儿童早期（约 6 岁）已满足 \(A_{dorsal}>0\) 且 \(\Delta \mathcal{E}_{late}>0\)，则：
-\[
+若在儿童早期（约 6 岁）已满足 $A_{dorsal}>0$ 且 $\Delta \mathcal{E}_{late}>0$，则：
+$$
 \exists\,L_2^{geo}\ \text{prior to extensive formal schooling}
-\]
+$$
 * **Implication（中文）**：几何符号模式并非完全由后天数学训练“新建”，而更像早期可调用、随后被教育放大的先验结构。
 
 ---
@@ -304,8 +304,8 @@ $$\text{Response}_A = \frac{\text{Input}_A^n}{\sigma^n + \text{Input}_A^n + \tex
 
 2026-02-09 在线 Neuron 综述（Cruddas, Pang, Fornito）总结了皮层行进波在多尺度中的普遍性及其可能的层级路由功能。对实验范式的直接启示是：
 
-1. **方向变量必须显式建模**：不仅记录“是否有振荡”，还要记录波前方向与任务信息流方向的一致性 \(D_{align}\)。
-2. **相干与功率需解耦**：在统计模型中把 \(C_{wave}\) 与功率分开，检验相干是否有独立解释力。
+1. **方向变量必须显式建模**：不仅记录“是否有振荡”，还要记录波前方向与任务信息流方向的一致性 $D_{align}$。
+2. **相干与功率需解耦**：在统计模型中把 $C_{wave}$ 与功率分开，检验相干是否有独立解释力。
 3. **干预要有方向性**：优先使用相位定向 tACS/TMS，测试传播方向改变是否因果影响报告可达性。
 
 这将经典实验（Libet、双眼竞争、裂脑）从“相关性比较”推进到“路由机制检验”。
@@ -416,8 +416,8 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 |H-E4|竞争-归一化|主导期分布符合归一化预测|分布显著偏离|
 |H-E5|RHI-Sigmoid|错觉强度与同步度呈 Sigmoid 关系|呈线性关系|
 |H-E6|场效应同步|突触切断后仍有部分同步|完全失去同步|
-|H-E7|方向-报告一致性|行进波方向一致性 \(D_{align}\) 预测报告正确率|方向与报告无关|
-|H-E8|相干独立效应|控制总功率后 \(C_{wave}\) 仍独立预测点燃/命中率|仅功率有效|
+|H-E7|方向-报告一致性|行进波方向一致性 $D_{align}$ 预测报告正确率|方向与报告无关|
+|H-E8|相干独立效应|控制总功率后 $C_{wave}$ 仍独立预测点燃/命中率|仅功率有效|
 |H-E9|方向性扰动因果|相位定向 tACS/TMS 改变传播方向后，双稳态切换率系统性变化|扰动不改切换率|
 
 ## 6.2 开放性问题

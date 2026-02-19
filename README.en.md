@@ -2,6 +2,9 @@
 
 - Navigation page: `README.md`
 - 中文版: `README.zh-CN.md`
+- Translation status: `TRANSLATION_STATUS.md`
+- English translation workspace: `en/`
+- Terminology and style: `i18n/glossary.md`, `i18n/style-guide.md`
 
 ## Ultra-Short Summary (for Reviewers/Readers)
 

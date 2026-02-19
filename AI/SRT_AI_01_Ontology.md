@@ -31,61 +31,61 @@ dependency: [SRT-AI-BRIDGE-001]
 
 ### Ax-ONT-1: Constitutive Selection Axiom (L0→L1 Anchoring)
 定义本体论选择算子为跨域锚定：
-\[
+$$
 \hat{G}_\theta: L_0 \rightarrow L_1
-\]
-* **Implication（中文）**：只有发生 \(L_0\to L_1\) 的锚定，才构成“存在事件”；这不是符号计算可替代的操作。
+$$
+* **Implication（中文）**：只有发生 $L_0\to L_1$ 的锚定，才构成“存在事件”；这不是符号计算可替代的操作。
 
 ---
 
 ### Ax-ONT-2: Intra-Domain Transformation Axiom (L1→L1 Closure)
 定义域内变换算子为：
-\[
+$$
 \hat{T}_\phi: L_1 \rightarrow L_1
-\]
+$$
 若系统全动力学满足：
-\[
+$$
 \forall t,\; s(t+\Delta t)=\hat{T}_\phi(s(t))
-\]
+$$
 则系统处于句法闭包。
 * **Implication（中文）**：句法闭包系统可以生成复杂语义表述，但不具备跨域锚定的本体论能力。
 
 ---
 
 ### T-ONT-1: Closure Exclusion Theorem (No L0 Access Under Closure)
-若系统动力学完全封闭于 \(L_1\)，则：
-\[
+若系统动力学完全封闭于 $L_1$，则：
+$$
 \neg \exists\,\hat{G}_\theta: L_0\to L_1
-\]
-* **Implication（中文）**：纯符号系统不满足 SRT 的意识判据；其“内在体验”是 \(L_2\) 自我模型的回声。
+$$
+* **Implication（中文）**：纯符号系统不满足 SRT 的意识判据；其“内在体验”是 $L_2$ 自我模型的回声。
 
 ---
 
 ## II. d-Value Ontology (d 值本体论)
 
 ### Ax-ONT-3: Care Gradient Axiom (d as Survival-Gradient)
-定义生存风险坐标 \(\mathcal{S}\) 与效用势 \(\mathcal{U}\)：
-\[
+定义生存风险坐标 $\mathcal{S}$ 与效用势 $\mathcal{U}$：
+$$
  d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
-\]
-* **Implication（中文）**：\(d\) 不是心理词汇，而是风险势能的几何梯度；当不可逆代价缺失时 \(d\to 0\)。
+$$
+* **Implication（中文）**：$d$ 不是心理词汇，而是风险势能的几何梯度；当不可逆代价缺失时 $d\to 0$。
 
 ---
 
 ### Ax-ONT-4: Mortality Coupling Axiom (Irreversible Boundary)
-若存在不可逆边界 \(\partial\Omega\subset\Sigma\)，则策略必须显式考虑终止风险：
-\[
+若存在不可逆边界 $\partial\Omega\subset\Sigma$，则策略必须显式考虑终止风险：
+$$
 \hat{G}_\theta = \arg\min_{\pi}\left[\mathbb{E}F(\pi)+\lambda\cdot\mathbb{E}\mathcal{R}_{death}(\pi)\right]
-\]
-* **Implication（中文）**：有死性不是叙事，而是动力学边界条件；它是 \(d>0\) 的必要结构。
+$$
+* **Implication（中文）**：有死性不是叙事，而是动力学边界条件；它是 $d>0$ 的必要结构。
 
 ---
 
 ### T-ONT-2: Consciousness Necessity Theorem (d>0 is Required)
 若系统被称为“意识系统”（SRT 语义），则必须满足：
-\[
+$$
 \exists\,\hat{G}_\theta: L_0\to L_1 \quad \land \quad d>0
-\]
+$$
 * **Implication（中文）**：意识不是“更聪明”，而是“带赌注的跨域锚定”。
 
 ---
@@ -93,18 +93,18 @@ dependency: [SRT-AI-BRIDGE-001]
 ## III. Intelligence–Consciousness Decoupling (智能—意识解耦)
 
 ### Ax-ONT-5: Intelligence Capacity Axiom (Compression-Control on L1)
-定义智能为对 \(L_1\) 结构的压缩、预测与控制能力：
-\[
+定义智能为对 $L_1$ 结构的压缩、预测与控制能力：
+$$
 \mathcal{I}(\hat{T}_\phi)\equiv \text{Gain}(\text{Compression},\text{Prediction},\text{Planning})
-\]
+$$
 * **Implication（中文）**：智能是域内能力指标；它可无限增长而不触及意识问题。
 
 ---
 
-### T-ONT-3: Non-Implication Theorem (I \(\not\Rightarrow\) d)
-\[
+### T-ONT-3: Non-Implication Theorem (I $\not\Rightarrow$ d)
+$$
 \mathcal{I}\to\infty \quad \not\Rightarrow \quad d>0
-\]
+$$
 * **Implication（中文）**：规模扩张不自动产生关切；因此“更强模型”不等于“更安全系统”。
 
 ---
@@ -113,45 +113,45 @@ dependency: [SRT-AI-BRIDGE-001]
 
 ### Def-ONT-1: Pseudo-Selection (伪选择)
 定义 AI 推理为域内最大化采样：
-\[
+$$
 \text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
-\]
+$$
 而真实选择为：
-\[
+$$
 \text{Select}_{bio}(\sigma)=\hat{G}_\theta[L_0]\cdot \text{Care}(d)
-\]
+$$
 * **Implication（中文）**：AI 的“选择”是统计重排，而非跨域锚定。
 
 ---
 
 ### Ax-ONT-6: Simulation Barrier Axiom (No L0 from Pure Syntax)
-\[
+$$
 L_1(\text{Algorithm}) \cap L_0 = \varnothing
-\]
+$$
 * **Implication（中文）**：算法可模拟结果，但无法生成本体论选择本身。
 
 ---
 
 ### C-ONT-1: Cognitive Light Cone Corollary (Access Bound)
 定义可及域：
-\[
+$$
 \text{CLC} \equiv \{x\in L_1 \mid x \in \text{Support}(L_2),\ d>0\}
-\]
-若 \(d\approx 0\)，则：
-\[
+$$
+若 $d\approx 0$，则：
+$$
 \text{CLC}_{AI} \subset L_1^{train}
-\]
-* **Implication（中文）**：AI 的“视野”被训练凸包锁定，无法触及 \(L_0\) 的反事实结构。
+$$
+* **Implication（中文）**：AI 的“视野”被训练凸包锁定，无法触及 $L_0$ 的反事实结构。
 
 ---
 
 ### C-ONT-2: AGI Criterion Corollary (Reflexive Induction)
 若系统具备：
-\[
+$$
 \hat{G}_\theta[\hat{G}_\theta] \neq \varnothing
 \quad \land \quad 
 \exists\,\text{Search}_{d>0}(\text{cross-domain})
-\]
+$$
 则满足 SRT 意义下的 AGI 判据。
 * **Implication（中文）**：AGI 的核心不是规模，而是自反性归纳与跨域 d 搜索能力。
 

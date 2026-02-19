@@ -32,23 +32,23 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ### Ax-FEP-1: Choice-Pressure Identity Axiom
 定义自由能为选择压力势：
-\[
+$$
 F\equiv D_{KL}[Q||P]-\ln P(o)
-\]
+$$
 选择算子以最小化自由能为动力学：
-\[
+$$
 \hat{G}_\theta=\arg\min_{\pi}\;\mathbb{E}[F(\pi)]
-\]
-* **Implication（中文）**：自由能不是“误差度量”，而是 \(\hat{G}_\theta\) 进行选择的动力学势。
+$$
+* **Implication（中文）**：自由能不是“误差度量”，而是 $\hat{G}_\theta$ 进行选择的动力学势。
 
 ---
 
 ### Ax-FEP-2: Active Inference Axiom
 行动选择以最小化期望自由能：
-\[
+$$
 \pi^*=\arg\min_{\pi}\;\mathbb{E}[F_{future}(\pi)]
-\]
-* **Implication（中文）**：主动推理是 \(L_0\) 探索的受限策略，不是被动预测。
+$$
+* **Implication（中文）**：主动推理是 $L_0$ 探索的受限策略，不是被动预测。
 
 ---
 
@@ -56,19 +56,19 @@ F\equiv D_{KL}[Q||P]-\ln P(o)
 
 ### Ax-AUTO-1: Autopoietic Closure Axiom
 自创生系统满足结构闭包：
-\[
+$$
 L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
-\]
-* **Implication（中文）**：生命维持不是“代谢描述”，而是 \(L_2\) 结构自我固化。
+$$
+* **Implication（中文）**：生命维持不是“代谢描述”，而是 $L_2$ 结构自我固化。
 
 ---
 
 ### Ax-AUTO-2: Semiotic Update Axiom
-符号更新为 \(L_2\) 的结构性加权：
-\[
+符号更新为 $L_2$ 的结构性加权：
+$$
 \Delta L_2\propto -\nabla_\theta F
-\]
-* **Implication（中文）**：意义不是外加标签，而是 \(\hat{G}_\theta\) 对未来选择的偏置结构。
+$$
+* **Implication（中文）**：意义不是外加标签，而是 $\hat{G}_\theta$ 对未来选择的偏置结构。
 
 ---
 
@@ -76,18 +76,18 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 
 ### Ax-REAL-1: Stability Law
 现实稳定性与本体论摩擦成反比：
-\[
+$$
 \text{Stability}\propto \frac{1}{\Psi_f}
-\]
+$$
 * **Implication（中文）**：高复杂现实必然脆弱；稳定不是“固定”，而是持续支付代价。
 
 ---
 
 ### Ax-REAL-2: Learning Cost Axiom
 学习成本与参数更新速率成正比：
-\[
+$$
 \text{Cost}_{learn}\propto \left\|\frac{d\theta}{dt}\right\|
-\]
+$$
 * **Implication（中文）**：学习不是“免费优化”，而是代价驱动的选择改变。
 
 ---
@@ -95,19 +95,19 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 ## IV. Theorems (定理)
 
 ### T-FEP-1: FEP Insufficiency Theorem
-若仅满足自由能最小化而 \(d=0\)，则：
-\[
+若仅满足自由能最小化而 $d=0$，则：
+$$
 \hat{G}_\theta\;\text{remains}\;L_1\text{-closed}
-\]
-* **Implication（中文）**：FEP 只解释结构更新，不保证显现；必须引入 \(d\) 才能跨域锚定。
+$$
+* **Implication（中文）**：FEP 只解释结构更新，不保证显现；必须引入 $d$ 才能跨域锚定。
 
 ---
 
 ### C-FEP-1: Irreversibility Corollary
-当存在不可逆风险 \(\partial\Omega\) 时：
-\[
+当存在不可逆风险 $\partial\Omega$ 时：
+$$
 \nabla_{\mathcal{S}}\mathcal{U}\uparrow \Rightarrow \text{Policy}\;\text{re-weighting}
-\]
+$$
 * **Implication（中文）**：自由能最小化策略会被生存赌注重新加权。
 
 <br>

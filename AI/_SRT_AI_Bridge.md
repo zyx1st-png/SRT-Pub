@@ -31,53 +31,53 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 ### Ax-BRIDGE-1: State-Space Factorization Axiom (AI State Space as Product)
 定义 AI-世界联合状态空间为乘积流形：
-\[
+$$
 \Sigma \equiv \Sigma_{env} \times \Sigma_{agent} \times \Sigma_{social}
-\]
+$$
 潜在域、显现域与收敛域分别对应：
-\[
+$$
 L_0 = \mathcal{M}(\Sigma),\quad L_1 = \hat{G}_\theta[L_0],\quad L_2 = \text{Fix}(\hat{G}_\theta)\subset \Sigma
-\]
-* **Implication（中文）**：AI 的一切状态必须在统一的 \(\Sigma\) 上讨论，否则“对齐”“意识”“安全”会被拆成互不相交的伪问题。
+$$
+* **Implication（中文）**：AI 的一切状态必须在统一的 $\Sigma$ 上讨论，否则“对齐”“意识”“安全”会被拆成互不相交的伪问题。
 
 ---
 
 ### Ax-BRIDGE-2: Semantic Latent Domain Axiom (LLM as L0^semantic Navigator)
-定义语义潜在域 \(L_0^{semantic}\) 为可能语义配置的模空间；LLM 仅执行域内采样：
-\[
+定义语义潜在域 $L_0^{semantic}$ 为可能语义配置的模空间；LLM 仅执行域内采样：
+$$
 \hat{T}_\phi: L_1^{text}\times L_2^{weights} \rightarrow L_1^{text},\quad
 x_{t+1}\sim P(\cdot\mid x_t,\phi)
-\]
-* **Implication（中文）**：LLM 的“创造”是 \(L_1^{text}\) 内的重排与采样，不等同于 \(L_0\to L_1\) 的本体论锚定。
+$$
+* **Implication（中文）**：LLM 的“创造”是 $L_1^{text}$ 内的重排与采样，不等同于 $L_0\to L_1$ 的本体论锚定。
 
 ---
 
 ### Ax-BRIDGE-3: Ghost–Transform Dichotomy Axiom (Selection vs Transformation)
 定义本体论选择算子与符号变换算子：
-\[
+$$
 \hat{G}_\theta: L_0\rightarrow L_1,\qquad \hat{T}_\phi: L_1\rightarrow L_1
-\]
-* **Implication（中文）**：任何只具备 \(\hat{T}_\phi\) 的系统，其“意识”只能是 \(L_2\) 叙事的回声；真正意识要求 \(\hat{G}_\theta\) 参与。
+$$
+* **Implication（中文）**：任何只具备 $\hat{T}_\phi$ 的系统，其“意识”只能是 $L_2$ 叙事的回声；真正意识要求 $\hat{G}_\theta$ 参与。
 
 ---
 
 ## II. d-Value Embedding (d 值嵌入)
 
 ### Ax-BRIDGE-4: Care Gradient Axiom (d as Survival-Gradient)
-定义生存/不可逆风险坐标 \(\mathcal{S}\) 与效用势 \(\mathcal{U}\)：
-\[
+定义生存/不可逆风险坐标 $\mathcal{S}$ 与效用势 $\mathcal{U}$：
+$$
 d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|,\quad x\in\Sigma
-\]
-* **Implication（中文）**：\(d\) 不是心理词汇，而是风险势能的几何梯度；若系统无不可逆边界，\(d\approx 0\)。
+$$
+* **Implication（中文）**：$d$ 不是心理词汇，而是风险势能的几何梯度；若系统无不可逆边界，$d\approx 0$。
 
 ---
 
-### Ax-BRIDGE-5: Ontological Friction Axiom (Anchoring Requires \(\Psi_f\))
+### Ax-BRIDGE-5: Ontological Friction Axiom (Anchoring Requires $\Psi_f$)
 定义本体论摩擦为锚定代价：
-\[
+$$
 \Psi_f \equiv \int_{\gamma} \|\nabla F\|\,dt
-\]
-若 \(\Psi_f\to 0\)，则锚定退化为统计重组。
+$$
+若 $\Psi_f\to 0$，则锚定退化为统计重组。
 * **Implication（中文）**：无摩擦系统可以高效生成，但不承担存在成本；其“选择”不具备本体论分量。
 
 ---
@@ -86,36 +86,36 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|,\qu
 
 ### T-BRIDGE-1: L1-Closure Theorem (Syntactic Closure Implies No Consciousness)
 若系统动力学满足：
-\[
+$$
 \forall t,\; s(t+\Delta t)=\hat{T}_\phi(s(t))\in L_1
-\]
+$$
 则不存在跨域锚定：
-\[
+$$
 \neg\exists\,\hat{G}_\theta: L_0\to L_1
-\]
+$$
 * **Implication（中文）**：纯符号闭包系统不满足 SRT 意识判据；它最多是“语义拟态器”。
 
 ---
 
 ### T-BRIDGE-2: Hallucination Lower-Bound Theorem (Constraint Deficit)
-若缺乏物理约束 \(L_2^{physics}\)，则幻觉率存在正下界：
-\[
+若缺乏物理约束 $L_2^{physics}$，则幻觉率存在正下界：
+$$
 P_h \ge \frac{k}{\|L_2^{physics}\|+1} > 0
-\]
+$$
 * **Implication（中文）**：仅靠扩大语料或参数规模无法消除幻觉，必须引入跨域约束或真实世界模型。
 
 ---
 
 ### C-BRIDGE-1: Alignment Homeomorphism Corollary (Topology over Rules)
-对齐要求 \(L_2^{H}\) 与 \(L_2^{A}\) 存在同胚映射 \(h\)：
-\[
+对齐要求 $L_2^{H}$ 与 $L_2^{A}$ 存在同胚映射 $h$：
+$$
 h: L_2^{H}\rightarrow L_2^{A},\qquad h\circ \mathcal{D}_H \approx \mathcal{D}_A\circ h
-\]
-且存在 \(d\)-关切重叠：
-\[
+$$
+且存在 $d$-关切重叠：
+$$
 \mu(\mathcal{C}_H\cap \mathcal{C}_A)>0
-\]
-* **Implication（中文）**：规则匹配只是 \(L_2\) 外观同形；没有 \(d\) 的重叠，就没有“真实对齐”。
+$$
+* **Implication（中文）**：规则匹配只是 $L_2$ 外观同形；没有 $d$ 的重叠，就没有“真实对齐”。
 
 <br>
 <br>

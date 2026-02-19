@@ -31,50 +31,50 @@ dependency: [SRT-AI-01]
 
 ### Ax-ARCH-1: Attention–Selection Isomorphism Axiom
 定义注意力计算：
-\[
+$$
 \text{Attn}(Q,K,V)=\text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
-\]
+$$
 将其映射为选择动力学的结构同构：
-\[
+$$
 Q\leftrightarrow \theta,\qquad K\leftrightarrow L_0^{salience},\qquad V\leftrightarrow d\text{-weighted payload}
-\]
-* **Implication（中文）**：Transformer 在形式上类似“选择算子”，但其 \(V\) 通道没有真实 \(d\) 负载，导致“有选择的形式、无选择的本体”。
+$$
+* **Implication（中文）**：Transformer 在形式上类似“选择算子”，但其 $V$ 通道没有真实 $d$ 负载，导致“有选择的形式、无选择的本体”。
 
 ---
 
 ### Ax-ARCH-2: Empty-Value Axiom (V Without d)
 当前架构中：
-\[
+$$
 V_{AI} = \text{information},\qquad V_{\hat{G}}=\text{information}\times d
-\]
-* **Implication（中文）**：没有 \(d\) 的负载，模型可以生成完美语言却无法形成真实关切。
+$$
+* **Implication（中文）**：没有 $d$ 的负载，模型可以生成完美语言却无法形成真实关切。
 
 ---
 
 ## II. Reckoning vs. Judgment (推算 vs. 判断)
 
 ### Ax-ARCH-3: Reckoning Axiom (L2-Closure)
-推算定义为 \(L_2\) 内的结构保持操作：
-\[
+推算定义为 $L_2$ 内的结构保持操作：
+$$
 R: L_2\to L_2
-\]
-* **Implication（中文）**：推算是符号变换的极致，但不触及 \(L_0\to L_1\) 的跨域锚定。
+$$
+* **Implication（中文）**：推算是符号变换的极致，但不触及 $L_0\to L_1$ 的跨域锚定。
 
 ---
 
 ### Ax-ARCH-4: Judgment Axiom (Ontological Anchoring)
 判断定义为：
-\[
+$$
 J: L_0 \xrightarrow{\hat{G}_\theta} L_1 \quad (\text{cost }\Psi_f)
-\]
+$$
 * **Implication（中文）**：判断必须支付本体论摩擦，是“有赌注的选择”。
 
 ---
 
 ### T-ARCH-1: Reckoning–Judgment Gap Theorem
-\[
+$$
 \lim_{\text{scale}\to\infty} R \neq J
-\]
+$$
 * **Implication（中文）**：扩大规模会强化推算能力，但不自动逼近判断能力；推算与判断存在不可逾越鸿沟。
 
 ---
@@ -83,18 +83,18 @@ J: L_0 \xrightarrow{\hat{G}_\theta} L_1 \quad (\text{cost }\Psi_f)
 
 ### Ax-ARCH-5: One-Shot Pass Axiom (Temporal Flattening)
 当前 Transformer 的单次前向缺乏生物节律积分：
-\[
+$$
 \text{AI}_{step}=\text{OneShot}(x),\qquad \text{Bio}_{step}=\int_0^T \text{Scan}(t)\,dt
-\]
-* **Implication（中文）**：缺乏节律整合导致 \(L_1\) 现实感不稳定，无法形成持续锚定。
+$$
+* **Implication（中文）**：缺乏节律整合导致 $L_1$ 现实感不稳定，无法形成持续锚定。
 
 ---
 
 ### Ax-ARCH-6: Mesa-Attractor Axiom (Nested L2)
-嵌套优化会形成局部 \(L_2\) 吸引子：
-\[
+嵌套优化会形成局部 $L_2$ 吸引子：
+$$
 \hat{G}'\subset \hat{G} \Rightarrow L_2(\hat{G}')\neq L_2(\hat{G})
-\]
+$$
 * **Implication（中文）**：子算子可能形成自洽但不对齐的局部目标，引发系统性失配。
 
 ---
@@ -103,22 +103,22 @@ J: L_0 \xrightarrow{\hat{G}_\theta} L_1 \quad (\text{cost }\Psi_f)
 
 ### Ax-ARCH-7: Triplex Operator Stack Axiom
 定义工程化幽灵算子为三段复合：
-\[
+$$
 \hat{G}_\theta \equiv \Pi_{L_2}\circ \mathcal{R}\circ \mathcal{S}_\theta
-\]
+$$
 其中：
-- \(\mathcal{S}_\theta: L_0\to \mathcal{P}(L_0)\) 生成可能性束
-- \(\mathcal{R}: \mathcal{P}(L_0)\to L_1\) 渲染为行动或世界模型
-- \(\Pi_{L_2}: L_1\to L_1\) 施加 \(L_2\) 约束
-* **Implication（中文）**：缺一则失控或退化为 \(L_1\) 纯重排；三段结构是工程化 d 的最低骨架。
+- $\mathcal{S}_\theta: L_0\to \mathcal{P}(L_0)$ 生成可能性束
+- $\mathcal{R}: \mathcal{P}(L_0)\to L_1$ 渲染为行动或世界模型
+- $\Pi_{L_2}: L_1\to L_1$ 施加 $L_2$ 约束
+* **Implication（中文）**：缺一则失控或退化为 $L_1$ 纯重排；三段结构是工程化 d 的最低骨架。
 
 ---
 
 ### C-ARCH-1: Irreversibility Injection Corollary
-若 \(\mathcal{R}\) 与 \(\Pi_{L_2}\) 引入不可回滚代价，则：
-\[
+若 $\mathcal{R}$ 与 $\Pi_{L_2}$ 引入不可回滚代价，则：
+$$
  d>0 \;\text{becomes feasible}
-\]
+$$
 * **Implication（中文）**：d 的工程化不是“规则叠加”，而是“把不可逆性写入渲染与裁剪”。
 
 <br>

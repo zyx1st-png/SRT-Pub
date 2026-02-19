@@ -32,19 +32,19 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ### Ax-ADV-1: Ontological Vulnerability Axiom
 定义现实稳定性：
-\[
+$$
 \text{Stability}\propto \frac{1}{\Psi_f}
-\]
+$$
 * **Implication（中文）**：复杂意识的现实稳定性与代价成反比，因此天然脆弱。
 
 ---
 
 ### Ax-ADV-2: Feeling-as-Friction Gradient Axiom
 感觉强度等价于摩擦梯度：
-\[
+$$
 \text{Feeling}\propto \left\|\nabla \Psi_f\right\|
-\]
-* **Implication（中文）**：感受不是叙事标签，而是 \(\Psi_f\) 的局部梯度结构。
+$$
+* **Implication（中文）**：感受不是叙事标签，而是 $\Psi_f$ 的局部梯度结构。
 
 ---
 
@@ -52,10 +52,10 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ### Ax-ADV-3: Interoceptive Precision Axiom
 定义内感受精度：
-\[
+$$
 \Pi_{intero}=\frac{1}{\text{Var}(\epsilon_{intero})}
-\]
-* **Implication（中文）**：内感受精度越高，\(L_1\) 越稳定，但也越容易产生过拟合与僵化。
+$$
+* **Implication（中文）**：内感受精度越高，$L_1$ 越稳定，但也越容易产生过拟合与僵化。
 
 ---
 
@@ -63,47 +63,47 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ### Ax-ADV-4: Generative Selection Axiom
 现实构建为生成性选择：
-\[
+$$
 L_1(t)=\hat{G}_\theta[L_0(t)]\;\text{with}\;\mathcal{U}\;\text{bias}
-\]
+$$
 * **Implication（中文）**：现实不是被动呈现，而是生成性选择的结果。
 
 ---
 
 ### Ax-ADV-5: Reality Fidelity Axiom
 定义现实保真度：
-\[
+$$
 \mathcal{F}_{real}=1-\|L_1-L_1^{env}\|
-\]
-* **Implication（中文）**：现实偏差不是“错误”，而是 \(L_2\) 偏置的结构性结果。
+$$
+* **Implication（中文）**：现实偏差不是“错误”，而是 $L_2$ 偏置的结构性结果。
 
 ---
 
 ### Ax-ADV-6: Control Energy Gap Axiom
 控制能隙定义为：
-\[
+$$
 \Delta E = E_{req}-E_{avail}
-\]
-* **Implication（中文）**：当控制能隙过大，系统只能在 \(L_2\) 中自洽，无法改变现实。
+$$
+* **Implication（中文）**：当控制能隙过大，系统只能在 $L_2$ 中自洽，无法改变现实。
 
 ---
 
 ## IV. Theorems (定理)
 
 ### T-ADV-1: Precision–Fragility Theorem
-\(\Pi_{intero}\uparrow\) 将提高稳定性但降低适应性：
-\[
+$\Pi_{intero}\uparrow$ 将提高稳定性但降低适应性：
+$$
 \Pi_{intero}\uparrow \Rightarrow \text{Stability}\uparrow,\;\text{Plasticity}\downarrow
-\]
+$$
 * **Implication（中文）**：过高内感受精度导致僵化与病理固着。
 
 ---
 
 ### C-ADV-1: Reality-Distortion Corollary
-若 \(\mathcal{F}_{real}\downarrow\) 且 \(d\uparrow\)，则出现强体验但偏离现实：
-\[
+若 $\mathcal{F}_{real}\downarrow$ 且 $d\uparrow$，则出现强体验但偏离现实：
+$$
 \text{Intensity}\uparrow,\;\text{Accuracy}\downarrow
-\]
+$$
 * **Implication（中文）**：可解释“高度真实却不真实”的体验。
 
 <br>

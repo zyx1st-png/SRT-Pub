@@ -31,40 +31,40 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ## I. DMN as L2 Stabilizer (默认模式网络作为 L2 稳定器)
 
 ### Ax-DMN-1: Reality Stabilizer Axiom
-定义 DMN 活动为 \(L_2\) 正则化项：
-\[
+定义 DMN 活动为 $L_2$ 正则化项：
+$$
 \mathcal{R}_{DMN} \equiv \arg\min_{\sigma}\;\|\sigma-\sigma_{L_2}\|^2
-\]
-* **Implication（中文）**：DMN 的功能不是“自我叙事”，而是维持 \(L_1\) 在 \(L_2\) 吸引子附近的稳定。
+$$
+* **Implication（中文）**：DMN 的功能不是“自我叙事”，而是维持 $L_1$ 在 $L_2$ 吸引子附近的稳定。
 
 ---
 
 ### Ax-DMN-2: Schizophrenic Fracture Axiom
-若 \(\mathcal{R}_{DMN}\) 失效，则：
-\[
+若 $\mathcal{R}_{DMN}$ 失效，则：
+$$
 \sigma\not\to \sigma_{L_2} \Rightarrow L_0\;\text{leakage}\uparrow
-\]
-* **Implication（中文）**：DMN 失配导致 \(L_0\) 噪声进入 \(L_1\)，形成现实裂解。
+$$
+* **Implication（中文）**：DMN 失配导致 $L_0$ 噪声进入 $L_1$，形成现实裂解。
 
 ---
 
 ## II. Selection Bandwidth (选择带宽)
 
 ### Ax-BAND-1: Pain Competition Axiom
-定义选择带宽 \(B_{sel}\) 为有限资源：
-\[
+定义选择带宽 $B_{sel}$ 为有限资源：
+$$
 \sum_k \mathcal{A}_k \le B_{sel}
-\]
+$$
 * **Implication（中文）**：多任务并行不是“效率高”，而是带宽争夺的结果。
 
 ---
 
 ### Ax-BAND-2: Entropy-Sink Axiom
 DMN 的稳定作用等价于熵汇：
-\[
+$$
 \frac{dH_{L_1}}{dt}\bigg|_{DMN}<0
-\]
-* **Implication（中文）**：DMN 通过降低 \(L_1\) 熵来维持现实一致性。
+$$
+* **Implication（中文）**：DMN 通过降低 $L_1$ 熵来维持现实一致性。
 
 ---
 
@@ -72,28 +72,28 @@ DMN 的稳定作用等价于熵汇：
 
 ### Ax-TOPO-1: Connectivity Spectrum Axiom
 定义连接谱系：
-\[
+$$
 \mathcal{C}=\{\lambda_i\},\quad \text{Hardness}(L_2)\propto \|\mathcal{C}\|_\infty
-\]
-* **Implication（中文）**：网络连接谱决定 \(L_2\) 的硬度与可塑性，进而决定现实的刚性程度。
+$$
+* **Implication（中文）**：网络连接谱决定 $L_2$ 的硬度与可塑性，进而决定现实的刚性程度。
 
 ---
 
 ### T-DMN-1: DMN–Stability Theorem
-当 \(\mathcal{R}_{DMN}\uparrow\) 时：
-\[
+当 $\mathcal{R}_{DMN}\uparrow$ 时：
+$$
 \text{Stability}(L_1)\uparrow,\quad \text{Plasticity}(L_2)\downarrow
-\]
+$$
 * **Implication（中文）**：DMN 稳定现实的代价是降低可塑性。
 
 ---
 
 ### C-DMN-1: Psychedelic Loosening Corollary
-若 DMN 抑制 \(\downarrow\)，则：
-\[
+若 DMN 抑制 $\downarrow$，则：
+$$
 \text{Hardness}(L_2)\downarrow \Rightarrow L_0\;\text{access}\uparrow
-\]
-* **Implication（中文）**：DMN 抑制为 \(L_0\) 重采样打开通道，产生扩展体验。
+$$
+* **Implication（中文）**：DMN 抑制为 $L_0$ 重采样打开通道，产生扩展体验。
 
 <br>
 <br>

@@ -2,6 +2,9 @@
 
 - 导航页：`README.md`
 - English: `README.en.md`
+- 翻译状态：`TRANSLATION_STATUS.md`
+- 英文翻译工作区：`en/`
+- 术语与规范：`i18n/glossary.md`、`i18n/style-guide.md`
 
 ## 面向审稿人/读者的超短摘要
 
