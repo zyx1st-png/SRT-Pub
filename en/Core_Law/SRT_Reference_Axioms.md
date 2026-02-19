@@ -182,7 +182,7 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 
 ## Supplementary Axiom
 
-### A13 Conservation of Possibilia in $L_0$
+### A13 Conservation of Possibilia in L0
 
 Ghost-operator action does not change the cardinality or content of $L_0$, only its illumination state.
 

@@ -42,9 +42,13 @@ This file tracks bilingual rollout for SRT documents.
 | `Core/SRT_Core_12a_Ontology_L0L1.md` | `en/Core/SRT_Core_12a_Ontology_L0L1.md` | in_progress |
 | `Core/SRT_Core_12b_Ontology_L2.md` | `en/Core/SRT_Core_12b_Ontology_L2.md` | in_progress |
 | `Core/SRT_Core_13a_Operator_Basics.md` | `en/Core/SRT_Core_13a_Operator_Basics.md` | in_progress |
+| `Core/SRT_Core_13b_Operator_Advanced.md` | `en/Core/SRT_Core_13b_Operator_Advanced.md` | in_progress |
 | `Core/SRT_Core_14_Dynamics_Scaling.md` | `en/Core/SRT_Core_14_Dynamics_Scaling.md` | in_progress |
+| `Core/_SRT_Core_Bridge.md` | `en/Core/_SRT_Core_Bridge.md` | in_progress |
 | `Core/SRT_Core_21_Formal_Axioms.md` | `en/Core/SRT_Core_21_Formal_Axioms.md` | done |
 | `Core/SRT_Core_22_Equations.md` | `en/Core/SRT_Core_22_Equations.md` | done |
+| `Core/SRT_Experimental_Core.md` | `en/Core/SRT_Experimental_Core.md` | in_progress |
+| `Core/SRT_Experimental_Applications.md` | `en/Core/SRT_Experimental_Applications.md` | in_progress |
 
 ## Per-File Template
 

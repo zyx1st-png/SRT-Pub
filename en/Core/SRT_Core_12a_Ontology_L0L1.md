@@ -20,7 +20,7 @@ last_sync: 2026-02-19
 
 # Part A: Formal Axioms
 
-## I. $L_0$: The Latent Domain
+## I. L0: The Latent Domain
 
 ### Ax-L0-01: Moduli-Ruliad Dualism
 $L_0$ admits both moduli-space (physics) and ruliad-style (computation) descriptions.
@@ -34,7 +34,7 @@ Innovation is selection of previously unilluminated latent regions.
 ### Ax-L0-03: Differential Potential Topology
 $L_0$ is structured by gradient/topological potential, not uniform random possibility.
 
-## II. $L_1$: The Manifest Domain
+## II. L1: The Manifest Domain
 
 ### Ax-L1-01: Selection Equation
 $$L_1(t)=\hat{G}_\theta[L_0(t)]$$
@@ -62,19 +62,19 @@ Manifestation is jointly constrained by embodied substrate and learned priors.
 
 # Part B: Expanded Context (English)
 
-## 1. $L_0$ latent domain: from physics to metaphysics
+## 1. L0 latent domain: from physics to metaphysics
 
 - **Gauge/moduli grounding**: $L_0$ can be framed as configuration space modulo gauge equivalence.
 - **Ruliad grounding**: $L_0$ can also be framed as the superposition of all computational rule trajectories.
 - **Differential ontology**: latent structure contains gradients/attractors rather than featureless potential.
 
-## 2. $L_1$ manifest domain: from perception to existence
+## 2. L1 manifest domain: from perception to existence
 
 - **Hysteresis necessity**: continuity of experienced reality requires memory-carryover terms.
 - **Gating parameterization**: external and internally generated components can be mixed by gating coefficients.
 - **Psychopathology angle**: gating/hysteresis dysregulation predicts fragmentation or pathological lock-in.
 
-## 3. Topology and information at the $L_0$-$L_1$ interface
+## 3. Topology and information at the L0-L1 interface
 
 - **Matter as topology**: material persistence can be interpreted as topological stabilization.
 - **Intrinsic differentiation**: existence intensity tracks internal informational differentiation/specification.

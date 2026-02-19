@@ -118,7 +118,7 @@ $$ \hat{G}_{sleep} = \arg\min_θ \int K(L_2) \, dt $$
 
 $$ μ_φ = \frac{Depth(L_1')}{Depth(L_2^{current})} $$
 
-### 2.4.21 L2 Rigidity Index ($\rho$)
+### 2.4.21 L2 Rigidity Index (rho)
 
 $$ \rho(L_2^{(k)}) = 1 - \frac{\sigma^2_{L_1|L_2^{(k)}}}{\sigma^2_{L_0}} $$
 

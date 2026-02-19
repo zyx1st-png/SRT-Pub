@@ -112,7 +112,7 @@ $$ [\hat{G}_θ(x)]_i = \frac{x_i^n}{ε + \sum_j W_{ij} \cdot x_j^n} $$
 
 $$ \frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ \cdot ∇C_{L_2}[σ] $$
 
-### 2.1.7 Effective-Dimension Formalization of d-value ($d = D_{eff}$)
+### 2.1.7 Effective-Dimension Formalization of d-value (d = D_eff)
 
 $$ d(\hat{G}) \equiv D_{eff}(M) = \frac{(\sum λ_i)^2}{\sum λ_i^2} $$
 

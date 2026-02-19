@@ -15,7 +15,7 @@ last_sync: 2026-02-19
 
 SRT reconstructs ontology into three relative projection layers under unified selection dynamics.
 
-### §1.1 $L_0$ — Latent Domain
+### §1.1 L0 — Latent Domain
 
 **Definition O1**: The set of high-free-energy states relative to current selection; an unselected possibility field.
 
@@ -35,7 +35,7 @@ $$L_0^{rel} \subseteq L_0^{abs}|_{physical\ constraints}$$
 
 ---
 
-### §1.2 $L_1$ — Manifest Domain
+### §1.2 L1 — Manifest Domain
 
 **Definition O2**: The currently selected slice; dynamically maintained present reality.
 
@@ -57,7 +57,7 @@ $$L_1^{experienced} = β · L_1^{external} + (1-β) · \hat{G}(L_0)$$
 
 ---
 
-### §1.3 $L_2$ — Vergence Domain
+### §1.3 L2 — Vergence Domain
 
 **Definition O3**: Long-term attractors of convergent selection; consensus structures across operators.
 
@@ -125,7 +125,7 @@ $$\text{Matter} = \text{Knot}(L_0) = \text{bound vacuum energy}$$
 
 $$σ_{L_1} = \text{Topology}(\text{Twist}[L_0, θ])$$
 
-### §3.2 Non-Abelian braiding in $L_2$
+### §3.2 Non-Abelian braiding in L2
 
 **Definition O7**: $L_2$ structure is determined by representations of braid group $B_n$.
 
@@ -169,7 +169,7 @@ $$\frac{\dim(L_1)}{\dim(L_0)} = f(θ_{cognitive})$$
 
 ## §5 Conservation and Symmetry
 
-### §5.1 $L_0$ conservation law
+### §5.1 L0 conservation law
 
 **Axiom A13**: Ghost-operator action does not change the cardinality of $L_0$, only its illumination state.
 
