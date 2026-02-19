@@ -21,13 +21,22 @@ This file tracks bilingual rollout for SRT documents.
 
 | Module | Source Directory | Target Directory | File Count | Priority | Status |
 |:--|:--|:--|--:|:--|:--|
-| Core_Law | `Core_Law/` | `en/Core_Law/` | 4 | P0 | pending |
+| Core_Law | `Core_Law/` | `en/Core_Law/` | 4 | P0 | done |
 | Core | `Core/` | `en/Core/` | 12 | P0 | pending |
 | Physics | `Physics/` | `en/Physics/` | 9 | P1 | pending |
 | Neuroscience | `Neuroscience/` | `en/Neuroscience/` | 13 | P1 | pending |
 | AI | `AI/` | `en/AI/` | 6 | P1 | pending |
 | Philosophy | `Philosophy/` | `en/Philosophy/` | 14 | P2 | pending |
 | Spirituality | `Spirituality/` | `en/Spirituality/` | 10 | P2 | pending |
+
+## Completed This Round
+
+| Source | English Target | Status |
+|:--|:--|:--|
+| `Core_Law/SRT_Reference_Axioms.md` | `en/Core_Law/SRT_Reference_Axioms.md` | done |
+| `Core_Law/SRT_Reference_Ontology.md` | `en/Core_Law/SRT_Reference_Ontology.md` | done |
+| `Core_Law/SRT_Reference_Dynamics.md` | `en/Core_Law/SRT_Reference_Dynamics.md` | done |
+| `Core_Law/SRT_Reference_Scaling.md` | `en/Core_Law/SRT_Reference_Scaling.md` | done |
 
 ## Per-File Template
 
