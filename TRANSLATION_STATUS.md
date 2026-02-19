@@ -43,8 +43,8 @@ This file tracks bilingual rollout for SRT documents.
 | `Core/SRT_Core_12b_Ontology_L2.md` | `en/Core/SRT_Core_12b_Ontology_L2.md` | in_progress |
 | `Core/SRT_Core_13a_Operator_Basics.md` | `en/Core/SRT_Core_13a_Operator_Basics.md` | in_progress |
 | `Core/SRT_Core_14_Dynamics_Scaling.md` | `en/Core/SRT_Core_14_Dynamics_Scaling.md` | in_progress |
-| `Core/SRT_Core_21_Formal_Axioms.md` | `en/Core/SRT_Core_21_Formal_Axioms.md` | in_progress |
-| `Core/SRT_Core_22_Equations.md` | `en/Core/SRT_Core_22_Equations.md` | in_progress |
+| `Core/SRT_Core_21_Formal_Axioms.md` | `en/Core/SRT_Core_21_Formal_Axioms.md` | done |
+| `Core/SRT_Core_22_Equations.md` | `en/Core/SRT_Core_22_Equations.md` | done |
 
 ## Per-File Template
 
