@@ -6,11 +6,11 @@
 ## Ultra-Short Summary (for Reviewers/Readers)
 
 ### Abstract
-Selective Reality Theory (SRT) proposes a unified ontological framework centered on **Existence = Selection**. Reality is modeled as interactions among `L_0` (latent domain), `L_1` (manifest domain), and `L_2` (vergence domain), driven by an embodied selection operator `\hat{G}_\theta`. The repository develops this framework across physics, neuroscience, AI, philosophy, and spirituality.
+Selective Reality Theory (SRT) proposes a unified ontological framework centered on **Existence = Selection**. Reality is modeled as interactions among $L_0$ (latent domain), $L_1$ (manifest domain), and $L_2$ (vergence domain), driven by an embodied selection operator $\hat{G}_\theta$. The repository develops this framework across physics, neuroscience, AI, philosophy, and spirituality.
 
 ### Key Contributions
-- Defines a shared formal core with triadic ontology (`L_0/L_1/L_2`) and operator dynamics (`\hat{G}_\theta`).
-- Introduces `d-value`, ontological friction (`Ψ_f`), and free-energy style constraints for consciousness and stability analysis.
+- Defines a shared formal core with triadic ontology ($L_0/L_1/L_2$) and operator dynamics ($\hat{G}_\theta$).
+- Introduces `d-value`, ontological friction ($\Psi_f$), and free-energy style constraints for consciousness and stability analysis.
 - Provides cross-scale mappings linking quantum, neural, social, and cultural phenomena under one dynamics language.
 - Frames AI consciousness criteria, alignment limits, and testable hypotheses within a single formal system.
 
@@ -22,9 +22,9 @@ Selective Reality Theory (SRT) proposes a unified ontological framework centered
 This repository is the public theory corpus of SRT, organized as Markdown documents spanning core axioms and domain-specific extensions.
 
 ## 2. Core Concepts
-- **Triadic Ontology**: `L_0` (latent), `L_1` (manifest), `L_2` (vergence)
-- **Ghost Operator**: `\hat{G}_\theta` as embodied finite selection operator
-- **Cost of Existence**: free energy, ontological friction (`Ψ_f`), stability/fragility
+- **Triadic Ontology**: $L_0$ (latent), $L_1$ (manifest), $L_2$ (vergence)
+- **Ghost Operator**: $\hat{G}_\theta$ as embodied finite selection operator
+- **Cost of Existence**: free energy, ontological friction ($\Psi_f$), stability/fragility
 - **Consciousness Criteria**: `d-value`, integration-differentiation, error sensitivity
 - **Cross-Scale Isomorphism**: unified mappings across quantum, neural, and social scales
 
@@ -44,7 +44,7 @@ This repository is the public theory corpus of SRT, organized as Markdown docume
 - Most documents follow a **Hybrid** format:  
   `Part A` (formal axioms, AI-readable) + `Part B` (expanded discourse, human-readable)
 - Front matter commonly includes: `id`, `type`, `tags`, `status`, `dependency`
-- Notation is generally normalized to `L_0/L_1/L_2`, `\hat{G}_\theta`, `d-value`, `Ψ_f`
+- Notation is generally normalized to $L_0/L_1/L_2$, $\hat{G}_\theta$, `d-value`, $\Psi_f$
 
 ## 5. Recommended Reading Paths
 
@@ -79,7 +79,7 @@ This repository is the public theory corpus of SRT, organized as Markdown docume
 - Use `Core_Law/` and `Core/` as canonical references for notation and constraints
 
 ## 7. Contribution Notes
-- Keep notation aligned: `L_0/L_1/L_2`, `\hat{G}_\theta`, `d-value`, `Ψ_f`
+- Keep notation aligned: $L_0/L_1/L_2$, $\hat{G}_\theta$, `d-value`, $\Psi_f$
 - Prefer the Hybrid structure for new modules
 - Include explicit `dependency` and `status` metadata
 - Domain extensions should remain consistent with `Core_Law/` constitutional axioms
