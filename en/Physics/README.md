@@ -10,8 +10,6 @@
 - `SRT_Quant_00_Intro.md`
 - `SRT_Quant_01_Selection.md`
 - `SRT_Quant_02_Cosmology.md`
-
-## Pending
 - `SRT_Phys_07_Complex_Systems.md`
 - `SRT_Phys_08_Ontology_Ext.md`
 - `SRT_Phys_09_Formalism_Ext.md`

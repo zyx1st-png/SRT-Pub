@@ -53,6 +53,11 @@ This file tracks bilingual rollout for SRT documents.
 | `Physics/SRT_Quant_00_Intro.md` | `en/Physics/SRT_Quant_00_Intro.md` | in_progress |
 | `Physics/SRT_Quant_01_Selection.md` | `en/Physics/SRT_Quant_01_Selection.md` | in_progress |
 | `Physics/SRT_Quant_02_Cosmology.md` | `en/Physics/SRT_Quant_02_Cosmology.md` | in_progress |
+| `Physics/SRT_Phys_07_Complex_Systems.md` | `en/Physics/SRT_Phys_07_Complex_Systems.md` | in_progress |
+| `Physics/SRT_Phys_08_Ontology_Ext.md` | `en/Physics/SRT_Phys_08_Ontology_Ext.md` | in_progress |
+| `Physics/SRT_Phys_09_Formalism_Ext.md` | `en/Physics/SRT_Phys_09_Formalism_Ext.md` | in_progress |
+| `Physics/SRT_Phys_10_Integration.md` | `en/Physics/SRT_Phys_10_Integration.md` | in_progress |
+| `Physics/SRT_Physics_Cosmology.md` | `en/Physics/SRT_Physics_Cosmology.md` | in_progress |
 
 ## Per-File Template
 
