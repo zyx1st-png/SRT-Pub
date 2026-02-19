@@ -24,7 +24,7 @@ This file tracks bilingual rollout for SRT documents.
 | Core_Law | `Core_Law/` | `en/Core_Law/` | 4 | P0 | done |
 | Core | `Core/` | `en/Core/` | 12 | P0 | in_progress |
 | Physics | `Physics/` | `en/Physics/` | 9 | P1 | in_progress |
-| Neuroscience | `Neuroscience/` | `en/Neuroscience/` | 13 | P1 | pending |
+| Neuroscience | `Neuroscience/` | `en/Neuroscience/` | 13 | P1 | in_progress |
 | AI | `AI/` | `en/AI/` | 6 | P1 | pending |
 | Philosophy | `Philosophy/` | `en/Philosophy/` | 14 | P2 | pending |
 | Spirituality | `Spirituality/` | `en/Spirituality/` | 10 | P2 | pending |
@@ -58,6 +58,19 @@ This file tracks bilingual rollout for SRT documents.
 | `Physics/SRT_Phys_09_Formalism_Ext.md` | `en/Physics/SRT_Phys_09_Formalism_Ext.md` | in_progress |
 | `Physics/SRT_Phys_10_Integration.md` | `en/Physics/SRT_Phys_10_Integration.md` | in_progress |
 | `Physics/SRT_Physics_Cosmology.md` | `en/Physics/SRT_Physics_Cosmology.md` | in_progress |
+| `Neuroscience/_SRT_Neuro_Axioms.md` | `en/Neuroscience/_SRT_Neuro_Axioms.md` | in_progress |
+| `Neuroscience/SRT_Neural_Mechanisms.md` | `en/Neuroscience/SRT_Neural_Mechanisms.md` | in_progress |
+| `Neuroscience/SRT_Consciousness_Mechanisms.md` | `en/Neuroscience/SRT_Consciousness_Mechanisms.md` | in_progress |
+| `Neuroscience/SRT_Neuro_Experiments.md` | `en/Neuroscience/SRT_Neuro_Experiments.md` | in_progress |
+| `Neuroscience/SRT_Clin_00_IIT_PCI.md` | `en/Neuroscience/SRT_Clin_00_IIT_PCI.md` | in_progress |
+| `Neuroscience/SRT_Clin_01_Pathology.md` | `en/Neuroscience/SRT_Clin_01_Pathology.md` | in_progress |
+| `Neuroscience/SRT_Clin_02_FEP.md` | `en/Neuroscience/SRT_Clin_02_FEP.md` | in_progress |
+| `Neuroscience/SRT_Clin_03_DMN_Networks.md` | `en/Neuroscience/SRT_Clin_03_DMN_Networks.md` | in_progress |
+| `Neuroscience/SRT_Neuro_06_Field_Effects.md` | `en/Neuroscience/SRT_Neuro_06_Field_Effects.md` | in_progress |
+| `Neuroscience/SRT_Neuro_07_Evo_Devo.md` | `en/Neuroscience/SRT_Neuro_07_Evo_Devo.md` | in_progress |
+| `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | `en/Neuroscience/SRT_Neuro_08_Immune_Dist.md` | in_progress |
+| `Neuroscience/SRT_Neuro_09_Integ_Eq.md` | `en/Neuroscience/SRT_Neuro_09_Integ_Eq.md` | in_progress |
+| `Neuroscience/SRT_Neuro_10_Advanced_Models.md` | `en/Neuroscience/SRT_Neuro_10_Advanced_Models.md` | in_progress |
 
 ## Per-File Template
 
