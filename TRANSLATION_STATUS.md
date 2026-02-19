@@ -22,7 +22,7 @@ This file tracks bilingual rollout for SRT documents.
 | Module | Source Directory | Target Directory | File Count | Priority | Status |
 |:--|:--|:--|--:|:--|:--|
 | Core_Law | `Core_Law/` | `en/Core_Law/` | 4 | P0 | done |
-| Core | `Core/` | `en/Core/` | 12 | P0 | pending |
+| Core | `Core/` | `en/Core/` | 12 | P0 | in_progress |
 | Physics | `Physics/` | `en/Physics/` | 9 | P1 | pending |
 | Neuroscience | `Neuroscience/` | `en/Neuroscience/` | 13 | P1 | pending |
 | AI | `AI/` | `en/AI/` | 6 | P1 | pending |
@@ -37,6 +37,14 @@ This file tracks bilingual rollout for SRT documents.
 | `Core_Law/SRT_Reference_Ontology.md` | `en/Core_Law/SRT_Reference_Ontology.md` | done |
 | `Core_Law/SRT_Reference_Dynamics.md` | `en/Core_Law/SRT_Reference_Dynamics.md` | done |
 | `Core_Law/SRT_Reference_Scaling.md` | `en/Core_Law/SRT_Reference_Scaling.md` | done |
+| `Core/SRT_Core_00_Intro.md` | `en/Core/SRT_Core_00_Intro.md` | in_progress |
+| `Core/SRT_Core_01_Axioms.md` | `en/Core/SRT_Core_01_Axioms.md` | in_progress |
+| `Core/SRT_Core_12a_Ontology_L0L1.md` | `en/Core/SRT_Core_12a_Ontology_L0L1.md` | in_progress |
+| `Core/SRT_Core_12b_Ontology_L2.md` | `en/Core/SRT_Core_12b_Ontology_L2.md` | in_progress |
+| `Core/SRT_Core_13a_Operator_Basics.md` | `en/Core/SRT_Core_13a_Operator_Basics.md` | in_progress |
+| `Core/SRT_Core_14_Dynamics_Scaling.md` | `en/Core/SRT_Core_14_Dynamics_Scaling.md` | in_progress |
+| `Core/SRT_Core_21_Formal_Axioms.md` | `en/Core/SRT_Core_21_Formal_Axioms.md` | in_progress |
+| `Core/SRT_Core_22_Equations.md` | `en/Core/SRT_Core_22_Equations.md` | in_progress |
 
 ## Per-File Template
 
