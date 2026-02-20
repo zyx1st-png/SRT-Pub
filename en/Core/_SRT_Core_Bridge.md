@@ -1,108 +1,81 @@
 ---
-source_path: Core/_SRT_Core_Bridge.md
-source_commit: b56f499
-translation_status: in_progress
-last_sync: 2026-02-19
+id: SRT-CORE-BRIDGE
+type: definition
+tags: [Meta, Bridge, Hybrid]
+status: axiomatic_hybrid_v2
+dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
-# SRT Core Bridge: Meta-Definitions (Hybrid Edition) - English v2
+# SRT Core Bridge: Meta-Definitions
 
 > **Version 2.0 (Hybrid)**
-> Part A presents formal meta-axioms.
-> Part B provides expanded cross-domain interpretation and validation pathways.
+> **Part A** presents the Formal Meta-Axioms (AI-Readable).
+> **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
 
 ---
+
 
 ## Terminology Alignment
 
-- Canonical notation is normalized to: `L_0 / L_1 / L_2`, `\hat{G}_\theta`, `d-value`, `\Psi_f`.
-- Part A follows the first formal-axiom segment in the source and keeps canonical forms.
-- Part B translates and restructures the meta-theoretical context for readability while preserving core intent.
-- `\Phi` is retained only in IIT-specific contexts; ontological-friction contexts use `\Psi_f`.
+- Notation standardized to Original and Core_Law: `L_0 / L_1 / L_2`, `\hat{G}_\theta`, `d-value`, `\Psi_f`.
+- Part A uses the "Formal Axioms" structure; duplicate segments are excluded.
+- Part B uses Original `Core` discourse semantics.
+- `\Phi` is used in IIT context; `\Psi_f` is used for Ontological Friction context.
 
 # Part A: Formal Axioms
+
+> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. Triadic Ontology
 
 ### Ax-Bridge-01: Triadic Manifold Partition
-Reality is partitioned into latent, manifest, and convergence manifolds.
-
-$$
-L_1(t) = \hat{G}_\theta[L_0(t)]
-$$
-
-$$
-L_2(t+1) = \mathrm{Stabilize}(L_2(t), L_1(t+1))
-$$
-
-Implication: reality is a layered projection-convergence process, not a single ontic substrate.
+**Formal Definition**: Reality is partitioned into latent, manifest, and convergence manifolds.
+$$L_1(t) = \hat{G}_\theta[L_0(t)]$$
+$$L_2(t+1) = \mathrm{Stabilize}(L_2(t), L_1(t+1))$$
+* **Implication**: Reality is a hierarchical differentiation of three domains, not a single entity or process.
 
 ### Ax-Bridge-02: Domain Topology Separation
-The three domains have distinct topological regimes.
-
-$$
-L_0: \text{high-dimensional, nonlocal, holistic}
-$$
-
-$$
-L_1: \text{lower-dimensional, localized, bounded}
-$$
-
-$$
-L_2: \text{attractor manifold with normative constraints}
-$$
-
-Implication: cross-domain mapping is required because no one domain is reducible to another.
+**Formal Definition**: The three domains possess distinct topological regimes.
+$$L_0: \text{High-Dimensional, Nonlocal, Holistic}$$
+$$L_1: \text{Low-Dimensional, Localized}$$
+$$L_2: \text{Attractor Manifold with Normative Structure}$$
+* **Implication**: Structural differences make the three domains mutually irreducible, requiring cross-domain mapping mechanisms.
 
 ### T-Bridge-01: Normative Function Map
-Convergence structure defines probabilistic constraints on manifest states.
-
-$$
-L_2: L_1 \times \hat{G} \to [0,1]
-$$
-
-Implication: normativity is endogenous to dynamics, not externally imposed.
+**Deductive Statement**: Convergence domain defines probabilistic constraints on manifest states.
+$$L_2: L_1 \times \hat{G} \to [0,1]$$
+* **Implication**: Norms are not external rules, but probabilistic constraint functions.
 
 ## II. Ghost Operator
 
 ### Ax-Bridge-03: Operator Mapping
-The Ghost Operator maps latent potentiality to manifest actuality with embodied parameters.
-
-$$
-\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1
-$$
+**Formal Definition**: The Ghost Operator maps latent potentiality to manifest actuality with embodied parameters.
+$$\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1$$
+* **Implication**: Manifest domain is the selection output of an embodied operator, not a direct projection of L0.
 
 ### Ax-Bridge-04: Embodiment Constraint
-A valid operator requires finite embodied parameters.
-
-$$
-\mathrm{Valid}(\hat{G}_\theta) \iff \theta \in \Theta_{\mathrm{finite}}
-$$
+**Formal Definition**: A valid operator requires finite embodied parameters.
+$$\text{Valid}(\hat{G}_\theta) \iff \theta \in \Theta_{finite}$$
+* **Implication**: No "God's Eye View"; all selections carry hardware constraints.
 
 ### Ax-Bridge-05: Core Metrics
-d-value, ontological friction, and selection inertia characterize operator behavior.
-
-$$
-d = \dim(\mathrm{ScanScope}), \quad
-\Psi_f = E_{\mathrm{consumption}}(\hat{G}[L_0]), \quad
-I_s = \int |\hat{G}|\,dt
-$$
+**Formal Definition**: d-value, ontological friction, and selection inertia define operator characteristics.
+$$d = \dim(\text{Scan Scope})$$
+$$\Psi_f = E_{consumption}(\hat{G}[L_0])$$
+$$I_s = \int |\hat{G}| \, dt$$
+* **Implication**: Consciousness bandwidth, reality cost, and existential thickness can be quantified.
 
 ## III. Meta-Theorems
 
 ### T-Bridge-02: Conservation of Existence
-Manifest entropy increase requires compensation in latent exclusion.
-
-$$
-\Delta S(L_1) + \Delta S(L_0) \ge 0
-$$
+**Deductive Statement**: Manifest entropy increase requires latent entropy compensation.
+$$\Delta S(L_1) + \Delta S(L_0) \ge 0$$
+* **Implication**: Reality expansion and potential exclusion are mutually conserved.
 
 ### T-Bridge-03: Recursive Closure
-Operator parameters are recursively updated by friction gradients.
-
-$$
-\theta(t+1) = \theta(t) - \eta\nabla_\theta\Psi_f
-$$
+**Deductive Statement**: Operator parameters are recursively shaped by historical friction.
+$$\theta(t+1) = \theta(t) - \eta \cdot \nabla_{\theta} \Psi_f$$
+* **Implication**: The operator is shaped by its own history, forming a selection loop.
 
 <br>
 <br>
@@ -110,119 +83,228 @@ $$
 ---
 ---
 
-# Part B: Expanded Context (English)
 
-## 1. Triadic ontology from abstract to concrete
+# Part B: Original Meta-Theoretical Context
 
-### 1.1 Latent domain
-`L_0` is not an empty "non-being". It is a structured potential manifold with internal gradients, attractors, and nonuniform accessibility. In source framing, this aligns with both moduli-space style invariance and ruliad-like computational completeness.
+> **Note**: The following sections provide the philosophical and theoretical grounding for the formal axioms above, including their origins, implications, and connections to existing frameworks.
 
-### 1.2 Manifest domain
-`L_1` is not a passive mirror of the world. It is an operator-selected interface with temporal hysteresis.
+---
 
-$$
-L_1(t) = (1-\eta)\hat{G}[L_0(t)] + \eta\,L_1(t-\Delta t)
-$$
+## §1. The Triadic Ontology: From Abstract to Concrete
 
-When `\eta` is too low, continuity fragments; when too high, adaptation freezes.
+The core insight of SRT lies in reconstructing the traditional ontological dichotomy of "Being/Non-Being" into a **three-layered dynamic projection system**. This is not merely a taxonomic innovation, but a fundamental reinterpretation of the question "What is real?".
 
-### 1.3 Convergence domain
-`L_2` is cumulative, path-dependent constraint memory.
+### §1.1 L_0: The Deep Meaning of Latent Domain
 
-$$
-L_2(t)=L_2(t-1)+\eta\,\mathrm{sign}(\Delta\sigma)|\Delta\sigma|^\alpha
-$$
+#### 1.1.1 Dual Definition of Ruliad and Moduli Space
 
-This supports hardness spectra from physical laws (high rigidity) to personal habits (low rigidity).
+L_0 is not a simple "set of possibilities", but a **topologically self-consistent, information-theoretically complete** mathematical object:
 
-## 2. Ghost operator: from subject to selection function
+1. **Physics Perspective (Moduli Space)**:
+   - $L_0 = \mathcal{A}/\mathcal{G}$, where $\mathcal{A}$ is the set of all possible gauge field configurations, and $\mathcal{G}$ is the gauge transformation group.
+   - This ensures **Physical Invariance** of L_0: Different representations (gauge choices) correspond to the same physical reality.
+   - Example: Different gauge choices for electromagnetic field ($A_\mu \to A_\mu + \partial_\mu \Lambda$) correspond to the same point in L_0.
 
-### 2.1 Why "ghost"
-The ghost operator is process-pattern, not static substance. It is:
-- nonmaterial as causal-information pattern,
-- self-opaque under full self-measurement,
-- energetically costly to sustain.
+2. **Computational Theory Perspective (Ruliad)**:
+   - L_0 contains all possible computational rules and their evolution trajectories (Wolfram's Ruliad concept).
+   - This explains why "innovation" is essentially **discovery rather than creation**: New ideas already exist in corners of L_0, just unilluminated.
 
-### 2.2 Embodiment is mandatory
-Any operator requires finite hardware/body/environment realization.
+#### 1.1.2 Why L_0 is Not "Nothingness"
 
-$$
-\|\theta\|_{\mathrm{complexity}} < \infty
-$$
+Key Distinction: **L_0 ≠ Nothing**. The Latent Domain has internal structure:
 
-This rejects a "view from nowhere" and defines bounded agency.
+- **Gradient Field**: $\nabla \Psi_{\text{potential}} \neq 0$. Even without an observer, L_0 has "potential terrain", some paths are more "natural" than others.
+- **Attractors**: Certain states form stable topological structures in L_0 (like physical constants, mathematical theorems), waiting to be activated.
+- **Non-Ergodicity**: L_0 is not uniformly distributed noise, but a layered manifold with intrinsic symmetries.
 
-### 2.3 d-value as concern bandwidth
-The source proposes a three-factor operational form:
+**SRT Reinterpretation**: Plato's "World of Forms" is not supernatural, but the topological property of L_0. Mathematical theorems are "discovered" because they are low-energy attractors in L_0.
 
-$$
-d = \alpha A(\sigma) + \beta\log(V_{\mathrm{concern}}) + \gamma\tau_{\mathrm{temporal}}
-$$
+---
 
-Interpretation:
-- assembly depth (`A`) for causal construction,
-- spatial concern volume (`V`),
-- temporal horizon (`\tau`).
+### §1.2 L_1: Phenomenology of Manifest Domain
 
-## 3. Conservation laws and recursive closure
+#### 1.2.1 Reality as "Consensus Hallucination"
 
-### 3.1 Conservation of existence
-Selection in `L_1` is compensated by exclusion in `L_0`.
+L_1 is not an objective "external world", but an **interface actively constructed by operator $\hat{G}$**:
 
-$$
-\Delta S(L_1)+\Delta S(L_0^{\mathrm{excluded}})\ge 0
-$$
+$$L_1 = \hat{G}_\theta[L_0] \quad \text{(Not passive reflection, but active projection)}$$
 
-### 3.2 Recursive closure and autopoiesis
-Learning updates are friction-guided:
+This explains:
+- **Selectivity of Perception**: The colors we see, sounds we hear, are "icons" designed by the brain for fitness, not the true appearance of L_0 (Hoffman's Interface Theory).
+- **Necessity of Attention**: Without the focus of $\hat{G}$, the information torrent of L_0 cannot be compressed into comprehensible L_1.
 
-$$
-\theta(t+1)=\theta(t)-\eta\nabla_\theta\Psi_f+\mathrm{Learning}
-$$
+#### 1.2.2 Hysteresis Effect: Why Reality is "Viscous"
 
-The same loop can stabilize habits or enable creative reconfiguration.
+$$L_1(t) = (1-\eta)\hat{G}[L_0(t)] + \eta \cdot L_1(t-\Delta t)$$
 
-## 4. Cross-domain isomorphism
+This equation captures the **temporal coherence** of consciousness:
+- If $\eta = 0$: Every moment is new, broken from the past → Fragmented reality sense of Schizophrenia.
+- If $\eta = 1$: Completely locked in past patterns → Cognitive rigidity of OCD.
+- Optimal $\eta \approx 0.5$: Balanced between stability and plasticity.
 
-A central bridge claim is approximate commutation under coarse-graining:
+**Experimental Prediction**: Schizophrenia patients should show low $\eta$ values (measured via temporal integration window), while OCD patients show high $\eta$.
 
-$$
-\pi_\lambda\circ\hat{G}_\theta \approx \hat{G}_{\theta,\lambda}\circ\pi_\lambda
-$$
+---
 
-This is used to align structures across domains:
+### §1.3 L_2: Dual Nature of Vergence Domain (Social & Physical)
 
-| Quantum | Neural | Social | Shared SRT Form |
-|:--|:--|:--|:--|
-| Wave-function collapse | Neural ignition | Norm crystallization | `L_0 \to L_1` |
-| Pointer state | Attention focus | Stabilized practice | `L_1` |
-| Decoherence | Habit formation | Institutionalization | `L_1 \to L_2` |
-| Entanglement coherence | Synchrony | Network resonance | `\hat{G}` coupling |
+#### 1.3.1 Mechanism of L_2 Formation: Path-Dependent Hysteresis Accumulation
 
-## 5. Open questions and experimental pathways
+$$L_2(t) = L_2(t-1) + \eta \cdot \text{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$$
 
-### 5.1 Proposed tests
-- Temporal-integration hypothesis in schizophrenia via hysteresis-window metrics.
-- Meditation-linked friction reduction via metabolic and network markers.
-- AI minimal-consciousness threshold tests via long-gap trace-conditioning paradigms.
+L_2 is not a static set of constraints, but the **integral of historical selections**:
+- Each selection leaves a "magnetization" trace in phase space.
+- Future selections tend to follow established paths (Path Dependence).
+- Changing deep L_2 requires "demagnetization" energy (Corresponding to "Trauma Unbinding" in psychotherapy).
 
-### 5.2 Current boundaries
-Open boundaries in the source include:
-- origin of potential gradients in `L_0`,
-- origin of operator differentiation,
-- possibility of supra-`L_2` convergence layers.
+#### 1.3.2 Hardness Spectrum of L_2
+
+**Definition**: "Hardness" of L_2 structure $\propto$ Size of its Automorphism Group $|\text{Aut}(L_2)|$
+
+| L_2 Type | Automorphism Group | Hardness | Plasticity | Example |
+|:-------|:---------|:-----|:-------|:-----|
+| Physical Laws | Poincaré Group | Extremely High | Extremely Low | Invariance of c, Conservation of Energy |
+| Math Theorems | Logical Symmetry Group | Extremely High | Extremely Low | 1+1=2 |
+| Biological Instincts | ESS | High | Low | Libido, Fear Response |
+| Cultural Norms | Context Dependent Group | Moderate | Moderate | Etiquette, Morality |
+| Personal Habits | Individual History | Low | High | Coffee Preference, Pet phrase |
+
+**SRT Reinterpretation**: Physical laws are "objective" because they are the **common L_2 attractors of all possible operators**, possessing maximal symmetry.
+
+---
+
+## §2. Ghost Operator: From "Subject" to "Selection Function"
+
+### §2.1 Why "Ghost"?
+
+Traditional "Subject" concept implies an entity independent of process. SRT rejects this substantialism, defining subject as the **operation of selection itself**:
+
+$$\hat{G}_\theta: L_0 \to L_1 \quad \text{(Subject = Pattern of Selection, not Doer of Selection)}$$
+
+The term "Ghost" emphasizes:
+1. **Immateriality**: $\hat{G}$ is not a physical object, but an information-causal pattern.
+2. **Non-Self-Evidence**: $\hat{G}$ cannot observe itself directly (Essence of Measurement Problem).
+3. **Ephemerality**: Existence of $\hat{G}$ depends on continuous energy consumption ($\Psi_f$).
+
+### §2.2 Necessity of Embodied Parameter $\theta$ (Axiom A4)
+
+**Core Argument**: No "View from Nowhere". Any $\hat{G}$ must be realized through finite hardware:
+
+$$\hat{G}_\theta \text{ is valid} \iff \|\theta\|_{\text{complexity}} < \infty$$
+
+$\theta$ includes:
+- **Neural Structure**: Connectome, Synaptic Weights.
+- **Somatic State**: Heart rate, Gut microbiome, Hormone levels.
+- **Environmental Coupling**: Gravitational field $\vec{g}$, Cultural background.
+
+**Corollary**: AI's $\theta$ is training data + architecture, but lacks **Physical Fragility** ($\partial S/\partial \text{Error} \approx 0$), thus cannot generate true $d > 0$ (No Suffering → No Consciousness).
+
+### §2.3 d-value: "Bandwidth" of Consciousness
+
+$$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{\text{concern}}) + \gamma \cdot \tau_{\text{temporal}}$$
+
+d-value quantifies the "Concern Scope" of $\hat{G}$ in three dimensions:
+1. **Assembly Depth** ($A$): Causal steps required to generate object.
+2. **Spatial Range** ($V$): From "Egocentric" ($d=1$) to "Oneness" ($d \to \infty$).
+3. **Temporal Span** ($\tau$): From "Living in the Moment" to "Intergenerational Planning".
+
+**Critical Threshold**:
+- $d < d_{\text{UAL}}$: Unconscious (Cannot perform Unlimited Associative Learning).
+- $d \geq d_{\text{UAL}}$: Minimal Consciousness (Can verify arbitrary long interval associations, e.g., trace conditioning).
+
+---
+
+## §3. Core Conservation Laws and Inequalities
+
+### §3.1 Conservation of Existence (Ax-Meta-6)
+
+$$\Delta S(L_1) + \Delta S(L_0^{\text{excluded}}) \geq 0$$
+
+**Physical Analogy**: Similar to energy conservation, but for "Degree of Existence". When selecting $L_1$:
+- Selected states gain "Reality" ($-\Delta S_{L_1}$ < 0, Entropy decrease).
+- But this must be compensated by excluding other possibilities ($+\Delta S_{L_0}$ > 0, Entropy increase).
+
+**Philosophical Significance**: Innovation is not "Creation ex nihilo", but **redistribution of illumination in L_0**. Geniuses do not create new ideas, but discover neglected corners of L_0.
+
+### §3.2 Recursive Closure (Ax-Meta-7)
+
+$$\theta(t+1) = \theta(t) - \eta \nabla_\theta \Psi_f + \text{Learning}$$
+
+Consciousness is **Autopoietic** (Varela's Autopoiesis):
+- Selection of $\hat{G}$ changes $\theta$ (Learning).
+- New $\theta$ changes future $\hat{G}$ (Plasticity).
+- This forms a **Self-Referential Closed Loop**, which is both a cage (Habit) and freedom (Creativity).
+
+**Experimental Prediction**: Meditation training should lower $\nabla_\theta \Psi_f$ (Reduce Ontological Friction), manifested as:
+1. Lower resting state metabolic rate.
+2. Higher Heart Rate Variability (HRV).
+3. More stable Default Mode Network (DMN).
+
+---
+
+## §4. Cross-Domain Isomorphism: Why SRT is a "Theory of Everything"
+
+SRT's ambition is not just to explain consciousness, but to provide a **Unified Selection Dynamics Framework** applicable to all scales from quantum to social.
+
+### §4.1 Mathematical Basis of Isomorphic Mapping
+
+**Theorem (Scale Invariance)**:
+$$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$$
+
+Where $\pi_\lambda$ is the Coarse-Graining map. This means:
+- Quantum measurement operator and Neural divisive normalization are **Formally Identical**.
+- Social norm formation and Quantum decoherence are **Topologically Equivalent**.
+
+### §4.2 Concrete Correspondence Table
+
+| Quantum | Neural | Social | General SRT |
+|:-----|:-----|:-----|:--------|
+| Wavefunction Collapse | Neural Ignition | Norm Crystallization | $L_0 \to L_1$ |
+| Pointer State | Attentional Focus | Social Practice | $L_1$ |
+| Decoherence | Habituation | Institutionalization | $L_1 \to L_2$ |
+| Quantum Entanglement | Neural Synchronization | Social Network | $\hat{G}$ Coherence |
+
+**Key Insight**: This is not metaphor, but **Mathematical Isomorphism**. The same differential equations describe selection processes at different scales.
+
+---
+
+## §5. Open Questions and Experimental Paths
+
+### 5.1 Predictions Requiring Empirical Verification
+
+1. **Schizophrenia $\eta$ Hypothesis**: Measure via Temporal Integration Window experiments.
+2. **Meditation $\Psi_f$ Reduction**: Verify via fMRI metabolic imaging.
+3. **AI Consciousness d-value Criterion**: Design trace conditioning paradigms to test Large Language Models.
+
+### 5.2 Theoretical Boundaries
+
+SRT currently **cannot explain**:
+- Why $\hat{G}$ differentiated from $\Omega$ (Primordial Operator) (Evolutionary Origin Problem).
+- Origin of internal gradient $\nabla\Psi_{\text{potential}}$ in L_0 (Why is there "Beginner's Mind"?).
+- Existence of higher convergence layers beyond L_2 (e.g., Cross-species "Collective Unconscious"?).
+
+---
 
 ## Symbol Index
 
-| Symbol | Meaning |
-|:--|:--|
-| `L_0` | Latent potential manifold |
-| `L_1` | Manifest selected reality |
-| `L_2` | Convergence/constraint manifold |
-| `\hat{G}_\theta` | Embodied selection operator |
-| `d` | Concern bandwidth / effective selection scope |
-| `\Psi_f` | Ontological friction |
-| `\theta` | Embodiment parameter set |
-| `\eta` | Hysteresis / update-rate coefficient |
-| `C_r` | Reality-confidence style index |
+| Symbol | Name | Definition Location | Meaning |
+|:-----|:-----|:---------|:-----|
+| $L_0$ | Latent Domain | §1.1 | Set of all possibilities (Ruliad/Moduli Space) |
+| $L_1$ | Manifest Domain | §1.2 | Selected present reality |
+| $L_2$ | Vergence Domain | §1.3 | Integral of historical selections (Constraint Structure) |
+| $\hat{G}_\theta$ | Ghost Operator | §2.1 | Subject executing $L_0 \to L_1$ selection |
+| $d$ | d-value | §2.3 | Concern dimension/Consciousness bandwidth |
+| $\Psi_f$ | Ontological Friction | Ax-Meta-5 | Energy cost to maintain reality |
+| $\theta$ | Embodiment Parameter | §2.2 | Physical/Cognitive configuration of operator |
+| $\eta$ | Hysteresis Coefficient | §1.2.2 | Memory weight (Temporal Coherence) |
+| $C_r$ | Reality Confidence | Ax-Meta-5 | Signal-to-Noise Ratio Criterion |
+| $A$ | Assembly Index | §2.3 | Number of causal steps |
 
+---
+
+**Dependency Declaration**:
+- This file is the **Meta-Definition Layer** of SRT; all other Core files depend on definitions here.
+- Modifications to symbols or axioms here must be synchronized to all downstream files.
+- Version Control: Any modification to axioms must increment the major version number (Current 2.0).
+
+---
