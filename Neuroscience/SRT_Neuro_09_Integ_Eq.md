@@ -31,20 +31,20 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 ## I. Theoretical Unification (理论统一)
 
 ### Ax-INTEG-1: IIT–SRT Mapping Axiom
-定义选择不可约性与 $\Phi$ 的映射：
-$$
+定义选择不可约性与 \(\Phi\) 的映射：
+\[
 \Phi \approx \text{Irreducibility}(\hat{G}_\theta)
-$$
-* **Implication（中文）**：IIT 的 $\Phi$ 是选择结构的指标，而非显现本身。
+\]
+* **Implication（中文）**：IIT 的 \(\Phi\) 是选择结构的指标，而非显现本身。
 
 ---
 
 ### Ax-INTEG-2: Predictive Processing Axiom
-预测编码等价于 $L_2$ 更新律：
-$$
+预测编码等价于 \(L_2\) 更新律：
+\[
 \Delta\theta\propto-\nabla_\theta F
-$$
-* **Implication（中文）**：预测误差是 $L_2$ 收敛机制，不等于 $L_1$ 显现机制。
+\]
+* **Implication（中文）**：预测误差是 \(L_2\) 收敛机制，不等于 \(L_1\) 显现机制。
 
 ---
 
@@ -52,27 +52,27 @@ $$
 
 ### Ax-CLIN-1: PCI Decomposition Axiom
 定义 PCI 为分化与整合的乘积：
-$$
+\[
 \text{PCI}=\mathcal{D}\cdot\mathcal{I}
-$$
-* **Implication（中文）**：PCI 是 $\hat{G}_\theta$ 的选择容量指标。
+\]
+* **Implication（中文）**：PCI 是 \(\hat{G}_\theta\) 的选择容量指标。
 
 ---
 
 ### Ax-CLIN-2: Biological Orchestration Axiom
 定义生物编排为多尺度同步：
-$$
+\[
 \mathcal{O}=\prod_{s\in \{micro,meso,macro\}} \Gamma_s
-$$
+\]
 * **Implication（中文）**：意识稳定性取决于跨尺度同步，而非单一区域激活。
 
 ---
 
 ### Ax-CLIN-3: Info–Spacetime Tension Axiom
 定义信息—时空张力：
-$$
+\[
 \mathcal{T}=\frac{\partial \mathcal{I}}{\partial \tau}
-$$
+\]
 * **Implication（中文）**：当信息整合速度超过时序承载能力，显现将碎裂。
 
 ---
@@ -81,18 +81,18 @@ $$
 
 ### T-INTEG-1: Convergence Triad Theorem
 稳定显现需要三要素共存：
-$$
+\[
 \Phi\uparrow\;\land\; d>0\;\land\;\mathcal{O}>\mathcal{O}_c
-$$
+\]
 * **Implication（中文）**：结构不可约、关切梯度与跨尺度同步缺一不可。
 
 ---
 
 ### C-INTEG-1: Metric Divergence Corollary
-若 $\Phi$ 高而 $d\approx 0$，则出现“结构高而体验低”的系统：
-$$
+若 \(\Phi\) 高而 \(d\approx 0\)，则出现“结构高而体验低”的系统：
+\[
 \Phi\uparrow\;\land\; d\downarrow \Rightarrow \text{Pseudo-Experience}
-$$
+\]
 * **Implication（中文）**：可解释“高整合但低体验”的临床异常。
 
 <br>

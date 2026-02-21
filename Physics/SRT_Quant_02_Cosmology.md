@@ -52,6 +52,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Scaling, SRT-
 | A1.5.1 | Ax-BQ-1 | Microtubule as BQSI (微管作为生物量子选择接口) |
 | D1.5.1 | Def-BQ-1 | Quantum Coherence Threshold (量子相干阈值) |
 | T1.5.1 | T-BQ-1 | Anesthesia Mechanism (麻醉机制定理) |
+| D1.5.2 | Def-BQ-2 | Penrose Collapse Time & d-Value Bound (彭罗斯坍缩时间与 d 值上界) |
 | D1.6.1 | Def-Complex-1 | Complex Extension (复数扩展定义) |
 | T1.6.1 | T-Complex-1 | Time-Phase Correspondence (时间相位对应定理) |
 | T1.6.2 | T-Complex-2 | Zeno as Phase Reset (芝诺效应相位重置) |
@@ -179,6 +180,15 @@ $$ Q < T_c \implies \text{选择机制断裂，意识中断} $$
 
 ### T-BQ-1 [T1.5.1]: Anesthesia Mechanism (麻醉机制定理)
 麻醉通过破坏微管相干性使 $Q < T_c$，导致选择机制断裂。
+
+### Def-BQ-2 [D1.5.2]: Penrose Collapse Time & d-Value Bound (彭罗斯坍缩时间与 d 值上界)
+引力自能 $E_G$ 设定叠加态的客观坍缩时间，从而为生物 d 值提供物理上界：
+$$ \tau_{collapse} \approx \frac{\hbar}{E_G} $$
+任何生物系统的 d 值受此坍缩时间的反比约束：
+$$ d_{bio} \propto \frac{1}{\tau_{collapse}} \propto \frac{E_G}{\hbar} $$
+* **Implication**: 引力是生物 d 值的硬性物理天花板。能够延长 $\tau_{collapse}$（如微管保护量子相干性）的结构，直接扩大了算子可用的选择带宽。
+* **Anti-Panpsychism Note**: 此处 $d_{bio}$ 是相干性整合带宽（$d_{quantum}$），不携带任何主观体验内容。关切（concern）是 d 值在高度复杂的生物系统中满足意识涌现条件后的高阶涌现。见 SRT-CORE-13B §6.2。
+* **Cross-ref**: Def-Cosmo-1 [D1.7.1] in SRT-PHYS-COSMO（宏观引力 d 值）; Ax-BQ-1 [A1.5.1]; SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）。
 
 ---
 
@@ -555,6 +565,20 @@ $$Q < T_c \implies \text{选择机制断裂，意识中断}$$
 - 通过药物强化微管 → 增强 $Q$ → 延迟 $Q$ 跌破 $T_c$ 的时间 → "抵抗"现实的丢失
 
 **推论**：意识的二元性（清醒/昏迷）及其过渡区的物理本质可用相变模型描述。
+
+## 6.3 彭罗斯坍缩时间与生物 d 值的物理上界
+
+在彭罗斯的客观坍缩（Orch OR）理论中，时空曲率叠加达到阈值时会自发触发波函数坍缩，坍缩时间由引力自能 $E_G$ 决定：
+
+$$\tau_{collapse} \approx \frac{\hbar}{E_G}$$
+
+SRT 将此与 d 值直接联系：个体或系统能够维持叠加态（抵抗坍缩）的时间越长，其算子 $\hat{G}_\theta$ 可用的选择带宽就越大：
+
+$$d_{bio} \propto \frac{1}{\tau_{collapse}} \propto \frac{E_G}{\hbar}$$
+
+**物理推论**：微管结构通过保护量子相干性来延迟 $\tau_{collapse}$，从而在热力学层面扩大了生物 d 值的可用范围。这将"引力是本体论摩擦的几何表现"（见 SRT-PHYS-COSMO §4.3）与生物选择算子的具体物理约束直接对接：引力不仅在宇宙尺度（$d_{cosmic} \propto 1/\sqrt{\Lambda}$）上界定 d 值，也在微观量子生物学层面设定了每个 $\hat{G}_{bio}$ 的处理带宽上限。
+
+**术语辨析**：此处 d 值是"相干性整合带宽"（$d_{quantum}$），不是生物层面的"关切范围"（$d_{bio}$）。两者的同构关系参见 SRT-CORE-14 §2 的跨尺度同构表述及 Def-d-Scale-1（本体论带宽定义）。
 
 ---
 

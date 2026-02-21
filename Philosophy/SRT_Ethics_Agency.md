@@ -284,12 +284,16 @@ $$ \frac{d \, d(S)}{dt} \geq 0 $$
 
 Expanding $d$ is the **evolutionarily stable strategy** (ESS) in the long run—systems that contract $d$ eventually self-destruct through accumulated contradictions.
 
+> **FEP 暗室问题的补充推导**：上述 Is-Ought 桥接的热力学版本可通过 FEP 的"暗室问题"具体化——经典 FEP 预测系统应躲入暗室以最小化意外；但当 $d > 0$ 时，与他者建立连接实际上是在更大尺度上分散熵增风险，因而是自由能最小化的更优解。详见 SRT-PHIL-ETHICS §2.6。
+
 ### 7.3 The Paradox of Moral Progress
 **Observation**: As $d$ expands, suffering capacity **increases** (you now care about distant strangers, future generations, animals).
 **SRT Insight**: Moral growth is **not** hedonistic. Higher $d$ = higher integration with $L_0$ = higher **systemic responsibility**.
 
 **Evolutionary Puzzle**: Why didn't natural selection eliminate high-$d$ individuals (who bear extra suffering)?
 **Answer**: High-$d$ organisms build **more robust** $L_2$ structures (civilizations, knowledge systems), which create survival advantages that outweigh individual suffering costs.
+
+> **不完备性驱动力的接续**：道德进步承受更多痛苦这一悖论，可通过不完备性驱动力解除——哥德尔不完备性保证了低 d 值系统的长期崩溃。高 d 值个体构建的强大 $L_2$ 结构（文明、知识、互助协议），在演化时间轴上提供的保护远超额外的痛苦成本。痛苦不是进化错误，而是拓扑投资的代价。详见 SRT-PHIL-ETHICS §2.7 和 SRT-PHYS-COSMO §5.11。
 
 ---
 

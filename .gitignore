@@ -1,1 +1,7 @@
+__pycache__/
+*.pyc
+videos/
+keanu_reeves_clips/
+node_modules/
 .DS_Store
+.claude/

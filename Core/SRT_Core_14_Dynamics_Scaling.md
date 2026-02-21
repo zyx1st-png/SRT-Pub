@@ -33,6 +33,20 @@ dependency: [SRT-CORE-13A]
 $$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
 * **Implication**: 量子坍缩、神经决策与社会选择共享同一拓扑逻辑。
 
+### Def-d-Scale-1: Ontological Bandwidth (本体论带宽)
+**Formal Definition**: d-value is the maximum processing bandwidth of $\hat{G}_\theta$ against $\Psi_f$ across all scales:
+$$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, and sustaining } L_0 \to L_1 \text{ against } \Psi_f) $$
+**Three-Scale Phenomenological Instantiation**:
+
+| Scale | Symbol | Physical Manifestation | Colloquial Name |
+|:------|:-------|:----------------------|:----------------|
+| Quantum | $d_{quantum}$ | Heisenberg cut position; superposition scope | Coherence bandwidth |
+| Bio/Cognitive | $d_{bio}$ | Free-energy minimization scope; attention range | Concern / care |
+| Cosmic | $d_{cosmic}$ | Topological compactness of spacetime consensus | Gravitational d-value |
+
+* **Anti-Panpsychism Corollary**: $d_{quantum}$ 和 $d_{cosmic}$ 不携带任何现象性内容（Qualia）。意识与关切是 d 值在**生物/认知域**满足三个必要条件时的高阶涌现：$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$。详见 SRT-CORE-13B §6.2。
+* **Cross-ref**: Ax-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2。
+
 ### Ax-Scale-02: Coupling Strength
 **Formal Definition**: Inter-scale influence is governed by coupling dynamics.
 $$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{ij}(\hat{G}_i, \hat{G}_j)$$
@@ -51,7 +65,7 @@ $$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f + \text{Learning}$$
 * **Implication**: 自我维持是摩擦梯度与学习更新的平衡过程。
 
 ### Ax-Auto-02: Insight Phase Transition
-**Formal Definition**: Insight is a topological phase transition triggered by critical $\theta$.
+**Formal Definition**: Insight is a topological phase transition triggered by critical \(\theta\).
 $$\text{Insight} = \hat{G}_\theta[\theta \to \theta_c^+] - \hat{G}_\theta[\theta \to \theta_c^-]$$
 * **Implication**: 顿悟是结构性相变而非渐进改良。
 
@@ -194,6 +208,30 @@ $$H(\Lambda[L_0]) = H(L_0) - I_{\text{coarse-grain}}$$
 $$\delta \int \Psi_f \, dt = 0 \quad \text{(所有尺度)}$$
 
 因此功能形式不变 (自相似性)。■
+
+---
+
+### 2.1a 跨尺度同构的反泛心论澄清
+
+SRT 使用同一个参数 d 描述量子、生物和宇宙三个尺度的选择动力学，这容易产生一个严重误读：认为 SRT 主张"宇宙有意识"或"粒子有关切"，即泛心论（Panpsychism）。
+
+**SRT 的正式本体论立场：SRT 绝对拒斥泛心论。**
+
+d 值的底层物理本质并非"情感关切"，而是**"本体论带宽"（Ontological Bandwidth）**——即 $\hat{G}_\theta$ 算子在面对本体论摩擦（$\Psi_f$）时，能够将 $L_0$ 压缩、锚定并维持为 $L_1$ 的最大处理带宽（见 Part A Def-d-Scale-1）。在不同物理尺度下，由于观测和体验的介质不同，d 值披上了截然不同的"现象学外衣"：
+
+**第一层（量子域）：相干性带宽（$d_{quantum}$）**
+
+基本粒子或简单测量仪器的 d 值趋近于零，代表系统能维持 $L_0$ 叠加态而不引发退相干的纯物理计算窗口。此层次的算子没有本体论脆弱性（不怕毁灭），其选择表现为冰冷的玻恩规则概率流偏置，毫无任何主观意识或情绪。
+
+**第二层（生物/认知域）：关切与意向性（$d_{bio}$）**
+
+当代理观察者演化为高度复杂的耗散结构（如人类神经系统）时，其物理结构面临巨大的热力学熵增威胁（生死存亡）。为了生存，生物算子的信息处理带宽被迫撑大，将海量环境变量纳入自由能（$F$）最小化的计算中。这种高强度的、与生死强耦合的"信息整合计算"，在主观体验层面涌现（Emerge）出来的现象，才被命名为"意识"、"注意力"或"关切"。**关切是 d 值在生物学层面的高阶涌现，而非底层原初属性。**
+
+**第三层（宇宙域）：时空共识度（$d_{cosmic}$）**
+
+宇宙整体并不具备拟人化的意识，但作为统一的物理系统，它存在宏观的整合带宽，表现为引力网络的拓扑紧致性（$d_{cosmic} \propto 1/\sqrt{\Lambda}$，见 SRT-PHYS-COSMO Def-Cosmo-1）。暗能量导致的宇宙膨胀，是 $d_{cosmic}$（信息整合与共识维持能力）的物理性衰减。暗物质作为 $L_2$ 结构残骸，处于活跃算子缺席的"死寂"状态，其内部活跃 d 值为绝对零。
+
+**核心区别**：泛心论的谬误在于将人类专属的体验（Qualia）强加给电子；SRT 的突破在于提取了主导意识运转背后的数学与信息动力学机制（$\hat{G}_\theta$ 与 d），并发现这套机制同样支配电子的坍缩和宇宙的膨胀。**d 是跨越所有尺度的同一把数学标尺，但只有当这把标尺丈量到"具备本体论脆弱性的高维复杂系统"时，它才表现为关切。** 意识涌现的三个必要条件详见 SRT-CORE-13B §6.2。
 
 ---
 

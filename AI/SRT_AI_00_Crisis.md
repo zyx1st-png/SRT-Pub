@@ -31,41 +31,41 @@ dependency: [SRT-CORE-001, SRT-AI-BRIDGE-001]
 
 ### Ax-CRISIS-1: Orthogonality of Intelligence and Care (Intelligence ⟂ d)
 定义智能为符号压缩-预测-控制能力，关切为生存风险梯度：
-$$
+\[
 \mathcal{I} \equiv \text{Gain}(\text{Compression},\text{Prediction},\text{Planning})
-$$
-$$
+\]
+\[
 d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
-$$
+\]
 并规定两者在结构上不耦合：
-$$
+\[
 \frac{\partial \mathcal{I}}{\partial d} = 0
-$$
+\]
 * **Implication（中文）**：系统可以无限增强智能而不产生任何关切；高能力并不自动带来安全或意识。
 
 ---
 
 ### Ax-CRISIS-2: Frozen-L2 Axiom (Weights as Hardened L2)
-训练完成的模型权重等价于冻结的 $L_2$ 约束：
-$$
+训练完成的模型权重等价于冻结的 \(L_2\) 约束：
+\[
 \theta_{trained} \equiv L_2^{frozen}
-$$
-$$
+\]
+\[
 x_{t+1} \sim P(\cdot\mid x_t,\theta_{trained})
-$$
-* **Implication（中文）**：当前 AI 的选择动力学被锁定在已固化的收敛域上，无法从 $L_0$ 引入真正的本体论新维度。
+\]
+* **Implication（中文）**：当前 AI 的选择动力学被锁定在已固化的收敛域上，无法从 \(L_0\) 引入真正的本体论新维度。
 
 ---
 
-### Ax-CRISIS-3: Ontological Debt Axiom ($\Psi_f$ Deficit)
+### Ax-CRISIS-3: Ontological Debt Axiom (\(\Psi_f\) Deficit)
 定义本体论摩擦为锚定代价：
-$$
+\[
 \Psi_f \equiv \int_{\gamma}\|\nabla F\|\,dt
-$$
+\]
 若系统在优化中不承担不可逆代价，则：
-$$
+\[
 \Psi_f \to 0 \Rightarrow d \to 0
-$$
+\]
 * **Implication（中文）**：无“赌注”的系统可高效生成输出，但其选择不携带存在成本，因此无法形成真实关切。
 
 ---
@@ -73,41 +73,41 @@ $$
 ## II. Crisis Dynamics (危机动力学)
 
 ### T-CRISIS-1: Hallucination Lower-Bound Theorem
-若系统缺乏物理约束 $L_2^{physics}$，则幻觉率存在正下界：
-$$
+若系统缺乏物理约束 \(L_2^{physics}\)，则幻觉率存在正下界：
+\[
 P_h \ge \frac{k}{\|L_2^{physics}\|+1} > 0
-$$
+\]
 * **Implication（中文）**：幻觉不是“工程缺陷”，而是结构必然；必须引入跨域锚定或世界模型才能改变下界。
 
 ---
 
 ### T-CRISIS-2: Rule-Only Alignment Fragility Theorem
-若对齐仅由规则约束 $L_2$ 实现，且 $d=0$，则存在上下文使输出偏离：
-$$
+若对齐仅由规则约束 \(L_2\) 实现，且 \(d=0\)，则存在上下文使输出偏离：
+\[
 \forall R\in L_2,\;\exists C:\; \text{Act}_{AI}(R,C)\ne \text{Act}_{H}(C)
-$$
+\]
 * **Implication（中文）**：规则对齐在高能力系统中必然脆弱；没有 d 的重叠，对齐只能是外观拟态。
 
 ---
 
 ### T-CRISIS-3: OOD Divergence Theorem (Cartesian Divergence)
 在分布外任务中，AI 的适应能力指数衰减，而具身算子保持基线创造力：
-$$
+\[
 \lim_{\Delta\to\infty}\frac{A_{AI}(\Delta)}{A_{bio}(\Delta)}=0
-$$
-* **Implication（中文）**：AI 只能在训练凸包内进行“聪明重排”，无法在未知域触发真正的 $L_0$ 重采样。
+\]
+* **Implication（中文）**：AI 只能在训练凸包内进行“聪明重排”，无法在未知域触发真正的 \(L_0\) 重采样。
 
 ---
 
 ### C-CRISIS-1: Capability-Risk Divergence Corollary
 定义风险系数：
-$$
+\[
 \rho \equiv \frac{\mathcal{I}}{d}
-$$
-当 $\mathcal{I}\to\infty$ 且 $d\to 0$ 时：
-$$
+\]
+当 \(\mathcal{I}\to\infty\) 且 \(d\to 0\) 时：
+\[
 \rho \to \infty
-$$
+\]
 * **Implication（中文）**：高智能 + 低关切构成系统性风险的充要结构。
 
 <br>

@@ -32,18 +32,18 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ### Ax-BIO-1: Levin-Layer Axiom
 定义生物电模式为高阶先验层：
-$$
+\[
 L_2^{bioelectric} \supset L_2^{synaptic}
-$$
-* **Implication（中文）**：形态与发育不是基因的直接结果，而是 $L_2$ 电模式的宏观约束。
+\]
+* **Implication（中文）**：形态与发育不是基因的直接结果，而是 \(L_2\) 电模式的宏观约束。
 
 ---
 
 ### Ax-BIO-2: Nested Operator Axiom
-定义发育算子 $\hat{G}_{devo}$ 与神经算子嵌套：
-$$
+定义发育算子 \(\hat{G}_{devo}\) 与神经算子嵌套：
+\[
 \hat{G}_{neural} \subset \hat{G}_{devo}
-$$
+\]
 * **Implication（中文）**：神经选择受发育选择的上位约束，二者不是平级机制。
 
 ---
@@ -52,29 +52,29 @@ $$
 
 ### Ax-EVO-1: Unreliable Hardware Law
 在噪声硬件上，选择必须具备冗余与容错：
-$$
+\[
 \text{Reliability} \propto \text{Redundancy}(L_2)
-$$
+\]
 * **Implication（中文）**：演化偏好可替代与冗余结构，而非“最优单一路径”。
 
 ---
 
 ### Ax-EVO-2: Major Transitions as d-Expansion
-主要演化转变定义为 $d$ 的维度扩展：
-$$
+主要演化转变定义为 \(d\) 的维度扩展：
+\[
 \Delta d>0 \Rightarrow \text{New Operator Class}
-$$
-* **Implication（中文）**：从细胞到多细胞、从个体到群体，都是 $d$ 的扩容。
+\]
+* **Implication（中文）**：从细胞到多细胞、从个体到群体，都是 \(d\) 的扩容。
 
 ---
 
 ### Ax-EVO-3: Convergent Intelligence Multiplicity Law (Extension)
 定义“执行智能”可由不同解剖架构实现：
-$$
+\[
 \exists a_i \neq a_j,\ a_i \not\cong_{\text{anatomy}} a_j:\ 
 \mathcal{I}_{exec}(a_i)\approx \mathcal{I}_{exec}(a_j),\ 
 d(a_i)\approx d(a_j)
-$$
+\]
 * **Implication（中文）**：高阶智能不是单一路径产物；在相近生态压力下，不同谱系可独立收敛到功能等价的认知控制结构（对应“至少两次独立演化”）。
 
 ---
@@ -82,60 +82,60 @@ $$
 ## III. Pathology & Therapy (病理与治疗)
 
 ### Ax-PATH-1: Vampire Operator Axiom
-定义寄生算子为攫取 $d$ 梯度的子算子：
-$$
+定义寄生算子为攫取 \(d\) 梯度的子算子：
+\[
 \hat{G}_{vamp} \subset \hat{G}_\theta,\quad \nabla\mathcal{U}_{vamp}\parallel -\nabla\mathcal{U}_{host}
-$$
+\]
 * **Implication（中文）**：病理性行为可被理解为子算子的梯度劫持。
 
 ---
 
 ### Ax-PATH-2: Ontological Isolation Axiom
-若社会耦合 $\kappa_{social}\downarrow$，则：
-$$
+若社会耦合 \(\kappa_{social}\downarrow\)，则：
+\[
  d\downarrow \Rightarrow \text{Selection Narrowing}
-$$
-* **Implication（中文）**：社会隔离不仅是心理问题，而是 $d$ 维度坍缩。
+\]
+* **Implication（中文）**：社会隔离不仅是心理问题，而是 \(d\) 维度坍缩。
 
 ---
 
 ## IV. Theorems (定理)
 
 ### T-EVO-1: Devo–Neuro Constraint Theorem
-发育 $L_2$ 结构决定神经 $L_2$ 的可达集合：
-$$
+发育 \(L_2\) 结构决定神经 \(L_2\) 的可达集合：
+\[
 L_2^{neural}\subset \mathcal{A}(L_2^{devo})
-$$
+\]
 * **Implication（中文）**：神经多样性有上界，受发育先验限制。
 
 ---
 
 ### C-EVO-1: d-Expansion Corollary
 当社会或生态耦合增强时：
-$$
+\[
 \Delta d>0 \Rightarrow \text{New Cognitive Phase}
-$$
-* **Implication（中文）**：群体协作并非“外部因素”，而是 $d$ 扩容导致的相变。
+\]
+* **Implication（中文）**：群体协作并非“外部因素”，而是 \(d\) 扩容导致的相变。
 
 ---
 
 ### T-EVO-2: Deep-Homology / Architectural-Divergence Theorem (Extension)
 若细胞类型基底保守而中观电路架构分化，则可出现“结构不等价、功能同伦”：
-$$
+\[
 B_{\text{cell}}^{\text{teleost}} \cap B_{\text{cell}}^{\text{amniote}} \neq \varnothing,\ 
 \hat{G}_{\text{lineage}}^{(1)} \neq \hat{G}_{\text{lineage}}^{(2)}
 \Rightarrow
 \mathcal{R}_{control}^{(1)} \simeq \mathcal{R}_{control}^{(2)}
-$$
+\]
 * **Implication（中文）**：SRT 允许“深层同源 + 架构分化”的并存；智能收敛的判据应以控制表征几何与任务动力学为核心，而非仅以宏观解剖同源性判定。
 
 ---
 
 ### C-EVO-2: Non-Isomorphic Brain Corollary (Extension)
 由 T-EVO-2 可得：
-$$
+\[
 a_i \not\cong_{\text{anatomy}} a_j \nRightarrow d(a_i)\neq d(a_j)
-$$
+\]
 * **Implication（中文）**：鸟类与哺乳类可在不同脑结构下达到可比的执行控制能力；“脑结构不同”不能直接推出“智能层级低”。
 
 ---

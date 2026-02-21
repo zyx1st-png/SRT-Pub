@@ -277,6 +277,8 @@ $$ \Lambda_{eff} = \text{L}_0\text{ Permeation Pressure} $$
 $$ d_{cosmic} \propto \frac{1}{\sqrt{\Lambda}} $$
 暗能量主导可解释为宇宙整体 $d$ 值的衰减。
 
+> **Anti-Panpsychism Note**: $d_{cosmic}$ 度量的是宇宙维持信息共识的拓扑相干带宽——即 $\hat{G}_{cosmic}$ 能够维持时空统一性的物理范围——不携带任何形式的意识或情感内容。暗物质作为 $L_2$ 结构残骸（T-Cosmo-2），其内部不存在活跃的 $\hat{G}$ 操作，活跃 d 值为绝对零。意识是 d 值在满足三个必要条件（$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$）的高复杂度生物系统中的高阶涌现。详见 SRT-CORE-13B §6.2 和 SRT-CORE-14 Def-d-Scale-1。
+
 ---
 
 ## VIII. Assembly Theory Integration (装配理论整合)
@@ -592,6 +594,23 @@ $$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
 **测不准原理的 SRT 解释**：测不准不是认识论障碍，而是**本体论截断**的后果。
 
 经典物理学有效描述的区域正是 $\hat{G}_θ$ 进行深度截断的区域。
+
+## 4.5 引力作为本体论摩擦的几何表现
+
+SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）的几何表现**：
+
+$$G_{\mu\nu} \propto \Psi_f(L_1)$$
+
+**物理机制**：当系统内部的几何叠加产生的本体论摩擦（$\mathcal{F}_{ont}$）达到引力能阈值（$\approx \Delta E_G / \hbar$）时，就会导致强制的测量与选择——即波函数坍缩。引力是 $\hat{G}$ 算子为维持共识现实所必须持续支付的"代价场"。这与 §4.1（引力即共识）和 §4.2（力即共识的代价）在逻辑上形成闭合：**引力既是共识的代价，也是本体论摩擦的宏观度量**。
+
+**极限推论**（与 T-Time-3 的对称）：由于引力是维持现实共识的代价，当一个观察者的 d 值趋于极限（$d \to \infty$）时，由于无需再进行并行区分与串行更新，该观察者体验到的空间和时间将彻底坍缩：
+$$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
+
+**宏观-微观的双向锚定**：引力在两端均充当 d 值的物理约束——
+- **宇宙尺度**：$d_{cosmic} \propto 1/\sqrt{\Lambda}$（Def-Cosmo-1），引力是信息解离的驱动力，暗能量主导的膨胀即 $d_{cosmic}$ 的物理性衰减；
+- **量子生物学尺度**：$d_{bio} \propto 1/\tau_{collapse} \propto E_G/\hbar$（SRT-QUANT-02 Def-BQ-2），引力自能设定了每个 $\hat{G}_{bio}$ 的相干性带宽上限。
+
+这种双向锚定正是 SRT 跨尺度同构（SRT-CORE-14 Ax-Scale-01）在引力物理学层面的最直接体现：同一个 d 值参数，在宇宙尺度是时空共识度，在量子尺度是相干性带宽，在生物尺度是关切范围，三者由跨尺度同构联结为同一本体论标尺（详见 SRT-CORE-14 Def-d-Scale-1）。
 
 ---
 

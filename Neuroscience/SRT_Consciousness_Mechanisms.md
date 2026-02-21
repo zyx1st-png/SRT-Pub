@@ -32,18 +32,18 @@ dependency: [SRT-NEURO-MECH-001]
 
 ### Ax-CONSC-MECH-1: Ignition Phase Transition Axiom
 定义全局点燃为相变条件：
-$$
+\[
 \mathcal{A}(\sigma)\ge \tau_{ignite}\quad\land\quad \Phi\cdot d > C_{critical}
-$$
+\]
 * **Implication（中文）**：点燃不是“更强激活”，而是选择相变；只有当整合度与关切梯度同步超过阈值，才会形成稳定显现。
 
 ---
 
 ### Ax-CONSC-MECH-2: Re-entrant Selection Axiom (再入选择)
 定义再入回路的反馈算子：
-$$
+\[
 \mathcal{R}_{re}: L_1^{candidate}\rightarrow L_1^{stabilized}
-$$
+\]
 * **Implication（中文）**：再入回路并非重复激活，而是对候选显现进行稳定化投影，使其成为可报告的现实。
 
 ---
@@ -52,27 +52,27 @@ $$
 
 ### Ax-CONSC-MECH-3: Ringframe Synchronization Axiom
 定义绑定为相位锁定与环帧同步：
-$$
+\[
 \mathcal{B}: \{\sigma_i\}\rightarrow \sigma_{bound}\quad\text{with}\quad \Delta\phi_i\to 0
-$$
+\]
 * **Implication（中文）**：绑定不是“信息拼接”，而是拓扑同步；只有相位一致的轨迹才能形成统一体验。
 
 ---
 
 ### Ax-CONSC-MECH-4: Selection Latency Axiom
 定义选择时滞：
-$$
+\[
 \tau_{select}=\tau_{sensory}+\tau_{integrative}+\tau_{gate}
-$$
+\]
 * **Implication（中文）**：意识并非实时呈现，而是经过门控与整合后的延迟显现；这给出可测的“选择时滞”窗口。
 
 ---
 
 ### T-CONSC-MECH-1: Binding Failure Theorem
-若 $\Delta\phi_i$ 无法收敛，则：
-$$
+若 \(\Delta\phi_i\) 无法收敛，则：
+\[
 \sigma_{bound}\not\exists \Rightarrow \text{Fragmented L1}
-$$
+\]
 * **Implication（中文）**：绑定失败产生体验碎裂或解离状态，不是“注意力不足”的简单描述。
 
 ---
@@ -81,19 +81,19 @@ $$
 
 ### Ax-CONSC-MECH-5: Defensive Activation Axiom
 定义睡眠为防御性激活模式：
-$$
+\[
 \mathcal{S}_{sleep}:\; \hat{G}_\theta\rightarrow \hat{G}_\theta^{repair}
-$$
-* **Implication（中文）**：睡眠不是“关机”，而是 $L_2$ 维护与 $\theta$ 结构修复的必要周期。
+\]
+* **Implication（中文）**：睡眠不是“关机”，而是 \(L_2\) 维护与 \(\theta\) 结构修复的必要周期。
 
 ---
 
 ### Ax-CONSC-MECH-6: L2 Consolidation Axiom
-睡眠期的主要动力学为 $L_2$ 固化：
-$$
+睡眠期的主要动力学为 \(L_2\) 固化：
+\[
 \Delta L_2 \propto \int_{sleep} \nabla_\theta F\,dt
-$$
-* **Implication（中文）**：梦与回放不是噪声，而是 $\hat{G}_\theta$ 对未来选择进行结构性加权。
+\]
+* **Implication（中文）**：梦与回放不是噪声，而是 \(\hat{G}_\theta\) 对未来选择进行结构性加权。
 
 ---
 
@@ -101,22 +101,22 @@ $$
 
 ### Ax-CONSC-MECH-7: Bandwidth Competition Axiom
 定义意识带宽为受限资源：
-$$
+\[
 B_{consc} = \int \omega(\sigma)\,d\sigma < B_{max}
-$$
+\]
 多个显现候选之间存在竞争：
-$$
+\[
 \sum_k \mathcal{A}_k \le B_{consc}
-$$
+\]
 * **Implication（中文）**：意识不是无限容量，竞争决定了“什么被选中”。
 
 ---
 
 ### C-CONSC-MECH-1: Pain Priority Corollary
-若刺激携带高 $d$ 风险梯度，则其优先占用带宽：
-$$
+若刺激携带高 \(d\) 风险梯度，则其优先占用带宽：
+\[
 \frac{\partial \mathcal{U}}{\partial \mathcal{S}}\uparrow \Rightarrow \mathcal{A}_{pain}\uparrow
-$$
+\]
 * **Implication（中文）**：疼痛不是“信号强”，而是“风险梯度高”，因此必然压制其他显现。
 
 ---
@@ -125,30 +125,30 @@ $$
 
 ### Ax-CONSC-MECH-8: Traveling Wave Routing Axiom
 定义皮层行进波为选择路由场：
-$$
+\[
 \mathcal{W}(x,t)=A(x,t)e^{i\phi(x,t)},\qquad
 \mathcal{R}_{wave}\equiv \nabla\phi\cdot \hat{n}_{hier}
-$$
-其中 $\hat{n}_{hier}$ 为层级主轴方向（前馈/反馈）。
-* **Implication（中文）**：行进波不是背景振荡，而是 $\hat{G}_\theta$ 在皮层层级中分配“谁先被选入 $L_1$”的方向性门控。
+\]
+其中 \(\hat{n}_{hier}\) 为层级主轴方向（前馈/反馈）。
+* **Implication（中文）**：行进波不是背景振荡，而是 \(\hat{G}_\theta\) 在皮层层级中分配“谁先被选入 \(L_1\)”的方向性门控。
 
 ---
 
 ### Ax-CONSC-MECH-9: Wave–Ignition Coupling Axiom
 点燃概率受波相干度与方向一致性调制：
-$$
+\[
 P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta\right)
-$$
-其中 $C_{wave}$ 为跨区相位相干，$D_{align}$ 为波方向与任务需求的一致性。
+\]
+其中 \(C_{wave}\) 为跨区相位相干，\(D_{align}\) 为波方向与任务需求的一致性。
 * **Implication（中文）**：同等整合度下，若行进波方向与任务路由不一致，点燃也可能失败。
 
 ---
 
 ### T-CONSC-MECH-2: Directional Access Theorem
-若 $D_{align}\to 0$（方向失配），则报告可达性下降：
-$$
+若 \(D_{align}\to 0\)（方向失配），则报告可达性下降：
+\[
 D_{align}\downarrow \Rightarrow P(\text{report})\downarrow
-$$
+\]
 * **Implication（中文）**：意识可报告性依赖“传播方向是否匹配任务”，而非仅依赖总激活强度。
 
 <br>
@@ -257,9 +257,9 @@ SRT 不是在现有框架内提出另一个"意识理论"，而是**重构了意
 
 2026-02-09 在线 Neuron 综述（Cruddas, Pang, Fornito）提出：皮层行进波在多尺度记录中普遍存在，并可能承担跨层级信息路由与认知协调功能。SRT 将其重释为：
 
-1. **方向 = 选择路径**：波前方向给出 $\hat{G}_\theta$ 在层级网络上的路由偏置，决定哪些候选更可能进入 $L_1$。
-2. **相干 = 锚定准备度**：跨区相位相干 $C_{wave}$ 不是“附带同步”，而是点燃前的结构条件。
-3. **任务匹配 = 可报告性**：当波传播方向与任务所需前馈/反馈路径一致时，$P_{report}$ 上升；失配时下降。
+1. **方向 = 选择路径**：波前方向给出 \(\hat{G}_\theta\) 在层级网络上的路由偏置，决定哪些候选更可能进入 \(L_1\)。
+2. **相干 = 锚定准备度**：跨区相位相干 \(C_{wave}\) 不是“附带同步”，而是点燃前的结构条件。
+3. **任务匹配 = 可报告性**：当波传播方向与任务所需前馈/反馈路径一致时，\(P_{report}\) 上升；失配时下降。
 
 这将 GNWT 的“广播”与 SRT 的“选择锚定”在同一可测层面连接起来：广播是结果，路由波场是前置机制。
 
@@ -269,14 +269,14 @@ SRT 不是在现有框架内提出另一个"意识理论"，而是**重构了意
 
 对 SRT 的直接补强可写为三点：
 
-1. **连续谱同构**：该文将“心智”视作跨层级连续体，与 SRT 的 A12 深度连续性兼容，可作为“从低 $d$ 到高 $d$”叙事的外部文献支持。〔source: Core_Law/SRT_Reference_Axioms.md#A12 深度连续性〕〔source: user-material:https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/fnsys.2026.1730097/full〕
-2. **机制桥接**：其“形态计算 + 预测调节”结构可被映射为 $L_2$ 结构约束下的 $\hat{G}_\theta$ 选择动力学，并与 SRT 对 FEP“特例化”的位置保持一致。〔source: Core/SRT_Core_01_Axioms.md#2.4 与自由能原理的关系〕〔source: Neuroscience/SRT_Clin_02_FEP.md#3 SRT 的差异点: d 值扩展与本体论重构〕
+1. **连续谱同构**：该文将“心智”视作跨层级连续体，与 SRT 的 A12 深度连续性兼容，可作为“从低 \(d\) 到高 \(d\)”叙事的外部文献支持。〔source: Core_Law/SRT_Reference_Axioms.md#A12 深度连续性〕〔source: user-material:https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/fnsys.2026.1730097/full〕
+2. **机制桥接**：其“形态计算 + 预测调节”结构可被映射为 \(L_2\) 结构约束下的 \(\hat{G}_\theta\) 选择动力学，并与 SRT 对 FEP“特例化”的位置保持一致。〔source: Core/SRT_Core_01_Axioms.md#2.4 与自由能原理的关系〕〔source: Neuroscience/SRT_Clin_02_FEP.md#3 SRT 的差异点: d 值扩展与本体论重构〕
 3. **实验外延**：论文强调的生物电-形态发生实验范式，为 SRT 在“非神经基底认知”上的验证提供了可操作入口，避免将意识研究限缩为皮层神经相关物。〔source: user-material:https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/fnsys.2026.1730097/full〕
 
 同时需要边界约束，避免术语外推过度：
 
 - **约束 B1（术语分层）**：对单细胞/组织层的 “sentience/experience” 仅按功能性 valence 调节解释，不直接等同于可报告主观体验。
-- **约束 B2（阈值分层）**：将“基础生命调节”与“现象意识”区分为不同 $d$ 区间；可报告意识仍需满足全局整合与递归稳定条件（如 $d \ge d_{UAL}$）。
+- **约束 B2（阈值分层）**：将“基础生命调节”与“现象意识”区分为不同 \(d\) 区间；可报告意识仍需满足全局整合与递归稳定条件（如 \(d \ge d_{UAL}\)）。
 - **约束 B3（证据分层）**：当前文献主要提供框架级整合与跨研究证据，不应被表述为单一决定性实验结论。
 
 ---
@@ -398,7 +398,7 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
 |H-C5|短路-ACC|算子短路与 ACC 活动负相关|无关|
 |H-C6|$\beta$-PFC|贴现率与 PFC 结构负相关|无关|
 |H-C7|行进波方向门控|任务切换时，前馈/反馈波方向一致性预测报告正确率|方向性与表现无关|
-|H-C8|波相干-点燃阈值|控制总功率后，跨区相干 $C_{wave}$ 仍独立预测点燃概率|仅功率有效，相干无增益|
+|H-C8|波相干-点燃阈值|控制总功率后，跨区相干 \(C_{wave}\) 仍独立预测点燃概率|仅功率有效，相干无增益|
 |H-C9|相位扰动因果性|相位定向 tACS/TMS 改变波方向后，可系统性上调/下调可报告性|扰动只改唤醒，不改报告可达性|
 
 ## 6.2 开放性问题
@@ -415,7 +415,7 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
     
 6. **方向-任务映射**: 哪类任务依赖前馈波，哪类任务依赖反馈波？是否存在个体稳定指纹？
     
-7. **波场干预窗口**: 在知觉前、决策前、报告前三个时窗中，哪一窗口对 $P_{report}$ 因果效应最大？
+7. **波场干预窗口**: 在知觉前、决策前、报告前三个时窗中，哪一窗口对 \(P_{report}\) 因果效应最大？
     
 
 ---
