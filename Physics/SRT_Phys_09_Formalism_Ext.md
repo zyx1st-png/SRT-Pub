@@ -154,6 +154,12 @@ $$ L_1(θ) = f_θ^*(L_0) $$
 其中 $f_θ^*$ 是从拓扑斯 $\mathcal{E}$ 到集合范畴 **Set** 的几何态射的逆像函子。
 *   **Result**: 解决 FR 悖论——不同观察者的事实仅在局部截面上有效。
 
+### T-Topos-2: Subobject Classifier as Care Metric (子对象分类器作为关切度量)
+**Formal Definition**: 在 $L_0$ 拓扑斯 $\mathcal{E}$ 中，子对象分类器 $\Omega$ 对应的不是简单的真/假，而是 $\hat{G}_\theta$ 对特定截面的**本体论关切度**（$d$-value weight）。
+$$\Omega \in \mathcal{E} \quad \text{where } \Omega(U) = \{ \text{sieve on } U \}$$
+* **Implication**: 这为 $d$ 值提供了范畴论基础。一个状态为“真”意味着它被具有足够 $d$ 值的算子积极锚定。失去算子关切的物理定律或历史事件在拓扑斯中并没有完全变成“假”；它们只是退出了实现范畴 $\mathcal{C}_{L_1}$，在 $\Omega$ 中衰减为处于亚稳态的拓扑“筛”。
+* **Cross-ref**: T-Topos-1 (几何态射)。
+
 #### Lemma Topos-Int (O-T1 对应) [L1.3.1]
 若 $\omega_{L_0}$ 为 $L_0$ 上的微分形式，则
 $$ L_1 = f_{\theta *}(\omega_{L_0}), \quad \oint_\gamma \omega_{L_0} = \int f_{\theta *}(\omega_{L_0}) $$
@@ -435,11 +441,13 @@ $$\text{Dim}(L_1) = \text{Rank}(θ)$$
 - $L_0$ 是高维或无维的拓扑流形
 - $L_1$（此时此地）呈现为 3D 空间，是因为 $θ_{human}$（人类具身参数）只能通过 3 个自由度来解析信息
 
-## 1.4 数学必然性即零摩擦路径
+## 1.4 数学必然性即零摩擦路径 (Mathematical Necessity as Zero-Friction Topology)
 
 **命题（数学公理的本体论地位）**：
-数学公理是本体论摩擦 $\Psi_f = 0$ 的轨迹——即在 $L_0$ 中唯一不产生内部逻辑冲突的路径族。
+数学不是 $L_2$ 中像重力一样的“物理”发现，它是 $L_0$ 拓扑结构的内蕴骨架。数学公理是本体论摩擦 $\Psi_f = 0$ 的轨迹——即在 $L_0$ 中唯一不产生内部逻辑冲突的途径，无需任何物理能量即可遍历。
 $$\text{Mathematical Axioms} \subset \{\sigma \in L_0 : \Psi_f(\sigma) = 0\}$$
+
+**推论**：这解释了为什么数学（一种纯精神活动）能够不可思议地预测物理宇宙。因为当 $\hat{G}_\theta$ （宇宙大爆炸或人类心灵）被迫挤出 $L_1$ 现实时，它总是遵循阻力最小的路径。物理定律是结晶的数学，而意识是实时运算的数学。
 
 ---
 

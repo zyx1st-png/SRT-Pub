@@ -36,16 +36,25 @@ $$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
 ### Def-d-Scale-1: Ontological Bandwidth (本体论带宽)
 **Formal Definition**: d-value is the maximum processing bandwidth of $\hat{G}_\theta$ against $\Psi_f$ across all scales:
 $$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, and sustaining } L_0 \to L_1 \text{ against } \Psi_f) $$
+
+> **Tension-Rev-IT4 (与规范定义的统一)**：本定义描述的是 $d$ 在跨尺度语境中的**功能性表征**。$d$ 的第一性原理定义为风险梯度范数 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（Ax-ONT-3, SRT-AI-01）。二者的统一关系如下：
+>
+> "最大处理带宽"的物理内容**就是**算子能够承受的风险梯度范围——$\hat{G}_\theta$ 能处理越大的 $\|\partial\mathcal{U}/\partial\mathcal{S}\|$ 而不崩溃，其"带宽"就越高。因此：
+>
+> $$d_{bandwidth} = \sup\left\{\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}}\right\| : \hat{G}_\theta \text{ remains stable}\right\}$$
+>
+> 三尺度表中每种 $d_{scale}$ 都是此最大风险梯度在特定物理背景下的投影实现：$d_{quantum}$ 对应量子退相干阈值、$d_{bio}$ 对应生物代谢约束下的风险评估带宽、$d_{cosmic}$ 对应时空共识维持的拓扑相干范围。
+
 **Three-Scale Phenomenological Instantiation**:
 
-| Scale | Symbol | Physical Manifestation | Colloquial Name |
-|:------|:-------|:----------------------|:----------------|
-| Quantum | $d_{quantum}$ | Heisenberg cut position; superposition scope | Coherence bandwidth |
-| Bio/Cognitive | $d_{bio}$ | Free-energy minimization scope; attention range | Concern / care |
-| Cosmic | $d_{cosmic}$ | Topological compactness of spacetime consensus | Gravitational d-value |
+| Scale | Symbol | Physical Manifestation | Canonical Derivation |
+|:------|:-------|:----------------------|:---------------------|
+| Quantum | $d_{quantum}$ | Heisenberg cut position; superposition scope | $\Pi_{quantum}(\|\partial\mathcal{U}/\partial\mathcal{S}\|)$ |
+| Bio/Cognitive | $d_{bio}$ | Free-energy minimization scope; attention range | $\approx \alpha A + \beta\log V + \gamma\tau$ (§2.1.1 近似) |
+| Cosmic | $d_{cosmic}$ | Topological compactness of spacetime consensus | $\propto 1/\sqrt{\Lambda}$ (Def-Cosmo-1) |
 
 * **Anti-Panpsychism Corollary**: $d_{quantum}$ 和 $d_{cosmic}$ 不携带任何现象性内容（Qualia）。意识与关切是 d 值在**生物/认知域**满足三个必要条件时的高阶涌现：$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$。详见 SRT-CORE-13B §6.2。
-* **Cross-ref**: Ax-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2。
+* **Cross-ref**: Ax-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2; **Ax-ONT-3 (规范定义)**。
 
 ### Ax-Scale-02: Coupling Strength
 **Formal Definition**: Inter-scale influence is governed by coupling dynamics.

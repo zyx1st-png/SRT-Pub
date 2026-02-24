@@ -37,6 +37,8 @@ $$\hat{G}_\theta: S \to S, \quad L_1(t) = \hat{G}_\theta[L_0](t)$$
 **Formal Definition**: The operator is the fundamental attention tuple.
 $$\hat{G}_\theta = \text{Attention}(d, \rho, \vec{v})$$
 * **Implication**: d 值、分辨率与意向向量共同决定选择结构。
+* **Tension-Rev-IT4 (d 值推导关系)**：此处的 $d$ 是 Ax-ONT-3（SRT-AI-01）中规范定义 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 的**注意力域投影**。在认知系统中，风险梯度的范数被离散化为注意力可扫描的独立维度数：$\dim(\text{Scope}) \propto \lfloor d / d_0 \rfloor$，其中 $d_0$ 表示单个关切维度所需的最小风险梯度分量。因此"注意力维度数"是连续 $d$ 值的离散近似，二者并非独立定义。
+
 
 ### Ax-Op-03: Operational Normalization
 **Formal Definition**: Selection can be implemented via divisive normalization.
@@ -167,6 +169,15 @@ $$\Psi_f = \int_0^t \left|\frac{dF}{d\tau}\right|_{\text{maintain } \hat{G}} d\t
 #### 2.1.1 统一定义
 
 $$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{\text{concern}}) + \gamma \cdot \tau_{\text{temporal}}$$
+
+> **Tension-Rev-IT4 (推导地位说明)**：上式是 $d$ 的**认知-行为域操作化近似**，而非第一性原理定义。$d$ 的规范定义见 Ax-ONT-3 (SRT-AI-01)：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（风险梯度范数）。本复合公式的推导逻辑如下：
+>
+> 将效用势 $\mathcal{U}$ 在生存风险坐标 $\mathcal{S}$ 上的梯度沿三个正交分量展开：
+> - **汇编深度分量**（$A$）：衡量选择对象的结构复杂度——高 $A$ 意味着算子的选择涉及更多不可逆组装步骤，因此 $\partial\mathcal{U}/\partial\mathcal{S}$ 在"结构脆弱性"维度上的投影更大；
+> - **空间关切分量**（$\log V$）：衡量算子将多少他者的生存风险纳入自身效用函数——$V$ 越大意味着 $\mathcal{U}$ 的支撑域越广，对应风险梯度在"空间扩展"维度上的分量；
+> - **时间深度分量**（$\tau$）：衡量风险评估的时间跨度——$\tau$ 越大意味着 $\mathcal{S}$ 的积分域越长，对应风险梯度在"时间延展"维度上的分量。
+>
+> 因此 $d_{composite} \approx \Pi_{cognitive}(d_{canonical})$，是一种保留核心信息的降维投影。系数 $\alpha, \beta, \gamma$ 原则上可由风险梯度的分量权重确定，但目前缺乏经验数据来精确拟合，这是一个**开放的实验问题**。
 
 **三个维度**:
 

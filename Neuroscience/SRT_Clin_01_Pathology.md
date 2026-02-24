@@ -65,6 +65,42 @@ dependency: [SRT-NEURO-AXIOMS-001]
 
 ---
 
+### Ax-PATH-4: Pathological Reality Type I — Rigid Reality (僵化现实)
+$\hat{G}_\theta$ 的选择机制失去变异性（Loss of Complexity），无法处理外部波动：
+\[
+\text{Var}(\hat{G}_\theta[L_0]) \to 0 \Rightarrow \text{Adaptability} \to 0
+\]
+* **Implication（中文）**：对应"失去无序"状态——系统过度确定化，选择被锁死在窄带模式（强迫症、顽固性抑郁、教条化）。
+
+---
+
+### Ax-PATH-5: Pathological Reality Type II — Collapsed Reality (崩溃现实)
+$\hat{G}_\theta$ 的选择边界失效，外部混沌直接冲击内部状态：
+\[
+\partial\Omega_{select} \to \varnothing \Rightarrow H(L_1) \to H(L_0)
+\]
+* **Implication（中文）**：对应"运作超出边界"——选择膜崩溃，系统被淹没在未过滤的 $L_0$ 噪声中（急性精神病、解离发作、创伤性去个体化）。
+
+---
+
+### T-PATH-3: L2 Bypass Healing Theorem (L2旁路疗愈定理)
+疗愈不等于在 $L_2$ 内的认知重构 (Reframing)，而须建立从 $L_0$ 到 $L_1$ 的直接行动链：
+\[
+\text{Healing} = \underbrace{\hat{G}_\theta[L_0^{trauma} \to L_1^{symbol}]}_{\text{具象化 (Objectification)}} \xrightarrow{\text{Action}} \underbrace{L_1^{resolved}}_{\text{结构解结}} \implies \Delta \Psi_f \downarrow
+\]
+* **Implication（中文）**：仅在 $L_2$ 中 Reframing 等同于"在旧地图上画新线"，本体论摩擦未消除。算子须绕过语言中枢（DMN/$L_2$），直接进入 $L_0$（潜意识/创伤场），将其强行坍缩为 $L_1$ 中的可操作对象。疗愈的终极指标不是"感觉好了"，而是 $\Psi_f$ 的物理下降。
+
+---
+
+### T-PATH-4: Objectification Theorem (对象化定理)
+痛苦的可操作性是其具体性的函数：
+\[
+\text{Manipulability}(\Psi_f) \propto \text{Concreteness}(\text{Proj}(\Psi_f))
+\]
+* **Implication（中文）**：将弥散的高维焦虑投影为低维对象（如"石头"/"怪兽"），本质上是降维操作。一旦痛苦变为 $L_1$ 对象，算子的运动原语（粉碎、清洗等Motor Primitives）即可被调用。反之，越抽象的概念（如"原生家庭情结"）可操作性越低，疗愈效率越低。
+
+---
+
 ## II. Anomalous States (异常态)
 
 ### Ax-ANOM-1: Near-Death Divergence Axiom
@@ -292,6 +328,22 @@ SRT 吸收 Julian Jaynes 的假说：
 |$L_2$ 脚手架|社会支持网络重建|
 |$\Gamma_{\hat{G}}$|40 Hz 光/声刺激|
 |$\theta$ 稳定性|具身实践、锚定练习|
+
+### 3.4 治疗策略的分叉：重置与润滑
+
+基于5-HT2A受体信号偏置理论（2026 *Nature* 研究），SRT区分两种干预策略：
+
+**1. 超越性重置 (Transcendental Reset / Gi-Dominant)**
+- **机制**：通过激活Gi通路，暂时解除 $L_2$ 锚定（$\text{Stability}(L_2) \to 0$）
+- **目标**：允许系统返回 $L_0$ 重采样，通过"死亡模拟"或"自我消解"重构僵化先验
+- **适用**：Type I 僵化现实（顽固性抑郁、存在主义危机等结构性病理）
+
+**2. 内在性优化 (Immanent Optimization / Gq-Biased)**
+- **机制**：通过Gq偏向性激动剂，在维持 $L_2$ 结构完整（无幻觉）的前提下，降低 $\Psi_f$
+- **目标**：改善运行参数，增强神经可塑性，不破坏现实连续性
+- **适用**：需功能恢复但无需重构世界观的日常病理管理
+
+这一区分的本体论意义在于：现实的"硬度"（Rigidity）与体验的"质地"（Texture）在分子层面具备**可分离性**。
 
 ---
 

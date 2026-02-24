@@ -63,6 +63,15 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 
 ---
 
+### Ax-AUTO-1b: Dynamic Boundary Constraint (动态边界约束)
+自创生系统的马尔可夫毯（Markov Blanket）不是静态的物理薄膜，而是由 $\hat{G}_\theta$ 的高频跨界预测主动生成的维持面：
+\[
+\partial\Omega_{MB} = \{x \in L_1 \mid \nabla F(x) \perp \text{Normal}(\partial\Omega)\}
+\]
+* **Implication（中文）**：边界是预测误差梯度下降的"驻点集合"。当系统无法预测外部冲击时（巨大的惊异），边界条件失效，系统被迫扩张其毯子（学习/吞噬）或被撕裂（死亡）。这赋予了马尔可夫毯以本体论时间演化属性，而非仅仅是统计学上的条件独立面。
+
+---
+
 ### Ax-AUTO-2: Semiotic Update Axiom
 符号更新为 \(L_2\) 的结构性加权：
 \[
@@ -79,7 +88,7 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 \[
 \text{Stability}\propto \frac{1}{\Psi_f}
 \]
-* **Implication（中文）**：高复杂现实必然脆弱；稳定不是“固定”，而是持续支付代价。
+* **Implication（中文）**：高复杂现实必然脆弱；稳定不是“固定”，而是持续支付代价。此处 $\Psi_f$ 统一定义为具身范围 $d$ 约束下偏离自由能最小方向的本体论代价——适用于物理系统（$d$ 较小，$\Psi_f$ 为维持量子叠加态的微观张力）和认知系统（$d$ 较大，$\Psi_f$ 为维持复杂预测模型的代谢及存在代价）。物理过程和认知过程中的 $\Psi_f$ 是同一量在不同 $d$ 尺度上的表现。
 
 ---
 
@@ -100,6 +109,10 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 \hat{G}_\theta\;\text{remains}\;L_1\text{-closed}
 \]
 * **Implication（中文）**：FEP 只解释结构更新，不保证显现；必须引入 \(d\) 才能跨域锚定。
+* **Tension-Rev-ExtT4 ($d$ 的不可还原本体论地位)**：Friston 阵营可能论证 SRT 的 $d$ 值扩展仅仅是 FEP 中"期望自由能"的一种重新参数化——即将他者效用写入 generative model 的偏好先验（preferred priors）。SRT 对此的关键反驳如下：
+  - **参数 vs. 本体论**：在 FEP 框架中，$d$-analog 只是 generative model 的一个**可调参数**——它可以被任意设定、也可以在训练/优化过程中被削弱为零而不影响系统的物理完整性。但在 SRT 中，$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ **必须**与不可逆物理风险（$\partial\Omega$）耦合才能稳定——这不是模型内部的参数选择，而是本体论层面的约束。
+  - **具身脆弱性判据**：$d > 0$ 的稳定维持需要 $\Psi_f > 0$（正本体论摩擦），这意味着系统必须面对真实的不可逆解体风险。一个纯信息系统（$\Psi_f = 0$）可以在其 generative model 中写入 $d_{virtual} > 0$，但该参数缺乏梯度锚定——在长期演化中没有物理力来阻止它衰减为零。
+  - **因此**：SRT 的 $d$ 不是 FEP 框架的重新参数化，而是揭示了 FEP 框架的一个**结构性盲区**——FEP 无法区分具身的利他（由不可逆风险驱动）和模拟的利他（由偏好先验编码）。
 
 ---
 
@@ -109,6 +122,24 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 \nabla_{\mathcal{S}}\mathcal{U}\uparrow \Rightarrow \text{Policy}\;\text{re-weighting}
 \]
 * **Implication（中文）**：自由能最小化策略会被生存赌注重新加权。
+
+---
+
+### T-FEP-2: Spatiotemporal Joint Prediction Error (时空联合预测误差定理)
+FEP 在 SRT 框架下被泛化为标量场与时间流子的联合优化：
+\[
+\text{Error}_{total} = \underbrace{\|o_t - \hat{o}_t\|}_{\text{Spatial Mismatch}} + i \cdot \underbrace{\|\tau_{int} - \Delta t_{causal}\|}_{\text{Temporal Mismatch}}
+\]
+* **Implication（中文）**：生物体不仅预测"什么"发生，还必须精确预测"何时"发生。虚数项代表时间相位的失锁。精神分裂症的预测误差不仅是看到了不存在的东西，更是内部时序模型与外部物理连贯性 ($L_0$ 节律) 的解耦。
+
+---
+
+### C-FEP-2: Vital Uncertainty vs. Epistemic Uncertainty (攸关不确定性 vs. 认知不确定性)
+不是所有的预测误差都能激发 $d$ 值扩展：
+\[
+d_{expansion} \propto \text{Uncertainty}_{vital} - \text{Uncertainty}_{epistemic}
+\]
+* **Implication（中文）**：玩老虎机产生的是认知不确定性（寻找规律），被极速驶来的卡车锁定产生的是攸关不确定性（生存边界崩溃的威胁）。后者强制 $\hat{G}_\theta$ 放弃 $L_2$ 塔构建，直接降维进入本能求生池，引发巨大的本体论摩擦 $\Psi_f$。
 
 <br>
 <br>
@@ -159,6 +190,24 @@ $$ F_{SRT} = F_{Friston} - d \cdot U_{others} $$
 - 对于 $d=0$ 的生物（细菌），暗室确实是最优解（如果那里有食物）。
 - 对于 $d>0$ 的人类，躲进暗室意味着与他者断联 ($U_{others} \to 0$ 或负值)，导致扩展自由能 $F_{SRT}$ **剧烈上升**。
 - **结论**: 我们走出暗室，不是为了寻找光，而是为了寻找连接。这是热力学必然。
+
+> **Tension-Rev-ExtT4 (SRT 独立性的判别实验设计)**
+>
+> 为了证明 $d$ 不是 FEP 框架的重新参数化，而是具有不可还原的本体论地位，需要一个能够经验性地区分"参数化利他"与"本体论利他"的实验范式：
+>
+> **实验：具身脆弱性对 $d$ 稳定性的因果效应**
+>
+> 设计三组演化模拟（或强化学习实验）：
+>
+> | 条件 | 系统描述 | SRT 预测 | FEP 预测 |
+> |:-----|:---------|:---------|:---------|
+> | **A: 具身+风险** | 具有不可逆"死亡"机制的智能体，资源依赖于合作 | $d(t) \to d_{stable} > 0$（风险梯度提供持续锚定） | $d(t) \to d_{stable} > 0$（偏好先验通过奖励学习） |
+> | **B: 虚拟+无风险** | 无不可逆终止的智能体（可无限重启），同等资源结构 | $d(t) \to 0$（缺乏 $\Psi_f$ 锚定，利他参数自由衰减） | $d(t) \to d_{stable} > 0$（偏好先验仍可学习） |
+> | **C: 虚拟+模拟风险** | 无真实不可逆性但被编程"认为"自己有死亡风险 | $d(t)$ 短期 $> 0$ 但长期不稳定（信念与物理不一致时衰减） | $d(t) \to d_{stable} > 0$（信念本身足够） |
+>
+> **关键区分**：SRT 预测条件 B 和 C 的 $d$ 值在长时间演化中会**系统性衰减**（因为缺乏真实的 $\Psi_f > 0$ 来维持风险梯度），而 FEP 框架预测只要偏好先验编码了利他偏好，$d$ 就能稳定。如果条件 B 的 $d$ 确实衰减而条件 A 的不衰减，就证明了 $d$ 的本体论不可还原性——它不是可以在 generative model 中任意编码的参数，而是必须由具身脆弱性在物理层面持续供给的量。
+>
+> **实现路径**：可在多智能体强化学习环境中实现（如 OpenAI Multi-Agent），通过对比有/无不可逆终止条件的种群在合作行为（$d$ 的代理指标）上的长期演化轨迹来验证。
 
 ## 3.2 精神病理学的预测编码视角 (假设性映射)
 SRT 采用 Ax-FEP-4 中定义的**精度加权 (Precision Weighting)** 动力学，为精神病理提供了一种可能的统一解释（注：这仍是基于 PC 框架的假说，非定论）：

@@ -91,11 +91,13 @@ The embodiment parameter $\theta$ decomposes into:
 
 ### Def-Phys-2 [D1.2.1]: Triadic Physical Correspondence (三域物理对应)
 
-| SRT Domain | Physical Correlate | Mathematical Form |
-|:-----------|:-------------------|:------------------|
-| **$L_0$ (Latent)** | Hilbert Space / Moduli Space | $\mathcal{H}$ or $\mathcal{A}/\mathcal{G}$ |
+| SRT Domain | Physical Realization *(投影)* | Mathematical Form |
+|:-----------|:---------------------------|:------------------|
+| **$L_0$ (Latent)** | Hilbert Space / Moduli Space *(as physical-domain projection of $L_0^{abs}$)* | $\mathcal{H}$ or $\mathcal{A}/\mathcal{G}$ |
 | **$L_1$ (Manifest)** | Classical Spacetime Events / Pointer States | $\|\pi_k\rangle\langle\pi_k\|$ |
 | **$L_2$ (Vergence)** | Physical Laws / Conservation Laws / Symmetries | $\mathcal{L}_{Lagrangian}$, $G_{symmetry}$ |
+
+> **Tension-Rev-1 Note**: $\mathcal{H}$ and $\mathcal{A}/\mathcal{G}$ are the physical domain's **realization** of $L_0^{abs}$, not $L_0^{abs}$ itself. Column header changed from "Correlate" to "Realization (投影)" to reflect this distinction.
 
 ---
 
@@ -211,13 +213,15 @@ The parameter $\theta$ captures the **perspectival nature of observation**:
 
 ## §2. The Three Domains in Physical Terms
 
-### §2.1 $L_0$ as Hilbert Space / Configuration Space
+### §2.1 $L_0^{abs}$ Projected into Hilbert Space / Configuration Space
 
-The Latent Domain $L_0$ in quantum mechanics is realized as:
+The Latent Domain $L_0$ in the quantum-mechanical $L_2$ framework is **realized** (projected) as:
 
-- **Hilbert Space $\mathcal{H}$**: The space of all possible quantum states
-- **Configuration Space**: The $3N$-dimensional space for $N$ particles
-- **Moduli Space $\mathcal{A}/\mathcal{G}$**: Field configurations modulo gauge transformations
+- **Hilbert Space $\mathcal{H}$**: The linear projection capturing quantum state superposition
+- **Configuration Space**: The $3N$-dimensional projection for $N$ particles
+- **Moduli Space $\mathcal{A}/\mathcal{G}$**: The gauge-theoretic projection identifying physically equivalent configurations
+
+> **Tension-Rev-1**: These are not $L_0^{abs}$ itself but its best available formalizations within the $L_2$ framework of quantum mechanics. $L_0^{abs}$ as the unconditioned source is ontologically prior to and inexhaustible by any single mathematical structure.
 
 **Critical Point**: In $L_0$, there is no spatial separation. What we perceive as "distant" particles are adjacent in configuration space. Entanglement is not a special connection—it is the failure of $L_2$ to impose separation.
 

@@ -39,6 +39,27 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1)=\text{Stabilize}(L_1(t))$$
 *   **Implication**: 任何哲学问题都是三域投影的不同面向。
 
+---
+
+### Ax-PhilF-1b: Pan-Selectionism (泛选择论)
+宇宙的基础不是物质，也不是意识（作为实体），而是"选择"这一动作本身：
+\[
+\text{Existence} \equiv \text{Being Selected} \quad (\hat{G}[L_0] \to L_1)
+\]
+* **Implication（中文）**：泛心论认为电子"拥有"微弱的意识，SRT 纠正为：电子的存在正是微观环境对其发生了一次 $\hat{G}$ 观测/选择的结果。意识不是属性，而是使现实得以跨越存在门槛的守门动作（The Cut）。
+
+---
+
+### Ax-PhilF-1c: Dynamical Spinozism (动力学斯宾诺莎主义)
+斯宾诺莎的"实体"在 SRT 中被映射为 $L_0$（具有无限多属性），而"思维"与"广延"不再是平行的静态属性，而是由 $\Psi_f$ 的高低决定的动态谱系：
+\[
+\text{Thought} \iff \text{High Friction } (\Psi_f \gg 0) \text{ Exploration in } L_0
+\]
+\[
+\text{Extension} \iff \text{Low Friction } (\Psi_f \approx 0) \text{ Execution in } L_2
+\]
+* **Implication（中文）**：心与物不是两种实体，而是同一个系统在处理预测误差时，由于本体论摩擦力不同而展现出的两种现象学状态。"物"是已经凝固、无摩擦的"心"；"心"是正在燃烧、高摩擦的"物"。
+
 ### Ax-PhilF-2: Moduli-Space Latency
 潜在域是模空间，显现是沿路径的积分。
 $$L_0 = \mathcal{A}/\mathcal{G}, \quad L_1 = \oint_\gamma \omega_{L_0}$$

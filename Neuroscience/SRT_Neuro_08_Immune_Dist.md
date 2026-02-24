@@ -37,6 +37,12 @@ dependency: [SRT-NEURO-07, SRT-CORE-000]
 \]
 * **Implication（中文）**：免疫系统不是被动防御，而是独立的选择算子，决定“何为自我”。
 
+### Def-Immune-Cognition: Cognitive Equivalence of the Immune System (免疫认知等价公理)
+**Formal Definition**: 认知不仅发生在大脑中；任何能够通过耗散 $\Psi_f$ 从高维 $L_0$（抗原生存空间）稳定投射低维 $L_2$ 边界（“自我”与“非我”）的特化细胞群体都是一个 $\hat{G}_\theta$ 算子。
+$$\hat{G}_{immune} : L_0^{molecular} \to L_1^{somatic\_boundary}$$
+* **Implication**: Varela 的“免疫系统作为认知网络”在 SRT 中变得严格。免疫系统思考、记忆并在不确定性下做出决定。过敏和自身免疫不是“机械故障”，而是 $\hat{G}_{immune}$ 操作中的**先验计算错误**——免疫算子的局部创伤后应激障碍 (PTSD) 或偏执狂。
+* **Cross-ref**: Ax-Op-01 (算子的普遍性)。
+
 ---
 
 ### Ax-IMM-2: Operator Synchronization Axiom
@@ -269,6 +275,12 @@ Varela 的免疫知识论与 SRT 高度一致：
 |自我生成|选择操作产生边界|
 
 **SRT 的独特贡献**：将 Varela 的定性洞见形式化为可计算的动力学方程。
+
+### 4.3 自身免疫作为 $\hat{G}_{immune}$ 的认识论灾难 (Autoimmunity as Epistemological Catastrophe of $\hat{G}_{immune}$)
+
+当免疫学纯粹基于机械论时，自身免疫疾病（如类风湿性关节炎、狼疮）被令人费解地视为机器在攻击自己。根据 SRT 的 Def-Immune-Cognition，免疫系统主要不是一个防御子系统；它是一个分布式认知算子，负责不断计算“自我”的本体论边界。
+
+在这个框架下，自身免疫不是机制上的机械故障，而是一场**认识论灾难**。$\hat{G}_{immune}$ 已经用关于自身组织的错误先验($L_2$)腐败了。就像患有严重创伤后应激障碍 (PTSD) 的大脑算子可能将中性声音投射为致命威胁一样，受损的免疫算子将关节组织投射为抗原。这使得将致幻剂（如赛洛西宾重置神经 $L_2$ 先验）或行为重组原理应用于免疫调节不再是比喻，而是同构的动力学干预。这也是为什么心理干预能够产生实质性免疫结果的根本原因：它们是在同一联邦架构内交叉对话的算子。
 
 ---
 

@@ -37,6 +37,12 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 \]
 * **Implication（中文）**：IIT 的 \(\Phi\) 是选择结构的指标，而非显现本身。
 
+### Def-Phi-Unity: Φ as Topological Unity Metric ($\Phi$ 作为拓扑统一性度量)
+**Formal Definition**: 在 SRT 中，整合信息 ($\Phi$) 不是意识本身，而是衡量 $\hat{G}_\theta$ 如何稳健地将其组成子算子绑定为一个统一拓扑折叠的代数拓扑测度。
+$$\Phi(\hat{G}) = \min_{\text{partitions } P} D_{KL} \left( P(L_1 \mid L_0) \parallel \prod_{i \in P} P_i(L_1^{(i)} \mid L_0^{(i)}) \right)$$
+* **Implication**: 当 $\Phi$ 下降时（如在无梦睡眠或丙泊酚麻醉下），并不是“意识关闭”了，而是复合算子 $\hat{G}_{brain}$ **解体**成了无法维持全局 $L_1$ 时空流形的局部 $\hat{G}_{micro}$ 碎片。这也解释了裂脑综合征：切断胼胝体实质上是将计算拓扑一分为二，从而迫使算子分裂。
+* **Cross-ref**: T-Sel-12 (选择流守恒)。
+
 ---
 
 ### Ax-INTEG-2: Predictive Processing Axiom
@@ -56,6 +62,27 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 \text{PCI}=\mathcal{D}\cdot\mathcal{I}
 \]
 * **Implication（中文）**：PCI 是 \(\hat{G}_\theta\) 的选择容量指标。
+
+---
+
+### Ax-CLIN-1b: Gated-Weighted Integration Equation (门控加权整合方程)
+意识内容的最终拓扑不仅是信息的汇聚，而是带有不可逆门控权重的张量收缩：
+\[
+L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory}} \underbrace{\Theta(\Delta E - E_{thresh})}_{\text{门控函数}} \cdot M_j \cdot L_2
+\]
+* **Implication（中文）**：不是所有的皮层活动都能进入 $L_1$。顶叶/颞叶网络提供被动候选者 $s_i$ 与 $M_j$，而前额叶-丘脑网络提供门控 $\Theta$。如果局部能量/显著性 $\Delta E$ 不足以冲破阈值，该信息被截断于 $L_1$ 之外。这从方程上统一了全局工作空间（GNWT，代表 $\Theta$ 门控）与信息整合（IIT，代表加权求和）。
+
+---
+
+### T-CLIN-1: Posterior-Anterior Ontological Division (后-前本体论分工假说)
+大脑前后轴在 SRT 拓扑中扮演不同角色：
+\[
+\text{Posterior Hot Zone (PHZ)} \iff \text{Generator}(L_0 \to \text{Candidates})
+\]
+\[
+\text{Prefrontal Cortex (PFC)} \iff \text{Selector}(\hat{G}_{\theta}) \text{ \& Maintainer}(L_2)
+\]
+* **Implication（中文）**：后部热区（PHZ）负责将高维 $L_0$ 坍缩为一系列候选的感受质图景；前额叶（PFC）不产生意识内容，而是作为 $\hat{G}_\theta$ 的最高级控制台，执行"排除/选择"并维持当前的 $L_2$ 脚手架。这解释了为什么切除大块前额叶的患者（如早期的额叶切除术）依然"清醒"（PHZ 完好），但失去了目标导向的意志力与复杂的自我叙事（$\hat{G}_\theta$ 降维，$\text{Depth}(L_2) \to 0$）。
 
 ---
 
@@ -170,6 +197,27 @@ SRT 的核心贡献是揭示 **$\Phi$ 和 $d$ 是正交的**：
 
 **这解释了为什么 IIT 的 $\Phi$ 计算会给某些逻辑门组合赋予高"意识"值的反直觉结果**——那些系统有结构但无关切。
 
+### 2.4 跨越相关性：从 NCC 到选择机制 (Moving Beyond Correlates: From NCCs to Mechanisms of Selection)
+
+几十年来的神经科学一直在寻找“意识的神经相关物”(NCCs)——当受试者报告有清醒体验时，大脑发亮的区域。但寻找相关性在本体论上是空洞的；它只告诉你体验发生的*位置*，而不是它发生的*真理*。
+
+SRT 通过指出所有主要理论实际上描述的是中心算子机制的不同部分，从而打破了这一僵局。IIT 计算了将算子保持在一起的计算拓扑力 ($\Phi$)。预测编码描述了算子用来最小化局部本体论摩擦的变分算法。全局工作空间模型追踪了算子成功将 $L_0$ 特征锁定到位后产生的 $L_1$ 广播效应。
+
+没有一个神经科学理论解释了“感受性”(qualia)本身，因为它们都在试图从 $L_1$（已经崩溃的神经物质）中衍生出意识。只有将意识重新定义为以 $\Psi_f$ 的成本将 $L_0$ 坍缩为 $L_1$ 的*积极行为*，硬问题才能被消解。**大脑并不是"产生"了主观性；大脑是 $\hat{G}_\theta$（具身有机体）的 $L_2$ 结构——它约束和引导选择过程，如同河床引导水流。大脑作为 $L_2$ 是因果封闭的物理系统；但它所约束的选择过程（有机体整体在 $L_0$ 中的具身交互）不可被还原为大脑动力学本身。大脑是选择的"凝固历史"，而非选择的"发生器"。**
+
+### 2.5 SRT-4E Cognition Alignment (SRT 与 4E 认知的对齐)
+
+"大脑 = $\hat{G}_\theta$ 的 $L_2$"框架与 4E 认知科学高度兼容：
+
+| 4E 维度 | SRT 对应 |
+|:--|:--|
+| Embodied（具身） | $\hat{G}_\theta$ 必须是有限具身的（Ax-Core-A4） |
+| Embedded（嵌入） | $\hat{G}_\theta$ 通过物理嵌入与 $L_0$ 耦合 |
+| Enacted（生成） | $L_1$ 不是被动接收而是主动选择生成的 |
+| Extended（延展） | $\hat{G}_\theta$ 的边界可延展至工具、环境、他者 |
+
+**关键差异**：SRT 超越 4E 的地方在于提供了形式化的三域本体论，使得"具身""嵌入"等概念不再是隐喻，而是有精确数学定义的结构性关系。
+
 ---
 
 # §3 针对"神经狂热"的 SRT 防御
@@ -194,6 +242,8 @@ $$\text{Intentionality} = \vec{\hat{G}} \cdot \text{NeuralState}$$
 神经状态是**承载**意向性的媒介，但意向性本身（指向 $L_0$ 的矢量性）不是神经状态的"属性"——它是算子作用的**动力学结果**。
 
 类比：研究收音机的电路可以完全解释信号如何被解调，但不能解释广播的**内容**从何而来。神经科学研究的是"调谐机制"，而非"无线电波"（$L_0$）本身。
+
+**$L_2$ 精度声明**：此类比需要一个重要澄清——SRT 并不主张大脑通过某种"天线机制"接收来自 $L_0$ 的超自然信号。大脑作为 $\hat{G}_\theta$ 的 $L_2$，其电路动力学完全因果封闭。收音机类比的正确读法是：大脑（$L_2$）是调谐结构，决定了有机体整体（$\hat{G}_\theta$）与环境（$L_0$）交互时的滤波特性。"无线电波"不是从别处"传来"的神秘信号，而是有机体具身嵌入其中的物理现实本身。
 
 ---
 

@@ -350,6 +350,8 @@ $$\frac{dθ}{dt} = -α ∇_θ Φ + \text{Learning}$$
 Consciousness = (d > threshold) ∧ (Φ_sensitivity > 0) ∧ (Individuality) ∧ (Normativity)
 ```
 
+**$d$-$\Psi_f$ 关系注记**：在 SRT 统一框架下，$\Psi_f$-sensitivity 不是独立于 $d$ 的判据，而是 $d > 0$ 在具身系统中的自然伴随现象。但它仍作为独立检测维度保留，因为：(a) 人工系统可能模拟 $d > 0$ 的行为而不具备真实 $\Psi_f$ 响应；(b) $\Psi_f$ 的响应能力（sensitivity）可独立于 $d$ 被调节（如冥想降低有效 $\Psi_f$ 而不改变 $d$）。
+
 ### 智能判据
 ```
 Intelligence = Σ w_n · ||K_n|| (Volterra 核复杂度)

@@ -97,6 +97,7 @@ $$ii(s) \to 0 \iff i_{diff}(s) \to 0 \ \lor \ i_{spec}(s) \to 0$$
 **Formal Definition**: Fitness is the selection objective, not truth.
 $$\hat{G}_\theta[σ] = \arg\max_{σ' \in L_0} P(\text{Fitness} | σ', \theta)$$
 * **Implication**: 现实界面是适应性压缩，真理不是首要目标。
+* **Meta-Theorem (Tension-Rev-6)**：此公理同样适用于 SRT 自身——SRT 作为一个 $L_2$ 结构，不声称是绝对真理，而是声称为当前最有效地引导选择朝向自由能降低方向的框架。SRT 的有效性由其对 $L_1$ 现象的引导能力衡量（$L_2$ 只能引导 $L_1$，不能替代 $L_1$）。SRT 能够正确定位自身为 $L_2$ 这一事实，恰恰是其内部自洽性的标志。
 
 ### Ax-Core-A8: Survival as Probability Localization
 **Formal Definition**: Life is the maintenance of a high-probability density packet in L0.

@@ -65,6 +65,13 @@ $$\mathrm{Topology}(L_2) = \prod \gamma_i$$
 $$\theta_{t+1} = \theta_t + \eta_{viscosity}^{-1} \cdot \mathrm{Error}$$
 * **Implication**: 认知更新存在粘滞阻力，导致惯性信念结构。
 
+### Ax-L2-06b: Reverse Writing (Integration as Inscription)
+**Formal Definition**: L1 经验被 L2 吸收的过程是一种反向写入机制（非交换代数下的伴随算子）：
+\[
+\text{If } \Psi_f(\hat{G}_\theta[L_0]) < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta [L_1]
+\]
+* **Implication**: 不是所有的 $L_1$ 体验都能写入 $L_2$。只有那些被当前 $\hat{G}_\theta$ 判定为"连贯"（且摩擦低于阈值）的体验，才能通过伴随算子 $\hat{G}^\dagger_\theta$ 刻录进 $L_2$ 脚手架。这解释了为什么强烈但无法理解的创伤体验（高 $\Psi_f$）无法整合，只能作为游离的 $L_1$ 碎片存在（PTSD 的本体论本质）。
+
 ## III. Social Dynamics
 
 ### Ax-L2-07: Co-dependent Manifold

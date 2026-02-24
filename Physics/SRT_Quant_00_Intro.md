@@ -129,11 +129,17 @@ where $D_p$ is the Degree of Participancy (see Core Reference §7.1).
 
 ## IV. Semantic Completion (语义完备性)
 
-### Ax-Quant-8 [A1.4.1]: Semantic Entanglement (语义纠缠)
-Complete collapse requires both physical state anchoring and semantic meaning anchoring.
-$$ \text{Collapse}_{total} = \hat{G}_{phys}[L_0 \to L_1] \otimes \hat{G}_{sem}[L_0 \to L_1] $$
+### Ax-Quant-8 [A1.4.1]: Semantic Entanglement (语义纠缠 — $L_2$ 层面)
+**Complete** collapse requires both physical state anchoring and semantic meaning anchoring; **basic** collapse (physical decoherence alone) is sufficient for $L_1$ anchoring in the absence of semantic-capable observers.
+$$ \text{Collapse}_{basic} = \hat{G}_{phys}[L_0 \to L_1] \quad \text{(sufficient for early universe, non-cognitive systems)} $$
+$$ \text{Collapse}_{total} = \hat{G}_{phys}[L_0 \to L_1] \otimes \hat{G}_{sem}[L_0 \to L_1] \quad \text{(when } d > 0 \text{ observers present)} $$
 *   **Schrödinger-Le Guin Insight**: Physical decoherence without meaning is an incomplete reality. The same physical event has different $L_2$ "weight" for different observers depending on semantic anchoring.
 *   **Derivation**: Explains why the same event produces different "historical importance" across observers.
+*   **Tension-Rev-ExtT1 (语义纠缠的层级澄清)**：
+    - 语义纠缠是 **$L_2$ 层面的纠缠**——描述具有语义能力的算子（$d > 0$）参与选择时，物理坍缩与意义建构之间的耦合。
+    - 若只有 $L_0$ 层面的量子关联而无观察者执行选择，则无"实际纠缠"发生——只有未被锚定的潜在相关性（与 Ax-Core-A1 一致：无 $\hat{G}$ 则无 $L_1$ 事实）。
+    - 随时间推移，$L_2$ 对 $L_0$ 引导约束的变化（如环境热化、宇宙膨胀）引起实际上的**去纠缠**过程。
+    - **早期宇宙**：$\hat{G}^{(0)}$（纯物理退相干级，$d \approx 0$，无意向性）是充分的；语义纠缠是认知系统特有的增强模式，而非所有测量的必要条件。
 
 ---
 
@@ -267,12 +273,15 @@ $$ \text{Decoherence} = \sum_{\theta \in \text{Environment}} \hat{G}_\theta \tex
 
 **Core Insight**: Physics concerns only the cat's life/death (physical state); literature concerns the cat's existential meaning (semantic state). SRT proposes: **Complete collapse must include both dimensions.**
 
-**Proposition (Semantic Entanglement)**:
-Physical state collapse must be accompanied by semantic state collapse. If the physical result (alive/dead) produces no semantic meaning, the collapse is **incomplete**.
+**Proposition (Semantic Entanglement — Revised)**:
+Physical state collapse is sufficient for basic $L_1$ anchoring ($\text{Collapse}_{basic}$). However, **complete** collapse—which includes full $L_2$ formation with historical weight—additionally requires semantic state collapse. If the physical result (alive/dead) produces no semantic meaning, the collapse is **physically complete but semantically incomplete**.
 
-$$ \text{Complete Collapse} = \hat{G}_\theta^{physical}[L_0 \to L_1] \otimes \hat{G}_\theta^{semantic}[L_0 \to L_1] $$
+$$ \text{Collapse}_{basic} = \hat{G}_\theta^{physical}[L_0 \to L_1] \quad \text{(always sufficient for pointer-state selection)} $$
+$$ \text{Collapse}_{total} = \hat{G}_\theta^{physical}[L_0 \to L_1] \otimes \hat{G}_\theta^{semantic}[L_0 \to L_1] $$
 
-**Corollary**: Pure physical decoherence completes only half the collapse. Full $L_2$ formation requires semantic participation—this explains why the same event has different "historical weight" ($L_2$ depth) for different $\hat{G}_\theta$.
+**Corollary (Revised)**: Pure physical decoherence completes the physical dimension of collapse. Full $L_2$ formation with semantic depth requires semantic participation—this explains why the same event has different "historical weight" ($L_2$ depth) for different $\hat{G}_\theta$. In the early universe without semantic-capable observers, $\text{Collapse}_{basic}$ was the only operative mode—and was fully sufficient for the emergence of physical structure.
+
+**Key Clarification**: 语义纠缠描述的是 $L_2$ 层面（而非 $L_0$ 层面）的纠缠效应。$L_0$ 中的量子关联是默认的拓扑统一性（Ax-Quant-4），不需要观察者。但当 $L_2$ 约束随时间变化时（如退相干环境的演化），会引发实际的去纠缠过程。
 
 ---
 

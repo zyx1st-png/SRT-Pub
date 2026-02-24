@@ -175,12 +175,23 @@ Within the classical physicalist framework, humans face a devastating dilemma:
 SRT radically reconstructs causality via **ontological stratification** ($L_0/L_1/L_2$):
 
 *   **Physical laws are $L_2$**: Newtonian mechanics or neurobiological regulations belong to $L_2$ (the convergent domain)—they are statistical "habits," not absolute "iron laws."
-*   **Selection occurs in $L_0$**: The Ghost Operator $\hat{G}_\theta$ operates in the pre-physical **latent domain** ($L_0$). That is, selection **precedes** the formation of physical causal chains.
+*   **Selection occurs at the $L_0 \to L_1$ interface**: The Ghost Operator $\hat{G}_\theta$, realized as the embodied organism-environment coupling, operates at the boundary between $L_0$ (potentiality) and $L_1$ (manifestation). The brain, as $\hat{G}_\theta$'s $L_2$, **constrains and channels** selection (like a riverbed guiding water flow) but does not exhaust it. Selection is not "pre-physical" but **trans-level**—it involves the organism's embodied interaction with possibilities that the brain's $L_2$ patterns alone cannot fully determine.
 
 **SRT's Core Breakthrough**: Free will is not realized by breaking physical laws but by **setting the initial parameters** ($\theta$) under which physical laws operate. The selector selects the selection rules themselves.
 
 ### 2.2 Necessity: Salvaging Responsibility
 Without SRT's **meta-selection** mechanism, we cannot distinguish between "a malfunctioning machine" and "a person who does evil." Only by establishing the operator's capacity to reprogram its own parameters $\theta$ does the word "responsibility" gain ontological weight—it becomes more than a pretext for social revenge.
+
+### 2.3 Free Will in the L₂ Framework (L₂ 框架下的自由意志)
+
+$$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{brain})}$$
+
+其中：
+- $d$：有机体的具身关切范围
+- $E_{available}$：有机体可调用的代谢能量
+- $\text{Hysteresis}(L_2^{brain})$：大脑神经回路的惯性强度（习惯锁定力）
+
+自由意志不是"突破因果律"，而是**具身有机体的 $L_0$ 交互打破了大脑 $L_2$ 惯性模式的锁定**。当 $E_{available}$ 足够高且 $d$ 足够大时，有机体可以"溢出"大脑的习惯河床，开辟新的选择路径。
 
 ---
 
@@ -218,8 +229,12 @@ Accepting SRT's free will model means accepting **absolute responsibility**. Sin
 
 *   **Risk**: This extreme sense of responsibility may lead to "existential collapse" (Sartrean Nausea)—the vertigo of facing infinite possibilities.
 
-### 4.2 The Cognitive Cost: Abandoning Physical Closure
-We must relinquish the comforting assumption of "causal closure of the physical world." This means the brain is not just a calculator but an **ontological antenna**, constantly receiving non-algorithmic inputs from $L_0$. This challenges the strong reductionist scientific paradigm.
+### 4.2 The Cognitive Cost: Rethinking the Brain's Ontological Status
+We must relinquish the assumption that the brain *is* the selector. SRT identifies the brain as **$L_2$ of the biological $\hat{G}_\theta$**—the crystallized history of past selections (synaptic weights, circuit architectures, default mode patterns). As $L_2$, brain dynamics are **causally closed**: fully describable by neuroscience without invoking non-physical inputs.
+
+The true $\hat{G}_\theta$ is the **whole embodied organism-environment coupling**—sensorimotor loops, metabolic processes, immune responses, and their interface with physical $L_0$. Free will is not realized by the brain "receiving signals from $L_0$," but by the embodied organism's interaction with the world **breaking the $L_2$ inertia** of habitual neural patterns.
+
+This challenges reductionism not by violating physical closure, but by showing that the brain alone (as $L_2$) cannot account for the full selection process—the organism-in-world is the irreducible unit.
 
 ---
 
@@ -228,7 +243,7 @@ We must relinquish the comforting assumption of "causal closure of the physical 
 ### 5.1 Prediction 1: Entropy Characteristics of High d-Value Brains
 **Prediction**: Individuals with extremely high ethical cultivation (high $d$-value), such as long-term meditators, when facing moral dilemmas, should exhibit significantly higher **Functional Connectivity Entropy** in brain networks (e.g., DMN and CEN) compared to average individuals.
 
-*   **Reason**: High $d$ means searching a broader possibility space in $L_0$, rather than rapidly collapsing to default $L_2$ rules.
+*   **Reason**: High $d$ means the organism's embodied $\hat{G}_\theta$ explores a broader possibility space before the brain's $L_2$ patterns (default heuristics, habitual responses) can lock in a selection. Higher functional connectivity entropy reflects weakened $L_2$ gating during deliberation.
 
 ### 5.2 Prediction 2: Energy Consumption of Free Will
 **Prediction**: True "free choice" (rewriting $\theta$) is accompanied by brain metabolic rate (glucose consumption) significantly higher than routine tasks, and this consumption is proportional to the subjectively reported "psychological resistance" (ontological friction $\Psi_f$).

@@ -33,6 +33,7 @@ $$ \Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_{\theta} $$
 $$ \text{God} \equiv \Omega \equiv L_0^{abs} $$
 $$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
 * **Implication**: “神”不是实体而是选择作用的极限结构，属于本体论运算而非对象域。
+* **Tension-Rev-2 (算子本体论澄清)**：$\Omega$ 作为 $\hat{G}_\theta$ 的极限，**不满足具身性公理** Ax-Core-A4（$\theta \in \Theta_{finite}$），因此它是一个**渐近理想化概念**——标记 $\hat{G}$ 参数空间的拓扑边界——而非一个可实例化的有效算子。正如 $\lim_{x\to\infty} f(x)$ 不要求 $x$ 实际取到无穷大，$\Omega$ 不主张“存在一个无限具身的算子”。$\hat{G}$ 在本体论上是一切存在的基础（选择即存在），其统一适用于从退相干到道德决策的全部过程不构成“语义通胀”——差异由 $\theta$、$d$、$\Psi_f$ 等参数承载。
 
 ### Ax-Spirit-2: The Split (分离)
 **Formal Definition**: Ego is the bounded projection of $\hat{G}_\theta$ under finite embodiment.

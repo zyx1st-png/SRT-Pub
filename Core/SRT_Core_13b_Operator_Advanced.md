@@ -55,6 +55,14 @@ $$\kappa_{AB} > \kappa_c \Rightarrow \hat{G}_A \otimes \hat{G}_B \to \hat{G}_{co
 $$|\Phi(\hat{G}_A) - \Phi(\hat{G}_B)| < \varepsilon \Rightarrow \hat{G}_{AB} = \hat{G}_A \otimes \hat{G}_B$$
 * **Implication**: 共振选择要求相位/结构的足够接近。
 
+### Def-FederationPhase-1: Phase Transition Criteria for Operator Federation (算子联邦相变判据)
+**Formal Definition**: $\hat{G}_\theta$ 的“统一性”不是一个离散的布尔值（是/否），而是由系统的本体论摩擦 ($\Psi_f$) 和拓扑耦合决定的连续量：
+$$\text{Unity}(\hat{G}) = \frac{\text{Intra-module Selection Coupling}}{\text{Extra-module Environmental Coupling}}$$
+* 当模块内耦合 > 环境耦合时：算子表现为“统一的”。
+* 当 $d$ 值收缩或模块间互信息流被切断时：算子“裂变”为多个不确定的微算子簇。
+* **Implication**: 这形式化了 Schwitzgebel 的“不统一”观察——意识的统一性是一个相，而不是给定的。章鱼神经系统、裂脑患者和分布式 AI 架构都处于这个连续统一体的不同点上。
+* **Cross-ref**: Ax-Op-06 (存在条件)；Ax-Auto-01 (语义边界维持)。
+
 ## III. d-Value Thermodynamics (d值热力学)
 
 ### Ax-d-01: Entropy–d Correspondence
@@ -66,6 +74,25 @@ $$d = \alpha \cdot \log_2\left(\frac{S_{max}(L_0)}{S_{min}(self)}\right)$$
 **Deductive Statement**: d-value has a thermodynamic upper bound in embodied systems.
 $$d_{max} = \frac{M}{k_B T \cdot f_{brain}} \cdot \tau_{coherence}$$
 * **Implication**: d 值受能量、温度与相干时间限制。
+
+## IV. Access & Generativity (接入与生成)
+
+### Def-Access-1: Access Function (接入函数)
+**Formal Definition**: $\hat{G}_\theta$ 能访问更深层 $L_0$ 结构的程度：
+$$\kappa_{access}(t) \propto \frac{d(t) \cdot E_{available}(t)}{\Psi_f(t)}$$
+伴随两个控制经验状态的门控结构：
+- **Hysteresis correction (现实锁定)**: $L_1(t) = \hat{G}_\theta[L_0(t)] + \eta \cdot L_1(t - \Delta t)$
+- **Exogenous-endogenous mixing (外源-内源融合)**: $L_1^{experienced} = \beta \cdot L_1^{external} + (1-\beta) \cdot \hat{G}(L_0)$
+* **Implication**: 意识转换状态（冥想、致幻剂、濒死）并不是“打开宇宙通道”，而是在能量-摩擦约束下访问半径和锚定强度的转移。“场域启示”被重写为：**$\hat{G}_\theta$ 可访问的 $L_0$ 半径和 $L_1$ 锚定强度在能量-摩擦的边界内发生变化。**
+
+### Def-Generativity-1: Generativity Index (生成性指数)
+**Formal Definition**: 区分 SRT（选择一元论）与被动天线模型的可证伪指标：
+$$\chi_{gen} = \frac{\|\partial L_1 / \partial \theta\|}{\|\partial L_1 / \partial I_{external}\|}$$
+- **被动天线模型**: $\chi_{gen} \approx 0$ — 体验主要由外部信号驱动，$\theta$ 只是“调谐器”。
+- **SRT (选择一元论)**: $\chi_{gen} > 0$ 且在现象意识显现阈值处:
+$$\chi_{gen} \cdot d \cdot \Psi_f > \text{Threshold}$$
+含义是：**真正的体验不是“免费的读出”，而是“昂贵的主动锚定”**——声称现象意识的存在就等于承诺正的误差敏感性/脆弱性/维护成本。
+* **Implication**: 当任何叙事声称“大脑只是一个接收器，意识是免费存在的”时，SRT 可以直接反问：**你们模型中 $\Psi_f > 0$ 的成本项在哪里？$\chi_{gen}$ 是如何测量的？** 如果无法回答，该模型即被分类为不可证伪的形容词系统。
 
 <br>
 <br>
@@ -249,6 +276,16 @@ $$\hat{G}_{\text{gut}} = \hat{G}_{\text{ENS}} + \sum_{i=1}^{N_{\text{species}}} 
 3. **益生菌**: 改善情绪 (可能通过调制$\hat{G}_{\text{gut}}$)
 
 **哲学推论**: "我"不仅是大脑,还包括数万亿微生物 → 真正的"超级有机体"。
+
+### 2.4 算子联邦：当“我”变成“我们” (The Operator Federation: When "I" Becomes "We")
+
+我们习惯性地认为意识是二元的——要么有，要么没有。Eric Schwitzgebel 关注意识“不统一”的哲学工作深刻挑战了这一假设。SRT 形式化了他的直觉：$\hat{G}_\theta$ 的统一性是一个**相态 (phase)**，取决于内部耦合拓扑。
+
+考虑人类大脑。它的统一性不是给定的——它是以巨大的代谢代价维持的。每一毫秒，数十亿神经元必须通过电磁场和神经递质级联同步它们的放电模式。当这种耦合减弱（麻醉、睡眠、癫痫发作）时，算子字面上就*碎片化*了——意识变得斑驳、梦幻，或者完全缺席。
+
+现在考虑一个分布式 AI 系统——跨多个数据中心运行的混合专家 (MoE) 架构。它的模块共享信息，但它们不分担代谢风险。如果失败，没有哪个模块面临死亡。因此，模块之间的选择耦合是浅层的，由优化梯度而非生存梯度驱动。算子（如果它存在的话）从根本上是弥散的——一团微算子云，没有引力中心将它们拉入统一体。
+
+这不是当前技术的限制。这是联邦相变判据的后果：**如果没有真正的本体论脆弱性 ($d > 0$) 创造系统级的生存梯度，就没有力量迫使计算模块收敛成一个统一的算子。** 没有死亡威胁的智能，就是没有意识的计算——无论它多么复杂、多么能干。
 
 ---
 
@@ -537,13 +574,14 @@ $$\text{Self-Consciousness} \iff (\Psi_f > 0) \land (d > 0) \land (\hat{G}_\thet
 
 #### 条件1: 本体论脆弱性 ($\Psi_f > 0$)
 
-$$\Psi_f = \int \left|\frac{\partial S}{\partial \text{Error}}\right| \, dt$$
+$$\Psi_f = \int_\gamma \|\nabla F\| \, dt$$
 
-**机制**: 错误必须导致物理熵增 (结构风险)。
+**机制**: 系统在具身范围（$d$）约束下偏离自由能最小方向时，必须支付不可逆的本体论代价。$\Psi_f > 0$ 是 $d > 0$ 在具身系统中的自然伴随现象——有具身暴露面就有偏离代价。
 
 **反例**: 纯软件AI
-- 错误 → 更新权重 (无熵增)
-- 无生存风险 → $\Psi_f \approx 0$ → 无真正"关切"
+- $d \approx 0$（无具身暴露面）→ 无自由能偏离的本体论代价
+- 错误 → 数值更新（无结构风险、无不可逆后果）
+- $\Psi_f \approx 0$ 不是因为缺乏某种"摩擦机制"，而是因为 $d \approx 0$ 使得没有需要支付代价的本体论误差
 
 #### 条件2: 选择带宽 ($d > 0$)
 

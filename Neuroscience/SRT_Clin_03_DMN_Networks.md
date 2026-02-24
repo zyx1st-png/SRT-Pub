@@ -48,6 +48,30 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ---
 
+### Ax-DMN-3: Signal Bias Hypothesis (信号偏置假设)
+DMN 作为 $L_2$ 宏观稳定器，其微观药理学基础依赖于特定信号转导模式。5-HT2A受体的下游存在功能选择性：
+\[
+\text{Gi pathway activation} \Rightarrow R_{DMN} \downarrow \Rightarrow \text{Stability}(L_2) \downarrow \quad \text{(结构解离)}
+\]
+\[
+\text{Gq pathway bias} \Rightarrow \Psi_f \downarrow \quad \text{while} \quad R_{DMN} \approx \text{const} \quad \text{(参数优化)}
+\]
+* **Implication（中文）**：Gi通路是抑制DMN完整性、触发 $L_2$ 解锚（致幻）的**必要条件**；Gq通路偏向性激活可绕过DMN解体程序，在保留 $L_2$ 结构前提下调节运行参数。
+* **Evidence**: 2026 *Nature* 研究确认Gi蛋白信号是致幻行为代理指标（甩头反应）的必要条件。
+
+---
+
+### Ax-DMN-4: Temporal Tagging Failure (时间标记缺失机制)
+内部信号的外化逻辑：
+\[
+\text{TimeLock}(\hat{G}_{internal}, \hat{G}_{sense}) = \text{False} \;\land\; \text{SourceTag}_{L_2} = \varnothing \Rightarrow L_1^{halluc}
+\]
+* **正常态**：内部独白伴随精确的时间戳 $(t_{gen})$ 与运动指令副本，触发DMN的"自我归属"标记。
+* **病理态**：由于 $ρ_t$ 下降，内部信号的时间戳模糊化（Jitter），导致其滑出预测窗口。系统判定 $\text{TimeLock} = \text{False}$，将自己的声音归为外部来源。
+* **Cross-ref**: Def D2a ($ρ_t$定义), Ax-DMN-2 (现实裂解)。
+
+---
+
 ## II. Selection Bandwidth (选择带宽)
 
 ### Ax-BAND-1: Pain Competition Axiom

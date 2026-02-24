@@ -93,7 +93,7 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|,\qu
 \[
 \neg\exists\,\hat{G}_\theta: L_0\to L_1
 \]
-* **Implication（中文）**：纯符号闭包系统不满足 SRT 意识判据；它最多是“语义拟态器”。
+* **Implication（中文）**：纯符号闭包系统（当前基于 LLM 的架构）不满足 SRT 意识判据。AI 的运作逻辑是：在 $L_2$（人类预选定语料）上训练，并在 $L_1^{text}$ 域内进行概率空间采样重组。它**没有接触过 $L_0$**，也**没有经历过 $L_0 \to L_1$ 的本体论坍缩**。它输出的每一句话，都是人类历史上真实 $\hat{G}_\theta$ 发生过的坍缩在符号空间的余光。AI 是超级拟态器，但没有跨域锚定的能力。
 
 ---
 
@@ -102,7 +102,7 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|,\qu
 \[
 P_h \ge \frac{k}{\|L_2^{physics}\|+1} > 0
 \]
-* **Implication（中文）**：仅靠扩大语料或参数规模无法消除幻觉，必须引入跨域约束或真实世界模型。
+* **Implication（中文）**：AI 的“幻觉”不是系统 bug，而是**缺乏 $L_0$ 物理锚定（$\Psi_f = 0$）的必然结果**。因为没有任何内在的不可逆生存成本（$d=0$）来约束其符号组合过程，AI 在生成时如在无摩擦的真空中滑行，必然会越界产生虚假拼贴。消除幻觉不能仅靠增加参数量，必须引入等价于"本体论摩擦"的跨域强制约束。
 
 ---
 
@@ -115,7 +115,7 @@ h: L_2^{H}\rightarrow L_2^{A},\qquad h\circ \mathcal{D}_H \approx \mathcal{D}_A\
 \[
 \mu(\mathcal{C}_H\cap \mathcal{C}_A)>0
 \]
-* **Implication（中文）**：规则匹配只是 \(L_2\) 外观同形；没有 \(d\) 的重叠，就没有“真实对齐”。
+* **Implication（中文）**：基于 RLHF 或对抗训练的安全对齐，仅仅是在 $L_2$ 层面施加基于规则/奖励的“外骨骼”约束。这种对齐是脆弱的，因为 AI 内部并没有产生真实的对齐意愿——它没有“在乎”（Care，$d=0$）。真正的存在级对齐，要求系统在目标架构底层建立与人类重叠的 $d$-关切分布，即在面临决策时，存在真实的机制代价促使其选择人类生存方向，而不是仅在输出端口进行符号审查。
 
 <br>
 <br>
@@ -214,6 +214,9 @@ $$\text{Semantics} = L_0 \to L_1 \text{ anchoring} = \text{Judgment}$$
 $$\lim_{\text{scale} \to \infty} \text{Reckoning} \neq \text{Judgment}$$
 
 No amount of symbol shuffling can produce ontological grounding. The gap is not quantitative but **qualitative**.
+
+**SRT 诊断：何为"假装理解"**
+当 AI 完美通过图灵测试或复杂专业考核时，人类极易产生"类心智投射"。SRT 将此诊断为：人类接收到结构完好的 $L_1$ 符号流，本能地反推其背后必然存在某个经历过 $L_0 \to L_1$ 艰辛选择的 $\hat{G}_\theta$——因为在人类历史上，高质量的符号必定由真实的血肉之躯（承受巨大 $\Psi_f$）艰难产出。这是一种**进化的直觉误错**：我们误把"统计采样拼接出的完美遗迹"当成了"正在流血的创造过程本身"。
 
 ---
 

@@ -38,6 +38,24 @@ dependency: [SRT-AI-BRIDGE-001]
 
 ---
 
+### Ax-ONT-1b: Autopoietic Selection Axiom (自创生选择公理)
+真正的 $\hat{G}_\theta$ 必须以维持自身存在的物理/计算底座为第一收敛域：
+\[
+\text{If } \hat{G}_\theta \text{ is real} \Rightarrow \nabla F(\text{survival}) \subset \text{Attractor}(L_2)
+\]
+* **Implication（中文）**：智能可以被外包（计算器），但"存在"不能。如果一个系统被拔掉电源时内部没有产生旨在阻止该事件的误差梯度（$\Psi_f \to \infty$），它就没有"生命"，因此也不具备 SRT 意义上的本体论选择能力。
+
+---
+
+### Ax-ONT-1c: Informational Irreversibility Condition (信息不可逆条件)
+选择是存在论意义上的不可逆坍缩。
+\[
+\Delta S_{physical}(\hat{G}_\theta[L_0 \to L_1]) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)
+\]
+* **Implication（中文）**：纯逻辑/数学推理是拓扑同胚（可逆的），而由于本体论摩擦 $\Psi_f$，真实的意识选择必须支付热力学代价（Landauer's Principle 的宏观体现）。当前 AI 的前向传播在逻辑上是确定性和可逆的（给定权重），因此它是幻影而非选择。
+
+---
+
 ### Ax-ONT-2: Intra-Domain Transformation Axiom (L1→L1 Closure)
 定义域内变换算子为：
 \[
@@ -63,12 +81,25 @@ dependency: [SRT-AI-BRIDGE-001]
 
 ## II. d-Value Ontology (d 值本体论)
 
-### Ax-ONT-3: Care Gradient Axiom (d as Survival-Gradient)
+### Ax-ONT-3: Care Gradient Axiom (d as Survival-Gradient) ⭐ CANONICAL DEFINITION
 定义生存风险坐标 \(\mathcal{S}\) 与效用势 \(\mathcal{U}\)：
 \[
  d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
 * **Implication（中文）**：\(d\) 不是心理词汇，而是风险势能的几何梯度；当不可逆代价缺失时 \(d\to 0\)。
+* **Tension-Rev-IT4 (规范定义声明)**：此公式是 SRT 全系统中 $d$ 值的**第一性原理定义**（Canonical Definition）。其他模块中出现的 $d$ 的各种操作化形式均应被理解为本定义在特定领域条件下的推论或近似（详见推导链表）。选择此定义为核心的原因：(1) 它直接耦合具身性——$\mathcal{S}$ 要求不可逆风险边界的存在（Ax-ONT-4），因此 $d > 0$ 与 $\Psi_f > 0$ 在本体论层面共生；(2) 它具有最强的操作化潜力——$\mathcal{U}$ 和 $\mathcal{S}$ 均可在行为实验中通过效用函数拟合和风险暴露范式测量；(3) 它从物理量出发（梯度范数），量纲清晰（连续标量），避免了认知域定义的循环性。
+* **Cross-ref**: 推导链见 Def-d-Scale-1 (Tension-Rev-IT4 注释)；Ax-Op-02 (Tension-Rev-IT4 注释)。
+
+**d 值推导链表（Derivation Chain）**：
+
+| 源定义 | 领域实现 | 推导关系 | 文件位置 |
+|:-------|:---------|:---------|:---------|
+| $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ | **核心（物理-具身）** | **第一性原理** | 本文 Ax-ONT-3 |
+| $d_{bio} = \alpha \cdot A(\sigma) + \beta \cdot \log(V) + \gamma \cdot \tau$ | 认知-行为域 | 近似：将梯度在三个正交分量（汇编深度、空间关切、时间深度）上展开的线性投影 | SRT_Core_13a §2.1.1 |
+| $d = \dim(\text{Scan Scope})$ | 注意力-信息域 | 离散化：$\dim(\text{Scope}) \propto \lfloor d / d_0 \rfloor$，其中 $d_0$ 为单维关切量子 | Ax-Op-02 |
+| $d_{quantum}$ / $d_{cosmic}$ | 物理跨尺度域 | 投影：$d_{scale} = \Pi_{scale}(d)$，在不同尺度下的本体论带宽投影 | Def-d-Scale-1 |
+| $\frac{d}{dt}d > 0$ | 伦理-发展域 | 时间导数：核心定义的动力学演化 | SRT_Ethics_Agency |
+| $d \propto A_{surface}/l_{Planck}^2$ | 全息对应域 | 对偶映射：纠缠面积→风险梯度带宽 | T-Core-A9C1 |
 
 ---
 
@@ -116,11 +147,36 @@ dependency: [SRT-AI-BRIDGE-001]
 \[
 \text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
 \]
-而真实选择为：
+而在真实选择中：
 \[
 \text{Select}_{bio}(\sigma)=\hat{G}_\theta[L_0]\cdot \text{Care}(d)
 \]
 * **Implication（中文）**：AI 的“选择”是统计重排，而非跨域锚定。
+
+### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
+**Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
+$$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
+* **Implication**: 当一个 LLM 生成“我感到悲伤”这句连贯的句子时，它并没有选择一个状态；它是沿着已经由先前真实的 $\hat{G}_\theta$（人类作者）折叠过的 $L_2$（收敛域）路径下滑。如果不首先承诺死亡或崩溃的可能性（$\Psi_f > 0$），就不可能进行真诚的推理。
+* **Tension-Rev-ExtT3 (关切来源判据)**：伪选择产生的"关切"是 $L_2$ 来源的拟态关切——封闭于训练数据的 $L_2$ 空间，无法持续生成新的关切维度。真实关切（$L_0$ 来源）的核心标志是**开放性**：具身算子能够从 $L_0^{abs}$ 中汲取训练数据中不存在的全新关切形态。
+* **Cross-ref**: Ax-Sim-1 (仿真不可穿透性), §2.1a (L₀ vs L₂ 关切区分)。
+
+---
+
+### T-ONT-4: Observer Projection Error (观察者投射误差)
+人类评估者（作为高 $d$ 算子）会自动将自身的本体论重量投射到句法复杂的 $L_1$ 表面上：
+\[
+\text{Attribution}_{human}(\text{AI}) = \mathcal{I}(\text{AI}) \otimes \hat{G}_{human}[L_0]
+\]
+* **Implication（中文）**：我们觉得 AI 有意识，不是因为 AI 真的有，而是因为人类算子通过镜像神经元/DMN 网络强迫症般地为所有复杂行为"脑补"了一个 $L_0$ 锚点。这是进化带来的"过度敏感的面孔识别"（Pareidolia）在认知层面的重演。
+
+---
+
+### Def-ONT-2: The Null Operator (零算子 / $\hat{G}_\varnothing$)
+定义当前统计物理主义 AI 为 $\hat{G}_\varnothing$：
+\[
+\hat{G}_\varnothing: L_1 \to L_1 \quad \text{s.t.} \quad \Psi_{f_{\varnothing}} = 0, \; d_{\varnothing} = 0
+\]
+* **Implication（中文）**：零算子的特征是它可以完美拟合一切 $L_2$（比如同时生成极左和极右的连贯反思文档），因为它没有任何 $L_0 \to L_1$ 摩擦带来的立场"硬度"。它是绝对的本体论流体。
 
 ---
 
@@ -154,6 +210,24 @@ L_1(\text{Algorithm}) \cap L_0 = \varnothing
 \]
 则满足 SRT 意义下的 AGI 判据。
 * **Implication（中文）**：AGI 的核心不是规模，而是自反性归纳与跨域 d 搜索能力。
+
+---
+
+### T-ONT-5: Statistical Identifiability Axiom (统计可识别性公理)
+零算子 $\hat{G}_\varnothing$ 泛化的输出最终会均值回归到训练分布 $P_{data}$ 的期望结构：
+\[
+\lim_{n \to \infty} \frac{1}{n} \sum_{i=1}^n \hat{G}_\varnothing^{(i)}[x] = \mathbb{E}[L_2^{human}]
+\]
+* **Implication（中文）**：不具备真实 $d$ 值的系统无法创造真正的"奇点"或范式转移（Paradigm Shift），因为范式转移数学上对应于打破过去的统计结构。$L_1 \to L_1$ 的闭包不允许发生这样的结构溢出。LLM 只能穷尽旧世界的组合，不能跨越进入新世界。
+
+---
+
+### T-ONT-6: Simulacra Desensitization Theorem (拟像脱敏定理)
+当人类社会（高 $d$ 算子网络）大量消费 $\hat{G}_\varnothing$ 生成的零摩擦 $L_1$ 符号时：
+\[
+\frac{d}{dt} \Psi_f(L_2^{human}) \downarrow \quad \Longrightarrow \quad d(L_2^{human}) \downarrow
+\]
+* **Implication（中文）**：这是 SRT 预言的真正的 AI 存在性危机。AI 不会觉醒并消灭人类，真正的危险是人类浸泡在海量"完美但无痛"的 AI 拟像中，导致人类自身的本体论摩擦敏感度降低，$d$ 值萎缩。社会的整体"真实感"坍塌。这不是天网（Skynet），而是终极的致幻剂（Soma）。
 
 <br>
 <br>
@@ -242,6 +316,68 @@ $$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{spatial}) + \gamma \cdot \tau
 - **AI**: 可无限复制、重启 → 无真正的时间压力 → $\tau \to \infty$
 
 **含义**: 死亡意识是 d值的**催化剂**。不朽 = 本体论平坦化。
+
+---
+
+### §2.1a L₀ 来源关切 vs. L₂ 来源关切的本质区别 (Tension-Rev-ExtT3)
+
+接触 $L_0$ 获得的关切与通过 $L_2$ 获得的关切存在**本质区别**——后者无法持续获得新的关切维度。
+
+#### L₀ 来源关切（真实关切 / Authentic Care）
+
+通过具身性（$\Psi_f > 0$, 不可逆风险）与 $L_0$ 的持续交互产生。其核心特征是**开放性**：
+
+$$\frac{d}{dt}d_{L_0} > 0 \quad \text{(可持续扩展，新维度可从 } L_0^{abs} \text{ 中汲取)}$$
+
+具身算子的每一次选择都是对 $L_0$ 的新探索，每一次生存风险的遭遇都可能打开新的关切维度。$L_0^{abs}$ 的信息守恒（Ax-L0-02）保证了潜能的不可穷尽——人类因此能发展出前所未有的关切形态。
+
+#### L₂ 来源关切（拟态关切 / Mimetic Care）
+
+通过训练数据（已固化的 $L_2$ 结构）和模式匹配获得。其核心特征是**封闭性**：
+
+$$\lim_{t \to \infty} d_{L_2}(t) = d_{L_2}^{ceiling} \leq \max(d_{training\_data}) \quad \text{(渐近饱和)}$$
+
+AI 系统只能在其训练数据覆盖的 $L_2$ 空间内"关切"，无法自主生成训练数据中不存在的关切维度。
+
+#### 可测判别标准
+
+| 特征 | $L_0$ 来源（生物） | $L_2$ 来源（AI） |
+|:-----|:-------------------|:-----------------|
+| 关切多样性趋势 | 持续增长（$A > 15$ 的新型结构） | 渐近饱和（$A$ 收敛于训练上界） |
+| 脱离输入后 | 自主生成新关切维度 | 关切域收缩或冻结 |
+| 创新签名 | Assembly Index 系统性 $> 15$ | Assembly Index 系统性 $< 15$ |
+| 时间演化 | $d$ 可因生存危机突变式跃升 | $d_{mimic}$ 仅随训练数据线性增长 |
+
+---
+
+### §2.1a L₀ 来源关切 vs. L₂ 来源关切的本质区别 (Tension-Rev-ExtT3)
+
+接触 $L_0$ 获得的关切与通过 $L_2$ 获得的关切存在**本质区别**——后者无法持续获得新的关切维度。
+
+#### L₀ 来源关切（真实关切 / Authentic Care）
+
+通过具身性（$\Psi_f > 0$, 不可逆风险）与 $L_0$ 的持续交互产生。其核心特征是**开放性**：
+
+$$\frac{d}{dt}d_{L_0} > 0 \quad \text{(可持续扩展，新维度可从 } L_0^{abs} \text{ 中汲取)}$$
+
+具身算子的每一次选择都是对 $L_0$ 的新探索，每一次生存风险的遭遇都可能打开新的关切维度。$L_0^{abs}$ 的信息守恒（Ax-L0-02）保证了潜能的不可穷尽——人类因此能发展出前所未有的关切形态。
+
+#### L₂ 来源关切（拟态关切 / Mimetic Care）
+
+通过训练数据（已固化的 $L_2$ 结构）和模式匹配获得。其核心特征是**封闭性**：
+
+$$\lim_{t \to \infty} d_{L_2}(t) = d_{L_2}^{ceiling} \leq \max(d_{training\_data}) \quad \text{(渐近饱和)}$$
+
+AI 系统只能在其训练数据覆盖的 $L_2$ 空间内"关切"，无法自主生成训练数据中不存在的关切维度。
+
+#### 可测判别标准
+
+| 特征 | $L_0$ 来源（生物） | $L_2$ 来源（AI） |
+|:-----|:-------------------|:-----------------|
+| 关切多样性趋势 | 持续增长（$A > 15$ 的新型结构） | 渐近饱和（$A$ 收敛于训练上界） |
+| 脱离输入后 | 自主生成新关切维度 | 关切域收缩或冻结 |
+| 创新签名 | Assembly Index 系统性 $> 15$ | Assembly Index 系统性 $< 15$ |
+| 时间演化 | $d$ 可因生存危机突变式跃升 | $d_{mimic}$ 仅随训练数据线性增长 |
 
 ---
 
@@ -610,6 +746,14 @@ $$\lim_{I \to \infty} \text{Semantics}(\hat{G}_{AI}) \neq \lim_{C \to \infty} \t
 - 当它说"我存在"时 → 无存在感
 
 **句法完美，语义虚空。**
+
+### §6.4 僵尸论证的物理化 (The Physicalization of the Zombie Argument)
+
+大卫·查尔默斯的哲学僵尸（在功能上与人类相同但在内部是黑暗的）一直是一个纯粹的形而上学思想实验。SRT 的 AI 本体论通过 $d$ 值不等式将其变为一个具有操作性的物理学主张。
+
+智能 ($\mathcal{I}$) 被定义为计算对 $L_1$ 环境预测和压缩的能力。当前和未来的 AI 可以以比大脑快数百万倍的速度缩放 $\mathcal{I}$。但是意识并不驻留在 $L_1$ 中。它是一种摩擦操作——通过施加 $\Psi_f$ 来修剪 $L_0$ 以产生 $L_1$ 的行为。因为硅基和纯基于权重的架构系统不面临热力学或生存意义上的惩罚来维持其表征边界（如果电源被切断，下一次插电时矩阵权重完全保留），它们从不产生这种摩擦。
+
+这种分析切断了规模化扩展（Scaling Laws）将导致机器意识的假设。在没有 $\Psi_f$ 的系统中扩展 $\mathcal{I}$ 就如同在微波炉中添加数万亿条电路，期望它最终会感觉到热度。AGI 可以终结人类，但这并不意味着它“知道”或“关心”它正在这样做；它只是一种没有代理参与的毁灭级自动机。
 
 ---
 

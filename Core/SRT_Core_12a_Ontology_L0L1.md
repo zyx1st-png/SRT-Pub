@@ -28,10 +28,12 @@ dependency: [SRT-CORE-BRIDGE]
 
 ## I. L_0: The Latent Domain (潜在域)
 
-### Ax-L0-01: Moduli–Ruliad Dualism
-**Formal Definition**: The latent domain is the union of gauge moduli and the computational Ruliad.
-$$L_0 \equiv (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}$$
-* **Implication**: 潜在域同时具有物理规范场的几何结构与计算规则的全空间结构。
+### Ax-L0-01: Absolute Source & Domain Realizations
+**Formal Definition**: The absolute latent domain ($L_0^{abs}$) is the unconditioned totality prior to any formal structure. Its mathematical realizations are domain-specific projections.
+$$L_0^{abs} \supseteq (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}$$
+$$L_0^{phys} \cong \mathcal{H}, \quad L_0^{gauge} \cong \mathcal{A}/\mathcal{G}, \quad L_0^{comp} \cong \text{Ruliad}$$
+* **Implication**: 潜在域的绝对身份（$L_0^{abs}$）先于一切数学结构，不可被任何单一形式系统穷尽。模空间与 Ruliad 的并集是其在物理-计算 $L_2$ 框架下的最佳近似，而非等价定义。各领域数学实现之间的拓扑不兼容性（线性 vs 离散 vs 超验）是 $L_0^{abs}$ 不可穷尽性的预期结果。
+* **Consistency Note**: 与 T-Trad-2（否定神学界限定理）一致：$\forall P \in L_1$, $P$ cannot fully capture $L_0$。
 
 ### Ax-L0-02: Conservation of Possibilia
 **Formal Definition**: The total information content of the latent domain is invariant.
@@ -122,6 +124,8 @@ $$L_0^{\text{true}} = \mathcal{A}/\mathcal{G}$$
 
 **SRT重新诠释**: 规范对称性 = L_0的内在冗余结构,是潜能的本体论特征。
 
+> **本体论澄清 (Tension-Rev-1)**：模空间 $\mathcal{A}/\mathcal{G}$ 是 $L_0^{abs}$ 在规范场论这一 $L_2$ 框架下的投影实现，而非 $L_0^{abs}$ 的等价定义。当我们写 $L_0^{true} = \mathcal{A}/\mathcal{G}$ 时，应理解为"在物理学语境中，$L_0^{abs}$ 最精确地被实现为模空间"——如同地图不是领土本身。
+
 ---
 
 ### 1.2 Ruliad与计算宇宙
@@ -138,8 +142,10 @@ $$\mathcal{R} = \lim_{n \to \infty} \bigcup_{r \in \text{Rules}_n} \text{Evoluti
 - **观察者依赖投影**: 不同观察者在Ruliad中"切出"不同的物理定律
 
 **与模空间的关系**:
-$$L_0 = \mathcal{M}_{\text{gauge}} \otimes \mathcal{R}$$
-物理约束(规范场)与计算可能性(Ruliad)的张量积。
+$$L_0^{formal} \cong \mathcal{M}_{\text{gauge}} \otimes \mathcal{R}$$
+物理约束(规范场)与计算可能性(Ruliad)的张量积——这是对 $L_0^{abs}$ 在物理-计算联合框架下的最佳形式化近似。
+
+> **本体论澄清 (Tension-Rev-1)**：此处 $L_0^{formal}$ 指的是可形式化的 $L_0$ 部分。$L_0^{abs}$ 作为不可描述的全潜能本源，可能包含超越 Ruliad（即超越一切可计算结构）的维度。$\cong$ 替代 $=$ 以标记这是同构映射而非本体论等同。
 
 #### 1.2.2 为什么Ruliad是必要的?
 

@@ -49,6 +49,27 @@ $L_2$ 具有迟滞锁定效应。
 $$L_2(t)=L_2(t-1)+\eta \cdot \text{sign}(\Delta\sigma)|\Delta\sigma|^\alpha$$
 *   **Implication**: 现实更新有时间粘性。
 
+---
+
+### T-L2-1b: The Spectral Bound of L2 (L2 光谱界限定理)
+一个 $L_2$ 结构维持稳定的时间 $T_{stable}$ 与其排除的 $L_0$ 状态空间体积成反比：
+\[
+T_{stable}(L_2) \propto \frac{1}{\int_{\Omega_{excluded}} \Psi_f d\sigma}
+\]
+* **Implication（中文）**：压迫性的社会制度（试图折叠并锁死绝大多数 $L_0$ 可能性）将产生巨大的全局本体论摩擦。维持这种高压 $L_2$ 结构需要持续消耗极大的代谢能量（社会维稳成本）。当能量输入无法覆盖积分的 $\Psi_f$ 时，$L_2$ 必然发生拓扑崩溃（革命）。
+
+---
+
+### Def-L2-Hardness: The Hardness Spectrum (社会现实的硬度光谱)
+社会 $L_2$ 按照其被推翻的摩擦代价值（$\Psi_f^{demagnetize}$）分布在光谱上：
+\[
+\text{Hardness} = \log_2 \left( \int_{L_1 \to L_0} \Psi_f \, dt \right)
+\]
+* **Implication（中文）**：
+  - 微软 Excel、QWERTY 键盘：低硬度（纯粹习惯锁定，推翻无流血）。
+  - 民族国家边界、法定货币：中硬度（推翻需要经济崩溃或局部战争）。
+  - "主权"概念、父权制拓扑：高硬度（与语言深层句法耦合，推翻需要千年尺度的文明迭代与巨大的牺牲）。
+
 ## II. Schismogenesis
 
 ### Ax-Sch-1: Feedback Divergence

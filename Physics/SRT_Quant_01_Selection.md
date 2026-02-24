@@ -173,6 +173,21 @@ SRT 统一 QBism 和 RQM 的核心张力：
 波恩规则 $P = |ψ|^2$ 是 $\hat{G}_θ$ 为生存所必须遵循的最优博弈策略：
 $$ P_{Born} = \arg\min_P \mathbb{E}[\text{预测误差}] $$
 
+### T-Sel-11 [T1.5.2]: Theorem of Decoherence Insufficiency (退相干不完备定理)
+**Formal Definition**: 环境退相干只能在 $L_0$ 内部重新分配概率流并抑制量子相干性泄漏，但它**无法执行最终的本体论跨越**（从可能性 $L_0$ 到确定现实 $L_1$）。
+$$\text{Decoherence}: \rho_{ij} \to 0 \quad \text{(off-diagonal suppression)}$$
+$$\text{But: } \rho_{ii} \neq \delta_{ik} \quad \text{without } \hat{G}_\theta$$
+退相干执行的是“筛选”——只有 $\hat{G}_\theta$ 的本体论摩擦做功 ($\Psi_f > 0$) 才能完成“决定”。
+* **Physical Significance**: 主流声称“神秘已经消解”只是将不确定性推给了更大的环境。SRT 提供了唯一最终的闭环解决方案。
+* **Cross-ref**: Ax-Int-1 (量子达尔文主义等价性)。
+
+### T-Sel-12 [T1.5.3]: Selection Flow Conservation Theorem (选择流守恒定理)
+**Formal Definition**: 如果在 $L_0$ 中的某些潜在状态（分支）在动力学演化下（由于退相干）形成互不作用的拓扑闭集，那么 $\hat{G}_\theta$ 分配给这些闭集的总选择概率（注意力权重）在演化下守恒。
+$$\text{If } L_0 = \bigsqcup_k \mathcal{B}_k \text{ (decoherent basins), then } \sum_k P_{\hat{G}}(\mathcal{B}_k) = \text{const.}$$
+* **Source**: 灵感来自 Tony Short 在量子力学中对概率公理化推导，在 SRT 中重新解释为跨拓扑绝缘盆地的注意力带宽守恒。
+* **Implication**: 波恩规则是算子面对退相干状态空间的**唯一逻辑自洽的注意力分配策略**，不需要额外的物理假设。这证明了 $P_{Born} = |\langle \psi | \phi \rangle|^2$ 不是经验附加物，而是选择拓扑的数学必然性。
+* **Cross-ref**: Ax-Born-1 (波恩规则作为最优策略)；T-Born-1 (稳定性不等式)。
+
 ---
 
 ## VI. Contextuality & Heisenberg Cut (语境性与切口)
@@ -379,6 +394,14 @@ $$\text{Existence} \propto \prod_{i=1}^{N} \Psi_i(\text{Ghost Operator})$$
 | 欧几里得空间（本体论接口） | 3+1 维、实数域、定域性 |
 
 幽灵算子是"投影仪"，将无限维向量"压"入 3 维流形。
+
+### 1.7 退相干的必要性与不完备性 (Why Decoherence Is Necessary But Insufficient)
+
+当代物理学越来越相信“退相干 + 量子达尔文主义”已经解决了测量问题，试图将观察者完全逐出量子力学。SRT 必须精确指出这一框架的极限。
+
+退相干出色地解释了**为什么某些状态被偏好**（指针态使摩擦最小化）以及**为什么非对角相干性消失**（环境吸收了相位信息）。但它留下了一个致命的未解之谜：**为什么是这个特定结果而不是那个？** 退相干之后，密度矩阵是对角化的——但对角线上的条目是概率，而不是确定性。某个人（或某物）仍然必须进行*选择*。主流的反应要么是退入埃弗雷特分支（所有结果都会发生），要么是宣布这个问题没有意义（QBism）。SRT 提供了唯一认真对待这个问题并提供具体机制的框架：$\hat{G}_\theta$ 执行了选择，支付 $\Psi_f$ 作为承诺某一分支的代价。
+
+Tony Short 的公理化工作提供了独立的数学证实。他的推导表明，如果你接受关于量子力学概率的三个极小公理，波恩规则就会必然得出。用 SRT 的语言来说：$\hat{G}_\theta$ 在退相干盆地间的注意力分配是由 $L_0$ 的拓扑结构唯一决定的——这正是选择流守恒定理。
 
 ---
 

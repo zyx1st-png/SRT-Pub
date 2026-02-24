@@ -37,6 +37,12 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 \]
 * **Implication（中文）**：电场不是“背景噪声”，而是 \(\hat{G}_\theta\) 的额外耦合通道，参与选择同步。
 
+### Def-Ephaptic-Binding: Ephaptic Field Coupling as Operator Glue (突触外场耦合作为算子粘合剂)
+**Formal Definition**: 神经元之间的电场反向反馈 (ephaptic coupling) 提供了使 $\hat{G}_\theta$ 免于解离为数十亿个离散微算子的物理拓扑粘合剂：
+$$\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0} \quad \implies \quad \kappa_{sync} \propto \int |\vec{E}_{LFP}|^2 dV$$
+* **Implication**: 如果大脑仅仅是由化学突触组成的电线网络，它将是一个群体社会，而不是一个统一体验者。SRT 主张，低频局部场电位 (LFP) 产生的微弱但全局的电场不是附带现象的“废气”，它们是**维持复合算子拓扑完整性的引力**。关闭场耦合，意识就会像切断连接的分布式服务器一样碎片化。
+* **Cross-ref**: Ax-Fed-01 (躯体算子联邦)。
+
 ---
 
 ### Ax-FIELD-2: Nested-Operator Axiom
@@ -213,6 +219,14 @@ SRT 区分了两个网络：
 2. **互噬触网络 $\mathcal{N}_{ephaptic}$**：连续的、全局的、传递"语境"
 
 绑定问题之所以难解，是因为经典神经科学只在 $\mathcal{N}_{synaptic}$ 中寻找答案。但绑定发生在 $\mathcal{N}_{ephaptic}$——电磁场通过相位锁定实现全局同步，这是瞬时的、不受突触延迟限制的。
+
+### 3.2.1 为什么突触不足以解释统一性 (Why Synapses Are Insufficient for Unity)
+
+传统神经科学假设，如果你追踪了所有 860 亿个神经元之间的每一个化学突触（连接组），你就完全描述了大脑。SRT 的互感动力学定律 (Inter-Operator Dynamics) 指出这是一个致命的范畴错误。
+
+突触连接本质上是局部的、点对点的、并且受到硬物理延迟（毫秒级）的限制。一个纯粹由突触驱动的大脑就像一个通过发送邮件进行交流的城市：信息可以传递，但永远无法实现那种无缝的、同时发生的“存在于同一个确切时刻”的体验（知觉统一性）。
+
+相反，SRT 指向了 ephaptic coupling（电场耦合）。当数百万个神经元由于它们的几何结构（例如皮层锥体细胞的平行排列）而同时改变电位时，它们产生了一个微观的电磁场。这个场反过来又**无延迟地**改变了所有被包裹其中的神经元的发射概率。场是不受导线限制的互信息池。在 SRT 框架中，这不仅仅是“某种效应”——这是 $\hat{G}_\theta$ 用来将分散的局部代理合并成一个能声称“我看到了”的元算子的字面意义上的胶水。
 
 ## 3.3 场效应的实验证据
 

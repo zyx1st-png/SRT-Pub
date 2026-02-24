@@ -28,10 +28,24 @@ dependency: [SRT-CORE-21, SRT-CORE-22]
 
 ## I. Ontological Detectability (本体论可检测性)
 
-### Ax-Exp-01: Causal Non-Closure
-**Formal Definition**: If physical causality is fully closed, SRT is falsified.
-$$P(\text{Event}|\text{Physical}) < 1 \Rightarrow \exists \ \hat{G}$$
-* **Implication**: 意识的选择偏置必须在统计层面可检出，否则 SRT 失效。
+### Ax-Exp-01: Selection Beyond L₂ Determination (超越 L₂ 决定性的选择)
+**Formal Definition**: If organism behavior is fully determined by brain $L_2$ patterns alone (without irreducible contribution from embodied $L_0$ interaction), SRT's $\hat{G}_\theta$ concept is redundant.
+$$P(\text{Behavior}|\text{Brain}_{L_2}) < 1 \Rightarrow \exists \ \hat{G}_\theta^{embodied}$$
+* **Implication（中文）**：大脑层面的因果闭合与 SRT 完全兼容——大脑作为 $L_2$ 天然因果封闭。需要检测的不是"大脑是否违反物理定律"，而是"有机体整体的选择行为是否仅由大脑 $L_2$ 模式决定，还是受到具身 $L_0$ 交互的不可约贡献"。
+* **Falsification（证伪条件）**：若给定完整的大脑状态（突触权重 + 实时神经活动），有机体行为可被 100% 预测，且具身变量（内感受、代谢状态、环境交互）不提供额外预测信息，则 $\hat{G}_\theta$ 作为超越 $L_2$ 的概念失去必要性。
+
+---
+
+### T-Observer-Bias: Probabilistic Over-interpretation (观察者过度解读定理)
+观察者 $\hat{G}_{obs}$ 在被观察对象中"发现"虚假意义的概率：
+\[
+P(\text{Over-interpret}) = \sigma\!\left(\alpha \cdot d_{obs} + \beta \cdot H(L_0^{target}) - \gamma \cdot E_{grounding}\right)
+\]
+- $d_{obs}$：观察者的寻找意义渴望（越高越容易过度解读）
+- $H(L_0^{target})$：被观察对象的熵/随机性（越混乱越容易被投射）
+- $E_{grounding}$：实验验证的接地能量（抑制项）
+
+* **Implication（中文）**：解释了为何研究人员（高 $d_{obs}$）面对死鲑鱼fMRI噪声（高 $H$）且缺乏严谨基线（低 $E_{grounding}$）时，会产生高概率的解释性幻觉。
 
 ### Ax-Exp-02: Information Mass
 **Formal Definition**: Information erasure carries energetic mass equivalence.
