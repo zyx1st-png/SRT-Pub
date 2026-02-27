@@ -37,7 +37,21 @@
 
 解释：相较 v2，v3 在 valid/test 同时转正，说明“U 的跨组可迁移性”明显改善。
 
+## v4 结果（引入 theta/alpha 先验 + mTOR 联合项）
+运行脚本：`fit_real_pipeline_v4.py`
+
+- omics prior: theta~N(0.604,0.102), alpha~N(1.127,0.400)
+- omega_hat = 0.175
+- theta_hat = 0.600
+- alpha_hat = 0.800
+- P(omega>0) = 0.9982
+- train LR = 31.239
+- valid ΔNLL = +8.679
+- test ΔNLL = +9.555
+
+解释：在加入 mTOR 先验收缩后，omega 略降但仍显著为正，且泛化保持双正，说明“阈值参数解释力”与“SRT 权重解释力”被更干净地拆分。
+
 ## 下一步
 - 用真实 Allen session/block 做分层切分（而非样例）
-- 用真实 mTOR proxy 替代 mock `x_mtor_proxy`
-- 在 v4 加入 `theta/alpha` 层级先验并联合拟合
+- 用真实 mTOR proxy 替代 latent x_hat(sigmoid(u_z))
+- 在 v5 做完整层级贝叶斯（mu_omega, sigma_omega, theta_i, alpha_i 联合后验）
