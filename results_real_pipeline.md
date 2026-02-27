@@ -25,7 +25,19 @@
 - test ΔNLL = -1.254
 - permutation p = 0.0123
 
+## v3 结果（session-block 标准化 + 层级 omega）
+运行脚本：`fit_real_pipeline_v3.py`
+
+- mu_omega_hat = 0.275
+- mu_omega_mean = 0.286
+- P(mu_omega>0) = 1.0000
+- train LR = 31.816
+- valid ΔNLL = +8.536
+- test ΔNLL = +9.765
+
+解释：相较 v2，v3 在 valid/test 同时转正，说明“U 的跨组可迁移性”明显改善。
+
 ## 下一步
 - 用真实 Allen session/block 做分层切分（而非样例）
 - 用真实 mTOR proxy 替代 mock `x_mtor_proxy`
-- 在 v3 加入 `theta/alpha` 层级先验并联合拟合
+- 在 v4 加入 `theta/alpha` 层级先验并联合拟合
