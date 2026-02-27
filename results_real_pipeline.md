@@ -51,7 +51,20 @@
 
 解释：在加入 mTOR 先验收缩后，omega 略降但仍显著为正，且泛化保持双正，说明“阈值参数解释力”与“SRT 权重解释力”被更干净地拆分。
 
+## v5 结果（近似完整层级贝叶斯 / Empirical-Bayes MAP）
+运行脚本：`fit_real_pipeline_v5.py`
+
+- mu_omega = 0.125, sd_omega = 0.080
+- P(mu_omega>0) = 0.9409
+- mu_theta = 0.600, sd_theta = 0.050
+- mu_alpha = 1.000, sd_alpha = 0.283
+- train LR = 32.036
+- valid ΔNLL = +8.056
+- test ΔNLL = +8.991
+
+解释：v5 在泛化上继续稳健（valid/test 双正），但全局 `P(mu_omega>0)` 从 v4 的高置信降到 0.94，说明在层级收缩下，SRT 主效应仍在但证据强度更保守。
+
 ## 下一步
-- 用真实 Allen session/block 做分层切分（而非样例）
-- 用真实 mTOR proxy 替代 latent x_hat(sigmoid(u_z))
-- 在 v5 做完整层级贝叶斯（mu_omega, sigma_omega, theta_i, alpha_i 联合后验）
+- 用真实 Allen session/block + 真实 metadata 重建 block 层级
+- 用真实 omics time-aligned proxy 替代 bridge x_hat(sigmoid(u_z))
+- 在 v6 上 HMC/NUTS（PyMC）做真后验采样，报告 R-hat/ESS/后验相关结构
