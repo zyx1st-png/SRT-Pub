@@ -1744,3 +1744,95 @@
 ### Notes (brief)
 - 已将文章分类（概念提取/概念转向/反拒答通道/多概念联调）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 CSV、ARVC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 15:22 GMT+8] 材料：New Human Neuron Networks Decode Developing Brain Rhythms（https://neurosciencenews.com/developing-brain-rhythm-networks-30147/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“发育期嵌套振荡”分类映射（慢波骨架/快频嵌套/GABA门控/钾通道扰动）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“峰值振荡+宽带背景”分解方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Nested Oscillogenesis Index (NOI)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“2D iPSC 网络振荡成熟路径”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Developmental Nested Oscillations → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 慢波骨架（delta 级） | 发育期全局时间窗 | 低~中 | Open-flow（成熟中） | payable |
++| 快频嵌套（theta/alpha） | 局部协调子结构形成 | 中 | Open/Semi-open | payable |
++| GABA 抑制增强使嵌套提前出现 | 抑制门控促组织化 | 中 | Open-flow | payable |
++| GABA-A 阻断致嵌套下降 | 门控失配导致节律退化 | 低~中 | Semi-open | overloaded |
++| 钾通道扰动导致模式差异 | 兴奋性机制特异签名 | 中（机制依赖） | Open/Semi-open | task-dependent |
++
++**Constraint**: 节律峰值变化与宽带背景变化需分离报告，禁止将二者混作单一“噪声”。
++
++## 【理论边界/防误用声明】
++- 不采纳“2D 模型可直接替代 3D 类器官或体内发育”的推论。
++- 边界：SRT 将 2D 平台定位为高通量互补工具，不是全尺度等价替代。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-Osc-01: Oscillation–Broadband Decomposition
++$$
++P(f)=P_{peak}(f)+P_{bb}(f)
++$$
++其中 \(P_{peak}\) 为节律峰值分量，\(P_{bb}\) 为宽带背景分量。
++
++### Eq-Osc-02: Nested Oscillogenesis Index
++$$
++\mathrm{NOI}=\frac{\sum_{k\in\{\theta,\alpha\}}A_k\cdot C_{k|\delta}}{1+\lambda\,\sigma_{bb}}
++$$
++其中 \(C_{k|\delta}\) 表示快频对慢波相位耦合强度，\(\sigma_{bb}\) 表示宽带波动度。
++
++## 【理论边界/防误用声明】
++- 不采纳“NOI 单指标可完整代表网络成熟度”的推论。
++- 边界：NOI 需与结构、生化与行为 proxy 联合解读。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Nested Oscillogenesis Index - 嵌套振荡发生指数（NOI） 🟡
++**定义**：量化发育期网络中“慢波骨架 + 快频嵌套 + 背景波动”三者关系的综合指标。
++**SRT 用途**：用于比较不同药理、基因背景与培养条件下网络成熟轨迹。
++
++**[Lineage/Source]**：
++- Source context: Sanford Burnham Prebys/UCSD study summarized by Neuroscience News (2026-02-18)
++- Paper: Neurobiology of Disease, DOI: 10.1016/j.nbd.2026.107281
++- SRT mapping: developmental oscillogenesis benchmark in controllable human 2D networks
++
++## 【理论边界/防误用声明】
++- 不采纳“NOI 高即必然对应更优认知功能”的推论。
++- 边界：NOI 描述网络节律组织，不直接等同临床功能结局。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-NOI-1 GABA 比例与嵌套振荡提前检验
++**内容**：提高 GABAergic 神经元比例将使 NOI 上升并提前出现稳定嵌套模式。
++**证伪条件**：GABA 比例提升与 NOI 时间轨迹无显著关系。
++
++### H-NOI-2 峰值-宽带分离增益检验
++**内容**：将峰值振荡与宽带背景分离后，药理干预效应解释力显著提升。
++**证伪条件**：分离分析相较传统总功率分析无增益。
++
++## 【理论边界/防误用声明】
++- 不采纳“体外网络药理响应可直接外推临床疗效”的推论。
++- 边界：需跨模型（2D/3D/体内）与跨物种验证。
+```
+
+### Notes (brief)
+- 已将文章核心分类（嵌套振荡/GABA门控/通道扰动/峰值-宽带分解）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 NOI 含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
