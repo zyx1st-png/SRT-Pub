@@ -88,7 +88,7 @@ python3 scripts/srt_quality_metrics.py
 - Symbol Governance：**PASS**
 - Terminology Governance Coverage：**100%**（核心术语集 4/4）
 - Explainability Completeness：**协议已发布（待按周抽样量化）**
-- Boundary Header Coverage：**48.4%**（31/64，自动粗筛口径；持续提升中）
+- Boundary Header Coverage：**100.0%**（64/64，自动粗筛口径）
 
 ---
 
