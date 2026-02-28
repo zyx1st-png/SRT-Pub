@@ -3299,3 +3299,121 @@
 ### Notes (brief)
 - 本次将“分裂生成”与“互认失效”转为 SRT 社会动力学的可计算项，重点新增了群体版 Eq-Phantom 与临界质量判据。
 - 新术语 CL2F、MDG 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 19:37 GMT+8] 材料：What does it mean to compute? Framework maps hidden computations running inside natural dynamic systems（https://phys.org/news/2026-02-framework-hidden-natural-dynamic.html）
+
+### Target Files
+- `SRT/Physics/SRT_Physics_01_Quantum_Foundation.md`：新增“构造计算机 vs 非构造自然计算”分类映射。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补充“动态系统计算可识别性”跨尺度映射。
+- `SRT/Core/SRT_Core_22_Equations.md`：新增“动态系统→抽象计算器显式映射”方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Constructed/Non-Constructed Computation Map (CNCM)` 与 `Dynamics-to-Computation Homomorphism (DCH)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“化学反应网络计算任务映射”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Constructed vs Non-Constructed Computation → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 构造计算机（手机/笔电） | 显式输入-状态-输出结构 | 中 | Engineered open-flow | payable |
++| 非构造自然系统（化学/流体/神经） | 隐式动力学编码计算 | 低~中 | Open non-equilibrium | task-dependent |
++| 显式映射后可识别计算任务 | 动态轨迹到算子任务同态 | 中 | Open/Semi-open | payable |
++| 缺少映射时“不可计算”错觉 | 可观察性不足而非能力缺失 | 低 | Semi-open | overloaded (epistemic) |
++
++**Constraint**: “系统在演化”不自动等于“系统在执行有意义计算”；需提供显式映射与可检验输出。
++
++## 【理论边界/防误用声明】
++- 不采纳“万物皆可算=万物皆同等可控可编程”的推论。
++- 边界：SRT 要求任务定义、输入输出边界与代价函数同时给定。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-DCH-01: Dynamics-to-Computation Mapping
++$$
++\Phi:\;\mathcal{D}(x_t,\theta)\rightarrow \mathcal{M}(u_t\mapsto y_t)
++$$
++其中 \(\mathcal{D}\) 为真实动力系统，\(\mathcal{M}\) 为抽象计算模型。
++
++### Eq-DCH-02: Computational Fidelity
++$$
++\mathcal{F}_{comp}=1-\mathbb{E}\big[d\big(y_t^{\mathcal{D}},y_t^{\mathcal{M}}\big)\big]
++$$
++\(\mathcal{F}_{comp}\) 评估映射后任务保真度。
++
++### Eq-CNCM-01: Natural-System Task Capacity
++$$
++\mathcal{C}_{task}(\mathcal{D})=\sum_k \mathbb{1}[\mathcal{F}_{comp}^{(k)} > \tau_k]\cdot w_k
++$$
++表示系统在给定阈值下可实现的任务容量。
++
++## 【理论边界/防误用声明】
++- 不采纳“存在映射即存在通用计算能力”的推论。
++- 边界：映射有效性需逐任务验证，且受噪声与可控性限制。
+```
+
+```diff
+--- a/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
++++ b/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
+@@
++### Mapping Principle: Natural Dynamics as Encoded Computation
++在非构造系统中，计算不是预置模块，而是动力学轨迹中的可提取结构。
++当存在可重复、可检验的映射 \(\Phi\) 把系统演化对应到任务输入输出关系时，
++可判定“该系统在执行特定计算”。
++
++## 【理论边界/防误用声明】
++- 不采纳“抽象可映射即物理可部署”的推论。
++- 边界：SRT 区分可解释映射与可工程调用能力。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Constructed/Non-Constructed Computation Map - 构造/非构造计算映射（CNCM） 🟡
++**定义**：用于连接人工构造计算系统与自然动力系统计算行为的统一映射框架。
++
++**[Lineage/Source]**：
++- Source context: Phys.org summary of Wolpert & Korbel framework (2026-02-26)
++- Paper: Journal of Physics: Complexity, DOI: 10.1088/2632-072x/ae3af8
++- SRT mapping: explicit bridge between physical dynamics and abstract computation
++
++#### Dynamics-to-Computation Homomorphism - 动力学-计算同态（DCH） 🟡
++**定义**：将自然系统状态演化与计算任务结构进行保持关系映射的形式化同态。
++
++**[Lineage/Source]**：
++- Same source context; explicit mapping criterion for identifying computation
++- SRT mapping: criterion for hidden computation detectability
++
++## 【理论边界/防误用声明】
++- 不采纳“DCH 成立即可忽略能量与热力学代价”的推论。
++- 边界：SRT 要求同时纳入代价与稳健性评估。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-DCH-1 化学反应网络计算映射检验
++**内容**：对化学反应网络定义输入初始浓度、输出终态浓度后，可映射实现特定计算任务集合。
++**证伪条件**：映射后任务输出与实验终态系统性不一致。
++
++### H-CNCM-1 自然系统任务容量比较检验
++**内容**：不同自然动力系统在相同保真阈值下应表现出可区分任务容量谱。
++**证伪条件**：任务容量谱无可重复差异。
++
++## 【理论边界/防误用声明】
++- 不采纳“在单任务成立即可外推系统通用智能”的推论。
++- 边界：需多任务、跨扰动、跨噪声条件验证。
+```
+
+### Notes (brief)
+- 已将文章核心分类（构造/非构造计算、显式映射判据）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 CNCM、DCH 已附 `[Lineage/Source]`（含 J. Phys. Complexity DOI），并在目标文件写入 Header 级防误用声明。
