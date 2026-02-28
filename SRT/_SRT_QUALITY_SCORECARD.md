@@ -47,14 +47,13 @@ dependency: [_SRT_DOC_ENGINEERING_GUIDE, _SRT_FRONTMATTER_AUDIT, SRT-GLOSSARY]
 ```bash
 ./scripts/run_srt_checks.sh
 python3 scripts/srt_quality_metrics.py
+python3 scripts/srt_explainability_audit.py
 ```
 - Frontmatter lint
 - Link check
 - Symbol governance
 - 质量指标自动快照（输出 `SRT/_SRT_QUALITY_METRICS.md`）
-
-### 半自动/人工抽样
-- 解释链完整率：抽样检查本周新增/重构文档
+- 解释链审计快照（输出 `SRT/_SRT_EXPLAINABILITY_AUDIT.md`）
 
 ---
 
@@ -87,7 +86,7 @@ python3 scripts/srt_quality_metrics.py
 - Broken Link Rate：**0**（`run_srt_checks.sh` 当前通过）
 - Symbol Governance：**PASS**
 - Terminology Governance Coverage：**100%**（核心术语集 4/4）
-- Explainability Completeness：**协议已发布（待按周抽样量化）**
+- Explainability Completeness：**44.2%**（71篇候选，5段结构平均覆盖；见 `_SRT_EXPLAINABILITY_AUDIT.md`）
 - Boundary Header Coverage：**100.0%**（64/64，自动粗筛口径）
 
 ---

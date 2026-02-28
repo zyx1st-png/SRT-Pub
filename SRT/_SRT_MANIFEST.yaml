@@ -83,6 +83,7 @@ domains:
       - "_SRT_FRONTMATTER_AUDIT.md"
       - "_SRT_QUALITY_SCORECARD.md"
       - "_SRT_QUALITY_METRICS.md"
+      - "_SRT_EXPLAINABILITY_AUDIT.md"
       - "_SRT_RELEASE_NOTE_TEMPLATE.md"
       - "_SRT_RELEASE_2026-02.md"
 
