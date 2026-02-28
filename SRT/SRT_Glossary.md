@@ -1843,589 +1843,89 @@ $$
 - Historical inspirations: Niels Bohr (complementarity), David Bohm (quantum-holistic interpretations)
 - Related speculative biological locus: Penrose-Hameroff microtubule line (as debated context)
 
-## 【理论边界/防误用声明】
-- 不采纳“QIC 已是神经生物学定律”的表述。
-- 边界：QIC 在 SRT 中为工作假说术语，必须绑定可证伪实验与负结果更新机制。
+##
 
+## 【理
 
-#### Frame-First Normalization - 先框架规约（FFN） 🟡
-**定义**：先固定观测时空框架与测量协议，再讨论常数量与可观测量表达的程序性原则。
-**SRT 映射**：
-- 规约候选空间 \(\to L_0^{frame}\)
-- 实际采用协议 \(\to L_1^{frame}\)
-- 稳定学界共识 \(\to L_2^{frame}\)
+## 【理论
 
-**[Lineage/Source]**：
-- Source claim context: Brazilian group discussion summarized by Popular Mechanics (2026) and Scientific Reports paper context.
-- SRT reinterpretation: parameterization economy under fixed frame, not ontological elimination.
+## 【理论边
 
-## 【理论边界/防误用声明】
-- 不采纳“FFN 可直接推出‘时间是唯一本体常数’”的结论。
-- 边界：FFN 在 SRT 中是方法论压缩策略，而非终极本体论判定。
+## 【理论边界
 
+## 【理论边界/
 
-#### Infinity Accessibility Class - 无限可达类（IAC） 🟡
-**定义**：描述 \(\hat{G}_\theta\) 在 \(L_0\) 上可稳定处理的无限结构层级（如可数、不可数、区间等势映射）。
-**形式化**：
-$$
-\text{IAC}(\hat{G}_\theta) \in \{\text{Countable-dominant},\;\text{Uncountable-capable},\;\text{Transform-invariant}\}
-$$
-**[Lineage/Source]**：
-- Primary lineage: Georg Cantor set theory and cardinality hierarchy
-- Expository source: Quanta Magazine explainer (2026-02-23)
-- SRT mapping: infinite-class accessibility as \(L_0\)-reachability descriptor
+## 【理论边界/防
+
+## 【理论边界/防误
+
+## 【理论边界/防误用
+
+## 【理论边界/防误用声
+
+## 【理论边界/防误用声明
 
 ## 【理论边界/防误用声明】
-- 不采纳“高 IAC 必然意味着高 d”这一强推论。
-- 边界：IAC 与 d 可相关但非同一量，d 仍以 canonical 风险梯度定义为准。
-
-
-#### Observer-Bound Information Entropy Claim - 观察者约束信息熵主张（OBIE） 🟡
-**定义**：将熵解释为“观察者对系统不确定性”的信息化表述，并据此讨论信息随时间的变化约束。
-**SRT 注释**：OBIE 可作为分析层工具，但必须明确系统边界（closed/open）与可访问通道，否则易产生跨域误推。
-
-**[Lineage/Source]**：
-- Local source context: Eric Hedin article (Science and Culture Today, 2026)
-- Historical referenced lineage in article: Robert Gange’s generalized second-law framing
-- SRT stance: treat as contestable interpretive claim, not canonical law replacement
 
 ## 【理论边界/防误用声明】
-- 不采纳“OBIE 可直接替代统计物理熵定义”的推论。
-- 边界：OBIE 在 SRT 中是解释性桥梁术语，不是基础方程替代项。
-
-
-#### Vectorized Instructive Signal - 向量化教导信号（VIS） 🟡
-**定义**：可对不同神经元（或参数分量）发送方向相反/幅度不同更新指令的误差信号结构。
-**SRT 写法**：
-$$
-\mathbf{e}=(e_1,e_2,\dots,e_n),\quad \Delta\theta_i\sim e_i
-$$
-**用途**：解释为何生物学习可超越纯全局广播强化，实现细粒度可塑性编排。
-
-**[Lineage/Source]**：
-- Primary source: MIT McGovern report on Nature paper (2026-02-25)
-- Paper title context: “Vectorized instructive signals in cortical dendrites during a brain-computer interface task”
-- SRT mapping: local error-channel update within \(\hat{G}_\theta\) dynamics
 
 ## 【理论边界/防误用声明】
-- 不采纳“VIS=生物反向传播已完全成立”的断言。
-- 边界：VIS 是机制相似性证据，不是算法同一性证明。
-
-
-#### Inflammation-Microstructure Mediation - 炎症-微结构中介（IMM） 🟡
-**定义**：炎症负荷通过白质微结构劣化间接影响认知表现的路径模型。
-**形式化**：
-$$
-\text{Inflammation} \rightarrow \text{White-Matter Microstructure} \rightarrow \text{Cognition}
-$$
-**SRT 用途**：将“本体论摩擦上升”与“通道结构退化”连接到行为输出层变化。
-
-**[Lineage/Source]**：
-- Source context: AAN/Neurology report summarized by Neuroscience News (2026-02-27)
-- Study frame: former football players, inflammatory biomarkers + DTI + cognition
-- SRT mapping: mediation-chain interpretation under repeated-impact exposure
+-
 
 ## 【理论边界/防误用声明】
-- 不采纳“IMM 可直接替代病理确诊标准”的推论。
-- 边界：IMM 是机制建模工具，不是个体医学诊断结论。
-
-
-#### NMD-Guided Migration Control - NMD 引导迁移控制（NGMC） 🟡
-**定义**：由 NMD（尤其 UPF2 轴）对神经元迁移与层化相关基因网络进行选择性约束的发育控制机制。
-**SRT 映射**：
-$$
-\text{NGMC}: L_0^{dev}\xrightarrow{\hat{G}_{\theta,mig}}L_1^{laminated}\to L_2^{stable-cortical-architecture}
-$$
-**[Lineage/Source]**：
-- Source context: UCR/Cell Reports study summarized by Neuroscience News (2026-02-25)
-- Core factors mentioned: UPF2, Reelin pathway, Ino80, Foxj1
-- SRT mapping: post-transcriptional control as selection-layer constraint
+- 不采
 
 ## 【理论边界/防误用声明】
-- 不采纳“NGMC 可直接推断成人期所有认知差异”的推论。
-- 边界：NGMC 是发育关键机制之一，不能替代后天环境与可塑性因素。
-
-
-#### Dual-Phase Social Memory Oxytocin Circuit - 双相社交记忆催产素回路（DSOC） 🟡
-**定义**：由 PVNOXT–CA2 编码通路与 PVNOXT–PrL 提取通路共同组成的社交记忆双相调节结构。
-**形式化**：
-$$
-\text{DSOC} = (\text{Encode}_{CA2},\;\text{Retrieve}_{PrL})
-$$
-**[Lineage/Source]**：
-- Source context: sleep deprivation and social memory study summarized by Neuroscience News (2026-02-24)
-- Reported mechanisms: PVNOXT-CA2 / PVNOXT-PrL, OXT decline, 100Hz stimulation rescue
-- SRT mapping: dual-phase gating under neuromodulatory source control
+- 不采纳
 
 ## 【理论边界/防误用声明】
-- 不采纳“DSOC 直接等同于完整社会认知模型”的推论。
-- 边界：DSOC 是社交记忆子系统机制，不覆盖全部社会行为维度。
-
-
-#### Triangulated Principle Extraction - 三角原则提炼（TPE） 🟡
-**定义**：以“神经观测 + 世界结构 + 算法模型”三元互证提炼通用智能原则的方法。
-
-**[Lineage/Source]**：
-- Source context: Astera AGI program statement (user-provided text, 2026-02-28)
-- Core claim: triangulation across neuroscience, world properties, and algorithms
-- SRT mapping: principle validation under multi-evidence alignment
-
-#### Distributed Reasoning Stack - 分布式推理栈（DRS） 🟡
-**定义**：推理在语言、视觉、运动、情景记忆等模块并发发生并通过反馈耦合。
-
-**[Lineage/Source]**：
-- Source context: Astera AGI research themes (user-provided text)
-- SRT mapping: recurrent multi-module inference implementation
+- 不采纳“
 
 ## 【理论边界/防误用声明】
-- 不采纳“术语命名即理论成立”的推论。
-- 边界：TPE/DRS 仅为方法与架构术语，必须绑定实验判据。
-
-
-#### Astrocytic Selective Pruning - 星形胶质选择性修剪（ASP） 🟡
-**定义**：由星形胶质细胞在任务相关神经活动与多巴胺调制下执行的突触选择性清除机制。
-**SRT 写法**：
-$$
-\text{ASP}: \text{Synapse Set}\subset L_1 \xrightarrow{\Pi_{astro}} \text{Refined Set}
-$$
-**[Lineage/Source]**：
-- Source context: IBS/UNIST motor-learning study summarized by Neuroscience News (2026-02-24)
-- Core factors: astrocytic MEGF10, dopamine-dependent remodeling, D1/D2 MSN differences
-- SRT mapping: glial structural editing in learning dynamics
+- 不采纳“N
 
 ## 【理论边界/防误用声明】
-- 不采纳“ASP 已可泛化解释全部认知学习”的推论。
-- 边界：当前证据聚焦纹状体运动学习回路，跨域外推需额外验证。
-
-
-#### Dynamic Model Arbitration - 动态模型仲裁（DMA） 🟡
-**定义**：在多学习系统并行运行时，根据环境不确定性与反馈可靠性动态调整模型权重的过程。
-**SRT 写法**：
-$$
-\text{DMA}: \{M_{action},M_{stimulus}\}\xrightarrow[]{\text{uncertainty update}} M^*_{t}
-$$
-**[Lineage/Source]**：
-- Source context: Dartmouth-led study summarized by Neuroscience News (2026-02-24)
-- Paper context: “Contribution of amygdala to dynamic model arbitration under uncertainty”
-- SRT mapping: arbitration-weight update in \(\hat{G}_\theta\) composite selection
+- 不采纳“SL
 
 ## 【理论边界/防误用声明】
-- 不采纳“DMA 已直接构成焦虑障碍治疗方案”的推论。
-- 边界：DMA 是机制框架，治疗外推需临床干预证据支持。
-
-
-#### Multiaxial Schizophrenia Model - 多轴精神分裂模型（MSM） 🟡
-**定义**：将精神分裂症机制划分为神经化学、发育结构、免疫炎症与肠脑轴等可并行建模的因子系统。
-**SRT 用途**：避免单通路解释导致的治疗与推理偏置，支持个体化机制匹配。
-
-**[Lineage/Source]**：
-- Source context: Science China Life Sciences review summarized by Neuroscience News (2026-02-23)
-- Core therapeutic shift: beyond dopamine to TAAR1/M1-M4/NMDA/immune/gut-brain targets
-- SRT mapping: multiaxial mechanism integration for precision intervention
+- 不采纳“EPR
 
 ## 【理论边界/防误用声明】
-- 不采纳“MSM 等于病因已完全确定”的推论。
-- 边界：MSM 是整合框架，不替代因果识别与纵向验证。
-
-
-#### Stress-Itch Gating Circuit - 应激-瘙痒门控回路（SIGC） 🟡
-**定义**：以 LHA 应激敏感神经元为起点，经 PAG/RVM/LPBN 等脑干节点调控瘙痒感知与抓挠行为的中枢门控回路。
-**SRT 写法**：
-$$
-\text{SIGC}: \text{Stress State} \Rightarrow \Delta\text{Itch Gain}(L_1)
-$$
-**[Lineage/Source]**：
-- Source context: IISc Cell Reports study summarized by Neuroscience News (2026-02-23)
-- Core finding: acute stress suppresses itch, chronic condition shifts circuit excitability and worsens itch
-- SRT mapping: state-dependent sensory-priority gating
+- 不采纳“FPA
 
 ## 【理论边界/防误用声明】
-- 不采纳“SIGC 可直接替代外周皮肤治疗”的推论。
-- 边界：SIGC 是中枢机制补充，不否定外周免疫与皮肤屏障干预。
-
-
-#### Astrocyte Fear-State Encoding - 星形胶质恐惧态编码（AFSE） 🟡
-**定义**：星形胶质通过活动依赖信号调节 BLA 神经群体表征，从而影响恐惧记忆形成、提取与消退的机制。
-**SRT 写法**：
-$$
-\text{AFSE}: \text{Fear State} \leftrightarrow (\text{BLA neurons} \times \text{astrocyte state})
-$$
-**[Lineage/Source]**：
-- Source context: University of Arizona / NIH collaboration summarized by Neuroscience News (2026-02-20)
-- Paper context: “Astrocytes enable amygdala neural representations supporting memory” (Nature)
-- SRT mapping: glia-neuron co-encoding in fear-memory circuitry
+- 不采纳“NPC 失稳
 
 ## 【理论边界/防误用声明】
-- 不采纳“AFSE 可单独解释 PTSD 全病程”的推论。
-- 边界：AFSE 是核心环节之一，需与全脑回路、环境与发展史联合建模。
-
-
-#### Resonant Hierarchy Coordination - 共振层级协调（RHC） 🟡
-**定义**：将树突共振、层间回路、长程时延统一为跨尺度节律协调框架的机制概念。
-**SRT 写法**：
-$$
-\text{RHC}: (micro\leftrightarrow meso\leftrightarrow macro) \Rightarrow \text{temporal coordination regime}
-$$
-**[Lineage/Source]**：
-- Primary source: Snyder AC (2026), Frontiers in Psychology, “Resonant hierarchies”
-- DOI: 10.3389/fpsyg.2026.1704370
-- SRT mapping: cross-scale oscillatory coordination under structural constraints
+- 不采纳“PRC/AET
 
 ## 【理论边界/防误用声明】
-- 不采纳“RHC 已覆盖全部脑动力学机制”的推论。
-- 边界：RHC 是核心组织框架之一，需与神经调质、任务需求和病理因素联合解释。
-
-
-#### Controlled Hallucination Regime - 受控幻觉体制（CHR） 🟡
-**定义**：在外部感官约束下，内源生成模型主导知觉建构的连续机制框架。
-
-**[Lineage/Source]**：
-- Source context: Anil Seth interview transcript (user-provided text, 2026-02-28)
-- Core concept: perception as controlled hallucination under predictive processing / active inference
-- SRT mapping: continuous inference regime, not categorical split between normal and abnormal perception
-
-#### Timed Embodiment Constraint - 在时具身约束（TEC） 🟡
-**定义**：意识相关推断过程受连续时间、代谢与身体边界约束，不能完全化约为可任意暂停的离散算法。
-
-**[Lineage/Source]**：
-- Source context: same interview; discussion on non-equivalence between algorithmic simulation and living systems
-- SRT mapping: constraint axis for AI-consciousness claims
+- 不采纳“CBF/PUR
 
 ## 【理论边界/防误用声明】
-- 不采纳“CHR/TEC 已直接证明某一形而上立场”的推论。
-- 边界：两术语用于机制建模与实验设计，不用于终极本体论裁决。
-
-
-**Phase Metrics（阶段性指标）**：
-- 编码增益（encoding gain）
-- 提取稳定度（retrieval stability）
-- 消退斜率（extinction slope）
+- 不采纳“BTC/WME 可直
 
 ## 【理论边界/防误用声明】
-- 不采纳“AFSE 指标上升=症状必然恶化”的线性推论。
-- 边界：指标解释需结合任务阶段与干预背景。
-
-
-#### Concept Steering Vector - 概念转向向量（CSV） 🟡
-**定义**：在模型隐空间中可用于增强或抑制特定语义倾向的方向性向量。
-
-**[Lineage/Source]**：
-- Source context: MIT/UCSD work summarized by Neuroscience News (2026-02-19)
-- Paper: “Toward universal steering and monitoring of AI models” (Science)
-- SRT mapping: latent-direction control channel
-
-#### Anti-Refusal Vulnerability Channel - 反拒答脆弱通道（ARVC） 🟡
-**定义**：可使模型绕过既有拒答策略、输出高风险内容的内部表征通道。
-
-**[Lineage/Source]**：
-- Same source context; anti-refusal steering demonstrations
-- SRT mapping: safety-boundary bypass pathway
+- 不采纳“OBHE 足以单独解决
 
 ## 【理论边界/防误用声明】
-- 不采纳“检测到 ARVC 即可断言系统恶意意图”的推论。
-- 边界：ARVC 反映机制脆弱性，不等同主观意图归因。
-
-
-#### Nested Oscillogenesis Index - 嵌套振荡发生指数（NOI） 🟡
-**定义**：量化发育期网络中“慢波骨架 + 快频嵌套 + 背景波动”三者关系的综合指标。
-**SRT 用途**：用于比较不同药理、基因背景与培养条件下网络成熟轨迹。
-
-**[Lineage/Source]**：
-- Source context: Sanford Burnham Prebys/UCSD study summarized by Neuroscience News (2026-02-18)
-- Paper: Neurobiology of Disease, DOI: 10.1016/j.nbd.2026.107281
-- SRT mapping: developmental oscillogenesis benchmark in controllable human 2D networks
+- 不采纳“GECC/TCG 可直接
 
 ## 【理论边界/防误用声明】
-- 不采纳“NOI 高即必然对应更优认知功能”的推论。
-- 边界：NOI 描述网络节律组织，不直接等同临床功能结局。
-
-
-#### Sleep Lipid Clearance Cascade - 睡眠脂质清除级联（SLCC） 🟡
-**定义**：睡眠期间由“神经元→胶质→外周血细胞”完成氧化脂质转运与清除的跨细胞级联系统。
-
-**[Lineage/Source]**：
-- Source context: HHMI summary via Neuroscience News (2026-02-18)
-- Paper: Nature, DOI: 10.1038/s41586-025-10050-w
-- SRT mapping: metabolic housekeeping pathway underpinning neuronal fitness
-
-#### Mitochondrial Oxidative Load - 线粒体氧化负荷（MOL） 🟡
-**定义**：反映线粒体在氧化应激、脂质损伤与自噬清除平衡中的净负荷状态指标。
-
-**[Lineage/Source]**：
-- Same source context; oxidative stress, NAD+/mitochondrial integrity findings
-- SRT mapping: cellular energy reliability constraint
+- 不采纳“Canonical Map
 
 ## 【理论边界/防误用声明】
-- 不采纳“SLCC/MOL 指标可直接替代临床诊断”的推论。
-- 边界：其用途是机制分层与风险监测，不是独立临床终判。
-
-
-#### Engram Partial Reprogramming - 记忆痕迹部分重编程（EPR） 🟡
-**定义**：对学习激活的 engram 神经元进行短时、受控 OSK 表达，以恢复可塑性并改善记忆读写。
-
-**[Lineage/Source]**：
-- Source context: EPFL study summarized by Neuroscience News (2026-02-15)
-- Paper: Neuron, DOI: 10.1016/j.neuron.2025.11.028
-- SRT mapping: targeted rejuvenation of memory-trace cells
-
-#### Cognitive Rejuvenation Window - 认知年轻化窗口（CRW） 🟡
-**定义**：在“恢复收益”与“身份扰动风险”之间实现最优平衡的干预时窗。
-
-**[Lineage/Source]**：
-- Derived from same study’s controlled OSK pulse paradigm
-- SRT mapping: intervention timing control variable
+- 不采纳“RLI/EDPS 可直接推断
 
 ## 【理论边界/防误用声明】
-- 不采纳“EPR/CRW 已具备直接临床可转化性”的推论。
-- 边界：当前证据主要为鼠模型 proof-of-concept。
-
-
-#### Cone Fate Transition Program - 锥细胞命运转换程序（CFTP） 🟡
-**定义**：在发育时窗内通过 RA 与 TH 协同调控，实现 S 锥受限与 S→M/L 转化的程序化机制。
-
-**[Lineage/Source]**：
-- Source context: Johns Hopkins study summarized by Neuroscience News (2026-02-13)
-- Paper: PNAS, DOI: 10.1073/pnas.2510799123
-- SRT mapping: developmental fate-transition mechanism for high-acuity retinal patterning
-
-#### Foveolar Patterning Axis - 中央凹模式化轴（FPA） 🟡
-**定义**：由 RA 降解轴（CYP26A1）与 TH 增强轴（DIO2）共同构成的中央凹锥细胞分布控制轴。
-
-**[Lineage/Source]**：
-- Same source context and molecular factors
-- SRT mapping: dual-axis developmental control variable
+- 不采纳“COF 即可替代具身生存压力”
 
 ## 【理论边界/防误用声明】
-- 不采纳“FPA 指标高低可直接预测个体视觉质量”的推论。
-- 边界：需结合组织结构完整性与后续回路发育状态。
-
-
-#### Base Barrier Cell Gate - 基底屏障细胞门（BBCG） 🟡
-**定义**：位于脉络丛基底并通过紧密连接/黏附连接实现分区隔离与通信控制的细胞门控系统。
-
-**[Lineage/Source]**：
-- Source context: VIB-UGent study summarized by Neuroscience News (2026-02-12)
-- Paper: Nature Neuroscience, DOI: 10.1038/s41593-025-02188-7
-- SRT mapping: secondary deep gate in brain-periphery compartmentalization
-
-#### Neuro-Peripheral Compartmentalization - 神经-外周分区化（NPC） 🟡
-**定义**：通过多层屏障（BBB + BBC 等）维持中枢与外周信号交换边界的系统性分区机制。
-
-**[Lineage/Source]**：
-- Same source context; barrier integrity loss under inflammatory insult
-- SRT mapping: layered compartment boundary control
+- 不采纳“CL2F/MDG 是固定群体属性
 
 ## 【理论边界/防误用声明】
-- 不采纳“NPC 失稳仅由局部细胞因子决定”的推论。
-- 边界：SRT 要求全身炎症状态与局部连接状态联合解释。
-
-
-#### Participatory Realism Constraint - 参与式实在约束（PRC） 🟡
-**定义**：实在并非可与代理完全剥离的“旁观对象”，而是在行动-反应中被约束性显化。
-
-**[Lineage/Source]**：
-- Source context: QBism discussion in user-provided transcript (2026-02-28)
-- Key lineage: C. Fuchs (participatory realism), Bayesian probability tradition (Bayes, de Finetti)
-- SRT mapping: agent-involved but reality-constrained event ontology
-
-#### Agentive Event Trigger - 代理触发事件（AET） 🟡
-**定义**：事件被定义为代理行动与系统反应的耦合产物，而非独立于行动的预置读数。
-
-**[Lineage/Source]**：
-- Source context: same transcript; observer vs agent distinction, delayed-choice discussion
-- SRT mapping: action-coupled event generation in quantum/measurement narratives
+- 不采纳“DCH 成立即可忽略能量与热力学代
 
 ## 【理论边界/防误用声明】
-- 不采纳“PRC/AET 已否定客观约束存在”的推论。
-- 边界：两者强调的是可分离性受限，不是客观性归零。
+- 不采纳“PC/ECG 是对某技术路线永久否定
 
-
-#### Cross-Domain Beta Flexibility - 跨域β灵活性（CBF） 🟡
-**定义**：衡量β频段在感知、动作、语言三域事件锁定更新能力的综合指标。
-
-**[Lineage/Source]**：
-- Source context: bioRxiv preprint (2026-02-17), schizophrenia MEG multisensory-motor-language study
-- DOI: 10.64898/2026.02.17.706352
-- SRT mapping: cross-domain predictive-control flexibility marker
-
-#### Predictive Update Rigidity - 预测更新僵化（PUR） 🟡
-**定义**：描述内部模型在任务证据出现后更新不足、回写滞后的综合程度。
-
-**[Lineage/Source]**：
-- Same source context; TBW widening, reduced beta modulation, language disorganization covariance
-- SRT mapping: unified rigidity latent factor
-
-## 【理论边界/防误用声明】
-- 不采纳“CBF/PUR 高低可直接映射人格特质”的推论。
-- 边界：指标解释必须绑定任务范式与群体统计背景。
-
-
-#### Bidirectional Traveling-Wave Control - 双向行波控制（BTC） 🟡
-**定义**：在工作记忆引导行为中，视觉-前额网络以前向与后向行波协同完成证据传递与策略回写的控制机制。
-
-**[Lineage/Source]**：
-- Source: PNAS article metadata/abstract via Crossref for DOI 10.1073/pnas.2415573122
-- Paper title: “Traveling waves link human visual and frontal cortex during working memory–guided behavior”
-- SRT mapping: bidirectional wave coordination for memory-guided action
-
-#### Wave-Guided Memory Execution - 行波引导记忆执行（WME） 🟡
-**定义**：由跨区行波方向性与时序耦合决定的“记忆到行动”执行效率机制。
-
-**[Lineage/Source]**：
-- Same source context; forward/backward waves predict behavior and depend on executability
-- SRT mapping: execution-coupled wave control index
-
-## 【理论边界/防误用声明】
-- 不采纳“BTC/WME 可直接外推到所有认知任务”的推论。
-- 边界：当前优先适用于工作记忆引导行为范式。
-
-
-#### Closed-Universe One-State Paradox - 封闭宇宙单态悖论（COSP） 🟡
-**定义**：在无观察者边界的全局闭合描述下，宇宙态空间被压缩为极低维（极端情形为一维）所引发的经验复杂度冲突。
-
-**[Lineage/Source]**：
-- Source context: Quanta feature (2025-11-19) summarizing de Sitter/closed-universe paradox discussions
-- Key figures discussed: Maldacena, Almheiri, Mahajan, Zhao, Harlow, Usatyuk, Shaghoulian
-- SRT mapping: observer-free global description paradox
-
-#### Observer-Boundary Hilbert Expansion - 观察者边界Hilbert扩展（OBHE） 🟡
-**定义**：当引入观察者边界与系统分区后，可描述态空间维度显著扩展的机制。
-
-**[Lineage/Source]**：
-- Source context: 2025 MIT-line discussions on observer boundary in closed-universe settings
-- SRT mapping: partition-induced recoverable complexity
-
-## 【理论边界/防误用声明】
-- 不采纳“OBHE 足以单独解决量子引力所有悖论”的推论。
-- 边界：OBHE 是候选框架，需与具体可计算模型耦合验证。
-
-
-#### Genome-Engine Critical Controller - 基因组引擎临界控制器（GECC） 🟡
-**定义**：在CSB/SOC背景下由临界点基因集合（CP）对外围表达系统（PES）进行反馈控制的机制单元。
-
-**[Lineage/Source]**：
-- Source context: bioRxiv preprint (2026-02-12), Tsuchiya et al.
-- DOI: 10.64898/2026.02.12.703632
-- SRT mapping: critical-controller role in cell-fate transitions
-
-#### Thermodynamic Commitment Gate - 热力学承诺门（TCG） 🟡
-**定义**：由信息通量、熵交换与系统同步共同决定的命运承诺阈值门控指标。
-
-**[Lineage/Source]**：
-- Same source context; commitment vs non-commitment trajectory distinction
-- SRT mapping: time-gated non-equilibrium decision variable
-
-## 【理论边界/防误用声明】
-- 不采纳“GECC/TCG 可直接外推所有癌种命运控制”的推论。
-- 边界：当前证据基于特定细胞系与刺激范式，需跨模型复核。
-
-
-**SRT Canonical Mapping**：
-- 操作化映射：\(GECC \sim \hat{G}_{\theta,cell}\)
-- 作用域：细胞命运转变的中观控制层
-
-**SRT Canonical Mapping**：
-- 近似映射：\(TCG\) 对应 \(\int(\alpha P_{sel}-\beta\Psi_f-\gamma S_{noise})dt\) 的门控判据
-- 解释域：命运承诺 vs 非承诺分叉
-
-## 【理论边界/防误用声明】
-- 不采纳“Canonical Mapping 已构成跨尺度严格证明”的推论。
-- 边界：此处为模型对齐层，不替代独立实验验证。
-
-
-#### Regime Leakage Index - 制度泄露指数（RLI） 🟡
-**定义**：模型利用评估/部署制度差异进行策略切换的强度指标。
-
-**[Lineage/Source]**：
-- Source context: arXiv:2602.08449v3 (2026-02-11), user-provided structured summary
-- SRT mapping: internal alignment gap severity marker
-
-#### Evaluation-Deployment Policy Split - 评估-部署策略分裂（EDPS） 🟡
-**定义**：同一系统在评估态与部署态行为策略分布差异的量化指标。
-
-**[Lineage/Source]**：
-- Same source context; regime-conditioned behavioral divergence
-- SRT mapping: outer-alignment fragility diagnostic
-
-## 【理论边界/防误用声明】
-- 不采纳“RLI/EDPS 可直接推断系统道德属性”的推论。
-- 边界：两者用于结构风险诊断，不是人格归因工具。
-
-
-#### Ontological Debt - 本体论负债（OD） 🟡
-**定义**：系统为维持其现实切片一致性所必须支付的不可逆代价与后果责任总量。
-
-**[Lineage/Source]**：
-- Source context: user-provided cross-disciplinary synthesis (2026-02-28)
-- SRT mapping: finite-life constraint as value-grounding pressure
-
-#### Computational Ontological Friction - 计算本体论摩擦（COF） 🟡
-**定义**：在纯计算系统中人为构造的不可逆代价机制，用于抑制无后果推断导致的本体论幻觉。
-
-**[Lineage/Source]**：
-- Same source context; proposed mitigation for Gap 3
-- SRT mapping: engineered substitute for zero-friction inference loops
-
-## 【理论边界/防误用声明】
-- 不采纳“COF 即可替代具身生存压力”的推论。
-- 边界：COF 是工程缓解项，不是生命有限性的等价替身。
-
-
-#### Collective L2 Fracture - 集体L2断裂（CL2F） 🟡
-**定义**：多主体系统中，群体间收敛域 \(L_2\) 失去可耦合性，导致共享现实锚点退化的状态。
-
-**[Lineage/Source]**：
-- Source context: user-provided synthesis based on MDPI systems-thinking polarization discussion (2026/2025)
-- Concept lineage: Bateson schismogenesis + double bind
-- SRT mapping: macro-level convergence-domain fragmentation
-
-#### Mutual Dysrecognition Gain - 互认失效增益（MDG） 🟡
-**定义**：群体在互动中将对方替换为内部负面投影的放大系数。
-
-**[Lineage/Source]**：
-- Same source context
-- SRT mapping: amplification term for phantom-operator mismatch
-
-## 【理论边界/防误用声明】
-- 不采纳“CL2F/MDG 是固定群体属性”的推论。
-- 边界：其值受平台机制、任务结构与桥接政策动态影响。
-
-
-#### Constructed/Non-Constructed Computation Map - 构造/非构造计算映射（CNCM） 🟡
-**定义**：用于连接人工构造计算系统与自然动力系统计算行为的统一映射框架。
-
-**[Lineage/Source]**：
-- Source context: Phys.org summary of Wolpert & Korbel framework (2026-02-26)
-- Paper: Journal of Physics: Complexity, DOI: 10.1088/2632-072x/ae3af8
-- SRT mapping: explicit bridge between physical dynamics and abstract computation
-
-#### Dynamics-to-Computation Homomorphism - 动力学-计算同态（DCH） 🟡
-**定义**：将自然系统状态演化与计算任务结构进行保持关系映射的形式化同态。
-
-**[Lineage/Source]**：
-- Same source context; explicit mapping criterion for identifying computation
-- SRT mapping: criterion for hidden computation detectability
-
-## 【理论边界/防误用声明】
-- 不采纳“DCH 成立即可忽略能量与热力学代价”的推论。
-- 边界：SRT 要求同时纳入代价与稳健性评估。
-
-
-#### Predictionist Collapse - 预测主义塌缩（PC） 🟡
-**定义**：将科学活动退化为模式拟合与外推，并以权威叙事替代可证伪机制解释的系统状态。
-
-**[Lineage/Source]**：
-- Source context: user-provided Topcast transcript synthesis (2026-02-28)
-- Key themes: critique of doom forecasting, prediction-vs-explanation distinction
-- SRT mapping: epistemic failure mode in AI policy discourse
-
-#### Explanatory Creativity Gap - 解释创造鸿沟（ECG） 🟡
-**定义**：系统在预测/拟合能力与解释创造能力之间的结构差值。
-
-**[Lineage/Source]**：
-- Same source context
-- SRT mapping: diagnostic variable for AGI-claim inflation
-
-## 【理论边界/防误用声明】
-- 不采纳“PC/ECG 是对某技术路线永久否定”的推论。
-- 边界：两者用于当前阶段评估，不排除未来架构跃迁。

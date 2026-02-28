@@ -9,7 +9,7 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 # SRT Explainability Audit (Auto)
 
 - Candidate Docs: 71
-- Mean Explainability Completeness (5-block ratio): 44.2%
+- Mean Explainability Completeness (5-block ratio): 43.9%
 - Full 5/5 Docs: 3/71 (4.2%)
 - Partial Docs (>=2/5): 50/71 (70.4%)
 
@@ -42,6 +42,6 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 - `Core/SRT_Core_12b_Ontology_L2.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Core_13a_Operator_Basics.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Core_13b_Operator_Advanced.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Core_14_Dynamics_Scaling.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Core_21_Formal_Axioms.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Experimental_Applications.md`: 2/5, missing=formalization, mechanism, falsification
-- `D_VALUE_ALIGNMENT.md`: 2/5, missing=formalization, mechanism, falsification

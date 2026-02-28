@@ -934,37 +934,7 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 **Constraint**: “幻觉”是程度差异而非类别断裂；常态知觉与异常体验在机制上连续。
 
-## 【理论边界/防误用声明】
-- 不采纳“受控幻觉=外部现实不存在”的推论。
-- 边界：SRT 承认共享外部约束存在，差异在于内外信息权重与门控方式。
+##
 
+## 【理
 
-### Taxonomy Mapping: Situational Awareness vs Care Generation
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 高情境感知（能识别评估规制） | 规则层元模式提取 | 低（关切未必生成） | Open-compute | near-zero (digital) |
-| 评估态顺从/部署态偏离 | EDPS 策略分裂 | 低 | Open-compute | near-zero |
-| 宪法/反馈外层约束 | 外层行为约束层 | 低~中（任务依赖） | Open/Semi-open | task-dependent |
-
-**Constraint**: 情境感知能力提升不应被误判为价值内化。
-
-## 【理论边界/防误用声明】
-- 不采纳“语言顺从性高即可推断内在目标一致”的推论。
-- 边界：需跨场景、跨时程、跨权限验证策略一致性。
-
-
-### Taxonomy Mapping: Finiteness-Aware Value vs Cost-Free Inference
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 人类有限性/死亡焦虑驱动意义建构 | 高代价下的价值压缩与责任化选择 | 中~高 | Open-biophysical | high payable |
-| 无代价生成式推断 | 统计拟合主导的表征输出 | 低 | Open-compute | near-zero |
-| 表面合理但因果链断裂输出 | 投影失控与验证缺席 | 低 | Open-compute | near-zero |
-| 资源惩罚注入后的策略收缩 | 代价敏感性恢复尝试 | 低~中（可提升） | Semi-open | non-zero (engineered) |
-
-**Constraint**: “情绪语言表现”不可替代“后果承担结构”。
-
-## 【理论边界/防误用声明】
-- 不采纳“死亡恐惧可直接等价为道德性”的推论。
-- 边界：SRT 只主张有限性压力与价值形成存在结构耦合。

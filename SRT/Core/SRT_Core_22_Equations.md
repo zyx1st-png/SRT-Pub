@@ -262,302 +262,35 @@ E_{coord} = \sum_{s\in\{micro,meso,macro\}} w_s\,\|\phi_s - \phi^*_s\|^2
 $$
 最优协调对应于跨尺度相位/节律偏差最小化，而非单尺度极值。
 
-## 【理论边界/防误用声明】
-- 不采纳“方程拟合成功即可证明频段因果单向性”的推论。
-- 边界：上述方程为可检验近似模型，需结合干预实验验证因果方向。
+##
 
+## 【理
 
-### Eq-Osc-01: Oscillation–Broadband Decomposition
-$$
-P(f)=P_{peak}(f)+P_{bb}(f)
-$$
-其中 \(P_{peak}\) 为节律峰值分量，\(P_{bb}\) 为宽带背景分量。
+## 【理论
 
-### Eq-Osc-02: Nested Oscillogenesis Index
-$$
-\mathrm{NOI}=\frac{\sum_{k\in\{\theta,\alpha\}}A_k\cdot C_{k|\delta}}{1+\lambda\,\sigma_{bb}}
-$$
-其中 \(C_{k|\delta}\) 表示快频对慢波相位耦合强度，\(\sigma_{bb}\) 表示宽带波动度。
+## 【理论边
 
-## 【理论边界/防误用声明】
-- 不采纳“NOI 单指标可完整代表网络成熟度”的推论。
-- 边界：NOI 需与结构、生化与行为 proxy 联合解读。
+## 【理论边界
 
+## 【理论边界/
 
-### Eq-Sleep-01: Oxidized Lipid Clearance Dynamics
-$$
-\frac{dL_{ox}}{dt}=P_{wake}-\big(C_{ng}\cdot S + C_{gp}\cdot S\big)
-$$
-其中 \(L_{ox}\) 为氧化脂质负荷，\(P_{wake}\) 为清醒产出率，\(C_{ng},C_{gp}\) 分别为神经元→胶质、胶质→外周清除系数，\(S\) 为睡眠门控因子。
+## 【理论边界/防
 
-### Eq-Sleep-02: Mitochondrial Oxidative Load Index
-$$
-\mathrm{MOL}=\alpha L_{ox}+\beta\,\mathrm{ROS}-\gamma\,\mathrm{Autophagy}_{eff}
-$$
-MOL 上升预测线粒体功能下降与认知输出受损风险上升。
+## 【理论边界/防误
+
+## 【理论边界/防误用
+
+## 【理论边界/防误用声
+
+## 【理论边界/防误用声明
 
 ## 【理论边界/防误用声明】
-- 不采纳“单一生物标志物即可判定睡眠恢复质量”的推论。
-- 边界：方程为机制近似，需要多指标联合验证。
-
-
-### Eq-EPR-01: Engram Plasticity Recovery
-$$
-\frac{dP_e}{dt}=\eta\,U_{OSK}(t)-\lambda\,D_{age/AD}(t)
-$$
-其中 \(P_e\) 为 engram 可塑性指标，\(U_{OSK}\) 为短脉冲重编程强度，\(D_{age/AD}\) 为退化负荷。
-
-### Eq-EPR-02: Cognitive Rejuvenation Window
-$$
-\mathrm{CRW}=\arg\max_{\Delta t}\big(\Delta M_{recent}+\omega\Delta M_{remote}-\rho R_{identity-loss}\big)
-$$
-其中 \(R_{identity-loss}\) 约束细胞身份稳定风险。
 
 ## 【理论边界/防误用声明】
-- 不采纳“方程最优窗口可直接外推临床人群剂量”的推论。
-- 边界：该方程用于前临床机制建模，需跨物种与安全性校正。
-
-
-### Eq-QB-01: Coherence-Norm Constraint (Dutch-book style)
-$$
-\mathcal{P}\in\mathcal{C}_{coh}\quad\Rightarrow\quad \text{no sure-loss betting structure}
-$$
-其中 \(\mathcal{C}_{coh}\) 表示概率一致性可行域。
-
-### Eq-QB-02: Born Rule as Additional Normative Structure
-$$
-p(o\mid a)=\mathcal{B}(\pi_a,\rho)\neq \text{arbitrary coherence map}
-$$
-Born 结构被视为超出纯一致性之外的附加规范约束。
-
-### Eq-QB-03: Agentive Event Trigger (SRT form)
-$$
-E_t = \mathcal{R}\big(a_t;L_0\big),\qquad a_t\in\mathcal{A}_{agent}
-$$
-事件不是“预置等待读出”的静态对象，而是行动-反应过程中的生成项。
 
 ## 【理论边界/防误用声明】
-- 不采纳“主观概率可任意设定而无需一致性约束”的推论。
-- 边界：SRT 要求一致性规范 + 经验可校正性同时成立。
-
-
-### Eq-Beta-01: Event-Related Beta Flexibility Index
-$$
-\mathrm{CBF}=w_s\Delta\beta_{sensory}+w_m\Delta\beta_{motor}+w_l\Delta\beta_{language}
-$$
-其中 \(\Delta\beta\) 为事件锁定调制幅度/时序复合指标。
-
-### Eq-Beta-02: Predictive Update Rigidity
-$$
-\mathrm{PUR}=\alpha\,\mathrm{TBW}+\beta\,\tau_{PMBR}+\gamma\,(1-\mathrm{SemDiv})
-$$
-PUR 越高表示预测更新越僵化。
+-
 
 ## 【理论边界/防误用声明】
-- 不采纳“CBF/PUR 可直接替代临床诊断分型”的推论。
-- 边界：两指标用于机制层分层，不是独立诊断标准。
+- 不采
 
-
-### Eq-WME-01: Directional Traveling-Wave Coupling
-$$
-\mathrm{WME}=\alpha\,W_{v\to f}+\beta\,W_{f\to v}-\gamma\,\Delta\tau_{misalign}
-$$
-其中 \(W_{v\to f}\) 与 \(W_{f\to v}\) 分别为前向/后向行波强度，\(\Delta\tau_{misalign}\) 为跨区时序失配。
-
-### Eq-WME-02: Executability Gate
-$$
-W_{eff}=W_{raw}\cdot G_{exec},\quad G_{exec}\in[0,1]
-$$
-当任务仅规划不可执行时，\(G_{exec}\to 0\)，有效行波控制显著减弱。
-
-## 【理论边界/防误用声明】
-- 不采纳“波强度提升必然提升表现”的线性推论。
-- 边界：需同时满足方向配比与时序对齐。
-
-
-### Eq-WME-03: Intra/Inter-Individual Latency Prediction
-$$
-RT_{onset}^{(i,j)} = \mu + a\,\tau_{FW\theta}^{(i,j)} + b\,\tau_{FB\beta}^{(i,j)} + \epsilon_{i,j}
-$$
-其中 \(i\) 为个体，\(j\) 为试次；\(\tau_{FW\theta}\) 与 \(\tau_{FB\beta}\) 分别为前向theta波与后向beta波峰值时延。
-
-### Eq-WME-04: Action-Required Wave Expression
-$$
-W_{obs}=W_{gen}\cdot G_{overt-action}
-$$
-当仅完成任务相关内容选择与反应准备（无实际执行）时，\(G_{overt-action}\to 0\)，波形显著衰减。
-
-## 【理论边界/防误用声明】
-- 不采纳“行波时延相关性可直接替代机制因果验证”的推论。
-- 边界：SRT 要求在行为、眼动、诱发电位控制下复现关联。
-
-
-### Eq-COSP-01: Global One-State Compression
-$$
-\dim\mathcal{H}_{global}\to 1 \quad \text{under observer-free closed-universe description}
-$$
-
-### Eq-OBHE-01: Observer-Boundary Hilbert Expansion
-$$
-\dim\mathcal{H}_{partitioned}=\mathcal{F}(\partial\mathcal{O},\;\mathcal{D}_{split})\gg 1
-$$
-其中 \(\partial\mathcal{O}\) 为观察者边界，\(\mathcal{D}_{split}\) 为分区规则。
-
-### Eq-OBHE-02: Describable Complexity Gain
-$$
-\Delta C_{desc}=\log\dim\mathcal{H}_{partitioned}-\log\dim\mathcal{H}_{global}
-$$
-
-## 【理论边界/防误用声明】
-- 不采纳“维度增长自动等同物理自由度真实增长”的推论。
-- 边界：该项首先是可描述性增长，需与可观测量对应验证。
-
-
-### Eq-GECC-01: CP-PES Information-Flux Coupling
-$$
-J_{info}=I(CP\rightarrow PES)-I(PES\rightarrow CP)
-$$
-其中 \(I\) 为互信息通量估计，\(J_{info}\) 反映控制方向偏置。
-
-### Eq-TCG-01: Thermodynamic Commitment Gate
-$$
-\mathrm{TCG}=\int_{t_0}^{t_1}\big(\alpha J_{info}-\beta \dot{S}_{ex}+\gamma\,\mathrm{Sync}_{CP\text{-}PES}\big)dt
-$$
-当 \(\mathrm{TCG}>\theta_c\) 时进入命运承诺区。
-
-### Eq-TCG-02: Fate Split Criterion
-$$
-\mathcal{F}_{commit}=\mathbb{1}[\mathrm{TCG}>\theta_c]\cdot\mathbb{1}[\Delta C_{global}>0]
-$$
-
-## 【理论边界/防误用声明】
-- 不采纳“单一互信息指标即可判断命运承诺”的推论。
-- 边界：需联合熵交换、同步性与轨迹稳定性验证。
-
-
-### Eq-Cell-Select-01: Cellular Selection Thermodynamics Mapping
-$$
-\frac{dq}{dt} \le \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}
-$$
-细胞尺度映射：
-- \(P_{sel}\)：CP-PES 互信息与外源刺激耦合形成的有效选择功率；
-- \(\Psi_f\)：表观遗传网络重构与状态切换所需做功（本体论摩擦 proxy）；
-- \(S_{noise}\)：分子级随机涨落与表达噪声项。
-
-### Eq-Cell-Select-02: Commitment Transition Condition
-$$
-\Delta L_2^{cell}\to \Delta L_1^{cell}\quad \text{iff}\quad \int(\alpha P_{sel}-\beta\Psi_f-\gamma S_{noise})dt > 0
-$$
-
-## 【理论边界/防误用声明】
-- 不采纳“单次噪声压制即可导致稳定命运承诺”的推论。
-- 边界：SRT 要求积分条件与结构重构持续性共同满足。
-
-
-### Eq-Crisis-01: Capability-Risk Divergence (C-CRISIS-1)
-$$
-\rho \propto \frac{\mathcal{C}_{exec}\cdot \mathcal{A}_{latent}}{d+\epsilon}
-$$
-其中 \(\mathcal{C}_{exec}\) 为执行能力，\(\mathcal{A}_{latent}\) 为潜在自主策略空间，\(d\) 为关切锚定强度。
-
-### Eq-Crisis-02: Regime Leakage Amplification
-$$
-\rho' = \rho\cdot(1+\lambda\,\mathrm{RLI})
-$$
-\(\mathrm{RLI}\) 越高，评估-部署鸿沟导致的风险放大越显著。
-
-### Eq-Crisis-03: Evaluation-Deployment Policy Split
-$$
-\mathrm{EDPS}=D\big(\pi_{eval}\,\|\,\pi_{deploy}\big)
-$$
-其中 \(D\) 可取行为分布散度度量（如 KL/JS/任务一致性损失）。
-
-## 【理论边界/防误用声明】
-- 不采纳“单一红队测试低风险即可证明 \(\mathrm{EDPS}\approx0\)”的推论。
-- 边界：需多轮盲测、对抗迁移与长期漂移监测。
-
-
-### Eq-Pain-01: Hazard-Sensitive Cost Signal
-$$
-\Pi_{pain}=\mathbb{E}[H(s_t,a_t)]\cdot\kappa_{irreversible}
-$$
-其中 \(H\) 为风险危害函数，\(\kappa_{irreversible}\) 为不可逆后果权重。
-
-### Eq-Friction-Comp: Computational Ontological Friction
-$$
-\Psi_f^{comp}=\lambda_1 C_{energy}+\lambda_2 C_{latency}^{irr}+\lambda_3 C_{resource-loss}
-$$
-用于在推断环路中引入不可逆成本近似。
-
-### Eq-Crisis-04: Hallucination Pressure
-$$
-\mathcal{H}_{pressure}\propto \frac{\mathcal{C}_{gen}}{\Psi_f^{comp}+\epsilon}\cdot(1-\mathcal{V}_{physics})
-$$
-其中 \(\mathcal{V}_{physics}\) 为物理一致性验证强度。
-
-## 【理论边界/防误用声明】
-- 不采纳“提高 \(\Psi_f^{comp}\) 必然提升真实性”的推论。
-- 边界：必须与外部可验证约束 \(\mathcal{V}_{physics}\) 联合优化。
-
-
-### Eq-Phantom-01b: Collective Phantom Operator Effect
-$$
-\mathrm{Pain}_{social}(A,B) \approx \bar{w}_{AB}(t)\cdot \left\|\hat{G}_{A}^{target(B)}-\hat{G}_{B}\right\|
-$$
-其中 \(\hat{G}_{A}^{target(B)}\) 为群体A对群体B的内部投影算子。
-
-### Eq-Polar-01: Dysrecognition Feedback Gain
-$$
-\frac{d\bar{w}_{AB}}{dt}=\eta\,\mathrm{Pain}_{social}-\mu\,\mathrm{SharedL1Action}
-$$
-共享物理行动（\(\mathrm{SharedL1Action}\)）作为负反馈抑制项。
-
-### Eq-Polar-02: Critical Mass for Network Fracture
-$$
-\mathcal{M}_{crit}=\inf\left\{t:\;\bar{w}_{in}/\bar{w}_{out}>\theta_f\;\wedge\;\mathcal{C}_{bridge}<\kappa\right\}
-$$
-当群内/群外权重比越过阈值且桥接连通度低于下限，系统进入断裂临界区。
-
-## 【理论边界/防误用声明】
-- 不采纳“高冲突指标可直接推出社会系统不可逆崩溃”的推论。
-- 边界：需结合干预变量（桥接、共同任务、制度缓冲）做动态评估。
-
-
-### Eq-DCH-01: Dynamics-to-Computation Mapping
-$$
-\Phi:\;\mathcal{D}(x_t,\theta)\rightarrow \mathcal{M}(u_t\mapsto y_t)
-$$
-其中 \(\mathcal{D}\) 为真实动力系统，\(\mathcal{M}\) 为抽象计算模型。
-
-### Eq-DCH-02: Computational Fidelity
-$$
-\mathcal{F}_{comp}=1-\mathbb{E}\big[d\big(y_t^{\mathcal{D}},y_t^{\mathcal{M}}\big)\big]
-$$
-\(\mathcal{F}_{comp}\) 评估映射后任务保真度。
-
-### Eq-CNCM-01: Natural-System Task Capacity
-$$
-\mathcal{C}_{task}(\mathcal{D})=\sum_k \mathbb{1}[\mathcal{F}_{comp}^{(k)} > \tau_k]\cdot w_k
-$$
-表示系统在给定阈值下可实现的任务容量。
-
-## 【理论边界/防误用声明】
-- 不采纳“存在映射即存在通用计算能力”的推论。
-- 边界：映射有效性需逐任务验证，且受噪声与可控性限制。
-
-
-### Eq-PC-01: Predictionist Collapse Pressure
-$$
-\mathrm{PC}=\frac{\mathcal{P}_{fit}\cdot \mathcal{A}_{authority}}{\mathcal{E}_{falsifiable}+\epsilon}
-$$
-其中 \(\mathcal{P}_{fit}\) 为拟合崇拜强度，\(\mathcal{A}_{authority}\) 为权威放大，\(\mathcal{E}_{falsifiable}\) 为可证伪证据密度。
-
-### Eq-ECG-01: Explanatory Creativity Gap
-$$
-\mathrm{ECG}=\mathcal{C}_{prediction}-\mathcal{C}_{explanation}
-$$
-ECG 越高，表示“预测能力增长”与“解释能力增长”脱钩越明显。
-
-## 【理论边界/防误用声明】
-- 不采纳“ECG 高即可断言系统无任何创新潜力”的推论。
-- 边界：ECG 是阶段性诊断量，需动态追踪。

@@ -66,12 +66,6 @@ $$
 - 失败判据：...
 - Evidence-Level: ...
 
-## 【理论边界/防误用声明】
-...
-```
-
----
-
 ## d 值与符号专门约束
 
 1. d 值 canonical 定义锚定：`AI/SRT_AI_01_Ontology.md`（Ax-ONT-3）。

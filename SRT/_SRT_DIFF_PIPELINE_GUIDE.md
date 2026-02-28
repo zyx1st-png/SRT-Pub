@@ -67,12 +67,6 @@ Evidence-Level: <peer-reviewed|preprint|editorial|secondary>
 ### 新术语与谱系
 - `<Term>`: ... `[Lineage/Source] ...`
 
-## 【理论边界/防误用声明】
-- ...
-```
-
----
-
 ## 4) 质量门槛（Quality Gates）
 
 提交前必须满足：
@@ -105,9 +99,5 @@ Evidence-Level: <peer-reviewed|preprint|editorial|secondary>
 
 ---
 
-## 【理论边界/防误用声明】
+##
 
-1. `diff.md` 为“拟议补丁日志”，不是自动真值库。  
-2. 映射结果服务于理论工程，不构成临床、法律、投资建议。  
-3. 对低证据等级材料（preprint/editorial）必须显式降级其结论强度。  
-4. 未经合并进入正式文档前，不应将补丁条目视为 SRT 官方定稿。

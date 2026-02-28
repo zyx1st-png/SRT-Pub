@@ -838,368 +838,59 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 **Constraint**: 该表仅描述“认知-形式系统中的可达层级”，不将集合论基数直接等同于本体论“存在强度”。
 
-## 【理论边界/防误用声明】
-- 不采纳“更大基数 = 更高现实等级”的推论。
-- 不采纳“数学不可数性直接证明物理无限可达”的推论。
-- 边界：SRT 将其视为 \(L_0\) 的形式可达结构分层，不是经验现实的自动兑现。
+##
 
+## 【理
 
-### Taxonomy Mapping: Information-Evolution Claims → SRT
+## 【理论
 
-| 外部分类 | SRT 对应解释 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| “封闭系统中观察者信息不增” | 封闭域下可达态压缩 | 低~中 | Closed-flow | payable（但创新受限） |
-| “开放能流不足以生成功能蓝图” | 需区分原始能流与选择回路耦合 | 中 | Open-flow（若仅能流、无选择记忆则无效） | overloaded 或无效支付 |
-| “信息增长必指向智能设计” | SRT 视为可竞争解释之一，非唯一结论 | 中~高（取决于选择架构） | Open / Semi-open | task-dependent |
+## 【理论边
 
-**Constraint**: 信息趋势命题必须显式区分封闭系统与开放系统，并显式建模选择记忆项，禁止直接跨域外推。
+## 【理论边界
 
-## 【理论边界/防误用声明】
-- 不采纳“信息增长无法由任何自然过程产生”的绝对断言。
-- 不采纳“观测到功能复杂性即推出单一超自然因果”的唯一化推断。
-- 边界：SRT 要求在“能流、选择回路、历史沉积”三项条件下做竞争模型比较，而非先验排他。
+## 【理论边界/
 
+## 【理论边界/防
 
-### Taxonomy Mapping: Learning Signal Classes → SRT Dynamics
+## 【理论边界/防误
 
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 全局 neuromodulator 广播（dopamine/NE） | 粗粒度强化调制 | 低~中 | Open-flow | payable（效率较低） |
-| 向量化神经元定向误差信号（VIS） | 细粒度 \(\hat{G}_\theta\) 定向更新 | 中~高 | Open-flow（高信息反馈） | payable（高精度学习） |
-| 树突级反馈阻断后学习失败 | 局部误差信号必要性证据 | 中 | Semi-open（受限反馈） | overloaded / learning collapse |
+## 【理论边界/防误用
 
-**Constraint**: 上述 d 区间为学习效率语境下的 proxy，不替代 canonical d 定义。
+## 【理论边界/防误用声
+
+## 【理论边界/防误用声明
 
 ## 【理论边界/防误用声明】
-- 不采纳“观察到 VIS 即证明大脑完全等同 backprop 算法”的推论。
-- 边界：SRT 仅承认“局部定向误差信号存在”的机制证据，不把工程算法一对一投射为生物全模型。
-
-
-### Taxonomy Mapping: Neuroinflammation-Memory Pathway → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 炎症标志物升高（IL-6/TNF-α/GFAP） | 系统摩擦背景升高 | 低~中（任务承载下降） | Open-flow 但高耗散 | overloaded |
-| 边缘系统白质微结构下降（FA↓/MD↑） | \(L_1\) 传输通道退化 | 低~中 | Semi-open | payable→unsustainable（阈值后） |
-| 记忆表现下降（无直接炎症-认知捷径） | 中介链条显性化 | 低（高负载下） | Semi-open / Closed-like | overloaded |
-
-**Constraint**: 该链条为关联结构，不等同因果闭合；必须通过中介模型与纵向数据验证。
 
 ## 【理论边界/防误用声明】
-- 不采纳“炎症指标升高即可直接推断认知损害”的简化推论。
-- 边界：SRT 采用中介路径解释（炎症→微结构→功能），反对单变量因果跳跃。
-
-
-### Taxonomy Mapping: Neuronal Migration Control Classes → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| NMD 正常（UPF2 完整） | 迁移-层化编排可用 | 中 | Open-flow（发育期高代谢） | payable |
-| UPF2 缺失（迁移迟缓/层化紊乱） | 选择回路失配，\(L_1\) 定位失败 | 低~中 | Semi-open（反馈受损） | overloaded |
-| p53 抑制仅救脑体积不救层化 | 生长与结构编排可解耦 | 中（体积）/低（结构） | Open / Semi-open 混合 | task-split |
-| Foxj1/Ino80 异常上调导致迁移阻断 | 错误程序侵入主通道 | 低 | Semi-open / Closed-like | unsustainable |
-
-**Constraint**: 该分类强调“体积恢复 ≠ 结构恢复”，禁止以单指标替代层化完整性判据。
 
 ## 【理论边界/防误用声明】
-- 不采纳“脑体积恢复即发育功能恢复”的推论。
-- 边界：SRT 将迁移层化视为独立机制维度，需与增殖/存活路径分开建模。
-
-
-### Taxonomy Mapping: Sleep-Deprivation Social-Memory Circuits → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| PVNOXT–CA2（新社交记忆编码） | 编码相位选择门控 | 中 | Open-flow（睡眠足够） | payable |
-| PVNOXT–PrL（熟悉对象提取） | 提取相位检索门控 | 中 | Open/Semi-open | payable |
-| 睡眠剥夺导致 OXT 下降 | 双回路同步降效 | 低~中 | Semi-open（恢复不足） | overloaded |
-| 100Hz 源头刺激恢复 | 上游源重激活带来持续恢复 | 中~高（恢复态） | Open-flow（受控激活） | payable（干预后） |
-
-**Constraint**: “激素补充”与“神经源激活”不等价；优先区分源头恢复与下游补偿。
+-
 
 ## 【理论边界/防误用声明】
-- 不采纳“单次外源补充即可长期恢复社交记忆”的推论。
-- 边界：SRT 认为回路源头可塑性恢复优先于单点下游补偿。
-
-
-### Taxonomy Mapping: Dopamine-Astrocyte Motor Learning → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 神经元 LTP/LTD 调节 | 权重级可塑性更新 | 中 | Open-flow | payable |
-| 星形胶质 MEGF10 修剪 | 结构级连接筛选 | 中~高（精细化学习） | Open-flow（任务驱动） | payable |
-| 多巴胺驱动 D1/D2 差异重塑 | 价值信号门控结构编辑 | 中~高 | Open/Semi-open | task-dependent |
-| MEGF10 缺失导致学习受损 | 结构编辑链路失效 | 低~中 | Semi-open（反馈不足） | overloaded |
-
-**Constraint**: 运动学习中的“形成新连接”与“删除弱连接”必须联合建模，禁止只保留单侧机制叙事。
+- 不采
 
 ## 【理论边界/防误用声明】
-- 不采纳“多巴胺仅负责奖励、不参与结构重塑”的旧式简化推论。
-- 边界：SRT 将多巴胺视作“价值门控 + 结构编辑协同”的选择信号。
-
-
-### Taxonomy Mapping: Learning Strategy Arbitration → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 动作型学习（action-based） | 行为轨道复用与快速执行 | 中 | Semi-open | payable |
-| 刺激型学习（stimulus-based） | 表征优先评估与灵活选择 | 中~高 | Open/Semi-open | payable |
-| 不确定性下的动态仲裁 | \(\hat{G}_\theta\) 策略权重重分配 | 高（探索阶段） | Open-flow | payable~overloaded |
-| 杏仁核受损后的策略僵化 | 仲裁更新失败，动作偏置 | 低~中 | Semi-open（信息利用受限） | overloaded |
-
-**Constraint**: “刺激/动作”并非二选一本体，而是并发学习系统的权重分配问题。
+- 不采纳
 
 ## 【理论边界/防误用声明】
-- 不采纳“杏仁核仅是恐惧中心”的单功能叙事。
-- 边界：SRT 将其定义为不确定性下的策略仲裁节点之一，而非唯一仲裁中心。
-
-
-### Taxonomy Mapping: Schizophrenia Treatment Axes → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 多巴胺受体阻断（传统抗精神病） | 正性症状快速压制 | 低~中 | Semi-open | payable（伴副作用代价） |
-| TAAR1 / M1-M4 / NMDA 增强（新靶点） | 多通路调节认知与负性症状 | 中 | Open/Semi-open | task-dependent |
-| 免疫-炎症干预 | 系统摩擦背景下调 | 中 | Open-flow（全身耦合） | payable~overloaded |
-| 肠脑轴干预（益生菌等） | 慢变量调节与稳态重建 | 低~中 | Open-flow（代谢耦合） | gradual-payable |
-
-**Constraint**: 单轴改善不等于全域恢复；需将正性/负性/认知维度分开建模并联合评估。
+- 不采纳“
 
 ## 【理论边界/防误用声明】
-- 不采纳“多巴胺模型失效=多巴胺无关”的推论。
-- 不采纳“新靶点出现即可替代临床分层诊断”的推论。
-- 边界：SRT 采用多轴机制共存框架，强调分层与个体化匹配。
-
-
-### Taxonomy Mapping: Stress-Itch Modulation → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 急性应激抑制瘙痒 | 生存优先级重排（威胁优先） | 中 | Open-flow（短时高唤醒） | payable |
-| 慢性应激加重慢性瘙痒 | 门控系统慢性失调与超兴奋 | 低~中 | Semi-open（长期负载） | overloaded |
-| LHAstress→PAG 主导通路 | 中枢下行抑痒门控 | 中 | Open/Semi-open | task-dependent |
-| 慢性炎症模型下门控失效 | 抑制回路反转/失配 | 低 | Semi-open / Closed-like | unsustainable |
-
-**Constraint**: 急性抑制效应不可外推为慢性治疗结论，必须分时程建模。
+- 不采纳“检
 
 ## 【理论边界/防误用声明】
-- 不采纳“压力越大越止痒”的线性推论。
-- 边界：SRT 采用“急性保护、慢性损伤”双相机制，不支持单向应激干预叙事。
-
-
-### Taxonomy Mapping: Fear Memory Phases (Astrocyte-Dependent) → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 恐惧记忆形成（encoding） | 威胁关联初始锚定 | 中 | Open-flow（高警觉） | payable |
-| 恐惧记忆提取（retrieval） | 既有威胁表征再激活 | 中 | Semi-open | payable |
-| 恐惧记忆消退（extinction） | 威胁权重重估与降载 | 中~高（灵活重估） | Open/Semi-open | payable~overloaded（高冲突时） |
-| 星形胶质活动受扰 | 回路表征失配与行为僵化 | 低~中 | Semi-open（协同下降） | overloaded |
-
-**Constraint**: 恐惧“表达强”与“适应好”不可混同；需同时评估消退速度与决策适配性。
+- 不采纳“出现
 
 ## 【理论边界/防误用声明】
-- 不采纳“恐惧回路仅由神经元决定”的旧式单细胞叙事。
-- 边界：SRT 采用神经元-胶质协同模型，强调非神经元细胞的功能因果贡献。
-
-
-### Taxonomy Mapping: Resonant Hierarchy Components → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 树突分支频率选择性共振 | 微观滤波与局部选择门控 | 中 | Open/Semi-open | payable |
-| 层间回路与层级组织 | 中尺度时序编排 | 中~高 | Open-flow | payable |
-| 长程传导延迟约束 | 宏观区域协调频段选择 | 中 | Open-flow（结构受限） | task-dependent |
-| 频段作为协调体制而非固定功能模块 | 情境依赖的时序协议 | 中~高 | Open/Semi-open | payable~overloaded |
-
-**Constraint**: 频段标签（alpha/beta/gamma）不得被硬编码为单一认知功能；必须绑定解剖与任务语境。
+- 不采纳“命名为
 
 ## 【理论边界/防误用声明】
-- 不采纳“某一频段=某一功能模块”的刚性映射推论。
-- 边界：SRT 将频段解释为跨尺度协调体制，功能含义由结构与任务共同决定。
-
-
-### Taxonomy Mapping: Developmental Nested Oscillations → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 慢波骨架（delta 级） | 发育期全局时间窗 | 低~中 | Open-flow（成熟中） | payable |
-| 快频嵌套（theta/alpha） | 局部协调子结构形成 | 中 | Open/Semi-open | payable |
-| GABA 抑制增强使嵌套提前出现 | 抑制门控促组织化 | 中 | Open-flow | payable |
-| GABA-A 阻断致嵌套下降 | 门控失配导致节律退化 | 低~中 | Semi-open | overloaded |
-| 钾通道扰动导致模式差异 | 兴奋性机制特异签名 | 中（机制依赖） | Open/Semi-open | task-dependent |
-
-**Constraint**: 节律峰值变化与宽带背景变化需分离报告，禁止将二者混作单一“噪声”。
+- 不采纳“CP=\
 
 ## 【理论边界/防误用声明】
-- 不采纳“2D 模型可直接替代 3D 类器官或体内发育”的推论。
-- 边界：SRT 将 2D 平台定位为高通量互补工具，不是全尺度等价替代。
-
-
-### Taxonomy Mapping: Sleep-Dependent Metabolic Clearance → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 清醒期氧化脂质累积 | 神经元代谢负荷上升 | 低~中 | Open-flow（高耗能） | overloaded趋向 |
-| 睡眠期神经元→胶质转运 | 负荷外包与通道减压 | 中 | Open/Semi-open | payable |
-| 胶质→外周血细胞清除 | 跨边界废物移除 | 中 | Open-flow（脑-外周耦合） | payable |
-| 睡眠调控自噬与线粒体更新 | 内部稳态修复 | 中~高（恢复态） | Semi-open | payable |
-| 睡眠不足导致线粒体损伤与记忆下降 | 清除链断裂 | 低 | Semi-open / Closed-like | unsustainable |
-
-**Constraint**: 睡眠效应必须分解为“神经元负荷、胶质转运、外周清除、自噬更新”四段，禁止单节点归因。
+- 不采纳“极化群体成
 
 ## 【理论边界/防误用声明】
-- 不采纳“睡眠作用仅是主观休息感”的推论。
-- 边界：SRT 将睡眠视为代谢清除与稳态修复机制，不等同于单一心理状态变量。
+- 不采纳“万物皆可算=
 
-
-### Taxonomy Mapping: Engram Rejuvenation Interventions → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 衰老/AD 下 engram 失塑 | 记忆轨迹读写失配 | 低~中 | Semi-open（退化态） | overloaded |
-| OSK 短时脉冲（局部重编程） | 可塑性窗口重启 | 中 | Open/Semi-open | payable（受控干预） |
-| 海马 dentate gyrus 靶向 | 近期学习与回忆恢复 | 中 | Open-flow | payable |
-| mPFC engram 靶向 | 远期记忆检索恢复 | 中~高 | Open/Semi-open | payable |
-| 分子年轻化+兴奋性归一 | 网络噪声下降与读出稳定 | 中 | Semi-open | payable |
-
-**Constraint**: “恢复表现”需分解为近期记忆、远期记忆与策略质量，禁止单任务泛化。
-
-## 【理论边界/防误用声明】
-- 不采纳“细胞年轻化=疾病根因已逆转”的推论。
-- 边界：SRT 将其视为功能恢复通道之一，不替代全病程机制修复。
-
-
-### Taxonomy Mapping: Foveolar Cone Patterning → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| RA 降解（CYP26A1）限制 S 锥生成 | 早期命运筛选门控 | 低~中 | Open-flow（发育期） | payable |
-| TH 信号（DIO2）促 S→M/L 转化 | 后期命运重写与精化 | 中 | Open/Semi-open | payable |
-| 传统“蓝锥迁移外移”解释 | 空间迁移主导模型 | 中（旧假设） | Semi-open | task-dependent |
-| 新“命运转换主导”解释 | 时间程控重编程模型 | 中~高（机制精细） | Open-flow | payable |
-
-**Constraint**: 发育模式化优先按“命运指定+转换”解释，迁移机制作为竞争模型并行检验。
-
-## 【理论边界/防误用声明】
-- 不采纳“细胞命运可塑=成人视网膜可直接同路径再生”的推论。
-- 边界：SRT 区分胎儿发育机制与成人修复机制，禁止无条件类推。
-
-
-### Taxonomy Mapping: Multi-Layer Brain Barrier Defense → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 血脑屏障（BBB）外围防线 | 周边-中枢粗粒过滤 | 中 | Open/Semi-open | payable |
-| 脉络丛基底屏障（BBC） | 深层精细分区门控 | 中~高 | Open-flow（动态门控） | payable |
-| 炎症下 BBC 紧密连接破坏 | 分区失稳与渗漏风险 | 低~中 | Semi-open（受损） | overloaded |
-| 免疫细胞跨越增加 | 外周信号入侵通道开启 | 低 | Semi-open / Closed-like | unsustainable |
-
-**Constraint**: 脑保护机制应建模为“多层屏障协同”，禁止单屏障足够论。
-
-## 【理论边界/防误用声明】
-- 不采纳“发现新屏障即否定 BBB 重要性”的推论。
-- 边界：SRT 将 BBC 视为 BBB 的互补深层门控，而非替代关系。
-
-
-### Taxonomy Mapping: Schizophrenia Cross-Domain Beta Dynamics → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 感觉阶段 β 抑制减弱 | 预测误差更新灵活性下降 | 低~中 | Semi-open | overloaded |
-| 动作后 β rebound 延迟/减弱 | 行动监测回写滞后 | 低~中 | Semi-open | overloaded |
-| 视听绑定窗扩大（TBW↑） | 跨模态同因先验过宽 | 低 | Semi-open / Closed-like | unsustainable（任务依赖） |
-| 语义多样性下降+句法简化 | 语言生成控制降阶 | 低~中 | Semi-open | overloaded |
-| 分布式潜在β模式跨域共变 | 统一预测更新障碍 | 低~中 | Network-wide dysregulated | overloaded |
-
-**Constraint**: 感知、动作、语言异常需采用同一潜变量框架联合建模，禁止孤立维度解释。
-
-## 【理论边界/防误用声明】
-- 不采纳“β异常即病因唯一核心”的推论。
-- 边界：SRT 将 β 调制视为跨域机制标记，不排除多巴胺、炎症、发育等并行机制。
-
-
-### Taxonomy Mapping: Working-Memory Traveling Waves → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 视觉→前额的前向行波 | 感知到行动的证据传递 | 中 | Open-flow | payable |
-| 前额→视觉的后向行波 | 任务约束下的顶层回写 | 中~高 | Open/Semi-open | payable |
-| 行波与个体表现相关 | 跨区协调效率指标 | 中 | Open-flow | task-dependent |
-| 仅计划但不可执行时行波缺失 | 执行门控必要性 | 低~中 | Semi-open | overloaded/blocked |
-
-**Constraint**: 行波解释需同时覆盖方向性、时序与执行可行性，禁止仅以相位同步替代。
-
-## 【理论边界/防误用声明】
-- 不采纳“检测到行波即等同工作记忆内容编码”的推论。
-- 边界：SRT 将行波定义为控制与协调机制，不直接等同表征内容本身。
-
-
-### Competing-Mechanism Guardrails for Traveling-Wave Claims
-- **CM1**: 体积传导/被动扩散解释必须通过对称轴向与零时延特征检验排除。
-- **CM2**: 离散时滞源混合解释需与方向选择性和执行门控效应竞争拟合。
-- **CM3**: 微/中尺度波投影解释需给出可检验的跨尺度相位签名，而非仅概念兼容。
-
-## 【理论边界/防误用声明】
-- 不采纳“出现相位梯度即自动等于皮层长程通信”的推论。
-- 边界：SRT 要求竞争模型并行比较并报告劣势模型证据。
-
-
-### Taxonomy Mapping: Genome-Engine Fate Control → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| CSB + SOC 背景下中心-外围耦合 | 全表达系统的自组织门控 | 中 | Open-flow（非平衡） | payable |
-| 动态临界点 CP 作为控制核 | 内部控制器与外围系统互馈 | 中~高 | Open/Semi-open | task-dependent |
-| 命运承诺轨迹（HRG, atRA, DMSO） | 时间门控下不可逆分岔 | 中 | Open-flow | payable→committed |
-| 非承诺轨迹（EGF） | 门控不足导致回到吸引域 | 低~中 | Semi-open | overloaded/neutral |
-
-**Constraint**: “Maxwell’s demon”仅作机制隐喻，必须落到可测信息通量与时间门控变量。
-
-## 【理论边界/防误用声明】
-- 不采纳“命名为 demon 即表示违反热力学第二定律”的推论。
-- 边界：SRT 将其解释为开放系统中的信息-能量耦合控制，不是违背热力学。
-
-
-### Cross-Scale Note: CP as Cell-Scale \(\hat{G}_\theta\)
-在该预印本范式中，临界点基因簇（CP）可操作化为细胞尺度选择算子：
-$$
-\hat{G}_{\theta,cell} \equiv CP
-$$
-其通过对外围表达系统（PES）的信息热力学反馈，将随机微观波动转化为宏观秩序生成。
-
-## 【理论边界/防误用声明】
-- 不采纳“CP=\(\hat{G}_\theta\) 为严格同一”的强本体推论。
-- 边界：该映射为跨尺度操作化同构，需在不同细胞系复核。
-
-
-### Taxonomy Mapping: Political Polarization Schismogenesis → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 对称分裂生成（彼此镜像升级） | 双群体 \(L_2\) 相互排斥强化 | 低~中（跨群体关切收缩） | Semi-open（回音室） | overloaded |
-| 互认失效（Mutual Dysrecognition） | 幻影算子耦合失败 | 低 | Closed-like (ingroup-only) | unsustainable |
-| 算法放大敌意标签 | \(w_{ij}\) 人工增益放大痛感 | 低 | Platform-amplified | overloaded |
-| 社会精神分裂化（共享锚点丢失） | 集体 \(L_1\) 校准退化 | 低 | Fragmented | unsustainable |
-
-**Constraint**: 需区分“意见差异”与“本体层断裂”；前者可协商，后者需重建共享锚点。
-
-## 【理论边界/防误用声明】
-- 不采纳“极化群体成员必然存在临床精神病理”的推论。
-- 边界：此处“精神分裂化”用于系统动力学类比，不是个体医学诊断标签。
-
-
-### Taxonomy Mapping: Constructed vs Non-Constructed Computation → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 构造计算机（手机/笔电） | 显式输入-状态-输出结构 | 中 | Engineered open-flow | payable |
-| 非构造自然系统（化学/流体/神经） | 隐式动力学编码计算 | 低~中 | Open non-equilibrium | task-dependent |
-| 显式映射后可识别计算任务 | 动态轨迹到算子任务同态 | 中 | Open/Semi-open | payable |
-| 缺少映射时“不可计算”错觉 | 可观察性不足而非能力缺失 | 低 | Semi-open | overloaded (epistemic) |
-
-**Constraint**: “系统在演化”不自动等于“系统在执行有意义计算”；需提供显式映射与可检验输出。
-
-## 【理论边界/防误用声明】
-- 不采纳“万物皆可算=万物皆同等可控可编程”的推论。
-- 边界：SRT 要求任务定义、输入输出边界与代价函数同时给定。

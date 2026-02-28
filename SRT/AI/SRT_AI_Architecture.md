@@ -1155,22 +1155,5 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 **Constraint**: 输出“像某人格”不等于系统“拥有人格”；必须区分行为表征与本体状态。
 
-## 【理论边界/防误用声明】
-- 不采纳“可被 steering 的特征 = 真实心理特质”的推论。
-- 边界：SRT 将其定义为可操控表征通道，不赋予人类式主体地位。
+##
 
-
-### Taxonomy Mapping: Prediction Engines vs Explanation Engines → SRT
-
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 模式外推/下一个 token 预测 | 高维统计压缩与重组 | 低~中 | Open-compute | near-zero |
-| 解释生成（提出可证伪因果结构） | \(\hat{G}_\theta\) 的知识创造操作 | 中~高 | Open-biophysical / open-agentive | payable |
-| 预测优先的科学观 | 形式拟合替代解释 | 低（价值锚定缺失） | Semi-open | overloaded (epistemic) |
-| 解释优先的科学观 | 猜想-反驳-改进循环 | 中~高 | Open | payable |
-
-**Constraint**: 预测性能提升不可直接外推为解释能力提升。
-
-## 【理论边界/防误用声明】
-- 不采纳“可在多任务高分=已具备通用解释创造”的推论。
-- 边界：SRT 要求区分压缩重组与新因果结构提出能力。

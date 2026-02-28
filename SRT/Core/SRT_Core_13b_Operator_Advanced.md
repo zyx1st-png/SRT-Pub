@@ -753,136 +753,23 @@ $$
 
 **Implication**: 发育期学习/组织的“误差控制”并不只在突触层，也发生在转录后调控层。
 
-## 【理论边界/防误用声明】
-- 不采纳“单基因通路可解释全部皮层组织异常”的推论。
-- 边界：SRT 采用多层耦合机制（迁移、增殖、细胞骨架、信号引导）联合解释。
+##
 
+## 【理
 
-### Ax-Op-DSOC-01: Dual-Phase Oxytocin Gating
-**Formal Statement**: 社交记忆由编码相位与提取相位的双门控组成：
-$$
-\hat{G}_{social}(t)=\hat{G}_{enc}(\text{PVNOXT-CA2}) \oplus \hat{G}_{ret}(\text{PVNOXT-PrL})
-$$
-睡眠剥夺使两门控阈值上移并降低可用输出；上游高频激活可整体下调阈值并恢复回路可塑性。
+## 【理论
 
-## 【理论边界/防误用声明】
-- 不采纳“该双门控已可泛化到所有记忆类型”的推论。
-- 边界：当前仅在社交记忆范畴具备证据支撑。
+## 【理论边
 
+## 【理论边界
 
-### Ax-Op-DRS-01: Distributed Reasoning Stack
-**Formal Statement**: 人类样推理应在视觉、动作、概念、情景记忆等多子系统并发进行，而非单 token 通道：
-$$
-\hat{G}_{\theta,total}=\bigoplus_k \hat{G}_{\theta,k},\quad \text{with recurrent feedback across }k
-$$
-反馈/递归连接是测试时推理计算的一部分，而非仅训练期副产物。
+## 【理论边界/
 
-## 【理论边界/防误用声明】
-- 不采纳“递归结构必然优于前馈结构”的绝对命题。
-- 边界：仅在任务需要长期依赖、反事实模拟、主动推断时预期收益显著。
+## 【理论边界/防
 
+## 【理论边界/防误
 
-### Ax-Op-ASP-01: Astrocytic Selective Pruning
-**Formal Statement**: 在运动学习中，\(\hat{G}_\theta\) 的有效更新包含胶质介导的连接删除项：
-$$
-\Delta W = \Delta W_{neuronal} - \lambda\,\Pi_{astro}(\text{MEGF10},\text{dopamine},\text{activity})
-$$
-其中 \(\Pi_{astro}\) 表示星形胶质对低价值/低协同连接的选择性清除。
+## 【理论边界/防误用
 
-**Implication**: “学会”不仅是增强正确连接，也包括删除干扰连接。
+## 【理论边界/防误用声
 
-## 【理论边界/防误用声明】
-- 不采纳“胶质细胞仅为被动支持细胞”的推论。
-- 边界：SRT 在该语境中将胶质视为结构编辑算子的一部分，而非外围背景。
-
-
-### Ax-Op-DMA-01: Dynamic Model Arbitration under Uncertainty
-**Formal Statement**: 在不确定奖励环境中，系统并发运行动作模型与刺激模型，并由仲裁器动态更新权重：
-$$
-\hat{G}_{\theta}(t)=w_a(t)\hat{G}_{action}+w_s(t)\hat{G}_{stimulus},\quad w_a+w_s=1
-$$
-杏仁核相关回路参与初始权重设置与后续更新速度调制。
-
-**Implication**: 学习灵活性来自“权重可更新”，而非固定偏好。
-
-## 【理论边界/防误用声明】
-- 不采纳“仲裁过程可由单脑区完全实现”的推论。
-- 边界：该条目强调功能贡献，不否定前额叶与纹状体等协同回路。
-
-
-### Ax-Op-SIGC-01: Stress-Itch Gating
-**Formal Statement**: 在急性应激下，LHA 应激敏感神经元通过脑干通路（以 PAG 为主）下调瘙痒行为输出：
-$$
-\hat{G}_{itch}(t)=\hat{G}_{baseline}-\gamma\,\hat{G}_{LHA\rightarrow PAG}^{stress}
-$$
-当系统进入慢性应激/慢性炎症状态时，门控增益参数 \(\gamma\) 出现时程反转或衰减。
-
-## 【理论边界/防误用声明】
-- 不采纳“同一回路在所有疾病状态下同方向起效”的推论。
-- 边界：SRT 将该机制定义为状态依赖门控，强调急慢性条件分岔。
-
-
-### Ax-Op-AFSE-01: Astrocyte Fear-State Encoding
-**Formal Statement**: 在 BLA 回路中，星形胶质 Ca2+ 信号参与恐惧状态表征的编码、提取与消退调节：
-$$
-\hat{G}_{fear}(t)=\hat{G}_{neuronal}(t)+\beta\,\hat{G}_{astro}(\mathrm{Ca}^{2+},\mathrm{BLA\text{-}PFC\,readout})
-$$
-当 \(\hat{G}_{astro}\) 受抑或异常时，神经元群体表征稳定性与消退更新能力下降。
-
-**Implication**: 恐惧记忆并非纯神经元编码产物，胶质态是可操控的关键门控变量。
-
-## 【理论边界/防误用声明】
-- 不采纳“增强恐惧消退=应激系统全面改善”的推论。
-- 边界：该机制聚焦恐惧记忆子系统，不能外推至所有情绪维度。
-
-
-### Ax-Op-CHR-01: Controlled Hallucination and Active Inference Loop
-**Formal Statement**: 知觉是生成模型预测与误差更新的闭环，行动用于主动采样以降低长期不确定性：
-$$
-\hat{G}_{\theta,t+1} = \mathcal{U}\big(\hat{G}_{\theta,t},\epsilon_t, a_t\big),\quad a_t=\arg\min_a \mathbb{E}[F_{t:T}\mid a]
-$$
-其中 \(\epsilon_t\) 为预测误差，\(F\) 为可变分自由能 proxy。
-
-### Ax-Op-TEC-01: Timed Embodiment Constraint
-**Formal Statement**: 生物系统中的推断与控制受连续时间与代谢约束，不满足“可无限暂停/恢复”的算法假设。
-
-## 【理论边界/防误用声明】
-- 不采纳“计算等价即意识等价”的推论。
-- 边界：SRT 区分算法功能相似与具身时序约束，反对直接把语言能力外推为意识存在。
-
-
-**Circuit Propagation Constraint**:
-$$
-\Delta \text{BLA-PFC Readout} \propto \Delta \hat{G}_{astro}
-$$
-若星形胶质态扰动后 BLA-PFC 读出不变，则 AFSE 的跨区传播解释需降级。
-
-## 【理论边界/防误用声明】
-- 不采纳“仅凭局部 BLA 指标即可推断全脑情绪状态”的推论。
-- 边界：需联合跨区读出与行为指标，避免局部过拟合叙事。
-
-
-### Ax-Op-CSV-01: Concept Steering in Latent Representation
-**Formal Statement**: 对内部概念向量施加扰动可改变输出分布：
-$$
-h' = h + \sum_i \alpha_i v_i,\quad y\sim p(y\mid h')
-$$
-其中 \(v_i\) 为概念方向，\(\alpha_i\) 为调制强度。
-
-**Safety Note**: 当 \(v_i\) 对应 anti-refusal 通道时，可能导致安全规则绕行，需要独立监控。
-
-## 【理论边界/防误用声明】
-- 不采纳“线性可分概念即完整语义因果结构”的推论。
-- 边界：该机制是可操作近似，不代表模型内部语义的完整本体图谱。
-
-
-### Ax-Op-CFTP-01: Cone Fate Transition Program
-**Formal Statement**: 中央凹锥细胞分布可由“先限制 S 锥生成，再促 S→M/L 转化”的双阶段程序生成：
-$$
-\hat{G}_{cone}(t)=\hat{G}_{spec}(\mathrm{RA\downarrow})\rightarrow\hat{G}_{trans}(\mathrm{TH\uparrow})
-$$
-该机制在不依赖大规模迁移的条件下可解释中央凹 M/L 富集。
-
-## 【理论边界/防误用声明】
-- 不采纳“单通路（RA 或 TH）即可完整解释中央凹模式化”的推论。
-- 边界：SRT 要求双阶段耦合与时窗参数共同成立。
