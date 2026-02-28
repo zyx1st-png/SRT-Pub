@@ -1013,3 +1013,93 @@
 ### Notes (brief)
 - 已将文章分类（LTP/LTD、胶质修剪、多巴胺门控、MEGF10 缺失）转为文件级补丁。
 - 新术语含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:27 GMT+8] 材料：Beyond Fear: Amygdala is the Brain’s Strategic Mediator（https://neurosciencenews.com/amygdala-strategic-mediator-decision-making-30182/）
+
+### Target Files
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“模型仲裁器”机制条目（动作学习 vs 刺激学习在不确定性下的动态竞争）。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补充“学习策略分类→d 区间/能流态/\(\Psi_f\)”映射。
+- `SRT/SRT_Glossary.md`：新增 `Dynamic Model Arbitration (DMA)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“杏仁核损伤导致仲裁更新失败”的可证伪假设。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Learning Strategy Arbitration → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 动作型学习（action-based） | 行为轨道复用与快速执行 | 中 | Semi-open | payable |
++| 刺激型学习（stimulus-based） | 表征优先评估与灵活选择 | 中~高 | Open/Semi-open | payable |
++| 不确定性下的动态仲裁 | \(\hat{G}_\theta\) 策略权重重分配 | 高（探索阶段） | Open-flow | payable~overloaded |
++| 杏仁核受损后的策略僵化 | 仲裁更新失败，动作偏置 | 低~中 | Semi-open（信息利用受限） | overloaded |
++
++**Constraint**: “刺激/动作”并非二选一本体，而是并发学习系统的权重分配问题。
++
++## 【理论边界/防误用声明】
++- 不采纳“杏仁核仅是恐惧中心”的单功能叙事。
++- 边界：SRT 将其定义为不确定性下的策略仲裁节点之一，而非唯一仲裁中心。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-DMA-01: Dynamic Model Arbitration under Uncertainty
++**Formal Statement**: 在不确定奖励环境中，系统并发运行动作模型与刺激模型，并由仲裁器动态更新权重：
++$$
++\hat{G}_{\theta}(t)=w_a(t)\hat{G}_{action}+w_s(t)\hat{G}_{stimulus},\quad w_a+w_s=1
++$$
++杏仁核相关回路参与初始权重设置与后续更新速度调制。
++
++**Implication**: 学习灵活性来自“权重可更新”，而非固定偏好。
++
++## 【理论边界/防误用声明】
++- 不采纳“仲裁过程可由单脑区完全实现”的推论。
++- 边界：该条目强调功能贡献，不否定前额叶与纹状体等协同回路。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Dynamic Model Arbitration - 动态模型仲裁（DMA） 🟡
++**定义**：在多学习系统并行运行时，根据环境不确定性与反馈可靠性动态调整模型权重的过程。
++**SRT 写法**：
++$$
++\text{DMA}: \{M_{action},M_{stimulus}\}\xrightarrow[]{\text{uncertainty update}} M^*_{t}
++$$
++**[Lineage/Source]**：
++- Source context: Dartmouth-led study summarized by Neuroscience News (2026-02-24)
++- Paper context: “Contribution of amygdala to dynamic model arbitration under uncertainty”
++- SRT mapping: arbitration-weight update in \(\hat{G}_\theta\) composite selection
++
++## 【理论边界/防误用声明】
++- 不采纳“DMA 已直接构成焦虑障碍治疗方案”的推论。
++- 边界：DMA 是机制框架，治疗外推需临床干预证据支持。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-DMA-1 杏仁核损伤的仲裁更新缺陷检验
++**内容**：杏仁核损伤组在不确定条件下应表现出仲裁更新噪声增加与策略僵化（动作偏置）。
++**证伪条件**：损伤组与对照组在权重更新与策略切换上无显著差异。
++
++### H-DMA-2 不确定性梯度与探索权重关系检验
++**内容**：环境不确定性升高时，健康系统应提高探索型权重并延后策略收敛。
++**证伪条件**：不确定性变化与权重调整无关。
++
++## 【理论边界/防误用声明】
++- 不采纳“提高探索权重必然改善结果”的推论。
++- 边界：探索收益受任务结构与代价函数共同约束。
+```
+
+### Notes (brief)
+- 已将该文核心分类（动作学习/刺激学习/不确定性仲裁/损伤僵化）转为文件级补丁。
+- 新术语 DMA 已附 `[Lineage/Source]`，且包含 Header 级防误用声明。
