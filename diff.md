@@ -2610,3 +2610,120 @@
 ### Notes (brief)
 - 本次为“全文补充版”增强补丁：把你提供的 Results/控制分析细节（去VEP、眼动、仅计划不执行、跨轴不均匀）写入可证伪层。
 - 该补丁为上一条 PNAS 映射的增量细化，不替换历史记录。
+
+---
+
+## [2026-02-28 17:57 GMT+8] 材料：Cosmic Paradox Reveals the Awful Consequence of an Observer-Free Universe（https://www.quantamagazine.org/cosmic-paradox-reveals-the-awful-consequence-of-an-observer-free-universe-20251119/）
+
+### Target Files
+- `SRT/Physics/SRT_Physics_01_Quantum_Foundation.md`：新增“封闭宇宙单态悖论”分类映射（一维Hilbert/观察者边界恢复复杂度/参与式划分）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“观察者边界引入后的态空间扩展”方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Observer-Boundary Hilbert Expansion (OBHE)` 与 `Closed-Universe One-State Paradox (COSP)`，附 `[Lineage/Source]`。
+- `SRT/Philosophy/SRT_Philosophy_Ethics.md`：新增“全局客观描述极限”方法论段落。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“分区规则改变导致可描述复杂度突增”的可证伪建模实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
++++ b/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
+@@
++### Taxonomy Mapping: Closed-Universe Information Paradox → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 封闭宇宙“单态”结果（Hilbert维度≈1） | 全局无分区描述塌缩 | 低 | Closed-global frame | unsustainable（描述失真） |
++| 引入观察者边界后复杂度回归 | 分区诱导可描述态扩展 | 中 | Open/Semi-open（分区驱动） | payable |
++| 参与式实在论解释 | 描述者与被描述系统不可绝对分离 | 中 | Open-flow | task-dependent |
++| 拓扑场论类比（切分后规则变化） | 分区改变可行态计数规则 | 中 | Semi-open | payable |
++
++**Constraint**: “单态宇宙”应被视为特定全局描述框架下的结果，不能直接外推为经验世界贫乏。
++
++## 【理论边界/防误用声明】
++- 不采纳“引入观察者边界=唯心论已被物理学证明”的推论。
++- 边界：SRT 将其解释为描述框架依赖性增强，而非本体结论终局化。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-COSP-01: Global One-State Compression
++$$
++\dim\mathcal{H}_{global}\to 1 \quad \text{under observer-free closed-universe description}
++$$
++
++### Eq-OBHE-01: Observer-Boundary Hilbert Expansion
++$$
++\dim\mathcal{H}_{partitioned}=\mathcal{F}(\partial\mathcal{O},\;\mathcal{D}_{split})\gg 1
++$$
++其中 \(\partial\mathcal{O}\) 为观察者边界，\(\mathcal{D}_{split}\) 为分区规则。
++
++### Eq-OBHE-02: Describable Complexity Gain
++$$
++\Delta C_{desc}=\log\dim\mathcal{H}_{partitioned}-\log\dim\mathcal{H}_{global}
++$$
++
++## 【理论边界/防误用声明】
++- 不采纳“维度增长自动等同物理自由度真实增长”的推论。
++- 边界：该项首先是可描述性增长，需与可观测量对应验证。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Closed-Universe One-State Paradox - 封闭宇宙单态悖论（COSP） 🟡
++**定义**：在无观察者边界的全局闭合描述下，宇宙态空间被压缩为极低维（极端情形为一维）所引发的经验复杂度冲突。
++
++**[Lineage/Source]**：
++- Source context: Quanta feature (2025-11-19) summarizing de Sitter/closed-universe paradox discussions
++- Key figures discussed: Maldacena, Almheiri, Mahajan, Zhao, Harlow, Usatyuk, Shaghoulian
++- SRT mapping: observer-free global description paradox
++
++#### Observer-Boundary Hilbert Expansion - 观察者边界Hilbert扩展（OBHE） 🟡
++**定义**：当引入观察者边界与系统分区后，可描述态空间维度显著扩展的机制。
++
++**[Lineage/Source]**：
++- Source context: 2025 MIT-line discussions on observer boundary in closed-universe settings
++- SRT mapping: partition-induced recoverable complexity
++
++## 【理论边界/防误用声明】
++- 不采纳“OBHE 足以单独解决量子引力所有悖论”的推论。
++- 边界：OBHE 是候选框架，需与具体可计算模型耦合验证。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Philosophy_Ethics.md
++++ b/SRT/Philosophy/SRT_Philosophy_Ethics.md
+@@
++## Method Note: Limits of Observer-Free Total Description
++在涉及全宇宙封闭描述时，SRT 采用“分区可描述性原则”：
++1) 先识别描述框架是否隐含观察者自由；
++2) 再比较无分区与有分区模型在解释力上的差异；
++3) 禁止将框架依赖结论误读为现实本体贫乏。
++
++## 【理论边界/防误用声明】
++- 不采纳“全局描述失败=科学方法失败”的推论。
++- 边界：SRT 主张框架升级与分区重构，而非放弃可证伪研究程序。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-COSP-1 分区规则导致复杂度跃迁检验（理论/数值）
++**内容**：在封闭系统 toy model 中，引入观察者边界后可描述态数量应发生可量化跃迁。
++**证伪条件**：引入边界后描述态维度无显著变化。
++
++### H-OBHE-1 描述增益与预测增益一致性检验
++**内容**：若 OBHE 有效，\(\Delta C_{desc}\) 增长应伴随可检验预测的新增，而非仅叙事膨胀。
++**证伪条件**：描述复杂度增长不带来新增可检验预测。
++
++## 【理论边界/防误用声明】
++- 不采纳“概念上可分区即物理上可操作”推论。
++- 边界：需给出可计算模型与可对照基线。
+```
+
+### Notes (brief)
+- 已将文章主分类（单态悖论/观察者边界扩展/参与式分区）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 COSP、OBHE 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
