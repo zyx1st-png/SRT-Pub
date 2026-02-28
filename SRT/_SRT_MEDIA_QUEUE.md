@@ -29,8 +29,8 @@ dependency: [_SRT_MEDIA_PIPELINE]
 
 - Topic: 为什么“选择”而不是“物质”是第一原理？
 - Source Basis: Core/SRT_Core_01_Axioms.md; Core/SRT_Core_22_Equations.md
-- Style A (大众版) Status: draft
-- Style B (学者版) Status: draft
+- Style A (大众版) Status: review
+- Style B (学者版) Status: review
 - Platforms:
   - Zhihu: queued
   - WeChat: queued
