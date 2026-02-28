@@ -579,6 +579,41 @@ $$\text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试�
 
 ---
 
+# §9. 电子流体与介观选择动力学（Hydrodynamic Electron Flow）
+
+## 9.1 Ax-EHF-1: Momentum-Conserving Electron Regime
+在高纯度二维材料（如 graphene）中，若电子-电子散射主导且杂质/声子散射受抑，电子输运进入动量守恒主导区：
+\[
+\tau_{ee}^{-1} \gg \tau_{imp}^{-1},\ \tau_{ph}^{-1}
+\]
+此时电流行为更接近流体而非离散扩散。
+
+* **Implication（中文）**：电流“像水一样流动”不是隐喻，而是散射机制切换导致的动力学相变。
+
+## 9.2 T-EHF-1: Gurzhi Reversal as Regime Marker
+定义温度-电阻导数符号作为输运相位指标：
+\[
+\chi_G := \operatorname{sign}\!\left(\frac{dR}{dT}\right)
+\]
+- 常规扩散区：\(\chi_G>0\)
+- 电子流体区（Gurzhi effect）：\(\chi_G<0\)
+
+* **Implication（中文）**：\(\chi_G\) 可作为“从分散输运到协同输运”切换的可观测标记。
+
+## 9.3 Def-EHF-1: Electron-Fluid Selection Efficiency
+定义介观选择效率（与摩擦代理相联系）：
+\[
+\eta_{sel}^{(e)} := \frac{J_{coherent}}{\Psi_f^{(transport)}}
+\]
+其中 \(J_{coherent}\) 表示相干输运贡献，\(\Psi_f^{(transport)}\) 表示输运摩擦代理（可由电阻与耗散项估计）。
+
+* **SRT 对齐**：当电子系统进入流体区，单位摩擦下的协同输运能力提升，体现“约束下选择效率”增加。
+
+### Source Note (Quanta, 2026-02-11)
+- Wood, C. (2026). *Physicists Make Electrons Flow Like Water*. Quanta Magazine.
+- 文中锚点：Gurzhi effect、graphene 高纯样品、电子流体冲击波实验现象。
+- 审核结论：**A（直接融入）**；理由：为 SRT 的介观动力学章节提供高质量实验语境与可操作相位标记。
+
 ## Symbol Index (符号索引)
 
 | Symbol | Name | Definition Location |
@@ -593,6 +628,9 @@ $$\text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试�
 | $\alpha, \beta$ | Salience Parameters | Def-Sal-1 [D1.9.1] |
 | $\Theta(t)$ | Diverge-Converge Ratio | Def-Path-2 [D1.10.2] |
 | $\lambda_1$ | Spectral Gap | T-Crit-2 [T1.5.2] |
+| $\chi_G$ | Gurzhi Regime Sign | T-EHF-1 (§9.2) |
+| $\eta_{sel}^{(e)}$ | Electron-Fluid Selection Efficiency | Def-EHF-1 (§9.3) |
+| $\tau_{ee},\tau_{imp},\tau_{ph}$ | Scattering Timescales | Ax-EHF-1 (§9.1) |
 
 ## 【理论边界/防误用声明】
 

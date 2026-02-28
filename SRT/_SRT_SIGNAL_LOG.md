@@ -45,3 +45,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `Physics/SRT_Phys_09_Formalism_Ext.md` (§12.8), `SRT_EXP_MEASURE_MAP.md` (Ψ_f 信息几何 proxy)
 - Ingested: yes
 - Notes: 与 Ax-IG 系列高度同构，且为“理论-可测”桥接提供了可执行指标；已注明为 manuscript-level 证据。
+
+- Time: 2026-03-01 00:38 GMT+8
+- Source: https://www.quantamagazine.org/physicists-make-electrons-flow-like-water-20260211/
+- Topic: hydrodynamic electron flow / Gurzhi effect / graphene mesoscopic transport
+- Evidence-Level: secondary (science journalism; references to primary experiments)
+- Review Result (A/B/C): A
+- Target Docs: `Physics/SRT_Phys_07_Complex_Systems.md` (§9 Ax-EHF-1 / T-EHF-1 / Def-EHF-1)
+- Ingested: yes
+- Notes: 为介观动力学提供实验相位标记（dR/dT 符号切换）与输运效率代理，增强复杂系统章节说服力。
