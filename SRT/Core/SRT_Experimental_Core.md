@@ -120,3 +120,14 @@ $$ μ_{sem} = \frac{\sum w_i · \text{Freq}(必须/不能/应该)}{\sum w_j · \
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
 
+## Explainability Finalization Block
+
+### 形式化（Formalization）
+$$
+\mathcal{E}: \text{Claim} \mapsto (\text{Variables}, \text{Relations}, \text{Constraints})
+$$
+含义：关键命题应可映射为变量-关系-约束三元组。
+
+### 机制解释（Mechanism）
+通过术语对齐、依赖回链和可观测接口，将理论主张转化为可审计机制路径。
+

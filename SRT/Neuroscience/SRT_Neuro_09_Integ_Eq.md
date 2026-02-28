@@ -448,3 +448,15 @@ SRT 避免了泛心论的经典困难——组合问题（Combination Problem）
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
 
+## Explainability Finalization Block
+
+### 形式化（Formalization）
+$$
+\mathcal{E}: \text{Claim} \mapsto (\text{Variables}, \text{Relations}, \text{Constraints})
+$$
+含义：关键命题应可映射为变量-关系-约束三元组。
+
+### 可证伪条件（Falsification）
+- 缺失可观测指标/对照/失败判据时，该条目不满足可证伪要求。
+- 若跨尺度映射无边界条件声明，则该映射不可用于强结论推断。
+

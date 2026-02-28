@@ -206,3 +206,12 @@ dependency: [_SRT_DOC_ENGINEERING_GUIDE, _SRT_MANIFEST]
 ---
 
 如需，我可直接进入执行模式，从 **P0-3 + P0-1** 开始落地（含文件创建、迁移、清理、提交）。
+
+## Explainability Finalization Block
+
+### 形式化（Formalization）
+$$
+\mathcal{E}: \text{Claim} \mapsto (\text{Variables}, \text{Relations}, \text{Constraints})
+$$
+含义：关键命题应可映射为变量-关系-约束三元组。
+
