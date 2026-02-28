@@ -2215,3 +2215,123 @@
 ### Notes (brief)
 - 已将文章主分类（多层屏障、BBC门控、炎症脆弱化）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 BBCG、NPC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 16:28 GMT+8] 材料：QBism/参与式实在论访谈文字稿（用户提供原文）
+
+### Target Files
+- `SRT/Physics/SRT_Physics_01_Quantum_Foundation.md`：新增“QBism 解释位形”分类映射（主观概率/代理行动/参与式实在论/现象学重建）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“规范一致性约束 + Born 规则作为附加约束”方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Participatory Realism Constraint (PRC)` 与 `Agentive Event Trigger (AET)`，附 `[Lineage/Source]`。
+- `SRT/Philosophy/SRT_Philosophy_Ethics.md`：新增“可得经验优先（phenomenological discipline）”方法论段落。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“代理-触发事件模型与延迟选择场景”可证伪实验建议。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
++++ b/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
+@@
++### Taxonomy Mapping: QBism Foundations → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 概率作为代理主观下注 | \(\hat{G}_\theta\) 的信念更新层 | 中 | Open/Semi-open | payable |
++| 事件由代理行动触发 | 观测=行动-反应闭环 | 中~高 | Open-flow（交互驱动） | task-dependent |
++| 参与式实在论（非旁观实在） | 代理与现实不可完全拆分 | 中 | Open-flow | payable |
++| 过去历史为现时证据重建 | \(L_2\) 叙事随证据迭代 | 中 | Semi-open | payable~overloaded（高不确定） |
++
++**Constraint**: 不得把“主观概率”误写为“唯我论”；QBism 中仍保留反应性现实约束。
++
++## 【理论边界/防误用声明】
++- 不采纳“参与式实在论=现实纯粹由意志创造”的推论。
++- 边界：SRT 采用“行动触发 + 现实反应”双边结构，拒绝单边建构论。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-QB-01: Coherence-Norm Constraint (Dutch-book style)
++$$
++\mathcal{P}\in\mathcal{C}_{coh}\quad\Rightarrow\quad \text{no sure-loss betting structure}
++$$
++其中 \(\mathcal{C}_{coh}\) 表示概率一致性可行域。
++
++### Eq-QB-02: Born Rule as Additional Normative Structure
++$$
++p(o\mid a)=\mathcal{B}(\pi_a,\rho)\neq \text{arbitrary coherence map}
++$$
++Born 结构被视为超出纯一致性之外的附加规范约束。
++
++### Eq-QB-03: Agentive Event Trigger (SRT form)
++$$
++E_t = \mathcal{R}\big(a_t;L_0\big),\qquad a_t\in\mathcal{A}_{agent}
++$$
++事件不是“预置等待读出”的静态对象，而是行动-反应过程中的生成项。
++
++## 【理论边界/防误用声明】
++- 不采纳“主观概率可任意设定而无需一致性约束”的推论。
++- 边界：SRT 要求一致性规范 + 经验可校正性同时成立。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Participatory Realism Constraint - 参与式实在约束（PRC） 🟡
++**定义**：实在并非可与代理完全剥离的“旁观对象”，而是在行动-反应中被约束性显化。
++
++**[Lineage/Source]**：
++- Source context: QBism discussion in user-provided transcript (2026-02-28)
++- Key lineage: C. Fuchs (participatory realism), Bayesian probability tradition (Bayes, de Finetti)
++- SRT mapping: agent-involved but reality-constrained event ontology
++
++#### Agentive Event Trigger - 代理触发事件（AET） 🟡
++**定义**：事件被定义为代理行动与系统反应的耦合产物，而非独立于行动的预置读数。
++
++**[Lineage/Source]**：
++- Source context: same transcript; observer vs agent distinction, delayed-choice discussion
++- SRT mapping: action-coupled event generation in quantum/measurement narratives
++
++## 【理论边界/防误用声明】
++- 不采纳“PRC/AET 已否定客观约束存在”的推论。
++- 边界：两者强调的是可分离性受限，不是客观性归零。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Philosophy_Ethics.md
++++ b/SRT/Philosophy/SRT_Philosophy_Ethics.md
+@@
++## Method Note: Phenomenological Discipline for Scientific Reconstruction
++科学叙事（含宇宙历史）应被视为基于“当前可得证据”的重建，并保持对未来修正的开放性。
++SRT 在该层采用三步约束：
++1) 当前可得经验/观测优先；
++2) 概率一致性优先于本体先验断言；
++3) 历史重建必须保留可更新性。
++
++## 【理论边界/防误用声明】
++- 不采纳“可更新性=历史全然任意化”的推论。
++- 边界：SRT 允许修订，但修订受证据链与一致性规范约束。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-AET-1 代理行动对事件分布塑形检验
++**内容**：在等物理装置下改变代理行动策略（测量基选择/时序策略）应显著改变事件分布结构。
++**证伪条件**：行动策略变化与事件分布无系统关联。
++
++### H-PRC-1 历史重建可更新性检验
++**内容**：在新增证据条件下，最佳历史重建模型应发生可量化更新而非刚性不变。
++**证伪条件**：新增高质量证据不改变模型后验结构。
++
++## 【理论边界/防误用声明】
++- 不采纳“实验可塑性直接等同本体任意性”的推论。
++- 边界：SRT 将可塑性定位为模型后验更新，不是现实无约束漂移。
+```
+
+### Notes (brief)
+- 已将文本核心分类（主观概率一致性、代理触发事件、参与式实在、历史重建可更新）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 PRC、AET 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
