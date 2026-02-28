@@ -561,16 +561,3 @@ ECG 越高，表示“预测能力增长”与“解释能力增长”脱钩越�
 ## 【理论边界/防误用声明】
 - 不采纳“ECG 高即可断言系统无任何创新潜力”的推论。
 - 边界：ECG 是阶段性诊断量，需动态追踪。
-
-## Explainability Finalization Block
-
-### 形式化（Formalization）
-$$
-\mathcal{E}: \text{Claim} \mapsto (\text{Variables}, \text{Relations}, \text{Constraints})
-$$
-含义：关键命题应可映射为变量-关系-约束三元组。
-
-### 可证伪条件（Falsification）
-- 缺失可观测指标/对照/失败判据时，该条目不满足可证伪要求。
-- 若跨尺度映射无边界条件声明，则该映射不可用于强结论推断。
-
