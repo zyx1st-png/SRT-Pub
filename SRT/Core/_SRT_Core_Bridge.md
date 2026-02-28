@@ -162,9 +162,7 @@ $$\theta(t+1) = \theta(t) - \eta \cdot \nabla_{\theta} \Psi_f$$
 * **Implication**: 算子被自身历史塑形，形成选择回路。
 
 <br>
-<br>
 
----
 ---
 
 

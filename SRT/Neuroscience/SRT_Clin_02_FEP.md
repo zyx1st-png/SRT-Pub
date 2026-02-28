@@ -142,9 +142,7 @@ d_{expansion} \propto \text{Uncertainty}_{vital} - \text{Uncertainty}_{epistemic
 * **Implication（中文）**：玩老虎机产生的是认知不确定性（寻找规律），被极速驶来的卡车锁定产生的是攸关不确定性（生存边界崩溃的威胁）。后者强制 $\hat{G}_\theta$ 放弃 $L_2$ 塔构建，直接降维进入本能求生池，引发巨大的本体论摩擦 $\Psi_f$。
 
 <br>
-<br>
 
----
 ---
 
 

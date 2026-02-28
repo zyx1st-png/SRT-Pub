@@ -324,9 +324,7 @@ $$ \text{IsStable}(L_2) \iff I(L_2(t+1); L_2(t)) \gg I(L_2(t+1); L_0(t) | L_2(t)
 | **H89** | 复数 $\hat{G}$ 时间效应 | 主观时间 ∝ EEG 相位梯度 | 主观时间与神经相位无关 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)

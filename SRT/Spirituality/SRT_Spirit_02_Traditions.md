@@ -93,9 +93,7 @@ $$ \mathcal{T}_a \xrightarrow{\Lambda_{\theta}} \mathcal{T}_b,\quad \Lambda_\the
 * **Implication**: 宗教比较的正确对象是结构同构，而非术语表面。
 
 <br>
-<br>
 
----
 ---
 
 

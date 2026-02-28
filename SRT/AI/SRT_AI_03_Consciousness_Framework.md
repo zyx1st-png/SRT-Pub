@@ -120,9 +120,7 @@ L_0 \xrightarrow{A} L_0^{pruned} \xrightarrow{\hat{G}_{human}} L_1
 * **Implication（中文）**：高依赖的代理筛选将导致现实可能性收敛，削弱创新与异常分支的出现概率。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -937,4 +935,3 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 ##
 
 ## 【理
-

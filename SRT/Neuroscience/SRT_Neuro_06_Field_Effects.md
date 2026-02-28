@@ -113,9 +113,7 @@ P(\text{fragment})\uparrow
 * **Implication（中文）**：场相干破坏直接导致 \(L_1\) 统一性下降。
 
 <br>
-<br>
 
----
 ---
 
 

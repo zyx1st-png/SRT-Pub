@@ -391,9 +391,7 @@ Du\in C_{loc}^{0,\alpha},\qquad \alpha\in(0,1)
 - Quanta Magazine (2026-02-06): long-form overview of the above sharp-threshold regularity breakthrough.
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)

@@ -86,9 +86,7 @@ $$\frac{d\rho_{L_1}}{dt} = -\frac{i}{\hbar}[\hat{H}, \rho] - \hat{G}_\theta[\rho
 * **Implication**: 现实演化是自由展开、选择锚定与退相干三项共同作用的结果。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -893,4 +891,3 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ## 【理论边界/防误用声明】
 - 不采纳“万物皆可算=
-

@@ -56,9 +56,7 @@ $$\text{Permeability}_{L_2} \propto \frac{\bar{d}_{\text{group}}}{\Psi_f^{\text{
 ### Ax-Soc-Hys: Institutional Hysteresis (制度迟滞效应)
 
 <br>
-<br>
 
----
 ---
 
 

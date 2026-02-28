@@ -158,9 +158,7 @@ $$ G_{\mu\nu} \propto \Psi_f(L_1) \quad \Rightarrow \quad \text{Gravity}(L_0) = 
 | Fine Structure Constant $\alpha$ | Strong attractor in $L_2$ moduli space | $\alpha \in \text{Attractor}(L_2)$ |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)

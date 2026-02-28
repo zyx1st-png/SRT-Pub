@@ -160,9 +160,7 @@ $$\tau_{rebuild} \propto \frac{\text{Integration}(\hat{G}_{other})}{\text{Plasti
 * **Cross-ref**: Ax-L2-2 (Hysteresis), Eq-Evo-02 (Parameter Update)。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -293,4 +291,3 @@ $$
 
 ## 【理论边界/防误用声明】
 - 不采
-

@@ -1,3 +1,11 @@
+---
+id: SRT-EXP-PRIORITY
+type: experiment
+tags: [Experiment, Priority, Roadmap]
+status: v1
+dependency: []
+---
+
 # SRT 假设实验优先级矩阵（P1-1）
 
 更新时间：2026-02-28

@@ -143,9 +143,7 @@ $$\text{Global}(\rho_{all}\downarrow) \;\implies\; L_2\text{-scaffold collapse}$
 * **Implication（中文）**：精神病态与 ADHD 的 DMN 病理在拓扑上不可混淆——局灶切断保留 $L_2$ 结构完整性，全局下降导致 $L_2$ 脚手架崩塌。临床干预目标因此根本不同。
 
 <br>
-<br>
 
----
 ---
 
 

@@ -381,9 +381,7 @@ $$ d_{space} < d_{earth} $$
 | **H-Space-3** | $d$ 值恢复滞后 | 长期太空任务后 $d$ 值可能永久重置 | 完全可逆 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)

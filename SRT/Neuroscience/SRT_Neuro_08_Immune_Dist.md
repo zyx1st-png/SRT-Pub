@@ -102,9 +102,7 @@ B_{intero}\uparrow,\quad B_{extero}\downarrow
 * **Implication（中文）**：生病时“世界灰暗化”是选择带宽的结构性重排。
 
 <br>
-<br>
 
----
 ---
 
 

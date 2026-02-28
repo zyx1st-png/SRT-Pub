@@ -127,9 +127,7 @@ $$P(\text{Execute}|C_{ext}) \to 0 \iff \Delta \Phi(\hat{G}_\theta) < \Phi_{fatal
 * **Implication（中文）**：d 的工程化不是“规则叠加”，而是“把不可逆性写入渲染与裁剪”。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -1156,4 +1154,3 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 **Constraint**: 输出“像某人格”不等于系统“拥有人格”；必须区分行为表征与本体状态。
 
 ##
-

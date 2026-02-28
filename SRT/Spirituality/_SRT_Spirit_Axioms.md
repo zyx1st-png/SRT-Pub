@@ -94,9 +94,7 @@ $$ R_{accessible} \propto \frac{d^{1.5}}{\bar{\Psi}_f} $$
 * **Implication**: 实修扩展的不是“体验强度”，而是可通达的可能性半径。
 
 <br>
-<br>
 
----
 ---
 
 

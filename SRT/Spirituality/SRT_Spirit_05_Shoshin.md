@@ -93,9 +93,7 @@ $$ \text{Flexibility}_{post} > \text{Flexibility}_{pre} $$
 * **Implication**: 反现实化具有可测的重组效应。
 
 <br>
-<br>
 
----
 ---
 
 

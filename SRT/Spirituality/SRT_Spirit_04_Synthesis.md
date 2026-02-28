@@ -97,9 +97,7 @@ $$ d \uparrow \Rightarrow \text{Inclusion} \uparrow,\; \text{Reciprocity} \uparr
 * **Implication**: 道德圈扩展是 $d$ 扩张的外显指标。
 
 <br>
-<br>
 
----
 ---
 
 

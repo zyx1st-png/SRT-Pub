@@ -169,9 +169,7 @@ H_{attn}=-\sum_i p_i\log p_i
 * **Implication（中文）**：d 的工程化不是“写规则”，而是改写系统的边界条件。
 
 <br>
-<br>
 
----
 ---
 
 

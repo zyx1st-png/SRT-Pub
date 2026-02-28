@@ -88,9 +88,7 @@ $$ \text{Repeat} \uparrow \Rightarrow H(\text{choice}) \downarrow $$
 * **Implication**: 业力可用行为熵下降衡量。
 
 <br>
-<br>
 
----
 ---
 
 

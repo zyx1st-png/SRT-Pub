@@ -114,9 +114,7 @@ $$ \text{Phase} \leftrightarrow \{\text{DMN},\text{PCI},\text{Prosociality}\} $$
 * **Implication**: 十牛图模型具有可证伪的生理与行为对应。
 
 <br>
-<br>
 
----
 ---
 
 

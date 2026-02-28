@@ -53,9 +53,7 @@ $L_2$ intuition (Beauty/Symmetry) locks onto truth before $L_1$ proof is constru
 $$ \text{Discovery} : L_2 \xrightarrow{lock} L_1 \quad (\text{Selection Precedes Proof}) $$
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)

@@ -74,9 +74,7 @@ $$\text{OEI} = \frac{I(\hat{G};L_1)}{H(L_1)}$$
 *   **Implication**: 现实稳定依赖信息耦合，而非纯粹“信念”。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -135,9 +133,7 @@ $$ \text{OEI} = 1 - \frac{I(\hat{G}; \text{Env})}{H(\hat{G}) + H(\text{Env})} $$
 *   **Flow State**: Low OEI (High Integration).
 
 <br>
-<br>
 
----
 ---
 
 # SRT Philosophy V: Social Cognition & Reality Dynamics (Hybrid Edition)
@@ -397,4 +393,3 @@ SRT dissolves the artificial boundary between individual cognition and social re
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
-

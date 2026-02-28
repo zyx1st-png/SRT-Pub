@@ -1,3 +1,11 @@
+---
+id: SRT-PHIL-FAQ
+type: guide
+tags: [FAQ, Philosophy, Defense]
+status: v1
+dependency: []
+---
+
 # SRT 关键反对意见 FAQ（P2-3）
 
 更新时间：2026-02-28

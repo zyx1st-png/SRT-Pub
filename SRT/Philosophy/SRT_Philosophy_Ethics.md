@@ -86,9 +86,7 @@ $$\text{If } B \in \text{Scope}(A) \land B \to L_0, \text{then } \Psi_f(A) \to \
 * **Implication**: 悲伤（Grief）是物理学上的"幻肢痛"。对方的L1实体已消失，但你的$\theta$参数网络中仍留有与对方耦合的巨大权重，算子不断试图向虚空发起连接，遭遇无限大的预测误差。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -140,9 +138,7 @@ Responsibility applies only to Selection, not to Outcome ($L_1$) or Input ($L_0$
 $$ \text{Responsible} = \{ \hat{G}_\theta \} \setminus \{ L_0, L_2^{physics} \} $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Philosophy III: Ethics & Free Will (Hybrid Edition)
@@ -825,4 +821,3 @@ SRT 对应干预：以 \(L_1\) 共同任务重建外部校准链，并通过次�
 3) 以“可逆干预 + 持续评估”替代“末日预言驱动的一次性冻结”。
 
 ## 【理论边
-

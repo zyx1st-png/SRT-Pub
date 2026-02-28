@@ -202,9 +202,7 @@ $$\text{d-expansion via } \theta \;\iff\; \text{Channel}_{\text{structural}}\!\l
 * **Implication（中文）**：可解释“高整合但低体验”的临床异常。
 
 <br>
-<br>
 
----
 ---
 
 

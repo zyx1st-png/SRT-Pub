@@ -107,9 +107,7 @@ L_1(t)=\hat{G}_\theta[L_0(t)]\;\text{with}\;\mathcal{U}\;\text{bias}
 * **Implication（中文）**：可解释“高度真实却不真实”的体验。
 
 <br>
-<br>
 
----
 ---
 
 

@@ -1,3 +1,11 @@
+---
+id: SRT-EXP-TEMPLATE
+type: experiment
+tags: [Experiment, Template]
+status: v1
+dependency: []
+---
+
 # SRT 最小实验模板（P1-2）
 
 更新时间：2026-02-28

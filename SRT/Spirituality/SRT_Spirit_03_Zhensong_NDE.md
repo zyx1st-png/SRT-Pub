@@ -76,9 +76,7 @@ $$ \text{Feature}_{NDE} = f(L_0),\quad \text{Content}_{NDE} = g(L_2^{residual}) 
 * **Implication**: 跨文化一致性来自 $L_0$ 结构，差异来自剩余 $L_2$ 叙事框架。
 
 <br>
-<br>
 
----
 ---
 
 

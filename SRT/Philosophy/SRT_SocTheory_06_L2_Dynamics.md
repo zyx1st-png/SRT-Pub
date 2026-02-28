@@ -95,9 +95,7 @@ $$\Delta \theta > \Delta \theta_c \Rightarrow L_2 \to \{A_1, A_2\}$$
 *   **Implication**: 极化是相变，不是意见分歧。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -129,9 +127,7 @@ Warm Data refers to information that retains its relational context ($L_0$ links
 $$ \text{Warmth}(\sigma) \propto \text{Connectivity}(\sigma, L_0^{\text{context}}) $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Social Theory Part 3: L2 Dynamics (Hybrid Edition)

@@ -120,9 +120,7 @@ $$ \text{Coherence}_{group} \uparrow \Rightarrow d\text{-metrics}_{sync} \uparro
 * **Implication**: 群体仪式的可检验指标应出现脑际同步提升。
 
 <br>
-<br>
 
----
 ---
 
 

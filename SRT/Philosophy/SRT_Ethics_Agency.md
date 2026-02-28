@@ -87,9 +87,7 @@ $$\frac{d}{dt} d > 0 \implies \int \Psi_f \, d\mu \uparrow$$
 * **Implication**: 道德成长不是享乐主义的。变得更善良（高d值）意味着你将他人的状态耦合进自己的FEP方程，从而承担了更多的系统误差预测（痛苦）。进化没有淘汰高d值个体，是因为高d值能构建更强大的L2文明结构作为补偿。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -136,9 +134,7 @@ Love/Care is the topological operation of re-defining "Other" as "Self" in $L_0$
 $$ \text{Love}(A, B) \iff L_0^A \cup L_0^B \to L_0^{Unified} $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Philosophy Part 2: Ethics & Agency (Hybrid Edition)
@@ -347,4 +343,3 @@ $$ \text{To be free is to be responsible. To be responsible is to suffer. To ref
 4) 社会环境轴。
 
 责任评估应采用“状态条件化”而非单一行为归因，避免将病理负荷误判为纯意志缺陷。
-

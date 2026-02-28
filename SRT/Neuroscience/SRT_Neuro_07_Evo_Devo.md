@@ -150,9 +150,7 @@ a_i \not\cong_{\text{anatomy}} a_j \nRightarrow d(a_i)\neq d(a_j)
 - Suryanarayana SM, et al. *An amniote-like excitatory neuron type in the teleost fish pallium*. Science (2025). DOI: `10.1126/science.ads3049`.
 
 <br>
-<br>
 
----
 ---
 
 

@@ -139,9 +139,7 @@ $$L_1^{hard} = \text{Connectome}(L_0), \quad L_1^{soft} = \text{Attention}(L_1^{
 * **Implication**: 现实界面由硬件约束与注意力可塑性共同塑形。
 
 <br>
-<br>
 
----
 ---
 
 

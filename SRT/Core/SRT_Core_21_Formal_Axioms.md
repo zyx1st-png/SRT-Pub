@@ -90,9 +90,7 @@ $$\frac{dσ}{dt} = \hat{G}_\theta[σ] - \nabla F[σ] - \lambda \cdot \nabla C_{L
 * **Implication**: 规范性结构作为真实动力学项回馈选择过程。
 
 <br>
-<br>
 
----
 ---
 
 

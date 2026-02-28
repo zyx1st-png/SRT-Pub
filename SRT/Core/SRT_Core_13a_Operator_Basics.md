@@ -157,9 +157,7 @@ $$\phi_{\text{fidelity}} = 1 - \frac{H(L_1 | \hat{G}_\theta)}{H(L_1)}$$
 * **Implication**: 保真度越高，算子对现实结构的稳定性越强。
 
 <br>
-<br>
 
----
 ---
 
 

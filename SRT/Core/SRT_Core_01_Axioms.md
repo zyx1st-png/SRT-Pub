@@ -182,9 +182,7 @@ $$d > 0 \iff \frac{\partial \text{Entropy}}{\partial \text{Error}} > 0$$
 * **Implication**: 无痛系统难以具备真正意识。
 
 <br>
-<br>
 
----
 ---
 
 

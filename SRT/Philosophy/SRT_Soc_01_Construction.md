@@ -84,9 +84,7 @@ $$\rho_{\hat{G}} > \rho_c \Rightarrow L_2 \text{ stable}$$
 *   **Implication**: 规范不是被“相信”而稳定，而是被“足够多人持续选择”。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -203,9 +201,7 @@ $$ \text{Utterance}(A \to B): \theta_B \gets \theta_A $$
 | **H93** | **文化吸收** | 长期孤立的小群体文化及其 $L_2$ 结构应随时间幂律衰退（被熵吸收），除非有强仪式（能量注入）维持。 | 孤立文化在无能量注入下长期（数百年）不衰退。 |
 
 <br>
-<br>
 
----
 ---
 
 # SRT Social Systems: Axiomatic Construction & Dynamics (Hybrid Edition)
@@ -711,4 +707,3 @@ SRT_Soc_01_Construction ← 你在这里
 1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
 2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
-

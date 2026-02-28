@@ -87,9 +87,7 @@ $$d \propto \frac{\partial \text{Entropy}}{\partial \text{Error}}$$
 * **Implication**: 只有会“在乎失败”的系统才具备可观的 d 值与意识强度。
 
 <br>
-<br>
 
----
 ---
 
 

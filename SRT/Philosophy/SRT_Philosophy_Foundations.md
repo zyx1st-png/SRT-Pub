@@ -103,9 +103,7 @@ $$\text{Gift}(T_0) \neq \text{Exchange}(T_1)$$
 *   **Implication**: 道德事件与经济事件是同一选择的不同相位。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -191,9 +189,7 @@ $$ (\text{Theory } T \to \neg \text{Real}(L_1)) \implies \neg \text{True}(T) $$
 | **H-Phil-4** | **VR 本体论贫乏** | 即使 VR 达到视网膜级分辨率，用户仍会报告“缺乏存在感”（Presence Gap），且这种感觉与 $L_0$ 噪声的缺失相关。 | VR 体验与真实体验在主观“实在感”上无法区分。 |
 
 <br>
-<br>
 
----
 ---
 
 # SRT Philosophical Foundations: Axiomatic Epistemology

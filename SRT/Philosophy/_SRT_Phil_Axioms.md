@@ -74,9 +74,7 @@ $$\neg \text{Real}(L_1) \Rightarrow \neg \text{Valid}(\text{Theory})$$
 *   **Implication**: 反实在论无法逃离自身的经验依赖。
 
 <br>
-<br>
 
----
 ---
 
 

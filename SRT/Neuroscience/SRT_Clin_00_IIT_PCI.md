@@ -126,9 +126,7 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 * **Implication（中文）**：低 PCI 代表 \(L_1\) 维持失败，而非单纯“意识降低”。
 
 <br>
-<br>
 
----
 ---
 
 

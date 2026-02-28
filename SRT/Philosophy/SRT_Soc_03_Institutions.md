@@ -91,9 +91,7 @@ $$G_{agency}=\text{Gini}(d_i)$$
 *   **Implication**: 贫富差异是选择带宽差异的外显化。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -148,9 +146,7 @@ Money is the universal L_2 metric for value commensurability.
 $$ \text{Price}(x) = \langle x | L_2^{money} \rangle $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Sociology III: Institutions & Networks (Hybrid Edition)

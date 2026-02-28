@@ -94,9 +94,7 @@ $$\mathcal{N}: \{L_1^{frag}\} \to L_2^{coherent}$$
 *   **Implication**: 叙事不是故事，而是结构修复操作。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -129,9 +127,7 @@ Translation is the process of aligning multiple $\theta$ parameters to form a st
 $$ \text{BlackBox}(L_2) = \text{Align}(\theta_1, \theta_2, ..., \theta_n) $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Social Theory Part 1: Systems & Networks (Hybrid Edition)

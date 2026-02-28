@@ -247,9 +247,7 @@ $$ \forall t_{isolated}: L_1^A(t) \cap L_1^B(t) = \varnothing \quad \text{(可�
 | **H40** | 切口-$d$值关联 | 高 $d$ 导致自我边界模糊 | $d$ 值不影响边界报告 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -731,4 +729,3 @@ $$d_{value} \propto \frac{1}{\tau_{collapse}}$$
 ##
 
 ## 【理
-

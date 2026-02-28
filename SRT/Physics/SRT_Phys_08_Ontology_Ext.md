@@ -294,9 +294,7 @@ $$ \text{Health}(\hat{G}) \propto \frac{1}{\sigma^2(\text{Oscillation Period})} 
 | **H-Path-1** | 病态振荡 | 临床病理对应特定的发散-收敛失衡模式 | 病理无法映射到选择动力学 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)

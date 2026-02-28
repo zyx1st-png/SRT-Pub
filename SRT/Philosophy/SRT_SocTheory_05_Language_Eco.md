@@ -129,9 +129,7 @@ $$\exists \{A_k\}: L_1 \to A_k$$
 *   **Implication**: 生态崩溃是吸引盆跃迁而非线性衰退。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -170,9 +168,7 @@ Human neoteny retains a non-zero time derivative of $\theta$ (plasticity) into a
 $$ \frac{\partial \theta_{human}}{\partial t} |_{adult} > 0 $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Social Theory Part 2: Language & Evolution (Hybrid Edition)

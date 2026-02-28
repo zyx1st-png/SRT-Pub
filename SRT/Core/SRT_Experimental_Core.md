@@ -77,9 +77,7 @@ $$\mu_{sem} = \frac{\sum w_i \cdot \mathrm{Freq}(\text{必须/不能/应该})}{\
 * **Implication**: 语言中的情态结构可作为 Ψ_f 的统计指标。
 
 <br>
-<br>
 
----
 ---
 
 

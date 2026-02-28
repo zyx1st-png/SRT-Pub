@@ -78,9 +78,7 @@ $$\text{Crisis} \equiv L_2 \to L_2'$$
 *   **Implication**: 经济危机是结构重配而非单次冲击。
 
 <br>
-<br>
 
----
 ---
 
 

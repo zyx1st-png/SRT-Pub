@@ -74,9 +74,7 @@ $$\sigma^* = \hat{G}_{social}(\sigma^*)$$
 *   **Implication**: 共识的崩溃等同于不动点失稳。
 
 <br>
-<br>
 
----
 ---
 
 

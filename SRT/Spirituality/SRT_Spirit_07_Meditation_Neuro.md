@@ -112,9 +112,7 @@ $$ \text{Hippocampus} \uparrow,\; \text{Amygdala} \downarrow $$
 * **Implication**: 冥想的长期效应是 $\theta$ 参数重配置的结构证据。
 
 <br>
-<br>
 
----
 ---
 
 

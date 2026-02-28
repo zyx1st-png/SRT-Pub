@@ -160,9 +160,7 @@ SRT provides a meta-framework that synthesizes valid insights from competing int
 *   **Unique Contribution**: SRT explains how subjective selections (QBism, RQM) converge into stable objective reality ($L_2$) through consensus dynamics.
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -424,4 +422,3 @@ Wheeler's intuition confirmed: Observers are not passive recorders but co-creato
 1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
 2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
-

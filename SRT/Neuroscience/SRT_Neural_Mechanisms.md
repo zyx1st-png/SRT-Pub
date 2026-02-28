@@ -192,9 +192,7 @@ $$\kappa_{adapt} \begin{cases} \to 0 & \Rightarrow \text{持续活动模式，�
 * **Implication（中文）**：病理分类应由参数偏移模式决定，而不是由表面症状决定。
 
 <br>
-<br>
 
----
 ---
 
 

@@ -85,9 +85,7 @@ $$R_{ij} > R_c \Rightarrow \text{Cooperation Stable}$$
 *   **Implication**: 合作不是道德宣言，而是阈值条件。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -129,9 +127,7 @@ Strategic attack on opponent's $\theta$ stability (e.g., gaslighting).
 $$ \text{Attack} = \max \Delta \Psi_f(\text{Opponent}) $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Sociology II: Behavioral Dynamics (Hybrid Edition)

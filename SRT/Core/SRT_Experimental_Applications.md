@@ -53,9 +53,7 @@ $$\text{Stage} \propto d$$
 * **Implication**: 灵性修行阶段对应关切范围的系统扩展。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -197,4 +195,3 @@ $$ C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0) $$
 
 ## 【理论边界/防误用声明】
 - 不采纳“单次失败即可否定解释能力研究价值
-

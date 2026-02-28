@@ -130,9 +130,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 * **Implication（中文）**：深层回路不是“激活现象”，而是选择带宽的再分配机制。
 
 <br>
-<br>
 
----
 ---
 
 

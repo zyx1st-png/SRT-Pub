@@ -152,9 +152,7 @@ D_{align}\downarrow \Rightarrow P(\text{report})\downarrow
 * **Implication（中文）**：意识可报告性依赖“传播方向是否匹配任务”，而非仅依赖总激活强度。
 
 <br>
-<br>
 
----
 ---
 
 

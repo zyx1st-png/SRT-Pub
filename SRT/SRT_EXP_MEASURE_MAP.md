@@ -1,3 +1,11 @@
+---
+id: SRT-EXP-MEASUREMAP
+type: experiment
+tags: [Experiment, Measure, Proxy]
+status: v1
+dependency: []
+---
+
 # SRT 核心变量—观测指标映射（P1-3）
 
 更新时间：2026-02-28

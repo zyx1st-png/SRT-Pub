@@ -335,9 +335,7 @@ $$ \text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试
 | **H-Criticality** | 神经临界性 | 大脑在临界点附近运作，神经雪崩呈幂律分布 $P(s) \sim s^{-\tau}$ | 非幂律分布 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
