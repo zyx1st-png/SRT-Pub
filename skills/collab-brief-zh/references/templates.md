@@ -34,3 +34,29 @@
 - Step N 完成：
 - 产物：
 - 下一步：
+
+## 5) 理论材料 diff 输出模板（SRT）
+
+### Target Files
+- `SRT/...`：
+- `SRT/...`：
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/xxx.md
++++ b/SRT/xxx.md
+@@
+- old
++ new
+```
+
+### 必填检查清单
+- [ ] 已提取外部内容中的分类/层级，并映射到 d-value 或动力学（开放/封闭能流）
+- [ ] 已识别新颖实证领域；若跨尺度表缺口存在，已给出 `SRT/Core_Law/SRT_Reference_Scaling.md` 补丁
+- [ ] 新数学术语已加 `[Lineage/Source]`（提出者/出处/年份）
+- [ ] 已写 `【理论边界/防误用声明】`
+
+### 【理论边界/防误用声明】
+- 不采纳推论：
+- 原因：
+- SRT 替代解释：
