@@ -2124,3 +2124,94 @@
 ### Notes (brief)
 - 已将文章核心分类（RA限蓝锥/TH促转化/迁移模型对照）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 CFTP、FPA 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 15:42 GMT+8] 材料：Beyond the Blood-Brain Barrier: New “Smart Gate” Shielding the Brain（https://neurosciencenews.com/base-barrier-cells-neuroscience-30092/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“脑屏障分层防御”分类映射（BBB外围屏障/ChP基底屏障/BBC炎症脆弱化）。
+- `SRT/Core_Law/SRT_Reference_Scaling.md`：补“脉络丛基底屏障尺度”实体定义（\(\hat{G}_\theta\), \(L_0\), \(L_1\), \(L_2\)）。
+- `SRT/SRT_Glossary.md`：新增 `Base Barrier Cell Gate (BBCG)` 与 `Neuro-Peripheral Compartmentalization (NPC)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“系统炎症导致屏障失稳与免疫跨越”的可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Multi-Layer Brain Barrier Defense → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 血脑屏障（BBB）外围防线 | 周边-中枢粗粒过滤 | 中 | Open/Semi-open | payable |
++| 脉络丛基底屏障（BBC） | 深层精细分区门控 | 中~高 | Open-flow（动态门控） | payable |
++| 炎症下 BBC 紧密连接破坏 | 分区失稳与渗漏风险 | 低~中 | Semi-open（受损） | overloaded |
++| 免疫细胞跨越增加 | 外周信号入侵通道开启 | 低 | Semi-open / Closed-like | unsustainable |
++
++**Constraint**: 脑保护机制应建模为“多层屏障协同”，禁止单屏障足够论。
++
++## 【理论边界/防误用声明】
++- 不采纳“发现新屏障即否定 BBB 重要性”的推论。
++- 边界：SRT 将 BBC 视为 BBB 的互补深层门控，而非替代关系。
+```
+
+```diff
+--- a/SRT/Core_Law/SRT_Reference_Scaling.md
++++ b/SRT/Core_Law/SRT_Reference_Scaling.md
+@@
++## Def-Scale-BBC-1: Choroid Plexus Base Barrier Scale（脉络丛基底屏障尺度）
++- **\(\hat{G}_{\theta,bbc}\)**：在脉络丛基底处执行外周-脑实质-CSF 分区通信门控的选择算子。
++- **\(L_0^{bbc}\)**：潜在的分子/免疫跨区通道状态空间（封闭、半透、渗漏）。
++- **\(L_1^{bbc}\)**：当前生理状态下的实际屏障通透谱。
++- **\(L_2^{bbc}\)**：发育形成并在生命周期维持的屏障结构先验与稳态规则。
++
++## 【理论边界/防误用声明】
++- 不采纳“屏障通透变化可直接等同疾病诊断”的推论。
++- 边界：该尺度用于机制分层与风险评估，需结合临床上下文。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Base Barrier Cell Gate - 基底屏障细胞门（BBCG） 🟡
++**定义**：位于脉络丛基底并通过紧密连接/黏附连接实现分区隔离与通信控制的细胞门控系统。
++
++**[Lineage/Source]**：
++- Source context: VIB-UGent study summarized by Neuroscience News (2026-02-12)
++- Paper: Nature Neuroscience, DOI: 10.1038/s41593-025-02188-7
++- SRT mapping: secondary deep gate in brain-periphery compartmentalization
++
++#### Neuro-Peripheral Compartmentalization - 神经-外周分区化（NPC） 🟡
++**定义**：通过多层屏障（BBB + BBC 等）维持中枢与外周信号交换边界的系统性分区机制。
++
++**[Lineage/Source]**：
++- Same source context; barrier integrity loss under inflammatory insult
++- SRT mapping: layered compartment boundary control
++
++## 【理论边界/防误用声明】
++- 不采纳“NPC 失稳仅由局部细胞因子决定”的推论。
++- 边界：SRT 要求全身炎症状态与局部连接状态联合解释。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-BBCG-1 炎症诱导屏障失稳检验
++**内容**：系统炎症模型下，BBC 紧密连接完整性下降并伴随免疫细胞跨越增加。
++**证伪条件**：炎症条件下连接完整性与跨越指标无显著变化。
++
++### H-NPC-1 多层屏障协同保护检验
++**内容**：仅恢复 BBB 或仅恢复 BBC 之一时，保护效应低于双层协同恢复。
++**证伪条件**：单层恢复与双层恢复无差异。
++
++## 【理论边界/防误用声明】
++- 不采纳“动物模型中屏障修复即代表人类疗效成立”的推论。
++- 边界：需跨物种与病种特异验证。
+```
+
+### Notes (brief)
+- 已将文章主分类（多层屏障、BBC门控、炎症脆弱化）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 BBCG、NPC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
