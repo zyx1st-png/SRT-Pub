@@ -727,3 +727,91 @@
 ### Notes (brief)
 - 已把文章中的关键分类（NMD 正常/UPF2 缺失/p53 体积救援/Foxj1-Ino80 干扰）映射为文件级补丁。
 - 新术语与机制均附来源链并包含正式 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:23 GMT+8] 材料：Oxytocin Crash: Why Sleep Loss Leaves You Socially Forgetful（https://neurosciencenews.com/sleep-deprivation-oxytocin-social-memory-30187/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“睡眠剥夺-社交记忆”分类映射（编码回路/提取回路/高频刺激恢复）。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“PVNOXT-CA2 与 PVNOXT-PrL 双通路因果检验”假设。
+- `SRT/SRT_Glossary.md`：新增 `Dual-Phase Social Memory Oxytocin Circuit (DSOC)` 并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：补充“源头神经调制优于下游补偿”的机制条目。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Sleep-Deprivation Social-Memory Circuits → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| PVNOXT–CA2（新社交记忆编码） | 编码相位选择门控 | 中 | Open-flow（睡眠足够） | payable |
++| PVNOXT–PrL（熟悉对象提取） | 提取相位检索门控 | 中 | Open/Semi-open | payable |
++| 睡眠剥夺导致 OXT 下降 | 双回路同步降效 | 低~中 | Semi-open（恢复不足） | overloaded |
++| 100Hz 源头刺激恢复 | 上游源重激活带来持续恢复 | 中~高（恢复态） | Open-flow（受控激活） | payable（干预后） |
++
++**Constraint**: “激素补充”与“神经源激活”不等价；优先区分源头恢复与下游补偿。
++
++## 【理论边界/防误用声明】
++- 不采纳“单次外源补充即可长期恢复社交记忆”的推论。
++- 边界：SRT 认为回路源头可塑性恢复优先于单点下游补偿。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-DSOC-01: Dual-Phase Oxytocin Gating
++**Formal Statement**: 社交记忆由编码相位与提取相位的双门控组成：
++$$
++\hat{G}_{social}(t)=\hat{G}_{enc}(\text{PVNOXT-CA2}) \oplus \hat{G}_{ret}(\text{PVNOXT-PrL})
++$$
++睡眠剥夺使两门控阈值上移并降低可用输出；上游高频激活可整体下调阈值并恢复回路可塑性。
++
++## 【理论边界/防误用声明】
++- 不采纳“该双门控已可泛化到所有记忆类型”的推论。
++- 边界：当前仅在社交记忆范畴具备证据支撑。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Dual-Phase Social Memory Oxytocin Circuit - 双相社交记忆催产素回路（DSOC） 🟡
++**定义**：由 PVNOXT–CA2 编码通路与 PVNOXT–PrL 提取通路共同组成的社交记忆双相调节结构。
++**形式化**：
++$$
++\text{DSOC} = (\text{Encode}_{CA2},\;\text{Retrieve}_{PrL})
++$$
++**[Lineage/Source]**：
++- Source context: sleep deprivation and social memory study summarized by Neuroscience News (2026-02-24)
++- Reported mechanisms: PVNOXT-CA2 / PVNOXT-PrL, OXT decline, 100Hz stimulation rescue
++- SRT mapping: dual-phase gating under neuromodulatory source control
++
++## 【理论边界/防误用声明】
++- 不采纳“DSOC 直接等同于完整社会认知模型”的推论。
++- 边界：DSOC 是社交记忆子系统机制，不覆盖全部社会行为维度。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-DSOC-1 双通路相位功能可分检验
++**内容**：抑制 PVNOXT–CA2 应主要损害“新对象编码”，抑制 PVNOXT–PrL 应主要损害“熟悉对象提取”。
++**证伪条件**：两类干预产生无差别损伤模式。
++
++### H-DSOC-2 源头高频刺激恢复优势检验
++**内容**：在慢性睡眠剥夺模型中，上游 PVNOXT 高频刺激较下游单通路刺激具有更持久恢复效果。
++**证伪条件**：两者恢复持久性无差异或下游刺激更优。
++
++## 【理论边界/防误用声明】
++- 不采纳“短期行为恢复等同长期网络重建”的推论。
++- 边界：需纵向追踪验证恢复的稳定性与迁移性。
+```
+
+### Notes (brief)
+- 已将文中分类（编码/提取/睡眠剥夺/高频恢复）转成文件级补丁，并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
