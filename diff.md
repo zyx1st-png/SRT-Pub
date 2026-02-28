@@ -1591,3 +1591,62 @@
 ### Notes (brief)
 - 已将长访谈核心分类（受控幻觉/主动推断/具身时间约束/AI意识争议）转为文件级补丁。
 - 新术语 CHR、TEC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:53 GMT+8] 材料：Astrocytes Discovered as Architects of Fear Memory（重复来源复核，https://neurosciencenews.com/astrocytes-fear-memory-amygdala-30159/）
+
+### Target Files
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：补充 AFSE 的“回路传播约束”（BLA→PFC 读出稳定性）条目。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“消退阶段星形胶质活动递减斜率”量化检验。
+- `SRT/SRT_Glossary.md`：在 AFSE 词条新增“阶段性指标”说明。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
+ ### Ax-Op-AFSE-01: Astrocyte Fear-State Encoding
+@@
++**Circuit Propagation Constraint**:
++$$
++\Delta \text{BLA-PFC Readout} \propto \Delta \hat{G}_{astro}
++$$
++若星形胶质态扰动后 BLA-PFC 读出不变，则 AFSE 的跨区传播解释需降级。
++
++## 【理论边界/防误用声明】
++- 不采纳“仅凭局部 BLA 指标即可推断全脑情绪状态”的推论。
++- 边界：需联合跨区读出与行为指标，避免局部过拟合叙事。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-AFSE-3 消退斜率与胶质活动递减耦合检验
++**内容**：恐惧消退过程中，星形胶质活动递减斜率应与行为消退斜率显著相关。
++**证伪条件**：两者斜率无相关或方向相反。
++
++## 【理论边界/防误用声明】
++- 不采纳“单次消退训练结果可外推长期复发风险”的推论。
++- 边界：需长期随访与复发触发测试。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
+ #### Astrocyte Fear-State Encoding - 星形胶质恐惧态编码（AFSE） 🟡
+@@
++**Phase Metrics（阶段性指标）**：
++- 编码增益（encoding gain）
++- 提取稳定度（retrieval stability）
++- 消退斜率（extinction slope）
++
++## 【理论边界/防误用声明】
++- 不采纳“AFSE 指标上升=症状必然恶化”的线性推论。
++- 边界：指标解释需结合任务阶段与干预背景。
+```
+
+### Notes (brief)
+- 本次为重复来源复核后的增量补丁，侧重把 AFSE 从“概念条目”细化为“可量化阶段指标”。
