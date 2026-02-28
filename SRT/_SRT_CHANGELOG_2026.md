@@ -1,3 +1,11 @@
+---
+id: SRT-CHANGELOG-2026
+type: framework
+tags: [Changelog, Registry, History]
+status: rolling_v1
+dependency: [_SRT_INDEX]
+---
+
 # SRT 变更日志（2026）
 
 > 本文件承载从 `_SRT_INDEX.md` 迁移出的历史增量记录与版本事件，避免主索引过载。

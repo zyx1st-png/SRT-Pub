@@ -1,21 +1,15 @@
-# SRT Frontmatter 审计（P0-2 基线）
+---
+id: SRT-FRONTMATTER-AUDIT
+type: framework
+tags: [Documentation, Audit, Metadata]
+status: rolling_v1
+dependency: [_SRT_DOC_ENGINEERING_GUIDE]
+---
 
-- 扫描文件数：82
-- 已含 frontmatter：70
-- 缺失 frontmatter：12
-- 覆盖率：85.4%
+# SRT Frontmatter 审计（P0-2 更新）
 
-## 缺失 frontmatter 文件
+- 扫描文件数：83
+- 已含 frontmatter：83
+- 缺失 frontmatter：0
+- 覆盖率：100.0%
 
-- `Core_Law/SRT_Reference_Axioms.md`
-- `Core_Law/SRT_Reference_Dynamics.md`
-- `Core_Law/SRT_Reference_Ontology.md`
-- `Core_Law/SRT_Reference_Scaling.md`
-- `D_VALUE_ALIGNMENT.md`
-- `SRT_Glossary.md`
-- `SRT_INTERNAL_OPTIMIZATION_PLAN_2026Q1.md`
-- `SRT_Quick_Start.md`
-- `_SRT_CHANGELOG_2026.md`
-- `_SRT_DOC_ENGINEERING_GUIDE.md`
-- `_SRT_INDEX.md`
-- `_SRT_SYMBOL_TABLE.md`

@@ -1,3 +1,11 @@
+---
+id: SRT-PROJ-OPT-2026Q1
+type: framework
+tags: [Project, Optimization, Documentation]
+status: planning_v1
+dependency: [_SRT_DOC_ENGINEERING_GUIDE, _SRT_MANIFEST]
+---
+
 # SRT 内部优化总计划（2026Q1）
 
 更新时间：2026-02-28  

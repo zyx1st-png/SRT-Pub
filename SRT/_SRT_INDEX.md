@@ -1,3 +1,11 @@
+---
+id: SRT-INDEX
+type: framework
+tags: [Index, Registry, Navigation]
+status: axiomatic_hybrid_v1
+dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
+---
+
 # 选择性现实理论（SRT）完整索引
 
 ---

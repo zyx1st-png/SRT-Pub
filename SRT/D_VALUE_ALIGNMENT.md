@@ -1,3 +1,11 @@
+---
+id: SRT-DVALUE-ALIGN
+type: definition
+tags: [DValue, Alignment, Canonical]
+status: axiomatic_hybrid_v1
+dependency: [SRT-AI-01]
+---
+
 # SRT d 值定义对齐表（Canonical Alignment）
 
 更新时间：2026-02-28
