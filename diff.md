@@ -2433,3 +2433,100 @@
 ### Notes (brief)
 - 已将预印本核心分类（β调制异常跨域共变、TBW扩大、语言组织退化）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 CBF、PUR 已附 `[Lineage/Source]`（预印本来源已标注），并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 17:50 GMT+8] 材料：Traveling waves link human visual and frontal cortex during working memory–guided behavior（https://www.pnas.org/doi/10.1073/pnas.2415573122）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“工作记忆引导行为中的行波动力学”分类映射（前向波/后向波/执行依赖性）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“跨区行波方向性与行为表现耦合”方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Bidirectional Traveling-Wave Control (BTC)` 与 `Wave-Guided Memory Execution (WME)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“可执行 vs 不可执行条件下行波消失”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Working-Memory Traveling Waves → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 视觉→前额的前向行波 | 感知到行动的证据传递 | 中 | Open-flow | payable |
++| 前额→视觉的后向行波 | 任务约束下的顶层回写 | 中~高 | Open/Semi-open | payable |
++| 行波与个体表现相关 | 跨区协调效率指标 | 中 | Open-flow | task-dependent |
++| 仅计划但不可执行时行波缺失 | 执行门控必要性 | 低~中 | Semi-open | overloaded/blocked |
++
++**Constraint**: 行波解释需同时覆盖方向性、时序与执行可行性，禁止仅以相位同步替代。
++
++## 【理论边界/防误用声明】
++- 不采纳“检测到行波即等同工作记忆内容编码”的推论。
++- 边界：SRT 将行波定义为控制与协调机制，不直接等同表征内容本身。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-WME-01: Directional Traveling-Wave Coupling
++$$
++\mathrm{WME}=\alpha\,W_{v\to f}+\beta\,W_{f\to v}-\gamma\,\Delta\tau_{misalign}
++$$
++其中 \(W_{v\to f}\) 与 \(W_{f\to v}\) 分别为前向/后向行波强度，\(\Delta\tau_{misalign}\) 为跨区时序失配。
++
++### Eq-WME-02: Executability Gate
++$$
++W_{eff}=W_{raw}\cdot G_{exec},\quad G_{exec}\in[0,1]
++$$
++当任务仅规划不可执行时，\(G_{exec}\to 0\)，有效行波控制显著减弱。
++
++## 【理论边界/防误用声明】
++- 不采纳“波强度提升必然提升表现”的线性推论。
++- 边界：需同时满足方向配比与时序对齐。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Bidirectional Traveling-Wave Control - 双向行波控制（BTC） 🟡
++**定义**：在工作记忆引导行为中，视觉-前额网络以前向与后向行波协同完成证据传递与策略回写的控制机制。
++
++**[Lineage/Source]**：
++- Source: PNAS article metadata/abstract via Crossref for DOI 10.1073/pnas.2415573122
++- Paper title: “Traveling waves link human visual and frontal cortex during working memory–guided behavior”
++- SRT mapping: bidirectional wave coordination for memory-guided action
++
++#### Wave-Guided Memory Execution - 行波引导记忆执行（WME） 🟡
++**定义**：由跨区行波方向性与时序耦合决定的“记忆到行动”执行效率机制。
++
++**[Lineage/Source]**：
++- Same source context; forward/backward waves predict behavior and depend on executability
++- SRT mapping: execution-coupled wave control index
++
++## 【理论边界/防误用声明】
++- 不采纳“BTC/WME 可直接外推到所有认知任务”的推论。
++- 边界：当前优先适用于工作记忆引导行为范式。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-WME-1 可执行门控检验
++**内容**：在等工作记忆负荷下，“可执行”条件应表现出更强双向行波；“不可执行”条件显著减弱。
++**证伪条件**：可执行与不可执行条件行波指标无差异。
++
++### H-WME-2 方向配比与表现关联检验
++**内容**：前向/后向行波配比偏离最优区间时，任务表现下降。
++**证伪条件**：方向配比与行为表现无关联。
++
++## 【理论边界/防误用声明】
++- 不采纳“行波相关性即可证明单向因果链”的推论。
++- 边界：需通过扰动实验验证方向因果。
+```
+
+### Notes (brief)
+- 已将文章主分类（前向波/后向波/执行依赖）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 该链接直抓受限（站点反爬），本次基于 DOI 元数据与摘要进行结构化映射；新术语 BTC、WME 已附 `[Lineage/Source]`。
