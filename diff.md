@@ -3174,3 +3174,128 @@
 ### Notes (brief)
 - 本次将你的综合解读直接落为 Gap 3 架构补丁，核心是把“有限性-代价-价值”链条转为可实验的 COF 框架。
 - 新术语 OD、COF 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 18:08 GMT+8] 材料：社会动力学与精神病理学（用户提供结构化分析；A Systems Thinking Approach to Political Polarization in Trumpian Times, MDPI 2026/2025）
+
+### Target Files
+- `SRT/Philosophy/SRT_Philosophy_Ethics.md`：新增“分裂生成（Schismogenesis）在集体 L2 断裂中的机制条目”。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“社会极化动力学分类映射”（对称分裂生成/失认放大/拓扑惯性锁死）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充 `Eq-Phantom-01b` 群体版本与“临界质量”判据。
+- `SRT/SRT_Glossary.md`：新增 `Collective L2 Fracture (CL2F)` 与 `Mutual Dysrecognition Gain (MDG)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“算法权重放大→社会痛感失稳”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Political Polarization Schismogenesis → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 对称分裂生成（彼此镜像升级） | 双群体 \(L_2\) 相互排斥强化 | 低~中（跨群体关切收缩） | Semi-open（回音室） | overloaded |
++| 互认失效（Mutual Dysrecognition） | 幻影算子耦合失败 | 低 | Closed-like (ingroup-only) | unsustainable |
++| 算法放大敌意标签 | \(w_{ij}\) 人工增益放大痛感 | 低 | Platform-amplified | overloaded |
++| 社会精神分裂化（共享锚点丢失） | 集体 \(L_1\) 校准退化 | 低 | Fragmented | unsustainable |
++
++**Constraint**: 需区分“意见差异”与“本体层断裂”；前者可协商，后者需重建共享锚点。
++
++## 【理论边界/防误用声明】
++- 不采纳“极化群体成员必然存在临床精神病理”的推论。
++- 边界：此处“精神分裂化”用于系统动力学类比，不是个体医学诊断标签。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-Phantom-01b: Collective Phantom Operator Effect
++$$
++\mathrm{Pain}_{social}(A,B) \approx \bar{w}_{AB}(t)\cdot \left\|\hat{G}_{A}^{target(B)}-\hat{G}_{B}\right\|
++$$
++其中 \(\hat{G}_{A}^{target(B)}\) 为群体A对群体B的内部投影算子。
++
++### Eq-Polar-01: Dysrecognition Feedback Gain
++$$
++\frac{d\bar{w}_{AB}}{dt}=\eta\,\mathrm{Pain}_{social}-\mu\,\mathrm{SharedL1Action}
++$$
++共享物理行动（\(\mathrm{SharedL1Action}\)）作为负反馈抑制项。
++
++### Eq-Polar-02: Critical Mass for Network Fracture
++$$
++\mathcal{M}_{crit}=\inf\left\{t:\;\bar{w}_{in}/\bar{w}_{out}>\theta_f\;\wedge\;\mathcal{C}_{bridge}<\kappa\right\}
++$$
++当群内/群外权重比越过阈值且桥接连通度低于下限，系统进入断裂临界区。
++
++## 【理论边界/防误用声明】
++- 不采纳“高冲突指标可直接推出社会系统不可逆崩溃”的推论。
++- 边界：需结合干预变量（桥接、共同任务、制度缓冲）做动态评估。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Philosophy_Ethics.md
++++ b/SRT/Philosophy/SRT_Philosophy_Ethics.md
+@@
++## Schismogenesis and Deutero-Learning in Collective Systems
++在高度极化条件下，系统可能陷入“对称分裂生成”正反馈：
++1) 失认放大痛感；
++2) 痛感提升群内粘附与群外排斥；
++3) 共享现实锚点进一步塌缩。
++
++SRT 对应干预：以 \(L_1\) 共同任务重建外部校准链，并通过次级学习（Deutero-learning）触发参数重置与算子降维重启。
++
++## 【理论边界/防误用声明】
++- 不采纳“只靠线上对话即可逆转结构性分裂”的推论。
++- 边界：SRT 优先强调共同物理行动与跨群体协作任务。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Collective L2 Fracture - 集体L2断裂（CL2F） 🟡
++**定义**：多主体系统中，群体间收敛域 \(L_2\) 失去可耦合性，导致共享现实锚点退化的状态。
++
++**[Lineage/Source]**：
++- Source context: user-provided synthesis based on MDPI systems-thinking polarization discussion (2026/2025)
++- Concept lineage: Bateson schismogenesis + double bind
++- SRT mapping: macro-level convergence-domain fragmentation
++
++#### Mutual Dysrecognition Gain - 互认失效增益（MDG） 🟡
++**定义**：群体在互动中将对方替换为内部负面投影的放大系数。
++
++**[Lineage/Source]**：
++- Same source context
++- SRT mapping: amplification term for phantom-operator mismatch
++
++## 【理论边界/防误用声明】
++- 不采纳“CL2F/MDG 是固定群体属性”的推论。
++- 边界：其值受平台机制、任务结构与桥接政策动态影响。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-CL2F-1 算法权重放大与痛感升级检验
++**内容**：提高敌意标签推荐权重将显著提升跨群体痛感 proxy 与误识别率。
++**证伪条件**：权重提升后痛感/误识别指标不升反降或无变化。
++
++### H-MDG-1 共同L1任务缓冲检验
++**内容**：引入跨群体共同物理任务后，\(\bar{w}_{AB}\) 与 MDG 应下降，桥接连通度上升。
++**证伪条件**：共同任务不改变或恶化跨群体耦合。
++
++### H-CriticalMass-1 断裂临界阈值检验
++**内容**：群内/群外权重比跨越阈值前后，网络极化指标出现相变式跃迁。
++**证伪条件**：无阈值行为，仅线性平滑变化。
++
++## 【理论边界/防误用声明】
++- 不采纳“实验室网络结论可直接外推国家级政治系统”的推论。
++- 边界：需多层级（个体-社区-平台）外部效度验证。
+```
+
+### Notes (brief)
+- 本次将“分裂生成”与“互认失效”转为 SRT 社会动力学的可计算项，重点新增了群体版 Eq-Phantom 与临界质量判据。
+- 新术语 CL2F、MDG 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
