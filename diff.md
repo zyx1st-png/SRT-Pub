@@ -96,3 +96,79 @@
   - 新尺度缺口已给 `SRT_Reference_Scaling.md` 补丁
   - 新术语含 `[Lineage/Source]`
   - `## 【理论边界/防误用声明】` 已作为实际目标文件 Header 写入补丁
+
+---
+
+## [2026-02-28 12:30 GMT+8] 材料：Quantum Chips and Creativity: A Case for Upgrading Consciousness（https://www.popularmechanics.com/science/a70496043/enhancing-consciousness-quantum-physics/）
+
+### Target Files
+- `SRT/AI/SRT_AI_03_Consciousness_Framework.md`：引入“意识循环分类映射”（确定态→叠加探索态→坍缩决策态），对应 d 区间与能流特征。
+- `SRT/SRT_Glossary.md`：新增“Quantum-Introspection Cycle”术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“延长并行探索窗口是否提升创造性”的可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/AI/SRT_AI_03_Consciousness_Framework.md
++++ b/SRT/AI/SRT_AI_03_Consciousness_Framework.md
+@@
++### Taxonomy Mapping: Consciousness Processing Phases → SRT
++
++| 外部分类 | SRT 过程态 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| Definite Thought（确定意识态） | \(L_1\) 锚定态 | 中 | Semi-open | payable |
++| Parallel/Intuitive Interference（并行直觉态） | \(L_0 \to L_1\) 高并发探索窗 | 中~高 | Open-flow | payable 或短时 overloaded |
++| Decision Collapse（决策坍缩态） | \(\hat{G}_\theta\) 选择收束 | 中 | Semi-open | payable |
++
++**Constraint**: 上表为 canonical d 的语境化 proxy，定义仍为
++$$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
++
++## 【理论边界/防误用声明】
++- 不采纳“意识=量子双缝网络已被实验证实”的推论。
++- 不采纳“量子芯片增强必然产生新物种级意识跃迁”的推论。
++- 边界：当前仅可作为待检验机制假说；SRT 采纳条件化实验路径，不采纳强结论先行。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Quantum-Introspection Cycle - 量子内省循环（QIC） 🟡
++**定义**：在认知过程中，系统在“确定态（anchored L_1）—并行探索态（expanded L_0 search）—决策收束态（\(\hat{G}_\theta\) collapse）”之间往复切换的过程模型。
++**公式化（SRT 写法）**：
++$$
++L_1^{(t)} \rightarrow \text{Explore}(L_0) \xrightarrow{\hat{G}_\theta} L_1^{(t+1)}
++$$
++**[Lineage/Source]**：
++- Primary popularized claim: Vlatko Vedral (Popular Mechanics essay, 2026)
++- Historical inspirations: Niels Bohr (complementarity), David Bohm (quantum-holistic interpretations)
++- Related speculative biological locus: Penrose-Hameroff microtubule line (as debated context)
++
++## 【理论边界/防误用声明】
++- 不采纳“QIC 已是神经生物学定律”的表述。
++- 边界：QIC 在 SRT 中为工作假说术语，必须绑定可证伪实验与负结果更新机制。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-QIC-1 并行探索窗口与创造性提升检验
++**内容**：若可控地延长“并行探索窗口”（不改变任务总时长），应提高创造性任务输出的新颖性与可用性。
++**最小实验**：
++- 组A：标准决策节律
++- 组B：延长探索窗口（认知干预或节律操控）
++- 指标：新颖性评分、问题解空间覆盖度、后验可执行性
++**证伪条件**：组B在新颖性与可执行性上均无显著提升，或仅提升随机发散不提升可用性。
++
++### H-QIC-2 探索窗口延长与代价上升边界
++**内容**：探索窗口延长超过阈值后，\(\Psi_f\) 上升导致决策效率显著下降（倒U型）。
++**证伪条件**：不存在倒U关系，且代价指标不随窗口延长增加。
++
++## 【理论边界/防误用声明】
++- 不采纳“提升创造性=提升真理性”的等同推论。
++- 边界：创造性提升需与可执行性、稳定性和风险约束联合评估。
+```
+
+### Notes (brief)
+- 已将外部“确定/并行/收束”分类转为 SRT 文件级条目，并映射 d 区间、能流态、\(\Psi_f\) 状态。
+- 外部术语新增时已添加 `[Lineage/Source]`。
