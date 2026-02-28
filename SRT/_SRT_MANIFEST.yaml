@@ -98,6 +98,7 @@ domains:
       - "_SRT_MEDIA_PIPELINE.md"
       - "_SRT_MEDIA_QUEUE.md"
       - "_SRT_OPERATIONS_SCHEDULE.md"
+      - "_SRT_AUTOMATION_SETUP.md"
 
 dependency_policy:
   canonical_form: "hyphenated-id-or-core-law-path"
