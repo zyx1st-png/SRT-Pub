@@ -1836,3 +1836,101 @@
 ### Notes (brief)
 - 已将文章核心分类（嵌套振荡/GABA门控/通道扰动/峰值-宽带分解）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 NOI 含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 15:24 GMT+8] 材料：Sleep Protects the Brain’s Powerhouses from Toxic Waste（https://neurosciencenews.com/sleep-mitochondria-lipid-clearance-30144/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“睡眠代谢清除链”分类映射（神经元氧化负担/胶质转运/外周血细胞清除/自噬调节）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“睡眠-代谢废物清除动力学”方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Sleep Lipid Clearance Cascade (SLCC)` 与 `Mitochondrial Oxidative Load (MOL)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“睡眠剥夺→脂质转运阻断→线粒体损伤”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Sleep-Dependent Metabolic Clearance → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 清醒期氧化脂质累积 | 神经元代谢负荷上升 | 低~中 | Open-flow（高耗能） | overloaded趋向 |
++| 睡眠期神经元→胶质转运 | 负荷外包与通道减压 | 中 | Open/Semi-open | payable |
++| 胶质→外周血细胞清除 | 跨边界废物移除 | 中 | Open-flow（脑-外周耦合） | payable |
++| 睡眠调控自噬与线粒体更新 | 内部稳态修复 | 中~高（恢复态） | Semi-open | payable |
++| 睡眠不足导致线粒体损伤与记忆下降 | 清除链断裂 | 低 | Semi-open / Closed-like | unsustainable |
++
++**Constraint**: 睡眠效应必须分解为“神经元负荷、胶质转运、外周清除、自噬更新”四段，禁止单节点归因。
++
++## 【理论边界/防误用声明】
++- 不采纳“睡眠作用仅是主观休息感”的推论。
++- 边界：SRT 将睡眠视为代谢清除与稳态修复机制，不等同于单一心理状态变量。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-Sleep-01: Oxidized Lipid Clearance Dynamics
++$$
++\frac{dL_{ox}}{dt}=P_{wake}-\big(C_{ng}\cdot S + C_{gp}\cdot S\big)
++$$
++其中 \(L_{ox}\) 为氧化脂质负荷，\(P_{wake}\) 为清醒产出率，\(C_{ng},C_{gp}\) 分别为神经元→胶质、胶质→外周清除系数，\(S\) 为睡眠门控因子。
++
++### Eq-Sleep-02: Mitochondrial Oxidative Load Index
++$$
++\mathrm{MOL}=\alpha L_{ox}+\beta\,\mathrm{ROS}-\gamma\,\mathrm{Autophagy}_{eff}
++$$
++MOL 上升预测线粒体功能下降与认知输出受损风险上升。
++
++## 【理论边界/防误用声明】
++- 不采纳“单一生物标志物即可判定睡眠恢复质量”的推论。
++- 边界：方程为机制近似，需要多指标联合验证。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Sleep Lipid Clearance Cascade - 睡眠脂质清除级联（SLCC） 🟡
++**定义**：睡眠期间由“神经元→胶质→外周血细胞”完成氧化脂质转运与清除的跨细胞级联系统。
++
++**[Lineage/Source]**：
++- Source context: HHMI summary via Neuroscience News (2026-02-18)
++- Paper: Nature, DOI: 10.1038/s41586-025-10050-w
++- SRT mapping: metabolic housekeeping pathway underpinning neuronal fitness
++
++#### Mitochondrial Oxidative Load - 线粒体氧化负荷（MOL） 🟡
++**定义**：反映线粒体在氧化应激、脂质损伤与自噬清除平衡中的净负荷状态指标。
++
++**[Lineage/Source]**：
++- Same source context; oxidative stress, NAD+/mitochondrial integrity findings
++- SRT mapping: cellular energy reliability constraint
++
++## 【理论边界/防误用声明】
++- 不采纳“SLCC/MOL 指标可直接替代临床诊断”的推论。
++- 边界：其用途是机制分层与风险监测，不是独立临床终判。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-SLCC-1 睡眠依赖清除链必要性检验
++**内容**：抑制外周清除受体（或等效通道）将提高脑内氧化脂质负荷并降低记忆表现。
++**证伪条件**：抑制后脂质负荷与行为指标无显著变化。
++
++### H-MOL-1 睡眠剥夺与线粒体负荷耦合检验
++**内容**：连续睡眠剥夺将显著提高 MOL，并伴随自噬效率下降与认知任务受损。
++**证伪条件**：剥夺后 MOL 不升高或与认知损害无关联。
++
++## 【理论边界/防误用声明】
++- 不采纳“恢复一晚睡眠即可逆转全部慢性代谢损伤”的推论。
++- 边界：SRT 预计存在时程滞后与累积阈值效应。
+```
+
+### Notes (brief)
+- 已将文章主分类（清醒负荷/睡眠转运/外周清除/自噬修复）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 SLCC、MOL 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
