@@ -1934,3 +1934,101 @@
 ### Notes (brief)
 - 已将文章主分类（清醒负荷/睡眠转运/外周清除/自噬修复）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 SLCC、MOL 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 15:33 GMT+8] 材料：Neural Reprogramming Restores “Young” Memory in Aging Brains（https://neurosciencenews.com/neural-reprogramming-memory-reversal-30118/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“记忆细胞年轻化”分类映射（衰老失塑/OSK短脉冲重编程/区域特异恢复）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“engram 可塑性恢复动力学”方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Engram Partial Reprogramming (EPR)` 与 `Cognitive Rejuvenation Window (CRW)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“区域特异 engram 重编程”的可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Engram Rejuvenation Interventions → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 衰老/AD 下 engram 失塑 | 记忆轨迹读写失配 | 低~中 | Semi-open（退化态） | overloaded |
++| OSK 短时脉冲（局部重编程） | 可塑性窗口重启 | 中 | Open/Semi-open | payable（受控干预） |
++| 海马 dentate gyrus 靶向 | 近期学习与回忆恢复 | 中 | Open-flow | payable |
++| mPFC engram 靶向 | 远期记忆检索恢复 | 中~高 | Open/Semi-open | payable |
++| 分子年轻化+兴奋性归一 | 网络噪声下降与读出稳定 | 中 | Semi-open | payable |
++
++**Constraint**: “恢复表现”需分解为近期记忆、远期记忆与策略质量，禁止单任务泛化。
++
++## 【理论边界/防误用声明】
++- 不采纳“细胞年轻化=疾病根因已逆转”的推论。
++- 边界：SRT 将其视为功能恢复通道之一，不替代全病程机制修复。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-EPR-01: Engram Plasticity Recovery
++$$
++\frac{dP_e}{dt}=\eta\,U_{OSK}(t)-\lambda\,D_{age/AD}(t)
++$$
++其中 \(P_e\) 为 engram 可塑性指标，\(U_{OSK}\) 为短脉冲重编程强度，\(D_{age/AD}\) 为退化负荷。
++
++### Eq-EPR-02: Cognitive Rejuvenation Window
++$$
++\mathrm{CRW}=\arg\max_{\Delta t}\big(\Delta M_{recent}+\omega\Delta M_{remote}-\rho R_{identity-loss}\big)
++$$
++其中 \(R_{identity-loss}\) 约束细胞身份稳定风险。
++
++## 【理论边界/防误用声明】
++- 不采纳“方程最优窗口可直接外推临床人群剂量”的推论。
++- 边界：该方程用于前临床机制建模，需跨物种与安全性校正。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Engram Partial Reprogramming - 记忆痕迹部分重编程（EPR） 🟡
++**定义**：对学习激活的 engram 神经元进行短时、受控 OSK 表达，以恢复可塑性并改善记忆读写。
++
++**[Lineage/Source]**：
++- Source context: EPFL study summarized by Neuroscience News (2026-02-15)
++- Paper: Neuron, DOI: 10.1016/j.neuron.2025.11.028
++- SRT mapping: targeted rejuvenation of memory-trace cells
++
++#### Cognitive Rejuvenation Window - 认知年轻化窗口（CRW） 🟡
++**定义**：在“恢复收益”与“身份扰动风险”之间实现最优平衡的干预时窗。
++
++**[Lineage/Source]**：
++- Derived from same study’s controlled OSK pulse paradigm
++- SRT mapping: intervention timing control variable
++
++## 【理论边界/防误用声明】
++- 不采纳“EPR/CRW 已具备直接临床可转化性”的推论。
++- 边界：当前证据主要为鼠模型 proof-of-concept。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-EPR-1 区域特异记忆恢复检验
++**内容**：DG engram 重编程优先改善近期记忆，mPFC engram 重编程优先改善远期记忆。
++**证伪条件**：区域靶向与恢复类型无差异对应关系。
++
++### H-EPR-2 身份稳定约束检验
++**内容**：在有效恢复区间内，神经元身份标记应保持稳定，不出现明显去分化副效应。
++**证伪条件**：记忆恢复伴随显著身份丢失或异常增殖信号。
++
++## 【理论边界/防误用声明】
++- 不采纳“行为改善即可忽略长期安全风险”的推论。
++- 边界：SRT 要求长期随访细胞稳定性与网络副效应。
+```
+
+### Notes (brief)
+- 已将文章主分类（engram失塑/OSK重编程/区域特异恢复）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 EPR、CRW 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
