@@ -9,25 +9,12 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 # SRT Explainability Audit (Auto)
 
 - Candidate Docs: 71
-- Mean Explainability Completeness (5-block ratio): 52.1%
-- Full 5/5 Docs: 10/71 (14.1%)
+- Mean Explainability Completeness (5-block ratio): 66.8%
+- Full 5/5 Docs: 23/71 (32.4%)
 - Partial Docs (>=2/5): 48/71 (67.6%)
 
 ## Lowest-score Docs (Top 30)
 
-- `AI/SRT_AI_02_Mortality_Wisdom.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `AI/SRT_AI_03_Consciousness_Framework.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Core_Law/SRT_Reference_Axioms.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Core_Law/SRT_Reference_Scaling.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Clin_01_Pathology.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Clin_02_FEP.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Clin_03_DMN_Networks.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Neuro_10_Advanced_Models.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/SRT_SocTheory_04_Luhmann_ANT.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/SRT_Soc_03_Institutions.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `SRT_1H_Onboarding.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `SRT_OPTIMIZATION_BACKLOG.md`: 1/5, missing=definition, formalization, mechanism, falsification
 - `AI/SRT_AI_01_Ontology.md`: 2/5, missing=formalization, mechanism, falsification
 - `AI/SRT_AI_Architecture.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Core_00_Intro.md`: 2/5, missing=formalization, mechanism, falsification
@@ -45,3 +32,16 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 - `Neuroscience/SRT_Neuro_07_Evo_Devo.md`: 2/5, missing=formalization, mechanism, falsification
 - `Neuroscience/SRT_Neuro_08_Immune_Dist.md`: 2/5, missing=formalization, mechanism, falsification
 - `Neuroscience/SRT_Neuro_Experiments.md`: 2/5, missing=formalization, mechanism, falsification
+- `Philosophy/SRT_SocTheory_05_Language_Eco.md`: 2/5, missing=formalization, mechanism, falsification
+- `Philosophy/SRT_Soc_02_Behavioral.md`: 2/5, missing=definition, mechanism, falsification
+- `Philosophy/SRT_Social_Economics.md`: 2/5, missing=definition, formalization, falsification
+- `Spirituality/SRT_Spirit_01_Religion_Ontology.md`: 2/5, missing=formalization, mechanism, falsification
+- `Spirituality/SRT_Spirit_02_Traditions.md`: 2/5, missing=formalization, mechanism, falsification
+- `Spirituality/SRT_Spirit_03_Zhensong_NDE.md`: 2/5, missing=formalization, mechanism, falsification
+- `Spirituality/SRT_Spirit_04_Synthesis.md`: 2/5, missing=formalization, mechanism, falsification
+- `Spirituality/SRT_Spirit_05_Shoshin.md`: 2/5, missing=formalization, mechanism, falsification
+- `Spirituality/SRT_Spirit_06_Love_Ontology.md`: 2/5, missing=formalization, mechanism, falsification
+- `Spirituality/SRT_Spirit_08_Music.md`: 2/5, missing=formalization, mechanism, falsification
+- `AI/SRT_AI_00_Crisis.md`: 3/5, missing=formalization, falsification
+- `Core/SRT_Core_14_Dynamics_Scaling.md`: 3/5, missing=formalization, falsification
+- `Core/SRT_Core_22_Equations.md`: 3/5, missing=formalization, falsification
