@@ -601,12 +601,3 @@ $$\text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试�
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
-
-## Explainability Finalization Block
-
-### 形式化（Formalization）
-$$
-\mathcal{E}: \text{Claim} \mapsto (\text{Variables}, \text{Relations}, \text{Constraints})
-$$
-含义：关键命题应可映射为变量-关系-约束三元组。
-

@@ -754,9 +754,3 @@ $$d_{value} \propto \frac{1}{\tau_{collapse}}$$
 ## 【理论边界/防误用声明】
 - 不采纳“抽象可映射即物理可部署”的推论。
 - 边界：SRT 区分可解释映射与可工程调用能力。
-
-## Explainability Finalization Block
-
-### 机制解释（Mechanism）
-通过术语对齐、依赖回链和可观测接口，将理论主张转化为可审计机制路径。
-
