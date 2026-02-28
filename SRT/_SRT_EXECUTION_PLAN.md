@@ -18,9 +18,15 @@ dependency: [_SRT_INDEX, _SRT_QUALITY_SCORECARD]
 
 1. 材料融合线（直接入正文）
 2. 论文孵化线（可投稿）
+   - 见：`_SRT_PAPER_PIPELINE.md`
 3. 定时情报采集线（先审后入正文）
+   - 见：`_SRT_SIGNAL_PIPELINE.md`
 4. 文档治理线（质量与减冗）
+   - 见：`_SRT_GOVERNANCE_PIPELINE.md`
 5. 自媒体双风格线（大众/学者）
+   - 见：`_SRT_MEDIA_PIPELINE.md`
+
+配套运行节奏：`_SRT_OPERATIONS_SCHEDULE.md`
 
 ---
 

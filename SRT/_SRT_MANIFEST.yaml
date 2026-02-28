@@ -87,6 +87,17 @@ domains:
       - "_SRT_RELEASE_NOTE_TEMPLATE.md"
       - "_SRT_RELEASE_2026-02.md"
       - "_SRT_SLIMMING_CHANGELOG_2026-02.md"
+      - "_SRT_EXECUTION_PLAN.md"
+      - "_SRT_PAPER_PIPELINE.md"
+      - "_SRT_PAPER_CANDIDATES.md"
+      - "_SRT_PAPER_DRAFT_ACTIVE.md"
+      - "_SRT_PAPER_SUBMISSION_CHECKLIST.md"
+      - "_SRT_SIGNAL_PIPELINE.md"
+      - "_SRT_SIGNAL_LOG.md"
+      - "_SRT_GOVERNANCE_PIPELINE.md"
+      - "_SRT_MEDIA_PIPELINE.md"
+      - "_SRT_MEDIA_QUEUE.md"
+      - "_SRT_OPERATIONS_SCHEDULE.md"
 
 dependency_policy:
   canonical_form: "hyphenated-id-or-core-law-path"
