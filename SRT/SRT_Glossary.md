@@ -34,6 +34,40 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - [第3部分：领域特定参数](#3-领域特定参数)
 - [第4部分：关键概念](#4-关键概念词汇表)
 - [第5部分：假设索引](#5-假设编号索引-h1-h60)
+- [第0部分：术语治理增强字段（P1-3）](#0-术语治理增强字段p1-3)
+
+---
+
+## 0. 术语治理增强字段（P1-3）
+
+> 目标：降低跨文档歧义，提升 AI 检索稳定性。  
+> 字段说明：
+> - **Canonical Scope**：该术语的规范语义适用范围。
+> - **Confusable With**：常见易混术语/符号。
+> - **Lineage/Source**：首要定义来源（内部 canonical 或外部来源）。
+
+### d-value（d）
+- **Canonical Scope**：SRT 全域中“选择范围/关切广度”统一记号；当需精确定义时，以 `AI/SRT_AI_01_Ontology.md` Ax-ONT-3 为最高锚点。
+- **Confusable With**：分形维度 d、空间维数 d、统计自由度 d.f.、局部操作化代理（如 attention entropy）。
+- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md#Ax-ONT-3`。
+
+### 本体论摩擦（\Psi_f）
+- **Canonical Scope**：仅用于“维持/更新选择状态的本体论代价与阻力”语境。
+- **Confusable With**：IIT 的 `\Phi`（整合信息量）、一般耗散项 `D`、物理摩擦系数 `\mu`。
+- **Lineage/Source**：`Core/SRT_Core_22_Equations.md` Eq-Force-01；`Core_Law/SRT_Reference_Dynamics.md`。
+
+### 幽灵算子（\hat{G}_\theta）
+- **Canonical Scope**：将 `L_0` 投影到 `L_1` 的参数化选择算子（具身参数驱动）。
+- **Confusable With**：纯统计估计器、无参数投影算子、仅神经网络前向函数。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md`；`Core/SRT_Core_13a_Operator_Basics.md`。
+
+### 三域记号（L_0 / L_1 / L_2）
+- **Canonical Scope**：
+  - `L_0`：潜在可能性域（外部 state-space 记号如 `\Omega, S` 写入 SRT 时默认映射到此）
+  - `L_1`：当前显现/锚定切片
+  - `L_2`：跨主体收敛结构
+- **Confusable With**：`L0/L1/L2` 无下标写法、逻辑层级编号、网络层号。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md`；`Core/SRT_Core_12a_Ontology_L0L1.md`；`Core/SRT_Core_12b_Ontology_L2.md`。
 
 ---
 
