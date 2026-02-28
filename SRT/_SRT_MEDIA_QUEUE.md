@@ -8,6 +8,8 @@ dependency: [_SRT_MEDIA_PIPELINE]
 
 # SRT 发布准备队列（仅策划）
 
+> Auto Rule: 每天 08:00（Asia/Shanghai）自动新增 1 个策划主题。
+
 ## Queue Template
 - Topic:
 - Direction (大众向/学术向):

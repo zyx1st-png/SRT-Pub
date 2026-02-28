@@ -15,7 +15,7 @@ dependency: [_SRT_EXECUTION_PLAN]
 - Weekly:
   - Pipeline 2 论文候选池与主稿迭代
   - Pipeline 4 文档治理巡检
-- Twice weekly:
-  - Pipeline 5 双风格内容产出（默认先入发布队列）
+- Daily at 08:00 (Asia/Shanghai):
+  - Pipeline 5 自动生成 1 个策划主题（仅选题/方向/原因/内部关联整理）并写入媒体队列
 - Biweekly:
   - Release Note 更新与质量回顾
