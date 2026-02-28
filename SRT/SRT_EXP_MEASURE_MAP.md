@@ -41,6 +41,14 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 - 皮质醇日节律偏移
 - 心率恢复半衰期
 
+### 信息几何 proxy（新增）
+- 经验 Fisher 条件数：\(\log\kappa(\hat g_F)\)
+- 经验 Fisher 体积项：\(\log\det(\hat g_F)\)
+- 最大特征值漂移：\(\lambda_{max}(\hat g_F)\)
+- 变点检测：z-score / CUSUM 作用于上述序列
+
+**操作说明**：在固定窗口下同步记录 raw NLL 与 Fisher 频谱代理；若 Fisher 代理先于 NLL 出现显著尖峰，可标注为“结构重配置预警”。
+
 ---
 
 ## 3) ii（信息-存在强度）

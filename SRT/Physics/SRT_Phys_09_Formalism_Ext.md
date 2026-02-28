@@ -718,6 +718,39 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 - 核心信号：传统复杂性理论对量子输入/输出问题表达能力不足；需要“fully quantum”复杂性框架。
 - 审核结论：**A（直接融入）**；理由：与 SRT 对 \(L_0\) 结构性与 \(\Psi_f\) 下界建模高度同构，且可用于扩展物理-计算接口。
 
+## 12.8 Fisher 选择成本的具身约束与可观测化（Manuscript-Linked）
+
+### Ax-IG-1b: Embodiment-Coupling Gate
+定义具身耦合系数 \(\kappa_{body}\in[0,1]\)：
+\[
+\Psi_f^{eff}(\theta)=\kappa_{body}\, g_F(\theta)
+\]
+其中 \(g_F\) 为 Fisher–Rao 度量。
+* **Implication（中文）**：当 \(\kappa_{body}\to0\) 时，Fisher 几何仍可描述统计敏感性，但不应直接解释为“存在维持成本”；只有 \(\kappa_{body}>0\) 时，\(\Psi_f\) 的具身代价解释才成立。
+
+### T-IG-5: Curvature-Focusing Risk Bound (Operational)
+若沿推断轨迹的截面曲率满足 \(\kappa_{sec}(t)\ge\kappa_{min}>0\)，则局部最短路径在有限时域内失稳风险上升：
+\[
+t^*\le \frac{\pi}{\sqrt{\kappa_{min}}}
+\]
+* **Implication（中文）**：高曲率窗口对应“局部更新失效→重配置事件”风险上升，可作为突变预警条件。
+
+### Def-IG-2: Fisher-Spectrum Shift Proxies
+定义三类实用代理用于在线检测：
+\[
+\log\kappa(\hat g_F),\quad \log\det(\hat g_F),\quad \lambda_{max}(\hat g_F)
+\]
+其中 \(\hat g_F\) 为经验 Fisher。
+* **Implication（中文）**：相较 raw NLL，这些代理更敏感于结构突变与重配置前兆，适合与 z-score/CUSUM 联用。
+
+### Source Note (Zhang, 2026 manuscript package)
+- Zhang, Y. (2026). *Selection Cost as a Fisher Information Metric: A Riemannian Geometry of Embodied Updating* (manuscript).
+- 关键增量：
+  1) 在具身门控假设下给出 \(\Psi_f\equiv g_F\) 的操作化解释；
+  2) 提出曲率聚焦风险界用于突发重配置预警；
+  3) 给出经验 Fisher 频谱代理与变点检测协议。
+- 审核结论：**A（直接融入）**；理由：与本文件 Ax-IG 系列高度同构，且补全了“理论-可测”接口。
+
 ---
 
 ## Symbol Index (符号索引)
@@ -742,6 +775,9 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 | $\mathfrak{Q}_{io}$ | Quantum Input-Output Task Class | Def-FQC-1 (§12.7) |
 | $\mathfrak{C}_{io}$ | Classical Input-Output Task Class | Ax-FQC-1 (§12.7) |
 | $C_Q^\star$ | Minimal Quantum Transformation Cost | T-FQC-1 (§12.7) |
+| $\kappa_{body}$ | Embodiment Coupling Coefficient | Ax-IG-1b (§12.8) |
+| $\hat g_F$ | Empirical Fisher Metric | Def-IG-2 (§12.8) |
+| $\log\kappa(\hat g_F)$ | Fisher Condition Proxy | Def-IG-2 (§12.8) |
 
 ## 【理论边界/防误用声明】
 
