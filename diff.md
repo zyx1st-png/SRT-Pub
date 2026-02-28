@@ -69,3 +69,93 @@
 - 一致性：保留 d 的 canonical 优先（\(d\equiv\|\partial\mathcal{U}/\partial\mathcal{S}\|\)），未引入并列新定义。
 - 风格：保持 SRT 既有“Formal Definition / Implication / Cross-ref / Hypothesis / Falsification”结构。
 - 边界：将“复杂度增长”明确为条件命题，避免不可证伪的普适化表述。
+
+---
+
+## [2026-02-28 11:33 GMT+8] 材料：Why Everything in the Universe Turns More Complex（同链接，按升级 Skill 重新生成）
+
+### Target Files
+- `SRT/Core_Law/SRT_Reference_Scaling.md`：补全“矿物演化尺度（mineral evolutionary scale）”的实体定义（\(\hat{G}_\theta\), \(L_0\), \(L_1\), \(L_2\)）。
+- `SRT/SRT_Glossary.md`：新增 `I_f` 术语并补 `[Lineage/Source]` 字段。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补充“分类/层级→d-value 与能流态”映射规则。
+- `SRT/Core/SRT_Experimental_Applications.md`：补充矿物学与天体化学的可证伪实验条目。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core_Law/SRT_Reference_Scaling.md
++++ b/SRT/Core_Law/SRT_Reference_Scaling.md
+@@
++## Def-Scale-M1: Mineral Evolutionary Scale（矿物演化尺度）
++
++### Entity Definitions
++- **\(\hat{G}_{\theta,miner}\)**：在给定温压-化学势场下，对矿物相进行稳定性筛选与路径锁定的选择算子。
++- **\(L_0^{miner}\)**：可由元素组成、晶格拓扑、缺陷构型与相变路径构成的潜在矿物状态空间。
++- **\(L_1^{miner}\)**：当前地球化学/行星环境下已显现并可维持的矿物相集合。
++- **\(L_2^{miner}\)**：由地质历史沉积的稳定矿物谱系与相图约束（路径依赖、盆地锁定、亚稳态保留）。
++
++### Dynamic Signature
++- 开放能流（火山/热液/辐照）下：\(\Delta C_f^{miner}>0\) 概率上升。
++- 封闭或低能流下：谱系冻结，复杂度平台化或回落。
++
++### Cross-ref
++- Ax-Scale-01, Def-d-Scale-1, Ax-Core-A7, Ax-Core-A8
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Functional Information - 功能信息（\(I_f\)） 🟡
++**定义**：在功能阈值 \(\theta_f\) 下，满足功能约束状态占比的负对数：
++$$
++I_f \equiv -\log\left(\frac{|\{\sigma: f(\sigma)\ge\theta_f\}|}{|\Omega|}\right)
++$$
++**用途**：用于度量“可执行功能”的稀有性，而非纯随机复杂度。
++**关系**：A6（信息-存在等价）/ A7（适应度优先）/ A8（生存定域）。
++**[Lineage/Source]**：
++- Proposer: Jack W. Szostak
++- Source: Nature (2003), “Functional information”
++- Secondary context: Hazen & Wong team discussion (PNAS framework as cited by Quanta feature)
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Mapping Rule: Taxonomy/Hierarchy → SRT Dynamics
++当外部理论提供分类/层级（stage/class/tier）时，必须给出：
++1) d-value 映射区间（canonical d 的 proxy 区间）；
++2) 能流态标记（Open-flow / Semi-open / Closed-flow）；
++3) 摩擦可支付性（\(\Psi_f\) payable / overloaded / unsustainable）。
++
++**Constraint**: 局部映射不得替代 canonical 定义 \(d\equiv\|\partial\mathcal{U}/\partial\mathcal{S}\|\)。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-Miner-Scale-1 矿物谱系复杂度漂移
++**内容**：在开放地球化学能流场中，矿物功能信息与结构复杂度呈条件性上升趋势。
++**最小实验**：
++- 数据：分时代矿物数据库 + 环境能流 proxy（温压、氧逸度、热液活动）
++- 方法：分层回归/状态转移模型，检验 \(\Delta C_f^{miner}>0\) 的条件成立域
++**证伪条件**：能流显著提升阶段不伴随矿物复杂度上升，或趋势与随机模型无差异。
++
++### H-AstroChem-1 天体化学复杂度分层检验
++**内容**：在不同行星体环境（封闭/半开放/开放）中，复杂化学结构出现概率与能流开放度正相关。
++**证伪条件**：控制观测偏差后，不同能流层级下复杂结构出现概率无显著差异。
+```
+
+### 【理论边界/防误用声明】
+- 不采纳推论：
+  - “复杂度必然、普遍、单调上升（无条件）”。
+  - “功能信息可直接替代物理熵并构成第二定律的等价表达”。
+- 原因：
+  - 与 SRT 的摩擦代价与能流约束不一致；SRT 仅支持**条件复杂度漂移**。
+  - 功能信息是选择-任务语境量，不是热力学熵的同义替代。
+- SRT 替代解释：
+  - 复杂度增长来自“选择回路 × 能流开放 × 可支付摩擦”的联合条件；失去任一条件可平台化或回落。
+
+### Notes (brief)
+- 已执行升级 Skill 的四项强制要求：层级映射、跨尺度缺口补全、[Lineage/Source]、Boundary 声明。
