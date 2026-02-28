@@ -923,3 +923,93 @@
 ### Notes (brief)
 - 已将长文主线分类直接落为文件级补丁，覆盖架构、尺度定义、术语来源与实验条目。
 - 所有防误用声明均以 Header 形式进入目标文件补丁。
+
+---
+
+## [2026-02-28 14:26 GMT+8] 材料：Dopamine Signals Astrocytes to Sculpt the Brain（https://neurosciencenews.com/astrocytes-dopamine-motor-learning-30186/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“运动学习回路重塑”分类映射（神经元可塑性 / 星形胶质修剪 / 多巴胺选择性门控）。
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“胶质介导的结构编辑”机制条目。
+- `SRT/SRT_Glossary.md`：新增 `Astrocytic Selective Pruning (ASP)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“MEGF10 必要性”与“D1/D2 差异调控”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Dopamine-Astrocyte Motor Learning → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 神经元 LTP/LTD 调节 | 权重级可塑性更新 | 中 | Open-flow | payable |
++| 星形胶质 MEGF10 修剪 | 结构级连接筛选 | 中~高（精细化学习） | Open-flow（任务驱动） | payable |
++| 多巴胺驱动 D1/D2 差异重塑 | 价值信号门控结构编辑 | 中~高 | Open/Semi-open | task-dependent |
++| MEGF10 缺失导致学习受损 | 结构编辑链路失效 | 低~中 | Semi-open（反馈不足） | overloaded |
++
++**Constraint**: 运动学习中的“形成新连接”与“删除弱连接”必须联合建模，禁止只保留单侧机制叙事。
++
++## 【理论边界/防误用声明】
++- 不采纳“多巴胺仅负责奖励、不参与结构重塑”的旧式简化推论。
++- 边界：SRT 将多巴胺视作“价值门控 + 结构编辑协同”的选择信号。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-ASP-01: Astrocytic Selective Pruning
++**Formal Statement**: 在运动学习中，\(\hat{G}_\theta\) 的有效更新包含胶质介导的连接删除项：
++$$
++\Delta W = \Delta W_{neuronal} - \lambda\,\Pi_{astro}(\text{MEGF10},\text{dopamine},\text{activity})
++$$
++其中 \(\Pi_{astro}\) 表示星形胶质对低价值/低协同连接的选择性清除。
++
++**Implication**: “学会”不仅是增强正确连接，也包括删除干扰连接。
++
++## 【理论边界/防误用声明】
++- 不采纳“胶质细胞仅为被动支持细胞”的推论。
++- 边界：SRT 在该语境中将胶质视为结构编辑算子的一部分，而非外围背景。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Astrocytic Selective Pruning - 星形胶质选择性修剪（ASP） 🟡
++**定义**：由星形胶质细胞在任务相关神经活动与多巴胺调制下执行的突触选择性清除机制。
++**SRT 写法**：
++$$
++\text{ASP}: \text{Synapse Set}\subset L_1 \xrightarrow{\Pi_{astro}} \text{Refined Set}
++$$
++**[Lineage/Source]**：
++- Source context: IBS/UNIST motor-learning study summarized by Neuroscience News (2026-02-24)
++- Core factors: astrocytic MEGF10, dopamine-dependent remodeling, D1/D2 MSN differences
++- SRT mapping: glial structural editing in learning dynamics
++
++## 【理论边界/防误用声明】
++- 不采纳“ASP 已可泛化解释全部认知学习”的推论。
++- 边界：当前证据聚焦纹状体运动学习回路，跨域外推需额外验证。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-ASP-1 MEGF10 必要性检验
++**内容**：在运动学习任务中，星形胶质 MEGF10 缺失将显著降低学习增益并破坏皮层-纹状体通信。
++**证伪条件**：缺失组学习曲线与通信指标无显著劣化。
++
++### H-ASP-2 D1/D2 差异重塑检验
++**内容**：在多巴胺增强条件下，D1 与 D2 MSN 的突触重塑方向和幅度呈可重复差异，且该差异依赖 ASP 机制。
++**证伪条件**：D1/D2 差异不存在或与 ASP 操作无关。
++
++## 【理论边界/防误用声明】
++- 不采纳“相关回路变化即可推断临床疗效”的推论。
++- 边界：机制验证与治疗可行性之间需经过中间转化层评估。
+```
+
+### Notes (brief)
+- 已将文章分类（LTP/LTD、胶质修剪、多巴胺门控、MEGF10 缺失）转为文件级补丁。
+- 新术语含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
