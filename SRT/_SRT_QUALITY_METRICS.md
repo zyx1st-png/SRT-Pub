@@ -10,4 +10,4 @@ dependency: [_SRT_QUALITY_SCORECARD]
 
 - Frontmatter Coverage: 92/92 (100.0%)
 - Terminology Governance Coverage (core set): 4/4 (100.0%)
-- Boundary Header Coverage (theory candidates): 21/64 (32.8%)
+- Boundary Header Coverage (theory candidates): 31/64 (48.4%)
