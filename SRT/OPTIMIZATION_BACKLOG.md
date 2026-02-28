@@ -63,7 +63,7 @@
 
 ## P1（中优先级）
 
-### P1-1 假设 H1-H60+ 实验优先级矩阵
+### P1-1 假设 H1-H60+ 实验优先级矩阵（已完成 v1：`SRT/EXPERIMENT_PRIORITY_MATRIX.md`）
 - **目标**：按“风险等级 × 数据可得性 × 设备门槛 × 可重复性”打分排序。
 - **建议先做**：H7/H9/H10/H11/H18/H19/H22
 - **交付物**：`SRT/EXPERIMENT_PRIORITY_MATRIX.md`
