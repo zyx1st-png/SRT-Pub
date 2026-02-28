@@ -688,6 +688,36 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 
 粒子的摩擦 $\Psi_f(p)$ 取决于其与 $L_2$ 基本力的耦合强度。中微子摩擦极低，故保留了 $L_0$ 的原始性。
 
+## 12.7 全量子复杂性接口（Fully Quantum Complexity Interface）
+
+### Def-FQC-1: Quantum Input-Output Task Class
+定义量子输入-输出任务类：
+\[
+\mathfrak{Q}_{io}=\{\mathcal{T}:\rho_{in}\mapsto\rho_{out}\mid \rho_{in},\rho_{out}\in\mathcal{D}(\mathcal{H})\}
+\]
+其中输入与输出都为量子态（而非经典 bit-string）。
+
+### Ax-FQC-1: Classical-IO Complexity Is a Proper Subclass
+\[
+\mathfrak{C}_{io} \subsetneq \mathfrak{Q}_{io}
+\]
+* 含义：传统复杂性理论主要覆盖经典输入/输出任务；对于量子输入输出任务，仅靠经典 I/O 语言会遗漏关键难度结构。
+
+### T-FQC-1: Ontological Friction Lower Bound via Quantum Transformation Cost
+对任务 \(\mathcal{T}\in\mathfrak{Q}_{io}\)，其实现摩擦存在由变换复杂度给出的下界：
+\[
+\Psi_f(\mathcal{T})\ \gtrsim\ \lambda\cdot C_{Q}^\star(\rho_{in}\to\rho_{out})
+\]
+其中 \(C_Q^\star\) 是在允许误差下的最小量子电路/变换复杂度，\(\lambda>0\) 为复杂度-摩擦耦合常数。
+
+* **SRT 对齐解释**：这一定理把“量子输入输出任务的困难性”映射到 SRT 的维护成本语义：任务越依赖不可约量子变换，\(\Psi_f\) 下界越高。
+* **证据等级**：secondary synthesis（Quanta 访谈）+ primary research program 指向（Henry Yuen fully quantum complexity agenda）。
+
+### Source Note (Quanta, 2026-02-17)
+- Brubaker, B. (2026). *A New Complexity Theory for the Quantum Age*. Quanta Magazine.
+- 核心信号：传统复杂性理论对量子输入/输出问题表达能力不足；需要“fully quantum”复杂性框架。
+- 审核结论：**A（直接融入）**；理由：与 SRT 对 \(L_0\) 结构性与 \(\Psi_f\) 下界建模高度同构，且可用于扩展物理-计算接口。
+
 ---
 
 ## Symbol Index (符号索引)
@@ -709,6 +739,9 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 | $\Delta_{causal}$ | Causal Slack | Def-CS-1 [D1.14.1] |
 | $t_\Psi$ | Planck Consciousness Time | Ax-Planck-1 [A1.15.1] |
 | $\Lambda_{limit}$ | Resolution Horizon | Def-RH-1 [D1.15.1] |
+| $\mathfrak{Q}_{io}$ | Quantum Input-Output Task Class | Def-FQC-1 (§12.7) |
+| $\mathfrak{C}_{io}$ | Classical Input-Output Task Class | Ax-FQC-1 (§12.7) |
+| $C_Q^\star$ | Minimal Quantum Transformation Cost | T-FQC-1 (§12.7) |
 
 ## 【理论边界/防误用声明】
 
