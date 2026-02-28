@@ -2727,3 +2727,106 @@
 ### Notes (brief)
 - 已将文章主分类（单态悖论/观察者边界扩展/参与式分区）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 COSP、OBHE 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 15:59 GMT+8] 材料：Unifying Non-Equilibrium Information Thermodynamics and Genome Engine Dynamics（https://www.biorxiv.org/content/10.64898/2026.02.12.703632v1）
+
+### Target Files
+- `SRT/Physics/SRT_Physics_01_Quantum_Foundation.md`：新增“信息热力学-基因组引擎耦合”分类映射（CSB/SOC/CP-PES反馈）。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补充“细胞命运控制中的非平衡门控”映射（承诺轨迹 vs 非承诺轨迹）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“CP-PES 信息通量与命运承诺判据”方程条目。
+- `SRT/SRT_Glossary.md`：新增 `Genome-Engine Critical Controller (GECC)` 与 `Thermodynamic Commitment Gate (TCG)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“HRG/EGF 分叉轨迹与时间门控规则”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Genome-Engine Fate Control → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| CSB + SOC 背景下中心-外围耦合 | 全表达系统的自组织门控 | 中 | Open-flow（非平衡） | payable |
++| 动态临界点 CP 作为控制核 | 内部控制器与外围系统互馈 | 中~高 | Open/Semi-open | task-dependent |
++| 命运承诺轨迹（HRG, atRA, DMSO） | 时间门控下不可逆分岔 | 中 | Open-flow | payable→committed |
++| 非承诺轨迹（EGF） | 门控不足导致回到吸引域 | 低~中 | Semi-open | overloaded/neutral |
++
++**Constraint**: “Maxwell’s demon”仅作机制隐喻，必须落到可测信息通量与时间门控变量。
++
++## 【理论边界/防误用声明】
++- 不采纳“命名为 demon 即表示违反热力学第二定律”的推论。
++- 边界：SRT 将其解释为开放系统中的信息-能量耦合控制，不是违背热力学。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-GECC-01: CP-PES Information-Flux Coupling
++$$
++J_{info}=I(CP\rightarrow PES)-I(PES\rightarrow CP)
++$$
++其中 \(I\) 为互信息通量估计，\(J_{info}\) 反映控制方向偏置。
++
++### Eq-TCG-01: Thermodynamic Commitment Gate
++$$
++\mathrm{TCG}=\int_{t_0}^{t_1}\big(\alpha J_{info}-\beta \dot{S}_{ex}+\gamma\,\mathrm{Sync}_{CP\text{-}PES}\big)dt
++$$
++当 \(\mathrm{TCG}>\theta_c\) 时进入命运承诺区。
++
++### Eq-TCG-02: Fate Split Criterion
++$$
++\mathcal{F}_{commit}=\mathbb{1}[\mathrm{TCG}>\theta_c]\cdot\mathbb{1}[\Delta C_{global}>0]
++$$
++
++## 【理论边界/防误用声明】
++- 不采纳“单一互信息指标即可判断命运承诺”的推论。
++- 边界：需联合熵交换、同步性与轨迹稳定性验证。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Genome-Engine Critical Controller - 基因组引擎临界控制器（GECC） 🟡
++**定义**：在CSB/SOC背景下由临界点基因集合（CP）对外围表达系统（PES）进行反馈控制的机制单元。
++
++**[Lineage/Source]**：
++- Source context: bioRxiv preprint (2026-02-12), Tsuchiya et al.
++- DOI: 10.64898/2026.02.12.703632
++- SRT mapping: critical-controller role in cell-fate transitions
++
++#### Thermodynamic Commitment Gate - 热力学承诺门（TCG） 🟡
++**定义**：由信息通量、熵交换与系统同步共同决定的命运承诺阈值门控指标。
++
++**[Lineage/Source]**：
++- Same source context; commitment vs non-commitment trajectory distinction
++- SRT mapping: time-gated non-equilibrium decision variable
++
++## 【理论边界/防误用声明】
++- 不采纳“GECC/TCG 可直接外推所有癌种命运控制”的推论。
++- 边界：当前证据基于特定细胞系与刺激范式，需跨模型复核。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-TCG-1 承诺与非承诺轨迹分离检验
++**内容**：在 MCF-7 中 HRG 与 EGF 应形成可分离的 TCG 时间轨迹，前者跨阈值承诺，后者不过阈值。
++**证伪条件**：两刺激在 TCG 轨迹与命运结果上无可分离性。
++
++### H-GECC-1 CP-PES 方向偏置检验
++**内容**：命运承诺前后应出现 CP→PES 信息偏置增强，并伴随全局表达中心动力学重组。
++**证伪条件**：信息偏置与命运转变无关联。
++
++## 【理论边界/防误用声明】
++- 不采纳“预印本模型显著即可临床转化”的推论。
++- 边界：需独立队列、不同细胞背景与干预可重复性验证。
+```
+
+### Notes (brief)
+- 已将预印本核心分类（CSB/SOC、CP-PES互馈、承诺分叉）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 GECC、TCG 已附 `[Lineage/Source]`（预印本来源已标注），并在目标文件写入 Header 级防误用声明。
