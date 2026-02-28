@@ -23,7 +23,7 @@ dependency: [_SRT_INDEX, _SRT_QUALITY_SCORECARD]
    - 见：`_SRT_SIGNAL_PIPELINE.md`
 4. 文档治理线（质量与减冗）
    - 见：`_SRT_GOVERNANCE_PIPELINE.md`
-5. 自媒体双风格线（大众/学者）
+5. 自媒体策划线（仅提供选题/方向/原因/内部关联整理，不直接成文）
    - 见：`_SRT_MEDIA_PIPELINE.md`
 
 配套运行节奏：`_SRT_OPERATIONS_SCHEDULE.md`
