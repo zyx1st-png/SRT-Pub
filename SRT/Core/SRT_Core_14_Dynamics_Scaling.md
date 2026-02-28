@@ -1203,16 +1203,3 @@ $$
 ## 【理论边界/防误用声明】
 - 不采纳“万物皆可算=万物皆同等可控可编程”的推论。
 - 边界：SRT 要求任务定义、输入输出边界与代价函数同时给定。
-
-## Explainability Finalization Block
-
-### 形式化（Formalization）
-$$
-\mathcal{E}: \text{Claim} \mapsto (\text{Variables}, \text{Relations}, \text{Constraints})
-$$
-含义：关键命题应可映射为变量-关系-约束三元组。
-
-### 可证伪条件（Falsification）
-- 缺失可观测指标/对照/失败判据时，该条目不满足可证伪要求。
-- 若跨尺度映射无边界条件声明，则该映射不可用于强结论推断。
-
