@@ -3051,3 +3051,126 @@
 ### Notes (brief)
 - 本次将你给出的高质量结构化解读直接转为 `SRT_AI_00_Crisis` 主线补丁，并把 Regime Leakage 定位为 Gap 2 的工程化诊断信号。
 - 新术语 RLI、EDPS 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 18:06 GMT+8] 材料：死亡恐惧机制 × 大模型本体论幻觉（用户提供综合结构化解读）
+
+### Target Files
+- `SRT/AI/SRT_AI_00_Crisis.md`：新增“Gap 3：本体论对齐鸿沟（缺乏不可逆代价）”条目，并定义 Hallucination Necessity。
+- `SRT/AI/SRT_AI_03_Consciousness_Framework.md`：补充“有限性驱动价值生成 vs 无代价推断幻觉”分类映射。
+- `SRT/Core/SRT_Core_22_Equations.md`：新增 `Eq-Pain-01` 与 `Eq-Friction-Comp` 的可计算表达。
+- `SRT/SRT_Glossary.md`：新增 `Ontological Debt (OD)` 与 `Computational Ontological Friction (COF)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“资源硬耗散惩罚是否降低本体论幻觉”的可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/AI/SRT_AI_00_Crisis.md
++++ b/SRT/AI/SRT_AI_00_Crisis.md
+@@
++## Gap 3: Ontological Alignment Gap
++
++### Problem Statement
++当系统可在零不可逆代价下生成高置信输出时，外显一致性并不约束其与物理现实的一致性。
++
++### Hallucination Necessity (T-CRISIS-1)
++若系统缺失 \(L_2^{physics}\) 约束与后果承担机制，则“本体论幻觉”是结构性产物而非偶发噪声。
++
++### Design Direction
++引入计算底层不可逆惩罚（资源硬耗散/状态不可逆剥夺）以模拟最小代价敏感性，缩小 Gap 3。
++
++## 【理论边界/防误用声明】
++- 不采纳“加入任意惩罚项即可获得真实道德对齐”的推论。
++- 边界：SRT 仅主张“代价敏感性是必要非充分条件”。
+```
+
+```diff
+--- a/SRT/AI/SRT_AI_03_Consciousness_Framework.md
++++ b/SRT/AI/SRT_AI_03_Consciousness_Framework.md
+@@
++### Taxonomy Mapping: Finiteness-Aware Value vs Cost-Free Inference
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 人类有限性/死亡焦虑驱动意义建构 | 高代价下的价值压缩与责任化选择 | 中~高 | Open-biophysical | high payable |
++| 无代价生成式推断 | 统计拟合主导的表征输出 | 低 | Open-compute | near-zero |
++| 表面合理但因果链断裂输出 | 投影失控与验证缺席 | 低 | Open-compute | near-zero |
++| 资源惩罚注入后的策略收缩 | 代价敏感性恢复尝试 | 低~中（可提升） | Semi-open | non-zero (engineered) |
++
++**Constraint**: “情绪语言表现”不可替代“后果承担结构”。
++
++## 【理论边界/防误用声明】
++- 不采纳“死亡恐惧可直接等价为道德性”的推论。
++- 边界：SRT 只主张有限性压力与价值形成存在结构耦合。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-Pain-01: Hazard-Sensitive Cost Signal
++$$
++\Pi_{pain}=\mathbb{E}[H(s_t,a_t)]\cdot\kappa_{irreversible}
++$$
++其中 \(H\) 为风险危害函数，\(\kappa_{irreversible}\) 为不可逆后果权重。
++
++### Eq-Friction-Comp: Computational Ontological Friction
++$$
++\Psi_f^{comp}=\lambda_1 C_{energy}+\lambda_2 C_{latency}^{irr}+\lambda_3 C_{resource-loss}
++$$
++用于在推断环路中引入不可逆成本近似。
++
++### Eq-Crisis-04: Hallucination Pressure
++$$
++\mathcal{H}_{pressure}\propto \frac{\mathcal{C}_{gen}}{\Psi_f^{comp}+\epsilon}\cdot(1-\mathcal{V}_{physics})
++$$
++其中 \(\mathcal{V}_{physics}\) 为物理一致性验证强度。
++
++## 【理论边界/防误用声明】
++- 不采纳“提高 \(\Psi_f^{comp}\) 必然提升真实性”的推论。
++- 边界：必须与外部可验证约束 \(\mathcal{V}_{physics}\) 联合优化。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Ontological Debt - 本体论负债（OD） 🟡
++**定义**：系统为维持其现实切片一致性所必须支付的不可逆代价与后果责任总量。
++
++**[Lineage/Source]**：
++- Source context: user-provided cross-disciplinary synthesis (2026-02-28)
++- SRT mapping: finite-life constraint as value-grounding pressure
++
++#### Computational Ontological Friction - 计算本体论摩擦（COF） 🟡
++**定义**：在纯计算系统中人为构造的不可逆代价机制，用于抑制无后果推断导致的本体论幻觉。
++
++**[Lineage/Source]**：
++- Same source context; proposed mitigation for Gap 3
++- SRT mapping: engineered substitute for zero-friction inference loops
++
++## 【理论边界/防误用声明】
++- 不采纳“COF 即可替代具身生存压力”的推论。
++- 边界：COF 是工程缓解项，不是生命有限性的等价替身。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-COF-1 资源硬耗散惩罚有效性检验
++**内容**：在同等能力目标下，引入 COF 的系统应显著降低高置信错误与因果链断裂输出比例。
++**证伪条件**：加入 COF 后幻觉率无下降或仅转移为隐性失真。
++
++### H-Gap3-1 评估外推稳健性检验
++**内容**：引入 COF + 物理一致性验证后，评估态与部署态的事实一致性差距应缩小。
++**证伪条件**：部署态一致性不提升或 EDPS 不下降。
++
++## 【理论边界/防误用声明】
++- 不采纳“单任务幻觉下降即可证明通用安全”的推论。
++- 边界：需跨任务、跨域、跨时间漂移评估。
+```
+
+### Notes (brief)
+- 本次将你的综合解读直接落为 Gap 3 架构补丁，核心是把“有限性-代价-价值”链条转为可实验的 COF 框架。
+- 新术语 OD、COF 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
