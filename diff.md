@@ -2530,3 +2530,83 @@
 ### Notes (brief)
 - 已将文章主分类（前向波/后向波/执行依赖）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 该链接直抓受限（站点反爬），本次基于 DOI 元数据与摘要进行结构化映射；新术语 BTC、WME 已附 `[Lineage/Source]`。
+
+---
+
+## [2026-02-28 17:56 GMT+8] 材料：PNAS 行波论文全文补充（用户提供完整正文摘录）
+
+### Target Files
+- `SRT/Core/SRT_Core_22_Equations.md`：细化前后向行波方程，加入“试次内/试次间行为时延预测”与“执行门控项”。
+- `SRT/Core/SRT_Experimental_Applications.md`：补充三类关键控制实验（去VEP、眼动分层、仅计划不执行）。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“行波解释的竞争机制约束”（体积传导/离散源混合/微观投影）。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
+ ### Eq-WME-01: Directional Traveling-Wave Coupling
+@@
+ ### Eq-WME-02: Executability Gate
+@@
++### Eq-WME-03: Intra/Inter-Individual Latency Prediction
++$$
++RT_{onset}^{(i,j)} = \mu + a\,\tau_{FW\theta}^{(i,j)} + b\,\tau_{FB\beta}^{(i,j)} + \epsilon_{i,j}
++$$
++其中 \(i\) 为个体，\(j\) 为试次；\(\tau_{FW\theta}\) 与 \(\tau_{FB\beta}\) 分别为前向theta波与后向beta波峰值时延。
++
++### Eq-WME-04: Action-Required Wave Expression
++$$
++W_{obs}=W_{gen}\cdot G_{overt-action}
++$$
++当仅完成任务相关内容选择与反应准备（无实际执行）时，\(G_{overt-action}\to 0\)，波形显著衰减。
++
++## 【理论边界/防误用声明】
++- 不采纳“行波时延相关性可直接替代机制因果验证”的推论。
++- 边界：SRT 要求在行为、眼动、诱发电位控制下复现关联。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
+ ### H-WME-1 可执行门控检验
+@@
+ ### H-WME-2 方向配比与表现关联检验
+@@
++### H-WME-3 去诱发电位后稳健性检验
++**内容**：扣除 probe 锁定视觉诱发成分后，FW-theta 与 FB-beta 波形仍应保留关键行为关联。
++**证伪条件**：去诱发后波形/关联消失。
++
++### H-WME-4 眼动分层稳健性检验
++**内容**：按“朝任务相关方向眼动/朝无关方向眼动/无显著眼动”分层后，行波效应应保持同向存在。
++**证伪条件**：效应仅在某一眼动分层出现，且可由眼动完全解释。
++
++### H-WME-5 跨半球轴向不对称检验
++**内容**：若行波为功能性通信而非被动扩散，则跨半球不同轴向的行波强度应呈结构性不均匀。
++**证伪条件**：所有跨半球轴向均表现等强传播（支持被动扩散解释）。
++
++## 【理论边界/防误用声明】
++- 不采纳“单一分析管线显著即可确立跨区信息流”的推论。
++- 边界：需在FFT/nFFT与多控制条件下一致复现。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
+ ### Taxonomy Mapping: Working-Memory Traveling Waves → SRT
+@@
++### Competing-Mechanism Guardrails for Traveling-Wave Claims
++- **CM1**: 体积传导/被动扩散解释必须通过对称轴向与零时延特征检验排除。
++- **CM2**: 离散时滞源混合解释需与方向选择性和执行门控效应竞争拟合。
++- **CM3**: 微/中尺度波投影解释需给出可检验的跨尺度相位签名，而非仅概念兼容。
++
++## 【理论边界/防误用声明】
++- 不采纳“出现相位梯度即自动等于皮层长程通信”的推论。
++- 边界：SRT 要求竞争模型并行比较并报告劣势模型证据。
+```
+
+### Notes (brief)
+- 本次为“全文补充版”增强补丁：把你提供的 Results/控制分析细节（去VEP、眼动、仅计划不执行、跨轴不均匀）写入可证伪层。
+- 该补丁为上一条 PNAS 映射的增量细化，不替换历史记录。
