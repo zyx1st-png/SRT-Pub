@@ -46,15 +46,15 @@ dependency: [_SRT_DOC_ENGINEERING_GUIDE, _SRT_FRONTMATTER_AUDIT, SRT-GLOSSARY]
 ### 自动采集
 ```bash
 ./scripts/run_srt_checks.sh
+python3 scripts/srt_quality_metrics.py
 ```
 - Frontmatter lint
 - Link check
 - Symbol governance
+- 质量指标自动快照（输出 `SRT/_SRT_QUALITY_METRICS.md`）
 
 ### 半自动/人工抽样
-- 术语治理覆盖：抽样检查 `SRT_Glossary.md` 与本周新增条目
 - 解释链完整率：抽样检查本周新增/重构文档
-- 边界声明覆盖率：grep 标题并人工核对是否为“正式 header”
 
 ---
 
@@ -83,12 +83,12 @@ dependency: [_SRT_DOC_ENGINEERING_GUIDE, _SRT_FRONTMATTER_AUDIT, SRT-GLOSSARY]
 
 ## 4) 当前基线（2026-02-28）
 
-- Frontmatter Coverage：**100%**（依据 `_SRT_FRONTMATTER_AUDIT.md`）
+- Frontmatter Coverage：**100%**（91/91，来源：`_SRT_QUALITY_METRICS.md`）
 - Broken Link Rate：**0**（`run_srt_checks.sh` 当前通过）
 - Symbol Governance：**PASS**
-- Terminology Governance Coverage：**核心术语集已建立（d / Ψ_f / Ĝθ / L_0/L_1/L_2）**
+- Terminology Governance Coverage：**100%**（核心术语集 4/4）
 - Explainability Completeness：**协议已发布（待按周抽样量化）**
-- Boundary Header Coverage：**协议已强制（待按周抽样量化）**
+- Boundary Header Coverage：**20.3%**（13/64，自动粗筛口径；后续提升）
 
 ---
 
