@@ -2830,3 +2830,97 @@
 ### Notes (brief)
 - 已将预印本核心分类（CSB/SOC、CP-PES互馈、承诺分叉）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 GECC、TCG 已附 `[Lineage/Source]`（预印本来源已标注），并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 18:03 GMT+8] 材料：Unifying Non-Equilibrium Information Thermodynamics and Genome Engine Dynamics（用户补充结构化解读）
+
+### Target Files
+- `SRT/Core/SRT_Core_22_Equations.md`：新增与 Eq-Select-Thermo 对齐的细胞尺度映射式，显式联立 \(P_{sel},\Psi_f,S_{noise}\)。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补充“CP 作为细胞尺度 \(\hat{G}_\theta\)”的跨尺度同构注释。
+- `SRT/Physics/SRT_Physics_01_Quantum_Foundation.md`：新增“麦克斯韦妖循环（准备-测量-反馈）”与时间箭头建立的耦合段落。
+- `SRT/SRT_Glossary.md`：为 `GECC`/`TCG` 增加 “SRT Canonical Mapping” 小节。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-Cell-Select-01: Cellular Selection Thermodynamics Mapping
++$$
++\frac{dq}{dt} \le \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}
++$$
++细胞尺度映射：
++- \(P_{sel}\)：CP-PES 互信息与外源刺激耦合形成的有效选择功率；
++- \(\Psi_f\)：表观遗传网络重构与状态切换所需做功（本体论摩擦 proxy）；
++- \(S_{noise}\)：分子级随机涨落与表达噪声项。
++
++### Eq-Cell-Select-02: Commitment Transition Condition
++$$
++\Delta L_2^{cell}\to \Delta L_1^{cell}\quad \text{iff}\quad \int(\alpha P_{sel}-\beta\Psi_f-\gamma S_{noise})dt > 0
++$$
++
++## 【理论边界/防误用声明】
++- 不采纳“单次噪声压制即可导致稳定命运承诺”的推论。
++- 边界：SRT 要求积分条件与结构重构持续性共同满足。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Cross-Scale Note: CP as Cell-Scale \(\hat{G}_\theta\)
++在该预印本范式中，临界点基因簇（CP）可操作化为细胞尺度选择算子：
++$$
++\hat{G}_{\theta,cell} \equiv CP
++$$
++其通过对外围表达系统（PES）的信息热力学反馈，将随机微观波动转化为宏观秩序生成。
++
++## 【理论边界/防误用声明】
++- 不采纳“CP=\(\hat{G}_\theta\) 为严格同一”的强本体推论。
++- 边界：该映射为跨尺度操作化同构，需在不同细胞系复核。
+```
+
+```diff
+--- a/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
++++ b/SRT/Physics/SRT_Physics_01_Quantum_Foundation.md
+@@
++### Maxwell-Demon Cycle Alignment (Prep–Measure–Feedback)
++将“准备-测量-反馈”循环写为开放系统时间箭头建立条件：
++1) 准备：设定可达状态分区；
++2) 测量：提取互信息并更新选择偏置；
++3) 反馈：将信息通量转为结构重组做功。
++
++该循环与 SRT 的“从 \(L_0\) 提取潜能并跨阈值锚定至 \(L_1\)”在动力学结构上同构。
++
++## 【理论边界/防误用声明】
++- 不采纳“Demon 循环意味着局域熵可长期无代价下降”的推论。
++- 边界：SRT 强调开放系统交换与摩擦支付条件。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
+ #### Genome-Engine Critical Controller - 基因组引擎临界控制器（GECC） 🟡
+@@
++**SRT Canonical Mapping**：
++- 操作化映射：\(GECC \sim \hat{G}_{\theta,cell}\)
++- 作用域：细胞命运转变的中观控制层
++
+ #### Thermodynamic Commitment Gate - 热力学承诺门（TCG） 🟡
+@@
++**SRT Canonical Mapping**：
++- 近似映射：\(TCG\) 对应 \(\int(\alpha P_{sel}-\beta\Psi_f-\gamma S_{noise})dt\) 的门控判据
++- 解释域：命运承诺 vs 非承诺分叉
++
++## 【理论边界/防误用声明】
++- 不采纳“Canonical Mapping 已构成跨尺度严格证明”的推论。
++- 边界：此处为模型对齐层，不替代独立实验验证。
+```
+
+### Notes (brief)
+- 本次为你给出的高质量结构化解读的“精炼落地版”，重点强化了：
+  1) Eq-Select-Thermo 的细胞尺度可计算映射；
+  2) CP 与 \(\hat{G}_\theta\) 的跨尺度操作化同构；
+  3) Maxwell 循环与时间箭头的约束化表达。
