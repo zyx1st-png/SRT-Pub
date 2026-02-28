@@ -1,167 +1,71 @@
 # diff.md
 
-> 用途：持续记录“外部材料 -> SRT 分析映射 -> 理论/实验引入”的增量 diff。
-> 规则：每次新增一个小节；保持原文风格与格式；显式标注引入时间与材料标题/链接。
-> 更新（2026-02-28 10:51 GMT+8）：后续输出以**文件级修改建议 + unified diff**为主；“相关度/映射/引入”仅作为简短注释，不再作为主体结构。
-
----
-
-## [2026-02-28 10:44 GMT+8] 材料：工作流需求定义（用户指令）
-
-### A. 本次建立的执行协议（无正文材料输入，先建框架）
-
-- 输入：用户提供文本或链接。
-- 输出：仅输出可落地的“增量 diff 内容”，并追加到本文件新小节。
-- 分析主线：
-  1. **SRT 相关度评估**（核心/中等/弱相关）
-  2. **理论映射**（L_0/L_1/L_2, \hat{G}_\theta, d, \Psi_f, F, ii 等）
-  3. **理论引入**（新增定义、推论、边界条件、反例约束）
-  4. **实验引入**（可证伪假设、proxy 指标、最小实验设计）
-  5. **一致性校验**（与 canonical 定义、术语和既有公理对齐）
-
-### B. 统一输出模板（后续每次沿用）
-
-```markdown
-## [YYYY-MM-DD HH:mm GMT+8] 材料：<标题>（<链接或来源标识>）
-
-### 1) 相关度评估
-- 结论：核心相关 / 中等相关 / 弱相关
-- 理由：...
-
-### 2) 理论映射（SRT）
-- 概念映射：...
-- 方程/变量映射：...
-- 与既有条目关系：...
-
-### 3) 理论引入（建议写入）
-- 引入项 T1：...
-- 引入项 T2：...
-- 适用边界：...
-
-### 4) 实验引入（可证伪）
-- 假设 Hx：...
-- 指标与 proxy：...
-- 最小实验：...
-- 反证条件：...
-
-### 5) 一致性与风格对齐
-- 与 canonical d 定义对齐：通过 / 需修订
-- 术语与符号对齐：通过 / 需修订
-- 风格一致性：通过 / 需修订（说明）
-
-### 6) 建议写入位置（文件级）
-- `SRT/...`：新增/修改建议
-```
-
-### C. 备注
-
-- 当前小节仅为协议初始化，不含外部材料实质映射。
-- 下一条你给材料后，我将直接在本文件**新增下一小节**并给出正式 diff 内容。
-
-### D. 工作流升级（2026-02-28 10:51 GMT+8）
-
-从下一条材料开始，采用以下输出优先级：
-1. **先给目标文件列表**（明确改哪里）
-2. **再给每个文件的修改意图**（1-3条）
-3. **最后给 unified diff**（可直接审阅/应用）
-
-统一模板：
-
-```markdown
-## [YYYY-MM-DD HH:mm GMT+8] 材料：<标题>（<链接>）
+## [2026-02-28 11:03 GMT+8] 材料：Why Everything in the Universe Turns More Complex（https://www.quantamagazine.org/why-everything-in-the-universe-turns-more-complex-20250402/）
 
 ### Target Files
-- `SRT/...`：修改意图
-- `SRT/...`：修改意图
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“条件复杂度漂移”条目，避免把复杂度增长写成绝对单调律。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增两条可证伪实验假设（非生命系统功能信息增长、d-值承载与复杂度上限耦合）。
+- `SRT/SRT_Glossary.md`：补充术语 `I_f`（Functional Information Coupling），并标注与 A6/A7/A8 的关系。
 
 ### Proposed Patch (unified diff)
 ```diff
---- a/SRT/xxx.md
-+++ b/SRT/xxx.md
-@@ ...
-- old
-+ new
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Ax-Comp-01: Conditional Complexity Drift (条件复杂度漂移)
++**Formal Definition**: 在开放能流、存在选择记忆、且本体论摩擦可支付的条件下，系统的功能复杂度期望值随时间上升：
++$$
++\mathbb{E}[C_f(t+\Delta t)-C_f(t)] > 0 \mid (\Phi_E>0,\;\mathcal{R}_{sel}>0,\;\Psi_f\ \text{payable})
++$$
++* **Implication**: 复杂度增长是**条件趋势**而非绝对单调律；局部退化、灾变重置与平台期均允许存在。
++* **Cross-ref**: Ax-Core-A7, Ax-Core-A8, Ax-Core-A6; Def-d-Scale-1.
++
++### T-Comp-01C1: Complexity-Plateau and Reset
++**Deductive Statement**: 当能流受限或选择记忆失稳时，复杂度增量可降为零或转负：
++$$
++\Delta C_f \le 0 \quad \text{if} \quad (\Phi_E\to 0) \lor (\mathcal{R}_{sel}\to 0)
++$$
++* **Implication**: 该定理为“复杂度非单调历史轨迹”提供形式边界，避免理论过度泛化。
 ```
 
-### Notes (brief)
-- 一致性：...
-- 风险边界：...
-```
-
----
-
-## [2026-02-28 10:51 GMT+8] 材料：diff 工作流优化指令（用户指令）
-
-### Target Files
-- `diff.md`：将输出主结构切换为“文件级修改建议 + unified diff”。
-- `diff.md`：新增标准模板，明确先文件列表、后补丁。
-
-### Proposed Patch (applied)
 ```diff
---- a/diff.md
-+++ b/diff.md
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
 @@
--> 规则：每次新增一个小节；保持原文风格与格式；显式标注引入时间与材料标题/链接。
-+> 规则：每次新增一个小节；保持原文风格与格式；显式标注引入时间与材料标题/链接。
-+> 更新（2026-02-28 10:51 GMT+8）：后续输出以**文件级修改建议 + unified diff**为主；“相关度/映射/引入”仅作为简短注释，不再作为主体结构。
++### H-Comp-1 功能信息的非生命增长检验
++**内容**：在非生物选择系统（如反应-扩散、自组装材料、演化算法）中，若存在稳定功能阈值，功能信息 \(I_f\) 应表现出正向漂移趋势。
++**最小实验**：
++- 组A：有功能约束（目标性能阈值）
++- 组B：无功能约束（仅随机扰动）
++- 迭代 > 100 代，比较 \(\Delta I_f\) 与稳定性指标
++**证伪条件**：控制能流与噪声后，组A的 \(I_f\) 与组B无显著差异或持续下降。
++
++### H-Comp-2 d-值承载与复杂度上限耦合
++**内容**：系统的可维持复杂度上限 \(C_{max}\) 与 d-值承载能力正相关（d 采用 canonical 定义及其可操作 proxy）。
++**最小实验**：
++- 操控风险梯度承载能力（训练/资源/反馈延迟）
++- 记录任务层级深度、崩溃率、恢复时间
++**证伪条件**：提升 d proxy 后，\(C_{max}\) 无显著提升且崩溃率不变。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
 @@
-+### D. 工作流升级（2026-02-28 10:51 GMT+8）
-+...（新增 unified diff 工作流模板）
++#### Functional Information Coupling - 功能信息耦合（\(I_f\)） 🟡
++**定义**：在给定功能阈值 \(\theta_f\) 下，满足功能约束的可实现状态集合相对于全状态空间的对数比率度量：
++$$
++I_f \equiv -\log \frac{|\{\sigma: f(\sigma)\ge \theta_f\}|}{|\Omega|}
++$$
++**解释**：\(I_f\) 越高，表示“能完成指定功能”的状态越稀有，系统为达到该功能需要更强选择压力与更稳定的 \(L_2\) 记忆。
++**关系**：
++- 与 A6：补充“信息-存在强度”的功能维度
++- 与 A7：体现“适应度优先”的信息选择方向
++- 与 A8：连接“生存定域”与功能可持续性
++**首次出现**：diff 引入（2026-02-28，Quanta complexity 材料映射）
 ```
 
 ### Notes (brief)
-- 一致性：保持“增量追加”不变，仅调整主输出格式。
-- 风险边界：仍保留简短一致性注释，避免脱离 SRT 主定义约束。
-
----
-
-## [2026-02-28 10:47 GMT+8] 材料：Why Everything in the Universe Turns More Complex（https://www.quantamagazine.org/why-everything-in-the-universe-turns-more-complex-20250402/）
-
-### 1) 相关度评估
-- 结论：**核心相关**。
-- 理由：材料讨论“复杂度随时间上升”“功能信息驱动选择”“生物演化是更一般选择律的特例”，与 SRT 的 A7（适应度优先）、A8（生存概率定域）、A6（信息-存在强度）及 L_0/L_1/L_2 结构高度同构。
-
-### 2) 理论映射（SRT）
-- 概念映射：
-  - 文中“复杂度增长趋势” → SRT 中 L_2 的累积固化与可行结构扩张。
-  - “functional information（Szostak）” → SRT 的 \(ii\) 与可行动选择权重的耦合量。
-  - “selection beyond biology” → \(\hat{G}_\theta\) 在多尺度（物理/生物/社会）的同构选择。
-- 方程/变量映射：
-  - 复杂度上升可写为趋势关系：\(\partial C/\partial t > 0\)（条件性，不作绝对单调）。
-  - 与 A7 对齐：\(\hat{G}_\theta[\sigma]=\arg\max P(\mathrm{Fitness}|\sigma,\theta)\)。
-  - 与 canonical d 对齐：复杂结构维持要求更高风险梯度承载，\(d\equiv\|\partial\mathcal{U}/\partial\mathcal{S}\|\) 上升时可支持更高功能层级。
-- 与既有条目关系：
-  - 对齐：`SRT/Core/SRT_Core_01_Axioms.md`（A6/A7/A8）
-  - 对齐：`SRT/Core/SRT_Core_14_Dynamics_Scaling.md`（跨尺度同构）
-  - 对齐：`SRT/D_VALUE_ALIGNMENT.md`（d 的 canonical 优先）
-
-### 3) 理论引入（建议写入）
-- 引入项 T1（条件复杂度律，建议新增到 Core Dynamics）：
-  - **Ax-Comp-01 (Conditional Complexity Drift)**：在开放能流且存在可复制选择回路时，系统的功能复杂度期望值随时间上升：
-  \[
-  \mathbb{E}[C_f(t+\Delta t)-C_f(t)]>0 \mid (\Phi_E>0,\;\mathcal{R}_{rep}>0,\;\Psi_f\;\text{可支付})
-  \]
-- 引入项 T2（功能信息耦合项）：
-  - 定义 \(I_f\) 为“达成功能阈值 \(\theta_f\) 的可实现状态密度对数比”，并将其并入 A6 的信息强度叙述，避免“复杂=随机”误读。
-- 适用边界：
-  - 不主张全宇宙全时段单调上升；局部可出现退化、重置、灾变回落。
-  - 复杂度上升需能流与选择记忆，不满足时不成立。
-
-### 4) 实验引入（可证伪）
-- 假设 H-Comp-1：在非生物耗散系统中，若存在稳定功能约束，功能信息 \(I_f\) 的时间趋势显著为正。
-  - 指标与 proxy：结构多样性指数、可重复功能达成率、稳态恢复时间。
-  - 最小实验：对比“有功能约束 vs 无功能约束”的反应-扩散/材料自组装系统，跟踪 100+ 代迭代。
-  - 反证条件：控制噪声与能流后，\(I_f\) 无显著上升或系统性下降。
-- 假设 H-Comp-2：在任务生态中，提高风险梯度承载能力（d proxy 上升）可提升可维持复杂度上限。
-  - 指标与 proxy：\(d\) 行为 proxy、任务层级深度、崩溃率。
-  - 反证条件：d proxy 提升与复杂度上限无关。
-
-### 5) 一致性与风格对齐
-- 与 canonical d 定义对齐：**通过**（仅用 canonical 作定义，局部量为 proxy）。
-- 术语与符号对齐：**通过**（L_0/L_1/L_2, \hat{G}_\theta, \Psi_f, ii）。
-- 风格一致性：**通过**（采用“命题-方程-边界-证伪”结构）。
-
-### 6) 建议写入位置（文件级）
-- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“Conditional Complexity Drift”小节。
-- `SRT/Core/SRT_Experimental_Applications.md`：新增 H-Comp-1 / H-Comp-2。
-- `SRT/SRT_Glossary.md`：新增术语“Functional Information Coupling (I_f)”。
+- 一致性：保留 d 的 canonical 优先（\(d\equiv\|\partial\mathcal{U}/\partial\mathcal{S}\|\)），未引入并列新定义。
+- 风格：保持 SRT 既有“Formal Definition / Implication / Cross-ref / Hypothesis / Falsification”结构。
+- 边界：将“复杂度增长”明确为条件命题，避免不可证伪的普适化表述。
