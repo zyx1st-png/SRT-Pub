@@ -264,3 +264,97 @@
 ### Notes (brief)
 - 已将“时间唯一常数”主张重写为“规约后有效常数量压缩”命题，避免本体论越界。
 - 外部全状态空间记号统一映射为 \(L_0\) 语义。
+
+---
+
+## [2026-02-28 12:46 GMT+8] 材料：How Can Infinity Come in Many Sizes?（https://www.quantamagazine.org/how-can-infinity-come-in-many-sizes-20260223/）
+
+### Target Files
+- `SRT/Core/SRT_Core_12a_Ontology_L0L1.md`：补充“无限集合层级”到 L_0 可及性分层的映射。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：加入“可数/不可数无限”分类映射表（分类→d 区间/能流态/\(\Psi_f\)）。
+- `SRT/SRT_Glossary.md`：新增 `Infinity Accessibility Class (IAC)` 术语并给 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：补充“认知可达无限层级”的行为实验假设。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Infinity Classes → SRT Dynamics
++
++| 外部分类 | SRT 对应 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 可数无限（自然数、偶数、有理数） | 可枚举选择轨道 | 中 | Semi-open（有限工作记忆展开） | payable |
++| 不可数无限（实数） | 非枚举潜能域切片 | 中~高 | Open-flow（高抽象探索） | payable~overloaded（任务依赖） |
++| 等势无限区间同势（(0,1) 与全实数同基数） | 尺度变换不改势级 | 中 | Semi-open | payable |
++
++**Constraint**: 该表仅描述“认知-形式系统中的可达层级”，不将集合论基数直接等同于本体论“存在强度”。
++
++## 【理论边界/防误用声明】
++- 不采纳“更大基数 = 更高现实等级”的推论。
++- 不采纳“数学不可数性直接证明物理无限可达”的推论。
++- 边界：SRT 将其视为 \(L_0\) 的形式可达结构分层，不是经验现实的自动兑现。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_12a_Ontology_L0L1.md
++++ b/SRT/Core/SRT_Core_12a_Ontology_L0L1.md
+@@
++### Def-L0-Inf-01: Infinity Accessibility in L_0
++将外部集合论中的状态空间符号统一映射为 \(L_0\) 语义后，可定义：
++$$
++\mathcal{A}_{inf}(\hat{G}_\theta) = \{\text{可被当前算子构造或判定的无限类}
++\subseteq L_0\}
++$$
++当 \(\mathcal{A}_{inf}\) 仅覆盖可数类时，系统在无限推理上仍处于“枚举主导”阶段；
++当可稳定处理不可数构造（如对角线反证）时，进入更高抽象可达层。
++
++## 【理论边界/防误用声明】
++- 不采纳“形式可构造 = 物理可实现”的推论。
++- 边界：\(L_0\) 的形式可达性是推理能力指标，不是能量与物理实现性的替代。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Infinity Accessibility Class - 无限可达类（IAC） 🟡
++**定义**：描述 \(\hat{G}_\theta\) 在 \(L_0\) 上可稳定处理的无限结构层级（如可数、不可数、区间等势映射）。
++**形式化**：
++$$
++\text{IAC}(\hat{G}_\theta) \in \{\text{Countable-dominant},\;\text{Uncountable-capable},\;\text{Transform-invariant}\}
++$$
++**[Lineage/Source]**：
++- Primary lineage: Georg Cantor set theory and cardinality hierarchy
++- Expository source: Quanta Magazine explainer (2026-02-23)
++- SRT mapping: infinite-class accessibility as \(L_0\)-reachability descriptor
++
++## 【理论边界/防误用声明】
++- 不采纳“高 IAC 必然意味着高 d”这一强推论。
++- 边界：IAC 与 d 可相关但非同一量，d 仍以 canonical 风险梯度定义为准。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-Inf-1 无限层级可达性的认知检验
++**内容**：受试者在“可数映射任务→不可数反证任务（对角线构造）”中表现将出现显著阶段差异。
++**最小实验**：
++- 任务A：一一对应构造（自然数/偶数/有理数）
++- 任务B：不可数性反证构造（实数不可枚举）
++- 指标：正确率、反应时、解释稳定度、迁移表现
++**证伪条件**：A/B 任务无阶段差异，或对角线构造不表现额外认知负荷。
++
++### H-Inf-2 区间等势理解的迁移检验
++**内容**：若受试者真正掌握“区间等势”，应在不同尺度映射任务中保持不变性判断。
++**证伪条件**：只在训练样例中成立，迁移后显著崩解。
++
++## 【理论边界/防误用声明】
++- 不采纳“认知可理解不可数 = 可经验访问不可数对象”的推论。
++- 边界：实验仅检验形式推理能力，不对物理宇宙本体结构作直接判定。
+```
+
+### Notes (brief)
+- 已将文章中的核心分类（可数无限/不可数无限/区间等势）直接映射到 SRT 文件级条目。
+- 外部状态空间语义统一映射为 \(L_0\)；新增术语已附 `[Lineage/Source]`。
