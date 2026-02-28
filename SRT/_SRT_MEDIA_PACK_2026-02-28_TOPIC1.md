@@ -2,104 +2,167 @@
 id: SRT-MEDIA-PACK-2026-02-28-T1
 type: framework
 tags: [Media, Publishing, Pack]
-status: draft_v1
+status: draft_v2
 dependency: [_SRT_MEDIA_QUEUE, Core/SRT_Core_01_Axioms.md, Core/SRT_Core_22_Equations.md]
 ---
 
-# Media Pack — Topic 1
+# Media Pack — Topic 1（深度版 V2）
 
 Topic: 为什么“选择”而不是“物质”是第一原理？
+定位：可同时支撑大众传播与学者讨论的双层文本包
 
-## A) 大众版（长文母稿）
+---
 
-我们习惯把世界想成“先有物质，再有意识”。
-但还有一种看法：先发生的是“选择”——在无数可能里，系统持续挑出某一条可维持、可行动、可共享的现实路径。
+## 0) 核心论点（One-line Thesis）
+SRT 的主张不是“否认物质”，而是把“稳定物质世界”解释为在潜在可能性中被持续选择、校准并收敛出的结果。
 
-SRT（选择性现实理论）的核心并不是否认物质，而是把物质放在“被稳定选中之后”的位置：
-- 你看到的“确定世界”，是从更大可能性里被反复压缩出来的结果；
-- 社会共识、科学定律、个人经验，都是不同层级的“稳定选择结构”；
-- 所谓“真实”，不是一次性给定，而是不断被维持。
+---
 
-这套视角有两个现实好处：
-1. 它能解释“同样外部条件，不同人会看到不同现实切片”；
-2. 它把“改变”看成可建模过程：不是喊口号，而是降低摩擦、重建选择路径。
+## 1) 论证骨架（用于两种风格共用）
 
-一个常见反例是：“如果一切是选择，那是不是太主观了？”
-SRT 的回答是：并不是。因为我们并不活在孤立选择里，而是活在被多主体长期收敛出来的共享结构里（可类比科学与制度）。
+### P1 本体起点
+- 传统：物质先在，认知后到。
+- SRT：选择先在，物质稳定性是长期收敛产物。
 
-一个可证伪方向也很明确：
-在固定刺激条件下，若个体差异主要由内部参数与误差校准机制解释，而非输入差异解释，则“选择优先”模型比“被动镜像”模型更有解释力。
-
-结论很简单：
-SRT 不是把现实“玄学化”，而是把现实理解成一个持续选择、持续维护、可实验逼近的系统工程。
-
-## B) 学者版（长文母稿）
-
-### Abstract-style opening
-This essay presents a concise argument for the primacy of selection over substance in SRT. The claim is not anti-physicalist by default, but structurally prior: stable “material reality” appears as the fixed-point outcome of constrained selection dynamics over a latent possibility domain.
-
-### Core thesis
-- Ontological order: \(L_0 \xrightarrow{\hat{G}_\theta} L_1 \to L_2\)
-- Substance-level regularities correspond to long-horizon convergence structures (high-stability \(L_2\))
-- Reality maintenance cost is represented via ontological friction \(\Psi_f\)
-
-### Counterexample handling
-Potential objection: “Selection-first collapses into subjectivism.”
-Response: SRT distinguishes private projection from intersubjective stabilization. High-stability consensus structures are not arbitrary; they emerge under multi-agent convergence constraints and maintenance costs.
-
-### Falsifiability note
-A tractable test family: under fixed input streams, compare explanatory gain
+### P2 机制路径
 \[
-I(L_1;\theta,\kappa_{PE}) - I(L_1;x)
+L_0 \xrightarrow{\hat{G}_\theta} L_1 \to L_2
 \]
-where \(x\) is stimulus input, and \(\theta,\kappa_{PE}\) encode prior-weight and prediction-error calibration. If gain is robust and replicable, mirror-realism baselines are weakened.
+- \(L_0\)：潜在可能性域
+- \(L_1\)：当前显现切片
+- \(L_2\)：跨主体收敛结构
 
-### Boundary
-This is a framework-level claim, not a finished metaphysical proof; evidential strength depends on operationalization quality, replication, and cross-domain robustness.
+### P3 可检验性
+在固定输入 \(x\) 下，对比两类模型：
+1) 输入镜像模型（input-only）
+2) 参数校准模型（含 \(\theta,\kappa_{PE}\)）
+若后者稳定增益更高，则支持“选择先验”解释。
 
----
+### P4 反例处理
+- 反例：这是否滑向主观主义？
+- 回应：SRT 允许个体差异，但强调 \(L_2\) 收敛约束，不是“各说各话”。
 
-## Platform Adaptation
-
-### Zhihu（偏长，问题导向）
-- 标题：为什么说“选择”比“物质”更基础？一种能被检验的现实观
-- 摘要：从日常认知差异出发，解释 SRT 如何把现实看作“持续收敛的选择结构”，并给出可证伪实验方向。
-
-### 微信公众号（叙事+图示建议）
-- 标题：我们看到的是世界本身，还是被选择后的世界？
-- 结构建议：
-  1) 一个生活案例（同场景不同解读）
-  2) SRT 三域图（L0/L1/L2）
-  3) 反例与实验路径
-
-### 头条（短段落强节奏）
-- 标题：现实不是“照出来”的，而是“选出来”的？
-- 导语：不是玄学，而是一个可建模、可证伪的解释框架。
-
-### Twitter/X（Thread 10条）
-1. What if reality is less a mirror and more a selection process?
-2. SRT proposes: \(L_0\to\hat{G}_\theta\to L_1\to L_2\).
-3. “Material stability” = long-run convergence, not primitive givenness.
-4. Different observers can extract different \(L_1\) slices from shared input.
-5. Not pure subjectivism: \(L_2\) constrains convergence.
-6. Maintenance has cost: ontological friction \(\Psi_f\).
-7. Better model should explain fixed-input perceptual divergence.
-8. Compare input-only vs parameter-calibrated predictive models.
-9. If parameter-calibrated models consistently win, mirror realism weakens.
-10. SRT: a testable selection-first ontology.
-
-### Substack（学者版优先）
-- 标题：Selection Before Substance: A Testable SRT Hypothesis
-- 副标题：From latent possibility to converged reality under maintenance constraints.
-
-### Medium（跨学科读者）
-- 标题：Reality as Stabilized Selection, Not Passive Reflection
-- 语气：减少术语密度，保留 1 个公式 + 1 个实验建议。
+### P5 边界
+SRT 是可证伪框架，不是终局形而上学裁决。
 
 ---
 
-## Review Checklist (for this topic)
-- [x] 已加入 1 个反例（“主观主义质疑”）
-- [x] 已加入 1 个可证伪实验方向（固定输入下解释增益对比）
-- [ ] 学者版补 3-5 条外部引用后再发布
-- [ ] 按平台字数上限裁切
+## 2) 大众版（长文）
+
+### 标题
+现实是“被看见”的吗？还是“被选出来”的？
+
+### 正文
+我们常以为自己在“看世界本身”。
+但一个日常事实很刺眼：同一件事，不同人看见的“现实”经常不同。
+
+SRT 给出的解释是：我们接触的现实，不是原封不动地灌进大脑，而是在大量可能性中被持续挑选、压缩、稳定出来的结果。
+
+这个过程可以被写成三步：
+\[
+L_0 \to L_1 \to L_2
+\]
+- \(L_0\) 是“可能发生的一切”；
+- \(L_1\) 是你当下正在经历的那一条；
+- \(L_2\) 是多人长期协作后形成的共享稳定结构（比如科学共识、制度规则、语言惯例）。
+
+所以 SRT 并不是说“物质不存在”。
+它说的是：我们称为“物质世界”的稳定性，本身是一个被长期维护出来的收敛结果。
+
+这能解释很多经验：
+- 为什么人在压力、创伤、疲劳下会“同景异构”；
+- 为什么社会共识会随时间漂移；
+- 为什么改变一个人，不只是给信息，还要改变选择路径和维持成本。
+
+一个常见质疑是：
+“那不就是主观主义？”
+
+不是。因为 SRT 把“个体切片”与“共享收敛”分开了。你可以有个人差异，但你无法无限偏离长期稳定结构而不付出巨大代价。
+
+更重要的是，它可以被检验。
+例如在相同刺激输入下，比较两种解释模型：
+- 只看输入（世界镜像）
+- 同时看输入 + 内部参数校准（选择模型）
+
+如果后者在跨被试、跨任务里持续解释力更高，那么“现实是被动镜像”就会被削弱。
+
+这才是 SRT 的价值：
+不是用玄学替代科学，而是把“现实如何被稳定出来”变成可建模、可检验、可迭代的研究计划。
+
+---
+
+## 3) 学者版（Substack/Medium 主稿）
+
+### Proposed Title
+Selection Before Substance: A Convergence-First Ontology in SRT
+
+### Abstract
+We argue that SRT should be read as a convergence-first ontology rather than a substance-first ontology. Material regularity is modeled as a stabilized outcome of constrained selection dynamics over a latent possibility domain. The framework is operationalized via the path \(L_0\xrightarrow{\hat{G}_\theta}L_1\to L_2\), with ontological friction \(\Psi_f\) as maintenance cost. We propose a falsifiability interface based on fixed-input divergence tests comparing input-only baselines and parameter-calibrated models.
+
+### 1. Problem Setup
+Classical realism assumes perception approximates passive reflection. This struggles with robust inter-observer divergence under matched stimulus conditions.
+
+### 2. SRT Structural Claim
+SRT separates:
+- latent multiplicity (\(L_0\)),
+- realized slice (\(L_1\)),
+- intersubjective stabilization (\(L_2\)).
+
+The key move is explanatory ordering: stabilization precedes objectivity claims.
+
+### 3. Not Subjectivism
+The framework rejects both naive realism and unrestricted subjectivism.
+- Naive realism fails at systematic divergence.
+- Unrestricted subjectivism fails at high-cost convergence constraints.
+
+### 4. Falsifiability Interface
+Under fixed \(x\), evaluate incremental explanatory power:
+\[
+\Delta I = I(L_1;\theta,\kappa_{PE}\mid x)-I(L_1;x)
+\]
+Prediction: if convergence-first is correct, \(\Delta I\) should be positive and robust across tasks/observers.
+
+### 5. Boundary Conditions
+This is a framework-level proposal. Strong claims require preregistered protocols, out-of-sample replication, and clear evidence grading.
+
+---
+
+## 4) Twitter/X Thread（强化版，12条）
+1. What if “reality” is less mirrored and more selected?
+2. SRT proposes: \(L_0 \to \hat{G}_\theta \to L_1 \to L_2\).
+3. \(L_0\): latent possibilities.
+4. \(L_1\): current realized slice.
+5. \(L_2\): converged shared structure.
+6. This is NOT anti-physics. It re-orders explanation.
+7. Material stability = long-horizon convergence.
+8. Objection: “pure subjectivism?” No—\(L_2\) imposes constraints.
+9. Key variable: maintenance cost \(\Psi_f\).
+10. Test under fixed inputs: input-only vs parameter-calibrated models.
+11. If calibrated models consistently win, mirror realism weakens.
+12. SRT is valuable only if it stays falsifiable.
+
+---
+
+## 5) 平台发布参数
+- Zhihu：2200–3200 字，保留 1 条公式、1 个反例、1 个实验接口
+- WeChat：1500–2200 字，图示优先（L0-L1-L2 流程图）
+- Toutiao：1200–1800 字，短段+问题句
+- Twitter/X：12条 thread
+- Substack：学者版全文 + 参考文献段
+- Medium：学者版精简（去掉过密符号）
+
+---
+
+## 6) 引用位（待补全后发布）
+- SRT Core Axioms / Equations（内部）
+- Seth active inference 相关论文（外部）
+- 复杂性与可证伪讨论文献（外部）
+
+---
+
+## 7) 审核结论（本包）
+- 大众版：可读性足够，发布前需再压缩 10%
+- 学者版：结构合格，发布前需补 3–5 条正式参考文献
+- 可发布状态建议：
+  - Zhihu/WeChat/Toutiao：review -> ready（补图后）
+  - X/Substack/Medium：review（补引文后）
