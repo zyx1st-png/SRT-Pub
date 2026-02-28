@@ -181,6 +181,29 @@ t\in[t_{late}^-,t_{late}^+]
 - Girard R, Wang L, Aveline A, et al. *The geometrical regularity processing in school-age children discloses a symbolic visual mode in human*. eLife (2026), reviewed preprint. DOI: `10.7554/eLife.106464.1`.
 - 关键结果锚点：背侧顶叶与前额区域对规则几何的晚时窗响应增强；组合模型（symbolic + CNN）在约 `428 ms` 达到解释峰值。
 
+### Ax-EXP-16: Controlled Hallucination Calibration Axiom (Interview-Linked)
+在相同外部刺激下，个体间显著知觉差异可视为先验模型权重差与误差校准策略差的可观测结果：
+\[
+Var(\hat{P}_{i}(L_1\mid x)) \propto Var(\theta_i) + Var(\kappa^{(i)}_{PE})
+\]
+其中 \(x\) 为共同刺激输入，\(\kappa_{PE}\) 为预测误差校准增益。
+* **Implication（中文）**：同一白光/同一声学节律触发不同主观视觉内容，不是噪声，而是具身参数 \(\theta\) 与误差校准机制差异的系统性表现。
+* **Evidence-Level**：secondary interview + linked peer-reviewed/preprint pointers。
+
+### T-EXP-4: Shared-Stimulus Divergence Theorem
+若外部输入保持恒定，而主观报告分布仍呈高离散，则最简解释不是“刺激不充分”，而是“内模先验差异主导”：
+\[
+I(L_1; x) < I(L_1; \theta, \kappa_{PE}) \quad \text{under fixed } x
+\]
+* **Implication（中文）**：该定理为 SRT 的“选择先验性”提供实验接口：比较固定刺激条件下，个体参数估计对报告分布解释度的增益。
+
+### Source Note (Essentia interview package, 2026-02-27)
+- 访谈页面：Essentia Foundation, *Reality is a controlled hallucination*（Prof. Anil Seth）。
+- 关联来源（页面给出）：
+  - Gomez-Marin & Seth (2025), *Nature Neuroscience*, DOI: `10.1038/s41593-025-01913-6`
+  - Seth (2025), *Behavioral and Brain Sciences*, DOI: `10.1017/S0140525X25000032`
+- 审核结论：**A（直接融入）**；理由：与主动推断/预测处理及 SRT 的 \(\hat{G}_\theta\)-\(L_1\) 映射高度同构，且具跨个体实验可操作性。
+
 <br>
 
 ---
