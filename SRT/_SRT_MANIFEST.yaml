@@ -86,6 +86,7 @@ domains:
       - "_SRT_EXPLAINABILITY_AUDIT.md"
       - "_SRT_RELEASE_NOTE_TEMPLATE.md"
       - "_SRT_RELEASE_2026-02.md"
+      - "_SRT_SLIMMING_CHANGELOG_2026-02.md"
 
 dependency_policy:
   canonical_form: "hyphenated-id-or-core-law-path"

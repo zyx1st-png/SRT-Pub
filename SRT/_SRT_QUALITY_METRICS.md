@@ -8,6 +8,6 @@ dependency: [_SRT_QUALITY_SCORECARD]
 
 # SRT Quality Metrics (Auto)
 
-- Frontmatter Coverage: 93/93 (100.0%)
+- Frontmatter Coverage: 94/94 (100.0%)
 - Terminology Governance Coverage (core set): 4/4 (100.0%)
 - Boundary Header Coverage (theory candidates): 64/64 (100.0%)
