@@ -85,6 +85,13 @@ $$\text{Insight} = \hat{G}_\theta[\theta \to \theta_c^+] - \hat{G}_\theta[\theta
 $$\frac{d\rho_{L_1}}{dt} = -\frac{i}{\hbar}[\hat{H}, \rho] - \hat{G}_\theta[\rho - \rho_{target}] + \mathcal{D}[\rho]$$
 * **Implication**: 现实演化是自由展开、选择锚定与退相干三项共同作用的结果。
 
+### Cor-Master-01a: Passive-Selection Regime (被动选择退化形式)
+当系统处于强约束、低能动窗口（如高纯介观输运中的协同流体相）时，可近似满足：
+$$
+\|\hat{G}_\theta[\rho-\rho_{target}]\| \ll \|\nabla C_{L_2}[\rho]\| \quad \Rightarrow \quad \text{dynamics} \approx \text{constraint-dominated glide}
+$$
+* **Implication（中文）**：该区间的高可预测性并不否定 SRT 的选择框架，而是说明系统进入“被动选择”极限：轨迹主要沿约束梯度滑行，主动能动窗口收缩。
+
 <br>
 
 ---

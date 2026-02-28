@@ -54,3 +54,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `Physics/SRT_Phys_07_Complex_Systems.md` (§9 Ax-EHF-1 / T-EHF-1 / Def-EHF-1)
 - Ingested: yes
 - Notes: 为介观动力学提供实验相位标记（dR/dT 符号切换）与输运效率代理，增强复杂系统章节说服力。
+
+- Time: 2026-03-01 00:41 GMT+8
+- Source: 用户提供的 Gemini 深度解读（基于同一 Quanta 文章）
+- Topic: 跨尺度粗粒化一致性强化、被动选择退化形式澄清、介观层映射补全
+- Evidence-Level: secondary synthesis
+- Review Result (A/B/C): A-
+- Target Docs: `Core_Law/SRT_Reference_Scaling.md`（介观流体层与过程等价扩展）, `Core/SRT_Core_14_Dynamics_Scaling.md`（Cor-Master-01a）
+- Ingested: yes
+- Notes: 可融入点主要是“理论组织与边界澄清”而非新增一级实证；已按低风险增强方式吸收。
