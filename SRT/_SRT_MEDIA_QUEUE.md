@@ -81,3 +81,22 @@ dependency: [_SRT_MEDIA_PIPELINE]
   - Medium: high
 - Risk Notes: 必须区分“能力表现”与“意识归因”。
 - Publish Window: next 14 days
+
+- Topic: 从‘控制性幻觉’到SRT：如何把感知差异变成可检验命题
+- Direction (大众向/学术向): 双向（先大众后学术）
+- Why Now (选题原因): 近期信号材料集中于主动推断与感知分歧，具高时效与方法学价值。
+- Internal Mapping:
+  - Core Docs: Neuroscience/SRT_Neuro_Experiments.md; Core/SRT_Core_22_Equations.md
+  - Equation/Axiom Anchors: \hat{G}_\theta 映射；L_0→L_1 选择路径；\Psi_f 维护成本
+  - Experiment/Falsification Hooks: 固定输入下参数校准模型解释增益；z-score/CUSUM 变点检测
+- Platforms (recommended):
+  - Zhihu: medium
+  - WeChat: medium
+  - Toutiao: medium
+  - Twitter/X: medium
+  - Substack: medium
+  - Medium: medium
+- Risk Notes: 需明确边界声明，避免过度外推。
+- Publish Window: next 7 days
+- Generated At: 2026-03-01 00:19 (Asia/Shanghai)
+

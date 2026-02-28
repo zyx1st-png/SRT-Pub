@@ -35,6 +35,7 @@ dependency: [_SRT_EXECUTION_PLAN, _SRT_MEDIA_QUEUE]
 - 生成时间：每天早 8:00（Asia/Shanghai）
 - 产物落点：`_SRT_MEDIA_QUEUE.md` 新增一条 Active Item（策划项）
 - 约束：仅生成策划，不生成成文稿，不执行外发
+- 模板与脚本：`_SRT_MEDIA_TOPIC_TEMPLATE.md` + `scripts/srt_media_topic_daily.py`
 
 ## 外部动作安全规则
 - 默认不生成成文稿，不自动发布
