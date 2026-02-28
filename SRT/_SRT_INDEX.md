@@ -51,3 +51,19 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 - 历史理论增量（含批次合并记录）已迁移至：[`_SRT_CHANGELOG_2026.md`](_SRT_CHANGELOG_2026.md)
 - 主索引仅保留导航/入口/注册信息，以提升可维护性与 AI 检索稳定性。
+
+## 🧰 Documentation Governance Hub（治理入口）
+
+### 规划与流程
+- 总体优化计划：[`SRT_INTERNAL_OPTIMIZATION_PLAN_2026Q1.md`](SRT_INTERNAL_OPTIMIZATION_PLAN_2026Q1.md)
+- 解释协议（Definition→Mechanism→Falsification）：[`_SRT_EXPLANATION_PROTOCOL.md`](_SRT_EXPLANATION_PROTOCOL.md)
+- 方程-假设映射：[`_SRT_EQ_HYP_MAP.md`](_SRT_EQ_HYP_MAP.md)
+- 领域文档模板：[`_SRT_DOMAIN_TEMPLATE.md`](_SRT_DOMAIN_TEMPLATE.md)
+- diff 管线规范：[`_SRT_DIFF_PIPELINE_GUIDE.md`](_SRT_DIFF_PIPELINE_GUIDE.md)
+
+### 质量与发布
+- Frontmatter 审计：[`_SRT_FRONTMATTER_AUDIT.md`](_SRT_FRONTMATTER_AUDIT.md)
+- 质量评分卡：[`_SRT_QUALITY_SCORECARD.md`](_SRT_QUALITY_SCORECARD.md)
+- 自动指标快照：[`_SRT_QUALITY_METRICS.md`](_SRT_QUALITY_METRICS.md)
+- Release 模板：[`_SRT_RELEASE_NOTE_TEMPLATE.md`](_SRT_RELEASE_NOTE_TEMPLATE.md)
+- 最新发布快照：[`_SRT_RELEASE_2026-02.md`](_SRT_RELEASE_2026-02.md)
