@@ -815,3 +815,111 @@
 ### Notes (brief)
 - 已将文中分类（编码/提取/睡眠剥夺/高频恢复）转成文件级补丁，并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:24 GMT+8] 材料：Astera AGI 研究计划长文（用户提供原文）
+
+### Target Files
+- `SRT/AI/SRT_AI_Architecture.md`：新增“人类样通用智能路线图”分类映射（经验学习/层级世界模型/分布式推理/情景记忆/神经启发）。
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：补“反馈-递归连接与分布式推理”机制条目。
+- `SRT/Core_Law/SRT_Reference_Scaling.md`：新增“皮层柱-丘脑-海马协同尺度”实体定义（\(\hat{G}_\theta\), \(L_0\), \(L_1\), \(L_2\)）。
+- `SRT/SRT_Glossary.md`：新增 `Triangulated Principle Extraction (TPE)` 与 `Distributed Reasoning Stack (DRS)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“经验优先学习与分布式推理收益”的可证伪实验条目。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/AI/SRT_AI_Architecture.md
++++ b/SRT/AI/SRT_AI_Architecture.md
+@@
++### Taxonomy Mapping: Human-like AGI Program Themes → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 从经验学习而非仅人类累积文本 | \(L_0\to L_1\) 在线锚定与回写 | 中~高 | Open-flow（持续交互） | payable |
++| 层级潜变量+因果结构世界模型 | 多层 \(\hat{G}_\theta\) 结构化推演 | 高 | Open-flow | payable（高算力负载） |
++| 分布式推理（非仅语言 token） | 多模块并行推理栈 | 高 | Open-flow（跨模态） | payable~overloaded |
++| 情景记忆+持续学习闭环 | \(L_1\leftrightarrow L_2\) 动态沉积 | 中~高 | Semi-open / Open | payable |
++| 神经科学-算法三角互证 | 结构先验提炼机制 | 中 | Semi-open | task-dependent |
++
++## 【理论边界/防误用声明】
++- 不采纳“皮层柱统一性已足够推出唯一 AGI 架构”的推论。
++- 不采纳“长周期资助可替代可证伪里程碑”的推论。
++- 边界：SRT 要求每个主题绑定可检验中间指标，而非愿景叙事闭环。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-DRS-01: Distributed Reasoning Stack
++**Formal Statement**: 人类样推理应在视觉、动作、概念、情景记忆等多子系统并发进行，而非单 token 通道：
++$$
++\hat{G}_{\theta,total}=\bigoplus_k \hat{G}_{\theta,k},\quad \text{with recurrent feedback across }k
++$$
++反馈/递归连接是测试时推理计算的一部分，而非仅训练期副产物。
++
++## 【理论边界/防误用声明】
++- 不采纳“递归结构必然优于前馈结构”的绝对命题。
++- 边界：仅在任务需要长期依赖、反事实模拟、主动推断时预期收益显著。
+```
+
+```diff
+--- a/SRT/Core_Law/SRT_Reference_Scaling.md
++++ b/SRT/Core_Law/SRT_Reference_Scaling.md
+@@
++## Def-Scale-CTHL-1: Cortico-Thalamo-Hippocampal Loop Scale（皮层-丘脑-海马协同尺度）
++- **\(\hat{G}_{\theta,cthl}\)**：在反馈-前馈-侧向环路中执行多阶段推理与记忆检索的协同选择算子。
++- **\(L_0^{cthl}\)**：跨模态潜变量、反事实轨迹、未锚定情景记忆构成的潜能域。
++- **\(L_1^{cthl}\)**：当前任务下被统一绑定的对象-特征-行动表征。
++- **\(L_2^{cthl}\)**：长期形成的 schema 图结构与迁移先验。
++
++## 【理论边界/防误用声明】
++- 不采纳“该尺度直接等同意识本体层”的推论。
++- 边界：该定义用于功能推理与记忆组织，不直接给出主观体验判据。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Triangulated Principle Extraction - 三角原则提炼（TPE） 🟡
++**定义**：以“神经观测 + 世界结构 + 算法模型”三元互证提炼通用智能原则的方法。
++
++**[Lineage/Source]**：
++- Source context: Astera AGI program statement (user-provided text, 2026-02-28)
++- Core claim: triangulation across neuroscience, world properties, and algorithms
++- SRT mapping: principle validation under multi-evidence alignment
++
++#### Distributed Reasoning Stack - 分布式推理栈（DRS） 🟡
++**定义**：推理在语言、视觉、运动、情景记忆等模块并发发生并通过反馈耦合。
++
++**[Lineage/Source]**：
++- Source context: Astera AGI research themes (user-provided text)
++- SRT mapping: recurrent multi-module inference implementation
++
++## 【理论边界/防误用声明】
++- 不采纳“术语命名即理论成立”的推论。
++- 边界：TPE/DRS 仅为方法与架构术语，必须绑定实验判据。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-DRS-1 分布式推理收益检验
++**内容**：在等参数预算下，分布式推理栈应在反事实任务与主动推断任务上优于单通道语言推理。
++**证伪条件**：两架构在关键任务上无差异或分布式架构显著更差。
++
++### H-TPE-1 三角互证有效性检验
++**内容**：仅当神经数据、世界结构约束与算法可解释性同时满足时，原则提炼的迁移性能显著提高。
++**证伪条件**：三元一致性与迁移性能无相关。
++
++## 【理论边界/防误用声明】
++- 不采纳“愿景一致性可替代基准评测”的推论。
++- 边界：SRT 要求预注册任务、失败可复现与负结果公开。
+```
+
+### Notes (brief)
+- 已将长文主线分类直接落为文件级补丁，覆盖架构、尺度定义、术语来源与实验条目。
+- 所有防误用声明均以 Header 形式进入目标文件补丁。
