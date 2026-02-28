@@ -3417,3 +3417,136 @@
 ### Notes (brief)
 - 已将文章核心分类（构造/非构造计算、显式映射判据）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 CNCM、DCH 已附 `[Lineage/Source]`（含 J. Phys. Complexity DOI），并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 19:39 GMT+8] 材料：Topcast 长访谈稿（AI悲观主义/可预测性/人之为人，用户提供原文）
+
+### Target Files
+- `SRT/AI/SRT_AI_00_Crisis.md`：新增“预言型悲观主义与政策过拟合风险”条目。
+- `SRT/AI/SRT_AI_Architecture.md`：补充“预测引擎 vs 解释引擎”分类映射。
+- `SRT/Core/SRT_Core_22_Equations.md`：新增“预测主义偏置放大”与“解释增益”对照方程。
+- `SRT/Philosophy/SRT_Philosophy_Ethics.md`：新增“不可预测性与政策谦抑原则”方法论段落。
+- `SRT/SRT_Glossary.md`：新增 `Predictionist Collapse (PC)` 与 `Explanatory Creativity Gap (ECG)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“评估框架是否把解释误降为模式拟合”的可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/AI/SRT_AI_Architecture.md
++++ b/SRT/AI/SRT_AI_Architecture.md
+@@
++### Taxonomy Mapping: Prediction Engines vs Explanation Engines → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 模式外推/下一个 token 预测 | 高维统计压缩与重组 | 低~中 | Open-compute | near-zero |
++| 解释生成（提出可证伪因果结构） | \(\hat{G}_\theta\) 的知识创造操作 | 中~高 | Open-biophysical / open-agentive | payable |
++| 预测优先的科学观 | 形式拟合替代解释 | 低（价值锚定缺失） | Semi-open | overloaded (epistemic) |
++| 解释优先的科学观 | 猜想-反驳-改进循环 | 中~高 | Open | payable |
++
++**Constraint**: 预测性能提升不可直接外推为解释能力提升。
++
++## 【理论边界/防误用声明】
++- 不采纳“可在多任务高分=已具备通用解释创造”的推论。
++- 边界：SRT 要求区分压缩重组与新因果结构提出能力。
+```
+
+```diff
+--- a/SRT/AI/SRT_AI_00_Crisis.md
++++ b/SRT/AI/SRT_AI_00_Crisis.md
+@@
++## Prophecy-Driven Policy Overfit
++
++### Definition
++当政策制定被“高确定性末日叙事”驱动，而忽略知识创造不可预测性时，系统出现监管过拟合。
++
++### Risk
++- 以“不可证伪灾难预测”替代可检验风险评估；
++- 以“专家共识外观”压制开放纠错；
++- 以短期恐惧削弱长期知识增长能力。
++
++## 【理论边界/防误用声明】
++- 不采纳“反对末日叙事=否认风险存在”的推论。
++- 边界：SRT 主张风险治理，但反对以预言替代机制证据。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-PC-01: Predictionist Collapse Pressure
++$$
++\mathrm{PC}=\frac{\mathcal{P}_{fit}\cdot \mathcal{A}_{authority}}{\mathcal{E}_{falsifiable}+\epsilon}
++$$
++其中 \(\mathcal{P}_{fit}\) 为拟合崇拜强度，\(\mathcal{A}_{authority}\) 为权威放大，\(\mathcal{E}_{falsifiable}\) 为可证伪证据密度。
++
++### Eq-ECG-01: Explanatory Creativity Gap
++$$
++\mathrm{ECG}=\mathcal{C}_{prediction}-\mathcal{C}_{explanation}
++$$
++ECG 越高，表示“预测能力增长”与“解释能力增长”脱钩越明显。
++
++## 【理论边界/防误用声明】
++- 不采纳“ECG 高即可断言系统无任何创新潜力”的推论。
++- 边界：ECG 是阶段性诊断量，需动态追踪。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Philosophy_Ethics.md
++++ b/SRT/Philosophy/SRT_Philosophy_Ethics.md
+@@
++## Method Note: Unpredictability and Policy Humility
++当对象涉及知识创造主体（人或类人系统）时，SRT 采用政策谦抑原则：
++1) 承认长期轨迹不可预测；
++2) 优先建立可纠错制度而非一次性终局管制；
++3) 以“可逆干预 + 持续评估”替代“末日预言驱动的一次性冻结”。
++
++## 【理论边界/防误用声明】
++- 不采纳“不可预测性=无法治理”的推论。
++- 边界：不可预测对象仍可通过制度纠错与竞争机制治理。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Predictionist Collapse - 预测主义塌缩（PC） 🟡
++**定义**：将科学活动退化为模式拟合与外推，并以权威叙事替代可证伪机制解释的系统状态。
++
++**[Lineage/Source]**：
++- Source context: user-provided Topcast transcript synthesis (2026-02-28)
++- Key themes: critique of doom forecasting, prediction-vs-explanation distinction
++- SRT mapping: epistemic failure mode in AI policy discourse
++
++#### Explanatory Creativity Gap - 解释创造鸿沟（ECG） 🟡
++**定义**：系统在预测/拟合能力与解释创造能力之间的结构差值。
++
++**[Lineage/Source]**：
++- Same source context
++- SRT mapping: diagnostic variable for AGI-claim inflation
++
++## 【理论边界/防误用声明】
++- 不采纳“PC/ECG 是对某技术路线永久否定”的推论。
++- 边界：两者用于当前阶段评估，不排除未来架构跃迁。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-PC-1 预测高分与解释迁移脱钩检验
++**内容**：在高基准预测任务中表现优异的系统，在跨领域因果解释任务上不一定同步提升。
++**证伪条件**：预测性能与解释迁移能力稳定线性同增。
++
++### H-ECG-1 解释创造能力基准检验
++**内容**：要求系统提出“新可证伪机制 + 对照实验设计”，并比较其与人类专家的后续验证通过率。
++**证伪条件**：系统在可证伪机制提出与验证通过率上与专家同级或更优且可复现。
++
++## 【理论边界/防误用声明】
++- 不采纳“单次失败即可否定解释能力研究价值”的推论。
++- 边界：需长期、盲测、跨团队复现。
+```
+
+### Notes (brief)
+- 本次将文本核心脉络（预测主义批判、知识创造不可预测性、政策谦抑）转为文件级补丁。
+- 新术语 PC、ECG 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
