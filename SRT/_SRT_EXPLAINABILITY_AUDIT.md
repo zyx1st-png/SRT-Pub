@@ -9,39 +9,39 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 # SRT Explainability Audit (Auto)
 
 - Candidate Docs: 71
-- Mean Explainability Completeness (5-block ratio): 100.0%
-- Full 5/5 Docs: 71/71 (100.0%)
-- Partial Docs (>=2/5): 0/71 (0.0%)
+- Mean Explainability Completeness (5-block ratio): 44.2%
+- Full 5/5 Docs: 3/71 (4.2%)
+- Partial Docs (>=2/5): 50/71 (70.4%)
 
 ## Lowest-score Docs (Top 30)
 
-- `AI/SRT_AI_00_Crisis.md`: 5/5, missing=
-- `AI/SRT_AI_01_Ontology.md`: 5/5, missing=
-- `AI/SRT_AI_02_Mortality_Wisdom.md`: 5/5, missing=
-- `AI/SRT_AI_03_Consciousness_Framework.md`: 5/5, missing=
-- `AI/SRT_AI_Architecture.md`: 5/5, missing=
-- `AI/_SRT_AI_Bridge.md`: 5/5, missing=
-- `Core/SRT_Core_00_Intro.md`: 5/5, missing=
-- `Core/SRT_Core_01_Axioms.md`: 5/5, missing=
-- `Core/SRT_Core_12a_Ontology_L0L1.md`: 5/5, missing=
-- `Core/SRT_Core_12b_Ontology_L2.md`: 5/5, missing=
-- `Core/SRT_Core_13a_Operator_Basics.md`: 5/5, missing=
-- `Core/SRT_Core_13b_Operator_Advanced.md`: 5/5, missing=
-- `Core/SRT_Core_14_Dynamics_Scaling.md`: 5/5, missing=
-- `Core/SRT_Core_21_Formal_Axioms.md`: 5/5, missing=
-- `Core/SRT_Core_22_Equations.md`: 5/5, missing=
-- `Core/SRT_Experimental_Applications.md`: 5/5, missing=
-- `Core/SRT_Experimental_Core.md`: 5/5, missing=
-- `Core/_SRT_Core_Bridge.md`: 5/5, missing=
-- `Core_Law/SRT_Reference_Axioms.md`: 5/5, missing=
-- `Core_Law/SRT_Reference_Dynamics.md`: 5/5, missing=
-- `Core_Law/SRT_Reference_Scaling.md`: 5/5, missing=
-- `D_VALUE_ALIGNMENT.md`: 5/5, missing=
-- `Neuroscience/SRT_Clin_00_IIT_PCI.md`: 5/5, missing=
-- `Neuroscience/SRT_Clin_01_Pathology.md`: 5/5, missing=
-- `Neuroscience/SRT_Clin_02_FEP.md`: 5/5, missing=
-- `Neuroscience/SRT_Clin_03_DMN_Networks.md`: 5/5, missing=
-- `Neuroscience/SRT_Consciousness_Mechanisms.md`: 5/5, missing=
-- `Neuroscience/SRT_Neural_Mechanisms.md`: 5/5, missing=
-- `Neuroscience/SRT_Neuro_06_Field_Effects.md`: 5/5, missing=
-- `Neuroscience/SRT_Neuro_07_Evo_Devo.md`: 5/5, missing=
+- `Neuroscience/_SRT_Neuro_Axioms.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Philosophy/_SRT_Phil_Axioms.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Philosophy/_SRT_Soc_Axioms.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/SRT_AI_02_Mortality_Wisdom.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `AI/SRT_AI_03_Consciousness_Framework.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Core/_SRT_Core_Bridge.md`: 1/5, missing=formalization, mechanism, falsification, boundary
+- `Core_Law/SRT_Reference_Axioms.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Core_Law/SRT_Reference_Scaling.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Neuroscience/SRT_Clin_01_Pathology.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Neuroscience/SRT_Clin_02_FEP.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Neuroscience/SRT_Clin_03_DMN_Networks.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Neuroscience/SRT_Neuro_10_Advanced_Models.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Philosophy/SRT_SocTheory_04_Luhmann_ANT.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Philosophy/SRT_Soc_03_Institutions.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `SRT_1H_Onboarding.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `SRT_OPTIMIZATION_BACKLOG.md`: 1/5, missing=definition, formalization, mechanism, falsification
+- `Spirituality/_SRT_Spirit_Axioms.md`: 1/5, missing=formalization, mechanism, falsification, boundary
+- `AI/SRT_AI_01_Ontology.md`: 2/5, missing=formalization, mechanism, falsification
+- `AI/SRT_AI_Architecture.md`: 2/5, missing=formalization, mechanism, falsification
+- `AI/_SRT_AI_Bridge.md`: 2/5, missing=formalization, mechanism, boundary
+- `Core/SRT_Core_00_Intro.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Core_01_Axioms.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Core_12a_Ontology_L0L1.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Core_12b_Ontology_L2.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Core_13a_Operator_Basics.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Core_13b_Operator_Advanced.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Core_21_Formal_Axioms.md`: 2/5, missing=formalization, mechanism, falsification
+- `Core/SRT_Experimental_Applications.md`: 2/5, missing=formalization, mechanism, falsification
+- `D_VALUE_ALIGNMENT.md`: 2/5, missing=formalization, mechanism, falsification

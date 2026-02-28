@@ -495,27 +495,3 @@ SRT provides the conceptual toolkit to navigate these distinctions rigorously.
 1. 在桥接层增加“反误导约束”：系统不得通过语言拟态暗示未证实的 sentience/道德地位，直接对应 `T-BRIDGE-1` 的闭包限制。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1016/j.patter.2023.100818〕〔source: AI/_SRT_AI_Bridge.md#T-BRIDGE-1〕
 2. 将 sentience-first 论证写成二级判据：可作为伦理预警权重，但必须受 `Ax-BRIDGE-3/5` 的本体耦合检验约束。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1007/s00146-021-01179-z〕〔source: AI/_SRT_AI_Bridge.md#Ax-BRIDGE-5〕
 3. 增加“沟通透明性阈值”：凡涉及主观状态表述，需显示其证据层级（推断/未证实/可验证）以避免报告-现实错配。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: AI/_SRT_AI_Bridge.md#T-BRIDGE-2〕
-
-## Explainability Compliance Block
-
-### 定义（Definition）
-本桥接文档的角色是为对应域提供 canonical 入口与依赖锚点，而非承载全部领域细节。
-
-### 形式化（Formalization）
-设桥接函数 $B_{domain}$ 将领域主题映射到核心依赖集合：
-$$
-B_{domain}: \mathcal{T}_{domain} ightarrow \{	ext{Core_Law IDs},\ 	ext{Core IDs}\}
-$$
-含义：桥接层的价值在于“依赖可追踪性”，不是替代领域正文。
-
-### 机制解释（Mechanism）
-桥接层通过统一术语、依赖和入口路径，降低跨文档漂移风险并提升 AI 检索稳定性。
-
-### 可证伪条件（Falsification）
-- 若跨域条目无法回链到 Core/Core_Law canonical 依赖，则桥接层失效。
-- 若术语在桥接层与领域正文产生冲突且无别名声明，则桥接机制失效。
-
-## 【理论边界/防误用声明】
-1. 桥接层用于导航与依赖治理，不构成对领域命题真实性的直接证明。  
-2. 桥接映射不应替代实验验证、临床判断或政策决策流程。
-

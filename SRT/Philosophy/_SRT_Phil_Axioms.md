@@ -204,27 +204,3 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 1. 将“单一统一假设”改写为 SRT 的“统一性族”判据：`U_sync` 与 `U_bind` 是必要但不总是充分条件，可在任务域中继续展开子判据。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262027786.003.0005〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
 2. 在 `T-Phil-2` 下补充“多统一并存”注记：不同统一性失败样式（跨模态裂解、跨时叙事断裂）应按层处理，而非一刀切否定主体连续性。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
 3. 对 `Ax-Ph1` 增加解释约束：主体同一性判定必须绑定到可追踪选择轨道，不允许仅凭单一统一报告直接上升为本体结论。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
-
-## Explainability Compliance Block
-
-### 定义（Definition）
-本桥接文档的角色是为对应域提供 canonical 入口与依赖锚点，而非承载全部领域细节。
-
-### 形式化（Formalization）
-设桥接函数 $B_{domain}$ 将领域主题映射到核心依赖集合：
-$$
-B_{domain}: \mathcal{T}_{domain} ightarrow \{	ext{Core_Law IDs},\ 	ext{Core IDs}\}
-$$
-含义：桥接层的价值在于“依赖可追踪性”，不是替代领域正文。
-
-### 机制解释（Mechanism）
-桥接层通过统一术语、依赖和入口路径，降低跨文档漂移风险并提升 AI 检索稳定性。
-
-### 可证伪条件（Falsification）
-- 若跨域条目无法回链到 Core/Core_Law canonical 依赖，则桥接层失效。
-- 若术语在桥接层与领域正文产生冲突且无别名声明，则桥接机制失效。
-
-## 【理论边界/防误用声明】
-1. 桥接层用于导航与依赖治理，不构成对领域命题真实性的直接证明。  
-2. 桥接映射不应替代实验验证、临床判断或政策决策流程。
-
