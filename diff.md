@@ -2032,3 +2032,95 @@
 ### Notes (brief)
 - 已将文章主分类（engram失塑/OSK重编程/区域特异恢复）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 EPR、CRW 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 15:39 GMT+8] 材料：How the Eye Develops Sharp Vision（https://neurosciencenews.com/retinal-cone-conversion-vision-30107/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“中央凹锥细胞模式化”分类映射（RA限蓝锥/TH促转化/迁移模型对照）。
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“细胞命运转换优先于空间迁移”机制条目。
+- `SRT/SRT_Glossary.md`：新增 `Cone Fate Transition Program (CFTP)` 与 `Foveolar Patterning Axis (FPA)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“器官样本中锥细胞命运转化”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Foveolar Cone Patterning → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| RA 降解（CYP26A1）限制 S 锥生成 | 早期命运筛选门控 | 低~中 | Open-flow（发育期） | payable |
++| TH 信号（DIO2）促 S→M/L 转化 | 后期命运重写与精化 | 中 | Open/Semi-open | payable |
++| 传统“蓝锥迁移外移”解释 | 空间迁移主导模型 | 中（旧假设） | Semi-open | task-dependent |
++| 新“命运转换主导”解释 | 时间程控重编程模型 | 中~高（机制精细） | Open-flow | payable |
++
++**Constraint**: 发育模式化优先按“命运指定+转换”解释，迁移机制作为竞争模型并行检验。
++
++## 【理论边界/防误用声明】
++- 不采纳“细胞命运可塑=成人视网膜可直接同路径再生”的推论。
++- 边界：SRT 区分胎儿发育机制与成人修复机制，禁止无条件类推。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-CFTP-01: Cone Fate Transition Program
++**Formal Statement**: 中央凹锥细胞分布可由“先限制 S 锥生成，再促 S→M/L 转化”的双阶段程序生成：
++$$
++\hat{G}_{cone}(t)=\hat{G}_{spec}(\mathrm{RA\downarrow})\rightarrow\hat{G}_{trans}(\mathrm{TH\uparrow})
++$$
++该机制在不依赖大规模迁移的条件下可解释中央凹 M/L 富集。
++
++## 【理论边界/防误用声明】
++- 不采纳“单通路（RA 或 TH）即可完整解释中央凹模式化”的推论。
++- 边界：SRT 要求双阶段耦合与时窗参数共同成立。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Cone Fate Transition Program - 锥细胞命运转换程序（CFTP） 🟡
++**定义**：在发育时窗内通过 RA 与 TH 协同调控，实现 S 锥受限与 S→M/L 转化的程序化机制。
++
++**[Lineage/Source]**：
++- Source context: Johns Hopkins study summarized by Neuroscience News (2026-02-13)
++- Paper: PNAS, DOI: 10.1073/pnas.2510799123
++- SRT mapping: developmental fate-transition mechanism for high-acuity retinal patterning
++
++#### Foveolar Patterning Axis - 中央凹模式化轴（FPA） 🟡
++**定义**：由 RA 降解轴（CYP26A1）与 TH 增强轴（DIO2）共同构成的中央凹锥细胞分布控制轴。
++
++**[Lineage/Source]**：
++- Same source context and molecular factors
++- SRT mapping: dual-axis developmental control variable
++
++## 【理论边界/防误用声明】
++- 不采纳“FPA 指标高低可直接预测个体视觉质量”的推论。
++- 边界：需结合组织结构完整性与后续回路发育状态。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-CFTP-1 RA-TH 双阶段必要性检验
++**内容**：仅抑制 RA 或仅增强 TH 均不足以复制完整中央凹锥细胞模式，双阶段组合才可重建接近成人分布。
++**证伪条件**：单阶段干预即可完全复制模式化结果。
++
++### H-CFTP-2 命运转换 vs 迁移竞争模型检验
++**内容**：时间序列单细胞追踪中，S 锥应表现为命运标记切换而非大规模位移外移。
++**证伪条件**：主要现象由空间迁移解释且命运切换证据不足。
++
++## 【理论边界/防误用声明】
++- 不采纳“器官样本验证即代表临床移植已可行”的推论。
++- 边界：需长期安全性、整合效率与功能恢复评估。
+```
+
+### Notes (brief)
+- 已将文章核心分类（RA限蓝锥/TH促转化/迁移模型对照）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 CFTP、FPA 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
