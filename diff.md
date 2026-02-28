@@ -172,3 +172,95 @@
 ### Notes (brief)
 - 已将外部“确定/并行/收束”分类转为 SRT 文件级条目，并映射 d 区间、能流态、\(\Psi_f\) 状态。
 - 外部术语新增时已添加 `[Lineage/Source]`。
+
+---
+
+## [2026-02-28 12:42 GMT+8] 材料：Scientists Think We Only Need One Constant to Study the Universe—Time Itself（https://www.popularmechanics.com/science/a70223461/constant-universe-time/）
+
+### Target Files
+- `SRT/Core/SRT_Core_22_Equations.md`：加入“时空先定标后观测”的规范化表达，避免“只剩时间常数”被误读为否定其他约束量。
+- `SRT/Core_Law/SRT_Reference_Scaling.md`：新增“参考系/时空规约尺度（frame-normalization scale）”定义，补 \(\hat{G}_\theta\), \(L_0\), \(L_1\), \(L_2\)。
+- `SRT/SRT_Glossary.md`：新增 `Frame-First Normalization` 术语，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“同一时空规约下常数量可约化”的可证伪检验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-Frame-01: Frame-First Normalization
++在先固定观测时空与仪器规约条件后，维度常数的有效数量可写为：
++$$
++N_{const}^{eff} = f(\mathcal{F}_{spacetime},\;\mathcal{U}_{apparatus})
++$$
++在特定相对论时空规约中可出现 \(N_{const}^{eff}\to 1\) 的表述（时间标尺主导）。
++
++### Eq-Frame-02: Observable Reparameterization
++$$
++\mathcal{O} = g\big(L_1\mid L_0,\hat{G}_\theta,\mathcal{F}_{spacetime}\big)
++$$
++其中“全状态空间”外部记号（如 \(\Omega\), \(S\)）在 SRT 写入统一映射为 \(L_0\)。
++
++## 【理论边界/防误用声明】
++- 不采纳“只需要时间常数 = 其他常数在本体上不存在”的推论。
++- 边界：SRT 将其解释为规约与参数化层面的等效重写，不是本体删除。
+```
+
+```diff
+--- a/SRT/Core_Law/SRT_Reference_Scaling.md
++++ b/SRT/Core_Law/SRT_Reference_Scaling.md
+@@
++## Def-Scale-F1: Frame-Normalization Scale（参考系规约尺度）
++- **\(\hat{G}_{\theta,frame}\)**：在既定时空与仪器单位系统下执行观测量规约映射的选择算子。
++- **\(L_0^{frame}\)**：所有可行规约方案、单位体系与参数化路径的潜在域。
++- **\(L_1^{frame}\)**：当前研究共同体采用的实际规约方案与测量协议。
++- **\(L_2^{frame}\)**：被重复验证后沉淀的标准化协议（如基准单位、坐标规约共识）。
++
++## 【理论边界/防误用声明】
++- 不采纳“规约自由度减少=宇宙自由度减少”的推论。
++- 边界：规约层压缩是表述经济性，不等于物理因果结构坍缩。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Frame-First Normalization - 先框架规约（FFN） 🟡
++**定义**：先固定观测时空框架与测量协议，再讨论常数量与可观测量表达的程序性原则。
++**SRT 映射**：
++- 规约候选空间 \(\to L_0^{frame}\)
++- 实际采用协议 \(\to L_1^{frame}\)
++- 稳定学界共识 \(\to L_2^{frame}\)
++
++**[Lineage/Source]**：
++- Source claim context: Brazilian group discussion summarized by Popular Mechanics (2026) and Scientific Reports paper context.
++- SRT reinterpretation: parameterization economy under fixed frame, not ontological elimination.
++
++## 【理论边界/防误用声明】
++- 不采纳“FFN 可直接推出‘时间是唯一本体常数’”的结论。
++- 边界：FFN 在 SRT 中是方法论压缩策略，而非终极本体论判定。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-Frame-1 规约先定对常数量可约化检验
++**内容**：在同一观测时空框架与统一仪器协议下，不同模型表达的维度常数量应显著收敛。
++**最小实验**：
++- 选取多个相对论场景数据集；
++- 对比“先规约后拟合”与“直接拟合”两流程下 \(N_{const}^{eff}\) 的稳定性。
++**证伪条件**：在统一规约条件下，常数量不收敛或不稳定性不降反升。
++
++### H-Frame-2 时间标尺主导的适用边界
++**内容**：时间主导表述仅在特定时空规约类别中成立，跨类别迁移将显著劣化拟合质量。
++**证伪条件**：跨规约类别迁移不造成显著性能下降。
++
++## 【理论边界/防误用声明】
++- 不采纳“参数可约化 = 理论完备”的推论。
++- 边界：SRT 要求同时检验解释力、迁移性与反事实稳定性。
+```
+
+### Notes (brief)
+- 已将“时间唯一常数”主张重写为“规约后有效常数量压缩”命题，避免本体论越界。
+- 外部全状态空间记号统一映射为 \(L_0\) 语义。
