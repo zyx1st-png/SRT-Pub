@@ -1193,3 +1193,91 @@
 ### Notes (brief)
 - 已将该文核心分类（传统多巴胺路径/新受体路径/免疫炎症/肠脑轴）转为文件级补丁。
 - 新术语 MSM 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:32 GMT+8] 材料：The Brain Ignores Itching When You’re Stressed（https://neurosciencenews.com/stress-itch-hypothalamus-30175/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“应激-瘙痒调制”分类映射（急性抑制/慢性恶化/回路投射差异）。
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“LHA 应激门控”机制条目。
+- `SRT/SRT_Glossary.md`：新增 `Stress-Itch Gating Circuit (SIGC)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“急慢性应激分岔效应”可证伪假设。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Stress-Itch Modulation → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 急性应激抑制瘙痒 | 生存优先级重排（威胁优先） | 中 | Open-flow（短时高唤醒） | payable |
++| 慢性应激加重慢性瘙痒 | 门控系统慢性失调与超兴奋 | 低~中 | Semi-open（长期负载） | overloaded |
++| LHAstress→PAG 主导通路 | 中枢下行抑痒门控 | 中 | Open/Semi-open | task-dependent |
++| 慢性炎症模型下门控失效 | 抑制回路反转/失配 | 低 | Semi-open / Closed-like | unsustainable |
++
++**Constraint**: 急性抑制效应不可外推为慢性治疗结论，必须分时程建模。
++
++## 【理论边界/防误用声明】
++- 不采纳“压力越大越止痒”的线性推论。
++- 边界：SRT 采用“急性保护、慢性损伤”双相机制，不支持单向应激干预叙事。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-SIGC-01: Stress-Itch Gating
++**Formal Statement**: 在急性应激下，LHA 应激敏感神经元通过脑干通路（以 PAG 为主）下调瘙痒行为输出：
++$$
++\hat{G}_{itch}(t)=\hat{G}_{baseline}-\gamma\,\hat{G}_{LHA\rightarrow PAG}^{stress}
++$$
++当系统进入慢性应激/慢性炎症状态时，门控增益参数 \(\gamma\) 出现时程反转或衰减。
++
++## 【理论边界/防误用声明】
++- 不采纳“同一回路在所有疾病状态下同方向起效”的推论。
++- 边界：SRT 将该机制定义为状态依赖门控，强调急慢性条件分岔。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Stress-Itch Gating Circuit - 应激-瘙痒门控回路（SIGC） 🟡
++**定义**：以 LHA 应激敏感神经元为起点，经 PAG/RVM/LPBN 等脑干节点调控瘙痒感知与抓挠行为的中枢门控回路。
++**SRT 写法**：
++$$
++\text{SIGC}: \text{Stress State} \Rightarrow \Delta\text{Itch Gain}(L_1)
++$$
++**[Lineage/Source]**：
++- Source context: IISc Cell Reports study summarized by Neuroscience News (2026-02-23)
++- Core finding: acute stress suppresses itch, chronic condition shifts circuit excitability and worsens itch
++- SRT mapping: state-dependent sensory-priority gating
++
++## 【理论边界/防误用声明】
++- 不采纳“SIGC 可直接替代外周皮肤治疗”的推论。
++- 边界：SIGC 是中枢机制补充，不否定外周免疫与皮肤屏障干预。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-SIGC-1 急慢性应激分岔检验
++**内容**：急性应激应降低短期抓挠行为，而慢性应激在炎症背景下应提高抓挠与回路兴奋性。
++**证伪条件**：急慢性条件下行为与神经活动无分岔差异。
++
++### H-SIGC-2 PAG 投射必要性检验
++**内容**：阻断 LHA→PAG 投射将显著削弱急性应激的抑痒效应。
++**证伪条件**：投射阻断后抑痒效应不变。
++
++## 【理论边界/防误用声明】
++- 不采纳“短期行为改善等于长期病程逆转”的推论。
++- 边界：需纵向评估慢性病程与复发风险。
+```
+
+### Notes (brief)
+- 已将文中分类（急性抑制/慢性恶化/LHA-PAG 门控）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 SIGC 含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
