@@ -1,0 +1,105 @@
+manifest_version: 1
+updated_for: "distributed-optimization-wave-3"
+
+registries:
+  index: "_SRT_INDEX.md"
+  atomic_map: "_SRT_ATOMIC_MAP.md"
+  symbols: "_SRT_SYMBOL_TABLE.md"
+  doc_engineering: "_SRT_DOC_ENGINEERING_GUIDE.md"
+
+core_law:
+  path: "Core_Law"
+  files:
+    - "Core_Law/SRT_Reference_Axioms.md"
+    - "Core_Law/SRT_Reference_Ontology.md"
+    - "Core_Law/SRT_Reference_Dynamics.md"
+    - "Core_Law/SRT_Reference_Scaling.md"
+
+domains:
+  Core:
+    id_prefix: "SRT-CORE"
+    bridge: "Core/_SRT_Core_Bridge.md"
+    entrypoints:
+      - "SRT_1H_Onboarding.md"
+      - "Core/SRT_Core_00_Intro.md"
+      - "Core/SRT_Core_01_Axioms.md"
+      - "Core/SRT_Core_21_Formal_Axioms.md"
+      - "Core/SRT_Core_22_Equations.md"
+  Physics:
+    id_prefix: "SRT-PHYS"
+    bridge: "Physics/_SRT_Phys_Bridge.md"
+    entrypoints:
+      - "Physics/SRT_Quant_00_Intro.md"
+      - "Physics/SRT_Phys_10_Integration.md"
+  Neuroscience:
+    id_prefix: "SRT-NEURO"
+    bridge: "Neuroscience/_SRT_Neuro_Axioms.md"
+    entrypoints:
+      - "Neuroscience/SRT_Neural_Mechanisms.md"
+      - "Neuroscience/SRT_Consciousness_Mechanisms.md"
+      - "Neuroscience/SRT_Neuro_Experiments.md"
+  Philosophy:
+    id_prefix: "SRT-PHIL"
+    bridge: "Philosophy/_SRT_Phil_Axioms.md"
+    entrypoints:
+      - "SRT_FAQ_CRITICAL.md"
+      - "Philosophy/SRT_Philosophy_Foundations.md"
+      - "Philosophy/SRT_Philosophy_Ethics.md"
+      - "Philosophy/SRT_Social_Economics.md"
+  Spirituality:
+    id_prefix: "SRT-SPIRIT"
+    bridge: "Spirituality/_SRT_Spirit_Axioms.md"
+    entrypoints:
+      - "Spirituality/SRT_Spirit_01_Religion_Ontology.md"
+      - "Spirituality/SRT_Spirit_04_Synthesis.md"
+      - "Spirituality/SRT_Spirit_09_Praxis.md"
+  AI:
+    id_prefix: "SRT-AI"
+    bridge: "AI/_SRT_AI_Bridge.md"
+    entrypoints:
+      - "AI/SRT_AI_00_Crisis.md"
+      - "AI/SRT_AI_01_Ontology.md"
+      - "AI/SRT_AI_02_Mortality_Wisdom.md"
+      - "AI/SRT_AI_03_Consciousness_Framework.md"
+      - "AI/SRT_AI_Architecture.md"
+  Experiment:
+    id_prefix: "SRT-EXP"
+    entrypoints:
+      - "SRT_EXP_PRIORITY_MATRIX.md"
+      - "SRT_EXP_TEMPLATE.md"
+      - "SRT_EXP_MEASURE_MAP.md"
+  Project:
+    id_prefix: "SRT-PROJ"
+    entrypoints:
+      - "SRT_OPTIMIZATION_BACKLOG.md"
+  Governance:
+    id_prefix: "SRT-GOV"
+    entrypoints:
+      - "SRT_INTERNAL_OPTIMIZATION_PLAN_2026Q1.md"
+      - "_SRT_EXPLANATION_PROTOCOL.md"
+      - "_SRT_EQ_HYP_MAP.md"
+      - "_SRT_DOMAIN_TEMPLATE.md"
+      - "_SRT_DIFF_PIPELINE_GUIDE.md"
+      - "_SRT_FRONTMATTER_AUDIT.md"
+      - "_SRT_QUALITY_SCORECARD.md"
+      - "_SRT_QUALITY_METRICS.md"
+      - "_SRT_RELEASE_NOTE_TEMPLATE.md"
+      - "_SRT_RELEASE_2026-02.md"
+
+dependency_policy:
+  canonical_form: "hyphenated-id-or-core-law-path"
+  examples:
+    - "SRT-AI-01"
+    - "SRT-CORE-001"
+    - "Core_Law/SRT_Reference_Axioms"
+  disallowed_examples:
+    - "SRT_AI_01"
+    - "_SRT_AI_Bridge"
+    - "SRT_Core_Kernel"
+
+tooling:
+  entrypoint_sync: "scripts/srt_sync_entrypoints.py"
+  entrypoint_sync_wrapper: "scripts/sync_srt_entrypoints.sh"
+  dependency_normalizer: "scripts/srt_doc_validate.py fix-deps"
+  validator: "scripts/srt_doc_validate.py check"
+  wrapper: "scripts/run_srt_checks.sh"
