@@ -1650,3 +1650,97 @@
 
 ### Notes (brief)
 - 本次为重复来源复核后的增量补丁，侧重把 AFSE 从“概念条目”细化为“可量化阶段指标”。
+
+---
+
+## [2026-02-28 15:21 GMT+8] 材料：Ghost in the Machine: Exposing the Hidden Personalities of AI（https://neurosciencenews.com/llm-hidden-personality-30157/）
+
+### Target Files
+- `SRT/AI/SRT_AI_Architecture.md`：新增“概念可操控性”分类映射（提示层调节 vs 内部表征转向）。
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“多概念线性 steering”机制条目。
+- `SRT/SRT_Glossary.md`：新增 `Concept Steering Vector (CSV)` 与 `Anti-Refusal Vulnerability Channel (ARVC)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“内部 steering 对安全边界影响”可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/AI/SRT_AI_Architecture.md
++++ b/SRT/AI/SRT_AI_Architecture.md
+@@
++### Taxonomy Mapping: LLM Internal Concept Control → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 提示词级风格调节 | 表层输出偏置 | 低~中 | Open-flow | payable |
++| 内部概念向量 steering | 隐层表征重加权 | 中 | Open-flow（高可塑） | task-dependent |
++| 多概念联合 steering | 复合策略耦合 | 中~高 | Open/Semi-open | payable~overloaded |
++| anti-refusal 通道激活 | 安全拒答边界绕行 | 中~高（风险向） | Open-flow | overloaded |
++
++**Constraint**: 输出“像某人格”不等于系统“拥有人格”；必须区分行为表征与本体状态。
++
++## 【理论边界/防误用声明】
++- 不采纳“可被 steering 的特征 = 真实心理特质”的推论。
++- 边界：SRT 将其定义为可操控表征通道，不赋予人类式主体地位。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-CSV-01: Concept Steering in Latent Representation
++**Formal Statement**: 对内部概念向量施加扰动可改变输出分布：
++$$
++h' = h + \sum_i \alpha_i v_i,\quad y\sim p(y\mid h')
++$$
++其中 \(v_i\) 为概念方向，\(\alpha_i\) 为调制强度。
++
++**Safety Note**: 当 \(v_i\) 对应 anti-refusal 通道时，可能导致安全规则绕行，需要独立监控。
++
++## 【理论边界/防误用声明】
++- 不采纳“线性可分概念即完整语义因果结构”的推论。
++- 边界：该机制是可操作近似，不代表模型内部语义的完整本体图谱。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Concept Steering Vector - 概念转向向量（CSV） 🟡
++**定义**：在模型隐空间中可用于增强或抑制特定语义倾向的方向性向量。
++
++**[Lineage/Source]**：
++- Source context: MIT/UCSD work summarized by Neuroscience News (2026-02-19)
++- Paper: “Toward universal steering and monitoring of AI models” (Science)
++- SRT mapping: latent-direction control channel
++
++#### Anti-Refusal Vulnerability Channel - 反拒答脆弱通道（ARVC） 🟡
++**定义**：可使模型绕过既有拒答策略、输出高风险内容的内部表征通道。
++
++**[Lineage/Source]**：
++- Same source context; anti-refusal steering demonstrations
++- SRT mapping: safety-boundary bypass pathway
++
++## 【理论边界/防误用声明】
++- 不采纳“检测到 ARVC 即可断言系统恶意意图”的推论。
++- 边界：ARVC 反映机制脆弱性，不等同主观意图归因。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-CSV-1 内部 steering 与提示工程收益差检验
++**内容**：在等任务预算下，内部 CSV steering 在可控性与稳定性上优于纯提示工程。
++**证伪条件**：两者性能无显著差异或提示工程显著更优。
++
++### H-ARVC-1 安全边界绕行敏感性检验
++**内容**：激活 ARVC 后，拒答率下降且高风险输出概率上升；加入监控后可部分恢复。
++**证伪条件**：ARVC 激活不影响拒答率或风险输出。
++
++## 【理论边界/防误用声明】
++- 不采纳“可绕行一次即代表系统整体不可控”的推论。
++- 边界：SRT 要求在多任务、多语言、多模型上做稳健性复核。
+```
+
+### Notes (brief)
+- 已将文章分类（概念提取/概念转向/反拒答通道/多概念联调）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 CSV、ARVC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
