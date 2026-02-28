@@ -633,3 +633,97 @@
 ### Notes (brief)
 - 已将文章核心结构（炎症↑、白质微结构↓、记忆↓）转为文件级补丁与可证伪中介模型。
 - 保持“关联≠因果闭合”的边界，避免过度医学外推。
+
+---
+
+## [2026-02-28 14:22 GMT+8] 材料：RNA Cleanup System Maps the Brain（https://neurosciencenews.com/nmd-neuronal-migration-brain-layers-30197/）
+
+### Target Files
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“RNA 监测-迁移编排”机制条目（NMD/UPF2 对神经元迁移速度与层化的定向调控）。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“UPF2 缺失→层化失序”的可证伪实验假设。
+- `SRT/SRT_Glossary.md`：新增 `NMD-Guided Migration Control (NGMC)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补“迁移调控分类→d 区间/能流态/\(\Psi_f\)”映射。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Neuronal Migration Control Classes → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| NMD 正常（UPF2 完整） | 迁移-层化编排可用 | 中 | Open-flow（发育期高代谢） | payable |
++| UPF2 缺失（迁移迟缓/层化紊乱） | 选择回路失配，\(L_1\) 定位失败 | 低~中 | Semi-open（反馈受损） | overloaded |
++| p53 抑制仅救脑体积不救层化 | 生长与结构编排可解耦 | 中（体积）/低（结构） | Open / Semi-open 混合 | task-split |
++| Foxj1/Ino80 异常上调导致迁移阻断 | 错误程序侵入主通道 | 低 | Semi-open / Closed-like | unsustainable |
++
++**Constraint**: 该分类强调“体积恢复 ≠ 结构恢复”，禁止以单指标替代层化完整性判据。
++
++## 【理论边界/防误用声明】
++- 不采纳“脑体积恢复即发育功能恢复”的推论。
++- 边界：SRT 将迁移层化视为独立机制维度，需与增殖/存活路径分开建模。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-NGMC-01: NMD-Guided Migration Control
++**Formal Statement**: 在皮层发育中，RNA 监测路径（NMD）通过约束迁移相关基因网络，维持神经元定位与层化：
++$$
++\hat{G}_{\theta,mig} = \hat{G}_{\theta,mig}(\text{NMD:UPF2},\;\text{Reelin},\;\text{Ciliary Program})
++$$
++当 \(\text{UPF2}\downarrow\) 时，迁移速度与目标层到达率下降，层化失序概率上升。
++
++**Implication**: 发育期学习/组织的“误差控制”并不只在突触层，也发生在转录后调控层。
++
++## 【理论边界/防误用声明】
++- 不采纳“单基因通路可解释全部皮层组织异常”的推论。
++- 边界：SRT 采用多层耦合机制（迁移、增殖、细胞骨架、信号引导）联合解释。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### NMD-Guided Migration Control - NMD 引导迁移控制（NGMC） 🟡
++**定义**：由 NMD（尤其 UPF2 轴）对神经元迁移与层化相关基因网络进行选择性约束的发育控制机制。
++**SRT 映射**：
++$$
++\text{NGMC}: L_0^{dev}\xrightarrow{\hat{G}_{\theta,mig}}L_1^{laminated}\to L_2^{stable-cortical-architecture}
++$$
++**[Lineage/Source]**：
++- Source context: UCR/Cell Reports study summarized by Neuroscience News (2026-02-25)
++- Core factors mentioned: UPF2, Reelin pathway, Ino80, Foxj1
++- SRT mapping: post-transcriptional control as selection-layer constraint
++
++## 【理论边界/防误用声明】
++- 不采纳“NGMC 可直接推断成人期所有认知差异”的推论。
++- 边界：NGMC 是发育关键机制之一，不能替代后天环境与可塑性因素。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-NGMC-1 UPF2 迁移控制必要性检验
++**内容**：条件性降低 UPF2 将显著降低神经元目标层到达率并增加层化紊乱。
++**最小实验**：
++- 组A：正常 NMD
++- 组B：Upf2 条件缺失
++- 指标：迁移速度、层位到达率、层化一致性指数
++**证伪条件**：Upf2 缺失组与对照组在层化指标上无显著差异。
++
++### H-NGMC-2 体积-结构解耦检验
++**内容**：p53 通路干预可恢复脑体积但不能恢复层化组织。
++**证伪条件**：体积恢复同时层化完全恢复（否定解耦）。
++
++## 【理论边界/防误用声明】
++- 不采纳“恢复单一终点指标即代表全机制修复”的推论。
++- 边界：SRT 采用多终点判据（体积、层化、功能）联合评估。
+```
+
+### Notes (brief)
+- 已把文章中的关键分类（NMD 正常/UPF2 缺失/p53 体积救援/Foxj1-Ino80 干扰）映射为文件级补丁。
+- 新术语与机制均附来源链并包含正式 Header 级防误用声明。
