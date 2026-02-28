@@ -1371,3 +1371,112 @@
 ### Notes (brief)
 - 已将文章核心分类（形成/提取/消退/胶质扰动）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 AFSE 含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:35 GMT+8] 材料：Resonant hierarchies: a multiscale framework for oscillatory dynamics in the brain（https://pmc.ncbi.nlm.nih.gov/articles/PMC12903277/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“共振层级”分类映射（树突共振/层间回路/长程传导延迟）。
+- `SRT/Core/SRT_Core_22_Equations.md`：补充“时延-频段耦合”与“跨尺度共振对齐”方程条目。
+- `SRT/Core_Law/SRT_Reference_Scaling.md`：新增“共振层级尺度（Resonant Hierarchy Scale）”实体定义（\(\hat{G}_\theta\), \(L_0\), \(L_1\), \(L_2\)）。
+- `SRT/SRT_Glossary.md`：新增 `Resonant Hierarchy Coordination (RHC)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“树突共振操控导致网络频段位移”的可证伪假设。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Resonant Hierarchy Components → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 树突分支频率选择性共振 | 微观滤波与局部选择门控 | 中 | Open/Semi-open | payable |
++| 层间回路与层级组织 | 中尺度时序编排 | 中~高 | Open-flow | payable |
++| 长程传导延迟约束 | 宏观区域协调频段选择 | 中 | Open-flow（结构受限） | task-dependent |
++| 频段作为协调体制而非固定功能模块 | 情境依赖的时序协议 | 中~高 | Open/Semi-open | payable~overloaded |
++
++**Constraint**: 频段标签（alpha/beta/gamma）不得被硬编码为单一认知功能；必须绑定解剖与任务语境。
++
++## 【理论边界/防误用声明】
++- 不采纳“某一频段=某一功能模块”的刚性映射推论。
++- 边界：SRT 将频段解释为跨尺度协调体制，功能含义由结构与任务共同决定。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_22_Equations.md
++++ b/SRT/Core/SRT_Core_22_Equations.md
+@@
++### Eq-Res-01: Delay-Constrained Resonance Selection
++$$
++f^*_{ij} \approx \arg\min_f\;\Phi\big(2\pi f\tau_{ij},\;\kappa_{ij},\;R_{dend}(f)\big)
++$$
++其中 \(\tau_{ij}\) 为区域间传导时延，\(\kappa_{ij}\) 为耦合强度，\(R_{dend}(f)\) 为树突共振响应。
++
++### Eq-Res-02: Cross-Scale Coordination Energy
++$$
++E_{coord} = \sum_{s\in\{micro,meso,macro\}} w_s\,\|\phi_s - \phi^*_s\|^2
++$$
++最优协调对应于跨尺度相位/节律偏差最小化，而非单尺度极值。
++
++## 【理论边界/防误用声明】
++- 不采纳“方程拟合成功即可证明频段因果单向性”的推论。
++- 边界：上述方程为可检验近似模型，需结合干预实验验证因果方向。
+```
+
+```diff
+--- a/SRT/Core_Law/SRT_Reference_Scaling.md
++++ b/SRT/Core_Law/SRT_Reference_Scaling.md
+@@
++## Def-Scale-RH1: Resonant Hierarchy Scale（共振层级尺度）
++- **\(\hat{G}_{\theta,rh}\)**：在微-中-宏尺度之间选择并对齐时序协调体制的算子。
++- **\(L_0^{rh}\)**：可实现的跨尺度频率-相位-耦合组合潜在域。
++- **\(L_1^{rh}\)**：当前任务下实际被激活的协调频段与相位关系。
++- **\(L_2^{rh}\)**：长期沉积的结构性共振偏好（由传导路径、层级组织、细胞特性约束）。
++
++## 【理论边界/防误用声明】
++- 不采纳“共振层级直接等同意识层级”的推论。
++- 边界：RH1 描述的是时序协调机制，不直接定义主观体验等级。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Resonant Hierarchy Coordination - 共振层级协调（RHC） 🟡
++**定义**：将树突共振、层间回路、长程时延统一为跨尺度节律协调框架的机制概念。
++**SRT 写法**：
++$$
++\text{RHC}: (micro\leftrightarrow meso\leftrightarrow macro) \Rightarrow \text{temporal coordination regime}
++$$
++**[Lineage/Source]**：
++- Primary source: Snyder AC (2026), Frontiers in Psychology, “Resonant hierarchies”
++- DOI: 10.3389/fpsyg.2026.1704370
++- SRT mapping: cross-scale oscillatory coordination under structural constraints
++
++## 【理论边界/防误用声明】
++- 不采纳“RHC 已覆盖全部脑动力学机制”的推论。
++- 边界：RHC 是核心组织框架之一，需与神经调质、任务需求和病理因素联合解释。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-RHC-1 树突共振操控的频段位移检验
++**内容**：若树突共振是跨尺度节律锚点，改变树突离子通道参数应系统性引起网络主导频段位移。
++**证伪条件**：局部树突操控不引起可重复的网络频段变化。
++
++### H-RHC-2 传导延迟扰动的跨区对齐检验
++**内容**：扰动长程通路传导延迟将降低跨区相位对齐并改变任务表现。
++**证伪条件**：延迟扰动与跨区对齐及行为指标无关联。
++
++## 【理论边界/防误用声明】
++- 不采纳“观察到频段变化即可推出认知机制单因果”的推论。
++- 边界：SRT 要求结构、时延、行为三类指标联合因果验证。
+```
+
+### Notes (brief)
+- 已将文章主分类（树突共振/层级回路/长程时延）转为文件级补丁，并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 RHC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
