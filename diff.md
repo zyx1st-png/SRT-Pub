@@ -449,3 +449,98 @@
 ### Notes (brief)
 - 已将该文三类核心主张转为可比较分类，并显式区分封闭/开放系统语境。
 - 保持 SRT 的“竞争解释 + 可证伪”方法，不做单向结论继承。
+
+---
+
+## [2026-02-28 12:53 GMT+8] 材料：Neurons receive precisely tailored teaching signals as we learn（https://mcgovern.mit.edu/2026/02/25/neurons-learn/）
+
+### Target Files
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：加入“向量化教导信号”分类映射（全局广播调制 vs 神经元定向误差信号）。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增 BCI 场景下的可证伪假设（定向误差信号必要性）。
+- `SRT/SRT_Glossary.md`：新增 `Vectorized Instructive Signal (VIS)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补充“学习机制分类→d 区间/能流态/\(\Psi_f\)”映射表。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Learning Signal Classes → SRT Dynamics
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 全局 neuromodulator 广播（dopamine/NE） | 粗粒度强化调制 | 低~中 | Open-flow | payable（效率较低） |
++| 向量化神经元定向误差信号（VIS） | 细粒度 \(\hat{G}_\theta\) 定向更新 | 中~高 | Open-flow（高信息反馈） | payable（高精度学习） |
++| 树突级反馈阻断后学习失败 | 局部误差信号必要性证据 | 中 | Semi-open（受限反馈） | overloaded / learning collapse |
++
++**Constraint**: 上述 d 区间为学习效率语境下的 proxy，不替代 canonical d 定义。
++
++## 【理论边界/防误用声明】
++- 不采纳“观察到 VIS 即证明大脑完全等同 backprop 算法”的推论。
++- 边界：SRT 仅承认“局部定向误差信号存在”的机制证据，不把工程算法一对一投射为生物全模型。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-Vis-01: Vectorized Instructive Update
++**Formal Statement**: 当系统可获得神经元级定向误差信号时，\(\hat{G}_\theta\) 的参数更新可写为向量化局部更新：
++$$
++\Delta\theta_i \propto -\eta\,e_i\,\nabla_{\theta_i}\mathcal{L}
++$$
++其中 \(e_i\) 为局部教导信号分量。
++
++**Implication**: 学习由“全局同信号更新”转向“分量特异更新”，显著提升样本效率与任务对齐能力。
++
++## 【理论边界/防误用声明】
++- 不采纳“VIS 存在即可推出意识本体结论”的推论。
++- 边界：VIS 约束的是学习动力学层，不直接决定 qualia 或主观体验判据。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Vectorized Instructive Signal - 向量化教导信号（VIS） 🟡
++**定义**：可对不同神经元（或参数分量）发送方向相反/幅度不同更新指令的误差信号结构。
++**SRT 写法**：
++$$
++\mathbf{e}=(e_1,e_2,\dots,e_n),\quad \Delta\theta_i\sim e_i
++$$
++**用途**：解释为何生物学习可超越纯全局广播强化，实现细粒度可塑性编排。
++
++**[Lineage/Source]**：
++- Primary source: MIT McGovern report on Nature paper (2026-02-25)
++- Paper title context: “Vectorized instructive signals in cortical dendrites during a brain-computer interface task”
++- SRT mapping: local error-channel update within \(\hat{G}_\theta\) dynamics
++
++## 【理论边界/防误用声明】
++- 不采纳“VIS=生物反向传播已完全成立”的断言。
++- 边界：VIS 是机制相似性证据，不是算法同一性证明。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-VIS-1 定向误差信号必要性检验
++**内容**：在 BCI 学习任务中，若抑制定向树突反馈，学习曲线应显著劣化。
++**最小实验**：
++- 组A：正常反馈
++- 组B：树突教导信号阻断
++- 指标：达标速度、稳定性、反向干扰恢复能力
++**证伪条件**：阻断后学习性能无显著下降。
++
++### H-VIS-2 广播调制与向量化反馈的效率差检验
++**内容**：在等资源条件下，VIS 条件应优于纯全局调制条件。
++**证伪条件**：两条件无效率差或纯广播显著更优。
++
++## 【理论边界/防误用声明】
++- 不采纳“机制效率提升即可推出认知优越性本体论”的推论。
++- 边界：该实验层结论限定于学习动力学，不外推为价值或意识等级结论。
+```
+
+### Notes (brief)
+- 已将文章中的学习机制分类（广播强化/定向误差信号/阻断效应）转为文件级补丁。
+- 新术语附 `[Lineage/Source]`，并在目标文件以 Header 写入防误用声明。
