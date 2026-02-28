@@ -1281,3 +1281,93 @@
 ### Notes (brief)
 - 已将文中分类（急性抑制/慢性恶化/LHA-PAG 门控）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 SIGC 含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:34 GMT+8] 材料：Astrocytes Discovered as Architects of Fear Memory（https://neurosciencenews.com/astrocytes-fear-memory-amygdala-30159/）
+
+### Target Files
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“杏仁核星形胶质恐惧记忆协同”机制条目（编码/提取/消退三阶段）。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：补充“恐惧记忆阶段分类→d 区间/能流态/\(\Psi_f\)”映射。
+- `SRT/SRT_Glossary.md`：新增 `Astrocyte Fear-State Encoding (AFSE)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“胶质操控改变恐惧提取与消退”的可证伪实验。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Fear Memory Phases (Astrocyte-Dependent) → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 恐惧记忆形成（encoding） | 威胁关联初始锚定 | 中 | Open-flow（高警觉） | payable |
++| 恐惧记忆提取（retrieval） | 既有威胁表征再激活 | 中 | Semi-open | payable |
++| 恐惧记忆消退（extinction） | 威胁权重重估与降载 | 中~高（灵活重估） | Open/Semi-open | payable~overloaded（高冲突时） |
++| 星形胶质活动受扰 | 回路表征失配与行为僵化 | 低~中 | Semi-open（协同下降） | overloaded |
++
++**Constraint**: 恐惧“表达强”与“适应好”不可混同；需同时评估消退速度与决策适配性。
++
++## 【理论边界/防误用声明】
++- 不采纳“恐惧回路仅由神经元决定”的旧式单细胞叙事。
++- 边界：SRT 采用神经元-胶质协同模型，强调非神经元细胞的功能因果贡献。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-AFSE-01: Astrocyte Fear-State Encoding
++**Formal Statement**: 在 BLA 回路中，星形胶质 Ca2+ 信号参与恐惧状态表征的编码、提取与消退调节：
++$$
++\hat{G}_{fear}(t)=\hat{G}_{neuronal}(t)+\beta\,\hat{G}_{astro}(\mathrm{Ca}^{2+},\mathrm{BLA\text{-}PFC\,readout})
++$$
++当 \(\hat{G}_{astro}\) 受抑或异常时，神经元群体表征稳定性与消退更新能力下降。
++
++**Implication**: 恐惧记忆并非纯神经元编码产物，胶质态是可操控的关键门控变量。
++
++## 【理论边界/防误用声明】
++- 不采纳“增强恐惧消退=应激系统全面改善”的推论。
++- 边界：该机制聚焦恐惧记忆子系统，不能外推至所有情绪维度。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Astrocyte Fear-State Encoding - 星形胶质恐惧态编码（AFSE） 🟡
++**定义**：星形胶质通过活动依赖信号调节 BLA 神经群体表征，从而影响恐惧记忆形成、提取与消退的机制。
++**SRT 写法**：
++$$
++\text{AFSE}: \text{Fear State} \leftrightarrow (\text{BLA neurons} \times \text{astrocyte state})
++$$
++**[Lineage/Source]**：
++- Source context: University of Arizona / NIH collaboration summarized by Neuroscience News (2026-02-20)
++- Paper context: “Astrocytes enable amygdala neural representations supporting memory” (Nature)
++- SRT mapping: glia-neuron co-encoding in fear-memory circuitry
++
++## 【理论边界/防误用声明】
++- 不采纳“AFSE 可单独解释 PTSD 全病程”的推论。
++- 边界：AFSE 是核心环节之一，需与全脑回路、环境与发展史联合建模。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-AFSE-1 胶质操控对恐惧提取消退的因果检验
++**内容**：选择性增强/抑制 BLA 星形胶质活动应可双向调节恐惧记忆提取强度与消退速度。
++**证伪条件**：胶质操控不影响提取与消退指标。
++
++### H-AFSE-2 BLA-PFC 读出依赖检验
++**内容**：若 AFSE 成立，BLA 星形胶质操控应同步改变 BLA-PFC 回路读出模式与行为选择。
++**证伪条件**：行为改变与回路读出无一致关系。
++
++## 【理论边界/防误用声明】
++- 不采纳“动物模型中的消退效应可直接等同临床疗效”的推论。
++- 边界：需跨物种与临床纵向验证后才可用于治疗外推。
+```
+
+### Notes (brief)
+- 已将文章核心分类（形成/提取/消退/胶质扰动）转为文件级补丁并映射 d 区间、能流态、\(\Psi_f\)。
+- 新术语 AFSE 含 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
