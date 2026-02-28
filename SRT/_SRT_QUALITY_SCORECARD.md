@@ -86,7 +86,7 @@ python3 scripts/srt_explainability_audit.py
 - Broken Link Rate：**0**（`run_srt_checks.sh` 当前通过）
 - Symbol Governance：**PASS**
 - Terminology Governance Coverage：**100%**（核心术语集 4/4）
-- Explainability Completeness：**44.2%**（71篇候选，5段结构平均覆盖；见 `_SRT_EXPLAINABILITY_AUDIT.md`）
+- Explainability Completeness：**52.1%**（71篇候选，5段结构平均覆盖；见 `_SRT_EXPLAINABILITY_AUDIT.md`）
 - Boundary Header Coverage：**100.0%**（64/64，自动粗筛口径）
 
 ---

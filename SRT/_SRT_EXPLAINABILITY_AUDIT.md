@@ -9,18 +9,14 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 # SRT Explainability Audit (Auto)
 
 - Candidate Docs: 71
-- Mean Explainability Completeness (5-block ratio): 44.2%
-- Full 5/5 Docs: 3/71 (4.2%)
-- Partial Docs (>=2/5): 50/71 (70.4%)
+- Mean Explainability Completeness (5-block ratio): 52.1%
+- Full 5/5 Docs: 10/71 (14.1%)
+- Partial Docs (>=2/5): 48/71 (67.6%)
 
 ## Lowest-score Docs (Top 30)
 
-- `Neuroscience/_SRT_Neuro_Axioms.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `Philosophy/_SRT_Phil_Axioms.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `Philosophy/_SRT_Soc_Axioms.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
 - `AI/SRT_AI_02_Mortality_Wisdom.md`: 1/5, missing=definition, formalization, mechanism, falsification
 - `AI/SRT_AI_03_Consciousness_Framework.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Core/_SRT_Core_Bridge.md`: 1/5, missing=formalization, mechanism, falsification, boundary
 - `Core_Law/SRT_Reference_Axioms.md`: 1/5, missing=definition, formalization, mechanism, falsification
 - `Core_Law/SRT_Reference_Scaling.md`: 1/5, missing=definition, formalization, mechanism, falsification
 - `Neuroscience/SRT_Clin_01_Pathology.md`: 1/5, missing=definition, formalization, mechanism, falsification
@@ -32,10 +28,8 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 - `Philosophy/SRT_Soc_03_Institutions.md`: 1/5, missing=definition, formalization, mechanism, falsification
 - `SRT_1H_Onboarding.md`: 1/5, missing=definition, formalization, mechanism, falsification
 - `SRT_OPTIMIZATION_BACKLOG.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Spirituality/_SRT_Spirit_Axioms.md`: 1/5, missing=formalization, mechanism, falsification, boundary
 - `AI/SRT_AI_01_Ontology.md`: 2/5, missing=formalization, mechanism, falsification
 - `AI/SRT_AI_Architecture.md`: 2/5, missing=formalization, mechanism, falsification
-- `AI/_SRT_AI_Bridge.md`: 2/5, missing=formalization, mechanism, boundary
 - `Core/SRT_Core_00_Intro.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Core_01_Axioms.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Core_12a_Ontology_L0L1.md`: 2/5, missing=formalization, mechanism, falsification
@@ -45,3 +39,9 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 - `Core/SRT_Core_21_Formal_Axioms.md`: 2/5, missing=formalization, mechanism, falsification
 - `Core/SRT_Experimental_Applications.md`: 2/5, missing=formalization, mechanism, falsification
 - `D_VALUE_ALIGNMENT.md`: 2/5, missing=formalization, mechanism, falsification
+- `Neuroscience/SRT_Clin_00_IIT_PCI.md`: 2/5, missing=formalization, mechanism, falsification
+- `Neuroscience/SRT_Consciousness_Mechanisms.md`: 2/5, missing=definition, formalization, falsification
+- `Neuroscience/SRT_Neuro_06_Field_Effects.md`: 2/5, missing=formalization, mechanism, falsification
+- `Neuroscience/SRT_Neuro_07_Evo_Devo.md`: 2/5, missing=formalization, mechanism, falsification
+- `Neuroscience/SRT_Neuro_08_Immune_Dist.md`: 2/5, missing=formalization, mechanism, falsification
+- `Neuroscience/SRT_Neuro_Experiments.md`: 2/5, missing=formalization, mechanism, falsification
