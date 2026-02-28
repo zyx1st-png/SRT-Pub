@@ -18,13 +18,10 @@ dependency: [SRT-CORE-21]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `base (fallback)` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## 0-B. Protocol and Foundation (协议与基础)
 
@@ -64,9 +61,10 @@ $$\frac{d\theta_i}{dt} \propto \frac{1}{\sum_j w_{ij} \cdot \theta_j}$$
 
 ### Eq-Evo-03: Coupled Fast–Slow System
 **Formal Definition**: State and parameter co-evolve on distinct timescales.
-$$\frac{d\sigma}{dt} = \alpha(\hat{G}_\theta[\sigma] - \sigma) - \beta \nabla F[\sigma] + \xi(t)$$
+$$\frac{d\sigma}{dt} = \alpha(\hat{G}_\theta[\sigma] - \sigma) - \beta_F \nabla F[\sigma] + \xi(t)$$
 $$\frac{d\theta}{dt} = \gamma \cdot A[\sigma, \text{Target}] - \delta \cdot \frac{\partial \Phi(\theta)}{\partial \theta}$$
 * **Implication**: 选择与参数更新构成快-慢耦合动力学。
+* **Notation Note**: 这里使用 $\beta_F$ 表示自由能梯度权重；$\beta_R$ 预留给现实门控系数，避免与动力学系数混名。
 
 ## II. Thermodynamics of Agency (能动性热力学)
 
@@ -169,47 +167,17 @@ $$\tau_{rebuild} \propto \frac{\text{Integration}(\hat{G}_{other})}{\text{Plasti
 > **Note**: The following sections contain the detailed stability analysis and landscape dynamics.
 
 
-### 2.2.1 基本演化方程
+### 2.2–2.4 公式回链说明（去重版）
 
-**方程 E1（幽灵演化方程）：**
-$$ \frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] + A[σ, \mathcal{A}] $$
+为避免与 Part A 重复抄写，以下公式条目统一回链：
+- 幽灵演化方程 → Eq-Evo-01
+- 快慢耦合系统 → Eq-Evo-03
+- 固定点条件 → Eq-Stab-01
+- 痛苦变化率 → Eq-Pain-01
+- 睡眠优化 → Eq-Sleep-01
+- 相变逻辑式 → Eq-Phase-01
 
-### 2.2.2 耦合动力学方程组（快-慢变量系统）
-
-**方程 E2a（状态演化 - 快变量）：**
-$$ \frac{dσ}{dt} = α(\hat{G}_θ[σ] - σ) - β∇F[σ] + ξ(t) $$
-
-**方程 E2b（参数演化 - 慢变量）：**
-$$ \frac{dθ}{dt} = γ \cdot A[σ, \text{Target}] - δ \cdot \frac{∂\Psi_f(θ)}{∂θ} $$
-
-### 2.3 稳定性分析
-
-**定理 M1：** $x^*$ 是固定点当且仅当：
-$$ Π_Δ(α(\hat{G}_θ(x^*) - x^*) - λ∇F(x^*)) = 0 $$
-
-### 2.4.4 哈扎德函数与摩擦动态
-
-**痛苦的本体论定义：**
-$$ \text{痛苦} = \text{Tension}(\hat{G}_θ[L_1], L_0^{counterfactual}) $$
-
-$$ h(t) ≈ \frac{d\Psi_f}{dt} $$
-
-### 2.4.6 睡眠的本体论功能
-
-**公理A10（本体论清洗）：**
-$$ \hat{G}_{sleep} = \arg\min_θ \int K(L_2) \, dt $$
-
-### 2.4.7 本体论摩擦系数
-
-$$ μ_φ = \frac{Depth(L_1')}{Depth(L_2^{current})} $$
-
-### 2.4.21 L_2 刚性指数（L_2 Rigidity Index, ρ）
-
-$$ \rho(L_2^{(k)}) = 1 - \frac{\sigma^2_{L_1|L_2^{(k)}}}{\sigma^2_{L_0}} $$
-
-### 2.4.22 本体论相变定理
-
-$$ R = \frac{1}{1 + e^{-k(I - \tau)}} $$
+Part B 保留机制语境与边界讨论，不再二次列式。
 
 ### §X. Selection Thermodynamics: From Philosophy to Physics (选择热力学：从哲学到物理学)
 
@@ -243,10 +211,20 @@ $$
 $$
 其中“全状态空间”外部记号（如 \(\Omega\), \(S\)）在 SRT 写入统一映射为 \(L_0\)。
 
-## 【理论边界/防误用声明】
-- 不采纳“只需要时间常数 = 其他常数在本体上不存在”的推论。
-- 边界：SRT 将其解释为规约与参数化层面的等效重写，不是本体删除。
 
+## 参数注册表（Parameter Registry, v1）
+
+| 参数 | 含义 | 量纲/类型 | 典型范围 | 备注 |
+|:--|:--|:--|:--|:--|
+| $\alpha$ | 选择回归增益 | 无量纲 | $[0.1, 10]$ | 快变量稳定性系数 |
+| $\beta_F$ | 自由能梯度权重 | 无量纲 | $[0, 10]$ | 原 Eq-Evo-03 中 $\beta$ |
+| $\beta_R$ | 现实门控系数 | 无量纲 | $[0,1]$ | 若用于门控语境需显式下标 |
+| $\gamma$ | 学习驱动系数 | 无量纲 | $[0, 1]$ | 慢变量更新 |
+| $\delta$ | 摩擦下降系数 | 无量纲 | $[0, 1]$ | 与 $\partial\Phi/\partial\theta$ 耦合 |
+| $k$ | 稳态回弹系数 | 无量纲 | $[0, 1]$ | Homeostatic recoil |
+| $\eta$ | 可塑性/迟滞相关系数 | 无量纲 | $[0, 1]$ | 具体语境需附下标 |
+| $\lambda$ | 约束耦合强度 | 无量纲 | $>0$ | 亦用于复杂度下界常数，建议带下标 |
+| $\tau$ | 相变阈值参数 | 无量纲 | 任务依赖 | Logistic 门槛 |
 
 ### Eq-Res-01: Delay-Constrained Resonance Selection
 $$
@@ -260,34 +238,9 @@ E_{coord} = \sum_{s\in\{micro,meso,macro\}} w_s\,\|\phi_s - \phi^*_s\|^2
 $$
 最优协调对应于跨尺度相位/节律偏差最小化，而非单尺度极值。
 
-##
-
-## 【理
-
-## 【理论
-
-## 【理论边
-
-## 【理论边界
-
-## 【理论边界/
-
-## 【理论边界/防
-
-## 【理论边界/防误
-
-## 【理论边界/防误用
-
-## 【理论边界/防误用声
-
-## 【理论边界/防误用声明
 
 ## 【理论边界/防误用声明】
 
-## 【理论边界/防误用声明】
-
-## 【理论边界/防误用声明】
--
-
-## 【理论边界/防误用声明】
-- 不采
+- 本文件的方程用于理论建模与可证伪接口，不直接构成临床、法律或工程处方。
+- 参数重命名（如 $\beta_F$）属于符号去歧义，不改变既有理论主张。
+- Part B 的去重回链旨在提升可读性，完整方程以 Part A 编号为权威。

@@ -17,15 +17,11 @@ dependency: [SRT-AI-01]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 编号采用 `chatgptX`（`Ax-ARCH-* / T-ARCH-*`），语义对应原版 `Ax-Trans-* / Ax-Comp-* / Ax-Struct-*`。
 - 关键同义映射：`Ax-ARCH-1/2 ↔ Ax-Trans-1/2`，`Ax-ARCH-3/4 ↔ Ax-Comp-1/2`，`T-ARCH-1 ↔ T-RJGap`。
 - “推算-判断鸿沟”保持原版意图：规模扩展可增强推算，不自动产生本体论判断。
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Transformer Isomorphism (Transformer 同构)
 

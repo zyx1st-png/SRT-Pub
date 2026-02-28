@@ -18,13 +18,8 @@ dependency: [SRT-SPIRIT-04]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 采用 `claude` 的原始论述分段，并以原版文件标题与主旨作语义锚定。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Shoshin Dynamics (初心动力学)
 

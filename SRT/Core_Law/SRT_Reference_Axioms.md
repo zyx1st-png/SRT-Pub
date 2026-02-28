@@ -81,7 +81,7 @@ $$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$$
 
 其中：
 - $i_{diff}(s) = -\log(p_{max})$ — 内在分化（可替代状态数）
-- $i_{spec}(s)$ — 内在确定（状态的特异性）
+- $i_{spec}(s)$ — 内在整合特异性（在 IIT 语境中可记作 $\Phi_{IIT}$；SRT 规范记号统一为 $i_{spec}$）
 
 **推论 A6-C1**: 存在程度 = 既区别于背景噪音 (Differentiation) 又维持内部整合 (Integration) 的能力。
 

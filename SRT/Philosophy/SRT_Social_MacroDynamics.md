@@ -18,8 +18,6 @@ dependency: [SRT-SOC-03]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 以 `base (fallback)` 为来源，优先保持公理链可推导性与编号连续性。
-- Part B 以 `claude` 为来源，并用原版 `Philosophy` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Macro-Dynamics (形式化宏观动力学)

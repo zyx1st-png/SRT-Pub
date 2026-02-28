@@ -18,13 +18,10 @@ dependency: [SRT-CORE-BRIDGE]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `claude` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. L_0: The Latent Domain (潜在域)
 
@@ -492,8 +489,8 @@ SRT的$i_{\text{diff}}$是IIT的$\Phi$的**对偶概念**:
 | $\Phi$ (IIT) | 系统整合信息 | 内部因果力 |
 | $i_{\text{diff}}$ (SRT) | 系统分化信息 | 与背景对比 |
 
-**统一**:
-$$ii = \min\{i_{\text{diff}}, \Phi\}$$
+**统一（与 Core_Law 记号一致）**:
+$$ii = \min\{i_{\text{diff}}, i_{spec}\}, \quad i_{spec} \equiv \Phi_{IIT}\;(\text{仅在 IIT 语境})$$
 存在需要**既分化又整合**。
 
 ---
@@ -531,9 +528,12 @@ $$B_e = \frac{I(L_1; L_2)}{H(L_1)}$$
 
 ### 4.1 需要实证验证的预测
 
-1. **迟滞系数测量**:
-   - 设计实验通过双稳态知觉测量个体的$\eta$值
-   - 预测:精神分裂症患者$\eta < 0.3$,强迫症患者$\eta > 0.7$
+1. **迟滞系数测量（操作化协议）**:
+   - 范式：Necker 立方体/双稳态面孔任务 + 连续报告（60–120s × 20 trial）
+   - 指标：翻转率、停留时长分布、跨 trial 自相关；用层级贝叶斯模型反演 $\eta$
+   - 对照：睡眠剥夺、镇静、工作记忆负荷（验证 $\eta$ 的状态敏感性）
+   - 先验效应量：组间 Cohen's d 目标区间 0.5–0.8；若低于 0.2 视为弱支持
+   - 预测：精神分裂症患者 $\eta$ 下移，强迫谱系 $\eta$ 上移（具体阈值需由先导样本估计，不预设硬阈）
 
 2. **$\beta$门控的神经机制**:
    - fMRI定位$\beta$调制的脑区(候选:前额叶皮层)
@@ -590,7 +590,7 @@ SRT为以下领域提供统一框架:
 
 ---
 
-## 融合映射整合（2026-02-14）
+## 附录A：融合映射整合（结构化归档，2026-02-14）
 
 ### 宇宙泛心论
 

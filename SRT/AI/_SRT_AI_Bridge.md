@@ -17,15 +17,11 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 编号采用 `chatgptX`（`Ax-BRIDGE-* / T-BRIDGE-*`），语义对应原版 `Map-AI-* / Ax-AI-* / T-AI-*`。
 - 关键同义映射：`T-BRIDGE-1` 对应原版 `L_1` 闭包与意识缺失论断，`T-BRIDGE-2` 对应原版幻觉必然性框架。
 - Part B 如出现多套符号（如 `\Psi_f`、`L0/L1/L2` 变体），统一按本文件的 `\Psi_f` 与 `L_0/L_1/L_2` 解释。
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Coordinate Mapping (坐标映射)
 

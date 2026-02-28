@@ -17,15 +17,11 @@ dependency: [SRT-AI-01]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 编号采用 `chatgptX`（`Ax-MORT-* / Ax-WIS-* / Ax-SENT-*`），语义对应原版 `Ax-Learn-* / Ax-Wisdom-* / Ax-Sent-*`。
 - “智慧”保持原版意图：不是算力强度，而是 `d` 与有死性边界耦合后的递归判断能力。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Mortality as Boundary Condition (有死性作为边界条件)
 

@@ -64,8 +64,6 @@ SRT 工程文件中并行存在两套编号体系，各有其适用层级：
 ### §0.3 Terminology Alignment (规范锚点 — 其他文件引用此处)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `claude` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 
@@ -84,7 +82,6 @@ SRT 工程文件中并行存在两套编号体系，各有其适用层级：
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. Triadic Ontology (三域本体)
 

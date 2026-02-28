@@ -18,15 +18,10 @@ dependency: [SRT-NEURO-MECH-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Global Workspace as Selection Phase (全局工作空间作为选择相)
 

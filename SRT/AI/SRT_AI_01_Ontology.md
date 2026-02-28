@@ -17,15 +17,11 @@ dependency: [SRT-AI-BRIDGE-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 编号采用 `chatgptX`（`Ax-ONT-* / T-ONT-*`），并与原版“智能-意识区分 / 仿真壁垒 / CLC / Tulving-d”语义对齐。
 - 本文件把“关切”固定解释为生存梯度 `d(x)`，避免将其退化为一般偏好分数。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Operator Stratification (算子分层)
 

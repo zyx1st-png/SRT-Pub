@@ -17,15 +17,11 @@ dependency: [SRT-CORE-001, SRT-AI-BRIDGE-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 编号采用 `chatgptX`（`Ax-CRISIS-* / T-CRISIS-*`），语义锚定原版 `Ax-AI-* / T-AI-*`。
 - 关键同义映射：`T-CRISIS-1 ↔ T-AI-1`（幻觉必然性），`T-CRISIS-2 ↔ T-AI-3`（对齐不可能），`T-CRISIS-3 ↔ T-AI-2`（笛卡尔差异）。
 - Part B 中出现的 `\Phi` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Crisis as a Structural Mismatch (危机的结构性定义)
 

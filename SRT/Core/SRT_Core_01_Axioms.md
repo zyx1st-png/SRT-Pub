@@ -19,8 +19,6 @@ version: 6.0 (Hybrid Constitution)
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `claude` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 
@@ -69,7 +67,6 @@ version: 6.0 (Hybrid Constitution)
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. Ontological Trinity (本体论三位一体)
 
@@ -127,7 +124,7 @@ $$\hat{G}_\theta[L_2] = L_2$$
 ### Ax-Core-A6: Information-Existence Equivalence
 **Formal Definition**: Existence intensity equals intrinsic information integration.
 $$\text{Intensity}(x) \equiv ii(x)$$
-$$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$$
+$$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}, \quad i_{spec} \equiv \Phi_{IIT}\;(\text{在 IIT 语境中})$$
 * **Implication**: 存在强度可被视为信息分化与整合的最小值。
 
 ### T-Core-A6C1: Differentiation-Integration Minimum
@@ -434,7 +431,7 @@ $$\text{Escape Energy} \propto |\text{Aut}(L_2)| \cdot \int_0^T |\Delta\theta| \
 
 **存在的强度等价于其内在的信息分化度。一个实体的"存在程度"由其$ii$指标决定。**
 
-$$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$$
+$$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}, \quad i_{spec}\equiv\Phi_{IIT}\;(\text{在 IIT 语境中})$$
 
 这将Tononi的IIT(Integrated Information Theory)整合进SRT,但做了关键修正。
 
