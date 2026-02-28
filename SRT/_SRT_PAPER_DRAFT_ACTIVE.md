@@ -17,4 +17,9 @@ dependency: [_SRT_PAPER_PIPELINE]
 6. References
 
 ## Current Focus
-- (待填充)
+- Active Title: From Selection to Stability: A Unified Formal Core for SRT
+- This Week Objectives:
+  1) 完成 Abstract + Introduction 初稿
+  2) 从 `SRT_Core_22_Equations.md` 抽取 3 个主方程并给出证伪接口
+  3) 补 12-20 条外部文献引用（分级：peer-reviewed/preprint）
+  4) 明确理论边界与不主张项
