@@ -358,3 +358,94 @@
 ### Notes (brief)
 - 已将文章中的核心分类（可数无限/不可数无限/区间等势）直接映射到 SRT 文件级条目。
 - 外部状态空间语义统一映射为 \(L_0\)；新增术语已附 `[Lineage/Source]`。
+
+---
+
+## [2026-02-28 12:52 GMT+8] 材料：Foundational Evidence for Design: The Generalized Second Law of Thermodynamics（https://scienceandculture.com/2026/02/foundational-evidence-for-design-the-generalized-second-law-of-thermodynamics/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“信息演化主张分类映射”（封闭系统信息递减主张 / 开放系统功能组织形成 / 设计推断主张）并映射到 d 区间与能流态。
+- `SRT/Philosophy/SRT_Philosophy_Ethics.md`：加入“信息论约束与目的论推断分离”的方法论段落。
+- `SRT/SRT_Glossary.md`：新增 `Observer-Bound Information Entropy Claim` 术语与 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：加入“开放系统中功能信息可增长”的反向可证伪假设，避免单向确认偏差。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Information-Evolution Claims → SRT
++
++| 外部分类 | SRT 对应解释 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| “封闭系统中观察者信息不增” | 封闭域下可达态压缩 | 低~中 | Closed-flow | payable（但创新受限） |
++| “开放能流不足以生成功能蓝图” | 需区分原始能流与选择回路耦合 | 中 | Open-flow（若仅能流、无选择记忆则无效） | overloaded 或无效支付 |
++| “信息增长必指向智能设计” | SRT 视为可竞争解释之一，非唯一结论 | 中~高（取决于选择架构） | Open / Semi-open | task-dependent |
++
++**Constraint**: 信息趋势命题必须显式区分封闭系统与开放系统，并显式建模选择记忆项，禁止直接跨域外推。
++
++## 【理论边界/防误用声明】
++- 不采纳“信息增长无法由任何自然过程产生”的绝对断言。
++- 不采纳“观测到功能复杂性即推出单一超自然因果”的唯一化推断。
++- 边界：SRT 要求在“能流、选择回路、历史沉积”三项条件下做竞争模型比较，而非先验排他。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Philosophy_Ethics.md
++++ b/SRT/Philosophy/SRT_Philosophy_Ethics.md
+@@
++## Method Note: Information Constraint ≠ Teleology Closure
++
++当外部论证将“信息论约束”直接推出“单一目的论解释”时，SRT 采用分离原则：
++1. 先判定信息约束是否成立（系统边界、能流与可观测定义）；
++2. 再比较多种生成机制（自然选择回路、人工介入、混合机制）；
++3. 禁止在步骤1未完成时直接做终极因果闭合。
++
++## 【理论边界/防误用声明】
++- 不采纳“方法论自然主义=先验拒绝设计”的二元对立叙述。
++- 不采纳“任何设计推断都自动科学化”的反向极端叙述。
++- 边界：SRT 仅承认可操作、可证伪、可竞争比较的设计推断版本。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Observer-Bound Information Entropy Claim - 观察者约束信息熵主张（OBIE） 🟡
++**定义**：将熵解释为“观察者对系统不确定性”的信息化表述，并据此讨论信息随时间的变化约束。
++**SRT 注释**：OBIE 可作为分析层工具，但必须明确系统边界（closed/open）与可访问通道，否则易产生跨域误推。
++
++**[Lineage/Source]**：
++- Local source context: Eric Hedin article (Science and Culture Today, 2026)
++- Historical referenced lineage in article: Robert Gange’s generalized second-law framing
++- SRT stance: treat as contestable interpretive claim, not canonical law replacement
++
++## 【理论边界/防误用声明】
++- 不采纳“OBIE 可直接替代统计物理熵定义”的推论。
++- 边界：OBIE 在 SRT 中是解释性桥梁术语，不是基础方程替代项。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-Info-Open-1 开放系统功能信息增长检验
++**内容**：在开放能流且有选择记忆回路的系统中，功能信息可呈净增长；若缺少选择记忆则不成立。
++**最小实验**：
++- 组A：开放能流 + 选择反馈（迭代筛选）
++- 组B：开放能流 + 无选择反馈（纯扰动）
++- 指标：功能阈值达成率、\(I_f\) 增量、稳定性
++**证伪条件**：组A与组B在 \(I_f\) 增长上无显著差异。
++
++### H-Info-Design-Alt-1 竞争解释比较检验
++**内容**：对同一复杂结构数据，比较“自然选择回路模型”“外部设计注入模型”“混合模型”三者拟合与可迁移性。
++**证伪条件**：竞争模型之间无可区分预测，或单模型在迁移测试中全面失效。
++
++## 【理论边界/防误用声明】
++- 不采纳“单模型先验真理化”的研究流程。
++- 边界：SRT 要求竞争模型、预注册判据与负结果可发布。
+```
+
+### Notes (brief)
+- 已将该文三类核心主张转为可比较分类，并显式区分封闭/开放系统语境。
+- 保持 SRT 的“竞争解释 + 可证伪”方法，不做单向结论继承。
