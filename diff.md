@@ -544,3 +544,92 @@
 ### Notes (brief)
 - 已将文章中的学习机制分类（广播强化/定向误差信号/阻断效应）转为文件级补丁。
 - 新术语附 `[Lineage/Source]`，并在目标文件以 Header 写入防误用声明。
+
+---
+
+## [2026-02-28 14:18 GMT+8] 材料：Repeated Head Impacts, Inflammation and Memory Loss Connected（https://neurosciencenews.com/neuroinflammation-memory-tbi-30210/）
+
+### Target Files
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“神经炎症-白质-认知”分类映射（炎症水平/白质微结构/认知表现）。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“中介链条检验”假设（炎症→白质微结构→记忆）。
+- `SRT/SRT_Glossary.md`：新增 `Inflammation-Microstructure Mediation (IMM)` 术语并附 `[Lineage/Source]`。
+- `SRT/Philosophy/SRT_Ethics_Agency.md`：补充“生理脆弱性对决策能动性的约束”说明。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Neuroinflammation-Memory Pathway → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 炎症标志物升高（IL-6/TNF-α/GFAP） | 系统摩擦背景升高 | 低~中（任务承载下降） | Open-flow 但高耗散 | overloaded |
++| 边缘系统白质微结构下降（FA↓/MD↑） | \(L_1\) 传输通道退化 | 低~中 | Semi-open | payable→unsustainable（阈值后） |
++| 记忆表现下降（无直接炎症-认知捷径） | 中介链条显性化 | 低（高负载下） | Semi-open / Closed-like | overloaded |
++
++**Constraint**: 该链条为关联结构，不等同因果闭合；必须通过中介模型与纵向数据验证。
++
++## 【理论边界/防误用声明】
++- 不采纳“炎症指标升高即可直接推断认知损害”的简化推论。
++- 边界：SRT 采用中介路径解释（炎症→微结构→功能），反对单变量因果跳跃。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-IMM-1 炎症-微结构-记忆中介检验
++**内容**：在重复头部冲击暴露人群中，炎症与记忆的关系由白质微结构显著中介。
++**最小实验**：
++- 指标：炎症生物标志物（血液/CSF）、DTI（FA/MD）、记忆测验
++- 模型：中介分析 + 暴露分层（高暴露/低暴露）
++**证伪条件**：中介路径不显著，或直接路径显著且中介路径消失。
++
++### H-IMM-2 高暴露亚组链条增强检验
++**内容**：在高头部冲击暴露与高症状亚组中，中介效应应显著增强。
++**证伪条件**：亚组间中介效应无差异。
++
++## 【理论边界/防误用声明】
++- 不采纳“相关性证据已足够确诊个体病理”的推论。
++- 边界：该模型用于风险分层与机制研究，不替代临床确证流程。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Inflammation-Microstructure Mediation - 炎症-微结构中介（IMM） 🟡
++**定义**：炎症负荷通过白质微结构劣化间接影响认知表现的路径模型。
++**形式化**：
++$$
++\text{Inflammation} \rightarrow \text{White-Matter Microstructure} \rightarrow \text{Cognition}
++$$
++**SRT 用途**：将“本体论摩擦上升”与“通道结构退化”连接到行为输出层变化。
++
++**[Lineage/Source]**：
++- Source context: AAN/Neurology report summarized by Neuroscience News (2026-02-27)
++- Study frame: former football players, inflammatory biomarkers + DTI + cognition
++- SRT mapping: mediation-chain interpretation under repeated-impact exposure
++
++## 【理论边界/防误用声明】
++- 不采纳“IMM 可直接替代病理确诊标准”的推论。
++- 边界：IMM 是机制建模工具，不是个体医学诊断结论。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Ethics_Agency.md
++++ b/SRT/Philosophy/SRT_Ethics_Agency.md
+@@
++## Neuro-Constraint on Agency: Inflammation Burden
++当神经炎症与白质微结构损伤共同上升时，个体的决策带宽与情绪调节能力会受限，
++应将“能动性评估”与生理负荷状态联合建模，而非仅按行为结果归因。
++
++## 【理论边界/防误用声明】
++- 不采纳“行为失调必然等于道德失败”的推论。
++- 边界：SRT 要求在高生理负荷情境下引入责任分层与支持性干预框架。
+```
+
+### Notes (brief)
+- 已将文章核心结构（炎症↑、白质微结构↓、记忆↓）转为文件级补丁与可证伪中介模型。
+- 保持“关联≠因果闭合”的边界，避免过度医学外推。
