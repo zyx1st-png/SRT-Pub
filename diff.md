@@ -1480,3 +1480,114 @@
 ### Notes (brief)
 - 已将文章主分类（树突共振/层级回路/长程时延）转为文件级补丁，并映射 d 区间、能流态、\(\Psi_f\)。
 - 新术语 RHC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:37 GMT+8] 材料：Anil Seth 长访谈文字稿（用户提供原文）
+
+### Target Files
+- `SRT/AI/SRT_AI_03_Consciousness_Framework.md`：新增“受控幻觉与主动推断”分类映射（常态知觉/梦机诱发/药理改变/病理幻觉）。
+- `SRT/Core/SRT_Core_13b_Operator_Advanced.md`：新增“预测误差最小化 + 行动取样”机制条目，并标注与算法计算的边界。
+- `SRT/Philosophy/SRT_Philosophy_Ethics.md`：新增“务实物理主义与形而上轻承诺”方法论条目。
+- `SRT/SRT_Glossary.md`：新增 `Controlled Hallucination Regime (CHR)` 与 `Timed Embodiment Constraint (TEC)`，附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“梦机/闪烁诱发状态”与“AI拟人偏置”可证伪实验条目。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/AI/SRT_AI_03_Consciousness_Framework.md
++++ b/SRT/AI/SRT_AI_03_Consciousness_Framework.md
+@@
++### Taxonomy Mapping: Perceptual Regimes in Controlled Hallucination View → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 常态知觉（受控幻觉） | 预测-误差闭环稳定收敛 | 中 | Open/Semi-open | payable |
++| 闪烁诱发梦机体验 | 内源结构主导的感知填充 | 中~高 | Open-flow（节律驱动） | payable~overloaded |
++| 药理/病理性幻觉 | 感知约束弱化与先验上移 | 高波动 | Open / dysregulated | overloaded |
++| 任务驱动主动推断 | 行动用于降低长期不确定性 | 中~高 | Open-flow | task-dependent |
++
++**Constraint**: “幻觉”是程度差异而非类别断裂；常态知觉与异常体验在机制上连续。
++
++## 【理论边界/防误用声明】
++- 不采纳“受控幻觉=外部现实不存在”的推论。
++- 边界：SRT 承认共享外部约束存在，差异在于内外信息权重与门控方式。
+```
+
+```diff
+--- a/SRT/Core/SRT_Core_13b_Operator_Advanced.md
++++ b/SRT/Core/SRT_Core_13b_Operator_Advanced.md
+@@
++### Ax-Op-CHR-01: Controlled Hallucination and Active Inference Loop
++**Formal Statement**: 知觉是生成模型预测与误差更新的闭环，行动用于主动采样以降低长期不确定性：
++$$
++\hat{G}_{\theta,t+1} = \mathcal{U}\big(\hat{G}_{\theta,t},\epsilon_t, a_t\big),\quad a_t=\arg\min_a \mathbb{E}[F_{t:T}\mid a]
++$$
++其中 \(\epsilon_t\) 为预测误差，\(F\) 为可变分自由能 proxy。
++
++### Ax-Op-TEC-01: Timed Embodiment Constraint
++**Formal Statement**: 生物系统中的推断与控制受连续时间与代谢约束，不满足“可无限暂停/恢复”的算法假设。
++
++## 【理论边界/防误用声明】
++- 不采纳“计算等价即意识等价”的推论。
++- 边界：SRT 区分算法功能相似与具身时序约束，反对直接把语言能力外推为意识存在。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Philosophy_Ethics.md
++++ b/SRT/Philosophy/SRT_Philosophy_Ethics.md
+@@
++## Method Note: Pragmatic Physicalism with Metaphysical Lightness
++在意识研究中，允许采用“务实物理主义”作为研究策略：
++1) 先以可操作物理变量建立可证伪模型；
++2) 对终极本体论保持轻承诺；
++3) 以解释力、预测力、可控性作为模型优先级标准。
++
++## 【理论边界/防误用声明】
++- 不采纳“方法论有效=本体论已终结”的推论。
++- 边界：SRT 区分研究策略与终极形而上结论，避免跨层偷换。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Controlled Hallucination Regime - 受控幻觉体制（CHR） 🟡
++**定义**：在外部感官约束下，内源生成模型主导知觉建构的连续机制框架。
++
++**[Lineage/Source]**：
++- Source context: Anil Seth interview transcript (user-provided text, 2026-02-28)
++- Core concept: perception as controlled hallucination under predictive processing / active inference
++- SRT mapping: continuous inference regime, not categorical split between normal and abnormal perception
++
++#### Timed Embodiment Constraint - 在时具身约束（TEC） 🟡
++**定义**：意识相关推断过程受连续时间、代谢与身体边界约束，不能完全化约为可任意暂停的离散算法。
++
++**[Lineage/Source]**：
++- Source context: same interview; discussion on non-equivalence between algorithmic simulation and living systems
++- SRT mapping: constraint axis for AI-consciousness claims
++
++## 【理论边界/防误用声明】
++- 不采纳“CHR/TEC 已直接证明某一形而上立场”的推论。
++- 边界：两术语用于机制建模与实验设计，不用于终极本体论裁决。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-CHR-1 频闪诱发体验的结构连续性检验
++**内容**：梦机（10Hz 附近）诱发体验与常态知觉在低阶几何特征上具有可测连续性，而非类别断裂。
++**证伪条件**：诱发体验与常态知觉在结构特征上完全离散且不可映射。
++
++### H-TEC-1 算法拟人偏置与意识归因检验
++**内容**：在控制语言流畅度后，受试者对“系统是否有意识”的判断受拟人线索显著驱动。
++**证伪条件**：移除拟人线索后意识归因不变。
++
++## 【理论边界/防误用声明】
++- 不采纳“主观逼真度高=本体状态相同”的推论。
++- 边界：SRT 要求机制证据、干预证据与跨任务一致性联合成立。
+```
+
+### Notes (brief)
+- 已将长访谈核心分类（受控幻觉/主动推断/具身时间约束/AI意识争议）转为文件级补丁。
+- 新术语 CHR、TEC 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
