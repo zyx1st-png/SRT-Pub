@@ -1103,3 +1103,93 @@
 ### Notes (brief)
 - 已将该文核心分类（动作学习/刺激学习/不确定性仲裁/损伤僵化）转为文件级补丁。
 - 新术语 DMA 已附 `[Lineage/Source]`，且包含 Header 级防误用声明。
+
+---
+
+## [2026-02-28 14:27 GMT+8] 材料：Moving Beyond Dopamine to Treat Schizophrenia（https://neurosciencenews.com/schizophrenia-neurobiology-antipsychotics-30176/）
+
+### Target Files
+- `SRT/Philosophy/SRT_Ethics_Agency.md`：新增“精神疾病中的多机制责任分层”方法条目（神经化学/免疫/发育/社会因素并行）。
+- `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`：新增“精神分裂治疗路径分类→d 区间/能流态/\(\Psi_f\)”映射。
+- `SRT/SRT_Glossary.md`：新增 `Multiaxial Schizophrenia Model (MSM)` 术语并附 `[Lineage/Source]`。
+- `SRT/Core/SRT_Experimental_Applications.md`：新增“单通路 vs 多通路干预”的可证伪比较假设。
+
+### Proposed Patch (unified diff)
+```diff
+--- a/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
++++ b/SRT/Core/SRT_Core_14_Dynamics_Scaling.md
+@@
++### Taxonomy Mapping: Schizophrenia Treatment Axes → SRT
++
++| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
++|:--|:--|:--|:--|:--|
++| 多巴胺受体阻断（传统抗精神病） | 正性症状快速压制 | 低~中 | Semi-open | payable（伴副作用代价） |
++| TAAR1 / M1-M4 / NMDA 增强（新靶点） | 多通路调节认知与负性症状 | 中 | Open/Semi-open | task-dependent |
++| 免疫-炎症干预 | 系统摩擦背景下调 | 中 | Open-flow（全身耦合） | payable~overloaded |
++| 肠脑轴干预（益生菌等） | 慢变量调节与稳态重建 | 低~中 | Open-flow（代谢耦合） | gradual-payable |
++
++**Constraint**: 单轴改善不等于全域恢复；需将正性/负性/认知维度分开建模并联合评估。
++
++## 【理论边界/防误用声明】
++- 不采纳“多巴胺模型失效=多巴胺无关”的推论。
++- 不采纳“新靶点出现即可替代临床分层诊断”的推论。
++- 边界：SRT 采用多轴机制共存框架，强调分层与个体化匹配。
+```
+
+```diff
+--- a/SRT/Philosophy/SRT_Ethics_Agency.md
++++ b/SRT/Philosophy/SRT_Ethics_Agency.md
+@@
++## Multiaxial Responsibility in Psychiatric Conditions
++针对精神分裂谱系，SRT 建议将能动性评估拆分为多轴：
++1) 神经化学轴（多巴胺/谷氨酸等）；
++2) 发育-结构轴；
++3) 免疫-炎症轴；
++4) 社会环境轴。
++
++责任评估应采用“状态条件化”而非单一行为归因，避免将病理负荷误判为纯意志缺陷。
++
++## 【理论边界/防误用声明】
++- 不采纳“病理解释可完全取消责任”的极端推论。
++- 不采纳“行为后果可完全忽略病理负荷”的反向极端。
++- 边界：SRT 支持责任分层与支持性干预并行。
+```
+
+```diff
+--- a/SRT/SRT_Glossary.md
++++ b/SRT/SRT_Glossary.md
+@@
++#### Multiaxial Schizophrenia Model - 多轴精神分裂模型（MSM） 🟡
++**定义**：将精神分裂症机制划分为神经化学、发育结构、免疫炎症与肠脑轴等可并行建模的因子系统。
++**SRT 用途**：避免单通路解释导致的治疗与推理偏置，支持个体化机制匹配。
++
++**[Lineage/Source]**：
++- Source context: Science China Life Sciences review summarized by Neuroscience News (2026-02-23)
++- Core therapeutic shift: beyond dopamine to TAAR1/M1-M4/NMDA/immune/gut-brain targets
++- SRT mapping: multiaxial mechanism integration for precision intervention
++
++## 【理论边界/防误用声明】
++- 不采纳“MSM 等于病因已完全确定”的推论。
++- 边界：MSM 是整合框架，不替代因果识别与纵向验证。
+```
+
+```diff
+--- a/SRT/Core/SRT_Experimental_Applications.md
++++ b/SRT/Core/SRT_Experimental_Applications.md
+@@
++### H-MSM-1 多轴干预优于单轴干预检验
++**内容**：在负性/认知症状显著人群中，多轴联合干预（药理+炎症/肠脑轴）应优于单纯多巴胺阻断。
++**证伪条件**：联合干预在关键终点上无显著优势。
++
++### H-MSM-2 机制分层匹配收益检验
++**内容**：按多轴生物标志物分层后进行靶向治疗匹配，可提高响应率并降低副作用负担。
++**证伪条件**：分层匹配与随机分配疗效无差异。
++
++## 【理论边界/防误用声明】
++- 不采纳“机制多即疗效必高”的推论。
++- 边界：SRT 要求成本、副作用与长期稳定性共同达标。
+```
+
+### Notes (brief)
+- 已将该文核心分类（传统多巴胺路径/新受体路径/免疫炎症/肠脑轴）转为文件级补丁。
+- 新术语 MSM 已附 `[Lineage/Source]`，并在目标文件写入 Header 级防误用声明。
