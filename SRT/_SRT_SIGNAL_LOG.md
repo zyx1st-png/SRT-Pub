@@ -117,3 +117,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: pending
 - Ingested: no
 - Notes: 源站触发 403/anti-bot（Just a moment），当前无法抓取正文，待可访问镜像或用户提供摘要后再审核与回写。
+
+- Time: 2026-03-01 22:23 GMT+8
+- Source: user-provided Smithsonian/Science summary (M31-2014-DS1 failed supernova candidate)
+- Topic: silent stellar collapse / possible birth of black hole / competing merger-dust hypothesis
+- Evidence-Level: mixed (secondary summary pointing to primary Science + alternative MNRAS interpretation)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT_openclaw/Physics/SRT_Phys_10_Integration.md`（静默塌缩候选映射 + 边界声明）
+- Ingested: yes
+- Notes: 由于原站403，按用户提供全文摘要执行；已加入竞争解释与“长期持续黑暗”终态判据，保持候选级证据定位。
