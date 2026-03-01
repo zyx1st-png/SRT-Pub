@@ -196,6 +196,11 @@ Without SRT's **meta-selection** mechanism, we cannot distinguish between "a mal
 2. 关系网络后果（他者层）
 3. 叙事评价后果（社会语义层）
 
+**参数重写边界（新增）**：
+1. 可重写：策略参数、权重分配、关切扩展路径
+2. 不可任意重写：存在边界约束、代价守恒约束
+3. 若宣称“完全可重写”，视为语义幻觉而非自由意志增强
+
 $$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{brain})}$$
 
 其中：
