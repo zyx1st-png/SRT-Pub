@@ -195,6 +195,8 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 其中 \(\mathcal{U}\) 为效用势，\(\mathcal{S}\) 为生存/不可逆风险坐标。
 
+**全局口径句**：d 是选择算子在本体论摩擦约束下、面向最小自由能的关切范围，并随动力学动态调整。
+
 **语境化近似（认知域）**：
 $$d \approx \text{选择算子考虑的存在/实体范围}$$
 
