@@ -315,6 +315,13 @@ $$
 
 **SRT Interpretation**: 意义不是先验对象，也不只是叙事标签，而是 $L_0$ 潜能向 $L_1$ 确定性转化过程中，阻力被克服时的动态体验。
 
+**Dual State (新增)**:
+当
+$$
+\frac{d\Psi_f}{dt}>0
+$$
+且持续时，系统体验“失意义/荒诞压迫”；意义恢复依赖于将摩擦轨迹重新拉回可下降区间。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
