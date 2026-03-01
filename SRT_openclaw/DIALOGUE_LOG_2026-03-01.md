@@ -335,3 +335,9 @@
 - 点位：解释→理解已定义，缺少理解→解释回写条件
 - 用户决策：同意“理解轨道多情境稳定后回写为L2可共享结构”。
 - 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 增加反向沉淀主句。
+
+## 新一轮对话（领域理论-Philosophy）- 新主题8（不可沉淀条件）
+- 学者扮演：Wittgenstein
+- 点位：理解→解释回写缺少失败条件
+- 用户决策：同意“单一语境有效但不可迁移者，不得回写为L2共享结构”。
+- 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 增加不可沉淀条件。
