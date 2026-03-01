@@ -77,3 +77,9 @@
 - 点位：理论版本治理接口缺失
 - 用户决策：同意新增“理论变更门禁四问”。
 - 回写内容：新增 `THEORY_CHANGE_GATE.md`，并在 `CONSENSUS_UPDATE_2026-03-01.md` 补充版本治理段落。
+
+## 第十一轮（下一个）
+- 学者扮演：Wittgenstein
+- 点位：术语口径回漂风险
+- 用户决策：同意新增“术语用法防火墙”。
+- 回写内容：新增 `TERM_USAGE_GUARDRAILS.md`，并同步到 `CONSENSUS_UPDATE_2026-03-01.md`。
