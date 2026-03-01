@@ -347,3 +347,9 @@
 - 点位：局部体验知识缺少向L2共享结构过渡机制
 - 用户决策：同意“多情境重复+多主体校准+语义压缩”的渐进沉淀路径。
 - 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 增加渐进沉淀机制。
+
+## 新一轮对话（领域理论-Philosophy）- 新主题10（机制异构/计算同构）
+- 参考文献：eLife 2025, 14:e106753（traveling waves across scales）
+- 点位：神经动力学机制差异与知识沉淀同构关系
+- 用户决策：同意“机制异构不否定计算同构；需跨情境迁移稳定性”主句。
+- 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 增加机制异构—计算同构主句。
