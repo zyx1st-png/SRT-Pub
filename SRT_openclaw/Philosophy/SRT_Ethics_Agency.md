@@ -338,6 +338,9 @@ $$
 **Homogenization Boundary Clause (新增)**:
 当公共承接结构过度同质化并压缩个体参数重写窗口时，群体稳定器会转化为意义抑制器，导致“稳定而空心”的 $L_2$。
 
+**De-homogenization Regulation Clause (新增)**:
+通过在共享叙事中引入可控差异位（plural slots）与责任再分配机制，可将“稳定而空心”的 $L_2$ 重新转换为可承接个体回转的稳定器。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
