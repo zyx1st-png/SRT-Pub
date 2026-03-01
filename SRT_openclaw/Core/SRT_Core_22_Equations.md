@@ -222,6 +222,18 @@ $$
 $$
 * **Implication**: 该门用于治理层自动降级判定，防止“高产出幻觉”掩盖锚定能力赤字。
 
+### Protocol-Soc-01: Anchor-First Response (锚定优先响应协议)
+**Formal Definition**: 触发 Hollow-Risk 后，系统进入锚定优先模式：
+1. Freeze：冻结高风险自动部署通道
+2. Throttle：限制生成速率至责任承接容量以下
+3. Anchor-First：优先扩容溯源/承保/问责结构
+
+简写为：
+$$
+\text{if State}=\text{Hollow-Risk} \Rightarrow \{\text{Freeze},\text{Throttle},\text{Anchor-First}\}
+$$
+* **Implication**: 降级不仅是标签，而是强制动作协议，保证系统从“产出优先”切回“锚定优先”。
+
 ## 【理论边界/防误用声明】
 
 1. 不采纳“自动化成本趋零 = 可完全取消人类验证”。

@@ -364,3 +364,9 @@
 - 问题类型：缺口（治理触发条件缺失）
 - 用户决策：同意“连续锚定失衡 + 责任结构扩容落后”触发降级。
 - 回写内容：在 `Core/SRT_Core_22_Equations.md` 增加 `Gate-Soc-01: Hollow-Economy Risk Trigger`。
+
+## 新一轮对话（缺口补齐）- 治理触发门 #2
+- 学者扮演：Herbert Simon
+- 问题类型：缺口（触发后动作协议缺失）
+- 自动决策：按用户“自动执行缺口补齐”规则直接落盘。
+- 回写内容：在 `Core/SRT_Core_22_Equations.md` 增加 `Protocol-Soc-01: Anchor-First Response`（Freeze/Throttle/Anchor-First）。
