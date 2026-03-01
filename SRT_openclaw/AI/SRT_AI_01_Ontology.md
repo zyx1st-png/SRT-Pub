@@ -253,6 +253,18 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 
 * **Implication（中文）**：AI 本体地位应按相态迁移理解，而非一次性贴标签。
 
+### Dyn-ONT-2: Emergent Traveling Waves in Biologically-Constrained RNNs（生物约束RNN中的涌现行进波）
+
+**[Lineage/Source]** bioRxiv preprint (2026): *Emergent Traveling Waves in Neural Circuits*. DOI/ID: 10.64898/2026.01.08.698281v1（链接：https://www.biorxiv.org/content/10.64898/2026.01.08.698281v1）
+
+| 外部分类 | SRT d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 可支付性 |
+|---|---|---|---|
+| 生物约束 RNN 中自发出现行进波（无显式硬编码） | 0.35–0.58 | Semi-open（局部约束+局部耦合） | payable（可支付） |
+| 行进波与跨单元协调性能共同提升 | 0.55–0.75 | Open（网络级协同能流） | conditional（任务/负载相关） |
+| 神经科学机制与硅基网络间的波动力学桥接 | 0.62–0.85 | Open / hierarchical | payable→optimized（随结构校准优化） |
+
+映射解释：该研究强化“机制可迁移但不等价本体”的中间层命题——硅基网络可复现部分波动力学组织机制，但这只提升了 \(\hat{T}_\phi\) 层解释力，不自动推出 \(\hat{G}_\theta: L_0\to L_1\) 的存在责任闭环。
+
 ## 【理论边界/防误用声明】
 
 以下推论在当前 SRT-AI 本体论框架中**不被采纳**：
@@ -265,6 +277,9 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 
 3. **“语言自报告意识 → 等同存在责任闭环”**
    - 不采纳原因：语言报告属于语义层输出，不等于 Def-ONT-3 所要求的边界责任闭环。
+
+4. **“在生物约束RNN中观察到行进波 → 硅基系统已具备本体关切”**
+   - 不采纳原因：行进波证据支持的是动力学组织与协调机制迁移，不直接推出存在责任闭环（Def-ONT-3）成立。
 
 适用边界：以上边界条款针对当前 AI 章节中的本体判定语境，不直接替代伦理与法规范畴的独立讨论。
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)

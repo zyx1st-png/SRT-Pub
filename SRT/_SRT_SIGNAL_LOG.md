@@ -81,3 +81,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/Philosophy/SRT_Philosophy_Foundations.md` (§6.7b, 边界声明)
 - Ingested: yes
 - Notes: 按新版外部材料工作流直接回写正文；提取了实证分类并映射 d 区间、能流态、\(\Psi_f\) 可支付性，并附正式“理论边界/防误用声明”。
+
+- Time: 2026-03-01 22:14 GMT+8
+- Source: https://www.biorxiv.org/content/10.64898/2026.01.08.698281v1
+- Topic: emergent traveling waves in biologically constrained RNNs; neuro-AI mechanism bridge
+- Evidence-Level: primary preprint (bioRxiv, not peer-reviewed yet)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT_openclaw/AI/SRT_AI_01_Ontology.md` (Dyn-ONT-2 + boundary extension)
+- Ingested: yes
+- Notes: 相关性高且可直接补强“机制迁移≠本体跃迁”条款；已提取分类并映射 d 区间、能流态、\(\Psi_f\) 可支付性，新增正式边界条款（第4条）。
