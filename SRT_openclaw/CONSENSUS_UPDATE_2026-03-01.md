@@ -68,3 +68,8 @@
 
 - 新增：`TERM_USAGE_GUARDRAILS.md`
 - 用于固定关键术语的“允许/禁用”写法，防止口径回漂。
+
+## 七、参数职责边界（新增）
+
+- 新增：`PARAMETER_ROLE_MATRIX.md`
+- 明确 d / \(\Psi_f\) / \(\theta\) / F 的职责分工与禁止越权。
