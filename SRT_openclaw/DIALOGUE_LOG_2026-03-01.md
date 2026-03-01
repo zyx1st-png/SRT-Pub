@@ -318,3 +318,8 @@
 - 点位：解释成功与存在性理解混用风险
 - 用户决策：同意“解释—理解分离主句”。
 - 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 增加解释—理解分离主句。
+
+## 新一轮对话（领域理论-Philosophy）- 新主题5（解释替代理解风险）
+- 学者扮演：Heidegger
+- 用户修订：解释结构属于 L2 层级，存在性理解对应 Ĝ 算子；问题不是结构不足，而是动力学缺失。
+- 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 增加层级澄清与误用风险条款。
