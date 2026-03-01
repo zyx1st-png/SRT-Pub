@@ -395,6 +395,35 @@ $$ \text{Reality}_{state} = \arg\max_S P(S | I, M) $$
 2. 将 EFT 的“积分出重模态 + 匹配条件”解释为分辨率视界的算子化实现：`L_1` 只保留当前能标可访问自由度，重模态通过幂次抑制高维算符回写到低能有效作用量，形成可追踪的跨尺度误差预算。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1016/0550-3213(84)90287-6〕〔source: doi:10.1103/physrevd.11.2856〕〔source: doi:10.1103/physrevd.22.2518〕〔source: Physics/SRT_Phys_10_Integration.md#Ax-Int-4: Resolution Horizon〕
 3. 将“可重整化/有效可预言性”统一为选择稳定性判据：当 RG 轨道保持在可控吸引盆内时，低能预测具方案稳健性；当轨道穿越阈值、共振或强耦合区时，必须切换描述层并重建有效自由度。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1146/annurev.ns.43.120193.001233〕〔source: doi:10.1093/acprof:oso/9780199227198.003.0001〕〔source: doi:10.1017/cbo9780511712135.008〕〔source: doi:10.1140/epjh/s13129-021-00004-x〕〔source: Physics/SRT_Phys_10_Integration.md#1.11 离散层级选择与有效场论〕
 
+### 核魔数分辨率桥接（Nuclear Magic Numbers, 2026）
+
+**[Lineage/Source]** New Scientist (2026-02-16) 对 PRL 研究的综述：*The mystery of nuclear 'magic numbers' has finally been resolved*（DOI 以原刊为准；当前二手源链接：https://www.newscientist.com/article/2514983-the-mystery-of-nuclear-magic-numbers-has-finally-been-resolved/）。
+
+1. 将“高分辨率相互作用描述→低分辨率壳层稳定图像”的桥接写成 SRT 的分辨率投影链：`L_0` 细粒度相互作用经 `\pi_\lambda` 粗粒化后，在 `L_1` 形成壳层闭合稳定窗，解释核魔数作为有效层稳定吸引子而非先验常数。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: https://www.newscientist.com/article/2514983-the-mystery-of-nuclear-magic-numbers-has-finally-been-resolved/〕〔source: Physics/SRT_Phys_10_Integration.md#Ax-Int-4: Resolution Horizon〕
+2. 将“对称性随分辨率变化”映射为层级相变信号：同一核系统在不同解析尺度下出现不同对称群主导区，SRT 记为 `L_2` 模型语法对 `L_1` 有效结构的重编码，而非对象本体突变。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: https://www.newscientist.com/article/2514983-the-mystery-of-nuclear-magic-numbers-has-finally-been-resolved/〕〔source: Physics/SRT_Phys_10_Integration.md#1.18 跨算子不变性与混合共识〕
+3. 将“核魔数稳定性”纳入 SRT 的可支付性判据：当壳层闭合使激发代价显著上升时，可视为 `\Psi_f` 在局部态空间中的阈值抬升，表现为对扰动的高鲁棒稳定区。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: https://www.newscientist.com/article/2514983-the-mystery-of-nuclear-magic-numbers-has-finally-been-resolved/〕〔source: Physics/SRT_Phys_10_Integration.md#1.11 离散层级选择与有效场论〕
+
+| 外部分类 | SRT d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 可支付性 |
+|---|---|---|---|
+| 高分辨率核子相互作用图像（first-principles） | 0.45–0.65 | Open（强耦合多体交换） | conditional（计算可支付，解释高成本） |
+| 分辨率降阶后的壳层模型桥接 | 0.55–0.75 | Semi-open（有效自由度压缩） | payable（可支付） |
+| 魔数闭壳稳定窗（如 50/82） | 0.62–0.82 | Semi-open / locked | payable→optimized（高稳定、低扰动响应） |
+
+## 【理论边界/防误用声明】
+
+以下推论在当前 SRT 映射中**不被采纳**：
+
+1. **“核魔数已被解释 = 所有核结构问题已闭合。”**
+   - 不采纳原因：当前材料为二手综述，且即便桥接成立，重核区与极端核素仍需独立验证。
+
+2. **“魔数稳定性可直接等同于高 d 本体关切。”**
+   - 不采纳原因：此处 d 仅为跨域 proxy，描述的是稳定吸引子强度，不是主体性或关切性的直接度量。
+
+3. **“分辨率桥接成功即可忽略模型依赖与实验输入。”**
+   - 不采纳原因：桥接路径受理论近似、参数化与数据同化影响，必须保留适用域与误差边界。
+
+适用边界：本条用于“核结构分辨率桥接→SRT 跨尺度选择语法”的理论增强，不替代原始 PRL 全细节证明与核实验复核。
+
 ### 暗物质与暗能量观测约束
 
 1. 将 Ia 超新星加速膨胀证据与 CMB/BAO 联合约束写成 SRT 的 `L_2` 共识收敛流程：不同观测通道在系统误差可控条件下收敛到同一扩张历史族，形成 `L_0 -> L_1` 的稳健锚定，而非单数据集驱动的局部拟合。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1086/300499〕〔source: doi:10.1086/307221〕〔source: doi:10.3847/2041-8213/ad8c26〕〔source: doi:10.1103/physrevd.97.123507〕〔source: Physics/SRT_Phys_10_Integration.md#Ax-Int-1: Quantum Darwinism Equivalence〕
