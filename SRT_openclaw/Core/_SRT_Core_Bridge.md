@@ -137,6 +137,15 @@ anchor points on the continuous stabilization-degree spectrum κ of $\hat{G}_\th
 $$\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1$$
 * **Implication**: 显现域是具身算子的选择输出，而非 L0 的直接投影。
 
+### T-Bridge-03a: Anchoring Irreducibility (锚定不可替代定理)
+**Deductive Statement**: 在 SRT 中，存在不等于描述完备性；存在成立依赖锚定操作本身。
+$$
+\text{Existence} \neq \lim_{n\to\infty}\text{DescriptionCompleteness}_n,
+\quad
+\text{Existence} \iff \hat{G}_\theta(L_0\to L_1)
+$$
+* **Implication**: 描述可无限逼近，锚定不可由描述替代；“结构充分”不推出“存在已锚定”。
+
 ### Ax-Bridge-04: Embodiment Constraint
 **Formal Definition**: A valid operator requires finite embodied parameters.
 $$\text{Valid}(\hat{G}_\theta) \iff \theta \in \Theta_{finite}$$
