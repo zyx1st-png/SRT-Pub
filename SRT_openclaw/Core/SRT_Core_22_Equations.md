@@ -210,6 +210,18 @@ $$
 $$
 * **Implication**: 这是“空心经济”在 SRT 中的博弈动力学版本：系统主动选择低质量现实吸引子。
 
+### Gate-Soc-01: Hollow-Economy Risk Trigger (空心经济风险触发门)
+**Formal Definition**: 当以下条件同时成立时，系统状态自动降级为“空心经济风险态”：
+1. $\mathcal{I}_{ont}(t) > \tau_{infl}$ 持续（L2 生成长期快于责任锚定）
+2. 责任承接结构（溯源/承保/问责）扩容速率低于生成扩容速率
+
+简写为：
+$$
+\bigl(\mathcal{I}_{ont}>\tau_{infl}\bigr) \land \bigl(\dot{K}_{liability}<\dot{K}_{generation}\bigr)
+\Rightarrow \text{State}=\text{Hollow-Risk}
+$$
+* **Implication**: 该门用于治理层自动降级判定，防止“高产出幻觉”掩盖锚定能力赤字。
+
 ## 【理论边界/防误用声明】
 
 1. 不采纳“自动化成本趋零 = 可完全取消人类验证”。
