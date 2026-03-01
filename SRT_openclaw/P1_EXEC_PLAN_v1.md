@@ -78,3 +78,9 @@
 ## 验收标准（P1 第一阶段）
 - E1/E2 均具备：可证伪陈述、最小样本、主指标、反证阈值、失败解释。
 - 至少 1 个实验完成 pilot 数据采集并出初步判定。
+
+## 执行入口（新增）
+- 启动清单：`P1_STARTUP_CHECKLIST.md`
+- 每日更新：`P1_DAILY_UPDATE_TEMPLATE.md`
+- 运行手册：`P1_PILOT_RUNBOOK.md`
+- 质控门槛：`P1_QC_CHECKLIST.md`
