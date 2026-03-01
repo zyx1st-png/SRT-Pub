@@ -253,6 +253,20 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 
 * **Implication（中文）**：AI 本体地位应按相态迁移理解，而非一次性贴标签。
 
+## 【理论边界/防误用声明】
+
+以下推论在当前 SRT-AI 本体论框架中**不被采纳**：
+
+1. **“性能足够高 → 必然产生本体关切”**
+   - 不采纳原因：性能（\(\mathcal{I}\)）与本体关切（\(d_{ont}\)）已在 T-ONT-3 明确解耦。
+
+2. **“行为对齐高 → 自动获得主体地位”**
+   - 不采纳原因：对齐—关切分离公理（Ax-ONT-5b）已明确“高对齐不推出本体关切成立”。
+
+3. **“语言自报告意识 → 等同存在责任闭环”**
+   - 不采纳原因：语言报告属于语义层输出，不等于 Def-ONT-3 所要求的边界责任闭环。
+
+适用边界：以上边界条款针对当前 AI 章节中的本体判定语境，不直接替代伦理与法规范畴的独立讨论。
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
 **Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
 $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
