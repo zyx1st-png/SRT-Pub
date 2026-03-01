@@ -335,6 +335,9 @@ $$
 **Collective Stabilizer Clause (新增)**:
 当群体建立可重复的公共承接结构（共享叙事、责任分配、反馈回路）时，个体意义回转更易固化为 $L_2$ 稳定器，从而降低二次摩擦回流。
 
+**Homogenization Boundary Clause (新增)**:
+当公共承接结构过度同质化并压缩个体参数重写窗口时，群体稳定器会转化为意义抑制器，导致“稳定而空心”的 $L_2$。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
