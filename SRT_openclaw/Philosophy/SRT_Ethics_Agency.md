@@ -209,6 +209,13 @@ Without SRT's **meta-selection** mechanism, we cannot distinguish between "a mal
 2. 再恢复参数可重写窗口（小范围重写而非全局重写）
 3. 最后恢复后果回流闭环（让承担回到本体层）
 
+**自由意志恢复完成判据（新增）**：
+当系统同时满足：
+1. 存在边界感知稳定；
+2. 参数可重写窗口持续可用；
+3. 后果承担回流至本体层并可重复；
+则判定“恢复完成”。
+
 $$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{brain})}$$
 
 其中：
