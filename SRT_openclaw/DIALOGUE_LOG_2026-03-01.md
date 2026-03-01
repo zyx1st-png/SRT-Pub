@@ -83,3 +83,9 @@
 - 点位：术语口径回漂风险
 - 用户决策：同意新增“术语用法防火墙”。
 - 回写内容：新增 `TERM_USAGE_GUARDRAILS.md`，并同步到 `CONSENSUS_UPDATE_2026-03-01.md`。
+
+## 第十二轮（下一个）
+- 学者扮演：Popper
+- 点位：对话修订工作流缺少自动触发阈值
+- 用户决策：同意三类强制触发器（口径冲突 / 实验冲突 / 可复现反例）。
+- 回写内容：新增 `DIALOGUE_TRIGGER_POLICY.md`，并在 `SRT_DIALOGUE_WORKFLOW.md` 增加强制触发节。
