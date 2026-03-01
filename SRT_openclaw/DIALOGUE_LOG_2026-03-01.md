@@ -370,3 +370,8 @@
 - 问题类型：缺口（触发后动作协议缺失）
 - 自动决策：按用户“自动执行缺口补齐”规则直接落盘。
 - 回写内容：在 `Core/SRT_Core_22_Equations.md` 增加 `Protocol-Soc-01: Anchor-First Response`（Freeze/Throttle/Anchor-First）。
+
+## 新一轮对话（缺口补齐）- 治理触发门 #3
+- 问题类型：缺口（降级后缺少恢复升级条件）
+- 自动决策：按用户“自动执行缺口补齐”规则直接落盘。
+- 回写内容：在 `Core/SRT_Core_22_Equations.md` 增加 `Gate-Soc-02: Re-Upgrade Gate`。

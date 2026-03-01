@@ -234,6 +234,19 @@ $$
 $$
 * **Implication**: 降级不仅是标签，而是强制动作协议，保证系统从“产出优先”切回“锚定优先”。
 
+### Gate-Soc-02: Re-Upgrade Gate (恢复升级门)
+**Formal Definition**: 系统仅在以下条件同时满足时，才可退出 Hollow-Risk 并恢复常规部署：
+1. $\mathcal{I}_{ont}(t) \le \tau_{infl}$ 持续
+2. 责任承接结构扩容速率不低于生成扩容速率：$\dot{K}_{liability}\ge\dot{K}_{generation}$
+3. 关键风险通道在观察窗内无新增失锚事件
+
+简写为：
+$$
+\bigl(\mathcal{I}_{ont}\le\tau_{infl}\bigr) \land \bigl(\dot{K}_{liability}\ge\dot{K}_{generation}\bigr) \land \bigl(E_{deanchor}=0\bigr)
+\Rightarrow \text{State}=\text{Recoverable}
+$$
+* **Implication**: 该门防止系统在短期波动后过早“假恢复”，确保先补足锚定能力再恢复增长。
+
 ## 【理论边界/防误用声明】
 
 1. 不采纳“自动化成本趋零 = 可完全取消人类验证”。
