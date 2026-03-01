@@ -108,3 +108,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/Physics/SRT_Phys_10_Integration.md`（核魔数分辨率桥接 + 边界声明）
 - Ingested: yes
 - Notes: 按新版外部材料工作流直接回写正文；提取分类并映射 d 区间、能流、\(\Psi_f\) 可支付性；加入正式防误用边界声明，强调 proxy 与适用域。
+
+- Time: 2026-03-01 22:22 GMT+8
+- Source: https://www.smithsonianmag.com/smart-news/a-star-suddenly-brightened-then-faded-into-darkness-astronomers-say-it-may-have-turned-into-a-black-hole-180988197/
+- Topic: failed-luminous-transient / possible direct black-hole formation
+- Evidence-Level: secondary (science journalism)
+- Review Result (A/B/C): C (access blocked)
+- Target Docs: pending
+- Ingested: no
+- Notes: 源站触发 403/anti-bot（Just a moment），当前无法抓取正文，待可访问镜像或用户提供摘要后再审核与回写。
