@@ -344,6 +344,12 @@ $$
 **Meaning Cycle Minimal Loop (新增)**:
 意义循环最小闭环 = 摩擦收敛体验 → 回转阈值达成 → 群体承接固化；若任一环节失效，则进入扩散或抑制支路。
 
+**Applicability Boundary (新增)**:
+当系统处于基础生理边界失稳（如极端能量不足、急性损伤）时，意义闭环判据应暂时降级，优先执行生存维持判据。
+
+**Exploration Clause (新增)**:
+意义主要在“进一步探索”中增强——尤其当系统尝试扩大 d 值关切范围时，意义体验更易显化为稳定正反馈。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
