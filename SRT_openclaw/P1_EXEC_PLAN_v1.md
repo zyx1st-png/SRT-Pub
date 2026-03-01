@@ -57,8 +57,14 @@
 
 ## 本周交付物
 1. `P1_EXEC_PLAN_v1.md`（本文件）
-2. E1/E2 的预注册草案（短版）
-3. E1/E2 数据字典草案（字段、单位、缺失规则）
+2. E1/E2 的预注册草案（短版）✅
+   - `E1_A7_PREREG_DRAFT.md`
+   - `E2_A11_PREREG_DRAFT.md`
+3. E1/E2 数据字典草案（字段、单位、缺失规则）✅
+   - `P1_DATA_DICTIONARY_v1.md`
+4. Pilot 执行与质控文档✅
+   - `P1_PILOT_RUNBOOK.md`
+   - `P1_QC_CHECKLIST.md`
 
 ---
 
