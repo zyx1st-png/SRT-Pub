@@ -581,6 +581,33 @@ SRT 吸收 Hedda Hassel Mørch 等泛心论者的洞见：
 
 **机制异构—计算同构主句（新增）**：在 SRT 中，机制异构不否定计算同构：不同 \(\hat{G}\) 动力学路径可在 \(L_2\) 层沉淀为同类可共享结构；但若缺少跨情境迁移稳定性，不得升级为共享知识。
 
+### 6.7a Traveling Waves 跨尺度映射（eLife 2025 锚点）
+
+**[Lineage/Source]** Dugué L, Chavane F (2025), *Traveling waves across scales: Different mechanisms but same canonical computation?* eLife 14:e106753. DOI: 10.7554/eLife.106753
+
+| 外部分类 | SRT d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 可支付性 |
+|---|---|---|---|
+| First-order traveling waves（局部传播主导） | 0.30–0.55 | Semi-open（局部供能、局部约束） | payable（可支付） |
+| Second-order traveling waves（跨区耦合/网络调制） | 0.55–0.80 | Open（跨区能流协同） | conditional（边界条件下可支付） |
+| Canonical computation alignment（跨尺度功能同构） | 0.65–0.90 | Open / Hierarchical | payable→optimized（随校准优化） |
+
+映射解释：行波机制可异构，但在功能上可同构；SRT 因而将“机制层差异”与“计算层同构”分层处理，避免把局部机制等同于普适结构。
+
+## 【理论边界/防误用声明】
+
+以下推论在当前 SRT 映射中**不被采纳**：
+
+1. **“只要观察到 traveling waves，就可直接推出统一本体机制。”**
+   - 不采纳原因：该文强调的是“机制可异构”，SRT 仅采纳其“计算语法可同构”的层级命题。
+
+2. **“计算同构成立，即可忽略动力学路径差异。”**
+   - 不采纳原因：\(\hat{G}\) 动力学路径决定 \(\Psi_f\) 成本与边界承载，不能被 \(L_2\) 语义同构直接替代。
+
+3. **“单一语境下的波模式成功，可自动升级为跨情境共享知识。”**
+   - 不采纳原因：需满足既有“迁移稳定性”与“渐进沉淀机制”门槛，否则仅为局部有效知识。
+
+适用边界：该映射用于“神经动力学—认识论桥接”的理论层整合，不等同于对全部脑区与任务范式的一次性实证定论。
+
 ### 6.8 延异算子与解构操作 (Différance Operator)
 
 **解构** = 寻找 $L_2$ 中的不一致性（裂缝），利用裂缝重新访问 $L_0$。

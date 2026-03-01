@@ -63,3 +63,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `Core_Law/SRT_Reference_Scaling.md`（介观流体层与过程等价扩展）, `Core/SRT_Core_14_Dynamics_Scaling.md`（Cor-Master-01a）
 - Ingested: yes
 - Notes: 可融入点主要是“理论组织与边界澄清”而非新增一级实证；已按低风险增强方式吸收。
+
+- Time: 2026-03-01 22:10 GMT+8
+- Source: https://elifesciences.org/articles/106753
+- Topic: traveling waves across scales / mechanism heterogeneity vs canonical computation
+- Evidence-Level: primary (peer-reviewed review article, eLife)
+- Review Result (A/B/C): A
+- Target Docs: `SRT_openclaw/Philosophy/SRT_Philosophy_Foundations.md` (§6.7a, 边界声明)
+- Ingested: yes
+- Notes: 按新版外部材料工作流直接回写正文；已提取分类并映射 d 区间、能流态、\(\Psi_f\) 可支付性，补入正式“理论边界/防误用声明”。
