@@ -18,6 +18,7 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 - 任务态 HRV 恢复速度（风险调节能力）
 - 前额叶-边缘系统耦合强度（如可得）
 - PCI 或复杂度指数（高门槛场景）
+- 跨群体潜在振幅耦合强度（cross-population amplitude coupling, latent-envelope）
 
 ---
 
@@ -44,6 +45,7 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 ### 神经 proxy（条件允许）
 - 网络整合度与模块化平衡
 - 扰动后复杂响应指数（如 PCI 相关）
+- 跨区域 lead-lag 潜在序列相关（CCA/latent cross-correlation）
 
 ---
 
@@ -64,6 +66,20 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 - A10（非消失延续）：优先使用结构痕迹可恢复率与模式相似度。
 - A11（本体脆弱）：优先使用失稳阈值与恢复时间。
 - A12（跨尺度一致）：优先使用结构同构度与参数可迁移性。
+
+## 5.1) 神经同步双通道注记（新增）
+
+- 相位锁相（phase-locking）用于刻画因果时序拓扑绑定。
+- 振幅协变（amplitude covariation）用于刻画跨区域能量/摩擦协同支付。
+- 对慢变量脑电/场电位数据，优先先在高维通道中提取潜在序列，再做 lead-lag 关联，避免先混合后降维导致的信号掩蔽。
+
+## 【理论边界/防误用声明】
+
+1. 不采纳“线性潜在投影成功 = 微观过程本质线性”。
+2. 不采纳“振幅协变可替代全部相位信息”。
+3. 不采纳“单任务/单脑区结果可直接外推为普适意识机制”。
+
+适用边界：本注记用于慢时间尺度下的跨区域协同代理指标，不替代微观瞬态非线性机制建模。
 
 ## 6) 使用原则
 

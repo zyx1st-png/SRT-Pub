@@ -153,3 +153,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/Core/SRT_Core_22_Equations.md`, `SRT_openclaw/AI/_SRT_AI_Bridge.md`, `SRT_openclaw/AI/SRT_AI_01_Ontology.md`
 - Ingested: yes
 - Notes: 将“可衡量性鸿沟”映射为本体论通胀与特洛伊木马外部性方程；补入“验证即责任锚定”公理与可衡量性偏误推论，并扩展防误用边界。
+
+- Time: 2026-03-01 23:01 GMT+8
+- Source: https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2026.1703722/full + user-provided SRT deep analysis
+- Topic: cross-population amplitude coupling; latent lead-lag extraction in high-dimensional neural time series
+- Evidence-Level: primary (peer-reviewed journal article) + theory synthesis
+- Review Result (A/B/C): A
+- Target Docs: `SRT_openclaw/MEASURE_MAP.md`, `SRT_openclaw/Core/_SRT_Core_Bridge.md`
+- Ingested: yes
+- Notes: 新增“相位锁相+振幅协变”双通道神经代理，并补充线性投影与微观非线性并存的尺度边界说明。
