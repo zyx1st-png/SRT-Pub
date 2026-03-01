@@ -306,6 +306,15 @@ In depression, the perceived friction coefficient $\mu_{eff}$ is pathologically 
 
 **New Therapeutic Target**: Lower $\mu_{eff}$ by recalibrating $L_2$ priors (CBT, medication) AND rebuild $L_1^{future}$ meaning-structures (existential therapy).
 
+### 6.2a Meaning as Friction-Relief Experience (意义的摩擦收敛定义)
+**Working Definition**:
+$$
+\text{Meaning}(t) \propto -\frac{d\Psi_f}{dt},\quad \frac{d\Psi_f}{dt}<0
+$$
+当幽灵算子 $\hat{G}_\theta$ 在信息处理与现实选择中使本体论摩擦持续收敛（预测误差下降）时，系统主观上体验到“意义”。
+
+**SRT Interpretation**: 意义不是先验对象，也不只是叙事标签，而是 $L_0$ 潜能向 $L_1$ 确定性转化过程中，阻力被克服时的动态体验。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
