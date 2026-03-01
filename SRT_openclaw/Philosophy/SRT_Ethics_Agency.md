@@ -332,6 +332,9 @@ $$
 **Collective Propagation Clause (新增)**:
 若个体意义回转无法在 $L_2$ 共识网络中获得承接，将触发二次摩擦回流，进而在群体层面放大“失意义扩散”。
 
+**Collective Stabilizer Clause (新增)**:
+当群体建立可重复的公共承接结构（共享叙事、责任分配、反馈回路）时，个体意义回转更易固化为 $L_2$ 稳定器，从而降低二次摩擦回流。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
