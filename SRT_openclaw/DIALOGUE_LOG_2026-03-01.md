@@ -193,3 +193,9 @@
 - 点位：主体同一性易被读成实体恒等
 - 用户决策：同意“同一性=选择轨道连续可追踪性”。
 - 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 主体同一性章节新增主句。
+
+## 新一轮对话（领域理论-Philosophy）- 第3点
+- 学者扮演：Frankfurt
+- 点位：自由意志表述缺少“重写参数+承担后果”双条件
+- 用户决策：同意该工作句。
+- 回写内容：在 `Philosophy/SRT_Ethics_Agency.md` §2.3 新增工作定义。
