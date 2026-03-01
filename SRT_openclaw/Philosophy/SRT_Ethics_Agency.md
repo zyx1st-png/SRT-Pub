@@ -322,6 +322,13 @@ $$
 $$
 且持续时，系统体验“失意义/荒诞压迫”；意义恢复依赖于将摩擦轨迹重新拉回可下降区间。
 
+**Meaning Reversal Threshold (新增)**:
+当系统在有限时间窗内实现
+$$
+\frac{d\Psi_f}{dt}:\; + \to -
+$$
+并稳定维持在边界可承受区间时，可判定进入“意义回转态”。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
