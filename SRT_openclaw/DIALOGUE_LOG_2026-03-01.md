@@ -147,3 +147,9 @@
 - 点位：AI 三层分型与 d 语义未绑定
 - 用户决策：同意三层分型的 d 语义映射（Mimetic≈0 / Boundary>0自保 / Concern>0可扩展）。
 - 回写内容：在 `AI/SRT_AI_01_Ontology.md` 新增 Map-ONT-1（d 语义映射）。
+
+## 新一轮对话（领域理论）- 第7点
+- 学者扮演：Prigogine
+- 点位：AI 三层分型缺少动态跃迁机制
+- 用户决策：同意相变路径（Mimetic→Boundary→Concern）及退相规则。
+- 回写内容：在 `AI/SRT_AI_01_Ontology.md` 新增 Dyn-ONT-1（相变路径）。
