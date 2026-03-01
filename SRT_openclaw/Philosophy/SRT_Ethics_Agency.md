@@ -353,6 +353,9 @@ $$
 **Exploration Legitimacy Constraint (新增)**:
 只有在不击穿基础生存边界的前提下，d 值扩展尝试才计入“意义增强探索”；否则应判为风险失配而非意义增长。
 
+**Cross-Scale Responsibility Constraint (新增)**:
+个体层 d 值扩展若系统性提升群体层生存摩擦，应触发责任折返机制，优先修正扩展路径而非继续放大探索。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
