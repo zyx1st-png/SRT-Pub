@@ -207,18 +207,25 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-## SRT 对话触发工作流（新增）
+## SRT 工作流触发规则（更新）
 
 当用户发送以下指令时，按固定工作流执行：
 
-- `对话`：启动“张力化解模式”
-  - 选择一个 SRT 张力点（一次一个）
-  - 指定一个学者扮演者
-  - 与用户多轮对话，逐步提升解释力
-- `下一个`：结束当前点，切换到下一个张力点
-- `结束对话`：停止对话模式，输出总结，并把结论回写到 SRT 文档后提交 commit
+### A) 自我修补对齐工作流（默认）
+- `对话`：启动“自我修补对齐模式”
+  - 自动识别张力点与结构缺口（一次一个）
+  - 与用户快速对齐后回写
+- `下一个`：结束当前点，切换到下一个问题点
+- `结束对话`：停止该模式，输出总结并回写+commit
+- 详细流程：`SRT_openclaw/SRT_DIALOGUE_WORKFLOW.md`
 
-详细流程见：`SRT_openclaw/SRT_DIALOGUE_WORKFLOW.md`
+### B) 学者批判对话工作流（新增）
+- `学者对话`：启动“著名学者批判模式”
+  - 指定学者角色，对 SRT 提出批判性问题
+  - 用户与学者多轮讨论后形成可写入结论
+- `下一个`：切换下一批判点/下一学者
+- `结束对话`：停止该模式，输出总结并回写+commit
+- 详细流程：`SRT_openclaw/SRT_SCHOLAR_CRITIQUE_DIALOGUE_WORKFLOW.md`
 
 ## Make It Yours
 
