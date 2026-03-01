@@ -191,6 +191,11 @@ Without SRT's **meta-selection** mechanism, we cannot distinguish between "a mal
 
 **工作定义（本轮修订）**：SRT 中的自由意志不是任意选择，而是“对选择参数可重写且对后果可承担”的能力。
 
+**后果承担优先序（新增）**：
+1. 存在边界后果（本体层）
+2. 关系网络后果（他者层）
+3. 叙事评价后果（社会语义层）
+
 $$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{brain})}$$
 
 其中：
