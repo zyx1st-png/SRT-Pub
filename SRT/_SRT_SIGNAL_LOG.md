@@ -135,3 +135,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/Physics/_SRT_Phys_Bridge.md` (§1.4 + boundary clause)
 - Ingested: yes
 - Notes: 将“通道不对称投影”上升为桥接层正式条款，补充theta_channel张量与极端相变边界声明。
+
+- Time: 2026-03-01 22:29 GMT+8
+- Source: https://pubmed.ncbi.nlm.nih.gov/33872985/ + user-provided SRT deep analysis
+- Topic: co-embodiment / co-homeostasis as first prior; bootstrapping and nested operator initialization
+- Evidence-Level: primary (peer-reviewed Consciousness and Cognition) + theory synthesis
+- Review Result (A/B/C): A
+- Target Docs: `SRT_openclaw/Core/SRT_Core_22_Equations.md` (Protocol inheritance, co-homeostatic baseline, birth decoupling shock)
+- Ingested: yes
+- Notes: 按新版外部材料工作流直改正文；将“共同稳态”抽象为协议继承与基线共享机制，并新增诞生解耦冲击方程。
