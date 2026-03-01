@@ -144,3 +144,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/Core/SRT_Core_22_Equations.md` (Protocol inheritance, co-homeostatic baseline, birth decoupling shock)
 - Ingested: yes
 - Notes: 按新版外部材料工作流直改正文；将“共同稳态”抽象为协议继承与基线共享机制，并新增诞生解耦冲击方程。
+
+- Time: 2026-03-01 22:39 GMT+8
+- Source: https://arxiv.org/html/2602.20946v2 + user-provided SRT deep analysis
+- Topic: AGI economics / measurability gap / hollow economy / verification bottleneck
+- Evidence-Level: primary preprint (arXiv) + theory synthesis
+- Review Result (A/B/C): A
+- Target Docs: `SRT_openclaw/Core/SRT_Core_22_Equations.md`, `SRT_openclaw/AI/_SRT_AI_Bridge.md`, `SRT_openclaw/AI/SRT_AI_01_Ontology.md`
+- Ingested: yes
+- Notes: 将“可衡量性鸿沟”映射为本体论通胀与特洛伊木马外部性方程；补入“验证即责任锚定”公理与可衡量性偏误推论，并扩展防误用边界。

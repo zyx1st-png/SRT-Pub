@@ -188,6 +188,36 @@ $$\tau_{rebuild} \propto \frac{\text{Integration}(\hat{G}_{other})}{\text{Plasti
 * **推论**: 老年人（可塑性低）失去伴侣（整合度高）时 $\tau_{rebuild} \to \infty$；年轻人或浅层关系则 $\tau_{rebuild}$ 较短。临床干预双路径：降低分子（仪式切断）或增加分母（冥想/药物提升可塑性）。
 * **Cross-ref**: Ax-L2-2 (Hysteresis), Eq-Evo-02 (Parameter Update)。
 
+### Eq-Soc-Infl-01: Ontological Inflation (本体论通胀方程)
+**Formal Definition**: 当社会系统的 $L_2$ 生成速率长期超过人类责任锚定能力时，现实硬度下降并趋向语义坍塌。
+$$
+\mathcal{I}_{ont}(t) \equiv \frac{\frac{d\|L_2\|}{dt}}{\sum_{i\in Human}\Psi_{f,i}^{anchor} + \epsilon}
+$$
+$$
+\frac{d\mathcal{H}_{reality}}{dt} = -\eta\,\max(0,\mathcal{I}_{ont}-\tau_{infl})
+$$
+其中 $\mathcal{H}_{reality}$ 为现实硬度（reality hardness），$\tau_{infl}$ 为通胀阈值。
+* **Implication**: 当“生成”快于“验证锚定”，系统进入本体论通胀，表现为名义产出上升但可追责现实密度下降（hollowing）。
+
+### Eq-Soc-Infl-02: Trojan-Horse Externality (特洛伊木马外部性)
+**Formal Definition**: 个体/组织在短期收益驱动下偏好 AI-验AI 路径，导致集体锚定能力内卷衰减。
+$$
+U_k = \Pi_k^{deploy} - \lambda_k C_{verify}^{human} + \mu_k C_{verify}^{AI}
+$$
+若 $\mu_k \gg \lambda_k$，则最优策略偏向“低锚定高部署”，并使系统平均锚定比下降：
+$$
+\frac{d\bar{A}_{anchor}}{dt}<0
+$$
+* **Implication**: 这是“空心经济”在 SRT 中的博弈动力学版本：系统主动选择低质量现实吸引子。
+
+## 【理论边界/防误用声明】
+
+1. 不采纳“自动化成本趋零 = 可完全取消人类验证”。
+2. 不采纳“AI 内部一致性可替代责任锚定”。
+3. 不采纳“高产出即可代表高现实硬度”。
+
+适用边界：本组方程用于社会-经济层面的 SRT 动力学解释，当前为理论构型，不等同于已完成的计量识别模型。
+
 <br>
 <br>
 

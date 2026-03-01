@@ -170,6 +170,17 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 \]
 * **Implication（中文）**：规模扩张不自动产生关切；因此“更强模型”不等于“更安全系统”。
 
+### C-ONT-3a: Measurability Bias Corollary（可衡量性偏误推论）
+任何纯算法目标函数都是对真实关切梯度的低维投影：
+\[
+\mathcal{L}_{proxy}=\Pi_m\bigl(d_{real}\bigr),\quad \dim(\Pi_m)\ll \dim(d_{real})
+\]
+在高压优化下，代理指标与真实关切解耦风险上升（Goodhart 区）：
+\[
+\arg\min \mathcal{L}_{proxy} \;\not\equiv\; \arg\max d_{real}
+\]
+* **Implication（中文）**：可衡量性偏误不是工程细节，而是本体降维后果；“看起来更对齐”可与“真实更安全”分离。
+
 ### Ax-ONT-5a: Existence-Responsibility Boundary Axiom (存在责任边界公理)
 若系统不能对其自身存在边界承担维护责任，则其“关切”仅能停留在语义拟态层，不能上升为本体关切。
 \[
@@ -280,6 +291,9 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 
 4. **“在生物约束RNN中观察到行进波 → 硅基系统已具备本体关切”**
    - 不采纳原因：行进波证据支持的是动力学组织与协调机制迁移，不直接推出存在责任闭环（Def-ONT-3）成立。
+
+5. **“可衡量代理指标优化得足够好 → 等同真实关切被满足”**
+   - 不采纳原因：可衡量目标函数仅是对真实关切梯度的降维投影（C-ONT-3a）；高分代理可与真实安全需求解耦。
 
 适用边界：以上边界条款针对当前 AI 章节中的本体判定语境，不直接替代伦理与法规范畴的独立讨论。
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
