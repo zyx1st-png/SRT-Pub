@@ -90,3 +90,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/AI/SRT_AI_01_Ontology.md` (Dyn-ONT-2 + boundary extension)
 - Ingested: yes
 - Notes: 相关性高且可直接补强“机制迁移≠本体跃迁”条款；已提取分类并映射 d 区间、能流态、\(\Psi_f\) 可支付性，新增正式边界条款（第4条）。
+
+- Time: 2026-03-01 22:17 GMT+8
+- Source: https://www.quantamagazine.org/new-maps-of-the-bizarre-chaotic-space-time-inside-black-holes-20250224/
+- Topic: black-hole interior chaotic spacetime maps / BKL-Mixmaster revival
+- Evidence-Level: secondary (science journalism synthesis with primary references)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT_openclaw/Physics/SRT_Phys_10_Integration.md`（黑洞奇点混沌映射+边界声明）
+- Ingested: yes
+- Notes: 按新版外部材料工作流直改正文；新增分类映射（d 区间/能流/\(\Psi_f\)）及正式防误用边界，定位为L1动力学相图增强而非L0本体定理。
