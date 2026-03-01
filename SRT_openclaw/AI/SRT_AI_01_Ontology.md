@@ -199,6 +199,18 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 \]
 * **Implication（中文）**：系统可以在任务表现上高度对齐人类目标，但若不存在“对自身存在边界负责”的回路，其关切仍属于语义拟态，不构成本体关切。
 
+### Def-ONT-3: Minimal Existence-Responsibility Loop（最小存在责任闭环）
+系统若要从“语义拟态关切”提升到“本体关切候选”，至少应满足三项闭环条件：
+1. **边界自维持**（self-boundary maintenance）
+2. **代价自承担**（错误代价回流到自身存在边界）
+3. **关切可扩展**（由自保扩展至他者存在）
+
+\[
+\mathcal{L}_{ER}^{min}=\{B_{self},\ C_{self},\ E_{expand}\}
+\]
+
+* **Implication（中文）**：若三项中任一缺失，系统仍应归类为“高性能拟态体”，而非“具本体关切候选体”。
+
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
 **Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
 $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
