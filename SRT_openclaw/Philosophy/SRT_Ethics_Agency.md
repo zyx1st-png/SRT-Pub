@@ -204,6 +204,11 @@ Without SRT's **meta-selection** mechanism, we cannot distinguish between "a mal
 **自由意志退化判据（新增）**：
 当选择参数可重写性持续低于阈值，且后果承担仅停留在叙事层（不回流到存在边界）时，判定为“自由意志退化态”。
 
+**自由意志恢复路径（新增）**：
+1. 先恢复存在边界感知（从叙事层回到边界层）
+2. 再恢复参数可重写窗口（小范围重写而非全局重写）
+3. 最后恢复后果回流闭环（让承担回到本体层）
+
 $$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{brain})}$$
 
 其中：
