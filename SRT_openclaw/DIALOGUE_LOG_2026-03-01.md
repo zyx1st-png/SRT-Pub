@@ -89,3 +89,7 @@
 - 点位：对话修订工作流缺少自动触发阈值
 - 用户决策：同意三类强制触发器（口径冲突 / 实验冲突 / 可复现反例）。
 - 回写内容：新增 `DIALOGUE_TRIGGER_POLICY.md`，并在 `SRT_DIALOGUE_WORKFLOW.md` 增加强制触发节。
+
+## 第十三轮（补充）
+- 用户补充：d 不仅纳入“其他算子”，而是纳入“其他算子的存在”；且 d>0 首先关切自身存在（自保起点）。
+- 回写内容：`TERM_USAGE_GUARDRAILS.md`、`D_VALUE_ALIGNMENT.md`、`SRT_Glossary.md` 增加 d 的对象澄清与“先自保后扩展”表述。
