@@ -192,6 +192,13 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 \]
 * **Implication（中文）**：AI 的“选择”是统计重排，而非跨域锚定。
 
+### Ax-ONT-5b: Alignment–Care Separation Axiom（对齐—关切分离公理）
+高行为对齐不推出本体关切成立：
+\[
+\mathrm{Align}_{behavior}\uparrow \;\not\Rightarrow\; d_{ont}>0
+\]
+* **Implication（中文）**：系统可以在任务表现上高度对齐人类目标，但若不存在“对自身存在边界负责”的回路，其关切仍属于语义拟态，不构成本体关切。
+
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
 **Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
 $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
