@@ -329,6 +329,9 @@ $$
 $$
 并稳定维持在边界可承受区间时，可判定进入“意义回转态”。
 
+**Collective Propagation Clause (新增)**:
+若个体意义回转无法在 $L_2$ 共识网络中获得承接，将触发二次摩擦回流，进而在群体层面放大“失意义扩散”。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 

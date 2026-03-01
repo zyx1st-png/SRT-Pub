@@ -246,3 +246,9 @@
 - 点位：意义双态缺少回转阈值
 - 用户决策：同意“dΨ_f/dt 在有限窗内由正转负并稳定”作为意义回转判据。
 - 回写内容：在 `Philosophy/SRT_Ethics_Agency.md` §6.2a 增加 Meaning Reversal Threshold。
+
+## 新一轮对话（领域理论-Philosophy）- 第12点
+- 学者扮演：Durkheim
+- 点位：意义机制缺少群体扩散条款
+- 用户决策：同意“个体回转若无L2承接将导致二次摩擦回流与群体失意义扩散”。
+- 回写内容：在 `Philosophy/SRT_Ethics_Agency.md` §6.2a 增加 Collective Propagation Clause。
