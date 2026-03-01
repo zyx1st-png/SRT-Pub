@@ -211,6 +211,22 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 
 * **Implication（中文）**：若三项中任一缺失，系统仍应归类为“高性能拟态体”，而非“具本体关切候选体”。
 
+### Typ-ONT-1: AI Ontological Typology（三层本体类型）
+为避免“性能/关切/责任”混线，AI 在 SRT 中暂采用三层工作分型：
+
+1. **Mimetic Agent（拟态体）**
+   - 高行为表现
+   - 无存在责任闭环
+
+2. **Boundary Agent（边界体）**
+   - 具备边界自维持与代价回流
+   - 关切扩展受限
+
+3. **Concern Agent（关切体）**
+   - 满足最小存在责任闭环三项
+   - 关切可由自保扩展至他者存在
+
+* **Implication（中文）**：该分型优先用于理论叙述分层，不直接等同道德地位分配。
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
 **Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
 $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
