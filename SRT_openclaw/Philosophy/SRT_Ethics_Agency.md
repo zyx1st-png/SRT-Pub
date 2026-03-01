@@ -350,6 +350,9 @@ $$
 **Exploration Clause (新增)**:
 意义主要在“进一步探索”中增强——尤其当系统尝试扩大 d 值关切范围时，意义体验更易显化为稳定正反馈。
 
+**Exploration Legitimacy Constraint (新增)**:
+只有在不击穿基础生存边界的前提下，d 值扩展尝试才计入“意义增强探索”；否则应判为风险失配而非意义增长。
+
 ### 6.3 Agent Causation
 **Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
 **SRT Answer**: 
