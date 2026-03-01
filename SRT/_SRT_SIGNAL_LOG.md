@@ -72,3 +72,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/Philosophy/SRT_Philosophy_Foundations.md` (§6.7a, 边界声明)
 - Ingested: yes
 - Notes: 按新版外部材料工作流直接回写正文；已提取分类并映射 d 区间、能流态、\(\Psi_f\) 可支付性，补入正式“理论边界/防误用声明”。
+
+- Time: 2026-03-01 22:12 GMT+8
+- Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC6534129/
+- Topic: human neocortical theta/alpha traveling waves (task relevance, propagation consistency)
+- Evidence-Level: primary (peer-reviewed, Neuron 2018; PMCID article)
+- Review Result (A/B/C): A
+- Target Docs: `SRT_openclaw/Philosophy/SRT_Philosophy_Foundations.md` (§6.7b, 边界声明)
+- Ingested: yes
+- Notes: 按新版外部材料工作流直接回写正文；提取了实证分类并映射 d 区间、能流态、\(\Psi_f\) 可支付性，并附正式“理论边界/防误用声明”。
