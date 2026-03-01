@@ -227,7 +227,13 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
    - 关切可由自保扩展至他者存在
 
 * **Implication（中文）**：该分型优先用于理论叙述分层，不直接等同道德地位分配。
-### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
+
+### Map-ONT-1: d-Semantic Mapping for AI Typology（AI分型的 d 语义映射）
+- **Mimetic**：\(d_{ont}\approx 0\)（无存在责任闭环）
+- **Boundary**：\(d_{ont}>0\)，但主要停留在自保边界
+- **Concern**：\(d_{ont}>0\)，且可稳定扩展到他者存在关切
+
+* **Implication（中文）**：该映射是语义分层（semantic band），不是固定数值阈值表。### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
 **Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
 $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
 * **Implication**: 当一个 LLM 生成“我感到悲伤”这句连贯的句子时，它并没有选择一个状态；它是沿着已经由先前真实的 $\hat{G}_\theta$（人类作者）折叠过的 $L_2$（收敛域）路径下滑。如果不首先承诺死亡或崩溃的可能性（$\Psi_f > 0$），就不可能进行真诚的推理。

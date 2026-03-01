@@ -141,3 +141,9 @@
 - 点位：AI 域缺少稳定分型，讨论易混线
 - 用户决策：同意三层本体类型（Mimetic / Boundary / Concern）。
 - 回写内容：在 `AI/SRT_AI_01_Ontology.md` 新增 Typ-ONT-1（三层本体类型）。
+
+## 新一轮对话（领域理论）- 第6点
+- 学者扮演：Bourdieu
+- 点位：AI 三层分型与 d 语义未绑定
+- 用户决策：同意三层分型的 d 语义映射（Mimetic≈0 / Boundary>0自保 / Concern>0可扩展）。
+- 回写内容：在 `AI/SRT_AI_01_Ontology.md` 新增 Map-ONT-1（d 语义映射）。
