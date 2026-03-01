@@ -181,3 +181,9 @@
 - 点位：空间实体化与关系口径不一致
 - 用户决策：同意“空间是 L2 共识结构共时投影”的工作句。
 - 回写内容：在 `Physics/SRT_Physics_Cosmology.md` §3.6 增加空间层级澄清。
+
+## 新一轮对话（领域理论-Philosophy）- 第1点
+- 学者扮演：Simondon
+- 点位：主体被误读为静态实体
+- 用户决策：同意“主体是持续个体化过程”的主句。
+- 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` Def 2.1 后新增主体主句。
