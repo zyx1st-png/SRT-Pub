@@ -146,6 +146,15 @@ $$
 $$
 * **Implication**: 描述可无限逼近，锚定不可由描述替代；“结构充分”不推出“存在已锚定”。
 
+### C-Bridge-03b: Liability-Localization Boundary (代价定位边界推论)
+**Deductive Statement**: 若某理论对象无法在 \(\hat{G}_\theta\) 的具身参数中定位其代价承担位置，则该对象仅具解释地位，不具存在论升级资格。
+$$
+\neg\exists\,\theta_i\in\Theta_{finite}:\ \text{CostLoad}(\theta_i)>0
+\Rightarrow
+\text{Status}=\text{Explanatory Construct}
+$$
+* **Implication**: 不能承担代价的对象可参与解释，但不可被宣告为存在论实体。
+
 ### Ax-Bridge-04: Embodiment Constraint
 **Formal Definition**: A valid operator requires finite embodied parameters.
 $$\text{Valid}(\hat{G}_\theta) \iff \theta \in \Theta_{finite}$$

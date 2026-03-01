@@ -384,3 +384,8 @@
 - 主题：存在锚定 vs 描述完备性
 - 用户决策：同意“描述可逼近，锚定不可替代”的理论主句。
 - 回写内容：在 `Core/_SRT_Core_Bridge.md` 新增 `T-Bridge-03a: Anchoring Irreducibility`。
+
+## 学者批判对话（理论聚焦）- Heidegger #2
+- 主题：存在论对象的代价定位边界
+- 用户决策：同意“无法在 Ĝ 具身参数定位代价承担者，仅可归类为解释构造”。
+- 回写内容：在 `Core/_SRT_Core_Bridge.md` 新增 `C-Bridge-03b: Liability-Localization Boundary`。
