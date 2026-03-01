@@ -201,6 +201,9 @@ Without SRT's **meta-selection** mechanism, we cannot distinguish between "a mal
 2. 不可任意重写：存在边界约束、代价守恒约束
 3. 若宣称“完全可重写”，视为语义幻觉而非自由意志增强
 
+**自由意志退化判据（新增）**：
+当选择参数可重写性持续低于阈值，且后果承担仅停留在叙事层（不回流到存在边界）时，判定为“自由意志退化态”。
+
 $$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{brain})}$$
 
 其中：
