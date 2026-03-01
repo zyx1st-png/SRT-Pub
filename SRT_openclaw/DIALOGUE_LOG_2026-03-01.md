@@ -187,3 +187,9 @@
 - 点位：主体被误读为静态实体
 - 用户决策：同意“主体是持续个体化过程”的主句。
 - 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` Def 2.1 后新增主体主句。
+
+## 新一轮对话（领域理论-Philosophy）- 第2点
+- 学者扮演：Parfit
+- 点位：主体同一性易被读成实体恒等
+- 用户决策：同意“同一性=选择轨道连续可追踪性”。
+- 回写内容：在 `Philosophy/SRT_Philosophy_Foundations.md` 主体同一性章节新增主句。

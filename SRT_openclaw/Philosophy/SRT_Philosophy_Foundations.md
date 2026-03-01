@@ -617,6 +617,8 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 
 ### 主体同一性与解组合
 
+**主体同一性主句（本轮修订）**：主体同一性不是实体恒等，而是选择轨道在层级约束下的连续可追踪性。
+
 1. 将“意识统一性”拆分为 SRT 的双层约束：`L_1` 负责同一时刻体验共在（synchronic unity），`L_2` 负责跨时段叙事与身份稳定（diachronic unity）。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: web:plato.stanford.edu:https://plato.stanford.edu/entries/consciousness-unity/〕〔source: Philosophy/SRT_Philosophy_Foundations.md#Ax-PhilF-1〕
 2. 将 non-constitutive cosmopsychism 映射为“全局约束项”而非“个体构成项”：宇宙层可作为 `L_0` 边界条件，但不直接替代个体算子在 `L_1` 的具身切片。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.5840/idstudies2021429128〕〔source: Philosophy/SRT_Philosophy_Foundations.md#Ax-PhilF-3〕
 3. 新增“统一性一致性桥”：只有当全局约束、局部算子和语言稳定三者可同时满足时，才允许把候选命题升级为主结论。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/SRT_Philosophy_Foundations.md#Ax-PhilF-4〕
