@@ -111,3 +111,9 @@
 - 点位：理论重构缺少停止条件
 - 用户决策：同意三条阶段收束条件。
 - 回写内容：新增 `STAGE_EXIT_CRITERIA.md`，并同步到 `CONSENSUS_UPDATE_2026-03-01.md`。
+
+## 新一轮对话（重启）- 第1点
+- 学者扮演：Kahneman
+- 点位：修订规模缺少可执行阈值
+- 用户决策：同意按影响范围分级（小修/中修/大修）。
+- 回写内容：新增 `REVISION_SEVERITY_RULES.md`，并联动 `THEORY_CHANGE_GATE.md`。
