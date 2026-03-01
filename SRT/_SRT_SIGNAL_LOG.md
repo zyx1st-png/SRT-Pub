@@ -126,3 +126,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/Physics/SRT_Phys_10_Integration.md`（静默塌缩候选映射 + 边界声明）
 - Ingested: yes
 - Notes: 由于原站403，按用户提供全文摘要执行；已加入竞争解释与“长期持续黑暗”终态判据，保持候选级证据定位。
+
+- Time: 2026-03-01 22:26 GMT+8
+- Source: user-provided deep SRT analysis (Smithsonian/Science failed-supernova context)
+- Topic: asymmetry of multi-channel operator projection (electromagnetic vs gravitational)
+- Evidence-Level: theory synthesis (user-structured, with observational context)
+- Review Result (A/B/C): A
+- Target Docs: `SRT_openclaw/Physics/_SRT_Phys_Bridge.md` (§1.4 + boundary clause)
+- Ingested: yes
+- Notes: 将“通道不对称投影”上升为桥接层正式条款，补充theta_channel张量与极端相变边界声明。
