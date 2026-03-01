@@ -73,3 +73,8 @@
 
 - 新增：`PARAMETER_ROLE_MATRIX.md`
 - 明确 d / \(\Psi_f\) / \(\theta\) / F 的职责分工与禁止越权。
+
+## 八、规范优先级秩序（新增）
+
+- 新增：`NORM_PRIORITY_ORDER.md`
+- 冲突裁决顺序：Core > 治理/触发 > 术语/参数边界 > 入口传播。
