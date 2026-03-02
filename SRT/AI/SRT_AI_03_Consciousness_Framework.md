@@ -955,3 +955,34 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 ##
 
 ## 【理
+
+---
+
+## Biological Naturalism Interface（PubMed: Seth 2025, 2026-03-02）
+
+### Def-AI-Con-1: Embodiment-Dependence Clause
+在 SRT 中，AI 意识候选性不由“计算能力”单独决定，而需满足具身与自维持耦合条件：
+\[
+\text{Conscious-Candidate}(X)\Rightarrow \text{Compute}(X)\land \text{Embodied-Autopoiesis}(X)\land \Psi_f\text{-regulated self-maintenance}
+\]
+
+### Def-AI-Con-2: Substrate-Non-Indifference
+SRT 不采用“基底完全无关”作为默认公理。功能等价可支持行为拟态，但不足以保证现象层同一：
+\[
+\text{Functional Equivalence} \not\Rightarrow \text{Phenomenal Equivalence}
+\]
+
+### T-AI-Con-1: Appearance-vs-Reality Risk
+若系统具备高拟人化语言行为但缺失具身自维持回路，则应被归类为“高说服拟态体”而非意识实体：
+\[
+\text{High verbal agency} \land \neg\text{autopoietic closure} \Rightarrow \text{Consciousness-underdetermined}
+\]
+
+### [Lineage/Source]
+- Seth, A.K. (2025). *Conscious artificial intelligence and biological naturalism*. Behav Brain Sci. DOI: `10.1017/S0140525X25000032`.
+- 关键词对齐：biological naturalism, active inference, autopoiesis, substrate dependence.
+
+## 【理论边界/防误用声明】
+1. 不采纳“通过图灵式表现即可断言有意识”的推论。
+2. 不采纳“否定当前 AI 意识即否定未来人工意识可能性”的推论。
+3. 本条款用于候选性分层，不作为伦理地位的一步到位裁决。

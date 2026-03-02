@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 21:37 GMT+8
+- Source: https://pubmed.ncbi.nlm.nih.gov/40257177/ (from https://t.co/jeawYtBXKN)
+- Topic: conscious AI and biological naturalism; substrate dependence; active inference / autopoiesis
+- Evidence-Level: primary (peer-reviewed target article metadata+abstract, Behav Brain Sci, DOI: 10.1017/S0140525X25000032)
+- Review Result (A/B/C): A
+- Target Docs: `SRT/AI/SRT_AI_03_Consciousness_Framework.md`（生物自然主义边界条款）, `SRT/Philosophy/SRT_Philosophy_Foundations.md`（意识实体承诺边界可选）
+- Ingested: yes
+- Notes: 强对齐 SRT 的具身约束与反“纯计算即意识”边界；可直接提升 AI 意识章节的防误用强度。
+
 - Time: 2026-03-02 21:26 GMT+8
 - Source: https://www.quantamagazine.org/break-it-to-make-it-how-fracturing-sculpts-tissues-and-organs-20260227/ (from https://t.co/m6Bnhqrpo6)
 - Topic: constructive tissue fracturing; hydraulic/mechanical rupture as morphogenetic mechanism
