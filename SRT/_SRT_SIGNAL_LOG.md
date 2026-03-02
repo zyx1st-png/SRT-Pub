@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 16:08 GMT+8
+- Source: https://plato.stanford.edu/entries/daoism/
+- Topic: dao as normative natural path-structure; natural vs social dao; language-use and norm plurality
+- Evidence-Level: tertiary scholarly encyclopedia (SEP, first published 2025)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Daoism 自然规范接口）, `SRT/SRT_Glossary.md`（dao/path-norm术语候选）
+- Ingested: yes
+- Notes: 与 SRT 的“规范闭包 + 路径选择 + 边界治理”高度同构，可用于强化‘规范自然主义但非命令论’边界。
+
 - Time: 2026-03-02 15:59 GMT+8
 - Source: https://plato.stanford.edu/entries/qualia/
 - Topic: qualia taxonomy, representational vs non-representational views, explanatory gap, AI and qualia
