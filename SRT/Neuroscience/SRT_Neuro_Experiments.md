@@ -199,6 +199,43 @@ I(L_1; x) < I(L_1; \theta, \kappa_{PE}) \quad \text{under fixed } x
   - Seth (2025), *Behavioral and Brain Sciences*, DOI: `10.1017/S0140525X25000032`
 - 审核结论：**A（直接融入）**；理由：与主动推断/预测处理及 SRT 的 \(\hat{G}_\theta\)-\(L_1\) 映射高度同构，且具跨个体实验可操作性。
 
+### Ax-EXP-17: Age-Stratified White-Matter Differentiation Axiom
+对认知灵活性相关白质子网，定义年龄分层结构指标：
+\[
+\text{WDI}_{age} = \mathcal{D}(\mathbf{m}_{tracts}\mid age),\quad
+\text{WHD}_{age}=\mathcal{H}(\mathbf{m}_{tracts}\mid age)
+\]
+其中 \(\mathbf{m}_{tracts}\) 为髓鞘相关通路特征向量，\(\mathcal{D}\) 表示通路间分化度，\(\mathcal{H}\) 表示通路内同质性。
+
+经验判据（群体层）：
+\[
+\text{early adult}:\ \Delta \text{WDI}\approx 0,\ \Delta \text{WHD}\approx 0
+\]
+\[
+\text{late adult}:\ \Delta \text{WDI}>0,\ \Delta \text{WHD}<0
+\]
+* **Implication（中文）**：认知灵活性并非由单一区域决定，而是由跨通路结构分化与同质性退化的联合动力学塑造。
+
+### T-EXP-5: Lifespan Flexibility Substrate Theorem
+若晚成年阶段出现“分化上升 + 同质性下降”组合模式，则认知灵活性子过程（任务切换/更新）的个体差异将显著增加：
+\[
+\partial Var(\text{Flexibility Subprocess})/\partial age > 0\quad \text{under}\quad (\Delta\text{WDI}>0,\Delta\text{WHD}<0)
+\]
+* **Implication（中文）**：SRT 预测该窗口中 \(\Psi_f\) 的局部支付压力增大，导致同任务下策略稳定性下降与切换成本上升。
+
+### Source Note (eNeuro 2026)
+- Wolfe T, Gassel A, Calvert ML, et al. (2026). *Population-Level Age Effects on the White Matter Structure Subserving Cognitive Flexibility in the Human Brain*. eNeuro 13(2): ENEURO.0179-25.2025. DOI: `10.1523/ENEURO.0179-25.2025`.
+- 关键锚点：
+  1) 认知灵活性相关白质通路在早成年阶段表现为未明显分化；
+  2) 晚成年阶段呈显著分化；
+  3) 晚年特定通路同质性随年龄下降。
+- 审核结论：**A-（信号入库）**；理由：原始实证与 SRT 跨尺度稳定性建模高度可对接，但具体个体级机制仍需联合行为模型验证。
+
+## 【理论边界/防误用声明】
+- 不采纳“群体年龄效应=个体不可逆衰退轨迹”的推论。
+- 不采纳“白质结构指标可单独决定意识层/价值层结论”的推论。
+- 本条款适用边界：认知灵活性子过程建模，不外推至全部认知维度。
+
 <br>
 
 ---

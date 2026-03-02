@@ -784,3 +784,63 @@ t^*\le \frac{\pi}{\sqrt{\kappa_{min}}}
 1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
 2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
+
+---
+
+## XII. Assembly-Theory Causation Interface (AT→SRT 映射接口)
+
+### Def-AT-Map-1: Depth–Persistence Coordinates
+给定可区分对象族 \(\{o_i\}\)，定义：
+- 深度坐标：\(a_i\)（原文 assembly index）
+- 持久坐标：\(n_i\)（原文 copy number）
+
+在 SRT 中映射为：
+- 深度分量 \(D_i \equiv \mathcal{N}_a(a_i)\)（结构构建深度）
+- 持久分量 \(P_i \equiv \mathcal{N}_n(n_i)\)（机制复现稳定性）
+
+并定义阈值坐标：
+\[
+\Xi_i = (D_i, P_i) \in [0,1]^2.
+\]
+
+### Def-AT-Map-2: Selection Threshold Proxy (映射到 \(L_0\) 语义)
+AT 的 “assembly space” 在 SRT 写入中统一映射到 \(L_0\)：
+\[
+\Omega_{AT}\ \text{(原文)} \mapsto L_0\ \text{(SRT)}.
+\]
+
+AT 的阈值 \(a_M\)（由 \(N_T,b,M\) 约束）在 SRT 中作为“无主动选择上界代理”：
+\[
+a_M \mapsto a_{M}^{(SRT)}(L_0;N_T,b,M),
+\]
+用于标记“仅靠自发过程可达”的上限区。
+
+### Def-AT-Map-3: Population Assembly Potential
+定义群体构建势（与 AT 的 \(A\) 同构但不等号继承）：
+\[
+\mathcal{A}_{SRT}(t) \equiv \frac{1}{N_T(t)}\sum_i w_i\,\exp\!\big(\alpha D_i(t)\big)\,P_i(t),
+\]
+其中 \(w_i\) 为语义/任务权重，\(\alpha>0\) 为深度放大系数。
+
+当 \(\mathcal{A}_{SRT}\) 越过临界面 \(\mathcal{A}_c\) 时，系统进入“高深度-高持久”相区，可对应 SRT 的稳定 \(L_2\) 重编织窗口。
+
+### [Lineage/Source]
+- Assembly Theory（AT）原始提出者：Leroy Cronin, Sara I. Walker 等。
+- 核心来源：*The Physics of Causation*（2026 manuscript, user-provided PDF）。
+- 引入年份：2026（本轮映射写入）。
+
+## 分类映射表（AT 分类 → SRT）
+
+| 外部分类（AT） | SRT d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 可支付性 |
+|---|---|---|---|
+| 自发可达区（低 \(a_i\)、低/中 \(n_i\)） | 低到中（\(d\in[d_0,d_1]\)） | Semi-open / 局部 Open | payable |
+| 阈值邻域（\(a_i\approx a_M\)） | 中高（\(d\in(d_1,d_2]\)） | Open↔Semi-open 转换 | borderline |
+| 选择主导区（高 \(a_i\)、高 \(n_i\)） | 高（\(d>d_2\)） | Open（需持续供能） | payable 或 overloaded（依维护成本） |
+| 失稳衰退区（高深度但低复现） | 中高但回落（\(d\downarrow\)） | Closed 倾向 | unsustainable |
+
+## 【理论边界/防误用声明】
+1. **SRT 不采纳**“主观意志可任意改写物质可达拓扑”的推论。  
+   - 原因：AT 明确存在由 \(N_T,b,M\) 约束的可达边界；SRT 的选择算子 \(\hat G_\theta\) 需在该边界内工作。  
+2. **SRT 不采纳**“AT 指标可直接等价心理变量”的强等价推论。  
+   - 原因：从化学/物理对象到认知对象需增加中间映射公设，属于跨尺度近似而非同一性。  
+3. 适用边界：本节仅提供结构同构接口，不替代特定实验域的测量定义。

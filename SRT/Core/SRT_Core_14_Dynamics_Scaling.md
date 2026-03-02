@@ -895,3 +895,46 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ## 【理论边界/防误用声明】
 - 不采纳“万物皆可算=
+
+---
+
+## AT-SRT 相变接口（补充条款，2026-03-02）
+
+### Def-Scale-AT-1: 深度-持久相图
+在跨尺度系统中定义状态坐标：
+\[
+\mathfrak{Z}(t)=\big(D(t),P(t),\Psi_f(t),d(t)\big)
+\]
+其中 `D` 为构建深度代理、`P` 为复现持久代理。
+
+### T-Scale-AT-1: 相变门（Phase Gate）
+若存在窗口 \([t_0,t_1]\) 满足：
+\[
+D(t)\ge D_c,\quad P(t)\ge P_c,\quad \text{and}\quad \Psi_f\ \text{payable},
+\]
+则系统从“被动选择区”跃迁到“主动稳定构建区”（记为 \(\mathcal{R}_{active}\)）。
+
+### T-Scale-AT-2: 回落门（Fallback Gate）
+若保持高深度但出现 `P` 下跌且 \(\Psi_f\to\) overloaded/unsustainable，则轨迹回落到约束主导区：
+\[
+\mathcal{R}_{active} \to \mathcal{R}_{constraint}
+\]
+并触发 \(L_2\) 重编织失败风险升高。
+
+### [Lineage/Source]
+- 来源：Cronin & Walker, *The Physics of Causation*（2026 manuscript）。
+- SRT 引入方式：作为跨尺度“阈值-相变”接口，不与认知层变量作强同一。
+
+## 分类映射表（AT 分类 → SRT）
+
+| 外部分类（AT） | SRT d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 可支付性 |
+|---|---|---|---|
+| 自发可达区（低 \(a_i\)、低/中 \(n_i\)） | 低到中（\(d\in[d_0,d_1]\)） | Semi-open / 局部 Open | payable |
+| 阈值邻域（\(a_i\approx a_M\)） | 中高（\(d\in(d_1,d_2]\)） | Open↔Semi-open 转换 | borderline |
+| 选择主导区（高 \(a_i\)、高 \(n_i\)） | 高（\(d>d_2\)） | Open（需持续供能） | payable 或 overloaded |
+| 失稳衰退区（高深度但低复现） | 中高但回落（\(d\downarrow\)） | Closed 倾向 | unsustainable |
+
+## 【理论边界/防误用声明】
+1. 本接口不意味着“心理层面可绕过物理可达边界”。
+2. AT 的对象层因果阈值与 SRT 的认知层相变阈值是**映射关系**，非同一对象。
+3. 使用本接口时必须同步报告适用尺度（微观/生物认知/社会制度）。

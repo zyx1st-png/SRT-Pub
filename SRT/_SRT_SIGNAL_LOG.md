@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:03 GMT+8
+- Source: https://www.eneuro.org/content/13/2/ENEURO.0179-25.2025
+- Topic: age effects on white-matter structure subserving cognitive flexibility; adulthood-stage differentiation
+- Evidence-Level: primary (peer-reviewed, eNeuro, DOI: 10.1523/ENEURO.0179-25.2025)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Neuroscience/SRT_Neuro_Experiments.md`（年龄分层假设条款）, `SRT/SRT_EXP_MEASURE_MAP.md`（白质分化与同质性下降 proxy）
+- Ingested: yes
+- Notes: 与 SRT 的跨尺度选择稳定性框架高度一致；可作为 d/\(\Psi_f\) 神经层代理证据接口，强调“早成年未分化、晚成年分化增强且特定通路同质性下降”。
+
 - Time: 2026-03-02 10:07 GMT+8
 - Source: 用户提供外部材料《The Physics of Causation》+ SRTclaw 结构化摘要（附 PDF）
 - Topic: Assembly Theory（组装指数 a_i / 拷贝数 n_i / 组装度 A）与 SRT 的选择阈值映射
