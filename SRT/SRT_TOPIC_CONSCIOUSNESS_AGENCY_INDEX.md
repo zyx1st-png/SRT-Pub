@@ -18,6 +18,7 @@ dependency: [Philosophy/SRT_Philosophy_Foundations, Neuroscience/SRT_Neuro_Exper
 - 能动性实验：`Neuroscience/SRT_Neuro_Experiments.md`（T-Agency-Attribution / Ax-EXP-18 / T-EXP-6）
 - 自由意志导航：`SRT_TOPIC_FREE_WILL_INDEX.md`
 - 量子塌缩接口：`Physics/SRT_Phys_09_Formalism_Ext.md`（Quantum Collapse Interface）
+- 真理理论接口：`Philosophy/SRT_Philosophy_Foundations.md`（Truth-Theory Interface）
 
 ## 3) 争议地图（最常见误读）
 1. “意识滞后 = 无自由意志” → 错；需看整合门是否可改变行为轨迹。  
@@ -35,8 +36,19 @@ dependency: [Philosophy/SRT_Philosophy_Foundations, Neuroscience/SRT_Neuro_Exper
 - 哲学层问题：解释鸿沟、功能角色、主观性分类（见 `SRT_Philosophy_Foundations.md`）
 - 神经层问题：RP-W-M 时滞与整合门（见 `SRT_Neuro_Experiments.md`）
 
+## 6) 意识 × 能动性 × 真值归属（三角闭环）
+- 意识给出“经验结构”（L1）
+- 能动性给出“控制与更新机制”（\(\hat G_\theta\)）
+- 真值接口给出“跨主体归属规则”（L2 + 边界）
+
+最小闭环原则：
+\[
+\text{Claim Validity} \Leftarrow (\text{L1 report}) \land (\text{agency-compatible mechanism}) \land (\text{L2 attribution boundary})
+\]
+
 ## 【理论边界/防误用声明】
 - 本索引为导航文档，不产生新的一级证据。
 - 不将意识现象学条款直接替代行为责任判定。
 - 不将单一实验范式外推为全域自由意志结论。
 - 不将量子塌缩解释直接上升为意识因果机制结论。
+- 不将 L2 共识稳定性直接等同于对象层“绝对真”。
