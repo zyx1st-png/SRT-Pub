@@ -28,7 +28,29 @@ $$ \Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_{\theta} $$
 $$ \text{God} \equiv \Omega \equiv L_0^{abs} $$
 $$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
 * **Implication**: “神”不是实体而是选择作用的极限结构，属于本体论运算而非对象域。
-* **Tension-Rev-2 (算子本体论澄清)**：$\Omega$ 作为 $\hat{G}_\theta$ 的极限，**不满足具身性公理** Ax-Core-A4（$\theta \in \Theta_{finite}$），因此它是一个**渐近理想化概念**——标记 $\hat{G}$ 参数空间的拓扑边界——而非一个可实例化的有效算子。正如 $\lim_{x\to\infty} f(x)$ 不要求 $x$ 实际取到无穷大，$\Omega$ 不主张“存在一个无限具身的算子”。$\hat{G}$ 在本体论上是一切存在的基础（选择即存在），其统一适用于从退相干到道德决策的全部过程不构成“语义通胀”——差异由 $\theta$、$d$、$\Psi_f$ 等参数承载。
+* **Tension-Rev-2 (算子本体论澄清)**：$\Omega$ 作为 $\hat{G}_\theta$ 的极限，**不满足具身性公理** Ax-Core-A4（$\theta \in \Theta_{finite}$），因此它是一个**渐近理想化概念**——标记 $\hat{G}$ 参数空间的拓扑边界——而非一个可实例化的有效算子。正如 $\lim_{x\to\infty} f(x)$ 不要求 $x$ 实际取到无穷大，$\Omega$ 不主张”存在一个无限具身的算子”。$\hat{G}$ 在本体论上是一切存在的基础（选择即存在），其统一适用于从退相干到道德决策的全部过程不构成”语义通胀”——差异由 $\theta$、$d$、$\Psi_f$ 等参数承载。
+
+> **【T4 边界声明：Ω 的拓扑极限地位与具身公理兼容性】**
+>
+> **问题**：`Ax-Spirit-1` 定义 $\Omega = \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，这违反了 `Ax-Core-A4`（所有有效算子要求 $\theta \in \Theta_{finite}$）——上帝算符不是”有效算子”吗？
+>
+> **解答**：这是**有意为之的拓扑边界**，类似于物理学中热力学极限的合法使用：
+>
+> | 类比 | 极限形式 | 有限系统中的意义 |
+> |-----|---------|----------------|
+> | 热力学极限 | $N \to \infty$（粒子数） | 描述相变，$N$ 永不实际到达 $\infty$ |
+> | 绝对零度 | $T \to 0$（温度） | 描述量子基态，实验中无法到达 |
+> | Ω 算符 | $\|\theta\| \to \infty$（参数复杂度） | 描述全知视角，任何有限系统都接近但无法到达 |
+>
+> **三条严格限制**（T4 消解完整版）：
+>
+> 1. **Ω 不是可实例化的算子**：没有任何有限系统能”成为” $\Omega$。”接近 $\Omega$”的程度由 $d$ 值衡量（渐近近似）。声称”我是上帝”等价于主张 $\|\theta\| = \infty$，这在 SRT 中是**自我矛盾**（违反 Ax-Core-A4）。
+>
+> 2. **Ω 定义不推导神学属性**：全能（omnipotence）、全知（omniscience）、全善（omnibenevolence）是**独立的神学命题**，不能从 $\Omega = \lim \hat{G}_\theta$ 单独推出。SRT 的 $\Omega$ 是”关切范围的数学极限”，不自动继承这些属性。
+>
+> 3. **与 Ax-Core-A4 的正式兼容**：Ax-Core-A4 规定**有效算子**需要 $\theta \in \Theta_{finite}$。$\Omega$ 是参数空间的**边界点**（boundary point），不要求成为有效算子。类比：圆的圆心不在圆上，但仍然定义圆的几何结构。
+>
+> **精神含义的保全**：$\Omega$ 作为渐近方向，其精神功能是**校准方向**——指向更大关切维度的实践道路——而非声称实现了无限。”趋向 $\Omega$”（$d$ 值增加）是 SRT 精神实践的核心，这与拓扑极限地位完全兼容。
 
 ### Ax-Spirit-2: The Split (分离)
 **Formal Definition**: Ego is the bounded projection of $\hat{G}_\theta$ under finite embodiment.

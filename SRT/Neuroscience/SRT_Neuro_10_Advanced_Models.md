@@ -40,6 +40,18 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 \text{Feeling}\propto \left\|\nabla \Psi_f\right\|
 \]
 * **Implication（中文）**：感受不是叙事标签，而是 \(\Psi_f\) 的局部梯度结构。
+* **定义链（单向因果，T1 破坏性张力修复）**：
+
+  防止循环定义（"感受 → 摩擦 → 感受"），Ψ_f 独立于主观报告定义，定义链方向如下：
+
+  $$\underbrace{\text{信息几何}}_{\text{第一性}} \longrightarrow \underbrace{\Psi_f = \int_\gamma \|\nabla F\| dt}_{\text{Fisher 度量积分}} \longrightarrow \underbrace{\Pi_{intero}^{-1}}_{\text{内感受精度失准}} \longrightarrow \underbrace{\text{Feeling（现象属性）}}_{\text{涌现层}}$$
+
+  **各层独立测量方法**（以验证单向性）：
+  - $\Psi_f$ 层：**不依赖主观报告**，通过分子通道活动（离子通道开/关概率）、EEG 慢波功率谱宽度、或代谢耗散率测量
+  - $\Pi_{intero}$ 层：心率变异性（HRV 频域分析）、呼吸模式规律性
+  - Feeling 层：主观评分量表（VAS）、生理唤醒指标（皮肤电、瞳孔直径）
+
+  **单向性的实验检验**：Ψ_f 操控（通过代谢干预或神经调控）应导致 Feeling 变化，但 Feeling 变化（如情绪诱导）不应直接操控 Ψ_f 的信息几何测量——若后者成立则双向性存在，需修订本公理。
 
 ---
 
@@ -182,6 +194,17 @@ $$\text{Feeling} = \nabla \Psi_f$$
 - **无感觉** = 盲飞（无法导航 $L_0$）
 
 这解释了为什么**无痛症**患者虽然生理完整，却难以做出有效决策——他们失去了导航信号。
+
+> **【T1 张力消解注记】防循环定义**
+>
+> 一个常见质疑：SRT 是否循环——"感觉 ↔ 摩擦" 互相定义？
+>
+> **答**：非循环，因为 $\Psi_f$ 在信息几何层有**主观报告无关的定义**：
+> $$\Psi_f \equiv \int_\gamma \|\nabla F\|_{Fisher} \, dt$$
+> 其中 Fisher 信息度量 $g_F$ 由系统的参数-观测关系决定，可通过神经元放电统计独立测量。
+>
+> 因果链是单向的：$\Psi_f$（可客观测量）→ 内感受失准（神经信号）→ 感受（现象属性）。
+> "感受到痛"不会反过来改变 $\Psi_f$ 的信息几何定义——它只改变 $\theta$ 参数（通过学习），从而影响**下一个**时间步的 $\Psi_f$。这是序贯因果，不是循环因果。
 
 ---
 
