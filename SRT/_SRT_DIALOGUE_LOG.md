@@ -3,6 +3,7 @@ id: SRT-DIALOGUE-LOG
 type: governance_log
 tags: [Dialogue, Critique, Alignment]
 status: rolling_v1
+dependency: [_SRT_DIALOGUE_WORKFLOW]
 ---
 
 # SRT 对话日志

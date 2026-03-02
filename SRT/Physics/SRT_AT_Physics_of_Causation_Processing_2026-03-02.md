@@ -3,6 +3,7 @@ id: SRT-AT-PROCESS-2026-03-02
 type: external_review
 tags: [Assembly-Theory, Causation, Threshold, SRT-Alignment]
 status: draft_v1
+dependency: [Physics/SRT_Phys_09_Formalism_Ext, Core/SRT_Core_14_Dynamics_Scaling, SRT_EXP_MEASURE_MAP]
 source: /Users/zhangyuxin/.openclaw/media/outbound/b7f1791d-2d06-4ee3-837d-cc48551b703f.pdf
 ---
 
