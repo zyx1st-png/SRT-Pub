@@ -922,3 +922,34 @@ I(\theta)\ge N_{crit}(env,\Psi_f)
 ## 【理论边界/防误用声明】
 1. 不采纳“达到 \(N_{crit}\) 即具主观体验”的推论。
 2. 不采纳“低 \(N_{crit}\) 系统必然演化为高阶认知体”的目的论推论。
+
+---
+
+## Constructive Fracture Interface（建设性断裂接口，2026-03-02）
+
+### Def-Scale-CF-1: Controlled Rupture Window
+定义“建设性断裂”窗口：系统在局部连接断裂后，若满足重封闭与功能增强条件，则该断裂为结构重构步骤而非失稳失败。
+\[
+\mathcal{R}_{break}\to\mathcal{R}_{reseal}\quad \text{with}\quad \Delta \mathcal{F}_{function}>0
+\]
+
+### T-Scale-CF-1: Break-to-Build Gate
+若机械/液压应力优先沿低黏附路径释放，且重封闭时间 \(\tau_{reseal}\) 低于功能失稳阈值 \(\tau_{fail}\)，则系统可通过“先裂后合”进入更高功能态：
+\[
+\tau_{reseal}<\tau_{fail}\ \Rightarrow\ \text{constructive morphogenesis}
+\]
+
+### T-Scale-CF-2: Path-Selective Fracture Principle
+断裂路径并非随机扩散，而受局部张力差与连接强度梯度共同约束：
+\[
+\Pr(\text{break at }e_i) \propto \frac{\Delta T_i}{A_i}
+\]
+其中 \(\Delta T_i\) 为局部张力差，\(A_i\) 为黏附/连接强度代理。
+
+### [Lineage/Source]
+- Quanta 综述（2026-02-27）及其文内链接的一手文献（如 Science/Development 相关研究）。
+- 用途：将“受控断裂→重封闭→功能塑形”写入跨尺度动力学条款。
+
+## 【理论边界/防误用声明】
+1. 不采纳“任何断裂都是进步”的推论；仅在重封闭与功能增益同时成立时定义为建设性断裂。
+2. 不采纳“材料裂纹模型可无改造直接套用活体组织”的推论；活体系统需引入主动调控与反馈项。

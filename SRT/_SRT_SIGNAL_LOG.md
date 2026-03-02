@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 21:26 GMT+8
+- Source: https://www.quantamagazine.org/break-it-to-make-it-how-fracturing-sculpts-tissues-and-organs-20260227/ (from https://t.co/m6Bnhqrpo6)
+- Topic: constructive tissue fracturing; hydraulic/mechanical rupture as morphogenetic mechanism
+- Evidence-Level: secondary (science journalism with linked primary DOIs)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`（建设性断裂相变条款）, `SRT/Neuroscience/SRT_Neuro_Experiments.md`（可选后续生物组织验证接口）
+- Ingested: yes
+- Notes: 与 SRT 的“破坏即重构”动力学高度同构；强调受控断裂与自治重封闭并存，适合作为相变门条件补充。
+
 - Time: 2026-03-02 17:54 GMT+8
 - Source: https://www.newscientist.com/article/2515482-rna-strand-that-can-almost-self-replicate-may-be-key-to-lifes-origins/
 - Topic: near-self-replicating 45-nt ribozyme; pre-closure dynamics and origin-of-life threshold
