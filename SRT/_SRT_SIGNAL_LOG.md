@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 17:54 GMT+8
+- Source: https://www.newscientist.com/article/2515482-rna-strand-that-can-almost-self-replicate-may-be-key-to-lifes-origins/
+- Topic: near-self-replicating 45-nt ribozyme; pre-closure dynamics and origin-of-life threshold
+- Evidence-Level: secondary (science journalism summary of lab result)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Core_Law/SRT_Reference_Dynamics.md`（Partial Closure 条款）, `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`（Minimal Embodiment Threshold 条款）
+- Ingested: yes
+- Notes: 与 SRT 的约束闭包、摩擦支付与跨尺度同构高度对齐；当前证据链为新闻层，需后续补一手论文条目。
+
 - Time: 2026-03-02 16:08 GMT+8
 - Source: https://plato.stanford.edu/entries/daoism/
 - Topic: dao as normative natural path-structure; natural vs social dao; language-use and norm plurality
