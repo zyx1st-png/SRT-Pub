@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:55 GMT+8
+- Source: https://plato.stanford.edu/entries/truth/
+- Topic: truth theories (correspondence/coherence/pragmatist), Tarski framework, realism/anti-realism, deflationism
+- Evidence-Level: tertiary scholarly encyclopedia (SEP, substantive revision 2025)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Philosophy/SRT_Philosophy_Foundations.md`（真理理论接口）, `SRT/SRT_Glossary.md`（truth-related术语边界候选）
+- Ingested: yes
+- Notes: 可用于 SRT 的“L1-L2 真值归属机制”澄清与反误用边界；不替代对象层实证。
+
 - Time: 2026-03-02 15:20 GMT+8
 - Source: https://plato.stanford.edu/entries/qm-collapse/
 - Topic: quantum measurement problem; GRW/CSL dynamical reduction; primitive ontology and testability
