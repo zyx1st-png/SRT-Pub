@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:04 GMT+8
+- Source: https://www.themarginalian.org/2017/03/09/atom-and-archetype-pauli-jung/
+- Topic: Jung–Pauli correspondence / synchronicity / mind–matter bridge narrative
+- Evidence-Level: secondary (essay/book-review style synthesis; non-primary)
+- Review Result (A/B/C): B
+- Target Docs: `SRT/Philosophy/SRT_Philosophy_Foundations.md`（同步性映射条款与边界声明）
+- Ingested: yes
+- Notes: 相关性高但证据层级较弱；作为哲学-现象学接口可用，不可替代机制因果证明。
+
 - Time: 2026-03-02 15:03 GMT+8
 - Source: https://www.eneuro.org/content/13/2/ENEURO.0179-25.2025
 - Topic: age effects on white-matter structure subserving cognitive flexibility; adulthood-stage differentiation

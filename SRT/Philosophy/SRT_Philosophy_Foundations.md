@@ -627,3 +627,39 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
 2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
+
+---
+
+## Synchronicity Interface (Jung–Pauli) → SRT 映射条款（2026-03-02）
+
+### Def-Phil-Sync-1: Meaning-Coupled Coincidence
+将“同步性（synchronicity）”在 SRT 中定义为：
+\[
+\text{SyncEvent} = \{e_{in}, e_{out}\ \mid\ \mathcal{M}(e_{in},e_{out})\ge \tau_M,\ \text{while explicit }L_1\text{-causal chain is under-resolved}\}
+\]
+其中 \(e_{in}\) 为内在体验事件，\(e_{out}\) 为外在事件，\(\mathcal{M}\) 为意义耦合强度。
+
+### Def-Phil-Sync-2: Three-Layer Placement
+- \(L_0\)：潜在关联拓扑（原文“acausal meaningful connection”在 SRT 中映射为“未闭合因果分解的潜在耦合空间”）。
+- \(L_1\)：主体报告的“意义共振”事件。
+- \(L_2\)：该事件被叙事、象征系统、信念结构固化后的解释层。
+
+### Taxonomy Mapping: 同步性解释层级 → SRT
+
+| 外部分类 | SRT 对应 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| 偶发巧合叙事 | 局部 \(L_1\) 事件绑定 | 低~中 | Semi-open | payable |
+| 持续意义共振 | \(L_1\to L_2\) 稳态叙事化 | 中~中高 | Open / Semi-open | payable~borderline |
+| 象征系统固化（原型化） | \(L_2\) 高权重吸引子 | 中高~高 | Closed 倾向（解释自洽但探索收缩） | borderline / overloaded |
+
+### [Lineage/Source]
+- 术语谱系：Carl Jung（共时性/同步性），Wolfgang Pauli（心物桥接对话）。
+- 二级来源：The Marginalian 综述文（2017）与其所述 *Atom and Archetype* 书信集脉络。
+- 引入年份：2026（SRT 映射写入）。
+
+## 【理论边界/防误用声明】
+1. **SRT 不采纳**“同步性可替代因果机制”的推论。  
+   - 原因：同步性在本框架中是现象学标签与解释层接口，不是机制证明本身。  
+2. **SRT 不采纳**“任何巧合都具有本体论必然意义”的推论。  
+   - 原因：需区分统计偶然、叙事放大与稳定结构耦合，避免 L2 过拟合。  
+3. 适用边界：本条款用于哲学解释与建模假设生成，不可直接作为实证因果结论。
