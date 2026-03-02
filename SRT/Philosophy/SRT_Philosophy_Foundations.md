@@ -698,3 +698,38 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 1. **SRT 不采纳**“决定论真/假可单独裁定责任归属”的简单化推论。  
 2. **SRT 不采纳**“意识仅是幻觉因此规范评价无效”的全盘取消主义推论。  
 3. 适用边界：本接口用于解释与建模，不直接替代法律伦理裁判标准。
+
+---
+
+## Consciousness Taxonomy Interface（SEP 对齐，2026-03-02）
+
+### Def-Phil-Con-1: Three-Question Decomposition
+将意识问题分解为三类互补问题：
+\[
+Q_D:\ \text{What is experienced?}\quad
+Q_E:\ \text{How can experience exist?}\quad
+Q_F:\ \text{What function does experience serve?}
+\]
+分别对应描述问题（descriptive）、解释问题（explanatory）、功能问题（functional）。
+
+### Def-Phil-Con-2: SRT Layer Mapping
+- 描述问题 \(Q_D\) 主要落在 \(L_1\)（质感、主观性、统一性、流动性）。
+- 解释问题 \(Q_E\) 主要落在 \(L_0\leftrightarrow L_1\) 映射机制（\(\hat G_\theta\)、约束、摩擦）。
+- 功能问题 \(Q_F\) 主要落在 \(L_1\to L_2\) 稳定化（灵活控制、社会协调、信息可达）。
+
+### Taxonomy Mapping: SEP 问题域 → SRT
+
+| SEP 分类 | SRT 映射 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| 描述问题（qualia/subjectivity/unity） | \(L_1\) 现象结构 | 中~高（任务依赖） | Open / Semi-open | payable |
+| 解释问题（gap/reduction） | \(L_0\to L_1\) 机制与边界 | 中高 | Open（高建模负担） | payable~borderline |
+| 功能问题（control/integration/freedom） | \(L_1\to L_2\) 稳态贡献 | 中~高 | Semi-open | payable |
+
+### [Lineage/Source]
+- SEP: *Consciousness* entry (first published 2004; substantive revision 2014).
+- 用途：定义分类与争议框架对齐，不作为新实证证据。
+
+## 【理论边界/防误用声明】
+1. 不采纳“分类框架 = 机制证明”的推论。
+2. 不采纳“解释鸿沟不可消除 = 科学终止”的推论。
+3. 本接口用于术语治理与理论导航，不替代实验判据。

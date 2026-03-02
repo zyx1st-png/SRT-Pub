@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:15 GMT+8
+- Source: https://plato.stanford.edu/entries/consciousness/
+- Topic: consciousness taxonomy (creature/state), explanatory gap, functional roles, theory landscape
+- Evidence-Level: tertiary scholarly encyclopedia (SEP)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Philosophy/SRT_Philosophy_Foundations.md`（意识问题分类接口）, `SRT/SRT_Glossary.md`（术语边界对齐候选）
+- Ingested: yes
+- Notes: 作为高质量理论综述可用于定义层清洗与争议地图统一；不替代一手实证。
+
 - Time: 2026-03-02 15:11 GMT+8
 - Source: https://oecs.mit.edu/pub/04xkf1kl/release/1
 - Topic: free will (compatibilism/incompatibilism), consciousness timing, Libet/Wegner debate
