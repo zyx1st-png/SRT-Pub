@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:59 GMT+8
+- Source: https://plato.stanford.edu/entries/qualia/
+- Topic: qualia taxonomy, representational vs non-representational views, explanatory gap, AI and qualia
+- Evidence-Level: tertiary scholarly encyclopedia (SEP, substantive revision 2025)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Philosophy/SRT_Philosophy_Foundations.md`（qualia 接口与边界）, `SRT/SRT_Glossary.md`（qualia术语治理候选）
+- Ingested: yes
+- Notes: 可用于精炼 SRT 对 qualia 的层级定义与误用边界，尤其是“广义qualia存在”与“强非物理qualia”区分。
+
 - Time: 2026-03-02 15:57 GMT+8
 - Source: https://plato.stanford.edu/entries/wittgenstein/
 - Topic: early/later Wittgenstein, meaning-as-use, language-games, rule-following, limits of sayability

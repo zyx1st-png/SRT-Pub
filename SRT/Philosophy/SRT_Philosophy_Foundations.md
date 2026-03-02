@@ -806,3 +806,39 @@ Q_F:\ \text{What function does experience serve?}
 1. 不采纳“语义全相对化（anything goes）”推论：SRT 要求规则路径可共享、可复用。  
 2. 不采纳“不可言说 = 不可研究”推论：可作为 L1 现象对象进入操作化流程。  
 3. 本接口用于语义治理与断言边界，不替代对象层机制证明。
+
+---
+
+## Qualia Interface（SEP 对齐，2026-03-02）
+
+### Def-Phil-Qualia-1: Broad-vs-Strong Distinction
+在 SRT 中区分两层 qualia 用法：
+1. **Broad qualia**：可内省到的主观现象特征（默认接受）。
+2. **Strong qualia**：内在、不可言说、不可错、强非物理实体（不默认接受）。
+
+形式化区分：
+\[
+\text{Qualia}_{broad}\neq \text{Qualia}_{strong}
+\]
+
+### Def-Phil-Qualia-2: Layer Placement
+- \(\text{Qualia}_{broad}\) 主体落在 \(L_1\)（体验结构）。
+- 对 \(\text{Qualia}_{strong}\) 的实体承诺若提出，需进入 \(L_2\) 的可检验边界声明与替代解释比较。
+
+### Taxonomy Mapping: qualia 立场 → SRT
+
+| 外部分类 | SRT 对应 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| Broad phenomenal qualia | \(L_1\) 现象报告层 | 中~高（任务依赖） | Open / Semi-open | payable |
+| Intrinsic non-representational qualia | \(L_1\) 内在结构假说 | 中高 | Semi-open | payable~borderline |
+| Strong ineffable/non-physical qualia | 高承诺本体假说 | 高（治理要求） | Closed(断言层) | 高验证负载 |
+| Illusionism | 将 qualia 压缩为认知模型产物 | 低~中 | Closed 倾向 | 低负载 |
+
+### [Lineage/Source]
+- SEP: *Qualia* entry (first 1997; substantive revision 2025).
+- 用途：术语分层与争议边界治理。
+
+## 【理论边界/防误用声明】
+1. 不采纳“承认 broad qualia = 承认强非物理实体”的跳跃推论。
+2. 不采纳“否认 strong qualia = 否认全部体验现实性”的反向推论。
+3. 本接口用于层级澄清，不替代具体神经/行为实验判据。
