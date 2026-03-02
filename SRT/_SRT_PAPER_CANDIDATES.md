@@ -38,3 +38,10 @@ dependency: [_SRT_PAPER_PIPELINE]
   - Falsifiability Strength: medium
   - Journal Fit: complex systems / philosophy of physics
   - Status: candidate
+
+- Title: From Partial Closure to Stable Closure: Minimal Embodiment Threshold in SRT
+  - Core Claim: 生命起源关键跃迁可表述为“部分闭包 \(\mathcal{C}_{partial}\) → 稳定闭包”的阈值跨越，核心条件为 \(I(\theta)\ge N_{crit}(env,\Psi_f)\)。
+  - Evidence Level: mixed (new formal clauses + secondary report, pending primary paper linkage)
+  - Falsifiability Strength: high
+  - Journal Fit: origins of life / theoretical biology / complex systems
+  - Status: internal-review-passed-with-conditions
