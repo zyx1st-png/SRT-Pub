@@ -236,6 +236,37 @@ I(L_1; x) < I(L_1; \theta, \kappa_{PE}) \quad \text{under fixed } x
 - 不采纳“白质结构指标可单独决定意识层/价值层结论”的推论。
 - 本条款适用边界：认知灵活性子过程建模，不外推至全部认知维度。
 
+### Ax-EXP-18: Conscious Integration Gate Axiom
+意识在自由行动中的关键角色优先体现在“多源信息整合门”，而非“最初运动噪声起点”：
+\[
+\text{Free-Action Capacity} \propto \mathcal{I}_{global}(reasons,values,context) - \mathcal{C}_{coercion}
+\]
+其中 \(\mathcal{I}_{global}\) 为全局整合能力（可参考 GNW/Global workspace 框架），\(\mathcal{C}_{coercion}\) 为外在/内在强制约束强度。
+
+### T-EXP-6: Lag-Compatible Agency Theorem
+若满足：
+\[
+t_{RP}<t_W<t_M
+\]
+且在 \([t_W,t_M]\) 窗口内存在显著理由整合与行为可调节性，则“意识滞后”与“能动性存在”可兼容：
+\[
+\text{Lag} \not\Rightarrow \neg \text{Agency}
+\]
+* **Implication（中文）**：RP 先行仅说明预备过程先行，不足以推出“自由意志幻觉”；关键在于后续整合门是否可改变行动走向。
+
+### Source Note (OECS Free Will, 2024)
+- Levy N. (2024). *Free Will*. Open Encyclopedia of Cognitive Science. DOI: `10.21428/e2759450.dd89f27c`.
+- 核心锚点：
+  1) 兼容论强调 reasons-responsive / reasons-reactive 机制；
+  2) Libet/Wegner 结果不必然推出意识无因果角色；
+  3) 意识可主要承担全局整合而非瞬时发起。
+- 审核结论：**A-（信号入库）**；理由：概念桥接价值高，适合用于理论澄清与实验设计，不等同于单一原始实验数据。
+
+## 【理论边界/防误用声明】
+- 不采纳“RP 提前出现 = 自由意志不存在”的直接推论。
+- 不采纳“主观意向感 = 全部因果控制”的反向夸大推论。
+- 本条款仅界定‘能动性与时滞可兼容’条件，不替代具体任务范式验证。
+
 <br>
 
 ---

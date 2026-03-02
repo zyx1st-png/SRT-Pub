@@ -663,3 +663,38 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 2. **SRT 不采纳**“任何巧合都具有本体论必然意义”的推论。  
    - 原因：需区分统计偶然、叙事放大与稳定结构耦合，避免 L2 过拟合。  
 3. 适用边界：本条款用于哲学解释与建模假设生成，不可直接作为实证因果结论。
+
+---
+
+## Free-Will Compatibility Interface（2026-03-02）
+
+### Def-Phil-FW-1: Reasons-Responsive Freedom (SRT 映射)
+将自由意志的最低充分条件映射为：
+\[
+\mathfrak{F}_{free}=\mathbf{1}[\mathcal{R}_{resp}\ge\tau_r]\cdot\mathbf{1}[\mathcal{R}_{react}\ge\tau_a]\cdot\mathbf{1}[\mathcal{C}_{coercion}<\tau_c]
+\]
+其中 \(\mathcal{R}_{resp}\) 为理由识别能力，\(\mathcal{R}_{react}\) 为理由驱动更新能力。
+
+### Def-Phil-FW-2: Determinism-Compatibility Clause
+在 SRT 中，“是否决定论”为背景本体问题；“是否自由”由算子在给定约束下的理由响应与可更新性决定：
+\[
+\text{Determinism status} \perp \text{Operational freedom score}
+\]
+（“\(\perp\)”表示在定义层面的正交，不表示统计独立）。
+
+### Taxonomy Mapping: 自由意志立场 → SRT
+
+| 外部分类 | SRT 对应 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| 兼容论（reasons-responsive） | 理由门控可运行的 \(\hat G_\theta\) | 中~高 | Open / Semi-open | payable |
+| 非兼容论（强调替代可能） | 对 \(L_0\) 分支可达性要求更强 | 中高 | Open（高探索） | payable~borderline |
+| 强取消主义（意志幻觉） | 将 \(L_1\) 能动归属压缩为后验叙事 | 低~中（定义上） | Closed 倾向 | 易出现解释失衡 |
+
+### [Lineage/Source]
+- 术语来源：Levy, N. (2024), *Free Will*, OECS (DOI: 10.21428/e2759450.dd89f27c)。
+- 接口语义：与 SRT 既有能动性滞后定理（Libet 窗口）和 \(\hat G_\theta\) 门控框架对齐。
+
+## 【理论边界/防误用声明】
+1. **SRT 不采纳**“决定论真/假可单独裁定责任归属”的简单化推论。  
+2. **SRT 不采纳**“意识仅是幻觉因此规范评价无效”的全盘取消主义推论。  
+3. 适用边界：本接口用于解释与建模，不直接替代法律伦理裁判标准。

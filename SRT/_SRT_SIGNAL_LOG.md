@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:11 GMT+8
+- Source: https://oecs.mit.edu/pub/04xkf1kl/release/1
+- Topic: free will (compatibilism/incompatibilism), consciousness timing, Libet/Wegner debate
+- Evidence-Level: tertiary/secondary synthesis (encyclopedic scholarly overview with references)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Neuroscience/SRT_Neuro_Experiments.md`（意识整合门条款补强）, `SRT/Philosophy/SRT_Philosophy_Foundations.md`（自由意志兼容接口与边界）
+- Ingested: yes
+- Notes: 与 SRT 的能动性滞后定理及阈值选择模型高度对齐；可用于“意识角色从启动转向整合”之理论澄清。
+
 - Time: 2026-03-02 15:04 GMT+8
 - Source: https://www.themarginalian.org/2017/03/09/atom-and-archetype-pauli-jung/
 - Topic: Jung–Pauli correspondence / synchronicity / mind–matter bridge narrative
