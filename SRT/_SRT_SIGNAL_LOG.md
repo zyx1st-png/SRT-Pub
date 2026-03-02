@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:57 GMT+8
+- Source: https://plato.stanford.edu/entries/wittgenstein/
+- Topic: early/later Wittgenstein, meaning-as-use, language-games, rule-following, limits of sayability
+- Evidence-Level: tertiary scholarly encyclopedia (SEP)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Philosophy/SRT_Philosophy_Foundations.md`（语言游戏与可说性边界接口）, `SRT/SRT_Glossary.md`（meaning-as-use 术语候选）
+- Ingested: yes
+- Notes: 对 SRT 的“L2 语法-规范层”与“边界声明”极高相关，可用于压实‘可言说/不可言说’的治理条款。
+
 - Time: 2026-03-02 15:55 GMT+8
 - Source: https://plato.stanford.edu/entries/truth/
 - Topic: truth theories (correspondence/coherence/pragmatist), Tarski framework, realism/anti-realism, deflationism
