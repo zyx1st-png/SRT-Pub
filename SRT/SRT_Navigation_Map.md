@@ -26,3 +26,6 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 - `SRT_EXP_PRIORITY_MATRIX.md`
 - `SRT_EXP_TEMPLATE.md`
 - `SRT_EXP_MEASURE_MAP.md`
+
+## Topic Indexes
+- `SRT_TOPIC_FREE_WILL_INDEX.md`
