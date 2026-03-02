@@ -16,6 +16,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - **概念完整定义** → 请参考 [SRT_Glossary.md](SRT_Glossary.md)
 - **阅读路径规划** → 请参考 [SRT_Navigation_Map.md](SRT_Navigation_Map.md)
 - **专题入口（自由意志）** → [SRT_TOPIC_FREE_WILL_INDEX.md](SRT_TOPIC_FREE_WILL_INDEX.md)
+- **专题入口（意识×能动性）** → [SRT_TOPIC_CONSCIOUSNESS_AGENCY_INDEX.md](SRT_TOPIC_CONSCIOUSNESS_AGENCY_INDEX.md)
 - **机器可读清单** → 请参考 [_SRT_MANIFEST.yaml](_SRT_MANIFEST.yaml)
 - **文档工程规范** → 请参考 [_SRT_DOC_ENGINEERING_GUIDE.md](_SRT_DOC_ENGINEERING_GUIDE.md)
 

@@ -1,0 +1,34 @@
+---
+id: SRT-TOPIC-CONSCIOUSNESS-AGENCY
+type: framework
+tags: [Topic, Consciousness, Agency, FreeWill]
+status: draft_v1
+dependency: [Philosophy/SRT_Philosophy_Foundations, Neuroscience/SRT_Neuro_Experiments, SRT_TOPIC_FREE_WILL_INDEX]
+---
+
+# SRT 联合专题索引：意识 × 能动性
+
+## 1) 联合命题
+在 SRT 中，意识与能动性不是同一对象：
+- 意识偏向“表征与整合架构”（L1 现象结构 + L1→L2 稳定化）
+- 能动性偏向“阈值门控与可更新控制”（\(\hat G_\theta\) 的理由响应能力）
+
+## 2) 关键入口
+- 意识分类：`Philosophy/SRT_Philosophy_Foundations.md`（Consciousness Taxonomy Interface）
+- 能动性实验：`Neuroscience/SRT_Neuro_Experiments.md`（T-Agency-Attribution / Ax-EXP-18 / T-EXP-6）
+- 自由意志导航：`SRT_TOPIC_FREE_WILL_INDEX.md`
+
+## 3) 争议地图（最常见误读）
+1. “意识滞后 = 无自由意志” → 错；需看整合门是否可改变行为轨迹。  
+2. “有主观感就有因果控制” → 错；主观归属不等于全控制。  
+3. “解释鸿沟存在 = 科学失败” → 错；可能是层级映射约束。
+
+## 4) 最短答辩链路
+- 第一步：先承认 RP/W 时滞事实（神经层）
+- 第二步：定义能动性标准为 reasons-responsive / reactive（操作层）
+- 第三步：回到 SRT 三层映射（描述/解释/功能分层）
+
+## 【理论边界/防误用声明】
+- 本索引为导航文档，不产生新的一级证据。
+- 不将意识现象学条款直接替代行为责任判定。
+- 不将单一实验范式外推为全域自由意志结论。

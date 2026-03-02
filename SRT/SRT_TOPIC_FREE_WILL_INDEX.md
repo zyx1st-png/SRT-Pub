@@ -47,6 +47,11 @@ dependency: [Core/SRT_Core_14_Dynamics_Scaling, Neuroscience/SRT_Neuro_Experimen
 3. `Core/SRT_Core_14_Dynamics_Scaling.md`（最后回到统一动力学）
 4. `SRT_EXP_MEASURE_MAP.md`（落到测量与实验设计）
 
+## 7) 联合导航（意识 × 能动性）
+- 总入口：`SRT_TOPIC_CONSCIOUSNESS_AGENCY_INDEX.md`
+- 意识分类接口：`Philosophy/SRT_Philosophy_Foundations.md`（Consciousness Taxonomy Interface）
+- 能动性时滞接口：`Neuroscience/SRT_Neuro_Experiments.md`（T-Agency-Attribution, T-EXP-6）
+
 ## 【理论边界/防误用声明】
 - 不采纳“自由意志=绝对无因起点”的定义。
 - 不采纳“神经时滞证据=能动性幻觉”的直接推论。
