@@ -844,3 +844,33 @@ a_M \mapsto a_{M}^{(SRT)}(L_0;N_T,b,M),
 2. **SRT 不采纳**“AT 指标可直接等价心理变量”的强等价推论。  
    - 原因：从化学/物理对象到认知对象需增加中间映射公设，属于跨尺度近似而非同一性。  
 3. 适用边界：本节仅提供结构同构接口，不替代特定实验域的测量定义。
+
+---
+
+## XIII. Quantum Collapse Interface (SEP-aligned, 2026-03-02)
+
+### Def-QC-1: Measurement-Problem Bridge
+在 SRT 语境中，量子测量问题可重述为：
+\[
+\text{Linear evolution in }L_0\ \text{vs.}\ \text{definite outcome in }L_1
+\]
+SRT 接口主张不以“观察者神秘性”求解，而以“门控动力学 + 可检验参数”组织问题。
+
+### Def-QC-2: Dynamical Reduction Compatibility
+将 GRW/CSL 一类塌缩模型视为“统一动力学下的随机-非线性修正候选”：
+\[
+\mathcal{U}_{std} \to \mathcal{U}_{std} + \mathcal{N}_{stoch} + \mathcal{N}_{nonlin}
+\]
+其在 SRT 中对应 \(\hat G_\theta\) 的物理实现候选族之一，而非唯一实现。
+
+### T-QC-1: Testability Priority Clause
+若某塌缩接口可导出参数区间并给出可区分实验（opto-mechanics/cold atoms/nuclear bounds），则其在 SRT 证据优先级中高于纯解释型接口。
+
+### [Lineage/Source]
+- SEP: *Collapse Theories* (first 2002; substantive revision 2025).
+- 关键术语：GRW, CSL, measurement problem, primitive ontology, testable bounds.
+
+## 【理论边界/防误用声明】
+1. 不采纳“塌缩模型已被最终证实”的推论（当前仍属竞争框架）。
+2. 不采纳“任何非线性修正都自动等价 SRT 选择算子”的推论。
+3. 本节为物理接口层，不直接推出认知层意识结论。

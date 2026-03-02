@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 15:20 GMT+8
+- Source: https://plato.stanford.edu/entries/qm-collapse/
+- Topic: quantum measurement problem; GRW/CSL dynamical reduction; primitive ontology and testability
+- Evidence-Level: tertiary scholarly encyclopedia (SEP, substantive revision 2025)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Physics/SRT_Phys_09_Formalism_Ext.md`（塌缩理论接口与边界）, `SRT/Physics/SRT_Quant_01_Selection.md`（可检验性注记候选）
+- Ingested: yes
+- Notes: 对 SRT 的选择/塌缩叙事具有高对齐价值，尤其是“统一动力学 + 参数可检验”范式；不替代一手实验论文。
+
 - Time: 2026-03-02 15:15 GMT+8
 - Source: https://plato.stanford.edu/entries/consciousness/
 - Topic: consciousness taxonomy (creature/state), explanatory gap, functional roles, theory landscape
