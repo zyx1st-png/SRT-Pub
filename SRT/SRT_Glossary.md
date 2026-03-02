@@ -69,6 +69,26 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：`L0/L1/L2` 无下标写法、逻辑层级编号、网络层号。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md`；`Core/SRT_Core_12a_Ontology_L0L1.md`；`Core/SRT_Core_12b_Ontology_L2.md`。
 
+### 同步性（Synchronicity, Jung–Pauli）
+- **Canonical Scope**：仅用于“内在事件与外在事件的高意义耦合共现，但显式因果链在当前分辨率下未闭合”的现象学标签。
+- **Confusable With**：超自然因果、任意巧合神秘化、统计显著性本身。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md`（Synchronicity Interface, 2026-03-02）；术语谱系来自 Jung/Pauli 讨论传统。
+
+### Meaning-Coupled Coincidence（意义耦合共现）
+- **Canonical Scope**：SRT 对 synchronicity 的操作化写法：`e_in` 与 `e_out` 的意义耦合强度 \(\mathcal{M}\) 超阈值。
+- **Confusable With**：因果证据、预测准确率提升、纯叙事共鸣。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` Def-Phil-Sync-1（2026-03-02）。
+
+### WDI（White-matter Differentiation Index）
+- **Canonical Scope**：认知灵活性相关白质通路在年龄分层下的结构分化代理指标。
+- **Confusable With**：单一 tract 的绝对信号强度、疾病诊断标签。
+- **Lineage/Source**：`Neuroscience/SRT_Neuro_Experiments.md` Ax-EXP-17；`SRT_EXP_MEASURE_MAP.md` §7（eNeuro 2026 映射）。
+
+### WHD（WM Homogeneity Decline）
+- **Canonical Scope**：关键白质通路内同质性随年龄下降的群体层代理。
+- **Confusable With**：个体不可逆衰退结论、全脑统一退化假设。
+- **Lineage/Source**：`Neuroscience/SRT_Neuro_Experiments.md` Ax-EXP-17；`SRT_EXP_MEASURE_MAP.md` §7。
+
 ---
 
 ## 1. 核心符号与算子
