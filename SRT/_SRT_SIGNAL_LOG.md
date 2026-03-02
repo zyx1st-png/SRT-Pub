@@ -19,6 +19,15 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Notes:
 
 ## Records
+- Time: 2026-03-02 10:07 GMT+8
+- Source: 用户提供外部材料《The Physics of Causation》+ SRTclaw 结构化摘要（附 PDF）
+- Topic: Assembly Theory（组装指数 a_i / 拷贝数 n_i / 组装度 A）与 SRT 的选择阈值映射
+- Evidence-Level: secondary synthesis（待对 PDF 原文逐段核验）
+- Review Result (A/B/C): B
+- Target Docs: `SRT/Physics/SRT_Phys_09_Formalism_Ext.md`（新增 AT 映射节候选）, `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`（跨尺度阈值接口候选）, `SRT/SRT_EXP_MEASURE_MAP.md`（指标桥接候选）
+- Ingested: no (pending source verification)
+- Notes: 高相关且有潜在强增量，但当前为二级解读输入；需先完成“定义对齐+边界声明+符号冲突检查”后再入正文。
+
 - Time: 2026-02-28 23:02 GMT+8
 - Source: https://www.essentiafoundation.org/reality-is-a-controlled-hallucination/seeing/
 - Topic: Controlled hallucination / active inference / shared-stimulus perceptual divergence
