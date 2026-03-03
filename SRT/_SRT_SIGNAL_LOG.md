@@ -288,3 +288,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: n/a
 - Ingested: no
 - Notes: `web_search` 返回 missing_brave_api_key；待配置 `openclaw configure --section web` 后恢复每日信号采集。
+
+- Time: 2026-03-03 12:06 GMT+8
+- Source: https://gizmodo.com/from-quantum-spam-to-quantum-minds-why-the-best-revolution-in-physics-is-only-getting-started-2000727266
+- Topic: Quantum 2.0 叙事（量子技术范式转换）、量子生物学与“量子AI意识”推测
+- Evidence-Level: secondary (media interview, non-peer-reviewed)
+- Review Result (A/B/C): B
+- Target Docs: `SRT/Physics/SRT_Phys_09_Formalism_Ext.md`（术语边界注记候选）, `SRT/AI/SRT_AI_01_Ontology.md`（“能力表现≠意识归因”边界强化）
+- Ingested: no
+- Notes: 可用作外部传播语料与议题雷达；但包含强形而上断言（如“观察创造现实”“量子AI将同时看见所有可能现实”），证据链不足，不宜作为机制层依据。
