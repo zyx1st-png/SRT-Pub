@@ -306,3 +306,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT/Physics/_SRT_Phys_Bridge.md`（维度规约协议候选）, `SRT/Core_Law/SRT_Reference_Scaling.md`（宇宙尺度摩擦代偿推论）, `SRT/Core_Law/SRT_Reference_Ontology.md`（反朴素高维实在论边界）
 - Ingested: no (signal logged; pending formalization)
 - Notes: 文章本体证据层级有限，但你给出的映射抓住了“观测域与潜在自由度错配”这一关键张力；后续需避免把“暗能量=\Psi_f”直接同一化，应先建可检验 proxy 与失效域。
+
+- Time: 2026-03-03 14:00 GMT+8
+- Source: user-provided SRT synthesis (illness mechanism: Ψ_f → ROS → filtering degradation)
+- Topic: disease as ontological-friction overload with oxidative-stress proxy and closure-break dynamics
+- Evidence-Level: theory synthesis (mechanistic hypothesis; no direct dataset attached)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/SRT_EXP_MEASURE_MAP.md`（新增 ROS 一级 proxy 候选）, `SRT/Core_Law/SRT_Reference_Dynamics.md`（疾病=约束闭包破裂定义候选）, `SRT/Neuroscience/SRT_Neural_Mechanisms.md`（过滤分辨率退化回路）
+- Ingested: no (pending formal equation + falsification design)
+- Notes: 结构完整、可证伪性强；关键治理点是避免“ROS=第一因”的还原论滑坡，需明确为“选择摩擦历史痕迹 + 反向耦合因子”。
