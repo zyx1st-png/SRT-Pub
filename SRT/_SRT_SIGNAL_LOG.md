@@ -279,3 +279,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT_openclaw/MEASURE_MAP.md`, `SRT_openclaw/Core/_SRT_Core_Bridge.md`
 - Ingested: yes
 - Notes: 新增“相位锁相+振幅协变”双通道神经代理，并补充线性投影与微观非线性并存的尺度边界说明。
+
+- Time: 2026-03-03 08:16 GMT+8
+- Source: Scholar/Reddit/Twitter(X) heartbeat auto-collection
+- Topic: 自动采集失败（缺少 Brave API Key）
+- Evidence-Level: none (tooling unavailable)
+- Review Result (A/B/C): C
+- Target Docs: n/a
+- Ingested: no
+- Notes: `web_search` 返回 missing_brave_api_key；待配置 `openclaw configure --section web` 后恢复每日信号采集。

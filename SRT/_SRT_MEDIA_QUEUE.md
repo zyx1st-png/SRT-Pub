@@ -100,3 +100,35 @@ dependency: [_SRT_MEDIA_PIPELINE]
 - Publish Window: next 7 days
 - Generated At: 2026-03-01 00:19 (Asia/Shanghai)
 
+
+## [2026-03-03] 选题 #1 — 大众路线
+
+**候选标题**：为什么你总在“知道该做什么”却做不到？SRT 用“本体论摩擦”解释拖延
+**切入角度**：从日常拖延与习惯断裂切入，把“意志薄弱”重写为可支付性问题（\(\Psi_f\)）
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：行为效率/执行力话题持续高热
+- 争议点：大众常把问题归因于性格，缺机制解释
+- SRT视角：把“知道-做到鸿沟”落到结构成本与阈值跃迁
+**关联内容**：
+  - 文件：`SRT/Core/SRT_Core_14_Dynamics_Scaling.md#本体论摩擦`；`SRT/Neuroscience/SRT_Neural_Mechanisms.md`
+  - 方程：Eq-Ψf-01（摩擦成本项）
+  - 实验钩（若有）：H-NEURO-EXEC-01（任务切换成本 + 变点检测）
+**推荐平台**：知乎 / 微信公众号 / 头条
+**风险提示**：避免“把心理健康问题简单等同拖延”的误读，需附非临床声明。
+
+---
+
+## [2026-03-03] 选题 #2 — 精英路线
+
+**候选标题**：From Predictive Coding to SRT: When Does Selection Become Agency?
+**切入角度**：与 FEP / predictive coding 对照，提出 SRT 在 L₀/L₁/L₂ 与 d-value 门槛上的可证伪增量
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：意识与能动性边界在 AI/神经科学中持续升温
+- 争议点：主流框架解释预测误差强，但对“能动性阈值”定义不足
+- SRT视角：引入 \(d\) 与 \(\Psi_f\) 的联合判据，给出可检验区分
+**关联内容**：
+  - 文件：`SRT/Core/SRT_Core_01_Axioms.md#L0-L1-L2`；`SRT/AI/SRT_AI_01_Ontology.md`
+  - 方程：Eq-D-Threshold-01；Eq-Closure-02
+  - 实验钩（若有）：H-AGENCY-BOUNDARY-01（具身耦合 vs 纯输出一致性）
+**推荐平台**：Twitter/X / Substack / Medium
+**风险提示**：必须区分“能力表现”与“本体归因”，避免把工程指标误写成意识证据。
