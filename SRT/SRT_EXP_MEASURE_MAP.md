@@ -143,3 +143,41 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 ## 【理论边界/防误用声明】
 - 不采纳“年龄增长=必然认知衰退”推论：该研究是群体层统计，不可直接外推个体命运。  
 - 不采纳“白质指标可单独定义 d 或 \(\Psi_f\)”推论：仅作为神经层代理，需与行为与任务数据联合建模。
+
+---
+
+## 8) 疾病机制桥接：ROS 作为 \(\Psi_f\) 一级生化 Proxy（新增）
+
+### 8.1 动力学候选方程
+
+\[
+\frac{d(ROS)}{dt} = \alpha\,\Psi_f(\hat{G}_\theta) - \beta\,\mathrm{Clearance}(\theta_{body})
+\]
+
+其中：
+- \(\alpha\)：摩擦到氧化负荷的耦合系数；
+- \(\beta\)：抗氧化清除效率系数；
+- \(\theta_{body}\)：具身参数（免疫/代谢/内感受）对子系统清除能力的统摄项。
+
+### 8.2 可观测 proxy 组合
+- 分子层：GSH/GSSG 比值、MDA、8-OHdG、SOD/GPx 活性；
+- 系统层：炎症因子面板（如 IL-6、TNF-\(\alpha\)）与 HRV 恢复常数联合；
+- 任务层：高负荷选择任务（冲突决策/多目标切换）前后 ROS 变化斜率。
+
+### 8.3 分类映射表（疾病负荷阶段 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 稳态补偿期（Compensated） | 中~中高 | Open / Semi-open | payable |
+| 亚临界失衡期（Pre-break） | 中高波动 | Semi-open（维护成本上升） | borderline |
+| 失代偿期（Decompensated） | 中高回落风险 | Closed 倾向（局部锁死） | overloaded / unsustainable |
+
+### 8.4 最小证伪条件（Falsification）
+1. 在低 \(\Psi_f\) 任务中，若 ROS 仍系统性持续抬升且与清除率无关，则该映射失效；
+2. 若提高清除能力（\(\beta\uparrow\)）后，过滤性能（\(\rho_s,\rho_t\) proxy）无改善，则“ROS 反向耦合”不足；
+3. 若高 \(\Psi_f\) 负荷不伴随任何 ROS/氧化压力变化，则需回退到替代机制（非氧化主导）。
+
+## 【理论边界/防误用声明】
+- 不采纳“ROS 是选择失败第一因”的还原论：ROS 在 SRT 中是**摩擦历史痕迹 + 反向耦合变量**，不是本体起点。  
+- 不采纳“单一生化指标即可定义疾病”的推论：必须联合行为、神经、生理三层 proxy。  
+- 本节为桥接假设，不构成临床诊断或治疗建议。

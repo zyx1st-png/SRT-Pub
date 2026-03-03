@@ -447,3 +447,42 @@ $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ · ∇C_{L_2}[σ]$$
 **边界条件**：
 - 若脱离环境补偿后轨迹立即失稳，则仍归于 \(\mathcal{C}_{partial}\)。
 - 仅当系统在无外部拼接干预下保持多轮自维持复制，方可升级为稳定闭包态。
+
+## §10.3 疾病作为约束闭包破裂（Pathological Closure Break）
+
+**定义 D-Ill-1（疾病）**：当系统的结构修复能力长期低于摩擦磨损负荷时，\(\hat{G}_\theta\) 的约束闭包失稳，表现为病理状态。
+\[
+\text{Disease} \iff \overline{R_{repair}(\theta)} < \overline{D_{wear}(\Psi_f,ROS)}
+\]
+
+其中上划线表示在窗口 \(\Delta T\) 上的时间平均。
+
+### §10.3.1 闭环动力学（非单向因果）
+
+\[
+\Psi_f\uparrow \;\Rightarrow\; ROS\uparrow \;\Rightarrow\; \theta_{body}\downarrow \;\Rightarrow\; (\rho_s,\rho_t)\downarrow \;\Rightarrow\; \hat{G}_\theta\text{过滤退化} \;\Rightarrow\; \Psi_f\uparrow
+\]
+
+该链路刻画“恶性反馈环（vicious cycle）”：过滤退化会增加未折叠扰动暴露，反过来抬升下一轮 \(\Psi_f\)。
+
+### §10.3.2 最小动力学写法（候选）
+
+\[
+\frac{d\theta_{body}}{dt} = -\eta_1\,ROS + \eta_2\,Repair(\theta_{body},L_2)
+\]
+\[
+\frac{d\rho_{eff}}{dt} = -\kappa_1\,\Psi_f - \kappa_2\,ROS + \kappa_3\,Recovery
+\]
+
+其中 \(\rho_{eff}\) 代表过滤分辨率的有效联合指标（可由任务精度/反应时稳定性/神经复杂度 proxy 估计）。
+
+### §10.3.3 与 Core 公理的一致性约束
+
+- 疾病不是“物质对选择的替代主宰”，而是选择历史在 \(L_2\) 的磨损记录导致当前参数退化；
+- 因果拓扑保持为：选择负荷（\(\Psi_f\)）优先 → 物质痕迹（ROS）累积 → 参数重塑（\(\theta\)）→ 当前过滤能力变化；
+- 临床或工程推断必须经操作化验证，不得由本节公式直接外推为干预结论。
+
+## 【理论边界/防误用声明】
+- 不采纳“所有疾病都由 ROS 主导”的单机制宣称：本节仅给出可检验候选路径之一。  
+- 不采纳“高 \(\Psi_f\) 必然致病”的绝对推断：是否跨阈值取决于修复能力、时间尺度与环境约束。  
+- 本节为理论组织与实验设计接口，不替代医学诊断、治疗和伦理审查流程。
