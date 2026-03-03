@@ -297,3 +297,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT/Physics/SRT_Phys_09_Formalism_Ext.md`（术语边界注记候选）, `SRT/AI/SRT_AI_01_Ontology.md`（“能力表现≠意识归因”边界强化）
 - Ingested: no
 - Notes: 可用作外部传播语料与议题雷达；但包含强形而上断言（如“观察创造现实”“量子AI将同时看见所有可能现实”），证据链不足，不宜作为机制层依据。
+
+- Time: 2026-03-03 13:58 GMT+8
+- Source: https://www.newscientist.com/article/2515631-a-crisis-in-cosmology-may-mean-hidden-dimensions-really-exist/ + user-provided SRT synthesis
+- Topic: Hubble tension / hidden dimensions hypothesis / SRT mapping to L0-L1 projection and ontological friction
+- Evidence-Level: mixed (secondary journalism + theory synthesis)
+- Review Result (A/B/C): A-
+- Target Docs: `SRT/Physics/_SRT_Phys_Bridge.md`（维度规约协议候选）, `SRT/Core_Law/SRT_Reference_Scaling.md`（宇宙尺度摩擦代偿推论）, `SRT/Core_Law/SRT_Reference_Ontology.md`（反朴素高维实在论边界）
+- Ingested: no (signal logged; pending formalization)
+- Notes: 文章本体证据层级有限，但你给出的映射抓住了“观测域与潜在自由度错配”这一关键张力；后续需避免把“暗能量=\Psi_f”直接同一化，应先建可检验 proxy 与失效域。
