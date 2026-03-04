@@ -69,6 +69,36 @@ $$π_λ ∘ \hat{G}_θ ≈ \hat{G}_{θ,λ} ∘ π_λ$$
 | 神经 | $k_B T$ | 除法归一化 | 突触噪声 |
 | 社会 | 文化 $T$ | 集体选择 | 模因传播 |
 
+### §2.4 层级正交与统一声明（新增）
+
+**声明 S-Scale-U1（Orthogonal Pluralism over One \(L_0\)）**：
+
+a) 多尺度正交：
+\[
+X_{\lambda_1}=\hat G_{\theta,\lambda_1}[L_0],\quad X_{\lambda_2}=\hat G_{\theta,\lambda_2}[L_0],\quad \lambda_1\neq\lambda_2
+\]
+\[
+X_{\lambda_1}\perp_{scale}X_{\lambda_2}
+\]
+
+b) 统一约束：
+\[
+\pi_{\lambda_2\leftarrow\lambda_1}(X_{\lambda_1})\approx X_{\lambda_2}\quad \text{with}\quad \Delta_{info}(\pi_\lambda)\le \epsilon_{task}
+\]
+层级冲突可由粗粒化信息损失解释，不导出“多宇宙式割裂本体”。
+
+### 分类映射表（Real Patterns/Scale Relativity → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 微观真实模式（高分辨） | 低~中 | Open（高采样） | payable / borderline |
+| 宏观真实模式（任务压缩） | 中~高 | Semi-open | payable |
+| 层级隔离误读（语义断裂） | 低~中 | Closed 倾向 | 被误估/遮蔽 |
+
+## 【理论边界/防误用声明】
+- 不采纳“层级相对=层级互不连通”的推论：SRT 要求 \(\pi_\lambda\) 可达映射与预算约束。
+- 不采纳“压缩有效=任意命名都真实”的推论：必须满足 \(\Psi_f^{maint}\) 可支付与跨时稳定。
+
 ---
 
 ## §3 尺度耦合动力学 (Scale Coupling Dynamics)

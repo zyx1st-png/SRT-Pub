@@ -209,6 +209,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：常识即绝对真理、常识全盘无效、语词任意主义。
 - **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.10；`Core_Law/SRT_Reference_Ontology.md` O17（2026-03-04 新增）。
 
+### Real Pattern Compressibility Criterion（真实模式可压缩性判据）
+- **Canonical Scope**：用条件复杂度 \(K(X\mid\theta,\rho)\) 与 \(\Psi_f^{maint}\) 联合判断对象在给定尺度上的可操作实在性。
+- **Confusable With**：纯统计压缩率、单次拟合优度、任意命名即存在。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O18 / O-T10（2026-03-04 新增）。
+
+### Transition Kernel Protocol（转移核协议, \(\Pi_{kernel}\)）
+- **Canonical Scope**：跨尺度因果动作集的底层可实现约束；高阶闭包必须在该协议内运行。
+- **Confusable With**：单一物理方程、静态守恒清单、社会规范本身。
+- **Lineage/Source**：`Physics/_SRT_Phys_Bridge.md` Def-Phys-3（2026-03-04 新增）。
+
+### Boundary Priority of Physics（物理边界优先）
+- **Canonical Scope**：将“物理优先性”重述为极限分辨率 \((\rho\to\infty,d\to0)\) 下的边界约束优先，而非本体论独占优先。
+- **Confusable With**：物理还原主义绝对化、否定宏观因果、反跨学科立场。
+- **Lineage/Source**：`Physics/_SRT_Phys_Bridge.md` Def-Phys-3 / T-Phys-5（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

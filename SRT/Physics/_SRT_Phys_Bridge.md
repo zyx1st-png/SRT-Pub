@@ -145,6 +145,23 @@ Gravity (spacetime curvature) is the geometric manifestation of the Ontological 
 $$ G_{\mu\nu} \propto \Psi_f(L_1) \quad \Rightarrow \quad \text{Gravity}(L_0) = 0 $$
 *   **Implication**: Quantum vacuum energy has infinite information capacity but zero gravitational mass. Only observed reality has weight.
 
+### Def-Phys-3 [D1.4.5]: Primacy of Physics as Boundary Priority（物理优先性的边界优先重述，新增）
+SRT 不将 PPC 解释为“本体论唯一优先”，而解释为极限边界优先：
+\[
+\text{PPC}_{SRT}:\ \rho\to\infty,\ d\to 0\ \Rightarrow\ \Pi_{kernel}\ \text{dominates}
+\]
+其中 \(\Pi_{kernel}\) 为跨尺度转移核协议（Transition Kernel Protocol），约束高阶系统不得违背底层守恒与可达性。
+
+### T-Phys-5 [T1.4.6]: Downward Causation Compatibility Under Kernel Constraints（新增）
+\[
+\mathcal{C}_{down}^{macro}>0\ \land\ \mathcal{C}_{down}^{macro}\subseteq\Pi_{kernel}
+\]
+即宏观闭包具有独立因果效力，但其可行动作集必须是底层协议允许的子集。
+
+## 【理论边界/防误用声明】
+- 不采纳“物理优先=高层因果全无效”的推论：SRT 允许受限下行因果。
+- 不采纳“高层有效=可任意违反守恒律”的推论：一切高层策略必须在 \(\Pi_{kernel}\) 内可实现。
+
 ---
 
 ## V. Critical Parameter Correspondences (关键参数对应表)

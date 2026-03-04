@@ -428,6 +428,23 @@ c) 双重存在标准（语言层 vs 动力学层）：
 \text{Exist}_{L_1}^{anchor}\ \text{is constrained by}\ \Psi_f
 \]
 
+### 定义 O18：Real Pattern Compressibility Criterion（真实模式可压缩性判据，新增）
+对给定尺度参数 \((\theta,\rho)\) 与对象候选 \(X\)，定义条件复杂度代理：
+\[
+K_\theta(X)\equiv K(X\mid\theta,\rho)
+\]
+定义模式现实度：
+\[
+\mathcal{R}_{pat}(X\mid\theta,\rho)=\frac{1}{1+K_\theta(X)}\cdot \mathbb{I}[\Psi_f^{maint}(X,\theta)<\infty]
+\]
+若 \(\mathcal{R}_{pat}>0\)，则该模式在相应尺度具“可操作实在性”。
+
+### 定理 O-T10：Compressibility–Friction Coupling（可压缩性-摩擦耦合定理，新增）
+\[
+\Psi_f^{maint}(X,\theta)\propto K_\theta(X)
+\]
+在同一任务边界下，表征越可压缩，维持其显现边界所需摩擦支付越低，因此在 \(L_1/L_2\) 中越稳定。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
