@@ -408,6 +408,26 @@ X_{macro}\perp_{scale} X_{micro}
 \]
 * **Implication**："table" 与 “particles arranged tablewise” 是正交切片，不是互相消灭关系。
 
+### 定义 O17：Anti-Semantic-Evasion Principle（反语义逃避原则，新增）
+
+a) 反廉价本体赋值：
+\[
+\text{Exist}_{lang}(X\mid L_2)\ \not\Rightarrow\ \text{Exist}_{dyn}(X\mid\Psi_f^{maint}>0)
+\]
+
+b) 跨尺度连通约束：
+\[
+\forall X_{macro},\exists\,\pi_\lambda:\ X_{micro}\xrightarrow[]{\pi_\lambda}X_{macro},\quad
+\mathcal{C}_{link}(X)=\mathbb{I}[\Psi_f\text{-consistent}] = 1
+\]
+即不同尺度对象不能仅以词汇分区隔离，必须在粗粒化映射与摩擦预算上可连通。
+
+c) 双重存在标准（语言层 vs 动力学层）：
+\[
+\text{Exist}_{L_2}^{label}\ \text{is permissive},\qquad
+\text{Exist}_{L_1}^{anchor}\ \text{is constrained by}\ \Psi_f
+\]
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  

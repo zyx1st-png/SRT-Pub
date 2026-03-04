@@ -189,6 +189,26 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：绝对真理、跨尺度特权、任意主观意见。
 - **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.9（2026-03-04 新增）。
 
+### Lawful Internal Inquiry（合法内部问题）
+- **Canonical Scope**：仅指在锁定参数 \(\theta_{locked}\neq\emptyset\) 与给定 \(L_2\) 框架内，讨论对象存在/分类/预测的可操作问题。
+- **Confusable With**：绝对本体问题、去参数化“上帝视角”问题、纯语义争辩。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.10（2026-03-04 新增）。
+
+### The External Fallacy（非法外部谬误）
+- **Canonical Scope**：把 \(\theta\to\emptyset\) 的无参状态当作可执行认知位置，并据此要求给出 \(L_0^{abs}\) 绝对实体清单。
+- **Confusable With**：跨框架比较、模型统一尝试、严谨元理论讨论。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.10（2026-03-04 新增）。
+
+### Anti-Semantic-Evasion Principle（反语义逃避原则）
+- **Canonical Scope**：拒绝把尺度冲突降格为词汇隔离；要求跨尺度对象在 \(\pi_\lambda\) 与 \(\Psi_f\) 预算上可连通。
+- **Confusable With**：强行单尺度还原、语言禁令、反语义学立场。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O17（2026-03-04 新增）。
+
+### Local Legitimacy of Common-Sense Sortals（常识类别词的局部合法性）
+- **Canonical Scope**：常识对象词在其任务生态与 \((d,\rho,\theta)\) 条件下可合法使用，但不享有 \(L_0^{abs}\) 本体特权。
+- **Confusable With**：常识即绝对真理、常识全盘无效、语词任意主义。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.10；`Core_Law/SRT_Reference_Ontology.md` O17（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

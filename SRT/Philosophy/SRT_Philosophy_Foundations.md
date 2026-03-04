@@ -508,9 +508,44 @@ $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 
 ### Def-Phil-5.9a: 逆向投影谬误（Fallacy of Retro-Projection）
 \[
-\mathcal{F}_{retro}:\ 	ext{Category}_{\theta,bio}\Rightarrow \text{Absolute Ontology}(L_0^{abs})
+\mathcal{F}_{retro}:\ \text{Category}_{\theta,bio}\Rightarrow \text{Absolute Ontology}(L_0^{abs})
 \]
 * **Implication**：把生存优化形成的“对象/因果/持久性”直觉当作终极本体，是范畴越级。
+
+### 5.10 内部/外部问题的 SRT 映射（Carnap 收编，新增）
+
+### Def-Phil-5.10a: Lawful Internal Inquiry（合法内部问题）
+\[
+\mathcal{Q}_{in}(\theta_{locked}):\ \text{Query}(L_1,L_2\mid\theta_{locked}),\quad \theta_{locked}\neq\emptyset
+\]
+解释：在锁定参数的框架内讨论“是否存在/如何分类/如何预测”是合法操作问题。
+
+### Def-Phil-5.10b: The External Fallacy（非法外部谬误）
+\[
+\mathcal{Q}_{out}:\ \text{Query}(L_0^{abs})\ \text{under}\ \theta\to\emptyset
+\]
+在 SRT 中该问题型未定义：
+\[
+\theta\to\emptyset\ \Rightarrow\ \hat G_\theta\ \text{undefined}\ \Rightarrow\ L_1\ \text{non-constructible}
+\]
+
+### Def-Phil-5.10c: Frame-Relative Existence Claim（框架相对存在宣称）
+\[
+\text{Exist}_{lang}(X\mid\mathcal{F}_{L_2})\ \not\Rightarrow\ \text{Exist}_{dyn}(X\mid\Psi_f^{maint}>0)
+\]
+语言可赋名，不等于动力学可维持。
+
+### 分类映射表（Internal/External Question → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 内部问题（框架内） | 中~高 | Open↔Semi-open | payable / borderline |
+| 外部伪问题（去参数化） | 低~中 | Closed（伪全知姿态） | 不可定义 |
+| 语义逃避（仅词汇隔离） | 低~中 | Semi-open→Closed | 被低估/被遮蔽 |
+
+### 【理论边界/防误用声明】
+- 不采纳“外部问题无意义=现实无结构”的推论：SRT 否定的是去参数化问法，不是否定跨尺度结构。
+- 不采纳“框架相对性=任意相对主义”的推论：所有框架仍受 \(\Psi_f\) 支付、可达性与一致性约束。
 
 对 Problem of the Many，给出分辨率阈值判据：
 \[
