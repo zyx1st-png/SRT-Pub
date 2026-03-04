@@ -377,6 +377,30 @@ Agency = d · A · NTIC
 ```
 
 
+## Def-Scale-BioMin-1: Minimal Biological Operator Spectrum（生物算子极简连续谱，新增）
+
+定义生物系统的最小选择连续谱：
+\[
+\mathcal{S}_{bio}^{min}:\quad \text{metabolic openness}>0\ \land\ \text{directed anti-entropy}>0\ \Rightarrow\ d_{bio}>0
+\]
+
+- **低端（植物/黏菌等）**：\(d\to 0^+\)，\(\rho_t\) 低（时间窗长），\(\rho_s\) 低~中；
+- **中端（无脊椎/简单神经系统）**：\(d\) 低~中，\(\rho_t,\rho_s\) 提升；
+- **高端（哺乳类/人类）**：\(d\) 中~高，具备高分辨率与高阶反事实能力。
+
+| 外部分类（生物连续谱） | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 植物/无神经低速系统 | 极低~低（\(d\to0^+\)） | Semi-open（慢时标） | payable |
+| 简单动物/局部网络系统 | 低~中 | Open↔Semi-open | payable / borderline |
+| 高等动物与人类 | 中~高 | Open（高带宽） | payable / overloaded（高负荷时） |
+
+**形式化代理**：
+\[
+\hat{G}_{\theta,bio}^{(scale)}: L_0^{bio}\rightarrow L_1^{bio},\quad d_{bio}=\left\|\frac{\partial\mathcal{U}}{\partial\mathcal{S}}\right\|>0
+\]
+
+* **Implication**：意识相关性不是“神经系统有/无”开关，而是沿生物选择能力连续变化。
+
 ## Def-Scale-M1: Mineral Evolutionary Scale（矿物演化尺度）
 - **\(\hat{G}_{\theta,miner}\)**：在温压-化学势约束下筛选矿物相稳定路径的选择算子。
 - **\(L_0^{miner}\)**：矿物构型、晶格拓扑、缺陷与相变路径的潜在域。

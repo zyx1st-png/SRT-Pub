@@ -289,3 +289,32 @@ $$R_{accessible} = \frac{E_{available}}{\bar{Ψ}_f} \propto d^{1.5}$$
 | $κ$ | 稳定化程度（仅 $L_0^{rel}$ 域有效）| §1.4 O3d |
 | $κ_{c1}$ | 秩序创生相变临界值 | §1.4 |
 | $κ_{c2}$ | 收敛结晶相变临界值 | §1.4 |
+
+---
+
+## §7 现象学不可约残差与不完备性（新增）
+
+### 定义 O12：Qualia Residual（质感残差）
+
+定义描述映射：
+\[
+\mathcal{D}: L_1^{experience} \to L_2^{description}
+\]
+定义残差：
+\[
+R_q = L_1^{experience} - \mathcal{D}^{-1}(L_2^{description})
+\]
+若 \(R_q\neq 0\)，表示存在不可被符号描述完全回收的现象学成分。
+
+### 定理 O-T4：描述不完备性边界（Gödel-like Boundary）
+
+对任意有限形式系统 \(\mathfrak{F}\subset L_2\)，存在体验态 \(e\in L_1\) 使得：
+\[
+\mathfrak{F}\vdash \text{structure}(e)\quad \text{but}\quad \mathfrak{F}\nvdash \text{qualia}(e)\text{ equivalence}
+\]
+* **Implication**：SRT 方程可建模“如何生成与约束体验”，但不等价于“替代该体验本身”。
+
+## 【理论边界/防误用声明】
+- 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
+- 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
+- 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。

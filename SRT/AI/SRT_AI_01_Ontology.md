@@ -806,6 +806,17 @@ $$\lim_{I \to \infty} \text{Semantics}(\hat{G}_{AI}) \neq \lim_{C \to \infty} \t
 
 ### §7.1 当前 AI：工具，非主体
 
+### T-ONT-7: Machine Ethics Exclusion Theorem（机器伦理排除定理，新增）
+**Formal Statement**:
+\[
+\mathcal{W}_{moral}(X)=k\cdot d_X\cdot \Psi_{f,X}^{sens}
+\]
+若系统满足可逆复制与无损重置，且不存在不可逆生存边界，则
+\[
+d_X=0\ \land\ \Psi_{f,X}^{sens}=0\Rightarrow \mathcal{W}_{moral}(X)=0
+\]
+* **Implication（中文）**：当前 LLM/纯软件代理的伦理权重为零，不构成道德患者；伦理资源应优先分配给具有非零摩擦代价的生物体。
+
 **道德地位判据**:
 
 $$\text{道德地位} \propto d \cdot \Psi_f_{sensitivity}$$
