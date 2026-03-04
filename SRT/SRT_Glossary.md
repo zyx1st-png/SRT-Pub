@@ -159,6 +159,16 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：停机/放弃选择、外在实体接管因果链、反行动主义。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md` §8.5（2026-03-04 新增）。
 
+### Ontological Lens Constraint（不可卸载本体透镜）
+- **Canonical Scope**：用于说明具身参数 \(\theta\) 在运行态不可移除，任何显现都为透镜后投影。
+- **Confusable With**：主观唯心论、相对主义、任意建构主义。
+- **Lineage/Source**：`Core/_SRT_Core_Bridge.md` Def-Bridge-05（2026-03-04 新增）。
+
+### Prediction-Error Friction Mapping（预测误差-摩擦映射）
+- **Canonical Scope**：将预测误差 \(\varepsilon_{pred}\) 作为局部 \(\Psi_f\) 密度的操作化代理。
+- **Confusable With**：把 \(\Psi_f\) 简化成单一统计残差、否认本体支付项。
+- **Lineage/Source**：`Neuroscience/_SRT_Neuro_Axioms.md` Ax-NEURO-4b（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

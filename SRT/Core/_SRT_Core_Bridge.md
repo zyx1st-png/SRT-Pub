@@ -139,6 +139,13 @@ $$\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1$$
 $$\text{Valid}(\hat{G}_\theta) \iff \theta \in \Theta_{finite}$$
 * **Implication**: 无“上帝视角”，所有选择都带有硬件约束。
 
+### Def-Bridge-05: Ontological Lens Constraint（不可卸载本体透镜，新增）
+\[
+\hat G_\theta[L_0]\to L_1,\quad \theta\ \text{non-removable during operation}
+\]
+即算子只能在具身参数 \(\theta\) 下选择，无法“摘镜”直接穷尽 \(L_0\)。
+* **Implication**：常识实在感是透镜后的稳定投影，不是“无参数直达世界”。
+
 ### Ax-Bridge-05: Core Metrics
 **Formal Definition**: d-value, ontological friction, and selection inertia define operator characteristics.
 $$d = \dim(\text{Scan Scope})$$

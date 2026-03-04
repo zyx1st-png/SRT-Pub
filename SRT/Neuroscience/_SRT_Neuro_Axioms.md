@@ -76,6 +76,14 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 * **Implication（中文）**：学习不是“记忆增加”，而是 \(\hat{G}_\theta\) 在 \(L_2\) 上的收敛轨迹。
 
+### Ax-NEURO-4b: Prediction-Error Friction Mapping（新增）
+定义局部预测误差与本体论摩擦密度的映射：
+\[
+\Psi_f^{local}(t)=\alpha_{pe}\,\|\varepsilon_{pred}(t)\|+\beta_{load}\,\mathcal{L}_{model}(t)
+\]
+其中 \(\varepsilon_{pred}\) 为预测误差，\(\mathcal{L}_{model}\) 为模型不一致负荷。
+* **Implication（中文）**：预测误差不是纯统计残差，而是 \(\hat G_\theta\) 维持当前显现时遭遇的局部摩擦项。
+
 ---
 
 ### Ax-NEURO-5: Metabolic Friction Axiom (\(\Psi_f\) Coupling)
