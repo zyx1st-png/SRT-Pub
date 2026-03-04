@@ -379,6 +379,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：政治宣言、价值立场口号、形而上口号化文本。
 - **Lineage/Source**：`Core/_SRT_Core_Bridge.md` §5.3（2026-03-04 新增）。
 
+### Selection Cost Minimization（选择代价最小化）
+- **Canonical Scope**：将主动推断中的 VFE 重写为 SRT 语义：复杂度对应更新摩擦，准确性对应可维持信息增益。
+- **Confusable With**：纯预测误差最小化、一般监督学习损失、性能指标优化。
+- **Lineage/Source**：`Core/SRT_Core_22_Equations.md` Eq-AI-LowRoad-01/02（2026-03-05 新增）。
+
+### Anti-Representational Coupling（反表征耦合公理）
+- **Canonical Scope**：\(\theta\) 作为耦合协议/模具而非世界内部地图的本体论约束。
+- **Confusable With**：反模型论、反科学表征、语义否定主义。
+- **Lineage/Source**：`Philosophy/_SRT_Phil_Axioms.md` Ax-Phil-5（2026-03-05 新增）。
+
+### d-Weighted Preference Reality Criterion（d 加权偏好实在判据）
+- **Canonical Scope**：仅当存在不可逆风险与 d 值关切时，偏好才具存在论重量。
+- **Confusable With**：任意效用函数、prompt偏好、策略参数设定。
+- **Lineage/Source**：`Philosophy/_SRT_Phil_Axioms.md` Ax-Phil-6（2026-03-05 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

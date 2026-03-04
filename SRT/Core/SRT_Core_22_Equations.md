@@ -114,6 +114,34 @@ $$\frac{dq}{dt} \leq \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}$$
 * **Implication**: 宏观秩序不是“反熵奇迹”，而是选择功率预算内的耗散结构。这也将公理 A2 和 A11 从哲学宣言奠基为可量化的不等式。
 * **Corollary (Eq-Select-Thermo-C1)**: 当 $P_{sel} < \beta \Psi_f + \gamma S_{noise}$ 时，系统经历秩序崩溃 ($dq/dt < 0$)，表现为相变、范式转移或存在性危机。
 
+### Eq-AI-LowRoad-01: Selection Cost Minimization Form（低阶主动推断映射，新增）
+将 VFE 重写为 SRT 选择代价：
+\[
+\mathcal{C}_{sel}(q,\theta)=\underbrace{\mathrm{D}_{KL}(q\|p_\theta)}_{\text{Complexity}\ \mapsto\ \Psi_f^{update}}-\underbrace{\mathbb{E}_q[\log p_\theta(y\mid z)]}_{\text{Accuracy gain}}
+\]
+\[
+(\Delta\theta,\Delta a)=\arg\min\ \mathcal{C}_{sel}
+\]
+其中 \(\Delta\theta\) 对应感知更新，\(\Delta a\) 对应行动采样；二者同属单一目标泛函下降。
+
+### Eq-AI-LowRoad-02: Expected Selection Cost（对应 EFE，新增）
+\[
+\mathbb{E}[\mathcal{C}_{sel}^{future}(\pi)] = \underbrace{\mathcal{R}_{epi}(\pi)}_{\text{epistemic gain}} + \underbrace{\mathcal{R}_{prag}(\pi)}_{\text{preference satisfaction risk}}
+\]
+策略选择：
+\[
+\pi^*=\arg\min_{\pi}\mathbb{E}[\mathcal{C}_{sel}^{future}(\pi)]
+\]
+* **Implication**：探索/利用不再是双系统冲突，而是同一选择代价函数在未来时域的分解。
+
+### 分类映射表（Active Inference Low Road → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 预测误差最小化（标准叙述） | 低~中 | Semi-open | payable / borderline |
+| 选择代价最小化（SRT重写） | 中~高 | Open↔Semi-open | payable |
+| 泛计算主义误读（恒温器=意识） | 0~低 | Closed（语法同构） | \(\Psi_f\approx0\) |
+
 ## III. Stability & Phase Transition (稳定性与相变)
 
 ### Eq-Stab-01: Fixed Point Condition

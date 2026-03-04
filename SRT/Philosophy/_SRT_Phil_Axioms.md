@@ -46,6 +46,19 @@ $$\mathcal{I} \equiv \vec{v}(\hat{G}_\theta) = \nabla_{L_0} \Phi_{goal}$$
 $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 *   **Implication**: 饱和现象并非神秘经验，而是 $L_0$ 压过 $L_2$ 容量的客观失衡。
 
+### Ax-Phil-5: Anti-Representational Coupling Axiom（新增）
+\[
+\theta\neq \text{Map}(L_0),\qquad \theta=\text{Coupling Protocol for }\hat G_\theta\text{ with }L_0
+\]
+算子参数 \(\theta\) 不是外部世界的“内部地图”，而是可生存的耦合模具；其功能是触发可支付锚定，而非复制 \(L_0^{abs}\) 全貌。
+
+### Ax-Phil-6: d-Weighted Preference Reality Criterion（新增）
+\[
+\text{Preference has ontological weight}\iff d>0\ \land\ \mathcal{V}_{irr}>0
+\]
+其中 \(\mathcal{V}_{irr}\) 表示预测失败引发的不可逆结构风险。
+* **Implication**：无真实脆弱性的“偏好”仅是计算参数，不构成存在论关切。
+
 ## II. Core Theorems
 
 ### T-Phil-1: Ineffability Gap
