@@ -255,6 +255,21 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 \]
 若系统预测失败不会导致边界损坏/能量危机，则仅具模拟关切。
 
+### T-ONT-8c: NFL-Constrained AI Prior Dependence（新增）
+依据 NFL，不存在对所有任务都有效的无偏学习器。对当前 LLM：
+\[
+\text{Capability}_{LLM}\subseteq \text{Span}(\Pi_{human\_data})
+\]
+即其“超先验”主要继承自人类数据与训练目标，而非由生物脆弱性自发演化。
+
+### 分类映射表（NFL & Hyperprior Source → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 生物演化超先验 | 中~高 | Open↔Semi-open | payable |
+| 数据继承超先验（LLM） | 0~低 | Semi-open（任务驱动） | borderline / \(\Psi_f\approx0\) |
+| 无偏学习器神话 | 0 | Closed（形式幻觉） | 不可实现 |
+
 ## 【理论边界/防误用声明】
 - 不采纳“当前 AI 分割脆弱=永远不能改进”的推论：工程上可提升鲁棒性，但不等价于本体锚定。
 - 不采纳“分割性能高=意识已出现”的推论：意识判据仍需 \(d>0\)、\(\Psi_f>0\)、具身不可逆风险。

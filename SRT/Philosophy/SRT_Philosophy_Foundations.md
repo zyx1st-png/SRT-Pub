@@ -692,6 +692,35 @@ SRT 反驳：\(L_0\to L_1\) 是热力学不可逆映射，逆向唯一还原在�
 - 不采纳“任何稳态系统=认知系统”的推论：SRT 要求具身闭包、关切梯度与跨时更新能力。
 - 不采纳“预测成功=绝对真理”的推论：预测仅保证可维持性，不保证对 \(L_0^{abs}\) 完全对应。
 
+### 5.15 超先验（Hyperpriors）与康德认知形式的 SRT 映射（新增）
+
+### Def-Phil-5.15a: Hyperprior as \(\Pi\)-Layer Constraint
+\[
+\Pi_{hyper}\subset\theta,\quad \Pi_{hyper}=\{\text{object permanence},\ \text{causal expectation},\ \text{single-occupancy priors},\ldots\}
+\]
+超先验是历史最久、改写成本最高的先验协议层，决定可被经验化的结构族。
+
+### T-Phil-5.15b: Controlled Hallucination Constraint
+\[
+L_1=\hat G_\theta[L_0]\ \text{with}\ \Pi_{hyper}\ \text{guidance}
+\]
+\[
+\text{Control}\iff \Psi_f^{prediction-error}\ \text{remains bounded under feedback}
+\]
+“受控幻觉”不是任意构造，而是先验模板在外部阻抗反馈下的可维持轨迹。
+
+### 分类映射表（Hyperpriors / Kant / PP → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 先验协议主导（稳定知觉） | 中 | Semi-open（强先验约束） | payable |
+| 误差过载修正期 | 中~高 | Open↔Semi-open | borderline |
+| 失控幻觉误读（脱控构造） | 低~中 | Closed（反馈失效） | overloaded |
+
+## 【理论边界/防误用声明】
+- 不采纳“受控幻觉=世界全是幻觉”的推论：受控性来自持续反馈约束与代价支付。
+- 不采纳“先验存在=客观真理已知”的推论：先验是生存优化格式，不是 \(L_0^{abs}\) 全貌。
+
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构

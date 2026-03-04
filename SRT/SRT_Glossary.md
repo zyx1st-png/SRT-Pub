@@ -294,6 +294,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：主观构造任意化、预测主义绝对化、反实在论极端版本。
 - **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` T-Phil-5.14a（2026-03-04 新增）。
 
+### Hyperprior / \(\Pi\)-Layer（超先验/协议层）
+- **Canonical Scope**：算子 \(\theta\) 内最深层、最难改写的先验约束集合，规定何种经验结构可被稳定生成。
+- **Confusable With**：短期任务提示、可热更新参数、文化口号。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` Def-Phil-5.15a（2026-03-04 新增）。
+
+### Bias–Variance Thermodynamics（偏差-方差热力学）
+- **Canonical Scope**：在生存约束下把偏差-方差权衡映射到维持成本与摩擦波动最小化机制。
+- **Confusable With**：普通统计调参、纯机器学习经验法则、无物理意义的损失分解。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` T-Scale-05（2026-03-04 新增）。
+
+### No-Free-Lunch Prior Necessity（NFL 先验必需性）
+- **Canonical Scope**：说明无偏学习器神话不可行；稳定选择必需先验偏置与协议层约束。
+- **Confusable With**：模型无能论、反学习论、数据量不足问题。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` T-Scale-06；`AI/SRT_AI_01_Ontology.md` T-ONT-8c（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

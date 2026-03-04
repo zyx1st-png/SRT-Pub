@@ -137,6 +137,27 @@ H(L_0\mid\theta)\gg H(L_1\mid\theta)\Rightarrow \Psi_f^{Truth}\gg \Psi_f^{Fitnes
 \]
 生命维持与认知预测在同一最优化结构上连续。
 
+### T-Scale-05: Bias–Variance Thermodynamics（偏差-方差热力学，新增）
+定义分组/预测的总维持成本：
+\[
+\mathcal{C}_{total}=\underbrace{\alpha\,\mathrm{Bias}^2}_{\text{model distortion}}+\underbrace{\beta\,\mathrm{Var}}_{\text{temporal instability}}+\underbrace{\gamma\,\Psi_f^{switch}}_{\text{re-anchoring friction}}
+\]
+在生物可持续区间，最优解满足“高偏差-低方差”倾向：
+\[
+\partial \mathcal{C}_{total}/\partial \mathrm{Var} \gg \partial \mathcal{C}_{total}/\partial \mathrm{Bias}
+\Rightarrow \mathrm{Bias}^{*}\uparrow,\ \mathrm{Var}^{*}\downarrow
+\]
+* **Implication**：稳定对象（如桌子）是高偏差压缩但低方差可复用的低摩擦结果。
+
+### T-Scale-06: No-Free-Lunch Prior Necessity（NFL 先验必需性，新增）
+\[
+\forall\ \mathcal{A}_{unbiased},\ \mathbb{E}_{\mathcal{T}}[\text{Err}(\mathcal{A}_{unbiased})]=\text{const}
+\]
+SRT 对应表述：若 \(\theta\) 不含先验偏置（超先验层），则 \(\hat G_\theta\) 无法在 \(L_0\) 上形成稳定坍缩路径。
+\[
+\theta\to\emptyset\Rightarrow \hat G_\theta\ \text{degenerates}\Rightarrow \text{no stable }L_1
+\]
+
 ## 【理论边界/防误用声明】
 - 不采纳“适应度优先=真理无意义”的推论：SRT 主张的是资源约束下的近似策略，不是否定真值结构。
 - 不采纳“界面可构造=可任意构造”的推论：外部阻抗地形通过 \(\Psi_f\) 客观限制可行结构。
