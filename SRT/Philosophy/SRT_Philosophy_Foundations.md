@@ -453,6 +453,25 @@ $$P(\theta \to \theta') = e^{-\beta |\theta - \theta'|}$$
 | 中等 | 日常认知 | 极端尺度 |
 | 过高 | 细节导向 | 整体模式 |
 
+### 5.5b 两张桌子映射（Eddington’s Two Tables，新增）
+
+定义同一潜在域在不同参数下的双投影：
+\[
+\text{Table}_{manifest}=\hat G_{\theta_{human}}[L_0],\quad
+\text{Table}_{scientific}=\hat G_{\theta_{instrument}}[L_0]
+\]
+其中 \(\theta_{instrument}\) 表示引入仪器与符号规约后的观测参数扩展。
+
+* **Mechanism**：两者差异来自粗粒化映射 \(\pi_\lambda\) 与分辨率参数 \((\rho_s,\rho_t)\) 不同，而非“两个本体世界”。
+
+### 分类映射表（Manifest vs Scientific Image → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 显现图景（常识对象） | 中（生存任务导向） | Semi-open | payable |
+| 科学图景（仪器规约） | 中高（高精度任务） | Open→Semi-open（模型固化后） | payable / borderline |
+| 二元冲突叙事（误用） | 低~中 | Closed 倾向（范畴错配） | 被误估 |
+
 ### 5.6 因果倒置公理 (Causal Inversion)
 
 $$L_1(t) = \alpha \cdot P[L_0(t-\Delta t)] + (1-\alpha) \cdot A[L_2^{\text{attractor}}(t+\Delta t)]$$

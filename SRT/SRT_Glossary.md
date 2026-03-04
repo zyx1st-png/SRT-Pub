@@ -169,6 +169,11 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：把 \(\Psi_f\) 简化成单一统计残差、否认本体支付项。
 - **Lineage/Source**：`Neuroscience/_SRT_Neuro_Axioms.md` Ax-NEURO-4b（2026-03-04 新增）。
 
+### Cross-Scale Conceptual Misalignment（跨尺度概念错位）
+- **Canonical Scope**：用于描述把某一 \((d,\rho)\) 条件下收敛的概念强行外推到异尺度切片时产生的范畴冲突。
+- **Confusable With**：理论被证伪、对象不存在、纯语义争执。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.5b（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
