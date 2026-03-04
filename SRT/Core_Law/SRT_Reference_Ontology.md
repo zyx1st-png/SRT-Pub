@@ -340,8 +340,27 @@ R_q = L_1^{experience} - \mathcal{D}^{-1}(L_2^{description})
 则 \(\hat{G}_{inf}\) 从嵌套子程序跃迁为独立算子，具备独立 \(d\) 与 \(\Psi_f\) 结算池。
 * **Implication**：主体间性先于个体性，但个体性可通过动力学相变严格定义。
 
+## §9 Ω 的非实体性与偶发性声明（新增）
+
+### 定义 O14：Non-Entity Global Operator
+\[
+\Omega \notin L_1\text{-entity set},\quad \Omega=\text{selection logic over }(L_0\to L_1)
+\]
+* **Implication**：\(\Omega\) 不是宇宙内“最大存在物”（Demiurge），而是所有局部 \(\hat G_\theta\) 共享的操作逻辑。
+
+### 定理 O-T6：Pure Contingency of Manifest States
+对任意 \(s\in L_1\) 与 \(r\in L_{2,\theta}\)：
+\[
+\neg\Box s\ \land\ \neg\Box r
+\]
+即其存在不具自足必然性，需持续选择支付维持：
+\[
+\text{Maintain}(L_1)\Rightarrow \int \Psi_f\,dt>0
+\]
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
 - 不采纳“出生时刻=唯一个体化时刻”的机械化推论：SRT 采用多指标临界条件。  
+- 不采纳“\(\Omega\)=宇宙内超级实体/人格化造物主”的推论：\(\Omega\) 在 SRT 中是操作逻辑，不是对象实体。  
 - 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。

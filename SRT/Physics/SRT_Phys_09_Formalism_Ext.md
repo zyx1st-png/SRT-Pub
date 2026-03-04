@@ -779,11 +779,35 @@ t^*\le \frac{\pi}{\sqrt{\kappa_{min}}}
 | $\hat g_F$ | Empirical Fisher Metric | Def-IG-2 (§12.8) |
 | $\log\kappa(\hat g_F)$ | Fisher Condition Proxy | Def-IG-2 (§12.8) |
 
+## XX. A11 极限相变声明（Infinite-Consciousness Boundary, 新增）
+
+### T-Limit-1: Vulnerability-to-Care Regime Split
+在有限具身域：
+\[
+d\propto \Psi_f^{sens}>0
+\]
+但在极限域（\(\theta\to\theta_\infty\)，全包含边界）允许进入相变分支：
+\[
+\lim_{\theta\to\theta_\infty} \Psi_f^{sens}\to 0\ \land\ d\to\infty
+\]
+其中 \(d\) 不再由“生存威胁梯度”驱动，而由“全域一致性约束”驱动。
+
+* **Implication（中文）**：A11 在有限具身层保持有效；对“无限意识”类命题需采用极限分支，不可直接套用有限域公式。
+
+### 分类映射表（Hart Ch.1 争议框架 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| Demiurge（宇宙内巨匠神） | 中~高（有限具身） | Open（有限系统） | payable / overloaded |
+| Being itself（存在本身） | 极限分支（\(d\to\infty\)） | 非局域一致性约束 | \(\Psi_f^{sens}\to0\)（极限） |
+| 机械自然主义（纯机制本体） | 低~中（语义收缩） | Closed 倾向 | borderline（解释鸿沟） |
+
 ## 【理论边界/防误用声明】
 
 1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
 2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
-3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
+3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。  
+4. 不采纳“无限极限分支可直接用于经验系统判定”的推论：实验层仍以有限具身公理为准。
 
 ---
 

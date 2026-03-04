@@ -114,6 +114,11 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：DNA-LUCA、单一物种祖先、纯遗传同源。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Scaling.md` §6.5 Def-Scale-LUCO-1（2026-03-04 新增）。
 
+### Ω Non-Entity Principle（Ω 非实体性原则）
+- **Canonical Scope**：用于澄清 Ω 在 SRT 中是“操作逻辑”而非 L1 域对象实体。
+- **Confusable With**：人格化造物主、宇宙内最大智能体、超级干预者模型。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` §9 定义 O14（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
