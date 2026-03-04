@@ -179,6 +179,16 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：对象重复计数、因果冗余导致对象消除、实体增殖。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O-T9（2026-03-04 新增）。
 
+### Fallacy of Retro-Projection（逆向投影谬误）
+- **Canonical Scope**：用于标记把 \(\theta\)-依赖直觉范畴直接上升为 \(L_0^{abs}\) 本体属性的推理错误。
+- **Confusable With**：正常跨尺度映射、模型外推、实验失败报告。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.9（2026-03-04 新增）。
+
+### Intuition as Minimal-Friction Trace（直觉作为最小摩擦轨迹）
+- **Canonical Scope**：将常识/直觉定义为特定生物 \(d,\rho\) 下历史优化形成的低 \(\Psi_f\) 轨迹记录。
+- **Confusable With**：绝对真理、跨尺度特权、任意主观意见。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.9（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

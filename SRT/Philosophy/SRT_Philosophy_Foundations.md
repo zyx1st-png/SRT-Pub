@@ -499,6 +499,19 @@ $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 \]
 若 \(\mathcal{E}_{exist}=1\)，则对象在该尺度具本体论合法性，不因可还原而被消除。
 
+### 5.9 认识论隔离原则（Epistemological Quarantine，新增）
+
+禁止将由特定生物参数 \(\theta\) 生成的 \(L_1/L_2\) 直觉范畴直接回投到 \(L_0\) 作为绝对属性：
+\[
+\neg\Big(\text{BackProject}(L_1,L_2\to L_0^{abs})\Big)
+\]
+
+### Def-Phil-5.9a: 逆向投影谬误（Fallacy of Retro-Projection）
+\[
+\mathcal{F}_{retro}:\ 	ext{Category}_{\theta,bio}\Rightarrow \text{Absolute Ontology}(L_0^{abs})
+\]
+* **Implication**：把生存优化形成的“对象/因果/持久性”直觉当作终极本体，是范畴越级。
+
 对 Problem of the Many，给出分辨率阈值判据：
 \[
 \Delta V< f(\rho_{limit})\Rightarrow \Delta\Psi_f\approx 0\Rightarrow X\sim_{topo}X'

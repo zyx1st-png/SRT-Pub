@@ -720,6 +720,30 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 
 ## 12.8 Fisher 选择成本的具身约束与可观测化（Manuscript-Linked）
 
+## 12.9 Px-Structure Tensorization（预测结构张量化，新增）
+
+### Def-Px-1: Generative Prior Tensor
+定义认知预测结构为先验张量场：
+\[
+\mathcal{P}_x(\theta,t)\in\mathbb{R}^{n\times n},\quad \mathcal{P}_x\succeq 0
+\]
+表示 \(\hat G_\theta\) 在当前参数下对 \(L_0\) 的可达预期几何。
+
+### T-Px-1: Prediction Error as Friction Integral Slice
+给定时窗 \([t,t+\Delta t]\)，预测误差诱发的摩擦切片写为：
+\[
+\Delta\Psi_f^{(px)}\approx \int_t^{t+\Delta t}\langle \varepsilon_{pred}(\tau),\mathcal{P}_x^{-1}(\theta,\tau)\varepsilon_{pred}(\tau)\rangle\,d\tau
+\]
+* **Implication（中文）**：预测误差越偏离当前先验流形，维持显现所需 \(\Psi_f\) 支付越高。
+
+### 分类映射表（Intuitive Metaphysics Debunking → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 直觉范畴自动运行 | 低~中 | Semi-open（低成本惯例） | payable（低显性） |
+| 预测冲突重拟合期 | 中 | Open↔Semi-open | borderline / payable |
+| 逆向投影误用 | 低~中 | Closed 倾向（范畴僵化） | 被误估/遮蔽 |
+
 ### Ax-IG-1b: Embodiment-Coupling Gate
 定义具身耦合系数 \(\kappa_{body}\in[0,1]\)：
 \[
