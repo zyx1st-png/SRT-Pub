@@ -754,6 +754,33 @@ L_1=\hat G_\theta[L_0]\ \text{with}\ \Pi_{hyper}\ \text{guidance}
 - 不采纳“模糊性=纯学习不足”的推论：部分模糊区由有限分辨率与能量预算共同决定。
 - 不采纳“有阈值=有绝对本体切线”的推论：阈值是算子-任务-历史路径耦合产物。
 
+### 5.17 塞拉斯冲突的 SRT 回答（Information-Processing Clash，新增）
+
+### Def-Phil-5.17a: Cognitive Contextual Extraction
+\[
+L_1^{(k)}=\hat G_{\theta^{(k)}}[L_0],\quad \theta^{(k)}=\theta_{bio}\oplus\theta_{instrument}\oplus\theta_{formal}
+\]
+不同图景冲突不是“同一对象被不同描述”，而是不同 \(\theta^{(k)}\) 对 \(L_0\) 的正交切片。
+
+### T-Phil-5.17b: Clash as Thermodynamic Non-Co-Stitchability
+若尝试在单一扁平框架中同时保留微观对称细节与宏观 Px 结构：
+\[
+\Psi_f^{stitch}=\Psi_f(\text{micro fidelity} \cap \text{macro compositionality})\to\infty
+\]
+则统一缝合在有限资源下不可持续，冲突是可支付约束下的必然产物。
+
+### 分类映射表（Sellars Clash Resolution → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 显现图景（生存先验） | 中~高 | Semi-open | payable |
+| 科学图景（仪器先验） | 中 | Open↔Semi-open | payable / borderline |
+| 扁平统一实在论（硬缝合） | 中~高（需求） | Open（过载） | unsustainable |
+
+## 【理论边界/防误用声明】
+- 不采纳“图景冲突=其中一方纯错觉”的推论：两者可在各自 \(\theta\) 与任务边界下合法。
+- 不采纳“不可缝合=不可对齐”的推论：SRT 允许通过协议映射对齐，不要求全信息同构。
+
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构

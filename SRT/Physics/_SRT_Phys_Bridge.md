@@ -158,6 +158,32 @@ SRT 不将 PPC 解释为“本体论唯一优先”，而解释为极限边界�
 \]
 即宏观闭包具有独立因果效力，但其可行动作集必须是底层协议允许的子集。
 
+### Def-Phys-4 [D1.4.7]: Information Import via Instrument-Extended \(\theta\)（新增）
+观测中的信息导入写为：
+\[
+I_{import}=I(\theta_{bio})+I(\theta_{instrument})+I(\theta_{formal})
+\]
+其中 \(\theta_{instrument}\)（显微镜、加速器、滤波链路）与 \(\theta_{formal}\)（数学/逻辑规约）共同构成可观测切片的先验过滤器。
+
+### T-Phys-6 [T1.4.8]: Jaynes Diffusion Projection Theorem（新增）
+在微观层 \(L_0\) 的对称随机跃迁下，若无分类先验则无宏观定向流：
+\[
+\mathbb{E}[v_{micro}]=0
+\]
+引入粗粒化分类先验（如“糖/水”）后，贝叶斯更新打破对称并投影出宏观通量：
+\[
+J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
+\]
+* **Implication**：宏观定律并非“纯客观直接读出”，而是微观对称性与观测先验共同生成的 \(L_1/L_2\) 协议结果。
+
+### 分类映射表（Sellars Clash / Information Import → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 语言语境主义（仅词汇隔离） | 低~中 | Closed（解释逃逸） | 被低估 |
+| 认知语境主义（仪器先验导入） | 中 | Semi-open | payable |
+| 跨尺度硬缝合企图（全保真统一） | 中~高（需求） | Open（高维耦合） | overloaded / unsustainable |
+
 ## 【理论边界/防误用声明】
 - 不采纳“物理优先=高层因果全无效”的推论：SRT 允许受限下行因果。
 - 不采纳“高层有效=可任意违反守恒律”的推论：一切高层策略必须在 \(\Pi_{kernel}\) 内可实现。

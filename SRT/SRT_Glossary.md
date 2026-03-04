@@ -354,6 +354,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：随机抖动、标注误差、模型温度参数变化。
 - **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` Cor-Scale-08a；`AI/SRT_AI_01_Ontology.md` Def-ONT-1f（2026-03-04 新增）。
 
+### Instrument-Extended Theta（仪器扩展具身参数）
+- **Canonical Scope**：\(\theta\) 的技术外延，包含生物感知参数 + 仪器链路 + 形式规约对观测切片的联合先验导入。
+- **Confusable With**：仪器噪声项、实验误差条、单一测量设置。
+- **Lineage/Source**：`Physics/_SRT_Phys_Bridge.md` Def-Phys-4（2026-03-04 新增）。
+
+### Jaynes Diffusion Projection（Jaynes 扩散投影）
+- **Canonical Scope**：微观对称运动在分类先验与粗粒化下投影为宏观定向通量的案例化定理。
+- **Confusable With**：纯经验扩散定律、统计涨落噪声、语言重描述。
+- **Lineage/Source**：`Physics/_SRT_Phys_Bridge.md` T-Phys-6（2026-03-04 新增）。
+
+### Thermodynamic Non-Co-Stitchability（热力学不可共缝合）
+- **Canonical Scope**：说明微观全保真与宏观可组合结构在有限资源下无法被单一扁平框架同时无损保持。
+- **Confusable With**：学科合作失败、数据缺失、模型选择偏好。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` T-Phil-5.17b（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
