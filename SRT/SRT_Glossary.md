@@ -224,6 +224,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：物理还原主义绝对化、否定宏观因果、反跨学科立场。
 - **Lineage/Source**：`Physics/_SRT_Phys_Bridge.md` Def-Phys-3 / T-Phys-5（2026-03-04 新增）。
 
+### Px-Generator / Px-Structure（对象-属性生成结构）
+- **Canonical Scope**：描述 \(\hat G_\theta\) 在 \((\theta,\rho)\) 下把连续潜在流切分为对象边界 \(x\) 与属性簇 \(P(x)\) 的格式化机制；属于 \(L_2\) 稳定处理格式。
+- **Confusable With**：\(L_0^{abs}\) 先验对象论、语言语法本身、纯统计聚类。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.11（2026-03-04 新增）。
+
+### Selection Monism Triangle（选择一元三角定位）
+- **Canonical Scope**：用于定位消除唯物、传统唯心与 SRT 的关系：SRT 主张 \(L_0\times\hat G_\theta\) 交汇并支付 \(\Psi_f\) 产生 \(L_1\) 现实切片。
+- **Confusable With**：折中主义拼盘、语义调和术、二元论。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` Def-Phil-5.11c（2026-03-04 新增）。
+
+### Isomorphism without Reference（同构无指称）
+- **Canonical Scope**：表示系统内部表征有效性由动力学同构误差与更新摩擦共同约束，不要求经典“符号→对象”强指称。
+- **Confusable With**：反真值论、随意解释主义、语义虚无主义。
+- **Lineage/Source**：`AI/_SRT_AI_Bridge.md` Def-BRIDGE-6 / T-BRIDGE-6（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

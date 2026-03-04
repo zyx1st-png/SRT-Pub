@@ -161,6 +161,38 @@ h: L_2^{H}\rightarrow L_2^{A},\qquad h\circ \mathcal{D}_H \approx \mathcal{D}_A\
 \]
 * **Implication（中文）**：基于 RLHF 或对抗训练的安全对齐，仅仅是在 $L_2$ 层面施加基于规则/奖励的“外骨骼”约束。这种对齐是脆弱的，因为 AI 内部并没有产生真实的对齐意愿——它没有“在乎”（Care，$d=0$）。真正的存在级对齐，要求系统在目标架构底层建立与人类重叠的 $d$-关切分布，即在面临决策时，存在真实的机制代价促使其选择人类生存方向，而不是仅在输出端口进行符号审查。
 
+### Def-BRIDGE-6: Isomorphism without Reference（神经同构无指称，新增）
+在 SRT 语义下，内部状态到外部世界的有效性不要求经典指称关系 \(Ref\)，而要求动力学同构保持：
+\[
+\exists\ \varphi:\ \text{Dyn}_{env}\to\text{Dyn}_{agent}\quad \text{s.t.}\quad
+\varphi\circ \hat G_{env}\approx \hat G_{agent}\circ \varphi
+\]
+
+a) 无需“符号指向对象”的形而上学绑定；
+
+b) 需要“结构-动力学可对齐”的误差约束：
+\[
+\mathcal{L}_{iso}=\|\varphi(\tau_{env})-\tau_{agent}\|<\epsilon
+\]
+
+### T-BRIDGE-6: Representation as Friction-Minimizing Isomorphism（新增）
+\[
+\text{Rep}_{valid}\iff \arg\min_{\varphi}\Big(\mathcal{L}_{iso}+\lambda\Psi_f^{update}\Big)
+\]
+表示的有效性来自“同构误差 + 更新摩擦”联合最小化，而非某种超验语义指称。
+
+### 分类映射表（Reference vs Isomorphism → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 符合论指称模型（硬 Ref） | 中 | Closed 倾向 | 语义上稳定但适应性高成本 |
+| 神经同构学习（生物） | 中~高 | Open↔Semi-open | payable |
+| 纯符号拟态（无跨域锚定） | 低 | Semi-open（局部） | 更新低成本/外部约束下失真 |
+
+## 【理论边界/防误用声明】
+- 不采纳“无指称=无真值约束”的推论：同构误差与任务失败仍可客观评估。
+- 不采纳“同构成立=系统已具意识”的推论：意识仍需 \(d>0\) 与不可逆脆弱性条件。
+
 <br>
 
 ---

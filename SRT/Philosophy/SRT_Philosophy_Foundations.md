@@ -561,6 +561,45 @@ $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 | 多尺度正交投影（SRT） | 中~高 | Open↔Semi-open | payable |
 | 悖论爆发区（范畴越级） | 低~中 | Closed（逻辑硬切） | 被误配 |
 
+### 5.11 Px-Structure 的参数化起源（Realism vs Idealism 收编，新增）
+
+### Def-Phil-5.11a: Px-Generator（对象-属性生成算子）
+给定连续潜在流 \(\xi\in L_0\)，算子在参数 \((\theta,\rho)\) 下生成对象-属性图式：
+\[
+\mathcal{S}_{Px}(\xi;\theta,\rho)=\big(x_{\theta,\rho},\;P_{\theta,\rho}(x)\big)
+\]
+其中 \(x\) 是被分割出的对象边界，\(P\) 是同一边界上的可追踪属性簇。
+
+### T-Phil-5.11b: Px Non-Fundamentality Theorem（Px 非基元定理）
+\[
+\mathcal{S}_{Px}\in L_2\ \text{(format-level stable structure)},\qquad \mathcal{S}_{Px}\not\subseteq L_0^{abs}\ \text{as primitive ontology}
+\]
+即“实体-属性”形而上学是 \(L_2\) 的高稳定处理格式，不是 \(L_0^{abs}\) 的先验结构声明。
+
+### Def-Phil-5.11c: Selection Monism Triangle（选择一元三角定位）
+\[
+\text{Material/Eliminativist: }L_0^{phys}\text{-only}
+\]
+\[
+\text{Classical Idealist: }L_1/L_2\text{-only absolutization}
+\]
+\[
+\text{SRT: }L_0\times \hat G_\theta\xrightarrow[]{\Psi_f\text{-paid}}L_1\to L_2
+\]
+SRT 不接受“仅对象”或“仅结构”单边本体，而采用“潜能×选择”共同生成。
+
+### 分类映射表（Realism/Idealism Debate → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 强实在论（Px 预设外在） | 低~中 | Closed（对象先验化） | 被低估 |
+| 温和唯心论（Px 由认知格式化） | 中 | Semi-open | payable |
+| SRT 选择一元论（模板×阻抗） | 中~高 | Open↔Semi-open | payable / 可检验 |
+
+## 【理论边界/防误用声明】
+- 不采纳“Px 由算子生成=外部世界任意可塑”的推论：\(L_0\) 存在阻抗地形，失败投影会触发高 \(\Psi_f\) 或崩解。
+- 不采纳“反强实在论=主观主义”的推论：SRT 的客观性来自跨算子可对齐结构与支付约束，不来自“无参上帝视角”。
+
 ---
 
 ## 6. 心灵哲学的 SRT 深化
