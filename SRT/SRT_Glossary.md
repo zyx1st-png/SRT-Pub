@@ -174,6 +174,11 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：理论被证伪、对象不存在、纯语义争执。
 - **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.5b（2026-03-04 新增）。
 
+### Scale-Orthogonal Composite Equivalence（尺度正交复合等价）
+- **Canonical Scope**：用于说明 macro-object 与 micro-arrangement 可在同一本体 \(L_0\) 上以不同参数正交共存。
+- **Confusable With**：对象重复计数、因果冗余导致对象消除、实体增殖。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O-T9（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

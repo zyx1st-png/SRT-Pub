@@ -491,6 +491,28 @@ $$\text{Relation}(A, B) = \hat{G}[\{A, B\} | \theta_{\text{relational}}]$$
 
 $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 
+### 5.8 消除主义防御与多重问题解（新增）
+
+定义宏观对象的存在合法性为“维持成本非零”：
+\[
+\mathcal{E}_{exist}(X;\theta)=\mathbf{1}[\Psi_f^{maint}(X,\theta)>0]
+\]
+若 \(\mathcal{E}_{exist}=1\)，则对象在该尺度具本体论合法性，不因可还原而被消除。
+
+对 Problem of the Many，给出分辨率阈值判据：
+\[
+\Delta V< f(\rho_{limit})\Rightarrow \Delta\Psi_f\approx 0\Rightarrow X\sim_{topo}X'
+\]
+即低于算子分辨率下限的微扰（如单原子差异）在 \(L_1\) 上拓扑等价，不生成“多重对象爆炸”。
+
+### 分类映射表（Eliminativism 冲突 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 粒子还原闭包（仅 micro） | 低~中 | Closed 倾向 | 低估宏观支付 |
+| 多尺度正交投影（SRT） | 中~高 | Open↔Semi-open | payable |
+| 悖论爆发区（范畴越级） | 低~中 | Closed（逻辑硬切） | 被误配 |
+
 ---
 
 ## 6. 心灵哲学的 SRT 深化

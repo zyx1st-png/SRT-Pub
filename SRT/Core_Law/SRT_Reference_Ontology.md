@@ -391,6 +391,23 @@ L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
 \]
 * **Implication**：SRT 允许“趋近完满”，但拒绝“运行中零摩擦且仍保持个体显现”的自相矛盾写法。
 
+### 定义 O16：Non-Redundant Existence Criterion（非冗余存在判据，新增）
+对任意尺度对象 \(X\) 定义：
+\[
+\text{Exist}(X\mid\theta)\iff \Psi_f^{maint}(X,\theta)>0
+\]
+即对象是否“存在”不由是否可还原决定，而由维持其稳定显现是否需要非零摩擦支付决定。
+
+### 定理 O-T9：Scale-Orthogonal Coexistence（尺度正交共存定理，新增）
+\[
+X_{macro}=\hat G_{\theta_{macro}}[L_0],\quad X_{micro}=\hat G_{\theta_{micro}}[L_0]
+\]
+若二者由同一 \(L_0\) 在不同 \((d,\rho)\) 下投影，则可并存而不互斥：
+\[
+X_{macro}\perp_{scale} X_{micro}
+\]
+* **Implication**："table" 与 “particles arranged tablewise” 是正交切片，不是互相消灭关系。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
@@ -399,4 +416,5 @@ L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
 - 不采纳“\(L_0^{abs}\)-\(\Omega\) 极限同一假设已被证明”的推论：其当前为研究态桥接假设。  
 - 不采纳“至福=现实终止的规范性处方”推论：O-T8 仅给出具身动力学边界，不导出伦理命令。  
 - 不采纳“存在仅当可被某科学语言变量绑定”之扁平推论（蒯因式强化版本）：在 SRT 中，存在首先是 \(L_0\to L_1\) 的锚定支付过程，语言变量是后验 \(L_2\) 编码。  
+- 不采纳“可还原=可消除”的推论：还原关系不取消在该尺度上的摩擦支付与显现合法性。  
 - 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。
