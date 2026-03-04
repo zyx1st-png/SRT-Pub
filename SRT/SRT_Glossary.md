@@ -264,6 +264,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：整体意识消失、单一感官瘫痪、智力全面退化。
 - **Lineage/Source**：`Neuroscience/SRT_Neuro_Experiments.md` Def-Exp-AGN-1（2026-03-04 新增）。
 
+### LGN 80/20 Top-Down Prior Law（LGN 80/20 自上而下先验法则）
+- **Canonical Scope**：描述 LGN 输入中的 top-down 与 retina 权重近似分解，用于操作化“先验主导度”。
+- **Confusable With**：固定生理常数、全任务通用比例、纯解剖事实替代理论。
+- **Lineage/Source**：`Neuroscience/SRT_Neuro_Experiments.md` Def-Exp-LGN-1（2026-03-04 新增）。
+
+### Friction-Minimizing Grouping Principle（最小摩擦分组原则）
+- **Canonical Scope**：对象分组判据由预测误差、维持摩擦与切换代价联合最小化给出，而非单一连通性或无语境压缩率。
+- **Confusable With**：均匀连通性公理、纯 Kolmogorov 最短描述、任意主观拼接。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O20 / O-T11（2026-03-04 新增）。
+
+### Robust Object Individuation（稳健对象个体化）
+- **Canonical Scope**：衡量对象边界在遮挡/迷彩/视角变化下仍可维持的跨条件一致性指标。
+- **Confusable With**：单帧分割精度、训练集内拟合分数、语言命名一致性。
+- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` Def-ONT-1b / T-ONT-8b（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

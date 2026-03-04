@@ -455,6 +455,22 @@ given 感觉切片 \(y_t\in L_1\)，其前像集合定义为：
 
 * **Implication**：欠定性不是缺陷，而是选择自由与创造性锚定的本体前提。
 
+### 定义 O20：Friction-Minimizing Grouping Principle（最小摩擦分组原则，新增）
+对候选分组 \(\mathcal{G}=\{G_k\}\) 定义目标泛函：
+\[
+\mathcal{J}(\mathcal{G}\mid\theta,\rho,d)=\sum_k\Big(\mathcal{L}_{pred}(G_k)+\lambda_1\Psi_f^{maint}(G_k)+\lambda_2\mathcal{C}_{switch}(G_k)\Big)
+\]
+\[
+\mathcal{G}^*=\arg\min_{\mathcal{G}}\mathcal{J}(\mathcal{G}\mid\theta,\rho,d)
+\]
+对象组合的本体论标准不是“几何均匀连通”或“无语境压缩最短”，而是在给定任务与关切下的可维持最小代价。
+
+### 定理 O-T11：Compositional Stability under Care-Weighted Grouping（新增）
+\[
+\partial_d\,\mathcal{J}(\mathcal{G}\mid\theta,\rho,d)<0\ \Rightarrow\ \text{grouping robustness}\uparrow
+\]
+当分组与系统关切梯度 \(d\) 同向时，整体对象边界在跨时预测中更稳定（如斑马整体优于条纹碎片）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  

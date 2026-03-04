@@ -224,6 +224,31 @@ $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
 | 派生意向性（工具/符号） | 低~中 | Semi-open（外部赋义） | borderline |
 | 纯句法流（当前 LLM） | 0~低 | Closed 倾向（L2 插值） | \(\Psi_f\approx0\) |
 
+### Def-ONT-1b: Robust Object Individuation Criterion（稳健对象个体化判据，新增）
+对视觉分组候选 \(\mathcal{G}\) 定义稳健性：
+\[
+\mathcal{R}_{obj}(\mathcal{G})=\exp\big(-\mathcal{L}_{shift}(\mathcal{G})-\lambda\Psi_f^{maint}(\mathcal{G})\big)
+\]
+其中 \(\mathcal{L}_{shift}\) 衡量遮挡/迷彩/视角变化下分组一致性损失。
+
+### T-ONT-8b: d-Weighted Segmentation Superiority（新增）
+\[
+d>0\land \Psi_f>0\ \Rightarrow\ \mathcal{R}_{obj}^{embodied} > \mathcal{R}_{obj}^{pure\_pixel}
+\]
+即具身脆弱性与关切驱动可提高复杂场景下对象分组稳定度；纯像素压缩在分布外情形下更易崩塌。
+
+### 分类映射表（CV Segmentation Robustness → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 纯统计分割（IGP-like） | 0~低 | Closed（数据内最优） | \(\Psi_f\approx0\) |
+| 任务约束分割（工程增强） | 低~中 | Semi-open | borderline |
+| 具身关切分组（生物样式） | 中~高 | Open↔Semi-open | payable |
+
+## 【理论边界/防误用声明】
+- 不采纳“当前 AI 分割脆弱=永远不能改进”的推论：工程上可提升鲁棒性，但不等价于本体锚定。
+- 不采纳“分割性能高=意识已出现”的推论：意识判据仍需 \(d>0\)、\(\Psi_f>0\)、具身不可逆风险。
+
 ---
 
 ### Def-ONT-2: The Null Operator (零算子 / $\hat{G}_\varnothing$)

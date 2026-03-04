@@ -556,9 +556,29 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 | 无结构视觉（失认症） | 低~中 | Open（高熵暴露） | overloaded |
 | 纯逆问题训练路径 | 低~中 | Closed（单向管线） | 被低估/脆弱 |
 
+### Def-Exp-LGN-1: LGN 80/20 Top-Down Prior Law（新增）
+定义 LGN 有效输入分解：
+\[
+I_{LGN}(t)=w_{td}I_{topdown}(t)+w_{bu}I_{retina}(t),\quad w_{td}\approx0.8,\ w_{bu}\approx0.2
+\]
+该比值作为感知“先验主导度”操作化参数，而非固定不可变常数。
+
+### Hyp-LGN-1: Top-down Dominance Predicts Grouping Stability
+- 预测：在遮挡/迷彩/低对比条件下，\(w_{td}\) 升高个体将表现更高对象连续性判断稳定度 \(S_{group}\)。
+- 证伪：控制视网膜信号质量后，\(w_{td}\) 与 \(S_{group}\) 无显著相关。
+
+### 分类映射表（LGN Feedback Pattern → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| top-down 主导（80/20 近似） | 中~高 | Semi-open（先验牵引） | payable |
+| bottom-up 过载（先验失配） | 低~中 | Open（噪声暴露） | overloaded |
+| 单向提取假设（过时模型） | 低 | Closed（管线化） | 被误估 |
+
 ## 【理论边界/防误用声明】
 - 不采纳“失认症=整体意识缺失”的推论：该条仅指对象结构化子功能异常。
 - 不采纳“单一脑区定位即可解释全部症状”的推论：SRT 采用跨网络失配框架。
+- 不采纳“80/20 为普适常数”的推论：该值是任务与状态依赖的经验近似窗口。
 
 ## 6.3 核心可证伪预测表
 
