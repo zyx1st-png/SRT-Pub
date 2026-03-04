@@ -781,6 +781,38 @@ L_1^{(k)}=\hat G_{\theta^{(k)}}[L_0],\quad \theta^{(k)}=\theta_{bio}\oplus\theta
 - 不采纳“图景冲突=其中一方纯错觉”的推论：两者可在各自 \(\theta\) 与任务边界下合法。
 - 不采纳“不可缝合=不可对齐”的推论：SRT 允许通过协议映射对齐，不要求全信息同构。
 
+### 5.18 逻辑的降维声明（The Deflation of Logic，新增）
+
+### Def-Phil-5.18a: Logic as L2 Protocol Grammar
+\[
+\mathcal{L}_{classical}\subset L_2\text{-protocols}(\Pi)
+\]
+经典逻辑是宏观对象处理的协议语法，不是 \(L_0^{abs}\) 的普适本体法则。
+
+### T-Phil-5.18b: Category-Mistake of Cross-Scale Logic Export
+\[
+\text{Apply}(\mathcal{L}_{macro}\to L_{1,micro})\Rightarrow \text{Paradox inflation}
+\]
+量子悖论并非“现实反逻辑”，而是将宏观离散协议越级外推至微观连续/叠加切片。
+
+### Def-Phil-5.18c: Cognitive Metaphysics Programmatic Turn
+哲学任务从“绝对存在清单”转向“显现生成机制”：
+\[
+\text{Metaphysics}_{new}=\text{Study}\big(\hat G_\theta,\Pi,\Psi_f,\pi_\lambda\big)
+\]
+
+### 分类映射表（Logic/Reality Clash → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 经典逻辑绝对化 | 低~中 | Closed（语法本体化） | 被误估 |
+| 多尺度协议分层 | 中~高 | Open↔Semi-open | payable |
+| 量子反常“反逻辑”误读 | 低 | Closed（越级套用） | overloaded |
+
+## 【理论边界/防误用声明】
+- 不采纳“逻辑降维=放弃推理规范”的推论：SRT 限定逻辑适用域，不否定形式推理价值。
+- 不采纳“量子悖论=任何矛盾都可成立”的推论：越级失配不等于规范失效。
+
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构

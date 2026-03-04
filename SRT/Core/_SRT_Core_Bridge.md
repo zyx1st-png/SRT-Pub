@@ -411,6 +411,26 @@ SRT目前**无法解释**:
 - L_0的内在梯度$\nabla\Psi_{\text{potential}}$的来源(为什么有"初心"?)
 - 是否存在超越L_2的更高收敛层(例:跨物种的"集体无意识"?)
 
+### 5.3 Ontological Manifesto（存在论宣言，新增）
+
+1. **Form is relative, Friction is objective.**
+   \[
+   \text{Form}(L_1)\sim\theta,\qquad \Psi_f\ \text{is physically payable}
+   \]
+   显现形状受算子参数影响，但锚定代价不是主观任意项。
+
+2. **Against pure idealism and flat realism.**
+   \[
+   L_1\neq L_0^{abs},\quad L_1\neq\text{mere fiction}
+   \]
+   SRT 同时拒绝“世界只是心智投影”与“对象边界先验给定”两端。
+
+3. **Reality is phase-locked anchoring.**
+   \[
+   \text{Reality hardness}\propto\int \Psi_f\,dt
+   \]
+   我们经验的“硬度”来自持续支付与稳定耦合，而非语词宣称。
+
 ---
 
 ## 【理论边界/防误用声明】

@@ -369,6 +369,16 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：学科合作失败、数据缺失、模型选择偏好。
 - **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` T-Phil-5.17b（2026-03-04 新增）。
 
+### Deflation of Logic（逻辑降维）
+- **Canonical Scope**：将经典逻辑定位为 \(L_2\) 协议语法，限制其跨尺度本体外推。
+- **Confusable With**：反逻辑主义、相对主义任意推理、取消形式系统。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` §5.18（2026-03-04 新增）。
+
+### Ontological Manifesto（存在论宣言）
+- **Canonical Scope**：SRT 对“相对形状 + 客观摩擦”双命题的总纲表述，用于区分选择一元论与唯心/实在两极。
+- **Confusable With**：政治宣言、价值立场口号、形而上口号化文本。
+- **Lineage/Source**：`Core/_SRT_Core_Bridge.md` §5.3（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
