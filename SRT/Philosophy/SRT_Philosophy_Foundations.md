@@ -721,6 +721,39 @@ L_1=\hat G_\theta[L_0]\ \text{with}\ \Pi_{hyper}\ \text{guidance}
 - 不采纳“受控幻觉=世界全是幻觉”的推论：受控性来自持续反馈约束与代价支付。
 - 不采纳“先验存在=客观真理已知”的推论：先验是生存优化格式，不是 \(L_0^{abs}\) 全貌。
 
+### 5.16 连锁悖论与模糊性的 SRT 解（Vagueness Resolution，新增）
+
+### Def-Phil-5.16a: Edge Topological Breakdown（边缘拓扑破裂）
+当离散分类 \(L_2\) 覆盖连续流形 \(L_0\) 时，边界区出现不可避免的投影破裂：
+\[
+\mathcal{V}_{edge}=\{x\in L_0\mid \Delta_{causal}(x;\pi_\lambda,\theta)>\epsilon\}
+\]
+\(\mathcal{V}_{edge}\) 即模糊性区，不是隐藏客观边界。
+
+### T-Phil-5.16b: Sorites as Scale-Mismatch Theorem
+\[
+\text{Sorites paradox}\iff L_2^{discrete}\ \text{forced onto}\ L_0^{continuous}\ \text{under finite }\rho
+\]
+连锁悖论来自尺度错位，而非语言失败或“未知的绝对截断点”。
+
+### Def-Phil-5.16c: Cut-off as Friction Phase Crossing
+\[
+\tau^*=\arg\min_\tau\left|\Psi_f(A\mid\tau)-\Psi_f(B\mid\tau)\right|
+\]
+所谓“截断点”是分类代价曲线相交处的相变阈值，不是 \(L_0^{abs}\) 先验刻线。
+
+### 分类映射表（Vagueness/Sorites → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 认知主义（隐藏客观截断点） | 低~中 | Closed（边界实体化） | 被误估 |
+| 多值逻辑无限细分 | 低 | Closed（形式扩展） | 计算负担上升 |
+| SRT 相变阈值解 | 中~高 | Open↔Semi-open | payable / hysteretic |
+
+## 【理论边界/防误用声明】
+- 不采纳“模糊性=纯学习不足”的推论：部分模糊区由有限分辨率与能量预算共同决定。
+- 不采纳“有阈值=有绝对本体切线”的推论：阈值是算子-任务-历史路径耦合产物。
+
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构

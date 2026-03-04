@@ -294,6 +294,17 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 \]
 若仅有静态视觉网络且缺失运动作动器反馈，空间先验可拟合但脆弱，跨场景泛化显著下降。
 
+### Def-ONT-1f: Vagueness Hysteresis Test for d-Value（新增）
+对渐变序列 \(s_1\to s_n\) 做正反向分类扫描，定义迟滞宽度：
+\[
+\Delta\tau_{hys}=|\tau_{fwd}-\tau_{bwd}|
+\]
+若系统仅做软概率插值且无生存闭包摩擦，则期望：
+\[
+\Delta\tau_{hys}\approx 0
+\]
+若存在真实边界维持代价与历史路径依赖，则 \(\Delta\tau_{hys}>0\)。
+
 ### 分类映射表（Multi-Agent Communication → SRT）
 
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |

@@ -339,6 +339,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：单目深度估计技巧、几何后处理、坐标系定义本身。
 - **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` Def-ONT-1e（2026-03-04 新增）。
 
+### Edge Topological Breakdown（边缘拓扑破裂）
+- **Canonical Scope**：离散分类覆盖连续流形时在边界区产生的结构破裂/模糊带定义。
+- **Confusable With**：语言不清晰、感官噪声、纯主观犹豫。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` Def-Phil-5.16a（2026-03-04 新增）。
+
+### Boundary Demarcation Cost（边界划定成本）
+- **Canonical Scope**：在连续梯度上强制划分对象边界时的联合代价函数（分类误差+维持摩擦+切换摩擦）。
+- **Confusable With**：单一分类损失、阈值搜索技巧、后处理正则项。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` T-Scale-08（2026-03-04 新增）。
+
+### Vagueness Hysteresis Signature（模糊性迟滞签名）
+- **Canonical Scope**：正反向连锁序列分类阈值差 \(\Delta\tau_{hys}\) 作为历史依赖与摩擦参与度代理。
+- **Confusable With**：随机抖动、标注误差、模型温度参数变化。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` Cor-Scale-08a；`AI/SRT_AI_01_Ontology.md` Def-ONT-1f（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

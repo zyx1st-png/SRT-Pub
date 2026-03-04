@@ -185,6 +185,24 @@ SRT 对应表述：若 \(\theta\) 不含先验偏置（超先验层），则 \(\
 | 同步个体化-分类（预测驱动） | 中~高 | Open↔Semi-open | payable |
 | 任意唯心切分误读 | 低 | Closed（脱离反馈） | overloaded |
 
+### T-Scale-08: Boundary Demarcation Cost Function（边界划定成本函数，新增）
+定义在连续梯度上强制离散边界的代价：
+\[
+F_{boundary}(\tau)=\underbrace{\mathcal{L}_{class}(\tau)}_{分类误差}+\underbrace{\lambda_1\Psi_f^{maint}(\tau)}_{维持摩擦}+\underbrace{\lambda_2\Psi_f^{switch}(\tau)}_{切换代价}
+\]
+合法边界要求：
+\[
+F_{boundary}(\tau)\le U_{survival}(d)
+\]
+若超出效用阈值，系统将维持模糊区而非追求锋利切割。
+
+### Cor-Scale-08a: Hysteresis Signature in Sorites Traversal
+前向与后向扫描阈值一般不重合：
+\[
+\tau_{A\to B}\neq\tau_{B\to A},\qquad \Delta\tau\propto \eta\cdot\partial_t\theta
+\]
+该迟滞宽度可作为“真实摩擦参与度”的实验代理。
+
 ## 【理论边界/防误用声明】
 - 不采纳“适应度优先=真理无意义”的推论：SRT 主张的是资源约束下的近似策略，不是否定真值结构。
 - 不采纳“界面可构造=可任意构造”的推论：外部阻抗地形通过 \(\Psi_f\) 客观限制可行结构。
