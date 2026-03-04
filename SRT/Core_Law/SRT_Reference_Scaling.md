@@ -401,6 +401,30 @@ Agency = d · A · NTIC
 
 * **Implication**：意识相关性不是“神经系统有/无”开关，而是沿生物选择能力连续变化。
 
+## §6.5 生命起源补丁：代谢优先（新增）
+
+### T-Scale-3: Operator Precedes Archive（算子先于存档定理）
+在生命起源尺度，若系统要形成可持续的 \(L_2\) 存档（如遗传模板），必须先存在能维持能流闭环的原初算子：
+\[
+\hat{G}_{proto}\ \prec\ L_{2,archive}
+\]
+* **Implication**：基因是后发的压缩记忆结构，不是生命发生学起点。
+
+### Def-Scale-PCC-1: Primordial Constraint Closure（原初约束闭包）
+\[
+\hat{G}_{proto}[\hat{G}_{proto}[\cdots L_0\cdots]] = \text{Stable Flow}
+\]
+并满足：
+\[
+P_{in}>P_{diss}+P_{maint},\quad \frac{d\theta}{dt}\neq 0
+\]
+表示系统可持续支付 \(\Psi_f\) 并更新参数，而非一次性耗散。
+
+### Def-Scale-LUCO-1: Last Universal Common Operator（LUCO）
+- **定义**：最晚的、跨后代谱系共享的“代谢算子模板”，先于 DNA-LUCA。  
+- **关系**：\(\text{LUCO} \rightarrow L_{2,archive}\text{(LUCA)}\)。
+- **意义**：将生命共同祖先从“分子序列”前移到“可持续选择机制”。
+
 ## Def-Scale-M1: Mineral Evolutionary Scale（矿物演化尺度）
 - **\(\hat{G}_{\theta,miner}\)**：在温压-化学势约束下筛选矿物相稳定路径的选择算子。
 - **\(L_0^{miner}\)**：矿物构型、晶格拓扑、缺陷与相变路径的潜在域。

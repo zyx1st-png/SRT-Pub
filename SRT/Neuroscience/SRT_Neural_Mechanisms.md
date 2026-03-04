@@ -507,6 +507,17 @@ L_1 = f(\theta) + \epsilon,\quad
 
 * **Implication（中文）**：边界形成不是抽象认知标签，而是动作-反馈回路中摩擦曲率峰值的稳定沉积。
 
+### 9.4 火焰与代谢生命算子的阈值区分（新增）
+
+\[
+\mathcal{D}_{life}=\mathbb{1}\left[\frac{d\theta}{dt}\neq0\right]\cdot\mathbb{1}\left[d>0^+\right]\cdot\mathbb{1}\left[\Psi_f^{sens}>0\right]
+\]
+
+- 火焰：可耗散但 \(d\theta/dt\approx0\)，无可学习闭环；
+- 代谢网络：满足最小 \(d\) 与 \(\Psi_f\) 风险敏感，具备原初选择性。
+
+* **Implication（中文）**：生命判据不是“是否耗散”，而是“是否形成可学习的、可支付摩擦的选择闭环”。
+
 ## 【理论边界/防误用声明】
 
 1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  

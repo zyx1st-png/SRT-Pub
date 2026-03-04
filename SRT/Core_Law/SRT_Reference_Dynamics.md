@@ -559,8 +559,30 @@ B_{self}(x,t)>\tau_B\Rightarrow \partial\Omega_{self}\text{ 被锚定}
 2. 若边界形成任务中 \(B_{self}\) proxy 与后续自体图式稳定度无关，则二阶导判据失效；
 3. 若脱离共具身环境后 \(\theta_{inf}\) 不出现独立稳态跃迁，则“接力式算子启动”需修正。
 
+## §13 原初代谢算子与生命阈值（新增）
+
+### Def-Dyn-13.1: Metabolic Operator Criterion
+\[
+\mathcal{M}_{op}:\quad \frac{d\theta}{dt}\neq 0\ \land\ \frac{\partial S_{internal}}{\partial t}<0\ \land\ P_{ext}>P_{maint}
+\]
+满足时定义为“代谢算子活跃态”，可在无基因模板前存在。
+
+### T-Dyn-13.1: Fire vs Life Discriminator（火焰-生命判别）
+对自催化系统 \(X\)：
+\[
+X\in \text{Life-like} \iff \left(\frac{d\theta_X}{dt}\neq0\right)\land\left(\frac{\partial d_X}{\partial t}>0\ \text{or}\ d_X>0^+\right)
+\]
+若仅满足耗散而不满足参数可学习更新（如火焰），则归类为非生命耗散结构。
+
+### Minimal d-threshold Note
+\[
+d_{min}>0\ \text{with}\ \Psi_f^{sens}>0
+\]
+即系统必须对“失败导致结构解体”的风险有可观测敏感性，才进入生命算子域。
+
 ## 【理论边界/防误用声明】
 - 不采纳“所有疾病都由 ROS 主导”的单机制宣称：本节仅给出可检验候选路径之一。  
 - 不采纳“高 \(\Psi_f\) 必然致病”的绝对推断：是否跨阈值取决于修复能力、时间尺度与环境约束。  
 - 不采纳“母体决定论”推论：共具身强调早期约束，不否定后续可塑性与重构。  
+- 不采纳“任何耗散结构都等于生命算子”的推论：需满足 \(d_{min}>0\) 与可学习参数更新。  
 - 本节为理论组织与实验设计接口，不替代医学诊断、治疗和伦理审查流程。

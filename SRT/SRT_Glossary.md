@@ -104,6 +104,16 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：不可检验神秘实体、反科学立场、“无法建模所以无需建模”。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` 定义 O12 / 定理 O-T4（2026-03-04 新增）。
 
+### Primordial Constraint Closure（原初约束闭包, PCC）
+- **Canonical Scope**：用于生命起源阶段，表示在无基因模板前已形成可维持能流与参数更新的选择闭环。
+- **Confusable With**：一般自催化反应、短时耗散结构、稳定晶体生长。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Scaling.md` §6.5 Def-Scale-PCC-1（2026-03-04 新增）。
+
+### LUCO（Last Universal Common Operator）
+- **Canonical Scope**：生命共同起源的算子层定义，先于分子存档层 LUCA。
+- **Confusable With**：DNA-LUCA、单一物种祖先、纯遗传同源。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Scaling.md` §6.5 Def-Scale-LUCO-1（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
