@@ -88,6 +88,12 @@ $$\mathcal{H}_k(K_t) \neq 0 \Rightarrow \text{存在由 }L_1\text{ 边界界定�
 
 $$L_2 \equiv \{σ : \hat{G}_θ[σ] = σ \text{ 且稳定}\}$$
 
+**定义 O3d-L2（相对性声明，新增）**:
+在严格写法中，任何收敛域都应带参数下标：
+$$L_{2,\theta} \neq L_0^{abs}$$
+其中人类科学对应 \(L_{2,\theta_{human}}\)。
+* **Implication**：标准模型、广义相对论等是高稳定 \(L_{2,\theta_{human}}\)，但不等价于绝对潜在域 \(L_0^{abs}\)。
+
 **定义 O3a (迟滞累积)**:
 
 $$L_2(t) = L_2(t-1) + η · \text{sign}(Δσ) · |Δσ|^α$$

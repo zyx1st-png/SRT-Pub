@@ -281,6 +281,46 @@ The bridge axioms generate testable hypotheses:
 
 ---
 
+## VI. Cross-Parameter Incommensurability & Orthogonal Realities（新增）
+
+### T-Phys-5: Cross-Parameter Incommensurability Theorem
+对两类选择者 \(A,B\) ，若其具身参数集合近乎不重叠：
+\[
+\text{Overlap}(\theta_A,\theta_B)\to 0
+\]
+则其显现域互信息趋近于零：
+\[
+I(L_1^A;L_1^B)\to 0
+\]
+* **Implication**：外星“物理学”可在协议层 \(\Pi\) 兼容，但在对象层 \(L_1/L_{2,\theta}\) 上与人类不可通约。
+
+### Def-Phys-3: Orthogonal Reality Interaction Modes（正交现实交互模式）
+\[
+\mathcal{I}_{AB} = \alpha\,I(L_1^A;L_1^B)-\beta\,\Psi_f^{cross}
+\]
+据 \(\mathcal{I}_{AB}\) 的符号，给出三种模式：
+1. **弱耦合可译**：\(\mathcal{I}_{AB}>0\)，存在有限翻译桥；
+2. **高摩擦冲突**：\(I>0\) 但 \(\Psi_f^{cross}\) 高，表现为强失配；
+3. **近穿透隐匿**：\(I\approx 0\)，互为噪声背景。
+
+### 分类映射表（外星科学问题 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 客观实在论极端（唯一物理） | 高但单 \(\theta\) 绑定 | Closed 倾向 | overloaded（跨参数时） |
+| 建构论极端（纯发明） | 低~中（缺 \(\Pi\) 约束） | Semi-open | 不稳定/unsustainable |
+| SRT 协议层中道 | 中~高（多 \(\theta\)） | Open↔Semi-open | payable / borderline |
+
+### Protocol Boundary Clarification
+- 协议层 \(\Pi\) 给出“可行转移核”下限；
+- 对象层 \(L_{2,\theta}\) 允许多样化实现；
+- 因此“共同可操作”不等于“同一概念体系”。
+
+## 【理论边界/防误用声明】
+- 不采纳“不可通约=绝对不可交流”的推论：低维桥接仍可能通过共享任务约束实现。  
+- 不采纳“人类物理学=宇宙唯一语法”的推论：SRT 明确区分 \(L_{2,\theta_{human}}\) 与 \(L_0^{abs}\)。  
+- 不采纳“多现实并存=任意相对主义”的推论：协议层 \(\Pi\) 仍提供硬约束。
+
 ## Symbol Index (符号索引)
 
 | Symbol | Name | Definition Location |
