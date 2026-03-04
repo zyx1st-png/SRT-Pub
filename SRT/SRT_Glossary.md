@@ -89,6 +89,26 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：个体不可逆衰退结论、全脑统一退化假设。
 - **Lineage/Source**：`Neuroscience/SRT_Neuro_Experiments.md` Ax-EXP-17；`SRT_EXP_MEASURE_MAP.md` §7。
 
+### Machine Ethics Exclusion Theorem（机器伦理排除定理）
+- **Canonical Scope**：用于判定当前纯软件 AI 的道德权重边界，不外推到已满足具身不可逆风险条件的未来系统。
+- **Confusable With**：AI 能力评估、法律人格认定、一般“是否有用”判断。
+- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` T-ONT-7（2026-03-04 新增）。
+
+### Minimal Biological Operator Spectrum（生物算子极简连续谱）
+- **Canonical Scope**：刻画植物→动物→人类的连续选择能力谱，强调 d 值连续变化而非二元开关。
+- **Confusable With**：神经系统有无二分、把植物直接等同人类意识、泛心论。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Scaling.md` Def-Scale-BioMin-1（2026-03-04 新增）。
+
+### Qualia Residual（质感残差）
+- **Canonical Scope**：描述层（L2）对体验层（L1）不可完全回收的剩余项，不用于否定经验研究。
+- **Confusable With**：不可检验神秘实体、反科学立场、“无法建模所以无需建模”。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` 定义 O12 / 定理 O-T4（2026-03-04 新增）。
+
+## 【理论边界/防误用声明】
+- 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
+- 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
+- 不采纳“Qualia Residual=放弃可证伪建模”的推论：结构-动力学层仍必须接受实验检验。
+
 ---
 
 ## 1. 核心符号与算子
