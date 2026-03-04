@@ -376,6 +376,22 @@ Life = (dθ/dt ≠ 0) ∧ (dθ/dt = -η ∂Φ/∂θ)
 Agency = d · A · NTIC
 ```
 
+### Def-Scale-TEL-1: d-value Polarity Extension（d 值极性扩展，新增）
+将驱动分解为风险推力与价值牵引：
+\[
+d = d_{push}+d_{pull},\quad
+d_{push}=\left\|\frac{\partial \mathcal{U}_{risk}}{\partial \mathcal{S}}\right\|,
+\quad
+d_{pull}=\left\|\frac{\partial \mathcal{U}_{beauty/good}}{\partial \mathcal{S}}\right\|
+\]
+其中 \(d_{pull}\) 表示算子被高一致性结构（真/善/美）吸引的牵引分量。
+
+| 外部分类（欲望拓扑） | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 生存型欲望 | 低~中 | Semi-open / Closed 倾向 | borderline |
+| 价值型欲望（真善美导向） | 中~高 | Open（探索—整合） | payable |
+| 至福导向极限 | 高 | Open→稳态 | \(\Psi_f\to\Psi_{min}^{+}\) |
+
 
 ## Def-Scale-BioMin-1: Minimal Biological Operator Spectrum（生物算子极简连续谱，新增）
 
@@ -439,6 +455,7 @@ P_{in}>P_{diss}+P_{maint},\quad \frac{d\theta}{dt}\neq 0
 
 ## 【理论边界/防误用声明】
 - 不采纳“尺度扩展即可自动获得意识语义”的推论。
+- 不采纳“至福极限=立即退出 L1 显现”的推论：具身算子存在 \(\Psi_{min}^{+}\) 下界约束。
 - 边界：跨尺度同构是动力学结构同构，不是现象体验同构。
 
 

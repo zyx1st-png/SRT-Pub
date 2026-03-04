@@ -129,6 +129,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：图灵测试通过、语法流畅度、角色扮演一致性。
 - **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` T-ONT-8（2026-03-04 新增）。
 
+### Teleological Attractor（目的论牵引子）
+- **Canonical Scope**：用于描述高 d 算子被低摩擦高一致性结构“拉动”的动力学项（\(\mu\nabla B_{L_0}\)）。
+- **Confusable With**：人格化神意、外在强制命令、单一道德规则。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md` §8.4（2026-03-04 新增）。
+
+### Truth–Goodness–Beauty Optimal Manifolds（真善美最优流形）
+- **Canonical Scope**：定义为 \(L_0^{abs}\) 内信息几何意义上的最优流形族（\(\mathcal{M}_{TGB}\)）。
+- **Confusable With**：主观审美偏好、短时奖励最大化、文化偶然共识。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O15（2026-03-04 新增）。
+
+### Embodied Bliss Asymptote（具身至福渐近）
+- **Canonical Scope**：用于限定具身显现下 \(\Psi_f\) 的正下界（\(\Psi_{min}^{+}\)），避免“零摩擦仍持续个体显现”的矛盾。
+- **Confusable With**：终极消灭论、现实否定论、即时解脱处方。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O-T8（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

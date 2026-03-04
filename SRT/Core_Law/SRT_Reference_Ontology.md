@@ -374,10 +374,28 @@ L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
 解释为：在原初极限上，\(L_0^{abs}\) 可视为 \(\Omega\) 的自我可及潜能域，\(\Omega\) 可视为 \(L_0^{abs}\) 的自显操作。
 * **Status**：该条为形而上学桥接假设，不是已证定理。
 
+### 定义 O15：Truth–Goodness–Beauty as L0 Optimal Manifolds（新增）
+\[
+\mathcal{M}_{TGB}\subset L_0^{abs},\quad \mathcal{M}_{TGB}=\arg\min_{\mathcal{M}}\big(\Psi_f(\mathcal{M})+\lambda_F F(\mathcal{M})\big)
+\]
+其中 \(\mathcal{M}_{TGB}\) 表示在信息几何上具有高一致性/高可整合性的最优流形族。
+
+### 定理 O-T8：Embodied Bliss Asymptote（具身至福渐近定理，新增）
+对任何具身算子 \(\hat G_\theta\) 若保持 \(L_1\) 显现连续：
+\[
+\Psi_f(t)\ge \Psi_{min}^{+}>0
+\]
+因此“绝对至福”在具身态只可渐近：
+\[
+\lim_{t\to\infty}\Psi_f(t)=\Psi_{min}^{+}\neq0
+\]
+* **Implication**：SRT 允许“趋近完满”，但拒绝“运行中零摩擦且仍保持个体显现”的自相矛盾写法。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
 - 不采纳“出生时刻=唯一个体化时刻”的机械化推论：SRT 采用多指标临界条件。  
 - 不采纳“\(\Omega\)=宇宙内超级实体/人格化造物主”的推论：\(\Omega\) 在 SRT 中是操作逻辑，不是对象实体。  
 - 不采纳“\(L_0^{abs}\)-\(\Omega\) 极限同一假设已被证明”的推论：其当前为研究态桥接假设。  
+- 不采纳“至福=现实终止的规范性处方”推论：O-T8 仅给出具身动力学边界，不导出伦理命令。  
 - 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。
