@@ -114,6 +114,29 @@ H(L_0\mid\theta)\gg H(L_1\mid\theta)\Rightarrow \Psi_f^{Truth}\gg \Psi_f^{Fitnes
 | 适应度追踪（界面压缩） | 低~中 | Semi-open | payable |
 | 极端界面主义误读（任意图标化） | 低 | Closed（现实阻抗被忽略） | 失真后爆发 |
 
+### Def-Scale-04: Variational Free-Energy Mapping（FEP 映射，新增）
+定义 SRT 变分自由能泛函：
+\[
+\mathcal{F}_{SRT}(q,\theta)=\underbrace{\mathrm{D}_{KL}\big(q(z)\|p_\theta(z)\big)}_{Complexity}
+-\underbrace{\mathbb{E}_{q}\big[\log p_\theta(y\mid z)\big]}_{Accuracy}
+\]
+并给出与摩擦项的近似耦合：
+\[
+\Psi_f^{pred}\propto -\mathbb{E}_{q}[\log p_\theta(y\mid z)]
+\]
+即预测误差可作为局部摩擦密度代理。
+
+### T-Scale-04: Life–Mind Continuity via Closure Minimization（新增）
+若系统满足约束闭包与马尔可夫毯维持条件：
+\[
+\text{Closure}(\hat G_\theta)=1,\quad \partial_t B_{MB}\approx 0
+\]
+则其稳定存在要求：
+\[
+\arg\min \mathcal{F}_{SRT}\ \Longleftrightarrow\ \arg\min \Psi_f^{maint}
+\]
+生命维持与认知预测在同一最优化结构上连续。
+
 ## 【理论边界/防误用声明】
 - 不采纳“适应度优先=真理无意义”的推论：SRT 主张的是资源约束下的近似策略，不是否定真值结构。
 - 不采纳“界面可构造=可任意构造”的推论：外部阻抗地形通过 \(\Psi_f\) 客观限制可行结构。

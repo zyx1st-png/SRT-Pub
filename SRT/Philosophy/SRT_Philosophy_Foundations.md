@@ -665,6 +665,33 @@ SRT 反驳：\(L_0\to L_1\) 是热力学不可逆映射，逆向唯一还原在�
 - 不采纳“欠定性=一切解释等价”的推论：SRT 仍以预测误差与 \(\Psi_f\) 可支付性筛选模型。
 - 不采纳“前向生成=主观任意造物”的推论：外部阻抗与失败代价提供客观约束。
 
+### 5.14 预测结构即存在（Predicted Structure as Existence，新增）
+
+### T-Phil-5.14a: Existence as Thermodynamically Payable Prediction
+\[
+\text{Exist}_{L_1}(X\mid\theta)\iff
+\exists\,\hat X:\ \mathcal{F}_{SRT}(\hat X)\ \text{minimized and}\ \Psi_f^{maint}(\hat X)<\infty
+\]
+对象存在不是“被动看见”，而是“在可支付预算下被持续预测并维持”。
+
+### Cor-Phil-5.14b: Macro Object Compression Advantage
+\[
+\Psi_f^{maint}(\text{Table as block}) \ll \sum_i \Psi_f^{maint}(\text{particle}_i)
+\]
+因此“桌子”在生命算子中是热力学可行的低摩擦拓扑块。
+
+### 分类映射表（Life-Mind Continuity / FEP → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 自创生闭包维持 | 低~中 | Semi-open（代谢闭环） | payable |
+| 预测误差最小化 | 中 | Open↔Semi-open | payable / borderline |
+| 泛化过度（万物皆预测） | 低 | Closed（概念滥用） | 被误估 |
+
+## 【理论边界/防误用声明】
+- 不采纳“任何稳态系统=认知系统”的推论：SRT 要求具身闭包、关切梯度与跨时更新能力。
+- 不采纳“预测成功=绝对真理”的推论：预测仅保证可维持性，不保证对 \(L_0^{abs}\) 完全对应。
+
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构

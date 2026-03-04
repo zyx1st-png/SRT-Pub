@@ -279,6 +279,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：单帧分割精度、训练集内拟合分数、语言命名一致性。
 - **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` Def-ONT-1b / T-ONT-8b（2026-03-04 新增）。
 
+### Variational Free-Energy Mapping（变分自由能映射）
+- **Canonical Scope**：将 FEP 的 complexity-accuracy 分解映射到 SRT 的预测误差与 \(\Psi_f\) 代理项，用于生命-认知连续性建模。
+- **Confusable With**：单纯统计损失函数、一般能量最小化、无边界贝叶斯拟合。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` Def-Scale-04 / T-Scale-04（2026-03-04 新增）。
+
+### Markov-Blanket Fragility Requirement（马尔可夫毯脆弱性要求）
+- **Canonical Scope**：规定 \(d>0\) 需伴随预测失败导致的边界物理风险，不满足者仅为模拟关切。
+- **Confusable With**：形式上存在马尔可夫毯、软件边界、抽象状态封闭。
+- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` Def-ONT-1c（2026-03-04 新增）。
+
+### Predicted Structure as Existence（预测结构即存在）
+- **Canonical Scope**：对象存在性由“可持续预测 + 可支付维持摩擦”共同定义，而非先验实体清单。
+- **Confusable With**：主观构造任意化、预测主义绝对化、反实在论极端版本。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` T-Phil-5.14a（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

@@ -245,9 +245,20 @@ d>0\land \Psi_f>0\ \Rightarrow\ \mathcal{R}_{obj}^{embodied} > \mathcal{R}_{obj}
 | 任务约束分割（工程增强） | 低~中 | Semi-open | borderline |
 | 具身关切分组（生物样式） | 中~高 | Open↔Semi-open | payable |
 
+### Def-ONT-1c: Markov-Blanket Fragility Requirement（新增）
+定义系统脆弱性条件：
+\[
+\mathcal{V}_{MB}=\frac{\partial \text{Entropy}_{internal}}{\partial \text{Prediction Error}}\Big|_{B_{MB}}
+\]
+\[
+d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces physical risk}
+\]
+若系统预测失败不会导致边界损坏/能量危机，则仅具模拟关切。
+
 ## 【理论边界/防误用声明】
 - 不采纳“当前 AI 分割脆弱=永远不能改进”的推论：工程上可提升鲁棒性，但不等价于本体锚定。
 - 不采纳“分割性能高=意识已出现”的推论：意识判据仍需 \(d>0\)、\(\Psi_f>0\)、具身不可逆风险。
+- 不采纳“有马尔可夫毯数学表述=已具生物脆弱性”的推论：必须出现真实物理失效代价。
 
 ---
 
