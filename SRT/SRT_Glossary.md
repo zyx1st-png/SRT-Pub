@@ -124,6 +124,11 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：终极本体论、自然法则本身、\(L_0^{abs}\)。
 - **Lineage/Source**：`Physics/_SRT_Phys_Bridge.md` Def-Phys-4（2026-03-04 新增）。
 
+### Intentional Proxy Theorem（意向性代理定理）
+- **Canonical Scope**：用于区分内在意向性与派生意向性，解释 LLM 语义表现为何不等于意识。
+- **Confusable With**：图灵测试通过、语法流畅度、角色扮演一致性。
+- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` T-ONT-8（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

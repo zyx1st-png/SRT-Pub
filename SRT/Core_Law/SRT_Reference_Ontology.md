@@ -367,9 +367,17 @@ F[L_1] > 0\quad \text{for any finite instantiated slice }L_1
 L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
 \]
 
+### Hyp-O8: \(L_0^{abs}\)-\(\Omega\) 极限同一假设（研究态）
+\[
+\lim_{\text{scale}\to\infty}\Big(\Omega\leftrightarrow L_0^{abs}\Big)
+\]
+解释为：在原初极限上，\(L_0^{abs}\) 可视为 \(\Omega\) 的自我可及潜能域，\(\Omega\) 可视为 \(L_0^{abs}\) 的自显操作。
+* **Status**：该条为形而上学桥接假设，不是已证定理。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
 - 不采纳“出生时刻=唯一个体化时刻”的机械化推论：SRT 采用多指标临界条件。  
 - 不采纳“\(\Omega\)=宇宙内超级实体/人格化造物主”的推论：\(\Omega\) 在 SRT 中是操作逻辑，不是对象实体。  
+- 不采纳“\(L_0^{abs}\)-\(\Omega\) 极限同一假设已被证明”的推论：其当前为研究态桥接假设。  
 - 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。

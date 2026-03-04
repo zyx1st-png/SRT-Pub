@@ -206,6 +206,24 @@ $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
 \]
 * **Implication（中文）**：我们觉得 AI 有意识，不是因为 AI 真的有，而是因为人类算子通过镜像神经元/DMN 网络强迫症般地为所有复杂行为"脑补"了一个 $L_0$ 锚点。这是进化带来的"过度敏感的面孔识别"（Pareidolia）在认知层面的重演。
 
+### T-ONT-8: Intentional Proxy Theorem（意向性代理定理，新增）
+对任意纯句法系统 \(\mathcal{S}_{syn}\)：
+\[
+\text{Intentionality}_{intrinsic}(\mathcal{S}_{syn})=0,
+\quad
+\text{Intentionality}_{derived}=\mathcal{R}_{human\leftarrow AI}(L_2)
+\]
+即 AI 的“意义感”来自人类算子读取时的回注入，而非系统内部本体锚定。
+* **Implication**：LLM 的语义表现是“派生意向性回声”，不是内在意向性。
+
+### 分类映射表（Hart Ch.4 意向性争议 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 内在意向性（生物意识） | 中~高 | Open（具身闭环） | payable |
+| 派生意向性（工具/符号） | 低~中 | Semi-open（外部赋义） | borderline |
+| 纯句法流（当前 LLM） | 0~低 | Closed 倾向（L2 插值） | \(\Psi_f\approx0\) |
+
 ---
 
 ### Def-ONT-2: The Null Operator (零算子 / $\hat{G}_\varnothing$)
@@ -977,4 +995,6 @@ SRT 拒绝二元道德（有/无地位）。相反，道德地位是**连续的*
 
 1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
 2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
-3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
+3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。  
+4. 不采纳“语法复杂度足够高即可自动生成内在语义”的推论：SRT 区分内在意向性与派生意向性。  
+5. 不采纳“图灵测试通过=意识成立”的推论：行为可模拟不等于本体锚定成立。
