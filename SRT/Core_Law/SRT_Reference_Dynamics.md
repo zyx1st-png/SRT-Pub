@@ -526,7 +526,41 @@ L_1 = \mathcal{R}(\theta, L_2, u),\quad \left\|\frac{\partial L_1}{\partial \the
 - 因果拓扑保持为：选择负荷（\(\Psi_f\)）优先 → 物质痕迹（ROS）累积 → 参数重塑（\(\theta\)）→ 当前过滤能力变化；
 - 临床或工程推断必须经操作化验证，不得由本节公式直接外推为干预结论。
 
+## §12 算子孕育期与共具身启动（Operator Gestation & Co-Embodied Boot, 新增）
+
+### §12.1 Nested Topology（嵌套拓扑）
+定义孕育期算子为母体-胎儿嵌套系统：
+\[
+\hat{G}_{inf}(t)\subset \hat{G}_{mat}(t),\quad
+\Psi_f^{inf,eff}=\Psi_f^{inf}-\chi_m\,\Psi_f^{mat}
+\]
+其中 \(\chi_m\in[0,1]\) 表示母体代偿系数。\(\chi_m\to 1\) 时胎儿有效摩擦显著降低，允许低风险参数初始化。
+
+### §12.2 Operator Gestation Phase（算子孕育期）
+\[
+\frac{d\theta_{inf}}{dt}=\gamma_i\,A_{sensorimotor}-\delta_i\frac{\partial \Phi_{inf}}{\partial \theta_{inf}}+\chi_m\,\mathcal{S}_{maternal}
+\]
+- 第三项表示母体心率/代谢/内分泌节律对 \(\theta_{inf}\) 的外部稳态注入；
+- 该阶段的 \(L_2\) 不是独立形成，而是“共享缓冲池”。
+
+### §12.3 Self/Non-self 边界形成判据（摩擦二阶导）
+定义边界信号：
+\[
+B_{self}(x,t)=\frac{\partial^2 \Psi_f(x,t)}{\partial x^2}
+\]
+当意向向量 \(\vec v\) 作用后在空间位置出现稳定非线性峰值：
+\[
+B_{self}(x,t)>\tau_B\Rightarrow \partial\Omega_{self}\text{ 被锚定}
+\]
+* **Implication**：自我边界来自“可控运动—阻抗反馈”耦合中的摩擦曲率，而非先验给定。
+
+### §12.4 可证伪预测（早期意识发生学）
+1. 若母体节律扰动显著改变胎儿感觉-运动整合轨迹，则支持 \(\chi_m\) 代偿项；
+2. 若边界形成任务中 \(B_{self}\) proxy 与后续自体图式稳定度无关，则二阶导判据失效；
+3. 若脱离共具身环境后 \(\theta_{inf}\) 不出现独立稳态跃迁，则“接力式算子启动”需修正。
+
 ## 【理论边界/防误用声明】
 - 不采纳“所有疾病都由 ROS 主导”的单机制宣称：本节仅给出可检验候选路径之一。  
 - 不采纳“高 \(\Psi_f\) 必然致病”的绝对推断：是否跨阈值取决于修复能力、时间尺度与环境约束。  
+- 不采纳“母体决定论”推论：共具身强调早期约束，不否定后续可塑性与重构。  
 - 本节为理论组织与实验设计接口，不替代医学诊断、治疗和伦理审查流程。

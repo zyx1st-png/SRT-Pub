@@ -483,10 +483,35 @@ L_1 = f(\theta) + \epsilon,\quad
 
 * **Implication（中文）**：临床“同靶点异反应”不是噪声，而可能是系统处在临界集附近的非线性放大。
 
+## 9 早期意识与共具身机制扩展（Neuroscience of Consciousness 对齐新增）
+
+### 9.1 分类映射表（早期发生阶段 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 胎内共具身启动期 | 极低~低（\(d\to0^+\)） | Semi-open（母体代偿主导） | payable |
+| 围产分离过渡期 | 低~中波动 | Open↔Semi-open（边界重标定） | borderline |
+| 早期自体图式巩固期 | 低~中 | Open（自驱整合增强） | payable / borderline |
+| 稳态婴儿期（自我-非我初稳） | 中（局部） | Open（本体独立账本初成） | payable |
+
+### 9.2 Co-Embodiment Bootstrapping 方程
+\[
+\hat{G}_{inf}^{0}\leftarrow \mathcal{B}(\hat{G}_{mat},\theta_{maternal}),\quad
+\frac{d\theta_{inf}}{dt}=f_{sensorimotor}+\chi_m\,f_{maternal}
+\]
+
+### 9.3 自体边界的摩擦曲率判据
+\[
+\partial\Omega_{self}\sim\arg\max_x\left(\frac{\partial^2\Psi_f(x)}{\partial x^2}\right)
+\]
+
+* **Implication（中文）**：边界形成不是抽象认知标签，而是动作-反馈回路中摩擦曲率峰值的稳定沉积。
+
 ## 【理论边界/防误用声明】
 
 1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
 2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
 3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。  
 4. 不采纳“历史叙事桥梁=机制完备模型”的推论：临床哲学整合必须补上可测动力学。  
-5. 不采纳“单一疗法可跨层解决全部病理”的推论：SRT 要求结构轴与动力学轴协同干预。
+5. 不采纳“单一疗法可跨层解决全部病理”的推论：SRT 要求结构轴与动力学轴协同干预。  
+6. 不采纳“共具身=主体不独立”的绝对推论：SRT 采用相变诞生模型而非永久融合模型。

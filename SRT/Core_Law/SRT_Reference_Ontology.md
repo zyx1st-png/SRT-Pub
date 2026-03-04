@@ -314,7 +314,28 @@ R_q = L_1^{experience} - \mathcal{D}^{-1}(L_2^{description})
 \]
 * **Implication**：SRT 方程可建模“如何生成与约束体验”，但不等价于“替代该体验本身”。
 
+## §8 算子个体化相变（Operator Individuation Phase Transition, 新增）
+
+### 定义 O13：Shared-to-Individual Ledger Split
+在共具身初态，母胎共享部分选择账本：
+\[
+\mathcal{L}_{shared}=\{d,\Psi_f,E_{maint}\}_{mat\leftrightarrow inf}
+\]
+当满足独立结算条件（呼吸/代谢/内稳态闭环）时发生账本分裂：
+\[
+\mathcal{L}_{shared}\xrightarrow[]{\kappa_{split}>\kappa_c}\mathcal{L}_{mat}\oplus\mathcal{L}_{inf}
+\]
+
+### 定理 O-T5：个体化临界定理
+若
+\[
+\frac{\partial}{\partial t}\Big(\frac{E_{self-maint}^{inf}}{E_{external-support}^{mat}}\Big)>0\ \land\ B_{self}>\tau_B
+\]
+则 \(\hat{G}_{inf}\) 从嵌套子程序跃迁为独立算子，具备独立 \(d\) 与 \(\Psi_f\) 结算池。
+* **Implication**：主体间性先于个体性，但个体性可通过动力学相变严格定义。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
+- 不采纳“出生时刻=唯一个体化时刻”的机械化推论：SRT 采用多指标临界条件。  
 - 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。
