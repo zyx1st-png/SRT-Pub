@@ -89,6 +89,35 @@ $$
 $$
 * **Implication（中文）**：该区间的高可预测性并不否定 SRT 的选择框架，而是说明系统进入“被动选择”极限：轨迹主要沿约束梯度滑行，主动能动窗口收缩。
 
+### T-Scale-03: Fitness-over-Truth Thermodynamic Inequality（新增）
+定义“真相映射”与“适应度映射”的维持成本代理：
+\[
+\Psi_f^{Truth}(\theta)\sim H(L_0\mid\theta),\qquad
+\Psi_f^{Fitness}(\theta)\sim H(L_1\mid\theta)
+\]
+由于有限算子无法无损编码 \(L_0^{abs}\)，有：
+\[
+H(L_0\mid\theta)\gg H(L_1\mid\theta)\Rightarrow \Psi_f^{Truth}\gg \Psi_f^{Fitness}
+\]
+当可用自由能 \(E_{avail}\) 有界时：
+\[
+\Psi_f^{Truth}>E_{avail}\ \Rightarrow\ \text{unsustainable},\qquad
+\Psi_f^{Fitness}\le E_{avail}\ \Rightarrow\ \text{stable anchoring}
+\]
+* **Implication**：系统在演化上优先选择“低摩擦可维持界面”，而非“无损真相重建”。
+
+### 分类映射表（Hoffman Fitness/Truth → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 真相追踪（高保真映射） | 中~高（需求） | Open（高采样开销） | overloaded / unsustainable |
+| 适应度追踪（界面压缩） | 低~中 | Semi-open | payable |
+| 极端界面主义误读（任意图标化） | 低 | Closed（现实阻抗被忽略） | 失真后爆发 |
+
+## 【理论边界/防误用声明】
+- 不采纳“适应度优先=真理无意义”的推论：SRT 主张的是资源约束下的近似策略，不是否定真值结构。
+- 不采纳“界面可构造=可任意构造”的推论：外部阻抗地形通过 \(\Psi_f\) 客观限制可行结构。
+
 <br>
 
 ---

@@ -602,6 +602,35 @@ SRT 不接受“仅对象”或“仅结构”单边本体，而采用“潜能�
 
 ---
 
+### 5.12 自然化先验形而上学定位（Naturalised Transcendental Turn，新增）
+
+### Def-Phil-5.12a: Cognitive Condition Operatorization
+康德“经验可能性条件”在 SRT 中参数化为：
+\[
+\Theta_{cog}=\{\theta_{space},\theta_{time},\theta_{causal},\theta_{object}\}
+\]
+并通过
+\[
+L_1=\hat G_{\Theta_{cog}}[L_0]
+\]
+进入可计算形式。即先验范畴不再是纯思辨条款，而是可操作的算子边界。
+
+### T-Phil-5.12b: Structured-Imposition with Resistance（带阻抗结构强加）
+\[
+\text{Impose}(\Theta_{cog})\ \text{valid}\iff\Psi_f^{maint}(\text{projection})<\infty
+\]
+心智可提供结构模板，但模板若违背外部阻抗地形将导致摩擦发散并失稳。
+
+### Def-Phil-5.12c: Crystallization Interface Metaphor（结晶界面隐喻）
+\[
+L_0\ \xrightarrow[\text{nucleation by }\theta]{\text{cooling/constraint}}\ L_1^{crystal}\ \to\ L_2^{stabilized}
+\]
+“对象”如结晶：并非预存于潜能域，也非主观任意捏造，而是模板与阻抗共同塑形。
+
+## 【理论边界/防误用声明】
+- 不采纳“自然化康德=心理主义封闭体系”的推论：SRT 保留跨主体可检验约束与物理一致性。
+- 不采纳“结构强加=唯我论”的推论：\(\Psi_f\) 与失败投影提供外部现实反作用证据。
+
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构

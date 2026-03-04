@@ -239,6 +239,16 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：反真值论、随意解释主义、语义虚无主义。
 - **Lineage/Source**：`AI/_SRT_AI_Bridge.md` Def-BRIDGE-6 / T-BRIDGE-6（2026-03-04 新增）。
 
+### Fitness-over-Truth Thermodynamic Inequality（适应度优先热力学不等式）
+- **Canonical Scope**：在有限资源下比较“真相映射”与“适应度映射”维持成本，说明 \(\Psi_f^{Truth}\gg\Psi_f^{Fitness}\) 的可持续性差异。
+- **Confusable With**：反真理主义、经验主义否定、任意实用主义。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` T-Scale-03（2026-03-04 新增）。
+
+### Structured-Imposition with Resistance（带阻抗结构强加）
+- **Canonical Scope**：心智可提供结构模板，但模板成立需满足外部阻抗下 \(\Psi_f^{maint}<\infty\)。
+- **Confusable With**：纯主观构造论、硬实在先验对象论。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` T-Phil-5.12b（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
