@@ -41,6 +41,14 @@ $$\hat{G}_\theta : (L_0, \Pi) \to L_1$$
 
 * **Implication**：允许“外星物理语法不同”而不坠入相对主义：差异主要位于 \(\Pi_{\theta}\)，底线仍受 \(\Pi_{abs}\) 约束。
 
+### Def-Protocol-3: Methodological Closure Guard（方法论闭包护栏，新增）
+\[
+\mathcal{M}_{empirical}: (L_1,L_{2,\theta})\to \text{validated regularities}
+\]
+其中 \(\mathcal{M}_{empirical}\) 是实验方法对可观测层的闭包映射。
+* **Implication**：\(\mathcal{M}_{empirical}\) 的成功仅证明 \(L_1\!-
+L_{2,\theta}\) 回路内规律可复现，不构成对 \(L_0\) 潜势或 \(\Omega\) 逻辑层的本体论否定。
+
 ## I. Evolution Dynamics (演化动力学)
 
 ### Eq-Evo-01: Ghost Evolution Equation

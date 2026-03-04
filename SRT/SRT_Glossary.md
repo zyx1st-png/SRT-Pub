@@ -119,6 +119,11 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：人格化造物主、宇宙内最大智能体、超级干预者模型。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` §9 定义 O14（2026-03-04 新增）。
 
+### World-Picture as L2 Narrative（世界图景即 L2 叙事）
+- **Canonical Scope**：用于描述文化-历史收敛形成的解释框架（如机械自然主义），属于 \(L_{2,\theta}\) 层。
+- **Confusable With**：终极本体论、自然法则本身、\(L_0^{abs}\)。
+- **Lineage/Source**：`Physics/_SRT_Phys_Bridge.md` Def-Phys-4（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

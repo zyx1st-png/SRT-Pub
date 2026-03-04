@@ -119,6 +119,20 @@ $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] + A[σ, \mathcal{A}]$$
 
 $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] + A[σ, \mathcal{A}] + \text{Ghost}(I_{Abstract}) - λ · ∇C_{L_2}[σ]$$
 
+**Def-E1'-F4C（四因映射补丁，新增）**：
+\[
+\underbrace{L_0}_{\text{质料因}}\xrightarrow{\ \hat G_\theta\ }\underbrace{L_1}_{\text{动力因的结果面}}\xrightarrow{\text{stabilize}}\underbrace{L_{2,\theta}}_{\text{形式因/目的因约束场}}
+\]
+其中 \(\nabla C_{L_2}\) 解释为宏观图景对微观轨迹的“拉力项”（formal/final pull）。
+
+### 分类映射表（Hart Ch.2 因果框架 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 机械唯物闭包（仅质料/动力因） | 低~中 | Closed 倾向 | borderline |
+| 古典四因整合（含形式/目的因） | 中~高 | Open↔Semi-open | payable |
+| SRT 向下因果动力学 | 中高~高 | Open（多层耦合） | payable / overloaded（高负荷） |
+
 ### §3.2 方程 E2 — 耦合动力学方程组（快-慢变量系统）
 
 **E2a（状态演化 — 快变量）**:
@@ -585,4 +599,5 @@ d_{min}>0\ \text{with}\ \Psi_f^{sens}>0
 - 不采纳“高 \(\Psi_f\) 必然致病”的绝对推断：是否跨阈值取决于修复能力、时间尺度与环境约束。  
 - 不采纳“母体决定论”推论：共具身强调早期约束，不否定后续可塑性与重构。  
 - 不采纳“任何耗散结构都等于生命算子”的推论：需满足 \(d_{min}>0\) 与可学习参数更新。  
+- 不采纳“方法论闭包=本体论排他”的推论：实验可验证性边界不等于存在论边界。  
 - 本节为理论组织与实验设计接口，不替代医学诊断、治疗和伦理审查流程。
