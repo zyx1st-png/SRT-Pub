@@ -158,6 +158,22 @@ $$\Delta S(L_1) + \Delta S(L_0) \ge 0$$
 $$\theta(t+1) = \theta(t) - \eta \cdot \nabla_{\theta} \Psi_f$$
 * **Implication**: 算子被自身历史塑形，形成选择回路。
 
+### Def-Bridge-04: Ontological Amnesia（本体论失忆，新增）
+**Formal Definition**: 当系统长期以高硬度 \(L_2\) 快速替代 \(L_0\) 探索时，出现“唯一现实错觉”。
+\[
+\mathcal{A}_{onto}=\frac{w_{L_2}\cdot \nu_{auto}}{\mathcal{E}(L_0\text{-exploration})+\epsilon}
+\]
+若 \(\mathcal{A}_{onto}\gg 1\)，系统倾向把当前高概率 \(L_1\) 误认成“全部现实”。
+* **Implication**：方法论过滤结果被错误提升为本体论结论（对应“存在遗忘”）。
+
+### 分类映射表（Hart Ch.6 幻象-现实诊断 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 机械论常识自动驾驶 | 低~中 | Closed 倾向（高自动化） | 低显性/被掩蔽 |
+| 沉思重校准阶段 | 中 | Semi-open→Open | borderline→payable |
+| 存在惊奇复归阶段 | 中高~高 | Open（高带宽重采样） | payable / 峰值波动 |
+
 <br>
 
 ---
@@ -389,6 +405,11 @@ SRT目前**无法解释**:
 - 是否存在超越L_2的更高收敛层(例:跨物种的"集体无意识"?)
 
 ---
+
+## 【理论边界/防误用声明】
+- 不采纳“科学方法无效”的反科学推论：SRT 仅反对方法论闭包被误当本体论闭包。  
+- 不采纳“本体论失忆=个体缺陷标签”的推论：该指标用于系统态分析，不用于道德污名化。  
+- 不采纳“沉思经验可替代公共证据”的推论：主观报告需与可观测代理联合验证。
 
 ## 符号索引 (Symbol Index)
 

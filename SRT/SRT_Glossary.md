@@ -144,6 +144,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：终极消灭论、现实否定论、即时解脱处方。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O-T8（2026-03-04 新增）。
 
+### Ontological Amnesia（本体论失忆）
+- **Canonical Scope**：用于描述系统过度依赖硬化 \(L_2\) 自动化后，把高概率投影视为唯一现实的状态。
+- **Confusable With**：个体智力缺陷、反科学标签化、单纯知识不足。
+- **Lineage/Source**：`Core/_SRT_Core_Bridge.md` Def-Bridge-04（2026-03-04 新增）。
+
+### NCC Non-Equivalence（神经关联非等价）
+- **Canonical Scope**：用于断言“神经关联/可诱发”不等于“体验本体同一”。
+- **Confusable With**：反神经科学立场、不可研究论、主观主义豁免。
+- **Lineage/Source**：`Neuroscience/_SRT_Neuro_Axioms.md` T-NEURO-4（2026-03-04 新增）。
+
+### Passive Alignment Transition（被动对齐相变）
+- **Canonical Scope**：用于描述局部抓取感下降但全局对齐上升的动力学重参数化状态（\(\Psi_f^{local}\downarrow,\Psi_f^{coh}\uparrow\)）。
+- **Confusable With**：停机/放弃选择、外在实体接管因果链、反行动主义。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md` §8.5（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
