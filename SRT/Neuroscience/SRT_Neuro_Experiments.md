@@ -531,7 +531,36 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 
 ---
 
-## 6.2 核心可证伪预测表
+## 6.2 视觉失认症作为“局部算子失效态”（新增）
+
+### Def-Exp-AGN-1: Local Operator Failure in Visual Structuring
+定义结构化失败指数：
+\[
+\mathcal{F}_{agn} = 1-\text{Bind}_{obj}(\pi_\lambda(y_t),L_2^{prior})
+\]
+当 \(\mathcal{F}_{agn}\to1\) 时，系统可保留颜色/亮度等低层特征，但对象边界打包失败（Unstructured seeing）。
+
+### Hyp-AGN-1: 高分辨输入 + 低结构锚定分离
+- 预测：失认症个体在低层视觉分辨任务（方向/亮度）近保留，但在对象命名与边界一致性指标显著下降。
+- 指标：\(Acc_{low}\), \(Acc_{obj}\), \(\mathcal{F}_{agn}\), 以及 \(\Delta\Psi_f^{struct}\)。
+
+### Hyp-AGN-2: 前向生成补偿优于逆向特征堆叠
+- 预测：基于先验模板与上下文约束的训练（top-down scaffold）比纯特征堆叠训练更能降低 \(\mathcal{F}_{agn}\)。
+- 证伪：两类训练在 \(Acc_{obj}\) 与泛化误差上无显著差异。
+
+### 分类映射表（Agnosia / Underdetermination → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 正常结构视觉 | 中 | Semi-open | payable |
+| 无结构视觉（失认症） | 低~中 | Open（高熵暴露） | overloaded |
+| 纯逆问题训练路径 | 低~中 | Closed（单向管线） | 被低估/脆弱 |
+
+## 【理论边界/防误用声明】
+- 不采纳“失认症=整体意识缺失”的推论：该条仅指对象结构化子功能异常。
+- 不采纳“单一脑区定位即可解释全部症状”的推论：SRT 采用跨网络失配框架。
+
+## 6.3 核心可证伪预测表
 
 |ID|假设名称|预测内容|证伪条件|
 |:--|:--|:--|:--|
@@ -545,7 +574,7 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 |H-E8|相干独立效应|控制总功率后 \(C_{wave}\) 仍独立预测点燃/命中率|仅功率有效|
 |H-E9|方向性扰动因果|相位定向 tACS/TMS 改变传播方向后，双稳态切换率系统性变化|扰动不改切换率|
 
-## 6.2 开放性问题
+## 6.3 开放性问题
 
 1. **否决窗口的神经基础**: 200-500ms 的否决窗口由什么神经机制决定？是否可以通过训练延长？
     

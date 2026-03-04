@@ -249,6 +249,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：纯主观构造论、硬实在先验对象论。
 - **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` T-Phil-5.12b（2026-03-04 新增）。
 
+### Inverse Problem Fallacy（逆问题谬误）
+- **Canonical Scope**：把 \(L_1\) 感觉切片当作可逆线索，要求唯一恢复 \(L_0^{abs}\) 对象边界的推理错误。
+- **Confusable With**：正常参数估计、贝叶斯后验更新、模型识别问题。
+- **Lineage/Source**：`Philosophy/SRT_Philosophy_Foundations.md` Def-Phil-5.13b（2026-03-04 新增）。
+
+### Underdetermination as Potential Interface（欠定性即潜能接口）
+- **Canonical Scope**：把多前像 \(\mathcal{P}(y_t)\) 视为 \(L_0\) 潜能开放性的操作化定义，强调“选择生成”而非“逆向还原”。
+- **Confusable With**：解释任意性、反证据主义、不可检验论。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O19；`Philosophy/SRT_Philosophy_Foundations.md` §5.13（2026-03-04 新增）。
+
+### Local Operator Failure (Agnosia Mode)（局部算子失效态/失认症模式）
+- **Canonical Scope**：指低层视觉特征保留但对象边界打包失败的结构化子功能失效状态。
+- **Confusable With**：整体意识消失、单一感官瘫痪、智力全面退化。
+- **Lineage/Source**：`Neuroscience/SRT_Neuro_Experiments.md` Def-Exp-AGN-1（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

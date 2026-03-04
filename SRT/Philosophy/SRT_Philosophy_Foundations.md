@@ -631,6 +631,40 @@ L_0\ \xrightarrow[\text{nucleation by }\theta]{\text{cooling/constraint}}\ L_1^{
 - 不采纳“自然化康德=心理主义封闭体系”的推论：SRT 保留跨主体可检验约束与物理一致性。
 - 不采纳“结构强加=唯我论”的推论：\(\Psi_f\) 与失败投影提供外部现实反作用证据。
 
+### 5.13 欠定性与逆问题谬误（Underdetermination Turn，新增）
+
+### Def-Phil-5.13a: Underdetermination Interface（欠定接口）
+
+given 感觉切片 \(y_t\in L_1\)，其外因分解不唯一：
+\[
+\exists\{x_i\subset L_0\}_{i=1}^N,\ N\gg1:\ \hat G_\theta(x_i)\approx y_t
+\]
+即输入对外部成因是多对一压缩结果，不能唯一反演“客观对象边界”。
+
+### Def-Phil-5.13b: Inverse Problem Fallacy（逆问题谬误）
+\[
+\mathcal{F}_{inv}:\ y_t\in L_1\Rightarrow \text{RecoverUniqueBoundary}(L_0^{abs})
+\]
+SRT 反驳：\(L_0\to L_1\) 是热力学不可逆映射，逆向唯一还原在一般情形下不可定义。
+
+### T-Phil-5.13c: Forward-Generative Resolution（前向生成解）
+\[
+\hat x_t=\arg\min_{x\in\mathcal{X}_\theta}\Big(\mathcal{L}_{pred}(x;y_t)+\lambda\Psi_f^{maint}(x,\theta)\Big)
+\]
+大脑/算子解决的不是“逆推真相”，而是“在约束下生成可维持结构”。
+
+### 分类映射表（Underdetermination Debate → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 逆问题实在论（唯一回推） | 中 | Closed（单向假设） | 被低估/伪解 |
+| 前向生成模型（预测校正） | 中~高 | Open↔Semi-open | payable |
+| 失结构视觉（Agnosia态） | 低~中 | Open（高熵暴露） | overloaded |
+
+## 【理论边界/防误用声明】
+- 不采纳“欠定性=一切解释等价”的推论：SRT 仍以预测误差与 \(\Psi_f\) 可支付性筛选模型。
+- 不采纳“前向生成=主观任意造物”的推论：外部阻抗与失败代价提供客观约束。
+
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构
