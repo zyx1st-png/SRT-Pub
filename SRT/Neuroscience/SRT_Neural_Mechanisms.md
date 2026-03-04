@@ -433,8 +433,60 @@ $$d \propto \frac{1}{\text{Quantum Fuzziness}}$$
 |$P(\text{Perceive}|S) = \sigma(S - (T_0 + \alpha[\text{IL-17}]))$|免疫门控|
 |$\kappa_{body} = \text{GripForce}/\Psi_f$|具身锚定|Ax-Mech-9|
 
+## 8 神经精神病学整合扩展（2026 Frontiers 对齐新增）
+
+### 8.1 Neuropsychiatric 分类映射表（必填）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 神经主导型（Neurology-dominant） | 中~中高（受结构上限约束） | Semi-open（局部受损） | payable→borderline |
+| 精神主导型（Psychiatry-dominant） | 低~中高波动 | Open↔Semi-open（高波动） | borderline / overloaded |
+| 神经精神混合型（Neuropsychiatric mixed） | 中高离散分布 | Open + Closed 局部并存 | overloaded / unsustainable |
+| 代偿恢复期（Integrated recovery） | 中高回升 | Semi-open→Open（稳态恢复） | payable |
+
+### 8.2 Ontological Pathology Matrix（机制版）
+
+\[
+\Delta\theta = (\Delta\theta_{struct},\Delta\theta_{dyn})
+\]
+- \(\Delta\theta_{struct}\)：结构层漂移（白质/连接组/局灶损伤），主导 \(L_2\) 约束改变；
+- \(\Delta\theta_{dyn}\)：动力学漂移（\(d,\rho_t,\vec v\)），主导 \(L_1\) 显现失稳。
+
+**判别准则**（候选）：
+\[
+\text{Neurology Index} = \|\Delta\theta_{struct}\|,\quad
+\text{Psychiatry Index} = \|\Delta\theta_{dyn}\|
+\]
+以二元平面定位病理簇，而非单轴标签。
+
+### 8.3 Cross-Domain Intervention Protocol（干预协议）
+
+\[
+\mathcal{I}_{joint} = w_b\mathcal{I}_{bio} + w_p\mathcal{I}_{psy},\quad w_b,w_p\ge0
+\]
+
+- 生物干预（药物/刺激）：优先降低 \(\Psi_f\) 与恢复 \(\rho_t\)；
+- 心理干预（CBT/叙事重构）：优先提升 \(d\) 与重定向 \(\vec v\)。
+
+**协同收益定义**：
+\[
+\Delta S_{sync}=\Delta d\cdot(-\Delta\Psi_f)
+\]
+若 \(\Delta S_{sync}>0\) 且可持续，则判为真实跨域恢复。
+
+### 8.4 语义断层与非线性放大（Irreducible Semantic Gap）
+
+\[
+L_1 = f(\theta) + \epsilon,\quad
+\text{near critical set }\mathcal{C}:\; \left\|\frac{\partial f}{\partial \theta}\right\|\gg1
+\]
+
+* **Implication（中文）**：临床“同靶点异反应”不是噪声，而可能是系统处在临界集附近的非线性放大。
+
 ## 【理论边界/防误用声明】
 
 1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
 2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
-3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
+3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。  
+4. 不采纳“历史叙事桥梁=机制完备模型”的推论：临床哲学整合必须补上可测动力学。  
+5. 不采纳“单一疗法可跨层解决全部病理”的推论：SRT 要求结构轴与动力学轴协同干预。
