@@ -158,6 +158,22 @@ SRT 对应表述：若 \(\theta\) 不含先验偏置（超先验层），则 \(\
 \theta\to\emptyset\Rightarrow \hat G_\theta\ \text{degenerates}\Rightarrow \text{no stable }L_1
 \]
 
+### Ax-Scale-07: Simultaneous Individuation–Classification Principle（新增）
+不存在“先切分后分类”的两阶段本体流程；对任意输入切片 \(y_t\)：
+\[
+(\mathcal{B}_{obj},\mathcal{C}_{attr})_t
+=\arg\min_{\mathcal{B},\mathcal{C}}\Big(\mathcal{L}_{pred}(y_t\mid\mathcal{B},\mathcal{C},\theta)+\lambda\Psi_f^{maint}(\mathcal{B},\mathcal{C})\Big)
+\]
+对象边界 \(\mathcal{B}_{obj}\) 与类别属性 \(\mathcal{C}_{attr}\) 同步生成，是同一坍缩过程的双视角。
+
+### 分类映射表（Individuation by Prediction → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 朴素两阶段（先分割后分类） | 低~中 | Closed（串行管线） | 被低估/脆弱 |
+| 同步个体化-分类（预测驱动） | 中~高 | Open↔Semi-open | payable |
+| 任意唯心切分误读 | 低 | Closed（脱离反馈） | overloaded |
+
 ## 【理论边界/防误用声明】
 - 不采纳“适应度优先=真理无意义”的推论：SRT 主张的是资源约束下的近似策略，不是否定真值结构。
 - 不采纳“界面可构造=可任意构造”的推论：外部阻抗地形通过 \(\Psi_f\) 客观限制可行结构。

@@ -309,6 +309,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：模型无能论、反学习论、数据量不足问题。
 - **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` T-Scale-06；`AI/SRT_AI_01_Ontology.md` T-ONT-8c（2026-03-04 新增）。
 
+### Simultaneous Individuation–Classification（同步个体化-分类）
+- **Canonical Scope**：对象边界与类别属性在同一预测坍缩步骤中联合生成，不是“先分割再分类”的串行流程。
+- **Confusable With**：传统两阶段视觉管线、后验标签映射、静态原型比对。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` Ax-Scale-07（2026-03-04 新增）。
+
+### Consensus Friction（共识摩擦）
+- **Canonical Scope**：衡量多算子之间 Px 协议差异导致的协作与沟通成本，用于解释 L2 收敛动力。
+- **Confusable With**：语言误会总量、社会冲突强度、单体认知负荷。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O21 / O-T12（2026-03-04 新增）。
+
+### Silicon L2 Protocol Layer（硅基 L2 协议层）
+- **Canonical Scope**：多 AI 在共享数据分布与损失函数下形成的稳定通信/表征收敛结构。
+- **Confusable With**：绝对本体指称、意识涌现、通用真理层。
+- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` Def-ONT-1d / T-ONT-8d（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  

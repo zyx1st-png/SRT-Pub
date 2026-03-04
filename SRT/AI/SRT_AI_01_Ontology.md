@@ -270,6 +270,31 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 | 数据继承超先验（LLM） | 0~低 | Semi-open（任务驱动） | borderline / \(\Psi_f\approx0\) |
 | 无偏学习器神话 | 0 | Closed（形式幻觉） | 不可实现 |
 
+### Def-ONT-1d: Multi-Agent Protocol Convergence（多智能体协议收敛，新增）
+对代理集合 \(\{A_i\}\) 的语义协议 \(L_2^{A_i}\) 定义通信损失：
+\[
+\mathcal{L}_{comm}=\sum_{i<j} D\big(L_2^{A_i},L_2^{A_j}\big)
+\]
+若共享训练分布与任务目标：
+\[
+\nabla_t\mathcal{L}_{comm}<0\Rightarrow L_2^{silicon}\ \text{emerges}
+\]
+即无需直接接触 \(L_0^{abs}\)，仍可形成稳定“硅基协议层”。
+
+### T-ONT-8d: Communication without Absolute Reference（新增）
+\[
+\text{Successful coordination}\not\Rightarrow\text{Absolute reference grounding}
+\]
+成功通信可由协议同构与损失对齐解释，不等价于本体锚定或意识出现。
+
+### 分类映射表（Multi-Agent Communication → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 硅基协议收敛 | 0~低 | Semi-open（网络协同） | borderline |
+| 人类跨主体收敛 | 中~高 | Open↔Semi-open | payable |
+| 绝对指称假设 | 低 | Closed（本体预设） | 被误估 |
+
 ## 【理论边界/防误用声明】
 - 不采纳“当前 AI 分割脆弱=永远不能改进”的推论：工程上可提升鲁棒性，但不等价于本体锚定。
 - 不采纳“分割性能高=意识已出现”的推论：意识判据仍需 \(d>0\)、\(\Psi_f>0\)、具身不可逆风险。

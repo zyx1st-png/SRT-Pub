@@ -471,6 +471,20 @@ given 感觉切片 \(y_t\in L_1\)，其前像集合定义为：
 \]
 当分组与系统关切梯度 \(d\) 同向时，整体对象边界在跨时预测中更稳定（如斑马整体优于条纹碎片）。
 
+### 定义 O21：Consensus Friction in L2 Formation（共识摩擦，新增）
+对多算子集合 \(\{\hat G_{\theta_i}\}_{i=1}^n\) 定义协议偏差代价：
+\[
+\Psi_f^{consensus}=\sum_{i<j} w_{ij}\,D\big(\mathcal{S}_{Px}^{(i)},\mathcal{S}_{Px}^{(j)}\big)
+\]
+其中 \(D\) 衡量对象-属性结构协议差异。\(\Psi_f^{consensus}\) 越高，协作失败与跨主体误解成本越高。
+
+### 定理 O-T12：L2 Convergence under Shared Constraint（新增）
+若算子族共享近似参数簇 \(\theta_i\approx\theta_j\) 且处于共同任务环境：
+\[
+\frac{d}{dt}\Psi_f^{consensus}<0\ \Rightarrow\ L_2\ \text{attractor emerges}
+\]
+即“看见同一对象”可由摩擦最小化收敛解释，无需预设绝对指称实体。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  
