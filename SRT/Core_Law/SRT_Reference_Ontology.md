@@ -67,6 +67,19 @@ $$L_1(t) = \hat{G}_θ[L_0(t)] + η · L_1(t - Δt)$$
 
 $$L_1^{experienced} = β · L_1^{external} + (1-β) · \hat{G}(L_0)$$
 
+**定义 O2c（L₁ 的单纯复形截面，新增）**:
+给定时窗 \([t,t+\Delta t]\)，将显现域截面表示为单纯复形：
+$$L_1^{(t,\Delta t)} \cong K_t=(V_t,\Sigma_t)$$
+其中 \(V_t\) 为活跃单元集，\(\Sigma_t\) 为满足共激活阈值的单纯形集合。
+
+**定义 O2d（拓扑空洞作为潜在域负向投射，新增）**:
+$$\mathcal{H}_k(K_t) \neq 0 \Rightarrow \text{存在由 }L_1\text{ 边界界定而未坍缩的 }L_0^{rel}\text{ 局部}$$
+* **解释**：空洞不是“无”，而是被当前选择边界包围的可达反事实体积。
+
+**[Lineage/Source]**:
+- Algebraic Topology / Simplicial Complex：Henri Poincaré（1895），后续标准教材：Hatcher, *Algebraic Topology*（2002）。
+- Applied Topological Neuroscience：Blue Brain / EPFL 团队关于 clique complex 与 cavities 的建模工作（2017 起，见 Reimann et al., *Frontiers in Computational Neuroscience*）。
+
 ---
 
 ### §1.3 L₂ — 收敛域 (Vergence Domain)

@@ -239,8 +239,46 @@ $$
 最优协调对应于跨尺度相位/节律偏差最小化，而非单尺度极值。
 
 
+## VII. Topological Selection Dynamics（拓扑选择动力学，新增）
+
+### Eq-Topo-01: Simplicial Assembly–Collapse Dynamics
+**Formal Definition**: 以拓扑复杂度状态量 \(K_t\) 描述刺激下的“组装—坍塌”动力学：
+$$
+\frac{dK_t}{dt} = \underbrace{\alpha_{in}\,I_t\,\mathcal{G}(\theta)}_{\text{assembly gain}} - \underbrace{\lambda_c K_t}_{\text{collapse}} + \xi_t
+$$
+其中：
+- \(K_t\)：单纯复形复杂度（可由 clique 计数与 Betti 向量综合）；
+- \(I_t\)：外部刺激/任务负荷；
+- \(\mathcal{G}(\theta)\)：选择算子参数化增益，\(\theta=\{\rho_s,d,\tau,\beta_{topo}\}\)；
+- \(\lambda_c\)：拓扑坍塌率。
+* **Implication**: 将“神经沙堡”从类比升级为可拟合状态方程。
+
+### Eq-Topo-02: Dual-Layer Selection over Deterministic Envelope
+**Formal Definition**: 区分“可达域”与“被实现域”两层机制：
+$$
+\mathcal{E}_t = \mathcal{E}(\mathcal{W}, I_t)\quad\text{(deterministic envelope)}
+$$
+$$
+P(C_t=c\mid \mathcal{E}_t,\theta) \propto \exp\left[\beta_{topo}\,\mathcal{V}(c;d,\rho_s) - \Psi_f(c)\right],\; c\in\mathcal{E}_t
+$$
+其中 \(\mathcal{W}\) 为结构连通约束，\(C_t\) 为被实现的高维单纯形配置。
+* **Implication**: SRT 主张的“选择”不否认局部确定性，而是作用于确定性包络内部的加权实现。
+
+### Eq-Topo-03: Persistence-Weighted Order Parameter
+$$
+q_{topo}(t)=\sum_{k\ge 0} w_k\,\beta_k(t)\,\exp\left(-\frac{1}{\tau_k}\right)
+$$
+其中 \(\beta_k\) 为第 \(k\) 维 Betti 数，\(\tau_k\) 为对应拓扑特征持续时间。
+* **Implication**: 将拓扑“有/无”扩展为“强度×持续性”的秩序参数，可直接接入 Eq-Select-Thermo。
+
+### Falsifiable Predictions (可证伪预测)
+1. 在匹配输入强度 \(I_t\) 条件下，\(d\) 高组应表现为更高 \(q_{topo}\) 峰值与更长 \(\tau_k\)；若无差异，则 Eq-Topo-02 的选择层失效。  
+2. 若仅改变连接约束 \(\mathcal{W}\)（不改变 \(d\) proxy），应主要改变可达域 \(\mathcal{E}_t\) 上界而非选择偏置项；反之则支持双层机制。  
+3. 若 \(\Psi_f\) 生理 proxy 升高时 \(\lambda_c\) 不升反降且长期稳定，则“摩擦-坍塌耦合”需修正。
+
 ## 【理论边界/防误用声明】
 
 - 本文件的方程用于理论建模与可证伪接口，不直接构成临床、法律或工程处方。
 - 参数重命名（如 $\beta_F$）属于符号去歧义，不改变既有理论主张。
 - Part B 的去重回链旨在提升可读性，完整方程以 Part A 编号为权威。
+- Topological Dynamics 章节不宣称“拓扑即意识”；其角色是 \(\hat{G}_\theta\) 的神经几何接口，不替代本体论判据（\(d>0, \Psi_f>0\)）。

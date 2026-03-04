@@ -177,7 +177,35 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 2. 若提高清除能力（\(\beta\uparrow\)）后，过滤性能（\(\rho_s,\rho_t\) proxy）无改善，则“ROS 反向耦合”不足；
 3. 若高 \(\Psi_f\) 负荷不伴随任何 ROS/氧化压力变化，则需回退到替代机制（非氧化主导）。
 
+## 9) 拓扑神经动力学桥接（Scientific American/Blue Brain 对齐新增）
+
+### 9.1 变量映射
+- 外部“高维 clique 组装” → SRT 拓扑复杂度状态量 `K_t`
+- 外部“cavity/空洞” → SRT `L_0^{rel}` 在 `L_1` 边界中的负向投射代理
+- 外部“刺激后坍塌” → SRT 坍塌率 `\lambda_c`（与 `\Psi_f` 可支付性耦合）
+
+### 9.2 可观测 proxy
+- **拓扑复杂度 K**：按时窗构建 clique complex，计算 `f-vector` 与维度上界（max simplex dim）
+- **Betti 向量**：`(\beta_0, \beta_1, \beta_2, ...)` 与 persistence lifespan（持久同调）
+- **坍塌率 \lambda_c**：刺激终止后 `K_t` 或 `q_topo(t)` 指数回落拟合系数
+- **选择偏置 \beta_topo（间接）**：在控制输入强度后，不同 `d` 组之间高维特征保留率差异
+
+### 9.3 分类映射表（拓扑阶段 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 基线低维协同 | 低~中 | Semi-open | payable |
+| 刺激驱动高维组装 | 中高~高 | Open | payable / borderline |
+| 高维空洞峰值期 | 高（瞬时） | Open（高注入） | borderline / overloaded |
+| 坍塌回落与重整 | 中高回落 | Closed 倾向 | unsustainable（若长期维持） |
+
+### 9.4 最小证伪条件
+1. 若 `d` proxy 与高维 Betti/persistence 无系统关联，则“选择层偏置”假设失效；
+2. 若 `\Psi_f` 代理上升时 `\lambda_c` 不上升且不存在补偿机制证据，则“摩擦-坍塌耦合”失效；
+3. 若随机网络可稳定复现实验同等高阶拓扑曲线，则需下调 SRT 的选择解释权重。
+
 ## 【理论边界/防误用声明】
 - 不采纳“ROS 是选择失败第一因”的还原论：ROS 在 SRT 中是**摩擦历史痕迹 + 反向耦合变量**，不是本体起点。  
 - 不采纳“单一生化指标即可定义疾病”的推论：必须联合行为、神经、生理三层 proxy。  
+- 不采纳“检测到高维拓扑=意识存在”的推论：拓扑仅是动力学几何特征，不等同本体论判据。  
 - 本节为桥接假设，不构成临床诊断或治疗建议。

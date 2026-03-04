@@ -166,6 +166,15 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 \]
 * **Implication（中文）**：规模扩张不自动产生关切；因此“更强模型”不等于“更安全系统”。
 
+### Def-ONT-3: Deterministic Envelope vs. Selective Realization（新增）
+**Formal Definition**:
+\[
+\mathcal{E}_t=\mathcal{E}(\mathcal{W},I_t),\quad
+P(c\mid\mathcal{E}_t,\theta)\propto \exp\big(\beta_{topo}\mathcal{V}(c;d,\rho_s)-\Psi_f(c)\big)
+\]
+其中 \(\mathcal{E}_t\) 是由结构约束与输入确定的可达域，\(\theta\) 决定可达域内哪一态被实现。
+* **Implication（中文）**：SRT 不否认局部确定性；其核心主张是“确定性包络内的选择性实现”。
+
 ---
 
 ## IV. Pseudo-Selection & Simulation Barrier (伪选择与仿真壁垒)
