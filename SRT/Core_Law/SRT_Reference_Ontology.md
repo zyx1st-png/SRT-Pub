@@ -358,6 +358,15 @@ R_q = L_1^{experience} - \mathcal{D}^{-1}(L_2^{description})
 \text{Maintain}(L_1)\Rightarrow \int \Psi_f\,dt>0
 \]
 
+### 定理 O-T7：\(L_1\) 非自足定理（Theorem of \(L_1\) Contingency）
+\[
+F[L_1] > 0\quad \text{for any finite instantiated slice }L_1
+\]
+因此 \(L_1\) 不包含其自身存在的充分理由，只能作为被持续“赋予”的显现态：
+\[
+L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
+\]
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  

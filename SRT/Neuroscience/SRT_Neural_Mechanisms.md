@@ -518,6 +518,26 @@ L_1 = f(\theta) + \epsilon,\quad
 
 * **Implication（中文）**：生命判据不是“是否耗散”，而是“是否形成可学习的、可支付摩擦的选择闭环”。
 
+### 9.5 存在感（Presence）操作化代理（新增）
+
+定义局部存在感强度：
+\[
+\mathcal{P}_{sense}(t)\propto \left|\frac{d\Psi_f^{local}}{dt}\right|\cdot \Gamma_{anchor}(t)
+\]
+其中 \(\Gamma_{anchor}\) 为锚定稳定系数（可由任务一致性/神经同步代理估计）。
+
+- 自动化低负荷状态（如习惯驾驶）：\(d\Psi_f/dt\to 0\Rightarrow \mathcal{P}_{sense}\downarrow\)
+- 高不确定锚定时刻（存在性惊奇）：\(d\Psi_f/dt\uparrow\Rightarrow \mathcal{P}_{sense}\uparrow\)
+
+### 分类映射表（Hart Ch.3 关键区分 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| “本质”层（what） | 低~中（未锚定） | Semi-open | payable |
+| “存在”层（that it is） | 中~高（锚定增强） | Open | payable / borderline |
+| 日常习惯化存在稀薄 | 低~中 | Closed 倾向 | 低斜率 \(d\Psi_f/dt\approx0\) |
+| 存在性惊奇峰值 | 中高~高 | Open（重锚定） | 高斜率 \(d\Psi_f/dt\gg0\) |
+
 ## 【理论边界/防误用声明】
 
 1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
