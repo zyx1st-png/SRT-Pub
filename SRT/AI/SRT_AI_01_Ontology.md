@@ -287,6 +287,13 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 \]
 成功通信可由协议同构与损失对齐解释，不等价于本体锚定或意识出现。
 
+### Def-ONT-1e: Actuator-Coupled Spatial Prior Requirement（新增）
+三维空间深度先验的稳健形成要求感知-动作闭环：
+\[
+\Pi_{space}^{robust}\Rightarrow \text{Coupling}(\theta_{sensor},\theta_{actuator})>0
+\]
+若仅有静态视觉网络且缺失运动作动器反馈，空间先验可拟合但脆弱，跨场景泛化显著下降。
+
 ### 分类映射表（Multi-Agent Communication → SRT）
 
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |

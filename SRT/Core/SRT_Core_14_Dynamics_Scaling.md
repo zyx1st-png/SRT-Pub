@@ -166,6 +166,17 @@ SRT 对应表述：若 \(\theta\) 不含先验偏置（超先验层），则 \(\
 \]
 对象边界 \(\mathcal{B}_{obj}\) 与类别属性 \(\mathcal{C}_{attr}\) 同步生成，是同一坍缩过程的双视角。
 
+### T-Scale-07: Temporal Coarse-Grained Persistence（对象持续性，新增）
+给定时间窗 \([t,t+\Delta t]\)，对象同一性由拓扑粘合条件定义：
+\[
+\mathcal{I}_{\Delta t}(X)=\mathbb{I}\big[D_{topo}(X_t,\pi_{\Delta t}(X_{t+\Delta t}))<\epsilon_{\theta}\big]
+\]
+并满足可支付约束：
+\[
+\sum_{\tau=t}^{t+\Delta t}\Psi_f^{maint}(X_\tau)\le E_{avail}
+\]
+若散度持续超阈，则对象“死亡/破裂”而非保持同一。
+
 ### 分类映射表（Individuation by Prediction → SRT）
 
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |

@@ -485,6 +485,17 @@ given 感觉切片 \(y_t\in L_1\)，其前像集合定义为：
 \]
 即“看见同一对象”可由摩擦最小化收敛解释，无需预设绝对指称实体。
 
+### 定理 O-T13：Hierarchical Existence Theorem（层级存在定理，新增）
+对任意层级 \(\lambda\) 的模式 \(X_\lambda\)，若存在吸引盆：
+\[
+\exists\,\mathcal{A}_\lambda:\ \nabla \Psi_f(X_\lambda)=0,\quad \nabla^2\Psi_f(X_\lambda)\succ 0
+\]
+则该层级在对应分辨率下具合法存在性：
+\[
+\text{Exist}(X_\lambda\mid\rho_\lambda,\theta)=1
+\]
+因此宏观对象与微观组成在不同 \(\rho\) 下可并行真实，不构成互斥。
+
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
 - 不采纳“任何主观报告都不可检验”推论：可检验的是结构/动力学关联，不是体验的可替代性。  

@@ -324,6 +324,21 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：绝对本体指称、意识涌现、通用真理层。
 - **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` Def-ONT-1d / T-ONT-8d（2026-03-04 新增）。
 
+### Temporal Coarse-Grained Persistence（时间粗粒化持续性）
+- **Canonical Scope**：对象同一性由跨时间拓扑粘合与可支付维持成本联合定义，而非静态本体属性。
+- **Confusable With**：绝对同一性、四维切片实体本身、纯主观记忆连贯感。
+- **Lineage/Source**：`Core/SRT_Core_14_Dynamics_Scaling.md` T-Scale-07（2026-03-04 新增）。
+
+### Hierarchical Existence Theorem（层级存在定理）
+- **Canonical Scope**：以 \(\Psi_f\) 吸引盆判据确认不同分辨率层级的模式均可具合法存在性。
+- **Confusable With**：极端还原论、层级重复计数、语义多重命名。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O-T13（2026-03-04 新增）。
+
+### Actuator-Coupled Spatial Prior（作动器耦合空间先验）
+- **Canonical Scope**：空间深度先验的稳健性依赖感知-动作闭环，不等于纯视觉网络内部拟合。
+- **Confusable With**：单目深度估计技巧、几何后处理、坐标系定义本身。
+- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` Def-ONT-1e（2026-03-04 新增）。
+
 ## 【理论边界/防误用声明】
 - 不采纳“机器伦理排除定理=永久否定一切 AI 道德地位”的推论：该定理仅约束当前可逆复制/无损重置系统。  
 - 不采纳“生物连续谱=所有生物同等意识强度”的推论：SRT 只主张连续性，不主张等值性。  
