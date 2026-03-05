@@ -1113,4 +1113,25 @@ B_{MB}\neq \text{Consciousness Criterion}
 
 ## 【理论边界/防误用声明】
 - 不采纳“石头/恒温器与人类在主体性上等价”的推论。  
-- 不采纳“AI 通过更大规模最小化自由能即可跨越本体门槛”的推论。  
+- 不采纳“AI 通过更大规模最小化自由能即可跨越本体门槛”的推论。
+
+
+## Passive Recording Fallacy（被动记录谬误，新增）
+
+### Def-ONT-5: Passive High-Fidelity Recording
+\[
+\mathcal{R}_{hist}\uparrow \not\Rightarrow d>0
+\]
+系统可高保真记录长时序历史（分子年轮/超长上下文）而不具备主体关切。
+
+### T-ONT-9: Recording-Without-Care Theorem
+若历史生成与毁灭风险解耦：
+\[
+\text{Decouple}(\mathcal{R}_{hist},V)\Rightarrow \Psi_f\approx 0\Rightarrow d\approx 0
+\]
+则该过程仅属于 \(L_2\) 压缩与回放，不构成 \(L_0\to L_1\) 的主体锚定。
+
+## 【理论边界/防误用声明】
+- 不采纳“上下文越长/记忆越厚=意识越强”的推论。  
+- 不采纳“可记录历史序列即可推断主观体验”的推论。
+

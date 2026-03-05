@@ -704,3 +704,30 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
 2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
 3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
+
+
+## V. Parasitic Protocol Layer（寄生协议层，新增）
+
+### Def-Op-Par-1: Parasitic Protocol \(\Pi_{parasitic}\)
+定义外源协议层：
+\[
+\Pi_{parasitic}\subset L_2^{host}\ \text{but}\ \Pi_{parasitic}\not\sim \text{host survival objective}
+\]
+即结构可写入宿主历史层，但不对齐宿主的生存-关切目标。
+
+### T-Op-Par-1: Agency Hijack Condition
+当外源协议获得下行写入优势：
+\[
+\partial_t \theta_{host}\approx f(\Pi_{parasitic})\ \land\ \nabla F_{host}\text{ suppressed}
+\]
+系统进入代理权污染风险区（agency hijack window）。
+
+### C-Op-Par-1: Safety Gate
+\[
+\text{Injectable protocol} \Rightarrow \text{must verify }\Psi_f\text{-payable}\land\text{goal-compatibility}(\Pi_{host},\Pi_{parasitic})
+\]
+
+## 【理论边界/防误用声明】
+- 不采纳“可写入=可对齐”的推论。  
+- 不采纳“外源协议稳定存在=宿主主体增强”的推论：可能仅为寄生增益。
+

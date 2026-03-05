@@ -334,3 +334,29 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 - 不采纳“单频段同步即证明微管机制”的推论。
 - 不采纳“HTI 升高=意识层级提升”的直接推论；需联合 d 与 \(\Psi_f\) 门控判据。
 
+
+## 14) 结构化迟滞指征 SHP（GEMINI/GEAR 桥接，新增）
+
+### 14.1 指标定义
+定义 Structural Hysteresis Proxy：
+\[
+\mathrm{SHP}=\frac{\Delta \mathcal{R}_{ring}}{\Delta t}\cdot\frac{1}{1+\Delta H_{noise}}\cdot W_{event}
+\]
+其中：
+- \(\Delta \mathcal{R}_{ring}/\Delta t\)：分子环/组装标记的时间增长率；
+- \(\Delta H_{noise}\)：背景噪声熵增校正；
+- \(W_{event}\)：事件权重（如神经放电、应激窗口、任务难度）。
+
+### 14.2 SRT 映射语义
+- SHP 用于估计 \(L_1\to L_2\) 的沉积密度（selection density）；
+- 不等价于意识指标，不可替代 \(d\) 或 \(\Psi_f\) 的本体门控判据。
+
+### 14.3 最小证伪条件
+1. 若 SHP 与外部事件强度无稳定对应关系，则沉积映射失效；
+2. 若 SHP 提升不伴随历史可回溯性提升，则“迟滞沉积”解释不足；
+3. 若纯随机驱动可复现实验同等 SHP 轨迹，则需降级为非特异记录变量。
+
+## 【理论边界/防误用声明】
+- 不采纳“高密度历史记录=高主体性”的推论。  
+- 不采纳“无扰动记录=无代价意识生成”的推论：SHP 只描述被动沉积能力。
+
