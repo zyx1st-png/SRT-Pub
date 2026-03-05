@@ -132,3 +132,36 @@ dependency: [_SRT_MEDIA_PIPELINE]
   - 实验钩（若有）：H-AGENCY-BOUNDARY-01（具身耦合 vs 纯输出一致性）
 **推荐平台**：Twitter/X / Substack / Medium
 **风险提示**：必须区分“能力表现”与“本体归因”，避免把工程指标误写成意识证据。
+
+
+## [2026-03-05] 选题 #1 — 大众路线
+
+**候选标题**：宇宙为什么会“看起来算不平”？哈勃张力也许不是误差，而是模型少了一层
+**切入角度**：从“同一个宇宙两把尺子测出两个答案”切入，解释观测层与隐藏自由度错配
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：宇宙学张力长期热议，公众好奇高
+- 争议点：是测量误差还是新物理？
+- SRT视角：把矛盾重写为 L₀→L₁ 投影损失与摩擦补偿问题
+**关联内容**：
+  - 文件：`SRT/Physics/_SRT_Phys_Bridge.md`；`SRT/Core_Law/SRT_Reference_Scaling.md`
+  - 方程：Eq-Select-Thermo（对应 Gap 条目）
+  - 实验钩（若有）：多代理 q(L₁) 收敛检验（G1-A/B/C）
+**推荐平台**：知乎 / 微信公众号 / 头条
+**风险提示**：避免把“隐藏维度”写成已证实结论；必须保留候选假设定位。
+
+---
+
+## [2026-03-05] 选题 #2 — 精英路线
+
+**候选标题**：Closing the Eq-Hyp Gaps: Operationalizing q(L₁) and Testing SRT LDP Limits
+**切入角度**：直接围绕 Eq-Select-Thermo / Eq-LDP-01 / Eq-LDP-02 三个 Gap，提出可证伪实验包与失效域
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：内部治理已标记 3 个高优先缺口
+- 争议点：SRT 是否具备群体尺度可检验性
+- SRT视角：从“哲学叙事”转向“可测代理 + 证伪条件”
+**关联内容**：
+  - 文件：`SRT/_SRT_EQ_HYP_MAP.md#G1-G2-G3`；`SRT/_SRT_REVIEW_QUEUE.md`
+  - 方程：Eq-Select-Thermo；Eq-LDP-01；Eq-LDP-02
+  - 实验钩（若有）：G2-1 仿真先验（N>1000）+ 路径概率指数衰减检验
+**推荐平台**：Twitter/X / Substack / Medium
+**风险提示**：明确“Mapped/Partial/Gap 仅代表桥接状态，不代表因果已证实”。
