@@ -34,3 +34,20 @@ From Partial Closure to Stable Closure: Minimal Embodiment Threshold in SRT
 ## 风险控制
 - 禁止把“结构自治阈值”写成“意识起源阈值”。
 - 必须保留：结构复制 \(\neq\) \(d>0\) 关切涌现。
+
+
+## 新增硬条件（2026-03-05）
+
+6. **N_{crit} 可回写性硬判据（必加）**
+   - 规则：跨越 \(N_{crit}\) 不仅要求系统可维持复制与局部闭包，还必须满足“环境规律可被微观组件稳定回写到 \(\theta\)”：
+   \[
+   \exists\,\mathcal{R}_{env\to\theta}>0,\quad \theta_{t+1}=\theta_t+\Delta\theta(\mathcal{E}_{env},\Psi_f)
+   \]
+   - 验收：正文方法节出现“可回写性指标（rewrite index）+ 阈值 + 失效域”。
+
+7. **时间之箭双判据对齐（必加）**
+   - 规则：论文中关于“生物时间之箭”的表述，必须同时呈现：
+     1) 错综层级记录增量 \(\Delta L_2^{nested}\)；
+     2) 摩擦不可逆账本 \(\int\Psi_f dt\)。
+   - 验收：讨论节给出联合表达式，并说明缺任一项时的解释失败场景。
+

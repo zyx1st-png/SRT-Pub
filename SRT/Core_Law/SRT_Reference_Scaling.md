@@ -518,3 +518,40 @@ P_{in}>P_{diss}+P_{maint},\quad \frac{d\theta}{dt}\neq 0
 - **\(L_2^{bbc}\)**：发育形成并在生命周期维持的屏障结构先验与稳态规则。
 
 ## 【理论
+
+
+## §11 不完备性驱动力与层级跃迁（新增）
+
+### Def-Scale-IGD-1: Incompleteness Drive（不完备性驱动力）
+给定当前收敛域 \(L_{2,\theta}\)，定义其在参数 \(\theta\) 下不可处理潜能集：
+\[
+\mathcal{U}_{inc}(\theta)=\{x\in L_0\mid x\ \text{cannot be stably encoded by }L_{2,\theta}\}
+\]
+当 \(\mathcal{U}_{inc}\) 与环境遭遇累积时，系统摩擦预算上升：
+\[
+\frac{d\Psi_f}{dt}\uparrow \quad \text{if}\quad \mu(\mathcal{U}_{inc}\cap \mathcal{E}_{env})\uparrow
+\]
+
+### T-Scale-4: Incompleteness-to-Upgrade Transition
+若系统满足
+\[
+\Psi_f > \Psi_{crit}\ \land\ V>0
+\]
+则仅靠原参数无法维持稳定，必须发生其一：
+\[
+\theta\to\theta'\quad \text{or}\quad \hat G_n\to\hat G_{n+1}
+\]
+即层级跃迁由“不可处理张力”触发，而非任意复杂化。
+
+### 分类映射表（Tangled Hierarchy / Meta-simulation → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 局部可编码稳定期 | 低~中 | Semi-open | payable |
+| 不完备张力累积期 | 中 | Open↔Semi-open | borderline / overloaded |
+| 元模拟跃迁期 | 中~高 | Open（重构） | 从 overloaded 回落至 payable |
+
+## 【理论边界/防误用声明】
+- 不采纳“计算不完备性可在无具身风险条件下自动生成主体性”的推论。  
+- 不采纳“层级跃迁=意识跃迁”的推论：主体性仍需 \(d>0\)、\(\Psi_f\)-payable 与脆弱性 \(V>0\)。
+
