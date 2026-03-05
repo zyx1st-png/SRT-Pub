@@ -24,6 +24,7 @@ dependency: [SRT-DAILY-REVIEW-PIPELINE, SRT-EQ-HYP-MAP]
 | 2026-03-02 | `_SRT_VERTICAL_INTEGRATION.md §4` | d_collective 聚合公式未形式化（方案 A/B/C/D 待实验选择） | 标记为实验依赖 Gap，设计区分实验 | High | Pending |
 | 2026-03-02 | `Core/SRT_Core_01_Axioms.md` | A10/A11 Part B 缺乏标准化"实验钩"节 | 参照 A7/A8 格式补充 H-ID 实验钩节 | Med | Pending |
 | 2026-03-02 | `_SRT_EQ_HYP_MAP.md` | 经济学 Bridge 和演化 Bridge 尚未建立 | 列入下一季度工作项 | Med | Pending |
+| 2026-03-05 | `_SRT_EQ_HYP_MAP.md` | 主映射矩阵仍含 3 条 `Status=Gap`（Eq-Select-Thermo / Eq-LDP-01 / Eq-LDP-02） | 进入本周治理议程，优先补实验桥接定义 | High | Pending |
 
 ---
 
