@@ -440,3 +440,25 @@ SRT 避免了泛心论的经典困难——组合问题（Combination Problem）
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## IV. 亚细胞量子接口（候选）
+
+### Def-BioQuantum-Boundary: Microtubule Operator Coupling (hypothesis-level)
+定义亚细胞候选耦合项：
+\[
+\hat G_{\theta,neural}=\Lambda\big(\hat G_{\theta,micro}\big),\quad \Lambda:\text{micro}\to\text{neural}
+\]
+其中 \(\hat G_{\theta,micro}\) 表示微管相关量子动力学的候选选择接口。
+
+### Ax-BioQuantum-1: Decoherence Constraint Clause
+\[
+\tau_{coh}^{micro} > \tau_{min} \Rightarrow \text{micro contribution detectable};\quad \tau_{coh}^{micro}\le\tau_{min} \Rightarrow \text{negligible}
+\]
+* **Implication**：该接口是“可检验候选机制”，非既定事实；其有效性受退相干边界严格约束。
+
+## 【理论边界/防误用声明】
+- 不采纳“存在微管量子过程=意识已被解释”的推论。  
+- 不采纳“量子坍缩可单独推出主观体验”的推论；仍需 \(d>0\)、\(\Psi_f\)-payable 与 \(V>0\) 门控。  
+- 不采纳“Gamma 与微管机制已建立单向因果链”的推论：当前仅可作为假说级关联候选。
+

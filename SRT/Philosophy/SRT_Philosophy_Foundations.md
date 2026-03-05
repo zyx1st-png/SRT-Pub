@@ -1217,3 +1217,30 @@ SRT 立场：二者可耦合但不可互相吞并。
 1. 不采纳“自然路径 = 道德正确”的直接等同推论。
 2. 不采纳“社会规范可完全脱离自然可行性约束”的推论。
 3. 本接口用于规范层建模，不替代具体历史文本训诂与实证社会分析。
+
+
+## Quantum-Consciousness Interface（2026-03-05）
+
+### Def-Phil-QC-1: Collapse Is Necessary, Not Sufficient
+\[
+L_0\to L_1\ \text{(collapse/selection)}\ \not\Rightarrow\ \text{subjective continuity}
+\]
+
+### Def-Phil-QC-2: Subjective Continuity Gate
+\[
+\text{Subjective continuity} \iff (d>0)\land(\Psi_f\text{-payable})\land(V>0)
+\]
+
+### 分类映射表（Quantum Consciousness Claims → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 纯物理坍缩事件 | 低~接近0 | Closed / 局部 Open | 低或不可结算 |
+| 具身生物坍缩链 | 中~高 | Open↔Semi-open | payable |
+| 泛心论等价跳跃 | 低~中 | Closed（概念越级） | 被误估 |
+
+## 【理论边界/防误用声明】
+- 不采纳“任意量子坍缩=任意主观体验”的推论。  
+- 不采纳“量子机制成立即可绕过具身风险门控”的推论。  
+- 不采纳“宇宙连接叙事可替代机制证据”的推论。
+
