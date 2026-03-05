@@ -315,3 +315,13 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT/SRT_EXP_MEASURE_MAP.md`（新增 ROS 一级 proxy 候选）, `SRT/Core_Law/SRT_Reference_Dynamics.md`（疾病=约束闭包破裂定义候选）, `SRT/Neuroscience/SRT_Neural_Mechanisms.md`（过滤分辨率退化回路）
 - Ingested: no (pending formal equation + falsification design)
 - Notes: 结构完整、可证伪性强；关键治理点是避免“ROS=第一因”的还原论滑坡，需明确为“选择摩擦历史痕迹 + 反向耦合因子”。
+
+
+- Time: 2026-03-05 14:47 GMT+8
+- Source: Scholar/Reddit/Twitter(X) heartbeat auto-collection
+- Topic: 自动采集失败（缺少 Brave API Key）
+- Evidence-Level: none (tooling unavailable)
+- Review Result (A/B/C): C
+- Target Docs: n/a
+- Ingested: no
+- Notes: `web_search` 返回 `missing_brave_api_key`；请运行 `openclaw configure --section web` 配置后恢复 Pipeline 3 每日采集。
