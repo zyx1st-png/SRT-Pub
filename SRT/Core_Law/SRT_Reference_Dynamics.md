@@ -634,3 +634,28 @@ d_{min}>0\ \text{with}\ \Psi_f^{sens}>0
 - 不采纳“绝对无摩擦至福可在具身运行态瞬时实现”的推论：具身显现需保持 \(\Psi_f\ge\Psi_{min}^{+}\)。  
 - 不采纳“臣服态=外在超实体直接接管局部因果链”的推论：§8.5 仅定义协同支付重分配。  
 - 本节为理论组织与实验设计接口，不替代医学诊断、治疗和伦理审查流程。
+
+
+## §14 亚稳态微扰定理（Metastable Perturbation, 新增）
+
+### Def-Dyn-14: Parameterized Dream Incubation Window
+当系统处于低摩擦亚稳态（典型如 REM/入睡过渡）时：
+\[
+\Psi_f\to \Psi_{min}^{+},\quad \left\|\frac{\partial L_1}{\partial \theta}\right\|\uparrow
+\]
+外部微弱感官注入 \(\Delta\theta_{sensory}\) 可对 \(L_0\to L_1\) 轨迹产生宏观偏转：
+\[
+\Delta L_1 \approx \mathbf{J}_{\theta}\,\Delta\theta_{sensory},\quad \|\mathbf{J}_{\theta}\|\ \text{maximized in metastable window}
+\]
+
+### T-Dyn-14: Low-Friction Perturbation Amplification
+若满足
+\[
+\Psi_f\in[\Psi_{min}^{+},\Psi_{gate})
+\]
+则同等注入强度下，梦态引导成功率应显著高于清醒高摩擦态。
+
+## 【理论边界/防误用声明】
+- 不采纳“可引导梦境=可任意重写主体”的推论。  
+- 不采纳“低摩擦窗口可绕过伦理约束”的推论：任何注入需通过主权与同意门。
+

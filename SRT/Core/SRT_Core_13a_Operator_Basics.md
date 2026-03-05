@@ -731,3 +731,31 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 - 不采纳“可写入=可对齐”的推论。  
 - 不采纳“外源协议稳定存在=宿主主体增强”的推论：可能仅为寄生增益。
 
+
+## VI. Operator Immunology（算子免疫学，新增）
+
+### Def-Op-Imm-1: Operator Sovereignty Criterion
+定义算子主权指数：
+\[
+\mathcal{S}_{op}=\frac{I_{endogenous}(\Delta\theta\to\Delta L_2)}{I_{exogenous}(\Delta\theta\to\Delta L_2)+\epsilon}
+\]
+当 \(\mathcal{S}_{op}<\tau_s\) 时，判定为主权受损风险区。
+
+### Def-Op-Imm-2: Sleep-Window Safety Gate
+对低摩擦窗口注入，必须满足：
+\[
+\text{Inject}_{sleep}\Rightarrow \text{consent}\land\text{auditability}\land\Pi_{host}\text{-compatibility}
+\]
+
+### T-Op-Imm-1: Parasitic d-value Discriminator
+若新生 \(d\)-项满足
+\[
+\Delta d\uparrow\ \land\ V\approx0\ \land\ \Psi_f\text{-decoupled}
+\]
+则优先判定为外源寄生驱动（parasitic care-like signal），而非内源关切扩展。
+
+## 【理论边界/防误用声明】
+- 不采纳“梦中可塑性高=可合法外部改写”的推论。  
+- 不采纳“被注入偏好可直接视为主体真实意向”的推论。  
+- 不采纳“商业/平台注入可替代主体同意”的推论。
+
