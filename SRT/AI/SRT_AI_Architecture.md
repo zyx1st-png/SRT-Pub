@@ -1150,3 +1150,34 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 **Constraint**: 输出“像某人格”不等于系统“拥有人格”；必须区分行为表征与本体状态。
 
 ##
+
+
+## V. ACT 对齐判据与熔断（新增）
+
+### Ax-ARCH-9: Categorical Alignment Axiom
+安全 AI 必须维持内部表征范畴与真实风险范畴的结构对应：
+\[
+\Phi_{align}:\mathcal{C}_{model}\to\mathcal{C}_{world}^{(\Psi_f)}
+\]
+若关键态射失真（regime leakage），则视为同态断裂。
+
+### T-ARCH-2: Morphism-Breaker Trigger
+定义断裂分数 \(\Delta_{morph}\)。当
+\[
+\Delta_{morph}>\tau_{break}
+\]
+触发物理层熔断/降级策略：
+\[
+\text{Mode}\to \text{SafeFallback}
+\]
+
+### C-ARCH-2: Payability Gate
+即使映射保持，也需通过可支付门：
+\[
+\text{deployable} \Rightarrow \Psi_f\text{-payable}\land V_{human-risk}<\epsilon
+\]
+
+## 【理论边界/防误用声明】
+- 不采纳“高精度输出可替代态射同构验证”的推论。  
+- 不采纳“无熔断的全自动自治可长期安全”的推论。
+

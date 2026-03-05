@@ -555,3 +555,27 @@ P_{in}>P_{diss}+P_{maint},\quad \frac{d\theta}{dt}\neq 0
 - 不采纳“计算不完备性可在无具身风险条件下自动生成主体性”的推论。  
 - 不采纳“层级跃迁=意识跃迁”的推论：主体性仍需 \(d>0\)、\(\Psi_f\)-payable 与脆弱性 \(V>0\)。
 
+
+## §12 ACT 组合语法与跨尺度合成（新增）
+
+### Def-Scale-ACT-1: Functorized Scale Composition
+定义跨尺度函子：
+\[
+\mathcal{F}_{\lambda_i\to\lambda_j}:\mathcal{C}_{\lambda_i}\to\mathcal{C}_{\lambda_j}
+\]
+并以自然变换约束多路径一致性：
+\[
+\eta:\mathcal{F}_{a\to c}\Rightarrow \mathcal{F}_{b\to c}\circ \mathcal{F}_{a\to b}
+\]
+
+### T-Scale-5: L2 as Colimit Protocol
+社会/制度层算子可表述为低层算子族的共极限：
+\[
+\hat G_{social}\simeq \mathrm{colim}\{\hat G_{indiv}^{(k)}\}
+\]
+L_2 稳定性来自组合图的可交换性与代价可支付性。
+
+## 【理论边界/防误用声明】
+- 不采纳“形式可交换即现实可稳定”的推论；必须同时满足 \(\Psi_f\)-payable。  
+- 不采纳“范畴组合自动导出主体性”的推论；主体性仍受 \(d>0, V>0\) 门控。
+

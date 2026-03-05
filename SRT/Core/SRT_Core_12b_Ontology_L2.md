@@ -620,3 +620,35 @@ SRT的L_2理论为以下领域提供桥梁:
 1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
 2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
 3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
+
+
+## IV-bis. 范畴错误即本体论短路（新增）
+
+### Def-L2-Short-1: Ontological Short-Circuit
+当跨域变量被强行同域运算（结构不可通约）时，定义为本体论短路：
+\[
+\mathcal{X}_{cat}\equiv \neg\exists\,\mathcal{F}:\mathcal{C}_A\to\mathcal{C}_B\ \text{that preserves constraints}
+\]
+其动力学表现为局部摩擦发散：
+\[
+\Psi_f\to\infty
+\]
+
+### T-L2-03: Collapse Under Forced Composition
+若系统在 \(\mathcal{X}_{cat}\) 条件下持续执行耦合，则
+\[
+\partial_t \mathrm{Stability}(L_2)<0\quad\land\quad \text{failure probability}\uparrow
+\]
+
+### 分类映射表（范畴错误场景 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 合法跨域映射 | 中~高 | Semi-open / Open | payable |
+| 强行同域拼接 | 低~中 | Closed 倾向 | overloaded |
+| 长期短路运行 | 低 | Closed 崩溃态 | unsustainable |
+
+## 【理论边界/防误用声明】
+- 不采纳“短期可跑通=长期可稳定”的推论。  
+- 不采纳“资本逻辑/生态逻辑可无损互换”的推论；需显式态射与约束保持证明。
+
