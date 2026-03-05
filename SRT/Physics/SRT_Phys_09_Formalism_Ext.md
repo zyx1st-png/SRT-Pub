@@ -922,3 +922,35 @@ SRT 接口主张不以“观察者神秘性”求解，而以“门控动力学 
 1. 不采纳“塌缩模型已被最终证实”的推论（当前仍属竞争框架）。
 2. 不采纳“任何非线性修正都自动等价 SRT 选择算子”的推论。
 3. 本节为物理接口层，不直接推出认知层意识结论。
+
+
+## XXI. Active Inference Chapter 3 Interface（2026-03-05）
+
+### Def-AIF-3-1: Blanket as Embodied Operator Boundary
+\[
+B_{MB}=(S,A),\quad \hat{G}_\theta\ \text{通过}\ S/A\ \text{与环境耦合}
+\]
+在 SRT 中重写为：
+\[
+B_{MB}\equiv \partial L_1(\theta),\quad S\mapsto \Psi_f\ \text{结算通道},\quad A\mapsto d\text{-导向出射通道}
+\]
+
+### T-AIF-3-1: NESS–L2 Maintenance Equivalence (effective)
+\[
+\text{Maintain NESS} \Longleftrightarrow \text{Maintain local }L_2\text{ stability under finite }\Psi_f\text{ budget}
+\]
+
+### T-AIF-3-2: Passive/Active Blanket Split Criterion
+被动毯：
+\[
+d\approx 0,\ \partial_t\theta\approx 0 \Rightarrow \text{仅统计收敛，不构成主体事件}
+\]
+主动毯：
+\[
+d>0,\ \partial_t\theta=f(\text{history,error,cost}),\ \Pr(\Psi_f\text{ payable})>0
+\]
+
+## 【理论边界/防误用声明】
+- 不采纳“有马尔可夫毯=有主体性”的推论。  
+- 不采纳“自由能最小化已充分推出意识”的推论。  
+- AIF 高阶道路在 SRT 中是机制层接口，不是本体层终判。  

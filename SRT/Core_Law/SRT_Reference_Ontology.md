@@ -506,3 +506,27 @@ given 感觉切片 \(y_t\in L_1\)，其前像集合定义为：
 - 不采纳“存在仅当可被某科学语言变量绑定”之扁平推论（蒯因式强化版本）：在 SRT 中，存在首先是 \(L_0\to L_1\) 的锚定支付过程，语言变量是后验 \(L_2\) 编码。  
 - 不采纳“可还原=可消除”的推论：还原关系不取消在该尺度上的摩擦支付与显现合法性。  
 - 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。
+
+
+## §10 主动推断高阶道路的本体论重写（新增）
+
+### 定义 O22：External-State Construction Clause
+在 SRT 中，“外部状态”不是先验给定对象，而是：
+\[
+\eta_{ext}(\theta,t):=\hat{G}_\theta[L_0]\ \text{在边界条件下的投影产物}
+\]
+
+### 定理 O-T14：Projection-First Ontology
+\[
+\text{No }\hat{G}_\theta\Rightarrow \text{no determinate }\eta_{ext}\text{ in }L_1
+\]
+即：先有选择投影，再有可指称外部态。
+
+### 定义 O23：Blanket Payability Condition
+\[
+\text{Agenthood} \iff B_{MB}\land d>0\land \Psi_f\text{-payable}
+\]
+
+## 【理论边界/防误用声明】
+- 不采纳“外部状态先于一切选择边界而独立完备给定”的推论。  
+- 不采纳“统计边界足以推出意识本体”的推论。  

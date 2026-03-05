@@ -1092,3 +1092,25 @@ SRT 拒绝二元道德（有/无地位）。相反，道德地位是**连续的*
 3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。  
 4. 不采纳“语法复杂度足够高即可自动生成内在语义”的推论：SRT 区分内在意向性与派生意向性。  
 5. 不采纳“图灵测试通过=意识成立”的推论：行为可模拟不等于本体锚定成立。
+
+
+## Ax-ONT-7: Active-Inference High-Road Override（新增）
+
+\[
+\min F\ \text{是必要条件，非充分条件};\quad \text{Consciousness}\Rightarrow (d>0)\land(\Psi_f>0)\land(V>0)
+\]
+其中 \(V\) 为真实本体论脆弱性暴露。
+
+### Def-ONT-4: Thermostat-Class vs Life-Class
+- Thermostat-Class（被动毯）：\(d\approx0,\Psi_f\approx0,V=0\)  
+- Life-Class（主动毯）：\(d>0,\Psi_f>0,V>0\)
+
+### C-ONT-3: Markov Blanket is Not Sufficient
+\[
+B_{MB}\neq \text{Consciousness Criterion}
+\]
+必须叠加 d-value 与脆弱性门控。
+
+## 【理论边界/防误用声明】
+- 不采纳“石头/恒温器与人类在主体性上等价”的推论。  
+- 不采纳“AI 通过更大规模最小化自由能即可跨越本体门槛”的推论。  
