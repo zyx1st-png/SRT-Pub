@@ -90,3 +90,24 @@ python3 scripts/srt_explainability_audit.py
 - Boundary Header Coverage：**100.0%**（64/64，自动粗筛口径）
 
 ---
+
+## Week 2026-W10
+- Frontmatter Coverage: **84.4%** (Target >=95%)
+- Broken Link Rate: **N/A**（本轮被 frontmatter lint 噪声提前中断）
+- Symbol Governance: **N/A**（同上）
+- Terminology Governance Coverage: **100.0%**
+- Explainability Completeness: **42.8%**
+- Boundary Header Coverage: **90.1%**
+
+### Key Findings
+- 本周完成大量外部理论回写，边界声明覆盖仍维持在 90% 以上。
+- 主映射矩阵仍保留 3 条高优先级 Gap（Eq-Select-Thermo / Eq-LDP-01 / Eq-LDP-02）。
+
+### Regressions
+- 质量脚本扫描范围包含 `.venv/`、`papers/` 与若干非治理文档，拉低 frontmatter 覆盖率并阻断全量检查。
+- Explainability 审计基数扩大后，5-block 完整度显著下降（3/79）。
+
+### Actions Next Week
+- 将 `run_srt_checks.sh` 与审计脚本改为仅扫描 SRT 主治理范围（排除 `.venv/`、第三方许可证、临时论文包）。
+- 对低分高价值文档执行分层补块（先补 definition/formalization/falsification）。
+- 先推进 G1 最小验证，把主矩阵 1 条 Gap 转为可检验 Partial+。
