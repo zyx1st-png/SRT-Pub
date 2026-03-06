@@ -736,3 +736,27 @@ $$\text{IsStable}(L_2) \iff I(L_2(t+1); L_2(t)) \gg I(L_2(t+1); L_0(t) | L_2(t))
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+## 时空渲染相变界限补注（2026-03-06，轻中量）
+
+### Def-Quant-Cos-RTC-1: Spacetime Rendering Boundary
+声明 \(L_0\) 不预设经典时空序；时空度规与事件先后是跨主体稳定锚定后的渲染协议：
+\[
+\text{Spacetime Metric} \in \Pi^{render}_{L_2}\big(\hat G_\theta[L_0]\big)
+\]
+\[
+\text{Consensus-stable order} \iff \Psi_f^{consensus}\ \text{payable}
+\]
+* **Implication（中文）**：在高相干 \(L_0\) 区间强行施加经典前后序，属于范畴误置；应先检查是否已跨越渲染稳定阈值。
+
+### Cor-Quant-Cos-RTC-1: Category-Mistake Criterion
+若系统仍处于长相干/弱锚定区，使用经典 simultaneity 直接判定“先后因果”不具完备性。
+
+## 【理论边界/防误用声明】
+- 不采纳“无时空基底 = 否定经验时空有效性”的推论。
+- 不采纳“任何反直觉时间叙述都自动成立”的推论。
+- 适用边界：时空渲染协议在宏观 \(L_1/L_2\) 区间依然是最高可操作层。
+
+### [Lineage/Source]
+- Penrose 相关时间/坍缩讨论语境
+- 量子基础访谈（2026）

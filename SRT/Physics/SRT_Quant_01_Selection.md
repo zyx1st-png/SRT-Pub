@@ -729,3 +729,28 @@ $$d_{value} \propto \frac{1}{\tau_{collapse}}$$
 ##
 
 ## 【理
+
+## 量子基础访谈接口：客观坍缩与选择退化极限（2026-03-06，轻中量）
+
+### Def-Quant-RTC-1: Basal Collapse as Degenerate Selection Limit（候选）
+将“客观物理坍缩”定义为选择算子在微观极限下的退化形式候选：
+\[
+\hat G_{\theta\to\theta_{min},\ d\to 0}: L_0 \to L_1
+\]
+其中坍缩阈值可由系统可支付摩擦上限刻画：
+\[
+\Psi_f^{req}(\ell,m,\tau) > \Psi_f^{cap}(\text{micro-system}) \Rightarrow \text{anchor/collapse}
+\]
+* **Implication（中文）**：该定义允许 Diósi–Penrose 类机制作为 SRT 的特例候选，而非与 SRT 框架二选一。
+
+### Cor-Quant-RTC-1: Anti-Binary Interpretation Guard
+“客观坍缩成立”与“选择框架失效”并非逻辑等价；前者可落在 \(d\to 0\) 的跨尺度边界层。
+
+## 【理论边界/防误用声明】
+- 不采纳“客观坍缩若成立，则 SRT 必然失效”的推论。
+- 不采纳“量子层 d\(\to 0\) 即可推出认知层 d\(>0\) 无意义”的推论。
+- 适用边界：该接口仅用于统一解释候选；是否成立取决于可重复实验区分力。
+
+### [Lineage/Source]
+- Diósi–Penrose objective collapse 相关文献语境
+- 量子基础访谈（Ivette Fuentes 语境推断，2026）
