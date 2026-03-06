@@ -210,3 +210,28 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 1. 将“单一统一假设”改写为 SRT 的“统一性族”判据：`U_sync` 与 `U_bind` 是必要但不总是充分条件，可在任务域中继续展开子判据。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262027786.003.0005〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
 2. 在 `T-Phil-2` 下补充“多统一并存”注记：不同统一性失败样式（跨模态裂解、跨时叙事断裂）应按层处理，而非一刀切否定主体连续性。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
 3. 对 `Ax-Ph1` 增加解释约束：主体同一性判定必须绑定到可追踪选择轨道，不允许仅凭单一统一报告直接上升为本体结论。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
+
+## 信念与反紧缩条款（2026-03-06，补注）
+
+### Ax-Phil-7: Belief-Norm of Assertion
+断言行为预设最小信念承诺：
+\[
+\text{Assert}(P) \Rightarrow \mathrm{Credence}(P) > \tau_{min}
+\]
+* **Implication（中文）**：宣称“我没有任何信念”本身是自指矛盾的断言结构。
+
+### T-Phil-5: Anti-Deflationary Cost Theorem
+若一个命题被系统“真实持有并依赖”，则其维持与更新必伴随可观测代价：
+\[
+\text{Held}(P) \Rightarrow \Delta E + \Delta \Psi_f + \Delta W_{syn} > 0
+\]
+其中 \(\Delta W_{syn}\) 为神经/结构权重更新量代理。
+* **Implication（中文）**：真值实践不可被纯语言学紧缩为“仅是重述”。
+
+## 【理论边界/防误用声明】
+- 不采纳“信念只是词语习惯，无任何动力学后果”的推论。
+- 不采纳“科学共同体共识=绝对无参视角”的推论。
+
+### [Lineage/Source]
+- 分析哲学中的 belief/credence/fallibilism 讨论语境
+- Curt Jaimungal 相关演讲（2026）

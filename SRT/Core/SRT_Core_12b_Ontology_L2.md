@@ -652,3 +652,38 @@ SRT的L_2理论为以下领域提供桥梁:
 - 不采纳“短期可跑通=长期可稳定”的推论。  
 - 不采纳“资本逻辑/生态逻辑可无损互换”的推论；需显式态射与约束保持证明。
 
+
+## OAI 与信念可塑性补注（2026-03-06，轻中量）
+
+### Def-L2-BEL-1: Belief as Structured Priors
+在 SRT 中，信念定义为算子参数中的结构化先验沉积：
+\[
+\text{Belief} \equiv \theta_{prior}\subset \theta,
+\quad
+\theta_{prior}=\arg\min_{\theta'}\mathbb E\big[\Psi_f\mid \theta'\big]
+\]
+* **Implication（中文）**：信念不是“反科学残留物”，而是任何可运行选择系统的必需压缩结构。
+
+### Def-L2-OAI-1: Ontological Amnesia Index
+定义“本体论失忆”指数：
+\[
+\mathrm{OAI}=\frac{\mathrm{Hardness}(L_2)\cdot T_{lock}}{\langle \Psi_f^{update}\rangle+\epsilon}
+\]
+当 \(\mathrm{OAI}\) 过高，系统倾向于把 \(L_2\) 误认成 \(L_0^{abs}\)。
+
+### Ax-L2-09: Parameter Plasticity Split
+区分两类信念动力学：
+\[
+\Delta\theta = \eta_p\cdot\nabla_\theta \text{PE} - \eta_v\cdot \text{Viscosity}(
+\theta)
+\]
+- 科学信念：\(\eta_p\) 高、可跨阈值重写 \(\theta\)
+- 教条信念：\(\eta_p\) 低、在高预测误差下仍锁定
+
+## 【理论边界/防误用声明】
+- 不采纳“我没有信念=更理性”的推论。
+- 不采纳“紧缩真理论可抹平摩擦代价”的推论。
+- 适用边界：形式可相对，但 \(\Psi_f\) 与更新代价是客观可测的。
+
+### [Lineage/Source]
+- Curt Jaimungal 关于 belief/faith 区分与可错论讨论（2026 语境）
