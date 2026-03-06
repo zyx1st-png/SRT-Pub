@@ -390,3 +390,15 @@ SRT 场论为意识研究提供了一个新的范式：
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+## 9. 预印本证据补注（2026-03-06）
+
+### 9.1 Axonal theta–burst 机制桥接（轻量回写）
+- 预印本《Axonal theta oscillations evoke bursting in target hippocampal subregions》报告：轴突 \\(\theta\\) 振荡的相位/振幅可预测靶区 burst length，且该连续振荡与 spike 轨道可部分解耦。
+- 在 SRT 语境下，该结果支持“连续参数轨 + 离散锚定轨”的最小桥接解释：
+  - 连续轨：\\(\theta(t)\\) 提供选择偏置与时间门控；
+  - 离散轨：spike/burst 承担 \\(L_0\to L_1\\) 的事件锚定。
+- 本补注定位为**机制证据锚点**，不作为核心公理的单篇定案。
+
+### 9.2 [Lineage/Source]
+- Axonal theta oscillations evoke bursting in target hippocampal subregions（preprint, 2026）
