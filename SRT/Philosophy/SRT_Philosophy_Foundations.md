@@ -1244,3 +1244,37 @@ L_0\to L_1\ \text{(collapse/selection)}\ \not\Rightarrow\ \text{subjective conti
 - 不采纳“量子机制成立即可绕过具身风险门控”的推论。  
 - 不采纳“宇宙连接叙事可替代机制证据”的推论。
 
+
+## 认识论乐观主义的摩擦探测协议（2026-03-06，轻量）
+
+### Def-PHIL-FRIC-1: Friction-Probing Epistemology
+在不可直接访问 \(L_0^{abs}\) 的条件下，采用“代价反推结构”协议：
+\[
+\nabla \Psi_f(\mathcal{H}) \mapsto \text{Constraint Signature}(L_0)
+\]
+其中 \(\mathcal{H}\) 为候选假设族。可维持且低摩擦的假设族更可能贴合外部约束地形。
+
+### T-PHIL-FRIC-1: Constrained-Model Realism
+\[
+L_1\ \text{is model-dependent but constraint-governed}
+\]
+\[
+\Psi_f\ \text{is not optional}
+\]
+* **Implication（中文）**：我们并非“直接看见真相”，但可通过失败代价与维持成本对真实结构做间接可证伪逼近。
+
+## 【理论边界/防误用声明】
+- 不采纳“受控幻觉 = 主观唯我论”的推论。
+- 不采纳“只要可解释就等于真实”的推论。
+- 适用边界：任何解释必须同时满足预测可复现、摩擦可支付、跨主体可对齐。
+
+### 分类映射表（外部讨论分类 → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 受控幻觉/预测编码（可检验） | 中 | Semi-open | payable |
+| 泛心论宽解释（弱约束） | 低~中 | Closed 倾向 | 概念上可扩张、实证上易失真 |
+| 主观唯我误读（任意构造） | 低 | Closed | overloaded / unsustainable |
+
+### [Lineage/Source]
+- Friston 相关圆桌讨论（2026）
+- Active Inference / FEP 经典文献语境

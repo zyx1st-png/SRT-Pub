@@ -546,3 +546,26 @@ L_1 = f(\theta) + \epsilon,\quad
 4. 不采纳“历史叙事桥梁=机制完备模型”的推论：临床哲学整合必须补上可测动力学。  
 5. 不采纳“单一疗法可跨层解决全部病理”的推论：SRT 要求结构轴与动力学轴协同干预。  
 6. 不采纳“共具身=主体不独立”的绝对推论：SRT 采用相变诞生模型而非永久融合模型。
+
+## 机制同构补注：Active Inference × SRT（2026-03-06）
+
+### Ax-NEURO-MECH-8: Neuro-Anatomical Regulator Isomorphism（新增，轻量）
+**Formal Definition**: 若环境统计在“身份特征”与“空间位置”上近似正交，则具身算子硬件层会收敛到分流拓扑：
+\[
+\Theta_{neural}^{*}=\arg\min_{\Theta}F(\Theta)\quad \text{s.t.}\quad I(What;Where)\approx 0
+\]
+\[
+\Theta_{neural}^{*}\Rightarrow \mathcal{S}_{ventral}\perp \mathcal{S}_{dorsal}
+\]
+* **Implication（中文）**：What/Where 双流可视作 Good Regulator 原理在神经解剖层的可观测沉积：不是随机分工，而是长期自由能最小化下的拓扑同构结果。
+
+### Note-NEURO-MECH-8: Active Sampling Coupling
+主动推断中的“采样行动”可写作对 \(\theta\) 的在线更新门：
+\[
+\theta_{t+1}=\theta_t-\eta\nabla_\theta F(o_t,a_t)
+\]
+其中 \(a_t\) 同时改变下一时刻可观测输入分布 \(p(o_{t+1}|a_t)\)。
+
+### [Lineage/Source]
+- Friston et al., Active Inference / Free-Energy Principle（系列论文）
+- Conant & Ashby, Good Regulator Theorem

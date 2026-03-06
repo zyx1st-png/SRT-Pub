@@ -629,3 +629,27 @@ $$
 ## 【理论边界/防误用声明】
 - 不采纳“形式可构造 = 物理可实现”的推论。
 - 边界：\(L_0\) 的形式可达性是推理能力指标，不是能量与物理实现性的替代。
+
+## L_0^{abs} 无时空边界补注（2026-03-06，轻量）
+
+### Def-L0-Abs-NonSpatiotemporal（新增，轻量）
+**Formal Definition**: \(L_0^{abs}\) 不预设时空与经典因果；时空结构是具身算子在 \(L_1\) 的渲染协议结果：
+\[
+L_1=\Pi_{\theta}^{render}(L_0^{abs}),\qquad \Pi_{\theta}^{render}\in\{\text{spatiotemporal modes}\}
+\]
+* **Implication（中文）**：时空不是绝对“底层容器”，而是 \(\hat{G}_\theta\) 为降低预测误差与摩擦成本而采用的稳定投影坐标。
+
+### Cor-L0-Abs-RenderLock
+当 \(\theta\) 被生物体演化锁定于时空渲染模式时，系统对“无时空基底”理论会呈现持续高认知摩擦：
+\[
+\theta\in\Theta_{human}^{ST}\Rightarrow \Psi_f(\text{non-ST models})\uparrow
+\]
+
+## 【理论边界/防误用声明】
+- 不采纳“L1 为渲染结果 = 可任意捏造现实”的推论。
+- 不采纳“无时空基底可直接替代经验时空”的推论。
+- 适用边界：渲染协议受外部阻抗与可支付摩擦约束，\(\Psi_f\) 过载会触发模型失稳。
+
+### [Lineage/Source]
+- Active Inference / Predictive Processing 讨论语境
+- 现代无时空量子引力相关讨论（语境桥接）
