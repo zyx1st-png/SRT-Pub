@@ -1112,3 +1112,38 @@ d \ge d_{indiv}\Rightarrow \Psi_f \text{ internalizes as individual suffering lo
 
 ### [Lineage/Source]
 - 神学-进化-动物苦难对话语境（2026）
+
+## 认知资本化与幂律尾部补注（2026-03-06，轻中量）
+
+### T-Scale-Cap-1: Low-Friction Isomorphism Theorem
+对同一潜在模式 \(X\in L_0\)，若协议 \(\Pi_a\) 与具身参数 \(\theta\) 更对齐，则锚定摩擦更低：
+\[
+\Psi_f(X\mid \Pi_a,\theta) < \Psi_f(X\mid \Pi_b,\theta)
+\]
+当 \(\Pi_a=\Pi_{vis}\) 且 \(\Pi_b=\Pi_{sym}\) 时，该不等式在典型人类认知架构下通常成立。
+* **Implication（中文）**：协议切换（如符号→拓扑/视觉）可在不改变目标结构的前提下显著降低推理摩擦。
+
+### Def-Scale-Cap-1: Cognitive Capitalization Dynamics
+定义表现变量 \(P\) 与稳定脚手架深度 \(L_2^{depth}\)：
+\[
+\frac{dP}{dt}=\kappa\,P\,g\big(L_2^{depth},\hat G_\theta\big)+\xi_t,
+\qquad
+\frac{dL_2^{depth}}{dt}=h(P)-\lambda_{decay}L_2^{depth}
+\]
+其中 \(\xi_t\) 为噪声项，\(g\) 单调增于 \(L_2^{depth}\)。
+
+### T-Scale-Cap-2: Pareto-Tail Emergence (Candidate)
+在乘性增长 + 异质摩擦 + 噪声扰动条件下，群体表现分布出现幂律尾部候选：
+\[
+\Pr(P>x)\sim x^{-\alpha}\quad (x\to\infty)
+\]
+* **Implication（中文）**：极端天才尾部可由长期资本化动力学产生，无需诉诸神秘外因。
+
+## 【理论边界/防误用声明】
+- 不采纳“表现幂律 = d-value 或道德价值幂律”的推论。
+- 不采纳“视觉协议必然优于符号协议”的绝对化推论。
+- 适用边界：本条款描述认知表现分布，不直接定义本体价值序。
+
+### [Lineage/Source]
+- Ramanujan 认知机制讨论语境（2026）
+- 枚举组合学可视化传统（Viennot 语境）

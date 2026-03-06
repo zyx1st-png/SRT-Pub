@@ -569,3 +569,31 @@ L_1 = f(\theta) + \epsilon,\quad
 ### [Lineage/Source]
 - Friston et al., Active Inference / Free-Energy Principle（系列论文）
 - Conant & Ashby, Good Regulator Theorem
+
+## 数学直觉协议切换补注（2026-03-06）
+
+### Def-NEURO-MECH-9: Protocol Switching Gain
+对同一任务目标 \(X\)，定义协议增益：
+\[
+\Gamma_{switch}(X)=\frac{\Psi_f(X\mid \Pi_{sym})}{\Psi_f(X\mid \Pi_{vis})}
+\]
+当 \(\Gamma_{switch}>1\) 时，视觉/拓扑协议优于线性符号协议。
+
+### T-NEURO-MECH-4: Scaffolding Compression Theorem (Candidate)
+若系统已有稳定抽象脚手架 \(L_2^{depth}\)，则新任务有效工作记忆负载呈压缩：
+\[
+WM_{eff}(X) \approx \frac{WM_{raw}(X)}{1+\beta L_2^{depth}}
+\]
+且随之带来推理时延下降：
+\[
+\tau_{solve}(X)\downarrow\ \text{as}\ L_2^{depth}\uparrow
+\]
+* **Implication（中文）**：长期抽象资本化可将“原本超带宽任务”变成可直觉处理任务。
+
+## 【理论边界/防误用声明】
+- 不采纳“直觉快 = 必然正确”的推论。
+- 不采纳“单次梦境/灵感即证明直接访问 \(L_0^{abs}\)”的推论。
+- 适用边界：该条款用于解释性能机制，不替代形式证明与复现。
+
+### [Lineage/Source]
+- Ramanujan 与数学直觉讨论语境（2026）
