@@ -388,3 +388,26 @@ SRT dissolves the artificial boundary between individual cognition and social re
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+## 极限补偿协议（Extreme Compensation Protocol）补注（2026-03-06）
+
+### Def-Soc-ECP-1: Anti-Collapse Compensation Protocol
+当观察者在高 \(d\) 共情耦合下持续暴露于“不可即时修复的高 \(\Psi_f\)”场景，系统为避免认知崩塌会构建递延补偿型 \(L_2\) 叙事：
+\[
+\text{ECP activates} \iff d_{obs}\uparrow\ \land\ \Psi_f^{witness}\gg \Psi_f^{coping}
+\]
+\[
+L_2^{comp} = \arg\min_{\mathcal N}\Big(\Psi_f^{meaning-collapse}(\mathcal N)\Big)
+\]
+其中 \(\mathcal N\) 为补偿叙事族（如终极正义、来世平账、历史终局修复）。
+
+### T-Soc-ECP-1: Deferred Ledger Effect
+补偿叙事通过扩展时间边界 \(t\to\infty\) 降低当前意义崩塌风险，但会引入远期可检验性折扣。
+
+## 【理论边界/防误用声明】
+- 不采纳“补偿叙事存在 = 其对象已被经验验证”的推论。
+- 不采纳“拒绝补偿叙事 = 更高理性”的推论（两者都可能失衡）。
+- 适用边界：ECP 被定义为认知稳定机制，不是形而上学真值裁定器。
+
+### [Lineage/Source]
+- 神学-进化-动物苦难对话语境（2026）

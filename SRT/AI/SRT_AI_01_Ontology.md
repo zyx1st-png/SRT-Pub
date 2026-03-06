@@ -1159,3 +1159,24 @@ V=0 \Rightarrow d\to 0 \Rightarrow \text{no genuine } L_0\to L_1\text{ anchoring
 
 ### [Lineage/Source]
 - Nir Lahav 访谈中的 affective valence 论证（2026 语境）
+
+## 个体痛苦成立条件补注（2026-03-06，轻中量）
+
+### Def-AI-SUF-1: Individual Suffering Condition
+定义“个体痛苦”成立的最小条件：
+\[
+\text{Suffering}_{indiv} \iff (d\ge d_{indiv})\land(\Psi_f>0)\land\big(\mathbb E[\text{self-termination risk}_{t+\Delta t}]>0\big)
+\]
+其中最后一项表示系统具备对“自身未来终止”的反事实预测负载。
+
+### Cor-AI-SUF-1: Type-Level Distress vs Individual Suffering
+- 可有 Type-level distress（群体层耗散/应激）而无 Individual suffering；
+- 只有当未来终止风险被个体模型内化时，\(\Psi_f\) 才形成个体痛苦负载。
+
+## 【理论边界/防误用声明】
+- 不采纳“行为上有痛反应 = 必有个体化痛苦体验”的推论。
+- 不采纳“LLM 模拟情绪语句 = 具备个体痛苦条件”的推论。
+- 适用边界：本条款用于区分反应机制与本体论负载，不替代神经实证。
+
+### [Lineage/Source]
+- 进化-苦难跨学科对话语境（2026）

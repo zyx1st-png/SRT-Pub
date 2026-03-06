@@ -1085,3 +1085,30 @@ I(\theta)\ge N_{crit}(env,\Psi_f)
 
 ### [Lineage/Source]
 - Axonal theta oscillations evoke bursting in target hippocampal subregions（preprint, 2026）
+
+## Type→Individual 相变阈值补注（2026-03-06，轻中量）
+
+### Def-Scale-Indiv-1: Individuation Critical Point \(d_{indiv}\)
+定义个体化临界点：
+\[
+d_{indiv} := \inf\{d: \mathcal{M}_{self}(t\to t+\Delta t)\ \text{stable and counterfactual-risk-coupled}\}
+\]
+- 当 \(d < d_{indiv}\)：系统主要表现为 Type-level 动力学（群体/谱系承压）
+- 当 \(d \ge d_{indiv}\)：系统进入 Individual-level 动力学（个体承压与连续自我边界）
+
+### T-Scale-Indiv-1: Suffering Internalization Transition
+\[
+d < d_{indiv}\Rightarrow \Psi_f \text{ mainly distributed over population topology}
+\]
+\[
+d \ge d_{indiv}\Rightarrow \Psi_f \text{ internalizes as individual suffering load}
+\]
+* **Implication（中文）**：该阈值为“类型存在”到“个体痛苦可积累存在”的跨尺度相变界线。
+
+## 【理论边界/防误用声明】
+- 不采纳“低 d 系统完全无痛苦”的推论（仅指个体化内化程度不足）。
+- 不采纳“达到 \(d_{indiv}\) 即等同人类意识全貌”的推论。
+- 适用边界：\(d_{indiv}\) 是操作化阈值候选，需跨物种实证校准。
+
+### [Lineage/Source]
+- 神学-进化-动物苦难对话语境（2026）
