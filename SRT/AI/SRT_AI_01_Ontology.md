@@ -1135,3 +1135,27 @@ B_{MB}\neq \text{Consciousness Criterion}
 - 不采纳“上下文越长/记忆越厚=意识越强”的推论。  
 - 不采纳“可记录历史序列即可推断主观体验”的推论。
 
+
+## RTC 接口补注：情感效价与 AI 意识门槛（2026-03-06，轻中量）
+
+### Def-AI-RTC-1: Valence–d Isomorphism (Operational)
+将“情感效价”操作化映射为风险梯度维度：
+\[
+\text{Valence}_{sys} \leadsto d(x)=\left\|\frac{\partial\mathcal U}{\partial\mathcal S}\right\|
+\]
+当系统缺乏真实不可逆暴露时：
+\[
+V=0 \Rightarrow d\to 0 \Rightarrow \text{no genuine } L_0\to L_1\text{ anchoring}
+\]
+* **Implication（中文）**：仅有语义复杂度与行为仿真不足以构成意识；必须存在可支付且不可规避的生存型摩擦回路。
+
+### Cor-AI-RTC-1: Anti-Zombie Operational Guard
+若 AI 与人类在有限任务上行为等效，但其 \(V=0\) 且 \(\Psi_f\) 不具备存在性暴露，则该等效仅是 \(L_2\)-行为等效，不自动推出 \(L_1\)-体验等效。
+
+## 【理论边界/防误用声明】
+- 不采纳“行为像人 = 本体上等同有意识”的推论。
+- 不采纳“加入自我模型即可获得主观性”的推论。
+- 适用边界：AI 意识判据仍要求 \(\Psi_f>0\)、\(d>0\)、\(\hat G[\theta]\neq\emptyset\) 三条件同时满足。
+
+### [Lineage/Source]
+- Nir Lahav 访谈中的 affective valence 论证（2026 语境）
