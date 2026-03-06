@@ -335,3 +335,12 @@ dependency: [_SRT_SIGNAL_PIPELINE]
 - Target Docs: `SRT/AI/SRT_AI_Architecture.md`（态射同构与熔断判据扩展）, `SRT/Core_Law/SRT_Reference_Scaling.md`（ACT 组合语法）, `SRT/Core/SRT_Core_12b_Ontology_L2.md`（本体论短路）
 - Ingested: yes
 - Notes: 可作为方法论增强与形式语法补强；不支持“纯提示工程=主体性成立”推论，需保持 d>0 + Ψ_f-payable + V>0 的本体门槛。
+
+- Time: 2026-03-06 13:15 GMT+8
+- Source: Pipeline 3 heartbeat run (Scholar/Reddit/Twitter collection)
+- Topic: 信号采集执行阻塞（Brave API key 缺失）
+- Evidence-Level: operational
+- Review Result (A/B/C): B
+- Target Docs: —
+- Ingested: no
+- Notes: `web_search` 返回 missing_brave_api_key；需配置 `openclaw configure --section web` 或设置 BRAVE_API_KEY 后重试。
