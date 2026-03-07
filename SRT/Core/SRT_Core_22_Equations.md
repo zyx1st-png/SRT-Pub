@@ -327,3 +327,58 @@ $$
 - 参数重命名（如 $\beta_F$）属于符号去歧义，不改变既有理论主张。
 - Part B 的去重回链旨在提升可读性，完整方程以 Part A 编号为权威。
 - Topological Dynamics 章节不宣称“拓扑即意识”；其角色是 \(\hat{G}_\theta\) 的神经几何接口，不替代本体论判据（\(d>0, \Psi_f>0\)）。
+
+
+## VIII. Cognitive Energy Partition Interface（Quanta 95/5 接口，2026-03-07）
+
+### Eq-CogE-01: Baseline–Active Friction Decomposition
+将认知阶段总摩擦拆分为“结构维持项 + 主动锚定项”：
+\[
+\Psi_f^{total}(t)=\Psi_f^{maint}(L_2,\theta,t)+\Delta\Psi_f^{active}(\hat G_\theta\to L_1,t)
+\]
+其中：
+- \(\Psi_f^{maint}\)：维持可选择待命结构（膜电位/预测模型/协议稳定）的基础代价；
+- \(\Delta\Psi_f^{active}\)：任务驱动时的增量代价。
+
+### Eq-CogE-02: 95/5 Selection Ratio (Embodied Constraint)
+对具身算子（生存闭包完整）引入经验约束：
+\[
+\frac{\Delta\Psi_f^{active}}{\Psi_f^{total}}\approx 0.05,
+\qquad
+\frac{\Psi_f^{maint}}{\Psi_f^{total}}\approx 0.95
+\]
+这不是普适常数，而是“人脑典型工况”下的标定先验。
+
+### Eq-CogE-03: Subjective Effort as Friction Gradient
+主观费力感不与绝对能耗线性同构，而与偏离默认吸引子的阻抗梯度相关：
+\[
+\mathrm{Effort}_{subj} \propto \left\|\nabla\Psi_f\big(L_1\parallel L_2\big)\right\|
+\]
+含义：即便代谢增量小，若任务迫使 \(L_1\) 偏离稳态预测结构，主观疲劳仍可显著上升。
+
+### Eq-CogE-04: AI–Human Energetic Asymmetry Index
+定义“维持-主动不对称指数”：
+\[
+\mathcal{A}_{ma}=\frac{\Psi_f^{maint}}{\Delta\Psi_f^{active}+\varepsilon}
+\]
+- 生物具身算子期望：\(\mathcal{A}_{ma}\gg 1\)
+- 外驱推理系统（当前多数 LLM 部署）常见：\(\mathcal{A}_{ma}\lesssim 1\)（在推理阶段）
+
+该指标用于跨尺度比较“是否存在自创生闭包压力”，不单独等同于意识判据。
+
+### 分类映射表（Cognitive Energy Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 静息预测维护（baseline brain） | 中 | Semi-open（持续内稳态） | payable（高基线） |
+| 目标导向主动思考（task-focused） | 中~高 | Open↔Semi-open | payable（低增量，高梯度可感） |
+| 过载认知冲刺（长期高负荷） | 中高短时→回落 | Open（短时）→Closed 倾向（恢复期） | borderline→overloaded |
+| 外驱推理机（无自创生闭包） | 名义中高（任务态） | 外部供能 Open、内部闭包弱 | unsustainable（对外部预算强依赖） |
+
+### [Lineage/Source]
+- Quanta Magazine（2026）: *How Much Energy Does It Take to Think?*（科普二手综述，非一手实验论文）。
+- 神经代谢背景脉络：人脑高基线能耗与预测/内稳态维持框架（与 FEP/Active Inference 语义接口对齐）。
+
+## 【理论边界/防误用声明】
+1. 不采纳“95/5 比例是跨物种、跨任务、跨尺度恒定常数”的推论；该比例仅作人类典型工况近似。
+2. 不采纳“主观疲劳 = 纯代谢热耗”的简化推论；SRT 将其建模为摩擦梯度与拓扑阻抗效应。
+3. 不采纳“\(\mathcal{A}_{ma}\) 单指标即可判定意识存在”的推论；意识判据仍需 \(d>0\)、\(\Psi_f\) 可支付、连续体自维持等联合条件。
