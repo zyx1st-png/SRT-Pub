@@ -748,22 +748,56 @@ $$
 
 **Implication**: 发育期学习/组织的“误差控制”并不只在突触层，也发生在转录后调控层。
 
-##
+## 【理论边界/防误用声明】
+- 不采纳“NMD 路径异常可直接推出主观意识层结论”的推论。
+- 边界：该条款约束发育与结构形成层，不替代高层认知/伦理判据。
 
-## 【理
 
-## 【理论
+## Lonely-Runner Interface（Operator Individuation，2026-03-07）
 
-## 【理论边
+### Ax-Op-LR-01: Individuation Window Existence (Weak-Coupling)
+对算子集合 \(\{\hat{G}_{\theta_1},\ldots,\hat{G}_{\theta_n}\}\) ，若存在不可通约异质性（\(\theta_i\neq\theta_j\)）且耦合处于弱耦合区（\(\kappa_{ij}\le\kappa_c\)），则存在个体化窗口：
+\[
+\exists t^*:\ \Psi_f^{cross}\big(\hat{G}_{\theta_i},\hat{G}_{collective};t^*\big)\le\epsilon(n)
+\]
+其中 \(\epsilon(n)\) 随群体规模一般呈收缩趋势（典型可取 \(\epsilon\sim O(1/n)\) 的带宽界语义）。
 
-## 【理论边界
+**Implication**：只要异质性未被同步抹平，系统演化会周期性释放“低跨主体摩擦窗口”，支持个体化锚定与创新探索。
 
-## 【理论边界/
+### Ax-Op-LR-02: Maximum Viable Divergence Lower Bound
+定义个体在群体中的可行偏离下界（弱耦合理想化）：
+\[
+\Delta_{viable}^{min}(n)\ \gtrsim\ \frac{1}{n}
+\]
+其含义与孤单跑者的 \(1/n\) 分离界同构：群体越大，个体可获得的“净空带宽”越窄，但并不消失。
 
-## 【理论边界/防
+### Ax-Op-LR-03: Phase-Locking Failure Mode
+当系统进入强耦合同步相（回声室/极化态），即
+\[
+\kappa_{ij}>\kappa_c\ \land\ \mathrm{Var}(\theta_i)\to 0
+\]
+则个体化窗口闭合：
+\[
+W_{ind}\to\varnothing,
+\qquad
+\Psi_f^{cross}\not\to\epsilon
+\]
 
-## 【理论边界/防误
+**Implication**：该失效模式解释“长期群体同频后创新衰减与自由窗口消失”。
 
-## 【理论边界/防误用
+### 分类映射表（Collective Coupling Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 弱耦合异频群体（lonely-runner-like） | 中~高 | Open / Semi-open | payable（存在低跨摩擦窗口） |
+| 中耦合协商群体 | 中 | Semi-open | payable~borderline |
+| 强耦合同步群体（echo chamber） | 中回落~低 | Closed 倾向 | overloaded（创新窗口闭合） |
+| 强耦合+高压治理 | 低 | Closed | unsustainable（长期脆化） |
 
-## 【理论边界/防误用声
+### [Lineage/Source]
+- Quanta Magazine（2026）: *New Strides Made on Deceptively Simple "Lonely Runner" Problem*。
+- 数学背景：Lonely Runner Conjecture（丢番图逼近/离散几何/组合方法进展）。
+
+## 【理论边界/防误用声明】
+1. 不采纳“孤单跑者结论可直接外推到强耦合社会系统”的推论；该接口前提是弱耦合与异频保持。
+2. 不采纳“\(1/n\) 为社会系统精确常数”的推论；在 SRT 中仅作为带宽下界的结构类比与可校准 proxy。
+3. 不采纳“个体化窗口存在 = 永久自由”的推论；窗口可被同步相变（phase-locking）关闭。

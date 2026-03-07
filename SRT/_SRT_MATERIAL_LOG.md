@@ -27,6 +27,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 示例 | 用户粘贴摘要 | 用户输入 | B | — | 观察中 | 证据等级低，待复现 |
 | 示例 | doi:10.XXXX | 期刊论文 | C | — | 不融入 | 与 SRT 框架方向相左，无法对齐 |
 | 2026-03-07 | Quanta: *How Much Energy Does It Take to Think?*（用户粘贴解析） | 科普综述/二手 | A | `SRT/Core/SRT_Core_22_Equations.md §VIII` | 已融入 | 新增 \(\Psi_f\) 维持-主动分解、95/5 约束、主观费力梯度与 AI-人类能耗不对称指标 |
+| 2026-03-07 | Quanta: *New Strides Made on Deceptively Simple "Lonely Runner" Problem*（用户粘贴解析） | 科普综述/二手 | A | `SRT/Core/SRT_Core_13b_Operator_Advanced.md`（Lonely-Runner Interface） | 已融入 | 新增个体化窗口存在条件、\(1/n\) 带宽下界类比、强耦合同步失效模式 |
 
 ---
 
@@ -40,8 +41,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：1 条
-- A（融入）：1 条
+- 总提交：2 条
+- A（融入）：2 条
 - B（观察）：0 条
 - C（拒绝）：0 条
 - 融入率：100%
