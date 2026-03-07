@@ -816,3 +816,50 @@ SRT 对应干预：以 \(L_1\) 共同任务重建外部校准链，并通过次�
 3) 以“可逆干预 + 持续评估”替代“末日预言驱动的一次性冻结”。
 
 ## 【理论边
+
+
+## Structural Injustice Thermodynamics Interface（2026-03-07）
+
+### Def-Eth-Struct-1: Thermodynamic Structural Injustice
+定义结构性不公为：社会 \(L_2\) 对不同参数群体施加显著不对称的基线摩擦分布，使部分群体长期处于“生存支付挤占探索预算”状态。
+\[
+\mathcal{J}_{struct} \sim \mathrm{Var}_{group}\left(\int \Psi_f^{maint}dt\right)
+\]
+
+### Eq-Eth-Struct-1: Explore-Budget Collapse
+\[
+\Delta F_{explore}^{(g)} = F_{avail}^{(g)}-\int_{t_0}^{t_1}\Psi_f^{maint,(g)}(t)dt
+\]
+当 \(\Delta F_{explore}^{(g)}\to 0\) 时，群体 \(g\) 的高阶 \(d\)-扩展与非工具性探索通道被系统性压缩。
+
+### T-Eth-Struct-1: Epistemic Premium of Edge Operators
+若个体 \(i\) 与主流 \(L_2\) 错配度升高（\(\Omega_{mis,i}\uparrow\)），在未崩溃区间内其潜在域采样率上升：
+\[
+\mathcal{R}_{L_0}(i)\uparrow \quad \text{as} \quad \Omega_{mis,i}\uparrow,
+\quad \Psi_f^{sys,i}<\Psi_f^{collapse}
+\]
+即：边缘算子在可存续条件下具有“认识论溢价”，是系统更新算法库的关键来源。
+
+### T-Eth-Struct-2: Oversampling Law for L2 Transition
+当 \(L_2\) 高迟滞锁定时，线性比例微调无法越过势垒；需局部超采样形成临界密度：
+\[
+\rho_{minority}^{local}>C_{crit} \Rightarrow L_2\to L_2'
+\]
+该定律为“安全空间 + 超比例扶持”提供动力学解释（适用于解冻窗口，不是永恒配额）。
+
+### 分类映射表（Justice Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 名义平等但高基线不公 | 低~中（弱势群体） | Closed 倾向 | 弱势组 overloaded |
+| 线性纠偏阶段 | 中 | Semi-open | payable~borderline |
+| 超采样解冻阶段 | 中~高 | Open（定向重构） | 可控高负载 |
+| 抗脆弱公正稳态 | 中~高 | Semi-open / Open | payable（跨组梯度收敛） |
+
+### [Lineage/Source]
+- Eric Schwitzgebel, *Philosophy Should Be Among the Most Diverse Disciplines, Not the Least*（The Splintered Mind）。
+- SRT 映射：将“公正”从规范口号下沉为摩擦分配、探索预算与系统抗脆弱性的动力学判据。
+
+## 【理论边界/防误用声明】
+1. 不采纳“动力学优势=道德豁免”的推论；认识论溢价不等于规范无责任。  
+2. 不采纳“超采样策略可无限期维持”的推论；其是相变窗口工具，需转入稳态治理。  
+3. 不采纳“低摩擦=公正”简化推论；必须同时满足跨组探索预算与恢复能力约束。
