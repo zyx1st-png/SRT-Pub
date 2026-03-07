@@ -256,3 +256,28 @@ $$L_2^{deep} = L_2^{cultural} + L_2^{institutional} + L_2^{individual}$$
 1. 不采纳“任何协同行为都等于真实 We-identity”的推论；SRT 要求内化认同项而非仅外部约束。  
 2. 不采纳“群体可被拟人化为单一主体心灵”的推论；集体智能依赖节点复数性与分立第一人称。  
 3. 不采纳“具身共振可完全替代制度设计”的推论；厚共同体仍需可持续 \(L_2\) 规范工程。
+
+
+## Collective Autopoietic Defense Patch（2026-03-07）
+
+### Def-Soc-CAD-1: Boundary-Cost Reallocation
+集体算子可通过边界成本重分配维持内部稳定：
+\[
+\Delta F_{ingroup}<0\ \Leftrightarrow\ \Delta\Psi_f^{outgroup}>0\ \text{(relative reallocation)}
+\]
+用于解释内群体偏好与外群体排斥在资源/不确定性压力下的同步增强。
+
+### Def-Soc-CAD-2: Personal–Social Operator Conflict Window
+同一具身基底上，\(\hat G_{personal}\) 与 \(\hat G_{social}\) 可出现目标冲突：
+\[
+\mathcal{X}_{ps}=\|\nabla\mathcal U_{personal}-\nabla\mathcal U_{group}\|
+\]
+当 \(\mathcal{X}_{ps}>\tau_x\) 时进入“算力劫持风险窗”（高概率由高硬度 \(L_2\) 协议接管行为）。
+
+### [Lineage/Source]
+- 社会认同理论综述（最小群体、社会比较、积极区隔）触发的 SRT 机制补丁。
+
+## 【理论边界/防误用声明】
+1. 不采纳“群体防御机制可为歧视行为自动免责”的推论。  
+2. 不采纳“个人-群体冲突=病理”的推论；冲突可为创新与伦理修正入口。  
+3. 该补丁用于动力学解释，不替代法律和伦理责任判定。

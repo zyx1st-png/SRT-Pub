@@ -39,6 +39,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-07 | 《用迄今最清晰的引力波信号测试爱因斯坦相对论》（用户摘要） | 科学新闻/二手 | A | `SRT/Physics/SRT_Physics_Cosmology.md`（Gravitational Ringdown Interface）+ `SRT/Core/SRT_Experimental_Core.md`（H-Exp-Precision-01） | 已融入 | 新增黑洞无毛态的 L2 极端锁定解释、铃震摩擦耗散模型及“高分辨率单事件优先”实验准则 |
 | 2026-03-07 | *The Lexical Typology of Sensory Perception*（Annual Review of Linguistics, 2026，用户摘要） | 综述论文/二手摘要 | A | `SRT/Philosophy/SRT_SocTheory_05_Language_Eco.md`（Sensory Lexical Typology Interface）+ `SRT/SRT_EXP_MEASURE_MAP.md`（Exp-Lang-Sense-01） | 已融入 | 新增“交流需求退火”词汇化机制、colexification 低势垒解释、跨语言语义拓扑测量探针 |
 | 2026-03-07 | *Ask Ethan: Do signals degrade as they travel through space?*（用户摘要） | 科普文章/二手 | A | `SRT/Core/SRT_Core_13a_Operator_Basics.md`（Signal–Friction Relativity）+ `SRT/Physics/SRT_Phys_10_Integration.md`（Cosmological Propagation Imprint）+ `SRT/Physics/SRT_Quant_02_Cosmology.md`（Ontological Horizon） | 已融入 | 新增信号-摩擦相对性、传播印记叠加与红移等效记账、事件可达存在性的本体论视界条款 |
+| 2026-03-07 | 社会认同（Social Identity，用户摘要） | 理论综述/二手 | A | `SRT/Philosophy/SRT_SocTheory_06_L2_Dynamics.md`（Social Identity Interface）+ `SRT/Philosophy/_SRT_Soc_Bridge.md`（Collective Autopoietic Defense Patch）+ `_SRT_VERTICAL_INTEGRATION.md`（d_collective 候选E） | 已融入 | 新增最小拓扑断裂定理、集体自创生防御、个人-群体冲突窗与情境张量聚合式 |
 
 ---
 
@@ -52,8 +53,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：13 条
-- A（融入）：13 条
+- 总提交：14 条
+- A（融入）：14 条
 - B（观察）：0 条
 - C（拒绝）：0 条
 - 融入率：100%

@@ -100,6 +100,22 @@ $$d_{collective} = d_{structure} + \epsilon \cdot \sum_i \delta d_i$$
 
 $$d_{collective} = f(d_i, \text{network topology}, \text{institutional structure}) \quad \text{[Gap: f 未形式化]}$$
 
+### §4.4 情境张量聚合式（新增候选 E）
+结合社会认同中的竞争/合作调节，补充候选：
+
+$$
+d_{collective}^{(E)} = \underbrace{\frac{\sum_i w_i d_i}{\sum_i w_i}}_{\text{base integration}}\cdot
+\underbrace{\sigma\!\left(\eta\,C_{env}^{coop}-\zeta\,C_{env}^{comp}\right)}_{\text{context gate}}
+- \underbrace{\lambda\,\mathbb{E}[\mathcal{X}_{ps}]}_{\text{personal-social conflict penalty}}
+$$
+
+其中：
+- \(C_{env}^{coop}\)：合作目标耦合强度；\(C_{env}^{comp}\)：竞争强度；
+- \(\mathcal{X}_{ps}=\|\nabla\mathcal U_{personal}-\nabla\mathcal U_{group}\|\)：个人-群体目标冲突度；
+- \(w_i\)：网络中心性/角色权重。
+
+该式用于把“最小分类即偏好”的实验现象与“合作可减偏见”的情境效应统一进同一聚合门控。
+
 ---
 
 ## §5 L₂ 的纵向传递

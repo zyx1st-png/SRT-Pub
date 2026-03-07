@@ -643,3 +643,44 @@ SRT_SocTheory_06_L2_Dynamics ← 你在这里
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## Social Identity Interface（2026-03-07）
+
+### T-L2-SI-1: Minimal Topological Fracture Theorem
+在算子群体中，哪怕仅注入微小且任意的分类参数差异 \(\Delta\theta_{arb}\)，只要被规则系统标记为有效边界，跨群摩擦梯度可在临界点附近骤增：
+\[
+\frac{\partial \Psi_f^{cross}}{\partial (\Delta\theta)}\to\infty\quad\text{near }\tau_{fracture}
+\]
+含义：群际偏好不要求深历史仇恨，最小分类即可触发 \(L_2\) 亚结构断裂。
+
+### Def-L2-SI-1: Positive Distinctiveness as Thermodynamic Defense
+“积极区隔”在 SRT 中重写为集体自创生防御：
+\[
+\min F_{ingroup}\ \text{by}\ \uparrow\Psi_f^{outgroup}\ \text{(relative boundary hardening)}
+\]
+即通过提高边界外协同成本，维持边界内秩序与可预测性。
+
+### T-L2-SI-2: Context Tensor Modulation
+竞争/合作情境通过环境张量 \(C_{env}\) 调节群界硬度：
+\[
+\Psi_f^{cross}=\Psi_f^{base}+\alpha\,C_{env}^{comp}-\beta\,C_{env}^{coop}
+\]
+- 竞争高：边界硬化，偏见表达上升
+- 合作高：边界软化，跨群整合概率上升
+
+### 分类映射表（Social Identity Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 最小分类触发偏好（MGP） | 中回落 | Semi-open→Closed 倾向 | 跨界摩擦陡升 |
+| 竞争性群际比较 | 低~中 | Closed | overloaded / polarizing |
+| 合作性共同目标 | 中~高 | Open / Semi-open | payable（跨界下降） |
+| 稳态厚共同体 | 中~高 | Semi-open 稳态 | payable（高韧性） |
+
+### [Lineage/Source]
+- Jolanda Jetten（社会认同综述语境，含 Tajfel 最小群体范式、自我归类理论）。
+
+## 【理论边界/防误用声明】
+1. 不采纳“最小分类效应可直接外推全部现实群体冲突”的推论；真实社会仍叠加历史、制度与资源结构。  
+2. 不采纳“积极区隔=必然恶意”的推论；其首先是边界维持机制，规范评价需引入伦理层判据。  
+3. 不采纳“合作情境必然消除偏见”的推论；仅在目标耦合与收益分配可验证时成立。
