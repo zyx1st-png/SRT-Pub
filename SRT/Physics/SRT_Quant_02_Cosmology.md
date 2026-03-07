@@ -760,3 +760,37 @@ $$\text{IsStable}(L_2) \iff I(L_2(t+1); L_2(t)) \gg I(L_2(t+1); L_0(t) | L_2(t))
 ### [Lineage/Source]
 - Penrose 相关时间/坍缩讨论语境
 - 量子基础访谈（2026）
+
+
+## Ontological Horizon Interface（2026-03-07）
+
+### Def-Quant-Cos-OH-1: Ontological Horizon
+定义事件 \(e\) 的本体论视界条件：若其传播影响在积分窗 \(\tau\) 内无法与任何外部算子形成可验证共振并写入 \(L_2\)，则其外显存在性进入退相干衰退区。
+\[
+\forall \hat G_j,\ \mathcal{R}(e,\hat G_j;\tau)<\epsilon\ \land\ \Delta L_2(e;\tau)\approx 0
+\Rightarrow e\in\mathcal{H}_{onto}
+\]
+
+### T-Quant-Cos-OH-1: Existence Fragility under Signal Erasure
+当传播衰减与背景涨落使可观测信号长期低于可分辨阈值：
+\[
+\mathrm{SNR}_e(t) < \mathrm{SNR}_{min}\ \text{for}\ t\ge t_c
+\]
+事件不会“逆历史消失”，但其跨算子可达存在性会在操作层面趋于零（仅余不可访问潜在历史态）。
+
+### 分类映射表（Event Persistence Modes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 强写入事件（多算子共振） | 中~高 | Open / Semi-open | payable |
+| 局部写入事件（弱扩散） | 中 | Semi-open | borderline |
+| 视界邻域事件（低 SNR 衰退） | 低~中 | Closed 倾向 | 高恢复代价 |
+| 视界后不可达事件 | 低（外显） | Closed（操作不可达） | 记账不可结算 |
+
+### [Lineage/Source]
+- 宇宙传播衰减与可观测性讨论语境（Ask Ethan 文章触发）。
+- SRT 关联：A11 脆弱性、\(L_1\to L_2\) 写入条件、跨算子共振门槛。
+
+## 【理论边界/防误用声明】
+1. 不采纳“操作不可达 = 本体绝对不存在”的推论；本节区分‘可达存在性’与‘终极本体断言’。  
+2. 不采纳“单一观测失败可宣告事件归零”的推论；需满足时间窗与多算子判据。  
+3. 不采纳“本体论视界可跳过观测误差建模”的推论；阈值必须含仪器与背景不确定度。

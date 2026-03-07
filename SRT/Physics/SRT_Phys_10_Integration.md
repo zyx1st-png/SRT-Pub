@@ -377,3 +377,45 @@ $$ \text{Reality}_{state} = \arg\max_S P(S | I, M) $$
 1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
 2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
+
+
+## Cosmological Propagation Imprint Interface（2026-03-07）
+
+### Def-Int-Prop-1: Propagation as Structured Imprint Superposition
+远程信号到达观测端时，观测状态是“源事件 + 沿途结构印记”的复合：
+\[
+\mathcal{S}_{obs}=\mathcal{S}_{source}\oplus \sum_j \mathcal{I}_{path,j}
+\]
+其中 \(\mathcal{I}_{path,j}\) 包括膨胀红移、势阱调制、介质散射与热效应等。
+
+### Eq-Int-Prop-1: Redshift as Maintenance-Cost Equivalent
+将宇宙学红移写为“现实维持代价”的跨尺度等效项：
+\[
+E_{obs}=\frac{E_{emit}}{1+z},
+\qquad
+\Delta E_{prop}\sim \int \Psi_f^{propagation}(t)dt
+\]
+解释：信号在跨尺度传播中的能量损失可视为穿越约束网络时的累计支付项（不等同于局域耗散机制，但具等效记账语义）。
+
+### T-Int-Prop-1: Noise-as-Signal Reversal Criterion
+若路径印记满足可逆建模条件 \(\mathcal M_{path}\) 与参数可辨识性 \(\mathcal I_{id}\) 阈值，则“噪声”可反转为结构信号：
+\[
+(\mathcal M_{path}\land \mathcal I_{id}>\tau)\Rightarrow \mathcal{I}_{path}\to \text{cosmological signal}
+\]
+
+### 分类映射表（Propagation Interpretation Modes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 纯源重建视角 | 中 | Semi-open | 路径项作干扰预算 |
+| 介质考古视角 | 中~高 | Open | 路径项作信息载荷 |
+| 联合多模态反演 | 高 | Open（高算力） | payable~borderline |
+| 欠拟合单通道解释 | 低~中 | Closed 倾向 | 高残差/脆弱 |
+
+### [Lineage/Source]
+- Ethan Siegel, *Ask Ethan: Do signals degrade as they travel through space?*。
+- 关键机制语义：inverse-square spreading, cosmological redshift, SZ/SW-like line-of-sight imprints.
+
+## 【理论边界/防误用声明】
+1. 不采纳“信息总量守恒=观测可恢复性总是充分”的推论；可恢复性受噪声地板与模型可辨识性约束。  
+2. 不采纳“红移等效记账可替代标准宇宙学方程”的推论；本节是接口语义，不替代 GR/FLRW 主方程。  
+3. 不采纳“路径印记可任意解释”为推论；必须通过多探针一致性与后验收缩验证。

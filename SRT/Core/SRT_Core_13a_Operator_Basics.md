@@ -759,3 +759,37 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 - 不采纳“被注入偏好可直接视为主体真实意向”的推论。  
 - 不采纳“商业/平台注入可替代主体同意”的推论。
 
+
+
+## Signal–Friction Relativity Interface（2026-03-07）
+
+### T-Op-SFR-1: Signal/Noise Boundary is Operator-Relative
+对任意复合状态 \(\sigma\in L_0\)，其“信号”与“噪声/摩擦”分解不是 \(\sigma\) 内禀属性，而由算子意向向量 \(\vec v\) 与任务窗口共同决定：
+\[
+\sigma = L_1^{(A)}\cup\Psi_f^{(A)} = L_1^{(B)}\cup\Psi_f^{(B)}
+\]
+其中分解边界随 \(\hat G_{\theta_A}\) 与 \(\hat G_{\theta_B}\) 改变而重排。
+
+### Def-Op-SFR-1: Directional Reassignment
+定义“方向重赋值”操作：
+\[
+\mathcal{R}_{\vec v}: (\text{noise},\text{signal}) \leftrightarrow (\text{signal},\text{noise})
+\]
+在保持底层 \(L_0\) 不变时，仅通过意向方向与 d-带宽重配置，完成现实切片重标注。
+
+### 分类映射表（Signal-Noise Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 源事件优先观测 | 中 | Semi-open | 介质效应表现为摩擦项 |
+| 介质结构优先观测 | 中~高 | Open / Semi-open | 原源项退为背景扰动 |
+| 多任务联合反演 | 中高 | Open（高计算负载） | payable~borderline |
+| 单一叙事锁定 | 低~中 | Closed 倾向 | 易误将信息当噪声 |
+
+### [Lineage/Source]
+- Ethan Siegel, *Ask Ethan: Do signals degrade as they travel through space?*（科普讨论语境）。
+- 映射语义：传播过程中的“劣化”与“载荷”取决于观测目标与重建策略。
+
+## 【理论边界/防误用声明】
+1. 不采纳“观测相对性=任意解释都成立”的推论；重赋值仍受可检验模型与仪器边界约束。  
+2. 不采纳“噪声只是主观幻觉”的推论；噪声在任务目标下是可计算代价项，非虚无。  
+3. 不采纳“单一视角重建可恢复全部历史”的推论；跨算子联合反演仍需误差预算闭合。
