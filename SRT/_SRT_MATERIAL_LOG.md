@@ -29,6 +29,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-07 | Quanta: *How Much Energy Does It Take to Think?*（用户粘贴解析） | 科普综述/二手 | A | `SRT/Core/SRT_Core_22_Equations.md §VIII` | 已融入 | 新增 \(\Psi_f\) 维持-主动分解、95/5 约束、主观费力梯度与 AI-人类能耗不对称指标 |
 | 2026-03-07 | Quanta: *New Strides Made on Deceptively Simple "Lonely Runner" Problem*（用户粘贴解析） | 科普综述/二手 | A | `SRT/Core/SRT_Core_13b_Operator_Advanced.md`（Lonely-Runner Interface） | 已融入 | 新增个体化窗口存在条件、\(1/n\) 带宽下界类比、强耦合同步失效模式 |
 | 2026-03-07 | Essentia: *Consciousness without counterpart: Identity beyond representation*（用户粘贴解析） | 哲学随笔/二手 | A | `SRT/Philosophy/SRT_Social_Cognition.md`（Identity Beyond Representation Interface） | 已融入 | 新增本体论错认势能、顿悟-解脱时间尺度不对称、表征主权原则与防反智边界 |
+| 2026-03-07 | New Scientist: *Alzheimer's may start with inflammation in the skin, lungs or gut*（用户粘贴解析） | 科学新闻/二手 | A | `SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md`（Alzheimer's Peripheral-Inflammation Interface） | 已融入 | 新增跨算子摩擦级联、系统带宽耗竭律、AD 作为 L2 结构性破产与基因初始约束声明 |
 
 ---
 
@@ -42,8 +43,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：3 条
-- A（融入）：3 条
+- 总提交：4 条
+- A（融入）：4 条
 - B（观察）：0 条
 - C（拒绝）：0 条
 - 融入率：100%

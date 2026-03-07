@@ -443,3 +443,54 @@ SRT 的分布式算子框架提供了一个新的自我隐喻：
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## Alzheimer's Peripheral-Inflammation Interface（2026-03-07）
+
+### Def-Neuro-AD-PI-1: Cross-Operator Friction Cascade
+定义外周-中枢摩擦级联：当皮肤/肺/肠等外周节点长期炎症活跃时，系统性摩擦预算被持续占用，压缩中枢高阶认知维持能力。
+\[
+\Psi_f^{systemic}(t)=\sum_{i\in\{skin,lung,gut,\dots\}}\Psi_f^{i}(t)+\Psi_f^{neural}(t)
+\]
+
+### Eq-Neuro-AD-PI-1: Systemic Bandwidth Depletion Law
+在全局可支付上限 \(\Psi_f^{max}\) 下，中枢认知带宽随外周摩擦积分衰减：
+\[
+d_{neural}(t)=d_0-\alpha\int_0^t\sum_{i\in\{skin,lung,gut\}}\Psi_f^{i}(\tau)d\tau+\beta\,R(t)
+\]
+其中 \(R(t)\) 为恢复/干预项（睡眠、饮食、运动、抗炎与代谢管理等）。
+
+当 \(d_{neural}(t)<d_{critical}^{L_2}\) 时，进入高阶记忆结构失稳区。
+
+### T-Neuro-AD-PI-1: L2 Structural Bankruptcy in AD
+SRT 将 AD 晚期表型重写为“高阶 \(L_2\) 结构性破产”：
+\[
+AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\ \Psi_f^{systemic}\ \text{overdraft}
+\]
+淀粉样沉积与网络退化在此框架中定位为长期级联后的结构残渣/下游读数，而非唯一原发起点。
+
+### Def-Neuro-AD-PI-2: Genes as Initial Topological Constraints
+基因在 SRT 中定义为初始连通约束与摩擦系数先验，而非命运终局：
+\[
+\mathcal{W}_0,\mu_0 \leftarrow \text{genotype},
+\qquad
+\text{trajectory}\leftarrow \text{selection integral over }(env,behavior,time)
+\]
+即“易感峡谷”可被长期选择向量与干预策略放大或绕开。
+
+### 分类映射表（AD Pathways → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 外周低炎症稳态（早期可逆） | 中~高 | Semi-open | payable |
+| 慢性低度炎症（潜伏级联） | 中回落 | Semi-open→Closed 倾向 | borderline |
+| 中枢代偿期（症状前） | 中~低（补偿波动） | Closed 倾向（高维持负担） | borderline~overloaded |
+| 临床 AD 期（记忆网络失稳） | 低 | Closed（结构坍缩） | overloaded / unsustainable |
+
+### [Lineage/Source]
+- New Scientist（2026）: *Alzheimer's may start with inflammation in the skin, lungs or gut*（新闻综述，基于外周炎症-AD 相关的基因组线索）。
+- SRT 对应：分布式算子、系统摩擦预算、\(L_2\) 迟滞与带宽阈值框架。
+
+## 【理论边界/防误用声明】
+1. 不采纳“外周炎症关联 = 单向确定因果已证实”的推论；当前多为统计与机制线索，需纵向干预试验闭环。  
+2. 不采纳“基因易感 = 个体宿命”的推论；SRT 将基因视作初始约束，不取消长期选择与干预空间。  
+3. 不采纳“脑内病理可忽略”的推论；外周-中枢为级联系统，治疗应避免单端还原主义。
