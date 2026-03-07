@@ -32,6 +32,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-07 | New Scientist: *Alzheimer's may start with inflammation in the skin, lungs or gut*（用户粘贴解析） | 科学新闻/二手 | A | `SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md`（Alzheimer's Peripheral-Inflammation Interface） | 已融入 | 新增跨算子摩擦级联、系统带宽耗竭律、AD 作为 L2 结构性破产与基因初始约束声明 |
 | 2026-03-07 | Nature News: *These brain cells clear proteins that contribute to Alzheimer’s*（doi:10.1038/d41586-026-00747-x，用户粘贴） | 科学新闻/二手 | A | `SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md`（Tanycyte Tau-Clearance Interface） | 已融入 | 新增 tanycyte 清除门控方程、CSF→blood tau 转运失效机制、代谢风险耦合与边界声明 |
 | 2026-03-07 | Dan Zahavi 访谈：*Being We*（用户粘贴解析） | 访谈/理论文本（二手） | A | `SRT/Philosophy/_SRT_Soc_Bridge.md`（We-Identity Interface） | 已融入 | 新增认同相变判据、薄/厚我们操作定义、交互摩擦层级与反拟人化边界 |
+| 2026-03-07 | Popular Mechanics: *Scientists Are Tracking Down the Exact Location of Human Consciousness*（用户粘贴解析） | 科普报道/二手 | A | `SRT/Neuroscience/SRT_Clin_00_IIT_PCI.md`（pDOC Metabolic-Connectivity Interface） | 已融入 | 新增摩擦破产临床定义、代谢-连接耦合容量指标、空间锚定前置项与反定位论边界 |
 
 ---
 
@@ -45,8 +46,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：6 条
-- A（融入）：6 条
+- 总提交：7 条
+- A（融入）：7 条
 - B（观察）：0 条
 - C（拒绝）：0 条
 - 融入率：100%

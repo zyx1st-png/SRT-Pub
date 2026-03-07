@@ -361,3 +361,56 @@ L6b 非锥体神经元的爆发放电是意识状态跃迁的"硬件中断"。�
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## pDOC Metabolic-Connectivity Interface（2026-03-07）
+
+### Def-Clin-pDOC-1: Ontological Friction Bankruptcy (Clinical)
+定义“本体论摩擦破产”临床条件：
+\[
+F_{avail}(t) < \int_{t_0}^{t} \Psi_f\big(\hat G_\theta(\tau)\big)\,d\tau
+\]
+当可用代谢自由能低于维持 \(L_0\to L_1\) 锚定所需累计摩擦，系统由全局统一选择退化为局部碎片活动。
+
+### Eq-Clin-pDOC-1: Metabolic-Connectivity Coupled Capacity
+定义意识维持能力代理：
+\[
+\mathcal{C}_{cons}(t)=\underbrace{M(t)}_{PET\ \text{metabolic index}}\cdot\underbrace{K(t)}_{fMRI\ \text{functional connectivity}}\cdot\underbrace{A_{LF}(t)}_{\text{low-frequency amplitude}}
+\]
+并设临界条件：
+\[
+\mathcal{C}_{cons}(t)<\mathcal{C}_{crit} \Rightarrow \text{high risk of pDOC state}
+\]
+用于统一“低代谢 + 低连接 + 低自发振幅”三类观测读数。
+
+### Def-Clin-pDOC-2: Visual-Spatial Anchor Prerequisite
+引入“空间锚定前置项”：
+\[
+\theta_{space}\subset\theta_{core},\qquad
+\theta_{space}\downarrow \Rightarrow d_{global}\downarrow
+\]
+含义：视觉/楔前叶等空间构型网络并非外设，而是高阶叙事与自我连续性的承载前提之一。
+
+### Def-Clin-pDOC-3: Anti-Locationism Constraint
+神经影像学定位的是摩擦足迹（footprints），非意识“分泌腺”：
+\[
+\text{Imaging hotspot} \neq \text{generator location of consciousness}
+\]
+SRT 立场：意识是跨域选择事件（\(L_0\to L_1\)），脑区为参数与瓶颈节点，而非单点发生源。
+
+### 分类映射表（Consciousness States in pDOC Context → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 健康清醒（高代谢高连接） | 中~高 | Open / Semi-open（协同稳态） | payable |
+| 轻度受损/亚临床波动 | 中回落 | Semi-open→Closed 倾向 | borderline |
+| pDOC（低代谢+低连接+低振幅） | 低 | Closed（碎片化活动） | overloaded（破产风险） |
+| 麻醉/深抑制状态（可逆） | 低（暂态） | Closed（外源抑制） | 受控低支付 |
+
+### [Lineage/Source]
+- Popular Mechanics（2026）: *Scientists Are Tracking Down the Exact Location of Human Consciousness*（基于 Frontiers in Neuroscience 探索性研究报道）。
+- 关键证据语义：pDOC 相关区域代谢下降、低频振幅减弱、整体功能连接下降。
+
+## 【理论边界/防误用声明】
+1. 不采纳“单一脑区坐标即可定义意识发生地”的定位论推论；SRT 仅承认网络-代谢-动力学联合判据。  
+2. 不采纳“小样本横断面相关 = 因果机制已定论”的推论；仍需纵向与干预实验闭环。  
+3. 不采纳“视觉皮层相关性 = 视觉内容等于意识本体”的推论；其角色是空间锚定前置模块之一。
