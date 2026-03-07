@@ -494,3 +494,55 @@ AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\
 1. 不采纳“外周炎症关联 = 单向确定因果已证实”的推论；当前多为统计与机制线索，需纵向干预试验闭环。  
 2. 不采纳“基因易感 = 个体宿命”的推论；SRT 将基因视作初始约束，不取消长期选择与干预空间。  
 3. 不采纳“脑内病理可忽略”的推论；外周-中枢为级联系统，治疗应避免单端还原主义。
+
+
+## Tanycyte Tau-Clearance Interface（2026-03-07）
+
+### Def-Neuro-TAN-1: CSF→Blood Clearance Bridge
+定义 tanycyte 作为跨屏障桥接算子（\(\hat G_{tan}\)），负责将 CSF 中 tau 负载转运至垂体/血流路径：
+\[
+\mathcal{J}_{tau}^{clear} = \kappa_{tan}\cdot\big(\tau_{CSF}-\tau_{blood}^{eq}\big)
+\]
+其中 \(\kappa_{tan}\) 为 tanycyte 清除通量系数。
+
+### Eq-Neuro-TAN-1: Tanycyte Dysfunction and Tau Accumulation
+当 tanycyte 功能受损（\(\kappa_{tan}\downarrow\)）时，CSF tau 清除速率下降并触发中枢积累：
+\[
+\frac{d\tau_{CSF}}{dt}=P_{tau}^{neural}-\kappa_{tan}\,\tau_{CSF}-\kappa_{other}\,\tau_{CSF}
+\]
+\[
+\kappa_{tan}\to 0 \Rightarrow \tau_{CSF}\uparrow,\quad \tau_{blood}\downarrow
+\]
+与报道中的“AD 组 CSF→blood tau 迁移效率下降”同向。
+
+### T-Neuro-TAN-1: Clearance-Gate Failure as Early L2 Risk Amplifier
+在 SRT 语义下，tanycyte 失效是“清除门失灵（clearance gate failure）”，会提高神经网络维持摩擦并放大记忆 \(L_2\) 脆弱性：
+\[
+\Psi_f^{neural-maint} \propto f\big(\tau_{CSF},\,\kappa_{tan}^{-1}\big)
+\]
+长期下可与外周炎症级联耦合，推动系统向 \(L_2^{memory}\) 失稳区迁移。
+
+### Eq-Neuro-TAN-2: Metabolic-Risk Coupling Hypothesis
+考虑到肥胖/2 型糖尿病与 tanycyte 功能相关风险，提出耦合项：
+\[
+\kappa_{tan}(t)=\kappa_0-\lambda_1\,I_{metabolic}(t)-\lambda_2\,I_{inflammation}(t)+u_{intervention}(t)
+\]
+该式用于连接“代谢-炎症管理”与 AD 风险前移干预窗口。
+
+### 分类映射表（Tanycyte States → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| tanycyte 清除通畅（\(\kappa_{tan}\) 高） | 中~高 | Semi-open（跨屏障稳态流） | payable |
+| 亚临床清除下降（\(\kappa_{tan}\) 中度下降） | 中回落 | Semi-open→Closed 倾向 | borderline |
+| 明显清除门失灵（\(\kappa_{tan}\) 低） | 低~中 | Closed 倾向（堆积主导） | overloaded |
+| 清除失灵+系统炎症共振 | 低 | Closed（级联失稳） | unsustainable |
+
+### [Lineage/Source]
+- Nature News（Rachel Fieldhouse, 2026）: *These brain cells clear proteins that contribute to Alzheimer’s*.
+- DOI（来源报道）：10.1038/d41586-026-00747-x
+- 关键证据语义：tanycyte 介导 CSF→blood tau 转运，功能受损时出现 CSF tau 积累与血中转运不足。
+
+## 【理论边界/防误用声明】
+1. 不采纳“tanycyte 单机制已解释全部 AD 病程”的推论；其更可能是多通道病理中的关键门控节点之一。  
+2. 不采纳“提高血 tau 一定代表病情恶化”的推论；在清除框架下需区分‘病理释放’与‘有效外排’。  
+3. 不采纳“动物与组织证据可直接替代长期人群因果结论”的推论；仍需纵向、干预与机制闭环验证。

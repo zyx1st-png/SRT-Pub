@@ -30,6 +30,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-07 | Quanta: *New Strides Made on Deceptively Simple "Lonely Runner" Problem*（用户粘贴解析） | 科普综述/二手 | A | `SRT/Core/SRT_Core_13b_Operator_Advanced.md`（Lonely-Runner Interface） | 已融入 | 新增个体化窗口存在条件、\(1/n\) 带宽下界类比、强耦合同步失效模式 |
 | 2026-03-07 | Essentia: *Consciousness without counterpart: Identity beyond representation*（用户粘贴解析） | 哲学随笔/二手 | A | `SRT/Philosophy/SRT_Social_Cognition.md`（Identity Beyond Representation Interface） | 已融入 | 新增本体论错认势能、顿悟-解脱时间尺度不对称、表征主权原则与防反智边界 |
 | 2026-03-07 | New Scientist: *Alzheimer's may start with inflammation in the skin, lungs or gut*（用户粘贴解析） | 科学新闻/二手 | A | `SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md`（Alzheimer's Peripheral-Inflammation Interface） | 已融入 | 新增跨算子摩擦级联、系统带宽耗竭律、AD 作为 L2 结构性破产与基因初始约束声明 |
+| 2026-03-07 | Nature News: *These brain cells clear proteins that contribute to Alzheimer’s*（doi:10.1038/d41586-026-00747-x，用户粘贴） | 科学新闻/二手 | A | `SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md`（Tanycyte Tau-Clearance Interface） | 已融入 | 新增 tanycyte 清除门控方程、CSF→blood tau 转运失效机制、代谢风险耦合与边界声明 |
 
 ---
 
@@ -43,8 +44,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：4 条
-- A（融入）：4 条
+- 总提交：5 条
+- A（融入）：5 条
 - B（观察）：0 条
 - C（拒绝）：0 条
 - 融入率：100%
