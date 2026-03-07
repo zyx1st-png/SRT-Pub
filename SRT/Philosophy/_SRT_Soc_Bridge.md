@@ -202,3 +202,57 @@ $$L_2^{deep} = L_2^{cultural} + L_2^{institutional} + L_2^{individual}$$
 2. 与 Luhmann、布迪厄、福柯等社会理论的对应关系为**类比映射**，不声称等价。
 3. "权力即能量流"的框架不得用于为特定政治立场辩护——这是中性的动力学描述。
 4. 可证伪预测（§4）需要受控社会实验或纵向自然实验，单一案例研究不足以验证或证伪。
+
+
+## We-Identity Interface（Dan Zahavi 访谈映射，2026-03-07）
+
+### Def-Soc-We-1: Plural First-Person Principle
+集体算子 \(\hat G_{social}\) 不等同于单一“群体心灵”，而是保留个体第一人称节点分立性的网络涌现：
+\[
+\hat G_{social} \equiv \mathcal{N}(\{\hat G_i\},\kappa_{ij},L_2)\neq \hat G_{mono}
+\]
+
+### Def-Soc-We-2: Identification Degree
+定义认同度 \(\mathcal I_{id,i}\) 为个体将集体规范内化为自身效用项的强度：
+\[
+\mathcal I_{id,i}=\frac{\partial \mathcal U_i}{\partial \text{Survival}(L_2^{group})}
+\]
+
+### Eq-Soc-We-1: Identification Phase Transition
+“被动协同”到“真实共同体”的相变可写为：
+\[
+\Omega_{we}=\sigma\Big(\alpha\langle \mathcal I_{id}\rangle+\beta\,R_{emb}-\gamma\,C_{coercion}-\tau\Big)
+\]
+- \(R_{emb}\)：具身互惠共振强度（第二人称互动/共情耦合）
+- \(C_{coercion}\)：外部强制协调成本
+- \(\Omega_{we}\in[0,1]\)：We-identity 相态指标
+
+当 \(\Omega_{we}\) 越过阈值，系统从 Thin We 跳迁到 Thick We。
+
+### Def-Soc-We-3: Thin vs Thick We (Operational)
+- **Thin We**：短期向量对齐，\(\langle\mathcal I_{id}\rangle\) 低，抗扰动差。  
+- **Thick We**：深度内化，\(\langle\mathcal I_{id}\rangle\) 高，能在高 \(\Psi_f\) 冲击下维持拓扑连续性。
+
+### Eq-Soc-We-2: Inter-Operator Friction Hierarchy
+社会认知通道按共识摩擦排序：
+\[
+\Psi_f^{embodied-resonance} < \Psi_f^{second-person} < \Psi_f^{inferential-L2-reading}
+\]
+含义：具身共振是形成“我们”最快且最低耗通道；纯符号推演可补充但难单独支撑厚共同体。
+
+### 分类映射表（We-Formation Modes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 被动编组（assigned group） | 低~中 | Closed 倾向（强制驱动） | borderline |
+| 工具协作（thin we） | 中 | Semi-open | payable~borderline |
+| 认同共同体（thick we） | 中~高 | Open / Semi-open（高韧性） | payable（高压下可承压） |
+| 极化伪共同体（echo-fused we） | 中回落 | Closed（排异同步） | overloaded / brittle |
+
+### [Lineage/Source]
+- Dan Zahavi 访谈：《Being We: Phenomenological Contributions to Social Ontology》讨论语境（2026）。
+- 核心议题：经验自我/规范自我、集体意向性、thin vs thick we、第二人称与具身共情。
+
+## 【理论边界/防误用声明】
+1. 不采纳“任何协同行为都等于真实 We-identity”的推论；SRT 要求内化认同项而非仅外部约束。  
+2. 不采纳“群体可被拟人化为单一主体心灵”的推论；集体智能依赖节点复数性与分立第一人称。  
+3. 不采纳“具身共振可完全替代制度设计”的推论；厚共同体仍需可持续 \(L_2\) 规范工程。
