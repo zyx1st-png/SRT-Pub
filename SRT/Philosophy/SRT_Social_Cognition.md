@@ -411,3 +411,53 @@ L_2^{comp} = \arg\min_{\mathcal N}\Big(\Psi_f^{meaning-collapse}(\mathcal N)\Big
 
 ### [Lineage/Source]
 - 神学-进化-动物苦难对话语境（2026）
+
+
+## Identity Beyond Representation Interface（2026-03-07）
+
+### Def-Soc-IRM-1: Ontological Misidentification
+定义“本体论错认”为：算子将动态选择过程身份（\(\hat G_\theta\)）错误锚定为静态表征对象（\(L_2^{identity}\)）。
+\[
+\text{MisID} \iff \hat G_\theta \equiv L_2^{identity}
+\]
+
+### Eq-Soc-IRM-1: Identification Deviation Potential
+当错认发生时，引入苦难势能：
+\[
+E_{suffering} \propto d\cdot\left\|\hat G_\theta[L_0]-L_2^{identity}\right\|\cdot\Psi_f^{maint}
+\]
+解释：关切越深（\(d\) 越高）、活体验与身份模板偏差越大、维持模板成本越高，则存在性痛苦越强。
+
+### T-Soc-IRM-1: Insight–Liberation Timescale Asymmetry
+“认知顿悟”是快变量；“身份惯性卸载”是慢变量积分过程。故有：
+\[
+\Delta t_{insight} \ll \tau_{disengage}
+\]
+并需满足历史势能耗散下界：
+\[
+\int_{t_0}^{t_1}\left\|\frac{d\theta}{dt}\right|dt\ \ge\ \eta\int_{t_0}^{t_1}\left|L_2^{history}(t)\right|dt
+\]
+对应实践含义：一次看破可启动相变，但无法替代长期去绑定训练。
+
+### Def-Soc-IRM-2: Sovereign Representation Principle
+SRT 不采纳“反表征主义极端化”。健康态不是摧毁 \(L_2\)，而是保持“表征主权”：
+\[
+\text{Healthy} \iff L_2\ \text{available as tool} \land \neg\big(\hat G_\theta\leftarrow L_2\text{-captured}\big)
+\]
+
+### 分类映射表（Identity Modes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 动态过程认同（process-identification） | 中~高 | Open / Semi-open | payable |
+| 温和角色认同（flexible L2 identity） | 中 | Semi-open | payable~borderline |
+| 刚性概念认同（rigid representation lock） | 中回落 | Closed 倾向 | borderline~overloaded |
+| 身份防御极化（violent/arrogant lock-in） | 低~中（高反应低反思） | Closed | overloaded / unsustainable |
+
+### [Lineage/Source]
+- Essentia Foundation（Steven Pashko, 2026）: *Consciousness without counterpart: Identity beyond representation*。
+- 现象学语境与“表征鸿沟”讨论，映射到 SRT 的 \(L_0/L_1/L_2\) 与 \(\Psi_f\) 记号。
+
+## 【理论边界/防误用声明】
+1. 不采纳“\(L_2\) 全部无效或必然有害”的推论；\(L_2\) 仍是协作与文明压缩的必要层。  
+2. 不采纳“只要顿悟一次即可永久解脱”的推论；SRT 明确要求慢变量去绑定过程。  
+3. 不采纳“拒绝身份标签 = 拒绝伦理责任”的推论；责任归属仍需制度与情境联合建模。
