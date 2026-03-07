@@ -2173,88 +2173,45 @@ $$
 - Historical inspirations: Niels Bohr (complementarity), David Bohm (quantum-holistic interpretations)
 - Related speculative biological locus: Penrose-Hameroff microtubule line (as debated context)
 
-##
+## 【理论边界/防误用声明】
+- 不采纳“QIC 成立即可推出主观连续体必然存在”的推论。
+- 不采纳“量子语汇可替代具身摩擦支付条件（\(d>0, \Psi_f>0\)）”的推论。
 
-## 【理
+### 批次 18 新增术语（Cognitive-Energy 95/5）
 
-## 【理论
+#### 维持摩擦（Maintenance Friction, \(\Psi_f^{maint}\)）
+**定义**：系统为维持可选择待命结构（内稳态、预测模型、协议稳定）持续支付的基础摩擦项。
+**公式**：
+$$
+\Psi_f^{total}=\Psi_f^{maint}+\Delta\Psi_f^{active}
+$$
 
-## 【理论边
+#### 主动增量摩擦（Active Incremental Friction, \(\Delta\Psi_f^{active}\)）
+**定义**：任务驱动时由方向性锚定（\(\hat G_\theta\to L_1\)）引入的增量摩擦成本。
+**注**：在人脑典型工况下常表现为低于维持项的边际占比（95/5 经验接口）。
 
-## 【理论边界
+#### 维持-主动不对称指数（Maintenance–Active Asymmetry Index, \(\mathcal{A}_{ma}\)）
+**定义**：比较系统“维持闭包压力”与“主动推理增量压力”的比值，用于跨尺度比较。
+**公式**：
+$$
+\mathcal{A}_{ma}=\frac{\Psi_f^{maint}}{\Delta\Psi_f^{active}+\varepsilon}
+$$
+**解释**：
+- 具身自创生系统通常 \(\mathcal{A}_{ma}\gg 1\)
+- 外驱推理系统常见 \(\mathcal{A}_{ma}\lesssim 1\)（任务窗口内）
 
-## 【理论边界/
+#### 主观费力梯度（Subjective Effort Gradient）
+**定义**：主观“费力感”主要由偏离默认吸引子引发的摩擦梯度决定，而非仅由绝对代谢功率决定。
+**公式**：
+$$
+\mathrm{Effort}_{subj} \propto \left\|\nabla\Psi_f\left(L_1\parallel L_2\right)\right\|
+$$
 
-## 【理论边界/防
-
-## 【理论边界/防误
-
-## 【理论边界/防误用
-
-## 【理论边界/防误用声
-
-## 【理论边界/防误用声明
+**[Lineage/Source]**：
+- Quanta Magazine（2026）《How Much Energy Does It Take to Think?》
+- 神经代谢/预测处理语境（FEP/Active Inference 接口映射到 SRT 记号）
 
 ## 【理论边界/防误用声明】
-
-## 【理论边界/防误用声明】
-
-## 【理论边界/防误用声明】
--
-
-## 【理论边界/防误用声明】
-- 不采
-
-## 【理论边界/防误用声明】
-- 不采纳
-
-## 【理论边界/防误用声明】
-- 不采纳“
-
-## 【理论边界/防误用声明】
-- 不采纳“N
-
-## 【理论边界/防误用声明】
-- 不采纳“SL
-
-## 【理论边界/防误用声明】
-- 不采纳“EPR
-
-## 【理论边界/防误用声明】
-- 不采纳“FPA
-
-## 【理论边界/防误用声明】
-- 不采纳“NPC 失稳
-
-## 【理论边界/防误用声明】
-- 不采纳“PRC/AET
-
-## 【理论边界/防误用声明】
-- 不采纳“CBF/PUR
-
-## 【理论边界/防误用声明】
-- 不采纳“BTC/WME 可直
-
-## 【理论边界/防误用声明】
-- 不采纳“OBHE 足以单独解决
-
-## 【理论边界/防误用声明】
-- 不采纳“GECC/TCG 可直接
-
-## 【理论边界/防误用声明】
-- 不采纳“Canonical Map
-
-## 【理论边界/防误用声明】
-- 不采纳“RLI/EDPS 可直接推断
-
-## 【理论边界/防误用声明】
-- 不采纳“COF 即可替代具身生存压力”
-
-## 【理论边界/防误用声明】
-- 不采纳“CL2F/MDG 是固定群体属性
-
-## 【理论边界/防误用声明】
-- 不采纳“DCH 成立即可忽略能量与热力学代
-
-## 【理论边界/防误用声明】
-- 不采纳“PC/ECG 是对某技术路线永久否定
+- 不采纳“95/5 比例是跨任务固定常数”的推论。
+- 不采纳“\(\mathcal{A}_{ma}\) 单指标可独立判定意识”的推论。
+- 不采纳“低代谢增量=低主观费力”的线性同构推论。
