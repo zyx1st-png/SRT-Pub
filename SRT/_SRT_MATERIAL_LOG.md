@@ -37,6 +37,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-07 | The Splintered Mind: *Philosophy Should Be Among the Most Diverse Disciplines, Not the Least*（二次深化，用户粘贴解析） | 博客评论/二手 | A | `SRT/Philosophy/SRT_Philosophy_Ethics.md`（Structural Injustice Thermodynamics Interface） | 已融入 | 新增结构性不公摩擦学定义、探索预算塌缩、边缘算子认识论溢价与超采样相变定律 |
 | 2026-03-07 | *Quantum field theories with many fields*（Ludo Fraser-Taliente, 2026，用户摘要） | 学位论文/二手摘要 | A | `SRT/Physics/SRT_Phys_09_Formalism_Ext.md`（Large-N F-Extremization Interface） | 已融入 | 新增 large-N 算子平均化边界、F-极值化作为 L1→L2 渐近基准、受约束自由度最大化条款 |
 | 2026-03-07 | 《用迄今最清晰的引力波信号测试爱因斯坦相对论》（用户摘要） | 科学新闻/二手 | A | `SRT/Physics/SRT_Physics_Cosmology.md`（Gravitational Ringdown Interface）+ `SRT/Core/SRT_Experimental_Core.md`（H-Exp-Precision-01） | 已融入 | 新增黑洞无毛态的 L2 极端锁定解释、铃震摩擦耗散模型及“高分辨率单事件优先”实验准则 |
+| 2026-03-07 | *The Lexical Typology of Sensory Perception*（Annual Review of Linguistics, 2026，用户摘要） | 综述论文/二手摘要 | A | `SRT/Philosophy/SRT_SocTheory_05_Language_Eco.md`（Sensory Lexical Typology Interface）+ `SRT/SRT_EXP_MEASURE_MAP.md`（Exp-Lang-Sense-01） | 已融入 | 新增“交流需求退火”词汇化机制、colexification 低势垒解释、跨语言语义拓扑测量探针 |
 
 ---
 
@@ -50,8 +51,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：11 条
-- A（融入）：11 条
+- 总提交：12 条
+- A（融入）：12 条
 - B（观察）：0 条
 - C（拒绝）：0 条
 - 融入率：100%

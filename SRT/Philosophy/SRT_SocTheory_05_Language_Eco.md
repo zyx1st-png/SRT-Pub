@@ -682,3 +682,44 @@ SRT_SocTheory_05_Language_Eco ← 你在这里
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## Sensory Lexical Typology Interface（2026-03-07）
+
+### Def-Lang-Sense-1: Ecological Communicative Need Annealing
+定义感官词汇化强度为“交流需求驱动的摩擦退火”结果：
+\[
+\Lambda_{sense}(m) \propto \mathcal{N}_{comm}(m,env,culture)\cdot \Psi_{f,consensus}^{-1}(m)
+\]
+其中 \(m\) 为感官通道（vision/hearing/touch/smell/taste）。
+
+### T-Lang-Sense-1: No Universal Full Sensory Hierarchy
+SRT 接受“视觉常居高位”的物理底线，但拒绝将其外推为完整、固定的跨通道普遍层级。
+\[
+\text{Rank}(m) = f\big(\rho_s^{(m)},\ \mathcal{N}_{comm}^{(m)},\ L_2\text{-history}\big)
+\]
+即：生物硬件约束 + 生态交流需求 + 历史语义沉积共同决定词汇化排序。
+
+### Def-Lang-Sense-2: Colexification as Low-Barrier Path
+若两感知概念在多语言中高频共词（colexification），则对应 \(L_1\) 态间转化势垒较低：
+\[
+P_{colex}(a,b)\uparrow \Rightarrow B_{L_1}(a\leftrightarrow b)\downarrow
+\]
+可作为 \(L_2\) 语义拓扑中的低摩擦通道探针。
+
+### 分类映射表（Sensory Lexical Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 视觉主导+其他通道粗粒度 | 中 | Semi-open | payable |
+| 多感官均衡词汇化（生态特化） | 中~高 | Open / Semi-open | payable~borderline |
+| 非视觉高精细词汇爆发（嗅/味/触） | 中高 | Open（任务驱动） | 可控高负载 |
+| 单通道僵化语义场 | 低~中 | Closed 倾向 | borderline / brittle |
+
+### [Lineage/Source]
+- Asifa Majid & Elisabeth Norcliffe (2026), *The Lexical Typology of Sensory Perception* (Annual Review of Linguistics).
+- 核心证据语义：跨百余语言数据不支持完整普遍感官层级，支持生态-交流需求与语义映射框架。
+
+## 【理论边界/防误用声明】
+1. 不采纳“跨语言差异可完全由文化任意决定”的推论；视觉物理分辨率优势构成硬约束底线。  
+2. 不采纳“视觉常高位 = 其他通道无理论价值”的推论；非视觉通道可在特定生态下发生词汇复杂度相变。  
+3. 不采纳“colexification 相似 = 本体同一”的推论；共词仅指示低势垒路径，不等价对象同一性。
