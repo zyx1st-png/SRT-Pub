@@ -445,3 +445,52 @@ SRT 揭示了宏观社会动力学的深层结构：
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
 2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## Diversity-Defrost Interface（Philosophy Diversity Dynamics，2026-03-07）
+
+### Def-Macro-DIV-1: Edge-Operator Epistemic Advantage
+定义边缘算子 \(\hat G_{edge}\)：长期承受与主流 \(L_2\) 的高结构摩擦 \(\Psi_f^{sys}\) 的节点。
+其认识优势不是道德赠与，而是动力学副产物：在可支付条件下，边缘算子更频繁进入重构态，提升未开发 \(L_0\) 区域可达率。
+
+### Eq-Macro-DIV-1: Innovation Potential under Structural Friction
+\[
+\mathcal{P}_{innov}(i) \propto \mathrm{Var}(\theta_i\mid L_2^{main})\cdot\mathbb{I}(\Psi_f^{sys,i}<\Psi_f^{collapse})\cdot\kappa_{bridge,i}
+\]
+- 参数异质性越高、未崩溃且桥接性越高，重写 \(L_2\) 的潜势越大。
+
+### T-Macro-DIV-1: Over-sampling Principle for L2 Defrosting
+当系统陷入同质化迟滞盆地时，线性比例注入异质参数不足以越过势垒。需短时“超采样”形成局部临界团簇：
+\[
+\Delta L_2 \sim \mathbb{H}\big(w_{minority}\cdot N_{cluster}-\tau_{defrost}\big)
+\]
+其中 \(\mathbb{H}\) 为阈值激活函数，\(w_{minority}\) 是边缘参数权重。
+
+**Implication**：超比例代表在该语境中是系统解冻策略，而非仅规范口号。
+
+### Def-Macro-DIV-2: Just L2 as Anti-Fragile Openness
+SRT 区分两类“低自由能”状态：
+1) **死寂低能**：高压同质化、\(L_0\) 渗透率趋零（脆弱）。
+2) **生机低能**：高异质共存、有限摩擦可支付且保留 \(L_0\) 通道（抗脆弱）。
+
+定义健康度补充判据：
+\[
+\mathcal{H}_{L2}=\underbrace{\Pi_{L_0\to L_2}}_{\text{渗透率}}\cdot\underbrace{\mathrm{Diversity}(\theta)}_{\text{参数方差}}\cdot\underbrace{\mathrm{Recoverability}}_{\text{受扰后回稳能力}}
+\]
+
+### 分类映射表（Representation Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 高同质精英封闭场 | 中回落~低 | Closed（低渗透） | 表面低摩擦、系统脆化 |
+| 线性比例多元化（温和） | 中 | Semi-open | payable~borderline |
+| 超采样解冻窗口（结构改写期） | 中~高 | Open↔Semi-open（定向扰动） | 可控高负载 |
+| 稳态抗脆弱多元场 | 中~高 | Semi-open / Open（高恢复） | payable（长期健康） |
+
+### [Lineage/Source]
+- Eric Schwitzgebel, *Philosophy Should Be Among the Most Diverse Disciplines, Not the Least*（The Splintered Mind）。
+- 议题映射：结构性不公、边缘认知位势、超比例代表作为知识生产机制。
+
+## 【理论边界/防误用声明】
+1. 不采纳“超采样代表可无条件泛化到任何系统”的推论；仅适用于高迟滞同质化且需要结构解冻的场景。  
+2. 不采纳“边缘身份天然正确”的推论；SRT 赋予的是探索位势而非真值豁免权。  
+3. 不采纳“多元化指标达标=系统健康”的推论；仍需同时满足 \(\Pi_{L_0\to L_2}\) 与恢复能力约束。
