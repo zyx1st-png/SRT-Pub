@@ -61,6 +61,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-08 | Self-Consciousness（José Luis Bermúdez，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Self-Consciousness Interface） | 已融入 | 新增免误认信息源框架、具身所有权门控、第一/第三人称对称-非对称约束与病理映射 |
 | 2026-03-08 | The Mind-Body Problem（Tim Crane，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Mind–Body Problem Interface） | 已融入 | 新增“因果闭包-意识解释”双角约束、分层实现兼容定理、解释鸿沟边界与立场映射 |
 | 2026-03-08 | Cognitive Ontology（Colin Klein，用户重复粘贴） | 理论综述/百科条目（二手） | C | — | 不融入 | 与已融入条目（2026-03-07 Cognitive Ontology patch）高度重复，增量性未通过 |
+| 2026-03-08 | Theory of Mind（Henry M. Wellman，用户重复粘贴） | 理论综述/百科条目（二手） | C | — | 不融入 | 与已融入条目（2026-03-07 Theory of Mind patch）高度重复，增量性未通过 |
 
 ---
 
@@ -73,8 +74,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：35 条
+- 总提交：36 条
 - A（融入）：31 条
 - B（观察）：0 条
-- C（拒绝）：4 条
-- 融入率：88.6%
+- C（拒绝）：5 条
+- 融入率：86.1%
