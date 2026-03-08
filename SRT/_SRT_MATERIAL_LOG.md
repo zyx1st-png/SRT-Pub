@@ -50,6 +50,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-07 | Attention by Wayne Wu（用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（T-Cog-5 + Wu patch） | 已融入 | 新增注意力优先级选择定理、top-down/bottom-up/historical 偏置统一优先图、资源/机制层级区分 |
 | 2026-03-08 | The Language of Thought Hypothesis（Nicolas Porot & Eric Mandelbaum，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（Porot & Mandelbaum LoTH patch） | 已融入 | 新增 LoT-协议层接口：离散成分/系统性/生产性、多LoT并存、逻辑算子与结构敏感转移、连接主义实现层边界 |
 | 2026-03-08 | Bayesian Models of Cognition（Thomas L. Griffiths，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（Griffiths Bayesian patch） | 已融入 | 新增 Bayes 更新层接口：prior/likelihood 映射、结构学习与生成模型、resource-rational 桥接、与连接主义分层互补 |
+| 2026-03-08 | Niche Construction（Laurel Fogarty，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_SocTheory_05_Language_Eco.md`（Niche Construction Interface） | 已融入 | 新增生态位反馈建构、生态继承（L2-eco 记忆项）、选择压力内生化与合作阈值窗口 |
 
 ---
 
@@ -62,8 +63,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：24 条
-- A（融入）：23 条
+- 总提交：25 条
+- A（融入）：24 条
 - B（观察）：0 条
 - C（拒绝）：1 条
-- 融入率：95.8%
+- 融入率：96.0%

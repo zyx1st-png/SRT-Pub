@@ -18,7 +18,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 | Pipeline | 状态 | 备注 |
 |---------|------|------|
-| Pipeline 1（材料融合） | 已完成 | 11:50 收到 Griffiths《Bayesian Models of Cognition》材料；6 门审核结论 A，已融入 `SRT/Philosophy/SRT_Social_Cognition.md`，台账已更新 |
+| Pipeline 1（材料融合） | 已完成 | 12:01 收到 Fogarty《Niche Construction》材料；6 门审核结论 A，已融入 `SRT/Philosophy/SRT_SocTheory_05_Language_Eco.md`，台账已更新 |
 | Pipeline 3（信号采集） | 待执行 | 今日尚未触发 |
 | Pipeline 4（文档治理+理论评审） | 已完成 | 本周完成 W09 评审 |
 | Pipeline 5（媒体选题） | 待确认 | 以 heartbeat-state / 当日队列为准 |

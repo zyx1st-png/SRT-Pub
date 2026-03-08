@@ -719,6 +719,54 @@ P_{colex}(a,b)\uparrow \Rightarrow B_{L_1}(a\leftrightarrow b)\downarrow
 - Asifa Majid & Elisabeth Norcliffe (2026), *The Lexical Typology of Sensory Perception* (Annual Review of Linguistics).
 - 核心证据语义：跨百余语言数据不支持完整普遍感官层级，支持生态-交流需求与语义映射框架。
 
+## Niche Construction Interface（2026-03-08）
+
+### Def-Eco-NC-1: Organism→Environment Feedback Construction
+将生态位建构定义为算子群体通过行为持续改写其选择环境：
+\[
+E_{t+1}=E_t+\Delta E\big(A_t(\hat G_\theta),\,K_t\big)
+\]
+其中 \(A_t\) 为时刻 \(t\) 的构建行为（筑巢、耕作、储藏、改土等），\(K_t\) 为环境可改写性约束。
+
+### T-Eco-NC-1: Selection Pressure Endogenization
+在生态位建构下，选择压力不再是外生常量，而是内生反馈量：
+\[
+\mathcal{S}_{t+1}=\mathcal{S}\big(E_{t+1},\,P_{t+1}\big),\qquad
+P_{t+1}=\Phi\big(P_t,\mathcal{S}_{t+1}\big)
+\]
+即群体通过改写 \(E\) 反过来改写自身与后代面临的选择地形。
+
+### Def-Eco-NC-2: Ecological Inheritance as L2-Eco Memory
+当环境改写跨代持续时，引入“生态继承”记忆项：
+\[
+E^{inh}_{t+1}=\lambda E^{built}_t + (1-\lambda)E^{bg}_{t+1},\quad 0<\lambda\le 1
+\]
+\(\lambda\) 表示建构遗留的跨代保真度。该项在 SRT 中对应生态层的 \(L_2\)-memory，不经基因复制也可稳定传递选择偏置。
+
+### T-Eco-NC-2: Niche-Driven Cooperation Window
+若个体建构收益具有公共品外溢，则合作可在更宽参数区间稳定：
+\[
+\frac{\partial U_i}{\partial C_j}>0\ \land\ \lambda\uparrow\ \Rightarrow\ \rho_{coop}^{*}\downarrow
+\]
+解释：当建构结果可被后继个体共享且可持续时，合作维持阈值下降。
+
+### 分类映射表（Niche Construction Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 被动适应（环境外生主导） | 低~中 | Closed / Semi-open | 短期可支付，长期脆弱 |
+| 生态位建构（反馈改写） | 中~高 | Open↔Semi-open | 可支付并可降摩擦 |
+| 文化生态位建构（累积性高） | 中高 | Open（跨代协议化） | 初期高负载，长期降本 |
+| 过度建构/生态锁死 | 低回落 | Closed（路径依赖） | borderline / overloaded |
+
+### [Lineage/Source]
+- Laurel Fogarty (2026), *Niche Construction*.
+- Odling-Smee, Laland, Feldman 系列：生态位反馈、生态继承、合作与动力学重塑。
+
+## 【理论边界/防误用声明】
+1. 不采纳“生态位建构 = 可以任意重写自然选择”的推论；建构始终受生理/物理/生态约束。  
+2. 不采纳“存在环境改写 = 必然适应性提升”的推论；建构也可导致锁死、脆弱化与负外部性。  
+3. 不采纳“生态继承 = 基因继承可被替代”的推论；两者是并行机制，作用层级不同。
+
 ## 【理论边界/防误用声明】
 1. 不采纳“跨语言差异可完全由文化任意决定”的推论；视觉物理分辨率优势构成硬约束底线。  
 2. 不采纳“视觉常高位 = 其他通道无理论价值”的推论；非视觉通道可在特定生态下发生词汇复杂度相变。  
