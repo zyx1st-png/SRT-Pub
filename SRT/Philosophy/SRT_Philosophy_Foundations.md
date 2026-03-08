@@ -1575,3 +1575,55 @@ Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
 1. 不采纳“镜像识别通过 = 完整反思性自我已形成”的推论；该任务仅覆盖部分自我表征能力。  
 2. 不采纳“身体所有感 = 单一内在感觉实体”的推论；所有感可由多模态一致性操纵并解离。  
 3. 不采纳“第一人称与第三人称完全同构”的推论；二者共享部分概念但证据机制不同。
+
+## Mind–Body Problem Interface（2026-03-08）
+
+### Def-Phil-MB-1: Two-Horn Constraint (Causation vs Consciousness)
+心身问题在 SRT 中被表述为双约束：
+\[
+\text{Horn A: } \neg Physical\_mind \Rightarrow \text{mental causation gap}
+\]
+\[
+\text{Horn B: } Physical\_mind \Rightarrow \text{consciousness explanation gap}
+\]
+即：若心灵非物理，因果闭包受压；若心灵全物理，主观体验解释受压。
+
+### Def-Phil-MB-2: Layered Realization without Category Collapse
+SRT 采用“分层实现 + 非塌缩”框架：
+\[
+L_0\xrightarrow{\hat G_\theta}L_1\xrightarrow{stabilization}L_2
+\]
+- 允许心理层在实现上依赖物理层（supervenience-compatible）；
+- 但反对把解释层级差异误判为本体论冗余。
+
+### T-Phil-MB-1: Causal Closure Compatibility Theorem
+在不放弃物理因果闭包的前提下，心理因果可被解释为跨层同一事件的双重描述：
+\[
+E_{mental} \equiv E_{physical}^{realization},
+\quad \Delta a_{body}=f(E_{mental})=f(E_{physical})
+\]
+从而避免“心因果 vs 物因果”机械叠加式过度决定。
+
+### T-Phil-MB-2: Explanatory Gap Persistence under Ontic Dependence
+即便承认本体依赖（supervenience），意识解释缺口仍可存在：
+\[
+\text{Ontic dependence} \nRightarrow \text{full phenomenological transparency}
+\]
+该条款吸纳 bat/Mary/zombie 类论证的启发价值，但不把“可想象性”直接升级为“形上断言”。
+
+### 分类映射表（Mind–Body Positions → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 强还原物理主义 | 中 | Semi-open（实现优先） | 解释缺口压力上升 |
+| 非还原物理主义 | 中~高 | Open↔Semi-open（分层协同） | 可支付但边界敏感 |
+| 属性二元论 | 中 | Open（本体扩展） | 因果闭包压力上升 |
+| 中性一元/泛心向 | 中高 | Open（本体重述） | 组合问题负载高 |
+
+### [Lineage/Source]
+- Tim Crane (2026), *The Mind-Body Problem*.
+- 关键脉络：Cartesian dualism、物理主义/超覆(supervenience)、心因果论证、解释鸿沟与可想象性挑战。
+
+## 【理论边界/防误用声明】
+1. 不采纳“承认解释鸿沟 = 物理主义必假”的推论；语义-解释难题不自动转成本体否定。  
+2. 不采纳“因果闭包成立 = 心理层无效”的推论；心理描述可对应同一实现事件的高层因果刻画。  
+3. 不采纳“中性一元/泛心 = 已解决意识难题”的推论；组合问题与可检验性仍是硬约束。
