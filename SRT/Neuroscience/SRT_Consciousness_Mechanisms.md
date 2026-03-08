@@ -195,6 +195,13 @@ D_{align}\downarrow \Rightarrow P(\text{report})\downarrow
 
 **致命缺陷**: (a) 无法解释"为什么广播伴随体验"——广播只是信息分配模式；(b) 2023 年 COGITATE 研究发现刺激消失时缺乏预测的点燃，挑战了 GNWT 的某些预测。
 
+**COGITATE 方法学补注（2026-03-08, Pipeline 1）**：
+- 研究策略从“仅 seen/unseen 对比”扩展为双通道：
+  1) 对比范式（seen vs unseen）
+  2) 明显可见范式（强意识信号下直接检验理论预测）
+- 评估逻辑强调 **failure-weighted testing**：在高信号、较大样本、跨模态（fMRI/MEG/iEEG）并允许理论方优化分析后，若关键预测仍失败，则对理论核心约束力更强。
+- 引入“预测-核心主张距离图”（prediction-to-core distance map）作为解释学护栏：区分“神经层预测命中/失配”与“理论核心命题”之间的推断距离，避免过度正向确证。
+
 ### 1.2.2 整合信息理论 (IIT)
 
 **核心主张**: 意识 = 整合信息 $\Phi$。任何具有不可还原因果力的系统都有内在体验。
