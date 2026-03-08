@@ -494,3 +494,53 @@ SRT 区分两类“低自由能”状态：
 1. 不采纳“超采样代表可无条件泛化到任何系统”的推论；仅适用于高迟滞同质化且需要结构解冻的场景。  
 2. 不采纳“边缘身份天然正确”的推论；SRT 赋予的是探索位势而非真值豁免权。  
 3. 不采纳“多元化指标达标=系统健康”的推论；仍需同时满足 \(\Pi_{L_0\to L_2}\) 与恢复能力约束。
+
+## Information–Misinformation Interface（2026-03-08）
+
+### Def-Macro-IM-1: Truth-Blind Processing / Truth-Sensitive Governance
+认知处理层面对信息真假并不先验分流，系统首先处理的是“可更新性与社会传播性”；
+治理层才需对真伪作制度化约束：
+\[
+\text{Cognitive uptake}=f(\text{prior},\text{likelihood},\text{social cues})
+\]
+\[
+\text{Governance filter}=g(\text{veracity},\text{source reliability},\text{system incentives})
+\]
+
+### T-Macro-IM-1: Misinformation Amplification under Distorted Incentives
+当平台激励偏向情绪强度与互动率而非真实性时，误信息扩散率上升：
+\[
+R_{mis} \propto A_{alg}\cdot E_{arousal}\cdot C_{identity}\,/\,V_{cred}
+\]
+其中 \(A_{alg}\) 为算法放大系数，\(E_{arousal}\) 为情绪唤醒强度，\(C_{identity}\) 为身份一致性增益，\(V_{cred}\) 为可见可信度约束。
+
+### Def-Macro-IM-2: Continued-Influence as L2 Hysteresis
+“纠正后仍受影响”在 SRT 中建模为 \(L_2\) 迟滞：
+\[
+Belief_{t+1}=Belief_t+\eta\,\Delta Evidence-\lambda\,H_{network}
+\]
+当网络耦合记忆 \(H_{network}\) 高时，单次纠偏难以完全清除旧叙事轨迹。
+
+### T-Macro-IM-2: Polarization without Ground Truth Access
+在缺乏共同地真值锚点时，小的信任差异经社交更新可被放大为群体极化：
+\[
+\Delta Trust_0\neq 0\ \land\ \neg GroundTruth\ \Rightarrow\ \frac{d|L_2^A-L_2^B|}{dt}>0
+\]
+该机制与既有“信息茧房/回音室”章节形成闭环：极化主要是网络动力学放大，而非单点理性失误。
+
+### 分类映射表（Information Ecology Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 高可信低放大信息生态 | 中~高 | Semi-open（可校正） | 低~中负载 |
+| 高情绪高放大平台生态 | 中回落~低 | Closed 倾向（身份驱动） | borderline / polarizing |
+| 纠偏-预免疫协同治理生态 | 中~高 | Open↔Semi-open（前置防护） | 可支付并降长期摩擦 |
+| 伪共识噪声生态（bot/操纵） | 低~中 | Closed（信号污染） | overloaded 风险 |
+
+### [Lineage/Source]
+- Andrew Perfors (2026), *Information and Misinformation*.
+- 关键脉络：Shannon 信息观、Bayesian 更新、社会学习与信任、continued influence / confirmation dynamics。
+
+## 【理论边界/防误用声明】
+1. 不采纳“误信息传播主要因个体愚蠢”的推论；系统激励与网络结构同样是主因。  
+2. 不采纳“纠错一次即可清除错误信念”的推论；迟滞与网络耦合会导致持续影响。  
+3. 不采纳“引入事实核查即可根治”的推论；需同时改造分发机制、可见可信度与平台激励。
