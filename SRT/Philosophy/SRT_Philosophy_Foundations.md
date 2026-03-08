@@ -1469,3 +1469,61 @@ SRT 采纳“表示-非表示并存”边界：
 1. 不采纳“有神经相关 = 已确定内容”的推论；内容归因必须经功能与任务约束验证。  
 2. 不采纳“4E 成立 = 一切内部表征可删除”的推论；不同任务对内部代理依赖度不同。  
 3. 不采纳“teleosemantics 成立 = 语义已完全解决”的推论；误表征、远距内容与格式差异仍需经验判定。
+
+## Concepts Interface（2026-03-08）
+
+### Def-Phil-CON-1: Concept as Recombinable Deliberative Representation
+在 SRT 中，概念定义为可在有意识推理中自由重组的表征类型：
+\[
+\text{Concept}(X) \iff R_X \in \mathcal{R}_{delib}\ \land\ \text{Recombinable}(R_X)
+\]
+其核心不是“固定定义包”，而是可在任务中与其他概念形成结构化组合。
+
+### Def-Phil-CON-2: Concept vs Conception Split
+采用 Shea 的区分：
+- **concept**：指称载体（representation type）；
+- **conception**：与该载体可访问的信息簇（prototype/exemplar/theory/characterization）。
+\[
+\text{Use}(R_X,t)=\Gamma_t\big(\mathcal{K}_{proto},\mathcal{K}_{ex},\mathcal{K}_{theory},\mathcal{K}_{char}\big)
+\]
+即一次使用中被调度的是情境门控后的 conception 子集，而非完整知识库。
+
+### T-Phil-CON-1: Hybrid Conceptions Theorem
+分类与推理的稳健性通常依赖混合结构，而非单一路径（纯定义/纯原型/纯样例）：
+\[
+\text{Performance}_{cat+infer} \approx f(w_p\mathcal{K}_{proto}+w_e\mathcal{K}_{ex}+w_t\mathcal{K}_{theory}+w_c\mathcal{K}_{char})
+\]
+权重 \(w_i\) 随任务、压力、文化语境和工作记忆负载动态改变。
+
+### T-Phil-CON-2: Externalist Reference / Internal Selection Coupling
+概念指称由外部稳定关系约束（externalism），但具体应用由内部选择机制实现：
+\[
+\text{Reference}(R_X)\leftarrow \text{mind-world stabilizing relation},
+\qquad
+\text{Categorization}_t\leftarrow \hat G_\theta\text{-gated conceptions}
+\]
+这解释了“同指称但不同理解”（专家/非专家）与“可错分类但语义不崩”的并存。
+
+### Def-Phil-CON-3: Ad-hoc Concept Construction Window
+概念可在情境中临时组装（ad-hoc）以满足当前目标：
+\[
+R_{adhoc}=\mathcal{C}(R_{i_1},R_{i_2},...,Goal_t,Context_t)
+\]
+如“garage-sale items”一类任务特定概念，体现 SRT 的目标驱动结构压缩能力。
+
+### 分类映射表（Concept Processing Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 规则/定义主导分类 | 中~高 | Semi-open（显式运算） | 中负载 |
+| 原型/样例快速分类 | 中 | Open↔Semi-open（并行启发） | 低~中负载 |
+| 理论驱动概念推理 | 中高 | Open（结构推演） | 中~高负载可支付 |
+| 情境即席概念构造 | 中~高 | Open（目标约束重组） | 边缘高负载但高收益 |
+
+### [Lineage/Source]
+- Nicholas Shea (2026), *Concepts*.
+- 关键脉络：generality constraint、hybridism、externalism、ad-hoc concepts、concept/conception 区分。
+
+## 【理论边界/防误用声明】
+1. 不采纳“概念=定义条目”的推论；大量概念使用依赖原型、样例、理论与情境表征协同。  
+2. 不采纳“分类成功=语义指称已被内在信息唯一决定”的推论；应用机制与指称基础需要区分。  
+3. 不采纳“LLM 的分布式语义成功 = 人类概念语义问题已解决”的推论；功能近似不等于语义地基完成。
