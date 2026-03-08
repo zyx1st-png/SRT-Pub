@@ -40,6 +40,15 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-07 | *The Lexical Typology of Sensory Perception*（Annual Review of Linguistics, 2026，用户摘要） | 综述论文/二手摘要 | A | `SRT/Philosophy/SRT_SocTheory_05_Language_Eco.md`（Sensory Lexical Typology Interface）+ `SRT/SRT_EXP_MEASURE_MAP.md`（Exp-Lang-Sense-01） | 已融入 | 新增“交流需求退火”词汇化机制、colexification 低势垒解释、跨语言语义拓扑测量探针 |
 | 2026-03-07 | *Ask Ethan: Do signals degrade as they travel through space?*（用户摘要） | 科普文章/二手 | A | `SRT/Core/SRT_Core_13a_Operator_Basics.md`（Signal–Friction Relativity）+ `SRT/Physics/SRT_Phys_10_Integration.md`（Cosmological Propagation Imprint）+ `SRT/Physics/SRT_Quant_02_Cosmology.md`（Ontological Horizon） | 已融入 | 新增信号-摩擦相对性、传播印记叠加与红移等效记账、事件可达存在性的本体论视界条款 |
 | 2026-03-07 | 社会认同（Social Identity，用户摘要） | 理论综述/二手 | A | `SRT/Philosophy/SRT_SocTheory_06_L2_Dynamics.md`（Social Identity Interface）+ `SRT/Philosophy/_SRT_Soc_Bridge.md`（Collective Autopoietic Defense Patch）+ `_SRT_VERTICAL_INTEGRATION.md`（d_collective 候选E） | 已融入 | 新增最小拓扑断裂定理、集体自创生防御、个人-群体冲突窗与情境张量聚合式 |
+| 2026-03-07 | 社会认同（Social Identity，本次重复提交） | 理论综述/二手 | C | — | 不融入 | 与当日已融入条目高度重复，增量性未通过（保留原已融入版本） |
+| 2026-03-07 | The Rigor of Angels（https://www.themarginalian.org/2023/10/15/the-rigor-of-angels/，含原文引句） | 书评/哲学评论（二手+直接引文） | A | `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Ax-PhilF-6 + T-PhilF-6） | 已融入 | 基于原文引句完成“主观过滤 vs 客观摩擦”边界固化，并加入潜在域过载坍缩定理（保持现实主义底线） |
+| 2026-03-07 | Affordances by Anthony Chemero（用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（Ax-Cog-2b, T-Cog-2b, Chemero patch） | 已融入 | 新增 affordance/invitation 区分、直接知觉-行动采样耦合、属性vs关系兼容桥接、联合可供性涌现表达 |
+| 2026-03-07 | Theory of Mind by Henry M. Wellman（用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（T-Cog-3 + Wellman patch） | 已融入 | 新增信念滞后治理、假信念相变解释、DD→DB/KA→FB→HE 序列的文化权重解释 |
+| 2026-03-07 | Cognitive Ontology by Colin Klein（用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Ax-PhilF-7 + T-PhilF-7） | 已融入 | 新增跨层非双射公理、本体论多元约束定理，固化“认知本体≠神经一一映射”边界 |
+| 2026-03-07 | Markov Chain Monte Carlo by Adam N. Sanborn（用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（T-Cog-4 + Sanborn patch） | 已融入 | 新增序列采样约束定理、MCMC近似与行为波动/锚定偏置的统一解释 |
+| 2026-03-07 | Spatial Cognition（https://oecs.mit.edu/pub/or750iar/release/1） | 百科条目/一手页面（URL+正文） | A | `SRT/Neuroscience/SRT_Neuro_10_Advanced_Models.md`（§2.4 空间认知双流补丁） | 已融入 | 基于正文补全后复审升A：新增导航/对象双流、Map↔Graph 条件切换、Alzheimer导航失稳的摩擦预算解释 |
+| 2026-03-07 | Attention by Wayne Wu（用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（T-Cog-5 + Wu patch） | 已融入 | 新增注意力优先级选择定理、top-down/bottom-up/historical 偏置统一优先图、资源/机制层级区分 |
+| 2026-03-08 | The Language of Thought Hypothesis（Nicolas Porot & Eric Mandelbaum，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_Cognition.md`（Porot & Mandelbaum LoTH patch） | 已融入 | 新增 LoT-协议层接口：离散成分/系统性/生产性、多LoT并存、逻辑算子与结构敏感转移、连接主义实现层边界 |
 
 ---
 
@@ -47,14 +56,13 @@ dependency: [SRT-EXECUTION-PLAN]
 
 | 加入日期 | 重评日期 | 来源 | 等待原因 |
 |---------|---------|------|---------|
-| （自动填入） | | | |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：14 条
-- A（融入）：14 条
+- 总提交：23 条
+- A（融入）：22 条
 - B（观察）：0 条
-- C（拒绝）：0 条
-- 融入率：100%
+- C（拒绝）：1 条
+- 融入率：95.7%

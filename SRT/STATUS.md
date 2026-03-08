@@ -10,19 +10,19 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 > **会话入口**：每次 SRT 工作会话开始前先读此文件（30 秒上手）。
 > **更新规则**：每次工作会话结束时由 agent 更新本文件。
-> **最后更新**：2026-03-02
+> **最后更新**：2026-03-08
 
 ---
 
-## 今日执行状态（2026-03-02）
+## 今日执行状态（2026-03-08）
 
 | Pipeline | 状态 | 备注 |
 |---------|------|------|
-| Pipeline 1（材料融合） | 待命 | 等待材料提交 |
-| Pipeline 3（信号采集） | 待命 | 上次运行：未知（首次启用） |
+| Pipeline 1（材料融合） | 已完成 | 10:10 收到 Porot & Mandelbaum《The Language of Thought Hypothesis》材料；6 门审核结论 A，已融入 `SRT/Philosophy/SRT_Social_Cognition.md`，台账已更新 |
+| Pipeline 3（信号采集） | 待执行 | 今日尚未触发 |
 | Pipeline 4（文档治理+理论评审） | 已完成 | 本周完成 W09 评审 |
-| Pipeline 5（媒体选题） | 待命 | 双路线格式刚升级，待首次运行 |
-| Pipeline 6（每日内审） | **新建** | 今日首次配置，待首次触发 |
+| Pipeline 5（媒体选题） | 待确认 | 以 heartbeat-state / 当日队列为准 |
+| Pipeline 6（每日内审） | 待确认 | 以 heartbeat-state 为准 |
 
 ---
 
