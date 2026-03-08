@@ -684,3 +684,54 @@ SRT_SocTheory_06_L2_Dynamics ← 你在这里
 1. 不采纳“最小分类效应可直接外推全部现实群体冲突”的推论；真实社会仍叠加历史、制度与资源结构。  
 2. 不采纳“积极区隔=必然恶意”的推论；其首先是边界维持机制，规范评价需引入伦理层判据。  
 3. 不采纳“合作情境必然消除偏见”的推论；仅在目标耦合与收益分配可验证时成立。
+
+## Cultural Attractors Interface（2026-03-08）
+
+### Def-L2-CA-1: Attractor as Convergent Reconstruction Cluster
+文化吸引子不是“高保真复制点”，而是重复重构下的概率聚类中心：
+\[
+A_k=\arg\max_x\,p_t(x),\qquad
+x_{t+1}=\mathcal{T}(x_t;\theta_i,e_t)
+\]
+其中 \(\mathcal{T}\) 为传递-重构变换（记忆、推断、生态约束、沟通目标共同作用）。
+
+### T-L2-CA-1: Population Stability Without Faithful Copying
+即使单次传递误差较大，只要变换在统计上朝同一簇收敛，群体层面仍可稳定：
+\[
+\mathbb{E}\big[d(x_{t+1},A_k)\mid x_t\big] < d(x_t,A_k)
+\Rightarrow
+\text{Trait stability at population level}
+\]
+这将“稳定文化”从复制保真逻辑改写为吸引收敛逻辑。
+
+### Def-L2-CA-2: Multi-Factor Attraction Field
+吸引场由心理与生态因子叠加：
+\[
+\mathcal{F}_{att}(x)=w_p\,\mathcal{F}_{psych}(x)+w_e\,\mathcal{F}_{eco}(x)+w_l\,\mathcal{F}_{local}(x)+w_c\,\mathcal{F}_{cultural}(x)
+\]
+对应 Claidière & Sperber 语境中的多维因素：心理机制、重力/材料等生态条件、地方历史状态与既有文化产物。
+
+### T-L2-CA-2: Selection–Attraction Coupling Theorem
+在 SRT 中，选择与吸引并非互斥：
+\[
+p_{t+1}(x)\propto \underbrace{S(x)}_{adoption/selection}\cdot
+\underbrace{\int K(x\leftarrow y)\,p_t(y)dy}_{transformative attraction}
+\]
+当 \(K\) 近似恒等映射时退化为“高保真选择”；当 \(K\) 收敛性强时，吸引主导稳定性。
+
+### 分类映射表（Cultural Attractor Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 高保真复制主导 | 中~高 | Semi-open（低重构） | 低波动可支付 |
+| 吸引收敛主导（重构稳定） | 中 | Open↔Semi-open | 可支付（局部高负载） |
+| 生态约束主导（如重力/材料） | 中 | Semi-open（环境强约束） | 可支付但路径依赖 |
+| 失稳扩散（无显著吸引簇） | 低~中 | Open（噪声扩散） | borderline / unstable |
+
+### [Lineage/Source]
+- Nicolas Claidière & Dan Sperber (2026), *Cultural Attractors*.
+- 相关脉络：Sperber (1996)；Claidière et al. (2014)；selection–attraction 互补讨论。
+
+## 【理论边界/防误用声明】
+1. 不采纳“文化吸引子=目的论终点”的推论；吸引子是统计聚类，不是历史必然终局。  
+2. 不采纳“有吸引子=复制无误”的推论；恰相反，吸引理论允许高重构、低保真下的稳定。  
+3. 不采纳“选择与吸引只能二选一”的推论；两者可在同一传递链中并行耦合。
