@@ -97,6 +97,44 @@ $$\exists h: L_2^{(A)} \to L_2^{(B)} \text{ homeomorphic}$$
 $$\text{Gift}(T_0) \neq \text{Exchange}(T_1)$$
 *   **Implication**: 道德事件与经济事件是同一选择的不同相位。
 
+### Ax-PhilF-6: Filter–Resistance Duality (过滤-阻力二元公理)
+意义与现实的关系满足如下边界：
+\[
+\text{Filter Shape} = f(\theta) \quad\text{(具身/主观)}
+\]
+\[
+\text{Resistance Cost} = \Psi_f(L_0,\hat{G}_\theta) > 0 \quad\text{(客观/不可任意消除)}
+\]
+* **Implication（中文）**：SRT 允许“观察是参与式的”，但不允许“现实是任意捏造的”。可被构造的是解释框架，不可被豁免的是本体论摩擦成本。
+
+### T-PhilF-6: Latent Overload Collapse Theorem (潜在域过载坍缩定理)
+设算子有效带宽上限为 $B_{max}(\theta)$。若外部开放维度导致输入复杂度超过带宽，且维持锚定所需摩擦支付超出可用预算，则 $L_1$ 稳定结构发生回退：
+\[
+I_{in}(L_0 \to \hat{G}_\theta) > B_{max}(\theta)
+\;\land\;
+\int_{t_0}^{t_1}\Psi_f\,dt > E_{avail}
+\Rightarrow
+\mathcal{S}(L_1)\downarrow \to \text{Collapse}
+\]
+* **Implication（中文）**：意识不仅是“信息获取”，更是“有目的排斥”（purposeful exclusion）。过滤失败时，不是获得全知，而是失稳。
+
+### Ax-PhilF-7: Cross-Level Non-Bijection (跨层非双射公理)
+认知本体与神经实现之间一般不满足一一映射：
+\[
+\neg\exists\; f: \mathcal{O}_{cog} \leftrightarrow \mathcal{O}_{neural}\;\text{bijective}
+\]
+允许多对一（多任务共享神经子网）与一对多（同一认知功能在不同情境下多重实现）。
+* **Implication（中文）**：不能以“无单一区域对应”否定认知概念本身；应比较跨任务稳定的操作结构与可复用实现模式。
+
+### T-PhilF-7: Ontological Pluralism Constraint (本体论多元约束定理)
+若两种认知分类在预测精度、干预可控性与跨情境可迁移性上均达阈值，则二者可并存为有效本体切分：
+\[
+\Pi(\mathcal{O}_a)\ge \tau_\Pi\;\land\;\Pi(\mathcal{O}_b)\ge \tau_\Pi
+\Rightarrow
+\mathcal{O}_a \parallel \mathcal{O}_b\;\text{(licensed pluralism)}
+\]
+* **Implication（中文）**：模块论与分布论可在不同任务粒度下并行成立；争论应从“谁唯一正确”转向“谁在何任务域更优”。
+
 <br>
 
 ---
@@ -1372,3 +1410,62 @@ J = \mathbb{E}[\Psi_f^{total}] + \lambda\,\mathrm{CatastrophicRisk}
 1. 不采纳“需要信任 = 真理纯属社会发明”的推论；SRT 仍要求 \(L_0\) 约束与环境摩擦闭环。  
 2. 不采纳“机器给出结果 = 可跳过可回滚机制”的推论；无 \(K_r\)/\(G_e\) 保障的输出仅是暂态候选。  
 3. 不采纳“任何共识都等价”的推论；只有能持续降低 \(\Psi_f^{env}\) 的共识结构才具吸引子地位。
+
+## Mental Representation Interface（2026-03-08）
+
+### Def-Phil-MR-1: Representation as Internal Surrogate with Action Relevance
+在 SRT 中，将“心理表征”定义为：由算子生成、可在系统内被操作、并能使行为对外部目标保持相关性的内部代理结构。
+\[
+R \in \mathcal{V}_{int},\quad
+R \xrightarrow{\hat G_\theta\text{-compute}} a_t,
+\quad a_t\ \text{tracks distal target }X
+\]
+
+### Def-Phil-MR-2: Vehicle–Content–Format Triad
+采用三分约束：
+- **vehicle**：承载结构（神经群活动、同步机制、外部耦合构件等）；
+- **content**：该结构所指向的对象/性质/命题；
+- **format**：可计算组织方式（离散/连续、命题式/图像式/连接式）。
+\[
+\text{Rep}(R)=\langle V, C, F\rangle
+\]
+SRT 要求对三者分别建模，避免把“有相关神经活动”直接等同于“内容已确定”。
+
+### T-Phil-MR-1: Misrepresentation Admissibility Theorem
+可错性是表征的必要判据：若系统永不可错，则其“内容”退化为事后并集描述而失去解释力。
+\[
+\text{Representational status} \Rightarrow \exists\,e:\ C(R)\neq W_e
+\]
+对应 Martinez 文脉中的 disjunction/error 问题：SRT 通过引入目标函数与功能约束过滤“什么都算对”的伪内容归因。
+
+### Def-Phil-MR-3: Teleo-Functional Fidelity Gate
+将 fidelity conditions 自然化为“生产者-消费者链条中的功能闭环”：
+\[
+P \to R \to Cn,
+\quad \text{Content fixed by successful downstream use under function constraints}
+\]
+其中 \(P\) 为 producer，\(Cn\) 为 consumer。该条款兼容 teleosemantics，也兼容信息论/信号博弈的 sender–receiver 语义。
+
+### T-Phil-MR-2: 4E Compatibility Boundary
+SRT 采纳“表示-非表示并存”边界：
+\[
+\text{Need}(R) \propto \text{task underdetermination} - \text{online sensorimotor closure}
+\]
+当任务可由实时具身耦合闭环完成时，可弱化内部表征承诺；当存在跨时规划、反事实推演或离线组合时，表征层通常不可省略。
+
+### 分类映射表（Mental Representation Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 强表征计算（离线推演主导） | 中~高 | Semi-open（高内部操作） | 可支付~高负载 |
+| 具身闭环优先（低内部建模） | 中 | Open（在线耦合） | 低~中负载 |
+| 混合策略（4E + 表征） | 中~高 | Open↔Semi-open | 可支付（任务依赖） |
+| 伪表征泛化（任何状态都算“表示”） | 低~中 | Closed（解释退化） | 理论上 overloaded |
+
+### [Lineage/Source]
+- Manolo Martínez (2026), *Mental Representation*.
+- 关键脉络：Brentano intentionality、teleosemantics（Millikan）、sender-receiver/信息论框架、4E 挑战。
+
+## 【理论边界/防误用声明】
+1. 不采纳“有神经相关 = 已确定内容”的推论；内容归因必须经功能与任务约束验证。  
+2. 不采纳“4E 成立 = 一切内部表征可删除”的推论；不同任务对内部代理依赖度不同。  
+3. 不采纳“teleosemantics 成立 = 语义已完全解决”的推论；误表征、远距内容与格式差异仍需经验判定。
