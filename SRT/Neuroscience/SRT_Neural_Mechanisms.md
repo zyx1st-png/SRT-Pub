@@ -155,6 +155,29 @@ $$\text{Theta-replay Lv} \approx 1.5 \iff \text{Population Sparseness} < 10\%$$
 
 * **Empirical Anchors**: Lundqvist, Herman & Lansner (2011), *Brain Research*; Shinomoto et al. (2005, 2009); Lisman & Idiart (1995); Mongillo et al. (2008); Fuentemilla et al. (2010)
 
+### Hitch & Baddeley（Working Memory）patch (2026-03-08, Pipeline 1)
+
+- 将“工作记忆”重述为 **受限容量下的目标导向选择-维持-操作回路**：
+\[
+\text{WM} = \mathcal{C}_{limited}(\text{store}\,+\,\text{attend}\,+\,\text{manipulate}\mid goal)
+\]
+与 SRT 的 \(\hat G_\theta\) 在线调度一致，强调容量上限不是缺陷而是可计算约束。
+
+- 将经典多组件模型映射为 SRT 分层：
+  - central executive \(\rightarrow\) \(\hat G_\theta\) 的注意与控制策略层；
+  - phonological / visuospatial buffers \(\rightarrow\) 模态化 \(L_1\) 临时槽；
+  - episodic buffer \(\rightarrow\) 跨模态绑定的瞬时整合窗（focus of attention）。
+
+- 将双任务干扰写成统一预算竞争：
+\[
+\text{Interference}\uparrow \iff \sum_i \Psi_f^{task_i} > B_{control}
+\]
+解释“存储-操作互相挤占”的行为事实，并与前述 \(\theta\)-\(\gamma\) 复用容量上限一致。
+
+- 对“遗忘机制争论（衰减 vs 干扰）”采取并行约束立场：在 SRT 中两者都可表现为吸引子刷新失败，区别在于失效来源（时间刷新不足 vs 项目竞争增强）。
+
+- 将 chunking 解释为 \(L_2\) 先验压缩对 WM 有效负载的降维：熟悉结构可把多项新信息打包为低 \(\Psi_f\) 的单元，从而提升表面容量。
+
 ---
 
 ### T-NEURO-MECH-4: Oscillatory Mode Bifurcation Theorem (振荡模式分叉定理)
