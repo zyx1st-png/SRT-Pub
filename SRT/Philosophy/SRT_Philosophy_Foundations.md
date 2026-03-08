@@ -1527,3 +1527,51 @@ R_{adhoc}=\mathcal{C}(R_{i_1},R_{i_2},...,Goal_t,Context_t)
 1. 不采纳“概念=定义条目”的推论；大量概念使用依赖原型、样例、理论与情境表征协同。  
 2. 不采纳“分类成功=语义指称已被内在信息唯一决定”的推论；应用机制与指称基础需要区分。  
 3. 不采纳“LLM 的分布式语义成功 = 人类概念语义问题已解决”的推论；功能近似不等于语义地基完成。
+
+## Self-Consciousness Interface（2026-03-08）
+
+### Def-Phil-SC-1: Self-Consciousness as Self-Specified Awareness
+自我意识定义为：系统获得并整合“不可错指向自身”的信息流，从而形成可用于行动与反思的自我指向状态。
+\[
+SC_t = \mathcal{I}\big(I_{introspection}, I_{proprio}, I_{kinesthetic}, I_{autobio}, I_{self-loc}\big)
+\]
+其中 \(\mathcal{I}\) 为跨通道整合算子。
+
+### T-Phil-SC-1: Immunity-Grounded First-Person Asymmetry
+第一人称特权并非“绝对内省透明”，而是来自若干信息源的免误认结构（immunity to misidentification）：
+\[
+I_k \in \mathcal{S}_{immune} \Rightarrow P(\text{misidentify subject}\mid I_k)\to 0
+\]
+这解释了“可错内容 + 不易错主语”的并存。
+
+### Def-Phil-SC-2: Embodied Ownership Window
+身体所有感由多模态一致性门控，而非单一“mineness”感受即可决定：
+\[
+Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
+\]
+其中 \(V/T/P/K\) 分别代表视觉、触觉、本体觉、运动觉一致性（对应橡胶手/换身错觉可操纵边界）。
+
+### T-Phil-SC-2: Self–Other Co-Development Constraint
+自我意识与他心理解存在对称/非对称并存关系：
+\[
+\text{ToM}_t \leftrightarrow \text{SelfModel}_t,
+\quad \text{but }\mathcal{E}_{1p}\neq\mathcal{E}_{3p}
+\]
+即概念框架可共享（信念/意图等），证据通道不可等同（第一人称与第三人称信息源不同）。
+
+### 分类映射表（Self-Consciousness Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 最小具身自我（感知-行动耦合） | 中 | Open↔Semi-open | 低负载可支付 |
+| 反思性自我（叙事/自传整合） | 中~高 | Semi-open（跨时整合） | 中负载 |
+| 身体边界可塑状态（错觉/VR） | 中 | Open（边界重映射） | 可控波动 |
+| 病理性解离/失属（neglect/alien hand） | 低~中 | Closed 倾向（整合断裂） | borderline / overloaded |
+
+### [Lineage/Source]
+- José Luis Bermúdez (2026), *Self-Consciousness*.
+- 关键脉络：Kant “I think”、生态知觉自指信息、镜像识别、身体所有感与 ToM 互构。
+
+## 【理论边界/防误用声明】
+1. 不采纳“镜像识别通过 = 完整反思性自我已形成”的推论；该任务仅覆盖部分自我表征能力。  
+2. 不采纳“身体所有感 = 单一内在感觉实体”的推论；所有感可由多模态一致性操纵并解离。  
+3. 不采纳“第一人称与第三人称完全同构”的推论；二者共享部分概念但证据机制不同。

@@ -58,6 +58,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-08 | Ritual（Richard Sosis，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_SocTheory_06_L2_Dynamics.md`（Ritual Interface） | 已融入 | 新增仪式双通道（self/canonical）映射、不确定性触发增益、因果不透明与传承窗口机制 |
 | 2026-03-08 | Ritual（Richard Sosis，用户重复粘贴） | 理论综述/百科条目（二手） | C | — | 不融入 | 与当日已融入 Ritual Interface 高度重复，增量性未通过（保留既有版本） |
 | 2026-03-08 | Concepts（Nicholas Shea，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Concepts Interface） | 已融入 | 新增 concept/conception 区分、混合概念结构定理、外在主义指称-内在选择耦合与 ad-hoc 概念窗口 |
+| 2026-03-08 | Self-Consciousness（José Luis Bermúdez，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Self-Consciousness Interface） | 已融入 | 新增免误认信息源框架、具身所有权门控、第一/第三人称对称-非对称约束与病理映射 |
 
 ---
 
@@ -70,8 +71,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：32 条
-- A（融入）：29 条
+- 总提交：33 条
+- A（融入）：30 条
 - B（观察）：0 条
 - C（拒绝）：3 条
-- 融入率：90.6%
+- 融入率：90.9%
