@@ -55,6 +55,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-08 | Working Memory（Graham J. Hitch & Alan D. Baddeley，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Neuroscience/SRT_Neural_Mechanisms.md`（Hitch & Baddeley WM patch） | 已融入 | 新增 WM 多组件-SRT 分层映射、双任务干扰预算方程、chunking 作为 L2 压缩降维解释 |
 | 2026-03-08 | Mental Representation（Manolo Martínez，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Philosophy_Foundations.md`（Mental Representation Interface） | 已融入 | 新增 vehicle-content-format 三分约束、误表征必要性定理、teleo-功能门控与 4E 兼容边界 |
 | 2026-03-08 | The Language of Thought Hypothesis（Nicolas Porot & Eric Mandelbaum，用户重复粘贴） | 理论综述/百科条目（二手） | C | — | 不融入 | 与当日已融入条目（LoTH patch）高度重复，增量性未通过（保留既有版本） |
+| 2026-03-08 | Ritual（Richard Sosis，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_SocTheory_06_L2_Dynamics.md`（Ritual Interface） | 已融入 | 新增仪式双通道（self/canonical）映射、不确定性触发增益、因果不透明与传承窗口机制 |
 
 ---
 
@@ -67,8 +68,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：29 条
-- A（融入）：27 条
+- 总提交：30 条
+- A（融入）：28 条
 - B（观察）：0 条
 - C（拒绝）：2 条
-- 融入率：93.1%
+- 融入率：93.3%

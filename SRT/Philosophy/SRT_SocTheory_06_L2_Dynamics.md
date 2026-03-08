@@ -735,3 +735,55 @@ p_{t+1}(x)\propto \underbrace{S(x)}_{adoption/selection}\cdot
 1. 不采纳“文化吸引子=目的论终点”的推论；吸引子是统计聚类，不是历史必然终局。  
 2. 不采纳“有吸引子=复制无误”的推论；恰相反，吸引理论允许高重构、低保真下的稳定。  
 3. 不采纳“选择与吸引只能二选一”的推论；两者可在同一传递链中并行耦合。
+
+## Ritual Interface（2026-03-08）
+
+### Def-L2-RIT-1: Ritual as Predictive Coordination Protocol
+仪式定义为“高形式化、可重复、共享执行的行为-话语序列”，用于压缩群体互动不确定性：
+\[
+\mathcal{R}_{rit} = \{(a_1,u_1),\ldots,(a_n,u_n)\}_{invariant\ pattern}
+\]
+\[
+\Delta H_{social}\mid \mathcal{R}_{rit} < 0
+\]
+即仪式通过建立可预期框架降低社会熵与交互摩擦。
+
+### Def-L2-RIT-2: Self-Referential / Canonical Dual Channel
+采用 Sosis–Rappaport 双通道映射：
+\[
+\mathcal{R}_{rit} = \mathcal{R}_{self} \oplus \mathcal{R}_{canon}
+\]
+- \(\mathcal{R}_{self}\)：执行者当前状态信号（投入度、忠诚、情绪、意向）；
+- \(\mathcal{R}_{canon}\)：群体规范与价值的跨代编码（非个人原创、制度沉积）。
+
+### T-L2-RIT-1: Uncertainty-Triggered Ritual Gain
+在高不确定条件下，仪式的心理-群体效应增益上升：
+\[
+\frac{\partial \text{Gain}_{rit}}{\partial U}>0,
+\quad \text{Gain}_{rit}=f(\downarrow Anxiety,\uparrow Cohesion,\uparrow Norm compliance)
+\]
+对应“风险/转折/创伤节点仪式密度增加”的经验规律。
+
+### T-L2-RIT-2: Causal Opacity and Cultural Retention Window
+因果不透明并不削弱传承，反而在“高共享+高情感+节律重复”条件下提高保留概率：
+\[
+P_{retain}(rit)\uparrow \iff S_{shared}\uparrow \land E_{salience}\uparrow \land Rh_{stereotypy}\uparrow
+\]
+解释为何许多仪式在机制不透明时仍可长期稳定存在。
+
+### 分类映射表（Ritual Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 日常低强度仪式（问候/祈祷） | 中 | Semi-open（稳态校准） | 低负载可支付 |
+| 过渡仪式（婚礼/毕业/成人礼） | 中~高 | Open↔Semi-open（身份重整） | 中负载可支付 |
+| 危机仪式（创伤/治愈/哀悼） | 中高 | Open（高情绪耦合） | 边缘高负载但可降长期摩擦 |
+| 僵化排他仪式（边界过硬） | 低~中 | Closed 倾向 | borderline / polarizing |
+
+### [Lineage/Source]
+- Richard Sosis (2026), *Ritual*.
+- 关键脉络：Rappaport（canonical/self-referential）、Turner、Durkheim、Legare & Nielsen。
+
+## 【理论边界/防误用声明】
+1. 不采纳“仪式有效 = 超自然因果已证实”的推论；仪式效力可由协调、情绪与规范机制解释。  
+2. 不采纳“仪式必然保守压制创新”的推论；仪式既可固化边界，也可管理转变与重整身份。  
+3. 不采纳“因果不透明 = 任意操作都等效”的推论；形式、节律、共享与情境匹配决定可持续性。

@@ -18,7 +18,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 | Pipeline | 状态 | 备注 |
 |---------|------|------|
-| Pipeline 1（材料融合） | 已完成 | 15:39 收到 Porot & Mandelbaum《The Language of Thought Hypothesis》重复材料；6 门审核结论 C（重复提交，增量性未通过），台账已更新 |
+| Pipeline 1（材料融合） | 已完成 | 15:40 收到 Sosis《Ritual》材料；6 门审核结论 A，已融入 `SRT/Philosophy/SRT_SocTheory_06_L2_Dynamics.md`，台账已更新 |
 | Pipeline 3（信号采集） | 已完成 | 12:41 已执行 Scholar/Reddit/X 采集；新增 3 条日志（含 2 条 access-blocked 记录）并更新 heartbeat-state |
 | Pipeline 4（文档治理+理论评审） | 已完成 | 本周完成 W09 评审 |
 | Pipeline 5（媒体选题） | 待确认 | 以 heartbeat-state / 当日队列为准 |
