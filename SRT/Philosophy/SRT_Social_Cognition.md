@@ -250,6 +250,17 @@ Affordance emerges at the **intersection** of environmental structure and embodi
 - 采用“多 LoT 并存”立场：不同认知子系统/物种可能具不同语法与原子集，避免把单一人类成人语法外推为本体论唯一底层。
 - 与连接主义关系采取实现层区分：神经网络可作为实现机制，但若缺少稳定的符号角色分离与可组合语法，其可解释性仍不足以替代 LoT 层描述。
 
+**Griffiths（Bayesian Models of Cognition）patch (2026-03-08, Pipeline 1):**
+- 引入“贝叶斯推断作为 \(\hat G_\theta\) 的规范更新层”：在归纳不完备问题中，以
+\[
+P(h\mid d)\propto P(d\mid h)P(h)
+\]
+刻画从先验到后验的选择更新，将 SRT 的选择动力学与可计算归纳规则对齐。
+- 将 **prior** 显式对应为 SRT 的历史/结构偏置（\(L_2\) 协议沉积、任务经验与先天约束），将 **likelihood** 对应为当前证据对候选结构的解释力；两者乘性耦合映射到 \(\Psi_f\)-预算下的可支付推断。
+- 将“结构学习”（因果图、逻辑规则、语法）纳入 SRT 的多层表征学习：在有限样本下，系统通过先验偏置与生成模型联合约束，避免把“学到结构”误写为“纯统计记忆”。
+- 接受资源理性（resource-rational）桥接：行为偏差（如概率匹配、保守更新）可由近似采样/变分策略解释，不等同于系统性非理性；与既有 MCMC patch 保持一致。
+- 与连接主义保持互补分层：Bayesian 模型给出计算层目标，神经网络/连接主义提供算法与实现层近似；二者不是互斥替代关系。
+
 ---
 
 ## 3. Mechanism Derivation: From Hysteresis to Entanglement
