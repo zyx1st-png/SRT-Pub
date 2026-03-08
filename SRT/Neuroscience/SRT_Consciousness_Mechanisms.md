@@ -146,6 +146,22 @@ D_{align}\downarrow \Rightarrow P(\text{report})\downarrow
 \]
 * **Implication（中文）**：意识可报告性依赖“传播方向是否匹配任务”，而非仅依赖总激活强度。
 
+### McFarnell（ACU）Interface（2026-03-08, Pipeline 1）
+
+- 引入“双层意识”接口：
+  - **Level 1**：affective control awareness（持续的调节可行性监测）；
+  - **Level 2**：self-modelling recruitment（在高不确定+高代价+时间压力下临时增强）。
+
+- 将 ACU 的 self-model recruitment intensity（SMRI）映射为 SRT 的门控强度指标：
+\[
+\text{SMRI} \sim H(\pi)\cdot \sigma_V^2\cdot f(T_{constraint})
+\]
+其中策略熵 \(H(\pi)\) 对应候选行动不确定性，\(\sigma_V^2\) 对应价值分歧，\(T_{constraint}\) 对应时限放大。
+
+- 与现有“带宽竞争/点燃阈值”公理对齐：SMRI 上升时，提高对全局整合与自我模型绑定的需求，解释“连续在场感 vs 间歇性强自我感”的分离现象。
+
+- 预测层面补充：在相近任务负载下，**策略冲突×情感代价×时间压力**将比原始计算量更强预测主观费力与自我显著性。
+
 <br>
 
 ---

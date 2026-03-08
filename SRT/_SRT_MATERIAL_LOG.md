@@ -64,6 +64,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-08 | Theory of Mind（Henry M. Wellman，用户重复粘贴） | 理论综述/百科条目（二手） | C | — | 不融入 | 与已融入条目（2026-03-07 Theory of Mind patch）高度重复，增量性未通过 |
 | 2026-03-08 | Information and Misinformation（Andrew Perfors，用户粘贴全文） | 理论综述/百科条目（二手） | A | `SRT/Philosophy/SRT_Social_MacroDynamics.md`（Information–Misinformation Interface） | 已融入 | 新增真假分层处理框架、误信息放大方程、纠偏迟滞机制与极化动力学映射 |
 | 2026-03-08 | https://t.co/Kr2BxCHvMK（重定向至 Quanta: *Can the Most Abstract Math Make the World a Better Place?*） | 科学新闻/二手 | A | `SRT/Physics/SRT_Phys_09_Formalism_Ext.md`（Quanta Abstract-Math Interface） | 已融入 | 新增 green-math 适用窗口、抽象-干预耦合约束、范畴论跨域桥接收益定义 |
+| 2026-03-08 | f48bbacc-297d-4b29-9c84-79bbf858ad99.pdf（Scott McFarnell: *Affective Control under Uncertainty* v2） | 预印本PDF/一手 | A | `SRT/Neuroscience/SRT_Consciousness_Mechanisms.md`（McFarnell ACU Interface） | 已融入 | 新增双层意识接口（基础在场/自我招募）、SMRI 映射与不确定性-时限门控预测 |
 
 ---
 
@@ -76,8 +77,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：38 条
-- A（融入）：33 条
+- 总提交：39 条
+- A（融入）：34 条
 - B（观察）：0 条
 - C（拒绝）：5 条
-- 融入率：86.8%
+- 融入率：87.2%
