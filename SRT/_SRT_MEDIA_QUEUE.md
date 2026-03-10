@@ -284,3 +284,37 @@ dependency: [_SRT_MEDIA_PIPELINE]
 **推荐平台**：Twitter/X / Substack / Medium
 **风险提示**：避免把“本体论主张”写成已验证物理定律，需明确假设层级。
 
+---
+
+## [2026-03-10] 选题 #5 — 大众路线
+
+**候选标题**：为什么“濒死时大脑更清醒”不一定是玄学？
+**切入角度**：从大众最困惑的悖论切入：身体濒危时，为什么有人报告“更真实”的体验。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：今日新增濒死 EEG/递质风暴材料
+- 争议点：要么被简化为“纯幻觉”，要么被神秘化为“超自然”
+- SRT视角：提出“近端触发（缺氧神经风暴）≠ 本体结论”双层框架
+**关联内容**：
+  - 文件：`SRT/Neuroscience/SRT_Clin_01_Pathology.md`（§4.1b Hypoxia-EAAS）
+  - 方程：NDE-like intensity ~ f(γ coherence, ΔNT, Π_intero, d)
+  - 实验钩（若有）：终末 EEG 指标与体验报告相关性检验
+**推荐平台**：知乎 / 微信公众号 / 头条
+**风险提示**：必须避免“临床建议化”与“灵异化”；明确非医疗建议。
+
+---
+
+## [2026-03-10] 选题 #6 — 精英路线
+
+**候选标题**：Category Error as a Scientific Risk: From Controlled Hallucination to Level-Disciplined Neuro-ontology
+**切入角度**：以 Thompson 批判为入口，提出“层级防混淆”是神经科学可证伪性前提，而非语义洁癖。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：今日已融入 PP 批判与 Neuro Axioms 层级约束
+- 争议点：脑内模型与整体现象层是否可直接等同
+- SRT视角：给出 enabling vs identity 的形式区分，减少概念偷换
+**关联内容**：
+  - 文件：`SRT/SRT_PP_ALIGNMENT_GUIDE.md`；`SRT/Neuroscience/_SRT_Neuro_Axioms.md`
+  - 方程：\(\Psi_f^{pred}\approx\) error-signal proxy；Predictive update \(\not\equiv\) perceptual presence
+  - 实验钩（若有）：隔离网络 vs 具身闭环的现象学分离预测
+**推荐平台**：Twitter/X / Substack / Medium
+**风险提示**：避免把哲学批判写成“反神经科学”；强调是方法学护栏。
+
