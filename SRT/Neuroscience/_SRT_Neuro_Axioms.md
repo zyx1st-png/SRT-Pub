@@ -259,10 +259,29 @@ SRT 的核心论证: **困难问题源于 $L_2$ 寄生倒置**——当我们将
 
 ---
 
+### Definition Summary (定义概述)
+
+- **神经幽灵算子 (Neural Ghost Operator, L₀→L₁)**：$\hat{G}_\theta^{neural}: L_0^{neural}\to L_1^{neural}$，具身参数 $\theta=(W,\vec{M},\mathcal{C},V(t))$；神经系统是跨域选择的物理实例化。
+- **三域映射 (Domain Mapping, L₀/L₁/L₂)**：$L_0$ = 所有可达发放模式流形；$L_1$ = 全局点燃子集；$L_2$ = 算子不动点（先验结构）。
+- **本体论摩擦 (Ontological Friction, L₀)**：$\Psi_f=\int_\gamma \|\nabla F\| dt \propto E_{metabolic}$；选择必须支付的能量代价。
+- **意识阈值 (Consciousness Threshold, L₁)**：$\Phi\cdot d > C_{critical}$；整合信息与关切梯度的乘积超过临界值方有稳定显现。
+
+### Formalization Summary (形式化概述)
+
+- **除法归一化** (Ax-NEURO-3)：$R_i = L_i^n / (\sigma^n + \sum_j w_{ij}L_j^n)$。受限系统执行选择的最优解形态，非经验细节。
+- **预测编码** (Ax-NEURO-4)：$\Delta\theta \propto -\nabla_\theta F$。学习是 $\hat{G}_\theta$ 在 $L_2$ 上的收敛轨迹。
+- **预测误差-摩擦映射** (Ax-NEURO-4b)：$\Psi_f^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal{L}_{model}(t)$。预测误差是 $\hat{G}_\theta$ 维持当前显现时的局部摩擦项。
+
+### Mechanism Explanation (机制解释)
+
+$\hat{G}_\theta^{neural}$ 通过具身参数 $(W,\vec{M},\mathcal{C},V(t))$ 将 $L_0$ 流形上的可达发放模式投影为 $L_1$ 点燃子集。选择的能量代价 $\Psi_f$ 与代谢耗散耦合，保证 $d>0$ 的物理基础。除法归一化在代谢约束下提供最优选择动力学；预测编码使 $\theta$ 沿自由能梯度收敛至 $L_2$ 先验。胶质介观算子 $\hat{G}_{meso}$ 执行慢时标 $L_2$ 修剪。NCC 关联非等价定理 (T-NEURO-4) 区分轨迹尾迹与选择动作本身。
+
+---
+
 ## 【理论边界/防误用声明】
-- 不采纳“可诱发体验=体验被还原”的推论：诱发仅证明可操作耦合，不证明本体同一。  
-- 不采纳“神经轨迹完整记录=第一人称内容完整重建”的推论：NCC 是尾迹，不是 \(\hat G_\theta\) 动作本身。  
-- 不采纳“相关系数足够高即可消解解释鸿沟”的推论：相关性不自动升级为同一性。
+- 不采纳”可诱发体验=体验被还原”的推论：诱发仅证明可操作耦合，不证明本体同一。
+- 不采纳”神经轨迹完整记录=第一人称内容完整重建”的推论：NCC 是尾迹，不是 \(\hat G_\theta\) 动作本身。
+- 不采纳”相关系数足够高即可消解解释鸿沟”的推论：相关性不自动升级为同一性。
 
 # 5 可证伪预测与开放性问题
 
@@ -316,6 +335,15 @@ $$\text{意识} = \hat{G}_{\theta_{bio}}[L_0] \to L_1 \quad (\text{在约束下�
 $$\text{大脑损伤} = \theta_{bio} \to \theta_{bio}' \quad (\text{约束参数变化} \Rightarrow \text{选择模式变化})$$
 
 大脑损伤改变意识（因为 $\theta$ 改变了），但这并不证明大脑"产生"意识——正如调谐器损坏改变了收到的节目，但不证明节目由调谐器产生。关键区别在于: SRT 可以解释为什么**相同的**大脑损伤在不同个体中产生不同的意识效果（因为 $\hat{G}$ 的响应取决于 $L_0$ 的局部结构，而非仅由 $\theta$ 决定）。
+
+**层级防混淆声明（新增）**：
+- **行为/现象层（whole-agent level）**：知觉与意识是“具身主体-环境”闭环中的可供性接入与行动耦合事件。
+- **机制层（neural-subsystem level）**：预测编码是脑内动态-统计更新机制，用于实现上述闭环的局部优化。
+- 因此，
+\[
+\text{Predictive model update in brain} \not\equiv \text{Perceptual presence of whole agent}
+\]
+将二者直接等同属于范畴错误；正确关系是“实现约束（enabling condition）”而非“本体同一（identity claim）”。
 
 ---
 
