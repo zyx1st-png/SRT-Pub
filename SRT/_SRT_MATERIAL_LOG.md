@@ -70,6 +70,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-10 | IAI: *Reality is not a controlled hallucination*（https://iai.tv/articles/reality-is-not-a-controlled-hallucination-auid-3517）+ 用户结构化摘要 | 哲学评论/二手（含原文引句） | A | `SRT/SRT_PP_ALIGNMENT_GUIDE.md`（§3 常见误读）+ `SRT/Neuroscience/_SRT_Neuro_Axioms.md`（§6 层级防混淆声明） | 已融入 | 强化 Category Error 防线：预测误差=现实约束代理（\(\Psi_f^{pred}\)），非“现实=幻觉”的本体论跳跃 |
 | 2026-03-10 | Hartl & Levin (2024): *What does evolution make? Learning in living lineages and machines*（用户摘要 + PDF） | 综述论文/一手PDF | A | `SRT/Neuroscience/SRT_Neuro_07_Evo_Devo.md`（Ax-BIO-2b + 防误用边界）+ `SRT/Core_Law/SRT_Reference_Scaling.md`（§1.3 演化-学习对称性） | 已融入 | 明确“基因组=生成模型先验、发育=生理计算在线推断”，并加入 competence≠care 边界 |
 | 2026-03-10 | Optimally Irrational: *The game theory of cooperation*（https://www.optimallyirrational.com/p/the-game-theory-of-cooperation） | 理论科普/二手 | A | `SRT/Philosophy/SRT_Social_Economics.md`（§6.2b Folk-Theorem Interface） | 已融入 | 补充“未来阴影+条件制裁”合作窗口、\(\tilde\delta\) 阈值与可证伪条件 |
+| 2026-03-10 | Closer To Truth 访谈转录（Borjigin 团队：濒死期 EEG/递质风暴，用户粘贴） | 访谈转录/二手 | A | `SRT/Neuroscience/SRT_Clin_01_Pathology.md`（§4.1b Hypoxia-EAAS Interface） | 已融入 | 增补“缺氧触发-本体解释分离”框架：EAAS 作为近端神经机制，不等同“仅幻觉副产物” |
 
 ---
 
@@ -82,8 +83,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：44 条
-- A（融入）：39 条
+- 总提交：45 条
+- A（融入）：40 条
 - B（观察）：0 条
 - C（拒绝）：5 条
-- 融入率：88.6%
+- 融入率：88.9%

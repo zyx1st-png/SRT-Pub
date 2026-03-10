@@ -432,6 +432,37 @@ $$\lim_{C_{phys} \to 0} d_{eff} \to \infty$$
 
 SRT 解答：大脑是**约束器**而非**产生器**。约束减少 = 访问增加。
 
+### 4.1b 濒死过程神经风暴接口（Hypoxia-EAAS Interface）
+> Source：Jimo Borjigin 访谈转录（二手材料，含其 2013/2015 PNAS 动物实验与 ICU EEG 线索）。
+
+**定义（Definition）**
+- 将濒死期可重复观察到的“高同步γ活动 + 多递质突增”建模为临终紧急警报系统（EAAS, emergency alert response）：
+\[
+\text{EAAS}_{dying} = \mathcal{R}_{hypoxia}(\gamma_{sync},\Delta NT)
+\]
+其中 \(\Delta NT\) 包含 5-HT/NE/DA/GABA/adenosine 的极端偏移。
+
+**形式化（Formalization）**
+\[
+\text{NDE-like intensity}\sim f\big(\gamma_{coherence},\Delta NT,\Pi_{intero},d\big)
+\]
+并区分“近端触发”与“本体层解释”：
+\[
+\text{hypoxia} = \text{proximal trigger},\quad
+\hat G\text{ 的解约束访问} = \text{ontological interpretation}
+\]
+即：缺氧可触发神经动力学窗口，但不自动推出“体验仅是幻觉副产物”。
+
+**机制解释（Mechanism）**
+- 访谈材料指向：在心搏/呼吸终止窗口，出现跨脑区高相干 γ、NE/DA/5-HT 快速上升及 GABA/腺苷强抑制并存。
+- SRT 兼容解释：EAAS 先压制高耗能自愿功能（GABA/腺苷），同时提升全局警戒与价值显著性（NE/DA/5-HT），形成“超真实 + 时间压缩/边界变化”的体验前置条件。
+- 这提供了“为何濒死体验可高度结构化”的神经入口，但不消解体验语义层。
+
+**可证伪条件（Falsification）**
+1. 若在严格可比的濒死模型中，γ 高相干与多递质突增不能稳定复现，则 EAAS 假说被削弱。
+2. 若在人类终末 EEG 中，NDE 报告强度与上述指标长期无关，则“神经风暴接口”解释力下降。
+3. 若仅复制神经化学组合（无真实生理危机）即可稳定再现同等结构化 NDE 叙事，则 SRT 的“具身危机门控”需要下修。
+
 ## 4.2 调谐器模型
 
 $$\text{Brain} = \text{Tuner}(L_0 \to L_1)$$
@@ -683,8 +714,32 @@ $$\text{Crease} = {\tau : |\nabla_\tau \theta| \to \infty}$$
 
 ---
 
+### Definition Summary (定义概述)
+
+- **Operator Drift (算子漂移, L₁→L₂)**: 病理状态定义为 $\hat{G}_\theta$ 参数 $\theta$ 在正反馈下偏离正常运行区间的递归过程（Ax-PATH-1），当回路增益 $g > 1$ 时触发指数放大。
+- **L₂ Parasitic Inversion (L₂ 寄生倒置, L₂)**: $L_2$ 硬度相对 $d$ 值过强时，先验叙事反向吞噬 $L_0$ 新选择，产生强迫、固着或妄想回路（Ax-PATH-2）。
+- **Structural d-Collapse (结构性 d 崩塌, L₁)**: 白质通道（UF）完整性下降导致情感信号在物理层衰减至零，与功能性 $d$ 崩塌机制正交（Ax-PATH-6）。
+- **Rigid vs. Collapsed Reality (僵化 vs. 崩溃现实, L₀→L₁)**: 两种极端病理——$\text{Var}(\hat{G}_\theta) \to 0$（选择锁死）与 $\partial\Omega_{select} \to \varnothing$（选择膜崩溃）分别对应过度确定化与未过滤噪声淹没。
+
+### Formalization Summary (形式化概述)
+
+核心方程与含义：
+
+1. **算子-基质递归** (Ax-PATH-1): $\Delta\theta_{t+1} = g\,\Delta\theta_t$。当 $g > 1$，参数偏移指数放大，病理自我强化。
+2. **L₂ 寄生化判据** (Ax-PATH-2): $\kappa \equiv \text{Hardness}(L_2)/d \uparrow \Rightarrow \hat{G}_\theta$ 锁入 $L_2$-loops。先验硬度与 $d$ 值之比决定寄生化阈值。
+3. **结构性情感通道切断** (Ax-PATH-6): $\text{FA}_{UF}\downarrow \Rightarrow d_{affective} \to 0$。钩束各向异性分数下降直接压缩情感 $d$ 值至零。
+4. **L₂ 旁路疗愈** (T-PATH-3): $\text{Healing} = \hat{G}_\theta[L_0^{trauma} \to L_1^{symbol}] \xrightarrow{\text{Action}} L_1^{resolved} \Rightarrow \Delta\Psi_f\downarrow$。疗愈绕过 $L_2$ 认知重构，直接降低本体论摩擦。
+
+### Mechanism Explanation (机制解释)
+
+- **算子漂移正反馈环**: $\hat{G}_\theta$ 的输出改变基质参数 $\theta$，改变后的 $\theta$ 反过来偏置 $\hat{G}_\theta$ 的下一轮选择。当增益 $g > 1$，此递归形成正反馈，使系统远离健康吸引子——这是所有功能性病理的共享动力学。
+- **双通路 d 崩塌机制**: 功能性路径中 $d$ 经由 $\theta$ 漂移逐渐收缩（抑郁、解离）；结构性路径中 $d$ 因 UF 白质退化在物理层被截断（精神病态）。两者行为表征相似但干预靶点正交：前者响应 $\theta$ 级干预，后者存在通道级地板效应。
+- **$\Psi_f$ 作为疗愈终极指标**: 认知重构（$L_2$ 内操作）不改变本体论摩擦；真正的疗愈要求 $\hat{G}_\theta$ 绕过 DMN/$L_2$，将 $L_0$ 创伤材料坍缩为 $L_1$ 可操作对象，从而使 $\Psi_f$ 物理下降。
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
