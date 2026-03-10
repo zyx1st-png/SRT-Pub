@@ -73,6 +73,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-10 | Closer To Truth 访谈转录（Borjigin 团队：濒死期 EEG/递质风暴，用户粘贴） | 访谈转录/二手 | A | `SRT/Neuroscience/SRT_Clin_01_Pathology.md`（§4.1b Hypoxia-EAAS Interface） | 已融入 | 增补“缺氧触发-本体解释分离”框架：EAAS 作为近端神经机制，不等同“仅幻觉副产物” |
 | 2026-03-10 | Alex O’Connor × Matthew Cobb 脑科学史访谈转录（用户粘贴） | 访谈转录/二手 | A | `SRT/Neuroscience/_SRT_Neuro_Axioms.md`（§1.3 历史-隐喻约束） | 已融入 | 强化“技术隐喻依赖 + 定位-分布并存 + 病理推断限度”，防止将当代计算隐喻直接本体化 |
 | 2026-03-10 | Closer To Truth 访谈转录（Avshalom Elitzur 团队：量子本体与可检验基础模型，用户粘贴） | 访谈转录/二手 | A | `SRT/Physics/SRT_Phys_10_Integration.md`（§1.3.7 量子本体-经典约束错配） | 已融入 | 新增“反经典投射”方法论与 ontology→formalism→experiment 闭环，强调以可区分实验排序解释 |
+| 2026-03-10 | 中微子观测叙事文本（SNOLAB / Super-K / IceCube，用户粘贴） | 科普叙事/二手 | A | `SRT/Physics/SRT_Physics_Cosmology.md`（T-Cosmo-4 Neutrino Messenger Window） | 已融入 | 增补中微子“深地低本底 + 弱相互作用穿透”观测窗口、SNR机制与可证伪条件 |
 
 ---
 
@@ -85,8 +86,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：47 条
-- A（融入）：42 条
+- 总提交：48 条
+- A（融入）：43 条
 - B（观察）：0 条
 - C（拒绝）：5 条
-- 融入率：89.4%
+- 融入率：89.6%

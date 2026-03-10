@@ -343,6 +343,36 @@ $$ d_{cosmic} \propto \frac{1}{\sqrt{\Lambda}} $$
 
 > **Anti-Panpsychism Note**: $d_{cosmic}$ 度量的是宇宙维持信息共识的拓扑相干带宽——即 $\hat{G}_{cosmic}$ 能够维持时空统一性的物理范围——不携带任何形式的意识或情感内容。暗物质作为 $L_2$ 结构残骸（T-Cosmo-2），其内部不存在活跃的 $\hat{G}$ 操作，活跃 d 值为绝对零。意识是 d 值在满足三个必要条件（$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$）的高复杂度生物系统中的高阶涌现。详见 SRT-CORE-13B §6.2 和 SRT-CORE-14 Def-d-Scale-1。
 
+### T-Cosmo-4: Neutrino Messenger Window (中微子信使窗口)
+> Source: 用户提交长文本（SNOLAB / Super-K / IceCube 叙事，二手转录，含已知实验事实线索）。
+
+**定义（Definition）**
+- 中微子观测是对“电磁不可见区”的低耦合穿透采样，可视作对 $L_2^{astro}$ 的补充成像通道：
+$$
+\mathcal{O}_{universe}=\mathcal{O}_{EM}\cup\mathcal{O}_{\nu},\quad \mathcal{O}_{\nu}\cap\mathcal{O}_{EM}\neq \varnothing
+$$
+- 直觉上：光子给出“表面可见结构”，中微子给出“高遮蔽源区/致密环境”的内部动力学线索。
+
+**形式化（Formalization）**
+- 事件读出可写为：
+$$
+N_{det} \sim \int \Phi_\nu(E,\Omega,t)\,\sigma_{int}(E)\,\epsilon_{det}(E,\Omega,t)\,dE\,d\Omega\,dt
+$$
+其中深地/深冰布局通过降低背景噪声项 $B$ 提升信噪比：
+$$
+\text{SNR}_{\nu}\propto \frac{N_{det}}{\sqrt{B_{cosmic}+B_{radio}+B_{inst}}},\quad B\downarrow\text{ with depth/shielding}
+$$
+
+**机制解释（Mechanism）**
+- 中微子与物质弱相互作用，导致“极难探测”与“强穿透”并存；
+- 因此需要超低本底环境（矿井、山体、极地深冰）与超大体积介质（水/冰）来累积稀有碰撞闪烁；
+- 在 SRT 里，这对应以更低干扰代价从 $L_0^{astro}$ 提取新的 $L_1$ 证据切片，再并入 $L_2$ 共识（如振荡参数、源关联、瞬变预警）。
+
+**可证伪条件（Falsification）**
+1. 若在控制本底后，深地/深冰系统对高遮蔽源并未提供任何超越电磁观测的统计增益，则“信使窗口增量”命题被削弱。
+2. 若跨台站（如水/冰体系）对同类瞬变源的方向与能谱重建长期不一致且不可归因于系统误差，则该接口需重构。
+3. 若中微子振荡与质量态转换相关信号在高精度实验中被系统否定，则本节关于“可变身份信使”的叙述失效。
+
 ---
 
 ## VIII. Assembly Theory Integration (装配理论整合)
