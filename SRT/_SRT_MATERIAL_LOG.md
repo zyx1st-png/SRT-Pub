@@ -71,6 +71,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-10 | Hartl & Levin (2024): *What does evolution make? Learning in living lineages and machines*（用户摘要 + PDF） | 综述论文/一手PDF | A | `SRT/Neuroscience/SRT_Neuro_07_Evo_Devo.md`（Ax-BIO-2b + 防误用边界）+ `SRT/Core_Law/SRT_Reference_Scaling.md`（§1.3 演化-学习对称性） | 已融入 | 明确“基因组=生成模型先验、发育=生理计算在线推断”，并加入 competence≠care 边界 |
 | 2026-03-10 | Optimally Irrational: *The game theory of cooperation*（https://www.optimallyirrational.com/p/the-game-theory-of-cooperation） | 理论科普/二手 | A | `SRT/Philosophy/SRT_Social_Economics.md`（§6.2b Folk-Theorem Interface） | 已融入 | 补充“未来阴影+条件制裁”合作窗口、\(\tilde\delta\) 阈值与可证伪条件 |
 | 2026-03-10 | Closer To Truth 访谈转录（Borjigin 团队：濒死期 EEG/递质风暴，用户粘贴） | 访谈转录/二手 | A | `SRT/Neuroscience/SRT_Clin_01_Pathology.md`（§4.1b Hypoxia-EAAS Interface） | 已融入 | 增补“缺氧触发-本体解释分离”框架：EAAS 作为近端神经机制，不等同“仅幻觉副产物” |
+| 2026-03-10 | Alex O’Connor × Matthew Cobb 脑科学史访谈转录（用户粘贴） | 访谈转录/二手 | A | `SRT/Neuroscience/_SRT_Neuro_Axioms.md`（§1.3 历史-隐喻约束） | 已融入 | 强化“技术隐喻依赖 + 定位-分布并存 + 病理推断限度”，防止将当代计算隐喻直接本体化 |
 
 ---
 
@@ -83,8 +84,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：45 条
-- A（融入）：40 条
+- 总提交：46 条
+- A（融入）：41 条
 - B（观察）：0 条
 - C（拒绝）：5 条
-- 融入率：88.9%
+- 融入率：89.1%
