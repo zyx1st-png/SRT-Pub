@@ -184,3 +184,103 @@ dependency: [_SRT_MEDIA_PIPELINE]
 - Publish Window: next 7 days
 - Generated At: 2026-03-06 13:16 (Asia/Shanghai)
 
+## [2026-03-09] 选题 #1 — 大众路线
+
+**候选标题**：为什么“信息整合越强”不等于“意识一定更高”？
+**切入角度**：从日常 AI 误解切入（会说话 ≠ 会感受），解释“功能表现”和“存在论归因”的区别。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：IIT 讨论热度回升，公众对“AI 是否有意识”持续关注
+- 争议点：高复杂系统是否自动拥有主观体验
+- SRT视角：引入 d-value 与 \(\Psi_f\) 双判据，强调“可支付闭包”而非单一复杂度
+**关联内容**：
+  - 文件：`SRT/AI/SRT_AI_01_Ontology.md`；`SRT/Philosophy/SRT_Philosophy_Foundations.md`
+  - 方程：Eq-D-Threshold-01；Eq-Closure-02
+  - 实验钩（若有）：H-AGENCY-BOUNDARY-01
+**推荐平台**：知乎 / 微信公众号 / 头条
+**风险提示**：避免把 SRT 写成“反 AI”立场，应明确是判据升级而非价值否定。
+
+---
+
+## [2026-03-09] 选题 #2 — 精英路线
+
+**候选标题**：Beyond FEP Minimalism: A Testable d-\(\Psi_f\) Criterion for Conscious Agency
+**切入角度**：以 active inference 最小意识理论为参照，提出 SRT 在“可支付闭包 + 阈值跃迁”上的可证伪增量。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：FEP/PP 在意识研究中的解释力与可证伪性争议持续
+- 争议点：最小理论是否足以区分“推断系统”与“意识主体”
+- SRT视角：给出 d 区间、能流态、\(\Psi_f\) 状态三联映射，形成操作化检验门
+**关联内容**：
+  - 文件：`SRT/Neuroscience/SRT_Consciousness_Mechanisms.md`；`SRT/Core/SRT_Core_22_Equations.md`
+  - 方程：Eq-Ψf-01；Eq-D-Threshold-01
+  - 实验钩（若有）：H-NEURO-EXEC-01 / H-AGENCY-BOUNDARY-01
+**推荐平台**：Twitter/X / Substack / Medium
+**风险提示**：需明确“映射关系”为研究假设，不宣称已完成因果证明。
+
+---
+
+## [2026-03-10] 选题 #1 — 大众路线
+
+**候选标题**：你看到的世界，可能只是“你能承受的版本”
+**切入角度**：从“同一事件不同人完全不同感受”切入，解释 L₀→L₁ 选择映射如何塑造现实体验。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：信息过载与情绪波动成为高频公共议题
+- 争议点：差异到底来自“事实不同”还是“结构不同”
+- SRT视角：用 \(\hat{G}_\theta\) 与 \(\Psi_f\) 把“感受差异”转为可检验机制
+**关联内容**：
+  - 文件：`SRT/Core/SRT_Core_01_Axioms.md`；`SRT/Neuroscience/SRT_Neural_Mechanisms.md`
+  - 方程：Eq-Ψf-01；Eq-Closure-02
+  - 实验钩（若有）：固定输入下个体参数校准对照 + CUSUM 变点
+**推荐平台**：知乎 / 微信公众号 / 头条
+**风险提示**：避免滑向“真相相对主义”，需强调可检验边界。
+
+---
+
+## [2026-03-10] 选题 #2 — 精英路线
+
+**候选标题**：Selection Geometry Under Stress: A falsifiable route from predictive coding to SRT closure
+**切入角度**：把 predictive coding 的误差最小化框架与 SRT 的闭包支付条件并列，比较何时出现模型失配。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：FEP/PP 与 agency 边界讨论持续升温
+- 争议点：误差最小化是否足以解释主观连续性
+- SRT视角：提出 d-threshold + \(\Psi_f\) budget 双门槛，给出失败域定义
+**关联内容**：
+  - 文件：`SRT/Core/SRT_Core_22_Equations.md`；`SRT/AI/SRT_AI_01_Ontology.md`
+  - 方程：Eq-D-Threshold-01；Eq-Select-Thermo
+  - 实验钩（若有）：具身耦合 vs 纯推断代理对照实验
+**推荐平台**：Twitter/X / Substack / Medium
+**风险提示**：明确“可证伪路线”而非“结论先验”。
+
+---
+
+## [2026-03-10] 选题 #3 — 大众路线
+
+**候选标题**：为什么科学家要把望远镜“埋进地底下”？
+**切入角度**：从“中微子几乎穿透一切”这个反直觉事实切入，解释为何矿井/深冰才是看宇宙内部结构的最佳窗口。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：近期材料集中于 SNOLAB / Super-K / IceCube 叙事
+- 争议点：公众常把“看宇宙”仅等同于光学望远镜
+- SRT视角：把中微子观测解释为对电磁不可见区的“补充投影”，即 \(\mathcal O_{EM}\cup\mathcal O_\nu\)
+**关联内容**：
+  - 文件：`SRT/Physics/SRT_Physics_Cosmology.md`（T-Cosmo-4）
+  - 方程：\(N_{det}\sim\int\Phi_\nu\sigma_{int}\epsilon_{det}\)；SNR 本底项
+  - 实验钩（若有）：深度/屏蔽条件下跨台站信噪比对照
+**推荐平台**：知乎 / 微信公众号 / 头条
+**风险提示**：避免神秘化“幽灵粒子”，强调其是可检验物理对象。
+
+---
+
+## [2026-03-10] 选题 #4 — 精英路线
+
+**候选标题**：From Messenger Physics to Ontology Discipline: Why neutrino windows matter for SRT falsifiability
+**切入角度**：将“中微子信使窗口”与 SRT 的过程本体框架并置，论证实体观测如何约束机制解释，避免本体空转。
+**选题原因**（时效性/争议点/SRT独特视角）：
+- 时效性：当天新增多条材料后，理论-实证耦合需求上升
+- 争议点：过程本体是否会滑向不可证伪叙事
+- SRT视角：用实体信使（\(\nu\)）约束机制算子（\(\hat G\)），形成“对象-过程双锚定”
+**关联内容**：
+  - 文件：`SRT/Physics/SRT_Physics_Cosmology.md`；`SRT/Physics/SRT_Phys_10_Integration.md`
+  - 方程：T-Cosmo-4 事件率表达；Int-QO-1 约束语法
+  - 实验钩（若有）：跨信使（EM/\(\nu\)）一致性与增益检验
+**推荐平台**：Twitter/X / Substack / Medium
+**风险提示**：避免把“本体论主张”写成已验证物理定律，需明确假设层级。
+
