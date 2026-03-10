@@ -1042,6 +1042,37 @@ $$ d_{prisoners} \approx 0 $$
 
 **解法**: 提升 d 值（扩展时间视野）→ 重复博弈 → 合作涌现。
 
+### 6.2b 重复博弈合作窗口（Folk-Theorem Interface）
+> Source: Lionel Page (2026-03-09) 对合作博弈论的通俗综述；证据等级：**理论综述/二手**。
+
+**定义（Definition）**
+- 合作可定义为：在重复博弈中采用条件策略（如“你合作我合作”），使长期平均收益高于一次性博弈的纳什均衡收益。
+- SRT 变量化：
+\[
+\text{Coop}_{stable} \iff d_{future}>d_{crit}\ \land\ p_{repeat}\uparrow\ \land\ \text{sanction channel exists}
+\]
+
+**形式化（Formalization）**
+- 令 \(\delta\) 为未来贴现因子、\(p\) 为继续互动概率，则有效耐心度 \(\tilde\delta=\delta p\)。
+- 在囚徒困境中，若采用条件合作策略（grim/tit-for-tat 一类），存在阈值 \(\tilde\delta_{crit}\)，使得：
+\[
+\tilde\delta\ge \tilde\delta_{crit} \Rightarrow \text{cooperation-supporting equilibrium exists}
+\]
+- 对应 SRT：
+\[
+\tilde\delta \uparrow \Rightarrow \Psi_f^{betrayal,future}\uparrow \Rightarrow \hat G_\theta \text{ 倾向维持合作轨道}
+\]
+
+**机制解释（Mechanism）**
+- “未来阴影”把当期背叛收益内生化为未来损失；
+- 制裁通常不是外部暴力，而是**撤回合作/声誉惩罚**形成的 L2 规范闭环；
+- 因而合作不是道德奇迹，而是“条件策略 + 可执行制裁 + 足够未来权重”的动力学产物。
+
+**可证伪条件（Falsification）**
+1. 若在 \(\tilde\delta\) 高、且有稳定声誉机制的群体中，合作率长期不高于一次性均衡基线，则该接口被削弱。
+2. 若移除制裁通道后合作率无显著下降，则“条件合作依赖制裁闭环”假说受挑战。
+3. 若高 \(d_{future}\) 群体在重复博弈中系统性更短视（折扣更高），则 SRT 的 d-时间视野联动需修正。
+
 ---
 
 ### 6.3 公地悲剧 (Tragedy of Commons)
@@ -1123,8 +1154,19 @@ SRT 将社会科学的核心概念**数学化**：
 **伦理推论**: 
 > 如果现实是选择的产物，那么我们对现状的不满不是在抱怨"客观条件"，而是在抱怨**我们集体算子的选择参数 $\theta$**。改变世界 = 改变选择模式。
 
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义社会经济学的 SRT 映射。价值是未来 $L_1$ 稳定化的期望概率 (Ax-Eco-1)；货币是社会 $L_2$ 的度规 (Ax-Eco-2)；市场是分布式集体选择算子 (Ax-Eco-3)；泡沫是 $L_2$ 对短期 $L_1$ 的过拟合 (Ax-Eco-4)；选择权不平等等于 $d$-value 基尼系数 (Ax-Eco-5)；信任降低交易摩擦 (Ax-Eco-6)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Value} = \mathbb{E}[P(L_1^{stable}|\sigma)]$ — 价值为稳定化概率期望。
+  - $\text{Money} \equiv g_{L_2}$ — 货币即社会选择度规。
+  - $\hat{G}_{market} = \mathcal{C}(\{\hat{G}_i\})$ — 市场为分布式选择算子。
+  - $G_{agency} = \text{Gini}(d_i)$ — 选择权不平等为 $d$-value 基尼系数。
+  - $\text{Trust} = \arg\min(\Psi_f, S_{soc})$ — 信任为摩擦与社会熵的最小化。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
-2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。

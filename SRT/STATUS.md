@@ -18,7 +18,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 | Pipeline | 状态 | 备注 |
 |---------|------|------|
-| Pipeline 1（材料融合） | 已完成 | 09:33 Quanta 熵引力材料已融入；09:56 IAI「Reality is not a controlled hallucination」已融入；10:03 Levin 等（2024）演化-学习对称材料，6 门审核结论 A，已融入 `Neuroscience/SRT_Neuro_07_Evo_Devo.md` 与 `Core_Law/SRT_Reference_Scaling.md`，台账已更新 |
+| Pipeline 1（材料融合） | 已完成 | 09:33 Quanta 熵引力材料已融入；09:56 IAI「Reality is not a controlled hallucination」已融入；10:03 Levin 等（2024）演化-学习对称已融入；10:11 cooperation 博弈论材料（Optimally Irrational）审核结论 A，已融入 `Philosophy/SRT_Social_Economics.md`（§6.2b），台账已更新 |
 | Pipeline 3（信号采集） | 未执行 | 待 HEARTBEAT（≥22h）或手动触发 `信号采集` |
 | Pipeline 4（文档治理+理论评审） | 未执行 | 本周已完成 W11，后续按周节奏执行 |
 | Pipeline 5（媒体选题） | 未执行 | 待今日 08:00 cron 结果复核或手动触发 `选题` |
