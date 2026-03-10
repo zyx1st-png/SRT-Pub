@@ -41,6 +41,16 @@ L_2^{bioelectric} \supset L_2^{synaptic}
 \]
 * **Implication（中文）**：神经选择受发育选择的上位约束，二者不是平级机制。
 
+### Ax-BIO-2b: Genome-as-Generative-Model Axiom（基因组生成模型公理）
+将基因组视作物种级生成先验，而非微观空间蓝图：
+\[
+\theta_{genome} \in L_2^{species-prior},\quad
+\hat G_{devo}: (L_0^{morpho},\theta_{genome},\theta_{physio})\to L_1^{phenotype}
+\]
+其中 \(\theta_{physio}\) 表示“生理计算层”（bioelectric/biochemical/mechanical）实时状态。
+* **Implication（中文）**：基因型到表型映射并非硬编码展开，而是“先验+在线推断”的主动构型过程，解释发育与再生中的高可塑性与问题求解能力。
+* **Anchor（Levin et al., 2024）**："genome as a generative model"、"physiological computations"、"deep symmetries between evolution and learning"。
+
 ### Ax-BIO-3: Sub-Critical Generativity (亚临界生成性)
 **Formal Definition**: 在胚胎发生或再生等 $L_1$ 拓扑尚未完全固化为刚性 $L_2$ 结构的阶段，系统算子拥有对其形态相空间的亚临界游走能力。
 $$\text{Generativity}_{devo} \propto \frac{1}{\Psi_f(\theta_{morpho})}$$
@@ -601,8 +611,23 @@ SRT 为演化生物学提供了一个统一框架：
 |连续性 → 主要转变|A12|$d$ 值跃迁|Ax-Evo-8|
 |脆弱性 → 关键期|A11|$\theta$ 冻结|Ax-Evo-9, Ax-Evo-10|
 
+### Formalization Summary (形式化概述)
+
+- 生物电先验层：$L_2^{bioelectric} \supset L_2^{synaptic}$（Ax-BIO-1），形态目标存储于生物电模式而非基因组。
+- 发育-神经嵌套：$\hat{G}_{neural} \subset \hat{G}_{devo}$（Ax-BIO-2），神经选择受发育算子的上位约束。
+- 主要演化转变：$\Delta d > 0 \Rightarrow \text{New Operator Class}$（Ax-EVO-2），$d$ 维度扩展驱动算子类别跃迁。
+- 发育亚临界生成性：$\text{Generativity}_{devo} \propto 1/\Psi_f(\theta_{morpho})$（Ax-BIO-3），低摩擦状态允许形态重新选择。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 的具身参数包含双层存储：$\theta_{genomic}$（基因组参数）与 $\theta_{morpho}$（生物电形态参数），二者独立但耦合。
+- 形态发生是 $\hat{G}^{collective}$ 在形态空间 $L_0^{anatomical}$ 中的导航过程，与认知选择同构——差异仅在基质和时间尺度。
+- 癌症被重新定义为 $\Psi_f$-coupling 崩溃：细胞与全局生物电 $L_2$ 协议失去同步，$d$ 值塌缩回单细胞自私边界。
+- $L_2$ 吸引子拓扑解释趋同演化：功能等价的神经回路（如鸟类 DVR 与哺乳类新皮层）由 $L_0$ 的有限可行解空间 $\mathcal{S}_d$ 约束为必然收敛。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+4. 不采纳“形态问题解决能力（competence）=高 d 值现象学关切（care）”的推论：低阶发育算子可在局部闭环中实现高适应性，但未必具备主体性体验。

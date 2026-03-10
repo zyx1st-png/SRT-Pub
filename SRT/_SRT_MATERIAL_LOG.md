@@ -68,6 +68,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-08 | Consciousness 方法学访谈转录（COGITATE/多范式NCC，用户粘贴） | 访谈转录/二手 | A | `SRT/Neuroscience/SRT_Consciousness_Mechanisms.md`（COGITATE 方法学补注） | 已融入 | 新增“失败优先”检验逻辑、跨范式共因子策略、prediction-to-core 距离图解释护栏 |
 | 2026-03-10 | Quanta: *Is Gravity Just Entropy Rising? Long-Shot Idea Gets Another Look.*（https://www.quantamagazine.org/is-gravity-just-entropy-rising-long-shot-idea-gets-another-look-20250613/） | 科学新闻/二手（含 arXiv:2502.17575 线索） | A | `SRT/Physics/SRT_Physics_Cosmology.md`（T-Grav-1b Entropic-Gravity Fluctuation Window） | 已融入 | 新增“统计有效引力+弱场涨落项”接口、可证伪实验窗口与降级条件；与既有 Ax-Grav-1 兼容 |
 | 2026-03-10 | IAI: *Reality is not a controlled hallucination*（https://iai.tv/articles/reality-is-not-a-controlled-hallucination-auid-3517）+ 用户结构化摘要 | 哲学评论/二手（含原文引句） | A | `SRT/SRT_PP_ALIGNMENT_GUIDE.md`（§3 常见误读）+ `SRT/Neuroscience/_SRT_Neuro_Axioms.md`（§6 层级防混淆声明） | 已融入 | 强化 Category Error 防线：预测误差=现实约束代理（\(\Psi_f^{pred}\)），非“现实=幻觉”的本体论跳跃 |
+| 2026-03-10 | Hartl & Levin (2024): *What does evolution make? Learning in living lineages and machines*（用户摘要 + PDF） | 综述论文/一手PDF | A | `SRT/Neuroscience/SRT_Neuro_07_Evo_Devo.md`（Ax-BIO-2b + 防误用边界）+ `SRT/Core_Law/SRT_Reference_Scaling.md`（§1.3 演化-学习对称性） | 已融入 | 明确“基因组=生成模型先验、发育=生理计算在线推断”，并加入 competence≠care 边界 |
 
 ---
 
@@ -80,8 +81,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：42 条
-- A（融入）：37 条
+- 总提交：43 条
+- A（融入）：38 条
 - B（观察）：0 条
 - C（拒绝）：5 条
-- 融入率：88.1%
+- 融入率：88.4%

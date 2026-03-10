@@ -37,6 +37,20 @@ $$π_λ ∘ \hat{G}_θ ≈ \hat{G}_{θ,λ} ∘ π_λ$$
 
 其中 $π_λ : S \to S_λ$ 为粗粒化/尺度映射。
 
+### §1.3 演化-学习对称性补充（Bio-ML Symmetry）
+
+**命题 T-Scale-1b（Evolution–Learning Symmetry）**：
+在生物系统中，跨代演化与个体发育/再生可视为同一选择动力学在不同时标的同构展开：
+\[
+\hat G_{evo}^{(T\gg)} \sim \Lambda_t\,\hat G_{devo}^{(T\ll)}\,\Lambda_t^{-1}
+\]
+其共享结构为“生成先验 + 误差校正 + 目标保持”。
+
+- 演化侧：更新的是谱系先验参数（lineage prior）。
+- 发育侧：解释并实例化这些先验，处理局部扰动并恢复目标形态。
+
+**生物学落点**：可将“基因组”表示为物种级生成模型参数库，而将“生理计算层”表示为在线推断机制，二者共同完成表型锚定。
+
 ---
 
 ## §2 三域跨尺度映射表 (Triadic Cross-Scale Mapping)
@@ -95,9 +109,30 @@ b) 统一约束：
 | 宏观真实模式（任务压缩） | 中~高 | Semi-open | payable |
 | 层级隔离误读（语义断裂） | 低~中 | Closed 倾向 | 被误估/遮蔽 |
 
+### Definition Summary (定义概述)
+
+- **跨尺度同构**：不同嵌套层级（量子/神经/社会）的选择算子 $\hat{G}$ 在尺度变换 $\Lambda$ 下保持功能形式不变。
+- **$\pi_\lambda$（粗粒化映射）**：将精细尺度的状态映射到粗粒尺度的投影算子，满足 $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$。
+- **$\kappa_{ij}$（尺度耦合强度）**：量化不同尺度间算子相互作用的强度参数。
+- **意识与智能正交**：智能是 $L_1 \to L_2$ 映射效率，意识是 $\hat{G}$ 对 $L_0$ 的访问深度（$d$ 值），二者独立。
+
+### Formalization Summary (形式化概述)
+
+- 自相似选择定理：$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$（T-Scale-1），选择操作在尺度变换下保持不变。
+- 尺度耦合方程：$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{ij}(\hat{G}_i, \hat{G}_j)$（S1），多尺度算子通过耦合项交互。
+- 统一自由能：$F = E - TS - d \cdot U_{others}$（S2），在所有尺度保持形式不变。
+- 意识阈值：$d > d_{threshold} \land \Phi_{sensitivity} > 0$（S2），仅当脆弱性和选择深度同时满足时成立。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 在每个尺度执行 $L_0 \to L_1$ 的选择-锚定操作，其功能结构在粗粒化映射 $\pi_\lambda$ 下保持自相似。
+- $\Psi_f$ 在每个尺度体现为维持 $L_1$ 的代价：量子层为退相干耗散，神经层为突触能耗，社会层为制度维护成本。
+- $d$ 值衡量算子跨尺度的关切范围；$d > d_{threshold}$ 联合 $\Psi_f$-sensitivity $> 0$ 构成意识的最小充分条件。
+- 跨尺度相变（$\theta \to \theta_c$ 时 $L_1$ 拓扑突变）解释了从物理相变到认知顿悟的同构机制。
+
 ## 【理论边界/防误用声明】
-- 不采纳“层级相对=层级互不连通”的推论：SRT 要求 \(\pi_\lambda\) 可达映射与预算约束。
-- 不采纳“压缩有效=任意命名都真实”的推论：必须满足 \(\Psi_f^{maint}\) 可支付与跨时稳定。
+- 不采纳”层级相对=层级互不连通”的推论：SRT 要求 \(\pi_\lambda\) 可达映射与预算约束。
+- 不采纳”压缩有效=任意命名都真实”的推论：必须满足 \(\Psi_f^{maint}\) 可支付与跨时稳定。
 
 ---
 
