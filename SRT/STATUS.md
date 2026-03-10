@@ -10,19 +10,21 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 > **会话入口**：每次 SRT 工作会话开始前先读此文件（30 秒上手）。
 > **更新规则**：每次工作会话结束时由 agent 更新本文件。
-> **最后更新**：2026-03-08
+> **最后更新**：2026-03-10
 
 ---
 
-## 今日执行状态（2026-03-08）
+## 今日执行状态（2026-03-10）
 
 | Pipeline | 状态 | 备注 |
 |---------|------|------|
-| Pipeline 1（材料融合） | 已完成 | 23:48 收到 consciousness 方法学访谈转录；6 门审核结论 A，已融入 `SRT/Neuroscience/SRT_Consciousness_Mechanisms.md`，台账已更新 |
-| Pipeline 3（信号采集） | 已完成 | 12:41 已执行 Scholar/Reddit/X 采集；新增 3 条日志（含 2 条 access-blocked 记录）并更新 heartbeat-state |
-| Pipeline 4（文档治理+理论评审） | 已完成 | 本周完成 W09 评审 |
-| Pipeline 5（媒体选题） | 待确认 | 以 heartbeat-state / 当日队列为准 |
-| Pipeline 6（每日内审） | 待确认 | 以 heartbeat-state 为准 |
+| Pipeline 1（材料融合） | 已完成 | 09:33 收到 Quanta 熵引力材料 URL；6 门审核结论 A，已融入 `SRT/Physics/SRT_Physics_Cosmology.md`（T-Grav-1b），台账已更新 |
+| Pipeline 3（信号采集） | 未执行 | 待 HEARTBEAT（≥22h）或手动触发 `信号采集` |
+| Pipeline 4（文档治理+理论评审） | 未执行 | 本周已完成 W11，后续按周节奏执行 |
+| Pipeline 5（媒体选题） | 未执行 | 待今日 08:00 cron 结果复核或手动触发 `选题` |
+| Pipeline 6（每日内审） | 未执行 | 待 HEARTBEAT（≥22h）或手动触发 `内审` |
+
+补充：Pipeline 2（论文候选）当前周号仍为 **2026-W11**。
 
 ---
 

@@ -66,6 +66,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-08 | https://t.co/Kr2BxCHvMK（重定向至 Quanta: *Can the Most Abstract Math Make the World a Better Place?*） | 科学新闻/二手 | A | `SRT/Physics/SRT_Phys_09_Formalism_Ext.md`（Quanta Abstract-Math Interface） | 已融入 | 新增 green-math 适用窗口、抽象-干预耦合约束、范畴论跨域桥接收益定义 |
 | 2026-03-08 | f48bbacc-297d-4b29-9c84-79bbf858ad99.pdf（Scott McFarnell: *Affective Control under Uncertainty* v2） | 预印本PDF/一手 | A | `SRT/Neuroscience/SRT_Consciousness_Mechanisms.md`（McFarnell ACU Interface） | 已融入 | 新增双层意识接口（基础在场/自我招募）、SMRI 映射与不确定性-时限门控预测 |
 | 2026-03-08 | Consciousness 方法学访谈转录（COGITATE/多范式NCC，用户粘贴） | 访谈转录/二手 | A | `SRT/Neuroscience/SRT_Consciousness_Mechanisms.md`（COGITATE 方法学补注） | 已融入 | 新增“失败优先”检验逻辑、跨范式共因子策略、prediction-to-core 距离图解释护栏 |
+| 2026-03-10 | Quanta: *Is Gravity Just Entropy Rising? Long-Shot Idea Gets Another Look.*（https://www.quantamagazine.org/is-gravity-just-entropy-rising-long-shot-idea-gets-another-look-20250613/） | 科学新闻/二手（含 arXiv:2502.17575 线索） | A | `SRT/Physics/SRT_Physics_Cosmology.md`（T-Grav-1b Entropic-Gravity Fluctuation Window） | 已融入 | 新增“统计有效引力+弱场涨落项”接口、可证伪实验窗口与降级条件；与既有 Ax-Grav-1 兼容 |
 
 ---
 
@@ -78,8 +79,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：40 条
-- A（融入）：35 条
+- 总提交：41 条
+- A（融入）：36 条
 - B（观察）：0 条
 - C（拒绝）：5 条
-- 融入率：87.5%
+- 融入率：87.8%

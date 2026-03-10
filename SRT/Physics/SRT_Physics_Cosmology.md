@@ -256,6 +256,29 @@ $$ \lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing $$
 引力是全息屏上信息密度梯度产生的熵力：
 $$ F_g = T \nabla S $$
 
+### T-Grav-1b [T1.6.1b]: Entropic-Gravity Fluctuation Window (熵引力涨落窗口)
+> Source: Quanta (2025-06-13) 对 Carney et al. (arXiv:2502.17575) 的综述；证据等级：**二手报道+一手预印本线索**。
+
+**定义（Definition）**
+- 若引力是由微观自由度（如 qubit/热浴）统计涌现的宏观平均力，则牛顿势不是“本体基本力”，而是**统计有效律**。
+- 对应 SRT：
+$$ F_{grav}^{obs}=\mathbb{E}[F_{micro}] + \xi(t),\quad \mathbb{E}[\xi]=0 $$
+其中 $\xi(t)$ 是弱场极限可观测的统计涨落项。
+
+**形式化（Formalization）**
+- 在熵驱动框架中，宏观力写作
+$$ F_{grav}^{obs}=T\nabla S_{eff}(r)+\xi(t),\quad \mathrm{Var}[\xi]\sim \frac{1}{N_{eff}(r)} $$
+- 当有效自由度 $N_{eff}$ 足够大时回到经典牛顿极限；在超弱场或高灵敏量子实验中，$\xi$ 可能偏离零并留下可检信号。
+
+**机制解释（Mechanism）**
+- 质量对象局域改变微观自由度取向/容量分布，系统为提升总熵倾向于压缩“低熵有序区”，表现为宏观相互靠近。
+- 该机制不否认 GR 的有效性，而是把 GR/牛顿律视作粗粒化后的一阶近似；关键增量在于：**预测统计噪声尾迹**，而非只复述平均力。
+
+**可证伪条件（Falsification）**
+1. 若在 entropic-gravity 设定所要求的参数窗口内，精密实验未检测到与 $\xi$ 相容的弱场涨落统计特征，则本接口被削弱。
+2. 若量子大质量叠加实验持续排除“自发塌缩/附加随机项”类效应到更严格上限，则该类熵引力微观机制空间收缩。
+3. 若未来统一理论在不引入额外统计自由度时即可同时解释弱场与强场全部现象，则本接口降级为启发性类比。
+
 ### Ax-Grav-2 [A1.6.2]: Spacetime as Error-Correcting Code (时空作为纠错码)
 时空几何（$L_2$）是保护逻辑量子比特（$L_1$）免受 $L_0$ 噪声的量子纠错码：
 $$ \text{Geometry} \cong \text{CodeSpace}(\text{QEC}) $$
