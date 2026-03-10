@@ -128,6 +128,40 @@ $$ \hat{G}_\theta^{trigger} = \begin{cases}
 \text{延迟叠加} & \text{if } \mathcal{F}_{ont} < \mathcal{F}_c \text{ 且 } d < d_{min}
 \end{cases} $$
 
+### 1.3.7 量子本体-经典约束错配问题（新增）
+
+> 来源：Closer To Truth 访谈转录（Avshalom Elitzur 团队语境，用户粘贴，二手材料）
+
+**问题陈述**：
+量子基础研究在“解释数目”上持续发散（interpretations 增长）而非收敛，核心原因之一是：
+
+\[
+\text{Classical Intuition Constraints} \;\; \text{Quantum Ontology Candidate Space}
+\]
+
+即我们常将经典时空直觉（单向时间、局域事件序、宏观因果语法）过度投射到波函数本体层，导致模型表达受限。
+
+**SRT 对齐命题（Int-QO-1）**：
+- 量子层（$L_0^{quant}$）允许与经典层（$L_1^{class}$）不同的约束语法；
+- 经典世界是选择后锚定的有效现实，不应反向充当量子本体的先验边界。
+
+形式上：
+\[
+\mathcal{C}_{quant} \neq \mathcal{C}_{class},\quad
+L_1^{class}=\hat G_\theta[L_0^{quant}]\ \text{(anchored slice)}
+\]
+
+**方法论增量（Experiment-first Loop）**：
+本节采纳“高风险本体假设 + 严格数学化 + 可区分实验预测”的闭环，而非仅停留在解释学竞争：
+\[
+\text{Ontology Hypothesis} \to \text{Formal Model} \to \text{Discriminating Experiment} \to \text{Model Revision}
+\]
+
+**边界声明**：
+- 不因“反经典直觉”自动判真；
+- 不因“可讲述”自动判优；
+- 仅以可复现实验区分度（discriminating power）作为解释优先级排序依据。
+
 ---
 
 ## 1.4 信息现实论的统摄与超越："It from Bit"的本体论修正
