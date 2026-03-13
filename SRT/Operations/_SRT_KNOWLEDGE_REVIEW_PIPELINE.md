@@ -47,7 +47,7 @@ dependency: [SRT-OPERATIONS-README]
 - `Physics/`（排除 Split/Annex、CompactCore 文件）
 - `Philosophy/`（排除 Split/Annex、CompactCore 文件）
 - `Neuroscience/`（排除 CompactCore 文件）
-- `Spirituality/`（排除 Split/Annex、CompactCore 文件）
+- `Spirituality/`（排除 Split/Annex、Praxis_Split、CompactCore 文件）
 - `AI/`（排除 Split/Annex、CompactCore 文件）
 
 **排除**：
