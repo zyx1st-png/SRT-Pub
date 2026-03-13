@@ -38,6 +38,7 @@ THEORY_DIRS = [
 # 排除规则
 EXCLUDE_SUFFIXES = ["_CompactCore.md"]
 EXCLUDE_DIR_PARTS = {"Split", "Annex", "Praxis_Split", "Operations", "Governance", "Glossary", ".venv", ".obsidian"}
+EXCLUDE_DIR_SUFFIXES = ("_Split", "_Annex")
 EXCLUDE_FILENAME_PATTERNS = [
     r".*Bridge\.md$",
     r".*_REGISTRY\.md$",
@@ -70,6 +71,8 @@ def should_exclude(path: Path) -> bool:
     # 排除目录组件
     for part in path.parts:
         if part in EXCLUDE_DIR_PARTS:
+            return True
+        if part.endswith(EXCLUDE_DIR_SUFFIXES):
             return True
     # 排除文件名模式
     for pat in EXCLUDE_FILENAME_PATTERNS:
