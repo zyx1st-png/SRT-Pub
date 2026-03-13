@@ -40,12 +40,18 @@ $$\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0} \quad \implies \quad \kappa_{sy
 
 ---
 
-### Ax-FIELD-2: Nested-Operator Axiom
-当场耦合产生跨区同步时形成嵌套算子：
+### T-FIELD-2: Nested-Operator Theorem
+*（神经机制命题，可由跨区同步破坏实验验证）*
+
+当注意力场同步产生跨区耦合时，多个局部 $\hat{G}_{micro}$ 整合为全脑嵌套算子：
+
 \[
-\hat{G}_{macro}=\mathcal{C}_{field}\circ \hat{G}_{micro}
+\hat{G}_{macro} = \mathcal{C}_{field} \circ \hat{G}_{micro}
 \]
-* **Implication（中文）**：场效应提供多尺度算子叠加，使 \(L_0\to L_1\) 的选择具备全脑一致性。
+
+$\mathcal{C}_{field}$（注意力场同步算子）：将各局部选择算子统一校准至全局最小自由能目标的共识方向，如同为所有 $\hat{G}_{micro}$ 配发基于同一目标函数的指南针——各算子保留局部操作自由，但选择方向获得全脑一致性。
+
+**d-value 与全局最优的连接**：d-value 的宽度代表选择路径的数量。场耦合使 $\hat{G}_{macro}$ 的 d-value 显著宽于任何单个 $\hat{G}_{micro}$——可探索的选择路径增多，从而提高抵达全局最小自由能配置的概率。反之，场耦合失败时（解离、麻醉深度增加），d-value 碎裂为多个互不整合的局部算子，各自陷入局部最优势井，全脑一致性丧失。
 
 ---
 
@@ -385,10 +391,24 @@ SRT 场论为意识研究提供了一个新的范式：
 |脆弱性 → 拓扑保护|A11|复杂性与脆弱性正相关|Ax-Field-8|
 |连续性 → 分布式网络|A12|选择的载体可分布|Ax-Field-10|
 
+### Formalization Summary (形式化概述)
+
+- 电场耦合动力学：$\dot{\sigma} = F(\sigma,\theta) + \alpha\,\nabla \mathcal{E}(x,t)$（Ax-FIELD-1），电场梯度作为 $\hat{G}_\theta$ 的额外耦合通道。
+- 嵌套算子合成：$\hat{G}_{macro} = \mathcal{C}_{field} \circ \hat{G}_{micro}$（Ax-FIELD-2），场效应使微观算子组合为宏观统一算子。
+- 场相干-绑定阈值：$\Gamma > \Gamma_c \Rightarrow \Delta\phi_i \to 0$（T-FIELD-1），场相干度超过临界值时绑定稳定。
+- 共振组编码：$\sigma(t) = \sum_i a_i\phi_i e^{\lambda_i t}$（Ax-QUALIA-1），感质由系统本征模态的谱结构决定。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 通过双重网络执行选择：突触网络 $\mathcal{N}_{synaptic}$ 传递离散内容，互噬触网络 $\mathcal{N}_{ephaptic}$ 通过电磁场提供全局相位锁定（绑定）。
+- 场耦合是维持复合算子拓扑完整性的物理"胶水"：关闭 $\mathcal{N}_{ephaptic}$ 会使 $\hat{G}_{brain}$ 碎片化为局部微算子，$L_1$ 统一性崩溃。
+- $\Psi_f$ 在场论语境中体现为维持全局场相干的能量代价；场相干破坏（$\Gamma \downarrow$）直接抬高 $L_1$ 碎裂概率。
+- $d$ 值通过场的全脑相干范围间接调制：致幻剂扩大场相干范围导致 $d$ 急剧上升，麻醉破坏场相干导致 $\hat{G}_\theta$ 冻结。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
 
 ## 9. 预印本证据补注（2026-03-06）
