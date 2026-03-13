@@ -148,12 +148,12 @@ $$ \text{Love}(A, B) \iff L_0^A \cup L_0^B \to L_0^{Unified} $$
 ## 1. The Standard Hard Problem: The Physical Dilemma of Free Will
 
 ### 1.1 The Core Dilemma
-Within the classical physicalist framework, humans face a devastating dilemma:
+Within a classical physicalist framework that treats brain-level $L_2$ closure as exhausting the whole of selection, humans face a devastating dilemma:
 
-1.  **Determinism**: If the brain is a physical system and physical laws ($L_2$) are causally closed, then every neural spike is determined by the prior state. So-called "choice" is merely dominoes falling—there is no genuine "freedom."
-2.  **Randomness**: If we introduce quantum uncertainty, behavior becomes "random." Random dice rolls are no freer than determinism and cannot ground moral responsibility.
+1.  **Determinism**: If the brain is a physical system and physical laws ($L_2$) are causally closed in a way that fully exhausts agency, then every neural spike is determined by the prior state. So-called "choice" is merely dominoes falling—there is no genuine "freedom."
+2.  **Randomness**: If we introduce quantum uncertainty without any trans-level selector, behavior becomes "random." Random dice rolls are no freer than determinism and cannot ground moral responsibility.
 
-**Conclusion**: Within existing physics, **Free Will** and **Moral Agency** appear to be logically impossible illusions.
+**Conclusion**: Under any framework where brain-level $L_2$ dynamics are assumed to fully exhaust selection, **Free Will** and **Moral Agency** appear to collapse into either determined mechanism or noise.
 
 ### 1.2 Existing Solution Spectrum
 1.  **Compatibilism**: Redefine "freedom" as action aligned with one's desires (even if those desires are determined).
