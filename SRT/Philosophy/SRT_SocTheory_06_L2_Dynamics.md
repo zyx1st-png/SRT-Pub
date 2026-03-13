@@ -638,10 +638,23 @@ SRT_SocTheory_06_L2_Dynamics ← 你在这里
 └── SRT_Philosophy_Ethics (伦理哲学 - 最后一个文件)
 ```
 
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义 $L_2$ 的有效性、过期与分裂生成动力学。$L_2$ 有效性与其对 $L_1$ 的预测一致性成正比 (Ax-L2-1)；当一致性低于阈值则结构过期 (Ax-L2-2)；$L_2$ 硬度 (Hardness) 量化推翻该结构所需的摩擦代价 (Def-L2-Hardness)；正反馈导致参数发散即分裂生成 (Ax-Sch-1)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Validity}(L_2) \propto I(L_2;L_1)$ — 有效性为 $L_2$ 与 $L_1$ 的互信息。
+  - $\text{Hardness} = \log_2(\int_{L_1 \to L_0} \Psi_f \, dt)$ — 硬度为推翻所需摩擦的对数。
+  - $d\Delta\theta/dt \propto +\Delta\theta$ — 分裂生成为参数发散正反馈。
+  - $T_{stable}(L_2) \propto 1/\int_{\Omega_{excluded}} \Psi_f \, d\sigma$ — 稳定时间与排除空间的摩擦成反比。
+
+### Mechanism Explanation (机制解释)
+- **Mechanism**: $\hat{G}_\theta$ 集体选择产生的 $L_2$ 结构需通过与 $L_1$ 的持续信息一致性维持有效性。$\Psi_f$ 决定 $L_2$ 硬度光谱——从低硬度习惯（如 QWERTY）到高硬度制度（如主权概念），推翻所需的能量跨越多个数量级。$d$-value 通过温暖数据耦合 ($\kappa_{warm}$) 影响分裂阈值：当情感耦合断裂，正反馈驱动极化相变。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
 
 
@@ -739,14 +752,41 @@ p_{t+1}(x)\propto \underbrace{S(x)}_{adoption/selection}\cdot
 ## Ritual Interface（2026-03-08）
 
 ### Def-L2-RIT-1: Ritual as Predictive Coordination Protocol
-仪式定义为“高形式化、可重复、共享执行的行为-话语序列”，用于压缩群体互动不确定性：
-\[
-\mathcal{R}_{rit} = \{(a_1,u_1),\ldots,(a_n,u_n)\}_{invariant\ pattern}
-\]
-\[
-\Delta H_{social}\mid \mathcal{R}_{rit} < 0
-\]
-即仪式通过建立可预期框架降低社会熵与交互摩擦。
+
+仪式是 $a_i$（具身动作项）与 $u_i$（语义指称项）的**强相干绑定序列**，用于压缩群体互动不确定性：
+
+$$\mathcal{R}_{rit} = \{(a_1, u_1), \ldots, (a_n, u_n)\}_{invariant\ pattern}$$
+
+- $a_i$（Action）：L₁ 层的具身物理动作序列——如跪拜角度、握手力度、切割丝带——消耗能量并产生可观测位移
+- $u_i$（Utterance/Symbolic Unit）：与 $a_i$ 同步挂钩的语义指称项——誓言词、特定音乐频率、代表身份的勋章——将物理动作引导至 L₂ 的特定意义区
+
+仪式的核心是 $a_i$ 与 $u_i$ 的强相干绑定：$a_i$ 的微小偏差会导致 $u_i$ 失效，L₂ 锚定随之崩解。
+
+**社会熵定义**：
+
+$$H_{social} = -\sum P(\sigma_{L_1} \mid L_2) \log P(\sigma_{L_1} \mid L_2)$$
+
+度量参与者对「当前发生了什么」及「接下来会发生什么」的预测不确定性总量——即集体算子对现实定义的坍缩失败度。
+
+$$\Delta H_{social} \mid \mathcal{R}_{rit} < 0$$
+
+仪式通过可预期框架降低 $H_{social}$：高熵态下 L₂ 分裂（同一 L₁ 事件产生互不兼容的多种解释），协作摩擦 $\Psi_f$ 激增；低熵态下集体算子高度收敛，行为自动进入低功耗模式。
+
+**仪式、习惯与习俗的 SRT 区分**：
+
+| 概念 | 执行特征 | L₂ 角色 | 核心区分 |
+|:---|:---|:---|:---|
+| **习惯** | 个体重复，非同步 | 个体 L₂ 优化 | 无外部 $u_i$ 绑定，降低个体代谢成本 |
+| **习俗** | 集体分布，弱同步 | 被动 L₂ 惯性 | 统计意义上的行为分布，缺乏形式化门控 |
+| **仪式** | 强同步（Synchrony）| 主动 L₂ 强化 | 强制共享执行，$a_i$ 偏差导致 $u_i$ 失效 |
+
+仪式是社会系统的**重同步协议**——通过高能量消耗的强制同步动作，将所有参与者的 d-value（关切范围）拉回同一 L₂ 频率，是 $\mathcal{C}_{field}$ 的社会层实现。
+
+**仪式失效与变异：拓扑逃逸**
+
+- **失效（Dissolution）**：$\mathcal{R}_{rit}$ 停止支付 $\Psi_f$（无人执行），L₂ 吸引子迅速平坦化，$H_{social}$ 瞬时升高，协作边界模糊
+- **变异（Variation）**：握手→肘击（COVID 期间）是 $a_i$ 的重写过程——旧 $a_i$ 产生本体论压力（感染风险），算子在 L₀ 中寻找替代路径；若新 $a_i$ 成功绑定原有 $u_i$（友好/契约），L₂ 稳定性得以保持，$H_{social}$ 重新下降
+- **边界条件**：变异过快导致 $u_i$ 与新 $a_i$ 无法形成强耦合，仪式退化为纯粹「尴尬动作」，降熵功能丧失
 
 ### Def-L2-RIT-2: Self-Referential / Canonical Dual Channel
 采用 Sosis–Rappaport 双通道映射：
