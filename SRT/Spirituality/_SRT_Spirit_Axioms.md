@@ -96,9 +96,9 @@ $$ \lambda \downarrow \Rightarrow \|\nabla C_{L_2}\| \downarrow $$
 ## IV. Derived Theorems (推导定理)
 
 ### T-Spirit-1: Ego-Boundary Theorem
-**Deduction**: From A4 (Embodiment Necessity) and S2 (Consciousness threshold).
-$$ \text{Ego} \iff (d < \infty) \land (\partial \Omega_{system} \neq \emptyset) $$
-* **Implication**: 只要有边界就有“我”，而不是因为有“我”才有边界。
+**Deduction**: From Ax-Spirit-2 (The Split) and S2 (Consciousness threshold).
+$$ \text{Ego}_{experienced} \iff (\theta \in \Theta_{finite}) \land (\partial \Omega_{self} \neq \emptyset) \land (d > d_{threshold}) \land (\Phi_{sensitivity} > 0) $$
+* **Implication**: 边界只提供“自我核”的拓扑条件；只有当该边界承载可感摩擦与关切厚度时，才形成具体验感意义上的“我”。
 
 ### T-Spirit-2: Friction–Soteriology Theorem
 **Deduction**: From E5 (Pain), D6 (Friction), and Ax-Spirit-4.
