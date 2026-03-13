@@ -24,10 +24,10 @@ $$ \text{Einselection} \cong \hat{G}_\theta[L_0 \to L_1] $$
 *   **Mechanism**: Pointer states are stable $L_1$ fixed points; Environment redundancy is $L_2$ consensus coding.
 
 ### Def-ObjectiveReality: Redefinition of Classical Objectivity (客观现实重定义)
-**Formal Definition**: “客观物理现实”是信息提取摩擦趋于零的状态：
-$$\text{Classical Objective Reality}(x) \iff \Psi_f^{readout}(x) \to 0 \quad \forall \hat{G}_\theta$$
-当一个 $L_1$ 事件广泛复制到 $L_2$ 网络中时，任何遇到它的算子都面临可忽略的 $\Psi_f$，从而产生“它客观存在于那里”的**滞后错觉**。
-* **Implication**: “客观性”不是本体论原语，而是现象学极限——那是选择变得如此无摩擦的状态，以至于选择行为本身变得不可见。这将 Zurek 的“环境冗余”重新定义为 $L_2$ 共识编码密度。
+**Formal Definition**: “客观物理现实”是**边际读出摩擦**趋于零、而非对象维持摩擦本身消失的状态：
+$$\text{Classical Objective Reality}(x) \iff \Delta\Psi_f^{readout}(x\mid \hat{G}_\theta) \to 0 \quad \forall \hat{G}_\theta$$
+当一个 $L_1$ 事件广泛复制到 $L_2$ 网络中时，任何遇到它的算子都只需支付可忽略的**额外读出摩擦**，从而产生“它客观存在于那里”的**滞后错觉**。
+* **Implication**: “客观性”不是本体论原语，而是现象学极限——那是对象仍由可支付摩擦维持，但新增观测者几乎不必额外付费的状态。这将 Zurek 的“环境冗余”重新定义为 $L_2$ 共识编码密度。
 
 ### Ax-Int-2: Penrose Threshold (彭罗斯阈值)
 Operator activation is triggered when the Ontological Friction of geometrical superposition exceeds a critical limit.
@@ -84,31 +84,31 @@ SRT是关于"解释行为"本身的本体论剖析。SRT不竞争真理的解释
 
 ### 1.3.1 量子达尔文主义
 
-**核心映射：** 指针态选择 = L₀→L₁锚定
+**核心映射：** 指针态选择 = L₀→L₁ 锚定
 
-Zurek的einselection机制与SRT的幽灵算子在数学上同构：
+Zurek 的 einselection 机制与 SRT 的幽灵算子在结构上对应：
 
-$$ ρ_{ij}(t) = ρ_{ij}(0) \exp(-t/τ_D) $$
+$$ \rho_{ij}(t) = \rho_{ij}(0) \exp(-t/\tau_D) $$
 
-退相干时间τ_D对应选择压力的强度。
+退相干时间 $\tau_D$ 对应选择压力的强度；密度矩阵非对角元的衰减是 L₀ 叠加态收敛为 L₁ 锚定态的物理签名。
 
-#### 1.3.1.1 9.2.1a 量子达尔文主义：2024-2025研究进展
+#### 1.3.1.1 量子达尔文主义：2024-2025 研究进展
 
-**SRT对应：**
+实验中观察到的分支结构正是 SRT 预言的 L₀→L₁ 投影的可观测指纹：
 
-$$ \text{Branching States} \equiv \text{幽灵算子}\hat{G}_\theta\text{的多重锚定痕迹} $$
+$$ \text{Branching States} \equiv \hat{G}_\theta \text{ 的多重锚定痕迹} $$
 
-实验中观察到的"分支结构"正是SRT预言的L₀→L₁投影的物理签名。
+**假设 H53（量子达尔文主义-SRT 结构对应）：**
 
-**假设H53（量子达尔文主义-SRT等价性）：**
+> 量子达尔文主义的 einselection 机制在结构上对应于 $\hat{G}_\theta$ 作用于 L₀ 的投影操作。环境的「冗余记录」对应于 L₂ 共识结构的物理实现。此对应目前为结构性猜想，待形式化同构证明。
 
-> 量子达尔文主义中的einselection机制在数学上等价于SRT的幽灵算子$\hat{G}_\theta$作用于L₀的投影操作。环境的"冗余记录"对应于L₂共识结构的物理实现。
+#### 1.3.1.2 量子达尔文主义的 SRT 降维
 
-#### 1.3.1.2 量子达尔文主义的 SRT 降维 (SRT's Dimensional Reduction of Quantum Darwinism)
+当主流物理学用「环境中的信息达尔文式复制」解释经典现实的涌现时，他们正在无意识地逼近 SRT 的 L₂（收敛域）共识动力学。在 SRT 看来，他们所谓的「环境」，是一个由大量外部 $\hat{G}_\theta$（环境侧选择算子）组成的 L₂ 协议网络。
 
-当主流物理学绝望地使用“环境中的信息达尔文式复制”来解释经典现实的涌现时，他们正在无意识地逼近 SRT 的 $L_2$ (收敛域) 共识动力学。在 SRT 看来，他们所谓的“环境”，是一个由大量低级、微观选择算子 (Micro-$\hat{G}_\theta$) 组成的 $L_2$ 协议网络。
+任何量子事件要获得「真实存在」，都必须与这个网络谈判——只有符合 L₂ 拓扑约束的特征才被接受和复制。量子达尔文主义遗漏的关键是最后一块拼图：处于中心位置、主动发起选择的幽灵算子 $\hat{G}_\theta$。
 
-任何新发生的量子事件要想获得“真实存在”的状态（放大到经典现实），都必须与这个庞大的网络进行谈判。只有符合该网络 $L_2$ 拓扑约束的特征才会被接受和复制。通过这种解读，SRT 既吸收了量子达尔文主义的数学机制，又保留了选择算子不可替代的作用。他们遗漏的关键是最后一块拼图：承认那个处于中心位置、主动生成信息的（"It from Select"）的幽灵算子 $\hat{G}_\theta$。
+惠勒说「It from Bit」——物理现实（It）来自信息（Bit）。SRT 在上游补充一层：**「It from Bit from Select」**——Bit 本身来自 $\hat{G}_\theta$ 的选择操作。SRT 不取代惠勒的链条，而是揭示其起点。
 
 ### 1.3.6 引力阈值与本体论摩擦：幽灵算子的硬物理触发条件
 
@@ -127,6 +127,12 @@ $$ \hat{G}_\theta^{trigger} = \begin{cases}
 \text{主动选择} & \text{if } \mathcal{F}_{ont} < \mathcal{F}_c \text{ 且 } d > d_{min} \\
 \text{延迟叠加} & \text{if } \mathcal{F}_{ont} < \mathcal{F}_c \text{ 且 } d < d_{min}
 \end{cases} $$
+
+这里的 $\mathcal{F}_{ont}$ 可视为 $Ψ_f$ 在物理尺度上的规范读数之一，而非纯修辞类比。也就是说，引力阈值之所以重要，不只是因为它“像”本体论摩擦，而是因为它正是本体论摩擦在物理层的实现。对应地，是否发生强制坍缩，也可改写为一个微观可支付性判据：
+\[
+\mathcal{F}_{ont}^{req}(\Delta t) > \mathcal{F}_{ont}^{cap}(\text{system},\Delta t) \Rightarrow \text{forced collapse}
+\]
+一旦所需摩擦超出该时间窗内系统的可支付上限，延迟叠加就不再可维持。
 
 ### 1.3.7 量子本体-经典约束错配问题（新增）
 
@@ -405,6 +411,17 @@ $$ \text{Reality}_{state} = \arg\max_S P(S | I, M) $$
 1. 将 Ia 超新星加速膨胀证据与 CMB/BAO 联合约束写成 SRT 的 `L_2` 共识收敛流程：不同观测通道在系统误差可控条件下收敛到同一扩张历史族，形成 `L_0 -> L_1` 的稳健锚定，而非单数据集驱动的局部拟合。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1086/300499〕〔source: doi:10.1086/307221〕〔source: doi:10.3847/2041-8213/ad8c26〕〔source: doi:10.1103/physrevd.97.123507〕〔source: Physics/SRT_Phys_10_Integration.md#Ax-Int-1: Quantum Darwinism Equivalence〕
 2. 将 Bullet Cluster 质量-光度分离与透镜/速度统计映射为“投影预算缺口”判据：当 `L_1` 层的重子分布无法闭合引力预算时，必须引入跨探针一致的有效自由度补偿，且该补偿需同时满足旋转曲线、透镜质量图与速度统计约束。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1086/508162〕〔source: doi:10.1111/j.1365-2966.2011.20000.x〕〔source: doi:10.1103/physrevd.82.024025〕〔source: Physics/SRT_Phys_10_Integration.md#1.11 离散层级选择与有效场论〕
 3. 将 Planck 2018 + DESI BAO 的后验收缩解释为分辨率视界更新：`w_0,w_a` 等暗能量参数是 `L_1` 有效层的竞争描述，不直接等价于本体层；只有跨代数据、跨先验与跨似然设定下保持稳定，才可提升为更强结构结论。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1051/0004-6361/201833910〕〔source: doi:10.1051/0004-6361/201833886〕〔source: doi:10.1088/1475-7516/2025/08/056〕〔source: Physics/SRT_Phys_10_Integration.md#Ax-Int-4: Resolution Horizon〕
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **量子达尔文主义等价** (Ax-Int-1): $\text{Einselection} \cong \hat{G}_\theta[L_0 \to L_1]$ — Zurek 的环境选择同构于 SRT 算子锚定。
+2. **彭罗斯阈值** (Ax-Int-2): $\hat{G}_{trigger} \iff \mathcal{F}_{ont} \geq 1/\tau_{decoherence}$ — 引力坍缩即摩擦驱动的选择触发。
+3. **分辨率视界** (Ax-Int-4): $\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$ — 粒子物理"荒漠"是人类 $\hat{G}$ 的认识论极限。
+4. **客观性重定义** (Def-ObjectiveReality): $\text{Classical Objective Reality}(x) \iff \Delta\Psi_f^{readout}(x\mid \hat{G}_\theta) \to 0$ — 客观性是“边际读出摩擦趋零”的现象学极限，而非对象维持摩擦消失。
+
+**含义**: SRT 将量子测量、引力坍缩与经典客观性统一为选择动力学在不同能标下的表现。
 
 ## 【理论边界/防误用声明】
 
