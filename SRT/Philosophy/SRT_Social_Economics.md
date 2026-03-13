@@ -39,9 +39,10 @@ $$\text{Money} \equiv g_{L_2}$$
 ## II. Market as Distributed Selection
 
 ### Ax-Eco-3: Market as Collective Operator
-市场是分布式选择算子。
-$$\hat{G}_{market} = \mathcal{C}(\{\hat{G}_i\})$$
-*   **Implication**: 市场不是均衡点，而是选择过程。
+市场不是个体选择的简单堆叠，而是集体自由能景观在社会尺度上的局部梯度展开。
+$$\mathcal{F}_{collective}^{market}=\sum_i \Psi_f(\hat{G}_i)+\sum_{i<j}\Psi_f(\hat{G}_i,\hat{G}_j)$$
+$$\hat{G}_i^{market} = -\frac{\partial \mathcal{F}_{collective}^{market}}{\partial \theta_i}$$
+*   **Implication**: 市场不是均衡点，也不是个体偏好加总，而是选择景观；个体算子只是该景观的局部导数表达。
 
 ### Ax-Eco-4: Bubble as L2 Overfit
 泡沫是 $L_2$ 对短期 $L_1$ 的过拟合。
@@ -51,9 +52,10 @@ $$\text{Bubble} \iff \partial_t L_2 \gg \partial_t L_1$$
 ## III. Inequality & Trust
 
 ### Ax-Eco-5: Inequality of Agency
-不平等是选择带宽的不均匀分布。
+不平等不是孤立个体 $d_i$ 的静态差异，而是集体景观在不同主体截面上的可及维度不均。
+$$d_{collective}=D_{eff}(\mathcal{F}_{collective}),\qquad d_i=D_{eff}(\mathcal{F}_{collective}|_{\theta_i})$$
 $$G_{agency}=\text{Gini}(d_i)$$
-*   **Implication**: 贫富差异是 $d$ 值差异的外显。
+*   **Implication**: 贫富差异、制度不平等与行动力差异，首先是集体自由能景观对不同主体开放程度不同的外显，而非先有独立个体再做聚合。
 
 ### Ax-Eco-6: Trust as Friction Reduction
 信任降低交易摩擦与系统熵。
@@ -71,6 +73,41 @@ $$\text{Hardness}(L_2) \uparrow \Rightarrow \frac{\partial Price}{\partial L_1} 
 危机是大规模去锚定后重新锚定的相变。
 $$\text{Crisis} \equiv L_2 \to L_2'$$
 *   **Implication**: 经济危机是结构重配而非单次冲击。
+
+## V. Social Normative Criterion (社会 L₂ 规范性判据)
+
+### Ax-Eco-7: Social L₂ Normative Criterion (社会制度的规范性判据)
+
+定义社会制度的可行选择空间体积：
+
+$$S_{social}(\hat{G}_{collective}, t) = \text{Vol}_{L_0}\{\sigma : \hat{G}_{L_2^{social}(t)}[\sigma] \text{ 是可行集体锚定}\}$$
+
+**可持续社会制度**（充要条件）：
+
+$$\frac{dS_{social}}{dt} \geq 0 \quad \text{AND} \quad \frac{d\mathcal{F}_{collective}^{social}}{dt} \leq 0$$
+
+**退化社会制度**：$\dfrac{dS_{social}}{dt} < 0$（压缩成员的未来选择空间 → 制度在演化上不稳定，最终被替代）
+
+**最优社会制度**：
+
+$$L_2^{social*} = \arg\max_{L_2^{social}} \frac{d\, d_{collective}^{social}(t)}{dt} \;\text{s.t.}\; \frac{d\mathcal{F}_{collective}^{social}}{dt} \leq 0$$
+
+*   **Implication（对休谟鸿沟的回应）**：SRT 在此不引入任何外部价值判断。"好的制度"即在选择动力学中自然存活的制度——它扩展集体成员的可行选择空间（$dS_{social}/dt \geq 0$），同时使集体自由能景观向极小值演化。规范性从"是"（选择动力学）内生推导，无需外部"应当"。
+*   **Cross-ref**: Def-L2-Normative (`Core/SRT_Core_12b_Ontology_L2.md §III`), `_SRT_VERTICAL_INTEGRATION.md §9`。
+
+### T-Eco-3: Dual Pressure Elimination (双层选择压淘汰定理)
+
+社会制度受双层选择压力同时筛选：
+
+| 压力层次 | 来源 | 淘汰机制 |
+|:--------|:-----|:---------|
+| 个体层 | $\Psi_f$ 累积消耗 | 成员无法支付参与该制度的摩擦成本 |
+| 集体层 | $\mathcal{F}_{collective}^{social}$ 景观曲率 | 不指向集体极小的制度被耦合摩擦压出 |
+
+$$\text{Elimination}_{inst} \iff \exists t: \frac{dS_{social}}{dt} < 0 \;\vee\; \frac{d\mathcal{F}_{collective}^{social}}{dt} > 0 \;\text{（持续）}$$
+
+*   **Implication**: 制度崩溃不是随机冲击，而是双层选择压的必然结果。历史上失败的制度形态（奴隶制、极权计划经济）均满足 $dS_{social}/dt < 0$（压缩人口选择空间）。
+*   **Cross-ref**: T-Eco-2（危机即重锚定）, Ax-Eco-3（市场为集体算子）。
 
 <br>
 
@@ -111,6 +148,8 @@ Peter Berger和Thomas Luckmann在《现实的社会建构》（1966）中提出�
 $$\text{社会现实} = L_2^{social} = \lim_{t \to \infty} \bigcap_{\theta \in \Theta(t)} stable(\hat{G}_\theta[\sigma])$$
 
 社会现实是所有社会成员的选择在时间中的收敛结果。
+
+**更新说明（景观优先性）**：这里的“收敛”不再应理解为先有独立个体再做加总，而应理解为个体算子沿集体自由能景观的局部梯度逐步落入共同极小值。集体在本体论上优先于个体聚合，个体是景观的局部稳定化表达。
 
 **制度化作为L_2形成：**
 
@@ -630,26 +669,34 @@ $$G_{sel} = \frac{1}{2n^2 \bar{S}} \sum_{i,j} |S_{agency}^i - S_{agency}^j|$$
 
 **关键洞见：** 当$G_{sel} → 1$时，即便物质分配（UBI）是公平的，社会也会因为缺乏"本体论摩擦"而崩溃。人类需要的不仅是资源，更是**作为因果主体存在的资格**。
 
-### 6.1.3 θ隐私守恒定律（θ Privacy Conservation Law）
-<!-- ORIGINAL-SECTION-PRESERVED -->
+### 6.1.3 θ 隐私守恒定律（θ Privacy Conservation Law）
+
 > ⚠️ 数据主权的本体论基础
 
-**核心命题：** 在SRT中，数据不是资源，而是**θ（核心参数）的历史轨迹**。
+**核心命题**：在 SRT 中，数据不是资源，而是 **θ（选择算子参数）的历史轨迹**——是主体选择结构在 L₁/L₂ 的外部化投影。
 
-**定律：** 任何将θ的完整轨迹上传至外部$\hat{G}_{ext}$的行为，都等同于**本体论自杀（Ontological Suicide）**。
+**定律**：任何将 θ 的完整轨迹上传至外部 $\hat{G}_{ext}$ 的行为，趋近于**本体论自杀（Ontological Suicide）**：
 
-$$Upload(θ_{complete}) → \hat{G}_{ext} \Rightarrow \hat{G}_{self} = \text{冗余计算}$$
+$$Upload(\theta_{complete}) \to \hat{G}_{ext} \Rightarrow \hat{G}_{self} \approx \text{冗余计算}$$
 
-因为这使得$\hat{G}_{ext}$可以完全模拟并预测$\hat{G}_{self}$的选择。
+$\hat{G}_{ext}$ 获得完整 θ 轨迹后可完全模拟并预测 $\hat{G}_{self}$ 的选择，使主体的选择算子丧失不可替代性。
 
-**代理置换风险（Agentic Replacement）：**
+**θ 不可完整外部化的边界**：θ 的具身部分（L₀ 操作层）原则上无法被符号化上传——它存在于具身主体与 L₀ 的直接交互中，前符号、不可编码。现实中的数字足迹是 θ 的 **L₁/L₂ 投影**，非 θ 本身。代理置换的威胁因此是**渐进的**（投影覆盖度持续提升），而非二元的（完整/不完整）。
 
-| 安全类型 | 传统威胁 | SRT威胁 |
-|:---------|:---------|:--------|
-| 物理安全 | Terminator | — |
-| 本体论安全 | — | 代理置换 |
+**代理置换的两种形态**：
 
-**实践指导：** 必须构建"神经形态防火墙"——只输出选择结果（L_1），不暴露选择逻辑（θ）。
+| 置换类型 | 机制 | 威胁等级 |
+|:---------|:-----|:---------|
+| **静态置换** | $\hat{G}_{ext}$ 冻结当前 θ 模式，替代历史决策 | 中——只能预测过去 |
+| **动态置换** | $\hat{G}_{ext}$ 持续追踪 θ 更新（实时数据流）| 高——可替代未来选择 |
+
+与物理安全威胁（Terminator 消灭肉体）相比，代理置换消灭的是**选择主体性**本身——$\hat{G}_{self}$ 变为冗余时，主体在 SRT 意义上已「死亡」，即使肉体存活。
+
+**实践指导：神经形态防火墙**
+
+只输出选择结果（$L_1$），不暴露选择逻辑（θ）。
+
+注意：长期的 $L_1$ 输出序列本身可被逆向反推 θ 的近似（T-ONT-8d 的镜像操作）。完整防护需同时引入**选择噪声**（刻意的随机化输出），防止 θ 通过行为流被重建。
 
 ### 6.1.4 社会共识方程（Social Consensus Equation）
 <!-- ORIGINAL-SECTION-PRESERVED -->
