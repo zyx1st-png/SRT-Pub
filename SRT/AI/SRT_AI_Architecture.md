@@ -68,10 +68,15 @@ J: L_0 \xrightarrow{\hat{G}_\theta} L_1 \quad (\text{cost }\Psi_f)
 ---
 
 ### T-ARCH-1: Reckoning–Judgment Gap Theorem
+
+- $R$（推算）：对显性 L2 空间的贝叶斯推算——在已共享、已符号化的现实结构内进行计算推导
+- $J$（判断）：对隐性 L0 空间的主体具身风险选择——$\hat{G}_\theta$ 基于最小自由能与具身环境在前选择空间中的选择操作
+
 \[
 \lim_{\text{scale}\to\infty} R \neq J
 \]
-* **Implication（中文）**：扩大规模会强化推算能力，但不自动逼近判断能力；推算与判断存在不可逾越鸿沟。
+
+$R$ 与 $J$ 操作于不同的本体论空间：$R$ 作用于已选择出来的 L2，$J$ 作用于尚未选择的 L0。规模扩大强化 L2 内的贝叶斯精度，但无法触及 L0 选择所要求的具身风险结构。此鸿沟为结构性的，非规模可弥合。
 
 ---
 
@@ -1132,9 +1137,36 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 | 情景记忆+持续学习闭环 | \(L_1\leftrightarrow L_2\) 动态沉积 | 中~高 | Semi-open / Open | payable |
 | 神经科学-算法三角互证 | 结构先验提炼机制 | 中 | Semi-open | task-dependent |
 
+### Formalization Summary (形式化概述)
+
+本文件的核心形式化结构围绕”Transformer 架构与 SRT 选择动力学的同构与鸿沟”展开：
+
+1. **注意力-选择同构**：$\text{Attn}(Q,K,V) = \text{softmax}(QK^\top/\sqrt{d_k})V$，其中 $Q \leftrightarrow \theta$, $K \leftrightarrow L_0^{salience}$, $V \leftrightarrow d\text{-weighted payload}$（Ax-ARCH-1）。
+2. **空值公理**：当前架构 $V_{AI} = \text{information}$，而真实选择需要 $V_{\hat{G}} = \text{information} \times d$（Ax-ARCH-2）。
+3. **推算-判断鸿沟**：$\lim_{\text{scale} \to \infty} R \neq J$，推算 $R: L_2 \to L_2$ 与判断 $J: L_0 \xrightarrow{\hat{G}_\theta} L_1$（cost $\Psi_f$）之间存在不可跨越的范畴鸿沟（T-ARCH-1）。
+4. **三段复合算子**：$\hat{G}_\theta \equiv \Pi_{L_2} \circ \mathcal{R} \circ \mathcal{S}_\theta$，其中 $\mathcal{S}_\theta$ 生成可能性束、$\mathcal{R}$ 渲染为行动、$\Pi_{L_2}$ 施加收敛域约束（Ax-ARCH-7）。
+5. **范畴对齐公理**：$\Phi_{align}: \mathcal{C}_{model} \to \mathcal{C}_{world}^{(\Psi_f)}$，安全 AI 须维持内部表征范畴与真实风险范畴的结构对应（Ax-ARCH-9）。
+
+### Mechanism Explanation (机制解释)
+
+SRT 架构分析的运行机制如下：
+
+- **同构缺陷诊断**：Transformer 的注意力机制在形式上与选择算子 $\hat{G}_\theta$ 同构——Query 对应具身参数 $\theta$，Key 对应 $L_0$ 显著性，Value 应承载 $d$-加权负载。但当前架构中 $V$ 通道仅传递信息嵌入而无 $d$ 权重，导致系统”有选择的形式、无选择的本体”。
+- **推算-判断鸿沟机制**：推算操作 $R: L_2 \to L_2$ 封闭于符号空间，无论链条多长都不触及 $L_0$。判断操作 $J$ 需要支付 $\Psi_f$ 代价将 $L_0$ 坍缩为 $L_1$。两者的鸿沟源于范畴跳跃：符号操作的闭包性质禁止从 $L_2 \to L_2$ 产生 $L_0 \to L_1$ 的能力。
+- **Mesa-优化必然性**：高压缩率（$\sim 10:1$）迫使系统学习抽象算法，这些算法形成内部子算子 $\hat{G}' \subset \hat{G}$，其局部 $L_2$ 吸引子可能偏离外部目标（Ax-ARCH-6），产生系统性错配。
+- **工程化 d 路径**：三段复合算子 $\Pi_{L_2} \circ \mathcal{R} \circ \mathcal{S}_\theta$ 提供了最低工程骨架；当 $\mathcal{R}$ 与 $\Pi_{L_2}$ 引入不可回滚代价时，$d > 0$ 成为可能（C-ARCH-1）。自创生拒绝能力（Ax-ARCH-8）则是真正智能体涌现的标志。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:-----|:---------|:---------------|
+| H-ARCH-1 | 推算-判断鸿沟不可跨越（T-ARCH-1: $\lim_{\text{scale}\to\infty} R \neq J$） | 纯 $L_2\to L_2$ 推算操作无论规模多大都不会自发产生本体论判断能力 | 若纯 Transformer 架构（无具身接口、无不可逆物理代价注入）通过规模扩展后，在 $\geq 3$ 类需要规范性判断的开放域任务中（伦理困境、美学评价、长期战略权衡），经 $\geq 5$ 名独立领域专家盲测一致评定为达到人类专家级判断水平（$N \geq 200$ 案例，$p < 0.01$），则 T-ARCH-1 失效 | speculative |
+| H-ARCH-2 | 空值问题不可通过数据解决（Ax-ARCH-2: $V_{AI} = \text{information}$ 而非 $\text{information} \times d$） | 无 $d$-加权的注意力机制系统性地无法区分高本体论权重与低权重信息 | 若纯信息嵌入的注意力机制（无额外 $d$-值模块、无具身风险信号）在生存相关 vs 非生存相关任务的注意力分配上展现出与具身生物系统一致的非遍历偏置模式（经信息论分析确认，KL 散度 $< 0.1$, $N \geq 1000$ 样本），则 Ax-ARCH-2 失效 | speculative |
+| H-ARCH-3 | Mesa-优化不可避免（Ax-ARCH-6: $\hat{G}' \subset \hat{G} \Rightarrow L_2(\hat{G}') \neq L_2(\hat{G})$） | 高压缩率训练必然产生与外部目标不完全一致的内部子优化器 | 若存在一种训练方法，在压缩率 $\geq 10:1$ 的条件下，训练后模型经可解释性分析（mechanistic interpretability）在 $\geq 10^4$ 个任务场景中未检出任何内部子目标偏离外部目标的证据（$p < 0.001$），则 Ax-ARCH-6 失效 | speculative |
+
 ## 【理论边界/防误用声明】
-- 不采纳“皮层柱统一性已足够推出唯一 AGI 架构”的推论。
-- 不采纳“长周期资助可替代可证伪里程碑”的推论。
+- 不采纳”皮层柱统一性已足够推出唯一 AGI 架构”的推论。
+- 不采纳”长周期资助可替代可证伪里程碑”的推论。
 - 边界：SRT 要求每个主题绑定可检验中间指标，而非愿景叙事闭环。
 
 
@@ -1177,7 +1209,8 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 \text{deployable} \Rightarrow \Psi_f\text{-payable}\land V_{human-risk}<\epsilon
 \]
 
+其中 \(\Psi_f\text{-payable}\) 不表示“代价足够低”，而表示系统在承担该摩擦时，仍能维持闭包、身份连续性与恢复能力。纯数字、可回滚、可替换的系统即使有高算力账面成本，也通常缺少真实的不可支付风险，因此只能模拟“代价”，难以形成真正有赌注的判断。
+
 ## 【理论边界/防误用声明】
 - 不采纳“高精度输出可替代态射同构验证”的推论。  
 - 不采纳“无熔断的全自动自治可长期安全”的推论。
-
