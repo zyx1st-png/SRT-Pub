@@ -223,13 +223,14 @@ $$\text{Neurons that fire together, wire together}$$
 - 坐不住
 - 想放弃
 
-**关键**: **这是正常的。所有人都经历这个。**
+**关键**: **这很常见，尤其在多数初学者身上。**
 
 **SRT 解释**: 
 
-你第一次真正**看见**你的头脑有多乱——它一直这么乱，你只是从未观察过。
+你第一次真正**看见**你的头脑有多乱——这些波动与惯性模式原本就在，只是平时被自动化的 $L_2$ 叙事流带着走，没有被稳定看见。
 
 $$\text{Awareness}(\text{Mind Chaos}) \neq \text{Creation}(\text{Mind Chaos})$$
+$$\rho_{\text{attention}} \uparrow \Rightarrow \text{Visibility}(L_1^{\text{fluctuation}} \oplus L_2^{\text{habit}}) \uparrow$$
 
 ---
 
