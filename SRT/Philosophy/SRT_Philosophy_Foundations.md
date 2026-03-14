@@ -51,9 +51,9 @@ $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1)=\text{Stabilize}(L_1(t))$$
 \text{Thought} \iff \text{High Friction } (\Psi_f \gg 0) \text{ Exploration in } L_0
 \]
 \[
-\text{Extension} \iff \text{Low Friction } (\Psi_f \approx 0) \text{ Execution in } L_2
+\text{Extension} \iff \text{Low/Payable Friction } (\Psi_f>0\ \text{but manageable}) \text{ Execution in } L_2
 \]
-* **Implication（中文）**：心与物不是两种实体，而是同一个系统在处理预测误差时，由于本体论摩擦力不同而展现出的两种现象学状态。"物"是已经凝固、无摩擦的"心"；"心"是正在燃烧、高摩擦的"物"。
+* **Implication（中文）**：心与物不是两种实体，而是同一个系统在处理预测误差时，由于本体论摩擦负荷不同而展现出的两种现象学状态。"物"是已经凝固、低摩擦且长期可支付的"心"；"心"是正在燃烧、高摩擦的"物"。差别不在于有无摩擦，而在于摩擦强度、可支付性与更新速率。
 
 ### Ax-PhilF-2: Moduli-Space Latency
 潜在域是模空间，显现是沿路径的积分。
@@ -581,8 +581,19 @@ $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 | 外部伪问题（去参数化） | 低~中 | Closed（伪全知姿态） | 不可定义 |
 | 语义逃避（仅词汇隔离） | 低~中 | Semi-open→Closed | 被低估/被遮蔽 |
 
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义 SRT 哲学基础的核心本体论。现实由 $L_0/L_1/L_2$ 三域构成，$L_1(t)=\hat{G}_\theta[L_0(t)]$ (Ax-PhilF-1)；存在等价于被选择 (Ax-PhilF-1b)；$L_0$ 是模空间 $\mathcal{A}/\mathcal{G}$，显现是沿路径的积分 (Ax-PhilF-2)；算子必须具身于有限参数空间 (Ax-PhilF-3)；$L_2$ 是选择历史的稳定不动点即规范闭包 (Ax-PhilF-4)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $L_1(t) = \hat{G}_\theta[L_0(t)],\; L_2(t+1)=\text{Stabilize}(L_1(t))$ — 三域耦合动力学。
+  - $\text{Existence} \equiv \text{Being Selected}\;(\hat{G}[L_0]\to L_1)$ — 泛选择论。
+  - $L_0 = \mathcal{A}/\mathcal{G}$ — 潜在域为模空间商群。
+  - $\mathcal{L}_{gap} = \dim(L_1^{qualia})-\dim(L_2^{language})>0$ — 解释鸿沟为维度差。
+  - $\Delta\text{Frame} \iff \int\Psi_f\,dt>\Psi_{threshold}$ — 框架转变需跨越摩擦势垒。
+
 ### 【理论边界/防误用声明】
-- 不采纳“外部问题无意义=现实无结构”的推论：SRT 否定的是去参数化问法，不是否定跨尺度结构。
+- 不采纳”外部问题无意义=现实无结构”的推论：SRT 否定的是去参数化问法，不是否定跨尺度结构。
 - 不采纳“框架相对性=任意相对主义”的推论：所有框架仍受 \(\Psi_f\) 支付、可达性与一致性约束。
 
 对 Problem of the Many，给出分辨率阈值判据：
@@ -635,9 +646,7 @@ SRT 不接受“仅对象”或“仅结构”单边本体，而采用“潜能�
 | SRT 选择一元论（模板×阻抗） | 中~高 | Open↔Semi-open | payable / 可检验 |
 
 ## 【理论边界/防误用声明】
-- 不采纳“Px 由算子生成=外部世界任意可塑”的推论：\(L_0\) 存在阻抗地形，失败投影会触发高 \(\Psi_f\) 或崩解。
-- 不采纳“反强实在论=主观主义”的推论：SRT 的客观性来自跨算子可对齐结构与支付约束，不来自“无参上帝视角”。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ### 5.12 自然化先验形而上学定位（Naturalised Transcendental Turn，新增）
@@ -666,9 +675,7 @@ L_0\ \xrightarrow[\text{nucleation by }\theta]{\text{cooling/constraint}}\ L_1^{
 “对象”如结晶：并非预存于潜能域，也非主观任意捏造，而是模板与阻抗共同塑形。
 
 ## 【理论边界/防误用声明】
-- 不采纳“自然化康德=心理主义封闭体系”的推论：SRT 保留跨主体可检验约束与物理一致性。
-- 不采纳“结构强加=唯我论”的推论：\(\Psi_f\) 与失败投影提供外部现实反作用证据。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### 5.13 欠定性与逆问题谬误（Underdetermination Turn，新增）
 
 ### Def-Phil-5.13a: Underdetermination Interface（欠定接口）
@@ -700,9 +707,7 @@ SRT 反驳：\(L_0\to L_1\) 是热力学不可逆映射，逆向唯一还原在�
 | 失结构视觉（Agnosia态） | 低~中 | Open（高熵暴露） | overloaded |
 
 ## 【理论边界/防误用声明】
-- 不采纳“欠定性=一切解释等价”的推论：SRT 仍以预测误差与 \(\Psi_f\) 可支付性筛选模型。
-- 不采纳“前向生成=主观任意造物”的推论：外部阻抗与失败代价提供客观约束。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### 5.14 预测结构即存在（Predicted Structure as Existence，新增）
 
 ### T-Phil-5.14a: Existence as Thermodynamically Payable Prediction
@@ -717,6 +722,7 @@ SRT 反驳：\(L_0\to L_1\) 是热力学不可逆映射，逆向唯一还原在�
 \Psi_f^{maint}(\text{Table as block}) \ll \sum_i \Psi_f^{maint}(\text{particle}_i)
 \]
 因此“桌子”在生命算子中是热力学可行的低摩擦拓扑块。
+这里的“低摩擦”不是“零摩擦”；对象之所以稳定，是因为其维持摩擦在长期上可支付。
 
 ### 分类映射表（Life-Mind Continuity / FEP → SRT）
 
@@ -727,9 +733,7 @@ SRT 反驳：\(L_0\to L_1\) 是热力学不可逆映射，逆向唯一还原在�
 | 泛化过度（万物皆预测） | 低 | Closed（概念滥用） | 被误估 |
 
 ## 【理论边界/防误用声明】
-- 不采纳“任何稳态系统=认知系统”的推论：SRT 要求具身闭包、关切梯度与跨时更新能力。
-- 不采纳“预测成功=绝对真理”的推论：预测仅保证可维持性，不保证对 \(L_0^{abs}\) 完全对应。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### 5.15 超先验（Hyperpriors）与康德认知形式的 SRT 映射（新增）
 
 ### Def-Phil-5.15a: Hyperprior as \(\Pi\)-Layer Constraint
@@ -747,6 +751,33 @@ L_1=\hat G_\theta[L_0]\ \text{with}\ \Pi_{hyper}\ \text{guidance}
 \]
 “受控幻觉”不是任意构造，而是先验模板在外部阻抗反馈下的可维持轨迹。
 
+### Def-Phil-5.15c: Self-Predictive Sensorimotor Bootstrapping
+SRT 对 predictive processing 的更精确读法不是“脑先直接预测世界”，而是：系统优先预测**自身在与世界耦合时将出现的感知-动作模式**。
+\[
+\hat G_{\theta}^{(n+1)}:\ (S^{(n)}_{sens},S^{(n)}_{mot})\mapsto \widehat{(S^{(n)}_{sens},S^{(n)}_{mot})}
+\]
+其中 \(S_{sens}\) 与 \(S_{mot}\) 分别表示感觉与动作通道中的时序模式；较高层通过 top-down completion 预摄较低层模式，再利用 mismatch 对参数进行修正。
+
+### T-Phil-5.15d: World-Modelling-through-Self-Anticipation
+当系统越来越擅长预摄自己的 sensorimotor unfolding，它就会**间接**逼近造成这些模式的外部因果结构：
+\[
+\mathrm{Acc}\big(\widehat{S_{sm}}\big)\uparrow \Rightarrow \mathrm{Acc}\big(\widehat{Causal}(L_0)\big)\uparrow
+\]
+因此“建模世界”并不是先生成一幅 detached picture，再拿它去对照现实；更像是通过多层自我耦合回路的可校正前摄，逐步压缩出对外部世界的稳定 anticipatory grip。
+
+### Cor-Phil-5.15e: Hierarchical Error-Clarification Cycle
+预测加工的层级栈之所以能自组织增强，不只因为上层有先验，也因为下层能对上层给出越来越清晰的误差回馈：
+\[
+\Delta \theta^{(n+1)} \propto \epsilon^{(n)}_{bu}+\lambda\,\Pi^{(n+2)}_{td},
+\qquad
+\epsilon^{(n)}_{bu}=S^{(n)}_{actual}-\widehat S^{(n)}
+\]
+预测稍微更准，误差信号就稍微更有结构；误差更有结构，下一轮更新也更有效。世界可理解性的增长，来自这一循环，而不是来自某个 homunculus 在脑内“看图说话”。
+
+### [Lineage/Source]
+- 用户粘贴材料：`How Your Brain Predicts Itself`（2026-03-13）。
+- 关键增量：把 predictive processing 解释为“先预测自身的 sensorimotor unfolding，再借此间接收敛到世界因果结构”，并强调多层 top-down / bottom-up 的自组织误差澄清循环。
+
 ### 分类映射表（Hyperpriors / Kant / PP → SRT）
 
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
@@ -756,9 +787,7 @@ L_1=\hat G_\theta[L_0]\ \text{with}\ \Pi_{hyper}\ \text{guidance}
 | 失控幻觉误读（脱控构造） | 低~中 | Closed（反馈失效） | overloaded |
 
 ## 【理论边界/防误用声明】
-- 不采纳“受控幻觉=世界全是幻觉”的推论：受控性来自持续反馈约束与代价支付。
-- 不采纳“先验存在=客观真理已知”的推论：先验是生存优化格式，不是 \(L_0^{abs}\) 全貌。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### 5.16 连锁悖论与模糊性的 SRT 解（Vagueness Resolution，新增）
 
 ### Def-Phil-5.16a: Edge Topological Breakdown（边缘拓扑破裂）
@@ -789,9 +818,7 @@ L_1=\hat G_\theta[L_0]\ \text{with}\ \Pi_{hyper}\ \text{guidance}
 | SRT 相变阈值解 | 中~高 | Open↔Semi-open | payable / hysteretic |
 
 ## 【理论边界/防误用声明】
-- 不采纳“模糊性=纯学习不足”的推论：部分模糊区由有限分辨率与能量预算共同决定。
-- 不采纳“有阈值=有绝对本体切线”的推论：阈值是算子-任务-历史路径耦合产物。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### 5.17 塞拉斯冲突的 SRT 回答（Information-Processing Clash，新增）
 
 ### Def-Phil-5.17a: Cognitive Contextual Extraction
@@ -816,9 +843,7 @@ L_1^{(k)}=\hat G_{\theta^{(k)}}[L_0],\quad \theta^{(k)}=\theta_{bio}\oplus\theta
 | 扁平统一实在论（硬缝合） | 中~高（需求） | Open（过载） | unsustainable |
 
 ## 【理论边界/防误用声明】
-- 不采纳“图景冲突=其中一方纯错觉”的推论：两者可在各自 \(\theta\) 与任务边界下合法。
-- 不采纳“不可缝合=不可对齐”的推论：SRT 允许通过协议映射对齐，不要求全信息同构。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### 5.18 逻辑的降维声明（The Deflation of Logic，新增）
 
 ### Def-Phil-5.18a: Logic as L2 Protocol Grammar
@@ -848,9 +873,7 @@ L_1^{(k)}=\hat G_{\theta^{(k)}}[L_0],\quad \theta^{(k)}=\theta_{bio}\oplus\theta
 | 量子反常“反逻辑”误读 | 低 | Closed（越级套用） | overloaded |
 
 ## 【理论边界/防误用声明】
-- 不采纳“逻辑降维=放弃推理规范”的推论：SRT 限定逻辑适用域，不否定形式推理价值。
-- 不采纳“量子悖论=任何矛盾都可成立”的推论：越级失配不等于规范失效。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## 6. 心灵哲学的 SRT 深化
 
 ### 6.1 相关性场——$L_1$ 的度规结构
@@ -1000,13 +1023,7 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 3. 将 partial unity 映射为连续判据：把统一性从二值命题升级为分度结构，用于解释“局部碎裂而整体功能仍可维持”的现象。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.7551/mitpress/9780262027786.003.0015〕〔source: Philosophy/SRT_Philosophy_Foundations.md#T-PhilF-2〕
 
 ## 【理论边界/防误用声明】
-
-1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
-2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
-3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。  
-4. 不采纳“认知构建性=唯心论成立”的推论：SRT 为选择一元论，承认 \(L_0\) 约束与 \(\Psi_f\) 客观支付。  
-5. 不采纳“预测处理成功=外部约束可忽略”的推论：预测更新始终受跨层边界与失败代价约束。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Synchronicity Interface (Jung–Pauli) → SRT 映射条款（2026-03-02）
@@ -1037,12 +1054,7 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 - 引入年份：2026（SRT 映射写入）。
 
 ## 【理论边界/防误用声明】
-1. **SRT 不采纳**“同步性可替代因果机制”的推论。  
-   - 原因：同步性在本框架中是现象学标签与解释层接口，不是机制证明本身。  
-2. **SRT 不采纳**“任何巧合都具有本体论必然意义”的推论。  
-   - 原因：需区分统计偶然、叙事放大与稳定结构耦合，避免 L2 过拟合。  
-3. 适用边界：本条款用于哲学解释与建模假设生成，不可直接作为实证因果结论。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Free-Will Compatibility Interface（2026-03-02）
@@ -1074,10 +1086,7 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 - 接口语义：与 SRT 既有能动性滞后定理（Libet 窗口）和 \(\hat G_\theta\) 门控框架对齐。
 
 ## 【理论边界/防误用声明】
-1. **SRT 不采纳**“决定论真/假可单独裁定责任归属”的简单化推论。  
-2. **SRT 不采纳**“意识仅是幻觉因此规范评价无效”的全盘取消主义推论。  
-3. 适用边界：本接口用于解释与建模，不直接替代法律伦理裁判标准。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Consciousness Taxonomy Interface（SEP 对齐，2026-03-02）
@@ -1109,10 +1118,7 @@ Q_F:\ \text{What function does experience serve?}
 - 用途：定义分类与争议框架对齐，不作为新实证证据。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“分类框架 = 机制证明”的推论。
-2. 不采纳“解释鸿沟不可消除 = 科学终止”的推论。
-3. 本接口用于术语治理与理论导航，不替代实验判据。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Truth-Theory Interface（SEP 对齐，2026-03-02）
@@ -1146,10 +1152,7 @@ Q_F:\ \text{What function does experience serve?}
 - 用途：争议图谱与术语对齐，不作为一手实验材料。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“单一真理理论可覆盖所有层级任务”的推论。
-2. 不采纳“L2 一致即对象层真实”的直接推论。
-3. 本接口用于真值归属治理与建模边界，不替代领域实证判据。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Wittgenstein Interface（SEP 对齐，2026-03-02）
@@ -1182,10 +1185,7 @@ Q_F:\ \text{What function does experience serve?}
 - 关键脉络：Tractatus（可说性边界）→ Investigations（meaning-as-use, language-games）
 
 ## 【理论边界/防误用声明】
-1. 不采纳“语义全相对化（anything goes）”推论：SRT 要求规则路径可共享、可复用。  
-2. 不采纳“不可言说 = 不可研究”推论：可作为 L1 现象对象进入操作化流程。  
-3. 本接口用于语义治理与断言边界，不替代对象层机制证明。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Qualia Interface（SEP 对齐，2026-03-02）
@@ -1218,10 +1218,7 @@ Q_F:\ \text{What function does experience serve?}
 - 用途：术语分层与争议边界治理。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“承认 broad qualia = 承认强非物理实体”的跳跃推论。
-2. 不采纳“否认 strong qualia = 否认全部体验现实性”的反向推论。
-3. 本接口用于层级澄清，不替代具体神经/行为实验判据。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Daoism Interface（SEP 对齐，2026-03-02）
@@ -1252,11 +1249,7 @@ SRT 立场：二者可耦合但不可互相吞并。
 - 用途：自然规范与制度规范分层接口对齐。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“自然路径 = 道德正确”的直接等同推论。
-2. 不采纳“社会规范可完全脱离自然可行性约束”的推论。
-3. 本接口用于规范层建模，不替代具体历史文本训诂与实证社会分析。
-
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Quantum-Consciousness Interface（2026-03-05）
 
 ### Def-Phil-QC-1: Collapse Is Necessary, Not Sufficient
@@ -1278,11 +1271,7 @@ L_0\to L_1\ \text{(collapse/selection)}\ \not\Rightarrow\ \text{subjective conti
 | 泛心论等价跳跃 | 低~中 | Closed（概念越级） | 被误估 |
 
 ## 【理论边界/防误用声明】
-- 不采纳“任意量子坍缩=任意主观体验”的推论。  
-- 不采纳“量子机制成立即可绕过具身风险门控”的推论。  
-- 不采纳“宇宙连接叙事可替代机制证据”的推论。
-
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## 认识论乐观主义的摩擦探测协议（2026-03-06，轻量）
 
 ### Def-PHIL-FRIC-1: Friction-Probing Epistemology
@@ -1302,10 +1291,7 @@ L_1\ \text{is model-dependent but constraint-governed}
 * **Implication（中文）**：我们并非“直接看见真相”，但可通过失败代价与维持成本对真实结构做间接可证伪逼近。
 
 ## 【理论边界/防误用声明】
-- 不采纳“受控幻觉 = 主观唯我论”的推论。
-- 不采纳“只要可解释就等于真实”的推论。
-- 适用边界：任何解释必须同时满足预测可复现、摩擦可支付、跨主体可对齐。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### 分类映射表（外部讨论分类 → SRT）
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |---|---|---|---|
@@ -1338,10 +1324,7 @@ L_1^{(A)} \simeq_{\mathcal{M}} L_1^{(B)}
 * **Implication（中文）**：感觉是系统在生存风险约束下执行选择时的几何侧面，不是脱离物理约束的神秘附着物。
 
 ## 【理论边界/防误用声明】
-- 不采纳“相对性等效候选 = 任意系统都必然有意识”的推论。
-- 不采纳“内部模拟语言 = 屏幕式表征实在”的推论。
-- 适用边界：SRT 使用 constrained projection / rendering 语义；任何 L1 显现必须受 \(\Psi_f\) 支付约束。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
 - Nir Lahav, Relativistic Theory of Consciousness（访谈语境）
 - 相对性原理与关系主义传统（Galilean/Einsteinian lineage）
@@ -1407,10 +1390,7 @@ J = \mathbb{E}[\Psi_f^{total}] + \lambda\,\mathrm{CatastrophicRisk}
 - 方法谱系：Active Inference / Free Energy 风格的“成本-风险-策略切换”建模语义（映射到 SRT 记号，不等同原理论）。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“需要信任 = 真理纯属社会发明”的推论；SRT 仍要求 \(L_0\) 约束与环境摩擦闭环。  
-2. 不采纳“机器给出结果 = 可跳过可回滚机制”的推论；无 \(K_r\)/\(G_e\) 保障的输出仅是暂态候选。  
-3. 不采纳“任何共识都等价”的推论；只有能持续降低 \(\Psi_f^{env}\) 的共识结构才具吸引子地位。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Mental Representation Interface（2026-03-08）
 
 ### Def-Phil-MR-1: Representation as Internal Surrogate with Action Relevance
@@ -1466,10 +1446,7 @@ SRT 采纳“表示-非表示并存”边界：
 - 关键脉络：Brentano intentionality、teleosemantics（Millikan）、sender-receiver/信息论框架、4E 挑战。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“有神经相关 = 已确定内容”的推论；内容归因必须经功能与任务约束验证。  
-2. 不采纳“4E 成立 = 一切内部表征可删除”的推论；不同任务对内部代理依赖度不同。  
-3. 不采纳“teleosemantics 成立 = 语义已完全解决”的推论；误表征、远距内容与格式差异仍需经验判定。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Concepts Interface（2026-03-08）
 
 ### Def-Phil-CON-1: Concept as Recombinable Deliberative Representation
@@ -1496,13 +1473,23 @@ SRT 采纳“表示-非表示并存”边界：
 权重 \(w_i\) 随任务、压力、文化语境和工作记忆负载动态改变。
 
 ### T-Phil-CON-2: Externalist Reference / Internal Selection Coupling
-概念指称由外部稳定关系约束（externalism），但具体应用由内部选择机制实现：
-\[
-\text{Reference}(R_X)\leftarrow \text{mind-world stabilizing relation},
-\qquad
-\text{Categorization}_t\leftarrow \hat G_\theta\text{-gated conceptions}
-\]
-这解释了“同指称但不同理解”（专家/非专家）与“可错分类但语义不崩”的并存。
+
+概念指称由外部历史轨迹稳定（externalism），具体分类由内部算子在该约束下展开：
+
+$$R_X \xleftarrow{\text{stabilized by}} L_2^{social}(\text{causal-historical chain})$$
+
+$$\text{Categorization}_t(X) = \hat{G}_\theta[L_0 \mid R_X] \quad (\theta\text{-specific unfolding})$$
+
+**机制说明**：
+
+- **指称的 SRT 翻译**：克里普克「因果历史命名链」= 多个 $\hat{G}_\theta$ 在不可逆时间轴上对同一对象反复进行 $L_0 \to L_1$ 选择后，在 $L_2$ 刻下的迟滞结构（Hysteresis）。语义不悬在空中，而是沉积于跨算子的历史选择轨迹之中。
+- **分类的 SRT 翻译**：$\hat{G}_\theta[L_0 \mid R_X]$ 表示个体算子在 $R_X$（$L_2$ 社会指称约束）的条件下，从潜在域坍缩出属于自身 θ 的 $L_1$ 概念切片——同一指称，不同 θ 展开出不同的概念结构（专家 vs. 非专家）。
+
+**两个推论**：
+
+1. **「同指称但不同理解」**：$R_X$ 由 $L_2^{social}$ 统一锚定，$\hat{G}_\theta[L_0 \mid R_X]$ 因 θ 不同而产生不同的 $L_1$ 展开。沟通功能有效，是因为外部指称同构，而非 $L_1$ 现象学同构（参见 T-ONT-8d：沟通 = 共同符号带来注意力预期满足，不要求内部 $L_1$ 完全一致）。这解答了维特根斯坦「甲虫盒子」问题：我们无需钻进别人的 $L_1$，$L_2$ 的外部抓手已保证沟通的语义基础。
+
+2. **「可错分类但语义不崩」**：单次分类错误（如把铜认作黄金）是单个算子偏离 $L_2$ 势阱底部的高自由能涨落。只要涨落能量无法克服集体自由能景观的拓扑壁垒 $|\text{Hess}(\mathcal{F}_{coll})|$，系统就会被社会纠错机制（他人纠正、感知反馈）立即拉回谷底，$L_2$ 语义结构不受影响。现实的「语义刚性」= 势阱曲率，而非每次应用的正确率（参见 SRT_Core_12b::社会迟滞与共识摩擦）。
 
 ### Def-Phil-CON-3: Ad-hoc Concept Construction Window
 概念可在情境中临时组装（ad-hoc）以满足当前目标：
@@ -1524,10 +1511,7 @@ R_{adhoc}=\mathcal{C}(R_{i_1},R_{i_2},...,Goal_t,Context_t)
 - 关键脉络：generality constraint、hybridism、externalism、ad-hoc concepts、concept/conception 区分。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“概念=定义条目”的推论；大量概念使用依赖原型、样例、理论与情境表征协同。  
-2. 不采纳“分类成功=语义指称已被内在信息唯一决定”的推论；应用机制与指称基础需要区分。  
-3. 不采纳“LLM 的分布式语义成功 = 人类概念语义问题已解决”的推论；功能近似不等于语义地基完成。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Self-Consciousness Interface（2026-03-08）
 
 ### Def-Phil-SC-1: Self-Consciousness as Self-Specified Awareness
@@ -1572,10 +1556,7 @@ Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
 - 关键脉络：Kant “I think”、生态知觉自指信息、镜像识别、身体所有感与 ToM 互构。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“镜像识别通过 = 完整反思性自我已形成”的推论；该任务仅覆盖部分自我表征能力。  
-2. 不采纳“身体所有感 = 单一内在感觉实体”的推论；所有感可由多模态一致性操纵并解离。  
-3. 不采纳“第一人称与第三人称完全同构”的推论；二者共享部分概念但证据机制不同。
-
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Mind–Body Problem Interface（2026-03-08）
 
 ### Def-Phil-MB-1: Two-Horn Constraint (Causation vs Consciousness)
@@ -1624,6 +1605,4 @@ E_{mental} \equiv E_{physical}^{realization},
 - 关键脉络：Cartesian dualism、物理主义/超覆(supervenience)、心因果论证、解释鸿沟与可想象性挑战。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“承认解释鸿沟 = 物理主义必假”的推论；语义-解释难题不自动转成本体否定。  
-2. 不采纳“因果闭包成立 = 心理层无效”的推论；心理描述可对应同一实现事件的高层因果刻画。  
-3. 不采纳“中性一元/泛心 = 已解决意识难题”的推论；组合问题与可检验性仍是硬约束。
+本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
