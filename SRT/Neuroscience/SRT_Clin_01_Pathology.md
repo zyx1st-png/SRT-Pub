@@ -61,11 +61,29 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ---
 
 ### Ax-PATH-4: Pathological Reality Type I — Rigid Reality (僵化现实)
-$\hat{G}_\theta$ 的选择机制失去变异性（Loss of Complexity），无法处理外部波动：
-\[
-\text{Var}(\hat{G}_\theta[L_0]) \to 0 \Rightarrow \text{Adaptability} \to 0
-\]
-* **Implication（中文）**：对应"失去无序"状态——系统过度确定化，选择被锁死在窄带模式（强迫症、顽固性抑郁、教条化）。
+
+**Formal Definition**:
+当算子 $\hat{G}_\theta$ 陷入极深的局部吸引子时，其选择机制失去复杂性与变异性。显现域的输出熵趋近于零，且对潜在域的外部扰动完全脱敏：
+$$
+H\!\left(\hat{G}_\theta[L_0]\right) \to 0
+\quad \wedge \quad
+\left\| \frac{\partial \hat{G}_\theta[L_0]}{\partial L_0} \right\| \to 0
+$$
+*(注：第二项表示对任意环境扰动 $\delta L_0$，系统的现实锚定输出保持不变，选择被强制锁死在极窄带模式。)*
+
+**Implication & Clinical Mapping (临床对应)**：
+系统退化为"过度确定化"状态，对应不同认知维度的刚性锁死：
+- **强迫症 (OCD)**：$\hat{G}_\theta$ 锁死在"行为程序"维度（如无视环境安全的重复核查/清洁）。
+- **顽固性抑郁 (TRD)**：$\hat{G}_\theta$ 锁死在"负面解释框架"维度（$L_0$ 中的任何积极可能性/奖励信号都被系统性屏蔽）。
+- **教条化 (Dogmatism)**：$\hat{G}_\theta$ 锁死在 $L_2$ "信念网格"维度（对不符预期的新证据产生无限大的迟滞抗性）。
+
+*(宏观同构：在社会维度，这与 `SRT_Social_MacroDynamics.md` §6.5 中的"收敛锁死 / 官僚化"是同一跨尺度方程。)*
+
+**Symmetry Structure (病理对称性)**：
+Ax-PATH-4（僵化：$H \to 0$，过度有序）与 Ax-PATH-5（崩溃：$\partial\Omega \to \varnothing$，过度混沌）构成 SRT 病理态的两个极端。健康的选择能力必须维系于二者之间的**混沌边缘 (Edge of Chaos)**：
+$$
+0 < H\!\left(\hat{G}_\theta[L_0]\right) < H(L_0)
+$$
 
 ---
 
