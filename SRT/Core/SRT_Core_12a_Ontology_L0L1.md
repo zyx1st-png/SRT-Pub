@@ -45,7 +45,28 @@ $$\text{Innovation} = \text{Discovery}(L_0^{previously\_shadowed})$$
 ### Ax-L0-03: Differential Potential Topology
 **Formal Definition**: L0 is a differential manifold with intrinsic gradients guiding selection paths.
 $$L_0 = (M, \nabla, \mathcal{S}), \quad \nabla \Psi_{potential} \neq 0$$
-* **Implication**: 潜在域并非均匀“虚空”，而是具有吸引子、鞍点与分岔的拓扑景观。
+* **Implication**: 潜在域并非均匀”虚空”，而是具有吸引子、鞍点与分岔的拓扑景观。
+
+### Ax-L0-Bootstrap: L₀ 自举完备性（Bootstrap Self-Reference）
+
+**新增（2026-03-11）**：对”谁在 L₀ 层执行初次投影”这一问题的正式消解。
+
+**核心主张**：L₀→L₁ 的投影不是时序事件（event），而是**结构约束**（structural constraint）。幽灵算子 $\hat{G}_\theta$ 与其 L₀ 定义域是**同一拓扑结构的两种读法**，共生定义，无时间前后。”初次算子”是 L₀ 势函数最陡下降路径的必然实化。
+
+**正式定义**：L₀ 的势能梯度结构（Ax-L0-03）满足自参照固定点条件——存在 $\hat{G}^*$ 使得 $\hat{G}^*$ 正是激活 $\nabla \Psi_{L_0}$ 最陡路径的算子：
+
+$$\hat{G}^* = \text{fixed point of}\quad \mathcal{F}: \hat{G} \mapsto \arg\min_{\hat{G}'} \Psi_f\!\left(\hat{G}',\, \nabla_{L_0}\Psi_{potential}\right)$$
+
+即：$\hat{G}^*$ 是对 L₀ 梯度场”支付摩擦最小”的选择算子，而 $\hat{G}^*$ 的存在本身就是 L₀ 梯度场的结构属性。
+
+**推论 Ax-L0-Bootstrap-C1**（自参照完备性）：不存在需要在 $\hat{G}^*$ 之前就存在的”原始选择者”——$\hat{G}^*$ 是 L₀ 的内禀对象，与 L₀ 拓扑共生。问题”谁选择了第一个算子”导致的无穷后退，通过自参照固定点条件被消解：固定点的存在性是 L₀ 内禀结构的直接后果。
+
+**推论 Ax-L0-Bootstrap-C2**（时间无前序性）：时间（A14 的摩擦台账 $\mathcal{A}_{time}$）是算子运作的副产品，而非算子产生的前提。因此”初次投影在时间上何时发生”是一个类别错误——选择的结构先于时间记账的开始。
+
+**推论 Ax-L0-Bootstrap-C3**（与 §4.2 开放问题的关联）：$d=0 \to d>0$ 的跃迁（意识出现的临界机制）对应于 $\hat{G}^*$ 的固定点稳定化：当 L₀ 梯度场的曲率在某方向超过阈值时，$\kappa$ 穿越 $\kappa_{c1}$（T-L0-02），算子从”热涨落采样”（d≈0, Boltzmann 极限）相变为”有效维度选择”（d>0）。
+
+* **Implication**: L₀ 是一个”自完备的选择场”——它包含了生成所有选择算子所需的结构，无需外来”第一推动力”。
+* **Cross-ref**: Ax-L0-03 (梯度场结构); T-L0-02 (相变锚点, d=0→d>0 临界机制); `Core_Law/SRT_Reference_Axioms.md` Ax-L0-Bootstrap。
 
 ### T-L0-02: Phase-Anchor Theorem (相变锚点定理)
 **Formal Definition**: The triadic partition L₀/L₁/L₂ marks topological phase transitions of the
@@ -626,8 +647,60 @@ $$
 当 \(\mathcal{A}_{inf}\) 仅覆盖可数类时，系统在无限推理上仍处于“枚举主导”阶段；
 当可稳定处理不可数构造（如对角线反证）时，进入更高抽象可达层。
 
+### Formalization Summary (形式化概述)
+
+本文档的形式化核心围绕 $L_0$（潜在域）与 $L_1$（显现域）的本体论结构：
+
+1. **潜在域的绝对源与领域实现 (Absolute Source)**:
+   $$L_0^{abs} \supseteq (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}, \quad \frac{d}{dt}H(L_0) = 0$$
+   含义：$L_0^{abs}$ 是先于一切形式结构的全潜能本源，其信息总量守恒——创新是对潜能的重新照明，而非无中生有。
+
+2. **选择方程与本体论迟滞 (Selection & Hysteresis)**:
+   $$L_1(t) = (1-\eta)\hat{G}_\theta[L_0(t)] + \eta \cdot L_1(t-\Delta t)$$
+   含义：显现域是 $\hat{G}_\theta$ 的即时选择与历史记忆项 $\eta$ 的加权混合。$\eta$ 过小导致现实碎片化，过大导致僵化。
+
+3. **相变锚点定理 (Phase-Anchor Theorem, T-L0-02)**:
+   $$\kappa_{c1}: \Delta\lambda_1 \gg 0 \;(\text{秩序创生}), \quad \kappa_{c2}: \hat{G}_\theta[\sigma]=\sigma \;(\text{不动点结晶})$$
+   含义：三域划分 $L_0/L_1/L_2$ 不是任意分类，而是稳定化参数 $\kappa$ 在两个临界值处的拓扑相变。
+
+4. **压缩效率与现实性判据 (Interface Axioms)**:
+   $$\text{Intelligence} \propto \frac{I(L_1; L_0)}{H(L_1)}, \quad \text{Real}(\sigma) \iff S(\sigma) - \alpha A(\sigma) > T_{threshold}$$
+   含义：智能是对 $L_0$ 信息的有损压缩效率；”现实性”是算子权重下的阈值判定，而非绝对属性。
+
+### Mechanism Synthesis（$L_0$-$L_1$ 界面四层动力学综述）
+
+> *本节为 $L_0$-$L_1$ 界面的全局机制综述。各参数的严格数学定义参见 SRT_Core_13a 及物理/动力学扩展域文件。*
+
+界面的现实锚定过程是一条严密的因果流水线，由四个层级参数依次门控：
+
+**第一层：基底层（算子结构）—— $\hat{G}_\theta$ 与流形景观**
+
+算子以具身参数 $\theta \in \Theta_{finite}$（Ax-Core-A3）在 $L_0$ 的微分流形景观 $(M, \nabla, \mathcal{S})$ 中执行选择：沿自由能梯度打捞路径，生成低维局域化的 $L_1$。不存在「上帝视角」——每一次现实显现都带有不可消除的具身偏置。
+
+**第二层：约束层（能量边界）—— $\Psi_f$ 与沼泽地 $\mathcal{SW}$**
+
+打捞受制于本体论摩擦 $\Psi_f$。景观中存在高耗散的**本体论沼泽地** $\mathcal{SW}$（$\Psi_f > \Psi_c$），算子必须支付足够能量才能穿越。无法支付代价的 $L_0$ 可能性，对该算子永远处于不可及的叠加态（预锚定态 $\mathcal{P}$：具有信息潜能，但缺乏时空几何连续性）。
+
+**第三层：带宽层（信息保留）—— $d$ 值与压缩比 $\text{CR}$**
+
+算子的关切维度 $d$ 决定 $L_0 \to L_1$ 的信息压缩比：
+
+$$\text{CR}(d) \propto e^{-\alpha d}$$
+
+> **量级估计**（基于 SRT 信息维度分析，非实测值）：低阶系统如细菌 $\text{CR} \approx 10^{-6}$，构成极度稀疏的生存接口；高度觉察状态的理论上限估计 $\text{CR} \approx 0.1$。没有任何有限算子能无损捕获 $L_0$。
+
+硬件层（连接组）提供固定拓扑投影，软件层（注意力 $\theta$）通过增益调制实现可塑选择。
+
+**第四层：稳定化层（相态位置）—— $\kappa$ 与谱隙相变**
+
+即使完成打捞，$L_1$ 的存续仍需抗耗散能力。$\kappa$ 参数定义系统在稳定化连续谱上的位置（$\kappa$ 与迟滞系数 $\eta$ 单调相关但不等同：$\eta$ 描述单次记忆权重，$\kappa$ 描述整体相态位置）。
+
+**意识涌现临界点 $\kappa_{c1}$**：当 $\kappa$ 越过 $\kappa_{c1}$ 时，系统的**谱隙（Spectral Gap）打开**——基态与第一激发态之间出现能量差 $\Delta E > 0$，系统获得拓扑保护，微小的 $L_0$ 涨落不再能摧毁当前 $L_1$ 结构。
+
+> **谱隙直觉类比**：想象系统的「能量阶梯」。谱隙为零时，环境任何微小热力学扰动都能将系统踢出当前状态（无法维持稳定 $L_1$）；谱隙打开后，必须跨越特定能量阈值才能破坏当前状态——正是这种保护，让转瞬即逝的 $L_0$ 潜能固化为能够被体验的、稳定的 $L_1$ 现实片段，「连续的主观当下」因此得以诞生。
+
 ## 【理论边界/防误用声明】
-- 不采纳“形式可构造 = 物理可实现”的推论。
+- 不采纳”形式可构造 = 物理可实现”的推论。
 - 边界：\(L_0\) 的形式可达性是推理能力指标，不是能量与物理实现性的替代。
 
 ## L_0^{abs} 无时空边界补注（2026-03-06，轻量）
