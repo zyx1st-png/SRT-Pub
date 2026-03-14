@@ -369,7 +369,17 @@ $$\exists x \iff x \in \text{Image}(\hat{G}[L_0])$$
 $$\frac{dL_1}{dt} = \hat{G}_\theta[L_0] - \nabla F[L_1] + \mathcal{D}[L_1 \to L_2]$$
 
 ### 4.3 参数学习方程
-$$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f + \text{Learning}$$
+$$\frac{d\theta}{dt} = -\alpha(\theta)\cdot\nabla_\theta \Psi_f + \beta(\theta)\cdot\nabla_\theta A_{L_2}$$
+
+**变量说明：**
+- $\alpha(\theta)$：内生试错学习率（θ依赖）——Ψ_f驱动的自下而上修正强度
+- $\beta(\theta)$：规范内化率——L₂文化/制度引力对θ的自上而下塑造强度
+- $\nabla_\theta \Psi_f$：摩擦梯度，指向降低选择算子与现实错配的方向
+- $\nabla_\theta A_{L_2}$：L₂文化引力场梯度，指向社会共识吸引子
+
+**病理边界：**
+$$\eta(L_2) \gg P_{\text{adapt}}^{(i)} \Rightarrow \alpha(\theta) \to 0$$
+（异化锁死：当L₂规范压力远超个体适应力时，摩擦驱动的自主更新停滞，θ被冻结于σ_{L₂}^{default}）
 
 ### 4.4 自由能方程
 $$F = E - TS - d \cdot U_{\text{others}}$$
