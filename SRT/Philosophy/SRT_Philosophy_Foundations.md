@@ -1012,9 +1012,40 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 
 ### 统一性操作化
 
-1. 将 synchronic/diachronic 区分并入本文件框架：`L_1` 对应同刻统一（synchronic），`L_2` 对应跨时叙事统一（diachronic），并由 `\hat{G}_\theta` 连接。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.5840/eps201754477〕〔source: Philosophy/SRT_Philosophy_Foundations.md#Ax-PhilF-1〕
-2. 将“统一之意识”与“意识之统一”区分为二阶校验：前者是体验对象层，后者是元反省层，避免把元报告误判为一阶统一证据。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1093/oso/9780190464783.003.0005〕
-3. 新增“分层一致性判据”：若一阶统一与二阶报告冲突，优先判定为层级错位而非本体冲突。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/SRT_Philosophy_Foundations.md#T-PhilF-2〕
+三步递进：层级分配 → 阶层区分 → 冲突判据。
+
+**步骤一：层级分配**
+将 synchronic/diachronic 区分并入 SRT 三域框架：
+\[
+U_{syn}(t) = \hat{G}_\theta[L_0](t) \hookrightarrow L_1
+\qquad (\text{同刻体验整合})
+\]
+\[
+U_{dia}(\Delta t) = \int_0^T \mathcal{I}\big[\hat{G}_\theta(\tau)\big]\,d\tau \hookrightarrow L_2
+\qquad (\text{跨时叙事稳定性})
+\]
+$\hat{G}_\theta$ 负责 $L_0 \to L_1$ 的逐时切片（synchronic）；
+$L_2$ 积累切片的信息轨迹，形成抗耗散的身份延续（diachronic）。
+失效对应：synchronic 崩溃 = 解离（$L_1$ 整合失败）；diachronic 中断 = 失忆（$L_2$ 轨迹断裂）。
+〔source: doi:10.5840/eps201754477〕〔source: Philosophy/SRT_Philosophy_Foundations.md#Ax-PhilF-1〕
+
+**步骤二：阶层区分**
+区分”统一之意识”（体验对象层 $\phi^{1st}$）与”意识之统一”（元反省层 $R^{2nd}(\phi^{1st})$）：
+\[
+\phi^{1st} \in L_1 \qquad R^{2nd} \in L_2\text{-meta}
+\]
+两者具有独立失效路径：去人格化（depersonalization）= $\hat{G}_\theta$ 持续产出 $L_1$ 显现，但 $L_2$ 叙事/反省模块脱钩，导致 $R^{2nd}$ 与 $\phi^{1st}$ 相变断裂。避免把元报告误判为一阶统一证据。
+〔source: doi:10.1093/oso/9780190464783.003.0005〕
+
+**步骤三：分层一致性判据**
+若 $\phi^{1st}$ 与 $R^{2nd}$ 冲突，优先判定为层级错位（layer mismatch），禁止越级推论至本体矛盾：
+\[
+R^{2nd} \neq \phi^{1st}
+\;\Rightarrow\; \text{layer mismatch},
+\;\not\Rightarrow\; \text{ontological contradiction}
+\]
+此判据直接封堵消除主义与高阶理论（HOT）的标准推论陷阱：描述层的报告冲突不能替代本体层的统一性判定。
+〔source: Philosophy/SRT_Philosophy_Foundations.md#T-PhilF-2〕
 
 ### 部分统一与多元统一
 
