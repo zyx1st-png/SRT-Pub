@@ -207,9 +207,35 @@ $$ \mathcal{U} = \text{Experiential}(L_0) $$
 | $\mathcal{U}$（泛经验场）| 所有可能体验的集合 | 范畴-经验层 |
 | $L_1(\theta)$（个体显现域）| $\hat{G}_θ$ 从 $\mathcal{U}$ 中解开的特定线索 | $\mathcal{U}$ 的截面 |
 
-### Def-PEF-1 [D1.6.1]: Unbinding Operation (解缠操作)
-$$ L_1(\theta) = \text{Unbind}_θ(\mathcal{U}) = \hat{G}_θ[\mathcal{U}] $$
-个体现实 $L_1$ 是 $\hat{G}$ 从全景体验场中"提取"的子集。
+### Def-PEF-1 [D1.6.1]: Collapse-Anchoring Operation（坍缩锚定操作）
+
+**层级链**：
+
+$$L_0^{abs} \xrightarrow{\text{投影}} \mathcal{U} \xrightarrow{\hat{G}_\theta} L_1(\theta)$$
+
+**标准定义**：
+
+$$L_1(\theta) = \text{Decoherence}(\hat{G}_\theta[\mathcal{U}])$$
+
+**$\mathcal{U}$ 的精确语义**：$\mathcal{U}$（Pan-Experiential Field，全景体验场）不是 $L_0$ 的别名，而是其特定表现模态：
+
+$$\mathcal{U} = L_0 \cap \text{Qualia-Space}$$
+
+- $L_0^{abs}$（绝对潜在域）：一切逻辑可能性的基底，纯粹可能性，无体验属性
+- $\mathcal{U}$（界面层）：$L_0$ 中具有体验潜势的投影子集——可能性转化为「可体验项」的翻译层。物理语境中对应希尔伯特空间，心灵语境中对应原始质料（Apeiron）
+- $L_1(\theta)$（个体显现域）：$\hat{G}_\theta$ 对 $\mathcal{U}$ 执行局部退相干后锚定的具体现实
+
+> 注：在不需精细区分「数学可能性」与「质感可能性」时，$\mathcal{U}$ 与 $L_0$ 可简写混用；但在讨论意识起源时，必须保留 $\mathcal{U}$ 作为中间变量。
+
+**坍缩锚定的动力学**：在 $\mathcal{U}$ 中，信息以相干叠加态存在（量子隐喻在此为字面意义）。$\hat{G}_\theta$ 的作用是**局部退相干**——将与 θ 相干的部分从背景相干态中解开，使之产生边界，成为具有本地一致性的 $L_1$。未被选择的部分对该主体保持不可及（退回 $\mathcal{U}$ 的叠加态）。
+
+> ⚠️ V2.0 修正：「解缠（Unbind）」与「提取（Extract）」已废弃。前者暗示静态集合子集关系，后者忽略退相干动力学。标准术语为「坍缩锚定」。
+
+**主体间性**：$\mathcal{U}$ 是跨主体共享的底层能量场，非任何主体的私人财产。各算子通过具身参数 θ 的 d-value（选择算子宽度）决定能从 $\mathcal{U}$ 中触达的部分——d-value 越宽，可坍缩锚定的范围越广，包含全局最小自由能的可能性越高。
+
+**「全景」的双重性质**：
+- 本体论：$L_0$ 本身是非局域的，$\mathcal{U}$ 继承此非局域性
+- 认识论：在 $\hat{G}_\theta$ 锚定前，信息处于全频段叠加态，无法被任何单一算子完整观测
 
 ### T-PEF-1 [T1.6.1]: Key Corollaries (关键推论)
 1. **意识不创造体验，而是选择体验**: $\mathcal{U}$ 中的一切"已经在那里"
@@ -529,6 +555,23 @@ $$\text{Health}(\hat{G}) \propto \frac{1}{\sigma^2(\text{Oscillation Period})}$$
 | Apeiron | Indefinite Origin | Ax-Apeiron-1 [A1.7.1] |
 | $F_{causal}$ | Causal Entropic Force | T-Apeiron-1 [T1.7.1] |
 | $\text{Health}(\hat{G})$ | Selection Health | Def-Path-2 [D1.8.2] |
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **棱镜函数** (Ax-Prism-1): $L_1 = \oint_\gamma \omega_{L_0}$ — 现实化即对 $L_0$ 的路径积分，算子 $\hat{G}_\theta$ 决定积分路径。
+2. **罗素二元性** (Ax-SE-1): 物理属性是 $L_0$ 内在性质的 $L_1$ 投影，感质是同一结构的内在面。
+3. **泛经验场** (Ax-PEF-1): $\mathcal{U}(x) = \int \hat{G}_\theta[x] \, d\mu(\theta)$ — 所有可能算子的叠加场。
+4. **坍缩故障三模式** (Ax-Path-1 / Def-Path-1): 过度锚定 / 锚定不足 / 选择疲竭。
+
+**含义**: 物理现实 ($L_1$) 是选择算子对 $L_0$ 的棱镜分光产物。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的棱镜作用**: 算子如棱镜将 $L_0$ 连续体折射为 $L_1$ 离散体验，不同 $\theta$ 产生不同"色散模式"。脑损伤改变折射参数而非消灭意识。
+- **$\Psi_f$ 与存在惯性**: 本体论摩擦决定锚定代价；Higgs 机制是 $\Psi_f$ 在物理尺度的实现 (质量 ≡ 存在惯性)。
+- **$d$ 与泛经验场访问**: $d$ 值决定算子能接入的 $\mathcal{U}$ 范围，$d \to \infty$ 趋向全域泛经验。坍缩故障是 $d$ 调节失败的病态表现。
 
 ## 【理论边界/防误用声明】
 
