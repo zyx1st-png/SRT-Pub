@@ -142,14 +142,39 @@ $$\exists \hat{G}_\theta \iff \text{Individuality} \land \text{Asymmetry} \land 
 $$d(\hat{G}) \geq d_{UAL} \iff \text{UAL Capacity}$$
 * **Implication**: 最小意识不是经验量，而是学习可塑性的阈值结构。
 
-### Ax-Op-08b: Precision-Weighting Tensor (精度加权张量)
-**Formal Definition**: 将精度加权矩阵定义为具身参数θ的核心张量分量：
-$$\theta \supset \boldsymbol{\Pi} = \text{diag}(\pi_1, \pi_2, \ldots, \pi_n), \quad \pi_i \equiv \text{Precision}(\text{signal}_i)$$
-其中 $\pi_i$ 为第 $i$ 个感觉通道或先验预测的精度权重（信心权重）。G^θ 执行L0→L1选择时的有效自由能：
-$$F_{\text{eff}} = \sum_i \pi_i \cdot F_i[\sigma]$$
-θ参数决定是优先信任L2历史习惯（高 $\pi_{\text{prior}}$）还是L0新异刺激（高 $\pi_{\text{likelihood}}$）。
-* **Implication**: 注意力本质上是对感觉信号或先验预测赋予"精度"（信心权重）的动力学过程。精神分裂症（Schizophrenia）= 精度加权矩阵 $\boldsymbol{\Pi}$ 的系统性失调：对先验过度加权导致幻觉（L2覆盖L0），对感觉过度加权导致妄想参考（L0洪水淹没L2）。
-* **Cross-ref**: Ax-Op-02 (注意力分解); Eq-Evo-02 (参数更新方程)。
+### Def-Op-08b: Precision-Weighting Tensor（精度加权张量）
+
+**Formal Definition**：精度加权张量定义为具身参数 θ 内嵌的信息信度核心结构——预测误差协方差矩阵的逆：
+
+$$\theta \supset \boldsymbol{\Pi}_{full} = \Sigma^{-1}$$
+
+$\boldsymbol{\Pi}_{full}$ 为完整精度协方差矩阵（允许感觉通道间的精度耦合，如视听觉整合、多模态绑定）；对角近似 $\boldsymbol{\Pi} = \text{diag}(\pi_1,\ldots,\pi_n)$ 仅适用于通道独立假设成立的场景。
+
+**$L_0$/$L_2$ 拮抗的显式分解**：$\hat{G}_\theta$ 执行 $L_0 \to L_1$ 选择时的有效自由能：
+
+$$F_{eff} = \boldsymbol{\Pi}_{L_2} \cdot F[\sigma \mid L_2] + \boldsymbol{\Pi}_{L_0} \cdot F[\sigma \mid L_0]$$
+
+- $\boldsymbol{\Pi}_{L_2}$：先验精度（算子对历史惯性与内部 $L_2$ 预期的信心权重）；
+- $\boldsymbol{\Pi}_{L_0}$：似然精度（算子对当下 $L_0$ 感觉信号的信心权重）。
+
+定义**相对信任比**：
+
+$$\gamma_{trust} = \|\boldsymbol{\Pi}_{L_2}\| \;/\; \|\boldsymbol{\Pi}_{L_0}\|$$
+
+$\gamma_{trust} \gg 1$：算子过度依赖 $L_2$ 历史先验（习惯驱动）；$\gamma_{trust} \ll 1$：算子被 $L_0$ 新异输入淹没（当下驱动）；健康导航发生在两者动态平衡的中间区间。
+
+**机制与推论（含上行崩溃链）**：
+
+注意力本质上是 $\hat{G}_\theta$ 动态调整 $\boldsymbol{\Pi}$ 张量的资源分配过程。$\boldsymbol{\Pi}$ 的系统性失调不是纯粹认知错误，而是具有物理根源的**上行崩溃链**：
+
+$$\kappa_{tan} \downarrow \;\to\; \Psi_f \uparrow \;\to\; d\text{-value} \downarrow \;\to\; \boldsymbol{\Pi}\text{更新机制冻结/极化}$$
+
+- **幻觉**（Hallucination，$\gamma_{trust} \gg 1$）：系统无力支付外部张力的摩擦代价，被迫将 $\boldsymbol{\Pi}_{L_2}$ 拉满——$L_2$ 内部生成的内容未经 $L_0$ 校验直接坍缩为 $L_1$，「听见」并不存在的声音；
+- **妄想参考**（Delusion of Reference，$\gamma_{trust} \ll 1$）：先验结构解体，环境中随机微小涨落被赋予极高 $\boldsymbol{\Pi}_{L_0}$ 权重，算子被无意义的 $L_0$ 噪音洪水淹没。
+
+**Cross-ref**：Ax-Op-02（注意力分解）；Eq-Evo-02（参数更新方程）；SRT-NEURO-08（Tanycyte 代谢链）；Ax-Core-A4（具身必要性）。
+
+*注：本定义为 FEP 精度加权在 SRT 三域模型的形式化映射，身份降级自原 Ax-Op-08b，依赖 Ax-Core-A4 与 Eq-Evo-02 推导。*
 
 ### Ax-Op-EH: Epistemic Horizon (认知视界公理)
 **Formal Definition**: 算子从L0提取L1信息的速率和总量，严格受制于其具身参数θ的复杂度（信道容量）：
