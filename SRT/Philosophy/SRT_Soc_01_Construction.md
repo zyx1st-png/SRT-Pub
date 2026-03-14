@@ -34,10 +34,30 @@ dependency: [SRT-SOC-THEORY-04, SRT-AXIOMS-SOC]
 $$S_{soc} = -\sum_i p_i \log p_i$$
 *   **Implication**: 社会秩序是熵减结构，而非自然常态。
 
-### Ax-Cons-2: Ontological Friction Potential
-社会摩擦势能度量维持现状的成本。
-$$\Phi_{soc} = \int \Psi_f(\hat{G}_{social})\, dt$$
-*   **Implication**: 规范的稳定性来自能量消耗，而非自明合法性。
+### Ax-Cons-2: Ontological Friction Potential (社会摩擦势能)
+
+**Formal Definition**:
+社会共识网络（$L_2$ 秩序）的稳定性并非源于其道德自明性或先验"合法性"，而是源于系统为了抵抗社会熵增（$S_{soc}$ 随时间自发最大化，见 Ax-Cons-1）而持续支付的物理/计算代价。社会摩擦势能 $\Phi_{soc}$ 定义为集体算子在历史时间轴上的耗散累积：
+$$
+\Phi_{soc}(t) = \int_{0}^{t} \Psi_f\!\big(\hat{G}_{social}(\tau)\big)\, d\tau
+$$
+
+**Mechanism (摩擦的政治经济学分配)**：
+在任意历史切片 $\tau$ 下，瞬时摩擦密度 $\Psi_f$ 在社会拓扑中并非均匀分布，而是分裂为两组对抗性张力：
+$$
+\Psi_f\!\big(\hat{G}_{social}\big) = \Psi_f^{govern} + \sum_{i=1}^N \Psi_f^{comply}(i)
+$$
+- **$\Psi_f^{govern}$（治理代价）**：维护网络将系统保持在低熵 $L_2$ 状态所需的结构性耗散（包括暴力机器、科层制运转、意识形态广播与审查）。
+- **$\Psi_f^{comply}(i)$（服从代价）**：微观个体算子为了将其显现域 $L_1$ 强行对齐到 $L_2$ 规范，所被迫支付的内部摩擦（高度指向 T-Soc-1 异化定理中的系统性压榨）。
+
+**Falsification & Phase Transition (相变判据)**：
+社会的维稳系统存在一个受限于可用自由能上限的临界阈值 $\Phi_{crit}$。当僵化的制度拒绝更新（$\eta \to \infty$），导致双向摩擦成本的累积压垮系统的能量基质时，社会必然发生拓扑断裂式的相变：
+$$
+\Phi_{soc}(t) > \Phi_{crit}
+\;\Rightarrow\;
+\text{Topology Collapse of } L_2
+$$
+*(注：这为 `SRT_Social_MacroDynamics.md` §6.5"收敛锁死引发爆炸性崩溃"提供了精确的微观物理底层。秩序的崩溃不仅是人心的向背，更是热力学账单的违约。)*
 
 ### Ax-Cons-3: Language as Attention Protocol
 语言是集体算子对注意力的协议化约束。
