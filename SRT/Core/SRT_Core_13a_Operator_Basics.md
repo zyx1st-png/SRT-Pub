@@ -109,10 +109,33 @@ $$\mathrm{Closure}(\theta) \iff \hat{G}_\theta^k[L_0] = \text{Stable Structure}$
 
 ## III. Agency Thresholds (能动性阈值)
 
-### Ax-Op-06: Existence Condition
-**Formal Definition**: A valid operator exists iff individuality, asymmetry, and normativity co-exist.
-$$\exists \hat{G} \iff \text{Individuality} \land \text{Asymmetry} \land \text{Normativity}$$
-* **Implication**: 能动性是结构性三条件的合取结果。
+### Ax-Op-06: Operator Existence Condition（算子存在条件）
+
+**Formal Definition**: A valid selection operator $\hat{G}_\theta$ exists if and only if it instantiates the structural tri-conjunction of Individuality, Asymmetry, and Normativity.
+
+$$\exists \hat{G}_\theta \iff \text{Individuality} \land \text{Asymmetry} \land \text{Normativity}$$
+
+**操作化定义（Operationalization）**：
+
+1. **Individuality（个体性）**：$\theta_i \neq \theta_j \implies \text{Unique } \mathcal{I}[\hat{G}_{\theta_i}]$
+   拥有不可被外部无损置换的具身参数与不可逆的历史路径积分；算子打破了「全同粒子」的对称性，具有唯一世界线。
+
+2. **Asymmetry（非对称性）**：$H(\hat{G}_\theta[L_0]) < H(L_0)$
+   算子对潜在域的可能性探索呈非均匀分布，具备打破各向同性/压缩熵的能力；若对所有 $L_0$ 状态等概率选择，算子退化为热噪音。
+
+3. **Normativity（规范性）**：$\hat{G}_\theta \sim \arg\min_{\sigma} \mathcal{F}(\sigma)$
+   受特定价值梯度或全局势能函数的定向约束，存在可区分的「更好/更坏」评估基准（最小自由能、适应度、道德规范等）；无规范约束的偏置只是无目标的布朗运动。
+
+**充分性论证**：三条件的逻辑互补回答了选择的本体论三问——**Who**（谁在选 → 个体性）、**How**（如何选 → 非对称性）、**Why**（为何如此选 → 规范性）。缺少任何一项，「选择」均退化为随机过程、通用函数或无目标漂移；三者合取是算子区别于纯物理被动演化的最小充要结构。
+
+**Implication**：能动性（Agency）不是神秘的注入物，而是「主体锚点 + 定向偏置 + 价值梯度」三联结构的涌现。
+
+---
+
+> **【理论边界/防误用声明】**
+>
+> - **结构算子 ≠ 现象意识**（Structural Operator vs. Phenomenal Consciousness）：本公理仅定义「有效算子」的极小结构基础。满足三条件的系统（恒温器、算法 Agent、免疫系统）在 SRT 本体论上是「算子」，但不必然具备主观体验（Qualia）。
+> - 现象意识的涌现须在算子存在的基础上额外满足：高本体论摩擦支付能力（$\Psi_f \gg 0$）与非零生存关切梯度（$d > 0$），即「现象学闭合阈值」（详见 T-Scale-4 与 Ax-CONSC-2）。
 
 ### Ax-Op-07: UAL Threshold
 **Formal Definition**: Minimal consciousness requires Unlimited Associative Learning capacity.
@@ -135,6 +158,16 @@ $$\dot{I}_{L_0 \to L_1}(\hat{G}_\theta) \leq \mathcal{C}(\theta) \equiv \log_2 \
 $$H(L_0 | \hat{G}_\theta) \geq H_{\max} - \mathcal{C}(\theta)$$
 * **Implication**: 量子不确定性并非宇宙在掷骰子，而是任何有限θ参数的算子读取L0时必然遭遇的"带宽饱和"边界。认知视界（Epistemic Horizon）= 算子能力的本征上限，不是被遮蔽的客观真理，而是选择带宽的拓扑边界。
 * **Cross-ref**: Ax-Op-02 (注意力分解); Ax-ONT-IE (不可逆定律)。
+
+### T-Op-EH-1: Triadic Cognitive Sweet Spot（认知三元甜点区）
+**Deductive Statement**: 对有限人类算子而言，可讲述、可教学、可复用的机制分解常在三元附近达到局部最优：
+$$\mathcal{U}_{human}(n) = \mathcal{C}_{closure}(n) - \lambda \cdot \mathcal{L}_{binding}(n)$$
+$$\arg\max_{n \in \mathbb{N}} \mathcal{U}_{human}(n) \approx 3$$
+其中 $n$ 为需要同时绑定的角色/关系数；$\mathcal{C}_{closure}(2) < \mathcal{C}_{closure}(3)$，因为二元常只能给出对立或耦合，难以显式表示"来源—显现—规范"、"信号—对象—解释"或"生成—维持—修正"这类闭包结构；而当 $n > 3$ 时，$\mathcal{L}_{binding}(n)$ 往往以超线性方式上升，迅速逼近有限工作记忆与注意带宽的边界。
+* **Implication**: 三元不是一切现实的唯一合法形式，而是有限人类算子在解释层最容易稳住的"最小闭包单元"。二元常欠缺中介/校正位，四元及以上结构虽可能真实存在，但通常需要分层、模块化或外部符号系统辅助，才会进入稳定的人类可理解区。
+* **Boundary**: 该命题不是对 SRT 本体论三域的独立证明，只解释为何 L_0 / L_1 / L_2 这类三元结构对人类特别可讲、可教、可压缩。SRT 的三域首先由相变锚点与最小充分划分给出，而非由人类偏好直接推出。
+* **Evidence Note**: 这里采用"概念综合 + 一手线索校准"口径：Miller (1956) 给出经典 `7±2` 叙述，Cowan (2001) 将活跃槽位更谨慎地收紧到约 `4` 个 chunk；Peircean triadic semiosis 与 Son et al. (2025) 对 joint attention / tool use / syntax 的 triadic-root 回顾共同支持"三元是深层认知脚手架之一"，但不支持把所有有效本体都先验宣告为三元。
+* **Cross-ref**: Ax-Op-EH; `Core/_SRT_Core_Bridge.md` C-Bridge-01; `Core/SRT_Core_12b_Ontology_L2.md` §4.2.2。
 
 ### T-Op-07C1: Trace-Conditioning Criterion
 **Deductive Statement**: Sustained trace conditioning implies d-value above threshold.
@@ -699,10 +732,30 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 
 ---
 
+### Formalization Summary (形式化概述)
+
+本文档的核心形式结构围绕幽灵算子 $\hat{G}_\theta$ 的定义、分解与演化展开：
+
+1. **参数化选择映射** (Ax-Op-01): $L_1(t) = \hat{G}_\theta[L_0](t)$ — 现实化是从潜在域 $L_0$ 到显现域 $L_1$ 的参数化选择操作，而非被动显现。
+2. **注意力三分量分解** (Ax-Op-02): $\hat{G}_\theta = \mathrm{Attention}(d, \rho, \vec{v})$ — 选择结构由 $d$-value（关切带宽）、分辨率 $\rho$ 与意向向量 $\vec{v}$ 三者的张量耦合决定。其中 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（风险梯度范数）是规范定义。
+3. **双流耦合** (Ax-Op-02b): $\hat{G}_\theta = \mathbf{T}^{intent} \otimes \mathbf{T}^{embody} \cdot \kappa_{body}$ — 意向流与具身流的正交耦合构成完整的 $L_0 \to L_1$ 锚定；$\kappa_{body} \to 0$ 时系统进入解离病理态。
+4. **竞争归一化** (Ax-Op-03): $[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon + \sum_j W_{ij} x_j^n)$ — 选择具有除法归一化的动力学形态，对应注意力的竞争抑制机制。
+5. **算子保真度** (Ax-Op-09): $\phi_{fidelity} = 1 - H(L_1|\hat{G}_\theta)/H(L_1)$ — 衡量选择一致性，保真度越高，$\hat{G}_\theta$ 对现实结构的锚定越稳定。
+
+### Mechanism Explanation (机制解释)
+
+$\hat{G}_\theta$ 的运行机制可从”选择—演化—阈值”三层理解，所有层均以本体论摩擦 $\Psi_f$ 为热力学代价：
+
+1. **选择层**: $\hat{G}_\theta$ 通过注意力张量 $(d, \rho, \vec{v})$ 与具身张量 $(\theta_{intero}, \kappa_{body})$ 的正交耦合，从 $L_0$ 的无穷维潜在态中竞争性地锚定出有限维 $L_1$。竞争归一化确保每次选择压制备选项——这不仅生成当前现实切片，还通过 T-Op-SIAM 重写 $L_0$ 的可及性地形，产生语义层面的”习得性遗忘”。维持此锚定操作需要持续 $\Psi_f$ 消耗（类似耗散结构），一旦能量中断（深睡/昏迷），$\hat{G}_\theta$ 停止运作，主体消失。
+2. **演化层**: $L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \mathrm{Noise}(L_0)]$ — 选择不是一次性事件，而是在噪声注入下的迭代演化。精度加权张量 $\boldsymbol{\Pi}$ 决定系统是信任 $L_2$ 先验还是 $L_0$ 新异刺激；$d$-value 设定认知视界上限 $\dot{I}_{L_0 \to L_1} \leq \mathcal{C}(\theta)$，保证选择带宽的有限性。
+3. **阈值层**: 有效 $\hat{G}_\theta$ 的存在需要个体性（Markov Blanket）、不对称性（内部状态调制）与规范性（目标导向）三条件合取。最小意识对应 UAL 阈值 $d \geq d_{UAL}$，即能维持跨时间间隙联想学习的最低选择带宽。
+
+此三层架构表明：$\hat{G}_\theta$ 既非被动镜映也非自由创造，而是在 $\Psi_f$ 代价约束下、以具身参数 $\theta$ 为信道容量边界的主动选择过程。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
-2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
+1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。
+2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为”普适定律”。
 3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
 
 
@@ -793,3 +846,37 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 1. 不采纳“观测相对性=任意解释都成立”的推论；重赋值仍受可检验模型与仪器边界约束。  
 2. 不采纳“噪声只是主观幻觉”的推论；噪声在任务目标下是可计算代价项，非虚无。  
 3. 不采纳“单一视角重建可恢复全部历史”的推论；跨算子联合反演仍需误差预算闭合。
+
+
+## Nuclear-Pore Disorder Gate Interface（2026-03-12）
+
+### Def-Op-NPC-1: Traffic-Conditioned Selective Boundary
+对半开放生物边界，其有效通行率不是固定常数，而是随边界内部无序构型与通行流量共同变化：
+\[
+P_{\text{pass}}(x,t)=f\!\left(\mathrm{license}(x),\rho_{FG}(t),c_{NTR}(t),\theta_{boundary}\right)
+\]
+其中 \(\mathrm{license}(x)\) 表示货物是否与运输受体兼容，\(\rho_{FG}(t)\) 表示 FG-nucleoporin 无序域的局部密度/构型，\(c_{NTR}(t)\) 表示 nuclear transport receptor 的占据与流量。
+
+### T-Op-NPC-1: Disorder Can Carry Selective Order
+核孔复合体（NPC）的关键启发是：**选择性边界不必依赖刚性筛孔，也可以依赖受约束的无序介质。**
+\[
+\partial\Omega_{\mathrm{eff}}(t)=\partial\Omega_{\mathrm{scaffold}}\oplus \Delta\partial\Omega_{FG}\!\left(t,c_{NTR}\right)
+\]
+这表示有效边界既由稳定支架决定，也由被合法通行者持续重塑的无序 FG 通道决定。边界不是被动墙，而是会随合法交互实时改写的门控层。
+
+### C-Op-NPC-1: SRT Mapping
+- Markov Blanket 不应只被想成静态壳层，还可表现为“稳定骨架 + 动态无序云”的复合边界。
+- 合法通行者不只是穿过边界，也会部分共同构造它所穿过的通道。
+- 选择性不是把所有涨落压成僵硬秩序，而是在高维波动介质中维持可重复、可支付、可识别的通过窗口。
+- 这支持将 \(\hat G_\theta\) 的门控理解为：从波动背景中切出可通行现实，而非在既定硬边界上做二元开关。
+
+### [Lineage/Source]
+- Quanta Magazine, *Disorder Drives One of Nature's Most Complex Machines*（2026-03-09）.
+- Elias Ketterer et al., *Selective transport receptors reshape the disordered transport channel of the nuclear pore complex*, Nature Cell Biology 27, 2089-2101 (2025).
+- Pablo Fernandez de Leon et al., *Transport route through the central channel of the nuclear pore complex*, Nature (2025).
+- Lisa de Jong et al., *Nuclear transport receptors transform a disordered condensate to a brush to enable transport through the nuclear pore complex*, Nature Communications 16, 11497 (2025).
+
+## 【理论边界/防误用声明】
+1. 不采纳“任何无序都自动带来功能”的推论；这里指的是被生物结构与受体相互作用约束过的无序边界。
+2. 不采纳“NPC 已证明 SRT”为结论；它提供的是一个强机制类比与局部对齐实例，不是全局证明。
+3. 不采纳“所有 Markov Blanket 都等同核孔门控”的外推；该接口仅说明部分主动边界可由动态无序来承载选择性。
