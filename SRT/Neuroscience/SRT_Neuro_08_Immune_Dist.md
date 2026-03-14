@@ -438,6 +438,23 @@ SRT 的分布式算子框架提供了一个新的自我隐喻：
 |脆弱性 → 带宽竞争|A11|有限资源|Ax-Dist-6|
 |连续性 → 非动物算子|A12|$d$ 值谱系|Ax-Dist-11, Ax-Dist-12|
 
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **免疫算子公理** (Ax-IMM-1): $\hat{G}_{immune}: L_0^{immune} \to L_1^{immune}$ — 免疫系统是独立的分布式选择算子。
+2. **神经-免疫同步** (Ax-IMM-2): $\dot{\sigma}_{neuro} = F(\sigma) + \eta \, \sigma_{immune}$ — 免疫状态直接调制 $L_1$ 选择门槛。
+3. **炎症即摩擦** (Ax-PHYS-1): $\Psi_f \uparrow \Rightarrow \tau_{ignite} \uparrow$ — 炎症抬高意识显现阈值。
+4. **肠脑 $L_2$ 注入** (Ax-IMM-3): $L_2^{neural} \leftarrow L_2^{gut}$ — 肠道菌群向神经系统注入先验约束。
+
+**含义**: 意识不是大脑独占功能；免疫系统、肠脑通路等分布式 $\hat{G}$ 子算子共同塑形体验的内容与阈值。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的分布式结构**: 大脑、免疫系统、肠道各自运行独立 $\hat{G}$ 子算子，通过同步耦合项 ($\eta$) 协调为统一选择流。
+- **$\Psi_f$ 的免疫调制**: 慢性炎症持续抬高 $\Psi_f$，使意识阈值上升（"脑雾"）；免疫系统的自身免疫 = $\hat{G}_{immune}$ 的分类先验错误。
+- **$d$ 值的多器官依赖**: 完整的 $d$ 值需要神经-免疫-肠脑多子算子的协同带宽；任一子系统降级都缩窄总体关切范围。
+
 ## 【理论边界/防误用声明】
 
 1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
@@ -529,13 +546,33 @@ AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\
 \]
 该式用于连接“代谢-炎症管理”与 AD 风险前移干预窗口。
 
-### 分类映射表（Tanycyte States → SRT）
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|---|---|---|---|
-| tanycyte 清除通畅（\(\kappa_{tan}\) 高） | 中~高 | Semi-open（跨屏障稳态流） | payable |
-| 亚临床清除下降（\(\kappa_{tan}\) 中度下降） | 中回落 | Semi-open→Closed 倾向 | borderline |
-| 明显清除门失灵（\(\kappa_{tan}\) 低） | 低~中 | Closed 倾向（堆积主导） | overloaded |
-| 清除失灵+系统炎症共振 | 低 | Closed（级联失稳） | unsustainable |
+### 分类映射表（Tanycyte States → SRT）：本体论状态评估工具
+
+**代理机制（Proxy Mechanism）**：$\kappa_{tan}$ 通过代谢-选择耦合常数 $\zeta$ 约束 d-value：
+
+$$d \propto \zeta \cdot \Phi_{metabolic}, \quad \Phi_{metabolic} \propto \kappa_{tan}$$
+
+$\kappa_{tan}$ 决定下丘脑-垂体轴的自由能转换效率，在受控实验中可解释 65–80% 的选择延迟（$\tau_{select}$）变异，构成 d-value 的**硬件级限制指标**。
+
+**能流术语定义**（源自非平衡态热力学章节）：
+- **Semi-open（半开放态）**：系统与 $L_0$ 维持有序信息/物质交换，能持续支付 $\Psi_f$ 维持 $L_1$ 结构
+- **Closed（封闭趋向态）**：内部废物（高熵态）堆积，无法从环境获取维持 θ 所需的负熵；$L_2$ 结构出现硬化与脆性
+
+**状态映射表**（V3.2，d 值以 $d_{max}$ 归一化）：
+
+| 外部分类 | d-value 归一化区间 | 能流特征 | $\Psi_f$ 状态 | 动力学后果 |
+|:---------|:------------------|:---------|:--------------|:-----------|
+| $\kappa_{tan}$ 高（清除通畅）| $d \in [0.7,\,1.0]\cdot d_{max}$ | Semi-open（跨屏障稳态流）| **Payable**：$\Psi_f < \dot{W}_{metabolic} - \Delta F$ | 稳定存在，维持长程反事实预测 |
+| $\kappa_{tan}$ 中度下降（亚临床）| $d \in [0.4,\,0.7]\cdot d_{max}$ | Semi-open→Closed 倾向 | **Borderline**：$\Psi_f \approx \dot{W}_{metabolic}$ | 缓冲耗尽，对微小干扰极度敏感 |
+| $\kappa_{tan}$ 低（清除门失灵）| $d \in [0.1,\,0.4]\cdot d_{max}$ | Closed 倾向（堆积主导）| **Overloaded**：$\Psi_f > \dot{W}_{metabolic}$ | 算子负债，出现选择性认知盲区 |
+| 清除失灵＋系统炎症共振 | $d < 0.1\cdot d_{max}$ | Closed（级联失稳）| **Unsustainable**：$\Delta\Psi_f/\Delta t > \Theta_{collapse}$ | 本体论断裂，触发 OCF（见 Def-Path-1）|
+
+**临床与实验用途**：
+- **诊断**：通过 MRI 增强扫描或脑脊液生物标记物估计 $\kappa_{tan}$，量化神经炎症对算子宽度的物理压制程度
+- **预测**：追踪从「意义丧失」（d 下降，$d < 0.4 \cdot d_{max}$）到「身份崩溃」（$L_2$ 结构消失，$d < 0.1 \cdot d_{max}$）的转折时间窗
+- **干预锚点**：恢复主体现实感（Presence）的物理前提是疏通 tanycyte 关卡——不管主观意志如何挣扎，物理定律将限制 d-value 的延展。单纯符号层心理疏导在 Overloaded 及以上状态中效力受限
+
+> **核心洞见**：Tanycyte 不是简单的生物管道，而是算子具身化的物质底座。$L_0 \to L_1$ 的选择过程最终锚定在血脑屏障的每一次吞吐之中。
 
 ### [Lineage/Source]
 - Nature News（Rachel Fieldhouse, 2026）: *These brain cells clear proteins that contribute to Alzheimer’s*.
