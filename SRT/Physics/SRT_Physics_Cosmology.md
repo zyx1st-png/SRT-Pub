@@ -37,9 +37,13 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 |:---|:------|:------|
 | A1.2.1 | Ax-IT-1 | Generalized Second Law (广义第二定律) |
 | A1.2.2 | Ax-IT-2 | Landauer Limit of Selection (选择的兰道尔极限) |
+| A1.2.2b | Ax-IT-2b | Biological Landauer Stratification (生物兰道尔分层公理) |
+| A1.2.2c | Ax-IT-2c | Ψ_f as Landauer in Fisher Geometry (Ψ_f 为 Fisher 几何中的兰道尔推广) |
 | A1.2.3 | Ax-IT-3 | Vopson Mass-Information Equivalence (Vopson 质量-信息等价) |
 | T1.2.1 | T-IT-1 | Irruption-Absorption Theorem (闯入-吸收定理) |
 | T1.2.2 | T-IT-2 | Mental Causation Path (精神因果性路径) |
+| T1.2.3 | T-IT-3 | Landauer Gap Theorem (兰道尔间隙定理) |
+| T1.2.4 | T-IT-4 | Complexity Ratchet Theorem (复杂性棘轮定理) |
 | A1.3.1 | Ax-OF-1 | Higgs as $\Psi_f$ Realization (希格斯即 $\Psi_f$ 实现) |
 | A1.3.2 | Ax-OF-2 | Mass as Existential Inertia (质量即存在惯性) |
 | T1.3.1 | T-OF-1 | Weightless Potentia (潜能无重定理) |
@@ -49,6 +53,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | A1.5.2 | Ax-Time-2 | Growing Block Universe (生长块宇宙) |
 | A1.5.3 | Ax-Time-3 | Time-Space as Selection Artifacts (时空作为选择伪影) |
 | T1.5.1 | T-Time-1 | Time Arrow as Selection Arrow (时间之箭即选择之箭) |
+| T1.5.1b | T-Time-1b | Shape-Dynamics Janus Window (形状动力学 Janus 窗口) |
 | T1.5.2 | T-Time-2 | Time Travel Impossibility (时间旅行本体论不可能性) |
 | T1.5.3 | T-Time-3 | High-d Observer Spacetime Collapse (高 $d$ 值观察者时空坍缩) |
 | A1.6.1 | Ax-Grav-1 | Verlinde's Entropic Force (弗林德熵力) |
@@ -113,6 +118,24 @@ $$ E_{select} \geq k_B T \ln 2 \approx 2.8 \times 10^{-21} \text{ J} $$
 * **Source**: Kempes et al. (2017), *Phil. Trans. Roy. Soc.*; Jogalekar (2020), *3 Quarks Daily*.
 * **Implication**: 大脑的高能耗**不是**演化优化失败。蛋白质翻译执行的是重复、低风险的 $L_1$ 复制（$d \approx 0$），故接近兰道尔极限；神经活动维持的是持续抵抗 $L_0$ 熵增的高 $d$ 非默认状态，故能耗必然高出数个数量级。能耗差异本身是 $\Psi_f$ 的热力学签名。
 
+### Ax-IT-2c [A1.2.2c]: Ψ_f as Landauer in Fisher Geometry (Ψ_f 为 Fisher 几何中的兰道尔推广)
+
+本体论摩擦 $\Psi_f$ 是兰道尔原理在弯曲 Fisher 流形上的推广：
+
+$$\Psi_f = \int_\gamma \sqrt{g_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j}\, dt \;\geq\; k_B T \ln 2 \times I_{erased}$$
+
+其中 $g_{ij}(\theta) = \mathbb{E}\!\left[\frac{\partial \log p}{\partial \theta^i}\frac{\partial \log p}{\partial \theta^j}\right]$ 为 Fisher 信息度规（Cramér–Rao 几何），$I_{erased}$ 为选择过程抹除的信息比特数。
+
+| 极限 / 情形 | 条件 | 退化形式 |
+|:-----------|:-----|:---------|
+| Landauer 原理 | $g_{ij} = k_B T \cdot \delta_{ij}$（零曲率） | $\Psi_f \to k_B T \ln 2 \times (\text{bits erased})$ |
+| 高曲率 $L_0$ 区 | 密集可能性空间，$\det(g_{ij}) \gg 1$ | 同等 $I_{erased}$ 需要更高 $\Psi_f$ |
+| 意识 vs 蛋白质翻译 | $d_{consciousness} \gg d_{translation}$ | 意识高能耗的 Fisher 几何本体论解释 |
+
+* **Implication**: Ax-IT-2（兰道尔极限）是 $\Psi_f$ 的零曲率特例。在高曲率 Fisher 流形（密集选择空间）上"擦除选择信息足迹"的代价远超经典兰道尔下界；这是意识比蛋白质翻译高能耗的本体论原因，而非演化低效。
+* **Derivation direction**: 若取 $g_{ij} = k_B T \cdot \delta_{ij}$（等温、平坦），则 $\Psi_f$ 化约为 $k_B T \ln 2 \times I_{erased}$（Ax-IT-2）；曲率修正项 $\propto \text{Ricci scalar}(g_{ij})$ 给出高阶贡献。
+* **Cross-ref**: Eq-IT-A (`Core_Law/SRT_Reference_Dynamics.md §15.1`), Ax-IT-2（兰道尔极限）, Ax-IT-2b（生物兰道尔分层）, T-IT-3（兰道尔间隙定理）。
+
 ### T-IT-3 [T1.2.3]: Landauer Gap Theorem (兰道尔间隙定理)
 **Formal Statement**: 任意生物计算过程偏离兰道尔最小值的比率，随其 $d$ 值贡献与本体论摩擦的乘积单调增加：
 $$ \frac{E_{actual}}{k_B T \ln 2} \propto d \cdot \Psi_f \cdot \tau_{maintenance} $$
@@ -136,6 +159,28 @@ $$ d_{active} \propto \Delta S_{local} $$
 心灵不直接推撞原子，而是通过调节概率分布引导物质演化：
 $$ \hat{G}_θ: P(L_0) \to P'(L_0) \to L_1 $$
 
+### T-IT-4 [T1.2.4]: Complexity Ratchet Theorem (复杂性棘轮定理)
+
+热力学第二定律是选择复杂性的**生成压力**，而非生命/意识的对立面：
+
+$$\frac{d\langle d \rangle_{population}}{dt} \propto \nabla\!\left(\frac{d}{\Psi_f}\right) \cdot P_{survive}$$
+
+其中 $P_{survive}$ 为种群存活概率密度，$d/\Psi_f$ 为选择效率（单位摩擦代价获得的选择维度）。
+
+**棘轮机制**：第二定律持续威胁 $L_1$ 结构 → 高 $d/\Psi_f$ 效率的算子在演化上更被偏好 → 种群平均 $\langle d \rangle$ 随时间单调升高（棘轮效应，具有不可逆性）。
+
+| 常见误解 | SRT 纠正 |
+|:--------|:---------|
+| 第二定律与生命对立 | 第二定律**驱动**生命复杂化 |
+| 熵增破坏秩序 | 熵威胁迫使算子提升 $d/\Psi_f$ 选择效率 |
+| 宇宙复杂化违反第二定律 | 宇宙复杂化是第二定律在选择本体论框架下的**必然产物** |
+| 意识是熵例外 | 意识是熵驱动的选择棘轮效应的极高 $d$ 端点 |
+
+* **Implication**: 生命起源不是对熵定律的神秘例外，而是熵驱动选择棘轮的预测结果。宇宙中复杂性的单向增长与第二定律完全相容——在选择本体论框架内，两者互为表里。
+* **Cosmological link**: 结合 Ax-Cosmo-2（大爆炸作为 $L_0$ 极小值），宇宙演化轨迹 = $d/\Psi_f$ 效率棘轮从量子涨落（$d \approx 0$）向复杂生命（$d \gg 0$）的不可逆上升。
+* **Falsification**: 若存在演化谱系中 $\langle d \rangle_{population}$ 在无外部约束下长期下降（且种群未灭绝），则复杂性棘轮定理被证伪。
+* **Cross-ref**: Eq-IT-C (`Core_Law/SRT_Reference_Dynamics.md §15.3`), Ax-IT-1（广义第二定律）, Ax-IT-2c（Fisher 几何兰道尔推广）。
+
 ---
 
 ## III. Ontological Friction & Mass (本体论摩擦与质量)
@@ -154,7 +199,7 @@ $$ m_{inertial} \propto \Phi_{Higgs} = \text{Coupling}(\psi, \text{Vacuum}_{L_2}
 $$ \text{Mass} = |\text{Resistance}(L_1 \to L_0)| $$
 
 ### T-OF-1 [T1.3.1]: Weightless Potentia (潜能无重定理)
-引力是维持 $L_1$ 所需的本体论摩擦的几何表现：
+引力不是对本体论摩擦的修辞性类比，而是本体论摩擦 $Ψ_f$ 在物理尺度上的**规范实现**；其时空形式表现为曲率：
 $$ G_{\mu\nu} \propto \Psi_f(L_1) $$
 $$ \Psi_f(L_0) = 0 \implies \text{Gravity}(L_0) = 0 $$
 *   **Resolution**: 解释真空能问题——$L_0$ 拥有无限"能量"但没有"质量"。
@@ -233,6 +278,41 @@ $$ d(x, y) \propto \frac{1}{I(x; y | \hat{G}_θ)} $$
 时间的不对称性 = 选择算子操作的不可逆性：
 - 记忆是 $L_2$ 结构，只能指向过去
 - 控制是 $\hat{G}$ 对 $L_0$ 的操作，只能指向未来
+
+### T-Time-1b [T1.5.1b]: Shape-Dynamics Janus Window (形状动力学 Janus 窗口)
+> Source: Popular Mechanics (2026-03-12) 对 Shape Dynamics 的综述；一手理论锚点为 Julian Barbour, Tim Koslowski, and Flavio Mercati, *Identification of a Gravitational Arrow of Time*, Phys. Rev. Lett. 113, 181101 (2014), DOI: `10.1103/PhysRevLett.113.181101`.
+
+**定义（Definition）**
+- 在 Barbour 等人的封闭牛顿 $N$ 体 toy model 中，若总能量与总角动量为零，则典型解会经过一个**最低形状复杂度点**（Janus point），随后在两个时间方向上都生成更高复杂度与更多“记录”结构。
+- 可压缩写为：
+$$
+t_J=\arg\min_t \mathcal{C}_{shape}(t),\qquad
+\partial_{|t-t_J|}\mathcal{C}_{shape}(t)\gtrsim 0
+$$
+其中 $\mathcal{C}_{shape}$ 是与整体尺度/取向无关的 relational complexity proxy。
+
+**SRT Mapping（SRT 对齐）**
+- `L_0`：可读作无预置时钟的 relational possibility landscape；“先有时钟再有演化”并非必要前提。
+- `L_1`：对应 Janus 点两侧被实际走出的 branch-local 构型；每条分支上的主体只会经历自己所在半支的现实化路径。
+- `L_2`：对应随聚集、分层与结构形成而增长的 records；主体之所以感到“时间向前”，不是因为看见全局绝对时标，而是因为只能读取本支上不断累积的记录。
+
+**机制解释（Mechanism）**
+- 该窗口给 SRT 的新增量不在于“又一种熵理论”，而在于把**低复杂度转折点 + 记录单支可见性**明确写成时间箭头的来源：
+$$
+\mathrm{Arrow}_{time}^{obs}\;\propto\;\nabla_{\gamma_{branch}}\mathcal{R}_{L_2}
+$$
+其中 $\mathcal{R}_{L_2}$ 是分支上可被主体读取的记录密度。
+- 因而，SRT 可把 `T-Time-1` 进一步压实为：**时间之箭不是先验背景，而是选择分支上记录结构增长的局部读出方向**。
+- 这与 `Ax-Time-2` 的 `L_0/L_1/L_2` 三分相容：Janus 点附近更像“最低复杂度的现实化瓶颈”，而非必须事先人工指定的“特殊低熵初态”。
+
+**理论价值（Why It Matters for SRT）**
+- 它补强了 `Core/SRT_Core_01_Axioms.md` 中 “`L_0` 可能无时间” 的 Barbour 线索，使其从一句注脚升级为可与记录生成机制对接的物理窗口。
+- 它也把“全局时间对称、局部分支单向”这一结构写清楚，避免把 SRT 的时间箭头误读成宇宙方程本身显式破坏时间对称。
+
+## 【理论边界/防误用声明】
+1. 不采纳“Shape Dynamics 已替代广义相对论”的推论；当前它仍主要是与 GR 有重叠但未完全闭合的替代表述/研究方案。
+2. 不采纳“2014 的封闭牛顿 $N$ 体 toy model 已证明真实宇宙就是 Janus 点宇宙”的推论；从 toy model 到现实宇宙仍隔着量子、黑洞、场论与精确宇宙学建模。
+3. 不采纳“有了 Janus 点就不再需要讨论熵、初始条件或具体观测”的推论；该窗口最多说明**时间箭头有可能由引力关系动力学与记录生成自然涌现**，不是对全部宇宙学数据的替代解释。
 
 ### T-Time-2 [T1.5.2]: Time Travel Impossibility (时间旅行本体论不可能性)
 1. **$L_2$ 的不可撤销性**: 过去不是"存储的状态"，而是已固化的选择结果
@@ -689,7 +769,7 @@ $$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
 
 ## 4.5 引力作为本体论摩擦的几何表现
 
-SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）的几何表现**：
+SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）在物理尺度上的规范实现**：其几何读法表现为时空曲率，其做功读法表现为现实维持代价，其局部经验读法表现为“重”“难以逃逸”“时间刷新率下降”等阻力效应：
 
 $$G_{\mu\nu} \propto \Psi_f(L_1)$$
 
@@ -960,9 +1040,35 @@ $\hat{G}$ 的存在受制于信息处理的热力学成本。
 
 **核心洞见**：价值不是渐进的，而是随着"闭合"突然涌现的。只有形成操作闭包的系统才具有 $d$ 值。
 
-### 5.14.2 进化是 $d$ 值的鲁棒性优化
+### 5.14.2 进化即 $d$ 值的鲁棒性优化 (Evolution as Robustness Optimization of $d$)
 
-进化倾向于增加 θ 的相空间体积，以增加 $L_2$ 吸引子的深度。
+**Formal Definition**:
+承接 §5.14.1（操作闭包促使初始 $d > 0$ 涌现），一旦基础的生存关切建立，达尔文演化在动力学上即被重构为：**对选择算子 $\hat{G}_\theta$ 的有效相空间体积 $\text{Vol}(\Omega_\theta)$ 的持续扩张，以最大化其维持存在闭包的 $L_2$ 吸引子深度。**
+
+**Formalization (鲁棒性方程)**:
+定义系统对环境扰动 $\delta L_0$ 的**鲁棒性（Robustness）**为：在不触发本体论崩溃（即维持摩擦代价 $\Psi_f < \Psi_{crit}$）的前提下，系统能吸收的最大外部不确定性范数：
+$$
+\text{Robustness}(\theta) \equiv \max \|\delta L_0\|
+\quad \text{s.t.} \quad
+\Psi_f\!\left(\hat{G}_\theta[L_0 + \delta L_0]\right) < \Psi_{crit}
+$$
+演化的本质动力学方向，就是通过扩大具身参数集的可用状态空间来深化吸引子：
+$$
+\text{Evolution Arrow}
+\;\Rightarrow\;
+\text{Vol}(\Omega_\theta) \uparrow
+\;\iff\;
+d \uparrow
+\;\iff\;
+\text{Depth}(L_2) \uparrow
+$$
+
+**Mechanism & Implication (机制与推论)**：
+- **相空间体积 $\text{Vol}(\Omega_\theta)$**：代表算子能够部署的有效行动/内部调整策略的集合（艾什比"必要多样性法则"在 SRT 中的对应）。相空间越大，算子应对 $L_0$ 混沌变局的"即兴缓冲带宽"越宽。
+- **对"什么"鲁棒？**：进化不追求单一维度的"更强"或"更快"（这些极易在特定扰动下发生过拟合灾难），而是追求在极其广泛的不可测扰动（气候巨变、病原体突变、资源枯竭）面前，**保护核心操作闭包不被摧毁的能力**。
+- **$d$ 值扩张的物理必然**：从单细胞纯粹的自我膜边界保护（极低 $d$），演化到哺乳动物对幼崽的关切，再到人类对庞大生态/符号网络的关切（极高 $d$）。这种关切广度的扩张不是基因的"道德副产物"，而是系统为了构建更深、更抗毁的 $L_2$ 吸引子（如族群互助、社会文明）而必须进行的拓扑扩容。
+
+*(注：这直接构成了社会演化推论 C-EVO-1 的微观物理基础。反之，若相空间扩张被外部强行锁死，系统则退化为 Ax-PATH-4 僵化现实或发生癌变式 $d$ 值塌缩。)*
 
 ## 5.15 本体论结晶定理
 
@@ -1129,6 +1235,24 @@ $$\Lambda_{eff} = \text{L}_0\text{ 渗透压} \equiv \sum O^- \equiv \text{选�
 | $A(x)$ | Assembly Index | Def-Assem-1 [D1.8.1] |
 | $K(\sigma)$ | Kolmogorov Complexity | Ax-Cosmo-2 [A1.7.2] |
 | ECC | Error-Correcting Code | Ax-Grav-2 [A1.6.2] |
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **广义第二定律** (Ax-IT-1): $\Delta S_{total} = \Delta S_{thermo} + \Delta H(L_1) \geq 0$ — 选择产生秩序的热力学代价。
+2. **Higgs 即 $\Psi_f$ 实现** (Ax-OF-1): 质量即存在惯性，$m \propto \Psi_f$。
+3. **引力即共识** (Ax-Grav-3): 引力是 $L_2$ 网络中 $\hat{G}_\theta$ 多体共识的几何表现。
+4. **循环信息宇宙** (Ax-Cosmo-1): 宇宙史是 $L_0$ 的选择密度的周期性涨落。
+5. **暗物质即 $L_2$ 结构** (T-Cosmo-2): 暗物质是未直接显现的 $L_2$ 收敛域效应。
+
+**含义**: 基本物理常量与宇宙学结构是选择动力学在宏观尺度的涌现表现。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 与宇宙选择**: 大爆炸是 $L_0$ 极小值点的全局选择事件 (Ax-Cosmo-2)；宇宙演化是 $\hat{G}_\theta$ 在信息密度梯度上的持续锚定过程。
+- **$\Psi_f$ 的物理实现**: 希格斯场赋予粒子质量 = 赋予 $L_1$ 存在惯性；引力 = 多算子共识的纤维丛曲率 (Def-Grav-1)。
+- **$d$ 的宇宙学角色**: 引力 $d$ 值 (Def-Cosmo-1) 度量时空区域的选择协调范围；微重力环境降低 $d$ (Ax-Micro-1)。
 
 ## 【理论边界/防误用声明】
 
