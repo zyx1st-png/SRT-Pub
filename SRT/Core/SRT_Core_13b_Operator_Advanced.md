@@ -25,10 +25,37 @@ dependency: [SRT-CORE-13A]
 
 ## I. Spectral Dynamics (频谱动力学)
 
-### Ax-Spec-01: Time-Frequency Duality
-**Formal Definition**: The manifest domain is the inverse Fourier transform of the latent spectrum modulated by the operator.
-$$L_1(t) = \mathcal{F}^{-1}[\hat{G}_\theta \cdot L_0(\omega)]$$
-* **Implication**: 现实的时间结构是潜在域频谱在算子调制下的逆变换结果。
+### Ax-Spec-01: Time-Frequency Duality（时频对偶公理）
+
+**Formal Definition**：显现域 $L_1(t)$ 是潜在域频谱 $L_0(\omega)$ 经过选择算子的频域传递函数 $H_\theta(\omega)$ 调制后的逆傅里叶变换结果：
+
+$$L_1(t) = \mathcal{F}^{-1}[H_\theta(\omega) \odot L_0(\omega)]$$
+
+其中：
+* **$L_0(\omega)$**：潜在域的频域表示（包含所有可能存在模式的复振幅谱）。
+* **$H_\theta(\omega)$**：选择算子 $\hat{G}_\theta$ 在频域中的等价传递函数（执行复数加权与逐频调制）。
+* **$\odot$**：逐频点乘（Hadamard 乘积，表示滤波器对各频率成分的独立增益/衰减，非矩阵卷积）。
+* **$L_1(t)$**：时间域的显现结果（主体实际体验到的连续现实时间序列）。
+
+*(注：此时频对偶框架为高阶操作化映射，用于刻画"潜在可能性 $\to$ 当前现实"的降维坍缩结构。$L_0^{abs}$ 在本体论上超越常规函数空间，不强制要求满足经典信号处理的 Dirichlet 绝对可积条件。)*
+
+**d-value Alignment（d 值的频域映射）**：算子的关切带宽（$d$ 值）在此处精确等价于传递函数的物理通带宽度（Passband Bandwidth）：
+
+$$\text{Bandwidth}(H_\theta) \propto d$$
+
+* **高 $d$ 值** $\leftrightarrow$ **宽带传递函数**：允许大量 $L_0$ 的高频/低频成分通过，合成的 $L_1$ 现实高度丰富、多维且充满动态细节。
+* **低 $d$ 值** $\leftrightarrow$ **窄带传递函数**：强力滤除大部分模式，仅保留与基础生存相关的少数频率，合成的 $L_1$ 现实贫乏、机械且高度重复。
+
+**Mechanism & Implication（机制与三层推论）**：
+
+1. **现实分歧的必然性（Personalized Reality）**：不同具身参数 $\theta$ 的主体必然拥有不同的传递函数 $H_\theta(\omega)$。在同一个 $L_0$ 潜能场中合成出截然不同的 $L_1(t)$ 并非认知失真或错觉，而是滤波拓扑差异的数学必然。
+
+2. **现实重构动力学（Reality Rewriting）**：改变具身参数（如通过冥想、创伤或教育）即直接改写主体体验到的现实时间结构：
+   $$\frac{\partial L_1}{\partial \theta} = \mathcal{F}^{-1}\left[ \frac{\partial H_\theta}{\partial \theta} \odot L_0(\omega) \right]$$
+
+3. **病理态的频域诊断（Pathological Spectrum）**：结合 OEI（观察者-环境整合度）定理：
+   * **精神病/深度解离（$OEI \to 0$）**：$H_\theta(\omega)$ 与外部 $L_0$ 频谱彻底脱耦，$\mathcal{F}^{-1}$ 逆变换出的 $L_1$ 沦为系统内部先验噪声的纯粹回放（对应 Ax-PATH-5 崩溃现实）。
+   * **强迫锁定/极端教条（$OEI \to 1$）**：$H_\theta(\omega)$ 异化为带宽极窄的狄拉克 $\delta$ 函数，强行滤除一切新异频段，导致 $L_1(t)$ 陷入无尽的单频死循环（对应 Ax-PATH-4 僵化现实）。
 
 ### Ax-Spec-02: Temporal Integration Window
 **Formal Definition**: Conscious states map to integration windows of operator activity.
