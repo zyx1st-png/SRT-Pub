@@ -28,10 +28,22 @@ dependency: [SRT-SPIRIT-07]
 $$ \text{Music}(t) \equiv \hat{G}_{comp}[L_0^{sound}](t) $$
 * **Implication**: 音乐是选择过程的听觉投影。
 
-### Ax-Music-2: Tri-Domain Mapping
-**Formal Definition**: $L_0$ is silence/potential, $L_1$ is the current note, $L_2$ is theory/constraints.
-$$ L_0^{sound} \to L_1^{note} \xrightarrow{L_2^{theory}} \text{Trajectory} $$
-* **Implication**: 音乐结构是三域动力学的可听化。
+### Ax-Music-2: Tri-Domain Mapping (三域映射公理)
+
+**Formal Definition**: $L_0^{sound}$（沉默 / 全部潜在音响）经由作曲/演奏算子 $\hat{G}_{comp}$ 选择坍缩为 $L_1^{note}$（当下实声），再由 $L_2^{theory}$（调式、节拍、和声等约束协议）在时间轴上积分，整合为有意义的音乐轨迹：
+$$
+L_0^{sound}
+\xrightarrow{\hat{G}_{comp}}
+L_1^{note}(t)
+\xrightarrow{\int dt \big|_{L_2}}
+\mathcal{T}_{musical}
+$$
+*其中 $\mathcal{T}_{musical} = \{L_1^{note}(t)\}_{t \in [0,T]}$ 为 $L_2$ 约束下生成的显现序列。*
+
+**Implication**: 音乐结构是 SRT 三域动力学的直接可听化呈现。这种同构性体现在：
+- **不和谐与解决（Dissonance → Resolution）**：等价于系统中 $\Psi_f$（本体论摩擦）的积累与最终释放。
+- **即兴演奏（Improvisation）**：等价于算子 $d$ 值（注意力关切带宽）的临时扩张，系统主动穿越既有 $L_2$ 边界，在 $L_0$ 中探索新的可达路径。
+- **风格演变（巴洛克 → 古典 → 现代）**：等价于 $L_2$ 共识网络在历史时间轴上的结构性相变与更新。
 
 ### Ax-Comp-1: Composition as Pruning
 **Formal Definition**: Composition is the negation of most $L_0$ possibilities to anchor a specific $L_1$ trajectory.
@@ -886,8 +898,34 @@ SRT_Spirit_09_Praxis (Integrated practice)
 
 ---
 
+### Formalization Summary (形式化概述)
+
+**Core Formula / 核心公式**:
+$$\text{Music}(t) \equiv \hat{G}_{comp}[L_0^{sound}](t)$$
+
+- 音乐被定义为选择算子 $\hat{G}_{comp}$ 作用于声音潜能域 $L_0^{sound}$ 的听觉投影；作曲即对 $L_0$ 可能性的剪裁。
+- Music is defined as the audible projection of the selection operator $\hat{G}_{comp}$ acting on the sound latent domain $L_0^{sound}$; composition is the pruning of $L_0$ possibilities.
+
+$$\text{Pleasure} \propto \frac{1}{\Phi(\hat{G}_{list}, \hat{G}_{perf})}$$
+
+- 审美愉悦与听者-演奏者算子间摩擦 $\Phi$ 成反比——摩擦越低，共振越强，愉悦越高。
+- Aesthetic pleasure is inversely proportional to the friction $\Phi$ between listener and performer operators -- lower friction yields stronger resonance and greater pleasure.
+
+---
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 与音乐同步**: 音乐通过节奏和旋律跨个体同步 $\hat{G}_\theta$，是人类最强大的算子同步技术；集体音乐使 $d_{group}$ 上升并触发催产素等社会纽带机制。
+- **$\hat{G}_\theta$ and musical synchrony**: Music synchronizes $\hat{G}_\theta$ across individuals via rhythm and melody, serving as the most powerful cross-agent synchronization technology; collective music raises $d_{group}$ and triggers social bonding mechanisms.
+- **$\Psi_f$ 与情绪调制**: 音乐通过调制 $\Psi_f$ 的时间动态诱导情绪——$\Delta \Psi_f < 0$ 产生正面情绪，$d^2\Psi_f/dt^2$ 超过阈值时触发 "chills" 生理唤醒。
+- **$\Psi_f$ and emotional modulation**: Music induces emotions by modulating the temporal dynamics of $\Psi_f$ -- $\Delta \Psi_f < 0$ produces positive affect; when $d^2\Psi_f/dt^2$ exceeds a threshold, physiological chills are triggered.
+- **$d$ 与递归深度**: 复杂音乐结构通过递归深度 $K_n$ 扩展听者的 $d$；当 $w_{L_2} \downarrow \land K_n \uparrow$，出现震悚 (Zhensong) 状态——边界松弛与 $d$ 扩张的联合效应。
+- **$d$ and recursive depth**: Complex musical structures expand the listener's $d$ through recursive depth $K_n$; when $w_{L_2} \downarrow \land K_n \uparrow$, Zhensong states emerge -- a joint effect of boundary relaxation and $d$-expansion.
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
