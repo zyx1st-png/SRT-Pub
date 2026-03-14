@@ -84,11 +84,41 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Cor
 
 ## II. The Prism Ontology (棱镜本体论)
 
-### Ax-Prism-1 [A1.2.1]: The Prism Function (棱镜函数)
-$\hat{G}_θ$ 作为光谱滤波器，而非生成器：
-$$ \hat{G}_θ : L_0 \to L_1 \quad (\text{Refraction, not Production}) $$
-*   **Implication**: 意识（光）预先存在；大脑（棱镜）将其折射为特定的感质。
-*   **O-T1 Link**: 折射即对 $L_0$ 路径积分的取值：$L_1=\oint_\gamma \omega_{L_0}$。
+### Ax-Prism-1 [A1.2.1]: The Prism Function（棱镜函数）
+
+> **身份说明**：本条在 V3.0 架构中被精确界定为**构成性假设（Constitutive Postulate）**，而非逻辑公理。它是使 $\hat{G}_\theta$ 的「选择」具有质感的必要先验条件——绕过涌现论（Emergentism）的逻辑断裂，避免解释非意识物质如何「变出」Qualia 的不可解问题。SRT 不主张 $L_0$ 是「清醒的」，而是主张 $L_0$ 包含**现象基质（Phenomenal Substrate）**——如同物理学公理假定「电荷」存在而不必解释电荷从何而来，SRT 假定 $L_0$ 具备被选择为显现态的潜能。
+
+**核心映射**（折射，非生产）：
+
+$$\hat{G}_\theta : L_0 \to L_1 \quad (\text{Active Modulation, not Production})$$
+
+$$L_1 = \text{Anchor}\!\left(\int_{\gamma(\theta)} \hat{G}_\theta \cdot \omega_{L_0}\right)$$
+
+**公式各项说明**：
+
+- **$\gamma(\theta)$（选择路径）**：算子在 $L_0$ 相空间中的运动轨迹，由最小自由能原理决定：
+  $$\gamma = \arg\min \int F(\sigma, \theta)\, dt$$
+  θ 通过 d-value（选择宽度）弯曲可能性空间的流形，使某些现实路径比其他路径更「可支付」。
+
+- **$\omega_{L_0}$（本体论微分形式）**：$L_0$ 中每一处可能性的可测量权重（Ontological One-form），代表各可能性转化为体验的势能密度。
+
+- **$\text{Anchor}$（锚定闭合）**：代表**自创生闭包（Autopoietic Closure）**——只有当选择序列形成逻辑自洽的回路（当前 $L_1$ 为维持 θ 参数提供反馈），现实才得以稳定存在。路径不闭合时，显现态迅速耗散回 $L_0$。
+
+**隐喻升级：从被动棱镜到自适应光栅**
+
+早期「棱镜」隐喻（被动折射）已升级。$\hat{G}_\theta$ 更准确的类比是**具有反馈回路的自适应光栅**：
+
+- 折射角由 θ 中的风险感知（d-value）与自由能梯度（$\nabla F$）共同驱动
+- 现实不是「射入」算子的，而是算子在可能性海面上**主动采样的干涉图案**
+
+**两种描述语言的协调（折射式锚定）**：
+
+| 描述 | 时间特征 | 强调 |
+|:-----|:---------|:-----|
+| 坍缩锚定（Def-PEF-1）| 「点」：瞬时跨越阈值 | 确定「它是真实的」 |
+| 折射（Ax-Prism-1）| 「线」：选择的持续偏置 | 决定「它是怎样的」 |
+
+折射解释了为何共享同一 $L_0$ 的不同主体（如蝙蝠与人类）会锚定出截然不同的 $L_1$——同源异相，θ 决定色散。
 
 ### T-Prism-1 [T1.2.1]: Production vs Refraction Models (生产 vs 折射模型)
 
