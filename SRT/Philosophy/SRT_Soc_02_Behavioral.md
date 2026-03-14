@@ -231,23 +231,49 @@ S 形曲线来源于：
 
 ---
 
-### 2.2 参照点漂移的社会心理学
+### 2.2 参照点的社会相对性与地位摩擦（Social Relativity of Reference Points）
 
-**剥夺感悖论**: 为何工资上涨仍痛苦？
+**核心现象**：Solnick & Hemenway（1998）实验
 
-**案例** (Solnick & Hemenway, 1998):  
-问题：你选哪个世界？
-- A: 你年薪 $50k，他人 $25k
-- B: 你年薪 $100k，他人 $200k
+问题：你选择生活在哪个世界？
 
-**结果**: 56% 选 A（尽管绝对收入更低）
+| 世界 | 你的年薪 | 他人年薪 |
+|:-----|:---------|:---------|
+| A | $50k | $25k |
+| B | $100k | $200k |
 
-**SRT 解释**:  
-参照点不是绝对数字，而是**社会相对位置**：
+**结果**：超过 56% 选择世界 A（绝对收入更低，但相对地位更高）。这证明了价值评估极度依赖动态的社会比较，而非绝对资源量。
 
-$$\sigma_{ref} = f(\sigma_{self}, \langle \sigma_{peers} \rangle)$$
+---
 
-当 $\sigma_{self} < \langle \sigma_{peers} \rangle$，即使 $\sigma_{self}$ 绝对值高，相对 $\Psi_f$ 仍高（地位焦虑）。
+**SRT 形式化：参照点的社会耦合结构**
+
+参照点 $\sigma_{ref}$ 不是固定的内部数字，而是受社会耦合参数 $\gamma$ 调制的集体投影：
+
+$$\sigma_{ref}(\theta) = (1-\gamma) \cdot \sigma_{self\_past} + \gamma \cdot \langle\sigma_{peers}\rangle, \quad \gamma \in [0,1]$$
+
+- $\gamma \to 0$：算子只与过去的自己比较（绝对参照，低社会耦合）；
+- $\gamma \to 1$：基准线完全由集体 $L_2$ 势阱中心 $\langle\sigma_{peers}\rangle$ 决定（纯相对参照，高社会耦合）；
+- $\gamma$ 由算子参数 θ 决定，受文化 $L_2$、具身历史、当前 d-value 共同塑造。
+
+系统感受的偏差（张力）为：$\Delta\sigma = \sigma_{self} - \sigma_{ref}(\theta)$。
+
+**地位摩擦（社会性 $\Psi_f$）**：
+
+当实际状态低于参照点时，产生社会性本体论摩擦（地位焦虑）：
+
+$$\Psi_f^{relative} = \lambda(\theta) \cdot \max\!\big(0,\; \langle\sigma_{peers}\rangle - \sigma_{self}\big)$$
+
+- $\max(0, \dots)$（ReLU 形式）捕捉比较的**不对称性**：落后于群体产生真实摩擦代价，领先群体则不产生此类摩擦；
+- $\lambda(\theta)$ 为地位焦虑个体敏感系数（抗压能力的参数化表达）；
+- $\Psi_f^{relative}$ 直接进入 Ax-Ag-3 的行动势能：$P_{action} = \alpha(\theta) \cdot \mathbb{E}[R] - \beta(\theta) \cdot (\Psi_f + \Psi_f^{relative})$。
+
+**参照群体的拓扑生成（Topology of Peers）**
+
+「他人」不是客观给定的物理邻近者，而是算子 $\hat{G}_\theta$ 基于 d-value 主动划定的拓扑子集：
+
+- **d-value 的广度约束**：低 d-value 个体参照系局限于熟人网络；d-value 扩张引入跨地域、跨时代的比较对象（高 d-value 个体可能与历史人物比较）；
+- **$L_2$ 的维度绑架**：现代社交媒体作为强 $L_2$ 协议，通过算法将远端极端高值强行拉入个体的 $\mathcal{P}_{ref}$，人工抬高 $\langle\sigma_{peers}\rangle$——导致绝大多数算子的 $\Psi_f^{relative}$ 持续大于零，解释了现代社会普遍的地位焦虑与行动势能（$P_{action}$）的系统性衰竭。
 
 ---
 
@@ -719,8 +745,14 @@ SRT_Soc_02_Behavioral ← 你在这里
 └── SRT_SocTheory_04-06 (高级理论)
 ```
 
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义行为逻辑与博弈论的 SRT 映射。价值以当前 $L_1$ 参照点为基准，损失厌恶是去锚定成本 (Ax-Beh-1)；系统1 沿 $L_2$ 梯度执行默认选择，系统2 探索 $L_0$ (Ax-Beh-2)；纳什均衡是 $L_2$ 的拓扑稳定不动点 (Ax-Beh-4)；合作强度由 $d$-value 承认通道决定 (Ax-Beh-5)；煤气灯效应是对 $\theta$ 精度参数的系统性破坏 (Ax-Beh-5b)。
+
+### Mechanism Explanation (机制解释)
+- **Mechanism**: $\hat{G}_\theta$ 的双系统动力学由能量与 $\Psi_f$ 的折中决定——系统1 以最小摩擦沿 $L_2$ 默认路径执行选择，系统2 消耗额外能量 ($E_{truth}>E_{default}$) 探索 $L_0$ 新解。$\Psi_f$ 在博弈中可被武器化：认知破坏 (Sabotage) 通过最大化对手的 $\Psi_f$ 获利。$d$-value 通过承认通道 $R_{ij}=\min(d_i[j],d_j[i])$ 决定合作稳定性——去人化等于该通道的拓扑断裂。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
-2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
