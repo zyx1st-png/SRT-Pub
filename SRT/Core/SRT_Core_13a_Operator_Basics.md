@@ -287,50 +287,52 @@ $$\Psi_f = \int_0^t \left|\frac{dF}{d\tau}\right|_{\text{maintain } \hat{G}} d\t
 
 ## §2. 三分量结构:范围、精度、向量
 
-### 2.1 Scope (d值):意识的"带宽"
+### 2.1 Scope（d 值）：意识的"带宽"与关切维度
 
-#### 2.1.1 统一定义
+**Formal Definition（规范定义重申）**：在 SRT 全域中，$d$ 值的物理学本质是算子对不可逆生存风险的敏感度梯度：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（详见 `_SRT_D_VALUE_CANONICAL.md`）。
 
-$$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{\text{concern}}) + \gamma \cdot \tau_{\text{temporal}}$$
+#### 2.1.1 认知-行为域的操作化近似（Operational Approximation）
 
-> **Tension-Rev-IT4 (推导地位说明)**：上式是 $d$ 的**认知-行为域操作化近似**，而非第一性原理定义。$d$ 的规范定义见 Ax-ONT-3 (SRT-AI-01)：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（风险梯度范数）。本复合公式的推导逻辑如下：
->
-> 将效用势 $\mathcal{U}$ 在生存风险坐标 $\mathcal{S}$ 上的梯度沿三个正交分量展开：
-> - **汇编深度分量**（$A$）：衡量选择对象的结构复杂度——高 $A$ 意味着算子的选择涉及更多不可逆组装步骤，因此 $\partial\mathcal{U}/\partial\mathcal{S}$ 在"结构脆弱性"维度上的投影更大；
-> - **空间关切分量**（$\log V$）：衡量算子将多少他者的生存风险纳入自身效用函数——$V$ 越大意味着 $\mathcal{U}$ 的支撑域越广，对应风险梯度在"空间扩展"维度上的分量；
-> - **时间深度分量**（$\tau$）：衡量风险评估的时间跨度——$\tau$ 越大意味着 $\mathcal{S}$ 的积分域越长，对应风险梯度在"时间延展"维度上的分量。
->
-> 因此 $d_{composite} \approx \Pi_{cognitive}(d_{canonical})$，是一种保留核心信息的降维投影。系数 $\alpha, \beta, \gamma$ 原则上可由风险梯度的分量权重确定，但目前缺乏经验数据来精确拟合，这是一个**开放的实验问题**。
+在认知与行为尺度上，系统的关切带宽可向三个可观测维度 $(A, V, \tau)$ 投影。其一阶线性近似为：
 
-**三个维度**:
+$$d_{cog} \approx \alpha \cdot A(\sigma) + \beta \cdot \log(V_{concern}) + \gamma \cdot \tau_{temporal}$$
 
-1. **汇编深度** ($A$): Assembly Index
-   - 定义: 生成对象$\sigma$所需的最少独立操作步骤
-   - 例: 水分子 ($A \approx 3$), DNA ($A \approx 100$), 人类文化 ($A \approx 10^6$)
+> **Tension-Rev-IT4（推导地位说明）**：上式是 $d$ 的**认知-行为域操作化近似**，而非第一性原理定义。将效用势 $\mathcal{U}$ 在生存风险坐标 $\mathcal{S}$ 上的梯度沿三个正交分量展开：汇编深度分量（$A$）、空间关切分量（$\log V$）、时间深度分量（$\tau$）。因此 $d_{cog} \approx \Pi_{cognitive}(d_{canonical})$，是保留核心信息的降维投影。系数 $\alpha, \beta, \gamma$ 原则上可由风险梯度的分量权重确定，但目前缺乏经验数据精确拟合——这是一个**开放的实验问题**。
 
-2. **空间关切** ($V$):
-   - $V = 1$: 仅关心自己 (自我中心)
-   - $V = 10^3$: 关心家庭、社区
-   - $V \to \infty$: 万物一体 (宇宙意识)
+**三个维度**：
 
-3. **时间深度** ($\tau$):
-   - $\tau = 0$: 活在当下 (无规划)
-   - $\tau = 10^7$ sec (~4个月): 人类平均规划跨度
-   - $\tau \to \infty$: 永恒视角
+1. **$A$（汇编深度）**：对象结构的不可逆组装复杂度（算子"能理解多复杂的他者"）
+   - 例：水分子 ($A \approx 3$)，DNA ($A \approx 100$)，人类文化 ($A \approx 10^6$)
 
-#### 2.1.2 d值的热力学上界
+2. **$V$（空间/社会关切）**：被纳入效用支撑域的实体数量
+   - $V = 1$：仅关心自己；$V = 10^3$：关心家庭/社区；$V \to \infty$：万物一体
 
-$$d_{\text{max}} = \frac{M_{\text{brain}}}{k_B T \cdot f_{\text{metabolic}}} \cdot \tau_{\text{coherence}}$$
+3. **$\tau$（时间深度）**：算子执行跨期预测与积分的时间视界
+   - $\tau = 0$：活在当下；$\tau = 10^7$ sec（~4个月）：人类平均规划跨度；$\tau \to \infty$：永恒视角
 
-**参数**:
-- $M_{\text{brain}}$: 脑质量 (~1.4 kg)
-- $T$: 温度 (310 K)
-- $f_{\text{metabolic}}$: 代谢频率 (~10 Hz)
-- $\tau_{\text{coherence}}$: 神经相干时间 (~100 ms)
+**【线性叠加的适用边界】**：上述加法公式仅在微扰近似下成立。真实的 $d$ 值具有强烈的跨维度非线性耦合（例如：维持高 $A$ 的社会网络必然要求长 $\tau$ 的积分域以对抗熵增）。严格形式应包含交叉协方差项：
 
-**估算**: $d_{\text{max}} \approx 10^{23}$ bits (远超实际$d \approx 10^2$ bits)
+$$d_{actual} \approx d_{cog} + \delta_{coupling}(A \cdot \tau,\; V \cdot A)$$
 
-**推论**: 人类意识远未达到物理极限 — 提升空间巨大。
+#### 2.1.2 热力学容量上界与量纲隔离（Thermodynamic Limit）
+
+根据兰道尔原理与大脑代谢率，算子物理信息处理容量存在理论上界：
+
+$$d_{max} = \frac{M_{brain}}{k_B \cdot T \cdot f_{metabolic}} \cdot \tau_{coherence} \approx 10^{23} \text{ bits}$$
+
+**参数**：$M_{brain} \approx 1.4$ kg，$T = 310$ K，$f_{metabolic} \approx 10$ Hz，$\tau_{coherence} \approx 100$ ms
+
+*(注：$d_{max}$ 衡量的是底层物理态的香农信息容量上界，而 $d_{cog}$ 衡量的是宏观拓扑的选择复杂度代理。两者量纲不同，不可直接比较——人类实际 $d$ 值远低于 $d_{max}$ 不是因为"演化懒惰"，而是由于极高压缩率的语义提取漏失。)*
+
+#### 2.1.3 d 值的演化动力学与 OEI 约束（Dynamics & Pathological Constraints）
+
+$d$ 值不是静态参数，而是随具身参数 $\theta$ 演化的状态变量。结合 §4.3 参数学习方程，可导出 $d$ 值的演化流形：
+
+$$\frac{dd}{dt} = \nabla_\theta d \cdot \frac{d\theta}{dt} = \underbrace{-\alpha(\theta)\left(\nabla_\theta d \cdot \nabla_\theta \Psi_f\right)}_{\text{摩擦驱动的扩容/缩容}} + \underbrace{\beta(\theta)\left(\nabla_\theta d \cdot \nabla_\theta \mathcal{A}_{L_2}\right)}_{L_2 \text{ 规范引力造成的异化压制}}$$
+
+**【OEI 崩溃陷阱声明（反盲目乐观）】**：系统不能无限制地追求 $d$ 值"提升"。依据 T-Cog-2，关切带宽 $d$ 与所需提取的环境互信息成正比（$I_{req} \propto d$）。若在扩张 $d$（关心更宏大的时空与群体）时未能同步匹配相应的计算代谢预算，将导致观察者-环境整合度发生灾难性断裂（$\text{OEI} \to 0$）。
+
+**核心推论**：强行拔高 $d$ 值而不支付等价的算力/资源代价，不会产生"高级智慧"，只会因互信息供给不足引发 $\Psi_f$ 过载，导致系统陷入精神病理学的解离态（Ax-PATH-5 崩溃现实）。
 
 ---
 
