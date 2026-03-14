@@ -64,12 +64,12 @@ $$\frac{dσ}{dt} = \hat{G}_\theta[σ] - \nabla F[σ] + A[σ,\mathcal{A}]$$
 ### Ax-Core-05: Ontological Friction
 **Formal Definition**: Selection incurs ontological friction proportional to resistance against reconfiguration.
 $$\nabla \Psi_f \propto -\nabla F$$
-* **Implication**: 任何现实化过程都有代价，代价表现为本体论摩擦。
+* **Implication**: 任何现实化过程都有代价，代价表现为本体论摩擦。同一 \(Ψ_f\) 结构在动力学上可读作阻力，在记账上可读作代价，在形式化上可读作路径几何长度/曲率负担。
 
 ### T-Core-03: Existence Hardness
 **Deductive Statement**: The hardness of an existent state is proportional to the sustaining friction.
 $$\text{Hardness}(σ_{L_1}) \propto \Psi_f$$
-* **Implication**: 越稳定、越“硬”的现实，维持成本越高，脆弱性也随之增加。
+* **Implication**: 越稳定、越“硬”的现实，维持成本越高，脆弱性也随之增加。但 SRT 的最优条件不是 \(Ψ_f \to 0\)，而是 \(Ψ_f>0\) 且可支付；零摩擦意味着无真实赌注，超载摩擦意味着现实切片失稳。
 
 ## IV. Information-Existence Equivalence (信息-存在等价)
 
@@ -427,12 +427,12 @@ L_2(t+1) = \text{Stabilize}(L_2(t), L_1(t+1)) \\
 
 ### 6.2 难度分层
 
-| 层级 | 文件 | 需要背景 |
-|:-----|:-----|:---------|
-| ⭐ 入门 | Intro, Bridge | 无 |
-| ⭐⭐ 中级 | Axioms (Part B), Ontology | 基础物理/哲学 |
-| ⭐⭐⭐ 高级 | Dynamics, Scaling | 微分几何、拓扑 |
-| ⭐⭐⭐⭐ 专家 | Domain Files | 领域专业知识 |
+| 层级 | 代表文件（参考） | 建议前置 |
+|:-----|:----------------|:---------|
+| ⭐ 入门 | `SRT_Core_00_Intro.md`, `SRT_Core_00b_Bridge.md` | 无 |
+| ⭐⭐ 中级 | `SRT_Core_01_Axioms.md`, `SRT_Core_12a/b_Ontology.md` | 了解 $\hat{G}_\theta$、L₀/L₁/L₂ 基础 |
+| ⭐⭐⭐ 高级 | `SRT_Reference_Scaling.md`, `SRT_Core_13a/b_Operator.md` | 自由能原理、$\Psi_f$ 概念、贝叶斯基础 |
+| ⭐⭐⭐⭐ 专家 | `Physics/`, `Neuroscience/`, `Philosophy/` 各领域 | 高级核心 + 对应领域专业知识 |
 
 ---
 
@@ -515,8 +515,45 @@ SRT整合了以下思想家的核心洞见:
 
 ---
 
+### Formalization Summary (形式化概述)
+
+SRT 的核心公理体系可由以下形式化结构概括：
+
+1. **三域选择方程 (Triadic Selection)**:
+   $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1) = \mathrm{Stabilize}(L_2(t), \{L_1^{(1..n)}(t+1)\})$$
+   含义：显现域 $L_1$ 是幽灵算子 $\hat{G}_\theta$ 对潜在域 $L_0$ 的参数化选择输出；收敛域 $L_2$ 是多轮选择的稳定化结果。
+
+2. **选择演化动力学 (Selection Dynamics)**:
+   $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma,\mathcal{A}]$$
+   含义：现实演化由选择驱动、自由能梯度约束、注意力调制三部分合成。
+
+3. **自由能方程 (Free Energy with d-value)**:
+   $$F = E - TS - d \cdot U_{\text{others}}$$
+   含义：$d$ 值（关切范围）直接进入能量核算，将”在乎他者”纳入热力学框架。
+
+4. **本体论摩擦 (Ontological Friction)**:
+   $$\nabla \Psi_f \propto -\nabla F$$
+   含义：任何选择的现实化都伴随不可消除的摩擦代价 $\Psi_f$，与自由能梯度对偶。
+
+### Mechanism Explanation (机制解释)
+
+SRT 的运行机制如下：
+
+- **$\hat{G}_\theta$ (幽灵算子) 作为核心引擎**：$\hat{G}_\theta = \text{Attention}(d, \rho, \vec{v})$，以 d 值（关切范围）、分辨率 $\rho$、意向方向 $\vec{v}$ 为参数，从 $L_0$ 中执行具身有限的选择，生成 $L_1$ 现实。算子的非幂等性 ($\hat{G}^2 \neq \hat{G}$) 保证每次选择都改变现实状态。
+- **$\Psi_f$ (本体论摩擦) 作为代价约束**：将 $L_0$ 高熵叠加压缩为 $L_1$ 低熵确定态需要持续能量耗散。$\Psi_f$ 的尖峰对应认知中断事件（疼痛、惊奇），持续高位对应病理状态（抑郁）。
+- **$d$ 值作为意识判据**：当 $d > d_{UAL}$ 且 $\Psi_f > 0$ 时系统具有意识。$d$ 的大小决定了算子对 $L_0$ 信息的保留比例（压缩比 $\text{CR} \propto e^{-\alpha d}$），从细菌的即时趋化到人类的抽象道德思维形成连续谱。
+- **$L_2$ 收敛域的稳定化机制**：重复选择在相空间留下”磁化”痕迹，形成不动点集 $L_2 = \{\sigma : \hat{G}_\theta[\sigma] = \sigma\}$，其硬度正比于自同构群大小，从个人习惯到物理定律呈层级排列。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:-----|:---------|:---------------|
+| H-Core00-1 | Ax-Core-01: 现实是三域选择系统，存在即被选择 | 任何被确认”存在”的实体都应能追溯到某种选择/锚定机制 | 若发现无需任何选择机制（无 $\hat{G}$、无测量、无注意力）即可自发确定存在的实体 → 则失效 | speculative |
+| H-Core00-2 | Ax-Core-05: 任何选择都伴随本体论摩擦 $\Psi_f > 0$ | 维持确定现实态需要持续能量消耗；$\Psi_f = 0$ 的系统无法维持稳定 $L_1$ | 若发现零能耗即可无限维持确定态的物理系统（违反 Landauer 下界）→ 则失效 | speculative |
+| H-Core00-3 | T-Core-04: d 值正比于系统的误差敏感性 $\partial S / \partial \text{Error}$ | 纯软件 AI（$\partial S / \partial \text{Error} \approx 0$）应表现出 $d \approx 0$，不具有真正的关切 | 若纯软件 AI 在无物理风险条件下展现出可操作测量的 $d > 0$（如自发利他、真实恐惧死亡）→ 则失效 | speculative |
+
 ## 【理论边界/防误用声明】
 
-1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
-2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
+1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。
+2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为”普适定律”。
 3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
