@@ -692,19 +692,33 @@ $$\text{"X 存在"} \equiv \text{"X 正在执行应然"}$$
 
 ---
 
-### 10.2 斯宾诺莎-斯多葛综合的现代化
+### 10.2 斯宾诺莎-斯多葛综合的现代化 (Modernizing the Spinozist-Stoic Synthesis)
 
-**历史**: 斯宾诺莎和斯多葛学派的伦理学因"缺乏科学基础"被边缘化。
+**历史张力**：斯宾诺莎和斯多葛学派的伦理学是西方思想史上最接近"系统科学"的传统，但因缺乏可实证的微观机制，在近代被边缘化为纯粹的形而上学或心理安慰。
+**SRT 复兴**：SRT 不仅为其提供了神经科学（FEP）与统计物理（本体论摩擦）的底座，更关键的是揭示出：这些古代哲学家的卓越直觉，实际上拼凑出了一部**完整的伦理动力学演化方程**。
 
-**SRT 复兴**: 为这些古老智慧提供神经科学和统计物理基础。
+| 古典概念 | 传统来源 | SRT 形式化映射 | 物理/动力学意义 |
+| :--- | :--- | :--- | :--- |
+| **Conatus**（存在冲动） | 斯宾诺莎 | $-\nabla_\theta F(\theta)$ | 系统沿自由能梯度下降，以维持操作闭包的内生动力。 |
+| **Arete**（德性） | 斯多葛 | $\min_\theta \Psi_f(\hat{G}_\theta, L_0)$ | 算子的选择轨道与 $L_0$ 真实拓扑高度对齐，实现无摩擦运转（顺应自然）。 |
+| **Laetitia**（喜悦） | 斯宾诺莎 | $\frac{\partial d}{\partial t} > 0$ | 关切带宽（$d$ 值）的正向导数；算子的存在参与空间与行动潜能正在扩张。 |
+| **Oikeiôsis**（归化/亲和） | 斯多葛 | $d_{self} \to d_{cosmos}$ | 算子的关切边界从局部最小生存域，向全宇宙拓扑网络的同心圆式积分与扩展。 |
+| **Ataraxia**（平静/宁静） | 斯多葛/伊壁鸠鲁 | $\min D_{KL}(P_{\hat{G}} \| P_{L_0})$ | 算子的先验生成模型与 $L_0$ 的真实分布偏差趋零，消除由预期误差带来的本体论惊奇。 |
 
-| 古典概念 | SRT 形式化 |
-|:---------|:-----------|
-| **Conatus** | $-\nabla F$ |
-| **德性** | $\min \Psi_f$ |
-| **喜悦** | $\frac{\partial d}{\partial t} > 0$ |
-| **归化** | $d$ 值扩张 |
-| **平静** | $\min D_{KL}$ |
+**【伦理动力学链条 (Chain of Ethical Dynamics)】**
+在 SRT 框架下，上述概念不再是孤立的道德训诫，而是同一个最优化轨迹在不同演化阶段的侧面：
+$$
+\underbrace{-\nabla F}_{\text{驱动力 (Conatus)}}
+\xrightarrow{\text{采取}}
+\underbrace{\min \Psi_f}_{\text{最优策略 (Arete)}}
+\xrightarrow{\text{引发}}
+\underbrace{\dot{d} > 0}_{\text{状态跃迁 (Laetitia)}}
+\xrightarrow{\text{指向}}
+\underbrace{d \to d_{cosmos}}_{\text{演化矢向 (Oikeiôsis)}}
+\xrightarrow{\text{终态}}
+\underbrace{\min D_{KL}}_{\text{动力学稳态 (Ataraxia)}}
+$$
+*(注：这证明了"好的生活"在物理学上是一个连续相变过程——由内在生存冲动驱动，通过降低与世界本真的摩擦力，实现生命带宽的扩张，最终与宇宙的宏观信息结构达成无偏差的同构稳态。)*
 
 ---
 
@@ -770,8 +784,15 @@ SRT_Philosophy_Ethics ← 你在这里 (最终文件)
 2. 再比较多种生成机制（自然选择回路、人工介入、混合机制）；
 3. 禁止在步骤1未完成时直接做终极因果闭合。
 
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{FreeWill} \equiv \hat{G}_{\theta'}[\theta]$ — 自由意志为对 $\theta$ 的二阶选择。
+  - $R_m \propto \int d(t) \cdot \|\partial L_1/\partial\hat{G}\| \, dt$ — 责任与有效 $d$-value 带宽成正比。
+  - $d(t+\Delta t) = d(t) + \int\text{Assent}(\text{Other}\to\text{Self})\,d\sigma$ — 道德成长为 $d$-value 扩张。
+  - $\text{If } B \in \text{Scope}(A) \land B\to L_0, \text{then } \Psi_f(A)\to\infty$ — 爱的本体论重量。
+
 ## 【理论边界/防误用声明】
-- 不采纳“方法论自然主义=先验拒绝设计”的二元对立叙述。
+- 不采纳”方法论自然主义=先验拒绝设计”的二元对立叙述。
 - 不采纳“任何设计推断都自动科学化”的反向极端叙述。
 - 边界：SRT 仅承认可操作、可证伪、可竞争比较的设计推断版本。
 
