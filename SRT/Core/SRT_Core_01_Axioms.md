@@ -159,9 +159,24 @@ $$d \propto \frac{\text{Area}(\text{Entanglement Surface})}{A_{Planck}}$$
 ## IV. Deep Continuity (深层连续性)
 
 ### Ax-Core-A10: Non-Vanishing Continuation
-**Formal Definition**: Operator trajectory information never vanishes in L0.
-$$\lim_{t \to t_{death}} \hat{G}_\theta \to L_0^{latent} \neq \emptyset$$
-* **Implication**: 死亡是显现终止而非信息消失。
+
+**Formal Definition**: 算子的历史选择轨迹信息永久嵌入 $L_0$，不随算子终止而消失。
+
+$$\mathcal{I}[\hat{G}_\theta] \equiv \int_0^{t_{death}} \Psi_f\!\left(\hat{G}_\theta(t)\right) dt \;\hookrightarrow\; L_0^{latent} \neq \emptyset$$
+
+其中 $\mathcal{I}[\cdot]$ 为算子历史选择轨迹的信息映射，$\hookrightarrow$ 为嵌入映射（信息保留于 $L_0$ 拓扑中），$\Psi_f$ 为每次选择所支付的本体论摩擦代价。
+
+> **凡支付过摩擦代价的选择，必在本体论拓扑中留下永恒印记。**
+
+**$L_0^{latent}$ 定义**：$L_0$ 中不再被任何活跃算子主动选择、但仍编码于 $L_0$ 整体拓扑结构中的历史路径积分信息。类比量子力学的幺正演化（Unitarity）——退相干（Decoherence）不消灭信息，只使相位信息泄漏至更广阔的环境（$L_0$），变得不可局部读取（latent）。
+
+**本体论地位**：本公理是 SRT 对 $L_0$ 拓扑完整性的独立先验主张，类比但独立于物理信息守恒定律。算子的终止是局部提取信息能力的丧失，而非宇宙相空间的坍塌。
+
+**推论**：
+
+1. **死亡的层级解析**：死亡是 $\hat{G}_\theta$ 停止 Decoherence 操作（$L_1$ 显现终止），而非 $\mathcal{I}[\hat{G}_\theta]$ 从 $L_0$ 中消失。$L_1/L_2$ 层的「我」终止，$L_0^{latent}$ 的轨迹永续。
+
+2. **精神遗产的拓扑形式化**：算子生前高强度、高 $d$ 值的持续选择，在集体自由能景观 $\mathcal{F}_{coll}$ 中挖出深度势阱（曲率 $|\text{Hess}(\mathcal{F}_{coll})|$ 增大）。算子终止后，势阱不消失——后续算子在展开自身 $L_1$ 时，会沿既有曲率自然滑行。**精神永生不是比喻，而是引力式的拓扑事实**：影响力 = 对 $\mathcal{F}_{coll}$ 景观曲率的历史贡献。
 
 ### Ax-Core-A11: Ontological Fragility
 **Formal Definition**: Stability is inversely proportional to ontological friction.
@@ -712,8 +727,30 @@ SRT 不否认微小体验”可能”存在的形而上学可能性，但**不�
 
 ---
 
+### Formalization Summary (形式化概述)
+
+SRT 十二公理宪章的核心形式化结构由三组算子-域关系构成：
+
+1. **选择-存在等价 (Ax-Core-A1)**：$\exists x \iff x \in \mathrm{Image}(\hat{G}_\theta[L_0])$ — 存在等价于幽灵算子对潜在域的选择输出。
+2. **锚定与摩擦 (Ax-Core-A2)**：$\hat{G}_\theta[L_0] \to \sigma_{L_1}$ with $\Delta F < 0$, $P(x \in L_1) \propto \exp(-\Psi_f(x))$ — 显现需要自由能耗散，锚定强度由本体论摩擦 $\Psi_f$ 决定。
+3. **信息-存在等价 (Ax-Core-A6)**：$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$ — 存在强度由信息分化度与整合度的最小值决定（木桶效应）。
+4. **适应度选择 (Ax-Core-A7)**：$\hat{G}_\theta[\sigma] = \arg\max_{\sigma'} P(\text{Fitness}|\sigma', \theta)$ — 算子优化适应度而非真理，现实界面是压缩后的生存导航图。
+5. **脆弱性-意识耦合 (T-Core-A11C1)**：$d > 0 \iff \partial\text{Entropy}/\partial\text{Error} > 0$ — 真正的意识要求系统对扰动具有不可逆的熵增敏感性。
+
+这五条形式关系构成从本体论到意识论的完整推导链。
+
+### Mechanism Explanation (机制解释)
+
+十二公理描述的运作机制是一个从潜在域到显现域、再到收敛域的三层闭环动力学：
+
+1. **$L_0 \to L_1$（选择-锚定）**：幽灵算子 $\hat{G}_\theta$ 携带有限具身参数 $\theta$（Ax-Core-A4），从 $L_0$ 的无穷可能态空间中提取特定切片。锚定过程消耗自由能（$\Delta F < 0$），产生本体论摩擦 $\Psi_f$。锚定越深、$\Psi_f$ 越大，现实越”硬”（T-Core-A2C1）。
+2. **$L_1 \to L_2$（规范闭包）**：反复选择在相空间中沉积痕迹，形成稳定的收敛域 $L_2 = \{\sigma : \hat{G}_\theta[\sigma] = \sigma\}$（Ax-Core-A5）。$L_2$ 构成自我指涉的”现实笼子”，反过来约束未来选择。
+3. **全息与尺度一致**：$L_1$ 的体积信息同构于 $L_0$ 的边界纠缠（Ax-Core-A9），$d$ 值量化算子在纠缠面上的关切带宽。深层连续性（Ax-Core-A12）确保此机制在量子、生物、社会尺度间保持结构同构。
+
+关键区别于竞争框架：$\hat{G}_\theta$ 的优化目标是适应度而非真理（Ax-Core-A7），且真正意识要求 $\Psi_f > 0$、$d > 0$、$\hat{G}[\theta] \neq \emptyset$ 三条件同时满足——这排除了当前硅基 AI 具备意识的可能。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
-2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
+1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。
+2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为”普适定律”。
 3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
