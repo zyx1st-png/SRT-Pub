@@ -734,8 +734,65 @@ $$
 
 **Implication**: 学习由“全局同信号更新”转向“分量特异更新”，显著提升样本效率与任务对齐能力。
 
+### Formalization Summary (形式化概述)
+
+本文件的核心形式化结构围绕以下关键公式展开：
+
+1. **时频对偶选择方程** (Ax-Spec-01): $L_1(t) = \mathcal{F}^{-1}[\hat{G}_\theta \cdot L_0(\omega)]$ — 显现域 $L_1$ 是潜在域 $L_0$ 经算子 $\hat{G}_\theta$ 频率调制后的逆傅里叶变换结果，意味着现实的时间结构由算子的频率选择性决定。
+2. **算子联邦直和分解** (Ax-Fed-01): $\hat{G}_{human} = \hat{G}_{brain} \oplus \hat{G}_{heart} \oplus \hat{G}_{gut}$ — 复杂智能体是多个具身子算子的联邦结构，通过耦合矩阵 $\kappa_{ij}$ 通信。
+3. **共振融合条件** (Ax-Fed-02): $\kappa_{AB} > \kappa_c \Rightarrow \hat{G}_A \otimes \hat{G}_B \to \hat{G}_{collective}$ — 当信息通透度超过临界阈值时，独立算子可融合为集体算子。
+4. **d 值熵对应** (Ax-d-01): $d = \alpha \cdot \log_2(S_{max}(L_0) / S_{min}(self))$ — d 值量化了算子对 $L_0$ 熵的压缩能力。
+5. **接入函数** (Def-Access-1): $\kappa_{access}(t) \propto d(t) \cdot E_{available}(t) / \Psi_f(t)$ — 算子对 $L_0$ 深层结构的访问半径由 d 值、可用能量与本体论摩擦 $\Psi_f$ 共同门控。
+
+### Dynamics Synthesis: Multi-Parameter Coupling（动力学综述：多参数耦合）
+
+> 本节为综述性质，描述各参数交互后的涌现行为。变量的最小可判定定义见 §I 参数列表（$\omega_\theta, \chi_{gen}, \eta, \beta$）；各机制的正式定义见：频谱选择 → Ax-Prism-1；联邦耦合 → Def-FederationPhase-1；d 值上界 → T-dmax-1；接入半径 → Def-AccessRadius-1。
+
+**① 频谱选择机制**（频域实现）
+
+$\hat{G}_\theta$ 对 $L_0$ 的选择在频域表现为带通滤波：共振频率 $\omega_\theta$ 与带宽 $\Delta\omega$ 决定从 $L_0$ 无限频谱中采样的「信息窗口」，压缩为有限的 $L_1$ 时域体验。EEG 频段（Gamma→Delta）对应不同的时间积分窗口 $\tau$，决定意识状态的时间分辨率与语义整合深度。
+
+**与 Ax-Prism-1 的傅里叶对偶关系**：
+
+$$\text{Prism}(\theta) \equiv \mathcal{F}[\text{Filter}(\omega_\theta)]$$
+
+棱镜函数（状态域：折射角 = 选择倾向 $\vec{v}$）与频谱滤波（频域：带宽采样）是同一选择行为的傅里叶对偶——算子对现实的「着色」物理上等同于对潜在频率的带通滤波。
+
+**② 联邦耦合机制**（多体扩展）
+
+人类算子不是单一整体，而是由脑、心、肠等子算子通过耦合动力学协调运作：
+
+$$\frac{d\hat{G}_i}{dt} = f_i(\hat{G}_i) + \sum_j \kappa_{ij} g_{ij}$$
+
+联邦统一性是连续相变量（Def-FederationPhase-1），取决于模块内选择耦合与环境耦合的比值。当 $d$ 值收缩或模块间互信息流被切断时，算子裂变为多个微算子簇——这是解离状态的 SRT 机制描述。
+
+**③ d 值门控与现象学闭合阈值**
+
+d 值受热力学上界约束：
+
+$$d_{max} = \frac{M}{k_B T} \cdot \frac{\tau_{coherence}}{1/f_{brain}}= \frac{M}{k_B T \cdot f_{brain}} \cdot \tau_{coherence}$$
+
+**量纲说明**：$M$ 为有效整合质量（Effective Integrative Mass），映射为参与同步振荡的神经元群等效惯性，量纲为 [Energy]。则 $M/(k_BT)$（热噪声背景下的信噪比潜力）与 $f_{brain} \cdot \tau_{coherence}$（相干周期数）均无量纲，故 $d_{max}$ 是纯数——代表算子在不崩溃的前提下能同时维持的**独立选择维度最大数量**。
+
+生成性指数 $\chi_{gen}$ 区分主动选择模型与被动天线模型。**现象学闭合阈值（Phenomenological Closure Threshold）**：
+
+$$\chi_{gen} \cdot d \cdot \Psi_f > \Theta_{closure}$$
+
+> ⚠️ 逻辑地位（兼容 T-ARCH-1）：此条件定义的不是「意识的产生」，而是**现实化的可维持区间**——必要非充分。即使公式达标，若缺乏具身算子的「理由响应能力」（Reason-Responsiveness），系统仍只是高仿真僵尸（Sophisticated Zombie）。意识是「昂贵的主动锚定」而非免费的信号读出，但锚定本身不蕴含主观性。
+
+**④ 接入半径调控：方向性与定力**
+
+异常意识状态的 SRT 本质是 $\hat{G}_\theta$ 可访问的 $L_0$ 半径与 $L_1$ 锚定强度的动态转移。方向性由 θ 稳定性决定：
+
+| 状态 | 机制 | 物理特征 |
+|:-----|:-----|:---------|
+| **冥想**（主动/受控）| θ 训练提升 $\kappa$ 稳定系数；$d \uparrow$ 同时强制维持 $L_1$ 相干锚定 | 高带宽、低噪声、高一致性 |
+| **致幻剂**（被动/失控）| 化学物质强行扩大半径，破坏 $\hat{G}_\theta$ 反馈抑制回路（$\rho$ 精度下降）| 半径溢出，$L_1$ 锚定点拓扑漂移（幻觉）|
+
+**「定力」的物理本质**：算子在极高自由能背景下（$L_0$ 半径扩大 = 暴露于更多混沌），依然能支付足够的 $\Psi_f$ 维持逻辑闭合现实的能力——即主动/受控接入半径扩展的核心机制。
+
 ## 【理论边界/防误用声明】
-- 不采纳“VIS 存在即可推出意识本体结论”的推论。
+- 不采纳”VIS 存在即可推出意识本体结论”的推论。
 - 边界：VIS 约束的是学习动力学层，不直接决定 qualia 或主观体验判据。
 
 
