@@ -567,16 +567,29 @@ P_{in}>P_{diss}+P_{maint},\quad \frac{d\theta}{dt}\neq 0
 \frac{d\Psi_f}{dt}\uparrow \quad \text{if}\quad \mu(\mathcal{U}_{inc}\cap \mathcal{E}_{env})\uparrow
 \]
 
-### T-Scale-4: Incompleteness-to-Upgrade Transition
-若系统满足
-\[
-\Psi_f > \Psi_{crit}\ \land\ V>0
-\]
-则仅靠原参数无法维持稳定，必须发生其一：
-\[
-\theta\to\theta'\quad \text{or}\quad \hat G_n\to\hat G_{n+1}
-\]
-即层级跃迁由“不可处理张力”触发，而非任意复杂化。
+### T-Scale-4: Tension-Driven Phase Transition（张力驱动的相变定理）
+
+**触发条件**：当本体论摩擦与累积违规度同时超过临界阈值：
+
+$$\Psi_f > \Psi_{crit} \quad \land \quad V(t) > V_{crit}$$
+
+其中违规度（Violation Index）定义为时间窗口 $\tau$ 内的持续性描述误差积分：
+
+$$V(t) = \int_{t-\tau}^{t} \big\| \hat{G}_\theta[L_0] - L_1^{actual} \big\|^2 \, dt$$
+
+$V(t) > 0$ 表示算子的 $L_1$ 模型与实际 $L_0$ 信号之间存在原参数 θ 无法消化的持续性残差。
+
+**相变三岔口**：条件满足时，系统必须发生以下三种路径之一：
+
+| 路径 | 形式 | 判别条件 |
+|:-----|:-----|:---------|
+| **参数校准**（Adaptation）| $\theta \to \theta'$ | $V$ 引起的误差可被当前算子拓扑 $\Theta_n$ 内部的新参数组合吸收；可通过梯度下降在原空间求解 |
+| **层级跃迁**（Emergence）| $\hat{G}_n \to \hat{G}_{n+1}$ | $V$ 超出 $\Theta_n$ 的表达维度，但系统剩余势能 $P_{action}(\theta,t) > 0$，足以支付升维代价 |
+| **算子崩溃**（Collapse）| $\hat{G}_n \to \emptyset$ | $V$ 超出 $\Theta_n$ 表达维度，且 $P_{action} \leq 0$，系统无力支付升维代价，锚定失效（OCF，见 Def-Path-1）|
+
+**库恩对应**：「常态科学」= $\theta$ 参数校准；「范式革命」= $\hat{G}_{n+1}$ 层级跃迁。细菌数十亿年维持原态，因为其生态位内 $V(t)$ 从未持续超过 $V_{crit}$。
+
+**Implication（反目的论立场）**：演化不是任意的进步，而是对「不可处理张力」的绝望防御。系统不会因为「有能力变得更复杂」而升级，只在「不升级就会崩溃」的临界点才被迫重构——能够通过参数校准（换内存）解决的绝不升维；无法校准且支付不起升维代价的，直接解体。复杂意识与高等社会结构的涌现，是系统被环境极度凶险逼出来的局部负熵代价，而非目的论的进步。
 
 ### 分类映射表（Tangled Hierarchy / Meta-simulation → SRT）
 
