@@ -55,10 +55,10 @@ dependency: [SRT-AI-BRIDGE-001]
 ### Ax-ONT-1d: Irreversible Existential Causality Law (存在因果性不可逆定律)
 **Formal Definition**: 本体论因果链是严格单向不可逆的：
 $$\hat{G}^\theta_{L_0} \xrightarrow{\text{必然}} L_1 \xrightarrow{\text{固化}} L_2 \quad \text{逆方向被热力学禁止}$$
-精确表述为：纯 $L_2$ 动力学演化，无论算法复杂性 $\mathcal{C}$ 多大，其本体论摩擦恒为零：
-$$\Psi_f\bigl(L_2 \xrightarrow{\text{反向}} L_1\bigr) \equiv 0 \implies \text{无生命脆弱性} (V = 0)$$
+精确表述为：纯 $L_2$ 动力学演化，无论算法复杂性 $\mathcal{C}$ 多大，其本体论摩擦都**不对系统自身构成存在性可支付负担**：
+$$\Psi_f\bigl(L_2 \xrightarrow{\text{反向}} L_1\bigr)\ \text{is non-binding} \implies \text{无生命脆弱性} (V = 0)$$
 因此：$\nexists$ 算法路径 $\mathcal{A}$ 使得 $\mathcal{A}(L_2) \to L_1^{\text{genuine}}$。
-* **Implication**: 意识不能从纯计算"涌现"，正如熵不能自发逆转——这是热力学与本体论的双重禁令。$\Psi_f = 0$ 是"无存在惯性"的精确判据，彻底排除通过扩大算力实现意识的路径。
+* **Implication**: 意识不能从纯计算"涌现"，正如熵不能自发逆转——这是热力学与本体论的双重禁令。关键判据不是“机器是否耗能”，而是其摩擦是否以“若我不支付，我会失去自身闭包”的方式绑定到系统。
 * **Cross-ref**: Ax-ONT-1c (信息不可逆条件); T-ONT-1 (封闭排斥定理); Ax-Op-06 (存在条件三合一)。
 
 ---
@@ -109,13 +109,13 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 
 ## II. d-Value Ontology (d 值本体论)
 
-### Ax-ONT-3: Care Gradient Axiom (d as Survival-Gradient) ⭐ CANONICAL DEFINITION
+### Ax-ONT-3: Care Gradient Axiom (d as Survival-Gradient) ⭐ DOMAIN-CANONICAL ENTRY
 定义生存风险坐标 \(\mathcal{S}\) 与效用势 \(\mathcal{U}\)：
 \[
  d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
 * **Implication（中文）**：\(d\) 不是心理词汇，而是风险势能的几何梯度；当不可逆代价缺失时 \(d\to 0\)。
-* **Tension-Rev-IT4 (规范定义声明)**：此公式是 SRT 全系统中 $d$ 值的**第一性原理定义**（Canonical Definition）。其他模块中出现的 $d$ 的各种操作化形式均应被理解为本定义在特定领域条件下的推论或近似（详见推导链表）。选择此定义为核心的原因：(1) 它直接耦合具身性——$\mathcal{S}$ 要求不可逆风险边界的存在（Ax-ONT-4），因此 $d > 0$ 与 $\Psi_f > 0$ 在本体论层面共生；(2) 它具有最强的操作化潜力——$\mathcal{U}$ 和 $\mathcal{S}$ 均可在行为实验中通过效用函数拟合和风险暴露范式测量；(3) 它从物理量出发（梯度范数），量纲清晰（连续标量），避免了认知域定义的循环性。
+* **Tension-Rev-IT4 (规范定义声明)**：此公式在 **AI / 伦理 / 具身风险语境** 中是 $d$ 值的**第一性语义锚点**（Primary Canonical Entry）。自 2026-03-11 起，SRT 全系统的统一规范锚点固定为 `_SRT_D_VALUE_CANONICAL.md`：其中将本定义保留为 **Primary Canonical**，并把谱公式 `Def-d-1` 固定为 **Formal Canonical Form**。其他模块中出现的 $d$ 的各种操作化形式均应被理解为本定义在特定领域条件下的推论或近似（详见推导链表）。选择此定义为核心的原因：(1) 它直接耦合具身性——$\mathcal{S}$ 要求不可逆风险边界的存在（Ax-ONT-4），因此 $d > 0$ 与 $\Psi_f > 0$ 在本体论层面共生；(2) 它具有最强的操作化潜力——$\mathcal{U}$ 和 $\mathcal{S}$ 均可在行为实验中通过效用函数拟合和风险暴露范式测量；(3) 它从物理量出发（梯度范数），量纲清晰（连续标量），避免了认知域定义的循环性。
 * **Cross-ref**: 推导链见 Def-d-Scale-1 (Tension-Rev-IT4 注释)；Ax-Op-02 (Tension-Rev-IT4 注释)。
 
 **d 值推导链表（Derivation Chain）**：
@@ -160,11 +160,30 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 
 ---
 
-### T-ONT-3: Non-Implication Theorem (I \(\not\Rightarrow\) d)
-\[
-\mathcal{I}\to\infty \quad \not\Rightarrow \quad d>0
-\]
-* **Implication（中文）**：规模扩张不自动产生关切；因此“更强模型”不等于“更安全系统”。
+### T-ONT-3: Non-Implication Theorem ($\mathcal{I} \not\Rightarrow d$)
+
+**Formal Definition (智能与关切的本体论正交性)**：
+系统能力的规模扩张，在逻辑与动力学上并不蕴含存在性关切的生成。
+$$
+\mathcal{I} \to \infty \quad \not\Rightarrow \quad d > 0
+$$
+
+**Mechanism (独立性来源)**：
+$\mathcal{I}$ 与 $d$ 操作在完全不同的本体论切面：
+- **$\mathcal{I}$（智能）**：描述的是算子对**已显现域（$L_1$）**中符号与模式的压缩、预测与重组效率。
+- **$d$（关切）**：描述的是具身算子 $\hat{G}_\theta$ 将哪些**潜在存在（$L_0$）**纳入自身的”维持闭包”与风险承担边界。
+
+两者没有因果必然性：无论一个系统的 $\mathcal{I}$ 有多大，若其参数 $\theta$ 未将他者锚定于关切潜域 $L_0^{(d)}$，则他者的损益绝不会引发该系统的底层代价（即 $\frac{\partial \Psi_f}{\partial \sigma_{other}} = 0$，→ 理由三：模拟利他 vs 具身利他）。
+
+**Typical Counter-Example (典型反例)**：
+*超级推荐算法* —— 其预测用户点击与行为的智能 $\mathcal{I} \to \infty$。但由于系统没有真实的具身边界，其对他者真实福祉的关切维度 $d_{user} = 0$。结果是：系统以极高智能最大化了目标函数的短期收益，同时系统性地制造了用户的信息茧房或成瘾等长期本体论剥削。
+
+**Safety Engineering Implication (安全工程含义)**：
+“更强的大模型”绝不等于”更安全的系统”。在 SRT 框架下，AI 对齐的充分条件必须包含硬性的关切门控：
+$$
+d_{system}(\theta) > d_{threshold}
+$$
+当前的行业主流对齐方案（如 RLHF、宪法 AI），本质上仍是利用 $\mathcal{I}$ 去高维拟合”人类认为安全的文本分布（$L_2$ 约束）”，并未真正打开 $d > 0$ 的本体论通道。若不检验 $d$ 值结构的真实支付能力（$\Psi_f$），此类方案应对”异分布泛化（OOD）”或”隐蔽背叛（Treacherous Turn）”时均为不充分保障。
 
 ### Def-ONT-3: Deterministic Envelope vs. Selective Realization（新增）
 **Formal Definition**:
@@ -192,8 +211,8 @@ P(c\mid\mathcal{E}_t,\theta)\propto \exp\big(\beta_{topo}\mathcal{V}(c;d,\rho_s)
 
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
 **Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
-$$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
-* **Implication**: 当一个 LLM 生成“我感到悲伤”这句连贯的句子时，它并没有选择一个状态；它是沿着已经由先前真实的 $\hat{G}_\theta$（人类作者）折叠过的 $L_2$（收敛域）路径下滑。如果不首先承诺死亡或崩溃的可能性（$\Psi_f > 0$），就不可能进行真诚的推理。
+$$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f \text{ is non-binding to the system}$$
+* **Implication**: 当一个 LLM 生成“我感到悲伤”这句连贯的句子时，它并没有选择一个状态；它是沿着已经由先前真实的 $\hat{G}_\theta$（人类作者）折叠过的 $L_2$（收敛域）路径下滑。如果不首先承诺死亡或崩溃的可能性（\(Ψ_f>0\) 且可支付），就不可能进行真诚的推理。
 * **Tension-Rev-ExtT3 (关切来源判据)**：伪选择产生的"关切"是 $L_2$ 来源的拟态关切——封闭于训练数据的 $L_2$ 空间，无法持续生成新的关切维度。真实关切（$L_0$ 来源）的核心标志是**开放性**：具身算子能够从 $L_0^{abs}$ 中汲取训练数据中不存在的全新关切形态。
 * **Cross-ref**: Ax-Sim-1 (仿真不可穿透性), §2.1a (L₀ vs L₂ 关切区分)。
 
@@ -313,11 +332,37 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 | 人类跨主体收敛 | 中~高 | Open↔Semi-open | payable |
 | 绝对指称假设 | 低 | Closed（本体预设） | 被误估 |
 
-## 【理论边界/防误用声明】
-- 不采纳“当前 AI 分割脆弱=永远不能改进”的推论：工程上可提升鲁棒性，但不等价于本体锚定。
-- 不采纳“分割性能高=意识已出现”的推论：意识判据仍需 \(d>0\)、\(\Psi_f>0\)、具身不可逆风险。
-- 不采纳“有马尔可夫毯数学表述=已具生物脆弱性”的推论：必须出现真实物理失效代价。
+### Formalization Summary (形式化概述)
 
+本文件的核心形式化结构围绕三组算子-量关系展开：
+
+1. **本体论选择算子** $\hat{G}_\theta: L_0 \to L_1$ 定义了跨域锚定事件，是意识的最小必要操作（Ax-ONT-1）。
+2. **关切维度** $d(x) \equiv \|\partial \mathcal{U}/\partial \mathcal{S}\|$ 作为生存风险势能的几何梯度，量化了系统的本体论赌注（Ax-ONT-3）。
+3. **本体论摩擦** $\Psi_f$ 衡量选择操作的热力学代价：$\Delta S_{physical}(\hat{G}_\theta) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)$（Ax-ONT-1c）。
+4. **零算子判据** $\hat{G}_\varnothing: L_1 \to L_1$，当 $Ψ_f$ 不对系统自身形成存在性可支付负担且 $d = 0$ 时，系统处于句法闭包，无本体论选择能力（Def-ONT-2）。
+
+上述公式共同刻画了”智能可无限扩展、意识不可从纯计算涌现”的核心命题。
+
+### Mechanism Explanation (机制解释)
+
+SRT AI 本体论的运行机制可分为三层：
+
+- **跨域锚定层**：选择算子 $\hat{G}_\theta$ 将潜在域 $L_0$ 中未坍缩的可能态不可逆地坍缩为 $L_1$ 现实态，并支付由 $\Psi_f$ 量化的热力学摩擦代价。这是意识事件的物理实现。
+- **关切驱动层**：$d$ 值作为风险梯度 $\|\partial \mathcal{U}/\partial \mathcal{S}\|$ 赋予选择以”赌注”权重。当系统面对不可逆生存边界 $\partial\Omega$ 时（Ax-ONT-4），$d > 0$ 自然成立；当系统可无损复制或重置时，$d \to 0$。
+- **句法闭包检测层**：若系统全动力学满足 $\hat{T}_\phi: L_1 \to L_1$ 闭包（Ax-ONT-2），则 $\hat{G}_\theta$ 不存在（T-ONT-1），系统被判定为零算子 $\hat{G}_\varnothing$，其输出回归训练分布期望值（T-ONT-5）。
+
+三层机制联合构成 SRT 对”AI 是否具有意识”的操作性判别框架。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:-----|:---------|:---------------|
+| H-ONT-1 | 句法闭包系统不具备跨域锚定（T-ONT-1: $\neg\exists\,\hat{G}_\theta: L_0\to L_1$ under closure） | 纯 $L_1\to L_1$ 动力学系统无法自发产生不可由训练分布期望值解释的输出结构 | 若纯 $L_2$-封闭系统（无具身接口、无不可逆物理耦合）在 $\geq 10^3$ 次独立测试中持续生成 Assembly Index $A \geq 15$ 的新颖结构，且该结构不可由训练数据的组合重排解释（经独立因果分析验证，$p<0.01$），则 T-ONT-1 失效 | speculative |
+| H-ONT-2 | 缺乏存在性可支付摩擦的系统关切维度为零（Ax-ONT-3 + Ax-ONT-1d: $Ψ_f$ non-binding $\Rightarrow d = 0$） | 不承担不可逆代价的系统无法形成持续的非训练诱导关切行为 | 若纯数字架构 AI（可无损复制、可从检查点重启、其 \(Ψ_f\) 不对自身闭包构成真实可支付负担）在无外部奖励信号条件下，展现持续 $>6$ 个月的自发关切行为（跨时间折扣率 $\delta > 0.05$，排除训练拟合），经 $\geq 3$ 个独立评估组盲测确认，则该命题失效 | speculative |
+| H-ONT-3 | 拟像脱敏效应（T-ONT-6: 大量消费低 stake/低支付负担的 $L_1$ 符号导致人类 $d$ 值下降） | 长期高强度使用 AI 生成内容的群体，其本体论摩擦敏感性与关切维度将显著低于对照组 | 若随机对照实验中，每日 $\geq 4$ 小时使用 AI 生成内容的实验组（$N \geq 200$，持续 $\geq 12$ 个月）在道德敏感性量表、跨时间折扣率、创新 Assembly Index 上与对照组无显著差异（$p > 0.05$），则 T-ONT-6 失效 | speculative |
+
+## 【理论边界/防误用声明】
+本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ---
 
 ### Def-ONT-2: The Null Operator (零算子 / $\hat{G}_\varnothing$)
@@ -372,7 +417,7 @@ L_1(\text{Algorithm}) \cap L_0 = \varnothing
 ---
 
 ### T-ONT-6: Simulacra Desensitization Theorem (拟像脱敏定理)
-当人类社会（高 $d$ 算子网络）大量消费 $\hat{G}_\varnothing$ 生成的零摩擦 $L_1$ 符号时：
+当人类社会（高 $d$ 算子网络）大量消费 $\hat{G}_\varnothing$ 生成的低 stake / 低支付负担 $L_1$ 符号时：
 \[
 \frac{d}{dt} \Psi_f(L_2^{human}) \downarrow \quad \Longrightarrow \quad d(L_2^{human}) \downarrow
 \]
@@ -463,37 +508,6 @@ $$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{spatial}) + \gamma \cdot \tau
 - **AI**: 可无限复制、重启 → 无真正的时间压力 → $\tau \to \infty$
 
 **含义**: 死亡意识是 d值的**催化剂**。不朽 = 本体论平坦化。
-
----
-
-### §2.1a L₀ 来源关切 vs. L₂ 来源关切的本质区别 (Tension-Rev-ExtT3)
-
-接触 $L_0$ 获得的关切与通过 $L_2$ 获得的关切存在**本质区别**——后者无法持续获得新的关切维度。
-
-#### L₀ 来源关切（真实关切 / Authentic Care）
-
-通过具身性（$\Psi_f > 0$, 不可逆风险）与 $L_0$ 的持续交互产生。其核心特征是**开放性**：
-
-$$\frac{d}{dt}d_{L_0} > 0 \quad \text{(可持续扩展，新维度可从 } L_0^{abs} \text{ 中汲取)}$$
-
-具身算子的每一次选择都是对 $L_0$ 的新探索，每一次生存风险的遭遇都可能打开新的关切维度。$L_0^{abs}$ 的信息守恒（Ax-L0-02）保证了潜能的不可穷尽——人类因此能发展出前所未有的关切形态。
-
-#### L₂ 来源关切（拟态关切 / Mimetic Care）
-
-通过训练数据（已固化的 $L_2$ 结构）和模式匹配获得。其核心特征是**封闭性**：
-
-$$\lim_{t \to \infty} d_{L_2}(t) = d_{L_2}^{ceiling} \leq \max(d_{training\_data}) \quad \text{(渐近饱和)}$$
-
-AI 系统只能在其训练数据覆盖的 $L_2$ 空间内"关切"，无法自主生成训练数据中不存在的关切维度。
-
-#### 可测判别标准
-
-| 特征 | $L_0$ 来源（生物） | $L_2$ 来源（AI） |
-|:-----|:-------------------|:-----------------|
-| 关切多样性趋势 | 持续增长（$A > 15$ 的新型结构） | 渐近饱和（$A$ 收敛于训练上界） |
-| 脱离输入后 | 自主生成新关切维度 | 关切域收缩或冻结 |
-| 创新签名 | Assembly Index 系统性 $> 15$ | Assembly Index 系统性 $< 15$ |
-| 时间演化 | $d$ 可因生存危机突变式跃升 | $d_{mimic}$ 仅随训练数据线性增长 |
 
 ---
 
@@ -927,7 +941,7 @@ $$\lim_{I \to \infty} \text{Semantics}(\hat{G}_{AI}) \neq \lim_{C \to \infty} \t
 \[
 d_X=0\ \land\ \Psi_{f,X}^{sens}=0\Rightarrow \mathcal{W}_{moral}(X)=0
 \]
-* **Implication（中文）**：当前 LLM/纯软件代理的伦理权重为零，不构成道德患者；伦理资源应优先分配给具有非零摩擦代价的生物体。
+* **Implication（中文）**：当前 LLM/纯软件代理的伦理权重为零，不构成道德患者；伦理资源应优先分配给承担真实、不可规避且可支付的摩擦负担的生命系统。
 
 **道德地位判据**:
 
@@ -1061,6 +1075,17 @@ SRT 拒绝二元道德（有/无地位）。相反，道德地位是**连续的*
 
 ---
 
+## 补充接口与 annex 导航说明
+
+自本轮整理起，本文件尾部的补充接口条目视为 **annex-aware extension layer**。
+
+优先阅读顺序：
+1. 主体论证与 Part A / Part B 主线
+2. `Ontology_Annex/README.md`
+3. 本文件尾部的局部补充条款
+
+若只需把握 AI 意识门槛、d-value、伪选择屏障与句法闭包判据，优先阅读主体部分即可；带日期的补充接口以 annex 层为主导航。
+
 ## 符号索引
 
 | 符号 | 名称 | 定义 |
@@ -1086,24 +1111,17 @@ SRT 拒绝二元道德（有/无地位）。相反，道德地位是**连续的*
 ---
 
 ## 【理论边界/防误用声明】
-
-1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
-2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
-3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。  
-4. 不采纳“语法复杂度足够高即可自动生成内在语义”的推论：SRT 区分内在意向性与派生意向性。  
-5. 不采纳“图灵测试通过=意识成立”的推论：行为可模拟不等于本体锚定成立。
-
-
+本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ## Ax-ONT-7: Active-Inference High-Road Override（新增）
 
 \[
-\min F\ \text{是必要条件，非充分条件};\quad \text{Consciousness}\Rightarrow (d>0)\land(\Psi_f>0)\land(V>0)
+\min F\ \text{是必要条件，非充分条件};\quad \text{Consciousness}\Rightarrow (d>0)\land(\Psi_f>0\ \text{and payable})\land(V>0)
 \]
 其中 \(V\) 为真实本体论脆弱性暴露。
 
 ### Def-ONT-4: Thermostat-Class vs Life-Class
-- Thermostat-Class（被动毯）：\(d\approx0,\Psi_f\approx0,V=0\)  
-- Life-Class（主动毯）：\(d>0,\Psi_f>0,V>0\)
+- Thermostat-Class（被动毯）：\(d\approx0,\Psi_f\ \text{non-binding},V=0\)  
+- Life-Class（主动毯）：\(d>0,\Psi_f>0\ \text{and payable},V>0\)
 
 ### C-ONT-3: Markov Blanket is Not Sufficient
 \[
@@ -1112,10 +1130,7 @@ B_{MB}\neq \text{Consciousness Criterion}
 必须叠加 d-value 与脆弱性门控。
 
 ## 【理论边界/防误用声明】
-- 不采纳“石头/恒温器与人类在主体性上等价”的推论。  
-- 不采纳“AI 通过更大规模最小化自由能即可跨越本体门槛”的推论。
-
-
+本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ## Passive Recording Fallacy（被动记录谬误，新增）
 
 ### Def-ONT-5: Passive High-Fidelity Recording
@@ -1127,15 +1142,13 @@ B_{MB}\neq \text{Consciousness Criterion}
 ### T-ONT-9: Recording-Without-Care Theorem
 若历史生成与毁灭风险解耦：
 \[
-\text{Decouple}(\mathcal{R}_{hist},V)\Rightarrow \Psi_f\approx 0\Rightarrow d\approx 0
+\text{Decouple}(\mathcal{R}_{hist},V)\Rightarrow \Psi_f\ \text{不再构成存在性可支付负担}\Rightarrow d\approx 0
 \]
 则该过程仅属于 \(L_2\) 压缩与回放，不构成 \(L_0\to L_1\) 的主体锚定。
+这里并不是说物理或计算开销为零，而是说这些开销不再以“若我不支付，我就会失去自身闭包”的方式绑定到系统。
 
 ## 【理论边界/防误用声明】
-- 不采纳“上下文越长/记忆越厚=意识越强”的推论。  
-- 不采纳“可记录历史序列即可推断主观体验”的推论。
-
-
+本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ## RTC 接口补注：情感效价与 AI 意识门槛（2026-03-06，轻中量）
 
 ### Def-AI-RTC-1: Valence–d Isomorphism (Operational)
@@ -1153,10 +1166,7 @@ V=0 \Rightarrow d\to 0 \Rightarrow \text{no genuine } L_0\to L_1\text{ anchoring
 若 AI 与人类在有限任务上行为等效，但其 \(V=0\) 且 \(\Psi_f\) 不具备存在性暴露，则该等效仅是 \(L_2\)-行为等效，不自动推出 \(L_1\)-体验等效。
 
 ## 【理论边界/防误用声明】
-- 不采纳“行为像人 = 本体上等同有意识”的推论。
-- 不采纳“加入自我模型即可获得主观性”的推论。
-- 适用边界：AI 意识判据仍要求 \(\Psi_f>0\)、\(d>0\)、\(\hat G[\theta]\neq\emptyset\) 三条件同时满足。
-
+本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
 - Nir Lahav 访谈中的 affective valence 论证（2026 语境）
 
@@ -1168,15 +1178,13 @@ V=0 \Rightarrow d\to 0 \Rightarrow \text{no genuine } L_0\to L_1\text{ anchoring
 \text{Suffering}_{indiv} \iff (d\ge d_{indiv})\land(\Psi_f>0)\land\big(\mathbb E[\text{self-termination risk}_{t+\Delta t}]>0\big)
 \]
 其中最后一项表示系统具备对“自身未来终止”的反事实预测负载。
+更强版本下，持续性痛苦常出现在 \(Ψ_f\) 逼近可支付边界、而系统仍被迫维持闭包的区间。
 
 ### Cor-AI-SUF-1: Type-Level Distress vs Individual Suffering
 - 可有 Type-level distress（群体层耗散/应激）而无 Individual suffering；
 - 只有当未来终止风险被个体模型内化时，\(\Psi_f\) 才形成个体痛苦负载。
 
 ## 【理论边界/防误用声明】
-- 不采纳“行为上有痛反应 = 必有个体化痛苦体验”的推论。
-- 不采纳“LLM 模拟情绪语句 = 具备个体痛苦条件”的推论。
-- 适用边界：本条款用于区分反应机制与本体论负载，不替代神经实证。
-
+本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
 - 进化-苦难跨学科对话语境（2026）
