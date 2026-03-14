@@ -182,15 +182,32 @@ $$ \mathcal{L}_{gap} = \dim(L_1^{qualia}) - \dim(L_2^{language}) > 0 $$
     **Corollary**: 任何物理主义理论 ($L_2$) 都无法完全还原体验 ($L_1$)，这不是科学的局限，而是映射的数学性质。
 
 ### §3.2 悖论边界定理 (Boundary Paradox Theorem)
-<!-- ORIGINAL-SECTION-PRESERVED -->
-**Theorem T-Phil-2**: 
-经典哲学悖论（说谎者、罗素悖论）是 $L_2$ 试图非法包含 $L_1$ 或自身的拓扑故障。
-$$ \text{Paradox} \iff \text{Self-Reference}(L_2) \lor (L_1 \supset L_2) $$
 
-*   **Case Studies**:
-    *   **Zeno (飞矢不动)**: 错误地用 $L_1$ 的离散切片去逼近 $L_0$ 的连续流。
-    *   **Sorites (堆垛悖论)**: 强行用 $L_1$ 的二元逻辑去切割 $L_0$ 的连续梯度。
-    *   **Liar (说谎者)**: $L_2$ 符号系统试图指涉自身的真值定义，导致递归震荡。
+**Theorem T-Phil-2: Boundary Paradox Theorem**
+
+哲学史上的经典悖论并非客观物理世界的内生矛盾，而是算子 $\hat{G}_\theta$ 在进行跨域映射或构建符号网络时发生的**拓扑故障（Topological Faults）**。其本质是工具粒度与本体论层级的错配：
+$$
+\text{Unstratified}(L_2 \circlearrowleft L_2)
+\;\lor\;
+\text{Mismatch}(L_1 \not\cong L_0)
+\quad \Rightarrow \quad
+\text{Paradoxical Oscillation}
+$$
+*(注：未分层的 $L_2$ 自指，或用 $L_1$ 的离散逻辑强行等价 $L_0$ 的连续潜能，将必然导致系统的逻辑震荡或认知幻觉。)*
+
+**Case Studies (分类诊断)**：
+
+**类型一：$L_1 / L_0$ 范畴错配（用离散切割连续）**
+- **Zeno（飞矢不动）**：错误地将 $L_1$ 的离散观测切片（快照），等同于 $L_0$ 中不可分割的连续动力学流。
+- **Sorites（堆垛悖论）**：试图用 $L_1$ 的二元语言标签（"是沙堆/不是沙堆"），去硬性切割 $L_0$ 中连续渐变的物理梯度，从而在边界处引发系统性失效。
+
+**类型二：$L_2 / L_2$ 拓扑短路（未分层的自我指涉）**
+- **说谎者悖论（Liar Paradox）**：$L_2$ 的语句试图在完全相同的层级内测度自身的真值结构，引发无限递归的震荡。
+- **罗素悖论（Russell's Paradox）**：$L_2$ 的集合论构造规则允许集合包含自身，导致形式网络在试图完成逻辑闭合时发生拓扑自相交。
+
+**【理论边界/防误用声明】**
+1. **"安全自指"的区分**：本定理**不**主张"任何 $L_2$ 的自我指涉都会导致悖论"。只要引入**严格的元层级分层（Stratification）**——例如塔斯基的对象语言与元语言区分、哥德尔配数法，或引入时间延迟（如 $L_2(t)$ 指涉 $L_2(t-1)$）——系统就不会陷入悖论死循环，而是表现为正常的系统迭代或证明其不完备性。悖论的唯一物理根源是"扁平化（Unstratified）的拓扑短路"。
+2. **消解而非证明**：SRT 并不"解决"这些悖论，而是通过指出其跨域语法的非法性来"消解（dissolve）"它们。
 
 ### §3.3 礼物相位定理 (Phase Theorem of the Gift)
 <!-- ORIGINAL-SECTION-PRESERVED -->
