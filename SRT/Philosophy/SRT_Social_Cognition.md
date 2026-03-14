@@ -539,3 +539,117 @@ SRT 不采纳“反表征主义极端化”。健康态不是摧毁 \(L_2\)，�
 1. 不采纳“\(L_2\) 全部无效或必然有害”的推论；\(L_2\) 仍是协作与文明压缩的必要层。  
 2. 不采纳“只要顿悟一次即可永久解脱”的推论；SRT 明确要求慢变量去绑定过程。  
 3. 不采纳“拒绝身份标签 = 拒绝伦理责任”的推论；责任归属仍需制度与情境联合建模。
+
+
+## Cultural Lenses & Care Interface（2026-03-12）
+
+### Def-Soc-CLC-1: Cultural-Lens Apperception Gate
+个体情绪并非仅由内部生理波动直接给出，而是在文化协议参与下被分类、命名并体验：
+\[
+L_1^{affect}(t)=\hat G_{\theta,L_2^{culture}}\!\big[L_0^{intero}(t)\oplus L_0^{social}(t)\big]
+\]
+其中 \(L_0^{intero}\) 表示内感受与生理调节信号，\(L_0^{social}\) 表示公共事件、他人表情与社会氛围；\(L_2^{culture}\) 提供语言、价值、习惯与可接受反应模板。
+
+### T-Soc-CLC-1: Top-Down Goes All the Way Down
+若文化镜片改变，则知觉分类、情绪命名与“何者看似自然”会同步改变：
+\[
+\Delta L_2^{culture}\neq 0
+\Rightarrow
+\Delta \Pi_{apperception}\neq 0
+\Rightarrow
+\Delta E_{felt}\neq 0
+\]
+这意味着文化不是外加解释层，而会下沉到感知与情绪习惯本身。Boas 的“alternating sounds”例子可被读为：连“听见什么”都受先前分类模式影响，更遑论愤怒、羞耻、骄傲或关怀的正当对象。
+
+### Def-Soc-CLC-2: Collective-Care Modulation
+“我何时以一个‘我们’的方式去关切”可被写成个体关切与集体门控的耦合：
+\[
+\mathrm{Care}_i(t)=\mathcal C\big(L_0^{intero,i},L_0^{social},L_2^{culture},A_{joint}\big)
+\]
+其中 \(A_{joint}\) 为共享注意强度。共享注意与情绪强度上升时，个体体验更易进入集体情绪区，但并不必然坍缩为盲目群体心智。
+
+### T-Soc-CLC-2: Crowd Capture vs Reflexive Public
+同样的集体情绪可进入两种不同相位：
+\[
+\text{Crowd-capture}\iff A_{joint}\uparrow \land \mathcal M_{lens}\downarrow
+\]
+\[
+\text{Reflexive public}\iff A_{joint}\uparrow \land \mathcal M_{lens}\uparrow
+\]
+其中 \(\mathcal M_{lens}\) 表示算子对“自己正戴着何种文化镜片”的元觉察能力。前者更接近 Le Bon 式感染与被领袖挟持，后者更接近 Boas 式的反思性公共关切：我参与“我们”，但不把“我们”的惯例直接误当自然本体。
+
+### 分类映射表（Collective Emotion Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 群体感染 / crowd capture | 低~中（高反应低反思） | Closed 倾向 | overloaded / manipulable |
+| 共享仪式性凝聚 / collective effervescence | 中 | Open↔Semi-open | payable |
+| 反思性公共关切 / reflexive public care | 中~高 | Open | payable / plural-stable |
+| 社媒放大回路 / visceral feedback loop | 中回落 | Semi-open→Closed | borderline~overloaded |
+
+### [Lineage/Source]
+- Noga Arikha, *Who am I when I care? Emotion through the lens of Franz Boas*, Aeon (2026).
+- Franz Boas, *Psychological Problems in Anthropology* (1909).
+- Franz Boas, *On Alternating Sounds* (1899).
+- Victor Chung, Rocco Mennella, Elisabeth Pacherie, Julie Grèzes, *Social bonding through shared experiences: the role of emotional intensity*, Royal Society Open Science 11:240048 (2024).
+
+## 【理论边界/防误用声明】
+1. 不采纳“文化完全决定情绪，因此生理普遍性可忽略”的推论；本节明确保留共享内感受/生理底盘。
+2. 不采纳“所有集体情绪都是群体病理”的推论；共享注意与情绪强度也可产生 prosocial bonding。
+3. 不采纳“意识到自己有文化镜片 = 可以彻底脱离镜片”的推论；SRT 只主张部分反身化与治理可能性，而非无条件超越。
+
+
+## Second-Person Schizophrenia Interface（2026-03-13）
+
+### Def-Soc-SPS-1: Reciprocal-Contact Disambiguation
+第二人称互动并不是“检测到某个外物”即可成立，而要求算子在具身回馈中分辨“他者正在响应我”与“我只是碰到了可扰动物体”：
+\[
+L_1^{other}(t)=\hat G_{\theta}^{social}\!\big[L_0^{haptic}(t)\oplus R_{reciprocal}(t)\oplus A_{joint}(t)\big]-\mathcal D_{distractor}(t)
+\]
+其中 \(R_{reciprocal}\) 表示对方回馈与自身动作之间的时序耦合，\(\mathcal D_{distractor}\) 表示同场干扰物。`perceptual crossing` 范式的价值，在于把“感到对方在那儿”操作化为一个可控的互动区分任务。
+
+### T-Soc-SPS-1: Social-Uncertainty Amplification Window
+当系统难以判定当前触觉反馈是否由他者共同调制时，第二人称通道的摩擦会快速上升：
+\[
+\mathcal U_{social}\uparrow \Rightarrow \Psi_f^{second-person}\uparrow \Rightarrow P(\text{misperceive other})\uparrow
+\]
+对精神分裂症语境，SRT 不把问题写成“完全缺失社会能力”，而写成“在高不确定互动中，对 reciprocal affordance 的区分成本、误差积累与恢复速度可能发生系统偏移”。
+
+### C-Soc-SPS-1: Feasibility-First Pathology Clause
+该研究的 pilot 结果显示，患者与对照都能够完成任务，且初步模式大体与既有 perceptual crossing 文献一致。因此更稳妥的 SRT 结论是：
+\[
+\text{Schizophrenia}\not\Rightarrow \neg A_{joint}
+\]
+\[
+\text{Schizophrenia}\Rightarrow \Delta \tau_{disambiguation}\ \lor\ \Delta \sigma_{\epsilon}^{social}\ \lor\ \Delta \Psi_f^{second-person}
+\]
+也就是说，病理窗口更可能落在“互动误差治理参数的重配”，而不是“第二人称世界整体关闭”。
+
+### T-Soc-SPS-2: Social Psychiatry as Coordination Dynamics
+
+若精神分裂症的部分残障来自互动中的误差与不确定性治理失衡（→ 见 C-Soc-SPS-1），则实验重点不应只停留在离线 mindreading 测试，而应转向实时协调动力学：
+\[
+\mathcal M_{psychiatry}^{social}:\ \text{offline attribution} \rightarrow \text{online coordination dynamics}
+\]
+
+驱动机制：SRT 将该转向形式化为对具身门控失衡的捕获——
+
+**门控错配（Gating Mismatch）**：当 $\hat{G}_\theta$ 在 reciprocal coupling 中的误差累积率 $\lambda_{err}(\theta)$ 与恢复时间常数 $\tau_{rec}(\theta)$ 的乘积超过临界值时，第二人称通道的协调即告失效（误差发散）：
+\[
+\text{Gating Mismatch} \equiv \lambda_{err}(\theta) \cdot \tau_{rec}(\theta) > 1
+\quad \text{in online reciprocal coupling}
+\]
+
+这与 SRT 交互通道的本体论摩擦排序一致：
+\[
+\Psi_f^{embodied\text{-}resonance} < \Psi_f^{second\text{-}person} < \Psi_f^{inferential\text{-}L2}
+\]
+越接近真实 reciprocal coupling 的任务，越能激活低摩擦通道，越能客观地看见社交病理并非纯概念缺陷（$L_2$ 缺失），而是具身协调中的门控参数漂移。
+
+### [Lineage/Source]
+- Leonardo Zapata-Fonseca, Aisha Belhadi, Ruben Fossion, Thomas Fuchs, Ani Grigoryan, Shannon Hayashi, Iwin Leenen, Tom Froese, *(Mis)perceiving others: toward a second-person science of schizophrenia*, *Cognitive Systems Research* 96 (2026), DOI:`10.1016/j.cogsys.2026.101458`.
+- OpenAlex / Crossref 元数据与摘要：该文为同行评审正式论文，在线发布日期为 `2026-03-09`；摘要强调 `perceptual crossing`、social haptics、7 名 schizophrenia 患者 pilot、以及“error / uncertainty in social interaction dynamics”的后续假设。
+
+## 【理论边界/防误用声明】
+1. 不采纳“7 人 pilot study 已足以确证精神分裂症社会机制”的推论；当前更适合作为 feasibility window 与实验接口，而非定论。
+2. 不采纳“精神分裂症可被还原为单一 second-person deficit”的推论；妄想、幻觉、药物、异质性与长期病程仍需并行建模。
+3. 不采纳“虚拟触觉 avatar 范式即可替代自然社会生活”的推论；该任务只是高可控的 interaction assay，而非全部现实社交。
