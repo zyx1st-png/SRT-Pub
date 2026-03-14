@@ -48,9 +48,26 @@ $$\text{Agency} \approx d \cdot A$$
 *   **Implication**: 自由意志的“强弱”是可量化的结构指标。
 
 ### Ax-Ag-3: Action Potential Field
-行动启动是 $L_0$ 奖励势与摩擦势的差值。
-$$P_{action} = \alpha \cdot \mathbb{E}[R|L_0] - \beta \cdot \Psi_f$$
-*   **Implication**: 行动迟滞不是道德缺陷，而是势能差不足。
+
+行动启动是算子前向期望奖励势与具身摩擦势的差值，两者均由具身参数 θ 参数化：
+
+$$P_{action}(\theta, t) = \alpha(\theta) \cdot \mathbb{E}_{\hat{G}_\theta}\!\left[R \mid L_0^{(d)}\right] - \beta(\theta) \cdot \Psi_f(X)$$
+
+**参数说明**：
+
+- $\mathbb{E}_{\hat{G}_\theta}[R \mid L_0^{(d)}]$：算子 $\hat{G}_\theta$ 基于当前 $L_0$ 的**前向模拟期望**（J 层判断，非 R 层推算），积分域 $L_0^{(d)}$ 受 d-value 宽度约束——d-value 越窄，算子「看得到」的奖励维度越少，期望值越低；
+- $\alpha(\theta)$：算子对该类奖励的权重，由具身历史、$L_2$ 文化习得和当前生理状态共同决定；
+- $\Psi_f(X)$：执行行动 $X$ 的本体论摩擦代价，随行动规模非线性增长（小习惯 $\ll$ 人生转向）；
+- $\beta(\theta)$：算子对摩擦的敏感度，与 d-value **负相关**：$\beta(\theta) \propto 1/d$——d-value 越宽（怀有高远理想），对摩擦越不敏感，越愿意支付高代价行动。
+
+**行动触发条件**：$P_{action}(\theta, t) > 0$
+
+**推论**：
+
+- **行动迟滞的去道德化**：$P_{action} \leq 0$ 是物理结果，不是道德缺陷。干预路径：① 提升 $\mathbb{E}[R]$（重建意义连接，扩展 d-value）；② 降低 $\Psi_f(X)$（减小行动启动代价）；③ 提升 $d$-value（连带降低 $\beta$，使高摩擦行动变得可支付）；
+- **抑郁的物理模型**：$d$-value 收缩 → $L_0^{(d)}$ 积分域收缩 → $\mathbb{E}[R]$ 骤降 → $P_{action} \leq 0$。「什么都不想做」是探照灯照不到远处奖励的物理结果，而非意志力缺陷；
+- **殉道者/英雄的物理机制**：极高 d-value → $\beta(\theta) \to 0$ → 哪怕面临极高 $\Psi_f$（肉体痛苦、社会阻力），$P_{action}$ 依然 $> 0$；
+- **相容论（Compatibilism）的 SRT 实现**：$P_{action} > 0$ 仅是行动的**物理必要条件**，而非充分因。势能差决定「引擎是否能打火」；打火后的具体选择方向，由 $\hat{G}_\theta$ 的 J 层判断决定（参见 T-ARCH-1）。物理约束行动的可能空间，J 层决定行动的具体内容——道德责任保留在 J 层，不被势能物理化所消解。
 
 ## II. Responsibility & Friction
 
