@@ -445,15 +445,34 @@ K_\theta(X)\equiv K(X\mid\theta,\rho)
 \]
 在同一任务边界下，表征越可压缩，维持其显现边界所需摩擦支付越低，因此在 \(L_1/L_2\) 中越稳定。
 
-### 定义 O19：Underdetermination as Potential Interface（欠定性即潜能接口，新增）
+### 定义 O19：Underdetermination as Potential Interface（欠定性即潜能接口）
 
-given 感觉切片 \(y_t\in L_1\)，其前像集合定义为：
-\[
-\mathcal{P}(y_t)=\{x\in L_0\mid \hat G_\theta(x)\approx y_t\}
-\]
-若 \(|\mathcal{P}(y_t)|\gg1\)，则系统处于欠定接口：对象边界需由算子选择与约束闭包共同生成，而非从输入中直接读出。
+给定感觉切片 $y_t \in L_1$，其前像集合定义为：
 
-* **Implication**：欠定性不是缺陷，而是选择自由与创造性锚定的本体前提。
+$$\mathcal{P}(y_t) = \{x \in L_0 \mid D_{KL}(\hat{G}_\theta(x) \,\|\, y_t) < \varepsilon(\rho)\}$$
+
+其中 $D_{KL}$ 为 KL 散度，$\varepsilon(\rho)$ 为随算子分辨率 $\rho$ 降低而增大的容差函数（$\rho \downarrow \Rightarrow \varepsilon \uparrow \Rightarrow |\mathcal{P}| \uparrow$）。
+
+**本体论自由度（$DOF_{onto}$）**：欠定性的连续谱量化：
+
+| $DOF_{onto}$ | 状态 | 算子行为 | 典型案例 |
+|:-------------|:-----|:---------|:---------|
+| $\approx 0$ | 决定论锁定 | 被动读出，无选择空间 | 简单物理反射、刚体碰撞 |
+| 低（1–10）| 局部歧义 | 模式识别，二选一/多选一 | 鸭兔错觉、多义词 |
+| 高（$10^n$）| 高度欠定 | 主动投影，重度依赖 θ | 罗夏墨迹、复杂社会情境 |
+| $\to\infty$ | 全潜能态 | 自由创作/虚无锚定 | 纯粹 $L_0$ 接入、梦境起始 |
+
+**动力学预测**：本体论摩擦 $\Psi_f$ 随 $DOF_{onto}$ 对数增长——欠定性越高，锚定代价越大。
+
+当 $DOF_{onto} \gg 1$ 时，系统处于欠定接口：对象边界需由算子选择与**自创生闭包**（Autopoietic Closure，见 Ax-ONT-1b）共同生成，而非从输入中直接读出。自创生闭包意指当前 $L_1$ 的锚定反馈维持 θ，形成稳定回路，将从 $\mathcal{P}$ 中选出的 $x$ 锁定为「现实」。
+
+**创造力的 SRT 定义（$\mathcal{C}$）**：
+
+$$\mathcal{C} \propto \frac{|\mathcal{P}(y_t)|}{P(\sigma \mid L_2)}$$
+
+创造力 = 算子突破 $L_2$ 惯性（默认选择路径），在庞大前像集合中锚定低概率但自洽的 $x$ 的能力。前像集合越大（欠定性越高）、选中状态偏离既有规范（$L_2$）越远，创造性越高。若无欠定性，每个刺激只对应唯一现实，系统将永远锁死在 $L_1 = L_2$ 的惰性回路，艺术、科学假说与进化皆不可能。
+
+**Implication**：欠定性定义了系统的演化带宽。高欠定性接口允许算子执行「本体论实验」——通过改变 θ 探索 $L_0$ 中未被 $L_2$ 覆盖的深层结构。**欠定性不是感官的贫瘠，而是现实的肥沃。**
 
 ### 定义 O20：Friction-Minimizing Grouping Principle（最小摩擦分组原则，新增）
 对候选分组 \(\mathcal{G}=\{G_k\}\) 定义目标泛函：
