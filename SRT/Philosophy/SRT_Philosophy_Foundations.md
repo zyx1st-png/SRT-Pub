@@ -1617,13 +1617,22 @@ Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
 \]
 即：若心灵非物理，因果闭包受压；若心灵全物理，主观体验解释受压。
 
-### Def-Phil-MB-2: Layered Realization without Category Collapse
-SRT 采用“分层实现 + 非塌缩”框架：
-\[
-L_0\xrightarrow{\hat G_\theta}L_1\xrightarrow{stabilization}L_2
-\]
-- 允许心理层在实现上依赖物理层（supervenience-compatible）；
-- 但反对把解释层级差异误判为本体论冗余。
+### Def-Phil-MB-2: Layered Realization without Category Collapse（分层实现-非塌缩框架）
+
+SRT 采用”分层实现 + 非塌缩”框架，三域转化链的每个箭头语义严格区分：
+
+$$L_0 \xrightarrow{\hat{G}_\theta} L_1 \xrightarrow{\;\int_{L_2}\;} L_2$$
+
+- $L_0 \xrightarrow{\hat{G}_\theta} L_1$：**选择性涌现**（instantiation）——选择算子 $\hat{G}_\theta$ 从 $L_0$ 中锚定一个 $\theta$-特异的显现态。此过程引入了 $L_0$ 中不存在的信息：具身参数 $\theta$ 的历史轨迹。
+- $L_1 \xrightarrow{\;\int_{L_2}\;}L_2$：**跨算子收敛**（stabilization via social consensus）——多个独立 $L_1$ 显现在反复交互中收敛为共享的 $L_2$ 吸引子。此过程引入了单一 $L_1$ 中不存在的信息：跨主体验证结构。
+
+**非塌缩的正面定义（三条）**：
+
+1. **弱随附而非强还原**：SRT 接受弱随附性（Weak Supervenience：$L_1/L_2$ 的任何差异必有 $L_0$ 差异与之对应），但拒绝强还原（$L_1/L_2$ 可被 $L_0$ 的函数完全决定）。原因：$\hat{G}_\theta$ 是 $\theta$-参数化的，同一 $L_0$ 基底可以涌现出不同的 $L_1$——多重可实现性（Multiple Realizability）在 SRT 中不是例外而是必然结构。
+
+2. **解释不可消除性**：$L_1$ 和 $L_2$ 层的解释（意识、社会规范、意义）不因底层 $L_0$ 描述完备而变得”冗余”（Epiphenomenal）——它们是跨层选择过程的**独立因果信道**，不能被还原为 $L_0$ 的重新描述。
+
+3. **塌缩的操作化判据（可证伪）**：若存在函数 $f$ 使得 $L_1 = f(L_0)$（即 $L_1$ 可被 $L_0$ 的完备描述决定论性重建，无需 $\theta$），则 Def-Phil-MB-2 失效，SRT 退化为标准物理主义还原论。
 
 ### T-Phil-MB-1: Causal Closure Compatibility Theorem
 在不放弃物理因果闭包的前提下，心理因果可被解释为跨层同一事件的双重描述：
