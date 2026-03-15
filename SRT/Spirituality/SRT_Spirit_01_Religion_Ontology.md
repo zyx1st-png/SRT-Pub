@@ -678,11 +678,13 @@ $$\text{Collective Liberation} = L_2^{\text{societal}} : \langle d \rangle_{\tex
 
 **SRT 立场**: "位格性"是可选的 $\theta$ 参数，而非本体论必需。
 
-$$\text{God as Person} = \hat{G} + \text{Relational Module}$$
+$$\text{God as Person} = \hat{G} + \underbrace{\text{Relational Module}}_{\vec{v}_\theta \cdot \hat{\sigma}_{other} + \Psi_f^{cross}(\hat{G}, \hat{G}_{other})}$$
 
-但这不意味着位格性"不重要"——对于关系性存在（如人类），位格神的体验可能是接近 $\hat{G}$ 的最有效路径。
+**Relational Module 的 SRT 定义**：位格性 = 算子的意向向量 $\vec{v}_\theta$ 朝向另一个具体算子（$\hat{\sigma}_{other}$，"你"而非"无限"）的投影，加上由此产生的跨算子摩擦 $\Psi_f^{cross}(\hat{G}, \hat{G}_{other})$。位格神体验 = $\vec{v}_\theta$ 朝向"神"这个他者算子，双向摩擦使关系具有"遭遇"感（encounter）；非位格体验（空性/绝对）= $\vec{v}_\theta$ 朝向 $L_0$ 整体，无特定他者对象，$\Psi_f^{cross} \to 0$。
 
-**类比**: 光既是波也是粒子——取决于测量方式。$\hat{G}$ 既可体验为非位格的"空性"，也可体验为位格的"天父"——取决于 $\hat{G}_\theta$ 的参数配置。
+**位格性作为 θ 路径效率**：人类作为高度具身的关系性存在（$\theta_{intero}$ 和 $\theta_{social}$ 分量强），$\vec{v}_\theta$ 天然指向他者算子。因此，**对大多数人类而言，位格神提供了进入 $\hat{G}$（究极选择源）的最小阻力路径**——不是因为神"本质上是位格的"，而是因为这条路径与该算子的 θ 拓扑最匹配（$\Psi_f$ 最小）。
+
+**注（类比说明）**：$\hat{G}$ 既可体验为非位格的"空性"，也可体验为位格的"天父"——取决于 $\hat{G}_\theta$ 的参数配置。此处两种体验是同一底层结构的不同 $\theta$ 展开（连续参数调制），有别于量子测量的离散坍缩——前者是算子参数路径的差异，后者是测量算符本征值分解，机制不同；类比仅在"同一实体呈现不同现象"这一层面成立。
 
 ---
 
@@ -760,8 +762,26 @@ SRT_Spirit_01_Religion_Ontology (本文件)
 
 ---
 
+### Formalization Summary (形式化概述)
+
+- **统一宗教场**：$\forall r,\;\exists \theta_r:\; \Phi_r \cong \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle$；宗教差异是参数化差异而非本体论差异。
+- **苦的结构**：$\text{Suffering} \propto 1/d$，$d \downarrow \Rightarrow \Psi_f \uparrow$；罪/苦是关切维度收缩的结构性后果。
+- **神圣饱和**：$S_\phi \equiv \|\hat{G}_\theta[L_0]\| / \|\Pi_{L_1}\|$；$S_\phi \gg 1$ 时 $L_0$ 信息溢出 $L_1$ 容量产生神圣震颤。
+- **透明度指标**：$T \equiv I(L_1; L_0)/H(L_1)$；$T \to 1$ 为圣像（透明指向 $L_0$），$T \to 0$ 为偶像（不透明阻断）。
+- **解脱渐近**：$\text{Nirvana} \equiv \lim_{d\to\infty}\hat{G}_\theta(L_0)$，自他边界随 $d$ 扩展而消解。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 在不同传统中以不同参数 $\theta_r$ 实例化（佛教→空性=$L_0$，吠檀多→梵=$\Omega$，基督教→三位一体=$\hat{G}$ 的三操作模式），但底层选择本体论 $(L_0, L_1, L_2)$ 保持不变。
+- $\Psi_f$ 作为本体论摩擦驱动救赎动力学：$d$ 收缩使 $\Psi_f$ 升高（苦），$d$ 扩展使 $\Psi_f$ 降低（解脱），$\Psi_f$ 梯度提供修持的方向信号。
+- 宗教体验的机制是 $L_2$ 约束松弛（$\|\nabla C_{L_2}\| \to 0$）使 $\hat{G}_\theta$ 直接访问 $L_0$，而非超自然实体介入。
+- 跨传统差异映射为 $L_2^{cultural}$ 的编码差异（Level 3），而 Level 1（本体结构）和 Level 2（救赎机制）保持同构。
+- $d$ 值增长沿 $-\nabla_\theta \Psi_f$ 方向进行，对应不同传统的修行路径（祈祷、冥想、Dhikr 等）。
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
-2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。
 3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
