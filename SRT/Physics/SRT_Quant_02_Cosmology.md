@@ -174,14 +174,24 @@ $$\lim_{\Delta t \to 0} P(\sigma_{t+\Delta t} = \sigma_t \mid \hat{G}_\theta \te
 
 ## V. Bio-Quantum Interface (生物量子接口)
 
+> **⚠️ 框架声明（探索性模块）**：本节（§V）在 Penrose-Hameroff **Orch-OR** 框架内探索生物量子与 SRT 选择算子的接口。这是一个**推测性/探索性**模块，非 SRT 的承诺性本体论立场。
+> SRT 在神经科学文献中的**规范立场**是：**退相干理论框架（非 Orch-OR）**，见 `Neuroscience/SRT_Neuro_08_Immune_Dist.md §Ax-Exp-03`（θ_bio→H_env→pointer basis 路径）。两种框架在 SRT 语境下的比较见该文件 §比较注记。任何依赖本节结论的推导须标注「Orch-OR 假设前提下」。
+
 ### Ax-BQ-1 [A1.5.1]: Microtubule as BQSI (微管作为生物量子选择接口)
-微管是 $\hat{G}$ 与量子相干相互作用的物理实现：
+微管是 $\hat{G}$ 与量子相干相互作用的物理实现（Orch-OR 假设）：
 $$ \text{Selection}(Reality) = f(Q_{microtubules}, \text{Intent}) $$
 
 ### Def-BQ-1 [D1.5.1]: Quantum Coherence Threshold (量子相干阈值)
-存在临界量子相干水平 $T_c$：
-$$ Q > T_c \implies \text{主体拥有连续选择能力} $$
-$$ Q < T_c \implies \text{选择机制断裂，意识中断} $$
+
+**量子相干量定义**：此处 $Q \equiv \tau_{coh}/\tau_{deco}$，即生物系统中维持相干的实际时间与退相干时标之比（无量纲）；$Q \in [0, 1]$（$Q=1$ 为完全相干，$Q=0$ 为经典极限）。
+
+存在临界量子相干水平 $T_c \in (0,1)$（Orch-OR 框架内）：
+$$ Q > T_c \implies \text{主体拥有连续选择能力（Orch-OR：微管维持相干完成客观坍缩）} $$
+$$ Q < T_c \implies \text{选择机制断裂，意识中断（Orch-OR：相干性崩溃阻断选择整合）} $$
+
+> **Orch-OR 依赖声明**：「$Q < T_c \Rightarrow$ 意识中断」依赖 Orch-OR 全套假设（微管量子计算、客观引力坍缩），与 SRT 基础框架（意识 = $\Psi_f$ 相变 + d 值涌现，不要求量子相干性）的推导路径不同。在 SRT 的退相干规范框架（Ax-Exp-03）下，$Q < T_c$ 仅意味着 pointer basis 提前固定，不直接导致意识中断。
+>
+> **Cross-ref**（规范路径）：`Neuroscience/SRT_Neuro_08_Immune_Dist.md §Ax-Exp-03`；$T_c$ 的可测代理：EEG gamma 带去同步（退相干替代指标）。
 
 ### T-BQ-1 [T1.5.1]: Anesthesia Mechanism (麻醉机制定理)
 麻醉通过破坏微管相干性使 $Q < T_c$，导致选择机制断裂。
@@ -794,3 +804,66 @@ $$\text{IsStable}(L_2) \iff I(L_2(t+1); L_2(t)) \gg I(L_2(t+1); L_0(t) | L_2(t))
 1. 不采纳“操作不可达 = 本体绝对不存在”的推论；本节区分‘可达存在性’与‘终极本体断言’。  
 2. 不采纳“单一观测失败可宣告事件归零”的推论；需满足时间窗与多算子判据。  
 3. 不采纳“本体论视界可跳过观测误差建模”的推论；阈值必须含仪器与背景不确定度。
+
+
+## Dynamic Vacuum Quantization Window（2026-03-12）
+
+### T-Quant-Cos-DVQ-1: Dispersive-Boundary Quantization Window
+若背景介质同时满足因果色散、对称性约束与自伴边界条件，则离散谱可作为响应结构的涌现结果，而不必先把“量子化”设为原初公设：
+\[
+(\mathcal{D}_{causal}\land \mathcal{S}_{rot}\land \mathcal{B}_{sa})\Rightarrow \mathrm{Spec}(\hat{\mathcal L}_{vac})=\{\omega_n\}_{n\in\mathbb N}
+\]
+在 White et al. (2026) 的动态真空窗口中，
+\[
+\omega_n = D\kappa_n^2,\qquad \kappa_n\propto \frac{1}{n}
+\Rightarrow \omega_n\propto \frac{1}{n^2}
+\]
+从而给出氢样 Rydberg 阶梯的解析实现。
+
+### C-Quant-Cos-DVQ-1: SRT Mapping
+- `L_0` 可被理解为具响应结构的真空载体，而非绝对“空无”。
+- `L_1` 的离散能级不必全都被视为原初断裂，也可在某些窗口中理解为“对称性 + 边界条件 + 因果响应”共同切出的稳定模态。
+- `L_2` 在这里对应的不是社会规范，而是约束该模态族的上层规则：旋转对称、自伴性、边界条件与可支付的色散结构。
+- 这为 SRT 的“选择不是任意创造，而是从高维潜在介质中切出可稳定现实”提供了一个量子侧的形式兼容窗口。
+
+### Def-Quant-Cos-DVQ-1: Spectral-Selection Reading
+把该类模型读成 SRT 语言时，可将离散谱视为：
+\[
+L_1^{mode}=\hat G_{\theta,\mathrm{boundary}}\!\left[L_0^{vac}\right]
+\]
+其中 `\hat G` 不是凭空赋予量子数，而是在真空响应函数、对称群与边界条件所允许的模式族中完成稳定切片。
+
+### Def-Quant-Cos-DVQ-2: Vacuum Constraint Protocol
+将该窗口中的物理约束协议压缩为：
+\[
+L_2^{vac}:=\left(\mathcal D_{causal},\mathcal S_{rot},\mathcal B_{sa},\mathcal R_{passive}\right)
+\]
+即因果色散、旋转对称、自伴边界与被动响应共同构成真空侧的上层约束协议。
+
+### T-Quant-Cos-DVQ-2: Discreteness as Payable Stable Selection Spectrum
+SRT 可将该类离散谱统一重写为：
+\[
+L_{1,\mathrm{disc}}
+=
+\hat G_{\theta,L_2^{vac}}\!\left[L_0^{vac}\right]
+=
+\left\{\phi_n\in \mathrm{Spec}(\hat{\mathcal L}_{vac})\ \middle|\ \Psi_f^{bind}\!\left(\phi_n\mid L_2^{vac}\right)\le \Psi_f^{cap}\right\}
+\]
+含义是：`L_0` 提供连续的响应潜能，`L_2` 提供允许哪些模态稳定存在的协议，`\hat G` 在其中切出可绑定、可维持、可支付的离散现实模态；离散性因此不是“凭空断裂”，而是连续潜在介质在约束协议下形成的稳定选择谱。
+
+### Cor-Quant-Cos-DVQ-1: Protocol Shift Implies Spectral Drift
+若约束协议改变，则被稳定选出的模态族应同步漂移：
+\[
+\Delta L_2^{vac}\neq 0\Rightarrow \Delta \mathrm{Spec}_{obs}\neq 0
+\]
+在该论文摘要语境下，这与 isotope shifts 及 symmetry-respecting Stark/Zeeman analogues 的方向相兼容。
+
+### [Lineage/Source]
+- Harold White, Jerry Vera, Andre Sylvester, and Leonard Dudzinski, *Emergent quantization from a dynamic vacuum*, Physical Review Research 8, 013264 (2026), DOI: `10.1103/l8y7-r3rm`.
+- 摘要元数据由 APS 向 Crossref 存档的 publisher metadata 核对；当前环境中的 APS 落地页返回 anti-bot challenge，未直接抓取正文。
+- `T-Quant-Cos-DVQ-2 / Cor-Quant-Cos-DVQ-1` 为基于摘要中 `1/n^2` 谱、边界条件、被动因果色散及 isotope/Stark/Zeeman analogues 的 SRT 形式化推断，不是论文原文逐字命题。
+
+## 【理论边界/防误用声明】
+1. 不采纳“该论文已把标准量子力学还原为经典声学模型”的推论；本文只保留其“量子化可由响应结构涌现”的形式窗口价值。  
+2. 不采纳“动态真空 = 物理真空的已证实本体”的推论；该模型仍属单篇高解释负载理论工作，需独立推导与实验区分。  
+3. 不采纳“氢谱可重现 = 全部量子现象都可同样重写”的推论；外推到多体、散射、纠缠与测量问题前需逐项补证。
