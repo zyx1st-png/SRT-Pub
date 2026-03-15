@@ -54,10 +54,27 @@ $$\theta_{sys} \in \{0,1\}^k$$
 $$\hat{G}_{human} \sim \hat{G}_{nonhuman}$$
 *   **Implication**: 行动者身份是选择功能而非实体本体。
 
-### Ax-ANT-2: Translation as Parameter Alignment
-转译是不同算子参数的同胚对齐。
-$$\text{Translation} \equiv h(\theta_i) \approx \theta_j$$
-*   **Implication**: 传播有效性依赖参数对齐，而非信息量本身。
+### Ax-ANT-2: Translation as Parameter Alignment（转译即参数对齐）
+
+**Formal Definition**：转译（Translation）是行动者 $i$ 构造一个连续映射 $h_{ij}$，使得 $i$ 的参数结构在目标算子 $j$ 的参数空间中找到近似嵌入：
+
+$$\text{Translation}_{i \to j} \equiv h_{ij}(\theta_i) \approx \theta_j \quad \text{s.t.} \quad \Psi_f^{cross}(\hat{G}_{\theta_i}, \hat{G}_{\theta_j}) \to \min$$
+
+*(注：$h_{ij}$ 为连续单射而非同胚——转译通常有损且不可逆（热力学熵增），不要求双向完全可逆。)*
+
+**对称性与方向性（权力的拓扑形式化）**：
+- **单向转译（说服/殖民）**：$h_{ij}(\theta_i) \approx \theta_j$，但 $h_{ji}(\theta_j) \not\approx \theta_i$
+  → 强势算子单向重写弱势算子的参数（ANT 的 enrollment = 参数强制嵌入）
+- **对称转译（协商/融合）**：$h_{ij}(\theta_i) \approx \theta_j$ 且 $h_{ji}(\theta_j) \approx \theta_i$
+  → 双方参数互相调适，形成参数融合态（ANT 的 obligatory passage point 建立）
+
+**Implication（三层推论）**：
+
+1. **传播悖论**：信息量（bit 数）不预测传播成功率；$D_{KL}(P_{\theta_i} \| P_{\theta_j})$ 才是决定性变量。参数距离大的接收端对相同信息产生不可吸收的 $\Psi_f^{cross}$，导致转译失败——"对牛弹琴"是参数不兼容，而非信息不足（可实验验证：控制信息量，测量参数距离大/小群体的理解率差异）。
+
+2. **网络涌现与 $L_2$ 增生**：重复成功的转译积累 → 参与者之间固化出新的 $L_2$ 共识节点（ANT 的 enrollment = SRT 的 $L_2$ 吸引子增生）。
+
+3. **转译失败即 $\Psi_f$ 上升**：$h_{ij}$ 失败（参数无法对齐）→ 跨算子摩擦维持高位 → 行动者网络无法扩张 → 科学事实 / 社会联盟 / 技术标准无法稳定化。
 
 ## III. Mimetic & Fear Dynamics
 
