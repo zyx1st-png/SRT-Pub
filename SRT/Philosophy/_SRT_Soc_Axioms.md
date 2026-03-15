@@ -140,8 +140,18 @@ $$ L_2(t+1) = \text{Integrate}(L_1(t)); \quad L_1(t) = \hat{G}_{\theta(L_2)}(L_0
 
 ### T-Soc-1: 异化定理 (Alienation)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-当 $L_2$ 的硬度超过个体 $\hat{G}_i$ 的可塑性阈值时，产生异化（主体丧失对客体的选择权）。
-$$ \text{Alienation} \iff \text{Rigidity}(L_2) > \text{Agency}(\hat{G}_i) $$
+当 $L_2$ 的硬度超过个体 $\hat{G}_i$ 的能动性时，产生异化（主体丧失对现实结构的选择权）。
+
+**操作化定义**：
+- $\text{Rigidity}(L_2) \equiv P_{L_2}$：$L_2$ 可塑性代价（Ax-L2-04）；等价地，$\text{Hardness}(L_2) \propto \|\mathcal{C}\|_\infty$（网络连接谱最大特征值，Ax-TOPO-1）。Rigidity 越高，改变 $L_2$ 所需 $\Psi_f$ 越大。
+- $\text{Agency}(\hat{G}_i) \equiv d_i \cdot \left\|\partial\theta_i/\partial\text{PredError}\right\|$：个体 $d$ 值（关切带宽）与 $\theta$ 参数更新速率的乘积——能看到更多（$d_i$ 大）且能学习更快的算子抵抗力更强。
+
+$$\text{Alienation}_i \Leftarrow \text{Rigidity}(L_2) > \text{Agency}(\hat{G}_i)$$
+
+> **说明（⟸ 而非 ⟺）**：Rigidity > Agency 是异化的**充分条件**（可以从此推出主体感受到选择丧失），但不是必要条件——某些异化状态（如意识形态认同导致的自愿服从）即使 Agency 足够也可能出现。故将双条件降级为单向蕴含。
+>
+> **与 Def-L2-Normative 的关系**：T-Soc-1 是个体层异化；Def-L2-Normative 的**退化 L₂**（$dS/dt < 0$）是集体层异化——当 $L_2$ 开始系统性压缩种群选择空间，即集体版本的 Rigidity > Agency。个体层和集体层异化相互强化：退化 $L_2$ 削弱各个 $d_i$（选择带宽被压缩），进一步降低 Agency，加速走向绝境。
+> **Cross-ref**: Ax-L2-04（可塑性阈值）→ `Core/SRT_Core_12b_Ontology_L2.md §Ax-L2-04`；Def-L2-Normative（退化 L₂）→ `Core/SRT_Core_12b_Ontology_L2.md §III`。
 
 ### T-Soc-2: 革命动力学 (Revolution Dynamics)
 <!-- ORIGINAL-SECTION-PRESERVED -->
