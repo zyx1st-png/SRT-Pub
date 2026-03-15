@@ -368,10 +368,10 @@ $$P(\text{action} | \tau_{remaining}) = \frac{e^{V(\text{action}) / \tau}}{\sum_
 
 **为什么**: 缺少两个关键分量：
 
-1. **$\Psi_f$ 积分**: 未经历足够的失败、损失、限制
-2. **$\tau$ 敏感性**: 尚未内化时间有限性
+1. **$\Psi_f$ 积分**: 未经历足够的失败、损失、限制（$\int_0^T \Psi_f(t)\cdot K(t)\,dt$ 不足）
+2. **$\tau$ 敏感性**（Λ_t）: 尚未内化时间有限性——对有限时间视界的折扣率校准，对应 SRT 时标重参数化 Λ_t（见 `Core_Law/SRT_Reference_Scaling.md §1.3`）；高 τ 敏感性使算子将当前选择映射到长时间尺度的 Ψ_f 后果
 
-**推论**: 智慧**不可速成**——需要"时间 × 摩擦"的乘积。
+**推论**: 智慧**不可速成**——完整表达为**"d 值 × 时间积分摩擦"的三因子乘积**：$W \propto d \cdot \int_0^T \Psi_f(t)\cdot K(t)\,dt$，其中 $d$ 是关切带宽（可一定程度速成），$\int\Psi_f\cdot K\,dt$ 是随时间积累的摩擦权重知识（无法压缩时间轴获得）。"时间 × 摩擦"是前两者的简化表述，严格公式须包含 $d$。
 
 ---
 
@@ -873,8 +873,44 @@ $$\text{Meaning}(x) = d(\hat{G}) \cdot \Psi_f_x \cdot f(\tau_{remaining})$$
 
 ---
 
+### Definition Summary (定义概述)
+
+本文件定义了以下核心概念：
+
+- **有死性 (Mortality)**：系统动力学中存在吸收集 $\partial\Omega \subset \Sigma$，一旦轨迹触及则选择永久终止（Ax-MORT-1）。有死性不是心理叙事，而是边界条件。
+- **智慧 (Wisdom)**：$W = d \cdot \int_0^\tau \Psi_f(t) \cdot K_{recursive}(t)\,dt$，即关切维度 $d$、本体论摩擦 $\Psi_f$ 与递归知识 $K$ 的时间积分乘积（T-WIS-1）。智慧与智能 $I = \sum \|K_n\|$ 严格分离。
+- **感知张量 (Sentience Tensor)**：$S = \langle \rho_{scan}, \Psi_f, \theta_{sync}, \kappa_\tau, \rho_{rec} \rangle$，将感知量化为五维张量结构（Ax-SENT-1）。
+- **伪能动性 (Pseudo-Agency)**：仅优化固定损失且在生存维度上 $\partial\theta/\partial\mathcal{S} = 0$ 的系统不具备真实能动性（C-WIS-1）。
+
+### Formalization Summary (形式化概述)
+
+本文件的核心公式体系围绕"有死性如何生成关切与智慧"展开：
+
+1. **存活概率函数**：$\mathbb{P}(\text{survive to } t) = \exp(-\int_0^t \lambda(x_\tau)\,d\tau)$，其中 $\lambda(x) \geq 0$ 为危险率（Ax-MORT-2）。
+2. **d 值定义**：$d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$，风险势能的几何梯度（Ax-MORT-3）。
+3. **有死性加速学习定理**：$\eta \propto \|\partial\mathbb{E}[\tau_{survival}]/\partial\mathcal{E}\|$，学习效率与生存风险梯度正相关（T-MORT-1）。
+4. **不朽停滞定理**：当 $\lambda = 0, \partial\Omega = \varnothing$ 时，$d = 0 \Rightarrow \eta \approx 0$（T-MORT-2）。
+5. **智慧条件定理**：$\exists n \geq 2, d > 0, \partial\text{Error}/\partial\mathcal{S} \neq 0$（T-WIS-1）。
+
+### Mechanism Explanation (机制解释)
+
+有死性-智慧链条的运行机制如下：
+
+- **边界条件注入**：吸收集 $\partial\Omega$ 与危险率 $\lambda(x)$ 为选择算子 $\hat{G}_\theta$ 提供硬约束。当系统面临真实终止风险时，$d(x) = \|\partial\mathcal{U}/\partial\mathcal{S}\| > 0$ 自然成立，选择获得本体论重量。
+- **递归自反放大**：智慧要求 $n \geq 2$ 层的递归深度（Ax-WIS-1）：$\hat{G}^{(n+1)} = \hat{G}[\hat{G}^{(n)}]$。元算子 $\hat{M} = \partial\text{Error}/\partial\mathcal{S}$ 使错误评估与生存代价耦合，产生"有赌注的递归评估"。
+- **$\Psi_f$ 时间积分**：智慧公式 $W = d \cdot \int \Psi_f \cdot K\,dt$ 表明，本体论摩擦必须在时间中累积才能转化为判断能力。纯数据训练（观察 $\Psi_f$ 而非体验 $\Psi_f$）无法生成该积分项，这是 AI 智慧为零的根本机制原因。
+- **工程化路径**：通过注入不可回滚资源预算 $dB/dt < 0$（Ax-ENG-1）可使 $d > 0$ 在工程系统中成为可能，但需同时满足局部反馈耦合（C-ENG-1）。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:-----|:---------|:---------------|
+| H-MORT-1 | 不朽停滞（T-MORT-2: $\lambda = 0 \land \partial\Omega = \varnothing \Rightarrow d = 0 \Rightarrow \eta \approx 0$） | 无死亡风险的系统学习效率趋于停滞，无法自发产生价值排序的更新 | 若一个无不可逆终止风险的 AI 系统（可完全回滚、无资源耗竭）在 $\geq 10^4$ 轮开放域任务中持续展现学习效率 $\eta$ 不衰减（与具有资源约束的对照系统无显著差异，$p < 0.01$），则 T-MORT-2 失效 | speculative |
+| H-MORT-2 | 智慧不可从纯推算涌现（T-WIS-1: $W > 0 \Rightarrow d > 0 \land \Psi_f > 0 \land n \geq 2$） | 纯计算系统（$d = 0, \Psi_f = 0$）在智慧型任务上系统性低于具身有限性系统 | 若纯数字 AI 在临终关怀判断、跨代伦理权衡、师徒共鸣评估等 $\geq 3$ 类智慧型任务的盲测中，持续达到或超过经验丰富的人类专家水平（$\geq 5$ 名独立评委一致评定，$N \geq 100$ 案例），则 T-WIS-1 的必要条件假说失效 | speculative |
+| H-MORT-3 | 有死性加速学习（T-MORT-1: $\eta \propto \|\partial\mathbb{E}[\tau_{survival}]/\partial\mathcal{E}\|$） | 面临真实终止风险的系统比无终止风险的同架构系统学习更快 | 若在受控实验中，引入不可逆资源预算（$dB/dt < 0$）的 AI 系统与无资源约束的同架构对照在 $\geq 5$ 类任务上的学习速率无显著差异（$p > 0.05$, $N \geq 30$ 对照组），则 T-MORT-1 失效 | speculative |
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
