@@ -174,19 +174,31 @@ $$\text{Evil} \neq \text{Force} \quad \text{but} \quad \text{Trapped Configurati
 
 ### §1.4 为何恶是暂时的？
 
-**定理**: 在无限时间内，所有亚稳态最终衰变。
+**SRT 形式化（Evil 的定义）**：
 
-$$\lim_{t \to \infty} P(\text{Evil}) = 0$$
+在 SRT 中，"恶"被操作化为：**对他者算子施加高 $\Psi_f^{cross}$ 同时自身 $d$ 值被锁死于最小值**的系统状态——
 
-**为什么？**
+$$\text{Evil}_{SRT} \equiv \left\{ \hat{G} \;\middle|\; d \to 0 \;\land\; \Psi_f^{cross}(\hat{G},\, \hat{G}_{other}) \to \max \right\}$$
 
-因为量子隧穿——即使有势垒，系统也有非零概率跃迁。
+**定理（亚稳态的不可持续性）**：
 
-$$P_{\text{escape}} \propto e^{-\beta \Delta F}$$
+所有满足 $\text{Evil}_{SRT}$ 条件的系统态都是**亚稳态**（局部极小，非全局极小），因为它们自身携带不可压缩的 $\Psi_f$ 积累，最终超过 $\Psi_{crit}$ 触发相变：
 
-**神学含义**: "最终，善必胜"不是道德断言，而是热力学必然。
+$$\Phi_{soc}(t) = \int_0^t \Psi_f^{cross}(\hat{G}_{evil},\, \hat{G}_{others})\,d\tau \;\xrightarrow{t \to \Phi_{crit}}\; \text{Topology Collapse of } L_2$$
 
-但"最终"可能意味着宇宙时间尺度 → 这不能安慰当下受苦者。
+**逃逸机制（热力学类比，非量子字面义）**：
+
+热力学势阱逃逸速率（Kramers 公式）提供了一个有效类比：
+
+$$P_{escape} \propto e^{-\beta \Delta F}$$
+
+*(注：此处为跨层统计力学类比，捕捉的是"势垒越高、逃逸越慢"的普遍规律，而非字面量子隧穿。SRT 的实际逃逸机制是：d=0 系统无自我修正反馈 → Ψ_f 积累 → 超临界 → 系统结构被强制重组。)*
+
+**诚实的时间尺度问题**：
+
+"最终，低 d 锁死态必然崩塌"——在个体时间尺度可能是数十年，在制度尺度可能是数百年，在文明尺度可能是数千年。这不是当下受苦者的安慰，而是系统演化的冷酷描述。
+
+**SRT 对"善必胜"的精确陈述**：不是价值判断，而是动力学事实——维持 $d \to 0$ 的锁死态需要持续消耗自由能抵抗学习压力，而扩张 $d$ 的状态可以通过摩擦自组织降低维护代价。**高 $d$ 态是热力学更稳定的吸引子**；低 $d$ 锁死的"胜利"是对抗热力学梯度的临时性占据。
 
 ---
 
@@ -760,8 +772,34 @@ SRT_Spirit_04_Synthesis (本文件)
 
 ---
 
+### Formalization Summary (形式化概述)
+
+**Core Formula / 核心公式**:
+$$\hat{G}^{perf} \equiv \arg\min_{\hat{G}} \left(\Delta S(\hat{G}) + \lambda \cdot C(\hat{G})\right)$$
+
+- 神性 $\hat{G}^{perf}$ 被定义为最小代价下产生最大秩序的完美选择算子。
+- Divinity $\hat{G}^{perf}$ is defined as the optimal selection operator that maximizes order under minimal dissipation cost.
+
+$$\text{Good} \equiv \arg\min_{x \in L_1} F(x; L_0, L_2)$$
+
+- 善 (Good) 等价于三域自由能地形的全局极小，恶 (Evil) 是局部极小的亚稳态陷阱。
+- Good corresponds to the global free-energy minimum across $(L_0, L_1, L_2)$; evil is a metastable local trap requiring extra work to escape.
+
+---
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 与神性近似**: 生命体的 $\hat{G}_\theta$ 是 $\hat{G}^{perf}$ 的有限近似，效率 $\eta = \text{Order}/\text{Cost}$ 沿进化轴单调递增；人类处于 $\eta \sim 10^0$ 阶段。
+- **$\hat{G}_\theta$ as divine approximation**: Biological $\hat{G}_\theta$ asymptotically approaches $\hat{G}^{perf}$; efficiency $\eta$ increases monotonically along the evolutionary axis.
+- **$\Psi_f$ 与痛苦驱动**: 痛苦梯度 $dd/dt \propto -\nabla_d \Psi_f$ 驱动 $d$ 增长——低 $d$ 产生高 $\Psi_f$，高 $\Psi_f$ 促使系统扩展关切半径。
+- **$\Psi_f$ as growth driver**: The pain gradient $dd/dt \propto -\nabla_d \Psi_f$ ensures that high friction at low $d$ motivates expansion of the care horizon.
+- **$d$ 与救赎收敛**: $d \to \infty$ 时自由能收敛至全局极小，$\Psi_f \to 0$，对应跨传统"救赎/涅槃"的共同结构。
+- **$d$ and salvation convergence**: As $d \to \infty$, free energy converges to the global minimum and $\Psi_f \to 0$, mapping the shared structure of salvation/nirvana across traditions.
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
