@@ -476,42 +476,47 @@ $$d_s = \log_2(150) \approx 7.2 \quad \text{(人类平均)}$$
 
 ### 5.1 情绪的二维模型
 
-#### 5.1.1 Valence-Arousal空间
+#### 5.1.1 Valence-Arousal 空间（规范化定义）
 
-**Valence** (效价):
-$$V = -\text{sign}\left(\frac{d\Psi_f}{dt}\right)$$
+**Valence（效价）**——摩擦变化率的负方向，保留幅度信息：
 
-- $\frac{d\Psi_f}{dt} < 0$: 摩擦降低 → 正性情绪 (快乐)
-- $\frac{d\Psi_f}{dt} > 0$: 摩擦升高 → 负性情绪 (痛苦)
+$$V(t) \equiv -\frac{d\Psi_f}{dt}\bigg|_{\theta}$$
 
-**Arousal** (唤醒):
-$$A = |\Psi_f(t)|$$
+- $V > 0$：摩擦下降中 → 正性情绪（越大越"好"）
+- $V < 0$：摩擦上升中 → 负性情绪（越负越"痛"）
+- $V = 0$：摩擦稳态 → 情绪平台（可为高唤醒平台或低唤醒平台）
 
-- 低$|\Psi_f|$: 平静
-- 高$|\Psi_f|$: 激动
+*(注：原始 $\text{sign}(\cdot)$ 版本仅保留方向，丢失幅度信息，无法区分"微弱愉悦"与"极度狂喜"。)*
 
-#### 5.1.2 情绪地图
-```
-      Arousal (|Ψ_f|)
-          ^
-    High  |
-          |    Ecstasy -------- Terror
-          |       |               |
-          |       |               |
-  Medium  |   Joy ----+---- Anxiety
-          |       |   |   |       |
-          |       | Peace |   Sadness
-    Low   |   Contentment ---- Depression
-          |
-          +-----------------------------------> Valence (dΨ_f/dt)
-              Negative   0   Positive
-```
+**Arousal（唤醒）**——当前摩擦的绝对强度（相对于个体基线 $\Psi_f^{baseline}$）：
 
-**实例映射**:
-- **Ecstasy** (狂喜): $\Psi_f$ 高但$\frac{d\Psi_f}{dt} \ll 0$ (快速下降)
-- **Terror** (恐惧): $\Psi_f$ 高且$\frac{d\Psi_f}{dt} \gg 0$ (快速上升)
-- **Depression** (抑郁): $\Psi_f$ 低但$\frac{d\Psi_f}{dt} > 0$ (缓慢恶化)
-- **Peace** (平和): $\Psi_f$ 低且$\frac{d\Psi_f}{dt} \approx 0$ (稳定)
+$$A(t) \equiv |\Psi_f(t) - \Psi_f^{baseline}|$$
+
+- $A \approx 0$：接近基线平静态
+- $A \gg 0$：高度激活（无论正性还是负性）
+
+#### 5.1.2 情绪的 $(V, A)$ 相图
+
+| 情绪状态 | $A$（唤醒） | $V$（效价） | $\Psi_f$ 动力学 |
+|:---------|:-----------|:-----------|:----------------|
+| **Ecstasy（狂喜）** | 高 | 强正 | $\Psi_f$ 高但 $\dot{\Psi}_f \ll 0$（高摩擦快速释放） |
+| **Terror（恐惧）** | 高 | 强负 | $\Psi_f$ 高且 $\dot{\Psi}_f \gg 0$（高摩擦快速上升） |
+| **Joy（喜悦）** | 中 | 正 | $\Psi_f$ 中等并下降 |
+| **Anxiety（焦虑）** | 中 | 负 | $\Psi_f$ 中等并上升 |
+| **Peace（平和）** | 低 | $\approx 0$ | $\Psi_f$ 低且稳定 |
+| **Anhedonia（快感缺失）** | 极低 | $\approx 0$ | $\Psi_f$ 低且 $\dot{\Psi}_f \approx 0$（梯度消失，无法驱动 $V>0$） |
+| **Depression（抑郁）** | 低 | 负 | $\Psi_f$ 低但缓慢上升（低能量、缓慢恶化） |
+
+**d 值与情绪可达范围（协变约束）**：
+
+$$\text{Accessible Emotion Range} \propto d_{value}$$
+
+高 d 值的主体能在 $(V, A)$ 相图中遍历更宽广的区域（包括高唤醒的狂喜态）；低 d 值的主体的情绪活动空间被压缩为相图中心附近的狭窄带——这是情绪贫乏（Emotional Flatness）的动力学来源，而非情绪稳定。
+
+**病理的几何化**：情绪病理 = 系统轨迹被困于相图的某个子区域，无法完成正常的遍历循环（V 在正负之间自由振荡）。
+
+- OCD/焦虑锁定：轨迹被困于高 $A$、$V < 0$ 象限（高摩擦-上升循环）
+- 抑郁/快感缺失：轨迹塌缩至低 $A$、$V \approx 0$ 区域（梯度消失的摩擦洼地）
 
 ---
 
