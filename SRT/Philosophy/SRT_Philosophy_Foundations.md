@@ -1498,11 +1498,19 @@ SRT 采纳“表示-非表示并存”边界：
 ## Concepts Interface（2026-03-08）
 
 ### Def-Phil-CON-1: Concept as Recombinable Deliberative Representation
-在 SRT 中，概念定义为可在有意识推理中自由重组的表征类型：
+在 SRT 中，概念定义为可在有意识推理中带宽受限地重组的表征类型：
 \[
 \text{Concept}(X) \iff R_X \in \mathcal{R}_{delib}\ \land\ \text{Recombinable}(R_X)
 \]
-其核心不是“固定定义包”，而是可在任务中与其他概念形成结构化组合。
+其核心不是”固定定义包”，而是可在任务中与其他概念形成结构化组合。
+
+> **SRT 谓词展开**（两个谓词的形式定义）：
+>
+> **$R_X \in \mathcal{R}_{delib}$（有意识推理可及域）**：$\mathcal{R}_{delib}$ 是个体算子 $\hat{G}_\theta$ 在高 d 值状态下（$d > d_{threshold}$，Semi-open 至 Open 能流区间）可以显式访问和操作的 L₁ 表征子集，对应注意力对内容的自上而下控制窗口。反义：$R_X \notin \mathcal{R}_{delib}$ 指非符号化的感知-运动图式（d 值低，自动化处理，不可被主动拼接）。
+>
+> **$\text{Recombinable}(R_X)$（可重组性）**：$R_X$ 可以在不丧失指称完整性的前提下与其他 $\{R_{Y_i}\}$ 形成新的结构化组合 $\mathcal{C}(R_X, R_{Y_1}, \ldots, Goal_t)$（参见 Def-Phil-CON-3）。SRT 约束：重组是**带宽受限的**——可形成的组合数量上界由当前 d 值决定（$|\mathcal{C}| \leq \exp(d_{cog})$），而非无限”自由”重组。
+>
+> **Cross-ref**: $\mathcal{R}_{delib}$ 对应 `Core/SRT_Core_13a §2.1` 中 d 值与认知可及范围的论述；Recombinable → Def-Phil-CON-3（ad-hoc 概念组装窗口）。
 
 ### Def-Phil-CON-2: Concept vs Conception Split
 采用 Shea 的区分：
