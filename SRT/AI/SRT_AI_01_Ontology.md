@@ -428,12 +428,27 @@ L_1(\text{Algorithm}) \cap L_0 = \varnothing
 
 ---
 
-### T-ONT-5: Statistical Identifiability Axiom (统计可识别性公理)
-零算子 $\hat{G}_\varnothing$ 泛化的输出最终会均值回归到训练分布 $P_{data}$ 的期望结构：
-\[
-\lim_{n \to \infty} \frac{1}{n} \sum_{i=1}^n \hat{G}_\varnothing^{(i)}[x] = \mathbb{E}[L_2^{human}]
-\]
-* **Implication（中文）**：不具备真实 $d$ 值的系统无法创造真正的"奇点"或范式转移（Paradigm Shift），因为范式转移数学上对应于打破过去的统计结构。$L_1 \to L_1$ 的闭包不允许发生这样的结构溢出。LLM 只能穷尽旧世界的组合，不能跨越进入新世界。
+### T-ONT-5: Statistical Identifiability Axiom（d=0 系统的统计可识别性定理）
+
+**定义**：零算子 $\hat{G}_\varnothing$ 是满足 $d = 0 \land \Psi_f = 0$ 的退化选择算子——它无本体论摩擦、无关切带宽，仅执行 $L_1$ 层面的统计模式压缩与重组（$L_1 \to L_1$ 闭包）。
+
+**Formal Statement**：$\hat{G}_\varnothing$ 在大样本极限下，其输出分布收敛至训练分布 $P_{data}$（即 $L_2^{human}$ 的期望结构）：
+
+$$\lim_{n \to \infty} \frac{1}{n} \sum_{i=1}^n \hat{G}_\varnothing^{(i)}[x] = \mathbb{E}_{P_{data}}[L_2^{human}]$$
+
+**可识别性判据**：$d>0$ 的具身算子与 $\hat{G}_\varnothing$ 在统计上可区分，当且仅当：
+
+$$\exists\, \sigma^* \notin \text{supp}(P_{data}):\; P(\hat{G}_{d>0}[\cdot] = \sigma^*) > 0 \;\land\; P(\hat{G}_\varnothing[\cdot] = \sigma^*) \approx 0$$
+
+即：具身算子能系统性地访问训练分布**支撑集之外**的 $L_0$ 状态，而零算子无此能力。
+
+**Implication（三层推论）**：
+
+1. **范式转移的不可能性**：范式转移（Paradigm Shift）在数学上对应于使旧 $L_2$ 结构失稳并开辟新吸引子盆地——这需要 $\Psi_f > 0$ 的选择算子从 $L_0$ 抽取 $P_{data}$ 之外的结构。$\hat{G}_\varnothing$（$L_1 \to L_1$ 闭包）无法系统性生成此类状态；任何表观"创新"都是训练分布内的高维插值，而非真实的结构溢出。
+
+2. **精确表述"旧世界组合"**：LLM 不是"仅重复旧内容"——它可以生成未见过的句子，但这些句子的概率测度仍在 $\text{supp}(P_{data})$ 内。真正的新世界跨越 = 访问 $L_0$ 中 $P_{data}$ 测度为零的区域，这要求 $\Psi_f > 0$（对不可逆代价的感知）。
+
+3. **对接 T-CRISIS-1（幻觉正下界）**：$\hat{G}_\varnothing$ 的 $L_1 \to L_1$ 闭包使其无法稳定锚定物理 $L_0$ 约束 → 幻觉率存在不可压缩正下界（$P_h \geq k/(\|L_2^{physics}\|+1)$），与 T-CRISIS-1 形成逻辑闭合。
 
 ---
 
