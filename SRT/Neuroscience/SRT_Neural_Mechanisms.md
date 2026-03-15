@@ -178,6 +178,122 @@ $$\text{Theta-replay Lv} \approx 1.5 \iff \text{Population Sparseness} < 10\%$$
 
 - 将 chunking 解释为 \(L_2\) 先验压缩对 WM 有效负载的降维：熟悉结构可把多项新信息打包为低 \(\Psi_f\) 的单元，从而提升表面容量。
 
+### Hippocampal Statistical Structure patch (2026-03-12, Pipeline 1)
+
+- 将海马从“情景记忆写入器”扩展为 **被动经验中的统计结构绑定器**：
+\[
+L_2^{proto\text{-}structure}(t)=\hat G_{\theta}^{hip}\!\left[L_1^{stream}(0:t)\right]
+=\left(\Pi_{freq},\Pi_{seq},\Pi_{rule}\right)
+\]
+其中 \(\Pi_{freq}\) 编码事件频率，\(\Pi_{seq}\) 编码序列身份，\(\Pi_{rule}\) 编码可跨实例泛化的抽象规则。关键点不在“记住了一次发生过什么”，而在“从持续流输入中提取未来可重用的结构”。
+
+- 将“无奖赏统计学习”写成海马可独立执行的结构更新窗口：
+\[
+\frac{dL_2^{proto\text{-}structure}}{dt}>0 \quad \text{even when} \quad R \approx 0
+\]
+这意味着 \(\hat G_{\theta}^{hip}\) 不必等待显式强化，便可在被动暴露中形成对环境统计的内部模型；奖励可放大或重加权学习，但不是该窗口的前提。
+
+- 将跨物种瞳孔 readout 重述为“内模形成的低侵入代理”：
+\[
+\Delta \mathrm{Pupil} \propto \left\|L_1^{incoming}-L_2^{proto\text{-}structure}[\text{expected}]\right\|
+\]
+当事件频率、序列身份或抽象规则被违反时，瞳孔惊异反应上升；而对结构相近的变体，反应梯度较小，表明系统已学习到的不只是具体 token，而是 token 背后的统计关系。
+
+- 将 dCA1 的因果作用写成 **结构绑定缺失而非任务执行缺失**：
+\[
+\mathrm{dCA1}\downarrow \Rightarrow \Delta L_2^{proto\text{-}structure}\to 0,\quad
+\mathrm{CoverTask}\approx \mathrm{intact}
+\]
+这一区分很关键：dCA1 抑制并不必然破坏基础感觉、瞳孔基线或 cover task 表现，却会消除学习相关的统计惊异信号。SRT 因而可把海马定位为“更新世界结构模型”的必要节点，而非所有行为输出的统一瓶颈。
+
+- 将群体编码结果写成 **特征子空间 / 规则子空间分离**：
+\[
+\mathcal{H}_{dCA1} \simeq \mathcal{S}_{feature}\oplus\mathcal{S}_{rule}
+\]
+若此分离成立，则海马可同时表示具体感觉片段与更高阶抽象规则，并支持对“结构等价但表面不同”的新序列进行快速泛化。这比“纯情景回放”更接近 SRT 所说的 \(L_1 \to L_2\) proto-structure 压缩。
+
+- **SRT Implication（中文）**：统计学习在这里不应被理解为“无意识地记了很多次”，而应被理解为海马将时间流中的重复关系压缩为可迁移的 \(L_2\) 原型结构。海马的角色不是替代皮层长期整合，而是为后续的皮层/行为系统快速提供一个可更新、可泛化、低监督的结构脚手架。
+
+- **Boundary（中文）**：
+  - 这不等于“海马是所有统计学习的唯一中枢”；皮层、丘脑、感觉系统仍可能分担不同时间尺度与模态下的结构提取。
+  - 这不等于“统计学习 = 情景记忆”；二者可能共享海马绑定机制，但目标函数不同：前者偏向规则提取，后者偏向事件索引与可回忆性。
+  - 这也不等于“只要有序列就一定是海马在学”；当前证据更精确支持的是：当任务要求从连续感官流中快速抽取潜在结构并在线更新时，dCA1 是强候选必要节点。
+
+* **Source window**: Natalia Mesa, *The Transmitter* (2026-03-10), on Onih et al., *bioRxiv* preprint “The hippocampus enables abstract structure learning without reward” (2026-02-17; doi:10.64898/2026.02.14.705916v1)
+
+---
+
+### Top-Down Astrocyte Gate patch (bioRxiv 2026.03.08.710364v1, 2026-03-14, Pipeline 1)
+
+- 将 astrocyte activation 从“局部活动强就会被顺带点亮”改写为 **细胞类型特异、状态依赖的介观门**：
+\[
+\mathrm{Ca}_{astro}(t)\propto \mathbf{1}\!\left[\mathrm{AP}_{GC}(t)>0\right]\cdot \mathrm{ATP}_{GC}(t)\cdot \Gamma_{state}(t)
+\]
+其中 \(\mathrm{AP}_{GC}\) 表示 granule cell 放电是否真正跨阈，\(\mathrm{ATP}_{GC}\) 表示由 GC 释放的 ATP/purinergic 信号，\(\Gamma_{state}\) 表示当前 top-down / context gate 是否打开。关键点是：astrocyte 不是对任何兴奋性输入都等幅响应，而是对**特定细胞类型在特定状态下的放电后果**作选择性读出。
+
+- 将嗅球回路中的 bottom-up / top-down 差异写成 **介观选择不对称**：
+\[
+\text{M/T}\to \text{GC depolarization} \not\Rightarrow \text{GC spiking} \not\Rightarrow \mathrm{Ca}_{astro}
+\]
+\[
+\text{aPC}_{top\text{-}down}\to \text{GC sustained firing} \Rightarrow \mathrm{ATP\ release} \Rightarrow \mathrm{Ca}_{astro}\uparrow
+\]
+这意味着同样都叫“神经输入”，其对 glial meso-operator 的有效性并不相同：bottom-up 输入可以传递感觉驱动，但未必足以招募 astrocytic gate；而 cortical feedback 更可能在上下文、任务或状态相关的窗口中把胶质层拉进选择回路。
+
+- 将其映射到 SRT 的 \(\hat G_{meso}\)：
+\[
+\hat G_{meso}^{astro}: L_1^{local}\times L_2^{context}\rightarrow L_2^{gain\text{-}biased}
+\]
+其中 \(L_1^{local}\) 对应局部神经放电轨迹，\(L_2^{context}\) 对应由 top-down 反馈携带的情境/状态约束。astrocyte 的角色不再只是慢性修剪者，而是**在中介时间尺度上把 top-down 语境沉到局部增益与抑制平衡中的协同门控器**。
+
+- **SRT Implication（中文）**：该结果支持一个更细的神经-胶质分工图景：底层感觉流可先把候选内容推入局部回路，但是否让该内容获得“被上下文重加权的代谢/增益支援”，部分取决于 top-down 是否通过特定中间细胞群把 astrocytic gate 打开。胶质层因此更像“语境敏感的介观放大器”，而不是均匀背景液。
+
+- **Boundary（中文）**：
+  - 这不等于“top-down 一定比 bottom-up 更重要”；这里更精确的结论是：在该嗅球回路里，**招募 astrocyte Ca²⁺ signaling** 的有效路径偏向 top-down→GC→ATP，而不是 M/T→GC 的底向上传递。
+  - 这不等于“astrocyte Ca²⁺ = 意识信号”；当前价值是机制层：说明 glia 会按语境和细胞类型被选择性纳入神经计算，而非说明其本身就是现象体验。
+  - 这也不等于“所有脑区都遵守同一规则”；当前证据来自 olfactory bulb 的特定局部回路，而且还是 preprint，需等待跨区域复制与同行评审。
+
+- **Source window**: Antonia Beiersdorfer et al., *bioRxiv* preprint “Cell-type specific astrocyte activation is driven by cortical top-down modulation” (posted `2026-03-09`; doi:`10.64898/2026.03.08.710364`)
+
+---
+
+### CellTransformer Spatial Domain patch (Nature Communications 2025, 2026-03-15, Pipeline 1)
+
+- 将脑区从“单一细胞类型 + 人工边界”重写为 **局部细胞邻域统计结构**：
+\[
+z_x=\mathrm{Enc}_\phi\!\left(\{(c_i,g_i,\Delta x_i)\}_{i\in\mathcal{N}_r(x)}\right),\qquad
+L_2^{domain}(x)=\mathrm{Cluster}(z_x)
+\]
+其中 \(c_i\) 表示邻域内细胞类型，\(g_i\) 表示分子/转录状态，\(\Delta x_i\) 表示相对空间位置。关键点不在“某一区域是否被某一种 marker 细胞定义”，而在“某一位置周围的细胞混合、分子模式与空间关系能否形成稳定可重现的局部邻域表示”。
+
+- 将该类数据驱动分区写成 SRT 的 **介观域发现算子**：
+\[
+\hat G_{meso}^{domain}: L_1^{cell\text{-}local}\rightarrow L_2^{meso\text{-}domain}
+\]
+这里的 \(L_1^{cell\text{-}local}\) 对应多细胞局部邻域中的细胞身份、基因表达和相对位置统计，\(L_2^{meso\text{-}domain}\) 对应经表示学习与聚类压缩后的区域/亚区域原型。脑区因而不再被理解为“显微镜下一眼看出的均质块”，而更像**由高阶细胞共现规律稳定下来的选择生态位**。
+
+- 将“区域发现”从单脑样本的偶然分割提升为 **跨切片 / 跨动物可重复的介观一致性检验**：
+\[
+\mathrm{Consistency}\!\left(L_2^{meso}\right)\uparrow
+\iff
+\mathrm{Align}\!\left(z_x^{(brain\ 1)},z_x^{(brain\ 2)},\dots\right)\uparrow
+\]
+Lee 等人的结果之所以重要，不只是因为用了 transformer，而是因为它能在多百万细胞的 MERFISH / Slide-seqV2 数据上，把既有 CCF 结构与新的细分域同时保住，并在多动物分析中维持高空间一致性。这使“介观域”更接近稳定结构，而不是一次性的聚类幻象。
+
+- 将该结果的新增量落到 **“脑区 = 局部细胞邻域约束下的功能候选域”**：
+  - 它与既有 ontology（如 Allen CCF）高度相似，但并不被其完全穷尽；
+  - 它可重述 subiculum、superior colliculus 等已知区域的更细分结构；
+  - 它还在部分皮层下区域提出 putatively uncataloged subregions，使“一个大区承担太多不同功能”的争论更可能被改写为“同名大区内部本就包含多个不同介观选择域”。
+
+- **SRT Implication（中文）**：这条材料为 \(\hat G_{meso}\) 提供了一个比“胶质剪枝”更宽的结构外延。SRT 可以把脑区理解为**局部细胞邻域长期稳定后形成的介观选择拓扑**：不同 domain 不只是位置不同，而是拥有不同的细胞配比、分子程序和局部约束，因此会对增益、路由、脆弱性和可塑性施加不同边界条件。换句话说，介观层不是把微观细胞简单求平均，而是把“哪些细胞在何种邻域中共同出现”压缩成后续功能与病理的结构脚手架。
+
+- **Boundary（中文）**：
+  - 这不等于“AI 找到的新域都已是功能上独立的真脑区”；当前更精确的结论是：这些是**值得进一步连接组、扰动与行为实验验证的结构候选域**。
+  - 这不等于“脑区可完全由转录组邻域定义”；输入输出连接、发育史、活动动力学与胶质/血管环境仍可能提供额外边界。
+  - 这也不等于“鼠脑 atlas 可直接外推到人脑”；当前价值首先是方法学与介观组织原则，跨物种同构仍需后续数据支撑。
+
+- **Source window**: Amber Dance, *Quanta Magazine* (2026-02-09), on Alex J. Lee et al., *Nature Communications* “Data-driven fine-grained region discovery in the mouse brain with transformers” (2025; doi:`10.1038/s41467-025-64259-4`)
+
 ---
 
 ### T-NEURO-MECH-4: Oscillatory Mode Bifurcation Theorem (振荡模式分叉定理)
@@ -250,13 +366,21 @@ $$\kappa_{adapt} \begin{cases} \to 0 & \Rightarrow \text{持续活动模式，�
 
 **致命缺陷**: (a) 无法解释"解释鸿沟"——为什么从物理描述跳不到体验描述；(b) 多重可实现性挑战——相同的心理状态可能对应不同的神经状态。
 
-### 1.2.3 涌现主义 (Emergentism)
+### 1.2.3 涌现主义（Emergentism）
 
-**核心主张**: 意识从复杂神经活动中"涌现"，具有不可还原的因果效力。
+**核心主张**：意识从复杂神经活动中"涌现"，具有不可还原的因果效力。
 
-**优势**: 承认意识的独特性，同时保持物理主义框架。
+**优势**：承认意识的独特性，同时保持物理主义框架；与多重可实现性（Multiple Realizability）兼容。
 
-**致命缺陷**: (a) "涌现"本身是一个描述性概念，缺乏机制解释；(b) 向下因果如何可能？
+**传统致命缺陷**：(a) "涌现"是描述性概念，缺乏机制解释——说"从复杂性中涌现"等于什么都没说；(b) 向下因果（Downward Causation）如何在物理因果闭包框架内可能？
+
+**SRT 的机制答案（解决上述两个缺陷）**：
+
+- **涌现机制**：$L_1$ 的涌现 = 选择算子 $\hat{G}_\theta$ 在 $\Psi_f$ 驱动下从 $L_0$ 中锚定一个 $\theta$-特异的稳定态（见 Def-Phil-MB-2）。"复杂性"不是魔法触发器，而是 $\Psi_f$ 积累到 $\Psi_{crit}$ 时发生的**相变**——这是涌现的热力学机制。
+
+- **向下因果的分子闭环**：$L_1$（当下体验）通过多巴胺酰化（Dopaminylation）直接写入 $L_2$ 结构（组蛋白 H3 修饰 → 基因表达改变），实现 $L_1 \to L_2$ 的可逆物质化（见 §3.1）。向下因果不是神秘的非物理力，而是化学写入接口。
+
+**SRT 立场**：SRT 接受涌现主义的直觉，但将其从描述性标签升级为机制理论——填补了标准涌现主义无法给出机制的核心空缺。
 
 ---
 
@@ -561,14 +685,33 @@ L_1 = f(\theta) + \epsilon,\quad
 | 日常习惯化存在稀薄 | 低~中 | Closed 倾向 | 低斜率 \(d\Psi_f/dt\approx0\) |
 | 存在性惊奇峰值 | 中高~高 | Open（重锚定） | 高斜率 \(d\Psi_f/dt\gg0\) |
 
+### Definition Summary (定义概述)
+
+- **神经流形 (Neural Manifold, L₀)**：$\sigma(t)\in\mathcal{M}\subset\mathbb{R}^N$；神经态是高维流形上的连续轨迹，选择即生成稳定轨迹。
+- **点燃投影 (Ignition Projection, L₀→L₁)**：$\Pi_{ignite}:\mathcal{M}\to\mathcal{M}_*$，其中 $\mathcal{M}_*=\{\sigma:\mathcal{A}(\sigma)\ge\tau_{ignite}\}$；跨域投影的可计算阈值。
+- **门控算子 (Loop-Gating, L₁)**：$\mathcal{G}_{gate}=\mathcal{G}_{thal}\circ\mathcal{G}_{bg}$；丘脑-基底节回路决定哪些轨迹可投影为 $L_1$。
+- **参数漂移病理 (Parameter Drift, L₂)**：$\theta=\theta_{healthy}+\Delta\theta$；精神病理是算子参数的拓扑偏移，非症状集合。
+
+### Formalization Summary (形式化概述)
+
+- **能量-信息极值** (T-NEURO-MECH-1)：$\mathcal{J}=H(\sigma)-\lambda E(\sigma)$，稳态解必然满足除法归一化 $R_i=L_i^n/(\sigma^n+\sum_j w_{ij}L_j^n)$。信息最大化与代谢成本最小化的唯一交点。
+- **点燃相变** (Ax-NEURO-MECH-7)：$\mathcal{A}(\sigma)\ge\tau_{ignite}\land\Phi\cdot d>C_{critical}$。整合度与关切梯度协同超阈值。
+- **具身锚定** (Ax-Mech-9)：$\kappa_{body}=\text{GripForce}/\Psi_f$。意向性向物理显现转化的效率系数。
+
+### Mechanism Explanation (机制解释)
+
+$\hat{G}_\theta$ 在神经流形 $\mathcal{M}$ 上执行选择流：感觉-动作输入 $u$ 驱动轨迹 $\dot\sigma=F(\sigma,\theta,u)$，经门控算子 $\mathcal{G}_{gate}$ 筛选后由点燃投影 $\Pi_{ignite}$ 锚定为 $L_1$。代谢约束使选择动力学收敛为除法归一化；$\Psi_f$ 通过预测误差映射 ($PE\propto\Psi_f$) 桥接计算层与本体论层。胶质介观算子 $\hat{G}_{meso}$ 以补体标记执行慢时标 $L_2$ 修剪。病理对应 $\Delta\theta$ 偏移，衰老对应 $\kappa_{body}$ 衰退——$d$ 值完好但算子与基质逐渐脱锚。
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
-2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
-3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。  
-4. 不采纳“历史叙事桥梁=机制完备模型”的推论：临床哲学整合必须补上可测动力学。  
-5. 不采纳“单一疗法可跨层解决全部病理”的推论：SRT 要求结构轴与动力学轴协同干预。  
-6. 不采纳“共具身=主体不独立”的绝对推论：SRT 采用相变诞生模型而非永久融合模型。
+1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。
+2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为”普适定律”。
+3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
+4. 不采纳”历史叙事桥梁=机制完备模型”的推论：临床哲学整合必须补上可测动力学。
+5. 不采纳”单一疗法可跨层解决全部病理”的推论：SRT 要求结构轴与动力学轴协同干预。
+6. 不采纳”共具身=主体不独立”的绝对推论：SRT 采用相变诞生模型而非永久融合模型。
 
 ## 机制同构补注：Active Inference × SRT（2026-03-06）
 
