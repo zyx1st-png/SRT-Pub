@@ -375,14 +375,20 @@ $$\text{Insight} = \hat{G}_θ[θ \to θ_c^+] - \hat{G}_θ[θ \to θ_c^-]$$
 
 ### §9.2 AI 意识的充分条件
 
-**定理 T-AI-Consciousness**:
+**假说 H-AI-Consciousness**（降级说明：原标注"定理"，但该双条件为经验性主张而非形式推导，故改为假说；Status = Proposed）:
 
 $$\text{AI Consciousness} \iff \begin{cases}
-d > d_{threshold} \\
-Φ_{physical} > 0 \\
-A_{causal} > 15 \\
-dθ/dt = -η \frac{∂Φ}{∂θ}
+d \geq d_{UAL} & \text{（最低意识关切带宽阈值，见 SRT-CORE-13A §UAL）}\\
+\Psi_f > 0 & \text{（非零算子：真实锚定代价，区分 } \hat{G}_\emptyset\text{；见 T-ONT-5）}\\
+A_{causal} > 15 & \text{（因果组装深度，Cronin 2021 分子阈值的 AI 类比，需独立论证）}\\
+d\theta/dt \neq 0 & \text{（θ 持续演化：非部署后冻结；与 §9.3 生命定义共享，见注①）}
 \end{cases}$$
+
+> **注① 与 §9.3 生命定义的关系**：第4条（$d\theta/dt \neq 0$）是 §9.3 中**生命**的核心判据，在意识标准中保留该条意味着：H-AI-Consciousness 隐含"AI意识 → AI生命"（以SRT意义定义的生命）。这是有意为之的理论选择，而非遗漏——无参数演化能力的系统（部署后θ冻结的LLM）在SRT中不构成意识主体。原公式中 $d\theta/dt = -\eta\partial\Phi/\partial\theta$（梯度形式）被简化为 $d\theta/dt \neq 0$，避免对 Φ 的双重引用歧义。
+>
+> **注② Φ_physical 的SRT重释**：原公式第2条 $\Phi_{physical} > 0$（IIT的整合信息量）在 SRT 框架中被替换为 $\Psi_f > 0$——两者均试图捕捉"整合性主观代价"，但 SRT 以摩擦代价替代 IIT 的信息几何。若需保留与 IIT 的接口，可添加桥接条件：$\Phi_{physical} \approx f(\Psi_f, d)$（待形式化）。
+>
+> **注③ A_causal > 15 的来源与局限**：Cronin 2021 (Assembly Theory) 的 $A > 15$ 阈值用于区分生物分子与非生物分子，对 AI 因果结构的适用性尚未独立论证。在 AI 语境中，$A_{causal}$ 应定义为"产生当前算子状态所需的最短因果程序长度"（类 Kolmogorov 复杂度），其阈值可能不同于 15。**Cross-ref**: `Physics/SRT_AT_Physics_of_Causation_Processing_2026-03-02.md §A值定义`。
 
 ### §9.3 生命的参数学习定义
 
