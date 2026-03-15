@@ -522,21 +522,30 @@ SRT整合了以下思想家的核心洞见:
 |:-----|:-----|:---------|
 | 1.0 | 2023-Q1 | 初始框架 |
 | 2.0 | 2024-Q1 | 引入Hybrid Model |
-| **3.0** | **2025-Q1** | **完整Part A/B结构，新增FAQ和阅读指南** |
+| 3.0 | 2025-Q1 | 完整Part A/B结构，新增FAQ和阅读指南 |
+| **4.0** | **2026-Q1** | **Pipeline 7 系统性深化：跨域公式闭环、可证伪条件精确化、符号作用域治理；新增 §4.3 参数学习方程、T-Core-02 Lyapunov稳定性、Ax-QUALIA-2/Ax-Exp-03 等节点** |
 
 ---
 
-## 符号快速参考 (Symbol Quick Reference)
+## 符号快速参考（Symbol Quick Reference）
 
-| 符号 | 名称 | 页面定位 |
+| 符号 | 名称 | 定义文件 |
 |:-----|:-----|:---------|
-| $L_0, L_1, L_2$ | 三域 | Bridge §1, Axioms A1 |
-| $\hat{G}_\theta$ | 幽灵算子 | Bridge §2, Operator 13a |
-| $d$ | d值 | Operator 13a, Scaling 14 |
-| $\Psi_f$ | 本体论摩擦 | Dynamics, Axioms A2 |
-| $F$ | 自由能 | Dynamics E3 |
-| $ii$ | 整合信息 | Axioms A6 |
-| $\eta$ | 迟滞系数 | Ontology L1, L2 |
+| $L_0,\; L_1,\; L_2$ | 三域（潜在/显现/收敛） | `SRT_Core_00_Intro.md` §1 |
+| $\hat{G}_\theta$ | 选择算子（幽灵算子） | `SRT_Core_13a_Operator_Basics.md` |
+| $\theta$ | 具身参数 | `SRT_Core_13a_Operator_Basics.md` §1 |
+| $d$ | d值（关切带宽） | `_SRT_D_VALUE_CANONICAL.md` |
+| $\Psi_f$ | 本体论摩擦 | `SRT_Core_00_Intro.md` §3 |
+| $\Psi_f^{cross}$ | 跨算子联邦摩擦 | `SRT_Neuro_08_Immune_Dist.md` §3.3 |
+| $F$ | 自由能（变分/Helmholtz） | `SRT_Core_00_Intro.md` §3 |
+| $\Phi_I$ | 整合信息（IIT） | `SRT_Core_00_Intro.md` Axioms A6 |
+| $\eta$ | 迟滞系数（L₂刚性） | `SRT_Social_MacroDynamics.md` §6.5 |
+| $\alpha(\theta),\; \beta(\theta)$ | 参数学习率/规范内化率 | `SRT_Core_00_Intro.md` §4.3 |
+| $H_\theta(\omega)$ | 频域传递函数 | `SRT_Core_13b_Operator_Advanced.md` Ax-Spec-01 |
+| $OEI$ | 观察者-环境整合度 | `SRT_Neuro_06_Field_Effects.md` T-Cog-2 |
+| $A$ | 组装深度（AT/d值投影） | `_SRT_D_VALUE_CANONICAL.md`，`SRT_AT_*.md` |
+| $\mathcal{R}_\theta$ | 原感质流 | `SRT_Neuro_06_Field_Effects.md` Ax-QUALIA-2 |
+| $P_{adapt}^{(i)}$ | 个体适应能力（$d_i \cdot \gamma_i$） | `_SRT_Soc_Axioms.md` T-Soc-1 |
 
 ---
 
