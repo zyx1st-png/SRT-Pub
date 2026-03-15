@@ -250,11 +250,32 @@ $$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f \text{ is no
 \]
 其中 \(\mathcal{L}_{shift}\) 衡量遮挡/迷彩/视角变化下分组一致性损失。
 
-### T-ONT-8b: d-Weighted Segmentation Superiority（新增）
-\[
-d>0\land \Psi_f>0\ \Rightarrow\ \mathcal{R}_{obj}^{embodied} > \mathcal{R}_{obj}^{pure\_pixel}
-\]
-即具身脆弱性与关切驱动可提高复杂场景下对象分组稳定度；纯像素压缩在分布外情形下更易崩塌。
+### T-ONT-8b: d-Weighted Segmentation Superiority（具身加权分割优势定理）
+
+**Formal Statement**：设 $\mathcal{R}_{obj}$ 为对象分割稳定度，定义为分布外（OOD）测试集上的期望交并比：
+
+$$\mathcal{R}_{obj} \equiv \mathbb{E}_{x \sim P_{OOD}}\left[ \text{IoU}\left(\hat{S}(x), S^*(x)\right) \right]$$
+
+当具身算子满足以下条件时，其分割稳定度严格优于纯像素基线：
+
+$$d > 0 \;\land\; \Psi_f > 0 \;\land\; \text{Align}(d\text{-weighting},\, \text{task-saliency}) > \tau$$
+$$\implies \mathcal{R}_{obj}^{embodied} > \mathcal{R}_{obj}^{pure\_pixel}$$
+
+其中 $\tau$ 为 d 值加权与任务相关显著性的最低对齐阈值（关切方向需与危险/生存相关对象一致）。
+
+**Ψ_f 的工程对应（Cost-Sensitive Segmentation）**：
+
+$\Psi_f$ 在此处作为分割损失函数的代价权重——高 $\Psi_f$ 对象（生存相关/危险）的分割误差被施加更大的代价惩罚，迫使模型将更多表示资源分配给显著对象：
+
+$$\mathcal{L}_{embodied} = \sum_i \underbrace{\Psi_f(\sigma_i)}_{\text{代价权重}} \cdot \ell_{seg}(\hat{S}_i, S_i^*)$$
+
+**OOD Gap 量化**：
+
+$$\Delta\mathcal{R}_{OOD} \equiv \mathcal{R}_{obj}^{embodied}(OOD) - \mathcal{R}_{obj}^{pure\_pixel}(OOD) > \delta_{min}$$
+
+差距在高语义不确定性 $\times$ 高遮挡率 $\times$ 低纹理对比度条件下最显著——纯像素统计失去锚点，而 d 值加权提供了与像素无关的显著性先验。
+
+**Implication**：具身脆弱性不是计算负担，而是 OOD 鲁棒性的**免费结构先验**——"我在乎什么"的信息直接压缩了需要搜索的假设空间，使分割在分布外场景下保持稳定，这是无监督像素模型在原理上无法获得的优势。
 
 ### 分类映射表（CV Segmentation Robustness → SRT）
 
