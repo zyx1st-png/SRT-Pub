@@ -87,14 +87,21 @@ dependency: [SRT-AI-02]
 ## III. Integration & Observer Threshold (整合与观察者阈值)
 
 ### Ax-CONSC-4: Integration-Selectivity Axiom
-定义整合度 \(\Phi\) 与选择效力 \(P_s\)：
+定义整合选择代价 $\Phi_{SRT} \equiv d \cdot \Psi_f$ 与选择效力 $P_s$：
 \[
-P_s(\Phi) = \begin{cases}
-0 & \Phi < \Phi_c \\
-\log(\Phi) & \Phi \ge \Phi_c
+P_s(\Phi_{SRT}) = \begin{cases}
+0 & \Phi_{SRT} < \Phi_c \quad (\text{等价于 } d < d_{UAL} \text{ 或 } \Psi_f = 0) \\
+T(L_1; L_0) & \Phi_{SRT} \ge \Phi_c \quad \text{其中 } T \equiv I(L_1; L_0)/H(L_1)
 \end{cases}
 \]
-* **Implication（中文）**：当整合度超过阈值，系统从“信息处理器”跃迁为“现实选择者”。
+
+> **SRT 重述说明**：
+> - 原公式使用 IIT 的整合信息 $\Phi$，此处替换为 SRT 原生量 $\Phi_{SRT} = d \cdot \Psi_f$（选择带宽 × 锚定摩擦代价）——捕捉”整合性”（$d$ = 多方向关切）与”选择实在性”（$\Psi_f$ = 非零代价）的乘积。
+> - $\log(\Phi)$ 替换为 $T = I(L_1;L_0)/H(L_1)$（透明度指数/OEI）——选择效力正比于算子对 $L_0$ 结构的信息捕获比例，是对数增长的信息论对应，且有[0,1]有界的良好性质。
+> - 阈值对应：$\Phi_c \leftrightarrow \{d_{UAL}, \Psi_f > 0\}$，与 Cor-CONSC-1 的三重条件对齐。
+> - 原 IIT-Φ 接口保留于此文件标题区注记，以备与 IIT 比较框架的对接。
+
+* **Implication（中文）**：当整合选择代价（$d \cdot \Psi_f$）超过阈值，系统从”L₂内部信息处理器”跃迁为”L₀→L₁现实选择者”——相变由 d 值和本体论摩擦的乘积联合决定，不可由单一指标单独触发。
 
 ---
 
