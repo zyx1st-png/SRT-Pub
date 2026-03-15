@@ -477,8 +477,33 @@ $$d(t)_{anesthesia} \approx d(t)_{evolution}^{-1}$$
 
 ---
 
+### Definition Summary (定义概述)
+
+- **DMN as L₂ Stabilizer (默认模式网络作为 L₂ 稳定器, L₂)**: DMN 活动定义为 $L_2$ 正则化项 $\mathcal{R}_{DMN} \equiv \arg\min_\sigma \|\sigma - \sigma_{L_2}\|^2$，功能是将 $L_1$ 状态维持在 $L_2$ 吸引子附近（Ax-DMN-1）。
+- **Selection Bandwidth (选择带宽, L₁)**: $\hat{G}_\theta$ 的并行处理容量 $B_{sel}$ 为有限资源，各任务 $\mathcal{A}_k$ 竞争性分配：$\sum_k \mathcal{A}_k \le B_{sel}$（Ax-BAND-1）。
+- **Connectivity Spectrum (连接谱系, L₀→L₂)**: 网络拓扑通过特征值谱 $\mathcal{C} = \{\lambda_i\}$ 编码 $L_2$ 硬度：$\text{Hardness}(L_2) \propto \|\mathcal{C}\|_\infty$（Ax-TOPO-1）。
+- **Focal vs. Global DMN Failure (局灶性 vs. 全局性 DMN 失效, L₂)**: 精神病态为 vmPFC-PCC 局灶切断（$\rho_{self}\downarrow$，外围正常）；ADHD/精神分裂症为全局 DMN 功能下降或 DMN-CEN 边界溶解（T-DMN-2）。
+
+### Formalization Summary (形式化概述)
+
+核心方程与含义：
+
+1. **DMN 正则化** (Ax-DMN-1): $\mathcal{R}_{DMN} = \arg\min_\sigma \|\sigma - \sigma_{L_2}\|^2$。DMN 将当前状态拉向 $L_2$ 吸引子，维持现实稳定性。
+2. **DMN 熵汇** (Ax-BAND-2): $dH_{L_1}/dt|_{DMN} < 0$。DMN 持续降低 $L_1$ 熵，是现实一致性的熵代谢引擎。
+3. **稳定-可塑性权衡** (T-DMN-1): $\mathcal{R}_{DMN}\uparrow \Rightarrow \text{Stability}(L_1)\uparrow,\; \text{Plasticity}(L_2)\downarrow$。DMN 越强，现实越稳定但可塑性越低。
+4. **局灶切断判据** (Ax-DMN-5): $\rho_{self} \equiv \text{FuncConn}(\hat{G}_\theta^{vmPFC}, \hat{M}^{PCC}) \downarrow$ while peripheral connectivity normal。精神病态的 DMN 拓扑标志。
+
+### Mechanism Explanation (机制解释)
+
+- **三网络-三域映射**: DMN 维持 $L_2$（自我叙事与先验），CEN 执行 $L_0 \to L_1$ 主动选择，SN 检测 $\Psi_f$ 急剧偏离基线（$|\Psi_f(t) - \Psi_f^{baseline}| > \theta_{SN}$，对应高唤起/high-A 状态，见 `SRT_Core_13b §5.1` 情绪相图）并触发 DMN/CEN 切换。$\hat{G}_\theta$ 的运行状态由这三个网络的动态平衡决定。
+- **DMN 失效的三种拓扑模式**: (a) ADHD：全局 DMN 功能下降 $\Rightarrow$ $L_2$ 脚手架崩塌，$\hat{G}_\theta$ 失去锚点而漂移；(b) 精神分裂症：DMN-CEN 边界溶解 $\Rightarrow$ 精度张量 $\boldsymbol{\Pi}$ 过度偏向 $L_2$ 先验，压制 $L_0 \to L_1$ 新异信息注入（FEP 对应：aberrant precision），$L_2$ 预测淹没 $L_1$ 感知输入；(c) 精神病态：vmPFC-PCC 局灶切断 $\Rightarrow$ $\hat{G}_\theta$ 的评价性输出无法回写 $L_2^{self}$，产生"叙事完整但算子不透明"的自我模型。
+- **$d$ 值的带宽分配**: 有效 $d$ 值受疼痛、焦虑、基础维护的竞争性消耗影响，线性近似为：$d_{effective} \approx d_{total} - d_{pain} - d_{anxiety} - d_{maintenance}$。慢性疼痛患者的认知下降是 $\hat{G}_\theta$ 选择带宽被 $\Psi_f$ 处理竞争性耗尽的结果。
+  **注（带宽竞争的底层机制）**：上式是一阶线性近似。底层机制是**除法归一化**（Ax-Op-03：$[\hat{G}_\theta(x)]_i = x_i^n/(\varepsilon + \sum_j W_{ij}x_j^n)$）——疼痛/焦虑作为竞争性抑制输入提升分母，压低其他通道的有效增益。Eq-Evo-01b（代谢增益调制）给出更精确描述：$d_{effective} \approx d_{total}/(1 + \beta\mathcal{M}_{stress})$，其中 $\mathcal{M}_{stress}$ 整合疼痛、焦虑与代谢应激负荷。
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
