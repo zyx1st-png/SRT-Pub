@@ -375,16 +375,31 @@ $$\lambda_{Jacobian} \to 0 \text{ at } d = d_{critical}$$
 
 ---
 
-### H-Spirit-3: 集体礼拜的脑际同步
+### H-Spirit-3: 集体礼拜的脑际同步与 $\Psi_f^{cross}$ 下降
 
-**预测**: 集体宗教仪式中（如弥撒、礼拜），参与者之间应出现：
-- EEG 相位同步增强（尤其是 $\theta$ 和 $\gamma$ 波段）
-- 心率变异性（HRV）同步
-- d-metrics 相关性提升
+*(符号澄清：本节 "theta 波" 指 EEG 4–8 Hz 频段，与 SRT 具身参数 $\theta$ 以字体区分；下文 $\theta$ 始终指后者。)*
 
-**机制**: 共同的 $\theta$ 调整 + 共享的 $L_2$ 结构 → 算子共振
+**回溯性确证（Retrodictions）**：
 
-**证伪条件**: 仪式中无显著脑际同步。
+集体同步活动（唱歌、统一呼吸、节律运动）诱导 EEG 相位同步增强（theta/gamma 波段）及心率变异性（HRV）同步，已被 Konvalinka et al. (2011, *PNAS*) 等多项研究确认——这支持了 SRT"共享 $L_2$ 结构可通过身体同步降低跨算子摩擦"的一般原理，但本身不是待测假说。
+
+**SRT 专属新预测**：
+
+**H-Spirit-3a（L₂ 语义对齐的增量效应）**：
+
+在控制同步运动强度（节拍频率、动作幅度）的条件下，**参与者对仪式语义意义的信念一致性**（共享 $L_2^{ritual}$）应对 EEG 相位同步产生独立的显著增量贡献，超越纯运动同步所能解释的方差：
+
+$$\text{Inter-brain sync} = \beta_1 \cdot \text{Motor sync} + \underbrace{\beta_2 \cdot \text{Align}(L_2^{ritual})}_{\text{SRT 专属项，}\beta_2 > 0}$$
+
+**H-Spirit-3b（Ψ_f^cross 减少的行为签名）**：
+
+仪式后脑际同步峰值强度应预测后续 $\Psi_f^{cross}$ 下降的行为代理指标（社会信任博弈中的合作率上升、利他行为频率提升），而非仅预测主观报告的"归属感"——因为 $\Psi_f^{cross}$ 下降必须在行为层面留下可测量的跨算子摩擦减少签名。
+
+**SRT 机制**：
+
+$$\text{Ritual synchrony} \;\xrightarrow{\beta(\theta)\uparrow}\; \nabla_\theta\mathcal{A}_{L_2^{ritual}}\uparrow \;\implies\; \frac{d\theta_i}{dt} \text{ 协同化} \;\implies\; \Psi_f^{cross}(\hat{G}_i, \hat{G}_j) \to \min$$
+
+**证伪条件（H-Spirit-3b）**：控制 EEG 同步强度后，脑际同步峰值对仪式后利他行为/社会信任的预测力 $< \beta_0$（基线效应量），则 H-Spirit-3b 失效。
 
 ---
 
@@ -464,3 +479,27 @@ _SRT_Spirit_Axioms (本文件)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+- **本源算子**：$\Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，定义神性为选择过程的拓扑极限而非实体。
+- **苦难-摩擦耦合**：$\text{Suffering} \propto 1/d$，$\Psi_f \uparrow \iff d \downarrow$；低关切维度导致高本体论摩擦。
+- **解脱渐近线**：$\text{Nirvana} \equiv \lim_{d\to\infty} \hat{G}_\theta(L_0)$，解脱是 $d$ 的无穷扩展而非 $L_1$ 的消灭。
+- **实践梯度**：$d\theta/dt = -\alpha \nabla_\theta \Phi + \text{Learning}$，修持是对 $\theta$ 参数的可操作优化。
+- **信之松弛**：$d\beta/dt < 0$，信仰是 $L_2$ 约束的受控放松以重开 $L_0$ 通道。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 是具身选择算子；$\Omega$ 作为其参数极限标记了选择空间的渐近边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容——无限者不可实例化。
+- $\Psi_f$ (本体论摩擦) 是维持 $L_1$ 显现态的结构成本；$d$ (关切维度) 控制 $\hat{G}_\theta$ 的关切半径。$d \downarrow$ 时 $\Psi_f \uparrow$，产生苦难的拓扑张力。
+- 修持通过梯度下降 $\nabla_\theta \Phi$ 调整参数 $\theta$，扩展 $d$ 并降低 $\Psi_f$；不同冥想类型对应不同参数子空间的操作（止→降 $w_{L_2}$，观→提升 $\rho$，慈心→扩展 $d$）。
+- 解脱的相变性质由 $d > d_{critical}$ 触发拓扑重组，灵魂黑夜对应临界慢化 $\lambda_{Jacobian} \to 0$。
+- $L_0/L_1/L_2$ 三域提供全部过程的本体论舞台：$L_0$ 为潜在域，$L_1$ 为显现域，$L_2$ 为收敛约束域。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档为 SRT 灵性公理的形式化框架，不等同于任何特定宗教教义或灵性传统的规范性主张。
+2. 灵性体验的操作化近似不替代主观现象学报告的独立价值。
+3. 禁止将理论预测用于个体灵性实践的规范性指导，除非结合专业伦理评估。
