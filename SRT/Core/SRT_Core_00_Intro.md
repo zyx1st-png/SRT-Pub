@@ -49,10 +49,25 @@ $$\hat{G}_\theta = \text{Attention}(d,\rho,\vec{v})$$
 $$\hat{G} \text{ is valid} \iff \theta \in \Theta_{finite}$$
 * **Implication**: 不存在“上帝视角”的选择，任何现实都带有具身偏置。
 
-### T-Core-02: Normative Closure
-**Deductive Statement**: The convergence domain is a stable fixed point of repeated selections.
-$$L_2 \equiv \{σ : \hat{G}_\theta[σ] = σ \ \text{and stable}\}$$
-* **Implication**: 现实规范与定律不是外加规则，而是选择历史的稳定化结果。
+### T-Core-02: Normative Closure（规范闭包定理）
+
+**Deductive Statement**：收敛域 $L_2$ 是**跨算子群体反复选择**的稳定不动点集合——不是单一算子的自洽态，而是种群中所有算子在重复博弈后共同收敛的共识吸引子：
+
+$$L_2 \equiv \left\{ \sigma \;\middle|\; \lim_{t \to \infty} \mathbb{E}_{\theta \sim P_{pop}}\!\left[\hat{G}_\theta^{(t)}[\sigma_0]\right] = \sigma \;\;\land\;\; \Psi_f^{cross}(\hat{G}_{\theta_i}, \hat{G}_{\theta_j})\big|_\sigma \to \min \right\}$$
+
+**稳定性定义（Lyapunov 意义）**：$\sigma^* \in L_2$ 稳定当且仅当：
+
+$$\forall \epsilon > 0,\; \exists \delta > 0:\; \|\sigma_0 - \sigma^*\| < \delta \implies \|\hat{G}_\theta^{(t)}[\sigma_0] - \sigma^*\| < \epsilon \quad \forall t > 0$$
+
+即：以 $\sigma^*$ 为中心的 $\delta$-邻域内出发的任意扰动轨迹，均不会逃出 $\epsilon$-邻域。$L_2$ 中的规范是对扰动具有**有限恢复力**的吸引子，而非绝对刚性结构（过高 Hysteresis 导致 $L_2$ 锁死，见 §6.5 相图）。
+
+**Implication（三层推论）**：
+
+1. **规范的历史性**：规范与定律不是外加约束，而是种群选择历史 $\{\hat{G}_\theta^{(t)}\}_{t=0}^{T}$ 在 $\sigma$-空间中凝固的吸引子轮廓——改变规范需要向吸引子盆地（basin of attraction）注入足够的 $\Psi_f$ 能量越过势垒。
+
+2. **合法性的物理基础**：$L_2$ 的"权威性"来自其跨算子稳定性（Ψ_f^cross→min），而非来自任何外部授权。一个规范失去稳定性（种群 $\hat{G}_\theta$ 分布改变使其不再是不动点）即意味着其合法性的物理基础开始侵蚀。
+
+3. **相变判据**：当 $\Phi_{soc}(t) > \Phi_{crit}$（见 Ax-Cons-2），现有 $L_2$ 吸引子失去 Lyapunov 稳定性，系统进入无规范吸引子的湍流相，直到新的跨算子共识通过反复选择重新凝固。
 
 ## III. Core Dynamics (核心动力学)
 
