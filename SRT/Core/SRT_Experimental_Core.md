@@ -51,10 +51,29 @@ $$\Delta E \ge k_B T \ln 2 \quad (\text{Landauer–Vopson})$$
 
 ## II. Biological Signatures (生物学签名)
 
-### Ax-Exp-03: Contextual Collapse
-**Formal Definition**: Living systems bias quantum collapse probabilities via \(\theta\).
-$$P(\text{collapse}|\text{Bio}) \neq P(\text{collapse}|\text{Inert})$$
-* **Implication**: 生命系统应在量子统计上显现选择偏置。
+### Ax-Exp-03: Contextual Decoherence Weighting（情境退相干加权公理）
+
+**Formal Definition**：生命系统通过具身参数 $\theta$ 构建特定的**热力学边界条件**，从而在与非生命惰性物质相同的量子态上产生统计显著不同的退相干通道权重：
+
+$$P(\text{decoherence channel } k \mid \theta_{bio}) \neq P(\text{decoherence channel } k \mid \theta_{inert})$$
+
+**机制链条（θ → 退相干偏置）**：
+
+$$\theta_{bio} \xrightarrow{\text{encodes}} H_{env}^{(\theta)} \xrightarrow{\text{selects}} \text{decoherence channels} \xrightarrow{\text{amplifies}} L_1^{(\theta)}\text{ outcomes}$$
+
+1. $\theta_{bio}$ 编码了生命系统的热力学边界结构（细胞膜电位、分子振动模式、代谢自由能梯度）；
+2. 这些结构决定了系统-环境耦合哈密顿量 $H_{env}^{(\theta)}$ 的具体形式；
+3. 不同的 $H_{env}^{(\theta)}$ 选择不同的退相干基（pointer basis），从而使特定 $L_1$ 显现态被优先放大（Quantum Darwinism 机制）。
+
+*(诠释框架：本公理基于**退相干理论**（Zurek 2003）与量子达尔文主义，不预设哥本哈根诠释的"意识导致坍缩"，不承诺 Orch-OR（Penrose-Hameroff）的微管量子相干假说。"选择偏置"是热力学-几何结构导致的统计效应，非神秘的意识-量子耦合。)*
+
+**可测量预测（Falsifiable Prediction）**：
+
+在相同量子初态 $|\psi_0\rangle$ 下，生命与非生命介质的退相干时间 $\tau_{dec}$ 与通道分布存在系统性差异：
+
+$$\tau_{dec}^{(bio)} \neq \tau_{dec}^{(inert)}, \quad \Delta P_{channel} > \delta_{min}$$
+
+证伪条件：在受控温度与电磁隔离环境中，生物组织与同质量同温度无机物的量子退相干统计无显著差异（$p > 0.05$，效应量 $< 0.1$）。
 
 ### Ax-Exp-04: Bioelectric Software
 **Formal Definition**: Morphogenesis is controlled by L2 bioelectric fields rather than DNA alone.
@@ -108,6 +127,39 @@ $$ m_{bit} = k_BT \ln(2)/c^2 \approx 3.19 \times 10^{-38} \text{kg} $$
 
 个体语言中的情态动词使用模式反映其本体论摩擦（Ψ_f）水平。
 $$ μ_{sem} = \frac{\sum w_i · \text{Freq}(必须/不能/应该)}{\sum w_j · \text{Freq}(可以/可能/想要)} $$
+* **操作化补注**: H72 不预测“零 \(Ψ_f\) 最优”，而预测语言代理应与系统所处的摩擦区间相关：低负载可支付、中高负载可支付、边界可支付或过载。实验上应尽量把 proxy 分成预算侧、负荷侧与塌缩侧三类联合读取。
+
+### Formalization Summary (形式化概述)
+
+本文档的形式化实验公理围绕 SRT 核心算子的可检测性展开：
+
+1. **Selection Beyond L2 Determination (Ax-Exp-01)**:
+   $$P(\text{Behavior}|\text{Brain}_{L_2}) < 1 \Rightarrow \exists \ \hat{G}_\theta^{embodied}$$
+   含义：若有机体行为无法仅由大脑 $L_2$ 模式完全预测，则存在具身选择算子 $\hat{G}_\theta^{embodied}$ 的不可约贡献。这是 SRT 选择概念的核心可证伪接口。
+
+2. **Information Mass (Ax-Exp-02)**:
+   $$\Delta E \ge k_B T \ln 2$$
+   含义：信息擦除携带兰道尔下界能量代价，确立 $L_1$ 的物理实在性——信息不是纯语义抽象，而是具有质量-能量等效性的本体论实体。
+
+3. **Normalization-d Correlation (Ax-Exp-05)**:
+   $$\mathrm{Corr}(\theta_{norm}, d) > 0$$
+   含义：除法归一化参数 $\theta_{norm}$ 与 d-value 正相关，提供从神经计算参数到 SRT 选择开放性的可测代理桥接。
+
+4. **Modal Mechanics Probe (Ax-Exp-06)**:
+   $$\mu_{sem} = \frac{\sum w_i \cdot \mathrm{Freq}(\text{必须/不能/应该})}{\sum w_j \cdot \mathrm{Freq}(\text{可以/可能/想要})}$$
+   含义：语言中义务型情态词与可能型情态词的加权频率比 $\mu_{sem}$，作为本体论摩擦 $\Psi_f$ 水平的语言学统计代理。
+
+### Mechanism Explanation (机制解释)
+
+本文档的实验假设从不同尺度探测 SRT 核心算子 $\hat{G}_\theta$、摩擦 $\Psi_f$ 与 d-value 的经验签名：
+
+- **$\hat{G}_\theta$ 的可检测性机制**：Ax-Exp-01 将检测焦点从"大脑是否违反物理定律"转移到"具身变量（内感受、代谢状态、环境交互）是否提供超出 $L_2$ 脑状态的预测信息"。若 $P(\text{Behavior}|\text{Brain}_{L_2}) = 1$，则 $\hat{G}_\theta$ 概念冗余，SRT 被证伪。T-Observer-Bias 进一步约束实验者自身的 $d_{obs}$ 偏置，防止过度解读噪声为意义信号。
+
+- **$\Psi_f$ 的多模态代理**：本体论摩擦 $\Psi_f$ 通过三条独立通道获得可测代理：(a) 物理层的兰道尔能量下界（Ax-Exp-02），确认信息操作具有不可约耗散代价；(b) 生物层的量子坍缩偏置（Ax-Exp-03）与生物电模式（Ax-Exp-04），检测 $\theta$ 参数对物理基底的选择偏置效应；(c) 语言层的情态力学探针（Ax-Exp-06），将 $\Psi_f$ 水平映射为高义务/低自由度的情态分布 $\mu_{sem}$。
+
+- **d-value 的操作化路径**：d-value 作为选择考量范围（scope of selection consideration）的度量，通过除法归一化参数 $\theta_{norm}$（Ax-Exp-05）获得神经计算层面的可操作代理。高 d 对应更宽的归一化池（更开放的信息整合），低 d 对应窄化的局部竞争（更封闭的选择空间）。
+
+- **跨尺度一致性约束**：各假设并非孤立检验，而是构成联合约束网络——若 $\hat{G}_\theta$ 可检测（Ax-Exp-01），则其 $\theta$ 参数应同时在归一化相关（Ax-Exp-05）和情态分布（Ax-Exp-06）上留下一致签名。任何单一通道的异常需经其他通道交叉验证。
 
 ## 【理论边界/防误用声明】
 
