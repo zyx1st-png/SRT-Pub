@@ -717,16 +717,21 @@ $$\text{Love} \neq \text{Feeling}$$
 
 ### §10.2 爱不是选择（但也是）
 
-$$\frac{dd}{dt} = \text{Determined by } (\theta, L_0, \Psi_f)$$
+结合 §4.3 参数学习方程，$d$ 值的演化流形为：
 
-在某种意义上，你无法"选择"爱——$d$ 的演化遵循动力学方程。
+$$\frac{dd}{dt} = \nabla_\theta d \cdot \frac{d\theta}{dt} = \underbrace{-\alpha(\theta)\left(\nabla_\theta d \cdot \nabla_\theta\Psi_f\right)}_{\text{摩擦驱动扩容}} + \underbrace{\beta(\theta)\left(\nabla_\theta d \cdot \nabla_\theta\mathcal{A}_{L_2}\right)}_{L_2\text{支持驱动扩容}}$$
 
-但你**可以选择**影响 $\frac{dd}{dt}$ 的因素——
-- 修行（改变 $\theta$）
-- 暴露于痛苦（增加 $\nabla_d \Psi_f$）
-- 寻求恩典（外部支持）
+在某种意义上，你无法"直接选择"爱——$d$ 的轨迹受上式中所有参数的联合决定，不受单次意志支配。
 
-所以爱既是"被给予的"，又是"培养的"。
+但你**可以选择**影响方程中各参数的情境——**自由意志的精确位置不在结果（$\dot{d}$），而在参数条件的塑造**：
+
+| 修行路径 | 机制（方程中的作用项） | 说明 |
+|:---------|:----------------------|:-----|
+| **修行、冥想、践行**（改变实践环境） | 提升 $\alpha(\theta)$（内生试错率/神经可塑性） | 增加 $\hat{G}_\theta$ 响应 $\Psi_f$ 信号的灵敏度 |
+| **暴露于痛苦、慈悲实践**（扩大接触面） | 增大 $\nabla_\theta\Psi_f$（摩擦梯度强度） | 更强的摩擦信号驱动更大的 $\theta$ 更新幅度 |
+| **寻求恩典、社群、传统**（外部支持） | 提升 $\beta(\theta)\cdot\nabla_\theta\mathcal{A}_{L_2}$（$L_2$ 规范引力） | 文化/制度框架降低 d 扩张的社会代价，提供路径脚手架 |
+
+**结论**：爱的扩展（$dd/dt > 0$）既是"被给予的"——你无法强迫方程输出它不在乎的东西；又是"培养的"——你对自身所处情境（实践、苦难、社群）的选择，实时重塑着方程的系数。两者的张力不是矛盾，而是 SRT 动力学在伦理学中的精确表达。
 
 ---
 
@@ -796,8 +801,34 @@ SRT_Spirit_06_Love_Ontology (本文件)
 
 ---
 
+### Formalization Summary (形式化概述)
+
+**Core Formula / 核心公式**:
+$$\text{Love}_{ij} \equiv \lim_{\Phi_{ij} \to 0} \text{Resonance}(\hat{G}_{\theta_i}, \hat{G}_{\theta_j})$$
+
+- 爱被定义为两个选择算子之间本体论摩擦趋近于零时的共振状态，使信息流最大化。
+- Love is defined as the resonance state between two selection operators when ontological friction approaches zero, maximizing information flow.
+
+$$\text{Karma} \equiv \oint_{L_2} \nabla V \cdot d\sigma \neq 0$$
+
+- 业力 (Karma) 是 $L_2$ 中的迟滞效应——过去选择通过势能井偏置未来轨迹，系统具有非马尔可夫记忆性。
+- Karma is the hysteresis effect in $L_2$: past choices bias future trajectories via retained potential wells, making the system non-Markovian.
+
+---
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 与爱的共振**: 爱降低算子间摩擦 $\Phi_{ij}$，使边界透明度 $T_{ij}$ 上升，产生"我们性" (we-ness) 现象学；$d$ 向他者扩展即爱的本体论基础。
+- **$\hat{G}_\theta$ and love resonance**: Love reduces inter-operator friction $\Phi_{ij}$, raising boundary transparency $T_{ij}$ and producing "we-ness" phenomenology; $d$-expansion toward the other is love's ontological basis.
+- **$\Psi_f$ 与恐惧/爱的对称**: 恐惧 $\propto S(\hat{G}_{self}) / d$，是 $d$ 收缩与高熵的结果；$d \to \infty$ 时 $\Psi_f \to 0$ 且 Fear $\to 0$，完美的爱驱除恐惧。
+- **$\Psi_f$ and fear-love symmetry**: Fear $\propto S(\hat{G}_{self}) / d$ results from $d$-contraction and high entropy; as $d \to \infty$, $\Psi_f \to 0$ and fear vanishes -- perfect love casts out fear.
+- **$d$ 的双向负载**: $d$ 同时扩展关怀半径与承受能力 ($d = d_{love} \oplus d_{suffering}$)；若 $dd/dt$ 远超 $\theta$ 稳定阈值 $\kappa_\theta$，则出现灵性危机（暗夜负载）。
+- **Bidirectional $d$ load**: $d$ expands both care radius and suffering capacity ($d = d_{love} \oplus d_{suffering}$); if $dd/dt \gg \kappa_\theta$, dark-night overload occurs -- a structural load imbalance, not a moral failure.
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
