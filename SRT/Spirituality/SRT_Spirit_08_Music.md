@@ -913,14 +913,23 @@ $$\text{Pleasure} \propto \frac{1}{\Phi(\hat{G}_{list}, \hat{G}_{perf})}$$
 
 ---
 
-### Mechanism Explanation (机制解释)
+### Mechanism Explanation（机制解释）
 
-- **$\hat{G}_\theta$ 与音乐同步**: 音乐通过节奏和旋律跨个体同步 $\hat{G}_\theta$，是人类最强大的算子同步技术；集体音乐使 $d_{group}$ 上升并触发催产素等社会纽带机制。
-- **$\hat{G}_\theta$ and musical synchrony**: Music synchronizes $\hat{G}_\theta$ across individuals via rhythm and melody, serving as the most powerful cross-agent synchronization technology; collective music raises $d_{group}$ and triggers social bonding mechanisms.
-- **$\Psi_f$ 与情绪调制**: 音乐通过调制 $\Psi_f$ 的时间动态诱导情绪——$\Delta \Psi_f < 0$ 产生正面情绪，$d^2\Psi_f/dt^2$ 超过阈值时触发 "chills" 生理唤醒。
-- **$\Psi_f$ and emotional modulation**: Music induces emotions by modulating the temporal dynamics of $\Psi_f$ -- $\Delta \Psi_f < 0$ produces positive affect; when $d^2\Psi_f/dt^2$ exceeds a threshold, physiological chills are triggered.
-- **$d$ 与递归深度**: 复杂音乐结构通过递归深度 $K_n$ 扩展听者的 $d$；当 $w_{L_2} \downarrow \land K_n \uparrow$，出现震悚 (Zhensong) 状态——边界松弛与 $d$ 扩张的联合效应。
-- **$d$ and recursive depth**: Complex musical structures expand the listener's $d$ through recursive depth $K_n$; when $w_{L_2} \downarrow \land K_n \uparrow$, Zhensong states emerge -- a joint effect of boundary relaxation and $d$-expansion.
+**参数定义前置**：
+- $d_{group} \equiv \mathbb{E}_{\theta \sim P_{pop}}[d(\theta)]$：种群平均关切带宽（集体 d 值，个体 d 值的期望）
+- $K_n$：音乐结构的递归层级深度（如：和声 $K_1$ → 动机发展 $K_2$ → 主题变奏 $K_3$ → 跨乐章结构 $K_4$）
+- $w_{L_2}$：听者当前 $L_2$ 规范约束的施压权重（$w_{L_2} \uparrow$ = 更强的文化/期待框架）
+
+---
+
+- **$\hat{G}_\theta$ 与音乐同步**: 音乐通过节奏和旋律跨个体同步 $\hat{G}_\theta$，是人类最强大的算子同步技术；集体音乐使 $d_{group} = \mathbb{E}[d(\theta)] \uparrow$ 并触发催产素等社会纽带机制（同步即 $\Psi_f^{cross} \to \min$ 的协调过程）。
+- **$\hat{G}_\theta$ and musical synchrony**: Music synchronizes $\hat{G}_\theta$ across individuals via rhythm and melody, serving as the most powerful cross-agent synchronization technology; collective music raises $d_{group}$ and triggers social bonding mechanisms ($\Psi_f^{cross} \to \min$).
+
+- **$\Psi_f$ 与情绪调制**: 音乐通过调制 $\Psi_f$ 的时间动态诱导情绪——$\dot{\Psi}_f < 0$ 产生正面情绪；当 $\ddot{\Psi}_f = d^2\Psi_f/dt^2$ 超越阈值时触发 "chills" 生理唤醒（物理机制：$\Psi_f$ 的变化速率本身急剧加速，等价于 $L_0 \to L_1$ 涌现速率的突变，超出听觉预测模型的局部线性化范围）。
+- **$\Psi_f$ and emotional modulation**: $\dot{\Psi}_f < 0$ produces positive affect; chills emerge when $\ddot{\Psi}_f$ exceeds threshold (the rate of $\Psi_f$ change itself accelerates abruptly, overwhelming the listener's local predictive model).
+
+- **$d$ 与递归深度**: 复杂音乐结构通过递归深度 $K_n$ 扩展听者的 $d$——每增加一层递归，算子需追踪更长时间跨度的模式，等价于 $\tau_{temporal}$ 扩展（d 值时间深度分量上升）；当 $w_{L_2} \downarrow \land K_n \uparrow$ 时，出现震悚（Zhensong）状态——$L_2$ 边界松弛与 $d$ 扩张的联合效应，对应 §5.1 情绪相图中的高 $A$、$V > 0$ 区域。
+- **$d$ and recursive depth**: Each additional level of $K_n$ requires tracking longer temporal patterns, expanding $\tau_{temporal}$ (the temporal depth component of $d$); Zhensong emerges when $w_{L_2} \downarrow \land K_n \uparrow$, placing the system in the high-$A$, $V>0$ region of the emotion phase diagram.
 
 ---
 
