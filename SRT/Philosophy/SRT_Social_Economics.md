@@ -516,15 +516,19 @@ $$\frac{d(d_{\text{制度}})}{dt} \propto \text{政治参与广度} \times \text
 <!-- ORIGINAL-SECTION-PRESERVED -->
 **定义：** 权利是L_2结构中的保护性约束，限制某些Ĝθ的选择以保障其他Ĝθ的选择可能性。
 
-$$Right(θ, x) \equiv L_2[\text{禁止任何 } θ' \text{ 执行 } \hat{G}_{θ'}[¬x(θ)]]$$
+$$Right(\theta, x) \equiv \forall\theta' \neq \theta:\; L_2\!\left[\hat{G}_{\theta'}[L_0] \notin \left\{\sigma : d_\theta^{\to x}(\sigma) < d_\theta^{\to x}(\sigma_0)\right\}\right]$$
 
-即：θ对x的权利意味着L_2规定任何其他agent都不得消除θ选择x的可能性。
+其中 $d_\theta^{\to x}$ 是 $\theta$ 在选择 $x$ 方向上的 d 值分量（关切带宽投影）；$\sigma_0$ 是权利成立前的基准状态。含义：任何 $\theta'$ 的选择结果都不得落入"使 $\theta$ 选择 $x$ 的带宽低于基准"的状态集合——即 L₂ 禁止 $\theta'$ 通过其选择操作降低 $\theta$ 的 $x$-方向选择能力。
+
+> **原公式注记**：原写法 $L_2[\hat{G}_{\theta'}[\neg x(\theta)]]$ 中 $\neg x(\theta)$ 符号含义不透明（$x(\theta)$ 是谓词还是状态？$\neg$ 是集合补还是否命题？）；上式明确用 d 值投影取代，避免量词歧义。
 
 #### 4.1.2.2 权利作为d值保护机制
 <!-- ORIGINAL-SECTION-PRESERVED -->
 **核心命题：** 健康社会必须通过权利机制最大化系统的选择多样性。
 
-$$\text{社会健康度} \propto \sum_θ d_θ × \text{可访问的 } L_0^θ$$
+$$\text{社会健康度} \propto \sum_\theta d_\theta \cdot S(\hat{G}_\theta, t)$$
+
+其中 $S(\hat{G}_\theta, t) = \mu_{L_1}\{\sigma \in L_1 : \hat{G}_{\theta,L_2(t)}[\sigma] \text{ 是可行锚定}\}$（见 `Core/SRT_Core_12b_Ontology_L2.md §Def-L2-Normative`，个体算子的选择空间体积）。**Cross-ref**：权利机制 = 保持 $dS(\hat{G}_\theta, t)/dt \geq 0$（防止选择空间收缩）的 L₂ 约束集合——这是 Def-L2-Normative 中**可持续 L₂** 在权利理论中的直接应用。
 
 **权利的功能分析：**
 
