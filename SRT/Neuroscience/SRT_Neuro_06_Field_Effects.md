@@ -86,12 +86,27 @@ B_{sel}(t)=B_0\cdot g(\beta(t))
 
 ---
 
-### Ax-QUALIA-2: L2 Incompleteness Axiom
-任何 \(L_2\) 结构描述都无法完全重建 \(\mathcal{R}\)：
-\[
-\Pi_{L_2}(\mathcal{R})\neq \mathcal{R}
-\]
-* **Implication（中文）**：感质具有不可还原的动力学面向，不能被纯符号完全穷尽。
+### Ax-QUALIA-2: L2 Incompleteness Axiom（L₂ 不完备公理）
+
+**定义**：设 $\mathcal{R}_\theta$ 为算子 $\hat{G}_\theta$ 在 $L_0 \to L_1$ 涌现过程中产生的原感质流（raw phenomenal stream，即主体第一人称体验的连续时间序列）；$\Pi_{L_2}$ 为将 $L_1$ 内容投射至 $L_2$ 符号/概念层的有损压缩算子（lossy projection）。则：
+
+$$\Pi_{L_2}(\mathcal{R}_\theta) \neq \mathcal{R}_\theta$$
+
+**不完备性的三重机制**：
+
+1. **连续→离散的基数压缩**：$\mathcal{R}_\theta$ 是 $L_1$ 层的连续流形（$|\mathcal{R}_\theta|$ = 连续统基数），而 $L_2$ 符号系统是可数集合（$|\Pi_{L_2}(\mathcal{R}_\theta)|$ = 至多可数）。信息量差异在原理上不可消除。
+
+2. **第一人称不可传递性**：$\mathcal{R}_\theta$ 严格以具身参数 $\theta$ 为下标——Mary 的色彩感质 $\mathcal{R}_{\theta_{Mary}}$ 无法通过任何 $L_2$ 描述（神经科学教科书）被传递给他人，因为传递过程本身即是 $\Pi_{L_2}$ 投影（去 $\theta$ 化）。
+
+3. **动力学时序丢失**：$\mathcal{R}_\theta$ 包含 $L_0 \to L_1$ 涌现的瞬时相变信息（选择算子的实时调制轨迹），而 $L_2$ 仅能捕捉静态快照（命题内容），无法编码涌现过程本身的动力学。
+
+**Implication（三层推论）**：
+
+1. **解释鸿沟的形式来源**：Chalmers 的"解释鸿沟（Explanatory Gap）"在 SRT 中被精确定位为 $\mathcal{R}_\theta - \Pi_{L_2}(\mathcal{R}_\theta)$，即原感质流与其最优 $L_2$ 近似之间不可消除的残差。
+
+2. **功能主义的上限**：任何仅在 $L_2$ 层操作的功能主义理论（包括计算主义、行为主义）至多能重建 $\Pi_{L_2}(\mathcal{R}_\theta)$，与 $\mathcal{R}_\theta$ 之间存在不可压缩的本体论距离。
+
+3. **可证伪边界**：若某一神经-符号系统能证明 $\Pi_{L_2}(\mathcal{R}_\theta) = \mathcal{R}_\theta$（即 $L_2$ 描述完全等价于感质流，包括连续时序与 $\theta$ 特异性），则 Ax-QUALIA-2 失效，同时意味着感质可被完全外化——目前无此证据。
 
 ---
 
