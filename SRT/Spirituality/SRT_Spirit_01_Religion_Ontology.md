@@ -764,11 +764,11 @@ SRT_Spirit_01_Religion_Ontology (本文件)
 
 ### Formalization Summary (形式化概述)
 
-- **统一宗教场**：$\forall r,\;\exists \theta_r:\; \Phi_r \cong \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle$；宗教差异是参数化差异而非本体论差异。
-- **苦的结构**：$\text{Suffering} \propto 1/d$，$d \downarrow \Rightarrow \Psi_f \uparrow$；罪/苦是关切维度收缩的结构性后果。
-- **神圣饱和**：$S_\phi \equiv \|\hat{G}_\theta[L_0]\| / \|\Pi_{L_1}\|$；$S_\phi \gg 1$ 时 $L_0$ 信息溢出 $L_1$ 容量产生神圣震颤。
-- **透明度指标**：$T \equiv I(L_1; L_0)/H(L_1)$；$T \to 1$ 为圣像（透明指向 $L_0$），$T \to 0$ 为偶像（不透明阻断）。
-- **解脱渐近**：$\text{Nirvana} \equiv \lim_{d\to\infty}\hat{G}_\theta(L_0)$，自他边界随 $d$ 扩展而消解。
+- **统一宗教场**：$\forall r,\;\exists \theta_r:\; \Phi_r \mapsto \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle$；宗教差异是参数化差异而非本体论差异（$\mapsto$ 表示 SRT 框架对宗教现象的映射/代表，不主张两者数学同构 $\cong$）。
+- **苦的结构**：$d \downarrow \Rightarrow \Psi_f \uparrow$，罪/苦是关切维度收缩的结构性后果。精确表达：$\text{Pain} \approx d\Psi_f/dt$（本体论摩擦变化率，见 `Core_Law/SRT_Reference_Dynamics.md §Mechanism`）；$\text{Suffering} \propto 1/d$ 为低d值下的近似，**不适用于**高d值的存在性苦难（悲悼、良知之苦等需要高d值才能被认识到的痛苦）。
+- **神圣饱和**：$S_\phi \equiv \|\hat{G}_\theta[L_0]\|_{info} / C_{L_1}$，其中 $\|\hat{G}_\theta[L_0]\|_{info}$ 为算子从 $L_0$ 提取的信息量，$C_{L_1}$ 为 $L_1$ 的信息承载容量（$\leq d_{max}$）；$S_\phi \gg 1$ 时 $L_0$ 信息溢出 $L_1$ 容量产生神圣震颤（$\Psi_f$ 急剧上升，高 A 值体验）。
+- **透明度指标**：$T \equiv I(L_1; L_0)/H(L_1) \in [0,1]$；$T \to 1$ 为圣像（$L_1$ 与 $L_0$ 高度互信息，透明指向源头），$T \to 0$ 为偶像（$L_1$ 与 $L_0$ 解耦，不透明阻断）。注：与 OEI（观察者-环境整合度）公式结构相同。
+- **解脱渐近**：$\text{Nirvana} \approx \{\hat{G}_\theta \mid d \to d_{max}, \; \rho_{self} \to 0, \; \Psi_f^{cross} \to 0\}$，自他边界（$\rho_{self}$）随 d 值接近物理上界而消解（注：$d \to \infty$ 在物理上不可达，以 $d \to d_{max}$ 替代；涅槃 = 带宽饱和 + 自他边界消解 + 跨算子摩擦趋零）。
 
 ### Mechanism Explanation (机制解释)
 
