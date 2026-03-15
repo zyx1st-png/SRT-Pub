@@ -210,10 +210,23 @@ $$ \text{State}(S) = \begin{cases} L_1 & \text{if } S \subseteq \text{Scope}(d) 
 配置空间是 $L_0$ 的数学实现：
 $$ L_0^{quantum} \cong \mathbb{R}^{3N} \quad \text{(3N-dimensional configuration space)} $$
 
-### T-Sel-9 [T1.7.1]: Dimensional Projection Theorem
-幽灵算子的几何意义是降维投影：
-$$ \hat{G}_θ: \mathbb{R}^{3N} \to \mathbb{R}^3 $$
-*   "Spookiness"源于我们将影子($L_1$)误认为独立物体。
+### T-Sel-9 [T1.7.1]: Dimensional Projection Theorem（降维投影定理）
+
+**Formal Statement**：选择算子 $\hat{G}_\theta$ 的几何本质是 $\theta$-参数化的降维投影——从 $L_0^{quantum}$（$3N$ 维配置空间）到 $L_1^{observer}$（观察者具身视角可及的有效维度子空间）：
+
+$$\hat{G}_\theta:\; L_0^{quantum} \cong \mathbb{R}^{3N} \;\longrightarrow\; L_1^{(\theta)} \subset \mathbb{R}^{3N}$$
+
+*(注：目标空间并非简单的 $\mathbb{R}^3$，而是由 $\theta$ 决定的有效维度流形 $L_1^{(\theta)}$——具体维数依赖于观察者的具身约束与感知带宽。)*
+
+**"Spookiness" 的几何来源（量子非定域性的投影解释）**：
+
+在 $L_0^{quantum}$（$3N$ 维空间）中，纠缠粒子对 $\{A, B\}$ 的联合态是一个**高维局域**结构——其关联完全由配置空间的几何决定，无需超距作用。然而，当观察者算子 $\hat{G}_\theta$ 将其投影到低维 $L_1^{(\theta)}$ 时，高维局域关联被映射为低维空间中的**表观非定域相关**：
+
+$$\underbrace{\text{Local in } L_0^{3N}}_{\text{高维几何}} \;\xrightarrow{\Pi_{L_1^{(\theta)}}}\; \underbrace{\text{"Spooky" in } L_1^{(\theta)}}_{\text{低维投影伪象}}$$
+
+**θ 的角色**：不同具身参数 $\theta$ 的观察者使用不同的投影方向——这解释了为什么量子"幽灵性"的感知强度依赖于测量基选择（即 $\theta$ 的选择），而非来自客观的超距物理机制。
+
+**Implication**：量子力学的"测量问题"在 SRT 中被重新定位为**投影问题**——不是"观测使波函数坍缩"（本体论断言），而是"$\hat{G}_\theta$ 将 $L_0$ 流形投影至 $L_1^{(\theta)}$ 子空间"（几何操作）。"影子"（$L_1$）不是独立物体，而是具身观察者从高维真实中截取的切片。
 
 ### ER=EPR Integration
 Maldacena-Susskind 猜想的 SRT 诠释：
@@ -622,10 +635,11 @@ Maldacena-Susskind 的 ER=EPR 猜想在 SRT 框架中获得自然解释：
 $$\text{纠缠（量子）} \equiv \text{虫洞（引力）} \equiv L_0 \text{ 中的不可分离性}$$
 
 引力无处不在，正是因为背景纠缠无处不在——两者都是 $L_0$ 统一性在 $L_2$ 中的不同显现。
+在更强版本里，这不只是结构类比：引力就是 $Ψ_f$ 在物理尺度上的规范实现，因此局部看是阻力，记账看是做功代价，形式上看是几何曲率。
 
 ## 4.7 中微子作为 $L_0$ 信使
 
-根据 **$\Psi_f$ 谱系**，中微子几乎不参与电磁相互作用（弱 $L_2$ 耦合），因此它们的 $\Psi_f \approx 0$。这意味着中微子流携带了最纯净的 $L_0$ 原始信息，是探测宇宙早期状态（未经观察者坍缩的历史）的唯一窗口。
+根据 **$\Psi_f$ 谱系**，中微子几乎不参与电磁相互作用（弱 $L_2$ 耦合），因此它们的**可观测摩擦负荷极低**。这并不表示绝对“零 \(Ψ_f\)”，而表示它们在常规物质界面上的锚定成本与耦合痕迹极弱。于是中微子流可被视为携带较纯净 $L_0$ 约束信息的窗口。
 
 ---
 
@@ -668,13 +682,17 @@ Ivette Fuentes 提议用 BEC 探测引力波和量子坍缩。在 SRT 看来，B
 
 当系统试图在 $L_0$ 中维持两个互斥的 $L_1$ 几何结构时：
 - 产生巨大的"计算成本"/摩擦
-- 引力正是时空几何冲突的度量
+- 引力正是这种摩擦在物理尺度上的规范实现与时空几何读数
 - 当摩擦超过阈值（$E_G \approx \hbar/\tau$），系统被迫坍缩
 
 ## 6.3 Orch OR 整合为 $\hat{G}$ 的特定物理实现
 
 $\hat{G}$ 算子受限于**引力自能**。当 $L_0$ 中的叠加态差异达到时空曲率阈值时，$\hat{G}$ 被强制触发：
 $$\tau_{collapse} \approx \frac{\hbar}{E_G}$$
+也可等价改写为可支付性形式：
+\[
+\Psi_f^{req}(\ell,m,\tau) > \Psi_f^{cap}(\text{micro-system},\Delta t)\Rightarrow \text{anchor/collapse}
+\]
 
 **$d$ 值与 Penrose 坍缩时间的关系**:
 $$d_{value} \propto \frac{1}{\tau_{collapse}}$$
