@@ -764,10 +764,11 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 本文档的核心形式结构围绕幽灵算子 $\hat{G}_\theta$ 的定义、分解与演化展开：
 
 1. **参数化选择映射** (Ax-Op-01): $L_1(t) = \hat{G}_\theta[L_0](t)$ — 现实化是从潜在域 $L_0$ 到显现域 $L_1$ 的参数化选择操作，而非被动显现。
-2. **注意力三分量分解** (Ax-Op-02): $\hat{G}_\theta = \mathrm{Attention}(d, \rho, \vec{v})$ — 选择结构由 $d$-value（关切带宽）、分辨率 $\rho$ 与意向向量 $\vec{v}$ 三者的张量耦合决定。其中 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（风险梯度范数）是规范定义。
-3. **双流耦合** (Ax-Op-02b): $\hat{G}_\theta = \mathbf{T}^{intent} \otimes \mathbf{T}^{embody} \cdot \kappa_{body}$ — 意向流与具身流的正交耦合构成完整的 $L_0 \to L_1$ 锚定；$\kappa_{body} \to 0$ 时系统进入解离病理态。
+2. **注意力三分量分解** (Ax-Op-02): $\hat{G}_\theta = \mathrm{Attention}(d, \rho, \vec{v})$ — 选择结构由 $d$-value（关切带宽）、分辨率 $\rho$ 与意向向量 $\vec{v}$ 三者的张量耦合决定。其中 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（风险梯度范数）是规范定义；**注意 $d_{cog}$（行为拓扑代理）$\neq d_{max}$（香农容量上界），实际带宽 $d_{actual} \approx d_{cog} + \delta_{coupling}(A\cdot\tau, V\cdot A)$，见 §2.1**。
+3. **双流耦合** (Ax-Op-02b): $\hat{G}_\theta = (\mathbf{T}^{intent} \otimes \mathbf{T}^{embody}) \cdot \kappa_{body}$ — 意向流与具身流的正交耦合构成完整的 $L_0 \to L_1$ 锚定（$\kappa_{body}$ 为耦合强度标量）；$\kappa_{body} \to 0$ 时系统进入解离病理态。
 4. **竞争归一化** (Ax-Op-03): $[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon + \sum_j W_{ij} x_j^n)$ — 选择具有除法归一化的动力学形态，对应注意力的竞争抑制机制。
 5. **算子保真度** (Ax-Op-09): $\phi_{fidelity} = 1 - H(L_1|\hat{G}_\theta)/H(L_1)$ — 衡量选择一致性，保真度越高，$\hat{G}_\theta$ 对现实结构的锚定越稳定。
+6. **频域等价描述**（详见 `Core/SRT_Core_13b_Operator_Advanced.md §Ax-Spec-01`）：$L_1(t)=\mathcal{F}^{-1}[H_\theta(\omega) \odot L_0(\omega)]$ — 算子在频域以 Hadamard 乘积实现滤波选择，d 值对应通带宽度；与条目 1 时域描述等价，适用于时频分析和节律耦合场景。
 
 ### Mechanism Explanation (机制解释)
 
