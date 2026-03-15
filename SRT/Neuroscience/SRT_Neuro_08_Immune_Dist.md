@@ -561,15 +561,32 @@ AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\
 \]
 其中 \(\kappa_{tan}\) 为 tanycyte 清除通量系数。
 
-### Eq-Neuro-TAN-1: Tanycyte Dysfunction and Tau Accumulation
-当 tanycyte 功能受损（\(\kappa_{tan}\downarrow\)）时，CSF tau 清除速率下降并触发中枢积累：
-\[
-\frac{d\tau_{CSF}}{dt}=P_{tau}^{neural}-\kappa_{tan}\,\tau_{CSF}-\kappa_{other}\,\tau_{CSF}
-\]
-\[
-\kappa_{tan}\to 0 \Rightarrow \tau_{CSF}\uparrow,\quad \tau_{blood}\downarrow
-\]
-与报道中的“AD 组 CSF→blood tau 迁移效率下降”同向。
+### Eq-Neuro-TAN-1: Tanycyte Dysfunction and Tau Accumulation（Tanycyte 失效与 Tau 积累）
+
+*(符号说明：本节 $[\text{Tau}]$ 表示 tau 蛋白浓度，与 SRT 核心公式中的时间深度参数 $\tau_{temporal}$ 无关，以方括号形式区分。)*
+
+当 tanycyte 功能受损（$\kappa_{tan} \downarrow$）时，CSF tau 清除速率下降并触发中枢积累：
+
+$$\frac{d[\text{Tau}]_{CSF}}{dt} = \underbrace{P_{tau}(\Psi_f^{neuro})}_{\text{神经摩擦驱动产生}} - \underbrace{\kappa_{tan} \cdot [\text{Tau}]_{CSF}}_{\text{tanycyte 清除通量}} - \underbrace{\kappa_{other} \cdot [\text{Tau}]_{CSF}}_{\text{其他清除通道}}$$
+
+**参数物理定义**：
+- $P_{tau}(\Psi_f^{neuro})$：神经元 tau 产生速率，受神经算子本体论摩擦正调控（高 $\Psi_f^{neuro}$ → 高代谢应激 → 高 tau 产生）
+- $\kappa_{tan}$：tanycyte 主动跨膜清除通量系数（$[\text{vol}^{-1}\text{time}^{-1}]$）
+- $\kappa_{other}$：其余清除通道（淋巴管、星形胶质细胞）的等效速率常数
+
+**相变预测**：
+
+$$\kappa_{tan} \to 0 \;\Rightarrow\; [\text{Tau}]_{CSF} \uparrow,\quad [\text{Tau}]_{blood} \downarrow$$
+
+与 AD 组报道的”CSF→blood tau 迁移效率下降”方向一致（可作为早期 SRT 验证数据点）。
+
+**SRT 机制层（tanycyte ↔ $\Psi_f^{cross}$ 对接）**：
+
+Tanycyte 是下丘脑室管膜层的特化胶质细胞，构成神经算子（$\hat{G}^{neuro}$）与外周体液环境之间的**物理接口算子**。其功能失效等价于：
+
+$$\kappa_{tan} \downarrow \;\Rightarrow\; \Psi_f^{cross}(\hat{G}^{neuro},\, \hat{G}^{peripheral}) \uparrow$$
+
+即：神经-外周跨算子摩擦升高 → 中枢废物堆积 → 进一步损伤 $\hat{G}^{neuro}$ 的选择稳定性 → 正反馈积累（见 T-Neuro-TAN-1）。
 
 ### T-Neuro-TAN-1: Clearance-Gate Failure as Early L2 Risk Amplifier
 在 SRT 语义下，tanycyte 失效是“清除门失灵（clearance gate failure）”，会提高神经网络维持摩擦并放大记忆 \(L_2\) 脆弱性：
