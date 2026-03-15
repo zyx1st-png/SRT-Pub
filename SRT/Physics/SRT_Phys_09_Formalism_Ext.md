@@ -39,7 +39,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 | T1.2.1 | T-Kant-1 | Mathematical Truth as Source Code (数学真理即源代码) |
 | D1.2.1 | Def-Kant-1 | Natural Numbers as Selection Events (自然数即选择事件) |
 | T1.2.2 | T-Kant-2 | Spatial Dimension as θ-Rank (空间维度即 θ 秩) |
-| T1.2.3 | T-Kant-3 | Mathematical Necessity as Zero-Friction (数学必然性即零摩擦) |
+| T1.2.3 | T-Kant-3 | Mathematical Necessity as Zero-Conflict Limit (数学必然性即零冲突极限) |
 | D1.3.1 | Def-Cat-1 | Category of Potentiality ($\mathcal{C}_{L_0}$) |
 | D1.3.2 | Def-Cat-2 | Category of Actuality ($\mathcal{C}_{L_1}$) |
 | A1.3.1 | Ax-Cat-1 | Ghost Functor (幽灵函子) |
@@ -124,9 +124,9 @@ $$ n = \int_{t_0}^{t_n} \delta(\text{Selection Event}) \, dt $$
 $$ \text{Dim}(L_1) = \text{Rank}(θ) $$
 $L_1$ 呈现为 3D 空间，是因为 $θ_{human}$ 只能通过 3 个自由度来解析信息。
 
-### T-Kant-3 [T1.2.3]: Mathematical Necessity as Zero-Friction (数学必然性即零摩擦)
-$$ \text{Mathematical Axioms} \subset \{\sigma \in L_0 : \Psi_f(\sigma) = 0\} $$
-数学公理是本体论摩擦 $\Psi_f = 0$ 的轨迹——$L_0$ 中唯一不产生内部逻辑冲突的路径族。
+### T-Kant-3 [T1.2.3]: Mathematical Necessity as Zero-Conflict Limit (数学必然性即零冲突极限)
+$$ \text{Mathematical Axioms} \subset \{\sigma \in L_0 : \Psi_f^{formal}(\sigma) = \Psi_f^{min}\} $$
+数学公理对应纯形式语境下的最小冲突路径族。这里的 $\Psi_f^{formal} = \Psi_f^{min}$ 只表示内部逻辑冲突趋零，不表示现实主体的对象维持摩擦消失。
 
 ---
 
@@ -261,6 +261,7 @@ $L_0$ 具有负曲率双曲几何结构，是**最优扩展图**。
 
 ### T-Hyp-1 [T1.10.1]: Gravity as Consensus on Hyperbolic Manifold (引力即双曲流形上的共识)
 时空曲率是 $\hat{G}$ 在双曲流形上选择共识的几何投影。
+在当前口径下，引力不是对本体论摩擦的类比性描述，而是 $Ψ_f$ 在物理尺度上的规范实现：局部经验上读作下坠/阻力，记账上读作做功代价，形式上读作时空曲率。
 
 ---
 
@@ -439,11 +440,12 @@ $$\text{Dim}(L_1) = \text{Rank}(θ)$$
 - $L_0$ 是高维或无维的拓扑流形
 - $L_1$（此时此地）呈现为 3D 空间，是因为 $θ_{human}$（人类具身参数）只能通过 3 个自由度来解析信息
 
-## 1.4 数学必然性即零摩擦路径 (Mathematical Necessity as Zero-Friction Topology)
+## 1.4 数学必然性即零冲突极限路径 (Mathematical Necessity as Zero-Conflict Topology)
 
 **命题（数学公理的本体论地位）**：
-数学不是 $L_2$ 中像重力一样的“物理”发现，它是 $L_0$ 拓扑结构的内蕴骨架。数学公理是本体论摩擦 $\Psi_f = 0$ 的轨迹——即在 $L_0$ 中唯一不产生内部逻辑冲突的途径，无需任何物理能量即可遍历。
-$$\text{Mathematical Axioms} \subset \{\sigma \in L_0 : \Psi_f(\sigma) = 0\}$$
+数学不是 $L_2$ 中像重力一样的“物理”发现，它是 $L_0$ 拓扑结构的内蕴骨架。数学公理对应纯形式语境中的最小冲突骨架，其路径满足：
+$$\text{Mathematical Axioms} \subset \{\sigma \in L_0 : \Psi_f^{formal}(\sigma) = \Psi_f^{min}\}$$
+这里的“最小摩擦”不应误读为现实系统的零 stake 状态，而应理解为纯形式结构中的零冲突极限。
 
 **推论**：这解释了为什么数学（一种纯精神活动）能够不可思议地预测物理宇宙。因为当 $\hat{G}_\theta$ （宇宙大爆炸或人类心灵）被迫挤出 $L_1$ 现实时，它总是遵循阻力最小的路径。物理定律是结晶的数学，而意识是实时运算的数学。
 
@@ -823,8 +825,10 @@ d\propto \Psi_f^{sens}>0
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |:--|:--|:--|:--|
 | Demiurge（宇宙内巨匠神） | 中~高（有限具身） | Open（有限系统） | payable / overloaded |
-| Being itself（存在本身） | 极限分支（\(d\to\infty\)） | 非局域一致性约束 | \(\Psi_f^{sens}\to0\)（极限） |
-| 机械自然主义（纯机制本体） | 低~中（语义收缩） | Closed 倾向 | borderline（解释鸿沟） |
+| Being itself（存在本身） | 极限分支（\(d\to d_{max}\)，形式渐近）| 非局域一致性约束 | \(\Psi_f^{sens}\to0\)（极限） |
+| 机械自然主义（纯机制本体） | 低~中（**d_semantic** 收缩） | Closed 倾向 | borderline（解释鸿沟） |
+
+> **注**：「机械自然主义」行的"d 低~中"指 **$d_{semantic}$**（意向性关切带宽/选择算子的规范性维度），不指系统的结构复杂度（$d_{structural}$）。纯机制本体论否定选择算子的意向性，因此在 SRT 关切带宽维度上"语义收缩"——此行不意味着机械系统没有高维状态空间，而是指其选择过程缺乏规范性意向。
 
 ## Quanta「Abstract Math for Real Systems」Interface（2026-03-08）
 
@@ -851,7 +855,25 @@ B_{cat} \propto \text{Reusability}\cdot\text{Composability}\cdot\text{Cross-doma
 
 ### [Lineage/Source]
 - Quanta Magazine (2026-03-04): *Can the Most Abstract Math Make the World a Better Place?*
-- 主题脉络：Baez 的“green math”倡议、应用范畴论在生态/复杂系统中的可行性与争议。
+- 主题脉络：Baez 的”green math”倡议、应用范畴论在生态/复杂系统中的可行性与争议。
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **幽灵函子** (Ax-Cat-1): $\hat{G}: \mathcal{C}_{L_0} \to \mathcal{C}_{L_1}$ — 选择算子是范畴间的函子。
+2. **$\Psi_f$ 作为 Fisher 度量** (Ax-IG-1): $\Psi_f = g_{ij}^{Fisher} d\theta^i d\theta^j$ — 本体论摩擦即信息几何度量。
+3. **选择动力学的测地线形式** (T-IG-2): 最优选择路径是 $\Psi_f$ 流形上的测地线。
+4. **$L_0$ 作为层拓扑斯** (Ax-Topos-1): 潜在域具有层(sheaf)结构，选择是几何态射。
+5. **魔法即 $\hat{G}$ 成本** (Ax-Magic-1): 实现选择操作的计算复杂度下界。
+
+**含义**: SRT 动力学可完整嵌入范畴论、信息几何与拓扑斯论的形式化框架中。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的函子性质**: 选择算子保持态射结构，从 $\mathcal{C}_{L_0}$（潜能范畴）映射到 $\mathcal{C}_{L_1}$（现实范畴），几何态射保证选择一致性。
+- **$\Psi_f$ 的几何含义**: 本体论摩擦不是任意代价函数，而是参数流形上的 Fisher 信息度量；自然梯度下降 (T-IG-1) 使选择沿摩擦最小路径演化。
+- **$d$ 与维度不等式**: $d$ 值受限于算子可访问的信息流形维度 (T-IG-4)，顿悟发生在曲率奇点处 (T-IG-3)。
 
 ## 【理论边界/防误用声明】
 
