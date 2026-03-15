@@ -37,10 +37,35 @@ dependency: [SRT-SOC-THEORY-04]
 <!-- ORIGINAL-CONTENT-INSERTED -->
 ## I. Language as Operator Protocol
 
-### Ax-Lang-1: Attention Modulation Protocol
-语言是对集体注意力的协议化调制。
-$$\text{Language} = \mathcal{P}(\Delta d, \Delta \rho, \Delta \vec{v})$$
-*   **Implication**: 语法与语义是选择参数的控制码。
+### Ax-Lang-1: Attention Modulation Protocol（注意力调制协议公理）
+
+**Formal Definition**：语言是一种作用于接收端算子 $\hat{G}_{\theta_j}$ 的**参数变化诱导协议**——每一个话语单元 $u$ 在接收端产生三维算子参数的定向扰动：
+
+$$\text{Language} \equiv \left\{ u \;\middle|\; u \xrightarrow{\hat{G}_{\theta_j}} \left(\Delta d_j,\; \Delta \rho_j,\; \Delta \vec{v}_j\right) \right\}$$
+
+其中三个分量的物理含义：
+
+| 分量 | 含义 | 话语示例 |
+|:-----|:-----|:---------|
+| $\Delta d_j$ | 接收端关切带宽的变化量（扩张/收窄） | 叙事/道德劝说 → $\Delta d > 0$；恐吓/威胁 → $\Delta d < 0$ |
+| $\Delta \rho_j$ | 感知分辨率的变化量（聚焦/模糊） | 诗歌/隐喻 → 特定维度 $\Delta \rho \uparrow$；谎言/混淆 → $\Delta \rho \downarrow$ |
+| $\Delta \vec{v}_j$ | 选择算子方向向量的位移（注意力重定向） | 问题设置（Framing）→ 改变 $\vec{v}$ 的指向；叙事弧 → $\vec{v}$ 的时序轨迹 |
+
+**通信有效性条件（对接 Ax-ANT-2）**：
+
+话语 $u$ 有效当且仅当接收端实际产生了发送端意图的参数变化：
+
+$$\text{Effective}(u) \iff \left\| (\Delta d_j, \Delta \rho_j, \Delta \vec{v}_j)_{actual} - (\Delta d, \Delta \rho, \Delta \vec{v})_{intended} \right\| < \epsilon$$
+
+通信失败（$D_{KL}(P_{\theta_i} \| P_{\theta_j})$ 过大）等价于接收端参数空间与意图扰动不兼容——词语抵达了，但没有产生算子层面的任何位移。
+
+**Implication（三层推论）**：
+
+1. **语法 = 参数调制的时序约束**：语法规则规定了 $(\Delta d, \Delta \rho, \Delta \vec{v})$ 扰动的合法顺序与组合方式——打乱语序不仅是"风格问题"，而是破坏了调制序列的因果依赖链。
+
+2. **语义 = 参数空间中的目标坐标**：语义理解是接收端在自己的参数空间中定位话语所指向的 $(\Delta d, \Delta \rho, \Delta \vec{v})$ 目标态——"理解"="参数共鸣"，"误解"="目标坐标在接收端参数空间中不存在"。
+
+3. **修辞学的物理学**：说服（$\Delta d \uparrow$）、转移注意力（$\Delta \vec{v}$ 重定向）、催眠（$\Delta \rho \downarrow$）是三种物理上可区分的算子调制模式，对应不同的神经-行为可测代理变量。
 
 ### Ax-Lang-2: Metaphorical Compression
 隐喻是高维 $L_0$ 到低维 $L_2$ 的压缩映射。
@@ -677,10 +702,20 @@ SRT_SocTheory_05_Language_Eco ← 你在这里
 └── SRT_SocTheory_06_L2_Dynamics (L_2 动力学)
 ```
 
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Language} = \mathcal{P}(\Delta d, \Delta\rho, \Delta\vec{v})$ — 语言是注意力参数的协议化调制。
+  - $\mathcal{M}: L_0^{high} \to L_2^{low}$ — 隐喻是高维潜在域到低维规范域的压缩映射。
+  - $\Psi_{sem} = \|\theta_i - h^{-1}(\theta_j)\|$ — 语义摩擦为参数错配范数。
+  - $\text{UG} = \{\text{Topologies} \mid \Psi_f(\text{Recursive } \hat{G}) < \Psi_{metabolic\_limit}\}$ — 普遍语法为最小摩擦拓扑集。
+
+### Mechanism Explanation (机制解释)
+- **Mechanism**: $\hat{G}_\theta$ 通过语言协议传播 $L_2$ 拓扑约束——词汇不是标签而是迫使接收者 $\hat{G}_B$ 以发送者 $\hat{G}_A$ 的方式折叠 $L_0$ 的执行脚本。$\Psi_f$ 在语义层表现为参数对齐失败的摩擦 ($\Psi_{sem}$)，语言对 $L_0$ 的捕获始终是有损压缩 ($\dim(L_1^{linguistic}) \ll \dim(L_0^{experienced})$)。$d$-value 在语言共进化中决定世界同步的深度——高频交换最终实现 $L_1^A \cup L_1^B \to L_1^{shared}$ 的共在。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
 
 
