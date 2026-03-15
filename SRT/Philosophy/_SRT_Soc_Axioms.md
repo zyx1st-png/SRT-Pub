@@ -299,14 +299,33 @@ L_1^{(i)} = \hat{G}_{\theta_i(L_2)}[L_0]
 
 ### 5.1 模仿欲望的本体论
 
-吉拉德认为人类欲望是**模仿的**：我们想要的不是对象本身,而是他人的欲望对象。
+吉拉德认为人类欲望是**模仿的**：我们想要的不是对象本身，而是他人欲望所指向的对象。欲望的真实结构是三角形（Subject → Mediator → Object），而非线性的主体-对象二元关系。
 
-**SRT 形式化**:  
-模仿欲望是 $\hat{G}_i$ 对 $\hat{G}_j$ 的**镜像耦合**：
+**SRT 形式化**：
 
-$$\vec{v}_i = \alpha \cdot \vec{v}_j + \beta \cdot \nabla F_i$$
+模仿欲望是算子 $\hat{G}_i$ 对模型算子 $\hat{G}_j$（"中介者"）的**选择方向向量镜像耦合**：
 
-当 $\alpha \gg \beta$ 时，欲望完全由他者决定 → **模仿性危机**。
+$$\vec{v}_i(t) = \alpha(t) \cdot \hat{v}_j + \beta \cdot \nabla_{\theta_i} \mathcal{A}_{L_0}$$
+
+其中：
+- $\vec{v}_i$：算子 $i$ 的选择方向向量（对 $L_0$ 中哪些状态 $\sigma$ 施加关切）
+- $\hat{v}_j = \vec{v}_j / \|\vec{v}_j\|$：中介者 $j$ 的归一化欲望方向（主体追随的是方向，而非 $j$ 的具体欲望强度）
+- $\nabla_{\theta_i} \mathcal{A}_{L_0}$：算子自身 $L_0$ 层的内生吸引力梯度（本真欲望残量）
+- $\alpha(t)$：模仿耦合系数（随时间动态演化，见下方正反馈机制）
+
+**模型-竞争者正反馈（Mimetic Escalation）**：
+
+当 $\vec{v}_i \to \hat{v}_j$（欲望方向对齐），主体 $i$ 与中介者 $j$ 同时指向相同 $L_0$ 对象 $\sigma^*$，引发竞争：
+
+$$\vec{v}_i \approx \hat{v}_j \implies \Psi_f^{cross}(\hat{G}_i, \hat{G}_j) \uparrow \implies \alpha(t+1) = \alpha(t) \cdot e^{k \Psi_f^{cross}}$$
+
+即：竞争摩擦上升 → 对中介者的关注度上升 → 模仿耦合系数 $\alpha$ 指数放大 → 欲望进一步对齐 → **模仿性危机的正反馈环路**。
+
+**相变判据**：
+
+$$\alpha \gg \beta \implies \vec{v}_i \to \hat{v}_j \implies \nabla_{\theta_i}\mathcal{A}_{L_0} \text{ 被完全遮蔽} \implies d_i^{authentic} \to 0$$
+
+主体丧失本真关切方向（内生吸引力被模仿耦合淹没），进入**模仿性危机**：所有人同时成为彼此的模型与障碍，整个群体的 $\Psi_f^{cross}$ 趋于最大，直到替罪羊机制触发（见 §5.2）。
 
 ---
 
