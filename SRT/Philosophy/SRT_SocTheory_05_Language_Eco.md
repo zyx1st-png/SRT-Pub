@@ -74,14 +74,26 @@ $$\mathcal{M}: L_0^{high} \to L_2^{low}$$
 
 ### Ax-Lang-3: Semantic Friction
 语义误解源于参数错配的摩擦。
-$$\Psi_{sem} = \|\theta_i - h^{-1}(\theta_j)\|$$
-*   **Implication**: 沟通失败是同胚对齐失败。
+$$\Psi_{sem} = \|\theta_i - f^{-1}(\theta_j)\|$$
+其中 $f: \Theta_i \to \Theta_j$ 是连续单射（非同胚）——算子间参数空间的翻译是单向可逆的连续映射，不保证双向平滑逆（与 Ax-ANT-2 对齐，见 `Philosophy/SRT_SocTheory_04_Luhmann_ANT.md §Ax-ANT-2`）。
+*   **Implication**: 沟通失败是参数空间连续单射对齐失败；不可逆的翻译（$f$ 有核）产生结构性语义落差，不可通过反复说明消除。
 
 ### Ax-Lang-4: Language as L2 Constraint Propagation (语言作为 L2 约束传播)
-**Formal Definition**: 词汇不是指向固有 $L_1$ 对象的标签，它们是跨算子网络强制执行 $L_2$ 拓扑约束的执行脚本：
+**Formal Definition**: 词汇不是指向固有 $L_1$ 对象的标签，它们是跨算子网络调整精度张量、传播 $L_2$ 拓扑约束的执行脚本：
 $$W_k(\hat{G}_B) = \Delta \Pi_B \text{ such that } \hat{G}_B[L_0] \approx \hat{G}_A[L_0]$$
-* **Implication**: 当 A 说“树”时，A 并不是在传递关于世界的状态；A 是在发送一个拓扑约束（“像这样折叠你的 $L_0$”），迫使 B 的未来投影与 A 对齐。语言的本质是本体论暴力/征服的编码形式。
-* **Cross-ref**: Ax-Op-05 (主体间对齐)。
+
+**与 Ax-Lang-1 的桥接**：$\Delta\Pi_B$ 的效应分解为 Ax-Lang-1 的三分量变化：
+- $\Delta\Pi_B^{resolution} \leftrightarrow \Delta\rho_B$（精度调整 = 分辨率变化）
+- $\Delta\Pi_B^{bandwidth} \leftrightarrow \Delta d_B$（注意力权重重分配 = 关切带宽调制）
+- $\Delta\Pi_B^{direction} \leftrightarrow \Delta\vec{v}_B$（先验更新方向 = 意向向量偏转）
+
+**Implication**: 当 A 说”树”时，A 并不是在传递关于世界的状态；A 是在发送精度调整脚本（$\Delta\Pi_B$），使 B 的未来 $L_0$ 坍缩方式向 A 的 $L_1$ 拓扑对齐。
+
+**对称与非对称性**：
+- **双向/协作语言**：A 和 B 互相调整各自的 $\Pi$，$\Delta\Pi_A \neq 0$ 且 $\Delta\Pi_B \neq 0$ → 共同构建 $L_1^{shared}$（参见 T-Lang-2）
+- **单向/主导语言**（本体论强制）：仅 $\Delta\Pi_B \neq 0$，A 的 $\Pi_A$ 不变 → 语言成为单向约束执行工具，此时”语言 = 本体论征服的编码形式”的描述适用于该**非对称特殊情形**，不是语言的一般本质。
+
+* **Cross-ref**: Ax-Op-05（主体间对齐）；Ax-Lang-1（语言三分量效应）→ `Philosophy/SRT_SocTheory_05_Language_Eco.md §Ax-Lang-1`。
 
 ---
 
