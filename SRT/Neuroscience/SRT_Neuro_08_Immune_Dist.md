@@ -592,12 +592,27 @@ AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\
 即“易感峡谷”可被长期选择向量与干预策略放大或绕开。
 
 ### 分类映射表（AD Pathways → SRT）
+
+> [R→Heneka et al. 2015 *Nature Reviews Neuroscience*（AD中神经炎症的系统综述：小胶质细胞激活/NLRP3炎症小体）; Sweeney et al. 2019 *Lancet Neurology*（外周-中枢炎症级联：血-脑屏障破坏→神经炎症→AD）; Zuroff et al. 2023 *Nature Communications*（外周炎症与AD风险的多基因评分关联）; New Scientist 2026（外周炎症-AD基因组线索综述，同上文Lineage来源）]
+
+**R/H 区分**：
+- [R] AD各期的神经炎症/外周炎症特征（Heneka/Sweeney/Zuroff）；外周-中枢级联机制
+- [H] **SRT映射框架（整个表格）**：d-value区间/能流特征/Ψ_f状态三维参数的映射是SRT独有框架，AD的SRT分期（payable→unsustainable）无直接实证对照，属于SRT解读层
+
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |---|---|---|---|
 | 外周低炎症稳态（早期可逆） | 中~高 | Semi-open | payable |
 | 慢性低度炎症（潜伏级联） | 中回落 | Semi-open→Closed 倾向 | borderline |
 | 中枢代偿期（症状前） | 中~低（补偿波动） | Closed 倾向（高维持负担） | borderline~overloaded |
 | 临床 AD 期（记忆网络失稳） | 低 | Closed（结构坍缩） | overloaded / unsustainable |
+
+**d-value proxy 说明**（操作化候选）：认知灵活性（任务切换成本倒数）× 目标导向行为一致性 × 社交关切范围（亲密网络大小）
+
+**早期干预窗口预测** [H]：SRT框架预测最有效干预窗口为从"payable→borderline"转变前（慢性低度炎症期），此时Ψ_f尚未超载、d值仍可恢复——与外周炎症的早期可逆性一致 [R→Sweeney 2019]
+
+**可证伪预测**：
+- FC-ADMap-1：在慢性低度炎症期（borderline Ψ_f代理），抗炎干预后d-value代理（认知灵活性）应显著反弹高于临床AD期干预组——若两期干预效果无差异则"早期窗口"预测失败
+- FC-ADMap-2：纵向追踪中，d-value代理的下降速率应预测Ψ_f状态的恶化时序（先d降后Ψ_f超载），且两者的时间间隔对应"代偿期"——若Ψ_f超载先于d降则因果顺序主张需修订
 
 ### [Lineage/Source]
 - New Scientist（2026）: *Alzheimer's may start with inflammation in the skin, lungs or gut*（新闻综述，基于外周炎症-AD 相关的基因组线索）。
