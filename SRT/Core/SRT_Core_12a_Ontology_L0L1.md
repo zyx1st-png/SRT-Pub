@@ -136,8 +136,19 @@ $$L_1(t) = \hat{G}_\theta[L_0(t)]$$
 
 ### Ax-L1-02: Ontological Hysteresis
 **Formal Definition**: Continuity is maintained by a memory term that blends past and present selections.
-$$L_1(t) = (1-\eta)\hat{G}[L_0(t)] + \eta L_1(t-\Delta t)$$
-* **Implication**: 现实的连贯性依赖迟滞记忆；过小会碎片化，过大则僵化。
+$$L_1(t) = (1-\eta)\hat{G}_\theta[L_0(t)] + \eta\, L_1(t-\Delta t), \quad \eta \in [0,1]$$
+
+**连续时间极限**（与主框架对齐）：
+$$\frac{dL_1}{dt} = \frac{1}{\tau_{mem}}\!\left[\hat{G}_\theta[L_0(t)] - L_1(t)\right], \quad \tau_{mem} = \frac{\eta\,\Delta t}{1-\eta}$$
+其中 $\tau_{mem}$ 为**现实记忆时间常数**——越大越"惯性"，越小越"当下敏感"。
+
+**η 的状态依赖性**（时变扩展）：
+$$\eta_{eff}(t) = \eta_0 \cdot g(\Psi_f(t)), \quad g(\Psi_f) \downarrow \text{ 当 } \Psi_f \uparrow$$
+高本体论摩擦（创伤、强烈唤起）使有效记忆权重降低，当下冲击打破连续性——这形式化了创伤闪回（η_eff 急剧下降，L₁ 被过去图景覆盖）和解离（η_eff 接近0，现实感碎片化）。
+
+**与贝叶斯先验的对应**：η 高 → 先验强（更新慢），η 低 → 先验弱（每时刻重塑）；Dark Night 期间 L₂_old 瓦解 = η_eff 被强制降低，旧"现实锚"失效（参见 SRT-SPIRIT-07 §3.2）。
+
+* **Implication**: 现实的连贯性依赖迟滞记忆（$\eta \in [0,1]$）；$\eta \to 0$ → 现实感碎片化；$\eta \to 1$ → 僵化、无法响应当下（拒绝更新）；健康状态为中间值，由 $\theta_{somatic}$ 与 $\Psi_f$ 共同调节。
 
 ### Ax-L1-03: Reality Inequality
 **Formal Definition**: A percept is real when signal exceeds agency-weighted noise.
