@@ -473,11 +473,30 @@ $$ \text{低熵过去} \equiv \text{低装配指数状态} \equiv \text{选择�
 ## IX. Holographic Horizon & Bandwidth (全息视界与带宽)
 
 ### Ax-Holo-1 [A1.9.1]: $\hat{G}$ Maximum Bandwidth ($\hat{G}$ 最大带宽)
-对于任意显现系统，其 $\hat{G}$ 具有最大处理带宽，表现为"视界"：
-- 黑洞：事件视界
-- 意识：注意力带宽
 
-当信息输入超过带宽，系统将坍缩。
+> [R→Bekenstein 1973 *Physical Review D*（黑洞熵/Bekenstein上限：S≤2πkRE/ℏc，有界空间区域的最大信息容量）; 't Hooft 1993 *Dimensional Reduction in Quantum Gravity*（全息原理雏形：空间区域信息∝边界面积）; Susskind 1994 *Journal of Mathematical Physics*（全息原理精确表述：3+1维物理可被2+1维边界完全描述）; Cowan 2001 *Behavioral and Brain Sciences*（注意力/工作记忆容量上限：4±1信息组块）]
+
+对于任意显现系统，其 $\hat{G}$ 具有最大处理带宽，表现为"视界"（d值上界）：
+- 黑洞：事件视界（Bekenstein上限S=A/4，信息容量∝面积而非体积）
+- 意识：注意力带宽（工作记忆容量约4±1组块，Cowan 2001）
+
+**R/H 区分**：
+- [R] Bekenstein-Hawking黑洞熵上界（量子引力实证结合黑洞热力学）；全息原理（t'Hooft/Susskind）：信息容量∝边界面积；注意力/工作记忆容量上限（Cowan/Miller经典实验心理学）
+- [H] **SRT统一解读**：将黑洞事件视界与意识注意力带宽归为同一SRT概念族（Ĝ的d值上界）；"视界=d_max"的形式化是SRT原生框架，无直接实证对照
+
+**"视界"的SRT定义**：Horizon_Ĝ = d_max（θ,系统规模）——算子所能同时维持的最大关切带宽，超过此上界则Ψ_f→∞（维持成本不可支付）→系统失稳/"坍缩"。
+
+**类比精度边界**（重要）：黑洞"坍缩"是引力热力学相变（Hawking辐射/蒸发/奇点形成）；意识"过载"是认知功能退化（工作记忆饱和/注意力分散）。两者的物理机制完全不同，SRT的"视界"类比仅基于"最大带宽→超限则失稳"的结构相似性，不主张机制等同。黑洞信息悖论（Hawking vs unitarity）是未解问题，SRT不吸收该争议的任何一方。
+
+**操作化候选**：
+- 意识d_max proxy：任务切换代价骤增的关切数量阈值（双重任务→N重任务实验）；工作记忆n-back任务的饱和点
+- 黑洞信息容量：Bekenstein上限 S_max = A/(4l_P²)（Planck面积l_P²，纯物理可计算）
+
+当信息输入超过带宽，系统将失稳（"坍缩"为隐喻性说法，非字面热力学坍缩）。
+
+**可证伪预测**：
+- FC-Holo1-1：在注意力容量实验中，d_max proxy（任务切换代价骤增的阈值）应与个体θ参数代理（习惯性多任务程度）负相关——高θ多任务者的d_max更高/更低（方向可检验）；若阈值个体差异与θ代理无关则SRT的θ-d_max联结主张失败
+- FC-Holo1-2：全息原理若获得实验证实（如AdS/CFT可检验预测），SRT的"Ĝ最大带宽∝面积"类比应在对应物理层面做出一致预测——若全息原理在物理层面有新预测，SRT框架需给出（而非回避）对应的意识/选择层面类比预测
 
 ### T-Holo-1 [T1.9.1]: Ontological Compactness (本体论紧致性)
 $$ \text{Stable Existence} \implies \text{Topological Compactness} $$
