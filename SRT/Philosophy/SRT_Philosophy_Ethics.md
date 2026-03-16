@@ -141,8 +141,22 @@ $$ d(t_{new}) = d(t) + \int \text{Assent}(\text{Other} \to \text{Self}) $$
 
 ### Ax-Stoic-2: Dichotomy of Control (控制二分法)
 <!-- ORIGINAL-SECTION-PRESERVED -->
+
+[R→Epictetus《Enchiridion》§1（"有些事在我们的控制之内：判断/欲望/规避；有些不在：身体/名誉/财富"）; Marcus Aurelius《Meditations》Book VI; Long 2002（斯多葛哲学综述）] [H→以SRT三域框架形式化斯多葛控制二分法]
+
 Responsibility applies only to Selection, not to Outcome ($L_1$) or Input ($L_0$).
-$$ \text{Responsible} = \{ \hat{G}_\theta \} \setminus \{ L_0, L_2^{physics} \} $$
+
+- **SRT重表述**：责任域 = $\hat{G}_θ$ 的可调参数 θ（可以通过练习/修行/反思改变的选择倾向），而非 L₀（潜在输入流，不可控）或 L₂^{physics}（物理约束，不可越过）
+- 注：原公式 $\{Ĝ_θ\} \setminus \{L_0, L_2^{physics}\}$ 是集合差，但三者不是同类型对象（算子 vs 域）；改述为：
+
+$$\text{Responsibility Domain} \stackrel{\text{def}}{=} \delta\theta \mid_{\text{learnable}} \quad (\text{可通过选择历史改变的θ成分})$$
+
+- **精确化**：θ中有"可塑成分"（通过练习/习惯/元认知可调）和"不可塑成分"（遗传/早期发育固化）；斯多葛的"在我们控制之内"对应θ的可塑成分；L₀（外部事件流）和L₂^{physics}（物理可能性边界）均在控制之外
+- **与Ax-Stoic-1的联结**：d值扩张（道德成长，将他人纳入自我关切）同时扩大了责任域——关切带宽越广，θ的可调范围越大（需要对更多结果的选择过程负责）
+
+**证伪条件**：
+- FC-Stoic2-1：若对"可控-不可控"区分进行高生态效度的实验操纵（明确告知被试某结果是可控/不可控），而被试的责任归因和认知负荷变化不符合SRT预测（θ可调范围扩大→责任感上升），则SRT的控制-责任联结需修订。
+- FC-Stoic2-2：若长期斯多葛练习（控制二分法正念）的被试在冥想后的θ相关神经指标（前扣带回激活/认知灵活性）无显著变化，则"通过练习扩大θ可塑成分"的SRT操作化预测被弱化。
 
 <br>
 
