@@ -421,6 +421,12 @@ $$S_{opt} = f(d_{avg}, \text{External Threat}, \text{Technology})$$
 
 ### 6.2 民主的熵稳定条件
 
+> [R→Schmitt 1922 *Politische Theologie*（例外状态理论：危机/战时的"主权决断"导致法制暂停→威权收敛，民主脆弱性的政治理论基础）; Acemoglu & Robinson 2006 *Economic Origins of Dictatorship and Democracy*（民主-威权转换的政治经济学：外部冲击/战争威胁作为威权化驱动因素的跨国实证）; Gurr 1970 *Why Men Rebel*（政治不稳定的社会熵模型：社会系统在高应力下的结构简化）; Dahlberg & Linde 2021 *Government and Opposition*（战时民主压缩实证：COVID-19期间行政权集中化的跨国比较）]
+
+**R/H 区分**：
+- [R] 例外状态下的威权化历史规律（Schmitt/Acemoglu/Gurr）；战时/危机下民主压缩的实证研究（Dahlberg&Linde COVID-19数据）
+- [H] **SRT熵稳定形式化**：将民主稳定条件映射为dS_soc/dt≈0且S_soc∈[S_min,S_max]；冲击→降熵方程[H]
+
 民主制度要求：
 
 $$\frac{dS_{soc}}{dt} \approx 0 \quad \text{且} \quad S_{soc} \in [S_{min}, S_{max}]$$
@@ -429,7 +435,18 @@ $$\frac{dS_{soc}}{dt} \approx 0 \quad \text{且} \quad S_{soc} \in [S_{min}, S_{
 
 $$S(t+1) = S(t) - \alpha \Delta E_{shock}$$
 
-这解释了"民主国家在战时趋向威权"的普遍现象。
+**参数说明与操作化**：
+- S_soc操作化候选：多党有效数量（Laakso-Taagepera指数）× 新闻自由度（RSF指数）× 行政权集中指数（V-Dem数据集）的加权综合
+- [S_min,S_max]边界说明：S_min≈竞争性威权（最低限度多元性）；S_max≈无政府/决策失效状态；边界值依政治体制和历史背景而异，当前SRT不给出通用数值，需要系统特定标定
+- α（降熵速率）：由冲击强度ΔE_shock与系统响应速度（政治制度弹性/军事动员速度）联合决定；高α社会=危机下快速降熵（军事政府倾向）；低α社会=危机下缓慢调整（稳健民主制度）
+
+这解释了"民主国家在战时趋向威权"的历史规律（实证基础：WWII/911后/COVID-19期间的跨国民主压缩数据，Dahlberg&Linde 2021）。
+
+**与SRT参数联结**：威权化=S_soc骤降↔κ升至κ_c2以上（L₂固化）→OAI↑（Def-L2-OAI-1）→恢复民主所需的ΔE_barrier升高；见§3.1现实迟滞。
+
+**可证伪预测**：
+- FC-DemocEntropy1-1：跨国面板数据中，外部冲击强度（战争/疫情严重程度）与民主压缩幅度（ΔS_soc）的相关应为正；且α（降熵速率）应与前期S_soc水平负相关（初始熵越高的民主体→降熵更缓慢，即健康民主更有韧性）——若ΔS_soc与冲击强度无关则SRT熵冲击机制失败
+- FC-DemocEntropy1-2：COVID-19期间，初始V-Dem民主指数高（高S_soc）的国家行政权集中化程度应低于初始低民主国家（控制疫情严重程度后）——若初始民主水平不预测威权化幅度则[S_soc,S_min,S_max]的参数化无预测价值
 
 ---
 
