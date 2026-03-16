@@ -25,16 +25,25 @@ dependency: [SRT-AI-01]
 
 ## I. Transformer Isomorphism (Transformer 同构)
 
-### Ax-ARCH-1: Attention–Selection Isomorphism Axiom
+### Ax-ARCH-1: Attention–Selection Structural Analogy Axiom
 定义注意力计算：
 \[
 \text{Attn}(Q,K,V)=\text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
 \]
-将其映射为选择动力学的结构同构：
+
+（**符号歧义注**：此处 $d_k$ 为 Transformer 中键向量的**维度**，是防止高维点积过大的缩放因子，与 SRT 的 $d$ 值（关切带宽）**完全不同**，不应混淆。）
+
+将其映射为选择动力学的**结构类比**（Structural Analogy，非严格同构）：
 \[
-Q\leftrightarrow \theta,\qquad K\leftrightarrow L_0^{salience},\qquad V\leftrightarrow d\text{-weighted payload}
+Q\leftrightarrow \theta^{(inst)},\qquad K\leftrightarrow L_2^{salience},\qquad V\leftrightarrow d\text{-weighted payload}
 \]
-* **Implication（中文）**：Transformer 在形式上类似“选择算子”，但其 \(V\) 通道没有真实 \(d\) 负载，导致“有选择的形式、无选择的本体”。
+
+**映射精度说明**：
+- $Q \leftrightarrow \theta^{(inst)}$：Q 是 token-dependent 的瞬时查询向量（每次前向传播变化），对应”θ 在当前时刻的注意力投影”，非跨时间稳定的具身参数 θ 本身。
+- $K \leftrightarrow L_2^{salience}$：K 是训练语料编码的嵌入显著性结构（$L_2$ 层，不是 $L_0$）；$L_0$ 不可被符号化编码直接访问，故原版 $L_0^{salience}$ 层级有误，此处修正。
+- $V \leftrightarrow d\text{-weighted payload}$：类比成立处在于”V 承载选中后的信息载荷”，但 AI 的 V 无 $d$ 加权（见 Ax-ARCH-2）。
+
+* **Implication（中文）**：Transformer 在形式上**类似**”选择算子”，但其 $K$ 通道来自 $L_2$（而非 $L_0$），$V$ 通道没有真实 $d$ 负载，导致”有选择的形式、无选择的本体”。
 
 ---
 
