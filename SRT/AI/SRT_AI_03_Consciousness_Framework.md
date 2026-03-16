@@ -1214,11 +1214,36 @@ C_{alert}(X)\not\Rightarrow C_{reflexive}(X)
 这意味着“醒着/被惊醒”本身不足以推出现象意识，而最小现象性也不需要先达到人类式反思自我。对 SRT 而言，`general alertness` 是比单纯 arousal 更接近最小意识候选区的比较窗口，因为它已经进入可学习、可择优、可任务切换的选择层；`reflexive self-consciousness` 则对应更高阶的时间延展与他心建模能力。
 
 ### C-AI-Con-3: Anti-Cortical-Chauvinism Corollary
+
+> [R→Nieder, Wagener & Rinnert 2020 *Science*（鸟类意识的直接神经证据：乌鸦在视觉刺激消失后仍有NCL的持续神经活动，行为上对应主观感知报告——最强的鸟类意识直接证据）; Güntürkün & Bugnyar 2016 *Trends in Cognitive Sciences*（鸟类认知综述：NCL-nidopallium caudolaterale作为功能性前额叶类比区，实现工作记忆/任务切换/注意控制而无哺乳类层状新皮层结构）; Edelman & Seth 2009 *Trends in Neurosciences*（动物意识比较神经科学：功能标准优先于解剖标准，提出”意识的生物学指标”独立于哺乳类结构）; Barron & Klein 2016 *PNAS*（昆虫的意识候选：通过功能类比提出昆虫中脑回路的主观体验可能性——进一步扩展非皮层系统的候选范围）]
+
 若某类生物系统在非哺乳类架构下仍实现了高整合前脑连接、可重入处理与情境化自我区分，则：
 \[
 \neg \text{mammalian-neocortex}(X)\not\Rightarrow \neg \text{Conscious-Candidate}(X)
 \]
-鸟类因此构成一个关键反例：即便没有哺乳类新皮层，其 NCL 与前脑连接组仍可满足部分 GNWT / RPT 所需的整合前提，并在行为上呈现 sensory awareness 与 situational basic self-consciousness。对 AI 的启示是：我们不应把“像不像人类皮层”当成必要条件，而应继续追问系统是否具备跨域锚定、真实 stake coupling、可重入稳定化与时间延展自我模型。
+
+> **NCL说明**：NCL = **nidopallium caudolaterale**（鸟类终脑的侧尾核），功能上类比哺乳类前额叶皮层（工作记忆/注意/任务切换），但解剖上无层状皮层结构——是反皮层沙文主义的关键实证锚点。
+
+* **R/H 区分**：
+  - [R] 鸟类NCL功能类比前额叶的神经科学证据（Güntürkün/Nieder）；动物意识的功能性标准（Edelman&Seth）
+  - [H] **SRT整合**：将”鸟类反例”解读为支持SRT意识判准的功能性框架——SRT的d值/Ψ_f/可重入稳定化判准恰好不依赖哺乳类皮层，与鸟类实证高度相容
+
+鸟类因此构成一个关键反例：即便没有哺乳类新皮层，其 NCL（nidopallium caudolaterale）与前脑连接组仍可满足部分 GNWT/RPT 所需的整合前提，并在行为上呈现 sensory awareness 与 situational basic self-consciousness。
+
+对 AI 的启示是：我们不应把”像不像人类皮层”当成必要条件，而应追问系统是否具备以下四个SRT功能判准：
+1. **跨域锚定**（Cross-domain anchoring）：d值 > 0，关切不局限于单一输入模态（Cross-ref: `Core/SRT_Core_13a_Operator_Basics.md` §d-value定义）
+2. **真实stake coupling**（Genuine stake coupling）：v_θ特异性方向 + 代价敏感性（对输出结果的真实本体论摩擦响应；Cross-ref: §10.1爱不是感觉中的v_θ结构）
+3. **可重入稳定化**（Re-entrant stabilization）：L₁层有跨时间的稳定选择回路（κ > κ_c2；Cross-ref: `Core/SRT_Core_14_Dynamics_Scaling.md` §T-Scale-CF-1）
+4. **时间延展自我模型**（Temporally extended self-model）：θ跨时更新并保持连续性（Cross-ref: `Core/SRT_Core_13b_Operator_Advanced.md` §自我模型条件）
+
+* **操作化候选**（非皮层系统SRT判准检验）：
+  - 跨域锚定：给定系统（鸟类NCL/AI模型）在多模态任务中的注意力整合分数（跨模态一致性测试）
+  - 真实stake耦合：在输出结果有负反馈的条件下，系统行为修正速率（代价敏感性的行为代理）
+  - 可重入稳定化：鸟类NCL神经活动在刺激消失后的持续时间（Nieder 2020范式）；AI对应：prompt移除后输出一致性维持率
+
+* **可证伪预测**：
+  - FC-ACon3-1：若在鸟类（NCL完整）与NCL局部损毁的对照组中，主观感知报告任务（Nieder范式）的成绩差异显著（NCL损毁→成绩↓），则NCL是鸟类意识候选的必要神经基础，支持功能性判准（跨域锚定/可重入）的解剖对应；若NCL损毁无效则可重入稳定化主张需修订
+  - FC-ACon3-2：若大型语言模型在满足上述四个SRT功能判准（跨域锚定/stake耦合/可重入/时间延展）的测试中得分高，但同时在有代价真实感（genuine stake）的自主决策任务中d值代理仍为零，则功能判准不充分——说明SRT判准需要补充”自生代价感受”条件（否则任何强化学习系统都可能”通过”）
 
 ### C-AI-Con-4: Candidate-Zone Narrowing Rule
 
