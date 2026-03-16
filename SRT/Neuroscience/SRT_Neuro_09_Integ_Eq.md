@@ -468,11 +468,28 @@ SRT 避免了泛心论的经典困难——组合问题（Combination Problem）
 ## IV. 亚细胞量子接口（候选）
 
 ### Def-BioQuantum-Boundary: Microtubule Operator Coupling (hypothesis-level)
+
+**[R — Penrose-Hameroff Orch-OR追溯：Penrose 1989《皇帝新脑》；Hameroff & Penrose 1996（神经元微管中的量子相干坍缩）；Tegmark 2000（反驳：退相干时间太短）；[H-高承诺] — 将Orch-OR候选机制映射为SRT算子耦合接口Λ为新增假说框架]**
+
 定义亚细胞候选耦合项：
 \[
 \hat G_{\theta,neural}=\Lambda\big(\hat G_{\theta,micro}\big),\quad \Lambda:\text{micro}\to\text{neural}
 \]
 其中 \(\hat G_{\theta,micro}\) 表示微管相关量子动力学的候选选择接口。
+
+*Λ的性质说明*：
+- Λ是从亚细胞微管尺度（~纳米，皮秒时间尺度）到神经元尺度（~微米，毫秒时间尺度）的尺度桥接算子
+- Λ的具体结构（线性/非线性、保结构方式）当前未指定；最小要求：保持选择动力学的主要自由度（不完全坍塌到经典热噪声）
+- Λ的存在是Ax-BioQuantum-1退相干约束条件（τ_coh > τ_min）得到满足后才有意义
+
+*$\hat G_{\theta,micro}$ 的物理候选*：
+1. Orch-OR量子坍缩（Penrose重力引发坍缩：$E_G \cdot \tau \approx \hbar$，联结§1.3.6引力阈值）
+2. 量子隧穿（质子/电子在微管中的隧穿效应）
+3. 量子振动相干（Engel et al. 2007光合作用量子相干类比，争议较大）
+
+**证伪条件** [H-高承诺]:
+- 若冷冻电镜或分子动力学模拟显示微管在生理条件下的退相干时间 $\tau_{coh} \ll \tau_{min}$（如Tegmark 2000预测的~10⁻¹³秒），则Λ耦合无物理基础。
+- 若对微管进行选择性药理学干扰（taxol/colchicine在不影响突触传递的剂量下改变微管动力学）后，神经元选择动力学（如双稳态知觉切换率）无显著变化，则Ĝ_{θ,micro}对Ĝ_{θ,neural}的贡献可忽略。
 
 ### Ax-BioQuantum-1: Decoherence Constraint Clause
 \[
