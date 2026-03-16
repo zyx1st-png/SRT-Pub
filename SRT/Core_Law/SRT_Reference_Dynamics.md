@@ -104,15 +104,21 @@ $$θ_{somatic} = \{θ_{immune}, θ_{intero}, θ_{motor}\}$$
 
 ### §2.2 躯体同步指数
 
-**定义 D5**:
+**定义 D5**（注：$\theta_{binding} \in [0,1]$ 为实数标量，与具身参数集合 $\theta$ 不同，下标 $binding$ 区分）：
 
-$$θ_{binding}(t) = \left| \frac{1}{N} \sum_{n=1}^{N} e^{i(φ_{brain}(t) - φ_{somatic}(t))} \right|$$
+$$\theta_{binding}(t) = \left| \frac{1}{N} \sum_{n=1}^{N} e^{i(\varphi_{brain}^{(n)}(t) - \varphi_{somatic}^{(n)}(t))} \right|$$
 
-| $θ_{binding}$ 值 | 状态 | 现象学表现 |
-|:-----------------|:-----|:-----------|
-| $θ \to 1$ | 强耦合 | 稳定第一人称视角 |
-| $θ \to 0$ | 解耦 | 离体体验、解离 |
-| $θ$ 振荡 | 不稳定 | 人格解体 |
+其中 **N = 独立脑-体信号通道对的数量**（空间平均，类 PLV 相位锁定值）：
+- $\varphi_{brain}^{(n)}(t)$：第 $n$ 个脑信号通道的瞬时相位（推荐频带：$\delta/\theta$，0.5–8 Hz，与内感受节律对齐；区域：顶叶/岛叶）
+- $\varphi_{somatic}^{(n)}(t)$：第 $n$ 个躯体信号通道的瞬时相位（候选：心跳 R-R 间期相位 $\varphi_{cardiac}$、呼吸相位 $\varphi_{resp}$、内感受 EDA 相位）
+
+| $\theta_{binding}$ 值 | 状态 | 现象学表现 | SRT 机制 |
+|:---------------------|:-----|:-----------|:---------|
+| $\theta_{binding} \to 1$ | 强耦合 | 稳定第一人称视角 | $\theta_{somatic}$ 对 $\hat{G}$ 的权重调制稳定（Implication §2.1） |
+| $\theta_{binding} \to 0$ | 解耦 | 离体体验、解离 | $\theta_{intero}$ 失调 → Ψ_f 底噪失控，马尔可夫毯边界失效（Ax-AUTO-1b） |
+| $\text{CV}(\theta_{binding}(t)) \uparrow$ | 时间变异高（原"振荡"） | 人格解体 | 脑-体相位锁定间歇性破坏，第一人称视角反复建立-失效循环 |
+
+> **"θ振荡"操作化修正**：人格解体对应 $\theta_{binding}$ 的**时间变异系数** $\text{CV}_t = \sigma(\theta_{binding})/\mu(\theta_{binding})$ 显著升高，而非均值的极端值——即相位耦合时而存在时而崩溃，造成自我感的不稳定闪烁。
 
 ### §2.3 生存权重门控 (Survival-Weight Gating)
 
