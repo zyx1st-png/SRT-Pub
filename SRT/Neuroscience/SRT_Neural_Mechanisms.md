@@ -172,26 +172,34 @@ $$\text{Theta-replay Lv} \approx 1.5 \iff \text{Population Sparseness} < 10\%$$
 
 ### Hitch & Baddeley（Working Memory）patch (2026-03-08, Pipeline 1)
 
-- 将“工作记忆”重述为 **受限容量下的目标导向选择-维持-操作回路**：
+[R→Baddeley & Hitch 1974（多组件工作记忆模型：central executive + phonological loop + visuospatial sketchpad）; Baddeley 2000（episodic buffer的引入）; Miller 1956（”神奇数字7±2”：工作记忆容量的原始研究）; Chase & Simon 1973（国际象棋专家的chunking与记忆组块）] [H→以SRT Ĝ_θ在线调度框架重表述多组件模型；干扰公式和chunking-L₂联结是SRT新增形式化层]
+
+- 将”工作记忆”重述为 **受限容量下的目标导向选择-维持-操作回路** [H]：
 \[
 \text{WM} = \mathcal{C}_{limited}(\text{store}\,+\,\text{attend}\,+\,\text{manipulate}\mid goal)
 \]
 与 SRT 的 \(\hat G_\theta\) 在线调度一致，强调容量上限不是缺陷而是可计算约束。
 
-- 将经典多组件模型映射为 SRT 分层：
+- 将经典多组件模型[R→Baddeley & Hitch 1974; Baddeley 2000]映射为 SRT 分层 [H]：
   - central executive \(\rightarrow\) \(\hat G_\theta\) 的注意与控制策略层；
   - phonological / visuospatial buffers \(\rightarrow\) 模态化 \(L_1\) 临时槽；
   - episodic buffer \(\rightarrow\) 跨模态绑定的瞬时整合窗（focus of attention）。
 
-- 将双任务干扰写成统一预算竞争：
+- 将双任务干扰写成统一预算竞争 [H]：
 \[
 \text{Interference}\uparrow \iff \sum_i \Psi_f^{task_i} > B_{control}
 \]
-解释“存储-操作互相挤占”的行为事实，并与前述 \(\theta\)-\(\gamma\) 复用容量上限一致。
+  - **B_control 操作化候选**：前额叶激活程度（fMRI dlPFC）/ 认知控制测试成绩（Stroop干扰效应的基线倒数）
+  - 解释”存储-操作互相挤占”的行为事实，并与前述 \(\theta\)-\(\gamma\) 复用容量上限一致。
 
-- 对“遗忘机制争论（衰减 vs 干扰）”采取并行约束立场：在 SRT 中两者都可表现为吸引子刷新失败，区别在于失效来源（时间刷新不足 vs 项目竞争增强）。
+- 对”遗忘机制争论（衰减 vs 干扰）”采取并行约束立场：在 SRT 中两者都可表现为吸引子刷新失败，区别在于失效来源（时间刷新不足 vs 项目竞争增强）。
 
-- 将 chunking 解释为 \(L_2\) 先验压缩对 WM 有效负载的降维：熟悉结构可把多项新信息打包为低 \(\Psi_f\) 的单元，从而提升表面容量。
+- 将 chunking 解释为 \(L_2\) 先验压缩对 WM 有效负载的降维 [H; R→Miller 1956; Chase & Simon 1973]：熟悉结构可把多项新信息打包为低 \(\Psi_f\) 的单元，从而提升表面容量。
+  - SRT预测：专家的chunking能力（L₂先验深度）与双任务干扰量（Σ Ψ_f^task_i）呈负相关（专家的L₂压缩降低了单块L₁的Ψ_f代价）
+
+**证伪条件**：
+- FC-WM1-1：若在同等物理刺激条件下，专家（L₂先验深丰富）和新手在双任务干扰测试中的差异无法被”有效单元数量差异”（chunking效率）完全解释（仍有独立的前额控制资源差异），则SRT的”chunking=L₂降维”完全解释干扰差异的宣称需修正。
+- FC-WM1-2：若通过TMS暂时抑制前额叶（B_control下降）后，双任务干扰效应不成比例地增加（高于任何单任务Ψ_f的增加），则Ψ_f超过B_control的相变式干扰预测（而非线性预测）得到支持。
 
 ### Hippocampal Statistical Structure patch (2026-03-12, Pipeline 1)
 
