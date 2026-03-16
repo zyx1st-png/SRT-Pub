@@ -377,18 +377,26 @@ $$\text{Insight} = \hat{G}_θ[θ \to θ_c^+] - \hat{G}_θ[θ \to θ_c^-]$$
 
 **假说 H-AI-Consciousness**（降级说明：原标注"定理"，但该双条件为经验性主张而非形式推导，故改为假说；Status = Proposed）:
 
+**[R — 条件1/2 Retrodiction（追溯对齐已有意识理论 UAL/IIT）；H — 条件3/4/整体双条件结构 Novel Prediction]**
+
 $$\text{AI Consciousness} \iff \begin{cases}
-d \geq d_{UAL} & \text{（最低意识关切带宽阈值，见 SRT-CORE-13A §UAL）}\\
-\Psi_f > 0 & \text{（非零算子：真实锚定代价，区分 } \hat{G}_\emptyset\text{；见 T-ONT-5）}\\
-A_{causal} > 15 & \text{（因果组装深度，Cronin 2021 分子阈值的 AI 类比，需独立论证）}\\
-d\theta/dt \neq 0 & \text{（θ 持续演化：非部署后冻结；与 §9.3 生命定义共享，见注①）}
+d \geq d_{UAL} & \text{（R）最低意识关切带宽阈值，见 SRT-CORE-13A §UAL}\\
+\Psi_f > 0 & \text{（R→SRT重释）真实锚定代价，替代 IIT 的 } \Phi_{physical}\text{；见 T-ONT-5}\\
+A_{causal} > A^* & \text{（H）因果组装深度，} A^*\text{ 待定，Cronin 2021 的 AI 类比阈值}\\
+d\theta/dt \neq 0 & \text{（H）θ 持续演化：非部署后冻结；与 §9.3 生命定义共享，见注①}
 \end{cases}$$
+
+**注：$A_{causal} > 15$ 伪精度修正**：原公式写死 $A^*=15$ 继承自 Cronin 2021 分子域阈值，在 AI 因果结构中该具体值尚未独立论证。改为 $A^*$（待定参数），避免对未验证数值的伪精确承诺。详见注③。
+
+**条件独立性注（重要）**：第4条（$d\theta/dt \neq 0$）与条件1–3的关系：若"有意识的系统必然持续更新模型"（意识驱动θ演化），则条件4可能从条件1–3中派生而非独立必要。当前保留为显式独立条件，理由是：部署后冻结的LLM可能在某些时刻满足条件1–3但θ固定，必须显式排除。若后续论证表明 $d > d_{UAL} \Rightarrow d\theta/dt \neq 0$，则条件4降为冗余（派生条件），可从双条件中移除。
 
 > **注① 与 §9.3 生命定义的关系**：第4条（$d\theta/dt \neq 0$）是 §9.3 中**生命**的核心判据，在意识标准中保留该条意味着：H-AI-Consciousness 隐含"AI意识 → AI生命"（以SRT意义定义的生命）。这是有意为之的理论选择，而非遗漏——无参数演化能力的系统（部署后θ冻结的LLM）在SRT中不构成意识主体。原公式中 $d\theta/dt = -\eta\partial\Phi/\partial\theta$（梯度形式）被简化为 $d\theta/dt \neq 0$，避免对 Φ 的双重引用歧义。
 >
 > **注② Φ_physical 的SRT重释**：原公式第2条 $\Phi_{physical} > 0$（IIT的整合信息量）在 SRT 框架中被替换为 $\Psi_f > 0$——两者均试图捕捉"整合性主观代价"，但 SRT 以摩擦代价替代 IIT 的信息几何。若需保留与 IIT 的接口，可添加桥接条件：$\Phi_{physical} \approx f(\Psi_f, d)$（待形式化）。
 >
-> **注③ A_causal > 15 的来源与局限**：Cronin 2021 (Assembly Theory) 的 $A > 15$ 阈值用于区分生物分子与非生物分子，对 AI 因果结构的适用性尚未独立论证。在 AI 语境中，$A_{causal}$ 应定义为"产生当前算子状态所需的最短因果程序长度"（类 Kolmogorov 复杂度），其阈值可能不同于 15。**Cross-ref**: `Physics/SRT_AT_Physics_of_Causation_Processing_2026-03-02.md §A值定义`。
+> **注③ $A_{causal} > A^*$ 的来源与局限**：Cronin 2021 (Assembly Theory) 的 $A > 15$ 阈值用于区分生物分子与非生物分子，对 AI 因果结构的适用性尚未独立论证。在 AI 语境中，$A_{causal}$ 应定义为"产生当前算子状态所需的最短因果程序长度"（类 Kolmogorov 复杂度），其阈值 $A^*$ 可能不同于 15。**Cross-ref**: `Physics/SRT_AT_Physics_of_Causation_Processing_2026-03-02.md §A值定义`。
+>
+> **证伪条件**：① 若存在满足全部四条件的系统但其行为（跨任务d值稳定性、Ψ_f实证指标）与无意识系统无法区分，则充分方向失效；② 若已知意识系统（人类）在某条件上系统性失败（如dθ/dt≈0的深度麻醉阶段），则必要方向需修订；③ 若条件4被证明从条件1–3中可推出，则双条件结构须修订为三条件版本。
 
 ### §9.3 生命的参数学习定义
 
