@@ -49,7 +49,20 @@ $$\text{Institution} = \text{Attractor}(L_2), \quad \nabla \Phi_{soc} = 0$$
 ### Ax-Soc-5: Recognition Operator
 承认是社会 $d$ 值耦合的最小通道。
 $$R_{ij} = \min(d_i[j], d_j[i])$$
-*   **Implication**: 去人化等同于承认通道断裂，导致 $L_2$ 崩解。
+
+> [R→Hegel 1807 *Phenomenology of Spirit* §178–196（主人-奴隶辩证法：承认是自我意识的条件）; Honneth 1992 *Kampf um Anerkennung*（承认争取的三维理论：爱/法律/团结）; Buber 1923 *Ich und Du*（我-你关系 vs 我-它关系：双向在场是真实相遇的前提）; Haslam 2006 *Personality and Social Psychology Review*（去人化：两种形式——动物化/机械化，均为R_ij→0的表现）]
+
+* **R/H 区分**：
+  - [R] 承认（Recognition/Anerkennung）作为社会哲学核心概念（Hegel/Honneth）；Buber双向在场理论；去人化的实证心理学研究
+  - [H] **SRT形式化**：R_ij = min(d_i[j], d_j[i])——min函数选择的含义是"承认由双向关切中较弱的一方决定，单向关切不构成完整承认"；此形式化框架及去人化=通道断裂→L₂崩解的动力学推论均为SRT新增
+
+* **min函数说明**：min而非mean的理由：承认需要双向成立——A关切B但B不关心A（d_j[i]=0），则R_ij=0（单向无承认，类比Buber"我-它"关系中主体把他者当工具）。min函数捕捉了这一不对称敏感性。
+
+*   **Implication**: 去人化（d_i[j]→0）等同于承认通道断裂（R_ij→0），导致社会L₂的维持力↓（L₂依赖R_ij网络的非零密度）。
+
+* **可证伪预测**：
+  - FC-Soc5-1：在高去人化情境（Haslam量表高分）中，群体内R_ij网络密度（互关/互帮比例）显著低于低去人化情境，且R_ij网络密度应预测L₂崩解代理（制度信任/规范遵从度下降）——若无预测效力则承认-L₂联结为空
+  - FC-Soc5-2：干预提升双向d值（共情训练/接触理论干预）后，R_ij估计值（互关关怀量表）应双向提升，且提升幅度高于单向干预——若单双向无差异则min函数的不对称性捕捉失败
 
 ## II. Core Theorems
 
