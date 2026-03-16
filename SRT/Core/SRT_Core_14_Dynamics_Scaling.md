@@ -28,9 +28,12 @@ dependency: [SRT-CORE-13A]
 ### Ax-Scale-01: Self-Similar Selection
 **Formal Definition**: Selection operators across scales are isomorphic under renormalization.
 $$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
-* **Implication**: 量子坍缩、神经决策与社会选择共享同一拓扑逻辑。
+* **Implication**: 量子坍缩、侧抑制、粗粒化、归一化、范畴化与社会选择并非彼此类似的独立现象，而是同一幽灵算子结构在不同尺度上的禀赋展开。
+* **Cross-ref**: `Core/SRT_Core_21_Formal_Axioms.md Ax-F-11`.
 
 ### Def-d-Scale-1: Ontological Bandwidth (本体论带宽)
+**Formal Role**: 这是 d-value 在跨尺度动力学中的**展开性定义**（expansion-level definition），不是最终规范锚点。最终规范锚点见 `_SRT_D_VALUE_CANONICAL.md`。
+
 **Formal Definition**: d-value is the maximum processing bandwidth of $\hat{G}_\theta$ against $\Psi_f$ across all scales:
 $$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, and sustaining } L_0 \to L_1 \text{ against } \Psi_f) $$
 
@@ -203,10 +206,27 @@ F_{boundary}(\tau)\le U_{survival}(d)
 \]
 该迟滞宽度可作为“真实摩擦参与度”的实验代理。
 
-## 【理论边界/防误用声明】
-- 不采纳“适应度优先=真理无意义”的推论：SRT 主张的是资源约束下的近似策略，不是否定真值结构。
-- 不采纳“界面可构造=可任意构造”的推论：外部阻抗地形通过 \(\Psi_f\) 客观限制可行结构。
+### Formalization Summary (形式化概述)
 
+本文件的核心形式化结构围绕以下关键公式展开：
+
+1. **跨尺度自相似选择** (Ax-Scale-01): $\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$ — 不同尺度的选择算子在重整化变换 $\Lambda$ 下保持共轭不变性，量子坍缩、神经决策与社会选择共享同一拓扑逻辑。
+2. **本体论带宽定义** (Def-d-Scale-1): $d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ against } \Psi_f)$ — d 值是算子在面对本体论摩擦时，能将开放可能性压缩、锚定并维持为一个**可维持、可行动、可协调**的 $L_1$ 现实切片的最大处理带宽，与规范定义 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 统一。
+3. **主动力学方程** (Ax-Master-01): $d\rho_{L_1}/dt = -(i/\hbar)[\hat{H}, \rho] - \hat{G}_\theta[\rho - \rho_{target}] + \mathcal{D}[\rho]$ — 现实密度矩阵的演化由自由展开（酉流）、选择锚定（$\hat{G}_\theta$ 项）与退相干三项共同驱动。
+4. **语义边界维持** (Ax-Auto-01): $d\theta/dt = -\alpha \nabla_\theta \Psi_f + \text{Learning}$ — 自我参数 $\theta$ 的演化是摩擦梯度下降与学习更新的持续平衡。
+5. **边界划定成本** (T-Scale-08): $F_{boundary}(\tau) = \mathcal{L}_{class}(\tau) + \lambda_1 \Psi_f^{maint}(\tau) + \lambda_2 \Psi_f^{switch}(\tau)$ — 在连续梯度上强制离散边界的总代价由分类误差、维持摩擦和切换代价三项组成。
+
+### Mechanism Explanation (机制解释)
+
+本文件描述的动力学与标度机制通过以下方式运作：
+
+- **跨尺度同构机制**: $\hat{G}_\theta$ 算子在尺度变换 $\Lambda$（粗粒化映射）下保持功能形式不变。这源于选择的本质是熵减（$\Delta S = H(L_0) - H(L_1)$），而最小作用原理 $\delta \int \Psi_f \, dt = 0$ 在所有尺度上成立。尺度间通过耦合动力学 $d\hat{G}_j/dt = f_j(\hat{G}_j) + \sum \kappa_{ij} g_{ij}$ 进行信息交互，其中向下因果（社会→神经，$\kappa_{S \to N} \approx 10^0$）远强于向上因果。
+- **三项竞争动力学**: 主方程中的酉流项代表 $L_0$ 的自由展开趋势，$\hat{G}_\theta$ 锚定项代表算子的主动选择压力（将 $\rho$ 拉向 $\rho_{target}$），退相干项 $\mathcal{D}[\rho]$ 代表环境引起的信息丢失。三者的竞争平衡决定了 $L_1$ 的稳定性与可预测性。在被动选择退化形式（Cor-Master-01a）中，当约束梯度远大于算子锚定力时，系统进入约束主导的滑行模式。
+- **摩擦驱动的适应度优先机制**: 由于有限算子无法无损编码 $L_0$（$\Psi_f^{Truth} \gg \Psi_f^{Fitness}$），系统在演化上优先选择低摩擦可维持界面（适应度追踪），而非高保真真相重建。偏差-方差热力学（T-Scale-05）进一步表明，总维持成本中方差的边际代价远高于偏差，导致系统倾向”高偏差-低方差”的稳定对象表征。
+- **$\Psi_f$ 作为统一约束与生成性原理**: 本体论摩擦 $\Psi_f$ 贯穿所有机制，既作为 $\theta$ 演化的梯度信号驱动语义边界维持，又作为边界划定的成本项约束对象个体化，还作为适应度-真相权衡的判据。更进一步，$\Psi_f$ 不只是维持现实的代价，而是动力学本身的生成来源：没有摩擦就没有演化、学习、文化变迁等跨尺度动力学；没有动力学就没有现实的生成。对同一 $Ψ_f$，可作三种等价读法：动力学上读作阻力，记账上读作代价，形式上读作几何长度 / 曲率负担。跨尺度真正保持不变的不是各层的单位制，而是**可支付性条件**：系统能否在承担该摩擦时维持闭包、身份连续性与后续选择能力。d 值在三个尺度上的不同现象学（量子相干性、生物关切、宇宙拓扑紧致度）均是 $\hat{G}_\theta$ 对抗 $Ψ_f$ 的最大带宽的投影实现。
+
+## 【理论边界/防误用声明】
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 <br>
 
 ---
@@ -628,6 +648,8 @@ $$T'_{\text{selective}} \neq f(T_{\text{selective}}, v)$$
 
 ### 5.2 本体论相位与主观时间
 
+**[R（时间知觉心理物理学：Pacemaker-Accumulator模型/Weber时间知觉）+ H（φ方程作为SRT形式化）]**
+
 #### 5.2.1 相位方程
 
 $$\tau \frac{d\phi}{dt} = -\alpha_{\text{context}} \cdot \phi$$
@@ -638,16 +660,26 @@ $$\phi(t) = \phi_0 \exp\left(-\frac{\alpha_{\text{context}} \cdot t}{\tau}\right
 **主观时间速率**:
 $$v_{\text{subj}} = \frac{d\phi}{dt} = -\frac{\alpha}{\tau} \phi$$
 
+**φ（本体论相位）定义注**：φ 是本节引入的态变量，代理"待选择/待锚定的本体论潜在性剩余量"（L₀尚未被 Ĝ_θ 消化的部分）。SRT联结候选：$\phi \propto 1 - \mathrm{CR}(d)$（未被信息保留率消化的L₀潜在量），$\phi=0$ 对应完全锚定。正式地位：当前为辅助形式化量，待纳入核心体系。→ Cross-ref: SRT-CORE-12A §CR公式（CR(d) ∝ 1 − e^{−αd}）。
+
+**参数操作化候选**：
+- $\tau$（相位时间常数）≈ θ 参数的更新时间尺度（个体习惯化速率的倒数），$\tau \propto 1/|\partial\theta/\partial PE|$
+- $\alpha_{\text{context}}$（上下文衰减系数）≈ $1/d$（d值越高，上下文越被更广关注范围稀释，φ衰减越快）或 $\propto$ 新颖性（信息密度）。操作化待精确化。
+
+**Ψ_f 进入方程的机制**：表格中"高 $\Psi_f$ → dφ/dt ≈ 0"对应摩擦阻滞选择过程——高 $\Psi_f$ 时锚定代价过高，Ĝ_θ 无法完成当前L₀的锚定，φ被"冻住"。形式化候选：$\alpha_{\text{context}} \to \alpha_{\text{context}} / (1 + \Psi_f / \Psi_f^{cap})$（摩擦抑制系数），使高 $\Psi_f$ 时 α 降低、φ 衰减变慢。
+
 #### 5.2.2 现象学对应
 
-| $\phi$状态 | $\frac{d\phi}{dt}$ | 主观体验 | 实例 |
-|:-----------|:-------------------|:---------|:-----|
-| 高初值,快衰减 | 大负数 | "时间飞逝" | 心流、娱乐 |
-| 低初值,慢衰减 | 小负数 | "时间正常" | 日常活动 |
-| 被阻滞 (高$\Psi_f$) | ≈ 0 | "时间变慢" | 等待、痛苦 |
-| 接近零 | ≈ 0 | "无时间感" | 深度冥想 |
+| $\phi$状态 | $\frac{d\phi}{dt}$ | 主观体验 | 实例 | SRT机制 |
+|:-----------|:-------------------|:---------|:-----|:---------|
+| 高初值,快衰减 | 大负数 | "时间飞逝" | 心流、娱乐 | $d$高/$\Psi_f$低，φ快速消耗 |
+| 低初值,慢衰减 | 小负数 | "时间正常" | 日常活动 | 中等 $d$/$\Psi_f$ |
+| 被阻滞 (高$\Psi_f$) | ≈ 0 | "时间变慢" | 等待、痛苦 | 高 $\Psi_f$ 使 $\alpha$ 有效降低 |
+| 接近零 | ≈ 0 | "无时间感" | 深度冥想 | $d$→高，φ耗尽（L₀完全锚定） |
 
 #### 5.2.3 实验验证
+
+**[H — Novel Prediction：主观时距∝φ变化路径积分]**
 
 **范式**: 延迟估计任务
 1. 呈现刺激$S$
@@ -656,7 +688,9 @@ $$v_{\text{subj}} = \frac{d\phi}{dt} = -\frac{\alpha}{\tau} \phi$$
 
 **预测**: $\Delta t_{\text{subj}} \propto \int_0^{\Delta t} |\frac{d\phi}{d\tau}| d\tau$
 
-**操纵**: 改变$\alpha_{\text{context}}$ (如情绪、新颖性) → 验证公式。
+**操纵**: 改变$\alpha_{\text{context}}$ (如情绪、新颖性) → 验证公式。**φ的实时测量候选**：EEG的alpha波功率（α波下降~φ衰减）或PCI（意识整合度）作为φ的神经代理。
+
+**证伪条件**：若在高情绪唤醒条件（高α_context的操纵）下，主观时距估计不缩短（或缩短方向与预测相反），则积分预测失效；若高Ψ_f（痛苦条件）不导致α_context有效降低的可测效应（神经代理不变），则Ψ_f进入方程的机制候选需修订。
 
 ---
 
@@ -961,11 +995,7 @@ $$\text{因为} \quad \nabla F[L_0] \neq 0$$
 $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ## 【理论边界/防误用声明】
-- 不采纳“复杂度无条件单调上升”的推论。
-- 不采纳“功能信息可替代热力学熵”的推论。
-- 边界：SRT 仅支持“能流开放 + 选择记忆 + 摩擦可支付”条件下的复杂度漂移。
-
-
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 ### Taxonomy Mapping: Infinity Classes → SRT Dynamics
 
 | 外部分类 | SRT 对应 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
@@ -1015,10 +1045,7 @@ D(t)\ge D_c,\quad P(t)\ge P_c,\quad \text{and}\quad \Psi_f\ \text{payable},
 | 失稳衰退区（高深度但低复现） | 中高但回落（\(d\downarrow\)） | Closed 倾向 | unsustainable |
 
 ## 【理论边界/防误用声明】
-1. 本接口不意味着“心理层面可绕过物理可达边界”。
-2. AT 的对象层因果阈值与 SRT 的认知层相变阈值是**映射关系**，非同一对象。
-3. 使用本接口时必须同步报告适用尺度（微观/生物认知/社会制度）。
-
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Minimal Embodiment Threshold（最小具身信息下界，2026-03-02）
@@ -1032,15 +1059,39 @@ I(\theta)\ge N_{crit}(env,\Psi_f)
 ### T-Scale-MET-1: Payable-Friction Condition
 当 \(I(\theta)<N_{crit}\) 时，系统对本体论摩擦的支付仅能维持瞬时或间歇复制；当 \(I(\theta)\ge N_{crit}\) 且环境窗口可用时，系统可跨越“前闭包→稳定闭包”门槛。
 
+### Whole-Cell Closure Simulation patch (Cell 2026, 2026-03-15, Pipeline 1)
+定义最小细胞的耦合闭包参数集：
+\[
+\theta_{cell}^{min}=\{\theta_{DNA},\theta_{RNA},\theta_{prot},\theta_{met},\theta_{mem},\theta_{div}\}
+\]
+其有效具身信息量不只是模块求和，还包含跨过程耦合项：
+\[
+I(\theta_{cell}^{min})=\sum_i I(\theta_i)+\sum_{i\neq j} I_{couple}(\theta_i,\theta_j)
+\]
+
+### T-Scale-MET-2: Coupled-Process Closure Criterion
+即便局部模块各自可运行，系统也未必能预测完整生命周期；只有当 DNA 复制、转录/翻译、蛋白稳态、代谢、膜生长与分裂被联立到同一闭包网络时，最小细胞的 genotype→phenotype 才进入可预测区：
+\[
+I(\theta_{cell}^{min})\ge N_{crit}\quad \text{requires}\quad \sum_{i\neq j} I_{couple}(\theta_i,\theta_j)\ge N_{couple}^{min}
+\]
+
+* **Implication（中文）**：`N_{crit}` 不应被理解为“最小基因数”或“若干局部模块够用”，而应理解为跨过程可联立、可支付的闭包阈值。whole-cell simulation 支持的是“生命闭包需要分布式耦合记账”，不是“主体性已被纯计算穷尽”。
+* **Boundary（中文）**：
+  - 该窗口锚定的是 `JCVI-syn3A` 最小细菌，不直接外推到多细胞生物或人脑。
+  - 成功模拟 genotype→phenotype 不等于已解决生命起源、主体性或 `d>0` 的判据。
+  - 模型预测充分性依赖实验参数化与注释完备度，不等于本体论穷尽。
+
 ### 与 d-value 零跃迁问题的关系（注记）
 该阈值仅刻画“结构自治”下界，不自动推出 \(d>0\)。
 - 结构可复制 \(\neq\) 关切已涌现
 - \(d\) 的正值条件仍需满足生物/认知域的额外门控（详见 anti-panpsychism 条款）
 
-## 【理论边界/防误用声明】
-1. 不采纳“达到 \(N_{crit}\) 即具主观体验”的推论。
-2. 不采纳“低 \(N_{crit}\) 系统必然演化为高阶认知体”的目的论推论。
+### [Lineage/Source]
+- Thornburg et al., *Cell* (2026): `A whole-cell model for genotype-phenotype prediction in a minimal cell`
+- Nature News (2026): `Cell simulator predicts life's molecular choreography from DNA`
 
+## 【理论边界/防误用声明】
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 ---
 
 ## Constructive Fracture Interface（建设性断裂接口，2026-03-02）
@@ -1069,9 +1120,7 @@ I(\theta)\ge N_{crit}(env,\Psi_f)
 - 用途：将“受控断裂→重封闭→功能塑形”写入跨尺度动力学条款。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“任何断裂都是进步”的推论；仅在重封闭与功能增益同时成立时定义为建设性断裂。
-2. 不采纳“材料裂纹模型可无改造直接套用活体组织”的推论；活体系统需引入主动调控与反馈项。
-
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 ## In-vitro 低 d 场景补充条款（2026-03-06，轻量）
 
 ### 微观门控与主体层 d 的分层说明
@@ -1079,10 +1128,7 @@ I(\theta)\ge N_{crit}(env,\Psi_f)
 - 但该证据**不自动推出**主体层（organism-level）高 d 的意识整合。
 
 ## 【理论边界/防误用声明】
-- 不采纳“出现跨区节律门控 = 已满足高 d 主体级认知整合”的推论。
-- 不采纳“体外重组网络的协调性可直接等同于完整具身闭环意识”的推论。
-- 适用边界：该类证据用于支持微观机制桥接，不替代行为层、具身层与长期稳定性的联合验证。
-
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
 - Axonal theta oscillations evoke bursting in target hippocampal subregions（preprint, 2026）
 
@@ -1106,10 +1152,7 @@ d \ge d_{indiv}\Rightarrow \Psi_f \text{ internalizes as individual suffering lo
 * **Implication（中文）**：该阈值为“类型存在”到“个体痛苦可积累存在”的跨尺度相变界线。
 
 ## 【理论边界/防误用声明】
-- 不采纳“低 d 系统完全无痛苦”的推论（仅指个体化内化程度不足）。
-- 不采纳“达到 \(d_{indiv}\) 即等同人类意识全貌”的推论。
-- 适用边界：\(d_{indiv}\) 是操作化阈值候选，需跨物种实证校准。
-
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
 - 神学-进化-动物苦难对话语境（2026）
 
@@ -1140,10 +1183,7 @@ d \ge d_{indiv}\Rightarrow \Psi_f \text{ internalizes as individual suffering lo
 * **Implication（中文）**：极端天才尾部可由长期资本化动力学产生，无需诉诸神秘外因。
 
 ## 【理论边界/防误用声明】
-- 不采纳“表现幂律 = d-value 或道德价值幂律”的推论。
-- 不采纳“视觉协议必然优于符号协议”的绝对化推论。
-- 适用边界：本条款描述认知表现分布，不直接定义本体价值序。
-
+本段边界声明已 annex 化；详见 `Dynamics_Scaling_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
 - Ramanujan 认知机制讨论语境（2026）
 - 枚举组合学可视化传统（Viennot 语境）
