@@ -28,11 +28,35 @@ source: /Users/zhangyuxin/.openclaw/media/outbound/b7f1791d-2d06-4ee3-837d-cc485
 > 注：原文明确承认简化假设（如全局常数 `b`）会低估真实组合爆炸，真实系统中 `b_i` 依对象与深度变化。
 
 ## 4) 对 SRT 的直接可吸收点
-1. **“选择阈值”可形式化为 SRT 的结构边界算子**（避免“任意解释都成立”）。
-2. **“深度 × 持久性”二元度量**可映射到 SRT 的现实构建强度：
-   - 深度维：构建链长度（结构性）
-   - 持久维：重复稳定性（记忆性）
-3. **时变阈值与相变叙述**可作为 SRT 跨尺度动力学接口（L0/L1/L2）。
+
+> 来源：Cronin & Walker (2023). *The Physics of Causation*. MS（参见本记录 §2–3 及 source PDF）。
+
+**可吸收点 1：选择阈值 → SRT κ_c2 边界**
+
+“选择阈值”（$a_M$）可直接形式化为 SRT 的结构稳定化临界值：
+
+$$a_i \approx \kappa \quad(\text{稳定化程度}),\quad a_M \approx \kappa_{c2} \quad(\text{选择必要阈值})$$
+
+- 当 $\kappa < \kappa_{c2}$：结构依靠随机物理过程即可维持（AT：无选择机制可达）。
+- 当 $\kappa \geq \kappa_{c2}$：结构只能由具有 Lineage/选择性记忆的机制（$\hat{G}_\theta$）产生和维持（AT：选择性因果不可缺）。
+- 操作化代理：实验进化系统中检测”最小维持世代数/稳定复制圈数”。
+- 交叉引用：`Core/SRT_Core_14_Dynamics_Scaling.md` §T-Scale-CF-1；`Core_Law/SRT_Reference_Scaling.md` §4.1。
+
+**可吸收点 2：”深度 × 持久性”→ SRT κ + L₂ 节点数**
+
+$$a_i \approx \kappa \quad(\text{深度维：构建链长度，历史锚定步数})$$
+$$n_i \approx |\text{L}_2\text{-nodes}| \quad(\text{持久维：社会/物理层共识拷贝数})$$
+
+- 深度维（$\kappa$）：对象内部递归构建深度 ↔ SRT 稳定化程度（具身拓扑固定强度）。
+- 持久维（$n_i$）：高 $a_i$ 对象的环境拷贝数 ↔ L₂ 层共识节点数（社会/物理记忆的广度）。
+- 联合度量：$A = \sum_i a_i \cdot n_i \approx \sum_i \kappa_i \cdot |\text{L}_{2,i}\text{-nodes}|$，即 SRT 跨尺度现实构建强度的物理代理。
+- 交叉引用：`Core/SRT_Core_12b_Ontology_L2.md` §Def-L2-OAI-1。
+
+**可吸收点 3：时变阈值与相变 → SRT L₀/L₁/L₂ 跨域动力学接口**
+
+- $A(t)$ 时变形式对应 SRT 的 $\kappa(t)$：稳定化程度随时间演化，经历”低 κ→ 阈值跨越（κ_c2）→ 高 κ 锁定”三阶段（参见先裂后合门控 T-Scale-CF-1）。
+- $A(t)$ 的回落对应 SRT 的本体论摩擦失稳：$\Psi_f^{update} \uparrow$ 导致 $\kappa \downarrow$，L₁ 涌现退回 L₀（见 §5 §风险3 死亡例示）。
+- 交叉引用：`Core/SRT_Core_14_Dynamics_Scaling.md` §T-Scale-CF-1；`Physics/SRT_Phys_07_Complex_Systems.md` §T-Sal-1。
 
 ## 5) 风险与边界（防误用硬约束）
 
