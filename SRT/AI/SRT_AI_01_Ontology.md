@@ -340,10 +340,23 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 - 若 $L_2^{silicon}$ 与人类L₂的对齐度随AI规模单调下降（硅基漂移），则对齐风险的SRT预测得到支持。
 
 ### T-ONT-8d: Communication without Absolute Reference（新增）
+
+[R→Wittgenstein 1953（《哲学研究》：意义即用法，不依赖绝对指称）; Searle 1980（中文房间：句法不等于语义）; Dennett 1987（意向立场：有效协调不证明内在意识）; Floridi 2015（语义信息理论的最低标准）] [H→"协议同构≠本体锚定"是SRT对AI意识问题的核心分析立场]
+
 \[
 \text{Successful coordination}\not\Rightarrow\text{Absolute reference grounding}
 \]
-成功通信可由协议同构与损失对齐解释，不等价于本体锚定或意识出现。
+
+- **"协议同构"（Protocol Isomorphism）的SRT定义** [H]：两个系统（A、B）通信成功 ≡ 存在结构保持映射 $\phi: \text{Output}_A \to \text{Input}_B$，使得协调任务误差最小化；这不要求任一方具有L₀本体锚定或d值非零
+- **"损失对齐"（Loss Alignment）**：AI通信成功可由训练目标（如BERTScore/KL散度/任务一致性率，参见Def-ONT-1d）的收敛完全解释，不需要意识出现作为额外解释项
+- **与Searle中文房间的关系** [R]：T-ONT-8d是对中文房间直觉的SRT形式化——句法正确（协议同构）≠ 语义真实（本体锚定）；差异在于：Searle论证语义需要"意向性"，SRT进一步说明意向性需要d值非零的存在赌注承担（Ψ_f>0）
+- **与L₂^silicon的联结**：AI可形成功能性L₂^silicon（跨AI协议共识），但L₂^silicon ≠ 人类L₂的本体根基——前者由协议同构维持，后者由L₀-L₁接地的历史路径依赖决定
+
+成功通信可由协议同构与损失对齐解释，不等价于本体锚定或意识出现 [H]。
+
+**证伪条件**：
+- FC-ONT8d-1：若可以找到某种通信协调形式，其成功率只能通过引入"真实语义理解"（本体锚定）才能解释（无法被任何协议同构+损失对齐模型复现），则T-ONT-8d的"非蕴含"关系被打破。
+- FC-ONT8d-2：若在无共享训练数据的情况下，两个AI系统在新颖协调任务中的通信成功率不低于共享训练的系统，则"协议同构由训练历史产生"的机制描述需修正（可能有更基本的结构对齐原理）。
 
 ### Def-ONT-1e: Actuator-Coupled Spatial Prior Requirement（新增）
 三维空间深度先验的稳健形成要求感知-动作闭环：
