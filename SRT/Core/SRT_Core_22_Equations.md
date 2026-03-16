@@ -91,10 +91,24 @@ $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] \cdot \underbra
 * **Cross-ref**: Eq-Evo-01, Def D4a ($θ_{intero}$)。
 
 ### Eq-Evo-02: Parameter Update (Slow Variable)
+
+**[R（三项结构）/ H（戒断机制推论）：学习/摩擦/稳态三项追溯RL+预测编码+稳态生理学；戒断机制是Novel Prediction]**
+
 **Formal Definition**: Embodiment parameters evolve under prediction outcomes, friction gradients, and homeostatic recoil.
 $$\frac{d\theta}{dt} = \underbrace{\gamma \cdot A[\sigma, \text{Target}]}_{\text{Learning}} - \underbrace{\delta \frac{\partial \Phi(\theta)}{\partial \theta}}_{\text{Friction Descent}} - \underbrace{k \cdot (\text{Input}_{L_1} - \text{Baseline})}_{\text{Homeostatic Recoil}}$$
+
+**三项参数化注**：
+- **$A[\sigma, \text{Target}]$ 操作化候选**：预测准确性代理 = $-\Psi_f(\sigma, \text{Target})$（摩擦代价越低=越准确→学习信号越强）；或写为 $A = \text{cos\_sim}(\hat{G}_\theta[\sigma], \text{Target})$（当前选择与目标的相似度）。$\gamma$ 是学习率。
+- **$\Phi(\theta)$ 候选形式**：零阶近似为二次势能：$\Phi(\theta) = \frac{1}{2}|\theta - \theta_{ref}|^2$，使第二项退化为向参考点 $\theta_{ref}$（习惯态）的拉力（$\delta(\theta - \theta_{ref})$）。一般形式可从 Ax-L2-01（迟滞势垒）推导。
+- **第三项（稳态反冲）**：负反馈将 $\theta$ 锚定在稳态基线处；$k$ 是稳态刚度，$\text{Input}_{L_1} - \text{Baseline}$ 是当前L₁输入与稳态基线的偏差。
+
 * **Implication**: 具身参数在三力之间调整——学习推动适应，摩擦梯度约束漂移，稳态反作用力维持平衡。
-* **推论（戒断机制 / Withdrawal Mechanism）**：当外部 $\text{Input}_{L_1}$ 突然归零时，第三项的负反馈瞬间失效，但 $\theta$ 具有迟滞性（Hysteresis）。残留的 $\theta^{-}$ 偏置直接作用于 $L_0$，导致 $\hat{G}_\theta$ 生成"反向体验"（痛苦/焦虑）。这是戒断反应的物理本质。
+
+* **推论（戒断机制 / Withdrawal Mechanism）** [H]：当外部 $\text{Input}_{L_1}$ 突然归零时，第三项的负反馈瞬间失效，但 $\theta$ 具有迟滞性（Hysteresis）。残留的 $\theta^{-}$ 偏置直接作用于 $L_0$，导致 $\hat{G}_\theta$ 生成"反向体验"（痛苦/焦虑）。
+  - **因果路径精确化**：$\theta^-$（残留参数偏置）→ $\hat{G}_{\theta^-}$ 的L₀选择偏向"缺失输入的预期态"→ 实际L₁输入（= 0）与预期之间的Ψ_f差距极大→ 体验为强烈的剥夺性痛苦/焦虑（高Ψ_f的主观对应）。这是戒断反应的SRT物理本质。
+  - **预测**：戒断症状强度 ∝ $|\theta^-|$（θ残留偏置量），可通过行为/生理戒断反应严重程度与baseline L₁刺激强度的相关来验证。
+
+**证伪条件**：① 若具有明显θ迟滞（如长期用药后突然停药）的个体戒断症状强度与 $|\theta^-|$ 无相关，则戒断机制推论失效；② 若第二项（摩擦梯度）在实验中被操纵（改变L₂势能景观刚性）不影响 $d\theta/dt$ 的漂移约束，则Φ(θ)的有效性需重新评估。
 
 ### Eq-Evo-02b: Theta Tensor Inertia (θ张量惯性)
 **Formal Definition**: 具身参数θ的更新阻力与其在L2网络中的度中心性成正比：
