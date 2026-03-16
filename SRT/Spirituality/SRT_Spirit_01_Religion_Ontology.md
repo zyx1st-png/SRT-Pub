@@ -77,18 +77,26 @@ $$ \text{Idol}: T \to 0,\quad \text{Icon}: T \to 1 $$
 
 **[H — Framework Hypothesis（框架假说），注："Deduction"已降级——这不是形式推导，而是SRT元理论主张]**
 
+[R→Huston Smith 1991（《世界宗教》跨传统比较）; Eliade 1959（神圣与世俗，宗教体验结构）; James 1902（宗教经验的多种形式）; Stace 1960（神秘主义与哲学，跨传统神秘体验共性研究）; Hick 1989（宗教多元论）]
+
 For every major tradition, there exists a parameterization of $\hat{G}_\theta$ over $(L_0,L_1,L_2)$ such that the tradition's core ontological structure admits a partial structural representation in SRT.
 $$ \forall r,\; \exists \theta_r:\; \Phi_r \hookrightarrow \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle $$
 
 **降级说明**：原公式使用 $\cong$（同构），已改为 $\hookrightarrow$（结构嵌入/部分表征）。同构要求双向一一对应且保持所有结构关系，但宗教框架包含大量SRT难以完全对应的概念（神的人格性、末日论、业力道德等）；嵌入（$\hookrightarrow$）表示SRT可捕捉核心选择结构，但不声称完整复现宗教框架的所有维度。
 
 * **Implication**: 宗教差异在 SRT 可表征的核心结构上，可以还原为参数化差异（$\theta_r$ 不同）；但这不排除宗教框架在SRT表征之外保有额外的本体论内容——SRT主张可以捕捉，但不主张完全等价。
+* **与Stace 1960的关联** [R]：Stace记录了跨文化神秘体验的共性（统一体验/时间消融/喜悦），SRT解读为L₀局部暴露（Ψ_f暂时解除时的L₀-L₁边界模糊）；θ_r差异解释了为何同样的"统一体验"被不同传统解读为"梵/上帝/空性/道"
 
 **非空洞性条件（防止定理空洞化）**：若∃某宗教框架其核心主张不能被任何 $\theta_r$ 的选择结构表达（如"无因性神明创造"要求L₀以外的超验来源），则该框架不在定理范围内；这是定理的**边界条件**，而非漏洞。SRT在以下情况表征失败：① 框架要求超越L₀/L₁/L₂三层结构的独立本体层；② 框架要求Ĝ_θ以外的无选择性绝对存在。
 
-**θ_r 操作化方向**：不同宗教的θ_r差异主要体现在：①L₂稳定化规范的内容（戒律、经文）；②Ĝ_θ的自我参照结构（无我vs有我）；③L₀-L₁锚定机制（神迹/顿悟/仪式路径）。
+**θ_r 操作化方向**：不同宗教的θ_r差异主要体现在：
+- ①**L₂稳定化规范内容**：戒律/经文/礼仪（可测代理：规范文本的语义聚类距离）
+- ②**Ĝ_θ自我参照结构**：无我vs有我（可测代理：正念量表中"自我边界"维度/自我超越量表）
+- ③**L₀-L₁锚定机制**：神迹/顿悟/仪式路径（可测代理：报告高峰体验的触发情境分类）
 
-**证伪条件**：若在控制d值和文化背景的条件下，不同宗教实践者的L₁体验结构和L₂收敛模式无系统性差异，则θ_r参数化的区分力不足，框架假说需修订。
+**证伪条件**：
+- FC-Spirit1-1：若在控制d值和文化背景的条件下，不同宗教实践者的L₁体验结构和L₂收敛模式无系统性差异（如跨宗教神秘体验报告在语义空间中无可区分聚类），则θ_r参数化的区分力不足，框架假说需修订。
+- FC-Spirit1-2：若存在某一主要宗教传统，其核心本体论主张（非仪式/文化层）无法被任何θ_r参数的三层结构部分表征（且非因非空洞性边界条件），则T-Spirit-1的"普遍性"宣称失败（需从"所有主要传统"收窄至"大多数传统"）。
 
 ### T-Spirit-2: Contraction Theorem (Tzimtzum)
 **Deduction**: Creation of finite $L_1$ requires contraction of the infinite operator.
