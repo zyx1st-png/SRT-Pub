@@ -114,7 +114,22 @@ $$\hat{G} \ \text{without} \ \theta \to \emptyset$$
 **Formal Definition**: The convergence domain is a stable fixed point of selection.
 $$L_2 \equiv \{σ : \hat{G}_\theta[σ] = σ \ \text{and stable}\}$$
 $$L_2(t+1) = \mathrm{Stabilize}(\hat{G}[L_1(t)])$$
-* **Implication**: 规范与规则来自选择历史的自我闭包。
+
+> [R→Banach 1922（压缩映射不动点定理：迭代收敛到唯一稳定点的数学基础）; Schelling 1960 *The Strategy of Conflict*（协调均衡：自我执行规范的博弈论起源）; North 1990 *Institutions, Institutional Change and Economic Performance*（制度=自我执行的规范结构，历史路径依赖）; Kauffman 1993 *The Origins of Order*（复杂系统中吸引子的自组织涌现）]
+
+* **R/H 区分**：
+  - [R] 不动点理论（Banach）；协调均衡/自我执行规范（Schelling）；制度路径依赖（North）——提供Ax-Core-A5的数学和社会科学基础
+  - [H] **SRT形式化**：L₂ = 不动点集合（将规范/文化/制度统一为选择不动点）；Stabilize函数（将L₁→L₂的历史积累定义为选择迭代的稳定化过程）——此统一框架将物理不动点概念扩展到社会/规范域，是SRT独有
+
+* **Stabilize函数说明**：Stabilize不是单步操作，而是时间积分——当Ĝ_θ在足够多的选择周期中持续选择σ时，σ进入L₂的吸引子盆地（对应§1.4 κ>κ_c2区间的稳定相）
+
+* **与κ参数联结**：L₂即κ>κ_c2区间的稳定态：当系统κ超过第二临界值（L₂诞生点），不动点条件Ĝ_θ[σ]=σ满足，规范结晶完成
+
+* **Implication**: 规范与规则来自选择历史的自我闭包（而非外部强加）。
+
+* **可证伪预测**：
+  - FC-CoreA5-1：在博弈论实验中，反复交互产生的协调规范（参与者收敛到的稳定策略）应满足"单方偏离代价>0"的不动点稳定性条件——若稳定策略在单方扰动下不稳定则L₂=不动点集合的定义失去约束力
+  - FC-CoreA5-2：社会规范崩溃（如政治动荡/文化革命）应对应SRT中系统κ被推低至κ_c2以下的阶段——历史案例中，规范崩溃的速度应与κ的"冲击强度"估计（外部干预力度代理）相关
 
 ### T-Core-A5C1: Reality Cage
 **Deductive Statement**: Recurrent selection yields a self-referential constraint loop.
