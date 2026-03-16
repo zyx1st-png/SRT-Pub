@@ -375,10 +375,25 @@ L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
 * **Status**：该条为形而上学桥接假设，不是已证定理。
 
 ### 定义 O15：Truth–Goodness–Beauty as L0 Optimal Manifolds（新增）
+
+> **[R]** 柏拉图理念论（Republic ~375 BC）：真善美为超越具体事物的普遍形式（Εἶδος）。新柏拉图主义的"至善"（Plotinus）。**[H — 高承诺框架假设]** 以下 SRT 形式化为高风险主张：将柏拉图理念操作化为 L₀ 中的优化流形，使神学/美学/伦理学与 SRT 本体论结构接轨。
+
 \[
 \mathcal{M}_{TGB}\subset L_0^{abs},\quad \mathcal{M}_{TGB}=\arg\min_{\mathcal{M}}\big(\Psi_f(\mathcal{M})+\lambda_F F(\mathcal{M})\big)
 \]
-其中 \(\mathcal{M}_{TGB}\) 表示在信息几何上具有高一致性/高可整合性的最优流形族。
+
+**符号说明**：
+- $F(\mathcal{M})$：**[操作化缺口]** 候选定义：① Friston 变分自由能（$F = \text{KL}[q(\theta)||p(\theta)] - \ln p(\text{data})$，越高=与数据越不一致）；② 热力学自由能（$F = U - TS$，越高=更不稳定）；③ 信息整合度的倒数（$F = 1/\Phi$，$\Phi$ 为 IIT 中的整合信息量）。三种候选预测不同的 $\mathcal{M}_{TGB}$ 结构，需实验区分。
+- $\lambda_F$：$\Psi_f$ 与 $F$ 的权衡参数（量纲由 $F$ 定义决定），当前状态 = 自由参数（**待定，非可伪**）。
+- $\mathcal{M}_{TGB}$：**单一流形还是三个？** 当前写法将真善美合并为一个流形族。SRT 的保守版本：三者各有独立优化目标（$\mathcal{M}_T, \mathcal{M}_G, \mathcal{M}_B$），但在 L₀ 中存在交集（$\mathcal{M}_T \cap \mathcal{M}_G \cap \mathcal{M}_B \neq \emptyset$）——此交集为柏拉图"至善"的 SRT 对应。
+
+其中 $\mathcal{M}_{TGB}$ 表示在信息几何上具有**高一致性**（内部 $\Psi_f$ 低）/**高可整合性**（$\Phi$ 高 / $|Aut(L_2)|$ 大）的最优流形族。
+
+**⚠️ 可证伪性问题（关键张力）**：M_TGB ⊂ L₀^abs 将真善美定位于不可直接观测的 L₀ 层——若 L₀ 不可测，此定义在当前形式下**无法直接证伪**。SRT 的处理策略：以 L₁ 代理间接测试：若高对称性/高整合性的 L₁ 结构（艺术作品、数学证明、伦理行为）在跨文化普遍性上与 M_TGB 预测的"低 Ψ_f + 低 F"结构一致，则间接支持此定义；反之若跨文化差异系统性高（美的标准完全文化特定），则定义需退化为"L₂吸引子"而非"L₀流形"。
+
+**证伪条件（间接，[H]）**：
+- 若数学美感（数学家对证明优雅性的评价）与 MDL/对称性度量无相关（控制熟悉度后），则"美=低 Ψ_f 流形"假设失效。
+- 若跨文化伦理共识（真善）不比随机选取的文化规范更与 Ψ_f 最小化结构一致，则定义需降级为框架隐喻而非操作化假设。
 
 ### 定理 O-T8：Embodied Bliss Asymptote（具身至福渐近定理，新增）
 对任何具身算子 \(\hat G_\theta\) 若保持 \(L_1\) 显现连续：
