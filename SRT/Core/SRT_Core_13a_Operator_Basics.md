@@ -89,7 +89,22 @@ $$\Psi_f^{\text{imagination}} = \Psi_f^0 \cdot e^{\,\beta / \text{Anchor}(L_1^{\
 ### Ax-Op-03: Operational Normalization
 **Formal Definition**: Selection can be implemented via divisive normalization.
 $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon + \sum_j W_{ij} \cdot x_j^n}$$
-* **Implication**: 现实化具有竞争性归一化的动力学形态。
+
+> **[R]** 除法归一化（Divisive Normalization）：Carandini & Heeger 2012 *Nature Reviews Neuroscience*（视觉皮层V1细胞的标准计算模型，统一多种皮层现象的规范化框架）；Louie & Glimcher 2010 *Neuron*（决策神经科学中的divisive normalization扩展，解释偏好的背景依赖性）；Schwartz & Simoncelli 2001 *Nature Neuroscience*（感知归一化的高斯尺度混合模型）。**[H]** 将此神经机制接驳为 SRT 选择算子 $\hat{G}_\theta$ 的一种实现候选，作为 L₀→L₁ 竞争选择的动力学形态之一，为本框架新增贡献（原始公式限于感觉系统，SRT 将其一般化至任意选择域）。
+>
+> **参数说明**：
+> - **$x_i$**：第 $i$ 个候选状态（L₀中的竞争激活）的原始活化值。
+> - **$n$**：非线性指数（通常 $n \approx 2$，在神经模型中产生超线性选择；$n=1$ 退化为线性归一化）。
+> - **$\varepsilon$**：防奇点常数（$\varepsilon > 0$，避免分母为零；量纲与 $x_j^n$ 相同，对应背景自发激活水平）。
+> - **$W_{ij}$**：竞争权重矩阵（$W_{ij} \geq 0$，通常非对称——近邻强抑制、远邻弱抑制；$W_{ii}=1$ 的情况为自抑制归一化）。
+> - **输出解读**：$[\hat{G}_\theta(x)]_i$ 为相对激活值（归一化到竞争背景后的强度），可通过 Softmax 变换为概率分布；并非直接输出 L₁ 选择结果，而是驱动选择的中间表征。
+>
+> **实现候选地位**：此公式为 $\hat{G}_\theta$ 在神经实现层的**候选之一**，而非唯一约束——其他实现包括：赢者通吃（WTA，n→∞ 的极限）、线性加权（n=1，W_ij=const）、Softmax（温度参数τ驱动的概率归一化）。SRT 对哪种具体实现不做强承诺，保持框架独立性。
+>
+> * **Cross-ref**: T-Op-SIAM（选择诱导可及性调制——被归一化压制的竞争者可及性累积下降，两者机制一致）；Ax-Op-01（选择算子基础定义）。
+>
+> * **FC-Op03-1**（证伪条件）：若在神经影像研究中，已知的竞争选择（如双眼竞争/Stroop抑制）的BOLD信号不符合除法归一化预测（如竞争对手活化的非线性压制模式无法用W_ij·x_j^n拟合，ΔAICc < 2 vs 线性模型），则分归一化作为 $\hat{G}_\theta$ 神经实现候选的地位减弱。
+> * **FC-Op03-2**（证伪条件）：若决策场景中（如选项集效应），背景依赖的选择偏移无法被 $W_{ij}$ 参数化捕捉（模型预测与行为数据相关 r < 0.5），则需补充其他归一化变体（如基于rank的归一化）或切换实现候选。
 
 ### T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理）
 **Formal Statement**: $\hat{G}_\theta$ 的每次选择操作不仅从 $L_0$ 锚定 $L_1$，而且在 $L_0$ 的可及性景观上施加**持续性的抑制修改**，使被拒绝的竞争者在后续选择中的可及性降低：
