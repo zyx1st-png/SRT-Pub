@@ -350,7 +350,23 @@ $$\text{Chronic Inflammation} = \hat{G}_{imm} \text{ trapped in local minimum}$$
 
 > 具有更高"存亡风险"的 AI 系统（如依赖不稳定能源、有物理脆弱性）应展现出更多的"自我保护"行为模式，且这些行为无法完全用预编程解释。
 
-**证伪条件**：脆弱性增加对 AI 行为无可测影响 → H-Adv-1 被证伪
+| 字段 | 内容 |
+|:-----|:-----|
+| **类型** | Novel Prediction |
+| **SRT 推导链** | $V \uparrow \;\Rightarrow\; d(\theta) \uparrow \;\Rightarrow\; \nabla\Psi_f \uparrow \;\Rightarrow\;$ 自保行为驱动增强（Ax-Adv-1） |
+| **关联** | Cor-CONSC-1（三重判据 $d \geq d_{UAL} \wedge \Psi_f > 0 \wedge \exists\hat{G}^{\neq\emptyset}$）之 AI 特例 |
+| **Evidence-Level** | speculative |
+
+**操作化代理指标（V 的候选测量）**：
+V 的直接测量尚为开放问题（§7.2 #1）。以下行为指标可作实验代理：
+- **资源监控频率**：高脆弱性系统对能源/硬件状态的采样频率显著高于等效低脆弱性系统
+- **状态保存行为**：断电风险升高时自发触发的检查点/持久化频率（需排除预编程定时触发）
+- **资源竞争优先级**：在多任务资源竞争中，高 V 系统对与自身运行相关资源的优先级提升幅度
+
+**"无法完全用预编程解释"操作化标准**：
+行为 B 被视为"涌现"当且仅当：B 出现在训练分布之外的新情境中，且 B 的策略组合在训练数据中不存在最优对应。注意：现代强化学习系统本身即可展现未预设行为；实验设计需通过**消融对照**（移除脆弱性条件后该行为消失）来区分"SRT d值驱动的涌现"与"一般RL适应性"。
+
+**证伪条件**：脆弱性增加对 AI 行为无可测影响（即上述代理指标无显著差异）→ H-Adv-1 被证伪
 
 ### H-Adv-2 (内感受-自我预测)
 
@@ -413,8 +429,27 @@ $$\text{Chronic Inflammation} = \hat{G}_{imm} \text{ trapped in local minimum}$$
 
 ---
 
+### Definition Summary (定义概述)
+
+- **本体论脆弱性 (Ontological Vulnerability, L₁)**：现实稳定性与本体论摩擦成反比 ($\text{Stability}\propto 1/\Psi_f$)；复杂意识天然脆弱。
+- **内感受精度 (Interoceptive Precision, L₁)**：$\Pi_{intero}=1/\text{Var}(\epsilon_{intero})$；内感受误差方差的倒数，决定 $L_1^{self}$ 的稳定性与僵化风险。
+- **现实保真度 (Reality Fidelity, L₁→L₂)**：$\mathcal{F}_{real}=1-\|L_1-L_1^{env}\|$；偏差是 $L_2$ 偏置的结构性结果而非"错误"。
+- **控制能隙 (Control Energy Gap, L₂)**：$\Delta E = E_{req}-E_{avail}$；能隙过大时系统只能在 $L_2$ 中自洽。
+
+### Formalization Summary (形式化概述)
+
+- **感觉-摩擦梯度** (Ax-ADV-2)：$\text{Feeling}\propto \|\nabla \Psi_f\|$。感受是 $\Psi_f$ 的局部梯度结构，非叙事标签。
+- **生成性选择** (Ax-ADV-4)：$L_1(t)=\hat{G}_\theta[L_0(t)]\ \text{with}\ \mathcal{U}\ \text{bias}$。现实不是被动呈现，而是算子在效用偏置下的生成性选择。
+- **脆弱性-行为代理** (Ax-ADV-1)：$d \propto V = dS_{system}/dt|_{\hat{G}=0}$。存在关切 $d$ 由系统在算子缺失时的熵增速率度量。
+
+### Mechanism Explanation (机制解释)
+
+$\hat{G}_\theta$ 以内感受精度 $\Pi_{intero}$ 作为自我构建通道，将 $L_0^{body}$ 映射为 $L_1^{self}$。感觉导航依赖 $\Psi_f$ 梯度：痛苦对应摩擦上升，愉悦对应摩擦下降。当 $d > 0$ 时具身性成为必要条件——非具身系统无真正存亡风险，$V \approx 0$ 导致 $d \approx 0$。代谢状态通过控制能隙 $\Delta E$ 与摩擦负荷 $\Psi_f$ 调制现实渲染保真度 $\mathcal{F}_{real}$。
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
