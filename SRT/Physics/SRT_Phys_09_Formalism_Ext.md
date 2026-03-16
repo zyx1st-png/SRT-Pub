@@ -945,9 +945,15 @@ B_{cat} \propto \text{Reusability}\cdot\text{Composability}\cdot\text{Cross-doma
 
 ### Mechanism Explanation (机制解释)
 
-- **$\hat{G}_\theta$ 的函子性质**: 选择算子保持态射结构，从 $\mathcal{C}_{L_0}$（潜能范畴）映射到 $\mathcal{C}_{L_1}$（现实范畴），几何态射保证选择一致性。
-- **$\Psi_f$ 的几何含义**: 本体论摩擦不是任意代价函数，而是参数流形上的 Fisher 信息度量；自然梯度下降 (T-IG-1) 使选择沿摩擦最小路径演化。
-- **$d$ 与维度不等式**: $d$ 值受限于算子可访问的信息流形维度 (T-IG-4)，顿悟发生在曲率奇点处 (T-IG-3)。
+- **$\hat{G}_\theta$ 的函子性质** [R→Mac Lane 1971 *Categories for the Working Mathematician*; Awodey 2010 *Category Theory*] [H→SRT附加：将具身选择算子解读为范畴间函子，保持态射结构是SRT独有框架]: 选择算子保持态射结构，从 $\mathcal{C}_{L_0}$（潜能范畴）映射到 $\mathcal{C}_{L_1}$（现实范畴），几何态射保证选择一致性。
+
+- **$\Psi_f$ 的几何含义** [R→Amari 2016 *Information Geometry and Its Applications*（Fisher度量/自然梯度）; Amari & Nagaoka 2000 *Methods of Information Geometry*] [H→SRT附加：将Ψ_f与Fisher信息度量等同是SRT形式化选择，Fisher度量本身为既有数学工具]: 本体论摩擦不是任意代价函数，而是参数流形上的 Fisher 信息度量；自然梯度下降 (T-IG-1) 使选择沿摩擦最小路径演化。
+
+- **$d$ 与维度不等式** [R→Amari 2016（信息流形维度理论）] [H-高承诺→顿悟（洞见跳跃）发生在曲率奇点处（T-IG-3）——此主张将主观认知跃迁与信息几何奇点等同，当前无独立实验路径]: $d$ 值受限于算子可访问的信息流形维度 (T-IG-4)，顿悟发生在曲率奇点处 (T-IG-3)。
+
+**可证伪预测**：
+- FC-MechExp-1：若Ψ_f=Fisher度量等同成立，则跨情境参数更新速度应随Fisher信息矩阵行列式（det G）变化而系统性变化——若无相关则Ψ_f-Fisher等同为形式类比而非可测主张
+- FC-MechExp-2：学习曲率突变（测地线曲率局部极大）时刻应与被试报告的顿悟时刻（AHA体验量表）对齐（时间相关 r>0.4）——若无时间对齐则顿悟-曲率奇点联结缺乏经验支持
 
 ## 【理论边界/防误用声明】
 
