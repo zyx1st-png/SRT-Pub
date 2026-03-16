@@ -321,8 +321,32 @@ $$ \text{Collapse Failure} \iff \hat{G}_θ[L_0] \not\to L_1 $$
 | **病态振荡** | $\hat{G}$ 在两极间快速切换 | 躁郁症、边缘型人格、决策瘫痪 |
 
 ### T-Path-1 [T1.8.1]: Learned Helplessness as Selection Exhaustion (习得性无助即选择机制衰竭)
-$$ \text{Learned Helplessness} = \lim_{n \to \infty} P(\hat{G}_θ \text{ completes collapse at trial } n) \to 0 $$
-系统放弃了从 $L_0$ 中选择 $L_1$ 的尝试。
+
+> [R→Seligman 1975 *Helplessness: On Depression, Development, and Death*（经典习得性无助范式：不可控电击→主动逃避能力丧失→泛化到可控情境）; Abramson, Seligman & Teasdale 1978 *Journal of Abnormal Psychology*（归因重构模型：习得性无助在人类中由内部/稳定/全局归因风格调制）; Maier & Seligman 2016 *Psychological Review*（机制修订：习得性无助实为"被动防御回路获得主控权"而非单纯主动控制能力丧失——背侧缝核5-HT/杏仁核回路）; Yin & Knowlton 2006 *Nature Reviews Neuroscience*（习惯-目标导向双系统：纹状体背侧→目标导向/背侧→习惯，无助对应目标导向系统失活）]
+
+**公式**（精确读法：给定系统仍在尝试，第 $n$ 次试次时 $\hat{G}_\theta$ 完成 $L_0 \to L_1$ 坍缩的条件概率趋零）：
+
+$$\text{Learned Helplessness} = \lim_{n \to \infty} P\!\left(\hat{G}_\theta \text{ completes } L_0{\to}L_1 \text{ at trial } n \,\middle|\, \text{system still tries}\right) \to 0$$
+
+系统放弃了从 $L_0$ 中选择 $L_1$ 的尝试——不是"知道没用"，而是选择算子的完成率在反复失败中衰减至趋零。
+
+* **R/H 区分**：
+  - [R] 习得性无助经典范式（Seligman）及神经机制（Maier：被动防御回路主控权转移/背侧缝核5-HT回路）
+  - [H] **SRT解读**：无助本质是 $\hat{G}_\theta$ 完成坍缩的概率趋零（选择机制衰竭），而非单纯"放弃尝试"；与Maier(2016)的修订对话——被动防御回路激活 ↔ SRT中θ默认锁定于L₂回避锚点，$d$ 值趋零，主动选择窗口关闭
+
+* **机制精化说明（Maier 2016对齐）**：
+  - Maier(2016)发现：习得性无助不是学到了"我没有控制力"，而是原始背侧缝核5-HT回路（被动防御/不动）在前额皮质失控后获得主控权
+  - SRT对应：$\hat{G}_\theta$ 锁定于 L₂ 默认回避锚点（等效于背侧缝核被动防御回路），主动选择 $L_1$ 的能动窗口（$d > 0$）被 $\Psi_f^{escape}$ 驱动关闭
+  - 精度边界：两者方向一致但SRT抽象层更高；神经机制（5-HT/DRN具体通路）需参考Maier原文，SRT不作具体通路主张
+
+* **操作化候选**（选择机制衰竭的可测代理）：
+  - 行为层：逃避尝试率随试次下降的斜率（β < 0），泛化到新情境时主动反应潜伏期（习无组 > 对照组，Cohen's d预期>0.8）
+  - 神经层：前额叶-纹状体（目标导向回路）激活降低（fMRI：vmPFC/dlPFC激活减弱）+ 背侧缝核5-HT活动增加（fMRI信号代理）
+  - SRT层：d值代理——习得性无助状态下，被试在新情境中的探索行为多样性（行为熵）应显著低于对照组
+
+* **可证伪预测**：
+  - FC-Path1-1：在标准化无助范式（不可控噪声/电击后）中，被试在主动可控新任务上的探索率（独立尝试次数/总试次）应显著低于对照组（预测：t检验p<0.05，效应量d>0.5）；若两组探索率无差异，则"选择机制衰竭"主张失败（行为仍在但概率下降应可观测）
+  - FC-Path1-2：如果在无助诱导后提供"元认知重设干预"（告知下一任务完全独立），选择机制衰竭应部分可逆（尝试率部分恢复）；若干预无效则Ĝ_θ衰竭的可逆性主张受损（cf. Abramson归因重构的实证支持）
 
 ### Def-Path-2 [D1.8.2]: Health Criterion (健康判据)
 $$ \text{Health}(\hat{G}) \propto \frac{1}{\sigma^2(\text{Oscillation Period})} $$
