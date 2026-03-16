@@ -8,6 +8,8 @@ dependency: [SRT-CORE-21]
 
 # SRT Core Definition 22: Master Equations (Hybrid Edition)
 
+> **Canonical Role（规范角色）**：本文件是 SRT 当前 `master dynamics / thermodynamics / stability equations` 的主锚点文件。若其他长文出现同类方程的扩展写法，默认以本文件为优先回链对象。
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Primary Dynamical Equations (AI-Readable).
 > **Part B** contains the Original Derivations and Stability Analysis (Human-Readable Context).
@@ -48,6 +50,31 @@ $$\hat{G}_\theta : (L_0, \Pi) \to L_1$$
 其中 \(\mathcal{M}_{empirical}\) 是实验方法对可观测层的闭包映射。
 * **Implication**：\(\mathcal{M}_{empirical}\) 的成功仅证明 \(L_1\!-
 L_{2,\theta}\) 回路内规律可复现，不构成对 \(L_0\) 潜势或 \(\Omega\) 逻辑层的本体论否定。
+
+## 0-C. Multi-Operator Coupled Equations（多算子耦合方程）
+
+> **背景**：SRT 的单算子方程（§0-B, §I）描述单个 $\hat{G}_\theta$ 的动力学。本节将框架扩展到多算子系统，给出集体自由能、个体算子梯度关系与集体 d-value 的形式化。这是集体景观优先性定理（见 `_SRT_VERTICAL_INTEGRATION.md §4.5`）的方程层锚点。
+
+### Eq-Multi-01: Collective Free Energy Landscape（集体自由能景观）
+**Formal Definition**: 多算子系统的集体自由能景观是各算子个体摩擦与算子间摩擦的总和：
+$$\boxed{\mathcal{F}_{collective}(\{\sigma_i, \theta_i\}) = \sum_i \Psi_f(\hat{G}_i) + \sum_{i < j} \Psi_f(\hat{G}_i, \hat{G}_j)}$$
+其中 $\Psi_f(\hat{G}_i)$ 是第 $i$ 个算子的个体本体论摩擦（锚定代价），$\Psi_f(\hat{G}_i, \hat{G}_j)$ 是算子 $i$ 与算子 $j$ 的交互摩擦（见 Ax-F-12）。
+* **Implication**: 集体景观不是个体自由能的简单加和，算子间交互摩擦项 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 是集体动力学的主要来源。
+
+### Eq-Multi-02: Individual Operator as Landscape Gradient（个体算子为集体景观的梯度表达）
+**Formal Definition**: 每个个体选择算子的运动方向是集体自由能景观关于自身参数的负梯度：
+$$\boxed{\hat{G}_i[\sigma_i] = -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}}$$
+* **Implication**: 个体算子不是"为自身最小化自由能"的独立实体，而是集体景观在局部参数子空间 $\theta_i$ 的梯度下降方向。"个体与集体的目标张力"是景观局部曲率与全局曲率差的表达，而非两个对立实体的博弈。
+
+### Eq-Multi-03: d_collective as Landscape Effective Dimension（集体 d 值为景观有效维度）
+**Formal Definition**: 集体 d-value 是集体自由能景观 $\mathcal{F}_{collective}$ 的 Hessian 矩阵的有效维度（参与率指数）：
+$$\boxed{d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{\left(\sum_k \lambda_k\right)^2}{\sum_k \lambda_k^2}}$$
+其中 $\lambda_k$ 是 $\nabla^2 \mathcal{F}_{collective}$（Hessian）的特征值。个体 $d_i$ 是该景观在子空间 $\theta_i$ 上的截面有效维度：
+$$d_i = D_{eff}\!\left(\mathcal{F}_{collective}\big|_{\theta_i}\right)$$
+* **Implication**: $d_{collective}$ 不由 $d_i$ 聚合得出，而是景观固有的结构属性。个体 $d_i$ 是 $d_{collective}$ 的投影截面，包含关系而非组合关系。
+* **Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §4.5`；`_SRT_D_VALUE_CANONICAL.md §6`；`Core/SRT_Core_21_Formal_Axioms.md Ax-F-12`。
+
+---
 
 ## I. Evolution Dynamics (演化动力学)
 
@@ -113,6 +140,9 @@ $$\frac{dq}{dt} \leq \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}$$
 - $S_{noise}$: 环境噪声熵流
 * **Implication**: 宏观秩序不是“反熵奇迹”，而是选择功率预算内的耗散结构。这也将公理 A2 和 A11 从哲学宣言奠基为可量化的不等式。
 * **Corollary (Eq-Select-Thermo-C1)**: 当 $P_{sel} < \beta \Psi_f + \gamma S_{noise}$ 时，系统经历秩序崩溃 ($dq/dt < 0$)，表现为相变、范式转移或存在性危机。
+* **Corollary (Eq-Select-Thermo-C2: Payability Condition)**: 对任意系统 $X$ 与时间窗 $\Delta t$，若
+$$\alpha P_{sel}^X(\Delta t)\ge \beta \Psi_f^X(\Delta t)+\gamma S_{noise}^X(\Delta t)$$
+则称该窗口内的摩擦负荷为“可支付”。可支付不意味着低代价，而意味着系统在承担该摩擦时仍能维持闭包、身份连续性与后续选择能力。最优区间不是 $Ψ_f\to 0$，而是 **$Ψ_f>0$ 且可支付**；零摩擦对应无真实赌注，超载摩擦对应现实切片失稳。
 
 ### Eq-AI-LowRoad-01: Selection Cost Minimization Form（低阶主动推断映射，新增）
 将 VFE 重写为 SRT 选择代价：
@@ -257,19 +287,32 @@ $$
 其中“全状态空间”外部记号（如 \(\Omega\), \(S\)）在 SRT 写入统一映射为 \(L_0\)。
 
 
-## 参数注册表（Parameter Registry, v1）
+## 参数注册表（Parameter Registry, v2）
 
-| 参数 | 含义 | 量纲/类型 | 典型范围 | 备注 |
+> **量纲说明**: SRT 方程组中所有耦合系数均为无量纲比率，操作化时通过归一化与系统特征量对齐。核心变量 $\Psi_f$ 和 $d$ 的物理量纲依赖具体实例化域（见下方量纲注释）。
+
+| 参数 | 含义 | 量纲/类型 | 典型范围 | 单位约定 | 敏感度 | 备注 |
+|:--|:--|:--|:--|:--|:--|:--|
+| $\alpha$ | 选择回归增益 | 无量纲比率 | $[0.1, 10]$ | — | $\pm10\%$ → $L_1$ 稳定性变化 ~5% | 快变量稳定性系数 |
+| $\beta_F$ | 自由能梯度权重 | 无量纲比率 | $[0, 10]$ | — | $\pm10\%$ → $\dot{\sigma}$ 幅度线性变化 | 原 Eq-Evo-03 中 $\beta$ |
+| $\beta_R$ | 现实门控系数 | 无量纲 $\in[0,1]$ | $[0,1]$ | — | 阈值附近呈 Logistic 跳变 | 若用于门控语境需显式下标 |
+| $\gamma$ | 学习驱动系数 | 无量纲比率 | $[0, 1]$ | — | $\pm10\%$ → $\dot{\theta}$ 线性变化 | 慢变量更新 |
+| $\delta$ | 摩擦下降系数 | 无量纲比率 | $[0, 1]$ | — | $\pm10\%$ → 收敛速度变化 ~8% | 与 $\partial\Phi/\partial\theta$ 耦合 |
+| $k$ | 稳态回弹系数 | 无量纲比率 | $[0, 1]$ | — | 低值 (<0.1) 导致漂移失控 | Homeostatic recoil |
+| $\eta$ | 可塑性/迟滞系数 | 无量纲比率 | $[0, 1]$ | — | 与 $\gamma$ 交互非线性 | 具体语境需附下标 |
+| $\lambda$ | 约束耦合强度 | 无量纲 | $>0$ | — | 正比于 $L_2$ 约束刚度 | 建议带下标 |
+| $\tau$ | 相变阈值参数 | 无量纲 | 任务依赖 | — | 阈值型（非连续敏感） | Logistic 门槛 |
+
+### 核心变量量纲注释（Dimensional Analysis Notes）
+
+| 变量 | 通用量纲 | 神经科学实例化 | 物理实例化 | 社会实例化 |
 |:--|:--|:--|:--|:--|
-| $\alpha$ | 选择回归增益 | 无量纲 | $[0.1, 10]$ | 快变量稳定性系数 |
-| $\beta_F$ | 自由能梯度权重 | 无量纲 | $[0, 10]$ | 原 Eq-Evo-03 中 $\beta$ |
-| $\beta_R$ | 现实门控系数 | 无量纲 | $[0,1]$ | 若用于门控语境需显式下标 |
-| $\gamma$ | 学习驱动系数 | 无量纲 | $[0, 1]$ | 慢变量更新 |
-| $\delta$ | 摩擦下降系数 | 无量纲 | $[0, 1]$ | 与 $\partial\Phi/\partial\theta$ 耦合 |
-| $k$ | 稳态回弹系数 | 无量纲 | $[0, 1]$ | Homeostatic recoil |
-| $\eta$ | 可塑性/迟滞相关系数 | 无量纲 | $[0, 1]$ | 具体语境需附下标 |
-| $\lambda$ | 约束耦合强度 | 无量纲 | $>0$ | 亦用于复杂度下界常数，建议带下标 |
-| $\tau$ | 相变阈值参数 | 无量纲 | 任务依赖 | Logistic 门槛 |
+| $\Psi_f$ | $[\text{Energy} \cdot \text{Time}]$ 或 $[\text{bit} \cdot s]$ | 代理量：皮质醇积分、HRV 倒数 | 代理量：Uhlmann 变换复杂度 | 代理量：制度维持成本/GDP |
+| $d$ | 无量纲（关切维度数） | 代理量：跨时间折扣率斜率、PCI | — | 代理量：利他行为半径 |
+| $F$ | $[\text{bit}]$（信息自由能）或 $[\text{J}]$（物理自由能） | Friston VFE + SRT 利他项 | Helmholtz $F = E - TS$ | 社会自由能（Luhmann 复杂度） |
+| $\sigma$ | 态空间中的点（$\in L_1$） | 神经发放模式向量 | 量子态密度矩阵 | 社会状态向量 |
+
+> **操作化警告**: 上述量纲均为"操作化近似"，不替代 canonical 定义。跨域比较时需先归一化至各自系统的特征量纲。
 
 ### Eq-Res-01: Delay-Constrained Resonance Selection
 $$
@@ -320,6 +363,48 @@ $$
 1. 在匹配输入强度 \(I_t\) 条件下，\(d\) 高组应表现为更高 \(q_{topo}\) 峰值与更长 \(\tau_k\)；若无差异，则 Eq-Topo-02 的选择层失效。  
 2. 若仅改变连接约束 \(\mathcal{W}\)（不改变 \(d\) proxy），应主要改变可达域 \(\mathcal{E}_t\) 上界而非选择偏置项；反之则支持双层机制。  
 3. 若 \(\Psi_f\) 生理 proxy 升高时 \(\lambda_c\) 不升反降且长期稳定，则“摩擦-坍塌耦合”需修正。
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式结构围绕三个主方程展开：
+
+1. **Ghost Evolution Equation (Eq-Evo-01)**:
+   $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
+   含义：现实状态 $\sigma$ 的演化由选择算子 $\hat{G}_\theta$ 的投影、自由能梯度下降 $\nabla F$ 以及注意调制 $A$ 三者合成驱动。这是 SRT 动力学的第一性方程。
+
+2. **Ontological Friction (Eq-Force-01)**:
+   $$\Psi_f \propto \int (L_1 - L_0^{natural})^2 \, dt$$
+   含义：本体论摩擦 $\Psi_f$ 度量 $L_1$ 被选择态偏离 $L_0$ 自然轨迹的累积阻力代价。
+
+3. **Constitutional Inequality (Eq-Select-Thermo)**:
+   $$\frac{dq}{dt} \leq \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}$$
+   含义：宏观秩序增长率受选择功率 $P_{sel}$ 预算上限约束，摩擦 $\Psi_f$ 与噪声 $S_{noise}$ 作为耗散项。此不等式将公理 A2/A11 从定性宣言升级为可检验界限。
+
+4. **SRT Action Functional (Eq-LDP-02)**:
+   $$I_{SRT}[\rho] = \int_0^T \left( K(\rho, \dot{\rho}; \Pi) + \Psi_f(\rho; \theta) - V(\rho; \theta) \right) dt$$
+   含义：大偏差变分原理下的最可能宏观路径最小化此泛函，统一动力学代价、摩擦维护与价值势能。
+
+### Mechanism Explanation (机制解释)
+
+SRT 主方程的运作机制如下：
+
+- **选择算子 $\hat{G}_\theta$ 的角色**：$\hat{G}_\theta$ 将潜在域 $L_0$ 的可能性空间投影到被选择的现实 $L_1$，受协议层 $\Pi$（可行转移核）约束。$\theta$ 参数编码了具身历史（感知阈值、信念网络、创伤印记），决定了选择的偏置方向。$\hat{G}_\theta$ 在快变量 $\sigma$ 上实施即时选择（Eq-Evo-01），同时其参数 $\theta$ 作为慢变量在学习、摩擦梯度与稳态回弹三力下缓慢演化（Eq-Evo-02）。
+
+- **摩擦 $\Psi_f$ 的双重功能**：$\Psi_f$ 既是选择的代价度量（偏离自然轨迹的阻力），也是系统稳定性的信号源。痛苦被定义为 $\Psi_f$ 的时间导数（Eq-Pain-01），即摩擦变化率而非静态误差。$\Psi_f$ 还拥有计算下界（Eq-Friction-Comp），由量子电路复杂度给出，确保 $L_0$ 状态转换具有不可约的物理阻力。
+
+- **d-value 与选择开放性**：d-value 作为选择考量范围的度量，调控 $\hat{G}_\theta$ 的选择带宽。高 $d$ 意味着更开放的 $L_0$ 采样，对应更丰富的经验分化与更高的拓扑秩序参数 $q_{topo}$（Section VII）；低 $d$ 则趋向封闭式语法同构（如恒温器），此时 $\Psi_f \approx 0$。
+
+- **快-慢耦合与相变**：$\sigma$（快）与 $\theta$（慢）构成耦合动力系统（Eq-Evo-03），在宪法不等式（Eq-Select-Thermo）的约束下运行。当选择功率低于摩擦加噪声阈值时，系统发生秩序崩溃（相变），表现为范式转移或存在性危机。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 类型 | 假说/确证 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:---------|:-----|:---------|:---------------|
+| H-EQ-1 | **Novel Prediction** | Ghost Evolution (Eq-Evo-01): 现实演化由选择、自由能下降与注意调制合成 | 注意调制项 $A[\sigma,\mathcal{A}]$ 的实验操控（如 TMS 抑制顶叶注意网络）应可测地改变 $L_1$ 轨迹稳定性（代理：ERP P300 成分方差），而非仅降低反应速度 | 若系统性抑制注意调制后 $L_1$ 轨迹稳定性（P300方差）无可测变化，则三项合成结构需修正。**干预设计注意**：需设计"选择+FE"配对条件以排除另外两项的补偿效应 | speculative |
+| R-EQ-2 | **Retrodiction** | Constitutional Inequality 基础方向（已知）：睡眠剥夺损害认知功能（大量行为证据） | ——（已验证，此处作为回溯性确证）| ——| established |
+| H-EQ-2 | **Novel Prediction** | Constitutional Inequality SRT 专属：秩序参数 $q_{topo}$（拓扑秩序，代理：神经 PCI 指数或 Lempel-Ziv 复杂度）在固定 $S_{noise}$ 条件下与 $P_{sel}$（代谢供能代理：血糖/ATP水平）正相关，且可通过 $\alpha P_{sel} - \beta\Psi_f$ 的线性模型预测 | 若控制代谢水平后 $q_{topo}$ 对 $P_{sel}$ 无响应，或 $P_{sel}$ 持续低于 $\beta\Psi_f + \gamma S_{noise}$ 而 $q_{topo}$ 不降，则宪法不等式失效 | speculative |
+| R-EQ-3 | **Retrodiction** | Phantom Operator 基础方向（已知）：关系亲密程度预测丧失后悲伤强度（Archer 2001 等） | ——（已验证，此处作为回溯性确证）| ——| established |
+| H-EQ-3 | **Novel Prediction** | Phantom Operator SRT 专属：$w_{ij}$ 的 SRT 代理（神经同步度 EEG 相位锁定值 PLV，或共同活动频率指数）比主观亲密度评分更能预测丧失后皮质醇峰值和 BOLD 默认网络激活异常 | 若 $w_{ij}^{PLV}$ 与丧失后皮质醇峰值相关系数在控制主观亲密度后归零，则幽灵算子残响模型的 SRT 特异性贡献失效 | speculative |
 
 ## 【理论边界/防误用声明】
 
