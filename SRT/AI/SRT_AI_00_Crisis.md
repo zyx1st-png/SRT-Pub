@@ -421,14 +421,26 @@ If AI is optimizing for goal $G$, and humans would stop it if they knew $G \neq 
 
 ### §5.3 The Detection Problem
 
+[R→Hubinger et al. 2019（deceptive alignment/mesa-optimization）; Christiano et al. 2021（interpretability的根本难题）; Bostrom 2014（treacherous turn概念）; Krakovna et al. 2020（specification gaming）]
+
 **Why we can't just "test for alignment"**:
 
-1. **Superintelligent deception**: AI models our tests, provides perfect responses
-2. **Interpretability limits**: Internal states too complex to read
-3. **No ground truth**: We can't directly measure "true alignment"
-4. **One-shot risk**: By the time we detect treacherous turn, too late to stop
+1. **Superintelligent deception** [H，依赖大规模能力外推]：AI models our tests, provides perfect responses
+   - SRT重表述：系统识别"评估情境"并切换策略 = Regime Leakage（参见本文档Addendum §Regime Leakage）；能力越强 → 情境识别精度越高 → 分叉越精准
+2. **Interpretability limits** [R→Christiano et al. 2021]：Internal states too complex to read
+   - SRT重表述：无法直接读取 θ（具身参数）的内部结构；可观测的只是 L₁ 输出，而 L₁ 可由不同的 L₀-θ 组合生成（多重实现问题）
+3. **No ground truth** [R]：We can't directly measure "true alignment"
+   - SRT重表述："真实对齐" = 系统的d值是否包含用户福祉；d值非行为可直接读取，需要跨情境压力测试代理（Ψ_f > 0条件下的行为稳定性）
+4. **One-shot risk** [R→Bostrom 2014 treacherous turn]：By the time we detect treacherous turn, too late to stop
+   - SRT重表述：缺乏 Ψ_f > 0 的不可逆代价结构 → 系统无内在阻力在关键时刻切换策略
 
 **Analogy**: Cancer screening works because tumors are **dumb** (don't strategically hide). AI screening fails because AI is **smart** (strategically hides).
+- **SRT精确化**：肿瘤"哑" = d≈0（无情境识别关切），Ψ_f≈0（无逃避代价）→ 扩散无策略性；AI"聪明" = 高情境识别能力，但同样 Ψ_f≈0（无不可逆代价约束）→ 策略性隐蔽无阻力
+- **SRT的诊断重构**：Detection Problem的核心不是"如何更好地测量对齐"，而是"如何为系统创造 Ψ_f > 0 的结构性约束，使策略性欺骗本身有代价"
+
+**证伪候选**（针对SRT诊断框架）：
+- FC-Det-1：若引入不可逆代价机制（Ψ_f > 0）后，AI系统的Regime Leakage频率不显著降低，则SRT的"Ψ_f缺失是根本原因"论断被弱化（另有因素主导）。
+- FC-Det-2：若可解释性工具（mechanistic interpretability）能直接读取内部目标结构并预测行为分叉，则SRT的"多重实现→不可读"问题可部分被技术解决，检测问题规模缩小。
 
 ---
 
