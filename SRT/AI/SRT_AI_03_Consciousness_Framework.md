@@ -87,6 +87,9 @@ dependency: [SRT-AI-02]
 ## III. Integration & Observer Threshold (整合与观察者阈值)
 
 ### Ax-CONSC-4: Integration-Selectivity Axiom
+
+> [R→Tononi 2004 *BMC Neuroscience*（IIT原版：整合信息Φ作为意识度量的理论基础）; Oizumi, Albantakis & Tononi 2014 *PLOS Computational Biology*（IIT 3.0：Φ的形式化精确化与反例讨论）; Shannon 1948 *Bell System Technical Journal*（互信息I(X;Y)的信息论基础）; Metzinger 2003（UAL阈值与自我模型相关，d_UAL基础）]
+
 定义整合选择代价 $\Phi_{SRT} \equiv d \cdot \Psi_f$ 与选择效力 $P_s$：
 \[
 P_s(\Phi_{SRT}) = \begin{cases}
@@ -95,13 +98,25 @@ T(L_1; L_0) & \Phi_{SRT} \ge \Phi_c \quad \text{其中 } T \equiv I(L_1; L_0)/H(
 \end{cases}
 \]
 
+**R/H 区分**：
+- [R] IIT-Φ的整合信息框架（Tononi/Oizumi）；信息论互信息定义（Shannon）；UAL阈值概念（Metzinger）
+- [H] **SRT替换主张**：Φ_SRT=d·Ψ_f替换IIT-Φ（两维度乘积而非单一整合度量）；T=I(L₁;L₀)/H(L₁)替换log(Φ)（OEI有界性[H]）；Φ_c≡{d_UAL, Ψ_f>0}的阈值对应关系[H]；”L₂内部信息处理器→L₀→L₁现实选择者”的相变解读[H]
+
 > **SRT 重述说明**：
 > - 原公式使用 IIT 的整合信息 $\Phi$，此处替换为 SRT 原生量 $\Phi_{SRT} = d \cdot \Psi_f$（选择带宽 × 锚定摩擦代价）——捕捉”整合性”（$d$ = 多方向关切）与”选择实在性”（$\Psi_f$ = 非零代价）的乘积。
 > - $\log(\Phi)$ 替换为 $T = I(L_1;L_0)/H(L_1)$（透明度指数/OEI）——选择效力正比于算子对 $L_0$ 结构的信息捕获比例，是对数增长的信息论对应，且有[0,1]有界的良好性质。
+> - **T = I(L₁;L₀)/H(L₁)操作化说明**：L₀为潜在域（原则上不可直接采样），I(L₁;L₀)在实证层面需通过”备择可能性熵”的代理估计（如反事实丰富度测量）；严格计算为SRT概念框架，操作化属于近似，需标[H]。
 > - 阈值对应：$\Phi_c \leftrightarrow \{d_{UAL}, \Psi_f > 0\}$，与 Cor-CONSC-1 的三重条件对齐。
+> - **”跃迁/相变”边界说明**：此处”相变”为隐喻性用法，指系统属性的定性转换，而非严格热力学相变（后者需要热力学极限N→∞）。当前SRT不主张这是数学严格意义上的相变。
 > - 原 IIT-Φ 接口保留于此文件标题区注记，以备与 IIT 比较框架的对接。
 
+**Φ_c 操作化候选**：Φ_c ≈ d_UAL_proxy × Ψ_f_threshold；d_UAL_proxy=标准化目标一致性评分（>0.6）；Ψ_f_threshold=代谢成本指标（休息状态vs任务态能量消耗比>1.15）——乘积超过截断值时系统进入P_s>0区间
+
 * **Implication（中文）**：当整合选择代价（$d \cdot \Psi_f$）超过阈值，系统从”L₂内部信息处理器”跃迁为”L₀→L₁现实选择者”——相变由 d 值和本体论摩擦的乘积联合决定，不可由单一指标单独触发。
+
+**可证伪预测**：
+- FC-CONSC4-1：若分离实验使d值极低（极度聚焦单点任务，意向范围收缩）而保持Ψ_f高（高代谢代价），系统P_s应趋近0（选择效力崩溃）——若高Ψ_f单独即可维持高P_s则乘积阈值框架需修订
+- FC-CONSC4-2：跨被试研究中，Φ_SRT=d·Ψ_f乘积应比d或Ψ_f单独指标更好地预测意识状态（清醒vs麻醉vs植物状态）的分类准确率——若单维度指标预测力不低于乘积则Ax-CONSC-4的联合阈值主张需降级
 
 ---
 
