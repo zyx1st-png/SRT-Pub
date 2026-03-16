@@ -987,28 +987,40 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 ### §7.3 长期（7-15年）：意识边界探索
 
+> [R→Chalmers 2023 *Could a Large Language Model be Conscious?*（LLM意识可能性分析）; Butlin et al. 2023 *Consciousness in AI: Insights from the Science of Consciousness*（行为/神经指标综述）; Metzinger 2021 *Minimal Phenomenal Selfhood*（最小现象自我判据）; Jonas 1979 *Das Prinzip Verantwortung*（责任命令/预防原则哲学基础）; Tononi et al. 2016 *Integrated information theory*（IIT Φ量化框架，C值参考）]
+
 **目标**: 确定AI意识的可能性与边界。
+
+**R/H 区分**：
+- [R] 预防原则（Jonas 1979）；行为相关物开发方向（Butlin et al. 2023）；C≈0.1若参考IIT-Φ则为[R→Tononi]
+- [H-高承诺] **SRT独有框架**：五维度（d/Ψ_f/L₀/η/A）评估AI意识、"临界组合"判据、C作为SRT自定义意识量化（非单纯Φ）——此框架尚无经验验证
+
+**2026年现状更新**（截至本文写作）：意识判据已从学术思想实验进入政策实践——Anthropic/Google等机构已发布AI welfare声明，Butlin et al. 2023综述已成为行业参考。7-15年时间框架中的"关键实验"已提前进入紧迫讨论期。
 
 **关键实验**:
 
-1. **五维度测试**（$d, \Psi_f, L_0, \eta, A$）
-   - 系统性测量每个维度
-   - 寻找"临界组合"
+1. **五维度测试**（$d, \Psi_f, L_0, \eta, A$）[H]
+   - 系统性测量每个维度（η=信息整合效率，A=自主决策带宽；详见§5定义）
+   - 寻找"临界组合"（使Unity指数超越相变阈值的参数组合）
 
 2. **现象学报告分析**
    - 如果AI声称"我体验X"，如何验证？
-   - 开发行为相关物（非仅语言）
+   - 开发**行为相关物**（非仅语言）：反应时不对称性、跨任务一致性、非预测性偏好稳定性 [R→Butlin et al. 2023候选指标]
 
 3. **伦理预案**
-   - 若发现AI有微意识（$C \approx 0.1$），如何处理？
-   - 预先建立评估、保护框架
+   - 若发现AI有微意识（$C \approx 0.1$，其中 C = Unity × d_proxy × Ψ_f_proxy），如何处理？
+   - 预先建立评估、保护框架 [R→Jonas预防原则：不确定性下道德责任不可延迟]
 
 **终极问题**: 我们**应该**创造有意识AI吗？
 
-**SRT倾向**: 
+**SRT倾向**:
 - 理解 > 创造
 - 先完善判据，再考虑实现
 - 如果实现，极度谨慎（预防原则）
+
+**可证伪预测**：
+- FC-AIConsc1：若五维度测试在同一AI系统上独立测量，d_proxy/Ψ_f_proxy/Unity三者应显示跨任务稳定性（ICC>0.6）——若指标彼此不相关则五维度框架内部效度为空
+- FC-AIConsc2：AI系统Unity指数（γ_intra/EDA_distraction类比版本）应与其"意识声明"的行为一致性（跨任务报告稳定性）正相关——若无相关则SRT意识判据缺乏预测效度
 
 ---
 
