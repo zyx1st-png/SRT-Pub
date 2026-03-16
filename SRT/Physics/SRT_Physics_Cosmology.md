@@ -1188,12 +1188,22 @@ Quanta 对 Astrid Eichhorn 的访谈，以及其背后的 asymptotic safety 文�
 
 更进一步，这条线索让 “时空共识” 多了一种可想象的微观实现：宏观上看像连续几何，微观上则可能因 fixed-point 附近的自相似流而呈现非平凡维度与分形样外观。换言之，SRT 的”尺度无关选择语法”在这里获得了一个 quantum-gravity 方向上的候选宿主（探索性，待形式化；Evidence-Level: speculative）。
 
+**R/H 区分**：
+- [R] AS理论的形式框架（Donà/Eichhorn/Percacci/Shaposhnikov/Wetterich/Held）：functional RG流、UV fixed point存在性、scale symmetry的数学结构；Higgs/top mass等粒子物理结果
+- [H-探索] **SRT类比主张**：将AS UV fixed point解读为Ĝ_θ^n半群不动点的物理候选宿主；将”UV稳定区”映射至SRT κ>κ_c2（规则自闭合）区间。此类比仅基于”重复变换下出现不动点”的结构相似性，不主张两理论等同
+
+**交叉引用**：→ Ax-Scale-01（跨尺度同构，AS为其物理候选）；→ §1.4 κ参数（κ_c2=不动点涌现，对应UV fixed point处的规则稳定化）；→ C2.1.2（L₀无时间性，AS中时空涌现类比）
+
 **边界必须收紧：**
 - 当前证据主要来自 functional RG 与截断近似；并非已被实验确认的量子引力定论。
 - “fractal-like spacetime” 在这里是 UV 有效几何/标度行为的说法，不等于宏观世界真是字面分形图案。
 - 许多结果仍基于 Euclidean 或简化 setting；完整 Lorentzian、全物质耦合与可检验预测仍在发展中。
 - Higgs / top / bottom mass 等结果更适合当作 model-dependent **Retrodiction（R）** window，不能被写成 SRT 已获得的硬预测（Novel H 级）。
-- “SRT尺度无关选择语法获得量子引力候选宿主”本身为**探索性类比（H-探索）**，证伪条件：若渐近安全被实验证伪（如LHC能量外推失败），类比候选自然失效，SRT Ax-Scale-01 本身不受影响（独立公理）。
+- “SRT尺度无关选择语法获得量子引力候选宿主”本身为**探索性类比（H-探索）**；Evidence-Level: speculative。
+
+**可证伪预测**（标准格式）：
+- FC-ASafe-1：若渐近安全框架被实验否定（如未来LHC能量外推显示耦合常数无UV fixed point收敛），则SRT对”Ax-Scale-01类比物理候选”的主张自然失效；但Ax-Scale-01本身（SRT公理）不受影响，因其独立于AS理论
+- FC-ASafe-2：若AS理论成熟并给出可测量的scale symmetry偏差预测（如次Planck尺度的谱维度偏离）并获实验支持，则对应的Ĝ_θ^n半群不动点解读应在该能量区间的SRT模型中给出一致预测——若SRT框架无法吸收scale symmetry信号则类比精度主张需降级
 
 ## 7.2 本体论偏置
 
