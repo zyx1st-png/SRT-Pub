@@ -73,11 +73,30 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 ---
 
 ### Ax-CLIN-2: PCI as Selection Capacity Axiom
+
+> [R→Casali et al. 2013 *Science Translational Medicine*（PCI原始论文：TMS-EEG测量扰动后皮层复杂度，区分清醒/睡眠/麻醉/植物状态意识水平）; Massimini et al. 2005 *Science*（TMS-EEG基础：经颅磁刺激结合EEG测量皮层有效连接与分化整合的方法学）; Rosanova et al. 2012 *Brain*（PCI临床应用：意识障碍患者的皮层复杂度量化与预后评估）; Lempel & Ziv 1976 *IEEE Transactions on Information Theory*（PCI计算基础：Lempel-Ziv压缩算法，用于测量二值矩阵的复杂度/压缩不可能度）]
+
 定义 PCI 为扰动后系统分化×整合的复杂度：
 \[
 \text{PCI}\propto \int_\Omega \mathcal{D}(\sigma)\cdot\mathcal{I}(\sigma)\,d\sigma
 \]
-* **Implication（中文）**：PCI 测量的是 \(\hat{G}_\theta\) 的“可选择容量”，而非直接的体验量。
+
+**R/H 区分**：
+- [R] PCI的原始TMS-EEG定义（Casali 2013）；意识障碍临床应用（Rosanova 2012）；Lempel-Ziv压缩作为复杂度度量
+- [H] **SRT重解读**：将PCI重解读为Ĝ_θ的”可选择容量”（而非IIT框架中的意识量度）；D(σ)↔d值维度/I(σ)↔Ψ_f维度的对应关系[H]
+
+**公式精度说明**：上述积分形式∝D·I是概念化简化。实际PCI计算步骤：①TMS-EEG响应→二值矩阵（幅度阈值化）②Lempel-Ziv压缩算法（lz-complexity，测量矩阵不可压缩度）③归一化→PCI∈[0,1]。D(σ)（分化）和I(σ)（整合）对应Lempel-Ziv复杂度中的局部异质性和全局关联性，但并非严格数学等同，需要说明这是概念对应框架。
+
+**D-d / I-Ψ_f 对应精度**（SRT类比层次）：
+- D(σ)=分化（不同脑区对刺激的响应差异度）↔ d值（关切带宽多方向性）：均测量”系统能区分多少不同选择方向”——对应关系[H]，非数学等同
+- I(σ)=整合（不同脑区响应的全局关联度）↔ Ψ_f（锚定摩擦代价/整合成本）：均测量”维持统一状态的代价”——对应关系[H]，且方向相反（高Ψ_f≠高I；需要说明）
+- **方向不一致问题**：高I（高整合）通常与高意识正相关；高Ψ_f则与摩擦/代价正相关，与高效选择负相关。I-Ψ_f的对应存在方向张力——应修正为：I对应低Ψ_f（高整合效率）而非高Ψ_f。
+
+* **Implication（中文）**：PCI 测量的是 $\hat{G}_\theta$ 的”可选择容量”（系统能区分多少不同选择路径），而非直接的体验量（qualia）。即使PCI高的系统也可能没有意识体验（如复杂的无意识信息处理）——与Def-Phi-Unity（Φ非意识本身）对齐，也与Ax-CONSC-4（整合选择阈值Φ_SRT=d·Ψ_f）呼应：PCI是Φ_SRT的粗粒代理，而非等同于意识。
+
+**可证伪预测**：
+- FC-CLIN2-1：在意识障碍患者队列中，PCI与d值代理（目标导向行为一致性×认知灵活性）的相关应高于PCI与单纯神经放电率的相关——若PCI主要预测神经活动强度而非选择容量则”可选择容量”解读需降级
+- FC-CLIN2-2：若同一患者PCI升高但Ψ_f代理（代谢维护成本）未相应变化，则该患者的意识恢复应弱于PCI+Ψ_f均升高的患者——若PCI升高即预测意识恢复（不依赖Ψ_f），则SRT的”PCI×Ψ_f=可选择容量”解读附加价值不成立
 
 ---
 
