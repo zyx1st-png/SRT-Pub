@@ -111,9 +111,23 @@ $$ w_{L_2} \uparrow \Rightarrow \text{Conflict} \uparrow,\; \text{Adaptability} 
 * **Implication**: 规范僵化是冲突的可测结构根因。
 
 ### Cor-Prax-H3: Ox-Herding Phase Markers
+
+**[H — Novel Prediction：十牛图阶段→神经行为标记的跨域映射，尚无系统性实证]**
+
 **Prediction**: Ox-herding phases map onto neural and behavioral markers (DMN, PCI, prosociality).
-$$ \text{Phase} \leftrightarrow \{\text{DMN},\text{PCI},\text{Prosociality}\} $$
+$$ \text{Phase}_k \leftrightarrow \{f_k(\text{DMN}),\; \text{PCI}_k,\; \text{Prosociality}_k\} $$
 * **Implication**: 十牛图模型具有可证伪的生理与行为对应。
+
+**非单调DMN注**：DMN活动在十牛图阶段中呈非单调轨迹——早期专注阶段（phase 1-4，寻牛/见迹/见牛/得牛）DMN抑制增强；开放监控/整合阶段（phase 7-10，忘牛/人牛俱忘/返本还源/入廛垂手）DMN可能部分回升（整合性自我参照，而非杂念）。预测方向需按阶段细化，而非单调递减假设。
+
+**SRT d值对应（初步框架）**：
+| 十牛图区间 | SRT 阶段描述 | $d$ 值估计 | PCI 趋势 |
+|:--|:--|:--|:--|
+| Phase 1-3（寻牛→见迹→见牛） | L₁稳定化开始，θ整合加速 | $d > d_{UAL}$（基线以上，波动） | 上升 |
+| Phase 4-6（得牛→牧牛→骑牛归家） | $\hat{G}_\theta$ 选择稳定，L₂锚定弱化 | $d$ 扩展（方向性增强） | 较高平台 |
+| Phase 7-10（忘牛→人牛俱忘→返本→入廛） | L₂压力自主解除，Ψ_f→0，d扩展至社会层 | $d$ 高且向外延展 | 维持高位 |
+
+**证伪条件**：① 若在高阶修行者中PCI不高于对照组（或无统计显著差异），则PCI作为阶段标记无效；② 若DMN轨迹在所有阶段单调递减，则非单调预测被证伪；③ 若各阶段的亲社会行为（经济博弈/合作测试）无阶段效应，则行为标记映射失效。→ Cross-ref: Massimini et al. PCI 文献；Hasenkamp & Barsalou 2012 (DMN in meditation)。
 
 <br>
 
