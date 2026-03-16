@@ -852,11 +852,20 @@ L_{1,\mathrm{disc}}
 含义是：`L_0` 提供连续的响应潜能，`L_2` 提供允许哪些模态稳定存在的协议，`\hat G` 在其中切出可绑定、可维持、可支付的离散现实模态；离散性因此不是“凭空断裂”，而是连续潜在介质在约束协议下形成的稳定选择谱。
 
 ### Cor-Quant-Cos-DVQ-1: Protocol Shift Implies Spectral Drift
+
+**[H — 基于摘要的SRT形式化推断（见Lineage）；R — 与isotope shifts/Stark/Zeeman对齐为追溯验证]**
+
 若约束协议改变，则被稳定选出的模态族应同步漂移：
 \[
 \Delta L_2^{vac}\neq 0\Rightarrow \Delta \mathrm{Spec}_{obs}\neq 0
 \]
 在该论文摘要语境下，这与 isotope shifts 及 symmetry-respecting Stark/Zeeman analogues 的方向相兼容。
+
+**ΔL₂^vac 操作化候选**：真空约束协议的"改变"在以下物理条件下发生：① 外加电场/磁场（Stark/Zeeman效应：场改变边界条件→L₂协议改变→谱线漂移）；② 同位素替换（质量参数→共振频率→可绑定模态集改变，即核质量改变L₂中的共振约束条件）；③ 压力/密度变化（边界几何→L₂硬化度变化）。
+
+**同位素移位的SRT对应**：在SRT中，同位素替换对应 L₂^{vac} 中质量参数 $m$ 的变化：$\Delta m \neq 0 \Rightarrow \Psi_f^{bind}(\phi_n | L_2^{vac}(m))$ 条件改变 $\Rightarrow$ 可被选出的 $\phi_n$ 集合漂移 $\Rightarrow \Delta \mathrm{Spec}_{obs}$。质量改变改变了"哪些模态能以可支付代价被绑定"的筛选函数。
+
+**证伪条件**：若在受控实验中改变已知的物理约束参数（如施加强外场），观测谱线不发生预期方向的漂移（或漂移量与L₂协议变化不相关），则本推论在此条件下失效；若某类约束变化（ΔL₂^vac）引起谱漂移反向（Spec_obs向更窄而非随协议变化），则筛选机制需修订。
 
 ### [Lineage/Source]
 - Harold White, Jerry Vera, Andre Sylvester, and Leonard Dudzinski, *Emergent quantization from a dynamic vacuum*, Physical Review Research 8, 013264 (2026), DOI: `10.1103/l8y7-r3rm`.
