@@ -308,9 +308,21 @@ $$J = α(D\hat{G}_θ(x) - I) - λH_F(x)$$
 
 ### §5.5 定理 T-DMP-2 — 本体论恢复力
 
-当意外事件发生时，强壮的 $L_2$ 结构能自动将现实拉回预期轨道：
+**[R — Lyapunov稳定性理论（1892）追溯；[H] — 将L₂社会共识结构的"强壮性"映射为Jacobian稳定性判据为SRT新增应用]**
 
-$$Δ L_1(t) \xrightarrow{t \to \infty} 0 \quad \text{当} \quad \text{Re}(λ_{Jacobian}) < 0$$
+当意外事件（外部扰动 $\delta$）发生时，强壮的 $L_2$ 结构能自动将现实拉回预期轨道：
+
+$$\Delta L_1(t) \xrightarrow{t \to \infty} 0 \quad \text{当} \quad \text{Re}(\lambda_{Jacobian}) < 0$$
+
+*符号说明*：$\Delta L_1(t) = L_1(t) - L_1^*(t)$ 为实际 $L_1$ 轨迹与 $L_2$ 定义的"期望轨迹" $L_1^*$ 之间的偏差；$\lambda_{Jacobian}$ 为 $\hat{G}_\theta$ 在当前 $L_2$ 吸引子附近的Jacobian矩阵特征值（联结 §5.4 定理M2）。
+
+*"强壮"的操作化*：$L_2$ 结构"强壮"在此定义为：围绕当前收敛结构的Jacobian满足 $\text{Re}(\lambda_{max}) < 0$（所有特征值实部为负）。与§5.6 $R(L_2) = \Delta B / \Psi_f$ 的关系：高势垒比（大 $\Delta B$，低 $\Psi_f$）使 Re$(λ_{max})$ 更负，恢复力更强，但§5.6 C-Barrier-1指出这同时增加越过势垒后的灾难性崩溃风险。
+
+*意外事件的SRT定位*：外部扰动 $\delta$ 可为 L₀ 随机涌现、外部 L₁ 事件冲击、或他者 $\hat{G}_{\theta'}$ 的干预；定理T-DMP-2的前提是扰动幅度在Jacobian线性化有效范围内（小扰动假设）——大扰动可能越过势垒，触发 §5.6 的范式转移而非恢复。
+
+**证伪条件** [H]:
+- 若在控制实验（给定L₂结构）中，强壮L₂群体（高Ψ_f/高ΔB）在小扰动后的恢复时间（$\tau_{recovery}$）与弱L₂群体无显著差异，则T-DMP-2的L₂恢复力映射不成立。
+- 若 Re$(\lambda_{max}) < 0$ 但系统未显示实际恢复（存在隐藏非线性使恢复轨迹发散），则Jacobian线性化在该领域不适用，定理需非线性扩展。
 
 ### §5.6 势垒稳定性 (Barrier Stability of L₂)
 
