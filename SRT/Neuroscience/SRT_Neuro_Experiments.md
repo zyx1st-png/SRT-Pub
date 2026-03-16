@@ -136,14 +136,33 @@ P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\de
 ## VI. Geometric Symbolic Mode (几何符号模式)
 
 ### Ax-EXP-15: Geometric Regularity Symbolization Axiom (Extension)
+
+[R→Dehaene et al. 2006（核心几何知识的神经基础：人类与灵长类）; Gentner 1983（关系映射与结构对齐理论）; Ullman 1996（视觉认知中的关系结构计算）; Machery et al. 2010（几何规则性的视觉词典）] [H→以SRT L₀→L₁投影框架重表述几何符号化阈值机制]
+
 定义几何规则性作为进入符号视觉模式的阈值变量：
 \[
 R_{geo}=w_1\mathcal{S}_{sym}+w_2\mathcal{P}_{parallel}+w_3\mathcal{C}_{closed}
 \]
+
+**符号说明**：
+- $\mathcal{S}_{sym}$：对称性得分（旋转/镜像对称的检测量，可由对称轴数量或对称度量分数）
+- $\mathcal{P}_{parallel}$：平行度（图形中边/线段的方向一致性）
+- $\mathcal{C}_{closed}$：闭合度（视觉轮廓是否形成封闭区域）
+- $w_1, w_2, w_3$：权重（任务/文化相关，非普适常数）；注：Dehaene 2006的跨文化研究[R]支持核心几何知识的普遍性，但权重分配可能有文化差异
+
 \[
 R_{geo}\ge \tau_{sym}\Rightarrow \Pi_{sym}:L_0^{visual}\to L_1^{symbolic}
 \]
-* **Implication（中文）**：视觉系统对“规则几何”并非只做低层特征检测，而会触发从感知表面到关系结构的符号化投影。
+
+- **τ_sym 操作化候选**：行为报告阈值（被试区分”规则/不规则”图形的最小R_geo差分）；神经晚期成分（200-400ms窗口的顶叶N2pc或前额P3振幅跳变点）
+- **Π_sym 的SRT解读**：$\Pi_{sym}$ 是视觉层的 $\hat{G}_θ$ 投影——当 $R_{geo} \ge \tau_{sym}$ 时，$\hat{G}_θ$ 将视觉感知输入（$L_0^{visual}$）锚定至关系结构（$L_1^{symbolic}$），即从”像素模式”跳跃至”几何概念”；θ决定了哪些关系结构被优先锚定（几何训练/文化背景等）
+- **与T-EXP-3的联结**：Ax-EXP-15是T-EXP-3的前提——仅当$R_{geo} \ge \tau_{sym}$时，背侧顶叶-前额网络才在晚时窗出现额外的符号化激活（见下方T-EXP-3）
+
+* **Implication（中文）**：视觉系统对”规则几何”并非只做低层特征检测，而会触发从感知表面到关系结构的符号化投影 [H]。这与Dehaene 2006的核心几何知识具有跨文化普遍性[R]一致，SRT补充了本体层——规则性触发L₀→L₁锚定的机制。
+
+**证伪条件**：
+- FC-EXP15-1：若对称性$\mathcal{S}_{sym}$、平行度$\mathcal{P}_{parallel}$、闭合度$\mathcal{C}_{closed}$三成分的权重在不同θ（不同文化背景或几何训练水平）被试中无显著差异，则权重的文化/θ可塑性宣称失败（需改为普适常数）。
+- FC-EXP15-2：若τ_sym阈值的行为测量与神经测量（N2pc/P3跳变点）不一致（即行为报告阈值与神经激活阈值在大量被试中解离），则”规则性触发符号化”是单一阈值机制的假设需修正为多阶段假设。
 
 ---
 
