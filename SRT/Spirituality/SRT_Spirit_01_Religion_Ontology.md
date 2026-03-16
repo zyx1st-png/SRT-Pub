@@ -120,19 +120,39 @@ $$ T \uparrow \Rightarrow \bar{\Psi}_f \downarrow \Rightarrow R_{accessible} \up
 ## IV. Experimental & Praxis Predictions (实验与实践预测)
 
 ### Cor-Spirit-H1: Self-Boundary Dissolution (H-Spirit-1)
-**Prediction**: As $d\uparrow$ during deep prayer/meditation, spatial-boundary processing is suppressed.
+
+[R→Newberg & Waldman 2009（祈祷/冥想中顶叶OAA激活抑制）; Qin & Northoff 2011（自我边界与默认网络）; Josipovic 2014（非双元冥想与前额网络）] [H→d值↑→自我边界消融，SRT独特预测]
+
+**Prediction** [H]: As $d\uparrow$ during deep prayer/meditation, spatial-boundary processing is suppressed.
 $$ B_{self} \propto \frac{1}{d},\quad d \uparrow \Rightarrow B_{self} \downarrow $$
 * **Implication**: 顶叶空间定位相关区（OAA）抑制是可预测结果。
+* **操作化**：d proxy = 自报关切范围（问卷）/ 注意力带宽测试；B_self代理 = OAA（顶上小叶）fMRI激活水平 / 橡皮手错觉阈值
+* **证伪条件**：若冥想深度（θ稳定化）增加但OAA抑制无对应变化，则H1失败。
 
 ### Cor-Spirit-H2: Icon Transparency (H-Spirit-2)
-**Prediction**: Eye-movement and visual depth differ between icon and idol due to transparency $T$.
+
+[R→Florensky 1922（《圣像学》：圣像的透明性神学理论）; Ouspensky & Lossky 1982（东正教圣像神学）; Yarbus 1967（眼动与视觉理解）; Vessel et al. 2012（美学体验中的默认网络激活）] [H→SRT将透明性T形式化为Ĝ_θ的L₀穿透能力]
+
+**Prediction** [H]: Eye-movement and visual depth differ between icon and idol due to transparency $T$.
 $$ T_{icon} > T_{idol} \Rightarrow \text{Depth}_{processing}^{icon} > \text{Depth}_{processing}^{idol} $$
+
+- **T（透明性）的SRT定义**：圣像（icon）的透明性 = 图像作为 L₁ 媒介时，$\hat{G}_θ$ 穿透图像本身直接投向 L₀（或所指向的"神圣现实"）的程度；偶像（idol）将 L₁ 图像自身作为关切终点（L₁ 封闭）；圣像将 L₁ 图像作为 L₀ 通道（L₁ 透明）
+- **T_icon 操作化候选**：
+  - 眼动深度：圣像前被试的视觉扫描路径是否更快穿过图像表面（shorter fixation duration on surface details）而呈现"透视性"扫描
+  - 神经深度：默认网络激活（Vessel 2012）在圣像前是否高于偶像前（感知到意义穿透vs停留于形式）
+
 * **Implication**: 视觉行为差异是透明性假说的检验路径。
+* **证伪条件**：若圣像和等美学质量的装饰图像（控制审美吸引力）在眼动深度和默认网络激活上无差异，则H2失败（差异来自信仰背景而非图像结构，SRT的透明性T无独立测量力）。
 
 ### Cor-Spirit-H3: d-Value Synchrony (H-Spirit-3)
-**Prediction**: Collective rituals synchronize long-range coherence as a proxy for d-metrics.
+
+[R→Kinreich et al. 2017（Hyperscanning脑际同步）; Feldman 2007（同步性与社会关系质量）; Wiltermuth & Heath 2009（集体运动同步与合作）] [H→群体仪式通过L₂共享节律同步d-metrics]
+
+**Prediction** [H]: Collective rituals synchronize long-range coherence as a proxy for d-metrics.
 $$ \text{Coherence}_{group} \uparrow \Rightarrow d\text{-metrics}_{sync} \uparrow $$
 * **Implication**: 群体仪式的可检验指标应出现脑际同步提升。
+* **操作化**：Coherence_group代理 = Hyperscanning EEG的相干系数（alpha/gamma频带）；d-metrics_sync = 仪式后被试互报关切重叠（社会网络调查）
+* **证伪条件**：若脑际同步升高但事后关切重叠（d值同步化）无对应变化，则H3失败（同步是行为层产物，不转化为θ-d层变化）。
 
 <br>
 
