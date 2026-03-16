@@ -80,9 +80,23 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 
 ### Core Theorem Alignment (核心定理对齐)
 
-- **T-Scale-2**：$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$
-- **M1/M2**：固定点与稳定性判据保证 $L_1$ 作为吸引子
-- **T-DMP-2**：扰动后 $ΔL_1(t)\to 0$，恢复到 $L_2$ 结构
+**[H — 三定理对齐为SRT复杂系统应用的内部一致性声明；各定理分别在对应章节形式化]**
+
+| 定理 | 形式 | 作用 | ≈成立条件 |
+|:-----|:-----|:-----|:---------|
+| **T-Scale-2** | $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$ | 尺度投影与算子的交换近似 | 投影 $\pi_\lambda$ 保持选择结构主要自由度；L₀-L₁耦合弱于尺度内耦合 |
+| **M1/M2** | 固定点条件 + Jacobian稳定性 | 保证 $L_1$ 作为稳定吸引子 | $\|\alpha D\hat{G}_\theta\| < \alpha$ 且 $H_F \succ 0$ |
+| **T-DMP-2** | $\Delta L_1(t) \to 0$（Re(λ)<0） | 扰动后恢复到 $L_2$ 结构 | 小扰动（Jacobian线性化有效范围内） |
+
+*符号说明*：$\pi_\lambda$ 为从精细尺度L₀到粗粒化尺度λ的投影算子（对应Lemma Syn-π中的序参量投影 $\xi_{order} = \pi_\lambda(L_0)$）
+
+*三定理的逻辑关系*：M1/M2的固定点稳定性是T-DMP-2（扰动后恢复）的前提条件；T-Scale-2独立于前两者，提供跨尺度一致性保证。三者共同构成：**选择动力学在任意尺度上都能产生稳定L₁结构，且扰动后可恢复**。
+
+*内部一致性检查*：三定理是否互相兼容？T-Scale-2的≈近似性与M1/M2的精确稳定性之间，若尺度投影损失关键信息，则M2的稳定条件在粗粒化后可能不保持——这是尺度桥接的关键张力点。
+
+**证伪条件**:
+- 若在同一θ配置下，T-Scale-2的≈近似残差导致粗粒化后M2稳定条件不成立（Jacobian特征值越过零），则三定理对齐在该尺度失效。
+- 若存在满足M1/M2但T-DMP-2不成立的参数配置（如隐藏非线性使恢复失败），则定理对齐不完整，须添加非线性稳定性条件。
 
 ---
 
