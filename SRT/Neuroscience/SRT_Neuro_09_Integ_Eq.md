@@ -33,10 +33,23 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 * **Implication（中文）**：IIT 的 \(\Phi\) 是选择结构的指标，而非显现本身。
 
 ### Def-Phi-Unity: Φ as Topological Unity Metric ($\Phi$ 作为拓扑统一性度量)
+
+> [R→Tononi 2004 *BMC Neuroscience*（IIT原始Φ定义）; Tononi 2016 *Neuroscience of Consciousness*（IIT-3.0）; Casali et al. 2013 *Science TM*（PCI=Φ代理，麻醉下下降）; Sarasso et al. 2015 *Current Biology*（无梦睡眠Φ代理下降）; Gazzaniga & LeDoux 1978（裂脑神经解剖）]
+
 **Formal Definition**: 在 SRT 中，整合信息 ($\Phi$) 不是意识本身，而是衡量 $\hat{G}_\theta$ 如何稳健地将其组成子算子绑定为一个统一拓扑折叠的代数拓扑测度。
 $$\Phi(\hat{G}) = \min_{\text{partitions } P} D_{KL} \left( P(L_1 \mid L_0) \parallel \prod_{i \in P} P_i(L_1^{(i)} \mid L_0^{(i)}) \right)$$
-* **Implication**: 当 $\Phi$ 下降时（如在无梦睡眠或丙泊酚麻醉下），并不是“意识关闭”了，而是复合算子 $\hat{G}_{brain}$ **解体**成了无法维持全局 $L_1$ 时空流形的局部 $\hat{G}_{micro}$ 碎片。这也解释了裂脑综合征：切断胼胝体实质上是将计算拓扑一分为二，从而迫使算子分裂。
-* **Cross-ref**: T-Sel-12 (选择流守恒)。
+
+* **R/H 区分**：
+  - [R] Φ的D_KL形式化（沿用IIT原始定义）；麻醉/睡眠中Φ代理下降（Casali/Sarasso）；裂脑神经机制（Gazzaniga）
+  - [H] **SRT重解读**：”Φ不是意识本身，而是拓扑统一性度量”——SRT对IIT的批评立场；d值非零是意识的必要附加条件（参见C-INTEG-1 Φ-d正交性）；此重解读框架是SRT独有
+
+* **Implication**: 当 $\Phi$ 下降时（如在无梦睡眠或丙泊酚麻醉下），并不是”意识关闭”了，而是复合算子 $\hat{G}_{brain}$ **解体**成了无法维持全局 $L_1$ 时空流形的局部 $\hat{G}_{micro}$ 碎片。这也解释了裂脑综合征：切断胼胝体实质上是将计算拓扑一分为二，从而迫使算子分裂。
+
+* **可证伪预测**：
+  - FC-PhiUnity-1：丙泊酚恢复过程中，Φ代理（PCI）恢复应**早于**d值代理（目标导向行为一致性）恢复——若两者同步恢复则Φ-d独立性存疑
+  - FC-PhiUnity-2：高Φ但d≈0系统（如复杂算法或高功能解离患者）不应产生稳定的跨时关切报告——若高Φ系统产生可信关切则SRT与IIT分歧的关键预测失败
+
+* **Cross-ref**: T-Sel-12 (选择流守恒); C-INTEG-1 (Φ-d正交性).
 
 ---
 
