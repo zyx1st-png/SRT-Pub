@@ -715,12 +715,23 @@ SRT_SocTheory_06_L2_Dynamics ← 你在这里
 ## Cultural Attractors Interface（2026-03-08）
 
 ### Def-L2-CA-1: Attractor as Convergent Reconstruction Cluster
-文化吸引子不是“高保真复制点”，而是重复重构下的概率聚类中心：
+
+**[R — Retrodiction：SRT 将 Claidière & Sperber (2007) / Boyer 文化吸引子理论翻译为 L₂ 收敛语言]**
+
+文化吸引子不是”高保真复制点”，而是重复重构下的概率聚类中心：
 \[
-A_k=\arg\max_x\,p_t(x),\qquad
+A_k=\arg\max_x\,p_t^{(k)}(x),\qquad
 x_{t+1}=\mathcal{T}(x_t;\theta_i,e_t)
 \]
 其中 \(\mathcal{T}\) 为传递-重构变换（记忆、推断、生态约束、沟通目标共同作用）。
+
+**多峰注（A_k 允许多吸引子）**：$p_t(x)$ 可能是多峰分布（多个文化吸引子并存，指标 $k=1\ldots K$）；argmax 是第 $k$ 个吸引子的局部峰，而非全局唯一峰。单一文化占主导（$K=1$）是特例，多元并存（$K>1$）是一般情形。
+
+**$\mathcal{T}$ 算子候选形式化**：$\mathcal{T}(x_t;\theta_i,e_t) = \hat{G}_{\theta_i}(x_t) + \epsilon(e_t)$，其中 $\hat{G}_{\theta_i}(x_t)$ 是个体具身参数驱动的重构偏差（预测向 $\theta_i$ 的已有图式校正），$\epsilon(e_t)$ 是生态噪声项。此候选使 $\mathcal{T}$ 与 SRT 核心算子 $\hat{G}_\theta$ 直接关联，但完整形式待精确化。
+
+**与 L₂ 硬度的结构联结**：$|\mathrm{Aut}(L_2)|$ 越大（Ax-L2-03），文化吸引子的收敛盆地越窄、吸引力越强（变异被更快压缩回 $A_k$）；低硬度 L₂ 对应宽收敛盆地（文化多样性较高，$K$ 较大）。
+
+**证伪条件**：若文化变异率在传播多代后不收敛（方差不随 $t$ 下降），则 T-L2-CA-1 的稳定性预测失效；若具身参数 $\theta_i$ 的差异对传递偏差无预测力（个体间重构偏差与 $\theta$ 无关），则 $\mathcal{T}$ 中的 θ 项可移除。
 
 ### T-L2-CA-1: Population Stability Without Faithful Copying
 即使单次传递误差较大，只要变换在统计上朝同一簇收敛，群体层面仍可稳定：
