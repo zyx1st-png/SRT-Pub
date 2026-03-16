@@ -33,10 +33,14 @@ dependency: [SRT-NEURO-AXIOMS-001]
 \[
 \hat{G}_\theta\Rightarrow \Delta\theta,\qquad \Delta\theta\Rightarrow \Delta\hat{G}_\theta
 \]
-当回路增益 \(g>1\) 时发生病理放大：
+当回路增益 \(g>1\) 时发生病理放大（短时线性近似）：
 \[
 \Delta\theta_{t+1}=g\,\Delta\theta_t
 \]
+
+> **线性近似精度边界**：上式为短时近似（类比线性化稳定性分析）。实际神经系统存在饱和约束（突触可塑性上界/代谢能量限制），长时动力学需加非线性饱和项：$\Delta\theta_{t+1} = g\,\Delta\theta_t\,(1 - \Delta\theta_t/\theta_{max})$（logistic修正）。因此"g > 1 → 无限放大"仅描述短期趋势，而非真实系统的长期行为。
+
+> **Cross-ref §8.4语义断层**：$g > 1$ 对应参数进入临界集 $\mathcal{C}$（$\|\partial f/\partial\theta\| \gg 1$），两者是同一现象的不同切面：增益视角（g-equation）vs. Jacobian奇异视角（§8.4公式）。正反馈增益 = 系统处于语义断层两侧边界附近。
 
 **增益 $g$ 的操作化候选（[H]）**：
 - 神经层：$g \approx \|\partial^2\hat{G}_\theta/\partial\theta^2\| \cdot \|\partial\theta/\partial\hat{G}_\theta\|$（两个 Jacobian 的级联范数积，即"算子对θ的敏感度 × θ对算子输出的响应度"）
@@ -45,7 +49,13 @@ dependency: [SRT-NEURO-AXIOMS-001]
 
 **稳定化条件（[H]）**：回路稳定要求 $g < 1$（衰减反馈）：
 $$g_{effective} = g \cdot (1 - \Psi_f^{damp}/\Psi_f^{total})$$
-其中 $\Psi_f^{damp}$ 为阻尼摩擦（来自环境约束、治疗干预、社会支持）。治疗本质 = 提高 $\Psi_f^{damp}$ 使 $g_{effective} < 1$，而非消除基础耦合。
+其中 $\Psi_f^{damp}$ 为阻尼摩擦，来源于三个独立机制：
+- **环境约束**（$\Psi_f^{env}$）：外部结构对θ变化的物理/社会阻力（如规律作息/稳定居住环境），直接限制θ的可变范围
+- **治疗干预**（$\Psi_f^{tx}$）：CBT/药物/神经调控等，主动提升回路阻尼（药物≈降低g基值；CBT≈增加θ更新的认知过滤层）
+- **社会支持**（$\Psi_f^{soc}$）：高质量关系提供外部θ锚点，缓冲内部正反馈（cf. Ax-Scale-02 κ_soc-ind耦合）
+- 三者可叠加：$\Psi_f^{damp} = \Psi_f^{env} + \Psi_f^{tx} + \Psi_f^{soc} + \text{interaction terms}$
+
+治疗本质 = 提高 $\Psi_f^{damp}$ 使 $g_{effective} < 1$，而非消除基础耦合。
 
 **临床实例（$g$ 值区间对应）**：
 | $g$ 值 | 状态 | 典型临床表现 |
@@ -58,8 +68,8 @@ $$g_{effective} = g \cdot (1 - \Psi_f^{damp}/\Psi_f^{total})$$
 * **Implication（中文）**：病理不是静态缺陷，而是算子与基质的正反馈偏移；治疗 = 将 $g_{effective}$ 降至 1 以下。
 
 **证伪条件（[H]）**：
-- 若临床上快速缓解（而非渐进缓解）的病例中，$g$ 的代理指标（RSAS增长率/AR(1)系数）在缓解前无"峰值然后骤降"模式（相变特征），则正反馈-相变联结需重新评估。
-- 若 $g$ 在同一患者不同病程中不稳定（高变异性），则 $g$ 作为病理参数的个体稳定性假设需修订。
+- FC-PATH1-1：临床上快速缓解（而非渐进缓解）病例中，$g$ 的代理指标（RSAS增长率/AR(1)系数）应在缓解前**2-4周内出现"峰值然后骤降"模式**（峰值定义：高于个人基线均值+1.5 SD；骤降定义：峰后1-2周内下降>1 SD）；若在上述时间窗内无此模式则正反馈-相变联结需重新评估。
+- FC-PATH1-2：若 $g$ 在同一患者跨病程的测量中变异系数（CV）>0.5，则 $g$ 作为个体稳定病理参数的假设需修订（更可能是状态参数而非特质参数）。
 
 ---
 
