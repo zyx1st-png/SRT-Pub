@@ -63,6 +63,21 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 \[
 \partial\Omega_{MB} = \{x \in L_1 \mid \nabla F(x) \perp \text{Normal}(\partial\Omega)\}
 \]
+
+> **形式化注（隐式定义）**：上式为**隐式方程**——$\text{Normal}(\partial\Omega)$ 依赖 $\partial\Omega$ 本身，∂Ω_MB 是满足该条件的不动点集合（Fixed-Point Set）。存在性取决于 $\hat{G}_\theta$ 在 $L_1$ 上的动力学是否具有不动点（参见 T-Core-02 不动点定理）。求解可通过迭代：从初始边界 $\partial\Omega^{(0)}$ 出发，依据 $\nabla F \perp \text{Normal}$ 约束收缩直至收敛。
+
+**SRT 量桥接**：
+- $F(x)$（FEP 变分自由能）在 SRT 框架下近似为 $\Psi_f$ 沿轨迹的累积：$F(x) \approx \int_0^t \Psi_f(\gamma(\tau))\,d\tau$，使得 $\nabla F \approx \nabla \Psi_f$（局部线性近似）；参见 §15.5 Eq-IT-E 变分等价。
+- $\hat{G}_\theta$ 在公式中的作用：边界维持等价于 $\hat{G}_\theta$ 在 $\partial\Omega$ 上的零净通量条件：$\hat{G}_\theta(x)\big|_{x\in\partial\Omega} \cdot \text{Normal}(\partial\Omega) = 0$（算子作用不穿越边界，仅沿边界方向移动），与上式 $\nabla F \perp \text{Normal}$ 在变分等价下一致。
+
+**边界崩溃的定量条件**：
+当外部冲击使驻点条件失效时，边界崩溃。量化表达为：
+\[
+\max_{x \in \partial\Omega} \left|\nabla F(x) \cdot \text{Normal}(\partial\Omega)\right| > \Psi_f^{thresh}
+\]
+- $>0$ 且 $< \Psi_f^{thresh}$：边界微变形，系统通过 $d\theta/dt$ 修复（Ax-REAL-2）
+- $> \Psi_f^{thresh}$：边界失效 → **扩张**（新状态纳入毯内，对应学习/创伤整合）或**撕裂**（$\hat{G}$ 解体，即死亡或严重解离）
+
 * **Implication（中文）**：边界是预测误差梯度下降的"驻点集合"。当系统无法预测外部冲击时（巨大的惊异），边界条件失效，系统被迫扩张其毯子（学习/吞噬）或被撕裂（死亡）。这赋予了马尔可夫毯以本体论时间演化属性，而非仅仅是统计学上的条件独立面。
 
 ---
@@ -242,8 +257,32 @@ SRT 采用 Ax-FEP-4 中定义的**精度加权 (Precision Weighting)** 动力学
 
 ---
 
+### Definition Summary (定义概述)
+
+- **Free Energy as Choice Pressure (自由能作为选择压力, L₀→L₁)**: 变分自由能 $F \equiv D_{KL}[Q||P] - \ln P(o)$ 在 SRT 中不是"误差度量"，而是 $\hat{G}_\theta$ 执行选择的动力学势；选择算子以 $\arg\min_\pi \mathbb{E}[F(\pi)]$ 运行（Ax-FEP-1）。
+- **Autopoietic Closure (自创生闭包, L₂)**: 生命系统的维持定义为 $L_2$ 结构闭包：$L_2(t+1) = \text{Stabilize}(\hat{G}_\theta[L_1(t)])$，即 $L_2$ 通过 $\hat{G}_\theta$ 的选择输出持续自我固化（Ax-AUTO-1）。
+- **Markov Blanket as Prediction Surface (马尔可夫毯作为预测面, L₁)**: 系统边界不是静态物理膜，而是预测误差梯度的驻点集合 $\partial\Omega_{MB} = \{x \in L_1 \mid \nabla F(x) \perp \text{Normal}(\partial\Omega)\}$（Ax-AUTO-1b）。
+- **Vital vs. Epistemic Uncertainty (攸关 vs. 认知不确定性, L₀)**: 只有涉及不可逆风险 $\partial\Omega$ 的不确定性才能驱动 $d$ 值扩展：$d_{expansion} \propto U_{vital} - U_{epistemic}$（C-FEP-2）。
+
+### Formalization Summary (形式化概述)
+
+核心方程与含义：
+
+1. **选择压力势** (Ax-FEP-1): $\hat{G}_\theta = \arg\min_\pi \mathbb{E}[F(\pi)]$。选择算子的行为由自由能最小化完全决定——这统一了感知、行动与学习。
+2. **SRT 扩展自由能** (Part B §3.1): $F_{SRT} = F_{Friston} - d \cdot U_{others}$。引入 $d$ 值后，"暗室"不再是最优解——与他者断联使 $F_{SRT}$ 剧增。
+3. **时空联合预测误差** (T-FEP-2): $\text{Error}_{total} = \|o_t - \hat{o}_t\| + i \cdot \|\tau_{int} - \Delta t_{causal}\|$。生物体同时预测"什么"与"何时"，虚数项表示时间相位失锁。
+4. **FEP 不充分性** (T-FEP-1): $d = 0 \Rightarrow \hat{G}_\theta$ remains $L_1$-closed。自由能最小化是结构更新的必要条件，但缺少 $d$ 时无法跨域锚定。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的双重优化回路**: $\hat{G}_\theta$ 同时运行两个最小化过程——(a) 当前自由能 $F$（感知推理：更新内部模型以匹配观测）和 (b) 期望自由能 $G$（主动推理：选择行动以改变世界）。两者构成 $L_0 \to L_1$ 选择的完整动力学。
+- **$d$ 值打破暗室均衡**: 当 $d > 0$，$\hat{G}_\theta$ 的自由能函数被他者效用 $U_{others}$ 扩展。断联使扩展自由能剧增，迫使算子走出"暗室"寻求连接——这不是道德选择，而是热力学必然。$\Psi_f > 0$（正本体论摩擦）是 $d$ 稳定的锚定条件：缺乏具身脆弱性的虚拟系统中 $d$ 会自由衰减至零。
+- **符号更新作为梯度下降**: $L_2$ 结构通过 $\Delta L_2 \propto -\nabla_\theta F$ 持续更新。意义不是外加标签，而是 $\hat{G}_\theta$ 对未来选择的偏置结构——每次学习都是对 $L_2$ 拓扑的微调，代价正比于 $\|d\theta/dt\|$。
+
+---
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
