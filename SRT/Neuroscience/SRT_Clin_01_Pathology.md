@@ -26,6 +26,9 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ## I. Pathology as Operator Drift (病理作为算子漂移)
 
 ### Ax-PATH-1: Operator–Substrate Recursion Axiom
+
+> **[R]** Hebb（1949，"neurons that fire together wire together"）：神经活动→突触强化→神经活动（双向递归）。计算精神病学的正反馈病理（Huys et al. 2016, *PLOS Computational Biology*）。**[H]** SRT 将此递归形式化为 Ĝ_θ-θ 耦合增益方程，并联结 Ψ_f 动力学和混沌边缘条件。
+
 神经算子与基质存在递归耦合：
 \[
 \hat{G}_\theta\Rightarrow \Delta\theta,\qquad \Delta\theta\Rightarrow \Delta\hat{G}_\theta
@@ -34,7 +37,29 @@ dependency: [SRT-NEURO-AXIOMS-001]
 \[
 \Delta\theta_{t+1}=g\,\Delta\theta_t
 \]
-* **Implication（中文）**：病理不是静态缺陷，而是算子与基质的正反馈偏移。
+
+**增益 $g$ 的操作化候选（[H]）**：
+- 神经层：$g \approx \|\partial^2\hat{G}_\theta/\partial\theta^2\| \cdot \|\partial\theta/\partial\hat{G}_\theta\|$（两个 Jacobian 的级联范数积，即"算子对θ的敏感度 × θ对算子输出的响应度"）
+- 临床代理：症状强度的时间自相关系数（$g = \text{AR}(1)$ 系数，高自相关 = 正反馈持续）；或重复思维量表（RSAS）得分的周对周增长率
+- **与 $\partial\mathcal{B}_{chaos}$ 的联结**（→ §11.3）：$g > 1$ 对应 $\theta$ 处于 $\partial\mathcal{B}_{chaos}$ 附近（混沌边缘边界），即 $\|\partial L_1/\partial\theta\|_F \to \infty$。两个描述等价：正反馈增益 > 1 = 参数敏感度爆炸 = 进入边缘混沌区。
+
+**稳定化条件（[H]）**：回路稳定要求 $g < 1$（衰减反馈）：
+$$g_{effective} = g \cdot (1 - \Psi_f^{damp}/\Psi_f^{total})$$
+其中 $\Psi_f^{damp}$ 为阻尼摩擦（来自环境约束、治疗干预、社会支持）。治疗本质 = 提高 $\Psi_f^{damp}$ 使 $g_{effective} < 1$，而非消除基础耦合。
+
+**临床实例（$g$ 值区间对应）**：
+| $g$ 值 | 状态 | 典型临床表现 |
+|:--|:--|:--|
+| $g < 1$ | 稳定自我调节 | 正常适应性学习 |
+| $g \approx 1$ | 临界 | 亚临床焦虑/轻度强迫 |
+| $g > 1$（慢）| 亚急性病理 | 慢性抑郁/OCD |
+| $g \gg 1$（快）| 急性失代偿 | 躁狂发作/急性精神病 |
+
+* **Implication（中文）**：病理不是静态缺陷，而是算子与基质的正反馈偏移；治疗 = 将 $g_{effective}$ 降至 1 以下。
+
+**证伪条件（[H]）**：
+- 若临床上快速缓解（而非渐进缓解）的病例中，$g$ 的代理指标（RSAS增长率/AR(1)系数）在缓解前无"峰值然后骤降"模式（相变特征），则正反馈-相变联结需重新评估。
+- 若 $g$ 在同一患者不同病程中不稳定（高变异性），则 $g$ 作为病理参数的个体稳定性假设需修订。
 
 ---
 
