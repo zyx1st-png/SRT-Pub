@@ -321,8 +321,15 @@ $$\text{Value} = i_{\text{diff}} \cdot i_{\text{spec}}$$
 
 ### §3.2 潜能 vs 现实的权衡
 
+> [R→Aristotle *Metaphysics* Θ（potentia/actus：潜能与现实性的区分，西方哲学原型）; Whitehead 1929 *Process and Reality*（永恒客体/实际机遇；潜能通过合生进入现实）; Deleuze 1994 *Difference and Repetition*（虚拟/现实区分：虚拟是完全实在的，但不是现实的）; Peirce 1905 *Issues of Pragmaticism*（潜力/实现的三元论）]
+
+**R/H 区分**：
+- [R] 潜能-现实二分的哲学框架（Aristotle/Whitehead/Deleuze各有系统表述）
+- [H-高承诺] **SRT独有主张**：① L₀"无限丰富（所有可能性）"——此为SRT形而上学承诺，无直接经验路径可测量"所有可能性"的边界；② L₀-L₁形式化框架（三层本体论）本身；③ 丰富性↔特定性权衡的公式化（Trade公式）
+- [H] 与Ax-Synth-4（区分度-代价权衡）交叉：§3.2是其本体论抽象形式，Ax-Synth-4是其物理/信息学具体化
+
 **$L_0$ (潜在域)的特征**:
-- ✓ 无限丰富（所有可能性）
+- ✓ 无限丰富（所有可能性）[H-高承诺：L₀是否真正"无限"是形而上学立场，非实验事实]
 - ✗ 无差别（没有特定性）
 
 **$L_1$ (显现域)的特征**:
@@ -333,9 +340,13 @@ $$\text{Value} = i_{\text{diff}} \cdot i_{\text{spec}}$$
 
 $$\text{Existence} = \text{Trade}(\text{Richness}_{L_0} \leftrightarrow \text{Distinctness}_{L_1})$$
 
-**类比**: 
+**类比**:
 - 潜能 = 未写的书（所有故事都可能）
 - 现实 = 已写的书（只有一个故事，但它是具体的）
+
+**可证伪预测**（认知/信息层面可测版本）：
+- FC-Trade1：决策情境中，选项数量增加（丰富性↑）时决策特定性（自信度/响应一致性）下降，且下降幅度与选项信息熵正相关——若无相关则丰富性-特定性权衡在认知层面不成立（选择悖论既有文献 [R→Schwartz 2004 *Paradox of Choice*] 可部分检验此预测）
+- FC-Trade2：创意任务中，高L₀访问（发散思维/高AUT得分）者的L₁输出特定性（收敛质量）低于高L₁锚定者——若两者无负相关则丰富性-特定性权衡在创意域为空
 
 ---
 
