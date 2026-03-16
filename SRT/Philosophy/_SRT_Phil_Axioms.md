@@ -47,10 +47,31 @@ $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 *   **Implication**: 饱和现象并非神秘经验，而是 $L_0$ 压过 $L_2$ 容量的客观失衡。
 
 ### Ax-Phil-5: Anti-Representational Coupling Axiom（新增）
+
+> [R→Gibson 1979 *The Ecological Approach to Visual Perception*（直接感知/affordance：有机体感知的是行动可能性而非世界的内部地图）; Varela, Thompson & Rosch 1991 *The Embodied Mind*（具身认知：认知是有机体与环境的结构耦合，非符号计算）; Maturana & Varela 1980 *Autopoiesis and Cognition*（自创生：生命系统通过自我生产维持边界，感知是组织维持的功能）; Clark & Chalmers 1998 *Analysis*（延展心智：认知状态可延展至身体/环境；θ的分布性来源）]
+
 \[
 \theta\neq \text{Map}(L_0),\qquad \theta=\text{Coupling Protocol for }\hat G_\theta\text{ with }L_0
 \]
-算子参数 \(\theta\) 不是外部世界的“内部地图”，而是可生存的耦合模具；其功能是触发可支付锚定，而非复制 \(L_0^{abs}\) 全貌。
+
+**R/H 区分**：
+- [R] 反表征主义哲学传统（Gibson直接感知/Varela具身认知/Maturana自创生）：认知是有机体-环境耦合，而非内部符号地图；表征主义批判（Putnam/Dreyfus等）
+- [H] **SRT形式化**：将反表征主义的直觉形式化为θ=耦合协议（Coupling Protocol），而非Map(L₀)；”可支付锚定”（payable anchoring）作为θ的功能判据是SRT原生概念
+
+**”可支付锚定”定义**：锚定可支付（payable anchoring）= Ψ_f^paid < Ψ_f^critical，即有机体在L₀中稳定化L₁所付出的摩擦成本不超过其存续阈值。θ的进化/学习压力方向：保留使Ψ_f^paid最小化的耦合路径，淘汰代价过高的路径，与”复制L₀^abs”的表征主义目标无关。
+
+**θ 的三层来源**：
+1. 进化选择层：物种层面淘汰高Ψ_f_baseline的θ构型（种系遗传）
+2. 发育塑形层：早期经验修剪无效耦合路径（临界期θ可塑性→W₀）
+3. 学习更新层：贝叶斯-类预测误差驱动θ微调（实时耦合优化）
+
+* **Implication（中文）**：认知科学若以”神经内部表征的保真度”为意识/智能的核心指标，则在SRT框架中方向错误——θ的目标是”开锁”（可支付锚定）而非”描绘锁”。这对AI设计（性能≠保真复制）和心理治疗（改变耦合协议而非”纠正地图”）均有方法论含义。
+
+**操作化候选**：θ耦合效率proxy = 任务成功率 / 神经代谢代价（FDG-PET能耗）；高效θ表现为低代价高成功（payable anchoring），低效θ表现为高代价低成功（Ψ_f^paid接近Ψ_f^critical）
+
+**可证伪预测**：
+- FC-Phil5-1：若操纵被试的感知-行动耦合（如棱镜适应实验）使θ重构，则行为恢复速度应正比于新θ的Ψ_f效率（代谢成本降低速率），与”地图保真度恢复”无关——若棱镜适应完成后神经激活的”地图符合度”预测力高于代谢效率，则表征主义框架未被排除
+- FC-Phil5-2：跨物种比较中，行为灵活性（θ可重构速度）应与脑-体代谢比的最优化水平正相关，而与”环境地图精度”（如空间记忆精准度）弱相关——若空间记忆精准度是更好的灵活性预测指标则反表征主义SRT解读需修订
 
 ### Ax-Phil-6: d-Weighted Preference Reality Criterion（新增）
 \[
