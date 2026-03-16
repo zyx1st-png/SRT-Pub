@@ -797,6 +797,17 @@ P_{t+1}=\Phi\big(P_t,\mathcal{S}_{t+1}\big)
 \]
 即群体通过改写 \(E\) 反过来改写自身与后代面临的选择地形。
 
+**SRT 量对应**：
+- $P_t$：群体 $\theta$ 分布的统计描述，即 $P_t = \{\theta_i\}_{i\in\text{pop}}$ 的矩（均值 $\bar\theta$、协方差 $\Sigma_\theta$）
+- $\Phi(P_t, \mathcal{S}_{t+1})$：群体算子 $\hat{G}_{\bar\theta}$ 对更新后选择压力 $\mathcal{S}_{t+1}$ 的响应；在 SRT 一阶近似下，$\Phi(P_t, \mathcal{S}) \approx P_t - \eta \nabla_P F(P_t, \mathcal{S})$（自由能梯度下降，Ax-NEURO-MECH-4 的群体扩展）
+
+**稳态条件（不动点分析）**：
+系统 $(E^*, P^*)$ 满足稳态当且仅当：
+\[
+\Delta E\!\left(A_t(\hat{G}_\theta), K_t\right) = 0 \quad\text{（净建构为零）}\quad\wedge\quad P^* = \Phi\!\left(P^*, \mathcal{S}(E^*, P^*)\right)
+\]
+即 $P^*$ 为 $\Phi(\cdot, \mathcal{S}(E^*, \cdot))$ 的不动点（对接 T-Core-02 不动点定理）。此系统可能存在**多不动点**（稳定生态位 vs. 亚稳生态锁死）和**极限环**（周期性环境-种群振荡，如猎物-天敌型动力学），需具体参数化后分析。"过度建构/生态锁死"对应亚稳不动点（$\Psi_f^{cross} \uparrow$，路径依赖陷阱）。
+
 ### Def-Eco-NC-2: Ecological Inheritance as L2-Eco Memory
 当环境改写跨代持续时，引入“生态继承”记忆项：
 \[
