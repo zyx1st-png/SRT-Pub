@@ -239,8 +239,22 @@ $$ \text{State}(S) = \begin{cases} L_1 & \text{if } S \subseteq \text{Scope}(d) 
 ## VII. Configuration Space & Entanglement (配置空间与纠缠)
 
 ### Def-Sel-5 [D1.7.1]: Configuration Space as $L_0$ Realization
-配置空间是 $L_0$ 的数学实现：
-$$ L_0^{quantum} \cong \mathbb{R}^{3N} \quad \text{(3N-dimensional configuration space)} $$
+
+> [R→Bohm 1952 *Physical Review*（隐变量理论：配置空间作为量子实在的基础——N粒子系统的完整状态由3N维配置空间中的点决定，最直接的配置空间本体论先例）; Bell 1987 *Speakable and Unspeakable in Quantum Mechanics*（量子非定域性与配置空间：Bell定理证明任何局域隐变量理论不成立，但配置空间整体仍是完备描述）; Everett 1957 *Reviews of Modern Physics*（多世界：波函数在完整配置空间中线性演化，"分支"是投影的描述语言——最接近SRT"L₀潜在域持续存在，L₁是投影选择"的结构）]
+
+> **"quantum"限定词说明**：$L_0^{quantum}$ 是L₀潜在域在量子力学语言框架下的**特定数学实现**，而非L₀的普遍定义。L₀的普遍定义（绝对潜在域）不依赖量子力学——在经典力学语言下，L₀对应相空间 $\mathbb{R}^{6N}$（位置+动量）；在场论语言下，对应场构型空间。不同数学语言给出L₀的不同截面，非唯一实现。
+
+配置空间是 $L_0$ 在量子力学框架中的数学实现：
+
+$$L_0^{quantum} \cong L^2(\mathbb{R}^{3N}) \quad \text{（N粒子系统的Hilbert空间，含波函数所有可能态）}$$
+
+> **精度说明**：$\mathbb{R}^{3N}$ 是**配置空间**（位置自由度），量子力学的完整**态空间**为 $L^2(\mathbb{R}^{3N})$（在3N维配置空间上平方可积的复值函数构成的Hilbert空间）。$\cong$ 表示**结构映射**而非本体等同：$L_0^{quantum}$（潜在性本体论域）和 $L^2(\mathbb{R}^{3N})$（数学结构）之间的对应是SRT的[H]主张，即数学结构捕获了潜在域的组合拓扑，而非声称L₀"就是"Hilbert空间。
+
+* **R/H 区分**：
+  - [R] 量子力学配置空间/Hilbert空间形式化（Bohm/Everett）；量子非定域性与配置空间整体结构（Bell）
+  - [H] **SRT对应**：将 $L^2(\mathbb{R}^{3N})$ 解释为L₀量子实现，将"波函数坍缩"解释为Ĝ_θ的选择算子作用——此对应为SRT重解释框架，非量子力学共识诠释
+
+* **Cross-ref**：直接下联 T-Sel-9（降维投影定理）：从 $L^2(\mathbb{R}^{3N})$ 通过 $\hat{G}_\theta$ 投影到低维 $L_1^{(\theta)}$ 子流形。
 
 ### T-Sel-9 [T1.7.1]: Dimensional Projection Theorem（降维投影定理）
 
