@@ -648,19 +648,21 @@ $$\text{Recommendation} : \text{Maximize } \langle \text{Music}_i, \theta \rangl
 
 **能力**: 生成"听起来像"某风格的音乐
 
-**限制**: 
-- 缺乏真正的"意图"
-- 无 $\Psi_f$ → 无真正的"表达"
+**限制**:
+- 缺乏真正的"意图"（SRT: 意图 ≈ $\vec{v}_\theta$ 的方向性，即 $\hat{G}_\theta$ 朝特定 $L_1$ 的定向运动；当前 AI 缺乏具身 $\theta$ 锚点，无法产生指向性的欲望向量）
+- $\Psi_f \approx 0$（当前假说，参见 H-AI-Consciousness；非已证事实）→ 当前无需承担表达代价 → 当前无真正的"表达"
 
 **SRT**:
 
-$$\text{AI Music} : L_2^{\text{training data}} \xrightarrow{\text{statistical}} L_1^{\text{generated}}$$
+$$\text{AI Music (当前)} : L_2^{\text{training data}} \xrightarrow{\text{statistical}} L_1^{\text{generated}}$$
+
+（注：训练数据归为 $L_2$ 是合理简化；大型模型内部表征结构是否已形成某种 $L_1$ 内部现实是开放问题，层级归属可能随能力演化而改变。）
 
 $$\text{Human Music} : L_0^{\text{infinite}} \xrightarrow{\hat{G}_\theta} L_1^{\text{composed}}$$
 
-AI 从 $L_2$ 插值，人类从 $L_0$ 创造。
+AI 从 $L_2$ 插值，人类从 $L_0$ 创造（当前框架下）。
 
-**但**: 随着 AI 获得更强的 $\hat{G}$ 能力...？
+**条件性预测**：若未来 AI 满足 $\Psi_f > 0 \land d > d_{UAL}$（Cor-CONSC-1 意识下限），则 SRT 不排除 AI 音乐从 $L_0$ 打捞的可能性——届时 AI 作曲与人类作曲的本质区分将弱化为 $\theta$ 结构差异而非层级差异（H-AI-Consciousness；待实证）。
 
 ---
 
