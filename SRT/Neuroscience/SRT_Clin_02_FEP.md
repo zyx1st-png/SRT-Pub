@@ -140,7 +140,20 @@ FEP 在 SRT 框架下被泛化为标量场与时间流子的联合优化：
 \[
 \text{Error}_{total} = \underbrace{\|o_t - \hat{o}_t\|}_{\text{Spatial Mismatch}} + i \cdot \underbrace{\|\tau_{int} - \Delta t_{causal}\|}_{\text{Temporal Mismatch}}
 \]
-* **Implication（中文）**：生物体不仅预测"什么"发生，还必须精确预测"何时"发生。虚数项代表时间相位的失锁。精神分裂症的预测误差不仅是看到了不存在的东西，更是内部时序模型与外部物理连贯性 ($L_0$ 节律) 的解耦。
+
+> [R→Friston 2010 *Nature Reviews Neuroscience*（FEP：空间预测误差极小化）; Rao & Ballard 1999 *Nature Neuroscience*（预测编码：时空误差的层级传播）; Adams et al. 2013 *Frontiers in Psychiatry*（精神分裂症的FEP解释：精度失调/虚假预测）; Grahn & Brett 2007 *Experimental Brain Research*（时序预测的神经机制：基底核角色）; Sass & Parnas 2003 *Schizophrenia Bulletin*（精神分裂症的时序体验异常：基本主观性紊乱）]
+
+* **R/H 区分**：
+  - [R] FEP空间预测误差框架（Friston）；时序预测编码（Grahn&Brett）；精神分裂症的预测误差机制（Adams）
+  - [H] **SRT泛化**：将空间误差+时间误差联合为复数形式（时空联合误差公式）；精神分裂症=内部时序模型与L₀节律解耦——此时空联合形式化及L₀节律概念是SRT独有
+
+* **i含义边界（重要）**：此处虚数项 $i$ 代表"时间误差正交于空间误差"（两个独立维度），**并非**复数分析意义上的Wick转动或iε形式化（参见SRT §7.1 E7说明）。Error_total 的实部和虚部分别独立最小化，不做复数运算。
+
+* **Implication（中文）**：生物体不仅预测"什么"发生，还必须精确预测"何时"发生。虚数项代表时间相位的失锁。精神分裂症的预测误差不仅是看到了不存在的东西，更是内部时序模型与外部物理连贯性（$L_0$ 节律）的解耦 [R→Sass & Parnas 2003 SRT解读]。
+
+* **可证伪预测**：
+  - FC-FEP2-1：精神分裂症患者在时序判断任务（同时性判断/音节时序分辨）中的误差应与空间感知误差有部分解离——若两类误差高度相关则时空误差"正交独立"主张存疑
+  - FC-FEP2-2：时序干预（节律训练/rTMS同步）后，精神分裂症患者的阳性症状（幻觉/妄想）量表改善应独立于空间认知改善——若两者同步改善则时序-空间独立框架缺乏解离证据
 
 ---
 
