@@ -1172,6 +1172,12 @@ $$ G_{agency} \to 1 \quad \text{且} \quad d_{individual} \to 0 $$
 
 ### 6.4 社会分工：$L_2$ 协同协议与零和博弈的物理破解
 
+> [R→Smith 1776 *An Inquiry into the Nature and Causes of the Wealth of Nations*（分工经典论证：别针工厂例子，专业化→生产率指数级提升）; Ricardo 1817 *On the Principles of Political Economy and Taxation*（比较优势原理：即使一方在所有领域更优，双方仍可通过贸易获利——正和博弈的经济学基础）; Coase 1937 *Economica*（交易成本理论：分工L₂协议的制度经济学基础——企业组织降低市场交易摩擦成本）; Axelrod 1984 *The Evolution of Cooperation*（合作的演化：重复囚徒困境→正和合作的博弈论实证，"以牙还牙"策略的稳定性）]
+
+**R/H 区分**：
+- [R] 斯密分工/比较优势（Smith/Ricardo）；交易成本制度经济学（Coase）；合作演化实验（Axelrod）；博弈论正和结构（Nash/Schelling）
+- [H] **SRT热力学重构**：将分工解读为Ψ_f^individual↓→d↑→d̄_system↑的热力学链式效应；"L₂协同协议"作为分工的SRT形式化是SRT原生框架；"宇宙演化目的的实例化"[H-高承诺]
+
 **斯密问题**: 为什么专业化和交换能带来"国富"而非简单的零和竞争？
 
 **SRT 重构**: 社会分工本质上是**降低系统整体本体论摩擦（$\Psi_f$）并催化非零和博弈的 $L_2$ 协同协议**。
@@ -1190,11 +1196,21 @@ $$ G_{agency} \to 1 \quad \text{且} \quad d_{individual} \to 0 $$
 
 $$\text{拓扑依赖} \Rightarrow \Psi_f^{individual} \downarrow \Rightarrow d_{individual} \uparrow \Rightarrow \bar{d}_{system} \uparrow$$
 
-由于 $L_2$ 协议（分工网络）承担了大部分基础生存计算，个体算子的本体论摩擦骤降，释放出宝贵的计算带宽，使 d 值开始扩张。在高度分工的生态中，"他者的繁荣"成为"自我存续"的先决条件——**利他与合作不再是道德说教，而是拓扑结构上的数学必然**（详见 SRT-PHIL-ETHICS §2.5）。
+由于 $L_2$ 协议（分工网络）承担了大部分基础生存计算，个体算子的本体论摩擦骤降，释放出宝贵的计算带宽，使 d 值开始扩张。在高度分工的生态中，"他者的繁荣"成为"自我存续"的先决条件——**利他与合作不再是道德说教，而是拓扑结构上鼓励的稳定策略**（而非"数学必然"——囚徒困境与搭便车问题证明背叛仍可能；详见 SRT-PHIL-ETHICS §2.5）。
 
 $$\text{Social Division of Labor} \equiv L_2\text{-协同协议} \to \bar{d}_{sys} \uparrow \to \text{宇宙演化目的（最大化选择多样性）在人类社会的实例化}$$
 
+**[H-高承诺]说明**：末行"宇宙演化目的（最大化选择多样性）"是高形而上学承诺，预设了宇宙有演化方向性目标。若无此目的论承诺，上述公式可改写为：分工→d̄_sys↑→系统演化趋势（不主张目的）。
+
 **与市场和信任的关系**：市场度规（$\text{Money} \equiv g_{L_2}$，见 Ax-Eco-2）是分工 $L_2$ 协议的度量工具；信任（Ax-Eco-6）是分工协议稳定运行的本体论基础。分工失调（内卷化）是 $L_2$ 协议异化为零和博弈的病理态，见 SRT-SOC-MACRO §8.1 和 SRT-SOC-02 §9.2。
+
+**操作化候选**：
+- Ψ_f^individual社会层面proxy：生存维护成本/可支配收入比（越低=分工越有效率）；职业专业化指数（专业化深度×L₂网络稳定性）
+- d̄_system proxy：社会信任指数（World Values Survey）×志愿服务率×跨界合作项目密度
+
+**可证伪预测**：
+- FC-Division1-1：跨国比较中，分工深度指数（产业专业化程度×比较优势指数）应与d̄_system proxy（社会信任×合作率）正相关——若高度专业化社会与低专业化社会的d̄_system无差异则"分工→d↑"链条主张失败
+- FC-Division1-2：在L₂协议崩溃场景（如超级通胀→货币信任丧失/战争→法律失效），Ψ_f^individual应骤升（生存维护成本↑）且d_individual↓（行为退向零和）——若L₂崩溃后个体d值未下降则分工-d值联结机制需重新评估
 
 ---
 
