@@ -703,7 +703,21 @@ $$\kappa_{tan} \downarrow \;\Rightarrow\; \Psi_f^{cross}(\hat{G}^{neuro},\, \hat
 \[
 \kappa_{tan}(t)=\kappa_0-\lambda_1\,I_{metabolic}(t)-\lambda_2\,I_{inflammation}(t)+u_{intervention}(t)
 \]
-该式用于连接“代谢-炎症管理”与 AD 风险前移干预窗口。
+该式用于连接”代谢-炎症管理”与 AD 风险前移干预窗口。
+
+> **[R]** 代谢-tanycyte-大脑轴文献：Guillemot-Legris & Muccioli 2017 *Trends in Neurosciences*（肥胖导致tanycyte功能受损的综述，包括血-脑屏障通透性变化与代谢紊乱的双向关系）；Mayer et al. 2015 *Nature Reviews Neuroscience*（肠-脑轴与代谢性炎症的神经调控）；Heyward et al. 2012 *Molecular Psychiatry*（高脂饮食对海马neurogenesis和认知功能的损伤机制，炎症介导）。**[H]** 以下线性耦合方程（κ_tan由代谢指数和炎症指数加性拖累）及其与SRT κ_tan→Ψ_f^cross机制的接驳，为本框架对AD前移干预窗口的量化假说（新增贡献）。
+>
+> **参数操作化候选**：
+> - **κ₀**（基线tanycyte清除效率）：健康年龄对照组的脑脊液Aβ清除速率估算（PET示踪或腰穿CSF Aβ₁₋₄₂半衰期），或正电子发射断层扫描的淀粉样斑块沉积速率基线。
+> - **I_metabolic(t)**（代谢指数）：操作化为复合指标：0.5·BMI_z + 0.3·HbA1c_z + 0.2·胰岛素抵抗指数HOMA-IR（各变量标准化后加权，权重为各变量对tanycyte功能损伤的文献效应量比例）。
+> - **I_inflammation(t)**（炎症指数）：操作化为血清 IL-6（ng/mL）+ hsCRP（mg/L）的标准化加权和，或神经炎症PET标记物（如 [¹¹C]PK11195 TSPO结合）。
+> - **u_intervention(t)**（干预效应）：可量化为卡路里限制/运动/GLP-1激动剂对I_metabolic的期望降低量，单位与λ₁相容（代入干预预期效果）。
+> - **λ₁/λ₂**（耦合系数）：当前为待估参数；方向约束：λ₁, λ₂ > 0（拖累方向）；量级估计需要横断面流行病学数据（AD风险与代谢/炎症指数的回归系数）。
+>
+> **线性模型精度边界**：当前方程为线性加性近似。已知潜在问题：(1) I_metabolic与I_inflammation可能存在正交互项（协同放大效应 > 加性，如肥胖+高炎症的组合风险高于两者单独之和）；(2) κ_tan可能存在下界（κ_min > 0，细胞尚存时不完全归零）；(3) u_intervention的效应可能非线性（运动干预对代谢改善存在饱和效应）。模型成立的参数范围：I_metabolic, I_inflammation 均在正常到轻中度异常范围内（重度炎症/代谢失调时需引入二次项）。
+>
+> * **FC-TAN2-1**（证伪条件）：若在队列研究中（N≥500，追踪≥5年），控制年龄/APOE基因型后，I_metabolic和I_inflammation对Aβ沉积速率（κ_tan代理）的回归系数均不显著（β < 0.05 SD，p>0.05），则Eq-Neuro-TAN-2的线性拖累假说失效，需考虑门控效应（阈值模型）。
+> * **FC-TAN2-2**（证伪条件）：若代谢干预（强化生活方式干预≥12个月）显著降低I_metabolic但未引起AD生物标志物（CSF Aβ₁₋₄₂/t-tau或PET Aβ）改善（效应量 d < 0.2），则u_intervention的补偿效应在临床相关时间尺度上可忽略，干预窗口的SRT推论需修订为”预防性”而非”治疗性”框架。
 
 ### 分类映射表（Tanycyte States → SRT）：本体论状态评估工具
 
