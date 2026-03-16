@@ -1122,10 +1122,21 @@ I(\theta_{cell}^{min})\ge N_{crit}\quad \text{requires}\quad \sum_{i\neq j} I_{c
 ## Constructive Fracture Interface（建设性断裂接口，2026-03-02）
 
 ### Def-Scale-CF-1: Controlled Rupture Window
-定义“建设性断裂”窗口：系统在局部连接断裂后，若满足重封闭与功能增强条件，则该断裂为结构重构步骤而非失稳失败。
-\[
-\mathcal{R}_{break}\to\mathcal{R}_{reseal}\quad \text{with}\quad \Delta \mathcal{F}_{function}>0
-\]
+
+> **Cross-ref**：此定义是 T-Scale-CF-1（Break-to-Build Gate）的形式化前提；T-Scale-CF-1 提供完整实证基础（Lecuit/Heisenberg/Mayor）、τ操作化（τ_reseal/τ_fail）和FC（证伪条件）。本条目仅定义”建设性断裂”的判准结构。
+
+定义”建设性断裂”窗口：系统在局部连接断裂后，若满足重封闭与功能增强条件，则该断裂为结构重构步骤而非失稳失败。
+
+$$\mathcal{R}_{break} \to \mathcal{R}_{reseal} \quad \text{with} \quad \Delta \mathcal{F}_{function} > 0$$
+
+> **符号说明**：
+> - $\mathcal{R}_{break}$：断裂状态（局部连接/κ值降低至κ < κ_c2的临界以下）
+> - $\mathcal{R}_{reseal}$：重封闭状态（连接重建，κ重新升高至κ_c2以上）
+> - $\Delta \mathcal{F}_{function} = \mathcal{F}(\mathcal{R}_{reseal}) - \mathcal{F}(\mathcal{R}_{break,initial})$：功能增量（$\mathcal{F}$ 为系统在目标任务上的功能能力度量，如信息整合能力/机械张力承载/认知灵活性——依层次具体化）
+> - $\Delta\mathcal{F}_{function} > 0$：重封闭后功能高于断裂前——这是建设性断裂与破坏性断裂的判准分界
+
+* **R/H**：此定义为框架性定义（全R形式结构），具体跨尺度应用（细胞/神经/社会）见 T-Scale-CF-1 的 R/H 区分。
+* **FC**：参见 T-Scale-CF-1 的 FC-BreakBuild-1/2。
 
 ### T-Scale-CF-1: Break-to-Build Gate
 
