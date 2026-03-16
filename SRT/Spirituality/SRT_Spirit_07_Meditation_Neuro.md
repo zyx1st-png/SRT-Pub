@@ -104,7 +104,20 @@ $$ \alpha \downarrow,\; \text{Precision} \uparrow $$
 ### Cor-Med-H3: Structural Plasticity
 **Prediction**: Long-term practice induces hippocampal growth and amygdala reduction.
 $$ \text{Hippocampus} \uparrow,\; \text{Amygdala} \downarrow $$
-* **Implication**: 冥想的长期效应是 $\theta$ 参数重配置的结构证据。
+
+> [R→Hölzel et al. 2011 *NeuroImage*（8周MBSR/海马体积增大、应激感知量表改善）; Lazar et al. 2005 *NeuroReport*（长期冥想者皮质厚度增加）; Taren et al. 2015 *SCAN*（冥想训练/杏仁核静息激活减弱）; Gotink et al. 2016 *Brain and Cognition*（MBIs结构MRI综述：海马/杏仁核效应汇总）]
+
+* **R/H 区分**：
+  - [R] 海马体积增大和杏仁核激活/体积减小：均有独立实证（MRI + 纵向设计），属于追溯既有文献
+  - [H] **SRT附加**：将上述结构变化解读为"θ参数重配置的结构证据"——即结构可塑性=具身参数θ的永久性物理更新。此解读联结需要额外因果推论，非神经科学文献所直接支持
+
+* **Implication**: 冥想的长期效应是 $\theta$ 参数重配置的结构证据。[H] SRT θ-结构因果链：
+  - 海马体积↑ → 情境记忆模板库扩展 → 新情境的θ匹配更灵活 → θ可塑性整体提升
+  - 杏仁核激活↓ → 默认防御阈值降低 → Ψ_f自动激活减弱 → θ更新的摩擦代价↓
+
+* **可证伪预测**：
+  - FC-MedH3-1：海马体积增长量（ΔHV）应与纵向研究中的θ可塑性指标（跨情境认知灵活性提升/任务切换代价减少）正相关——若无相关则θ-海马等同为类比而非机制主张
+  - FC-MedH3-2：杏仁核体积缩小（或激活减弱）应与Ψ_f代理（慢性应激生物标志物：皮质醇、IL-6基线）负相关——若无相关则Ψ_f-杏仁核联结为空
 
 <br>
 
