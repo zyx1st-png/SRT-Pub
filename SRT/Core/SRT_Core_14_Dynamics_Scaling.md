@@ -1118,10 +1118,31 @@ I(\theta_{cell}^{min})\ge N_{crit}\quad \text{requires}\quad \sum_{i\neq j} I_{c
 \]
 
 ### T-Scale-CF-1: Break-to-Build Gate
-若机械/液压应力优先沿低黏附路径释放，且重封闭时间 \(\tau_{reseal}\) 低于功能失稳阈值 \(\tau_{fail}\)，则系统可通过“先裂后合”进入更高功能态：
+
+> [R→Lecuit & Lenne 2007 *Nature Reviews Molecular Cell Biology*（细胞单层中的张力依赖性断裂-重封闭：形态发生中的受控断裂机制）; Heisenberg & Bellaïche 2013 *Cell*（力与形态发生：组织重塑过程中的机械应力-断裂-重封闭耦合）; Mayor & Etienne-Manneville 2016 *Nature Reviews Molecular Cell Biology*（前沿的形成：细胞连接的动态断裂-重组与形态发生方向性）]
+
+若机械/液压应力优先沿低黏附路径释放，且重封闭时间 \(\tau_{reseal}\) 低于功能失稳阈值 \(\tau_{fail}\)，则系统可通过”先裂后合”进入更高功能态：
 \[
 \tau_{reseal}<\tau_{fail}\ \Rightarrow\ \text{constructive morphogenesis}
 \]
+
+**R/H 区分**：
+- [R] 细胞/组织层面的受控断裂-重封闭机制（Lecuit/Heisenberg/Mayor）：发育生物学实证基础；τ_reseal/τ_fail的细胞生物学操作定义
+- [H] **SRT跨尺度映射**：将细胞受控断裂框架扩展至神经可塑性（LTP中的突触重组）、社会制度（Schumpeter创造性破坏），并映射至κ-Ψ_f动力学。跨尺度外推的证据强度依层次递减（细胞[R-强]→神经[H-中]→社会[H-探索性]）
+
+**τ参数操作化**：
+- τ_reseal（重封闭时间）：细胞层面=钙黏附素重连时间（活细胞成像，单位：分钟）；神经层面=突触增强后稳定化时间（LTP时间窗，单位：小时）；社会层面=制度重构完成至新平衡时间（年）
+- τ_fail（功能失稳阈值）：细胞层面=连接断裂→细胞分离前的不可逆时间窗；神经层面=长时程增强消退前的关键窗口
+
+**Ψ_f - κ 断裂-重封闭动力学**（SRT层次）：
+1. 断裂前：κ>κ_c2（L₂稳定），Ψ_f=Ψ_f_baseline
+2. 断裂期（0→τ_reseal）：κ短暂<κ_c1（L₁不稳定，重组窗口打开），Ψ_f^transient↑（摩擦暂升）
+3. 重封闭后（τ_reseal < τ_fail）：κ在新的κ_c2'处稳定（通常κ_c2'>κ_c2），Ψ_f_new<Ψ_f_baseline（新连接更高效）→ ΔF_function>0（功能增益）
+4. 若τ_reseal > τ_fail：系统进入L₁不稳定→Ψ_f^catastrophic↑→功能崩溃路径
+
+**可证伪预测**：
+- FC-BreakBuild-1：在受控力学实验中，对组织施加高于黏附阈值但低于失稳阈值的应力，并在τ_fail内恢复，则后续功能性张力（组织刚度/传导效率）应高于断裂前——若断裂-重封闭后功能不高于基线则”先裂后合→更高功能态”主张需修订
+- FC-BreakBuild-2：跨尺度预测：神经LTP协议中，NMDA受体开放（”断裂”窗口）持续时间若在τ_fail（LTD临界窗）之内则产生LTP（功能增强），超出则产生LTD或失稳——此已知LTP/LTD时间窗关系应与T-Scale-CF-1的τ不等式一致，若实验测量的临界时间与T-Scale-CF-1预测方向相反则神经层面外推失败
 
 ### T-Scale-CF-2: Path-Selective Fracture Principle
 断裂路径并非随机扩散，而受局部张力差与连接强度梯度共同约束：
