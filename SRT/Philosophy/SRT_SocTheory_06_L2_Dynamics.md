@@ -681,7 +681,24 @@ SRT_SocTheory_06_L2_Dynamics ← 你在这里
   - $T_{stable}(L_2) \propto 1/\int_{\Omega_{excluded}} \Psi_f \, d\sigma$ — 稳定时间与排除空间的摩擦成反比。
 
 ### Mechanism Explanation (机制解释)
-- **Mechanism**: $\hat{G}_\theta$ 集体选择产生的 $L_2$ 结构需通过与 $L_1$ 的持续信息一致性维持有效性。$\Psi_f$ 决定 $L_2$ 硬度光谱——从低硬度习惯（如 QWERTY）到高硬度制度（如主权概念），推翻所需的能量跨越多个数量级。$d$-value 通过温暖数据耦合 ($\kappa_{warm}$) 影响分裂阈值：当情感耦合断裂，正反馈驱动极化相变。
+
+> [R→DiMaggio & Powell 1983 *American Sociological Review*（制度同构：L₂硬度谱的社会学分类——强制性同构（高硬度）/规范性同构（中硬度）/模仿性同构（低硬度），对应SRT的Ψ_f光谱不同区段）; Easton 1965 *A Framework for Political Analysis*（政治系统的"支持"概念：政治制度（L₂）需要公民持续输入"弥散性支持"才能维持有效性——最接近"L₂与L₁持续信息一致性"的政治科学先例）; Putnam 2000 *Bowling Alone: The Collapse and Revival of American Community*（社会资本与情感耦合：κ_warm的历史实证代理——美国1960-2000年社会资本↓与极化↑的同步趋势）; Axelrod 1984 *The Evolution of Cooperation*（正反馈与极化：合作-缺乏合作正反馈在重复博弈中的动力学——κ_warm断裂后的正反馈机制原型）]
+
+- **Mechanism（完整版）**：
+
+  **① L₂有效性维持**：$\hat{G}_\theta$ 集体选择产生的 $L_2$ 结构需通过与 $L_1$ 的"持续信息一致性"维持有效性——操作定义为互信息 $I(L_2;L_1)$（上方Formalization Summary中的 $\text{Validity}(L_2) \propto I(L_2;L_1)$）。当大量个体L₁体验开始与L₂预测系统性偏离（$I(L_2;L_1)↓$），L₂有效性下降，最终面临重构。
+
+  **② L₂硬度光谱**：$\Psi_f$ 决定推翻L₂所需的能量成本——从低硬度习惯（如QWERTY打字布局：可单方面学习替换，个人成本低）到高硬度制度（如国家主权概念：需要全球政治协调，推翻成本跨越数量级）。DiMaggio&Powell的三类同构对应SRT的三段硬度区间：低（模仿性）/中（规范性）/高（强制性）。
+
+  **③ d值-情感耦合-极化链**：$d$值通过温暖数据耦合 $\kappa_{warm}$（情感连结强度，Cross-ref: `Core/SRT_Core_14_Dynamics_Scaling.md` §Ax-Scale-02 κ_soc-ind操作化）影响极化分裂阈值：当κ_warm↓（情感耦合断裂），θ发散的正反馈（$d\Delta\theta/dt \propto +\Delta\theta$）不再受到跨群情感摩擦的缓冲，驱动极化相变（Cross-ref: `Philosophy/SRT_Social_MacroDynamics.md` §T-Macro-IM-2）。
+
+* **R/H 区分**：
+  - [R] L₂硬度谱的制度社会学实证（DiMaggio&Powell）；社会资本-极化的历史证据（Putnam）；正反馈极化博弈论（Axelrod）
+  - [H] **SRT统一形式化**：将制度有效性/硬度/情感耦合-极化三个机制统一在$I(L_2;L_1)/\Psi_f/\kappa_{warm}$三参数体系内——跨学科的形式化统一是SRT的独特贡献
+
+* **可证伪预测**：
+  - FC-SocMech-1：在制度改革实验（如货币改革/交通规则修改）中，推翻成本（政策成功所需的时间/资源）应与该制度的历史持续时间（Hardness的时间积累代理）正相关（Spearman r>0.4）；若推翻成本与历史持续无关则Hardness-时间积累联结失败
+  - FC-SocMech-2：在纵向社会调查中，κ_warm代理（社会信任指数↓/独居率↑等Putnam指标）的下降趋势，应领先（时间上先于）政治极化指数上升趋势（Granger因果：κ_warm→极化方向）；若无Granger因果则情感耦合-极化正反馈链失败
 
 ## 【理论边界/防误用声明】
 
