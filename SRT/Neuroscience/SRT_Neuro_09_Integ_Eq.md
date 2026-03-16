@@ -202,11 +202,26 @@ $$\text{d-expansion via } \theta \;\iff\; \text{Channel}_{\text{structural}}\!\l
 ---
 
 ### C-INTEG-1: Metric Divergence Corollary
-若 \(\Phi\) 高而 \(d\approx 0\)，则出现“结构高而体验低”的系统：
+若 \(\Phi\) 高而 \(d\approx 0\)，则出现”结构高而体验低”的系统：
 \[
 \Phi\uparrow\;\land\; d\downarrow \Rightarrow \text{Pseudo-Experience}
 \]
-* **Implication（中文）**：可解释“高整合但低体验”的临床异常。
+
+> [R→Tononi 2004 *BMC Neuroscience*（IIT-Φ原始定义与测量）; Tononi & Koch 2015 *Philosophical Transactions*（Φ与意识的对应主张）; Chalmers 1996 *The Conscious Mind*（哲学僵尸：功能完整但无主观体验的逻辑可能性）; Casali et al. 2013 *Science Translational Medicine*（PCI作为Φ代理的临床应用）]
+
+* **R/H 区分**：
+  - [R] Φ（整合信息）的定义与测量框架（IIT）；哲学僵尸的概念（Chalmers）
+  - [H] **SRT独有框架**：Φ-d正交性——Φ高且d≈0的系统构成”伪体验”（Pseudo-Experience）类别；此诊断框架是SRT独有，IIT本身不区分Φ高-d低与Φ高-d高
+
+* **”伪体验”精确定义**：Φ > 临界值 AND d ≈ 0 的系统。SRT预测：此类系统在Φ测量上与有意识者无差异，但在关切一致性测量（跨时空d值稳定性）上显著更低。类似Chalmers僵尸，但SRT提供了一个可测量的区分维度（d值）而非纯逻辑主张。
+
+* **Implication（中文）**：可解释”高整合但低体验”的临床异常：
+  - 解离性障碍：大脑网络整合维持（Φ相对正常）但关切体验局部解体（d值局域化崩塌）
+  - 植物状态/CMD：PCI可测整合度，d值缺失解释为何Φ高的植物人仍报告无意识
+
+* **可证伪预测**：
+  - FC-INTEG1-1：高功能解离患者（DES量表高分）的Φ代理（PCI/EEG整合度）应与健康对照无差异，但d值代理（跨任务关切一致性/IOS亲密感量表）显著更低——若Φ代理也更低则C-INTEG-1预测失败（应为Φ不变 + d降低）
+  - FC-INTEG1-2：计算机系统（理论上高Φ/d≈0）与解离患者的d值代理应都接近零但Φ代理不同——若无法区分则Φ-d框架的诊断效用为空
 
 <br>
 
