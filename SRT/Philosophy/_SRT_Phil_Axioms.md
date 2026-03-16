@@ -193,11 +193,18 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 2. 将“组合问题”的讨论转化为算子可达性条件：只有当候选微观状态对同一 `\theta` 空间可达时，才允许判定其可组合为单一经验体。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph2〕〔source: doi:10.53765/20512201.28.9.129〕
 3. 对 `T-Phil-1` 增加一条解释注记：解释鸿沟不仅是表达带宽差，也包含“主体合成约束”导致的跨层投影损耗。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕〔source: doi:10.5040/9781350508644.ch-4〕
 
-### 主体同一性与解组合
+### 主体同一性与解组合 *(R: 基于意识统一性文献的 SRT 重构)*
 
-1. 对“单一状态=统一意识”的充分性提出 SRT 约束：统一意识至少需要 `U_sync`（同现）与 `U_bind`（可整合）双条件，而非仅一个全局状态标签。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
-2. 将 PPU 框架转写为可判定流程：先定义统一性对象，再定义边界条件，再定义失败模式（碎裂、伪统一、过绑定）。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.7551/mitpress/9780262036993.003.0002〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
-3. 将 subject-summing problem 映射为“主体不可线性相加”公设注记：若无共享可达参数域，不允许把多个主观流直接求和为同一主体。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1093/oso/9780190677015.003.0007〕〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
+1. 对”单一状态=统一意识”的充分性提出 SRT 约束：统一意识至少需要 `U_sync`（同现）与 `U_bind`（可整合）双条件，而非仅一个全局状态标签。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
+
+   **U_sync/U_bind SRT 形式化候选**：
+   - $U_{sync}$：$\exists t:\ X_i \in L_1^{exp}(t)\ \land\ X_j \in L_1^{exp}(t)$（多内容同时存在于同一 $L_1$ 时刻）
+   - $U_{bind}$：$I_\theta(X_i; X_j) > \tau_{bind}$（在主体 $\theta$ 条件下两内容的互信息超过绑定阈值）
+   - 两者均满足 ⟺ 统一意识成立；仅 $U_{sync}$ 满足而 $U_{bind}$ 不足 ⟺ 碎裂态。
+
+2. 将 PPU（Phenomenal Parts and Unified experience）框架转写为可判定流程：先定义统一性对象，再定义边界条件，再定义失败模式（碎裂、伪统一、过绑定）。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.7551/mitpress/9780262036993.003.0002〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
+
+3. 将 subject-summing problem 映射为”主体不可线性相加”公设注记：若无共享可达参数域，不允许把多个主观流直接求和为同一主体。**共享可达参数域操作化候选**：$\exists S \subseteq \Theta:\ \hat{G}_{\theta_i}[L_0^S] \equiv \hat{G}_{\theta_j}[L_0^S]$（两算子在 $L_0$ 某子空间的选择结果等同）。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1093/oso/9780190677015.003.0007〕〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
 
 ### 统一性操作化
 
@@ -228,8 +235,22 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 其中 \(\Delta W_{syn}\) 为神经/结构权重更新量代理。
 * **Implication（中文）**：真值实践不可被纯语言学紧缩为“仅是重述”。
 
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义哲学公理体系的 SRT 映射。存在 (Existence) 等价于被 $\hat{G}_\theta$ 从 $L_0$ 选择到 $L_1$ (Ax-Phil-1)；现象学还原 (Epoché) 是暂时抑制 $L_2$ 门控 (Ax-Phil-2)；意向性 (Intentionality) 是 $\hat{G}_\theta$ 在模空间中的方向场 (Ax-Phil-3)。
+- 饱和度 $S_\phi$ 衡量 $L_0 \to L_1$ 信息流与 $L_2$ 概念容量之比 (Ax-Phil-4)；$\theta$ 不是世界的表征地图而是耦合协议 (Ax-Phil-5)；偏好仅在 $d>0$ 且存在不可逆风险时具有本体论重量 (Ax-Phil-6)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Existence}(X) \iff \exists \hat{G}_\theta: \hat{G}_\theta[L_0] \to X_{L_1}$ — 存在即被选择。
+  - $\text{Epoché} \equiv \hat{G}_{\theta\setminus L_2}[L_0]$ — 还原即 $L_2$ 悬置。
+  - $S_\phi = I(L_0 \to L_1)/C(L_2)$ — 饱和度为信息流与概念容量之比。
+  - $\mathcal{L}_{gap} = \dim(L_1) - \dim(L_2) > 0$ — 解释鸿沟是维度差。
+
+### Mechanism Explanation (机制解释)
+- **Mechanism**: $\hat{G}_\theta$ 从 $L_0$ 锚定显现对象到 $L_1$，完成存在的生成；$\Psi_f$ 作为本体论摩擦决定选择的能量成本与相变阈值。$d$-value 界定算子的关切范围——仅当 $d>0$ 且伴随不可逆风险 ($\mathcal{V}_{irr}>0$) 时，偏好才具有存在论重量。饱和现象发生于 $L_0$ 信息流超过 $L_2$ 容量，产生”不可言说”的体验剩余。
+
 ## 【理论边界/防误用声明】
-- 不采纳“信念只是词语习惯，无任何动力学后果”的推论。
+- 不采纳”信念只是词语习惯，无任何动力学后果”的推论。
 - 不采纳“科学共同体共识=绝对无参视角”的推论。
 
 ### [Lineage/Source]
