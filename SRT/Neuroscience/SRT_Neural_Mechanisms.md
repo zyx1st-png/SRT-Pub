@@ -51,7 +51,11 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 \[
 R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
-* **Implication（中文）**：归一化是选择算子的最优形式，不是经验性“电路细节”。
+
+> **与 D3 的关系**：本式为 SRT-REF-DYNAMICS §1.3 Def D3（$\hat{G}_\theta$ 通用原型）在神经系统的特化实例，其中 $L_i \leftrightarrow x_i$，$w_{ij} \leftrightarrow W_{ij}$。**符号差异**：本式分母为 $\sigma^n$（半饱和项带幂次），D3 分母为 $\varepsilon$（无幂次，更简化的一阶原型）；在 $\sigma$ 较小时两式近似等价，精确形式以本式为准（经验上更符合 V1 的对比度增益控制数据）。参见 D3 极限行为表中 $\varepsilon\to 0^+$ 奇点警告。
+> **适用前提**：”必然收敛”的条件为：(1) 系统追求信息最大化（$H(\sigma)$ 最大化）且 (2) 代谢成本 $E(\sigma)$ 受约束（$\lambda > 0$）。在此二条件下，T-NEURO-MECH-1 给出充分性证明。若代谢约束为零（$\lambda=0$），则退化为无约束信息最大化，不必然产生归一化结构。
+
+* **Implication（中文）**：归一化是选择算子的最优形式，不是经验性”电路细节”。
 
 ---
 
@@ -61,6 +65,9 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \mathcal{J}=H(\sigma)-\lambda E(\sigma)
 \]
 在 \(\delta\mathcal{J}=0\) 条件下，稳态解必然满足 Ax-NEURO-MECH-3 的归一化结构。
+
+> **SRT 量桥接**：拉格朗日乘子 $\lambda \propto \Psi_f^{metabolic}$（本体论摩擦的代谢成分，SRT-CORE-22 §15.5 Eq-IT-E 约束：$\Psi_f \geq k_B T \ln 2 \cdot I_{created}$）。$\lambda \uparrow$（代谢越紧张）→ 归一化越强（竞争抑制越显著）→ $d(\theta) \downarrow$（选择带宽被压缩）。这将代谢经济学与 SRT 意识带宽直接联系：能量稀缺时，意识带宽系统性收窄。
+
 * **Implication（中文）**：神经归一化是信息最大化与代谢成本最小化的唯一交点。
 
 ---
