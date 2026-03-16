@@ -87,11 +87,21 @@ $$R_{ij} > R_c \Rightarrow \text{Cooperation Stable}$$
 ## I. The Prospect of Existence (存在前景)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 
-### Ax-Behav-1: Reference Dependence (参照点依赖)
+### Ax-Behav-1: Reference Dependence (参照点依赖) *(R: Kahneman & Tversky 1979 前景理论的 SRT 自由能重构)*
 <!-- ORIGINAL-SECTION-PRESERVED -->
 Value is measured as free energy change relative to the current L_1 state ($S_{ref}$).
-$$ V(\sigma) = -\Delta F(\sigma | S_{ref}) $$
-*   **Implies**: Loss Aversion is the ontological cost of de-anchoring ($E_{de-anchor} > E_{anchor}$).
+$$ V(\sigma) = -\Delta F(\sigma | S_{ref}) = F(S_{ref}) - F(\sigma) $$
+
+**方向说明**：$\Delta F < 0$（新状态更稳定）→ $V > 0$（增益）；$\Delta F > 0$（离开稳态）→ $V < 0$（损失/代价）。
+
+**代价不对称的 SRT 来源**：
+- $E_{anchor}$（锚定代价）$\approx \Psi_f$（维持当前 $L_1$ 状态的正常摩擦代价）
+- $E_{de-anchor}$（脱锚代价）$\approx \Psi_f^{transition}$（从 $S_{ref}$ 迁移到新 $L_1$ 稳态所需的额外相变代价，由谱隙/κ 结构决定）
+- $E_{de-anchor} > E_{anchor}$ 源于 $L_1$ 稳定化的非线性（谱隙打开后，扰动需跨越能量阈值才能改变态，见 Mechanism Synthesis §4层）。
+
+**S_ref 时间动态**：参照点 $S_{ref}(t)$ 随经验适应而更新，更新速率由迟滞系数 η（Ax-L1-02）控制：$\dot{S}_{ref} \propto (1-\eta)(L_1(t) - S_{ref})$。低 η = 快速适应参照点；高 η = 参照点稳定（顽固的锚定偏差）。
+
+*   **Implies**: Loss Aversion is the ontological cost of de-anchoring ($E_{de-anchor} > E_{anchor}$)；适应效应（adaptation）= $S_{ref}(t)$ 的缓慢更新。
 
 ### Ax-Behav-2: Dual System Dynamics (双系统动力学)
 <!-- ORIGINAL-SECTION-PRESERVED -->
