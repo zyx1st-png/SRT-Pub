@@ -75,7 +75,16 @@ $$E_{ij}=\frac{I(\hat{G}_i;\hat{G}_j)}{H(\hat{G}_i)}$$
 ### T-Cog-1: Decoupling Transition
 当 $d$ 值或耦合度下降时，现实分裂进入多相态。
 $$d \downarrow \lor E_{ij} \downarrow \Rightarrow L_1^{social} \to \text{multi-phase}$$
-*   **Implication**: 极化不是意见问题，而是耦合相变。
+
+**相变临界条件**：multi-phase 成立当且仅当 $\rho_{\hat{G}} < \rho_c$（Ax-Cog-4 成核阈值），即耦合下降需超过成核临界密度才触发相变，而非连续过渡。
+
+**E_{ij} 方向性**：$E_{ij} = I(\hat{G}_i;\hat{G}_j)/H(\hat{G}_i)$ 为**有向**耦合量，$E_{ij} \neq E_{ji}$。Echo chamber 的典型结构是单向退化：$E_{ij} \approx 0$（A 不接收 B 信息）但 $E_{ji} > 0$ 依然存在，极化动力学需追踪耦合矩阵的方向不对称性。
+
+**因果顺序**：$E_{ij} \downarrow$ 与 $d \downarrow$ 并非独立同级——信息流通减少可能先发，导致有效关切带宽收缩（$d_{\text{effective}} \downarrow$）；两者形成正反馈而非平行驱动。
+
+**Ψ_f^cross 联结**：$E_{ij} \downarrow \Leftrightarrow \Psi_f^{\text{cross}} \uparrow$（跨算子本体论摩擦增大；参见 SRT_Spirit_06_Love_Ontology §3.3 Boundary Protection 形式化）。
+
+*   **Implication**: 极化不是意见问题，而是耦合相变；治理目标是升高 $\rho_{\hat{G}}$ 越过 $\rho_c$，而非说服个体改变观点。
 
 ### T-Cog-2: Observer-Environment Integration（观察者-环境整合度）
 
