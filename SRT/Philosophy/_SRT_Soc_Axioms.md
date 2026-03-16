@@ -109,13 +109,24 @@ $$\sigma^* = \hat{G}_{social}(\sigma^*)$$
 
 ### 1.1 算子映射 (Operator Mapping)
 <!-- ORIGINAL-SECTION-PRESERVED -->
+
+> **[R]** 社会网络作为选择基质：Durkheim 社会事实（1895）、Bourdieu 场域/惯习（1980）、Giddens 结构化理论（1984）。**[H]** Ĝ_social 的 SRT 形式化与 θ 分量的参数化操作化为 SRT 新增贡献。
+
 $$ \hat{G}_{social} \equiv \text{The Collective Operator} $$
 
+**Ĝ_social 与个体算子的合成关系（[H — 操作化候选]）**：
+$$\hat{G}_{social} \approx \bigoplus_{i} w_i \cdot \hat{G}_{\theta_i} \quad \text{（加权聚合，权重 } w_i \text{ 由社会资本/制度地位决定）}$$
+注：聚合方式存在多种候选：① 交集（Ax-S1 中的 $\bigcap_i \hat{G}_i[L_1]$ = 保守聚合，只锚定所有个体共识的模态）；② 加权均值（权力不均衡时，高 $w_i$ 算子主导）；③ 优胜劣汰竞争（达尔文式模因竞争，→ SRT_SocTheory_05）。聚合方式的选择对 T-Soc-1（异化）和 Ax-S2（结构化二重性）的推论有重要影响。
+
 *   **物理基质**: 社会网络 (Social Graphs) + 语言 (Language)
-*   **具身参数 $\theta$**:
-    *   $\theta_{culture}$: 文化模因 (Memes)
-    *   $\theta_{institution}$: 制度规则 (Institutions)
-    *   $\theta_{norm}$: 道德与法律规范
+*   **具身参数 $\theta$ 的操作化候选**：
+    *   $\theta_{culture}$：文化模因（**[R]** Dawkins 1976）→ 操作化为传播单元的复制保真度+适应度（→ SRT_SocTheory_05_Language_Eco.md 文化吸引子）
+    *   $\theta_{institution}$：制度规则 → 操作化为正式规则的执行率 × 违规惩罚力度（制度有效性指数）
+    *   $\theta_{norm}$：道德与法律规范 → 操作化为违规行为的社会 $\Psi_f^{cross}$ 代价（声誉损失/排斥概率）
+
+**证伪条件（[H]）**：
+- 若 Ĝ_social 无法被分解为个体 Ĝ_{θᵢ} 的任何合成形式（预测误差系统性高于整体测量），则集体算子需独立本体化（不可还原为个体算子聚合）。
+- 若三类 θ 分量（θ_culture / θ_institution / θ_norm）的相关分析显示无法独立操作化（互相高度冗余），则需合并为更少分量。
 
 ### 1.2 域映射 (Domain Mapping)
 <!-- ORIGINAL-SECTION-PRESERVED -->
