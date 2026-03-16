@@ -73,18 +73,27 @@ $$E_{ij}=\frac{I(\hat{G}_i;\hat{G}_j)}{H(\hat{G}_i)}$$
 ## III. Derived Theorems
 
 ### T-Cog-1: Decoupling Transition
+
+[R→Granovetter 1978（阈值模型：集体行为的非线性临界）; Pariser 2011（过滤泡沫：算法导致的信息流单向退化）; Sunstein 2017（信息茧房与极化）; Bail et al. 2018（Twitter上的极化实验：跨群体暴露反而增强极化）] [H→以SRT耦合相变框架形式化极化动力学；ρ_c成核临界和E_ij有向信息量为SRT附加形式化层]
+
 当 $d$ 值或耦合度下降时，现实分裂进入多相态。
 $$d \downarrow \lor E_{ij} \downarrow \Rightarrow L_1^{social} \to \text{multi-phase}$$
 
-**相变临界条件**：multi-phase 成立当且仅当 $\rho_{\hat{G}} < \rho_c$（Ax-Cog-4 成核阈值），即耦合下降需超过成核临界密度才触发相变，而非连续过渡。
+**相变临界条件** [H]：multi-phase 成立当且仅当 $\rho_{\hat{G}} < \rho_c$（Ax-Cog-4 成核阈值），即耦合下降需超过成核临界密度才触发相变，而非连续过渡。
+- **ρ_c 操作化候选**：社会网络中的跨群体互关率（跨政治/文化圈的关注比例）/ 信息流的群体间渗透率（不同信息茧房之间的转发扩散系数）
 
-**E_{ij} 方向性**：$E_{ij} = I(\hat{G}_i;\hat{G}_j)/H(\hat{G}_i)$ 为**有向**耦合量，$E_{ij} \neq E_{ji}$。Echo chamber 的典型结构是单向退化：$E_{ij} \approx 0$（A 不接收 B 信息）但 $E_{ji} > 0$ 依然存在，极化动力学需追踪耦合矩阵的方向不对称性。
+**E_{ij} 方向性** [H]：$E_{ij} = I(\hat{G}_i;\hat{G}_j)/H(\hat{G}_i)$ 为**有向**耦合量，$E_{ij} \neq E_{ji}$。Echo chamber 的典型结构是单向退化：$E_{ij} \approx 0$（A 不接收 B 信息）但 $E_{ji} > 0$ 依然存在，极化动力学需追踪耦合矩阵的方向不对称性。
+- 注：Bail et al. 2018[R]发现跨群体暴露可能加剧极化——SRT解读：仅增加E_ij而不改变ρ_ĝ（整体耦合密度）不足以越过ρ_c；单向插入对方信息可能反而强化原本的E_ji阻断
 
-**因果顺序**：$E_{ij} \downarrow$ 与 $d \downarrow$ 并非独立同级——信息流通减少可能先发，导致有效关切带宽收缩（$d_{\text{effective}} \downarrow$）；两者形成正反馈而非平行驱动。
+**因果顺序** [H]：$E_{ij} \downarrow$ 与 $d \downarrow$ 并非独立同级——信息流通减少可能先发，导致有效关切带宽收缩（$d_{\text{effective}} \downarrow$）；两者形成正反馈而非平行驱动。
 
 **Ψ_f^cross 联结**：$E_{ij} \downarrow \Leftrightarrow \Psi_f^{\text{cross}} \uparrow$（跨算子本体论摩擦增大；参见 SRT_Spirit_06_Love_Ontology §3.3 Boundary Protection 形式化）。
 
-*   **Implication**: 极化不是意见问题，而是耦合相变；治理目标是升高 $\rho_{\hat{G}}$ 越过 $\rho_c$，而非说服个体改变观点。
+*   **Implication** [H]：极化不是意见问题，而是耦合相变；治理目标是升高 $\rho_{\hat{G}}$ 越过 $\rho_c$，而非说服个体改变观点。
+
+**证伪条件**：
+- FC-Cog1-1：若社会网络的跨群体信息流密度（ρ_ĝ代理）线性降低与极化程度线性正相关（无临界点/阈值效应），则T-Cog-1的"非连续相变"预测失败（应为连续过渡而非Granovetter型阈值效应）。
+- FC-Cog1-2：若实验性增加跨群体双向信息流（提升E_ij且同时提升E_ji，改变方向不对称性）后，极化程度下降，则SRT的"治理目标=升高ρ_ĝ越过ρ_c"预测得到支持；若极化仍然加剧（Bail效应），则需修正（单纯信息流增加不足，需结合Ψ_f^cross降低的机制）。
 
 ### T-Cog-2: Observer-Environment Integration（观察者-环境整合度）
 
