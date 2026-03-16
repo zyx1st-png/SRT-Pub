@@ -30,9 +30,21 @@ dependency: [SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY]
 ## I. Free Will as Meta-Selection
 
 ### Ax-Eth-1: Meta-Selection
+
+**[R — Retrodiction：追溯 Frankfurt 1971 层次意志论（first-order / second-order desires）的 SRT 操作化]**
+
 自由意志是对自身参数 $\theta$ 的二阶选择。
 $$\text{FreeWill} \equiv \hat{G}_{\theta'}[\theta]$$
-*   **Implication**: 自由意志不是“无因”，而是对因果结构的自我重写。
+
+**无穷回归问题与停止策略**：$\hat{G}_{\theta'}[\theta]$ 中的 $\theta'$ 又由谁决定？若有更高阶 $\hat{G}_{\theta''}[\theta']$，则形成无穷层级。**SRT 停止策略**（类似 §5.3 框架分层）：实践中停止于”能够反思当前选择参数的层级”——即 $\theta'$ 来自元认知能力（历史θ演化的稳定方向），无须追问 $\theta''$。这与 Frankfurt 的”effective will”类似：层级有限，终止于”无法进一步反思的欲望”。
+
+**$\theta'$ 的来源（三类）**：① **具身历史**：过去 $\theta$ 演化积累的方向性约束（$v_\theta$ 的历史偏置）；② **L₂文化规范**：外部 L₂ 结构对 $\theta'$ 的约束与资源（教育、价值观传递）；③ **元认知激活**：高d任务激活的反思能力（临时 $\theta'$ 激活）。
+
+**作用范围约束**：$\hat{G}_{\theta'}[\theta]$ 的修改受约束：① L₀结构性约束（神经生物基底限制 $\theta$ 可塑范围）；② L₂可改写边界（社会结构决定某些 $\theta$ 维度难以自主修改）；③ Ψ_f 代价（$\theta$ 自我重写是有摩擦成本的，不是随意的）。
+
+*   **Implication**: 自由意志不是”无因”，而是对因果结构的自我重写。自由的程度 ∝ $d$ 值（可达元选择的关怀带宽，Ax-Eth-3 责任-带宽耦合联结）。
+
+**证伪条件**：若在控制L₂文化规范和神经可塑性条件后，具有高反思能力（高θ'激活）的个体与低反思能力个体的行为选择方式无差异，则”二阶选择对θ的修改”假设失效。
 
 ### Ax-Eth-2: Metastable Window
 有效选择只能在亚稳态窗口出现。
