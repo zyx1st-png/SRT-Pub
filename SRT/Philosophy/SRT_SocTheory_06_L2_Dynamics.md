@@ -282,18 +282,28 @@ $$\theta_A, \theta_B \xrightarrow{\text{Reground in } L_0} \theta_{shared}$$
 
 ### 4.1 Nora Bateson 的核心区分
 
-**诺拉·贝特森** (Nora Bateson):  
+**[R — Retrodiction：将 Bateson 冷/暖数据区分追溯翻译为 SRT 互信息语言]**
+
+**诺拉·贝特森** (Nora Bateson):
 女儿继承父亲遗产，将暖数据 (Warm Data) 概念系统化。
 
-**冷数据** (Cold Data):  
+**冷数据** (Cold Data):
 去语境化的 $L_1$ 切片 — 统计数字、KPI、算法指标。
 
 $$\text{Cold Data} : I(\sigma; L_0^{context}) \to 0$$
 
-**暖数据** (Warm Data):  
+**暖数据** (Warm Data):
 保留关系纠缠的 $L_1$ 样本 — 故事、民族志、复杂系统数据。
 
 $$\text{Warm Data} : I(\sigma; L_0^{context}) \gg 0$$
+
+**操作化注**：$L_0^{context}$（原始语境潜在域）不可直接测量；实践中通过 $L_1$ 代理变量集合（背景变量、多关系层次）估计互信息。形式化量化见 §4.2（$W(\sigma) = I(\sigma; L_0^{full}) / I(\sigma; L_2^{abstract})$）。→ 这里的 $I(\sigma; L_0^{context})$ 是概念端点，§4.2 的 $W$ 是可计算代理。
+
+**连续谱注**：冷/暖区分不是二元分类，而是 $I$ 值的连续谱。$\to 0$ 和 $\gg 0$ 是两个极端；实际数据类型在谱上分布（详见 §4.2 表格）。
+
+**与 CR(d) 的结构联系**：暖数据（高 $I$）对应选择路径保留更多 $L_0$ 信息——与 $\text{CR}(d) \propto 1 - e^{-\alpha d}$（信息保留率随 $d$ 增大而增大）同构：高 $d$ 选择算子产生更"暖"的 $L_1$ 锚定。→ Cross-ref: SRT-CORE-12A Mechanism Synthesis §CR公式。
+
+**证伪条件**：若"暖数据"（高语境保留）在实证上不能更好预测系统行为（比较 Cold vs Warm 数据对跨组织干预效果的预测力），则互信息量化的区分价值需重新评估。
 
 ---
 
