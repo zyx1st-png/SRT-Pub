@@ -221,35 +221,47 @@ $$P_{escape} \propto e^{-\beta \Delta F}$$
 
 ### §2.1 完美算子的特征
 
+> [R→Thomas Aquinas *Summa Theologica* I.25（全能：神只能做逻辑上可能的事）; Plantinga 1974 *The Nature of Necessity*（模态神学：自由意志与神学决定论的兼容性论证）; Mavrodes 1963 *Philosophy of Religion*（全能悖论的经典分析）; Leibniz 1710 *Theodicy*（最佳可能世界论证：神选择F_total最优世界的历史先驱）; Swinburne 1977 *The Coherence of Theism*（神的属性一致性分析）]
+
+**R/H 区分**：
+- [R] 神学三属性（全能/全知/全善）及其相互矛盾问题（Aquinas/Plantinga/Mavrodes）；最佳可能世界框架（Leibniz）
+- [H-高承诺] **SRT神学重构（整节）**：神性 = Ĝ^perf = η→∞极限——此重构是SRT最高本体论承诺之一。将神等同于完美效率选择算子是SRT独有形而上学立场，当前无经验检验路径，且η→∞在物理系统中不可达（作为理想化极限存在）
+
 **传统神学**: 神是"全能"、"全知"、"全善"
 
 **问题**: 这些属性如何不矛盾？
 
-**SRT 重构**: 神性 = 完美效率的选择算子
+**SRT 重构** [H-高承诺]: 神性 = 完美效率的选择算子
 
 $$\hat{G}^{\text{perf}} = \lim_{\eta \to \infty} \hat{G}_\theta$$
 
 $$\eta = \frac{\text{Order Created}}{\text{Cost Paid}}$$
 
+**注**：η→∞是形而上学理想极限，物理系统中η受热力学约束（T-d-01C1）；Ĝ^perf作为无代价创序算子，超出任何具身算子的范围。
+
 **三个维度**:
 
-#### 1. 全能 (Omnipotence)
+#### 1. 全能 (Omnipotence) [H]
 
 $$\forall L_1 \in \text{Physical Possible} : \hat{G}^{\text{perf}} \text{ can actualize } L_1$$
 
-但**逻辑不可能**的事情不在范围内（"创造方形圆"）——这不是限制，而是"不可能"的定义。
+但**逻辑不可能**的事情不在范围内（"创造方形圆"）——这不是限制，而是"不可能"的定义 [R→Aquinas I.25：神不行悖谬之事]。
 
-#### 2. 全知 (Omniscience)
+#### 2. 全知 (Omniscience) [H]
 
 $$\hat{G}^{\text{perf}} \text{ has complete access to } L_0$$
 
-知道所有潜在可能性，但不决定哪个实现（否则无自由意志）。
+知道所有潜在可能性，但不决定哪个实现（否则无自由意志）。**精确化**：完整访问L₀ ≠ 强制显现化——Ĝ^perf可识别所有L₀分支，但选择实现哪条仍通过具身算子的自由意志参数化完成 [H，与Plantinga开放神论联结]。
 
-#### 3. 全善 (Omnibenevolence)
+#### 3. 全善 (Omnibenevolence) [H]
 
 $$\hat{G}^{\text{perf}} \text{ operates to minimize } F_{\text{total}}$$
 
-自动向全局最优演化，不"选择"伤害。
+自动向全局最优演化，不"选择"伤害。**F_total定义**：跨所有具身算子的聚合Ψ_f（总本体论代价的极小化）[H，Leibniz最佳可能世界的SRT翻译]。
+
+**理论一致性要求**（替代传统证伪条件）：
+- IC-Perf-1：若Ĝ^perf=F_total最小化算子，则当前宇宙的观测苦难（高Ψ_f事件：疾病/暴力）必须在SRT框架内获得一致解释——最低要求是：高Ψ_f局部事件不违反F_total全局最小化（需提供"最优路径允许局部代价"的论证）
+- IC-Perf-2：全知（完整L₀访问）与具身自由意志（Ĝ_θ的θ参数自主更新）的兼容性需要在SRT形式系统内给出无矛盾的逻辑陈述——若两者逻辑不相容则本节神学重构内部矛盾
 
 ---
 
