@@ -854,12 +854,15 @@ $$P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters})$$
 
 ### 5.1.2c 热时间算子（Thermal Time Operator）
 
-基于 Connes 和 Rovelli 的"热时间假说"——时间是由系统的统计状态衍生出来的变量。
+> **探索性模块（推测性）**：本节是 Connes-Rovelli 热时间假说与 SRT 框架的类比扩展，非严格推导，待进一步形式化。
 
-**SRT 构建**：将时间定义为 **$\hat{G}_θ$ 处理信息效率的函数**。
-$$\text{Time}_{flow} \propto \frac{S_{L_1}}{I_{L_0}}$$
+基于 Connes 和 Rovelli 的"热时间假说"——时间是由系统的统计状态（密度矩阵 $\rho$ 的模流 $\sigma_t$）衍生出来的变量，而非基本量。**SRT 类比**：将时间流速定义为 $\hat{G}_\theta$ 对 $L_0$ 的**信息压缩率**：
+$$\text{Time}_{flow} = \tau_0 \cdot \frac{I_{L_0} - I(L_1; L_0)}{I_{L_0}} = \tau_0 \cdot \left(1 - \frac{I(L_1; L_0)}{I_{L_0}}\right)$$
+其中 $\tau_0$ 为系统特征时间尺度（物理量纲载体），$I(L_1;L_0)$ 为 L₁ 与 L₀ 的互信息，$I_{L_0}$ 为 L₀ 的总信息量。
 
-**关键洞见**：时间流速越快，意味着该算子对 $L_0$ 的忽略程度越高。
+> **量纲说明**：原式 $S_{L_1}/I_{L_0}$ 为无量纲比，需要引入 $\tau_0$ 赋予时间量纲。**逻辑精化**：时间流速∝算子对 L₀ 的"忽略率"（$(I_{L_0} - I(L_1;L_0))/I_{L_0}$）——算子压缩 L₀ 信息越多（互信息占比越小），时间流速越快（越粗略处理当下）。与 Ax-IF-01（$\text{Intelligence} \propto I(L_1;L_0)/H(L_1)$）互补：高智能=高互信息占比=时间流速慢（精确处理 L₀）。
+
+**关键洞见（精化）**：时间流速越快，意味着该算子对 $L_0$ 的互信息提取率越低（$I(L_1;L_0)/I_{L_0}$ 越小），即算子处于"粗略扫描"模式，大量 L₀ 可能性被忽略。反之，冥想/专注状态（高 $I(L_1;L_0)$）→ 主观时间流速放慢，与实验现象一致。
 
 ### 5.1.2d 存在熵（Existential Entropy）
 
@@ -1157,6 +1160,26 @@ $$\text{心智} \not\subseteq \text{大脑}$$
 ## 7.1 重整化群流与向下因果
 
 宇宙作为全局 FEP 系统，宏观对微观施加向下因果。
+
+### 7.1a Asymptotic Safety 分形时空窗口（2026-03-16 patch）
+
+Quanta 对 Astrid Eichhorn 的访谈，以及其背后的 asymptotic safety 文献链（Donà, Eichhorn & Percacci 2013 `Matter matters in asymptotically safe quantum gravity`；Shaposhnikov & Wetterich 2009；Held & Eichhorn 2017/2018）为本节补上了一个重要但必须降级处理的量子引力窗口：**“跨尺度同构 / fixed point / 无特殊尺度”不只是 SRT 的抽象语言，也对应一个正在被严肃发展的 UV 完备候选。**
+
+这里最值得吸收的不是“时空真的是分形”这句口号，而是更窄的结构主张：
+
+- 若引力与物质耦合的 RG 流在极高能区到达**相互作用 fixed point**，那么理论不会在 Planck 标度继续发散失控；
+- 在这个极限中，系统逼近一种近似 **scale symmetry**，因此短尺度物理可呈现 **fractal-like / self-similar** 的有效几何；
+- 于是“量子引力需要完全抛弃场论/连续时空”的结论就不再是唯一选项，连续 QFT 本身也可能在 fixed-point 处自洽闭合。
+
+对 SRT 来说，它的价值在于把 `Ax-Scale-01` 的“跨尺度同构”具体化为一种物理候选：**宇宙并非在每个更小尺度都必须引入全新规则；也可能在某个 UV 固定点附近进入‘规则不再继续变化’的稳定区。** 这与 SRT 将 `L_2` 视为稳定固定点族、将重整化看成跨尺度选择半群的写法是相容的。
+
+更进一步，这条线索让 “时空共识” 多了一种可想象的微观实现：宏观上看像连续几何，微观上则可能因 fixed-point 附近的自相似流而呈现非平凡维度与分形样外观。换言之，SRT 的“尺度无关选择语法”在这里获得了一个 quantum-gravity 方向上的候选宿主。
+
+**边界必须收紧：**
+- 当前证据主要来自 functional RG 与截断近似；并非已被实验确认的量子引力定论。
+- “fractal-like spacetime” 在这里是 UV 有效几何/标度行为的说法，不等于宏观世界真是字面分形图案。
+- 许多结果仍基于 Euclidean 或简化 setting；完整 Lorentzian、全物质耦合与可检验预测仍在发展中。
+- Higgs / top / bottom mass 等结果更适合当作 model-dependent retrodiction window，不能被写成 SRT 已获得的硬预测。
 
 ## 7.2 本体论偏置
 
