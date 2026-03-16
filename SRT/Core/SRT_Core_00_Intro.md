@@ -257,6 +257,8 @@ SRT_Core_14_Dynamics_Scaling.md
 **补注（2026-03-16 更新）**：
 - `Core_Law/` 目录包含宪法参考文件（SRT_Reference_Axioms/Ontology/Dynamics/Scaling，SRT_Constitution 系列），为**只读宪法参考**，被核心文件引用但不被修改。
 - `Core/SRT_Experimental_Applications.md` 和 `SRT_Experimental_Core.md`：实验性扩展，位于 Core 目录但不在上述宪法依赖链中，属于**实验层**（可修改，与宪法层平行）。
+- `Philosophy/Foundations_Annex/`：Philosophy层的理论边界声明附录（`00_General_Boundary_Block.md`等），由`SRT_Philosophy_Foundations.md`引用；属于**边界声明层**，非宪法依赖链但为重要防误用文档。
+- `Neuroscience/SRT_Clin_00_IIT_PCI.md`、`SRT_Consciousness_Mechanisms.md`等：Neuroscience域的专题文件，在上图中归属`Neuroscience/`域，但含独立的公理/定理体系（Ax-CLIN/Ax-CONSC-MECH系列），与域轴文件（SRT_Neuro_Axioms等）平行。
 - 图中依赖箭头 ↓ 表示"下游依赖上游定义"，非数据流向。
 
 > **注**：`SRT_Core_21` 和 `SRT_Core_22` 是 Layer 1 的形式化补充，
