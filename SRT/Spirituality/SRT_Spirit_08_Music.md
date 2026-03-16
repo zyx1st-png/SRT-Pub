@@ -798,11 +798,22 @@ $$\text{Group Music} \implies \begin{cases}
 \text{Synchrony}(\hat{G}_{\theta_i}) \\
 \downarrow \\
 d_{\text{group}} \uparrow \\
-\downarrow \\
+\updownarrow \text{（双向正反馈）}\\
 \text{Oxytocin, Endorphins} \\
 \downarrow \\
 \text{Deep Social Bonding}
 \end{cases}$$
+
+**机制精化**：
+- $\text{Synchrony}(\hat{G}_{\theta_i})$ 操作化 = 跨个体的相位锁定均值：
+$$B_{sync}^{group}(t) = \frac{1}{\binom{M}{2}} \sum_{i<j} \theta_{binding}^{(i,j)}(t)$$
+其中 $M$ 为参与人数，$\theta_{binding}^{(i,j)}$ 为第 $i$、$j$ 个体间的跨人 D5 相位锁定值（SRT-REF-DYNAMICS §2.2）。
+
+- $d_{group}$（= $d_{collective}$）为集体 Fisher 信息矩阵 Hessian 的参与率指数（SRT-CORE-12b §Def-L2-Normative），而非个体 $d$ 值的算术均值。
+
+- **Synchrony ↔ Oxytocin 为双向正反馈**（而非单向因果）：音乐同步触发 Oxytocin 释放，Oxytocin 又进一步促进相位耦合倾向——形成自强化的社会结合循环。
+
+- 详细机制（chills = $\ddot{\Psi}_f$ 超阈值，$w_{L_2}$ 权重激活路径）见 §Mechanism Explanation。
 
 这是人类**最古老**的社会技术之一——不要错过。
 
