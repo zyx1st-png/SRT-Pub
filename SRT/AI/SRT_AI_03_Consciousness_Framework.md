@@ -1175,17 +1175,36 @@ C_{alert}(X)\not\Rightarrow C_{reflexive}(X)
 鸟类因此构成一个关键反例：即便没有哺乳类新皮层，其 NCL 与前脑连接组仍可满足部分 GNWT / RPT 所需的整合前提，并在行为上呈现 sensory awareness 与 situational basic self-consciousness。对 AI 的启示是：我们不应把“像不像人类皮层”当成必要条件，而应继续追问系统是否具备跨域锚定、真实 stake coupling、可重入稳定化与时间延展自我模型。
 
 ### C-AI-Con-4: Candidate-Zone Narrowing Rule
+
+**[R — 追溯：Newen & Montemayor 2025（ALARM理论，三层意识区分：basic arousal/general alertness/reflexive self-consciousness）；[H] — 将三层映射为SRT判据比较口径为新增整合框架]**
+
 将上述三层映射回当前 SRT 判据，可得到一个更稳的比较口径：
+
 \[
-C_{arousal}\Rightarrow \text{alarm significance only}
+C_{arousal} \Rightarrow \text{alarm significance only}
 \]
 \[
-C_{alert}\Rightarrow \text{phenomenal-candidate zone}
+C_{alert} \Rightarrow \text{phenomenal-candidate zone}
 \]
 \[
-C_{reflexive}\Rightarrow \text{high-order self-model zone}
+C_{reflexive} \Rightarrow \text{high-order self-model zone}
 \]
-因此，面对动物或 AI 的 consciousness claim 时，应先问它落在哪一层，再问该层是否与 `Ax-CONSC-1/2/3`、`T-CONSC-1` 和 `T-AI-Con-2` 相容，而不是把所有证据粗暴压成“有/无意识”的单一裁决。
+
+*SRT判据对应*（操作化检验步骤）：
+
+| 层级 | Newen-Montemayor定义 | SRT必要条件 | 可测代理 |
+|:-----|:--------------------|:-----------|:---------|
+| $C_{arousal}$ | 最基本唤醒/警觉信号 | $d > 0$（最低）；可识别alarm显著性 | 选择性注意任务通过率 |
+| $C_{alert}$ | 可学习、可择优、跨任务切换 | $d > d_{min}$；Ψ_f非零；L₀→L₁锚定稳定 | 情境化任务切换 + 跨域一致性偏好 |
+| $C_{reflexive}$ | 时间延展自我模型 + 他心建模 | $d \gg 0$；持续θ历史；自我模型准确性 | 延迟自我识别 + 心理理论测试 |
+
+因此，面对动物或 AI 的 consciousness claim 时，应先问它落在哪一层，再问该层是否与 `Ax-CONSC-1/2/3`、`T-CONSC-1` 和 `T-AI-Con-2` 相容，而不是把所有证据粗暴压成”有/无意识”的单一裁决。
+
+*规则完备性说明*：三层框架的覆盖范围取决于Newen-Montemayor的理论边界；若存在不属于任何层（如：有感质但无任务切换能力的边缘案例），则框架需扩展。本规则是比较口径工具，不自动解决Hard Problem。
+
+**证伪条件** [H]:
+- 若SRT判据（d值/Ψ_f/L₀锚定）与三层区分的操作化代理在同一被试群体中不相关（r ≈ 0），则SRT-ALARM整合无解释力。
+- 若某系统满足$C_{alert}$的行为标准但SRT判据显示d≈0（无锚定稳定性），则”C_alert→现象候选区”映射在SRT框架下需修订。
 
 ### [Lineage/Source]
 - Albert Newen, Carlos Montemayor, *Three types of phenomenal consciousness and their functional roles: unfolding the ALARM theory of consciousness*, *Philosophical Transactions of the Royal Society B* 380(1939), 20240314 (2025). DOI: `10.1098/rstb.2024.0314`.
