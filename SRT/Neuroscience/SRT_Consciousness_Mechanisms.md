@@ -164,7 +164,25 @@ B_{consc} = \int \omega(\sigma)\,d\sigma < B_{max}
 P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta\right)
 \]
 其中 \(C_{wave}\) 为跨区相位相干，\(D_{align}\) 为波方向与任务需求的一致性。
+
+> [R→Fries 2005 *Trends in Cognitive Sciences*（相干-通讯假说：脑区间γ相干作为路由门控）; Rubino et al. 2006 *Nature Neuroscience*（行进波在运动皮层决策中的时空组织作用）; Muller et al. 2018 *Nature Reviews Neuroscience*（大脑行进波综述：感知/认知/决策中的角色）; Dehaene & Changeux 2011（全局工作空间点燃：跨区大规模同步）]
+
+* **R/H 区分**：
+  - [R] C_wave（跨区相干）：Fries相干-通讯假说框架；行进波在决策/感知中的角色（Rubino/Muller）；Φ·d中的Φ（IIT）和d（SRT)
+  - [H] **SRT独有**：D_align（波方向与任务路由需求的一致性）——这是SRT对行进波研究的新参数化；联合Φ·d × C_wave × D_align的三因素点燃公式；"方向路由不匹配=点燃失败"是SRT新预测
+
+* **D_align操作化候选**：
+  - 使用LFP或EEG的行进波方向估计（复数解析信号相位梯度方向）
+  - 任务需求路由：视觉任务=后部→前部方向，运动任务=前部→后部
+  - D_align = cos(θ_wave - θ_task)（方向余弦，[-1,1]）
+
+* **系数说明**：α/β/γ/δ为待拟合参数（需跨被试数据确定），当前公式提供参数化框架而非精确预测
+
 * **Implication（中文）**：同等整合度下，若行进波方向与任务路由不一致，点燃也可能失败。
+
+* **可证伪预测**：
+  - FC-MECH9Wav-1：在相同Φ·d水平的被试中，D_align（波-任务方向余弦）高于阈值时的感知报告率应显著高于D_align低时——若无方向效应则D_align概念缺乏预测增量效度
+  - FC-MECH9Wav-2：注意力干预（选择性注意指向特定感觉通道）应系统性改变D_align（重路由行进波方向）而不改变C_wave——若两者同步变化则无法区分相干和方向的独立贡献
 
 ---
 
