@@ -114,13 +114,17 @@ $$ \text{Branching States} \equiv \hat{G}_\theta \text{ 的多重锚定痕迹} $
 
 > ⚠️ SRT-Penrose深度融合
 
-彭罗斯的$E_G$标准为SRT提供了一个关键洞见：幽灵算子$\hat{G}_\theta$的激活并非任意的"观测"事件，而是受到**本体论摩擦**（Ontological Friction）的约束。
+彭罗斯的$E_G$标准为SRT提供了一个关键洞见：幽灵算子$\hat{G}_\theta$的激活并非任意的”观测”事件，而是受到**本体论摩擦**（Ontological Friction）的约束。
 
 **本体论摩擦的形式化定义：**
 
 $$ \mathcal{F}_{ont} \equiv \frac{1}{ℏ} \int d^3x \, |\nabla(\Phi_1 - \Phi_2)|^2 $$
 
+> **[R]** $\mathcal{F}_{ont}$ 的定义直接对应彭罗斯引力 OR 模型的 $E_G$（引力自能差，量纲 = 能量），原文见 Penrose 1996 *ORCH-OR*。
+
 **关键推论——选择的层级结构：**
+
+> **[H]** 以下三级触发结构为 SRT 新增预测：将 Penrose 的物理坍缩阈值推广为”选择算子的激活条件分类”，并引入 d 值作为第二轴。
 
 $$ \hat{G}_\theta^{trigger} = \begin{cases}
 \text{强制触发} & \text{if } \mathcal{F}_{ont} \geq \mathcal{F}_c \\
@@ -128,11 +132,23 @@ $$ \hat{G}_\theta^{trigger} = \begin{cases}
 \text{延迟叠加} & \text{if } \mathcal{F}_{ont} < \mathcal{F}_c \text{ 且 } d < d_{min}
 \end{cases} $$
 
-这里的 $\mathcal{F}_{ont}$ 可视为 $Ψ_f$ 在物理尺度上的规范读数之一，而非纯修辞类比。也就是说，引力阈值之所以重要，不只是因为它“像”本体论摩擦，而是因为它正是本体论摩擦在物理层的实现。对应地，是否发生强制坍缩，也可改写为一个微观可支付性判据：
+**参数操作化候选**：
+- $\mathcal{F}_c$：对应 Penrose $E_G$ 临界能量 $\approx E_P^2/m$（$E_P$ = 普朗克能量，$m$ = 叠加质量差），可从 GRPO/CausalGRW 实验设计中推算数量级。
+- $d_{min}$：候选 = $d_{UAL}$（→ Cor-CONSC-1），即意识主体维持选择主动性所需最低关切带宽；此值将”主动选择”与”延迟叠加”分开。
+- $\mathcal{F}_{ont}^{cap}$：系统在时间窗 $\Delta t$ 内可支付的最大摩擦量，候选操作化为代谢率代理（生物系统：ATP 水解速率；工程系统：功耗密度/散热极限）。
+
+**⚠️ 量纲注意（降级为结构类比）**：$\mathcal{F}_{ont}$ 量纲为**能量**（J），而 SRT 框架中 $\Psi_f = \int_\gamma \sqrt{g_{ij}\dot\theta^i\dot\theta^j}\,dt$ 量纲为 **Fisher 几何作用量**（无量纲或信息比特）。两者不可直接等同，而是**结构类比**——均为”维持非坍缩叠加的代价函数”，存在比例映射 $\mathcal{F}_{ont} = \lambda \cdot \Psi_f$（$\lambda$ 含量纲转换系数，待实验确定）。”就是同一个东西”的强等同应降级为”在物理层的对应实现”。
+
+是否发生强制坍缩可改写为微观可支付性判据：
 \[
 \mathcal{F}_{ont}^{req}(\Delta t) > \mathcal{F}_{ont}^{cap}(\text{system},\Delta t) \Rightarrow \text{forced collapse}
 \]
 一旦所需摩擦超出该时间窗内系统的可支付上限，延迟叠加就不再可维持。
+
+**证伪条件**：
+1. 若 GRPO 或类似量子引力实验测得坍缩时间 $\tau_{collapse}$ 与 $\mathcal{F}_{ont}$ 无关（而与质量平方 $m^2$ 的彭罗斯公式 $\tau \approx \hbar/E_G$ 预测偏离），则 $\mathcal{F}_{ont}$-$\Psi_f$ 类比的物理基础失效。
+2. 若”主动选择”区的行为输出（高 $d$、低 $\mathcal{F}_{ont}$）与”延迟叠加”区无可测差异（控制 $\mathcal{F}_{ont}$ 后），则 $d_{min}$ 对触发分类无独立贡献。
+3. 若$\lambda$（量纲转换系数）在不同物理系统中不稳定（无统一值），则结构类比降级为纯隐喻。
 
 ### 1.3.7 量子本体-经典约束错配问题（新增）
 
