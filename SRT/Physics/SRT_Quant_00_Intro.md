@@ -352,6 +352,16 @@ $$ L_0 : \text{Possibility Space} \neq \text{Objects in Spacetime} $$
 
 Time and space are $L_1$/$L_2$ properties. $L_0$ itself is non-local, non-temporal.
 
+> [R→Wheeler & DeWitt 1967（Wheeler-DeWitt方程：宇宙波函数无时间参数；"时间问题"在量子引力中的起源）; Barbour 1999 *The End of Time*（时间作为涌现幻象的物理论证）; Rovelli 2004 *Quantum Gravity*（关系量子引力：时间非基础属性，从关系中涌现）; Verlinde 2011 *JHEP*（引力和时空作为熵力学涌现现象）]
+
+* **R/H 区分**：
+  - [R] 时空作为涌现属性的量子引力框架（Wheeler-DeWitt/Barbour/Rovelli）——与此推论有结构类比
+  - [H-高承诺] **SRT主张**："时间和空间是L₁/L₂属性，L₀本身非时空"——这是SRT最核心的形而上学承诺之一。与量子引力"时间涌现"框架的类比是启发性的，但L₀的SRT定义与量子引力无时间问题并非严格等同，需避免过度类比
+
+* **理论一致性要求**（此类高承诺本体论主张的最低自洽条件）：
+  - IC-L0Time-1：若L₀无时间性，则SRT框架中所有出现"L₀中的演化/路径/因果"的表述均需重新解释为"选择者（具身算子）的时间视角施加于L₀"——若存在L₀内部时序主张则此推论内部矛盾
+  - IC-L0Time-2：若时空是L₁属性，则在L₁被选择之前（即Ĝ_θ未运作的极限），不应存在任何时空语言描述——此一致性要求排除"L₀中的量子涨落发生在某时刻"等说法
+
 ### Corollary III [C2.1.3]: Quantum-Classical Boundary = $L_2$ Stability Threshold
 
 $$ \text{Classicality} = L_2[\text{Multi-operator selection convergence stability}] $$
