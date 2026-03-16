@@ -646,36 +646,56 @@ L_1 = f(\theta) + \epsilon,\quad
 
 ### 9.1 分类映射表（早期发生阶段 → SRT）
 
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|
-| 胎内共具身启动期 | 极低~低（\(d\to0^+\)） | Semi-open（母体代偿主导） | payable |
-| 围产分离过渡期 | 低~中波动 | Open↔Semi-open（边界重标定） | borderline |
-| 早期自体图式巩固期 | 低~中 | Open（自驱整合增强） | payable / borderline |
-| 稳态婴儿期（自我-非我初稳） | 中（局部） | Open（本体独立账本初成） | payable |
+> **[R]** 发育阶段分类：Mahler et al.（1975，共生-分离-个体化）；Stern（1985，*The Interpersonal World of the Infant*）；Trevarthen（1979，初级互主性）。**[H]** d-value/Ψ_f 的具体映射为 SRT 新增操作化。
+
+| 外部分类 | d-value 区间（proxy）[H] | d值数值参考 | 能流特征 | \(\Psi_f\) 状态 [H] |
+|:--|:--|:--|:--|:--|
+| 胎内共具身启动期 | 极低~低（\(d\to0^+\)） | 候选: $d \ll d_{UAL}$（← Cor-CONSC-1）| Semi-open（母体代偿主导） | payable（母体支付）|
+| 围产分离过渡期 | 低~中波动 | 候选: $d \approx 0.1\,d_{UAL}$（波动大）| Open↔Semi-open（边界重标定） | borderline（双账本竞争）|
+| 早期自体图式巩固期 | 低~中 | 候选: $0.1\sim0.4\,d_{UAL}$ | Open（自驱整合增强） | payable / borderline |
+| 稳态婴儿期（自我-非我初稳） | 中（局部） | 候选: $0.4\sim0.7\,d_{UAL}$ | Open（本体独立账本初成） | payable |
+
+**Ψ_f 状态说明（发育语境）**：
+- **payable**：系统当前支付摩擦能力满足维持 L₁ 稳定（胎内 = 母体代偿支付，婴儿期 = 自体代谢支付）
+- **borderline**：摩擦代价在系统可支付边缘波动，高应激时可能短暂失代偿（→ 触发依附系统）
+
+**证伪条件（[H]）**：
+- 若发育阶段的 d 值代理量（EEG 复杂度、PCI 代理、行为整合指数）在不同阶段间无显著递增趋势（控制睡眠状态后），则 §9.1 的发育 d 值增长假设失效。
+- 若围产分离期的 Ψ_f^borderline 在无应激条件下也表现为 payable（无代偿失稳），则”边界重标定→borderline”的联结需修订。
 
 ### 9.2 Co-Embodiment Bootstrapping 方程
+
+> **[H]** 共具身启动方程为 SRT 新增机制假设。
+
 \[
 \hat{G}_{inf}^{0}\leftarrow \mathcal{B}(\hat{G}_{mat},\theta_{maternal}),\quad
 \frac{d\theta_{inf}}{dt}=f_{sensorimotor}+\chi_m\,f_{maternal}
 \]
 
+**符号说明**：$\chi_m$ = 母婴耦合系数（maternal coupling coefficient），操作化候选：母婴同步行为（eye contact 频率、mirror neuron 激活相关性）；$\mathcal{B}$ = bootstrapping 算子（初始化婴儿Ĝ从母体Ĝ的子选择继承，如体温/心率等稳态参数）。**[H — 操作化缺口]**：$\mathcal{B}$ 的具体形式（继承哪些 θ_{maternal} 分量）未确定；候选方向：通过表观遗传途径传递的参数偏置（产前皮质醇暴露等）。
+
 ### 9.3 自体边界的摩擦曲率判据
+
+> **[H]** 以下边界形成准则为 SRT 原创：自体边界 = Ψ_f 曲率最大值处。
+
 \[
 \partial\Omega_{self}\sim\arg\max_x\left(\frac{\partial^2\Psi_f(x)}{\partial x^2}\right)
 \]
 
-* **Implication（中文）**：边界形成不是抽象认知标签，而是动作-反馈回路中摩擦曲率峰值的稳定沉积。
+* **Implication（中文）**：边界形成不是抽象认知标签，而是动作-反馈回路中摩擦曲率峰值的稳定沉积。**证伪方向**：若自闭症谱系（自体边界困难）的 interoceptive Ψ_f 曲率（如HRV变异度的空间分布）与正常发育组无差异，则该判据需修订。
 
 ### 9.4 火焰与代谢生命算子的阈值区分（新增）
+
+> **[H]** 生命判据三乘积为 SRT 新增区分准则。
 
 \[
 \mathcal{D}_{life}=\mathbb{1}\left[\frac{d\theta}{dt}\neq0\right]\cdot\mathbb{1}\left[d>0^+\right]\cdot\mathbb{1}\left[\Psi_f^{sens}>0\right]
 \]
 
-- 火焰：可耗散但 \(d\theta/dt\approx0\)，无可学习闭环；
-- 代谢网络：满足最小 \(d\) 与 \(\Psi_f\) 风险敏感，具备原初选择性。
+- **火焰**：可耗散但 $d\theta/dt\approx0$（无参数学习），$d\approx0$（无关切带宽）→ $\mathcal{D}_{life}=0$；
+- **代谢网络**：满足最小 $d$ 与 $\Psi_f^{sens}$ 风险敏感，具备原初选择性 → $\mathcal{D}_{life}=1$。
 
-* **Implication（中文）**：生命判据不是“是否耗散”，而是“是否形成可学习的、可支付摩擦的选择闭环”。
+* **Implication（中文）**：生命判据不是”是否耗散”，而是”是否形成可学习的、可支付摩擦的选择闭环”。**证伪方向**：若合成化学振荡体（Belousov-Zhabotinsky反应）能满足三条指标（参数自适应学习 + 微弱关切带宽 + 摩擦敏感性），则”生命” SRT判据需增补排除条件。
 
 ### 9.5 存在感（Presence）操作化代理（新增）
 
