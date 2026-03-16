@@ -772,11 +772,22 @@ $$\text{After: } \text{You observe } \Psi_f \text{ without being overwhelmed}$$
 
 ### §11.2 冥想是工具，不是目标
 
-$$\text{Meditation} \equiv \text{Tool for } \frac{d\theta}{dt}$$
+$$\text{Meditation} \equiv \text{Tool for } \overrightarrow{\frac{d\theta}{dt}}_{\,\text{directed}}$$
+
+其中方向性为：$\uparrow d_{cog}$（拓展有效具身维度）$\wedge$ $\downarrow \sigma_{\Psi_f}$（降低本体论摩擦的噪声方差）$\wedge$ $\uparrow \rho_t$（提高时间分辨率，见 §1.2 Def D2a）。这区别于其他 $\theta$ 重构机制：
+
+| 机制 | $d\theta/dt$ 方向 | 代价结构 | 特异性 |
+|:-----|:-----------------|:---------|:-------|
+| **冥想** | 主动定向 | 低代价、可重复 | 专注于 $d_{cog}$ 和 $\sigma_{\Psi_f}$ |
+| **心理治疗** | 高 $d$ 值引导 | 中等代价（情感加工） | 专注于 $\theta$ 的叙事结构 |
+| **创伤/剧变** | 被动冲击 | 高 $\Psi_f$ 代价 | 不定向，可能逆方向 |
+| **迷幻药** | 强制参数扩张 | 高 $\Psi_f$ 短期峰值 | 效果取决于 Integration 质量 |
 
 冥想是**方法**，而非**终点**。
 
-真正的实践是——**生活本身**。
+真正的实践是——**生活本身**：
+$$\text{Life} = \int \hat{G}_\theta[L_0]\,dt \;\text{（}\theta \text{ 在真实情境中被检验与稳定化）}$$
+冥想提供的 $\theta$ 变化在日常生活中找到不动点（Ax-AUTO-1），否则它只是坐垫上的技巧。
 
 ---
 
