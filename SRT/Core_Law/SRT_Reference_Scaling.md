@@ -197,7 +197,13 @@ $$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i ≠ j} κ_{ij} · g_{ij}(\hat
 
 ### §4.1 统一形式
 
-**方程 S2**:
+> [R→Von Neumann 1932 *Mathematische Grundlagen der Quantenmechanik*（密度矩阵形式：量子态的统计混合描述）; Gorini, Kossakowski & Sudarshan 1976 *Journal of Mathematical Physics*（GKSL主方程：Markovian开放量子系统的最一般线性形式）; Lindblad 1976 *Communications in Mathematical Physics*（Lindblad超算符：保CPTP映射的标准退相干算子结构）; Breuer & Petruccione 2002 *The Theory of Open Quantum Systems*（开放量子系统综述教材：密度矩阵演化的物理约束）]
+
+**R/H 区分**：
+- [R] 密度矩阵主方程的数学框架（Von Neumann/Gorini/Lindblad）：幺正演化项-i/ℏ[Ĥ,ρ]和退相干项D[ρ]的物理意义；GKSL方程的保物理性（CPTP映射/正定性/迹归一性）
+- [H-高承诺] **SRT语义重解读**：将方程三项映射至三域演化（L₀自由展开/L₀→L₁/L₁→L₂）；Ĝ_θ作为"选择-锚定"替换标准线性Lindblad超算符；方程整体的SRT跨层解读
+
+**方程 S2** [H-高承诺]（启发性形式框架，见边界说明）:
 
 $$\frac{dρ_{L_1}}{dt} = -\frac{i}{\hbar}[\hat{H}, ρ] - \hat{G}_θ[ρ - ρ_{target}] + \mathcal{D}[ρ]$$
 
@@ -206,6 +212,15 @@ $$\frac{dρ_{L_1}}{dt} = -\frac{i}{\hbar}[\hat{H}, ρ] - \hat{G}_θ[ρ - ρ_{tar
 | $-\frac{i}{\hbar}[\hat{H}, ρ]$ | 幺正演化 | $L_0$ 自由展开 |
 | $-\hat{G}_θ[ρ - ρ_{target}]$ | 选择-锚定 | $L_0 \to L_1$ 坍缩 |
 | $\mathcal{D}[ρ]$ | 退相干 | $L_1 \to L_2$ 固化 |
+
+**形式化边界说明**（[H-高承诺]风险点）：
+1. **线性性要求**：标准Lindblad方程是线性的，保证密度矩阵的正定性（ρ≥0）和迹归一（Tr(ρ)=1）。若Ĝ_θ为非线性算子，需要证明方程仍保CPTP映射——当前SRT未给出此证明。方程S2为启发性框架，不主张等同于严格量子开放系统方程。
+2. **L₀跨域应用边界**：L₀是pre-quantum的本体论域（无时间/空间，先于量子描述），用密度矩阵ρ（量子态空间的对象）描述L₀演化是跨域类比，非字面等同。"L₀自由展开"是启发性说法，不主张L₀可直接用量子力学数学处理。
+3. **ρ_target的来源**：ρ_target由具身参数θ决定（θ编码了"算子倾向于锚定哪类L₁状态"），但ρ_target的精确形式（如投影算子/混合态/相干态）为未解开放问题。
+
+**可证伪预测**：
+- FC-Master1-1：若方程S2为操作性主方程（而非仅启发性框架），则对具体量子系统（如NV色心/量子点）应能给出区别于标准Lindblad方程的可测预测——若两者预测完全一致则Ĝ_θ扩展无物理附加值
+- FC-Master1-2：在神经层面，三项对应（自发神经活动/选择性激活/记忆固化）的时间常数应存在阶层关系（τ_{幺正} ≪ τ_{选择} ≪ τ_{退相干}），且各常数应与已知神经生理时间窗（毫秒/秒/天）对应——若阶层关系不成立则三项对应解释需修订
 
 ### §4.2 统一自由能方程
 
