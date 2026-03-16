@@ -156,9 +156,20 @@ $$\text{Compress}(L_0) \propto \text{Hardness}(L_2)$$
 *   **Implication**: 语言固化会提升秩序同时压制新可能性。
 
 ### T-Eco-1: Multi-Stable Ecology
+
+**[R — Retrodiction：追溯 Holling 1973 韧性理论/Scheffer 2009《临界转变》到 SRT 吸引盆语言]**
+
 生态系统存在多稳态吸引盆。
-$$\exists \{A_k\}: L_1 \to A_k$$
-*   **Implication**: 生态崩溃是吸引盆跃迁而非线性衰退。
+$$\exists \{A_k\}_{k=1}^{K}: L_1(t) \to A_{k^*}, \quad k^* = \arg\min_k d(L_1,\, \partial \Omega_{A_k})$$
+
+- 当前L₁状态被最近的吸引盆（势能最低的稳态）俘获。
+- **SRT 联结**：$A_k$ ≈ L₂ 的稳定吸引态（Ax-L2-01 迟滞结构），每个 $A_k$ 对应一套固化的L₂规范（如珊瑚礁 vs. 海藻床对应不同的L₂生态营养结构）；吸引盆边界 $\partial\Omega_{A_k}$ ≈ 需要被越过的 $\Psi_f$ 势垒。→ 联结 T-L2-03（稳定性操作化）。
+
+*   **Implication**: 生态崩溃是吸引盆跃迁（相变型，非线性衰退）——当外扰使 L₁ 越过 $\partial\Omega_{A_k}$ 时，系统突然跳到相邻吸引盆 $A_{k'}$。
+
+**跃迁机制（临界慢化前兆的SRT解释）**：在跃迁前，系统在当前吸引盆边缘的"回复力"变弱（Ψ_f势垒变薄）→ 扰动响应时间延长（临界慢化，critical slowing down）→ 方差增大。这是可测的 **前兆信号**：$\tau_{recovery} \to \infty$ 对应 $\Psi_f^{barrier} \to 0$。
+
+**证伪条件**：① 若在已知临界转变前（如蓝藻暴发前），系统方差和自相关系数不先于崩溃显著升高，则临界慢化（Ψ_f势垒变薄）预测失效；② 若生态崩溃总是线性（响应变量单调衰退而无突变跳跃），则多稳态吸引盆结构被证伪，需改用线性降格模型。
 
 <br>
 
