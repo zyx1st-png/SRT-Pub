@@ -162,6 +162,14 @@ $$ J > J_c \implies \lim_{t \to \infty} \sigma_i(t) = \sigma_{all}(t) $$
 *   **Consequence**:
     所有 $\hat{G}_i$ 锁定同一稀缺 $L_1$ 对象，导致冲突能量 $\Psi_f^{cross} \to \infty$。系统必须通过**替罪羊机制**（Scapegoating）——将所有暴力 $\hat{G}$ 聚焦于单一个体（或群体）——来强制重置熵值（SRT: 将聚集的 $\Psi_f^{cross}$ 通过单一排除事件释放，使 $L_2$ 收敛重新恢复；探索性形式化，待精确化）。
 
+**$J_c$ 操作化候选**（待形式化→给出候选方向）：
+$$J_c \approx \frac{\Delta L_1^{scarce}}{\rho \cdot \bar{E}_{ij}}$$
+其中 $\Delta L_1^{scarce}$ 为稀缺对象的L₁区分容量（可区分的差异化锚点数量），$\rho$ 为网络连接密度（Ax-Cog-4 中的 $\rho_c$ 相变密度），$\bar{E}_{ij}$ 为平均耦合强度。稀缺容量越小、网络越密、耦合越强，$J_c$ 越低（越容易相变）。→ 联结 Ax-Cog-4（ρ_c 相变条件）。
+
+**H (Novel Prediction)**（[H] 超出Girard原理的SRT追加预测）：替罪羊事件后，$\sum_i \Psi_f^{cross}$ 应在短时间内出现可测下降（聚集摩擦被释放），随后若稀缺结构未改变，系统重新积累——形成周期性相变（Ψ_f^{cross} 脉冲）。这是可量化的社会动力学预测，区别于 Girard 的纯描述性叙事。
+
+**证伪条件**：① 若替罪羊事件后系统 $\Psi_f^{cross}$ 不降反升（冲突能量持续扩大），则"释放机制"假说失效；② 若高模仿强度网络（$J \gg J_c$）在稀缺增加时不发生同质化相变，而是维持差异化，则 T-Soc-2 需限定适用范围（高稀缺前提条件）。
+
 ### §3.3 恐怖管理定理 (TMT Defense Theorem)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 **Theorem T-Soc-3**: 
