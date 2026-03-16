@@ -276,13 +276,24 @@ P(\text{DéjàVu})\uparrow
 
 ---
 
-### C-PATH-2: IAM–Déjà Vu Continuum Corollary (Extension)
+### C-PATH-2: IAM–Déjà Vu Continuum Corollary (Extension) *(R: Retrodiction，基于 Bergson/Brown/O'Connor 等文献的 SRT 重构)*
 在自发记忆谱系中可定义：
 \[
 \text{IAM}: (\mathcal{F}_{fam}>0,\mathcal{R}_{episodic}>0),\qquad
 \text{DéjàVu}: (\mathcal{F}_{fam}>0,\mathcal{R}_{episodic}\approx 0)
 \]
-* **Implication（中文）**：即视感与不自主自传体记忆并非彼此割裂，而是同一检索过程在“有无内容回收”上的分岔结果。
+
+**R_episodic ≈ 0 的机制区分**：
+- **缺失型**（$\mathcal{R}_{episodic} = 0$）：$L_1$ 中无对应情节内容（真正的空索引）
+- **失联型**（$\mathcal{R}_{episodic}$ 受阻，$L_1$ 内容存在但检索失联）：实验证据（O'Connor & Moulin 2013；Barzykowski & Moulin 2022）倾向于支持此机制——Déjà vu 是检索过程的异常阻断，而非记忆真正不存在。SRT 框架下，失联型对应 $L_1 \to L_2$ 内容回收路径被阻断，而 $L_2$ 层熟悉性信号（$\mathcal{F}_{fam}$）仍在运行。
+
+**SRT 层级分配**：
+- $\mathcal{F}_{fam}$：$L_2$ 层模式匹配/模板识别（跨主体可共享的熟悉性判断）
+- $\mathcal{R}_{episodic}$：$L_1$ 层具体时空内容回收（个体具身体验的时序定位）
+
+“诡异感”的机制：$L_2$ 匹配成功（$\mathcal{F}_{fam}>0$）而 $L_1$ 内容不可及（$\mathcal{R}_{episodic}\approx 0$），层间不匹配触发 T-PATH-2 元认知报警；但由于找不到内容来源，报警无法消解，导致诡异感持续。
+
+* **Implication（中文）**：即视感与不自主自传体记忆并非彼此割裂，而是同一检索过程在”有无内容回收”上的分岔结果；Déjà vu 的诡异感来自 $L_2$ / $L_1$ 层间不匹配引发的持续性元认知报警。
 
 ---
 
