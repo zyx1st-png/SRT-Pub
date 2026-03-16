@@ -717,10 +717,12 @@ SRT_Soc_03_Institutions ← 你在这里
 
 ### Formalization Summary (形式化概述)
 - **Formalization**: 核心方程包括：
-  - $\text{Institution} = \text{Attractor}(L_2)$ — 制度即 $L_2$ 吸引子。
-  - $\text{Right}(i) = \partial\Omega_i \subset L_2$ — 权利即选择域的保护边界。
-  - $\text{Money} \equiv g_{L_2}$ — 货币即社会选择度规。
-  - $G_{agency} = \text{Gini}(d_i)$ — 选择权不平等为 $d$-value 基尼系数。
+  - $\text{Institution} = \text{Attractor}(L_2)$ — 制度即 $L_2$ 吸引子。**[R]** 追溯性对齐制度理论（North 1990, Ostrom）；操作化候选：用 $L_2$ 势能景观中的 $\Psi_f$ 谷深度代理吸引子稳定性。
+  - $\text{Right}(i) = \partial\Omega_i \subset L_2$ — 权利即选择域的保护边界。**[R→H]** 从法律哲学追溯，SRT 将权利重诠释为 $\Omega_i$（个体可达选择参数域）的边界保护；$\partial\Omega_i$ 操作化候选：可被制度保障的最小 $d$ 区间（Ax-Inst-2）。
+  - $\text{Money} \equiv g_{L_2}$ — 货币即社会选择度规。**[R，结构类比非同构]** 货币定义交换比率≈度规定义L₂空间中算子间"选择距离"；降级：$g_{L_2}$ 为结构类比而非黎曼度规的精确应用（量纲不同）。
+  - $G_{agency} = \text{Gini}(d_i)$ — 选择权不平等为 $d$-value 基尼系数。**[H — Novel Prediction]**：若 $d_i$ 可被代理量（教育/选择权/收入自由度等）操作化，则 $G_{agency}$ 应与传统社会流动性指标相关但不完全重叠——这是可检验的独立预测。**操作化问题**：$d_i$ 目前无直接测量，需选定代理量才能计算 $G_{agency}$，否则停留形式层。
+
+**证伪方向**：若 $G_{agency}$（基于任何合理 $d_i$ 代理）与传统机会不平等指标（如 Chetty 流动性指数）完全共线，则无额外解释力；若 $\text{Money} \equiv g_{L_2}$ 的类比在数学结构上产生错误预测（如度规正定性与货币贬值方向矛盾），则类比需限定范围。
 
 ### Mechanism Explanation (机制解释)
 - **Mechanism**: $\hat{G}_\theta$ 的集体选择在 $L_2$ 势能景观中形成吸引子即制度，其稳定性由 $\Psi_f$ 势能谷深度维持。制度变迁发生于关键节点 $k^*$ 处的 $L_2$ 曲率趋零时——$\Psi_f$ 垒被越过，触发拓扑跃迁。$d$-value 分布的不均匀性 ($G_{agency}$) 量化社会选择权不平等，权利制度本质上是对低 $d$ 个体的选择通道保护。
