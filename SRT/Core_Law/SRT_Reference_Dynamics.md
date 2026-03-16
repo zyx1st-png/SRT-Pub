@@ -587,6 +587,8 @@ $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ · ∇C_{L_2}[σ]$$
 
 ### §11.3 语义断层假设（Irreducible Semantic Gap）
 
+> **[H — Framework Hypothesis]** 整节为 SRT 新增预测框架：将”参数到显现”映射的非线性爆发与 Ψ_f 相变临界点等同，并以此解释异质药物响应。标准药理学仅描述异质响应现象，不提供 θ 空间几何机制。
+
 在参数到显现映射中引入非线性边界：
 \[
 L_1 = \mathcal{R}(\theta, L_2, u),\quad \left\|\frac{\partial L_1}{\partial \theta}\right\|_F \to \infty \text{ near } \partial\mathcal{B}_{chaos}
@@ -595,9 +597,15 @@ L_1 = \mathcal{R}(\theta, L_2, u),\quad \left\|\frac{\partial L_1}{\partial \the
 **符号说明**：
 - $u$：环境随机输入项（外源噪声/刺激），使 $\mathcal{R}$ 是随机映射而非确定性函数；对固定 $(θ, L_2)$，$u$ 的分布由感知精度 $\Pi^{-1}$ 决定。
 - $\|\cdot\|_F$：Frobenius 范数（所有 Jacobian 元素平方和之根号），在第3条可证伪预测（§11.4）中作为”参数敏感度”的可测代理量。实验代理：药物剂量梯度下 L₁ 代理指标（如 PCI、HRV）的变化率。
-- $\partial\mathcal{B}_{chaos}$（**混沌边缘边界**）：在 SRT 参数空间 $\Theta$ 中，定义为 $\mathcal{R}$ 的 Jacobian 最大 Lyapunov 指数 $\lambda_{max}(\nabla_\theta\mathcal{R}) = 0$ 的超曲面。该边界与 $\Psi_f$ 相变临界点重合：$\partial\mathcal{B}_{chaos} \approx \{\theta : \partial^2\Psi_f/\partial\theta^2 = 0, \text{符号从负到正}\}$（Ψ_f 曲率符号翻转 = 稳定域边缘），即 SRT 动力学意义上的”边缘混沌”。
+  - **Fisher 联结**（→ §15.2 / Eq-IT-B）：$\|\partial L_1/\partial\theta\|_F \to \infty$ 对应 Fisher 信息矩阵 $I_F(\theta)$ 的条件数 $\kappa(I_F) \to \infty$（病态/近奇异），即系统丧失稳定区分 $L_0$ 状态方向的能力，$d_{eff} = (\text{tr}\,I_F)^2/\text{tr}(I_F^2)$ 在部分方向上坍塌。两者共同定义”选择不稳定性临界”。
+- $\partial\mathcal{B}_{chaos}$（**混沌边缘边界**）：**[H]** 在 SRT 参数空间 $\Theta$ 中，定义为 $\mathcal{R}$ 的 Jacobian 最大 Lyapunov 指数 $\lambda_{max}(\nabla_\theta\mathcal{R}) = 0$ 的超曲面。该边界与 $\Psi_f$ 相变临界点重合：$\partial\mathcal{B}_{chaos} \approx \{\theta : \partial^2\Psi_f/\partial\theta^2 = 0, \text{符号从负到正}\}$（Ψ_f 曲率符号翻转 = 稳定域边缘），即 SRT 动力学意义上的”边缘混沌”。
+  - **∂B_chaos 距离操作化候选**：$\text{dist}(\theta, \partial\mathcal{B}_{chaos}) \approx |\partial^2\Psi_f/\partial\theta^2|^{-1}$（曲率倒数为接近程度代理；值越大 = 越近）。临床可测版本：个体药物响应方差 $\text{Var}(\delta L_1^{\text{obs}}) / \|\delta\theta_{drug}\|^2$（跨时间点或跨剂量），高方差 ↔ θ 近边界。
 
 该假设解释：$\theta$ 处于 $\partial\mathcal{B}_{chaos}$ 附近时，微小神经参数变动（如 $\delta\theta_{drug}$）可引发巨大主观质变（$\|\delta L_1\| \gg \|\delta\theta\|$），导致临床上”同剂量/同靶点、异质响应”——患者间差异是 $\theta$ 距 $\partial\mathcal{B}_{chaos}$ 远近不同，而非简单的”个体差异”。
+
+**追加证伪方向（补§11.4第3条）**：
+- 若药物响应方差在 fMRI/EEG 定义的”参数稳定度高”患者中与”稳定度低”患者无显著差异（控制剂量和靶点后），则∂B_chaos-异质响应联结失效。
+- 若个体的 $\text{Var}(\delta L_1)$ 在不同时间点不稳定（与θ慢变假设冲突），则距离操作化候选需修正。
 
 ### §11.4 可证伪预测（Neuropsychiatry）
 1. 若同病理表型被分层后，\(L_2\) 指标与 \(\hat{G}_\theta\) 指标可形成稳定双簇，则支持矩阵分类；若不可分，则需回退单轴模型。  
