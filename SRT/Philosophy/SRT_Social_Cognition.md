@@ -645,7 +645,19 @@ L_1^{affect}(t)=\hat G_{\theta,L_2^{culture}}\!\big[L_0^{intero}(t)\oplus L_0^{s
 \[
 \text{Reflexive public}\iff A_{joint}\uparrow \land \mathcal M_{lens}\uparrow
 \]
-其中 \(\mathcal M_{lens}\) 表示算子对“自己正戴着何种文化镜片”的元觉察能力。前者更接近 Le Bon 式感染与被领袖挟持，后者更接近 Boas 式的反思性公共关切：我参与“我们”，但不把“我们”的惯例直接误当自然本体。
+其中 \(\mathcal M_{lens}\) 表示算子对”自己正戴着何种文化镜片”的元觉察能力。前者更接近 Le Bon 式感染与被领袖挟持，后者更接近 Boas 式的反思性公共关切：我参与”我们”，但不把”我们”的惯例直接误当自然本体。
+
+> **[R]** 群体感染经典理论：Le Bon 1895 *The Crowd: A Study of the Popular Mind*（群体感染与领袖挟持机制）；Boas 1909 *Psychological Problems in Anthropology*（文化镜片对感知-情绪的渗透）；Turner et al. 1987 *Rediscovering the Social Group: A Self-Categorization Theory*（自我分类条件下的去个人化）；Frith & Frith 2012 *Trends in Cognitive Sciences*（社会元认知的神经基础）。**[H]** 以下 A_joint × M_lens 双因子相位区分（群体捕获 vs 反思性公共）及对 SRT 选择框架的接驳（θ被L₂锁定 vs L₂→L₁反身通道保持开放）为本框架新增贡献。
+>
+> **M_lens 操作化候选**：
+> - 行为层：元认知问卷（Metacognitive Awareness Inventory, MAI；或 Perspective-Taking Scale）的文化归因分量表得分。
+> - 神经层：错误相关负波（ERN）振幅 + 前额叶-后顶叶连接（元认知监控回路），或自我参照处理中 vmPFC 活动的文化归因条件下的调制量。
+> - 生态层：在社会事件描述中自发使用”从…视角看”类元语言频率（文本分析代理）。
+>
+> **精度边界**：⟺ 在此为描述性双向特征，而非严格数学等价——低 A_joint 时 M_lens↓ 亦可产生小规模 Crowd-capture（如封闭邪教），高 A_joint 下 M_lens↑ 的实现依赖教育水平、多元接触史等先决条件。命题成立范围：在中-高 A_joint 的广场/网络公共事件中，M_lens 是决定相位走向的关键调制变量，但并非唯一变量。
+>
+> * **FC-CLC2-1**（证伪条件）：若在控制情绪强度（A_joint 代理）后，高 M_lens 组（MAI 上四分位）与低 M_lens 组在集体行为激进度（如群体攻击性事件率）之间无显著差异（p>0.05），则 M_lens 的相位分叉作用需重新检视或归入情绪强度的伴随变量。
+> * **FC-CLC2-2**（证伪条件）：若同一群体在 M_lens 高水平下通过集体元认知讨论显著降低了 Crowd-capture 事件频率（如参与审议民主项目后的前后比较），则命题中 M_lens 的因果贡献方向得到支持；若效应消失则需将 M_lens 视为结果而非原因。
 
 ### 分类映射表（Collective Emotion Regimes → SRT）
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
