@@ -847,12 +847,22 @@ $$\text{Karma} \equiv \oint_{L_2} \nabla V \cdot d\sigma \neq 0$$
 
 ### Mechanism Explanation (机制解释)
 
-- **$\hat{G}_\theta$ 与爱的共振**: 爱降低算子间摩擦 $\Phi_{ij}$，使边界透明度 $T_{ij}$ 上升，产生"我们性" (we-ness) 现象学；$d$ 向他者扩展即爱的本体论基础。
-- **$\hat{G}_\theta$ and love resonance**: Love reduces inter-operator friction $\Phi_{ij}$, raising boundary transparency $T_{ij}$ and producing "we-ness" phenomenology; $d$-expansion toward the other is love's ontological basis.
-- **$\Psi_f$ 与恐惧/爱的对称**: 恐惧 $\propto S(\hat{G}_{self}) / d$，是 $d$ 收缩与高熵的结果；$d \to \infty$ 时 $\Psi_f \to 0$ 且 Fear $\to 0$，完美的爱驱除恐惧。
-- **$\Psi_f$ and fear-love symmetry**: Fear $\propto S(\hat{G}_{self}) / d$ results from $d$-contraction and high entropy; as $d \to \infty$, $\Psi_f \to 0$ and fear vanishes -- perfect love casts out fear.
-- **$d$ 的双向负载**: $d$ 同时扩展关怀半径与承受能力 ($d = d_{love} \oplus d_{suffering}$)；若 $dd/dt$ 远超 $\theta$ 稳定阈值 $\kappa_\theta$，则出现灵性危机（暗夜负载）。
-- **Bidirectional $d$ load**: $d$ expands both care radius and suffering capacity ($d = d_{love} \oplus d_{suffering}$); if $dd/dt \gg \kappa_\theta$, dark-night overload occurs -- a structural load imbalance, not a moral failure.
+> [R→Fromm 1956 *The Art of Loving*（爱作为主动关系实践，而非被动情感）; 1 John 4:18（"完美的爱驱除恐惧"原始来源）; John of the Cross 16th c. *Dark Night of the Soul*（灵性危机：d扩展过快的现象学描述）; Bowlby 1969 *Attachment and Loss*（依恋安全基地：d向他者扩展的神经社会基础）; Neff 2003（自我慈悲：d_love包含自指组分）]
+
+**R/H 区分**：
+- [R] "完美的爱驱除恐惧"（1 John 4:18）；暗夜（十字架的圣约翰）；Fromm的爱作为实践；Bowlby的依恋安全基地
+- [H] **SRT形式化（整节均为H）**：Φ_ij/T_ij/d_love⊕d_suffering/κ_θ所有算子和公式均为SRT独有——将上述传统洞见转化为精确数学陈述，属高形而上学承诺，当前无直接量化验证路径
+
+- **$\hat{G}_\theta$ 与爱的共振** [H]: 爱降低算子间摩擦 $\Phi_{ij}$（注：$\Phi_{ij}$为算子i-j之间的界面摩擦，区别于个体内Ψ_f），使边界透明度 $T_{ij}$ 上升，产生"我们性" (we-ness) 现象学；$d$ 向他者扩展即爱的本体论基础。
+- **$\hat{G}_\theta$ and love resonance** [H]: Love reduces inter-operator friction $\Phi_{ij}$, raising boundary transparency $T_{ij}$ and producing "we-ness" phenomenology; $d$-expansion toward the other is love's ontological basis.
+- **$\Psi_f$ 与恐惧/爱的对称** [H]: 恐惧 $\propto S(\hat{G}_{self}) / d$，其中 $S$ 为算子自身状态的不确定性（熵）；$d$ 收缩与高熵的结果；$d \to \infty$ 时 $\Psi_f \to 0$ 且 Fear $\to 0$，完美的爱驱除恐惧 [R→1 John 4:18 的SRT形式化]。
+- **$\Psi_f$ and fear-love symmetry** [H]: Fear $\propto S(\hat{G}_{self}) / d$ results from $d$-contraction and high entropy; as $d \to \infty$, $\Psi_f \to 0$ and fear vanishes -- perfect love casts out fear [R→1 John 4:18, SRT formalization].
+- **$d$ 的双向负载** [H]: $d$ 同时扩展关怀半径与承受能力 ($d = d_{love} \oplus d_{suffering}$)；若 $dd/dt$ 远超 $\theta$ 稳定阈值 $\kappa_\theta$，则出现灵性危机（暗夜负载）[R→John of the Cross 暗夜的SRT重解读]——结构过载，而非道德失败。
+- **Bidirectional $d$ load** [H]: $d$ expands both care radius and suffering capacity ($d = d_{love} \oplus d_{suffering}$); if $dd/dt \gg \kappa_\theta$, dark-night overload occurs -- a structural load imbalance, not a moral failure.
+
+**可证伪预测**：
+- FC-Love1：高d值（关怀带宽广，用IOS亲密感量表代理）个体在恐惧诱导范式中的Ψ_f代理（皮肤电/心率变异性）应更低且恢复更快——若无组间差异则"d扩展→恐惧减少"联结为空
+- FC-Love2：快速d扩展事件（灵修密集营/情感开放训练）后出现灵性危机的比例，应与进入前θ稳定性指标（认知灵活性/习惯化程度）负相关——若无相关则κ_θ-暗夜负载预测失败
 
 ---
 
