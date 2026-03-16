@@ -492,7 +492,13 @@ $$\text{Service Framing} \implies d \uparrow$$
 
 ### §4.2 关系中的修行
 
+> [R→Gottman & Silver 1999 *The Seven Principles for Making Marriage Work*（关系稳定性实证研究）; Kabat-Zinn 2005 *Full Catastrophe Living*（正念临床应用）; Neff 2003 *Self-compassion*（慈悲冥想量化研究）; Fosha 2000 *The Transforming Power of Affect*（AEDP：触发→情感处理→疗愈）; Mikulincer & Shaver 2007 *Attachment in Adulthood*（依恋系统与关系触发）]
+
 **亲密关系 = 最强大的修行**
+
+**R/H 区分**：
+- [R] 三项技术均有经验支持基础：正念倾听→Gottman"接受影响"；触发暂停→DBT STOP技能/AEDP情感处理；慈悲练习→藏传慈心禅/Neff自我慈悲量化研究
+- [H] **SRT重解读**：关系=θ镜像系统；触发="未愈合的L₂期望被激活"（而非标准框架中的"情绪调节失败"）；慈悲练习的SRT功能是防止d值崩塌为零——此重解读框架是SRT附加，非现有关系研究所验证
 
 **为什么？**
 
@@ -538,7 +544,7 @@ $$\text{Relationship} \implies \begin{cases}
    - 我的 $L_2$ 期望是什么？
 5. **选择**回应（而非反应）
 
-**SRT**: 触发 = 你未愈合的 $L_2$ 被激活 = 疗愈机会。
+**SRT**: 触发 = 你未愈合的 $L_2$ 被激活 = 疗愈机会。[H] （L₂期望未满足→Ψ_f激增→θ防御性激活；5步骤的功能是将反应性θ切换为反思性θ，为θ更新创造时间窗）
 
 ---
 
@@ -552,6 +558,14 @@ $$\text{Relationship} \implies \begin{cases}
 4. 感受慈悲升起
 
 **效果**: 即使困难时期，保持 $d > 0$。
+
+**SRT机制** [H]：慈悲练习 = 在低Ψ_f窗口（对方睡着，冲突暂停）主动激活 d 值扩张通道，防止关系困境期 d 崩塌为零（d→0 = 对方成为纯L₂工具客体）。
+
+---
+
+**可证伪预测**：
+- FC-Praxis42-1：坚持技术2（触发暂停5步）4周后，伴侣报告的"被理解感"（IOS量表）显著提升，且提升幅度预测自评d值增量——若无相关则SRT-d值解读不成立
+- FC-Praxis42-2：慈悲练习组（技术3）在关系冲突期（1周后追踪）中自评d值高于无干预对照——若无组间差异则"维持d>0"的功能主张为空
 
 ---
 
