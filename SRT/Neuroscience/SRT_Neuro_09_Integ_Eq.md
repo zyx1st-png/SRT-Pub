@@ -86,6 +86,8 @@ L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory
 
 > **标签说明**：T-CLIN-1 是基于神经科学证据的 SRT 推论（Retrodiction），而非从 SRT 公理的纯演绎定理；"Theorem"在此指"SRT 框架内形式上可推论的命题"，等价于 Cor-级别，强度弱于从 Ax 直接推导的命题。
 
+> **[R]** 后部热区（PHZ）与前额叶分工：Koch & Tsuchiya 2012 *Trends in Cognitive Sciences*（NCC与前额叶的关系：后部皮层是感知内容的神经关联，前额叶贡献执行控制和报告但非必须）；Tononi et al. 2016 *Nature Reviews Neuroscience*（IIT框架下后部皮层Φ高而前额叶贡献有限）；Damasio 1994 *Descartes' Error*（额叶损伤案例：Phineas Gage及VM患者在意识内容完好但决策/自我叙事崩溃，支持PFC=Ĝ_θ控制台而非意识内容源）。**[H]** 以下将PHZ重描为"L₀候选集生成器"（Generator）、PFC重描为"选择算子Ĝ_θ控制台"（Selector & L₂维持者），并给出候选集Candidates(t)的形式化和Depth(L₂)的操作化，为SRT新增神经-本体论接驳贡献。
+
 大脑前后轴在 SRT 拓扑中扮演不同角色：
 \[
 \text{Posterior Hot Zone (PHZ)} \iff \text{Generator}(L_0 \to \text{Candidates})
@@ -102,7 +104,12 @@ $$\text{Candidates}(t) = \{\sigma : \mathcal{A}(\sigma) \geq \tau_{local}^{PHZ}\
 $$\text{Depth}(L_2) \equiv \text{Rank}_{eff}(L_2) = \text{有效主成分数}$$
 即 $L_2$ 结构的秩（可由 PCA 或 Fisher 信息矩阵特征值谱的参与率指数近似）。额叶切除后 $\text{Depth}(L_2) \to 1$（仅剩基础感知层，高阶叙事/目标结构崩溃）。
 
-* **Implication（中文）**：后部热区（PHZ）负责将高维 $L_0$ 坍缩为一系列候选的感受质图景；前额叶（PFC）不产生意识内容，而是作为 $\hat{G}_\theta$ 的最高级控制台，执行"排除/选择"并维持当前的 $L_2$ 脚手架。这解释了为什么切除大块前额叶的患者（如早期的额叶切除术，注：手术范围差异大，现代功能影像提供更精确证据）依然"清醒"（PHZ 完好），但失去了目标导向的意志力与复杂的自我叙事（$\hat{G}_\theta$ 降维，$\text{Depth}(L_2) \to 0$）。
+* **Implication（中文）**：后部热区（PHZ）负责将高维 $L_0$ 坍缩为一系列候选的感受质图景；前额叶（PFC）不产生意识内容，而是作为 $\hat{G}_\theta$ 的最高级控制台，执行"排除/选择"并维持当前的 $L_2$ 脚手架。这解释了为什么切除大块前额叶的患者（如Damasio 1994报告的VM患者：意识感知完好但无法做价值导向的决策）依然"清醒"（PHZ 完好），但失去了目标导向的意志力与复杂的自我叙事（$\hat{G}_\theta$ 降维，$\text{Depth}(L_2) \to 0$）。注：额叶切除的范围和具体结构差异大，此处泛指PFC核心功能受损的情形。
+
+> **τ_local^PHZ 的确定**：局部激活阈值 $\tau_{local}^{PHZ}$ 在操作化上可以信噪比（SNR）或局部场电位（LFP）的γ带功率（30-80Hz）超过基线的标准差倍数（如 2σ）作为代理；与 Ax-NEURO-MECH-2 的点燃阈值 $\tau_{ignite}$ 的关系：$\tau_{local}^{PHZ}$ 是候选进入竞争池的门槛，$\tau_{ignite}$ 是候选赢得竞争后进入 $L_1$ 的门槛，两者是序列的两级筛选。
+>
+> * **FC-CLIN1-1**（证伪条件）：若在损毁PHZ（而非PFC）的病例中，患者出现意识内容的大面积缺失（而非感知功能局部缺损），但前额叶功能完好，则T-CLIN-1的PHZ=内容生成器、PFC=选择器分工假说需重新审视——可能意识内容也依赖PFC的主动维持。
+> * **FC-CLIN1-2**（证伪条件）：若fMRI解码研究（N≥50）显示前额叶激活模式能以高精度（AUC > 0.8）预测L₁意识内容（特定感知对象/颜色/形状），而不只是任务执行状态，则PFC"不产生意识内容"的假设受到挑战，需引入PFC对L₁内容的直接参与成分。
 
 ### C-CLIN-1a: Semantic Selection Corollary（语义选择推论）
 由 T-CLIN-1 推论：**LIPFC（左下前额叶）对 $\hat{G}_\theta$ 选择控制的行使，并不局限于情节记忆或感知竞争，而是在语义检索干扰中同等生效**：
