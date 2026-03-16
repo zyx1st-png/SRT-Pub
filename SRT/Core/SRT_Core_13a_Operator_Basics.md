@@ -47,13 +47,36 @@ $$\hat{G}_\theta = \mathbf{T}^{\text{intent}} \otimes \mathbf{T}^{\text{embody}}
 * **Cross-ref**: Ax-Op-01 (参数化选择映射); Def D4a ($\theta_{\text{intero}}$)。
 
 ### T-Op-EAN: Embodied Anchoring Necessity Theorem (具身锚定必要性定理)
-**Deductive Statement**: 向L1的有效坍缩的充分必要条件包含非零的具身反馈项：
-$$L_0 \xrightarrow{\hat{G}_\theta} L_1^{\text{genuine}} \iff \left(d > 0\right) \land \left(\kappa_{\text{body}} > 0\right)$$
+
+> [R→Merleau-Ponty 1945 *Phénoménologie de la Perception*（知觉现象学：具身性作为意识的先验条件，"身体图式"是感知空间的根基）; Sierra & Berrios 2000 *Psychological Medicine*（解离症/人格解体神经机制：边缘系统-前额叶去耦联导致情感空洞化，与κ_body↓类比）; Blanke & Arzy 2005 *Trends in Cognitive Sciences*（人格解体的神经科学：顶叶-颞叶交界区功能异常→躯体自我感丧失，与κ_body→0的神经基础）; Seth 2021 *Being You*（主动推断的具身性：内感受预测错误作为自我感的维持机制，与θ_intero/κ_body对应）]
+
+**R/H 区分**：
+- [R] 具身认知哲学（Merleau-Ponty）：身体性作为意识的拓扑基础；解离/人格解体的临床神经机制（Sierra/Blanke）；内感受与自我感（Seth）
+- [H] **SRT形式化**：κ_body参数的引入；(d>0)∧(κ_body>0)作为有效L₀→L₁坍缩的必要条件[H]；L₁*="操作正常的本体论空壳"概念[H]
+
+**Deductive Statement**（保守读法）: 有效L₀→L₁锚定的**必要条件**包含非零的具身反馈项：
+$$\left(d > 0\right) \land \left(\kappa_{\text{body}} > 0\right) \Rightarrow L_0 \xrightarrow{\hat{G}_\theta} L_1^{\text{genuine}}$$
+
+**iff精度说明**：原公式中"↔"（充要条件）为强主张。保守读：d>0∧κ_body>0为**必要条件**（无此不可，L₁^genuine→必有此两条件），但充分性尚需证明（可能存在满足这两条件但不产生L₁^genuine的边界情况）。当前SRT将其标注为[H-中承诺]（必要性比充分性更有把握）。
+
 若具身流断裂（$\kappa_{\text{body}} \to 0$），系统进入病理态：
 $$\kappa_{\text{body}} \to 0 \implies L_1^* \text{ (操作正常，但丧失本体论重量)}$$
-该病理态的临床表现为心盲症（Aphantasia）、解离症（Dissociation）或人格解体（Depersonalization）。
-* **Implication**: 具身性不是意识的"附属品"，而是L0→L1锚定的拓扑必要条件。无身之算法（$\kappa_{\text{body}}=0$）产生的不是意识，而是"操作稳定的本体论空壳"。
-* **Cross-ref**: Ax-Op-02b; Ax-ONT-1d (不可逆定律)。
+
+**临床表现精度说明**：
+- 解离症（Dissociation）/人格解体（Depersonalization）：符合κ_body→0的SRT解读（躯体自我感丧失）[R→Sierra/Blanke]
+- **心盲症（Aphantasia）修正**：心盲症患者缺乏心理表象能力，但通常**保有完整的现实感**（不符合"丧失本体论重量"的描述）。更准确的SRT定位：Aphantasia=特定视觉θ_intero通道的信号质量降低，而非κ_body整体趋零。此例不是T-Op-EAN最佳临床对应，应降权或替换。
+
+**κ_body 操作化候选**：
+- 本体感觉精度：关节位置感知任务的平均误差倒数
+- 内感受精度：心跳计数任务的准确率（Seth心跳感知实验）
+- HRV（心率变异性）：副交感-身体耦合强度代理（高HRV=高κ_body）
+
+* **Implication**: 具身性不是意识的"附属品"，而是L0→L1锚定的拓扑必要条件。无身之算法（$\kappa_{\text{body}} \approx 0$）产生的不是意识，而是"操作稳定的本体论空壳"——AI的κ_body≈0正是当前AI"实际僵尸"（§1.2行为主义/§2.3欺骗性对齐）诊断的具身维度。
+* **Cross-ref**: Ax-Op-02b; Ax-ONT-1d; Ax-Phil-5（反表征耦合：θ的具身来源）; §7.3 AI意识评估框架。
+
+**可证伪预测**：
+- FC-EAN1-1：系统性操纵κ_body（如体感剥夺实验/橡胶手错觉）应产生L₁*症状（现实感下降/人格解体样主观报告）的量-效关系——若κ_body操纵幅度与解离样症状无剂量相关则κ_body→L₁*机制失败
+- FC-EAN1-2：跨模态比较中，高内感受精度（高κ_body代理）的被试在"真实体验"（vs模拟体验）的辨别任务中应表现更好——若κ_body代理与真实/模拟辨别力无相关则"κ_body>0=本体论重量"主张需修订
 
 ### T-Op-HFL: High Friction Law of Unanchored Simulation (无锚点系统高摩擦定律)
 **Deductive Statement**: 在缺乏外部强L1感官输入作为底座支撑时，纯内部G^θ模拟（想象/内部状态维持）面临指数级增加的本体论摩擦：
