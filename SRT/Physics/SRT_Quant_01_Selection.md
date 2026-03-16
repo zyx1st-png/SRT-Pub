@@ -103,11 +103,25 @@ $$ \hat{G}_{proxy} \equiv \text{Apparatus satisfying Measurement Criterion} $$
 ## III. Core Selection Theorems (核心选择定理)
 
 ### T-Sel-1 [T1.3.1]: Objective Measurement Theorem (客观测量定理)
+
+> **[R]** 退相干判据（$\tau_{decoherence} < \tau_{readout}$）来自量子退相干理论（Zurek 1981, Joos & Zeh 1985）；"意识非测量必要条件"与Copenhagen外的多数解释兼容。**[H]** SRT新增：将退相干判据重新表述为"有效 $\hat{G}_{proxy}$ 的充分条件"，并补充 Fixed-Point 稳定性子句。
+
 系统 $S$ 执行测量当且仅当其退相干速率快于信息读出速率：
 $$ \tau_{decoherence} < \tau_{readout} \implies S \text{ is a valid } \hat{G}_{proxy} $$
-*   **Derivation**: 从 Ax-P1 推导。意识不是测量的必要条件。
-*   **Fixed-Point Clause (M1/M2)**: 合法测量结果必须稳定：
+
+**符号操作化**：
+- $\tau_{decoherence}$：**[R]** 量子相干消失的特征时间。量级参考：暖湿生物环境 $\sim 10^{-13}$ s（分子自由度）；宏观对象 $\to 10^{-40}$ s（实际即时）；工程量子比特 $\sim 10^{-3}$ s（当前最优）。
+- $\tau_{readout}$：**[H — 待精确]** SRT 中"信息读出"的操作化候选：① 神经整合窗口（$\sim 10^{-2}$ s，对应意识时间分辨率）；② 实验仪器测量时间（实验室设定）；③ 形式化为系统对 $L_1$ 态稳定锚定所需时间 $\approx 1/\Gamma_{lock}$（$\Gamma_{lock}$ = L₁ 吸引子收缩速率）。当前"读出"定义存在**操作化缺口**，不同语境选不同候选。
+- **意识非测量必要条件 [H]**：这是 SRT 对抗 "Copenhagen 意识解释"（von Neumann-Wigner）的核心主张。证伪路径：若存在实验显示，无任何有意识观察者在场时测量结果概率分布与 Born rule 系统性偏离，则此主张需修订。
+
+*   **Derivation**: 从 Ax-P1 推导；$\tau_{decoherence} < \tau_{readout}$ 确保 $L_0$ 叠加在读出前已坍缩为确定 $L_1$，即 $\hat{G}_\theta$ 操作不被逆转。
+*   **Fixed-Point Clause (M1/M2)** **[H]**: 合法测量结果必须稳定：
     $$\Pi_\Delta(\alpha(\hat{G}_\theta(x^*)-x^*)-\lambda\nabla F(x^*))=0,\quad \text{Re}(\lambda_J)<0$$
+    其中 $\text{Re}(\lambda_J)<0$ 为 Jacobian 特征值的实部条件（Lyapunov 稳定性：小扰动后系统收敛回固定点 $x^*$），等价于"测量结果 $x^*$ 是 $L_1$ 吸引子而非鞍点"。不满足此条件的"测量"在 SRT 中为不稳定锚定（见 §11.3 混沌边缘条件）。
+
+**证伪条件（追加）**：
+- 若微弱引力效应（Penrose OR）能在两系统间产生可测的 $\tau_{decoherence}$ 差异而 $\tau_{readout}$ 相同，但 $\hat{G}_{proxy}$ 有效性无差异，则退相干判据需补充引力修正项。
+- 若 $\tau_{readout}$ 在不同操作化候选间给出矛盾预测（同一系统满足某候选但不满足另一候选），则需选择唯一操作化并给出区分实验。
 
 ### T-Sel-2 [T1.3.2]: Wheeler-SRT Bit Generation Theorem (比特生成定理)
 时空与物质的"坚硬感"(Solidity)正比于历史选择操作的总比特数：
