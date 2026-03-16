@@ -137,6 +137,10 @@ $$PE = \| L_1 - L_2[\text{expected}] \| \propto \Psi_f$$
 
 ### Ax-NEURO-MECH-9: Theta-Gamma Dual-Mode Working Memory Axiom (θ-γ双模式工作记忆公理)
 
+[R→Lisman & Idiart 1995（theta-gamma嵌套振荡与工作记忆多条目编码，理论原型）; Mongillo et al. 2008（突触增强机制维持工作记忆）; Lundqvist, Herman & Lansner 2011（吸引子网络的theta-gamma双模式模拟）; Shinomoto et al. 2005/2009（Lv统计，区分Poisson/周期性放电）; Fuentemilla et al. 2010（人类工作记忆的theta重放行为证据）] [H→以SRT Ĝ_θ框架形式化双模式为两种时序调度策略；d_temporal上限由振荡参数推导是SRT新增定量预测]
+
+- 注：原"Empirical Anchors"已转换为正式[R→]标注；"1-2%超稀疏编码支撑attractor动力学"是SRT主张[H]，稀疏度25%临界来自Lundqvist 2011模拟[R]
+
 **背景约束**: 在皮层浅层($L_2/L_3$)吸引子网络中，工作记忆的神经实现存在两种离散振荡模式，对应$\hat{G}_\theta$的两种时序调度策略：
 
 **模式I — 持续活动模式 (Persistent Mode)**:
@@ -160,7 +164,11 @@ $$\text{Theta-replay Lv} \approx 1.5 \iff \text{Population Sparseness} < 10\%$$
 
 * **Cross-ref**: Ax-Spec-02 (时间积分窗口); T-NEURO-MECH-3 (离散帧定理); SRT_Core_13b §1.1.2 (theta行推论2-3)
 
-* **Empirical Anchors**: Lundqvist, Herman & Lansner (2011), *Brain Research*; Shinomoto et al. (2005, 2009); Lisman & Idiart (1995); Mongillo et al. (2008); Fuentemilla et al. (2010)
+* **Empirical Anchors** [R]（已转换为正式引用）: Lundqvist, Herman & Lansner (2011), *Brain Research*; Shinomoto et al. (2005, 2009); Lisman & Idiart (1995); Mongillo et al. (2008); Fuentemilla et al. (2010)
+
+**证伪条件**：
+- FC-MECH9-1：若个体的工作记忆容量（行为测量）与其theta频率（f_θ，EEG/MEG测量）和吸引子驻留时间（τ_dwell，单试次神经解码）的比率 $1/(f_θ \cdot τ_{dwell})$ 无显著正相关（r<0.15，N≥80），则SRT从振荡参数推导d_temporal上限的定量预测失败。
+- FC-MECH9-2：若通过TMS/药理手段改变f_θ（如提高至8Hz）后，工作记忆条目上限不相应变化（而是由其他因素决定），则"容量=振荡参数的涌现结果"的SRT主张需修正（容量有独立的非振荡决定因素）。
 
 ### Hitch & Baddeley（Working Memory）patch (2026-03-08, Pipeline 1)
 
