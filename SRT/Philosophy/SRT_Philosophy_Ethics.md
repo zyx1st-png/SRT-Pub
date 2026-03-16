@@ -890,10 +890,18 @@ SRT 对应干预：以 \(L_1\) 共同任务重建外部校准链，并通过次�
 | 抗脆弱公正稳态 | 中~高 | Semi-open / Open | payable（跨组梯度收敛） |
 
 ### [Lineage/Source]
-- Eric Schwitzgebel, *Philosophy Should Be Among the Most Diverse Disciplines, Not the Least*（The Splintered Mind）。
-- SRT 映射：将“公正”从规范口号下沉为摩擦分配、探索预算与系统抗脆弱性的动力学判据。
+- Eric Schwitzgebel, *Philosophy Should Be Among the Most Diverse Disciplines, Not the Least*（The Splintered Mind）。**SRT 连接点**：Schwitzgebel 的核心主张是”边缘化群体的视角带来不可替代的认识论贡献”——这在形式上对应 T-Eth-Struct-1（边缘算子的认识论溢价：$\mathcal{R}_{L_0}(i)\uparrow$ 随 $\Omega_{mis,i}\uparrow$），将直觉论断翻译为可测的采样率差异。
+- SRT 映射：将”公正”从规范口号下沉为摩擦分配、探索预算与系统抗脆弱性的动力学判据。
+
+**公正的 SRT 充分条件（正面定义）**：
+$$\text{Justice}_{SRT} \iff \begin{cases} \mathrm{Var}_{group}\!\left(\Delta F_{explore}^{(g)}\right) \leq \varepsilon_J & \text{（探索预算跨组方差最小化）} \\ \forall g:\;\partial d_g/\partial \Psi_f^{shock} \text{ 均匀} & \text{（恢复能力对称）} \end{cases}$$
+其中**恢复能力约束**（Resilience Constraint）= 当外部冲击（$\Psi_f^{shock}$）发生时，各群体 $g$ 的 $d$ 值衰减斜率保持均匀（无群体因基线资源差异而发生不对称崩溃）。注：当前框架为概念性定义，$\partial d_g/\partial \Psi_f^{shock}$ 的操作化测量待进一步形式化。
+
+**超采样的退出条件**（对应 T-Eth-Struct-2 的稳态转换）：
+$$\rho_{minority}^{local} > C_{crit} \xrightarrow{\text{L}_2 \to \text{L}_2'} \text{逐步退出，当} \; \mathrm{Var}_{group}\!\left(\Delta F_{explore}^{(g)}\right) \leq \varepsilon_J$$
+即：当跨组探索预算方差收敛至阈值 $\varepsilon_J$ 以内时，超采样策略应退出，转入以 $\Delta F_{explore}$ 均等为目标的常规治理。
 
 ## 【理论边界/防误用声明】
-1. 不采纳“动力学优势=道德豁免”的推论；认识论溢价不等于规范无责任。  
-2. 不采纳“超采样策略可无限期维持”的推论；其是相变窗口工具，需转入稳态治理。  
-3. 不采纳“低摩擦=公正”简化推论；必须同时满足跨组探索预算与恢复能力约束。
+1. 不采纳”动力学优势=道德豁免”的推论；T-Eth-Struct-1 的认识论溢价是系统属性，不蕴含个体规范责任豁免。
+2. 不采纳”超采样策略可无限期维持”的推论；其是相变窗口工具，退出条件见上方”超采样退出条件”公式。
+3. 不采纳”低摩擦=公正”简化推论；公正需同时满足上方 $\text{Justice}_{SRT}$ 的双重充分条件（探索预算均等 + 恢复能力对称），单一降低 $\Psi_f$ 不充分。
