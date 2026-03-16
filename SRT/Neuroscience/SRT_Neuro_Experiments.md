@@ -595,11 +595,17 @@ I_{LGN}(t)=w_{td}I_{topdown}(t)+w_{bu}I_{retina}(t),\quad w_{td}\approx0.8,\ w_{
 
 ### 分类映射表（LGN Feedback Pattern → SRT）
 
+**[R — LGN top-down/bottom-up文献追溯：Sillito et al. 2006（LGN反馈调制）；Murray et al. 2004（预测性编码中的LGN）；[H] — d值/Ψ_f与LGN模式的SRT映射为新增预测框架]**
+
+*说明*：此表将LGN反馈模式（感知神经科学经典分类）翻译为SRT变量区间；三行对应三种功能状态，非离散类别而是连续谱上的操作区间。
+
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |:--|:--|:--|:--|
-| top-down 主导（80/20 近似） | 中~高 | Semi-open（先验牵引） | payable |
-| bottom-up 过载（先验失配） | 低~中 | Open（噪声暴露） | overloaded |
-| 单向提取假设（过时模型） | 低 | Closed（管线化） | 被误估 |
+| top-down 主导（80/20 近似）| 中~高 | Semi-open（先验牵引）| payable |
+| bottom-up 过载（先验失配）| 低~中 | Open（噪声暴露）| overloaded |
+| 单向提取假设（过时模型）| 低 | Closed（管线化）| 被误估 |
+
+*三状态SRT机制*：top-down主导时Ĝ_θ以L₂先验为主要输入，Ψ_f可结算（先验减少随机性）；bottom-up过载时L₀噪声超过Ĝ_θ的处理能力，Ψ_f超载（需处理大量不匹配信号）；单向提取假设（经典感觉管线论）在SRT中对应d≈0的封闭模型，不承认top-down的本体论影响。
 
 ## 【理论边界/防误用声明】
 - 不采纳“失认症=整体意识缺失”的推论：该条仅指对象结构化子功能异常。
@@ -660,6 +666,8 @@ I_{LGN}(t)=w_{td}I_{topdown}(t)+w_{bu}I_{retina}(t),\quad w_{td}\approx0.8,\ w_{
 
 
 ## H-EXP-12: 靶向意向性注入实验（Targeted Intentionality Injection）
+
+**[R — 睡眠记忆巩固追溯：Walker & Stickgold 2004（REM睡眠与创造性联结）；Targeted Dream Incubation追溧：Haar Horowitz et al. 2020（入睡阶段听觉线索）；[H] — 低摩擦睡眠窗口×弱线索×次日关联增益的SRT实验设计为新增预测框架]**
 
 **实验陈述**：在低摩擦睡眠窗口（REM/入睡过渡，EEG 慢波与网络解耦标记）施加弱感官线索，检验其对次日联想网络重构的增益。
 
