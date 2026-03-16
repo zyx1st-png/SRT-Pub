@@ -39,7 +39,23 @@ dependency: [SRT-NEURO-MECH-001]
 \[
 \mathcal{R}_{re}: L_1^{candidate}\rightarrow L_1^{stabilized}
 \]
+
+> [R→Edelman 1987 *Neural Darwinism*（再入连接作为神经选择主要机制）; Edelman & Tononi 2000 *A Universe of Consciousness*（再入=意识的必要神经基础）; Dehaene & Changeux 2011 *Neuron*（全局工作空间点燃=大规模再入的实现）; Lamme 2006 *Trends in Cognitive Sciences*（再入vs前馈：仅前馈激活不足以产生可报告意识）]
+
+* **R/H 区分**：
+  - [R] 再入连接理论（Edelman）；全局工作空间点燃（Dehaene）；前馈vs再入的意识必要性研究（Lamme）
+  - [H] **SRT形式化**：R_re 算子将 L₁^candidate → L₁^stabilized 定义为稳定化投影（非重复激活）——SRT将再入功能解读为"候选显现的θ-稳定化验证过程"，而非GWT意义上的"广播点燃"
+
+* **L₁^candidate vs L₁^stabilized 时序机制**：
+  - L₁^candidate：前馈窗口内（约0-150ms）的候选激活状态
+  - 再入确认窗口（约150-400ms）：后部→前部回路验证候选状态与Ĝ_θ当前参数的一致性
+  - L₁^stabilized：通过确认→进入可报告现实；未通过→候选态崩塌至L₀
+
 * **Implication（中文）**：再入回路并非重复激活，而是对候选显现进行稳定化投影，使其成为可报告的现实。
+
+* **可证伪预测**：
+  - FC-MECH2-1：TMS干扰再入窗口（150-300ms，而非前馈窗口0-100ms）应选择性消除视觉刺激的可报告性（而保留反应时），验证R_re的时间窗口——若前馈窗口干扰同样消除报告则"再入=稳定化"与"前馈=激活"的区分失败
+  - FC-MECH2-2：高Ψ_f状态（急性应激/认知过载）应缩短可用的再入时间窗口（候选态稳定化更难），导致意识报告敏感性下降（d'↓）——若Ψ_f与d'无负相关则再入-摩擦联结为空
 
 ---
 
