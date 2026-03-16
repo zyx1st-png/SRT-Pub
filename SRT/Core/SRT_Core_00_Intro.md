@@ -72,9 +72,30 @@ $$\forall \epsilon > 0,\; \exists \delta > 0:\; \|\sigma_0 - \sigma^*\| < \delta
 ## III. Core Dynamics (核心动力学)
 
 ### Ax-Core-04: Selection Dynamics
+
+> **[H — Core Framework Axiom]** 三项合成动力学为 SRT 新增结构；FEP（Friston 2010）覆盖第2项（R），但整体三项框架及选择算子的独立第1项为 SRT 原创贡献。
+
 **Formal Definition**: The evolution of reality is governed by selection dynamics coupled with free energy gradients.
 $$\frac{dσ}{dt} = \hat{G}_\theta[σ] - \nabla F[σ] + A[σ,\mathcal{A}]$$
-* **Implication**: 现实演化是“选择 + 能量下降 + 注意调制”的合成动力学。
+
+**符号说明**：
+- $σ$：当前态配置（state configuration），在 $L_1$ 层为显现状态向量（神经激活模式、行为轨迹等的代理量）。
+- $\hat{G}_\theta[σ]$：选择算子（Ax-Core-01/02），由具身参数 $\theta$ 参数化，决定哪些 $L_0$ 模态被锚定为 $L_1$；是三项中唯一包含”关切方向性”的项（← $\vec{v}_\theta$）。
+- $\nabla F[σ]$：**[R]** 自由能梯度（候选：Friston 变分自由能 $F = \text{KL}[q(\theta)||p(\theta|o)] - \ln p(o)$，或 Helmholtz 亥姆霍兹自由能），驱动系统向预测误差最小化方向运动。注：若 $F$ 定义为变分自由能，则第2项与第1项部分重叠（$\hat{G}_\theta$ 的锚定操作即最小化预测误差），两者在低 $\Psi_f$ 极限下趋同；高 $\Psi_f$ 时第1项的选择代价使两项分离。
+- $A[σ,\mathcal{A}]$：注意调制项（候选：$A[σ,\text{Target}] \approx -\Psi_f(σ,\text{Target})$ 或 cos-sim，见 → Eq-Evo-02, Core/SRT_Core_22_Equations.md），决定哪个目标方向被加权。
+
+**各项主导条件（定性）**：
+| 情境 | 主导项 | 备注 |
+|---|---|---|
+| 高 $d$、低 $\Psi_f$ | $\hat{G}_\theta$（选择主导） | 系统按关切方向自主塑造 σ |
+| 高 $\Psi_f$、低 $d$ | $-\nabla F$（能量主导） | 摩擦过载，系统退化为能量下山 |
+| 注意切换时刻 | $A[σ,\mathcal{A}]$（调制主导） | Target 改变触发方向修正 |
+
+**证伪条件**：
+- 若移除 $A$ 项（固定注意）后 $dσ/dt$ 可完全由 $\hat{G}_\theta - \nabla F$ 解释（拟合误差不增大），则注意项为 $\hat{G}_\theta$ 的冗余分解，需合并。
+- 若 $\hat{G}_\theta[σ]$ 与 $-\nabla F[σ]$ 在所有测量条件下方向一致（相关系数 → 1），则两项不具独立操作化意义，需进一步区分。
+
+* **Implication**: 现实演化是”选择 + 能量下降 + 注意调制”的合成动力学；三项分别覆盖目的性（θ参数化）、被动约束（自由能景观）和动态再加权（注意切换）三类驱动力。
 
 ### Ax-Core-05: Ontological Friction
 **Formal Definition**: Selection incurs ontological friction proportional to resistance against reconfiguration.
