@@ -323,12 +323,26 @@ P(h\mid d)\propto P(d\mid h)P(h)
 ### 3.1 Reality Hysteresis
 Why is changing a belief so much harder than forming one?
 
+> [R→Festinger 1957 *A Theory of Cognitive Dissonance*（不一致信息引发认知失调→主动回避而非更新）; Nickerson 1998 *Review of General Psychology*（确认偏见综述：已有信念偏向性处理证据）; Lord et al. 1979 *JPSP*（先入为主立场使人对同等证据做出相反评估）; Kuhn 1962 *The Structure of Scientific Revolutions*（范式转移需要势垒跨越，而非累积证据）]
+
+**R/H 区分**：
+- [R] 确认偏见（Nickerson 1998）；认知失调减少（Festinger 1957）；热力学势能阱的物理概念（迟滞：磁性材料/相变）
+- [H] **SRT形式化**：ΔE_change = ΔE_evidence + ΔE_barrier 中的 ΔE_barrier = L₂势能阱深度（由重复选择历史决定）；这将社会心理学的"确认偏见"重表述为SRT的势能阱动力学，并与§1.4的 ΔE∝Hardness×(κ-κ_c2) 联结
+
 *   **SRT Analysis**: $L_2$ is a **potential well** carved by repeated selection. Once you fall into the well (adopt a belief), jumping out requires not just new evidence but **additional energy to overcome the barrier**.
 
 **Thermodynamic Analogy**:
 $$ \Delta E_{change} = \Delta E_{evidence} + \Delta E_{barrier} $$
 
+**ΔE_barrier操作化候选**：
+- 信念强度量表（certainty rating）× 重复强化历史（信念持续时间 × 社会确认频率）
+- 联结§1.4 κ参数：ΔE_barrier ≈ Hardness(L₂) × (κ - κ_c2)（当κ>κ_c2时，势垒高度与距相变距离正比）
+
 *   **Social Implication**: This is why people don't easily admit mistakes even when confronted with iron-clad evidence. This is **not** stupidity—it's a **physical mechanism for maintaining system stability** ($L_2$ Stability).
+
+**可证伪预测**：
+- FC-Hysteresis-1：高信念强度（certainty rating高）+长持续时间的信念，其更新所需的反证证据数量应显著多于低强度/短持续信念——若与ΔE_barrier预测（∝强度×持续）不相关则势垒公式量化预测失败
+- FC-Hysteresis-2：在范式转移背景下（Kuhn），已处于旧范式中更长时间的科学家承认新范式所需的时间应更长（迟滞效应随"势阱深度"增加）——若无时间相关则SRT迟滞机制与科学实践脱节
 
 ---
 
