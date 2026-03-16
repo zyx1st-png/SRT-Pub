@@ -789,11 +789,23 @@ SRT_SocTheory_05_Language_Eco ← 你在这里
 其中 \(m\) 为感官通道（vision/hearing/touch/smell/taste）。
 
 ### T-Lang-Sense-1: No Universal Full Sensory Hierarchy
-SRT 接受“视觉常居高位”的物理底线，但拒绝将其外推为完整、固定的跨通道普遍层级。
+SRT 接受”视觉常居高位”的物理底线，但拒绝将其外推为完整、固定的跨通道普遍层级。
 \[
 \text{Rank}(m) = f\big(\rho_s^{(m)},\ \mathcal{N}_{comm}^{(m)},\ L_2\text{-history}\big)
 \]
 即：生物硬件约束 + 生态交流需求 + 历史语义沉积共同决定词汇化排序。
+
+> **[R]** 跨语言感官词汇化不等级性证据：Majid et al. 2018 *PNAS*（跨20语言嗅觉词汇化多样性，否定固定通道层级）；Majid & Levinson 2011 *Topics in Cognitive Science*（感官词汇化类型学综述）；Berlin & Kay 1969 *Basic Color Terms*（颜色词汇化作为R参照基线）。**[H]** 以下三变量SRT形式化（ρ_s生物约束 / N_comm生态需求 / L₂-history历史沉积的联合函数）及对SRT选择框架的接驳为本框架新增贡献。
+>
+> **变量操作化候选**：
+> - **ρ_s^(m)**（生物硬件约束）：代理指标 = 皮层放大因子（视觉V1表征面积/体细胞感觉皮层面积比）或外周感受器密度（触觉：Meissner小体密度；嗅觉：嗅觉受体基因数量）；跨物种可从神经解剖数据估算。
+> - **N_comm^(m)**（生态交流需求）：代理指标 = 该社区活动中需要精细区分的感官维度频率（如猎猎文化嗅觉事件频率）；操作化候选为文化人类学田野语料中感官词汇使用频率的自然对数。
+> - **L₂-history**（历史语义沉积）：代理指标 = CLICS colexification数据库（List et al. 2018）中该感官域词汇连通度，或对应感官词汇集的Shannon熵 H(m) = -Σ p_i log p_i（词义多样性越高表示沉积越深）。
+>
+> **精度边界**：f(...)为非线性映射，三变量存在交互效应（如L₂-history可能抑制N_comm的即时影响），当前命题为方向性、而非量化权重的主张；各变量的独立效应需跨语言回归分析控制后确认。SRT预测各变量符号方向：ρ_s ↑ → Rank ↑，N_comm ↑ → Rank ↑，L₂-history（词汇密度）↑ → Rank ↑。
+>
+> * **FC-Sense1-1**（证伪条件）：若跨≥50种生态条件差异显著的语言控制后，ρ_s^(m) 低的通道（如嗅觉）的词汇化排名在≥80%语言中仍持续高于ρ_s高的通道（如视觉），则需修正ρ_s的权重方向或引入补偿机制。
+> * **FC-Sense1-2**（证伪条件）：若在跨语言回归中控制L₂-history项后，N_comm效应系数降至不显著（p>0.1），则生态交流需求的独立贡献被过估，需重新检视N_comm与L₂-history的因果顺序（N_comm可能是L₂-history的历史先因而非独立预测因子）。
 
 ### Def-Lang-Sense-2: Colexification as Low-Barrier Path
 若两感知概念在多语言中高频共词（colexification），则对应 \(L_1\) 态间转化势垒较低：
