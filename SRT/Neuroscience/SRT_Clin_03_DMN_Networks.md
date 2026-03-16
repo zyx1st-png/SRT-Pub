@@ -108,11 +108,32 @@ DMN 的稳定作用等价于熵汇：
 ---
 
 ### C-DMN-1: Psychedelic Loosening Corollary
-若 DMN 抑制 \(\downarrow\)，则：
+
+> [R→Carhart-Harris et al. 2012 *PNAS*（裸盖菇素(psilocybin)的fMRI研究：DMN活动和功能连接显著降低，与自我解体/体验扩展评分相关——直接证据）; Carhart-Harris et al. 2016 *PNAS*（LSD的神经机制：DMN-TPN功能解耦合+皮层连接多样性增加+整体信息熵↑，与"意识扩展"体验对应）; Raichle et al. 2001 *PNAS*（DMN原始定义：静息态下前内侧PFC-后扣带回-楔前叶的自我参照加工网络——L₂自我叙事神经基底的最初界定）; Friston et al. 2011 *Journal of Psychopharmacology*（预测编码框架中的迷幻药作用：降低感觉精度权重→先验减弱→体验更多被"自下而上"信号驱动）]
+
+> **方向澄清**："DMN抑制↓"= DMN **活动降低**（即DMN被抑制的程度↑），非对DMN施加的抑制信号降低。等价表达：DMN活动↓。
+
+若 DMN 活动 $\downarrow$（裸盖菇素/LSD/深度冥想等干预），则：
 \[
-\text{Hardness}(L_2)\downarrow \Rightarrow L_0\;\text{access}\uparrow
+\text{Hardness}(L_2)\downarrow \Rightarrow \Psi_f^{filter}\downarrow \Rightarrow L_0\;\text{access}\uparrow
 \]
-* **Implication（中文）**：DMN 抑制为 \(L_0\) 重采样打开通道，产生扩展体验。
+
+> **神经通路说明**：DMN活动↓ → Hardness(L₂)↓ 的机制候选：前内侧PFC（vmPFC）与后扣带回（PCC）的功能连接减弱 → 自我参照先验编码强度降低 → L₂预测误差阈值降低（Friston精度权重框架：感知精度↑/先验精度↓，使L₁允许更多异常输入进入显现）→ 等效于Hardness(L₂)降低。即：DMN活动↓ ≈ Hardness(L₂)的暂时性松动（可逆，随DMN恢复而重建）。
+
+* **R/H 区分**：
+  - [R] 迷幻药→DMN活动降低的fMRI证据（Carhart-Harris 2012/2016）；DMN作为自我参照L₂基底（Raichle）；精度权重框架（Friston）
+  - [H] **SRT解读**：DMN活动↓ = Hardness(L₂)暂时↓ = Ψ_f^filter↓ = L₀通道打开——将神经层次（DMN）与SRT本体论层次（Hardness/Ψ_f）联结是SRT的解释性映射，非神经科学共识
+
+* **Implication（中文）**：DMN活动降低为 $L_0$ 重采样打开通道，产生扩展体验（边界松动/洞察涌现/整体感）。效果可逆——随DMN恢复至正常活动，Hardness(L₂)重建，L₀重新被过滤（cf. §2.1本体论迟滞：η决定多快重新稳定）。
+
+* **操作化候选**（C-DMN-1链路的测量）：
+  - DMN活动：fMRI静息态DMN（前内侧PFC+PCC+楔前叶）的BOLD信号均值，或种子-based功能连接强度
+  - Hardness(L₂)代理：信念更新速率（贝叶斯任务中的先验权重/学习率）——Hardness高 = 先验主导，更新慢
+  - L₀ access代理：皮层信息多样性（Lempel-Ziv熵，Carhart-Harris 2016使用）；或双稳态知觉翻转率（高L₀通道→更频繁翻转）
+
+* **可证伪预测**：
+  - FC-DMN1-1：在裸盖菇素给药条件下，被试的fMRI-DMN活动降低幅度（基线-峰值差）应与主观"边界消融"评分（如MEQ30的神秘体验量表）正相关（r > 0.4，Carhart-Harris 2012的范式复制）；若DMN降低幅度与体验评分无关则C-DMN-1联结失败
+  - FC-DMN1-2：在同等DMN抑制幅度下，基线Hardness(L₂)高（先验权重高，信念更新慢）的被试应报告**更强烈**的扩展体验（因为Hardness从高基础降低的相对变化更大）；若基线Hardness无调节效应则"Hardness松动量而非绝对值"的SRT预测失败
 
 ---
 
