@@ -106,6 +106,25 @@ $$ \eta_{selection} = \frac{\Delta I_{useful}}{\Delta I_{total}} = \frac{\text{�
 ### T-Thermo-1 [T1.2.1]: Efficiency Upper Bound (效率上界定理)
 $$ \eta_{selection} \leq 1 - \frac{H(noise)}{H(L_0)} $$
 
+> [R→Shannon 1948 *A Mathematical Theory of Communication*（信道容量上界：C = H(X) - H(X|Y)）; Cover & Thomas 2006 *Elements of Information Theory*（噪声信道效率）; Carnot 1824（热机效率上界η≤1-T_c/T_h的结构类比）]
+
+* **R/H 区分**：
+  - [R] 公式结构类比 Shannon 信道容量和 Carnot 效率上界（两者都是"1 - 噪声/总量"型不等式）；信息论上界推导方法
+  - [H] **SRT附加**：将具身选择算子的信息转换效率定义为 η_selection = ΔI_useful/ΔI_total 并推出此上界——此定义及其选择算子解读是SRT独有应用，非Shannon或热力学的直接推论
+
+* **Implication**: 选择效率上限由两个参数决定：① H(noise)（算子环境噪声熵）越低，上限越高；② H(L₀)（潜在域总熵）越大，上限越接近1（高维L₀为高效选择提供基础，类比高温热源）。极端情形：H(noise)→0时效率可达1（理想选择算子）；H(noise)→H(L₀)时效率上限→0（噪声主导，选择无效）。
+
+* **与Carnot类比的边界**：两者形式同构，但物理基础不同——Carnot效率来自热力学第二定律，T-Thermo-1来自信息论不等式；此类比为启发性而非严格等价 [H]。
+
+* **操作化候选**：
+  - H(noise) 代理：任务噪声水平（随机干扰强度 × 信号检测SDT的d'倒数）
+  - H(L₀) 代理：刺激集合多样性（AUT可能性空间的信息熵估计）
+  - η_selection：任务相关正确率/总反应信息量比
+
+* **可证伪预测**：
+  - FC-Thermo1-1：任务噪声水平（H_noise代理）↑时，被试选择效率（正确率/总反应量）系统性下降，且下降率与 H_noise/H_L₀ 估计值线性相关——若无线性关系则上界公式形式不成立
+  - FC-Thermo1-2：L₀丰富度更高的情境（更多选项/更大刺激空间）下，相同噪声水平对应的效率损失更小（上界更高）——若无差异则H(L₀)的缓冲效应为空
+
 ### T-Thermo-2 [T1.2.2]: Selection Entropy Production (选择熵产生定理)
 每次选择产生的熵增：
 $$ \Delta S_{universe} = \frac{W_{selection} - \Delta F_{system}}{T} \geq 0 $$
