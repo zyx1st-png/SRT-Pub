@@ -177,12 +177,16 @@ $$\kappa_{tan} \downarrow \;\to\; \Psi_f \uparrow \;\to\; d\text{-value} \downar
 *注：本定义为 FEP 精度加权在 SRT 三域模型的形式化映射，身份降级自原 Ax-Op-08b，依赖 Ax-Core-A4 与 Eq-Evo-02 推导。*
 
 ### Ax-Op-EH: Epistemic Horizon (认知视界公理)
-**Formal Definition**: 算子从L0提取L1信息的速率和总量，严格受制于其具身参数θ的复杂度（信道容量）：
-$$\dot{I}_{L_0 \to L_1}(\hat{G}_\theta) \leq \mathcal{C}(\theta) \equiv \log_2 \dim(\Theta)$$
-系统的剩余不确定性（熵）与算子最大计算容量绑定：
-$$H(L_0 | \hat{G}_\theta) \geq H_{\max} - \mathcal{C}(\theta)$$
-* **Implication**: 量子不确定性并非宇宙在掷骰子，而是任何有限θ参数的算子读取L0时必然遭遇的"带宽饱和"边界。认知视界（Epistemic Horizon）= 算子能力的本征上限，不是被遮蔽的客观真理，而是选择带宽的拓扑边界。
-* **Cross-ref**: Ax-Op-02 (注意力分解); Ax-ONT-IE (不可逆定律)。
+**Formal Definition**: 算子从 $L_0$ 提取 $L_1$ 信息的速率，严格受制于其具身参数的 Fisher 有效维度（信道容量上界）：
+$$\dot{I}_{L_0 \to L_1}(\hat{G}_\theta) \leq \mathcal{C}(\theta) \equiv d(\theta) = D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
+
+> **勘误（原 $\mathcal{C}(\theta) = \log_2 \dim(\Theta)$）**：参数空间维度对数不等于信道容量（容量依赖输入分布与 Fisher 几何，非纯维度）。采用 Eq-IT-B 的 Fisher 有效维度 $d(\theta)$ 统一符号，即算子可靠区分的 $L_0$ 信号独立方向数。
+
+系统的剩余不确定性与算子信道容量绑定（$H_{max} \equiv \log_2 \dim(L_1)$，即 $L_1$ 等概选择时的最大熵）：
+$$H(L_0 | \hat{G}_\theta) \geq H_{\max} - d(\theta)$$
+
+* **Implication**: 认知视界（Epistemic Horizon）= $d(\theta)$ 设定的带宽上界，是选择能力的本征上限。**类比注记**：量子 Heisenberg 不确定性（共轭可观测量不可同时任意精确）与"有限参数算子的带宽饱和"在结构上类似，但机制不同（前者来自非对易算符，后者来自 Fisher 维度上界）——此为结构类比，非机制等价。速率上界 $\dot{I}\leq d(\theta)$ 与 `Core_Law/SRT_Reference_Dynamics.md §15.5` 的 $I_{created} \leq d$ 一致（速率vs积分形式）。
+* **Cross-ref**: Ax-Op-02（注意力分解）；Eq-IT-B（$d$ = Fisher 有效维度）→ `Core_Law/SRT_Reference_Dynamics.md §15.2`；Ax-ONT-IE（不可逆定律）。
 
 ### T-Op-EH-1: Triadic Cognitive Sweet Spot（认知三元甜点区）
 **Deductive Statement**: 对有限人类算子而言，可讲述、可教学、可复用的机制分解常在三元附近达到局部最优：
@@ -908,3 +912,43 @@ P_{\text{pass}}(x,t)=f\!\left(\mathrm{license}(x),\rho_{FG}(t),c_{NTR}(t),\theta
 1. 不采纳“任何无序都自动带来功能”的推论；这里指的是被生物结构与受体相互作用约束过的无序边界。
 2. 不采纳“NPC 已证明 SRT”为结论；它提供的是一个强机制类比与局部对齐实例，不是全局证明。
 3. 不采纳“所有 Markov Blanket 都等同核孔门控”的外推；该接口仅说明部分主动边界可由动态无序来承载选择性。
+
+
+## Biomolecular Resonance Search Interface（2026-03-16）
+
+### Def-Op-BRS-1: Pumped Resonant Encounter Window
+对被持续供能的生物大分子，若其集体振动模式进入相干主模窗口，则原本短程的分子相互作用可被一项频率选择性的长程偏置补充：
+\[
+P_{in}>P_c \ \land\  |\omega_i-\omega_j|<\delta_\omega
+\Rightarrow
+F_{ij}^{res}(r)\sim -\frac{C_{ij}}{r^3}
+\]
+而在失谐条件下，该附加项退回快速衰减窗口：
+\[
+|\omega_i-\omega_j|\gg\delta_\omega
+\Rightarrow
+F_{ij}^{off}(r)\sim -\frac{C'_{ij}}{r^6}
+\]
+
+### T-Op-BRS-1: Resonant Selectivity Can Pre-Bias Molecular Search
+在拥挤生化环境中，配体-受体或蛋白-DNA 的相遇动力学不必完全等价于纯 Brownian waiting；若存在被激活的共振偶极窗口，则分子搜索率可写为：
+\[
+k_{\mathrm{enc}}=k_{\mathrm{Brownian}}+\Delta k_{\mathrm{res}}(\Delta\omega,P_{in},r,\rho)
+\]
+其含义是：真正的“锁钥式识别”可以仍然发生在近接触区，但在此之前，系统已可能通过频率匹配对候选伙伴施加远程、可选择的预偏置。
+
+### C-Op-BRS-1: SRT Mapping
+- `Ax-Op-08` 的 resonance filtering 不只可用于认知层，也可下沉到分子搜索层：选择性可先以“频率许可证”形式出现，再落到局部化学配对。
+- 这为“为何 cognate partners 不只是随机久等碰撞”提供了一个可检机制候选：\(\hat G_\theta\) 在亚细胞尺度上也可能先切出可相遇窗口，再由局部结构完成最终锁定。
+- 该机制与 `Nuclear-Pore Disorder Gate Interface` 互补：后者强调“动态无序边界如何承载选择性”，此处强调“远程共振如何预偏置谁更可能抵达该边界”。
+
+### [Lineage/Source]
+- Marco Pettini et al., *Out-of-Equilibrium Collective Oscillation as a Classical Phonon Condensation in a Model Protein*, *Phys. Rev. X* 8, 031061 (2018).
+- Mathias Lechelon et al., *Experimental evidence for long-distance electrodynamic intermolecular forces*, *Science Advances* 8, eabl5855 (2022).
+- Elham Faraji et al., *Electrodynamic forces driving DNA-protein interactions at large distances*, *Frontiers of Physics* 20, 061200 (2025).
+
+## 【理论边界/防误用声明】
+1. 不采纳“已证明细胞内分子搜索主要靠 electrodynamic resonance” 的推论；当前更稳妥的口径只是 **proof-of-principle candidate mechanism**。
+2. 不采纳“共振偏置可替代局部化学识别 / 几何配体匹配 / 水化与静电条件”的推论；它至多是 pre-contact bias，而非完整识别的全部。
+3. 不采纳“光学泵浦下的 BSA / ferritin 结果可直接外推到所有生理态蛋白”的推论；生物供能机制（如 ATP、水化离子动量转移）仍属开放问题。
+4. 不采纳“EcoRI-DNA 的 co-resonance 模型已直接证实 in vivo DNA-protein targeting” 的推论；当前更接近理论可行性展示，而非细胞内最终定论。
