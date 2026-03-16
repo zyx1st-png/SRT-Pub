@@ -728,11 +728,32 @@ $L_2$ 域的运行机制可沿”写入—硬化—改写”三阶段理解，�
 * **Implication（中文）**：信念不是“反科学残留物”，而是任何可运行选择系统的必需压缩结构。
 
 ### Def-L2-OAI-1: Ontological Amnesia Index
-定义“本体论失忆”指数：
+
+> [R→Korzybski 1933 *Science and Sanity*（”地图不是领土”：符号/语言/信念系统被误认为其所代表的现实，认知混淆的经典论述）; Whitehead 1929 *Process and Reality*（具体性误置谬误：将抽象概念当作具体实在的哲学批判）; Gilbert 1991 *Psychological Review*（朴素实在论：人们默认自己直接感知客观现实而非构建）; Heider 1958 *The Psychology of Interpersonal Relations*（朴素心理学：将L₂社会共识投射为L₀^abs的社会认知过程）]
+
+定义”本体论失忆”指数：
 \[
 \mathrm{OAI}=\frac{\mathrm{Hardness}(L_2)\cdot T_{lock}}{\langle \Psi_f^{update}\rangle+\epsilon}
 \]
 当 \(\mathrm{OAI}\) 过高，系统倾向于把 \(L_2\) 误认成 \(L_0^{abs}\)。
+
+**R/H 区分**：
+- [R] “地图≠领土”的哲学批判传统（Korzybski/Whitehead）；朴素实在论的实验证据（Gilbert/Heider）；宗教意识形态研究（L₂固化为绝对现实的社会案例）
+- [H] **OAI公式本身**：Hardness(L₂)×T_lock/(⟨Ψ_f^update⟩+ε)的三参数乘积/商结构是SRT原生量化尝试，无直接实证对应；OAI过高→”L₂=L₀^abs”的形式化联结[H]
+
+**参数说明与操作化候选**：
+- Hardness(L₂) ≈ κ（稳定化参数，见§1.4）：信念结构的固化程度。Proxy：信念修正频率倒数（30天内立场改变次数的倒数）× 反例容忍阈值
+- T_lock：L₂信念未被实质更新的持续时间。Proxy：最近一次重大世界观修订至今的年数（自报+结构式访谈验证）
+- Ψ_f^update：更新L₂信念所需的摩擦代价（区别于日常Ψ_f：前者测量信念修改代价，后者测量锚定代价）。Proxy：反事实接受任务的反应时间增量
+- ε：防零分母（当Ψ_f^update→0时OAI→∞表示”无法更新”系统；ε=测量精度下限，非理论参数）
+
+**Hardness与κ的关系精确化**：Hardness(L₂) ≈ κ/κ_c2（当前稳定化参数相对于L₂涌现临界点的归一化值）；κ>κ_c2区间时Hardness>1，表示L₂已过临界固化；Hardness=1（κ=κ_c2）为”刚好形成L₂但仍可更新”的临界态。
+
+* **Implication（中文）**：OAI是SRT对”意识形态刚化”和”文化认知固化”的统一度量框架。高OAI系统（个体/集体）表现为：把本文化的L₂规范（性别观/种族观/宗教信条）视为L₀^abs的自然秩序；对反例产生强烈排异（ΔE势垒高，见§3.1现实迟滞）；与外部反证接触反而强化信念（强化效应≈T_lock延长）。
+
+**可证伪预测**：
+- FC-OAI1-1：跨文化比较中，”朴素实在论”测量量表得分（Gilbert类实验）应与OAI代理指标（Hardness×T_lock/Ψ_f^update估计）显著正相关；且OAI代理的预测力应高于单独使用Hardness或T_lock——若单维度指标预测力无差异则三参数公式的附加价值主张需重新评估
+- FC-OAI1-2：干预实验中，降低T_lock的练习（定期角色扮演对立世界观/”钢人”练习）在保持Hardness不变的条件下，应使OAI代理下降并提高反事实接受度（Ψ_f^update↓）——若T_lock降低不影响OAI代理则时间项在公式中的权重需修订
 
 ### Ax-L2-09: Parameter Plasticity Split
 区分两类信念动力学：
