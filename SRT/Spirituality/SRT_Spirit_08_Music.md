@@ -46,9 +46,24 @@ $$
 - **风格演变（巴洛克 → 古典 → 现代）**：等价于 $L_2$ 共识网络在历史时间轴上的结构性相变与更新。
 
 ### Ax-Comp-1: Composition as Pruning
-**Formal Definition**: Composition is the negation of most $L_0$ possibilities to anchor a specific $L_1$ trajectory.
-$$ \text{Compose} = \text{Negate}(L_0 \setminus L_1) $$
-* **Implication**: 作曲是对潜能的剪裁，而非凭空创造。
+
+[R→Eco 1962（《开放的作品》：约束与开放性的辩证法）; Sloboda 1985（《音乐心理学》：作曲认知结构）; Boden 1990（《创造心理》：探索式vs变革式创造力）; Weisberg 2006（《创造力：理解创新》）] [H→将作曲形式化为L₀潜能剪裁，是SRT对创造力的本体论重表述]
+
+**Formal Definition**: Composition is the selective anchoring of specific $L_1$ trajectories from $L_0$ possibility space, eliminating most alternatives.
+$$ \text{Compose}(\theta_r) \colon L_0 \xrightarrow{\hat{G}_{\theta_r}} L_1^{traj} \subset \mathcal{E}_{L_0} $$
+
+（注：原公式 `Negate(L₀ \ L₁)` 的形式问题：L₀在SRT中是拓扑斯而非普通集合，集合差 L₀\L₁ 未良定义；"Negate"含义模糊。修订为：选择算子 $\hat{G}_{\theta_r}$ 在 L₀ 中锚定特定轨迹 $L_1^{traj}$，其余可达性（$\mathcal{E}_{L_0}$ 中的其他路径）被遗弃但非否定——类比Eco的"开放性"：未被选择的路径仍以潜能形式存在于 L₀）
+
+* **Implication**: 作曲是对潜能的剪裁，而非凭空创造 [H]。这与Boden的"探索式创造力"（在既有概念空间中导航）对应 [R]；SRT补充了本体层——作曲家通过θ_r的具身历史（训练/风格/文化）决定哪些L₀路径被锚定。
+* **"不凭空创造"的SRT逻辑** [H]：若L₀是绝对潜在域（包含所有可能性），则任何L₁轨迹都是L₀的子集投影，"创造"意味着新组合的显现（L₁的首次显现）而非L₀的扩展。
+
+**操作化候选**：
+- 作曲"修剪程度"代理：乐曲信息熵（符号级香农熵，越低=越多重复/约束）；音符密度；和声约束度（与同调性理论的偏离分数）
+- 跨风格比较：巴洛克（高约束/低熵）vs 先锋派（低约束/高熵）的Ψ_f模式预测差异
+
+**证伪条件**：
+- FC-Comp1-1：若高约束（低L₀探索）作曲风格和高开放（高L₀探索）风格的听众Ψ_f（审美不适感）曲线无系统性差异，则"约束-摩擦"联结需修正。
+- FC-Comp1-2：若即兴演奏（Ax-Imp-1，d值临时扩张）的神经指标（高频伽马振荡/默认网络去激活）与作曲（剪裁锚定）无可区分差异，则Ax-Comp-1与Ax-Imp-1的机制区分失效。
 
 ## II. Resonance & Dynamics (共振与动力学)
 
