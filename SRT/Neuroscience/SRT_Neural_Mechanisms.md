@@ -750,7 +750,17 @@ L_1 = f(\theta) + \epsilon,\quad
 
 ### Mechanism Explanation (机制解释)
 
-$\hat{G}_\theta$ 在神经流形 $\mathcal{M}$ 上执行选择流：感觉-动作输入 $u$ 驱动轨迹 $\dot\sigma=F(\sigma,\theta,u)$，经门控算子 $\mathcal{G}_{gate}$ 筛选后由点燃投影 $\Pi_{ignite}$ 锚定为 $L_1$。代谢约束使选择动力学收敛为除法归一化；$\Psi_f$ 通过预测误差映射 ($PE\propto\Psi_f$) 桥接计算层与本体论层。胶质介观算子 $\hat{G}_{meso}$ 以补体标记执行慢时标 $L_2$ 修剪。病理对应 $\Delta\theta$ 偏移，衰老对应 $\kappa_{body}$ 衰退——$d$ 值完好但算子与基质逐渐脱锚。
+> [R→Carandini & Heeger 2012 *Nature Reviews Neuroscience*（除法归一化：感觉皮层中的普适计算原语）; Schafer et al. 2012 *Science*（小胶质细胞补体标记（C1q/C3）介导突触修剪：L₂修剪的机制基础）; Friston 2010 *Nature Reviews Neuroscience*（PE→Δθ的梯度学习联结）; Barlow 1961（冗余压缩与神经代谢约束）]
+
+**R/H 区分**：
+- [R] 除法归一化（Carandini & Heeger）；补体标记突触修剪（Schafer）；PE→θ更新（Friston）——均为既有神经科学框架
+- [H] **SRT综合解读**：① PE∝Ψ_f桥接计算层与本体论层（SRT特有的双层等同主张）；② Ĝ_meso以"介观算子"概念统合胶质细胞功能；③ 衰老=κ_body衰退（d值完好但算子-基质脱锚）——此三项解读均为SRT独有框架
+
+$\hat{G}_\theta$ 在神经流形 $\mathcal{M}$ 上执行选择流：感觉-动作输入 $u$ 驱动轨迹 $\dot\sigma=F(\sigma,\theta,u)$，经门控算子 $\mathcal{G}_{gate}$ 筛选后由点燃投影 $\Pi_{ignite}$ 锚定为 $L_1$。代谢约束使选择动力学收敛为除法归一化 [R→Carandini & Heeger 2012]；$\Psi_f$ 通过预测误差映射 ($PE\propto\Psi_f$) 桥接计算层与本体论层 [H]。胶质介观算子 $\hat{G}_{meso}$ 以补体标记执行慢时标 $L_2$ 修剪 [R→Schafer et al. 2012 + H形式化]。病理对应 $\Delta\theta$ 偏移，衰老对应 $\kappa_{body}$ 衰退——$d$ 值完好但算子与基质逐渐脱锚 [H]。
+
+**可证伪预测**：
+- FC-MechSyn-1：PE∝Ψ_f：同一被试的前额叶预测误差信号（EEG MMN振幅）应与Ψ_f代谢代理（皮质醇/静息代谢率）正相关——若无相关则PE-Ψ_f桥接为类比而非可测联结
+- FC-MechSyn-2：衰老被试（κ_body↓代理：握力/步态稳定性↓）的d值代理应与正常水平接近，但算子-基质耦合（运动-认知整合任务绩效）显著下降——若d值和耦合同步下降则"d完好但脱锚"的衰老特征主张需修订
 
 ---
 
