@@ -62,7 +62,23 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 \[
 \Pi_{intero}=\frac{1}{\text{Var}(\epsilon_{intero})}
 \]
+> [R→Friston 2010 *The free-energy principle*; Barrett & Simmons 2015 *Interoceptive predictions*; Seth 2013 *Interoceptive inference*; Garfinkel et al. 2015 *Knowing your own heart*]
+
 * **Implication（中文）**：内感受精度越高，\(L_1\) 越稳定，但也越容易产生过拟合与僵化。
+
+* **R/H 区分**：
+  - [R] 内感受精度公式本身（Bayesian精度权重框架）及"高精度→预测误差更新减弱"——均为FEP/预测编码框架既有推论
+  - [H] **SRT附加**：Π_intero 高 → Ĝ_θ 对内感受通道权重 ↑ → θ跨情境迁移抵抗力 ↑ → L₁ 具身锚定增强但可塑性降低；即"高精度=SRT意义上θ更新被内感受通道优先抑制"
+
+* **与Ψ_f联结**：高 Π_intero 需持续匹配验证（高采样率 × 高信噪比），维护成本上升 → Ψ_f 代谢基底抬升。极端情形（Π_intero → ∞）对应躯体化障碍：内感受信号被赋予绝对权重，Ψ_f 极高，θ 几乎不可更新。
+
+* **操作化候选**（参见 Ax-ADV-2 定义链）：
+  - Π_intero代理：心率变异性频域（HF-HRV）、呼吸规律性（RMSSD）、心跳感知任务（heartbeat tracking accuracy）
+  - θ更新抵抗：新信息引入后 L₁ 稳定性（情绪调节延迟 × 认知再评价效力倒数）
+
+* **可证伪预测**：
+  - FC-ADV3-1：高 HF-HRV 被试的情绪诱导范式中，L₁ 恢复基线更快但θ跨情境迁移得分更低（精度-僵化权衡）——若两者无交互效应则本公理独立预测失败
+  - FC-ADV3-2：躯体化障碍患者（高Π_intero估计）的 Ψ_f 代谢代理（静息代谢率/EEG慢波功率）显著高于匹配对照——若代谢代理无差异则Ψ_f-精度联结为空
 
 ---
 
