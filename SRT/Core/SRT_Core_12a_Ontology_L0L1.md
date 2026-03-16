@@ -163,9 +163,32 @@ $$\text{Intelligence} \propto \frac{I(L_1; L_0)}{H(L_1)}$$
 * **Implication**: 智能是对潜在信息的压缩捕获能力，而非单纯计算速度。
 
 ### Ax-IF-02: Hardware/Software Filter
+
+> [R→Sporns, Tononi & Kötter 2005 *PLOS Computational Biology*（人类连接组概念奠基：结构连接组决定信息传播可能性拓扑，即L₁^hard约束的物质基础）; Dehaene, Changeux & Nacache 2006 *Trends in Cognitive Sciences*（神经工作空间理论：注意力门控从局部处理到全局广播——L₁^soft的点火机制）; Itti & Koch 2001 *Nature Reviews Neuroscience*（注意力计算模型：自下而上显著性图+自上而下任务偏向共同决定选择窗口）; Friston 2005 *Philosophical Transactions B*（预测编码框架：注意力=精度加权，等效于Ĝ_θ对Ψ_f的局部调制）]
+
 **Formal Definition**: Selection occurs in two coupled stages: fixed hardware and plastic attention.
 $$L_1^{hard} = \text{Connectome}(L_0), \quad L_1^{soft} = \text{Attention}(L_1^{hard})$$
-* **Implication**: 现实界面由硬件约束与注意力可塑性共同塑形。
+
+> **Connectome()函数精度说明**：$\text{Connectome}(L_0)$ 不是简单标量函数，而是一个稀疏有向图传播算子——其数学结构类似图神经网络的消息传播（$L_1^{hard} = \sigma(W_{connectome} \cdot L_0^{projected})$，其中 $W$ 为稀疏邻接矩阵，$\sigma$ 为非线性神经激活）。硬件层的约束因此是**拓扑可达性约束**（哪些L₀投影在连接图上可到达L₁编码区），而非简单函数映射。
+
+> **两阶段反馈说明**：$L_1^{soft} = \text{Attention}(L_1^{hard})$ 为一阶近似（自底向上串联）。实际上注意力通过调制神经增益（如ACh/NE系统）改变有效连接强度，从而影响 $W_{connectome}$ 的动态权重——即软件层（注意力）对硬件层（连接组有效权重）存在反馈：$L_1^{hard} \leftarrow \text{Gain}(\text{Attention\_state})$。完整模型为双向耦合，此公理为简化的单向近似。
+
+> **与Ax-IF-01的关系**：IF-01中的 $L_1$ = $L_1^{soft}$（注意力选择后的最终显现域），是two-stage过滤的最终输出；$I(L_1; L_0)$ = $I(L_1^{soft}; L_0)$，分母 $H(L_1^{hard}) \geq H(L_1^{soft})$（硬件过滤后仍有注意力瓶颈）。
+
+* **R/H 区分**：
+  - [R] 连接组作为神经信息传播拓扑约束（Sporns）；注意力门控从局部到全局广播的机制（Dehaene/Itti&Koch/Friston）
+  - [H] **SRT形式化**：将连接组过滤 + 注意力过滤写成两阶段串联（含反馈修正），并联结到θ的解剖成分（$L_1^{hard}$）与Ĝ_θ的注意力分量（$L_1^{soft}$）的分层展开
+
+* **Implication**: 现实界面由硬件约束（拓扑可达性）与注意力可塑性（精度加权选择）共同塑形；改变注意力（软件）可部分重写有效硬件约束，但无法突破连接组的拓扑边界。
+
+* **操作化候选**：
+  - $L_1^{hard}$代理：fMRI静息态功能连接矩阵（rsFC）或DTI白质纤维束图（结构连接组）
+  - $L_1^{soft}$代理：EEG注意力相关晚正电位（P300/N2pc），或双目竞争范式中被意识到的刺激比例（注意力可塑性窗口测量）
+  - 两层分离：同一被试在不同注意力状态（专注/散漫）下，rsFC主框架不变（hard层稳定），但激活模式随注意力状态显著改变（soft层变化）
+
+* **可证伪预测**：
+  - FC-IF2-1：在连接组完全相同（同卵双胞胎或同一被试不同时间点）条件下，静息态功能连接矩阵（$L_1^{hard}$代理）应高度相似（ICC>0.7），而注意力选择窗口（P300振幅/双目竞争优势眼）可随认知状态显著改变——若两者同等易变则hard/soft的分离假设失败
+  - FC-IF2-2：通过神经调控（TMS/tDCS对顶叶或额叶注意网络）改变注意力状态（$L_1^{soft}$），不应改变静息态连接组拓扑结构（$L_1^{hard}$）——若TMS同时改变rsFC全局拓扑则两层非相对独立的假设需修订
 
 <br>
 
