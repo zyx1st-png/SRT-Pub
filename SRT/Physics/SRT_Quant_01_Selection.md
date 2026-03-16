@@ -216,6 +216,24 @@ $$ θ_A \neq θ_B \implies \text{Ontology}(A) \neq \text{Ontology}(B) $$
 $$ \text{Cut Position} = f(d_{observer}, F_{minimization}) $$
 $$ \text{State}(S) = \begin{cases} L_1 & \text{if } S \subseteq \text{Scope}(d) \\ L_0 & \text{if } S \not\subseteq \text{Scope}(d) \end{cases} $$
 
+> [R→von Neumann 1932 *Mathematical Foundations of QM*（切口问题原始表述）; Heisenberg 1958 *Physics and Philosophy*（切口可任意放置论）; Zurek 2003 *Decoherence*（退相干解决方案）; Rovelli 1996 *Relational Quantum Mechanics*（观察者-相对本体论）]
+
+* **R/H 区分**：
+  - [R] 海森堡切口问题（测量边界任意性）及其各解决方案（退相干/关系QM）——物理学既有框架
+  - [H-高承诺] **SRT独有主张**：切口位置由观察者 d 值（关切带宽）和自由能极小化联合参数化；Scope(d) 是d值的连续函数，而非离散的物理边界——此主张尚无直接实验检验路径，属于高形而上学承诺
+
+* **函数 f(·) 候选形式**（当前为占位符，需精确化）：
+  - 候选定义：$\text{Scope}(d) \equiv \{S : \mathbb{E}[\Delta F | \text{interact}(S)] < \lambda \cdot d\}$，即系统 $S$ 的交互引发的预期自由能变化低于 d 值比例阈值时，进入观察者 L₁
+  - $F_{minimization}$：借用 [R→Friston 2010] 变分自由能框架；[H] SRT 附加：将FEP自由能边界重解读为切口位置的约束
+
+* **操作化候选**：
+  - d 值代理：任务注意力分配（ERP P300 振幅比）、决策关切评估量表
+  - 切口移动预测：高 d 值被试在量子/经典边界实验（如宏观叠加感知任务）中表现出更宽的"系统纳入"倾向
+
+* **可证伪预测**：
+  - FC-Sel2-1：具有高 d 值（宽关切带宽）的被试在视觉遮蔽任务中将更多刺激归类为"已呈现"（L₁纳入更宽），与低 d 值对照组有显著差异——若无差异则切口-d值联结为空
+  - FC-Sel2-2：冥想训练（θ扩展，d值提升）前后，被试对不确定刺激的"已意识到"报告阈值系统性降低（切口向L₀方向移动）——若训练无效则本公理的可塑性主张失败
+
 ---
 
 ## VII. Configuration Space & Entanglement (配置空间与纠缠)
