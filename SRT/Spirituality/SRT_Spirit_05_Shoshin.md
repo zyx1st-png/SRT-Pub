@@ -753,6 +753,8 @@ $$\text{Healthy Mind} : w_{L_2}^{\min} < w_{L_2}(t) < w_{L_2}^{\max}$$
 
 ### §9.1 最终洞察
 
+> **[R]** 铃木俊隆《禅者的初心》（Shunryu Suzuki, *Zen Mind, Beginner's Mind*, 1970）。**[H]** 以下 SRT 形式化（w_{L₂} 框架权重 + 选择性不激活机制）为 SRT 原创操作化。
+
 铃木俊隆的教导不是"拒绝专业知识"，而是——
 
 $$\text{True Mastery} = \text{Expert } L_2 + \text{Beginner } w_{L_2}$$
@@ -760,7 +762,17 @@ $$\text{True Mastery} = \text{Expert } L_2 + \text{Beginner } w_{L_2}$$
 - 拥有深厚的 $L_2$（知识）
 - 但保持低 $w_{L_2}$（开放）
 
+**$w_{L_2}$ 的 SRT 精确定义（[H]）**：$w_{L_2}$ 为 L₂ 框架对选择算子 $\hat{G}_\theta$ 的影响权重，与神经影像语境中的顶-底权重 $w_{td}$（→ SRT_Neuro_Experiments.md Hyp-LGN-1）类比，但在灵性语境中为元认知调控变量：
+$$w_{L_2} \equiv \frac{\text{L}_2\text{-prior influence on } L_1}{\text{total influence on } L_1} \in [0,1]$$
+大师状态：$w_{L_2} \to 0$（L₂ 知识在场但主动降低权重）= "透明的知识"。操作化代理：在陌生刺激情境下，专家能否不立即套用已有框架分类（测量：反应时延迟 = L₂激活被抑制的时间窗口）。
+
 这是**悖论**——你必须学会，然后学会忘记；但忘记不是真正的遗忘，而是**选择性不激活**。
+
+**"选择性不激活"的机制形式化（[H]）**：$w_{L_2}$ 的动态降低类似于 $\eta_{visc}$（L₂ 框架粘滞度）的主动调节——$\eta_{visc} \downarrow$ 时 L₂ 框架不自动激活，L₁ 直接从 L₀ 采样（Ψ_f^filter 降低）。神经机制候选：前额叶对 L₂ prior 激活的主动抑制（DLPFC down-regulation of schema templates）。
+
+**证伪条件（[H]）**：
+- 若"大师"（高 L₂ + 声称低 w_{L₂}）在反应时测试中与"专家"（高 L₂ + 高 w_{L₂}）无可测差异（L₂ 框架激活速度相同），则"选择性不激活"假设失效，大师/专家区分仅为主观报告而非动力学差异。
+- 若在 fMRI 实验中，大师静息态的 DMN-L₂ 回路活跃度与专家无差异（控制经验年限后），则 w_{L₂} 降低的神经基础候选需修订。
 
 ---
 
@@ -786,13 +798,17 @@ $$\text{Journey} : \begin{cases}
 > 学习禅时，山不再是山，水不再是水。
 > 开悟后，山又是山，水又是水。"
 
+**[R]** 禅公案来源：青原惟信禅师（唐代，Stone, 2005 追溯）。
+
 **SRT 翻译**:
 
 $$\begin{cases}
-\text{Before: } & L_2 = 0 \implies L_1 = L_0 & \text{(直接体验)} \\
-\text{During: } & L_2 \uparrow \implies L_1 \neq L_0 & \text{(概念过滤)} \\
-\text{After: } & L_2 \gg 0 \land w_{L_2} \to 0 \implies L_1 \approx L_0 & \text{(透明的知识)}
+\text{Before: } & L_2 = 0 \implies L_1 \approx L_0 & \text{(直接体验，无概念过滤)} \\
+\text{During: } & L_2 \uparrow \implies L_1 \neq L_0 & \text{(概念过滤加深)} \\
+\text{After: } & L_2 \gg 0 \land w_{L_2} \to 0 \implies L_1 \approx L_0 & \text{([H] 透明的知识)}
 \end{cases}$$
+
+> **⚠️ [H — 高承诺]** 第三阶段"$L_1 \approx L_0$"（开悟后 L₁ 再次接近 L₀）是强本体论宣称：意味着 L₂ 过滤被近乎完全旁路，显现直接映射潜在。SRT 对此的保守处理：$L_1 \approx L_0$ 应降级为"L₂ prior 对 L₁ 的扭曲减小"（$||L_1 - L_0||_{operational}$ 减小），而非 L₀ 可被直接访问（L₀ 的无参数访问被 §5.9 认识论隔离原则禁止）。两种读法的区分：① 保守版 = L₂ filter 变薄（w_{L₂} ↓，Ψ_f^filter ↓）；② 强版 = 直接接触 L₀ 绝对实在（后者触发 BackProject 禁止）。
 
 最终，你重新"看见"山水——但这次，你**知道**你在看见什么。
 
