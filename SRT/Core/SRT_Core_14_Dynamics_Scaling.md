@@ -59,7 +59,22 @@ $$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, 
 ### Ax-Scale-02: Coupling Strength
 **Formal Definition**: Inter-scale influence is governed by coupling dynamics.
 $$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{ij}(\hat{G}_i, \hat{G}_j)$$
+
+> [R→Kuramoto 1975 *Chemical Oscillations, Waves and Turbulence*（相耦合振子：κ_ij的原型——全局同步条件 κ > κ_c）; Haken 1978 *Synergetics*（协同学：多尺度自组织，序参量从快变量压缩慢变量）; Friston 2019 *Physics of Life Reviews*（自由能原理中的多尺度嵌套马尔可夫毯）; McEwen & Stellar 1998 *Archives of Internal Medicine*（等变负荷：跨尺度神经-内分泌-免疫耦合）]
+
+* **R/H 区分**：
+  - [R] 耦合振子/协同学框架（Kuramoto/Haken）；多尺度嵌套自由能（Friston）——提供κ_ij形式化的数学基础
+  - [H] **SRT应用**：将选择算子Ĝ_j的耦合写成上述形式，将跨尺度（分子→神经→社会）的选择互动统一在同一方程中——此统一形式化框架是SRT独有
+
+* **κ_ij操作化候选**（f_j/g_ij均为待定函数，需领域特定具体化）：
+  - 神经-免疫耦合：κ_neural-immune 代理 = 应激条件下神经激活（fMRI杏仁核信号）与免疫激活（CRP/IL-6）的格兰杰因果系数
+  - 社会-个体耦合：κ_soc-ind 代理 = 群体行为改变对个体θ更新的时延互相关系数（社会影响研究）
+
 * **Implication**: 不同尺度的选择算子通过耦合矩阵进行动力学交互。
+
+* **可证伪预测**：
+  - FC-Scale02-1：在神经-免疫双向耦合中，κ_neural-immune的Granger系数应与系统适应速度（压力恢复时间τ）负相关——高耦合系数=更快协同适应（若无则耦合度无预测效力）
+  - FC-Scale02-2：T-Scale-02C1的尺度不变性主张：对同一系统的粗粒化观测（例如脑区vs神经元）中，选择算子的行为统计应在粗粒化前后保持结构相似性（Pearson r>0.7）——若粗粒化前后相关性低则跨尺度可比性主张失败
 
 ### T-Scale-02C1: Consistency Under Coarse-Graining
 **Deductive Statement**: Coarse-graining commutes with selection under scale mapping.
