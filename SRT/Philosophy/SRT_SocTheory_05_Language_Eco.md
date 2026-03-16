@@ -824,6 +824,9 @@ E_{t+1}=E_t+\Delta E\big(A_t(\hat G_\theta),\,K_t\big)
 其中 \(A_t\) 为时刻 \(t\) 的构建行为（筑巢、耕作、储藏、改土等），\(K_t\) 为环境可改写性约束。
 
 ### T-Eco-NC-1: Selection Pressure Endogenization
+
+> **[R]** 生态位建构理论：Odling-Smee, Laland & Feldman（2003, *Niche Construction: The Neglected Process in Evolution*）；合作动力学：Fogarty（2026 Lineage/Source）。**[H]** 以下 SRT 形式化（P_t 为 θ 分布矩，Φ 为自由能梯度下降，稳态不动点分析）为 SRT 新增贡献。
+
 在生态位建构下，选择压力不再是外生常量，而是内生反馈量：
 \[
 \mathcal{S}_{t+1}=\mathcal{S}\big(E_{t+1},\,P_{t+1}\big),\qquad
@@ -832,8 +835,8 @@ P_{t+1}=\Phi\big(P_t,\mathcal{S}_{t+1}\big)
 即群体通过改写 \(E\) 反过来改写自身与后代面临的选择地形。
 
 **SRT 量对应**：
-- $P_t$：群体 $\theta$ 分布的统计描述，即 $P_t = \{\theta_i\}_{i\in\text{pop}}$ 的矩（均值 $\bar\theta$、协方差 $\Sigma_\theta$）
-- $\Phi(P_t, \mathcal{S}_{t+1})$：群体算子 $\hat{G}_{\bar\theta}$ 对更新后选择压力 $\mathcal{S}_{t+1}$ 的响应；在 SRT 一阶近似下，$\Phi(P_t, \mathcal{S}) \approx P_t - \eta \nabla_P F(P_t, \mathcal{S})$（自由能梯度下降，Ax-NEURO-MECH-4 的群体扩展）
+- $P_t$：**[H]** 群体 $\theta$ 分布的统计描述，即 $P_t = \{\theta_i\}_{i\in\text{pop}}$ 的矩（均值 $\bar\theta$、协方差 $\Sigma_\theta$）。测量代理：跨代性格/能力测试（多代纵向数据），HRV/PCI分布在种群层面的漂移。
+- $\Phi(P_t, \mathcal{S}_{t+1})$：**[H]** 群体算子 $\hat{G}_{\bar\theta}$ 对更新后选择压力 $\mathcal{S}_{t+1}$ 的响应；在 SRT 一阶近似下，$\Phi(P_t, \mathcal{S}) \approx P_t - \eta \nabla_P F(P_t, \mathcal{S})$（自由能梯度下降，Ax-NEURO-MECH-4 的群体扩展）。⚠️ 此近似假设 F 对 P 可微——在离散 θ 分布或强非高斯情形需改用 KL 散度版本。
 
 **稳态条件（不动点分析）**：
 系统 $(E^*, P^*)$ 满足稳态当且仅当：
@@ -841,6 +844,10 @@ P_{t+1}=\Phi\big(P_t,\mathcal{S}_{t+1}\big)
 \Delta E\!\left(A_t(\hat{G}_\theta), K_t\right) = 0 \quad\text{（净建构为零）}\quad\wedge\quad P^* = \Phi\!\left(P^*, \mathcal{S}(E^*, P^*)\right)
 \]
 即 $P^*$ 为 $\Phi(\cdot, \mathcal{S}(E^*, \cdot))$ 的不动点（对接 T-Core-02 不动点定理）。此系统可能存在**多不动点**（稳定生态位 vs. 亚稳生态锁死）和**极限环**（周期性环境-种群振荡，如猎物-天敌型动力学），需具体参数化后分析。"过度建构/生态锁死"对应亚稳不动点（$\Psi_f^{cross} \uparrow$，路径依赖陷阱）。
+
+**证伪条件（[H]）**：
+- 若在已知的生态位建构物种（海狸筑坝/人类农业）中，$P_t$ 的 $\theta$ 代理量（行为灵活性/文化多样性）在建构后代中无可测变化趋势（控制基因遗传后），则"选择压力内生化→P_t漂移"联结失效。
+- 若多不动点预测（存在稳定生态位和生态锁死的双稳态）在模型参数变化时不出现临界慢化信号（Schäffer 2009类方法），则不动点分析的生态有效性需重新评估。
 
 ### Def-Eco-NC-2: Ecological Inheritance as L2-Eco Memory
 当环境改写跨代持续时，引入“生态继承”记忆项：
