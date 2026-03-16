@@ -150,12 +150,17 @@ $$ \text{Meaning} \equiv \text{Selection}(L_0 \to L_1) $$
 
 ### §3.2 模仿危机定理 (Mimetic Crisis Theorem)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**Theorem T-Soc-2 (Girard Phase Transition)**: 
+**Theorem T-Soc-2 (Girard Phase Transition)** *(R: Retrodiction，SRT 追认 Girard 模仿欲望理论)*:
 当模仿强度 $J$ 超过临界值 $J_c$，社会系统经历从高熵（差异化）到低熵（同质竞争）的灾难性相变。
 $$ J > J_c \implies \lim_{t \to \infty} \sigma_i(t) = \sigma_{all}(t) $$
 
-*   **Consequence**: 
-    所有 $\hat{G}_i$ 锁定同一稀缺 $L_1$ 对象，导致冲突能量 $E \to \infty$。系统必须通过**替罪羊机制**（Scapegoating）——将所有暴力$\hat{G}$ 聚焦于单一个体——来强制重置熵值。
+**SRT 操作化注释**：
+- $\sigma_i(t)$：算子 $i$ 的欲望方向状态，SRT 代理为 $\vec{v}_{\theta_i} \cdot \hat{e}_{obj}$（算子速度向目标对象的投影）；同质化极限 $\sigma_i \to \sigma_{all}$ 对应所有 $\theta_i$ 锚定收敛到同一 $L_1$ 点。
+- $J$（模仿强度）：SRT 代理为算子间 $\theta$ 传播速率，$J \propto \max_{ij} E_{ij}$（算子耦合强度上界；参见 Ax-Cog-5）；$J_c$ 的具体值由网络拓扑与稀缺程度共同决定，待形式化。
+- 冲突能量 $E \to \infty$：SRT 对应 $\Psi_f^{cross} \to \infty$（所有算子对同一稀缺 $L_1$ 对象的本体论摩擦聚集，参见 SRT_Spirit_06 §3.3）。
+
+*   **Consequence**:
+    所有 $\hat{G}_i$ 锁定同一稀缺 $L_1$ 对象，导致冲突能量 $\Psi_f^{cross} \to \infty$。系统必须通过**替罪羊机制**（Scapegoating）——将所有暴力 $\hat{G}$ 聚焦于单一个体（或群体）——来强制重置熵值（SRT: 将聚集的 $\Psi_f^{cross}$ 通过单一排除事件释放，使 $L_2$ 收敛重新恢复；探索性形式化，待精确化）。
 
 ### §3.3 恐怖管理定理 (TMT Defense Theorem)
 <!-- ORIGINAL-SECTION-PRESERVED -->
