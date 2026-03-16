@@ -706,9 +706,11 @@ L_1 = f(\theta) + \epsilon,\quad
 
 ### Formalization Summary (形式化概述)
 
-- **能量-信息极值** (T-NEURO-MECH-1)：$\mathcal{J}=H(\sigma)-\lambda E(\sigma)$，稳态解必然满足除法归一化 $R_i=L_i^n/(\sigma^n+\sum_j w_{ij}L_j^n)$。信息最大化与代谢成本最小化的唯一交点。
-- **点燃相变** (Ax-NEURO-MECH-7)：$\mathcal{A}(\sigma)\ge\tau_{ignite}\land\Phi\cdot d>C_{critical}$。整合度与关切梯度协同超阈值。
-- **具身锚定** (Ax-Mech-9)：$\kappa_{body}=\text{GripForce}/\Psi_f$。意向性向物理显现转化的效率系数。
+三条核心方程构成 SRT 神经机制框架的三个层次：**微观计算原型** → **整合涌现条件** → **具身-行动效率**。
+
+- **能量-信息极值** (T-NEURO-MECH-1)：$\mathcal{J}=H(\sigma)-\lambda E(\sigma)$，稳态解必然满足除法归一化 $R_i=L_i^n/(\sigma^n+\sum_j w_{ij}L_j^n)$。信息最大化与代谢成本最小化的唯一交点。注：$\lambda \propto \Psi_f^{metabolic}$（代谢拉格朗日乘子对应本体论摩擦的代谢成分，详见 Ax-NEURO-MECH-3 注）。
+- **点燃相变** (Ax-NEURO-MECH-7)：$\mathcal{A}(\sigma)\ge\tau_{ignite}\;\land\;\Phi_{SRT}\cdot d > C_{critical}$，其中 $\Phi_{SRT} = d \cdot \Psi_f$（SRT 整合度，替代 IIT 的 $\Phi_{IIT}$；参见 SRT-AI-03 Cor-CONSC-1）。即：点燃需要激活阈值与整合选择代价协同超过临界值，展开为 $d^2 \cdot \Psi_f > C_{critical}$。
+- **具身锚定** (Ax-Mech-9)：$\kappa_{body}=\alpha \cdot F_{grip}/\Psi_f$（$\alpha$ 为量纲匹配系数，$F_{grip}$ 为运动系统效应力代理，量纲尚待精确形式化）。意向性向物理显现转化的效率系数；$\kappa_{body} \downarrow$ 对应衰老/具身退化（算子-基质脱锚）。
 
 ### Mechanism Explanation (机制解释)
 
