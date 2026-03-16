@@ -103,6 +103,14 @@ $$ E_{attention} \propto \frac{d}{dt}\left(H(L_0) - H(L_1)\right) $$
 ### Def-Thermo-1 [D1.2.1]: Selection Efficiency (选择效率)
 $$ \eta_{selection} = \frac{\Delta I_{useful}}{\Delta I_{total}} = \frac{\text{任务相关信息增益}}{\text{总信息增益}} $$
 
+> **[R]** 定义结构借鉴 Shannon 1948 *A Mathematical Theory of Communication* 的互信息分解（有效传输信息 = 总信道容量 - 噪声损失）；热机效率 η = W_useful/Q_total 的形式类比（Carnot 1824）。**[H]** 将"任务相关信息增益"引入选择算子的效率定义——把 Shannon 信道效率从工程通信推广到具身选择算子的认知/生理代谢域，为 SRT 新增贡献。
+>
+> **ΔI_useful 的精确定义**：$\Delta I_{useful} \equiv I(L_1^{post}; \text{Task}) - I(L_1^{pre}; \text{Task})$，即选择操作前后 L₁ 状态与任务目标的互信息差值。"任务相关"由算子的当前 θ 目标向量定义——与当前意图或生存目标相关的信息增益计入 ΔI_useful，其余计入噪声（ΔI_total - ΔI_useful）。
+>
+> **值域说明**：$\eta_{selection} \in [0, 1]$（在严格信息论框架下，有用信息不超过总信息）。当 ΔI_total = 0（无信息输入，如纯内部状态维持），定义需要正则化处理（见 Ax-Thermo-1 意志力情境的特殊情况）。η=1 为理想选择（所有输入信息均任务相关），η=0 为纯噪声驱动选择。
+>
+> * **Cross-ref（前向）**: T-Thermo-1（→效率上界：$\eta_{selection} \leq 1 - H(\text{noise})/H(L_0)$）；Ax-Thermo-2（意志力能量：E_attention∝d(H(L₀)-H(L₁))/dt，η低时能量浪费更大）。
+
 ### T-Thermo-1 [T1.2.1]: Efficiency Upper Bound (效率上界定理)
 $$ \eta_{selection} \leq 1 - \frac{H(noise)}{H(L_0)} $$
 
