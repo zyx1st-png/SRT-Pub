@@ -320,8 +320,26 @@ $$ \frac{\partial S(x,t)}{\partial t} = D \nabla^2 S + \alpha S(1 - S) - \beta S
 | $\beta S$ | 衰减项（遗忘/疲劳）|
 
 ### T-Sal-1 [T1.9.1]: Turing Instability for Attention (注意力的图灵不稳定性)
+
+> [R→Turing 1952 *Philosophical Transactions of the Royal Society B*（反应扩散系统中的形态发生：均匀态图灵不稳定性产生空间斑图的数学基础）; Itti & Koch 2001 *Nature Reviews Neuroscience*（视觉注意力显著性地图：底层特征驱动的自发显著性模型）; Cross & Hohenberg 1993 *Reviews of Modern Physics*（图灵斑图综述：激活-抑制系统的形态发生动力学）; Koch & Ullman 1985 *Human Neurobiology*（选择性注意的早期模型：注意力作为"胜者通吃"动力学）]
+
 $$ \text{均匀 } L_0 \xrightarrow{\text{Turing Instability}} \text{非均匀 Salience Map} \xrightarrow{\hat{G}} L_1 $$
 $\hat{G}$ 不需要外部指令来"决定关注什么"——显著性从选择动力学本身自发涌现。
+
+**R/H 区分**：
+- [R] 图灵不稳定性的反应扩散数学框架（Turing 1952/Cross&Hohenberg）；视觉显著性地图的自发涌现（Itti&Koch）；注意力"胜者通吃"动力学（Koch&Ullman）
+- [H] **SRT类比主张**：将图灵不稳定性框架类比到L₀→L₁选择过程；将Ψ_f解读为"隐式抑制子"（短程抑制现实全部同时显现）；"均匀L₀→非均匀Salience Map"的本体论解读是SRT原生框架
+
+**方程精度边界**（与Def-Sal-1联读）：
+标准图灵不稳定性需要**两个耦合变量**（激活子U+抑制子V，且D_U<D_V）；Def-Sal-1目前为单变量方程（∂S/∂t = D∇²S + α·S(1-S) - β·S），Ψ_f作为"隐式抑制子"是SRT的简化写法。严格图灵不稳定性分析需引入显式Ψ_f场方程与S的耦合——当前形式为启发性类比，不主张数学等同性。
+
+**操作化候选**：
+- Salience Map测量：视觉搜索范式下的注意力停留时间分布（眼动追踪）；fMRI V1区激活模式的空间异质性
+- 图灵不稳定性验证：操纵注意力"扩散系数"（分心物密度）后，Salience峰值数量应与D/α比值的临界点关系一致
+
+**可证伪预测**：
+- FC-Sal1-1：增加注意力"扩散率"（宽域分心任务）后，注意力焦点数量（Salience峰值数）应从少→多转变，且转变点对应激活-抑制比参数的图灵临界值——若焦点数量与扩散率无关则图灵类比失效
+- FC-Sal1-2：Ψ_f代理（认知负荷指标）升高时，Salience Map的空间集中度（峰值锐化）应增加（抑制子增强→斑图收缩），即高压力下注意力更窄更集中——若Ψ_f↑时注意力反而分散则"Ψ_f=抑制子"解读需修订
 
 ### T-Sal-2 [T1.9.2]: SRT Turing Pattern Correspondence (SRT-图灵斑图对应)
 
