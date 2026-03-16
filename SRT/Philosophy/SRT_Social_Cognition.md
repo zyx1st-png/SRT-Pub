@@ -165,11 +165,19 @@ $$ P_{action} = \alpha \cdot \text{Reward} - \beta \cdot \text{Cost}_{VS} $$
 Changing a belief ($L_2$) requires more evidence than forming it.
 $$ \Delta L_2 \propto \text{Evidence} - \text{HysteresisCost} $$
 
-### Ax-Soc-2: Ontological Nucleation (本体论成核)
+### Ax-Soc-2: Ontological Nucleation (本体论成核) *(R: 借用 Gibbs/Volmer 成核理论，SRT 社会类比)*
 <!-- ORIGINAL-SECTION-PRESERVED -->
 New reality requires a "critical radius" ($r^*$) of selection to survive.
 $$ r^* = \frac{2\sigma_{surf}}{\Delta g_{vol}} $$
-*   **Mechanism**: Below $r^*$, new ideas die; above $r^*$, they cascade into consensus.
+
+**SRT 量对应**：
+- $\sigma_{surf}$（界面张力）$\leftrightarrow \Psi_f^{interface}$（新 $L_1$ 与旧 $L_2$ 共识边界的本体论摩擦代价）；新信念越与既有框架冲突，$\Psi_f^{interface}$ 越大，$r^*$ 越大（越难成核）。
+- $\Delta g_{vol}$（体积自由能差）$\leftrightarrow \Delta F_{vol} = F_{old} - F_{new}$（旧共识与新共识的自由能密度差）；新信念越能降低集体预测误差，$\Delta F_{vol}$ 越大，$r^*$ 越小（越容易成核）。
+- $r^*$（临界半径）的社会量翻译：不是几何距离，而是**能量规模**（能够克服 $\Psi_f^{interface}$ 的自我增强集群大小）；与 Ax-Cog-4 的 $\rho_c$ 成核密度等价（$\rho_c \propto 1/{r^*}^3$，三维类比）。
+
+**与 Ax-Cog-4 联结**：Ax-Soc-2 用几何临界半径描述成核，Ax-Cog-4 用算子密度 $\rho_{\hat{G}} > \rho_c$ 描述，两者是同一机制的不同参数化角度——超过 $r^*$ ⟺ $\rho_{\hat{G}} > \rho_c$。
+
+*   **Mechanism**: Below $r^*$, new ideas die（$\Psi_f^{interface}$ 代价超过 $\Delta F_{vol}$ 收益）; above $r^*$, they cascade into consensus（类 T-Soc-4 的 S 形传播曲线，参见 10% Rule）.
 
 ### Ax-Soc-3: Operator Entanglement (算子纠缠)
 <!-- ORIGINAL-SECTION-PRESERVED -->
