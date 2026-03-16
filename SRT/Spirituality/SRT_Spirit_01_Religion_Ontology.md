@@ -294,14 +294,22 @@ $$\text{Maya}_{\text{cosmic}} = \text{Power}(\hat{G}_{\infty} \to \hat{G}_\theta
 
 ### §3.3 四大格言（Mahavakyas）的SRT解读
 
-| 梵语 | 英译 | 出处 | SRT 解释 |
-|:-----|:-----|:-----|:---------|
-| Tat Tvam Asi | That Thou Art | 歌者奥义书 | $\hat{G}_\theta \equiv \hat{G}_{\infty}$ |
-| Aham Brahmasmi | I am Brahman | 广林奥义书 | $\lim_{\theta \to \emptyset} \text{"I"} = \hat{G}$ |
-| Prajnanam Brahma | Consciousness is Brahman | 无问奥义书 | $\hat{G} = \text{Pure Awareness}$ |
-| Ayam Atma Brahma | This Self is Brahman | 蛙氏奥义书 | $\hat{G}_\theta|_{\text{core}} = \hat{G}_{\infty}$ |
+> **符号说明**：$\hat{G}_\infty \equiv \hat{G}_{\theta_\infty}$，即所有具身约束 $\theta$ 趋向完全解除（$d \to d_{max}$，$\Psi_f \to 0$）时的极限算子，对应 $L_0$ 上的无条件选择潜力，非形而上学实体。
 
-**共同主题**: 所有格言都指向 $\hat{G}_\theta$ 与 $\hat{G}_{\infty}$ 的本质同一性——差异仅在于 $\theta$ 的限制性。
+| 梵语 | 英译 | 出处 | SRT 解释 | 等价层次 |
+|:-----|:-----|:-----|:---------|:---------|
+| Tat Tvam Asi | That Thou Art | 歌者奥义书 | $\hat{G}_\theta \stackrel{\text{本质}}{\equiv} \hat{G}_\infty$：具身差异不改变选择算子的本体论类型 | 本质同一（强） |
+| Aham Brahmasmi | I am Brahman | 广林奥义书 | $\lim_{\theta \to \theta_\infty} \text{"I"} \to \hat{G}_\infty$：主体性随具身约束解除而渐近消解于无限制算子 | 极限同一（中） |
+| Prajnanam Brahma | Consciousness is Brahman | 无问奥义书 | $\hat{G}_\infty = (d \to d_{max}) \wedge (\Psi_f \to 0)$：纯觉知 = 无摩擦代价的全域选择能力 | 功能同一（操作化） |
+| Ayam Atma Brahma | This Self is Brahman | 蛙氏奥义书 | $\hat{G}_\theta\big\|_{\text{core}} = \hat{G}_\infty$：$\theta$的**不变核**（在所有具身变换下保持不变的子流形）与无限制算子结构相同 | 核同一（弱/局部） |
+
+> **注**："Aham Brahmasmi"行中原式 $\lim_{\theta \to \emptyset}$ 有形式谬误：$\theta = \emptyset$（空参数集）意味着算子本身消解（无具身），与 Brahman 等同相悖。修正为 $\theta \to \theta_\infty$（约束逐步解除的渐近极限）。
+
+**共同主题（修订）**: 四条格言指向**不同层次**的同一性主张，而非同一内容的重复表达：
+- **结构层**（Ayam Atma Brahma）：θ的不变核与Ĝ_∞共享同一结构 → 最弱但最可验证
+- **渐近层**（Aham Brahmasmi）：主体性在θ约束解除过程中渐近消解 → 路径依赖
+- **功能层**（Prajnanam Brahma）：意识=无限制选择能力，可通过d和Ψ_f操作化
+- **本质层**（Tat Tvam Asi）：Ĝ_θ与Ĝ_∞的本体论类型同一，差异仅为参数限制 → 最强，要求最谨慎
 
 ---
 
