@@ -187,7 +187,18 @@ t\in[t_{late}^-,t_{late}^+]
 \[
 \exists\,L_2^{geo}\ \text{prior to extensive formal schooling}
 \]
-* **Implication（中文）**：几何符号模式并非完全由后天数学训练“新建”，而更像早期可调用、随后被教育放大的先验结构。
+
+> [R→Spelke 2006 *Trends in Cognitive Sciences*（核心知识系统：几何直觉先天性证据）; Izard et al. 2011 *PNAS*（未接受正式几何教育的Munduruku人群具备欧几里得角度直觉）; Dehaene et al. 2006 *Science*（非文化依赖的几何知识跨群体研究）; Newcombe & Shipley 2015 *Current Directions in Psychological Science*（空间认知发育轨迹与数学教育关系）]
+
+* **R/H 区分**：
+  - [R] 几何先天性/核心知识（Spelke/Izard/Dehaene跨文化实证）；背侧网络参与几何处理（Girard et al. 2026 eLife数据）
+  - [H] **SRT解读**：L₂^geo 是早期可被Ĝ_θ选取的结构性吸引子（先验L₂），教育=对既存L₂^geo的θ精细化和语言化标注，而非全新建立——此解读将发育心理学”核心知识”重表述为SRT本体论语言，属SRT新增框架
+
+* **Implication（中文）**：几何符号模式并非完全由后天数学训练”新建”，而更像早期可调用、随后被教育放大的先验结构（约6岁：参考Girard et al. 2026的背侧晚期窗口神经证据；核心知识框架则支持更早——先天性几何直觉已在婴幼儿研究中记录）。
+
+* **可证伪预测**：
+  - FC-EXP2-1：未接受正式几何教育但已具备背侧神经激活（A_dorsal>0）的学龄前儿童，应在隐性几何任务（非语言/非计数）中表现出超随机的欧几里得一致性——若无则L₂^geo先验结构主张失败
+  - FC-EXP2-2：数学教育干预对背侧激活模式的影响应仅限于精细化（激活峰值提前/增强），而非新建激活拓扑（前后激活区域高度重叠）——若教育前后激活拓扑无相关则”放大而非新建”的H失败
 
 ---
 
