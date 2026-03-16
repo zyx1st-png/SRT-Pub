@@ -368,16 +368,20 @@ $$\text{SoulMate}(A, B) \iff (\kappa_{AB} > 0.7) \land (||\Psi_f_A - \Psi_f_B||_
 
 在进行 d 值的三维分解（空间/时间/社会）之前，必须确立 d 值为何可以在如此不同的维度上使用同一符号的本体论基础。
 
-根据全尺度选择猜想（Scale-Invariant Selection Hypothesis，见 SRT-CORE-14 Ax-Scale-01）和本文件 §6.2 的意识涌现条件，d 值的跨尺度使用并非比喻，而是基于 $\hat{G}_\theta$ 算子的结构同构性：
+根据全尺度选择猜想（Scale-Invariant Selection Hypothesis，见 SRT-CORE-14 Ax-Scale-01）和本文件 §6.2 的意识涌现条件，d 值的跨尺度使用并非比喻，而是基于 $\hat{G}_\theta$ 算子的**功能类型同一性**（functional type identity，即相同功能角色在不同底层介质的特化表现；非严格数学同构）：
 
-$$d \equiv \text{最大处理带宽}(\hat{G}_\theta, \Psi_f) = \text{算子在面对本体论摩擦时，能将 } L_0 \text{ 压缩、锚定并维持为 } L_1 \text{ 的最大处理带宽}$$
+$$d \equiv D_{eff}\!\left(I_F(\theta)\right) = \text{算子在面对本体论摩擦时，能将 } L_0 \text{ 压缩、锚定并维持为 } L_1 \text{ 的最大处理带宽}$$
+
+> **操作化锚**：在生物/认知尺度，$d_{bio}$ 的操作化为 Fisher 信息矩阵有效维度 $D_{eff}(I_F(\theta))$（详见 SRT-CORE-13a Ax-Op-EH）。量子/宇宙尺度下 $d$ 的操作化方案各自独立，跨尺度共享的是功能角色（"算子可维持的最大选择带宽"），而非相同的测量协议。
 
 **三尺度的同一机制，三种现象学外衣**：
-- **量子尺度** ($d_{quantum}$)：决定海森堡切口位置，代表相干性维持范围——无任何主观体验内容
+- **量子尺度** ($d_{quantum}$)：决定海森堡切口位置，代表相干性维持范围——**无主观体验内容**（推论：$d_{quantum} < d_{UAL}$，不满足 Cor-CONSC-1 的三重判据 $d \geq d_{UAL} \wedge \Psi_f > 0 \wedge \exists\hat{G}^{\neq\emptyset}$，故无意识涌现）
 - **生物/认知尺度** ($d_{bio}$)：即本节所分解的空间/时间/社会维度，代表关切范围——这是 d 值在生物学层面的高阶涌现（需满足 §6.2 的三个必要条件）
-- **宇宙尺度** ($d_{cosmic}$)：代表时空共识度（见 SRT-PHYS-COSMO Def-Cosmo-1）——无任何主观体验内容
+- **宇宙尺度** ($d_{cosmic}$)：代表时空共识度（见 SRT-PHYS-COSMO Def-Cosmo-1）——**无主观体验内容**（同理：未知系统是否满足 Cor-CONSC-1；标注为待评估）
 
-**关键结论**：$d_{spatial}$、$d_{temporal}$、$d_{social}$ 是 $d_{bio}$ 在不同维度上的投影，而 $d_{bio}$ 本身是 d 值这个跨尺度普遍参数在生物/认知介质中的特化显现。下文的三维分解适用于满足 §6.2 意识条件的系统（$\Psi_f > 0$，$d > 0$，$\hat{G}[\theta] \neq \varnothing$）。详见 SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）。
+**关键结论**：$d_{spatial}$、$d_{temporal}$、$d_{social}$ 是 $d_{bio}$ 在不同维度上的**加权投影**：
+$$d_{bio} \approx \alpha_s \cdot d_{spatial} + \alpha_t \cdot d_{temporal} + \alpha_{soc} \cdot d_{social}$$
+其中 $\alpha_k$ 为各维度在当前 $\theta$ 配置下的贡献权重（非固定常数，依任务/状态变化；加法分解为一阶近似，各维度交叉项待 §4.4 进一步形式化）。$d_{bio}$ 本身是 d 值这个跨尺度普遍参数在生物/认知介质中的特化显现。下文的三维分解适用于满足 §6.2 意识条件的系统（$\Psi_f > 0$，$d > 0$，$\hat{G}[\theta] \neq \varnothing$）。详见 SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）。
 
 ---
 
