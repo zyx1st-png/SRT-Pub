@@ -50,10 +50,25 @@ $$ V = \Phi(L_0 \rightarrow L_1) $$
 * **Implication**: 存在的“目的”是价值收割，而非外部目的论命令。
 
 ### Ax-Synth-4: Distinctness–Cost Tradeoff
-**Formal Definition**: Distinctness arises from symmetry breaking and incurs thermodynamic cost.
+
+[R→Landauer 1961（擦除1比特信息的最小热力学代价 kT·ln2，信息-热力学联结）; Bennett 1982（可逆计算：逻辑不可逆性隐含热力学代价）; Prigogine 1977（耗散结构：远离平衡的有序结构需持续代谢耗散维持）; Anderson 1972（More is Different：对称破缺产生新层级结构）] [H→以SRT互信息框架形式化”显现代价”，将Landauer原理推广至本体论层]
+
+**Formal Definition** [H]：Distinctness arises from symmetry breaking and incurs thermodynamic cost.
 $$ \text{Distinctness} \propto I(L_1;L_0) $$
-$$ \text{Cost} \propto \Delta S \Rightarrow I(L_1;L_0) \uparrow \Rightarrow \Delta S \uparrow $$
-* **Implication**: “显现”必然伴随代价，存在不是免费产物。
+$$ \text{Cost} \propto \Delta S_{env} \Rightarrow I(L_1;L_0) \uparrow \Rightarrow \Delta S_{env} \uparrow $$
+
+**符号说明**：
+- $I(L_1;L_0)$：L₁（显现态）与L₀（潜在域）之间的互信息；区分性越高 = L₁的结构越精确地对应L₀的某个特定区域（而非均匀分布），互信息越高
+- $\Delta S_{env}$：环境熵增（非系统内部熵，系统可局部降低熵以维持L₁结构；代价转移至环境）
+- “Cost ∝ ΔS_env”的Landauer机制[R]：维持L₁结构需要信息处理（擦除过时信息），每次擦除向环境散热kT·ln2；结构越精确→信息处理越频繁→环境熵增越多
+
+**Ψ_f联结**：Distinctness-Cost Tradeoff是Ψ_f（本体论摩擦）的热力学解读——Ψ_f的代谢基底正是维持L₁-L₀区分度的信息处理代价；区分度高（精确L₁）→高Ψ_f（参见Ax-NEURO-5代谢摩擦公理）
+
+* **Implication** [H]：”显现”必然伴随代价，存在不是免费产物——这与Landauer/Prigogine[R]的热力学一致，SRT将其提升为本体论公理：任何L₁结构的维持都有代谢/热力学基底代价。
+
+**证伪条件**：
+- FC-Synth4-1：若存在某种高区分度（高I(L₁;L₀)）的物理系统，其维持代价（ΔS_env）不随区分度增加而增加（如理论可逆计算机的极限情况），则Ax-Synth4的”比例关系”需修正为有下界条件（可逆极限下代价趋近零而非无限）。
+- FC-Synth4-2：若神经系统中的感知精确度（高区分度L₁）与代谢率（CMR_O₂，ΔS_env代理）在被试间无正相关，则Ψ_f的”代谢基底”联结被弱化（精确感知不必然消耗更多代谢资源）。
 
 ### T-Synth-2: d-Gradient Teleology
 **Deduction**: The directional arrow of existence is the ascent of $d$ under friction constraints.
