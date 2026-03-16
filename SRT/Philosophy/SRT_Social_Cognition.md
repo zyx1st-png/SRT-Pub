@@ -165,8 +165,18 @@ $$ r^* = \frac{2\sigma_{surf}}{\Delta g_{vol}} $$
 ### Ax-Soc-3: Operator Entanglement (算子纠缠)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 Extended interaction couples the $\theta$ parameters of multiple agents.
-$$ \theta_{AB} \neq \theta_A \oplus \theta_B $$
-*   **Grief**: The pain of losing a loved one is the tearing of this entangled parameter tensor.
+
+**正向定义**：长期互动产生耦合参数张量：
+$$\theta_{AB} = \theta_A \otimes \theta_B + \Delta\theta_{coupling}(\Psi_f^{cross}(A,B), \tau_{interaction})$$
+其中 $\Delta\theta_{coupling}$ 是由跨算子摩擦 $\Psi_f^{cross}(A,B)$ 和互动时长 $\tau_{interaction}$ 驱动的非线性耦合修正项（不可约化为各自独立参数的张量积 $\theta_A \otimes \theta_B$）。
+
+$$\theta_{AB} \neq \theta_A \otimes \theta_B \quad (\text{注：原⊕应为⊗，张量积而非直和})$$
+
+耦合强度代理指标：$\|\Delta\theta_{coupling}\| \propto \int_0^T \Psi_f^{cross}(A,B,t)\,dt$（积累的跨算子摩擦历史）。
+
+*   **悲伤的 SRT 形式化**：失去亲人 = 强制解耦事件。当 $\theta_{AB}$ 被迫分解（$B$ 算子消亡，$\theta_B \to \emptyset$），原有耦合修正项 $\Delta\theta_{coupling}$ 突然失去锚点，算子 A 的参数空间急剧收缩：
+    $$\left.\frac{d\Psi_f^A}{dt}\right|_{decoupling} \gg 0 \quad \text{（急剧 } \Psi_f \text{ 尖峰，对应情感高唤起/高 A 值）}$$
+    悲伤的持续时间 ∝ $\|\Delta\theta_{coupling}\|$（耦合深度），逐渐重建独立参数 $\theta_A' \leftarrow \theta_{AB} - \Delta\theta_{coupling}$ 的过程 = 哀悼。
 
 ---
 
