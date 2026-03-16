@@ -102,6 +102,9 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 ## II. Kantian Mathematical Philosophy (康德数学哲学)
 
 ### Ax-Kant-1 [A1.2.1]: Operator Construction Axiom (算子构造公理)
+
+> **[R]** 康德《纯粹理性批判》（1781）：纯粹直观（空间/时间）为综合先验判断的基础；数学构造性证明（Brouwer直觉主义数学 1908）。**[H]** 以下 SRT 三栏对应为新增形式化。
+
 数学构造即 $\hat{G}$ 的选择操作：
 $$ \text{Construction}(C) \equiv \hat{G}_θ[\text{Intuition}(C) \to L_1] $$
 
@@ -110,23 +113,37 @@ $$ \text{Construction}(C) \equiv \hat{G}_θ[\text{Intuition}(C) \to L_1] $$
 | 纯粹直观 | $L_0$ 的结构 | 模空间的拓扑 |
 | 构造 | $\hat{G}$ 的选择操作 | $\hat{G}_θ: L_0 \to L_1$ |
 | 综合先验判断 | 选择规则的内在约束 | $θ$ 参数的先验结构 |
-*   **O-T1 Link**: 构造即对 $L_0$ 路径积分的求值：$L_1=\oint_\gamma\omega_{L_0}$。
+
+*   **O-T1 Link**: 构造即对 $L_0$ 路径积分的求值：$L_1=\oint_\gamma\omega_{L_0}$（$\omega_{L_0}$ = L₀ 上的选择1-形式，路径 $\gamma$ = 构造程序）。**证伪方向**：若数学构造过程（定理证明步骤）在神经影像中无选择算子代理量（IPS/前额激活，→ §6.3 几何认知双通路）的对应激活，则 "构造=选择操作" 的神经对应假设失效。
 
 ### T-Kant-1 [T1.2.1]: Mathematical Truth as Source Code (数学真理即源代码)
+
+> **[R]** Wigner（1960，"The Unreasonable Effectiveness of Mathematics"）。**[H]** SRT 的解释：数学 = Ĝ 的处理规则本身的显现（而非外部约束）。
+
 $$ \text{Mathematical Truth} = \hat{G}[\text{Source Code}] $$
-数学真理之所以具有"不讲理的有效性"（Wigner），是因为数学直接展示了 $\hat{G}$ 的处理规则本身。
+数学真理之所以具有"不讲理的有效性"（Wigner），是因为数学直接展示了 $\hat{G}$ 的处理规则本身。**证伪方向**：若存在数学真理（已证定理）对物理现实无任何预测能力（不仅未应用，且原理上不可应用），则 "数学=Ĝ源代码" 解释过强，需降级为"Ĝ规则的近似描述"。
 
 ### Def-Kant-1 [D1.2.1]: Natural Numbers as Selection Events (自然数即选择事件)
+
+> **[H]** 计数作为离散选择事件的累积——结构主义/直觉主义数学的 SRT 变体（参考 Brouwer 1908, Dedekind 1888）。
+
 $$ n = \int_{t_0}^{t_n} \delta(\text{Selection Event}) \, dt $$
-自然数 $n$ 代表 $\hat{G}$ 进行了 $n$ 次独立的坍缩/刷新操作。
+自然数 $n$ 代表 $\hat{G}$ 进行了 $n$ 次独立的坍缩/刷新操作。**注**：此定义预设时间是离散的（$\delta$ 函数可积分）；若时间连续（量子场论视角），则 $n$ 的 SRT 定义需改为极限极量子化。
 
 ### T-Kant-2 [T1.2.2]: Spatial Dimension as θ-Rank (空间维度即 θ 秩)
-$$ \text{Dim}(L_1) = \text{Rank}(θ) $$
-$L_1$ 呈现为 3D 空间，是因为 $θ_{human}$ 只能通过 3 个自由度来解析信息。
+
+> **[H — 需修订]** 此定理存在**重大操作化问题**：
+
+$$ \text{Dim}(L_1^{spatial}) = \text{Rank}(\theta_{spatial}) $$
+
+⚠️ **原公式 $\text{Dim}(L_1) = \text{Rank}(\theta)$ 有误**：人类 θ 的全维度远超3（神经参数空间为高维）。正确表述应限定为**空间感知维度**：$\text{Dim}(L_1^{spatial}) = \text{Rank}(\theta_{spatial})$，其中 $\theta_{spatial}$ 指专门编码空间信息的参数子集（海马网格细胞/位置细胞等，~3个独立方向）。这是生物进化选择的结果（**[R]** O'Keefe & Nadel 1978，海马空间地图），而非算子一般性质。**证伪**：若存在物种（如鸟类 3D导航）L₁ 空间维度 > 3 而其 θ_{spatial} 秩也相应更高，则支持此定理；若维度固定为3而 θ_{spatial} 秩变化，则需修订。
 
 ### T-Kant-3 [T1.2.3]: Mathematical Necessity as Zero-Conflict Limit (数学必然性即零冲突极限)
+
+> **[H]** SRT 原创：数学公理对应 L₀ 中最小内部冲突路径，解释数学的"必然性"。
+
 $$ \text{Mathematical Axioms} \subset \{\sigma \in L_0 : \Psi_f^{formal}(\sigma) = \Psi_f^{min}\} $$
-数学公理对应纯形式语境下的最小冲突路径族。这里的 $\Psi_f^{formal} = \Psi_f^{min}$ 只表示内部逻辑冲突趋零，不表示现实主体的对象维持摩擦消失。
+数学公理对应纯形式语境下的最小冲突路径族。这里的 $\Psi_f^{formal} = \Psi_f^{min}$ 只表示内部逻辑冲突趋零，不表示现实主体的对象维持摩擦消失。**证伪方向**：若 Gödel 不完备定理内在不一致的命题（真而不可证的语句）在 SRT 框架下无法被 $\Psi_f^{formal}$ 区分（与可证命题 $\Psi_f$ 相等），则 T-Kant-3 在形式语言层面需引入额外结构。
 
 ---
 
