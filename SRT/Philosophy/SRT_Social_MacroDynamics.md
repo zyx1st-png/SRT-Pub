@@ -555,11 +555,30 @@ SRT 区分两类“低自由能”状态：
 \]
 
 ### T-Macro-IM-1: Misinformation Amplification under Distorted Incentives
+
+> [R→Vosoughi, Roy & Aral 2018 *Science*（真假信息在Twitter上的传播：假新闻更快/更广/更深，情绪唤醒是关键驱动因子）; Pennycook & Rand 2021 *Trends in Cognitive Sciences*（分析性思维与误信息接受：认知能力不足是主要成因，动机推理次之）; Bail et al. 2018 *PNAS*（回音室实验：跨意识形态曝光反而加剧极化，身份认同激活是关键机制）; Brady et al. 2017 *PNAS*（道德-情绪词汇在推特传播中的放大效应：每个道德-情绪词增加20%转发率）]
+
 当平台激励偏向情绪强度与互动率而非真实性时，误信息扩散率上升：
 \[
-R_{mis} \propto A_{alg}\cdot E_{arousal}\cdot C_{identity}\,/\,V_{cred}
+R_{mis} \propto A_{alg}\cdot E_{arousal}\cdot C_{identity}\,/\,(V_{cred}+\varepsilon)
 \]
-其中 \(A_{alg}\) 为算法放大系数，\(E_{arousal}\) 为情绪唤醒强度，\(C_{identity}\) 为身份一致性增益，\(V_{cred}\) 为可见可信度约束。
+其中 \(A_{alg}\) 为算法放大系数，\(E_{arousal}\) 为情绪唤醒强度，\(C_{identity}\) 为身份一致性增益，\(V_{cred}\) 为可见可信度约束（加 $\varepsilon > 0$ 下界以避免 $V_{cred}=0$ 的数学奇点；$\varepsilon$ 代表平台最低基线可信度显示，实证中取典型值约0.05）。
+
+> **公式精度说明**：当前为比例（∝）形式，四参数假设为独立乘法关系。实证上 $E_{arousal}$ 与 $C_{identity}$ 存在超加性交互（Brady et al. 2017：道德-情绪词汇组合效应）；精确建模需交叉项 $\beta_{E \times C} \cdot E_{arousal} \cdot C_{identity}$，此处保留比例形式作为一阶近似。
+
+* **R/H 区分**：
+  - [R] 误信息传播中情绪唤醒/身份认同/算法放大的实证效应（Vosoughi/Brady/Bail）
+  - [H] **SRT解读**：误信息高扩散 = L₂身份锚点的最低Ψ_f路径（内容符合既有θ锚点 → 激活代价最小 → 传播阻力最低）；V_cred的摩擦作用 = 引入L₀可达性约束，迫使算子在传播前多付本体论摩擦代价
+
+* **四参数操作化候选**：
+  - $A_{alg}$：平台算法推荐权重 = 内容展示次数/平均展示次数比值（可从平台API或广告分析工具估算）
+  - $E_{arousal}$：文本情绪唤醒度 = NRC情绪词典中愤怒/恐惧/厌恶词汇密度（或VAD模型的Arousal分量）
+  - $C_{identity}$：身份一致性 = MFQ（道德基础问卷）与内容主题的对齐评分，或用该用户历史点赞内容的主题相似度
+  - $V_{cred}$：可见可信度 = 平台可信度标签（0=无标签/0.5=标注来源/1=明确标记误信息）的存在性编码
+
+* **可证伪预测**：
+  - FC-IM1-1：在控制内容真实性后，高道德-情绪唤醒词汇密度（$E_{arousal}$ 代理高）的帖子转发率应显著高于低唤醒等效内容（Vosoughi/Brady范式复制）；若无差异则 $E_{arousal}$ 因子无效
+  - FC-IM1-2：在平台A/B测试中，为高传播误信息添加可信度标签（$V_{cred}$: 0→1）后，该内容的扩散速率应显著降低（预测降幅>20%）；若标签无效则 $V_{cred}$ 的摩擦约束主张失败（cf. Twitter/X添加Community Notes的平台实验）
 
 ### Def-Macro-IM-2: Continued-Influence as L2 Hysteresis
 “纠正后仍受影响”在 SRT 中建模为 \(L_2\) 迟滞：
