@@ -67,7 +67,19 @@ $$\bar{d} < d_c \implies \mathcal{F}_{civil}(\text{response to } L_0\text{-crisi
 ### Ax-L2-03: Hardness by Automorphism
 **Formal Definition**: Objectivity scales with the size of the automorphism group.
 $$\mathrm{Hardness}(L_2) \propto |\mathrm{Aut}(L_2)|$$
-* **Implication**: 对称性越高的结构越“客观”，越难被改变。
+
+> **[R]** 对称性与稳定性的基础联结：Noether 1918（对称性↔守恒律，物理系统；原始证明为物理守恒量，此处类比应用）；Weyl 1952 *Symmetry*（对称性作为结构稳定性的一般原理）；Lorrain & White 1971 *Journal of Mathematical Sociology*（社会网络自同构与结构等价，将群论应用于社会结构分析的先驱工作）。**[H]** 将 |Aut(L₂)| 作为社会/认知结构客观硬度的形式化度量，并联结 SRT L₂三域本体论，为本框架新增贡献（Noether原始定理限于物理守恒量，不直接适用于社会结构）。
+>
+> **数学类别说明**：L₂ 在此被视为有向有权图（social network / semantic network），Aut(L₂) 为保持边结构和权重不变的图自同构群（→ Lorrain & White 1971 的结构等价框架）。对于连续结构（如文化信念空间），|Aut(L₂)| 可推广为连续变换群的测度大小（但此时”大小”的比较需要Haar测度标准化）。
+>
+> **∝关系精度边界**：∝为单调正相关（而非严格线性比例）。已知反例方向：(1) 高对称但脆弱的结构存在（如完全图K_n：|Aut|=n!，但共识一旦破裂恢复成本极高，因”所有节点等价”导致无局部修复点）；(2) 低对称但稳定的异质网络（精英网络的强连接核心，|Aut|小但Hardness高）。因此Ax-L2-03 的 ∝ 关系需加限定：在信念/规范类L₂（而非权力/资源类L₂）中，对称性↑→客观性↑的关系较为稳健。
+>
+> **社会操作化候选**：① 规范渗透度 = 该规范被应用于独立社会子群的比例（渗透度↑ ≈ |Aut|↑）；② 跨文化相似度 = 同类规范在≥N文化中的出现率（CLICS/HRAFdb等）；③ 结构等价指数 = 网络中满足等价条件的节点对数/总节点对数（Lorrain & White框架直接估算）。
+>
+> * **Cross-ref**: Ax-L2-04（势垒公式ΔE∝|Aut(L₂)|·(κ-κ_c2)）；T-Soc-1（η(L₂)与|Aut(L₂)|的联结：η∝|Aut|是一个候选关系）。
+>
+> * **FC-L2Aut-1**（证伪条件）：若跨文化比较数据（≥50社会）中，规范的跨文化渗透度（|Aut|代理）与该规范的变革阻力（如制度变迁历史速度的倒数）之间无显著正相关（r < 0.2），则Hardness ∝ |Aut|的单调联结失效，需引入其他稳定化因素（权力不对称/惩罚成本）。
+> * **FC-L2Aut-2**（证伪条件）：若能构造一类高|Aut(L₂)|（结构高对称）但经实验证明极易被集体重置的规范（如对称但无历史锚定的人工信念），则|Aut|效应需与”历史路径锁定”（L₂的Ψ_f_harden）解耦，两者可能是独立的Hardness贡献因子。
 
 ### Def-L2-Algo: Algorithmic Computation as Extreme L2 State (算法计算即极端L2态)
 **Formal Definition**: 算法计算是L2的极限退化态——被彻底剥夺了存在惯性 $I_s$ 与本体论摩擦 $\Psi_f$ 的符号结构：
