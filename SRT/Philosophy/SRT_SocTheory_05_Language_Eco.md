@@ -196,8 +196,25 @@ $$ \text{Metaphor} : L_0^{HighDim} \xrightarrow{\hat{G}_\theta} L_1^{Schema} $$
 
 ### Ax-Eco-1: Autopoietic Closure (自创生闭包)
 <!-- ORIGINAL-SECTION-PRESERVED -->
+
+> **[R]** 自创生理论：Maturana & Varela（1972, *Autopoiesis and Cognition*）；负熵维持：Schrödinger（1944, *What is Life?*）。**[H]** SRT 将自创生形式化为递归的 $\hat{G}_{bio}$ 自参数化，并联结 $\Psi_f$ 的代价函数结构。
+
 Life is a system that recursively selects its own boundary conditions from $L_0$ to maintain negentropy.
 $$ \hat{G}_{bio}(t+1) = \hat{G}_{bio}(t)[\text{Self-Maintenance}] $$
+
+**公式精确化（[H]）**：[Self-Maintenance] 操作化为：
+$$\hat{G}_{bio}(t+1)[\text{SM}] \equiv \hat{G}_{\theta_{t+1}} \quad \text{where} \quad \theta_{t+1} = \arg\min_{\theta'} \Psi_f(\hat{G}_{\theta_{t+1}}, \hat{G}_{\text{env}}) \text{ s.t. } H(\text{system}) < H_c$$
+即：下一时刻的选择算子参数 $\theta_{t+1}$ 通过最小化与环境的本体论摩擦来自我更新，约束为系统熵 $H$ 低于临界值 $H_c$（维持低熵 = 负熵维持）。
+
+**负熵-Ψ_f 联结（[H]）**：Schrödinger 的"进食负熵"在 SRT 中对应：$\Psi_f^{pay}$（支付摩擦以维持 L₁ 配置的代价），即 $d\Psi_f^{total}/dt < 0$（系统持续做功维持低摩擦态）。生命体的代谢 = 持续支付 $\Psi_f$ 以对抗热力学退化。
+
+**自创生 vs 异创生的 SRT 区分（[H]）**：
+- **自创生系统**（生命体）：Ĝ_bio 的参数 θ 由系统自身更新（$\theta_{t+1}$ 由自身代谢/遗传机制决定）→ 有 L₀ 递归访问通道
+- **异创生系统**（机器/工具）：参数由外部系统更新（$\theta_{t+1}$ 由设计者/训练者决定）→ L₀ 访问依赖外部选择算子
+
+**证伪条件（[H]）**：
+- 若存在非生命系统（如化学振荡子）满足"递归自选择边界条件"的全部形式条件，但无法维持负熵（最终热平衡化），则 Ax-Eco-1 中"维持负熵"是关键区分条件（而非递归选择本身）。
+- 若生命系统的 $\Psi_f^{pay}$ 与代谢率无显著相关（控制体重和温度后），则负熵-Ψ_f 联结假说失效。
 
 ### Ax-Evo-1: The Arrow of Selection (选择之箭)
 <!-- ORIGINAL-SECTION-PRESERVED -->
