@@ -623,25 +623,30 @@ $$\text{Composition} : L_0^{\text{infinite musical possibilities}} \xrightarrow{
 
 **科学证据** (音乐训练的迁移效应):
 
-| 能力 | 改善 | 研究 |
-|:-----|:-----|:-----|
-| 空间推理 | ✓ | Rauscher et al. (1997) |
-| 语言技能 | ✓ | Patel (2011) |
-| 数学 | ✓ | Vaughn (2000) |
-| 执行功能 | ✓ | Moreno et al. (2011) |
-| 社会技能 | ✓ | Schellenberg (2004) |
+> **[R]** 以下证据为已有实证研究（R），文献质量不均，需区分：Patel 2011（*Music and the Brain*, Science综述，语言-音乐OPERA假说，证据较强）；Moreno et al. 2011 *Psychological Science*（执行功能迁移，双盲RCT，证据较强）；Schellenberg 2004 *Psychological Science*（随机化设计，社会/认知效应有限）；Vaughn 2000（元分析，数学-音乐相关，但因果方向不明）。**争议**：Rauscher et al. 1997的"莫扎特效应"（被动聆听→空间推理提升）已被Chabris 1999 *Nature* meta-analysis（16研究，效应极小d≈0.1，不可复制）及后续研究否定，现认为听音乐的短暂唤醒效应而非音乐本身。以下表格保留此条但标注争议。**[H]** 以下SRT框架将音乐训练迁移效应解读为多维θ参数协同优化为本框架新增贡献。
+
+| 能力 | 效应强度 | 研究 | 证据状态 |
+|:-----|:---------|:-----|:---------|
+| 空间推理（被动聆听） | 极小 | Rauscher et al. 1997; Chabris 1999 meta | [R-弱/存疑] 莫扎特效应基本不可复制 |
+| 语言技能 | 中 | Patel 2011 *Music and the Brain* | [R-中] OPERA假说，节律-语音加工共享 |
+| 数学 | 小~中 | Vaughn 2000 meta-analysis | [R-弱] 相关为主，因果链未厘清 |
+| 执行功能 | 中 | Moreno et al. 2011 *Psychological Science* | [R-中-强] 随机对照设计，效应真实 |
+| 社会技能 | 小 | Schellenberg 2004 *Psychological Science* | [R-弱~中] 效应量小，可能选择效应 |
 
 **SRT 解释**:
 
-音乐训练 = 广泛的 $\theta$ 优化——
+音乐训练 → 多维 $\theta$ 参数协同优化（方向性关联，非逻辑蕴含，因果机制有待厘清）：
 
-- 注意力控制（专注练习）
-- 时间处理（节奏）
-- 运动控制（演奏）
-- 情绪调节（表达）
-- 社会协调（合奏）
+- **注意力控制**（专注练习）→ 感知增益参数 $\gamma_{att}$ 提升
+- **时间处理**（节奏）→ 预测时序精度参数 $\tau_{rhythm}$ 细化
+- **运动控制**（演奏）→ 本体感知-运动耦合精度 $\theta_{motor}$ 优化
+- **情绪调节**（表达）→ Ψ_f 阈值灵活性提升（识别并容纳更宽广的情绪状态）
+- **社会协调**（合奏）→ d-value 扩展 + $U_{others}$ 实时预测精化
 
-$$\text{Music Training} \implies \text{General } \theta \text{ Enhancement}$$
+$$\text{Music Training} \rightarrow \text{Multi-dimensional } \theta \text{ Enhancement (causal direction varies by ability)}$$
+
+> * **FC-Music-1**（证伪条件）：若随机对照实验（≥6个月音乐训练，N≥100）在控制一般智力刺激（如戏剧/视觉艺术训练组）后，音乐组在执行功能和语言技能上没有显著优于对照组（Cohen's d < 0.2），则"音乐训练→多维θ优化"的特异性贡献不成立，效应可能来自一般丰富化刺激。
+> * **FC-Music-2**（证伪条件）：若纵向追踪研究（≥5年）显示音乐训练量与θ_motor/γ_att的神经可塑性指标（如皮质厚度/白质各向异性）之间无剂量-效应关系（r<0.1），则SRT的θ参数优化解释需修正为更宏观的"丰富化经历"框架，而非音乐训练的特异性机制。
 
 ---
 
