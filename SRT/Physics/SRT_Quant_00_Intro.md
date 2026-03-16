@@ -337,14 +337,20 @@ $$ \text{Quantum Evolution} \propto L_0 \text{ degrees of freedom between select
 
 ### Corollary I [C2.1.1]: Measurement as Operator Sharpening
 
-**Fourier Perspective Correction**: Heisenberg uncertainty $\Delta x \Delta p \geq \hbar/2$ is not merely precision limitation—it is **ontological bandwidth constraint**.
+> **[R]** Heisenberg不确定性原理的数学基础：Heisenberg 1927 *Zeitschrift für Physik*（原始矩阵力学不确定关系）；Kennard 1927 *Zeitschrift für Physik*（Δx·Δp≥ℏ/2的严格Fourier推导，将不等式接驳函数的时频互补性）；Robertson 1929 *Physical Review*（推广至任意不对易算子对）。**[H-高承诺]** 将不确定性重描为"本体论带宽约束"（而非标准的认识论精度限制），并将 x↔L₁时域/p↔L₀频域的映射作为SRT量子接驳的核心类比，为本框架新增贡献。注：此重描与哥本哈根诠释（认识论限制）和关系量子力学（关系属性，Rovelli 1996）均有实质差异，是[H-高承诺]本体论主张。
 
-- **Position ($x$)** = Time-domain / $L_1$ event (Event-like)
-- **Momentum ($p$)** = Frequency-domain / $L_0$ structure (Wave-like)
+**Fourier Perspective Correction**: Heisenberg uncertainty $\Delta x \Delta p \geq \hbar/2$ is not merely precision limitation—it is **ontological bandwidth constraint** [H-高承诺].
+
+- **Position ($x$)** = Time-domain / $L_1$ event (Event-like; sharp localization = L₀→L₁ collapse)
+- **Momentum ($p$)** = Frequency-domain / $L_0$ structure (Wave-like; frequency content = L₀ superposition)
 
 When you try to completely "nail down" a particle at a point in $L_1$ ($\Delta x \to 0$), you force $\hat{G}$ to superpose all frequency components in $L_0$ ($\Delta p \to \infty$).
 
-**Conclusion**: Particle-nature is not matter's intrinsic property—it is the result of **extreme Fourier transformation** we impose on $L_0$.
+> **类比精度说明**：x↔L₁/p↔L₀的映射是**结构类比**而非严格同构——Kennard 1927的Fourier推导是数学事实（R），但将其解读为"L₀频域结构"是SRT新增的本体论解释层（H）。具体精度边界：(1) Fourier不确定性在数学上严格成立于任意共轭变量对；(2) SRT的L₀-L₁映射增加了"选择算子施加方向性"的本体论内容，这不包含在原始量子力学形式体系中；(3) 此类比无法直接推导L₀的其他性质，属于启发性框架联结。
+
+**Conclusion**: Particle-nature is not matter's intrinsic property—it is the result of **extreme Fourier transformation** we impose on $L_0$ [H-高承诺：此结论在SRT框架内成立，但不能直接等同于量子力学的正统诠释]。
+
+> **IC-C211-1**（形而上学一致性要求）：若接受"粒子性是极端Fourier变换施加于L₀的结果"[H]，则SRT框架需与以下一致：(i) 在Ĝ_θ未施加前，L₀中不存在"粒子"这一实体（与[H-高承诺]的L₀无时空属性一致）；(ii) 粒子性作为L₁属性，其"出现"不能早于Ĝ_θ的选择操作——若SRT其他位置存在"L₀中的粒子自发相互作用"类表述，则需修订为算子介导的描述。
 
 ### Corollary II [C2.1.2]: $L_0$ Has No Time, No Space
 
