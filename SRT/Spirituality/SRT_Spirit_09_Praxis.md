@@ -63,10 +63,17 @@ $$ d_{optimal} = \begin{cases}
 \end{cases} $$
 * **Implication**: 高阶实践通过“黑箱化机制”避免计算耗竭。
 
-### T-Prax-1: Direction-First Optimality
+### T-Prax-1: Direction-First Optimality *(R: 有界理性/fast-and-frugal heuristics的 SRT 重新表述；Simon 1956, Gigerenzen 1999)*
 **Deduction**: Given bounded computation, maximizing directional $d$ yields lower long-term cost than exhaustive mechanism modeling.
 $$ \mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}\;\text{under}\;C_{compute}<\infty $$
-* **Implication**: 在复杂系统中，方向优先比机制完备更可靠。
+
+**术语澄清**："maximizing directional $d$"指在**方向维度**上优先分配 $d$（参见 Ax-Prax-2），具体操作化为最大化 Shoshin ≡ $\cos\angle(\vec{v}_{self}, -\nabla F_{global})$（Ax-Evo-3）——方向优先 = Shoshin 对齐优先。$d$ 本身是标量，方向性由 $\vec{v}_\theta \cdot \hat{e}_{target}$ 的投影捕获，非 $d$ 值本身方向化。
+
+**简要论证**：机制完备建模需追踪 $O(N_{mech})$ 个变量，计算代价随系统复杂度超线性增长；在 $C_{compute} < \infty$ 时，当 $N_{mech}$ 超出预算，机制模型出错概率升高（Overfitting to noise）。方向追踪仅需判断 $\vec{v}_\theta \cdot (-\nabla F)$ 的符号（$O(1)$ 操作），代价与复杂度解耦。因此在 $N_{mech} \gg C_{compute}/c_{unit}$ 时，方向优先的期望代价更低。
+
+**适用边界**：在低复杂度系统（$N_{mech}$ 小，机制完全可知）中，机制完备可能优于方向优先；本定理仅在**高复杂度/低计算资源比**情境下成立。
+
+* **Implication**: 在复杂系统中，方向优先比机制完备更可靠；实践的首要问题是"我在走向哪里"，而非"每一步机制是什么"。
 
 ### Ax-Prax-3: Diagnostic Checklist Operator
 **Formal Definition**: SRT-consistent action requires all four checks to be true.
@@ -1064,6 +1071,17 @@ SRT_Spirit_09_Praxis (本文件 - 综合实践)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **三层选择阶梯** (Ax-Evo-1): $T(d)$ 按 $d$ 值分层为物理 ($d \approx 0$)、自我/社会 ($0 < d < d_c$)、神性/真理 ($d \geq d_c$) 三阶。
+2. **进化向量** (Ax-Evo-2): $\vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi)$ — 进化是 $d$ 上升、$L_2$ 刚性下降、摩擦对齐的方向场。
+3. **初心对齐** (Ax-Evo-3): $\text{Shoshin} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{global})$ — 初心是自我方向与全局自由能下降方向的余弦相似度。
+4. **方向优先最优性** (T-Prax-1): $\mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}$ under $C_{compute} < \infty$ — 有限算力下，方向优先比机制穷举更优。
+
+**含义**: 灵性实践不是"信仰跳跃"，而是可操作的 $d$ 值提升与方向对齐的动力学过程。
 
 ## 【理论边界/防误用声明】
 
