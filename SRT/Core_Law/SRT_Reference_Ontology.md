@@ -519,11 +519,37 @@ $$\mathcal{C} \propto \frac{|\mathcal{P}(y_t)|}{P(\sigma \mid L_2)}$$
 当分组与系统关切梯度 \(d\) 同向时，整体对象边界在跨时预测中更稳定（如斑马整体优于条纹碎片）。
 
 ### 定义 O21：Consensus Friction in L2 Formation（共识摩擦，新增）
+
+> [R→Schelling 1960 *The Strategy of Conflict*（协调均衡/Schelling点：多主体在无沟通条件下收敛到L₂共识的博弈论基础——共识摩擦≈协调失败代价）; Clark & Brennan 1991 "Grounding in Communication" *Perspectives on Socially Shared Cognition*（共同基础理论：跨主体理解需要"着地"过程，每次着地失败=Ψ_f^consensus增量）; Tomasello 1999 *The Cultural Origins of Human Cognition*（共享意向性：人类L₂共识的发育基础，黑猩猩缺乏共享意向性→无法建立低Ψ_f^consensus的文化积累）; Levinson 2000 *Presumptive Meanings*（语用推断：默认意义系统降低日常交流的共识摩擦代价）]
+
 对多算子集合 \(\{\hat G_{\theta_i}\}_{i=1}^n\) 定义协议偏差代价：
 \[
 \Psi_f^{consensus}=\sum_{i<j} w_{ij}\,D\big(\mathcal{S}_{Px}^{(i)},\mathcal{S}_{Px}^{(j)}\big)
 \]
+
+> **符号说明**：$\mathcal{S}_{Px}^{(i)}$ 为算子i的"对象-属性感知结构"（Object-Property Perception Structure），即算子i在当前任务下对相关对象集合的属性分配/边界划分的完整描述（参见 `Core_Law/SRT_Reference_Ontology.md` §定义O12-O15 对象归属定理组）。
+
+> **D度量候选**（需按情境选择）：
+> - **离散感知结构**（如概念分类/范畴边界）：$D = 1 - \text{Jaccard}(\mathcal{S}^{(i)}, \mathcal{S}^{(j)})$ 或对称KL散度
+> - **连续表征空间**（如语义嵌入/fMRI激活模式）：$D = 1 - \text{CKA}(\mathcal{S}^{(i)}, \mathcal{S}^{(j)})$（中心核对齐，尺度不变）
+> - 默认：对称KL散度（$D_{KL}^{sym} = D_{KL}(P\|Q) + D_{KL}(Q\|P)$），满足非负性与对称性
+
+> **w_ij参数化**：$w_{ij} = w_{ji} \geq 0$（对称权重，反映算子i和j之间的协作依赖强度）；通常归一化为 $\sum_{i<j} w_{ij} = 1$ 以使Ψ_f^consensus在算子对数变化时可比。在实践中w_ij可代理为协作频率/组织依赖度/沟通带宽等。
+
 其中 \(D\) 衡量对象-属性结构协议差异。\(\Psi_f^{consensus}\) 越高，协作失败与跨主体误解成本越高。
+
+* **R/H 区分**：
+  - [R] 共识失败成本的博弈论/通信理论基础（Schelling/Clark&Brennan）；人类共享意向性的发育证据（Tomasello）
+  - [H] **SRT形式化**：将跨主体协议差异形式化为加权对距离和 Ψ_f^consensus，并将其纳入SRT的本体论摩擦体系——使"共识"成为可量化的摩擦成本而非社会学描述
+
+* **操作化候选**（Ψ_f^consensus的实验代理）：
+  - 协作解题任务：两人（或多人）在物体命名/分类任务上的初始分歧率（歧义率 = Jaccard差异的行为代理）
+  - 跨文化概念调查：不同文化组对同一刺激集的属性评分的平均Wasserstein距离（Word & Language Survey等数据集）
+  - 神经层：fMRI跨被试表征相似度（ISC, Inter-Subject Correlation）的反转值（ISC↓ = Ψ_f^consensus↑）
+
+* **可证伪预测**：
+  - FC-Cons1-1：在协作任务中，算子对之间的初始对象分类分歧率（D代理）应与协作总任务时间（效率代理）正相关（r > 0.4）——高共识摩擦=更多着地时间消耗（Clark&Brennan grounding cost机制）；若无相关则Ψ_f^consensus对协作效率的预测力不成立
+  - FC-Cons1-2：跨文化协作中，文化间概念差异（通过跨语言嵌入距离量化）应预测协作错误率（误解/重做次数）；若文化概念距离与协作错误率无关则跨主体表征差异-误解联结失败
 
 ### 定理 O-T12：L2 Convergence under Shared Constraint（新增）
 若算子族共享近似参数簇 \(\theta_i\approx\theta_j\) 且处于共同任务环境：
