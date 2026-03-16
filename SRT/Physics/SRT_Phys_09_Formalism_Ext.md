@@ -727,16 +727,22 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 ### Def-Px-1: Generative Prior Tensor
 定义认知预测结构为先验张量场：
 \[
-\mathcal{P}_x(\theta,t)\in\mathbb{R}^{n\times n},\quad \mathcal{P}_x\succeq 0
+\mathcal{P}_x(\theta,t)\in\mathbb{R}^{n\times n},\quad \mathcal{P}_x\succ 0\ (\text{严格正定})
 \]
 表示 \(\hat G_\theta\) 在当前参数下对 \(L_0\) 的可达预期几何。
 
-### T-Px-1: Prediction Error as Friction Integral Slice
-给定时窗 \([t,t+\Delta t]\)，预测误差诱发的摩擦切片写为：
+**n 的说明**：$n$ 为算子当前的有效信息维度，候选操作化 $n \approx d_{eff}$（关切带宽的有效维数，参见 §3 Mechanism Synthesis CR 定义）。$L_0$ 本身是无限维的，$\mathcal{P}_x$ 是局部有限维近似投影。
+
+**正定条件**：采用严格正定（$\succ 0$）而非半正定（$\succeq 0$），以保证 $\mathcal{P}_x^{-1}$ 存在。若存在零特征值情形（先验完全不敏感的方向），应使用伪逆 $\mathcal{P}_x^\dagger$。
+
+**与预测编码联结** *(R: Retrodiction)*：$\mathcal{P}_x^{-1}$ 在结构上对应 Friston FEP 框架中的精度矩阵（Precision Matrix），$\langle \varepsilon, \mathcal{P}_x^{-1}\varepsilon\rangle$ 即精度加权马氏距离——SRT 将此解释为 $\Psi_f$ 的微观来源之一。
+
+### T-Px-1: Prediction Error as Friction Integral Slice *(R: 精度加权预测误差在 FEP 中已有形式化)*
+给定时窗 \([t,t+\Delta t]\)（$\Delta t$ 候选与 Ax-Spec-02 的 $\tau_{int}$ 对齐），预测误差诱发的摩擦切片写为：
 \[
 \Delta\Psi_f^{(px)}\approx \int_t^{t+\Delta t}\langle \varepsilon_{pred}(\tau),\mathcal{P}_x^{-1}(\theta,\tau)\varepsilon_{pred}(\tau)\rangle\,d\tau
 \]
-* **Implication（中文）**：预测误差越偏离当前先验流形，维持显现所需 \(\Psi_f\) 支付越高。
+* **Implication（中文）**：预测误差越偏离当前先验流形，维持显现所需 \(\Psi_f\) 支付越高；高曲率先验（$\lambda_{\min}(\mathcal{P}_x)$ 小）使偏离代价放大。
 
 ### 分类映射表（Intuitive Metaphysics Debunking → SRT）
 
