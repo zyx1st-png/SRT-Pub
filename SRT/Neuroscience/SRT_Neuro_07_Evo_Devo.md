@@ -60,11 +60,23 @@ $$\text{Generativity}_{devo} \propto \frac{1}{\Psi_f(\theta_{morpho})}$$
 ## II. Evolutionary Logic (演化逻辑)
 
 ### Ax-EVO-1: Unreliable Hardware Law
+
+**[R — Retrodiction：追溯演化生物学冗余理论（Kirschner & Gerhart 2005可演化性；Tononi 2004冗余/整合）]**
+
 在噪声硬件上，选择必须具备冗余与容错：
 \[
 \text{Reliability} \propto \text{Redundancy}(L_2)
 \]
-* **Implication（中文）**：演化偏好可替代与冗余结构，而非“最优单一路径”。
+
+**Redundancy(L₂) 操作化候选**：可替代L₂锚定路径数量 $N_{alt}$（实现相同功能的独立L₂路径数），即单一路径失效后系统仍可收敛到同一稳定态的备用数量。量化候选：$N_{alt} \approx |\{k : A_k \to \text{same functional outcome}\}|$。**注**：$|Aut(L_2)|$（Ax-L2-03）测量结构刚性，与 $N_{alt}$ 方向相反（高刚性→低替代性），两者是不同维度的L₂性质。
+
+**”噪声硬件”的SRT操作化**：噪声硬件 = L₀扰动项 $\epsilon(t)$ 的方差较大（$\sigma_{L_0}^2 \gg 0$）。高 $\sigma_{L_0}^2$ 环境下，系统要维持 Ĝ_θ 的稳定选择，必须依赖高 $N_{alt}$（多个等效L₂路径）——当一条路径被扰动阻断，另一条仍可达到同一L₁锚定。这解释了为什么脑的许多功能有多个并行实现（如多感官整合、双侧运动控制）。
+
+**∝关系说明**：可靠性随 $N_{alt}$ 单调增大（至少在独立失效假设下），但非无限——增加冗余有 Ψ_f^{metabolic}（代谢成本）约束，形成最优冗余度权衡：$N_{alt}^* = \arg\max_{N} [\text{Reliability}(N) - C_{metabolic}(N)]$。
+
+* **Implication（中文）**：演化偏好可替代与冗余结构，而非”最优单一路径”。
+
+**证伪条件**：若在高神经噪声（低信噪比）环境中成功适应的生物，其关键功能的并行实现路径数不高于低噪声环境中的同功能生物，则Reliability∝Redundancy关系的演化预测失效。
 
 ---
 
@@ -286,6 +298,20 @@ Michael Levin 实验室的一系列实验为 SRT 提供了关键支持：
 - **操作**：通过操纵离子通道改变癌细胞的生物电状态
 - **结果**：癌细胞可以被"正常化"——恢复正常的细胞行为
 - **SRT 解释**：癌症不仅是基因问题，更是 $\Phi_{\text{coupling}}$ 崩溃问题——恢复电学耦合可以恢复正常 $d$ 值
+
+### 3.2.4 癌症的机械窗口（2026-03-16 patch）
+
+用户提供的细胞力学/超声材料及其一手锚点（Portet et al., *Eur. Biophys. J.* 2005；Samarbakhsh & Tuszynski, *Eur. Biophys. J.* 2011；Singh et al., *Bioengineering & Translational Medicine* 2021；Rietman et al., *Biosystems* 2026）提示：`θ_{physio}` 里的 mechanical 子通道不是一句空话。癌细胞的可干预窗口不只在离子通道和膜电位，也在**细胞骨架张力、阻尼条件、几何形态与细胞周期阶段**。
+
+这里最重要的收紧是：机械选择性更可能来自**状态窗口**，而不是“癌细胞天然对应某个固定共振频率”。特别是在有丝分裂期，纺锤体/微管网络会短暂形成更有序、更刚性的几何结构，使病理细胞比平时更容易被外部机械驱动推离其局部稳定轨道。换言之，超声或其他模式化机械刺激若有效，靶向的更可能是 **mitotic geometry + damping regime**，而不是“癌症本质”本身。
+
+用 SRT 语言说，这意味着癌症与组织级 `L_2^{bioelectric}` 的失耦，不一定只能靠电学重耦合来纠正；在某些窗口下，也可能先通过机械扰动去破坏病理细胞维持当前 `L_1` 轨道的支架，使其进入停滞、凋亡或对后续电学/药物干预更开放的状态。机械通道因此更像一种 **state-selective gating**，而不是独立的“万能频率疗法”。
+
+**边界必须收紧：**
+- 当前证据主要是 in vitro、pilot 或 preclinical 级 proof-of-principle，不足以推出通用临床疗法。
+- 超声效应往往混合了微管/纺锤体机械扰动、Piezo1/钙流、膜通透化、热效应与空化等多条路径，不能简单归因为“纯微管共振”。
+- 选择性更可能来自细胞周期、尺寸、黏附状态、组织力学背景与阻尼条件，而不是“所有癌细胞共享同一机械签名”。
+- `Biosystems` 2026 的 Fibonacci 声学序列仍属探索性假设生成窗口，不能单独升格为治疗原则。
 
 ## 3.3 认知-形态同构的深刻含义
 
