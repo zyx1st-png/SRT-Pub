@@ -566,16 +566,30 @@ $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 
 ### 5.9 认识论隔离原则（Epistemological Quarantine，新增）
 
+> **[R]** 认识论隔离的思想源头：Kant 的”物自身不可知”（1781），Carnap 的内/外问题区分（1950），Quine 的本体论相对性（1969）。**[H]** SRT 的贡献在于将禁止形式化为算子约束，并联结 θ 参数化与 L₀ 可及性限制。
+
 禁止将由特定生物参数 \(\theta\) 生成的 \(L_1/L_2\) 直觉范畴直接回投到 \(L_0\) 作为绝对属性：
 \[
 \neg\Big(\text{BackProject}(L_1,L_2\to L_0^{abs})\Big)
 \]
 
+**BackProject 算子的形式界定（[H]）**：
+\[
+\text{BackProject}(X, L_0^{abs}) \equiv \exists \text{claim}: \text{Category}_\theta(X) \wedge \neg(\exists\theta' \neq \theta : \text{Category}_{\theta'}(X) \text{ differs}) \to X \in L_0^{abs}
+\]
+即：从”我的 θ 生成了 X 类别”推断”X 是 L₀ 中的绝对结构”——此推断被 §5.9 禁止。实践例子：①”物体”直觉（视觉系统生成的 L₁ 边界）→ 宣称”宇宙基底由离散对象构成”；②”因果”范畴（时间顺序+预测误差最小化生成）→ 宣称”L₀ 是因果决定论的”；③”意识是统一的”（默认模式网络 L₁ 整合）→ 宣称”意识是 L₀ 基本实体”。
+
+**自指张力处理（⚠️ SRT 自身豁免条件）**：SRT 自身的”L₀绝对潜在域”描述是否违反 §5.9？——SRT 的处理策略：L₀ 被定义为**功能占位符**（”能被 Ĝ_θ 选取的一切之总和”），而非描述其内在结构；任何关于 L₀ 结构的正面宣称（”L₀ 是波函数/信息场/……”）均须加 [H-高承诺] 标注并提供证伪路径。违反此策略 = 触发 §5.9 的 BackProject 禁止。
+
 ### Def-Phil-5.9a: 逆向投影谬误（Fallacy of Retro-Projection）
 \[
 \mathcal{F}_{retro}:\ \text{Category}_{\theta,bio}\Rightarrow \text{Absolute Ontology}(L_0^{abs})
 \]
-* **Implication**：把生存优化形成的“对象/因果/持久性”直觉当作终极本体，是范畴越级。
+* **Implication**：把生存优化形成的”对象/因果/持久性”直觉当作终极本体，是范畴越级。该谬误是 §5.10 “外部伪问题”（Def-Phil-5.10b：θ→∅ 查询）的生成机制：去参数化操作（θ→∅）等价于假装 θ 生成的范畴是无参数的绝对真理。
+
+**证伪/修正条件（原则层）**：
+- 若存在理论 T* 能在不引用 θ 的情况下为 L₀ 赋予明确内在结构，且该结构可实验区分（预测差异），则 §5.9 需修订为条件性禁止（仅禁止无证伪路径的 BackProject）。
+- 若 SRT 自身的 L₀ 定义被发现不能避免正面结构预设，则需降级为”工作框架假设”并加 [H-待修订] 标注。
 
 ### 5.10 内部/外部问题的 SRT 映射（Carnap 收编，新增）
 
