@@ -70,6 +70,9 @@ L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory
 ---
 
 ### T-CLIN-1: Posterior-Anterior Ontological Division (后-前本体论分工假说)
+
+> **标签说明**：T-CLIN-1 是基于神经科学证据的 SRT 推论（Retrodiction），而非从 SRT 公理的纯演绎定理；"Theorem"在此指"SRT 框架内形式上可推论的命题"，等价于 Cor-级别，强度弱于从 Ax 直接推导的命题。
+
 大脑前后轴在 SRT 拓扑中扮演不同角色：
 \[
 \text{Posterior Hot Zone (PHZ)} \iff \text{Generator}(L_0 \to \text{Candidates})
@@ -77,7 +80,16 @@ L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory
 \[
 \text{Prefrontal Cortex (PFC)} \iff \text{Selector}(\hat{G}_{\theta}) \text{ \& Maintainer}(L_2)
 \]
-* **Implication（中文）**：后部热区（PHZ）负责将高维 $L_0$ 坍缩为一系列候选的感受质图景；前额叶（PFC）不产生意识内容，而是作为 $\hat{G}_\theta$ 的最高级控制台，执行"排除/选择"并维持当前的 $L_2$ 脚手架。这解释了为什么切除大块前额叶的患者（如早期的额叶切除术）依然"清醒"（PHZ 完好），但失去了目标导向的意志力与复杂的自我叙事（$\hat{G}_\theta$ 降维，$\text{Depth}(L_2) \to 0$）。
+
+**PHZ 机制形式化**：PHZ（含 V3A/V3B、颞下皮层、枕叶联合区）通过并行局部竞争从 $L_0$ 提取候选集：
+$$\text{Candidates}(t) = \{\sigma : \mathcal{A}(\sigma) \geq \tau_{local}^{PHZ}\}$$
+其中 $\mathcal{A}(\sigma)$ 为局部激活强度（对接 Ax-NEURO-MECH-2 的点燃阈值 $\tau_{ignite}$）；PHZ 不执行选择，只生成可进入 $L_1$ 竞争的候选集。
+
+**$\text{Depth}(L_2)$ 的操作化定义**：
+$$\text{Depth}(L_2) \equiv \text{Rank}_{eff}(L_2) = \text{有效主成分数}$$
+即 $L_2$ 结构的秩（可由 PCA 或 Fisher 信息矩阵特征值谱的参与率指数近似）。额叶切除后 $\text{Depth}(L_2) \to 1$（仅剩基础感知层，高阶叙事/目标结构崩溃）。
+
+* **Implication（中文）**：后部热区（PHZ）负责将高维 $L_0$ 坍缩为一系列候选的感受质图景；前额叶（PFC）不产生意识内容，而是作为 $\hat{G}_\theta$ 的最高级控制台，执行"排除/选择"并维持当前的 $L_2$ 脚手架。这解释了为什么切除大块前额叶的患者（如早期的额叶切除术，注：手术范围差异大，现代功能影像提供更精确证据）依然"清醒"（PHZ 完好），但失去了目标导向的意志力与复杂的自我叙事（$\hat{G}_\theta$ 降维，$\text{Depth}(L_2) \to 0$）。
 
 ### C-CLIN-1a: Semantic Selection Corollary（语义选择推论）
 由 T-CLIN-1 推论：**LIPFC（左下前额叶）对 $\hat{G}_\theta$ 选择控制的行使，并不局限于情节记忆或感知竞争，而是在语义检索干扰中同等生效**：
@@ -434,6 +446,17 @@ SRT 避免了泛心论的经典困难——组合问题（Combination Problem）
 **文件结束**
 
 ---
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **IIT-SRT 映射** (Ax-INTEG-1): $\Phi \approx \text{Irreducibility}(\hat{G}_\theta)$ — IIT 的 $\Phi$ 是 $\hat{G}_\theta$ 选择结构不可约性的度量。
+2. **$\Phi$ 作为拓扑统一度量** (Def-Phi-Unity): $\Phi(\hat{G}) = \min_P D_{KL}(P(L_1|L_0) \| \prod_i P_i)$ — 衡量算子的绑定完整性。
+3. **预测编码即 $L_2$ 更新** (Ax-INTEG-2): $\Delta\theta \propto -\nabla_\theta F$ — 预测误差驱动 $L_2$ 参数修正。
+4. **门控加权整合** (Ax-CLIN-1b): $L_1(\tau) = \sum_i W_i s_i + \sum_j \Theta(\Delta E - E_{thresh}) M_j L_2$ — 全局工作空间门控 + IIT 加权求和的统一方程。
+
+**含义**: IIT、全局工作空间、预测编码三大意识理论在 SRT 中统一为选择算子的不同操作面。
 
 ## 【理论边界/防误用声明】
 
