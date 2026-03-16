@@ -41,12 +41,28 @@ $$F_{causal} = T \nabla S(\tau)$$
 * **Implication**: L_2 同时是效率脚手架与适应陷阱。
 
 ### T-L2-02: Civilizational Divergence Lock Theorem (文明发散锁死定理)
-**Deductive Statement**: 当社会全面将核心注意力网络外包给 $L_2$-封闭的算法系统时，集体关切范围 $\bar{d}$ 退化：
+
+**[H — Novel Prediction；注："Deductive Statement"已降级——dḏ/dt<0依赖"全面算法化"的经验前提，非纯逻辑推导，属于条件性H预测]**
+
+当社会全面将核心注意力网络外包给 $L_2$-封闭的算法系统时，集体关切范围 $\bar{d}$ 退化：
 $$\frac{d\bar{d}}{dt}\bigg|_{\text{全面算法化}} < 0 \implies \bar{d} \to d_{\min}$$
+
+**dḏ/dt < 0 的驱动机制**（三条并行路径）：
+1. **Echo chamber 效应**：推荐系统优化点击率→强化已有θ→抑制d横向扩展（Ax-Cog-4 ρ_c联结）
+2. **Ψ_f 系统性削减**：算法滤除摩擦性L₀信号（负面反馈、异质观点）→ Ĝ_θ 失去对L₀的直接摩擦锚点
+3. **注意力外包正反馈**：低Ψ_f→低d扩展需求→更依赖算法→更低Ψ_f（闭环压缩）
+
 崩溃条件：若 $\bar{d}$ 低于临界值 $d_c$（社会维持 $L_0$ 直接摩擦互动的最小带宽），则文明系统进入**发散锁死**状态：
 $$\bar{d} < d_c \implies \mathcal{F}_{civil}(\text{response to } L_0\text{-crisis}) \to \text{Divergent (Unbounded Error)}$$
-* **Implication**: 全面算法化不是效率提升，而是通过切断与L0真实危机的摩擦互动，导致文明系统丧失危机响应能力的热力学崩溃路径。
-* **Cross-ref**: Ax-L2-01 (迟滞积累); Eq-Evo-01b (代谢增益调制)。
+
+**发散路径说明**：$\bar{d} < d_c$ 时，L₀危机信号（物理/生态/社会突变）无法穿透L₂算法过滤层被识别→响应延迟呈正反馈放大（类似开环控制系统中增益超出稳定边界）→误差无界。
+
+**$d_c$ 操作化候选**（关键参数，待精确化）：$d_c$ 估计方向 = 社会系统从L₀危机发生到有效响应所需最短感知-决策-行动闭环对应的最小d值，可能与社会复杂度和危机响应时间窗口相关：$d_c \approx f(\tau_{response}, N_{scale})$，具体形式待社会动力学实证。
+
+* **Implication**: 全面算法化不是效率提升，而是通过切断与L₀真实危机的摩擦互动，导致文明系统丧失危机响应能力的热力学崩溃路径。
+* **Cross-ref**: Ax-L2-01 (迟滞积累); Eq-Evo-01b (代谢增益调制); Def-L2-Algo (算法即极端L₂态，Ψ_f→0)。
+
+**证伪条件**：① 若高算法化社会的集体危机响应能力（如大流行/气候/金融危机响应速度）不低于低算法化社会，则dḏ/dt<0假说失效；② 若 $\bar{d}$ 代理指标（如新闻多样性、跨议题公共参与深度）在高算法化社会中不系统性下降，则机制路径需修订。
 
 ### Ax-L2-03: Hardness by Automorphism
 **Formal Definition**: Objectivity scales with the size of the automorphism group.
