@@ -618,11 +618,23 @@ $$P_{L_1}(\sigma) \xrightarrow{d \to 0} \frac{e^{-E(\sigma)/k_BT}}{Z}, \quad D_{
 
 ### §15.5 关系 E（Eq-IT-E）：选择创造信息（Shannon 的上游问题）
 
-$$I_{created} = H(L_0) - H(L_1 | \hat{G}_\theta) = I(L_0\,;\,\hat{G}_\theta)$$
+选择算子从 $L_0$ 中提取并锚定的信息量（选择创造的信息）：
 
-$$I_{created} \;\xrightarrow{\text{costs}}\; \Psi_f \;\xrightarrow{\text{scope measured by}}\; d$$
+$$I_{created} \equiv I(L_0\,;\,L_1) = H(L_0) - H(L_0\,|\,L_1) = H(L_1) - H(L_1\,|\,L_0)$$
 
-Shannon 信息论处理信息**传递**（下游）；SRT 处理信息**生成**（上游）。两者串行、不竞争。
+即 $L_0$（潜在域）与 $L_1$（显现域）之间的互信息——算子选择将 $L_0$ 的哪些结构"投影"到了 $L_1$ 中。
+
+> **原公式勘误**：原式 $H(L_0) - H(L_1 | \hat{G}_\theta) = I(L_0\,;\,\hat{G}_\theta)$ 存在随机变量错配：$I(L_0;\hat{G}_\theta) = H(L_0) - H(L_0|\hat{G}_\theta)$（右侧分母应为 $L_0$，非 $L_1$）。正确表达有两种等价写法：(a) $I(L_0; L_1)$（源-输出互信息，强调选择的信息提取）；(b) $I(L_1; \hat{G}_\theta) = H(L_1) - H(L_1|\hat{G}_\theta)$（算子对 $L_1$ 的解释力，强调算子的贡献）。本节采用 (a)。
+
+**约束链的形式化**：
+
+$$I_{created} \leq d \quad \text{（d 值 = 信道容量上界，Eq-IT-B）}$$
+
+$$\Psi_f \geq k_B T \ln 2 \cdot I_{created} \quad \text{（Landauer 下界，Eq-IT-A）}$$
+
+即：选择创造的信息量受 $d$ 值上界约束；创造该信息量至少需要 Landauer 代价的 $\Psi_f$。
+
+Shannon 信息论处理信息**传递**（下游，给定 $L_1$ 分布后的编码/解码）；SRT 处理信息**生成**（上游，$L_0 \to L_1$ 的选择过程）。两者串行互补——SRT 解释信息源，Shannon 解释信息渠。
 
 ### §15.6 统一对应表
 
