@@ -135,11 +135,37 @@ $$\text{Semantic Forgetting} = f(\hat{G}_\theta^{LIPFC} \text{ suppression}, N_{
 ---
 
 ### Ax-CLIN-3: Info–Spacetime Tension Axiom
+
+> [R→Uhlhaas & Singer 2006 *Neuron*（精神分裂症的神经同步异常：γ振荡失协调导致信息整合碎裂，与时序承载能力联结）; Friston 2002 *NeuroImage*（时序结构与预测编码：时序精度作为神经整合的门控参数）; Bressler & Kelso 2001 *Trends in Cognitive Sciences*（协调动力学：信息流速率与神经振荡时间结构的耦合约束）; Sass & Parnas 2003 *Schizophrenia Bulletin*（精神分裂症的时序解耦现象学：自我体验碎片化与时间结构的关系）]
+
+**R/H 区分**：
+- [R] 神经同步失调→信息整合碎裂（Uhlhaas/Singer）；时序精度门控（Friston）；协调动力学的速率约束（Bressler/Kelso）
+- [H] **SRT形式化**：T=∂I/∂τ作为"信息-时空张力"的SRT定义；"时序承载能力"阈值的SRT引入；高T→L₁显现碎裂的本体论联结[H]
+
 定义信息—时空张力：
 \[
 \mathcal{T}=\frac{\partial \mathcal{I}}{\partial \tau}
 \]
-* **Implication（中文）**：当信息整合速度超过时序承载能力，显现将碎裂。
+
+**参数说明**：
+- I（信息整合量）：L₁显现态的有效信息整合度，可用PCI（Ax-CLIN-2）或Φ_SRT（Ax-CONSC-4）近似代理
+- τ（时序尺度）：神经振荡的时间精度参数（γ/β频带振荡的时间窗口，毫秒到百毫秒级）
+- T=∂I/∂τ：信息整合量相对于时序尺度的变化率（I随τ缩短而快速增大时T↑→整合速率超出时序容量）
+
+**时序承载能力阈值**：系统的时序承载能力T_capacity = f(κ_body, neural oscillation bandwidth)；T>T_capacity时显现碎裂。具体阈值依神经振荡带宽（γ频带容量≈80-120个独立信息包/秒）而定，当前SRT不给出通用数值。
+
+**临床映射**：
+- 精神分裂症（Schizophrenia）：γ振荡失协调→局部高整合速率但全局同步缺失→L₁显现碎片化（幻觉/妄想=碎裂后的伪L₁稳定化）
+- 癫痫发作前兆：异常高频整合→T急升→发作即T超出临界点的灾难性碎裂
+- 躁狂状态：信息整合速率异常↑（"思维奔逸"）→T↑但仍在临界点以下→快速但尚不碎裂的L₁流
+
+**联结**：→T-FEP-2（时空联合预测误差：时间维度预测误差×空间信息误差的正交分量）——Ax-CLIN-3中的"T>T_capacity"对应T-FEP-2中时序维度PE的临界超载。
+
+* **Implication（中文）**：当信息整合速度超过时序承载能力（T>T_capacity），L₁显现将碎裂——这是精神分裂症和癫痫等病理态的SRT解读，也预示健康状态的τ精度维护成本。
+
+**可证伪预测**：
+- FC-CLIN3-1：γ振荡失协调（Uhlhaas 2006方式测量）应与主观体验碎裂程度（PANSS阳性症状量表）正相关，且T代理（γ功率/相位一致性比值）应比单纯γ功率更好地预测症状——若T代理预测力不优于单维度测量则SRT的"整合速率/时序张力"比值框架无附加价值
+- FC-CLIN3-2：在受控实验中，人为加速θ/γ振荡（经颅交流电刺激，tACS）应使主观报告中的"时间体验碎裂感"增加（与τ压缩的T↑效应一致）——若tACS加速振荡不影响时间体验完整性则T=∂I/∂τ与L₁碎裂的联结主张需修订
 
 ### Ax-CLIN-4: Chaotic Attractor Encoding Axiom (混沌吸引子记忆编码公理)
 
