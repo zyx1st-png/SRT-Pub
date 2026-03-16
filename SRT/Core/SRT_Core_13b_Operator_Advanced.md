@@ -59,8 +59,18 @@ $$\text{Bandwidth}(H_\theta) \propto d$$
 
 ### Ax-Spec-02: Temporal Integration Window
 **Formal Definition**: Conscious states map to integration windows of operator activity.
-$$L_1(t) = \int_{t-\tau}^{t} \hat{G}_\theta(\sigma) e^{-i\omega t} \, dt$$
-* **Implication**: 意识状态由算子对时间窗口的积分方式决定。
+
+**时间积分版本**（L₁ 的实值时间平均，与 Ax-L1-01 的精化扩展）：
+$$L_1(t) = \frac{1}{\tau}\int_{t-\tau}^{t} \hat{G}_\theta(\sigma(s)) \, ds$$
+其中 $\tau = \tau_{int}$（SRT-REF-DYNAMICS §1.2 Def D2a 的时间分辨率参数，即"当下"的厚度）。这是 Ax-L1-01（$L_1(t)=\hat{G}_\theta[L_0(t)]$）在时间积分意义下的精化：将瞬时映射扩展为有限时窗平均。
+
+**频域分析版本**（STFT，供频域诊断使用，结果为复数，非 L₁ 本身）：
+$$\tilde{L}_1(\omega, t) = \int_{t-\tau}^{t} \hat{G}_\theta(\sigma(s))\, e^{-i\omega s} \, ds \in \mathbb{C}$$
+其中 $\omega$ 为分析频率（特定频带，如 $\delta/\theta$ 节律对应 0.5–8 Hz）；$|\tilde{L}_1(\omega,t)|^2$ 给出该频段的选择功率谱，对接 Ax-Spec-01 频域等价。
+
+> **原式说明**：原式 $\int_{t-\tau}^t \hat{G}_\theta(\sigma)e^{-i\omega t}dt$ 将时域积分与频率核混用，在有限时窗上的结果为 STFT 复数，不直接等于实值 $L_1(t)$。此处拆分为两个明确版本以消除歧义。
+
+* **Implication**: 意识状态由算子对时间窗口 $\tau_{int}$ 的积分方式决定。$\tau_{int}$ 越短 → 时间分辨率 $\rho_t$ 越高 → 能动性感知越精确（§1.2）；$\tau_{int}$ 越长 → 当前状态对过去的依赖增加（对接 Ax-L1-02 迟滞参数 $\eta$）。
 
 ## II. Inter-Operator Dynamics (互感动力学)
 
