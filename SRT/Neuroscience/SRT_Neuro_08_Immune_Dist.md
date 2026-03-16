@@ -25,12 +25,24 @@ dependency: [SRT-NEURO-07, SRT-CORE-000]
 
 ## I. Distributed Operators (分布式算子)
 
-### Ax-IMM-1: Immune Operator Axiom
+### Ax-IMM-1: Immune Operator Axiom *(R: Varela 1991 “Immune System as Cognitive Network” 的 SRT 形式化)*
 定义免疫系统为分布式选择算子：
 \[
 \hat{G}_{immune}: L_0^{immune}\rightarrow L_1^{immune}
 \]
-* **Implication（中文）**：免疫系统不是被动防御，而是独立的选择算子，决定“何为自我”。
+
+**三层本体论完整映射**：
+| SRT 层 | 免疫系统对应 | 示例 |
+|:--|:--|:--|
+| $L_0^{immune}$ | 所有可能的分子结构/表位空间 | 全部潜在抗原 |
+| $L_1^{immune}$ | 当前激活的体细胞边界识别 | 实时免疫应答 |
+| $L_2^{immune}$ | 长期免疫记忆（T/B 细胞记忆库） | 疫苗记忆、食物耐受 |
+
+**与 Ax-AUTO-1b 联结**：免疫系统是马尔可夫毯（Ax-AUTO-1b）的**物理实现层**——维护生物体 $\partial\Omega_{MB}$ 的分子边界；免疫失调 = 马尔可夫毯边界条件的局部崩溃（$\Psi_f^{immune} > \Psi_f^{thresh}$）。
+
+**”分子自我” vs “认知自我”**：$\theta_{immune}$ 定义分子意义的自我边界（见 Def-Immune-Cognition），$\theta_{cognitive}$ 定义认知意义的自我（神经系统 $\hat{G}_\theta$）；两者的协调通过 Ax-IMM-2 的神经-免疫耦合实现。
+
+* **Implication（中文）**：免疫系统不是被动防御，而是独立的选择算子，决定”何为自我”；其 $L_2^{immune}$（免疫记忆）是进化和个体历史的积累，在 SRT 中等价于免疫系统的”具身 θ 的历史压缩”。
 
 ### Def-Immune-Cognition: Cognitive Equivalence of the Immune System (免疫认知等价公理)
 **Formal Definition**: 认知不仅发生在大脑中；任何能够通过耗散 $\Psi_f$ 从高维 $L_0$（抗原生存空间）稳定投射低维 $L_2$ 边界（“自我”与“非我”）的特化细胞群体都是一个 $\hat{G}_\theta$ 算子。
