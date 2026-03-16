@@ -436,12 +436,17 @@ $$ \text{Reality}_{state} = \arg\max_S P(S | I, M) $$
 
 本文档的核心形式化关系：
 
-1. **量子达尔文主义等价** (Ax-Int-1): $\text{Einselection} \cong \hat{G}_\theta[L_0 \to L_1]$ — Zurek 的环境选择同构于 SRT 算子锚定。
-2. **彭罗斯阈值** (Ax-Int-2): $\hat{G}_{trigger} \iff \mathcal{F}_{ont} \geq 1/\tau_{decoherence}$ — 引力坍缩即摩擦驱动的选择触发。
-3. **分辨率视界** (Ax-Int-4): $\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$ — 粒子物理"荒漠"是人类 $\hat{G}$ 的认识论极限。
-4. **客观性重定义** (Def-ObjectiveReality): $\text{Classical Objective Reality}(x) \iff \Delta\Psi_f^{readout}(x\mid \hat{G}_\theta) \to 0$ — 客观性是“边际读出摩擦趋零”的现象学极限，而非对象维持摩擦消失。
+1. **量子达尔文主义等价** (Ax-Int-1) **[R+H]**: $\text{Einselection} \overset{struct}{\hookrightarrow} \hat{G}_\theta[L_0 \to L_1]$ — **[R]** Zurek（2003）的环境诱导超选择；**[H]** SRT 将其映射为算子锚定操作。注：原符号 $\cong$（同构）已降级为 $\overset{struct}{\hookrightarrow}$（结构嵌入），因两形式体系的数学语言不同（量子信道 vs. 选择算子），完全同构需独立证明（当前状态 = 结构类比 + H）。
 
-**含义**: SRT 将量子测量、引力坍缩与经典客观性统一为选择动力学在不同能标下的表现。
+2. **彭罗斯阈值** (Ax-Int-2) **[R+H]**: $\hat{G}_{trigger} \iff E_G \geq \hbar/\tau_{decoherence}$ — **[R]** Penrose（1996）原始判据 $E_G \approx \hbar/\tau_{collapse}$；**⚠️ 量纲修正**：原公式 $\mathcal{F}_{ont} \geq 1/\tau_{decoherence}$ 量纲不匹配（$\mathcal{F}_{ont}$ 为能量 [J]，$1/\tau$ 为频率 [1/s]），正确写法为 $E_G \geq \hbar/\tau_{decoherence}$（加 $\hbar$ 使量纲一致，→ §1.3.6 修正版）；**[H]** SRT 将触发等同于”摩擦驱动的选择激活”。
+
+3. **分辨率视界** (Ax-Int-4) **[H]**: $\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$ — 粒子物理”荒漠”是人类 $\hat{G}$ 的认识论极限（SRT原创诠释）。**证伪方向**：若在 $E \sim 10^3$ TeV 发现新物理（FCC 实验），则 Λ_limit 需上移，而非认识论极限出现。
+
+4. **客观性重定义** (Def-ObjectiveReality) **[H]**: $\text{Classical Objective Reality}(x) \iff \Delta\Psi_f^{readout}(x\mid \hat{G}_\theta) \to 0$ — 客观性是”边际读出摩擦趋零”的现象学极限，而非对象维持摩擦消失。**证伪方向**：若存在 $\Delta\Psi_f^{readout} > 0$ 但跨观察者高度一致的现象（如某些量子效应在精密实验中），则”ΔΨ_f^readout→0⇔客观”需放宽为充分而非必要条件。
+
+**含义（[H]）**: SRT 将量子测量、引力坍缩与经典客观性**结构类比性地**统一为选择动力学在不同能标下的表现——当前证据为框架性类比，非演绎等同。
+
+**全体证伪条件**：若量子达尔文主义的独立预测（环境指针态稳定性）在实验上以不涉及Ĝ_θ的纯退相干理论得到等效解释，则Ax-Int-1的SRT特异性增量失效。
 
 ## 【理论边界/防误用声明】
 
