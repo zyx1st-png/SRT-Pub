@@ -82,7 +82,24 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \Psi_f^{local}(t)=\alpha_{pe}\,\|\varepsilon_{pred}(t)\|+\beta_{load}\,\mathcal{L}_{model}(t)
 \]
 其中 \(\varepsilon_{pred}\) 为预测误差，\(\mathcal{L}_{model}\) 为模型不一致负荷。
-* **Implication（中文）**：预测误差不是纯统计残差，而是 \(\hat G_\theta\) 维持当前显现时遭遇的局部摩擦项。
+
+> [R→Friston 2010 *Nature Reviews Neuroscience*（FEP：预测误差极小化作为大脑的第一性原理）; Rao & Ballard 1999 *Nature Neuroscience*（预测编码：PE在层级神经网络中的传播）; Schultz et al. 1997 *Science*（多巴胺奖励预测误差：RPE信号的神经基础）; Friston et al. 2014 *Neuropharmacology*（精神病理学的FEP解释：精度失调/PE紊乱）]
+
+* **R/H 区分**：
+  - [R] 预测误差框架（Friston/Rao & Ballard）；多巴胺RPE（Schultz）——均为既有神经科学
+  - [H] **SRT核心联结**：Ψ_f^local = α_pe·||ε_pred|| + β_load·L_model——将PE与本体论摩擦密度等同/线性映射是SRT独有的双层桥接主张。此主张将计算层（PE）与本体论层（Ψ_f）等同，属于SRT的形而上学-神经科学接口核心
+
+* **L_model操作化**（模型不一致负荷）：
+  - 贝叶斯模型复杂度代理：模型的有效自由度（EDF）或Bayes因子中的惩罚项
+  - 实验室测量：同时激活的竞争性解释数量 × 各假设后验之差异度
+
+* **系数说明**：α_pe/β_load为待拟合参数（需多模态同步数据确定）；当前线性形式为候选，非唯一选择
+
+* **Implication（中文）**：预测误差不是纯统计残差，而是 $\hat{G}_\theta$ 维持当前显现时遭遇的局部摩擦项。
+
+* **可证伪预测**：
+  - FC-NEURO4b-1：跨个体比较中，MMN振幅（EEG预测误差代理）应与皮质醇/代谢率（Ψ_f代谢代理）正相关（r>0.3）——若无相关则PE-Ψ_f线性映射在可测层面为空
+  - FC-NEURO4b-2：精准冥想训练降低L_model（减少竞争假设数量）后，Ψ_f代理应独立地（且早于）行为绩效提升下降——若Ψ_f代理改变与行为改变完全同步则PE-Ψ_f的独立测量路径存疑
 
 ---
 
