@@ -597,13 +597,30 @@ AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\
 淀粉样沉积与网络退化在此框架中定位为长期级联后的结构残渣/下游读数，而非唯一原发起点。
 
 ### Def-Neuro-AD-PI-2: Genes as Initial Topological Constraints
+
+> [R→Belsky et al. 2009 *Development and Psychopathology*（差异易感性假说：同一基因在有利/不利环境中效应方向相反，GxE实证基础）; Boyce & Ellis 2005 *Development and Psychopathology*（生物敏感性理论：高反应性基因型在恶劣/优质环境中均放大效应）; Turkheimer 2000 *Current Directions in Psychological Science*（行为遗传学三定律：遗传力普遍但环境调制不可忽略）; Szyf et al. 2008 *Annals of the New York Academy of Sciences*（表观遗传学：早期环境通过DNA甲基化修改基因表达轨迹）]
+
 基因在 SRT 中定义为初始连通约束与摩擦系数先验，而非命运终局：
 \[
 \mathcal{W}_0,\mu_0 \leftarrow \text{genotype},
 \qquad
-\text{trajectory}\leftarrow \text{selection integral over }(env,behavior,time)
+\text{trajectory}\leftarrow \int_0^T \hat{G}_\theta(env,behavior,t)\,dt
 \]
-即“易感峡谷”可被长期选择向量与干预策略放大或绕开。
+
+**R/H 区分**：
+- [R] “基因非命运”的GxE实证基础（Belsky差异易感性/Boyce生物敏感性/Turkheimer遗传力定律/表观遗传可塑性）
+- [H] **SRT形式化**：将基因型映射至W₀（初始L₁拓扑）和μ₀（Ψ_f先验基础）的双参数结构；路径积分形式trajectory←∫Ĝ_θdt是SRT概念框架（非标准数学积分，指选择算子在时间轴上的累积效应）
+
+**μ₀ → Ψ_f_base 联结**（理论一致性）：
+μ₀为Ψ_f的先验基础成分：Ψ_f(t) = μ₀ + Ψ_f^{acquired}(t)，其中μ₀由基因型设定、后天积累叠加。APOE4→μ₀偏高→Ψ_f_base较高→AD级联临界阈值更低（需更少外部触发即可进入overloaded状态）。即”易感峡谷”在SRT景观中表现为深度∝μ₀的局部极小区。
+
+**操作化候选**：
+- W₀ proxy：静息态fMRI默认模式网络连通性基线（发育早期测量）
+- μ₀ proxy：早期生活应激反应性（HPA轴皮质醇基线×急性应激放大系数）+ 成年后炎症标记物（CRP基线值）
+
+**可证伪预测**：
+- FC-ADPI2-1：高APOE4携带者（高μ₀假设）在同等累积应激下，Ψ_f代理（CRP×认知灵活性倒数）的上升斜率应显著陡于非携带者——若两组斜率无差异则μ₀先验效应主张需修订
+- FC-ADPI2-2：表观遗传干预（早期生活优质环境）应使高风险基因型（APOE4）的神经影像连通性（W₀ proxy）向低风险组趋近，且趋近幅度∝干预强度×时间——若高/低风险组干预响应无差异则W₀可塑性主张失败
 
 ### 分类映射表（AD Pathways → SRT）
 
