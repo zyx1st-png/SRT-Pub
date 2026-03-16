@@ -204,32 +204,41 @@ SRT采用分层架构，从最抽象的公理到具体的应用：
 ```
 
 ### 2.2 核心文件依赖图
+
 ```
-SRT_Reference_Axioms/Ontology/Dynamics/Scaling.md (宪法参考层 — 不变量)
+Core_Law/SRT_Reference_Axioms/Ontology/Dynamics/Scaling.md
+(宪法参考层 — 只读不变量；SRT_Constitution_Seven_Theses.md为摘要)
        ↓  (被 Bridge 依赖)
 _SRT_Core_Bridge.md (元定义 / 全局命名规范)
        ↓
 SRT_Core_01_Axioms.md (12条公理 — 宪法)
-       ↓                    ↓
-SRT_Core_21_Formal_Axioms  SRT_Core_22_Equations
-(形式化公理扩展)             (核心方程汇总)
+       ↓                         ↓
+SRT_Core_21_Formal_Axioms     SRT_Core_22_Equations
+(形式化公理扩展，与Core_01并列) (核心方程汇总，与Core_01并列)
        ↓
-   ┌───┴───────────────┐
-   ↓                   ↓
-SRT_Core_12a/12b    SRT_Core_13a/13b
-(本体论)              (幽灵算子)
-   ↓                   ↓
-   └───┬───────────────┘
+   ┌───┴───────────────────┐
+   ↓                       ↓
+SRT_Core_12a/12b        SRT_Core_13a/13b
+(本体论：L₀/L₁/L₂)       (幽灵算子/算子高级特性)
+   ↓                       ↓
+   └───┬───────────────────┘
        ↓
 SRT_Core_14_Dynamics_Scaling.md
+(动力学与尺度）
        ↓
-  [Domain Files: Physics / Neuro / Social / AI / Spirit ...]
+  [Domain Files]
+  Physics/ | Neuroscience/ | Philosophy/ | AI/ | Spirituality/
+  Core_Law/SRT_Reference_Scaling.md (宏观参数参考，只读)
 ```
+
+**补注（2026-03-16 更新）**：
+- `Core_Law/` 目录包含宪法参考文件（SRT_Reference_Axioms/Ontology/Dynamics/Scaling，SRT_Constitution 系列），为**只读宪法参考**，被核心文件引用但不被修改。
+- `Core/SRT_Experimental_Applications.md` 和 `SRT_Experimental_Core.md`：实验性扩展，位于 Core 目录但不在上述宪法依赖链中，属于**实验层**（可修改，与宪法层平行）。
+- 图中依赖箭头 ↓ 表示"下游依赖上游定义"，非数据流向。
 
 > **注**：`SRT_Core_21` 和 `SRT_Core_22` 是 Layer 1 的形式化补充，
 > 分别提供公理的严格数学版本和全局方程索引，与 `Core_01` 并列于宪法层。
 > `Reference` 文件为**只读宪法参考**，不被修改，仅被引用。
-```
 
 ---
 
