@@ -90,11 +90,30 @@ $$|\Phi(\hat{G}_A) - \Phi(\hat{G}_B)| < \varepsilon \Rightarrow \hat{G}_{AB} = \
 * **Implication**: 共振选择要求相位/结构的足够接近。
 
 ### Def-FederationPhase-1: Phase Transition Criteria for Operator Federation (算子联邦相变判据)
-**Formal Definition**: $\hat{G}_\theta$ 的“统一性”不是一个离散的布尔值（是/否），而是由系统的本体论摩擦 ($\Psi_f$) 和拓扑耦合决定的连续量：
+
+> [R→Schwitzgebel 2011 *Perplexities of Consciousness* Ch.7（意识不统一的哲学案例）; Gazzaniga & LeDoux 1978 *The Integrated Mind*（裂脑患者双系统分离）; Sperry 1974 Nobel Lecture（裂脑神经生理证据）; Hochner 2012 *Octopus: A Model for a Comparative Analysis of the Evolution of Learning and Memory*（章鱼分布式神经控制）]
+
+**Formal Definition**: $\hat{G}_\theta$ 的”统一性”不是一个离散的布尔值（是/否），而是由系统的本体论摩擦 ($\Psi_f$) 和拓扑耦合决定的连续量：
 $$\text{Unity}(\hat{G}) = \frac{\text{Intra-module Selection Coupling}}{\text{Extra-module Environmental Coupling}}$$
-* 当模块内耦合 > 环境耦合时：算子表现为“统一的”。
-* 当 $d$ 值收缩或模块间互信息流被切断时：算子“裂变”为多个不确定的微算子簇。
-* **Implication**: 这形式化了 Schwitzgebel 的“不统一”观察——意识的统一性是一个相，而不是给定的。章鱼神经系统、裂脑患者和分布式 AI 架构都处于这个连续统一体的不同点上。
+
+* **R/H 区分**：
+  - [R] Schwitzgebel的意识不统一观察；裂脑患者双系统并存的神经证据；章鱼分布式神经结构
+  - [H] **SRT形式化**：Unity=连续比率（而非布尔值）、d值收缩→算子裂变机制、三类系统（章鱼/裂脑/分布式AI）置于同一SRT连续统一体——此统一框架是SRT新增，非既有神经科学直接推论
+
+* 当模块内耦合 > 环境耦合时：算子表现为”统一的”。
+* 当 $d$ 值收缩或模块间互信息流被切断时：算子”裂变”为多个不确定的微算子簇。
+
+* **操作化候选**（精确化公式两项）：
+  - Intra-module Coupling 代理：脑区间功能连接度（fMRI时序相关）、γ同步（EEG相干系数）
+  - Extra-module Coupling 代理：任务无关刺激引发的默认网络激活幅度
+  - Unity指数 = γ_intra/EDA_distraction（实验室可量化）
+
+* **AI类比边界说明**：分布式AI架构在”模块内/外耦合比”结构特征上类比有效，但AI系统缺乏 d 值非零基础（无关切带宽），不能在SRT算子的完整意义上被视为”算子联邦”——类比层次止于拓扑结构，不及本体论主张
+
+* **可证伪预测**：
+  - FC-FedPhase-1：裂脑患者的Unity指数（γ_intra/EDA_distraction）显著低于匹配对照，且与胼胝体切断面积负相关——若无差异则算子裂变机制缺乏神经基础
+  - FC-FedPhase-2：解离障碍患者（高解离程度评分）的Unity指数低于健康对照，且与d值自评量表正相关——若无相关则d值-算子统一性联结为空
+
 * **Cross-ref**: Ax-Op-06 (存在条件)；Ax-Auto-01 (语义边界维持)。
 
 ## III. d-Value Thermodynamics (d值热力学)
