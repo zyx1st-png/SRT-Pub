@@ -653,11 +653,22 @@ $L_2$ 域的运行机制可沿”写入—硬化—改写”三阶段理解，�
 \Psi_f\to\infty
 \]
 
-### T-L2-03: Collapse Under Forced Composition
+### T-L2-03: Collapse Under Forced Composition *(R: Retrodiction，历史上强行同域案例丰富)*
 若系统在 \(\mathcal{X}_{cat}\) 条件下持续执行耦合，则
 \[
 \partial_t \mathrm{Stability}(L_2)<0\quad\land\quad \text{failure probability}\uparrow
 \]
+
+**Stability(L₂) 操作化候选**（待选一确定）：
+- $\mathrm{Stability}(L_2) \equiv 1/\mathrm{Var}(L_2^{consensus})$（共识方差的倒数）
+- $\mathrm{Stability}(L_2) \equiv \mathrm{OAI}^{-1}$（本体论失忆指数的倒数）
+- $\mathrm{Stability}(L_2) \equiv \lambda_{\min}(\nabla^2 F_{L_2})$（自由能曲率的最小特征值，参见 Ax-AUTO-1b 边界崩溃条件）
+
+**X_cat 操作性判断**：若领域 $\mathcal{C}_A$ 的约束集合与 $\mathcal{C}_B$ 存在不可消除的测度不兼容（如：$\mathcal{C}_A$ 的效用函数要求连续可微，$\mathcal{C}_B$ 的生态约束为离散阈值函数），则判定 $\mathcal{X}_{cat}$ 成立。强制同域耦合的信号：Ψ_f 超线性上升而不收敛。
+
+**failure 类型**：L₂共识层的内部一致性失调（不动点消失），表现为社会功能协调失败（政策失效、制度崩溃、组织失灵等）。
+
+**与 Ax-AUTO-1b 联结**：马尔可夫毯边界崩溃（$\max|\nabla F \cdot \hat{n}| > \Psi_f^{thresh}$）是 T-L2-03 在个体算子层面的具体实例；T-L2-03 是其集体 $L_2$ 层的类比。
 
 ### 分类映射表（范畴错误场景 → SRT）
 
