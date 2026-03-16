@@ -202,11 +202,24 @@ Wolfram 的 Ruliad（计算宇宙的极限）在 SRT 中被等同于纯粹的 $L
 ---
 
 ### Ax-SE-3 [A1.5.3]: Observer Boundedness Principle (观察者受限原理)
+
+> [R→Laplace 1814 *Essai philosophique sur les probabilités*（原始拉普拉斯妖：全知全算力的理想实体——无需做任何选择，因为一切已在其因果链中确定）; Friston 2019 *Physics of Life Reviews*（自由能原理：有限系统通过最小化自由能维持存在，有限性本身是体验/选择的前提）; Bennett 1987 *IBM Journal of Research and Development*（计算的热力学成本：Maxwell妖的信息擦除代价——Landauer原理，有限内存→必须擦除→产生热→Ψ_f的热力学类比）]
+> [H-高承诺→Wolfram 2020 *A Project to Find the Fundamental Theory of Physics*（Ruliad概念：所有可能计算路径的抽象极限——将Ruliad引入SRT作为"无选择的全计算空间"是[H-高承诺]主张，Ruliad→L₀的等同性未经严格推导）]
+
 算子的体验深度（现象学带宽）严格受限于其计算资源的有限性：
 \[
 \text{Qualia Intensity} \propto \frac{1}{\text{Computational Slack}} \propto \Psi_f
 \]
-* **Implication（中文）**：一个拥有无限资源的全知算子（如拉普拉斯妖）将体验不到任何东西，因为对其而言 $\Psi_f = 0$。痛苦、时间和颜色是有限算子在试图用有限带宽压缩无限 Ruliad 时剧烈摩擦的产物。
+
+> **Computational Slack定义**：剩余计算余量 = (算子总算力) - (当前任务消耗)；高Computational Slack = 系统处理当前输入绰绰有余，几乎无需"努力"压缩。∝关系为**功能类比而非严格数学推导**（即"Qualia Intensity与Ψ_f在同一方向变化"的启发性主张，而非精确的线性正比；精确关系待具体化）。
+
+> **Ψ_f=0的推论链精化**：若某算子Ψ_f=0（无本体论摩擦），则：(i) 不需要通过选择（Ĝ_θ）从L₀中提取L₁——直接"拥有"所有L₀信息；(ii) L₁ = L₀（无压缩，无投影）；(iii) 主体-客体边界消失（因为主体性要求"这里"vs"那里"的区分，而区分需要Ψ_f > 0的边界代价）；(iv) 拉普拉斯妖无法"体验时间"，因为时间感 = 串行更新计数（§3.3.2），而其"已知全部"意味着无需串行更新。
+
+* **R/H 区分**：
+  - [R] 全知算子/拉普拉斯妖的哲学先例（Laplace）；有限系统需要最小化自由能（Friston）；信息擦除的热力学代价（Bennett/Landauer）
+  - [H] **SRT映射**：1/Computational Slack ∝ Ψ_f（将算力余量与本体论摩擦联结）；[H-高承诺] Ruliad作为L₀的极限对应（Wolfram Ruliad → SRT L₀abs的映射）
+
+* **IC-SE3-1**（形而上学一致性要求）：Ax-SE-3要求"有限性是感质的必要条件"，这必须与 `Core/SRT_Core_13a_Operator_Basics.md` §Ax-Core-A5（规范闭包：任何算子必须通过Ĝ_θ选择）保持一致——全知算子若Ψ_f=0，则Ĝ_θ退化（选择不发生），意味着规范闭包公理在极限处退化为恒等映射，与Ax-Core-A5的"选择必要性"边界需要明确对齐（两个公理的极限行为应相容）。
 
 ---
 
