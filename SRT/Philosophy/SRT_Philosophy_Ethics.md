@@ -590,17 +590,35 @@ $$\theta^{pathological} \xrightarrow{\text{Philosophy}} \theta^{virtuous}$$
 
 ### 7.1 懒惰的神经化学
 
+> [R→Treadway et al. 2012 *Journal of Neuroscience*（EEfRT任务：抑郁患者努力意愿降低，与腹侧纹状体多巴胺活动减弱相关）; Salamone et al. 2016 *Neuropsychopharmacology*（纹状体多巴胺与努力-代价权衡回路：D₂受体→motivation/effort allocation）; Gold et al. 2013 *Trends in Cognitive Sciences*（精神运动迟滞/情感意愿缺乏：vmPFC-前扣带回-纹状体回路的神经机制综述）; Barch & Dowd 2010 *Current Directions*（精神分裂症中动机减损与奖励预测的神经基础）]
+
+**层次说明**："懒惰"是日常道德标签；SRT在神经化学层描述的是**感知摩擦放大（μ_expect偏差）**，两者处于不同描述层次——SRT不否认道德责任存在（见§7.2），但将其建立在神经参数校准可能性的前提上。
+
 **传统道德**: 懒惰是意志薄弱、道德败坏。
 
-**SRT 诊断**: 腹侧纹状体中 $\mu_{expect}$ 参数偏差。
+**SRT 诊断**: vmPFC-前扣带回-腹侧纹状体回路中 $\mu_{expect}$ 参数偏差（腹侧纹状体是关键节点之一，但非唯一——奖励预测误差/努力分配涉及上述整个回路）。
 
 $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual}$$
 
-**健康**: $\mu_{expect} \approx 1$ (真实感知)  
-**懒惰**: $\mu_{expect} > 1$ (夸大摩擦)  
-**抑郁**: $\mu_{expect} \to \infty$ (无限摩擦感)
+**健康**: $\mu_{expect} \approx 1$（真实感知）
+**亚临床努力回避**: $\mu_{expect} \in (1, 3]$（系统性夸大，仍可代偿）
+**临床障碍（重度抑郁/精神运动迟滞）**: $\mu_{expect} \gg 1$（严重夸大，行动发起几乎不可能）
+**极限**: $\mu_{expect} \to \infty$（无限摩擦感，对应紧张症/严重木僵）
 
-**推论**: 抑郁症患者的"不作为"不是道德缺陷，而是神经化学故障。
+**推论**: 抑郁症患者的"不作为"不是道德缺陷，而是神经回路参数偏差导致的感知摩擦失准——本体论摩擦未变，但内部"价格信号"被系统性高估。
+
+* **R/H 区分**：
+  - [R] 抑郁/努力意愿降低的神经化学基础（纹状体多巴胺/vmPFC-ACC回路）——Treadway/Salamone/Gold均为实证支持
+  - [H] **SRT解读**：将努力意愿降低形式化为 $\mu_{expect}$ 放大系数，并联结到 $\Psi_f$ 框架——μ_expect的精确公式形式（乘法放大）是SRT参数化提案，非直接实证
+
+* **操作化候选**（$\mu_{expect}$ 偏差的可测代理）：
+  - EEfRT（Effort Expenditure for Rewards Task）：在等期望价值条件下，被试选择高努力选项的比率（控制组 > 抑郁组，高μ_expect预测低努力选择率）
+  - 主观努力评分（10分制）与客观代谢消耗（心率/EMG）的比值：μ_expect偏高表现为主观/客观比值显著>1
+  - fMRI：任务执行前（预期期）vmPFC激活与后续努力行为的相关性（Treadway范式的神经代理）
+
+* **可证伪预测**：
+  - FC-Lazy1-1：在EEfRT任务中，抑郁诊断组（PHQ-9≥15）选择高努力奖励的比率应显著低于对照组（预测：效应量d>0.6，即Treadway 2012结果可在独立样本复制）；若两组无差异则μ_expect的抑郁特异性主张受损
+  - FC-Lazy1-2：如果通过药理学手段（多巴胺前体L-DOPA）提升纹状体多巴胺，μ_expect感知摩擦应部分降低——即同等客观任务难度下主观努力评分下降；若L-DOPA无效则纹状体多巴胺→μ_expect联结失败
 
 ---
 
