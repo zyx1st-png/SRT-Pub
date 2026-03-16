@@ -183,17 +183,17 @@ $$ \mathcal{L}_{gap} = \dim(L_1^{qualia}) - \dim(L_2^{language}) > 0 $$
 
 ### §3.2 悖论边界定理 (Boundary Paradox Theorem)
 
-**Theorem T-Phil-2: Boundary Paradox Theorem**
+**Theorem T-Phil-2: Boundary Paradox Theorem** *(R: 对 Zeno/Liar Paradox/Russell 等已有悖论的 SRT 层级诊断)*
 
 哲学史上的经典悖论并非客观物理世界的内生矛盾，而是算子 $\hat{G}_\theta$ 在进行跨域映射或构建符号网络时发生的**拓扑故障（Topological Faults）**。其本质是工具粒度与本体论层级的错配：
 $$
 \text{Unstratified}(L_2 \circlearrowleft L_2)
 \;\lor\;
-\text{Mismatch}(L_1 \not\cong L_0)
+\text{ForcedEquation}(L_1^{discrete} \equiv L_0^{continuous})
 \quad \Rightarrow \quad
 \text{Paradoxical Oscillation}
 $$
-*(注：未分层的 $L_2$ 自指，或用 $L_1$ 的离散逻辑强行等价 $L_0$ 的连续潜能，将必然导致系统的逻辑震荡或认知幻觉。)*
+*(注："ForcedEquation"取代原"Mismatch(L₁ ≇ L₀)"——问题不是两者不同构（这是正常的），而是被**强行等同**：试图用 L₁ 的离散工具完全覆盖 L₀ 的连续潜能，形成非法的"等价"声称。)*
 
 **Case Studies (分类诊断)**：
 
@@ -207,7 +207,9 @@ $$
 
 **【理论边界/防误用声明】**
 1. **"安全自指"的区分**：本定理**不**主张"任何 $L_2$ 的自我指涉都会导致悖论"。只要引入**严格的元层级分层（Stratification）**——例如塔斯基的对象语言与元语言区分、哥德尔配数法，或引入时间延迟（如 $L_2(t)$ 指涉 $L_2(t-1)$）——系统就不会陷入悖论死循环，而是表现为正常的系统迭代或证明其不完备性。悖论的唯一物理根源是"扁平化（Unstratified）的拓扑短路"。
-2. **消解而非证明**：SRT 并不"解决"这些悖论，而是通过指出其跨域语法的非法性来"消解（dissolve）"它们。
+2. **消解而非证明**：SRT 并不"解决"这些悖论，而是通过指出其跨域语法的非法性来"消解（dissolve）"它们。消解机制：识别到操作使用了非法跨层等同或未分层自指后，问题本身失去合法性——不是找到悖论的"出路"，而是发现问题根本不是合法的问题形式。
+
+3. **正向合法自指案例**：元认知（"我意识到我的 $\theta$ 正在更新"）是安全的多层自指——外层叙事在 $L_2'$（元语言）中操作，指涉内层 $L_2$（当前认知结构），形成分层而非扁平的递归；等价于哥德尔配数法将语法表述为数字后跨层外指的结构。
 
 ### §3.3 礼物相位定理 (Phase Theorem of the Gift)
 <!-- ORIGINAL-SECTION-PRESERVED -->
