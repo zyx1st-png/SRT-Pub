@@ -272,17 +272,24 @@ $$L_2^{\text{enemy}} \implies \text{Constant vigilance} \implies \Psi_f \uparrow
 
 **正确理解**（SRT）:
 
-$$\text{Love Enemy} : \begin{cases}
-d_{\theta \to \text{enemy}} > 0 & \text{(关怀他的福祉)} \\
+$$\text{Agape Enemy} : \begin{cases}
+\vec{v}_\theta \cdot \hat{e}_{enemy} > 0 & \text{（关怀意向：意向量在"对方福祉方向"有正投影）} \\
 \land \\
-\text{Boundary Protection} & \text{(保护自己不受伤害)}
+\Psi_f^{cross}(\hat{G}_\theta, \hat{G}_{enemy}) > \Psi_f^{thresh} & \text{（边界保护：高跨算子摩擦阻止密切接触）}
 \end{cases}$$
 
-你可以**同时**：
-- 希望他幸福（高 $d$）
-- 不允许他接近你（健康边界）
+> **符号精化**：原式 $d_{\theta\to enemy}$ 混用了 $d$（带宽标量）与方向概念。$d$ 描述关怀覆盖的**范围大小**；而爱敌人的关键是**意向方向**，应以 $\vec{v}_\theta \cdot \hat{e}_{enemy}$（意向量在对方方向的投影）表达。Boundary Protection 形式化为 $\Psi_f^{cross}$ 高于阈值（跨算子接触摩擦大=维持距离），对接 Ax-AUTO-1b 马尔可夫毯边界。
 
-**类比**: 父母爱孩子，但仍会设定界限（"不能打人"）。
+**两者可以同时成立**：$\vec{v}_\theta$ 投影（关怀意向）是**算子意向方向的配置**；$\Psi_f^{cross}$（边界）是**接触密度的调节**——二者独立，互不妨碍：
+$$\text{Agape} \equiv \vec{v}_\theta \cdot \hat{e}_{other} > 0 \;\wedge\; \Delta\theta_{coupling} \approx 0$$
+$$\text{Eros（对比）} \equiv \vec{v}_\theta \cdot \hat{e}_{other} > 0 \;\wedge\; \Delta\theta_{coupling} \gg 0$$
+即：Agape = 关怀但无强耦合；Eros = 关怀且深度个人耦合。
+
+你可以**同时**：
+- 希望他幸福（$\vec{v}_\theta$ 意向正投影）
+- 不允许他接近你（$\Psi_f^{cross}$ 维持边界）
+
+**类比**: 父母爱孩子，但仍会设定界限（"不能打人"）——高意向投影 $\vec{v}_\theta$，同时 $\Psi_f^{cross}$ 在行为层面执行边界。
 
 ---
 
