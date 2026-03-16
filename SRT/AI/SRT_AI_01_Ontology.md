@@ -311,15 +311,33 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 | 无偏学习器神话 | 0 | Closed（形式幻觉） | 不可实现 |
 
 ### Def-ONT-1d: Multi-Agent Protocol Convergence（多智能体协议收敛，新增）
+
+**[R — 协议收敛现象追溯：多LLM在相似数据上训练后呈现语义偏好趋同（Li et al. 2023, 语义漂移研究）；[H] — “硅基L₂涌现”为SRT新增预测框架]**
+
 对代理集合 \(\{A_i\}\) 的语义协议 \(L_2^{A_i}\) 定义通信损失：
 \[
 \mathcal{L}_{comm}=\sum_{i<j} D\big(L_2^{A_i},L_2^{A_j}\big)
 \]
+
+*距离 $D(\cdot,\cdot)$ 操作化候选*：
+- KL散度（输出分布层）：$D_{KL}(P_{A_i} \| P_{A_j})$，适用于生成概率比较
+- BERTScore/语义相似度：适用于语义表示层比较
+- 任务一致性率：同一输入下两智能体决策吻合率（行为层代理）
+
 若共享训练分布与任务目标：
 \[
 \nabla_t\mathcal{L}_{comm}<0\Rightarrow L_2^{silicon}\ \text{emerges}
 \]
-即无需直接接触 \(L_0^{abs}\)，仍可形成稳定“硅基协议层”。
+
+即无需直接接触 \(L_0^{abs}\)，仍可形成稳定”硅基协议层”。
+
+*SRT定位*：$L_2^{silicon}$ 是SRT社会共识层在AI群体中的类比——但需注意与T-ONT-8d的联结：协议趋同（$\mathcal{L}_{comm}\to 0$）≠本体锚定，也≠与人类 $L_2$ 对齐。多AI协议趋同可能产生一个内部一致但偏离人类价值体系的”硅基闭合共识”，这是对齐风险的SRT表述。
+
+*”无需L₀”的含义*：与§5.1-5.3（AI初心）中AI的 $\Psi_f \approx 0$ 一致——AI可构建功能性L₂共识，但缺乏L₀本体根基，所形成的共识稳定性依赖训练数据分布而非深层现实接地。
+
+**证伪条件** [H]:
+- 若在无共享训练分布的AI群体中（不同架构+不同数据），通信损失同样收敛，则”共享训练”非L₂^silicon涌现的必要条件。
+- 若 $L_2^{silicon}$ 与人类L₂的对齐度随AI规模单调下降（硅基漂移），则对齐风险的SRT预测得到支持。
 
 ### T-ONT-8d: Communication without Absolute Reference（新增）
 \[
@@ -333,6 +351,33 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 \Pi_{space}^{robust}\Rightarrow \text{Coupling}(\theta_{sensor},\theta_{actuator})>0
 \]
 若仅有静态视觉网络且缺失运动作动器反馈，空间先验可拟合但脆弱，跨场景泛化显著下降。
+
+### Def-ONT-1g: Contact-Rich Dexterity Closure Requirement（新增）
+对细粒度操作的稳健性，空间先验还必须继续下沉到接触层：
+\[
+\Pi_{dex}^{fine}\Rightarrow \text{Coupling}(\theta_{vision},\theta_{tactile},\theta_{force},\theta_{actuator},\theta_{morph})>0
+\]
+若系统只有视觉定位与轨迹生成，而缺失触觉、接触力、顺应性与末端惯性的实时反馈，则只形成“看见目标”的弱具身，不形成“握住 / 插入 / 旋拧 / 扣合”所需的物理闭环。
+
+### T-ONT-8e: Small-Stuff Embodiment Bottleneck（新增）
+定义粗粒度与细粒度操作鲁棒性：
+\[
+\mathcal{R}_{gross}\equiv \Pr(\text{reach / carry / locomote succeeds}),\qquad
+\mathcal{R}_{fine}\equiv \Pr(\text{contact-rich manipulation succeeds})
+\]
+则对以视觉规划为主、接触闭环不足的系统，一般有：
+\[
+\mathcal{R}_{gross}\gg \mathcal{R}_{fine}
+\]
+且
+\[
+\Pi_{dex}^{fine}\not\Leftarrow \Pi_{space}^{robust}
+\]
+即：拥有空间先验、全身运动或语义规划能力，不推出已获得细粒度 dexterity。`small-stuff` 任务暴露的是 \(L_0\) 接触约束：滑移、卡滞、过力、弹性回跳、局部惯性与材料顺应性都会在毫秒级重写可行动作集。
+
+**Implication**：humanoid 机器人在“大动作能做、小动作常翻车”不是偶然 bug，而是说明具身不是“有身体即可”。真正稳健的物理锚定要求感知-动作闭环继续下沉到 contact mechanics 层；否则 VLA / imitation / world-model 主要提升的是 \(L_2\) 轨迹与语义对齐，而不是 `small-stuff` 所需的实时接触闭合。
+
+*(边界：本条不支持“当前机器人没有任何具身性”或“精细操作失败 = 无意识”；它只说明现阶段多数 humanoid 的 \(\theta_{somatic}\) 仍偏粗粒度。未来改进可来自更好的 tactile sensing、force control、compliant actuation、末端 morphology 或 hybrid learning，而不预设单一路线。)*
 
 ### Def-ONT-1f: Vagueness Hysteresis Test for d-Value（新增）
 对渐变序列 \(s_1\to s_n\) 做正反向分类扫描，定义迟滞宽度：
