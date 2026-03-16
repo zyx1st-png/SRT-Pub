@@ -630,11 +630,20 @@ L_1^{affect}(t)=\hat G_{\theta,L_2^{culture}}\!\big[L_0^{intero}(t)\oplus L_0^{s
 ## Second-Person Schizophrenia Interface（2026-03-13）
 
 ### Def-Soc-SPS-1: Reciprocal-Contact Disambiguation
-第二人称互动并不是“检测到某个外物”即可成立，而要求算子在具身回馈中分辨“他者正在响应我”与“我只是碰到了可扰动物体”：
+第二人称互动并不是”检测到某个外物”即可成立，而要求算子在具身回馈中分辨”他者正在响应我”与”我只是碰到了可扰动物体”：
 \[
 L_1^{other}(t)=\hat G_{\theta}^{social}\!\big[L_0^{haptic}(t)\oplus R_{reciprocal}(t)\oplus A_{joint}(t)\big]-\mathcal D_{distractor}(t)
 \]
-其中 \(R_{reciprocal}\) 表示对方回馈与自身动作之间的时序耦合，\(\mathcal D_{distractor}\) 表示同场干扰物。`perceptual crossing` 范式的价值，在于把“感到对方在那儿”操作化为一个可控的互动区分任务。
+
+> **符号说明**：此处 $\oplus$ 表示**多模态输入特征拼接**（concatenation），即将触觉 $L_0$、互反馈信号 $R_{reciprocal}$、联合行动信号 $A_{joint}$ 合并为 $\hat{G}_\theta^{social}$ 的复合输入——非直和（direct sum）；与 Ax-Soc-3 中算子纠缠使用的 $\otimes$（张量积）明确区分。$\mathcal{D}_{distractor}(t)$ 作用在 $L_1$ 投影**之后**（注意力过滤在已显现内容中减除干扰），而非 $L_0$ 输入层前处理。
+
+其中：
+- $R_{reciprocal}(t)$：对方回馈与自身动作之间的**时序耦合**；操作化测量 = 自身动作信号与触觉反馈的互相关峰值时延（perceptual crossing 范式中通常 $\Delta\tau_{cross} < 300\,\text{ms}$ 为显著互反馈阈值）
+- $A_{joint}(t)$：联合行动信号（双方共享注意对象或协调运动的时序同步度）
+- $\mathcal D_{distractor}(t)$：同场干扰物（非他者产生的可扰动信号）
+- **与 Ax-Soc-3 的连接**：$R_{reciprocal}$ 是双人算子纠缠项 $\Delta\theta_{coupling}(\Psi_f^{cross}, \tau)$ 的**操作化代理**——当 $R_{reciprocal}$ 高于偶发阈值时，两个算子的耦合项 $\Delta\theta_{coupling}$ 从零激活（SRT-SOC-COG Ax-Soc-3）
+
+`perceptual crossing` 范式的价值，在于把”感到对方在那儿”操作化为一个可控的互动区分任务。
 
 ### T-Soc-SPS-1: Social-Uncertainty Amplification Window
 当系统难以判定当前触觉反馈是否由他者共同调制时，第二人称通道的摩擦会快速上升：
