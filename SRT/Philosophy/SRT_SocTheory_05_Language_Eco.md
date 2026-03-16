@@ -372,21 +372,27 @@ $$M_{abstract} = \bigcup_{i=1}^{N} \phi_i(M_{body}^{(i)})$$
 
 ---
 
-### 3.2 SRT 形式化
+### 3.2 SRT 形式化 *(R: 生物学事实为 Retrodiction；dθ/dt 操作化为 SRT 应用贡献)*
 
-**幼态持续定义**:
+**幼态持续定义**（可塑性保持版本）:
 
-$$\text{Neoteny} \equiv \forall t > t_{maturity}, \left|\frac{d\theta}{dt}\right| > \epsilon > 0$$
+$$\text{Neoteny} \equiv \forall t > t_{maturity},\ \frac{\partial\theta}{\partial PE} > 0$$
+
+（其中 $PE$ 为预测误差；含义：成年后 $\theta$ 对新经验仍保持敏感，可更新性不丧失。）
+
+> **区分**：①**可塑性保持**（$\partial\theta/\partial PE > 0$，θ能被经验改变）≠ ②**积极探索**（$d\theta/dt$ 主动指向 $L_0$ 新区域）。|dθ/dt| > ε > 0 是更粗糙的版本，但包含创伤导致的负向 θ 变化；精确定义应使用可塑性保持版本。
 
 **非幼态对比**:
 
-$$\text{Maturation} : \lim_{t \to \infty} \frac{d\theta}{dt} = 0$$
+$$\text{Maturation} : \frac{\partial\theta}{\partial PE} \to 0 \quad (t \to \infty)$$
 
-**d 值积累公式**:
+**d 值积累公式**（发育期初始积累阶段）:
 
-$$d_{adult} = \int_0^{T_{dev}} \alpha(t) \cdot L_2^{exposure}(t) \, dt$$
+$$d_{adult,0} = \int_0^{T_{dev}} \alpha(t) \cdot L_2^{exposure}(t) \, dt$$
 
-人类 $T_{dev} \approx 20$ 年 vs 黑猩猩 $T_{dev} \approx 8$ 年 → $d_{human} \gg d_{chimp}$
+（$\alpha(t)$：年龄相关学习效率权重，峰值在发育敏感期，操作化待进一步定义。此积分仅描述 $T_{dev}$ 内的 d 值初始积累；幼态持续的持续效应——$T_{dev}$ 之后的 $\partial\theta/\partial PE > 0$ 保持——需另行建模。）
+
+人类 $T_{dev} \approx 20$ 年 vs 黑猩猩 $T_{dev} \approx 8$ 年（约估，来源：人类发育生物学文献）→ $d_{adult,0}^{human} \gg d_{adult,0}^{chimp}$
 
 ---
 
