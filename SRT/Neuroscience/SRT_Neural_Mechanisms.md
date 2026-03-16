@@ -665,12 +665,35 @@ $$d \propto \frac{1}{\text{Quantum Fuzziness}}$$
 
 ### 8.4 语义断层与非线性放大（Irreducible Semantic Gap）
 
+> [R→Thom 1972 *Structural Stability and Morphogenesis*（突变论：临界流形附近系统轨迹的分歧与非连续性——Jacobian奇异点处的”语义跃迁”数学基础）; Scheffer et al. 2009 *Nature*（复杂系统临界跃迁先兆：临近临界点时方差↑/自相关↑/恢复速率↓——“临界慢化”）; Olthof et al. 2020 *Complexity*（临床心理治疗的非线性动力学：个体情绪时间序列的早期预警信号预测疗效突破点）; Friston et al. 2012 *NeuroImage*（自由能框架中的”相变”与预测误差非线性传播）]
+
+**SRT定义——语义断层（Irreducible Semantic Gap）**：
+
+θ参数空间中存在临界集 $\mathcal{C}$，使得 $f: \theta \mapsto L_1$ 的Jacobian范数在 $\mathcal{C}$ 附近爆炸。临界集两侧任意相邻的θ值所对应的L₁体验，可以是质性（而非量性）不同的——这种不可消除的映射不连续性即为**语义断层**：
+
 \[
 L_1 = f(\theta) + \epsilon,\quad
 \text{near critical set }\mathcal{C}:\; \left\|\frac{\partial f}{\partial \theta}\right\|\gg1
 \]
 
-* **Implication（中文）**：临床“同靶点异反应”不是噪声，而可能是系统处在临界集附近的非线性放大。
+> **精度说明**：$f(\theta)$ 假设为逐段光滑（piecewise smooth）映射；$\mathcal{C}$ 是f的奇异流形（在θ空间中通常为余维1的超曲面）；$\epsilon$ 为不可消除的L₀本体论噪声，与θ无关。
+
+> **与κ_c2联结**：$\mathcal{C}$ 对应SRT的稳定化临界集（κ_c2超曲面）——θ参数从κ < κ_c2侧越过κ_c2时，$\|\partial f/\partial\theta\|$ 爆炸，L₁体验发生相变。此联结将突变论的数学奇点与SRT的本体论临界值统一（Cross-ref: `Core/SRT_Core_14_Dynamics_Scaling.md` §T-Scale-CF-1）。
+
+* **R/H 区分**：
+  - [R] 临界集附近Jacobian爆炸的数学基础（Thom突变论）；临界慢化的实证检测方法（Scheffer/Olthof）
+  - [H] **SRT特有**：将临床”同靶点异反应”归因于θ参数相对于 $\mathcal{C}$ 的位置——同一靶点的不同响应 = 两名患者的θ分别位于 $\mathcal{C}$ 两侧（非噪声差异，而是拓扑位置差异）
+
+* **Implication（中文）**：临床”同靶点异反应”不是噪声，而可能是系统处在临界集附近的非线性放大——θ的微小个体差异在 $\mathcal{C}$ 附近被放大为L₁层的质性反应差异。
+
+* **操作化候选**（检测系统是否处于临界集附近）：
+  - 时间序列方差：同一被试在治疗前的情绪/症状评分的滚动方差——临界集附近预测方差↑（Olthof 2020范式）
+  - 自相关系数（lag-1）：临近临界点时自相关↑（慢化：系统恢复到均衡态变慢）
+  - 药物剂量-反应曲线非线性度：同一患者不同剂量的非线性剂量-反应关系（S形 vs 线性区分临界附近vs远离）
+
+* **可证伪预测**：
+  - FC-SemGap-1：在SSRI治疗前，相对治疗响应者（症状大幅改善）的情绪时间序列滚动方差，应在治疗前1-4周内显著高于无响应者（临界慢化在响应前先出现）；若治疗前两组方差无差异则临界集附近假说失败
+  - FC-SemGap-2：如果将患者按照基线θ代理（如认知灵活性/体感敏感度）分层，高灵活性（θ远离κ_c2）组应表现出更线性的剂量-反应关系；低灵活性（θ接近κ_c2）组应表现出更非线性/阈值式的反应——若两组剂量-反应曲线形状无差异则θ位置决定非线性的主张失败
 
 ## 9 早期意识与共具身机制扩展（Neuroscience of Consciousness 对齐新增）
 
