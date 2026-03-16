@@ -1637,23 +1637,32 @@ $$\text{Categorization}_t(X) = \hat{G}_\theta[L_0 \mid R_X] \quad (\theta\text{-
 2. **「可错分类但语义不崩」**：单次分类错误（如把铜认作黄金）是单个算子偏离 $L_2$ 势阱底部的高自由能涨落。只要涨落能量无法克服集体自由能景观的拓扑壁垒 $|\text{Hess}(\mathcal{F}_{coll})|$，系统就会被社会纠错机制（他人纠正、感知反馈）立即拉回谷底，$L_2$ 语义结构不受影响。现实的「语义刚性」= 势阱曲率，而非每次应用的正确率（参见 SRT_Core_12b::社会迟滞与共识摩擦）。
 
 ### Def-Phil-CON-3: Ad-hoc Concept Construction Window
+
+[R→Barsalou 1983（ad-hoc概念的原始研究：目标导向的临时概念）; Shea 2026（《Concepts》：hybridism与generality constraint）] [H→SRT将ad-hoc构造形式化为目标驱动的L₀→L₁投影重组]
+
 概念可在情境中临时组装（ad-hoc）以满足当前目标：
 \[
 R_{adhoc}=\mathcal{C}(R_{i_1},R_{i_2},...,Goal_t,Context_t)
 \]
-如“garage-sale items”一类任务特定概念，体现 SRT 的目标驱动结构压缩能力。
+如”garage-sale items”一类任务特定概念，体现 SRT 的目标驱动结构压缩能力。
+- **SRT解读**：ad-hoc概念 = $\hat{G}_θ$ 在当前 Goal_t 约束下将多个L₂概念节点临时合并为新的L₁锚点；”临时性”体现在θ的短暂激活模式，而非θ结构的永久改变
 
 ### 分类映射表（Concept Processing Regimes → SRT）
-| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
-|---|---|---|---|
-| 规则/定义主导分类 | 中~高 | Semi-open（显式运算） | 中负载 |
-| 原型/样例快速分类 | 中 | Open↔Semi-open（并行启发） | 低~中负载 |
-| 理论驱动概念推理 | 中高 | Open（结构推演） | 中~高负载可支付 |
-| 情境即席概念构造 | 中~高 | Open（目标约束重组） | 边缘高负载但高收益 |
+
+[R→Smith & Medin 1981（经典规则理论）; Rosch 1978（原型理论）; Murphy & Medin 1985（理论驱动分类）; Barsalou 1983（ad-hoc概念）] [H→以SRT三变量（d值/能流/Ψ_f）重映射四种概念加工模式]
+
+| 外部分类（认知科学） | d-value 区间（proxy，示意） | 能流特征 | \(\Psi_f\) 状态 | 代表文献 |
+|---|---|---|---|---|
+| 规则/定义主导分类 [R] | 中~高（需要主动推理） | Semi-open（显式运算） | 中负载 | Smith & Medin 1981 |
+| 原型/样例快速分类 [R] | 中（并行相似度计算） | Open↔Semi-open（并行启发） | 低~中负载 | Rosch 1978 |
+| 理论驱动概念推理 [R] | 中高（结构推演需要关切带宽） | Open（结构推演） | 中~高负载可支付 | Murphy & Medin 1985 |
+| 情境即席概念构造 [R→Barsalou 1983] [H→SRT形式化] | 中~高（目标驱动激活） | Open（目标约束重组） | 边缘高负载但高收益 | Barsalou 1983; Shea 2026 |
+
+**证伪候选**：若原型分类（快速启发）和规则分类（显式推理）在d值代理（注意力带宽）上无可区分差异，则SRT以d值轴区分四种模式的框架需重新操作化。
 
 ### [Lineage/Source]
-- Nicholas Shea (2026), *Concepts*.
-- 关键脉络：generality constraint、hybridism、externalism、ad-hoc concepts、concept/conception 区分。
+- [R→Nicholas Shea (2026), *Concepts*]：generality constraint（概念须跨实例泛化）、hybridism（多机制并存而非单一理论）、externalism（概念内容部分由外部世界决定）、ad-hoc concepts（目标驱动的即席构造）、concept/conception区分
+- **SRT附加**[H]：将Shea的hybridism解读为θ参数化的多模式加工（不同θ→不同概念加工主导模式）；concept/conception区分对应L₂共享指称vs L₁个体展开（参见lines 1634-1637）
 
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
