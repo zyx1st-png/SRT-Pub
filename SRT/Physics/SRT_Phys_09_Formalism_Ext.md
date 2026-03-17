@@ -1134,7 +1134,13 @@ N\to\infty,\quad g>g_c
 - Ludo Fraser-Taliente (2026), *Quantum field theories with many fields*（博士论文语境）。
 - 关键术语：large-N QFT, melonic models, SYK family, F-extremization, IR CFT effective simplicity.
 
+> **[R]** Large-N QFT核心文献：Sachdev & Ye 1993 *Physical Review Letters*（SYK模型原始提案：N个无序耦合费米子，N→∞可解）；Kitaev 2015（KITP讲义，SYK模型量子混沌与AdS/CFT联结，现代SYK复兴关键来源）；Jafferis 2011 *Journal of High Energy Physics*（F-extremization：三维CFT中自由能极值化确定红外不动点，R参照）；Fraser-Taliente 2026（博士论文，综合large-N/melonic/SYK的当代系统处理）。**[H]** 以下SRT新增贡献：①将F-extremization类比为”受约束选择多样性最大化”（ℓmax V_eff s.t. Ψ_f payable）；②将N→∞平均化效应映射到集体算子与个体θ的双尺度框架；③提供”渐近基准vs微观主导”的切换判准（有限N/弱耦合窗口）。
+>
+> **”渐近基准”精化**：Large-N可解性是N→∞极限下的数学结论，对有限N系统（生物神经网络N~10¹¹、社会组织N~10²-10⁶）提供方向性预测而非精确值；类似热力学极限对有限粒子系统的适用方式——在临界行为附近（N足够大、耦合g>g_c时）有效，偏离极限时需校正。
+>
+> **个体d回落机制**（映射表最后一行）：极端平均化情形下个体θ的特异偏置被强耦合压制（Var(θ_i)↓），导致新信息搜索空间收窄（d值下降）；这等同于L₂过度硬化对Ĝ_θ多样性的抑制（cf. Ax-L2-03硬度）。
+
 ## 【理论边界/防误用声明】
-1. 不采纳“large-N 可解性可直接外推到有限 N 实体系统”的推论；该接口首先是渐近基准。  
-2. 不采纳“极值化描述 = 个体算子永远无关”的推论；有限尺度与弱耦合窗口仍需 \(\hat G_\theta\) 微观动力学。  
-3. 不采纳“自由度最大化可脱离约束与支付条件”的推论；SRT 只承认受 \(\mathcal C\) 与 \(\Psi_f\) 约束的有效多样性提升。
+1. 不采纳”large-N 可解性可直接外推到有限 N 实体系统”的推论；该接口首先是渐近基准（见上）。
+2. 不采纳”极值化描述 = 个体算子永远无关”的推论；有限尺度与弱耦合窗口仍需 \(\hat G_\theta\) 微观动力学。
+3. 不采纳”自由度最大化可脱离约束与支付条件”的推论；SRT 只承认受 \(\mathcal C\) 与 \(\Psi_f\) 约束的有效多样性提升。
