@@ -35,8 +35,11 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ### Def-Ephaptic-Binding: Ephaptic Field Coupling as Operator Glue (突触外场耦合作为算子粘合剂)
 **Formal Definition**: 神经元之间的电场反向反馈 (ephaptic coupling) 提供了使 $\hat{G}_\theta$ 免于解离为数十亿个离散微算子的物理拓扑粘合剂：
 $$\nabla \cdot \vec{E} = \frac{\rho}{\epsilon_0} \quad \implies \quad \kappa_{sync} \propto \int |\vec{E}_{LFP}|^2 dV$$
-* **Implication**: 如果大脑仅仅是由化学突触组成的电线网络，它将是一个群体社会，而不是一个统一体验者。SRT 主张，低频局部场电位 (LFP) 产生的微弱但全局的电场不是附带现象的“废气”，它们是**维持复合算子拓扑完整性的引力**。关闭场耦合，意识就会像切断连接的分布式服务器一样碎片化。
-* **Cross-ref**: Ax-Fed-01 (躯体算子联邦)。
+* **Implication**: 如果大脑仅仅是由化学突触组成的电线网络，它将是一个群体社会，而不是一个统一体验者。SRT 主张，低频LFP产生的微弱但全局的电场是**维持复合算子拓扑完整性的引力**。关闭场耦合，意识就会像切断连接的分布式服务器一样碎片化。
+
+> **[R]** 突触外场耦合实验证据：Fröhlich & McCormick 2010 *Neuron*（内源性皮层电场正向反馈调制神经元放电：0.5-1 mV/mm弱电场可影响同步，R物理基线）；Anastassiou et al. 2011 *Nature Neuroscience*（皮层锥体神经元ephaptic coupling：细胞外电场通过电容耦合改变胞膜电位±0.5mV，独立于突触传递，R关键实验）。**[H]** κ_sync∝∫|E_LFP|²dV作为Ĝ_θ拓扑完整性代理、及"场耦合失效=意识碎片化"的功能预测为本框架新增贡献；∝为功能类比（单调正相关），具体函数形式依皮层区域和频段而异。
+>
+> * **Cross-ref**: Ax-Fed-01（躯体算子联邦）；H-Field-1（选择性阻断互噬触→绑定破裂，共享实验接口）；T-FIELD-2（嵌套算子定理，本定义机制延伸）。
 
 ---
 
