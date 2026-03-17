@@ -1262,3 +1262,7 @@ d \ge d_{indiv}\Rightarrow \Psi_f \text{ internalizes as individual suffering lo
 ### [Lineage/Source]
 - Ramanujan 认知机制讨论语境（2026）
 - 枚举组合学可视化传统（Viennot 语境）
+
+> **[R]** 溯源说明：本节T-Scale-Cap-1（低摩擦同构定理）的直接灵感来源于以下两个传统：
+> - **Ramanujan认知机制**：Kanigel 1991 *The Man Who Knew Infinity*（Ramanujan传记：其数学直觉=视觉/感知模式而非形式符号，对数论模式的Ψ_f极低，Hardy评价为"未经训练的直觉"实为不同协议Π_vis的极端案例）；Hardy 1940 *A Mathematician's Apology*（"Ramanujan从未被教导，他是发现者而非学习者"，R认知风格基线）。在T-Scale-Cap-1框架下：Ramanujan的天才=Π_vis（视觉/模式协议）与其θ的高度对齐，使特定数学对象的Ψ_f(X|Π_vis,θ)远低于标准形式符号协议Ψ_f(X|Π_sym,θ)。
+> - **Viennot可视化传统**：Viennot 1986 *Heaps of Pieces*（堆积件法：将代数/组合恒等式可视化为几何堆积，RSK对应的直观化，R方法论传统）——即T-Scale-Cap-1中"拓扑/视觉协议"的具体实例：相同组合结构在Viennot可视化下Ψ_f显著低于纯代数符号处理。
