@@ -864,6 +864,12 @@ $$\Delta H_{social} \mid \mathcal{R}_{rit} < 0$$
 \]
 对应“风险/转折/创伤节点仪式密度增加”的经验规律。
 
+**SRT机制**：不确定性=L₁状态波动↑+L₂锚定有效性↓→Ψ_f负担增加；仪式=L₂的节律性重激活，在高Ψ_f背景下边际降摩擦效益被放大（低不确定时L₂已稳定，仪式增益≈0；高不确定时L₂面临解体压力，仪式重锚定边际效益∝Ψ_f水平）。三分量操作化：①Anxiety↓=STAI前后差值；②Cohesion↑=同伴信任博弈合作率；③Norm compliance↑=后续规范违反频率↓。
+
+> **[R]** 不确定性与仪式实证：Keinan 1994 *Journal of Personality and Social Psychology*（Scud导弹威胁下以色列居民迷信行为↑，不确定性→仪式化行为的控制实验，R基线）；Whitehouse 2004 *Modes of Religiosity*（高觉醒/低频率的"想象模式"仪式在创伤/危机节点密度↑，R框架）；Legare & Souza 2012 *Psychological Science*（仪式因果不透明不减少感知效力，不确定条件下效力信念↑，R补充）。**[H]** 不确定性→Ψ_f↑→仪式边际效益放大的SRT机制链及三分量操作化为本框架新增贡献。
+>
+> * **FC-RIT1-1**（证伪条件）：若在预注册实验中，高vs低不确定性诱导后，执行仪式vs不执行仪式的STAI差值无不确定性×仪式交互效应（F<1，p>0.1），则∂Gain_rit/∂U>0的单调预测被证伪，需检视不确定性类型或仪式类型的调节效应。
+
 ### T-L2-RIT-2: Causal Opacity and Cultural Retention Window
 因果不透明并不削弱传承，反而在“高共享+高情感+节律重复”条件下提高保留概率：
 \[
