@@ -178,6 +178,12 @@ $$\begin{cases}
 \text{Music} : L_0^{\text{time}} \to L_1^{\text{structured time}}
 \end{cases}$$
 
+> **[R]** 文献锚点：Goethe（原句出处一说为Friedrich von Schlegel 1798 *Athenäums-Fragmente*，常归Goethe为二手引用，R文本需注意归属不确定性）；Langer 1953 *Feeling and Form*（音乐=时间形式/虚拟时间的现象学定义，R基线）；Levitin 2006 *This Is Your Brain on Music*（音乐时间感的神经科学：期望-违反循环的神经基础，与选择算子的预测结构对应）。**[H]** L₀^time→L₁^structured time的SRT形式化（时间=串行选择更新的组织，cf. SRT宇宙学"时间=串行Ĝ_θ更新"）为本框架新增类比。
+>
+> **L₀^time含义精化**：时间的潜在域≈尚未被节奏/和声结构化的时间流（"无形态时间"）；音乐将其组织为有意义的时间单元（乐句/段落/终止）。与SRT宇宙学的联结：时间=串行的Ĝ_θ更新序列（cf. Physics/SRT_Physics_Cosmology.md §3.3），音乐强化/重组了该序列的感知密度，即改变了主观时间的dilation/compression效果。
+>
+> **类比认识论地位**：此处L₀→L₁公式为结构类比而非严格推导；建筑与音乐均是"对潜在可能性的选择性组织"这一SRT核心操作的特定领域实例，类比目的是揭示共同结构，非断言建筑/音乐事件满足选择算子的全部技术要求。
+
 ---
 
 ### §1.3 为何音乐如此普遍？
