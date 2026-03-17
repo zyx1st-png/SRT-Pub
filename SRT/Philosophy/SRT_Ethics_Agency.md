@@ -259,9 +259,16 @@ This challenges reductionism not by violating physical closure, but by showing t
 *   **Reason**: High $d$ means the organism's embodied $\hat{G}_\theta$ explores a broader possibility space before the brain's $L_2$ patterns (default heuristics, habitual responses) can lock in a selection. Higher functional connectivity entropy reflects weakened $L_2$ gating during deliberation.
 
 ### 5.2 Prediction 2: Energy Consumption of Free Will
-**Prediction**: True "free choice" (rewriting $\theta$) is accompanied by brain metabolic rate (glucose consumption) significantly higher than routine tasks, and this consumption is proportional to the subjectively reported "psychological resistance" (ontological friction $\Psi_f$).
+**Prediction**: True "free choice" (rewriting $\theta$) is accompanied by brain metabolic rate (glucose consumption) significantly higher than routine tasks, and this consumption is monotonically positively correlated with the subjectively reported "psychological resistance" (ontological friction $\Psi_f$).
+
+> **[R]** 自我控制与代谢代价：Hare et al. 2009 *Science*（vmPFC-dlPFC交互中自我控制任务的BOLD信号差异）；Heatherton & Wagner 2011 *Nature Reviews Neuroscience*（自我调节的神经回路综述）；Gailliot & Baumeister 2007 *Psychological Review*（自我调节与葡萄糖消耗的早期证据，后续争议见注）。**[H]** θ改写代价∝Ψ_f的联结及SRT"本体论摩擦具有物理可测性"主张为本框架新增预测。
+>
+> **精度说明**：∝关系此处为"单调正相关"（monotonically positive）而非严格线性比例——即Ψ_f越高、代谢增量越大，但权重函数形式未确定；Gailliot & Baumeister（2007）葡萄糖耗竭假说在后续复制中受到质疑（Hagger et al. 2016 meta-analysis，PLoS ONE），更稳健的测量应以BOLD信号差值或PET示踪葡萄糖摄取为主。
 
 *   **Falsification**: If the metabolic cost of changing habits is no different from executing habits, then $\Psi_f$ as a physical quantity does not exist, and SRT's responsibility dynamics is falsified.
+
+> * **FC-WillE-1**（证伪条件精化）：若在fMRI范式中，θ改写任务（如价值观冲突决策）vs. 习惯执行任务的BOLD信号差值（dlPFC/ACC ROI）在≥3项独立预注册研究中效应量Cohen's d < 0.2，则θ改写的神经代谢代价预测被证伪；需修正Ψ_f的物理可测性主张或缩小适用范围至主观报告层面。
+> * **FC-WillE-2**（证伪条件精化）：若主观Ψ_f评分（心理阻力量表，如ERQ情绪调节问卷的努力分量）与同期代谢指标（BOLD或葡萄糖PET摄取）的Pearson r < 0.2（控制任务难度后），则Ψ_f∝代谢的单调性假设不成立，需区分主观Ψ_f与客观代谢成本为两个独立构念。
 
 ### 5.3 Open Questions
 *   **Boundary**: Where is the physical limit of $d$-value? Does the hardware of the human brain constrain the maximum possible moral depth?
