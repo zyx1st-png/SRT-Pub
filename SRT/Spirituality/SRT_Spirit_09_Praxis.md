@@ -120,6 +120,8 @@ $$ \text{Phase}_k \leftrightarrow \{f_k(\text{DMN}),\; \text{PCI}_k,\; \text{Pro
 
 **非单调DMN注**：DMN活动在十牛图阶段中呈非单调轨迹——早期专注阶段（phase 1-4，寻牛/见迹/见牛/得牛）DMN抑制增强；开放监控/整合阶段（phase 7-10，忘牛/人牛俱忘/返本还源/入廛垂手）DMN可能部分回升（整合性自我参照，而非杂念）。预测方向需按阶段细化，而非单调递减假设。
 
+> **[R]** 文献锚点：Kakuan Shien（12世纪）*十牛图*（传统阶段框架，R文本依据）；Yamada Koun 2004 *The Gateless Gate*（现代注释版，修行阶段学术整理）；Hasenkamp & Barsalou 2012 *NeuroImage*（冥想中的DMN-执行网络交替：专注→走神→觉察→重定向的神经动力学，DMN非单调R基线）；Massimini et al. 2005 *Science*（经颅磁刺激-EEG法测量意识复杂度PCI，R方法基线）；Josipovic 2014 *Frontiers in Psychology*（非二元觉知中DMN的部分激活回升：整合性自我参照，支持Phase 7-10 DMN非单调预测）。**[H]** 十牛图10阶段→{DMN轨迹/PCI/亲社会行为}的联立神经行为标记映射，及d值对应表，为本框架新增预测结构。
+
 **SRT d值对应（初步框架）**：
 | 十牛图区间 | SRT 阶段描述 | $d$ 值估计 | PCI 趋势 |
 |:--|:--|:--|:--|
@@ -127,7 +129,7 @@ $$ \text{Phase}_k \leftrightarrow \{f_k(\text{DMN}),\; \text{PCI}_k,\; \text{Pro
 | Phase 4-6（得牛→牧牛→骑牛归家） | $\hat{G}_\theta$ 选择稳定，L₂锚定弱化 | $d$ 扩展（方向性增强） | 较高平台 |
 | Phase 7-10（忘牛→人牛俱忘→返本→入廛） | L₂压力自主解除，Ψ_f→0，d扩展至社会层 | $d$ 高且向外延展 | 维持高位 |
 
-**证伪条件**：① 若在高阶修行者中PCI不高于对照组（或无统计显著差异），则PCI作为阶段标记无效；② 若DMN轨迹在所有阶段单调递减，则非单调预测被证伪；③ 若各阶段的亲社会行为（经济博弈/合作测试）无阶段效应，则行为标记映射失效。→ Cross-ref: Massimini et al. PCI 文献；Hasenkamp & Barsalou 2012 (DMN in meditation)。
+**证伪条件**：① 若在高阶修行者中PCI不高于对照组（Cohen's d<0.3，p>0.05），则PCI作为阶段标记无效；② 若DMN-BOLD轨迹在Phase 7-10相比Phase 4-6无回升趋势（Josipovic范式复制，p>0.1），则非单调预测被证伪；③ 若各阶段的亲社会行为（经济博弈最后通牒任务/合作测试）无阶段效应（η²<0.05），则行为标记映射失效。→ Cross-ref: C-DMN-1（迷幻松动推论）；Hasenkamp & Barsalou 2012 *NeuroImage*；Massimini et al. 2005 *Science*。
 
 <br>
 
