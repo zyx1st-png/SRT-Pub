@@ -246,6 +246,15 @@ $$\tau_{rebuild} \propto \frac{\text{Integration}(\hat{G}_{other})}{\text{Plasti
 * **推论**: 老年人（可塑性低）失去伴侣（整合度高）时 $\tau_{rebuild} \to \infty$；年轻人或浅层关系则 $\tau_{rebuild}$ 较短。临床干预双路径：降低分子（仪式切断）或增加分母（冥想/药物提升可塑性）。
 * **Cross-ref**: Ax-L2-2 (Hysteresis), Eq-Evo-02 (Parameter Update)。
 
+> **[R]** 丧失与复原的实证轨迹：Bonanno 2004 *American Psychologist*（丧亲复原力轨迹：大多数人以弹性或延迟模式恢复，少数持续慢性悲伤；提供τ_rebuild的自然史基线）；Parkes 1972 *Bereavement: Studies of Grief in Adult Life*（整合深度—悲伤持续时间的早期系统研究）；Bhattacharya et al. 2020 *Nature Reviews Neuroscience*（成人神经可塑性的分子机制：BDNF/突触重塑与θ更新速率的神经基础）。**[H]** 以τ_rebuild = Integration/Plasticity将丧失恢复时间常数形式化、并联结SRT的L₂整合深度与η参数为本框架新增预测。
+>
+> **操作化候选**：
+> - **Integration(Ĝ_other)** 代理指标：①共同生活年限×日常交互频率（简单指标）；②关系中的L₂嵌入度——共同财产/决策/社会网络重叠度（Relational Embeddedness量表，RE-scale）；③神经层：悲伤者在听到逝者姓名时的vmPFC激活峰值（fMRI）。
+> - **Plasticity(Ĝ_self)** 代理指标：η≈①认知灵活性测试分数（WCST perseverative errors反向，即错误少=可塑性高）；②静息态BDNF血清水平；③年龄（作为粗粒代理，但存在个体差异）。
+> - **∝关系地位**：为功能类比（单调正相关），非推导出的精确线性比例；τ→∞是极限情形（Plasticity→0），对应严重神经退行性病变或极端依附，现实中为趋近而非真正无穷。
+>
+> * **FC-Phantom2-1**（证伪条件）：若在纵向丧亲研究（≥2年追踪）中，RE-scale高分者的悲伤恢复轨迹持续时间与RE低分者无显著差异（Δmean<1个月，Cohen's d<0.3），则Integration作为分子的预测力不成立，需检视是否存在第三变量（如社会支持）混淆。
+
 <br>
 
 ---
