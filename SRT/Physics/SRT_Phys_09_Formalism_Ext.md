@@ -998,9 +998,16 @@ a_M \mapsto a_{M}^{(SRT)}(L_0;N_T,b,M),
 \[
 \mathcal{A}_{SRT}(t) \equiv \frac{1}{N_T(t)}\sum_i w_i\,\exp\!\big(\alpha D_i(t)\big)\,P_i(t),
 \]
-其中 \(w_i\) 为语义/任务权重，\(\alpha>0\) 为深度放大系数。
+其中 \(w_i\) 为语义/任务权重；\(\alpha>0\) 为深度放大系数（量纲与D_i量纲互逆，使指数无量纲）；\(P_i(t)\) 为成员i在时间t的持久性权重（对应AT中构型的”出现/复现频率”，代理指标：行为稳定性或认知结构持续时间）。
 
-当 \(\mathcal{A}_{SRT}\) 越过临界面 \(\mathcal{A}_c\) 时，系统进入“高深度-高持久”相区，可对应 SRT 的稳定 \(L_2\) 重编织窗口。
+当 \(\mathcal{A}_{SRT}\) 越过临界面 \(\mathcal{A}_c\) 时，系统进入”高深度-高持久”相区，可对应 SRT 的稳定 \(L_2\) 重编织窗口。
+
+> **[R]** Assembly Theory核心文献：Walker & Cronin 2023 *Nature*（AT正式发表：组合深度/随机性阈值作为生命与非生命的区分判准，R基线）；Cronin & Walker 2026 *The Physics of Causation*（manuscript；本节接口的直接来源，A_M阈值与可达性约束）。**[H]** A_SRT的群体构建势形式化（exp(αD_i)深度放大+P_i持久性权重+N_T归一化）及A_c→L₂重编织窗口的相变类比为本框架新增贡献。
+>
+> **参数精化**：
+> - **α标定**：α为拟合参数，在具体应用域（组织创新/文化演化）中通过纵向数据回归确定；典型范围估计：若D_i以”引用深度/思维步骤数”为量纲，α~0.1-1.0使exp(αD_i)处于合理量级；当前A_SRT框架为定性序参量，非精确量值。
+> - **A_c确定**：临界面A_c对应L₂结构的硬度临界值（cf. Ax-L2-03），在实践中通过观察”重大制度变革发生时段”的A_SRT水平回推；或用Scheffer 2009的早期预警信号法（方差↑/自相关↑）标记相变前沿。
+> - **Cross-ref**：Ax-L2-03（硬度与迟滞）；§8.4（κ_c2语义断层临界值）；Def-AT-Map-1/2（AT映射前序定义）。
 
 ### [Lineage/Source]
 - Assembly Theory（AT）原始提出者：Leroy Cronin, Sara I. Walker 等。
