@@ -1592,7 +1592,9 @@ SRT 采纳“表示-非表示并存”边界：
 | 强表征计算（离线推演主导） | 中~高 | Semi-open（高内部操作） | 可支付~高负载 |
 | 具身闭环优先（低内部建模） | 中 | Open（在线耦合） | 低~中负载 |
 | 混合策略（4E + 表征） | 中~高 | Open↔Semi-open | 可支付（任务依赖） |
-| 伪表征泛化（任何状态都算“表示”） | 低~中 | Closed（解释退化） | 理论上 overloaded |
+| 伪表征泛化（任何状态都算"表示"） | 低~中 | Closed（解释退化） | 理论上 overloaded |
+
+> **[R]** 代表文献：Fodor 1975 *The Language of Thought*（强表征计算主义，离线符号操作，R基线）；Gibson 1979 *The Ecological Approach to Visual Perception*（直接知觉/具身闭环，无内部模型，R基线）；Clark & Chalmers 1998 *Analysis*（延展心智，4E+表征分布，R混合基线）；Brooks 1991 *IEEE Transactions on Robotics and Automation*（行为主义机器人：状态即"表示"的泛化倾向，伪表征泛化R批评性参照）。**[H]** 以d值/能流/Ψ_f三维映射统一四种表征模式为本框架新增比较框架。
 
 ### [Lineage/Source]
 - Manolo Martínez (2026), *Mental Representation*.
