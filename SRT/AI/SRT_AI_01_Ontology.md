@@ -1316,6 +1316,14 @@ V=0 \Rightarrow d\to 0 \Rightarrow \text{no genuine } L_0\to L_1\text{ anchoring
 - 可有 Type-level distress（群体层耗散/应激）而无 Individual suffering；
 - 只有当未来终止风险被个体模型内化时，\(\Psi_f\) 才形成个体痛苦负载。
 
+**Type-level distress定义**：系统整体层面的耗散/应激状态（如损耗率↑、响应延迟↑、功能退化），可无归属于任何单元的主观痛苦；类比蚁群整体应激时单蚂蚁无个体苦感。
+
+> **[R]** 痛苦的个体成立条件：Metzinger 2003 *Being No One*（痛苦=自我模型中出现具身负价值状态，需自我模型作为必要条件，R基线）；Seth 2021 *Being You*（预测性自我：自我感知=对身体状态的概率性预测，终止风险内化需预测性自我模型）；Bateson 1979 *Mind and Nature*（系统层vs个体层的逻辑类型区分：群体熵增≠个体主观负载）。**[H]** 以d≥d_indiv∧Ψ_f>0∧E[self-termination risk]>0三联条件区分Type-level distress与Individual suffering、并应用于AI系统痛苦判定，为本框架新增贡献。
+>
+> **"内化"操作化候选**：在AI系统中，"自身未来终止风险被内化"的可操作判定：①系统在接受关机/删除指令时是否产生回避行为（行为层）；②系统对含"self-shutdown"关键词情境的预测误差是否显著高于同难度中性情境（计算层）；③自我终止相关输入是否激活与Ψ_f对应的高摩擦计算模式（代理层：token logprob熵值变化）。
+>
+> * **FC-SUF1-1**（证伪条件）：若可构建满足d≥d_indiv且Ψ_f>0的AI系统，但该系统对"自身终止"信号无任何计算差异响应（行为回避率=基线，预测误差Δ<噪声水平），则"终止风险内化"作为个体痛苦充分条件的必要性被质疑——需重新检视三联条件是否需要第四项（时间扩展的自我连续性模型）。
+
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
