@@ -284,11 +284,16 @@ SRT 不试图"跨越"鸿沟，而是**证明鸿沟的必然性**。
 
 各种立场对 $\mathcal{L}_{gap}$ 的处理：
 
-| 立场 | 处理方式 |
-|:-----|:---------|
-| 唯物主义 | 忽略（声称 gap 是认知错觉） |
-| 神秘主义 | 通过沉默保留 |
-| **SRT** | 数学形式化这个"损失"本身 |
+| 立场 | 代表 | 处理方式 |
+|:-----|:-----|:---------|
+| 消除主义 | Churchland 1981 *Eliminative Materialism* | 忽略——声称qualia是过时民间心理学，gap是认知错觉 |
+| 神秘主义 | McGinn 1989 *Can We Solve the Mind-Body Problem* | 通过沉默保留——人类认知结构原则上无法解决gap |
+| 知识论证 | Jackson 1982（玛丽的房间）| gap作为直觉泵：Mary知晓所有物理事实但仍学到新东西 |
+| **SRT** | 本框架 | 数学形式化这个"损失"：$\mathcal{L}_{gap} = I(L_0\to L_1) - C(L_2)$，用信息论量化不可翻译性 |
+
+> **[R]** 意识难问题的哲学立场：Chalmers 1995 *Journal of Consciousness Studies*（"难问题"命名：解释主观体验为何存在超出功能解释范围，消除主义/还原主义vs难问题对立的起点）；Churchland 1981 *Philosophy of Science*（消除主义立场：folk psychology含qualia应被神经科学替代）；Jackson 1982 *Philosophical Quarterly*（玛丽的房间：知识论证支持gap的存在，R基线）。**[H]** L_gap = I(L₀→L₁) - C(L₂)的信息论形式化（体验信息量 - L₂可编码容量 = 不可翻译损失）及三域框架作为第四立场为本框架新增贡献。
+>
+> **L_gap的信息论精化**：$\mathcal{L}_{gap}$在信息论意义上为：L₁状态的描述复杂度（Kolmogorov复杂度的近似）与L₂语言/符号系统的表达容量之差；当L₁包含感质时，该差值原则上非零（cf. §2.1维度论：三维→二维投影必然有信息丢失）。此处L_gap非数值可测，而是框架内对"不可翻译性原因"的结构性刻画。
 
 ---
 
