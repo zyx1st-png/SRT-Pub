@@ -99,6 +99,12 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 * **Implication（中文）**：胶质剪枝不是“维护”，而是慢时标选择，对 \(L_2\) 结构进行拓扑修剪。
 
+**参数精化**：$\mu_{glia}$（胶质活动度）代理=小胶质细胞吞噬体积/突触密度比；C3/C4为补体系统蛋白；**慢时标**≈小时-年量级（远慢于LTP/LTD分钟-小时）。
+
+> **[R]** 胶质剪枝：Stevens et al. 2007 *Science*（补体C1q/C3标记突触被小胶质细胞剪枝，R基线）；Paolicelli et al. 2011 *Science*（CX3CR1敲除→突触剪枝受损→过连接，R因果）；Schafer et al. 2012 *Neuron*（活动依赖的弱侧突触优先剪枝，R可塑性基线）。**[H]** Ĝ_meso形式化胶质剪枝为L₂慢时标拓扑选择算子为本框架新增解读。
+>
+> * **FC-NM6-1**：若C3基因敲除条件下突触密度与野生型无显著差异（Δ<10%，p>0.1），则Ĝ_meso作为拓扑修剪算子失效。Cross-ref: T-NEURO-MECH-2。
+
 ---
 
 ### T-NEURO-MECH-2: Stability–Pruning Theorem
