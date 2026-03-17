@@ -296,11 +296,17 @@ $$ L_2^{collective} = \lim_{N \to \infty} \frac{1}{N} \sum_{i=1}^{N} \hat{G}_{\t
 
 ### 6.2 韦伯的铁笼 (Weber's Iron Cage)
 **韦伯**: 理性化过程将人类困在官僚制度的"铁笼"中。
-**SRT 翻译**: 
+**SRT 翻译**:
 $$ \text{理性化} \equiv L_2^{bureaucratic} \text{ 的过度固化} $$
 $$ \text{Hysteresis}(L_2) \to \infty \implies \text{系统僵化} $$
 
-$L_2$ 的迟滞成本变得如此之高，以至于即使有更好的 $L_0$ 可能性，系统也无法跳出。
+$L_2$ 的迟滞成本变得如此之高，以至于即使有更好的（d值更高的）$L_0$ 可能性，系统也无法跳出。
+
+> **[R]** 韦伯与制度路径依赖：Weber 1905 *Die protestantische Ethik und der Geist des Kapitalismus*（理性化→铁笼原文；英译"iron cage"来自Parsons 1930，原文"stahlhartes Gehäuse"=钢铁般坚硬的外壳）；DiMaggio & Powell 1983 *American Sociological Review*（制度同构化：强制/模仿/规范性压力使组织趋于同质，L₂硬化的三机制）；Pierson 2000 *American Political Science Review*（路径依赖：早期选择锁定未来可能性，转换代价指数级增长）。**[H]** 以Hysteresis(L₂)→∞形式化铁笼的迟滞极限、并联结SRT的L₀可能性压制机制为本框架新增贡献；"更好"的操作化=集体d值视角（新可能性能扩展参与者的关切带宽）。
+>
+> **迟滞操作化代理**：L₂硬化程度可由以下指标代理：①制度变革所需签名/立法/审批层数（官僚程序层级数）；②重大制度改革的实际发生率（每十年）相对于政策倡导密度的比值；③组织成员的创新建议被采纳率vs拒绝率（DiMaggio & Powell同构化测量思路）。
+>
+> * **FC-IronCage-1**（证伪条件）：若在跨国比较中，官僚程序层级数（迟滞代理指标）与20年内重大政策变革数量呈正相关（r>0.3，p<0.05），则"L₂过度硬化→变革阻滞"的单调方向预测失败，需引入中介变量（如外部冲击频率/去中心化程度）修正模型。
 
 ---
 
