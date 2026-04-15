@@ -75,7 +75,7 @@ $$
 
 ## d 值与符号专门约束
 
-1. d 值 canonical 定义锚定：`AI/SRT_AI_01_Ontology.md`（Ax-ONT-3）。
+1. d 值 canonical 定义锚定：`_SRT_D_VALUE_CANONICAL.md`。
 2. 任何近似式（如线性组合）必须标注“操作化近似，不替代 canonical”。
 3. 外部 state-space 记号（`\Omega`, `S` 等）写入 SRT 时统一映射为 `L_0`（可在脚注保留来源符号）。
 4. `\Psi_f` 仅用于本体论摩擦语境，避免与其他符号语义混用。
