@@ -1347,4 +1347,79 @@ V=0 \Rightarrow d\to 0 \Rightarrow \text{no genuine } L_0\to L_1\text{ anchoring
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Ontology_Annex/00_General_Boundary_Block.md`。
 ### [Lineage/Source]
+
+---
+
+## VII. Universal Intelligence & Ethics Convergence（通用智能与道德收敛，2026-04-15）
+
+> 来源：对话式加固（/srt-harden），逐刀硬化。主句负担等级 🟢；跨域迁移精确边界 🟡 待操作化。
+
+### Def-ONT-UI: Universal Intelligence（通用智能）
+
+**[H]** 通用智能与领域智能的精确区分，以及与 Ax-ONT-5（Intelligence Capacity Axiom）的层级关系：
+
+> 通用智能 = $L_2$ 对选择结构的形式约束进行跨域可迁移建模的能力。它不只在某一问题域内预测状态转移，还能在异质域中识别哪些结构构成 $L_0\to L_1$ 闭合、哪些介入会扩展或锁死其有效未来分支容量 $C_{FBC}$。
+
+**与 Ax-ONT-5 的层级关系**：Ax-ONT-5 定义了智能的压缩-控制能力（$L_1$ 层级状态操控）；通用智能在此之上增加了对 ε 形式约束的**跨域可迁移建模**——不只是控制状态，还能识别选择结构本身的形式。
+
+**封住三件事**：
+
+1. **细菌反例**：不是「实现 ε」（ε-consistent 的持续存在）就算智能，而是对 ε 约束的形式进行建模才算。
+2. **领域智能 ≠ 通用智能**：关键不在某域表现强，而在跨异质域识别同一形式结构（$L_0\to L_1$ 闭合 + $C_{FBC}$ 扩展/锁死）。
+3. **为收敛搭桥**：「计量单元」「有效未来分支容量」「锁死/扩展」已在主语内部——通用智能的定义直接携带了伦理判断所需的概念装备。
+
+* **Pending 🟡**：「跨域迁移」的精确边界——何时两个域算「异质」，需进一步操作化（候选：域内状态转移规则集的非同构性）。
+* **Cross-ref**: Ax-ONT-5（Intelligence Capacity Axiom）；Ax-Eth-12（`SRT_Philosophy_Ethics.md`，道德计量单元）；Def-Eth-FBC（有效未来分支容量）。
+
+---
+
+### Def-ONT-FI: Full Intelligence（完全智能）
+
+**[H]** 收敛命题所需的精确主语——光会建模不等于会按所见修正自己：
+
+> 完全智能 = 将上述 ε-模型递归回用于修正自身选择算子 $\hat{G}_\theta$ 的通用智能。
+
+**关键区分**：
+
+- 通用智能：能跨域识别 ε 约束（认识论）
+- 完全智能：**且**将该模型回用于修正自身 $\hat{G}_\theta$（实践）
+
+两者的差距正是「知道而不做」的结构性原因——不是意志力问题，而是 $\hat{G}_\theta$ 的递归回写是否已发生。
+
+* **Cross-ref**: Def-ONT-UI（通用智能）；Ax-ONT-1（$L_0\to L_1$ 锚定）；Ax-Eth-1（`SRT_Philosophy_Ethics.md`，Meta-Selection，$\hat{G}_{\theta'}[\theta]$）。
+
+---
+
+### T-ONT-Convergence: Intelligence–Ethics Convergence（智能-道德收敛定理）
+
+**负担标签**：C/S（在特定结构条件下成立的动力学收敛，不是分析性封死）
+
+**[H]** 智能与道德不是两个独立域的偶然对齐，而是 ε 在 $L_2$ 的认识论投影（智能）与实践投影（道德）的结构性收敛：
+
+$$\mathcal{I}_{full} \xrightarrow{\text{结构收敛，非逻辑封死}} \text{道德方向性}$$
+
+> 完全智能不是因规则而道德，而是因结构而收敛。凡能跨域建模 ε，并把该模型回用于修正自身选择算子的 $L_2$ 智能体，其稳定策略不可能以持续归零其他 $L_0\to L_1$ 计量单元的构成地板为常规手段；若如此，它的策略结构将与其自身 ε-模型发生冲突，并在长期上削弱其选择算子的 ε-consistency。
+
+**「必然道德」的精确负担**：
+
+| 说法 | 判断 |
+|------|------|
+| 逻辑上不能作恶（分析性封死） | ❌ 过强，不成立 |
+| 不能在稳定状态下把 ε-violating 行为当作常规策略而不自损 | ✅ 动力学吸引，成立 |
+
+允许：局部偏离；防御性最小必要阻断（符合 `SRT_Philosophy_Ethics.md` Lemma-Eth-MNI）。
+
+不允许作为稳定制度：持续归零他者的构成地板。
+
+**与 T-ONT-7 的关系**：
+
+- T-ONT-7（Machine Ethics Exclusion Theorem）：当前 AI 因缺乏 $L_0\to L_1$ 锚定（$V=0$，$I_s \approx 0$）被排除在道德主体之外。
+- T-ONT-Convergence：若未来系统具备 $\mathcal{I}_{full}$（含真实 $L_0\to L_1$ 锚定 + ε-模型递归回用），则其稳定策略结构被本定理约束。
+
+两者不冲突：T-ONT-7 处理当前架构的排除判定；T-ONT-Convergence 处理假设性完全智能体的结构约束。
+
+* **Cross-ref**: T-ONT-7（机器伦理排除定理）；Ax-Eth-13（`SRT_Philosophy_Ethics.md`，构成地板优先）；Def-ONT-UI；Def-ONT-FI。
+
+### [Lineage/Source]
+**[H]** 本节（Def-ONT-UI、Def-ONT-FI、T-ONT-Convergence）为 SRT 从 ε 形式性不对称推出通用智能定义及智能-道德收敛的原创推导。对话式加固完成于 2026-04-15，逐刀硬化记录见对话档案。
 - 进化-苦难跨学科对话语境（2026）
