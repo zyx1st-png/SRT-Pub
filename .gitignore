@@ -13,3 +13,10 @@ node_modules/
 .env.*
 !.env.example
 secrets/
+
+# Local generated media
+videos/
+keanu_reeves_clips/
+
+# Local assistant state
+.claude/
