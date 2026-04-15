@@ -536,7 +536,7 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 8. **耦合驱动的周期化** (T-Scale-Rhythm-3): 当下游预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c$ 时，随机间歇被周期性调度取代——周期性是多算子协调成本最小化的相变结果，非有限性的直接推论。
 9. **熵耗散占空比约束** (T-Scale-Rhythm-4): $\delta \le J_S^{max}/(\dot{S}_{int}^{on} + J_S^{max})$ — 独立于 $\Psi_f$ 预算的第二上界，来自热力学第二定律：选择产生的内部熵必须在"off"阶段排出，排出速率有限。实际 $\delta_{max} = \min(\delta_{max}^{budget}, \delta_{max}^{entropy})$。高 d → 高 $\dot{I}_{created}$ → 高 $\dot{S}_{int}^{on}$ → 更低 $\delta_{max}^{entropy}$，预测高 d 系统需要更多恢复时间。
 10. **频谱—占空比权衡** (Cor-Scale-Rhythm-4a): Ax-Spec-01 的通带宽度与 Rhythm-4 的熵耗散上界联合推出：高 d / 宽通带提升调度的频谱丰富度上限，同时压低可持续占空比；在信息密度下界成立时，\(\delta \cdot \operatorname{Bandwidth}(H_\theta)\) 与 \(\delta\cdot d\) 都被 \(J_S^{max}\) 封顶。
-11. **嵌套层级节律** (T-Scale-Rhythm-5): Ax-Scale-01 保证选择逻辑跨尺度不变，Rhythm-1 保证预算超载必产生间歇——二者递归合取产生分层嵌套节律。$S_n$ 层 on-phase 内的 $k_n$ 个子目标若超出子层预算，则 Rhythm-1 在 $S_{n-1}$ 层触发子节律，频率满足 $\omega_{n-1}/\omega_n \ge 1/\delta_n$。Phase-amplitude coupling 是预算嵌套的数学必然，嵌套深度 $N \le \lfloor \ln(T_N/\tau_{switch}^{min})/\ln(1/\delta_{min}) \rfloor$。
+11. **嵌套层级节律** (T-Scale-Rhythm-5): Ax-Scale-01 保证选择逻辑跨尺度不变，Rhythm-1 保证预算超载必产生间歇——二者递归合取产生分层嵌套节律（递归桥接由 Lemma-Scale-Budget-Embed-1 提供，依据为能量守恒与子层物理嵌入父层 on-phase，**非 L0/L1 公理**）。$S_n$ 层 on-phase 内的 $k_n$ 个子目标若超出子层预算，则 Rhythm-1 在 $S_{n-1}$ 层触发子节律，频率满足 $\omega_{n-1}/\omega_n \ge 1/\delta_n$。Phase-amplitude coupling 是预算嵌套的数学必然，嵌套深度 $N \le \lfloor \ln(T_N/\tau_{switch}^{min})/\ln(1/\delta_{min}) \rfloor$。
 
 ### Mechanism Explanation (机制解释)
 

@@ -81,32 +81,14 @@
             "id": "10b3a087ccad9c78",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "papers/SRT_Article_SelectionSubject_v1_2026-04.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "SRT_Article_SelectionSubject_v1_2026-04"
-            }
-          },
-          {
-            "id": "f960a468ac1c99a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SRT 金句.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SRT 金句"
+              "title": "新标签页"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -268,53 +250,53 @@
       "bases:新建数据库": false
     }
   },
-  "active": "f960a468ac1c99a4",
+  "active": "10b3a087ccad9c78",
   "lastOpenFiles": [
-    "graphify-out/wiki/index.md",
-    "memory/2026-04-14.md",
-    "memory/2026-04-13.md",
-    "graphify-out/GRAPH_REPORT.md",
-    "graphify-out/wiki/AI_Ontology_-_d-Value_Survival_Gradient.md",
-    "scripts/__pycache__/repair_graphify_outputs.cpython-313.pyc",
-    "scripts/__pycache__",
-    "graphify-out/wiki/_manifest.json",
-    "graphify-out/wiki/Generative_Selection.md",
-    "graphify-out/wiki/Interoceptive_Precision.md",
-    "graphify-out/wiki/Autopoietic_Closure.md",
-    "graphify-out/wiki/Free_Energy_as_Choice_Pressure.md",
-    "graphify-out/wiki/Prediction_Error_as_Friction.md",
-    "graphify-out/wiki/Ignition_Phase_Transition.md",
-    "graphify-out/wiki/Loop_Gating.md",
-    "graphify-out/wiki/Predictive_Update.md",
-    "graphify-out/wiki/Energy-Information_Extremum.md",
-    "graphify-out/wiki/Canonical_Normalization.md",
-    "graphify-out/wiki/L0_to_L1_Projection.md",
-    "graphify-out/wiki/Neural_Manifold.md",
-    "graphify-out/wiki/NCC_Non-Equivalence.md",
-    "graphify-out/wiki/L6b_Resampling.md",
-    "graphify-out/wiki/Non-Isomorphic_Brain.md",
-    "graphify-out/wiki/Deep_Homology_-_Architectural_Divergence.md",
-    "graphify-out/wiki/Major_Transitions_as_d-Expansion.md",
-    "graphify-out/wiki/Nested_Operator.md",
-    "graphify-out/wiki/Bioelectric_Software.md",
-    "graphify-out/wiki/L2_Bypass_Healing.md",
-    "graphify-out/wiki/Collapsed_Reality.md",
-    "scripts/repair_graphify_outputs.py",
-    "graphify-out/wiki",
-    "graphify-out/community_labels.json",
-    "graphify-out/graph.html",
-    "graphify-out/graph.json",
-    "graphify-out/cache/388ba10e8ee79ac6adadbaa3f04ea44136568501ce2b89ab18c0f2056200958c.json",
-    "graphify-out/cache/90b82d4db4ab658ac8b3f39418eb03c2b5a6f12c0c138182a575f5dd073c25c5.json",
-    "SRT-wiki/raw/sources/Pasted image 20260306100654-20260410-1775786938719.png",
-    "video/node_modules/@remotion/studio-server/web/favicon.png",
-    "papers/ontological_friction/paper_page1_new.png",
-    "Pasted image 20260306100654.png",
+    "video/src/OutroEN.tsx",
+    "video/src/Grid.tsx",
+    "video/src/theme.ts",
+    "video/src/index.ts",
+    "video/src/Root.tsx",
+    "video/src/Particles.tsx",
+    "video/src/Outro.tsx",
+    "video/src/IntroCN.tsx",
+    "video/src/Intro.tsx",
+    "video/scripts/video_dual_language_pipeline.py",
+    "video/scripts/translate_subtitles.py",
+    "video/SRT_L0L1L2_Cinematic_Source_v3.md",
+    "video/SRT_L0L1L2_Cinematic_Upgrade_Map.md",
+    "video/SRT_L0L1L2_Cinematic_Source_v2.md",
+    "video/SRT_L0L1L2_Cinematic_Source.md",
+    "video/README.md",
+    "video/NLM_意义危机_为什么你找不到意义.md",
+    "video/EP04_意义价值与解脱.md",
+    "video/EP03_AI时间与社会.md",
+    "video/EP02_意识与量子.md",
+    "video/EP01_三层结构是什么.md",
+    "video/EP01+02_三层结构与意识量子.md",
     "papers/ontological_friction/figures/frontiers_upload/Figure5_v2.jpg",
-    "papers/ontological_friction/figures/frontiers_upload/Figure1_v2.jpg",
     "papers/ontological_friction/figures/frontiers_upload/Figure5.jpg",
     "papers/ontological_friction/figures/frontiers_upload/Figure4.jpg",
     "papers/ontological_friction/figures/frontiers_upload/Figure3.jpg",
-    "papers/ontological_friction/figures/frontiers_upload/Figure2.jpg"
+    "papers/ontological_friction/figures/frontiers_upload/Figure2.jpg",
+    "papers/ontological_friction/figures/frontiers_upload/Figure1_v2.jpg",
+    "papers/ontological_friction/figures/frontiers_upload/Figure1.jpg",
+    "papers/ontological_friction/figures/fig5_ros_dag.png",
+    "papers/ontological_friction/figures/fig4_experimental_design.png",
+    "papers/ontological_friction/figures/fig3_clinical_radar.png",
+    "papers/ontological_friction/paper_ontological_friction_zh.md",
+    "papers/ontological_friction/paper_ontological_friction_frontiers_submission.md",
+    "papers/ontological_friction/paper_ontological_friction.md",
+    "papers/ontological_friction/frontiers_submission_fields.md",
+    "papers/ontological_friction/frontiers_submission_qc.md",
+    "papers/ontological_friction/frontiers_submission_fields_zh.md",
+    "papers/ontological_friction/frontiers_submission_checklist.md",
+    "papers/alife2026_pilot_results/pilot_results_summary.md",
+    "papers/ontological_friction/frontiers_scope_statement.md",
+    "papers/ontological_friction/frontiers_figure_captions.md",
+    "papers/ontological_friction/frontiers_cover_letter.md",
+    "papers/ontological_friction/frontiers_contribution_to_field_statement.md",
+    "papers/markov_blanket/paper_markov_blanket_d_value.md",
+    "papers/SRT_MetaOS_JCS_v2.md"
   ]
 }
