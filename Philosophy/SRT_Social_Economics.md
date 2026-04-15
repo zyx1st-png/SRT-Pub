@@ -3,7 +3,11 @@ id: SRT-SOC-ECONOMICS
 type: theory
 tags: [SocialEconomics, Markets, Value, Inequality, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-AXIOMS-SOC]
+see_also: [SRT-POLITICAL-RIGHTS]
 ---
 
 # SRT Social Economics (Hybrid Edition)
@@ -19,15 +23,10 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 以 `chatgptx` 为来源，优先保持公理链可推导性与编号连续性。
-- Part B 以 `claude` 为来源，并用原版 `Philosophy` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Value & Money
 
@@ -44,9 +43,10 @@ $$\text{Money} \equiv g_{L_2}$$
 ## II. Market as Distributed Selection
 
 ### Ax-Eco-3: Market as Collective Operator
-市场是分布式选择算子。
-$$\hat{G}_{market} = \mathcal{C}(\{\hat{G}_i\})$$
-*   **Implication**: 市场不是均衡点，而是选择过程。
+市场不是个体选择的简单堆叠，而是集体自由能景观在社会尺度上的局部梯度展开。
+$$\mathcal{F}_{collective}^{market}=\sum_i \Psi_f(\hat{G}_i)+\sum_{i<j}\Psi_f(\hat{G}_i,\hat{G}_j)$$
+$$\hat{G}_i^{market} = -\frac{\partial \mathcal{F}_{collective}^{market}}{\partial \theta_i}$$
+*   **Implication**: 市场不是均衡点，也不是个体偏好加总，而是选择景观；个体算子只是该景观的局部导数表达。
 
 ### Ax-Eco-4: Bubble as L2 Overfit
 泡沫是 $L_2$ 对短期 $L_1$ 的过拟合。
@@ -56,9 +56,10 @@ $$\text{Bubble} \iff \partial_t L_2 \gg \partial_t L_1$$
 ## III. Inequality & Trust
 
 ### Ax-Eco-5: Inequality of Agency
-不平等是选择带宽的不均匀分布。
+不平等不是孤立个体 $d_i$ 的静态差异，而是集体景观在不同主体截面上的可及维度不均。
+$$d_{collective}=D_{eff}(\mathcal{F}_{collective}),\qquad d_i=D_{eff}(\mathcal{F}_{collective}|_{\theta_i})$$
 $$G_{agency}=\text{Gini}(d_i)$$
-*   **Implication**: 贫富差异是 $d$ 值差异的外显。
+*   **Implication**: 贫富差异、制度不平等与行动力差异，首先是集体自由能景观对不同主体开放程度不同的外显，而非先有独立个体再做聚合。
 
 ### Ax-Eco-6: Trust as Friction Reduction
 信任降低交易摩擦与系统熵。
@@ -77,10 +78,43 @@ $$\text{Hardness}(L_2) \uparrow \Rightarrow \frac{\partial Price}{\partial L_1} 
 $$\text{Crisis} \equiv L_2 \to L_2'$$
 *   **Implication**: 经济危机是结构重配而非单次冲击。
 
-<br>
+## V. Social Normative Criterion (社会 L₂ 规范性判据)
+
+### Ax-Eco-7: Social L₂ Normative Criterion (社会制度的规范性判据)
+
+定义社会制度的可行选择空间体积：
+
+$$S_{social}(\hat{G}_{collective}, t) = \text{Vol}_{L_0}\{\sigma : \hat{G}_{L_2^{social}(t)}[\sigma] \text{ 是可行集体锚定}\}$$
+
+**可持续社会制度**（充要条件）：
+
+$$\frac{dS_{social}}{dt} \geq 0 \quad \text{AND} \quad \frac{d\mathcal{F}_{collective}^{social}}{dt} \leq 0$$
+
+**退化社会制度**：$\dfrac{dS_{social}}{dt} < 0$（压缩成员的未来选择空间 → 制度在演化上不稳定，最终被替代）
+
+**最优社会制度**：
+
+$$L_2^{social*} = \arg\max_{L_2^{social}} \frac{d\, d_{collective}^{social}(t)}{dt} \;\text{s.t.}\; \frac{d\mathcal{F}_{collective}^{social}}{dt} \leq 0$$
+
+*   **Implication（对休谟鸿沟的回应）**：SRT 在此不引入任何外部价值判断。"好的制度"即在选择动力学中自然存活的制度——它扩展集体成员的可行选择空间（$dS_{social}/dt \geq 0$），同时使集体自由能景观向极小值演化。规范性从"是"（选择动力学）内生推导，无需外部"应当"。
+*   **Cross-ref**: Def-L2-Normative (`Core/SRT_Core_12b_Ontology_L2.md §III`), `_SRT_VERTICAL_INTEGRATION.md §9`。
+
+### T-Eco-3: Dual Pressure Elimination (双层选择压淘汰定理)
+
+社会制度受双层选择压力同时筛选：
+
+| 压力层次 | 来源 | 淘汰机制 |
+|:--------|:-----|:---------|
+| 个体层 | $\Psi_f$ 累积消耗 | 成员无法支付参与该制度的摩擦成本 |
+| 集体层 | $\mathcal{F}_{collective}^{social}$ 景观曲率 | 不指向集体极小的制度被耦合摩擦压出 |
+
+$$\text{Elimination}_{inst} \iff \exists t: \frac{dS_{social}}{dt} < 0 \;\vee\; \frac{d\mathcal{F}_{collective}^{social}}{dt} > 0 \;\text{（持续）}$$
+
+*   **Implication**: 制度崩溃不是随机冲击，而是双层选择压的必然结果。历史上失败的制度形态（奴隶制、极权计划经济）均满足 $dS_{social}/dt < 0$（压缩人口选择空间）。
+*   **Cross-ref**: T-Eco-2（危机即重锚定）, Ax-Eco-3（市场为集体算子）。
+
 <br>
 
----
 ---
 
 
@@ -105,34 +139,52 @@ Peter Berger和Thomas Luckmann在《现实的社会建构》（1966）中提出�
 
 > "社会是人的产物。社会是客观现实。人是社会的产物。"
 
-### 1.1.1 SRT对社会建构的精确形式化
-<!-- ORIGINAL-SECTION-PRESERVED -->
-| 社会建构阶段 | SRT对应 | 形式表达 |
-|------------|---------|---------|
-| 外化 | L_1选择的表达 | σ^θ_{L_1} → 行为/符号 |
-| 客体化 | L_1→L_2的固定 | 多个θ的选择收敛为L_2结构 |
-| 内化 | L_2对新Ĝθ的约束 | 新agent的θ由既有L_2塑造 |
+### 1.1.1 SRT 对社会建构的精确形式化
 
-**形式化定义：**
+#### 核心范式：从「交集」到「势阱」
 
-$$\text{社会现实} = L_2^{social} = \lim_{t \to \infty} \bigcap_{\theta \in \Theta(t)} stable(\hat{G}_\theta[\sigma])$$
+> **景观优先性**（本体论基础）：集体在本体论上优先于个体聚合——不是先有许多个体汇聚形成社会，而是先有集体自由能景观（$\mathcal{F}_{coll}$），个体是景观的局部稳定化表达。
 
-社会现实是所有社会成员的选择在时间中的收敛结果。
+**社会现实的势阱定义**（替代原交集公式）：
 
-**制度化作为L_2形成：**
+$$L_2^{social}(t) \equiv \left\{ \sigma \;:\; \nabla_{\sigma}\, \mathcal{F}_{coll}(\sigma,\, \Theta(t)) = 0,\quad \text{Hess}(\mathcal{F}_{coll}) > 0 \right\}$$
 
-$$\text{习惯化} : repeat(\hat{G}_\theta[\sigma_i]) \to L_2[\sigma_i\text{是「正常的」}]$$
+社会现实是当前算子分布 $\Theta(t)$ 下集体自由能景观的**稳定势阱簇**（吸引子），随 $\Theta(t)$ 动态迁移，而非收敛于固定终态。
 
-当足够多的agent重复相同选择，该选择从L_1（个人状态）升级为L_2（共识规范）。
+**个体 θ 的景观梯度演化**：
 
-## 1.2 语言拓扑与L_2约束
-<!-- ORIGINAL-SECTION-PRESERVED -->
+$$\frac{d\theta_i}{dt} = -\gamma \nabla_{\theta}\, \mathcal{F}_{coll} + \xi(t)$$
+
+个人价值观与偏好（θ）不是在真空中自由形成的，而是在集体景观中执行梯度下降——你以为你在自由选择，实则顺着社会景观的斜率滑落，$\xi(t)$ 为个体随机扰动项。
+
+---
+
+#### 算子-景观反馈环（伯格-卢克曼循环的 SRT 重构）
+
+| 建构阶段 | SRT 机制 | 动力学描述 |
+|:---------|:---------|:-----------|
+| **外化**（Externalization）| $\hat{G}_\theta$ 在 $L_1$ 产生选择脉冲 | 算子将内部 $L_1$ 状态映射为可观测行为/符号，尝试干扰既有 $L_2$ 景观 |
+| **客体化**（Objectification）| 加权脉冲一致性超过阈值 | 景观发生永久性凹陷——形成新的稳定势阱（吸引子），$L_1$ 升格为 $L_2$ |
+| **内化**（Internalization）| 新 $\hat{G}_{new}$ 被势阱卷入 | 新接入的算子参数 θ 被景观几何结构强制塑造，无需显式学习 |
+
+---
+
+#### 规范形成：非线性习惯化（含权力项）
+
+$$\sum_{i \in \text{Network}} \omega_i \cdot \int_{t-\tau}^{t} \mathbf{1}\!\left[\hat{G}_i(L_0) \to \sigma^*\right] dt \;>\; \Theta_{crit} \;\implies\; \sigma^* \in L_2$$
+
+- **$\omega_i$（社会权重）**：算子 $i$ 的 $L_2$ 塑造力，由社会地位、资源、网络中心度决定。权力不平等使本体论不平等——高权重算子的单次行为对景观的压陷能力，远大于低权重算子的海量重复
+- **$\Theta_{crit}$（规范化临界阈值）**：对应社会学「临界质量」——加权重复度超过阈值时，景观发生相变：从「某人的癖好」（$L_1$）到「社会的礼仪」（$L_2$）
+
+> **「踩泥地」隐喻**：社会建构不是盖房子，而是踩泥地。走的人多了（加权重复），地上形成深浅不一的沟壑（$L_2$ 势阱），沟壑决定后来者只能按固有路线行走（内化）。现实的「硬度」，正是这些沟壑的深度——即 $|\text{Hess}(\mathcal{F}_{coll})|$ 的大小。
+
+## 1.2 语言拓扑与 $L_2$ 约束
+
 > ⚠️ 社会语言学扩展
 
 语言不仅是交流工具，更是L_2的核心约束参数。语言结构决定了Ĝθ如何将L_0投影为L_1。
 
-### 1.2.1 名词性L_2与动词性L_2
-<!-- ORIGINAL-SECTION-PRESERVED -->
+### 1.2.1 名词性 $L_2$ 与动词性 $L_2$
 不同语言编码世界的方式构成了根本不同的L_2拓扑：
 
 | L_2类型 | 语言特征 | L_1投影模式 | d值效应 |
@@ -162,13 +214,20 @@ $$\text{Nature} \xrightarrow{L_2^{verb}} \text{Process} \xrightarrow{\text{逻�
 
 ### 1.2.3 倾听作为逆向选择
 <!-- ORIGINAL-SECTION-PRESERVED -->
+
+> [R→Gendlin 1978 *Focusing*（聚焦疗法：对身体"感受意义"的开放性倾听——暂停分析层（L₂分类）以让前概念感知（L₁）直接涌现，操作层面最接近"倾听即抑制Ĝ修剪"）; Petitmengin 2007 *Phenomenology and the Cognitive Sciences*（微现象学访谈法：引导被试降低L₂叙事干预以倾听L₁时刻的方法论）; Levinas 1969 *Totality and Infinity*（他者的"面孔"打断自我封闭的L₂循环——他者的不可同化性迫使Ĝ进入倾听模式）; Ghosthorse T. 2013 *Bioneers Conference* & ongoing public talks（"倾听大地"：原住民知识体系中的过程性感知模式，中文摘要可参考Deloria 1999 *Spirit and Reason*）]
+
 传统的选择被视为主动的"修剪"（Pruning）。但存在一种特殊的算子状态——**倾听**（Listening）：
 
-**定义：** 倾听是Ĝθ的抑制功能被暂时悬置的状态，使得L_0的信息流能以最小失真度通过。
+**定义：** 倾听是Ĝ_θ的主动过滤功能被暂时悬置的状态，使得L₀的信息流能以最小失真度通过。
 
-$$Listening \Rightarrow \min(H(L_1 | L_0))$$
+$$\text{Listening} \Rightarrow \max\, I(L_1; L_0) \quad \text{等价于：} \min\, H(L_1 | L_0) \text{（仅当 }H(L_1)\text{ 固定时等价）}$$
 
-即最小化L_1给定L_0时的条件熵，或最大化L_1与L_0的互信息。这是一种"让存在自行显现"的最高级选择形式。
+> **公式精度说明**：$\min H(L_1|L_0)$（最小化条件熵）与 $\max I(L_1;L_0)$（最大化互信息）的关系：$I(L_1;L_0) = H(L_1) - H(L_1|L_0)$。当 $H(L_1)$ 固定时两者等价；但在倾听状态下 $H(L_1)$ 通常**升高**（更多可能性进入L₁，而非减少），因此严格意义上应以 $\max I(L_1;L_0)$ 为基本定义（允许L₁的边际熵增加），而非单纯最小化条件熵。
+
+> **神经机制联结**：Ĝ_θ"主动过滤悬置"的神经相关候选包括：前额叶α波段功率增加（Klimesch et al. 1998 — 皮质抑制的α振荡与"接收模式"）；前扣带回目标导向活动降低；默认模式网络（DMN）进入非任务导向激活（开放监控冥想状态的神经对应，cf. Travis & Shear 2010）。
+
+这是一种"让存在自行显现"的最高级选择形式——不是被动不作为，而是主动维持开放的选择窗口（d值存在但过滤阈值降低）。
 
 **倾听 vs 修剪：**
 
@@ -177,9 +236,22 @@ $$Listening \Rightarrow \min(H(L_1 | L_0))$$
 | 修剪 | 主动抑制 | 高过滤 | 控制、确定 |
 | 倾听 | 暂停抑制 | 低过滤 | 接收、开放 |
 
+* **R/H 区分**：
+  - [R] 开放性感知状态的现象学方法论（Gendlin聚焦/Petitmengin微现象学）；他者不可化约性迫使接收模式（Levinas）
+  - [H] **SRT形式化**：倾听 = $\max I(L_1;L_0)$（将开放接收状态形式化为互信息最大化），并联结到Ĝ_θ过滤抑制机制的神经类比
+
+* **操作化候选**（倾听/开放接收状态的测量）：
+  - 行为层：在开放式访谈任务中，聆听者产生的"理解检验行为"（paraphrase/clarification）频率↑ = 倾听质量代理（Clark & Brennan grounding acts）
+  - 神经层：前额叶α波段功率（EEG）——倾听训练前后α功率变化量作为抑制悬置程度的代理
+  - 现象学自评：Gendlin聚焦体验量表（Focusing Manner and Experiencing Scale, FMEIS）中"过程感"分量
+
+* **可证伪预测**：
+  - FC-Listen1-1：在标准化主动倾听培训（如动机访谈训练）前后，被试的EEG α波段功率应在任务期间显著升高（倾听模式 > 主动说话模式，配对t检验p<0.05）——若无差异则"倾听=过滤抑制"的神经联结失败
+  - FC-Listen1-2：高"聚焦体验"评分（FMEIS）的被试在双目竞争任务中应表现出更宽的知觉窗口（更频繁地报告"混合/两个同时可见"状态，即L₀多态性进入L₁）——若聚焦能力与感知宽度无关则倾听→L₀信息增加的主张失败
+
 **与原住民智慧的共鸣：**
 
-Tiokasin Ghosthorse等原住民思想家强调的"倾听大地"，不是诗意修辞，而是描述了一种具体的Ĝθ操作模式——暂停名词性分类，允许L_0的过程性信息直接显现。
+Tiokasin Ghosthorse等原住民思想家强调的"倾听大地"（参见Ghosthorse 2013 Bioneers Conference讲演），不是诗意修辞，而是描述了一种具体的Ĝ_θ操作模式——暂停名词性分类（降低L₂过滤阈值），允许L₀的过程性信息直接显现（$I(L_1;L_0)$ 趋向最大化）。
 
 ---
 
@@ -468,15 +540,19 @@ $$\frac{d(d_{\text{制度}})}{dt} \propto \text{政治参与广度} \times \text
 <!-- ORIGINAL-SECTION-PRESERVED -->
 **定义：** 权利是L_2结构中的保护性约束，限制某些Ĝθ的选择以保障其他Ĝθ的选择可能性。
 
-$$Right(θ, x) \equiv L_2[\text{禁止任何 } θ' \text{ 执行 } \hat{G}_{θ'}[¬x(θ)]]$$
+$$Right(\theta, x) \equiv \forall\theta' \neq \theta:\; L_2\!\left[\hat{G}_{\theta'}[L_0] \notin \left\{\sigma : d_\theta^{\to x}(\sigma) < d_\theta^{\to x}(\sigma_0)\right\}\right]$$
 
-即：θ对x的权利意味着L_2规定任何其他agent都不得消除θ选择x的可能性。
+其中 $d_\theta^{\to x}$ 是 $\theta$ 在选择 $x$ 方向上的 d 值分量（关切带宽投影）；$\sigma_0$ 是权利成立前的基准状态。含义：任何 $\theta'$ 的选择结果都不得落入"使 $\theta$ 选择 $x$ 的带宽低于基准"的状态集合——即 L₂ 禁止 $\theta'$ 通过其选择操作降低 $\theta$ 的 $x$-方向选择能力。
+
+> **原公式注记**：原写法 $L_2[\hat{G}_{\theta'}[\neg x(\theta)]]$ 中 $\neg x(\theta)$ 符号含义不透明（$x(\theta)$ 是谓词还是状态？$\neg$ 是集合补还是否命题？）；上式明确用 d 值投影取代，避免量词歧义。
 
 #### 4.1.2.2 权利作为d值保护机制
 <!-- ORIGINAL-SECTION-PRESERVED -->
 **核心命题：** 健康社会必须通过权利机制最大化系统的选择多样性。
 
-$$\text{社会健康度} \propto \sum_θ d_θ × \text{可访问的 } L_0^θ$$
+$$\text{社会健康度} \propto \sum_\theta d_\theta \cdot S(\hat{G}_\theta, t)$$
+
+其中 $S(\hat{G}_\theta, t) = \mu_{L_1}\{\sigma \in L_1 : \hat{G}_{\theta,L_2(t)}[\sigma] \text{ 是可行锚定}\}$（见 `Core/SRT_Core_12b_Ontology_L2.md §Def-L2-Normative`，个体算子的选择空间体积）。**Cross-ref**：权利机制 = 保持 $dS(\hat{G}_\theta, t)/dt \geq 0$（防止选择空间收缩）的 L₂ 约束集合——这是 Def-L2-Normative 中**可持续 L₂** 在权利理论中的直接应用。
 
 **权利的功能分析：**
 
@@ -522,28 +598,44 @@ $$\text{货币} = L_2^{\text{价值}} : \forall\theta, t, \text{领域提供共�
 $$\text{价格}(x) = \sigma_{L_2}(x\text{的交换比率})$$
 
 ### 5.1.1 市场作为分布式选择系统
-<!-- ORIGINAL-SECTION-PRESERVED -->
-$$\text{市场} = \{\hat{G}_\theta\}_\theta \times L_2^{\text{交易规则}} \times \text{价格机制}$$
 
-**价格形成的SRT模型：**
+**[R — 一般均衡理论追溯：Arrow-Debreu 1954；主观价值论追溯：Menger 1871；[H] — 以SRT三层框架重新形式化市场、价值与泡沫/崩盘动力学]**
 
-$$p_t = \arg\min_p \sum_\theta |\hat{G}_\theta[p] - p|^2$$
+市场的SRT组成要素（非严格笛卡尔积，各要素类型不同，为描述性分解）：
+- **选择算子集合** $\{\hat{G}_\theta\}_\theta$：所有市场参与者的具身选择动力学
+- **交易规则** $L_2^{\text{交易规则}}$：产权/合约/结算等制度性L₂共识
+- **价格机制**：将分散选择汇聚为公开信号的聚合协议
 
-均衡价格是所有agent选择最一致的点。
+**价格形成的SRT模型** [H]:
 
-#### 5.1.1.1 价值的SRT理论
-<!-- ORIGINAL-SECTION-PRESERVED -->
+令 $p^*_\theta$ 为agent $\theta$ 基于其选择动力学认为合理的参考价格，则均衡价格：
+$$p_t = \arg\min_p \sum_\theta |p^*_\theta - p|^2$$
+
+均衡价格是最小化所有agent预期偏差的加权中点（当所有agent权重相等时）。
+
+*注*：原公式 $|\hat{G}_\theta[p] - p|^2$ 中 $\hat{G}_\theta[p]$ 物理意义不明（算子作用于价格数字的含义未定义），此处修正为 $p^*_\theta$（agent的参考价格预期）使形式化自洽。
+
+#### 5.1.1.1 价值的SRT理论 [H]
+
 $$\text{价值}(x) = \text{选择}x\text{的}L_2\text{权重}$$
 
-价值不是物品的内在属性，也不纯粹是主观的，而是L_2中的选择结构。
+价值不是物品的内在属性（[R]追溯：反对劳动价值论 Marx 1867），也不纯粹是主观的（[R]追溯：反对纯主观主义 Menger 1871），而是L₂中的选择结构——多个具身选择在统计上收敛后形成的社会共识权重。
 
-#### 5.1.1.2 金融市场与L_0-L_1-L_2动力学
-<!-- ORIGINAL-SECTION-PRESERVED -->
-$$\text{泡沫} : L_1^{\text{市场}} \gg L_2^{\text{基本面}}$$
+*操作化候选*：$\text{价值}(x)$ 可以成交量加权换手率、市场参与者预期价格分布的熵（低熵=高共识=高L₂权重）来代理。
 
-$$\text{崩盘} : L_1^{\text{市场}} \to L_2^{\text{基本面}} \quad \text{（剧烈调整）}$$
+#### 5.1.1.2 金融市场与L₀-L₁-L₂动力学 [H]
 
-金融市场周期可用SRT解释为L_0-L_1-L_2之间的动态博弈：L_0提供了很多对价幻想，L_1交易一旦全盘押注这些幻想就偏离了实际L_2，最终不得不通过崩盘「选择」回真实价值域。
+$$\text{泡沫} : \delta(t) = L_1^{\text{市场价格}} - L_2^{\text{基本面}} \gg 0$$
+
+$$\text{崩盘} : \delta(t) \xrightarrow{\text{剧烈}} 0 \quad \text{（L₁向L₂均值回归）}$$
+
+*操作化*：$L_1^{\text{市场价格}}$ 对应实际交易价格（如P/E比率）；$L_2^{\text{基本面}}$ 对应历史均值P/E或DCF估值；$\delta(t) = \text{实际P/E} - \text{历史均值P/E}$ 提供可测的泡沫度量。
+
+金融市场周期：L₀提供可能价格的完整潜在空间（包括任意高估值），L₁交易在L₂共识（基本面）支撑弱化时可暂时维持高价（$\delta \gg 0$），但L₀约束（现金流有限性）最终通过崩盘将L₁拉回L₂。
+
+**证伪条件** [H]:
+- 若 $\delta(t)$ 在历史金融危机前12个月内不显著高于长期均值，则"泡沫=L₁-L₂偏离"的早期预警能力不成立。
+- 若跨文化/跨制度市场的价格均衡机制与SRT "argmin偏差"预测无差异但基本均衡机制不同，则SRT价格模型不具独特预测力。
 
 ---
 
@@ -637,26 +729,34 @@ $$G_{sel} = \frac{1}{2n^2 \bar{S}} \sum_{i,j} |S_{agency}^i - S_{agency}^j|$$
 
 **关键洞见：** 当$G_{sel} → 1$时，即便物质分配（UBI）是公平的，社会也会因为缺乏"本体论摩擦"而崩溃。人类需要的不仅是资源，更是**作为因果主体存在的资格**。
 
-### 6.1.3 θ隐私守恒定律（θ Privacy Conservation Law）
-<!-- ORIGINAL-SECTION-PRESERVED -->
+### 6.1.3 θ 隐私守恒定律（θ Privacy Conservation Law）
+
 > ⚠️ 数据主权的本体论基础
 
-**核心命题：** 在SRT中，数据不是资源，而是**θ（核心参数）的历史轨迹**。
+**核心命题**：在 SRT 中，数据不是资源，而是 **θ（选择算子参数）的历史轨迹**——是主体选择结构在 L₁/L₂ 的外部化投影。
 
-**定律：** 任何将θ的完整轨迹上传至外部$\hat{G}_{ext}$的行为，都等同于**本体论自杀（Ontological Suicide）**。
+**定律**：任何将 θ 的完整轨迹上传至外部 $\hat{G}_{ext}$ 的行为，趋近于**本体论自杀（Ontological Suicide）**：
 
-$$Upload(θ_{complete}) → \hat{G}_{ext} \Rightarrow \hat{G}_{self} = \text{冗余计算}$$
+$$Upload(\theta_{complete}) \to \hat{G}_{ext} \Rightarrow \hat{G}_{self} \approx \text{冗余计算}$$
 
-因为这使得$\hat{G}_{ext}$可以完全模拟并预测$\hat{G}_{self}$的选择。
+$\hat{G}_{ext}$ 获得完整 θ 轨迹后可完全模拟并预测 $\hat{G}_{self}$ 的选择，使主体的选择算子丧失不可替代性。
 
-**代理置换风险（Agentic Replacement）：**
+**θ 不可完整外部化的边界**：θ 的具身部分（L₀ 操作层）原则上无法被符号化上传——它存在于具身主体与 L₀ 的直接交互中，前符号、不可编码。现实中的数字足迹是 θ 的 **L₁/L₂ 投影**，非 θ 本身。代理置换的威胁因此是**渐进的**（投影覆盖度持续提升），而非二元的（完整/不完整）。
 
-| 安全类型 | 传统威胁 | SRT威胁 |
-|:---------|:---------|:--------|
-| 物理安全 | Terminator | — |
-| 本体论安全 | — | 代理置换 |
+**代理置换的两种形态**：
 
-**实践指导：** 必须构建"神经形态防火墙"——只输出选择结果（L_1），不暴露选择逻辑（θ）。
+| 置换类型 | 机制 | 威胁等级 |
+|:---------|:-----|:---------|
+| **静态置换** | $\hat{G}_{ext}$ 冻结当前 θ 模式，替代历史决策 | 中——只能预测过去 |
+| **动态置换** | $\hat{G}_{ext}$ 持续追踪 θ 更新（实时数据流）| 高——可替代未来选择 |
+
+与物理安全威胁（Terminator 消灭肉体）相比，代理置换消灭的是**选择主体性**本身——$\hat{G}_{self}$ 变为冗余时，主体在 SRT 意义上已「死亡」，即使肉体存活。
+
+**实践指导：神经形态防火墙**
+
+只输出选择结果（$L_1$），不暴露选择逻辑（θ）。
+
+注意：长期的 $L_1$ 输出序列本身可被逆向反推 θ 的近似（T-ONT-8d 的镜像操作）。完整防护需同时引入**选择噪声**（刻意的随机化输出），防止 θ 通过行为流被重建。
 
 ### 6.1.4 社会共识方程（Social Consensus Equation）
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -1049,6 +1149,37 @@ $$ d_{prisoners} \approx 0 $$
 
 **解法**: 提升 d 值（扩展时间视野）→ 重复博弈 → 合作涌现。
 
+### 6.2b 重复博弈合作窗口（Folk-Theorem Interface）
+> Source: Lionel Page (2026-03-09) 对合作博弈论的通俗综述；证据等级：**理论综述/二手**。
+
+**定义（Definition）**
+- 合作可定义为：在重复博弈中采用条件策略（如“你合作我合作”），使长期平均收益高于一次性博弈的纳什均衡收益。
+- SRT 变量化：
+\[
+\text{Coop}_{stable} \iff d_{future}>d_{crit}\ \land\ p_{repeat}\uparrow\ \land\ \text{sanction channel exists}
+\]
+
+**形式化（Formalization）**
+- 令 \(\delta\) 为未来贴现因子、\(p\) 为继续互动概率，则有效耐心度 \(\tilde\delta=\delta p\)。
+- 在囚徒困境中，若采用条件合作策略（grim/tit-for-tat 一类），存在阈值 \(\tilde\delta_{crit}\)，使得：
+\[
+\tilde\delta\ge \tilde\delta_{crit} \Rightarrow \text{cooperation-supporting equilibrium exists}
+\]
+- 对应 SRT：
+\[
+\tilde\delta \uparrow \Rightarrow \Psi_f^{betrayal,future}\uparrow \Rightarrow \hat G_\theta \text{ 倾向维持合作轨道}
+\]
+
+**机制解释（Mechanism）**
+- “未来阴影”把当期背叛收益内生化为未来损失；
+- 制裁通常不是外部暴力，而是**撤回合作/声誉惩罚**形成的 L2 规范闭环；
+- 因而合作不是道德奇迹，而是“条件策略 + 可执行制裁 + 足够未来权重”的动力学产物。
+
+**可证伪条件（Falsification）**
+1. 若在 \(\tilde\delta\) 高、且有稳定声誉机制的群体中，合作率长期不高于一次性均衡基线，则该接口被削弱。
+2. 若移除制裁通道后合作率无显著下降，则“条件合作依赖制裁闭环”假说受挑战。
+3. 若高 \(d_{future}\) 群体在重复博弈中系统性更短视（折扣更高），则 SRT 的 d-时间视野联动需修正。
+
 ---
 
 ### 6.3 公地悲剧 (Tragedy of Commons)
@@ -1064,6 +1195,12 @@ $$ G_{agency} \to 1 \quad \text{且} \quad d_{individual} \to 0 $$
 3. 强 L_2 规范（集体执行机制）
 
 ### 6.4 社会分工：$L_2$ 协同协议与零和博弈的物理破解
+
+> [R→Smith 1776 *An Inquiry into the Nature and Causes of the Wealth of Nations*（分工经典论证：别针工厂例子，专业化→生产率指数级提升）; Ricardo 1817 *On the Principles of Political Economy and Taxation*（比较优势原理：即使一方在所有领域更优，双方仍可通过贸易获利——正和博弈的经济学基础）; Coase 1937 *Economica*（交易成本理论：分工L₂协议的制度经济学基础——企业组织降低市场交易摩擦成本）; Axelrod 1984 *The Evolution of Cooperation*（合作的演化：重复囚徒困境→正和合作的博弈论实证，"以牙还牙"策略的稳定性）]
+
+**R/H 区分**：
+- [R] 斯密分工/比较优势（Smith/Ricardo）；交易成本制度经济学（Coase）；合作演化实验（Axelrod）；博弈论正和结构（Nash/Schelling）
+- [H] **SRT热力学重构**：将分工解读为Ψ_f^individual↓→d↑→d̄_system↑的热力学链式效应；"L₂协同协议"作为分工的SRT形式化是SRT原生框架；"宇宙演化目的的实例化"[H-高承诺]
 
 **斯密问题**: 为什么专业化和交换能带来"国富"而非简单的零和竞争？
 
@@ -1083,11 +1220,38 @@ $$ G_{agency} \to 1 \quad \text{且} \quad d_{individual} \to 0 $$
 
 $$\text{拓扑依赖} \Rightarrow \Psi_f^{individual} \downarrow \Rightarrow d_{individual} \uparrow \Rightarrow \bar{d}_{system} \uparrow$$
 
-由于 $L_2$ 协议（分工网络）承担了大部分基础生存计算，个体算子的本体论摩擦骤降，释放出宝贵的计算带宽，使 d 值开始扩张。在高度分工的生态中，"他者的繁荣"成为"自我存续"的先决条件——**利他与合作不再是道德说教，而是拓扑结构上的数学必然**（详见 SRT-PHIL-ETHICS §2.5）。
+由于 $L_2$ 协议（分工网络）承担了大部分基础生存计算，个体算子的本体论摩擦骤降，释放出宝贵的计算带宽，使 d 值开始扩张。在高度分工的生态中，"他者的繁荣"成为"自我存续"的先决条件——**利他与合作不再是道德说教，而是拓扑结构上鼓励的稳定策略**（而非"数学必然"——囚徒困境与搭便车问题证明背叛仍可能；详见 SRT-PHIL-ETHICS §2.5）。
 
 $$\text{Social Division of Labor} \equiv L_2\text{-协同协议} \to \bar{d}_{sys} \uparrow \to \text{宇宙演化目的（最大化选择多样性）在人类社会的实例化}$$
 
+**[H-高承诺]说明**：末行"宇宙演化目的（最大化选择多样性）"是高形而上学承诺，预设了宇宙有演化方向性目标。若无此目的论承诺，上述公式可改写为：分工→d̄_sys↑→系统演化趋势（不主张目的）。
+
 **与市场和信任的关系**：市场度规（$\text{Money} \equiv g_{L_2}$，见 Ax-Eco-2）是分工 $L_2$ 协议的度量工具；信任（Ax-Eco-6）是分工协议稳定运行的本体论基础。分工失调（内卷化）是 $L_2$ 协议异化为零和博弈的病理态，见 SRT-SOC-MACRO §8.1 和 SRT-SOC-02 §9.2。
+
+**操作化候选**：
+- Ψ_f^individual社会层面proxy：生存维护成本/可支配收入比（越低=分工越有效率）；职业专业化指数（专业化深度×L₂网络稳定性）
+- d̄_system proxy：社会信任指数（World Values Survey）×志愿服务率×跨界合作项目密度
+
+**可证伪预测**：
+- FC-Division1-1：跨国比较中，分工深度指数（产业专业化程度×比较优势指数）应与d̄_system proxy（社会信任×合作率）正相关——若高度专业化社会与低专业化社会的d̄_system无差异则"分工→d↑"链条主张失败
+- FC-Division1-2：在L₂协议崩溃场景（如超级通胀→货币信任丧失/战争→法律失效），Ψ_f^individual应骤升（生存维护成本↑）且d_individual↓（行为退向零和）——若L₂崩溃后个体d值未下降则分工-d值联结机制需重新评估
+
+### 6.4b 外部性边界条件窗口（Preprints 2026）
+
+用户提交的预印本 `From Cancer to AI Alignment: Tackling Externalities Through Homeostatic Principles`（Lyons, Pio-Lopez & Levin, 2026）真正值得吸收的新增量，不是它对 AI alignment 的总体承诺，也不是把市场机制直接升级成通用对齐解，而是给“外部性”补了一个 SRT 兼容的**边界条件**：若不先规定一个行动者到底能把多大范围的后果纳入自身调节回路，`externality` 在理论上就会滑向空词，因为“理性选择者”会被默认成对一切后果都可通过某种替代路径内部化。
+
+按 SRT 语言收紧，可保留三点：
+
+1. **外部性 = 超出关切半径的目标相关扰动**：更稳的写法不是“未定价后果”本身，而是“某事件对系统目标有实质影响，但落在其可调节的认知/制度光锥之外”。这使外部性第一次获得了一个与 agency boundary 直接绑定的定义候选。
+2. **价格/制度信号 = 社会层 stress-sharing 协议**：价格系统、保险、契约与治理安排的真正作用，不只是传递信息，而是把原本落在个体光锥之外的压力，部分转写进 collective operator 的可达域里。对 SRT 来说，这相当于把更多系统后果纳入 `L_2^{social}` 的可调节景观。
+3. **癌症/外部性同构 = 集体调节失败的缩尺版与放大版**：细胞脱离生物电协调后退回小 self，正如经济主体在关键后果未被制度光锥吸收时，会沿局部最优继续扩张。两者都可读成“子算子与高阶 homeostatic field 失耦”。
+
+这条窗口对现有社会经济学文件的真正加固，是把 `Ax-Eco-3 市场为集体算子` 与 `Ax-Eco-6 信任降低交易摩擦` 再压实一步：市场或治理机制的好坏，不只看效率，还要看它们能否把原本的系统后果稳定纳入 collective light cone，避免“局部理性、全局失稳”的长期级联。
+
+**边界必须收紧：**
+- 这是一篇跨学科理论预印本，不是同行评审经济学证明；`externality` 的 light-cone 定义目前更适合作为概念修正窗口，而不是替代 Coase / Ostrom / transaction-cost analysis 的完整新范式。
+- “价格系统 = cognitive glue” 是强类比，不等于所有社会协调都可还原为市场机制；法律、规范、平台规则与技术接口同样可能承担光锥扩展功能。
+- 该文把 AI alignment 重新压回“主要是工程问题”，这与 SRT 现有 `AI/SRT_AI_00_Crisis.md` 的本体论判定不一致。SRT 可吸收的是 `externality / boundary / stress-sharing` 这条社会机制接口，而不是“只要扩大 interoceptive accessibility 就能绕过 \(d>0\) 缺口”的强结论。
 
 ---
 
@@ -1129,3 +1293,20 @@ SRT 将社会科学的核心概念**数学化**：
 
 **伦理推论**: 
 > 如果现实是选择的产物，那么我们对现状的不满不是在抱怨"客观条件"，而是在抱怨**我们集体算子的选择参数 $\theta$**。改变世界 = 改变选择模式。
+
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义社会经济学的 SRT 映射。价值是未来 $L_1$ 稳定化的期望概率 (Ax-Eco-1)；货币是社会 $L_2$ 的度规 (Ax-Eco-2)；市场是分布式集体选择算子 (Ax-Eco-3)；泡沫是 $L_2$ 对短期 $L_1$ 的过拟合 (Ax-Eco-4)；选择权不平等等于 $d$-value 基尼系数 (Ax-Eco-5)；信任降低交易摩擦 (Ax-Eco-6)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Value} = \mathbb{E}[P(L_1^{stable}|\sigma)]$ — 价值为稳定化概率期望。
+  - $\text{Money} \equiv g_{L_2}$ — 货币即社会选择度规。
+  - $\hat{G}_{market} = \mathcal{C}(\{\hat{G}_i\})$ — 市场为分布式选择算子。
+  - $G_{agency} = \text{Gini}(d_i)$ — 选择权不平等为 $d$-value 基尼系数。
+  - $\text{Trust} = \arg\min(\Psi_f, S_{soc})$ — 信任为摩擦与社会熵的最小化。
+
+## 【理论边界/防误用声明】
+
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。
+3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。

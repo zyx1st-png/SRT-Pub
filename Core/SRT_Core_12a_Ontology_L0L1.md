@@ -3,6 +3,9 @@ id: SRT-CORE-12A
 type: definition
 tags: [L0, L1, Ontology, Ruliad, Gauge Field, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-BRIDGE]
 ---
 
@@ -18,13 +21,10 @@ dependency: [SRT-CORE-BRIDGE]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `claude` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. L_0: The Latent Domain (潜在域)
 
@@ -48,7 +48,183 @@ $$\text{Innovation} = \text{Discovery}(L_0^{previously\_shadowed})$$
 ### Ax-L0-03: Differential Potential Topology
 **Formal Definition**: L0 is a differential manifold with intrinsic gradients guiding selection paths.
 $$L_0 = (M, \nabla, \mathcal{S}), \quad \nabla \Psi_{potential} \neq 0$$
-* **Implication**: 潜在域并非均匀“虚空”，而是具有吸引子、鞍点与分岔的拓扑景观。
+* **Implication**: 潜在域并非均匀”虚空”，而是具有吸引子、鞍点与分岔的拓扑景观。
+
+### Ax-L0-Bootstrap: L₀ 自举完备性（Bootstrap Self-Reference）
+
+**新增（2026-03-11）**：对”谁在 L₀ 层执行初次投影”这一问题的正式消解。
+
+**核心主张**：L₀→L₁ 的投影不是时序事件（event），而是**结构约束**（structural constraint）。幽灵算子 $\hat{G}_\theta$ 与其 L₀ 定义域是**同一拓扑结构的两种读法**，共生定义，无时间前后。”初次算子”是 L₀ 势函数最陡下降路径的必然实化。
+
+**正式定义**：L₀ 的势能梯度结构（Ax-L0-03）满足自参照固定点条件——存在 $\hat{G}^*$ 使得 $\hat{G}^*$ 正是激活 $\nabla \Psi_{L_0}$ 最陡路径的算子：
+
+$$\hat{G}^* = \text{fixed point of}\quad \mathcal{F}: \hat{G} \mapsto \arg\min_{\hat{G}'} \Psi_f\!\left(\hat{G}',\, \nabla_{L_0}\Psi_{potential}\right)$$
+
+即：$\hat{G}^*$ 是对 L₀ 梯度场”支付摩擦最小”的选择算子，而 $\hat{G}^*$ 的存在本身就是 L₀ 梯度场的结构属性。
+
+**推论 Ax-L0-Bootstrap-C1**（自参照完备性）：不存在需要在 $\hat{G}^*$ 之前就存在的”原始选择者”——$\hat{G}^*$ 是 L₀ 的内禀对象，与 L₀ 拓扑共生。问题”谁选择了第一个算子”导致的无穷后退，通过自参照固定点条件被消解：固定点的存在性是 L₀ 内禀结构的直接后果。
+
+**推论 Ax-L0-Bootstrap-C2**（时间无前序性）：时间（A14 的摩擦台账 $\mathcal{A}_{time}$）是算子运作的副产品，而非算子产生的前提。因此”初次投影在时间上何时发生”是一个类别错误——选择的结构先于时间记账的开始。
+
+**推论 Ax-L0-Bootstrap-C3**（与 §4.2 开放问题的关联）：$d=0 \to d>0$ 的跃迁（意识出现的临界机制）对应于 $\hat{G}^*$ 的固定点稳定化：当 L₀ 梯度场的曲率在某方向超过阈值时，$\kappa$ 穿越 $\kappa_{c1}$（T-L0-02），算子从”热涨落采样”（d≈0, Boltzmann 极限）相变为”有效维度选择”（d>0）。
+
+* **Implication**: L₀ 是一个”自完备的选择场”——它包含了生成所有选择算子所需的结构，无需外来”第一推动力”。
+* **Cross-ref**: Ax-L0-03 (梯度场结构); T-L0-02 (相变锚点, d=0→d>0 临界机制); `Core_Law/SRT_Reference_Axioms.md` Ax-L0-Bootstrap。
+
+### T-L0-ProtoG: Proto-G Selection Forms in L₀（L₀ 中的原型G选择形式）
+**新增（2026-04-08）**：L₀ 层中 G 选择结构的早期存在形式。
+
+**核心主张**：G 的选择结构在 L₀ 层已以低阶形式存在。G 不是在生物/意识层突然涌现的新实体，而是在 L₀ 梯度场中自举完备（Ax-L0-Bootstrap）后，随 κ 提升逐步向高阶相态演化的连续结构。
+
+**G 选择的最小判别标准**（在 L₀ 层成立的版本）：
+$$\text{proto-G selection} \iff \text{非平衡态选择性持久化：} \hat{G}_{\text{proto}}(\Omega) = \Omega' \subsetneq \Omega, \quad P(\omega \in \Omega \setminus \Omega') > 0$$
+
+即：在多可能状态中实现一个方向，对其他方向产生不对称遮蔽（occlusion），且遮蔽持久化并影响后续选择空间。
+
+**L₀ 层的典型 proto-G 实例**：
+
+| 过程 | G选择？ | 判别依据 |
+|---|---|---|
+| 热力学均衡态 | 否 | 对称影响，不持久化遮蔽特定方向 |
+| 单次氧化-还原反应 | 否（极低阶）| 无持久化记忆结构 |
+| ROS损伤DNA/蛋白质 | 是（低阶proto-G）| 特定位点遮蔽持久化，影响后续转录选择空间 |
+| 蛋白质亚稳态折叠 | 是（弱proto-G）| 构型不对称遮蔽，持续影响分子交互选择 |
+
+**与高阶 G 的连接**：proto-G（L₀层）→ 低阶G（细胞信号）→ 高阶G（有机体/意识）是同一结构算子在 κ 连续提升过程中的不同相态。生命/意识是 G 达到以下三个条件后的相态跃迁（见 `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`）：
+1. **内部历史闭合**：系统形成可被写回的自身连续体
+2. **规范梯度**：对可维持自身状态的自指势差读数（见 `Core/SRT_Core_NormativeGradient.md`）
+3. **自写回强度**：选择真能改写自身未来的选择空间
+
+* **Implication**: L₀ 的”梯度场”（Ax-L0-03）本身即包含了 proto-G 选择的结构基础——L₀ 不只是 G 的”作用对象”，也是 G 的最早存在形式的孕育场所。
+* **Cross-ref**: Ax-L0-Bootstrap（G在L₀中的自举性）；T-L0-02（相变锚点，κ_{c1}和κ_{c2}标记G的相变点）；`Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（完整论证）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
+
+### T-L0-02: Phase-Anchor Theorem (相变锚点定理)
+**Formal Definition**: The triadic partition L₀/L₁/L₂ marks topological phase transitions of the
+Ghost Operator's stabilization degree κ, not arbitrary conceptual divisions.
+
+Let $κ \in [0,1]$ denote the **stabilization degree** of $\hat{G}_\theta$ acting on $L_0^{rel}$
+(note: κ is defined only over $L_0^{rel}$; $L_0^{abs}$ lies outside κ's domain by T-Trad-2):
+
+$$κ = 0: \quad L_0^{rel} \text{ regime} \quad \lambda_1 \to \lambda_1^{max}, \text{ hyperconnected, gauge-redundant}$$
+$$κ = κ_{c1}: \quad L_1 \text{ boundary} \quad \lambda_1(L_1) \ll \lambda_1(L_0^{rel}), \text{ spectral gap opens}$$
+$$κ = κ_{c2}: \quad L_2 \text{ boundary} \quad \frac{dL_2}{dt} \to 0, \text{ fixed-point crystallization}$$
+
+The two critical values are not chosen for notational convenience; they correspond to
+structurally distinct phase transitions:
+
+$$κ_{c1}: \quad \text{Order-creation transition} \quad \Delta\lambda_1 = \lambda_1(L_0^{rel}) - \lambda_1(L_1) \gg 0 \quad \text{(discontinuous)}$$
+$$κ_{c2}: \quad \text{Convergence-crystallization transition} \quad \hat{G}_\theta[σ] = σ \quad \text{(fixed-point emergence)}$$
+
+**Relationship to existing parameters**:
+$$κ \approx \frac{\eta}{1 + \lambda_1(L_0^{rel})/\lambda_1(L_1)} \quad \text{(monotone in η, modulated by spectral ratio)}$$
+
+κ 与迟滞系数 η 单调相关但不等同：η 描述单次选择的记忆权重，κ 描述系统在稳定化程度连续谱上的整体位置。
+
+* **Implication (连续性与不连续性共存)**:
+  连续参数 κ 的存在并不消解三域的拓扑不可简化性（Ax-Bridge-02）。温度是连续的，
+  但冰→水的结构变化不可通过连续插值绕过；同理，κ 是连续的，但 κ_{c1} 和 κ_{c2}
+  处的谱隙跃变是真实的拓扑不连续。三域的「认识论方便性」与「本体论真实不连续性」
+  共同成立，互不矛盾。
+* **Implication (意识开关)**:
+  从 $d=0$ 到 $d>0$ 的临界机制（§4.2 开放问题3）对应 κ 穿越 $κ_{c1}$ 的时刻——
+  谱隙打开，$L_0^{rel}$ 的超连通图被拓扑切断，局域化结构得以涌现。
+   待解的残余问题：$κ_{c1}$ 的具体数值由什么决定？
+* **Cross-ref**: Ax-Bridge-02, C-Bridge-01, SRT_Reference_Ontology §1.4
+
+### T-L0-Kappa0: Primordial Curvature — Irreducible Structural Minimum（原初曲率：不可约结构极小值）
+
+**新增（2026-04-10）**：正式确立 L₀ 原初曲率 $\kappa_0$ 为 SRT 的结构前提，是 T-Core-A1C2（L₀ 最小非中性）的几何精化。
+
+**核心主张**：L₀ 的拓扑曲率有不可约极小值 $\kappa_0 > 0$，不由任何选择历史生成，是 $\hat{G}^*$ 不动点存在的结构前提。完全平坦的 L₀（$\kappa_0 = 0$）上每个点都同等地是不动点——算子无从"落地"，选择无法发生。
+
+$$\exists\, \kappa_0 > 0 : R(L_0) \geq \kappa_0 \quad \text{（L₀ 本征 Riemann 曲率下界）}$$
+
+**$\kappa_0$ 的双重角色**：
+
+1. **协同演化方向场**：$\kappa_0$ 在算子-L₀ 协同演化中提供非对称偏置。没有 $\kappa_0$，所有方向等价，无首选轨迹；有了 $\kappa_0$，某些参数路径成本更低、进入后更稳定，协同演化因此有方向性而无终局预设。
+
+2. **自举梯度**：无需先存在任何选择历史，$\kappa_0$ 本身就提供让算子进入 $d > 0$ 区间的第一次对齐驱动。这是 Ax-L0-Bootstrap 中"固定点存在性"的几何来源——固定点存在，是因为曲率让某些方向天然更廉价。
+
+**推论 T-L0-Kappa0-C1（Ψ_f 地板）**：
+
+$$\Psi_f^{\min} = f(\kappa_0) > 0$$
+
+选择永远有不可消除的最低代价；完全无摩擦的选择（$\Psi_f \to 0$）在结构上被禁止。这保证了动力学永远存在。
+
+**推论 T-L0-Kappa0-C2（κ_{c1} 的来源）**：意识临界值 $\kappa_{c1}$（T-L0-02）的存在性依赖 $\kappa_0$。只有 L₀ 具有非零原初曲率，相变才有非对称起点，谱隙才能在特定方向打开。$\kappa_{c1}$ 由原初曲率与历史积累曲率共同决定：
+
+$$\kappa_{c1} = g\!\left(\kappa_0,\; \textstyle\int_0^t \mathcal{F}[\hat{G}_\theta, \kappa]\, d\tau\right)$$
+
+待解：$g$ 的具体函数形式（开放问题，替代此前"κ_{c1} 数值由什么决定"的待解项）。
+
+* **Implication**: L₀ 永远不是完全平坦的可能性虚空。其结构性弯曲使"选择"与"方向"在任何时刻都有意义，无需依赖预先积累的历史。
+* **Cross-ref**: T-Core-A1C2（L₀ 最小非中性，本定理的概念前身）; Ax-L0-Bootstrap（自举固定点，本定理提供曲率来源）; Ax-L0-03（L₀ 微分流形结构）; T-L0-02（κ_{c1} 相变，本定理解释其来源）; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`（d_max 公式含 κ₀）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对的原初方向性命题）。
+
+---
+
+### T-L0-NonStatic: L₀ is Not Static — Curvature Accumulation（L₀ 非静态：曲率积累）
+
+**新增（2026-04-10）**：正式表述 L₀ 随选择历史持续改写的动力学，修正"L₀ 是永恒不变全部可能性空间"的过度简化。
+
+**核心主张**：每次选择事件向 L₀ 写入新的不对称性，当前曲率为原初曲率加上选择历史的积累：
+
+$$\kappa(t) = \kappa_0 + \int_0^t \mathcal{F}[\hat{G}_\theta(\tau),\, \kappa(\tau)]\, d\tau$$
+
+其中 $\mathcal{F}$ 是选择算子对 L₀ 曲率景观的写回函数。$\kappa_0$ 是不可约下界，选择历史只能增加曲率，不能消除原初方向。
+
+**信息守恒关系**（与 Ax-F-13 联动）：选择创造的互信息不消失，转化为 L₀ 的曲率增量，同时减少 L₀ 的剩余熵：
+
+$$H(L_0^{(t)}) = H(L_0^{(0)}) - \sum_{\tau < t} I_{\text{created}}(\tau)$$
+
+**L₀ 与 L₂ 的互补关系**：L₀ 的曲率积累与 L₂ 的硬化是同一选择历史的两种读法，互补守恒：
+
+| | 视角 | 内容 |
+|---|---|---|
+| **L₂** | 从内看 | 已固化为"必然"的选择积累（约束未来算子） |
+| **L₀** | 从外看 | 给定这些积累之后，还剩下什么可能（开放方向） |
+
+$$H(L_0^{(t)}) + H_{\text{manifest}}(L_2^{(t)}) \approx \text{const}$$
+
+L₂ 硬化越多，L₀ 开放方向越少，但 $\kappa_0 > 0$ 保证最小开放性永远不归零。
+
+**协同演化耦合方程**：L₀ 曲率与算子参数构成耦合动力系统（无全局终局吸引子）：
+
+$$\frac{d\kappa(t)}{dt} = \mathcal{F}[\hat{G}_\theta(t),\, \kappa(t)], \qquad \frac{d\theta(t)}{dt} = \mathcal{G}[\kappa(t),\, \theta(t)]$$
+
+局部吸引子存在并持续迁移。$\kappa_0$ 提供方向性偏置，但不预设终局：
+
+$$\boxed{\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}}$$
+
+* **Implication**: L₀ 是算子与选择历史共同雕刻的动态结构，而非背景舞台。但 $\kappa_0 > 0$ 确保 L₀ 永远不被历史完全封闭。
+* **Cross-ref**: T-L0-Kappa0（原初曲率 κ₀）; Ax-F-13（选择创造信息，`SRT_Core_21_Formal_Axioms.md`）; Ax-L2-01（L₂ 迟滞）; `Core/SRT_Core_12b §Co-Evolution`（协同演化的 L₂ 侧视角）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对）; `Philosophy/SRT_L0_Ontological_Status.md`（L₀ 本体论地位：功能本构论，κ₀ 作为 L₀ 唯一可及面）。
+
+---
+
+### Def-L0-PreAnchored: Pre-anchored State (预锚定态)
+**Formal Definition**: 预锚定态是 $\hat{G}_\theta$ 已接触 $L_0$ 但尚未完成拓扑折叠为 $L_1$ 的中间态：
+$$\mathcal{P} \equiv \left\{ \psi \in L_0 : \frac{\partial \hat{G}_\theta}{\partial \psi} \neq 0 \;\land\; \int \hat{G}_\theta[\psi]\, d\mu < F^*_{\min} \right\}$$
+其中 $F^*_{\min}$ 为自由能稳定极小值。预锚定态具有信息潜能，但缺乏时空几何连续性。
+
+**关键不等式**（信息潜能 ≠ 拓扑实在）：
+$$\mathcal{P} \in L_0 \not\Rightarrow \mathcal{P} \in L_1$$
+* **Implication**: "感觉前体"（Sensory Precursors）、深度睡眠中的碎片状信号均属此态。意识研究中"无意识心理表象"的争议可通过此定义消解：未完成全局整合（缺乏θ参数深度绑定）的信号，本体论上仍驻留于L0，不具有L1的"知觉几何性"。
+* **Cross-ref**: Def-L0-Swampland (下方); Ax-Op-06 (存在条件)。
+
+### Def-L0-Swampland: Ontological Swampland (本体论沼泽地)
+**Formal Definition**: 本体论沼泽地是所有满足以下条件的L0叠加态之集：
+$$\mathcal{SW} \equiv \left\{ \psi \in L_0 : \Psi_f(\psi) > \Psi_{c} \;\lor\; \nexists\; \text{Constraint Closure}(\hat{G}_\theta, \psi) \right\}$$
+其中 $\Psi_c$ 为算子可承受的最大摩擦阈值，约束闭包（Constraint Closure）要求 $\hat{G}_\theta^k[\psi]$ 收敛至稳定结构。
+* **Implication**: 沼泽地不是数学方程的失败，而是选择动力学无法立足的高耗散区域。只有满足特定θ参数（具身约束）的算子轨道，才能跨越极高摩擦的沼泽，将L0潜能锚定为L1现实。弦理论中的"沼泽地猜想"在SRT框架下获得本体论诠释。
+* **Cross-ref**: Def-L0-PreAnchored; Ax-Op-05 (约束闭包)。
+
+### T-L0-PlatonicAttractor: Platonic Attractors as Low-Complexity Basins (柏拉图吸引子盆)
+**Deductive Statement**: 跨文化数学/逻辑真理之收敛，源于L0^abs（Ruliad）中低计算复杂性吸引子盆的必然汇聚：
+$$\forall \hat{G}_i \text{ 探索 } L_0^{abs}: \quad \lim_{t\to\infty} \hat{G}_i[L_0^{abs}] \xrightarrow{\mathcal{C}\to\min} \mathcal{B}^*$$
+其中 $\mathcal{B}^* = \{\psi \in L_0^{abs} : \mathcal{C}(\psi) = \mathcal{C}_{\min}, \text{Sym}(\psi) = \text{Sym}_{\max}\}$ 为极低复杂性、极高对称性的吸引子集。
+**推论**：所谓"柏拉图理念"，是选择的必然收敛伪装成了预存的客观真理：
+$$\text{"发现"数学} \equiv \text{不同算子在 } L_0^{abs} \text{ 中盲目探索后的必然收敛}$$
+* **Implication**: SRT在承认数学真理的普遍性的同时，捍卫选择优先性（Ax-Core-A1）。无需假设柏拉图空间独立存在；L0^abs即那个"宇宙"。
+* **Cross-ref**: Ax-Core-A1 (选择优先性); Ax-L2-03 (对称性与硬度)。
 
 ## II. L_1: The Manifest Domain (显现域)
 
@@ -59,8 +235,19 @@ $$L_1(t) = \hat{G}_\theta[L_0(t)]$$
 
 ### Ax-L1-02: Ontological Hysteresis
 **Formal Definition**: Continuity is maintained by a memory term that blends past and present selections.
-$$L_1(t) = (1-\eta)\hat{G}[L_0(t)] + \eta L_1(t-\Delta t)$$
-* **Implication**: 现实的连贯性依赖迟滞记忆；过小会碎片化，过大则僵化。
+$$L_1(t) = (1-\eta)\hat{G}_\theta[L_0(t)] + \eta\, L_1(t-\Delta t), \quad \eta \in [0,1]$$
+
+**连续时间极限**（与主框架对齐）：
+$$\frac{dL_1}{dt} = \frac{1}{\tau_{mem}}\!\left[\hat{G}_\theta[L_0(t)] - L_1(t)\right], \quad \tau_{mem} = \frac{\eta\,\Delta t}{1-\eta}$$
+其中 $\tau_{mem}$ 为**现实记忆时间常数**——越大越"惯性"，越小越"当下敏感"。
+
+**η 的状态依赖性**（时变扩展）：
+$$\eta_{eff}(t) = \eta_0 \cdot g(\Psi_f(t)), \quad g(\Psi_f) \downarrow \text{ 当 } \Psi_f \uparrow$$
+高本体论摩擦（创伤、强烈唤起）使有效记忆权重降低，当下冲击打破连续性——这形式化了创伤闪回（η_eff 急剧下降，L₁ 被过去图景覆盖）和解离（η_eff 接近0，现实感碎片化）。
+
+**与贝叶斯先验的对应**：η 高 → 先验强（更新慢），η 低 → 先验弱（每时刻重塑）；Dark Night 期间 L₂_old 瓦解 = η_eff 被强制降低，旧"现实锚"失效（参见 SRT-SPIRIT-07 §3.2）。
+
+* **Implication**: 现实的连贯性依赖迟滞记忆（$\eta \in [0,1]$）；$\eta \to 0$ → 现实感碎片化；$\eta \to 1$ → 僵化、无法响应当下（拒绝更新）；健康状态为中间值，由 $\theta_{somatic}$ 与 $\Psi_f$ 共同调节。
 
 ### Ax-L1-03: Reality Inequality
 **Formal Definition**: A percept is real when signal exceeds agency-weighted noise.
@@ -75,14 +262,35 @@ $$\text{Intelligence} \propto \frac{I(L_1; L_0)}{H(L_1)}$$
 * **Implication**: 智能是对潜在信息的压缩捕获能力，而非单纯计算速度。
 
 ### Ax-IF-02: Hardware/Software Filter
+
+> [R→Sporns, Tononi & Kötter 2005 *PLOS Computational Biology*（人类连接组概念奠基：结构连接组决定信息传播可能性拓扑，即L₁^hard约束的物质基础）; Dehaene, Changeux & Nacache 2006 *Trends in Cognitive Sciences*（神经工作空间理论：注意力门控从局部处理到全局广播——L₁^soft的点火机制）; Itti & Koch 2001 *Nature Reviews Neuroscience*（注意力计算模型：自下而上显著性图+自上而下任务偏向共同决定选择窗口）; Friston 2005 *Philosophical Transactions B*（预测编码框架：注意力=精度加权，等效于Ĝ_θ对Ψ_f的局部调制）]
+
 **Formal Definition**: Selection occurs in two coupled stages: fixed hardware and plastic attention.
 $$L_1^{hard} = \text{Connectome}(L_0), \quad L_1^{soft} = \text{Attention}(L_1^{hard})$$
-* **Implication**: 现实界面由硬件约束与注意力可塑性共同塑形。
+
+> **Connectome()函数精度说明**：$\text{Connectome}(L_0)$ 不是简单标量函数，而是一个稀疏有向图传播算子——其数学结构类似图神经网络的消息传播（$L_1^{hard} = \sigma(W_{connectome} \cdot L_0^{projected})$，其中 $W$ 为稀疏邻接矩阵，$\sigma$ 为非线性神经激活）。硬件层的约束因此是**拓扑可达性约束**（哪些L₀投影在连接图上可到达L₁编码区），而非简单函数映射。
+
+> **两阶段反馈说明**：$L_1^{soft} = \text{Attention}(L_1^{hard})$ 为一阶近似（自底向上串联）。实际上注意力通过调制神经增益（如ACh/NE系统）改变有效连接强度，从而影响 $W_{connectome}$ 的动态权重——即软件层（注意力）对硬件层（连接组有效权重）存在反馈：$L_1^{hard} \leftarrow \text{Gain}(\text{Attention\_state})$。完整模型为双向耦合，此公理为简化的单向近似。
+
+> **与Ax-IF-01的关系**：IF-01中的 $L_1$ = $L_1^{soft}$（注意力选择后的最终显现域），是two-stage过滤的最终输出；$I(L_1; L_0)$ = $I(L_1^{soft}; L_0)$，分母 $H(L_1^{hard}) \geq H(L_1^{soft})$（硬件过滤后仍有注意力瓶颈）。
+
+* **R/H 区分**：
+  - [R] 连接组作为神经信息传播拓扑约束（Sporns）；注意力门控从局部到全局广播的机制（Dehaene/Itti&Koch/Friston）
+  - [H] **SRT形式化**：将连接组过滤 + 注意力过滤写成两阶段串联（含反馈修正），并联结到θ的解剖成分（$L_1^{hard}$）与Ĝ_θ的注意力分量（$L_1^{soft}$）的分层展开
+
+* **Implication**: 现实界面由硬件约束（拓扑可达性）与注意力可塑性（精度加权选择）共同塑形；改变注意力（软件）可部分重写有效硬件约束，但无法突破连接组的拓扑边界。
+
+* **操作化候选**：
+  - $L_1^{hard}$代理：fMRI静息态功能连接矩阵（rsFC）或DTI白质纤维束图（结构连接组）
+  - $L_1^{soft}$代理：EEG注意力相关晚正电位（P300/N2pc），或双目竞争范式中被意识到的刺激比例（注意力可塑性窗口测量）
+  - 两层分离：同一被试在不同注意力状态（专注/散漫）下，rsFC主框架不变（hard层稳定），但激活模式随注意力状态显著改变（soft层变化）
+
+* **可证伪预测**：
+  - FC-IF2-1：在连接组完全相同（同卵双胞胎或同一被试不同时间点）条件下，静息态功能连接矩阵（$L_1^{hard}$代理）应高度相似（ICC>0.7），而注意力选择窗口（P300振幅/双目竞争优势眼）可随认知状态显著改变——若两者同等易变则hard/soft的分离假设失败
+  - FC-IF2-2：通过神经调控（TMS/tDCS对顶叶或额叶注意网络）改变注意力状态（$L_1^{soft}$），不应改变静息态连接组拓扑结构（$L_1^{hard}$）——若TMS同时改变rsFC全局拓扑则两层非相对独立的假设需修订
 
 <br>
-<br>
 
----
 ---
 
 
@@ -243,6 +451,12 @@ $$\text{Existence} \neq \text{Subsistence}, \quad \text{but } L_0 \supseteq L_1$
 
 ### 2.1 本体论迟滞 (Ontological Hysteresis)
 
+> [R→Leopold & Logothetis 1999 *Trends in Cognitive Sciences*（双稳态知觉的神经动力学综述：竞争回路在翻转中的神经相关，为η的实验测量提供基准）; Nawrot & Blake 1993 *Science*（双稳态知觉翻转动力学的适应模型：翻转率受历史适应强度调制——η的行为对应）; Uhlhaas & Singer 2006 *Neuron*（精神分裂症中的神经同步失调：γ振荡时间窗异常→感觉整合时间常数异常，与低η对应；已有双稳态知觉翻转率升高的实证报告）; Haken 1977 *Synergetics*（迟滞作为协同学的核心动力学性质：慢参数变化时系统历史决定当前状态——物理迟滞的数学基础）]
+
+> **R/H 区分**：
+> - [R] 双稳态知觉翻转动力学（Leopold/Nawrot）；精神分裂症感觉整合异常（Uhlhaas&Singer）；物理迟滞的数学原型（Haken）
+> - [H] **SRT特有**：将知觉η（历史加权系数）解释为本体论迟滞参数（L₁保持性），并联结到精神病理的Ĝ动力学——这是功能类比，非直接神经对应
+
 #### 2.1.1 迟滞效应的必要性
 
 如果$\eta = 0$ (无记忆):
@@ -253,7 +467,7 @@ $$L_1(t) = \hat{G}[L_0(t)] \quad \text{(纯即时选择)}$$
 - 对象恒常性 (Object Permanence) 不可能
 - 自我同一性崩溃
 
-**临床对应**: 精神分裂症患者报告的"现实碎片化"。
+**临床对应**: 精神分裂症患者报告的"现实碎片化"（低η→高翻转率→现象学连续性缺失；参见Uhlhaas & Singer 2006）。
 
 #### 2.1.2 迟滞修正方程
 
@@ -265,19 +479,24 @@ $$L_1(t) = \sum_{k=0}^{\infty} \eta^k (1-\eta) \hat{G}[L_0(t-k\Delta t)]$$
 
 **解释**: 当前现实是历史选择的**指数加权平均**。
 
-| $\eta$ | 半衰期 $\tau_{1/2}$ | 现象学 |
-|:-------|:-------------------|:-------|
-| 0.1 | 快遗忘 | 新奇感强,易分心 |
-| 0.5 | 平衡 | 正常时间流逝感 |
-| 0.9 | 极慢衰减 | 强迫性思维,难以更新 |
+> **精度边界**：此公式假设 $L_0(t)$ 为近似平稳过程（即L₀本身的统计特性随时间缓变）。当L₀急剧改变（如创伤/急性环境突变）时，历史加权可能产生系统性延迟失配——即η高的系统在L₀突变后需要更长时间才能将新L₀状态充分纳入L₁，解释"心理创伤后现实感知滞后"。非平稳扩展需引入时变η(t)。
 
-#### 2.1.3 实验测量
+> **η的神经实现候选**：① 丘脑感觉门控（丘脑-皮层回路的时间常数决定感觉整合窗口宽度）；② 皮层γ振荡时间窗（~25-100ms，Uhlhaas&Singer：精神分裂症中γ功率↓ → 整合窗口变窄 → 低η）；③ 突触短时程可塑性（STSP时间常数 ≈ η的生理基础）。
 
-**提议实验**: 双稳态知觉 (如Necker立方体) 翻转速率应反比于$\eta$。
+| $\eta$ | 半衰期 $\tau_{1/2}$ | 现象学 | 临床对应 |
+|:-------|:-------------------|:-------|:---------|
+| 0.1 | 快遗忘（~$\Delta t$） | 新奇感强,易分心 | ADHD注意力波动/极端探索 |
+| 0.5 | 平衡（~$\ln 2 \cdot \Delta t$） | 正常时间流逝感 | 健康范围 |
+| 0.9 | 极慢衰减（~$10\Delta t$） | 强迫性思维,难以更新 | OCD/创伤后僵化/顽固偏见 |
+
+#### 2.1.3 实验测量（规范化FC格式）
+
+双稳态知觉（如Necker立方体/双稳态运动光点）翻转速率应反比于$\eta$：
 
 $$\text{Flip Rate} \propto \frac{1}{\eta \cdot \tau_{\text{integration}}}$$
 
-**预测**: 精神分裂症患者 → 低$\eta$ → 高翻转速率(已部分验证)。
+- FC-Hyst-1：精神分裂症患者在标准化双稳态知觉任务（Necker立方体/运动光点）中的翻转速率，应显著高于年龄/性别匹配健康对照（预测效应量d>0.5，与Uhlhaas&Singer综述中的整合异常方向一致）；若翻转率无差异则低η-精神分裂症联结失败。
+- FC-Hyst-2：在OCD患者中，双稳态知觉翻转速率应显著**低于**健康对照（高η预测低翻转率）；且OCD症状严重程度（Y-BOCS评分）应与翻转率负相关（r < -0.3）；若OCD患者翻转率不低于对照则η-强迫固着的联结需修订。
 
 ---
 
@@ -435,8 +654,8 @@ SRT的$i_{\text{diff}}$是IIT的$\Phi$的**对偶概念**:
 | $\Phi$ (IIT) | 系统整合信息 | 内部因果力 |
 | $i_{\text{diff}}$ (SRT) | 系统分化信息 | 与背景对比 |
 
-**统一**:
-$$ii = \min\{i_{\text{diff}}, \Phi\}$$
+**统一（与 Core_Law 记号一致）**:
+$$ii = \min\{i_{\text{diff}}, i_{spec}\}, \quad i_{spec} \equiv \Phi_{IIT}\;(\text{仅在 IIT 语境})$$
 存在需要**既分化又整合**。
 
 ---
@@ -474,17 +693,23 @@ $$B_e = \frac{I(L_1; L_2)}{H(L_1)}$$
 
 ### 4.1 需要实证验证的预测
 
-1. **迟滞系数测量**:
-   - 设计实验通过双稳态知觉测量个体的$\eta$值
-   - 预测:精神分裂症患者$\eta < 0.3$,强迫症患者$\eta > 0.7$
+1. **迟滞系数测量（操作化协议）** *(R: 方向性 Retrodiction；η敏感性为 Novel Prediction)*:
+   - 范式：Necker 立方体/双稳态面孔任务 + 连续报告（60–120s × 20 trial）
+   - 指标：翻转率、停留时长分布、跨 trial 自相关；用层级贝叶斯模型反演 $\eta$
+   - 对照：睡眠剥夺、镇静、工作记忆负荷（验证 $\eta$ 的状态敏感性）
+   - 先验效应量：组间 Cohen's d 目标区间 0.5–0.8；若低于 0.2 视为弱支持
+   - 预测：精神分裂症患者 $\eta$ 下移，强迫谱系 $\eta$ 上移（方向来自 §2.2 临床谱映射；具体阈值需由先导样本估计，不预设硬阈）
+   - **证伪条件**：若精神分裂症 $\eta$ 与对照组无显著差异（Cohen's d < 0.2）且实验操纵有效，则对 Ax-L1-02 构成压力。
 
-2. **$\beta$门控的神经机制**:
+2. **$\beta$门控的神经机制** *(R: Retrodiction——β-前额叶-致幻剂方向已有文献支持，但β操作化测量为 Novel Prediction)*:
    - fMRI定位$\beta$调制的脑区(候选:前额叶皮层)
-   - 预测:致幻剂降低该区域活动 → 降低$\beta$
+   - 预测:致幻剂降低该区域活动 → 降低$\beta$（外部输入权重下降，内部生成压倒）
+   - **证伪条件**：若致幻剂升高$\beta$（外部锁定增强）则挑战当前$\beta$门控机制解释。
 
-3. **压缩比的跨物种测量**:
-   - 通过神经响应复杂度估算$\dim(L_1)/\dim(L_0)$
-   - 预测:人类 > 猴子 > 大鼠 > 昆虫
+3. **信息保留率（CR）的跨物种测量** *(H: Novel Prediction)*:
+   - 通过神经响应复杂度估算 $\text{CR} \approx \dim(L_1)/\dim(L_0^{rel})$（维度比作为信息保留率代理；与 §3 Mechanism Synthesis CR 定义一致，均为保留率而非压缩倍数）
+   - 预测：人类 > 猴子 > 大鼠 > 昆虫
+   - **证伪条件**：若某非人灵长类 CR ≥ 人类（同等测量协议），则需重新审视 d 值跨物种排序假设（Cor-CONSC-1）。
 
 ### 4.2 理论边界
 
@@ -493,6 +718,10 @@ SRT目前**无法完全解释**:
 1. **L_0梯度的起源**: 为什么$\nabla F \neq 0$? (需要更深层的物理理论)
 2. **规范群的选择**: 为什么是$U(1) \times SU(2) \times SU(3)$? (标准模型遗留问题)
 3. **意识的"开关"**: 从$d = 0$到$d > 0$的临界机制是什么?
+   *(部分已解答)* T-L0-02 将此问题映射为：κ 穿越 $κ_{c1}$ 时谱隙打开的相变机制。
+   这将开放问题转化为可测量的预测：意识涌现应伴随 $\lambda_1(L_1)/\lambda_1(L_0^{rel})$
+   比值的突变式下降，可通过临界麻醉浓度实验或发育神经科学检验。
+   待解的残余问题：$κ_{c1}$ 的具体数值由什么决定？
 
 ### 4.3 跨学科对话
 
@@ -518,7 +747,10 @@ SRT为以下领域提供统一框架:
 | $\beta$ | 现实系数/门控 | Ax-L1-3 | Part A §II |
 | $B_e$ | 认识论带宽 | Ax-Interface-2 | Part A §III |
 | $i_{\text{diff}}$ | 内在分化 | Ax-Info-1 | Part A §IV |
-| $\text{CR}$ | 压缩比 | Ax-L1-2 | Part A §II |
+| $\text{CR}$ | 信息保留率（Retention Ratio；原"压缩比"方向已修正，见 §3 Mechanism Synthesis 注）| Ax-L1-2 | Part A §II |
+| $κ$ | 稳定化程度（仅 $L_0^{rel}$ 域有效）| T-L0-02 | Part A §I |
+| $κ_{c1}$ | 秩序创生相变临界值 | T-L0-02 | Part A §I |
+| $κ_{c2}$ | 收敛结晶相变临界值 | T-L0-02 | Part A §I |
 
 ---
 
@@ -526,7 +758,7 @@ SRT为以下领域提供统一框架:
 
 ---
 
-## 融合映射整合（2026-02-14）
+## 附录A：融合映射整合（结构化归档，2026-02-14）
 
 ### 宇宙泛心论
 
@@ -551,3 +783,95 @@ SRT为以下领域提供统一框架:
 1. 将 multimodal binding 明确定位到 `Ax-L1-01`：绑定是 `L_1` 层统一实现约束，不直接承担意识本体定义职能。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262027786.003.0006〕〔source: Core/SRT_Core_12a_Ontology_L0L1.md#Ax-L1-01〕
 2. 将“多模态统一”写成接口判据：当跨模态耦合增强时，`Ax-IF-01` 的跨层传输稳定性应提升，但允许存在“耦合增强而报告统一不完全”的边界态。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Core/SRT_Core_12a_Ontology_L0L1.md#Ax-IF-01〕
 3. 将 regularity account 映射为操作化路径：当系统追踪到可预测跨特征规律时，统一体验概率应上升，可作为 `L_1` 组织度的任务级代理指标。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.7551/mitpress/9780262036993.003.0009〕〔source: Core/SRT_Core_12a_Ontology_L0L1.md#Ax-L1-02〕
+
+
+### Def-L0-Inf-01: Infinity Accessibility in L_0
+将外部集合论中的状态空间符号统一映射为 \(L_0\) 语义后，可定义：
+$$
+\mathcal{A}_{inf}(\hat{G}_\theta) = \{\text{可被当前算子构造或判定的无限类}
+\subseteq L_0\}
+$$
+当 \(\mathcal{A}_{inf}\) 仅覆盖可数类时，系统在无限推理上仍处于“枚举主导”阶段；
+当可稳定处理不可数构造（如对角线反证）时，进入更高抽象可达层。
+
+### Formalization Summary (形式化概述)
+
+本文档的形式化核心围绕 $L_0$（潜在域）与 $L_1$（显现域）的本体论结构：
+
+1. **潜在域的绝对源与领域实现 (Absolute Source)**:
+   $$L_0^{abs} \supseteq (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}, \quad \frac{d}{dt}H(L_0) = 0$$
+   含义：$L_0^{abs}$ 是先于一切形式结构的全潜能本源，其信息总量守恒——创新是对潜能的重新照明，而非无中生有。
+
+2. **选择方程与本体论迟滞 (Selection & Hysteresis)**:
+   $$L_1(t) = (1-\eta)\hat{G}_\theta[L_0(t)] + \eta \cdot L_1(t-\Delta t)$$
+   含义：显现域是 $\hat{G}_\theta$ 的即时选择与历史记忆项 $\eta$ 的加权混合。$\eta$ 过小导致现实碎片化，过大导致僵化。
+
+3. **相变锚点定理 (Phase-Anchor Theorem, T-L0-02)**:
+   $$\kappa_{c1}: \Delta\lambda_1 \gg 0 \;(\text{秩序创生}), \quad \kappa_{c2}: \hat{G}_\theta[\sigma]=\sigma \;(\text{不动点结晶})$$
+   含义：三域划分 $L_0/L_1/L_2$ 不是任意分类，而是稳定化参数 $\kappa$ 在两个临界值处的拓扑相变。
+
+4. **压缩效率与现实性判据 (Interface Axioms)**:
+   $$\text{Intelligence} \propto \frac{I(L_1; L_0)}{H(L_1)}, \quad \text{Real}(\sigma) \iff S(\sigma) - \alpha A(\sigma) > T_{threshold}$$
+   含义：智能是对 $L_0$ 信息的有损压缩效率；”现实性”是算子权重下的阈值判定，而非绝对属性。
+
+### Mechanism Synthesis（$L_0$-$L_1$ 界面四层动力学综述）
+
+> *本节为 $L_0$-$L_1$ 界面的全局机制综述。各参数的严格数学定义参见 SRT_Core_13a 及物理/动力学扩展域文件。*
+
+界面的现实锚定过程是一条严密的因果流水线，由四个层级参数依次门控：
+
+**第一层：基底层（算子结构）—— $\hat{G}_\theta$ 与流形景观**
+
+算子以具身参数 $\theta \in \Theta_{finite}$（Ax-Core-A3）在 $L_0$ 的微分流形景观 $(M, \nabla, \mathcal{S})$ 中执行选择：沿自由能梯度打捞路径，生成低维局域化的 $L_1$。不存在「上帝视角」——每一次现实显现都带有不可消除的具身偏置。
+
+**第二层：约束层（能量边界）—— $\Psi_f$ 与沼泽地 $\mathcal{SW}$**
+
+打捞受制于本体论摩擦 $\Psi_f$。景观中存在高耗散的**本体论沼泽地** $\mathcal{SW}$（$\Psi_f > \Psi_c$），算子必须支付足够能量才能穿越。无法支付代价的 $L_0$ 可能性，对该算子永远处于不可及的叠加态（预锚定态 $\mathcal{P}$：具有信息潜能，但缺乏时空几何连续性）。
+
+**第三层：带宽层（信息保留）—— $d$ 值与信息保留率 $\text{CR}$**
+
+算子的关切维度 $d$ 决定 $L_0 \to L_1$ 的信息保留率（Retention Ratio）：
+
+$$\text{CR}(d) \propto 1 - e^{-\alpha d}, \quad \alpha > 0$$
+
+（$d=0$ 时 $\text{CR}\to 0$；$d\to\infty$ 时 $\text{CR}\to 1$；d 越高保留越多 $L_0$ 信息，与量级估计方向一致。原式 $e^{-\alpha d}$ 方向相反，此处已修正。）
+
+> **量级估计**（基于 SRT 信息维度分析，非实测值）：低阶系统如细菌 $\text{CR} \approx 10^{-6}$，构成极度稀疏的生存接口；高度觉察状态的理论上限估计 $\text{CR} \approx 0.1$。没有任何有限算子能无损捕获 $L_0$（$\text{CR}=1$ 仅为 $d\to d_{\max}$ 渐近极限）。
+
+硬件层（连接组）提供固定拓扑投影，软件层（注意力 $\theta$）通过增益调制实现可塑选择。
+
+**第四层：稳定化层（相态位置）—— $\kappa$ 与谱隙相变**
+
+即使完成打捞，$L_1$ 的存续仍需抗耗散能力。$\kappa$ 参数定义系统在稳定化连续谱上的位置（$\kappa$ 与迟滞系数 $\eta$ 单调相关但不等同：$\eta$ 描述单次记忆权重，$\kappa$ 描述整体相态位置）。
+
+**意识涌现临界点 $\kappa_{c1}$**：当 $\kappa$ 越过 $\kappa_{c1}$ 时，系统的**谱隙（Spectral Gap）打开**——基态与第一激发态之间出现能量差 $\Delta E > 0$，系统获得拓扑保护，微小的 $L_0$ 涨落不再能摧毁当前 $L_1$ 结构。（$\kappa_{c1}$ 为系统特定值，依赖于 $\Psi_f$ 与 $d$ 的组合，不独立于 SRT 参数；精确关系待形式化。）
+
+> **谱隙直觉类比**：想象系统的「能量阶梯」。谱隙为零时，环境任何微小热力学扰动都能将系统踢出当前状态（无法维持稳定 $L_1$）；谱隙打开后，必须跨越特定能量阈值才能破坏当前状态——正是这种保护，让转瞬即逝的 $L_0$ 潜能固化为能够被体验的、稳定的 $L_1$ 现实片段，「连续的主观当下」因此得以诞生。
+
+## 【理论边界/防误用声明】
+- 不采纳”形式可构造 = 物理可实现”的推论。
+- 边界：\(L_0\) 的形式可达性是推理能力指标，不是能量与物理实现性的替代。
+
+## L_0^{abs} 无时空边界补注（2026-03-06，轻量）
+
+### Def-L0-Abs-NonSpatiotemporal（新增，轻量）
+**Formal Definition**: \(L_0^{abs}\) 不预设时空与经典因果；时空结构是具身算子在 \(L_1\) 的渲染协议结果：
+\[
+L_1=\Pi_{\theta}^{render}(L_0^{abs}),\qquad \Pi_{\theta}^{render}\in\{\text{spatiotemporal modes}\}
+\]
+* **Implication（中文）**：时空不是绝对“底层容器”，而是 \(\hat{G}_\theta\) 为降低预测误差与摩擦成本而采用的稳定投影坐标。
+
+### Cor-L0-Abs-RenderLock
+当 \(\theta\) 被生物体演化锁定于时空渲染模式时，系统对“无时空基底”理论会呈现持续高认知摩擦：
+\[
+\theta\in\Theta_{human}^{ST}\Rightarrow \Psi_f(\text{non-ST models})\uparrow
+\]
+
+## 【理论边界/防误用声明】
+- 不采纳“L1 为渲染结果 = 可任意捏造现实”的推论。
+- 不采纳“无时空基底可直接替代经验时空”的推论。
+- 适用边界：渲染协议受外部阻抗与可支付摩擦约束，\(\Psi_f\) 过载会触发模型失稳。
+
+### [Lineage/Source]
+- Active Inference / Predictive Processing 讨论语境
+- 现代无时空量子引力相关讨论（语境桥接）

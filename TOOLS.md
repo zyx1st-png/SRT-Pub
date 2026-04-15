@@ -1,56 +1,23 @@
-# TOOLS.md - Local Notes
+# TOOLS.md - SRT Local Notes
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+This file keeps SRT-specific tool conventions local to the project so sibling OpenClaw/ClawX projects do not overwrite them.
 
-## What Goes Here
-
-Things like:
-
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
-
-<!-- clawx:begin -->
 ## ClawX Tool Notes
 
 ### uv (Python)
 
-- `uv` is bundled with ClawX and on PATH. Do NOT use bare `python` or `pip`.
-- Run scripts: `uv run python <script>` | Install packages: `uv pip install <package>`
+- Run project scripts from `SRT/` with `uv run python <script>`.
+- If a helper script lives one level up, run it from `SRT/` as `uv run python ../scripts/<script>.py`.
+- Prefer `uv pip install <package>` if this project needs a package-level install step.
 
 ### Browser
 
-- `browser` tool provides full automation (scraping, form filling, testing) via an isolated managed browser.
-- Flow: `action="start"` → `action="snapshot"` (see page + get element refs like `e12`) → `action="act"` (click/type using refs).
-- Open new tabs: `action="open"` with `targetUrl`.
-- To just open a URL for the user to view, use `shell:openExternal` instead.
-<!-- clawx:end -->
+- Use the browser automation flow when page interaction is required: start -> snapshot -> act.
+- For simple link-opening tasks, prefer the platform's external-open behavior instead of full browser automation.
+
+### SRT Paths
+
+- Canonical ops docs live in `Operations/`.
+- Canonical governance docs live in `Governance/`.
+- Generated artifacts normally stay in `data/`, `papers/`, or `memory/`.
+- Historical `SRT_openclaw/` references are legacy only and should not be used as live paths.

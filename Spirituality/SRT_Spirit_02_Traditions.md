@@ -3,6 +3,9 @@ id: SRT-SPIRIT-02
 type: analysis
 tags: [Buddhism, Vedanta, Christianity, Sufism, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-01]
 ---
 
@@ -18,13 +21,8 @@ dependency: [SRT-SPIRIT-01]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 采用 `claude` 的原始论述分段，并以原版文件标题与主旨作语义锚定。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.  
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.  
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Eastern Non-Dualism (东方非二元论)
 
@@ -93,9 +91,7 @@ $$ \mathcal{T}_a \xrightarrow{\Lambda_{\theta}} \mathcal{T}_b,\quad \Lambda_\the
 * **Implication**: 宗教比较的正确对象是结构同构，而非术语表面。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -724,3 +720,27 @@ SRT_Spirit_02_Traditions (本文件)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+- **空性即潜能**：$\text{Śūnyatā} \equiv L_0$，$L_1 = \hat{G}_\theta[L_0]$；一切"色相"依赖选择而无自性。
+- **算子同一性**：$\text{Atman} \equiv \hat{G}_\theta$，$\text{Brahman} \equiv \Omega = \lim_{\|\theta\|\to\infty}\hat{G}_\theta$；差异仅是参数约束。
+- **神人合一**：$\text{Union} = \lim_{d\to\infty}\hat{G}_\theta[L_0]$，$\|\nabla C_{L_2}\| \to 0$；合一是约束解除后对 $L_0$ 的直接接入。
+- **自我消融**：$\text{Fana}: \text{Center}(d) \to \emptyset$；不是摧毁而是 $d$-场中心消失的拓扑重排。
+- **传统即参数化**：$\forall r,\;\exists \theta_r:\;\mathcal{T}_r \cong \langle L_0,L_1,L_2,\hat{G}_{\theta_r}\rangle$；跨传统映射是 $\theta$-变换下的约束同构。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 在各传统中执行相同的选择操作，但参数 $\theta_r$ 受文化 $L_2$ 编码：佛教四念处直观 $\hat{G}[L_0 \to L_1]$ 过程，吠檀多通过 Neti Neti 递归剥离 $\theta$ 层暴露 $\hat{G}$ 核心。
+- $\Psi_f$ 是修行路径的梯度信号：止（Samatha）降 $w_{L_2}$ 以稳定 $\theta$，观（Vipassana）提升对选择过程的觉知，虔信（Bhakti）通过情感共振扩展 $d$。
+- 灵性物质主义的诊断标准：$d \to 0$ 尽管 $L_2^{spiritual} \to 1$——灵性语言不等于关切扩展。
+- $d$ 的增长路径可为渐修（$d(t)$ 线性积累）或顿悟（$d$ 在临界点的相变跃迁），对应南传佛教与禅宗的方法论分歧。
+- 跨传统同构 $\Lambda_\theta \circ \hat{G}_{\theta_a} \approx \hat{G}_{\theta_b} \circ \Lambda_\theta$ 表明比较的正确对象是结构映射而非术语表面。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

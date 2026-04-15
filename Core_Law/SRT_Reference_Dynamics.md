@@ -1,4 +1,19 @@
+---
+id: SRT-REF-DYNAMICS
+type: equation
+tags: [CoreLaw, Dynamics, Canonical]
+layer: L1
+status: axiomatic_hybrid_v1
+epistemic_layer: os
+claim_mode: canonical
+dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY]
+---
+
 # SRT_Reference_Dynamics.md
+
+> **层级说明**：本文件属于 **L1（接口层）**。
+> 本文件将 L0 命题"选择总是有位置的"（Ĝ_θ 算子）与"选择有代价"（Ψ_f）形式化为动力学方程。
+> L0 意义见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)。
 
 > **Status**: Constitutional Reference | **Version**: 1.0
 > **依赖**: SRT_Reference_Axioms.md (符号规范)
@@ -40,6 +55,25 @@ $$[\hat{G}_θ(x)]_i = \frac{x_i^n}{ε + \sum_j W_{ij} · x_j^n}$$
 
 其中 $θ = \{n, ε, W\}$，$n > 1$，$ε > 0$，$W ∈ \mathbb{R}_+^{N×N}$。
 
+> **神经科学起源注**：D3 为皮层除法归一化（Divisive Normalization）的标准形式（Carandini & Heeger 2012），已在初级视觉皮层、MT区、嗅觉、听觉等多模态中验证为皮层计算的"规范则"。SRT 将其提升为 $\hat{G}_θ$ 的**最小完备原型**：满足非线性放大、竞争归一化、参数具身三大要求的最简函数类。此处 $W \in \mathbb{R}_+^{N \times N}$ 为**纯竞争简化**（全非负=侧抑制）；若需兼容兴奋性连接，可扩展为 $W = W_{inh} - W_{exc}$，但当前版本仅作原型使用。
+
+**参数–SRT 量桥接**：
+
+| 参数 | 神经科学含义 | SRT 对应量 | 方向性 |
+|:-----|:------------|:-----------|:-------|
+| $n > 1$ | 幂律增益指数（注意力锐化） | 选择锐度：$n \uparrow$ → $d(\theta) \uparrow$（高对比维度被放大） | 正 |
+| $\varepsilon > 0$ | 半饱和常数（基础激活底线） | $\Psi_f$ 基础噪声代理：$\varepsilon \propto \Psi_f^{baseline}$（防止零摩擦奇点） | 正 |
+| $W_{ij}$ | 维度 $j$ 对维度 $i$ 的竞争权重 | L₁ 维度竞争拓扑：$W \to \text{diag}(w)$（对角化）时维度独立，$d \to d_{max}$ | 负（$W_{ij}\uparrow$ → 抑制加剧 → $d\downarrow$） |
+
+**极限行为**：
+
+| 极限条件 | D3 退化形式 | SRT 解读 |
+|:---------|:-----------|:---------|
+| $n = 1$，$W = \varepsilon I$ | $[\hat{G}]_i = x_i / (2\varepsilon)$（线性缩放） | 无竞争、无非线性放大；$d = d_{max}$，但无选择锐化 |
+| $W \to 0$ | $[\hat{G}]_i = x_i^n / \varepsilon$（独立幂律） | 维度间无互动；算子退化为纯增益映射，$\Psi_f$ 仅由 $\varepsilon$ 决定 |
+| $\varepsilon \to 0^+$ | 分母趋零 → 奇点 | $\Psi_f^{baseline} \to 0$；物理意义：需 $\varepsilon > 0$ 保证算子正则性，对应 SRT 中"摩擦不可为零"的公理要求 |
+| $W_{ij} \gg \varepsilon$ | 强侧抑制 → 赢家通吃 | $d \to 1$（单维选择），对应极度注意力聚焦或强迫症式固化 |
+
 ### §1.4 核心特性
 
 | 特性 | 形式表达 | 说明 |
@@ -77,15 +111,21 @@ $$θ_{somatic} = \{θ_{immune}, θ_{intero}, θ_{motor}\}$$
 
 ### §2.2 躯体同步指数
 
-**定义 D5**:
+**定义 D5**（注：$\theta_{binding} \in [0,1]$ 为实数标量，与具身参数集合 $\theta$ 不同，下标 $binding$ 区分）：
 
-$$θ_{binding}(t) = \left| \frac{1}{N} \sum_{n=1}^{N} e^{i(φ_{brain}(t) - φ_{somatic}(t))} \right|$$
+$$\theta_{binding}(t) = \left| \frac{1}{N} \sum_{n=1}^{N} e^{i(\varphi_{brain}^{(n)}(t) - \varphi_{somatic}^{(n)}(t))} \right|$$
 
-| $θ_{binding}$ 值 | 状态 | 现象学表现 |
-|:-----------------|:-----|:-----------|
-| $θ \to 1$ | 强耦合 | 稳定第一人称视角 |
-| $θ \to 0$ | 解耦 | 离体体验、解离 |
-| $θ$ 振荡 | 不稳定 | 人格解体 |
+其中 **N = 独立脑-体信号通道对的数量**（空间平均，类 PLV 相位锁定值）：
+- $\varphi_{brain}^{(n)}(t)$：第 $n$ 个脑信号通道的瞬时相位（推荐频带：$\delta/\theta$，0.5–8 Hz，与内感受节律对齐；区域：顶叶/岛叶）
+- $\varphi_{somatic}^{(n)}(t)$：第 $n$ 个躯体信号通道的瞬时相位（候选：心跳 R-R 间期相位 $\varphi_{cardiac}$、呼吸相位 $\varphi_{resp}$、内感受 EDA 相位）
+
+| $\theta_{binding}$ 值 | 状态 | 现象学表现 | SRT 机制 |
+|:---------------------|:-----|:-----------|:---------|
+| $\theta_{binding} \to 1$ | 强耦合 | 稳定第一人称视角 | $\theta_{somatic}$ 对 $\hat{G}$ 的权重调制稳定（Implication §2.1） |
+| $\theta_{binding} \to 0$ | 解耦 | 离体体验、解离 | $\theta_{intero}$ 失调 → Ψ_f 底噪失控，马尔可夫毯边界失效（Ax-AUTO-1b） |
+| $\text{CV}(\theta_{binding}(t)) \uparrow$ | 时间变异高（原"振荡"） | 人格解体 | 脑-体相位锁定间歇性破坏，第一人称视角反复建立-失效循环 |
+
+> **"θ振荡"操作化修正**：人格解体对应 $\theta_{binding}$ 的**时间变异系数** $\text{CV}_t = \sigma(\theta_{binding})/\mu(\theta_{binding})$ 显著升高，而非均值的极端值——即相位耦合时而存在时而崩溃，造成自我感的不稳定闪烁。
 
 ### §2.3 生存权重门控 (Survival-Weight Gating)
 
@@ -111,6 +151,20 @@ $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] + A[σ, \mathcal{A}]$$
 
 $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] + A[σ, \mathcal{A}] + \text{Ghost}(I_{Abstract}) - λ · ∇C_{L_2}[σ]$$
 
+**Def-E1'-F4C（四因映射补丁，新增）**：
+\[
+\underbrace{L_0}_{\text{质料因}}\xrightarrow{\ \hat G_\theta\ }\underbrace{L_1}_{\text{动力因的结果面}}\xrightarrow{\text{stabilize}}\underbrace{L_{2,\theta}}_{\text{形式因/目的因约束场}}
+\]
+其中 \(\nabla C_{L_2}\) 解释为宏观图景对微观轨迹的“拉力项”（formal/final pull）。
+
+### 分类映射表（Hart Ch.2 因果框架 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 机械唯物闭包（仅质料/动力因） | 低~中 | Closed 倾向 | borderline |
+| 古典四因整合（含形式/目的因） | 中~高 | Open↔Semi-open | payable |
+| SRT 向下因果动力学 | 中高~高 | Open（多层耦合） | payable / overloaded（高负荷） |
+
 ### §3.2 方程 E2 — 耦合动力学方程组（快-慢变量系统）
 
 **E2a（状态演化 — 快变量）**:
@@ -121,15 +175,31 @@ $$\frac{dσ}{dt} = α(\hat{G}_θ[σ] - σ) - β∇F[σ] + ξ(t)$$
 
 $$\frac{dθ}{dt} = γ · A[σ, \text{Target}] - δ · \frac{∂Φ(θ)}{∂θ}$$
 
-### §3.3 方程 E3 — 自由能方程
+### §3.3 方程 E3 — 自由能桥接方程
 
-$$F = E - TS - d · U_{others}$$
+**E3a（热力学基线）**:
+
+$$F_{thermo} = E - TS$$
+
+**E3b（变分/FEP基线）**:
+
+$$F_{var} = E_q[\ln q(x) - \ln p(x,o)]$$
+
+**E3c（SRT 关切扩展）**:
+
+$$F_{SRT} = F_{base} - d \cdot U_{others}, \quad F_{base} \in \{F_{thermo}, F_{var}\}$$
 
 | 项 | 含义 |
 |:---|:-----|
-| $E$ | 内能 |
-| $TS$ | 熵项 |
-| $d · U_{others}$ | 利他项（d 值效应）|
+| $F_{base}$ | 当前语境采用的基线自由能：热力学语境取 $F_{thermo}$，认知/FEP语境取 $F_{var}$ |
+| $d \cdot U_{others}$ | 利他项：关切带宽 $d$ 乘以他者效用 $U_{others}$；表示系统将他者状态纳入自身目标泛函 |
+| $F_{SRT}$ | 在选定基线之上加入关切项后的 SRT 目标泛函 |
+
+> **[R]** 自由能的双重来源：Helmholtz 1882 *Wissenschaftliche Abhandlungen*（热力学自由能 $F_{thermo}=E-TS$，量纲焦耳；系统在恒温过程中可做最大功，R物理基线）；Friston 2010 *Nature Reviews Neuroscience*（变分自由能/FEP：$F_{var}=E_q[\ln q(x)-\ln p(x,o)]$，量纲 nat/bit；感知行动的统一框架，R信息论基线）。**[H]** SRT 的新增量不在于把两者当成同一个量，而在于提出：无论基线目标取热力学还是变分形式，都可被同一“关切扩展”结构 $F_{SRT}=F_{base}-d\cdot U_{others}$ 修正。
+>
+> **量纲与符号说明**：$F_{thermo}$ 的量纲为焦耳；$F_{var}$ 的量纲为 nat/bit；$F_{SRT}$ 继承所选 $F_{base}$ 的量纲。SRT 保持不变的是“基线目标 + 关切修正”这一结构，而不是要求所有语境共用同一单位。负号 $(-d \cdot U_{others})$ 的含义是：当 $d>0$ 时，系统将他者福祉提升视为目标函数的有利方向；$d=0$ 时，$F_{SRT}$ 退化为未扩展的 $F_{base}$。此利他项与 Ax-Selfish（自利公理）无矛盾：自利=他者不进 $L_0^{(d)}$；利他=他者进入 $L_0^{(d)}$ 后，$U_{others}$ 成为被最小化目标的一部分。
+>
+> * **精度边界**：E3 是跨域桥接框架，不把 Helmholtz 与变分自由能强压成一条同量纲公式。具体实现层（神经/社会/经济）的权重与 $U_{others}$ 操作化需分别参数化。后续若未特别区分，$F$ 仅表示“当前语境被最小化的目标泛函”；在 canonical 写作中应优先明确是 $F_{thermo}$、$F_{var}$ 还是 $F_{SRT}$。
 
 ### §3.4 方程 E4 — 三域离散演化
 
@@ -147,11 +217,36 @@ $$θ(t+1) = θ(t) + Δθ(L_2, L_1)$$
 
 **定义 D6 — 本体论摩擦势能 $Φ$**:
 
-$$Φ \equiv \text{维持当前 } L_1 \text{ 所需的累积能耗}$$
+$$Φ(\Delta t) \equiv \int_{\Delta t}\Psi_f(t)\,dt$$
+
+其中 $Φ$ 不是单纯的物理能耗总账，而是系统在时间窗 $\Delta t$ 内维持当前 $L_1$ 现实切片所承受的**累积本体论支付负荷**。
+
+**定义 D6a — 本体论摩擦局部量 $Ψ_f$**:
+
+本体论摩擦 $Ψ_f$ 是选择算子将开放可能性压缩为**可维持、可行动、可协调**的现实切片时所遭遇的局部阻抗结构。
+
+同一 $Ψ_f$ 在三个读法下等价呈现：
+- **动力学读法**：阻力 / 势垒 / 偏离自然滑落路径时的阻抗
+- **记账读法**：能量、时间、组织复杂度与风险预算上的支付代价
+- **形式读法**：参数流形上的几何长度 / 曲率负担 / 可达路径难度
+
+这三者不是三个不同概念，而是同一结构在现象、记账与形式化层面的不同表达。
 
 **定义 D7 — 哈扎德函数 $h(t)$**:
 
 $$h(t) = \frac{dΦ}{dt}$$
+
+**定义 D7a — 可支付性条件 (Payability Condition)**:
+
+对系统 $X$ 在时间窗 $\Delta t$ 上，若其选择预算足以覆盖摩擦与噪声负荷，且闭包与身份连续性不失稳，则称该摩擦为可支付：
+$$\mathrm{Payable}(X,\Delta t)\iff \alpha P_{sel}^X(\Delta t)\ge \beta \Psi_f^X(\Delta t)+\gamma S_{noise}^X(\Delta t)$$
+
+其中：
+- $P_{sel}$：系统可动用的选择预算 / 维持能力
+- $\Psi_f$：该窗口内的本体论摩擦负荷
+- $S_{noise}$：环境噪声熵流
+
+**解释**：可支付不意味着代价低，而意味着系统在承担这笔摩擦时，仍能维持现实闭环、继续选择并避免结构性崩溃。零摩擦并非理想极限；对真实主体而言，关键是**非零而可支付**。超过可支付阈值时，系统进入收缩、失稳或闭包破裂。
 
 ### §4.2 方程 E5 — 痛苦的本体论定义
 
@@ -172,6 +267,32 @@ $$\text{痛苦} = \text{Tension}(\hat{G}_θ[L_1], L_0^{counterfactual})$$
 ### §4.4 方程 E6 — 神经损伤积分
 
 $$\text{神经损伤} \propto \int_0^T h(t) \, dt \quad \text{当} \, h(t) > h_{threshold}$$
+
+### §4.6 多算子耦合方程（Multi-Operator Coupled Equations）
+
+（对应 `Core/SRT_Core_22_Equations.md §0-C`，以下为规范引用摘要）
+
+**Eq-Multi-01: 集体自由能景观 (Collective Free Energy Landscape)**
+
+$$F_{collective}(\{\sigma_i, \theta_i\}) = \sum_i \Psi_f(\hat{G}_i) + \sum_{i < j} \Psi_f(\hat{G}_i, \hat{G}_j)$$
+
+> 个体摩擦代价之和 + 算子间交互摩擦之和 = 集体景观总势能。
+
+**Eq-Multi-02: 个体算子为集体景观梯度 (Individual Operator as Landscape Gradient)**
+
+$$\hat{G}_i[\sigma_i] = -\frac{\partial F_{collective}}{\partial \theta_i}$$
+
+> 个体算子不是独立的自由能极小化者，而是集体景观在自身参数维度上的梯度下降方向。"个体与集体的矛盾"在本体论上是误表述——个体算子 IS 景观的局部导数。
+
+**Eq-Multi-03: 集体 d-value 为景观有效维度 (Collective d as Landscape Effective Dimension)**
+
+$$d_{collective} = D_{eff}(F_{collective}) = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
+
+其中 $\lambda_k$ 是 $F_{collective}$ 的 Hessian 特征值；个体 $d_i = D_{eff}(F_{collective}|_{\theta_i})$ 是景观在子空间的截面投影，而非可加合的分量。
+
+**与 A16 的关系**: Eq-Multi-01 是 A16（摩擦即生成）的多体展开形式；Eq-Multi-02 是集体景观优先性定理的核心表达；Eq-Multi-03 解决了此前 d_collective 聚合方案 A-E 的问题域——无需聚合，景观有效维度直接定义集体 d 值。
+
+---
 
 ### §4.5 模式切换条件
 
@@ -210,9 +331,21 @@ $$J = α(D\hat{G}_θ(x) - I) - λH_F(x)$$
 
 ### §5.5 定理 T-DMP-2 — 本体论恢复力
 
-当意外事件发生时，强壮的 $L_2$ 结构能自动将现实拉回预期轨道：
+**[R — Lyapunov稳定性理论（1892）追溯；[H] — 将L₂社会共识结构的"强壮性"映射为Jacobian稳定性判据为SRT新增应用]**
 
-$$Δ L_1(t) \xrightarrow{t \to \infty} 0 \quad \text{当} \quad \text{Re}(λ_{Jacobian}) < 0$$
+当意外事件（外部扰动 $\delta$）发生时，强壮的 $L_2$ 结构能自动将现实拉回预期轨道：
+
+$$\Delta L_1(t) \xrightarrow{t \to \infty} 0 \quad \text{当} \quad \text{Re}(\lambda_{Jacobian}) < 0$$
+
+*符号说明*：$\Delta L_1(t) = L_1(t) - L_1^*(t)$ 为实际 $L_1$ 轨迹与 $L_2$ 定义的"期望轨迹" $L_1^*$ 之间的偏差；$\lambda_{Jacobian}$ 为 $\hat{G}_\theta$ 在当前 $L_2$ 吸引子附近的Jacobian矩阵特征值（联结 §5.4 定理M2）。
+
+*"强壮"的操作化*：$L_2$ 结构"强壮"在此定义为：围绕当前收敛结构的Jacobian满足 $\text{Re}(\lambda_{max}) < 0$（所有特征值实部为负）。与§5.6 $R(L_2) = \Delta B / \Psi_f$ 的关系：高势垒比（大 $\Delta B$，低 $\Psi_f$）使 Re$(λ_{max})$ 更负，恢复力更强，但§5.6 C-Barrier-1指出这同时增加越过势垒后的灾难性崩溃风险。
+
+*意外事件的SRT定位*：外部扰动 $\delta$ 可为 L₀ 随机涌现、外部 L₁ 事件冲击、或他者 $\hat{G}_{\theta'}$ 的干预；定理T-DMP-2的前提是扰动幅度在Jacobian线性化有效范围内（小扰动假设）——大扰动可能越过势垒，触发 §5.6 的范式转移而非恢复。
+
+**证伪条件** [H]:
+- 若在控制实验（给定L₂结构）中，强壮L₂群体（高Ψ_f/高ΔB）在小扰动后的恢复时间（$\tau_{recovery}$）与弱L₂群体无显著差异，则T-DMP-2的L₂恢复力映射不成立。
+- 若 Re$(\lambda_{max}) < 0$ 但系统未显示实际恢复（存在隐藏非线性使恢复轨迹发散），则Jacobian线性化在该领域不适用，定理需非线性扩展。
 
 ### §5.6 势垒稳定性 (Barrier Stability of L₂)
 
@@ -269,12 +402,22 @@ $$\det\left(\frac{∂^2 V}{∂x^2}\right)_{x(μ)} = 0$$
 
 ### §7.1 方程 E7 — 双重时间公理
 
-$$T_{reality} = T_{metric} + i · T_{selective}$$
+[R→Penrose 1989（时间箭头与量子引力：不可逆性的起源）; Prigogine 1997（《时间、混沌与量子》：不可逆时间作为基本概念）; Barbour 1999（《时间的终结》：量子引力与无时间物理）; Rovelli 2018（《时间的秩序》：时间的方向性与热力学）] [H-高承诺→复数时间公式是SRT的强形式化宣称，非物理学主流；i的使用是结构类比而非广义相对论的Wick转动]
 
-| 分量 | 名称 | 定义 | 特性 |
-|:-----|:-----|:-----|:-----|
-| $T_{metric}$ | 度量时间 | 客观物理场中的坐标变化 | 可逆、洛伦兹变换 |
-| $T_{selective}$ | 选择时间 | 观测者意识处理信息流的过程 | 不可逆、依赖 $\hat{G}_θ$ |
+$$T_{reality} = T_{metric} + i \cdot T_{selective}$$
+
+⚠️ **形式化注意**：此公式中的 $i$（虚数单位）的含义是"正交/独立维度"而非量子力学振幅或广义相对论的Wick转动（虚时间）；T_selective与T_metric在此框架中被主张为正交的两个维度——类似于复数表示二维空间中的两个正交坐标（$\text{Re}$和$\text{Im}$），而非真正意义上的复值时间坐标（后者会引入非平庸的量子引力问题）。这是一个描述性/类比性的形式表达，应当谨慎对待其物理含义。
+
+| 分量 | 名称 | 定义 | 特性 | 可测代理 |
+|:-----|:-----|:-----|:-----|:--------|
+| $T_{metric}$ | 度量时间 | 客观物理场中的坐标变化 | 可逆、洛伦兹变换 | 原子钟/GPS时间坐标 |
+| $T_{selective}$ [H] | 选择时间 | 观测者意识处理信息流的过程 | 不可逆、依赖 $\hat{G}_θ$ | 主观时间感（时距判断任务）; θ-相关神经动力学 |
+
+**T_selective 的不可逆性机制** [H]：T_selective不可逆是因为Ĝ_θ的每次L₁锚定改变了θ（参数不可逆更新），而T_metric的可逆性是因为物理方程在时间反演下保持对称（除热力学方向）；两者的不可逆性差异体现在信息熵积累的方向上（参见Prigogine 1997[R]对"熵时间"的论述，SRT将其与选择算子的θ历史路径依赖联结）
+
+**证伪条件**：
+- FC-Time1-1：若T_metric和T_selective的操作化测量（原子钟读数 vs 主观时距判断）无任何系统性解离（在改变Ĝ_θ状态/θ参数的操纵下，主观时间率与物理时间率始终1:1对应），则"双重时间正交性"的附加层无解释力。
+- FC-Time1-2：若高θ不稳定性（如精神病/高Ψ_f状态）的被试的T_selective测量（主观时间扭曲程度）与T_metric偏差在统计上不比普通被试更大，则T_selective依赖Ĝ_θ的主张失败。
 
 ### §7.2 本体论相位变量
 
@@ -347,6 +490,37 @@ $$d_{total} = d_{local} + i · d_{nonlocal}$$
 | REM 梦境 | → 0 | 激增 | 90° |
 | 清明梦 | 恢复 | 保持高 | 45° |
 
+### §8.4 Teleological Attractor（至福牵引项，新增）
+
+在高阶算子（高 d）阶段，将动力学写为“风险推力 + 价值牵引”双驱动：
+\[
+\frac{d\sigma}{dt}=\hat{G}_\theta[\sigma]-\nabla F[\sigma]-\lambda\nabla C_{L_2}[\sigma]+\mu\nabla B_{L_0}[\sigma]
+\]
+其中 \(B_{L_0}\) 表示与 \(L_0^{abs}\) 最优几何一致性的“至福势”，\(\mu\ge 0\) 为牵引耦合。
+
+### 分类映射表（Hart Ch.5 欲望结构 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 生存防御驱动（被推） | 低~中 | Semi-open / Closed 倾向 | borderline |
+| 价值牵引驱动（被拉） | 中~高 | Open（探索-整合） | payable |
+| 极限至福渐近（不可达） | 高 | Open→低耗稳态 | \(\Psi_f\to\Psi_{min}^{+}\) |
+
+### §8.5 Passive Alignment Transition（被动对齐相变，新增）
+
+定义“臣服态”不是停止选择，而是局部意向向量与全局下降方向对齐：
+\[
+\cos\angle(\vec v_{self},-\nabla F_{global})\to 1
+\]
+令局部努力项与全局协同项分离：
+\[
+\Psi_f^{total}=\Psi_f^{local}+\Psi_f^{coh},\quad
+\Psi_f^{local}\downarrow,\ \Psi_f^{coh}\uparrow
+\]
+其中 \(\Psi_f^{coh}\) 代表多尺度协同支付（来自 \(\Omega\) 操作逻辑一致性，而非外在实体注入）。
+
+* **Implication**：可出现“主观上无强制抓取感、但显现清晰度提升”的状态；这不是 \(\hat G_\theta\) 停机，而是控制变量重参数化。
+
 ---
 
 ## §9 递归深度形式化 (Recursive Depth)
@@ -399,6 +573,15 @@ $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ · ∇C_{L_2}[σ]$$
 | E6 | 神经损伤积分 | §4.4 |
 | E7 | 双重时间公理 | §7.1 |
 | E8 | d 值统一公式 | §8.2 |
+| Eq-Multi-01 | 集体自由能景观 $F_{collective}$ | §4.6 |
+| Eq-Multi-02 | 个体算子为集体景观梯度 | §4.6 |
+| Eq-Multi-03 | 集体 d-value 为景观有效维度 | §4.6 |
+| Eq-IT-A | Ψ_f = Landauer 原理在 Fisher 几何中的推广 | §15.1 |
+| Eq-IT-B | d = D_eff(I_F)，Fisher 有效维度 | §15.2 |
+| Eq-IT-B' | d × Ψ_f ≥ k_BT·𝒦（不确定性关系候选，Gap） | §15.2 |
+| Eq-IT-C | 复杂性棘轮方程（第二定律为生成压力） | §15.3 |
+| Eq-IT-D | Boltzmann 分布为 SRT d→0 退化极限 | §15.4 |
+| Eq-IT-E | I_created = I(L₀;Ĝ_θ)，选择创造信息 | §15.5 |
 
 ---
 
@@ -417,3 +600,291 @@ $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ · ∇C_{L_2}[σ]$$
 | $φ$ | 本体论相位 | §7.2 |
 | $ξ(t)$ | 噪声项 | §3.2 |
 | $K_n$ | 第 n 阶 Volterra 核 | §9.1 |
+
+## §11 神经精神病学统一动力学补丁（Neuropsychiatry Bridge, 新增）
+
+### §11.1 病理本体论分类矩阵（Ontological Pathology Matrix）
+
+将传统“器质性 vs 精神性”改写为同一动力学中的两个主轴：
+
+| 病理分类 | 主导层域 | 动力学异常 | 典型可测后果 |
+|:--|:--|:--|:--|
+| **L2 结构性病理** | \(L_2\)（结构/拓扑） | \(\theta_{neural}\) 载体破损，导致可达域收缩 \(\mathcal{E}_t\downarrow\) | 局灶缺损、网络断连、稳定功能缺失 |
+| **\(\hat{G}_\theta\) 动力学病理** | \(L_1\leftrightarrow L_2\) 接口 | \(d\) 梯度塌陷、\(\rho_t\) 失稳、\(\Psi_f\) 过载 | 情感平坦/焦虑放大/现实整合波动 |
+| **混合病理** | 跨层耦合 | 结构破损与参数漂移相互增强 | 难治性综合征、症状跨谱系迁移 |
+
+### §11.2 跨域治疗协议（Cross-Domain Intervention Protocol）
+
+
+定义干预向量：
+\[
+\mathcal{I}_{total}=\mathcal{I}_{bio}(\Delta\Psi_f,\Delta\theta_{body}) + \mathcal{I}_{psy}(\Delta d,\Delta \vec v)
+\]
+
+- \(\mathcal{I}_{bio}\)：药物/神经调控优先作用于摩擦支付成本与底层参数；  
+- \(\mathcal{I}_{psy}\)：心理/语义干预优先重塑关切梯度与选择向量。  
+
+**最小协同判据**：
+\[
+\frac{d}{dt}\big(\Psi_f\downarrow \land d\uparrow\big) > 0
+\]
+即仅降摩擦而不恢复关切，或仅提升关切而摩擦失控，均不构成稳定康复路径。
+
+### §11.3 语义断层假设（Irreducible Semantic Gap）
+
+> **[H — Framework Hypothesis]** 整节为 SRT 新增预测框架：将”参数到显现”映射的非线性爆发与 Ψ_f 相变临界点等同，并以此解释异质药物响应。标准药理学仅描述异质响应现象，不提供 θ 空间几何机制。
+
+在参数到显现映射中引入非线性边界：
+\[
+L_1 = \mathcal{R}(\theta, L_2, u),\quad \left\|\frac{\partial L_1}{\partial \theta}\right\|_F \to \infty \text{ near } \partial\mathcal{B}_{chaos}
+\]
+
+**符号说明**：
+- $u$：环境随机输入项（外源噪声/刺激），使 $\mathcal{R}$ 是随机映射而非确定性函数；对固定 $(θ, L_2)$，$u$ 的分布由感知精度 $\Pi^{-1}$ 决定。
+- $\|\cdot\|_F$：Frobenius 范数（所有 Jacobian 元素平方和之根号），在第3条可证伪预测（§11.4）中作为”参数敏感度”的可测代理量。实验代理：药物剂量梯度下 L₁ 代理指标（如 PCI、HRV）的变化率。
+  - **Fisher 联结**（→ §15.2 / Eq-IT-B）：$\|\partial L_1/\partial\theta\|_F \to \infty$ 对应 Fisher 信息矩阵 $I_F(\theta)$ 的条件数 $\kappa(I_F) \to \infty$（病态/近奇异），即系统丧失稳定区分 $L_0$ 状态方向的能力，$d_{eff} = (\text{tr}\,I_F)^2/\text{tr}(I_F^2)$ 在部分方向上坍塌。两者共同定义”选择不稳定性临界”。
+- $\partial\mathcal{B}_{chaos}$（**混沌边缘边界**）：**[H]** 在 SRT 参数空间 $\Theta$ 中，定义为 $\mathcal{R}$ 的 Jacobian 最大 Lyapunov 指数 $\lambda_{max}(\nabla_\theta\mathcal{R}) = 0$ 的超曲面。该边界与 $\Psi_f$ 相变临界点重合：$\partial\mathcal{B}_{chaos} \approx \{\theta : \partial^2\Psi_f/\partial\theta^2 = 0, \text{符号从负到正}\}$（Ψ_f 曲率符号翻转 = 稳定域边缘），即 SRT 动力学意义上的”边缘混沌”。
+  - **∂B_chaos 距离操作化候选**：$\text{dist}(\theta, \partial\mathcal{B}_{chaos}) \approx |\partial^2\Psi_f/\partial\theta^2|^{-1}$（曲率倒数为接近程度代理；值越大 = 越近）。临床可测版本：个体药物响应方差 $\text{Var}(\delta L_1^{\text{obs}}) / \|\delta\theta_{drug}\|^2$（跨时间点或跨剂量），高方差 ↔ θ 近边界。
+
+该假设解释：$\theta$ 处于 $\partial\mathcal{B}_{chaos}$ 附近时，微小神经参数变动（如 $\delta\theta_{drug}$）可引发巨大主观质变（$\|\delta L_1\| \gg \|\delta\theta\|$），导致临床上”同剂量/同靶点、异质响应”——患者间差异是 $\theta$ 距 $\partial\mathcal{B}_{chaos}$ 远近不同，而非简单的”个体差异”。
+
+**追加证伪方向（补§11.4第3条）**：
+- 若药物响应方差在 fMRI/EEG 定义的”参数稳定度高”患者中与”稳定度低”患者无显著差异（控制剂量和靶点后），则∂B_chaos-异质响应联结失效。
+- 若个体的 $\text{Var}(\delta L_1)$ 在不同时间点不稳定（与θ慢变假设冲突），则距离操作化候选需修正。
+
+### §11.4 可证伪预测（Neuropsychiatry）
+1. 若同病理表型被分层后，\(L_2\) 指标与 \(\hat{G}_\theta\) 指标可形成稳定双簇，则支持矩阵分类；若不可分，则需回退单轴模型。  
+2. 若联合干预（药物+心理）在 \(\Psi_f\downarrow\) 与 \(d\uparrow\) 的乘积收益上不优于任一单模态，则跨域协议被削弱。  
+3. 若 \(\|\partial L_1/\partial\theta\|\) 在高波动患者中不高于对照组，则”语义断层/混沌边缘”假设失效。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的动力学角色**: 选择算子以除法归一化 ($[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon + \sum_j W_{ij} x_j^n)$) 为操作化原型，其三分量 ($d$, $\rho$, $\vec{v}$) 分别控制选择范围、分辨率与方向。
+- **$\theta$ 的慢变量演化**: 具身参数 $\theta = \theta_{neural} + \theta_{somatic} + \gamma \vec{g}_{context}$ 在快态 $\sigma$ 稳定后缓慢更新，学习、创伤、衰老均通过 $\theta$ 漂移改变选择动力学。
+- **$\Psi_f$ 作为稳定性与苦的统一，同时作为生成性原理（A16/Ax-F-12）**: 本体论摩擦既是 $L_1$ 锚定的代价函数（微观视角），也是主观痛苦 ($\text{Pain} \approx d\Psi_f/dt$) 的动力学源头；同时，算子间摩擦 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 是所有动力学的宏观生成来源——演化、学习、文化变迁、免疫应答均为其不同形态（见 §4.6，Eq-Multi-01）。两视角相容：微观上"支付摩擦才能锚定"，宏观上"摩擦是动力学来源"——进入摩擦流即进入动力学。
+- **$d$ 的缩放律**: $d$ 值跨尺度保持自相似性 (Scale Invariance)，但其操作化形式在不同尺度上由不同代理量测量（HRV、PCI、跨时间折扣率）。
+
+## §15 热力学-信息论统一关系（IT Bridge）
+
+> **新增（2026-03-11）**：SRT 与热力学/信息论的 5 条形式化关系。不是重述已有联系，而是通过选择本体论视角增加的**新贡献**。
+
+### §15.1 关系 A（Eq-IT-A）：Ψ_f 是 Landauer 原理在 Fisher 几何中的推广
+
+$$\Psi_f = \int_\gamma \sqrt{g_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j}\, dt \;\geq\; k_B T \ln 2 \times I_{erased}$$
+
+Landauer 原理是 Eq-IT-A 在**平坦参数空间**（$g_{ij} = k_B T \cdot \delta_{ij}$）时的零曲率极限。一般情况：$\Psi_f$ 是在弯曲 Fisher 流形中”擦除选择信息足迹”的代价。高曲率 $L_0$ 区域需要更高 $\Psi_f$ 才能完成同等信息量的选择（大脑高能耗的本体论解释；见 Ax-IT-2b）。
+
+### §15.2 关系 B（Eq-IT-B）：d-value 是 Fisher 有效维度 = 选择信道容量的几何读法
+
+$$d \equiv D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)} = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
+
+Fisher 信息矩阵 $I_F(\theta)$ 的有效维度 = 算子能可靠区分的 $L_0$ 状态方向数（Cramér-Rao 下界的维度版本），**就是** d-value 的信息论意义。
+
+**不确定性关系候选（Eq-IT-B'）**：$d \times \Psi_f \geq k_B T \cdot \mathcal{K}$（常数 $\mathcal{K}$ 待确定，Status = Gap）。
+
+### §15.3 关系 C（Eq-IT-C）：第二定律是选择复杂性的生成压力（核心反转）
+
+$$\frac{d\langle d \rangle_{population}}{dt} \propto \nabla\!\left(\frac{d}{\Psi_f}\right) \cdot P_{survive}$$
+
+**SRT 反转**：第二定律通过持续威胁所有 $L_1$ 结构，创造演化棘轮——越高效对抗热解散的算子（高 $d/\Psi_f$），越被偏好 → 更高 d → 更复杂 $L_2$ → 返回。宇宙复杂化不是对第二定律的违背，而是其**必然产物**。标准叙事”生命对抗熵增”是倒果为因。
+
+### §15.4 关系 D（Eq-IT-D）：Boltzmann 分布是 SRT 的退化极限（d→0 特例）
+
+$$P_{L_1}(\sigma) \xrightarrow{d \to 0} \frac{e^{-E(\sigma)/k_BT}}{Z}, \quad D_{KL}(P_{L_1} \| P_{Boltzmann}) = \text{算子选择信息量}$$
+
+统计力学 = SRT 在 $d=0$ 时的特例。生命/意识 = $d$ 从 0 升起时的结构性相变（$\kappa$ 穿越 $\kappa_{c1}$，T-L0-02）。Friston 主动推断 = SRT 框架下 $d>0$ 算子最小化 $D_{KL}(P_{L_1} \| P_{L_0})$ 的行为模式。
+
+### §15.5 关系 E（Eq-IT-E）：选择创造信息（Shannon 的上游问题）
+
+选择算子从 $L_0$ 中提取并锚定的信息量（选择创造的信息）：
+
+$$I_{created} \equiv I(L_0\,;\,L_1) = H(L_0) - H(L_0\,|\,L_1) = H(L_1) - H(L_1\,|\,L_0)$$
+
+即 $L_0$（潜在域）与 $L_1$（显现域）之间的互信息——算子选择将 $L_0$ 的哪些结构"投影"到了 $L_1$ 中。
+
+> **原公式勘误**：原式 $H(L_0) - H(L_1 | \hat{G}_\theta) = I(L_0\,;\,\hat{G}_\theta)$ 存在随机变量错配：$I(L_0;\hat{G}_\theta) = H(L_0) - H(L_0|\hat{G}_\theta)$（右侧分母应为 $L_0$，非 $L_1$）。正确表达有两种等价写法：(a) $I(L_0; L_1)$（源-输出互信息，强调选择的信息提取）；(b) $I(L_1; \hat{G}_\theta) = H(L_1) - H(L_1|\hat{G}_\theta)$（算子对 $L_1$ 的解释力，强调算子的贡献）。本节采用 (a)。
+
+**约束链的形式化**：
+
+$$I_{created} \leq d \quad \text{（d 值 = 信道容量上界，Eq-IT-B）}$$
+
+$$\Psi_f \geq k_B T \ln 2 \cdot I_{created} \quad \text{（Landauer 下界，Eq-IT-A）}$$
+
+即：选择创造的信息量受 $d$ 值上界约束；创造该信息量至少需要 Landauer 代价的 $\Psi_f$。
+
+Shannon 信息论处理信息**传递**（下游，给定 $L_1$ 分布后的编码/解码）；SRT 处理信息**生成**（上游，$L_0 \to L_1$ 的选择过程）。两者串行互补——SRT 解释信息源，Shannon 解释信息渠。
+
+### §15.6 统一对应表
+
+| SRT 概念 | 热力学对应 | 信息论对应 |
+|:---------|:-----------|:----------|
+| $\Psi_f$（单算子） | Landauer 擦除代价 | Fisher 流形路径长度 |
+| $\Psi_f(\hat{G}_i,\hat{G}_j)$ | 自由能交互项 | 互信息代价 |
+| $d$ | 相空间有效维度 | Fisher 信道有效容量 |
+| $d \to 0$ | 热平衡（Boltzmann）| 零容量信道 |
+| $d/\Psi_f$ | 热机效率类比 | 单比特能耗倒数 |
+| $F_{collective}$ | 多体统计自由能 | 联合 KL 散度 |
+| $I_{created}$ | 负熵（Negentropy）| 互信息 |
+
+**Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §10`（摘要）；`_SRT_D_VALUE_CANONICAL.md §2.1a`（d = Fisher 维度规范化）；`Physics/SRT_Physics_Cosmology.md Ax-IT-2`（Landauer）。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+4. 不采纳”精神症状=纯心理、神经症状=纯器质”的旧二分法；SRT 仅承认跨层耦合下的主导轴差异。
+5. 不采纳”单一生物标志物可定义全部精神病理”的还原主义推论。
+6. §15 的 IT Bridge 中：关系 C（复杂性棘轮）是演化趋势性陈述，不排除局部复杂度下降；Eq-IT-B' 的常数 $\mathcal{K}$ 尚未确定，是理论预测而非已证定理（Status = Gap）。
+
+---
+
+## §10.1a 部分闭包（Partial Closure）
+
+**定义 D-PC-1（前闭包态）**：
+若系统可在局部子空间实现一次或多次 \(\hat{G}_\theta[L_0]\to L_1\) 的复制/锚定，但其输出尚不能无缝成为下一轮输入，仍需环境补偿（底物、条件窗、涨落注入），则称其处于部分闭包：
+\[
+\mathcal{C}_{partial}:\quad \hat{G}_\theta\circ\mathcal{E}_{env}\circ\hat{G}_\theta\ \text{is viable},\quad \hat{G}_\theta\circ\hat{G}_\theta\ \text{not yet self-sufficient}
+\]
+
+**解释（中文）**：该态是“可复制能力已出现，但自治闭环未完成”的临界前状态，可作为生命起源阶段的标准结构标签。
+
+**边界条件**：
+- 若脱离环境补偿后轨迹立即失稳，则仍归于 \(\mathcal{C}_{partial}\)。
+- 仅当系统在无外部拼接干预下保持多轮自维持复制，方可升级为稳定闭包态。
+
+## §10.3 疾病作为约束闭包破裂（Pathological Closure Break）
+
+**定义 D-Ill-1（疾病）**：当系统的结构修复能力长期低于摩擦磨损负荷时，\(\hat{G}_\theta\) 的约束闭包失稳，表现为病理状态。
+\[
+\text{Disease} \iff \overline{R_{repair}(\theta)} < \overline{D_{wear}(\Psi_f,ROS)}
+\]
+
+其中上划线表示在窗口 \(\Delta T\) 上的时间平均。
+
+### §10.3.1 闭环动力学（非单向因果）
+
+\[
+\Psi_f\uparrow \;\Rightarrow\; ROS\uparrow \;\Rightarrow\; \theta_{body}\downarrow \;\Rightarrow\; (\rho_s,\rho_t)\downarrow \;\Rightarrow\; \hat{G}_\theta\text{过滤退化} \;\Rightarrow\; \Psi_f\uparrow
+\]
+
+该链路刻画“恶性反馈环（vicious cycle）”：过滤退化会增加未折叠扰动暴露，反过来抬升下一轮 \(\Psi_f\)。
+
+### §10.3.2 最小动力学写法（候选）
+
+\[
+\frac{d\theta_{body}}{dt} = -\eta_1\,ROS + \eta_2\,Repair(\theta_{body},L_2)
+\]
+\[
+\frac{d\rho_{eff}}{dt} = -\kappa_1\,\Psi_f - \kappa_2\,ROS + \kappa_3\,Recovery
+\]
+
+其中 \(\rho_{eff}\) 代表过滤分辨率的有效联合指标（可由任务精度/反应时稳定性/神经复杂度 proxy 估计）。
+
+### §10.3.3 与 Core 公理的一致性约束
+
+[R→McEwen 1998（allostatic load：累积选择/应激负荷导致生理磨损）; Epel et al. 2004（慢性心理压力加速端粒缩短，θ物质底层退化）; Finkel & Holbrook 2000（活性氧ROS在衰老与细胞损伤中的双重角色）] [H→以SRT因果拓扑重表述疾病机制：Ψ_f优先，ROS/物质损伤为次级产物]
+
+- **疾病本体论约束** [H]：疾病不是”物质对选择的替代主宰”，而是选择历史在 \(L_2\) 的磨损记录导致当前参数退化；
+  - SRT解读：McEwen的allostatic load [R] ≈ 长期Ψ_f积累的θ级磨损；高选择负荷（慢性压力）→ 代谢失调 → ROS积累 → θ退化（细胞老化/神经可塑性下降）
+  - 注：这不排除疾病有独立的物质原因（感染/遗传）；SRT的特定贡献是主张选择历史对疾病易感性的调制作用
+
+- **因果拓扑约束** [H]：选择负荷（\(\Psi_f\)）优先 → 物质痕迹（ROS）累积 → 参数重塑（\(\theta\)）→ 当前过滤能力变化
+  - 操作化验证方向：纵向研究（先测Ψ_f生理代理：皮质醇/HRV，再测ROS标志物：8-OHdG，再测θ退化代理：认知弹性/任务切换代价），预测时间序列中Ψ_f升高先于ROS积累，ROS积累先于θ退化指标下降
+  - ⚠️ 边界：此因果顺序是SRT的独特预测，反向链（物质损伤先导致Ψ_f上升）是备择假设，两者需实验区分
+
+- **方法论约束**：临床或工程推断必须经操作化验证，不得由本节公式直接外推为干预结论。
+
+**证伪条件**：
+- FC-Dyn103-1：若纵向数据显示ROS积累（物质损伤标志物）先于Ψ_f升高（心理/代谢选择负荷），则因果顺序需反转（物质→选择能力，而非选择负荷→物质），SRT的因果优先性主张失败。
+- FC-Dyn103-2：若在同等物质损伤（ROS水平）条件下，高Ψ_f历史个体与低Ψ_f历史个体的θ退化速率（认知弹性衰退率）无显著差异，则”选择历史调制θ退化”的附加SRT层无独立解释力。
+
+## §12 算子孕育期与共具身启动（Operator Gestation & Co-Embodied Boot, 新增）
+
+### §12.1 Nested Topology（嵌套拓扑）
+定义孕育期算子为母体-胎儿嵌套系统：
+\[
+\hat{G}_{inf}(t)\subset \hat{G}_{mat}(t),\quad
+\Psi_f^{inf,eff}=\Psi_f^{inf}-\chi_m\,\Psi_f^{mat}
+\]
+其中 \(\chi_m\in[0,1]\) 表示母体代偿系数。\(\chi_m\to 1\) 时胎儿有效摩擦显著降低，允许低风险参数初始化。
+
+### §12.2 Operator Gestation Phase（算子孕育期）
+\[
+\frac{d\theta_{inf}}{dt}=\gamma_i\,A_{sensorimotor}-\delta_i\frac{\partial \Phi_{inf}}{\partial \theta_{inf}}+\chi_m\,\mathcal{S}_{maternal}
+\]
+- 第三项表示母体心率/代谢/内分泌节律对 \(\theta_{inf}\) 的外部稳态注入；
+- 该阶段的 \(L_2\) 不是独立形成，而是“共享缓冲池”。
+
+### §12.3 Self/Non-self 边界形成判据（摩擦二阶导）
+定义边界信号：
+\[
+B_{self}(x,t)=\frac{\partial^2 \Psi_f(x,t)}{\partial x^2}
+\]
+当意向向量 \(\vec v\) 作用后在空间位置出现稳定非线性峰值：
+\[
+B_{self}(x,t)>\tau_B\Rightarrow \partial\Omega_{self}\text{ 被锚定}
+\]
+* **Implication**：自我边界来自“可控运动—阻抗反馈”耦合中的摩擦曲率，而非先验给定。
+
+### §12.4 可证伪预测（早期意识发生学）
+1. 若母体节律扰动显著改变胎儿感觉-运动整合轨迹，则支持 \(\chi_m\) 代偿项；
+2. 若边界形成任务中 \(B_{self}\) proxy 与后续自体图式稳定度无关，则二阶导判据失效；
+3. 若脱离共具身环境后 \(\theta_{inf}\) 不出现独立稳态跃迁，则“接力式算子启动”需修正。
+
+## §13 原初代谢算子与生命阈值（新增）
+
+### Def-Dyn-13.1: Metabolic Operator Criterion
+\[
+\mathcal{M}_{op}:\quad \frac{d\theta}{dt}\neq 0\ \land\ \frac{\partial S_{internal}}{\partial t}<0\ \land\ P_{ext}>P_{maint}
+\]
+满足时定义为“代谢算子活跃态”，可在无基因模板前存在。
+
+### T-Dyn-13.1: Fire vs Life Discriminator（火焰-生命判别）
+对自催化系统 \(X\)：
+\[
+X\in \text{Life-like} \iff \left(\frac{d\theta_X}{dt}\neq0\right)\land\left(\frac{\partial d_X}{\partial t}>0\ \text{or}\ d_X>0^+\right)
+\]
+若仅满足耗散而不满足参数可学习更新（如火焰），则归类为非生命耗散结构。
+
+### Minimal d-threshold Note
+\[
+d_{min}>0\ \text{with}\ \Psi_f^{sens}>0
+\]
+即系统必须对“失败导致结构解体”的风险有可观测敏感性，才进入生命算子域。
+
+## 【理论边界/防误用声明】
+- 不采纳“所有疾病都由 ROS 主导”的单机制宣称：本节仅给出可检验候选路径之一。  
+- 不采纳“高 \(\Psi_f\) 必然致病”的绝对推断：是否跨阈值取决于修复能力、时间尺度与环境约束。  
+- 不采纳“母体决定论”推论：共具身强调早期约束，不否定后续可塑性与重构。  
+- 不采纳“任何耗散结构都等于生命算子”的推论：需满足 \(d_{min}>0\) 与可学习参数更新。  
+- 不采纳“方法论闭包=本体论排他”的推论：实验可验证性边界不等于存在论边界。  
+- 不采纳“绝对无摩擦至福可在具身运行态瞬时实现”的推论：具身显现需保持 \(\Psi_f\ge\Psi_{min}^{+}\)。  
+- 不采纳“臣服态=外在超实体直接接管局部因果链”的推论：§8.5 仅定义协同支付重分配。  
+- 本节为理论组织与实验设计接口，不替代医学诊断、治疗和伦理审查流程。
+
+
+## §14 亚稳态微扰定理（Metastable Perturbation, 新增）
+
+### Def-Dyn-14: Parameterized Dream Incubation Window
+当系统处于低摩擦亚稳态（典型如 REM/入睡过渡）时：
+\[
+\Psi_f\to \Psi_{min}^{+},\quad \left\|\frac{\partial L_1}{\partial \theta}\right\|\uparrow
+\]
+外部微弱感官注入 \(\Delta\theta_{sensory}\) 可对 \(L_0\to L_1\) 轨迹产生宏观偏转：
+\[
+\Delta L_1 \approx \mathbf{J}_{\theta}\,\Delta\theta_{sensory},\quad \|\mathbf{J}_{\theta}\|\ \text{maximized in metastable window}
+\]
+
+### T-Dyn-14: Low-Friction Perturbation Amplification
+若满足
+\[
+\Psi_f\in[\Psi_{min}^{+},\Psi_{gate})
+\]
+则同等注入强度下，梦态引导成功率应显著高于清醒高摩擦态。
+
+## 【理论边界/防误用声明】
+- 不采纳“可引导梦境=可任意重写主体”的推论。  
+- 不采纳“低摩擦窗口可绕过伦理约束”的推论：任何注入需通过主权与同意门。

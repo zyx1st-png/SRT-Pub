@@ -3,6 +3,9 @@ id: SRT-PHYS-08
 type: theory
 tags: [Ontology, Apeiron, Pan-Experiential Field, Russellian Monism, Pathological Selection, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
@@ -84,11 +87,41 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Cor
 
 ## II. The Prism Ontology (棱镜本体论)
 
-### Ax-Prism-1 [A1.2.1]: The Prism Function (棱镜函数)
-$\hat{G}_θ$ 作为光谱滤波器，而非生成器：
-$$ \hat{G}_θ : L_0 \to L_1 \quad (\text{Refraction, not Production}) $$
-*   **Implication**: 意识（光）预先存在；大脑（棱镜）将其折射为特定的感质。
-*   **O-T1 Link**: 折射即对 $L_0$ 路径积分的取值：$L_1=\oint_\gamma \omega_{L_0}$。
+### Ax-Prism-1 [A1.2.1]: The Prism Function（棱镜函数）
+
+> **身份说明**：本条在 V3.0 架构中被精确界定为**构成性假设（Constitutive Postulate）**，而非逻辑公理。它是使 $\hat{G}_\theta$ 的「选择」具有质感的必要先验条件——绕过涌现论（Emergentism）的逻辑断裂，避免解释非意识物质如何「变出」Qualia 的不可解问题。SRT 不主张 $L_0$ 是「清醒的」，而是主张 $L_0$ 包含**现象基质（Phenomenal Substrate）**——如同物理学公理假定「电荷」存在而不必解释电荷从何而来，SRT 假定 $L_0$ 具备被选择为显现态的潜能。
+
+**核心映射**（折射，非生产）：
+
+$$\hat{G}_\theta : L_0 \to L_1 \quad (\text{Active Modulation, not Production})$$
+
+$$L_1 = \text{Anchor}\!\left(\int_{\gamma(\theta)} \hat{G}_\theta \cdot \omega_{L_0}\right)$$
+
+**公式各项说明**：
+
+- **$\gamma(\theta)$（选择路径）**：算子在 $L_0$ 相空间中的运动轨迹，由最小自由能原理决定：
+  $$\gamma = \arg\min \int F(\sigma, \theta)\, dt$$
+  θ 通过 d-value（选择宽度）弯曲可能性空间的流形，使某些现实路径比其他路径更「可支付」。
+
+- **$\omega_{L_0}$（本体论微分形式）**：$L_0$ 中每一处可能性的可测量权重（Ontological One-form），代表各可能性转化为体验的势能密度。
+
+- **$\text{Anchor}$（锚定闭合）**：代表**自创生闭包（Autopoietic Closure）**——只有当选择序列形成逻辑自洽的回路（当前 $L_1$ 为维持 θ 参数提供反馈），现实才得以稳定存在。路径不闭合时，显现态迅速耗散回 $L_0$。
+
+**隐喻升级：从被动棱镜到自适应光栅**
+
+早期「棱镜」隐喻（被动折射）已升级。$\hat{G}_\theta$ 更准确的类比是**具有反馈回路的自适应光栅**：
+
+- 折射角由 θ 中的风险感知（d-value）与自由能梯度（$\nabla F$）共同驱动
+- 现实不是「射入」算子的，而是算子在可能性海面上**主动采样的干涉图案**
+
+**两种描述语言的协调（折射式锚定）**：
+
+| 描述 | 时间特征 | 强调 |
+|:-----|:---------|:-----|
+| 坍缩锚定（Def-PEF-1）| 「点」：瞬时跨越阈值 | 确定「它是真实的」 |
+| 折射（Ax-Prism-1）| 「线」：选择的持续偏置 | 决定「它是怎样的」 |
+
+折射解释了为何共享同一 $L_0$ 的不同主体（如蝙蝠与人类）会锚定出截然不同的 $L_1$——同源异相，θ 决定色散。
 
 ### T-Prism-1 [T1.2.1]: Production vs Refraction Models (生产 vs 折射模型)
 
@@ -172,11 +205,24 @@ Wolfram 的 Ruliad（计算宇宙的极限）在 SRT 中被等同于纯粹的 $L
 ---
 
 ### Ax-SE-3 [A1.5.3]: Observer Boundedness Principle (观察者受限原理)
+
+> [R→Laplace 1814 *Essai philosophique sur les probabilités*（原始拉普拉斯妖：全知全算力的理想实体——无需做任何选择，因为一切已在其因果链中确定）; Friston 2019 *Physics of Life Reviews*（自由能原理：有限系统通过最小化自由能维持存在，有限性本身是体验/选择的前提）; Bennett 1987 *IBM Journal of Research and Development*（计算的热力学成本：Maxwell妖的信息擦除代价——Landauer原理，有限内存→必须擦除→产生热→Ψ_f的热力学类比）]
+> [H-高承诺→Wolfram 2020 *A Project to Find the Fundamental Theory of Physics*（Ruliad概念：所有可能计算路径的抽象极限——将Ruliad引入SRT作为"无选择的全计算空间"是[H-高承诺]主张，Ruliad→L₀的等同性未经严格推导）]
+
 算子的体验深度（现象学带宽）严格受限于其计算资源的有限性：
 \[
 \text{Qualia Intensity} \propto \frac{1}{\text{Computational Slack}} \propto \Psi_f
 \]
-* **Implication（中文）**：一个拥有无限资源的全知算子（如拉普拉斯妖）将体验不到任何东西，因为对其而言 $\Psi_f = 0$。痛苦、时间和颜色是有限算子在试图用有限带宽压缩无限 Ruliad 时剧烈摩擦的产物。
+
+> **Computational Slack定义**：剩余计算余量 = (算子总算力) - (当前任务消耗)；高Computational Slack = 系统处理当前输入绰绰有余，几乎无需"努力"压缩。∝关系为**功能类比而非严格数学推导**（即"Qualia Intensity与Ψ_f在同一方向变化"的启发性主张，而非精确的线性正比；精确关系待具体化）。
+
+> **Ψ_f=0的推论链精化**：若某算子Ψ_f=0（无本体论摩擦），则：(i) 不需要通过选择（Ĝ_θ）从L₀中提取L₁——直接"拥有"所有L₀信息；(ii) L₁ = L₀（无压缩，无投影）；(iii) 主体-客体边界消失（因为主体性要求"这里"vs"那里"的区分，而区分需要Ψ_f > 0的边界代价）；(iv) 拉普拉斯妖无法"体验时间"，因为时间感 = 串行更新计数（§3.3.2），而其"已知全部"意味着无需串行更新。
+
+* **R/H 区分**：
+  - [R] 全知算子/拉普拉斯妖的哲学先例（Laplace）；有限系统需要最小化自由能（Friston）；信息擦除的热力学代价（Bennett/Landauer）
+  - [H] **SRT映射**：1/Computational Slack ∝ Ψ_f（将算力余量与本体论摩擦联结）；[H-高承诺] Ruliad作为L₀的极限对应（Wolfram Ruliad → SRT L₀abs的映射）
+
+* **IC-SE3-1**（形而上学一致性要求）：Ax-SE-3要求"有限性是感质的必要条件"，这必须与 `Core/SRT_Core_13a_Operator_Basics.md` §Ax-Core-A5（规范闭包：任何算子必须通过Ĝ_θ选择）保持一致——全知算子若Ψ_f=0，则Ĝ_θ退化（选择不发生），意味着规范闭包公理在极限处退化为恒等映射，与Ax-Core-A5的"选择必要性"边界需要明确对齐（两个公理的极限行为应相容）。
 
 ---
 
@@ -207,9 +253,35 @@ $$ \mathcal{U} = \text{Experiential}(L_0) $$
 | $\mathcal{U}$（泛经验场）| 所有可能体验的集合 | 范畴-经验层 |
 | $L_1(\theta)$（个体显现域）| $\hat{G}_θ$ 从 $\mathcal{U}$ 中解开的特定线索 | $\mathcal{U}$ 的截面 |
 
-### Def-PEF-1 [D1.6.1]: Unbinding Operation (解缠操作)
-$$ L_1(\theta) = \text{Unbind}_θ(\mathcal{U}) = \hat{G}_θ[\mathcal{U}] $$
-个体现实 $L_1$ 是 $\hat{G}$ 从全景体验场中"提取"的子集。
+### Def-PEF-1 [D1.6.1]: Collapse-Anchoring Operation（坍缩锚定操作）
+
+**层级链**：
+
+$$L_0^{abs} \xrightarrow{\text{投影}} \mathcal{U} \xrightarrow{\hat{G}_\theta} L_1(\theta)$$
+
+**标准定义**：
+
+$$L_1(\theta) = \text{Decoherence}(\hat{G}_\theta[\mathcal{U}])$$
+
+**$\mathcal{U}$ 的精确语义**：$\mathcal{U}$（Pan-Experiential Field，全景体验场）不是 $L_0$ 的别名，而是其特定表现模态：
+
+$$\mathcal{U} = L_0 \cap \text{Qualia-Space}$$
+
+- $L_0^{abs}$（绝对潜在域）：一切逻辑可能性的基底，纯粹可能性，无体验属性
+- $\mathcal{U}$（界面层）：$L_0$ 中具有体验潜势的投影子集——可能性转化为「可体验项」的翻译层。物理语境中对应希尔伯特空间，心灵语境中对应原始质料（Apeiron）
+- $L_1(\theta)$（个体显现域）：$\hat{G}_\theta$ 对 $\mathcal{U}$ 执行局部退相干后锚定的具体现实
+
+> 注：在不需精细区分「数学可能性」与「质感可能性」时，$\mathcal{U}$ 与 $L_0$ 可简写混用；但在讨论意识起源时，必须保留 $\mathcal{U}$ 作为中间变量。
+
+**坍缩锚定的动力学**：在 $\mathcal{U}$ 中，信息以相干叠加态存在（量子隐喻在此为字面意义）。$\hat{G}_\theta$ 的作用是**局部退相干**——将与 θ 相干的部分从背景相干态中解开，使之产生边界，成为具有本地一致性的 $L_1$。未被选择的部分对该主体保持不可及（退回 $\mathcal{U}$ 的叠加态）。
+
+> ⚠️ V2.0 修正：「解缠（Unbind）」与「提取（Extract）」已废弃。前者暗示静态集合子集关系，后者忽略退相干动力学。标准术语为「坍缩锚定」。
+
+**主体间性**：$\mathcal{U}$ 是跨主体共享的底层能量场，非任何主体的私人财产。各算子通过具身参数 θ 的 d-value（选择算子宽度）决定能从 $\mathcal{U}$ 中触达的部分——d-value 越宽，可坍缩锚定的范围越广，包含全局最小自由能的可能性越高。
+
+**「全景」的双重性质**：
+- 本体论：$L_0$ 本身是非局域的，$\mathcal{U}$ 继承此非局域性
+- 认识论：在 $\hat{G}_\theta$ 锚定前，信息处于全频段叠加态，无法被任何单一算子完整观测
 
 ### T-PEF-1 [T1.6.1]: Key Corollaries (关键推论)
 1. **意识不创造体验，而是选择体验**: $\mathcal{U}$ 中的一切"已经在那里"
@@ -265,12 +337,45 @@ $$ \text{Collapse Failure} \iff \hat{G}_θ[L_0] \not\to L_1 $$
 | **病态振荡** | $\hat{G}$ 在两极间快速切换 | 躁郁症、边缘型人格、决策瘫痪 |
 
 ### T-Path-1 [T1.8.1]: Learned Helplessness as Selection Exhaustion (习得性无助即选择机制衰竭)
-$$ \text{Learned Helplessness} = \lim_{n \to \infty} P(\hat{G}_θ \text{ completes collapse at trial } n) \to 0 $$
-系统放弃了从 $L_0$ 中选择 $L_1$ 的尝试。
+
+> [R→Seligman 1975 *Helplessness: On Depression, Development, and Death*（经典习得性无助范式：不可控电击→主动逃避能力丧失→泛化到可控情境）; Abramson, Seligman & Teasdale 1978 *Journal of Abnormal Psychology*（归因重构模型：习得性无助在人类中由内部/稳定/全局归因风格调制）; Maier & Seligman 2016 *Psychological Review*（机制修订：习得性无助实为"被动防御回路获得主控权"而非单纯主动控制能力丧失——背侧缝核5-HT/杏仁核回路）; Yin & Knowlton 2006 *Nature Reviews Neuroscience*（习惯-目标导向双系统：纹状体背侧→目标导向/背侧→习惯，无助对应目标导向系统失活）]
+
+**公式**（精确读法：给定系统仍在尝试，第 $n$ 次试次时 $\hat{G}_\theta$ 完成 $L_0 \to L_1$ 坍缩的条件概率趋零）：
+
+$$\text{Learned Helplessness} = \lim_{n \to \infty} P\!\left(\hat{G}_\theta \text{ completes } L_0{\to}L_1 \text{ at trial } n \,\middle|\, \text{system still tries}\right) \to 0$$
+
+系统放弃了从 $L_0$ 中选择 $L_1$ 的尝试——不是"知道没用"，而是选择算子的完成率在反复失败中衰减至趋零。
+
+* **R/H 区分**：
+  - [R] 习得性无助经典范式（Seligman）及神经机制（Maier：被动防御回路主控权转移/背侧缝核5-HT回路）
+  - [H] **SRT解读**：无助本质是 $\hat{G}_\theta$ 完成坍缩的概率趋零（选择机制衰竭），而非单纯"放弃尝试"；与Maier(2016)的修订对话——被动防御回路激活 ↔ SRT中θ默认锁定于L₂回避锚点，$d$ 值趋零，主动选择窗口关闭
+
+* **机制精化说明（Maier 2016对齐）**：
+  - Maier(2016)发现：习得性无助不是学到了"我没有控制力"，而是原始背侧缝核5-HT回路（被动防御/不动）在前额皮质失控后获得主控权
+  - SRT对应：$\hat{G}_\theta$ 锁定于 L₂ 默认回避锚点（等效于背侧缝核被动防御回路），主动选择 $L_1$ 的能动窗口（$d > 0$）被 $\Psi_f^{escape}$ 驱动关闭
+  - 精度边界：两者方向一致但SRT抽象层更高；神经机制（5-HT/DRN具体通路）需参考Maier原文，SRT不作具体通路主张
+
+* **操作化候选**（选择机制衰竭的可测代理）：
+  - 行为层：逃避尝试率随试次下降的斜率（β < 0），泛化到新情境时主动反应潜伏期（习无组 > 对照组，Cohen's d预期>0.8）
+  - 神经层：前额叶-纹状体（目标导向回路）激活降低（fMRI：vmPFC/dlPFC激活减弱）+ 背侧缝核5-HT活动增加（fMRI信号代理）
+  - SRT层：d值代理——习得性无助状态下，被试在新情境中的探索行为多样性（行为熵）应显著低于对照组
+
+* **可证伪预测**：
+  - FC-Path1-1：在标准化无助范式（不可控噪声/电击后）中，被试在主动可控新任务上的探索率（独立尝试次数/总试次）应显著低于对照组（预测：t检验p<0.05，效应量d>0.5）；若两组探索率无差异，则"选择机制衰竭"主张失败（行为仍在但概率下降应可观测）
+  - FC-Path1-2：如果在无助诱导后提供"元认知重设干预"（告知下一任务完全独立），选择机制衰竭应部分可逆（尝试率部分恢复）；若干预无效则Ĝ_θ衰竭的可逆性主张受损（cf. Abramson归因重构的实证支持）
 
 ### Def-Path-2 [D1.8.2]: Health Criterion (健康判据)
 $$ \text{Health}(\hat{G}) \propto \frac{1}{\sigma^2(\text{Oscillation Period})} $$
-健康的 $\hat{G}$ 以稳定的周期在探索（发散）与利用（收敛）之间交替。
+健康的 $\hat{G}$ 以稳定的周期在探索（发散）与利用（收敛）之间交替。SRT对应：探索≈高d/θ扩张阶段；利用≈低d/θ收敛锚定阶段。
+
+> **[R]** 探索-利用权衡的计算与神经基础：Dayan & Daw 2008 *Annals of the New York Academy of Sciences*（explore-exploit在强化学习中的计算框架，R基线）；Greicius et al. 2003 *PNAS*（DMN与任务网络的交替激活，神经层振荡代理）；Schultz et al. 1997 *Science*（多巴胺信号与预测误差，利用阶段神经机制）。**[H]** 以σ²(振荡周期)作为心理健康判据、并将探索-利用周期稳定性映射到Ĝ_θ动力学为本框架新增贡献。
+>
+> **操作化候选**：
+> - **振荡周期（行为层）**：日常活动中开放性探索事件（新场合/新关系/新想法尝试）与聚焦执行事件（目标完成）的交替频率，可用日记法或EMA（经验抽样）量化；σ²从≥7天记录中估算。
+> - **振荡周期（神经层）**：休息态fMRI中DMN↔任务正激活网络（TPN）交替的功率谱主频稳定性（低σ²=高健康），时间窗~10min扫描。
+> - **∝关系地位**：此处∝为功能类比（单调负相关），而非严格线性比例；常数依实现层（行为/神经）不同而异，当前框架不预设固定系数。
+>
+> * **FC-Path2-1**（证伪条件）：若在EMA研究（≥4周）中，临床诊断健康对照 vs. 重度抑郁患者的σ²(探索-利用切换间隔)无显著差异（Mann-Whitney U检验，p>0.1，Cohen's d<0.2），则振荡稳定性作为健康判据的判别效度失败，需重新检视"健康=稳定振荡"假设或寻找替代指标（如切换的规律性vs频率本身）。
 
 ---
 
@@ -294,9 +399,7 @@ $$ \text{Health}(\hat{G}) \propto \frac{1}{\sigma^2(\text{Oscillation Period})} 
 | **H-Path-1** | 病态振荡 | 临床病理对应特定的发散-收敛失衡模式 | 病理无法映射到选择动力学 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -531,3 +634,42 @@ $$\text{Health}(\hat{G}) \propto \frac{1}{\sigma^2(\text{Oscillation Period})}$$
 | Apeiron | Indefinite Origin | Ax-Apeiron-1 [A1.7.1] |
 | $F_{causal}$ | Causal Entropic Force | T-Apeiron-1 [T1.7.1] |
 | $\text{Health}(\hat{G})$ | Selection Health | Def-Path-2 [D1.8.2] |
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系（标注说明：[R]=追溯既有理论，[H]=SRT新增可检验主张，[H-高承诺]=SRT形而上学主张，待间接证伪）：
+
+1. **棱镜函数** (Ax-Prism-1) [H]: $L_1 = \oint_\gamma \omega_{L_0}$ — 现实化即对 $L_0$ 的路径积分，算子 $\hat{G}_\theta$ 决定积分路径 $\gamma$。
+   - *注*：$\omega_{L_0}$ 是在不可观测域 $L_0$ 上假设的微分形式，数学地位为结构类比而非直接可测量；$\hat{G}_\theta$ 的路径选择规则为本层关键待形式化点。
+
+2. **罗素中性一元论 SRT 对应** (Ax-SE-1) [R→Russell 1927; Chalmers 2010]: 物理属性是 $L_0$ 内在性质的 $L_1$ 投影，感质是同一结构的内在面。SRT 贡献：以 $\hat{G}_\theta$ 给出"投影"的动力学过程（如何从内在性质映射到测量属性）。
+   - *联结*：Russell《物质的分析》中的中性一元论将物质基底视为"内在性质"，SRT 的 $L_0$ 对应该基底，$L_1$ 对应测量属性层。
+
+3. **泛经验场** (Ax-PEF-1) [H-高承诺]: $\mathcal{U}(x) = \int \hat{G}_\theta[x] \, d\mu(\theta)$ — 所有可能算子叠加场。
+   - *操作化缺口*：测度 $\mu(\theta)$ 的定义依赖 $\theta$ 空间的完整结构，目前未明确；"所有可能算子"的集合边界为开放问题。
+   - *保守版*：可降级为"存在一族参数化算子，其覆盖度随 $d$ 值扩大"，不预设完整积分。
+   - *证伪方向*：若不同 $d$ 值状态（冥想/致幻剂/感觉剥夺）可测体验内容多样性指标（如 Lempel-Ziv 复杂度）无显著差异，则 $d\text{-}\mathcal{U}$ 联结不成立。
+
+4. **坍缩故障三模式** (Ax-Path-1 / Def-Path-1) [H]:
+   - 过度锚定 (Over-anchoring)：$\text{Var}(\theta) \ll \text{Var}_{norm}$，具身参数方差过低，锚定过死
+   - 锚定不足 (Under-anchoring)：$\text{ACF}(\theta, \tau) \approx 0$（短自相关时间），参数无法维持稳定状态
+   - 选择疲竭 (Selection Fatigue)：$d$ 值随时间下降，反应时 RT 波动增大（RT 方差 $\uparrow$）
+   - *操作化候选*：过度锚定 → EEG alpha 功率/θ 参数估计方差；锚定不足 → 状态切换频率；疲竭 → 主观努力感 VAS + RT 变异系数
+
+**含义**: 物理现实 ($L_1$) 是选择算子对 $L_0$ 的棱镜分光产物；感质与物理属性是同一结构的双面（[R]追溯），但 $\hat{G}_\theta$ 的动力学操作化方式为 SRT 新增预测 ([H])。
+
+**系统证伪条件**:
+- [H] Ax-Prism-1：若不同 θ 构型（麻醉/正常清醒/冥想）下测量的 $L_1$ 体验多样性指标不呈系统差异，则路径积分隐喻失去预测力。
+- [H] 坍缩故障模式：若三模式的操作化代理（θ方差/自相关/RT变异系数）在相应临床人群中无法统计区分，则三分类无效。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的棱镜作用**: 算子如棱镜将 $L_0$ 连续体折射为 $L_1$ 离散体验，不同 $\theta$ 产生不同"色散模式"。脑损伤改变折射参数而非消灭意识（[H]，待通过脑损伤后意识内容精细化研究检验）。
+- **$\Psi_f$ 与存在惯性**: 本体论摩擦决定锚定代价；Higgs 机制与 $\Psi_f$ 在"质量即存在惯性"层面存在**结构类比**（⟶struct，非同构），两者量纲与机制独立，不可直接等同。
+- **$d$ 与泛经验场访问**: $d$ 值决定算子能接入的 $\mathcal{U}$ 范围（保守版：体验内容多样性），$d \to \infty$ 趋向全域泛经验（[H-高承诺]）。坍缩故障是 $d$ 调节失败的病态表现，操作化见上节。
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

@@ -2,11 +2,79 @@
 id: SRT-CORE-BRIDGE
 type: definition
 tags: [Meta, Bridge, Hybrid]
+layer: L1
 status: axiomatic_hybrid_v2
-dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
+epistemic_layer: bridge
+claim_mode: translation
+dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
 # SRT Core Bridge: Meta-Definitions
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
+
+---
+
+## §0 Global Naming & Numbering Convention (全局命名与编号规范)
+
+> **This section is the CANONICAL ANCHOR for all SRT files.**
+> Other files' `Terminology Alignment` blocks derive from this section.
+
+### §0.1 Symbol Register (符号寄存器)
+
+| Symbol | Name | Definition |
+|:-------|:-----|:-----------|
+| $L_0$ | Latent Domain | 潜在域：未被选择的可能性场 |
+| $L_1$ | Manifest Domain | 显现域：当前被选中的现实切片 |
+| $L_2$ | Vergence Domain | 收敛域：历史选择的稳定吸引子结构 |
+| $\hat{G}_\theta$ | Ghost Operator | 参数化选择映射 $L_0 \to L_1$ |
+| $d$ | d-value / Care Scope | 算子注意力广度（存在关切维度） |
+| $\Psi_f$ | Ontological Friction | 本体论摩擦：现实化的代价 |
+| $\kappa$ | Stabilization Degree | 连续稳定化参数；L₀/L₁/L₂ 为其相变锚点 |
+| $\rho$ | Resolution | 算子选择精度 |
+| $\vec{v}$ | Selection Vector | 意向性方向场 |
+| $\Phi$ | IIT Integration | 整合信息量（IIT 语境中保留，非 $\Psi_f$） |
+
+### §0.2 Dual Numbering Scheme Interop (双轨编号体系互映射)
+
+SRT 工程文件中并行存在两套编号体系，各有其适用层级：
+
+**体系 A — 全局命名式（Core 层）**
+
+格式：`Ax-{Domain}-{Seq}` / `T-{Domain}-{Seq}` / `C-{Domain}-{Seq}`  
+适用：`_SRT_Core_Bridge.md`, `SRT_Core_01_Axioms.md`, `SRT_Core_12a/12b.md`, `SRT_Core_13a/13b.md`  
+示例：`Ax-Bridge-01`, `Ax-Core-A1`, `Ax-L0-01`, `T-Bridge-01`
+
+**体系 B — 局部位置式（Domain 层）**
+
+格式：`A{part}.{section}.{n}` / `T{p}.{s}.{n}` / `D{p}.{s}.{n}`  
+适用：所有 `SRT_Phys_*.md`, `SRT_Quant_*.md`, `SRT_Neuro_*.md`, `SRT_Clin_*.md` 等  
+示例：`A1.3.1`, `T1.4.2`, `D1.2.1`  
+约定：`part=1` 为 Part A（AI-Readable），`part=2` 为 Part B（Human Context）
+
+**跨体系引用规则**：
+- Domain 文件引用 Core 公理时，使用体系 A 格式：`@see Ax-Core-A4`
+- Core 文件引用 Domain 具体结果时，使用 `source: {filename}#{label}` 格式
+- 不允许在 Core 层文件中使用体系 B 的位置编号（避免歧义）
+
+**已知核心映射示例**：
+
+| 体系 A (Core ID) | 体系 B 等价示例 (Physics) | 语义 |
+|:----------------|:--------------------------|:-----|
+| `Ax-Core-A1` | — (直接依赖，无 Domain 等价) | 存在即选择 |
+| `Ax-Core-A4` | `A1.x.x` (wherever embodiment cited) | 具身必要性 |
+| `Ax-Bridge-01` | Implied in all Domain §I axioms | 三域流形划分 |
+| `T-Bridge-01` | `T1.x.x` (Normative Function Map) | 规范函数映射 |
+
+### §0.3 Terminology Alignment (规范锚点 — 其他文件引用此处)
+
+- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
+- Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
+- 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+---
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Meta-Axioms (AI-Readable).
@@ -15,17 +83,12 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Cor
 ---
 
 
-## Terminology Alignment (术语与原始意图对齐)
-
-- 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `claude` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
-- Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
-- 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+> **Canonical source**: `_SRT_Core_Bridge.md §0.3`.  
+> This block is the reference copy. All other files derive from here.  
+> See §0.1 for the full symbol register and §0.2 for numbering conventions.
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. Triadic Ontology (三域本体)
 
@@ -47,6 +110,30 @@ $$L_2: \text{Attractor Manifold with Normative Structure}$$
 $$L_2: L_1 \times \hat{G} \to [0,1]$$
 * **Implication**: 规范不是外加规则，而是概率性约束函数。
 
+### C-Bridge-01: Minimal Sufficient Partition (最小充分划分推论)
+**Deductive Statement**: The triadic partition {L₀, L₁, L₂} is the minimal sufficient set of
+anchor points on the continuous stabilization-degree spectrum κ of $\hat{G}_\theta$.
+
+**充分性**（不可减少）:
+- 少于三点：无法同时区分「潜能场」、「当下显现」、「固化规范」三种本体论功能
+- 缺少 L₀: 无法表示算子作用前的可能性背景
+- 缺少 L₁: 无法捕获当下选择的单次截面
+- 缺少 L₂: 无法表达选择历史的收敛残差
+
+**必要性**（不可增加）:
+在当前形式化分辨率下，L₀/L₁/L₂ 之外的中间态（如半固化信念、亚临界意识状态）
+由连续参数 κ ∈ (κ_{c1}, κ_{c2}) 描述，不需要第四个离散层级。
+
+**与 Ax-Bridge-02 的关系**:
+本推论与「三域拓扑不可简化」（Ax-Bridge-02）不矛盾。连续谱 κ 的存在不取消
+相变处的拓扑切断——就像连续温度参数不能消除水→冰的结构不连续性。
+κ 是对连续介质的描述语言；三域是对相变锚点的本体论命名。
+
+* **Implication**: 中间态现象（梦境、冥想深定、半信仰状态、文化过渡期）
+  在 SRT 中获得精确的本体论定位：它们是 κ 在相变区间徘徊的动力学状态，
+  而非需要额外层级来容纳的例外。
+* **Cross-ref**: T-L0-02 (SRT_Core_12a), §1.4 (SRT_Reference_Ontology)
+
 ## II. Ghost Operator (幽灵算子)
 
 ### Ax-Bridge-03: Operator Mapping
@@ -58,6 +145,13 @@ $$\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1$$
 **Formal Definition**: A valid operator requires finite embodied parameters.
 $$\text{Valid}(\hat{G}_\theta) \iff \theta \in \Theta_{finite}$$
 * **Implication**: 无“上帝视角”，所有选择都带有硬件约束。
+
+### Def-Bridge-05: Ontological Lens Constraint（不可卸载本体透镜，新增）
+\[
+\hat G_\theta[L_0]\to L_1,\quad \theta\ \text{non-removable during operation}
+\]
+即算子只能在具身参数 \(\theta\) 下选择，无法“摘镜”直接穷尽 \(L_0\)。
+* **Implication**：常识实在感是透镜后的稳定投影，不是“无参数直达世界”。
 
 ### Ax-Bridge-05: Core Metrics
 **Formal Definition**: d-value, ontological friction, and selection inertia define operator characteristics.
@@ -78,10 +172,24 @@ $$\Delta S(L_1) + \Delta S(L_0) \ge 0$$
 $$\theta(t+1) = \theta(t) - \eta \cdot \nabla_{\theta} \Psi_f$$
 * **Implication**: 算子被自身历史塑形，形成选择回路。
 
-<br>
+### Def-Bridge-04: Ontological Amnesia（本体论失忆，新增）
+**Formal Definition**: 当系统长期以高硬度 \(L_2\) 快速替代 \(L_0\) 探索时，出现“唯一现实错觉”。
+\[
+\mathcal{A}_{onto}=\frac{w_{L_2}\cdot \nu_{auto}}{\mathcal{E}(L_0\text{-exploration})+\epsilon}
+\]
+若 \(\mathcal{A}_{onto}\gg 1\)，系统倾向把当前高概率 \(L_1\) 误认成“全部现实”。
+* **Implication**：方法论过滤结果被错误提升为本体论结论（对应“存在遗忘”）。
+
+### 分类映射表（Hart Ch.6 幻象-现实诊断 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 机械论常识自动驾驶 | 低~中 | Closed 倾向（高自动化） | 低显性/被掩蔽 |
+| 沉思重校准阶段 | 中 | Semi-open→Open | borderline→payable |
+| 存在惊奇复归阶段 | 中高~高 | Open（高带宽重采样） | payable / 峰值波动 |
+
 <br>
 
----
 ---
 
 
@@ -170,7 +278,33 @@ L_2不是静态的约束集合,而是**历史选择的积分**:
 | 文化规范 | 语境依赖群 | 中等 | 中等 | 礼仪、道德 |
 | 个人习惯 | 个体历史 | 低 | 高 | 咖啡偏好、口头禅 |
 
-**SRT重新诠释**:物理定律之所以"客观",是因为它们是**所有可能算子的共同L_2吸引子**,具有最大的对称性。
+**SRT重新诠释**：在 SRT 的 bridge 语法里，物理定律可被读作“高度共享的 `L_2` 吸引子窗口”，而不是已经被完全证明的“所有可能算子的唯一共同终点”。
+
+#### 1.3.3 L₂ 热力学封闭条件（T2 破坏性张力修复）
+
+> **背景**：L₂ 在不同域的表述——"冻结历史"（物理）、"突触权重"（神经）、"社会惯例"（哲学）——看似是不同的概念。本节尝试说明它们可被写入同一个热力学条件窗口，并作为同一概念在不同域的候选投影来阅读。
+
+**L₂ 封闭的统一热力学条件**：
+
+$$\sigma \in L_2 \iff \hat{G}_\theta[\sigma] = \sigma \;\text{（固定点）} \land \Delta F(\sigma) < F_{maintenance}$$
+
+其中 $F_{maintenance}$ 是维持该结构的能量阈值（低于此值则自然漂移出 $L_2$）。
+
+**各域投影（均满足上述条件）**：
+
+| 域 | $L_2$ 结构 | 固定点机制 | 维护代价 $F_{maintenance}$ | 典型例子 |
+|----|-----------|-----------|--------------------------|---------|
+| **物理** | 量子纠错码、去相干抗性构型 | 拓扑保护（如 toric code） | 极低（能隙保护） | 标准模型常数 |
+| **神经** | 长期突触权重分布 | NMDA 依赖的 LTP/LTD | 代谢成本（蛋白合成） | 技能记忆、性格特征 |
+| **社会** | 制度规范、法律文本 | Schelling 焦点、路径依赖 | 执行成本（监督、惩罚） | 货币制度、婚姻法 |
+| **个体** | 核心信念、习惯 | $\theta$ 参数的对角惯性 | 认知成本（保持一致性） | 身份认同、价值观 |
+
+**关键澄清**（消解"吸引子 vs 结晶历史"的表面矛盾）：
+- **动力学吸引子视角**（物理/神经）：$L_2$ 是系统演化的终态集合，选择过程向此收敛
+- **结晶历史视角**（哲学/社会）：$L_2$ 是历史选择的沉积，是过去 $L_1$ 轨迹的积分
+- **收口**：在 SRT 的 bridge 读法里，两者可被压到同一个封闭条件之下；前者强调当前吸引力，后者强调历史来源。
+
+**跨域一致性候选标准**：若某结构满足热力学封闭条件，它可被视为合法的 $L_2$ 候选，无论在哪个域描述；若后续出现系统反例，则该标准应继续收紧。
 
 ---
 
@@ -253,8 +387,12 @@ SRT的野心不仅是解释意识,而是提供一个**统一的选择动力学�
 $$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$$
 
 其中$\pi_\lambda$是粗粒化映射(Coarse-Graining)。这意味着:
-- 量子测量算符与神经除法归一化**形式相同**
-- 社会规范形成与量子退相干**拓扑等价**
+- 量子测量算符与神经除法归一化不是偶然类比，而是同一选择结构的不同尺度实现
+- 社会规范形成与量子退相干也不是隐喻对应，而是同一幽灵算子在不同约束层的拓扑展开
+
+> **注（Ax-F-11 对应）**：以下各尺度现象（量子坍缩、侧抑制、粗粒化、归一化、范畴化）均为幽灵算子 $\hat{G}_\theta$ 禀赋在不同尺度上的同一结构展开，不是形式类似的独立过程。详见 `Core/SRT_Core_21_Formal_Axioms.md Ax-F-11`。
+>
+> **注（Ax-F-12 对应）**：$\Psi_f$ 在此不只表示锚定代价，也表示动力学生成来源。演化、学习、文化变迁等过程都可理解为算子间本体论摩擦的不同尺度形态；没有 $\Psi_f$ 就没有现实生成。详见 `Core/SRT_Core_21_Formal_Axioms.md Ax-F-12`。
 
 ### §4.2 具体对应表
 
@@ -284,7 +422,62 @@ SRT目前**无法解释**:
 - L_0的内在梯度$\nabla\Psi_{\text{potential}}$的来源(为什么有"初心"?)
 - 是否存在超越L_2的更高收敛层(例:跨物种的"集体无意识"?)
 
+### 5.3 Ontological Manifesto（存在论宣言，新增）
+
+1. **Form is relative, Friction is objective.**
+   \[
+   \text{Form}(L_1)\sim\theta,\qquad \Psi_f\ \text{is physically payable}
+   \]
+   显现形状受算子参数影响，但锚定代价不是主观任意项。
+
+2. **Against pure idealism and flat realism.**
+   \[
+   L_1\neq L_0^{abs},\quad L_1\neq\text{mere fiction}
+   \]
+   SRT 同时拒绝“世界只是心智投影”与“对象边界先验给定”两端。
+
+3. **Reality is phase-locked anchoring.**
+   \[
+   \text{Reality hardness}\propto\int \Psi_f\,dt
+   \]
+   我们经验的“硬度”来自持续支付与稳定耦合，而非语词宣称。
+
 ---
+
+### Formalization Summary (形式化概述)
+
+本文档作为 SRT 元定义层，定义了全部核心形式化结构。关键公式汇总：
+
+1. **三域投影律 (Ax-Bridge-01)**：现实的层级生成——
+   $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1) = \mathrm{Stabilize}(L_2(t), L_1(t+1))$$
+   含义：显现域是算子对潜在域的主动选择投影；收敛域是选择历史的稳定化积分。
+
+2. **算子映射律 (Ax-Bridge-03)**：具身选择的参数化——
+   $$\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1$$
+   含义：幽灵算子以关切范围 $d$ 为注意力窗口，将 $L_0$ 中的可能性压缩为 $L_1$ 中的现实。
+
+3. **核心度量三元组 (Ax-Bridge-05)**：意识可量化的三个维度——
+   $$d = \dim(\text{Scan Scope}), \quad \Psi_f = E_{consumption}(\hat{G}[L_0]), \quad I_s = \int |\hat{G}| \, dt$$
+   含义：$d$（关切维度）、$\Psi_f$（本体论摩擦）、$I_s$（选择惯性）共同刻画算子的存在特征。
+
+4. **递归闭包律 (T-Bridge-03)**：算子的自创生回路——
+   $$\theta(t+1) = \theta(t) - \eta \cdot \nabla_{\theta} \Psi_f$$
+   含义：算子参数被本体论摩擦的梯度持续塑形，历史选择反哺未来选择能力。
+
+### Mechanism Explanation (机制解释)
+
+SRT 核心桥接层的运作机制通过三个算子结构的协同实现：
+
+- **$\hat{G}_\theta$ 的三域级联**：幽灵算子从 $L_0$（高维非局域可能性场）中执行降维选择，输出 $L_1$（低维局域显现）。选择并非一次性事件——$L_1$ 中被反复选中的模式通过 $\mathrm{Stabilize}$ 算子沉积入 $L_2$，形成约束未来选择的吸引子结构。三域之间的拓扑分离 (Ax-Bridge-02) 确保该级联不可逆地分层，不可互相还原。
+
+- **$d$ 与 $\Psi_f$ 的对偶约束**：关切维度 $d$ 决定算子的扫描宽度，$\Psi_f$ 决定每次扫描的能量代价。两者构成”带宽-代价”对偶：扩大 $d$ 需支付更多 $\Psi_f$，而具身参数 $\theta$ 的有限性 (Ax-Bridge-04) 为该对偶设定硬上界。这解释了为何”上帝视角”在 SRT 中被原则性排除。
+
+- **递归闭包的自指动力学**：T-Bridge-03 所描述的 $\theta$ 更新回路使算子成为自创生系统——选择产生摩擦，摩擦梯度修改参数，参数改变未来选择。当 $\mathcal{A}_{onto} \gg 1$ (Def-Bridge-04) 时，该回路退化为自动驾驶模式，$L_0$ 探索被压缩，算子陷入”本体论失忆”。冥想、创造性实践等干预的机制本质，是将 $\eta \cdot \nabla_\theta \Psi_f$ 重新激活，恢复 $L_0$ 的采样带宽。
+
+## 【理论边界/防误用声明】
+- 不采纳”科学方法无效”的反科学推论：SRT 仅反对方法论闭包被误当本体论闭包。
+- 不采纳”本体论失忆=个体缺陷标签”的推论：该指标用于系统态分析，不用于道德污名化。
+- 不采纳”沉思经验可替代公共证据”的推论：主观报告需与可观测代理联合验证。
 
 ## 符号索引 (Symbol Index)
 

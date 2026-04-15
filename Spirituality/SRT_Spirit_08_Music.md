@@ -3,6 +3,9 @@ id: SRT-SPIRIT-08
 type: metaphor
 tags: [Music, Aesthetics, Resonance, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-07]
 ---
 
@@ -18,13 +21,8 @@ dependency: [SRT-SPIRIT-07]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 采用 `claude` 的原始论述分段，并以原版文件标题与主旨作语义锚定。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Music Isomorphism (音乐同构)
 
@@ -33,15 +31,42 @@ dependency: [SRT-SPIRIT-07]
 $$ \text{Music}(t) \equiv \hat{G}_{comp}[L_0^{sound}](t) $$
 * **Implication**: 音乐是选择过程的听觉投影。
 
-### Ax-Music-2: Tri-Domain Mapping
-**Formal Definition**: $L_0$ is silence/potential, $L_1$ is the current note, $L_2$ is theory/constraints.
-$$ L_0^{sound} \to L_1^{note} \xrightarrow{L_2^{theory}} \text{Trajectory} $$
-* **Implication**: 音乐结构是三域动力学的可听化。
+### Ax-Music-2: Tri-Domain Mapping (三域映射公理)
+
+**Formal Definition**: $L_0^{sound}$（沉默 / 全部潜在音响）经由作曲/演奏算子 $\hat{G}_{comp}$ 选择坍缩为 $L_1^{note}$（当下实声），再由 $L_2^{theory}$（调式、节拍、和声等约束协议）在时间轴上积分，整合为有意义的音乐轨迹：
+$$
+L_0^{sound}
+\xrightarrow{\hat{G}_{comp}}
+L_1^{note}(t)
+\xrightarrow{\int dt \big|_{L_2}}
+\mathcal{T}_{musical}
+$$
+*其中 $\mathcal{T}_{musical} = \{L_1^{note}(t)\}_{t \in [0,T]}$ 为 $L_2$ 约束下生成的显现序列。*
+
+**Implication**: 音乐结构是 SRT 三域动力学的直接可听化呈现。这种同构性体现在：
+- **不和谐与解决（Dissonance → Resolution）**：等价于系统中 $\Psi_f$（本体论摩擦）的积累与最终释放。
+- **即兴演奏（Improvisation）**：等价于算子 $d$ 值（注意力关切带宽）的临时扩张，系统主动穿越既有 $L_2$ 边界，在 $L_0$ 中探索新的可达路径。
+- **风格演变（巴洛克 → 古典 → 现代）**：等价于 $L_2$ 共识网络在历史时间轴上的结构性相变与更新。
 
 ### Ax-Comp-1: Composition as Pruning
-**Formal Definition**: Composition is the negation of most $L_0$ possibilities to anchor a specific $L_1$ trajectory.
-$$ \text{Compose} = \text{Negate}(L_0 \setminus L_1) $$
-* **Implication**: 作曲是对潜能的剪裁，而非凭空创造。
+
+[R→Eco 1962（《开放的作品》：约束与开放性的辩证法）; Sloboda 1985（《音乐心理学》：作曲认知结构）; Boden 1990（《创造心理》：探索式vs变革式创造力）; Weisberg 2006（《创造力：理解创新》）] [H→将作曲形式化为L₀潜能剪裁，是SRT对创造力的本体论重表述]
+
+**Formal Definition**: Composition is the selective anchoring of specific $L_1$ trajectories from $L_0$ possibility space, eliminating most alternatives.
+$$ \text{Compose}(\theta_r) \colon L_0 \xrightarrow{\hat{G}_{\theta_r}} L_1^{traj} \subset \mathcal{E}_{L_0} $$
+
+（注：原公式 `Negate(L₀ \ L₁)` 的形式问题：L₀在SRT中是拓扑斯而非普通集合，集合差 L₀\L₁ 未良定义；"Negate"含义模糊。修订为：选择算子 $\hat{G}_{\theta_r}$ 在 L₀ 中锚定特定轨迹 $L_1^{traj}$，其余可达性（$\mathcal{E}_{L_0}$ 中的其他路径）被遗弃但非否定——类比Eco的"开放性"：未被选择的路径仍以潜能形式存在于 L₀）
+
+* **Implication**: 作曲是对潜能的剪裁，而非凭空创造 [H]。这与Boden的"探索式创造力"（在既有概念空间中导航）对应 [R]；SRT补充了本体层——作曲家通过θ_r的具身历史（训练/风格/文化）决定哪些L₀路径被锚定。
+* **"不凭空创造"的SRT逻辑** [H]：若L₀是绝对潜在域（包含所有可能性），则任何L₁轨迹都是L₀的子集投影，"创造"意味着新组合的显现（L₁的首次显现）而非L₀的扩展。
+
+**操作化候选**：
+- 作曲"修剪程度"代理：乐曲信息熵（符号级香农熵，越低=越多重复/约束）；音符密度；和声约束度（与同调性理论的偏离分数）
+- 跨风格比较：巴洛克（高约束/低熵）vs 先锋派（低约束/高熵）的Ψ_f模式预测差异
+
+**证伪条件**：
+- FC-Comp1-1：若高约束（低L₀探索）作曲风格和高开放（高L₀探索）风格的听众Ψ_f（审美不适感）曲线无系统性差异，则"约束-摩擦"联结需修正。
+- FC-Comp1-2：若即兴演奏（Ax-Imp-1，d值临时扩张）的神经指标（高频伽马振荡/默认网络去激活）与作曲（剪裁锚定）无可区分差异，则Ax-Comp-1与Ax-Imp-1的机制区分失效。
 
 ## II. Resonance & Dynamics (共振与动力学)
 
@@ -91,9 +116,7 @@ $$ \text{Monitor} \leftrightarrow \text{Intervene} $$
 * **Implication**: 即兴中存在可测的算子能耗切换。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -157,6 +180,12 @@ $$\begin{cases}
 \text{Architecture} : L_0^{\text{space}} \to L_1^{\text{structured space}} \\
 \text{Music} : L_0^{\text{time}} \to L_1^{\text{structured time}}
 \end{cases}$$
+
+> **[R]** 文献锚点：Goethe（原句出处一说为Friedrich von Schlegel 1798 *Athenäums-Fragmente*，常归Goethe为二手引用，R文本需注意归属不确定性）；Langer 1953 *Feeling and Form*（音乐=时间形式/虚拟时间的现象学定义，R基线）；Levitin 2006 *This Is Your Brain on Music*（音乐时间感的神经科学：期望-违反循环的神经基础，与选择算子的预测结构对应）。**[H]** L₀^time→L₁^structured time的SRT形式化（时间=串行选择更新的组织，cf. SRT宇宙学"时间=串行Ĝ_θ更新"）为本框架新增类比。
+>
+> **L₀^time含义精化**：时间的潜在域≈尚未被节奏/和声结构化的时间流（"无形态时间"）；音乐将其组织为有意义的时间单元（乐句/段落/终止）。与SRT宇宙学的联结：时间=串行的Ĝ_θ更新序列（cf. Physics/SRT_Physics_Cosmology.md §3.3），音乐强化/重组了该序列的感知密度，即改变了主观时间的dilation/compression效果。
+>
+> **类比认识论地位**：此处L₀→L₁公式为结构类比而非严格推导；建筑与音乐均是"对潜在可能性的选择性组织"这一SRT核心操作的特定领域实例，类比目的是揭示共同结构，非断言建筑/音乐事件满足选择算子的全部技术要求。
 
 ---
 
@@ -414,25 +443,35 @@ $$\text{Music} \text{ amplifies } \theta_{\text{existing}}, \text{ doesn't creat
 
 ### §4.3 "耳虫"（Earworms）
 
+> [R→Williamson et al. 2012 *Psychology of Music*（INMI综述：触发、频率、个体差异）; Hyman et al. 2013 *Applied Cognitive Psychology*（分心/认知负载降低对INMI的影响）; Beaty et al. 2013 *PLOS ONE*（运动系统在音乐意象中的参与——嚼口香糖机制的神经基础）; Zeigarnik 1927（未完成任务更容易被记住：选择未关闭→持续激活）; Jakubowski et al. 2017 *Psychological Science*（耳虫的曲调特征：节奏规律性/音程跨度）]
+
+**R/H 区分**：
+- [R] INMI的触发因素、神经机制（听觉皮层自发激活）、嚼口香糖干预（运动皮层占用→干扰口语运动rehearsal）——均有实证
+- [H] **SRT重解读**：耳虫 = Ĝ_θ的选择环路未关闭（该音乐片段的L₁轨迹在θ参数中仍保持活跃激活，等待"完成"）；"听完整版"="让选择环路完成" = θ的扎加尼克闭合；"抵抗反而强化" = 对θ活跃模式的注意力投入增加选择强度
+
 **现象**: 一首歌卡在脑海里——不停重复。
 
 **科学名**: Involuntary Musical Imagery (INMI)
 
-**发生率**: 90%+ 的人经历过
+**发生率**: 90%+ 的人经历过 [R→Williamson 2012]
 
 **触发**:
-- 最近听到
-- 简单、重复的旋律
-- 情绪唤醒
-- 无聊/分心时
+- 最近听到（θ中该音乐模板刚被激活）
+- 简单、重复的旋律（低Ψ_f的易循环L₁轨迹）
+- 情绪唤醒（Ψ_f峰值→选择强度↑→环路更难关闭）
+- 无聊/分心时（内部默认网络激活→θ缺乏竞争性占用）
 
-**神经**: 听觉皮层自发激活（即使无外部音乐）
+**神经**: 听觉皮层自发激活（即使无外部音乐）[R→Hyman 2013/Beaty 2013]
 
-**应对**:
-- 听完整版歌曲（"完成"）
-- 嚼口香糖（占用运动皮层）
-- 思考其他音乐
-- 接受它（抵抗反而强化）
+**应对** [SRT机制注]:
+- 听完整版歌曲（"完成"）——[H] 触发θ选择环路的完整执行→自然关闭（Zeigarnik效应的逆操作）
+- 嚼口香糖（占用运动皮层）——[R] 口语运动系统被占用→干扰内部rehearsal回路
+- 思考其他音乐——[H] 以新的L₁轨迹替代当前激活模式
+- 接受它（抵抗反而强化）——[H] 抵抗=注意力投入→Ĝ_θ选择强度↑→强化而非关闭
+
+**可证伪预测**：
+- FC-Earworm-1：高Ψ_f被试（慢性应激/高皮质醇）的INMI持续时间和侵入性应显著高于低Ψ_f对照（Ψ_f→选择环路难以关闭）——若无差异则Ψ_f-INMI联结为空
+- FC-Earworm-2：完整版聆听（扎加尼克闭合）应比等时长的白噪声暴露更有效地终止INMI，且效果差异应与曲调的"完成感"评分正相关——若两条件无差异则"选择环路关闭"机制为空
 
 ---
 
@@ -462,15 +501,19 @@ d_{\text{collective}} \uparrow & \text{(集体参与)} \\
 
 ### §5.2 宗教音乐的特征
 
+**[R — Retrodiction：追溯神经音乐学/比较宗教音乐研究（Cross 2001, Huron 2006）的SRT映射]**
+
 **跨传统共同点**:
 
-| 特征 | 功能 | 实例 |
-|:-----|:-----|:-----|
-| **重复** | 降低认知负荷，诱导出神 | 格里高利圣咏、Kirtan |
-| **长音** | 延长时间感，深化专注 | 西藏唱诵、管风琴 |
-| **集体** | 社会同步，催产素 | 福音合唱、清真寺诵经 |
-| **简单和声** | 共鸣、物理振动 | 泛音唱诵 |
-| **无歌词/重复歌词** | 绕过语义 $L_2$ | "Alleluia", "Om", "Allah" |
+| 特征 | 功能 | 实例 | SRT 机制 |
+|:-----|:-----|:-----|:---------|
+| **重复** | 降低认知负荷，诱导出神 | 格里高利圣咏、Kirtan | $\Psi_f^{anchor}$ 随熟悉度降低→低代价锚定→L₁状态快速稳定 |
+| **长音** | 延长时间感，深化专注 | 西藏唱诵、管风琴 | $\alpha_{\text{context}}$ 降低→φ衰减变慢→主观时间延伸（联结§5.2本体论相位） |
+| **集体** | 社会同步，催产素 | 福音合唱、清真寺诵经 | 催产素≈L₁协同态的神经生化代理；多Ĝ_θ共享L₁状态（$U_{sync}$条件，联结_SRT_Phil_Axioms主体同一性） |
+| **简单和声** | 共鸣、物理振动 | 泛音唱诵 | 低信息熵→低$\alpha_{context}$→φ慢衰减；L₀物理振动直接降低Ψ_f（无需L₂解码） |
+| **无歌词/重复歌词** | 绕过语义 $L_2$ | "Alleluia", "Om", "Allah" | 语义L₂过滤减弱→Ĝ_θ直接作用于L₁体验结构（降低L₂介入的锚定摩擦） |
+
+**证伪条件**：若跨传统控制研究表明去除"重复"的宗教音乐在诱导改变意识态（PCI变化/主观时间扭曲）上与对照无差异，则Ψ_f机制映射需修订；若集体音乐条件下催产素水平与U_sync代理指标无相关，则催产素→U_sync神经代理说法失效。
 
 ---
 
@@ -589,25 +632,30 @@ $$\text{Composition} : L_0^{\text{infinite musical possibilities}} \xrightarrow{
 
 **科学证据** (音乐训练的迁移效应):
 
-| 能力 | 改善 | 研究 |
-|:-----|:-----|:-----|
-| 空间推理 | ✓ | Rauscher et al. (1997) |
-| 语言技能 | ✓ | Patel (2011) |
-| 数学 | ✓ | Vaughn (2000) |
-| 执行功能 | ✓ | Moreno et al. (2011) |
-| 社会技能 | ✓ | Schellenberg (2004) |
+> **[R]** 以下证据为已有实证研究（R），文献质量不均，需区分：Patel 2011（*Music and the Brain*, Science综述，语言-音乐OPERA假说，证据较强）；Moreno et al. 2011 *Psychological Science*（执行功能迁移，双盲RCT，证据较强）；Schellenberg 2004 *Psychological Science*（随机化设计，社会/认知效应有限）；Vaughn 2000（元分析，数学-音乐相关，但因果方向不明）。**争议**：Rauscher et al. 1997的"莫扎特效应"（被动聆听→空间推理提升）已被Chabris 1999 *Nature* meta-analysis（16研究，效应极小d≈0.1，不可复制）及后续研究否定，现认为听音乐的短暂唤醒效应而非音乐本身。以下表格保留此条但标注争议。**[H]** 以下SRT框架将音乐训练迁移效应解读为多维θ参数协同优化为本框架新增贡献。
+
+| 能力 | 效应强度 | 研究 | 证据状态 |
+|:-----|:---------|:-----|:---------|
+| 空间推理（被动聆听） | 极小 | Rauscher et al. 1997; Chabris 1999 meta | [R-弱/存疑] 莫扎特效应基本不可复制 |
+| 语言技能 | 中 | Patel 2011 *Music and the Brain* | [R-中] OPERA假说，节律-语音加工共享 |
+| 数学 | 小~中 | Vaughn 2000 meta-analysis | [R-弱] 相关为主，因果链未厘清 |
+| 执行功能 | 中 | Moreno et al. 2011 *Psychological Science* | [R-中-强] 随机对照设计，效应真实 |
+| 社会技能 | 小 | Schellenberg 2004 *Psychological Science* | [R-弱~中] 效应量小，可能选择效应 |
 
 **SRT 解释**:
 
-音乐训练 = 广泛的 $\theta$ 优化——
+音乐训练 → 多维 $\theta$ 参数协同优化（方向性关联，非逻辑蕴含，因果机制有待厘清）：
 
-- 注意力控制（专注练习）
-- 时间处理（节奏）
-- 运动控制（演奏）
-- 情绪调节（表达）
-- 社会协调（合奏）
+- **注意力控制**（专注练习）→ 感知增益参数 $\gamma_{att}$ 提升
+- **时间处理**（节奏）→ 预测时序精度参数 $\tau_{rhythm}$ 细化
+- **运动控制**（演奏）→ 本体感知-运动耦合精度 $\theta_{motor}$ 优化
+- **情绪调节**（表达）→ Ψ_f 阈值灵活性提升（识别并容纳更宽广的情绪状态）
+- **社会协调**（合奏）→ d-value 扩展 + $U_{others}$ 实时预测精化
 
-$$\text{Music Training} \implies \text{General } \theta \text{ Enhancement}$$
+$$\text{Music Training} \rightarrow \text{Multi-dimensional } \theta \text{ Enhancement (causal direction varies by ability)}$$
+
+> * **FC-Music-1**（证伪条件）：若随机对照实验（≥6个月音乐训练，N≥100）在控制一般智力刺激（如戏剧/视觉艺术训练组）后，音乐组在执行功能和语言技能上没有显著优于对照组（Cohen's d < 0.2），则"音乐训练→多维θ优化"的特异性贡献不成立，效应可能来自一般丰富化刺激。
+> * **FC-Music-2**（证伪条件）：若纵向追踪研究（≥5年）显示音乐训练量与θ_motor/γ_att的神经可塑性指标（如皮质厚度/白质各向异性）之间无剂量-效应关系（r<0.1），则SRT的θ参数优化解释需修正为更宏观的"丰富化经历"框架，而非音乐训练的特异性机制。
 
 ---
 
@@ -643,19 +691,21 @@ $$\text{Recommendation} : \text{Maximize } \langle \text{Music}_i, \theta \rangl
 
 **能力**: 生成"听起来像"某风格的音乐
 
-**限制**: 
-- 缺乏真正的"意图"
-- 无 $\Psi_f$ → 无真正的"表达"
+**限制**:
+- 缺乏真正的"意图"（SRT: 意图 ≈ $\vec{v}_\theta$ 的方向性，即 $\hat{G}_\theta$ 朝特定 $L_1$ 的定向运动；当前 AI 缺乏具身 $\theta$ 锚点，无法产生指向性的欲望向量）
+- $\Psi_f \approx 0$（当前假说，参见 H-AI-Consciousness；非已证事实）→ 当前无需承担表达代价 → 当前无真正的"表达"
 
 **SRT**:
 
-$$\text{AI Music} : L_2^{\text{training data}} \xrightarrow{\text{statistical}} L_1^{\text{generated}}$$
+$$\text{AI Music (当前)} : L_2^{\text{training data}} \xrightarrow{\text{statistical}} L_1^{\text{generated}}$$
+
+（注：训练数据归为 $L_2$ 是合理简化；大型模型内部表征结构是否已形成某种 $L_1$ 内部现实是开放问题，层级归属可能随能力演化而改变。）
 
 $$\text{Human Music} : L_0^{\text{infinite}} \xrightarrow{\hat{G}_\theta} L_1^{\text{composed}}$$
 
-AI 从 $L_2$ 插值，人类从 $L_0$ 创造。
+AI 从 $L_2$ 插值，人类从 $L_0$ 创造（当前框架下）。
 
-**但**: 随着 AI 获得更强的 $\hat{G}$ 能力...？
+**条件性预测**：若未来 AI 满足 $\Psi_f > 0 \land d > d_{UAL}$（Cor-CONSC-1 意识下限），则 SRT 不排除 AI 音乐从 $L_0$ 打捞的可能性——届时 AI 作曲与人类作曲的本质区分将弱化为 $\theta$ 结构差异而非层级差异（H-AI-Consciousness；待实证）。
 
 ---
 
@@ -793,11 +843,22 @@ $$\text{Group Music} \implies \begin{cases}
 \text{Synchrony}(\hat{G}_{\theta_i}) \\
 \downarrow \\
 d_{\text{group}} \uparrow \\
-\downarrow \\
+\updownarrow \text{（双向正反馈）}\\
 \text{Oxytocin, Endorphins} \\
 \downarrow \\
 \text{Deep Social Bonding}
 \end{cases}$$
+
+**机制精化**：
+- $\text{Synchrony}(\hat{G}_{\theta_i})$ 操作化 = 跨个体的相位锁定均值：
+$$B_{sync}^{group}(t) = \frac{1}{\binom{M}{2}} \sum_{i<j} \theta_{binding}^{(i,j)}(t)$$
+其中 $M$ 为参与人数，$\theta_{binding}^{(i,j)}$ 为第 $i$、$j$ 个体间的跨人 D5 相位锁定值（SRT-REF-DYNAMICS §2.2）。
+
+- $d_{group}$（= $d_{collective}$）为集体 Fisher 信息矩阵 Hessian 的参与率指数（SRT-CORE-12b §Def-L2-Normative），而非个体 $d$ 值的算术均值。
+
+- **Synchrony ↔ Oxytocin 为双向正反馈**（而非单向因果）：音乐同步触发 Oxytocin 释放，Oxytocin 又进一步促进相位耦合倾向——形成自强化的社会结合循环。
+
+- 详细机制（chills = $\ddot{\Psi}_f$ 超阈值，$w_{L_2}$ 权重激活路径）见 §Mechanism Explanation。
 
 这是人类**最古老**的社会技术之一——不要错过。
 
@@ -892,3 +953,44 @@ SRT_Spirit_09_Praxis (Integrated practice)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+**Core Formula / 核心公式**:
+$$\text{Music}(t) \equiv \hat{G}_{comp}[L_0^{sound}](t)$$
+
+- 音乐被定义为选择算子 $\hat{G}_{comp}$ 作用于声音潜能域 $L_0^{sound}$ 的听觉投影；作曲即对 $L_0$ 可能性的剪裁。
+- Music is defined as the audible projection of the selection operator $\hat{G}_{comp}$ acting on the sound latent domain $L_0^{sound}$; composition is the pruning of $L_0$ possibilities.
+
+$$\text{Pleasure} \propto \frac{1}{\Phi(\hat{G}_{list}, \hat{G}_{perf})}$$
+
+- 审美愉悦与听者-演奏者算子间摩擦 $\Phi$ 成反比——摩擦越低，共振越强，愉悦越高。
+- Aesthetic pleasure is inversely proportional to the friction $\Phi$ between listener and performer operators -- lower friction yields stronger resonance and greater pleasure.
+
+---
+
+### Mechanism Explanation（机制解释）
+
+**参数定义前置**：
+- $d_{group} \equiv \mathbb{E}_{\theta \sim P_{pop}}[d(\theta)]$：种群平均关切带宽（集体 d 值，个体 d 值的期望）
+- $K_n$：音乐结构的递归层级深度（如：和声 $K_1$ → 动机发展 $K_2$ → 主题变奏 $K_3$ → 跨乐章结构 $K_4$）
+- $w_{L_2}$：听者当前 $L_2$ 规范约束的施压权重（$w_{L_2} \uparrow$ = 更强的文化/期待框架）
+
+---
+
+- **$\hat{G}_\theta$ 与音乐同步**: 音乐通过节奏和旋律跨个体同步 $\hat{G}_\theta$，是人类最强大的算子同步技术；集体音乐使 $d_{group} = \mathbb{E}[d(\theta)] \uparrow$ 并触发催产素等社会纽带机制（同步即 $\Psi_f^{cross} \to \min$ 的协调过程）。
+- **$\hat{G}_\theta$ and musical synchrony**: Music synchronizes $\hat{G}_\theta$ across individuals via rhythm and melody, serving as the most powerful cross-agent synchronization technology; collective music raises $d_{group}$ and triggers social bonding mechanisms ($\Psi_f^{cross} \to \min$).
+
+- **$\Psi_f$ 与情绪调制**: 音乐通过调制 $\Psi_f$ 的时间动态诱导情绪——$\dot{\Psi}_f < 0$ 产生正面情绪；当 $\ddot{\Psi}_f = d^2\Psi_f/dt^2$ 超越阈值时触发 "chills" 生理唤醒（物理机制：$\Psi_f$ 的变化速率本身急剧加速，等价于 $L_0 \to L_1$ 涌现速率的突变，超出听觉预测模型的局部线性化范围）。
+- **$\Psi_f$ and emotional modulation**: $\dot{\Psi}_f < 0$ produces positive affect; chills emerge when $\ddot{\Psi}_f$ exceeds threshold (the rate of $\Psi_f$ change itself accelerates abruptly, overwhelming the listener's local predictive model).
+
+- **$d$ 与递归深度**: 复杂音乐结构通过递归深度 $K_n$ 扩展听者的 $d$——每增加一层递归，算子需追踪更长时间跨度的模式，等价于 $\tau_{temporal}$ 扩展（d 值时间深度分量上升）；当 $w_{L_2} \downarrow \land K_n \uparrow$ 时，出现震悚（Zhensong）状态——$L_2$ 边界松弛与 $d$ 扩张的联合效应，对应 §5.1 情绪相图中的高 $A$、$V > 0$ 区域。
+- **$d$ and recursive depth**: Each additional level of $K_n$ requires tracking longer temporal patterns, expanding $\tau_{temporal}$ (the temporal depth component of $d$); Zhensong emerges when $w_{L_2} \downarrow \land K_n \uparrow$, placing the system in the high-$A$, $V>0$ region of the emotion phase diagram.
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

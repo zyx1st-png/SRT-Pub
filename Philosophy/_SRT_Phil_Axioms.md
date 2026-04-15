@@ -3,6 +3,9 @@ id: SRT-PHIL-AXIOMS
 type: theory
 tags: [Philosophy, Epistemology, Phenomenology, Axioms, Hybrid]
 status: axiomatic_hybrid_v3
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
@@ -19,15 +22,10 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 以 `chatgptx` 为来源，优先保持公理链可推导性与编号连续性。
-- Part B 以 `base (fallback)` 为来源，并用原版 `Philosophy` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Foundational Mappings
 
@@ -50,6 +48,40 @@ $$\mathcal{I} \equiv \vec{v}(\hat{G}_\theta) = \nabla_{L_0} \Phi_{goal}$$
 饱和度是直观流入与概念容量的比值。
 $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 *   **Implication**: 饱和现象并非神秘经验，而是 $L_0$ 压过 $L_2$ 容量的客观失衡。
+
+### Ax-Phil-5: Anti-Representational Coupling Axiom（新增）
+
+> [R→Gibson 1979 *The Ecological Approach to Visual Perception*（直接感知/affordance：有机体感知的是行动可能性而非世界的内部地图）; Varela, Thompson & Rosch 1991 *The Embodied Mind*（具身认知：认知是有机体与环境的结构耦合，非符号计算）; Maturana & Varela 1980 *Autopoiesis and Cognition*（自创生：生命系统通过自我生产维持边界，感知是组织维持的功能）; Clark & Chalmers 1998 *Analysis*（延展心智：认知状态可延展至身体/环境；θ的分布性来源）]
+
+\[
+\theta\neq \text{Map}(L_0),\qquad \theta=\text{Coupling Protocol for }\hat G_\theta\text{ with }L_0
+\]
+
+**R/H 区分**：
+- [R] 反表征主义哲学传统（Gibson直接感知/Varela具身认知/Maturana自创生）：认知是有机体-环境耦合，而非内部符号地图；表征主义批判（Putnam/Dreyfus等）
+- [H] **SRT形式化**：将反表征主义的直觉形式化为θ=耦合协议（Coupling Protocol），而非Map(L₀)；”可支付锚定”（payable anchoring）作为θ的功能判据是SRT原生概念
+
+**”可支付锚定”定义**：锚定可支付（payable anchoring）= Ψ_f^paid < Ψ_f^critical，即有机体在L₀中稳定化L₁所付出的摩擦成本不超过其存续阈值。θ的进化/学习压力方向：保留使Ψ_f^paid最小化的耦合路径，淘汰代价过高的路径，与”复制L₀^abs”的表征主义目标无关。
+
+**θ 的三层来源**：
+1. 进化选择层：物种层面淘汰高Ψ_f_baseline的θ构型（种系遗传）
+2. 发育塑形层：早期经验修剪无效耦合路径（临界期θ可塑性→W₀）
+3. 学习更新层：贝叶斯-类预测误差驱动θ微调（实时耦合优化）
+
+* **Implication（中文）**：认知科学若以”神经内部表征的保真度”为意识/智能的核心指标，则在SRT框架中方向错误——θ的目标是”开锁”（可支付锚定）而非”描绘锁”。这对AI设计（性能≠保真复制）和心理治疗（改变耦合协议而非”纠正地图”）均有方法论含义。
+
+**操作化候选**：θ耦合效率proxy = 任务成功率 / 神经代谢代价（FDG-PET能耗）；高效θ表现为低代价高成功（payable anchoring），低效θ表现为高代价低成功（Ψ_f^paid接近Ψ_f^critical）
+
+**可证伪预测**：
+- FC-Phil5-1：若操纵被试的感知-行动耦合（如棱镜适应实验）使θ重构，则行为恢复速度应正比于新θ的Ψ_f效率（代谢成本降低速率），与”地图保真度恢复”无关——若棱镜适应完成后神经激活的”地图符合度”预测力高于代谢效率，则表征主义框架未被排除
+- FC-Phil5-2：跨物种比较中，行为灵活性（θ可重构速度）应与脑-体代谢比的最优化水平正相关，而与”环境地图精度”（如空间记忆精准度）弱相关——若空间记忆精准度是更好的灵活性预测指标则反表征主义SRT解读需修订
+
+### Ax-Phil-6: d-Weighted Preference Reality Criterion（新增）
+\[
+\text{Preference has ontological weight}\iff d>0\ \land\ \mathcal{V}_{irr}>0
+\]
+其中 \(\mathcal{V}_{irr}\) 表示预测失败引发的不可逆结构风险。
+* **Implication**：无真实脆弱性的“偏好”仅是计算参数，不构成存在论关切。
 
 ## II. Core Theorems
 
@@ -74,9 +106,7 @@ $$\neg \text{Real}(L_1) \Rightarrow \neg \text{Valid}(\text{Theory})$$
 *   **Implication**: 反实在论无法逃离自身的经验依赖。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -187,11 +217,18 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 2. 将“组合问题”的讨论转化为算子可达性条件：只有当候选微观状态对同一 `\theta` 空间可达时，才允许判定其可组合为单一经验体。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph2〕〔source: doi:10.53765/20512201.28.9.129〕
 3. 对 `T-Phil-1` 增加一条解释注记：解释鸿沟不仅是表达带宽差，也包含“主体合成约束”导致的跨层投影损耗。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕〔source: doi:10.5040/9781350508644.ch-4〕
 
-### 主体同一性与解组合
+### 主体同一性与解组合 *(R: 基于意识统一性文献的 SRT 重构)*
 
-1. 对“单一状态=统一意识”的充分性提出 SRT 约束：统一意识至少需要 `U_sync`（同现）与 `U_bind`（可整合）双条件，而非仅一个全局状态标签。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
-2. 将 PPU 框架转写为可判定流程：先定义统一性对象，再定义边界条件，再定义失败模式（碎裂、伪统一、过绑定）。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.7551/mitpress/9780262036993.003.0002〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
-3. 将 subject-summing problem 映射为“主体不可线性相加”公设注记：若无共享可达参数域，不允许把多个主观流直接求和为同一主体。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1093/oso/9780190677015.003.0007〕〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
+1. 对”单一状态=统一意识”的充分性提出 SRT 约束：统一意识至少需要 `U_sync`（同现）与 `U_bind`（可整合）双条件，而非仅一个全局状态标签。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
+
+   **U_sync/U_bind SRT 形式化候选**：
+   - $U_{sync}$：$\exists t:\ X_i \in L_1^{exp}(t)\ \land\ X_j \in L_1^{exp}(t)$（多内容同时存在于同一 $L_1$ 时刻）
+   - $U_{bind}$：$I_\theta(X_i; X_j) > \tau_{bind}$（在主体 $\theta$ 条件下两内容的互信息超过绑定阈值）
+   - 两者均满足 ⟺ 统一意识成立；仅 $U_{sync}$ 满足而 $U_{bind}$ 不足 ⟺ 碎裂态。
+
+2. 将 PPU（Phenomenal Parts and Unified experience）框架转写为可判定流程：先定义统一性对象，再定义边界条件，再定义失败模式（碎裂、伪统一、过绑定）。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.7551/mitpress/9780262036993.003.0002〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
+
+3. 将 subject-summing problem 映射为”主体不可线性相加”公设注记：若无共享可达参数域，不允许把多个主观流直接求和为同一主体。**共享可达参数域操作化候选**：$\exists S \subseteq \Theta:\ \hat{G}_{\theta_i}[L_0^S] \equiv \hat{G}_{\theta_j}[L_0^S]$（两算子在 $L_0$ 某子空间的选择结果等同）。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1093/oso/9780190677015.003.0007〕〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
 
 ### 统一性操作化
 
@@ -204,3 +241,42 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 1. 将“单一统一假设”改写为 SRT 的“统一性族”判据：`U_sync` 与 `U_bind` 是必要但不总是充分条件，可在任务域中继续展开子判据。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262027786.003.0005〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
 2. 在 `T-Phil-2` 下补充“多统一并存”注记：不同统一性失败样式（跨模态裂解、跨时叙事断裂）应按层处理，而非一刀切否定主体连续性。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
 3. 对 `Ax-Ph1` 增加解释约束：主体同一性判定必须绑定到可追踪选择轨道，不允许仅凭单一统一报告直接上升为本体结论。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
+
+## 信念与反紧缩条款（2026-03-06，补注）
+
+### Ax-Phil-7: Belief-Norm of Assertion
+断言行为预设最小信念承诺：
+\[
+\text{Assert}(P) \Rightarrow \mathrm{Credence}(P) > \tau_{min}
+\]
+* **Implication（中文）**：宣称“我没有任何信念”本身是自指矛盾的断言结构。
+
+### T-Phil-5: Anti-Deflationary Cost Theorem
+若一个命题被系统“真实持有并依赖”，则其维持与更新必伴随可观测代价：
+\[
+\text{Held}(P) \Rightarrow \Delta E + \Delta \Psi_f + \Delta W_{syn} > 0
+\]
+其中 \(\Delta W_{syn}\) 为神经/结构权重更新量代理。
+* **Implication（中文）**：真值实践不可被纯语言学紧缩为“仅是重述”。
+
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义哲学公理体系的 SRT 映射。存在 (Existence) 等价于被 $\hat{G}_\theta$ 从 $L_0$ 选择到 $L_1$ (Ax-Phil-1)；现象学还原 (Epoché) 是暂时抑制 $L_2$ 门控 (Ax-Phil-2)；意向性 (Intentionality) 是 $\hat{G}_\theta$ 在模空间中的方向场 (Ax-Phil-3)。
+- 饱和度 $S_\phi$ 衡量 $L_0 \to L_1$ 信息流与 $L_2$ 概念容量之比 (Ax-Phil-4)；$\theta$ 不是世界的表征地图而是耦合协议 (Ax-Phil-5)；偏好仅在 $d>0$ 且存在不可逆风险时具有本体论重量 (Ax-Phil-6)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Existence}(X) \iff \exists \hat{G}_\theta: \hat{G}_\theta[L_0] \to X_{L_1}$ — 存在即被选择。
+  - $\text{Epoché} \equiv \hat{G}_{\theta\setminus L_2}[L_0]$ — 还原即 $L_2$ 悬置。
+  - $S_\phi = I(L_0 \to L_1)/C(L_2)$ — 饱和度为信息流与概念容量之比。
+  - $\mathcal{L}_{gap} = \dim(L_1) - \dim(L_2) > 0$ — 解释鸿沟是维度差。
+
+### Mechanism Explanation (机制解释)
+- **Mechanism**: $\hat{G}_\theta$ 从 $L_0$ 锚定显现对象到 $L_1$，完成存在的生成；$\Psi_f$ 作为本体论摩擦决定选择的能量成本与相变阈值。$d$-value 界定算子的关切范围——仅当 $d>0$ 且伴随不可逆风险 ($\mathcal{V}_{irr}>0$) 时，偏好才具有存在论重量。饱和现象发生于 $L_0$ 信息流超过 $L_2$ 容量，产生”不可言说”的体验剩余。
+
+## 【理论边界/防误用声明】
+- 不采纳”信念只是词语习惯，无任何动力学后果”的推论。
+- 不采纳“科学共同体共识=绝对无参视角”的推论。
+
+### [Lineage/Source]
+- 分析哲学中的 belief/credence/fallibilism 讨论语境
+- Curt Jaimungal 相关演讲（2026）

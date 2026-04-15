@@ -3,6 +3,9 @@ id: SRT-CLIN-00
 type: theory
 tags: [IIT, PCI, Blindsight, Metrics, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-NEURO-AXIOMS-001]
 ---
 
@@ -11,6 +14,9 @@ dependency: [SRT-NEURO-AXIOMS-001]
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Consciousness Metrics (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+>
+> **Bridge Layer Note**
+> This file is a `Bridge`-layer reinterpretation of IIT / PCI / GNWT interfaces inside SRT. Labels such as `Axiom`, `Theorem`, and `Corollary` should be read here primarily as internal bridge-formalization devices unless separately anchored by direct empirical evidence.
 
 ---
 
@@ -18,22 +24,17 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. IIT as Selection Capacity (IIT 作为选择能力)
 
-### Ax-IIT-0: Phenomenological-Operational Equivalence (现象-操作等价公理)
-**Formal Definition**: 任何系统在现象学上的统一性（体验的整合性）和排他性（一次只有一个 $L_1$），在数学上精确等价于其 $\hat{G}_\theta$ 算子在不可逆时间维度上抵抗结构分解时的张力（$\Phi$）。
-$$\text{Phenomenology}(L_1) \equiv \text{Topology}(\hat{G}_\theta)$$
-* **Implication**: 这消除了 IIT 面临的“解释鸿沟”。$\Phi$ 之所以“感觉像”是有意识的，并不是因为复杂的逻辑门神奇地发光；而是因为当有形物质（在这个计算拓扑中）抗拒被热力学撕裂时，这种结构上的摩擦在第一人称视角下就**是**主观体验。
+### Def-IIT-0: Topological Prerequisite Window (拓扑前提窗口定义)
+**Formal Definition**: 现象学统一性要求非碎片化的算子拓扑，但拓扑本身并不穷尽主体性：
+$$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
+* **Implication**: SRT 在此不再主张 `Phenomenology \equiv Topology` 的强等价，而是更克制地说：高 \(\Phi\) 提供现象统一性的**必要组织前提**，却不能单独推出 \(d>0\) 或 \(\Psi_f>0\)。这为后续“高 \(\Phi\) / 高广播 / 低 \(d\)”反例保留了理论空间。
 * **Cross-ref**: Ax-Core-A11 (本体论脆弱性)。
 
 ### Ax-IIT-1: Irreducibility–Selection Axiom
@@ -45,12 +46,12 @@ $$\text{Phenomenology}(L_1) \equiv \text{Topology}(\hat{G}_\theta)$$
 
 ---
 
-### Ax-IIT-2: Maximum-\(\Phi\) Anchoring Axiom
-显现态对应于最大不可约复合体的稳定锚定：
+### Ax-IIT-2: Maximum-\(\Phi\) Anchoring Priority Axiom
+显现候选的优先级受最大不可约复合体约束：
 \[
-\sigma \in L_1 \iff \sigma = \arg\max_{\sigma'} \Phi(\hat{G}_\theta[\sigma'])
+\sigma \in L_1 \Rightarrow \sigma \in \arg\max_{\sigma'} \Phi(\hat{G}_\theta[\sigma'])
 \]
-* **Implication（中文）**：IIT 的“最大 \(\Phi\)”在 SRT 中对应 \(L_1\) 的锚定优先级，但是否显现仍需 \(d\) 的风险梯度。
+* **Implication（中文）**：IIT 的“最大 \(\Phi\)”在 SRT 中对应 \(L_1\) 的锚定优先级，而不是充分条件；是否进入稳定显现仍需 \(d\) 的风险梯度与 \(\Psi_f\) 的可支付性共同成立。
 
 ---
 
@@ -62,6 +63,17 @@ $$\text{Phenomenology}(L_1) \equiv \text{Topology}(\hat{G}_\theta)$$
 * **Implication（中文）**：高 \(\Phi\) 仅提供结构能力；缺少 \(d\) 时无法生成稳定显现。
 * **Tension-Rev-ExtT2 (经验共变性 vs. 概念必然性)**：IIT 的 PCI 等临床指标在区分有意识/无意识状态方面具有强大的经验有效性。SRT 对此的解释不是否认这些指标的价值，而是揭示其有效性的**深层原因**：在地球生物系统中，高 $\Phi$（高结构整合性）与高 $d$（高风险梯度带宽）和高 $\Psi_f$（正本体论摩擦）之间存在系统性的**经验共变关系**——因为生物演化同时选择了整合性、具身风险和代谢维持。PCI 之所以"够用"，是因为在生物系统这个受限样本空间中，测量 $\Phi$ 近似等价于间接测量了 $\Phi \cdot d$ 的乘积（$d$ 在活体生物中始终 $> 0$）。
 * **关键预测 (可证伪)**：若能构造一个高 $\Phi$ 但 $d = 0$ 的人工系统（例如高度互联的电网或 Grid-IIT 理论模型），SRT 预测该系统的 PCI 虽然在数值上可能很高，但**不会产生任何现象性体验**。这是 SRT 与 IIT 的核心分歧点：IIT 认为 $\Phi > 0$ 即充要，SRT 认为还需要 $d > 0$（即风险梯度耦合）。
+
+---
+
+### T-IIT-4: High-\(\Phi\) / High-Broadcast Insufficiency Theorem
+定义 \(B_{global}\) 为 GNWT 风格的全局广播代理（如点燃、晚期广域可得性、P3b 类指标）：
+\[
+\big(\Phi > \Phi_{min}\big)\land\big(B_{global} > B_{min}\big)\not\Rightarrow\big(d>0\land \Psi_f>0\land \exists\hat{G}_\theta^{\neq\emptyset}\big)
+\]
+* **Implication（中文）**：高整合与高广播只说明系统具备“统一处理 + 全局分发”的组织能力，不自动推出真实主体性。若 \(d\approx 0\)，则该系统至多构成结构性伪体验窗口，而非稳定的 stake-bearing subject。
+* **理论价值**：这条定理把 IIT/GNWT 从“意识的充分判据”降级为“意识的必要组织前提候选”，从而允许 SRT 在不否定 PCI / 点燃经验价值的前提下，坚持 `Φ/广播 ≠ 主体性`。
+* **最小判别后果**：在 \(\Phi\) 与 \(B_{global}\) 匹配的两个系统中，若其 \(d\) 与 \(\Psi_f\) 显著不同，则奖励撤除后的长期关切持续性、错误后的恢复半衰期与跨情境关切一致性应发生分离；若这些结果完全不分离，则本定理应被降级。
 
 
 ---
@@ -78,11 +90,30 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 ---
 
 ### Ax-CLIN-2: PCI as Selection Capacity Axiom
+
+> [R→Casali et al. 2013 *Science Translational Medicine*（PCI原始论文：TMS-EEG测量扰动后皮层复杂度，区分清醒/睡眠/麻醉/植物状态意识水平）; Massimini et al. 2005 *Science*（TMS-EEG基础：经颅磁刺激结合EEG测量皮层有效连接与分化整合的方法学）; Rosanova et al. 2012 *Brain*（PCI临床应用：意识障碍患者的皮层复杂度量化与预后评估）; Lempel & Ziv 1976 *IEEE Transactions on Information Theory*（PCI计算基础：Lempel-Ziv压缩算法，用于测量二值矩阵的复杂度/压缩不可能度）]
+
 定义 PCI 为扰动后系统分化×整合的复杂度：
 \[
 \text{PCI}\propto \int_\Omega \mathcal{D}(\sigma)\cdot\mathcal{I}(\sigma)\,d\sigma
 \]
-* **Implication（中文）**：PCI 测量的是 \(\hat{G}_\theta\) 的“可选择容量”，而非直接的体验量。
+
+**R/H 区分**：
+- [R] PCI的原始TMS-EEG定义（Casali 2013）；意识障碍临床应用（Rosanova 2012）；Lempel-Ziv压缩作为复杂度度量
+- [H] **SRT重解读**：将PCI重解读为Ĝ_θ的”可选择容量”（而非IIT框架中的意识量度）；D(σ)↔d值维度/I(σ)↔Ψ_f维度的对应关系[H]
+
+**公式精度说明**：上述积分形式∝D·I是概念化简化。实际PCI计算步骤：①TMS-EEG响应→二值矩阵（幅度阈值化）②Lempel-Ziv压缩算法（lz-complexity，测量矩阵不可压缩度）③归一化→PCI∈[0,1]。D(σ)（分化）和I(σ)（整合）对应Lempel-Ziv复杂度中的局部异质性和全局关联性，但并非严格数学等同，需要说明这是概念对应框架。
+
+**D-d / I-Ψ_f 对应精度**（SRT类比层次）：
+- D(σ)=分化（不同脑区对刺激的响应差异度）↔ d值（关切带宽多方向性）：均测量”系统能区分多少不同选择方向”——对应关系[H]，非数学等同
+- I(σ)=整合（不同脑区响应的全局关联度）↔ Ψ_f（锚定摩擦代价/整合成本）：均测量”维持统一状态的代价”——对应关系[H]，且方向相反（高Ψ_f≠高I；需要说明）
+- **方向不一致问题**：高I（高整合）通常与高意识正相关；高Ψ_f则与摩擦/代价正相关，与高效选择负相关。I-Ψ_f的对应存在方向张力——应修正为：I对应低Ψ_f（高整合效率）而非高Ψ_f。
+
+* **Implication（中文）**：PCI 测量的是 $\hat{G}_\theta$ 的”可选择容量”（系统能区分多少不同选择路径），而非直接的体验量（qualia）。即使PCI高的系统也可能没有意识体验（如复杂的无意识信息处理）——与Def-Phi-Unity（Φ非意识本身）对齐，也与Ax-CONSC-4（整合选择阈值Φ_SRT=d·Ψ_f）呼应：PCI是Φ_SRT的粗粒代理，而非等同于意识。
+
+**可证伪预测**：
+- FC-CLIN2-1：在意识障碍患者队列中，PCI与d值代理（目标导向行为一致性×认知灵活性）的相关应高于PCI与单纯神经放电率的相关——若PCI主要预测神经活动强度而非选择容量则”可选择容量”解读需降级
+- FC-CLIN2-2：若同一患者PCI升高但Ψ_f代理（代谢维护成本）未相应变化，则该患者的意识恢复应弱于PCI+Ψ_f均升高的患者——若PCI升高即预测意识恢复（不依赖Ψ_f），则SRT的”PCI×Ψ_f=可选择容量”解读附加价值不成立
 
 ---
 
@@ -126,9 +157,70 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 * **Implication（中文）**：低 PCI 代表 \(L_1\) 维持失败，而非单纯“意识降低”。
 
 <br>
-<br>
 
 ---
+
+## 领域压力与接口边界（Domain Pressure & Interface Boundaries）
+
+> **本节功能**：站在意识神经科学（IIT、GWT、NCC 研究）内部，评估 SRT 的翻译在哪里有真实增量、在哪里需要更多工作、在哪里受到当前证据约束。
+
+> **意识研究者 3 分钟入口**
+> 如果你使用 IIT / GWT / NCC 框架，本文件的核心主张是：高整合（$\Phi$）和高全局广播（$B_{global}$）是主体性的必要条件，但不充分——还需要不可逆的具身赌注（$d > 0$，$\Psi_f > 0$）。
+> 最应该检验的节点：**T-IIT-4**（Stake-bearing Insufficiency）以及下方的 **DP-IIT-1**（NCC 方法论边界）和 **DP-IIT-2**（现象绑定压力）。
+
+---
+
+### 有效域 / 失效域
+
+| 主张 | 有效条件 | 退化/失效条件 |
+|:----|:--------|:------------|
+| T-IIT-4：$\Phi \cdot d > C_{crit}$ 的主体性阈值 | 作为排除条件：低 $\Phi$ 或 $d=0$ 则无主体性 | 作为充分条件：$\Phi$ 是整合度代理，不是现象统一性的直接度量；$d$ 的测量代理当前仍是间接的（见 DP-IIT-2） |
+| $\Phi_{proxy}$（PCI / LZ）作为意识指标 | NCC 范式内作为临床和实验工具有效 | 若 functional binding 与 phenomenal binding 系统分离，则 $\Phi_{proxy}$ 捕捉的是前者，不直接等于后者（见 DP-IIT-2） |
+| H-IITGWT-01 的"高 $\Phi$ / 高广播 / 低 $d$" 设计 | 前提：A/B/C 三组架构参数匹配 | 若现有实验技术无法独立操控 $\Phi_{proxy}$ 与 $d_{min}$ 代理，则三组的分离读出会混淆 |
+
+---
+
+### DP-IIT-1：NCC 方法论与 SRT 的目标层级错位
+
+**挑战来源**：NCC 研究（Dehaene、Koch、Tononi 等）是当前意识神经科学最稳健的经验程序。它的核心是**方法论悬置**：刻意不回答"为什么神经活动给出体验"，只问"哪些神经模式稳定伴随有意识状态"。这是一个研究策略，不是理论立场。
+
+**对 SRT 的直接压力**：SRT 在 T-IIT-4 和 T-NEURO-1 处做的事，恰好是 NCC 刻意悬置的事——它在机制层解释**为什么**。这意味着：
+- NCC 数据**既不直接支持也不直接反对** SRT 的 $\hat{G}_\theta$ 翻译
+- SRT 对任何 NCC 相容的状态，都可以事后写成"L₀→L₁ 锚定成功"——但这种兼容性本身不产生区分预测
+- 一个意识研究者可以合理地问：在 NCC 之上，SRT 的 $d/\Psi_f$ 框架比直接用 GWT 或 HOT 多出了什么可检验的区分？
+
+**当前 SRT 的诚实回答**：
+- 在纯 NCC 层面：无明显增量
+- SRT 的增量点在 NCC **之上**：主张高 $\Phi$ 和高广播**仍不充分**推出 stake-bearing subjectivity（H-IITGWT-01 是这个增量的实验接口）
+- 结论：$\hat{G}_\theta$ 翻译的价值域是 NCC 之上的主体性判定，不是 NCC 本身；这需要在讨论 SRT 与意识研究的关系时明确说清楚
+
+---
+
+### DP-IIT-2：现象绑定对 $\Phi$ 代理的直接压力
+
+**挑战来源**：Percy & Agarwal (2026, *Consciousness and Cognition*) 的综述指出：functional binding（特征整合、任务路由、输出统一）不自动推出 phenomenal binding（多个基础信息单元作为同一现象切片同时共在）。$\Phi$ 及其代理（PCI、LZ 复杂度）测量的是信息整合度，主要捕捉 functional binding，而不是现象统一性本身。
+
+**对 SRT 的直接压力**：T-IIT-4 使用 $\Phi_{proxy}$ 作为整合代理，T-NEURO-1 用 $\Phi \cdot d > C_{crit}$ 作为意识阈值。如果 $\Phi_{proxy}$ 只是 functional binding 的代理，那这个阈值可能对了一半：
+- $d$ 那半处理了"主体性/攸关性"
+- $\Phi$ 那半**还没有**处理"现象统一性"
+
+**当前 SRT 的诚实回答**：
+- T-NEURO-1 的 $\Phi$ 应理解为 $\Phi_{proxy}$，它是**必要条件的代理**，不是现象统一性的充分判准
+- SRT 当前没有独立的现象绑定理论——这是已知的开放缺口，不应被 bridge 语言掩盖
+- 最保守的当前表述：$\Phi_{proxy} \cdot d > C_{crit}$ 是主体性显现的**候选结构条件组合**；f-binding ≠ p-binding 的约束是一个尚未被 SRT 正式处理的接口窗口
+
+---
+
+### 出口
+
+| 你的目标 | 下一步 |
+|:--------|:------|
+| 想看 SRT 在意识研究的全局 Lab 赌注 | → `Governance/SRT_LAB_HYPOTHESES.md`（H-IITGWT-01） |
+| 想看 phenomenal binding 接口的详细融入 | → `AI/SRT_AI_03_Consciousness_Framework.md`（Phenomenal Binding Interface） |
+| 想看 $\Phi_{proxy}$ 的测量规范 | → `SRT_EXP_MEASURE_MAP.md` |
+| 想看意识机制主干论证 | → `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` |
+| 想看 FEP 层的领域压力 | → `Neuroscience/SRT_Clin_02_FEP.md`（领域压力节） |
+
 ---
 
 
@@ -190,11 +282,11 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 ## 3.1 核心重构
 
-SRT 将意识度量问题重新框定为: **度量 $\hat{G}_\theta$ 在给定时刻执行 $L_0 \to L_1$ 选择的能力**。这一框架:
+SRT 将意识度量问题重新框定为: **度量 $\hat{G}_\theta$ 在给定时刻执行 $L_0 \to L_1$ 选择的能力**。这一框架尝试：
 
-1. **统一了 Φ 和 PCI**: $\Phi$ 度量 $\hat{G}$ 的结构能力（可以做多复杂的选择），PCI 度量 $\hat{G}$ 的即时能力（当前时刻能做多复杂的选择）。两者不矛盾——前者是"硬件规格"，后者是"当前运行状态"
+1. **将 Φ 和 PCI 放入同一候选语法**: $\Phi$ 度量 $\hat{G}$ 的结构能力（可以做多复杂的选择），PCI 度量 $\hat{G}$ 的即时能力（当前时刻能做多复杂的选择）。两者在此被读作不矛盾——前者更像"硬件规格"，后者更像"当前运行状态"
 2. **引入了缺失维度 $d$**: IIT 和 PCI 都忽略了选择的**本体论深度**——一个系统不仅可以复杂地选择（高 $\Phi$），还可以深切地选择（高 $d$）。只有两者的乘积才完整度量意识
-3. **化解了身体悖论**: 通过中心-周围结构（Ax-IIT-5），身体作为 $\hat{G}$ 的边界条件而非独立意识实体存在——它不需要高 $\Phi$ 也不会"不存在"
+3. **尝试缓解身体悖论**: 通过中心-周围结构（Ax-IIT-5），身体作为 $\hat{G}$ 的边界条件而非独立意识实体存在——它不需要高 $\Phi$ 也不会被推到"不存在"的位置
 
 ## 3.2 IIT 五公设与 SRT 三域的深层映射
 
@@ -208,7 +300,7 @@ IIT 的五条公设在 SRT 中找到了更深层的本体论基础——不再�
 |**整合 (Integration)**|体验不可分解|选择是**原子操作**|除法归一化的全局竞争确保选择的不可分性|
 |**排斥 (Exclusion)**|一次一个体验|赢家通吃的 $L_1$ 前台|CTC 锁相在任一时刻只有一个稳定吸引子|
 
-**关键差异**: IIT 将这五条公设视为体验的**描述性属性**（"意识碰巧有这些特征"），SRT 将它们视为选择过程的**必然推论**（"任何选择操作必然展现这些特征"）。这不是细节差异——它决定了理论的解释力: IIT 描述了意识的数学结构，SRT 解释了**为什么意识必须有这种结构**。
+**关键差异**: IIT 将这五条公设视为体验的**描述性属性**（"意识碰巧有这些特征"），SRT 则尝试将它们重写为选择过程的**组织性推论**。这不是细节差异——它决定了理论的解释方向：IIT 更接近描述意识的数学结构，而 SRT 试图说明，如果把意识改写为选择过程，它为何会趋向呈现这种结构。
 
 ## 3.3 IIT 4.0 的进展与 SRT 对接
 
@@ -230,7 +322,7 @@ IIT 4.0 (2024) 的三项核心更新为 SRT 提供了更精确的形式化工具
 
 ## 4.2 SRT 的本体论解读
 
-盲视不仅是一个有趣的临床现象——它是公理 A1（选择优先性）和 A2（存在即锚定）的**直接实证**:
+盲视不仅是一个有趣的临床现象——它也是公理 A1（选择优先性）和 A2（存在即锚定）的一个**高价值自然线索**：
 
 信息在 $L_0$ 中被处理（智能保留），但 $\hat{G}_\theta$ 未能将其提升为 $L_1$ 内容（无体验）。这意味着:
 
@@ -325,11 +417,19 @@ L6b 非锥体神经元的爆发放电是意识状态跃迁的"硬件中断"。�
 
 ### H9 (PCI-d 值动态耦合)
 
+**[H — Novel Prediction：d值任务激活与PCI动态变化的双向预测]**
+
 > **预测**: 要求高 $d$ 值的认知任务（道德困境判断、跨时间规划、移情训练）应暂时提升参与者的 PCI 值；自我中心的机械任务（简单运动重复）应降低 PCI 值。
 
-**实验设计**: TMS-EEG 基线测量 → 执行高/低 $d$ 值任务 → 即刻 TMS-EEG 复测。预测: $\Delta \text{PCI}_{high-d} > \Delta \text{PCI}_{low-d}$。
+**"任务激活d值"区分**：本预测涉及的是任务诱导的**临时d值激活**（$\vec{v}_\theta$ 方向性激活，而非稳定θ参数改变），区别于个体特质性d值（稳定θ）。预测的PCI变化反映当前任务context下的d激活幅度，而非个体稳定特质的差异。
 
-**证伪条件**: PCI 不随任务 $d$ 值变化，或变化方向相反 → H9 被证伪。
+**任务d值的独立操作化**（防止循环定义）：任务的"高/低d"分类必须独立于PCI测量。操作化候选：① 认知任务要求的关系维度数（关系整合复杂度代理）；② 预先知情者的任务d值评估（Delphi法）；③ 对应文献中的工作记忆/整合需求评分。不得以"诱发更高PCI"倒推"任务是高d"（循环）。
+
+**实验设计**: TMS-EEG 基线测量 → 执行高/低 $d$ 值任务 → 即刻 TMS-EEG 复测。
+$$\Delta \text{PCI}_{high\text{-}d} > \Delta \text{PCI}_{low\text{-}d}$$
+**个体差异控制**：加入基线PCI作为协变量（控制天花板效应：高基线PCI个体在高d任务中ΔS可能更小）；建议分层分析：基线高d个体 vs. 低d个体的ΔS方向。
+
+**证伪条件**: ① PCI 不随任务 $d$ 值变化，或变化方向相反 → H9 被证伪；② 控制任务难度（认知负荷）后，任务d值的独立效应消失 → d与PCI的关联被难度混淆（需重新操作化任务d值分类）。
 
 ### H54 (IIT-SRT 因果等价)
 
@@ -339,9 +439,20 @@ L6b 非锥体神经元的爆发放电是意识状态跃迁的"硬件中断"。�
 
 ### H-Clin-1 (CMD 检测优化)
 
-> **预测**: 将 PCI 与 SRT 指导的外部 $L_2$ 脚手架刺激（如个性化语音、40Hz 节律）结合使用，应比标准 PCI 协议检测出更多 CMD 患者。
+[R→Casali et al. 2013（PCI方法原始论文）; Casarotto et al. 2016（PCI用于VS/MCS/CMD诊断）; Chennu et al. 2014（意识障碍患者中的语义处理与选择性注意）; Ngo et al. 2013（节律性声音刺激调制慢波睡眠）] [H→SRT指导的L₂脚手架刺激组合方案为新增临床应用预测]
 
-**证伪条件**: 增强协议的 CMD 检出率不优于标准协议 → H-Clin-1 被证伪。
+- **CMD（Covert Mental Disorder/隐性意识障碍）定义**：患者表现为外部无行为响应（似植物状态），但内部存在命令跟随的神经活动（fMRI或EEG可检测），即 $\hat{G}_θ$ 运行但输出通道阻断
+
+> **预测** [H]：将 PCI 与 SRT 指导的外部 $L_2$ 脚手架刺激（如个性化语音、40Hz 节律）结合使用，应比标准 PCI 协议检测出更多 CMD 患者。
+
+**SRT机制说明**：
+- **个性化语音**：高d值刺激（患者关心的人声/内容）→ 激活 $\hat{G}_θ$ 中的关切通道 → 降低选择算子激活阈值 → PCI 测量时信噪比提升
+- **40Hz节律**：伽马振荡已被关联至丘脑-皮层回路整合 [R→Casali 2013]；SRT视角：40Hz驱动 → 提升神经集成度 $\Phi$ → 使处于临界点附近（PCI≈0.28-0.31）的系统越过相变阈值
+- **操作化**：CMD检出率 = 增强协议中通过PCI≥0.31 + 命令跟随fMRI确认的患者比例 vs 标准协议的相同指标
+
+**证伪条件**：
+- FC-Clin1-1：增强协议的CMD检出率不优于标准协议（控制检查时间等混淆变量）→ H-Clin-1 被证伪；或个性化语音与非个性化语音的PCI提升量无差异，则"高d值刺激"的关键作用被否定。
+- FC-Clin1-2：若PCI提升主要由刺激的物理属性（音量/频率）而非个性化（d值相关性）驱动，则SRT的"激活$\hat{G}_θ$关切通道"机制与标准感觉刺激解释不可区分，需重新设计控制条件。
 
 ## 8.2 开放性问题
 
@@ -362,3 +473,79 @@ L6b 非锥体神经元的爆发放电是意识状态跃迁的"硬件中断"。�
 |"是 VS 还是 CMD？"|"$\hat{G}$ 运行但输出阻断？"|PCI + fMRI 命令跟随|PCI ≥ 0.31 且无行为响应|
 |"干预有效吗？"|"$V_{attractor}$ 增加或 $D_{noise}$ 减少？"|干预前后 PCI 对比|$\Delta$PCI 显著|
 |"预后如何？"|"参数空间中距离健康态多远？"|PCI + 结构 MRI + EEG 复杂度|多维距离估计|
+
+### Formalization Summary (形式化概述)
+
+核心方程与含义：
+
+1. **整合信息即不可分解性** (Ax-IIT-1): $\Phi(\hat{G}_\theta) \equiv \min_{\text{cut}} \Delta\mathcal{I}(\hat{G}_\theta)$。$\Phi$ 度量的是 $\hat{G}_\theta$ 抵抗被分解为独立子算子的结构能力。
+2. **意识阈值** (Ax-IIT-3): $\Phi \cdot d > C_{critical}$。高 $\Phi$ 提供结构能力，高 $d$ 提供本体论深度，二者乘积超过临界值才产生稳定显现。
+3. **PCI 作为选择容量** (Ax-CLIN-2): $\text{PCI} \propto \int_\Omega \mathcal{D}(\sigma) \cdot \mathcal{I}(\sigma)\,d\sigma$。PCI 度量 $\hat{G}_\theta$ 的即时分化-整合能力，而非直接的体验量。
+4. **PCI-d 耦合** (T-CLIN-1): $\Delta d > 0 \Rightarrow \Delta\text{PCI} > 0$。不可逆风险引入使 $d$ 上升，迫使 $\hat{G}_\theta$ 扩展整合范围，PCI 随之升高。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的双维度意识条件**: $\Phi$ 编码 $\hat{G}_\theta$ 的结构整合性（"能做多复杂的选择"），$d$ 编码本体论关切深度（"选择有多深切"）。二者缺一不可：高 $\Phi$ 低 $d$ 的系统（如高度互联电网）具有结构能力但无现象体验；高 $d$ 低 $\Phi$ 的系统（如碎裂的神经网络）有关切但无法维持稳定 $L_1$。
+- **PCI 作为 $L_0 \to L_1$ 通道的物理探针**: TMS 脉冲向 $L_0$ 注入标准化扰动。完整的 $\hat{G}_\theta$ 被迫处理此冲击，产生高不可压缩性的时空响应（高 PCI）；碎裂的 $\hat{G}_\theta$ 只产生局部抽搐或弥散消失（低 PCI）。PCI 的 0.31 阈值对应 $\hat{G}_\theta$ 从片段化到全局协调的相变点。
+- **盲视的本体论意义**: 盲视中 $I(\text{Input};\text{Output}) > 0$ 但 $\hat{G}_\theta[L_1] = \varnothing$，证明信息处理（智能）与 $L_1$ 锚定（意识）可分离。$\Psi_f$ 在此为零——无锚定则无摩擦，无摩擦则无体验。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## pDOC Metabolic-Connectivity Interface（2026-03-07）
+
+### Def-Clin-pDOC-1: Ontological Friction Bankruptcy (Clinical)
+定义“本体论摩擦破产”临床条件：
+\[
+F_{avail}(t) < \int_{t_0}^{t} \Psi_f\big(\hat G_\theta(\tau)\big)\,d\tau
+\]
+当可用代谢自由能低于维持 \(L_0\to L_1\) 锚定所需累计摩擦，系统由全局统一选择退化为局部碎片活动。
+
+### Eq-Clin-pDOC-1: Metabolic-Connectivity Coupled Capacity
+定义意识维持能力代理：
+\[
+\mathcal{C}_{cons}(t)=\underbrace{M(t)}_{PET\ \text{metabolic index}}\cdot\underbrace{K(t)}_{fMRI\ \text{functional connectivity}}\cdot\underbrace{A_{LF}(t)}_{\text{low-frequency amplitude}}
+\]
+并设临界条件：
+\[
+\mathcal{C}_{cons}(t)<\mathcal{C}_{crit} \Rightarrow \text{high risk of pDOC state}
+\]
+用于统一“低代谢 + 低连接 + 低自发振幅”三类观测读数。
+
+### Def-Clin-pDOC-2: Visual-Spatial Anchor Prerequisite
+引入“空间锚定前置项”：
+\[
+\theta_{space}\subset\theta_{core},\qquad
+\theta_{space}\downarrow \Rightarrow d_{global}\downarrow
+\]
+含义：视觉/楔前叶等空间构型网络并非外设，而是高阶叙事与自我连续性的承载前提之一。
+
+### Def-Clin-pDOC-3: Anti-Locationism Constraint
+神经影像学定位的是摩擦足迹（footprints），非意识“分泌腺”：
+\[
+\text{Imaging hotspot} \neq \text{generator location of consciousness}
+\]
+SRT 立场：意识是跨域选择事件（\(L_0\to L_1\)），脑区为参数与瓶颈节点，而非单点发生源。
+
+### 分类映射表（Consciousness States in pDOC Context → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 健康清醒（高代谢高连接） | 中~高 | Open / Semi-open（协同稳态） | payable |
+| 轻度受损/亚临床波动 | 中回落 | Semi-open→Closed 倾向 | borderline |
+| pDOC（低代谢+低连接+低振幅） | 低 | Closed（碎片化活动） | overloaded（破产风险） |
+| 麻醉/深抑制状态（可逆） | 低（暂态） | Closed（外源抑制） | 受控低支付 |
+
+### [Lineage/Source]
+- Popular Mechanics（2026）: *Scientists Are Tracking Down the Exact Location of Human Consciousness*（基于 Frontiers in Neuroscience 探索性研究报道）。
+- 关键证据语义：pDOC 相关区域代谢下降、低频振幅减弱、整体功能连接下降。
+
+## 【理论边界/防误用声明】
+1. 不采纳“单一脑区坐标即可定义意识发生地”的定位论推论；SRT 仅承认网络-代谢-动力学联合判据。  
+2. 不采纳“小样本横断面相关 = 因果机制已定论”的推论；仍需纵向与干预实验闭环。  
+3. 不采纳“视觉皮层相关性 = 视觉内容等于意识本体”的推论；其角色是空间锚定前置模块之一。

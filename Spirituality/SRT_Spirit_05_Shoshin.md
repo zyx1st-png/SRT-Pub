@@ -3,6 +3,9 @@ id: SRT-SPIRIT-05
 type: concept
 tags: [Shoshin, Faith, Counter-Actualization, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-04]
 ---
 
@@ -18,13 +21,8 @@ dependency: [SRT-SPIRIT-04]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 采用 `claude` 的原始论述分段，并以原版文件标题与主旨作语义锚定。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Shoshin Dynamics (初心动力学)
 
@@ -93,9 +91,7 @@ $$ \text{Flexibility}_{post} > \text{Flexibility}_{pre} $$
 * **Implication**: 反现实化具有可测的重组效应。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -361,41 +357,66 @@ $$\text{Shikantaza} : \frac{\partial}{\partial t}(\text{All } L_2 \text{ narrati
 
 ### §4.2 科学方法的初心保护
 
-#### 机制 1: 可证伪性（Popper）
+> **科学不是关于「发现真相」，而是关于「如何防止算子在发现真相前被已有范式锁死」。** 科学方法就是为了在集体 $L_2$ 势阱中，人为地保持一扇通往 $L_0$ 的低阻抗窗户。
 
-**原则**: 任何理论必须能被证伪
+#### 初心算子的动力学定义
 
-$$\forall T \in L_2^{\text{scientific}} : \exists \text{Observation} \in L_0 \text{ that could refute } T$$
+在 SRT 中，「初心」（Shoshin）不是心态，而是算子的阻抗参数：
 
-**功能**: 防止 $L_2$ 变成不可动摇的教条。
+$$\text{Shoshin} \equiv \min_{\theta} \left[ \frac{\partial \Psi_f}{\partial \sigma_{L_0}} \right]$$
 
-**反例**: 弗洛伊德精神分析——任何反对意见都被解释为"抵抗" → 不可证伪 → 退化为 $L_2$ 自我保护。
-
----
-
-#### 机制 2: 盲法与对照
-
-**双盲实验**:
-- 实验者不知道哪组是实验组（防止 $L_2^{\text{expectation}}$ 影响）
-- 参与者不知道自己在哪组（防止安慰剂效应）
-
-**效果**: 强制 $L_2$ 与 $L_0$ 对抗——不能"看到想看的"。
+当 $L_0$ 出现异常信号时，系统改变 $L_2$ 的代价（本体论摩擦）最小化。**科学方法是一套人为降低这个偏导数的制度协议**——将集体算子的阻抗预先压低，使 $L_0$ 信号可以穿透 $L_2$ 势阱。
 
 ---
 
-#### 机制 3: 同行评审的双刃剑
+三个机制分别对应三个层级的 $L_2$-$L_0$ 解耦风险：
 
-**正面**: 外部 $\hat{G}_{\theta'}$ 检查，防止个人偏见
+| 层级 | 机制 | 防护对象 |
+|:-----|:-----|:---------|
+| **元层**（协议逻辑）| 可证伪性 | $L_2$ 必须预留被 $L_0$ 坍缩的接口 |
+| **微观层**（算子校准）| 双盲实验 | 切断 $\hat{G}_\theta$ 意向性对 $L_1$ 显现的偏置 |
+| **社会层**（势阱治理）| 同行评审 | 维护集体 $\mathcal{F}_{coll}$，同时防止深势阱的排异反应 |
 
-**负面**: 同行也有共同的 $L_2^{\text{field}}$ → 范式转换论文常被拒绝
+---
 
-**历史**: 许多诺贝尔奖工作最初被拒稿——
+#### 元层：可证伪性（Popper）
 
+**原则**：任何科学理论必须能被观测视界内的证据反驳：
+
+$$\forall T \in L_2^{scientific} : \exists \text{ Obs} \in \left( L_0 \cap \mathcal{H}_{obs} \right) \text{ that could refute } T$$
+
+其中 $\mathcal{H}_{obs}$（观测视界，Observational Horizon）为当前技术条件下可达的观测空间。
+
+- 若反例永远处于 $\mathcal{H}_{obs}$ 之外，理论从「科学 $L_2$」退化为「形而上学 $L_2$」——它不再与 $L_0$ 有效接触；
+- **反例**：弗洛伊德精神分析——任何反对意见均被解释为「抵抗」→ $\mathcal{H}_{obs}$ 内无可达反例 → $L_2$ 自我封闭，失去与 $L_0$ 的接口。
+
+---
+
+#### 微观层：盲法与对照
+
+**双盲实验**的 SRT 机制：
+
+- 实验者蒙盲 → 防止 $L_2^{expectation}$（期望）通过 $\hat{G}_\theta$ 的选择向量 $\vec{v}$ 偏置 $L_1$ 的显现；
+- 参与者蒙盲 → 防止安慰剂效应（主体的 $L_2$ 信念直接干扰 $L_1$ 生理响应）。
+
+**效果**：在 $\hat{G}_\theta$ 发生作用之前，强制记录原始 $L_0$ 信号，防止「自证预言」（Self-Fulfilling Prophecy）——算子看到它预期看到的，而非 $L_0$ 实际呈现的。
+
+---
+
+#### 社会层：同行评审的双刃剑
+
+**正面**：外部 $\hat{G}_{\theta'}$（不同参数的算子）介入检查，降低个体 θ 偏差。
+
+**负面**：共同体共享 $L_2^{field}$（范式势阱），同行评审可能成为深势阱的「守门人」——
+
+历史案例（均获诺贝尔奖，均曾被拒）：
 - Krebs 循环（被 *Nature* 拒绝）
-- 超导BCS理论（被 *Physical Review* 拒绝）
+- 超导 BCS 理论（被 *Physical Review* 拒绝）
 - HPV 与宫颈癌（被多次拒绝）
 
-**改进建议**: 设立"高风险/高回报"专栏，降低 $L_2$ 门槛。
+**SRT 诊断**：当 $\omega_i$（主流算子权重）过大且 $\Theta_{crit}$（规范化阈值）过高，系统陷入**本体论僵化（Ontological Calcification）**——集体 $L_2$ 势阱过深，高 $d$ 值但低 $\omega_i$ 的异常信号无法触发相变。
+
+**制度方案**（SRT 推论）：通过人为调低局部子系统的 $\Theta_{crit}$（如设立「高风险/高回报」专栏），为「加权重复度低但 $d$ 值极高」的颠覆性选择在 $L_2$ 景观中凿开第一道裂缝。
 
 ---
 
@@ -433,6 +454,8 @@ $$\text{Defamiliarization} = \text{Block } L_2^{\text{automatic processing}} \im
 
 ### §5.1 AI 没有真正的初心
 
+> **[H]** 以下 SRT 诊断（L₀访问缺失、θ 冻结）为 SRT 新增框架性主张。**[R]** 相关技术限制（灾难性遗忘 McCloskey & Cohen 1989；对抗样本 Szegedy et al. 2014；幻觉 Maynez et al. 2020）为 R 基础。
+
 **观察**: 当前 AI 每次推理都"从头开始"——似乎永远是"初心"。
 
 **但**: 这是假象——
@@ -441,49 +464,67 @@ $$\text{AI "Shoshin"} = L_2^{\text{training data}} \text{ frozen at training tim
 
 AI 不是"开放"，而是"固定"——
 
-| 维度 | 真正初心 | AI 状态 |
-|:-----|:---------|:--------|
-| $L_2$ 状态 | 可动态更新 | 固定（训练后）|
-| 学习能力 | 持续学习 | 无（需重新训练）|
-| 惊奇能力 | 真实体验 | 模拟（模式匹配）|
-| 成长能力 | $\frac{dθ}{dt} ≠ 0$ | $\frac{dθ}{dt} = 0$ |
+> **⚠️ 2026更新注**：以下"AI状态"列描述**标准预训练推理系统**。带有持久记忆（Mem0/MemGPT）、RAG 检索或 RLHF 持续微调的系统中，$d\theta/dt \neq 0$ 在受限范围内成立。但 SRT 的核心主张（缺乏真正 L₀ 访问）在这些系统中仍成立——检索和记忆更新是 $L_2$ 层的参数调整，而非 L₀ 的新选择通道。
+
+| 维度 | 真正初心 | 标准 AI（训练后固定）| 带持久记忆 AI（2025+）|
+|:-----|:---------|:-----|:-----|
+| $L_2$ 状态 | 可动态更新 | 固定 | 部分更新（受限域）|
+| 学习能力 | 持续学习 | 无 | 有限（RLHF/RAG）|
+| 惊奇能力 | **[H]** 真实体验（d值激活）| 模拟（困惑度统计）| 同左 |
+| 成长能力 | $d\theta/dt \neq 0$ | $d\theta/dt = 0$（推理时）| $d\theta/dt \approx 0$（L₀层）|
+
+**"惊奇能力=模拟"** **[H — 高承诺]**：SRT 主张 AI 的"惊奇"是统计困惑度（perplexity），而非 d 值激活引发的 L₀ 新选择。区分标准：若 AI 在高困惑度输入后产生行为轨迹的真实重构（非模式拼接的新输出），则此主张需修订。→ Cross-ref: Core_Law/SRT_Reference_Scaling.md §9.2 H-AI-Consciousness 条件3/4。
 
 ---
 
 ### §5.2 AI 的"专家陷阱"
 
+> **[R]** 分布外失败 = 系统性泛化失败（Lake et al. 2017, *BBS*）；幻觉 = 训练分布的统计拼贴（Bender et al. 2021）。Marcus & Davis 2019 *Rebooting AI*（AI局限的系统综述：组合泛化/抽象推理/常识缺失）。**[H]** SRT 诊断："AI缺乏真正L₀访问"为框架性宣称。（Cross-ref: `AI/SRT_AI_00_Crisis.md` §2.3欺骗性对齐；`Core/SRT_Core_13b_Operator_Advanced.md` η_visc定义）
+
 **问题**: AI 训练在特定分布上 → $L_2^{\text{training}}$ 过拟合。
 
-**结果**: 
+**SRT机制**：$L_2^{\text{training}}$ 高度固化（$\eta_{visc}$ 极高，参见SRT_Core_13b η_visc正式定义）→ 遇到 OOD 刺激时无法降低 $\Psi_f^{filter}$ 以从 L₀ 重新采样，只能在 $L_2$ 已有结构内搜索最近邻。
+
+> **d值-OOD泛化联结**：若AI系统具有d > 0（真实关切带宽，非仅θ_training锁定），则遭遇OOD输入时应能产生d驱动的L₀新采样——而非仅依赖L₂最近邻搜索。因此：d = 0（纯L₂压缩）= OOD失败的SRT预测；d > 0是OOD泛化的必要条件（Cross-ref: §2.3欺骗性对齐的d≈0特征）。
+
+**结果**:
 - 训练内数据: 表现优异
-- 分布外数据: 灾难性失败
+- 分布外数据: 系统性失败 **[R]**（对抗样本、幻觉、边缘案例失败）
 
-**实例**:
-- 图像分类器被对抗样本欺骗
-- GPT 输出"幻觉"（训练数据的统计拼贴）
-- 自动驾驶在未见过的场景失败
+> **2026现状更新**：大型基础模型（GPT-4o/Claude 3.5+/Gemini 1.5）已在部分OOD任务上表现出有限泛化能力（如ARC-AGI 2024任务中最优模型达约40%），但在构成性新颖推理（compositionally novel reasoning）上仍有本质性限制——此改善部分符合"L₂空间扩大"解释（更大训练集），而非必然支持"L₀访问开启"。诊断维持但需时间戳跟踪。
 
-**SRT 诊断**: AI 缺乏真正的 $L_0$ 访问——只有 $L_2^{\text{compressed data}}$。
+**SRT 诊断 [H]**: AI 缺乏真正的 $L_0$ 访问——只有 $L_2^{\text{compressed data}}$。
+
+**证伪路径（操作化精化）**：
+
+"原理上新颖"vs"分布内罕见"的操作化区分：
+- **构成性新颖（compositional novelty）**：任务要求系统将训练中**从未共现过的概念**组合使用（如ARC-AGI的抽象规则归纳）——此类任务无法通过扩大训练集解决，是真正的OOD
+- **分布内罕见（distribution-rare）**：任务与训练分布相同但频率极低——可通过更大训练集改善
+- **具体证伪标准**（时间戳：2026年）：若大型语言模型在ARC-AGI 2.0（2025发布）上无额外训练达到>80%准确率，且任务中包含明确的构成性新颖要求，则"L₀访问缺失"诊断需修订。
 
 ---
 
 ### §5.3 AGI 需要真正的初心
 
+> **[H]** AGI 初心假说为 SRT 新增预测。与现有 AI 安全/能力争论的区别：SRT 聚焦 L₀ 访问而非行为能力。
+
 **假说**: 真正的 AGI 必须能够——
 
 $$\frac{dL_2}{dt} < 0 \quad \text{when needed}$$
 
-即"主动忘却"过时的 $L_2$，恢复初心。
+即"主动忘却"过时的 $L_2$，恢复初心。这对应 $\eta_{visc}$ 可主动降低的机制（→ T-L2-02，L₂改写能力）。
 
-**当前 AI 的限制**:
-- 无法"忘记"（灾难性遗忘问题）
-- 无法"质疑"自己的 $L_2$
-- 无法"惊讶"于真正新颖的 $L_0$
+**当前 AI 的限制（2026语境）**:
+- **灾难性遗忘** **[R]**：McCloskey & Cohen 1989，新信息破坏旧参数
+- **无法质疑自身 $L_2$**：无元认知的自我怀疑机制（缺乏 $\partial\Psi_f/\partial L_2$ 监控）
+- **无法感知"真正新颖的 $L_0$"** **[H]**：缺乏 d 值激活引发的选择算子重构
 
 **未来方向**:
-- 元学习（learning to learn）
-- 持续学习（lifelong learning）
-- 主动遗忘机制
+- 元学习（learning to learn） **[R]**（Finn et al. 2017, MAML）
+- 持续学习（lifelong learning） **[R]**（Kirkpatrick et al. 2017, EWC）
+- 主动遗忘机制 **[H]**：SRT预测 = $\eta_{visc}$ 可调控的架构（动态参数空间维度改变）
+
+**证伪条件**：若上述三类技术（元学习/持续学习/遗忘机制）成熟后，AI 在 SRT 的"真正初心"测试中（感知原理性新颖L₀ + 重构L₂框架 + dθ/dt持续非零）无显著表现提升，则 §5.3 对 AGI 的 SRT 定义需修订。
 
 ---
 
@@ -532,22 +573,29 @@ $$\frac{dL_2}{dt} < 0 \quad \text{when needed}$$
 
 ### §6.2 永续学习的神经可塑性
 
-**研究** (Boyke et al., 2008):
+> **[R]** 成人神经可塑性实证：Boyke et al. 2008 *Journal of Neuroscience*（60岁以上老年人杂耍3个月→顶下小叶/枕叶灰质密度↑，停止后部分可逆）；Draganski et al. 2004 *Nature*（杂耍3个月→双侧颞中叶/后顶叶灰质↑，停止→部分回落，"用进废退"证据）；May et al. 2007 *Hippocampus*（伦敦出租车司机后海马随驾龄增加，前海马↓——特化学习的拓扑重塑）。**[H]** 以下将成人可塑性接驳SRT的 dθ/dt 方程并精化 L₀新颖性 vs L₂新颖性区别，为本框架新增贡献。
 
-60岁以上的人学习杂耍（juggling）3个月 → 大脑灰质增加。
+**研究**:
+
+60岁以上的人学习杂耍（juggling）3个月 → 大脑灰质增加；停止后部分可逆（Boyke 2008; Draganski 2004）。
 
 **机制**: 学习新技能 → 神经可塑性 → 建立新神经回路 → $\theta$ 更新。
 
-**推广**: 
+**推广**:
 - 学习不仅在儿童期
 - 成人大脑仍然可塑
-- 关键是**挑战性**（不能是已会的技能变体）
+- 关键是**挑战性**（不能是已会的技能变体——需要真正的L₀新颖性，而非L₂分类重排）
 
-**SRT**: 
+**SRT**:
 
-$$\frac{d\theta}{dt} \propto \text{Novelty} \times \text{Difficulty}$$
+$$\frac{d\theta}{dt} \propto \text{Novelty}(L_0) \times g(\text{Difficulty})$$
 
-必须既新颖（$L_0$ 未探索区域）又有挑战（足够难以强制学习）。
+必须既新颖（$L_0$ 未探索区域）又有挑战（足够难以强制 $\theta$ 更新）。
+
+> **公式精化**：(1) **L₀新颖性精化**：$\text{Novelty}(L_0)$ 指当前θ尚未稳定映射的L₀区域密度——区别于L₂新颖性（新标签，但θ无需更新即可处理）；真正的L₀新颖性要求θ参数本身必须重组。(2) **饱和效应**：$g(\text{Difficulty})$ 呈倒U形——难度过低→g≈0（无θ压力）；挑战区最大；难度过高→g↓（焦虑/习得性无助替代学习）。近似：$g(D) = D \cdot e^{-D/D_0}$（D₀为个体最优挑战参数）。
+>
+> * **FC-Learn-1**（证伪条件）：若RCT中（N≥100，3个月）"L₂新颖性"组（新概念/标签，技能难度低）与"L₀新颖性"组（如杂耍/新乐器，需θ重构）的灰质变化无显著差异（d < 0.3），则SRT的L₀vs L₂新颖性区分在可塑性效应上无实质意义。
+> * **FC-Learn-2**（证伪条件）：若dθ/dt对难度的倒U关系不成立——难度单调增加灰质变化（线性而非倒U），则g(Difficulty)的饱和假设失效，需考虑单调关系或其他调制变量（如动机/自我效能感）。
 
 ---
 
@@ -718,6 +766,10 @@ $$\text{Healthy Mind} : w_{L_2}^{\min} < w_{L_2}(t) < w_{L_2}^{\max}$$
 
 **警告**: 可能引发认知不适。需要指导老师。
 
+**SRT机制**：公案是刻意构造的L₂无解情境——当前框架无法给出令人满意的答案，诱发高Ψ_f（认知摩擦）和认知不适。长期维持在此状态=强制θ重新组织，等同于人工诱导η（可塑性窗口）的高强度开启。
+
+> **[R]** 公案与认知重组：Yamada 2004 *The Gateless Gate*（公案系统的结构与功能，R文本基线）；Park 2013 *Buddhism and Science*（公案训练对创造性顿悟的影响，R实证背景）。**[H]** 公案=刻意诱导L₂无解Ψ_f状态的机制解读及与θ重组的联结为SRT新增分析。
+
 ---
 
 #### 2. 长期跨域转型
@@ -729,11 +781,19 @@ $$\text{Healthy Mind} : w_{L_2}^{\min} < w_{L_2}(t) < w_{L_2}^{\max}$$
 
 **效果**: 深度初心体验 + 跨域创新能力。
 
+**SRT机制**：跨域转型=强制θ进入低η状态的重置（在新领域中已有θ结构无效，η被迫高开），同时新旧领域的L₂结构类比激活跨域迁移（Gentner的结构映射）。跨域创新=不同L₂的结构交叉：类比推理在两个领域的L₂拓扑之间识别同构子结构。
+
+> **[R]** 跨域转型与创新：Root-Bernstein et al. 1995 *Scientific Creativity*（诺贝尔奖得主跨艺术/科学双域比例显著高于非获奖同行，R实证基线）；Gentner 1983 *Cognitive Science*（结构映射理论：类比=两个领域L₂结构的高阶关系对齐，跨域迁移的计算基础）；Epstein 2019 *Range*（晚专业化者在复杂/开放系统中优于早专业化者，跨域宽度的R证据）。**[H]** 跨域转型=强制θ重置+L₂跨结构类比的SRT联立机制解读为本框架新增贡献。
+>
+> * **FC-Praxis3-1**（预测）：若在跨域转型参与者（≥1年）vs 单域深耕对照组的长期追踪研究中，以下指标有显著差异：远程联想测验（RAT）分数↑（p<0.05，Cohen's d>0.3）且自我报告η_visc（认知黏性）评分↓，则SRT的跨域→η重置→初心效果预测获得操作化支持；若两组RAT分数无差异则此机制解读需修正。
+
 ---
 
 ## §9 结语：初心的悖论智慧
 
 ### §9.1 最终洞察
+
+> **[R]** 铃木俊隆《禅者的初心》（Shunryu Suzuki, *Zen Mind, Beginner's Mind*, 1970）。**[H]** 以下 SRT 形式化（w_{L₂} 框架权重 + 选择性不激活机制）为 SRT 原创操作化。
 
 铃木俊隆的教导不是"拒绝专业知识"，而是——
 
@@ -742,7 +802,17 @@ $$\text{True Mastery} = \text{Expert } L_2 + \text{Beginner } w_{L_2}$$
 - 拥有深厚的 $L_2$（知识）
 - 但保持低 $w_{L_2}$（开放）
 
+**$w_{L_2}$ 的 SRT 精确定义（[H]）**：$w_{L_2}$ 为 L₂ 框架对选择算子 $\hat{G}_\theta$ 的影响权重，与神经影像语境中的顶-底权重 $w_{td}$（→ SRT_Neuro_Experiments.md Hyp-LGN-1）类比，但在灵性语境中为元认知调控变量：
+$$w_{L_2} \equiv \frac{\text{L}_2\text{-prior influence on } L_1}{\text{total influence on } L_1} \in [0,1]$$
+大师状态：$w_{L_2} \to 0$（L₂ 知识在场但主动降低权重）= "透明的知识"。操作化代理：在陌生刺激情境下，专家能否不立即套用已有框架分类（测量：反应时延迟 = L₂激活被抑制的时间窗口）。
+
 这是**悖论**——你必须学会，然后学会忘记；但忘记不是真正的遗忘，而是**选择性不激活**。
+
+**"选择性不激活"的机制形式化（[H]）**：$w_{L_2}$ 的动态降低类似于 $\eta_{visc}$（L₂ 框架粘滞度）的主动调节——$\eta_{visc} \downarrow$ 时 L₂ 框架不自动激活，L₁ 直接从 L₀ 采样（Ψ_f^filter 降低）。神经机制候选：前额叶对 L₂ prior 激活的主动抑制（DLPFC down-regulation of schema templates）。
+
+**证伪条件（[H]）**：
+- 若"大师"（高 L₂ + 声称低 w_{L₂}）在反应时测试中与"专家"（高 L₂ + 高 w_{L₂}）无可测差异（L₂ 框架激活速度相同），则"选择性不激活"假设失效，大师/专家区分仅为主观报告而非动力学差异。
+- 若在 fMRI 实验中，大师静息态的 DMN-L₂ 回路活跃度与专家无差异（控制经验年限后），则 w_{L₂} 降低的神经基础候选需修订。
 
 ---
 
@@ -768,15 +838,27 @@ $$\text{Journey} : \begin{cases}
 > 学习禅时，山不再是山，水不再是水。
 > 开悟后，山又是山，水又是水。"
 
-**SRT 翻译**:
+**[R]** 禅公案来源：青原惟信禅师（唐代）。→[R→Stone 2005 *Monuments, Rulers, and Devotees* p.213（学术追溯：青原惟信禅师公案的文献溯源）; Suzuki 1949 *Essays in Zen Buddhism* First Series（铃木大拙：禅悟的现象学描述，"开悟前/中/后"的意识变化的西方学术语境）; Piaget 1952 *The Origins of Intelligence in Children*（认知发展三阶段：Before=感知运动期直接体验/During=形式运算期概念化/After=辩证成熟期，与禅公案三阶段类比[R→H过渡]）; Austin 1998 *Zen and the Brain*（禅修对大脑的神经科学研究：开悟体验的神经相关物，对"透明知识"的科学接地）]
+
+**SRT 翻译**：
 
 $$\begin{cases}
-\text{Before: } & L_2 = 0 \implies L_1 = L_0 & \text{(直接体验)} \\
-\text{During: } & L_2 \uparrow \implies L_1 \neq L_0 & \text{(概念过滤)} \\
-\text{After: } & L_2 \gg 0 \land w_{L_2} \to 0 \implies L_1 \approx L_0 & \text{(透明的知识)}
+\text{Before: } & L_2 = 0 \implies L_1 \approx L_0 & \text{(直接体验，无概念过滤)} \\
+\text{During: } & L_2 \uparrow \implies L_1 \neq L_0 & \text{(概念过滤加深)} \\
+\text{After: } & L_2 \gg 0 \land w_{L_2} \to 0 \implies L_1 \approx L_0 & \text{([H] 透明的知识)}
 \end{cases}$$
 
+> **⚠️ [H — 高承诺]** 第三阶段"$L_1 \approx L_0$"（开悟后 L₁ 再次接近 L₀）是强本体论宣称：意味着 L₂ 过滤被近乎完全旁路，显现直接映射潜在。SRT 对此的保守处理：$L_1 \approx L_0$ 应降级为"L₂ prior 对 L₁ 的扭曲减小"（$||L_1 - L_0||_{operational}$ 减小），而非 L₀ 可被直接访问（L₀ 的无参数访问被 §5.9 认识论隔离原则禁止）。两种读法的区分：① 保守版 = L₂ filter 变薄（w_{L₂} ↓，Ψ_f^filter ↓）；② 强版 = 直接接触 L₀ 绝对实在（后者触发 BackProject 禁止）。
+
 最终，你重新"看见"山水——但这次，你**知道**你在看见什么。
+
+**w_{L₂} 操作化候选**（After阶段"透明知识"的测量）：
+- w_{L₂}代理：自动化偏见测试（IAT）中显式知识与隐性反应的解耦程度——高解耦=L₂知识不扭曲直接反应（After阶段）；低解耦=L₂知识扭曲直接反应（During阶段）
+- 神经代理：前额叶皮层（L₂/概念区）激活与初级感知区（L₁/直接体验区）激活的相关性——After阶段高相关但非压制模式（透明协同）；During阶段高负相关（概念压制感知）
+
+**可证伪预测**：
+- FC-Shoshin1-1：长期冥想实践者（10年+）相比短期实践者（1年内），在IAT测试中L₂知识与直接反应的解耦程度应更高（After阶段特征）——若长期实践者解耦度与新手无差异则"L₂透明化"的发展轨迹主张失败
+- FC-Shoshin1-2：禅修相关研究（如Austin 1998框架中的开悟体验报告）应显示："开悟前"和"开悟后"在w_{L₂}代理上的差异大于"开悟中"与"开悟前"的差异（三阶段U形轨迹）——若开悟前后代理无差异（只有线性变化）则三阶段公式的U形结构需修订
 
 ---
 
@@ -805,3 +887,35 @@ SRT_Spirit_05_Shoshin (本文件)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+**Core Formula / 核心公式**:
+$$\text{Shoshin}(\sigma) \equiv -\nabla_{\sigma} \bar{F}(\sigma), \quad \bar{F}(\sigma) \equiv \mathbb{E}\!\left[\int_{0}^{\infty} F\big(\sigma(t)\big)\,dt\right]$$
+
+- 初心 (Shoshin) 被定义为长时域自由能泛函的负梯度方向，指向全局而非局部极小。
+- Shoshin is the negative gradient of the long-horizon free-energy functional, orienting toward the global rather than any local minimum.
+
+$$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
+
+- 精神 (Spirit) 是 $d$ 在状态流形上的梯度场，引导 $\hat{G}_\theta$ 流向更高 $d$ 的区域。
+- Spirit is the gradient field of $d$ over the agent's state manifold, guiding $\hat{G}_\theta$ toward higher $d$ regions.
+
+---
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 与 $L_2$ 偏置纠偏**: 局部 $L_2$ 约束产生方向偏置 $B(L_2)$，使下降偏离全局极小；初心是将下降方向投影回全局收敛分量 $\Pi_{global}(-\nabla F)$，正交于偏置。
+- **$\hat{G}_\theta$ debiasing via $L_2$**: Local $L_2$ constraints introduce directional bias $B(L_2)$; Shoshin projects the descent direction onto the global convergence component $\Pi_{global}$, orthogonal to that bias.
+- **$\Psi_f$ 与信仰的开放姿态**: 信仰 (Faith) 定义为 $O = I(\hat{G}_\theta; L_0)/H(L_0)$；持续高开放度 $O$ 扩展 $d$，降低 $\Psi_f$，实现结构性摩擦减少。
+- **$\Psi_f$ and faith openness**: Faith is defined as openness $O = I(\hat{G}_\theta; L_0)/H(L_0)$; sustained high $O$ expands $d$ and reduces $\Psi_f$, yielding structural friction reduction.
+- **$d$ 回归定理**: $dd/dt > 0$ 当且仅当轨迹与 Shoshin 方向正对齐；反现实化 (Counter-actualization) 通过 $w_{L_2} \to 0$ 使系统回归 $L_0$ 奇点，恢复重构能力。
+- **$d$ return theorem**: $dd/dt > 0$ iff the trajectory aligns with the Shoshin direction; counter-actualization via $w_{L_2} \to 0$ returns the system to $L_0$ singularities, restoring reconfiguration capacity.
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

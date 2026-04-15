@@ -3,6 +3,9 @@ id: SRT-QUANT-02
 type: theory
 tags: [Cosmology, Scale Invariance, Quantum Interfaces, Attention Thermodynamics, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Scaling, SRT-QUANT-01]
 ---
 
@@ -103,8 +106,35 @@ $$ E_{attention} \propto \frac{d}{dt}\left(H(L_0) - H(L_1)\right) $$
 ### Def-Thermo-1 [D1.2.1]: Selection Efficiency (选择效率)
 $$ \eta_{selection} = \frac{\Delta I_{useful}}{\Delta I_{total}} = \frac{\text{任务相关信息增益}}{\text{总信息增益}} $$
 
+> **[R]** 定义结构借鉴 Shannon 1948 *A Mathematical Theory of Communication* 的互信息分解（有效传输信息 = 总信道容量 - 噪声损失）；热机效率 η = W_useful/Q_total 的形式类比（Carnot 1824）。**[H]** 将"任务相关信息增益"引入选择算子的效率定义——把 Shannon 信道效率从工程通信推广到具身选择算子的认知/生理代谢域，为 SRT 新增贡献。
+>
+> **ΔI_useful 的精确定义**：$\Delta I_{useful} \equiv I(L_1^{post}; \text{Task}) - I(L_1^{pre}; \text{Task})$，即选择操作前后 L₁ 状态与任务目标的互信息差值。"任务相关"由算子的当前 θ 目标向量定义——与当前意图或生存目标相关的信息增益计入 ΔI_useful，其余计入噪声（ΔI_total - ΔI_useful）。
+>
+> **值域说明**：$\eta_{selection} \in [0, 1]$（在严格信息论框架下，有用信息不超过总信息）。当 ΔI_total = 0（无信息输入，如纯内部状态维持），定义需要正则化处理（见 Ax-Thermo-1 意志力情境的特殊情况）。η=1 为理想选择（所有输入信息均任务相关），η=0 为纯噪声驱动选择。
+>
+> * **Cross-ref（前向）**: T-Thermo-1（→效率上界：$\eta_{selection} \leq 1 - H(\text{noise})/H(L_0)$）；Ax-Thermo-2（意志力能量：E_attention∝d(H(L₀)-H(L₁))/dt，η低时能量浪费更大）。
+
 ### T-Thermo-1 [T1.2.1]: Efficiency Upper Bound (效率上界定理)
 $$ \eta_{selection} \leq 1 - \frac{H(noise)}{H(L_0)} $$
+
+> [R→Shannon 1948 *A Mathematical Theory of Communication*（信道容量上界：C = H(X) - H(X|Y)）; Cover & Thomas 2006 *Elements of Information Theory*（噪声信道效率）; Carnot 1824（热机效率上界η≤1-T_c/T_h的结构类比）]
+
+* **R/H 区分**：
+  - [R] 公式结构类比 Shannon 信道容量和 Carnot 效率上界（两者都是"1 - 噪声/总量"型不等式）；信息论上界推导方法
+  - [H] **SRT附加**：将具身选择算子的信息转换效率定义为 η_selection = ΔI_useful/ΔI_total 并推出此上界——此定义及其选择算子解读是SRT独有应用，非Shannon或热力学的直接推论
+
+* **Implication**: 选择效率上限由两个参数决定：① H(noise)（算子环境噪声熵）越低，上限越高；② H(L₀)（潜在域总熵）越大，上限越接近1（高维L₀为高效选择提供基础，类比高温热源）。极端情形：H(noise)→0时效率可达1（理想选择算子）；H(noise)→H(L₀)时效率上限→0（噪声主导，选择无效）。
+
+* **与Carnot类比的边界**：两者形式同构，但物理基础不同——Carnot效率来自热力学第二定律，T-Thermo-1来自信息论不等式；此类比为启发性而非严格等价 [H]。
+
+* **操作化候选**：
+  - H(noise) 代理：任务噪声水平（随机干扰强度 × 信号检测SDT的d'倒数）
+  - H(L₀) 代理：刺激集合多样性（AUT可能性空间的信息熵估计）
+  - η_selection：任务相关正确率/总反应信息量比
+
+* **可证伪预测**：
+  - FC-Thermo1-1：任务噪声水平（H_noise代理）↑时，被试选择效率（正确率/总反应量）系统性下降，且下降率与 H_noise/H_L₀ 估计值线性相关——若无线性关系则上界公式形式不成立
+  - FC-Thermo1-2：L₀丰富度更高的情境（更多选项/更大刺激空间）下，相同噪声水平对应的效率损失更小（上界更高）——若无差异则H(L₀)的缓冲效应为空
 
 ### T-Thermo-2 [T1.2.2]: Selection Entropy Production (选择熵产生定理)
 每次选择产生的熵增：
@@ -165,18 +195,33 @@ $$ \Delta t_{window} \propto N^{-\alpha}, \quad \alpha \approx 1-2 $$
 *   微观系统（小 $N$）→ 选择窗口较大 → 量子行为
 *   **T-Scale-2 Link**: 粗粒化映射 $\pi_\lambda$ 下窗口宽度协变收缩。
 
+### Ax-Guided-4: Ontological Zeno Effect (本体论芝诺效应)
+**Formal Definition**: 密集的高精度注意力观测会冻结L0向L1的演化：
+$$\lim_{\Delta t \to 0} P(\sigma_{t+\Delta t} = \sigma_t \mid \hat{G}_\theta \text{ is continuous}) \to 1$$
+* **Implication**: 对症状或痛苦的极致关注（高频率观测）不仅在认知上放大了它，在物理上实际"冻结"了该状态，使其难以消散。这为许多灵性传统的"放下（Letting Go）"提供了解除量子冻结的坚实物理基础。
+
 ---
 
 ## V. Bio-Quantum Interface (生物量子接口)
 
+> **⚠️ 框架声明（探索性模块）**：本节（§V）在 Penrose-Hameroff **Orch-OR** 框架内探索生物量子与 SRT 选择算子的接口。这是一个**推测性/探索性**模块，非 SRT 的承诺性本体论立场。
+> SRT 在神经科学文献中的**规范立场**是：**退相干理论框架（非 Orch-OR）**，见 `Neuroscience/SRT_Neuro_08_Immune_Dist.md §Ax-Exp-03`（θ_bio→H_env→pointer basis 路径）。两种框架在 SRT 语境下的比较见该文件 §比较注记。任何依赖本节结论的推导须标注「Orch-OR 假设前提下」。
+
 ### Ax-BQ-1 [A1.5.1]: Microtubule as BQSI (微管作为生物量子选择接口)
-微管是 $\hat{G}$ 与量子相干相互作用的物理实现：
+微管是 $\hat{G}$ 与量子相干相互作用的物理实现（Orch-OR 假设）：
 $$ \text{Selection}(Reality) = f(Q_{microtubules}, \text{Intent}) $$
 
 ### Def-BQ-1 [D1.5.1]: Quantum Coherence Threshold (量子相干阈值)
-存在临界量子相干水平 $T_c$：
-$$ Q > T_c \implies \text{主体拥有连续选择能力} $$
-$$ Q < T_c \implies \text{选择机制断裂，意识中断} $$
+
+**量子相干量定义**：此处 $Q \equiv \tau_{coh}/\tau_{deco}$，即生物系统中维持相干的实际时间与退相干时标之比（无量纲）；$Q \in [0, 1]$（$Q=1$ 为完全相干，$Q=0$ 为经典极限）。
+
+存在临界量子相干水平 $T_c \in (0,1)$（Orch-OR 框架内）：
+$$ Q > T_c \implies \text{主体拥有连续选择能力（Orch-OR：微管维持相干完成客观坍缩）} $$
+$$ Q < T_c \implies \text{选择机制断裂，意识中断（Orch-OR：相干性崩溃阻断选择整合）} $$
+
+> **Orch-OR 依赖声明**：「$Q < T_c \Rightarrow$ 意识中断」依赖 Orch-OR 全套假设（微管量子计算、客观引力坍缩），与 SRT 基础框架（意识 = $\Psi_f$ 相变 + d 值涌现，不要求量子相干性）的推导路径不同。在 SRT 的退相干规范框架（Ax-Exp-03）下，$Q < T_c$ 仅意味着 pointer basis 提前固定，不直接导致意识中断。
+>
+> **Cross-ref**（规范路径）：`Neuroscience/SRT_Neuro_08_Immune_Dist.md §Ax-Exp-03`；$T_c$ 的可测代理：EEG gamma 带去同步（退相干替代指标）。
 
 ### T-BQ-1 [T1.5.1]: Anesthesia Mechanism (麻醉机制定理)
 麻醉通过破坏微管相干性使 $Q < T_c$，导致选择机制断裂。
@@ -211,6 +256,14 @@ $$ v_{subjective} = \frac{d\phi_θ}{dt} \cdot \frac{1}{\omega_0} $$
 ### T-Complex-2 [T1.6.2]: Zeno as Phase Reset (芝诺效应相位重置)
 量子芝诺效应是相位重置，而非坍缩次数：
 $$ \lim_{N \to \infty} \left(e^{-\frac{i}{\hbar}\hat{H}\frac{t}{N}} \hat{G}_θ \right)^N \to 1 $$
+
+**SRT含义**：→1（单位算子）意味着：当Ĝ_θ以N→∞的频率作用时，每次作用的相位角贡献趋于零（t/N→0），系统相位被连续重置，净效果等同于"无选择发生"——算子退化为恒等变换，θ更新冻结，对应SRT中"连续观察扼杀了选择过程本身"。
+
+**相位重置vs坍缩次数的区别**：传统芝诺描述强调"频繁测量=频繁坍缩"（以坍缩次数为关键量），SRT重解释：关键量是单次Ĝ_θ作用引入的相位累积（φ~ω·t/N）；频率↑使每步φ→0而非"坍缩更多"，是动力学禁止而非统计累积。
+
+> **[R]** 量子芝诺效应原始文献：Misra & Sudarshan 1977 *Journal of Mathematical Physics*（量子芝诺效应正式命名：频繁测量减缓放射性衰变，原始推导）；Facchi & Pascazio 2008 *Journal of Physics A*（量子芝诺动力学综述：有效哈密顿量在Zeno子空间中的演化，R技术基线）。**[H]** 以Ĝ_θ相位重置解释芝诺冻结机制（→1=恒等=无实质选择）、并联结到SRT的θ更新冻结为本框架新增贡献。
+>
+> * **FC-Complex2-1**（证伪条件）：[H-高承诺]若在量子-光学芝诺实验中，增加测量频率时系统的"选择算子相位累积"代理量（可通过测量间隔Δt与相干时间τ_coh的比值估算：φ~ω·Δt）并不趋零（φ>ε即使Δt→0），则相位重置解释无效，需回退到标准坍缩次数框架。注：此条件需特定实验设计，当前主要作为概念一致性要求。
 
 ---
 
@@ -286,9 +339,31 @@ $$ P(L_1 \cong L_0 | \text{Survival}) \to 0 $$
 只要系统以生存为目标，其 $L_1$ 就必然扭曲 $L_0$ 的结构。
 
 ### Def-Geo-3 [D1.9.3]: Spacetime as Error-Correcting Code (时空纠错编码)
+
+**[R — 追溯：Almheiri, Dong & Harlow 2015（AdS/CFT中的量子纠错码，bulk重建）；Pastawski et al. 2015（完美张量纠错码与全息）；[H-高承诺] — 将"时空=纠错码"推广至SRT的Ĝ群体演化框架]**
+
 时空为 $\hat{G}$ 群体演化出的纠错码：
 $$ \text{Spacetime} = \text{ECC}(\{L_1^i\}) $$
 物理定律是纠错编码的校验位。
+
+*追溯与SRT贡献的区分*：
+- **[R]已有**：Almheiri et al.在AdS/CFT特定情境下证明了时空几何可编码为边界量子纠错码，物理算符（bulk局域算符）对应逻辑比特，物理定律保持一致性是"纠错能力"的表现。
+- **[H-高承诺] SRT推广**："Ĝ群体演化出时空纠错码"将此概念从特定AdS情境推广至一般选择动力学——机制候选见下方；暂为结构类比，具体化程度低于AdS/CFT。
+
+*"群体演化出"机制候选*（各有已有理论基础，具体机制待明确）：
+- **热力学涌现**（最成熟候选）：自由能原理（Friston 2019）——多算子共享马尔可夫毯时，边界上的信息约束在热力学上等效于"纠错协议"；低能流代价路径 = 等效校验满足的路径
+- **演化博弈均衡**：Nash/Schelling协调均衡——多Ĝ之间的重复博弈收敛到的稳定L₂锚点，等效于所有参与者共同维护的纠错码（cf. `Philosophy/SRT_SocTheory_04_Luhmann_ANT.md` §3.5黑箱化）
+- **量子引力涌现**（最高[H-承诺]）：Penrose OR（1996）/Verlinde熵引力（2011）等——时空本身从量子纠缠中涌现，与ECC视角有结构对应，但SRT与这些框架的具体接口未建立
+
+> **Cross-ref**：此定义与 `Physics/SRT_Physics_Cosmology.md` §4.1（引力即共识）/ §4.2（力=共识代价/规范场）构成逻辑递进链：**L₂共识 → 力代价 → 规范场 → ECC校验位**，三者是同一本体论主张在不同数学语言中的表达。
+
+*形式化开放问题*：
+- $\text{ECC}(\{L_1^i\})$ 中 $\{L_1^i\}$ 的格式（什么类型的数据空间？）和编码方案（什么校验矩阵？）未指定，无法直接操作化。**最低具体化候选**：若$\{L_1^i\}$为经典比特串（各Ĝ_i的L₁离散化快照），则ECC为经典线性码；若为量子态密度矩阵，则对应量子纠错码（stabilizer formalism）——前者更可测，后者与AdS/CFT更接近。
+- "物理定律=校验位"：在Almheiri框架中，有具体的算符代数映射；在SRT推广中，对应关系待明确（如：能量守恒 ↔ 哪个ECC约束？最低候选：能量守恒 = 奇偶校验约束，即L₁整体能量的奇偶位在传递时保持不变）
+
+**证伪条件** [H-高承诺]:
+- IC-Geo3-1：若在任意（非AdS/CFT）时空情境下，无法构造显式的 $\{L_1^i\}→\text{ECC}$ 映射使物理定律对应可识别的校验约束，则此定义停留于比喻层次。最低可验证情境：在有限量子多体系统（如量子纠错实验码）中，物理对称性约束是否可表达为ECC校验矩阵的行空间。
+- IC-Geo3-2：若时空纠错码视角在所有当前可测量的实验中（引力波探测/黑洞成像/量子纠缠Bell测试）与传统广义相对论预测完全等价，则SRT框架无额外预测力；仅当存在对应于"纠错失败"的可观测信号（如特定纠缠破坏模式与时空奇异点的相关性），SRT才产生可区分预测。
 
 ---
 
@@ -319,9 +394,7 @@ $$ \text{IsStable}(L_2) \iff I(L_2(t+1); L_2(t)) \gg I(L_2(t+1); L_0(t) | L_2(t)
 | **H89** | 复数 $\hat{G}$ 时间效应 | 主观时间 ∝ EEG 相位梯度 | 主观时间与神经相位无关 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -727,3 +800,139 @@ $$\text{IsStable}(L_2) \iff I(L_2(t+1); L_2(t)) \gg I(L_2(t+1); L_0(t) | L_2(t))
 | $\omega_{sub}$ | Relative Subjective Frequency | Ax-Scale-2 [A1.8.2] |
 | $\lambda_{RL}$ | Reality-Locality Trade-off | §9.1 |
 | $\text{ECC}$ | Error-Correcting Code | Def-Geo-3 [D1.9.3] |
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+## 时空渲染相变界限补注（2026-03-06，轻中量）
+
+### Def-Quant-Cos-RTC-1: Spacetime Rendering Boundary
+声明 \(L_0\) 不预设经典时空序；时空度规与事件先后是跨主体稳定锚定后的渲染协议：
+\[
+\text{Spacetime Metric} \in \Pi^{render}_{L_2}\big(\hat G_\theta[L_0]\big)
+\]
+\[
+\text{Consensus-stable order} \iff \Psi_f^{consensus}\ \text{payable}
+\]
+* **Implication（中文）**：在高相干 \(L_0\) 区间强行施加经典前后序，属于范畴误置；应先检查是否已跨越渲染稳定阈值。
+
+### Cor-Quant-Cos-RTC-1: Category-Mistake Criterion
+若系统仍处于长相干/弱锚定区，使用经典 simultaneity 直接判定“先后因果”不具完备性。
+
+## 【理论边界/防误用声明】
+- 不采纳“无时空基底 = 否定经验时空有效性”的推论。
+- 不采纳“任何反直觉时间叙述都自动成立”的推论。
+- 适用边界：时空渲染协议在宏观 \(L_1/L_2\) 区间依然是最高可操作层。
+
+### [Lineage/Source]
+- Penrose 相关时间/坍缩讨论语境
+- 量子基础访谈（2026）
+
+
+## Ontological Horizon Interface（2026-03-07）
+
+### Def-Quant-Cos-OH-1: Ontological Horizon
+定义事件 \(e\) 的本体论视界条件：若其传播影响在积分窗 \(\tau\) 内无法与任何外部算子形成可验证共振并写入 \(L_2\)，则其外显存在性进入退相干衰退区。
+\[
+\forall \hat G_j,\ \mathcal{R}(e,\hat G_j;\tau)<\epsilon\ \land\ \Delta L_2(e;\tau)\approx 0
+\Rightarrow e\in\mathcal{H}_{onto}
+\]
+
+### T-Quant-Cos-OH-1: Existence Fragility under Signal Erasure
+当传播衰减与背景涨落使可观测信号长期低于可分辨阈值：
+\[
+\mathrm{SNR}_e(t) < \mathrm{SNR}_{min}\ \text{for}\ t\ge t_c
+\]
+事件不会“逆历史消失”，但其跨算子可达存在性会在操作层面趋于零（仅余不可访问潜在历史态）。
+
+### 分类映射表（Event Persistence Modes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 强写入事件（多算子共振） | 中~高 | Open / Semi-open | payable |
+| 局部写入事件（弱扩散） | 中 | Semi-open | borderline |
+| 视界邻域事件（低 SNR 衰退） | 低~中 | Closed 倾向 | 高恢复代价 |
+| 视界后不可达事件 | 低（外显） | Closed（操作不可达） | 记账不可结算 |
+
+### [Lineage/Source]
+- 宇宙传播衰减与可观测性讨论语境（Ask Ethan 文章触发）。
+- SRT 关联：A11 脆弱性、\(L_1\to L_2\) 写入条件、跨算子共振门槛。
+
+## 【理论边界/防误用声明】
+1. 不采纳“操作不可达 = 本体绝对不存在”的推论；本节区分‘可达存在性’与‘终极本体断言’。  
+2. 不采纳“单一观测失败可宣告事件归零”的推论；需满足时间窗与多算子判据。  
+3. 不采纳“本体论视界可跳过观测误差建模”的推论；阈值必须含仪器与背景不确定度。
+
+
+## Dynamic Vacuum Quantization Window（2026-03-12）
+
+### T-Quant-Cos-DVQ-1: Dispersive-Boundary Quantization Window
+若背景介质同时满足因果色散、对称性约束与自伴边界条件，则离散谱可作为响应结构的涌现结果，而不必先把“量子化”设为原初公设：
+\[
+(\mathcal{D}_{causal}\land \mathcal{S}_{rot}\land \mathcal{B}_{sa})\Rightarrow \mathrm{Spec}(\hat{\mathcal L}_{vac})=\{\omega_n\}_{n\in\mathbb N}
+\]
+在 White et al. (2026) 的动态真空窗口中，
+\[
+\omega_n = D\kappa_n^2,\qquad \kappa_n\propto \frac{1}{n}
+\Rightarrow \omega_n\propto \frac{1}{n^2}
+\]
+从而给出氢样 Rydberg 阶梯的解析实现。
+
+### C-Quant-Cos-DVQ-1: SRT Mapping
+- `L_0` 可被理解为具响应结构的真空载体，而非绝对“空无”。
+- `L_1` 的离散能级不必全都被视为原初断裂，也可在某些窗口中理解为“对称性 + 边界条件 + 因果响应”共同切出的稳定模态。
+- `L_2` 在这里对应的不是社会规范，而是约束该模态族的上层规则：旋转对称、自伴性、边界条件与可支付的色散结构。
+- 这为 SRT 的“选择不是任意创造，而是从高维潜在介质中切出可稳定现实”提供了一个量子侧的形式兼容窗口。
+
+### Def-Quant-Cos-DVQ-1: Spectral-Selection Reading
+把该类模型读成 SRT 语言时，可将离散谱视为：
+\[
+L_1^{mode}=\hat G_{\theta,\mathrm{boundary}}\!\left[L_0^{vac}\right]
+\]
+其中 `\hat G` 不是凭空赋予量子数，而是在真空响应函数、对称群与边界条件所允许的模式族中完成稳定切片。
+
+### Def-Quant-Cos-DVQ-2: Vacuum Constraint Protocol
+将该窗口中的物理约束协议压缩为：
+\[
+L_2^{vac}:=\left(\mathcal D_{causal},\mathcal S_{rot},\mathcal B_{sa},\mathcal R_{passive}\right)
+\]
+即因果色散、旋转对称、自伴边界与被动响应共同构成真空侧的上层约束协议。
+
+### T-Quant-Cos-DVQ-2: Discreteness as Payable Stable Selection Spectrum
+SRT 可将该类离散谱统一重写为：
+\[
+L_{1,\mathrm{disc}}
+=
+\hat G_{\theta,L_2^{vac}}\!\left[L_0^{vac}\right]
+=
+\left\{\phi_n\in \mathrm{Spec}(\hat{\mathcal L}_{vac})\ \middle|\ \Psi_f^{bind}\!\left(\phi_n\mid L_2^{vac}\right)\le \Psi_f^{cap}\right\}
+\]
+含义是：`L_0` 提供连续的响应潜能，`L_2` 提供允许哪些模态稳定存在的协议，`\hat G` 在其中切出可绑定、可维持、可支付的离散现实模态；离散性因此不是“凭空断裂”，而是连续潜在介质在约束协议下形成的稳定选择谱。
+
+### Cor-Quant-Cos-DVQ-1: Protocol Shift Implies Spectral Drift
+
+**[H — 基于摘要的SRT形式化推断（见Lineage）；R — 与isotope shifts/Stark/Zeeman对齐为追溯验证]**
+
+若约束协议改变，则被稳定选出的模态族应同步漂移：
+\[
+\Delta L_2^{vac}\neq 0\Rightarrow \Delta \mathrm{Spec}_{obs}\neq 0
+\]
+在该论文摘要语境下，这与 isotope shifts 及 symmetry-respecting Stark/Zeeman analogues 的方向相兼容。
+
+**ΔL₂^vac 操作化候选**：真空约束协议的"改变"在以下物理条件下发生：① 外加电场/磁场（Stark/Zeeman效应：场改变边界条件→L₂协议改变→谱线漂移）；② 同位素替换（质量参数→共振频率→可绑定模态集改变，即核质量改变L₂中的共振约束条件）；③ 压力/密度变化（边界几何→L₂硬化度变化）。
+
+**同位素移位的SRT对应**：在SRT中，同位素替换对应 L₂^{vac} 中质量参数 $m$ 的变化：$\Delta m \neq 0 \Rightarrow \Psi_f^{bind}(\phi_n | L_2^{vac}(m))$ 条件改变 $\Rightarrow$ 可被选出的 $\phi_n$ 集合漂移 $\Rightarrow \Delta \mathrm{Spec}_{obs}$。质量改变改变了"哪些模态能以可支付代价被绑定"的筛选函数。
+
+**证伪条件**：若在受控实验中改变已知的物理约束参数（如施加强外场），观测谱线不发生预期方向的漂移（或漂移量与L₂协议变化不相关），则本推论在此条件下失效；若某类约束变化（ΔL₂^vac）引起谱漂移反向（Spec_obs向更窄而非随协议变化），则筛选机制需修订。
+
+### [Lineage/Source]
+- Harold White, Jerry Vera, Andre Sylvester, and Leonard Dudzinski, *Emergent quantization from a dynamic vacuum*, Physical Review Research 8, 013264 (2026), DOI: `10.1103/l8y7-r3rm`.
+- 摘要元数据由 APS 向 Crossref 存档的 publisher metadata 核对；当前环境中的 APS 落地页返回 anti-bot challenge，未直接抓取正文。
+- `T-Quant-Cos-DVQ-2 / Cor-Quant-Cos-DVQ-1` 为基于摘要中 `1/n^2` 谱、边界条件、被动因果色散及 isotope/Stark/Zeeman analogues 的 SRT 形式化推断，不是论文原文逐字命题。
+
+## 【理论边界/防误用声明】
+1. 不采纳“该论文已把标准量子力学还原为经典声学模型”的推论；本文只保留其“量子化可由响应结构涌现”的形式窗口价值。  
+2. 不采纳“动态真空 = 物理真空的已证实本体”的推论；该模型仍属单篇高解释负载理论工作，需独立推导与实验区分。  
+3. 不采纳“氢谱可重现 = 全部量子现象都可同样重写”的推论；外推到多体、散射、纠缠与测量问题前需逐项补证。

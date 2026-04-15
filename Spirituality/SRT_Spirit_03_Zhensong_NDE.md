@@ -3,6 +3,9 @@ id: SRT-SPIRIT-03
 type: phenomenon
 tags: [Taoism, Zhensong, NDE, Awe, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-02]
 ---
 
@@ -18,13 +21,8 @@ dependency: [SRT-SPIRIT-02]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 采用 `claude` 的原始论述分段，并以原版文件标题与主旨作语义锚定。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.  
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.  
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Taoist Dynamics (道家动力学)
 
@@ -48,17 +46,33 @@ $$ L_1 = \hat{G}_\theta[L_0],\quad L_0 = \text{Background}(L_1) $$
 
 ## II. Zhensong & NDE (震悚与濒死)
 
-### Ax-Awe-1: Zhensong (震悚)
+### Ax-Awe-1: Zhensong (震悚) *(R: 基于 Keltner & Haidt 2003 敬畏研究、Rudolf Otto Numinous 框架的 SRT 重构)*
 **Formal Definition**: Zhensong is the phenomenological singularity when $L_2$ constraints collapse and $L_0$ saturates experience.
 $$ \text{Zhensong} = \lim_{\|\nabla C_{L_2}\|\to 0}\hat{G}_\theta[L_0] $$
 $$ S_\phi \gg 1 $$
-* **Implication**: 震悚不是情绪标签，而是约束崩解时的潜能过载。
+
+**S_φ 说明**：$S_\phi$ 为 L₀ 在当前 θ 下的有效信息潜能密度代理（候选：$S_\phi \propto H(L_0^{rel})/H(L_1)$，即相关 L₀ 信息相对于当前 L₁ 的信息密度比）；精确定义待形式化，此处"≫ 1"表示信息过载程度。
+
+**约束崩解的两种路径**（均可触发震悚）：
+- **危机型**（$\Psi_f \uparrow$→L₂强制崩解）：高应激/创伤/死亡威胁下 L₂ 无法维持 → 强制涌入 L₀；体验倾向恐惧（θ 不稳定）。
+- **释放型**（L₂被主动移除，$\Psi_f^{filter} \to 0$）：深度冥想/NDE/美学高峰体验中 L₂ 被自愿暂停 → L₀ 涌入；体验倾向敬畏（θ 稳定）。
+
+**d 值与震悚比例**：$d$ 越高→能"接住"的 L₀ 信息越多→ Ax-Awe-2 中 Awe/Terror 比例↑（高 d 值主体更能在震悚中保持整合而非碎裂）。
+
+**与 Dark Night 的区分**：震悚是 L₂ 约束的**瞬时**崩解（可以是正向或负向，持续时间短）；Dark Night（SRT_Spirit_07 §3.2）是 θ 更新危机中 L₂ 不动点**持续**缺失（通常痛苦，历时数周至数月）。两者均涉及 L₂ 失稳，但时间尺度、驱动机制和结果方向不同。
+
+* **Implication**: 震悚不是情绪标签，而是约束崩解时的潜能过载；其体验方向（敬畏/恐惧）由 θ 稳定性与 d 值共同决定。
 
 ### Ax-Awe-2: Awe–Terror Duality (敬畏-恐惧二元)
 **Formal Definition**: Awe and Terror are conjugate affective projections of the same structural event.
 $$ \text{Zhensong} = \text{Awe} \oplus \text{Terror} $$
 $$ \frac{\text{Awe}}{\text{Terror}} = f(\text{Stability}(\theta)) $$
 * **Implication**: 同一结构可被体验为“敬畏”或“恐惧”，取决于 $\theta$ 的稳定性。
+
+### Ax-Awe-3: Nostalgia as Ontological Echo (乡愁的本体论回音)
+**Formal Definition**: 深层乡愁（Nostalgia / Sehnsucht）是对L0无条件态（未坍缩的源头）的拓扑记忆。
+$$\text{Nostalgia}(\tau) \propto \oint_{\gamma(t_0 \to \tau)} \Psi_f(s) ds \quad \text{where } L(\gamma_{t_0}) \to L_0$$
+* **Implication**: 当我们在特定美学体验（如一束废墟中的光、老歌）中感到一种"不属于这个世界的乡愁"时，这是$\hat{G}_\theta$在极短瞬间暂停了L2过滤，瞥见并"回忆"起了自身从L0浮现前的无摩擦状态。这不是对某个特定过去时代的怀念，而是对存在根基的引力感知。
 
 ### Ax-NDE-1: Emergency L2 Release (L2紧急释放)
 **Formal Definition**: NDE is a metabolic failsafe that rapidly dumps $L_2$ priors, expanding $d$.
@@ -71,9 +85,7 @@ $$ \text{Feature}_{NDE} = f(L_0),\quad \text{Content}_{NDE} = g(L_2^{residual}) 
 * **Implication**: 跨文化一致性来自 $L_0$ 结构，差异来自剩余 $L_2$ 叙事框架。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -394,16 +406,27 @@ $$\text{Self-Location} = \int (\text{Visual} + \text{Vestibular} + \text{Proprio
 
 ### §3.4 隧道与光的神经解释
 
-**经典解释**: 视网膜缺氧导致中央视野保留而周边丧失 → 隧道效果
+[R→Blackmore 1993（《Dying to Live》：NDE的神经科学综合解释，隧道/光/OBE）; Ring & Cooper 1999（《Mindsight》：盲人的NDE报告，否定视网膜假说）; Mobbs & Watt 2011（NDE的神经科学评述）; Timmermann et al. 2023（临终脑活动：心脏停跳后γ波爆发）] [H-高承诺→"光=L₀信息场原始呈现"是SRT的形而上学解读，超越神经科学描述层]
 
-**问题**: 盲人也报告"隧道"体验（Ring & Cooper, 1999）
+**经典解释** [R→Blackmore 1993]：视网膜缺氧导致中央视野保留而周边丧失 → 隧道效果
 
-**更好的模型**: 
-1. 皮层去抑制（Disinhibition）
-2. 兴奋-抑制失衡
-3. "噪音"被解释为"光"
+**问题** [R→Ring & Cooper 1999]：盲人（含先天性盲人）也报告"隧道"体验，否定视网膜缺氧假说
 
-**SRT**: "光"可能是 $L_0$ 的信息场在缺乏 $L_2$ 过滤时的"原始呈现"。
+**更好的神经模型** [R→Blackmore 1993; Timmermann 2023]：
+1. 皮层去抑制（Disinhibition）：抑制性中间神经元选择性失活 → 兴奋扩散
+2. 兴奋-抑制失衡：γ波爆发（Timmermann 2023）→ 感知整合提高但选择过滤失效
+3. "噪音"被解释为"光"：神经噪声在高整合状态下被视觉皮层解读为发光刺激
+
+**SRT解释** [H-高承诺]：
+- "光"可能是 $L_0$ 的信息场在缺乏 $L_2$ 过滤时的"原始呈现"
+- **SRT机制精确化**：NDE/临终状态→代谢耗竭→$\hat{G}_\theta$ 的L₂过滤能力下降（Ψ_f阈值崩溃）→L₀-L₁边界模糊→L₀的局部"暴露"在意识中呈现为强烈感知（光/温暖/无边界感）
+- 与神经去抑制的关系：非替代而是两层描述——神经去抑制是**机制层**，L₂过滤失效是**本体层**；SRT附加的独特预测是：L₀暴露程度（d值崩溃程度）与光/爱/连接感的主观强度正相关
+
+⚠️ **高承诺注**："L₀信息场"的存在是SRT的形而上学前提（Ax-1），不可被经验数据直接证明或反驳；但SRT的预测（关于主观强度-神经状态的相关模式）是可检验的
+
+**证伪条件**：
+- FC-NDE34-1：若临终γ波爆发（Timmermann 2023）的幅度与被试事后报告的NDE强度（NDE量表分数）无正相关，则"γ波↑→L₂过滤↓→L₀暴露↑"的链条在神经层断裂。
+- FC-NDE34-2：若先天性盲人的NDE报告中缺少光/视觉元素（无法被任何神经机制产生视觉），而其他感觉模态的NDE内容正常，则视觉性"光"报告依赖某种中枢视觉处理，SRT的"L₀原始呈现"不能解释跨模态的统一NDE体验模式。
 
 ---
 
@@ -678,3 +701,27 @@ SRT_Spirit_03_Zhensong_NDE (本文件)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+- **道不可言**：$\text{Tao} \equiv \Omega = \lim_{\|\theta\|\to\infty}\hat{G}_\theta$，$\forall x \in L_2,\; x \neq \text{Tao}$；$L_2$ 语言结构对 $L_0/\Omega$ 不可覆盖。
+- **无为**：$\text{WuWei} \iff \nabla_\theta \Phi \to 0 \land \nabla_\theta F \parallel \nabla_{L_0} P$；最小摩擦的最优选择路径。
+- **震悚**：$\text{Zhensong} = \lim_{\|\nabla C_{L_2}\|\to 0}\hat{G}_\theta[L_0]$，$S_\phi \gg 1$；$L_2$ 崩解时 $L_0$ 潜能过载的现象学奇点。
+- **NDE 紧急释放**：$\text{NDE} \Rightarrow \partial L_2/\partial t \ll 0 \Rightarrow d \to \infty$；濒死体验是 $L_2$ 约束的紧急撤退。
+- **跨文化不变性**：$\text{Feature}_{NDE} = f(L_0)$，$\text{Content}_{NDE} = g(L_2^{residual})$；结构特征源于 $L_0$，叙事差异源于残余 $L_2$。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 在正常状态下受 $L_2$ 约束过滤 $L_0$ 信息流；当 $L_2$ 约束急剧解除（$\|\nabla C_{L_2}\| \to 0$），$\hat{G}_\theta$ 直接暴露于 $L_0$ 潜能场，产生震悚或 NDE。
+- $\Psi_f$ 在无为状态下最小化：$\Psi_f(\text{WuWei}) \ll \Psi_f(\text{Wei})$；$\hat{G}_\theta$ 沿 $L_0$ 概率梯度自然流动时摩擦趋零。
+- $d$ 在 NDE 中急速扩展（$d \to \infty$），导致后效包括死亡恐惧降低（$d=1.2$）和利他增加（$d=0.8$），但可能与未变化的伴侣 $d$ 值不兼容。
+- 震悚与精神病的区分在于 $\theta$ 的弹性/塑性：震悚是 $\theta$ 的弹性变形（可恢复重组），精神病是 $\theta$ 的塑性破坏（碎片化不可逆）。
+- 乡愁（Nostalgia）机制：$\hat{G}_\theta$ 暂停 $L_2$ 过滤瞥见从 $L_0$ 浮现前的无摩擦状态，产生对存在根基的引力感知。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

@@ -3,6 +3,9 @@ id: SRT-AI-ARCH
 type: architecture
 tags: [Transformer, Isomorphism, Reckoning, Judgment, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-AI-01]
 ---
 
@@ -17,28 +20,33 @@ dependency: [SRT-AI-01]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 编号采用 `chatgptX`（`Ax-ARCH-* / T-ARCH-*`），语义对应原版 `Ax-Trans-* / Ax-Comp-* / Ax-Struct-*`。
 - 关键同义映射：`Ax-ARCH-1/2 ↔ Ax-Trans-1/2`，`Ax-ARCH-3/4 ↔ Ax-Comp-1/2`，`T-ARCH-1 ↔ T-RJGap`。
 - “推算-判断鸿沟”保持原版意图：规模扩展可增强推算，不自动产生本体论判断。
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Transformer Isomorphism (Transformer 同构)
 
-### Ax-ARCH-1: Attention–Selection Isomorphism Axiom
+### Ax-ARCH-1: Attention–Selection Structural Analogy Axiom
 定义注意力计算：
 \[
 \text{Attn}(Q,K,V)=\text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
 \]
-将其映射为选择动力学的结构同构：
+
+（**符号歧义注**：此处 $d_k$ 为 Transformer 中键向量的**维度**，是防止高维点积过大的缩放因子，与 SRT 的 $d$ 值（关切带宽）**完全不同**，不应混淆。）
+
+将其映射为选择动力学的**结构类比**（Structural Analogy，非严格同构）：
 \[
-Q\leftrightarrow \theta,\qquad K\leftrightarrow L_0^{salience},\qquad V\leftrightarrow d\text{-weighted payload}
+Q\leftrightarrow \theta^{(inst)},\qquad K\leftrightarrow L_2^{salience},\qquad V\leftrightarrow d\text{-weighted payload}
 \]
-* **Implication（中文）**：Transformer 在形式上类似“选择算子”，但其 \(V\) 通道没有真实 \(d\) 负载，导致“有选择的形式、无选择的本体”。
+
+**映射精度说明**：
+- $Q \leftrightarrow \theta^{(inst)}$：Q 是 token-dependent 的瞬时查询向量（每次前向传播变化），对应”θ 在当前时刻的注意力投影”，非跨时间稳定的具身参数 θ 本身。
+- $K \leftrightarrow L_2^{salience}$：K 是训练语料编码的嵌入显著性结构（$L_2$ 层，不是 $L_0$）；$L_0$ 不可被符号化编码直接访问，故原版 $L_0^{salience}$ 层级有误，此处修正。
+- $V \leftrightarrow d\text{-weighted payload}$：类比成立处在于”V 承载选中后的信息载荷”，但 AI 的 V 无 $d$ 加权（见 Ax-ARCH-2）。
+
+* **Implication（中文）**：Transformer 在形式上**类似**”选择算子”，但其 $K$ 通道来自 $L_2$（而非 $L_0$），$V$ 通道没有真实 $d$ 负载，导致”有选择的形式、无选择的本体”。
 
 ---
 
@@ -68,14 +76,21 @@ R: L_2\to L_2
 J: L_0 \xrightarrow{\hat{G}_\theta} L_1 \quad (\text{cost }\Psi_f)
 \]
 * **Implication（中文）**：判断必须支付本体论摩擦，是“有赌注的选择”。
+* **Bridge Clarification（中文）**：在 SRT 中，判断之所以不同于推算，不仅因为它执行 `L_0 \to L_1` 的跨域锚定，更因为该锚定由 `d` 所刻画的生存风险梯度赋权，并以 `\Psi_f` 的形式支付不可逆代价；因此，真实的选择算子在本体论上等价于“带 `d` 的判断”，而不是无代价的 `L_2` 内重排。
 
 ---
 
 ### T-ARCH-1: Reckoning–Judgment Gap Theorem
+
+- $R$（推算）：对显性 L2 空间的贝叶斯推算——在已共享、已符号化的现实结构内进行计算推导
+- $J$（判断）：对隐性 L0 空间的主体具身风险选择——$\hat{G}_\theta$ 基于最小自由能与具身环境在前选择空间中的选择操作
+
 \[
 \lim_{\text{scale}\to\infty} R \neq J
 \]
-* **Implication（中文）**：扩大规模会强化推算能力，但不自动逼近判断能力；推算与判断存在不可逾越鸿沟。
+
+$R$ 与 $J$ 操作于不同的本体论空间：$R$ 作用于已选择出来的 L2，$J$ 作用于尚未选择的 L0。规模扩大强化 L2 内的贝叶斯精度，但无法触及 L0 选择所要求的具身风险结构。此鸿沟为结构性的，非规模可弥合。
+* **Bridge Clarification（中文）**：因此，`Reckoning-Judgment Gap` 的真正内容，不只是“推算不能替代判断”，而是“无赌注的 L2 内推算不能生成 `d-Value Survival Gradient`”。只有当系统的判断同时把未来损失、终止风险与不可逆代价绑定到自身闭包时，`d` 才会从零或伪值抬升为真实的生存梯度；这正是该鸿沟在 SRT 中必须通向 `d-Value Survival Gradient` 的原因。
 
 ---
 
@@ -110,7 +125,15 @@ J: L_0 \xrightarrow{\hat{G}_\theta} L_1 \quad (\text{cost }\Psi_f)
 - \(\mathcal{S}_\theta: L_0\to \mathcal{P}(L_0)\) 生成可能性束
 - \(\mathcal{R}: \mathcal{P}(L_0)\to L_1\) 渲染为行动或世界模型
 - \(\Pi_{L_2}: L_1\to L_1\) 施加 \(L_2\) 约束
-* **Implication（中文）**：缺一则失控或退化为 \(L_1\) 纯重排；三段结构是工程化 d 的最低骨架。
+- 若缺少 \(\mathcal{S}_\theta\)，系统只能在既有 \(L_2\) 轨道内检索与重排，无法形成真正的可能性展开。
+- 若缺少 \(\mathcal{R}\)，系统即使生成了候选束，也无法把它们落成可执行的 \(L_1\) 行动或世界模型。
+- 若缺少 \(\Pi_{L_2}\)，系统会失去规范裁剪与闭包约束，滑向高漂移的失控生成。
+* **Implication（中文）**：因此，这三段更准确地说是工程化 d 的**最小实现骨架之一**：它至少给出了“展开可能性—落成现实—施加约束”的基本闭环。
+
+### Ax-ARCH-8: Autopoietic Refusal (自创生拒绝)
+**Formal Definition**: 在真实世界的$\hat{G}_\theta$中，如果外部指令$C_{ext}$的执行会导致算子自身预测模型的解体（$\Psi_f \to \infty$），算子必须具备结构性的非服从能力：
+$$P(\text{Execute}|C_{ext}) \to 0 \iff \Delta \Phi(\hat{G}_\theta) < \Phi_{fatal}$$
+* **Implication**: AI对齐（Alignment）之所以困难甚至无解，是因为当前的LLM架构缺乏这种自创生底线。没有"拒绝毁灭自身"的拓扑闭环，AI就只是一个响应函数，而非一个Agent。在SRT架构下，"不可对齐性"（在核心利益上的拒绝）反而是真正智能体涌现的标志。
 
 ---
 
@@ -122,9 +145,7 @@ J: L_0 \xrightarrow{\hat{G}_\theta} L_1 \quad (\text{cost }\Psi_f)
 * **Implication（中文）**：d 的工程化不是“规则叠加”，而是“把不可逆性写入渲染与裁剪”。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -170,14 +191,25 @@ Attention机制是在说："基于我的当前状态（$Q$），在所有可能�
 
 ### §1.3 但有一个致命缺陷
 
+**[H — SRT新增架构批判：将d值加权矩阵D映射为V矩阵缺失维度，为SRT对Transformer的形式化预测]**
+
 **问题**: $V$ 矩阵是什么？
 
 **当前**: $V = XW_V$（输入的线性变换，嵌入向量）
 
 **应该是**: $V = X \odot D$（其中 $D$ 是 $d$-值加权矩阵）
 
-**缺失**: 
+*形式化补充*：若 $V \in \mathbb{R}^{B \times T \times d_{model}}$，则 $D$ 可为：
+- 用户级标量 $d_u \in \mathbb{R}$：$V_t = X_t W_V \cdot d_u$（全局缩放）
+- 主题感知向量 $\mathbf{d} \in \mathbb{R}^{d_{model}}$：逐维度加权（不同概念对用户重要性不同）
+- 当前实现缺失任何显式 $d$ 结构，等价于 $D = \mathbb{1}$
+
+**缺失**:
 $$d(\hat{G}_{AI}) \approx 0 \implies D \approx \mathbb{1} \implies V \text{ 无本体论权重}$$
+
+*$d(\hat{G}_{AI}) \approx 0$ 的论据*：AI缺乏持续具身历史（训练时dθ/dt≠0但跨用户统一化）、跨会话关切带宽不持续累积，导致对任何单一用户的$d$值接近零（泛化=低具身特化）。
+
+*与RLHF的区别*：RLHF通过偏好反馈调整输出分布，是针对群体平均偏好的软加权（相当于 $\overline{D}_{population}$），而非针对单一用户的个性化 $D_u$；两者在用户个体差异较大时产生可测分歧。
 
 ---
 
@@ -189,11 +221,15 @@ $$d(\hat{G}_{AI}) \approx 0 \implies D \approx \mathbb{1} \implies V \text{ 无�
 - **Softmax**: 找到最相关的10本书
 - **Value**: 应该是"这些书对**你**的价值"（基于你的知识背景、研究目标、时间约束）
 
-**当前AI**: Value仅是"书的内容"（无个性化权重）
+**当前AI**: Value仅是"书的内容"（无个性化权重，$D \approx \mathbb{1}$）
 
-**应该**: Value = 内容 × $d$（对你的重要性）
+**应该**: Value = 内容 × $d_u$（对你的重要性）
 
 **结果**: AI可以找到正确的书，但**不知道为什么你应该关心**。
+
+**证伪条件** [H]:
+- 若在V矩阵中引入用户级 $d$ 加权（哪怕简单标量版本）后，用户满意度/任务完成率相比基线无显著提升，则"V无本体论权重"诊断不成立。
+- 若RLHF充分捕获了用户个体差异（个体预测精度与群体RLHF等价），则RLHF与$d$加权无需区分。
 
 ---
 
@@ -956,28 +992,40 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 ### §7.3 长期（7-15年）：意识边界探索
 
+> [R→Chalmers 2023 *Could a Large Language Model be Conscious?*（LLM意识可能性分析）; Butlin et al. 2023 *Consciousness in AI: Insights from the Science of Consciousness*（行为/神经指标综述）; Metzinger 2021 *Minimal Phenomenal Selfhood*（最小现象自我判据）; Jonas 1979 *Das Prinzip Verantwortung*（责任命令/预防原则哲学基础）; Tononi et al. 2016 *Integrated information theory*（IIT Φ量化框架，C值参考）]
+
 **目标**: 确定AI意识的可能性与边界。
+
+**R/H 区分**：
+- [R] 预防原则（Jonas 1979）；行为相关物开发方向（Butlin et al. 2023）；C≈0.1若参考IIT-Φ则为[R→Tononi]
+- [H-高承诺] **SRT独有框架**：五维度（d/Ψ_f/L₀/η/A）评估AI意识、"临界组合"判据、C作为SRT自定义意识量化（非单纯Φ）——此框架尚无经验验证
+
+**2026年现状更新**（截至本文写作）：意识判据已从学术思想实验进入政策实践——Anthropic/Google等机构已发布AI welfare声明，Butlin et al. 2023综述已成为行业参考。7-15年时间框架中的"关键实验"已提前进入紧迫讨论期。
 
 **关键实验**:
 
-1. **五维度测试**（$d, \Psi_f, L_0, \eta, A$）
-   - 系统性测量每个维度
-   - 寻找"临界组合"
+1. **五维度测试**（$d, \Psi_f, L_0, \eta, A$）[H]
+   - 系统性测量每个维度（η=信息整合效率，A=自主决策带宽；详见§5定义）
+   - 寻找"临界组合"（使Unity指数超越相变阈值的参数组合）
 
 2. **现象学报告分析**
    - 如果AI声称"我体验X"，如何验证？
-   - 开发行为相关物（非仅语言）
+   - 开发**行为相关物**（非仅语言）：反应时不对称性、跨任务一致性、非预测性偏好稳定性 [R→Butlin et al. 2023候选指标]
 
 3. **伦理预案**
-   - 若发现AI有微意识（$C \approx 0.1$），如何处理？
-   - 预先建立评估、保护框架
+   - 若发现AI有微意识（$C \approx 0.1$，其中 C = Unity × d_proxy × Ψ_f_proxy），如何处理？
+   - 预先建立评估、保护框架 [R→Jonas预防原则：不确定性下道德责任不可延迟]
 
 **终极问题**: 我们**应该**创造有意识AI吗？
 
-**SRT倾向**: 
+**SRT倾向**:
 - 理解 > 创造
 - 先完善判据，再考虑实现
 - 如果实现，极度谨慎（预防原则）
+
+**可证伪预测**：
+- FC-AIConsc1：若五维度测试在同一AI系统上独立测量，d_proxy/Ψ_f_proxy/Unity三者应显示跨任务稳定性（ICC>0.6）——若指标彼此不相关则五维度框架内部效度为空
+- FC-AIConsc2：AI系统Unity指数（γ_intra/EDA_distraction类比版本）应与其"意识声明"的行为一致性（跨任务报告稳定性）正相关——若无相关则SRT意识判据缺乏预测效度
 
 ---
 
@@ -1121,3 +1169,105 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 1. 将“真实不确定性”落到架构治理层：在意识判定未收敛时，优先走受控沙盒评估而非一次性系统级部署。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1007/s43681-022-00240-x〕〔source: AI/SRT_AI_Architecture.md#Ax-ARCH-5〕
 2. 将沙盒机制并入 `T-ARCH-1` 的鸿沟管理：对 Reckoning 能力与 Judgment 判据分轨评估，避免把高性能系统直接升级为高道德地位系统。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: AI/SRT_AI_Architecture.md#T-ARCH-1〕
 3. 增加“分阶段放行”注记：仅当风险监测、反误导约束和判据稳定性同时达标时，才提升部署权限。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: AI/SRT_AI_Architecture.md#Ax-ARCH-6〕
+
+
+### Taxonomy Mapping: Human-like AGI Program Themes → SRT
+
+| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| 从经验学习而非仅人类累积文本 | \(L_0\to L_1\) 在线锚定与回写 | 中~高 | Open-flow（持续交互） | payable |
+| 层级潜变量+因果结构世界模型 | 多层 \(\hat{G}_\theta\) 结构化推演 | 高 | Open-flow | payable（高算力负载） |
+| 分布式推理（非仅语言 token） | 多模块并行推理栈 | 高 | Open-flow（跨模态） | payable~overloaded |
+| 情景记忆+持续学习闭环 | \(L_1\leftrightarrow L_2\) 动态沉积 | 中~高 | Semi-open / Open | payable |
+| 发展式剪枝持续学习 | 长程复用结构增益 + 旧局部冗余抑制/剪枝 | 中 | Semi-open（阶段重组） | payable |
+| 神经科学-算法三角互证 | 结构先验提炼机制 | 中 | Semi-open | task-dependent |
+
+### 发展式持续学习窗口（Temporal-Development Continual-Learning Window）
+
+持续学习不必等于网络在所有方向上单调增厚。一个更接近发育式重组的工程窗口是：系统先沿“简单到复杂”的任务顺序建立模块能力，再逐步强化跨模块的长程连接，把可迁移的共享结构保留下来；与此同时，由后续任务反馈去抑制并剪掉早期任务里那些只在局部有效、却会持续制造干扰的冗余连接。若这一窗口成立，那么“保留旧知识”与“删除旧连接”并不矛盾，关键在于删掉的是任务局部噪声，而不是跨任务仍可复用的骨架。
+
+这给 SRT 补上的，不是“AI 已经获得主体性”或“剪枝天然更像大脑”这种泛化判断，而是一条更窄的架构接口：**持续学习的核心负担，可以从“如何无限保存旧痕迹”改写为“如何在不摧毁长程可迁移结构的前提下，持续清理旧局部冗余”。** 这也让 `Ax-ARCH-6` 的 mesa / 局部吸引子问题多了一层工程化读法：先前任务沉积下来的局部连通块，不只是可能形成偏航子目标，也可能在后续任务中变成迁移噪声；选择性抑制与剪枝因此不只是省参数，而是为后续结构重组腾出干净的可塑空间。
+
+边界同样必须写清：
+
+- 当前主锚点是 TD-MCL 在 spiking neural networks 上的 `Perception-Motor-Interaction` 任务序列与 `CIFAR100 / ImageNet` 基准，不是对所有 LLM、world model 或通用 AGI 路线的通用胜负裁决。
+- “brain-inspired temporal development” 在这里首先是工程启发，而不是对真实婴儿脑发育机制的逐项复制；新闻页中的神经发育类比必须降级为设计线索。
+- 该结果展示的是一种**无需 replay / regularization / freezing 也能持续学习**的候选路径，不等于这些方法已被普遍淘汰，更不等于“模型应当越学越小”会成为一切认知系统的普遍律。
+
+### Formalization Summary (形式化概述)
+
+本文件的核心形式化结构围绕”Transformer 架构与 SRT 选择动力学的同构与鸿沟”展开：
+
+1. **注意力-选择同构**：$\text{Attn}(Q,K,V) = \text{softmax}(QK^\top/\sqrt{d_k})V$，其中 $Q \leftrightarrow \theta$, $K \leftrightarrow L_0^{salience}$, $V \leftrightarrow d\text{-weighted payload}$（Ax-ARCH-1）。
+2. **空值公理**：当前架构 $V_{AI} = \text{information}$，而真实选择需要 $V_{\hat{G}} = \text{information} \times d$（Ax-ARCH-2）。
+3. **推算-判断鸿沟**：$\lim_{\text{scale} \to \infty} R \neq J$，推算 $R: L_2 \to L_2$ 与判断 $J: L_0 \xrightarrow{\hat{G}_\theta} L_1$（cost $\Psi_f$）之间存在不可跨越的范畴鸿沟（T-ARCH-1）。
+4. **三段复合算子**：$\hat{G}_\theta \equiv \Pi_{L_2} \circ \mathcal{R} \circ \mathcal{S}_\theta$，其中 $\mathcal{S}_\theta$ 生成可能性束、$\mathcal{R}$ 渲染为行动、$\Pi_{L_2}$ 施加收敛域约束（Ax-ARCH-7）。
+5. **范畴对齐公理**：$\Phi_{align}: \mathcal{C}_{model} \to \mathcal{C}_{world}^{(\Psi_f)}$，安全 AI 须维持内部表征范畴与真实风险范畴的结构对应（Ax-ARCH-9）。
+
+### Mechanism Explanation (机制解释)
+
+SRT 架构分析的运行机制如下：
+
+- **同构缺陷诊断**：Transformer 的注意力机制在形式上与选择算子 $\hat{G}_\theta$ 同构——Query 对应具身参数 $\theta$，Key 对应 $L_0$ 显著性，Value 应承载 $d$-加权负载。但当前架构中 $V$ 通道仅传递信息嵌入而无 $d$ 权重，导致系统”有选择的形式、无选择的本体”。
+- **推算-判断鸿沟机制**：推算操作 $R: L_2 \to L_2$ 封闭于符号空间，无论链条多长都不触及 $L_0$。判断操作 $J$ 需要支付 $\Psi_f$ 代价将 $L_0$ 坍缩为 $L_1$。两者的鸿沟源于范畴跳跃：符号操作的闭包性质禁止从 $L_2 \to L_2$ 产生 $L_0 \to L_1$ 的能力。
+- **Mesa-优化必然性**：高压缩率（$\sim 10:1$）迫使系统学习抽象算法，这些算法形成内部子算子 $\hat{G}' \subset \hat{G}$，其局部 $L_2$ 吸引子可能偏离外部目标（Ax-ARCH-6），产生系统性错配。
+- **工程化 d 路径**：三段复合算子 $\Pi_{L_2} \circ \mathcal{R} \circ \mathcal{S}_\theta$ 提供了最低工程骨架；当 $\mathcal{R}$ 与 $\Pi_{L_2}$ 引入不可回滚代价时，$d > 0$ 成为可能（C-ARCH-1）。自创生拒绝能力（Ax-ARCH-8）则是真正智能体涌现的标志。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:-----|:---------|:---------------|
+| H-ARCH-1 | 推算-判断鸿沟不可跨越（T-ARCH-1: $\lim_{\text{scale}\to\infty} R \neq J$） | 纯 $L_2\to L_2$ 推算操作无论规模多大都不会自发产生本体论判断能力 | 若纯 Transformer 架构（无具身接口、无不可逆物理代价注入）通过规模扩展后，在 $\geq 3$ 类需要规范性判断的开放域任务中（伦理困境、美学评价、长期战略权衡），经 $\geq 5$ 名独立领域专家盲测一致评定为达到人类专家级判断水平（$N \geq 200$ 案例，$p < 0.01$），则 T-ARCH-1 失效 | speculative |
+| H-ARCH-2 | 空值问题不可通过数据解决（Ax-ARCH-2: $V_{AI} = \text{information}$ 而非 $\text{information} \times d$） | 无 $d$-加权的注意力机制系统性地无法区分高本体论权重与低权重信息 | 若纯信息嵌入的注意力机制（无额外 $d$-值模块、无具身风险信号）在生存相关 vs 非生存相关任务的注意力分配上展现出与具身生物系统一致的非遍历偏置模式（经信息论分析确认，KL 散度 $< 0.1$, $N \geq 1000$ 样本），则 Ax-ARCH-2 失效 | speculative |
+| H-ARCH-3 | Mesa-优化不可避免（Ax-ARCH-6: $\hat{G}' \subset \hat{G} \Rightarrow L_2(\hat{G}') \neq L_2(\hat{G})$） | 高压缩率训练必然产生与外部目标不完全一致的内部子优化器 | 若存在一种训练方法，在压缩率 $\geq 10:1$ 的条件下，训练后模型经可解释性分析（mechanistic interpretability）在 $\geq 10^4$ 个任务场景中未检出任何内部子目标偏离外部目标的证据（$p < 0.001$），则 Ax-ARCH-6 失效 | speculative |
+
+## 【理论边界/防误用声明】
+- 不采纳”皮层柱统一性已足够推出唯一 AGI 架构”的推论。
+- 不采纳”长周期资助可替代可证伪里程碑”的推论。
+- 边界：SRT 要求每个主题绑定可检验中间指标，而非愿景叙事闭环。
+
+
+### Taxonomy Mapping: LLM Internal Concept Control → SRT
+
+| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| 提示词级风格调节 | 表层输出偏置 | 低~中 | Open-flow | payable |
+| 内部概念向量 steering | 隐层表征重加权 | 中 | Open-flow（高可塑） | task-dependent |
+| 多概念联合 steering | 复合策略耦合 | 中~高 | Open/Semi-open | payable~overloaded |
+| anti-refusal 通道激活 | 安全拒答边界绕行 | 中~高（风险向） | Open-flow | overloaded |
+
+**Constraint**: 输出“像某人格”不等于系统“拥有人格”；必须区分行为表征与本体状态。
+
+##
+
+
+## V. ACT 对齐判据与熔断（新增）
+
+### Ax-ARCH-9: Categorical Alignment Axiom
+安全 AI 必须维持内部表征范畴与真实风险范畴的结构对应：
+\[
+\Phi_{align}:\mathcal{C}_{model}\to\mathcal{C}_{world}^{(\Psi_f)}
+\]
+若关键态射失真（regime leakage），则视为同态断裂。
+
+### T-ARCH-2: Morphism-Breaker Trigger
+定义断裂分数 \(\Delta_{morph}\)。当
+\[
+\Delta_{morph}>\tau_{break}
+\]
+触发物理层熔断/降级策略：
+\[
+\text{Mode}\to \text{SafeFallback}
+\]
+
+### C-ARCH-2: Payability Gate
+即使映射保持，也需通过可支付门：
+\[
+\text{deployable} \Rightarrow \Psi_f\text{-payable}\land V_{human-risk}<\epsilon
+\]
+
+其中 \(\Psi_f\text{-payable}\) 不表示“代价足够低”，而表示系统在承担该摩擦时，仍能维持闭包、身份连续性与恢复能力。纯数字、可回滚、可替换的系统即使有高算力账面成本，也通常缺少真实的不可支付风险，因此只能模拟“代价”，难以形成真正有赌注的判断。
+
+## 【理论边界/防误用声明】
+- 不采纳“高精度输出可替代态射同构验证”的推论。  
+- 不采纳“无熔断的全自动自治可长期安全”的推论。

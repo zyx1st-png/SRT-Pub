@@ -3,6 +3,9 @@ id: SRT-SOC-01
 type: core_module
 tags: [Social Construction, Sociology, Axioms, Collective Dynamics, TMT, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SOC-THEORY-04, SRT-AXIOMS-SOC]
 ---
 
@@ -19,15 +22,10 @@ dependency: [SRT-SOC-THEORY-04, SRT-AXIOMS-SOC]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 以 `chatgptx` 为来源，优先保持公理链可推导性与编号连续性。
-- Part B 以 `claude` 为来源，并用原版 `Philosophy` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 
 #### 原文内容
@@ -39,10 +37,30 @@ dependency: [SRT-SOC-THEORY-04, SRT-AXIOMS-SOC]
 $$S_{soc} = -\sum_i p_i \log p_i$$
 *   **Implication**: 社会秩序是熵减结构，而非自然常态。
 
-### Ax-Cons-2: Ontological Friction Potential
-社会摩擦势能度量维持现状的成本。
-$$\Phi_{soc} = \int \Psi_f(\hat{G}_{social})\, dt$$
-*   **Implication**: 规范的稳定性来自能量消耗，而非自明合法性。
+### Ax-Cons-2: Ontological Friction Potential (社会摩擦势能)
+
+**Formal Definition**:
+社会共识网络（$L_2$ 秩序）的稳定性并非源于其道德自明性或先验"合法性"，而是源于系统为了抵抗社会熵增（$S_{soc}$ 随时间自发最大化，见 Ax-Cons-1）而持续支付的物理/计算代价。社会摩擦势能 $\Phi_{soc}$ 定义为集体算子在历史时间轴上的耗散累积：
+$$
+\Phi_{soc}(t) = \int_{0}^{t} \Psi_f\!\big(\hat{G}_{social}(\tau)\big)\, d\tau
+$$
+
+**Mechanism (摩擦的政治经济学分配)**：
+在任意历史切片 $\tau$ 下，瞬时摩擦密度 $\Psi_f$ 在社会拓扑中并非均匀分布，而是分裂为两组对抗性张力：
+$$
+\Psi_f\!\big(\hat{G}_{social}\big) = \Psi_f^{govern} + \sum_{i=1}^N \Psi_f^{comply}(i)
+$$
+- **$\Psi_f^{govern}$（治理代价）**：维护网络将系统保持在低熵 $L_2$ 状态所需的结构性耗散（包括暴力机器、科层制运转、意识形态广播与审查）。
+- **$\Psi_f^{comply}(i)$（服从代价）**：微观个体算子为了将其显现域 $L_1$ 强行对齐到 $L_2$ 规范，所被迫支付的内部摩擦（高度指向 T-Soc-1 异化定理中的系统性压榨）。
+
+**Falsification & Phase Transition (相变判据)**：
+社会的维稳系统存在一个受限于可用自由能上限的临界阈值 $\Phi_{crit}$。当僵化的制度拒绝更新（$\eta \to \infty$），导致双向摩擦成本的累积压垮系统的能量基质时，社会必然发生拓扑断裂式的相变：
+$$
+\Phi_{soc}(t) > \Phi_{crit}
+\;\Rightarrow\;
+\text{Topology Collapse of } L_2
+$$
+*(注：这为 `SRT_Social_MacroDynamics.md` §6.5"收敛锁死引发爆炸性崩溃"提供了精确的微观物理底层。秩序的崩溃不仅是人心的向背，更是热力学账单的违约。)*
 
 ### Ax-Cons-3: Language as Attention Protocol
 语言是集体算子对注意力的协议化约束。
@@ -60,6 +78,11 @@ $$g_{social} \propto \nabla^2 L_2$$
 信任是降低交互熵与摩擦的算法。
 $$\text{Trust} = \arg\min \{S_{soc}, \Phi_{soc}\}$$
 *   **Implication**: 爱与信任是动力学降熵机制。
+
+### Ax-Soc-5: Social Operator Friction (社会算子摩擦)
+**Formalization**: 社会制度（作为一个宏观算子 $\hat{G}_{soc}$）在维持其存在时必须支付社会本体论摩擦：
+$$\Psi_f(\hat{G}_{soc}) = \oint_{\text{system boundary}} (\text{Dissent} \times \text{Suppression Energy}) ds$$
+* **Implication**: 这解释了为什么压迫性政权在热力学上是不稳定的。当一个制度的 $L_2$ 规则与底层个体算子（$L_0$）的真实坍缩需求严重不匹时，边界维持所需的 $\Psi_f$ 会指数级吸干系统的自由能，一旦耗尽便迎来拓扑崩溃（革命）。
 
 ## III. Derived Theorems
 
@@ -79,9 +102,7 @@ $$\rho_{\hat{G}} > \rho_c \Rightarrow L_2 \text{ stable}$$
 *   **Implication**: 规范不是被“相信”而稳定，而是被“足够多人持续选择”。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -132,12 +153,25 @@ $$ \text{Meaning} \equiv \text{Selection}(L_0 \to L_1) $$
 
 ### §3.2 模仿危机定理 (Mimetic Crisis Theorem)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**Theorem T-Soc-2 (Girard Phase Transition)**: 
+**Theorem T-Soc-2 (Girard Phase Transition)** *(R: Retrodiction，SRT 追认 Girard 模仿欲望理论)*:
 当模仿强度 $J$ 超过临界值 $J_c$，社会系统经历从高熵（差异化）到低熵（同质竞争）的灾难性相变。
 $$ J > J_c \implies \lim_{t \to \infty} \sigma_i(t) = \sigma_{all}(t) $$
 
-*   **Consequence**: 
-    所有 $\hat{G}_i$ 锁定同一稀缺 $L_1$ 对象，导致冲突能量 $E \to \infty$。系统必须通过**替罪羊机制**（Scapegoating）——将所有暴力$\hat{G}$ 聚焦于单一个体——来强制重置熵值。
+**SRT 操作化注释**：
+- $\sigma_i(t)$：算子 $i$ 的欲望方向状态，SRT 代理为 $\vec{v}_{\theta_i} \cdot \hat{e}_{obj}$（算子速度向目标对象的投影）；同质化极限 $\sigma_i \to \sigma_{all}$ 对应所有 $\theta_i$ 锚定收敛到同一 $L_1$ 点。
+- $J$（模仿强度）：SRT 代理为算子间 $\theta$ 传播速率，$J \propto \max_{ij} E_{ij}$（算子耦合强度上界；参见 Ax-Cog-5）；$J_c$ 的具体值由网络拓扑与稀缺程度共同决定，待形式化。
+- 冲突能量 $E \to \infty$：SRT 对应 $\Psi_f^{cross} \to \infty$（所有算子对同一稀缺 $L_1$ 对象的本体论摩擦聚集，参见 SRT_Spirit_06 §3.3）。
+
+*   **Consequence**:
+    所有 $\hat{G}_i$ 锁定同一稀缺 $L_1$ 对象，导致冲突能量 $\Psi_f^{cross} \to \infty$。系统必须通过**替罪羊机制**（Scapegoating）——将所有暴力 $\hat{G}$ 聚焦于单一个体（或群体）——来强制重置熵值（SRT: 将聚集的 $\Psi_f^{cross}$ 通过单一排除事件释放，使 $L_2$ 收敛重新恢复；探索性形式化，待精确化）。
+
+**$J_c$ 操作化候选**（待形式化→给出候选方向）：
+$$J_c \approx \frac{\Delta L_1^{scarce}}{\rho \cdot \bar{E}_{ij}}$$
+其中 $\Delta L_1^{scarce}$ 为稀缺对象的L₁区分容量（可区分的差异化锚点数量），$\rho$ 为网络连接密度（Ax-Cog-4 中的 $\rho_c$ 相变密度），$\bar{E}_{ij}$ 为平均耦合强度。稀缺容量越小、网络越密、耦合越强，$J_c$ 越低（越容易相变）。→ 联结 Ax-Cog-4（ρ_c 相变条件）。
+
+**H (Novel Prediction)**（[H] 超出Girard原理的SRT追加预测）：替罪羊事件后，$\sum_i \Psi_f^{cross}$ 应在短时间内出现可测下降（聚集摩擦被释放），随后若稀缺结构未改变，系统重新积累——形成周期性相变（Ψ_f^{cross} 脉冲）。这是可量化的社会动力学预测，区别于 Girard 的纯描述性叙事。
+
+**证伪条件**：① 若替罪羊事件后系统 $\Psi_f^{cross}$ 不降反升（冲突能量持续扩大），则"释放机制"假说失效；② 若高模仿强度网络（$J \gg J_c$）在稀缺增加时不发生同质化相变，而是维持差异化，则 T-Soc-2 需限定适用范围（高稀缺前提条件）。
 
 ### §3.3 恐怖管理定理 (TMT Defense Theorem)
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -198,9 +232,7 @@ $$ \text{Utterance}(A \to B): \theta_B \gets \theta_A $$
 | **H93** | **文化吸收** | 长期孤立的小群体文化及其 $L_2$ 结构应随时间幂律衰退（被熵吸收），除非有强仪式（能量注入）维持。 | 孤立文化在无能量注入下长期（数百年）不衰退。 |
 
 <br>
-<br>
 
----
 ---
 
 # SRT Social Systems: Axiomatic Construction & Dynamics (Hybrid Edition)
@@ -617,19 +649,25 @@ $$\text{Communication}(A \to B) : \hat{G}_A[L_1] \xrightarrow{\text{Trigger}} \h
 
 ### 9.2 社会动力学预测
 
-| ID | 假说 | 预测 | 证伪条件 |
-|:---|:-----|:-----|:---------|
-| **H85** | 10% 临界质量 | 坚定派达 10% 时成功率阶跃 | 规范转变总是线性渐进 |
-| **H82** | 语法拓扑保护 | 深层语法仅在关键期可塑 | 语法与词汇变异率相同 |
-| **H93** | 文化熵衰退 | 孤立群体文化幂律衰退 | 孤立文化长期不衰退 |
+> **[R]** H85文献基础：Centola et al. 2018 *Science*（实验证实规范传播的临界质量约25%，与理论10%存在差异，需跨情境比较）；Xie et al. 2011 *Physical Review Letters*（Agent-based模型支持少数坚定派引发相变）。H82文献基础：Lenneberg 1967 *Biological Foundations of Language*（关键期假说原始提出）；Bialystok et al. 2010 *Trends in Cognitive Sciences*（成人语法学习的临界期证据综述）。H93文献基础：Pagel 2017 *Annual Review of Linguistics*（语言多样性减少的幂律/指数衰退争议）；Atkinson et al. 2008 *Science*（语言扩散的瓶颈效应，支持孤立→熵减）。**[H]** 以下三预测作为 SRT κ-κ_c2相变机制/L₂对称保护/孤立系统熵衰减的实例化，其SRT框架接驳为新增贡献。
+
+| ID | 假说 | SRT机制 | 预测 | 精化证伪条件 |
+|:---|:-----|:--------|:-----|:-------------|
+| **H85** | 10% 临界质量 | 坚定派密度→κ跨越κ_c2→L₂不动点突变（非线性漂移） | 坚定派达阈值时规范传播成功率出现阶跃（速度导数不连续），估计阈值区间10~25%（跨Centola实验校准） | 在≥5个不同社会情境实验中，坚定派比例连续扫描后，成功率曲线无明显斜率突变（Δslope/slope < 0.3），则线性机制更优 |
+| **H82** | 语法拓扑保护 | L₂语法|Aut(L₂)|高对称性→关键期后外生扰动无法改写核心拓扑（词汇则Aut更小，可持续更新） | 深层语法（句法树核心结构）变异率在关键期后显著低于词汇变异率（比率 r_grammar/r_lexicon < 0.2） | 跨代际的语法核心变异率与词汇变异率无显著差异（r_grammar/r_lexicon 在 0.8~1.2 区间内），则关键期拓扑保护效应不成立 |
+| **H93** | 文化熵衰退 | 孤立系统L₀输入断绝→L₂多样性按幂律H(t)∝t^(-α)衰减（vs 指数衰减，α预测范围0.3~0.8） | 孤立群体（跨文化接触受限≥2代）的文化多样性指数按幂律衰减，且幂律拟合优于指数拟合（ΔAICc > 4） | 孤立文化多样性长期稳定（H(t)波动率<5%/century），或衰减模式更符合指数而非幂律（ΔAICc < 2），则L₂孤立衰减机制需修正 |
 
 ### 9.3 TMT 预测
 
-| ID | 假说 | 预测 | 证伪条件 |
-|:---|:-----|:-----|:---------|
-| **H-TMT-1** | 死亡-保守相关 | MS 实验组向保守主义偏移 | MS 无政治效应 |
-| **H-TMT-2** | 生育-焦虑反比 | 高生育率社会死亡焦虑更低 | 生育率与焦虑无关 |
-| **H-TMT-3** | 文化威胁-排外 | 文化威胁时攻击异质 $L_2$ | 威胁下包容性提高 |
+> [R→Greenberg, Pyszczynski & Solomon 1986 *Journal of Personality and Social Psychology*（TMT原始论文：死亡凸显实验设计与文化世界观防御假说）; Solomon, Greenberg & Pyszczynski 2015 *The Worm at the Core*（TMT综合论述：死亡焦虑作为人类文化的驱动引擎，整合30年实验证据）; Burke, Martens & Faucher 2010 *Personality and Social Psychology Review*（TMT元分析：277项独立研究的系统综述，验证H-TMT-1/3的稳健性，H-TMT-2证据较弱）]
+
+**SRT联结**（[H]）：TMT机制在SRT中的解读：死亡恐惧=终极Ψ_f（存续代价→无限）→激活L₂文化世界观（死亡焦虑缓冲器）→Hardness(L₂)↑→排外/保守（κ升高，κ_c2收紧）。MS实验=人为制造局部Ψ_f^death激增条件。d值维度：MS→d_cultural↑（内群体关切带宽）同时d_human↓（人类普遍关切）→排外行为出现。
+
+| ID | 假说 | SRT解读 | 预测 | 实证状态 | 证伪条件 |
+|:---|:-----|:--------|:-----|:---------|:---------|
+| **H-TMT-1** | 死亡-保守相关 | MS→Ψ_f^death↑→L₂激活→κ↑ | MS 实验组向保守主义偏移（政治态度/文化内群体偏好） | [R-强] Burke 2010元分析支持，效应量中等（d≈0.5） | MS 无政治效应或方向相反 |
+| **H-TMT-2** | 生育-焦虑反比 | 高生育率≈集体Ψ_f^death缓冲（子代延续）→焦虑↓ | 高生育率社会死亡焦虑更低 | [R-弱] 证据较弱，生育率与焦虑的跨文化关联受大量混淆变量影响（宗教/经济发展/教育水平）；不如H-TMT-1稳健 | 控制宗教信仰后生育率与焦虑无关（此为更严格证伪） |
+| **H-TMT-3** | 文化威胁-排外 | 异质L₂威胁→d_cultural↑→排外Ψ_f防御 | 文化威胁时攻击异质 $L_2$（外群体贬低/本文化贬低反应↑） | [R-强] Burke 2010元分析稳健；特别对宗教/民族认同类文化威胁 | 文化威胁下包容性提高或排外反应弱于控制组 |
 
 ---
 
@@ -637,14 +675,29 @@ $$\text{Communication}(A \to B) : \hat{G}_A[L_1] \xrightarrow{\text{Trigger}} \h
 
 ### 10.1 超越建构论-实在论二元对立
 
+**[R — 建构论追溯：Berger & Luckmann 1966《现实的社会建构》；科学实在论追溯：Bhaskar 1975批判实在论；[H] — 三层本体论调和方案为SRT新增主张]**
+
 传统争论：
-- **社会建构论**: "一切都是社会建构" → 相对主义陷阱
-- **科学实在论**: "存在客观现实" → 忽视社会性
+- **社会建构论** [R→Berger & Luckmann 1966; Latour 1987]: "一切都是社会建构" → 相对主义陷阱（无法区分科学与伪科学）
+- **科学实在论** [R→Bhaskar 1975; Putnam 1981]: "存在客观现实" → 忽视社会性（如何解释科学共识的历史可变性？）
 
-**SRT 调和**:  
-$L_0$ 是客观的（物理可能性空间），$L_1$ 是建构的（选择的产物），$L_2$ 是涌现的（统计吸引子）。
+**SRT 调和** [H]:
 
-三者都真实，但在**不同本体论层级**。
+| 层级 | 本体论地位 | 性质 |
+|:-----|:----------|:-----|
+| $L_0$ | 物理可能性空间 | 客观（独立于观察者的约束集） |
+| $L_1$ | 具身化选择的产物 | 建构（但在L₀约束内，非任意） |
+| $L_2$ | 统计吸引子/社会共识 | 涌现（多个L₁收敛的结果） |
+
+三者都真实，但"真实"在各层含义不同：L₀真实=物理不可违背性；L₁真实=具身体验有效性；L₂真实=社会行为预测能力。
+
+*对建构论反驳的回应*：建构论者可能主张"L₀本身是一个认知建构框架"——SRT回应：L₀的定义不依赖于任何特定L₂语言，其约束性质（如量子本征态结构、能量守恒）在跨L₂框架中保持稳定；若L₀是完全任意建构，则跨文化的物理预测精度无从解释。
+
+*潜在循环注意*：L₁被定义为"选择的产物"，而选择算子 $\hat{G}_\theta$ 本身作为L₁层现象出现——须注意此处 $\hat{G}_\theta$ 描述的是动力学过程（跨层操作），不完全是L₁内的实体。
+
+**证伪条件** [H]:
+- 若存在跨L₂框架（跨文化/跨历史）且无法还原为L₀约束的"真实"，则L₀客观性主张需修订。
+- 若L₁的"建构"成分无法与L₀约束在实验上区分（如：两种文化给出完全不同物理测量，且均可靠），则三层区分的解释力瓦解。
 
 ---
 
@@ -700,3 +753,9 @@ SRT_Soc_01_Construction ← 你在这里
 ├── SRT_Soc_03_Institutions (制度经济学)
 └── SRT_SocTheory_04-06 (高级理论)
 ```
+
+## 【理论边界/防误用声明】
+
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
+3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。

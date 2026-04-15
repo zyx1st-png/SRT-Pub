@@ -3,6 +3,9 @@ id: SRT-QUANT-00
 type: foundational_theory
 tags: [Quantum Mechanics, Measurement, History Construction, Interpretations, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 ---
 
@@ -160,9 +163,7 @@ SRT provides a meta-framework that synthesizes valid insights from competing int
 *   **Unique Contribution**: SRT explains how subjective selections (QBism, RQM) converge into stable objective reality ($L_2$) through consensus dynamics.
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -217,6 +218,16 @@ $$ \text{Interference} \iff L_0 \text{ unselected} $$
 $$ \text{No Interference} \iff L_0 \text{ anchored as } L_1 $$
 
 **SRT Reinterpretation**: The electron doesn't "go through both slits"—the question assumes $L_1$ categories apply to $L_0$ states. Before selection, there is no fact about "which path."
+
+### 0.2.1a Single-Atom Complementarity Window (PRL 2025)
+
+单原子双缝的理想化实现，把 Bohr–Einstein 争论里的一个关键误解压得更窄：**真正压低条纹可见度的，不是某种经典机械扰动，而是 which-way 信息是否被稳健地记录进 atom-photon entanglement**。
+
+MIT 的 `idealized double-slit` 变体使用 ultracold atoms 充当最小“狭缝”，让单光子从单原子波包上散射，并比较 trapped 与 free-space 两种情形。更稳的结论不是“光终于被证明既是波又是粒子”，而是：当原子位置更 `fuzzy`、更容易记录 recoil / path 相关信息时，干涉可见度就下降；而 trap 本身、`Mossbauer-like` recoilless 条件、sideband 频率差，乃至“弹簧”式支架并不是本题的本质。
+
+对 SRT 来说，更重要的是一个更具体的 **`which-way fuzziness window`**：双缝中消失的不是“波性”，而是当 \(\hat{G}_\theta\) 的测量链条把路径差异锚定为稳定可读的 \(L_1\) 事实后，原先仍留在 \(L_0\) 的路径叠加空间不再能作为统一候选被投影成高可见度干涉条纹。也就是说，**互补性更像“事实化预算”的分配问题，而不是粒子/波两种本性轮流现身**。
+
+保留边界：这项结果加固的是 complementarity 的理想化实验实现与 which-way 记录机制，不是宣布所有量子解释之争已经终结；它尤其不单独裁决 QBism、Everett、RQM 或 Bohm 路线谁胜出，只是把“路径信息一旦稳健可得，条纹必受损”这条经验约束压得更干净。
 
 ---
 
@@ -339,20 +350,36 @@ $$ \text{Quantum Evolution} \propto L_0 \text{ degrees of freedom between select
 
 ### Corollary I [C2.1.1]: Measurement as Operator Sharpening
 
-**Fourier Perspective Correction**: Heisenberg uncertainty $\Delta x \Delta p \geq \hbar/2$ is not merely precision limitation—it is **ontological bandwidth constraint**.
+> **[R]** Heisenberg不确定性原理的数学基础：Heisenberg 1927 *Zeitschrift für Physik*（原始矩阵力学不确定关系）；Kennard 1927 *Zeitschrift für Physik*（Δx·Δp≥ℏ/2的严格Fourier推导，将不等式接驳函数的时频互补性）；Robertson 1929 *Physical Review*（推广至任意不对易算子对）。**[H-高承诺]** 将不确定性重描为"本体论带宽约束"（而非标准的认识论精度限制），并将 x↔L₁时域/p↔L₀频域的映射作为SRT量子接驳的核心类比，为本框架新增贡献。注：此重描与哥本哈根诠释（认识论限制）和关系量子力学（关系属性，Rovelli 1996）均有实质差异，是[H-高承诺]本体论主张。
 
-- **Position ($x$)** = Time-domain / $L_1$ event (Event-like)
-- **Momentum ($p$)** = Frequency-domain / $L_0$ structure (Wave-like)
+**Fourier Perspective Correction**: Heisenberg uncertainty $\Delta x \Delta p \geq \hbar/2$ is not merely precision limitation—it is **ontological bandwidth constraint** [H-高承诺].
+
+- **Position ($x$)** = Time-domain / $L_1$ event (Event-like; sharp localization = L₀→L₁ collapse)
+- **Momentum ($p$)** = Frequency-domain / $L_0$ structure (Wave-like; frequency content = L₀ superposition)
 
 When you try to completely "nail down" a particle at a point in $L_1$ ($\Delta x \to 0$), you force $\hat{G}$ to superpose all frequency components in $L_0$ ($\Delta p \to \infty$).
 
-**Conclusion**: Particle-nature is not matter's intrinsic property—it is the result of **extreme Fourier transformation** we impose on $L_0$.
+> **类比精度说明**：x↔L₁/p↔L₀的映射是**结构类比**而非严格同构——Kennard 1927的Fourier推导是数学事实（R），但将其解读为"L₀频域结构"是SRT新增的本体论解释层（H）。具体精度边界：(1) Fourier不确定性在数学上严格成立于任意共轭变量对；(2) SRT的L₀-L₁映射增加了"选择算子施加方向性"的本体论内容，这不包含在原始量子力学形式体系中；(3) 此类比无法直接推导L₀的其他性质，属于启发性框架联结。
+
+**Conclusion**: Particle-nature is not matter's intrinsic property—it is the result of **extreme Fourier transformation** we impose on $L_0$ [H-高承诺：此结论在SRT框架内成立，但不能直接等同于量子力学的正统诠释]。
+
+> **IC-C211-1**（形而上学一致性要求）：若接受"粒子性是极端Fourier变换施加于L₀的结果"[H]，则SRT框架需与以下一致：(i) 在Ĝ_θ未施加前，L₀中不存在"粒子"这一实体（与[H-高承诺]的L₀无时空属性一致）；(ii) 粒子性作为L₁属性，其"出现"不能早于Ĝ_θ的选择操作——若SRT其他位置存在"L₀中的粒子自发相互作用"类表述，则需修订为算子介导的描述。
 
 ### Corollary II [C2.1.2]: $L_0$ Has No Time, No Space
 
 $$ L_0 : \text{Possibility Space} \neq \text{Objects in Spacetime} $$
 
 Time and space are $L_1$/$L_2$ properties. $L_0$ itself is non-local, non-temporal.
+
+> [R→Wheeler & DeWitt 1967（Wheeler-DeWitt方程：宇宙波函数无时间参数；"时间问题"在量子引力中的起源）; Barbour 1999 *The End of Time*（时间作为涌现幻象的物理论证）; Rovelli 2004 *Quantum Gravity*（关系量子引力：时间非基础属性，从关系中涌现）; Verlinde 2011 *JHEP*（引力和时空作为熵力学涌现现象）]
+
+* **R/H 区分**：
+  - [R] 时空作为涌现属性的量子引力框架（Wheeler-DeWitt/Barbour/Rovelli）——与此推论有结构类比
+  - [H-高承诺] **SRT主张**："时间和空间是L₁/L₂属性，L₀本身非时空"——这是SRT最核心的形而上学承诺之一。与量子引力"时间涌现"框架的类比是启发性的，但L₀的SRT定义与量子引力无时间问题并非严格等同，需避免过度类比
+
+* **理论一致性要求**（此类高承诺本体论主张的最低自洽条件）：
+  - IC-L0Time-1：若L₀无时间性，则SRT框架中所有出现"L₀中的演化/路径/因果"的表述均需重新解释为"选择者（具身算子）的时间视角施加于L₀"——若存在L₀内部时序主张则此推论内部矛盾
+  - IC-L0Time-2：若时空是L₁属性，则在L₁被选择之前（即Ĝ_θ未运作的极限），不应存在任何时空语言描述——此一致性要求排除"L₀中的量子涨落发生在某时刻"等说法
 
 ### Corollary III [C2.1.3]: Quantum-Classical Boundary = $L_2$ Stability Threshold
 
@@ -418,3 +445,9 @@ Wheeler's intuition confirmed: Observers are not passive recorders but co-creato
 | $D_p$ | Degree of Participancy | Ax-Quant-7 [A1.3.2] |
 | $P_{history}$ | History Plasticity | Ax-Quant-7 [A1.3.2] |
 | $\hat{G}_{sem}$ | Semantic Selection Operator | Ax-Quant-8 [A1.4.1] |
+
+## 【理论边界/防误用声明】
+
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
+3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。

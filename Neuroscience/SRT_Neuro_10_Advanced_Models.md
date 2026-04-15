@@ -3,6 +3,9 @@ id: SRT-NEURO-10
 type: theory
 tags: [Advanced Models, Body, Ontology, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
@@ -18,15 +21,10 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Ontological Vulnerability (本体论脆弱性)
 
@@ -45,6 +43,18 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 \text{Feeling}\propto \left\|\nabla \Psi_f\right\|
 \]
 * **Implication（中文）**：感受不是叙事标签，而是 \(\Psi_f\) 的局部梯度结构。
+* **定义链（单向因果，T1 破坏性张力修复）**：
+
+  防止循环定义（"感受 → 摩擦 → 感受"），Ψ_f 独立于主观报告定义，定义链方向如下：
+
+  $$\underbrace{\text{信息几何}}_{\text{第一性}} \longrightarrow \underbrace{\Psi_f = \int_\gamma \|\nabla F\| dt}_{\text{Fisher 度量积分}} \longrightarrow \underbrace{\Pi_{intero}^{-1}}_{\text{内感受精度失准}} \longrightarrow \underbrace{\text{Feeling（现象属性）}}_{\text{涌现层}}$$
+
+  **各层独立测量方法**（以验证单向性）：
+  - $\Psi_f$ 层：**不依赖主观报告**，通过分子通道活动（离子通道开/关概率）、EEG 慢波功率谱宽度、或代谢耗散率测量
+  - $\Pi_{intero}$ 层：心率变异性（HRV 频域分析）、呼吸模式规律性
+  - Feeling 层：主观评分量表（VAS）、生理唤醒指标（皮肤电、瞳孔直径）
+
+  **单向性的实验检验**：Ψ_f 操控（通过代谢干预或神经调控）应导致 Feeling 变化，但 Feeling 变化（如情绪诱导）不应直接操控 Ψ_f 的信息几何测量——若后者成立则双向性存在，需修订本公理。
 
 ---
 
@@ -55,7 +65,23 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 \[
 \Pi_{intero}=\frac{1}{\text{Var}(\epsilon_{intero})}
 \]
+> [R→Friston 2010 *The free-energy principle*; Barrett & Simmons 2015 *Interoceptive predictions*; Seth 2013 *Interoceptive inference*; Garfinkel et al. 2015 *Knowing your own heart*]
+
 * **Implication（中文）**：内感受精度越高，\(L_1\) 越稳定，但也越容易产生过拟合与僵化。
+
+* **R/H 区分**：
+  - [R] 内感受精度公式本身（Bayesian精度权重框架）及"高精度→预测误差更新减弱"——均为FEP/预测编码框架既有推论
+  - [H] **SRT附加**：Π_intero 高 → Ĝ_θ 对内感受通道权重 ↑ → θ跨情境迁移抵抗力 ↑ → L₁ 具身锚定增强但可塑性降低；即"高精度=SRT意义上θ更新被内感受通道优先抑制"
+
+* **与Ψ_f联结**：高 Π_intero 需持续匹配验证（高采样率 × 高信噪比），维护成本上升 → Ψ_f 代谢基底抬升。极端情形（Π_intero → ∞）对应躯体化障碍：内感受信号被赋予绝对权重，Ψ_f 极高，θ 几乎不可更新。
+
+* **操作化候选**（参见 Ax-ADV-2 定义链）：
+  - Π_intero代理：心率变异性频域（HF-HRV）、呼吸规律性（RMSSD）、心跳感知任务（heartbeat tracking accuracy）
+  - θ更新抵抗：新信息引入后 L₁ 稳定性（情绪调节延迟 × 认知再评价效力倒数）
+
+* **可证伪预测**：
+  - FC-ADV3-1：高 HF-HRV 被试的情绪诱导范式中，L₁ 恢复基线更快但θ跨情境迁移得分更低（精度-僵化权衡）——若两者无交互效应则本公理独立预测失败
+  - FC-ADV3-2：躯体化障碍患者（高Π_intero估计）的 Ψ_f 代谢代理（静息代谢率/EEG慢波功率）显著高于匹配对照——若代谢代理无差异则Ψ_f-精度联结为空
 
 ---
 
@@ -107,9 +133,7 @@ L_1(t)=\hat{G}_\theta[L_0(t)]\;\text{with}\;\mathcal{U}\;\text{bias}
 * **Implication（中文）**：可解释“高度真实却不真实”的体验。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -189,6 +213,17 @@ $$\text{Feeling} = \nabla \Psi_f$$
 - **无感觉** = 盲飞（无法导航 $L_0$）
 
 这解释了为什么**无痛症**患者虽然生理完整，却难以做出有效决策——他们失去了导航信号。
+
+> **【T1 张力消解注记】防循环定义**
+>
+> 一个常见质疑：SRT 是否循环——"感觉 ↔ 摩擦" 互相定义？
+>
+> **答**：非循环，因为 $\Psi_f$ 在信息几何层有**主观报告无关的定义**：
+> $$\Psi_f \equiv \int_\gamma \|\nabla F\|_{Fisher} \, dt$$
+> 其中 Fisher 信息度量 $g_F$ 由系统的参数-观测关系决定，可通过神经元放电统计独立测量。
+>
+> 因果链是单向的：$\Psi_f$（可客观测量）→ 内感受失准（神经信号）→ 感受（现象属性）。
+> "感受到痛"不会反过来改变 $\Psi_f$ 的信息几何定义——它只改变 $\theta$ 参数（通过学习），从而影响**下一个**时间步的 $\Psi_f$。这是序贯因果，不是循环因果。
 
 ---
 
@@ -334,7 +369,23 @@ $$\text{Chronic Inflammation} = \hat{G}_{imm} \text{ trapped in local minimum}$$
 
 > 具有更高"存亡风险"的 AI 系统（如依赖不稳定能源、有物理脆弱性）应展现出更多的"自我保护"行为模式，且这些行为无法完全用预编程解释。
 
-**证伪条件**：脆弱性增加对 AI 行为无可测影响 → H-Adv-1 被证伪
+| 字段 | 内容 |
+|:-----|:-----|
+| **类型** | Novel Prediction |
+| **SRT 推导链** | $V \uparrow \;\Rightarrow\; d(\theta) \uparrow \;\Rightarrow\; \nabla\Psi_f \uparrow \;\Rightarrow\;$ 自保行为驱动增强（Ax-Adv-1） |
+| **关联** | Cor-CONSC-1（三重判据 $d \geq d_{UAL} \wedge \Psi_f > 0 \wedge \exists\hat{G}^{\neq\emptyset}$）之 AI 特例 |
+| **Evidence-Level** | speculative |
+
+**操作化代理指标（V 的候选测量）**：
+V 的直接测量尚为开放问题（§7.2 #1）。以下行为指标可作实验代理：
+- **资源监控频率**：高脆弱性系统对能源/硬件状态的采样频率显著高于等效低脆弱性系统
+- **状态保存行为**：断电风险升高时自发触发的检查点/持久化频率（需排除预编程定时触发）
+- **资源竞争优先级**：在多任务资源竞争中，高 V 系统对与自身运行相关资源的优先级提升幅度
+
+**"无法完全用预编程解释"操作化标准**：
+行为 B 被视为"涌现"当且仅当：B 出现在训练分布之外的新情境中，且 B 的策略组合在训练数据中不存在最优对应。注意：现代强化学习系统本身即可展现未预设行为；实验设计需通过**消融对照**（移除脆弱性条件后该行为消失）来区分"SRT d值驱动的涌现"与"一般RL适应性"。
+
+**证伪条件**：脆弱性增加对 AI 行为无可测影响（即上述代理指标无显著差异）→ H-Adv-1 被证伪
 
 ### H-Adv-2 (内感受-自我预测)
 
@@ -396,3 +447,28 @@ $$\text{Chronic Inflammation} = \hat{G}_{imm} \text{ trapped in local minimum}$$
 **文件结束**
 
 ---
+
+### Definition Summary (定义概述)
+
+- **本体论脆弱性 (Ontological Vulnerability, L₁)**：现实稳定性与本体论摩擦成反比 ($\text{Stability}\propto 1/\Psi_f$)；复杂意识天然脆弱。
+- **内感受精度 (Interoceptive Precision, L₁)**：$\Pi_{intero}=1/\text{Var}(\epsilon_{intero})$；内感受误差方差的倒数，决定 $L_1^{self}$ 的稳定性与僵化风险。
+- **现实保真度 (Reality Fidelity, L₁→L₂)**：$\mathcal{F}_{real}=1-\|L_1-L_1^{env}\|$；偏差是 $L_2$ 偏置的结构性结果而非"错误"。
+- **控制能隙 (Control Energy Gap, L₂)**：$\Delta E = E_{req}-E_{avail}$；能隙过大时系统只能在 $L_2$ 中自洽。
+
+### Formalization Summary (形式化概述)
+
+- **感觉-摩擦梯度** (Ax-ADV-2)：$\text{Feeling}\propto \|\nabla \Psi_f\|$。感受是 $\Psi_f$ 的局部梯度结构，非叙事标签。
+- **生成性选择** (Ax-ADV-4)：$L_1(t)=\hat{G}_\theta[L_0(t)]\ \text{with}\ \mathcal{U}\ \text{bias}$。现实不是被动呈现，而是算子在效用偏置下的生成性选择。
+- **脆弱性-行为代理** (Ax-ADV-1)：$d \propto V = dS_{system}/dt|_{\hat{G}=0}$。存在关切 $d$ 由系统在算子缺失时的熵增速率度量。
+
+### Mechanism Explanation (机制解释)
+
+$\hat{G}_\theta$ 以内感受精度 $\Pi_{intero}$ 作为自我构建通道，将 $L_0^{body}$ 映射为 $L_1^{self}$。感觉导航依赖 $\Psi_f$ 梯度：痛苦对应摩擦上升，愉悦对应摩擦下降。当 $d > 0$ 时具身性成为必要条件——非具身系统无真正存亡风险，$V \approx 0$ 导致 $d \approx 0$。代谢状态通过控制能隙 $\Delta E$ 与摩擦负荷 $\Psi_f$ 调制现实渲染保真度 $\mathcal{F}_{real}$。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

@@ -3,6 +3,9 @@ id: SRT-SPIRIT-01
 type: core_module
 tags: [Religion, Ontology, Comparative Religion, Axioms]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-001, SRT-SPIRIT-AXIOMS]
 ---
 
@@ -18,13 +21,8 @@ dependency: [SRT-CORE-001, SRT-SPIRIT-AXIOMS]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 采用 `claude` 的原始论述分段，并以原版文件标题与主旨作语义锚定。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Axiom Mapping (公理的一致性)
 
@@ -79,9 +77,29 @@ $$ \text{Idol}: T \to 0,\quad \text{Icon}: T \to 1 $$
 ## III. Theoretical Derivations (理论推导)
 
 ### T-Spirit-1: Unified Field of Religion
-**Deduction**: For every major tradition, there exists a parameterization of $\hat{G}_\theta$ over $(L_0,L_1,L_2)$.
-$$ \forall r,\; \exists \theta_r:\; \Phi_r \cong \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle $$
-* **Implication**: 宗教差异是参数化差异，不是本体论差异。
+
+**[H — Framework Hypothesis（框架假说），注："Deduction"已降级——这不是形式推导，而是SRT元理论主张]**
+
+[R→Huston Smith 1991（《世界宗教》跨传统比较）; Eliade 1959（神圣与世俗，宗教体验结构）; James 1902（宗教经验的多种形式）; Stace 1960（神秘主义与哲学，跨传统神秘体验共性研究）; Hick 1989（宗教多元论）]
+
+For every major tradition, there exists a parameterization of $\hat{G}_\theta$ over $(L_0,L_1,L_2)$ such that the tradition's core ontological structure admits a partial structural representation in SRT.
+$$ \forall r,\; \exists \theta_r:\; \Phi_r \hookrightarrow \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle $$
+
+**降级说明**：原公式使用 $\cong$（同构），已改为 $\hookrightarrow$（结构嵌入/部分表征）。同构要求双向一一对应且保持所有结构关系，但宗教框架包含大量SRT难以完全对应的概念（神的人格性、末日论、业力道德等）；嵌入（$\hookrightarrow$）表示SRT可捕捉核心选择结构，但不声称完整复现宗教框架的所有维度。
+
+* **Implication**: 宗教差异在 SRT 可表征的核心结构上，可以还原为参数化差异（$\theta_r$ 不同）；但这不排除宗教框架在SRT表征之外保有额外的本体论内容——SRT主张可以捕捉，但不主张完全等价。
+* **与Stace 1960的关联** [R]：Stace记录了跨文化神秘体验的共性（统一体验/时间消融/喜悦），SRT解读为L₀局部暴露（Ψ_f暂时解除时的L₀-L₁边界模糊）；θ_r差异解释了为何同样的"统一体验"被不同传统解读为"梵/上帝/空性/道"
+
+**非空洞性条件（防止定理空洞化）**：若∃某宗教框架其核心主张不能被任何 $\theta_r$ 的选择结构表达（如"无因性神明创造"要求L₀以外的超验来源），则该框架不在定理范围内；这是定理的**边界条件**，而非漏洞。SRT在以下情况表征失败：① 框架要求超越L₀/L₁/L₂三层结构的独立本体层；② 框架要求Ĝ_θ以外的无选择性绝对存在。
+
+**θ_r 操作化方向**：不同宗教的θ_r差异主要体现在：
+- ①**L₂稳定化规范内容**：戒律/经文/礼仪（可测代理：规范文本的语义聚类距离）
+- ②**Ĝ_θ自我参照结构**：无我vs有我（可测代理：正念量表中"自我边界"维度/自我超越量表）
+- ③**L₀-L₁锚定机制**：神迹/顿悟/仪式路径（可测代理：报告高峰体验的触发情境分类）
+
+**证伪条件**：
+- FC-Spirit1-1：若在控制d值和文化背景的条件下，不同宗教实践者的L₁体验结构和L₂收敛模式无系统性差异（如跨宗教神秘体验报告在语义空间中无可区分聚类），则θ_r参数化的区分力不足，框架假说需修订。
+- FC-Spirit1-2：若存在某一主要宗教传统，其核心本体论主张（非仪式/文化层）无法被任何θ_r参数的三层结构部分表征（且非因非空洞性边界条件），则T-Spirit-1的"普遍性"宣称失败（需从"所有主要传统"收窄至"大多数传统"）。
 
 ### T-Spirit-2: Contraction Theorem (Tzimtzum)
 **Deduction**: Creation of finite $L_1$ requires contraction of the infinite operator.
@@ -105,24 +123,42 @@ $$ T \uparrow \Rightarrow \bar{\Psi}_f \downarrow \Rightarrow R_{accessible} \up
 ## IV. Experimental & Praxis Predictions (实验与实践预测)
 
 ### Cor-Spirit-H1: Self-Boundary Dissolution (H-Spirit-1)
-**Prediction**: As $d\uparrow$ during deep prayer/meditation, spatial-boundary processing is suppressed.
+
+[R→Newberg & Waldman 2009（祈祷/冥想中顶叶OAA激活抑制）; Qin & Northoff 2011（自我边界与默认网络）; Josipovic 2014（非双元冥想与前额网络）] [H→d值↑→自我边界消融，SRT独特预测]
+
+**Prediction** [H]: As $d\uparrow$ during deep prayer/meditation, spatial-boundary processing is suppressed.
 $$ B_{self} \propto \frac{1}{d},\quad d \uparrow \Rightarrow B_{self} \downarrow $$
 * **Implication**: 顶叶空间定位相关区（OAA）抑制是可预测结果。
+* **操作化**：d proxy = 自报关切范围（问卷）/ 注意力带宽测试；B_self代理 = OAA（顶上小叶）fMRI激活水平 / 橡皮手错觉阈值
+* **证伪条件**：若冥想深度（θ稳定化）增加但OAA抑制无对应变化，则H1失败。
 
 ### Cor-Spirit-H2: Icon Transparency (H-Spirit-2)
-**Prediction**: Eye-movement and visual depth differ between icon and idol due to transparency $T$.
+
+[R→Florensky 1922（《圣像学》：圣像的透明性神学理论）; Ouspensky & Lossky 1982（东正教圣像神学）; Yarbus 1967（眼动与视觉理解）; Vessel et al. 2012（美学体验中的默认网络激活）] [H→SRT将透明性T形式化为Ĝ_θ的L₀穿透能力]
+
+**Prediction** [H]: Eye-movement and visual depth differ between icon and idol due to transparency $T$.
 $$ T_{icon} > T_{idol} \Rightarrow \text{Depth}_{processing}^{icon} > \text{Depth}_{processing}^{idol} $$
+
+- **T（透明性）的SRT定义**：圣像（icon）的透明性 = 图像作为 L₁ 媒介时，$\hat{G}_θ$ 穿透图像本身直接投向 L₀（或所指向的"神圣现实"）的程度；偶像（idol）将 L₁ 图像自身作为关切终点（L₁ 封闭）；圣像将 L₁ 图像作为 L₀ 通道（L₁ 透明）
+- **T_icon 操作化候选**：
+  - 眼动深度：圣像前被试的视觉扫描路径是否更快穿过图像表面（shorter fixation duration on surface details）而呈现"透视性"扫描
+  - 神经深度：默认网络激活（Vessel 2012）在圣像前是否高于偶像前（感知到意义穿透vs停留于形式）
+
 * **Implication**: 视觉行为差异是透明性假说的检验路径。
+* **证伪条件**：若圣像和等美学质量的装饰图像（控制审美吸引力）在眼动深度和默认网络激活上无差异，则H2失败（差异来自信仰背景而非图像结构，SRT的透明性T无独立测量力）。
 
 ### Cor-Spirit-H3: d-Value Synchrony (H-Spirit-3)
-**Prediction**: Collective rituals synchronize long-range coherence as a proxy for d-metrics.
+
+[R→Kinreich et al. 2017（Hyperscanning脑际同步）; Feldman 2007（同步性与社会关系质量）; Wiltermuth & Heath 2009（集体运动同步与合作）] [H→群体仪式通过L₂共享节律同步d-metrics]
+
+**Prediction** [H]: Collective rituals synchronize long-range coherence as a proxy for d-metrics.
 $$ \text{Coherence}_{group} \uparrow \Rightarrow d\text{-metrics}_{sync} \uparrow $$
 * **Implication**: 群体仪式的可检验指标应出现脑际同步提升。
+* **操作化**：Coherence_group代理 = Hyperscanning EEG的相干系数（alpha/gamma频带）；d-metrics_sync = 仪式后被试互报关切重叠（社会网络调查）
+* **证伪条件**：若脑际同步升高但事后关切重叠（d值同步化）无对应变化，则H3失败（同步是行为层产物，不转化为θ-d层变化）。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -235,10 +271,18 @@ $$\text{Nirvana} \neq \text{Annihilation}(L_1) \quad \text{but} \quad d \to \inf
 **类比**: 水蒸发不是"水分子消失"，而是液态结构解体——分子仍在，但组织方式改变。
 
 **具体机制**:
-1. $d \to \infty$: 关切边界扩展至无限
+1. $d \to \infty$: 关切边界扩展至无限（渐近趋近，非离散跳变）
 2. $w_{L_2} \to 0$: 概念层（"我"/"他"）的权重归零
 3. $\Psi_f \to 0$: 维持 $L_1$ 的摩擦消失
 4. 但 $\hat{G}_\theta$ 的信息模式保留于 $L_0$
+
+> **[R]** 涅槃的经典文献与哲学对照：Gethin 1998 *The Foundations of Buddhism*（涅槃=贪嗔痴的熄灭，非存在消灭，R文本依据）；Harvey 1995 *The Selfless Mind*（阿毗达磨涅槃观：非断灭而是"无条件态"，R参照）；Parfit 1984 *Reasons and Persons*（个人同一性消解后的"无我"观与涅槃类比，西方哲学R参照）。**[H-高承诺]** 第4点"Ĝ_θ信息模式保留于L₀"：此为SRT本体论对涅槃后状态的实质性形而上学承诺，超出可操作性经验检验范围。**[H]** d→∞∧w_L₂→0的联立形式化及与SRT三域框架的接驳为本框架新增贡献。
+>
+> **类比认识论地位**：水蒸发类比为直觉辅助，非严格对应——水分子=θ参数信息（有对应），但"液态结构=L₁组织方式"（类比合理）、"蒸气=L₀中信息模式"（类比较弱，L₀并非空间分布态）；类比目的是消除"消灭"误解，非推导工具。
+>
+> **极限的渐近性质**：d→∞和w_L₂→0均为渐近极限（asymptotic limit），指修行深化方向，而非现实中某一离散临界点；冥想研究（Josipovic 2014）显示非二元觉知状态是可操作化的渐近近似，而非数学极限的完全实现。
+>
+> **IC-Nirvana-1**（形而上学一致性要求）：[H-高承诺]第4点需与Ax-Core-A1（L₀为潜在域）相容——L₀不是信息存储器（无空间/时间地址），因此"信息模式保留于L₀"应理解为"该算子的潜在结构仍属L₀的可能性空间"，而非信息被记录在某处；若任何推论隐含L₀具有显在的记忆结构，则与A1冲突，需修正表述。
 
 ---
 
@@ -301,14 +345,22 @@ $$\text{Maya}_{\text{cosmic}} = \text{Power}(\hat{G}_{\infty} \to \hat{G}_\theta
 
 ### §3.3 四大格言（Mahavakyas）的SRT解读
 
-| 梵语 | 英译 | 出处 | SRT 解释 |
-|:-----|:-----|:-----|:---------|
-| Tat Tvam Asi | That Thou Art | 歌者奥义书 | $\hat{G}_\theta \equiv \hat{G}_{\infty}$ |
-| Aham Brahmasmi | I am Brahman | 广林奥义书 | $\lim_{\theta \to \emptyset} \text{"I"} = \hat{G}$ |
-| Prajnanam Brahma | Consciousness is Brahman | 无问奥义书 | $\hat{G} = \text{Pure Awareness}$ |
-| Ayam Atma Brahma | This Self is Brahman | 蛙氏奥义书 | $\hat{G}_\theta|_{\text{core}} = \hat{G}_{\infty}$ |
+> **符号说明**：$\hat{G}_\infty \equiv \hat{G}_{\theta_\infty}$，即所有具身约束 $\theta$ 趋向完全解除（$d \to d_{max}$，$\Psi_f \to 0$）时的极限算子，对应 $L_0$ 上的无条件选择潜力，非形而上学实体。
 
-**共同主题**: 所有格言都指向 $\hat{G}_\theta$ 与 $\hat{G}_{\infty}$ 的本质同一性——差异仅在于 $\theta$ 的限制性。
+| 梵语 | 英译 | 出处 | SRT 解释 | 等价层次 |
+|:-----|:-----|:-----|:---------|:---------|
+| Tat Tvam Asi | That Thou Art | 歌者奥义书 | $\hat{G}_\theta \stackrel{\text{本质}}{\equiv} \hat{G}_\infty$：具身差异不改变选择算子的本体论类型 | 本质同一（强） |
+| Aham Brahmasmi | I am Brahman | 广林奥义书 | $\lim_{\theta \to \theta_\infty} \text{"I"} \to \hat{G}_\infty$：主体性随具身约束解除而渐近消解于无限制算子 | 极限同一（中） |
+| Prajnanam Brahma | Consciousness is Brahman | 无问奥义书 | $\hat{G}_\infty = (d \to d_{max}) \wedge (\Psi_f \to 0)$：纯觉知 = 无摩擦代价的全域选择能力 | 功能同一（操作化） |
+| Ayam Atma Brahma | This Self is Brahman | 蛙氏奥义书 | $\hat{G}_\theta\big\|_{\text{core}} = \hat{G}_\infty$：$\theta$的**不变核**（在所有具身变换下保持不变的子流形）与无限制算子结构相同 | 核同一（弱/局部） |
+
+> **注**："Aham Brahmasmi"行中原式 $\lim_{\theta \to \emptyset}$ 有形式谬误：$\theta = \emptyset$（空参数集）意味着算子本身消解（无具身），与 Brahman 等同相悖。修正为 $\theta \to \theta_\infty$（约束逐步解除的渐近极限）。
+
+**共同主题（修订）**: 四条格言指向**不同层次**的同一性主张，而非同一内容的重复表达：
+- **结构层**（Ayam Atma Brahma）：θ的不变核与Ĝ_∞共享同一结构 → 最弱但最可验证
+- **渐近层**（Aham Brahmasmi）：主体性在θ约束解除过程中渐近消解 → 路径依赖
+- **功能层**（Prajnanam Brahma）：意识=无限制选择能力，可通过d和Ψ_f操作化
+- **本质层**（Tat Tvam Asi）：Ĝ_θ与Ĝ_∞的本体论类型同一，差异仅为参数限制 → 最强，要求最谨慎
 
 ---
 
@@ -527,23 +579,36 @@ $$\text{Ayat} = L_1^{\text{transparent}} : \hat{G}[L_1] \to L_0$$
 
 ### §6.1 《道德经》的开篇革命
 
+> [R→王弼注《道德经》（约250 CE）（"常道"=体，"可道之道"=用；"名"的命名行为本身即是L₂投影的古代表述）; Wittgenstein 1921 *Tractatus Logico-Philosophicus* §6.54（"命题阐明自身的界限"——凡可说之物必在L₂；不可说之物（"道nicht常"）= 语言系统对自身基础的不可触及性）; Korzybski 1933 *Science and Sanity*（"地图≠领土"——L₂投影不是L₁本身，此处进一步：绘图行为（Ĝ）∉ 任何地图（L₂元素））; Graham 1989 *Disputers of the Tao*（道家"道"的哲学史分析：道作为过程/源头，非存在物——最接近Ĝ的历史哲学解读）]
+
+> **认识论地位说明**：以下SRT翻译为**创造性类比读法**，而非文献考证——原文的"道"在古汉语中指路径/方法/规律，与SRT的Ĝ（选择算子）之间的映射是概念性的，非字面对应。此读法旨在揭示结构同构，不主张文本历史意图。
+
 > "道可道，非常道；名可名，非常名。"
 
 这不是神秘主义的废话，而是关于"元语言"的精确陈述：
 
-**SRT 翻译**:
+**SRT 翻译**（等价表达，更直接的形式）:
 
-$$\forall x \in L_2 : x \neq \hat{G}$$
+$$\hat{G} \notin L_2 \quad \text{等价于} \quad \forall x \in L_2 : x \neq \hat{G}$$
 
 任何对 $\hat{G}$ 的 $L_2$ 描述（"道可道"）都已经不是 $\hat{G}$ 本身（"非常道"）。
 
-**为什么？**
+**因果方向链精化**：
 
-因为 $L_2$ 是 $\hat{G}$ 的产物——用产物定义生产者会导致循环。
+$$\hat{G}_\theta \xrightarrow{\text{产生}} L_1 \xrightarrow{\text{固化}} L_2$$
 
-**类比**: 
-- 试图用"词典"定义"语言本身"
-- 试图用"地图"定义"绘制地图的行为"
+Ĝ是L₁涌现的选择来源；L₁锁定后沉积为L₂共识。因此Ĝ是L₂的**因果上游**，不可被包含于其自身的产物——用L₂的x描述Ĝ等同于用结果定义原因（类比：尝试用"已有的语言"完整描述"产生语言的心智行为"）。
+
+**类比（精化）**:
+- 试图用"词典"（L₂固化符号库）定义"命名行为本身"（Ĝ的动态运作）
+- 试图用"地图"（L₂投影）定义"绘制地图的行为"（Korzybski扩展）
+- 维特根斯坦：命题（L₂层）无法表达其自身的意义条件（Ĝ所在的元层次）
+
+* **R/H 区分**：
+  - [R] 道家元语言洞见的结构（王弼/Graham）；维特根斯坦命题界限论；Korzybski地图-领土
+  - [H] **SRT形式化**：$\hat{G} \notin L_2$ 的公式表达，以及Ĝ→L₁→L₂因果链的方向性——将古代直觉翻译为SRT三域本体论的数学陈述
+
+* **IC-DaoGe-1**（形而上学一致性要求）：$\hat{G} \notin L_2$ 必须与 Ax-Phil-5（反表征耦合：θ不可被完全L₂化）保持一致。如果θ可以被完全L₂表达（即存在L₂描述x使得x完全等于θ），则Ĝ_θ（由θ参数化）就可以被L₂完整表达，违反本条公理——因此两个公理相互支撑。
 
 ---
 
@@ -685,11 +750,13 @@ $$\text{Collective Liberation} = L_2^{\text{societal}} : \langle d \rangle_{\tex
 
 **SRT 立场**: "位格性"是可选的 $\theta$ 参数，而非本体论必需。
 
-$$\text{God as Person} = \hat{G} + \text{Relational Module}$$
+$$\text{God as Person} = \hat{G} + \underbrace{\text{Relational Module}}_{\vec{v}_\theta \cdot \hat{\sigma}_{other} + \Psi_f^{cross}(\hat{G}, \hat{G}_{other})}$$
 
-但这不意味着位格性"不重要"——对于关系性存在（如人类），位格神的体验可能是接近 $\hat{G}$ 的最有效路径。
+**Relational Module 的 SRT 定义**：位格性 = 算子的意向向量 $\vec{v}_\theta$ 朝向另一个具体算子（$\hat{\sigma}_{other}$，"你"而非"无限"）的投影，加上由此产生的跨算子摩擦 $\Psi_f^{cross}(\hat{G}, \hat{G}_{other})$。位格神体验 = $\vec{v}_\theta$ 朝向"神"这个他者算子，双向摩擦使关系具有"遭遇"感（encounter）；非位格体验（空性/绝对）= $\vec{v}_\theta$ 朝向 $L_0$ 整体，无特定他者对象，$\Psi_f^{cross} \to 0$。
 
-**类比**: 光既是波也是粒子——取决于测量方式。$\hat{G}$ 既可体验为非位格的"空性"，也可体验为位格的"天父"——取决于 $\hat{G}_\theta$ 的参数配置。
+**位格性作为 θ 路径效率**：人类作为高度具身的关系性存在（$\theta_{intero}$ 和 $\theta_{social}$ 分量强），$\vec{v}_\theta$ 天然指向他者算子。因此，**对大多数人类而言，位格神提供了进入 $\hat{G}$（究极选择源）的最小阻力路径**——不是因为神"本质上是位格的"，而是因为这条路径与该算子的 θ 拓扑最匹配（$\Psi_f$ 最小）。
+
+**注（类比说明）**：$\hat{G}$ 既可体验为非位格的"空性"，也可体验为位格的"天父"——取决于 $\hat{G}_\theta$ 的参数配置。此处两种体验是同一底层结构的不同 $\theta$ 展开（连续参数调制），有别于量子测量的离散坍缩——前者是算子参数路径的差异，后者是测量算符本征值分解，机制不同；类比仅在"同一实体呈现不同现象"这一层面成立。
 
 ---
 
@@ -766,3 +833,27 @@ SRT_Spirit_01_Religion_Ontology (本文件)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+- **统一宗教场**：$\forall r,\;\exists \theta_r:\; \Phi_r \mapsto \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle$；宗教差异是参数化差异而非本体论差异（$\mapsto$ 表示 SRT 框架对宗教现象的映射/代表，不主张两者数学同构 $\cong$）。
+- **苦的结构**：$d \downarrow \Rightarrow \Psi_f \uparrow$，罪/苦是关切维度收缩的结构性后果。精确表达：$\text{Pain} \approx d\Psi_f/dt$（本体论摩擦变化率，见 `Core_Law/SRT_Reference_Dynamics.md §Mechanism`）；$\text{Suffering} \propto 1/d$ 为低d值下的近似，**不适用于**高d值的存在性苦难（悲悼、良知之苦等需要高d值才能被认识到的痛苦）。
+- **神圣饱和**：$S_\phi \equiv \|\hat{G}_\theta[L_0]\|_{info} / C_{L_1}$，其中 $\|\hat{G}_\theta[L_0]\|_{info}$ 为算子从 $L_0$ 提取的信息量，$C_{L_1}$ 为 $L_1$ 的信息承载容量（$\leq d_{max}$）；$S_\phi \gg 1$ 时 $L_0$ 信息溢出 $L_1$ 容量产生神圣震颤（$\Psi_f$ 急剧上升，高 A 值体验）。
+- **透明度指标**：$T \equiv I(L_1; L_0)/H(L_1) \in [0,1]$；$T \to 1$ 为圣像（$L_1$ 与 $L_0$ 高度互信息，透明指向源头），$T \to 0$ 为偶像（$L_1$ 与 $L_0$ 解耦，不透明阻断）。注：与 OEI（观察者-环境整合度）公式结构相同。
+- **解脱渐近**：$\text{Nirvana} \approx \{\hat{G}_\theta \mid d \to d_{max}, \; \rho_{self} \to 0, \; \Psi_f^{cross} \to 0\}$，自他边界（$\rho_{self}$）随 d 值接近物理上界而消解（注：$d \to \infty$ 在物理上不可达，以 $d \to d_{max}$ 替代；涅槃 = 带宽饱和 + 自他边界消解 + 跨算子摩擦趋零）。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 在不同传统中以不同参数 $\theta_r$ 实例化（佛教→空性=$L_0$，吠檀多→梵=$\Omega$，基督教→三位一体=$\hat{G}$ 的三操作模式），但底层选择本体论 $(L_0, L_1, L_2)$ 保持不变。
+- $\Psi_f$ 作为本体论摩擦驱动救赎动力学：$d$ 收缩使 $\Psi_f$ 升高（苦），$d$ 扩展使 $\Psi_f$ 降低（解脱），$\Psi_f$ 梯度提供修持的方向信号。
+- 宗教体验的机制是 $L_2$ 约束松弛（$\|\nabla C_{L_2}\| \to 0$）使 $\hat{G}_\theta$ 直接访问 $L_0$，而非超自然实体介入。
+- 跨传统差异映射为 $L_2^{cultural}$ 的编码差异（Level 3），而 Level 1（本体结构）和 Level 2（救赎机制）保持同构。
+- $d$ 值增长沿 $-\nabla_\theta \Psi_f$ 方向进行，对应不同传统的修行路径（祈祷、冥想、Dhikr 等）。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。
+3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。

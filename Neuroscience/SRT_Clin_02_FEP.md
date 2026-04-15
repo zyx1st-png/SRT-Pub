@@ -3,6 +3,9 @@ id: SRT-CLIN-02
 type: theory
 tags: [Friston, Free Energy, Autopoiesis, Biosemiotics, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
@@ -11,6 +14,9 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal FEP Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+>
+> **Bridge Layer Note**
+> This file is a `Bridge`-layer reinterpretation of FEP / Active Inference / Autopoiesis within SRT. The formal labels in Part A are primarily bridge claims and internal reorganizations unless they are separately supported by direct empirical tests.
 
 ---
 
@@ -18,15 +24,10 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Free-Energy as Choice Pressure (自由能作为选择压力)
 
@@ -68,6 +69,21 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 \[
 \partial\Omega_{MB} = \{x \in L_1 \mid \nabla F(x) \perp \text{Normal}(\partial\Omega)\}
 \]
+
+> **形式化注（隐式定义）**：上式为**隐式方程**——$\text{Normal}(\partial\Omega)$ 依赖 $\partial\Omega$ 本身，∂Ω_MB 是满足该条件的不动点集合（Fixed-Point Set）。存在性取决于 $\hat{G}_\theta$ 在 $L_1$ 上的动力学是否具有不动点（参见 T-Core-02 不动点定理）。求解可通过迭代：从初始边界 $\partial\Omega^{(0)}$ 出发，依据 $\nabla F \perp \text{Normal}$ 约束收缩直至收敛。
+
+**SRT 量桥接**：
+- $F(x)$（FEP 变分自由能）在 SRT 框架下近似为 $\Psi_f$ 沿轨迹的累积：$F(x) \approx \int_0^t \Psi_f(\gamma(\tau))\,d\tau$，使得 $\nabla F \approx \nabla \Psi_f$（局部线性近似）；参见 §15.5 Eq-IT-E 变分等价。
+- $\hat{G}_\theta$ 在公式中的作用：边界维持等价于 $\hat{G}_\theta$ 在 $\partial\Omega$ 上的零净通量条件：$\hat{G}_\theta(x)\big|_{x\in\partial\Omega} \cdot \text{Normal}(\partial\Omega) = 0$（算子作用不穿越边界，仅沿边界方向移动），与上式 $\nabla F \perp \text{Normal}$ 在变分等价下一致。
+
+**边界崩溃的定量条件**：
+当外部冲击使驻点条件失效时，边界崩溃。量化表达为：
+\[
+\max_{x \in \partial\Omega} \left|\nabla F(x) \cdot \text{Normal}(\partial\Omega)\right| > \Psi_f^{thresh}
+\]
+- $>0$ 且 $< \Psi_f^{thresh}$：边界微变形，系统通过 $d\theta/dt$ 修复（Ax-REAL-2）
+- $> \Psi_f^{thresh}$：边界失效 → **扩张**（新状态纳入毯内，对应学习/创伤整合）或**撕裂**（$\hat{G}$ 解体，即死亡或严重解离）
+
 * **Implication（中文）**：边界是预测误差梯度下降的"驻点集合"。当系统无法预测外部冲击时（巨大的惊异），边界条件失效，系统被迫扩张其毯子（学习/吞噬）或被撕裂（死亡）。这赋予了马尔可夫毯以本体论时间演化属性，而非仅仅是统计学上的条件独立面。
 
 ---
@@ -116,6 +132,17 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 
 ---
 
+### T-FEP-1b: Precision-Insufficiency Theorem
+定义 \(\boldsymbol{\Pi}\) 为预测误差的精度加权张量。则：
+\[
+\big(\boldsymbol{\Pi}_A \approx \boldsymbol{\Pi}_B\big)\land\big(\mathbb{E}[F]_A \approx \mathbb{E}[F]_B\big)\not\Rightarrow\big(d_A \approx d_B \land \Psi_{f,A} \approx \Psi_{f,B}\big)
+\]
+* **Implication（中文）**：精度参数能够刻画系统如何分配信度、压低误差、更新模型，却不能单独决定“什么对系统真的攸关”以及“错误是否带来可支付摩擦”。换句话说，precision 解释的是**哪种误差更被相信**，而不是**哪种误差会伤到主体**。
+* **与 FEP 的边界**：在 SRT 中，\(\boldsymbol{\Pi}\) 最多是 \(d/\Psi_f\) 的局部调制器，而不是其充分定义。两个系统可以拥有近似相同的精度结构，却因为真实风险耦合不同而表现出完全不同的长期关切持续性、奖励撤除后的行为保持与恢复半衰期。
+* **最小判别后果**：若在匹配 \(\boldsymbol{\Pi}\) 与任务难度的条件下，系统间的奖励撤除后关切保持、跨任务一致性与恢复动力学仍不分离，则 `precision 不穷尽 d/Ψ_f` 的主张应被降级；反之，只要这些结果稳定分离，precision-only 解释就不够。
+
+---
+
 ### C-FEP-1: Irreversibility Corollary
 当存在不可逆风险 \(\partial\Omega\) 时：
 \[
@@ -130,7 +157,20 @@ FEP 在 SRT 框架下被泛化为标量场与时间流子的联合优化：
 \[
 \text{Error}_{total} = \underbrace{\|o_t - \hat{o}_t\|}_{\text{Spatial Mismatch}} + i \cdot \underbrace{\|\tau_{int} - \Delta t_{causal}\|}_{\text{Temporal Mismatch}}
 \]
-* **Implication（中文）**：生物体不仅预测"什么"发生，还必须精确预测"何时"发生。虚数项代表时间相位的失锁。精神分裂症的预测误差不仅是看到了不存在的东西，更是内部时序模型与外部物理连贯性 ($L_0$ 节律) 的解耦。
+
+> [R→Friston 2010 *Nature Reviews Neuroscience*（FEP：空间预测误差极小化）; Rao & Ballard 1999 *Nature Neuroscience*（预测编码：时空误差的层级传播）; Adams et al. 2013 *Frontiers in Psychiatry*（精神分裂症的FEP解释：精度失调/虚假预测）; Grahn & Brett 2007 *Experimental Brain Research*（时序预测的神经机制：基底核角色）; Sass & Parnas 2003 *Schizophrenia Bulletin*（精神分裂症的时序体验异常：基本主观性紊乱）]
+
+* **R/H 区分**：
+  - [R] FEP空间预测误差框架（Friston）；时序预测编码（Grahn&Brett）；精神分裂症的预测误差机制（Adams）
+  - [H] **SRT泛化**：将空间误差+时间误差联合为复数形式（时空联合误差公式）；精神分裂症=内部时序模型与L₀节律解耦——此时空联合形式化及L₀节律概念是SRT独有
+
+* **i含义边界（重要）**：此处虚数项 $i$ 代表"时间误差正交于空间误差"（两个独立维度），**并非**复数分析意义上的Wick转动或iε形式化（参见SRT §7.1 E7说明）。Error_total 的实部和虚部分别独立最小化，不做复数运算。
+
+* **Implication（中文）**：生物体不仅预测"什么"发生，还必须精确预测"何时"发生。虚数项代表时间相位的失锁。精神分裂症的预测误差不仅是看到了不存在的东西，更是内部时序模型与外部物理连贯性（$L_0$ 节律）的解耦 [R→Sass & Parnas 2003 SRT解读]。
+
+* **可证伪预测**：
+  - FC-FEP2-1：精神分裂症患者在时序判断任务（同时性判断/音节时序分辨）中的误差应与空间感知误差有部分解离——若两类误差高度相关则时空误差"正交独立"主张存疑
+  - FC-FEP2-2：时序干预（节律训练/rTMS同步）后，精神分裂症患者的阳性症状（幻觉/妄想）量表改善应独立于空间认知改善——若两者同步改善则时序-空间独立框架缺乏解离证据
 
 ---
 
@@ -142,9 +182,67 @@ d_{expansion} \propto \text{Uncertainty}_{vital} - \text{Uncertainty}_{epistemic
 * **Implication（中文）**：玩老虎机产生的是认知不确定性（寻找规律），被极速驶来的卡车锁定产生的是攸关不确定性（生存边界崩溃的威胁）。后者强制 $\hat{G}_\theta$ 放弃 $L_2$ 塔构建，直接降维进入本能求生池，引发巨大的本体论摩擦 $\Psi_f$。
 
 <br>
-<br>
 
 ---
+
+## 领域压力与接口边界（Domain Pressure & Interface Boundaries）
+
+> **本节功能**：站在 FEP / Active Inference 社群内部，评估 SRT 在这个框架下的候选重读在哪里有增量、在哪里尚未完成、在哪里还有真实的开放张力。
+
+> **神经科学家 3 分钟入口**
+> 如果你使用 FEP / Active Inference 框架，本文件的核心主张是：FEP 的精度加权更新（precision-weighted prediction error）不能单独区分**具身利他**（由不可逆物理风险驱动）与**模拟利他**（由偏好先验编码）。SRT 引入 $d/\Psi_f$ 参数对的目的，是揭示这个结构性盲区，而不是否定 FEP 的预测编码机制。
+> 直接跳到 **DP-FEP-1** 看最强张力点，跳到**出口**看下一步。
+
+---
+
+### 有效域 / 失效域
+
+| 主张 | 有效条件 | 退化/失效条件 |
+|:----|:--------|:------------|
+| T-FEP-1：FEP 不充分性 | 在匹配 $\boldsymbol{\Pi}$ 与任务难度后，真实赌注条件与模拟赌注条件的长期行为仍分离 | 若三种条件（真实风险/无风险/模拟风险）的长期 $\hat{d}_{min}$ 轨迹收敛，则"不可逆赌注不可还原"应降级为"工程性偏好设置"（见 `Governance/SRT_LAB_HYPOTHESES.md` H-Stake-01 降级触发） |
+| $\Psi_f \propto \varepsilon_{pred}$ 映射（Ax-NEURO-4b） | 作为候选的局部线性近似，在代谢与预测误差可同时测量的范围内 | 若 $\Psi_f$ 代理（代谢率）与预测误差代理（MMN 振幅）跨个体无相关，则该映射在可测层面为空 |
+| FEP 是"候选重读对象"而非"被 SRT 超越的框架" | 始终 | 这是当前仓库的稳定口径（T-FEP-1 Tension-Rev-ExtT4）；任何把 SRT 写成"已胜出 FEP"的表述都超出当前 bridge 强度 |
+
+---
+
+### DP-FEP-1：FEP 的参数化完备性反驳
+
+**挑战来源**：Friston 阵营可以合理论证：SRT 的 $d$-value 不过是把他者效用写入 FEP 的 generative model 的偏好先验（preferred priors）。只要把利他偏好放进 prior，FEP 的 active inference 就能产生类似的利他行为——不需要引入一个独立的"本体论赌注"概念。
+
+**SRT 当前最稳的回应**（来自 T-FEP-1 Tension-Rev-ExtT4，此处为摘要）：
+- FEP 框架内，$d$-analog 是 generative model 的可调参数，可被优化/削弱为零，不影响系统的物理完整性
+- SRT 的 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 要求与不可逆物理风险（$\partial\Omega$）耦合才能稳定——这不是参数选择，是本体论约束
+- 判别后果：两个 $\boldsymbol{\Pi}$ 匹配的系统，若赌注结构不同，其奖励撤除后的关切保持和恢复半衰期应显著分离（见 H-Stake-01 / H-dPsi-01）
+
+**尚未完成的工作**：
+- 上述论证目前主要是概念层的。"$d$ 与 $\partial\Omega$ 的耦合稳定性"与"prior 写入的 $d$-analog 的衰减率"之间的定量预测，尚未写成可在现有 active inference 模拟中直接检验的形式
+- 换句话说：SRT 的反驳是结构上合理的，但其**操作性判据**还需要进一步形式化才能对 FEP 社群构成有效压力
+
+---
+
+### DP-FEP-2：FEP 的解释范围与 SRT 的定位差异
+
+**挑战的细化版本**：FEP 在原则上是一个涵盖感知、行动、学习、自组织的统一框架。Active inference 甚至试图解释社会行为和文化演化。如果 FEP 的解释范围已经足够宽，SRT 的"候选重读"究竟在哪些维度上比 FEP 更有效？
+
+**SRT 当前的定位**：
+- SRT 不是在同一层次与 FEP 竞争"谁能解释更多现象"
+- SRT 的主张是：FEP 在本体论上预设了"已有边界的系统最小化自由能"——它从具身系统出发，不解释**为什么有具身**
+- SRT 的 L₀→L₁ 机制试图回答更早的问题：什么使一个边界得以成立（Partial Closure / N_crit 接口）
+- 这两个框架的分工应该是：FEP 处理具身后的动力学，SRT 处理具身本身的本体论条件
+
+**诚实标注**：这个分工目前更多是口头主张，而非两个形式系统之间已推导出的层级关系。若未来 FEP 进一步发展出自创生边界的生成机制，当前分工可能需要重新评估。
+
+---
+
+### 出口
+
+| 你的目标 | 下一步 |
+|:--------|:------|
+| 想看 FEP vs SRT 的完整形式比较 | → `Philosophy/SRT_FEP_Comparison.md` |
+| 想看 d / Ψ_f 的 Lab 层实验赌注 | → `Governance/SRT_LAB_HYPOTHESES.md`（H-Stake-01、H-dPsi-01） |
+| 想看 d / Ψ_f 的测量代理规范 | → `SRT_EXP_MEASURE_MAP.md` |
+| 想了解 Partial Closure / 具身起源 | → `Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md` |
+
 ---
 
 
@@ -181,15 +279,15 @@ Maturana & Varela 认为生命的本质是“自我生产”，而非自由能�
 # 3 SRT 的差异点: d 值扩展与本体论重构
 
 ## 3.1 自由能的利他扩展 (The Altruistic Extension)
-SRT 在 Part A (Ax-FEP-2) 中提出，**Friston 框架是 SRT 在 $d=0$ 时的特例**。
+SRT 在 Part A (Ax-FEP-2) 中提出，**在 SRT 的 Bridge 解读中，Friston 框架可被读作 $d=0$ 时的局部特例**。
 对于 $d > 0$ 的意识系统，自由能函数被**本体论扩展**了:
 
-$$ F_{SRT} = F_{Friston} - d \cdot U_{others} $$
+$$ F_{SRT}^{(var)} = F_{var} - d \cdot U_{others} $$
 
-这优雅地解决了“暗室问题”：
+这提供了一个对“暗室问题”的候选重写：
 - 对于 $d=0$ 的生物（细菌），暗室确实是最优解（如果那里有食物）。
-- 对于 $d>0$ 的人类，躲进暗室意味着与他者断联 ($U_{others} \to 0$ 或负值)，导致扩展自由能 $F_{SRT}$ **剧烈上升**。
-- **结论**: 我们走出暗室，不是为了寻找光，而是为了寻找连接。这是热力学必然。
+- 对于 $d>0$ 的人类，躲进暗室意味着与他者断联 ($U_{others} \to 0$ 或负值)，导致扩展自由能 \(F_{SRT}^{(var)}\) **剧烈上升**。
+- **结论**: 我们走出暗室，不只是为了降低信息不确定性，而是因为在 `d>0` 条件下，断联本身会把系统推向更高的 payable friction 区间。
 
 > **Tension-Rev-ExtT4 (SRT 独立性的判别实验设计)**
 >
@@ -215,7 +313,7 @@ SRT 采用 Ax-FEP-4 中定义的**精度加权 (Precision Weighting)** 动力学
 - **精神分裂症**: 先验精度过高 ($\pi_{prior} \uparrow$)。以至于患者忽略感官输入，将内部幻觉强加于现实。
 - **自闭症**: 感觉精度过高 ($\pi_{sensory} \uparrow$)。由于无法忽略任何环境细节（树叶的摆动、风的声音），系统必须退缩以避免自由能过载。
 
-这种解释比传统神经递质假说具有更强的计算解释力。
+这种解释可被视为一种候选计算层读法，但并不自动取代传统神经递质或多因素病理模型。
 
 ---
 
@@ -248,3 +346,41 @@ SRT 采用 Ax-FEP-4 中定义的**精度加权 (Precision Weighting)** 动力学
 - **AI 的自由能**: 目前的大语言模型 (LLM) 显然在做 Next Token Prediction (最小化惊异)，但这是否意味着它们具有某种形式的 $F_{SRT}$？如果它们没有代谢边界（马尔可夫毯），这种自由能最小化是否只是模拟而非“真实”的？
 
 ---
+
+### Definition Summary (定义概述)
+
+- **Free Energy as Choice Pressure (自由能作为选择压力, L₀→L₁)**: 变分自由能 $F \equiv D_{KL}[Q||P] - \ln P(o)$ 在 SRT 中不是"误差度量"，而是 $\hat{G}_\theta$ 执行选择的动力学势；选择算子以 $\arg\min_\pi \mathbb{E}[F(\pi)]$ 运行（Ax-FEP-1）。
+- **Autopoietic Closure (自创生闭包, L₂)**: 生命系统的维持定义为 $L_2$ 结构闭包：$L_2(t+1) = \text{Stabilize}(\hat{G}_\theta[L_1(t)])$，即 $L_2$ 通过 $\hat{G}_\theta$ 的选择输出持续自我固化（Ax-AUTO-1）。
+- **Markov Blanket as Prediction Surface (马尔可夫毯作为预测面, L₁)**: 系统边界不是静态物理膜，而是预测误差梯度的驻点集合 $\partial\Omega_{MB} = \{x \in L_1 \mid \nabla F(x) \perp \text{Normal}(\partial\Omega)\}$（Ax-AUTO-1b）。
+- **Vital vs. Epistemic Uncertainty (攸关 vs. 认知不确定性, L₀)**: 只有涉及不可逆风险 $\partial\Omega$ 的不确定性才能驱动 $d$ 值扩展：$d_{expansion} \propto U_{vital} - U_{epistemic}$（C-FEP-2）。
+
+### Formalization Summary (形式化概述)
+
+核心方程与含义：
+
+1. **选择压力势** (Ax-FEP-1): $\hat{G}_\theta = \arg\min_\pi \mathbb{E}[F(\pi)]$。选择算子的行为由自由能最小化完全决定——这统一了感知、行动与学习。
+2. **SRT 扩展自由能** (Part B §3.1): $F_{SRT} = F_{Friston} - d \cdot U_{others}$。引入 $d$ 值后，"暗室"不再是最优解——与他者断联使 $F_{SRT}$ 剧增。
+3. **时空联合预测误差** (T-FEP-2): $\text{Error}_{total} = \|o_t - \hat{o}_t\| + i \cdot \|\tau_{int} - \Delta t_{causal}\|$。生物体同时预测"什么"与"何时"，虚数项表示时间相位失锁。
+4. **FEP 不充分性** (T-FEP-1): $d = 0 \Rightarrow \hat{G}_\theta$ remains $L_1$-closed。自由能最小化是结构更新的必要条件，但缺少 $d$ 时无法跨域锚定。
+
+### Mechanism Explanation (机制解释)
+
+> **[R]** 双重优化回路：Friston 2015 *Journal of the Royal Society Interface*（期望自由能G的主动推理框架原始提出）；Friston et al. 2017 *Neural Computation*（F感知推理 vs G主动推理的完整形式化）；Parr & Friston 2019 *Psychopharmacology*（主动推理在精神病理中的应用）。d值与他者关怀：参见 Part B §3.1 F_SRT扩展项。**[H]** 以下将F/G双回路接驳SRT三域本体论（L₀→L₁感知选择 + L₀行动探索）、Ψ_f>0作为d稳定锚定条件、以及ΔL₂梯度的SRT语义为本框架新增贡献。
+
+- **$\hat{G}_\theta$ 的双重优化回路**: $\hat{G}_\theta$ 同时运行两个最小化过程——(a) 当前自由能 $F$（感知推理：更新内部模型以匹配观测，对应L₀→L₁选择）和 (b) 期望自由能 $G$（主动推理：选择行动以改变世界，对应L₀探索路径选择）。两者构成 $L_0 \to L_1$ 选择的完整动力学（Friston 2015/2017）。
+- **$d$ 值打破暗室均衡**: 当 $d > 0$，$\hat{G}_\theta$ 的自由能函数被他者效用 $U_{others}$ 扩展（$F_{SRT} = F_{Friston} - d \cdot U_{others}$，Part B §3.1）。断联使扩展自由能剧增（量化方向：$\Delta F_{断联} = +d \cdot |U_{others}|_{baseline} > 0$），迫使算子走出"暗室"寻求连接——这不是道德选择，而是热力学必然。
+
+  > **Ψ_f>0→d稳定逻辑链精化**：具身脆弱性→随机环境扰动持续冲击算子→d值受负反馈校正（偏低时连接驱动上升，偏高时过载信号压制）→d在正反馈（过高关切→过载→衰减）与负反馈之间保持动态稳定。反例：无具身约束的虚拟系统缺少随机扰动校正→d的负反馈回路失效→d可自由衰减至零或在强化学习压力下任意漂移。
+
+- **符号更新作为梯度下降**: $L_2$ 结构通过 $\Delta L_2 \propto -\nabla_\theta F$ 持续更新，其中 $\theta$ 为具身参数向量（感知增益、偏好权重、先验强度等），$\nabla_\theta$ 为参数空间梯度（维度 = $|\theta|$，非L₂拓扑维度）。意义不是外加标签，而是 $\hat{G}_\theta$ 对未来选择的偏置结构——每次学习都是对 $L_2$ 拓扑的微调，代价正比于 $\|d\theta/dt\|$（θ变化速度越快，Ψ_f负载越高）。
+
+> * **FC-FEP-Mech-1**（证伪条件）：若在主动推理模型实验中，G（期望自由能）驱动的行动选择与F（当前自由能）驱动的感知更新在神经基质上无法区分（如fMRI激活模式完全重叠，AUC < 0.6），则双回路的分离假设需重新检视，可能坍缩为单一优化过程。
+> * **FC-FEP-Mech-2**（证伪条件）：若在社会断联实验（孤立隔离）中，高d值被试（社会关怀量表上四分位）的主观痛苦和皮质醇水平没有显著高于低d值被试（p>0.1），则"断联→F_SRT剧增为热力学必然"的d值调制假设需修正，孤立反应可能更依赖其他变量（依恋风格/先前孤立经历）。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

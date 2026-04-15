@@ -3,6 +3,9 @@ id: SRT-NEURO-07
 type: theory
 tags: [Evolution, Development, Bioelectricity, Cancer, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
@@ -18,15 +21,10 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Bioelectric Software (生物电软件)
 
@@ -46,6 +44,16 @@ L_2^{bioelectric} \supset L_2^{synaptic}
 \]
 * **Implication（中文）**：神经选择受发育选择的上位约束，二者不是平级机制。
 
+### Ax-BIO-2b: Genome-as-Generative-Model Axiom（基因组生成模型公理）
+将基因组视作物种级生成先验，而非微观空间蓝图：
+\[
+\theta_{genome} \in L_2^{species-prior},\quad
+\hat G_{devo}: (L_0^{morpho},\theta_{genome},\theta_{physio})\to L_1^{phenotype}
+\]
+其中 \(\theta_{physio}\) 表示“生理计算层”（bioelectric/biochemical/mechanical）实时状态。
+* **Implication（中文）**：基因型到表型映射并非硬编码展开，而是“先验+在线推断”的主动构型过程，解释发育与再生中的高可塑性与问题求解能力。
+* **Anchor（Levin et al., 2024）**："genome as a generative model"、"physiological computations"、"deep symmetries between evolution and learning"。
+
 ### Ax-BIO-3: Sub-Critical Generativity (亚临界生成性)
 **Formal Definition**: 在胚胎发生或再生等 $L_1$ 拓扑尚未完全固化为刚性 $L_2$ 结构的阶段，系统算子拥有对其形态相空间的亚临界游走能力。
 $$\text{Generativity}_{devo} \propto \frac{1}{\Psi_f(\theta_{morpho})}$$
@@ -55,11 +63,23 @@ $$\text{Generativity}_{devo} \propto \frac{1}{\Psi_f(\theta_{morpho})}$$
 ## II. Evolutionary Logic (演化逻辑)
 
 ### Ax-EVO-1: Unreliable Hardware Law
+
+**[R — Retrodiction：追溯演化生物学冗余理论（Kirschner & Gerhart 2005可演化性；Tononi 2004冗余/整合）]**
+
 在噪声硬件上，选择必须具备冗余与容错：
 \[
 \text{Reliability} \propto \text{Redundancy}(L_2)
 \]
-* **Implication（中文）**：演化偏好可替代与冗余结构，而非“最优单一路径”。
+
+**Redundancy(L₂) 操作化候选**：可替代L₂锚定路径数量 $N_{alt}$（实现相同功能的独立L₂路径数），即单一路径失效后系统仍可收敛到同一稳定态的备用数量。量化候选：$N_{alt} \approx |\{k : A_k \to \text{same functional outcome}\}|$。**注**：$|Aut(L_2)|$（Ax-L2-03）测量结构刚性，与 $N_{alt}$ 方向相反（高刚性→低替代性），两者是不同维度的L₂性质。
+
+**”噪声硬件”的SRT操作化**：噪声硬件 = L₀扰动项 $\epsilon(t)$ 的方差较大（$\sigma_{L_0}^2 \gg 0$）。高 $\sigma_{L_0}^2$ 环境下，系统要维持 Ĝ_θ 的稳定选择，必须依赖高 $N_{alt}$（多个等效L₂路径）——当一条路径被扰动阻断，另一条仍可达到同一L₁锚定。这解释了为什么脑的许多功能有多个并行实现（如多感官整合、双侧运动控制）。
+
+**∝关系说明**：可靠性随 $N_{alt}$ 单调增大（至少在独立失效假设下），但非无限——增加冗余有 Ψ_f^{metabolic}（代谢成本）约束，形成最优冗余度权衡：$N_{alt}^* = \arg\max_{N} [\text{Reliability}(N) - C_{metabolic}(N)]$。
+
+* **Implication（中文）**：演化偏好可替代与冗余结构，而非”最优单一路径”。
+
+**证伪条件**：若在高神经噪声（低信噪比）环境中成功适应的生物，其关键功能的并行实现路径数不高于低噪声环境中的同功能生物，则Reliability∝Redundancy关系的演化预测失效。
 
 ---
 
@@ -114,12 +134,29 @@ L_2^{neural}\subset \mathcal{A}(L_2^{devo})
 
 ---
 
-### C-EVO-1: d-Expansion Corollary
-当社会或生态耦合增强时：
-\[
-\Delta d>0 \Rightarrow \text{New Cognitive Phase}
-\]
-* **Implication（中文）**：群体协作并非“外部因素”，而是 \(d\) 扩容导致的相变。
+### C-EVO-1: d-Expansion Corollary (d 值扩容推论)
+
+当社会或生态环境的耦合密度增强，导致原有 $d$ 值范围内的本体论摩擦（不确定性与协作冲突）积累超过临界阈值时，系统将被迫发生选择边界的相变：
+$$
+\Psi_f\big|_{d < d_c} > \Psi_{crit}
+\quad \Rightarrow \quad
+d \to d_c^+
+\quad \Rightarrow \quad
+\text{New Cognitive Phase}
+$$
+
+**形式化定义（New Cognitive Phase）**：
+“新认知相”表现为算子 $\hat{G}_\theta$ 的可达集 $\mathcal{A}$ 发生拓扑重组，并涌现出更高维度的 $L_2$ 符号系统（如语言、抽象规范、货币）以承载扩大的关切结构。
+
+**机制（Mechanism）**：
+社会耦合增强 $\to$ 个体需应对的未定环境状态激增 $\to$ $\Psi_f$ 在旧有 $d$ 值边界内急剧积累（系统面临崩溃风险） $\to$ 选择压力迫使算子支付算力越过临界点 $d_c$ $\to$ 认知架构重组以”消化”摩擦。
+
+**Implication**：
+群体协作与复杂社会结构并非认知演化的”外部产物”，而是其**动力学触发条件**。社会耦合与神经认知架构之间是基于摩擦驱动的**共同演化（Co-evolution）与相变关系**，而非单向因果。（→ T-Scale-4 张力驱动相变定理，§6.4 社会进步定义）
+
+**【理论边界/防误用声明】**
+1. **反目的论进化**：$d$ 值的扩张不是因为生物”想要”变得更高级，而是为了缓解当前生存维度内不可承受的 $\Psi_{crit}$ 摩擦。演化是”被摩擦逼出的扩容”，而非趋向完美的目的论阶梯。
+2. **退化可能**：该公式是对称的。若社会耦合断裂或环境退化，系统可能通过 $d \to d_c^-$ 的缩容来降低维持成本（参见发散锁死/内卷化动力学）。
 
 ---
 
@@ -150,9 +187,7 @@ a_i \not\cong_{\text{anatomy}} a_j \nRightarrow d(a_i)\neq d(a_j)
 - Suryanarayana SM, et al. *An amniote-like excitatory neuron type in the teleost fish pallium*. Science (2025). DOI: `10.1126/science.ads3049`.
 
 <br>
-<br>
 
----
 ---
 
 
@@ -267,6 +302,40 @@ Michael Levin 实验室的一系列实验为 SRT 提供了关键支持：
 - **结果**：癌细胞可以被"正常化"——恢复正常的细胞行为
 - **SRT 解释**：癌症不仅是基因问题，更是 $\Phi_{\text{coupling}}$ 崩溃问题——恢复电学耦合可以恢复正常 $d$ 值
 
+### 3.2.4 癌症的机械窗口（2026-03-16 patch）
+
+用户提供的细胞力学/超声材料及其一手锚点（Portet et al., *Eur. Biophys. J.* 2005；Samarbakhsh & Tuszynski, *Eur. Biophys. J.* 2011；Singh et al., *Bioengineering & Translational Medicine* 2021；Rietman et al., *Biosystems* 2026）提示：`θ_{physio}` 里的 mechanical 子通道不是一句空话。癌细胞的可干预窗口不只在离子通道和膜电位，也在**细胞骨架张力、阻尼条件、几何形态与细胞周期阶段**。
+
+这里最重要的收紧是：机械选择性更可能来自**状态窗口**，而不是“癌细胞天然对应某个固定共振频率”。特别是在有丝分裂期，纺锤体/微管网络会短暂形成更有序、更刚性的几何结构，使病理细胞比平时更容易被外部机械驱动推离其局部稳定轨道。换言之，超声或其他模式化机械刺激若有效，靶向的更可能是 **mitotic geometry + damping regime**，而不是“癌症本质”本身。
+
+用 SRT 语言说，这意味着癌症与组织级 `L_2^{bioelectric}` 的失耦，不一定只能靠电学重耦合来纠正；在某些窗口下，也可能先通过机械扰动去破坏病理细胞维持当前 `L_1` 轨道的支架，使其进入停滞、凋亡或对后续电学/药物干预更开放的状态。机械通道因此更像一种 **state-selective gating**，而不是独立的“万能频率疗法”。
+
+**边界必须收紧：**
+- 当前证据主要是 in vitro、pilot 或 preclinical 级 proof-of-principle，不足以推出通用临床疗法。
+- 超声效应往往混合了微管/纺锤体机械扰动、Piezo1/钙流、膜通透化、热效应与空化等多条路径，不能简单归因为“纯微管共振”。
+- 选择性更可能来自细胞周期、尺寸、黏附状态、组织力学背景与阻尼条件，而不是“所有癌细胞共享同一机械签名”。
+- `Biosystems` 2026 的 Fibonacci 声学序列仍属探索性假设生成窗口，不能单独升格为治疗原则。
+
+### 3.2.5 单细胞联结学习窗口（2026-03-21 patch）
+
+用户提交的 Veritas / *New Scientist* 二手报道，背后主锚点是 Gershman 团队的 *bioRxiv* 预印本 `Associative learning in the protozoan Stentor coeruleus`（`2026-02-27` posted；doi:`10.1101/2026.02.27.640732`）。这条材料真正值得写入 SRT 的新增量，不是泛泛重复“单细胞也会适应刺激”，而是把无神经系统的生理计算窗口从 **habituation** 往前推了半步：在 `weak tap -> strong tap` 的重复配对后，`Stentor coeruleus` 对弱刺激本身的收缩倾向上升，表现出一个最小的 **cue-prediction / associative-learning** 候选窗口。
+
+若按 SRT 语言收紧，这意味着 `\theta_{physio}` 不只承载稳态维持或形态目标，也可能在纯细胞尺度上暂时写入一个短时的转移模板：
+\[
+P(\text{contract}\mid \text{weak tap},\ \text{paired history})
+>
+P(\text{contract}\mid \text{weak tap},\ \text{unpaired history})
+\]
+这里可被读取的不是“神经回路版记忆”，而更像 mechanoreceptor / calcium / membrane-voltage / contractile state 之间形成的瞬时门控偏置。换言之，学习并不必从突触开始；在更古老的谱系里，它可能先以 **non-neural physiological computation** 的形式存在，之后才在多细胞神经系统中被放大、专门化并长期稳定化。
+
+这条材料与本文件前面的 Levin 线索能形成一个很窄但重要的闭环：如果发育与再生已显示细胞群体可在 `L_2^{bioelectric}` 约束下解形态问题，那么 `Stentor` 预印本则提示，单细胞本身也可能拥有一个更原初的“时序联结”能力。它支持 Levin 所说的 `deep symmetries between evolution and learning`，但把这一说法从形态目标层，往前压到 **单细胞预测性收缩** 这一更底层的现象窗口。
+
+**边界必须收紧：**
+- 当前主证据是 *bioRxiv* 预印本加二手报道，还不是同行评审定论。
+- 现有范式主要展示的是约 `1` 秒量级、每 `45` 秒重复一次的短时配对窗口，不等于任意长间隔的 trace conditioning，更不等于已达到 `d \ge d_{UAL}`。
+- 报道中的 readout 主要来自固定在培养皿底部的 `Stentor` 群体响应；“单个细胞内部如何存储联结痕迹”仍未锁定。
+- 这条材料支持的是 **non-neural associative-learning window**，不是“单细胞已经被证明具有现象意识”。
+
 ## 3.3 认知-形态同构的深刻含义
 
 SRT 最大胆的主张之一是：**形态发生和认知是同构的**。
@@ -353,9 +422,13 @@ SRT 为回路趋同提供了一个深层解释：**这不是偶然的平行发�
 
 $$\mathcal{S}_d = \{\sigma \in L_0^{anatomical} : d(\hat{G}_\sigma) > 0\}$$
 
-$\mathcal{S}_d$ 的拓扑相当于 $L_2$ 的吸引子盆地。关键论点：
+其中 $L_0^{anatomical}$ 是一般潜在域 $L_0$ 在"物理可达神经解剖构型"这一约束子流形上的限制（由神经元作为计算单元、离子通道动力学、突触传递等物理化学约束共同界定）。
 
-1. **有限自由度定理**：$\mathcal{S}_d$ 的维度远低于 $L_0^{anatomical}$ 的维度 → 可行解的空间极度受限
+**精确说明**：$\mathcal{S}_d$ 是**解剖形态空间**的子集（不同物种的功能等价构型的集合），其在**演化动力学**下的吸引子结构映射到**功能层 $L_1^{functional}$** 的等价回路类；$L_2$（社会/跨算子共识域）是该功能等价类在种群层的投影，而非直接等于 $\mathcal{S}_d$ 的拓扑。更准确的表述为：$\mathcal{S}_d$ 的拓扑约束决定了**进化演化的可行 $L_1$ 等价类**，进而约束了 $L_2$ 的可能形态。
+
+关键论点：
+
+1. **有限自由度（推测性命题）**：$\mathcal{S}_d$ 的有效维度远低于 $L_0^{anatomical}$ 的维度 → 可行解的空间极度受限。量化直觉：Assembly Theory 的 $A$ 值刻画了实现给定功能所需的最短因果程序长度；功能等价回路的 $A$ 值分布的集中性提供了该命题的可测代理（Status = 待实证）。
 2. **吸引子收敛**：在漫长的演化时间尺度上，任何 $d > 0$ 的选择压力都将导向 $\mathcal{S}_d$ 的吸引子 → 趋同是必然的
 3. **路径无关性**：吸引子的终态与到达路径无关 → 不同发育策略可以收敛到等价回路
 
@@ -428,11 +501,17 @@ Dehaene 团队通过 fMRI（成人和 6 岁儿童）和 MEG（成人）记录了
 
 ### 6.2.2 关键发现
 
-1. **规则性效应**：几何规则性越高（如正方形 > 矩形 > 任意四边形），IPS/ITG/前额区的调制越强
-2. **压缩编码**：大脑活动与**最小描述长度**成比例 → 规则形状 = 更高压缩效率
-3. **CNN 失败**：卷积神经网络可解释早期视觉反应，但完全无法捕获后期背侧-前额信号
-4. **发育先天性**：6 岁儿童在相同 IPS/ITG 位置显示几何形状激活 → 先于正规教育
-5. **人类皮层扩展**：人类相对于非人灵长类，**顶叶区的皮层面积扩展最大**（Meyer et al. 2025）
+> **[R]** 以下5条发现均来自 Dehaene 团队 fMRI/MEG 实验（Dehaene et al. 2022/2023, *Science*；Amalric & Dehaene 2019；Meyer et al. 2025, *Nature Neuroscience*）。SRT 解释见 §6.3-6.5。
+
+1. **规则性效应** **[R]**：几何规则性越高（如正方形 > 矩形 > 任意四边形），IPS/ITG/前额区的调制越强。→ SRT 意义：支持 §6.4 的 $\eta_{compress} \propto 1/\text{MDL}$（规则形状 L₁ 编码代价低 = 低 $\Psi_f$）。
+2. **压缩编码** **[R]**：大脑活动与**最小描述长度**（MDL，Rissanen 1978; Grünwald 2007）成比例 → 规则形状 = 更高压缩效率。→ Cross-ref: §6.4 $\eta_{compress}$ 神经实现；MDL 作为 $\Psi_f$ 的操作化代理之一。
+3. **CNN 失败** **[R + H含义]**：卷积神经网络可解释早期视觉反应（腹侧 L₁ 生成），但完全无法捕获后期背侧-前额信号。→ **[H含义]**：CNN 失败本身为 SRT §6.3 的预测提供支持证据——背侧通路执行的是"离散符号化 $L_0 \to L_1$"选择，超出连续函数逼近的范围，与 SRT 的"本体论跃迁"框架一致。
+4. **发育先天性** **[R]**：6 岁儿童在相同 IPS/ITG 位置显示几何形状激活 → 先于正规教育。**混淆因素注**：6 岁前已有大量非正式几何暴露（积木、环境中的直线）；"先天性"的更强证据应来自：① 文化剥夺对照（Himba 族数据已部分支持）；② 先天盲后复明者（视觉经验受限）的几何激活检验。
+5. **人类皮层扩展** **[R]**：人类相对于非人灵长类，**顶叶区的皮层面积扩展最大**（Meyer et al. 2025）。→ SRT 意义：支持 §6.5 的 d 值阈值假设——顶叶扩展 = $d_{symbolic}$ 阈值所需的额外具身硬件（扩展皮层 = 更大 θ 参数空间）。
+
+**证伪方向（§6.2.2 实验发现层）**：
+- 若训练后的 CNN 变体（整合符号推理模块）能捕获后期背侧-前额信号（预测 MEG 晚期分量），则 "CNN 失败 → 本体论跃迁必需" 的推论被削弱（允许连续架构模拟符号化通路）。
+- 若 Himba 族等缺乏正式几何教育的群体缺乏背侧-前额激活（仅腹侧），则"先天性"主张需修订（激活是教育诱发的，而非进化内置的）。
 
 ## 6.3 SRT 解释：$L_0 \to L_1$ 选择的分层架构
 
@@ -440,9 +519,24 @@ SRT 将双通路发现解释为选择过程的**分层架构**——这不是两
 
 ### 第一层（腹侧）：连续压缩选择
 
+[R→Ungerleider & Mishkin 1982（背腹双通路原始论文）; DiCarlo et al. 2012（V4/IT区层级物体识别）; Yamins & DiCarlo 2016（CNN与腹侧流的定量对应）; Khaligh-Razavi & Kriegeskorte 2014（深度神经网络和腹侧流的表征相似性）] [H→以SRT L₀→L₁选择框架重表述腹侧流层级压缩]
+
 $$\hat{G}_{\theta}^{ventral}: L_0^{visual} \to L_1^{object} \quad (\text{连续特征提取})$$
 
-这是所有视觉灵长类共享的选择层——将高维视觉输入压缩为对象表征。CNN 是其良好的计算模型，因为它执行的是**连续函数逼近**。
+- **符号说明**：$\hat{G}_θ^{ventral}$ 是标准SRT选择算子 $\hat{G}_θ$ 在视觉腹侧流层面的特例化；θ在此包含视觉皮层的权重（由发育经验和进化先验共同参数化）
+
+这是视觉灵长类普遍共享的选择层（注：非灵长类脊椎动物有功能类似结构，但灵长类腹侧流-特别是IT皮层-最为发达[R→DiCarlo 2012]）——将高维视觉输入压缩为对象表征。
+
+**CNN类比的范围与边界** [R→Yamins & DiCarlo 2016]：
+- ✅ CNN是腹侧流的良好**正向模型**：执行连续函数逼近，层级特征提取，与V1/V4/IT的神经表征高度相关
+- ⚠️ CNN与腹侧流的差异（类比的边界）[H→以下差异说明]：
+  - CNN缺乏**回路连接**（无反馈至低层）；腹侧流有大量自上而下的连接
+  - CNN无**内部生成能力**（无预测编码），腹侧流有前向预测
+  - CNN的"对象表征"是静态的，腹侧流的θ通过在线学习动态更新
+
+**证伪条件**：
+- FC-Ventral-1：若引入回路连接和反馈机制的CNN变体（如带有横向连接的递归CNN）在与腹侧流神经活动的相关性上显著优于标准前馈CNN，则"连续前馈压缩"的SRT表述需扩展为"连续压缩+反馈修正"结构。
+- FC-Ventral-2：若腹侧流在不同θ（不同视觉训练经历）被试中的对象表征结构无显著差异（如先天性盲人恢复视力后的腹侧流激活与正常人等同），则θ的"发育经验参数化"宣称被弱化（先天结构主导）。
 
 ### 第二层（背侧-前额）：符号化规则选择
 
@@ -607,3 +701,42 @@ SRT 为演化生物学提供了一个统一框架：
 |修剪 → 不可靠硬件|A7|噪声驱动智能|Ax-Evo-7|
 |连续性 → 主要转变|A12|$d$ 值跃迁|Ax-Evo-8|
 |脆弱性 → 关键期|A11|$\theta$ 冻结|Ax-Evo-9, Ax-Evo-10|
+
+### Formalization Summary (形式化概述)
+
+- 生物电先验层：$L_2^{bioelectric} \supset L_2^{synaptic}$（Ax-BIO-1），形态目标存储于生物电模式而非基因组。
+- 发育-神经嵌套：$\hat{G}_{neural} \subset \hat{G}_{devo}$（Ax-BIO-2），神经选择受发育算子的上位约束。
+- 主要演化转变：$\Delta d > 0 \Rightarrow \text{New Operator Class}$（Ax-EVO-2），$d$ 维度扩展驱动算子类别跃迁。
+- 发育亚临界生成性：$\text{Generativity}_{devo} \propto 1/\Psi_f(\theta_{morpho})$（Ax-BIO-3），低摩擦状态允许形态重新选择。
+
+### Mechanism Explanation (机制解释)
+
+以下四个机制构成了 SRT 发育-演化框架的完整因果解释链（存储 $\to$ 机制 $\to$ 失效 $\to$ 收敛）：
+
+**1. 双层参数存储（Two-Layer Parameter Storage）**
+$\hat{G}_\theta$ 的具身参数在生物学实现上具有时间尺度分层：
+- **$\theta_{genomic}$（基因组参数）**：在演化时间尺度更新（跨代写入），作为极其稳定的低频先验。
+- **$\theta_{morpho}$（生物电形态参数）**：在发育时间尺度更新（单生命周期内可重写），作为动态形态记忆。
+
+**二者的耦合机制**：在时间尺度上独立，但在信息流上深度耦合——$\theta_{genomic}$ 设定了 $\theta_{morpho}$ 的硬件可达空间上界，而 $\theta_{morpho}$ 的电生理状态反向调控底层的基因表达（表观遗传反馈）。
+
+**2. 形态发生同构于认知选择（Morphogenesis = Cognitive Selection）**
+胚胎发育不是机械的"程序执行"，而是细胞集体算子 $\hat{G}^{collective}$ 在形态可能性空间中的主动导航：
+$$\text{Morphogenesis} \equiv \hat{G}^{collective}[L_0^{anatomical}](t) \to L_1^{body}$$
+这与大脑的神经认知选择在拓扑上完全同构，差异仅在于物理基质（细胞网络 vs 神经网络）与时间尺度（天/月 vs 毫秒/秒）。
+
+**3. 癌症机制 = $\Psi_f$-Coupling 崩溃与 d 值相变（Cancer as $d$-Collapse）**
+健康态下，单个细胞算子维持与全局生物电 $L_2$ 协议的同步（跨域摩擦 $\Psi_f^{cross} \to \min$）。癌症发生对应于一次局部的本体论相变：
+$$\Psi_f^{cross}(\hat{G}_{cell},\, L_2^{bioelectric}) > \Psi_{crit}
+\quad \Rightarrow \quad d_{cell} \to d_{min}$$
+即细胞算子与全局协议的通信负荷过载（解耦），其关切边界退化为最小 $d$ 值的自利最优化（单细胞水平的无限制增殖）。在 SRT 动力学中，这与宏观社会的"发散锁死/极端内卷化"是同一个跨尺度方程（→ T-Scale-1，C-EVO-1 退化路径）。
+
+**4. 趋同演化 = $\mathcal{S}_d$ 约束下的 $L_2$ 吸引子收敛**
+定义 **$\mathcal{S}_d$** 为 $L_0^{anatomical}$ 中能够满足特定 $d$ 维度生存/认知任务的**有限可行解集合**。因为 $\mathcal{S}_d$ 的拓扑可能性极为有限，不同演化谱系在面对相似的本体论摩擦时，必然收敛到同一个 $L_2$ 功能吸引子（例如：鸟类的 DVR 结构与哺乳类的新皮层，解剖起源完全不同，但控制表征几何高度一致）。趋同演化不是偶然，而是 $L_0$ 潜能域的拓扑必然。
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+4. 不采纳“形态问题解决能力（competence）=高 d 值现象学关切（care）”的推论：低阶发育算子可在局部闭环中实现高适应性，但未必具备主体性体验。

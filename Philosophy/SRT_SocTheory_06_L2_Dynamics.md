@@ -3,6 +3,9 @@ id: SRT-SOC-THEORY-06
 type: theory
 tags: [L2, Dynamics, Bateson, Schismogenesis, Complexity, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SOC-THEORY-05]
 ---
 
@@ -19,15 +22,10 @@ dependency: [SRT-SOC-THEORY-05]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 以 `chatgptx` 为来源，优先保持公理链可推导性与编号连续性。
-- Part B 以 `claude` 为来源，并用原版 `Philosophy` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 
 #### 原文内容
@@ -95,9 +93,7 @@ $$\Delta \theta > \Delta \theta_c \Rightarrow L_2 \to \{A_1, A_2\}$$
 *   **Implication**: 极化是相变，不是意见分歧。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -129,9 +125,7 @@ Warm Data refers to information that retains its relational context ($L_0$ links
 $$ \text{Warmth}(\sigma) \propto \text{Connectivity}(\sigma, L_0^{\text{context}}) $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Social Theory Part 3: L2 Dynamics (Hybrid Edition)
@@ -261,29 +255,37 @@ $$\frac{dD}{dt} = f(S) \quad ; \quad \frac{dS}{dt} = g(D)$$
 
 ### 3.3 Breaking Schismogenesis: Meeting vs Matching
 
-**Matching** (同维对抗) — **无效**:
+**[R — Retrodiction：Gregory Bateson (1935/1958) 分裂生成概念追溯为 SRT θ 动力学；升维打破死锁为 SRT [H] 新增预测]**
+
+**Matching** (同维对抗) [R→Bateson 1958] — **无效**:
 
 继续在同一维度升级竞争。
 
 $$\theta_A^{(n+1)} = f(\theta_B^{(n)}) \quad ; \quad \theta_B^{(n+1)} = g(\theta_A^{(n)})$$
 
-这导致指数发散，直至系统崩溃。
+发散条件：当 $\|Df \cdot Dg\| > 1$（雅可比乘积谱半径大于1）时系统不稳定，$\theta$ 指数发散直至系统崩溃或其中一方退出。若 $\|Df \cdot Dg\| \leq 1$ 则形成稳态竞争而非崩溃——发散非必然结果，取决于具体反应函数。
 
-**Meeting** (重回 $L_0$) — **有效**:
+**Meeting** (重回 $L_0$) [H] — **有效**:
 
 引入新维度，打破单维死锁。
 
 $$\theta_A, \theta_B \xrightarrow{\text{Reground in } L_0} \theta_{shared}$$
 
+*$\theta_{shared}$ 产生条件*：双方在新增维度上存在共同关切带宽 $d$ 覆盖的吸引子区域；若新维度仍为零和结构，Meeting 可能引发更高维的 Matching。L₀ 重建有效的必要条件：新维度的 $d$ 值覆盖使双方 $\Psi_f$ 总量下降（降低锚定代价）。
+
 **实例**:
 
-| 陷阱 | Meeting 策略 | 新维度 |
-|:-----|:-------------|:-------|
-| **军备竞赛** | 建立共同敌人（外星人威胁）| 超越性目标 |
-| **学历军备** | 重定义价值（技能 > 学历）| 能力本位 |
-| **攀比消费** | 共同体验（旅行、创作）| 非物质价值 |
+| 陷阱 | Meeting 策略 | 新维度 | 备注 |
+|:-----|:-------------|:-------|:-----|
+| **军备竞赛** | 建立共同超越性目标（气候危机、科学竞争）| 超越性目标 | "共同敌人"策略有效但伦理上有争议——人为构建威胁可能产生次级伤害，此处为描述性分析非规范性推荐 |
+| **学历军备** | 重定义价值（技能 > 学历）| 能力本位 | 需配套制度重构（招聘标准/晋升机制）才能稳固新维度 |
+| **攀比消费** | 共同体验（旅行、创作）| 非物质价值 | 若体验本身也形成攀比，则升维失败 |
 
-**SRT 核心洞见**: 分裂生成无法在其发生的维度内解决，必须**升维** (增加 $d$ 值)。
+**SRT 核心洞见** [H]: 分裂生成无法在其发生的维度内解决，必须**升维**（增加 $d$ 值，激活新 L₀ 共同接地区域），等价于在 $\theta$ 空间中跳出当前吸引子盆地。
+
+**证伪条件**:
+- 若存在案例：双方 $d$ 值均提升（体验多样性增加），但分裂生成动力学未减弱，则 $d$ 值升维机制不成立。
+- 若"建立共同目标"策略统计上不优于其他冲突化解方法（如边界设置/退出），则 Meeting-L₀重建无独特预测力。
 
 ---
 
@@ -291,24 +293,40 @@ $$\theta_A, \theta_B \xrightarrow{\text{Reground in } L_0} \theta_{shared}$$
 
 ### 4.1 Nora Bateson 的核心区分
 
-**诺拉·贝特森** (Nora Bateson):  
+**[R — Retrodiction：将 Bateson 冷/暖数据区分追溯翻译为 SRT 互信息语言]**
+
+**诺拉·贝特森** (Nora Bateson):
 女儿继承父亲遗产，将暖数据 (Warm Data) 概念系统化。
 
-**冷数据** (Cold Data):  
+**冷数据** (Cold Data):
 去语境化的 $L_1$ 切片 — 统计数字、KPI、算法指标。
 
 $$\text{Cold Data} : I(\sigma; L_0^{context}) \to 0$$
 
-**暖数据** (Warm Data):  
+**暖数据** (Warm Data):
 保留关系纠缠的 $L_1$ 样本 — 故事、民族志、复杂系统数据。
 
 $$\text{Warm Data} : I(\sigma; L_0^{context}) \gg 0$$
+
+**操作化注**：$L_0^{context}$（原始语境潜在域）不可直接测量；实践中通过 $L_1$ 代理变量集合（背景变量、多关系层次）估计互信息。形式化量化见 §4.2（$W(\sigma) = I(\sigma; L_0^{full}) / I(\sigma; L_2^{abstract})$）。→ 这里的 $I(\sigma; L_0^{context})$ 是概念端点，§4.2 的 $W$ 是可计算代理。
+
+**连续谱注**：冷/暖区分不是二元分类，而是 $I$ 值的连续谱。$\to 0$ 和 $\gg 0$ 是两个极端；实际数据类型在谱上分布（详见 §4.2 表格）。
+
+**与 CR(d) 的结构联系**：暖数据（高 $I$）对应选择路径保留更多 $L_0$ 信息——与 $\text{CR}(d) \propto 1 - e^{-\alpha d}$（信息保留率随 $d$ 增大而增大）同构：高 $d$ 选择算子产生更"暖"的 $L_1$ 锚定。→ Cross-ref: SRT-CORE-12A Mechanism Synthesis §CR公式。
+
+**证伪条件**：若"暖数据"（高语境保留）在实证上不能更好预测系统行为（比较 Cold vs Warm 数据对跨组织干预效果的预测力），则互信息量化的区分价值需重新评估。
 
 ---
 
 ### 4.2 温暖度量化
 
+> **[R]** "暖数据"概念：Nora Bateson（2017，Warm Data Lab）。**[H]** 以下 W(σ) 的 SRT 形式化（互信息比值）及五级阈值为 SRT 操作化贡献。
+
 $$\text{Warmth}(\sigma) = \frac{I(\sigma; L_0^{full})}{I(\sigma; L_2^{abstract})}$$
+
+**测量注（[H — 操作化缺口]）**：$I(\sigma; L_0^{full})$ 要求 $L_0^{full}$（完整原始语境潜在域）直接可测——实践中不可实现。可计算的代理版本：
+$$W_{proxy}(\sigma) \approx \frac{H(\sigma) - H(\sigma | C_{background})}{H(\sigma) - H(\sigma | C_{L_2})}$$
+其中 $C_{background}$ = 背景语境变量集（关系网络/历史/现场观察），$C_{L_2}$ = L₂ 框架变量集（标准化分类/量表条目）。当 $H(\sigma|C_{background}) \ll H(\sigma|C_{L_2})$，则 W_proxy > 1（暖）。**⚠️ 阈值说明**：W < 0.5 和 W > 2 为**示意性**阈值，非精确校准值，实际应用需根据领域基线校准。
 
 | 数据类型 | $W$ 值 | 实例 | 用途 |
 |:---------|:-------|:-----|:-----|
@@ -317,6 +335,10 @@ $$\text{Warmth}(\sigma) = \frac{I(\sigma; L_0^{full})}{I(\sigma; L_2^{abstract})
 | **温** | $0.5 < W < 2$ | 半结构化访谈 | 混合方法 |
 | **暖** | $W > 2$ | 叙事、案例研究 | 深度理解 |
 | **极暖** | $W \gg 1$ | 长期民族志 | 本体论洞察 |
+
+**与§4.3韧性公式的联结**：$W \to 0 \Rightarrow \text{Resilience}(L_2) \to 0$（→§4.3脆断定理）。机制：极冷数据系统 L₀ 反馈回路被切断 → 系统无法感知环境变化边界（Ψ_f^monitor = 0），危机时无早期预警。
+
+**证伪条件（[H]）**：若在等样本量下，高 W（暖数据）研究对系统危机的预测准确率不高于低 W（冷数据）研究（控制研究者经验后），则温暖度的预测效度需重新评估，可能温暖度对"理解深度"有贡献但对"预测准确度"无边际贡献。
 
 ---
 
@@ -555,11 +577,15 @@ $$T_{KT} = \frac{\pi J}{2 k_B}$$
 
 ### 8.3 分裂生成预测
 
-| ID | 假说 | 预测 | 证伪条件 |
-|:---|:-----|:-----|:---------|
-| **H-Schism-1** | 对称性分裂指数发散 | 军备竞赛显示 $e^{kt}$ 增长 | 线性增长 |
-| **H-Schism-2** | Meeting 解法 | 引入新维度打破分裂生成 | 同维对抗可解决 |
-| **H-Schism-3** | 互补性固化 | 支配-服从关系极化直至崩溃 | 自然达到平衡 |
+| ID | 假说 | 机制（SRT 形式化） | 预测 | 证伪条件 |
+|:---|:-----|:-------------------|:-----|:---------|
+| **H-Schism-1** | 对称性分裂指数发散 | 每轮对抗使双方 $d$ 值收窄 → $\Psi_f^{cross}$ 乘性积累：$\dot{\Psi}_f = k \cdot \Psi_f$ | 军备竞赛/意识形态极化显示 $e^{kt}$ 增长（冷战核武、算法信息茧房均符合） | 记录到线性增长且无乘性反馈回路 |
+| **H-Schism-2** | 维度扩张解锁 | 在 $L_2$ 共识空间引入新基向量（共同威胁/共同利益），使对立吸引子找到高维公共子空间：$L_2^{A \cup B} \supset L_2^A \cup L_2^B$ | 零和博弈在引入共同关切维度后转化为正和 | 同维对抗框架内出现自发解决（无需新维度注入） |
+| **H-Schism-3** | 互补性极化固化 | 支配-服从关系固化 → 弱方 $d$ 值收窄（适应压力）→ 强方 $L_2$ 单极锁死 → $\Phi_{soc} > \Phi_{crit}$（见 Ax-Cons-2） | 极化持续加速至 $L_2$ 拓扑崩溃（革命/社会解体），而非自然达到均衡 | 极化期间**内生**涌现出新的 $\Psi_f$ 调解机制（非外力强制终止） |
+
+**时序关系（动力学序列）**：
+H-Schism-1（指数发散阶段）→ H-Schism-3（极化固化阶段）→ $L_2$ 拓扑崩溃
+H-Schism-2 是在 H-Schism-1 早期介入的**相变干预条件**，一旦进入 H-Schism-3 固化相，维度扩张的干预窗口关闭。
 
 ### 8.4 博弈论预测
 
@@ -646,3 +672,374 @@ SRT_SocTheory_06_L2_Dynamics ← 你在这里
     ↓
 └── SRT_Philosophy_Ethics (伦理哲学 - 最后一个文件)
 ```
+
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义 $L_2$ 的有效性、过期与分裂生成动力学。$L_2$ 有效性与其对 $L_1$ 的预测一致性成正比 (Ax-L2-1)；当一致性低于阈值则结构过期 (Ax-L2-2)；$L_2$ 硬度 (Hardness) 量化推翻该结构所需的摩擦代价 (Def-L2-Hardness)；正反馈导致参数发散即分裂生成 (Ax-Sch-1)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Validity}(L_2) \propto I(L_2;L_1)$ — 有效性为 $L_2$ 与 $L_1$ 的互信息。
+  - $\text{Hardness} = \log_2(\int_{L_1 \to L_0} \Psi_f \, dt)$ — 硬度为推翻所需摩擦的对数。
+  - $d\Delta\theta/dt \propto +\Delta\theta$ — 分裂生成为参数发散正反馈。
+  - $T_{stable}(L_2) \propto 1/\int_{\Omega_{excluded}} \Psi_f \, d\sigma$ — 稳定时间与排除空间的摩擦成反比。
+
+### Mechanism Explanation (机制解释)
+
+> [R→DiMaggio & Powell 1983 *American Sociological Review*（制度同构：L₂硬度谱的社会学分类——强制性同构（高硬度）/规范性同构（中硬度）/模仿性同构（低硬度），对应SRT的Ψ_f光谱不同区段）; Easton 1965 *A Framework for Political Analysis*（政治系统的"支持"概念：政治制度（L₂）需要公民持续输入"弥散性支持"才能维持有效性——最接近"L₂与L₁持续信息一致性"的政治科学先例）; Putnam 2000 *Bowling Alone: The Collapse and Revival of American Community*（社会资本与情感耦合：κ_warm的历史实证代理——美国1960-2000年社会资本↓与极化↑的同步趋势）; Axelrod 1984 *The Evolution of Cooperation*（正反馈与极化：合作-缺乏合作正反馈在重复博弈中的动力学——κ_warm断裂后的正反馈机制原型）]
+
+- **Mechanism（完整版）**：
+
+  **① L₂有效性维持**：$\hat{G}_\theta$ 集体选择产生的 $L_2$ 结构需通过与 $L_1$ 的"持续信息一致性"维持有效性——操作定义为互信息 $I(L_2;L_1)$（上方Formalization Summary中的 $\text{Validity}(L_2) \propto I(L_2;L_1)$）。当大量个体L₁体验开始与L₂预测系统性偏离（$I(L_2;L_1)↓$），L₂有效性下降，最终面临重构。
+
+  **② L₂硬度光谱**：$\Psi_f$ 决定推翻L₂所需的能量成本——从低硬度习惯（如QWERTY打字布局：可单方面学习替换，个人成本低）到高硬度制度（如国家主权概念：需要全球政治协调，推翻成本跨越数量级）。DiMaggio&Powell的三类同构对应SRT的三段硬度区间：低（模仿性）/中（规范性）/高（强制性）。
+
+  **③ d值-情感耦合-极化链**：$d$值通过温暖数据耦合 $\kappa_{warm}$（情感连结强度，Cross-ref: `Core/SRT_Core_14_Dynamics_Scaling.md` §Ax-Scale-02 κ_soc-ind操作化）影响极化分裂阈值：当κ_warm↓（情感耦合断裂），θ发散的正反馈（$d\Delta\theta/dt \propto +\Delta\theta$）不再受到跨群情感摩擦的缓冲，驱动极化相变（Cross-ref: `Philosophy/SRT_Social_MacroDynamics.md` §T-Macro-IM-2）。
+
+* **R/H 区分**：
+  - [R] L₂硬度谱的制度社会学实证（DiMaggio&Powell）；社会资本-极化的历史证据（Putnam）；正反馈极化博弈论（Axelrod）
+  - [H] **SRT统一形式化**：将制度有效性/硬度/情感耦合-极化三个机制统一在$I(L_2;L_1)/\Psi_f/\kappa_{warm}$三参数体系内——跨学科的形式化统一是SRT的独特贡献
+
+* **可证伪预测**：
+  - FC-SocMech-1：在制度改革实验（如货币改革/交通规则修改）中，推翻成本（政策成功所需的时间/资源）应与该制度的历史持续时间（Hardness的时间积累代理）正相关（Spearman r>0.4）；若推翻成本与历史持续无关则Hardness-时间积累联结失败
+  - FC-SocMech-2：在纵向社会调查中，κ_warm代理（社会信任指数↓/独居率↑等Putnam指标）的下降趋势，应领先（时间上先于）政治极化指数上升趋势（Granger因果：κ_warm→极化方向）；若无Granger因果则情感耦合-极化正反馈链失败
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## Social Identity Interface（2026-03-07）
+
+### T-L2-SI-1: Minimal Topological Fracture Theorem
+在算子群体中，哪怕仅注入微小且任意的分类参数差异 \(\Delta\theta_{arb}\)，只要被规则系统标记为有效边界，跨群摩擦梯度可在临界点附近骤增：
+\[
+\frac{\partial \Psi_f^{cross}}{\partial (\Delta\theta)}\to\infty\quad\text{near }\tau_{fracture}
+\]
+含义：群际偏好不要求深历史仇恨，最小分类即可触发 \(L_2\) 亚结构断裂。
+
+### Def-L2-SI-1: Positive Distinctiveness as Thermodynamic Defense
+“积极区隔”在 SRT 中重写为集体自创生防御：
+\[
+\min F_{ingroup}\ \text{by}\ \uparrow\Psi_f^{outgroup}\ \text{(relative boundary hardening)}
+\]
+即通过提高边界外协同成本，维持边界内秩序与可预测性。
+
+### T-L2-SI-2: Context Tensor Modulation
+竞争/合作情境通过环境张量 \(C_{env}\) 调节群界硬度：
+\[
+\Psi_f^{cross}=\Psi_f^{base}+\alpha\,C_{env}^{comp}-\beta\,C_{env}^{coop}
+\]
+- 竞争高：边界硬化，偏见表达上升
+- 合作高：边界软化，跨群整合概率上升
+
+### 分类映射表（Social Identity Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 最小分类触发偏好（MGP） | 中回落 | Semi-open→Closed 倾向 | 跨界摩擦陡升 |
+| 竞争性群际比较 | 低~中 | Closed | overloaded / polarizing |
+| 合作性共同目标 | 中~高 | Open / Semi-open | payable（跨界下降） |
+| 稳态厚共同体 | 中~高 | Semi-open 稳态 | payable（高韧性） |
+
+### [Lineage/Source]
+- Jolanda Jetten（社会认同综述语境，含 Tajfel 最小群体范式、自我归类理论）。
+
+## 【理论边界/防误用声明】
+1. 不采纳“最小分类效应可直接外推全部现实群体冲突”的推论；真实社会仍叠加历史、制度与资源结构。  
+2. 不采纳“积极区隔=必然恶意”的推论；其首先是边界维持机制，规范评价需引入伦理层判据。  
+3. 不采纳“合作情境必然消除偏见”的推论；仅在目标耦合与收益分配可验证时成立。
+
+## Cultural Attractors Interface（2026-03-08）
+
+### Def-L2-CA-1: Attractor as Convergent Reconstruction Cluster
+
+**[R — Retrodiction：SRT 将 Claidière & Sperber (2007) / Boyer 文化吸引子理论翻译为 L₂ 收敛语言]**
+
+文化吸引子不是”高保真复制点”，而是重复重构下的概率聚类中心：
+\[
+A_k=\arg\max_x\,p_t^{(k)}(x),\qquad
+x_{t+1}=\mathcal{T}(x_t;\theta_i,e_t)
+\]
+其中 \(\mathcal{T}\) 为传递-重构变换（记忆、推断、生态约束、沟通目标共同作用）。
+
+**多峰注（A_k 允许多吸引子）**：$p_t(x)$ 可能是多峰分布（多个文化吸引子并存，指标 $k=1\ldots K$）；argmax 是第 $k$ 个吸引子的局部峰，而非全局唯一峰。单一文化占主导（$K=1$）是特例，多元并存（$K>1$）是一般情形。
+
+**$\mathcal{T}$ 算子候选形式化**：$\mathcal{T}(x_t;\theta_i,e_t) = \hat{G}_{\theta_i}(x_t) + \epsilon(e_t)$，其中 $\hat{G}_{\theta_i}(x_t)$ 是个体具身参数驱动的重构偏差（预测向 $\theta_i$ 的已有图式校正），$\epsilon(e_t)$ 是生态噪声项。此候选使 $\mathcal{T}$ 与 SRT 核心算子 $\hat{G}_\theta$ 直接关联，但完整形式待精确化。
+
+**与 L₂ 硬度的结构联结**：$|\mathrm{Aut}(L_2)|$ 越大（Ax-L2-03），文化吸引子的收敛盆地越窄、吸引力越强（变异被更快压缩回 $A_k$）；低硬度 L₂ 对应宽收敛盆地（文化多样性较高，$K$ 较大）。
+
+**证伪条件**：若文化变异率在传播多代后不收敛（方差不随 $t$ 下降），则 T-L2-CA-1 的稳定性预测失效；若具身参数 $\theta_i$ 的差异对传递偏差无预测力（个体间重构偏差与 $\theta$ 无关），则 $\mathcal{T}$ 中的 θ 项可移除。
+
+### T-L2-CA-1: Population Stability Without Faithful Copying
+即使单次传递误差较大，只要变换在统计上朝同一簇收敛，群体层面仍可稳定：
+\[
+\mathbb{E}\big[d(x_{t+1},A_k)\mid x_t\big] < d(x_t,A_k)
+\Rightarrow
+\text{Trait stability at population level}
+\]
+这将“稳定文化”从复制保真逻辑改写为吸引收敛逻辑。
+
+### Def-L2-CA-2: Multi-Factor Attraction Field
+吸引场由心理与生态因子叠加：
+\[
+\mathcal{F}_{att}(x)=w_p\,\mathcal{F}_{psych}(x)+w_e\,\mathcal{F}_{eco}(x)+w_l\,\mathcal{F}_{local}(x)+w_c\,\mathcal{F}_{cultural}(x)
+\]
+对应 Claidière & Sperber 语境中的多维因素：心理机制、重力/材料等生态条件、地方历史状态与既有文化产物。
+
+### T-L2-CA-2: Selection–Attraction Coupling Theorem
+在 SRT 中，选择与吸引并非互斥：
+\[
+p_{t+1}(x)\propto \underbrace{S(x)}_{adoption/selection}\cdot
+\underbrace{\int K(x\leftarrow y)\,p_t(y)dy}_{transformative attraction}
+\]
+当 \(K\) 近似恒等映射时退化为“高保真选择”；当 \(K\) 收敛性强时，吸引主导稳定性。
+
+### 分类映射表（Cultural Attractor Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 高保真复制主导 | 中~高 | Semi-open（低重构） | 低波动可支付 |
+| 吸引收敛主导（重构稳定） | 中 | Open↔Semi-open | 可支付（局部高负载） |
+| 生态约束主导（如重力/材料） | 中 | Semi-open（环境强约束） | 可支付但路径依赖 |
+| 失稳扩散（无显著吸引簇） | 低~中 | Open（噪声扩散） | borderline / unstable |
+
+### [Lineage/Source]
+- Nicolas Claidière & Dan Sperber (2026), *Cultural Attractors*.
+- 相关脉络：Sperber (1996)；Claidière et al. (2014)；selection–attraction 互补讨论。
+
+## 【理论边界/防误用声明】
+1. 不采纳“文化吸引子=目的论终点”的推论；吸引子是统计聚类，不是历史必然终局。  
+2. 不采纳“有吸引子=复制无误”的推论；恰相反，吸引理论允许高重构、低保真下的稳定。  
+3. 不采纳“选择与吸引只能二选一”的推论；两者可在同一传递链中并行耦合。
+
+## Ritual Interface（2026-03-08）
+
+### Def-L2-RIT-1: Ritual as Predictive Coordination Protocol
+
+仪式是 $a_i$（具身动作项）与 $u_i$（语义指称项）的**强相干绑定序列**，用于压缩群体互动不确定性：
+
+$$\mathcal{R}_{rit} = \{(a_1, u_1), \ldots, (a_n, u_n)\}_{invariant\ pattern}$$
+
+- $a_i$（Action）：L₁ 层的具身物理动作序列——如跪拜角度、握手力度、切割丝带——消耗能量并产生可观测位移
+- $u_i$（Utterance/Symbolic Unit）：与 $a_i$ 同步挂钩的语义指称项——誓言词、特定音乐频率、代表身份的勋章——将物理动作引导至 L₂ 的特定意义区
+
+仪式的核心是 $a_i$ 与 $u_i$ 的强相干绑定：$a_i$ 的微小偏差会导致 $u_i$ 失效，L₂ 锚定随之崩解。
+
+**社会熵定义**：
+
+$$H_{social} = -\sum P(\sigma_{L_1} \mid L_2) \log P(\sigma_{L_1} \mid L_2)$$
+
+度量参与者对「当前发生了什么」及「接下来会发生什么」的预测不确定性总量——即集体算子对现实定义的坍缩失败度。
+
+$$\Delta H_{social} \mid \mathcal{R}_{rit} < 0$$
+
+仪式通过可预期框架降低 $H_{social}$：高熵态下 L₂ 分裂（同一 L₁ 事件产生互不兼容的多种解释），协作摩擦 $\Psi_f$ 激增；低熵态下集体算子高度收敛，行为自动进入低功耗模式。
+
+**仪式、习惯与习俗的 SRT 区分**：
+
+| 概念 | 执行特征 | L₂ 角色 | 核心区分 |
+|:---|:---|:---|:---|
+| **习惯** | 个体重复，非同步 | 个体 L₂ 优化 | 无外部 $u_i$ 绑定，降低个体代谢成本 |
+| **习俗** | 集体分布，弱同步 | 被动 L₂ 惯性 | 统计意义上的行为分布，缺乏形式化门控 |
+| **仪式** | 强同步（Synchrony）| 主动 L₂ 强化 | 强制共享执行，$a_i$ 偏差导致 $u_i$ 失效 |
+
+仪式是社会系统的**重同步协议**——通过高能量消耗的强制同步动作，将所有参与者的 d-value（关切范围）拉回同一 L₂ 频率，是 $\mathcal{C}_{field}$ 的社会层实现。
+
+**仪式失效与变异：拓扑逃逸**
+
+- **失效（Dissolution）**：$\mathcal{R}_{rit}$ 停止支付 $\Psi_f$（无人执行），L₂ 吸引子迅速平坦化，$H_{social}$ 瞬时升高，协作边界模糊
+- **变异（Variation）**：握手→肘击（COVID 期间）是 $a_i$ 的重写过程——旧 $a_i$ 产生本体论压力（感染风险），算子在 L₀ 中寻找替代路径；若新 $a_i$ 成功绑定原有 $u_i$（友好/契约），L₂ 稳定性得以保持，$H_{social}$ 重新下降
+- **边界条件**：变异过快导致 $u_i$ 与新 $a_i$ 无法形成强耦合，仪式退化为纯粹「尴尬动作」，降熵功能丧失
+
+### Def-L2-RIT-2: Self-Referential / Canonical Dual Channel
+采用 Sosis–Rappaport 双通道映射：
+\[
+\mathcal{R}_{rit} = \mathcal{R}_{self} \oplus \mathcal{R}_{canon}
+\]
+- \(\mathcal{R}_{self}\)：执行者当前状态信号（投入度、忠诚、情绪、意向）；
+- \(\mathcal{R}_{canon}\)：群体规范与价值的跨代编码（非个人原创、制度沉积）。
+
+### T-L2-RIT-1: Uncertainty-Triggered Ritual Gain
+在高不确定条件下，仪式的心理-群体效应增益上升：
+\[
+\frac{\partial \text{Gain}_{rit}}{\partial U}>0,
+\quad \text{Gain}_{rit}=f(\downarrow Anxiety,\uparrow Cohesion,\uparrow Norm compliance)
+\]
+对应“风险/转折/创伤节点仪式密度增加”的经验规律。
+
+**SRT机制**：不确定性=L₁状态波动↑+L₂锚定有效性↓→Ψ_f负担增加；仪式=L₂的节律性重激活，在高Ψ_f背景下边际降摩擦效益被放大（低不确定时L₂已稳定，仪式增益≈0；高不确定时L₂面临解体压力，仪式重锚定边际效益∝Ψ_f水平）。三分量操作化：①Anxiety↓=STAI前后差值；②Cohesion↑=同伴信任博弈合作率；③Norm compliance↑=后续规范违反频率↓。
+
+> **[R]** 不确定性与仪式实证：Keinan 1994 *Journal of Personality and Social Psychology*（Scud导弹威胁下以色列居民迷信行为↑，不确定性→仪式化行为的控制实验，R基线）；Whitehouse 2004 *Modes of Religiosity*（高觉醒/低频率的"想象模式"仪式在创伤/危机节点密度↑，R框架）；Legare & Souza 2012 *Psychological Science*（仪式因果不透明不减少感知效力，不确定条件下效力信念↑，R补充）。**[H]** 不确定性→Ψ_f↑→仪式边际效益放大的SRT机制链及三分量操作化为本框架新增贡献。
+>
+> * **FC-RIT1-1**（证伪条件）：若在预注册实验中，高vs低不确定性诱导后，执行仪式vs不执行仪式的STAI差值无不确定性×仪式交互效应（F<1，p>0.1），则∂Gain_rit/∂U>0的单调预测被证伪，需检视不确定性类型或仪式类型的调节效应。
+
+### T-L2-RIT-2: Causal Opacity and Cultural Retention Window
+因果不透明并不削弱传承，反而在“高共享+高情感+节律重复”条件下提高保留概率：
+\[
+P_{retain}(rit)\uparrow \iff S_{shared}\uparrow \land E_{salience}\uparrow \land Rh_{stereotypy}\uparrow
+\]
+解释为何许多仪式在机制不透明时仍可长期稳定存在。
+
+### 分类映射表（Ritual Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 日常低强度仪式（问候/祈祷） | 中 | Semi-open（稳态校准） | 低负载可支付 |
+| 过渡仪式（婚礼/毕业/成人礼） | 中~高 | Open↔Semi-open（身份重整） | 中负载可支付 |
+| 危机仪式（创伤/治愈/哀悼） | 中高 | Open（高情绪耦合） | 边缘高负载但可降长期摩擦 |
+| 僵化排他仪式（边界过硬） | 低~中 | Closed 倾向 | borderline / polarizing |
+
+### [Lineage/Source]
+- Richard Sosis (2026), *Ritual*.
+- 关键脉络：Rappaport（canonical/self-referential）、Turner、Durkheim、Legare & Nielsen。
+
+## 【理论边界/防误用声明】
+1. 不采纳”仪式有效 = 超自然因果已证实”的推论；仪式效力可由协调、情绪与规范机制解释。
+2. 不采纳”仪式必然保守压制创新”的推论；仪式既可固化边界，也可管理转变与重整身份。
+3. 不采纳”因果不透明 = 任意操作都等效”的推论；形式、节律、共享与情状匹配决定可持续性。
+
+---
+
+## VII. L2主导环境与L₀→L₁选择能力衰退
+
+> **新增节点（2026-04-06）**：本节处理L2密度对主体L₀→L₁算子能力的系统性影响，引入「空心主体」作为衰退终态概念。
+
+---
+
+### Def-L2-SC: L₀→L₁选择能力（Selection Capacity）
+
+**Formal Definition**: 主体将状态从潜在域投影到实在域的算子执行能力，不限于生存选择，涵盖一切从潜在到存在的生成性操作。
+
+$$SC_{L_0 \to L_1} = \left\{ \hat{G}_\theta \;\middle|\; \hat{G}_\theta : \sigma_{L_0}^{potential} \to \sigma_{L_1}^{manifest} \right\}$$
+
+**生成性条件**（与L2预给定选择的区分标准）：
+
+$$SC_{genuine} \iff \nexists\, S_{pre}^{L_2} : \text{options} \subseteq S_{pre}^{L_2}$$
+
+选项空间在选择发生之前不存在，选择本身是生成行为，不是在L2预指定集合中分类。
+
+* **Implication**: 城市消费决策（菜单、playlist、套餐）是L2预给定集内的分类，不激活$SC_{L_0\to L_1}$。创作、真实情感结晶、对开放环境的具身响应是生成性的，激活$SC_{L_0\to L_1}$。
+* **Cross-ref**: Ax-L0-01（潜在域守恒）；T-L0-01（创新即对L₀已有潜能的重新照明）。
+
+---
+
+### Ax-L2-ENV: L2主导环境的比例效应
+
+**Formal Definition**: 城市环境不等于纯L2，但其主导选择算子是L2级别的，使主体L₀→L₁与L2接触比例严重失衡。
+
+$$\rho_{L_0L_1}^{city} \ll \rho_{L_0L_1}^{nature}, \quad \rho_{L_0L_1} = \frac{\int_T SC_{L_0\to L_1}(t)\,dt}{\int_T SC_{total}(t)\,dt}$$
+
+* **Implication**: 城市不是「只有L2」——物理身体、天气、疲劳均为L₀→L₁要素。精确命题是比例失衡，而非层级纯粹性。
+
+---
+
+### T-L2-NAT: 亲近自然的冲动作为体内平衡信号
+
+**Deductive Statement**: 主体的自然亲近冲动是L₀→L₁接触缺口的体内平衡调节信号，类比于饥饿对营养缺口的指示功能。
+
+$$\text{Nature-seeking drive} \propto \Delta_{deficit}^{L_0L_1} = \rho_{L_0L_1}^{baseline} - \rho_{L_0L_1}^{actual}$$
+
+**推论 T-L2-NAT-C1**（wellness产业膨胀）：城市绿化、郊游、旅游是主体对$\Delta_{deficit}^{L_0L_1}$的自发调节尝试。若此类接触长期低于修复阈值（见Def-L2-EFF），调节信号持续累积而不被真正清除，解释wellness产业持续膨胀的结构性原因。
+
+> **[R]** Wilson 1984 *Biophilia*（人类对自然环境的先天亲近倾向，R基线）；Kaplan & Kaplan 1989 *Attention Restoration Theory*（自然环境恢复定向注意力的实证，R框架）。**[H]** 本定理将自然亲近冲动的功能解释从「审美偏好」重新定位为「L₀→L₁接触缺口的调节信号」，提供体内平衡机制，而非单纯的进化适应描述。
+
+---
+
+### Def-L2-EFF: 有效L₀→L₁接触
+
+**Formal Definition**: 有效L₀→L₁接触由剂量与纯度双维度决定。
+
+$$E_{L_0L_1} = D \times P$$
+
+其中$D$（Dosage）为接触时长，$P$（Purity）为纯度系数$P \in [0,1]$。
+
+**存在修复阈值**：
+
+$$E_{L_0L_1} < E_{threshold} \Rightarrow \text{no genuine SC restoration}$$
+
+低于阈值的接触仅产生安慰效应，不修复$SC_{L_0\to L_1}$衰退。
+
+---
+
+### Def-L2-PUR: 纯度（Purity）
+
+**Formal Definition**: 纯度由**选择的主驱动者**决定，而非L2要素是否在场。
+
+$$P = \frac{N_{decisions}^{L_0L_1\text{-driven}}}{N_{decisions}^{total}} \in [0,1]$$
+
+**判断标准**：
+- $P \to 1$（高纯度）：L₀→L₁信号是主选择器——感到冷→移动；疲惫→停下；水声→转向
+- $P \to 0$（低纯度）：L2结构是主选择器——行程规定时间→继续走；导游指令→停下；拍照需求→驻足
+
+**关键推论**：携带装备（冲锋衣、地图、GPS）不降低纯度，因为装备不驱动选择。「自然旅游」中大量由行程、拍照、社交媒体驱动的决策使$P$趋近0，接近L2选择结构。
+
+---
+
+### T-L2-DECAY: L₀→L₁选择能力两阶段衰退模型
+
+**Deductive Statement**: 在L2主导环境的累积暴露下，$SC_{L_0\to L_1}$经历两阶段衰退，转变由累积剂量阈值$\Lambda$触发。
+
+**阶段一：校准漂移（可逆）**
+
+$$\theta_{L_0L_1}(t) = \theta_0 - \alpha \int_0^t \rho_{L_2}(s)\,ds, \quad \int_0^t \rho_{L_2}(s)\,ds < \Lambda$$
+
+先验模型偏移：L₀→L₁信号被识别为「噪声」而非有效输入。能力在，但识别失败。
+症状：高纯度自然环境中不知所措、焦虑、无聊。
+恢复：高纯度L₀→L₁接触（$P$接近1，$D$足够）可重新校准$\theta$，相对快速。
+
+**阶段二：结构固化（难逆）**
+
+$$\int_0^t \rho_{L_2}(s)\,ds \geq \Lambda \Rightarrow \text{protein-synthesis-dependent synaptic consolidation}$$
+
+累积L2暴露超过个体阈值$\Lambda$后，触发蛋白质合成依赖的突触修剪与通路固化——L2选择通路在底层基质（L₀层）刻写，L₀→L₁通路物理性削弱。
+症状：高纯度环境中$SC_{L_0\to L_1}$信号根本不产生（不是识别失败，而是发生源缺位）。
+恢复：极慢，可能永久性部分丧失。
+
+**阈值个体差异**：$\Lambda$因人而异，受发育期L₀→L₁接触密度、遗传基线等调节，但方向一致：累积L2暴露越深，越接近不可逆区域。
+
+> **[R]** Hebb 1949 *The Organization of Behavior*（突触可塑性「用进废退」原则，R基础）；Bherer et al. 2013 *Journal of Aging Research*（认知能力的可塑性与环境刺激的交互，R类比）。**[H]** 两阶段模型（校准漂移→结构固化）与累积剂量阈值$\Lambda$为本框架新增贡献；将「自然亲近缺失」从文化偏好问题重新定位为神经可塑性问题。
+>
+> * **FC-DECAY-1**（证伪条件）：若将长期（>10年）高L2密度暴露的被试放入高纯度自然环境（$P > 0.8$）持续>30天后，其$SC_{L_0\to L_1}$指标（如自发行动率、非计划决策频率、interoceptive accuracy）与短期L2暴露组无显著差异（$p > 0.05$），则两阶段模型的不可逆性主张需修正。
+
+---
+
+### Def-L2-HOLLOW: 空心主体（Hollow Subject）
+
+**Formal Definition**: L2功能完整，但$SC_{L_0\to L_1}$丧失有效接地的主体状态。
+
+$$\text{Hollow Subject}: SC_{L_2} \text{ intact}, \quad SC_{L_0\to L_1} \leq SC_{threshold}^{functional}$$
+
+**与功能障碍的区分**：空心主体不是功能障碍——L2层运作完整（工作、社交、消费），但运作的是L2的壳，缺乏L₀→L₁的重量作为选择的基底。
+
+**症状分层**：
+
+| 阶段 | 核心现象 | 可观测指标 |
+|:---|:---|:---|
+| 阶段一空心 | 能感知「缺什么」但在L₀→L₁环境中焦虑 | 高纯度环境中强迫使用手机/计划/联网 |
+| 阶段二空心 | 连「缺什么」都感知不到 | 慢性麻木；情感响应仅由L2事件触发（点赞、排名、评价） |
+
+**诊断标志（行为层操作化）**：
+1. 高纯度自然环境中无法停止L2选择模式（必须拍照、计划、保持在线）
+2. 情感反应主要由L2事件触发，L₀→L₁事件（日落、疲惫后休息、身体感觉）不产生显著情感响应
+3. 真实选择（从潜在到存在的生成）引发焦虑或感觉无意义
+
+**机制层刻画（2026-04-11 硬化）**：
+
+两阶段空心对应选择结构中两个不同层次的退化，以「局部可扩展性 $B$」和「可回写访问」区分：
+
+| 状态 | 局部可扩展性 $B$ | 可回写访问 | 门控条件状态 | 感知 |
+|:---|:---|:---|:---|:---|
+| 正常主体 | $\geq 2$ | 有效 | 开放 | 真实分叉感 |
+| 阶段一空心 | $\geq 2$（名义上） | 存在但受限 | 已被 $\theta$ 历史代价地形预填充至接近单峰 | 「只有一条路可走」 |
+| 阶段二空心 | 趋近 $1$ | 形式存在但无作用 | $L_2$ 已写入 $\theta$ 基质，分叉结构物理性收缩 | 慢性麻木，选择感消失 |
+
+- **阶段一精确机制**：可回写访问存在（$d_{\text{mobile}} > 0$ 但极小），但门控条件已被 $\theta$ 的历史代价地形预填充至接近单峰。主体可以回写，但可写空间被 $L_2$ 历史惯性压缩——「能改写，但改来改去结果一样」。属于**校准漂移**，原则上可逆。
+- **阶段二精确机制**：$B$ 本身趋近 $1$，分叉结构物理性收缩（$\theta$ 基质已被 $L_2$ 历史写入，不只是代价地形变形）。此时即使可回写访问形式上存在，也无真实分叉可修改。属于**结构固化**，恢复极慢或不可逆。
+
+* **Cross-ref**: Def-L2-SC（选择能力定义）；T-L2-DECAY（衰退机制）；Ax-L2-1（L2有效性条件）；`Philosophy/SRT_Consciousness_Conditions.md §层2附录`（可回写访问机制完整定义）；`memory/nature_L0L1_deficit.md §空心主体机制层`。
+
+---
+
+### 【理论边界/防误用声明】（本节）
+1. 不采纳「城市 = L2，自然 = L₀→L₁」的二元推论；精确命题是**接触比例**与**选择驱动者类型**，而非环境的层级纯粹性。
+2. 不采纳「回归自然即可治愈空心主体」的推论；阶段二固化需要足够$D \times P$的有效接触，且可能存在不可逆成分。
+3. 不采纳「L2文明本质上是有害的」的推论；L2是选择秩序的必要层级，问题在于比例失衡而非L2本身的存在。

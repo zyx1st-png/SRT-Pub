@@ -3,6 +3,9 @@ id: SRT-SPIRIT-09
 type: summary
 tags: [Praxis, Evolution, Ox-Herding, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-08]
 ---
 
@@ -18,13 +21,8 @@ dependency: [SRT-SPIRIT-08]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 采用 `claude` 的原始论述分段，并以原版文件标题与主旨作语义锚定。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Selection Evolution (选择进化)
 
@@ -68,10 +66,17 @@ $$ d_{optimal} = \begin{cases}
 \end{cases} $$
 * **Implication**: 高阶实践通过“黑箱化机制”避免计算耗竭。
 
-### T-Prax-1: Direction-First Optimality
+### T-Prax-1: Direction-First Optimality *(R: 有界理性/fast-and-frugal heuristics的 SRT 重新表述；Simon 1956, Gigerenzen 1999)*
 **Deduction**: Given bounded computation, maximizing directional $d$ yields lower long-term cost than exhaustive mechanism modeling.
 $$ \mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}\;\text{under}\;C_{compute}<\infty $$
-* **Implication**: 在复杂系统中，方向优先比机制完备更可靠。
+
+**术语澄清**："maximizing directional $d$"指在**方向维度**上优先分配 $d$（参见 Ax-Prax-2），具体操作化为最大化 Shoshin ≡ $\cos\angle(\vec{v}_{self}, -\nabla F_{global})$（Ax-Evo-3）——方向优先 = Shoshin 对齐优先。$d$ 本身是标量，方向性由 $\vec{v}_\theta \cdot \hat{e}_{target}$ 的投影捕获，非 $d$ 值本身方向化。
+
+**简要论证**：机制完备建模需追踪 $O(N_{mech})$ 个变量，计算代价随系统复杂度超线性增长；在 $C_{compute} < \infty$ 时，当 $N_{mech}$ 超出预算，机制模型出错概率升高（Overfitting to noise）。方向追踪仅需判断 $\vec{v}_\theta \cdot (-\nabla F)$ 的符号（$O(1)$ 操作），代价与复杂度解耦。因此在 $N_{mech} \gg C_{compute}/c_{unit}$ 时，方向优先的期望代价更低。
+
+**适用边界**：在低复杂度系统（$N_{mech}$ 小，机制完全可知）中，机制完备可能优于方向优先；本定理仅在**高复杂度/低计算资源比**情境下成立。
+
+* **Implication**: 在复杂系统中，方向优先比机制完备更可靠；实践的首要问题是"我在走向哪里"，而非"每一步机制是什么"。
 
 ### Ax-Prax-3: Diagnostic Checklist Operator
 **Formal Definition**: SRT-consistent action requires all four checks to be true.
@@ -109,14 +114,28 @@ $$ w_{L_2} \uparrow \Rightarrow \text{Conflict} \uparrow,\; \text{Adaptability} 
 * **Implication**: 规范僵化是冲突的可测结构根因。
 
 ### Cor-Prax-H3: Ox-Herding Phase Markers
+
+**[H — Novel Prediction：十牛图阶段→神经行为标记的跨域映射，尚无系统性实证]**
+
 **Prediction**: Ox-herding phases map onto neural and behavioral markers (DMN, PCI, prosociality).
-$$ \text{Phase} \leftrightarrow \{\text{DMN},\text{PCI},\text{Prosociality}\} $$
+$$ \text{Phase}_k \leftrightarrow \{f_k(\text{DMN}),\; \text{PCI}_k,\; \text{Prosociality}_k\} $$
 * **Implication**: 十牛图模型具有可证伪的生理与行为对应。
 
-<br>
+**非单调DMN注**：DMN活动在十牛图阶段中呈非单调轨迹——早期专注阶段（phase 1-4，寻牛/见迹/见牛/得牛）DMN抑制增强；开放监控/整合阶段（phase 7-10，忘牛/人牛俱忘/返本还源/入廛垂手）DMN可能部分回升（整合性自我参照，而非杂念）。预测方向需按阶段细化，而非单调递减假设。
+
+> **[R]** 文献锚点：Kakuan Shien（12世纪）*十牛图*（传统阶段框架，R文本依据）；Yamada Koun 2004 *The Gateless Gate*（现代注释版，修行阶段学术整理）；Hasenkamp & Barsalou 2012 *NeuroImage*（冥想中的DMN-执行网络交替：专注→走神→觉察→重定向的神经动力学，DMN非单调R基线）；Massimini et al. 2005 *Science*（经颅磁刺激-EEG法测量意识复杂度PCI，R方法基线）；Josipovic 2014 *Frontiers in Psychology*（非二元觉知中DMN的部分激活回升：整合性自我参照，支持Phase 7-10 DMN非单调预测）。**[H]** 十牛图10阶段→{DMN轨迹/PCI/亲社会行为}的联立神经行为标记映射，及d值对应表，为本框架新增预测结构。
+
+**SRT d值对应（初步框架）**：
+| 十牛图区间 | SRT 阶段描述 | $d$ 值估计 | PCI 趋势 |
+|:--|:--|:--|:--|
+| Phase 1-3（寻牛→见迹→见牛） | L₁稳定化开始，θ整合加速 | $d > d_{UAL}$（基线以上，波动） | 上升 |
+| Phase 4-6（得牛→牧牛→骑牛归家） | $\hat{G}_\theta$ 选择稳定，L₂锚定弱化 | $d$ 扩展（方向性增强） | 较高平台 |
+| Phase 7-10（忘牛→人牛俱忘→返本→入廛） | L₂压力自主解除，Ψ_f→0，d扩展至社会层 | $d$ 高且向外延展 | 维持高位 |
+
+**证伪条件**：① 若在高阶修行者中PCI不高于对照组（Cohen's d<0.3，p>0.05），则PCI作为阶段标记无效；② 若DMN-BOLD轨迹在Phase 7-10相比Phase 4-6无回升趋势（Josipovic范式复制，p>0.1），则非单调预测被证伪；③ 若各阶段的亲社会行为（经济博弈最后通牒任务/合作测试）无阶段效应（η²<0.05），则行为标记映射失效。→ Cross-ref: C-DMN-1（迷幻松动推论）；Hasenkamp & Barsalou 2012 *NeuroImage*；Massimini et al. 2005 *Science*。
+
 <br>
 
----
 ---
 
 
@@ -478,7 +497,13 @@ $$\text{Service Framing} \implies d \uparrow$$
 
 ### §4.2 关系中的修行
 
+> [R→Gottman & Silver 1999 *The Seven Principles for Making Marriage Work*（关系稳定性实证研究）; Kabat-Zinn 2005 *Full Catastrophe Living*（正念临床应用）; Neff 2003 *Self-compassion*（慈悲冥想量化研究）; Fosha 2000 *The Transforming Power of Affect*（AEDP：触发→情感处理→疗愈）; Mikulincer & Shaver 2007 *Attachment in Adulthood*（依恋系统与关系触发）]
+
 **亲密关系 = 最强大的修行**
+
+**R/H 区分**：
+- [R] 三项技术均有经验支持基础：正念倾听→Gottman"接受影响"；触发暂停→DBT STOP技能/AEDP情感处理；慈悲练习→藏传慈心禅/Neff自我慈悲量化研究
+- [H] **SRT重解读**：关系=θ镜像系统；触发="未愈合的L₂期望被激活"（而非标准框架中的"情绪调节失败"）；慈悲练习的SRT功能是防止d值崩塌为零——此重解读框架是SRT附加，非现有关系研究所验证
 
 **为什么？**
 
@@ -524,7 +549,7 @@ $$\text{Relationship} \implies \begin{cases}
    - 我的 $L_2$ 期望是什么？
 5. **选择**回应（而非反应）
 
-**SRT**: 触发 = 你未愈合的 $L_2$ 被激活 = 疗愈机会。
+**SRT**: 触发 = 你未愈合的 $L_2$ 被激活 = 疗愈机会。[H] （L₂期望未满足→Ψ_f激增→θ防御性激活；5步骤的功能是将反应性θ切换为反思性θ，为θ更新创造时间窗）
 
 ---
 
@@ -539,53 +564,67 @@ $$\text{Relationship} \implies \begin{cases}
 
 **效果**: 即使困难时期，保持 $d > 0$。
 
+**SRT机制** [H]：慈悲练习 = 在低Ψ_f窗口（对方睡着，冲突暂停）主动激活 d 值扩张通道，防止关系困境期 d 崩塌为零（d→0 = 对方成为纯L₂工具客体）。
+
+---
+
+**可证伪预测**：
+- FC-Praxis42-1：坚持技术2（触发暂停5步）4周后，伴侣报告的"被理解感"（IOS量表）显著提升，且提升幅度预测自评d值增量——若无相关则SRT-d值解读不成立
+- FC-Praxis42-2：慈悲练习组（技术3）在关系冲突期（1周后追踪）中自评d值高于无干预对照——若无组间差异则"维持d>0"的功能主张为空
+
 ---
 
 ### §4.3 育儿作为修行
 
-**育儿 = 终极 $\theta$ 训练**
+**[R — 代际创伤传递追溯：Bowlby 1969依附理论；Dan Siegel 2011《心脑觉知》；正念育儿研究（Mindful Parenting，Kabat-Zinn 1997）；[H] — 育儿作为θ训练、θ_wounded传递的SRT形式化为新增框架]**
 
-**为什么？**
+**育儿 = 终极 $\theta$ 训练** [H]
 
-- **24/7 的挑战**（无休息）
-- **强制的 $d \uparrow$**（必须关怀孩子）
-- **暴露 $\theta$ 的盲点**（你的伤口通过反应显现）
+**为什么？**（SRT机制）
+
+- **24/7 的挑战**（无休息）→ θ无法通过回避维持旧锚定，强制暴露Ψ_f
+- **强制的 $d \uparrow$**（必须关怀孩子）→ 关怀对象扩大使d值被动提升
+- **暴露 $\theta$ 的盲点**（你的旧创伤θ配置通过自动反应显现）→ 使隐性θ变显性
 
 ---
 
 #### 正念育儿技术
 
-**技术 1: 暂停-呼吸-回应**
+**技术 1: 暂停-呼吸-回应** [R→DBT停顿技术; Mindful Parenting]
 
 孩子哭闹/发脾气——
 
-**冲动**: 立即反应（愤怒、焦虑）
+**冲动**: 立即反应（愤怒、焦虑，由θ_wounded自动激活）
 
 **修行**:
-1. **暂停** 3 秒
-2. **呼吸**
-3. **觉察**自己的情绪（而非压抑）
-4. **回应**（而非反应）
+1. **暂停** 3 秒（打断自动选择回路）
+2. **呼吸**（降低生理唤醒，使Ĝ重新可参与）
+3. **觉察**自己的情绪（而非压抑）——观察θ_wounded被触发的过程
+4. **回应**（而非反应，即选择性激活而非自动激活）
 
-**效果**: 打破代际创伤传递——
+**效果**: 减少代际创伤传递——
 
-$$\text{Your } \theta_{\text{wounded}} \xrightarrow{\text{awareness}} \text{Not passed to child}$$
+$$\theta_{\text{wounded}} \xrightarrow{\text{awareness (必要非充分)}} \text{传递概率下降}$$
+
+*说明*：awareness是减少传递的必要前提，但不充分——还需要持续练习（θ重构）和支持性环境；"不传递"是方向性目标，非单次awareness即可达到的结果。
 
 ---
 
-**技术 2: 孩子作为老师**
+**技术 2: 孩子作为老师** [H]
 
-**重构**: 
+**重构**:
 - 不是"我教孩子"
 - 而是"孩子教我临在、耐心、无条件的爱"
 
 **具体**:
-- 孩子的"困难"行为 = 你 $\theta$ 的镜子
-- 观察你的反应 = 看到自己的 $L_2$ 期望
+- 孩子的"困难"行为 = 触发你 $\theta$ 中特定锚定模式的触发器（非字面"镜子"）
+- 观察你的反应 = 看到自己的 $L_2$ 期望被违反的位置
+
+*使用边界*：此框架的风险是过度内化（"孩子的一切问题都是我的θ问题"）。孩子的困难行为也有其神经发育和外部环境原因，"孩子作为镜子"是提示审视自身反应，而非否定孩子的独立性或客观困难。
 
 ---
 
-**技术 3: 睡前祝福**
+**技术 3: 睡前祝福** [实践推荐]
 
 孩子睡着后——
 
@@ -593,7 +632,11 @@ $$\text{Your } \theta_{\text{wounded}} \xrightarrow{\text{awareness}} \text{Not 
 2. 默念："愿你幸福，愿你健康，愿你成为你自己"
 3. 感受爱流动
 
-**效果**: 强化 $d$，同时放下控制。
+**效果**（机制假设）：慈悲意向激活 → d值扩展（关怀带宽向孩子方向延伸）+ 控制性L₂期望权重降低（"成为你自己"=接受孩子的独立θ轨迹）。效果说明为SRT机制推测，未有直接实证。
+
+**证伪条件** [H]:
+- 若正念育儿练习者（≥6个月）与对照组在代际创伤测量指标（如ACE评分跨代相关性）上无差异，则技术1的SRT机制（awareness→传递降低）不成立。
+- 若θ_wounded的操作化指标（如特定触发情境的自动反应速度/强度）在育儿修行后未显著下降，则"育儿=θ训练"的功效主张需修订。
 
 ---
 
@@ -743,21 +786,23 @@ $$P(\text{Long-term Success}) \propto S_{\text{community}}$$
 
 ### §6.3 选择老师
 
-**危险信号** (避免):
-- 要求绝对服从
-- 性/财务不当
-- 承诺"快速开悟"
-- 无法被质疑
-- 情感操控
+**[R — 追溯传统修行社区（Kornfield 1993《心理治疗与禅修》, Tarthang Tulku 等）对师生关系边界的共识，SRT语言重述]**
 
-**好的老师标志**:
-- 鼓励独立思考
-- 透明、谦逊
-- 有长期修行（10+ 年）
-- 有实际效果（学生的证明）
-- 伦理清晰
+**危险信号** (避免)（SRT解读）:
+- 要求绝对服从 → **强制L₂封闭**：学生θ被单向替换为老师θ'，自主Ĝ_θ被抑制，d无法自主扩展
+- 性/财务不当 → **L₂规范严重违反**（老师自身L₂一致性失败，是d虚高的证据）
+- 承诺"快速开悟" → **商品化伪承诺**：违背"方向而非终点"框架（§8.2），将Ψ_f→0的长期过程商品化为短时可购买结果
+- 无法被质疑 → **L₂封闭强化**：压制学生的L₁体验与L₂理论的真实摩擦（正是Ψ_f需要被承担的过程被封堵）
+- 情感操控 → **Ĝ_θ被劫持**：外部情感刺激替代学生自主的选择驱动，θ更新被外部控制
 
-**记住**: 老师是**向导**，而非**救世主**。
+**好的老师标志**（SRT解读）:
+- 鼓励独立思考 → **保护学生Ĝ_θ自主性**（θ由学生自己的算子驱动，老师作为外部参考而非替代）
+- 透明、谦逊 → **L₂一致性可检验**（自身L₂约束向学生开放，不对称信息低）
+- 有长期修行（10+ 年） → **θ演化时长**（dθ/dt持续有据可查，联结§9.3生命/学习定义）
+- 有实际效果（学生的证明） → **L₁变化的外部验证**（而非仅凭老师自述）
+- 伦理清晰 → **跨领域L₂一致性**（修行领域d值的稳定性泛化到伦理行为）
+
+**记住**: 老师是**向导**，而非**救世主**。SRT表达：好老师的作用是提高学生的**d值扩展速率**（$dv_\theta/dt$），而非替代学生的Ĝ_θ。
 
 ---
 
@@ -836,37 +881,52 @@ $$\lim_{t \to \infty} \text{Separation}(\text{Practice}, \text{Life}) \to 0$$
 
 ### §8.2 标志性特征
 
+**[R — Retrodiction：追溯整合修行文献（Shinzen Young、Mark Coleman、东方传统描述）的SRT映射]**
+
 **整合的修行者**:
 
-| 特征 | 表现 |
-|:-----|:-----|
-| **自然觉察** | 不需"努力"去觉察 |
-| **平等心** | 面对顺逆境相对平衡 |
-| **自发慈悲** | 不"应该"，而自然流露 |
-| **幽默感** | 不严肃，轻松对待 |
-| **持续学习** | 仍在成长，未"到达" |
-| **谦逊** | 不宣称"开悟" |
+| 特征 | 表现 | SRT 操作化 |
+|:-----|:-----|:-----------|
+| **自然觉察** | 不需"努力"去觉察 | $d$ 高且 $\Psi_f^{awareness}$ 低（锚定已稳定，觉察无需额外能量支出） |
+| **平等心** | 面对顺逆境相对平衡 | $\theta$ 对扰动的鲁棒性（$\|\Delta\theta\|/\|\Delta L_1^{stim}\|$ 较低，高d稳定器） |
+| **自发慈悲** | 不"应该"，而自然流露 | $d$ 边界弱化（自他关怀范围重叠），$\Psi_f^{cross}$ 降低 |
+| **幽默感** | 不严肃，轻松对待 | $L_2$ 粘滞度 $\eta_{viscosity}$ 低（不过度锚定L₂自我叙事，能灵活切换框架） |
+| **持续学习** | 仍在成长，未"到达" | $d\theta/dt \neq 0$（θ持续演化，联结 §9.3 生命定义；未冻结） |
+| **谦逊** | 不宣称"开悟" | 反L₂自我封闭：不将修行成就固化为L₂成就标签（避免$d$被L₂收缩） |
+
+**"方向而非终点"的SRT表达**：整合≡ $\vec{v}_\theta \cdot \hat{e}_{integration}$ 持续为正，而非固化为L₂成就（终点化会反向封闭d）。→ 联结 T-Prax-1 中的 Shoshin 对齐（$\vec{v}_\theta \cdot \hat{e}_{target}$ 投影，而非d值本身的方向化）。
 
 **重要**: 这是**方向**，而非终点。
+
+**证伪条件**：若SRT操作化量（d值代理/Ψ_f指标/θ鲁棒性）在"自评整合程度高"的修行者中不高于对照组（经验匹配的非修行者），则SRT映射的区分效度不足。
 
 ---
 
 ### §8.3 无终点的路径
 
+**[H — 联结§9.3生命参数学习定义（Life iff dθ/dt≠0）；修行的无终点性为SRT关于灵性发展动力学的预测]**
+
 **错误期待**: "我会'完成'修行"
 
 **真相**: 修行无终点——
 
-$$\frac{d\theta}{dt} \neq 0 \quad \forall t$$
+$$\frac{d\theta}{dt} \neq 0 \quad \forall t \quad \text{（方向性：朝向} d\text{扩展，非任意变化）}$$
 
 $\theta$ 永远在演化。
 
-**类比**: 
-- 你不会"完成"锻炼身体
-- 你不会"完成"吃饭
-- 你不会"完成"呼吸
+*方向性说明*：dθ/dt≠0并非等于"θ在随机变化"——衰老、损伤、习惯固化也满足dθ/dt≠0，但不是修行。修行中dθ/dt的方向被d扩展和Ψ_f降低所约束，即朝向更大关切带宽、更低锚定代价的方向演化（有方向的成长，而非随机漂移）。
 
-**修行是生活本身的一部分**——直到死亡。
+*与生命定义的联结*：§9.3定义Life iff dθ/dt≠0（参数学习持续非零），修行的"无终点"是这个生命定义在灵性实践中的体现——停止修行（dθ/dt→0）等价于在灵性维度进入"功能性死亡"（θ固着）。
+
+**类比**:
+- 你不会"完成"锻炼身体（停止锻炼即开始退化）
+- 你不会"完成"吃饭（停止即死亡）
+- 你不会"完成"呼吸（停止即窒息）
+
+**修行是生活本身的一部分**——直到死亡（$\hat{G}_\theta$失效时θ轨迹终止，但在生命存续期间dθ/dt≠0是生命的基本动力学）。
+
+**证伪条件** [H]:
+- 若存在修行者在达到某个θ配置后θ不再变化（dθ/dt≈0的稳态，且非死亡），但其体验丰富度和d值代理指标不下降，则"修行无终点"的动力学描述需修订（存在真实终点吸引子）。
 
 ---
 
@@ -1071,3 +1131,20 @@ SRT_Spirit_09_Praxis (本文件 - 综合实践)
 ```
 
 ---
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **三层选择阶梯** (Ax-Evo-1): $T(d)$ 按 $d$ 值分层为物理 ($d \approx 0$)、自我/社会 ($0 < d < d_c$)、神性/真理 ($d \geq d_c$) 三阶。
+2. **进化向量** (Ax-Evo-2): $\vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi)$ — 进化是 $d$ 上升、$L_2$ 刚性下降、摩擦对齐的方向场。
+3. **初心对齐** (Ax-Evo-3): $\text{Shoshin} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{global})$ — 初心是自我方向与全局自由能下降方向的余弦相似度。
+4. **方向优先最优性** (T-Prax-1): $\mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}$ under $C_{compute} < \infty$ — 有限算力下，方向优先比机制穷举更优。
+
+**含义**: 灵性实践不是"信仰跳跃"，而是可操作的 $d$ 值提升与方向对齐的动力学过程。
+
+## 【理论边界/防误用声明】
+
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
+3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。

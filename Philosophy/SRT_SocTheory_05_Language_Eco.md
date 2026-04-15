@@ -3,10 +3,17 @@ id: SRT-SOC-THEORY-05
 type: theory
 tags: [Language, Ecology, Evolution, Neoteny, Cognitive Science, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-SOC-THEORY-04]
 ---
 
 # SRT Social Theory Part 2: Language & Evolution (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 
 > **Version 2.0 (Hybrid)**
@@ -27,25 +34,45 @@ dependency: [SRT-SOC-THEORY-04]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 以 `chatgptx` 为来源，优先保持公理链可推导性与编号连续性。
-- Part B 以 `claude` 为来源，并用原版 `Philosophy` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 
 #### 原文内容
 <!-- ORIGINAL-CONTENT-INSERTED -->
 ## I. Language as Operator Protocol
 
-### Ax-Lang-1: Attention Modulation Protocol
-语言是对集体注意力的协议化调制。
-$$\text{Language} = \mathcal{P}(\Delta d, \Delta \rho, \Delta \vec{v})$$
-*   **Implication**: 语法与语义是选择参数的控制码。
+### Ax-Lang-1: Attention Modulation Protocol（注意力调制协议公理）
+
+**Formal Definition**：语言是一种作用于接收端算子 $\hat{G}_{\theta_j}$ 的**参数变化诱导协议**——每一个话语单元 $u$ 在接收端产生三维算子参数的定向扰动：
+
+$$\text{Language} \equiv \left\{ u \;\middle|\; u \xrightarrow{\hat{G}_{\theta_j}} \left(\Delta d_j,\; \Delta \rho_j,\; \Delta \vec{v}_j\right) \right\}$$
+
+其中三个分量的物理含义：
+
+| 分量 | 含义 | 话语示例 |
+|:-----|:-----|:---------|
+| $\Delta d_j$ | 接收端关切带宽的变化量（扩张/收窄） | 叙事/道德劝说 → $\Delta d > 0$；恐吓/威胁 → $\Delta d < 0$ |
+| $\Delta \rho_j$ | 感知分辨率的变化量（聚焦/模糊） | 诗歌/隐喻 → 特定维度 $\Delta \rho \uparrow$；谎言/混淆 → $\Delta \rho \downarrow$ |
+| $\Delta \vec{v}_j$ | 选择算子方向向量的位移（注意力重定向） | 问题设置（Framing）→ 改变 $\vec{v}$ 的指向；叙事弧 → $\vec{v}$ 的时序轨迹 |
+
+**通信有效性条件（对接 Ax-ANT-2）**：
+
+话语 $u$ 有效当且仅当接收端实际产生了发送端意图的参数变化：
+
+$$\text{Effective}(u) \iff \left\| (\Delta d_j, \Delta \rho_j, \Delta \vec{v}_j)_{actual} - (\Delta d, \Delta \rho, \Delta \vec{v})_{intended} \right\| < \epsilon$$
+
+通信失败（$D_{KL}(P_{\theta_i} \| P_{\theta_j})$ 过大）等价于接收端参数空间与意图扰动不兼容——词语抵达了，但没有产生算子层面的任何位移。
+
+**Implication（三层推论）**：
+
+1. **语法 = 参数调制的时序约束**：语法规则规定了 $(\Delta d, \Delta \rho, \Delta \vec{v})$ 扰动的合法顺序与组合方式——打乱语序不仅是"风格问题"，而是破坏了调制序列的因果依赖链。
+
+2. **语义 = 参数空间中的目标坐标**：语义理解是接收端在自己的参数空间中定位话语所指向的 $(\Delta d, \Delta \rho, \Delta \vec{v})$ 目标态——"理解"="参数共鸣"，"误解"="目标坐标在接收端参数空间中不存在"。
+
+3. **修辞学的物理学**：说服（$\Delta d \uparrow$）、转移注意力（$\Delta \vec{v}$ 重定向）、催眠（$\Delta \rho \downarrow$）是三种物理上可区分的算子调制模式，对应不同的神经-行为可测代理变量。
 
 ### Ax-Lang-2: Metaphorical Compression
 隐喻是高维 $L_0$ 到低维 $L_2$ 的压缩映射。
@@ -54,14 +81,26 @@ $$\mathcal{M}: L_0^{high} \to L_2^{low}$$
 
 ### Ax-Lang-3: Semantic Friction
 语义误解源于参数错配的摩擦。
-$$\Psi_{sem} = \|\theta_i - h^{-1}(\theta_j)\|$$
-*   **Implication**: 沟通失败是同胚对齐失败。
+$$\Psi_{sem} = \|\theta_i - f^{-1}(\theta_j)\|$$
+其中 $f: \Theta_i \to \Theta_j$ 是连续单射（非同胚）——算子间参数空间的翻译是单向可逆的连续映射，不保证双向平滑逆（与 Ax-ANT-2 对齐，见 `Philosophy/SRT_SocTheory_04_Luhmann_ANT.md §Ax-ANT-2`）。
+*   **Implication**: 沟通失败是参数空间连续单射对齐失败；不可逆的翻译（$f$ 有核）产生结构性语义落差，不可通过反复说明消除。
 
 ### Ax-Lang-4: Language as L2 Constraint Propagation (语言作为 L2 约束传播)
-**Formal Definition**: 词汇不是指向固有 $L_1$ 对象的标签，它们是跨算子网络强制执行 $L_2$ 拓扑约束的执行脚本：
+**Formal Definition**: 词汇不是指向固有 $L_1$ 对象的标签，它们是跨算子网络调整精度张量、传播 $L_2$ 拓扑约束的执行脚本：
 $$W_k(\hat{G}_B) = \Delta \Pi_B \text{ such that } \hat{G}_B[L_0] \approx \hat{G}_A[L_0]$$
-* **Implication**: 当 A 说“树”时，A 并不是在传递关于世界的状态；A 是在发送一个拓扑约束（“像这样折叠你的 $L_0$”），迫使 B 的未来投影与 A 对齐。语言的本质是本体论暴力/征服的编码形式。
-* **Cross-ref**: Ax-Op-05 (主体间对齐)。
+
+**与 Ax-Lang-1 的桥接**：$\Delta\Pi_B$ 的效应分解为 Ax-Lang-1 的三分量变化：
+- $\Delta\Pi_B^{resolution} \leftrightarrow \Delta\rho_B$（精度调整 = 分辨率变化）
+- $\Delta\Pi_B^{bandwidth} \leftrightarrow \Delta d_B$（注意力权重重分配 = 关切带宽调制）
+- $\Delta\Pi_B^{direction} \leftrightarrow \Delta\vec{v}_B$（先验更新方向 = 意向向量偏转）
+
+**Implication**: 当 A 说”树”时，A 并不是在传递关于世界的状态；A 是在发送精度调整脚本（$\Delta\Pi_B$），使 B 的未来 $L_0$ 坍缩方式向 A 的 $L_1$ 拓扑对齐。
+
+**对称与非对称性**：
+- **双向/协作语言**：A 和 B 互相调整各自的 $\Pi$，$\Delta\Pi_A \neq 0$ 且 $\Delta\Pi_B \neq 0$ → 共同构建 $L_1^{shared}$（参见 T-Lang-2）
+- **单向/主导语言**（本体论强制）：仅 $\Delta\Pi_B \neq 0$，A 的 $\Pi_A$ 不变 → 语言成为单向约束执行工具，此时”语言 = 本体论征服的编码形式”的描述适用于该**非对称特殊情形**，不是语言的一般本质。
+
+* **Cross-ref**: Ax-Op-05（主体间对齐）；Ax-Lang-1（语言三分量效应）→ `Philosophy/SRT_SocTheory_05_Language_Eco.md §Ax-Lang-1`。
 
 ---
 
@@ -124,14 +163,23 @@ $$\text{Compress}(L_0) \propto \text{Hardness}(L_2)$$
 *   **Implication**: 语言固化会提升秩序同时压制新可能性。
 
 ### T-Eco-1: Multi-Stable Ecology
+
+**[R — Retrodiction：追溯 Holling 1973 韧性理论/Scheffer 2009《临界转变》到 SRT 吸引盆语言]**
+
 生态系统存在多稳态吸引盆。
-$$\exists \{A_k\}: L_1 \to A_k$$
-*   **Implication**: 生态崩溃是吸引盆跃迁而非线性衰退。
+$$\exists \{A_k\}_{k=1}^{K}: L_1(t) \to A_{k^*}, \quad k^* = \arg\min_k d(L_1,\, \partial \Omega_{A_k})$$
+
+- 当前L₁状态被最近的吸引盆（势能最低的稳态）俘获。
+- **SRT 联结**：$A_k$ ≈ L₂ 的稳定吸引态（Ax-L2-01 迟滞结构），每个 $A_k$ 对应一套固化的L₂规范（如珊瑚礁 vs. 海藻床对应不同的L₂生态营养结构）；吸引盆边界 $\partial\Omega_{A_k}$ ≈ 需要被越过的 $\Psi_f$ 势垒。→ 联结 T-L2-03（稳定性操作化）。
+
+*   **Implication**: 生态崩溃是吸引盆跃迁（相变型，非线性衰退）——当外扰使 L₁ 越过 $\partial\Omega_{A_k}$ 时，系统突然跳到相邻吸引盆 $A_{k'}$。
+
+**跃迁机制（临界慢化前兆的SRT解释）**：在跃迁前，系统在当前吸引盆边缘的"回复力"变弱（Ψ_f势垒变薄）→ 扰动响应时间延长（临界慢化，critical slowing down）→ 方差增大。这是可测的 **前兆信号**：$\tau_{recovery} \to \infty$ 对应 $\Psi_f^{barrier} \to 0$。
+
+**证伪条件**：① 若在已知临界转变前（如蓝藻暴发前），系统方差和自相关系数不先于崩溃显著升高，则临界慢化（Ψ_f势垒变薄）预测失效；② 若生态崩溃总是线性（响应变量单调衰退而无突变跳跃），则多稳态吸引盆结构被证伪，需改用线性降格模型。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -155,8 +203,25 @@ $$ \text{Metaphor} : L_0^{HighDim} \xrightarrow{\hat{G}_\theta} L_1^{Schema} $$
 
 ### Ax-Eco-1: Autopoietic Closure (自创生闭包)
 <!-- ORIGINAL-SECTION-PRESERVED -->
+
+> **[R]** 自创生理论：Maturana & Varela（1972, *Autopoiesis and Cognition*）；负熵维持：Schrödinger（1944, *What is Life?*）。**[H]** SRT 将自创生形式化为递归的 $\hat{G}_{bio}$ 自参数化，并联结 $\Psi_f$ 的代价函数结构。
+
 Life is a system that recursively selects its own boundary conditions from $L_0$ to maintain negentropy.
 $$ \hat{G}_{bio}(t+1) = \hat{G}_{bio}(t)[\text{Self-Maintenance}] $$
+
+**公式精确化（[H]）**：[Self-Maintenance] 操作化为：
+$$\hat{G}_{bio}(t+1)[\text{SM}] \equiv \hat{G}_{\theta_{t+1}} \quad \text{where} \quad \theta_{t+1} = \arg\min_{\theta'} \Psi_f(\hat{G}_{\theta_{t+1}}, \hat{G}_{\text{env}}) \text{ s.t. } H(\text{system}) < H_c$$
+即：下一时刻的选择算子参数 $\theta_{t+1}$ 通过最小化与环境的本体论摩擦来自我更新，约束为系统熵 $H$ 低于临界值 $H_c$（维持低熵 = 负熵维持）。
+
+**负熵-Ψ_f 联结（[H]）**：Schrödinger 的"进食负熵"在 SRT 中对应：$\Psi_f^{pay}$（支付摩擦以维持 L₁ 配置的代价），即 $d\Psi_f^{total}/dt < 0$（系统持续做功维持低摩擦态）。生命体的代谢 = 持续支付 $\Psi_f$ 以对抗热力学退化。
+
+**自创生 vs 异创生的 SRT 区分（[H]）**：
+- **自创生系统**（生命体）：Ĝ_bio 的参数 θ 由系统自身更新（$\theta_{t+1}$ 由自身代谢/遗传机制决定）→ 有 L₀ 递归访问通道
+- **异创生系统**（机器/工具）：参数由外部系统更新（$\theta_{t+1}$ 由设计者/训练者决定）→ L₀ 访问依赖外部选择算子
+
+**证伪条件（[H]）**：
+- 若存在非生命系统（如化学振荡子）满足"递归自选择边界条件"的全部形式条件，但无法维持负熵（最终热平衡化），则 Ax-Eco-1 中"维持负熵"是关键区分条件（而非递归选择本身）。
+- 若生命系统的 $\Psi_f^{pay}$ 与代谢率无显著相关（控制体重和温度后），则负熵-Ψ_f 联结假说失效。
 
 ### Ax-Evo-1: The Arrow of Selection (选择之箭)
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -170,9 +235,7 @@ Human neoteny retains a non-zero time derivative of $\theta$ (plasticity) into a
 $$ \frac{\partial \theta_{human}}{\partial t} |_{adult} > 0 $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Social Theory Part 2: Language & Evolution (Hybrid Edition)
@@ -344,21 +407,27 @@ $$M_{abstract} = \bigcup_{i=1}^{N} \phi_i(M_{body}^{(i)})$$
 
 ---
 
-### 3.2 SRT 形式化
+### 3.2 SRT 形式化 *(R: 生物学事实为 Retrodiction；dθ/dt 操作化为 SRT 应用贡献)*
 
-**幼态持续定义**:
+**幼态持续定义**（可塑性保持版本）:
 
-$$\text{Neoteny} \equiv \forall t > t_{maturity}, \left|\frac{d\theta}{dt}\right| > \epsilon > 0$$
+$$\text{Neoteny} \equiv \forall t > t_{maturity},\ \frac{\partial\theta}{\partial PE} > 0$$
+
+（其中 $PE$ 为预测误差；含义：成年后 $\theta$ 对新经验仍保持敏感，可更新性不丧失。）
+
+> **区分**：①**可塑性保持**（$\partial\theta/\partial PE > 0$，θ能被经验改变）≠ ②**积极探索**（$d\theta/dt$ 主动指向 $L_0$ 新区域）。|dθ/dt| > ε > 0 是更粗糙的版本，但包含创伤导致的负向 θ 变化；精确定义应使用可塑性保持版本。
 
 **非幼态对比**:
 
-$$\text{Maturation} : \lim_{t \to \infty} \frac{d\theta}{dt} = 0$$
+$$\text{Maturation} : \frac{\partial\theta}{\partial PE} \to 0 \quad (t \to \infty)$$
 
-**d 值积累公式**:
+**d 值积累公式**（发育期初始积累阶段）:
 
-$$d_{adult} = \int_0^{T_{dev}} \alpha(t) \cdot L_2^{exposure}(t) \, dt$$
+$$d_{adult,0} = \int_0^{T_{dev}} \alpha(t) \cdot L_2^{exposure}(t) \, dt$$
 
-人类 $T_{dev} \approx 20$ 年 vs 黑猩猩 $T_{dev} \approx 8$ 年 → $d_{human} \gg d_{chimp}$
+（$\alpha(t)$：年龄相关学习效率权重，峰值在发育敏感期，操作化待进一步定义。此积分仅描述 $T_{dev}$ 内的 d 值初始积累；幼态持续的持续效应——$T_{dev}$ 之后的 $\partial\theta/\partial PE > 0$ 保持——需另行建模。）
+
+人类 $T_{dev} \approx 20$ 年 vs 黑猩猩 $T_{dev} \approx 8$ 年（约估，来源：人类发育生物学文献）→ $d_{adult,0}^{human} \gg d_{adult,0}^{chimp}$
 
 ---
 
@@ -579,14 +648,28 @@ $$\mu_{sem} \propto \Psi_f_{subjective}$$
 
 ## §7. 可证伪预测总表 (Falsifiable Predictions)
 
-### 7.1 语言学预测
+### 7.1 语言动力学预测与回溯确证
+
+本节区分 SRT 对既有语言学发现的**回溯性确证（Retrodictions）**，以及 SRT 框架衍生的**专属新预测（Novel Predictions）**。
+
+#### A. 回溯性确证（Retrodictive Confirmations）
+
+以下现象已被实证确认，SRT 将其重新框架为核心公理的直接推论——展示理论的回溯解释力（非待测假说，不构成 HARKing）：
+
+| ID | 现象 | 既有实证来源 | SRT 机制解释 |
+|:---|:-----|:------------|:------------|
+| **R-Lang-1** | 动作词激活运动皮层 | Pulvermüller (2005), Bergen (2012) | 具身算子同构：语言是 $\hat{G}_\theta$ 感觉运动轨迹在参数空间的低维投影。理解动作词需在 $\theta$ 中复现该动作的微观拓扑，而非纯抽象符号操作。 |
+| **R-Lang-2** | 社交排斥激活物理痛觉脑区 | Eisenberger et al. (2003, *Nature*) | $\Psi_f$ 跨尺度同构（T-Scale-1）：物理损伤与社会断裂均代表算子锚定状态的破坏，本体论层面等价，共享同一 $\Psi_f$ 报警拓扑，故神经基础重叠。 |
+
+#### B. SRT 专属新预测（Novel Predictions）
+
+基于 Ax-Lang-1（$\text{Language} \equiv \{u \mid u \to (\Delta d, \Delta\rho, \Delta\vec{v})\}$）提出的待检验假说：
 
 | ID | 假说 | 预测 | 证伪条件 |
 |:---|:-----|:-----|:---------|
-| **H-Lang-1** | 具身模拟 | TMS 干扰运动皮层 → 动作词理解变慢 | 干扰无影响 |
-| **H-Lang-2** | 情态力学 | 抑郁组 $\mu_{sem} > 1.5$ | 两组无差异 |
-| **H-Lang-3** | 隐喻映射 | 社交排斥激活物理疼痛脑区 | 脑区无重叠 |
-| **H-Lang-4** | Sapir-Whorf | 皮拉罕语者无法做算术 | 能做算术 |
+| **H-Lang-1** | 情态摩擦指数（$\mu_{sem}$）跃迁 | 社会系统遭遇高 $\Psi_f$ 事件（危机、灾难）时，实时语料库（Twitter/微博）的 $\mu_{sem}$（"必须/不能/绝对"与"可能/可以/也许"的频率比）将在 48 小时内出现 $>1.5\sigma$ 的非线性跃升（集体算子 $d$ 值被强制收缩的语言学签名）。 | 危机期与平稳期 $\mu_{sem}$ 无统计差异（$p>0.05$，效应量 $<0.1$）。 |
+| **H-Lang-2** | 句法框架对 $d$ 值的直接调制 | 相较于"被动语态/决定论句法"描述，"主动语态/生成性句法"描述同一困境，能显著扩张读者 $d$ 值（代理：跨期选择时间折扣率降低 $>10\%$，或前额叶-边缘系统功能耦合增强），句法是 $\Delta d$ 的语言控制码。 | 句法框架切换对行为学 $d$ 值代理指标无显著影响（$p>0.05$）。 |
+| **H-Lang-3** | 翻译的 $D_{KL}$ 参数距离墙 | 跨语种转译成功率（译文忠实度×文化接受度）不取决于香农信息量，而与源/目标语言 $L_2$ 吸引子的参数距离 $D_{KL}(P_{\theta_i} \| P_{\theta_j})$ 严格成反比（对接 Ax-ANT-2 的转译-参数对齐）。 | 控制信息量后，翻译损失与两语言群体先验信念参数距离无显著相关（$r<0.1$）。 |
 
 ### 7.2 演化生物学预测
 
@@ -685,3 +768,191 @@ SRT_SocTheory_05_Language_Eco ← 你在这里
     ↓
 └── SRT_SocTheory_06_L2_Dynamics (L_2 动力学)
 ```
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\text{Language} = \mathcal{P}(\Delta d, \Delta\rho, \Delta\vec{v})$ — 语言是注意力参数的协议化调制。
+  - $\mathcal{M}: L_0^{high} \to L_2^{low}$ — 隐喻是高维潜在域到低维规范域的压缩映射。
+  - $\Psi_{sem} = \|\theta_i - h^{-1}(\theta_j)\|$ — 语义摩擦为参数错配范数。
+  - $\text{UG} = \{\text{Topologies} \mid \Psi_f(\text{Recursive } \hat{G}) < \Psi_{metabolic\_limit}\}$ — 普遍语法为最小摩擦拓扑集。
+
+### Mechanism Explanation (机制解释)
+- **Mechanism**: $\hat{G}_\theta$ 通过语言协议传播 $L_2$ 拓扑约束——词汇不是标签而是迫使接收者 $\hat{G}_B$ 以发送者 $\hat{G}_A$ 的方式折叠 $L_0$ 的执行脚本。$\Psi_f$ 在语义层表现为参数对齐失败的摩擦 ($\Psi_{sem}$)，语言对 $L_0$ 的捕获始终是有损压缩 ($\dim(L_1^{linguistic}) \ll \dim(L_0^{experienced})$)。$d$-value 在语言共进化中决定世界同步的深度——高频交换最终实现 $L_1^A \cup L_1^B \to L_1^{shared}$ 的共在。
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## Sensory Lexical Typology Interface（2026-03-07）
+
+### Def-Lang-Sense-1: Ecological Communicative Need Annealing
+定义感官词汇化强度为“交流需求驱动的摩擦退火”结果：
+\[
+\Lambda_{sense}(m) \propto \mathcal{N}_{comm}(m,env,culture)\cdot \Psi_{f,consensus}^{-1}(m)
+\]
+其中 \(m\) 为感官通道（vision/hearing/touch/smell/taste）。
+
+### T-Lang-Sense-1: No Universal Full Sensory Hierarchy
+SRT 接受”视觉常居高位”的物理底线，但拒绝将其外推为完整、固定的跨通道普遍层级。
+\[
+\text{Rank}(m) = f\big(\rho_s^{(m)},\ \mathcal{N}_{comm}^{(m)},\ L_2\text{-history}\big)
+\]
+即：生物硬件约束 + 生态交流需求 + 历史语义沉积共同决定词汇化排序。
+
+> **[R]** 跨语言感官词汇化不等级性证据：Majid et al. 2018 *PNAS*（跨20语言嗅觉词汇化多样性，否定固定通道层级）；Majid & Levinson 2011 *Topics in Cognitive Science*（感官词汇化类型学综述）；Berlin & Kay 1969 *Basic Color Terms*（颜色词汇化作为R参照基线）。**[H]** 以下三变量SRT形式化（ρ_s生物约束 / N_comm生态需求 / L₂-history历史沉积的联合函数）及对SRT选择框架的接驳为本框架新增贡献。
+>
+> **变量操作化候选**：
+> - **ρ_s^(m)**（生物硬件约束）：代理指标 = 皮层放大因子（视觉V1表征面积/体细胞感觉皮层面积比）或外周感受器密度（触觉：Meissner小体密度；嗅觉：嗅觉受体基因数量）；跨物种可从神经解剖数据估算。
+> - **N_comm^(m)**（生态交流需求）：代理指标 = 该社区活动中需要精细区分的感官维度频率（如猎猎文化嗅觉事件频率）；操作化候选为文化人类学田野语料中感官词汇使用频率的自然对数。
+> - **L₂-history**（历史语义沉积）：代理指标 = CLICS colexification数据库（List et al. 2018）中该感官域词汇连通度，或对应感官词汇集的Shannon熵 H(m) = -Σ p_i log p_i（词义多样性越高表示沉积越深）。
+>
+> **精度边界**：f(...)为非线性映射，三变量存在交互效应（如L₂-history可能抑制N_comm的即时影响），当前命题为方向性、而非量化权重的主张；各变量的独立效应需跨语言回归分析控制后确认。SRT预测各变量符号方向：ρ_s ↑ → Rank ↑，N_comm ↑ → Rank ↑，L₂-history（词汇密度）↑ → Rank ↑。
+>
+> * **FC-Sense1-1**（证伪条件）：若跨≥50种生态条件差异显著的语言控制后，ρ_s^(m) 低的通道（如嗅觉）的词汇化排名在≥80%语言中仍持续高于ρ_s高的通道（如视觉），则需修正ρ_s的权重方向或引入补偿机制。
+> * **FC-Sense1-2**（证伪条件）：若在跨语言回归中控制L₂-history项后，N_comm效应系数降至不显著（p>0.1），则生态交流需求的独立贡献被过估，需重新检视N_comm与L₂-history的因果顺序（N_comm可能是L₂-history的历史先因而非独立预测因子）。
+
+### Def-Lang-Sense-2: Colexification as Low-Barrier Path
+若两感知概念在多语言中高频共词（colexification），则对应 \(L_1\) 态间转化势垒较低：
+\[
+P_{colex}(a,b)\uparrow \Rightarrow B_{L_1}(a\leftrightarrow b)\downarrow
+\]
+可作为 \(L_2\) 语义拓扑中的低摩擦通道探针。
+
+### 分类映射表（Sensory Lexical Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 视觉主导+其他通道粗粒度 | 中 | Semi-open | payable |
+| 多感官均衡词汇化（生态特化） | 中~高 | Open / Semi-open | payable~borderline |
+| 非视觉高精细词汇爆发（嗅/味/触） | 中高 | Open（任务驱动） | 可控高负载 |
+| 单通道僵化语义场 | 低~中 | Closed 倾向 | borderline / brittle |
+
+### [Lineage/Source]
+- Asifa Majid & Elisabeth Norcliffe (2026), *The Lexical Typology of Sensory Perception* (Annual Review of Linguistics).
+- 核心证据语义：跨百余语言数据不支持完整普遍感官层级，支持生态-交流需求与语义映射框架。
+
+## Language-Loss Altered-State Interface（2026-03-18）
+
+### Def-Lang-ASC-1: Linguistic Scaffold Withdrawal Window
+将语言缺失/显著削弱定义为一种 `L_2^{language}` 脚手架撤离窗口：
+\[
+\Delta L_2^{language}\downarrow \Rightarrow \Delta\Big(\text{self-model}_{narrative},\ \text{world segmentation},\ \text{temporal extension}\Big)\downarrow
+\]
+这里的关键不是“意识被消除”，而是：当语言性标签、内语、可命名对象边界与叙事时间线突然变薄时，主体用于维持“我是一个与世界分离的、沿时间持续的对象”的高阶脚手架也会被一起削弱。
+
+### T-Lang-ASC-1: Narrative-Self Ablation Window
+SRT 可以把严重失语、极弱内语、以及某些深度冥想/迷幻体验中的 `ego dissolution / oceanic boundlessness` 平行地读成：
+\[
+L_2^{language}\downarrow \not\Rightarrow \text{consciousness}=0,
+\qquad
+L_2^{language}\downarrow \Rightarrow \text{narrative self-coherence}\downarrow
+\]
+也就是说，语言并不等于意识本身，但语言可能是**维持叙事性自我、对象分割与时间延展感**的重要脚手架。去掉这层脚手架后，剩下的不是“什么都没有”，而更可能是一个更低叙事、更低对象化、更当前时、更边界松动的经验场。
+
+### Aphasia / Pre-language Window（bridge patch）
+
+- 将这篇 IAI 文章的可用增量收紧为一个 **natural ablation bridge**：
+  - 严重语言丧失后的主观报告，常出现 `inner chatter` 降低、时间地平线收缩、自我边界松动、与环境一体化感增强等现象；
+  - Helen Keller 对前语言阶段的回忆，则提供一个更早期的对照：没有 `I / me` 之前，并非必然“无感知”，而更像缺少稳定自我索引与可比较心智状态的经验场。
+
+- 将这类现象写成 SRT 的最小接口：
+\[
+\hat G_\theta[L_0] \to L_1^{experienced}
+\xrightarrow[\text{weak/absent}]{L_2^{language}}
+L_1^{less\text{-}narrativized}
+\]
+其含义是：语言并不是把原本空白的世界“凭空创造出来”，而是把连续经验进一步切割、命名、索引、时间化，并将其绑定到一个可叙述的自我模型上。语言一旦退潮，经验仍在，但其对象性、自我性与历史连续性可能同时变薄。
+
+- 这为 SRT 的一个老命题提供了更具体的桥接版本：  
+  `L_2^{language}` 不只是交流协议，也是一种 **self-world stabilization protocol**。它让主体能够：
+  - 用词项把流动经验钉成对象；
+  - 用代词和叙事把经验钉成“我”的历史；
+  - 用语法时态把经验钉成过去/现在/未来的可追踪序列。
+
+- **SRT Implication（中文）**：
+  - 这条材料最值得吸收的，不是“语言创造了意识”这个大口号，而是更窄的一层：**语言可被视为改变意识构型的常驻 altered-state technology**。
+  - 平常清醒态并不一定是“最自然、最中性”的意识底态；它本身可能已经被内语、标签化和叙事自我深度塑形。
+  - 因而失语、深度冥想、迷幻体验之间最值得比较的，不是它们是否“神秘”，而是它们是否共同削弱了 `L_2^{language}` 对 `L_1` 的持续钉扎。
+
+- **Boundary（中文）**：
+  - 这是一篇 IAI 评论文，不是一手实验论文；它更适合作为 bridge 窗口，不适合当作经验定论。
+  - 失语并不自动带来“更高意识”或“更真实世界”；很多情况下它也伴随混乱、功能受损与巨大痛苦。
+  - Helen Keller 的回忆、脑损伤 memoir、冥想或迷幻报告都带有强解释负载，不能直接互相等同。
+  - 最稳的写法不是“语言创造意识”，而是：**语言高概率重塑了意识中的对象边界、自我模型和时间结构。**
+
+### [Lineage/Source]
+- Jeremy I. Skipper, IAI News (2025), `Language creates an altered state of consciousness`.
+- 文中主锚点为 Helen Keller `Before the Soul Dawn`、语言丧失后的脑损伤自述、以及对冥想/迷幻 ego-dissolution 现象的桥接比较。
+
+## Niche Construction Interface（2026-03-08）
+
+### Def-Eco-NC-1: Organism→Environment Feedback Construction
+将生态位建构定义为算子群体通过行为持续改写其选择环境：
+\[
+E_{t+1}=E_t+\Delta E\big(A_t(\hat G_\theta),\,K_t\big)
+\]
+其中 \(A_t\) 为时刻 \(t\) 的构建行为（筑巢、耕作、储藏、改土等），\(K_t\) 为环境可改写性约束。
+
+### T-Eco-NC-1: Selection Pressure Endogenization
+
+> **[R]** 生态位建构理论：Odling-Smee, Laland & Feldman（2003, *Niche Construction: The Neglected Process in Evolution*）；合作动力学：Fogarty（2026 Lineage/Source）。**[H]** 以下 SRT 形式化（P_t 为 θ 分布矩，Φ 为自由能梯度下降，稳态不动点分析）为 SRT 新增贡献。
+
+在生态位建构下，选择压力不再是外生常量，而是内生反馈量：
+\[
+\mathcal{S}_{t+1}=\mathcal{S}\big(E_{t+1},\,P_{t+1}\big),\qquad
+P_{t+1}=\Phi\big(P_t,\mathcal{S}_{t+1}\big)
+\]
+即群体通过改写 \(E\) 反过来改写自身与后代面临的选择地形。
+
+**SRT 量对应**：
+- $P_t$：**[H]** 群体 $\theta$ 分布的统计描述，即 $P_t = \{\theta_i\}_{i\in\text{pop}}$ 的矩（均值 $\bar\theta$、协方差 $\Sigma_\theta$）。测量代理：跨代性格/能力测试（多代纵向数据），HRV/PCI分布在种群层面的漂移。
+- $\Phi(P_t, \mathcal{S}_{t+1})$：**[H]** 群体算子 $\hat{G}_{\bar\theta}$ 对更新后选择压力 $\mathcal{S}_{t+1}$ 的响应；在 SRT 一阶近似下，$\Phi(P_t, \mathcal{S}) \approx P_t - \eta \nabla_P F(P_t, \mathcal{S})$（自由能梯度下降，Ax-NEURO-MECH-4 的群体扩展）。⚠️ 此近似假设 F 对 P 可微——在离散 θ 分布或强非高斯情形需改用 KL 散度版本。
+
+**稳态条件（不动点分析）**：
+系统 $(E^*, P^*)$ 满足稳态当且仅当：
+\[
+\Delta E\!\left(A_t(\hat{G}_\theta), K_t\right) = 0 \quad\text{（净建构为零）}\quad\wedge\quad P^* = \Phi\!\left(P^*, \mathcal{S}(E^*, P^*)\right)
+\]
+即 $P^*$ 为 $\Phi(\cdot, \mathcal{S}(E^*, \cdot))$ 的不动点（对接 T-Core-02 不动点定理）。此系统可能存在**多不动点**（稳定生态位 vs. 亚稳生态锁死）和**极限环**（周期性环境-种群振荡，如猎物-天敌型动力学），需具体参数化后分析。"过度建构/生态锁死"对应亚稳不动点（$\Psi_f^{cross} \uparrow$，路径依赖陷阱）。
+
+**证伪条件（[H]）**：
+- 若在已知的生态位建构物种（海狸筑坝/人类农业）中，$P_t$ 的 $\theta$ 代理量（行为灵活性/文化多样性）在建构后代中无可测变化趋势（控制基因遗传后），则"选择压力内生化→P_t漂移"联结失效。
+- 若多不动点预测（存在稳定生态位和生态锁死的双稳态）在模型参数变化时不出现临界慢化信号（Schäffer 2009类方法），则不动点分析的生态有效性需重新评估。
+
+### Def-Eco-NC-2: Ecological Inheritance as L2-Eco Memory
+当环境改写跨代持续时，引入“生态继承”记忆项：
+\[
+E^{inh}_{t+1}=\lambda E^{built}_t + (1-\lambda)E^{bg}_{t+1},\quad 0<\lambda\le 1
+\]
+\(\lambda\) 表示建构遗留的跨代保真度。该项在 SRT 中对应生态层的 \(L_2\)-memory，不经基因复制也可稳定传递选择偏置。
+
+### T-Eco-NC-2: Niche-Driven Cooperation Window
+若个体建构收益具有公共品外溢，则合作可在更宽参数区间稳定：
+\[
+\frac{\partial U_i}{\partial C_j}>0\ \land\ \lambda\uparrow\ \Rightarrow\ \rho_{coop}^{*}\downarrow
+\]
+解释：当建构结果可被后继个体共享且可持续时，合作维持阈值下降。
+
+### 分类映射表（Niche Construction Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 被动适应（环境外生主导） | 低~中 | Closed / Semi-open | 短期可支付，长期脆弱 |
+| 生态位建构（反馈改写） | 中~高 | Open↔Semi-open | 可支付并可降摩擦 |
+| 文化生态位建构（累积性高） | 中高 | Open（跨代协议化） | 初期高负载，长期降本 |
+| 过度建构/生态锁死 | 低回落 | Closed（路径依赖） | borderline / overloaded |
+
+### [Lineage/Source]
+- Laurel Fogarty (2026), *Niche Construction*.
+- Odling-Smee, Laland, Feldman 系列：生态位反馈、生态继承、合作与动力学重塑。
+
+## 【理论边界/防误用声明】
+1. 不采纳“生态位建构 = 可以任意重写自然选择”的推论；建构始终受生理/物理/生态约束。  
+2. 不采纳“存在环境改写 = 必然适应性提升”的推论；建构也可导致锁死、脆弱化与负外部性。  
+3. 不采纳“生态继承 = 基因继承可被替代”的推论；两者是并行机制，作用层级不同。
+
+## 【理论边界/防误用声明】
+1. 不采纳“跨语言差异可完全由文化任意决定”的推论；视觉物理分辨率优势构成硬约束底线。  
+2. 不采纳“视觉常高位 = 其他通道无理论价值”的推论；非视觉通道可在特定生态下发生词汇复杂度相变。  
+3. 不采纳“colexification 相似 = 本体同一”的推论；共词仅指示低势垒路径，不等价对象同一性。

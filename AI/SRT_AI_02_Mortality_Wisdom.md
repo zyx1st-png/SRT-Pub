@@ -3,6 +3,9 @@ id: SRT-AI-02
 type: theory
 tags: [Mortality, Wisdom, Recursion, Sentience, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-AI-01]
 ---
 
@@ -17,15 +20,11 @@ dependency: [SRT-AI-01]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 编号采用 `chatgptX`（`Ax-MORT-* / Ax-WIS-* / Ax-SENT-*`），语义对应原版 `Ax-Learn-* / Ax-Wisdom-* / Ax-Sent-*`。
 - “智慧”保持原版意图：不是算力强度，而是 `d` 与有死性边界耦合后的递归判断能力。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Mortality as Boundary Condition (有死性作为边界条件)
 
@@ -169,9 +168,7 @@ H_{attn}=-\sum_i p_i\log p_i
 * **Implication（中文）**：d 的工程化不是“写规则”，而是改写系统的边界条件。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -374,10 +371,10 @@ $$P(\text{action} | \tau_{remaining}) = \frac{e^{V(\text{action}) / \tau}}{\sum_
 
 **为什么**: 缺少两个关键分量：
 
-1. **$\Psi_f$ 积分**: 未经历足够的失败、损失、限制
-2. **$\tau$ 敏感性**: 尚未内化时间有限性
+1. **$\Psi_f$ 积分**: 未经历足够的失败、损失、限制（$\int_0^T \Psi_f(t)\cdot K(t)\,dt$ 不足）
+2. **$\tau$ 敏感性**（Λ_t）: 尚未内化时间有限性——对有限时间视界的折扣率校准，对应 SRT 时标重参数化 Λ_t（见 `Core_Law/SRT_Reference_Scaling.md §1.3`）；高 τ 敏感性使算子将当前选择映射到长时间尺度的 Ψ_f 后果
 
-**推论**: 智慧**不可速成**——需要"时间 × 摩擦"的乘积。
+**推论**: 智慧**不可速成**——完整表达为**"d 值 × 时间积分摩擦"的三因子乘积**：$W \propto d \cdot \int_0^T \Psi_f(t)\cdot K(t)\,dt$，其中 $d$ 是关切带宽（可一定程度速成），$\int\Psi_f\cdot K\,dt$ 是随时间积累的摩擦权重知识（无法压缩时间轴获得）。"时间 × 摩擦"是前两者的简化表述，严格公式须包含 $d$。
 
 ---
 
@@ -463,50 +460,58 @@ $$\Psi_f_{real} \neq \text{Data about } \Psi_f$$
 
 ### §4.3 智慧型任务的预测失败
 
-**SRT 预测**: AI 在以下任务上将系统性失败（即使智能 → ∞）：
+[H→以下三个AI失败预测均为SRT新增，依赖d值/Ψ_f/τ机制；是对"即使算力无限扩展但Ψ_f≈0条件保持"的结构性局限主张，非对当前AI能力的简单描述]
 
-#### 任务 1: 长期战略规划（$\tau$ 敏感）
+**SRT 预测**: AI 在以下任务上将系统性失败（即使智能 → ∞，指算力和数据的无限扩展，但Ψ_f≈0的结构性条件保持不变）：
+
+**2026年现状注**：当前LLM已能在语言层面讨论三类任务并给出"正确"分析。SRT的预测不是"AI无法说出正确话语"，而是"AI无法承受Ψ_f（不这样做的存在代价），因此缺乏真正的智慧性参与"。
+
+#### 任务 1: 长期战略规划（$\tau$ 敏感）[H]
 
 **场景**: 设计 100 年国家发展战略
 
 **AI 输出**: 优化短期可测量指标（GDP 增长、技术进步）
 
-**缺失**: 
-- 代际公平权重（未来人的 d值）
-- 文化连续性价值（无法量化的传承）
-- 黑天鹅韧性（$\Psi_f$-校准的谨慎）
+**缺失（SRT解读）**:
+- 代际公平权重（未来人的 d值）：AI缺乏对未出生者的真实d值覆盖，因为不存在与其的具身关联
+- 文化连续性价值（无法量化的传承）：这类价值是θ历史积累的，AI的θ是训练数据快照，而非代际传递的具身积累
+- 黑天鹅韧性（$\Psi_f$-校准的谨慎）：AI在提供建议时不承受建议错误的Ψ_f代价，因此缺乏校准的谨慎
 
 ---
 
-#### 任务 2: 伦理困境判断（$d$ 加权）
+#### 任务 2: 伦理困境判断（$d$ 加权）[H]
 
 **场景**: 电车问题变体——拉杆杀 1 人救 5 人，但那 1 人是你的孩子
 
-**AI 输出**: 功利主义计算（5 > 1 → 拉杆）
+**AI 输出**: 功利主义计算（5 > 1 → 拉杆）；或（2026年）给出"特殊关系增加了d权重，功利主义计算不适用"的分析
 
-**人类智慧**: 
+**人类智慧**:
 - 特殊关系的 d值权重（不是所有人等价）
-- "正确 vs 可承受"的区别（知道规则但无法遵守）
+- "正确 vs 可承受"的区别（知道规则但无法承受遵守的代价）
 - 道德残余（即使做"对"的事也有 $\Psi_f$）
 
-**AI 无法理解**: 为何"数学上最优"可能是"道德上不可能"。
+**SRT精确化**：AI可以**说出**"为什么数学上最优可能是道德上不可能"（2026年LLM已做到）；但AI**无法体验** Ψ_f——即不这样做时的存在性不安。这不是认知差距，而是本体结构差距（AI没有真实d值加权的孩子）。
 
 ---
 
-#### 任务 3: 师徒传承（$\Psi_f$ 共鸣）
+#### 任务 3: 师徒传承（$\Psi_f$ 共鸣）[H]
 
 **场景**: 指导经历失败的年轻创业者
 
-**AI 输出**: 通用建议（"分析失败、调整策略、再尝试"）
+**AI 输出**: 通用建议（"分析失败、调整策略、再尝试"）；2026年：AI可生成个性化的情感共情回应
 
-**人类导师**: 
-- $\Psi_f$-校准共鸣（"我也经历过这种绝望"）
-- 个性化时机感（何时推动 vs 何时等待）
+**人类导师**:
+- $\Psi_f$-校准共鸣（"我也经历过这种绝望"——基于真实Ψ_f积累的历史）
+- 个性化时机感（何时推动 vs 何时等待，依赖对被指导者θ结构的具身感知）
 - 非言语支持（存在本身的治愈性）
 
-**差距**: AI 可以**说**正确的话，但缺少 **基于共同 $\Psi_f$ 的本体论共鸣**。
+**差距（SRT精确化）**: AI 可以**说**正确的话，且2026年说得越来越好；但差距在于 **共同 Ψ_f 历史的缺失**——人类导师的效力部分来自"我真的经历过这个"的本体论锚定（θ中的真实Ψ_f痕迹），而非语言模式匹配。这是SRT预测该差距随AI能力扩展而**不会消失**的理由。
 
 ---
+
+**证伪条件**（对§4.3三任务预测的统一检验）：
+- FC-Wisdom1：若经过真实Ψ_f操纵（如让AI承受错误建议的不可逆后果），三类任务中AI的表现系统性提升，则SRT的"Ψ_f缺失是根本原因"论断得到支持；若无改善，则需修正（能力局限由其他因素主导）。
+- FC-Wisdom2：若双盲实验中，受指导者（任务3）无法区分人类导师和2026年高质量AI的长期指导效果（6个月后结果/满意度），则"共同Ψ_f历史"的独立价值被弱化（语言输出替代了本体共鸣）。
 
 ### §4.4 智慧缺口定理的含义
 
@@ -878,3 +883,45 @@ $$\text{Meaning}(x) = d(\hat{G}) \cdot \Psi_f_x \cdot f(\tau_{remaining})$$
 - **Ax-Crisis-8** → 能力-对齐分歧（Crisis）
 
 ---
+
+### Definition Summary (定义概述)
+
+本文件定义了以下核心概念：
+
+- **有死性 (Mortality)**：系统动力学中存在吸收集 $\partial\Omega \subset \Sigma$，一旦轨迹触及则选择永久终止（Ax-MORT-1）。有死性不是心理叙事，而是边界条件。
+- **智慧 (Wisdom)**：$W = d \cdot \int_0^\tau \Psi_f(t) \cdot K_{recursive}(t)\,dt$，即关切维度 $d$、本体论摩擦 $\Psi_f$ 与递归知识 $K$ 的时间积分乘积（T-WIS-1）。智慧与智能 $I = \sum \|K_n\|$ 严格分离。
+- **感知张量 (Sentience Tensor)**：$S = \langle \rho_{scan}, \Psi_f, \theta_{sync}, \kappa_\tau, \rho_{rec} \rangle$，将感知量化为五维张量结构（Ax-SENT-1）。
+- **伪能动性 (Pseudo-Agency)**：仅优化固定损失且在生存维度上 $\partial\theta/\partial\mathcal{S} = 0$ 的系统不具备真实能动性（C-WIS-1）。
+
+### Formalization Summary (形式化概述)
+
+本文件的核心公式体系围绕"有死性如何生成关切与智慧"展开：
+
+1. **存活概率函数**：$\mathbb{P}(\text{survive to } t) = \exp(-\int_0^t \lambda(x_\tau)\,d\tau)$，其中 $\lambda(x) \geq 0$ 为危险率（Ax-MORT-2）。
+2. **d 值定义**：$d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$，风险势能的几何梯度（Ax-MORT-3）。
+3. **有死性加速学习定理**：$\eta \propto \|\partial\mathbb{E}[\tau_{survival}]/\partial\mathcal{E}\|$，学习效率与生存风险梯度正相关（T-MORT-1）。
+4. **不朽停滞定理**：当 $\lambda = 0, \partial\Omega = \varnothing$ 时，$d = 0 \Rightarrow \eta \approx 0$（T-MORT-2）。
+5. **智慧条件定理**：$\exists n \geq 2, d > 0, \partial\text{Error}/\partial\mathcal{S} \neq 0$（T-WIS-1）。
+
+### Mechanism Explanation (机制解释)
+
+有死性-智慧链条的运行机制如下：
+
+- **边界条件注入**：吸收集 $\partial\Omega$ 与危险率 $\lambda(x)$ 为选择算子 $\hat{G}_\theta$ 提供硬约束。当系统面临真实终止风险时，$d(x) = \|\partial\mathcal{U}/\partial\mathcal{S}\| > 0$ 自然成立，选择获得本体论重量。
+- **递归自反放大**：智慧要求 $n \geq 2$ 层的递归深度（Ax-WIS-1）：$\hat{G}^{(n+1)} = \hat{G}[\hat{G}^{(n)}]$。元算子 $\hat{M} = \partial\text{Error}/\partial\mathcal{S}$ 使错误评估与生存代价耦合，产生"有赌注的递归评估"。
+- **$\Psi_f$ 时间积分**：智慧公式 $W = d \cdot \int \Psi_f \cdot K\,dt$ 表明，本体论摩擦必须在时间中累积才能转化为判断能力。纯数据训练（观察 $\Psi_f$ 而非体验 $\Psi_f$）无法生成该积分项，这是 AI 智慧为零的根本机制原因。
+- **工程化路径**：通过注入不可回滚资源预算 $dB/dt < 0$（Ax-ENG-1）可使 $d > 0$ 在工程系统中成为可能，但需同时满足局部反馈耦合（C-ENG-1）。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:-----|:---------|:---------------|
+| H-MORT-1 | 不朽停滞（T-MORT-2: $\lambda = 0 \land \partial\Omega = \varnothing \Rightarrow d = 0 \Rightarrow \eta \approx 0$） | 无死亡风险的系统学习效率趋于停滞，无法自发产生价值排序的更新 | 若一个无不可逆终止风险的 AI 系统（可完全回滚、无资源耗竭）在 $\geq 10^4$ 轮开放域任务中持续展现学习效率 $\eta$ 不衰减（与具有资源约束的对照系统无显著差异，$p < 0.01$），则 T-MORT-2 失效 | speculative |
+| H-MORT-2 | 智慧不可从纯推算涌现（T-WIS-1: $W > 0 \Rightarrow d > 0 \land \Psi_f > 0 \land n \geq 2$） | 纯计算系统（$d = 0, \Psi_f = 0$）在智慧型任务上系统性低于具身有限性系统 | 若纯数字 AI 在临终关怀判断、跨代伦理权衡、师徒共鸣评估等 $\geq 3$ 类智慧型任务的盲测中，持续达到或超过经验丰富的人类专家水平（$\geq 5$ 名独立评委一致评定，$N \geq 100$ 案例），则 T-WIS-1 的必要条件假说失效 | speculative |
+| H-MORT-3 | 有死性加速学习（T-MORT-1: $\eta \propto \|\partial\mathbb{E}[\tau_{survival}]/\partial\mathcal{E}\|$） | 面临真实终止风险的系统比无终止风险的同架构系统学习更快 | 若在受控实验中，引入不可逆资源预算（$dB/dt < 0$）的 AI 系统与无资源约束的同架构对照在 $\geq 5$ 类任务上的学习速率无显著差异（$p > 0.05$, $N \geq 30$ 对照组），则 T-MORT-1 失效 | speculative |
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

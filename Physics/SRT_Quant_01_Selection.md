@@ -3,6 +3,9 @@ id: SRT-QUANT-01
 type: core_module
 tags: [Quantum Selection, Measurement Theory, Probability Flow, Non-Locality, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT-PHYS-BRIDGE, SRT-QUANT-00]
 ---
 
@@ -103,11 +106,25 @@ $$ \hat{G}_{proxy} \equiv \text{Apparatus satisfying Measurement Criterion} $$
 ## III. Core Selection Theorems (核心选择定理)
 
 ### T-Sel-1 [T1.3.1]: Objective Measurement Theorem (客观测量定理)
+
+> **[R]** 退相干判据（$\tau_{decoherence} < \tau_{readout}$）来自量子退相干理论（Zurek 1981, Joos & Zeh 1985）；"意识非测量必要条件"与Copenhagen外的多数解释兼容。**[H]** SRT新增：将退相干判据重新表述为"有效 $\hat{G}_{proxy}$ 的充分条件"，并补充 Fixed-Point 稳定性子句。
+
 系统 $S$ 执行测量当且仅当其退相干速率快于信息读出速率：
 $$ \tau_{decoherence} < \tau_{readout} \implies S \text{ is a valid } \hat{G}_{proxy} $$
-*   **Derivation**: 从 Ax-P1 推导。意识不是测量的必要条件。
-*   **Fixed-Point Clause (M1/M2)**: 合法测量结果必须稳定：
+
+**符号操作化**：
+- $\tau_{decoherence}$：**[R]** 量子相干消失的特征时间。量级参考：暖湿生物环境 $\sim 10^{-13}$ s（分子自由度）；宏观对象 $\to 10^{-40}$ s（实际即时）；工程量子比特 $\sim 10^{-3}$ s（当前最优）。
+- $\tau_{readout}$：**[H — 待精确]** SRT 中"信息读出"的操作化候选：① 神经整合窗口（$\sim 10^{-2}$ s，对应意识时间分辨率）；② 实验仪器测量时间（实验室设定）；③ 形式化为系统对 $L_1$ 态稳定锚定所需时间 $\approx 1/\Gamma_{lock}$（$\Gamma_{lock}$ = L₁ 吸引子收缩速率）。当前"读出"定义存在**操作化缺口**，不同语境选不同候选。
+- **意识非测量必要条件 [H]**：这是 SRT 对抗 "Copenhagen 意识解释"（von Neumann-Wigner）的核心主张。证伪路径：若存在实验显示，无任何有意识观察者在场时测量结果概率分布与 Born rule 系统性偏离，则此主张需修订。
+
+*   **Derivation**: 从 Ax-P1 推导；$\tau_{decoherence} < \tau_{readout}$ 确保 $L_0$ 叠加在读出前已坍缩为确定 $L_1$，即 $\hat{G}_\theta$ 操作不被逆转。
+*   **Fixed-Point Clause (M1/M2)** **[H]**: 合法测量结果必须稳定：
     $$\Pi_\Delta(\alpha(\hat{G}_\theta(x^*)-x^*)-\lambda\nabla F(x^*))=0,\quad \text{Re}(\lambda_J)<0$$
+    其中 $\text{Re}(\lambda_J)<0$ 为 Jacobian 特征值的实部条件（Lyapunov 稳定性：小扰动后系统收敛回固定点 $x^*$），等价于"测量结果 $x^*$ 是 $L_1$ 吸引子而非鞍点"。不满足此条件的"测量"在 SRT 中为不稳定锚定（见 §11.3 混沌边缘条件）。
+
+**证伪条件（追加）**：
+- 若微弱引力效应（Penrose OR）能在两系统间产生可测的 $\tau_{decoherence}$ 差异而 $\tau_{readout}$ 相同，但 $\hat{G}_{proxy}$ 有效性无差异，则退相干判据需补充引力修正项。
+- 若 $\tau_{readout}$ 在不同操作化候选间给出矛盾预测（同一系统满足某候选但不满足另一候选），则需选择唯一操作化并给出区分实验。
 
 ### T-Sel-2 [T1.3.2]: Wheeler-SRT Bit Generation Theorem (比特生成定理)
 时空与物质的"坚硬感"(Solidity)正比于历史选择操作的总比特数：
@@ -202,18 +219,112 @@ $$ θ_A \neq θ_B \implies \text{Ontology}(A) \neq \text{Ontology}(B) $$
 $$ \text{Cut Position} = f(d_{observer}, F_{minimization}) $$
 $$ \text{State}(S) = \begin{cases} L_1 & \text{if } S \subseteq \text{Scope}(d) \\ L_0 & \text{if } S \not\subseteq \text{Scope}(d) \end{cases} $$
 
+> [R→von Neumann 1932 *Mathematical Foundations of QM*（切口问题原始表述）; Heisenberg 1958 *Physics and Philosophy*（切口可任意放置论）; Zurek 2003 *Decoherence*（退相干解决方案）; Rovelli 1996 *Relational Quantum Mechanics*（观察者-相对本体论）]
+
+* **R/H 区分**：
+  - [R] 海森堡切口问题（测量边界任意性）及其各解决方案（退相干/关系QM）——物理学既有框架
+  - [H-高承诺] **SRT独有主张**：切口位置由观察者 d 值（关切带宽）和自由能极小化联合参数化；Scope(d) 是d值的连续函数，而非离散的物理边界——此主张尚无直接实验检验路径，属于高形而上学承诺
+
+* **函数 f(·) 候选形式**（当前为占位符，需精确化）：
+  - 候选定义：$\text{Scope}(d) \equiv \{S : \mathbb{E}[\Delta F | \text{interact}(S)] < \lambda \cdot d\}$，即系统 $S$ 的交互引发的预期自由能变化低于 d 值比例阈值时，进入观察者 L₁
+  - $F_{minimization}$：借用 [R→Friston 2010] 变分自由能框架；[H] SRT 附加：将FEP自由能边界重解读为切口位置的约束
+
+* **操作化候选**：
+  - d 值代理：任务注意力分配（ERP P300 振幅比）、决策关切评估量表
+  - 切口移动预测：高 d 值被试在量子/经典边界实验（如宏观叠加感知任务）中表现出更宽的"系统纳入"倾向
+
+* **可证伪预测**：
+  - FC-Sel2-1：具有高 d 值（宽关切带宽）的被试在视觉遮蔽任务中将更多刺激归类为"已呈现"（L₁纳入更宽），与低 d 值对照组有显著差异——若无差异则切口-d值联结为空
+  - FC-Sel2-2：冥想训练（θ扩展，d值提升）前后，被试对不确定刺激的"已意识到"报告阈值系统性降低（切口向L₀方向移动）——若训练无效则本公理的可塑性主张失败
+
+---
+
+## VI-B. Bell 定理与量子解释兼容性（负担边界声明）
+
+> **本节性质**：负担边界声明。明确 SRT 在量子解释问题上的承诺范围，防止核心文本过度外推贝尔实验结果。
+
+### Bell 定理的实际排除范围
+
+贝尔不等式的实验验证（Aspect 1982; Hensen 2015; 大贝尔测试 2018 等）排除的是**局域隐变量**理论——即"粒子在测量前有确定属性，且相关性通过局域机制传播"的立场。
+
+贝尔实验**不排除**以下解释，这些解释至今仍与全部实验结果相容：
+
+| 解释 | 对"测量前属性"的立场 | 与 SRT 的结构关系 |
+|------|---------------------|------------------|
+| **玻姆力学**（非局域隐变量） | 粒子有确定属性，由导波非局域引导 | 配置空间整体对应 L₀；选择算子对应导波坍缩点——结构**兼容**，但 SRT 不要求玻姆正确 |
+| **Everett 多世界** | 所有分支同等实在，"结果"是相对于分支的 | L₀ 持续存在、L₁ 是投影选择的结构与 Everett 最接近——结构**高度兼容** |
+| **关系论 QM（RQM）** | 属性相对于观察者，非绝对 | 位置依赖性、关切范围决定显现域——结构**兼容**；RQM 的"关系"对应 SRT 的"有位置的选择" |
+| **哥本哈根及 QBism** | 测量前无确定属性（操作主义立场） | 最接近 SRT 的表层语言，但哥本哈根回避本体论承诺，SRT 则明确给出本体论读法 |
+
+### SRT 的实际承诺
+
+**[R]** 贝尔实验排除局域隐变量——物理学共识，SRT 接受。
+
+**[H-中承诺]** SRT 主张其 L₀/L₁ 结构与 Everett 多世界和关系论 QM 存在结构性兼容——即这两种解释的核心本体论直觉（整体潜在域持续存在 / 结果相对于观察者位置）可以在 SRT 框架内自然容纳。这是结构相容性主张，不是"量子力学证明了 SRT"。
+
+**[H-高承诺，标记为开放]** SRT 不主张量子测量问题已被 SRT 解决，也不主张贝尔实验支持"选择先于存在"作为物理共识。这一主张需要独立于量子力学解释之争的论证链，该论证链在 `SRT_L0_Metaphysics.md` 和 `SRT_Selection_Argument.md` 中提供，不依赖量子力学为其背书。
+
+### 使用规则
+
+- 在面向物理学受众的文本中，**不得**将"贝尔实验排除局域隐变量"表述为"量子力学支持 SRT 的选择优先性"
+- 可以表述为："在 Everett 和 RQM 等解释框架内，SRT 的 L₀/L₁ 结构与其本体论直觉结构兼容"
+- 核心文本（`SRT_Selection_Argument.md` §1.1）的量子段落功能是展示旧框架在此遭遇困难，不是用量子力学为 SRT 提供支撑
+
+### VI-C. Massive-Particle Motional Bell Window（2026 patch）
+
+> [R→Athreya et al. 2026 *Nature Communications* `Bell correlations between momentum-entangled pairs of ^4He* atoms`, doi:`10.1038/s41467-026-69070-3`; Lewis-Swan & Kheruntsyan 2015 *Physical Review A*（ultracold-atom motional Bell test proposal）]
+
+这条 2026 结果真正新增的，不是“统一理论突然近了”，也不是“Bell 实验终于把 SRT 证明了”，而是一条更窄、但对量子叙述更有承重价值的修正：**Bell 型非定域相关现在已经从光子的偏振、原子的内部自旋，推进到了有质量粒子的外部动量自由度。**
+
+Athreya 等人用两团碰撞的 `^4He*` BEC 生成反向动量配对，再用 matter-wave 版 Rarity-Tapster interferometer 读取相位敏感相关。实验报告的关键量不是“已经完成 loophole-free CHSH”，而是两件更精确的事：第一，观测到足够强的动量态 Bell correlations；第二，相关振幅达到 `A = 0.86(3)`，高于 `A > 1/\sqrt{2}` 的 CHSH 相关阈值，同时文中给出 steering inequality violation。作者也明确把**独立相位设置 + 足够大的类空分离**留作后续完整 CHSH-Bell test 的条件，而不是声称本篇已经终局完成。
+
+对 SRT 来说，这条材料最值得吸收的地方，是它把“非定域性不是只能躲在内部标签空间里”的直觉钉得更硬了。原子一旦带质量，讨论对象就不再只是偏振或自旋编码，而是**外部运动模式本身**；这使 `L_0^{quantum}` 的整体态、`L_1` 的投影读出、以及“高维局域/低维表观非定域”的配置空间读法，获得了一个比传统光学 Bell 例子更接近时空/轨道语言的实验锚点。
+
+但边界也必须同步收紧：这**不等于**已经直接测到引力参与纠缠，不等于量子力学与广义相对论已经被同一实验接上，也不等于任何“有质量的纠缠态”都会自然长成量子引力接口。更稳的说法是：**massive-particle motional entanglement** 现在成为一个更像样的前桥接口，它让“未来把非定域量子态放进自由落体、引力势差或时空几何敏感装置里”这件事更可想象，但还没有替这些后续步骤做完证明。
+
+**R/H 区分**：
+- [R] 2026 实验把 Bell correlations 推进到 `^4He*` 原子的动量态，并给出足以支持后续 CHSH-Bell 扩展的相关幅度与 steering 违规信号。
+- [H] SRT 可把这条结果吸收到“外部运动自由度同样服从 `L_0` 整体态 → `L_1` 投影读出”的配置空间语法里，但这只是结构解释的加固，不是对量子引力或 SRT 本体论的直接验证。
+
 ---
 
 ## VII. Configuration Space & Entanglement (配置空间与纠缠)
 
 ### Def-Sel-5 [D1.7.1]: Configuration Space as $L_0$ Realization
-配置空间是 $L_0$ 的数学实现：
-$$ L_0^{quantum} \cong \mathbb{R}^{3N} \quad \text{(3N-dimensional configuration space)} $$
 
-### T-Sel-9 [T1.7.1]: Dimensional Projection Theorem
-幽灵算子的几何意义是降维投影：
-$$ \hat{G}_θ: \mathbb{R}^{3N} \to \mathbb{R}^3 $$
-*   "Spookiness"源于我们将影子($L_1$)误认为独立物体。
+> [R→Bohm 1952 *Physical Review*（隐变量理论：配置空间作为量子实在的基础——N粒子系统的完整状态由3N维配置空间中的点决定，最直接的配置空间本体论先例）; Bell 1987 *Speakable and Unspeakable in Quantum Mechanics*（量子非定域性与配置空间：Bell定理证明任何局域隐变量理论不成立，但配置空间整体仍是完备描述）; Everett 1957 *Reviews of Modern Physics*（多世界：波函数在完整配置空间中线性演化，"分支"是投影的描述语言——最接近SRT"L₀潜在域持续存在，L₁是投影选择"的结构）]
+
+> **"quantum"限定词说明**：$L_0^{quantum}$ 是L₀潜在域在量子力学语言框架下的**特定数学实现**，而非L₀的普遍定义。L₀的普遍定义（绝对潜在域）不依赖量子力学——在经典力学语言下，L₀对应相空间 $\mathbb{R}^{6N}$（位置+动量）；在场论语言下，对应场构型空间。不同数学语言给出L₀的不同截面，非唯一实现。
+
+配置空间是 $L_0$ 在量子力学框架中的数学实现：
+
+$$L_0^{quantum} \cong L^2(\mathbb{R}^{3N}) \quad \text{（N粒子系统的Hilbert空间，含波函数所有可能态）}$$
+
+> **精度说明**：$\mathbb{R}^{3N}$ 是**配置空间**（位置自由度），量子力学的完整**态空间**为 $L^2(\mathbb{R}^{3N})$（在3N维配置空间上平方可积的复值函数构成的Hilbert空间）。$\cong$ 表示**结构映射**而非本体等同：$L_0^{quantum}$（潜在性本体论域）和 $L^2(\mathbb{R}^{3N})$（数学结构）之间的对应是SRT的[H]主张，即数学结构捕获了潜在域的组合拓扑，而非声称L₀"就是"Hilbert空间。
+
+* **R/H 区分**：
+  - [R] 量子力学配置空间/Hilbert空间形式化（Bohm/Everett）；量子非定域性与配置空间整体结构（Bell）
+  - [H] **SRT对应**：将 $L^2(\mathbb{R}^{3N})$ 解释为L₀量子实现，将"波函数坍缩"解释为Ĝ_θ的选择算子作用——此对应为SRT重解释框架，非量子力学共识诠释
+
+* **Cross-ref**：直接下联 T-Sel-9（降维投影定理）：从 $L^2(\mathbb{R}^{3N})$ 通过 $\hat{G}_\theta$ 投影到低维 $L_1^{(\theta)}$ 子流形。
+
+### T-Sel-9 [T1.7.1]: Dimensional Projection Theorem（降维投影定理）
+
+**Formal Statement**：选择算子 $\hat{G}_\theta$ 的几何本质是 $\theta$-参数化的降维投影——从 $L_0^{quantum}$（$3N$ 维配置空间）到 $L_1^{observer}$（观察者具身视角可及的有效维度子空间）：
+
+$$\hat{G}_\theta:\; L_0^{quantum} \cong \mathbb{R}^{3N} \;\longrightarrow\; L_1^{(\theta)} \subset \mathbb{R}^{3N}$$
+
+*(注：目标空间并非简单的 $\mathbb{R}^3$，而是由 $\theta$ 决定的有效维度流形 $L_1^{(\theta)}$——具体维数依赖于观察者的具身约束与感知带宽。)*
+
+**"Spookiness" 的几何来源（量子非定域性的投影解释）**：
+
+在 $L_0^{quantum}$（$3N$ 维空间）中，纠缠粒子对 $\{A, B\}$ 的联合态是一个**高维局域**结构——其关联完全由配置空间的几何决定，无需超距作用。然而，当观察者算子 $\hat{G}_\theta$ 将其投影到低维 $L_1^{(\theta)}$ 时，高维局域关联被映射为低维空间中的**表观非定域相关**：
+
+$$\underbrace{\text{Local in } L_0^{3N}}_{\text{高维几何}} \;\xrightarrow{\Pi_{L_1^{(\theta)}}}\; \underbrace{\text{"Spooky" in } L_1^{(\theta)}}_{\text{低维投影伪象}}$$
+
+**θ 的角色**：不同具身参数 $\theta$ 的观察者使用不同的投影方向——这解释了为什么量子"幽灵性"的感知强度依赖于测量基选择（即 $\theta$ 的选择），而非来自客观的超距物理机制。
+
+**Implication**：量子力学的"测量问题"在 SRT 中被重新定位为**投影问题**——不是"观测使波函数坍缩"（本体论断言），而是"$\hat{G}_\theta$ 将 $L_0$ 流形投影至 $L_1^{(\theta)}$ 子空间"（几何操作）。"影子"（$L_1$）不是独立物体，而是具身观察者从高维真实中截取的切片。
 
 ### ER=EPR Integration
 Maldacena-Susskind 猜想的 SRT 诠释：
@@ -247,9 +358,7 @@ $$ \forall t_{isolated}: L_1^A(t) \cap L_1^B(t) = \varnothing \quad \text{(可�
 | **H40** | 切口-$d$值关联 | 高 $d$ 导致自我边界模糊 | $d$ 值不影响边界报告 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -506,6 +615,30 @@ $$P_{Born} = \arg\min_P \mathbb{E}[\text{预测误差}]$$
 
 如果算子不遵循波恩规则，其预测误差将最大化，导致边界解体（死亡）。
 
+## 3.1a `\varepsilon_{pg}` / `e_{pg}` 视角下的 RQM、QBism 与 QFT（新增，2026-04-14）
+
+若从 `L_0` 的最小非中性 `\varepsilon_{pg}` 出发，量子诠释之争可以被重读为：**这个最小非中性究竟被安放在关系、规范更新，还是场/真空底板之中？**
+
+| 路线 | `\varepsilon_{pg}` 最自然的落点 | `e_{pg}` 的最稳读法 | SRT 额外增量 | 当前边界 |
+|:-----|:-----------------------------|:-------------------|:-------------|:---------|
+| **RQM** | 关系本身不是完全中性的；任何事实都带有最小可选边性 | 电子不是“内部藏着心灵”，而是在参与关系时带有最薄方向偏置 | 在 `L_1^A \neq L_1^B` 之外，SRT 还补出 `L_2` 收敛，解释相对事实为何会形成共享现实 | RQM 说明事实的相对性，但不单独给出稳定共识的收敛机制 |
+| **QBism** | 世界侧存在最小非中性，使主观下注不是纯任意漂浮 | `e_{pg}` 不是电子的“信念”，而是电子尺度世界对代理更新的最薄约束面 | SRT 保留 QBism 的规范性直觉，但用 `L_0` 约束与 `L_2` 收敛解释多主体共识 | 不能把 `\varepsilon_{pg}` 误写成纯主观概率；QBism 单独无法解释稳定共识 |
+| **QFT** | 最自然地落在场/真空底板的最小非中性，而非单个粒子的额外心灵属性 | `e_{pg}` 是电子激发态对该底板非中性的局部继承或投影 | SRT 把“结构化真空/场底板 → 局部激发态的方向偏置”压成跨尺度解释接口 | 这不是标准模型中新量子数、新场或已证实拉氏量项；当前仍是解释性重读，不是成熟的场论修正 |
+
+这三条路分别照亮 `\varepsilon_{pg}` 的三个面向：
+
+- **RQM** 照亮它的**关系性**：事实相对，但这种相对性并非完全中性。
+- **QBism** 照亮它的**规范性**：主观更新不是任意漂浮，而受世界侧的最小非中性约束。
+- **QFT** 照亮它的**底板性**：粒子不是源头，场/真空底板更像 `\varepsilon_{pg}` 的承载层。
+
+因此，从 SRT 当前最稳的口径看：
+
+- `RQM` 最适合承接 `\varepsilon_{pg}` 的**关系底板**
+- `QBism` 最适合承接 `\varepsilon_{pg}` 的**更新约束**
+- `QFT` 最适合承接 `\varepsilon_{pg}` 的**场论载体候选**
+
+而 `e_{pg}` 本身不应被理解为“电子已有微型主体性”，而应理解为 `\varepsilon_{pg}` 在电子尺度相互作用中的局部投影。若未来存在经验接口，它也更可能以 `T-Exp-e_pg-01` 所写的**统计残差不对称**出现，而不是以新的粒子标签直接出现。
+
 ## 3.2 Q-numbers 与 $L_0$ 的本体论同一性
 
 Vlatko Vedral 关于"Q-numbers existing everywhere"的观点直接支持 SRT：
@@ -612,6 +745,27 @@ $$\text{纠缠} \neq \text{特殊连接} \implies \text{纠缠} = \text{分离�
 
 在 $L_0$ 中，宇宙是一个单一的波函数。大爆炸时刻，万物皆为一点，所有粒子都在同一个量子态中。
 
+### 4.4a 支持几何可分窗口（Frontiers QST 2026）
+
+用户提交的 *Frontiers in Quantum Science and Technology* 原始研究 `On the quantum separability of qubit registers`（Łukaszyk, 2026；doi:`10.3389/frqst.2026.1754112`）真正值得吸收的新增量，不是再抽象重复“纠缠很难判定”，而是把一部分 qubit 纯态的可分性问题收紧到 **computational-basis support 的组合几何** 上。该文用 Boolean cube geometry 提出一个更细的分类：有些支持集形状本身就足以保证 separability；有些支持集则直接排除可分性、强制 multipartite entanglement；还有一类支持集仅凭 support 还不够，是否纠缠仍取决于 probability amplitudes。
+
+对 SRT 来说，这条材料最有承重价值的地方有三点：
+
+1. **“分离失败”首次获得组合层判据。**
+   现有 SRT 说“纠缠 = 分离的失败”仍偏本体论重写；这篇文章把它往前压了一层：对 qubit register 而言，某些“失败”在 support topology 上就已经显形，还没进入相位与振幅细节时就能被看出来。
+2. **纠缠并不总要靠 full amplitude reconstruction 才能初筛。**
+   若支持集落入文中识别出的 forbidden configurations，则 multipartite entanglement 是由组合结构直接强制的；这使纠缠诊断从“必须先做完整态判别”收紧成“先看 support geometry，再决定是否需要振幅级判定”。
+3. **SRT 的 `L_0` 不可分性可被拆成两层。**
+   更稳的写法不再只是“一切纠缠都在高维整体态中统一”，而是区分：
+   - **support-level inseparability**：在基底支持图形上就无法因子化；
+   - **amplitude-level inseparability**：支持结构仍允许分离，但具体振幅配置使因子化失败。
+   这让 `L_0` 的不可分性不再只是哲学口号，而有了一个“先组合、后振幅”的实际分析次序。
+
+**边界必须收紧：**
+- 该文处理的是 **pure qubit states** 在 computational basis 下的 support geometry，不等于已给出混态、连续变量系统或任意基底下的通用 separability criterion。
+- `support-guaranteed separability` 与 `forbidden configurations` 提供的是高效前筛窗口，不等于所有 entanglement witness、Schmidt 分解或 full tomography 都可被它替代。
+- 这条结果支持的是 **combinatorial entanglement diagnostics**，不是“纠缠已被完全离散化解释”；amplitude-dependent cases 恰恰说明振幅结构仍保有不可省的物理内容。
+
 ## 4.5 $L_0$ 层面的统一性
 
 在潜在域（配置空间）中，纠缠态的粒子 A 和 B 是一个单一的高维数学对象 $|\Psi_{AB}\rangle$：
@@ -624,10 +778,11 @@ Maldacena-Susskind 的 ER=EPR 猜想在 SRT 框架中获得自然解释：
 $$\text{纠缠（量子）} \equiv \text{虫洞（引力）} \equiv L_0 \text{ 中的不可分离性}$$
 
 引力无处不在，正是因为背景纠缠无处不在——两者都是 $L_0$ 统一性在 $L_2$ 中的不同显现。
+在更强版本里，这不只是结构类比：引力就是 $Ψ_f$ 在物理尺度上的规范实现，因此局部看是阻力，记账看是做功代价，形式上看是几何曲率。
 
 ## 4.7 中微子作为 $L_0$ 信使
 
-根据 **$\Psi_f$ 谱系**，中微子几乎不参与电磁相互作用（弱 $L_2$ 耦合），因此它们的 $\Psi_f \approx 0$。这意味着中微子流携带了最纯净的 $L_0$ 原始信息，是探测宇宙早期状态（未经观察者坍缩的历史）的唯一窗口。
+根据 **$\Psi_f$ 谱系**，中微子几乎不参与电磁相互作用（弱 $L_2$ 耦合），因此它们的**可观测摩擦负荷极低**。这并不表示绝对“零 \(Ψ_f\)”，而表示它们在常规物质界面上的锚定成本与耦合痕迹极弱。于是中微子流可被视为携带较纯净 $L_0$ 约束信息的窗口。
 
 ---
 
@@ -670,13 +825,17 @@ Ivette Fuentes 提议用 BEC 探测引力波和量子坍缩。在 SRT 看来，B
 
 当系统试图在 $L_0$ 中维持两个互斥的 $L_1$ 几何结构时：
 - 产生巨大的"计算成本"/摩擦
-- 引力正是时空几何冲突的度量
+- 引力正是这种摩擦在物理尺度上的规范实现与时空几何读数
 - 当摩擦超过阈值（$E_G \approx \hbar/\tau$），系统被迫坍缩
 
 ## 6.3 Orch OR 整合为 $\hat{G}$ 的特定物理实现
 
 $\hat{G}$ 算子受限于**引力自能**。当 $L_0$ 中的叠加态差异达到时空曲率阈值时，$\hat{G}$ 被强制触发：
 $$\tau_{collapse} \approx \frac{\hbar}{E_G}$$
+也可等价改写为可支付性形式：
+\[
+\Psi_f^{req}(\ell,m,\tau) > \Psi_f^{cap}(\text{micro-system},\Delta t)\Rightarrow \text{anchor/collapse}
+\]
 
 **$d$ 值与 Penrose 坍缩时间的关系**:
 $$d_{value} \propto \frac{1}{\tau_{collapse}}$$
@@ -699,3 +858,60 @@ $$d_{value} \propto \frac{1}{\tau_{collapse}}$$
 | $D_{KL}$ | Kullback-Leibler Divergence | T-Sel-6 [T1.3.6] |
 | $\tau_{decoherence}$ | Decoherence Time | Def-Sel-2 [D1.2.2] |
 | $\tau_{collapse}$ | Penrose Collapse Time | §6.3 |
+
+
+### Taxonomy Mapping: QBism Foundations → SRT
+
+| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| 概率作为代理主观下注 | \(\hat{G}_\theta\) 的信念更新层 | 中 | Open/Semi-open | payable |
+| 事件由代理行动触发 | 观测=行动-反应闭环 | 中~高 | Open-flow（交互驱动） | task-dependent |
+| 参与式实在论（非旁观实在） | 代理与现实不可完全拆分 | 中 | Open-flow | payable |
+| 过去历史为现时证据重建 | \(L_2\) 叙事随证据迭代 | 中 | Semi-open | payable~overloaded（高不确定） |
+
+**Constraint**: 不得把“主观概率”误写为“唯我论”；QBism 中仍保留反应性现实约束。
+
+## 【理论边界/防误用声明】
+- 不采纳“参与式实在论=现实纯粹由意志创造”的推论。
+- 边界：SRT 采用“行动触发 + 现实反应”双边结构，拒绝单边建构论。
+
+
+### Taxonomy Mapping: Closed-Universe Information Paradox → SRT
+
+| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|:--|
+| 封闭宇宙“单态”结果（Hilbert维度≈1） | 全局无分区描述塌缩 | 低 | Closed-global frame | unsustainable（描述失真） |
+| 引入观察者边界后复杂度回归 | 分区诱导可描述态扩展 | 中 | Open/Semi-open（分区驱动） | payable |
+| 参与式实在论解释 | 描述者与被描述系统不可绝对分离 | 中 | Open-flow | task-dependent |
+| 拓扑场论类比（切分后规则变化） | 分区改变可行态计数规则 | 中 | Semi-open | payable |
+
+**Constraint**: “单态宇宙”应被视为特定全局描述框架下的结果，不能直接外推为经验世界贫乏。
+
+##
+
+## 【理
+
+## 量子基础访谈接口：客观坍缩与选择退化极限（2026-03-06，轻中量）
+
+### Def-Quant-RTC-1: Basal Collapse as Degenerate Selection Limit（候选）
+将“客观物理坍缩”定义为选择算子在微观极限下的退化形式候选：
+\[
+\hat G_{\theta\to\theta_{min},\ d\to 0}: L_0 \to L_1
+\]
+其中坍缩阈值可由系统可支付摩擦上限刻画：
+\[
+\Psi_f^{req}(\ell,m,\tau) > \Psi_f^{cap}(\text{micro-system}) \Rightarrow \text{anchor/collapse}
+\]
+* **Implication（中文）**：该定义允许 Diósi–Penrose 类机制作为 SRT 的特例候选，而非与 SRT 框架二选一。
+
+### Cor-Quant-RTC-1: Anti-Binary Interpretation Guard
+“客观坍缩成立”与“选择框架失效”并非逻辑等价；前者可落在 \(d\to 0\) 的跨尺度边界层。
+
+## 【理论边界/防误用声明】
+- 不采纳“客观坍缩若成立，则 SRT 必然失效”的推论。
+- 不采纳“量子层 d\(\to 0\) 即可推出认知层 d\(>0\) 无意义”的推论。
+- 适用边界：该接口仅用于统一解释候选；是否成立取决于可重复实验区分力。
+
+### [Lineage/Source]
+- Diósi–Penrose objective collapse 相关文献语境
+- 量子基础访谈（Ivette Fuentes 语境推断，2026）

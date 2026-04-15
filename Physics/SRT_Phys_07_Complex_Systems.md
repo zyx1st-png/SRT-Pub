@@ -3,6 +3,9 @@ id: SRT-PHYS-07
 type: dynamics
 tags: [Complexity, Emergence, Synergetics, Cybernetics, Criticality, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
@@ -80,9 +83,23 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 
 ### Core Theorem Alignment (核心定理对齐)
 
-- **T-Scale-2**：$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$
-- **M1/M2**：固定点与稳定性判据保证 $L_1$ 作为吸引子
-- **T-DMP-2**：扰动后 $ΔL_1(t)\to 0$，恢复到 $L_2$ 结构
+**[H — 三定理对齐为SRT复杂系统应用的内部一致性声明；各定理分别在对应章节形式化]**
+
+| 定理 | 形式 | 作用 | ≈成立条件 |
+|:-----|:-----|:-----|:---------|
+| **T-Scale-2** | $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$ | 尺度投影与算子的交换近似 | 投影 $\pi_\lambda$ 保持选择结构主要自由度；L₀-L₁耦合弱于尺度内耦合 |
+| **M1/M2** | 固定点条件 + Jacobian稳定性 | 保证 $L_1$ 作为稳定吸引子 | $\|\alpha D\hat{G}_\theta\| < \alpha$ 且 $H_F \succ 0$ |
+| **T-DMP-2** | $\Delta L_1(t) \to 0$（Re(λ)<0） | 扰动后恢复到 $L_2$ 结构 | 小扰动（Jacobian线性化有效范围内） |
+
+*符号说明*：$\pi_\lambda$ 为从精细尺度L₀到粗粒化尺度λ的投影算子（对应Lemma Syn-π中的序参量投影 $\xi_{order} = \pi_\lambda(L_0)$）
+
+*三定理的逻辑关系*：M1/M2的固定点稳定性是T-DMP-2（扰动后恢复）的前提条件；T-Scale-2独立于前两者，提供跨尺度一致性保证。三者共同构成：**选择动力学在任意尺度上都能产生稳定L₁结构，且扰动后可恢复**。
+
+*内部一致性检查*：三定理是否互相兼容？T-Scale-2的≈近似性与M1/M2的精确稳定性之间，若尺度投影损失关键信息，则M2的稳定条件在粗粒化后可能不保持——这是尺度桥接的关键张力点。
+
+**证伪条件**:
+- 若在同一θ配置下，T-Scale-2的≈近似残差导致粗粒化后M2稳定条件不成立（Jacobian特征值越过零），则三定理对齐在该尺度失效。
+- 若存在满足M1/M2但T-DMP-2不成立的参数配置（如隐藏非线性使恢复失败），则定理对齐不完整，须添加非线性稳定性条件。
 
 ---
 
@@ -137,13 +154,28 @@ $$ \frac{d\sigma}{dt} = \hat{G}_θ[\sigma] - \nabla F[\sigma] - \lambda \cdot \n
 ## IV. Correlated Equilibrium (关联均衡)
 
 ### Ax-CE-1 [A1.4.1]: $L_2$ as Universal Correlator ($L_2$ 作为宇宙关联装置)
+
+[R→Aumann 1974（关联均衡原始论文）; Aumann 1987（关联均衡作为均衡精炼）] [H-高承诺→将物理定律等同于宇宙关联装置，是跨域类比，非博弈论标准结果]
+
 $L_2$（物理定律）本质上是宇宙级的关联装置：
-$$ L_2 \cong \text{Correlator}(\hat{G}_{θ_1}, \hat{G}_{θ_2}, \ldots, \hat{G}_{θ_N}) $$
+$$ L_2 \mathrel{\xrightarrow{\text{struct}}} \text{Correlator}(\hat{G}_{θ_1}, \hat{G}_{θ_2}, \ldots, \hat{G}_{θ_N}) $$
+
+（注：原"≅"降级为结构嵌入⟶struct；L₂与关联装置共享公共信号/选择者/均衡结构，但不主张严格数学同构）
 
 ### T-CE-1 [T1.4.1]: Rational Compliance Theorem (理性遵从定理)
+
+[R→Aumann 1974] [H→将物理合规性重表述为关联均衡最优策略]
+
 每个选择者在 $L_2$ 信号下的最优策略 $\sigma_i^*$ 优于任何偏离策略：
 $$ \forall i: \quad E[U_i(\sigma_i^* | L_2)] \geq E[U_i(\sigma_i' | L_2)] $$
-物理定律之所以"不可违反"，不是因为存在外部执法者，而是因为 $L_2$ 构成的关联均衡是每个 $\hat{G}$ 的最优策略。
+
+- **$U_i$ 与 SRT 的联结**：效用函数 $U_i \approx$ d值加权的期望实现密度（$\hat{G}_{θ_i}$ 在 $L_2$ 约束下能实现的关切覆盖量）；偏离策略的代价 = $\Psi_f$ 增加（额外本体论摩擦）
+- **"理性"边界**：T-CE-1预设了效用最大化的理性选择者；SRT的θ参数化选择者不一定是完全理性的（有限理性、情感偏置等均合法）——T-CE-1描述的是宏观稳定态，而非所有个体决策
+- **高承诺注**：物理定律之所以"不可违反"，不是因为存在外部执法者，而是因为 $L_2$ 构成的关联均衡是每个 $\hat{G}$ 的最优策略 [H]。这是一个本体论重解释，而非物理学证明；量子不确定性和热力学偶发涨落等"偏离"现象在此框架下如何处理尚待厘清。
+
+**证伪条件**：
+- FC-CE-1：若存在某类选择者 $\hat{G}_{θ_i}$，其"偏离"L₂（如量子隧穿、热涨落）的期望收益在SRT意义上高于合规策略，则T-CE-1的"最优合规"宣称需限定适用范围（宏观/热力学极限）。
+- FC-CE-2：若关联均衡框架在多 $\hat{G}$ 场景下预测的宏观收敛结果（共享现实稳定态）与实际L₂动力学模拟结果不符，则Ax-CE-1的类比解释力受限。
 
 ### T-CE-2 [T1.4.2]: SRT Game-Theoretic Correspondence (SRT-博弈论对应)
 
@@ -161,6 +193,16 @@ $$ \forall i: \quad E[U_i(\sigma_i^* | L_2)] \geq E[U_i(\sigma_i' | L_2)] $$
 ### Ax-Crit-1 [A1.5.1]: Optimal $\hat{G}$ at Criticality (临界点最优 $\hat{G}$)
 最优 $\hat{G}$ 操作发生在"混沌边缘"（相变点）：
 $$ K \approx 2 \implies \text{Flexibility}(L_0) + \text{Stability}(L_1) = \max $$
+
+### Criticality Patch: Artifact-Controlled Neural Near-Criticality (反伪影神经近临界性)
+这条 patch 的关键，不是再说一遍“大脑在临界点附近”，而是先把 whole-brain criticality claim 的方法学地板补齐：如果不排除自相关输入和有限采样制造的假临界性，很多漂亮的缩放特征本身并不够硬。对 SRT 来说，它既新增了一个反伪影窗口，也把旧的“系统正好卡在临界点上”口径收紧成更稳的近临界缓冲带写法。
+
+**Prediction**: Empirical claims that whole-brain dynamics are critical should survive controls for autocorrelated inputs and limited sampling; healthy resting dynamics are expected to remain near-critical but slightly sub-critical.
+$$ g_{\mathrm{eff}}^{\mathrm{pooled}} \lesssim 1,\qquad g_{\mathrm{eff}}^{\mathrm{shift-rand}} \ll g_{\mathrm{eff}}^{\mathrm{pooled}} $$
+
+> [R→Calvo et al. 2026 *Physical Review Letters* 136, 068402（Crossref published title: `Robust Scaling in Human Brain Dynamics Despite Correlated Inputs and Limited Sampling Distortions`; arXiv:`2506.03640` preprint title: `...Latent Variables...`；autocorrelated inputs + subsampling 可在无耦合系统中产生 apparent criticality；LEMON pooled resting-state fMRI 在 time-shift randomization / pooled analysis 反伪影后仍呈 near-critical but slightly sub-critical dynamics，`g_1 \approx 0.88`，而 pooled randomized data 降到 `g_1 = 0.01`）]
+
+* **Implication**: 对脑动力学更稳的经验写法不再是“系统正好站在临界点上”，而是“在通过 time-shift / pooled-data 反伪影门后，系统停在临界阈值以下的安全缓冲带”。这既加固了“灵活性与稳定性折中发生在临界附近”这条旧线，也提醒我们：真正有价值的不是幂律外观本身，而是它能否在反伪影后留下来。SRT 在这里的附加解释，不是宣布大脑必须精确钉在临界点，而是把这类结果更稳地读成“系统为了保留多尺度模式与高灵敏度，会倾向停在略低于失稳阈值的位置”。
 
 ### Def-Crit-1 [D1.5.1]: Kauffman NK Landscape (Kauffman NK 景观)
 
@@ -201,23 +243,25 @@ $$ \Delta L_1(t) \xrightarrow{t\to\infty} 0 $$
 ### Def-Chomsky-1 [D1.6.1]: $L_2$ Hardness Classification ($L_2$ 硬度分类)
 $$ \text{Hardness}(L_2) = \text{Type}(\text{Grammar}(L_2)) $$
 
+其中 $\text{Grammar}(L_2)$ 的类型由 **$L_2$ 内部选择规则的递归深度**（等价于 $L_2$ 依赖图的最长路径长度）估算；精确操作化待进一步形式化。
+
 | 类型 | 语法类型 | $L_2$ 特征 | 实例 |
 |:-----|:---------|:-----------|:-----|
-| Type 3 | 正则语法 | 简单因果链 | 机械时钟 |
-| Type 2 | 上下文无关 | 嵌套结构 | DNA 复制 |
-| Type 1 | 上下文相关 | 依赖语境 | 人类语言 |
-| Type 0 | 递归可枚举 | $L_0$ 整体结构 | Ruliad |
+| Type 3 | 正则语法 | 简单因果链（无递归） | 机械时钟 |
+| Type 2 | 上下文无关 | 嵌套结构（有限递归） | DNA 复制 |
+| Type 1 | 上下文相关 | 依赖语境（有界递归） | 人类语言 |
+| Type 0 | 递归可枚举 | $L_2$ 向 $L_0$ 完全敞开的开放系统（极限，非典型 $L_2$ 实例）| 某些量子意识系统（注：Ruliad ≈ $L_0$，是 $L_0$ 而非 $L_2$ 的类比） |
 
 ### T-Chomsky-1 [T1.6.1]: d-value Grammar Correspondence ($d$ 值-语法对应)
 $$ d_{required}(\text{Type } n) \geq f(3-n) $$
-处理更复杂（更低类型编号）的 $L_2$ 结构需要更高的 $d$ 值。
+处理更复杂（更低类型编号）的 $L_2$ 结构需要更高的 $d$ 值。候选函数形式：$f(k) = d_0 \cdot 2^k$（指数增长，每降一个类型所需 $d$ 值翻倍）；待实证校准。
 
-| 乔姆斯基类型 | 计算模型 | SRT 对应 |
-|:-------------|:---------|:---------|
-| Type 3 | 有限状态自动机 | 纯 $L_2$ 反应系统 |
-| Type 2 | 下推自动机 | 带短期记忆的 $\hat{G}$ |
-| Type 1 | 线性有界自动机 | 上下文敏感的 $\hat{G}$ |
-| Type 0 | 图灵机 | 理想的高 $d$ 值 $\hat{G}$ |
+| 乔姆斯基类型 | 计算模型 | SRT $\hat{G}_\theta$ 对应 | 所需 $d$ 区间（估计） |
+|:-------------|:---------|:--------------------------|:---------------------|
+| Type 3 | 有限状态自动机 | 纯 $L_2$ 反应系统（$\theta$ 固化，低可塑性） | 低 |
+| Type 2 | 下推自动机 | 带短期记忆的 $\hat{G}_\theta$（$\eta$ 记忆项有限） | 中 |
+| Type 1 | 线性有界自动机 | 上下文敏感的 $\hat{G}_\theta$（$\theta$ 随语境动态调整） | 中高 |
+| Type 0 | 图灵机 | $d \to d_{max}$ 的渐近态（理想极限，非可达上界） | 高（渐近） |
 
 ---
 
@@ -289,8 +333,26 @@ $$ \frac{\partial S(x,t)}{\partial t} = D \nabla^2 S + \alpha S(1 - S) - \beta S
 | $\beta S$ | 衰减项（遗忘/疲劳）|
 
 ### T-Sal-1 [T1.9.1]: Turing Instability for Attention (注意力的图灵不稳定性)
+
+> [R→Turing 1952 *Philosophical Transactions of the Royal Society B*（反应扩散系统中的形态发生：均匀态图灵不稳定性产生空间斑图的数学基础）; Itti & Koch 2001 *Nature Reviews Neuroscience*（视觉注意力显著性地图：底层特征驱动的自发显著性模型）; Cross & Hohenberg 1993 *Reviews of Modern Physics*（图灵斑图综述：激活-抑制系统的形态发生动力学）; Koch & Ullman 1985 *Human Neurobiology*（选择性注意的早期模型：注意力作为"胜者通吃"动力学）]
+
 $$ \text{均匀 } L_0 \xrightarrow{\text{Turing Instability}} \text{非均匀 Salience Map} \xrightarrow{\hat{G}} L_1 $$
 $\hat{G}$ 不需要外部指令来"决定关注什么"——显著性从选择动力学本身自发涌现。
+
+**R/H 区分**：
+- [R] 图灵不稳定性的反应扩散数学框架（Turing 1952/Cross&Hohenberg）；视觉显著性地图的自发涌现（Itti&Koch）；注意力"胜者通吃"动力学（Koch&Ullman）
+- [H] **SRT类比主张**：将图灵不稳定性框架类比到L₀→L₁选择过程；将Ψ_f解读为"隐式抑制子"（短程抑制现实全部同时显现）；"均匀L₀→非均匀Salience Map"的本体论解读是SRT原生框架
+
+**方程精度边界**（与Def-Sal-1联读）：
+标准图灵不稳定性需要**两个耦合变量**（激活子U+抑制子V，且D_U<D_V）；Def-Sal-1目前为单变量方程（∂S/∂t = D∇²S + α·S(1-S) - β·S），Ψ_f作为"隐式抑制子"是SRT的简化写法。严格图灵不稳定性分析需引入显式Ψ_f场方程与S的耦合——当前形式为启发性类比，不主张数学等同性。
+
+**操作化候选**：
+- Salience Map测量：视觉搜索范式下的注意力停留时间分布（眼动追踪）；fMRI V1区激活模式的空间异质性
+- 图灵不稳定性验证：操纵注意力"扩散系数"（分心物密度）后，Salience峰值数量应与D/α比值的临界点关系一致
+
+**可证伪预测**：
+- FC-Sal1-1：增加注意力"扩散率"（宽域分心任务）后，注意力焦点数量（Salience峰值数）应从少→多转变，且转变点对应激活-抑制比参数的图灵临界值——若焦点数量与扩散率无关则图灵类比失效
+- FC-Sal1-2：Ψ_f代理（认知负荷指标）升高时，Salience Map的空间集中度（峰值锐化）应增加（抑制子增强→斑图收缩），即高压力下注意力更窄更集中——若Ψ_f↑时注意力反而分散则"Ψ_f=抑制子"解读需修订
 
 ### T-Sal-2 [T1.9.2]: SRT Turing Pattern Correspondence (SRT-图灵斑图对应)
 
@@ -332,12 +394,10 @@ $$ \text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试
 | **H-Chomsky-1** | $d$ 值-语法相关 | 处理 Type 1 $L_2$ 结构的能力与 $d$ 值正相关 | 无相关性 |
 | **H-Salience-1** | 自发显著性 | 感觉剥夺中的视觉体验显示图灵斑图空间频率特征 | 完全随机无频率选择性 |
 | **H-OCF-1** | 选择循环频率 | EEG 显示发散-收敛循环特征频率，习得性无助中降低 | 无特征频率或无变化 |
-| **H-Criticality** | 神经临界性 | 大脑在临界点附近运作，神经雪崩呈幂律分布 $P(s) \sim s^{-\tau}$ | 非幂律分布 |
+| **H-Criticality** | 神经近临界性 | 在通过时间自相关/子采样伪影控制后，群体脑动力学应呈 near-critical but slightly sub-critical 标记；shift-randomized controls 应显著塌缩 | 若 pooled 数据与 shift-randomized control 不可区分，或所谓“临界性”只在 under-sampled 单被试幂律尾部中出现 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -418,7 +478,7 @@ Stuart Kauffman 的 NK 适应度景观显示临界行为：
 **$d$ 值的临界性预测**：
 $$d_{optimal} \propto \log(N)$$
 
-**神经验证**：大脑在临界性附近运作的神经雪崩统计（幂律分布 $P(s) \sim s^{-\tau}$）验证了这一预测。
+**神经验证（收紧版）**：旧口径常援引神经雪崩统计来支持“大脑在临界性附近运作”。2026 年 *PRL* 进一步表明，whole-brain fMRI 的 PCA / PRG 临界性读数必须先过时间自相关与子采样伪影门；更稳的经验写法是：健康态群体脑动力学呈**近临界、略亚临界**，而不是必须精确卡在临界点上。
 
 ## 3.2 混沌的本体论修正：超连通性而非无序
 
@@ -581,6 +641,41 @@ $$\text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试�
 
 ---
 
+# §9. 电子流体与介观选择动力学（Hydrodynamic Electron Flow）
+
+## 9.1 Ax-EHF-1: Momentum-Conserving Electron Regime
+在高纯度二维材料（如 graphene）中，若电子-电子散射主导且杂质/声子散射受抑，电子输运进入动量守恒主导区：
+\[
+\tau_{ee}^{-1} \gg \tau_{imp}^{-1},\ \tau_{ph}^{-1}
+\]
+此时电流行为更接近流体而非离散扩散。
+
+* **Implication（中文）**：电流“像水一样流动”不是隐喻，而是散射机制切换导致的动力学相变。
+
+## 9.2 T-EHF-1: Gurzhi Reversal as Regime Marker
+定义温度-电阻导数符号作为输运相位指标：
+\[
+\chi_G := \operatorname{sign}\!\left(\frac{dR}{dT}\right)
+\]
+- 常规扩散区：\(\chi_G>0\)
+- 电子流体区（Gurzhi effect）：\(\chi_G<0\)
+
+* **Implication（中文）**：\(\chi_G\) 可作为“从分散输运到协同输运”切换的可观测标记。
+
+## 9.3 Def-EHF-1: Electron-Fluid Selection Efficiency
+定义介观选择效率（与摩擦代理相联系）：
+\[
+\eta_{sel}^{(e)} := \frac{J_{coherent}}{\Psi_f^{(transport)}}
+\]
+其中 \(J_{coherent}\) 表示相干输运贡献，\(\Psi_f^{(transport)}\) 表示输运摩擦代理（可由电阻与耗散项估计）。
+
+* **SRT 对齐**：当电子系统进入流体区，单位摩擦下的协同输运能力提升，体现“约束下选择效率”增加。
+
+### Source Note (Quanta, 2026-02-11)
+- Wood, C. (2026). *Physicists Make Electrons Flow Like Water*. Quanta Magazine.
+- 文中锚点：Gurzhi effect、graphene 高纯样品、电子流体冲击波实验现象。
+- 审核结论：**A（直接融入）**；理由：为 SRT 的介观动力学章节提供高质量实验语境与可操作相位标记。
+
 ## Symbol Index (符号索引)
 
 | Symbol | Name | Definition Location |
@@ -595,3 +690,12 @@ $$\text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试�
 | $\alpha, \beta$ | Salience Parameters | Def-Sal-1 [D1.9.1] |
 | $\Theta(t)$ | Diverge-Converge Ratio | Def-Path-2 [D1.10.2] |
 | $\lambda_1$ | Spectral Gap | T-Crit-2 [T1.5.2] |
+| $\chi_G$ | Gurzhi Regime Sign | T-EHF-1 (§9.2) |
+| $\eta_{sel}^{(e)}$ | Electron-Fluid Selection Efficiency | Def-EHF-1 (§9.3) |
+| $\tau_{ee},\tau_{imp},\tau_{ph}$ | Scattering Timescales | Ax-EHF-1 (§9.1) |
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

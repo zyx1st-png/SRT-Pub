@@ -3,6 +3,9 @@ id: SRT-PHYS-COSMO
 type: theory
 tags: [Thermodynamics, Time, Gravity, Cosmology, Information Physics, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT-QUANT-02]
 ---
 
@@ -37,9 +40,13 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 |:---|:------|:------|
 | A1.2.1 | Ax-IT-1 | Generalized Second Law (广义第二定律) |
 | A1.2.2 | Ax-IT-2 | Landauer Limit of Selection (选择的兰道尔极限) |
+| A1.2.2b | Ax-IT-2b | Biological Landauer Stratification (生物兰道尔分层公理) |
+| A1.2.2c | Ax-IT-2c | Ψ_f as Landauer in Fisher Geometry (Ψ_f 为 Fisher 几何中的兰道尔推广) |
 | A1.2.3 | Ax-IT-3 | Vopson Mass-Information Equivalence (Vopson 质量-信息等价) |
 | T1.2.1 | T-IT-1 | Irruption-Absorption Theorem (闯入-吸收定理) |
 | T1.2.2 | T-IT-2 | Mental Causation Path (精神因果性路径) |
+| T1.2.3 | T-IT-3 | Landauer Gap Theorem (兰道尔间隙定理) |
+| T1.2.4 | T-IT-4 | Complexity Ratchet Theorem (复杂性棘轮定理) |
 | A1.3.1 | Ax-OF-1 | Higgs as $\Psi_f$ Realization (希格斯即 $\Psi_f$ 实现) |
 | A1.3.2 | Ax-OF-2 | Mass as Existential Inertia (质量即存在惯性) |
 | T1.3.1 | T-OF-1 | Weightless Potentia (潜能无重定理) |
@@ -49,6 +56,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | A1.5.2 | Ax-Time-2 | Growing Block Universe (生长块宇宙) |
 | A1.5.3 | Ax-Time-3 | Time-Space as Selection Artifacts (时空作为选择伪影) |
 | T1.5.1 | T-Time-1 | Time Arrow as Selection Arrow (时间之箭即选择之箭) |
+| T1.5.1b | T-Time-1b | Shape-Dynamics Janus Window (形状动力学 Janus 窗口) |
 | T1.5.2 | T-Time-2 | Time Travel Impossibility (时间旅行本体论不可能性) |
 | T1.5.3 | T-Time-3 | High-d Observer Spacetime Collapse (高 $d$ 值观察者时空坍缩) |
 | A1.6.1 | Ax-Grav-1 | Verlinde's Entropic Force (弗林德熵力) |
@@ -94,12 +102,51 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 热力学熵与信息熵之和非递减：
 $$ \Delta S_{total} = \Delta S_{thermo} + \Delta H(L_1) \geq 0 $$
 *   **Implication**: $\hat{G}$ 生成 $L_1$（秩序）的代价是耗散热。
+*   **Bridge Clarification（中文）**：因此，`Generalized Second Law` 并不是悬浮在选择理论之外的背景定律，而是 `Selection Operator` 的热力学面：凡是 `L_0 \to L_1` 的真实取值，都必须以熵增/耗散的形式支付其实现成本。选择算子说明“现实被如何选出”，广义第二定律说明“这种选出为什么不可免费发生”。
 *   **O-T1 Link**: $L_1=\oint_\gamma \omega_{L_0}$ 的取值过程必然伴随信息压缩与熵增。
 *   **Sketch**: 由第一定律 $W=\Delta F+T\Delta S_{thermo}$，且信息压缩满足 $\Delta H(L_1)\le 0$，故 $\Delta S_{total}\ge 0$。
 
 ### Ax-IT-2 [A1.2.2]: Landauer Limit of Selection (选择的兰道尔极限)
 每一比特选择（$L_0 \to L_1$）耗散能量：
 $$ E_{select} \geq k_B T \ln 2 \approx 2.8 \times 10^{-21} \text{ J} $$
+
+### Ax-IT-2b [A1.2.2b]: Biological Landauer Stratification (生物兰道尔分层公理)
+生物计算系统相对于兰道尔极限的偏差与其选择类型的 $d$ 值贡献正相关：
+
+| 生物系统 | 相对兰道尔偏差 | SRT 解释 |
+|:---------|:--------------|:---------|
+| 蛋白质翻译 | $\sim 10^1$（近最优） | 低 $d$ 选择：固定密码子表，无 $L_1$ 维护代价 |
+| 神经突触激发 | $\sim 10^6$（接近超级计算机） | 高 $d$ 选择：对抗 $L_0$ 熵压、维持非默认 $L_1$ 状态 |
+| 超级计算机 | $\sim 10^6$ | $d = 0$：纯 $L_2$ 符号变换，无本体论锚定代价 |
+
+* **Source**: Kempes et al. (2017), *Phil. Trans. Roy. Soc.*; Jogalekar (2020), *3 Quarks Daily*.
+* **Implication**: 大脑的高能耗**不是**演化优化失败。蛋白质翻译执行的是重复、低风险的 $L_1$ 复制（$d \approx 0$），故接近兰道尔极限；神经活动维持的是持续抵抗 $L_0$ 熵增的高 $d$ 非默认状态，故能耗必然高出数个数量级。能耗差异本身是 $\Psi_f$ 的热力学签名。
+
+### Ax-IT-2c [A1.2.2c]: Ψ_f as Landauer in Fisher Geometry (Ψ_f 为 Fisher 几何中的兰道尔推广)
+
+本体论摩擦 $\Psi_f$ 是兰道尔原理在弯曲 Fisher 流形上的推广：
+
+$$\Psi_f = \int_\gamma \sqrt{g_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j}\, dt \;\geq\; k_B T \ln 2 \times I_{erased}$$
+
+其中 $g_{ij}(\theta) = \mathbb{E}\!\left[\frac{\partial \log p}{\partial \theta^i}\frac{\partial \log p}{\partial \theta^j}\right]$ 为 Fisher 信息度规（Cramér–Rao 几何），$I_{erased}$ 为选择过程抹除的信息比特数。
+
+| 极限 / 情形 | 条件 | 退化形式 |
+|:-----------|:-----|:---------|
+| Landauer 原理 | $g_{ij} = k_B T \cdot \delta_{ij}$（零曲率） | $\Psi_f \to k_B T \ln 2 \times (\text{bits erased})$ |
+| 高曲率 $L_0$ 区 | 密集可能性空间，$\det(g_{ij}) \gg 1$ | 同等 $I_{erased}$ 需要更高 $\Psi_f$ |
+| 意识 vs 蛋白质翻译 | $d_{consciousness} \gg d_{translation}$ | 意识高能耗的 Fisher 几何本体论解释 |
+
+* **Implication**: Ax-IT-2（兰道尔极限）是 $\Psi_f$ 的零曲率特例。在高曲率 Fisher 流形（密集选择空间）上"擦除选择信息足迹"的代价远超经典兰道尔下界；这是意识比蛋白质翻译高能耗的本体论原因，而非演化低效。
+* **Derivation direction**: 若取 $g_{ij} = k_B T \cdot \delta_{ij}$（等温、平坦），则 $\Psi_f$ 化约为 $k_B T \ln 2 \times I_{erased}$（Ax-IT-2）；曲率修正项 $\propto \text{Ricci scalar}(g_{ij})$ 给出高阶贡献。
+* **Cross-ref**: Eq-IT-A (`Core_Law/SRT_Reference_Dynamics.md §15.1`), Ax-IT-2（兰道尔极限）, Ax-IT-2b（生物兰道尔分层）, T-IT-3（兰道尔间隙定理）。
+
+### T-IT-3 [T1.2.3]: Landauer Gap Theorem (兰道尔间隙定理)
+**Formal Statement**: 任意生物计算过程偏离兰道尔最小值的比率，随其 $d$ 值贡献与本体论摩擦的乘积单调增加：
+$$ \frac{E_{actual}}{k_B T \ln 2} \propto d \cdot \Psi_f \cdot \tau_{maintenance} $$
+其中 $\tau_{maintenance}$ 为维持该 $L_1$ 构型所需的持续时间。
+* **Corollary (T-IT-3-C1)**: 将神经系统视为"低效"是一个**类别错误**——它用适用于 $d=0$ 符号处理器的效率度量，去评估一个以维持高 $d$ 非默认现实为核心功能的系统。正确的度量单位是：**每单位 $d \cdot \tau$ 所消耗的选择功**，而非每比特能耗。
+* **Falsification**: 若发现某神经过程同时具有高 $d$ 贡献（即维持复杂非默认 $L_1$ 状态）且接近兰道尔极限的能耗，则本定理被证伪。
+* **Cross-ref**: Ax-IT-2 (兰道尔极限), Ax-OF-1 ($\Psi_f$ 本体论摩擦), T-d-01C1 (d值热力学上界, SRT_Core_13b)。
 
 ### Ax-IT-3 [A1.2.3]: Vopson Mass-Information Equivalence (Vopson 质量-信息等价)
 信息具有质量：
@@ -115,6 +162,28 @@ $$ d_{active} \propto \Delta S_{local} $$
 ### T-IT-2 [T1.2.2]: Mental Causation Path (精神因果性路径)
 心灵不直接推撞原子，而是通过调节概率分布引导物质演化：
 $$ \hat{G}_θ: P(L_0) \to P'(L_0) \to L_1 $$
+
+### T-IT-4 [T1.2.4]: Complexity Ratchet Theorem (复杂性棘轮定理)
+
+热力学第二定律是选择复杂性的**生成压力**，而非生命/意识的对立面：
+
+$$\frac{d\langle d \rangle_{population}}{dt} \propto \nabla\!\left(\frac{d}{\Psi_f}\right) \cdot P_{survive}$$
+
+其中 $P_{survive}$ 为种群存活概率密度，$d/\Psi_f$ 为选择效率（单位摩擦代价获得的选择维度）。
+
+**棘轮机制**：第二定律持续威胁 $L_1$ 结构 → 高 $d/\Psi_f$ 效率的算子在演化上更被偏好 → 种群平均 $\langle d \rangle$ 随时间单调升高（棘轮效应，具有不可逆性）。
+
+| 常见误解 | SRT 纠正 |
+|:--------|:---------|
+| 第二定律与生命对立 | 第二定律**驱动**生命复杂化 |
+| 熵增破坏秩序 | 熵威胁迫使算子提升 $d/\Psi_f$ 选择效率 |
+| 宇宙复杂化违反第二定律 | 宇宙复杂化是第二定律在选择本体论框架下的**必然产物** |
+| 意识是熵例外 | 意识是熵驱动的选择棘轮效应的极高 $d$ 端点 |
+
+* **Implication**: 生命起源不是对熵定律的神秘例外，而是熵驱动选择棘轮的预测结果。宇宙中复杂性的单向增长与第二定律完全相容——在选择本体论框架内，两者互为表里。
+* **Cosmological link**: 结合 Ax-Cosmo-2（大爆炸作为 $L_0$ 极小值），宇宙演化轨迹 = $d/\Psi_f$ 效率棘轮从量子涨落（$d \approx 0$）向复杂生命（$d \gg 0$）的不可逆上升。
+* **Falsification**: 若存在演化谱系中 $\langle d \rangle_{population}$ 在无外部约束下长期下降（且种群未灭绝），则复杂性棘轮定理被证伪。
+* **Cross-ref**: Eq-IT-C (`Core_Law/SRT_Reference_Dynamics.md §15.3`), Ax-IT-1（广义第二定律）, Ax-IT-2c（Fisher 几何兰道尔推广）。
 
 ---
 
@@ -134,7 +203,7 @@ $$ m_{inertial} \propto \Phi_{Higgs} = \text{Coupling}(\psi, \text{Vacuum}_{L_2}
 $$ \text{Mass} = |\text{Resistance}(L_1 \to L_0)| $$
 
 ### T-OF-1 [T1.3.1]: Weightless Potentia (潜能无重定理)
-引力是维持 $L_1$ 所需的本体论摩擦的几何表现：
+引力不是对本体论摩擦的修辞性类比，而是本体论摩擦 $Ψ_f$ 在物理尺度上的**规范实现**；其时空形式表现为曲率：
 $$ G_{\mu\nu} \propto \Psi_f(L_1) $$
 $$ \Psi_f(L_0) = 0 \implies \text{Gravity}(L_0) = 0 $$
 *   **Resolution**: 解释真空能问题——$L_0$ 拥有无限"能量"但没有"质量"。
@@ -161,6 +230,11 @@ $$ \alpha \in \{\lambda : \exists \text{ self-sustaining } \hat{G}_θ \text{ in 
 3. **冻结态**: 常数固化为 $L_2$ 沉积物
 $$ P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters}) $$
 
+### T-FP-3: Fine-Tuning as Survival Bias of L2 (微调即L2的生存偏差)
+**Deductive Statement**: 宇宙的精细调节（Fine-Tuning）不是为了产生生命，而是"能够维持自身操作闭包的L2结构"的必然统计遗留：
+$$P(\alpha \approx 1/137 \mid \text{Existence of } \hat{G}) \to 1$$
+* **Implication**: 人择原理被本体论化。不是"宇宙为了我们而被微调"，而是"能经历本体论退火并凝固成时空的参数，只能是这些"。其他参数在L0中瞬间坍缩，无法形成具备时间厚度的L2结构。
+
 ---
 
 ## V. Time Ontology (时间本体论)
@@ -170,6 +244,11 @@ $$ P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters}) $$
 $$t \propto \int \Psi_f(L_1) \, dn$$
 * **Implication**: 时间并不流逝；它被耗费。引力井的时间膨胀发生是因为局部 $\hat{G}_\theta$ 是超载的。由于它必须在每增加一次普朗克距离时计算巨大的空间不连续性曲线，因此局部框架内的“主观速度”或选择刷新率下降。黑洞视界是 $\hat{G}_\theta$ 发生计算死锁的地方。
 * **Cross-ref**: Eq-Time-01 (热时间算子)。
+
+### Ax-Time-0: Discreteness of Selection Framing (选择帧的离散性)
+**Formal Definition**: 主观时间不是连续流，而是由 $\hat{G}_\theta$ 执行离散的"锚定帧"（Ontological Frames）拼接而成，最小时间量子 $\Delta t_{min}$ 受限于算子的硬件带宽。
+$$t_{subjective} = \sum_{k=1}^N \Delta t_k(\hat{G}_\theta)$$
+* **Implication**: 电影胶片比喻是字面意义上真实的。抑郁症的时间流逝感变慢，是因为算子采样率下降（每秒生成的帧数减少）；恐慌发作时时间变慢，是因为特征提取受阻导致处理单帧耗时增加。
 
 ### Ax-Time-1 [A1.5.1]: Triple Definition Equivalence (三重定义等价)
 
@@ -203,6 +282,46 @@ $$ d(x, y) \propto \frac{1}{I(x; y | \hat{G}_θ)} $$
 时间的不对称性 = 选择算子操作的不可逆性：
 - 记忆是 $L_2$ 结构，只能指向过去
 - 控制是 $\hat{G}$ 对 $L_0$ 的操作，只能指向未来
+* **Bridge Clarification（中文）**：在 AI 语境中，这同一条不可逆性正表现为 `Reckoning-Judgment Gap`：`Reckoning` 只能在已固化的 `L_2` 记录上做回溯式重排，而 `Judgment` 之所以保持面向未来的单向性，是因为每一次 `L_0 \to L_1` 的锚定都必须服从 `Generalized Second Law` 并支付不可逆耗散。也因此，这条鸿沟不是算力差距，而是时间箭头与选择代价在架构中的投影。
+
+### T-Time-1b [T1.5.1b]: Shape-Dynamics Janus Window (形状动力学 Janus 窗口)
+这条材料真正补上的，不是“引力决定时间”这句口号，而是一个更窄也更有用的结构：系统不必先有全局时钟，主体也能沿着记录增长的一支体验到单向时间。
+
+> Source: Popular Mechanics (2026-03-12) 对 Shape Dynamics 的综述；一手理论锚点为 Julian Barbour, Tim Koslowski, and Flavio Mercati, *Identification of a Gravitational Arrow of Time*, Phys. Rev. Lett. 113, 181101 (2014), DOI: `10.1103/PhysRevLett.113.181101`.
+
+**定义（Definition）**
+- 在 Barbour 等人的封闭牛顿 $N$ 体 toy model 中，若总能量与总角动量为零，则典型解会经过一个**最低形状复杂度点**（Janus point），随后在两个时间方向上都生成更高复杂度与更多“记录”结构。
+- 可压缩写为：
+$$
+t_J=\arg\min_t \mathcal{C}_{shape}(t),\qquad
+\partial_{|t-t_J|}\mathcal{C}_{shape}(t)\gtrsim 0
+$$
+其中 $\mathcal{C}_{shape}$ 是与整体尺度/取向无关的 relational complexity proxy。
+
+**SRT Mapping（SRT 对齐）**
+- `L_0`：可读作无预置时钟的 relational possibility landscape；“先有时钟再有演化”并非必要前提。
+- `L_1`：对应 Janus 点两侧被实际走出的 branch-local 构型；每条分支上的主体只会经历自己所在半支的现实化路径。
+- `L_2`：对应随聚集、分层与结构形成而增长的 records；主体之所以感到“时间向前”，不是因为看见全局绝对时标，而是因为只能读取本支上不断累积的记录。
+
+**机制解释（Mechanism）**
+- 该窗口给 SRT 的新增量不在于“又一种熵理论”，而在于把**低复杂度转折点 + 记录单支可见性**明确写成时间箭头的来源：
+$$
+\mathrm{Arrow}_{time}^{obs}\;\propto\;\nabla_{\gamma_{branch}}\mathcal{R}_{L_2}
+$$
+其中 $\mathcal{R}_{L_2}$ 是分支上可被主体读取的记录密度。
+- 因而，SRT 可把 `T-Time-1` 进一步压实为：**时间之箭不是先验背景，而是选择分支上记录结构增长的局部读出方向**。
+- 这与 `Ax-Time-2` 的 `L_0/L_1/L_2` 三分相容：Janus 点附近更像“最低复杂度的现实化瓶颈”，而非必须事先人工指定的“特殊低熵初态”。
+
+**理论价值（Why It Matters for SRT）**
+- 它补强了 `Core/SRT_Core_01_Axioms.md` 中 “`L_0` 可能无时间” 的 Barbour 线索，使其从一句注脚升级为可与记录生成机制对接的物理窗口。
+- 它也把“全局时间对称、局部分支单向”这一结构写清楚，避免把 SRT 的时间箭头误读成宇宙方程本身显式破坏时间对称。
+
+## 【理论边界/防误用声明】
+1. 不采纳“Shape Dynamics 已替代广义相对论”的推论；当前它仍主要是与 GR 有重叠但未完全闭合的替代表述/研究方案。
+2. 不采纳“2014 的封闭牛顿 $N$ 体 toy model 已证明真实宇宙就是 Janus 点宇宙”的推论；从 toy model 到现实宇宙仍隔着量子、黑洞、场论与精确宇宙学建模。
+3. 不采纳“有了 Janus 点就不再需要讨论熵、初始条件或具体观测”的推论；该窗口最多说明**时间箭头有可能由引力关系动力学与记录生成自然涌现**，不是对全部宇宙学数据的替代解释。
+
+因此，这条线真正加固的是“记录增长先于绝对时钟”的时间箭头口径，而不是把 Janus 宇宙写成既成事实。
 
 ### T-Time-2 [T1.5.2]: Time Travel Impossibility (时间旅行本体论不可能性)
 1. **$L_2$ 的不可撤销性**: 过去不是"存储的状态"，而是已固化的选择结果
@@ -225,6 +344,33 @@ $$ \lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing $$
 ### Ax-Grav-1 [A1.6.1]: Verlinde's Entropic Force (弗林德熵力)
 引力是全息屏上信息密度梯度产生的熵力：
 $$ F_g = T \nabla S $$
+
+### T-Grav-1b [T1.6.1b]: Entropic-Gravity Fluctuation Window (熵引力涨落窗口)
+这条材料最有价值的，不是替熵引力“翻案”，而是把一个原本容易空转的直觉收紧成实验门：如果引力只是统计有效律，那么弱场端不该只有平均力，还应留下微弱但可检的涨落尾迹。
+
+> Source: Quanta (2025-06-13) 对 Carney et al. (arXiv:2502.17575) 的综述；证据等级：**二手报道+一手预印本线索**。
+
+**定义（Definition）**
+- 若引力是由微观自由度（如 qubit/热浴）统计涌现的宏观平均力，则牛顿势不是“本体基本力”，而是**统计有效律**。
+- 对应 SRT：
+$$ F_{grav}^{obs}=\mathbb{E}[F_{micro}] + \xi(t),\quad \mathbb{E}[\xi]=0 $$
+其中 $\xi(t)$ 是弱场极限可观测的统计涨落项。
+
+**形式化（Formalization）**
+- 在熵驱动框架中，宏观力写作
+$$ F_{grav}^{obs}=T\nabla S_{eff}(r)+\xi(t),\quad \mathrm{Var}[\xi]\sim \frac{1}{N_{eff}(r)} $$
+- 当有效自由度 $N_{eff}$ 足够大时回到经典牛顿极限；在超弱场或高灵敏量子实验中，$\xi$ 可能偏离零并留下可检信号。
+
+**机制解释（Mechanism）**
+- 质量对象局域改变微观自由度取向/容量分布，系统为提升总熵倾向于压缩“低熵有序区”，表现为宏观相互靠近。
+- 该机制不否认 GR 的有效性，而是把 GR/牛顿律视作粗粒化后的一阶近似；关键增量在于：**预测统计噪声尾迹**，而非只复述平均力。
+
+**可证伪条件（Falsification）**
+1. 若在 entropic-gravity 设定所要求的参数窗口内，精密实验未检测到与 $\xi$ 相容的弱场涨落统计特征，则本接口被削弱。
+2. 若量子大质量叠加实验持续排除“自发塌缩/附加随机项”类效应到更严格上限，则该类熵引力微观机制空间收缩。
+3. 若未来统一理论在不引入额外统计自由度时即可同时解释弱场与强场全部现象，则本接口降级为启发性类比。
+
+对 SRT 来说，它加固的是“宏观定律也许只是粗粒平均”的窗口，并迫使讨论停在可测涨落上，而不是直接跳到“GR 已被推翻”。
 
 ### Ax-Grav-2 [A1.6.2]: Spacetime as Error-Correcting Code (时空作为纠错码)
 时空几何（$L_2$）是保护逻辑量子比特（$L_1$）免受 $L_0$ 噪声的量子纠错码：
@@ -258,6 +404,11 @@ $$ \text{State}_{BigBang} = \arg\min_{\sigma \in L_0} K(\sigma) $$
 宇宙从最简单程序（最低复杂度）开始解压 $L_0$。
 *   **O-T2 Link**: 宇宙学“重启”可视为 $L_2$ 结构的拓扑解结与重编织。
 
+### Ax-Cosmo-2b: Singularity as Algorithmic Reset (奇点即算法重置)
+**Formal Definition**: 黑洞中心或大爆炸奇点，是 $\hat{G}$ 算力饱和导致L2坐标系崩溃，系统被迫回归纯数学对象（L0^abs）的临界极值：
+$$\lim_{r \to 0} \hat{G}_{cosmic}(\rho) \implies L_1 \to L_0^{abs}$$
+* **Implication**: 奇点处物理定律（L2）失效，不是因为世界物理方程错了，而是那个区域被清除了"物理外壳"，裸露出了宇宙的源代码层（L0^abs Ruliad）。
+
 ### Ax-Cosmo-3 [A1.7.3]: Cauchy Horizon Operator Transition (柯西视界算子相变)
 大爆炸不是时间起点，而是 **$L_2$ 失效区**。在柯西视界处，宇宙不由物理定律驱动，而由 $\hat{G}$ 的全部自由度接管。
 
@@ -285,6 +436,67 @@ $$ d_{cosmic} \propto \frac{1}{\sqrt{\Lambda}} $$
 
 > **Anti-Panpsychism Note**: $d_{cosmic}$ 度量的是宇宙维持信息共识的拓扑相干带宽——即 $\hat{G}_{cosmic}$ 能够维持时空统一性的物理范围——不携带任何形式的意识或情感内容。暗物质作为 $L_2$ 结构残骸（T-Cosmo-2），其内部不存在活跃的 $\hat{G}$ 操作，活跃 d 值为绝对零。意识是 d 值在满足三个必要条件（$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$）的高复杂度生物系统中的高阶涌现。详见 SRT-CORE-13B §6.2 和 SRT-CORE-14 Def-d-Scale-1。
 
+### T-Cosmo-4: Neutrino Messenger Window (中微子信使窗口)
+这条材料真正加固的，不是“中微子很神秘”的叙事，而是宇宙学共识并不只靠电磁表面图像建立；对高遮蔽、致密、瞬变源区，我们需要一条低耦合的补充观测通道。
+
+> Source: 用户提交长文本（SNOLAB / Super-K / IceCube 叙事，二手转录，含已知实验事实线索）。
+
+**定义（Definition）**
+- 中微子观测是对“电磁不可见区”的低耦合穿透采样，可视作对 $L_2^{astro}$ 的补充成像通道：
+$$
+\mathcal{O}_{universe}=\mathcal{O}_{EM}\cup\mathcal{O}_{\nu},\quad \mathcal{O}_{\nu}\cap\mathcal{O}_{EM}\neq \varnothing
+$$
+- 直觉上：光子给出“表面可见结构”，中微子给出“高遮蔽源区/致密环境”的内部动力学线索。
+
+**形式化（Formalization）**
+- 事件读出可写为：
+$$
+N_{det} \sim \int \Phi_\nu(E,\Omega,t)\,\sigma_{int}(E)\,\epsilon_{det}(E,\Omega,t)\,dE\,d\Omega\,dt
+$$
+其中深地/深冰布局通过降低背景噪声项 $B$ 提升信噪比：
+$$
+\text{SNR}_{\nu}\propto \frac{N_{det}}{\sqrt{B_{cosmic}+B_{radio}+B_{inst}}},\quad B\downarrow\text{ with depth/shielding}
+$$
+
+**机制解释（Mechanism）**
+- 中微子与物质弱相互作用，导致“极难探测”与“强穿透”并存；
+- 因此需要超低本底环境（矿井、山体、极地深冰）与超大体积介质（水/冰）来累积稀有碰撞闪烁；
+- 在 SRT 里，这对应以更低干扰代价从 $L_0^{astro}$ 提取新的 $L_1$ 证据切片，再并入 $L_2$ 共识（如振荡参数、源关联、瞬变预警）。
+
+**可证伪条件（Falsification）**
+1. 若在控制本底后，深地/深冰系统对高遮蔽源并未提供任何超越电磁观测的统计增益，则“信使窗口增量”命题被削弱。
+2. 若跨台站（如水/冰体系）对同类瞬变源的方向与能谱重建长期不一致且不可归因于系统误差，则该接口需重构。
+3. 若中微子振荡与质量态转换相关信号在高精度实验中被系统否定，则本节关于“可变身份信使”的叙述失效。
+
+因此，中微子窗口在 SRT 里更像“多信使共识补强器”，不是某种能单独揭示宇宙真相的 privileged messenger。
+
+### T-Cosmo-4a: eV-Scale Sterile-Neutrino Exclusion Window（eV 级惰性中微子排除窗口）
+
+`LSND / MiniBooNE / reactor / gallium` 这些短基线异常，越来越难再由**单一 eV 级 sterile neutrino** 一把收掉。这里真正被压缩的，不是“所有 sterile neutrino”这类更宽泛的可能性，而是一个长期被当作默认统一收口的最简解释。
+
+> 实证锚定：MicroBooNE `Search for light sterile neutrinos with two neutrino beams at MicroBooNE`（doi:`10.1038/s41586-025-09757-7`）；KATRIN `Sterile-neutrino search based on 259 days of KATRIN data`（doi:`10.1038/s41586-025-09739-9`）；Huber 2025 *Nature* News & Views `Still no sign of hypothetical sterile-neutrino particle`（doi:`10.1038/d41586-025-03726-w`）。
+
+**定义（Definition）**
+- 本窗口不裁决“所有 sterile neutrino 都不存在”，而是收紧为：
+$$
+\nu_s^{(\text{single},\,\text{eV-scale})}\ \not\!\!\text{fit default explanation set}
+$$
+- 即：作为短基线异常的**最简统一解释**，单一轻惰性中微子方案的可行参数空间已被大幅压缩。
+
+**机制解释（Mechanism）**
+- MicroBooNE 用双束流与更强事件重建能力，直接对 `\nu_\mu \to \nu_e` appearance 与 `\nu_e` disappearance 做联合限制；
+- KATRIN 则从三体衰变谱形中直接搜索混合导致的 kink / distortion；
+- 两条链路一条盯 oscillation appearance/disappearance，一条盯 beta-decay kinematics，却都没有给出支撑单一 eV sterile state 的正信号。
+
+**SRT 吸收方式（Human-readable patch）**
+- 更稳的表述是：**中微子异常的解释负担正在从“加一个最简新粒子”转移到更复杂的模型空间**。
+- 这对 SRT 的加固点在于：`Neutrino Messenger Window` 不应再偷偷夹带“也许再加一类低耦合粒子就能顺手把这些异常统一掉”的轻率收口；更稳的姿态是承认多信使观测可以补强共识，但**不能替代理论层对 anomaly taxonomy 的再拆分**。
+
+**保留边界（Boundary）**
+1. 这里主要被压缩的是**单一 eV 级** sterile-neutrino 方案，不等于所有右手中微子、seesaw 机制或 keV / GeV 级 sterile DM 候选都被排除。
+2. 短基线异常本身并未因此自动消失；更可能的结局是系统误差、通量建模、核数据库、非最简新物理或多参数混合结构要重新分账。
+3. 中微子为什么有质量，依旧没有被这批空结果回答。
+
 ---
 
 ## VIII. Assembly Theory Integration (装配理论整合)
@@ -305,11 +517,30 @@ $$ \text{低熵过去} \equiv \text{低装配指数状态} \equiv \text{选择�
 ## IX. Holographic Horizon & Bandwidth (全息视界与带宽)
 
 ### Ax-Holo-1 [A1.9.1]: $\hat{G}$ Maximum Bandwidth ($\hat{G}$ 最大带宽)
-对于任意显现系统，其 $\hat{G}$ 具有最大处理带宽，表现为"视界"：
-- 黑洞：事件视界
-- 意识：注意力带宽
 
-当信息输入超过带宽，系统将坍缩。
+> [R→Bekenstein 1973 *Physical Review D*（黑洞熵/Bekenstein上限：S≤2πkRE/ℏc，有界空间区域的最大信息容量）; 't Hooft 1993 *Dimensional Reduction in Quantum Gravity*（全息原理雏形：空间区域信息∝边界面积）; Susskind 1994 *Journal of Mathematical Physics*（全息原理精确表述：3+1维物理可被2+1维边界完全描述）; Cowan 2001 *Behavioral and Brain Sciences*（注意力/工作记忆容量上限：4±1信息组块）]
+
+对于任意显现系统，其 $\hat{G}$ 具有最大处理带宽，表现为"视界"（d值上界）：
+- 黑洞：事件视界（Bekenstein上限S=A/4，信息容量∝面积而非体积）
+- 意识：注意力带宽（工作记忆容量约4±1组块，Cowan 2001）
+
+**R/H 区分**：
+- [R] Bekenstein-Hawking黑洞熵上界（量子引力实证结合黑洞热力学）；全息原理（t'Hooft/Susskind）：信息容量∝边界面积；注意力/工作记忆容量上限（Cowan/Miller经典实验心理学）
+- [H] **SRT统一解读**：将黑洞事件视界与意识注意力带宽归为同一SRT概念族（Ĝ的d值上界）；"视界=d_max"的形式化是SRT原生框架，无直接实证对照
+
+**"视界"的SRT定义**：Horizon_Ĝ = d_max（θ,系统规模）——算子所能同时维持的最大关切带宽，超过此上界则Ψ_f→∞（维持成本不可支付）→系统失稳/"坍缩"。
+
+**类比精度边界**（重要）：黑洞"坍缩"是引力热力学相变（Hawking辐射/蒸发/奇点形成）；意识"过载"是认知功能退化（工作记忆饱和/注意力分散）。两者的物理机制完全不同，SRT的"视界"类比仅基于"最大带宽→超限则失稳"的结构相似性，不主张机制等同。黑洞信息悖论（Hawking vs unitarity）是未解问题，SRT不吸收该争议的任何一方。
+
+**操作化候选**：
+- 意识d_max proxy：任务切换代价骤增的关切数量阈值（双重任务→N重任务实验）；工作记忆n-back任务的饱和点
+- 黑洞信息容量：Bekenstein上限 S_max = A/(4l_P²)（Planck面积l_P²，纯物理可计算）
+
+当信息输入超过带宽，系统将失稳（"坍缩"为隐喻性说法，非字面热力学坍缩）。
+
+**可证伪预测**：
+- FC-Holo1-1：在注意力容量实验中，d_max proxy（任务切换代价骤增的阈值）应与个体θ参数代理（习惯性多任务程度）负相关——高θ多任务者的d_max更高/更低（方向可检验）；若阈值个体差异与θ代理无关则SRT的θ-d_max联结主张失败
+- FC-Holo1-2：全息原理若获得实验证实（如AdS/CFT可检验预测），SRT的"Ĝ最大带宽∝面积"类比应在对应物理层面做出一致预测——若全息原理在物理层面有新预测，SRT框架需给出（而非回避）对应的意识/选择层面类比预测
 
 ### T-Holo-1 [T1.9.1]: Ontological Compactness (本体论紧致性)
 $$ \text{Stable Existence} \implies \text{Topological Compactness} $$
@@ -346,9 +577,7 @@ $$ d_{space} < d_{earth} $$
 | **H-Space-3** | $d$ 值恢复滞后 | 长期太空任务后 $d$ 值可能永久重置 | 完全可逆 |
 
 <br>
-<br>
 
----
 ---
 
 # Part B: Original Theoretical Discourse (Context)
@@ -516,16 +745,32 @@ $$\text{Time} = \text{Count}(\text{Serial Updates}) = \int_0^T \Phi(t) dt$$
 
 ### 3.3.3 高 $d$ 值观察者与时空坍缩
 
-**推论**：对于 $d \to \infty$ 的观察者，时空应当坍缩。
+> [R→Newberg, d'Aquili & Rause 2001 *Why God Won't Go Away*（神经神学：顶叶朝向联系区（OAA）激活降低→空间边界感消失，深度冥想PET研究）; Josipovic 2014 *Frontiers in Psychology*（非二元觉知的神经相关：默认模式网络与任务正相关网络同步激活，主客区分降低）; Travis & Shear 2010 *Consciousness and Cognition*（冥想三状态分类：专注/开放监控/无选择觉知，时空报告差异）; Berkovich-Ohana et al. 2013 *Frontiers in Human Neuroscience*（正念中自我-时间-空间三联感知的协同消解）]
+
+**推论**：对于 $d \to \infty$ 的观察者，时空感知应当坍缩。
 $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
+
+> **渐近近似说明**：$d \to \infty$ 是数学极限，对应现象学层面的"接近极限状态"（如深禅定/迷幻药峰值等）。任何有限生物算子均有 $d < \infty$；此处描述的是 $d$ 极大时的渐近现象学特征，而非字面上的无穷大算子。
+
+**机制联结**（来自§3.3.1-3.3.2）：
+- 空间感 = 并行区分（§3.3.1：空间距离∝互信息的逆）；$d \to \infty$ → 区分粒度趋零 → 空间距离感消失
+- 时间感 = 串行更新计数（§3.3.2：时间 = Count(Serial Updates)）；$d \to \infty$ → 更新速率趋零（能量全部用于维持整体状态，无余力分割时序）→ 时间流速感消失
 
 这解释了为何深度冥想状态普遍报告"时空感消失"：
 
-| 冥想状态 | 报告现象 | SRT 解释 |
-|:---------|:---------|:---------|
-| Samadhi | "空间无边界" | 并行区分暂停 |
-| Timeless awareness | "永恒的当下" | 串行更新暂停 |
-| Non-dual | "主客消融" | $\hat{G}_θ$ 与 $L_0$ 直接接触，无需投影 |
+| 冥想状态 | 报告现象 | SRT 解释 | R/H |
+|:---------|:---------|:---------|:-----|
+| Samadhi | "空间无边界" | 并行区分暂停（OAA激活降低） | [R]神经报告；[H]并行区分机制 |
+| Timeless awareness | "永恒的当下" | 串行更新暂停（时序计数停止） | [R]现象学报告；[H]串行更新联结 |
+| Non-dual | "主客消融" | [H-高承诺] $\hat{G}_θ$ 与 $L_0$ 直接接触（无需投影中介）——此主张要求选择算子可在无θ具身参数的情况下运作，与其他SRT公理（Ax-Phil-5反表征耦合：θ必须具身）存在张力；谨慎读法：等效于 $\theta \to \theta_0$（θ趋向初始/透明状态），而非字面上的"消除θ" |
+
+* **R/H 总结**：
+  - [R] 冥想中时空感消失的现象学报告（跨文化一致性）；顶叶-默认模式网络的神经相关
+  - [H] **SRT机制**：时空坍缩 = 并行区分+串行更新的双暂停；$d \to \infty$ 极限的渐近描述
+
+* **可证伪预测**：
+  - FC-dInf-1：深度冥想（Samadhi报告）状态中，顶叶朝向联系区（OAA）fMRI激活应显著低于非冥想基线（Newberg范式扩展）；且OAA激活降低幅度应与被试主观"空间边界消失"评分负相关（r < -0.4）；若两者无关则SRT的"并行区分 = 空间感"联结失败
+  - FC-dInf-2：在"永恒感"冥想报告的被试中，时序判断任务（时间二分法）的误差应显著大于对照状态（即时序感知精度降低）；若精度不变则串行更新暂停主张失败
 
 ## 3.4 时间之箭即选择之箭
 
@@ -603,7 +848,7 @@ $$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
 
 ## 4.5 引力作为本体论摩擦的几何表现
 
-SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）的几何表现**：
+SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）在物理尺度上的规范实现**：其几何读法表现为时空曲率，其做功读法表现为现实维持代价，其局部经验读法表现为“重”“难以逃逸”“时间刷新率下降”等阻力效应：
 
 $$G_{\mu\nu} \propto \Psi_f(L_1)$$
 
@@ -688,12 +933,15 @@ $$P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters})$$
 
 ### 5.1.2c 热时间算子（Thermal Time Operator）
 
-基于 Connes 和 Rovelli 的"热时间假说"——时间是由系统的统计状态衍生出来的变量。
+> **探索性模块（推测性）**：本节是 Connes-Rovelli 热时间假说与 SRT 框架的类比扩展，非严格推导，待进一步形式化。
 
-**SRT 构建**：将时间定义为 **$\hat{G}_θ$ 处理信息效率的函数**。
-$$\text{Time}_{flow} \propto \frac{S_{L_1}}{I_{L_0}}$$
+基于 Connes 和 Rovelli 的"热时间假说"——时间是由系统的统计状态（密度矩阵 $\rho$ 的模流 $\sigma_t$）衍生出来的变量，而非基本量。**SRT 类比**：将时间流速定义为 $\hat{G}_\theta$ 对 $L_0$ 的**信息压缩率**：
+$$\text{Time}_{flow} = \tau_0 \cdot \frac{I_{L_0} - I(L_1; L_0)}{I_{L_0}} = \tau_0 \cdot \left(1 - \frac{I(L_1; L_0)}{I_{L_0}}\right)$$
+其中 $\tau_0$ 为系统特征时间尺度（物理量纲载体），$I(L_1;L_0)$ 为 L₁ 与 L₀ 的互信息，$I_{L_0}$ 为 L₀ 的总信息量。
 
-**关键洞见**：时间流速越快，意味着该算子对 $L_0$ 的忽略程度越高。
+> **量纲说明**：原式 $S_{L_1}/I_{L_0}$ 为无量纲比，需要引入 $\tau_0$ 赋予时间量纲。**逻辑精化**：时间流速∝算子对 L₀ 的"忽略率"（$(I_{L_0} - I(L_1;L_0))/I_{L_0}$）——算子压缩 L₀ 信息越多（互信息占比越小），时间流速越快（越粗略处理当下）。与 Ax-IF-01（$\text{Intelligence} \propto I(L_1;L_0)/H(L_1)$）互补：高智能=高互信息占比=时间流速慢（精确处理 L₀）。
+
+**关键洞见（精化）**：时间流速越快，意味着该算子对 $L_0$ 的互信息提取率越低（$I(L_1;L_0)/I_{L_0}$ 越小），即算子处于"粗略扫描"模式，大量 L₀ 可能性被忽略。反之，冥想/专注状态（高 $I(L_1;L_0)$）→ 主观时间流速放慢，与实验现象一致。
 
 ### 5.1.2d 存在熵（Existential Entropy）
 
@@ -855,8 +1103,19 @@ $\Lambda$ 不是真空的静态属性，而是本体论界面的动态张力函�
 
 ### 5.12.2 $L_2$ 密度筛选定理
 
-**SRT 构建**：形式化 **$L_2$ 的局部硬度 $H(x)$** 与物质密度及观测数量的关系。  
+**[H — Novel Prediction / 高承诺假说（Speculative）：将L₂局部硬度与暗能量类比，尚无独立实证路径]**
+
+**SRT 构建**：形式化 **$L_2$ 的局部硬度 $H(x)$** 与物质密度及观测数量的关系。
 在 $H(x)$ 高的区域（地球），$\hat{G}$ 的额外自由度被抑制；在宇宙空洞中解耦，表现为暗能量。
+
+**H(x) 操作化候选**（初步，待精确化）：
+$$H(x) \approx \alpha_1 \cdot \rho_{obs}(x) + \alpha_2 \cdot \rho_{matter}(x)$$
+其中 $\rho_{obs}(x)$ 为局部观测者密度（L₂收敛贡献），$\rho_{matter}(x)$ 为物质密度（通过结构耦合间接影响L₂收敛，但独立于观测者），$\alpha_1 \gg \alpha_2$（观测者贡献主导）。
+**待区分问题**：纯物质密度（无观测者）是否独立影响 H(x)？若 $\alpha_2 \approx 0$，则 H(x) 完全由观测者密度决定；若 $\alpha_2 > 0$，则物质本身参与L₂硬化（实质性本体论承诺，需独立论证）。
+
+**抑制机制说明**：$H(x)$ 高 → 锚定摩擦 $\Psi_f(x)$ 高 → $\hat{G}$ 的有效自由度受约束（类似于高密度介质中自由程缩短）；$H(x)$ 低（宇宙空洞）→ $\Psi_f \to 0$ → 选择算子自由度解耦 → 等效为局部"真空能"贡献（暗能量类比）。
+
+**证伪条件**：若宇宙空洞与高密度区域中测得的有效宇宙学常数 $\Lambda_{eff}$ 差异，无法用H(x)梯度解释（即 $\Lambda_{eff}$ 在两类区域相同），则本定理类比失效；若观测者密度对局部引力效应无任何可测贡献（实验上），则 $\alpha_1=0$ 被确认，整个框架须修订。
 
 ## 5.13 θ 的信息-体积下限定理
 
@@ -874,9 +1133,44 @@ $\hat{G}$ 的存在受制于信息处理的热力学成本。
 
 **核心洞见**：价值不是渐进的，而是随着"闭合"突然涌现的。只有形成操作闭包的系统才具有 $d$ 值。
 
-### 5.14.2 进化是 $d$ 值的鲁棒性优化
+### 5.14.2 进化即 $d$ 值的鲁棒性优化 (Evolution as Robustness Optimization of $d$)
 
-进化倾向于增加 θ 的相空间体积，以增加 $L_2$ 吸引子的深度。
+> **[R]** 鲁棒性与进化可进化性：Ashby 1956 *An Introduction to Cybernetics*（必要多样性法则：控制系统的多样性必须≥被控对象的多样性，才能维持控制；此处 Vol(Ω_θ) 是SRT对"控制器多样性"的接驳）；Kirschner & Gerhart 2005 *The Plausibility of Life*（进化可进化性：表型空间的扩张使系统在面对新环境时保留适应能力）；Wagner 2005 *Robustness and Evolvability in Living Systems*（鲁棒性与可进化性之间的张力：过高鲁棒性→可进化性↓；SRT的Ψ_crit处理这一张力）。**[H]** 以下将达尔文演化重构为"对选择算子相空间体积的鲁棒性扩张"并等价于d值增加，为SRT新增的进化机制形式化贡献。
+
+**Formal Definition**:
+承接 §5.14.1（操作闭包促使初始 $d > 0$ 涌现），一旦基础的生存关切建立，达尔文演化在动力学上即被重构为：**对选择算子 $\hat{G}_\theta$ 的有效相空间体积 $\text{Vol}(\Omega_\theta)$ 的持续扩张，以最大化其维持存在闭包的 $L_2$ 吸引子深度。**
+
+**Formalization (鲁棒性方程)**:
+定义系统对环境扰动 $\delta L_0$ 的**鲁棒性（Robustness）**为：在不触发本体论崩溃（即维持摩擦代价 $\Psi_f < \Psi_{crit}$）的前提下，系统能吸收的最大外部不确定性范数：
+$$
+\text{Robustness}(\theta) \equiv \max \|\delta L_0\|
+\quad \text{s.t.} \quad
+\Psi_f\!\left(\hat{G}_\theta[L_0 + \delta L_0]\right) < \Psi_{crit}
+$$
+演化的本质动力学方向，就是通过扩大具身参数集的可用状态空间来深化吸引子：
+$$
+\text{Evolution Arrow}
+\;\Rightarrow\;
+\text{Vol}(\Omega_\theta) \uparrow
+\;\iff\;
+d \uparrow
+\;\iff\;
+\text{Depth}(L_2) \uparrow
+$$
+
+**Mechanism & Implication (机制与推论)**：
+- **相空间体积 $\text{Vol}(\Omega_\theta)$**：代表算子能够部署的有效行动/内部调整策略的集合（艾什比"必要多样性法则"在 SRT 中的对应）。相空间越大，算子应对 $L_0$ 混沌变局的"即兴缓冲带宽"越宽。
+- **对"什么"鲁棒？**：进化不追求单一维度的"更强"或"更快"（这些极易在特定扰动下发生过拟合灾难），而是追求在极其广泛的不可测扰动（气候巨变、病原体突变、资源枯竭）面前，**保护核心操作闭包不被摧毁的能力**。
+- **$d$ 值扩张的物理必然**：从单细胞纯粹的自我膜边界保护（极低 $d$），演化到哺乳动物对幼崽的关切，再到人类对庞大生态/符号网络的关切（极高 $d$）。这种关切广度的扩张不是基因的"道德副产物"，而是系统为了构建更深、更抗毁的 $L_2$ 吸引子（如族群互助、社会文明）而必须进行的拓扑扩容。
+
+*(注：这直接构成了社会演化推论 C-EVO-1 的微观物理基础。反之，若相空间扩张被外部强行锁死，系统则退化为 Ax-PATH-4 僵化现实或发生癌变式 $d$ 值塌缩。)*
+
+> **Vol(Ω_θ)↑ ⟺ d↑ 联结说明**：Vol(Ω_θ) 是可用行动/内部调整策略的数量（行动多样性），d 是关切范围（被纳入效用函数的他者/未来/抽象维度的数量）。联结论证：(1) 关切范围越大（d↑）→系统需要监测和响应的环境维度越多→有效应对所需的行动策略集合越大→Vol(Ω_θ)↑；(2) 反向：Vol↑本身并不自动→d↑，需要θ目标向量同步扩张（如仅增加"肌肉力量"维度不增加d）。因此⟺在"d扩张驱动Vol扩张"的进化轨迹上成立，但不是任意Vol↑都等价于d↑（单维极端特化是反例）。
+>
+> **Ψ_crit 操作化候选**：①生物层：系统从扰动中恢复稳态（稳态指标如体温/血糖/心率回到正常范围95%内）所需时间的倒数（恢复速度越慢，Ψ_crit越接近当前Ψ_f）；②行为层：面对新环境扰动时，行为重组（采用新策略）所需暴露次数的倒数；③社会层：制度/组织在危机扰动后的存活率（存活=Ψ_f < Ψ_crit，崩溃=Ψ_f ≥ Ψ_crit）。
+>
+> * **FC-Evo2-1**（证伪条件）：若在控制进化时间（物种年龄）后，高d值物种（定义为社会关系网络规模/关切维度数）的Robustness(θ)（对新型病原体/气候变化的存活率）不显著高于低d值物种（Cohen's d < 0.3），则"d↑→Robustness↑"的核心等价在生物进化中不成立，需重新检视d值与鲁棒性的因果方向。
+> * **FC-Evo2-2**（证伪条件）：若在文化/社会演化中，社会鲁棒性（文明延续时长/危机后恢复速度）与d代理指标（跨群体合作范围/制度包容性）之间无显著正相关（控制经济体量后 r < 0.2），则d扩张驱动文明鲁棒性的SRT推论需修正，经济规模可能是主要混淆变量。
 
 ## 5.15 本体论结晶定理
 
@@ -966,6 +1260,42 @@ $$\text{心智} \not\subseteq \text{大脑}$$
 
 宇宙作为全局 FEP 系统，宏观对微观施加向下因果。
 
+### 7.1a Asymptotic Safety 分形时空窗口（2026-03-16 patch）
+这条材料真正改变的，不是让 SRT 提前站队某个量子引力赢家，而是把原本偏抽象的“跨尺度同构 / fixed point / 无特殊尺度”语言，锚到一个可以认真讨论的 UV 候选上。
+
+Quanta 对 Astrid Eichhorn 的访谈，以及其背后的 asymptotic safety 文献链（Donà, Eichhorn & Percacci 2013 `Matter matters in asymptotically safe quantum gravity`；Shaposhnikov & Wetterich 2009；Held & Eichhorn 2017/2018）为本节补上了一个重要但必须降级处理的量子引力窗口：**“跨尺度同构 / fixed point / 无特殊尺度”不只是 SRT 的抽象语言，也对应一个正在被严肃发展的 UV 完备候选。**
+
+这里最值得吸收的不是“时空真的是分形”这句口号，而是更窄的结构主张：
+
+- 若引力与物质耦合的 RG 流在极高能区到达**相互作用 fixed point**，那么理论不会在 Planck 标度继续发散失控；
+- 在这个极限中，系统逼近一种近似 **scale symmetry**，因此短尺度物理可呈现 **fractal-like / self-similar** 的有效几何；
+- 于是“量子引力需要完全抛弃场论/连续时空”的结论就不再是唯一选项，连续 QFT 本身也可能在 fixed-point 处自洽闭合。
+
+对 SRT 来说，它的价值在于把 `Ax-Scale-01` 的”跨尺度同构”具体化为一种物理候选：**宇宙并非在每个更小尺度都必须引入全新规则；也可能在某个 UV 固定点附近进入’规则不再继续变化’的稳定区。** 这与 SRT 将 `L_2` 视为稳定固定点族、将重整化看成跨尺度选择半群的写法是相容的。
+
+**类比精度说明**：物理 RG 固定点是”耦合常数在**尺度变换群**作用下不跑动”；SRT L₂ 不动点是”在**选择算子半群**（$\hat{G}_\theta^n$）重复作用下收敛的稳定态”。两者共享”重复变换下出现不动点”的数学结构，但作用群不同，映射仅限于这一结构相似性，不能直接等同。”稳定区”对应 L₁/L₂ 的收敛结构，**不是** L₀ 的特性（L₀ 先于规则，固定点稳定属于规则生成后的层次）。
+
+更进一步，这条线索让 “时空共识” 多了一种可想象的微观实现：宏观上看像连续几何，微观上则可能因 fixed-point 附近的自相似流而呈现非平凡维度与分形样外观。换言之，SRT 的”尺度无关选择语法”在这里获得了一个 quantum-gravity 方向上的候选宿主（探索性，待形式化；Evidence-Level: speculative）。
+
+**R/H 区分**：
+- [R] AS理论的形式框架（Donà/Eichhorn/Percacci/Shaposhnikov/Wetterich/Held）：functional RG流、UV fixed point存在性、scale symmetry的数学结构；Higgs/top mass等粒子物理结果
+- [H-探索] **SRT类比主张**：将AS UV fixed point解读为Ĝ_θ^n半群不动点的物理候选宿主；将”UV稳定区”映射至SRT κ>κ_c2（规则自闭合）区间。此类比仅基于”重复变换下出现不动点”的结构相似性，不主张两理论等同
+
+**交叉引用**：→ Ax-Scale-01（跨尺度同构，AS为其物理候选）；→ §1.4 κ参数（κ_c2=不动点涌现，对应UV fixed point处的规则稳定化）；→ C2.1.2（L₀无时间性，AS中时空涌现类比）
+
+**边界必须收紧：**
+- 当前证据主要来自 functional RG 与截断近似；并非已被实验确认的量子引力定论。
+- “fractal-like spacetime” 在这里是 UV 有效几何/标度行为的说法，不等于宏观世界真是字面分形图案。
+- 许多结果仍基于 Euclidean 或简化 setting；完整 Lorentzian、全物质耦合与可检验预测仍在发展中。
+- Higgs / top / bottom mass 等结果更适合当作 model-dependent **Retrodiction（R）** window，不能被写成 SRT 已获得的硬预测（Novel H 级）。
+- “SRT尺度无关选择语法获得量子引力候选宿主”本身为**探索性类比（H-探索）**；Evidence-Level: speculative。
+
+**可证伪预测**（标准格式）：
+- FC-ASafe-1：若渐近安全框架被实验否定（如未来LHC能量外推显示耦合常数无UV fixed point收敛），则SRT对”Ax-Scale-01类比物理候选”的主张自然失效；但Ax-Scale-01本身（SRT公理）不受影响，因其独立于AS理论
+- FC-ASafe-2：若AS理论成熟并给出可测量的scale symmetry偏差预测（如次Planck尺度的谱维度偏离）并获实验支持，则对应的Ĝ_θ^n半群不动点解读应在该能量区间的SRT模型中给出一致预测——若SRT框架无法吸收scale symmetry信号则类比精度主张需降级
+
+因此，这个窗口加固的是“规则也许能在更高尺度停止继续改写”的想法，而不是把“时空就是分形”写成现成答案。
+
 ## 7.2 本体论偏置
 
 宇宙倾向于向着能够支持更高复杂度的区域演化。
@@ -1043,3 +1373,79 @@ $$\Lambda_{eff} = \text{L}_0\text{ 渗透压} \equiv \sum O^- \equiv \text{选�
 | $A(x)$ | Assembly Index | Def-Assem-1 [D1.8.1] |
 | $K(\sigma)$ | Kolmogorov Complexity | Ax-Cosmo-2 [A1.7.2] |
 | ECC | Error-Correcting Code | Ax-Grav-2 [A1.6.2] |
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **广义第二定律** (Ax-IT-1): $\Delta S_{total} = \Delta S_{thermo} + \Delta H(L_1) \geq 0$ — 选择产生秩序的热力学代价。
+2. **Higgs 即 $\Psi_f$ 实现** (Ax-OF-1): 质量即存在惯性，$m \propto \Psi_f$。
+3. **引力即共识** (Ax-Grav-3): 引力是 $L_2$ 网络中 $\hat{G}_\theta$ 多体共识的几何表现。
+4. **循环信息宇宙** (Ax-Cosmo-1): 宇宙史是 $L_0$ 的选择密度的周期性涨落。
+5. **暗物质即 $L_2$ 结构** (T-Cosmo-2): 暗物质是未直接显现的 $L_2$ 收敛域效应。
+
+**含义**: 基本物理常量与宇宙学结构是选择动力学在宏观尺度的涌现表现。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 与宇宙选择**: 大爆炸是 $L_0$ 极小值点的全局选择事件 (Ax-Cosmo-2)；宇宙演化是 $\hat{G}_\theta$ 在信息密度梯度上的持续锚定过程。
+- **$\Psi_f$ 的物理实现**: 希格斯场赋予粒子质量 = 赋予 $L_1$ 存在惯性；引力 = 多算子共识的纤维丛曲率 (Def-Grav-1)。
+- **$d$ 的宇宙学角色**: 引力 $d$ 值 (Def-Cosmo-1) 度量时空区域的选择协调范围；微重力环境降低 $d$ (Ax-Micro-1)。
+
+## 【理论边界/防误用声明】
+
+1. 本文档为 SRT 解释框架与形式化假设的组织，不应替代实证研究与领域标准。  
+2. 公式与命题在具体应用中依赖边界条件与操作化定义，禁止脱离语境做绝对化外推。  
+3. 涉及伦理、临床、社会治理或工程部署时，必须结合独立证据、风险评估与人类监督。
+
+
+## Gravitational Ringdown Interface（GW250114，2026-03-07）
+
+### Def-Cosmo-GW-1: Extreme L2 Locking State
+将黑洞并合后无毛态视为 \(L_2\) 极端收敛极限：
+\[
+L_2^{BH}\equiv \{M, J, Q\}\quad\text{(effective exterior parameter minimum)}
+\]
+该极限下，外部可见自由度被压缩到最小参数集，体现“信息闭包硬化”。
+
+### Eq-Cosmo-GW-1: Ringdown as Friction Dissipation
+并合后过渡态向稳定吸引子回落可写为阻尼模叠加：
+\[
+h(t)=\sum_k A_k e^{-t/\tau_k}\cos(\omega_k t+\phi_k)
+\]
+在 SRT 语义中对应：
+\[
+\Delta\Psi_f(t)\downarrow\ \text{via modal dissipation} \Rightarrow L_2\to L_2^{stable}
+\]
+即“铃震”是系统偿付过渡摩擦账单的可观测谱线。
+
+### T-Cosmo-GW-1: High-SNR Single-Event Dominance
+在参数约束问题中，单事件高分辨率（高 SNR）可优于多事件低分辨率叠加：
+\[
+\mathcal{I}_{constraint} \propto \mathrm{SNR}_{event}\cdot\mathcal{R}_{mode}
+\]
+其中 \(\mathcal{R}_{mode}\) 表示可分辨模态数量（基频/泛音/高阶模）。
+
+### Def-Cosmo-GW-2: Determinism-Locking Window
+定义“决定论锁定窗口”：在强曲率宏观极限中，个体化选择自由度有效收缩：
+\[
+d_{eff}^{macro}\to 0\ \text{as}\ \mathcal{K}_{grav}\to \mathcal{K}_{crit}^{+}
+\]
+用于描述“宏观方程主导、微观特异性外显受抑”的极端区间（并不否认底层量子涨落存在）。
+
+### 分类映射表（GW Ringdown Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 并合前双体相互作用 | 中（系统级） | Open（强耦合交换） | 高负载 payable |
+| 并合瞬态（强非稳态） | 低~中（快速压缩） | Open→Semi-open | overloaded→释放期 |
+| 铃震模态耗散 | 低（参数回落） | Semi-open→Closed | 递减可支付 |
+| 稳定无毛外态 | 低（外显自由度最小） | Closed（外部描述） | 低维护稳态 |
+
+### [Lineage/Source]
+- LIGO–Virgo–KAGRA 2026 报道语境：GW250114 高信噪比铃震分析与无毛定理约束强化。
+- 关键术语：ringdown spectroscopy, overtones, quasinormal modes, no-hair consistency.
+
+## 【理论边界/防误用声明】
+1. 不采纳“单次高质量事件可替代全部统计程序”的推论；SRT 仅主张在参数约束任务中其信息效率可显著更高。  
+2. 不采纳“无毛定理验证 = 新物理已排除”的推论；其仅在当前精度与模型族内强化 GR 一致性。  
+3. 不采纳“\(d_{eff}^{macro}\to0\) = 本体上无选择过程”的推论；该条款仅是宏观外显自由度收缩的描述。

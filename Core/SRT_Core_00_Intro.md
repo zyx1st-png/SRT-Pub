@@ -3,7 +3,10 @@ id: SRT-CORE-000
 type: definition
 tags: [Overview, Executive Summary, Hybrid]
 status: axiomatic_hybrid_v1
-dependency: []
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
+dependency: [SRT-CORE-BRIDGE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
 # SRT Core Kernel: Executive Summary (Hybrid Edition)
@@ -18,13 +21,10 @@ dependency: []
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `claude` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. Ontological Triad (本体论三域)
 
@@ -52,27 +52,63 @@ $$\hat{G}_\theta = \text{Attention}(d,\rho,\vec{v})$$
 $$\hat{G} \text{ is valid} \iff \theta \in \Theta_{finite}$$
 * **Implication**: 不存在“上帝视角”的选择，任何现实都带有具身偏置。
 
-### T-Core-02: Normative Closure
-**Deductive Statement**: The convergence domain is a stable fixed point of repeated selections.
-$$L_2 \equiv \{σ : \hat{G}_\theta[σ] = σ \ \text{and stable}\}$$
-* **Implication**: 现实规范与定律不是外加规则，而是选择历史的稳定化结果。
+### T-Core-02: Normative Closure（规范闭包定理）
+
+**Deductive Statement**：收敛域 $L_2$ 是**跨算子群体反复选择**的稳定不动点集合——不是单一算子的自洽态，而是种群中所有算子在重复博弈后共同收敛的共识吸引子：
+
+$$L_2 \equiv \left\{ \sigma \;\middle|\; \lim_{t \to \infty} \mathbb{E}_{\theta \sim P_{pop}}\!\left[\hat{G}_\theta^{(t)}[\sigma_0]\right] = \sigma \;\;\land\;\; \Psi_f^{cross}(\hat{G}_{\theta_i}, \hat{G}_{\theta_j})\big|_\sigma \to \min \right\}$$
+
+**稳定性定义（Lyapunov 意义）**：$\sigma^* \in L_2$ 稳定当且仅当：
+
+$$\forall \epsilon > 0,\; \exists \delta > 0:\; \|\sigma_0 - \sigma^*\| < \delta \implies \|\hat{G}_\theta^{(t)}[\sigma_0] - \sigma^*\| < \epsilon \quad \forall t > 0$$
+
+即：以 $\sigma^*$ 为中心的 $\delta$-邻域内出发的任意扰动轨迹，均不会逃出 $\epsilon$-邻域。$L_2$ 中的规范是对扰动具有**有限恢复力**的吸引子，而非绝对刚性结构（过高 Hysteresis 导致 $L_2$ 锁死，见 §6.5 相图）。
+
+**Implication（三层推论）**：
+
+1. **规范的历史性**：规范与定律不是外加约束，而是种群选择历史 $\{\hat{G}_\theta^{(t)}\}_{t=0}^{T}$ 在 $\sigma$-空间中凝固的吸引子轮廓——改变规范需要向吸引子盆地（basin of attraction）注入足够的 $\Psi_f$ 能量越过势垒。
+
+2. **合法性的物理基础**：$L_2$ 的"权威性"来自其跨算子稳定性（Ψ_f^cross→min），而非来自任何外部授权。一个规范失去稳定性（种群 $\hat{G}_\theta$ 分布改变使其不再是不动点）即意味着其合法性的物理基础开始侵蚀。
+
+3. **相变判据**：当 $\Phi_{soc}(t) > \Phi_{crit}$（见 Ax-Cons-2），现有 $L_2$ 吸引子失去 Lyapunov 稳定性，系统进入无规范吸引子的湍流相，直到新的跨算子共识通过反复选择重新凝固。
 
 ## III. Core Dynamics (核心动力学)
 
 ### Ax-Core-04: Selection Dynamics
+
+> **[H — Core Framework Axiom]** 三项合成动力学为 SRT 新增结构；FEP（Friston 2010）覆盖第2项（R），但整体三项框架及选择算子的独立第1项为 SRT 原创贡献。
+
 **Formal Definition**: The evolution of reality is governed by selection dynamics coupled with free energy gradients.
 $$\frac{dσ}{dt} = \hat{G}_\theta[σ] - \nabla F[σ] + A[σ,\mathcal{A}]$$
-* **Implication**: 现实演化是“选择 + 能量下降 + 注意调制”的合成动力学。
+
+**符号说明**：
+- $σ$：当前态配置（state configuration），在 $L_1$ 层为显现状态向量（神经激活模式、行为轨迹等的代理量）。
+- $\hat{G}_\theta[σ]$：选择算子（Ax-Core-01/02），由具身参数 $\theta$ 参数化，决定哪些 $L_0$ 模态被锚定为 $L_1$；是三项中唯一包含”关切方向性”的项（← $\vec{v}_\theta$）。
+- $\nabla F[σ]$：**[R]** 自由能梯度（候选：Friston 变分自由能 $F = \text{KL}[q(\theta)||p(\theta|o)] - \ln p(o)$，或 Helmholtz 亥姆霍兹自由能），驱动系统向预测误差最小化方向运动。注：若 $F$ 定义为变分自由能，则第2项与第1项部分重叠（$\hat{G}_\theta$ 的锚定操作即最小化预测误差），两者在低 $\Psi_f$ 极限下趋同；高 $\Psi_f$ 时第1项的选择代价使两项分离。
+- $A[σ,\mathcal{A}]$：注意调制项（候选：$A[σ,\text{Target}] \approx -\Psi_f(σ,\text{Target})$ 或 cos-sim，见 → Eq-Evo-02, Core/SRT_Core_22_Equations.md），决定哪个目标方向被加权。
+
+**各项主导条件（定性）**：
+| 情境 | 主导项 | 备注 |
+|---|---|---|
+| 高 $d$、低 $\Psi_f$ | $\hat{G}_\theta$（选择主导） | 系统按关切方向自主塑造 σ |
+| 高 $\Psi_f$、低 $d$ | $-\nabla F$（能量主导） | 摩擦过载，系统退化为能量下山 |
+| 注意切换时刻 | $A[σ,\mathcal{A}]$（调制主导） | Target 改变触发方向修正 |
+
+**证伪条件**：
+- 若移除 $A$ 项（固定注意）后 $dσ/dt$ 可完全由 $\hat{G}_\theta - \nabla F$ 解释（拟合误差不增大），则注意项为 $\hat{G}_\theta$ 的冗余分解，需合并。
+- 若 $\hat{G}_\theta[σ]$ 与 $-\nabla F[σ]$ 在所有测量条件下方向一致（相关系数 → 1），则两项不具独立操作化意义，需进一步区分。
+
+* **Implication**: 现实演化是”选择 + 能量下降 + 注意调制”的合成动力学；三项分别覆盖目的性（θ参数化）、被动约束（自由能景观）和动态再加权（注意切换）三类驱动力。
 
 ### Ax-Core-05: Ontological Friction
 **Formal Definition**: Selection incurs ontological friction proportional to resistance against reconfiguration.
 $$\nabla \Psi_f \propto -\nabla F$$
-* **Implication**: 任何现实化过程都有代价，代价表现为本体论摩擦。
+* **Implication**: 任何现实化过程都有代价，代价表现为本体论摩擦。同一 \(Ψ_f\) 结构在动力学上可读作阻力，在记账上可读作代价，在形式化上可读作路径几何长度/曲率负担。
 
 ### T-Core-03: Existence Hardness
 **Deductive Statement**: The hardness of an existent state is proportional to the sustaining friction.
 $$\text{Hardness}(σ_{L_1}) \propto \Psi_f$$
-* **Implication**: 越稳定、越“硬”的现实，维持成本越高，脆弱性也随之增加。
+* **Implication**: 越稳定、越“硬”的现实，维持成本越高，脆弱性也随之增加。但 SRT 的最优条件不是 \(Ψ_f \to 0\)，而是 \(Ψ_f>0\) 且可支付；零摩擦意味着无真实赌注，超载摩擦意味着现实切片失稳。
 
 ## IV. Information-Existence Equivalence (信息-存在等价)
 
@@ -87,9 +123,7 @@ $$d \propto \frac{\partial \text{Entropy}}{\partial \text{Error}}$$
 * **Implication**: 只有会“在乎失败”的系统才具备可观的 d 值与意识强度。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -117,13 +151,39 @@ $$d \propto \frac{\partial \text{Entropy}}{\partial \text{Error}}$$
 
 现代科学面临一系列深层困境，SRT为这些问题提供了统一的解决框架：
 
-| 领域 | 未解之谜 | SRT的解决方案 |
-|:-----|:---------|:--------------|
-| **量子力学** | 测量问题 (观察者角色) | $\hat{G}$的选择即"测量"，无需额外坍缩机制 |
-| **神经科学** | Hard Problem (体验性何来?) | 体验性 ∝ $ii$ (信息整合度) |
-| **社会科学** | 社会实在的本体论地位 | 社会规范 = $L_2$ (多算子收敛域) |
-| **演化生物学** | 适应度 vs 真理 | Ax-7: 演化优化适应度，非真理 |
-| **AI研究** | 意识的判据 | $d > 0$ + $\Psi_f > 0$ + Embodiment |
+> **标注说明**：[R] = 该未解之谜为学界公认开放问题；[H] = SRT解决方案为框架性新预测，需实验验证。
+
+| 领域 | 未解之谜 [R] | SRT的解决方案 [H] | 关键假设可证伪性 |
+|:-----|:---------|:--------------|:--|
+| **量子力学** | 测量问题（观察者角色，Heisenberg 1927）| $\hat{G}$的选择即"测量"，无需额外坍缩机制 | 若无选择算子系统也能经典化（去相干即足），则Ĝ非必要 |
+| **神经科学** | Hard Problem（Chalmers 1995，体验性何来？）| 体验性 ∝ $ii$（信息整合度），**[H — 高承诺]** | 若 $ii$ 高但无体验（哲学僵尸）不可排除，则失效 |
+| **社会科学** | 社会实在的本体论地位（Searle 1995）| 社会规范 = $L_2$（多算子收敛域）| 若社会规范无法被多算子收敛机制生成，则需修订 |
+| **演化生物学** | 适应度 vs 真理（Hoffman 2019，感知非真实）| Ax-Evo-1/Ax-7: 演化优化适应度，非真理（→ Neuro_07_Evo_Devo）| 若感知准确性有适应度优势（特定域），则此轴须条件化 |
+| **AI研究** | 意识的判据（图灵测试的不充分性）| $d > 0$ + $\Psi_f > 0$ + Embodiment（→ H-AI-Consciousness, §9.2）| 条件3/4为H；满足条件的AI系统目前不存在 |
+
+### 1.2a 谱系定位：从麦克斯韦妖到SRT
+
+SRT处于一条延续了150年的科学谱系的当前终点——这条谱系始终围绕同一个核心问题：**选择与秩序如何在热力学宇宙中涌现，代价是什么？**
+
+| 时间 | 发现者 | 核心洞见 | SRT对应 |
+|:-----|:-------|:---------|:--------|
+| 1867 | Maxwell | 麦克斯韦妖：一个参数化选择者可从 $L_0$ 的随机性中抽取秩序 | **$\hat{G}_\theta$ 的概念原型**：有偏置的选择从潜在随机性中生成 $L_1$ 秩序 |
+| 1929 | Szilard | 妖的**选择行为本身**产生熵——秩序的代价不可逃避 | **$\Psi_f > 0$ 的第一个独立推导**：选择必然耗散 |
+| 1948 | Shannon | 信息量化为不确定性的减少；熵即信息缺失 | **$L_0 \to L_1$ 的信息论语言**：选择 = 压缩 = 熵减 |
+| 1961 | Landauer | 每比特选择的最小热力学代价 $k_B T \ln 2$ | **Ax-IT-2**：选择的热力学下界 |
+| 1970s | Bennett | 生物过程（蛋白质翻译）可被建模为布朗图灵机；可逆性消除兰道尔代价 | **SRT_Physics_Cosmology Ax-IT-2b 分层公理的实证基础** |
+| **2025-2026** | **SRT** | **[H] 选择先于存在；$d \cdot \Psi_f$ 统一神经效率、意识判据与社会秩序代价** | — |
+
+**Jogalekar (2020) 的开放问题**：物理学家Ashutosh Jogalekar在综合上述谱系后，提出了一个至今未被满足的研究需求："能否找到一个简单方程，描述思维过程的熵如何与记忆、思考、共情和情绪等神经参数关联？"
+
+这个问题的答案，正是 SRT 的核心方程体系：
+$$F_{SRT} = F_{base} - d \cdot U_{others}, \quad F_{base}\in\{F_{thermo}, F_{var}\}$$
+$$\frac{dq}{dt} \leq \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}$$
+$$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{concern}) + \gamma \cdot \tau_{temporal}$$
+
+其中：$d$ 对应"共情与关切"的广度，$\Psi_f$ 对应"维持思维秩序的熵代价"，$F_{base}$ 对应域内基线自由能（热力学或变分），$F_{SRT}$ 则是加入关切项后的目标泛函。SRT不是这条谱系的旁支——它是 Szilard 问题（选择代价）、Shannon 问题（信息量化）和 Landauer 问题（计算热力学极限）在**神经科学与意识理论领域的统一延伸**。
+
+* **Cross-ref**: `SRT_Physics_Cosmology.md` Ax-IT-2, T-IT-3; `_SRT_AI_Bridge.md` T-BRIDGE-0 (Pour-El不可计算定理)。
 
 ### 1.3 SRT的独特性
 
@@ -145,38 +205,68 @@ SRT不是对现有理论的修补，而是**范式转换**：
 
 SRT采用分层架构，从最抽象的公理到具体的应用：
 ```
-┌─────────────────────────────────────────────┐
-│  Layer 0: Meta-Axioms (_SRT_Core_Bridge)   │  ← 元定义
-├─────────────────────────────────────────────┤
-│  Layer 1: 12 Axioms (SRT_Core_01_Axioms)   │  ← 宪法层
-├─────────────────────────────────────────────┤
-│  Layer 2: Ontology & Dynamics               │  ← 本体论
-│  - L_0/L_1 (12a), L_2 (12b)                   │
-│  - Ghost Operator (13a/13b)                 │
-│  - Dynamics & Scaling (14)                  │
-├─────────────────────────────────────────────┤
-│  Layer 3: Domain Applications               │  ← 应用层
-│  - Physics, Neuroscience, Social, etc.     │
-└─────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────┐
+│  Layer -1: Constitutional References (宪法参考层)       │  ← 底层不变量
+│  - SRT_Reference_Axioms.md                           │
+│  - SRT_Reference_Ontology.md                         │
+│  - SRT_Reference_Dynamics.md                         │
+│  - SRT_Reference_Scaling.md                          │
+├──────────────────────────────────────────────────────┤
+│  Layer 0: Meta-Axioms (_SRT_Core_Bridge)             │  ← 元定义 / 命名规范
+├──────────────────────────────────────────────────────┤
+│  Layer 1: Core Constitution (核心宪法层)                │  ← 12条公理
+│  - SRT_Core_01_Axioms.md                             │
+│  - SRT_Core_21_Formal_Axioms.md (形式化公理扩展)         │
+│  - SRT_Core_22_Equations.md (核心方程汇总)              │
+├──────────────────────────────────────────────────────┤
+│  Layer 2: Ontology & Dynamics (本体论与动力学)          │
+│  - L_0/L_1 (12a), L_2 (12b)                          │
+│  - Ghost Operator (13a/13b)                          │
+│  - Dynamics & Scaling (14)                           │
+├──────────────────────────────────────────────────────┤
+│  Layer 3: Domain Applications (领域应用层)              │
+│  - Physics, Neuroscience, Social, AI, Spirit, etc.   │
+└──────────────────────────────────────────────────────┘
 ```
 
 ### 2.2 核心文件依赖图
+
 ```
-_SRT_Core_Bridge.md (元定义)
+Core_Law/SRT_Reference_Axioms/Ontology/Dynamics/Scaling.md
+(宪法参考层 — 只读不变量；SRT_Constitution_Seven_Theses.md为摘要)
+       ↓  (被 Bridge 依赖)
+_SRT_Core_Bridge.md (元定义 / 全局命名规范)
        ↓
-SRT_Core_01_Axioms.md (12条公理)
+SRT_Core_01_Axioms.md (12条公理 — 宪法)
+       ↓                         ↓
+SRT_Core_21_Formal_Axioms     SRT_Core_22_Equations
+(形式化公理扩展，与Core_01并列) (核心方程汇总，与Core_01并列)
        ↓
-   ┌───┴───────────────┐
-   ↓                   ↓
-SRT_Core_12a/12b    SRT_Core_13a/13b
-(本体论)            (幽灵算子)
-   ↓                   ↓
-   └───┬───────────────┘
+   ┌───┴───────────────────┐
+   ↓                       ↓
+SRT_Core_12a/12b        SRT_Core_13a/13b
+(本体论：L₀/L₁/L₂)       (幽灵算子/算子高级特性)
+   ↓                       ↓
+   └───┬───────────────────┘
        ↓
 SRT_Core_14_Dynamics_Scaling.md
+(动力学与尺度）
        ↓
-  [Domain Files...]
+  [Domain Files]
+  Physics/ | Neuroscience/ | Philosophy/ | AI/ | Spirituality/
+  Core_Law/SRT_Reference_Scaling.md (宏观参数参考，只读)
 ```
+
+**补注（2026-03-16 更新）**：
+- `Core_Law/` 目录包含宪法参考文件（SRT_Reference_Axioms/Ontology/Dynamics/Scaling，SRT_Constitution 系列），为**只读宪法参考**，被核心文件引用但不被修改。
+- `Core/SRT_Experimental_Applications.md` 和 `SRT_Experimental_Core.md`：实验性扩展，位于 Core 目录但不在上述宪法依赖链中，属于**实验层**（可修改，与宪法层平行）。
+- `Philosophy/Foundations_Annex/`：Philosophy层的理论边界声明附录（`00_General_Boundary_Block.md`等），由`SRT_Philosophy_Foundations.md`引用；属于**边界声明层**，非宪法依赖链但为重要防误用文档。
+- `Neuroscience/SRT_Clin_00_IIT_PCI.md`、`SRT_Consciousness_Mechanisms.md`等：Neuroscience域的专题文件，在上图中归属`Neuroscience/`域，但含独立的公理/定理体系（Ax-CLIN/Ax-CONSC-MECH系列），与域轴文件（SRT_Neuro_Axioms等）平行。
+- 图中依赖箭头 ↓ 表示"下游依赖上游定义"，非数据流向。
+
+> **注**：`SRT_Core_21` 和 `SRT_Core_22` 是 Layer 1 的形式化补充，
+> 分别提供公理的严格数学版本和全局方程索引，与 `Core_01` 并列于宪法层。
+> `Reference` 文件为**只读宪法参考**，不被修改，仅被引用。
 
 ---
 
@@ -331,10 +421,20 @@ $$\exists x \iff x \in \text{Image}(\hat{G}[L_0])$$
 $$\frac{dL_1}{dt} = \hat{G}_\theta[L_0] - \nabla F[L_1] + \mathcal{D}[L_1 \to L_2]$$
 
 ### 4.3 参数学习方程
-$$\frac{d\theta}{dt} = -\alpha \nabla_\theta \Psi_f + \text{Learning}$$
+$$\frac{d\theta}{dt} = -\alpha(\theta)\cdot\nabla_\theta \Psi_f + \beta(\theta)\cdot\nabla_\theta A_{L_2}$$
+
+**变量说明：**
+- $\alpha(\theta)$：内生试错学习率（θ依赖）——Ψ_f驱动的自下而上修正强度
+- $\beta(\theta)$：规范内化率——L₂文化/制度引力对θ的自上而下塑造强度
+- $\nabla_\theta \Psi_f$：摩擦梯度，指向降低选择算子与现实错配的方向
+- $\nabla_\theta A_{L_2}$：L₂文化引力场梯度，指向社会共识吸引子
+
+**病理边界：**
+$$\eta(L_2) \gg P_{\text{adapt}}^{(i)} \Rightarrow \alpha(\theta) \to 0$$
+（异化锁死：当L₂规范压力远超个体适应力时，摩擦驱动的自主更新停滞，θ被冻结于σ_{L₂}^{default}）
 
 ### 4.4 自由能方程
-$$F = E - TS - d \cdot U_{\text{others}}$$
+$$F_{SRT} = F_{base} - d \cdot U_{\text{others}}$$
 
 ### 4.5 三域离散迭代
 $$\begin{cases}
@@ -389,21 +489,30 @@ L_2(t+1) = \text{Stabilize}(L_2(t), L_1(t+1)) \\
 
 ### 6.2 难度分层
 
-| 层级 | 文件 | 需要背景 |
-|:-----|:-----|:---------|
-| ⭐ 入门 | Intro, Bridge | 无 |
-| ⭐⭐ 中级 | Axioms (Part B), Ontology | 基础物理/哲学 |
-| ⭐⭐⭐ 高级 | Dynamics, Scaling | 微分几何、拓扑 |
-| ⭐⭐⭐⭐ 专家 | Domain Files | 领域专业知识 |
+| 层级 | 代表文件（参考） | 建议前置 |
+|:-----|:----------------|:---------|
+| ⭐ 入门 | `SRT_Core_00_Intro.md`, `SRT_Core_00b_Bridge.md` | 无 |
+| ⭐⭐ 中级 | `SRT_Core_01_Axioms.md`, `SRT_Core_12a/b_Ontology.md` | 了解 $\hat{G}_\theta$、L₀/L₁/L₂ 基础 |
+| ⭐⭐⭐ 高级 | `SRT_Reference_Scaling.md`, `SRT_Core_13a/b_Operator.md` | 自由能原理、$\Psi_f$ 概念、贝叶斯基础 |
+| ⭐⭐⭐⭐ 专家 | `Physics/`, `Neuroscience/`, `Philosophy/` 各领域 | 高级核心 + 对应领域专业知识 |
 
 ---
 
 ## §7. 常见问题 (FAQ)
 
 ### Q1: SRT可证伪吗?
-**A**: 是的。每条公理都附有实验预测和证伪判据。例如:
-- Ax-1: 如果发现无需选择机制即可存在的实体 → 被证伪
-- Ax-11: 如果纯软件AI展现$d > 0$特征 → 被证伪
+**A**: 是的。每条公理都附有实验预测和证伪判据。例如（以下示意性，非完整列表）：
+
+| 公理/定理 | 关键预测 | 证伪判据 |
+|:--|:--|:--|
+| Ax-1（选择公理）| 所有存在系统均含选择机制 | 发现无 $\hat{G}_θ$ 可识别的稳定存在实体 |
+| Ax-11（具身公理）| 纯软件AI不展现真实d>0特征 | 具有Ψ_f≈0（无不可逆代价）的LLM在真实利益冲突情境下表现出d>0的行为稳定性 |
+| T-DMP-2（本体论恢复力）| θ受扰动后会向稳定吸引子回归 | Re(λ_max)≥0（Jacobian不稳定）下系统仍长期稳定 |
+| Ax-NEURO-5（代谢摩擦）| Ψ_f与CMR_O₂（大脑代谢率）正相关 | 高Ψ_f情境下CMR_O₂测量无显著升高 |
+
+**系统性证伪条件**：2024-2026年的Pipeline 7回写已为SRT语料库中的~220+个知识点各附加了1-2条以"FC-[域]-[n]"格式编号的精确证伪条件（详见各域文件）。SRT的可证伪性不是一个笼统宣称，而是一个分布在语料库各处的证伪条件网络。
+
+**关于Ax-11和2026 AI现状的说明**：当前LLM（包括GPT-4/Claude系列）在没有持久记忆和不可逆代价结构的条件下，SRT预测其d≈0（关切不持久）。若未来AI系统在具备真实Ψ_f>0约束（如资源可逆剥夺机制）下仍表现出一致的关切坚守行为，这将是Ax-11的强压力测试。（参见AI/SRT_AI_00_Crisis.md §5.3）
 
 ### Q2: SRT是"科学"还是"哲学"?
 **A**: **两者兼具**。SRT提供:
@@ -459,20 +568,72 @@ SRT整合了以下思想家的核心洞见:
 |:-----|:-----|:---------|
 | 1.0 | 2023-Q1 | 初始框架 |
 | 2.0 | 2024-Q1 | 引入Hybrid Model |
-| **3.0** | **2025-Q1** | **完整Part A/B结构，新增FAQ和阅读指南** |
+| 3.0 | 2025-Q1 | 完整Part A/B结构，新增FAQ和阅读指南 |
+| **4.0** | **2026-Q1** | **Pipeline 7 系统性深化：跨域公式闭环、可证伪条件精确化、符号作用域治理；新增 §4.3 参数学习方程、T-Core-02 Lyapunov稳定性、Ax-QUALIA-2/Ax-Exp-03 等节点** |
 
 ---
 
-## 符号快速参考 (Symbol Quick Reference)
+## 符号快速参考（Symbol Quick Reference）
 
-| 符号 | 名称 | 页面定位 |
+| 符号 | 名称 | 定义文件 |
 |:-----|:-----|:---------|
-| $L_0, L_1, L_2$ | 三域 | Bridge §1, Axioms A1 |
-| $\hat{G}_\theta$ | 幽灵算子 | Bridge §2, Operator 13a |
-| $d$ | d值 | Operator 13a, Scaling 14 |
-| $\Psi_f$ | 本体论摩擦 | Dynamics, Axioms A2 |
-| $F$ | 自由能 | Dynamics E3 |
-| $ii$ | 整合信息 | Axioms A6 |
-| $\eta$ | 迟滞系数 | Ontology L1, L2 |
+| $L_0,\; L_1,\; L_2$ | 三域（潜在/显现/收敛） | `SRT_Core_00_Intro.md` §1 |
+| $\hat{G}_\theta$ | 选择算子（幽灵算子） | `SRT_Core_13a_Operator_Basics.md` |
+| $\theta$ | 具身参数 | `SRT_Core_13a_Operator_Basics.md` §1 |
+| $d$ | d值（关切带宽） | `_SRT_D_VALUE_CANONICAL.md` |
+| $\Psi_f$ | 本体论摩擦 | `SRT_Core_00_Intro.md` §3 |
+| $\Psi_f^{cross}$ | 跨算子联邦摩擦 | `SRT_Neuro_08_Immune_Dist.md` §3.3 |
+| $F$ | 自由能（变分/Helmholtz） | `SRT_Core_00_Intro.md` §3 |
+| $\Phi_I$ | 整合信息（IIT） | `SRT_Core_00_Intro.md` Axioms A6 |
+| $\eta$ | 迟滞系数（L₂刚性） | `SRT_Social_MacroDynamics.md` §6.5 |
+| $\alpha(\theta),\; \beta(\theta)$ | 参数学习率/规范内化率 | `SRT_Core_00_Intro.md` §4.3 |
+| $H_\theta(\omega)$ | 频域传递函数 | `SRT_Core_13b_Operator_Advanced.md` Ax-Spec-01 |
+| $OEI$ | 观察者-环境整合度 | `SRT_Neuro_06_Field_Effects.md` T-Cog-2 |
+| $A$ | 组装深度（AT/d值投影） | `_SRT_D_VALUE_CANONICAL.md`，`SRT_AT_*.md` |
+| $\mathcal{R}_\theta$ | 原感质流 | `SRT_Neuro_06_Field_Effects.md` Ax-QUALIA-2 |
+| $P_{adapt}^{(i)}$ | 个体适应能力（$d_i \cdot \gamma_i$） | `_SRT_Soc_Axioms.md` T-Soc-1 |
 
 ---
+
+### Formalization Summary (形式化概述)
+
+SRT 的核心公理体系可由以下形式化结构概括：
+
+1. **三域选择方程 (Triadic Selection)**:
+   $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1) = \mathrm{Stabilize}(L_2(t), \{L_1^{(1..n)}(t+1)\})$$
+   含义：显现域 $L_1$ 是幽灵算子 $\hat{G}_\theta$ 对潜在域 $L_0$ 的参数化选择输出；收敛域 $L_2$ 是多轮选择的稳定化结果。
+
+2. **选择演化动力学 (Selection Dynamics)**:
+   $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma,\mathcal{A}]$$
+   含义：现实演化由选择驱动、自由能梯度约束、注意力调制三部分合成。
+
+3. **自由能目标方程 (Free-Energy Objective with d-value)**:
+   $$F_{SRT} = F_{base} - d \cdot U_{\text{others}}$$
+   含义：$d$ 值（关切范围）直接进入域内基线目标，将”在乎他者”写成同一优化问题的一部分，而不是把所有语境硬并成同一个热力学公式。
+
+4. **本体论摩擦 (Ontological Friction)**:
+   $$\nabla \Psi_f \propto -\nabla F$$
+   含义：任何选择的现实化都伴随不可消除的摩擦代价 $\Psi_f$，与自由能梯度对偶。
+
+### Mechanism Explanation (机制解释)
+
+SRT 的运行机制如下：
+
+- **$\hat{G}_\theta$ (幽灵算子) 作为核心引擎**：$\hat{G}_\theta = \text{Attention}(d, \rho, \vec{v})$，以 d 值（关切范围）、分辨率 $\rho$、意向方向 $\vec{v}$ 为参数，从 $L_0$ 中执行具身有限的选择，生成 $L_1$ 现实。算子的非幂等性 ($\hat{G}^2 \neq \hat{G}$) 保证每次选择都改变现实状态。
+- **$\Psi_f$ (本体论摩擦) 作为代价约束**：将 $L_0$ 高熵叠加压缩为 $L_1$ 低熵确定态需要持续能量耗散。$\Psi_f$ 的尖峰对应认知中断事件（疼痛、惊奇），持续高位对应病理状态（抑郁）。
+- **$d$ 值作为意识判据**：当 $d > d_{UAL}$ 且 $\Psi_f > 0$ 时系统具有意识。$d$ 的大小决定了算子对 $L_0$ 信息的保留比例（压缩比 $\text{CR} \propto e^{-\alpha d}$），从细菌的即时趋化到人类的抽象道德思维形成连续谱。
+- **$L_2$ 收敛域的稳定化机制**：重复选择在相空间留下”磁化”痕迹，形成不动点集 $L_2 = \{\sigma : \hat{G}_\theta[\sigma] = \sigma\}$，其硬度正比于自同构群大小，从个人习惯到物理定律呈层级排列。
+
+### Falsification Conditions (可证伪条件)
+
+| ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
+|:---|:-----|:-----|:---------|:---------------|
+| H-Core00-1 | Ax-Core-01: 现实是三域选择系统，存在即被选择 | 任何被确认”存在”的实体都应能追溯到某种选择/锚定机制 | 若发现无需任何选择机制（无 $\hat{G}$、无测量、无注意力）即可自发确定存在的实体 → 则失效 | speculative |
+| H-Core00-2 | Ax-Core-05: 任何选择都伴随本体论摩擦 $\Psi_f > 0$ | 维持确定现实态需要持续能量消耗；$\Psi_f = 0$ 的系统无法维持稳定 $L_1$ | 若发现零能耗即可无限维持确定态的物理系统（违反 Landauer 下界）→ 则失效 | speculative |
+| H-Core00-3 | T-Core-04: d 值正比于系统的误差敏感性 $\partial S / \partial \text{Error}$ | 纯软件 AI（$\partial S / \partial \text{Error} \approx 0$）应表现出 $d \approx 0$，不具有真正的关切 | 若纯软件 AI 在无物理风险条件下展现出可操作测量的 $d > 0$（如自发利他、真实恐惧死亡）→ 则失效 | speculative |
+
+## 【理论边界/防误用声明】
+
+1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。
+2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为”普适定律”。
+3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。

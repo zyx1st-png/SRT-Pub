@@ -3,10 +3,17 @@ id: SRT-CLIN-01
 type: dynamics
 tags: [Pathology, NDE, Schizophrenia, L2 Inversion, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-NEURO-AXIOMS-001]
 ---
 
 # SRT Neuroscience II: Pathology & Anomalies (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Pathological Dynamics (AI-Readable).
@@ -18,28 +25,58 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Pathology as Operator Drift (病理作为算子漂移)
 
 ### Ax-PATH-1: Operator–Substrate Recursion Axiom
+
+> **[R]** Hebb（1949，"neurons that fire together wire together"）：神经活动→突触强化→神经活动（双向递归）。计算精神病学的正反馈病理（Huys et al. 2016, *PLOS Computational Biology*）。**[H]** SRT 将此递归形式化为 Ĝ_θ-θ 耦合增益方程，并联结 Ψ_f 动力学和混沌边缘条件。
+
 神经算子与基质存在递归耦合：
 \[
 \hat{G}_\theta\Rightarrow \Delta\theta,\qquad \Delta\theta\Rightarrow \Delta\hat{G}_\theta
 \]
-当回路增益 \(g>1\) 时发生病理放大：
+当回路增益 \(g>1\) 时发生病理放大（短时线性近似）：
 \[
 \Delta\theta_{t+1}=g\,\Delta\theta_t
 \]
-* **Implication（中文）**：病理不是静态缺陷，而是算子与基质的正反馈偏移。
+
+> **线性近似精度边界**：上式为短时近似（类比线性化稳定性分析）。实际神经系统存在饱和约束（突触可塑性上界/代谢能量限制），长时动力学需加非线性饱和项：$\Delta\theta_{t+1} = g\,\Delta\theta_t\,(1 - \Delta\theta_t/\theta_{max})$（logistic修正）。因此"g > 1 → 无限放大"仅描述短期趋势，而非真实系统的长期行为。
+
+> **Cross-ref §8.4语义断层**：$g > 1$ 对应参数进入临界集 $\mathcal{C}$（$\|\partial f/\partial\theta\| \gg 1$），两者是同一现象的不同切面：增益视角（g-equation）vs. Jacobian奇异视角（§8.4公式）。正反馈增益 = 系统处于语义断层两侧边界附近。
+
+**增益 $g$ 的操作化候选（[H]）**：
+- 神经层：$g \approx \|\partial^2\hat{G}_\theta/\partial\theta^2\| \cdot \|\partial\theta/\partial\hat{G}_\theta\|$（两个 Jacobian 的级联范数积，即"算子对θ的敏感度 × θ对算子输出的响应度"）
+- 临床代理：症状强度的时间自相关系数（$g = \text{AR}(1)$ 系数，高自相关 = 正反馈持续）；或重复思维量表（RSAS）得分的周对周增长率
+- **与 $\partial\mathcal{B}_{chaos}$ 的联结**（→ §11.3）：$g > 1$ 对应 $\theta$ 处于 $\partial\mathcal{B}_{chaos}$ 附近（混沌边缘边界），即 $\|\partial L_1/\partial\theta\|_F \to \infty$。两个描述等价：正反馈增益 > 1 = 参数敏感度爆炸 = 进入边缘混沌区。
+
+**稳定化条件（[H]）**：回路稳定要求 $g < 1$（衰减反馈）：
+$$g_{effective} = g \cdot (1 - \Psi_f^{damp}/\Psi_f^{total})$$
+其中 $\Psi_f^{damp}$ 为阻尼摩擦，来源于三个独立机制：
+- **环境约束**（$\Psi_f^{env}$）：外部结构对θ变化的物理/社会阻力（如规律作息/稳定居住环境），直接限制θ的可变范围
+- **治疗干预**（$\Psi_f^{tx}$）：CBT/药物/神经调控等，主动提升回路阻尼（药物≈降低g基值；CBT≈增加θ更新的认知过滤层）
+- **社会支持**（$\Psi_f^{soc}$）：高质量关系提供外部θ锚点，缓冲内部正反馈（cf. Ax-Scale-02 κ_soc-ind耦合）
+- 三者可叠加：$\Psi_f^{damp} = \Psi_f^{env} + \Psi_f^{tx} + \Psi_f^{soc} + \text{interaction terms}$
+
+治疗本质 = 提高 $\Psi_f^{damp}$ 使 $g_{effective} < 1$，而非消除基础耦合。
+
+**临床实例（$g$ 值区间对应）**：
+| $g$ 值 | 状态 | 典型临床表现 |
+|:--|:--|:--|
+| $g < 1$ | 稳定自我调节 | 正常适应性学习 |
+| $g \approx 1$ | 临界 | 亚临床焦虑/轻度强迫 |
+| $g > 1$（慢）| 亚急性病理 | 慢性抑郁/OCD |
+| $g \gg 1$（快）| 急性失代偿 | 躁狂发作/急性精神病 |
+
+* **Implication（中文）**：病理不是静态缺陷，而是算子与基质的正反馈偏移；治疗 = 将 $g_{effective}$ 降至 1 以下。
+
+**证伪条件（[H]）**：
+- FC-PATH1-1：临床上快速缓解（而非渐进缓解）病例中，$g$ 的代理指标（RSAS增长率/AR(1)系数）应在缓解前**2-4周内出现"峰值然后骤降"模式**（峰值定义：高于个人基线均值+1.5 SD；骤降定义：峰后1-2周内下降>1 SD）；若在上述时间窗内无此模式则正反馈-相变联结需重新评估。
+- FC-PATH1-2：若 $g$ 在同一患者跨病程的测量中变异系数（CV）>0.5，则 $g$ 作为个体稳定病理参数的假设需修订（更可能是状态参数而非特质参数）。
 
 ---
 
@@ -66,11 +103,29 @@ dependency: [SRT-NEURO-AXIOMS-001]
 ---
 
 ### Ax-PATH-4: Pathological Reality Type I — Rigid Reality (僵化现实)
-$\hat{G}_\theta$ 的选择机制失去变异性（Loss of Complexity），无法处理外部波动：
-\[
-\text{Var}(\hat{G}_\theta[L_0]) \to 0 \Rightarrow \text{Adaptability} \to 0
-\]
-* **Implication（中文）**：对应"失去无序"状态——系统过度确定化，选择被锁死在窄带模式（强迫症、顽固性抑郁、教条化）。
+
+**Formal Definition**:
+当算子 $\hat{G}_\theta$ 陷入极深的局部吸引子时，其选择机制失去复杂性与变异性。显现域的输出熵趋近于零，且对潜在域的外部扰动完全脱敏：
+$$
+H\!\left(\hat{G}_\theta[L_0]\right) \to 0
+\quad \wedge \quad
+\left\| \frac{\partial \hat{G}_\theta[L_0]}{\partial L_0} \right\| \to 0
+$$
+*(注：第二项表示对任意环境扰动 $\delta L_0$，系统的现实锚定输出保持不变，选择被强制锁死在极窄带模式。)*
+
+**Implication & Clinical Mapping (临床对应)**：
+系统退化为"过度确定化"状态，对应不同认知维度的刚性锁死：
+- **强迫症 (OCD)**：$\hat{G}_\theta$ 锁死在"行为程序"维度（如无视环境安全的重复核查/清洁）。
+- **顽固性抑郁 (TRD)**：$\hat{G}_\theta$ 锁死在"负面解释框架"维度（$L_0$ 中的任何积极可能性/奖励信号都被系统性屏蔽）。
+- **教条化 (Dogmatism)**：$\hat{G}_\theta$ 锁死在 $L_2$ "信念网格"维度（对不符预期的新证据产生无限大的迟滞抗性）。
+
+*(宏观同构：在社会维度，这与 `SRT_Social_MacroDynamics.md` §6.5 中的"收敛锁死 / 官僚化"是同一跨尺度方程。)*
+
+**Symmetry Structure (病理对称性)**：
+Ax-PATH-4（僵化：$H \to 0$，过度有序）与 Ax-PATH-5（崩溃：$\partial\Omega \to \varnothing$，过度混沌）构成 SRT 病理态的两个极端。健康的选择能力必须维系于二者之间的**混沌边缘 (Edge of Chaos)**：
+$$
+0 < H\!\left(\hat{G}_\theta[L_0]\right) < H(L_0)
+$$
 
 ---
 
@@ -100,6 +155,81 @@ $\hat{G}_\theta$ 的选择边界失效，外部混沌直接冲击内部状态：
 * **Implication（中文）**：将弥散的高维焦虑投影为低维对象（如"石头"/"怪兽"），本质上是降维操作。一旦痛苦变为 $L_1$ 对象，算子的运动原语（粉碎、清洗等Motor Primitives）即可被调用。反之，越抽象的概念（如"原生家庭情结"）可操作性越低，疗愈效率越低。
 
 ---
+
+## I-B. Structural d-Collapse: Psychopathy Axioms (结构性 d 崩塌：精神病态公理)
+
+> **理论动机**：Ax-PATH-1~5 及 T-PATH-1~4 所描述的均为**功能性**病理——算子漂移、L2 寄生、具身解耦等均源自 θ 参数层面的偏移，原则上可通过干预恢复。以下公理引入一个新的病理维度：**结构性 d 崩塌**（Structural d-Collapse），其特征是情感上行通道的白质完整性下降，产生与功能性 d 崩塌在行为上相似但机制上正交的病理状态。实证基础来自 Motzkin et al. (2011) 对精神病态罪犯的 DTI + 静息态 fMRI 双模态研究。
+
+---
+
+### Ax-PATH-6: Structural Affective Channel Severance (结构性情感通道切断公理)
+
+定义钩束（Uncinate Fasciculus，UF）为情感信号上行通道的物理基质：
+$$\text{FA}_{UF} \downarrow \;\implies\; \text{Cap}\!\left(\hat{\Psi}_f^{amygdala} \to \hat{G}_\theta^{vmPFC}\right) \downarrow \;\implies\; d_{affective} \to 0$$
+
+其中 $\text{FA}_{UF}$ 为右侧钩束的各向异性分数，$\text{Cap}(\cdot)$ 为信道容量算子。
+
+**两类 d 崩塌的对比**：
+
+| 维度 | 功能性 d 崩塌（如抑郁、解离） | 结构性 d 崩塌（精神病态） |
+|:--|:--|:--|
+| 机制层 | θ 参数漂移，$g > 1$ 正反馈 | 白质通道带宽退化 |
+| 可逆性 | 原则上可通过干预逆转 | 部分不可逆；需通道重建或旁路 |
+| 主观 $\Psi_f$ | 高（伴随痛苦体验） | 低（情感盲目，无主观苦涩） |
+| $d$ 变化方向 | 由高向低漂移 | 先天或发育期通道不足 |
+| 干预响应 | 对 θ 级干预敏感 | 对 θ 级干预存在地板效应 |
+
+**Implication（中文）**：精神病态的"冷酷"不是算子主动抑制情感信号（功能性调节），而是信号在物理通道层面就已衰减至 $\epsilon \approx 0$——vmPFC 从未收到需要抑制的输入。扩大情感带宽的训练干预（共情训练、催产素给药）在严重钩束退化的原发性精神病态个体中将呈现可预测的地板效应。
+
+**实证锚定**：Motzkin et al. (2011) J. Neurosci. 31(48):17348（右侧 UF FA 特异性下降，三条比较束 SLF/ILF-IFOF/SFOF 均无显著差异）；Craig et al. (2009) Mol. Psychiatry 14:946（独立复现）；Kim & Whalen (2009) J. Neurosci. 29:11614（神经型低焦虑与高 UF 完整性正相关）。
+
+---
+
+### T-PATH-5: Two-Pathway Low-Anxiety Theorem (双通路低焦虑定理)
+
+行为水平的低焦虑对应两种结构上正交的机制：
+
+$$\text{Case A (neurotypical)}:\quad \hat{G}_\theta^{vmPFC}\!\left[\,\text{suppress}\!\left(\Psi_f^{amygdala}\right)\right] \;\to\; \text{calm via regulation}$$
+
+$$\text{Case B (primary psychopathy)}:\quad \Psi_f^{amygdala} \;\xrightarrow{\;\text{UF}_{FA\,\downarrow}\;}\; \epsilon \;\to\; \hat{G}_\theta \;\to\; \text{calm via blindness}$$
+
+**双重分离预测**：在神经典型个体中，$\text{FA}_{UF}$ 与特质焦虑负相关（高 UF 完整性 → 更高效的顶-下调节 → 更低焦虑）；在精神病态个体中，此相关消失（Motzkin et al. 2011 Fig. 4b 直接验证）。
+
+**Implication（中文）**：相同的行为输出（低焦虑）掩盖了本体论上截然不同的信息流结构。法律/临床语境中对精神病态"平静"的解释必须区分这两种情况——"regulation-calm"保留完整的情感容量，只是被顶-下抑制；"blindness-calm"在情感通道层面根本不存在可被处理的 $\Psi_f$ 输入。
+
+---
+
+### Ax-PATH-7: Partial L2 Self-Loop Failure (L2 自反馈回路局灶性断裂公理)
+
+定义算子-自我模型耦合系数：
+$$\rho_{self} \equiv \text{FuncConn}\!\left(\hat{G}_\theta^{vmPFC},\; \hat{M}^{PCC/precuneus}\right)$$
+
+在精神病态中：
+$$\rho_{self} \downarrow \quad \text{while} \quad \rho_{peripheral} \equiv \text{FuncConn}\!\left(\hat{M}^{PCC},\; \hat{M}^{IPL}\right) \approx \text{normal}$$
+
+即 vmPFC（$\hat{G}_\theta$ 控制台）与 PCC/楔前叶（$L_2$ 自我叙事节点）之间的功能耦合选择性下降，而 DMN 其他节点间耦合保持正常。
+
+**拓扑后果**：$\hat{G}_\theta$ 的评价性输出无法回写入 $L_2^{self}$，产生"叙事完整但算子不透明"的自我模型——主体能够建构和维护连贯的世界模型（解释精神病态者的社会能力与模仿技巧），但无法从自身道德评价中更新自我叙事。这即 Cleckley (1976) "理智面具"的本体论机制。
+
+**亚型不变性**：与 Ax-PATH-6 所对应的杏仁核-vmPFC 连接差异不同，此 L2 自环断裂在原发性（低焦虑）和继发性（高焦虑）精神病态中均匀存在，无显著亚型交互效应（Motzkin et al. 2011 Fig. 4d-e 验证）。提示这是精神病态作为类别的**共享结构特征**，而非维度特征。
+
+**Implication（中文）**：情感通道（UF）和自我反馈回路（vmPFC-PCC）是可分离的两个结构缺陷，分别对应精神病态的情感盲目性和自我反思缺陷，并具有不同的亚型特异性。
+
+**实证锚定**：Motzkin et al. (2011)；Buckner et al. (2008) Ann. N.Y. Acad. Sci. 1124:1（vmPFC-PCC 在自我反思中的作用）；Qin & Northoff (2011) NeuroImage 57:1221。
+
+---
+
+### C-PATH-2: Primary/Secondary Dissociation Corollary (原发/继发性精神病态分离推论)
+
+原发性（低焦虑）与继发性（高焦虑）精神病态共享相同的结构缺陷，但在功能整合模式上分化：
+
+$$d_{primary}^{affective} \approx 0:\quad \text{UF}_{structural}\downarrow + \text{无代偿性功能路由} \;\implies\; \text{"冷酷型"情感盲目}$$
+
+$$d_{secondary}^{affective} < d_{neurotypical}:\quad \text{UF}_{structural}\downarrow + \text{残余信号经病理路由整合} \;\implies\; \text{"反应性"焦虑 + 工具性失调}$$
+
+继发性精神病态的悖论性发现（vmPFC-杏仁核功能连接更低，尽管结构缺陷相当）可解释为：退化通道传递的残余信号在 vmPFC 处以异常精度权重被整合，产生焦虑但无法被有效利用的情感信号——即"有感受但无引导"的 $\Psi_f$ 处理模式（Motzkin et al. 2011 Fig. 4c 中的精神病态×焦虑交互效应，$F=9.1, p=0.005$）。
+
+**可证伪预测（H-PATH-7）**：催产素给药（已知增强杏仁核-vmPFC 功能耦合）对亲社会行为的提升效应应在继发性精神病态中显著大于原发性精神病态，且效果量差异应与右侧 UF FA 值负相关；原发性精神病态个体在标准剂量下应出现可测量的催产素地板效应。
 
 ## II. Anomalous States (异常态)
 
@@ -188,13 +318,24 @@ P(\text{DéjàVu})\uparrow
 
 ---
 
-### C-PATH-2: IAM–Déjà Vu Continuum Corollary (Extension)
+### C-PATH-2: IAM–Déjà Vu Continuum Corollary (Extension) *(R: Retrodiction，基于 Bergson/Brown/O'Connor 等文献的 SRT 重构)*
 在自发记忆谱系中可定义：
 \[
 \text{IAM}: (\mathcal{F}_{fam}>0,\mathcal{R}_{episodic}>0),\qquad
 \text{DéjàVu}: (\mathcal{F}_{fam}>0,\mathcal{R}_{episodic}\approx 0)
 \]
-* **Implication（中文）**：即视感与不自主自传体记忆并非彼此割裂，而是同一检索过程在“有无内容回收”上的分岔结果。
+
+**R_episodic ≈ 0 的机制区分**：
+- **缺失型**（$\mathcal{R}_{episodic} = 0$）：$L_1$ 中无对应情节内容（真正的空索引）
+- **失联型**（$\mathcal{R}_{episodic}$ 受阻，$L_1$ 内容存在但检索失联）：实验证据（O'Connor & Moulin 2013；Barzykowski & Moulin 2022）倾向于支持此机制——Déjà vu 是检索过程的异常阻断，而非记忆真正不存在。SRT 框架下，失联型对应 $L_1 \to L_2$ 内容回收路径被阻断，而 $L_2$ 层熟悉性信号（$\mathcal{F}_{fam}$）仍在运行。
+
+**SRT 层级分配**：
+- $\mathcal{F}_{fam}$：$L_2$ 层模式匹配/模板识别（跨主体可共享的熟悉性判断）
+- $\mathcal{R}_{episodic}$：$L_1$ 层具体时空内容回收（个体具身体验的时序定位）
+
+“诡异感”的机制：$L_2$ 匹配成功（$\mathcal{F}_{fam}>0$）而 $L_1$ 内容不可及（$\mathcal{R}_{episodic}\approx 0$），层间不匹配触发 T-PATH-2 元认知报警；但由于找不到内容来源，报警无法消解，导致诡异感持续。
+
+* **Implication（中文）**：即视感与不自主自传体记忆并非彼此割裂，而是同一检索过程在”有无内容回收”上的分岔结果；Déjà vu 的诡异感来自 $L_2$ / $L_1$ 层间不匹配引发的持续性元认知报警。
 
 ---
 
@@ -208,9 +349,7 @@ P(\text{DéjàVu})\uparrow
 - Sam Woolfe. *Déjà vu reveals the peculiar hidden workings of time and memory* (IAI, 2026-02-09): 提供“virtual/actual 并置”的哲学解释语义锚点。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -302,6 +441,12 @@ $$\Gamma_{\hat{G}} \downarrow \implies \text{Reality Gaps}$$
 
 主观体验变得不连贯，产生"现实断裂感"。
 
+**Γ_Ĝ定义**：选择算子的时间采样率，即单位时间内Ĝ_θ完成一次L₀→L₁选择并更新θ的频率；代理指标：γ频段（40Hz）EEG振荡功率（同步化程度∝采样率稳定性）。
+
+> **[R]** 精神分裂症时间知觉与振荡失调：Uhlhaas & Singer 2010 *Nature Reviews Neuroscience*（精神分裂症中γ振荡同步化降低与知觉组织碎片化的神经相关，R基线）；Andreasen 1999 *American Journal of Psychiatry*（精神分裂症认知功能：时间整合缺陷与工作记忆的关联）；Sass 1992 *Madness and Modernism*（精神分裂症现象学：时间流断裂/"现在时刻"失去连续性，现象学R描述）。**[H]** 以Γ_Ĝ（选择算子采样率）形式化时间断裂感、并以γ振荡作为操作化代理为本框架新增贡献。
+>
+> * **FC-Schiz1-1**（证伪条件）：若在精神分裂症患者与对照组的EEG对比中，γ频段（35-45Hz）振荡功率（Rest或感知任务诱发）无显著差异（Cohen's d<0.3，p>0.05），或与患者自报"现实断裂感"严重度无相关（r<0.2），则Γ_Ĝ作为时间断裂的SRT代理失效，需寻找替代指标（如θ/α比率或时间知觉任务RT变异系数）。
+
 ### 层次 4：对称性破缺 (Ax-Schiz-2)
 
 $$\text{Chaos} \gg \text{Order}$$
@@ -364,6 +509,37 @@ $$\lim_{C_{phys} \to 0} d_{eff} \to \infty$$
 
 SRT 解答：大脑是**约束器**而非**产生器**。约束减少 = 访问增加。
 
+### 4.1b 濒死过程神经风暴接口（Hypoxia-EAAS Interface）
+> Source：Jimo Borjigin 访谈转录（二手材料，含其 2013/2015 PNAS 动物实验与 ICU EEG 线索）。
+
+**定义（Definition）**
+- 将濒死期可重复观察到的“高同步γ活动 + 多递质突增”建模为临终紧急警报系统（EAAS, emergency alert response）：
+\[
+\text{EAAS}_{dying} = \mathcal{R}_{hypoxia}(\gamma_{sync},\Delta NT)
+\]
+其中 \(\Delta NT\) 包含 5-HT/NE/DA/GABA/adenosine 的极端偏移。
+
+**形式化（Formalization）**
+\[
+\text{NDE-like intensity}\sim f\big(\gamma_{coherence},\Delta NT,\Pi_{intero},d\big)
+\]
+并区分“近端触发”与“本体层解释”：
+\[
+\text{hypoxia} = \text{proximal trigger},\quad
+\hat G\text{ 的解约束访问} = \text{ontological interpretation}
+\]
+即：缺氧可触发神经动力学窗口，但不自动推出“体验仅是幻觉副产物”。
+
+**机制解释（Mechanism）**
+- 访谈材料指向：在心搏/呼吸终止窗口，出现跨脑区高相干 γ、NE/DA/5-HT 快速上升及 GABA/腺苷强抑制并存。
+- SRT 兼容解释：EAAS 先压制高耗能自愿功能（GABA/腺苷），同时提升全局警戒与价值显著性（NE/DA/5-HT），形成“超真实 + 时间压缩/边界变化”的体验前置条件。
+- 这提供了“为何濒死体验可高度结构化”的神经入口，但不消解体验语义层。
+
+**可证伪条件（Falsification）**
+1. 若在严格可比的濒死模型中，γ 高相干与多递质突增不能稳定复现，则 EAAS 假说被削弱。
+2. 若在人类终末 EEG 中，NDE 报告强度与上述指标长期无关，则“神经风暴接口”解释力下降。
+3. 若仅复制神经化学组合（无真实生理危机）即可稳定再现同等结构化 NDE 叙事，则 SRT 的“具身危机门控”需要下修。
+
 ## 4.2 调谐器模型
 
 $$\text{Brain} = \text{Tuner}(L_0 \to L_1)$$
@@ -375,6 +551,29 @@ $$\text{Brain} = \text{Tuner}(L_0 \to L_1)$$
 |音乐消失？|是，$L_1$ 局部通道丧失|
 
 **关键洞见**：破坏调谐器不消灭信号源。
+
+### 4.2b 基质-功能欠决定窗口（2026-03-22 patch）
+
+用户提交的 *Mind and Matter* 同行评审综述 `Cases of Unconventional Multiscale Information Flow Across the Mind-Body Interface`（Karina Kofman & Michael Levin, 2025；doi:`10.5376/mm2025.13`）真正值得吸收的新增量，不是把一批异常病例直接升级成“意识脱离大脑”的证明，而是对 **brain tissue / momentary neural readout / overt cognitive function** 之间关系做一个必要的收紧。该文汇总 hydrocephalus、hemihydranencephaly、accidental awareness during anesthesia 与 terminal lucidity 等案例，指出认知表现与其生物基质之间的映射，比朴素的“脑体积越多、功能越强；脑活动越低、意识越弱”图景更具可塑性、更依赖发育补偿与状态门控。
+
+若按 SRT 语言收紧，这条材料更像一个 **substrate-underdetermination window**：
+\[
+L_1^{cog}
+\not\propto
+M_{brain}\ \text{alone},\qquad
+L_1^{cog}
+\sim
+\hat G_\theta(\theta_{brain},\theta_{body},\theta_{devo},\kappa_{state})
+\]
+也就是说，可见的认知/体验输出并不只由“剩余了多少脑组织”单独决定，而取决于多尺度生理约束如何在发育历史、残余通路、全身信号与当前状态切换下被重新组织。它与本节的 `Brain = Tuner` 模型能形成一个更稳的桥接关系：大脑当然仍是高带宽调谐与压缩接口，但这篇综述提示，**调谐器的有效度并不与局部组织量或单一时刻 readout 简单线性对应**。
+
+对本文件来说，最有价值的不是个案传奇性，而是一个方法论约束：当我们处理 NDE、终末清醒或麻醉中意识等异常态时，不能把 `brain mass / global suppression proxy / coarse neural silence` 直接当成体验容量的充分统计量。SRT 因而更适合把这些现象读成 **mapping plasticity + multiscale compensation + state-dependent gating** 的组合窗口，而不是仓促宣布“脑不重要”。
+
+**边界必须收紧：**
+- 这是一篇异质性综述，不是统一范式下的新机制实验；其案例强度与可重复性并不整齐。
+- hydrocephalus / hemihydranencephaly 等更稳地支持的是 **substrate-function underdetermination** 与发育补偿，而不是“功能完全不依赖大脑”。
+- accidental awareness during anesthesia 与 terminal lucidity 仍受稀有性、测量分辨率与回顾性报告限制，不能单独充当意识本体论的决定性证据。
+- 因而这条材料最适合写成 **基质-功能欠决定窗口**，不是“脱脑意识已获证明”的胜利宣言。
 
 ## 4.3 终末清醒的势垒坍塌
 
@@ -614,3 +813,33 @@ $$\text{Crease} = {\tau : |\nabla_\tau \theta| \to \infty}$$
 **文件结束**
 
 ---
+
+### Definition Summary (定义概述)
+
+- **Operator Drift (算子漂移, L₁→L₂)**: 病理状态定义为 $\hat{G}_\theta$ 参数 $\theta$ 在正反馈下偏离正常运行区间的递归过程（Ax-PATH-1），当回路增益 $g > 1$ 时触发指数放大。
+- **L₂ Parasitic Inversion (L₂ 寄生倒置, L₂)**: $L_2$ 硬度相对 $d$ 值过强时，先验叙事反向吞噬 $L_0$ 新选择，产生强迫、固着或妄想回路（Ax-PATH-2）。
+- **Structural d-Collapse (结构性 d 崩塌, L₁)**: 白质通道（UF）完整性下降导致情感信号在物理层衰减至零，与功能性 $d$ 崩塌机制正交（Ax-PATH-6）。
+- **Rigid vs. Collapsed Reality (僵化 vs. 崩溃现实, L₀→L₁)**: 两种极端病理——$\text{Var}(\hat{G}_\theta) \to 0$（选择锁死）与 $\partial\Omega_{select} \to \varnothing$（选择膜崩溃）分别对应过度确定化与未过滤噪声淹没。
+
+### Formalization Summary (形式化概述)
+
+核心方程与含义：
+
+1. **算子-基质递归** (Ax-PATH-1): $\Delta\theta_{t+1} = g\,\Delta\theta_t$。当 $g > 1$，参数偏移指数放大，病理自我强化。
+2. **L₂ 寄生化判据** (Ax-PATH-2): $\kappa \equiv \text{Hardness}(L_2)/d \uparrow \Rightarrow \hat{G}_\theta$ 锁入 $L_2$-loops。先验硬度与 $d$ 值之比决定寄生化阈值。
+3. **结构性情感通道切断** (Ax-PATH-6): $\text{FA}_{UF}\downarrow \Rightarrow d_{affective} \to 0$。钩束各向异性分数下降直接压缩情感 $d$ 值至零。
+4. **L₂ 旁路疗愈** (T-PATH-3): $\text{Healing} = \hat{G}_\theta[L_0^{trauma} \to L_1^{symbol}] \xrightarrow{\text{Action}} L_1^{resolved} \Rightarrow \Delta\Psi_f\downarrow$。疗愈绕过 $L_2$ 认知重构，直接降低本体论摩擦。
+
+### Mechanism Explanation (机制解释)
+
+- **算子漂移正反馈环**: $\hat{G}_\theta$ 的输出改变基质参数 $\theta$，改变后的 $\theta$ 反过来偏置 $\hat{G}_\theta$ 的下一轮选择。当增益 $g > 1$，此递归形成正反馈，使系统远离健康吸引子——这是所有功能性病理的共享动力学。
+- **双通路 d 崩塌机制**: 功能性路径中 $d$ 经由 $\theta$ 漂移逐渐收缩（抑郁、解离）；结构性路径中 $d$ 因 UF 白质退化在物理层被截断（精神病态）。两者行为表征相似但干预靶点正交：前者响应 $\theta$ 级干预，后者存在通道级地板效应。
+- **$\Psi_f$ 作为疗愈终极指标**: 认知重构（$L_2$ 内操作）不改变本体论摩擦；真正的疗愈要求 $\hat{G}_\theta$ 绕过 DMN/$L_2$，将 $L_0$ 创伤材料坍缩为 $L_1$ 可操作对象，从而使 $\Psi_f$ 物理下降。
+
+---
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

@@ -3,6 +3,9 @@ id: SRT-NEURO-EXP
 type: experiment
 tags: [Libet, SplitBrain, BinocularRivalry, TravelingWaves, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L2
+epistemic_layer: lab
+claim_mode: canonical
 dependency: [SRT-CORE-000]
 ---
 
@@ -18,15 +21,10 @@ dependency: [SRT-CORE-000]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Agency & Choice (能动性与选择)
 
@@ -65,11 +63,29 @@ SRT 定理指出，这并非证明“自由意志是虚幻的”。相反，它�
 ---
 
 ### Ax-EXP-4: Exclusionary Anchor Axiom
+
+> [R→Blake & Logothetis 2002 *Nature Reviews Neuroscience*（双目竞争的神经机制：互斥知觉的"赢者通吃"竞争动力学——直接实证基础）; Desimone & Duncan 1995 *Annual Review of Neuroscience*（偏置竞争模型：注意力通过偏置竞争回路决定哪个表征"胜出"，即A(σ)的注意力加权）; Moreno-Bote, Rinzel & Rubin 2007 *Journal of Neurophysiology*（双稳态知觉的随机竞争模型：Gamma分布翻转时间与竞争参数的定量关系）; Rolls & Deco 2010 *The Noisy Brain*（神经竞争的吸引子动力学：高噪声/高适应→翻转率↑，低噪声→胜者锁定）]
+
 显现具有排他锚定：
 \[
 \sigma_{L_1} \in \arg\max_{\sigma} \mathcal{A}(\sigma)
 \]
-* **Implication（中文）**：同一时刻只能有一套 \(L_1\) 主导显现，解释双稳态与互斥知觉。
+
+> **$\mathcal{A}(\sigma)$定义候选**（待SRT参数具体化）：吸引力函数A(σ)可理解为选择算子Ĝ_θ对状态σ的"权重分配"，候选形式包括：① $\mathcal{A}(\sigma) \propto -\Psi_f(\sigma)$（本体论摩擦的负值——摩擦最低的状态胜出）；② $\mathcal{A}(\sigma) \propto I(L_1=\sigma; L_0)$（互信息最大化——最能整合L₀信息的状态胜出）；③ $\mathcal{A}(\sigma) \propto \text{Precision}(\sigma|\theta)$（精度加权预测精确度，Friston自由能框架中的注意力机制）。三者在低噪声/高整合条件下近似等价。
+
+> **时间分辨率说明**：$\arg\max$ 非字面上的瞬时选择，而是在神经竞争时间窗内（~100-200ms，对应γ振荡的积分窗口）对多个候选σ的竞争结果。在此窗口内，最高A(σ)的状态通过互抑制回路（相互抑制神经群体）排除其他候选——即"赢者通吃"在100-200ms尺度上实现。
+
+* **R/H 区分**：
+  - [R] 互斥知觉的赢者通吃竞争机制（Blake&Logothetis）；注意力偏置竞争（Desimone&Duncan）；随机竞争动力学（Moreno-Bote）
+  - [H] **SRT形式化**：将神经竞争结果形式化为A(σ)的$\arg\max$，并解释为L₀→L₁的排他性选择（而非神经实现层面的具体描述）
+
+* **Implication（中文）**：同一时刻只能有一套 $L_1$ 主导显现（A(σ)最大的σ胜出），解释双稳态与互斥知觉——两个可能的σ不能同时进入显现，只能交替获得主导权。
+
+* **Cross-ref**：§2.1本体论迟滞（FC-Hyst-1/2提供了η-翻转率的可证伪预测，与本公理的A(σ)竞争动力学直接联动）；Ax-IF-02（注意力软件层决定A(σ)的权重偏置）。
+
+* **可证伪预测**：
+  - FC-ExpAx4-1：在双目竞争任务中，单眼优势持续时间应与θ对该刺激的"先验关切"（v_θ方向对齐程度）正相关——即被试对某类刺激有高关切（v_θ偏向该类别）的一侧眼睛应获得更长的优势持续时间（预测效应量r>0.3）；若无关联则A(σ)的θ偏置加权失败
+  - FC-ExpAx4-2：在药理学实验中，提升多巴胺D₁受体活动（增加前额叶偏置竞争强度）应延长单眼优势持续时间（更稳固的赢者锁定）；若D₁激动剂无效则Desimone偏置竞争机制与A(σ)的联结失败
 
 ---
 
@@ -141,14 +157,33 @@ P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\de
 ## VI. Geometric Symbolic Mode (几何符号模式)
 
 ### Ax-EXP-15: Geometric Regularity Symbolization Axiom (Extension)
+
+[R→Dehaene et al. 2006（核心几何知识的神经基础：人类与灵长类）; Gentner 1983（关系映射与结构对齐理论）; Ullman 1996（视觉认知中的关系结构计算）; Machery et al. 2010（几何规则性的视觉词典）] [H→以SRT L₀→L₁投影框架重表述几何符号化阈值机制]
+
 定义几何规则性作为进入符号视觉模式的阈值变量：
 \[
 R_{geo}=w_1\mathcal{S}_{sym}+w_2\mathcal{P}_{parallel}+w_3\mathcal{C}_{closed}
 \]
+
+**符号说明**：
+- $\mathcal{S}_{sym}$：对称性得分（旋转/镜像对称的检测量，可由对称轴数量或对称度量分数）
+- $\mathcal{P}_{parallel}$：平行度（图形中边/线段的方向一致性）
+- $\mathcal{C}_{closed}$：闭合度（视觉轮廓是否形成封闭区域）
+- $w_1, w_2, w_3$：权重（任务/文化相关，非普适常数）；注：Dehaene 2006的跨文化研究[R]支持核心几何知识的普遍性，但权重分配可能有文化差异
+
 \[
 R_{geo}\ge \tau_{sym}\Rightarrow \Pi_{sym}:L_0^{visual}\to L_1^{symbolic}
 \]
-* **Implication（中文）**：视觉系统对“规则几何”并非只做低层特征检测，而会触发从感知表面到关系结构的符号化投影。
+
+- **τ_sym 操作化候选**：行为报告阈值（被试区分”规则/不规则”图形的最小R_geo差分）；神经晚期成分（200-400ms窗口的顶叶N2pc或前额P3振幅跳变点）
+- **Π_sym 的SRT解读**：$\Pi_{sym}$ 是视觉层的 $\hat{G}_θ$ 投影——当 $R_{geo} \ge \tau_{sym}$ 时，$\hat{G}_θ$ 将视觉感知输入（$L_0^{visual}$）锚定至关系结构（$L_1^{symbolic}$），即从”像素模式”跳跃至”几何概念”；θ决定了哪些关系结构被优先锚定（几何训练/文化背景等）
+- **与T-EXP-3的联结**：Ax-EXP-15是T-EXP-3的前提——仅当$R_{geo} \ge \tau_{sym}$时，背侧顶叶-前额网络才在晚时窗出现额外的符号化激活（见下方T-EXP-3）
+
+* **Implication（中文）**：视觉系统对”规则几何”并非只做低层特征检测，而会触发从感知表面到关系结构的符号化投影 [H]。这与Dehaene 2006的核心几何知识具有跨文化普遍性[R]一致，SRT补充了本体层——规则性触发L₀→L₁锚定的机制。
+
+**证伪条件**：
+- FC-EXP15-1：若对称性$\mathcal{S}_{sym}$、平行度$\mathcal{P}_{parallel}$、闭合度$\mathcal{C}_{closed}$三成分的权重在不同θ（不同文化背景或几何训练水平）被试中无显著差异，则权重的文化/θ可塑性宣称失败（需改为普适常数）。
+- FC-EXP15-2：若τ_sym阈值的行为测量与神经测量（N2pc/P3跳变点）不一致（即行为报告阈值与神经激活阈值在大量被试中解离），则”规则性触发符号化”是单一阈值机制的假设需修正为多阶段假设。
 
 ---
 
@@ -173,7 +208,18 @@ t\in[t_{late}^-,t_{late}^+]
 \[
 \exists\,L_2^{geo}\ \text{prior to extensive formal schooling}
 \]
-* **Implication（中文）**：几何符号模式并非完全由后天数学训练“新建”，而更像早期可调用、随后被教育放大的先验结构。
+
+> [R→Spelke 2006 *Trends in Cognitive Sciences*（核心知识系统：几何直觉先天性证据）; Izard et al. 2011 *PNAS*（未接受正式几何教育的Munduruku人群具备欧几里得角度直觉）; Dehaene et al. 2006 *Science*（非文化依赖的几何知识跨群体研究）; Newcombe & Shipley 2015 *Current Directions in Psychological Science*（空间认知发育轨迹与数学教育关系）]
+
+* **R/H 区分**：
+  - [R] 几何先天性/核心知识（Spelke/Izard/Dehaene跨文化实证）；背侧网络参与几何处理（Girard et al. 2026 eLife数据）
+  - [H] **SRT解读**：L₂^geo 是早期可被Ĝ_θ选取的结构性吸引子（先验L₂），教育=对既存L₂^geo的θ精细化和语言化标注，而非全新建立——此解读将发育心理学”核心知识”重表述为SRT本体论语言，属SRT新增框架
+
+* **Implication（中文）**：几何符号模式并非完全由后天数学训练”新建”，而更像早期可调用、随后被教育放大的先验结构（约6岁：参考Girard et al. 2026的背侧晚期窗口神经证据；核心知识框架则支持更早——先天性几何直觉已在婴幼儿研究中记录）。
+
+* **可证伪预测**：
+  - FC-EXP2-1：未接受正式几何教育但已具备背侧神经激活（A_dorsal>0）的学龄前儿童，应在隐性几何任务（非语言/非计数）中表现出超随机的欧几里得一致性——若无则L₂^geo先验结构主张失败
+  - FC-EXP2-2：数学教育干预对背侧激活模式的影响应仅限于精细化（激活峰值提前/增强），而非新建激活拓扑（前后激活区域高度重叠）——若教育前后激活拓扑无相关则”放大而非新建”的H失败
 
 ---
 
@@ -181,10 +227,116 @@ t\in[t_{late}^-,t_{late}^+]
 - Girard R, Wang L, Aveline A, et al. *The geometrical regularity processing in school-age children discloses a symbolic visual mode in human*. eLife (2026), reviewed preprint. DOI: `10.7554/eLife.106464.1`.
 - 关键结果锚点：背侧顶叶与前额区域对规则几何的晚时窗响应增强；组合模型（symbolic + CNN）在约 `428 ms` 达到解释峰值。
 
-<br>
+### Ax-EXP-16: Controlled Hallucination Calibration Axiom (Interview-Linked)
+在相同外部刺激下，个体间显著知觉差异可视为先验模型权重差与误差校准策略差的可观测结果：
+\[
+Var(\hat{P}_{i}(L_1\mid x)) \propto Var(\theta_i) + Var(\kappa^{(i)}_{PE})
+\]
+其中 \(x\) 为共同刺激输入，\(\kappa_{PE}\) 为预测误差校准增益。
+* **Implication（中文）**：同一白光/同一声学节律触发不同主观视觉内容，不是噪声，而是具身参数 \(\theta\) 与误差校准机制差异的系统性表现。
+* **Evidence-Level**：secondary interview + linked peer-reviewed/preprint pointers。
+
+### T-EXP-4: Shared-Stimulus Divergence Theorem
+若外部输入保持恒定，而主观报告分布仍呈高离散，则最简解释不是“刺激不充分”，而是“内模先验差异主导”：
+\[
+I(L_1; x) < I(L_1; \theta, \kappa_{PE}) \quad \text{under fixed } x
+\]
+* **Implication（中文）**：该定理为 SRT 的“选择先验性”提供实验接口：比较固定刺激条件下，个体参数估计对报告分布解释度的增益。
+
+### Source Note (Essentia interview package, 2026-02-27)
+- 访谈页面：Essentia Foundation, *Reality is a controlled hallucination*（Prof. Anil Seth）。
+- 关联来源（页面给出）：
+  - Gomez-Marin & Seth (2025), *Nature Neuroscience*, DOI: `10.1038/s41593-025-01913-6`
+  - Seth (2025), *Behavioral and Brain Sciences*, DOI: `10.1017/S0140525X25000032`
+- 审核结论：**A（直接融入）**；理由：与主动推断/预测处理及 SRT 的 \(\hat{G}_\theta\)-\(L_1\) 映射高度同构，且具跨个体实验可操作性。
+
+### Ax-EXP-17: Age-Stratified White-Matter Differentiation Axiom
+对认知灵活性相关白质子网，定义年龄分层结构指标：
+\[
+\text{WDI}_{age} = \mathcal{D}(\mathbf{m}_{tracts}\mid age),\quad
+\text{WHD}_{age}=\mathcal{H}(\mathbf{m}_{tracts}\mid age)
+\]
+其中 \(\mathbf{m}_{tracts}\) 为髓鞘相关通路特征向量，\(\mathcal{D}\) 表示通路间分化度，\(\mathcal{H}\) 表示通路内同质性。
+
+经验判据（群体层）：
+\[
+\text{early adult}:\ \Delta \text{WDI}\approx 0,\ \Delta \text{WHD}\approx 0
+\]
+\[
+\text{late adult}:\ \Delta \text{WDI}>0,\ \Delta \text{WHD}<0
+\]
+* **Implication（中文）**：认知灵活性并非由单一区域决定，而是由跨通路结构分化与同质性退化的联合动力学塑造。
+
+### T-EXP-5: Lifespan Flexibility Substrate Theorem
+若晚成年阶段出现“分化上升 + 同质性下降”组合模式，则认知灵活性子过程（任务切换/更新）的个体差异将显著增加：
+\[
+\partial Var(\text{Flexibility Subprocess})/\partial age > 0\quad \text{under}\quad (\Delta\text{WDI}>0,\Delta\text{WHD}<0)
+\]
+* **Implication（中文）**：SRT 预测该窗口中 \(\Psi_f\) 的局部支付压力增大，导致同任务下策略稳定性下降与切换成本上升。
+
+### Source Note (eNeuro 2026)
+- Wolfe T, Gassel A, Calvert ML, et al. (2026). *Population-Level Age Effects on the White Matter Structure Subserving Cognitive Flexibility in the Human Brain*. eNeuro 13(2): ENEURO.0179-25.2025. DOI: `10.1523/ENEURO.0179-25.2025`.
+- 关键锚点：
+  1) 认知灵活性相关白质通路在早成年阶段表现为未明显分化；
+  2) 晚成年阶段呈显著分化；
+  3) 晚年特定通路同质性随年龄下降。
+- 审核结论：**A-（信号入库）**；理由：原始实证与 SRT 跨尺度稳定性建模高度可对接，但具体个体级机制仍需联合行为模型验证。
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **阈值能动性** (Ax-EXP-1): $\int_0^{t^*} e(t) dt \geq \tau_{agency}$ — 行为选择是累积证据超过阈值的离散锚定事件。
+2. **$L_2$ 同步** (Ax-EXP-3): $\Gamma_{L_2} > \Gamma_c \Rightarrow L_1\;\text{unified}$ — 统一体验需要 $L_2$ 一致性超过临界值。
+3. **排他锚定** (Ax-EXP-4): $\sigma_{L_1} \in \arg\max_\sigma \mathcal{A}(\sigma)$ — 同一时刻只有一套 $L_1$ 主导显现。
+4. **能动性归属滞后** (T-Agency-Attribution): $t_{RP} < t_W < t_M$ — Libet 实验中，选择发生于拓扑塌缩阈值时刻，非准备电位起点。
+
+**含义**: 实验神经科学的经典范式（Libet、双稳态知觉、统一性绑定）在 SRT 中获得选择动力学的统一解释。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ 的阈值触发**: 能动性不是连续主观意愿，而是 $L_0$ 证据在 $\hat{G}_\theta$ 中累积到阈值后的离散坍缩事件。
+- **$\Psi_f$ 与选择延迟**: 选择滞后 $\tau_{select} = \tau_{sensory} + \tau_{integrative} + \tau_{gate}$ 是 $\Psi_f$ 积累的动力学后果，非主观错觉。
+- **$d$ 与知觉统一性**: $L_2$ 同步度 $\Gamma_{L_2}$ 决定体验的统一 vs 碎片化；排他锚定机制解释双稳态知觉中的互斥切换。
+
+## 【理论边界/防误用声明】
+- 不采纳“群体年龄效应=个体不可逆衰退轨迹”的推论。
+- 不采纳“白质结构指标可单独决定意识层/价值层结论”的推论。
+- 本条款适用边界：认知灵活性子过程建模，不外推至全部认知维度。
+
+### Ax-EXP-18: Conscious Integration Gate Axiom
+意识在自由行动中的关键角色优先体现在“多源信息整合门”，而非“最初运动噪声起点”：
+\[
+\text{Free-Action Capacity} \propto \mathcal{I}_{global}(reasons,values,context) - \mathcal{C}_{coercion}
+\]
+其中 \(\mathcal{I}_{global}\) 为全局整合能力（可参考 GNW/Global workspace 框架），\(\mathcal{C}_{coercion}\) 为外在/内在强制约束强度。
+
+### T-EXP-6: Lag-Compatible Agency Theorem
+若满足：
+\[
+t_{RP}<t_W<t_M
+\]
+且在 \([t_W,t_M]\) 窗口内存在显著理由整合与行为可调节性，则“意识滞后”与“能动性存在”可兼容：
+\[
+\text{Lag} \not\Rightarrow \neg \text{Agency}
+\]
+* **Implication（中文）**：RP 先行仅说明预备过程先行，不足以推出“自由意志幻觉”；关键在于后续整合门是否可改变行动走向。
+
+### Source Note (OECS Free Will, 2024)
+- Levy N. (2024). *Free Will*. Open Encyclopedia of Cognitive Science. DOI: `10.21428/e2759450.dd89f27c`.
+- 核心锚点：
+  1) 兼容论强调 reasons-responsive / reasons-reactive 机制；
+  2) Libet/Wegner 结果不必然推出意识无因果角色；
+  3) 意识可主要承担全局整合而非瞬时发起。
+- 审核结论：**A-（信号入库）**；理由：概念桥接价值高，适合用于理论澄清与实验设计，不等同于单一原始实验数据。
+
+## 【理论边界/防误用声明】
+- 不采纳“RP 提前出现 = 自由意志不存在”的直接推论。
+- 不采纳“主观意向感 = 全部因果控制”的反向夸大推论。
+- 本条款仅界定‘能动性与时滞可兼容’条件，不替代具体任务范式验证。
+
 <br>
 
----
 ---
 
 
@@ -210,13 +362,13 @@ t\in[t_{late}^-,t_{late}^+]
 
 ### 1.2.1 对 Libet 实验的主流解读
 
-**取消主义解读**: 准备电位先于意识报告 → 自由意志是幻觉，所有决定都是无意识的神经过程。
+**强还原主义解读**（通俗上常被称为"取消主义解读"，注：并非严格哲学取消主义立场）: 准备电位先于意识报告 → 自由意志是幻觉，所有决定都是无意识的神经过程。
 
-**问题**: (a) 忽略了 Libet 自己强调的"否决"能力；(b) 无法解释为什么我们有能动性体验；(c) 混淆了"意识报告"与"意识本身"。
+**问题**: (a) 忽略了 Libet 自己强调的"否决"能力；(b) 无法解释为什么我们有能动性体验；(c) 混淆了"**意识报告**"（$L_2$ 层面的语言/运动输出，即 Libet 实验中的 W 时刻报告）与"**意识本身**"（$\Psi_f > 0$ 的 $L_1$ 锚定状态，可能早于 W 时刻）——准备电位先于意识**报告**不等于先于意识**本身**。
 
 **兼容主义解读**: 自由意志不需要"从无到有"创造意图，只需要"认可"或"否决"无意识产生的冲动。
 
-**问题**: 虽然更合理，但缺乏机制解释——"认可"和"否决"在神经层面如何实现？
+**问题**: 虽然更合理，但缺乏机制解释——"认可"和"否决"在神经层面如何实现？→ **SRT 回答见 §2.2**：否决 = 在 $L_0$ 扫描完成但 $L_2$ 尚未固化之前（约 200ms 时间窗）调整 $\hat{G}_\theta$ 的权重，阻断当前 $L_1$ 轨迹进入 $L_2$。
 
 ### 1.2.2 对裂脑实验的主流解读
 
@@ -226,9 +378,11 @@ t\in[t_{late}^-,t_{late}^+]
 
 ### 1.2.3 对双眼竞争的主流解读
 
-**神经竞争理论**: 两个刺激在神经层面相互抑制，胜者进入意识。
+**神经竞争理论** [R→Blake & Logothetis 2002（双眼竞争综述）; Tong et al. 1998（V4/V5/IT区在双眼竞争中的激活）; Logothetis & Schall 1989（猕猴单细胞记录中的知觉报告）]：两个刺激在神经层面相互抑制，胜者进入意识。
 
 **问题**: 这只是描述，未解释为什么意识是"赢家通吃"而非"叠加"。
+
+**SRT补充** [H]：L₁的单值性约束（单一时刻只能锚定一个显现态）是选择算子 $\hat{G}_θ$ 的结构性质——L₁不是两个信号的叠加场，而是投影目标（单一轨迹）；双眼竞争的"赢家通吃"反映的是L₀多路激活在L₁层的单值投影约束，而非简单的神经抑制竞争。这为"为什么意识是排他的"提供了本体层解释（见§2.1）。
 
 ---
 
@@ -246,27 +400,32 @@ SRT 不是在现有框架内提出另一种"解读"，而是**重构了实验数
 
 ## 2.2 Libet 实验的 SRT 重释
 
-**传统问题**: 准备电位先于意识报告 → 自由意志是幻觉？
+[R→Libet et al. 1983（准备电位早于意识决定，W时刻）; Soon et al. 2008（fMRI预测决策早达10秒）; Schurger et al. 2012（随机阈值扩散模型：RP是噪声累积，非"决定"）; Haggard 2008（自愿行为的意志感综述）]
 
-**SRT 回答**: 这反映了选择的**双阶段结构**，而非自由意志的否定。
+**传统问题**: 准备电位先于意识报告 → 自由意志是幻觉？ [R→Libet 1983]
 
-1. **Phase 1 ($L_0$ 扫描)**: 多种行动可能性同时激活（准备电位）
-2. **Phase 2 ($L_1$ 锚定)**: $\hat{G}_\theta$ 从竞争中选出一个（意识报告）
+**SRT 回答** [H]：这反映了选择的**双阶段结构**，而非自由意志的否定。注：Schurger 2012[R]的随机阈值模型与SRT的L₀扫描阶段高度相容——RP是噪声累积（L₀多路激活），而非已确定的"决定"。
 
-**关键洞见**: Libet 的"否决权"正是 $\hat{G}_\theta$ 的核心功能——不是"创造"想法，而是"过滤"$L_0$ 噪声。
+1. **Phase 1 ($L_0$ 扫描)** [H，L₀-SRT映射]：多种行动可能性同时激活（准备电位/RP）；与Schurger 2012[R]的噪声累积过程对应
+2. **Phase 2 ($L_1$ 锚定)** [H]：$\hat{G}_\theta$ 从竞争中选出一个（意识报告/W时刻）；θ决定了哪些L₀可能性更易被锚定（习惯/价值观/当前情境）
 
-**阈值能动性模型**:
+**关键洞见** [H]：Libet 的"否决权"正是 $\hat{G}_\theta$ 的核心功能——不是"创造"想法，而是"过滤"$L_0$ 噪声。否决权 = L₁锚定前的最后一次选择算子干预。
 
-$$\text{自由意志} = \frac{d\beta}{dt} \neq 0$$
+**阈值能动性模型** [H]：
+$$\text{能动性} \propto \frac{d\beta}{dt} \cdot \text{sign}(\beta_{threshold} - \beta_{actual})$$
+（注：原公式"自由意志 = dβ/dt ≠ 0"无量纲，已改为能动性正比于beta振荡梯度与阈值差；β为beta频段（13-30Hz）EEG/MEG功率）
 
-我们不控制 $L_0$ 中涌现的冲动，但我们控制**允许哪些冲动穿透 $L_2$ 屏障**。
+我们不控制 $L_0$ 中涌现的冲动，但我们控制**允许哪些冲动穿透 $L_2$ 屏障**（即θ调节锚定阈值）。
 
-**Beta 振荡的发现**支持这一模型：
+**Beta 振荡的发现** [R→Engel & Fries 2010（beta振荡与运动控制）] 支持这一模型：
+- Beta 功率 ↑ = 阈值 ↑ = 动作抑制（$\hat{G}_\theta$ 保持L₀开放扫描）
+- Beta 去同步化 = 阈值 ↓ = 允许动作（L₁锚定触发）
 
-- Beta 功率 ↑ = 阈值 ↑ = 动作抑制
-- Beta 去同步化 = 阈值 ↓ = 允许动作
+这为"自由否决"提供了**神经物理基础** [H，依赖Phase 2=L₁锚定的SRT映射]。
 
-这为"自由否决"提供了**神经物理基础**。
+**证伪条件**（针对SRT双阶段重释）：
+- FC-Libet-1：若在Schurger的随机阈值框架[R]内，RP的统计结构可完整预测W时刻（无需θ调节阈值），则SRT的Phase 2（Ĝ_θ主动过滤）无独立解释力，被随机扩散模型吸收。
+- FC-Libet-2：若改变被试的θ相关参数（如冥想训练→提升元认知监控能力）后，W时刻与RP的时间间隔（意识滞后）不变，则"θ调节锚定阈值"的SRT宣称被弱化。
 
 ### 2.2.1 Libet 实验的拓扑动力学 (The Topo-Dynamics of the Libet Experiment)
 
@@ -447,7 +606,71 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 
 ---
 
-## 6.2 核心可证伪预测表
+## 6.2 视觉失认症作为“局部算子失效态”（新增）
+
+### Def-Exp-AGN-1: Local Operator Failure in Visual Structuring
+定义结构化失败指数：
+\[
+\mathcal{F}_{agn} = 1-\text{Bind}_{obj}(\pi_\lambda(y_t),L_2^{prior})
+\]
+当 \(\mathcal{F}_{agn}\to1\) 时，系统可保留颜色/亮度等低层特征，但对象边界打包失败（Unstructured seeing）。
+
+### Hyp-AGN-1: 高分辨输入 + 低结构锚定分离
+- 预测：失认症个体在低层视觉分辨任务（方向/亮度）近保留，但在对象命名与边界一致性指标显著下降。
+- 指标：\(Acc_{low}\), \(Acc_{obj}\), \(\mathcal{F}_{agn}\), 以及 \(\Delta\Psi_f^{struct}\)。
+
+### Hyp-AGN-2: 前向生成补偿优于逆向特征堆叠
+- 预测：基于先验模板与上下文约束的训练（top-down scaffold）比纯特征堆叠训练更能降低 \(\mathcal{F}_{agn}\)。
+- 证伪：两类训练在 \(Acc_{obj}\) 与泛化误差上无显著差异。
+
+### 分类映射表（Agnosia / Underdetermination → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 正常结构视觉 | 中 | Semi-open | payable |
+| 无结构视觉（失认症） | 低~中 | Open（高熵暴露） | overloaded |
+| 纯逆问题训练路径 | 低~中 | Closed（单向管线） | 被低估/脆弱 |
+
+### Def-Exp-LGN-1: LGN 80/20 Top-Down Prior Law（新增）
+定义 LGN 有效输入分解：
+\[
+I_{LGN}(t)=w_{td}I_{topdown}(t)+w_{bu}I_{retina}(t),\quad w_{td}\approx0.8,\ w_{bu}\approx0.2
+\]
+该比值作为感知“先验主导度”操作化参数，而非固定不可变常数。
+
+### Hyp-LGN-1: Top-down Dominance Predicts Grouping Stability
+
+**[H — Novel Prediction：利用 w_td 个体差异预测知觉分组稳定性，SRT对LGN 80/20的延伸性预测]**
+
+- 预测：在遮挡/迷彩/低对比条件下，\(w_{td}\) 升高个体将表现更高对象连续性判断稳定度 \(S_{group}\)。
+- 证伪：控制视网膜信号质量后，\(w_{td}\) 与 \(S_{group}\) 无显著相关。
+
+**SRT 操作化联结**：
+- $w_{td}$ ≈ 个体 $\theta$ 参数中先验结构权重（Ĝ_θ 在低底层信号时依赖L₂先验的程度）；**测量候选**：① fMRI测LGN-皮层反馈效应强度（top-down beta waves）；② 精神物理学代理：在双稳知觉（Necker立方体/双眼竞争）中，知觉主导时长变异系数的倒数（高w_td→更稳定的主导周期）。
+- $S_{group}$ ≈ L₁显现结构在降质底层信号下的锚定稳定性；**量化候选**：信号检测论 d'（遮挡条件下分辨同一对象vs.不同片段的敏感度）。
+
+**额外预测**：$w_{td}$ 高的个体在相同低对比条件下，$\Psi_f^{perception}$（知觉锚定代价）应**更低**——因为先验主导时，感知无需依赖高信噪比的L₀信号，摩擦代价减少（可通过瞳孔直径/反应时代理测量）。
+
+### 分类映射表（LGN Feedback Pattern → SRT）
+
+**[R — LGN top-down/bottom-up文献追溯：Sillito et al. 2006（LGN反馈调制）；Murray et al. 2004（预测性编码中的LGN）；[H] — d值/Ψ_f与LGN模式的SRT映射为新增预测框架]**
+
+*说明*：此表将LGN反馈模式（感知神经科学经典分类）翻译为SRT变量区间；三行对应三种功能状态，非离散类别而是连续谱上的操作区间。
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| top-down 主导（80/20 近似）| 中~高 | Semi-open（先验牵引）| payable |
+| bottom-up 过载（先验失配）| 低~中 | Open（噪声暴露）| overloaded |
+| 单向提取假设（过时模型）| 低 | Closed（管线化）| 被误估 |
+
+*三状态SRT机制*：top-down主导时Ĝ_θ以L₂先验为主要输入，Ψ_f可结算（先验减少随机性）；bottom-up过载时L₀噪声超过Ĝ_θ的处理能力，Ψ_f超载（需处理大量不匹配信号）；单向提取假设（经典感觉管线论）在SRT中对应d≈0的封闭模型，不承认top-down的本体论影响。
+
+## 【理论边界/防误用声明】
+- 不采纳“失认症=整体意识缺失”的推论：该条仅指对象结构化子功能异常。
+- 不采纳“单一脑区定位即可解释全部症状”的推论：SRT 采用跨网络失配框架。
+- 不采纳“80/20 为普适常数”的推论：该值是任务与状态依赖的经验近似窗口。
+
+## 6.3 核心可证伪预测表
 
 |ID|假设名称|预测内容|证伪条件|
 |:--|:--|:--|:--|
@@ -461,7 +684,7 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 |H-E8|相干独立效应|控制总功率后 \(C_{wave}\) 仍独立预测点燃/命中率|仅功率有效|
 |H-E9|方向性扰动因果|相位定向 tACS/TMS 改变传播方向后，双稳态切换率系统性变化|扰动不改切换率|
 
-## 6.2 开放性问题
+## 6.3 开放性问题
 
 1. **否决窗口的神经基础**: 200-500ms 的否决窗口由什么神经机制决定？是否可以通过训练延长？
     
@@ -492,3 +715,31 @@ $$\text{Anesthesia} = \hat{G}_\theta \text{ frozen} \Rightarrow L_0 \not\to L_1$
 |$\text{SER} = H(\hat{G})/E(L_2)$|选择-能量比|Ax-Exp-12|
 |$D_{align}=\cos(\angle(\vec{k}_{wave},\vec{k}_{task}))$|方向一致性指数|Ax-Exp-13|
 |$P_{ignite}=\sigma(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta)$|波-点燃耦合|Ax-Exp-14|
+
+## 【理论边界/防误用声明】
+
+1. 本文档提供的是 SRT 解释与建模框架，不应被误用为对个体的确定性标签系统。  
+2. 任何跨尺度映射都依赖操作化假设与测量条件，超出条件范围不得外推为“普适定律”。  
+3. 涉及临床、政策、工程决策时，需与经验数据、伦理审查和领域规范共同使用。
+
+
+## H-EXP-12: 靶向意向性注入实验（Targeted Intentionality Injection）
+
+**[R — 睡眠记忆巩固追溯：Walker & Stickgold 2004（REM睡眠与创造性联结）；Targeted Dream Incubation追溧：Haar Horowitz et al. 2020（入睡阶段听觉线索）；[H] — 低摩擦睡眠窗口×弱线索×次日关联增益的SRT实验设计为新增预测框架]**
+
+**实验陈述**：在低摩擦睡眠窗口（REM/入睡过渡，EEG 慢波与网络解耦标记）施加弱感官线索，检验其对次日联想网络重构的增益。
+
+\[
+P_{guide}^{sleep}(\Delta\theta_{weak}) > P_{guide}^{awake}(\Delta\theta_{weak})
+\]
+
+**主要指标**：
+- 梦内容命中率（预注册语义目标）；
+- 次日创造性任务增益（远距联想/重构效率）；
+- 摩擦变化 \(\Delta\Psi_f\) 与关切梯度 \(\Delta d\) 的协同方向。
+
+**证伪条件**：
+1. 低摩擦窗口引导成功率不高于清醒机械重复组；
+2. 引导后仅有主观报告变化而无任务表现增益；
+3. 效应完全由刺激强度解释，与状态窗口无关。
+

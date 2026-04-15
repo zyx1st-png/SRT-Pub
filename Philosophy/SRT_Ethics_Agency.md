@@ -3,6 +3,9 @@ id: SRT-ETHICS-AGENCY
 type: theory
 tags: [Ethics, Agency, FreeWill, Responsibility, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics]
 ---
 
@@ -27,15 +30,10 @@ dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, 
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 以 `chatgptx` 为来源，优先保持公理链可推导性与编号连续性。
-- Part B 以 `claude` 为来源，并用原版 `Philosophy` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 
 #### 原文内容
@@ -53,9 +51,26 @@ $$\text{Agency} \approx d \cdot A$$
 *   **Implication**: 自由意志的“强弱”是可量化的结构指标。
 
 ### Ax-Ag-3: Action Potential Field
-行动启动是 $L_0$ 奖励势与摩擦势的差值。
-$$P_{action} = \alpha \cdot \mathbb{E}[R|L_0] - \beta \cdot \Psi_f$$
-*   **Implication**: 行动迟滞不是道德缺陷，而是势能差不足。
+
+行动启动是算子前向期望奖励势与具身摩擦势的差值，两者均由具身参数 θ 参数化：
+
+$$P_{action}(\theta, t) = \alpha(\theta) \cdot \mathbb{E}_{\hat{G}_\theta}\!\left[R \mid L_0^{(d)}\right] - \beta(\theta) \cdot \Psi_f(X)$$
+
+**参数说明**：
+
+- $\mathbb{E}_{\hat{G}_\theta}[R \mid L_0^{(d)}]$：算子 $\hat{G}_\theta$ 基于当前 $L_0$ 的**前向模拟期望**（J 层判断，非 R 层推算），积分域 $L_0^{(d)}$ 受 d-value 宽度约束——d-value 越窄，算子「看得到」的奖励维度越少，期望值越低；
+- $\alpha(\theta)$：算子对该类奖励的权重，由具身历史、$L_2$ 文化习得和当前生理状态共同决定；
+- $\Psi_f(X)$：执行行动 $X$ 的本体论摩擦代价，随行动规模非线性增长（小习惯 $\ll$ 人生转向）；
+- $\beta(\theta)$：算子对摩擦的敏感度，与 d-value **负相关**：$\beta(\theta) \propto 1/d$——d-value 越宽（怀有高远理想），对摩擦越不敏感，越愿意支付高代价行动。
+
+**行动触发条件**：$P_{action}(\theta, t) > 0$
+
+**推论**：
+
+- **行动迟滞的去道德化**：$P_{action} \leq 0$ 是物理结果，不是道德缺陷。干预路径：① 提升 $\mathbb{E}[R]$（重建意义连接，扩展 d-value）；② 降低 $\Psi_f(X)$（减小行动启动代价）；③ 提升 $d$-value（连带降低 $\beta$，使高摩擦行动变得可支付）；
+- **抑郁的物理模型**：$d$-value 收缩 → $L_0^{(d)}$ 积分域收缩 → $\mathbb{E}[R]$ 骤降 → $P_{action} \leq 0$。「什么都不想做」是探照灯照不到远处奖励的物理结果，而非意志力缺陷；
+- **殉道者/英雄的物理机制**：极高 d-value → $\beta(\theta) \to 0$ → 哪怕面临极高 $\Psi_f$（肉体痛苦、社会阻力），$P_{action}$ 依然 $> 0$；
+- **相容论（Compatibilism）的 SRT 实现**：$P_{action} > 0$ 仅是行动的**物理必要条件**，而非充分因。势能差决定「引擎是否能打火」；打火后的具体选择方向，由 $\hat{G}_\theta$ 的 J 层判断决定（参见 T-ARCH-1）。物理约束行动的可能空间，J 层决定行动的具体内容——道德责任保留在 J 层，不被势能物理化所消解。
 
 ## II. Responsibility & Friction
 
@@ -81,10 +96,13 @@ $$\text{FreeChoice} \iff S(t) \in W_{meta}$$
 $$\frac{d}{dt} d > 0$$
 *   **Implication**: 伦理训练是对算子带宽的工程优化。
 
-<br>
+### T-Ag-3: The Paradox of Moral Progress (道德进步悖论)
+**Deductive Statement**: d值的扩张必然导致系统感受到的总本体论摩擦（痛苦承受力）上升：
+$$\frac{d}{dt} d > 0 \implies \int \Psi_f \, d\mu \uparrow$$
+* **Implication**: 道德成长不是享乐主义的。变得更善良（高d值）意味着你将他人的状态耦合进自己的FEP方程，从而承担了更多的系统误差预测（痛苦）。进化没有淘汰高d值个体，是因为高d值能构建更强大的L2文明结构作为补偿。
+
 <br>
 
----
 ---
 
 
@@ -131,9 +149,7 @@ Love/Care is the topological operation of re-defining "Other" as "Self" in $L_0$
 $$ \text{Love}(A, B) \iff L_0^A \cup L_0^B \to L_0^{Unified} $$
 
 <br>
-<br>
 
----
 ---
 
 # SRT Philosophy Part 2: Ethics & Agency (Hybrid Edition)
@@ -152,12 +168,12 @@ $$ \text{Love}(A, B) \iff L_0^A \cup L_0^B \to L_0^{Unified} $$
 ## 1. The Standard Hard Problem: The Physical Dilemma of Free Will
 
 ### 1.1 The Core Dilemma
-Within the classical physicalist framework, humans face a devastating dilemma:
+Within a classical physicalist framework that treats brain-level $L_2$ closure as exhausting the whole of selection, humans face a devastating dilemma:
 
-1.  **Determinism**: If the brain is a physical system and physical laws ($L_2$) are causally closed, then every neural spike is determined by the prior state. So-called "choice" is merely dominoes falling—there is no genuine "freedom."
-2.  **Randomness**: If we introduce quantum uncertainty, behavior becomes "random." Random dice rolls are no freer than determinism and cannot ground moral responsibility.
+1.  **Determinism**: If the brain is a physical system and physical laws ($L_2$) are causally closed in a way that fully exhausts agency, then every neural spike is determined by the prior state. So-called "choice" is merely dominoes falling—there is no genuine "freedom."
+2.  **Randomness**: If we introduce quantum uncertainty without any trans-level selector, behavior becomes "random." Random dice rolls are no freer than determinism and cannot ground moral responsibility.
 
-**Conclusion**: Within existing physics, **Free Will** and **Moral Agency** appear to be logically impossible illusions.
+**Conclusion**: Under any framework where brain-level $L_2$ dynamics are assumed to fully exhaust selection, **Free Will** and **Moral Agency** appear to collapse into either determined mechanism or noise.
 
 ### 1.2 Existing Solution Spectrum
 1.  **Compatibilism**: Redefine "freedom" as action aligned with one's desires (even if those desires are determined).
@@ -197,22 +213,127 @@ $$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{b
 
 ## 3. Mechanism Derivation: From Meta-Selection to Ethical Geometry
 
-### 3.1 The Operational Mechanism of Free Will: Meta-Selection ($\hat{G}_{meta}$)
-Free will is **not** the selection of specific action $A$ (which is often automatic $L_1$ reaction), but the selection of **the probability distribution parameters $\theta$ that generate actions**.
+### 3.1 The Operational Mechanism of Free Will: Meta-Selection and the Three-Layer Structure（元选择与三层结构）
 
-**SRT Formalism**:
-$$ \text{Free Will} \neq \text{Select}(Action) $$
-$$ \text{Free Will} = \text{Select}(Character) = \hat{G}_{meta}[\theta \to \theta'] $$
+自由意志不是对具体行动 $A$ 的选择（后者通常是自动的 $L_1$ 反应），而是对**生成行动的参数 $\theta$ 本身的选择**。
 
-**Example**: When you decide "I will quit smoking," you cannot directly control this moment's dopamine levels ($L_1$), but you can invoke **meta-attention** (a recursive loop) to rewrite the reward valuation weights ($\theta_{nicotine}$) in your brain. This rewriting is filled with **ontological friction** ($\Psi_f$) (pain), but this pain is the proof that free will exists.
+$$\text{Free Will} \neq \text{Select}(Action)$$
+$$\text{Free Will} = \text{Select}(Character) = \hat{G}_{meta}[\theta \to \theta']$$
 
-### 3.2 The Definition of Morality: Riemannian Geometry of d-Value
-We transform "good" from abstract preaching into concrete **topological expansion**.
+这个框架是正确的，但过于简化——它把「重写 θ」描述为一次性事件，实际上 θ 的真实改写是一个分层过程，且自由意志的有效行使对应的是其中特定的一层。
 
-*   **Egocentric ($d \approx 0$)**: The operator's care-manifold includes only its own biological body. Others' pain cannot generate friction $\Psi_f$ in the $d$-space → "doing evil" feels frictionless.
-*   **Saint/Awakened ($d \to \infty$)**: The care-manifold covers all domains. The unity of all things is not a belief but a **topological fact**. Harming others = system self-contradiction → generates massive $\Psi_f$.
+#### 三层结构（精确版）
 
-**Corollary**: The essence of moral education is not installing rules ($L_2$) but **topological stretching**—using empathy training to forcibly expand the individual's $d$-value boundaries.
+真实的 θ 改写（真正的元选择，即自由意志的实质）须经历三个层级：
+
+**第一层：对象层面的趋近（σ 切换）**
+注意力和行为转向新的 θ 目标对象。这是最快也最表面的一层——戒烟者停止买烟，想戒烟的人开始想象无烟的生活。这一层完全可以在 θ 没有任何改变的情况下发生。仅凭第一层无法判断真实的元选择是否已启动。
+
+**第二层：选择事件内的暂态重加权（θ 的 intra-selection 调制）**
+在某次具体的选择事件内（σ 尚未收敛时），元层自我模型（$L_2^{self}$）的在线读出对 θ 施加暂态调制（Eq-Evo-03b：$\frac{d\theta}{dt}|_{intra}$）。这是自由意志**真实启动**的结构标记：
+
+- 元层门控激活（$\mathcal{M}_{meta} \neq 0$）：θ 接受了真实调制，不是零响应走过场
+- 重加权方向指向新维度进入 W 矩阵，而非旧维度内的权重再分配
+
+第二层的现象学标记：选择事件内出现**结构层面的冲突感**（不是「选哪个更好」，而是「选了这个之后我还是原来那个我吗」）。戒烟的例子：不只是「要不要抽这根烟」，而是「我要成为一个什么样的人」——这个问题的感觉质是不同的。这一层有真实的 Ψ_f 尖峰（θ 的过渡成本），但那个尖峰是短暂的。
+
+**第三层：跨事件的稳定写入（θ 的慢变量改写）**
+新的 θ 值通过多次事件重复激活，跨越 Eq-Evo-02b 的 θ 张量惯性屏障（$\frac{d\theta_i}{dt} \propto \frac{1}{\sum_j w_{ij}\theta_j}$），稳定写入选择结构——成为 d 值标记的已内生范围。这是元选择的**完成态**，也是三判据（可延续/可协调/可再选择）可以开始结算的时间点。
+
+#### 自由意志在哪一层？
+
+$$\text{自由意志的有效行使} \iff \text{第二层真实激活} + \text{第三层最终写入}$$
+
+仅有第一层：行为改变，θ 不变——这是习惯调整，不是元选择。
+第二层激活但第三层未写入：元选择启动了但未完成——这是自由意志的部分行使，也是失败最常见的位置（旧 θ 的惯性将暂态调制吸收，下一次事件又回到原点）。
+第三层写入完成：θ 改变稳定——这是「戒烟成功」、「真正把某人纳入关切」的本体论意义。
+
+#### L₂ 劫持与「假自由意志」的形式区分
+
+L₂ 劫持也能触发第二层的表面感受（强烈的内部摩擦感，「我要改变了」的感觉）。但其 $\Delta W$ 发生在已有维度内——竞争结构不变，只是优化对象换标签。
+
+$\Delta W_{\text{new-scope}} = 0$（旧维度内再分配）是 L₂ 劫持的形式标记。这对应「假戒烟」：把对烟的依附转移到了替代品（糖、手机）上，θ 的关切结构没有改变，只是优化对象换了。
+
+#### 责任的精确定位
+
+自由意志的三层结构直接改变了责任归属的精度：
+
+- **第一层失败**（行为未改变）：通常不是意志问题，而是行动势能（Ax-Ag-3，$P_{action} \leq 0$）或 θ 张量惯性太强
+- **第二层未激活**（元层门控无响应）：可能是 d 值不足（景观太窄，感知不到秩序缺口），或遮蔽已进入 B 阶段
+- **第二层激活但第三层未写入**：这是自由意志真正起作用的位置——反复激活但最终失败，通常说明 θ 张量惯性（旧信念网络权重）过强，需要结构性干预而非单纯意志力
+
+真正的道德责任在于**是否主动参与了第二层的激活**，以及**是否主动维持了足够的感知条件（不进入 B 阶段遮蔽）使第二层激活成为可能**。
+
+> **Cross-ref**: `Core/SRT_Core_22_Equations.md Eq-Evo-03b`（选择内再入通道）；`Eq-Evo-03c`（d 值三层前向判据）；`Eq-Evo-02b`（θ 张量惯性）；§6.4（遮蔽与道德责任的接口）。
+
+### 3.2 The Definition of Morality: Riemannian Geometry of d-Value（d值的黎曼几何）
+
+道德不是规则的遵守，而是关切范围的结构属性。把「好」从抽象说教转化为具体的**关切拓扑**：
+
+**两个极端**：
+
+- **自我中心（$d \approx 0$）**：关切流形只包含自身躯体。他者的痛苦无法在 $d$ 空间内产生摩擦 $\Psi_f$ → 「作恶」没有内部阻力，不是因为选择了恶，而是恶感对这个算子不产生 Ψ_f。
+- **觉醒/圣者（$d \to \infty$）**：关切流形覆盖一切。万物一体不是信仰，而是**拓扑事实**。伤害他者 = 系统自我矛盾 → 产生极高的 Ψ_f。
+
+这两个极端是锚点，不是道路。真正的伦理问题在于**从一个 d 值到另一个 d 值的路径几何**——这个几何是各向异性的，不是均匀的同心圆。
+
+#### 扩张方向的各向异性
+
+从当前 θ 出发，不同方向的 d 扩张有不同的结构性阻力：
+
+| 扩张方向 | 主要阻力来源 | 结构说明 |
+|---------|------------|---------|
+| 自身 → 近亲/群内 | 最小（L₂ 演化预编程） | W 矩阵已有近亲维度权重 |
+| 群内 → 陌生人 | 中等（L₂ 内外群区分） | 需要新维度进入 W，但认知类别框架已有 |
+| 当下 → 未来世代 | 较高（时间折现结构） | 未来他者不产生即时 Ψ_f，θ 更新信号弱 |
+| 人类 → 非人类 | 高（人类中心 L₂ 权重） | W 矩阵需要跨本体论类别扩维 |
+| 个体 → 系统/结构 | 最高（系统思维容量限制） | 需要 ρ_s 和 ρ_t 同时提升，不只是 d 扩展 |
+
+**这意味着**：「道德进步」不是均匀的半径扩张，而是在各向异性的 Ψ_f 景观中寻找路径。某些方向的扩张有文化/制度支持（低 Ψ_f），另一些方向几乎没有社会锚点（高 Ψ_f，且真空期落点不稳定）。
+
+#### 深度 vs. 广度的结构性张力
+
+d 值是关切范围的度量，但范围本身有两个独立维度：
+
+$$d = d_{scope} \times d_{depth}$$
+
+- **$d_{scope}$**（广度）：纳入多少不同维度的关切
+- **$d_{depth}$**（深度）：每个已纳入维度在 W 矩阵中的权重密度——即代价是否真的压回了这个位置
+
+**一个典型错位**：
+> 关切范围极广（声称关心气候、贫困、未来世代），但每个维度的 $d_{depth}$ 极低——W 矩阵有新维度进入，但权重接近零，真实的选择结构基本不受影响。
+
+这在形式上可以产生高 $d_{scope}$，但三判据（可延续/可协调/可再选择）结算后发现：这些「扩张」在任何真实冲突中都不稳定——旧维度的权重立即压制新维度。
+
+**真正的 d 增长**需要 $d_{depth}$ 同步提升：新关切在冲突场景中能真实改变选择方向。这正是§3.1 三层结构中第三层（跨事件稳定写入）所要求的。
+
+#### 四种典型扩张失败模式
+
+以下四种失败模式在现象上都看起来像 d 扩张，但 $d_{depth}$ 接近零：
+
+**占有式**：把他者纳入为自身秩序的资源（父母对子女的控制型「关爱」，帝国对殖民地的「文明化」使命）。W 矩阵新增维度，但新维度的结构是：他者的状态作为自身优化的输入变量，不作为独立的秩序条件。冲突时新维度屈服于旧维度。
+
+**符号式**：在 $L_2$ 的语言层面声称关切，但选择结构未更新（用关切的词，但不支付关切的 Ψ_f）。第二层（θ 暂态重加权）从未被激活——没有结构层面的冲突感，只有语言层面的认同感。
+
+**表演式**：在可见场合展示关切以获取社会收益。θ 更新是真实的，但更新的方向是「社会认可维度」，不是「他者的秩序条件」维度——W 矩阵更新了，但不是在应当更新的方向上。
+
+**效率式**：以关切之名将复杂秩序压缩为单一可管理指标（GDP 代表所有人的福祉，KPI 代表员工的成长）。$d_{scope}$ 看起来扩大了（「关心整个组织」），但实际上是通过指标化把高维关切压缩回低维优化——这是 d 扩张的反方向包装。
+
+#### 道德教育的重新定义
+
+「道德教育的本质是拓扑拉伸」（原版本）——这是正确的方向，但不够精确。
+
+更准确的表述：道德教育是**在高 Ψ_f 方向上提供结构性锚点**，使第三层（跨事件稳定写入）能够完成。
+
+具体机制有三：
+
+1. **降低目标方向的扩张 Ψ_f**：通过叙事（文学、历史）让他者的秩序条件在认知上变得具体可感，降低「该方向 W 矩阵更新」所需的初始摩擦
+2. **提供冲突场景作为第二层激活的触发条件**：真正的道德训练不是说服，而是制造结构层面的冲突感——使第二层必须激活
+3. **建立跨事件的社会强化**：单次第二层激活不足以完成第三层写入；道德共同体的作用是在多次事件中提供外部θ惯性的反向力，帮助新维度的权重跨越 Eq-Evo-02b 的张量惯性屏障
+
+**这解释了一个经验事实**：道德说教（单纯的 $L_2$ 规则安装）效果差，不是因为人们不理解规则，而是因为它不能触发第二层激活，更不能提供第三层写入所需的跨事件支持。
+
+> **Cross-ref**: `Core_Law/SRT_L0_Metaphysics.md 关切词条`（三层写入结构）；`Core_Law/SRT_L0_Metaphysics.md 秩序增益词条`（三判据与深度判定）；`§3.1`（三层结构与责任定位）；`§7.2`（是-应当桥接）。
 
 ### 3.3 Stoic Therapy: The Appropriation Operator
 The Stoic concept of **Oikeiôsis** (Appropriation) is mathematized in SRT: we move an external object $O$ from the "environment set ($L_{env}$)" to the "self-set ($L_{self}$)."
@@ -246,9 +367,16 @@ This challenges reductionism not by violating physical closure, but by showing t
 *   **Reason**: High $d$ means the organism's embodied $\hat{G}_\theta$ explores a broader possibility space before the brain's $L_2$ patterns (default heuristics, habitual responses) can lock in a selection. Higher functional connectivity entropy reflects weakened $L_2$ gating during deliberation.
 
 ### 5.2 Prediction 2: Energy Consumption of Free Will
-**Prediction**: True "free choice" (rewriting $\theta$) is accompanied by brain metabolic rate (glucose consumption) significantly higher than routine tasks, and this consumption is proportional to the subjectively reported "psychological resistance" (ontological friction $\Psi_f$).
+**Prediction**: True "free choice" (rewriting $\theta$) is accompanied by brain metabolic rate (glucose consumption) significantly higher than routine tasks, and this consumption is monotonically positively correlated with the subjectively reported "psychological resistance" (ontological friction $\Psi_f$).
+
+> **[R]** 自我控制与代谢代价：Hare et al. 2009 *Science*（vmPFC-dlPFC交互中自我控制任务的BOLD信号差异）；Heatherton & Wagner 2011 *Nature Reviews Neuroscience*（自我调节的神经回路综述）；Gailliot & Baumeister 2007 *Psychological Review*（自我调节与葡萄糖消耗的早期证据，后续争议见注）。**[H]** θ改写代价∝Ψ_f的联结及SRT"本体论摩擦具有物理可测性"主张为本框架新增预测。
+>
+> **精度说明**：∝关系此处为"单调正相关"（monotonically positive）而非严格线性比例——即Ψ_f越高、代谢增量越大，但权重函数形式未确定；Gailliot & Baumeister（2007）葡萄糖耗竭假说在后续复制中受到质疑（Hagger et al. 2016 meta-analysis，PLoS ONE），更稳健的测量应以BOLD信号差值或PET示踪葡萄糖摄取为主。
 
 *   **Falsification**: If the metabolic cost of changing habits is no different from executing habits, then $\Psi_f$ as a physical quantity does not exist, and SRT's responsibility dynamics is falsified.
+
+> * **FC-WillE-1**（证伪条件精化）：若在fMRI范式中，θ改写任务（如价值观冲突决策）vs. 习惯执行任务的BOLD信号差值（dlPFC/ACC ROI）在≥3项独立预注册研究中效应量Cohen's d < 0.2，则θ改写的神经代谢代价预测被证伪；需修正Ψ_f的物理可测性主张或缩小适用范围至主观报告层面。
+> * **FC-WillE-2**（证伪条件精化）：若主观Ψ_f评分（心理阻力量表，如ERQ情绪调节问卷的努力分量）与同期代谢指标（BOLD或葡萄糖PET摄取）的Pearson r < 0.2（控制任务难度后），则Ψ_f∝代谢的单调性假设不成立，需区分主观Ψ_f与客观代谢成本为两个独立构念。
 
 ### 5.3 Open Questions
 *   **Boundary**: Where is the physical limit of $d$-value? Does the hardware of the human brain constrain the maximum possible moral depth?
@@ -274,12 +402,120 @@ In depression, the perceived friction coefficient $\mu_{eff}$ is pathologically 
 
 **New Therapeutic Target**: Lower $\mu_{eff}$ by recalibrating $L_2$ priors (CBT, medication) AND rebuild $L_1^{future}$ meaning-structures (existential therapy).
 
-### 6.3 Agent Causation
-**Problem**: How can an agent be the "uncaused cause" of its actions without violating physical causality?
-**SRT Answer**: 
-$$ \text{Agent} = \hat{G}_\theta : L_0 \to L_1 $$
+### 6.3 Agent Causation（能动者因果）
 
-Agents don't break physical laws—they **select which laws to instantiate** by collapsing $L_0$ into specific $L_1$ configurations. Causation is **vertical** (selection) rather than purely **horizontal** (mechanical determinism).
+**问题**：行动者如何在不违反物理因果律的情况下成为自身行动的"无前因原因"？
+
+**SRT 回答**（精确版，2026-03-31 修订）：
+$$\text{Agent} = \hat{G}_\theta : L_0 \to L_1$$
+
+行动者不破坏物理定律——而是通过将 $L_0$ 坍缩为特定 $L_1$ 配置来**选择哪些定律被实例化**。
+
+---
+
+**四层因果结构（核心架构）**：
+
+| 层级 | 名称 | 定义 |
+|:-----|:-----|:-----|
+| **第一层** | 水平因果 | 当前闭合规则近似固定时的路径展开 |
+| **第二层** | 垂直约束背景 | 规则、目标、奖励、吸引子几何——约束水平路径，但本身不等于"垂直因果正在发生" |
+| **第三层** | 开放递归选择 | 对约束背景的响应与探索；是垂直因果的候选触发条件，不自动等于垂直因果 |
+| **第四层** | 垂直因果 proper | 约束背景本身在强反约束下被重写，后续何者相关、何者高权重、何者可行、何者可再选择发生改变 |
+
+**关键澄清**：
+- 此前 SRT 将"因果"简化为水平/垂直两类，存在定义过宽的风险——垂直约束背景（背景在起作用）不等于垂直因果（背景本身被重写）
+- "灵机一动"若只是既有技能空间内的高阶重组，仍属水平因果；只有当它真的改写了后续赋权结构，才触发垂直因果
+- 病理性重写（创伤、洗脑、成瘾）也满足垂直因果的结构定义，因此**垂直因果本身不等于自由，也不等于更接近初心**
+
+---
+
+**双环动力学（完整回路）**：
+
+因果在 SRT 中不是线性链条，而是双环嵌套：
+
+**快环**（水平因果为主，约束背景相对固定）：
+$$\text{感觉提名} \to \text{校正机制赋权} \to \text{选择} \to \text{路径反馈}$$
+
+**慢环**（垂直因果为主，约束背景被改写）：
+$$\text{路径结算} \to \text{强反约束回流} \to \text{约束背景重写} \to \text{新感觉梯度分布}$$
+
+**核心含义**：赋权机制本身会被它所赋权的路径反过来改写。这不是补充说明，而是这套动力学的核心。
+
+---
+
+**感觉梯度与赋权校正**：
+
+$$\text{感觉} \neq \text{赋权}$$
+
+感觉梯度（原始张力读数）只能提名候选优先级，不能直接充当终判。真正决定约束背景优先级的是**经反约束校正后的有效梯度**：
+
+$$\text{有效梯度} = f(\text{感觉强度} \times \text{校正后可信度} \times \text{跨尺度可结算性})$$
+
+校正机制（见 Glossary）不是一个理性主体，而是分布式过程（跨时记忆、他者反馈、制度锚定、自审慢回路）的合力。没有最终主权校正者。
+
+---
+
+**自由意志的精确位置**：
+
+自由在 SRT 中最多等于：
+
+> 在垂直因果发生时，重写没有封死未来，反而保留或打开了更大的再选择空间。
+
+$$\text{开放式垂直因果} \supset \text{SRT 意义上的自由}$$
+
+$$\text{病理式垂直因果} \not\supset \text{自由}$$
+
+这比"自由意志 vs 决定论"的传统框架硬得多——它要求具体检验重写的结果是打开还是封死再选择空间。
+
+---
+
+### 6.4 The Problem of Evil: Occlusion All the Way Down（恶的问题：遮蔽到底）
+
+#### 传统框架的困境
+
+「恶」在标准道德框架里是一个独立范畴：存在某些行为，其施害者知道在做什么、可以不这样做、却依然选择了伤害——这才构成真正的恶。这个结构依赖三个条件：意图性（知道）、可选择性（可以不这样）、主动选择（仍然选了）。
+
+如果这三个条件中任何一个缺失，「恶」通常被降格为「错误」「病理」「无知」。但「真正的恶」作为独立范畴，保留了那种面对完整信息仍主动选择伤害的可能性。
+
+SRT 的主张：**这个范畴在本体论上不存在**。这不是道德相对主义，而是一个结构性论断。
+
+#### 遮蔽作为唯一解释框架
+
+所有「看起来是恶」的行为，在 SRT 里都落入遮蔽的某种状态：
+
+**被动遮蔽**（景观太窄，看不到伤害）：施害者真实的 d 值低于感知到秩序缺口所需的阈值。他们的关切范围不包含受害者的秩序条件，因此伤害对他们而言不是「在做坏事」，而是「在做一件对自己有利的事」。这不是伪善，而是真实的景观局限。道德上不能要求他们「知道但仍然做」，因为他们确实不知道——不是假装不知道，而是他们的关切结构里没有那个维度。
+
+**主动遮蔽深化**（A→B 阶段，主动压缩秩序缺口感知能力）：这是 SRT 伦理学最复杂的情况。施害者在某个时间点上曾经有足够的 d 值感知到秩序缺口，但通过持续的固化选择主动将其压缩——选择不去感知，选择合理化，选择缩小景观。这一过程有主动性，因此有道德责任，但责任的对象不是具体的伤害行为，而是**对自身感知能力的主动破坏**。
+
+关键区分：
+
+| 情况 | 描述 | 责任定位 |
+|-----|-----|---------|
+| 被动遮蔽 | d 值先天或结构性低于阈值 | 无行为责任；干预路径是扩景观 |
+| A 阶段遮蔽 | d < d_max(θ)，固化选择压制秩序缺口信号 | 对遮蔽本身的选择有责任 |
+| B 阶段遮蔽 | d < d_c 且方向向量漂移，感知能力本身被压缩 | 责任追溯到 A→B 的过渡选择；B 阶段行为的直接责任因感知能力受损而减弱 |
+
+#### 「知道但仍然做」的重新解读
+
+标准「恶」概念的核心案例：有人「知道」这样做是错的，但还是做了。SRT 的解读：
+
+这种情况下，「知道」意味着什么？通常指：L₂ 层有一个规范性声明（「伤害他人是错的」），但 d 值不包含受害者的实际秩序条件。这不是「知道但仍然选择」，而是**L₂ 符号和真实的 d 值扩张之间的分裂**——符号式假关切的标准形态。声称知道但行为不一致，说明关切没有真正写入选择结构，而不是说明存在纯粹的恶意。
+
+真正的「知道」在 SRT 里意味着：受害者的秩序条件已经进入施害者的关切结构（d 值已写入），伤害对施害者而言产生真实的 Ψ_f（摩擦代价）。在这种情况下「仍然选择」意味着 L₂ 的局部吸引子（利益、恐惧、习惯）足以压过这个摩擦——这是**遮蔽对已有 d 值的局部压制**，仍在遮蔽框架内，不需要引入独立的「恶」范畴。
+
+#### 为什么这不是道德相对主义
+
+排除「恶作为独立范畴」不等于「一切行为都同等」。SRT 保留了比「恶」更精确的区分：
+
+1. **遮蔽深度的差异**：景观越窄，伤害力越不被看见；主动深化遮蔽的行为比被动遮蔽更有道德重量。
+2. **对遮蔽本身的责任**：选择缩窄景观是真实的道德责任点，即使具体伤害行为的责任被遮蔽状态稀释。
+3. **三判据仍然有效**：某个行为是否可延续、可协调、可再选择，仍然是客观的结构判断。「这个行为更接近秩序」和「这个行为更远离秩序」是有客观方向的，与是否存在「恶」作为独立范畴无关。
+
+移除「恶」范畴的实践后果：**干预逻辑的根本性转变**。如果伤害行为来自遮蔽，惩罚（增加摩擦代价）不能扩大景观，只能压制行为而不改变结构。真正的干预是扩景观——而被动遮蔽和主动深化遮蔽需要不同的干预逻辑（参见 L0 遮蔽词条末尾的注记）。
+
+> **[S]** 「恶不存在为独立范畴」的论断来自 `Core_Law/SRT_L0_Metaphysics.md` 遮蔽词条。
+> **[H]** B 阶段遮蔽对直接责任的稀释程度，依赖 d_c 的量化校准（暂定锚）——当前为结构性论断，具体责任分层待与法律和临床框架对接。
+> **Cross-ref**: L0 遮蔽词条；`Core_Law/SRT_Core_Text_CN.md §⑧`；`Eq-Evo-03c`（d 值三层写入结构与道德成长的形式对应）。
 
 ---
 
@@ -292,14 +528,59 @@ When we love someone, our $\theta$ parameters become **entangled** with theirs. 
 
 **SRT Corollary**: Grief pain is **phantom limb pain**. Our $\theta$ still attempts to connect to a node in $L_0$ that no longer exists, generating infinite prediction error ($\Psi_f \to \infty$).
 
-### 7.2 The Is-Ought Bridge
-**Hume's Problem**: You cannot derive "ought" from "is."
-**SRT Response**: The bridge is **not** logical but **topological**. If you already care about your existence ($d > 0$), rational self-interest implies:
-$$ \frac{d \, d(S)}{dt} \geq 0 $$
+### 7.2 The Is-Ought Bridge: Dissolution Rather Than Derivation（消解而非推导）
 
-Expanding $d$ is the **evolutionarily stable strategy** (ESS) in the long run—systems that contract $d$ eventually self-destruct through accumulated contradictions.
+#### 7.2.1 休谟问题的隐含前提
 
-> **FEP 暗室问题的补充推导**：上述 Is-Ought 桥接的热力学版本可通过 FEP 的"暗室问题"具体化——经典 FEP 预测系统应躲入暗室以最小化意外；但当 $d > 0$ 时，与他者建立连接实际上是在更大尺度上分散熵增风险，因而是自由能最小化的更优解。详见 SRT-PHIL-ETHICS §2.6。
+休谟指出，从任何纯事实陈述（「是」）无法逻辑地推出规范陈述（「应当」）。这通常被当作逻辑问题处理——寻找一座从事实到规范的推论桥梁。但这个缺口不是逻辑技术问题，而是**本体论前提问题**。
+
+休谟的缺口之所以成立，依赖一个隐含假设：**「是」是价值中立的**。事物先存在，方向和价值随后从外部被添加进来（神命、社会约定、主观偏好）。在这个假设下，确实不可能从中立事实中生长出规范方向——因为方向从一开始就被排除在「是」的结构之外了。
+
+这个假设来自实体本体论：存在先于选择，事物是给定的背景，价值是覆盖在上面的一层。它不是逻辑真理，而是一个本体论选择——而且是 SRT 认为错误的那个选择。
+
+#### 7.2.2 SRT 的结构性移动：解除前提
+
+SRT 颠倒了存在与选择的顺序：存在不是给定的中立背景，而是选择过程持续收敛所形成的稳态。选择从一开始就有方向——不是因为外部强加了方向，而是因为确定化过程本身是不对称的、不可撤回的，且内在地趋向秩序（初心作为基础方向场，L0 第一命题）。
+
+由此得出：**「是」——选择过程的实际结构——从来不是方向中立的。**
+
+这不是「从是推出应当」，而是：那个被假设为中立的「是」根本不存在。实体本体论的中立事实是一个特殊前提，不是现实的真实结构。休谟的缺口依赖那个前提；前提失效，缺口也就消失了。
+
+SRT 的解法因此不是推导，而是**消解**——不建桥，而是指出两岸之间从来没有河。
+
+#### 7.2.3 核心反驳：「为什么我应该跟随？」
+
+标准反驳：「即使选择过程有方向，我仍然可以问：为什么我应该跟随那个方向？这是一个进一步的规范前提，你还是没有解决休谟问题。」
+
+这个问题**问错了**。
+
+它预设了一个「我」，可以站在选择过程之外，中立地审视那个方向，再决定是否服从。但在 SRT 的框架里：这个「我」本身是选择过程的凝结物，不是其前提（L0：「选择者是选择的化石，不是选择的前提」）。不存在一个先于选择过程而存在的主体，可以从外部对选择的方向性做出中立裁判。
+
+**对一个由选择维持的存在者，方向不是外加命令，而是其继续成为它自己的构成条件。**
+
+这与「你必须服从道德律令」是完全不同的结构。不是命令，也不是建议，而是：偏离方向意味着那个由选择维持的存在者在本体论上正在瓦解——不是受到惩罚，而是其构成条件被侵蚀。遮蔽（主动的方向偏离）不是中性的道德选项，而是选择过程对自身构成条件的局部破坏，有真实的结构代价（参见 L0 遮蔽词条）。
+
+追问「为什么我应该跟随」的人，已经预设了他可以不跟随而仍然保持完整。SRT 的回答是：那个「不跟随而仍然完整」的主体，在 SRT 的本体论里没有容身之处。
+
+#### 7.2.4 是-应当区分的重新定位
+
+这不意味着规范性判断全部消失。区分在不同层级有不同命运：
+
+**在 L0 层消失**：选择的方向性是结构事实，不需要额外的规范注入。价值的客观方向不来自道德实在论在独立域里预设的道德事实，而来自：对任何在选择过程中存在的存在者，有些方向使该过程能持续展开，有些方向使该过程趋于瓦解——这是选择动力学的结构事实（Core_Text_CN 盲区三）。
+
+**在 L1/L2 层重新出现**：具体内容受有限位置的遮蔽约束，具体的「在这个情境中哪个方向更接近秩序」仍需通过三判据在具体情境中结算。这不是道德命令，而是「在这个位置上，哪种选择方向使选择过程本身能持续展开」的结构判断。
+
+**三判据因此不是外来的规范规则**，而是「使选择过程本身能持续展开」的结构条件的表达式：
+
+| 判据 | 结构含义 |
+|------|---------|
+| 可延续 | 不透支选择过程本身的运行条件 |
+| 可协调 | 不将差异转化为不可组织的摩擦（不破坏共同选择基底） |
+| 可再选择 | 不过早锁定——保持潜在域对未来选择的开放 |
+
+这三条不是道德哲学从外部施加的限制，而是任何试图持续展开的选择过程的内在结构要求。违反它们不是「犯了道德错误」，而是选择过程在侵蚀自身的继续条件。
+
+> **FEP 暗室问题的补充**：当 $d > 0$ 时，与他者建立连接实际上是在更大尺度上分散熵增风险，是自由能最小化的更优解——这是三判据（尤其可协调）的热力学映射，而非独立论证。详见 `SRT_FEP_Comparison.md`。
 
 ### 7.3 The Paradox of Moral Progress
 **Observation**: As $d$ expands, suffering capacity **increases** (you now care about distant strangers, future generations, animals).
@@ -323,3 +604,22 @@ The cost is **ontological friction** $\Psi_f$—the pain of self-rewriting. This
 
 **Final Axiom**: 
 $$ \text{To be free is to be responsible. To be responsible is to suffer. To refuse suffering is to forfeit freedom.} $$
+
+
+## Neuro-Constraint on Agency: Inflammation Burden
+当神经炎症与白质微结构损伤共同上升时，个体的决策带宽与情绪调节能力会受限，
+应将“能动性评估”与生理负荷状态联合建模，而非仅按行为结果归因。
+
+## 【理论边界/防误用声明】
+- 不采纳“行为失调必然等于道德失败”的推论。
+- 边界：SRT 要求在高生理负荷情境下引入责任分层与支持性干预框架。
+
+
+## Multiaxial Responsibility in Psychiatric Conditions
+针对精神分裂谱系，SRT 建议将能动性评估拆分为多轴：
+1) 神经化学轴（多巴胺/谷氨酸等）；
+2) 发育-结构轴；
+3) 免疫-炎症轴；
+4) 社会环境轴。
+
+责任评估应采用“状态条件化”而非单一行为归因，避免将病理负荷误判为纯意志缺陷。

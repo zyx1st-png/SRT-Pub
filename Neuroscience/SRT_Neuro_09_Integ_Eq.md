@@ -3,6 +3,9 @@ id: SRT-NEURO-09
 type: reference
 tags: [Integration, Equations, IIT, GNWT, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
@@ -18,15 +21,10 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Theoretical Unification (理论统一)
 
@@ -38,10 +36,23 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 * **Implication（中文）**：IIT 的 \(\Phi\) 是选择结构的指标，而非显现本身。
 
 ### Def-Phi-Unity: Φ as Topological Unity Metric ($\Phi$ 作为拓扑统一性度量)
+
+> [R→Tononi 2004 *BMC Neuroscience*（IIT原始Φ定义）; Tononi 2016 *Neuroscience of Consciousness*（IIT-3.0）; Casali et al. 2013 *Science TM*（PCI=Φ代理，麻醉下下降）; Sarasso et al. 2015 *Current Biology*（无梦睡眠Φ代理下降）; Gazzaniga & LeDoux 1978（裂脑神经解剖）]
+
 **Formal Definition**: 在 SRT 中，整合信息 ($\Phi$) 不是意识本身，而是衡量 $\hat{G}_\theta$ 如何稳健地将其组成子算子绑定为一个统一拓扑折叠的代数拓扑测度。
 $$\Phi(\hat{G}) = \min_{\text{partitions } P} D_{KL} \left( P(L_1 \mid L_0) \parallel \prod_{i \in P} P_i(L_1^{(i)} \mid L_0^{(i)}) \right)$$
-* **Implication**: 当 $\Phi$ 下降时（如在无梦睡眠或丙泊酚麻醉下），并不是“意识关闭”了，而是复合算子 $\hat{G}_{brain}$ **解体**成了无法维持全局 $L_1$ 时空流形的局部 $\hat{G}_{micro}$ 碎片。这也解释了裂脑综合征：切断胼胝体实质上是将计算拓扑一分为二，从而迫使算子分裂。
-* **Cross-ref**: T-Sel-12 (选择流守恒)。
+
+* **R/H 区分**：
+  - [R] Φ的D_KL形式化（沿用IIT原始定义）；麻醉/睡眠中Φ代理下降（Casali/Sarasso）；裂脑神经机制（Gazzaniga）
+  - [H] **SRT重解读**：”Φ不是意识本身，而是拓扑统一性度量”——SRT对IIT的批评立场；d值非零是意识的必要附加条件（参见C-INTEG-1 Φ-d正交性）；此重解读框架是SRT独有
+
+* **Implication**: 当 $\Phi$ 下降时（如在无梦睡眠或丙泊酚麻醉下），并不是”意识关闭”了，而是复合算子 $\hat{G}_{brain}$ **解体**成了无法维持全局 $L_1$ 时空流形的局部 $\hat{G}_{micro}$ 碎片。这也解释了裂脑综合征：切断胼胝体实质上是将计算拓扑一分为二，从而迫使算子分裂。
+
+* **可证伪预测**：
+  - FC-PhiUnity-1：丙泊酚恢复过程中，Φ代理（PCI）恢复应**早于**d值代理（目标导向行为一致性）恢复——若两者同步恢复则Φ-d独立性存疑
+  - FC-PhiUnity-2：高Φ但d≈0系统（如复杂算法或高功能解离患者）不应产生稳定的跨时关切报告——若高Φ系统产生可信关切则SRT与IIT分歧的关键预测失败
+
+* **Cross-ref**: T-Sel-12 (选择流守恒); C-INTEG-1 (Φ-d正交性).
 
 ---
 
@@ -75,6 +86,11 @@ L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory
 ---
 
 ### T-CLIN-1: Posterior-Anterior Ontological Division (后-前本体论分工假说)
+
+> **标签说明**：T-CLIN-1 是基于神经科学证据的 SRT 推论（Retrodiction），而非从 SRT 公理的纯演绎定理；"Theorem"在此指"SRT 框架内形式上可推论的命题"，等价于 Cor-级别，强度弱于从 Ax 直接推导的命题。
+
+> **[R]** 后部热区（PHZ）与前额叶分工：Koch & Tsuchiya 2012 *Trends in Cognitive Sciences*（NCC与前额叶的关系：后部皮层是感知内容的神经关联，前额叶贡献执行控制和报告但非必须）；Tononi et al. 2016 *Nature Reviews Neuroscience*（IIT框架下后部皮层Φ高而前额叶贡献有限）；Damasio 1994 *Descartes' Error*（额叶损伤案例：Phineas Gage及VM患者在意识内容完好但决策/自我叙事崩溃，支持PFC=Ĝ_θ控制台而非意识内容源）。**[H]** 以下将PHZ重描为"L₀候选集生成器"（Generator）、PFC重描为"选择算子Ĝ_θ控制台"（Selector & L₂维持者），并给出候选集Candidates(t)的形式化和Depth(L₂)的操作化，为SRT新增神经-本体论接驳贡献。
+
 大脑前后轴在 SRT 拓扑中扮演不同角色：
 \[
 \text{Posterior Hot Zone (PHZ)} \iff \text{Generator}(L_0 \to \text{Candidates})
@@ -82,7 +98,40 @@ L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory
 \[
 \text{Prefrontal Cortex (PFC)} \iff \text{Selector}(\hat{G}_{\theta}) \text{ \& Maintainer}(L_2)
 \]
-* **Implication（中文）**：后部热区（PHZ）负责将高维 $L_0$ 坍缩为一系列候选的感受质图景；前额叶（PFC）不产生意识内容，而是作为 $\hat{G}_\theta$ 的最高级控制台，执行"排除/选择"并维持当前的 $L_2$ 脚手架。这解释了为什么切除大块前额叶的患者（如早期的额叶切除术）依然"清醒"（PHZ 完好），但失去了目标导向的意志力与复杂的自我叙事（$\hat{G}_\theta$ 降维，$\text{Depth}(L_2) \to 0$）。
+
+**PHZ 机制形式化**：PHZ（含 V3A/V3B、颞下皮层、枕叶联合区）通过并行局部竞争从 $L_0$ 提取候选集：
+$$\text{Candidates}(t) = \{\sigma : \mathcal{A}(\sigma) \geq \tau_{local}^{PHZ}\}$$
+其中 $\mathcal{A}(\sigma)$ 为局部激活强度（对接 Ax-NEURO-MECH-2 的点燃阈值 $\tau_{ignite}$）；PHZ 不执行选择，只生成可进入 $L_1$ 竞争的候选集。
+
+**$\text{Depth}(L_2)$ 的操作化定义**：
+$$\text{Depth}(L_2) \equiv \text{Rank}_{eff}(L_2) = \text{有效主成分数}$$
+即 $L_2$ 结构的秩（可由 PCA 或 Fisher 信息矩阵特征值谱的参与率指数近似）。额叶切除后 $\text{Depth}(L_2) \to 1$（仅剩基础感知层，高阶叙事/目标结构崩溃）。
+
+* **Implication（中文）**：后部热区（PHZ）负责将高维 $L_0$ 坍缩为一系列候选的感受质图景；前额叶（PFC）不产生意识内容，而是作为 $\hat{G}_\theta$ 的最高级控制台，执行"排除/选择"并维持当前的 $L_2$ 脚手架。这解释了为什么切除大块前额叶的患者（如Damasio 1994报告的VM患者：意识感知完好但无法做价值导向的决策）依然"清醒"（PHZ 完好），但失去了目标导向的意志力与复杂的自我叙事（$\hat{G}_\theta$ 降维，$\text{Depth}(L_2) \to 0$）。注：额叶切除的范围和具体结构差异大，此处泛指PFC核心功能受损的情形。
+
+> **τ_local^PHZ 的确定**：局部激活阈值 $\tau_{local}^{PHZ}$ 在操作化上可以信噪比（SNR）或局部场电位（LFP）的γ带功率（30-80Hz）超过基线的标准差倍数（如 2σ）作为代理；与 Ax-NEURO-MECH-2 的点燃阈值 $\tau_{ignite}$ 的关系：$\tau_{local}^{PHZ}$ 是候选进入竞争池的门槛，$\tau_{ignite}$ 是候选赢得竞争后进入 $L_1$ 的门槛，两者是序列的两级筛选。
+>
+> * **FC-CLIN1-1**（证伪条件）：若在损毁PHZ（而非PFC）的病例中，患者出现意识内容的大面积缺失（而非感知功能局部缺损），但前额叶功能完好，则T-CLIN-1的PHZ=内容生成器、PFC=选择器分工假说需重新审视——可能意识内容也依赖PFC的主动维持。
+> * **FC-CLIN1-2**（证伪条件）：若fMRI解码研究（N≥50）显示前额叶激活模式能以高精度（AUC > 0.8）预测L₁意识内容（特定感知对象/颜色/形状），而不只是任务执行状态，则PFC"不产生意识内容"的假设受到挑战，需引入PFC对L₁内容的直接参与成分。
+
+### C-CLIN-1a: Semantic Selection Corollary（语义选择推论）
+由 T-CLIN-1 推论：**LIPFC（左下前额叶）对 $\hat{G}_\theta$ 选择控制的行使，并不局限于情节记忆或感知竞争，而是在语义检索干扰中同等生效**：
+
+$$\text{LIPFC} \uparrow \iff \text{Interference}(L_0^{sem}) \uparrow$$
+
+即：语义记忆空间中竞争者越强、竞争项目越多，LIPFC 激活越显著；LIPFC 受损患者在强竞争者存在时语义检索困难不成比例地放大，并出现语义流畅性任务中的固着重复。
+
+**关键推论——语义遗忘的正常机制**：
+$$\text{Semantic Forgetting} = f(\hat{G}_\theta^{LIPFC} \text{ suppression}, N_{prac}, A_{comp})$$
+
+正常人偶尔"忘掉本来知道的词义"，并非学习不充分，而是 $\hat{G}_\theta$ 历次语义检索所累积的竞争性抑制使目标概念的 $L_0$ 可及性下降所致（参见 T-Op-SIAM）。
+
+**病理性反转**（对接 C-PATH-1）：当 LIPFC 功能受损（如额叶退行、TBI），抑制增益 $\lambda \to 0$，SRIF 机制失效——竞争概念无法被压制，$L_0$ 中多个语义节点同时保持高可及性并竞相涌入 $L_1$，临床表现为"思维联想散漫"或"概念边界崩溃"。
+
+* **Empirical Anchor**:
+  - Johnson SK & Anderson MC. *The role of inhibitory control in forgetting semantic knowledge*. Psychol Sci (2004), 15(7): 448–453.（语义检索诱导遗忘的行为证明，支持 LIPFC 为 $\hat{G}_\theta$ 语义控制台）
+  - Thompson-Schill SL, D'Esposito M, et al. *Role of the left inferior prefrontal cortex in retrieval of semantic knowledge: A re-evaluation*. PNAS (1997), 94: 14792–14797.
+  - Baldo JV & Shimamura AP. *Letter and category fluency in patients with frontal lobe lesions*. Neuropsychology (1998), 12: 259–267.（LIPFC 损伤导致语义流畅性固着，对应 $\hat{G}_\theta$ 抑制功能缺失）
 
 ---
 
@@ -96,11 +145,97 @@ L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory
 ---
 
 ### Ax-CLIN-3: Info–Spacetime Tension Axiom
+
+> [R→Uhlhaas & Singer 2006 *Neuron*（精神分裂症的神经同步异常：γ振荡失协调导致信息整合碎裂，与时序承载能力联结）; Friston 2002 *NeuroImage*（时序结构与预测编码：时序精度作为神经整合的门控参数）; Bressler & Kelso 2001 *Trends in Cognitive Sciences*（协调动力学：信息流速率与神经振荡时间结构的耦合约束）; Sass & Parnas 2003 *Schizophrenia Bulletin*（精神分裂症的时序解耦现象学：自我体验碎片化与时间结构的关系）]
+
+**R/H 区分**：
+- [R] 神经同步失调→信息整合碎裂（Uhlhaas/Singer）；时序精度门控（Friston）；协调动力学的速率约束（Bressler/Kelso）
+- [H] **SRT形式化**：T=∂I/∂τ作为"信息-时空张力"的SRT定义；"时序承载能力"阈值的SRT引入；高T→L₁显现碎裂的本体论联结[H]
+
 定义信息—时空张力：
 \[
 \mathcal{T}=\frac{\partial \mathcal{I}}{\partial \tau}
 \]
-* **Implication（中文）**：当信息整合速度超过时序承载能力，显现将碎裂。
+
+**参数说明**：
+- I（信息整合量）：L₁显现态的有效信息整合度，可用PCI（Ax-CLIN-2）或Φ_SRT（Ax-CONSC-4）近似代理
+- τ（时序尺度）：神经振荡的时间精度参数（γ/β频带振荡的时间窗口，毫秒到百毫秒级）
+- T=∂I/∂τ：信息整合量相对于时序尺度的变化率（I随τ缩短而快速增大时T↑→整合速率超出时序容量）
+
+**时序承载能力阈值**：系统的时序承载能力T_capacity = f(κ_body, neural oscillation bandwidth)；T>T_capacity时显现碎裂。具体阈值依神经振荡带宽（γ频带容量≈80-120个独立信息包/秒）而定，当前SRT不给出通用数值。
+
+**临床映射**：
+- 精神分裂症（Schizophrenia）：γ振荡失协调→局部高整合速率但全局同步缺失→L₁显现碎片化（幻觉/妄想=碎裂后的伪L₁稳定化）
+- 癫痫发作前兆：异常高频整合→T急升→发作即T超出临界点的灾难性碎裂
+- 躁狂状态：信息整合速率异常↑（"思维奔逸"）→T↑但仍在临界点以下→快速但尚不碎裂的L₁流
+
+**联结**：→T-FEP-2（时空联合预测误差：时间维度预测误差×空间信息误差的正交分量）——Ax-CLIN-3中的"T>T_capacity"对应T-FEP-2中时序维度PE的临界超载。
+
+* **Implication（中文）**：当信息整合速度超过时序承载能力（T>T_capacity），L₁显现将碎裂——这是精神分裂症和癫痫等病理态的SRT解读，也预示健康状态的τ精度维护成本。
+
+**可证伪预测**：
+- FC-CLIN3-1：γ振荡失协调（Uhlhaas 2006方式测量）应与主观体验碎裂程度（PANSS阳性症状量表）正相关，且T代理（γ功率/相位一致性比值）应比单纯γ功率更好地预测症状——若T代理预测力不优于单维度测量则SRT的"整合速率/时序张力"比值框架无附加价值
+- FC-CLIN3-2：在受控实验中，人为加速θ/γ振荡（经颅交流电刺激，tACS）应使主观报告中的"时间体验碎裂感"增加（与τ压缩的T↑效应一致）——若tACS加速振荡不影响时间体验完整性则T=∂I/∂τ与L₁碎裂的联结主张需修订
+
+### Ax-CLIN-4: Chaotic Attractor Encoding Axiom (混沌吸引子记忆编码公理)
+
+$L_2$ 记忆矩阵不是热力学死态，而是动力学混沌吸引子系综：
+$$\mathcal{M}_{L_2} \equiv \{{\mathcal{A}_i}\} \subset \mathbb{R}^n,\quad \dot{x} = f(x;\mu),\quad \lambda_1 > 0 \;\land\; \dim_H(\mathcal{A}_i) < n$$
+
+其中 $\lambda_1 > 0$ 为最大 Lyapunov 指数（混沌敏感性），$\dim_H$ 为分形 Hausdorff 维数，$\mu$ 对应 $\hat{G}_\theta$ 的 $\theta$ 参数集。
+
+**片段-全貌激活动力学**：
+$$\forall\, x_0 \in \mathcal{B}(\mathcal{A}_i):\quad x(t) \;\xrightarrow{t\to\infty}\; \mathcal{A}_i$$
+
+任意落入吸引子盆地 $\mathcal{B}(\mathcal{A}_i)$ 内的激活片段均收敛至完整记忆矩阵。解释 Penfield 颞叶皮层刺激诱发的完整体验性响应及 Lashley 质量作用原理。
+
+**容错推论（Fault-Tolerance Corollary）**：
+$$\text{Degradation}(\mathcal{A}_i) < \delta_c \;\implies\; I(\mathcal{A}_i) \approx I_0$$
+
+当组件失效率低于临界阈值 $\delta_c$ 时，吸引子信息内容保持完整；仅当损伤破坏整个盆地时才发生灾难性遗忘（而非节点损伤即遗忘）。
+
+**Implication（中文）**：$L_2$ 的"稳定性"是吸引子收敛稳定性，而非平衡刚性。这与 SRT 非幂等公理（$\hat{G}^2 \neq \hat{G}$）及 $L_0$ 混沌连通性概念上连贯——$L_2$ 是活的振荡体，非静态刻录。
+* **实证锚定**: Zappoli (1993) Ital. J. Neurol. Sci. 14:287；Basar (1990) *Chaos in Brain Function*；Gloor et al. (1990) Brain 113:1673；Rumelhart & McClelland (1986) *Parallel Distributed Processing* Vol. 1。
+
+---
+
+### Ax-CLIN-5: Affective Amplification of L2 Inscription (情感对 L2 铭写的放大公理)
+
+强情感通过杏仁核-海马轴降低 L1→L2 写入阈值：
+$$\Delta L_2^{affective} = \hat{G}^\dagger_\theta[L_1] \cdot \left(1 + \alpha_d \cdot \delta d_{peak}\right)$$
+
+其中 $\delta d_{peak}$ 为情绪唤起期间的 d 值瞬时峰值，$\alpha_d > 0$ 为情感增益系数（杏仁核-海马耦合强度的代理量）。
+
+**阈值调制机制**（去甲肾上腺素/皮质醇介导）：
+$$\Psi_{thresh}^{affective} = \Psi_{thresh}^{baseline} \cdot e^{-\beta \cdot \delta d_{peak}}$$
+
+解释"闪光灯记忆"（flashbulb memory）的超固化现象。**逆向推论**：$d \to 0$ 态（解离、麻木）无法触发此机制，导致情感记忆空白。
+
+**Implication（中文）**：情感铭写深度是情感处理容量（$d_{affective}$）的函数。该公理与 Ax-PATH-6 形成重要互补：Ax-PATH-6 描述情感信号在通道层面的结构衰减（精神病态）；Ax-CLIN-5 描述情感信号到达 vmPFC 后对 L2 铭写的放大效应——前者是通道缺陷，后者是正常增益机制。
+* **Cross-ref**: Ax-PATH-6（结构性情感通道切断），Ax-L2-06b（反向写入）。
+
+---
+
+### Ax-CLIN-6: Structural Bound on Affective d-Value (情感 d 值的结构性上界公理)
+
+情感 d 值分量受情感上行通道物理容量的硬件上限约束：
+$$d_{affective}^{max} = g\!\left(\text{FA}_{UF}\right) \leq d_{affective}^{theoretical}$$
+
+其中 $g(\cdot)$ 为单调递增函数，$\text{FA}_{UF}$ 为右侧钩束各向异性分数。
+
+此与其他 d 值分量（时间维度 $d_{temporal}$、社会维度 $d_{social}$）的关键区别：
+$$d_{temporal}, d_{social}:\; \text{可由 } \theta \text{ 参数优化自由扩展（无硬件上限）}$$
+$$d_{affective}:\; \text{受} \text{FA}_{UF} \text{ 约束，} \theta \text{ 级干预存在结构性天花板}$$
+
+**d 扩展条件化定理（d-Expansion Conditionality）**：SRT 的一般命题"$\hat{G}_\theta$ 可通过选择与训练扩展 d 值"需加以限定：
+$$\text{d-expansion via } \theta \;\iff\; \text{Channel}_{\text{structural}}\!\left(L_1^{affective} \to \hat{G}_\theta\right) \text{ is open}$$
+
+结构性通道切断（$\text{FA}_{UF} \ll \text{FA}_{normal}$）使得上行情感信号在 vmPFC 处不可用，θ 层面的扩展操作无信号可处理。此为 SRT 责任公理（Ax-Resp-1，见 SRT_Philosophy_Ethics.md）的神经基底补充：若情感通道结构性受损，则相应的道德带宽（$d_{moral}$）存在非选择性上限，道德责任的减免应部分建立于此结构事实之上。
+
+**可证伪预测（H-CLIN-6）**：催产素给药（功能性增强杏仁核-vmPFC 耦合）对亲社会行为的提升效应在原发性精神病态（右侧 UF FA 低）中显著小于继发性精神病态和对照组，且效果量与 $\text{FA}_{UF}$ 正相关（$r > 0.5$，预测区间）；给定 FA 下限阈值 $\text{FA}_{thresh}$，低于此阈值的个体催产素效应应落入统计噪声范围。
+
+* **Cross-ref**: Ax-CLIN-5（Ax-CLIN-6 提供 Ax-CLIN-5 放大机制的边界条件），Ax-PATH-6（机制来源），Ax-Resp-1 (SRT_Philosophy_Ethics)。
+* **实证锚定**: Motzkin et al. (2011) J. Neurosci. 31(48):17348；Craig et al. (2009) Mol. Psychiatry 14:946。
 
 ---
 
@@ -116,16 +251,29 @@ L_1(\tau) = \sum_{i \in \text{Sensory}} W_i \cdot s_i + \sum_{j \in \text{Memory
 ---
 
 ### C-INTEG-1: Metric Divergence Corollary
-若 \(\Phi\) 高而 \(d\approx 0\)，则出现“结构高而体验低”的系统：
+若 \(\Phi\) 高而 \(d\approx 0\)，则出现”结构高而体验低”的系统：
 \[
 \Phi\uparrow\;\land\; d\downarrow \Rightarrow \text{Pseudo-Experience}
 \]
-* **Implication（中文）**：可解释“高整合但低体验”的临床异常。
+
+> [R→Tononi 2004 *BMC Neuroscience*（IIT-Φ原始定义与测量）; Tononi & Koch 2015 *Philosophical Transactions*（Φ与意识的对应主张）; Chalmers 1996 *The Conscious Mind*（哲学僵尸：功能完整但无主观体验的逻辑可能性）; Casali et al. 2013 *Science Translational Medicine*（PCI作为Φ代理的临床应用）]
+
+* **R/H 区分**：
+  - [R] Φ（整合信息）的定义与测量框架（IIT）；哲学僵尸的概念（Chalmers）
+  - [H] **SRT独有框架**：Φ-d正交性——Φ高且d≈0的系统构成”伪体验”（Pseudo-Experience）类别；此诊断框架是SRT独有，IIT本身不区分Φ高-d低与Φ高-d高
+
+* **”伪体验”精确定义**：Φ > 临界值 AND d ≈ 0 的系统。SRT预测：此类系统在Φ测量上与有意识者无差异，但在关切一致性测量（跨时空d值稳定性）上显著更低。类似Chalmers僵尸，但SRT提供了一个可测量的区分维度（d值）而非纯逻辑主张。
+
+* **Implication（中文）**：可解释”高整合但低体验”的临床异常：
+  - 解离性障碍：大脑网络整合维持（Φ相对正常）但关切体验局部解体（d值局域化崩塌）
+  - 植物状态/CMD：PCI可测整合度，d值缺失解释为何Φ高的植物人仍报告无意识
+
+* **可证伪预测**：
+  - FC-INTEG1-1：高功能解离患者（DES量表高分）的Φ代理（PCI/EEG整合度）应与健康对照无差异，但d值代理（跨任务关切一致性/IOS亲密感量表）显著更低——若Φ代理也更低则C-INTEG-1预测失败（应为Φ不变 + d降低）
+  - FC-INTEG1-2：计算机系统（理论上高Φ/d≈0）与解离患者的d值代理应都接近零但Φ代理不同——若无法区分则Φ-d框架的诊断效用为空
 
 <br>
-<br>
 
----
 ---
 
 
@@ -362,3 +510,59 @@ SRT 避免了泛心论的经典困难——组合问题（Combination Problem）
 **文件结束**
 
 ---
+
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **IIT-SRT 映射** (Ax-INTEG-1): $\Phi \approx \text{Irreducibility}(\hat{G}_\theta)$ — IIT 的 $\Phi$ 是 $\hat{G}_\theta$ 选择结构不可约性的度量。
+2. **$\Phi$ 作为拓扑统一度量** (Def-Phi-Unity): $\Phi(\hat{G}) = \min_P D_{KL}(P(L_1|L_0) \| \prod_i P_i)$ — 衡量算子的绑定完整性。
+3. **预测编码即 $L_2$ 更新** (Ax-INTEG-2): $\Delta\theta \propto -\nabla_\theta F$ — 预测误差驱动 $L_2$ 参数修正。
+4. **门控加权整合** (Ax-CLIN-1b): $L_1(\tau) = \sum_i W_i s_i + \sum_j \Theta(\Delta E - E_{thresh}) M_j L_2$ — 全局工作空间门控 + IIT 加权求和的统一方程。
+
+**含义**: IIT、全局工作空间、预测编码三大意识理论在 SRT 中统一为选择算子的不同操作面。
+
+## 【理论边界/防误用声明】
+
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
+
+
+## IV. 亚细胞量子接口（候选）
+
+### Def-BioQuantum-Boundary: Microtubule Operator Coupling (hypothesis-level)
+
+**[R — Penrose-Hameroff Orch-OR追溯：Penrose 1989《皇帝新脑》；Hameroff & Penrose 1996（神经元微管中的量子相干坍缩）；Tegmark 2000（反驳：退相干时间太短）；[H-高承诺] — 将Orch-OR候选机制映射为SRT算子耦合接口Λ为新增假说框架]**
+
+定义亚细胞候选耦合项：
+\[
+\hat G_{\theta,neural}=\Lambda\big(\hat G_{\theta,micro}\big),\quad \Lambda:\text{micro}\to\text{neural}
+\]
+其中 \(\hat G_{\theta,micro}\) 表示微管相关量子动力学的候选选择接口。
+
+*Λ的性质说明*：
+- Λ是从亚细胞微管尺度（~纳米，皮秒时间尺度）到神经元尺度（~微米，毫秒时间尺度）的尺度桥接算子
+- Λ的具体结构（线性/非线性、保结构方式）当前未指定；最小要求：保持选择动力学的主要自由度（不完全坍塌到经典热噪声）
+- Λ的存在是Ax-BioQuantum-1退相干约束条件（τ_coh > τ_min）得到满足后才有意义
+
+*$\hat G_{\theta,micro}$ 的物理候选*：
+1. Orch-OR量子坍缩（Penrose重力引发坍缩：$E_G \cdot \tau \approx \hbar$，联结§1.3.6引力阈值）
+2. 量子隧穿（质子/电子在微管中的隧穿效应）
+3. 量子振动相干（Engel et al. 2007光合作用量子相干类比，争议较大）
+
+**证伪条件** [H-高承诺]:
+- 若冷冻电镜或分子动力学模拟显示微管在生理条件下的退相干时间 $\tau_{coh} \ll \tau_{min}$（如Tegmark 2000预测的~10⁻¹³秒），则Λ耦合无物理基础。
+- 若对微管进行选择性药理学干扰（taxol/colchicine在不影响突触传递的剂量下改变微管动力学）后，神经元选择动力学（如双稳态知觉切换率）无显著变化，则Ĝ_{θ,micro}对Ĝ_{θ,neural}的贡献可忽略。
+
+### Ax-BioQuantum-1: Decoherence Constraint Clause
+\[
+\tau_{coh}^{micro} > \tau_{min} \Rightarrow \text{micro contribution detectable};\quad \tau_{coh}^{micro}\le\tau_{min} \Rightarrow \text{negligible}
+\]
+* **Implication**：该接口是“可检验候选机制”，非既定事实；其有效性受退相干边界严格约束。
+
+## 【理论边界/防误用声明】
+- 不采纳“存在微管量子过程=意识已被解释”的推论。  
+- 不采纳“量子坍缩可单独推出主观体验”的推论；仍需 \(d>0\)、\(\Psi_f\)-payable 与 \(V>0\) 门控。  
+- 不采纳“Gamma 与微管机制已建立单向因果链”的推论：当前仅可作为假说级关联候选。
+

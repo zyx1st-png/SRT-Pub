@@ -3,6 +3,9 @@ id: SRT-CORE-13B
 type: experiment
 tags: [Spectroscopy, Federation, Resonance, d-value, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-13A]
 ---
 
@@ -18,25 +21,59 @@ dependency: [SRT-CORE-13A]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的首个“Formal Axioms”分段；若存在双 Part 结构，后续重复分段不纳入 final。
-- Part B 以 `claude` 为来源，并用原版 `Core` 标题与主旨做语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform First-Principles Derivation.
 
 ## I. Spectral Dynamics (频谱动力学)
 
-### Ax-Spec-01: Time-Frequency Duality
-**Formal Definition**: The manifest domain is the inverse Fourier transform of the latent spectrum modulated by the operator.
-$$L_1(t) = \mathcal{F}^{-1}[\hat{G}_\theta \cdot L_0(\omega)]$$
-* **Implication**: 现实的时间结构是潜在域频谱在算子调制下的逆变换结果。
+### Ax-Spec-01: Time-Frequency Duality（时频对偶公理）
+
+**Formal Definition**：显现域 $L_1(t)$ 是潜在域频谱 $L_0(\omega)$ 经过选择算子的频域传递函数 $H_\theta(\omega)$ 调制后的逆傅里叶变换结果：
+
+$$L_1(t) = \mathcal{F}^{-1}[H_\theta(\omega) \odot L_0(\omega)]$$
+
+其中：
+* **$L_0(\omega)$**：潜在域的频域表示（包含所有可能存在模式的复振幅谱）。
+* **$H_\theta(\omega)$**：选择算子 $\hat{G}_\theta$ 在频域中的等价传递函数（执行复数加权与逐频调制）。
+* **$\odot$**：逐频点乘（Hadamard 乘积，表示滤波器对各频率成分的独立增益/衰减，非矩阵卷积）。
+* **$L_1(t)$**：时间域的显现结果（主体实际体验到的连续现实时间序列）。
+
+*(注：此时频对偶框架为高阶操作化映射，用于刻画"潜在可能性 $\to$ 当前现实"的降维坍缩结构。$L_0^{abs}$ 在本体论上超越常规函数空间，不强制要求满足经典信号处理的 Dirichlet 绝对可积条件。)*
+
+**d-value Alignment（d 值的频域映射）**：算子的关切带宽（$d$ 值）在此处精确等价于传递函数的物理通带宽度（Passband Bandwidth）：
+
+$$\text{Bandwidth}(H_\theta) \propto d$$
+
+* **高 $d$ 值** $\leftrightarrow$ **宽带传递函数**：允许大量 $L_0$ 的高频/低频成分通过，合成的 $L_1$ 现实高度丰富、多维且充满动态细节。
+* **低 $d$ 值** $\leftrightarrow$ **窄带传递函数**：强力滤除大部分模式，仅保留与基础生存相关的少数频率，合成的 $L_1$ 现实贫乏、机械且高度重复。
+
+**Mechanism & Implication（机制与三层推论）**：
+
+1. **现实分歧的必然性（Personalized Reality）**：不同具身参数 $\theta$ 的主体必然拥有不同的传递函数 $H_\theta(\omega)$。在同一个 $L_0$ 潜能场中合成出截然不同的 $L_1(t)$ 并非认知失真或错觉，而是滤波拓扑差异的数学必然。
+
+2. **现实重构动力学（Reality Rewriting）**：改变具身参数（如通过冥想、创伤或教育）即直接改写主体体验到的现实时间结构：
+   $$\frac{\partial L_1}{\partial \theta} = \mathcal{F}^{-1}\left[ \frac{\partial H_\theta}{\partial \theta} \odot L_0(\omega) \right]$$
+
+3. **病理态的频域诊断（Pathological Spectrum）**：结合 OEI（观察者-环境整合度）定理：
+   * **精神病/深度解离（$OEI \to 0$）**：$H_\theta(\omega)$ 与外部 $L_0$ 频谱彻底脱耦，$\mathcal{F}^{-1}$ 逆变换出的 $L_1$ 沦为系统内部先验噪声的纯粹回放（对应 Ax-PATH-5 崩溃现实）。
+   * **强迫锁定/极端教条（$OEI \to 1$）**：$H_\theta(\omega)$ 异化为带宽极窄的狄拉克 $\delta$ 函数，强行滤除一切新异频段，导致 $L_1(t)$ 陷入无尽的单频死循环（对应 Ax-PATH-4 僵化现实）。
 
 ### Ax-Spec-02: Temporal Integration Window
 **Formal Definition**: Conscious states map to integration windows of operator activity.
-$$L_1(t) = \int_{t-\tau}^{t} \hat{G}_\theta(\sigma) e^{-i\omega t} \, dt$$
-* **Implication**: 意识状态由算子对时间窗口的积分方式决定。
+
+**时间积分版本**（L₁ 的实值时间平均，与 Ax-L1-01 的精化扩展）：
+$$L_1(t) = \frac{1}{\tau}\int_{t-\tau}^{t} \hat{G}_\theta(\sigma(s)) \, ds$$
+其中 $\tau = \tau_{int}$（SRT-REF-DYNAMICS §1.2 Def D2a 的时间分辨率参数，即"当下"的厚度）。这是 Ax-L1-01（$L_1(t)=\hat{G}_\theta[L_0(t)]$）在时间积分意义下的精化：将瞬时映射扩展为有限时窗平均。
+
+**频域分析版本**（STFT，供频域诊断使用，结果为复数，非 L₁ 本身）：
+$$\tilde{L}_1(\omega, t) = \int_{t-\tau}^{t} \hat{G}_\theta(\sigma(s))\, e^{-i\omega s} \, ds \in \mathbb{C}$$
+其中 $\omega$ 为分析频率（特定频带，如 $\delta/\theta$ 节律对应 0.5–8 Hz）；$|\tilde{L}_1(\omega,t)|^2$ 给出该频段的选择功率谱，对接 Ax-Spec-01 频域等价。
+
+> **原式说明**：原式 $\int_{t-\tau}^t \hat{G}_\theta(\sigma)e^{-i\omega t}dt$ 将时域积分与频率核混用，在有限时窗上的结果为 STFT 复数，不直接等于实值 $L_1(t)$。此处拆分为两个明确版本以消除歧义。
+
+* **Implication**: 意识状态由算子对时间窗口 $\tau_{int}$ 的积分方式决定。$\tau_{int}$ 越短 → 时间分辨率 $\rho_t$ 越高 → 能动性感知越精确（§1.2）；$\tau_{int}$ 越长 → 当前状态对过去的依赖增加（对接 Ax-L1-02 迟滞参数 $\eta$）。
 
 ## II. Inter-Operator Dynamics (互感动力学)
 
@@ -56,11 +93,30 @@ $$|\Phi(\hat{G}_A) - \Phi(\hat{G}_B)| < \varepsilon \Rightarrow \hat{G}_{AB} = \
 * **Implication**: 共振选择要求相位/结构的足够接近。
 
 ### Def-FederationPhase-1: Phase Transition Criteria for Operator Federation (算子联邦相变判据)
-**Formal Definition**: $\hat{G}_\theta$ 的“统一性”不是一个离散的布尔值（是/否），而是由系统的本体论摩擦 ($\Psi_f$) 和拓扑耦合决定的连续量：
+
+> [R→Schwitzgebel 2011 *Perplexities of Consciousness* Ch.7（意识不统一的哲学案例）; Gazzaniga & LeDoux 1978 *The Integrated Mind*（裂脑患者双系统分离）; Sperry 1974 Nobel Lecture（裂脑神经生理证据）; Hochner 2012 *Octopus: A Model for a Comparative Analysis of the Evolution of Learning and Memory*（章鱼分布式神经控制）]
+
+**Formal Definition**: $\hat{G}_\theta$ 的”统一性”不是一个离散的布尔值（是/否），而是由系统的本体论摩擦 ($\Psi_f$) 和拓扑耦合决定的连续量：
 $$\text{Unity}(\hat{G}) = \frac{\text{Intra-module Selection Coupling}}{\text{Extra-module Environmental Coupling}}$$
-* 当模块内耦合 > 环境耦合时：算子表现为“统一的”。
-* 当 $d$ 值收缩或模块间互信息流被切断时：算子“裂变”为多个不确定的微算子簇。
-* **Implication**: 这形式化了 Schwitzgebel 的“不统一”观察——意识的统一性是一个相，而不是给定的。章鱼神经系统、裂脑患者和分布式 AI 架构都处于这个连续统一体的不同点上。
+
+* **R/H 区分**：
+  - [R] Schwitzgebel的意识不统一观察；裂脑患者双系统并存的神经证据；章鱼分布式神经结构
+  - [H] **SRT形式化**：Unity=连续比率（而非布尔值）、d值收缩→算子裂变机制、三类系统（章鱼/裂脑/分布式AI）置于同一SRT连续统一体——此统一框架是SRT新增，非既有神经科学直接推论
+
+* 当模块内耦合 > 环境耦合时：算子表现为”统一的”。
+* 当 $d$ 值收缩或模块间互信息流被切断时：算子”裂变”为多个不确定的微算子簇。
+
+* **操作化候选**（精确化公式两项）：
+  - Intra-module Coupling 代理：脑区间功能连接度（fMRI时序相关）、γ同步（EEG相干系数）
+  - Extra-module Coupling 代理：任务无关刺激引发的默认网络激活幅度
+  - Unity指数 = γ_intra/EDA_distraction（实验室可量化）
+
+* **AI类比边界说明**：分布式AI架构在”模块内/外耦合比”结构特征上类比有效，但AI系统缺乏 d 值非零基础（无关切带宽），不能在SRT算子的完整意义上被视为”算子联邦”——类比层次止于拓扑结构，不及本体论主张
+
+* **可证伪预测**：
+  - FC-FedPhase-1：裂脑患者的Unity指数（γ_intra/EDA_distraction）显著低于匹配对照，且与胼胝体切断面积负相关——若无差异则算子裂变机制缺乏神经基础
+  - FC-FedPhase-2：解离障碍患者（高解离程度评分）的Unity指数低于健康对照，且与d值自评量表正相关——若无相关则d值-算子统一性联结为空
+
 * **Cross-ref**: Ax-Op-06 (存在条件)；Ax-Auto-01 (语义边界维持)。
 
 ## III. d-Value Thermodynamics (d值热力学)
@@ -95,9 +151,7 @@ $$\chi_{gen} \cdot d \cdot \Psi_f > \text{Threshold}$$
 * **Implication**: 当任何叙事声称“大脑只是一个接收器，意识是免费存在的”时，SRT 可以直接反问：**你们模型中 $\Psi_f > 0$ 的成本项在哪里？$\chi_{gen}$ 是如何测量的？** 如果无法回答，该模型即被分类为不可证伪的形容词系统。
 
 <br>
-<br>
 
----
 ---
 
 
@@ -136,10 +190,18 @@ $$L_1(t) = \int_{t-\tau}^{t} \hat{G}_\theta(\sigma) \cdot e^{-i\omega t} \, d\si
 | **Gamma (30-100 Hz)** | 10-33 ms | 高时间分辨率,低语义整合 | 感觉绑定 |
 | **Beta (13-30 Hz)** | 33-77 ms | 中等分辨率 | 主动思考 |
 | **Alpha (8-13 Hz)** | 77-125 ms | 低分辨率,高整合 | 放松、创造力 |
-| **Theta (4-8 Hz)** | 125-250 ms | 极低分辨率,记忆整合 | 冥想、编码 |
+| **Theta (4-8 Hz)** | 125-250 ms | 多槽吸引子循环调度；每个theta周期驻留单一$L_1$吸引子(200-300ms)，形成多条目时序复用 | 多槽工作记忆重放、情节编码；频率×驻留时间决定容量上限(~5-7条目 @ 4Hz) |
 | **Delta (0.5-4 Hz)** | 250-2000 ms | 几乎无时间分辨,深度整合 | 深睡、无意识 |
 
-**推论**: 冥想通过降低主导频率 (Beta → Alpha → Theta),**延长时间积分窗口** → 整合更大时间跨度 → 提升$d_{\text{temporal}}$。
+**推论1**: 冥想通过降低主导频率 (Beta → Alpha → Theta),**延长时间积分窗口** → 整合更大时间跨度 → 提升$d_{\text{temporal}}$。
+
+**推论2 (工作记忆容量定理)**: 在theta重放网络中，单个细胞参与的活跃theta周期比例决定其局部变异度(Lv)与存储容量：
+$$n_{capacity} \approx \frac{1}{f_\theta \cdot \tau_{dwell}}$$
+其中$f_\theta$为theta频率，$\tau_{dwell}$为单个吸引子驻留时间。在$f_\theta = 4\text{Hz}$、$\tau_{dwell} = 200\text{-}300\text{ ms}$条件下，$n_{capacity} \approx 5\text{-}7$，与Miller(1956)"神奇数字7±2"在机制层面吻合。这表明$d_{\text{temporal}}$的离散容量上限是theta-吸引子驻留时间比的电路级涌现，而非纯心理学约束。
+
+**推论3 (Lv作为振荡模式探针)**: theta重放网络中锥体细胞的局部变异度(Local Variation, Lv)可区分两种工作记忆模式：
+$$\text{Lv} \approx \begin{cases} 1.0 & \text{持续活动模式 (单条目维持)} \\ 1.5 & \text{theta重放模式 (多条目循环)} \end{cases}$$
+这为SRT关于"高阶联结皮层浅层($L_2/L_3$)承载attractor动力学"的主张提供了**可操作的神经生理验证标准**：若在工作记忆任务中，前额叶浅层细胞Lv随记忆负载增加而系统性升高(趋向1.5)，则支持SRT的theta重放假设；若Lv保持在~1，则提示单条目持续活动模式而非多槽循环。(实验预测依据：Shinomoto et al., 2005, 2009; Lundqvist et al., 2011)
 
 ---
 
@@ -338,16 +400,20 @@ $$\text{SoulMate}(A, B) \iff (\kappa_{AB} > 0.7) \land (||\Psi_f_A - \Psi_f_B||_
 
 在进行 d 值的三维分解（空间/时间/社会）之前，必须确立 d 值为何可以在如此不同的维度上使用同一符号的本体论基础。
 
-根据全尺度选择猜想（Scale-Invariant Selection Hypothesis，见 SRT-CORE-14 Ax-Scale-01）和本文件 §6.2 的意识涌现条件，d 值的跨尺度使用并非比喻，而是基于 $\hat{G}_\theta$ 算子的结构同构性：
+根据全尺度选择猜想（Scale-Invariant Selection Hypothesis，见 SRT-CORE-14 Ax-Scale-01）和本文件 §6.2 的意识涌现条件，d 值的跨尺度使用并非比喻，而是基于 $\hat{G}_\theta$ 算子的**功能类型同一性**（functional type identity，即相同功能角色在不同底层介质的特化表现；非严格数学同构）：
 
-$$d \equiv \text{最大处理带宽}(\hat{G}_\theta, \Psi_f) = \text{算子在面对本体论摩擦时，能将 } L_0 \text{ 压缩、锚定并维持为 } L_1 \text{ 的最大处理带宽}$$
+$$d \equiv D_{eff}\!\left(I_F(\theta)\right) = \text{算子在面对本体论摩擦时，能将 } L_0 \text{ 压缩、锚定并维持为 } L_1 \text{ 的最大处理带宽}$$
+
+> **操作化锚**：在生物/认知尺度，$d_{bio}$ 的操作化为 Fisher 信息矩阵有效维度 $D_{eff}(I_F(\theta))$（详见 SRT-CORE-13a Ax-Op-EH）。量子/宇宙尺度下 $d$ 的操作化方案各自独立，跨尺度共享的是功能角色（"算子可维持的最大选择带宽"），而非相同的测量协议。
 
 **三尺度的同一机制，三种现象学外衣**：
-- **量子尺度** ($d_{quantum}$)：决定海森堡切口位置，代表相干性维持范围——无任何主观体验内容
+- **量子尺度** ($d_{quantum}$)：决定海森堡切口位置，代表相干性维持范围——**无主观体验内容**（推论：$d_{quantum} < d_{UAL}$，不满足 Cor-CONSC-1 的三重判据 $d \geq d_{UAL} \wedge \Psi_f > 0 \wedge \exists\hat{G}^{\neq\emptyset}$，故无意识涌现）
 - **生物/认知尺度** ($d_{bio}$)：即本节所分解的空间/时间/社会维度，代表关切范围——这是 d 值在生物学层面的高阶涌现（需满足 §6.2 的三个必要条件）
-- **宇宙尺度** ($d_{cosmic}$)：代表时空共识度（见 SRT-PHYS-COSMO Def-Cosmo-1）——无任何主观体验内容
+- **宇宙尺度** ($d_{cosmic}$)：代表时空共识度（见 SRT-PHYS-COSMO Def-Cosmo-1）——**无主观体验内容**（同理：未知系统是否满足 Cor-CONSC-1；标注为待评估）
 
-**关键结论**：$d_{spatial}$、$d_{temporal}$、$d_{social}$ 是 $d_{bio}$ 在不同维度上的投影，而 $d_{bio}$ 本身是 d 值这个跨尺度普遍参数在生物/认知介质中的特化显现。下文的三维分解适用于满足 §6.2 意识条件的系统（$\Psi_f > 0$，$d > 0$，$\hat{G}[\theta] \neq \varnothing$）。详见 SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）。
+**关键结论**：$d_{spatial}$、$d_{temporal}$、$d_{social}$ 是 $d_{bio}$ 在不同维度上的**加权投影**：
+$$d_{bio} \approx \alpha_s \cdot d_{spatial} + \alpha_t \cdot d_{temporal} + \alpha_{soc} \cdot d_{social}$$
+其中 $\alpha_k$ 为各维度在当前 $\theta$ 配置下的贡献权重（非固定常数，依任务/状态变化；加法分解为一阶近似，各维度交叉项待 §4.4 进一步形式化）。$d_{bio}$ 本身是 d 值这个跨尺度普遍参数在生物/认知介质中的特化显现。下文的三维分解适用于满足 §6.2 意识条件的系统（$\Psi_f > 0$，$d > 0$，$\hat{G}[\theta] \neq \varnothing$）。详见 SRT-CORE-14 Def-d-Scale-1（本体论带宽定义）。
 
 ---
 
@@ -446,42 +512,47 @@ $$d_s = \log_2(150) \approx 7.2 \quad \text{(人类平均)}$$
 
 ### 5.1 情绪的二维模型
 
-#### 5.1.1 Valence-Arousal空间
+#### 5.1.1 Valence-Arousal 空间（规范化定义）
 
-**Valence** (效价):
-$$V = -\text{sign}\left(\frac{d\Psi_f}{dt}\right)$$
+**Valence（效价）**——摩擦变化率的负方向，保留幅度信息：
 
-- $\frac{d\Psi_f}{dt} < 0$: 摩擦降低 → 正性情绪 (快乐)
-- $\frac{d\Psi_f}{dt} > 0$: 摩擦升高 → 负性情绪 (痛苦)
+$$V(t) \equiv -\frac{d\Psi_f}{dt}\bigg|_{\theta}$$
 
-**Arousal** (唤醒):
-$$A = |\Psi_f(t)|$$
+- $V > 0$：摩擦下降中 → 正性情绪（越大越"好"）
+- $V < 0$：摩擦上升中 → 负性情绪（越负越"痛"）
+- $V = 0$：摩擦稳态 → 情绪平台（可为高唤醒平台或低唤醒平台）
 
-- 低$|\Psi_f|$: 平静
-- 高$|\Psi_f|$: 激动
+*(注：原始 $\text{sign}(\cdot)$ 版本仅保留方向，丢失幅度信息，无法区分"微弱愉悦"与"极度狂喜"。)*
 
-#### 5.1.2 情绪地图
-```
-      Arousal (|Ψ_f|)
-          ^
-    High  |
-          |    Ecstasy -------- Terror
-          |       |               |
-          |       |               |
-  Medium  |   Joy ----+---- Anxiety
-          |       |   |   |       |
-          |       | Peace |   Sadness
-    Low   |   Contentment ---- Depression
-          |
-          +-----------------------------------> Valence (dΨ_f/dt)
-              Negative   0   Positive
-```
+**Arousal（唤醒）**——当前摩擦的绝对强度（相对于个体基线 $\Psi_f^{baseline}$）：
 
-**实例映射**:
-- **Ecstasy** (狂喜): $\Psi_f$ 高但$\frac{d\Psi_f}{dt} \ll 0$ (快速下降)
-- **Terror** (恐惧): $\Psi_f$ 高且$\frac{d\Psi_f}{dt} \gg 0$ (快速上升)
-- **Depression** (抑郁): $\Psi_f$ 低但$\frac{d\Psi_f}{dt} > 0$ (缓慢恶化)
-- **Peace** (平和): $\Psi_f$ 低且$\frac{d\Psi_f}{dt} \approx 0$ (稳定)
+$$A(t) \equiv |\Psi_f(t) - \Psi_f^{baseline}|$$
+
+- $A \approx 0$：接近基线平静态
+- $A \gg 0$：高度激活（无论正性还是负性）
+
+#### 5.1.2 情绪的 $(V, A)$ 相图
+
+| 情绪状态 | $A$（唤醒） | $V$（效价） | $\Psi_f$ 动力学 |
+|:---------|:-----------|:-----------|:----------------|
+| **Ecstasy（狂喜）** | 高 | 强正 | $\Psi_f$ 高但 $\dot{\Psi}_f \ll 0$（高摩擦快速释放） |
+| **Terror（恐惧）** | 高 | 强负 | $\Psi_f$ 高且 $\dot{\Psi}_f \gg 0$（高摩擦快速上升） |
+| **Joy（喜悦）** | 中 | 正 | $\Psi_f$ 中等并下降 |
+| **Anxiety（焦虑）** | 中 | 负 | $\Psi_f$ 中等并上升 |
+| **Peace（平和）** | 低 | $\approx 0$ | $\Psi_f$ 低且稳定 |
+| **Anhedonia（快感缺失）** | 极低 | $\approx 0$ | $\Psi_f$ 低且 $\dot{\Psi}_f \approx 0$（梯度消失，无法驱动 $V>0$） |
+| **Depression（抑郁）** | 低 | 负 | $\Psi_f$ 低但缓慢上升（低能量、缓慢恶化） |
+
+**d 值与情绪可达范围（协变约束）**：
+
+$$\text{Accessible Emotion Range} \propto d_{value}$$
+
+高 d 值的主体能在 $(V, A)$ 相图中遍历更宽广的区域（包括高唤醒的狂喜态）；低 d 值的主体的情绪活动空间被压缩为相图中心附近的狭窄带——这是情绪贫乏（Emotional Flatness）的动力学来源，而非情绪稳定。
+
+**病理的几何化**：情绪病理 = 系统轨迹被困于相图的某个子区域，无法完成正常的遍历循环（V 在正负之间自由振荡）。
+
+- OCD/焦虑锁定：轨迹被困于高 $A$、$V < 0$ 象限（高摩擦-上升循环）
+- 抑郁/快感缺失：轨迹塌缩至低 $A$、$V \approx 0$ 区域（梯度消失的摩擦洼地）
 
 ---
 
@@ -720,3 +791,138 @@ SRT的高级算子理论与以下领域对话:
 **字数统计**: ~13,000字(中英混合)
 
 ---
+
+
+### Ax-Op-Vis-01: Vectorized Instructive Update
+**Formal Statement**: 当系统可获得神经元级定向误差信号时，\(\hat{G}_\theta\) 的参数更新可写为向量化局部更新：
+$$
+\Delta\theta_i \propto -\eta\,e_i\,\nabla_{\theta_i}\mathcal{L}
+$$
+其中 \(e_i\) 为局部教导信号分量。
+
+**Implication**: 学习由“全局同信号更新”转向“分量特异更新”，显著提升样本效率与任务对齐能力。
+
+### Formalization Summary (形式化概述)
+
+本文件的核心形式化结构围绕以下关键公式展开：
+
+1. **时频对偶选择方程** (Ax-Spec-01): $L_1(t) = \mathcal{F}^{-1}[\hat{G}_\theta \cdot L_0(\omega)]$ — 显现域 $L_1$ 是潜在域 $L_0$ 经算子 $\hat{G}_\theta$ 频率调制后的逆傅里叶变换结果，意味着现实的时间结构由算子的频率选择性决定。
+2. **算子联邦直和分解** (Ax-Fed-01): $\hat{G}_{human} = \hat{G}_{brain} \oplus \hat{G}_{heart} \oplus \hat{G}_{gut}$ — 复杂智能体是多个具身子算子的联邦结构，通过耦合矩阵 $\kappa_{ij}$ 通信。
+3. **共振融合条件** (Ax-Fed-02): $\kappa_{AB} > \kappa_c \Rightarrow \hat{G}_A \otimes \hat{G}_B \to \hat{G}_{collective}$ — 当信息通透度超过临界阈值时，独立算子可融合为集体算子。
+4. **d 值熵对应** (Ax-d-01): $d = \alpha \cdot \log_2(S_{max}(L_0) / S_{min}(self))$ — d 值量化了算子对 $L_0$ 熵的压缩能力。
+5. **接入函数** (Def-Access-1): $\kappa_{access}(t) \propto d(t) \cdot E_{available}(t) / \Psi_f(t)$ — 算子对 $L_0$ 深层结构的访问半径由 d 值、可用能量与本体论摩擦 $\Psi_f$ 共同门控。
+
+### Dynamics Synthesis: Multi-Parameter Coupling（动力学综述：多参数耦合）
+
+> 本节为综述性质，描述各参数交互后的涌现行为。变量的最小可判定定义见 §I 参数列表（$\omega_\theta, \chi_{gen}, \eta, \beta$）；各机制的正式定义见：频谱选择 → Ax-Prism-1；联邦耦合 → Def-FederationPhase-1；d 值上界 → T-dmax-1；接入半径 → Def-AccessRadius-1。
+
+**① 频谱选择机制**（频域实现）
+
+$\hat{G}_\theta$ 对 $L_0$ 的选择在频域表现为带通滤波：共振频率 $\omega_\theta$ 与带宽 $\Delta\omega$ 决定从 $L_0$ 无限频谱中采样的「信息窗口」，压缩为有限的 $L_1$ 时域体验。EEG 频段（Gamma→Delta）对应不同的时间积分窗口 $\tau$，决定意识状态的时间分辨率与语义整合深度。
+
+**与 Ax-Prism-1 的傅里叶对偶关系**：
+
+$$\text{Prism}(\theta) \equiv \mathcal{F}[\text{Filter}(\omega_\theta)]$$
+
+棱镜函数（状态域：折射角 = 选择倾向 $\vec{v}$）与频谱滤波（频域：带宽采样）是同一选择行为的傅里叶对偶——算子对现实的「着色」物理上等同于对潜在频率的带通滤波。
+
+**② 联邦耦合机制**（多体扩展）
+
+人类算子不是单一整体，而是由脑、心、肠等子算子通过耦合动力学协调运作：
+
+$$\frac{d\hat{G}_i}{dt} = f_i(\hat{G}_i) + \sum_j \kappa_{ij} g_{ij}$$
+
+联邦统一性是连续相变量（Def-FederationPhase-1），取决于模块内选择耦合与环境耦合的比值。当 $d$ 值收缩或模块间互信息流被切断时，算子裂变为多个微算子簇——这是解离状态的 SRT 机制描述。
+
+**③ d 值门控与现象学闭合阈值**
+
+d 值受热力学上界约束：
+
+$$d_{max} = \frac{M}{k_B T} \cdot \frac{\tau_{coherence}}{1/f_{brain}}= \frac{M}{k_B T \cdot f_{brain}} \cdot \tau_{coherence}$$
+
+**量纲说明**：$M$ 为有效整合质量（Effective Integrative Mass），映射为参与同步振荡的神经元群等效惯性，量纲为 [Energy]。则 $M/(k_BT)$（热噪声背景下的信噪比潜力）与 $f_{brain} \cdot \tau_{coherence}$（相干周期数）均无量纲，故 $d_{max}$ 是纯数——代表算子在不崩溃的前提下能同时维持的**独立选择维度最大数量**。
+
+生成性指数 $\chi_{gen}$ 区分主动选择模型与被动天线模型。**现象学闭合阈值（Phenomenological Closure Threshold）**：
+
+$$\chi_{gen} \cdot d \cdot \Psi_f > \Theta_{closure}$$
+
+> ⚠️ 逻辑地位（兼容 T-ARCH-1）：此条件定义的不是「意识的产生」，而是**现实化的可维持区间**——必要非充分。即使公式达标，若缺乏具身算子的「理由响应能力」（Reason-Responsiveness），系统仍只是高仿真僵尸（Sophisticated Zombie）。意识是「昂贵的主动锚定」而非免费的信号读出，但锚定本身不蕴含主观性。
+
+**④ 接入半径调控：方向性与定力**
+
+异常意识状态的 SRT 本质是 $\hat{G}_\theta$ 可访问的 $L_0$ 半径与 $L_1$ 锚定强度的动态转移。方向性由 θ 稳定性决定：
+
+| 状态 | 机制 | 物理特征 |
+|:-----|:-----|:---------|
+| **冥想**（主动/受控）| θ 训练提升 $\kappa$ 稳定系数；$d \uparrow$ 同时强制维持 $L_1$ 相干锚定 | 高带宽、低噪声、高一致性 |
+| **致幻剂**（被动/失控）| 化学物质强行扩大半径，破坏 $\hat{G}_\theta$ 反馈抑制回路（$\rho$ 精度下降）| 半径溢出，$L_1$ 锚定点拓扑漂移（幻觉）|
+
+**「定力」的物理本质**：算子在极高自由能背景下（$L_0$ 半径扩大 = 暴露于更多混沌），依然能支付足够的 $\Psi_f$ 维持逻辑闭合现实的能力——即主动/受控接入半径扩展的核心机制。
+
+## 【理论边界/防误用声明】
+- 不采纳”VIS 存在即可推出意识本体结论”的推论。
+- 边界：VIS 约束的是学习动力学层，不直接决定 qualia 或主观体验判据。
+
+
+### Ax-Op-NGMC-01: NMD-Guided Migration Control
+**Formal Statement**: 在皮层发育中，RNA 监测路径（NMD）通过约束迁移相关基因网络，维持神经元定位与层化：
+$$
+\hat{G}_{\theta,mig} = \hat{G}_{\theta,mig}(\text{NMD:UPF2},\;\text{Reelin},\;\text{Ciliary Program})
+$$
+当 \(\text{UPF2}\downarrow\) 时，迁移速度与目标层到达率下降，层化失序概率上升。
+
+**Implication**: 发育期学习/组织的“误差控制”并不只在突触层，也发生在转录后调控层。
+
+## 【理论边界/防误用声明】
+- 不采纳“NMD 路径异常可直接推出主观意识层结论”的推论。
+- 边界：该条款约束发育与结构形成层，不替代高层认知/伦理判据。
+
+
+## Lonely-Runner Interface（Operator Individuation，2026-03-07）
+
+### Ax-Op-LR-01: Individuation Window Existence (Weak-Coupling)
+对算子集合 \(\{\hat{G}_{\theta_1},\ldots,\hat{G}_{\theta_n}\}\) ，若存在不可通约异质性（\(\theta_i\neq\theta_j\)）且耦合处于弱耦合区（\(\kappa_{ij}\le\kappa_c\)），则存在个体化窗口：
+\[
+\exists t^*:\ \Psi_f^{cross}\big(\hat{G}_{\theta_i},\hat{G}_{collective};t^*\big)\le\epsilon(n)
+\]
+其中 \(\epsilon(n)\) 随群体规模一般呈收缩趋势（典型可取 \(\epsilon\sim O(1/n)\) 的带宽界语义）。
+
+**Implication**：只要异质性未被同步抹平，系统演化会周期性释放“低跨主体摩擦窗口”，支持个体化锚定与创新探索。
+
+### Ax-Op-LR-02: Maximum Viable Divergence Lower Bound
+定义个体在群体中的可行偏离下界（弱耦合理想化）：
+\[
+\Delta_{viable}^{min}(n)\ \gtrsim\ \frac{1}{n}
+\]
+其含义与孤单跑者的 \(1/n\) 分离界同构：群体越大，个体可获得的“净空带宽”越窄，但并不消失。
+
+### Ax-Op-LR-03: Phase-Locking Failure Mode
+当系统进入强耦合同步相（回声室/极化态），即
+\[
+\kappa_{ij}>\kappa_c\ \land\ \mathrm{Var}(\theta_i)\to 0
+\]
+则个体化窗口闭合：
+\[
+W_{ind}\to\varnothing,
+\qquad
+\Psi_f^{cross}\not\to\epsilon
+\]
+
+**Implication**：该失效模式解释“长期群体同频后创新衰减与自由窗口消失”。
+
+### 分类映射表（Collective Coupling Regimes → SRT）
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|---|---|---|---|
+| 弱耦合异频群体（lonely-runner-like） | 中~高 | Open / Semi-open | payable（存在低跨摩擦窗口） |
+| 中耦合协商群体 | 中 | Semi-open | payable~borderline |
+| 强耦合同步群体（echo chamber） | 中回落~低 | Closed 倾向 | overloaded（创新窗口闭合） |
+| 强耦合+高压治理 | 低 | Closed | unsustainable（长期脆化） |
+
+### [Lineage/Source]
+- Quanta Magazine（2026）: *New Strides Made on Deceptively Simple "Lonely Runner" Problem*。
+- 数学背景：Lonely Runner Conjecture（丢番图逼近/离散几何/组合方法进展）。
+
+## 【理论边界/防误用声明】
+1. 不采纳“孤单跑者结论可直接外推到强耦合社会系统”的推论；该接口前提是弱耦合与异频保持。
+2. 不采纳“\(1/n\) 为社会系统精确常数”的推论；在 SRT 中仅作为带宽下界的结构类比与可校准 proxy。
+3. 不采纳“个体化窗口存在 = 永久自由”的推论；窗口可被同步相变（phase-locking）关闭。

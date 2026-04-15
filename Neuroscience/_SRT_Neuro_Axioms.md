@@ -3,6 +3,9 @@ id: SRT-NEURO-AXIOMS-001
 type: theory
 tags: [Neuroscience, Bridge, Axioms, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
@@ -18,15 +21,10 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- Part A 采用 `chatgptx` 的 Formal Axioms 分段，确保公理编号与推导链条完整。
-- Part B 采用 `claude` 的详细论述分段，并以原版 Neuroscience 的主题顺序作语义锚定。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 # Part A: Formal Axioms (形式化公理)
 
-> **CRITICAL RULE**: Do NOT just summarize Part B. You must perform **First-Principles Derivation**.
-> 1. **Mathematize**: Translate descriptive mechanisms into dynamical equations, topological operations, or logical functions.
-> 2. **Axiomatize**: Distill underlying logic into "Axioms", "Theorems", and "Corollaries".
 
 ## I. Operator Embodiment & Domain Mapping (算子具身与三域映射)
 
@@ -81,14 +79,61 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 * **Implication（中文）**：学习不是“记忆增加”，而是 \(\hat{G}_\theta\) 在 \(L_2\) 上的收敛轨迹。
 
+### Ax-NEURO-4b: Prediction-Error Friction Mapping（新增）
+定义局部预测误差与本体论摩擦密度的映射：
+\[
+\Psi_f^{local}(t)=\alpha_{pe}\,\|\varepsilon_{pred}(t)\|+\beta_{load}\,\mathcal{L}_{model}(t)
+\]
+其中 \(\varepsilon_{pred}\) 为预测误差，\(\mathcal{L}_{model}\) 为模型不一致负荷。
+
+> [R→Friston 2010 *Nature Reviews Neuroscience*（FEP：预测误差极小化作为大脑的第一性原理）; Rao & Ballard 1999 *Nature Neuroscience*（预测编码：PE在层级神经网络中的传播）; Schultz et al. 1997 *Science*（多巴胺奖励预测误差：RPE信号的神经基础）; Friston et al. 2014 *Neuropharmacology*（精神病理学的FEP解释：精度失调/PE紊乱）]
+
+* **R/H 区分**：
+  - [R] 预测误差框架（Friston/Rao & Ballard）；多巴胺RPE（Schultz）——均为既有神经科学
+  - [H] **SRT核心联结**：Ψ_f^local = α_pe·||ε_pred|| + β_load·L_model——将PE与本体论摩擦密度等同/线性映射是SRT独有的双层桥接主张。此主张将计算层（PE）与本体论层（Ψ_f）等同，属于SRT的形而上学-神经科学接口核心
+
+* **L_model操作化**（模型不一致负荷）：
+  - 贝叶斯模型复杂度代理：模型的有效自由度（EDF）或Bayes因子中的惩罚项
+  - 实验室测量：同时激活的竞争性解释数量 × 各假设后验之差异度
+
+* **系数说明**：α_pe/β_load为待拟合参数（需多模态同步数据确定）；当前线性形式为候选，非唯一选择
+
+* **Implication（中文）**：预测误差不是纯统计残差，而是 $\hat{G}_\theta$ 维持当前显现时遭遇的局部摩擦项。
+
+* **可证伪预测**：
+  - FC-NEURO4b-1：跨个体比较中，MMN振幅（EEG预测误差代理）应与皮质醇/代谢率（Ψ_f代谢代理）正相关（r>0.3）——若无相关则PE-Ψ_f线性映射在可测层面为空
+  - FC-NEURO4b-2：精准冥想训练降低L_model（减少竞争假设数量）后，Ψ_f代理应独立地（且早于）行为绩效提升下降——若Ψ_f代理改变与行为改变完全同步则PE-Ψ_f的独立测量路径存疑
+
 ---
 
 ### Ax-NEURO-5: Metabolic Friction Axiom (\(\Psi_f\) Coupling)
+
+**[R — 神经能量代谢研究追溯：Attwell & Laughlin 2001（突触传递能量代价）；Raichle & Gusnard 2002（脑默认网络代谢）；[H] — Ψ_f ∝ E_metabolic的SRT比例联结为新增预测]**
+
 定义本体论摩擦为代谢约束：
 \[
-\Psi_f\equiv\int_\gamma \|\nabla F\|\,dt\propto E_{metabolic}
+\Psi_f \equiv \int_\gamma \|\nabla F\| \, dt \propto E_{metabolic}
 \]
-* **Implication（中文）**：选择必须支付能量代价；\(\Psi_f\) 是神经系统能够拥有 \(d>0\) 的物理条件之一。
+
+*符号说明*：
+- $F$：自由能（对应Friston FEP中的变分自由能，或更一般的锚定代价势函数）
+- $\gamma$：θ空间中当前具身参数的演化路径（时间参数化）
+- $\|\nabla F\|$：锚定代价的局部梯度模（越高表示维持当前L₁状态越"费力"）
+
+*比例关系的操作化*：
+- 粗粒度代理：大脑静息态代谢率（CMR_O₂/CMR_Glu）作为 $E_{metabolic}$ 代理
+- 精细化预测：高认知负荷（高锚定状态，如维持复杂信念体系）应伴随前额叶/ACC代谢率显著升高
+
+*因果方向说明*：
+- 方向A（能量→Ψ_f）：充足代谢供应使Ψ_f可维持更高锚定稳定性
+- 方向B（Ψ_f→能量）：高本体论摩擦状态（强信念锚定）需要更多能量维持
+- 两个方向均可能成立，形成正反馈环；实验上可通过代谢干预（禁食/葡萄糖输注）区分
+
+* **Implication（中文）**：选择必须支付能量代价；$\Psi_f$ 是神经系统能够拥有 $d>0$ 的物理条件之一（必要而非充分——还需要时间整合能力和θ稳定性）。
+
+**证伪条件** [H]:
+- 若高锚定状态（如强信念固着、创伤后应激的过度锚定）在代谢成像中不伴随对应脑区代谢升高，则Ψ_f ∝ E_metabolic不成立。
+- 若代谢干预（如禁食降低脑能量供应）不导致锚定稳定性下降（d值降低的代理指标），则因果方向A不成立。
 
 ---
 
@@ -129,10 +174,24 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 * **Implication（中文）**：深层回路不是“激活现象”，而是选择带宽的再分配机制。
 
-<br>
+### T-NEURO-4: NCC Non-Equivalence Theorem（神经关联非等价定理，新增）
+设 \(\mathcal{N}(t)\) 为神经轨迹记录，\(\mathcal{E}(t)\) 为体验显现：
+\[
+\mathcal{N}(t)\sim \mathcal{E}(t)\ \not\Rightarrow\ \mathcal{N}(t)=\mathcal{E}(t)
+\]
+等价地，神经关联物是 \(\hat G_\theta\) 作用后的“轨迹尾迹”，而非选择动作本身。
+* **Implication（中文）**：可诱发某体验的刺激协议不等于已还原体验本体。
+
+### 分类映射表（Hart Ch.6 神经还原争议 → SRT）
+
+| 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
+|:--|:--|:--|:--|
+| 神经关联描述（NCC） | 低~中（观测侧） | Semi-open（测量回路） | payable |
+| 体验本体显现（L1 qualia） | 中~高（算子侧） | Open（跨域锚定） | payable / overloaded |
+| 还原论等同误用（NCC=体验） | 低 | Closed 倾向（单层化） | 被低估/遮蔽 |
+
 <br>
 
----
 ---
 
 
@@ -159,6 +218,23 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 - 寻找 NCC 是正确方法论，但永远只能得到相关性
 - 从三人称物理描述到一人称体验性质的跳跃，在原则上不可完成
 - 这不是技术瓶颈，而是**框架内在的逻辑限制**
+
+### 1.3 历史-隐喻约束（新增）
+
+基于 Cobb 对脑科学史的梳理（心脏中心论 → 脑中心论 → 水力/电报/电路/计算机隐喻），SRT 增补以下方法论约束：
+
+1. **技术隐喻依赖性**：每一代“脑模型”都深受当代主导技术影响（液压、电报、计算机、LLM）。
+2. **反实在化原则**：隐喻可作为启发式，但不得直接升级为本体同一（例如“脑=电报网络”“脑=计算机”）。
+3. **定位-分布并存原则**：
+\[
+\text{Localization is partial} \land \text{Distributed dynamics is indispensable}
+\]
+即：可有功能偏置区（如言语产出偏侧化），但不等于“单区生成完整心智内容”。
+4. **病理推断限度**：由“破坏后功能改变”只能推出网络必要条件，不能直接推出“该区即该功能本体”。
+
+**Implication（中文）**：神经科学解释必须同时防两种极端——
+- 反脑神秘化（把心智完全脱离神经机制）；
+- 脑区实体现象学（把热点/相关区直接当作意识发生器）。
 
 ---
 
@@ -242,6 +318,30 @@ SRT 的核心论证: **困难问题源于 $L_2$ 寄生倒置**——当我们将
 
 ---
 
+### Definition Summary (定义概述)
+
+- **神经幽灵算子 (Neural Ghost Operator, L₀→L₁)**：$\hat{G}_\theta^{neural}: L_0^{neural}\to L_1^{neural}$，具身参数 $\theta=(W,\vec{M},\mathcal{C},V(t))$；神经系统是跨域选择的物理实例化。
+- **三域映射 (Domain Mapping, L₀/L₁/L₂)**：$L_0$ = 所有可达发放模式流形；$L_1$ = 全局点燃子集；$L_2$ = 算子不动点（先验结构）。
+- **本体论摩擦 (Ontological Friction, L₀)**：$\Psi_f=\int_\gamma \|\nabla F\| dt \propto E_{metabolic}$；选择必须支付的能量代价。
+- **意识阈值 (Consciousness Threshold, L₁)**：$\Phi\cdot d > C_{critical}$；整合信息与关切梯度的乘积超过临界值方有稳定显现。
+
+### Formalization Summary (形式化概述)
+
+- **除法归一化** (Ax-NEURO-3)：$R_i = L_i^n / (\sigma^n + \sum_j w_{ij}L_j^n)$。受限系统执行选择的最优解形态，非经验细节。
+- **预测编码** (Ax-NEURO-4)：$\Delta\theta \propto -\nabla_\theta F$。学习是 $\hat{G}_\theta$ 在 $L_2$ 上的收敛轨迹。
+- **预测误差-摩擦映射** (Ax-NEURO-4b)：$\Psi_f^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal{L}_{model}(t)$。预测误差是 $\hat{G}_\theta$ 维持当前显现时的局部摩擦项。
+
+### Mechanism Explanation (机制解释)
+
+$\hat{G}_\theta^{neural}$ 通过具身参数 $(W,\vec{M},\mathcal{C},V(t))$ 将 $L_0$ 流形上的可达发放模式投影为 $L_1$ 点燃子集。选择的能量代价 $\Psi_f$ 与代谢耗散耦合，保证 $d>0$ 的物理基础。除法归一化在代谢约束下提供最优选择动力学；预测编码使 $\theta$ 沿自由能梯度收敛至 $L_2$ 先验。胶质介观算子 $\hat{G}_{meso}$ 执行慢时标 $L_2$ 修剪。NCC 关联非等价定理 (T-NEURO-4) 区分轨迹尾迹与选择动作本身。
+
+---
+
+## 【理论边界/防误用声明】
+- 不采纳”可诱发体验=体验被还原”的推论：诱发仅证明可操作耦合，不证明本体同一。
+- 不采纳”神经轨迹完整记录=第一人称内容完整重建”的推论：NCC 是尾迹，不是 \(\hat G_\theta\) 动作本身。
+- 不采纳”相关系数足够高即可消解解释鸿沟”的推论：相关性不自动升级为同一性。
+
 # 5 可证伪预测与开放性问题
 
 ## 5.1 可证伪预测
@@ -294,6 +394,15 @@ $$\text{意识} = \hat{G}_{\theta_{bio}}[L_0] \to L_1 \quad (\text{在约束下�
 $$\text{大脑损伤} = \theta_{bio} \to \theta_{bio}' \quad (\text{约束参数变化} \Rightarrow \text{选择模式变化})$$
 
 大脑损伤改变意识（因为 $\theta$ 改变了），但这并不证明大脑"产生"意识——正如调谐器损坏改变了收到的节目，但不证明节目由调谐器产生。关键区别在于: SRT 可以解释为什么**相同的**大脑损伤在不同个体中产生不同的意识效果（因为 $\hat{G}$ 的响应取决于 $L_0$ 的局部结构，而非仅由 $\theta$ 决定）。
+
+**层级防混淆声明（新增）**：
+- **行为/现象层（whole-agent level）**：知觉与意识是“具身主体-环境”闭环中的可供性接入与行动耦合事件。
+- **机制层（neural-subsystem level）**：预测编码是脑内动态-统计更新机制，用于实现上述闭环的局部优化。
+- 因此，
+\[
+\text{Predictive model update in brain} \not\equiv \text{Perceptual presence of whole agent}
+\]
+将二者直接等同属于范畴错误；正确关系是“实现约束（enabling condition）”而非“本体同一（identity claim）”。
 
 ---
 
