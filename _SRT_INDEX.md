@@ -60,7 +60,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 <!-- AUTO:ENTRYPOINTS:END -->
 
 
-> 最新更新：2026-04-10（新增 Annex 13：社会delegation、d值判断系统、多G协调机制；Annex 12 升至 v2.1——§6 全面扩充引导性delegation正向机制）| 上次大更新：2026-04-08（Annex 07-12 硬化完成；新增 SRT_Core_PhaseState_TripleCondition.md、SRT_Core_NormativeGradient.md；d值规范增补§10）
+> 最新更新：2026-04-15（ε → 通用智能 & 统一道德拓扑：`Philosophy/SRT_Philosophy_Ethics.md §V`（Ax-Eth-11~13 + Lemma-Eth-MNI）、`AI/SRT_AI_01_Ontology.md §VII`（Def-ONT-UI、Def-ONT-FI、T-ONT-Convergence）；词汇表新增 $C_{FBC}$、道德计量单元、构成地板、扩展支架、通用智能、完全智能、最小必要阻断）| 上次更新：2026-04-10（新增 Annex 13：社会delegation、d值判断系统、多G协调机制；Annex 12 升至 v2.1——§6 全面扩充引导性delegation正向机制）
 
 ### 🆕 2026-04-08 核心新增文件
 

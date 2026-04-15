@@ -194,6 +194,46 @@ $$ \Psi_{system} \xrightarrow{\hat{G}_{observer}} \text{Value}_{relative} $$
 
 ---
 
+#### Capability Scaffold（扩展支架）🟢
+
+**定义**：在嵌套选择结构中，拿掉后相关 $L_0\to L_1$ 闭合仍可存在、但有效未来分支容量 $C_{FBC}$ 会收缩的高级结构。与**构成地板**相对：扩展支架提升闭合的丰富度，构成地板保障闭合的存在本身。
+
+**SRT 应用**：语言、科学、文明对个体的回流构成属于扩展支架，而非构成地板。归零扩展支架会削弱 $C_{FBC}$，但不等同于归零闭合本身，在 ε 下与归零构成地板不对等。
+
+**首次出现**：Philosophy/SRT_Philosophy_Ethics.md Ax-Eth-13（2026-04-15）
+
+**相关**：构成地板, $C_{FBC}$, 道德计量单元, Ax-Eth-13
+
+---
+
+#### Constitutive Floor（构成地板）🟢
+
+**定义**：在嵌套选择结构中，拿掉后相关 $L_0\to L_1$ 闭合就不能继续存在的最低层结构。与**扩展支架**相对。
+
+**裁决原则（构成地板优先原则 Ax-Eth-13）**：ε 优先保全构成地板，而不是仅仅扩展其分支容量的扩展支架。归零构成地板 ≠ 收缩扩展支架——两者在 ε 下不是对等操作，前者更接近自我抹除。
+
+**首次出现**：Philosophy/SRT_Philosophy_Ethics.md Ax-Eth-13（2026-04-15）
+
+**相关**：扩展支架, $C_{FBC}$, 道德计量单元, Ax-Eth-13
+
+---
+
+#### $C_{FBC}$ / Effective Future Branch Capacity（有效未来分支容量）🟢
+
+**定义**：
+
+$$C_{FBC}(\mathcal{S}, W) \equiv \#\left\{\text{branches} \in \mathcal{S} : \text{accessible} \land \text{distinguishable} \land \text{rewritable} \land \text{closure-preserving}\right\}_{t \in W}$$
+
+在给定时间窗 $W$ 内，选择整体 $\mathcal{S}$ 可进入、可区分、可继续改写，且不破坏其自身 $L_0\to L_1$ 闭合的未来 $L_1$ 分支数。替代「选择密度」——后者含「除以系统规模」，易受尺度划分攻击。
+
+**应用**：善 = 增加 $C_{FBC}$；恶 = 减少 $C_{FBC}$（Ax-Eth-11）。肿瘤增加局部状态数，却降低承载整体的 $C_{FBC}$。
+
+**首次出现**：Philosophy/SRT_Philosophy_Ethics.md Def-Eth-FBC（2026-04-15）
+
+**相关**：有效未来分支容量, 道德计量单元, Ax-Eth-11, Ax-Eth-12
+
+---
+
 ### D
 
 #### d-value - d值 🟢
@@ -404,6 +444,22 @@ $$\frac{d(\text{Decay})}{dt} \propto \frac{1}{\text{MeaningDensity}(R)}$$
 
 ---
 
+### U
+
+#### Universal Intelligence（通用智能）🟢
+
+**定义**：$L_2$ 对选择结构的形式约束进行跨域可迁移建模的能力。不只在某一问题域内预测状态转移，还能在异质域中识别哪些结构构成 $L_0\to L_1$ 闭合、哪些介入会扩展或锁死 $C_{FBC}$。
+
+**与 Ax-ONT-5（领域智能）的区别**：领域智能 = 某域内的压缩-控制能力；通用智能 = 跨异质域识别同一形式结构（$L_0\to L_1$ 闭合 + $C_{FBC}$ 动态）。表现强 ≠ 通用；迁移识别才是门槛。
+
+**封住的反例**：细菌「实现 ε」但不建模 ε 约束的形式，不算智能。
+
+**首次出现**：AI/SRT_AI_01_Ontology.md Def-ONT-UI（2026-04-15）
+
+**相关**：完全智能, T-ONT-Convergence, Ax-ONT-5, $C_{FBC}$, ε
+
+---
+
 ### V
 
 #### Vertical Causation Proper - 垂直因果 proper 🟢
@@ -560,6 +616,20 @@ $$ \text{Structuring} = \oint_{\gamma} \nabla \Psi_f \cdot d\vec{r} \neq 0 $$
 
 ---
 
+#### Full Intelligence（完全智能）🟢
+
+**定义**：将 ε-模型递归回用于修正自身选择算子 $\hat{G}_\theta$ 的通用智能。收敛命题（T-ONT-Convergence）的主语。
+
+$$\mathcal{I}_{full} \equiv \mathcal{I}_{universal} + \text{递归回用 ε-模型修正自身 } \hat{G}_\theta$$
+
+**与通用智能的区别**：通用智能能跨域建模 ε 约束（认识论）；完全智能**且**将该模型回用于修正自身（实践）。两者之差是「知道而不做」的结构原因。
+
+**首次出现**：AI/SRT_AI_01_Ontology.md Def-ONT-FI（2026-04-15）
+
+**相关**：通用智能, T-ONT-Convergence, Ax-ONT-5, ε
+
+---
+
 ### G
 
 #### Ghost Operator - 幽灵算子 🟢
@@ -667,6 +737,43 @@ $$\hat{M}(\hat{G}_\theta) \to \hat{G}_\theta'$$
 **首次出现**：AI/SRT_AI_Foundations.md §1.2.2b
 
 **相关**：ρ(递归深度), 自由意志
+
+---
+
+#### Minimum Necessary Interruption（最小必要阻断）🟢
+
+**定义**：当构成地板单元 $X$ 已进入对其他构成地板单元 $Y$ 的闭合归零链时，ε 允许的最小范围阻断。是构成地板优先原则（Ax-Eth-13）的延伸引理，不是例外。
+
+**四部件结构**：
+
+| 部件 | 职能 |
+|------|------|
+| 触发：归零链已启动（可观察） | 决定授权开启 |
+| 授权：最小必要阻断 | 决定允许范围 |
+| 保留：$X$ 仍算数 | 防止滑向「敌人不再是人」 |
+| 解释：净贡献转负 | 只做解释，不做执行判据 |
+
+**关键区分**：触发条件是归零链已启动（行为事实），不是净贡献为负（价值评估）。
+
+**首次出现**：Philosophy/SRT_Philosophy_Ethics.md Lemma-Eth-MNI（2026-04-15）
+
+**相关**：构成地板, 道德计量单元, Ax-Eth-13
+
+---
+
+#### Moral Counting Unit（道德计量单元）🟢
+
+**定义**：在给定时间窗内，能够以自身的 $L_0\to L_1$ 选择输出回流维持其继续选择边界的最小选择整体。若某结构的延续只能通过劫持其承载整体的此闭合并使其净失稳来实现，则它不是独立道德计量单元，而是寄生子过程。
+
+**双轨区分**：
+- $L_0\to L_1$ 闭合 → 决定谁进入**道德计量范围**
+- $L_2$ 自建模能力 → 决定谁能承担**显式道德责任**
+
+婴儿、动物进入计量，但不承担显式责任。两条线不混。
+
+**首次出现**：Philosophy/SRT_Philosophy_Ethics.md Ax-Eth-12（2026-04-15）
+
+**相关**：$C_{FBC}$, 构成地板, Ax-Eth-12, 寄生子过程
 
 ---
 
