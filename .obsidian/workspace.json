@@ -252,6 +252,7 @@
   },
   "active": "10b3a087ccad9c78",
   "lastOpenFiles": [
+    "memory/2026-04-15.md",
     "video/src/OutroEN.tsx",
     "video/src/Grid.tsx",
     "video/src/theme.ts",
@@ -262,7 +263,6 @@
     "video/src/IntroCN.tsx",
     "video/src/Intro.tsx",
     "video/scripts/video_dual_language_pipeline.py",
-    "video/scripts/translate_subtitles.py",
     "video/SRT_L0L1L2_Cinematic_Source_v3.md",
     "video/SRT_L0L1L2_Cinematic_Upgrade_Map.md",
     "video/SRT_L0L1L2_Cinematic_Source_v2.md",
