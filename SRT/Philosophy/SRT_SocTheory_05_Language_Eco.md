@@ -3,10 +3,17 @@ id: SRT-SOC-THEORY-05
 type: theory
 tags: [Language, Ecology, Evolution, Neoteny, Cognitive Science, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-SOC-THEORY-04]
 ---
 
 # SRT Social Theory Part 2: Language & Evolution (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 
 > **Version 2.0 (Hybrid)**
@@ -825,6 +832,59 @@ P_{colex}(a,b)\uparrow \Rightarrow B_{L_1}(a\leftrightarrow b)\downarrow
 ### [Lineage/Source]
 - Asifa Majid & Elisabeth Norcliffe (2026), *The Lexical Typology of Sensory Perception* (Annual Review of Linguistics).
 - 核心证据语义：跨百余语言数据不支持完整普遍感官层级，支持生态-交流需求与语义映射框架。
+
+## Language-Loss Altered-State Interface（2026-03-18）
+
+### Def-Lang-ASC-1: Linguistic Scaffold Withdrawal Window
+将语言缺失/显著削弱定义为一种 `L_2^{language}` 脚手架撤离窗口：
+\[
+\Delta L_2^{language}\downarrow \Rightarrow \Delta\Big(\text{self-model}_{narrative},\ \text{world segmentation},\ \text{temporal extension}\Big)\downarrow
+\]
+这里的关键不是“意识被消除”，而是：当语言性标签、内语、可命名对象边界与叙事时间线突然变薄时，主体用于维持“我是一个与世界分离的、沿时间持续的对象”的高阶脚手架也会被一起削弱。
+
+### T-Lang-ASC-1: Narrative-Self Ablation Window
+SRT 可以把严重失语、极弱内语、以及某些深度冥想/迷幻体验中的 `ego dissolution / oceanic boundlessness` 平行地读成：
+\[
+L_2^{language}\downarrow \not\Rightarrow \text{consciousness}=0,
+\qquad
+L_2^{language}\downarrow \Rightarrow \text{narrative self-coherence}\downarrow
+\]
+也就是说，语言并不等于意识本身，但语言可能是**维持叙事性自我、对象分割与时间延展感**的重要脚手架。去掉这层脚手架后，剩下的不是“什么都没有”，而更可能是一个更低叙事、更低对象化、更当前时、更边界松动的经验场。
+
+### Aphasia / Pre-language Window（bridge patch）
+
+- 将这篇 IAI 文章的可用增量收紧为一个 **natural ablation bridge**：
+  - 严重语言丧失后的主观报告，常出现 `inner chatter` 降低、时间地平线收缩、自我边界松动、与环境一体化感增强等现象；
+  - Helen Keller 对前语言阶段的回忆，则提供一个更早期的对照：没有 `I / me` 之前，并非必然“无感知”，而更像缺少稳定自我索引与可比较心智状态的经验场。
+
+- 将这类现象写成 SRT 的最小接口：
+\[
+\hat G_\theta[L_0] \to L_1^{experienced}
+\xrightarrow[\text{weak/absent}]{L_2^{language}}
+L_1^{less\text{-}narrativized}
+\]
+其含义是：语言并不是把原本空白的世界“凭空创造出来”，而是把连续经验进一步切割、命名、索引、时间化，并将其绑定到一个可叙述的自我模型上。语言一旦退潮，经验仍在，但其对象性、自我性与历史连续性可能同时变薄。
+
+- 这为 SRT 的一个老命题提供了更具体的桥接版本：  
+  `L_2^{language}` 不只是交流协议，也是一种 **self-world stabilization protocol**。它让主体能够：
+  - 用词项把流动经验钉成对象；
+  - 用代词和叙事把经验钉成“我”的历史；
+  - 用语法时态把经验钉成过去/现在/未来的可追踪序列。
+
+- **SRT Implication（中文）**：
+  - 这条材料最值得吸收的，不是“语言创造了意识”这个大口号，而是更窄的一层：**语言可被视为改变意识构型的常驻 altered-state technology**。
+  - 平常清醒态并不一定是“最自然、最中性”的意识底态；它本身可能已经被内语、标签化和叙事自我深度塑形。
+  - 因而失语、深度冥想、迷幻体验之间最值得比较的，不是它们是否“神秘”，而是它们是否共同削弱了 `L_2^{language}` 对 `L_1` 的持续钉扎。
+
+- **Boundary（中文）**：
+  - 这是一篇 IAI 评论文，不是一手实验论文；它更适合作为 bridge 窗口，不适合当作经验定论。
+  - 失语并不自动带来“更高意识”或“更真实世界”；很多情况下它也伴随混乱、功能受损与巨大痛苦。
+  - Helen Keller 的回忆、脑损伤 memoir、冥想或迷幻报告都带有强解释负载，不能直接互相等同。
+  - 最稳的写法不是“语言创造意识”，而是：**语言高概率重塑了意识中的对象边界、自我模型和时间结构。**
+
+### [Lineage/Source]
+- Jeremy I. Skipper, IAI News (2025), `Language creates an altered state of consciousness`.
+- 文中主锚点为 Helen Keller `Before the Soul Dawn`、语言丧失后的脑损伤自述、以及对冥想/迷幻 ego-dissolution 现象的桥接比较。
 
 ## Niche Construction Interface（2026-03-08）
 

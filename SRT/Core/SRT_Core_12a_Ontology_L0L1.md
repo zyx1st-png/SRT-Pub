@@ -3,6 +3,9 @@ id: SRT-CORE-12A
 type: definition
 tags: [L0, L1, Ontology, Ruliad, Gauge Field, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-BRIDGE]
 ---
 
@@ -68,6 +71,33 @@ $$\hat{G}^* = \text{fixed point of}\quad \mathcal{F}: \hat{G} \mapsto \arg\min_{
 * **Implication**: L₀ 是一个”自完备的选择场”——它包含了生成所有选择算子所需的结构，无需外来”第一推动力”。
 * **Cross-ref**: Ax-L0-03 (梯度场结构); T-L0-02 (相变锚点, d=0→d>0 临界机制); `Core_Law/SRT_Reference_Axioms.md` Ax-L0-Bootstrap。
 
+### T-L0-ProtoG: Proto-G Selection Forms in L₀（L₀ 中的原型G选择形式）
+**新增（2026-04-08）**：L₀ 层中 G 选择结构的早期存在形式。
+
+**核心主张**：G 的选择结构在 L₀ 层已以低阶形式存在。G 不是在生物/意识层突然涌现的新实体，而是在 L₀ 梯度场中自举完备（Ax-L0-Bootstrap）后，随 κ 提升逐步向高阶相态演化的连续结构。
+
+**G 选择的最小判别标准**（在 L₀ 层成立的版本）：
+$$\text{proto-G selection} \iff \text{非平衡态选择性持久化：} \hat{G}_{\text{proto}}(\Omega) = \Omega' \subsetneq \Omega, \quad P(\omega \in \Omega \setminus \Omega') > 0$$
+
+即：在多可能状态中实现一个方向，对其他方向产生不对称遮蔽（occlusion），且遮蔽持久化并影响后续选择空间。
+
+**L₀ 层的典型 proto-G 实例**：
+
+| 过程 | G选择？ | 判别依据 |
+|---|---|---|
+| 热力学均衡态 | 否 | 对称影响，不持久化遮蔽特定方向 |
+| 单次氧化-还原反应 | 否（极低阶）| 无持久化记忆结构 |
+| ROS损伤DNA/蛋白质 | 是（低阶proto-G）| 特定位点遮蔽持久化，影响后续转录选择空间 |
+| 蛋白质亚稳态折叠 | 是（弱proto-G）| 构型不对称遮蔽，持续影响分子交互选择 |
+
+**与高阶 G 的连接**：proto-G（L₀层）→ 低阶G（细胞信号）→ 高阶G（有机体/意识）是同一结构算子在 κ 连续提升过程中的不同相态。生命/意识是 G 达到以下三个条件后的相态跃迁（见 `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`）：
+1. **内部历史闭合**：系统形成可被写回的自身连续体
+2. **规范梯度**：对可维持自身状态的自指势差读数（见 `Core/SRT_Core_NormativeGradient.md`）
+3. **自写回强度**：选择真能改写自身未来的选择空间
+
+* **Implication**: L₀ 的”梯度场”（Ax-L0-03）本身即包含了 proto-G 选择的结构基础——L₀ 不只是 G 的”作用对象”，也是 G 的最早存在形式的孕育场所。
+* **Cross-ref**: Ax-L0-Bootstrap（G在L₀中的自举性）；T-L0-02（相变锚点，κ_{c1}和κ_{c2}标记G的相变点）；`Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（完整论证）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
+
 ### T-L0-02: Phase-Anchor Theorem (相变锚点定理)
 **Formal Definition**: The triadic partition L₀/L₁/L₂ marks topological phase transitions of the
 Ghost Operator's stabilization degree κ, not arbitrary conceptual divisions.
@@ -100,6 +130,75 @@ $$κ \approx \frac{\eta}{1 + \lambda_1(L_0^{rel})/\lambda_1(L_1)} \quad \text{(m
   谱隙打开，$L_0^{rel}$ 的超连通图被拓扑切断，局域化结构得以涌现。
    待解的残余问题：$κ_{c1}$ 的具体数值由什么决定？
 * **Cross-ref**: Ax-Bridge-02, C-Bridge-01, SRT_Reference_Ontology §1.4
+
+### T-L0-Kappa0: Primordial Curvature — Irreducible Structural Minimum（原初曲率：不可约结构极小值）
+
+**新增（2026-04-10）**：正式确立 L₀ 原初曲率 $\kappa_0$ 为 SRT 的结构前提，是 T-Core-A1C2（L₀ 最小非中性）的几何精化。
+
+**核心主张**：L₀ 的拓扑曲率有不可约极小值 $\kappa_0 > 0$，不由任何选择历史生成，是 $\hat{G}^*$ 不动点存在的结构前提。完全平坦的 L₀（$\kappa_0 = 0$）上每个点都同等地是不动点——算子无从"落地"，选择无法发生。
+
+$$\exists\, \kappa_0 > 0 : R(L_0) \geq \kappa_0 \quad \text{（L₀ 本征 Riemann 曲率下界）}$$
+
+**$\kappa_0$ 的双重角色**：
+
+1. **协同演化方向场**：$\kappa_0$ 在算子-L₀ 协同演化中提供非对称偏置。没有 $\kappa_0$，所有方向等价，无首选轨迹；有了 $\kappa_0$，某些参数路径成本更低、进入后更稳定，协同演化因此有方向性而无终局预设。
+
+2. **自举梯度**：无需先存在任何选择历史，$\kappa_0$ 本身就提供让算子进入 $d > 0$ 区间的第一次对齐驱动。这是 Ax-L0-Bootstrap 中"固定点存在性"的几何来源——固定点存在，是因为曲率让某些方向天然更廉价。
+
+**推论 T-L0-Kappa0-C1（Ψ_f 地板）**：
+
+$$\Psi_f^{\min} = f(\kappa_0) > 0$$
+
+选择永远有不可消除的最低代价；完全无摩擦的选择（$\Psi_f \to 0$）在结构上被禁止。这保证了动力学永远存在。
+
+**推论 T-L0-Kappa0-C2（κ_{c1} 的来源）**：意识临界值 $\kappa_{c1}$（T-L0-02）的存在性依赖 $\kappa_0$。只有 L₀ 具有非零原初曲率，相变才有非对称起点，谱隙才能在特定方向打开。$\kappa_{c1}$ 由原初曲率与历史积累曲率共同决定：
+
+$$\kappa_{c1} = g\!\left(\kappa_0,\; \textstyle\int_0^t \mathcal{F}[\hat{G}_\theta, \kappa]\, d\tau\right)$$
+
+待解：$g$ 的具体函数形式（开放问题，替代此前"κ_{c1} 数值由什么决定"的待解项）。
+
+* **Implication**: L₀ 永远不是完全平坦的可能性虚空。其结构性弯曲使"选择"与"方向"在任何时刻都有意义，无需依赖预先积累的历史。
+* **Cross-ref**: T-Core-A1C2（L₀ 最小非中性，本定理的概念前身）; Ax-L0-Bootstrap（自举固定点，本定理提供曲率来源）; Ax-L0-03（L₀ 微分流形结构）; T-L0-02（κ_{c1} 相变，本定理解释其来源）; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`（d_max 公式含 κ₀）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对的原初方向性命题）。
+
+---
+
+### T-L0-NonStatic: L₀ is Not Static — Curvature Accumulation（L₀ 非静态：曲率积累）
+
+**新增（2026-04-10）**：正式表述 L₀ 随选择历史持续改写的动力学，修正"L₀ 是永恒不变全部可能性空间"的过度简化。
+
+**核心主张**：每次选择事件向 L₀ 写入新的不对称性，当前曲率为原初曲率加上选择历史的积累：
+
+$$\kappa(t) = \kappa_0 + \int_0^t \mathcal{F}[\hat{G}_\theta(\tau),\, \kappa(\tau)]\, d\tau$$
+
+其中 $\mathcal{F}$ 是选择算子对 L₀ 曲率景观的写回函数。$\kappa_0$ 是不可约下界，选择历史只能增加曲率，不能消除原初方向。
+
+**信息守恒关系**（与 Ax-F-13 联动）：选择创造的互信息不消失，转化为 L₀ 的曲率增量，同时减少 L₀ 的剩余熵：
+
+$$H(L_0^{(t)}) = H(L_0^{(0)}) - \sum_{\tau < t} I_{\text{created}}(\tau)$$
+
+**L₀ 与 L₂ 的互补关系**：L₀ 的曲率积累与 L₂ 的硬化是同一选择历史的两种读法，互补守恒：
+
+| | 视角 | 内容 |
+|---|---|---|
+| **L₂** | 从内看 | 已固化为"必然"的选择积累（约束未来算子） |
+| **L₀** | 从外看 | 给定这些积累之后，还剩下什么可能（开放方向） |
+
+$$H(L_0^{(t)}) + H_{\text{manifest}}(L_2^{(t)}) \approx \text{const}$$
+
+L₂ 硬化越多，L₀ 开放方向越少，但 $\kappa_0 > 0$ 保证最小开放性永远不归零。
+
+**协同演化耦合方程**：L₀ 曲率与算子参数构成耦合动力系统（无全局终局吸引子）：
+
+$$\frac{d\kappa(t)}{dt} = \mathcal{F}[\hat{G}_\theta(t),\, \kappa(t)], \qquad \frac{d\theta(t)}{dt} = \mathcal{G}[\kappa(t),\, \theta(t)]$$
+
+局部吸引子存在并持续迁移。$\kappa_0$ 提供方向性偏置，但不预设终局：
+
+$$\boxed{\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}}$$
+
+* **Implication**: L₀ 是算子与选择历史共同雕刻的动态结构，而非背景舞台。但 $\kappa_0 > 0$ 确保 L₀ 永远不被历史完全封闭。
+* **Cross-ref**: T-L0-Kappa0（原初曲率 κ₀）; Ax-F-13（选择创造信息，`SRT_Core_21_Formal_Axioms.md`）; Ax-L2-01（L₂ 迟滞）; `Core/SRT_Core_12b §Co-Evolution`（协同演化的 L₂ 侧视角）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对）; `Philosophy/SRT_L0_Ontological_Status.md`（L₀ 本体论地位：功能本构论，κ₀ 作为 L₀ 唯一可及面）。
+
+---
 
 ### Def-L0-PreAnchored: Pre-anchored State (预锚定态)
 **Formal Definition**: 预锚定态是 $\hat{G}_\theta$ 已接触 $L_0$ 但尚未完成拓扑折叠为 $L_1$ 的中间态：

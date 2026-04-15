@@ -3,6 +3,9 @@ id: SRT-PHIL-AXIOMS
 type: theory
 tags: [Philosophy, Epistemology, Phenomenology, Axioms, Hybrid]
 status: axiomatic_hybrid_v3
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 

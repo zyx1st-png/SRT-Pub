@@ -2,16 +2,20 @@
 id: SRT-REF-AXIOMS
 type: axiom_set
 tags: [CoreLaw, Axioms, Canonical]
+layer: L1
 status: axiomatic_hybrid_v1
-dependency: []
+epistemic_layer: os
+claim_mode: canonical
+dependency: [SRT-L0-METAPHYSICS]
 ---
 
 # SRT_Reference_Axioms.md
 
-> ⚠️ **此文件拥有 SRT 理论的最高解释权。**
-> 所有衍生理论、方程和推论均不得违反以下公理。
+> **层级说明**：本文件属于 **L1（接口层）**，是 L0 形而上学命题的形式化映射。
+> 本文件的公理不得违反 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md) 的四个命题。
+> 如出现冲突，以 L0 为准，本文件需修订。
 >
-> **Status**: Constitutional Supreme | **Version**: 1.0
+> **Status**: L1 Formal Axioms | **Version**: 1.0
 
 ---
 

@@ -3,6 +3,9 @@ id: SRT-BACKLOG
 type: project_management
 tags: [Backlog, Todo, Roadmap]
 status: v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: []
 ---
 

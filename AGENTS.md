@@ -207,42 +207,14 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-## SRT 工作流触发规则（更新）
+## Project-Local Workflow Triggers
 
-当用户发送以下指令时，按固定工作流执行：
+Project-specific trigger words, heartbeat rules, and automation entrypoints should live in the nearest project's own `AGENTS.md`.
 
-### A) 自我修补对齐工作流（默认）
-- `对话`：启动“自我修补对齐模式”
-  - 自动识别张力点与结构缺口（一次一个）
-  - 与用户快速对齐后回写
-- `下一个`：结束当前点，切换到下一个问题点
-- `结束对话`：停止该模式，输出总结并回写+commit
-- 详细流程：`SRT_openclaw/SRT_DIALOGUE_WORKFLOW.md`
+- `SRT/AGENTS.md` owns SRT-specific trigger words, heartbeat behavior, and ClawX/OpenClaw migration notes.
+- Projects without a local `AGENTS.md` fall back to this workspace-level file.
 
-### B) 学者批判对话工作流（新增）
-- `学者对话`：启动”著名学者批判模式”
-  - 指定学者角色，对 SRT 提出批判性问题
-  - 用户与学者多轮讨论后形成可写入结论
-- `下一个`：切换下一批判点/下一学者
-- `结束对话`：停止该模式，输出总结并回写+commit
-- 详细流程：`SRT_openclaw/SRT_SCHOLAR_CRITIQUE_DIALOGUE_WORKFLOW.md`
-
-### C) SRT Pipeline 手动触发词（新增）
-直接发送以下触发词即可启动对应 Pipeline（无需其他说明）：
-
-| 触发词 | Pipeline | 动作 |
-|--------|---------|------|
-| `材料 <文本/URL/文件>` | Pipeline 1 | 审查并融入外部材料（6项审核门 → A/B/C结论 → 若A则直接修改文档） |
-| `信号采集` | Pipeline 3 | 立即执行网络信号采集（Scholar/Reddit/Twitter/X） |
-| `内审` | Pipeline 6 | 立即执行每日内部审查（自动修复小问题 + 写入待审队列） |
-| `选题` | Pipeline 5 | 生成当日大众路线+精英路线各 1 条选题 |
-| `论文候选` | Pipeline 2 | 更新候选池评分与期刊推荐 |
-| `周评` | Pipeline 4 | 执行文档治理审查 + 理论方向评审（追加到 `_SRT_WEEKLY_THEORY_REVIEW.md`） |
-
-**执行前**：先读 `SRT/STATUS.md`（30 秒了解当前状态）
-**执行后**：更新 `SRT/STATUS.md` 中的今日执行状态
-
-详细节奏与交付物：`SRT/_SRT_OPERATIONS_SCHEDULE.md`
+This workspace file stays generic so multiple OpenClaw/ClawX projects can coexist without overwriting each other's entrypoints.
 
 ## Make It Yours
 

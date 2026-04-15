@@ -3,6 +3,9 @@ id: SRT-SPIRIT-01
 type: core_module
 tags: [Religion, Ontology, Comparative Religion, Axioms]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-001, SRT-SPIRIT-AXIOMS]
 ---
 

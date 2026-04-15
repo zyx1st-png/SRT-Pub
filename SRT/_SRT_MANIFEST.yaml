@@ -112,8 +112,8 @@ dependency_policy:
     - "SRT_Core_Kernel"
 
 tooling:
-  entrypoint_sync: "scripts/srt_sync_entrypoints.py"
-  entrypoint_sync_wrapper: "scripts/sync_srt_entrypoints.sh"
-  dependency_normalizer: "scripts/srt_doc_validate.py fix-deps"
-  validator: "scripts/srt_doc_validate.py check"
-  wrapper: "scripts/run_srt_checks.sh"
+  entrypoint_sync: "manual-sync"
+  dependency_normalizer: "manual-review"
+  validator: "../scripts/run_srt_checks.sh"
+  quality_metrics: "../scripts/srt_quality_metrics.py"
+  explainability_audit: "../scripts/srt_explainability_audit.py"

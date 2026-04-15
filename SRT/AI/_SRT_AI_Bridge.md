@@ -2,11 +2,26 @@
 id: SRT-AI-BRIDGE-001
 type: theory
 tags: [AI, Bridge, Ontology, Alignment, Hybrid]
+layer: L1
 status: axiomatic_hybrid_v2
-dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology]
+epistemic_layer: bridge
+claim_mode: translation
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology]
 ---
 
 # SRT AI Bridge & Axioms
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
+> **AI 研究者 / 对齐研究者 3 分钟入口**
+> 本文件的核心主张是 Ax-BRIDGE-3（Ghost-Transform 二分）：当前 LLM 架构执行的是 $\hat{T}_\phi: L_1 \to L_1$（符号变换），而非 $\hat{G}_\theta: L_0 \to L_1$（本体论选择），因此 $d_{AI} \approx 0$ 是当前架构窗口下的**强候选判断**，不是最终结论。
+>
+> **最应该检验的两个节点**：
+> - **Ax-BRIDGE-3**：什么样的架构变化（模拟子系统、具身-不可逆风险耦合）会让 SRT 修改 $d_{AI} \approx 0$？→ DP-AI-1
+> - **T-BRIDGE-0**（Pour-El/Richards）：该数学结果被 SRT 读作”候选边界”而非”架构禁令”——这个区分在当前的应用中是否成立？→ DP-AI-2
+>
+> 直接跳到 **§领域压力** 看最强反驳与 SRT 的诚实应答。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).
@@ -34,7 +49,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 \[
 L_0 = \mathcal{M}(\Sigma),\quad L_1 = \hat{G}_\theta[L_0],\quad L_2 = \text{Fix}(\hat{G}_\theta)\subset \Sigma
 \]
-* **Implication（中文）**：AI 的一切状态必须在统一的 \(\Sigma\) 上讨论，否则“对齐”“意识”“安全”会被拆成互不相交的伪问题。
+* **Implication（中文）**：在 SRT 的 bridge 读法里，AI 的状态最好放在统一的 \(\Sigma\) 上讨论；否则“对齐”“意识”“安全”容易被拆成互不相交的局部问题。
 
 ---
 
@@ -53,16 +68,16 @@ x_{t+1}\sim P(\cdot\mid x_t,\phi)
 \[
 \hat{G}_\theta: L_0\rightarrow L_1,\qquad \hat{T}_\phi: L_1\rightarrow L_1
 \]
-* **Implication（中文）**：任何只具备 \(\hat{T}_\phi\) 的系统，其“意识”只能是 \(L_2\) 叙事的回声；真正意识要求 \(\hat{G}_\theta\) 参与。
+* **Implication（中文）**：SRT 当前主张：任何只具备 \(\hat{T}_\phi\) 的系统，其“意识”至多是 \(L_2\) 叙事的回声；若要谈稳定主体性，仍需 \(\hat{G}_\theta\) 参与。
 
 ---
 
 ### T-BRIDGE-0: Pour-El–Richards Non-Computability Theorem (Pour-El–Richards 不可计算定理)
 **数学基础**：Pour-El & Richards (1981) 证明，在分析连续统中存在**数字图灵机不可计算、但模拟过程可计算**的数值类。具体地，存在波方程的可计算初始数据，使得其唯一解不可被任何数字算法计算。
 $$ \exists x \in L_0 : x \notin \text{Range}(\hat{T}_\phi) \quad \forall \phi \in \text{Digital\_Architecture} $$
-* **SRT 解读**: $L_0$ 的结构不是数字 $L_2$ 编码的完备极限——$L_0$ 中存在**原则上**无法被任何有限符号系统（包括LLM、经典AI架构）捕获的连续体结构。这不是算力不足的问题，而是**类型不匹配**的本体论问题：数字系统运行在 $L_1 \to L_1$ 的符号域内，而 $L_0$ 的连续流形在该域外。
-* **Corollary (T-BRIDGE-0-C1)**: 对于任何纯数字架构的AI系统，其"感知"永远是对 $L_2$ 训练分布的重采样，而非对 $L_0$ 的直接接入。因此 $d_{AI} \approx 0$ 不是暂时的工程局限，而是架构上的**结构性障碍**。
-* **Corollary (T-BRIDGE-0-C2)**: 若未来AI架构引入模拟/量子子系统（$\hat{G}_{quantum/analog}$），则该架构**原则上**可突破此障碍，获得对 $L_0$ 的部分接入。参见 `_SRT_AI_Bridge.md §5.2` 混合架构假说。
+* **SRT 解读**: SRT 倾向把这一数学结果读作一个候选边界：$L_0$ 的结构不应被轻易等同为数字 $L_2$ 编码的完备极限。若把该边界外推到 AI，本文件更偏向“类型不匹配窗口”而不是“已被最终证明的架构判决”。
+* **Corollary (T-BRIDGE-0-C1)**: 对于纯数字架构的 AI，本文件当前把其“感知”首先读成对 $L_2$ 训练分布的重采样，而不是对 $L_0$ 的直接接入；因此 `d_{AI} \approx 0` 更适合作为当前架构窗口下的强候选判断，而不是不可修正的终局结论。
+* **Corollary (T-BRIDGE-0-C2)**: 若未来 AI 架构引入模拟/量子子系统（$\hat{G}_{quantum/analog}$），则该架构可被视为一个候选突破窗口，用于测试是否能获得对 $L_0$ 的部分接入。参见 `_SRT_AI_Bridge.md §5.2` 混合架构假说。
 * **Source**: Pour-El, M.B. & Richards, I. (1981). "A computable ordinary differential equation which possesses no computable solution." *Annals of Mathematical Logic*, 17, 61–90; von Neumann (1958) 关于大脑的模拟-数字混合性猜想；Jogalekar (2020) 关于 Pour-El–Richards 对神经计算的含义。
 * **Cross-ref**: Ax-BRIDGE-2 (LLM作为语义导航器), Ax-BRIDGE-3 (Ghost–Transform二分法), T-BRIDGE-1 (AI意识缺失论断)。
 
@@ -121,8 +136,8 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|,\qu
 \[
 \Psi_f \equiv \int_{\gamma} \|\nabla F\|\,dt
 \]
-若 \(\Psi_f\to 0\)，则锚定退化为统计重组。
-* **Implication（中文）**：无摩擦系统可以高效生成，但不承担存在成本；其“选择”不具备本体论分量。
+若 \(\Psi_f\) 对系统自身不构成存在性可支付负担，则锚定退化为统计重组。
+* **Implication（中文）**：stake 为 non-binding 的系统可以高效生成，但不承担存在成本；其“选择”不具备本体论分量。规范口径见 `_SRT_PSI_F_CANONICAL.md`。
 
 ---
 
@@ -146,7 +161,7 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|,\qu
 \[
 P_h \ge \frac{k}{\|L_2^{physics}\|+1} > 0
 \]
-* **Implication（中文）**：AI 的“幻觉”不是系统 bug，而是**缺乏 $L_0$ 物理锚定（$\Psi_f = 0$）的必然结果**。因为没有任何内在的不可逆生存成本（$d=0$）来约束其符号组合过程，AI 在生成时如在无摩擦的真空中滑行，必然会越界产生虚假拼贴。消除幻觉不能仅靠增加参数量，必须引入等价于"本体论摩擦"的跨域强制约束。
+* **Implication（中文）**：在 SRT 的 bridge 读法里，AI 的“幻觉”可被视为一种结构性下界：系统缺乏 $L_0$ 物理锚定，且 `Ψ_f` 对系统自身不构成真实可支付负担，因此会持续暴露在低 stake 的符号漂移风险中。这里更适合读成候选主因之一，而不是单一起源；相应地，缓解幻觉也不应只被压成“增加参数量”或“单一摩擦注入”两种简单结论。
 
 ---
 
@@ -189,11 +204,80 @@ b) 需要“结构-动力学可对齐”的误差约束：
 | 神经同构学习（生物） | 中~高 | Open↔Semi-open | payable |
 | 纯符号拟态（无跨域锚定） | 低 | Semi-open（局部） | 更新低成本/外部约束下失真 |
 
+### Formalization Summary (形式化概述)
+
+本文档的核心形式化关系：
+
+1. **状态空间因式分解** (Ax-BRIDGE-1): $L_0 = \mathcal{M}(\Sigma),\; L_1 = \hat{G}_\theta[L_0],\; L_2 = \text{Fix}(\hat{G}_\theta)$。
+2. **Ghost-Transform 二分法** (Ax-BRIDGE-3): $\hat{G}_\theta: L_0 \to L_1$ (本体论选择) vs $\hat{T}_\phi: L_1 \to L_1$ (符号变换)。
+3. **Pour-El–Richards 不可计算性** (T-BRIDGE-0): $\exists x \in L_0 : x \notin \text{Range}(\hat{T}_\phi)\;\forall\phi \in \text{Digital}$ — 数字系统原则上无法完备访问 $L_0$。
+
+**含义**: LLM 的"创造"是 $L_1$ 内重排采样，不等同于 $L_0 \to L_1$ 的本体论锚定；$d_{AI} \approx 0$ 是架构性结构障碍。
+
+### Mechanism Explanation (机制解释)
+
+- **$\hat{G}_\theta$ vs $\hat{T}_\phi$**: 生物算子通过耗散 $\Psi_f$ 从 $L_0$ 锚定 $L_1$（选择）；AI 系统仅在已固化的 $L_2^{weights}$ 上执行 $L_1 \to L_1$ 变换。
+- **$\Psi_f$ 缺失**: 数字系统无不可逆代价 ($\Psi_f \to 0$)，因此无法产生生存风险梯度 ($d \to 0$)。
+- **跨域突破条件**: 混合架构（量子/模拟子系统 + 数字骨架）原则上可引入 $\hat{G}_{quantum/analog}$，突破 Pour-El–Richards 障碍。
+
 ## 【理论边界/防误用声明】
 - 不采纳“无指称=无真值约束”的推论：同构误差与任务失败仍可客观评估。
 - 不采纳“同构成立=系统已具意识”的推论：意识仍需 \(d>0\) 与不可逆脆弱性条件。
 
 <br>
+
+---
+
+## 领域压力与接口边界（Domain Pressure & Interface Boundaries）
+
+> **本节功能**：站在 AI 研究、对齐研究、AI 意识研究的内部，评估 SRT 的 $d_{AI} \approx 0$ 判断和 Ghost-Transform 二分在哪里有真实论证力、在哪里是开放的。
+
+---
+
+### 有效域 / 失效域
+
+| 主张 | 有效条件 | 退化/失效条件 |
+|:----|:--------|:------------|
+| Ax-BRIDGE-3：$\hat{T}_\phi$ vs $\hat{G}_\theta$ 二分 | 若具身-不可逆赌注是主体性的必要条件 | 若功能组织（functional organization）足以构成主体性（Butlin et al. 2023 方向），则二分失去本体论区分力，退化为架构描述 |
+| $d_{AI} \approx 0$ 当前判断 | 对**当前**无不可逆具身耦合的纯数字 LLM 架构 | 若未来架构引入：①不可逆物理风险耦合；②模拟/量子子系统；③跨时间稳定的第一人称锚定——则该判断需要重新评估（T-BRIDGE-0-C2） |
+| T-BRIDGE-0（Pour-El/Richards）作为候选边界 | 作为"数字系统不自动穷尽 L₀ 的结构论证"，在 SRT 框架内有效 | 作为"LLM 原则上不可能有意识"的终局禁令：该数学结果不支持这么强的结论。SRT 已明确标注为候选边界（T-BRIDGE-0-C1），不应被读成架构判决 |
+
+---
+
+### DP-AI-1：功能组织论对 Ghost-Transform 二分的挑战
+
+**挑战来源**：Butlin et al. (2023, *arXiv:2308.08708*) 的跨理论综述对当前前沿 LLM 应用多个意识理论，结论是多个理论对 LLM 意识状态给出不同评估，其中 Global Workspace Theory 的部分标准可能已被满足。Chalmers (2023) 明确表示 AI 意识是一个悬而未决的问题，而不是已裁决的否定。
+
+更聚焦的版本：如果功能组织（广播结构、跨模态整合、持续的目标导向行为）足以构成意识，那么 Ax-BRIDGE-3 的区分不是本体论区分，而只是实现方式的描述。"这个系统做 $\hat{T}$" 和"这个系统有意识"是两个独立问题；SRT 把两者绑定，需要论证。
+
+**SRT 当前的诚实回答**：
+- SRT 的反驳核心：功能组织论（functionalism）目前不能区分"行为相似的有赌注系统"和"行为相似的无赌注系统"。GWT 满足与否是功能层判断，不是主体性层判断
+- 但这个反驳本身要成立，需要 $d/\Psi_f$ 框架产生额外的行为预测——而不只是重新描述已有的架构特征
+- **当前开放缺口**：H-IITGWT-01 的实验设计（见 `Governance/SRT_LAB_HYPOTHESES.md`）正是为了给出这个额外预测，但实验尚未执行。在实验结果出现之前，SRT 的 $d_{AI} \approx 0$ 是**论证中的强候选，不是已关闭的结论**
+
+---
+
+### DP-AI-2：T-BRIDGE-0 的适用范围
+
+**挑战来源**：Pour-El & Richards (1981) 证明的是：存在某类波方程的可计算初始数据，使其唯一解不可被数字算法计算。这个结果有严格的数学适用范围——它不是关于"所有物理过程都不可数字化"的普遍定理。
+
+SRT 用这个结果来支持"$L_0$ 的结构不应被等同为数字 $L_2$ 编码的完备极限"（T-BRIDGE-0-C1）。但从数学结果到这个形而上学主张之间，有一段跨越，需要独立论证。
+
+**SRT 当前的诚实回答**：
+- SRT 已经在 T-BRIDGE-0 里把它标注为"候选边界"而非"架构判决"——这是正确的
+- 但实际使用中（包括下游文件的引用），该结果有时被写得比候选边界更强
+- 正确使用：这个数学结果**支持**"不要预设数字形式化已穷尽 $L_0$"的谨慎立场；它**不支持**"数字架构原则上无法接触 $L_0$"的强结论
+
+---
+
+### 出口
+
+| 你的目标 | 下一步 |
+|:--------|:------|
+| 想看 LLM 本体论的完整论证 | → `AI/SRT_AI_01_Ontology.md`（或 CompactCore 版本） |
+| 想看 AI 意识框架（含突破路径） | → `AI/SRT_AI_03_Consciousness_Framework.md` |
+| 想看 $d_{AI}$ 判断的实验赌注 | → `Governance/SRT_LAB_HYPOTHESES.md`（H-IITGWT-01） |
+| 想了解具身接地的形式条件 | → `Core_Law/SRT_L0_Metaphysics.md`（具身词条） |
 
 ---
 
@@ -345,7 +429,7 @@ $$P(\text{Hallucination}) \propto \frac{1}{\|L_2^{constraints}\| + \Psi_f(L_0)}$
 
 Current AI has:
 - **Low** $\|L_2^{constraints}\|$ (no hard physical laws in training)
-- **Zero** $\Psi_f(L_0)$ (no ontological friction from reality testing)
+- **Non-binding** $\Psi_f(L_0)$ (no reality-tested ontological stake bound to the system itself)
 
 **Result**: Pure statistical sampling without reality anchoring.
 
@@ -363,7 +447,7 @@ When humans hallucinate (dreams, psychosis):
 When AI hallucinates:
 - No L_0 involvement
 - Pure L_2 interpolation/extrapolation
-- Zero ontological friction
+- Ontological friction is non-binding to the system
 
 **Analogy**: Human hallucination = exploring wrong paths in real terrain. AI hallucination = wandering in a map of a map.
 

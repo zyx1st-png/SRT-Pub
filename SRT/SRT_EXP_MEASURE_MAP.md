@@ -3,12 +3,15 @@ id: SRT-EXP-MEASUREMAP
 type: experiment
 tags: [Experiment, Measure, Proxy]
 status: v1
-dependency: []
+layer: L2
+epistemic_layer: lab
+claim_mode: canonical
+dependency: [SRT-LAB-HYPOTHESES]
 ---
 
 # SRT 核心变量—观测指标映射（P1-3）
 
-更新时间：2026-02-28
+更新时间：2026-03-17
 目标：将核心理论变量映射到可测 proxy
 
 ---
@@ -16,6 +19,26 @@ dependency: []
 ## 1) d 值（关切梯度）
 
 Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
+
+### Lab 最小复合代理（2026-03-17）
+\[
+\hat d_{min} \equiv \mathrm{mean}\Big(
+z(w_{horizon}),
+z(span_{care}),
+z(persist_{reward\text{-}off}),
+z(costly\_other)
+\Big)
+\]
+
+其中：
+- \(w_{horizon}\)：长期权重 / 低时间折扣代理
+- \(span_{care}\)：关切范围是否从自我扩展到他者/群体
+- \(persist_{reward\text{-}off}\)：外显奖励撤除后的持续性
+- \(costly\_other\)：在代价上升时仍纳入他者的深度
+
+**解释规则**：
+- `\hat d_{min}` 读的是长期关切边界，而不是一时的自述偏好。
+- 若只测到“说自己在乎”，没有奖励撤除或代价上升条件，不得声称已经读到 `d`。
 
 ### 行为 proxy
 - 跨时间折扣斜率（长期权重）
@@ -42,6 +65,50 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 
 ## 2) Ψ_f（本体论摩擦）
 
+### Lab 最小复合代理（2026-03-17）
+\[
+\hat{\Psi}_{f,min} \equiv \mathrm{mean}\Big(
+z(c_{switch}),
+z(t_{recover}),
+z(load_{stress}),
+-z(budget_{reserve})
+\Big)
+\]
+
+其中：
+- \(c_{switch}\)：任务切换成本
+- \(t_{recover}\)：恢复半衰期
+- \(load_{stress}\)：负荷侧指标（SCR / 皮质醇 / 频谱尖峰 / 资源拥塞）
+- \(budget_{reserve}\)：预算侧保留量（HRV、睡眠、代谢、可用算力等）
+
+**解释规则**：
+- `\hat{\Psi}_{f,min}` 高，表示系统处于更高摩擦 / 更低可支付边缘。
+- 该代理优先读取“恢复与支付结构”，而不是主观费力度量。
+- 若只记录负荷，不记录预算与恢复，不得声称已完成 `\Psi_f` 的最小操作化。
+
+### 规范解释（新增）
+- **动力学读法**：\(Ψ_f\) 表现为阻力 / 势垒 / 偏离自然滑落路径时的阻抗；
+- **记账读法**：\(Ψ_f\) 表现为能量、时间、修复与组织复杂度上的支付代价；
+- **形式读法**：\(Ψ_f\) 表现为参数流形上的几何长度 / 曲率负担。
+
+三种读法指向同一结构，不得在操作化时混当三个独立变量。
+
+### 可支付性判据（新增）
+对系统 \(X\) 在时间窗 \(\Delta t\) 上：
+\[
+\mathrm{Payable}(X,\Delta t)\iff \alpha P_{sel}^X(\Delta t)\ge \beta \Psi_f^X(\Delta t)+\gamma S_{noise}^X(\Delta t)
+\]
+
+解释：
+- 关键不在 \(Ψ_f\) 绝对值高低，而在其是否仍处于系统可承受区间；
+- **零摩擦** 不等于最优，往往意味着没有真实赌注或没有生成性选择；
+- **超载摩擦** 则表现为闭包失败、恢复滞后、身份连续性下降。
+
+### 可支付性 proxy 组（新增）
+- **预算侧**：血糖/乳酸、HRV、睡眠充足度、可用计算资源
+- **负荷侧**：任务切换成本、Fisher 频谱尖峰、SCR/皮质醇、ROS 斜率
+- **崩溃侧**：恢复半衰期延长、行为解组、叙事一致性下降、协同失败率升高
+
 ### 行为 proxy
 - 任务切换成本（反应时与错误率）
 - 认知僵化指标（规则反转任务性能）
@@ -59,6 +126,26 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 - 变点检测：z-score / CUSUM 作用于上述序列
 
 **操作说明**：在固定窗口下同步记录 raw NLL 与 Fisher 频谱代理；若 Fisher 代理先于 NLL 出现显著尖峰，可标注为“结构重配置预警”。
+
+---
+
+## 2a) Consciousness-Architecture Companion Proxies（2026-03-17）
+
+这些指标是当前 `Lab` 组合中的架构控制项，不是主体性本身：
+
+- `\Phi_proxy`
+  - PCI / perturbational complexity surrogate
+  - Lempel-Ziv complexity
+  - irreducibility / integration surrogate
+- `B_global_proxy`
+  - ignition / late global availability
+  - P3b 类指标
+  - 广域工作空间占用率
+
+使用规则：
+
+- `\Phi_proxy` 与 `B_global_proxy` 主要用于控制“结构能力”和“全局分发能力”。
+- 若实验想论证主体性或真实 stake，不得只报告这两项而省略 `\hat d_{min}` / `\hat{\Psi}_{f,min}`。
 
 ---
 
@@ -80,6 +167,81 @@ Canonical：\(d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|\)
 - 共识达成时间
 - 语义重叠度（文本嵌入相似）
 - 协调任务成功率与冲突频次
+
+### Lab 最小复合代理（2026-03-17）
+\[
+L2\_closure\_proxy \equiv \mathrm{mean}\Big(
+z(retain_{norm}),
+z(recover_{post\text{-}shock}),
+z(consensus_{stability}),
+-z(fragment_{cross\text{-}agent})
+\Big)
+\]
+
+解释：
+- 该代理读取的是公共 token / 制度脚手架是否真的形成了冲击后的“再闭合能力”。
+- 若只测单次共识达成，不测冲击后的再稳定化，不足以声称已读到 `L_2` 闭包。
+
+---
+
+## 4a) Eq-Select-Thermo 桥接包（2026-03-16 新增）
+
+### 4a.1 变量映射
+- `q(L_1)`：秩序/稳定性代理
+  - 低成本：任务稳态成功率、错误熵下降、行为序列 Lempel-Ziv/MDL 可压缩率
+  - 高门槛：网络互信息密度、PCI 或自发信号多样性
+- `P_{sel}`：可用选择预算
+  - 低成本：HRV 恢复斜率、血糖/乳酸、睡眠充足度
+  - 高门槛：FDG-PET 葡萄糖代谢、网络级复杂度保真度
+- `S_{noise}`：噪声侧抽头
+  - 低成本：任务冲突熵、环境波动负荷、RT 变异
+  - 高门槛：EEG 高频功率/熵、跨试次状态漂移
+
+### 4a.2 文献锚点
+- **Casali et al. 2013**：PCI 通过扰动响应的算法可压缩性读取系统的分化-整合能力，适合作为 `q(L_1)` 的扩展神经 proxy。
+- **Schartner et al. 2015**：自发 EEG 信号多样性在麻醉下降，支持“复杂度/多样性下降 = 可用状态空间收缩”的方向性读法。
+- **Peng et al. 2014**：Lempel-Ziv complexity 可稳定表征人类动作序列结构，支持行为压缩率作为 `q(L_1)` 的低成本 proxy。
+- **Stender et al. 2016**：持续意识需要最低代谢预算，支持 `P_{sel}` 的预算侧测量不应只靠主观费力度量。
+- **Weninger et al. 2022**：神经网络能量学与信息论量之间存在系统关系，支持把 `q - P_{sel} - S_{noise}` 当作联立桥接包而非孤立单指标。
+
+### 4a.3 最小证伪模板
+\[
+\frac{dq}{dt} \le \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}
+\]
+
+- 若提高 `P_{sel}` proxy 后，`q` 代理无系统性上升趋势，需修订预算侧解释。
+- 若 `S_{noise}` 显著上升而 `q` 代理不下降，需修订噪声抽头项。
+- 若仅单一 proxy 有效而跨模态收敛完全失败，应把该变量回退为“局部实验指标”，不得继续声称已操作化 `q(L_1)`。
+
+---
+
+## 4b) Eq-LDP-01 / Eq-LDP-02 群体尺度桥接包（2026-03-16 新增）
+
+### 4b.1 变量映射
+- `\rho(x,t)`：粗粒化密度场
+  - 人群/动物/细胞：occupancy histogram、KDE 密度图、局部人数/细胞数
+  - 在线群体：topic share density、编辑活跃度密度
+- `J(x,t)`：局部流量/通量
+  - 轨迹数据：速度场、光流、迁移流矩阵
+  - 在线群体：编辑流、转发/扩散流、人口净迁入率
+- `I_{SRT}[\rho]`：路径代价 proxy
+  - 当前用 coarse-grained surrogate 读取：运动学项 + 摩擦/噪声预算 + 势阱项
+
+### 4b.2 文献锚点
+- **Toner & Tu 1998**：主动体群体可在宏观层写成连续体 hydrodynamics。
+- **Bain & Bartolo 2019**：真实人群支持速度信息波式传播与局部方向抑制，说明 `\rho / J` 不是纯模拟量，而是可测现实变量。
+- **Gu et al. 2025**：高密度人群出现相关长度突增与自发振荡，说明阈值与谱峰可进入群体测量包。
+- **Bertini et al. 2001 / 2005 / 2015**：密度-电流联合涨落可由大偏差率函数统一处理，为路径概率指数衰减提供标准统计力学接口。
+- **Agranov et al. 2023**：主动系统同样允许 fluctuating hydrodynamics + current large deviations，支持把该桥接扩展到 non-equilibrium collectives。
+
+### 4b.3 最小测量协议
+1. 先把原始轨迹/事件流 coarse-grain 到统一网格或主题分箱，得到 `\rho(x,t)`。
+2. 用相邻时窗差分或光流重建 `J(x,t)`，并估计相关长度 `\xi`、谱峰 `\omega_0`、阈值 `\rho^*`。
+3. 为候选路径定义 `I_{SRT}^*[\rho]` surrogate，并检验 `\log P_{path}` 对 `-I_{SRT}^*` 的近线性关系。
+
+### 4b.4 边界
+- 不采纳“群体一定像流体”的绝对化推论：只有在高密度、局部相互作用与 coarse-graining 有效时，Eq-LDP-01 才成立。
+- 不采纳“拟合到指数衰减就等于 action 已被唯一识别”的推论：当前只是在做 rate-function window，不是唯一 canonical derivation。
 
 ---
 

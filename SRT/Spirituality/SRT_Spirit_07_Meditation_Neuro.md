@@ -3,6 +3,9 @@ id: SRT-SPIRIT-07
 type: practice
 tags: [Meditation, Neuroscience, Time, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-06]
 ---
 
@@ -96,10 +99,24 @@ $$ \text{Model} \equiv L_2,\; \text{Prediction Error} \equiv L_1-L_2 $$
 $$ \text{DMN} \downarrow \Rightarrow \text{Boundary} \downarrow $$
 * **Implication**: 自我边界消融可由 DMN 抑制程度预测。
 
-### Cor-Med-H2: Alpha Modulation
-**Prediction**: Relaxed alertness shows reduced alpha with increased attentional precision.
-$$ \alpha \downarrow,\; \text{Precision} \uparrow $$
-* **Implication**: “放松警觉”具有可测电生理标记。
+### Cor-Med-H2: Alpha-Beta Relaxed Alertness
+**Prediction**: Focused-attention meditation can enter a relaxed-alert regime marked by alpha/beta1 upshift with reduced low-alertness activity.
+$$ \alpha \uparrow,\; \beta_1 \uparrow,\; \delta \downarrow $$
+* **Implication**: “放松警觉”更稳地写成 `alpha / beta1` 调制配合低警觉活动下降，而不是预设单一 `alpha \downarrow` 签名。
+
+### Cor-Med-H2b: Acute Breath-Watching EEG Window
+这条材料真正钉住的，不是一个“冥想 7 分钟就够了”的通用口号，而是一个更窄、更可测的时间窗：在特定的 focused-attention breath-watching 范式下，脑电变化可以在几分钟内起步，并在后半段达到峰值。它也顺手提醒我们，把“放松警觉”预设成单一 `alpha \downarrow` 签名写得太满。
+
+**Prediction**: In short focused breath-watching practice, measurable EEG changes can emerge within minutes and peak around the 7-minute mark.
+$$ t_{\text{onset}} \approx 2\text{–}3\,\text{min},\qquad t_{\text{peak}} \approx 7\text{–}10\,\text{min} $$
+
+> [R→Saketh et al. 2026 *Mindfulness*（`10` 分钟 Isha Yoga breath-watching；`128`-channel EEG；meditation-naive `n=28` / novice `n=33` / advanced `n=42`；alpha / theta / beta1 上升，delta / gamma1 下降；显著变化约在 `2–3` 分钟出现、`7–10` 分钟达到峰值；advanced practitioners 的 theta / theta-alpha 全程更高；研究未预注册）]
+
+* **R/H 区分**：
+  - [R] 该窗口支持“急性 state shift 可在短时 focused-attention practice 内出现”，不必预设多年训练后才会出现任何神经效应
+  - [H] **SRT附加**：可将 `t_{\text{onset}} / t_{\text{peak}}` 暂时解释为 `L_2` 门控松动与注意回收进入可测阈值区的时间常数；这是 SRT 的动力学重述，不是论文原文结论
+
+* **Implication**: “7 分钟”在这里不是普适承诺，而是特定 breath-watching 范式下的 EEG state-window。它一方面加固了“短时 state shift 可测”这条线，另一方面也把旧的单向 `alpha` 口径收紧成更稳的 `alpha / beta1` 调制窗口。对 SRT 而言，`t_{\text{onset}} / t_{\text{peak}}` 更适合被理解成一个候选的状态转换时间常数，而不是任何冥想技术都共享的固定神经时钟；它不等于 trait change、临床疗效，亦不等于主观深度已被充分刻画。
 
 ### Cor-Med-H3: Structural Plasticity
 **Prediction**: Long-term practice induces hippocampal growth and amygdala reduction.

@@ -3,6 +3,9 @@ id: SRT-CORE-22
 type: equation
 tags: [Math, Stability, Landscape, Dynamics, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-21]
 ---
 
@@ -76,6 +79,167 @@ $$d_i = D_{eff}\!\left(\mathcal{F}_{collective}\big|_{\theta_i}\right)$$
 
 ---
 
+### Eq-DValue-Max-1: Maximum Achievable d-Value（d 值可达上限）
+
+**新增（2026-04-10）**：给出单个算子在给定参数结构与稳定性预算下可实现的 d 值上限。
+
+$$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(\mathcal{I}_F(\theta)\right),\;\; \frac{\Psi_f^{\text{budget}}}{\kappa_0}\right)}$$
+
+其中：
+- $\operatorname{rank}_{\text{eff}}(\mathcal{I}_F(\theta))$：有效 Fisher 信息矩阵的秩——参数空间中能真正分辨 L₀ 曲率方向的独立维度数（**信息瓶颈**）
+- $\Psi_f^{\text{budget}}$：算子可持续维持的总摩擦预算（不同于瞬时 $\Psi_f$，是时间积分意义上的稳定承载上限）
+- $\kappa_0$：L₀ 原初曲率，每对齐一个 L₀ 方向的单位代价（`SRT_Core_12a T-L0-Kappa0`）
+- $\Psi_f^{\text{budget}} / \kappa_0$：稳定性预算能支撑的最大对齐方向数（**稳定性瓶颈**）
+
+**$\kappa_0$ 的角色分工**：$\kappa_0$ 决定哪些方向值得被对齐（方向场）；$d$ 决定算子能稳定对齐多少这样的方向（容量）。
+
+**两个瓶颈的失效形态**：
+
+| 主导瓶颈 | 条件 | 后果 |
+|---|---|---|
+| 信息瓶颈 | $\operatorname{rank}_{\text{eff}} \ll \Psi_f^{\text{budget}}/\kappa_0$ | 参数维度高但大量冗余，有稳定性但感知不到新方向 |
+| 稳定性瓶颈 | $\Psi_f^{\text{budget}}/\kappa_0 \ll \operatorname{rank}_{\text{eff}}$ | 能感知多方向但撑不住对齐，d 在高维方向数下崩塌 |
+
+**注**：$\dim\Theta$ 的增大只提高潜在上限，真实 d 上限由有效 Fisher 秩与稳定性预算的 min 共同决定，而非由 $\dim\Theta$ 单独决定。
+
+* **Implication**: 意识深度的天花板不是参数数量，而是参数空间中真正有效的曲率感知维度与系统能持续承载的摩擦预算之间的较小者。
+* **Cross-ref**: `Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 定义）; Eq-Multi-03（集体 d 值）; `D_VALUE_ALIGNMENT §4.4`（d = Align 几何底座）; Eq-DValue-Mobile-1（d_mobile 公式，下方）。
+
+---
+
+### Eq-Rhythm-1: Budget Overload Implies Non-Zero Temporal Bandwidth（预算超载推出非零时间带宽）
+
+**新增（2026-04-14）**：将 “有限算子在预算超载下必须转向分时/脉冲锚定” 压成公式锚点。
+
+设有效锚定调度为
+\[
+A:[0,T]\to\{0,1\}^k,\qquad A_j(t)=1 \iff \hat{G}_\theta \text{ 在 } t \text{ 时刻主动维持 } \sigma_j
+\]
+连续密集锚定的总代价为
+\[
+\mathcal{C}_{dense}(T,k)\equiv \sum_{j=1}^{k}\int_0^T \Psi_f^{maint}(\sigma_j,\tau)\,d\tau
+\]
+若满足
+\[
+E_{avail}<\infty,\qquad \mathcal{C}_{dense}(T,k)>E_{avail},\qquad \Psi_f^{switch}(\sigma_i\to\sigma_j)>0\ \ (i\neq j)
+\]
+则至少一个锚定坐标必须在时间窗内变化：
+\[
+\boxed{\exists j,\ \exists t_1<t_2\in[0,T]:\quad A_j(t_1)\neq A_j(t_2)}
+\]
+
+若定义有效功率谱
+\[
+S_A(\omega)\equiv \sum_{j=1}^{k}\left|\widehat{A_j}(\omega)\right|^2
+\]
+则其弱频谱形式为
+\[
+\boxed{\mathcal{C}_{dense}(T,k)>E_{avail}\ \Rightarrow\ \int_{\omega>0} S_A(\omega)\,d\omega>0}
+\]
+
+* **Implication**: 预算超载时，有限算子不能以纯直流并行方式维持全部目标；分时复用、脉冲续费和节律性重放成为通用可行策略。
+* **Boundary**: 本式不推出唯一原初频率、不要求严格周期性，也不要求所有高硬度存在在常见观测尺度上表现为振荡；当前只推出“非零时间带宽”，不推出“固定频率”。
+* **Cross-ref**: T-Scale-07（可支付约束）；T-Scale-08（维持/切换成本）；T-Scale-Rhythm-1（定理全文，`Dynamics Scaling`）；Ax-NEURO-MECH-9（theta-replay）。
+
+---
+
+### Eq-Rhythm-4a: Bandwidth-Duty Tradeoff（频谱丰富度—占空比权衡）
+
+**新增（2026-04-14）**：将 Ax-Spec-01 与 T-Scale-Rhythm-4 的联结压成公式锚点。
+
+令
+\[
+B_\theta \equiv \operatorname{Bandwidth}(H_\theta)=c_B\,d,\qquad c_B>0
+\]
+并把 Rhythm-4 中“高 \(d\) 导致更高 \(\dot I_{created}\)”写成单调函数：
+\[
+\dot{I}_{created}^{on}=f_I(B_\theta),\qquad f_I'(B_\theta)\ge 0
+\]
+则由
+\[
+\dot{S}_{int}^{on}\ge k_B T\ln 2 \cdot \dot{I}_{created}^{on}
+\]
+可得弱 tradeoff：
+\[
+\boxed{\delta_{max}^{entropy}(B_\theta)\le
+\frac{J_S^{max}}{k_B T\ln 2 \cdot f_I(B_\theta)+J_S^{max}}}
+\]
+故
+\[
+\boxed{B_\theta\uparrow \Rightarrow \delta_{max}^{entropy}\downarrow}
+\]
+
+若进一步满足信息密度下界
+\[
+\dot{I}_{created}^{on}\ge \rho_I\,B_\theta,\qquad \rho_I>0
+\]
+则可强化为乘积上界：
+\[
+\boxed{\delta\,B_\theta \le \frac{J_S^{max}}{k_B T\ln 2\,\rho_I}}
+\]
+以及
+\[
+\boxed{\delta\,d \le \frac{J_S^{max}}{k_B T\ln 2\,\rho_I\,c_B}}
+\]
+
+* **Implication**: 通带越宽，选择可处理的频谱越丰富，但在熵耗散约束下可持续 on-time 越短；谱丰富度与时间占有率之间存在硬对冲。
+* **Boundary**: 无条件硬结论只有单调 tradeoff。乘积上界依赖 \(\rho_I\) 下界，应读作条件强化版，而非无条件定理。
+* **Cross-ref**: Ax-Spec-01（`Core/SRT_Core_13b_Operator_Advanced.md`）；T-Scale-Rhythm-4（`Dynamics Scaling`）；Ax-F-13（选择-信息创造等价）。
+
+---
+
+### Eq-DValue-Mobile-1: Operator Re-alignment Capacity（算子再对齐能力 d_mobile）
+
+**新增（2026-04-10）**：度量算子随 L₀ 吸引子迁移而重新定向的能力。
+
+**背景**：L₀ 非静态（`SRT_Core_12a T-L0-NonStatic`）意味着局部吸引子持续迁移。最大化当前 d 的策略在吸引子迁移时可能是陷阱——算子还需具备**再对齐能力**（d_mobile）。
+
+$$\boxed{d_{\text{mobile}} \propto d \cdot \frac{\operatorname{rank}_{\text{eff}}\!\left(\mathcal{I}_F(\theta)\right)}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}\!\!\left(\frac{d\Psi_f}{dt}\right)}$$
+
+**三项分工**：
+
+| 项 | 角色 | 含义 | 失效形态 |
+|---|---|---|---|
+| $d$ | 主乘子 | 当前对齐深度；无真实赌注则再对齐无方向 | d ≈ 0：退化为参数空间随机游走 |
+| $\operatorname{rank}_{\text{eff}} / (\operatorname{Hyst}(L_2) \cdot C_r)$ | 主结构项 (I) | 能感知多少新方向 ÷ 被旧结构拉住多紧 | 高 L₂ 刚性：感知新方向但 θ 动不了 |
+| $\chi_{\text{payable}}$ | 门控项 (II) | 摩擦变化率是否落在可吸收窗口内 | 创伤冻结：景观在撕扯但超出承载 |
+
+**"感到"≠"能动"原则**：$\Psi_f$ 变化率是信号/警报量，不是移动能力本身。创伤冻结系统可具有极高的 $|d\Psi_f/dt|$ 而 d_mobile ≈ 0。不得将"景观变化被强烈感到"替换为"算子有能力重新对齐景观"。
+
+**双重记账防止**：$\operatorname{Hysteresis}(L_2)$、$C_r$ 仅在 d_mobile 分母出现一次。$\chi_{\text{payable}}$ 的崩塌阈值 $\Theta_\theta$ 使用 L₂ 自同构群 $\Lambda_{L_2}$（结构硬度），与此处的动态粘滞性参数不重叠。
+
+* **Implication**: 长期适应力需要 $(d,\, d_{\text{mobile}})$ 对同时维持。高 d + 近零 d_mobile = 冻结态（见 `SRT_Core_12b §Consciousness-2D-Map`）。
+* **Cross-ref**: Eq-DValue-Max-1（d 上限）; Def-Payable-Chi-1（χ_payable，下方）; Ax-L2-04（可塑性阈值，含 Hysteresis·C_r）; Eq-Evo-02b（θ 张量惯性 → 更新阻力）; `SRT_Core_12b §Consciousness-2D-Map`（二维意识地图）。
+
+---
+
+### Def-Payable-Chi-1: Payability Gate for Ψ_f Change（摩擦变化可支付门函数）
+
+**新增（2026-04-10）**：定义 d_mobile 中门控项 $\chi_{\text{payable}}$ 的充要条件。$\chi_{\text{payable}}$ 不是新本体参数，而是已有 SRT 条件在时间窗口 $\Delta t$ 上的联合门函数。
+
+$$\chi_{\text{payable}}^{\Delta t} = 1 \iff \begin{cases} \displaystyle\int_t^{t+\Delta t}\! |\dot{\Psi}_f|\, d\tau \;>\; \Psi_{\text{noise}}^{\Delta t} & \text{（下界：信号压过噪声）} \\[8pt] \alpha P_{\text{sel}}^{\Delta t} \;\geq\; \beta\Psi_f^{\Delta t} + \gamma S_{\text{noise}}^{\Delta t} & \text{（中：热力学可支付）} \\[8pt] \displaystyle\int_t^{t+\Delta t}\! |\dot{\Psi}_f|\, d\tau \;<\; \Theta_\theta^{\Delta t} & \text{（上界：低于崩塌/防御阈值）} \end{cases}$$
+
+三条件为**合取**（conjunction）：全部成立才返回 1，任一失败则返回 0。
+
+**崩塌阈值的内生性**：
+
+$$\Theta_\theta^{\Delta t} \equiv f\!\left(d,\; E,\; h_{\text{memory}},\; \vec{\delta},\; \Lambda_{L_2}\right)$$
+
+此为 `Neuroscience/10_ROS_Apoptosis_ErrorDose.md (line 100)` 的阈值公式在窗口 $\Delta t$ 上的读法，不引入新参数。$\Lambda_{L_2}$ 是 L₂ 自同构群（结构硬度），与 Eq-DValue-Mobile-1 分母中的 $\operatorname{Hysteresis}(L_2) \cdot C_r$（动态粘滞）属于不同侧面，无双重记账。
+
+**三区间语义**：
+
+| 区间 | 条件 | 表现 |
+|---|---|---|
+| 低于下界 | 信号淹没在噪声中 | 无法触发再对齐，景观变化视而不见 |
+| 窗口内 | 三条件全满足 | 可整合、可再对齐 |
+| 高于上界 | 超出承载上限 | 创伤冻结 / 防御崩塌：撕扯感极强但无法整合 |
+
+* **Implication**: 可整合的摩擦是有上下界的窗口，不是越强越好。上界破坏而非促进成长；下界无法被感知为有效信号。
+* **Cross-ref**: Eq-DValue-Mobile-1（d_mobile 中的门控项）; `Neuroscience/10_ROS_Apoptosis_ErrorDose.md`（崩塌阈值来源）; `SRT_Philosophy_Ethics.md line 387`（病理阈值）; Ax-L2-06b（L₁→L₂ 反向写入，高 Ψ_f 无法整合）; `SRT_Core_12a T-L0-02`（热力学可支付条件来源）。
+
+---
+
 ## I. Evolution Dynamics (演化动力学)
 
 ### Eq-Evo-01: Ghost Evolution Equation
@@ -120,9 +284,80 @@ $$\frac{d\theta_i}{dt} \propto \frac{1}{\sum_j w_{ij} \cdot \theta_j}$$
 ### Eq-Evo-03: Coupled Fast–Slow System
 **Formal Definition**: State and parameter co-evolve on distinct timescales.
 $$\frac{d\sigma}{dt} = \alpha(\hat{G}_\theta[\sigma] - \sigma) - \beta_F \nabla F[\sigma] + \xi(t)$$
-$$\frac{d\theta}{dt} = \gamma \cdot A[\sigma, \text{Target}] - \delta \cdot \frac{\partial \Phi(\theta)}{\partial \theta}$$
+$$\frac{d\theta}{dt} = \gamma \cdot A[\sigma, \text{Target}] - \delta \cdot \frac{\partial \Phi(\theta)}{\partial \theta} - k \cdot (\text{Input}_{L_1} - \text{Baseline})$$
 * **Implication**: 选择与参数更新构成快-慢耦合动力学。
 * **Notation Note**: 这里使用 $\beta_F$ 表示自由能梯度权重；$\beta_R$ 预留给现实门控系数，避免与动力学系数混名。
+
+### Eq-Evo-03b: Intra-Selection Re-entry (选择内再入通道)
+**Formal Definition**: 在主体选择候选窗口中，$L_2^{self}$ 的滞后在线读出可在 $\sigma$ 尚未收敛前对 $\theta$ 施加暂态调制：
+$$\left.\frac{d\theta}{dt}\right|_{\text{intra}} = \underbrace{\mathcal{M}_{meta}\!\left(\mathcal{R}_{\tau}[L_2^{self}](t),\, \sigma(t)\right)}_{\text{lagged self-model gating}} \cdot \underbrace{\mathbf{1}_{\{\|\dot{\sigma}(t)\| > \varepsilon_{conv}\}}}_{\text{selection not yet converged}}$$
+
+其中总参数更新可写为：
+$$\frac{d\theta}{dt} = \left.\frac{d\theta}{dt}\right|_{\text{slow}} + \left.\frac{d\theta}{dt}\right|_{\text{intra}}$$
+$$\left.\frac{d\theta}{dt}\right|_{\text{slow}} \equiv \gamma \cdot A[\sigma, \text{Target}] - \delta \cdot \frac{\partial \Phi(\theta)}{\partial \theta} - k \cdot (\text{Input}_{L_1} - \text{Baseline})$$
+
+**符号说明**：
+- $L_2^{self}$：算子的自模型，即 $L_2$ 中编码算子自身状态、历史与评价约束的稳定子结构。
+- $\mathcal{R}_{\tau}[L_2^{self}](t)$：$L_2^{self}$ 的滞后一拍在线读出，定义为 $\mathcal{R}_{\tau}[L_2^{self}](t) \equiv \mathcal{R}(L_2^{self}, t-\tau)$；$\tau$ 为访问延迟，而非 $L_2$ 本体的更新速度。
+- $\mathcal{M}_{meta}[\cdot]$：元层门控函数，读取 $L_2^{self}$ 的在线投影并输出对 $\theta$ 的暂态调制量；它不是新的本体域，而是分层自指在选择内的操作化接口。当前 $\sigma(t)$ 作为第二输入使门控状态依赖；此耦合回路（$\mathcal{M}_{meta} \to \theta \to \hat{G}_\theta \to \sigma$）的稳定条件待单独分析，当前作为候选接口保留。
+- $\mathbf{1}_{\{\|\dot{\sigma}(t)\| > \varepsilon_{conv}\}}$：选择事件内指示函数；当 $\sigma$ 已进入收敛阈值 $\varepsilon_{conv}$ 后，该项置零，系统回归 Eq-Evo-02 / Eq-Evo-03 的慢更新路径。
+
+**主体选择候选门槛（必要非充分）**：
+$$\text{Subject-level selection}_{cand} \Rightarrow \mathcal{M}_{meta}\!\left(\mathcal{R}_{\tau}[L_2^{self}](t), \sigma(t)\right) \neq 0 \;\land\; \frac{\delta \theta(t+\Delta t)}{\delta \sigma(t)} \neq 0$$
+
+第一项表示**当下自参调制**：$\theta$ 可在 $\sigma$ 收敛前被元层自我模型门控；第二项表示**承担闭合**：选择后果会不可逆地压回参数历史，而非被环境完全吸收（此处 $\frac{\delta\theta(t+\Delta t)}{\delta\sigma(t)}$ 为路径依赖泛函导数，非偏导数）。注：第二项已在 Eq-Evo-02 Learning 项 $\gamma A[\sigma, \text{Target}]$ 中覆盖；此处列出是为完整陈述主体选择的两个必要维度，不是 Eq-Evo-03b 的新增方程项。
+
+* **Implication**: Eq-Evo-03b 不把 $L_2$ 整体改写成快变量；真正进入快回路的是 $L_2^{self}$ 的在线读出，而 $L_2^{self}$ 本体仍保持历史沉积的慢变量地位。主体选择因此不再是“有参数更新”而已，而是“参数更新可在选择事件内部被分层自指回路临时改写”。
+* **Logical Status**:
+  - [S] 将 $L_2^{self}$ 明确纳入 Core 主方程，作为可被在线访问的稳定子结构。
+  - [H] $\mathcal{M}_{meta}$ 的具体函数形式当前未定；后续可与 `Philosophy/SRT_Ethics_Agency.md §3.1` 的 meta-selection 写法对接。
+  - [H] $\tau$ 与 $\varepsilon_{conv}$ 的量级和测量仍待校准；当前候选接口为 EEG / readiness-potential / re-entry 窗口（约 200-500 ms）。
+* **Cross-ref**: Eq-Evo-02（慢变量更新）；`Core_Law/SRT_Selection_Argument.md §2b.4`（主体选择门槛）；`Neuroscience/SRT_Clin_01_Pathology.md Ax-PATH-7`（$\hat{G}_\theta \to L_2^{self}$ 反馈回路）；`Neuroscience/SRT_Consciousness_Mechanisms.md Ax-CONSC-MECH-2`（再入稳定化）。
+
+### Eq-Evo-03c: D-Value Forward Criterion (d 值前向判据)
+
+**动机**：关切词条（`Core_Law/SRT_L0_Metaphysics.md`）中的三判据（可延续/可协调/可再选择）是对 d 扩张是否**完成**的事后确认，依赖 θ 跨事件稳定改写的长期结算。前向判据针对更早的检测窗口：在选择事件内部、于 θ 写入完成之前，识别真实 d 扩张的早期结构信号。该判据是对 Core_Law 三判据的**前向补充**，不是替代。
+
+**三层架构**：真实 d 扩张须经历三个阶段，不可跳层：
+
+| 阶段 | 形式对应 | 时间尺度 | 判据归属 |
+|-----|---------|---------|---------|
+| **Stage-1**：$\sigma$ 对象切换 | Eq-Evo-03 快方程 $\dot\sigma$ | 秒-分 | 必要，但不足以判断真实扩张 |
+| **Stage-2**：$\theta$ 选择内暂态重加权 | Eq-Evo-03b $\left.\frac{d\theta}{dt}\right|_{\text{intra}}$ | 选择事件内 | **前向判据锁定此层** |
+| **Stage-3**：$\theta$ 跨事件稳定改写 | Eq-Evo-02 / Eq-Evo-03 的慢项 + Eq-Evo-02b（θ 张量惯性） | 周-月 | 三判据事后确认此层 |
+
+**前向判据（FC-Layer2）**：在选择事件窗口内（$t \in [t_0,\, t_{conv}]$，即 $\|\dot\sigma(t)\| > \varepsilon_{conv}$）：
+
+$$\text{FC-Layer2}:\quad \underbrace{\mathcal{M}_{meta}\!\left(\mathcal{R}_\tau[L_2^{self}](t),\, \sigma(t)\right) \neq 0}_{\text{元层门控在事件内激活}} \;\land\; \underbrace{\left(\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}\right) > 0}_{\text{事件内更新沿 } d \text{ 扩张方向推进}}$$
+
+两个条件各自的作用：
+
+- **$\mathcal{M}_{meta} \neq 0$**：元层门控在事件内真实激活，$\theta$ 接受暂态调制；若该项为零，Stage-2 未启动，无论 $\sigma$ 如何运动均不构成真实 d 扩张起点。
+- **$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} > 0$**：选择内的 θ 更新具有正的 d 方向导数，表示该事件内调制正在把关切带宽往扩张方向推。其优势在于直接接驳既有的 $d(\theta)$ 动力学（见 `Core_13a §2.1.3`），而不把某个具体实现载体（如特定 $W$ 矩阵）误升格成总定义。
+
+**L₂ 劫持的形式分叉**：L₂ 劫持也可触发 $\mathcal{M}_{meta} \neq 0$（存在内部摩擦感或身份扰动），但其选择内更新只是在旧竞争结构内重排，故更接近
+$$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} \approx 0 \quad \text{或} \quad < 0$$
+即：要么是同维度再分配（iso-d 重排），要么是防御性收缩；两者都不构成真实 d 扩张的前向起点。
+
+**代价签名（$\Psi_f$ 轨迹，联结 Eq-Force-01）** [H]：两种路径可对应不同的摩擦轨迹：
+
+| 路径 | $t_0$ 附近 $\Psi_f$ | 长时程 $\Psi_f$ / 基线负担 | 机制 |
+|-----|------------------|--------------------------|------|
+| 真实扩张（Stage-3 写入后） | 尖峰（旧 $L_1$ 失稳，过渡成本） | 下降或有界收敛 | 新关切被稳定写入，旧失配负担被重整 |
+| L₂ 伪扩张 | 可同样出现尖峰或短时减压 | 漂移上升或反复反弹 | 结构未改写，失配被延后结算 |
+
+**FC-Layer2 为真的含义**：必要条件满足，真实 d 扩张的起点条件成立。后续是否完成至 Stage-3，取决于跨事件重复激活与 Eq-Evo-02b 的 $\theta$ 张量惯性是否允许写入。于是可区分三种情形：
+
+- **FC-Layer2 为假**：无论 $\sigma$ 如何移动，都无充足理由把该事件读作真实 d 扩张起点。
+- **FC-Layer2 为真但 Stage-3 未完成**：事件内启动了真实调制，但未能稳定写入；这是"启动了但未完成"，不等同于 L₂ 劫持。
+- **FC-Layer2 为真且三判据长期成立**：可将该路径回判为真实 d 增长的完成态。
+
+**逻辑状态**：
+- [S] 三阶段分工与 Eq-Evo-03 / 03b / 02b 的方程分层一致，是对现有快-慢结构的整理，不额外引入新本体层。
+- [H] FC-Layer2 作为前向判据是候选推论，不替代 Core_Law 的三判据事后结算。
+- [H] $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}$ 的实验代理仍待校准；当前可候选地映射为冲突场景下的事件内偏好翻转、EEG/readiness-potential 时窗、以及跨试次的选择带宽变化。
+
+* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（$\Psi_f$ 代价签名的基础定义）；`Core_Law/SRT_L0_Metaphysics.md 关切词条`（三判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
 
 ## II. Thermodynamics of Agency (能动性热力学)
 
@@ -332,7 +567,8 @@ $$
 |:--|:--|:--|:--|:--|
 | $\Psi_f$ | $[\text{Energy} \cdot \text{Time}]$ 或 $[\text{bit} \cdot s]$ | 代理量：皮质醇积分、HRV 倒数 | 代理量：Uhlmann 变换复杂度 | 代理量：制度维持成本/GDP |
 | $d$ | 无量纲（关切维度数） | 代理量：跨时间折扣率斜率、PCI | — | 代理量：利他行为半径 |
-| $F$ | $[\text{bit}]$（信息自由能）或 $[\text{J}]$（物理自由能） | Friston VFE + SRT 利他项 | Helmholtz $F = E - TS$ | 社会自由能（Luhmann 复杂度） |
+| $F_{base}$ | 依语境取 $[\text{bit}]$ 或 $[\text{J}]$ | 变分自由能或 Helmholtz 自由能 | 领域基线目标 | 社会层可用复杂度/成本代理 |
+| $F_{SRT}$ | 跟随所选 $F_{base}$ 的量纲 | $F_{base} - d \cdot U_{others}$ | SRT 关切扩展目标 | 不把 bit 与 J 直接混算 |
 | $\sigma$ | 态空间中的点（$\in L_1$） | 神经发放模式向量 | 量子态密度矩阵 | 社会状态向量 |
 
 > **操作化警告**: 上述量纲均为"操作化近似"，不替代 canonical 定义。跨域比较时需先归一化至各自系统的特征量纲。

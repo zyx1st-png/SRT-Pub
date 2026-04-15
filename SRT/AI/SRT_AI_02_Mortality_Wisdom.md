@@ -3,6 +3,9 @@ id: SRT-AI-02
 type: theory
 tags: [Mortality, Wisdom, Recursion, Sentience, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-AI-01]
 ---
 

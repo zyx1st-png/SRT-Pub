@@ -3,6 +3,9 @@ id: SRT-EXP-CORE
 type: experiment
 tags: [Hypothesis, Falsification, Design, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L2
+epistemic_layer: lab
+claim_mode: canonical
 dependency: [SRT-CORE-21, SRT-CORE-22]
 ---
 
@@ -48,6 +51,30 @@ P(\text{Over-interpret}) = \sigma\!\left(\alpha \cdot d_{obs} + \beta \cdot H(L_
 **Formal Definition**: Information erasure carries energetic mass equivalence.
 $$\Delta E \ge k_B T \ln 2 \quad (\text{Landauer–Vopson})$$
 * **Implication**: 信息具有物理性，L1 不是纯语义层。
+
+### T-Exp-e_pg-01: Residual Asymmetry Detectability Criterion（`e_pg` 残差不对称可检测判据）
+**Formal Definition**: `e_pg` 不是像质量、电荷、自旋那样的直接可读本征量。若它在物理实验中可被检测，其允许的经验签名只能是：在给定哈密顿量、边界条件、仪器参数与标准退相干模型之后，单粒子结果分布中仍保留一个稳定的残差不对称项。
+
+$$P_{\text{obs}}(k)=P_{\text{QM}}(k\mid H,B,\theta_{\text{inst}})+\eta_{e_{pg}}\,b_k+\epsilon_k,\qquad \sum_k b_k=0$$
+
+其中：
+- $P_{\text{QM}}$：标准量子模型在已知哈密顿量 $H$、边界条件 $B$ 与仪器参数 $\theta_{\text{inst}}$ 下的预测分布；
+- $\eta_{e_{pg}}$：`e_pg` 候选残差幅度（若为 0，则无额外偏置）；
+- $b_k$：满足零和约束的偏置模态；
+- $\epsilon_k$：已知噪声与统计涨落。
+
+定义残差：
+
+$$R_k \equiv P_{\text{obs}}(k)-P_{\text{QM}}(k\mid H,B,\theta_{\text{inst}})$$
+
+则 `e_pg` 的**可检测性必要条件**是：
+
+$$\|R\|_1 > \varepsilon_{\text{res}} \quad \land \quad \min_{C\in\mathcal{C}} \|R^{(C)}\|_1 > \varepsilon_{\text{res}}$$
+
+其中 $\mathcal{C}$ 为对称控制族（如左右翻转、探测器对调、外场反向、盲分析复跑）。也就是说，只有在主要对称控制下残差仍不归零，才允许把它保留为 `e_pg` 候选信号。
+
+* **Implication（中文）**：SRT 不主张“直接测到电子的内侧性”。更稳的实验说法是：若 `e_pg` 存在，它只能以**对称单粒子统计中的不可约残差不对称**出现，而不是以新的粒子标签或宏观心灵效应出现。
+* **Falsification（证伪条件）**：若残差在纳入标准哈密顿量修正、退相干漂移、探测器效率不平衡、源稳定性漂移后消失；或在左右翻转/探测器对调/盲分析后衰减到噪声底；或跨实验室无法复现，则 `e_pg` 的可检测性主张不成立。
 
 ## II. Biological Signatures (生物学签名)
 
@@ -107,6 +134,27 @@ $$\mu_{sem} = \frac{\sum w_i \cdot \mathrm{Freq}(\text{必须/不能/应该})}{\
 信息具有质量。根据Vopson的质量-能量-信息等效原理，被擦除的信息位应产生额外能量释放。
 $$ m_{bit} = k_BT \ln(2)/c^2 \approx 3.19 \times 10^{-38} \text{kg} $$
 
+# 2.1a H-e_pg-01：对称单电子装置中的残差不对称探针
+
+`e_pg` 不应被操作化为“电子已经具有弱意识”，也不应被当成新的标准模型粒子属性。更稳的实验化路径，是把它压成一个**残差判据**：在单电子、对称、预注册的干涉或分流装置中，若标准量子模型与已知系统误差都扣除后仍出现稳定偏置，才允许将其保留为 `e_pg` 候选信号。
+
+推荐最小装置：
+- 平衡 beam splitter / Mach-Zehnder / 对称双路径单电子装置
+- 单粒子工作区（避免多体耦合与拥塞效应）
+- 预注册 nuisance model：路径长度微差、相位漂移、探测器效率差、外场不均匀、源稳定性衰减
+- 对称控制族：左右翻转、探测器对调、外场反向、样本盲分析、跨实验室复跑
+
+最小预测写成：
+
+$$\overline{R}_k = \overline{P_{\text{obs}}(k)-P_{\text{QM}}(k\mid H,B,\theta_{\text{inst}})} \neq 0$$
+
+且该残差在主要对称控制下不回落至噪声底。
+
+边界说明：
+- 若异常可由未建模的仪器偏差吸收，不得升级为 `e_pg`。
+- 若残差只在单一实验室、单一分析管线中出现，不得升级为 `e_pg`。
+- 若结果成立，它也只支持“电子尺度最小方向偏置存在候选残差”，**不**支持“电子已有主观体验”。
+
 # 2.2 H2：量子坍缩的上下文偏置
 
 活细胞内的量子测量统计应与惰性系统不同。
@@ -141,11 +189,15 @@ $$ μ_{sem} = \frac{\sum w_i · \text{Freq}(必须/不能/应该)}{\sum w_j · \
    $$\Delta E \ge k_B T \ln 2$$
    含义：信息擦除携带兰道尔下界能量代价，确立 $L_1$ 的物理实在性——信息不是纯语义抽象，而是具有质量-能量等效性的本体论实体。
 
-3. **Normalization-d Correlation (Ax-Exp-05)**:
+3. **Residual Asymmetry Detectability Criterion (T-Exp-e_pg-01)**:
+   $$P_{\text{obs}}(k)=P_{\text{QM}}(k\mid H,B,\theta_{\text{inst}})+\eta_{e_{pg}}\,b_k+\epsilon_k$$
+   含义：`e_pg` 若可检，只能作为对称单粒子统计中的额外残差项出现，而不是作为可直接读取的电子“内部属性”。只有在标准量子模型、退相干与仪器偏差都扣除后仍保留稳定残差时，`e_pg` 才获得实验候选地位。
+
+4. **Normalization-d Correlation (Ax-Exp-05)**:
    $$\mathrm{Corr}(\theta_{norm}, d) > 0$$
    含义：除法归一化参数 $\theta_{norm}$ 与 d-value 正相关，提供从神经计算参数到 SRT 选择开放性的可测代理桥接。
 
-4. **Modal Mechanics Probe (Ax-Exp-06)**:
+5. **Modal Mechanics Probe (Ax-Exp-06)**:
    $$\mu_{sem} = \frac{\sum w_i \cdot \mathrm{Freq}(\text{必须/不能/应该})}{\sum w_j \cdot \mathrm{Freq}(\text{可以/可能/想要})}$$
    含义：语言中义务型情态词与可能型情态词的加权频率比 $\mu_{sem}$，作为本体论摩擦 $\Psi_f$ 水平的语言学统计代理。
 
@@ -154,6 +206,8 @@ $$ μ_{sem} = \frac{\sum w_i · \text{Freq}(必须/不能/应该)}{\sum w_j · \
 本文档的实验假设从不同尺度探测 SRT 核心算子 $\hat{G}_\theta$、摩擦 $\Psi_f$ 与 d-value 的经验签名：
 
 - **$\hat{G}_\theta$ 的可检测性机制**：Ax-Exp-01 将检测焦点从"大脑是否违反物理定律"转移到"具身变量（内感受、代谢状态、环境交互）是否提供超出 $L_2$ 脑状态的预测信息"。若 $P(\text{Behavior}|\text{Brain}_{L_2}) = 1$，则 $\hat{G}_\theta$ 概念冗余，SRT 被证伪。T-Observer-Bias 进一步约束实验者自身的 $d_{obs}$ 偏置，防止过度解读噪声为意义信号。
+
+- **物理层的新增残差窗口**：T-Exp-e_pg-01 把 `e_pg` 的可检测性收紧为“残差不对称判据”。这一步不要求引入新粒子属性，也不要求修改标准量子力学；它只要求：若在对称单粒子装置中，标准模型与已知系统误差之后仍存在稳定残差，则 SRT 获得一个可重复检验的最小物理接口。
 
 - **$\Psi_f$ 的多模态代理**：本体论摩擦 $\Psi_f$ 通过三条独立通道获得可测代理：(a) 物理层的兰道尔能量下界（Ax-Exp-02），确认信息操作具有不可约耗散代价；(b) 生物层的量子坍缩偏置（Ax-Exp-03）与生物电模式（Ax-Exp-04），检测 $\theta$ 参数对物理基底的选择偏置效应；(c) 语言层的情态力学探针（Ax-Exp-06），将 $\Psi_f$ 水平映射为高义务/低自由度的情态分布 $\mu_{sem}$。
 

@@ -3,6 +3,9 @@ id: SRT-SYMBOL-TABLE
 type: definition
 tags: [Symbols, Registry, Canonical]
 status: axiomatic_hybrid_v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 ---
 
@@ -17,8 +20,8 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 | **L₂** | `L_2` | Convergence Domain | Stable consensus constraints from repeated/overlapping selections. | Topological manifold | Core, universal |
 | **Ĝ** | `\hat{G}` | Ghost Operator | Selection operator mapping $L_0 \to L_1$. | Operator | Never use plain `G` for this |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
-| **d** | `d` | d-value (Depth of Care) | Recursive concern depth and counterfactual handling range. | Scalar ($0 \to \infty$) | Core, universal |
-| **Ψf** | `\Psi_f` | Ontological Friction | Cost of stabilizing selected reality against latent entropy pressure. | Energy/bit | Core, universal |
+| **d** | `d` | d-value (Depth of Care) | Recursive concern depth and counterfactual handling range. | Scalar ($0 \to \infty$) | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md` |
+| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md` |
 | **Ω** | `\Omega` | Ontological Consistency | Internal coherence of an $L_1/L_2$ structure. | Probability (0-1) | Canonical `\Omega` in Core_Law context |
 | **Ω_mis** | `\Omega_{\text{mis}}` | Ontological Mismatch Index | Distance between inherited $\theta$ and current-environment optimal $\theta$. | Scalar | Legacy docs may call this `Ω` |
 | **ω_sub** | `\omega_{sub}` | Subjective Frequency | Refresh rate of selection cycles. | Hz | Neuro/phenomenology |
@@ -28,6 +31,8 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 | **R_fidelity** | `R_{\text{fidelity}}` | Reality Fidelity | Rendering fidelity of $L_1$ under metabolic constraints. | Scalar (0-1) | Neuro/clinical |
 | **I_total** | `I_{\text{total}}` | Total Information Flux | Sum of sensory-channel information throughput. | Bits/s | Neuro |
 | **F_semantic** | `F_{\text{semantic}}` | Semantic Gravity | Attractor pull of $L_2$ semantic nodes on $\hat{G}$. | Vector | AI/philosophy |
+| **F_base** | `F_{\text{base}}` | Base Free-Energy Objective | Domain-local baseline objective; choose Helmholtz or variational free energy by context. | Domain dependent ($J$ or nat/bit) | Never force thermo and variational forms into one unit |
+| **F_SRT** | `F_{\text{SRT}}` | SRT Care-Extended Objective | $F_{\text{base}} - d \cdot U_{\text{others}}$; baseline objective plus care term. | Same unit as chosen $F_{\text{base}}$ | Use when the d-dependent care correction is explicit |
 | **Φ_IIT** | `\Phi` | Integrated Information (IIT Context) | Integration measure in IIT-specific discussions. | Scalar | Use only when explicitly IIT |
 | **μ** | `\mu` | Reality Viscosity | Inertial dependence on priors/historical trajectories. | Scalar | Core/AI |
 | **D_max** | `D_{\text{max}}` | Consciousness Diameter | Max physical span of coherent operator integration. | Length (m) | Neuro hypothesis |
@@ -45,22 +50,46 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 | **C_int** | `C_{\text{int}}` | Integration Capacity | Capacity to integrate altered-state content. | Scalar | Clinical/spirituality |
 | **T_immune** | `T_{\text{immune}}` | Immune Threshold | Immune-mediated sensory gating threshold. | Threshold | Neuroimmune |
 | **M** | `M` | Modality Set | Weighted sensory modality vector. | Vector | Neuro |
+| **κ₀** | `\kappa_0` | Primordial Curvature | Irreducible minimum curvature of L₀; κ₀ > 0 is a structural prerequisite (not historically generated). Provides directionality bias for all selection operators. Ψ_f^min = f(κ₀). | Scalar (curvature) | Core; canonical source `Core/SRT_Core_12a T-L0-Kappa0`; ontological status `Philosophy/SRT_L0_Ontological_Status.md` |
+| **κ(t)** | `\kappa(t)` | Dynamic L₀ Curvature | Time-evolving L₀ curvature: κ(t) = κ₀ + ∫F[Ĝ_θ(τ), κ(τ)]dτ. L₀ is non-static; operators and curvature co-evolve. | Scalar (curvature) | Core; canonical source `Core/SRT_Core_12a T-L0-NonStatic` |
+| **d_mobile** | `d_{\text{mobile}}` | Re-alignment Capacity | Operator's capacity to re-orient θ as attractors migrate; proportional to d · rank_eff(I_F(θ)) / (Hysteresis(L₂)·C_r) subject to χ_payable gate. High d + d_mobile ≈ 0 = frozen state (pathological). | Scalar (≥ 0) | Core; canonical source `SRT_Core_22 Eq-DValue-Mobile-1`; map `Core/SRT_Core_12b §Consciousness-2D-Map` |
+| **d_max** | `d_{\text{max}}` | Maximum Effective d-value | Upper bound on d: min(rank_eff(I_F(θ)), Ψ_f^budget / κ₀). Two independent bottlenecks: Fisher rank (informational) and stability budget (dynamical). dim(Θ) alone does NOT determine d_max. | Scalar | Core; canonical source `SRT_Core_22 Eq-DValue-Max-1` |
+| **χ_payable** | `\chi_{\text{payable}}` | Payability Gate | Internal three-condition conjunction: signal > threshold ∧ dΨ_f/dt payable ∧ below collapse threshold. Fully endogenous; gates d_mobile. When χ_payable = 0, d_mobile = 0 regardless of d. | Boolean gate | Core; canonical source `SRT_Core_22 Def-Payable-Chi-1` |
+| **κ_{c1}** | `\kappa_{c1}` | Bare Consciousness Threshold | Layer 1 consciousness condition: d ≥ d_min ∧ L₂ stable closure. Bare consciousness (not quality). Does NOT include d_mobile > 0. | Phase transition point | Core; canonical source `Philosophy/SRT_Consciousness_Conditions.md §三` |
+| **κ_{c1.5}** | `\kappa_{c1.5}` | Consciousness Activity Threshold | Layer 2 consciousness condition: d_mobile > 0. Marks transition from bare consciousness to active consciousness. Frozen state sits between κ_{c1} and κ_{c1.5}. | Phase transition point | Core; canonical source `Philosophy/SRT_Consciousness_Conditions.md §三` |
+| **t_onto** | `t_{\text{onto}}` | Ontological Time | t_onto ≡ ∫‖Ĝ_θ(s)‖ds; generated by selection irreversibility. Distinct from parametric time t (mathematical ordering tool). Ontological time is a derived quantity, not a background container. | Integral measure | Core; canonical source `Philosophy/SRT_Causality_Time.md §二`; formal `SRT_Core_21 Ax-F-03b` |
+| **C_H** | `C_H` | Horizontal Causality | C_H(A→B) ≡ P(B\|A,L₂); L₂-layer temporal causality (empirical, dependent on L₂ structure). Distinct from vertical causality (L₀ ⊨ L₁ ⊨ L₂ structural constitution). | Conditional probability | Core; canonical source `Philosophy/SRT_Causality_Time.md §一`; formal `SRT_Core_21 Ax-F-03` |
+| **ε_pg** | `\varepsilon_{pg}` | Proto-Gradient (L₀ Minimum Non-Neutrality) | ∇_{non-self-erasure}(L₀) ≡ ε_pg > 0; formal asymmetry favouring configurations with branching number B ≥ 2 over self-erasing ones (B ≤ 1). NOT a content-level "toward order" gradient; "order" is an L₁ observer's read-back label. | Scalar (> 0) | Core; canonical source `SRT_Core_01 T-Core-A1C2` |
+| **ε_reg** | `\varepsilon_{reg}` | Operator Regularizer | Positive constant in divisive normalization: [Ĝ_θ(x)]_i = x_i^n / (ε_reg + Σ W_{ij} x_j^n). Prevents singularity at zero input; maintains minimum non-zero operator response. May be read as implementation-layer echo of ε_pg (structural analogy, not ontological identity — independent argument required to upgrade). | Scalar (> 0) | Core; canonical source `SRT_Core_13a Ax-Op-03` |
+| **δ** | `\delta` | Duty Cycle | δ_j ≡ (1/T)∫A_j(t)dt; fraction of time an operator actively maintains anchoring target σ_j. Bounded above by Ψ_f budget and below by looseness penalty. | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
+| **ν** | `\nu` | Switching Density | ν_j ≡ N_{switch,j}/T; number of anchoring state flips per unit time. Same δ with different ν corresponds to qualitatively different schedules. Bounded above by Ψ_f^{switch} budget. | Hz | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
+| **λ_pred** | `\lambda_{pred}` | Downstream Prediction Cost Weight | Weight of temporal entropy h[A] in coupled multi-operator scheduling cost. When λ_pred > λ_pred^c, periodic scheduling becomes globally optimal (coupling-induced periodization). | Scalar (≥ 0) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
+| **Ṡ_int^on** | `\dot{S}_{int}^{on}` | On-Phase Entropy Production Rate | Internal entropy production rate during active selection. Lower-bounded by Landauer: ≥ k_BT · İ_created · ln 2. Determines entropy dissipation bound on duty cycle. | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
+| **J_S^max** | `J_S^{max}` | Maximum Entropy Export Flux | Upper bound on the rate at which a system can export entropy to its environment, determined by thermal coupling bandwidth (heat conduction, metabolic waste removal, radiation). | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
+| **δ_max^entropy** | `\delta_{max}^{entropy}` | Entropy-Limited Maximum Duty Cycle | δ_max^entropy ≡ J_S^max/(Ṡ_int^on + J_S^max). Independent of Ψ_f budget; cannot be bypassed by increasing E_avail. Effective δ_max = min(δ_max^budget, δ_max^entropy). | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
+| **B_θ** | `B_\theta` | Operator Effective Passband Bandwidth | B_θ ≡ Bandwidth(H_θ) = c_B · d; frequency-domain extent of operator H_θ's selective response (Ax-Spec-01). Proportional to d via c_B > 0. Wider bandwidth ⇒ higher information creation rate ⇒ tighter entropy-dissipation duty-cycle bound (Cor-Scale-Rhythm-4a). | Hz | Core; canonical source `SRT_Core_14 Ax-Spec-01, Cor-Scale-Rhythm-4a` |
+| **h[A]** | `h[A]` | Temporal Entropy Rate of Schedule | h[A] ≡ lim_{T→∞} H(A(0), A(Δt), …, A(T))/(T/Δt); Shannon entropy rate of an anchoring schedule A(t). Periodic schedules: h_per ≈ 0; random intermittency: h_rand > 0. Drives the coupling-induced periodization transition at λ_pred^c (T-Scale-Rhythm-3). | Bits/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
+| **τ_off^*** | `\tau_{off}^{*}` | Optimal Off-Phase Duration | Optimal off-phase length balancing entropy-export benefit against noise-erosion cost (three-way tradeoff in T-Scale-Rhythm-4). Not a free parameter; emerges from minimization of entropy-accumulation/export ratio plus γ·S_noise·τ_off. | Time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
 
 ## Usage Rules
 1. Never use `G` (gravity constant) to refer to `\hat{G}` (Ghost Operator).
 2. `L_0` is not "nothingness"; it is structured potentiality.
 3. Use `\Psi_f` for ontological friction; reserve `\Phi` for IIT context only.
 4. Use `\Omega` for consistency and `\Omega_{\text{mis}}` for mismatch to avoid symbol collision.
+5. In AI / pure `L_2` contexts, prefer "`\Psi_f` is non-binding to the system" over the blunt shorthand `\Psi_f = 0`, unless you are explicitly discussing an idealized limit.
+6. When discussing classical objectivity, prefer `\Delta\Psi_f^{readout}\to 0` over "object-maintenance friction vanishes".
 
 ## D-Value Alignment (d 值专题规范)
 
-### 1) 单一主定义（Canonical Definition）
-**唯一主定义（必须优先引用）**
-$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$
-其中：
-- $\mathcal{U}$：效用势（utility potential）
-- $\mathcal{S}$：生存/不可逆风险坐标（survival / irreversible-risk coordinate）
-*规范来源*：`SRT/AI/SRT_AI_01_Ontology.md`（Ax-ONT-3）
+### 1) 定义层级（Canonical Priority）
+
+| 层级 | 定义 | 语义 | 来源 |
+|---|---|---|---|
+| **形式主表达** | $d(\hat{G}) \equiv D_{eff}(I_F(\theta)) = (\operatorname{tr} I_F)^2 / \operatorname{tr}(I_F^2)$ | Fisher 信息矩阵的有效维度（算子能可靠分辨的 L₀ 方向数） | `_SRT_D_VALUE_CANONICAL.md` Def-d-1a |
+| **第一性语义锚** | $d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ | 算子对不可逆风险的效用敏感度梯度 | `_SRT_D_VALUE_CANONICAL.md` Def-d-2 |
+| **几何底座** | $d(\theta) \propto \operatorname{Align}(\theta, \kappa(t))$ | d 是 θ 参数空间与 L₀ 曲率场的对齐程度；解释"为什么 ∂U/∂S 是正确量" | `D_VALUE_ALIGNMENT.md §4.4`（新增 2026-04-10） |
+
+*全三层规范来源*：`_SRT_D_VALUE_CANONICAL.md`；*几何底座*：`D_VALUE_ALIGNMENT.md §4.4`
 
 ### 2) 局部近似语境 (Local Approximations)
 | 表达式 | 所在语境 | 与主定义关系 |
@@ -72,5 +101,32 @@ $d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$
 ### 3) d 值编辑规则（避免冲突）
 - **规则 R1**：不得将局部公式写成“d 的定义是 ……”（除非就是 canonical）。
 - **规则 R2**：局部公式必须标注“近似 / 投影 / 操作化”。
-- **规则 R3**：涉及跨文件引用时，优先回链到 Ax-ONT-3。
+- **规则 R3**：涉及跨文件引用时，优先回链到 `_SRT_D_VALUE_CANONICAL.md`。
 - **规则 R4**：任何“d→0 / d>0”的意识结论，需同时说明与 $\Psi_f$ 或不可逆风险边界的关系。
+
+## Ψ_f Alignment（本体论摩擦专题规范）
+
+### 1) Canonical Source
+**唯一规范入口（必须优先引用）**
+`_SRT_PSI_F_CANONICAL.md`
+
+### 2) 三重读法（不得拆成三个对象）
+| 读法 | 含义 | 备注 |
+| :--- | :--- | :--- |
+| 阻力 | 动力学上的阻抗 | 经验/现象读法 |
+| 代价 | 记账上的支付项 | 能量、时间、风险预算读法 |
+| 几何长度 | 参数流形上的路径负担 | 形式化读法 |
+
+### 3) 符号分层
+| 记号 | 含义 | 使用建议 |
+| :--- | :--- | :--- |
+| `\Psi_f(x,t)` | 局部摩擦负荷 | 默认首选 |
+| `\Phi(\Delta t)=\int \Psi_f dt` | 累积摩擦势 / 时间窗总账 | 需要强调积分时使用 |
+| `\Psi_f(\hat{G}_i,\hat{G}_j)` | 耦合摩擦泛函的简写 | 作用域明确时允许 |
+
+### 4) 编辑规则
+- **规则 F1**：不要把 `\Psi_f` 直接等同于主观痛苦。
+- **规则 F2**：不要把跨尺度同一性写成“单位相同”；优先写“可支付性条件相同”。
+- **规则 F3**：对现实主体，不要把最优条件写成 `\Psi_f \to 0`；优先写“非零且可支付”。
+- **规则 F4**：AI / 纯 `L_2` 语境中，优先写“non-binding friction”而非绝对 `\Psi_f = 0`。
+- **规则 F5**：物理语境中，若谈引力与 `\Psi_f` 的关系，当前规范口径是“引力是 `\Psi_f` 在物理尺度上的规范实现”。

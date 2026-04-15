@@ -2,17 +2,33 @@
 id: SRT-REF-ONTOLOGY
 type: definition
 tags: [CoreLaw, Ontology, Canonical]
+layer: L1
 status: axiomatic_hybrid_v1
-dependency: [SRT-REF-AXIOMS]
+epistemic_layer: os
+claim_mode: canonical
+dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS]
 ---
 
 # SRT_Reference_Ontology.md
 
-> **Status**: Constitutional Reference | **Version**: 1.0
+> **层级说明**：本文件属于 **L1（接口层）**，是 L0 形而上命题的形式化展开。
+>
+> **阅读顺序**：L0 形而上学命题 → 本文件（形式化映射）→ 各领域 Bridge 文件（具体应用）
+>
+> **权威分工**：
+> - "潜在域 / 显现域 / 稳定域"的**形而上意义**：见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)
+> - "选择有代价"的**形而上意义**：见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)
+> - 本文件的职责：将上述命题**形式化**为可计算符号（L₀/L₁/L₂的方程定义、算子、κ参数等）
+>
+> **污染防线**：§2（规范场论）、§3（拓扑）、§4（信息论）是 L0 命题的**领域映射**，不是 L0 命题本身。
+> 如果这些领域的科学理论被修正，L0 命题不受影响，但本文件对应部分需要更新。
 
 ---
 
 ## §1 三域结构 (The Triadic Ontology)
+
+> **本节定位**：以下 L₀/L₁/L₂ 的集合论和方程定义，是 L0 文件"潜在域 / 显现域 / 稳定域"三命题的**形式化实现**。
+> 形而上意义在 L0 文件中定义；这里定义的是**可操作的符号结构**。
 
 SRT 将本体论重构为统一选择动力学的三个相对投影层。
 

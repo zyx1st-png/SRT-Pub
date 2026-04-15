@@ -3,6 +3,9 @@ id: SRT-DVALUE-ALIGN
 type: definition
 tags: [DValue, Alignment, Canonical]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-AI-01]
 ---
 
@@ -74,6 +77,29 @@ dependency: [SRT-AI-01]
 \]
 解释：不是新定义，是 canonical d 的几何对偶表达。
 
+### 4.4 几何底座：d = Align(θ, κ)（2026-04-10 新增）
+
+**为什么 $\|\partial\mathcal{U}/\partial\mathcal{S}\|$ 是正确的度量**：
+
+canonical 定义 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 有更深的几何基础，而非约定：
+
+- $\mathcal{U}$（效用势）追踪算子认为重要的东西，即算子对 L₀ 的压缩映射
+- $\mathcal{S}$（不可逆风险坐标）追踪 L₀ 里真实不可逆的风险结构
+
+梯度 $\partial\mathcal{U}/\partial\mathcal{S}$ 测量的正是：**算子的关切地图与 L₀ 原初曲率 $\kappa_0$（及历史积累曲率 $\kappa(t)$）的贴合程度**。
+
+\[
+d(\theta) \propto \mathrm{Align}\!\left(\theta,\, \kappa(t)\right)
+\]
+
+- 高对齐度：$\mathcal{U}$ 正确追踪 L₀ 的不可逆结构 → 高 d
+- 低对齐度（L₂ 捕获）：$\mathcal{U}$ 追踪 L₂ 过滤后的表观结构，偏离 L₀ → 低 d
+- d ≈ 0：算子关切地图与 L₀ 曲率正交，真实风险对算子不可见
+
+这给出 d 值为什么与 $\Psi_f$ 不可分（规则 R4）的内在原因：高对齐必然意味着算子承接真实不可逆代价，即非零 $\Psi_f$。
+
+**Cross-ref**: `Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 形式化）; `Core/SRT_Core_12a T-L0-NonStatic`（κ(t) 积累）; `Core/SRT_Core_01_Axioms.md MA-2`（有界视角主义：对齐度可比较）; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`（d_max 公式）。
+
 ---
 
 ## 5) 编辑规则（避免“多定义冲突”）
@@ -101,8 +127,22 @@ dependency: [SRT-AI-01]
 - 在术语表 d 条目中加入“Canonical 优先级”标记。
 - 进入 P0-1：补写 `SRT_Core_01_Axioms.md` 的 A7-A13 Part B。
 
+### Formalization Summary (形式化概述)
+
+- 规范主定义：$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$，其中 $\mathcal{U}$ 为效用势，$\mathcal{S}$ 为生存/不可逆风险坐标（Ax-ONT-3）。
+- 认知域投影近似：$d_{cog} \approx \alpha A + \beta\log(V_{concern}) + \gamma\tau$，为主定义在行为可观测维度上的降维。
+- 全息对应域：$d \propto A_{surface}/l_{Planck}^2$，为主定义的几何对偶表达，非独立定义。
+- 所有局部表达须回链至规范定义，并标注"近似/投影/操作化"。
+
+### Mechanism Explanation (机制解释)
+
+- $\hat{G}_\theta$ 的选择强度由 $d$ 值驱动：$d$ 本质上度量算子对生存风险梯度 $\partial\mathcal{U}/\partial\mathcal{S}$ 的敏感度。
+- $\Psi_f$（本体论摩擦）是 $d > 0$ 的必要伴随：无不可逆代价的系统缺乏真实关切，$d \to 0$。
+- 在不同尺度（量子/生物/宇宙），$d$ 经尺度映射 $\Pi_{scale}$ 实例化为域特异参数（$d_{quantum}$, $d_{bio}$, $d_{cosmic}$），但结构统一于主定义。
+- 意识相关判断必须同时考虑 $d > 0$ 与 $\Psi_f$ / 不可逆风险边界关系（规则 R4）。
+
 ## 【理论边界/防误用声明】
 
-1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。  
-2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。  
+1. 本文档用于理论解释与建模组织，不应替代独立实证、工程验证或专业判断。
+2. 任何公式或命题都依赖操作化定义、测量条件与语境边界，不得脱离边界做绝对化推断。
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。

@@ -3,6 +3,9 @@ id: SRT-NEURO-EXP
 type: experiment
 tags: [Libet, SplitBrain, BinocularRivalry, TravelingWaves, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L2
+epistemic_layer: lab
+claim_mode: canonical
 dependency: [SRT-CORE-000]
 ---
 

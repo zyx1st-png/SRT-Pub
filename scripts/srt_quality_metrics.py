@@ -3,6 +3,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1] / "SRT"
+IGNORE_DIRS = {".venv", ".obsidian", "papers", "node_modules"}
 
 GLOSSARY = ROOT / "SRT_Glossary.md"
 CORE_TERMS = ["d-value", "\\Psi_f", "\\hat{G}_\\theta", "L_0 / L_1 / L_2"]
@@ -53,7 +54,10 @@ def compute_terminology_coverage():
 
 
 def main():
-    md_files = sorted(ROOT.rglob("*.md"))
+    md_files = sorted(
+        p for p in ROOT.rglob("*.md")
+        if not any(part in IGNORE_DIRS for part in p.relative_to(ROOT).parts)
+    )
     fm_total = len(md_files)
     fm_ok = sum(1 for p in md_files if frontmatter_ok(p.read_text(errors="ignore")))
     fm_ratio = fm_ok / fm_total * 100.0 if fm_total else 0.0

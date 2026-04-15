@@ -3,6 +3,9 @@ id: SRT-SPIRIT-AXIOMS
 type: theory
 tags: [Spirituality, Axioms, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 

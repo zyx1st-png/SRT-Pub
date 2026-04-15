@@ -3,6 +3,9 @@ id: SRT-PHYS-07
 type: dynamics
 tags: [Complexity, Emergence, Synergetics, Cybernetics, Criticality, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
@@ -190,6 +193,16 @@ $$ \forall i: \quad E[U_i(\sigma_i^* | L_2)] \geq E[U_i(\sigma_i' | L_2)] $$
 ### Ax-Crit-1 [A1.5.1]: Optimal $\hat{G}$ at Criticality (临界点最优 $\hat{G}$)
 最优 $\hat{G}$ 操作发生在"混沌边缘"（相变点）：
 $$ K \approx 2 \implies \text{Flexibility}(L_0) + \text{Stability}(L_1) = \max $$
+
+### Criticality Patch: Artifact-Controlled Neural Near-Criticality (反伪影神经近临界性)
+这条 patch 的关键，不是再说一遍“大脑在临界点附近”，而是先把 whole-brain criticality claim 的方法学地板补齐：如果不排除自相关输入和有限采样制造的假临界性，很多漂亮的缩放特征本身并不够硬。对 SRT 来说，它既新增了一个反伪影窗口，也把旧的“系统正好卡在临界点上”口径收紧成更稳的近临界缓冲带写法。
+
+**Prediction**: Empirical claims that whole-brain dynamics are critical should survive controls for autocorrelated inputs and limited sampling; healthy resting dynamics are expected to remain near-critical but slightly sub-critical.
+$$ g_{\mathrm{eff}}^{\mathrm{pooled}} \lesssim 1,\qquad g_{\mathrm{eff}}^{\mathrm{shift-rand}} \ll g_{\mathrm{eff}}^{\mathrm{pooled}} $$
+
+> [R→Calvo et al. 2026 *Physical Review Letters* 136, 068402（Crossref published title: `Robust Scaling in Human Brain Dynamics Despite Correlated Inputs and Limited Sampling Distortions`; arXiv:`2506.03640` preprint title: `...Latent Variables...`；autocorrelated inputs + subsampling 可在无耦合系统中产生 apparent criticality；LEMON pooled resting-state fMRI 在 time-shift randomization / pooled analysis 反伪影后仍呈 near-critical but slightly sub-critical dynamics，`g_1 \approx 0.88`，而 pooled randomized data 降到 `g_1 = 0.01`）]
+
+* **Implication**: 对脑动力学更稳的经验写法不再是“系统正好站在临界点上”，而是“在通过 time-shift / pooled-data 反伪影门后，系统停在临界阈值以下的安全缓冲带”。这既加固了“灵活性与稳定性折中发生在临界附近”这条旧线，也提醒我们：真正有价值的不是幂律外观本身，而是它能否在反伪影后留下来。SRT 在这里的附加解释，不是宣布大脑必须精确钉在临界点，而是把这类结果更稳地读成“系统为了保留多尺度模式与高灵敏度，会倾向停在略低于失稳阈值的位置”。
 
 ### Def-Crit-1 [D1.5.1]: Kauffman NK Landscape (Kauffman NK 景观)
 
@@ -381,7 +394,7 @@ $$ \text{Repeated } L_2\text{-rejection} \implies \hat{G}_θ \text{ 停止尝试
 | **H-Chomsky-1** | $d$ 值-语法相关 | 处理 Type 1 $L_2$ 结构的能力与 $d$ 值正相关 | 无相关性 |
 | **H-Salience-1** | 自发显著性 | 感觉剥夺中的视觉体验显示图灵斑图空间频率特征 | 完全随机无频率选择性 |
 | **H-OCF-1** | 选择循环频率 | EEG 显示发散-收敛循环特征频率，习得性无助中降低 | 无特征频率或无变化 |
-| **H-Criticality** | 神经临界性 | 大脑在临界点附近运作，神经雪崩呈幂律分布 $P(s) \sim s^{-\tau}$ | 非幂律分布 |
+| **H-Criticality** | 神经近临界性 | 在通过时间自相关/子采样伪影控制后，群体脑动力学应呈 near-critical but slightly sub-critical 标记；shift-randomized controls 应显著塌缩 | 若 pooled 数据与 shift-randomized control 不可区分，或所谓“临界性”只在 under-sampled 单被试幂律尾部中出现 |
 
 <br>
 
@@ -465,7 +478,7 @@ Stuart Kauffman 的 NK 适应度景观显示临界行为：
 **$d$ 值的临界性预测**：
 $$d_{optimal} \propto \log(N)$$
 
-**神经验证**：大脑在临界性附近运作的神经雪崩统计（幂律分布 $P(s) \sim s^{-\tau}$）验证了这一预测。
+**神经验证（收紧版）**：旧口径常援引神经雪崩统计来支持“大脑在临界性附近运作”。2026 年 *PRL* 进一步表明，whole-brain fMRI 的 PCA / PRG 临界性读数必须先过时间自相关与子采样伪影门；更稳的经验写法是：健康态群体脑动力学呈**近临界、略亚临界**，而不是必须精确卡在临界点上。
 
 ## 3.2 混沌的本体论修正：超连通性而非无序
 

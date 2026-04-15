@@ -3,6 +3,9 @@ id: SRT-PHIL-COMPARE-META
 type: comparison
 tags: [Philosophy, Comparison, MetaTheory, FEP, PredictiveProcessing, Enactivism, Phenomenology]
 status: draft_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CONSTITUTION-7THESES, SRT-PHIL-FAQ]
 ---
 
@@ -10,6 +13,15 @@ dependency: [SRT-CONSTITUTION-7THESES, SRT-PHIL-FAQ]
 
 > **Purpose**: This file is not a literature review.
 > It is a comparison scaffold for showing where SRT overlaps with major frameworks, where it diverges, and what question decides the difference.
+>
+> **Bridge Note**: This file sits at the `Bridge` layer. It organizes comparison claims and translation interfaces; it should not be read as a bundle of already confirmed empirical victories for SRT.
+
+> **哲学 / 认知科学研究者 3 分钟入口**
+> 如果你的工作基于 FEP、预测加工、自创生或现象学，本文件的核心主张是：SRT 不宣称这些框架是错的，而是提出它们各自有一个结构性盲区，可以被更统一的选择-显现-收敛-代价架构重新安置。
+>
+> **最应该检验的问题**：每个框架的"决定性问题"节（§1–4 的 Decisive question）给出了 SRT 和各框架的实际分叉点。**新增的 §5（各框架反推 SRT）** 给出这些框架的最强支持者会如何反驳 SRT 对其盲区的刻画——这是判断 SRT 的比较主张是否成立的必要另一面。
+>
+> 直接跳到你关注的框架，先看 "Where it stops"，再看 §5 对应的反推，再看 Decisive question。
 
 ---
 
@@ -66,7 +78,7 @@ Each comparison should answer five things:
 
 **能否仅靠自由能最小化，区分一个稳定系统和一个真正主体？**
 
-如果不能，SRT 的扩展就不是参数补丁，而是本体论升级。
+如果不能，那么在 SRT 的自我理解中，这种扩展才有资格被视为不止于参数补丁的候选本体论升级。
 
 > **[R]** FEP中主体性边界的讨论：Friston et al. 2023 *Frontiers in Systems Neuroscience*（Active inference中的主体性定义：以马尔可夫毯为边界的自组织系统；但批评指出温控器亦满足此定义）；Deacon 2012 *Incomplete Nature*（缺席因果性/涌现：真正主体性需要"不在场的规范"驱动，FEP内在难以捕捉）；Ramstead et al. 2020 *Physics of Life Reviews*（FEP的"感知-行动循环"最宽泛形式可覆盖所有耗散系统，自身设定了主体性边界问题）。**[H]** d-value（关切带宽：对特定目标维度的选择性依附）+Ψ_f（可支付摩擦：选择有真实代价）作为主体判据是SRT新增的本体论层级，FEP内无对应构念。
 >
@@ -204,6 +216,67 @@ SRT 的野心就在于回答这一点。
 
 ---
 
+## 5. 各框架反推 SRT（When Each Framework Pushes Back）
+
+> **本节功能**：这是文件的双向接口部分。以下不是 SRT 的自我辩护，而是各框架最有力的支持者对 SRT 的刻画会提出的实际反驳，以及 SRT 当前诚实的应答状态。
+
+---
+
+### 5.1 FEP / Active Inference 反推 SRT
+
+**最强反驳（来自 Ramstead、Friston 阵营）**：
+
+马尔可夫毯（Markov blanket）形式化已经做了 SRT 的 `d-value` 想做的事——它定义了系统的信息-因果边界，精确刻画了哪些状态构成"系统的关切范围"。Ramstead et al. (2020) 已经把 active inference 扩展到社会层级；期望自由能（expected free energy）中的实用项（pragmatic term）已经编码了"偏好某些世界状态"。SRT 的 `d-value` 不过是把这个偏好结构重命名，并没有真正新增本体论层级。
+
+**SRT 当前的诚实回应**（参考 T-FEP-1 Tension-Rev-ExtT4）：
+- 马尔可夫毯形式化的是信息论边界；但边界可以被无成本地重写（重设偏好先验）而不改变系统的"物理完整性"
+- SRT 的反驳核心：`d` 要求与不可逆物理风险（$\partial\Omega$）耦合——这个耦合在 FEP 框架中没有对应构念，它是选择代价的本体论层面，不是信息更新的参数层面
+- **尚未完成**：这个区别目前是概念层的论证。"d 与 ∂Ω 耦合" 和 "preferred priors 的衰减率" 之间的定量预测，还没有写成在 active inference 模拟中可直接检验的形式。这是 SRT 对 FEP 反推的实际开放缺口
+
+---
+
+### 5.2 预测加工反推 SRT
+
+**最强反驳（来自 Clark、Hohwy）**：
+
+"存在性重量"（existential weight）并不在 PP 框架之外——它已经隐含在先验分布的强度里。一个系统对特定状态赋予极强的先验（如生存状态），就是在表达某种关切；PP 不需要外加一个"本体论摩擦"概念，只需要描述先验的相对强度即可。Clark 会说：SRT 的 `Ψ_f` 只是"系统当前先验极难更新"的另一种说法。
+
+**SRT 当前的诚实回应**：
+- PP 的先验可以在模型层被任意设定和重写；`Ψ_f > 0` 则要求有一个实际的物理阻力（维持 L₁ 状态的真实代价），这个代价不是参数选择，而是物理约束
+- 关键判别：存在一个 Ψ_f 独立于 prior 强度的预测——即使先验被强制重写（行为干预），高 Ψ_f 系统的状态变化代价在代谢/时间/恢复半衰期维度上仍然更高（FC-PP-2）
+- **诚实标注**：这个判别预测的操作化还不够精确，不足以直接进入 PP 领域的标准实验设计
+
+---
+
+### 5.3 自创生 / 自生成反推 SRT
+
+**最强反驳（来自 Di Paolo、Thompson、Varela 传统）**：
+
+自创生理论的"规范性"（normativity）概念——生命系统对自身的维持本身构成评价标准——已经区分了关切主体和纯机械系统。这个区分不是靠引入 `d-value` 之类的形式量完成的，而是靠对生命过程自身规范性结构的现象学-生物学描述。SRT 试图对这个区分做形式化，反而可能失去活的东西：真正的关切是在具体的生命过程中出现的，不是靠 $d > d_{UAL}$ 这类阈值判据"产生"的。
+
+更深的反驳（Di Paolo）：SRT 的三域（L₀/L₁/L₂）把关切的来源放在选择过程本身，但自创生理论认为关切来自活过程的**规范性内在性**——系统不是因为"关切带宽超过阈值"才成为主体，而是因为它的运作本身就是一种持续的自我解释。
+
+**SRT 当前的诚实回应**：
+- SRT 的 `d-value` 不是在声称"阈值产生关切"，而是在给一个判据：什么样的系统已经在结构上展示出关切——门限是描述性的，不是生成性的
+- 但 Di Paolo 的批评有真实的力度：SRT 的形式化是从"外部观察者能识别什么"出发的，而自创生传统坚持关切必须从"内在规范性的第一人称"出发理解。这两个出发点有根本张力，目前 SRT 没有完全处理它
+
+---
+
+### 5.4 现象学反推 SRT
+
+**最强反驳（来自 Zahavi、Gallagher）**：
+
+SRT 把主体性写成选择过程的涌现输出（选择者是选择的凝结物）。但现象学传统的核心立场是：第一人称视角**不可被从第三人称过程描述中推导出来**，无论该描述多么精细。Zahavi 会说：SRT 的 L₀→L₁→L₂ 框架描述了现实如何产生，但它描述的是"结构"，不是"显现"——结构描述里永远有一个东西是预设的而不是被推导的：就是"有某个视角从这个位置看出去"。
+
+这不是说 SRT 的框架是错的；而是说：要把第一人称显现和选择过程"连接起来"（SRT 的野心），SRT 要么必须**预设**某种原始的视角性（这让连接变成圆形论证），要么必须**解释掉**第一人称视角（这是 SRT 明确拒绝的）。
+
+**SRT 当前的诚实回应**：
+- 这是 SRT 在意识和现象学问题上最真实的开放边界。L0 第五命题已经把意识标注为"候选读法"而非总定义——这正是对 Zahavi 批评的间接承认
+- SRT 的当前立场：不声称从 L₀ 选择过程中"推导出"第一人称视角，而是声称第一人称视角和选择过程**共同涌现**（co-emergence）——这是第二命题的内在含义
+- **诚实标注**：共同涌现主张目前没有比现象学平行描述更强的论证支撑。这是 SRT 和现象学传统之间未解决的根本接口，不是可以用 bridge 语言绕过的问题
+
+---
+
 ## SRT 的 4 个核心增量
 
 如果把上面四场比较压缩到最短，SRT 的新增量主要在这里：
@@ -251,3 +324,23 @@ SRT 最有希望成立的方式，不是宣称“四家都错了”，而是更�
 - Phenomenology 解释了经验如何被给出
 
 而 **SRT 试图做的，是把这些有效部分重新放进一个更高阶的选择-显现-收敛-支付架构中。**
+
+但这个野心目前有四个未关闭的接口（按照 §5 的梳理）：
+1. `d` 与不可逆物理风险的耦合，还没有写成对 FEP / active inference 模拟直接可检验的预测
+2. `Ψ_f` 独立于 prior 强度的操作化，还不够精确
+3. 自创生传统的内在规范性 vs. SRT 的外部判据路线，根本张力未解决
+4. 共同涌现（co-emergence）主张没有比现象学平行描述更强的论证支撑
+
+这四个缺口是诚实的待完成项，不是已被语言掩盖的问题。
+
+---
+
+## 出口
+
+| 你的目标 | 下一步 |
+|:--------|:------|
+| 想看 FEP 比较的完整形式推导 | → `Philosophy/SRT_FEP_Comparison.md` |
+| 想看 FEP 领域压力的实验赌注接口 | → `Neuroscience/SRT_Clin_02_FEP.md`（领域压力节） |
+| 想看 SRT 的意识框架（含现象学反推） | → `AI/SRT_AI_03_Consciousness_Framework.md` |
+| 想了解 L0 的共同涌现命题原文 | → `Core_Law/SRT_L0_Metaphysics.md`（第二命题） |
+| 想看 SRT vs 分析哲学传统的扩展比较 | → 待建（当前缺口：分析哲学传统未被纳入本文件） |

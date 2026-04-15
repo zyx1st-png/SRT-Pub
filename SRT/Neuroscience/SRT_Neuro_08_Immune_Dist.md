@@ -3,6 +3,9 @@ id: SRT-NEURO-08
 type: dynamics
 tags: [Immune, Distributed Operator, Inflammation, Gut-Brain, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-07, SRT-CORE-000]
 ---
 
@@ -254,6 +257,30 @@ SRT 识别出三个主要的分布式算子：
 - FC-Gut1：益生菌干预提升微生物多样性后，Ψ_f^cross综合代理应系统性降低——若无改变则三算子同步框架在肠-神经轴上无支持
 - FC-Gut2：抗生素诱导的菌群崩溃应导致Ψ_f^cross先于认知弹性下降（因果顺序：肠→脑）——若认知改变先发生则因果链方向需修订
 
+### 3.2.3a Gut-Microbiome Encephalization Window（2026-03-21 patch）
+
+用户提交的 Popular Mechanics 报道背后主锚点是 DeCasien et al. 的 PNAS 原始研究 `Primate gut microbiota induce evolutionarily salient changes in mouse neurodevelopment`（2026；doi:`10.1073/pnas.2426232122`）。这条材料真正值得吸收的增量，不是媒体式地说“肠菌决定智力”，而是更窄的一层：**不同灵长类来源的 gut microbiota，可以把无菌小鼠的脑基因表达推向不同的能量代谢与神经发育轨道，而且这种差异部分追踪 primate encephalization 的方向。**
+
+该研究的设计很关键：作者故意选了 humans（大脑相对更大，Catarrhini）、macaques（相对更小，Catarrhini）与 squirrel monkeys（相对更大，Platyrrhini），从而把“脑相对大小”与“系统发育亲缘”尽量拆开。结果显示，尽管 squirrel monkey 与 human 的系统发育距离更远，但来自这两个较大脑物种的微生物组，都更倾向于在宿主鼠脑中上调与 **energy production** 相关的基因；而 human GM 还更具体地上调了 **oxidative phosphorylation**，并与 GM 侧的 glucose metabolism / gluconeogenesis pathway abundance 相联动。
+
+对 SRT 来说，这条结果最自然的写法是：`\hat{G}^{gut}` 不只是一个“影响心情或炎症”的外围调节器，它还可能在发育窗口里向 `\hat{G}^{neuro}` 提供更深层的 **metabolic prior injection**。换言之，脑并不是只靠自身基因蓝图独立长大；它的高代谢神经发育方案，可能部分依赖与某类微生物生态共同演化出的外包代谢支持。用 SRT 语言说，这意味着：
+\[
+L_2^{gut}
+\rightarrow
+\theta_{metabolic}^{neurodevelopment}
+\rightarrow
+L_1^{brain}
+\]
+也就是菌群构成并非只调味现成大脑状态，还可能在早期就参与设定“什么样的脑代谢轨道是可支付的”。
+
+这一点把本文件里原先较粗的 `L_2^{neural} \leftarrow L_2^{gut}` 再推进了半步：肠道算子的 `L_2` 内容不只包括代谢偏好与食欲模型，也可能包括**支持某类脑发育/高能耗神经方案的生态位脚手架**。它不是说“微生物单独创造大脑”，而是说 primate 脑扩张所需的高糖供给、高氧化代谢与某些神经发育程序，可能从一开始就嵌在 host–microbe 的协同体系里。
+
+**边界必须收紧：**
+- 这是同行评审原始研究，但当前仍是 **germ-free mice + 少量 primate species** 的 proof-of-principle 窗口，不等于已证明人类脑演化由肠菌决定。
+- 结果主要是 **gene expression / pathway-level** 变化，不等于已经证明了人类级 cognition 或 intelligence 被跨物种复制。
+- human GM 下调某些与 neurodevelopmental disorders 相关的保守基因，只能当作候选发育窗口，不能直接推出 autism / ADHD / schizophrenia 的病因已被锁定。
+- 更稳妥的结论是：gut microbiota 可能为 primate encephalization 提供了代谢与发育层的支持条件，而不是单因果解释。
+
 ---
 
 ## 3.3 健康即同步 (Health as Phase Synchrony)
@@ -312,6 +339,33 @@ Quanta 的 vagus nerve 综述，以及它背后两条更硬的一手线索
 - 这里吸收的是 interoceptive coding 与 inflammatory circuit 的窗口，不等于 SRT 已有一套完整的 vagus 微分方程。
 - auricular / implanted VNS 的临床前景值得保留，但仍应按病种、靶点、参数分别评估，不能从“广泛影响”直接推出“广泛有效”。
 - `polyvagal therapy` 的大众叙事不应被当作当前神经科学共识。
+
+### 3.3b Interoceptive Axes Fractionation（2026-03-21 patch）
+
+用户提交的 *Communications Psychology* 原始研究 `Interoceptive ability is uncorrelated across respiratory and cardiac axes in a large scale psychophysical study`（Banellis et al., 2026；doi:`10.1038/s44271-026-00404-z`）把这一层再往前收紧了一步。它的真正增量不是再抽象重复“内感受很重要”，而是用一致的心理物理框架在 `N = 241` 的样本上明确显示：**呼吸轴与心脏轴的 interoceptive performance 并不自然汇成一个单一总能力。**
+
+更具体地说，该研究比较了 cardiac 与 respiratory 两条轴上的 sensitivity、precision、metacognition，并加入 auditory exteroception 作为对照。结果显示，除了主观 confidence 有 modest positive association 外，心脏与呼吸轴在大多数核心维度上都**没有显著相关**；Bayesian 分析也对“多数维度缺乏跨模态相关”给出中等强度支持。对 SRT 来说，这一点非常关键，因为它直接把“内感受”从一个看似统一的全局 trait，收紧成若干 **organ-specific / modality-specific / task-specific** 的能力束。
+
+这条结果与上面的 `Vagus Multiplex Interface` 正好互相咬合：如果迷走神经本来就是 `(organ, layer, modality)` 级别的多路复用干线，那么主体对体内信号的读取能力，本来也不应被粗暴压成一个 `interoceptive g-factor`。更合理的 SRT 写法是：
+\[
+\mathcal{I}_{body}
+=
+\{
+\mathcal{I}_{cardiac},
+\mathcal{I}_{respiratory},
+\mathcal{I}_{gastric},
+\dots
+\}
+\]
+其中不同轴上的 sensitivity / precision / metacognition 可以彼此部分独立，而 confidence 或自我评估偏置则可能共享更高层的 readout policy。换言之，身体内部不是一个单一频道，而是一个多轴、异质、可局部失真的 sensing manifold。
+
+这也为临床与理论都补了一个很实用的边界：今后若某条材料声称“某人内感受差/强”，SRT 更稳妥的追问不该是“整体 interoception 高还是低”，而应是“**哪条轴、哪种任务、哪一层指标** 异常”。panic、呼吸相关焦虑、心脏知觉偏置、饮食障碍或 psychosis 里的 bodily self-disturbance，未必共享同一 interoceptive deficit，而更可能是不同轴上的精度估计和 metacognitive readout 以不同方式失配。
+
+**边界必须收紧：**
+- 这是一项同行评审原始研究，证据级别高于评论文，但当前主要覆盖的是 cardiac / respiratory 两轴，不等于已穷尽全部内感受模态。
+- “不相关”不等于两条轴永远彼此独立；它首先说明在这套任务和样本里，不支持单一总能力的强版本。
+- confidence 的 modest association 不等于已有一个稳定的 domain-general metacognitive core；目前更适合写成候选高层 readout 偏置。
+- 这条材料支持的是 **interoceptive fractionation**，不是“身体信号彼此毫无整合”；真实有机体依然通过 brainstem / insula / vagal routing 在行动层完成跨轴协调。
 
 ---
 
@@ -574,6 +628,8 @@ SRT 的分布式算子框架提供了一个新的自我隐喻：
 
 ## Alzheimer's Peripheral-Inflammation Interface（2026-03-07）
 
+这条 interface 真正想压住的，不是“外周炎症已经被证明是阿尔茨海默的唯一病因”，而是一个更稳的系统级改写：皮肤、肺、肠等外周节点长期占用摩擦预算，本身就可能持续挤压中枢维持高阶记忆结构的可支付空间。它也顺手修正了把 AD 只写成“脑内单点病理”的过窄口径。
+
 ### Def-Neuro-AD-PI-1: Cross-Operator Friction Cascade
 定义外周-中枢摩擦级联：当皮肤/肺/肠等外周节点长期炎症活跃时，系统性摩擦预算被持续占用，压缩中枢高阶认知维持能力。
 \[
@@ -595,6 +651,8 @@ SRT 将 AD 晚期表型重写为“高阶 \(L_2\) 结构性破产”：
 AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\ \Psi_f^{systemic}\ \text{overdraft}
 \]
 淀粉样沉积与网络退化在此框架中定位为长期级联后的结构残渣/下游读数，而非唯一原发起点。
+
+对 SRT 来说，这条材料真正加固的，不是某个具体病理级联已经定案，而是“系统带宽长期透支会先压垮高阶记忆与自我维持”这条主线。它把 AD 的叙述从局部损伤故事，推成了一个跨外周—中枢的预算崩盘故事。
 
 ### Def-Neuro-AD-PI-2: Genes as Initial Topological Constraints
 
@@ -657,6 +715,8 @@ AD_{late}\sim \text{collapse}\big(L_2^{memory/self}\big)\ \text{under long-run}\
 
 ## Tanycyte Tau-Clearance Interface（2026-03-07）
 
+这条 interface 最值得留下的，不是标题式地说“这些细胞会清 tau”，而是把 AD 早期风险往一个更具体的清除门机制上收紧：如果 neuro–periphery 的跨屏障清除接口失灵，tau 的积累就不再只是神经元内部问题，而会变成跨算子摩擦升高后的系统性堆积。它也顺手修正了把清除通道完全当作被动背景的旧写法。
+
 ### Def-Neuro-TAN-1: CSF→Blood Clearance Bridge
 定义 tanycyte 作为跨屏障桥接算子（\(\hat G_{tan}\)），负责将 CSF 中 tau 负载转运至垂体/血流路径：
 \[
@@ -697,6 +757,8 @@ $$\kappa_{tan} \downarrow \;\Rightarrow\; \Psi_f^{cross}(\hat{G}^{neuro},\, \hat
 \Psi_f^{neural-maint} \propto f\big(\tau_{CSF},\,\kappa_{tan}^{-1}\big)
 \]
 长期下可与外周炎症级联耦合，推动系统向 \(L_2^{memory}\) 失稳区迁移。
+
+更稳的结论因此不是“tanycyte 就是 AD 的主开关”，而是：清除门效率本身可能是一个此前被低估的风险放大器。它加固了本文件里“健康 = 跨算子同步”的主线，也让早期干预不再只盯神经元产物，而要同时盯住清除通量是否还能把负担带出系统。
 
 ### Eq-Neuro-TAN-2: Metabolic-Risk Coupling Hypothesis
 考虑到肥胖/2 型糖尿病与 tanycyte 功能相关风险，提出耦合项：

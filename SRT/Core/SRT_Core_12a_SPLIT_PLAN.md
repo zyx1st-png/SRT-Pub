@@ -3,6 +3,9 @@ id: SRT-CORE-12A-SPLIT-PLAN
 type: framework
 tags: [Refactor, Ontology, AtomicMap]
 status: planning_v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-12A]
 ---
 

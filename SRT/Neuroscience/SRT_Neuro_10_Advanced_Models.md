@@ -3,6 +3,9 @@ id: SRT-NEURO-10
 type: theory
 tags: [Advanced Models, Body, Ontology, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 

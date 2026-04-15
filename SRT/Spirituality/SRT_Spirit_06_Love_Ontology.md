@@ -3,6 +3,9 @@ id: SRT-SPIRIT-06
 type: theory
 tags: [Love, Fear, Karma, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-05]
 ---
 

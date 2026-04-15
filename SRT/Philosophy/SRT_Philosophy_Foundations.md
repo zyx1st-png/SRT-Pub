@@ -3,6 +3,9 @@ id: SRT-PHIL-FOUNDATIONS
 type: theory
 tags: [Philosophy, Epistemology, Metaphysics, Paradox, Hybrid]
 status: axiomatic_hybrid_v3
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
 ---
 
@@ -42,6 +45,7 @@ $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1)=\text{Stabilize}(L_1(t))$$
 \text{Existence} \equiv \text{Being Selected} \quad (\hat{G}[L_0] \to L_1)
 \]
 * **Implication（中文）**：泛心论认为电子"拥有"微弱的意识，SRT 纠正为：电子的存在正是微观环境对其发生了一次 $\hat{G}$ 观测/选择的结果。意识不是属性，而是使现实得以跨越存在门槛的守门动作（The Cut）。
+* **补注（2026-04-14）**：若需要在 SRT 内部保留电子尺度的“内侧性”语言，最稳的写法不是“电子 already has weak consciousness”，而是：电子只携带一个电子尺度的方向种子 `e_{pg}`。大脑意识不是这些 `e_{pg}` 的简单相加，而是该方向种子在分子、细胞与神经层级中被持续写回、放大并最终跨过 `(\Psi_f>0,\ d>0,\ \text{minimal }L_2\text{ closure})` 门槛后的相变式展开。
 
 ---
 
@@ -1331,6 +1335,20 @@ Q_F:\ \text{What function does experience serve?}
 
 **证伪条件**：若存在某 \(\text{Qualia}_{broad}\) 现象无法被 \(L_1\) 结构（功能/报告层）描述，且该缺口被证明是系统性而非描述精度问题，则层级放置需修订；若 \(\text{Qualia}_{strong}\) 的某版本能给出不被功能主义吸收的 \(L_2\) 独立预测，则需上升为 \(L_2\) 候选实体而非仅属于高承诺假说。
 
+### Def-Phil-Qualia-3: Relational Geometry Bridge
+
+在 SRT 中，\(\text{Qualia}_{broad}\) 不必只被处理成一个个不可分的“红之所似/痛之所似”原子，也可以先被压成 \(L_1\) 内部的**关系几何**：
+\[
+\mathcal{Q}_{L_1}=(E,\Delta_{ij}),\qquad \Delta_{ij}\approx \text{experienced dissimilarity}(e_i,e_j)
+\]
+其中 \(E\) 是一组具体体验项，\(\Delta_{ij}\) 表示两种体验在第一人称上被感到多近、多远、多可混淆。这样做并不消除解释鸿沟，而是把其中一部分负担改写为一个更可检的问题：**一个意识理论至少应能约束体验邻域的排序、聚类与变形规律，而不只回答“有没有报告/有没有点亮”。**
+
+> **[R]** `quality space` / `qualia structure` 路线：Fleming & Shea 2024 *Trends in Cognitive Sciences* `Quality space computations for consciousness`（doi:`10.1016/j.tics.2024.06.007`，将意识研究的一部分负担收紧为对体验相似性结构的解释）；Hirao et al. 2025 *Scientific Data* `A neuroimaging dataset during sequential color qualia similarity judgments with and without reports`（doi:`10.1038/s41597-025-04511-0`，以颜色 qualia 的成对相似性判断与 no-report 条件提供操作化数据集）；Ellia & Tsuchiya 2025 *Neuroscience of Consciousness* `Beyond accommodation: on the structural turn in computational functionalist theories of consciousness`（doi:`10.1093/nc/niaf014`，强调结构转向不等于已解释 why-this-feel）。 **[H]** SRT 新增重解读：`quality space` 的真正价值，不在于把 qualia 彻底还原成外部坐标，而在于把“不可说”中的一部分收紧为“可比较、可扭曲、可受 \(\theta\) / 注意 / 局部连接结构影响的体验邻域”；因此 SRT 可把 hard problem 的一个子负担改写成 `L_1` 关系几何约束问题，而不是继续只把它停留在静态的 `L_gap > 0` 边界声明。
+
+* **Implication（中文）**：对意识理论的要求应从“解释某个体验标签”部分转向“解释体验之间为何呈现这样的邻近关系与形变规律”。例如，如果局部侧向连接、注意撤回、报告要求或状态变化会系统性扭曲颜色/空间/面孔体验的相似性结构，那么理论必须对这些扭曲给出约束，而不能只在事后接受“主观报告很难”。
+
+* **边界声明**：这条桥不等于“hard problem 已被解决”，也不等于 quality space 已说明“为什么红色就是这种感觉”。它更稳地只支持一个方法论收紧：对 qualia 的研究不必卡死在单点命名或纯 verbal report，可以先研究其关系结构；而任何从关系结构直接外推出终局本体论（无论 functionalist、IIT 还是反物理主义）都仍然越界。
+
 ### Taxonomy Mapping: qualia 立场 → SRT
 
 | 外部分类 | SRT 对应 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
@@ -1546,6 +1564,8 @@ J = \mathbb{E}[\Psi_f^{total}] + \lambda\,\mathrm{CatastrophicRisk}
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Mental Representation Interface（2026-03-08）
 
+这组接口最需要收紧的，不是简单在“表征存在 / 不存在”之间站队，而是把争论拆回负担结构：哪些证据只说明系统对某特征敏感，哪些证据才真的够资格支撑“这里形成了可被消费的内容载体”。它也顺手修正了神经科学里一个常见偷步: `可解码` 不自动等于 `强表征已成立`。
+
 ### Def-Phil-MR-1: Representation as Internal Surrogate with Action Relevance
 在 SRT 中，将“心理表征”定义为：由算子生成、可在系统内被操作、并能使行为对外部目标保持相关性的内部代理结构。
 \[
@@ -1563,6 +1583,39 @@ R \xrightarrow{\hat G_\theta\text{-compute}} a_t,
 \text{Rep}(R)=\langle V, C, F\rangle
 \]
 SRT 要求对三者分别建模，避免把“有相关神经活动”直接等同于“内容已确定”。
+
+### Def-Phil-MR-2b: Representation-Evidence Dimensions Correction
+将“某神经响应表征了 \(X\)”从单一是/否判断，收紧为一组需要分开估计的证据维度：
+\[
+\text{Evidence}_{rep}(R,X)=\langle \mathrm{Sens},\mathrm{Spec},\mathrm{Inv},\mathrm{Func}\rangle
+\]
+- **sensitivity**：神经响应 \(R\) 是否随特征 \(X\) 改变；
+- **specificity**：\(R\) 对 \(X\) 的关系是否不会被大量替代特征轻易重写；
+- **invariance**：当无关特征变化时，\(R\) 对 \(X\) 的关系是否保持；
+- **functionality**：\(R\) 是否被下游系统真正使用，而不只是可被研究者离线读取。
+
+\[
+\text{StrongRep}(R,X)\Rightarrow \mathrm{Sens}(R,X)\land \mathrm{Spec}(R,X)\land \mathrm{Inv}(R,X\mid N)\land \mathrm{Func}(R\to Cn)
+\]
+其中 \(N\) 表示 nuisance / 非目标特征，\(Cn\) 表示 downstream consumer。关键点是：**可解码**、**可编码拟合**、**RSA 相似**、**统计相关** 往往首先支持的是 sensitivity，至多提供局部 specificity 线索，并不自动等于“强表征已成立”。
+
+### T-Phil-MR-1a: Decoding-Is-Not-Yet-Representation Corollary
+\[
+\mathrm{Decode}(X\mid R)>0\ \not\Rightarrow\ \text{StrongRep}(R,X)
+\]
+对 SRT 来说，这条澄清非常重要：研究者从 \(R\) 中读出 \(X\)，说明 \(R\) 与 \(X\) 存在信息关系；但若尚未区分 specificity、invariance 与 downstream use，就更接近“我们发现了一个可读出的相关维度”，而不是“系统内部已建立稳定内容载体”。
+
+### T-Phil-MR-1b: Representation Strength as Evidence Ladder
+SRT 将表征证据视为一个阶梯，而非一次性盖章：
+\[
+L_1^{covariation}\rightarrow L_1^{feature\text{-}selective}\rightarrow L_1^{invariant}\rightarrow L_2^{consumer\text{-}usable}
+\]
+这意味着许多神经科学中的“representation”结果，更稳妥的口径其实是：
+- 先证明神经响应对某特征敏感；
+- 再证明这种关系在竞争特征中具有选择性；
+- 再证明它跨 nuisance 维度保持；
+- 最后再证明它被下游行为或神经回路实际消费。
+只有走到后段，才更接近 `Def-Phil-MR-3` 所说的 producer-consumer 功能闭环。
 
 ### T-Phil-MR-1: Misrepresentation Admissibility Theorem
 可错性是表征的必要判据：若系统永不可错，则其“内容”退化为事后并集描述而失去解释力。
@@ -1586,23 +1639,28 @@ SRT 采纳“表示-非表示并存”边界：
 \]
 当任务可由实时具身耦合闭环完成时，可弱化内部表征承诺；当存在跨时规划、反事实推演或离线组合时，表征层通常不可省略。
 
+换句话说，这条 interface 真正加固的，不是“表征主义必胜”，而是一个更稳的中间立场：有些任务里，表征负担确实可以降到很低；但一旦系统要跨时保持、离线重组、反事实推演，单靠在线耦合通常又不够。
+
 ### 分类映射表（Mental Representation Regimes → SRT）
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |---|---|---|---|
 | 强表征计算（离线推演主导） | 中~高 | Semi-open（高内部操作） | 可支付~高负载 |
 | 具身闭环优先（低内部建模） | 中 | Open（在线耦合） | 低~中负载 |
 | 混合策略（4E + 表征） | 中~高 | Open↔Semi-open | 可支付（任务依赖） |
-| 伪表征泛化（任何状态都算"表示"） | 低~中 | Closed（解释退化） | 理论上 overloaded |
+| 反表征工程极简（最小内部模型） | 低~中 | Open（直接耦合优先） | 低负载；离线组合任务易失真 |
 
-> **[R]** 代表文献：Fodor 1975 *The Language of Thought*（强表征计算主义，离线符号操作，R基线）；Gibson 1979 *The Ecological Approach to Visual Perception*（直接知觉/具身闭环，无内部模型，R基线）；Clark & Chalmers 1998 *Analysis*（延展心智，4E+表征分布，R混合基线）；Brooks 1991 *IEEE Transactions on Robotics and Automation*（行为主义机器人：状态即"表示"的泛化倾向，伪表征泛化R批评性参照）。**[H]** 以d值/能流/Ψ_f三维映射统一四种表征模式为本框架新增比较框架。
+> **[R]** 代表文献：Fodor 1975 *The Language of Thought*（强表征计算主义，离线符号操作，R基线）；Gibson 1979 *The Ecological Approach to Visual Perception*（直接知觉/具身闭环，无内部模型，R基线）；Clark & Chalmers 1998 *Analysis*（延展心智，4E+表征分布，R混合基线）；Brooks 1991 *IEEE Transactions on Robotics and Automation*（工程上的反表征/极简表征取向：强调直接耦合与最小内部模型，R极简基线）。**[H]** 以 d 值/能流/Ψ_f 三维映射统一四种表征模式为本框架新增比较框架。
 
 ### [Lineage/Source]
 - Manolo Martínez (2026), *Mental Representation*.
 - 关键脉络：Brentano intentionality、teleosemantics（Millikan）、sender-receiver/信息论框架、4E 挑战。
+- Stephan Pohl et al. (2026), *Nature Reviews Neuroscience*: *Clarifying the conceptual dimensions of representation in neuroscience*（doi:`10.1038/s41583-026-01030-8`）。
 
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Concepts Interface（2026-03-08）
+
+这条 interface 真正推进的，不是再定义一次“概念是什么”，而是把概念处理从单一路径神话里解放出来：概念不是一个固定定义包，也不是纯原型、纯样例、纯理论中的某一条独占路线，而更像一组会随任务和带宽重新配重的可重组资源。它也顺手修正了把 `concept` 和 `conception` 混写成同一个东西的旧习惯。
 
 ### Def-Phil-CON-1: Concept as Recombinable Deliberative Representation
 在 SRT 中，概念定义为可在有意识推理中带宽受限地重组的表征类型：
@@ -1665,6 +1723,8 @@ R_{adhoc}=\mathcal{C}(R_{i_1},R_{i_2},...,Goal_t,Context_t)
 如”garage-sale items”一类任务特定概念，体现 SRT 的目标驱动结构压缩能力。
 - **SRT解读**：ad-hoc概念 = $\hat{G}_θ$ 在当前 Goal_t 约束下将多个L₂概念节点临时合并为新的L₁锚点；”临时性”体现在θ的短暂激活模式，而非θ结构的永久改变
 
+更稳的读法因此不是“概念有一个唯一正确本体”，而是：概念的稳定性主要落在共享指称与可重组约束上，至于每次调用到底偏原型、偏规则还是偏理论，则要看当前任务、压力和可用带宽如何重新配重。
+
 ### 分类映射表（Concept Processing Regimes → SRT）
 
 [R→Smith & Medin 1981（经典规则理论）; Rosch 1978（原型理论）; Murphy & Medin 1985（理论驱动分类）; Barsalou 1983（ad-hoc概念）] [H→以SRT三变量（d值/能流/Ψ_f）重映射四种概念加工模式]
@@ -1685,6 +1745,8 @@ R_{adhoc}=\mathcal{C}(R_{i_1},R_{i_2},...,Goal_t,Context_t)
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Self-Consciousness Interface（2026-03-08）
+
+这条 interface 最重要的修正，不是把第一人称特权神秘化，而是把它降回几个较硬的信息源条件：自我意识不是“对内绝对透明”，而是系统在某些通道上较难认错“是谁在经历”。这也顺手加固了一个更稳的边界：可错的是内容，不一定是主语。
 
 ### Def-Phil-SC-1: Self-Consciousness as Self-Specified Awareness
 自我意识定义为：系统获得并整合“不可错指向自身”的信息流，从而形成可用于行动与反思的自我指向状态。
@@ -1715,6 +1777,8 @@ Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
 \]
 即概念框架可共享（信念/意图等），证据通道不可等同（第一人称与第三人称信息源不同）。
 
+这条线真正加固的，是 SRT 对“自我 / 他者”共同发育但不完全对称的判断：我们可以用相近的概念框架理解自己和别人，却不能假装两边的证据入口是同一条管道。
+
 ### 分类映射表（Self-Consciousness Regimes → SRT）
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |---|---|---|---|
@@ -1730,6 +1794,8 @@ Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ## Mind–Body Problem Interface（2026-03-08）
+
+这条 interface 真正想避免的，不是选边站在“物理主义”或“二元论”某一侧，而是把心身问题重新压回它最硬的双重压力：一边是因果闭包，一边是主观体验的解释负担。它也顺手修正了一种常见误解：只要承认心理依赖物理，就等于解释已经完成。
 
 ### Def-Phil-MB-1: Two-Horn Constraint (Causation vs Consciousness)
 心身问题在 SRT 中被表述为双约束：
@@ -1769,6 +1835,8 @@ E_{mental} \equiv E_{physical}^{realization},
 \quad \Delta a_{body}=f(E_{mental})=f(E_{physical})
 \]
 从而避免“心因果 vs 物因果”机械叠加式过度决定。
+
+更稳的结论因此不是“心身问题已经被取消”，而是：SRT 允许我们同时保住物理闭包与心理解释的必要性，但前提是承认跨层实现不等于范畴塌缩，依赖关系也不等于现象透明性。
 
 ### T-Phil-MB-2: Explanatory Gap Persistence under Ontic Dependence
 即便承认本体依赖（supervenience），意识解释缺口仍可存在：

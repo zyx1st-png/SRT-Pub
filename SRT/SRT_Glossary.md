@@ -3,6 +3,9 @@ id: SRT-GLOSSARY
 type: definition
 tags: [Glossary, Terminology, Registry]
 status: axiomatic_hybrid_v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 ---
 

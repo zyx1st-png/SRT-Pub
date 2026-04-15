@@ -3,10 +3,17 @@ id: SRT-CLIN-01
 type: dynamics
 tags: [Pathology, NDE, Schizophrenia, L2 Inversion, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-NEURO-AXIOMS-001]
 ---
 
 # SRT Neuroscience II: Pathology & Anomalies (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Pathological Dynamics (AI-Readable).
@@ -544,6 +551,29 @@ $$\text{Brain} = \text{Tuner}(L_0 \to L_1)$$
 |音乐消失？|是，$L_1$ 局部通道丧失|
 
 **关键洞见**：破坏调谐器不消灭信号源。
+
+### 4.2b 基质-功能欠决定窗口（2026-03-22 patch）
+
+用户提交的 *Mind and Matter* 同行评审综述 `Cases of Unconventional Multiscale Information Flow Across the Mind-Body Interface`（Karina Kofman & Michael Levin, 2025；doi:`10.5376/mm2025.13`）真正值得吸收的新增量，不是把一批异常病例直接升级成“意识脱离大脑”的证明，而是对 **brain tissue / momentary neural readout / overt cognitive function** 之间关系做一个必要的收紧。该文汇总 hydrocephalus、hemihydranencephaly、accidental awareness during anesthesia 与 terminal lucidity 等案例，指出认知表现与其生物基质之间的映射，比朴素的“脑体积越多、功能越强；脑活动越低、意识越弱”图景更具可塑性、更依赖发育补偿与状态门控。
+
+若按 SRT 语言收紧，这条材料更像一个 **substrate-underdetermination window**：
+\[
+L_1^{cog}
+\not\propto
+M_{brain}\ \text{alone},\qquad
+L_1^{cog}
+\sim
+\hat G_\theta(\theta_{brain},\theta_{body},\theta_{devo},\kappa_{state})
+\]
+也就是说，可见的认知/体验输出并不只由“剩余了多少脑组织”单独决定，而取决于多尺度生理约束如何在发育历史、残余通路、全身信号与当前状态切换下被重新组织。它与本节的 `Brain = Tuner` 模型能形成一个更稳的桥接关系：大脑当然仍是高带宽调谐与压缩接口，但这篇综述提示，**调谐器的有效度并不与局部组织量或单一时刻 readout 简单线性对应**。
+
+对本文件来说，最有价值的不是个案传奇性，而是一个方法论约束：当我们处理 NDE、终末清醒或麻醉中意识等异常态时，不能把 `brain mass / global suppression proxy / coarse neural silence` 直接当成体验容量的充分统计量。SRT 因而更适合把这些现象读成 **mapping plasticity + multiscale compensation + state-dependent gating** 的组合窗口，而不是仓促宣布“脑不重要”。
+
+**边界必须收紧：**
+- 这是一篇异质性综述，不是统一范式下的新机制实验；其案例强度与可重复性并不整齐。
+- hydrocephalus / hemihydranencephaly 等更稳地支持的是 **substrate-function underdetermination** 与发育补偿，而不是“功能完全不依赖大脑”。
+- accidental awareness during anesthesia 与 terminal lucidity 仍受稀有性、测量分辨率与回顾性报告限制，不能单独充当意识本体论的决定性证据。
+- 因而这条材料最适合写成 **基质-功能欠决定窗口**，不是“脱脑意识已获证明”的胜利宣言。
 
 ## 4.3 终末清醒的势垒坍塌
 

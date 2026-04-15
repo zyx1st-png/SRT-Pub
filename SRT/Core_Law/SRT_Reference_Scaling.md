@@ -2,11 +2,18 @@
 id: SRT-REF-SCALING
 type: framework
 tags: [CoreLaw, Scaling, Canonical]
+layer: L1
 status: axiomatic_hybrid_v1
-dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
+epistemic_layer: os
+claim_mode: canonical
+dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 ---
 
 # SRT_Reference_Scaling.md
+
+> **层级说明**：本文件属于 **L1（接口层）**。
+> 本文件将 L0 命题"选择先于存在"与"三域结构"在跨尺度语境下形式化为同构定理和标度律。
+> L0 意义见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)。
 
 > **Status**: Constitutional Reference | **Version**: 1.0
 > **依赖**: SRT_Reference_Axioms.md, SRT_Reference_Dynamics.md
@@ -134,7 +141,7 @@ b) 统一约束：
 
 - 自相似选择定理：$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$（T-Scale-1），选择操作在尺度变换下保持不变。
 - 尺度耦合方程：$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{ij}(\hat{G}_i, \hat{G}_j)$（S1），多尺度算子通过耦合项交互。
-- 统一自由能：$F = E - TS - d \cdot U_{others}$（S2），在所有尺度保持形式不变。
+- 统一自由能目标：$F_{SRT} = F_{base} - d \cdot U_{others}$（S2），其中 $F_{base}$ 可取热力学或变分自由能；跨尺度保持的是结构而非单位。
 - 意识阈值：$d > d_{threshold} \land \Phi_{sensitivity} > 0$（S2），仅当脆弱性和选择深度同时满足时成立。
 
 ### Mechanism Explanation (机制解释)
@@ -222,11 +229,11 @@ $$\frac{dρ_{L_1}}{dt} = -\frac{i}{\hbar}[\hat{H}, ρ] - \hat{G}_θ[ρ - ρ_{tar
 - FC-Master1-1：若方程S2为操作性主方程（而非仅启发性框架），则对具体量子系统（如NV色心/量子点）应能给出区别于标准Lindblad方程的可测预测——若两者预测完全一致则Ĝ_θ扩展无物理附加值
 - FC-Master1-2：在神经层面，三项对应（自发神经活动/选择性激活/记忆固化）的时间常数应存在阶层关系（τ_{幺正} ≪ τ_{选择} ≪ τ_{退相干}），且各常数应与已知神经生理时间窗（毫秒/秒/天）对应——若阶层关系不成立则三项对应解释需修订
 
-### §4.2 统一自由能方程
+### §4.2 统一自由能目标
 
-$$F = E - TS - d · U_{others}$$
+$$F_{SRT} = F_{base} - d \cdot U_{others}, \quad F_{base} \in \{F_{thermo}, F_{var}\}$$
 
-此方程在所有尺度保持形式不变。
+此式在所有尺度保持不变的是“基线目标 + 关切修正”的结构形式；具体单位跟随所选 $F_{base}$，不主张量子/神经/社会层直接共用同一量纲。
 
 ---
 
@@ -713,4 +720,3 @@ L_2 稳定性来自组合图的可交换性与代价可支付性。
 ## 【理论边界/防误用声明】
 - 不采纳“形式可交换即现实可稳定”的推论；必须同时满足 \(\Psi_f\)-payable。  
 - 不采纳“范畴组合自动导出主体性”的推论；主体性仍受 \(d>0, V>0\) 门控。
-

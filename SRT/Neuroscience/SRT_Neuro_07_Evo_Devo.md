@@ -3,6 +3,9 @@ id: SRT-NEURO-07
 type: theory
 tags: [Evolution, Development, Bioelectricity, Cancer, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
@@ -312,6 +315,26 @@ Michael Levin 实验室的一系列实验为 SRT 提供了关键支持：
 - 超声效应往往混合了微管/纺锤体机械扰动、Piezo1/钙流、膜通透化、热效应与空化等多条路径，不能简单归因为“纯微管共振”。
 - 选择性更可能来自细胞周期、尺寸、黏附状态、组织力学背景与阻尼条件，而不是“所有癌细胞共享同一机械签名”。
 - `Biosystems` 2026 的 Fibonacci 声学序列仍属探索性假设生成窗口，不能单独升格为治疗原则。
+
+### 3.2.5 单细胞联结学习窗口（2026-03-21 patch）
+
+用户提交的 Veritas / *New Scientist* 二手报道，背后主锚点是 Gershman 团队的 *bioRxiv* 预印本 `Associative learning in the protozoan Stentor coeruleus`（`2026-02-27` posted；doi:`10.1101/2026.02.27.640732`）。这条材料真正值得写入 SRT 的新增量，不是泛泛重复“单细胞也会适应刺激”，而是把无神经系统的生理计算窗口从 **habituation** 往前推了半步：在 `weak tap -> strong tap` 的重复配对后，`Stentor coeruleus` 对弱刺激本身的收缩倾向上升，表现出一个最小的 **cue-prediction / associative-learning** 候选窗口。
+
+若按 SRT 语言收紧，这意味着 `\theta_{physio}` 不只承载稳态维持或形态目标，也可能在纯细胞尺度上暂时写入一个短时的转移模板：
+\[
+P(\text{contract}\mid \text{weak tap},\ \text{paired history})
+>
+P(\text{contract}\mid \text{weak tap},\ \text{unpaired history})
+\]
+这里可被读取的不是“神经回路版记忆”，而更像 mechanoreceptor / calcium / membrane-voltage / contractile state 之间形成的瞬时门控偏置。换言之，学习并不必从突触开始；在更古老的谱系里，它可能先以 **non-neural physiological computation** 的形式存在，之后才在多细胞神经系统中被放大、专门化并长期稳定化。
+
+这条材料与本文件前面的 Levin 线索能形成一个很窄但重要的闭环：如果发育与再生已显示细胞群体可在 `L_2^{bioelectric}` 约束下解形态问题，那么 `Stentor` 预印本则提示，单细胞本身也可能拥有一个更原初的“时序联结”能力。它支持 Levin 所说的 `deep symmetries between evolution and learning`，但把这一说法从形态目标层，往前压到 **单细胞预测性收缩** 这一更底层的现象窗口。
+
+**边界必须收紧：**
+- 当前主证据是 *bioRxiv* 预印本加二手报道，还不是同行评审定论。
+- 现有范式主要展示的是约 `1` 秒量级、每 `45` 秒重复一次的短时配对窗口，不等于任意长间隔的 trace conditioning，更不等于已达到 `d \ge d_{UAL}`。
+- 报道中的 readout 主要来自固定在培养皿底部的 `Stentor` 群体响应；“单个细胞内部如何存储联结痕迹”仍未锁定。
+- 这条材料支持的是 **non-neural associative-learning window**，不是“单细胞已经被证明具有现象意识”。
 
 ## 3.3 认知-形态同构的深刻含义
 

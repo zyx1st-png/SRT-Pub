@@ -3,6 +3,9 @@ id: SRT-SOC-02
 type: theory
 tags: [Behavioral Economics, Game Theory, System 1/2, Irrationality, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SOC-01]
 ---
 

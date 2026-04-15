@@ -3,6 +3,9 @@ id: SRT-SPIRIT-04
 type: synthesis
 tags: [Theology, Thermodynamics, Unified Field, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-03]
 ---
 

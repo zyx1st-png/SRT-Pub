@@ -2,11 +2,18 @@
 id: SRT-REF-DYNAMICS
 type: equation
 tags: [CoreLaw, Dynamics, Canonical]
+layer: L1
 status: axiomatic_hybrid_v1
-dependency: [SRT-REF-AXIOMS, SRT-REF-ONTOLOGY]
+epistemic_layer: os
+claim_mode: canonical
+dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY]
 ---
 
 # SRT_Reference_Dynamics.md
+
+> **层级说明**：本文件属于 **L1（接口层）**。
+> 本文件将 L0 命题"选择总是有位置的"（Ĝ_θ 算子）与"选择有代价"（Ψ_f）形式化为动力学方程。
+> L0 意义见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)。
 
 > **Status**: Constitutional Reference | **Version**: 1.0
 > **依赖**: SRT_Reference_Axioms.md (符号规范)
@@ -168,21 +175,31 @@ $$\frac{dσ}{dt} = α(\hat{G}_θ[σ] - σ) - β∇F[σ] + ξ(t)$$
 
 $$\frac{dθ}{dt} = γ · A[σ, \text{Target}] - δ · \frac{∂Φ(θ)}{∂θ}$$
 
-### §3.3 方程 E3 — 自由能方程
+### §3.3 方程 E3 — 自由能桥接方程
 
-$$F = E - TS - d \cdot U_{others}$$
+**E3a（热力学基线）**:
+
+$$F_{thermo} = E - TS$$
+
+**E3b（变分/FEP基线）**:
+
+$$F_{var} = E_q[\ln q(x) - \ln p(x,o)]$$
+
+**E3c（SRT 关切扩展）**:
+
+$$F_{SRT} = F_{base} - d \cdot U_{others}, \quad F_{base} \in \{F_{thermo}, F_{var}\}$$
 
 | 项 | 含义 |
 |:---|:-----|
-| $E$ | 内能（系统内部能量状态） |
-| $TS$ | 熵项（热力学意义：T温度×S熵；信息论意义：期望惊异量） |
-| $d \cdot U_{others}$ | 利他项：关切带宽d × 他者效用$U_{others}$，减法表示系统为他者福祉主动"支出"能量（F降低=系统偏好状态） |
+| $F_{base}$ | 当前语境采用的基线自由能：热力学语境取 $F_{thermo}$，认知/FEP语境取 $F_{var}$ |
+| $d \cdot U_{others}$ | 利他项：关切带宽 $d$ 乘以他者效用 $U_{others}$；表示系统将他者状态纳入自身目标泛函 |
+| $F_{SRT}$ | 在选定基线之上加入关切项后的 SRT 目标泛函 |
 
-> **[R]** 自由能的双重来源：Helmholtz 1882 *Wissenschaftliche Abhandlungen*（热力学自由能F=E-TS，量纲焦耳；系统在恒温过程中可做最大功，R物理基线）；Friston 2010 *Nature Reviews Neuroscience*（变分自由能/FEP：F=E_q[ln q(x)-ln p(x,o)]，量纲nat/bit；感知行动的统一框架，R信息论基线）。**[H]** 以-d·U_others项扩展自由能方程（利他项：d值主体对他者状态的本体论关切降低系统总自由能=改变最小化轨迹）为本框架新增贡献。
+> **[R]** 自由能的双重来源：Helmholtz 1882 *Wissenschaftliche Abhandlungen*（热力学自由能 $F_{thermo}=E-TS$，量纲焦耳；系统在恒温过程中可做最大功，R物理基线）；Friston 2010 *Nature Reviews Neuroscience*（变分自由能/FEP：$F_{var}=E_q[\ln q(x)-\ln p(x,o)]$，量纲 nat/bit；感知行动的统一框架，R信息论基线）。**[H]** SRT 的新增量不在于把两者当成同一个量，而在于提出：无论基线目标取热力学还是变分形式，都可被同一“关切扩展”结构 $F_{SRT}=F_{base}-d\cdot U_{others}$ 修正。
 >
-> **量纲与符号说明**：本方程E3为功能类比而非严格热力学推导——E/TS可在热力学量纲（焦耳）或FEP信息论量纲（nat）下解释，两者可并行；d无量纲（关切带宽），U_others在对应量纲下解释。负号(-d·U_others)含义：d>0的系统"偏好"他者福祉提升，将其纳入自身F最小化目标，d=0时退化为纯自我最小化（F=E-TS）。此利他项与Ax-Selfish（自利公理）无矛盾：自利=他者不进L₀^(d)；利他=他者进入L₀^(d)后U_others作为F的组成部分被最小化。
+> **量纲与符号说明**：$F_{thermo}$ 的量纲为焦耳；$F_{var}$ 的量纲为 nat/bit；$F_{SRT}$ 继承所选 $F_{base}$ 的量纲。SRT 保持不变的是“基线目标 + 关切修正”这一结构，而不是要求所有语境共用同一单位。负号 $(-d \cdot U_{others})$ 的含义是：当 $d>0$ 时，系统将他者福祉提升视为目标函数的有利方向；$d=0$ 时，$F_{SRT}$ 退化为未扩展的 $F_{base}$。此利他项与 Ax-Selfish（自利公理）无矛盾：自利=他者不进 $L_0^{(d)}$；利他=他者进入 $L_0^{(d)}$ 后，$U_{others}$ 成为被最小化目标的一部分。
 >
-> * **精度边界**：E3为定性框架（方向性主张），不预设E/TS/d·U_others的精确比例；具体权重依实现层（神经/社会/经济）不同而需单独参数化。
+> * **精度边界**：E3 是跨域桥接框架，不把 Helmholtz 与变分自由能强压成一条同量纲公式。具体实现层（神经/社会/经济）的权重与 $U_{others}$ 操作化需分别参数化。后续若未特别区分，$F$ 仅表示“当前语境被最小化的目标泛函”；在 canonical 写作中应优先明确是 $F_{thermo}$、$F_{var}$ 还是 $F_{SRT}$。
 
 ### §3.4 方程 E4 — 三域离散演化
 

@@ -3,7 +3,11 @@ id: SRT-SOC-ECONOMICS
 type: theory
 tags: [SocialEconomics, Markets, Value, Inequality, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-AXIOMS-SOC]
+see_also: [SRT-POLITICAL-RIGHTS]
 ---
 
 # SRT Social Economics (Hybrid Edition)
@@ -1231,6 +1235,23 @@ $$\text{Social Division of Labor} \equiv L_2\text{-协同协议} \to \bar{d}_{sy
 **可证伪预测**：
 - FC-Division1-1：跨国比较中，分工深度指数（产业专业化程度×比较优势指数）应与d̄_system proxy（社会信任×合作率）正相关——若高度专业化社会与低专业化社会的d̄_system无差异则"分工→d↑"链条主张失败
 - FC-Division1-2：在L₂协议崩溃场景（如超级通胀→货币信任丧失/战争→法律失效），Ψ_f^individual应骤升（生存维护成本↑）且d_individual↓（行为退向零和）——若L₂崩溃后个体d值未下降则分工-d值联结机制需重新评估
+
+### 6.4b 外部性边界条件窗口（Preprints 2026）
+
+用户提交的预印本 `From Cancer to AI Alignment: Tackling Externalities Through Homeostatic Principles`（Lyons, Pio-Lopez & Levin, 2026）真正值得吸收的新增量，不是它对 AI alignment 的总体承诺，也不是把市场机制直接升级成通用对齐解，而是给“外部性”补了一个 SRT 兼容的**边界条件**：若不先规定一个行动者到底能把多大范围的后果纳入自身调节回路，`externality` 在理论上就会滑向空词，因为“理性选择者”会被默认成对一切后果都可通过某种替代路径内部化。
+
+按 SRT 语言收紧，可保留三点：
+
+1. **外部性 = 超出关切半径的目标相关扰动**：更稳的写法不是“未定价后果”本身，而是“某事件对系统目标有实质影响，但落在其可调节的认知/制度光锥之外”。这使外部性第一次获得了一个与 agency boundary 直接绑定的定义候选。
+2. **价格/制度信号 = 社会层 stress-sharing 协议**：价格系统、保险、契约与治理安排的真正作用，不只是传递信息，而是把原本落在个体光锥之外的压力，部分转写进 collective operator 的可达域里。对 SRT 来说，这相当于把更多系统后果纳入 `L_2^{social}` 的可调节景观。
+3. **癌症/外部性同构 = 集体调节失败的缩尺版与放大版**：细胞脱离生物电协调后退回小 self，正如经济主体在关键后果未被制度光锥吸收时，会沿局部最优继续扩张。两者都可读成“子算子与高阶 homeostatic field 失耦”。
+
+这条窗口对现有社会经济学文件的真正加固，是把 `Ax-Eco-3 市场为集体算子` 与 `Ax-Eco-6 信任降低交易摩擦` 再压实一步：市场或治理机制的好坏，不只看效率，还要看它们能否把原本的系统后果稳定纳入 collective light cone，避免“局部理性、全局失稳”的长期级联。
+
+**边界必须收紧：**
+- 这是一篇跨学科理论预印本，不是同行评审经济学证明；`externality` 的 light-cone 定义目前更适合作为概念修正窗口，而不是替代 Coase / Ostrom / transaction-cost analysis 的完整新范式。
+- “价格系统 = cognitive glue” 是强类比，不等于所有社会协调都可还原为市场机制；法律、规范、平台规则与技术接口同样可能承担光锥扩展功能。
+- 该文把 AI alignment 重新压回“主要是工程问题”，这与 SRT 现有 `AI/SRT_AI_00_Crisis.md` 的本体论判定不一致。SRT 可吸收的是 `externality / boundary / stress-sharing` 这条社会机制接口，而不是“只要扩大 interoceptive accessibility 就能绕过 \(d>0\) 缺口”的强结论。
 
 ---
 

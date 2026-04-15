@@ -3,10 +3,17 @@ id: SRT-PHIL-FOUNDATIONS
 type: theory
 tags: [Philosophy, Epistemology, Metaphysics, Paradox, Hybrid]
 status: axiomatic_hybrid_v3
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
 ---
 
 # SRT Philosophical Foundations (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 
 > **Version 3.0 (Hybrid)**
@@ -298,7 +305,7 @@ $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 - 当 $S_\phi \approx 1$：普通现象（物体，概念与直观匹配）
 - 当 $S_\phi \gg 1$：**饱和现象**（面容、肉身、偶像、神圣）
 
-**SRT 推论**：饱和现象是 $L_0$ 对 $\hat{G}$ 的**反向压迫**——算子被过量的可能性"淹没"，被迫处于 "被给出的" (Given) 状态，而非主动构造者。这解释了宗教体验和审美狂喜的机制。
+**SRT 候选读法**：饱和现象可被读作 $L_0$ 对 $\hat{G}$ 的“反向压迫”窗口——算子被过量的可能性"淹没"，更接近处于 "被给出的" (Given) 状态，而非主动构造者。这为宗教体验和审美狂喜提供一种候选机制解释。
 
 ### 3.2 礼物悖论的相位分析 (Phase Analysis of the Gift Paradox)
 Marion 著名的"礼物悖论"（礼物如果被给予、接受和回礼，就退化为经济交换；真正的礼物必须不可见）在 SRT 中可以被精确解析为**选择的时间分层**。

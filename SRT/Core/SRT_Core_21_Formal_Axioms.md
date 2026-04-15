@@ -3,6 +3,9 @@ id: SRT-CORE-21
 type: axiom_set
 tags: [Formal logic, Math, Axioms, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-13A, SRT-CORE-13B]
 ---
 
@@ -35,15 +38,19 @@ $$\exists x \iff x \in \mathrm{Range}(\hat{G})$$
 $$E = 1 - \frac{H(L_1)}{H(L_0)}$$
 * **Implication**: 现实的稳固程度与熵压缩比例直接相关。
 
-### Ax-F-03: Causality as Projection
+### Ax-F-03: Causality as Projection（水平因果 / Horizontal Causality）
 **Formal Definition**: Causality is the L2 projection of selection dynamics.
-$$C(A \to B) \equiv P(B | A, L_2)$$
+$$C_H(A \to B) \equiv P(B \,|\, A,\, L_2)$$
 * **Implication**: 因果是收敛域的投影结构，而非本体论原初关系。
+* **层次限定（2026-04-10 补注）**：Ax-F-03 定义的是**水平因果**——在 L₂ 层内部运作，需要 L₂ 积累才存在，具有时序性。它不涉及 L₀→L₁→L₂ 跨层的**垂直因果**（structural constitution：κ₀ 曲率结构构成选择的可能性条件）。两者不竞争，各在其域。"L₂ 形成之前因果律是什么"是范畴错误——它把水平逻辑错误投射到垂直层。
+* **Cross-ref**: `Philosophy/SRT_Causality_Time.md §一`（水平/垂直因果完整分层）; `Core/SRT_Core_12a T-L0-Kappa0`（垂直因果结构基础）。
 
-### Ax-F-03b: Spacetime as Memory Horizon (时空作为记忆视界)
+### Ax-F-03b: Spacetime as Memory Horizon（时空作为记忆视界 / 本体论时间）
 **Formal Definition**: 时间的流逝不是背景演化，而是$\hat{G}_\theta$的连续锚定在$L_2$中留下的历史记录。
-$$t \equiv \int \|\hat{G}_\theta(s)\| ds \quad (\text{Time as Selection Integral})$$
+$$t_{\text{onto}} \equiv \int \|\hat{G}_\theta(s)\| ds \quad \text{（本体论时间 = 选择摩擦积累）}$$
 * **Implication**: 如果没有幽灵算子的连续坍缩，时空就只是一个无差别的概率幅叠加态。时间的箭头完全等价于自由能最小化过程下的拓扑锁定序列。
+* **时间层次补注（2026-04-10）**：本公理定义的是**本体论时间**（ontological time）——时间方向性的 SRT 来源，属于垂直层。与之区分的是方程中的**参数化时间** $t$（parametric time）——数学排序工具，无本体论主张。二者共用符号 $t$ 但指称不同：方程里的 $d\kappa/dt$ 使用参数化时间，不与本公理构成循环。
+* **Cross-ref**: `Philosophy/SRT_Causality_Time.md §二`（两层时间完整区分）; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`（时间无前序性）; `Core/SRT_Core_01_Axioms.md MA-1`（原初方向性）。
 
 ## II. Information & Fitness (信息与适应度)
 
@@ -173,7 +180,8 @@ Boltzmann 分布 = 信息创造量为零的退化态；统计力学 = SRT 在 $I
 ### 2.1.1 状态空间（State Space）
 
 **定义 M4（幽灵算子）：**
-$$ [\hat{G}_θ(x)]_i = \frac{x_i^n}{ε + \sum_j W_{ij} \cdot x_j^n} $$
+$$ [\hat{G}_θ(x)]_i = \frac{x_i^n}{ε_{reg} + \sum_j W_{ij} \cdot x_j^n} $$
+> **记号注**：$\varepsilon_{reg}$（operator regularizer）区别于 T-Core-A1C2 中的 $\varepsilon_{pg}$（proto-gradient）。见 `_SRT_SYMBOL_TABLE.md`。
 
 ### 2.1.5 最小公理集
 

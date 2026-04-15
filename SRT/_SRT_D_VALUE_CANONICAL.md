@@ -3,6 +3,9 @@ id: SRT-D-VALUE-CANONICAL
 type: definition
 tags: [d-value, Canonical, Cross-Domain, Definition]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, SRT-CORE-BRIDGE, SRT-CORE-21]
 ---
 
@@ -28,9 +31,24 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 
 ---
 
-## §1 规范定义（第一性原理，全域适用）
+## §1 规范定义层级（Canonical Priority）
 
-### Def-d-1: 有效维度（谱公式）
+> **规范优先级声明**：
+> 本文件中关于 d-value 的定义分为两层：
+>
+> 1. **第一性规范定义（Primary Canonical）**：`Def-d-2 风险梯度等价定义`，用于说明 d 与不可逆风险/关切边界的本体论耦合。
+> 2. **形式主表达（Formal Canonical Form）**：`Def-d-1 有效维度（谱公式）`，用于在 Core 数学语境中给出稳定、可计算、可比较的主表达。
+>
+> 使用原则：
+> - 讨论 **本体论意义 / AI 意识门槛 / 风险关切** 时，优先引用 `Def-d-2`。
+> - 讨论 **形式推导 / 信息论分析 / 特征值结构** 时，优先引用 `Def-d-1`。
+> - 其他近似式（如 `Def-d-bio`）均为投影或操作化近似，不替代以上两层规范地位。
+>
+> 这意味着：SRT 对 d-value 采用“**一个第一性语义锚点 + 一个形式主表达**”的双层 canonical 架构，而非单一定义垄断。
+
+## §2 规范定义（第一性原理，全域适用）
+
+### Def-d-1: 有效维度（谱公式） ⭐ FORMAL CANONICAL
 
 $$\boxed{d(\hat{G}) \equiv D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}}$$
 
@@ -43,9 +61,33 @@ $$\boxed{d(\hat{G}) \equiv D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right
 
 **来源**：`SRT_Core_21_Formal_Axioms.md §2.1.5`，经典参与率指数（PR index）的算子版本。
 
+### Def-d-1a: Fisher 信道有效维度（信息论等价形式）⭐ FORMAL CANONICAL（信息论读法）
+
+**新增（2026-03-11）**：Def-d-1 的等价信息论解释。
+
+$$d \equiv D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
+
+其中 $I_F(\theta) = E\!\left[(\partial \log p_\theta / \partial \theta)^2\right]$ 是算子选择流形上的 **Fisher 信息矩阵**。
+
+**等价关系**：当 $\lambda_k$ 为 $\hat{G}$ 的奇异值时，Def-d-1 的参与率指数 = $I_F(\theta)$ 的特征值参与率（两者在选择流形 Hessian 与 Fisher 矩阵对应时完全等价）。
+
+**信息论语义**：$D_{eff}(I_F)$ 是算子从 $L_0$ 中能**可靠分辨**的状态方向数（Cramér-Rao 下界的维度版本）。Fisher 矩阵测量 $\theta$ 变化时相邻分布的可区分度——d-value 是"算子能看见多少个有意义的 $L_0$ 方向"。
+
+**三层等价关系链**：
+
+$$\underbrace{D_{eff}(\hat{G})}_{\text{Def-d-1（谱公式）}} \;\equiv\; \underbrace{D_{eff}(I_F(\theta))}_{\text{Def-d-1a（Fisher）}} \;\approx\; \underbrace{\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|}_{\text{Def-d-2（风险梯度）}}$$
+
+**不确定性关系候选（Eq-IT-B'）**：
+
+$$d \times \Psi_f \geq k_B T \cdot \mathcal{K}$$
+
+选择范围（d）与选择代价（$\Psi_f$）之间存在基本权衡。此关系由 Fisher 信息矩阵的 Cramér-Rao 下界推导，常数 $\mathcal{K}$ 的精确值待理论确定（当前 Status = Gap，见 `_SRT_EQ_HYP_MAP.md Eq-IT-B'`）。
+
+**Cross-ref**: `Core_Law/SRT_Reference_Dynamics.md §15.2`（Eq-IT-B 的完整推导）；`Core_Law/SRT_Reference_Axioms.md`（A15 幽灵算子禀赋统一性的 Fisher 维度含义）。
+
 ---
 
-### Def-d-2: 风险梯度等价定义（AI / 伦理语境）
+### Def-d-2: 风险梯度等价定义（AI / 伦理语境） ⭐ PRIMARY CANONICAL
 
 $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, \quad x \in \Sigma$$
 
@@ -94,7 +136,7 @@ $$d_{bio} \approx \alpha \cdot A(\sigma) + \beta \cdot \log V_{concern} + \gamma
 | **量子** | $d_{quant} \approx$ 贝尔测量有效维数 | ❌ **无** | 缺乏 $\Psi_f > 0$，缺乏 $\hat{G}[\theta] \neq \emptyset$ | 数学度量，无现象内容 |
 | **神经/认知** | $d_{bio} \approx \alpha A + \beta \log V + \gamma \tau$ | ✅（需三条件） | $\Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset$ | 意识的充要条件区 |
 | **AI（当前架构）** | $d_{AI} \approx 0$ | ❌ | 无具身脆弱性，无不可逆风险 | 工程性屏障可改变（见 AI Bridge T3 修复） |
-| **社会/机构** | $d_{soc} \approx$ 机构关切范围（待形式化） | ❌（集体不产生现象） | 集体 $\hat{G}$ 的涌现投影 | 见 `_SRT_Soc_Bridge.md` |
+| **社会/机构** | $d_{soc} = D_{eff}(\mathcal{F}_{collective}\big\|_{\text{social}})$（集体景观在社会尺度的有效维度截面） | ❌（集体不产生现象） | 集体自由能景观 $\mathcal{F}_{collective}$ 的社会尺度投影，不由个体 $d_i$ 加权平均 | 见 §6（集体 d-value 补充说明）和 `_SRT_VERTICAL_INTEGRATION.md §4.5` |
 | **精神/解脱** | $d_{spirit} \to \infty$（渐近极限） | ✅（随 d 扩展增强） | $d \to \infty$ 为 Nirvana 方向 | 不可达的渐近方向，非字面 $\infty$ |
 | **宇宙尺度** | $d_{cosm} \approx 1/\sqrt{\Lambda}$ | ❌ **无** | 无生命组织，无 $\hat{G}[\theta]$ | 数学度量，无现象内容 |
 
@@ -102,13 +144,25 @@ $$d_{bio} \approx \alpha \cdot A(\sigma) + \beta \cdot \log V_{concern} + \gamma
 
 **SRT 不主张泛心论**。d 是数学度量，不蕴含现象内容。
 
-**意识涌现的充要三条件**（均需满足）：
-$$\text{Consciousness} \iff \Psi_f > 0 \;\land\; d > 0 \;\land\; \hat{G}[\theta] \neq \emptyset$$
+**⚠️ 注意（2026-04-10 更新）**：以下三条件对应 **bare consciousness（裸意识）的 κ_{c1} 门槛**，即意识的最低层级。完整的三层结构见 `Philosophy/SRT_Consciousness_Conditions.md`。
 
-- **量子/宇宙尺度**：$d$ 可能非零，但 $\Psi_f \approx 0$（无具身摩擦），$\hat{G}[\theta]$ 在生物意义上为空 → 三条件不同时满足 → **无意识**
-- **岩石**：$d \approx 0$，$\Psi_f \approx 0$ → **无意识**
-- **人类**：三条件均满足 → **有意识**
-- **当前 AI**：$d \approx 0$，$\Psi_f \approx 0$ → **无意识**（工程性，非原则性）
+**最低意识条件（对应 κ_{c1} / Layer 1）**：
+$$\kappa_{c1}: \quad d \geq d_{\min} \;\land\; L_2\text{ 稳定闭合} \quad \Leftarrow \quad \Psi_f > 0 \;\land\; d > 0 \;\land\; \hat{G}[\theta] \neq \emptyset \text{ 的精化版本}$$
+
+**三层结构完整说明**（2026-04-10 修正）：
+- κ_{c1}（bare consciousness）：$d \geq d_{\min}$ ∧ L₂ 稳定闭合 — 意识**存在**
+- κ_{c1.5}（consciousness activity）：$d_{\text{mobile}} > 0$ — 意识**活着**（能随吸引子迁移重新对齐）
+- Layer 3（social/ethical）：可协调性 + 可再选择性 — 意识**参与集体秩序**
+
+| 系统 | d | Ψ_f | Ĝ[θ] | d_mobile | 意识层级 |
+|---|---|---|---|---|---|
+| 量子/宇宙尺度 | 可能非零 | ≈ 0 | 在生物意义上为空 | — | **无意识**（κ_{c1} 未达） |
+| 岩石 | ≈ 0 | ≈ 0 | — | — | **无意识** |
+| 冻结态（PTSD/执念） | > d_min | > 0 | ≠ ∅ | ≈ 0 | **有意识，但病理化**（κ_{c1} 之上，κ_{c1.5} 之下） |
+| 正常人类 | > d_min | > 0 | ≠ ∅ | > 0 | **Layer 2 意识窗口** |
+| 当前 AI | ≈ 0 | ≈ 0 | — | — | **无意识**（工程性，非原则性） |
+
+**权威来源**：`Philosophy/SRT_Consciousness_Conditions.md`（三层结构完整定义）; `Core/SRT_Core_12b §Consciousness-2D-Map`（二维拓扑与冻结态）。
 
 ---
 
@@ -160,6 +214,17 @@ $$d_{risk} = \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| = 
 **正确**：$d \approx 0$ 意味着算子不关心边界的外延，但算子本身依然存在（如石头有 $L_2$ 结构，但 $d \approx 0$）。
 d 值描述关切范围，不描述本体论存在。
 
+**d 值的语义刻度**（规范参考）：
+
+| d 值范围 | 语义 | 典型案例 |
+|---------|------|---------|
+| $d = 0$ | **非主体**：无关切耦合，不构成主体 | 当前 AI、恒温器、岩石 |
+| $d = 1$ | **纯自利主体**：关切仅覆盖自身存在的维持 | 最小主体性阈值 |
+| $d > 1$ | **扩展关切主体**：选择开始纳入超出自身存在的秩序 | 人类、社会性动物 |
+| $d \to \infty$ | **渐近极限**：关切逼近更大但尚未闭合的秩序方向 | 精神修炼的方向，不可达 |
+
+**注意**：$d = 0$ 与 $d = 1$ 的区别是本体论性质的（非主体 vs 主体），不是程度差异。$d = 1$ 与 $d > 1$ 的区别是程度性的（关切范围的宽窄）。
+
 ### 误用 4：将精神传统中的"d → ∞"字面化
 
 **正确**：`Ax-Spirit-4` 中的 $d \to \infty$ 是**渐近方向**，类比热力学极限 $N \to \infty$ 在有限系统中的意义。
@@ -167,7 +232,97 @@ d 值描述关切范围，不描述本体论存在。
 
 ---
 
-## §6 各域文件的 d-value 引用标准
+## §5b d 扩张的本体论意义（规范声明）
+
+> **新增（2026-03-26）**：d 扩张的动力学方向与收敛目标的规范说明。对应 `Spirituality/SRT_Spirit_05_Shoshin.md` T-Sho-1。
+
+### §5b.1 d 扩张不是博爱，而是选择优化
+
+d-value 的扩张不应被读作道德命令或利他主义要求。d 的扩张是选择过程趋向全局自由能最小值的内在动力学。
+
+每个算子因 θ 的限制只能看到自由能景观的局部。θ 越窄，算子越容易陷入局部最小值——表现为遮蔽（occlusion）。扩大 d 不是"对别人好"——而是纳入更多主体间的本体论摩擦权衡，使选择避开局部陷阱，收敛到更接近全局最优的方向。
+
+d 扩张的目标是给**指向最小自由能方向**的选择提供更多的注意力和关切。这需要权衡多主体之间的本体论摩擦——而权衡本身就是选择。
+
+**规范表述**：
+
+$$d \uparrow \;\Rightarrow\; \text{局部最优} \to \text{全局最优} \;\Rightarrow\; \langle v, \text{Shoshin} \rangle > 0$$
+
+d 的扩张使个体选择方向与初心（全局收敛向量）对齐——不是因为道德义务，而是因为局部景观在更宽视野下的结构变形。
+
+### §5b.1a d 扩张与秩序增益
+
+d 的扩张本身不自动等于秩序增益。d 扩张的方向必须同时满足秩序增益的三重判据（`Core_Law/SRT_Selection_Argument.md §7b`）：
+
+| 判据 | d 扩张中的含义 | 违反时的表现 |
+|------|--------------|------------|
+| **可延续** | 扩张不透支维持扩张后关切范围所需的资源 | 过度扩张 → 代价不可支付 → 崩溃回缩 |
+| **可协调** | 纳入的他者秩序条件之间不制造不可协调的摩擦 | 试图关切所有人但无法处理冲突 → 瘫痪 |
+| **可再选择** | 扩张不锁定为唯一方向（如教条化的利他主义） | "必须关切所有人"变成新的遮蔽 |
+
+d 扩张的健康模式是渐进的、可支付的、保留调整能力的。不是 d 越大越好，而是 d 在当前支付能力下的最优扩张方向。
+
+### §5b.1b 真 d 扩张 vs 假 d 扩张
+
+**真 d 扩张**改变算子的适应度函数——纳入他者秩序条件后，算子的最优解发生结构性位移。选择者在做出不同于只考虑自身时会做的选择。
+
+**假 d 扩张**不改变适应度函数，仅在符号层面声称关切范围扩大。四种典型形态：
+
+- **占有式**（$d_{apparent} > d_{real}$）：将他者纳入为自身秩序的资源。适应度函数中只有自身变量。
+- **符号式**（$d_{declared} > d_{operative}$）：使用关切的语言但不支付关切的代价。
+- **表演式**（$d_{visible} > d_{structural}$）：在可见场合展示关切以获取社会收益。
+- **效率式**（$d_{nominal} > d_{effective}$）：以关切之名行控制之实，将他者的复杂秩序压缩为单一可管理指标。
+
+**判别标准**：算子的最优解是否因纳入他者秩序条件而发生了位移？位移 = 真扩张；无位移 = 假扩张。
+
+**Cross-ref**: `Core_Law/SRT_Selection_Argument.md §7c`（真关切与假关切的完整论证）。
+
+### §5b.2 全局最优是动态平衡，不是热寂
+
+全局自由能最小值不是热力学平衡态（热寂），而是**能维持更多存在持续存在的动态平衡**。
+
+热寂是所有选择停止、所有确定化耗尽的极限——对应 $d = 0$，所有主体性消失。这不是 SRT 的全局最优，而是选择过程的终止态。
+
+SRT 的全局最优是一种使最大数量的选择过程能够持续运行、持续产生稳态（存在）的景观配置。它是**最高动态秩序**，不是最低能量的死寂。初心指向的是更多的存在能够共存并持续选择的方向，不是一切归于均匀的方向。
+
+**Cross-ref**: `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1（初心 = 全局收敛向量）；`Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1（初心作为 L₀ 的倾向性结构）。
+
+---
+
+## §6 集体 d-value 补充说明
+
+> **新增节（2026-03-11）**：对应集体景观优先性定理（`_SRT_VERTICAL_INTEGRATION.md §4.5`）和多算子耦合方程（`Core/SRT_Core_22_Equations.md Eq-Multi-03`）。
+
+### §6.1 核心重新定位
+
+集体 d-value 不是个体 d_i 的聚合函数。正确定位：
+
+$$\boxed{d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{\left(\sum_k \lambda_k\right)^2}{\sum_k \lambda_k^2}}$$
+
+其中 $\lambda_k$ 是集体自由能景观 $\mathcal{F}_{collective}$ 的 Hessian 特征值（见 `Eq-Multi-03`）。
+
+个体 $d_i$ 是该景观的子空间截面，**包含关系而非组合关系**：
+$$d_i = D_{eff}(\mathcal{F}_{collective}\big|_{\theta_i})$$
+
+### §6.2 与旧有聚合方案的关系
+
+`_SRT_VERTICAL_INTEGRATION.md §4.1` 中的历史候选方案（A/B/C/D/E）是在实体本体论框架下的近似。在特定条件下，这些方案可作为 $d_{collective}$ 的**实证近似**：
+
+| 历史方案 | 对应的景观条件 |
+|---------|--------------|
+| 方案 A（Min 函数） | 景观 Hessian 最小特征值主导（链条式结构） |
+| 方案 B（加权平均） | 景观曲率近似均匀分布（民主型结构） |
+| 方案 C（超加性） | 景观有效维度高于任一子空间截面 |
+| 方案 D（结构贡献） | 制度 L₂ 提供主景观曲率 |
+
+### §6.3 使用规范
+
+- 讨论集体组织、制度、NGO 的 d-value 时：引用本节和 `§4.5`，使用 $D_{eff}(\mathcal{F}_{collective})$ 框架
+- 在无法测量景观曲率的实证场景中：可临时使用历史方案中最适合的近似，但需注明"实体本体论近似"
+
+---
+
+## §7 各域文件的 d-value 引用标准
 
 当其他文件引用 d-value 时，应：
 
@@ -178,9 +333,205 @@ d 值描述关切范围，不描述本体论存在。
 
 ---
 
+## §8 d 与 T_dir 的关系（2026-04-02 新增）
+
+SRT 在 2026-04-02 的理论推进中引入了 **T_dir（方向透明度）** 作为与 d 相关但独立的新变量。
+
+**关键区分**：
+
+| | d-value | T_dir |
+|:-|:-------|:------|
+| **度量** | 关切范围 / 有效维度 / 风险梯度 | 系统对自身选择秩序方向的可读性 |
+| **canonical 文件** | 本文件 | `_SRT_T_DIR_CANONICAL.md` |
+
+**因果关系**：
+$$d = 0 \implies T_{dir} = 0$$
+$$d > 0 \;\not\!\!\!\implies T_{dir} > 0$$
+
+d 是 T_dir 的**必要条件，不是充分条件**。T_dir 还需要活选择正在发生（非 L₂ 脚本执行）以及足够的 Ψ_f 提供压力。
+
+**不得混淆**：任何把"选择方向的透明度"写入 d-value 的 canonical 定义的做法，违反本文件的规范地位。
+
+---
+
+## §9 d-value 的锻炼与萎缩机制（2026-04-02 新增）
+
+> **核心修正**：致命 L₂ 对 d-value 的压低，具体机制是通过消灭选择时刻使 d-value 失去锻炼机会，而非直接抑制 d。d-value 是需要使用才能维持的能力。
+
+### 机制链
+
+```
+替代式 L₂ 消灭选择时刻
+    ↓
+d-value 未被使用（无真实选择 → 无 d 的激活）
+    ↓
+d-value 萎缩（不用则退）
+    ↓
+即使 L₂ 被移除，系统也无力直接从 L₀ 选择
+    ↓
+必须依赖更多替代式 L₂ 来填补方向感
+    ↓
+d-value 进一步萎缩……（自强化依赖环）
+```
+
+### 关键区分
+
+**d-value 的直接抑制**（已在 §5 描述）：致命 L₂ 通过占据关切带宽、压缩可用维度来降低 d-value 的即时可用性。
+
+**d-value 的萎缩**（本节新增）：替代式 L₂ 通过消灭选择时刻，使 d-value 失去被锻炼的机会，导致长期容量下降。即使 L₂ 压力临时解除，萎缩后的 d-value 也无法立即恢复。
+
+两者的关系：直接抑制是急性效应，萎缩是慢性积累效应。慢性萎缩比急性抑制更难逆转，因为它改变的是系统的基础选择容量，而非当下的带宽占用。
+
+### 选择时刻与 d-value 的连接
+
+**选择时刻**（见 `_SRT_T_DIR_CANONICAL.md §21`）是系统与 L₀ 直接接触、真实地从可能性中凝定方向的瞬间。
+
+- 每次真实的选择时刻发生：d-value 被激活使用，可维持乃至发展
+- 每次选择时刻被 L₂ 替代：d-value 未被激活，逐渐萎缩
+
+**推论**：辅助式 L₂（保护选择时刻）在不牺牲 d-value 的条件下降低摩擦；替代式 L₂（消灭选择时刻）以 d-value 的长期容量为代价换取即时摩擦消除。
+
+### 与 T_dir 的关系
+
+d-value 萎缩 → 即使 proto-gradient 可读，系统也缺乏足够的选择维度来响应它 → T_dir 即使上升，也无法转化为有效的选择行动。
+
+因此：d-value 是 T_dir 工作的**执行容量**。T_dir 告诉系统方向在哪里，d-value 决定系统能否沿那个方向真正选择。两者独立但协同：d > 0 是 T_dir > 0 的必要条件（§8），d 的容量上限约束了 T_dir 可以实际发挥的作用。
+
+---
+
+## §范畴边界：d值是决策属性，不是主体属性
+
+> **追加澄清**（2026-04-06，来源：`Philosophy/SRT_Political_Rights.md §2`）
+
+d值描述的是**选择事件**整合的关切范围，不是决策主体（个体或集体）的固有属性。
+
+| 错误表述 | 正确表述 |
+|---------|---------|
+| "这个人有很高的d值" | "这个人的决策倾向于整合更宽的关切范围" |
+| "个体d值 vs 集体d值" | 此二分是范畴错误，d值在主体类型之外 |
+| "d值衡量聪明程度" | d值衡量关切范围的宽度，与认知能力不同 |
+
+**主体d倾向**（操作化桥梁）：主体跨大量决策的d值统计分布，在大样本下收敛为相对稳定的特征量。这是统计量，不是本质属性。
+
+$$d_{tendency}(S) \equiv \mathbb{E}_{\sigma \sim S}\left[d(\sigma)\right]$$
+
+完整推导见：`Philosophy/SRT_Political_Rights.md §2-§3`
+
+---
+
+## §10 d 值的多场景显现（2026-04-08 新增）
+
+> **来源**：`Core/Dynamics_Scaling_Annex/07-12` 系列硬化文件。
+> 本节补充 d 值在错误积累与多G道德场景中的显现形式，统一于 §1 的双层规范架构。
+
+### §10.1 d 作为统一整合带宽
+
+d 值是单一概念在不同场景中的显现：
+
+| 场景 | d 的显现形式 | 对应文件 |
+|---|---|---|
+| 多G道德场景 | **整合半径**：G能将多少他者G的状态纳入选择计算 | `Annex/08_MoralPredictionError_MultiG_System.md` |
+| 错误剂量场景 | **可处理张力窗口**：G能消化多少错误积累而不崩溃 | `Annex/10_ROS_Apoptosis_ErrorDose.md` |
+| 跨尺度G场景 | **整合尺度**：G在低阶→高阶相变中覆盖的选择维度范围 | `Annex/11_G_CrossScale_PhaseState.md` |
+| 代理校准场景 | **校准带宽**：L₂能接收并整合多少L₁/L₀上行信号 | `Annex/12_ProxyModel_OcclusionPhases_Intervention.md` |
+
+所有显现均是 Def-d-1（有效维度）在不同上下文中的投影，统一于 §1 的规范架构。
+
+### §10.2 d 值与病理阈值的关系
+
+`Annex/10` 建立的病理阈值公式中，d 是核心因子：
+
+$$\Theta = f(d, E, h_{\text{memory}}, \vec{\delta}, \Lambda_{\text{L2}})$$
+
+- $\uparrow d$ → $\uparrow \Theta$（整合带宽越大，越不易崩溃）
+- d 的训练：低剂量错误积累的反复整合可提升 d（hormesis 机制，见 §9）
+- d 的损伤：高剂量单次创伤可降低 d，而非提升
+
+### §10.3 d 值与三相态条件的关系
+
+`Core/SRT_Core_PhaseState_TripleCondition.md` 建立的三相态条件中，d 值作为底层容量：
+
+- 历史闭合质量 → 影响 d 的有效维度（历史越完整，读取维度越多）
+- 规范梯度有效性 → 依赖 d > 某阈值才能形成有意义的多维度自我维持势差读数
+- 自写回强度 → 高 d 使写回覆盖更多维度的可能性空间
+
+**Cross-ref**: `Core/SRT_Core_PhaseState_TripleCondition.md §5`；`Core/SRT_Core_NormativeGradient.md §6`。
+
+### §10.4 d 值在社会delegation场景中的显现（2026-04-10 新增）
+
+> **来源**：`Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md`
+
+**d扩展作为社会自发支撑的机制基础**：
+
+$$\text{d扩展} \xrightarrow{\text{必然}} \text{对更高阶结构的自发支撑}$$
+
+个体G对集体高阶结构的自发支撑不是义务，而是d扩展后的自然产物。d不足时需要外部脚手架（引导性delegation）；d充分扩展后，外部G退出，底层自发支撑实现。
+
+**d轨迹作为delegation合法性的验证信号**：
+
+社会层面的d值判断系统以被干预G群体的d轨迹为核心信号：
+
+| d轨迹 | 解读 |
+|---|---|
+| 被干预群体d在可观测时间窗内增长 | 引导性介入（真实提升方向） |
+| 被干预群体d停滞或收缩，介入方d扩展 | 方向截获（殖民/威权结构） |
+
+历史上的殖民主义、威权主义和宗教征服 = d的转移（被干预者d压缩，介入者d扩展），而非d的净增长。SRT的判断标准：d净量变化，不是分布变化。
+
+**d在多G协调场景中的显现**：共享L0/L1结构为多G提供d兼容性下限（可能性条件）；跨G残差张力驱动d轨迹向更高阶协调方向调整（动力学机制）。
+
+**Cross-ref**: `Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md §1-4`。
+
+---
+
+## §11 d 的上限与动态能力：d_max 与 d_mobile（2026-04-10 新增）
+
+> **来源**：`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1, Eq-DValue-Mobile-1`；`D_VALUE_ALIGNMENT.md §4.4`。
+> 本节是这两个新公式的规范索引入口。
+
+### §11.1 d_max：d 的双瓶颈上限
+
+$$\boxed{d_{\max}(\theta) = \min\!\Big(\operatorname{rank}_{\text{eff}}(I_F(\theta)),\; \Psi_f^{\text{budget}} / \kappa_0\Big)}$$
+
+两个独立瓶颈：
+- **信息瓶颈**：`rank_eff(I_F(θ))` — Fisher 矩阵的有效秩，由算子参数化能力决定
+- **稳定性瓶颈**：`Ψ_f^budget / κ₀` — 可用摩擦预算除以原初曲率；κ₀ 越大，可承载对齐方向越少
+
+**关键推论**：`dim(Θ)`（参数维数）提升的是潜在上限，真实 d_max 由两个瓶颈中的较小值决定，不可仅用参数量判断 d 上限。
+
+*权威来源*：`Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`
+
+### §11.2 d_mobile：d 的动态化能力
+
+$$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\theta))}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}\!\left(\tfrac{d\Psi_f}{dt}\right)$$
+
+**语义**：当 L₀ 曲率漂移（吸引子迁移），算子 θ 重新对准的速度与容量。与 d 的区别：
+- $d$：当前对齐的 L₀ 方向数（快照）
+- $d_{\text{mobile}}$：当这些方向漂移时，θ 跟上的能力（动力学）
+
+**感到 ≠ 能动**：高 d 算子在 χ_payable = 0 时，d_mobile = 0——感知到拉力但支付能力为零，无法行动。
+
+**冻结态**：高 $d$ + $d_{\text{mobile}} \approx 0$ → 意识的病理变体（深度锚定但无法随吸引子迁移）。
+
+*权威来源*：`Core/SRT_Core_22_Equations.md Eq-DValue-Mobile-1, Def-Payable-Chi-1`
+
+### §11.3 与 d 规范定义的关系
+
+| | d | d_max | d_mobile |
+|---|---|---|---|
+| **本质** | 当前对齐深度（快照） | 结构允许的对齐上限 | 重新对齐的动力学能力 |
+| **决定因素** | Fisher 有效秩 + L₀ 曲率历史 | rank_eff + Ψ_f 预算/κ₀ | d × rank_eff / (L₂ 刚性 × C_r) × χ_payable |
+| **可为 0** | 是（算法/晶体态） | 否（κ₀ > 0 保证下限 > 0） | 是（冻结态） |
+| **意识相关** | κ_{c1} 要求 d ≥ d_min | 设定意识可到达的天花板 | κ_{c1.5} 要求 d_mobile > 0 |
+
+*Cross-ref*：`Philosophy/SRT_Consciousness_Conditions.md §三`（三层意识结构）；`Core/SRT_Core_12b §Consciousness-2D-Map`（二维拓扑）。
+
+---
+
 ## 【理论边界/防误用声明】
 
 1. 本文档统一 d-value 的定义，但各域的近似公式（Def-d-bio 等）需要实验校准，其参数值（$\alpha, \beta, \gamma$）为初始估计。
 2. 有效维度公式 Def-d-1 依赖特征值分解，其适用性取决于算子的线性化是否在相关参数范围内有效。
 3. 量子层的 $d_{quant}$ 与宇宙层的 $d_{cosm}$ 是数学量，不赋予现象意义——任何将其解读为微弱意识的论证超出 SRT 声明范围。
 4. 本文件的"一致性证明"（§4）为草稿级别，需要形式化验证后才能作为定理引用。
+5. §10 的多场景显现是概念统一，不是数学等价证明——各显现形式的形式化等价关系待独立验证。

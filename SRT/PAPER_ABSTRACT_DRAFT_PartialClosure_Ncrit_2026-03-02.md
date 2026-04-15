@@ -3,7 +3,10 @@ id: SRT-PAPER-ABSTRACT-PARTIALCLOSURE-NCRIT-2026-03-02
 type: paper
 tags: [Paper, Abstract, OriginOfLife]
 status: draft_v1
-dependency: [Core_Law/SRT_Reference_Dynamics, Core/SRT_Core_14_Dynamics_Scaling, SRT/_SRT_SIGNAL_LOG.md]
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
+dependency: [Core_Law/SRT_Reference_Dynamics, Core/SRT_Core_14_Dynamics_Scaling, SRT/Operations/_SRT_SIGNAL_LOG.md]
 ---
 
 # 摘要草案 v1

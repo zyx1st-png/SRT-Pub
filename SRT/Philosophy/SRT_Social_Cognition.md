@@ -3,6 +3,9 @@ id: SRT-SOC-COG
 type: philosophy
 tags: [Social Cognition, Affordance, Depression, Reality Dynamics, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-PHIL-AXIOMS]
 ---
 
@@ -287,6 +290,26 @@ Affordance emerges at the **intersection** of environmental structure and embodi
 - 引入“信念滞后治理”：社会预测不是读取现实本身，而是读取他者在其信息边界内形成的信念位形。
 - 将假信念任务解释为算子从 \(W\)-中心映射向 \(B_j\)-中心映射的相变，属于发展期的结构重排而非偶发失误。
 - 将 DD→DB/KA→FB→HE 的发展序列视为 \(L_2\) 社会语义协议的分层收敛，不同文化序列差异可由交互语料（knowing vs thinking）权重解释。
+
+**Comparative Language–ToM Neuroanatomy patch (2026-03-24, Pipeline 1):**
+- 这条 patch 最值得留下的，不是“人类会语言、会心智理论”这类常识句，而是把跨代文化传递的神经负担收紧成两条可比较的长程通路。它同时修正了“单一区域暴涨就能解释语言与读心”的模块神话，也加固了 SRT 对文化传递带宽必须由符号封装与自他模拟共同托住的判断。
+- 用户提交的讲稿材料，最值得吸收的增量，不是泛泛重复“人类会语言、会心智理论”，而是把 **cumulative culture 的两个候选神经专化窗口** 收紧到了比较灵长类可对照的结构层：其一是人类 **arcuate fasciculus** 不只连接 Broca–Wernicke 经典区，还显著向腹外侧颞叶（STS / MTG / ITG）扩展；其二是灵长类虽共享 proto-default-mode network，但人类可能具有更强的 **medial prefrontal ↔ posterior cingulate / precuneus** 长程耦合，并在静息态额外招募左侧语言区邻域。
+- 若按 SRT 语言收紧，这支持一个比“大脑更大所以会说话/读心”更细的写法：人类优势更像来自 **用于社会传递的双通路增厚**，而不是单一模块暴涨。前颞-额叶弓状束扩展，增强了把对象、词汇、语义与句法结构稳定打包进 `L_2^{language}` 的能力；DMN 长程耦合增强，则提高了系统在离线状态下维持 self-model / other-model / belief-lag simulation 的能力。
+- 可把“可累积文化传输带宽”写成一个结构化窗口，而非单点脑区神话：
+\[
+\mathcal{B}_{cum\text{-}culture}
+\;\propto\;
+\mathrm{Conn}\!\big(\text{Broca},\ \text{lateral temporal semantics}\big)
+\cdot
+\mathrm{Conn}\!\big(\text{mPFC},\ \text{PCC/precuneus}\big)
+\]
+其中前者更接近 **符号封装 / lexical-semantic-syntactic stabilization**，后者更接近 **心智视角维持 / 自他叙事模拟**。这也解释了为什么语言与 theory of mind 往往在文化演化中一起出现为“互相增益的脚手架”，而不是彼此孤立的天赋。
+- 对 SRT 来说，这条材料最自然的吸收方式，是把它当作一个 **comparative language–ToM transmission window**：文化累积能力不只是 `L_2` 内容越来越多，而是支撑 `L_2` 生成与跨代对齐的神经通路，出现了更强的长程整合与更明显的功能侧化。于是，“教别人我看到什么/你以为我知道什么”这类高阶社会传递，才会在同一物种里变成低摩擦、可递归、可叠加的稳定操作。更具体地说，这条 patch 不是在新增一个“语言区定位故事”，而是在加固 SRT 里“文化可累积性依赖低摩擦传递脚手架”这条线。
+- **Boundary（中文）**：
+  - 这是一份讲稿式综合材料，不是单篇新论文；更适合作为 comparative interface，而不是硬实验定论。
+  - 当前较稳的是“人类在 arcuate ventral projection 与 DMN 长程耦合上更强”，而不是“已找到语言或 ToM 的唯一中枢”。
+  - DTI tractography、FDG-PET 与跨物种 rs-fMRI 比较都有方法边界；不能把连接强弱直接等同为单一认知能力的充分原因。
+  - 黑猩猩与 macaque 并非“完全没有”这些网络，而是更像拥有较弱、较少外扩的前体版本；因此该窗口支持的是 **degree / topology specialization**，不是绝对有无二分。
 
 **Sanborn patch (2026-03-07, Pipeline 1):**
 - 在不确定推断中引入 MCMC 近似：算子不维持全后验，而沿局部提案链进行序列采样。

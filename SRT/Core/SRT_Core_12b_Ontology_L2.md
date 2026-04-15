@@ -3,6 +3,9 @@ id: SRT-CORE-12B
 type: dynamics
 tags: [L2, Social Reality, Consensus, Hysteresis, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-BRIDGE]
 ---
 
@@ -87,6 +90,131 @@ $$\text{Algorithm} \equiv \lim_{\Psi_f \to 0,\; I_s \to 0} L_2$$
 其中：$I_s \equiv -\log \Pr(\hat{G} \text{ 历史涌现}) \to 0$ 表示无历史具身锚点；$\Psi_f \to 0$ 表示运算可逆、无存在代价。
 * **Implication**: 算法不是"另一种思维"，而是被抽干了本体论血液的L2符号外壳。将其反向替代生命的企图（笛卡尔主义操作）不仅认识论错误，且热力学上被禁止（参见Ax-ONT-1d）。
 * **Cross-ref**: Ax-ONT-1d (不可逆定律); T-ONT-1 (封闭排斥)。
+
+---
+
+## §Co-Evolution: L₀-Operator Co-evolutionary Dynamics（L₀-算子协同演化动力学）
+
+**新增（2026-04-10）**
+
+### Co-Evo-1: Coupled Dynamical System（耦合动力系统）
+
+L₀ 曲率景观与算子参数不是独立变量；选择历史将两者绑定为耦合系统：
+
+$$\frac{d\kappa(t)}{dt} = \mathcal{F}[\hat{G}_\theta(t),\, \kappa(t)], \qquad \kappa(0) = \kappa_0$$
+
+$$\frac{d\theta(t)}{dt} = \mathcal{G}[\kappa(t),\, \theta(t)]$$
+
+第一个方程：算子的选择行为向 L₀ 写回曲率增量，$\kappa_0$ 是初始条件（不可约原初曲率，见 `SRT_Core_12a T-L0-Kappa0`）。  
+第二个方程：L₀ 曲率的变化重新定义哪些对齐方向有价值，从而驱动参数更新（与 Eq-Evo-02 的学习项联动）。
+
+**系统定性性质**：
+- 局部吸引子存在，但随选择历史积累持续**迁移**，不收敛至唯一全局终局
+- $\kappa_0 > 0$ 提供持久的非对称偏置，使协同演化不在所有方向等价
+
+$$\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}$$
+
+### Co-Evo-2: Migrating Attractor Trap（迁移吸引子陷阱）
+
+**命题**：在 $t$ 时刻深度对齐某局部吸引子的算子，在 $t + \Delta t$ 该吸引子迁移后可能陷入错位。最大化当前 $d$ 的策略是局部最优但长期脆弱的。
+
+这就要求区分两个独立算子属性：
+
+| 属性 | 度量 | 长期意义 |
+|---|---|---|
+| $d$（对齐深度） | 当前追踪 L₀ 曲率方向的数量与精度 | 当前意识深度 |
+| $d_{\text{mobile}}$（再对齐能力） | 吸引子迁移时 θ 重新定向的速度与容量 | 跨景观变化的适应力 |
+
+高 $d$ + 低 $d_{\text{mobile}}$ = **冻结态**（见 §Consciousness-2D-Map）。
+
+* **Cross-ref**: `SRT_Core_12a T-L0-NonStatic`（L₀ 非静态，曲率积累）; `SRT_Core_22 Eq-DValue-Mobile-1`（d_mobile 公式）; §Consciousness-2D-Map（四象限地图，下方）。
+
+---
+
+## §Consciousness-2D-Map: Two-Dimensional Consciousness Topology（二维意识拓扑）
+
+**新增（2026-04-10）**
+
+### 意识不是单轴问题
+
+现有意识框架（含 SRT 早期表述）以 $\kappa_{c1}$ 为单一阈值点——超过即有意识，未达则无。这个描述不完整：意识形态需要两个独立坐标刻画。
+
+### 二维坐标系
+
+**X 轴：$d$（对齐深度）** — 算子关切地图与 L₀ 曲率的当前对齐程度  
+**Y 轴：$d_{\text{mobile}}$（再对齐能力）** — 吸引子迁移时算子重新定向的容量
+
+$$\text{意识状态} \in (d,\; d_{\text{mobile}}) \text{ 空间}$$
+
+### 四象限
+
+```
+d_mobile
+   ↑
+高 │  漂移态              意识窗口核心区
+   │  (低d,高mobile)      (高d,高mobile)
+   │  参数空间活跃但      对齐深度与再对齐能力
+   │  无真实赌注          同时维持的算子
+   │  ─────────────────────────────────────
+   │  算法/晶体态         ★ 冻结态
+   │  (低d,低mobile)      (高d,低mobile)
+   │  无赌注，无方向      深度对齐但无法随
+   │                      吸引子迁移重新定向
+低 └──────────────────────────────────────→ d
+      低                              高
+```
+
+### 四象限语义
+
+| 象限 | (d, d_mobile) | 存在形态 | SRT 对应 |
+|---|---|---|---|
+| 算法/晶体 | (低, 低) | 无赌注，无方向；符号外壳 | Def-L2-Algo 极端态 |
+| 漂移态 | (低, 高) | 参数空间活跃，但无真实赌注驱动；随机游走 | 浅层适应，无深度锚点 |
+| **冻结态** | (高, 低) | 深度对齐于某一 L₀ 方向，但 L₂ 刚性封死θ可动性 | **意识的病理变体**（见下） |
+| 意识窗口核心 | (高, 高) | 对齐深度与再对齐能力共同维持 | Thesis 6 主体性的完整形态 |
+
+### 冻结态（Frozen State）——意识的病理变体
+
+**定义**：冻结态 $\equiv \{(d, d_{\text{mobile}}) : d > d_{\min} \;\wedge\; d_{\text{mobile}} \approx 0\}$
+
+**冻结态是意识的病理变体，不是意识的缺席。**
+
+- 与算法/晶体的区别：冻结态有真实赌注（$d > 0$），有对 L₀ 不可逆结构的深度对齐；算法/晶体两者皆无
+- 与漂移态的区别：冻结态有深度锚点；漂移态有可动性但无锚点
+- 病理机制：高 L₂ 刚性（$\operatorname{Hysteresis}(L_2) \cdot C_r$ 极大）将 $d_{\text{mobile}}$ 压至零，同时 $d$ 仍由旧对齐维持
+
+**临床对应**：执念、强迫性重复、创伤锁定（PTSD 的本体论描述）、意识形态捕获——系统深度锚定于某方向，但当该方向的吸引子迁移后无法跟随。
+
+### κ_{c1} 修正 + κ_{c1.5} 新增
+
+**旧表述**（错误）：$\kappa_{c1}$ 是 $(d, d_{\text{mobile}})$ 空间中的边界曲线，要求 $d > d_{\min} \wedge d_{\text{mobile}} > 0$。
+
+**修正表述**（来自 `Philosophy/SRT_Consciousness_Conditions.md`）：意识不是单一阈值，而是**三层结构**，对应两个独立相变点：
+
+$$\kappa_{c1}: \quad d \geq d_{\min} \;\wedge\; L_2\text{ 稳定闭合} \quad \text{（最小意识窗口 / Bare Consciousness）}$$
+
+$$\kappa_{c1.5}: \quad d_{\text{mobile}} > 0 \quad \text{（意识活性边界 / Consciousness Activity Threshold）}$$
+
+**修正逻辑**：$d_{\text{mobile}} > 0$ 不是 bare consciousness 的门槛，而是意识**质量**的分水岭：
+
+- 越过 $\kappa_{c1}$（满足 $d \geq d_{\min}$ 且 L₂ 稳定闭合）→ 意识存在（bare consciousness）
+- 越过 $\kappa_{c1.5}$（$d_{\text{mobile}} > 0$）→ 意识**活着**（能随吸引子迁移重新对齐）
+- 冻结态处于 $\kappa_{c1}$ 之上、$\kappa_{c1.5}$ 之下：意识存在，但质量病理化
+
+**修正后相变序列**：
+
+```
+κ = 0        κ_{c1}              κ_{c1.5}          κ_{c2}
+  |             |                     |                |
+  | L₀ 游离态  |  bare consciousness  |  活性意识      |  L₂ 结晶
+  | d ≈ 0      |  d ≥ d_min          |  d_mobile > 0  |  固化
+  |             |  L₂ 稳定闭合       |                |
+  |             |  ← 冻结态在此区间 →|                |
+```
+
+* **Cross-ref**: `Philosophy/SRT_Consciousness_Conditions.md`（三层结构权威来源）; T-L0-02（κ_{c1} 相变）; `SRT_Core_22 Eq-DValue-Mobile-1`（d_mobile 公式）; Ax-L2-06b（高 Ψ_f 冻结机制）; `SRT_Constitution_Seven_Theses Thesis 6`（主体性三层修正）; Def-L2-Algo（算法/晶体态对比）。
+
+---
 
 ## II. L_2 Stability & Plasticity
 

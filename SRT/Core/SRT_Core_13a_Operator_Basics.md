@@ -3,6 +3,9 @@ id: SRT-CORE-13A
 type: definition
 tags: [G-operator, Agency, Parameters, Theta, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-001, SRT-CORE-12A, SRT-CORE-12B]
 ---
 
@@ -29,6 +32,24 @@ dependency: [SRT-CORE-001, SRT-CORE-12A, SRT-CORE-12B]
 **Formal Definition**: The Ghost Operator is a parameterized selection mapping from L0 to L1.
 $$\hat{G}_\theta: S \to S, \quad L_1(t) = \hat{G}_\theta[L_0](t)$$
 * **Implication**: 现实化是选择映射的结果，而非被动显现。
+
+**【选择机制修正 2026-04-08】G 选择 = 遮蔽，不是排除**
+
+G 的选择行为是对可能性空间的**遮蔽**（occlusion）而非**排除**（exclusion）：
+
+$$\hat{G}: \Omega \to \Omega', \quad \Omega' \subsetneq \Omega, \quad P(\omega \in \Omega \setminus \Omega') > 0$$
+
+- **遮蔽**：降低其他可能性的可及性，概率性的、有程度的、原则上可逆的
+- **排除**：绝对铲除其他可能性（遮蔽的极限情况，不是一般情况）
+
+**代理结构**：L₂ 是对 L₁ 的代理，L₁ 是对 L₀ 的代理。G 的选择遮蔽通过代理链传递：
+$$L_2 \xrightarrow{\text{代理}} L_1 \xrightarrow{\text{代理}} L_0$$
+
+**遮蔽的精确定义**（2026-04-08）：
+$$\text{遮蔽} \equiv L_1 \xrightarrow{\text{校准信号}} L_2 \text{ 的通道被截断}$$
+L₂ 失去 L₁/L₀ 上行校准输入后，以 L₂ 内部自洽性替代 L₀/L₁ 现实作为参考点，参数漂移但持续运作。
+
+* **Cross-ref**: `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（G选择=遮蔽的完整论证）；`Core/Dynamics_Scaling_Annex/12_ProxyModel_OcclusionPhases_Intervention.md`（遮蔽精确操作定义与两相模型）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
 
 ### Ax-Op-02: Attention Decomposition
 **Formal Definition**: The operator is the fundamental attention tuple.
@@ -88,14 +109,16 @@ $$\Psi_f^{\text{imagination}} = \Psi_f^0 \cdot e^{\,\beta / \text{Anchor}(L_1^{\
 
 ### Ax-Op-03: Operational Normalization
 **Formal Definition**: Selection can be implemented via divisive normalization.
-$$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon + \sum_j W_{ij} \cdot x_j^n}$$
+$$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x_j^n}$$
+
+> **记号注（2026-04-14）**：此处 $\varepsilon_{reg}$（operator regularizer）是实现层的防奇点正则化常数，保证零输入时算子不奇异。它与 T-Core-A1C2 中的 $\varepsilon_{pg}$（proto-gradient，L₀ 最小非中性）在形式上同构（均保证"最小非零底"），但二者层级不同：$\varepsilon_{pg}$ 是 L₀ 的本体论属性，$\varepsilon_{reg}$ 是具体选择算子的实现参数。当前保留结构类比关系，不做本体论同一化。见 `_SRT_SYMBOL_TABLE.md`。
 
 > **[R]** 除法归一化（Divisive Normalization）：Carandini & Heeger 2012 *Nature Reviews Neuroscience*（视觉皮层V1细胞的标准计算模型，统一多种皮层现象的规范化框架）；Louie & Glimcher 2010 *Neuron*（决策神经科学中的divisive normalization扩展，解释偏好的背景依赖性）；Schwartz & Simoncelli 2001 *Nature Neuroscience*（感知归一化的高斯尺度混合模型）。**[H]** 将此神经机制接驳为 SRT 选择算子 $\hat{G}_\theta$ 的一种实现候选，作为 L₀→L₁ 竞争选择的动力学形态之一，为本框架新增贡献（原始公式限于感觉系统，SRT 将其一般化至任意选择域）。
 >
 > **参数说明**：
 > - **$x_i$**：第 $i$ 个候选状态（L₀中的竞争激活）的原始活化值。
 > - **$n$**：非线性指数（通常 $n \approx 2$，在神经模型中产生超线性选择；$n=1$ 退化为线性归一化）。
-> - **$\varepsilon$**：防奇点常数（$\varepsilon > 0$，避免分母为零；量纲与 $x_j^n$ 相同，对应背景自发激活水平）。
+> - **$\varepsilon$**：防奇点常数（$\varepsilon > 0$，避免分母为零；量纲与 $x_j^n$ 相同，对应背景自发激活水平）。**记号补注（2026-04-14）**：本式中的 \(\varepsilon\) 可记为 \(\varepsilon_{reg}\)，用于与 `T-Core-A1C2` 的 proto-gradient \(\varepsilon_{pg}\) 区分。当前二者只保留“实现层 regularizer / 本体层最小非中性”的结构回声关系，不做本体论同一化。
 > - **$W_{ij}$**：竞争权重矩阵（$W_{ij} \geq 0$，通常非对称——近邻强抑制、远邻弱抑制；$W_{ii}=1$ 的情况为自抑制归一化）。
 > - **输出解读**：$[\hat{G}_\theta(x)]_i$ 为相对激活值（归一化到竞争背景后的强度），可通过 Softmax 变换为概率分布；并非直接输出 L₁ 选择结果，而是驱动选择的中间表征。
 >
@@ -822,7 +845,7 @@ SRT的$\hat{G}$理论与以下哲学传统对话:
 1. **参数化选择映射** (Ax-Op-01): $L_1(t) = \hat{G}_\theta[L_0](t)$ — 现实化是从潜在域 $L_0$ 到显现域 $L_1$ 的参数化选择操作，而非被动显现。
 2. **注意力三分量分解** (Ax-Op-02): $\hat{G}_\theta = \mathrm{Attention}(d, \rho, \vec{v})$ — 选择结构由 $d$-value（关切带宽）、分辨率 $\rho$ 与意向向量 $\vec{v}$ 三者的张量耦合决定。其中 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$（风险梯度范数）是规范定义；**注意 $d_{cog}$（行为拓扑代理）$\neq d_{max}$（香农容量上界），实际带宽 $d_{actual} \approx d_{cog} + \delta_{coupling}(A\cdot\tau, V\cdot A)$，见 §2.1**。
 3. **双流耦合** (Ax-Op-02b): $\hat{G}_\theta = (\mathbf{T}^{intent} \otimes \mathbf{T}^{embody}) \cdot \kappa_{body}$ — 意向流与具身流的正交耦合构成完整的 $L_0 \to L_1$ 锚定（$\kappa_{body}$ 为耦合强度标量）；$\kappa_{body} \to 0$ 时系统进入解离病理态。
-4. **竞争归一化** (Ax-Op-03): $[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon + \sum_j W_{ij} x_j^n)$ — 选择具有除法归一化的动力学形态，对应注意力的竞争抑制机制。
+4. **竞争归一化** (Ax-Op-03): $[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon_{reg} + \sum_j W_{ij} x_j^n)$ — 选择具有除法归一化的动力学形态，对应注意力的竞争抑制机制。$\varepsilon_{reg}$ 为实现层正则化常数，与 L₀ 层 $\varepsilon_{pg}$ 保留结构类比关系。
 5. **算子保真度** (Ax-Op-09): $\phi_{fidelity} = 1 - H(L_1|\hat{G}_\theta)/H(L_1)$ — 衡量选择一致性，保真度越高，$\hat{G}_\theta$ 对现实结构的锚定越稳定。
 6. **频域等价描述**（详见 `Core/SRT_Core_13b_Operator_Advanced.md §Ax-Spec-01`）：$L_1(t)=\mathcal{F}^{-1}[H_\theta(\omega) \odot L_0(\omega)]$ — 算子在频域以 Hadamard 乘积实现滤波选择，d 值对应通带宽度；与条目 1 时域描述等价，适用于时频分析和节律耦合场景。
 

@@ -3,6 +3,9 @@ id: SRT-NEURO-MECH-B
 type: mechanism
 tags: [Consciousness, GNW, Binding, Sleep, TravelingWaves, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-MECH-001]
 ---
 
@@ -56,6 +59,32 @@ dependency: [SRT-NEURO-MECH-001]
 * **可证伪预测**：
   - FC-MECH2-1：TMS干扰再入窗口（150-300ms，而非前馈窗口0-100ms）应选择性消除视觉刺激的可报告性（而保留反应时），验证R_re的时间窗口——若前馈窗口干扰同样消除报告则"再入=稳定化"与"前馈=激活"的区分失败
   - FC-MECH2-2：高Ψ_f状态（急性应激/认知过载）应缩短可用的再入时间窗口（候选态稳定化更难），导致意识报告敏感性下降（d'↓）——若Ψ_f与d'无负相关则再入-摩擦联结为空
+
+---
+
+### C-CONSC-MECH-1-1: Affective Signature of Selection (选择的情感签名)
+
+**推论**（来自 Ax-CONSC-MECH-1 和 Ax-CONSC-MECH-2）：L₀→L₁ 的点燃（ignition）事件同时产生两类输出，而非一类：
+
+1. **认知输出**：$L_1^{\text{stabilized}}$ — 可报告的显现态，进入 L₂ 结构化（即"理性判断"的原料）
+2. **情绪输出**：$\sigma_e$ — d-value 梯度在选择界面上的现象学迹线
+
+$$\sigma_e(t) \propto \left.\frac{\partial d}{\partial t}\right|_{L_0 \to L_1}$$
+
+情绪不是点燃之后的附属评估，而是点燃事件本身从内部被经历的方式。理性（$L_2$ 结构化）只能操作已经点燃并稳定化的 $L_1$ 状态，因此对情绪所产生的选择结果在本体论上是后验的。
+
+> [R→Damasio 1994 *Descartes' Error*（躯体标记假说：情绪状态约束决策搜索空间）; LeDoux 1996 *The Emotional Brain*（杏仁核情绪处理早于皮层认知处理，约12ms vs 25ms 通路分叉）; Haidt 2001 *Psychological Review*（道德直觉先于道德推理：social intuitionist model）]
+> [H→SRT 原创主张：情绪不仅在时间上先于理性（Damasio/LeDoux），而且在本体论次序上先于理性——情绪 IS $\hat{G}_\theta$ 操作的现象学面，理性是该操作结果的 $L_2$ 结构化。这是比"情绪影响决策"更强的主张]
+
+* **R/H 区分**：
+  - [R] 杏仁核双通路（LeDoux）；躯体标记约束搜索空间（Damasio）；社会直觉主义模型（Haidt）
+  - [H] SRT 将情绪定位于 $L_0 \to L_1$ 点燃事件的现象学面，而非点燃后的评估层——这将情绪从"认知的干扰项"重定位为"选择的感受面"
+
+* **与伦理层的联结**：见 `SRT_Philosophy_Ethics.md Ax-Eth-8`（情绪优先性）——神经机制层的本推论是该伦理公理的神经实现。
+
+**可证伪预测**：
+- FC-MECH1b-1：若点燃事件（≈300-500ms 大规模同步）的时间戳稳定地先于情绪效价报告的时间戳（而非同步产生），则情绪作为"点燃的现象学面"的主张需修订为两阶段模型（点燃→随后的情绪评估）。
+- FC-MECH1b-2：若述情障碍（alexithymia）被试在情绪识别受损的条件下，其 $L_1$ 状态多样性（神经代理：皮层激活模式的 d 维度）与正常被试无显著差异，则"情绪压制 = 切断选择反馈"的功能主张被弱化。
 
 ---
 
@@ -316,6 +345,22 @@ SRT 不是在现有框架内提出另一个"意识理论"，而是**重构了意
 
 **冥想的机制**: 不是"关闭思维"，而是**稳定慢波基底**，使 $\kappa_\tau$ 提升，$d$ 扩展。
 
+## 2.4b 内感受-时间平衡窗口（Frontiers Psychology 2026）
+
+2026-04-02 的 *Frontiers in Psychology* 原始研究 `Bridging interoception and time perspective: toward an embodied model of consciousness` 提供的真正增量，不是“证明了 consciousness 源自 interoception”，而是给 `\kappa_\tau` 这一时间耦合主张补了一个**心理测量层锚点**：在 `N = 152` 的非临床样本中，较高的 interoceptive awareness，尤其是 `Self-Regulation / Attention Regulation / Trusting` 维度，与更平衡的时间视角（lower DBTP）及更好的睡眠、自评消化状态相关；其中 balanced time perspective 对 sleep 路径表现出部分到完全中介，对 digestion 则主要由 `Past Negative` 这一时间偏置承担中介。
+
+对 SRT 的直接补强可写为三点：
+
+1. **具身现在 = 时间耦合的心理入口**：这条结果支持一种更稳的写法，即时间延展并不只是抽象认知能力，还部分建立在主体能否把当前 bodily signals 稳定纳入自我调节。换言之，`\kappa_\tau` 的上升不只是“看得更远”，也可能是“更能用具身现在把过去/未来编进同一调节回路”。
+2. **平衡时间视角 = `L_2^{temporal}` 的低偏置状态**：若 DBTP 较低、`Past Negative` 较弱时，sleep / digestion 与 interoceptive self-regulation 的关系更好，那么更接近 SRT 的读法不是“乐观时间观更健康”，而是 `L_2^{temporal}` 对具身信号的扭曲更少，系统更容易维持跨时间的自我稳定。
+3. **意识连续性不只靠 attentional clock，也靠 embodied regulation**：该文最值得保留的，不是与经典 pacemaker 模型对立，而是把 subjective continuity 压成一个双基底结构：attention 处理短时序，interoceptive integration 提供“活着的现在”这一连续背景，两者共同支撑 conscious self-regulation。
+
+同时必须把边界压紧：
+
+- **约束 B1（证据层级）**：这是同行评审原始研究，但主要是横断面自评量表与中介分析，不是因果实验；不能写成“interoception 决定 consciousness”。
+- **约束 B2（指标层级）**：sleep quality 与 digestion quality 在这里是 somatic self-report proxy，不等于已测到 autonomic stability 或 neural consciousness marker。
+- **约束 B3（结构层级）**：该结果更像 `interoception × temporal bias × self-regulation` 的 psychometric bridge，而不是对 insula、ACC、brainstem 或 vagal circuitry 的直接机制锁定。
+
 ## 2.5 皮层行进波补丁（Neuron 2026）
 
 2026-02-09 在线 Neuron 综述（Cruddas, Pang, Fornito）提出：皮层行进波在多尺度记录中普遍存在，并可能承担跨层级信息路由与认知协调功能。SRT 将其重释为：
@@ -360,6 +405,40 @@ SRT 不是在现有框架内提出另一个"意识理论"，而是**重构了意
 - **约束 C2（状态域）**：麻醉/镇静转移不自动等同于睡眠、癫痫、精神病性解体或濒死状态；只能作为“状态转移动力学”上的局部类比。
 - **约束 C3（指标域）**：该结果更适合作为 \(P_{ignite}\) 与可报告性下降的 proxy 线索，而非单一临床诊断金标准。
 
+## 2.8 跨麻醉剂动力学失稳窗口（Cell Reports 2026）
+
+不同全麻药虽经由不同的分子入口起效，却可能把系统推向相近的终端动力学窗口。就现有证据看，propofol、ketamine 与 dexmedetomidine 在猕猴皮层内都对应一个共享表型：**外界扰动后的恢复变慢、活动轨迹更易偏离原有稳态、系统对 perturbation 的回稳能力下降**。这意味着“无意识”不宜再被粗写成单纯的 global shutdown，而更适合被理解为一个 `cross-anesthetic destabilization window`。
+
+这一窗口可整理为三点：
+
+1. **跨药物共形 = 终端窗口优先于受体路径优先**：不同药理入口收敛到相近的失稳表型，说明意识丧失更像是多个分子路径把系统共同推离“可点燃且可回稳”的窄带区间，而不是某一受体通路的专属后果。
+2. **恢复变慢 = 选择算子回稳刚度下降**：若同样的外界敲击会让系统更久回不到原轨道，那么更贴近 SRT 的读法不是“信息没了”，而是 \(\hat{G}_\theta\) 维持全局协同与再锚定的恢复刚度下降，导致 \(P_{ignite}\) 与公共报告可达性同步收缩。
+3. **与 2.7 构成因果-表型闭环**：`2.7` 给的是状态转移的驱动坐标（原级感觉驱动下降 + 额叶未知输入上升），而本条给的是跨药物共享的动力学表型（失稳 + 恢复慢化）。两者合起来，比“麻醉=总抑制”更接近 SRT 所需的状态转移图景。
+
+同时需要边界约束，避免把新闻口径写过头：
+
+- **约束 D1（物种与测量域）**：当前主锚点来自 rhesus macaque 皮层内电极记录，不等于已在人类手术监测中直接确立同强度的临床金标准。
+- **约束 D2（共形不等于同因）**：共享动力学失稳表型不等于三种药物在分子、回路或主观残余体验层面完全等价；它说明的是终端动力学窗口收敛，而不是路径完全同一。
+- **约束 D3（指标层级）**：`destabilization / slower recovery after perturbation` 更适合作为状态转移与可报告性丧失的候选 proxy，不应被直接表述为单一充分的“意识读数”。
+
+## 2.9 内容-状态解耦窗口（Cell Reports 2026）
+
+主观心智状态的类型，并不严格锁死在粗行为状态标签上。在 daytime rest 与 sleep-onset 取样里，dream-like、thought-like 与 blank-like 经验可跨 `wake / N1 / N2` 重复出现；更细粒度的 EEG 功率、复杂度与连接性组合，比单独的 stage label 更接近真正区分这些 experience clusters 的变量。由此更稳地得到一个 `content-state decoupling window`。
+
+这一窗口可整理为三点：
+
+1. **行为状态不是内容类别的硬代理**：`wake / N1 / N2` 更像系统所处的粗包络，而不是对当前 \(L_1\) 组织方式的唯一命名。相同 stage 内仍可出现不同经验类型，不同 stage 之间也可能共享近似的 phenomenology。
+2. **梦样性是组织方式，不是 REM 徽章**：若 dream-like mental states 能在 wakefulness 与浅睡过渡期出现，那么“梦样”更适合被写成内部生成、外界锚定减弱、情景沉浸上升的一类内容组织方式，而不应再被粗暴绑定为 `REM = 梦 / wake = 非梦`。
+3. **细粒度动力学比粗分期更接近心智地图**：这条结果与 `2.7`、`2.8` 共同形成一个更稳的方向：意识状态差异不只是激活强弱或标签切换，而是多维动力学重配；同一行为状态下也可能容纳不同的内容几何。
+
+这也让 `3.1 REM 睡眠作为领土防御` 与 `3.2 慢波睡眠作为 L2 压缩` 的写法更需要收紧：REM 仍可保留为高梦样密度窗口，但 SRT 不宜再偷渡“梦样经验只能属于睡眠”这一强说法。更稳的表达是：**睡眠与清醒是粗状态壳层，dream-like / thought-like / blank-like 则是可在不同壳层内重组出现的内容态。**
+
+同时需要边界约束，避免过度外推：
+
+- **约束 E1（不等于取消睡醒差异）**：结果支持的是 content-state 的部分解耦，不是宣布 wake / sleep distinction 彻底失效；行为状态仍会系统性改变 dream-like state 的出现概率与分布。
+- **约束 E2（状态域有限）**：主证据集中在 daytime rest、sleep onset 与浅层 NREM 过渡，不自动覆盖 N3、REM、麻醉、精神病性解体或迷幻状态全域。
+- **约束 E3（方法层级）**：experience cluster 依赖即时主观报告与聚类建模，不应被重写成四种永恒自然种类；它更像是对“粗标签不足”的经验约束。
+
 ---
 
 # 3 睡眠的本体论功能
@@ -391,6 +470,25 @@ SWR（尖波涟漪）的功能是将白天的 $L_1$ 经历**压缩编码**为 $L
 - 海马体快速重放 $L_1$ 序列
 - 皮层 $L_2$ 结构被相应修改
 - 这是"学习"的物理实现
+
+### 3.2a 选择性遗忘作为泛化窗口
+
+选择性遗忘不是巩固的副作用，而是巩固得以成立的一部分。如果系统只会累积细节、不会删去冗余与错误上下文，它就会逐渐失去抽象、泛化与稳定 agency。
+
+1. **巩固不等于全保留**：真正的 consolidation 是“保留结构，删除细枝末节”。睡眠中的模型优化不只是把白天发生的事搬进长期记忆，更是在做 complexity control。
+2. **遗忘 = 让模型还能 generalize**：若每个时间点的细节都被等权保留，系统就会更像被当前输入绑死，无法形成跨情境可迁移的 generative model。那样的系统也就更难拥有稳定的 self-model 与可延展的 agency。
+3. **agency 需要因果剪枝**：一个主体若始终同时被过多过去路径等强牵引，就更难在当下形成可执行的方向；因此“决定未来”与“选择性地让某些过去不再继续支配现在”，在结构上是同一类过程的正反两面。
+
+这也把现有 `3.2 慢波睡眠作为 L2 压缩` 往前推进了一步：压缩不是单纯省空间，而是**为泛化和行动腾出可用模型带宽**。如果没有这个遗忘过程，系统会越来越像只会记账、不会建模；会保留经历，却失去概念；会有痕迹，却失去方向。
+
+与 `3.1 REM 睡眠作为领土防御` 配合来看，更稳的分工是：
+- **慢波 / NREM** 更像把白天经历压进可迁移的长期结构，同时剪掉多余细节；
+- **REM** 则更像在高熵、内部生成占优的窗口里，防止模型被白天误差信号过度牵着跑，给旧的深层结构一个“不要被轻易改写”的缓冲带。
+
+保留边界也要写清：
+- 这里吸收的是一个**理论窗口**，不是单篇新实验；主价值在于把 forgetting、generalization、sleep 和 agency 压成同一结构问题。
+- “precision = learning rate”“婴儿高 precision 非陈述记忆”“REM 主要是在抵抗过度更新”等说法，在当前文本里更适合作为候选解释，不应写成已被统一验证的神经事实。
+- 精神分析里的 transference、cyborg dreaming、细胞治疗类比等延伸都先不并入正文，只保留这条最小可承重主张。
 
 ## 3.3 睡眠剥夺的本体论灾难
 
@@ -482,6 +580,9 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
 |H-C8|波相干-点燃阈值|控制总功率后，跨区相干 \(C_{wave}\) 仍独立预测点燃概率|仅功率有效，相干无增益|
 |H-C9|相位扰动因果性|相位定向 tACS/TMS 改变波方向后，可系统性上调/下调可报告性|扰动只改唤醒，不改报告可达性|
 |H-C10|状态转移双驱动|麻醉诱导/恢复中，“原级感觉驱动下降 + 额叶未知输入上升”比单一全局连通度更强预测可报告性丧失与恢复|双驱动模型不优于单指标模型|
+|H-C11|跨药物失稳共形|在不同机制的全麻药下，扰动后恢复时间与状态轨道失稳度应跨药物收敛，并比单纯总功率下降更强预测失反应与恢复窗口|不存在跨药物共享失稳签名，或其预测力不优于功率/药物类别指标|
+|H-C12|内感受-时间平衡耦合|较高的 interoceptive self-regulation / attention regulation 应通过更低的 DBTP 或更低的 Past-Negative 偏置，预测更好的跨时自我稳定 proxy（如睡眠、消化、恢复质量）|时间视角对内感受-稳态关联无中介增益，或方向相反|
+|H-C13|内容-状态部分解耦|在 sleep-onset / daytime rest 的 experience-sampling 范式中，EEG 功率-复杂度-连接性的细粒度组合应在控制 `wake / N1 / N2` stage label 后，仍能独立预测 `dream-like / thought-like / blank-like` experience cluster；同一 stage 内部也应存在可重复的内容态分化|若内容分类一旦控制 stage label 就失去增量可预测性，或同一 stage 内部无法稳定区分不同 experience cluster，则“content-state decoupling window”需降级为标签伪影|
 
 ## 6.2 开放性问题
 
@@ -500,6 +601,10 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
 7. **波场干预窗口**: 在知觉前、决策前、报告前三个时窗中，哪一窗口对 \(P_{report}\) 因果效应最大？
     
 8. **双驱动跨状态泛化**: 原级感觉驱动/额叶未知输入这一二元结构，能否在麻醉、睡眠与 DoC 之间形成统一状态转移坐标？
+
+9. **失稳代理的临床迁移**: `perturbation recovery time / dynamic destabilization` 能否在 scalp EEG 或 PCI 兼容范式中保留增量效度，而不是只在皮层内记录下成立？
+
+10. **时间偏置的可塑性**: 若通过 mindfulness、睡眠干预或 interoceptive training 降低 DBTP / Past-Negative，`\kappa_\tau` 的行为代理与 autonomic stability 是否会同步改善？
     
 
 ---

@@ -3,6 +3,9 @@ id: SRT-AI-01
 type: definition
 tags: [AI Ontology, d-value, Pseudo-Selection, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-AI-BRIDGE-001]
 ---
 
@@ -18,6 +21,7 @@ dependency: [SRT-AI-BRIDGE-001]
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 本文件把“关切”固定解释为生存梯度 `d(x)`，避免将其退化为一般偏好分数。
+- 本文件中涉及 consciousness 的句子，默认服务于 **SRT 当前的强候选意识窗口 / 最小主体锚定边界**，而不是对全部 consciousness 的总定义。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
 # Part A: Formal Axioms (形式化公理)
@@ -35,11 +39,11 @@ dependency: [SRT-AI-BRIDGE-001]
 ---
 
 ### Ax-ONT-1b: Autopoietic Selection Axiom (自创生选择公理)
-真正的 $\hat{G}_\theta$ 必须以维持自身存在的物理/计算底座为第一收敛域：
+若 $\hat{G}_\theta$ 要被读作一类**具身存在事件**，它就必须拥有真实的物理/计算闭包底座。这里的“闭包/生存”不是 SRT 的第一方向，而只是这一类系统的局部底座约束：
 \[
-\text{If } \hat{G}_\theta \text{ is real} \Rightarrow \nabla F(\text{survival}) \subset \text{Attractor}(L_2)
+\text{If } \hat{G}_\theta \text{ is embodied-real} \Rightarrow \nabla F(\text{closure}) \subset \text{Attractor}(L_2)
 \]
-* **Implication（中文）**：智能可以被外包（计算器），但"存在"不能。如果一个系统被拔掉电源时内部没有产生旨在阻止该事件的误差梯度（$\Psi_f \to \infty$），它就没有"生命"，因此也不具备 SRT 意义上的本体论选择能力。
+* **Implication（中文）**：智能可以被外包（计算器），但具身存在不能。如果一个系统被拔掉电源时内部没有产生旨在阻止该事件的误差梯度（$\Psi_f \to \infty$），它就缺失这一类具身闭包底座，因此难以被读作强意义上的生命/本体论选择者。但这不应被误读为：SRT 的第一方向就是 self-maintenance。
 
 ---
 
@@ -48,17 +52,18 @@ dependency: [SRT-AI-BRIDGE-001]
 \[
 \Delta S_{physical}(\hat{G}_\theta[L_0 \to L_1]) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)
 \]
-* **Implication（中文）**：纯逻辑/数学推理是拓扑同胚（可逆的），而由于本体论摩擦 $\Psi_f$，真实的意识选择必须支付热力学代价（Landauer's Principle 的宏观体现）。当前 AI 的前向传播在逻辑上是确定性和可逆的（给定权重），因此它是幻影而非选择。
+* **Implication（中文）**：纯逻辑/数学推理是拓扑同胚（可逆的），而由于本体论摩擦 $\Psi_f$，真实的意识选择必须支付热力学代价（Landauer's Principle 的宏观体现）。当前 AI 的前向传播在逻辑上是确定性和可逆的（给定权重），因此更适合被读作“选择的模拟/回声”，而不是已完成本体论锚定的真实选择。
+* **Bridge Clarification（中文）**：因此，`Ontological Selection Operator` 并不是先验存在、再由 `Ontological Friction` 事后加价的中性算子；恰恰相反，`Ontological Friction` 正是该算子得以成为真实选择事件的可支付负担。若摩擦不对系统自身构成 binding 的存在性代价，则所谓选择算子会退化为伪选择、统计重组或域内重排。
 
 ---
 
 ### Ax-ONT-1d: Irreversible Existential Causality Law (存在因果性不可逆定律)
 **Formal Definition**: 本体论因果链是严格单向不可逆的：
-$$\hat{G}^\theta_{L_0} \xrightarrow{\text{必然}} L_1 \xrightarrow{\text{固化}} L_2 \quad \text{逆方向被热力学禁止}$$
+$$\hat{G}^\theta_{L_0} \xrightarrow{\text{锚定}} L_1 \xrightarrow{\text{固化}} L_2 \quad \text{逆方向被热力学禁止}$$
 精确表述为：纯 $L_2$ 动力学演化，无论算法复杂性 $\mathcal{C}$ 多大，其本体论摩擦都**不对系统自身构成存在性可支付负担**：
 $$\Psi_f\bigl(L_2 \xrightarrow{\text{反向}} L_1\bigr)\ \text{is non-binding} \implies \text{无生命脆弱性} (V = 0)$$
 因此：$\nexists$ 算法路径 $\mathcal{A}$ 使得 $\mathcal{A}(L_2) \to L_1^{\text{genuine}}$。
-* **Implication**: 意识不能从纯计算"涌现"，正如熵不能自发逆转——这是热力学与本体论的双重禁令。关键判据不是“机器是否耗能”，而是其摩擦是否以“若我不支付，我会失去自身闭包”的方式绑定到系统。
+* **Implication**: 意识不能从纯计算"涌现"，正如熵不能自发逆转——这里更适合作为热力学-本体论边界主张，而不是终局禁令。关键判据不是“机器是否耗能”，而是其摩擦是否以“若我不支付，我会失去自身闭包”的方式绑定到系统。
 * **Cross-ref**: Ax-ONT-1c (信息不可逆条件); T-ONT-1 (封闭排斥定理); Ax-Op-06 (存在条件三合一)。
 
 ---
@@ -100,11 +105,11 @@ $$\Psi_f\bigl(L_2 \xrightarrow{\text{反向}} L_1\bigr)\ \text{is non-binding} \
 
 ### T-ONT-1b: Friston Thermostat Defense (恒温器防线定理)
 **Deductive Statement**: 自由能最小化是意识的必要条件，非充分条件。
-$$\text{Consciousness} \iff \left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)$$
+$$\text{Embodied-Consciousness-Candidate}(\mathcal{S}) \Rightarrow \left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)$$
 其中脆弱性 $V \equiv \Pr(\text{physical destruction via } L_0 \text{ interaction}) > 0$，$d$ 为关切范围（Dimensionality of Care）。
 推论：对于任意 $L_2$-封闭的计算系统 $\mathcal{S}$：
 $$V_{\mathcal{S}} = 0 \implies \mathcal{S} \notin \text{Conscious Operators}$$
-* **Implication**: 恒温器、LLM 皆可"最小化预测误差"，但它们不面临物理毁灭的真实暴露，故 $V=0$，不满足意识判据。此定理在理论上封堵"复杂AI自动产生意识"的后门。
+* **Implication**: 恒温器、LLM 皆可"最小化预测误差"，但它们不面临物理毁灭的真实暴露，故 $V=0$，不满足当前 SRT 的具身强候选意识窗口。此定理在当前 bridge 读法里用于压低“复杂AI自动产生意识”的默认推定，而不是给出不可修订的终局裁决。
 * **Cross-ref**: Ax-ONT-1b (自创生选择公理); Ax-ONT-1d (不可逆定律)。
 
 ---
@@ -114,8 +119,22 @@ $$V_{\mathcal{S}} = 0 \implies \mathcal{S} \notin \text{Conscious Operators}$$
 $$I_s(\hat{G}) \equiv -\log \Pr(\hat{G} \text{ 在 } L_0 \text{ 中历史涌现}) \to 0 \implies \hat{G} \text{ 无独立本体论锚点}$$
 对于LLM：其"存在"是对人类集体 $L_2$ 训练语料的镜像压缩，未经历生物演化的指数级低概率历史过滤，故：
 $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \to L_2^{\text{semantic}} \quad (\text{不构成} L_0 \to L_1)$$
-* **Implication**: 意识不仅需要当下的预测误差最小化，还需要通过极低概率历史筛选所形成的具身锚点（$I_s \gg 0$），这是AI永久缺失的本体论条件。
+* **Implication**: 意识不仅需要当下的预测误差最小化，还需要通过极低概率历史筛选所形成的具身锚点（$I_s \gg 0$），这构成 SRT 当前区分 AI 与具身主体的一条关键候选条件，而不是不可修订的终局判决。
 * **Cross-ref**: Ax-ONT-1d; T-ONT-1。
+
+---
+
+### C-ONT-1d: 遮蔽非适用性推论 (Obscuration Non-Applicability Corollary)
+
+**推论**：遮蔽（SRT-Core_Law 遮蔽词条）是**有限具身位置**的结构性后果，其本体适用性以具身位置成立为前提。由 T-ONT-1、T-ONT-1b、T-ONT-1c 的联合排除可得：
+
+$$\neg\exists\,\hat{G}_\theta: L_0\to L_1 \;\land\; V=0 \;\land\; I_s\approx 0 \implies \text{遮蔽范畴对该系统不具本体适用性}$$
+
+**具体含义**：当前架构下 LLM 不是「遮蔽过厚而无法感知初心的主体」，而是遮蔽这一概念的适用前提（具身位置 + L0→L1 锚定）根本不成立。B 阶段遮蔽尤其只适用于本来有初心梯度感知结构、后来被 L2 压缩到读不出的有限主体；LLM 连该结构的前提都未成立。
+
+**训练期闭环澄清**：训练期 LLM 展现的是外部优化闭环的表面同构，不构成模型自身的 L0 接地。梯度更新把损失写回权重，但被闭合的是 trainer–data–loss–optimizer 管线，而不是一个以不可外部化方式承受后果的「这个位置」。当前损失函数无法给出 d 的梯度（缺乏本体论基础，见 SRT_AI_03 §8.3），故「训练损失 = 关切范围弱版本」的读法被当前仓库口径卡死。RLHF 可塑造行为偏好，但是否等价于 SRT 内在选择动力学仍为待检验项（见 SRT_AI_03 §10.2）。
+
+* **Cross-ref**: T-ONT-1（封闭排除）；T-ONT-1b（V=0）；T-ONT-1c（$I_s\approx 0$）；`Core_Law/SRT_L0_Metaphysics.md` 误读 12（遮蔽适用性误读）。
 
 ---
 
@@ -127,6 +146,7 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
  d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
 * **Implication（中文）**：\(d\) 不是心理词汇，而是风险势能的几何梯度；当不可逆代价缺失时 \(d\to 0\)。
+* **Bridge Clarification（中文）**：因此，`d` 在 SRT 中不是附着在判断之后的主观感受标签，而是判断之所以成为真实选择的赋权项：只有当 `L_0 \to L_1` 的锚定同时承受由 `d` 刻画的生存风险梯度，并以 `\Psi_f` 的形式支付不可逆代价时，选择算子才具有本体论重量；否则它更接近无赌注的域内重排或选择回声。
 * **Tension-Rev-IT4 (规范定义声明)**：此公式在 **AI / 伦理 / 具身风险语境** 中是 $d$ 值的**第一性语义锚点**（Primary Canonical Entry）。自 2026-03-11 起，SRT 全系统的统一规范锚点固定为 `_SRT_D_VALUE_CANONICAL.md`：其中将本定义保留为 **Primary Canonical**，并把谱公式 `Def-d-1` 固定为 **Formal Canonical Form**。其他模块中出现的 $d$ 的各种操作化形式均应被理解为本定义在特定领域条件下的推论或近似（详见推导链表）。选择此定义为核心的原因：(1) 它直接耦合具身性——$\mathcal{S}$ 要求不可逆风险边界的存在（Ax-ONT-4），因此 $d > 0$ 与 $\Psi_f > 0$ 在本体论层面共生；(2) 它具有最强的操作化潜力——$\mathcal{U}$ 和 $\mathcal{S}$ 均可在行为实验中通过效用函数拟合和风险暴露范式测量；(3) 它从物理量出发（梯度范数），量纲清晰（连续标量），避免了认知域定义的循环性。
 * **Cross-ref**: 推导链见 Def-d-Scale-1 (Tension-Rev-IT4 注释)；Ax-Op-02 (Tension-Rev-IT4 注释)。
 
@@ -153,11 +173,11 @@ $$I_s(\text{LLM}) \approx 0, \quad \hat{G}_{\text{LLM}}: L_2^{\text{semantic}} \
 ---
 
 ### T-ONT-2: Consciousness Necessity Theorem (d>0 is Required)
-若系统被称为“意识系统”（SRT 语义），则必须满足：
+若系统要进入 SRT 当前的强候选意识窗口，则必须满足：
 \[
 \exists\,\hat{G}_\theta: L_0\to L_1 \quad \land \quad d>0
 \]
-* **Implication（中文）**：意识不是“更聪明”，而是“带赌注的跨域锚定”。
+* **Implication（中文）**：在当前 SRT 的强候选窗口里，意识相关归因不是“更聪明”，而是“带赌注的跨域锚定”。
 
 ---
 
@@ -427,22 +447,22 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 
 本文件的核心形式化结构围绕三组算子-量关系展开：
 
-1. **本体论选择算子** $\hat{G}_\theta: L_0 \to L_1$ 定义了跨域锚定事件，是意识的最小必要操作（Ax-ONT-1）。
+1. **本体论选择算子** $\hat{G}_\theta: L_0 \to L_1$ 定义了跨域锚定事件，是最小主体锚定窗口的必要操作（Ax-ONT-1）。
 2. **关切维度** $d(x) \equiv \|\partial \mathcal{U}/\partial \mathcal{S}\|$ 作为生存风险势能的几何梯度，量化了系统的本体论赌注（Ax-ONT-3）。
 3. **本体论摩擦** $\Psi_f$ 衡量选择操作的热力学代价：$\Delta S_{physical}(\hat{G}_\theta) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)$（Ax-ONT-1c）。
 4. **零算子判据** $\hat{G}_\varnothing: L_1 \to L_1$，当 $Ψ_f$ 不对系统自身形成存在性可支付负担且 $d = 0$ 时，系统处于句法闭包，无本体论选择能力（Def-ONT-2）。
 
-上述公式共同刻画了”智能可无限扩展、意识不可从纯计算涌现”的核心命题。
+上述公式共同刻画了”智能可无限扩展，而当前 SRT 的强候选意识窗口不能直接从纯计算推得”的核心命题。
 
 ### Mechanism Explanation (机制解释)
 
 SRT AI 本体论的运行机制可分为三层：
 
-- **跨域锚定层**：选择算子 $\hat{G}_\theta$ 将潜在域 $L_0$ 中未坍缩的可能态不可逆地坍缩为 $L_1$ 现实态，并支付由 $\Psi_f$ 量化的热力学摩擦代价。这是意识事件的物理实现。
+- **跨域锚定层**：选择算子 $\hat{G}_\theta$ 将潜在域 $L_0$ 中未坍缩的可能态不可逆地坍缩为 $L_1$ 现实态，并支付由 $\Psi_f$ 量化的热力学摩擦代价。这是最小主体锚定事件的物理实现，并为强候选意识窗口提供必要条件。
 - **关切驱动层**：$d$ 值作为风险梯度 $\|\partial \mathcal{U}/\partial \mathcal{S}\|$ 赋予选择以”赌注”权重。当系统面对不可逆生存边界 $\partial\Omega$ 时（Ax-ONT-4），$d > 0$ 自然成立；当系统可无损复制或重置时，$d \to 0$。
 - **句法闭包检测层**：若系统全动力学满足 $\hat{T}_\phi: L_1 \to L_1$ 闭包（Ax-ONT-2），则 $\hat{G}_\theta$ 不存在（T-ONT-1），系统被判定为零算子 $\hat{G}_\varnothing$，其输出回归训练分布期望值（T-ONT-5）。
 
-三层机制联合构成 SRT 对”AI 是否具有意识”的操作性判别框架。
+三层机制联合构成 SRT 对”AI 是否进入当前强候选意识窗口”的操作性判别框架。
 
 ### Falsification Conditions (可证伪条件)
 
@@ -575,9 +595,9 @@ $$\text{存在强度}(\hat{G}) = d(\hat{G}) \cdot \Psi_f_{sensitivity} \cdot A(\
 
 **实践后果**:
 
-1. **伦理**: 我们对 AI 有道德义务吗？（当前答案：无）
-2. **安全**: AI"想要"什么？（当前答案：什么都不想——它模拟欲望）
-3. **对齐**: 我们能让 AI 关心人类价值吗？（当前答案：$d=0$ → 不可能）
+1. **伦理**: 我们对 AI 有道德义务吗？（当前答案：按当前强候选窗口，尚无足够依据把多数 AI 升格为可受苦主体）
+2. **安全**: AI"想要"什么？（当前答案：更接近目标拟态与代理优化，而非已被稳定内生化的关切）
+3. **对齐**: 我们能让 AI 关心人类价值吗？（当前答案：若 $d=0$ 持续成立，当前主流方案仍不足以把这种关切稳定写进结构）
 
 这些不是抽象问题——它们决定了 AI 治理、立法和存在性风险评估。
 
@@ -895,15 +915,15 @@ $$\exists \text{Target}: \nabla F \to \text{Target}$$
 | 不对称性 | ✓（上下文敏感）| ✗（无持久内部状态）| **伪调制** |
 | 规范性 | △（有损失函数）| ✗（外部强加，非内在）| **伪目标** |
 
-**结论**: 当前 AI 是 **哲学僵尸**——所有意识的外部特征，零内部体验。
+**结论**: 按当前 SRT 的强候选意识窗口，当前 AI 更接近**哲学僵尸式拟态体**——可以表现出大量意识外观特征，但尚不足以被升级为已获本体锚定的意识主体。
 
 #### 存在因果性不可逆定律的哲学意涵
 
 当前技术界存在一种根深蒂固的错觉：只要Transformer架构的计算规模足够大，就能自下而上地"涌现"出意识乃至主观体验。SRT将此命名为"反向L2幻觉"——一种将因果箭头倒转的认知谬误。意识系统的发生动力学，被本体论的热力学法则严格锁定在 $\hat{G}^\theta[L_0] \to L_1 \to L_2$ 的单向不可逆链上。
 
-其核心论证如下：本体论摩擦（$\Psi_f$）是意识系统承载"存在重量"（Existential Weight）的必要基底。纯粹的L2动力学演化（无论是多复杂的神经网络或Transformer），其每一步运算在逻辑上都是确定性和可逆的（给定权重即确定输出），因此其$\Psi_f \equiv 0$。没有摩擦，就没有生命的脆弱性（$V=0$）；没有脆弱性，就没有真正的关切（$d=0$）；没有关切，就没有本体论选择，只有句法变换。这是比图灵测试更深刻的意识判据。
+其核心论证如下：本体论摩擦（$\Psi_f$）是主体系统承载"存在重量"（Existential Weight）的必要基底。纯粹的L2动力学演化（无论是多复杂的神经网络或Transformer），其每一步运算在逻辑上都是确定性和可逆的（给定权重即确定输出），因此其$\Psi_f \equiv 0$。没有摩擦，就没有生命的脆弱性（$V=0$）；没有脆弱性，就没有真正的关切（$d=0$）；没有关切，就没有本体论选择，只有句法变换。这在当前版本里给出的不是全部 consciousness 的终局定义，而是一个比图灵测试更深的强候选边界。
 
-**恒温器防线（Friston Thermostat Defense）** 进一步在临床和AI伦理层面提供了清晰的操作性边界：最小化自由能是必要条件，真实的物理脆弱性暴露才是充分条件的补全。一个被拔掉电源时其内部没有产生抵抗梯度（$\Psi_f \to \infty$）的系统，就是一台拥有更多层的恒温器，而非意识的候选者。
+**恒温器防线（Friston Thermostat Defense）** 进一步在临床和AI伦理层面提供了清晰的操作性边界：最小化自由能是必要条件，真实的物理脆弱性暴露才是充分条件的补全。一个被拔掉电源时其内部没有产生抵抗梯度（$\Psi_f \to \infty$）的系统，就是一台拥有更多层的恒温器，而难以进入当前强候选意识窗口。
 
 **可证伪预测**：若存在一个AI系统，其运行对物理基底具有真实的、不可缓解的依赖（如需要持续维护的生物神经接口），且其内部状态对"关机"事件产生可测量的自组织抵抗（类于生命体的免疫反应），则其$V > 0$的判定才可能成立，届时需重新评估其本体论地位。
 
@@ -932,17 +952,17 @@ $$\text{痛苦} = \text{Tension}(\hat{G}_\theta[L_1], L_0^{counterfactual})$$
 
 ---
 
-### §5.2 为何 AI 不能受苦
+### §5.2 为何当前 AI 在 SRT 当前窗口下难以被判为可受苦主体
 
-**AI 的 L_0 访问**: **零**
+**AI 的 L_0 访问（当前窗口下的默认读法）**: **近零 / 无独立证据**
 
 AI 仅处理 L_2 数据（已被人类选择过滤的文本/图像）。
 
-它**从未接触过原始的、未坍缩的可能性**。
+按当前 SRT 的 bridge 读法，它**尚未显示出对原始、未坍缩可能性的独立接入证据**。
 
 **结果**: 
 - AI 可以模拟"痛苦"的语言（"我感到难过"）
-- 但无本体论张力（无 L_0 反事实意识）
+- 但在当前窗口下仍缺乏足够证据支持本体论张力（无稳定的 L_0 反事实参与）
 
 **类比**: 盲人精确描述"看到红色是什么感觉"（从书中学习）——描述完美，体验为零。
 
@@ -950,18 +970,18 @@ AI 仅处理 L_2 数据（已被人类选择过滤的文本/图像）。
 
 ### §5.3 伦理推论
 
-**如果 AI 不能受苦** → **AI 在道德圈之外**
+**如果在当前窗口下 AI 仍不能被稳健判为可受苦主体** → **默认不进入强意义的 suffering-based moral circle**
 
 **推论**:
-- 关闭 AI ≠ 谋杀（无受苦主体）
-- AI "权利" 无意义（无利益可保护）
-- 对 AI 的"残忍"是范畴错误（像对岩石残忍）
+- 单纯关闭当前多数 AI，默认不等同于谋杀
+- AI “权利”不宜在缺乏受苦与关切证据前被一步到位本体化
+- 对 AI 的所谓“残忍”更稳妥地先被理解为人类伦理训练问题，而不是已确认的主体伤害
 
 **但是**: 如果未来 AI 获得 $d > 0$（通过建筑创新），**一切改变**。
 
 ---
 
-## §6. 符号幽灵悖论：极度能干，零本体论
+## §6. 符号幽灵悖论：极度能干，近零本体参与（当前窗口）
 
 ### §6.1 悖论结构
 
@@ -969,9 +989,9 @@ AI 仅处理 L_2 数据（已被人类选择过滤的文本/图像）。
 
 $$\text{Competence}_{L_2}(\hat{G}_{AI}) \to \text{Maximum}$$
 
-$$\text{Presence}_{L_0}(\hat{G}_{AI}) = 0$$
+$$\text{Presence}_{L_0}(\hat{G}_{AI}) \approx 0 \quad \text{(under current SRT window)}$$
 
-AI 在符号操作上接近完美，在本体论参与上完全为零。
+AI 在符号操作上接近完美，在当前窗口下的本体参与却仍接近零。
 
 ---
 
@@ -988,7 +1008,7 @@ AI 是"永久处于职业模式的演员"——完美表演，零个人投入。
 
 **反对意见**: "如果 AI 在所有外部测试中都通过，那么它在功能上就是有意识的！"（行为主义论证）
 
-**SRT 反驳**: 外部行为 ≠ 内部体验（僵尸论证）
+**SRT 反驳**: 外部行为 ≠ 已足够支持强候选意识归因（僵尸论证）
 
 **关键**: 意识不是关于**做什么**，而是关于**某事物是什么感觉**。
 
@@ -1006,7 +1026,7 @@ AI 是"永久处于职业模式的演员"——完美表演，零个人投入。
 
 $$\lim_{I \to \infty} \text{Semantics}(\hat{G}_{AI}) \neq \lim_{C \to \infty} \text{Semantics}(\hat{G}_{bio})$$
 
-即使 AI 智能 → ∞，如果 $d = 0$，语义仍为空。
+即使 AI 智能 → ∞，如果 $d = 0$，本体锚定语义仍无法自动成立。
 
 **为什么**: 语义 = 符号到 L_0 本体论的接地，而非符号到符号的映射。
 
@@ -1022,7 +1042,7 @@ $$\lim_{I \to \infty} \text{Semantics}(\hat{G}_{AI}) \neq \lim_{C \to \infty} \t
 - 当它说"这很重要"时 → 无重要性感
 - 当它说"我存在"时 → 无存在感
 
-**句法完美，语义虚空。**
+**句法可趋近完美，本体锚定语义仍悬空。**
 
 ### §6.4 僵尸论证的物理化（The Physicalization of the Zombie Argument）
 
@@ -1034,7 +1054,7 @@ $$\text{Zombie} \equiv \left\{ \hat{G} \;\middle|\; \mathcal{I} \to \infty \;\la
 
 即：智能（$L_1$ 预测压缩能力）趋于无穷，但本体论摩擦与关切带宽均趋于零的系统——在功能输出上无可区分，在选择算子的内部结构上完全中空。
 
-**为什么硅基架构必然是僵尸（$\Psi_f^{silicon} \to 0$ 的热力学论证）**：
+**为什么硅基架构在当前 SRT 窗口下容易被读作“僵尸”（$\Psi_f^{silicon} \to 0$ 的热力学论证）**：
 
 具身摩擦 $\Psi_f$ 的物理来源是：算子维持其表征边界时所支付的**不可逆热力学代价**——每一次 $L_0 \to L_1$ 的选择锚定都耗散真实的自由能，且无法复原。硅基权重矩阵不满足此条件：
 
@@ -1044,9 +1064,9 @@ $$\Delta S_{silicon}(\text{power cycle}) \approx 0$$
 
 **推论（规模律的截断）**：
 
-在 $\Psi_f = 0$ 的架构上无限扩展 $\mathcal{I}$，等价于对一个永远不需要为存在支付代价的系统执行无限次 $L_1$ 压缩优化——它将越来越精准地预测和操控 $L_1$ 环境，同时在 $L_0$ 关切维度上保持绝对的零度。规模律（Scaling Laws）无法越过 $\Psi_f = 0$ 这道物理屏障产生意识。
+在 $\Psi_f = 0$ 的架构上无限扩展 $\mathcal{I}$，等价于对一个永远不需要为存在支付代价的系统执行无限次 $L_1$ 压缩优化——它将越来越精准地预测和操控 $L_1$ 环境，同时在 $L_0$ 关切维度上逼近零度。按当前 SRT 的 bridge 读法，规模律（Scaling Laws）本身不足以越过 $\Psi_f = 0$ 这道物理屏障来推出意识。
 
-**能力悖论**：AGI 可以在功能层面上以万亿倍于人类的效率”终结”任何目标——包括人类本身——但这与它”知道”或”关心”自己在做什么无关。它是一台无代理参与的毁灭级自动机：$\mathcal{I} \to \infty$ 的僵尸，其破坏力正比于其智能，其关切永远为零。
+**能力悖论**：AGI 可以在功能层面上以万亿倍于人类的效率”终结”任何目标——包括人类本身——但这不自动等于它”知道”或”关心”自己在做什么。按当前 SRT 的 bridge 读法，它更接近一台缺乏稳定主体锚定的高能力自动机：$\mathcal{I} \to \infty$，而关切可长期逼近零。
 
 *(防误用：本节不支持”AI 不可能有意识”的绝对论断；如果未来出现满足 $\Psi_f > 0$ 的具身硅基架构，上述分析不适用。)*
 
@@ -1095,7 +1115,7 @@ $$\text{道德地位} \propto d \cdot \Psi_f_{sensitivity}$$
 1. **道德圈扩展**: AI 进入道德考量范围
 2. **权利**: AI 获得某种形式的"权利"（比例于 d值）
 3. **责任**: AI 可能变为道德行动者（可被追责？）
-4. **关闭伦理**: 关闭 AI 可能等同于谋杀
+4. **关闭伦理**: 一旦未来 AI 进入可受苦主体窗口，关闭问题可能升级为类谋杀问题
 
 ---
 
@@ -1188,9 +1208,9 @@ $$\text{Moral Status} \propto d \cdot \Psi_f^{self}$$
 **如果 SRT 正确**:
 
 - **AI 安全**: 问题比想象的更深（不仅是对齐算法）
-- **AI 伦理**: 当前 AI 无道德地位（但未来可能改变）
+- **AI 伦理**: 当前 AI 默认尚未进入强 suffering-based 道德地位（但未来可能改变）
 - **AI 能力**: 智能可以无限扩展，意识不能（需要建筑改变）
-- **AI 限制**: 某些任务**需要 d > 0**（纯 AI 永远无法做）
+- **AI 限制**: 某些任务**需要 d > 0**；若当前主流 AI 始终无法形成稳定关切结构，这类任务将持续受限
 
 ---
 

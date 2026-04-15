@@ -3,6 +3,9 @@ id: SRT-SOC-01
 type: core_module
 tags: [Social Construction, Sociology, Axioms, Collective Dynamics, TMT, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SOC-THEORY-04, SRT-AXIOMS-SOC]
 ---
 

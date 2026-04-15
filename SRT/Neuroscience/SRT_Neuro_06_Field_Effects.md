@@ -3,6 +3,9 @@ id: SRT-NEURO-06
 type: dynamics
 tags: [Ephaptic, Field Effects, Resonance, Binding, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
@@ -156,6 +159,22 @@ P(\text{fragment})\uparrow
 2. **空间困境**：不存在一个"终极汇合区"将所有信息整合
 3. **拓扑困境**：即使存在汇合区，仍需解释汇合区内部的绑定
 
+### 1.1a 自然视觉绑定收紧补丁（2026-03-21 patch）
+
+用户提交的 *Trends in Cognitive Sciences* 综述 `Beyond binding: from modular to natural vision`（Scholte & de Haan, 2025, doi:`10.1016/j.tics.2025.03.002`）对这一经典表述提出了一个重要收紧：**绑定问题未必完全是大脑必须先分开、再重绑颜色/运动/形状的真实计算难题；它也可能部分是由“视觉模块先天彼此独立”这一理论预设制造出来的。**
+
+该综述汇总了三类对经典模块图景不利的证据：其一，现代神经记录与成像越来越稳定地显示，单个神经元和脑区会同时响应多个特征，而不是只替某一种“纯属性”服务；其二，大样本 lesion 研究并没有稳定复现“V4=纯颜色、MT/V5=纯运动”这类强选择性缺损对应；其三，深度神经网络可以在**不显式分拆再重绑特征**的情况下实现稳健视觉识别，这说明经典 binding problem 也许更多是实验范式的人造难题，而不是自然视觉的默认工作模式。
+
+对 SRT 来说，这条材料最有价值的增量，不是取消绑定议题本身，而是把它**重写为两层问题**：在自然场景中，`\hat{G}_\theta^{visual}` 更可能直接编码 **naturally co-occurring, behaviorally relevant patterns**，也就是共同出现、可用于行动的特征星座；而在人工去相关、注意竞争或异常组合条件下，系统才更明显地暴露出“谁和谁属于同一对象”的 disambiguation 负担。换言之，统一知觉未必总要靠一个额外的“终末绑定器”去拼装，更可能常常是对统计共现结构的直接选择。
+
+这也意味着本文件原先用来说明问题的 `红色/V4 + 形状/颞叶 + 位置/顶叶` 说法，适合作为**经典难题的历史入口**，但不应再被当作当前默认事实口径。更稳妥的写法是：视觉系统确实存在功能偏向与通路差异，但这些偏向常常嵌在多特征、层级化、任务相关的联合表征里，而不是完全隔离的 feature modules。
+
+**边界必须收紧：**
+- 这篇材料是 *TiCS* 的同行评审综述，不是一条新的单项实验定论；其价值主要是框架纠偏与证据汇总。
+- 它并不证明“绑定问题彻底不存在”；在拥挤场景、异常特征组合、注意选择与报告任务中，binding-style 的 disambiguation 仍然是有效描述。
+- 它也不直接证明“场论解释正确”；它首先否定的是过强的模块化前提，而不是自动替 SRT 的 ephaptic 方案完成独占式背书。
+- 更稳妥的吸收方式是：把经典绑定问题从“普遍默认难题”降为“特定实验与冲突场景下被放大的子问题”。
+
 ## 1.2 解释鸿沟 (Explanatory Gap)
 
 第二个核心困境是 Joseph Levine 提出的"解释鸿沟"：
@@ -256,6 +275,32 @@ SRT 区分了两个网络：
 
 这些发现支持了 SRT 的核心主张：电磁场不是"表观现象"，而是具有因果效力的物理实体。
 
+### 3.3a Frontiers EM/UPE 收紧补丁（2026-03-18 patch）
+
+`Frontiers in Systems Neuroscience` 的专题社论 *Quantum electromagnetic photon-mediated communication in neuronal networks* 及其下的 4 条专题文章，为本节补上了一个很有价值的**边界修正**：EM 场、ultraweak photon emission（UPE）与 field-mediated interaction 既不该被当成“无关噪声”，也不该被直接升格为“意识已经由场论或量子机制证明”的总解释。对 SRT 来说，当前最稳的吸收方式，是把它们定位为**global integration / modulation / state-transition** 的候选物理层，而不是取代全部突触或网络计算的单一主角。
+
+这组材料带来四个具体收紧：
+
+1. **McFadden 的 HyDEMF 框架**  
+   该文把神经系统写成“数字样神经元运算 + 内源性 EM 场模拟整合”的 hybrid architecture，强调的是一个**可检验的假设空间**，而不是已经完成的统一模型。对 SRT 有用的增量，不是“意识已被 EM 场解释完毕”，而是：如果场效应真的有信息角色，它更可能体现在跨区整合、整体约束与 serialized access，而不是每个局部点对点计算都改由场完成。
+
+2. **Nevoit 等人的 biophotonic signaling 综述**  
+   该文最重要的贡献不是替 biophoton 研究下结论，而是把两种解释并列放在台面上：UPE 既可能是代谢副产物，也可能在某些条件下承担信息作用。当前关键任务不是继续堆叠“存在 UPE”这件事，而是用更好的时空分辨率、标准化测量和机制实验，把 signaling role 与 epiphenomenal emission 区分开。
+
+3. **Talbi 等人的负结果边界**  
+   该研究明确指出：在生物学上合理的参数范围内，radical pair mechanism（RPM）不能解释 telecommunication-frequency EM fields 对 reactive oxygen species（ROS）的报道效应。对 SRT 的直接含义是，今后不应把“弱 EM 效应”默认重写成“量子/RPM 机制”；若要主张场效应有信息角色，必须先给出更贴近膜、离子通道、电场梯度或组织几何的具体机制。
+
+4. **Ghaffari 等人的麻醉-UPE 实验**  
+   该实验提供了一个很有价值的实证锚点：在大鼠脑中，ketamine 与 thiopental 都可诱导麻醉，但它们对 UPE 与氧化-亚硝化应激的作用方向并不相同。换言之，UPE 不是一个“清醒=高、无意识=低”的单轴刻度；它更像是与 redox regime、代谢状态和药理机制耦合的状态变量。对 SRT 来说，这意味着 UPE 现阶段更适合作为**state geometry marker** 或候选调制层，而不是“意识强度表”。
+
+因此，本文件里更精确的写法应是：场效应最有希望承载的，不是对所有神经计算的一刀切替代，而是 **Ĝ_θ 的全局整合、跨区调制与状态转移窗口**。EM/UPE 可以被视作候选的边界条件、调制层或状态指示层；但它们是否承担可重复的信息编码角色，仍需直接因果证据，而不能由“测到了场 / 光子”自动推出。
+
+**边界必须收紧：**
+- 本次吸收的证据等级是 editorial + topic article chain，不是神经科学共识。
+- “state dependent” 不等于 “informationally causal”；与代谢、氧化应激或药理状态相关，不自动推出神经编码功能。
+- Talbi 的负结果只是否定 RPM 作为某类弱 EM-ROS 效应的默认解释，不等于已经证明了 electric-field-mediated 备选机制。
+- McFadden 的 HyDEMF 也只能视作 architecture hypothesis space，不能据此直接把“纯数字 AI 原则上无意识”写成已证实结论。
+
 ## 3.4 SRT 对解释鸿沟的化解
 
 SRT 的核心论证：
@@ -321,6 +366,12 @@ SRT 的核心论证：
 > **预测**：通过经颅交流电刺激 (tACS) 人为改变不同脑区之间的相位关系，应能可控地影响绑定体验。例如，将 V4 与顶叶的相位从同步改为反相位，应导致颜色与位置的绑定困难。
 
 **证伪条件**：相位操纵对绑定无影响 → H-Field-3 被证伪。
+
+### H-Field-4 (UPE-状态转移增量预测)
+
+> **预测**：若 UPE 不只是氧化应激副产物，而确实贴近与场调制相关的全局状态转移，那么在不同机制的麻醉/镇静条件下，UPE 时间轨迹对 `PCI / 长程相位同步 / ignition probability` 的预测，应在控制 redox/metabolic markers 后仍保留增量效度。换言之，“相同失去反应性”不应必然对应相同 UPE 方向与幅度；但若 UPE 具有信息角色，它仍应帮助预测系统进入/退出整合状态的阈值。
+
+**证伪条件**：若在控制氧化-代谢指标后，UPE 对状态转移或全局整合 proxy 不再提供任何额外解释力；或不同麻醉机制下的 UPE 变化完全只随 redox 负荷单调变化、与整合/恢复窗口无关，则应将 UPE 降级为代谢伴随指标，而非场信息处理候选量。
 
 ## 5.2 开放性问题
 

@@ -3,6 +3,9 @@ id: SRT-KNOWLEDGE-REVIEW-PIPELINE
 type: framework
 tags: [KnowledgeReview, RandomSample, QualityImprovement, Pipeline7]
 status: active_v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-OPERATIONS-README]
 ---
 
@@ -125,7 +128,7 @@ dependency: [SRT-OPERATIONS-README]
 
 ```bash
 cd /Users/zhangyuxin/.openclaw/workspace/SRT
-python ../scripts/srt_knowledge_review.py --count 3
+uv run python ../scripts/srt_knowledge_review.py --count 3
 ```
 
 ### Claude Code 内触发
@@ -133,14 +136,14 @@ python ../scripts/srt_knowledge_review.py --count 3
 用户发送 `知识抽查` 或 `知识抽查 5`（抽查 5 个）时，Claude 执行：
 
 ```bash
-python /Users/zhangyuxin/.openclaw/workspace/scripts/srt_knowledge_review.py \
+uv run python /Users/zhangyuxin/.openclaw/workspace/scripts/srt_knowledge_review.py \
   --count 3 --output-json
 ```
 
 Claude 读取 JSON 输出，展示知识点，接收用户点评，调用：
 
 ```bash
-python /Users/zhangyuxin/.openclaw/workspace/scripts/srt_knowledge_review.py \
+uv run python /Users/zhangyuxin/.openclaw/workspace/scripts/srt_knowledge_review.py \
   --writeback --patch-file /tmp/srt_p7_patch.json
 ```
 

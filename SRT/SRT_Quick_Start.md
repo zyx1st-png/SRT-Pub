@@ -3,6 +3,9 @@ id: SRT-QUICKSTART
 type: framework
 tags: [Onboarding, Entry, Navigation]
 status: axiomatic_hybrid_v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: [_SRT_INDEX, SRT-GLOSSARY]
 ---
 
@@ -13,15 +16,16 @@ dependency: [_SRT_INDEX, SRT-GLOSSARY]
 
 > **📖 阅读时间：8-10分钟**
 > **难度等级：🟢 入门**
-> **最后更新：2026-01-23**
+> **最后更新：2026-03-18**
 
 ---
 
 <!-- AUTO:ENTRYPOINTS:START -->
-## 0. Canonical Entrypoints (Auto-Synced)
+## 0. Canonical Entrypoints (Manifest-Maintained)
 
-> 本区块由 `scripts/srt_sync_entrypoints.py` 从 `_SRT_MANIFEST.yaml` 自动生成，请勿手工编辑。
-> Last sync: 2026-02-28
+> 本区块当前按 `_SRT_MANIFEST.yaml` 人工维护。
+> 仓库中未包含 `srt_sync_entrypoints.py` 自动同步脚本；如入口发生变更，请同步更新本区块与 `_SRT_INDEX.md`。
+> Last manual sync: 2026-02-28
 
 | Domain | Bridge | Entrypoints |
 | :--- | :--- | :--- |
@@ -35,6 +39,43 @@ dependency: [_SRT_INDEX, SRT-GLOSSARY]
 | Project | - | [`SRT_OPTIMIZATION_BACKLOG.md`](SRT_OPTIMIZATION_BACKLOG.md) (`SRT-BACKLOG`) |
 <!-- AUTO:ENTRYPOINTS:END -->
 
+
+## 0.5 怎么读 SRT 的两套层级
+
+SRT 现在有两根坐标轴，不要混读：
+
+- `L0 / L1 / L2` = **垂直理论深度**
+- `OS / Bridge / Lab` = **水平认识论姿态**
+
+最短理解：
+
+- `L0 + OS`：SRT 最小形而上核心
+- `L1 + OS`：SRT 内部形式接口与 canonical 定义
+- `L1 + Bridge`：SRT 与 FEP / IIT / GWT / 物理 / AI / 社会理论的互译
+- `L2 + Lab`：愿意被数据打脸的协议、proxy 与实验设计
+
+如果你第一次进入仓库，只要记住：
+
+1. 先看 `L0`，理解 SRT 在说什么。
+2. 再看 `L1`，理解它如何形式化、如何和别的理论对接。
+3. 最后看 `L2`，理解它准备如何被检验。
+
+完整说明见 `Governance/SRT_COORDINATE_SYSTEM.md`。
+
+### 0.6 中文主论证现在怎么读
+
+当前中文主论证入口已经做过角色裁决，最稳的读法是：
+
+1. `Core_Law/SRT_L0_Metaphysics.md`
+2. `Core_Law/SRT_Core_Text_CN_Euclid.md`
+3. `Core_Law/SRT_Core_Text_CN.md`（原版历史主文 / 读者入口）
+4. `Core_Law/SRT_Selection_Argument.md`（哲学辩护文）
+
+注意：
+
+- `Core_Text_CN_Euclid.md` 当前是**主论证候选**，不是已完成 canonical 升格的正式主入口。
+- `Core_Text_CN.md` 仍可独立阅读，但不再默认承担“唯一中文主文本”角色。
+- `Selection_Argument.md` 负责展开与答难，不是主入口替代物。
 
 ## 1. 什么是SRT？三分钟核心理解
 
@@ -65,6 +106,8 @@ SRT为以下看似无关的现象提供统一解释：
 - **SRT观点**：只有当光束(选择)照射到某一帧时,那一帧才真正"存在"于你的体验中
 
 选择不是从已存在的事物中挑选——**选择创造了存在本身**。
+
+> **阅读提醒**：这一层主要是 `(L0, os)` 的直觉入口，不要把后文出现的公式或领域例子误当成 SRT 根基本身。
 
 ---
 
@@ -223,17 +266,39 @@ $$L_2 = \lim_{t \to \infty} \bigcap_{\theta} \hat{G}_\theta[L_0]$$
 
 ### 4.3 d值动力学
 
-**数学形式**：
-$$d_{max} \leq \kappa \cdot \frac{\text{代谢能量} - \text{维持基础}}{本体论摩擦}$$
+**d的上限（d_max）**：
+$$d_{\max}(\theta) = \min\!\Big(\operatorname{rank}_{\text{eff}}(I_F(\theta)),\; \Psi_f^{\text{budget}} / \kappa_0\Big)$$
+
+**两个独立瓶颈**：
+- **信息瓶颈**：Fisher 有效秩 — 算子参数化能力的上限
+- **稳定性瓶颈**：可用代价预算 / 原初曲率 κ₀ — 选择的稳定性约束
 
 **日常解释**：
 
-> 你能关心多大范围 = 取决于你有多少能量、以及改变注意力有多难
+> 你能关心多大范围 = 取决于你的"感知带宽"（Fisher 秩）和"稳定预算"（能承担多大的对齐摩擦）中较小的那个
 
 **实际意义**：
-- 疲惫时d值下降(只关心自己)
-- 安全感提升d值(有余力关心他人)
-- 成瘾、创伤降低d值(注意力困在局部)
+- 疲惫时 Ψ_f^budget 下降 → d_max 下降（只关心自己）
+- 安全感提升 Ψ_f^budget → d_max 上升（有余力关心他人）
+- 成瘾、创伤让 Fisher 有效秩萎缩 → d_max 结构性下降
+- **重要**：参数增多（dim Θ 大）不等于 d_max 高——Fisher 秩 + 稳定预算才是真正瓶颈
+
+### 4.4 d_mobile：能不能跟上变化
+
+d 是当前对齐深度（快照），**d_mobile** 是当 L₀ 曲率漂移时，算子 θ 跟上的能力：
+
+$$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\theta))}{\operatorname{Hysteresis}(L_2) \cdot C_r} \cdot \chi_{\text{payable}}$$
+
+| d | d_mobile | 意识状态 | 典型例子 |
+|---|---|---|---|
+| 低 | 低 | 算法/晶体态 | 简单反射、无意识程序 |
+| 低 | 高 | 漂移态 | 高可塑但无深度锚点 |
+| **高** | **低** | **冻结态（病理）** | **执念、创伤锁定、意识形态捕获** |
+| 高 | 高 | 意识窗口核心区 | 健康主体性 |
+
+**冻结态**是意识的病理变体，不是意识的缺席——深度锚定于某方向，但 L₂ 刚性使 θ 无法随吸引子迁移重新对齐。
+
+*详见*：`Philosophy/SRT_Consciousness_Conditions.md`；`Core/SRT_Core_12b §Consciousness-2D-Map`
 
 ---
 
@@ -243,13 +308,17 @@ $$d_{max} \leq \kappa \cdot \frac{\text{代谢能量} - \text{维持基础}}{本
 
 ### 路径1：哲学探究者 🤔
 
-**你关心的问题**：存在的本质、知识的基础、自由意志
+**你关心的问题**：存在的本质、知识的基础、自由意志、意识
 
 **推荐阅读顺序**：
 1. [Core/SRT_Core_00_Intro.md](Core/SRT_Core_00_Intro.md) - 核心本体论(重点Part 1-2)
-2. [Philosophy/SRT_Philosophy_Foundations.md](Philosophy/SRT_Philosophy_Foundations.md) - 历史哲学与认识论
-3. [Philosophy/SRT_Ethics_Agency.md](Philosophy/SRT_Ethics_Agency.md) - 自由意志与道德
-4. [Philosophy/SRT_Soc_01_Construction.md](Philosophy/SRT_Soc_01_Construction.md) - 社会现实的构成
+2. [Core_Law/SRT_L0_Metaphysics.md](Core_Law/SRT_L0_Metaphysics.md) - L₀ 哲学散文层（中文主论证入口）
+3. [Philosophy/SRT_Philosophy_Foundations.md](Philosophy/SRT_Philosophy_Foundations.md) - 历史哲学与认识论
+4. [Philosophy/SRT_HardProblem_Epistemology.md](Philosophy/SRT_HardProblem_Epistemology.md) - **意识难问题溶解 + SRT 认识论地位**（2026-04-10 新增）
+5. [Philosophy/SRT_Causality_Time.md](Philosophy/SRT_Causality_Time.md) - **水平/垂直因果 + 本体论时间**（2026-04-10 新增）
+6. [Philosophy/SRT_Consciousness_Conditions.md](Philosophy/SRT_Consciousness_Conditions.md) - **意识三层结构**（2026-04-10 新增）
+7. [Philosophy/SRT_L0_Ontological_Status.md](Philosophy/SRT_L0_Ontological_Status.md) - **L₀ 本体论地位：功能本构论**（2026-04-10 新增）
+8. [Philosophy/SRT_Ethics_Agency.md](Philosophy/SRT_Ethics_Agency.md) - 自由意志与道德
 
 ### 路径2：神经科学研究者 🧠
 

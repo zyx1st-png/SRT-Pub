@@ -3,6 +3,9 @@ id: SRT-PHIL-FAQ
 type: guide
 tags: [FAQ, Philosophy, Defense]
 status: v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: []
 ---
 

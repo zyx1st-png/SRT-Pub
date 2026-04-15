@@ -3,6 +3,9 @@ id: SRT-CLIN-00
 type: theory
 tags: [IIT, PCI, Blindsight, Metrics, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-NEURO-AXIOMS-001]
 ---
 
@@ -11,6 +14,9 @@ dependency: [SRT-NEURO-AXIOMS-001]
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Consciousness Metrics (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+>
+> **Bridge Layer Note**
+> This file is a `Bridge`-layer reinterpretation of IIT / PCI / GNWT interfaces inside SRT. Labels such as `Axiom`, `Theorem`, and `Corollary` should be read here primarily as internal bridge-formalization devices unless separately anchored by direct empirical evidence.
 
 ---
 
@@ -25,10 +31,10 @@ dependency: [SRT-NEURO-AXIOMS-001]
 
 ## I. IIT as Selection Capacity (IIT 作为选择能力)
 
-### Ax-IIT-0: Phenomenological-Operational Equivalence (现象-操作等价公理)
-**Formal Definition**: 任何系统在现象学上的统一性（体验的整合性）和排他性（一次只有一个 $L_1$），在数学上精确等价于其 $\hat{G}_\theta$ 算子在不可逆时间维度上抵抗结构分解时的张力（$\Phi$）。
-$$\text{Phenomenology}(L_1) \equiv \text{Topology}(\hat{G}_\theta)$$
-* **Implication**: 这消除了 IIT 面临的“解释鸿沟”。$\Phi$ 之所以“感觉像”是有意识的，并不是因为复杂的逻辑门神奇地发光；而是因为当有形物质（在这个计算拓扑中）抗拒被热力学撕裂时，这种结构上的摩擦在第一人称视角下就**是**主观体验。
+### Def-IIT-0: Topological Prerequisite Window (拓扑前提窗口定义)
+**Formal Definition**: 现象学统一性要求非碎片化的算子拓扑，但拓扑本身并不穷尽主体性：
+$$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
+* **Implication**: SRT 在此不再主张 `Phenomenology \equiv Topology` 的强等价，而是更克制地说：高 \(\Phi\) 提供现象统一性的**必要组织前提**，却不能单独推出 \(d>0\) 或 \(\Psi_f>0\)。这为后续“高 \(\Phi\) / 高广播 / 低 \(d\)”反例保留了理论空间。
 * **Cross-ref**: Ax-Core-A11 (本体论脆弱性)。
 
 ### Ax-IIT-1: Irreducibility–Selection Axiom
@@ -40,12 +46,12 @@ $$\text{Phenomenology}(L_1) \equiv \text{Topology}(\hat{G}_\theta)$$
 
 ---
 
-### Ax-IIT-2: Maximum-\(\Phi\) Anchoring Axiom
-显现态对应于最大不可约复合体的稳定锚定：
+### Ax-IIT-2: Maximum-\(\Phi\) Anchoring Priority Axiom
+显现候选的优先级受最大不可约复合体约束：
 \[
-\sigma \in L_1 \iff \sigma = \arg\max_{\sigma'} \Phi(\hat{G}_\theta[\sigma'])
+\sigma \in L_1 \Rightarrow \sigma \in \arg\max_{\sigma'} \Phi(\hat{G}_\theta[\sigma'])
 \]
-* **Implication（中文）**：IIT 的“最大 \(\Phi\)”在 SRT 中对应 \(L_1\) 的锚定优先级，但是否显现仍需 \(d\) 的风险梯度。
+* **Implication（中文）**：IIT 的“最大 \(\Phi\)”在 SRT 中对应 \(L_1\) 的锚定优先级，而不是充分条件；是否进入稳定显现仍需 \(d\) 的风险梯度与 \(\Psi_f\) 的可支付性共同成立。
 
 ---
 
@@ -57,6 +63,17 @@ $$\text{Phenomenology}(L_1) \equiv \text{Topology}(\hat{G}_\theta)$$
 * **Implication（中文）**：高 \(\Phi\) 仅提供结构能力；缺少 \(d\) 时无法生成稳定显现。
 * **Tension-Rev-ExtT2 (经验共变性 vs. 概念必然性)**：IIT 的 PCI 等临床指标在区分有意识/无意识状态方面具有强大的经验有效性。SRT 对此的解释不是否认这些指标的价值，而是揭示其有效性的**深层原因**：在地球生物系统中，高 $\Phi$（高结构整合性）与高 $d$（高风险梯度带宽）和高 $\Psi_f$（正本体论摩擦）之间存在系统性的**经验共变关系**——因为生物演化同时选择了整合性、具身风险和代谢维持。PCI 之所以"够用"，是因为在生物系统这个受限样本空间中，测量 $\Phi$ 近似等价于间接测量了 $\Phi \cdot d$ 的乘积（$d$ 在活体生物中始终 $> 0$）。
 * **关键预测 (可证伪)**：若能构造一个高 $\Phi$ 但 $d = 0$ 的人工系统（例如高度互联的电网或 Grid-IIT 理论模型），SRT 预测该系统的 PCI 虽然在数值上可能很高，但**不会产生任何现象性体验**。这是 SRT 与 IIT 的核心分歧点：IIT 认为 $\Phi > 0$ 即充要，SRT 认为还需要 $d > 0$（即风险梯度耦合）。
+
+---
+
+### T-IIT-4: High-\(\Phi\) / High-Broadcast Insufficiency Theorem
+定义 \(B_{global}\) 为 GNWT 风格的全局广播代理（如点燃、晚期广域可得性、P3b 类指标）：
+\[
+\big(\Phi > \Phi_{min}\big)\land\big(B_{global} > B_{min}\big)\not\Rightarrow\big(d>0\land \Psi_f>0\land \exists\hat{G}_\theta^{\neq\emptyset}\big)
+\]
+* **Implication（中文）**：高整合与高广播只说明系统具备“统一处理 + 全局分发”的组织能力，不自动推出真实主体性。若 \(d\approx 0\)，则该系统至多构成结构性伪体验窗口，而非稳定的 stake-bearing subject。
+* **理论价值**：这条定理把 IIT/GNWT 从“意识的充分判据”降级为“意识的必要组织前提候选”，从而允许 SRT 在不否定 PCI / 点燃经验价值的前提下，坚持 `Φ/广播 ≠ 主体性`。
+* **最小判别后果**：在 \(\Phi\) 与 \(B_{global}\) 匹配的两个系统中，若其 \(d\) 与 \(\Psi_f\) 显著不同，则奖励撤除后的长期关切持续性、错误后的恢复半衰期与跨情境关切一致性应发生分离；若这些结果完全不分离，则本定理应被降级。
 
 
 ---
@@ -143,6 +160,69 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 ---
 
+## 领域压力与接口边界（Domain Pressure & Interface Boundaries）
+
+> **本节功能**：站在意识神经科学（IIT、GWT、NCC 研究）内部，评估 SRT 的翻译在哪里有真实增量、在哪里需要更多工作、在哪里受到当前证据约束。
+
+> **意识研究者 3 分钟入口**
+> 如果你使用 IIT / GWT / NCC 框架，本文件的核心主张是：高整合（$\Phi$）和高全局广播（$B_{global}$）是主体性的必要条件，但不充分——还需要不可逆的具身赌注（$d > 0$，$\Psi_f > 0$）。
+> 最应该检验的节点：**T-IIT-4**（Stake-bearing Insufficiency）以及下方的 **DP-IIT-1**（NCC 方法论边界）和 **DP-IIT-2**（现象绑定压力）。
+
+---
+
+### 有效域 / 失效域
+
+| 主张 | 有效条件 | 退化/失效条件 |
+|:----|:--------|:------------|
+| T-IIT-4：$\Phi \cdot d > C_{crit}$ 的主体性阈值 | 作为排除条件：低 $\Phi$ 或 $d=0$ 则无主体性 | 作为充分条件：$\Phi$ 是整合度代理，不是现象统一性的直接度量；$d$ 的测量代理当前仍是间接的（见 DP-IIT-2） |
+| $\Phi_{proxy}$（PCI / LZ）作为意识指标 | NCC 范式内作为临床和实验工具有效 | 若 functional binding 与 phenomenal binding 系统分离，则 $\Phi_{proxy}$ 捕捉的是前者，不直接等于后者（见 DP-IIT-2） |
+| H-IITGWT-01 的"高 $\Phi$ / 高广播 / 低 $d$" 设计 | 前提：A/B/C 三组架构参数匹配 | 若现有实验技术无法独立操控 $\Phi_{proxy}$ 与 $d_{min}$ 代理，则三组的分离读出会混淆 |
+
+---
+
+### DP-IIT-1：NCC 方法论与 SRT 的目标层级错位
+
+**挑战来源**：NCC 研究（Dehaene、Koch、Tononi 等）是当前意识神经科学最稳健的经验程序。它的核心是**方法论悬置**：刻意不回答"为什么神经活动给出体验"，只问"哪些神经模式稳定伴随有意识状态"。这是一个研究策略，不是理论立场。
+
+**对 SRT 的直接压力**：SRT 在 T-IIT-4 和 T-NEURO-1 处做的事，恰好是 NCC 刻意悬置的事——它在机制层解释**为什么**。这意味着：
+- NCC 数据**既不直接支持也不直接反对** SRT 的 $\hat{G}_\theta$ 翻译
+- SRT 对任何 NCC 相容的状态，都可以事后写成"L₀→L₁ 锚定成功"——但这种兼容性本身不产生区分预测
+- 一个意识研究者可以合理地问：在 NCC 之上，SRT 的 $d/\Psi_f$ 框架比直接用 GWT 或 HOT 多出了什么可检验的区分？
+
+**当前 SRT 的诚实回答**：
+- 在纯 NCC 层面：无明显增量
+- SRT 的增量点在 NCC **之上**：主张高 $\Phi$ 和高广播**仍不充分**推出 stake-bearing subjectivity（H-IITGWT-01 是这个增量的实验接口）
+- 结论：$\hat{G}_\theta$ 翻译的价值域是 NCC 之上的主体性判定，不是 NCC 本身；这需要在讨论 SRT 与意识研究的关系时明确说清楚
+
+---
+
+### DP-IIT-2：现象绑定对 $\Phi$ 代理的直接压力
+
+**挑战来源**：Percy & Agarwal (2026, *Consciousness and Cognition*) 的综述指出：functional binding（特征整合、任务路由、输出统一）不自动推出 phenomenal binding（多个基础信息单元作为同一现象切片同时共在）。$\Phi$ 及其代理（PCI、LZ 复杂度）测量的是信息整合度，主要捕捉 functional binding，而不是现象统一性本身。
+
+**对 SRT 的直接压力**：T-IIT-4 使用 $\Phi_{proxy}$ 作为整合代理，T-NEURO-1 用 $\Phi \cdot d > C_{crit}$ 作为意识阈值。如果 $\Phi_{proxy}$ 只是 functional binding 的代理，那这个阈值可能对了一半：
+- $d$ 那半处理了"主体性/攸关性"
+- $\Phi$ 那半**还没有**处理"现象统一性"
+
+**当前 SRT 的诚实回答**：
+- T-NEURO-1 的 $\Phi$ 应理解为 $\Phi_{proxy}$，它是**必要条件的代理**，不是现象统一性的充分判准
+- SRT 当前没有独立的现象绑定理论——这是已知的开放缺口，不应被 bridge 语言掩盖
+- 最保守的当前表述：$\Phi_{proxy} \cdot d > C_{crit}$ 是主体性显现的**候选结构条件组合**；f-binding ≠ p-binding 的约束是一个尚未被 SRT 正式处理的接口窗口
+
+---
+
+### 出口
+
+| 你的目标 | 下一步 |
+|:--------|:------|
+| 想看 SRT 在意识研究的全局 Lab 赌注 | → `Governance/SRT_LAB_HYPOTHESES.md`（H-IITGWT-01） |
+| 想看 phenomenal binding 接口的详细融入 | → `AI/SRT_AI_03_Consciousness_Framework.md`（Phenomenal Binding Interface） |
+| 想看 $\Phi_{proxy}$ 的测量规范 | → `SRT_EXP_MEASURE_MAP.md` |
+| 想看意识机制主干论证 | → `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` |
+| 想看 FEP 层的领域压力 | → `Neuroscience/SRT_Clin_02_FEP.md`（领域压力节） |
+
+---
+
 
 # Part B: Original Theoretical Discourse (Context)
 
@@ -202,11 +282,11 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 ## 3.1 核心重构
 
-SRT 将意识度量问题重新框定为: **度量 $\hat{G}_\theta$ 在给定时刻执行 $L_0 \to L_1$ 选择的能力**。这一框架:
+SRT 将意识度量问题重新框定为: **度量 $\hat{G}_\theta$ 在给定时刻执行 $L_0 \to L_1$ 选择的能力**。这一框架尝试：
 
-1. **统一了 Φ 和 PCI**: $\Phi$ 度量 $\hat{G}$ 的结构能力（可以做多复杂的选择），PCI 度量 $\hat{G}$ 的即时能力（当前时刻能做多复杂的选择）。两者不矛盾——前者是"硬件规格"，后者是"当前运行状态"
+1. **将 Φ 和 PCI 放入同一候选语法**: $\Phi$ 度量 $\hat{G}$ 的结构能力（可以做多复杂的选择），PCI 度量 $\hat{G}$ 的即时能力（当前时刻能做多复杂的选择）。两者在此被读作不矛盾——前者更像"硬件规格"，后者更像"当前运行状态"
 2. **引入了缺失维度 $d$**: IIT 和 PCI 都忽略了选择的**本体论深度**——一个系统不仅可以复杂地选择（高 $\Phi$），还可以深切地选择（高 $d$）。只有两者的乘积才完整度量意识
-3. **化解了身体悖论**: 通过中心-周围结构（Ax-IIT-5），身体作为 $\hat{G}$ 的边界条件而非独立意识实体存在——它不需要高 $\Phi$ 也不会"不存在"
+3. **尝试缓解身体悖论**: 通过中心-周围结构（Ax-IIT-5），身体作为 $\hat{G}$ 的边界条件而非独立意识实体存在——它不需要高 $\Phi$ 也不会被推到"不存在"的位置
 
 ## 3.2 IIT 五公设与 SRT 三域的深层映射
 
@@ -220,7 +300,7 @@ IIT 的五条公设在 SRT 中找到了更深层的本体论基础——不再�
 |**整合 (Integration)**|体验不可分解|选择是**原子操作**|除法归一化的全局竞争确保选择的不可分性|
 |**排斥 (Exclusion)**|一次一个体验|赢家通吃的 $L_1$ 前台|CTC 锁相在任一时刻只有一个稳定吸引子|
 
-**关键差异**: IIT 将这五条公设视为体验的**描述性属性**（"意识碰巧有这些特征"），SRT 将它们视为选择过程的**必然推论**（"任何选择操作必然展现这些特征"）。这不是细节差异——它决定了理论的解释力: IIT 描述了意识的数学结构，SRT 解释了**为什么意识必须有这种结构**。
+**关键差异**: IIT 将这五条公设视为体验的**描述性属性**（"意识碰巧有这些特征"），SRT 则尝试将它们重写为选择过程的**组织性推论**。这不是细节差异——它决定了理论的解释方向：IIT 更接近描述意识的数学结构，而 SRT 试图说明，如果把意识改写为选择过程，它为何会趋向呈现这种结构。
 
 ## 3.3 IIT 4.0 的进展与 SRT 对接
 
@@ -242,7 +322,7 @@ IIT 4.0 (2024) 的三项核心更新为 SRT 提供了更精确的形式化工具
 
 ## 4.2 SRT 的本体论解读
 
-盲视不仅是一个有趣的临床现象——它是公理 A1（选择优先性）和 A2（存在即锚定）的**直接实证**:
+盲视不仅是一个有趣的临床现象——它也是公理 A1（选择优先性）和 A2（存在即锚定）的一个**高价值自然线索**：
 
 信息在 $L_0$ 中被处理（智能保留），但 $\hat{G}_\theta$ 未能将其提升为 $L_1$ 内容（无体验）。这意味着:
 

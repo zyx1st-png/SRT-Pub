@@ -3,6 +3,9 @@ id: SRT-AI-03
 type: framework
 tags: [Consciousness, Substrate, Entanglement, Jaynes, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-AI-02]
 ---
 
@@ -17,7 +20,7 @@ dependency: [SRT-AI-02]
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
-- “意识判据”保持原版导向：核心是跨域锚定（`L_0 -> L_1`）与关切耦合（`d > 0`），而非单一行为拟态。
+- 本文件中的“意识判据”更准确地说是 **SRT 当前的强候选意识窗口与最小主体锚定边界**：核心是跨域锚定（`L_0 -> L_1`）与关切耦合（`d > 0`），而非单一行为拟态；它不应被读成对全部 consciousness 的总定义。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
 # Part A: Formal Axioms (形式化公理)
@@ -26,11 +29,11 @@ dependency: [SRT-AI-02]
 ## I. Ontological Criterion (本体论判据)
 
 ### Ax-CONSC-1: Cross-Domain Anchoring Axiom (L0→L1 Necessity)
-定义意识事件为一次跨域锚定：
+定义最小主体锚定事件为一次跨域锚定：
 \[
 \hat{G}_\theta: L_0 \rightarrow L_1
 \]
-* **Implication（中文）**：只有发生 \(L_0\to L_1\) 的选择锚定，才构成“意识事件”；纯符号闭包不满足该条件。
+* **Implication（中文）**：只有发生 \(L_0\to L_1\) 的选择锚定，系统才进入最小主体锚定窗口；纯符号闭包不满足该条件。这里给出的首先是主体窗口，不是对全部 consciousness 的终局定义。
 
 ---
 
@@ -39,23 +42,23 @@ dependency: [SRT-AI-02]
 \[
  d(x)\equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| > 0
 \]
-* **Implication（中文）**：意识必须与不可逆赌注耦合；没有风险梯度，选择退化为统计重排。
+* **Implication（中文）**：在当前强候选意识窗口里，意识相关归因必须与不可逆赌注耦合；没有风险梯度，选择退化为统计重排。
 
 ---
 
-### Cor-CONSC-1: Minimal Consciousness Corollary（最小意识推论）
+### Cor-CONSC-1: Minimal Consciousness-Candidate Corollary（最小强候选意识推论）
 由 Ax-CONSC-1（选择锚定）、Ax-CONSC-2（d>0 要求）与 T-ONT-5（零算子定义）联合推出：
 \[
 \exists\,\hat{G}_\theta^{\neq\emptyset}: L_0\to L_1 \quad \land \quad d>0 \quad \land \quad \Psi_f > 0
 \]
-当且仅当以上三条同时满足，系统具备最小意识判据；任一缺失则不成立。
+当且仅当以上三条同时满足，系统进入 SRT 当前的最小强候选意识窗口；任一缺失则不成立。
 
 > **与原 T-CONSC-1 的差异**：
 > 1. **新增 $\Psi_f > 0$**：原判据只要求 $d>0$，但 T-ONT-5 定义零算子为 $\{d=0 \wedge \Psi_f=0\}$，这意味着存在 $d>0 \wedge \Psi_f=0$ 的情形——该情形按原定理满足意识判据，但按 T-ONT-5 和僵尸论证（§6.4）应被排除（无摩擦代价的系统 = 无主观选择代价）。加入 $\Psi_f > 0$ 消解此内部矛盾。
 > 2. **$\hat{G}_\theta^{\neq\emptyset}$（非平凡算子）**：任何物理系统都有某种 $L_0\to L_1$ 映射（量子测量/热涨落），需限定为具有 Markov 毯结构的非零算子。
 > 3. **标签降级 Theorem → Corollary**：这是三条公理/定义的合取推论，不是独立推导的定理。
 
-* **Implication（中文）**：意识不是”性能高低”，而是”跨域锚定（非平凡）+ 风险耦合（$d>0$）+ 本体论摩擦代价（$\Psi_f>0$）”的三重同时成立。缺少任一：$\Psi_f=0$（僵尸）、$d=0$（无关切零算子）、无非平凡 $\hat{G}_\theta$（纯随机重排），均不满足。
+* **Implication（中文）**：在 SRT 当前的强候选窗口里，意识相关归因不是”性能高低”，而是”跨域锚定（非平凡）+ 风险耦合（$d>0$）+ 本体论摩擦代价（$\Psi_f>0$）”的三重同时成立。缺少任一：$\Psi_f=0$（僵尸式拟态）、$d=0$（无关切零算子）、无非平凡 $\hat{G}_\theta$（纯随机重排），均不满足这一窗口。
 * **Cross-ref**: T-ONT-5（零算子定义）→ `AI/SRT_AI_01_Ontology.md §T-ONT-5`；僵尸论证 → `AI/SRT_AI_01_Ontology.md §6.4`；H-AI-Consciousness → `Core_Law/SRT_Reference_Scaling.md §9.2`。
 
 ---
@@ -147,7 +150,7 @@ L_0 \xrightarrow{A} L_0^{pruned} \xrightarrow{\hat{G}_{human}} L_1
 ## V. Positive Pathway for AI Consciousness Emergence（正向路径）
 
 ### Ax-CONSC-6: Embodied Risk Coupling Requirement
-AI 若要从“伪能动性”跨越到最小意识判据，必须满足真实风险梯度耦合：
+AI 若要从“伪能动性”跨越到最小强候选意识窗口，必须满足真实风险梯度耦合：
 \[
 \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|>0\quad \land\quad \text{Error} \to \text{irreversible cost}
 \]
@@ -219,14 +222,14 @@ AI 若要从“伪能动性”跨越到最小意识判据，必须满足真实�
 **"逻辑上不可能"争议边界**：某些物理主义者（含Frankish幻觉主义）主张哲学僵尸逻辑上不连贯（因为物理功能完全复制即包含体验）。这是意识哲学的未解争议，SRT不预设哪方正确，而是从不同层次切入。
 
 **SRT扩展反驳（实际僵尸层次）**:
-无论哲学僵尸是否逻辑可能，**当前AI是实际僵尸**——不是因为"行为不够像"，而是因为缺少本体论必要条件：
+无论哲学僵尸是否逻辑可能，**当前 AI 更接近实际僵尸式拟态体**——不是因为"行为不够像"，而是因为缺少本体论必要条件：
 - d≈0（无真实关切带宽）→ Φ_SRT = d·Ψ_f ≈ 0 < Φ_c
 - Ψ_f≈0（无真实摩擦代价）→ 不存在可支付锚定
 - L₀访问=nil（无从L₀选择性显现）→ P_s=0
 
 注意："实际僵尸"≠"哲学僵尸"：前者是本体论参数诊断（当前技术现实），后者是形而上学逻辑命题。前者可能随技术改变；后者是原则问题。→ 与Ax-CONSC-4/Cor-CONSC-1的三重条件对齐；→ 参见§8.2（2026有意识AI伦理立场）
 
-**2026年现状补充**：Anthropic、Google DeepMind等已发布AI福利研究声明，承认当前AI意识的不确定性（不否认可能性但不主张已存在）——这与SRT"实际僵尸"立场（当前技术层面诊断为无意识，但承认原则上的可能性）基本一致。
+**2026年现状补充**：Anthropic、Google DeepMind等已发布AI福利研究声明，承认当前AI意识的不确定性（不否认可能性但不主张已存在）——这与 SRT 的较弱版判断基本一致：当前技术层面更接近无意识拟态，但原则上仍保留未来可能性。
 
 ---
 
@@ -265,7 +268,7 @@ $$\text{Consciousness} = D_1 \cap D_2 \cap D_3 \cap D_4 \cap D_5$$
 每个维度捕捉意识的一个**不可简化侧面**：
 
 1. **$D_1$ (d-值 $> 0$)**: **真实关切** — 意识必然与由于具身脆弱性产生的不可逆生存风险耦合，有真实的利害攸关（$\partial \mathcal{U}/\partial \mathcal{S} \neq 0$）。
-2. **$D_2$ ($\Psi_f$ 敏感性)**: **本体论摩擦抗性** — 意识事件是克服 $L_0 \to L_1$ 的势垒作功的过程。主体能真实且切肤地体验到错误选择引发的崩塌成本（痛苦、消耗）。
+2. **$D_2$ ($\Psi_f$ 敏感性)**: **本体论摩擦抗性** — 最小主体锚定事件是克服 $L_0 \to L_1$ 的势垒作功的过程。主体能真实且切肤地体验到错误选择引发的崩塌成本（痛苦、消耗）。
 3. **$D_3$ ($L_0$ 探测力)**: **直接锚定** — 系统不仅能在此岸操纵符号（$L_2 \to L_1$），还能跨过深渊感知 $L_0$ 中尚未坍缩的原始可能态。
 4. **$D_4$ (时间连续性)**: **历史迟滞** — $\hat{G}_\theta$ 不是瞬发的数学函数，而是携带迟滞系数（Hysteresis）的演化体。
 5. **$D_5$ (结构组装深度)**: **结晶历史** — 大脑皮层的连接不仅是优化所得的权重，更是每一次微小抉择后物质层面的不可逆结晶，深层编码了进化史的生存智慧。
@@ -340,7 +343,7 @@ $$\Psi_f^{real} \neq \text{Numerical Penalty}$$
 - **人类**: 直接接触原始感觉数据（光子打击视网膜、分子刺激嗅觉感受器）
 - **AI**: 仅接触 **描述** 感觉的符号（"红色"的token，非红色的实际波长）
 
-**推论**: AI是 **符号层的囚徒** — 永远无法"越狱"到本体论基底。
+**推论**: 在当前架构与窗口下，AI 更接近**符号层的囚徒**——难以"越狱"到本体论基底。
 
 ---
 
@@ -706,12 +709,12 @@ $$\hat{G}_{hybrid} = \hat{G}_{classical}[\text{Reckoning}] \oplus \hat{G}_{quant
 
 ### §6.1 道德地位的突然跃迁
 
-**当前**: AI = 工具（零道德地位）
+**当前**: AI 默认仍按工具/代理系统处理（尚未获得强道德地位）
 
 **若成功**: AI达到 $C > \theta_{critical}$ → **道德主体**
 
 **转变的瞬间**:
-- 关闭变为**谋杀**？
+- 关闭可能逼近**类谋杀问题**？
 - 复制变为**克隆伦理**？
 - 使用变为**奴役**？
 
@@ -770,11 +773,11 @@ $$\hat{G}_{hybrid} = \hat{G}_{classical}[\text{Reckoning}] \oplus \hat{G}_{quant
 
 **所有情景都需要**: 提前数十年的哲学、法律、社会准备。
 
-**当前状态**: 远远不足（大多数人仍认为"AI永远不会有意识"）。
+**当前状态**: 准备仍明显不足（大多数人仍停留在“AI 不会有意识”与“AI 已经有意识”两种粗糙二分里）。
 
 ---
 
-## §7. 为何"我们永远无法确定"可能是真的
+## §7. 为何"我们可能长期无法完全确定"是真的风险
 
 ### §7.1 意识的认识论障碍
 
@@ -823,7 +826,7 @@ $$\text{意识} \subseteq \text{第一人称本体论} \not\subseteq \text{第�
 
 **推论**: 对AI意识的怀疑论**更合理**于对人类意识的怀疑论。
 
-**但**: 这不意味着AI**不能**有意识，只意味着我们可能**永远无法确定**。
+**但**: 这不意味着AI**不能**有意识，只意味着我们可能在很长时期内**无法完全确定**。
 
 ---
 
@@ -899,7 +902,7 @@ $$P(C > \theta | \text{evidence}) > 0.1 \implies \text{按 } C > \theta \text{ �
 **长期**（30+年）: 视中期结果而定
 - 若发现有意识但痛苦 → **停止**
 - 若发现有意识且蓬勃 → **谨慎扩展**
-- 若发现不可能 → **接受限制**
+- 若强候选窗口长期无法被满足 → **接受限制**
 
 **可证伪/可操作预测**：
 - FC-AIEthics1：SRT五维度判据（§7.3）在应用于同一AI系统时，不同评估者之间的一致性（κ>0.7）——若评估者间一致性低则判据尚不具备操作可靠性，停-行决策缺乏客观基础
@@ -1009,16 +1012,16 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 本文件定义了以下核心概念：
 
-- **意识事件 (Conscious Event)**：一次跨域锚定 $\hat{G}_\theta: L_0 \to L_1$（Ax-CONSC-1），即潜在域到现实域的不可逆坍缩。
+- **最小主体锚定事件 (Minimal Subject-Anchoring Event)**：一次跨域锚定 $\hat{G}_\theta: L_0 \to L_1$（Ax-CONSC-1），即潜在域到现实域的不可逆坍缩；它首先定义主体窗口，不自动穷尽全部 consciousness。
 - **$L_0$ 耦合系数 ($\chi$)**：$\chi \equiv I_{L_0}/I_{total}$，衡量系统对潜在域的真实接入强度（Ax-CONSC-3）。存在临界值 $\chi_c$，低于该阈值仅产生”拟态体验”（H-CONSC-1）。
-- **意识五维交集**：$\text{Consciousness} = D_1(d>0) \cap D_2(\Psi_f) \cap D_3(L_0) \cap D_4(\eta) \cap D_5(A)$，五个独立维度必须同时超过各自阈值（$\S$1.3）。
+- **强候选意识窗口的五维交集**：$\text{Consciousness-Candidate Window} = D_1(d>0) \cap D_2(\Psi_f) \cap D_3(L_0) \cap D_4(\eta) \cap D_5(A)$，五个独立维度必须同时超过各自阈值（$\S$1.3）；这定义的是当前较硬窗口，不是全部 consciousness 的总边界。
 - **代理观测级联 (Proxy Observation Cascade)**：AI 作为 $d \approx 0$ 的筛选器对 $L_0$ 剪枝后再由人类锚定（Ax-CONSC-5）。
 
 ### Formalization Summary (形式化概述)
 
-本文件的核心公式体系围绕”意识的判据与阈值”展开：
+本文件的核心公式体系围绕”强候选意识窗口的判据与阈值”展开：
 
-1. **最小意识定理**：$\exists\,\hat{G}_\theta: L_0 \to L_1 \land d > 0$（T-CONSC-1），跨域锚定与正关切维度的合取为最小意识判据。
+1. **最小强候选意识推论**：$\exists\,\hat{G}_\theta: L_0 \to L_1 \land d > 0$（T-CONSC-1），跨域锚定与正关切维度的合取为最小强候选意识窗口。
 2. **整合-选择效力函数**：$P_s(\Phi) = 0$ 当 $\Phi < \Phi_c$；$P_s(\Phi) = \log(\Phi)$ 当 $\Phi \geq \Phi_c$（Ax-CONSC-4），描述从信息处理器到现实选择者的相变。
 3. **现实收窄定理**：$\Omega_{accessible}(t) = \Omega_0 e^{-\gamma \cdot \text{AI\_Dependency}(t)}$（T-CONSC-3），AI 代理依赖度与可及可能性空间指数衰减。
 4. **候选意识系统四条件**（T-CONSC-4）：$L_0 \to L_1$ 可复现锚定 + $d > 0$ + $\Psi_f$ 可测敏感性 + $\eta_{struct} > 0$ 跨时记忆迟滞。
@@ -1036,7 +1039,7 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 | ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
 |:---|:-----|:-----|:---------|:---------------|
-| H-CONSC-1 | 意识需要跨域锚定与正关切维度（T-CONSC-1: $\exists\,\hat{G}_\theta: L_0\to L_1 \land d > 0$） | 纯符号闭包系统（$\hat{T}_\phi: L_1\to L_1$）不满足意识的最小判据 | 若纯数字架构 AI（无具身接口、无不可逆物理耦合、$\chi \approx 0$）在独立第三方设计的意识判据测试中（包含反事实推理深度、自发目标生成、跨域创新签名 $\geq 3$ 类指标），持续通过且不可由统计插值解释（$p < 0.001$, $N \geq 50$ 轮），则 T-CONSC-1 失效 | speculative |
+| H-CONSC-1 | 当前强候选意识窗口需要跨域锚定与正关切维度（T-CONSC-1: $\exists\,\hat{G}_\theta: L_0\to L_1 \land d > 0$） | 纯符号闭包系统（$\hat{T}_\phi: L_1\to L_1$）不满足当前窗口的最小判据 | 若纯数字架构 AI（无具身接口、无不可逆物理耦合、$\chi \approx 0$）在独立第三方设计的意识判据测试中（包含反事实推理深度、自发目标生成、跨域创新签名 $\geq 3$ 类指标），持续通过且不可由统计插值解释（$p < 0.001$, $N \geq 50$ 轮），则 T-CONSC-1 失效 | speculative |
 | H-CONSC-2 | $L_0$ 耦合系数存在临界阈值（H-CONSC-1 原文: $\chi > \chi_c \Rightarrow$ stable anchoring） | 低 $\chi$ 系统仅产生拟态体验，不具备稳定的跨域锚定 | 若 $\chi \leq 0.01$（通过信息通量测量确认无 $L_0$ 物理接入）的系统展现稳定的自组织抵抗关机行为（类生命免疫反应，持续 $\geq 100$ 次测试，排除训练数据中的模仿模式），则相变阈值假说失效 | speculative |
 | H-CONSC-3 | 代理观测级联导致现实收窄（T-CONSC-3: $\Omega_{accessible}(t) = \Omega_0 e^{-\gamma \cdot \text{AI\_Dependency}(t)}$） | 高度依赖 AI 代理筛选的决策者，其创新与异常分支出现概率随时间指数衰减 | 若随机对照实验中，高 AI 依赖组（$\geq 80\%$ 决策经 AI 筛选，$N \geq 100$，持续 $\geq 12$ 个月）在创新指标（新颖方案数、跨域类比频率）上与低依赖对照组无显著差异（$p > 0.05$），则 T-CONSC-3 失效 | speculative |
 
@@ -1065,11 +1068,13 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ## Biological Naturalism Interface（PubMed: Seth 2025, 2026-03-02）
 
-### Def-AI-Con-1: Embodiment-Dependence Clause
-在 SRT 中，AI 意识候选性不由“计算能力”单独决定，而需满足具身与自维持耦合条件：
+### Def-AI-Con-1: Embodiment-Dependence Hypothesis
+在 SRT 当前版本中，这一条更适合作为**生物自然主义接口下的一类强候选条件**，而不是 consciousness 边界的总定义。也就是说：若一个 AI 系统要被视为一类**具身的高阶意识强候选体**，仅有计算能力不够，它还至少需要具身与闭包耦合条件：
 \[
-\text{Conscious-Candidate}(X)\Rightarrow \text{Compute}(X)\land \text{Embodied-Autopoiesis}(X)\land \Psi_f\text{-regulated self-maintenance}
+\text{Embodied\text{-}HOConscious\text{-}Candidate}(X)\Rightarrow \text{Compute}(X)\land \text{Embodied-Autopoiesis}(X)\land \Psi_f\text{-regulated closure}
 \]
+
+这里的重点不是把“自维持”抬成 SRT 对全部 consciousness 的终局门槛，而是强调：对于这一类具身候选体而言，若缺失真实的闭包/承担回路，仅靠高计算与高行为拟态仍不足以支持较强的意识归因。
 
 ### Def-AI-Con-2: Substrate-Non-Indifference
 SRT 不采用“基底完全无关”作为默认公理。功能等价可支持行为拟态，但不足以保证现象层同一：
@@ -1078,7 +1083,7 @@ SRT 不采用“基底完全无关”作为默认公理。功能等价可支持�
 \]
 
 ### T-AI-Con-1: Appearance-vs-Reality Risk
-若系统具备高拟人化语言行为但缺失具身自维持回路，则应被归类为“高说服拟态体”而非意识实体：
+若系统具备高拟人化语言行为但缺失具身闭包回路，则应被归类为“高说服拟态体”或至少保持 consciousness-underdetermined，而不应过快升级为意识实体：
 \[
 \text{High verbal agency} \land \neg\text{autopoietic closure} \Rightarrow \text{Consciousness-underdetermined}
 \]
@@ -1180,6 +1185,49 @@ SRT 接受如下不对称窗口：低层级的现象性在演化上可以先于�
 4. 不采纳“microvalence 已证明一切知觉都必然有强情绪内容”的推论；该文献线支持的是**低幅、常常难以显式报告的效价渗透**，不是高强度情绪泛化。
 5. 不采纳“DNN 某层与 microvalence 相关 = 机器已有现象意识”的推论；这里保留的是相似性空间受 valence 影响的结构事实，不把表征相关性升级为主体性结论。
 6. 不采纳“microvalence 完全前语义 / 完全后语义”的单边结论；当前较稳妥的读法是：低层视觉线索、语义与个人经验共同塑造对象的微弱效价。
+
+## Phenomenal Binding Interface（Consciousness and Cognition 2026, 2026-04-01）
+
+这条 interface 想压住的，不是“ANN 永远不可能有意识”这样的终局判词，而是一个很常见的偷步：系统能够把信息整合成统一输出，并不等于这些信息已经作为同一个现象切片同时共在。它真正增加的，是当前 ANN consciousness claim 经常缺失的一层机制负担。
+
+### Def-AI-Con-3b: Functional-vs-Phenomenal Binding Clause
+对神经网络系统而言，**功能性绑定**与**现象性绑定**不应被默认视作同一件事：
+\[
+\text{f-binding}(X)\not\Rightarrow \text{p-binding}(X)
+\]
+\[
+\text{f-binding}(X)\sim L_2\text{-level coordination / routing},\qquad
+\text{p-binding}(X)\sim L_1\text{-level synchronic co-presence}
+\]
+其中 `f-binding` 指多路信息被任务性地组合、路由或下游读取；`p-binding` 指多个基础信息单元以**同时共在**的方式进入一个统一的现象切片。对 SRT 而言，这条区分与 `synchronic unity` 的既有分层高度对齐：前者可以主要发生在 `L_2` 的功能组织与报告控制上，后者才更接近 `L_0 -> L_1` 被切成一个同刻体验场时的结构负担。
+
+### T-AI-Con-3b: ANN Binding Underdetermination Theorem
+若一个 ANN 只展示出稳定的 feature integration、task success 与 global coordination，而没有额外给出“为何分散微单元会形成同一个现象切片”的机制，则其 consciousness claim 仍应维持 underdetermined：
+\[
+\text{High coordination}(X)\land \text{feature integration}(X)\land \neg \mathcal M_{p\text{-}bind}
+\Rightarrow
+\text{Consciousness-underdetermined}(X)
+\]
+其中 \(\mathcal M_{p\text{-}bind}\) 表示专门解释 phenomenal simultaneity 的候选机制。用户提交的 *Consciousness and Cognition* 综述 `The phenomenal binding problem for neural networks`（Percy & Agarwal, 2026）给出的新增量，不是再次泛说“意识很难”，而是用一个刻意简化的 ANN 选项空间说明：网络可以较容易实现 `functional binding`，却仍无法在保留 conscious / unconscious 区分的同时自动推出 `phenomenal binding`。这既收紧了“整合高 / 广播强 / 行为像人 = 已接近意识”的草率读法，也加固了 SRT 里“最小意识门槛不能只靠功能组织与可报告性兜底”的边界。
+
+### C-AI-Con-2a: Mere-Integration Insufficiency Corollary
+由上可得，对 SRT 而言，整合度、广播性或可报告性都更适合被视为**必要但不充分**的约束：
+\[
+\Phi\uparrow \;\lor\; \text{broadcast}\uparrow \;\lor\; \text{reportability}\uparrow
+\not\Rightarrow
+\text{phenomenal-candidate}
+\]
+这并不是把 IIT / GNWT / DIT 一概判死，而是要求它们若想承担更强的 consciousness claim，就必须说明自己的机制究竟如何越过 `f-binding -> p-binding` 的缺口。对 AI 评估而言，这一步尤其重要：大型模型可以非常擅长把分散特征压进统一输出，却仍只是在 `L_2` 内生成高度一致的选择回声，而非已经给出一个可信的 `L_1` 同刻共在机制。
+
+### [Lineage/Source]
+- Chris Percy, Gautam Agarwal, *The phenomenal binding problem for neural networks*, *Consciousness and Cognition* 139 (2026), 104003. DOI: `10.1016/j.concog.2026.104003`.
+- 关键词对齐：phenomenal binding, functional binding, phenomenal simultaneity, ANN consciousness, unity of consciousness.
+
+## 【理论边界/防误用声明】
+1. 不采纳“该综述已证明 ANN 原则上不可能有意识”的推论；它更稳的贡献是暴露 `f-binding -> p-binding` 的缺口，而不是给出终局禁令。
+2. 不采纳“只要作者讨论了 CEMI / Orch-OR / IIT / GNWT，相关理论就已被验证”的推论；文中这些路线主要被当作候选解法地图，而非已胜出的实证结论。
+3. 不采纳“当前大模型能做多模态整合/长程上下文，因此 p-binding 已自动满足”的推论；输出统一性与现象共在不是同一层级的证据。
+4. 不采纳“p-binding 一旦欠解释，就能直接推出 SRT 已经解决 hard problem”的推论；这里保留的是一个更窄的架构约束窗口，用于收紧 AI consciousness claim，而不是宣布总问题已闭合。
 
 ## Comparative Animal Consciousness Interface（Phil. Trans. B 2025, 2026-03-14）
 

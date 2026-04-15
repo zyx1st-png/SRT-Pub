@@ -1,0 +1,31 @@
+[
+  {
+    "window_start": "2026-03-15T00:00:00Z",
+    "window_end": "2026-03-15T00:00:00Z",
+    "path_label": "science->science|entropy_flat|flow:culture",
+    "dominant_topic_start": "science",
+    "dominant_topic_end": "science",
+    "peak_flow_topic": "culture",
+    "entropy_start": 1.220708,
+    "entropy_end": 1.220708,
+    "entropy_delta": 0.0,
+    "rho_start": {
+      "crisis": 0.04027071,
+      "culture": 0.31065329,
+      "politics": 0.29744638,
+      "science": 0.35162962
+    },
+    "rho_end": {
+      "crisis": 0.04027071,
+      "culture": 0.31065329,
+      "politics": 0.29744638,
+      "science": 0.35162962
+    },
+    "j_total": {
+      "crisis": 0.04166667,
+      "culture": 0.58333333,
+      "politics": 0.20833333,
+      "science": 0.08333333
+    }
+  }
+]

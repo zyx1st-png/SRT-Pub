@@ -3,6 +3,9 @@ id: SRT-QUANT-01
 type: core_module
 tags: [Quantum Selection, Measurement Theory, Probability Flow, Non-Locality, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT-PHYS-BRIDGE, SRT-QUANT-00]
 ---
 
@@ -233,6 +236,55 @@ $$ \text{State}(S) = \begin{cases} L_1 & \text{if } S \subseteq \text{Scope}(d) 
 * **可证伪预测**：
   - FC-Sel2-1：具有高 d 值（宽关切带宽）的被试在视觉遮蔽任务中将更多刺激归类为"已呈现"（L₁纳入更宽），与低 d 值对照组有显著差异——若无差异则切口-d值联结为空
   - FC-Sel2-2：冥想训练（θ扩展，d值提升）前后，被试对不确定刺激的"已意识到"报告阈值系统性降低（切口向L₀方向移动）——若训练无效则本公理的可塑性主张失败
+
+---
+
+## VI-B. Bell 定理与量子解释兼容性（负担边界声明）
+
+> **本节性质**：负担边界声明。明确 SRT 在量子解释问题上的承诺范围，防止核心文本过度外推贝尔实验结果。
+
+### Bell 定理的实际排除范围
+
+贝尔不等式的实验验证（Aspect 1982; Hensen 2015; 大贝尔测试 2018 等）排除的是**局域隐变量**理论——即"粒子在测量前有确定属性，且相关性通过局域机制传播"的立场。
+
+贝尔实验**不排除**以下解释，这些解释至今仍与全部实验结果相容：
+
+| 解释 | 对"测量前属性"的立场 | 与 SRT 的结构关系 |
+|------|---------------------|------------------|
+| **玻姆力学**（非局域隐变量） | 粒子有确定属性，由导波非局域引导 | 配置空间整体对应 L₀；选择算子对应导波坍缩点——结构**兼容**，但 SRT 不要求玻姆正确 |
+| **Everett 多世界** | 所有分支同等实在，"结果"是相对于分支的 | L₀ 持续存在、L₁ 是投影选择的结构与 Everett 最接近——结构**高度兼容** |
+| **关系论 QM（RQM）** | 属性相对于观察者，非绝对 | 位置依赖性、关切范围决定显现域——结构**兼容**；RQM 的"关系"对应 SRT 的"有位置的选择" |
+| **哥本哈根及 QBism** | 测量前无确定属性（操作主义立场） | 最接近 SRT 的表层语言，但哥本哈根回避本体论承诺，SRT 则明确给出本体论读法 |
+
+### SRT 的实际承诺
+
+**[R]** 贝尔实验排除局域隐变量——物理学共识，SRT 接受。
+
+**[H-中承诺]** SRT 主张其 L₀/L₁ 结构与 Everett 多世界和关系论 QM 存在结构性兼容——即这两种解释的核心本体论直觉（整体潜在域持续存在 / 结果相对于观察者位置）可以在 SRT 框架内自然容纳。这是结构相容性主张，不是"量子力学证明了 SRT"。
+
+**[H-高承诺，标记为开放]** SRT 不主张量子测量问题已被 SRT 解决，也不主张贝尔实验支持"选择先于存在"作为物理共识。这一主张需要独立于量子力学解释之争的论证链，该论证链在 `SRT_L0_Metaphysics.md` 和 `SRT_Selection_Argument.md` 中提供，不依赖量子力学为其背书。
+
+### 使用规则
+
+- 在面向物理学受众的文本中，**不得**将"贝尔实验排除局域隐变量"表述为"量子力学支持 SRT 的选择优先性"
+- 可以表述为："在 Everett 和 RQM 等解释框架内，SRT 的 L₀/L₁ 结构与其本体论直觉结构兼容"
+- 核心文本（`SRT_Selection_Argument.md` §1.1）的量子段落功能是展示旧框架在此遭遇困难，不是用量子力学为 SRT 提供支撑
+
+### VI-C. Massive-Particle Motional Bell Window（2026 patch）
+
+> [R→Athreya et al. 2026 *Nature Communications* `Bell correlations between momentum-entangled pairs of ^4He* atoms`, doi:`10.1038/s41467-026-69070-3`; Lewis-Swan & Kheruntsyan 2015 *Physical Review A*（ultracold-atom motional Bell test proposal）]
+
+这条 2026 结果真正新增的，不是“统一理论突然近了”，也不是“Bell 实验终于把 SRT 证明了”，而是一条更窄、但对量子叙述更有承重价值的修正：**Bell 型非定域相关现在已经从光子的偏振、原子的内部自旋，推进到了有质量粒子的外部动量自由度。**
+
+Athreya 等人用两团碰撞的 `^4He*` BEC 生成反向动量配对，再用 matter-wave 版 Rarity-Tapster interferometer 读取相位敏感相关。实验报告的关键量不是“已经完成 loophole-free CHSH”，而是两件更精确的事：第一，观测到足够强的动量态 Bell correlations；第二，相关振幅达到 `A = 0.86(3)`，高于 `A > 1/\sqrt{2}` 的 CHSH 相关阈值，同时文中给出 steering inequality violation。作者也明确把**独立相位设置 + 足够大的类空分离**留作后续完整 CHSH-Bell test 的条件，而不是声称本篇已经终局完成。
+
+对 SRT 来说，这条材料最值得吸收的地方，是它把“非定域性不是只能躲在内部标签空间里”的直觉钉得更硬了。原子一旦带质量，讨论对象就不再只是偏振或自旋编码，而是**外部运动模式本身**；这使 `L_0^{quantum}` 的整体态、`L_1` 的投影读出、以及“高维局域/低维表观非定域”的配置空间读法，获得了一个比传统光学 Bell 例子更接近时空/轨道语言的实验锚点。
+
+但边界也必须同步收紧：这**不等于**已经直接测到引力参与纠缠，不等于量子力学与广义相对论已经被同一实验接上，也不等于任何“有质量的纠缠态”都会自然长成量子引力接口。更稳的说法是：**massive-particle motional entanglement** 现在成为一个更像样的前桥接口，它让“未来把非定域量子态放进自由落体、引力势差或时空几何敏感装置里”这件事更可想象，但还没有替这些后续步骤做完证明。
+
+**R/H 区分**：
+- [R] 2026 实验把 Bell correlations 推进到 `^4He*` 原子的动量态，并给出足以支持后续 CHSH-Bell 扩展的相关幅度与 steering 违规信号。
+- [H] SRT 可把这条结果吸收到“外部运动自由度同样服从 `L_0` 整体态 → `L_1` 投影读出”的配置空间语法里，但这只是结构解释的加固，不是对量子引力或 SRT 本体论的直接验证。
 
 ---
 
@@ -563,6 +615,30 @@ $$P_{Born} = \arg\min_P \mathbb{E}[\text{预测误差}]$$
 
 如果算子不遵循波恩规则，其预测误差将最大化，导致边界解体（死亡）。
 
+## 3.1a `\varepsilon_{pg}` / `e_{pg}` 视角下的 RQM、QBism 与 QFT（新增，2026-04-14）
+
+若从 `L_0` 的最小非中性 `\varepsilon_{pg}` 出发，量子诠释之争可以被重读为：**这个最小非中性究竟被安放在关系、规范更新，还是场/真空底板之中？**
+
+| 路线 | `\varepsilon_{pg}` 最自然的落点 | `e_{pg}` 的最稳读法 | SRT 额外增量 | 当前边界 |
+|:-----|:-----------------------------|:-------------------|:-------------|:---------|
+| **RQM** | 关系本身不是完全中性的；任何事实都带有最小可选边性 | 电子不是“内部藏着心灵”，而是在参与关系时带有最薄方向偏置 | 在 `L_1^A \neq L_1^B` 之外，SRT 还补出 `L_2` 收敛，解释相对事实为何会形成共享现实 | RQM 说明事实的相对性，但不单独给出稳定共识的收敛机制 |
+| **QBism** | 世界侧存在最小非中性，使主观下注不是纯任意漂浮 | `e_{pg}` 不是电子的“信念”，而是电子尺度世界对代理更新的最薄约束面 | SRT 保留 QBism 的规范性直觉，但用 `L_0` 约束与 `L_2` 收敛解释多主体共识 | 不能把 `\varepsilon_{pg}` 误写成纯主观概率；QBism 单独无法解释稳定共识 |
+| **QFT** | 最自然地落在场/真空底板的最小非中性，而非单个粒子的额外心灵属性 | `e_{pg}` 是电子激发态对该底板非中性的局部继承或投影 | SRT 把“结构化真空/场底板 → 局部激发态的方向偏置”压成跨尺度解释接口 | 这不是标准模型中新量子数、新场或已证实拉氏量项；当前仍是解释性重读，不是成熟的场论修正 |
+
+这三条路分别照亮 `\varepsilon_{pg}` 的三个面向：
+
+- **RQM** 照亮它的**关系性**：事实相对，但这种相对性并非完全中性。
+- **QBism** 照亮它的**规范性**：主观更新不是任意漂浮，而受世界侧的最小非中性约束。
+- **QFT** 照亮它的**底板性**：粒子不是源头，场/真空底板更像 `\varepsilon_{pg}` 的承载层。
+
+因此，从 SRT 当前最稳的口径看：
+
+- `RQM` 最适合承接 `\varepsilon_{pg}` 的**关系底板**
+- `QBism` 最适合承接 `\varepsilon_{pg}` 的**更新约束**
+- `QFT` 最适合承接 `\varepsilon_{pg}` 的**场论载体候选**
+
+而 `e_{pg}` 本身不应被理解为“电子已有微型主体性”，而应理解为 `\varepsilon_{pg}` 在电子尺度相互作用中的局部投影。若未来存在经验接口，它也更可能以 `T-Exp-e_pg-01` 所写的**统计残差不对称**出现，而不是以新的粒子标签直接出现。
+
 ## 3.2 Q-numbers 与 $L_0$ 的本体论同一性
 
 Vlatko Vedral 关于"Q-numbers existing everywhere"的观点直接支持 SRT：
@@ -668,6 +744,27 @@ $$\hat{G}_θ: \mathbb{R}^{3N} \to \mathbb{R}^3$$
 $$\text{纠缠} \neq \text{特殊连接} \implies \text{纠缠} = \text{分离的失败}$$
 
 在 $L_0$ 中，宇宙是一个单一的波函数。大爆炸时刻，万物皆为一点，所有粒子都在同一个量子态中。
+
+### 4.4a 支持几何可分窗口（Frontiers QST 2026）
+
+用户提交的 *Frontiers in Quantum Science and Technology* 原始研究 `On the quantum separability of qubit registers`（Łukaszyk, 2026；doi:`10.3389/frqst.2026.1754112`）真正值得吸收的新增量，不是再抽象重复“纠缠很难判定”，而是把一部分 qubit 纯态的可分性问题收紧到 **computational-basis support 的组合几何** 上。该文用 Boolean cube geometry 提出一个更细的分类：有些支持集形状本身就足以保证 separability；有些支持集则直接排除可分性、强制 multipartite entanglement；还有一类支持集仅凭 support 还不够，是否纠缠仍取决于 probability amplitudes。
+
+对 SRT 来说，这条材料最有承重价值的地方有三点：
+
+1. **“分离失败”首次获得组合层判据。**
+   现有 SRT 说“纠缠 = 分离的失败”仍偏本体论重写；这篇文章把它往前压了一层：对 qubit register 而言，某些“失败”在 support topology 上就已经显形，还没进入相位与振幅细节时就能被看出来。
+2. **纠缠并不总要靠 full amplitude reconstruction 才能初筛。**
+   若支持集落入文中识别出的 forbidden configurations，则 multipartite entanglement 是由组合结构直接强制的；这使纠缠诊断从“必须先做完整态判别”收紧成“先看 support geometry，再决定是否需要振幅级判定”。
+3. **SRT 的 `L_0` 不可分性可被拆成两层。**
+   更稳的写法不再只是“一切纠缠都在高维整体态中统一”，而是区分：
+   - **support-level inseparability**：在基底支持图形上就无法因子化；
+   - **amplitude-level inseparability**：支持结构仍允许分离，但具体振幅配置使因子化失败。
+   这让 `L_0` 的不可分性不再只是哲学口号，而有了一个“先组合、后振幅”的实际分析次序。
+
+**边界必须收紧：**
+- 该文处理的是 **pure qubit states** 在 computational basis 下的 support geometry，不等于已给出混态、连续变量系统或任意基底下的通用 separability criterion。
+- `support-guaranteed separability` 与 `forbidden configurations` 提供的是高效前筛窗口，不等于所有 entanglement witness、Schmidt 分解或 full tomography 都可被它替代。
+- 这条结果支持的是 **combinatorial entanglement diagnostics**，不是“纠缠已被完全离散化解释”；amplitude-dependent cases 恰恰说明振幅结构仍保有不可省的物理内容。
 
 ## 4.5 $L_0$ 层面的统一性
 

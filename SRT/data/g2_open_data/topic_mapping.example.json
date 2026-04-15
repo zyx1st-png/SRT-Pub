@@ -1,0 +1,22 @@
+{
+  "science": [
+    "Artificial_intelligence",
+    "Physics",
+    "OpenAI"
+  ],
+  "politics": [
+    "Donald_Trump",
+    "United_States",
+    "Russia"
+  ],
+  "crisis": [
+    "Ukraine",
+    "Gaza_Strip",
+    "Climate_change"
+  ],
+  "culture": [
+    "Taylor_Swift",
+    "YouTube",
+    "Wikipedia"
+  ]
+}

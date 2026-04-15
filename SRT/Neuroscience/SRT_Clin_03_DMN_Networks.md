@@ -3,10 +3,17 @@ id: SRT-CLIN-03
 type: experiment
 tags: [DMN, ADHD, Schizophrenia, Networks, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L2
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
 # SRT Clinical Extension II: Network Dynamics (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Network Axioms (AI-Readable).
@@ -134,6 +141,28 @@ DMN 的稳定作用等价于熵汇：
 * **可证伪预测**：
   - FC-DMN1-1：在裸盖菇素给药条件下，被试的fMRI-DMN活动降低幅度（基线-峰值差）应与主观"边界消融"评分（如MEQ30的神秘体验量表）正相关（r > 0.4，Carhart-Harris 2012的范式复制）；若DMN降低幅度与体验评分无关则C-DMN-1联结失败
   - FC-DMN1-2：在同等DMN抑制幅度下，基线Hardness(L₂)高（先验权重高，信念更新慢）的被试应报告**更强烈**的扩展体验（因为Hardness从高基础降低的相对变化更大）；若基线Hardness无调节效应则"Hardness松动量而非绝对值"的SRT预测失败
+
+---
+
+### C-DMN-1b: Visual–Retrosplenial Filling Window
+
+> [R→White et al. 2026 *Communications Biology*（doi:`10.1038/s42003-025-09492-9`：awake mice cortex-wide voltage imaging；5-HT2A agonist 增加 V1 自发与视觉诱发的 5-Hz oscillations，并增强 V1 与 retrosplenial cortex, RSC 的共振/持续时间/发生概率；作者将其解释为 top-down control of perception 增强、支持 perceptual filling 与 visual hallucinations 的机制候选）]
+
+若 5-HT2A 激动导致视觉皮层与 retrosplenial cortex 的 5-Hz 耦合增强，则：
+\[
+\text{Coupling}_{V1\leftrightarrow RSC}^{5Hz}\uparrow \Rightarrow \text{TopDownFill}_{visual}\uparrow \Rightarrow L_1^{visual}\ \text{更易被内部记忆片段重写}
+\]
+
+* **R/H 区分**：
+  - [R] 该研究在 awake mice 中观察到：V1 的 5-Hz bouts 在药后更频繁，视觉诱发的 5-Hz oscillations 在 V1 与 RSC 中更强、更持久，且两区存在约 `18 ms` 时延，符合 traveling-wave 传播范围；其他皮层区未见同等稳定共现
+  - [H] **SRT解读**：迷幻状态不只是一般性的 `DMN ↓ / entropy ↑`，还可在局部感觉-记忆回路上表现为“感知输入权重下降、内部模板填补权重上升”的 `visual-retrosplenial filling window`
+
+* **Implication（中文）**：这把“醒着做梦”从比喻收紧成一条更具体的候选链路：不是视觉系统单纯变吵，而是 V1 与 RSC 的低频耦合增强，使内部表征更容易插入正在形成的视觉显现。
+
+* **保留边界**：
+  - 当前主锚点来自 `awake head-fixed mice` 的 cortex-wide voltage imaging，不是人类主观报告或临床给药试验
+  - 药物为 `DOI / TCB2` 等 5-HT2A agonists，不等于所有迷幻剂与所有体验维度都共享同一局部机制
+  - 结果主要覆盖视觉-回顾/导航相关回路（V1-RSC），不是对全部 hallucination phenomenology 的总解释
 
 ---
 
@@ -271,6 +300,16 @@ $$\text{5-HT2A 激活} \implies \text{DMN}_{suppressed} \implies L_2^{relaxed}$$
 - 自我边界消融（$L_2^{self}$ 松弛）
 - 时间感扭曲（$L_2^{temporal}$ 松弛）
 - 深刻洞见（访问 $L_0$ 新可能性）
+
+### 3.3b 视觉-回顾填补窗口（Communications Biology 2026）
+
+在 `5-HT2A` 激动条件下，视觉皮层 `V1` 与 retrosplenial cortex (`RSC`) 的 `5-Hz` 振荡会更频繁、更强、更持久地共同出现，且两区之间存在约 `18 ms` 的传播延迟，像一条从视觉输入走向内部表征的低频 traveling-wave 通道。
+
+更合适的读法不是“脑子开始胡乱放电”，而是**视觉输入被内部模板更强地补写**。`RSC` 本身就处在视觉、记忆与内部空间表征的交界处；因此迷幻状态可以进一步收紧成一个 `visual-retrosplenial filling window`：外界输入没有消失，但它在形成 \(L_1^{visual}\) 的过程中，更容易被内部记忆/模型片段接管，于是主观上出现“像醒着做梦”的效果。
+
+这也给现有 `C-DMN-1` 补了一条更细的局部通路：除了 `DMN活动↓ -> Hardness(L_2)↓ -> L_0 access↑` 之外，至少在视觉域里，`5-HT2A` 还可能把 `V1-RSC` 的低频耦合推高，使 top-down perceptual filling 超过平时。也就是说，迷幻体验不只是宏观自我模型松动，还可能包含局部感觉-记忆回路对显现内容的重写。
+
+保留边界也必须写清：这项研究是 `awake mice` 的 cortex-wide voltage imaging，不是人类 fMRI + 主观报告；药物是 `DOI / TCB2`，不是所有迷幻剂；结果主要涉及视觉与回顾皮层，不足以单独解释自我解体、宗教感、时间延展等全部迷幻现象。
 
 ---
 

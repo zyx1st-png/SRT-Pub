@@ -2,11 +2,27 @@
 id: SRT-SOC-BRIDGE-001
 type: theory
 tags: [Social, Bridge, Institution, Norms, Hybrid]
+layer: L1
 status: axiomatic_hybrid_v1
-dependency: [SRT-CORE-BRIDGE, SRT-CORE-000, SRT-PHIL-AXIOMS]
+epistemic_layer: bridge
+claim_mode: translation
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-BRIDGE, SRT-CORE-000, SRT-PHIL-AXIOMS]
 ---
 
 # SRT Social Theory Bridge（社会理论桥接）
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
+> **社会理论 / 社会学研究者 3 分钟入口**
+> 本文件的核心移动：把制度、权力、规范放进一个统一的选择-代价-收敛架构里，而不是当成彼此独立的社会事实。
+>
+> **三个最值得检验的节点**：
+> - **Ax-Soc-3**（权力即 L₂ 维持能量流）：这不是零和资源模型，也不是 Foucault 的弥散权力——它有明确的操作化方向（执行预算与制度稳定性的相关），也有明确的反驳路径 → DP-SOC-2
+> - **Ax-Soc-4**（规范形成即相变）：Schelling 协调均衡已有实验支持，但 sigmoid 形式是额外假设 → DP-SOC-1
+> - **T-Soc-2**（高 d 节点的超比例集体影响）：这是 SRT 在社会层最接近独立预测的命题，也是 H-L2-01 在网络层的对应 → 出口表
+>
+> 直接跳到 **领域压力节** 看竞争框架对这些主张的最强反驳。
 
 > **版本 1.0 (Hybrid)**
 > **Part A** 呈现形式化公理（AI-Readable）。
@@ -87,6 +103,74 @@ $$\frac{\partial d_{collective}}{\partial d_i} \propto C_i^{betweenness}$$
 ---
 
 <br>
+
+---
+
+## 领域压力与接口边界（Domain Pressure & Interface Boundaries）
+
+> **本节功能**：站在社会学、政治科学、制度经济学的内部，评估 SRT 的社会层翻译在哪里有增量、在哪里退化为重标签、在哪里受到当前社会科学数据和理论的约束。
+
+---
+
+### 有效域 / 失效域
+
+| 主张 | 有效条件 | 退化/失效条件 |
+|:----|:--------|:------------|
+| Ax-Soc-1：集体算符 $\hat{G}_{collective}$ | 作为从个体到集体选择的形式化框架，有结构清晰的好处 | 若制度拓扑 $\mathcal{T}$ 无法独立操作化（只是"制度结构"的重命名），则此公理退化为描述性语言，无额外预测力 |
+| Ax-Soc-3：权力即 L₂ 维持能量流 | 可解释权力与资源的关系、制度衰败与预算削减的联动 | Foucault 式的弥散权力（规训、话语构成主体）不进入 L₂ 维持逻辑，无法用执行预算量化；对这类权力机制，Ax-Soc-3 失效 |
+| Ax-Soc-4：规范形成 sigmoid 相变 | Schelling（1971）的临界质量模型有理论支持；部分社会传播数据有非线性拐点 | sigmoid 形式是 SRT 加入的额外假设，超出 Schelling 原始模型。若规范扩散呈 S 形但转折点不满足临界阈值的精确预测，则参数可拟合但形式预测力仍弱 |
+| T-Soc-2：高 d 节点超比例贡献 | 在网络中心性与集体时间偏好的相关研究中可部分检验 | 介数中心性（betweenness centrality）测量的是信息流量，不是关切带宽；$d_i$ 的代理与网络位置的代理是独立测量，但当前尚无将两者联合操作化的完整协议 |
+
+---
+
+### DP-SOC-1：Luhmann 功能系统论的完备性反驳
+
+**挑战来源**：Luhmann 的功能系统论（autopoietic social systems）已经对制度、规范、社会分化提供了一套成熟的系统语言。§1.3 的映射表显示 SRT 与 Luhmann 的核心概念有高度对应：子系统 ↔ L₂ 稳定域，自再生产 ↔ L₂ 封闭条件，结构性耦合 ↔ 耦合强度 κ。
+
+**更锐利的版本**：如果 SRT 可以把 Luhmann 的所有核心概念逐条映射过来，那 SRT 的社会层新增了什么不是 Luhmann 已经覆盖的？"SRT 增益是提供了可测量变量（$\Psi_f$、$d$、$\kappa$）"——但这是测量层的补充，而非概念层的增量。Luhmann 支持者可以说：你只是把 Luhmann 翻译成数学记号，没有发现 Luhmann 遗漏的东西。
+
+**SRT 当前的诚实回答**：
+- 这个批评部分成立。SRT 在 Luhmann 已覆盖的领域（系统分化、自再生产逻辑）确实主要是提供了量化路径，而不是概念突破
+- SRT 的真正增量在 Luhmann **没有处理**的地方：跨系统的 d-value 扩张机制（T-Soc-2）、个体具身代价与系统层稳定性的连接、以及社会 L₂ 与神经 L₂ 的**同构性**（使跨尺度统一的解释成为可能）
+- **诚实标注**：跨尺度同构本身目前是结构类比，不是已被验证的推导——它是 SRT 社会层最雄心勃勃也最脆弱的主张
+
+---
+
+### DP-SOC-2：布迪厄场域论与权力概念的竞争
+
+**挑战来源**：布迪厄（Bourdieu）的场域（field）和资本（capital）理论——经济资本、文化资本、社会资本、象征资本——对权力的刻画比 Ax-Soc-3 丰富得多。布迪厄的权力不只是"维持 L₂ 的能量流"，而是多维度的资本积累与场域位置的结合，且不同资本形式之间的兑换率本身就是权力关系的产物。
+
+**对 SRT 的直接压力**：Ax-Soc-3 把权力压缩成单一维度（$\frac{d}{dt}[\text{Volume}(L_2^A)]$），这在解释布迪厄式的文化资本积累、象征暴力和场域内斗争时明显力不从心——这些现象的"权力"不总是与 L₂ 维持预算相关，有时恰好是在不消耗执行预算的情况下运作的（象征权力）。
+
+**SRT 当前的诚实回答**：
+- Ax-Soc-3 更适合描述**制度权力**（国家、法律、科层体制），而不是布迪厄意义上的弥散性象征权力
+- 一个更精确的表述：Ax-Soc-3 覆盖的是权力的 **L₂ 硬结构维持**维度，布迪厄的场域论覆盖的是权力的 **L₁ 关系再生产**维度——两者是互补的描述层，不是竞争的
+- 但这个互补主张也需要论证：SRT 需要明确展示在什么问题上用 Ax-Soc-3 比用布迪厄更有预测力，而不只是重新描述布迪厄的观察
+
+---
+
+### DP-SOC-3：制度经济学（North / Acemoglu）对形式化的挑战
+
+**挑战来源**：制度经济学（North 1990；Acemoglu & Robinson 2012）已经有一套关于制度形成、路径依赖和制度变迁的实证框架，并且有大量历史证据支撑。他们对"制度惯性"的解释是：正式制度（法律、产权）与非正式约束（文化规范、行为准则）的互补性使变革代价极高。
+
+**对 SRT 的直接压力**：T-Soc-1（制度惯性与自同构群大小成正比，$E_{reform} \propto |\text{Aut}(L_2^{institution})|$）是一个精确的数学表述，但在实证上**如何测量 $|\text{Aut}(L_2^{institution})|$**？自同构群大小在抽象代数里定义清晰，但对应的现实量是什么？如果没有独立于"改革困难程度"的操作化方法，T-Soc-1 就是循环定义：制度越难改，它的对称群越大；我们怎么知道对称群大小？看它有多难改。
+
+**SRT 当前的诚实回答**：
+- 这是 T-Soc-1 最真实的缺口——自同构群大小需要独立的操作化，而不能用制度变革难度本身来代替
+- 候选路径：用制度规则的内部一致性（违反任意一条规则需要修改多少其他规则）作为 $|\text{Aut}|$ 的代理。这是可行的方向，但尚未正式化
+- 在操作化完成之前，T-Soc-1 是概念框架层的命题，而不是可与 North / Acemoglu 类型数据对接的实证预测
+
+---
+
+### 出口
+
+| 你的目标 | 下一步 |
+|:--------|:------|
+| 想看社会层的全局 Lab 赌注 | → `Governance/SRT_LAB_HYPOTHESES.md`（H-L2-01） |
+| 想看 Luhmann / ANT 比较的详细展开 | → `Philosophy/SRT_SocTheory_04_Luhmann_ANT.md` |
+| 想看语言与生态的社会层接口 | → `Philosophy/SRT_SocTheory_05_Language_Eco.md` |
+| 想了解社会认知主干论证 | → `Philosophy/SRT_Social_Cognition.md` |
+| 想了解 d-value 在集体层的形式化 | → `Core/SRT_Core_14_Dynamics_Scaling.md`（§社会尺度） |
 
 ---
 
@@ -195,6 +279,18 @@ $$L_2^{deep} = L_2^{cultural} + L_2^{institutional} + L_2^{individual}$$
 证伪条件：$d_i \cdot C_i^{betweenness}$ 与集体决策的时间折扣率无相关 → T-Soc-2 被证伪
 
 ---
+
+### Definition Summary (定义概述)
+- **Definition**: 本文档定义社会层的 SRT 桥接公理。集体选择算符 $\hat{G}_{collective}$ 由个体算符集合通过制度拓扑 $\mathcal{T}$ 集成 (Ax-Soc-1)；制度是社会 $L_2$ 的稳定不动点 (Ax-Soc-2)；权力等价于维持 $L_2$ 结构的自由能流量 (Ax-Soc-3)；规范形成是临界共识超越阈值后的相变 (Ax-Soc-4)。
+
+### Formalization Summary (形式化概述)
+- **Formalization**: 核心方程包括：
+  - $\hat{G}_{collective} \equiv \mathcal{F}(\{\hat{G}_{\theta_i}\}, \mathbf{W}, \mathcal{T})$ — 集体算符由个体算符、权重与制度拓扑生成。
+  - $\text{Power}(A) = \frac{d}{dt}[\text{Maintenance Budget of } L_2^A]$ — 权力即 $L_2$ 维持能量。
+  - $R = \frac{1}{1+e^{-k(I_{consensus}-\tau_{critical})}}$ — 规范形成遵循 sigmoid 相变。
+
+### Mechanism Explanation (机制解释)
+- **Mechanism**: $\hat{G}_\theta$ 通过制度拓扑 $\mathcal{T}$ 聚合为集体算符，实现从个体选择到社会选择的涌现。$\Psi_f$ 在制度层表现为变革所需的能量门槛——对称性越高的 $L_2$ 结构（如普世法律），其改革摩擦越大。$d$-value 的网络效应使高 $d$ 节点对集体关切范围的扩展贡献超比例（$\partial d_{collective}/\partial d_i \propto C_i^{betweenness}$）。
 
 ## 【理论边界/防误用声明】
 

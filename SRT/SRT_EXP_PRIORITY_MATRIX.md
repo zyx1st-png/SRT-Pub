@@ -3,6 +3,9 @@ id: SRT-EXP-PRIORITY
 type: experiment
 tags: [Experiment, Priority, Roadmap]
 status: v1
+layer: L2
+epistemic_layer: lab
+claim_mode: canonical
 dependency: []
 ---
 

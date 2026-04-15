@@ -3,10 +3,17 @@ id: SRT-CORE-14
 type: dynamics
 tags: [Scaling, Isomorphism, Fractal, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-13A]
 ---
 
 # SRT Core Definition 14: Dynamics & Scaling (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Scaling Axioms (AI-Readable).

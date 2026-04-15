@@ -3,13 +3,28 @@ id: SRT-CORE-ONBOARDING
 type: guide
 tags: [Guide, Onboarding]
 status: v1
-dependency: []
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
+dependency: [SRT-L0-METAPHYSICS]
 ---
 
 # SRT 一小时入门包（P2-1）
 
-更新时间：2026-02-28
+更新时间：2026-03-18
 适用对象：第一次接触 SRT 的研究者/协作者
+
+> **阅读起点**：在读任何公式或引用之前，先读这一个文件：
+> **[`Core_Law/SRT_L0_Metaphysics.md`](Core_Law/SRT_L0_Metaphysics.md)** — SRT 的形而上学核心，四个命题，无公式，10分钟。
+>
+> SRT 有三个层次：L0（形而上学核心）→ L1（形式化接口）→ L2（可证伪预测）。
+> 本入门包帮你在一小时内走完这三层的概念骨架。
+>
+> 另有一根横向坐标：`OS / Bridge / Lab`。最短理解是：
+> - `OS` = 内部概念语法
+> - `Bridge` = 与外部理论的互译
+> - `Lab` = 愿意下注的实验口
+> 所以文档最好读成坐标，而不是单一层级。详见 `Governance/SRT_COORDINATE_SYSTEM.md`。
 
 ---
 
@@ -17,7 +32,7 @@ dependency: []
 
 > **SRT 核心命题：存在即被选择（Existence is Selection）。**
 
-你看到的现实（L1）不是背景中“天然给定”的整体，而是选择算子 \(\hat{G}_\theta\) 在潜在域（L0）上做出的锚定结果，并在收敛域（L2）中形成稳定结构。
+你看到的现实（L1）不是背景中”天然给定”的整体，而是选择算子 \(\hat{G}_\theta\) 在潜在域（L0）上做出的锚定结果，并在收敛域（L2）中形成稳定结构。
 
 ### 入门隐喻升级：从“桌面图标”到“结晶相变”
 - **不推荐**：把对象理解为可任意创建/删除的图标（容易滑向主观唯心主义）。
@@ -31,15 +46,22 @@ dependency: []
 
 ## 10-25 分钟：只看 5 条最关键公理
 
-1. **A1 选择优先性**：存在不是前提，而是选择输出。  
-2. **A2 存在即锚定**：现实稳定需要持续代价（\(\Psi_f\)）。  
-3. **A4 具身必要性**：没有脱离具身参数 \(\theta\) 的“上帝视角”。  
-4. **A5 规范闭包**：重复选择形成 L2，L2 反过来约束未来选择。  
+1. **A1 选择优先性**：存在不是前提，而是选择输出。
+2. **A2 存在即锚定**：现实稳定需要持续代价（\(\Psi_f\)）。
+3. **A4 具身必要性**：没有脱离具身参数 \(\theta\) 的”上帝视角”。
+4. **A5 规范闭包**：重复选择形成 L2，L2 反过来约束未来选择。
 5. **A7 适应度优先**：系统先优化生存/适应，再逐步逼近真理。
 
-建议阅读：
-- `SRT/Core/SRT_Core_00_Intro.md`
-- `SRT/Core/SRT_Core_01_Axioms.md`
+建议阅读（按顺序）：
+1. **L0**：`Core_Law/SRT_L0_Metaphysics.md` ← 先读这里，四命题，无公式
+2. **L1 主论证候选**：`Core_Law/SRT_Core_Text_CN_Euclid.md`
+3. **L1 原版主文 / 读者入口**：`Core_Law/SRT_Core_Text_CN.md`
+4. **L1 哲学辩护文**：`Core_Law/SRT_Selection_Argument.md`
+5. **L1 形式化**：`Core/SRT_Core_00_Intro.md`、`Core/SRT_Core_01_Axioms.md`
+
+> **注**：如果你发现 L1 文件里的某个论证让你感觉”需要物理学才能成立”，
+> 那是正常的——那部分是 L1 接口映射，不是 L0 核心命题。
+> L0 命题本身不需要任何科学知识来理解。
 
 ---
 
@@ -55,6 +77,15 @@ L0（潜在域，可能性场）
 - Ψf：本体论摩擦（维持与改变的代价）
 - F：自由能（偏离稳定的代价函数）
 ```
+
+### 结构图补充：两根轴怎么一起读
+
+| 你现在想解决的问题 | 先看的坐标 | 典型入口 |
+|:---|:---|:---|
+| SRT 最根本在说什么 | `(L0, os)` | `Core_Law/SRT_L0_Metaphysics.md` |
+| SRT 如何形式化自己 | `(L1, os)` | `Core/SRT_Core_01_Axioms.md`、`Core/SRT_Core_22_Equations.md` |
+| SRT 如何和现有理论对话 | `(L1, bridge)` | `Philosophy/SRT_FEP_Comparison.md`、`Neuroscience/SRT_Clin_00_IIT_PCI.md` |
+| SRT 如何被检验 | `(L2, lab)` | `SRT_EXP_TEMPLATE.md`、`SRT_EXP_MEASURE_MAP.md` |
 
 ---
 
@@ -80,15 +111,21 @@ L0（潜在域，可能性场）
 ## 55-60 分钟：你现在该怎么读
 
 ### 最短路径（再花 2 小时）
-1. `SRT/SRT_Glossary.md`（术语对齐）
-2. `SRT/D_VALUE_ALIGNMENT.md`（d 值定义统一）
-3. `SRT/Core/SRT_Core_14_Dynamics_Scaling.md`（跨尺度）
+1. **[L0]** `Core_Law/SRT_L0_Metaphysics.md`（如果还没读，先读这里）
+2. **[L1]** `SRT_Glossary.md`（术语对齐）
+3. **[L1]** `D_VALUE_ALIGNMENT.md`（d 值定义统一）
+4. **[L1]** `Core/SRT_Core_14_Dynamics_Scaling.md`（跨尺度动力学）
 
-### 如果你要做实验
+### 如果你要做实验（L2）
 直接看：
-- `SRT/EXPERIMENT_PRIORITY_MATRIX.md`
-- `SRT/EXPERIMENT_TEMPLATE.md`
-- `SRT/MEASURE_MAP.md`
+- `SRT_EXP_PRIORITY_MATRIX.md`
+- `SRT_EXP_TEMPLATE.md`
+- `SRT_EXP_MEASURE_MAP.md`
+
+### 如果你想了解 SRT 的层级系统
+- `Governance/SRT_Layer_Guard.md`（漂移检测清单，5 分钟）
+- `Governance/SRT_L1_Interface_Spec.md`（新建 L1 文件的规范）
+- `Governance/SRT_COORDINATE_SYSTEM.md`（二维坐标总说明）
 
 ---
 

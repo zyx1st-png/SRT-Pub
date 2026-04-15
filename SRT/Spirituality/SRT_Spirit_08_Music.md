@@ -3,6 +3,9 @@ id: SRT-SPIRIT-08
 type: metaphor
 tags: [Music, Aesthetics, Resonance, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SPIRIT-07]
 ---
 

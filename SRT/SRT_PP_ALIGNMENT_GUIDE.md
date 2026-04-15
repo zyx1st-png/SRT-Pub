@@ -3,10 +3,17 @@ id: SRT-PP-ALIGNMENT
 type: guide
 tags: [PredictiveProcessing, FEP, Mapping]
 status: draft_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-14, SRT-REF-ONTOLOGY, SRT-AI-01]
 ---
 
 # SRT × Predictive Processing 对接指南（简版）
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 ## 1) 核心映射
 
@@ -25,9 +32,9 @@ dependency: [SRT-CORE-14, SRT-REF-ONTOLOGY, SRT-AI-01]
 \text{Exist}_{L_1}(X)\iff \Psi_f^{maint}(X)<\infty
 \]
 
-2. **连续性判据（生命-心智）**：
+2. **连续性判据（生命-心智，候选桥接）**：
 \[
-\arg\min \mathcal F_{SRT}\Longleftrightarrow\arg\min \Psi_f^{maint}
+\arg\min \mathcal F_{SRT}\approx\arg\min \Psi_f^{maint}
 \]
 
 3. **AI 边界判据**：

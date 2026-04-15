@@ -1,0 +1,25 @@
+{
+  "name": "srt-project-video",
+  "version": "1.0.0",
+  "description": "SRT Project video assets and bilingual post-production pipeline",
+  "scripts": {
+    "start": "npx remotion studio",
+    "render:intro": "npx remotion render src/index.ts SRTIntro out/intro.mp4 --codec=h264",
+    "render:intro-cn": "npx remotion render src/index.ts SRTIntroCN out/intro_cn.mp4 --codec=h264",
+    "render:outro": "npx remotion render src/index.ts SRTOutro out/outro.mp4 --codec=h264",
+    "render:outro-en": "npx remotion render src/index.ts SRTOutroEN out/outro_en.mp4 --codec=h264"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@remotion/cli": "^4.0.438",
+    "@remotion/renderer": "^4.0.438",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.438",
+    "typescript": "^5.4.2"
+  }
+}

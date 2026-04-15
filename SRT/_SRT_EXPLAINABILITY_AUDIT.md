@@ -8,40 +8,40 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 
 # SRT Explainability Audit (Auto)
 
-- Candidate Docs: 79
-- Mean Explainability Completeness (5-block ratio): 42.8%
-- Full 5/5 Docs: 3/79 (3.8%)
-- Partial Docs (>=2/5): 52/79 (65.8%)
+- Candidate Docs: 191
+- Mean Explainability Completeness (5-block ratio): 53.5%
+- Full 5/5 Docs: 41/191 (21.5%)
+- Partial Docs (>=2/5): 76/191 (39.8%)
 
 ## Lowest-score Docs (Top 30)
 
-- `Philosophy/_SRT_Soc_Axioms.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `STATUS.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `papers/ontological_friction/frontiers_cover_letter.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `papers/ontological_friction/frontiers_scope_statement.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `papers/ontological_friction/frontiers_submission_checklist.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `AI/SRT_AI_02_Mortality_Wisdom.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `AI/SRT_AI_03_Consciousness_Framework.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Core_Law/SRT_Reference_Axioms.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Core_Law/SRT_Reference_Scaling.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Clin_01_Pathology.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Clin_02_FEP.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Clin_03_DMN_Networks.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/SRT_Neuro_10_Advanced_Models.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Neuroscience/_SRT_Neuro_Axioms.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/SRT_SocTheory_04_Luhmann_ANT.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/SRT_Soc_03_Institutions.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/_SRT_Phil_Axioms.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Philosophy/_SRT_Soc_Bridge.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `SRT_1H_Onboarding.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `SRT_OPTIMIZATION_BACKLOG.md`: 1/5, missing=definition, formalization, mechanism, falsification
-- `Spirituality/_SRT_Spirit_Axioms.md`: 1/5, missing=formalization, mechanism, falsification, boundary
-- `papers/markov_blanket/paper_markov_blanket_d_value.md`: 1/5, missing=definition, formalization, mechanism, boundary
-- `papers/ontological_friction/frontiers_submission_qc.md`: 1/5, missing=formalization, mechanism, falsification, boundary
-- `AI/SRT_AI_01_Ontology.md`: 2/5, missing=formalization, mechanism, falsification
-- `AI/SRT_AI_Architecture.md`: 2/5, missing=formalization, mechanism, falsification
-- `Core/SRT_Core_00_Intro.md`: 2/5, missing=formalization, mechanism, falsification
-- `Core/SRT_Core_12a_Ontology_L0L1.md`: 2/5, missing=formalization, mechanism, falsification
-- `Core/SRT_Core_12b_Ontology_L2.md`: 2/5, missing=formalization, mechanism, falsification
-- `Core/SRT_Core_13a_Operator_Basics.md`: 2/5, missing=formalization, mechanism, falsification
+- `AI/Architecture_Split/01_Transformer_and_Judgment.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Architecture_Split/02_Defects_and_CategoryView.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Architecture_Split/03_AGI_Limits_and_Assistant_Vision.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Architecture_Split/04_Roadmap_and_Appendix.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Consciousness_Framework_Split/00_Formal_Core.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Consciousness_Framework_Split/01_Diagnosis_and_Necessity.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Consciousness_Framework_Split/02_Architecture_and_Paths.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Consciousness_Framework_Split/03_Ethics_Uncertainty_and_Appendix.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Ontology_Split/03_HumanReadable_Argument.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `AI/Ontology_Split/04_Ethics_and_Falsification.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Core/Dynamics_Scaling_Split/README.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Core_Law/SRT_Constitution_Seven_Theses.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Core_Law/SRT_L0_Metaphysics.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Glossary/README.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Governance/SRT_COORDINATE_SYSTEM.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Governance/SRT_L1_Interface_Spec.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Governance/SRT_Layer_Guard.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Governance/_SRT_CORE_LAW_CORE_SYNC.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Governance/_SRT_GOVERNANCE_PIPELINE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Governance/_SRT_WEEKLY_THEORY_REVIEW.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Operations/SRT_RESIDUAL_CONFLICT_LIST_2026-03-31.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Operations/_SRT_DAILY_REVIEW_PIPELINE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Operations/_SRT_MEDIA_PACK_2026-02-28_TOPIC1.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Operations/_SRT_PAPER_DRAFT_ACTIVE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Operations/_SRT_REVIEW_QUEUE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Philosophy/Foundations_Split/00_Formal_Core.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Philosophy/Foundations_Split/02_Explanatory_Gap_and_Saturation.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary

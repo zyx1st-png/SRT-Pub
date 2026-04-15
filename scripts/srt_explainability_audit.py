@@ -3,6 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] / "SRT"
 OUT = ROOT / "_SRT_EXPLAINABILITY_AUDIT.md"
+IGNORE_DIRS = {".venv", ".obsidian", "papers", "node_modules"}
 
 BLOCKS = {
     "definition": ["定义（Definition）", "Definition"],
@@ -13,8 +14,22 @@ BLOCKS = {
 }
 
 
+NON_THEORY_BASENAMES = {
+    "STATUS.md",
+    "SRT_1H_Onboarding.md",
+    "SRT_OPTIMIZATION_BACKLOG.md",
+    "SRT_INTERNAL_OPTIMIZATION_PLAN_2026Q1.md",
+}
+
+
 def candidate(text: str, rel: str) -> bool:
-    if rel.startswith("_") or rel.endswith("_TEMPLATE.md"):
+    basename = rel.rsplit("/", 1)[-1] if "/" in rel else rel
+    # Root-level underscore files are governance/meta, not theory docs
+    if rel.startswith("_"):
+        return False
+    if basename.endswith("_TEMPLATE.md"):
+        return False
+    if basename in NON_THEORY_BASENAMES:
         return False
     if rel in {"SRT_Glossary.md", "SRT_Navigation_Map.md", "SRT_Quick_Start.md"}:
         return False
@@ -27,7 +42,10 @@ def has_any(text: str, needles):
 
 
 def main():
-    files = sorted(ROOT.rglob("*.md"))
+    files = sorted(
+        p for p in ROOT.rglob("*.md")
+        if not any(part in IGNORE_DIRS for part in p.relative_to(ROOT).parts)
+    )
     rows = []
     total_ratio = 0.0
     full = 0

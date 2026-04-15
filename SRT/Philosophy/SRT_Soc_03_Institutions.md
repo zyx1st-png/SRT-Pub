@@ -3,6 +3,9 @@ id: SRT-SOC-03
 type: dynamics
 tags: [Institutions, Money, Politics, Acemoglu, North, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SOC-02]
 ---
 

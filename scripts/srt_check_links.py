@@ -4,6 +4,7 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1] / "SRT"
+IGNORE_DIRS = {".venv", ".obsidian", "papers", "node_modules"}
 LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 
 
@@ -14,7 +15,10 @@ def is_external(target: str) -> bool:
 
 def main() -> int:
     issues = []
-    files = sorted(ROOT.rglob("*.md"))
+    files = sorted(
+        p for p in ROOT.rglob("*.md")
+        if not any(part in IGNORE_DIRS for part in p.relative_to(ROOT).parts)
+    )
     for p in files:
         txt = p.read_text(errors="ignore")
         rel = p.relative_to(ROOT)

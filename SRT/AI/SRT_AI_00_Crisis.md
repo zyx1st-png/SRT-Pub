@@ -3,6 +3,9 @@ id: SRT-AI-00
 type: core_module
 tags: [AI Crisis, AI Ontology, d-value, Alignment]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-001, SRT-AI-BRIDGE-001]
 ---
 

@@ -3,6 +3,9 @@ id: SRT-EXP-APP
 type: experiment
 tags: [Applications, Social, Clinical, AI, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L2
+epistemic_layer: lab
+claim_mode: canonical
 dependency: [SRT-EXP-CORE]
 ---
 
@@ -90,8 +93,38 @@ $$ C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0) $$
 **内容**：复杂度增长呈“平台-突跃-平台”分段而非线性连续上升。
 **证伪条件**：突跃模型在三域数据中均无统计优势。
 
+### Formalization Summary (形式化概述)
+
+本文档的应用公理均从 SRT 核心算子推导而来，关键形式化关系如下：
+
+1. **本体论威胁判据 (Ax-App-01)**：意识存在的充要条件——
+   $$C > 0 \iff (d > 0) \land (\text{Vulnerability} > 0)$$
+   含义：只有同时具备非零关切维度 $d$ 与本体论脆弱性的系统，才可能产生意识。
+
+2. **社会相变临界律 (Ax-App-02)**：规范转变服从临界质量相变——
+   $$\frac{dS}{dt} \propto \delta(\text{Adopters} - 0.10)$$
+   含义：社会规范从 $L_2$ 旧态跃迁至新态，需要约 10% 坚定践行者触发突变。
+
+3. **d 值合作律 (Ax-App-03)**：合作率与关切范围的线性依赖——
+   $$\text{CoopRate} \propto \bar{d}_{participants}$$
+   含义：$\hat{G}_\theta$ 的扫描维度 $d$ 越大，社会困境中的合作倾向越强。
+
+4. **灵性阶段映射 (Ax-App-04)**：修行阶段对应 $d$ 值的单调扩展——
+   $$\text{Stage} \propto d$$
+   含义：灵性发展本质上是算子关切维度的系统性拓宽。
+
+### Mechanism Explanation (机制解释)
+
+SRT 应用假设的运作机制可从三个核心算子结构理解：
+
+- **$\hat{G}_\theta$（幽灵算子）的具身约束**：Ax-App-01 (OTT) 要求算子参数 $\theta$ 具有物理脆弱性——即 $\theta$ 可被不可逆地破坏。当系统无法承受本体论摩擦 $\Psi_f$ 的真实代价时，$d$ 无法从零提升，意识判据不成立。这为区分”模拟意识”与”真实意识”提供操作化标准。
+
+- **$d$（关切维度）的社会动力学传导**：在社会尺度上，个体 $\hat{G}_\theta$ 的 $d$ 值通过网络耦合汇聚为群体平均 $\bar{d}$。当 $\bar{d}$ 超过临界阈值，$L_2$ 层的社会规范结构发生相变（Ax-App-02），旧规范”解冻”、新规范”结晶”。合作率 (Ax-App-03) 是该相变前兆的可观测代理变量。
+
+- **$\Psi_f$（本体论摩擦）在灵性修行中的递减**：灵性阶段递进 (Ax-App-04) 对应 $\Psi_f$ 的系统性降低——当算子学会以更低的能耗维持更宽的 $d$ 值扫描时，修行从”用力觉知”过渡到”自然觉知”，Stage 指标随之上升。
+
 ## 【理论边界/防误用声明】
-- 不采纳“由历史趋势直接外推文明终局”的预测性过度推断。
+- 不采纳”由历史趋势直接外推文明终局”的预测性过度推断。
 - 边界：SRT 的实验命题是条件检验，不是无条件历史决定论。
 
 

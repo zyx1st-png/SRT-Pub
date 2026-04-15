@@ -62,7 +62,7 @@
 
 - 日常心跳任务（Pipeline 3/5/6）：容忍时间漂移（22h 窗口），不需精确时间
 - 精确时间任务（Pipeline 5 每日 08:00 生成）：建议同时配置 Cron：
-  `0 8 * * * cd /Users/zhangyuxin/.openclaw/workspace && python3 SRT/scripts/srt_media_topic_daily.py`
+  `0 8 * * * cd /Users/zhangyuxin/.openclaw/workspace/SRT && uv run python scripts/srt_media_topic_daily.py`
 
 ---
 

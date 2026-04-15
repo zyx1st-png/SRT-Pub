@@ -1,0 +1,6 @@
+timestamp,topic,edits,unique_pages,total_edits,J,bin_granularity
+2026-03-15T00:00:00Z,crisis,1,1,22,0.04166667,daily
+2026-03-15T00:00:00Z,culture,14,2,22,0.58333333,daily
+2026-03-15T00:00:00Z,politics,5,1,22,0.20833333,daily
+2026-03-15T00:00:00Z,science,2,1,22,0.08333333,daily
+2026-03-16T00:00:00Z,crisis,2,1,2,0.08333333,daily

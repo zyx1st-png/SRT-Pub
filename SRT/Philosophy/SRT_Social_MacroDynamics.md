@@ -3,6 +3,9 @@ id: SRT-SOC-MACRO
 type: dynamics
 tags: [Macro-Sociology, Network Science, Inequality, Echo Chambers, Critical Nodes, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-SOC-03]
 ---
 
@@ -607,6 +610,55 @@ Belief_{t+1}=Belief_t+\eta\,\Delta Evidence-\lambda\,H_{network}
 \]
 该机制与既有“信息茧房/回音室”章节形成闭环：极化主要是网络动力学放大，而非单点理性失误。
 
+### T-Macro-IM-3: Reliable-Uptake Dominance under Low-Base-Rate Misinformation（2026-04-08 patch）
+
+> [R→Altay 2022 `How Effective Are Interventions Against Misinformation?`, doi:`10.31234/osf.io/sm3vk`; Acerbi, Altay & Mercier 2022 `Fighting misinformation or fighting for information?`; Allen et al. 2020 *Science Advances*（misinformation exposure 占比很低）；Fletcher et al. 2019 / 2025（generalized skepticism / news trust decline）]
+
+这条 patch 真正改变的，不是“误信息会扩散”这一点，而是**干预目标函数本身**。如果误信息在总体信息饮食中的基率很低，而人们又已经对不可靠来源保持相当高的怀疑，那么继续用“更怀疑一点”作为默认干预，极容易把本来就稀缺的可靠信息一起打掉。更稳的目标，不是单纯压低 `misinformation uptake`，而是同时比较“拒绝假消息”与“接受可靠信息”两边的净收益。
+
+\[
+\Delta E_{\text{ecology}}
+\approx
+p_{mis}\cdot \Delta R_{mis}
+
++ p_{rel}\cdot \Delta U_{rel}
+
+- p_{rel}\cdot FP_{skeptic}
+\]
+
+其中 \(p_{mis}\) 为误信息暴露基率，\(p_{rel}\) 为可靠信息暴露基率，\(\Delta R_{mis}\) 为对误信息的额外拒绝，\(\Delta U_{rel}\) 为对可靠信息 uptake 的额外提升，\(FP_{skeptic}\) 为“由于泛化怀疑而误拒可靠信息”的假阳性成本。若 \(p_{mis}\ll p_{rel}\)，则 blanket skepticism 很容易让第三项压过第一项，使总生态净收益转负。
+
+对 SRT 来说，这意味着当前信息生态中的主风险，不只是“假内容被相信”，还包括**真实/可靠内容无法进入 \(L_1\)**。很多人并不是先被误导，才形成错误信念；他们更常见的状态是**信息不足**、新闻回避、对主流来源信任不足，因而让未经校正的直觉、身份脚本或局部社交线索先行占位。于是，干预重点应从“继续提升一般性怀疑”收紧为“增加可靠信息 uptake、提高 source-level trust、降低对高质量来源的过度折扣”。
+
+* **R/H 区分**：
+  - [R] Altay 2022 及其所综述文献强调：误信息消费总体低且高度集中；人们往往对不可靠来源已经足够不信，而对可靠来源信任不足；泛化 media literacy / warning / friction 可能提高对真消息的误伤率。
+  - [H] **SRT解读**：这里的核心失效不是“识别器太弱”，而是 \(L_2\) 信任地形配错了权重；系统把“拒绝一切可疑输入”误当成低摩擦解，结果压低了 \(L_0\to L_1\) 的健康校正通道。
+
+### Cor-Macro-IM-3b: Superspreader Leverage as Critical-Node Governance
+
+Altay 这篇的第二个稳定增量，是把“关键节点理论”从抽象网络结构，压回误信息治理的直接动作层。既然可见度高度集中，那么干预的杠杆也不该平均撒在普通用户身上：
+
+\[
+\Delta V_{mis}
+\propto
+\sum_{i\in K_{super}} C_i\cdot S_i
+\]
+
+其中 \(C_i\) 为节点中心性，\(S_i\) 为其误信息放大量。高中心性政治人物、媒体枢纽、超级账号与大号转述链，往往决定了误信息是否真正进入公共可见域；因此，targeting superspreaders 往往比对普通用户做广谱 nudges 更有杠杆。
+
+这不是对 laypeople 完全免责，而是把治理焦点重新按网络拓扑加权。与本文件前面的 `Critical Node Theorem` 对接后，更稳的政策语法是：**普通用户层做低成本减害；关键节点层做高杠杆约束与问责。**
+
+### Def-Macro-IM-4: Harmful-Misleading Content over Mere Falsity
+
+Altay 这篇的第三刀，是把治理对象从“凡 false 必先打”收紧为“优先处理 harmful / deceptive / misleading content”：
+
+\[
+Risk(content)\propto Mislead \cdot Harm \cdot Reach
+\neq \mathbf{1}_{false}
+\]
+
+不是所有字面错误都重要，正如不是所有字面真实都无害。讽刺、夸张、玩笑可能是 false 但不具误导性；相反，真实片段的选择性剪辑、语境剥离、战略性遗漏，完全可能在字面上为真，却在社会后果上更具破坏性。对 SRT 来说，这意味着治理层的重点不应停在“真假二元”，而应进一步追问：这条内容是否系统性扭曲 \(L_0\) 可达性、是否把局部 \(L_2\) 身份脚本伪装成公共现实、以及它的传播是否会放大制度信任塌陷与群体摩擦。
+
 ### 分类映射表（Information Ecology Regimes → SRT）
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |---|---|---|---|
@@ -623,3 +675,5 @@ Belief_{t+1}=Belief_t+\eta\,\Delta Evidence-\lambda\,H_{network}
 1. 不采纳“误信息传播主要因个体愚蠢”的推论；系统激励与网络结构同样是主因。  
 2. 不采纳“纠错一次即可清除错误信念”的推论；迟滞与网络耦合会导致持续影响。  
 3. 不采纳“引入事实核查即可根治”的推论；需同时改造分发机制、可见可信度与平台激励。
+4. 不采纳“提高一般性怀疑总是更安全”的推论；在低基率误信息生态中，泛化怀疑可能优先伤及可靠信息 uptake。
+5. 不采纳“只要内容字面为真就不构成治理对象”的推论；语境剥离、战略性遗漏与 deceptive framing 同样可能构成高风险内容。

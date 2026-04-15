@@ -3,6 +3,9 @@ id: SRT-PHYS-COSMO
 type: theory
 tags: [Thermodynamics, Time, Gravity, Cosmology, Information Physics, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT-QUANT-02]
 ---
 
@@ -99,6 +102,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 热力学熵与信息熵之和非递减：
 $$ \Delta S_{total} = \Delta S_{thermo} + \Delta H(L_1) \geq 0 $$
 *   **Implication**: $\hat{G}$ 生成 $L_1$（秩序）的代价是耗散热。
+*   **Bridge Clarification（中文）**：因此，`Generalized Second Law` 并不是悬浮在选择理论之外的背景定律，而是 `Selection Operator` 的热力学面：凡是 `L_0 \to L_1` 的真实取值，都必须以熵增/耗散的形式支付其实现成本。选择算子说明“现实被如何选出”，广义第二定律说明“这种选出为什么不可免费发生”。
 *   **O-T1 Link**: $L_1=\oint_\gamma \omega_{L_0}$ 的取值过程必然伴随信息压缩与熵增。
 *   **Sketch**: 由第一定律 $W=\Delta F+T\Delta S_{thermo}$，且信息压缩满足 $\Delta H(L_1)\le 0$，故 $\Delta S_{total}\ge 0$。
 
@@ -278,8 +282,11 @@ $$ d(x, y) \propto \frac{1}{I(x; y | \hat{G}_θ)} $$
 时间的不对称性 = 选择算子操作的不可逆性：
 - 记忆是 $L_2$ 结构，只能指向过去
 - 控制是 $\hat{G}$ 对 $L_0$ 的操作，只能指向未来
+* **Bridge Clarification（中文）**：在 AI 语境中，这同一条不可逆性正表现为 `Reckoning-Judgment Gap`：`Reckoning` 只能在已固化的 `L_2` 记录上做回溯式重排，而 `Judgment` 之所以保持面向未来的单向性，是因为每一次 `L_0 \to L_1` 的锚定都必须服从 `Generalized Second Law` 并支付不可逆耗散。也因此，这条鸿沟不是算力差距，而是时间箭头与选择代价在架构中的投影。
 
 ### T-Time-1b [T1.5.1b]: Shape-Dynamics Janus Window (形状动力学 Janus 窗口)
+这条材料真正补上的，不是“引力决定时间”这句口号，而是一个更窄也更有用的结构：系统不必先有全局时钟，主体也能沿着记录增长的一支体验到单向时间。
+
 > Source: Popular Mechanics (2026-03-12) 对 Shape Dynamics 的综述；一手理论锚点为 Julian Barbour, Tim Koslowski, and Flavio Mercati, *Identification of a Gravitational Arrow of Time*, Phys. Rev. Lett. 113, 181101 (2014), DOI: `10.1103/PhysRevLett.113.181101`.
 
 **定义（Definition）**
@@ -314,6 +321,8 @@ $$
 2. 不采纳“2014 的封闭牛顿 $N$ 体 toy model 已证明真实宇宙就是 Janus 点宇宙”的推论；从 toy model 到现实宇宙仍隔着量子、黑洞、场论与精确宇宙学建模。
 3. 不采纳“有了 Janus 点就不再需要讨论熵、初始条件或具体观测”的推论；该窗口最多说明**时间箭头有可能由引力关系动力学与记录生成自然涌现**，不是对全部宇宙学数据的替代解释。
 
+因此，这条线真正加固的是“记录增长先于绝对时钟”的时间箭头口径，而不是把 Janus 宇宙写成既成事实。
+
 ### T-Time-2 [T1.5.2]: Time Travel Impossibility (时间旅行本体论不可能性)
 1. **$L_2$ 的不可撤销性**: 过去不是"存储的状态"，而是已固化的选择结果
 2. **选择的信息熵增**: "回到过去"要求逆转信息压缩
@@ -337,6 +346,8 @@ $$ \lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing $$
 $$ F_g = T \nabla S $$
 
 ### T-Grav-1b [T1.6.1b]: Entropic-Gravity Fluctuation Window (熵引力涨落窗口)
+这条材料最有价值的，不是替熵引力“翻案”，而是把一个原本容易空转的直觉收紧成实验门：如果引力只是统计有效律，那么弱场端不该只有平均力，还应留下微弱但可检的涨落尾迹。
+
 > Source: Quanta (2025-06-13) 对 Carney et al. (arXiv:2502.17575) 的综述；证据等级：**二手报道+一手预印本线索**。
 
 **定义（Definition）**
@@ -358,6 +369,8 @@ $$ F_{grav}^{obs}=T\nabla S_{eff}(r)+\xi(t),\quad \mathrm{Var}[\xi]\sim \frac{1}
 1. 若在 entropic-gravity 设定所要求的参数窗口内，精密实验未检测到与 $\xi$ 相容的弱场涨落统计特征，则本接口被削弱。
 2. 若量子大质量叠加实验持续排除“自发塌缩/附加随机项”类效应到更严格上限，则该类熵引力微观机制空间收缩。
 3. 若未来统一理论在不引入额外统计自由度时即可同时解释弱场与强场全部现象，则本接口降级为启发性类比。
+
+对 SRT 来说，它加固的是“宏观定律也许只是粗粒平均”的窗口，并迫使讨论停在可测涨落上，而不是直接跳到“GR 已被推翻”。
 
 ### Ax-Grav-2 [A1.6.2]: Spacetime as Error-Correcting Code (时空作为纠错码)
 时空几何（$L_2$）是保护逻辑量子比特（$L_1$）免受 $L_0$ 噪声的量子纠错码：
@@ -424,6 +437,8 @@ $$ d_{cosmic} \propto \frac{1}{\sqrt{\Lambda}} $$
 > **Anti-Panpsychism Note**: $d_{cosmic}$ 度量的是宇宙维持信息共识的拓扑相干带宽——即 $\hat{G}_{cosmic}$ 能够维持时空统一性的物理范围——不携带任何形式的意识或情感内容。暗物质作为 $L_2$ 结构残骸（T-Cosmo-2），其内部不存在活跃的 $\hat{G}$ 操作，活跃 d 值为绝对零。意识是 d 值在满足三个必要条件（$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$）的高复杂度生物系统中的高阶涌现。详见 SRT-CORE-13B §6.2 和 SRT-CORE-14 Def-d-Scale-1。
 
 ### T-Cosmo-4: Neutrino Messenger Window (中微子信使窗口)
+这条材料真正加固的，不是“中微子很神秘”的叙事，而是宇宙学共识并不只靠电磁表面图像建立；对高遮蔽、致密、瞬变源区，我们需要一条低耦合的补充观测通道。
+
 > Source: 用户提交长文本（SNOLAB / Super-K / IceCube 叙事，二手转录，含已知实验事实线索）。
 
 **定义（Definition）**
@@ -452,6 +467,35 @@ $$
 1. 若在控制本底后，深地/深冰系统对高遮蔽源并未提供任何超越电磁观测的统计增益，则“信使窗口增量”命题被削弱。
 2. 若跨台站（如水/冰体系）对同类瞬变源的方向与能谱重建长期不一致且不可归因于系统误差，则该接口需重构。
 3. 若中微子振荡与质量态转换相关信号在高精度实验中被系统否定，则本节关于“可变身份信使”的叙述失效。
+
+因此，中微子窗口在 SRT 里更像“多信使共识补强器”，不是某种能单独揭示宇宙真相的 privileged messenger。
+
+### T-Cosmo-4a: eV-Scale Sterile-Neutrino Exclusion Window（eV 级惰性中微子排除窗口）
+
+`LSND / MiniBooNE / reactor / gallium` 这些短基线异常，越来越难再由**单一 eV 级 sterile neutrino** 一把收掉。这里真正被压缩的，不是“所有 sterile neutrino”这类更宽泛的可能性，而是一个长期被当作默认统一收口的最简解释。
+
+> 实证锚定：MicroBooNE `Search for light sterile neutrinos with two neutrino beams at MicroBooNE`（doi:`10.1038/s41586-025-09757-7`）；KATRIN `Sterile-neutrino search based on 259 days of KATRIN data`（doi:`10.1038/s41586-025-09739-9`）；Huber 2025 *Nature* News & Views `Still no sign of hypothetical sterile-neutrino particle`（doi:`10.1038/d41586-025-03726-w`）。
+
+**定义（Definition）**
+- 本窗口不裁决“所有 sterile neutrino 都不存在”，而是收紧为：
+$$
+\nu_s^{(\text{single},\,\text{eV-scale})}\ \not\!\!\text{fit default explanation set}
+$$
+- 即：作为短基线异常的**最简统一解释**，单一轻惰性中微子方案的可行参数空间已被大幅压缩。
+
+**机制解释（Mechanism）**
+- MicroBooNE 用双束流与更强事件重建能力，直接对 `\nu_\mu \to \nu_e` appearance 与 `\nu_e` disappearance 做联合限制；
+- KATRIN 则从三体衰变谱形中直接搜索混合导致的 kink / distortion；
+- 两条链路一条盯 oscillation appearance/disappearance，一条盯 beta-decay kinematics，却都没有给出支撑单一 eV sterile state 的正信号。
+
+**SRT 吸收方式（Human-readable patch）**
+- 更稳的表述是：**中微子异常的解释负担正在从“加一个最简新粒子”转移到更复杂的模型空间**。
+- 这对 SRT 的加固点在于：`Neutrino Messenger Window` 不应再偷偷夹带“也许再加一类低耦合粒子就能顺手把这些异常统一掉”的轻率收口；更稳的姿态是承认多信使观测可以补强共识，但**不能替代理论层对 anomaly taxonomy 的再拆分**。
+
+**保留边界（Boundary）**
+1. 这里主要被压缩的是**单一 eV 级** sterile-neutrino 方案，不等于所有右手中微子、seesaw 机制或 keV / GeV 级 sterile DM 候选都被排除。
+2. 短基线异常本身并未因此自动消失；更可能的结局是系统误差、通量建模、核数据库、非最简新物理或多参数混合结构要重新分账。
+3. 中微子为什么有质量，依旧没有被这批空结果回答。
 
 ---
 
@@ -1217,6 +1261,7 @@ $$\text{心智} \not\subseteq \text{大脑}$$
 宇宙作为全局 FEP 系统，宏观对微观施加向下因果。
 
 ### 7.1a Asymptotic Safety 分形时空窗口（2026-03-16 patch）
+这条材料真正改变的，不是让 SRT 提前站队某个量子引力赢家，而是把原本偏抽象的“跨尺度同构 / fixed point / 无特殊尺度”语言，锚到一个可以认真讨论的 UV 候选上。
 
 Quanta 对 Astrid Eichhorn 的访谈，以及其背后的 asymptotic safety 文献链（Donà, Eichhorn & Percacci 2013 `Matter matters in asymptotically safe quantum gravity`；Shaposhnikov & Wetterich 2009；Held & Eichhorn 2017/2018）为本节补上了一个重要但必须降级处理的量子引力窗口：**“跨尺度同构 / fixed point / 无特殊尺度”不只是 SRT 的抽象语言，也对应一个正在被严肃发展的 UV 完备候选。**
 
@@ -1248,6 +1293,8 @@ Quanta 对 Astrid Eichhorn 的访谈，以及其背后的 asymptotic safety 文�
 **可证伪预测**（标准格式）：
 - FC-ASafe-1：若渐近安全框架被实验否定（如未来LHC能量外推显示耦合常数无UV fixed point收敛），则SRT对”Ax-Scale-01类比物理候选”的主张自然失效；但Ax-Scale-01本身（SRT公理）不受影响，因其独立于AS理论
 - FC-ASafe-2：若AS理论成熟并给出可测量的scale symmetry偏差预测（如次Planck尺度的谱维度偏离）并获实验支持，则对应的Ĝ_θ^n半群不动点解读应在该能量区间的SRT模型中给出一致预测——若SRT框架无法吸收scale symmetry信号则类比精度主张需降级
+
+因此，这个窗口加固的是“规则也许能在更高尺度停止继续改写”的想法，而不是把“时空就是分形”写成现成答案。
 
 ## 7.2 本体论偏置
 

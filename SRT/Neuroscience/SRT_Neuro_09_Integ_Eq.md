@@ -3,6 +3,9 @@ id: SRT-NEURO-09
 type: reference
 tags: [Integration, Equations, IIT, GNWT, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 

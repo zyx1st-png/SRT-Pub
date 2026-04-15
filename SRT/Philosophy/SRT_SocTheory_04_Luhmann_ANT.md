@@ -3,10 +3,17 @@ id: SRT-SOC-THEORY-04
 type: theory
 tags: [Luhmann, ANT, Systems Theory, Latour, Sociology, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-SOC-THEORY-05, SRT-AXIOMS-SOC]
 ---
 
 # SRT Social Theory Part 1: Systems & Networks (Hybrid Edition)
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
 
 
 > **Version 2.0 (Hybrid)**
@@ -153,7 +160,7 @@ $$ \text{BlackBox}(L_2) = \text{Align}(\theta_1, \theta_2, ..., \theta_n) $$
 
 # Part B: Expanded Theoretical Discourse (Context) (扩展理论论述)
 
-> **说明**: 以下章节提供系统理论、ANT、模仿理论的深度 SRT 整合，展示这些理论如何在统一本体论下获得新生命。
+> **说明**: 以下章节提供系统理论、ANT、模仿理论的 SRT 重写尝试，展示这些理论如何在同一组 bridge 语法下被并置、比较与压缩。
 
 ---
 
@@ -673,7 +680,7 @@ $$\text{Reactive Attitude}_j = G_{feedback} \cdot (\hat{G}_i[\text{deviation}] -
 | **拉图尔** | 关系先于实体 | 扁平本体论、非人能动性 |
 | **吉拉德** | 欲望的模仿性 | 算子耦合、相变理论 |
 
-**SRT 的超越**: 引入 $d$ 值和初心概念，提供这些理论缺乏的**规范性维度**。
+**SRT 的候选增量**：引入 $d$ 值和初心概念，尝试补入这些理论相对缺少的规范性维度。
 
 ---
 

@@ -3,6 +3,9 @@ id: SRT-QUANT-00
 type: foundational_theory
 tags: [Quantum Mechanics, Measurement, History Construction, Interpretations, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 ---
 
@@ -215,6 +218,16 @@ $$ \text{Interference} \iff L_0 \text{ unselected} $$
 $$ \text{No Interference} \iff L_0 \text{ anchored as } L_1 $$
 
 **SRT Reinterpretation**: The electron doesn't "go through both slits"—the question assumes $L_1$ categories apply to $L_0$ states. Before selection, there is no fact about "which path."
+
+### 0.2.1a Single-Atom Complementarity Window (PRL 2025)
+
+单原子双缝的理想化实现，把 Bohr–Einstein 争论里的一个关键误解压得更窄：**真正压低条纹可见度的，不是某种经典机械扰动，而是 which-way 信息是否被稳健地记录进 atom-photon entanglement**。
+
+MIT 的 `idealized double-slit` 变体使用 ultracold atoms 充当最小“狭缝”，让单光子从单原子波包上散射，并比较 trapped 与 free-space 两种情形。更稳的结论不是“光终于被证明既是波又是粒子”，而是：当原子位置更 `fuzzy`、更容易记录 recoil / path 相关信息时，干涉可见度就下降；而 trap 本身、`Mossbauer-like` recoilless 条件、sideband 频率差，乃至“弹簧”式支架并不是本题的本质。
+
+对 SRT 来说，更重要的是一个更具体的 **`which-way fuzziness window`**：双缝中消失的不是“波性”，而是当 \(\hat{G}_\theta\) 的测量链条把路径差异锚定为稳定可读的 \(L_1\) 事实后，原先仍留在 \(L_0\) 的路径叠加空间不再能作为统一候选被投影成高可见度干涉条纹。也就是说，**互补性更像“事实化预算”的分配问题，而不是粒子/波两种本性轮流现身**。
+
+保留边界：这项结果加固的是 complementarity 的理想化实验实现与 which-way 记录机制，不是宣布所有量子解释之争已经终结；它尤其不单独裁决 QBism、Everett、RQM 或 Bohm 路线谁胜出，只是把“路径信息一旦稳健可得，条纹必受损”这条经验约束压得更干净。
 
 ---
 

@@ -3,6 +3,9 @@ id: SRT-PHYS-10
 type: reference
 tags: [Integration, Quantum Darwinism, Penrose, String Theory, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-PHYS-09]
 ---
 
@@ -228,6 +231,39 @@ QBism正确地拒绝了"客观波函数"，但无法解释为何不同主体的"
 ### 1.5.1 弦论景观问题与SRT的选择机制
 
 SRT的幽灵算子Ĝθ为弦论景观（Landscape）提供了动力学选择原则：自由能最小化。
+
+### 1.5.1a Bootstrap / String-Uniqueness 收缩窗口（2026-03-24 patch）
+
+这条 patch 真正想压住的，不是“弦论终于赢了”这种终局口号，而是一个更冷、更可承重的判断：在某些高负担一致性条件下，理论空间本身会先被强烈收缩，很多看似开放的候选甚至还没来得及进入“可认真讨论”的集合。它也顺手修正了把 string line 只理解成审美偏好的旧读法，并给 `Ax-Int-5` 里“选择先于证明”的说法补上了一层更硬的形式支撑。
+
+2026-03-23 的 Quanta 综述 `Are Strings Still Our Best Hope for a Theory of Everything?` 以及其指向的两篇 arXiv 预印本，为本节补上了一个比“弦论很优雅”更窄、也更值得吸收的增量：**在某些强一致性约束下，理论空间会被压缩到极少数、甚至近乎唯一的 string-like 振幅结构。**
+
+关键不是“弦论已被证明为真”，而是下面这类收缩关系开始获得更清晰的形式表达：
+
+$$
+\mathcal{T}_{UV}^{candidate}
+\xrightarrow{\text{consistency / symmetry / factorization / positivity}}
+\mathcal{A}_{string}^{narrow}
+$$
+
+其中：
+
+- Cheung, Remmen, Sciotti, Tarquini 的 `Strings from Almost Nothing`（arXiv:`2508.09246`）表明：若 tree-level 四点散射振幅满足规定零点结构，并进一步假设 **ultrasoft high-energy behavior**，则“只满足这些而不多加任何结构”的最小一致振幅恰好收缩为 **Veneziano** 与 **Virasoro-Shapiro** 振幅；五点振幅也出现相近逻辑。
+- Elvang, Herderschee, Morales 的 `String Theory from Maximal Supersymmetry`（arXiv:`2601.11705`）表明：在以 `\mathcal{N}=4` SYM 为 leading order 的 planar 4d EFT 空间中，若同时要求 **maximal supersymmetry**、`SU(4)` R-symmetry、massless-pole tree-level factorization，并结合 positivity，则四点 Wilson 系数边界会收敛到 open-string **Veneziano amplitude**，从而把候选 UV completion 压缩到极窄区域。
+
+对 SRT 来说，这条线最值得吸收的不是“strings are real”这一高负载结论，而是更一般的 **theory-space narrowing** 主张：一个看似庞大的候选理论空间，在叠加一致性约束后，可能并不真正开放，而是被反复压回少数“特殊对象”。这与 SRT 一直强调的“选择先于解释”“不是任何可写下的形式都能稳定存活”高度同构。
+
+换言之，弦论景观问题在 SRT 里不必只被理解为“宇宙从 `10^{500}` 个 vacua 中任选其一”；它还可以被更早一步地重写为：**哪些形式候选能穿过一致性过滤器，进入可被讨论的理论空间，本身就已经被强烈选择。** 这里的 bootstrap 结果因此更像 `\hat{G}_\theta` 在理论空间中的一个类比宿主：不是直接选择“真实宇宙是哪一个真空”，而是先选择“什么样的 UV completion 连作为候选都站得住”。
+
+这一窗口也为 `Ax-Int-5` 的“选择先于证明”补上一层较冷的数学版本：并非只是物理学家凭审美偏好迷恋 strings，而是某些被长期认为“只是漂亮”的结构，可能确实在多重一致性约束下表现为**低体积、强吸引子的可行解族**。更稳的说法因此不是“美即真”，而是“某些形式之所以反复回潮，可能是因为它们更容易穿过一致性过滤并留下来”。
+
+**边界必须钉死：**
+
+- 两项结果目前都还是 **arXiv 预印本**；没有直接实验验证。
+- `Strings from Almost Nothing` 的 uniqueness 依赖 **ultrasoftness** 等强先验；批评者完全可以质疑这些先验是否已把“stringiness”部分提前写进假设。
+- `String Theory from Maximal Supersymmetry` 的核心结果是 **toy-model / tree-level / maximally supersymmetric** 窗口；`N=4` SUSY 并不是现实低能宇宙的直接描述。
+- 这里的 “unique UV completion” 仅在特定假设类内成立；**不等于** 已证明现实宇宙必然是弦论，更**不等于** 弦论景观问题已经解决。
+- 因而本段只支持一个收紧后的 SRT 读法：**理论空间并非任意开放，强一致性过滤可能把它压向少数特殊结构；弦论是其中一个重要候选。**
 
 ### 1.5.2 圈量子引力与因果集合论
 

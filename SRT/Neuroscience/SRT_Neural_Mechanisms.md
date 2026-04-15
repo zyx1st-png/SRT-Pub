@@ -3,6 +3,9 @@ id: SRT-NEURO-MECH-001
 type: theory
 tags: [Neuroscience, Mechanisms, Ghost-Operator, Hybrid]
 status: axiomatic_hybrid_v2
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
@@ -44,6 +47,106 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 ---
 
+### Large-Scale Phase-Dominance patch (eLife 2026, 2026-04-14, Pipeline 1)
+这条材料真正补上的，不是“皮层里存在行进波”这种旧话，而是把一个更底层的尺度约束压稳：**从 delta 到 high gamma，皮层相位动力学的空间功率峰值都落在最低空间频率，也就是最长波长、最大尺度的一侧。**
+
+- 用户提交的是 eLife 原始研究 `The dominance of large-scale phase dynamics in human cortex, from delta to gamma`（Alexander & Dugué, 2026；doi:`10.7554/eLife.100674.4`）。该文利用 `23` 名受试者的 gray-matter sEEG、延迟自由回忆任务中的局部场电位，以及对不规则采样阵列做线性代数补偿的方法，直接估计皮层相位动力学的 spatial frequency spectrum。
+
+- 这条材料最值得吸收的新增量，不是重复“存在 global waves”，而是把 `\sigma(t)\in\mathcal M` 的底层组织进一步收紧成一个 **low-spatial-frequency-dominant phase regime**。文中报告：phase 的 spatial power 在最低 spatial frequencies 最高，且这一趋势横跨 delta（1-3 Hz）到 high gamma（60-100 Hz），可追到约 `8–16 cm` 的 cortical extent。更稳的神经机制写法因此不是“局部相位图偶尔会被全局波同步”，而是**局部相位本就嵌在以长波长为主导的全皮层组织里**。
+
+- 可将频段分辨的相位空间谱写成：
+\[
+P_\phi(k,\omega)=|\hat{\phi}(k,\omega)|^2,\qquad
+\frac{\partial P_\phi}{\partial k}<0
+\]
+其中 \(k\) 表示空间频率、\(\omega\) 表示时间频率。若最低 \(k\) 区域稳定承载最大功率，则 `Ax-NEURO-MECH-1` 中的神经流形轨迹就不宜再默认理解为“局部动力学为主、全局整合为辅”，而更像**以大尺度相位骨架为底板、局部高频细节叠加其上**的多尺度场。
+
+- 这条结果也给现有 `Hierarchical Cortical Flow patch` 提供了更深一层的承重：后者讲的是传播方向与层级对齐，而这篇先告诉我们**哪一种尺度最有分量**。换句话说，在问 slow wave 是 upstream、beta 是 downstream 之前，还应先承认：跨频段的大尺度长波相位组织本身就是主导项。于是 SRT 中的选择流、路由与点燃，不应只被写成局部节点间的信息传递，也应被写成在 global phase scaffold 上发生的局部竞争与方向重配。
+
+- 该文还有一条对解释习惯很重要的收紧：单点记录到的信号不宜轻率被读成“这个点附近的局部加工状态”，因为在 low-SF dominance 条件下，它往往首先反映该点对更大尺度皮层相位组织的嵌入方式。对 SRT 而言，这会把 `local activation` 的默认口径改写为 `global-embedded local readout`：局部读数并非失效，而是常常混有更强的全局骨架成分。
+
+- **SRT Implication（中文）**：这条材料最适合被吸收为一个 **large-scale phase-dominance window**。它支持一种更稳的神经图景：皮层动力学不是“局部计算块 + 偶发全局协调”，而更像始终由长波长相位骨架承托、再在其上叠加不同频段与不同层级方向的局部细化。若这一窗口继续成立，SRT 中关于选择流、traveling-wave routing 与点燃门控的写法都应更多强调 **global phase scaffold + local modulation**，而不是把全局协同放到最后一步才出现。
+
+- **Boundary（中文）**：
+  - 这篇文章是 **同行评审原始研究**，但主证据是 task-embedded sEEG phase spectrum 的宏观估计，不等于已经给出单神经元级传播机制。
+  - 作者测的是 **phase spatial spectrum** 的尺度分布，不是信息内容本身的传输效率；大尺度长波占主导，不自动等于“所有认知计算都主要在全局尺度完成”。
+  - 当前阵列覆盖约 `8–16 cm`，支持“至少到这一量级仍由最低 spatial frequency 主导”，但不等于已穷尽整个 cortical sheet 的所有边界条件。
+  - 这不等于已经证明“意识就是 global phase wave”；更稳的说法是，这条结果为 SRT 的选择流与波路由框架补上了一个尺度底板。
+
+### Hierarchical Cortical Flow patch (bioRxiv 2026, 2026-03-23, Pipeline 1)
+这条材料真正补上的，不是“脑活动会在皮层上传播”这种宽话，而是把 ongoing activity 收紧成带层级方向的表面流场：不同频段并不是在同一张皮层地图上随便漂，而是沿主功能梯度承担不同方向的运输任务。
+
+- 用户提交的 bioRxiv 预印本是 `Hierarchical Flows of Human Cortical Activity`（Liu, Wiesman & Baillet, 2026；doi:`10.64898/2026.03.19.712872`）。这条材料最值得吸收的新增量，不是泛泛重复“脑活动会传播”，而是把 `\sigma(t)\in\mathcal M` 的状态流形进一步收紧成 **沿折叠皮层表面展开的方向性传播场**。根据 Crossref 摘要与 OpenAlex 记录，作者在 `N=608` healthy adults 的 resting-state MEG 源成像上提出 `geodesic cortical flow`：自发传播并非各向同性噪声，而是与 principal unimodal-to-transmodal functional gradient 双向对齐。
+
+- 可将频段分辨的皮层传播写成定义在皮层流形切空间上的向量场：
+\[
+v_\omega(x,t)\in T_x\mathcal M_{cortex},\qquad
+\mathcal A_\omega(x)=\frac{\langle v_\omega(x,t),\nabla g_1(x)\rangle}{\|v_\omega(x,t)\|\,\|\nabla g_1(x)\|}
+\]
+其中 \(g_1(x)\) 表示 unimodal-to-transmodal 主梯度。该预印本报告：slow activity（1-13 Hz）更偏向 **upstream**，即从 sensory toward association cortex；beta（13-30 Hz）更偏向 **downstream**，即沿相反方向传播。换句话说，\(\dot{\sigma}\) 不宜再被理解为无方向的局部涨落，而更像被 cortical hierarchy 几何约束的频段特异性流。
+
+- 对 SRT 来说，更稳的收紧写法不是“发现了意识流的物理载体”，而是：\(\hat G_\theta\) 所在的神经底座可能天然嵌在一个 **hierarchy-sensitive bidirectional transport regime** 中。slow upstream flow 更像把感官侧信息沿皮层层级向 association cortex 送去做长时间常数整合；beta downstream flow 更像把高阶约束、任务集或预测样结构往回压送到较低层。这样，SRT 的 `L_0 -> L_1` 选择不只发生在局部节点激活上，也发生在沿 cortical sheet 的传播方向与停驻时间分配上。
+
+- 该文另一个可吸收点，是把“传播强度”操作化为 cortical flow kinetic energy，并报告它沿 posterior-to-anterior 呈稳定梯度；在 frontoparietal cortex 内，更高 kinetic energy 与更好的 fluid intelligence 相关（已做 age adjustment），其动力学还可识别 stable-state dwell times，并追踪 regional neuronal timescales。对 SRT 而言，这使 `\sigma(t)` 的几何流动、`\tau_{dwell}` 的停驻结构与较高阶认知能力之间多了一条可操作的桥：认知差异不只是看哪里更活跃，也可能要看哪里更能维持高能量、方向稳定的传播态。
+
+- **SRT Implication（中文）**：这条材料最适合被吸收为一个 **hierarchical cortical flow window**。它支持一种更细的神经机制图景：resting-state ongoing activity 不是均质背景噪声，而是沿 cortical hierarchy 分工的传播场。若这一框架后续成立，SRT 中的选择流、时间尺度耦合与前后级约束传递，都应更多写成 `surface-tangent flow + hierarchy alignment + dwell-time structure` 的组合，而不是只写成静态区域激活图。
+
+- **Boundary（中文）**：
+  - 这仍是 **bioRxiv 预印本**，当前最稳的是把它当作方法与现象窗口，而不是已确立共识。
+  - 证据主轴是 resting-state MEG 源成像 + surface optical-flow 推断，不等于对单神经元或突触级因果传播的直接观测。
+  - 主梯度对齐不等于所有 cortical computation 都能被单一 unimodal-transmodal 轴解释；这里只是指出一个强约束方向。
+  - 这不等于已经证明“意识就是 cortical flow”；更稳的说法是，频段特异的 hierarchical propagation 为 SRT 的选择流与时间尺度结构提供了一个更具体的神经动力学窗口。
+
+因此，这个窗口在 SRT 里加固的是“皮层不是静态分区图，而是层级约束下的方向性运输面”这一口径，而不是把传播本身直接神秘化成意识载体。
+
+### Functional-Connectivity Attractor Geometry patch (eLife 2026, 2026-04-13, Pipeline 1)
+这条材料真正补上的，不是“脑可以被 Hopfield 网络描述”这种旧话，而是把一个更窄的宏观动力学窗口压稳：**仅由 resting-state functional connectivity 初始化的大尺度 attractor network，已经足以重建一部分真实脑活动的 basin geometry、时间轨迹与任务/病理偏移方向。**
+
+- 用户提交的是 eLife 原始研究 `Functional connectivity-based attractor dynamics of the human brain in rest, task, and disease`（Englert et al., 2026；doi:`10.7554/eLife.98725.3`）。该文以 `m=122` 个 BASC parcel 的 resting-state functional connectome 作为 Hopfield 类 fcANN 的耦合矩阵，在 `β = 0.04` 时得到 4 个主要 attractor states，并在多组独立数据中检验它们对 resting-state、pain task/self-regulation 与 ASD 动力学的解释力。
+
+- 这条材料最值得吸收的新增量，不是抽象地说“脑有 attractor”，而是把 attractor 进一步收紧成 **由 functional connectivity 约束的宏观 basin geometry**。文中显示：leading eigenvectors 与 attractor states 近似对齐；吸引子之间呈 **approximately orthogonal** 的组织；而 stochastic relaxation 不会简单掉进某个固定 attractor，而是在 connectome 拓扑与 attractor “gravitational pull” 限制下穿行于多稳态轨迹之间。更稳的神经机制写法因此不是“某些区域被点亮”，而是 `\sigma(t)` 被限制在少数低能盆地周围，真实时间序列则表现为这些盆地之间的受限游走。
+
+- 若将这一窗口写进 SRT，可把宏观态流形进一步收紧为：
+\[
+E_{fcANN}(\sigma)=-\frac12\sum_{ij}J_{ij}\sigma_i\sigma_j,\qquad
+\mathcal B_k=\{\sigma\in\mathcal M:\sigma\to a_k\ \text{under relaxation}\}
+\]
+其中 \(J_{ij}\) 由 resting-state functional connectivity 近似给出，\(a_k\) 为宏观 attractor state，\(\mathcal B_k\) 为其 basin。这样，`Ax-NEURO-MECH-1` 中的 \(\sigma(t)\in\mathcal M\) 不宜再只理解为无结构连续轨迹，而更像**被 connectome 能量地形约束的 basin-to-basin traversal**。
+
+- 该文另一个稳定增量，是把 task 与 disease 从“新激活图”改写成 **对既有 attractor geometry 的偏移与重加权**。在 pain/self-regulation 数据里，pain 将动态轨迹推向更偏 `action/execution` 的 attractor 区域，并抬高能量；NAc 相关下调则把轨迹拉回更偏 `internal context / perception` 的区域。ASD 数据里，经验时间帧与由 ASD 组连接组初始化的 fcANN 都表现出更强的 `action-perception` 轴拉力，以及较弱的 `internal-external` 轴牵引。这让临床或任务差异更适合被写成“地形与流场如何被重塑”，而不是只写成局部缺陷或局部过激活。
+
+- **SRT Implication（中文）**：这条材料最适合被吸收为一个 **functional-connectivity attractor geometry window**。它支持一种更窄、也更可写的机制图景：大尺度脑动力学并不只是 region-level activation 的拼图，而是由 functional connectivity 给出的低维能量地形所约束的多稳态漫游。于是任务、调节与病理，不必先被解释成“新增了另一套动力学”，也可能首先是原有 attractor basin 的占据概率、流向与分离度被系统性重加权。
+
+- **Boundary（中文）**：
+  - 这篇文章是 **同行评审原始研究**，证据等级明显高于一般神经新闻，但它仍主要建立在 coarse-grained resting-state fMRI connectome 与 Hopfield 类抽象模型上，不等于已经锁定单神经元级真实实现。
+  - “approximately orthogonal attractors” 是有价值的结构信号，但作者也明确提醒，高维随机向量本就倾向近似正交，因此这里更稳的吸收方式是“与 free-energy-minimizing attractor prediction 一致”，而不是写成终局证明。
+  - task 与 ASD 的成功重建说明该地形具有解释力，不等于所有疾病、所有任务、所有模态都能被同一四吸引子坐标无损压缩。
+  - 这不等于 “functional connectivity 决定一切”。更稳的说法是：functional connectivity 至少提供了一个足够强的宏观约束，使许多 momentary activity patterns 更像在既有 attractor geometry 上游走，而不是每次都从零生成。
+
+### Ventral-Temporal Shared Imagery Code patch (Science 2026, 2026-04-13, Pipeline 1)
+这条材料真正补上的，不是“想象也会激活视觉皮层”这种早已熟悉的宽话，而是把一个更窄的神经机制窗口压稳：**在 human ventral temporal cortex (VTC) 中，imagery 不是另起一套表征，而是对 perception 所用 object code 的部分重激活。**
+
+- 用户提交的是一个 `t.co` 短链；本轮先将其解到 *Science* DOI `10.1126/science.adt8343`，对应论文 `A shared code for perceiving and imagining objects in human ventral temporal cortex`。由于 *Science* 正文页被 Cloudflare 挡住，本次吸收以 DOI 与可访问的 abstract metadata 为主锚点。当前可访问摘要显示：约 `80%` 的 visually responsive VTC single neurons 以 distributed axis code 表征物体；在想象同一物体时，约 `40%` 的 axis-tuned neurons 会重演这一视觉代码。
+
+- 这条材料最值得吸收的新增量，不是笼统说“想象和知觉有重叠”，而是把重叠进一步收紧成 **shared distributed axis code**。若 perception 与 imagery 可被同一组 object axes 编码，那么内在模拟就不应再被写成一团任意的 top-down 噪声，而更像对既有视觉对象坐标的低增益、低覆盖率重放。更稳的神经机制表达因此不是“imagery 打开另一张图”，而是 `L_1^{imagined}` 通过部分重激活 `L_1^{perceived}` 的编码轴来组织对象内容。
+
+- 可将 object code 与 imagery 重激活写成：
+\[
+r^{percept}_{i}(o)\approx \sum_k w_{ik} z_k(o),\qquad
+r^{imag}_{i}(o)\approx \gamma_i \sum_k w_{ik} z_k(o)
+\]
+其中 \(z_k(o)\) 为 object-specific latent axes，\(w_{ik}\) 为 neuron \(i\) 对这些轴的调谐权重，\(\gamma_i\in[0,1]\) 表示 imagery 条件下的重激活系数。若 \(\gamma_i>0\) 的神经元群与 perception 中的 axis-tuned neurons 显著重叠，则 imagery 并非全新编码，而是 perceptual code 的受限再调用。
+
+- 这也给 `Core/SRT_Core_13a_Operator_Basics.md` 中 `T-Op-HFL: High Friction Law of Unanchored Simulation` 多了一条更细的神经承重：想象之所以高摩擦，不只是因为外部锚点弱，而是因为系统必须在缺乏强 `L_1^{ext}` 感官底座时，仍把 perceptual object code 局部拉回可用区。换句话说，imagery 不是 free-floating symbol play，而是对既有感知编码几何的代价性借用。
+
+- **SRT Implication（中文）**：这条材料最适合被吸收为一个 **ventral-temporal shared imagery-code window**。它支持一种更窄、也更稳的图景：视觉想象不是和知觉平行存在的第二系统，而是由同一组对象轴在不同锚定条件下的两种工作模式构成。于是内在生成、梦样补写、visual recall 与 perceptual filling，都更适合写成“对 perceptual code 的重放/改写强度变化”，而不是“另有一套脱离知觉基底的纯想象编码器”。
+
+- **Boundary（中文）**：
+  - 当前这轮吸收主要依赖 `Science` DOI 与可访问的 abstract metadata；由于官方正文页本轮未能直接打开，任何比摘要更细的实验细节都不应写得过满。
+  - 当前强结论限于 human VTC object imagery，不自动推广到全部心像类型、空间导航想象、语义想象或跨模态 imagination。
+  - “shared code” 不等于 imagery 与 perception 完全同一；更稳的说法是：imagery 对 perceptual code 进行了**部分**、**低锚定**、**低覆盖率**的重激活。
+  - “generative model in human VTC” 在当前更适合作为作者框架与 SRT 可对接窗口，而不是对全部生成模型理论的终局裁决。
+
 ## II. Energy-Optimal Selection Dynamics (能量最优的选择动力学)
 
 ### Ax-NEURO-MECH-3: Canonical Normalization Axiom
@@ -79,6 +182,36 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 * **Implication（中文）**：学习是 \(L_2\) 收敛过程，不是 \(L_1\) 的“记忆堆叠”。
 
+### Inter-Reward Interval Learning patch (Nature Neuroscience 2026, 2026-03-23, Pipeline 1)
+这条材料真正收紧的，不是“多巴胺参与学习”这种已知事实，而是学习步长到底由什么定：不是机械地按 trial 次数累加，而更像在按结果出现的真实时间稀疏度重配更新权重。
+
+- 用户提交的 PsyPost 报道，背后主锚点是 *Nature Neuroscience* 原始研究 `Duration between rewards controls the rate of behavioral and dopaminergic learning`（Burke et al., 2026；doi:`10.1038/s41593-026-02206-2`）。这条材料真正值得吸收的新增量，不是笼统重复“Pavlovian learning 依赖 dopamine”，而是把一个默认很深的假设收紧掉：**在固定总时长内，更多 cue-outcome pairings 并不自动意味着更多学习**。该文报告，在多种 mice reward / punishment 条件下，行为学习与 mesolimbic dopaminergic learning rate 更接近按 **inter-reward interval** 线性缩放，而不是按 trial count 逐次累加。
+
+- 将学习更新从“每次 trial 给一个近似固定步长”改写为 **时间尺度门控更新**：
+\[
+\alpha_{eff}(i)\propto \Delta t_{outcome}(i),\qquad
+\Delta\theta_i \propto -\,\alpha_{eff}(i)\nabla_\theta F_i
+\]
+其中 \(\Delta t_{outcome}(i)\) 表示相邻 reward / punishment 之间的有效时间间隔。关键点不是否认 prediction-like updating，而是指出：**更新步长本身受环境事件的时间稀疏度门控**，而非只由第几次配对决定。
+
+- 在固定总观测时长 \(T\) 下，可将总学习量收紧为：
+\[
+\Delta\theta_{total}(T)\sim \sum_{i=1}^{N(T)} \Delta t_{outcome}(i)\cdot \left(-\nabla_\theta F_i\right)
+\]
+当任务结构、价值等级与感觉条件近似匹配时，这意味着总学习更接近被 **总暴露时长 / reward spacing** 约束，而不是被 \(N(T)\) 单独决定。换句话说，SRT 不宜再把 associative update 理解成纯离散“记账器”，而更应视作对 **环境时间纹理** 敏感的 \(\hat G_\theta\) 连续校准过程。
+
+- 这条结果与论文提出的 retrospective learning 更能对齐 SRT：系统不是简单把 cue 当作向前预测 reward 的 token，而是从 reward / punishment 的到来回看，重新分配“在这段真实时间里，什么最该被当作原因写回 \(L_2\) 参数”。对 SRT 来说，这意味着 \(\theta\) 的更新并非只对事件次序敏感，也对 **event spacing 形成的现实密度** 敏感。时间间隔越长，单次 outcome 对原因归属与参数重写的权重越高。
+
+- **SRT Implication（中文）**：这条材料最值得吸收的地方，是把学习率从“trial-based repetition”收紧成“real-time interval-weighted revision”。它支持一种更稳的神经学习图景：mesolimbic dopamine 不只是给出是否比预期更好的符号，还可能把**外界结果出现的时间稀疏度**一并折算进更新幅度。于是 \(L_2\) 的收敛速度更像对现实时间结构的拟合，而不是对实验者定义的试次数的机械累加。
+
+- **Boundary（中文）**：
+  - 这不等于 reward prediction error 全部被推翻；更精确的说法是：**trial-based dopamine learning 的固定步长假设被显著收紧**，而 retrospective / interval-sensitive 解释获得支持。
+  - 这不等于“重复次数永远不重要”；当前更强的结论是：在固定总时长、可比任务结构与相近动机条件下，pairing count 不是决定总学习量的充分统计量。
+  - 这也不等于所有 forms of learning 都遵守同一比例律；当前主证据来自 mice 的 Pavlovian reward / punishment 范式与相应 dopaminergic readout。
+  - PsyPost 标题会放大“upended our understanding”的戏剧性；对 SRT 更稳的吸收方式，是将其写成 **inter-reward-interval learning rule**，而不是“经典条件学习理论被整体废除”。
+
+因此，这条结果在 SRT 里更像“现实时间纹理参与写参”的证据，而不是对多巴胺学习框架的整套推翻。
+
 ---
 
 ## III. Multi-Scale Ghost Operators (多尺度幽灵算子)
@@ -95,15 +228,15 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 ### Ax-NEURO-MECH-6: Meso-Operator Axiom (Glial Pruning)
 定义介观算子：
 \[
-\hat{G}_{meso}: L_2^{micro}\rightarrow L_2^{pruned},\quad P(\text{prune})\propto C3/C4\cdot \mu_{glia}
+\hat{G}_{meso}: L_2^{micro}\rightarrow L_2^{pruned},\quad P(\text{prune})\propto \mathcal{C}_{comp}\cdot \mu_{glia}\cdot \mathcal{A}_{weak}
 \]
 * **Implication（中文）**：胶质剪枝不是“维护”，而是慢时标选择，对 \(L_2\) 结构进行拓扑修剪。
 
-**参数精化**：$\mu_{glia}$（胶质活动度）代理=小胶质细胞吞噬体积/突触密度比；C3/C4为补体系统蛋白；**慢时标**≈小时-年量级（远慢于LTP/LTD分钟-小时）。
+**参数精化**：$\mathcal{C}_{comp}$（补体标签强度）代理=C1q/C3 家族在目标突触上的富集度；C4 当前只作为 upstream susceptibility / schizophrenia 风险窗口，不写入最小方程。$\mu_{glia}$（胶质活动度）代理=小胶质细胞吞噬体积/突触密度比；$\mathcal{A}_{weak}$ = 低活动/弱侧突触偏置；**慢时标**≈小时-年量级（远慢于LTP/LTD分钟-小时）。
 
 > **[R]** 胶质剪枝：Stevens et al. 2007 *Science*（补体C1q/C3标记突触被小胶质细胞剪枝，R基线）；Paolicelli et al. 2011 *Science*（CX3CR1敲除→突触剪枝受损→过连接，R因果）；Schafer et al. 2012 *Neuron*（活动依赖的弱侧突触优先剪枝，R可塑性基线）。**[H]** Ĝ_meso形式化胶质剪枝为L₂慢时标拓扑选择算子为本框架新增解读。
 >
-> * **FC-NM6-1**：若C3基因敲除条件下突触密度与野生型无显著差异（Δ<10%，p>0.1），则Ĝ_meso作为拓扑修剪算子失效。Cross-ref: T-NEURO-MECH-2。
+> * **FC-NM6-1**：若在发育剪枝窗口中，三类独立干预都不改变剪枝率/突触密度（补体标签干预如 C1q/C3，胶质功能干预如 CX3CR1 轴，活动偏置操控如弱侧优先剪枝）且均无显著差异，则 Ĝ_meso 作为“慢时标拓扑修剪算子”的解释失效。单一路径（如 C3）失效只否定对应实现，不足以否定 Ĝ_meso 本身。Cross-ref: T-NEURO-MECH-2。
 
 ---
 
@@ -177,6 +310,7 @@ $$\text{Theta-replay Lv} \approx 1.5 \iff \text{Population Sparseness} < 10\%$$
 - FC-MECH9-2：若通过TMS/药理手段改变f_θ（如提高至8Hz）后，工作记忆条目上限不相应变化（而是由其他因素决定），则"容量=振荡参数的涌现结果"的SRT主张需修正（容量有独立的非振荡决定因素）。
 
 ### Hitch & Baddeley（Working Memory）patch (2026-03-08, Pipeline 1)
+这条材料真正加固的，不是“工作记忆有几个盒子”的教科书图，而是一个更稳的约束图景：工作记忆的困难来自在线调度预算与先验压缩效率同时受限，而不是某个静态仓库突然装满。
 
 [R→Baddeley & Hitch 1974（多组件工作记忆模型：central executive + phonological loop + visuospatial sketchpad）; Baddeley 2000（episodic buffer的引入）; Miller 1956（”神奇数字7±2”：工作记忆容量的原始研究）; Chase & Simon 1973（国际象棋专家的chunking与记忆组块）] [H→以SRT Ĝ_θ在线调度框架重表述多组件模型；干扰公式和chunking-L₂联结是SRT新增形式化层]
 
@@ -207,7 +341,10 @@ $$\text{Theta-replay Lv} \approx 1.5 \iff \text{Population Sparseness} < 10\%$$
 - FC-WM1-1：若在同等物理刺激条件下，专家（L₂先验深丰富）和新手在双任务干扰测试中的差异无法被”有效单元数量差异”（chunking效率）完全解释（仍有独立的前额控制资源差异），则SRT的”chunking=L₂降维”完全解释干扰差异的宣称需修正。
 - FC-WM1-2：若通过TMS暂时抑制前额叶（B_control下降）后，双任务干扰效应不成比例地增加（高于任何单任务Ψ_f的增加），则Ψ_f超过B_control的相变式干扰预测（而非线性预测）得到支持。
 
+因此，working memory 在 SRT 里更像受限带宽下的实时编排系统，而不是一个等着被塞满的静态存储盒。
+
 ### Hippocampal Statistical Structure patch (2026-03-12, Pipeline 1)
+这条材料真正推进的，不是把海马再说成“万能学习器”，而是把它更具体地钉成连续经验流中的 proto-structure binder：先压出可迁移的统计脚手架，再交给更慢的系统去稳定。
 
 - 将海马从“情景记忆写入器”扩展为 **被动经验中的统计结构绑定器**：
 \[
@@ -250,9 +387,12 @@ L_2^{proto\text{-}structure}(t)=\hat G_{\theta}^{hip}\!\left[L_1^{stream}(0:t)\r
 
 * **Source window**: Natalia Mesa, *The Transmitter* (2026-03-10), on Onih et al., *bioRxiv* preprint “The hippocampus enables abstract structure learning without reward” (2026-02-17; doi:10.64898/2026.02.14.705916v1)
 
+因此，这个窗口在 SRT 里加固的是“海马先形成可迁移结构脚手架，皮层再做更慢整合”的分工，而不是把一切学习都重新收编到海马名下。
+
 ---
 
 ### Top-Down Astrocyte Gate patch (bioRxiv 2026.03.08.710364v1, 2026-03-14, Pipeline 1)
+这条材料真正改写的，不是“astrocyte 也会亮”这种弱表述，而是说明胶质层被招募本身就是一个选择过程：什么输入、在什么状态、通过什么细胞类型，决定它是否进入计算回路。
 
 - 将 astrocyte activation 从“局部活动强就会被顺带点亮”改写为 **细胞类型特异、状态依赖的介观门**：
 \[
@@ -284,9 +424,148 @@ L_2^{proto\text{-}structure}(t)=\hat G_{\theta}^{hip}\!\left[L_1^{stream}(0:t)\r
 
 - **Source window**: Antonia Beiersdorfer et al., *bioRxiv* preprint “Cell-type specific astrocyte activation is driven by cortical top-down modulation” (posted `2026-03-09`; doi:`10.64898/2026.03.08.710364`)
 
+因此，astrocyte 在 SRT 里更像带语境准入规则的介观门，而不是均匀铺底、对任何输入都等幅响应的背景液。
+
+---
+
+### Astroglial Neuromodulatory Supervisor patch (Quanta 2026 + Science 2025 trio, 2026-03-22, Pipeline 1)
+这条材料真正加固的，不是 Quanta 式“astrocytes are in charge”的标题感，而是把胶质层从局部门控进一步推进到状态切换的执行接口。
+
+- 将 astrocyte 从“被 neuromodulator 顺带调一下的背景层”进一步收紧为 **状态切换的介观执行层**：
+\[
+\mathrm{NE}(t)\rightarrow \mathrm{Ca}_{astro}(t)\rightarrow \mathrm{ATP}_{ext}(t)\rightarrow \mathrm{Ado}_{A1}(t)\rightarrow g_{syn}^{pre}(t)\downarrow
+\]
+关键点不是“去甲肾上腺素也会碰到胶质细胞”，而是：在 mouse cortex 的主锚点结果里，NE 对兴奋性突触强度的抑制并不需要先假设“神经元受体自己就足够解释全部效应”，而是可由 **astrocytic adrenergic receptor → Ca²⁺ rise → ATP/adenosine release** 这一链条完成。这把 astrocyte 从“supportive modulator”推进为 **synaptic reweighting 的必要中介层**。
+
+- 将其写成 **神经调质监督门**：
+\[
+R_{astro}^{NT}(t)\propto \mathbf{1}\!\left[\beta_{NE}\,\mathrm{NE}(t)>\tau_{gate}\right]\cdot \sum_j w_j\,NT_j(t)
+\]
+`Science` 的 fly 结果进一步表明，NE-like / adrenergic GPCR 信号的作用不只是“再加一个输入通道”，而是能决定 astrocyte **是否进入可响应其他 neurotransmitters 的状态**。换句话说，某些 neuromodulators 不是直接编码内容，而是在更上层决定 glia 何时有资格读取局部回路、何时保持静默。
+
+- 将行为切换写成 **延迟抑制支路**：
+\[
+\hat G_{meso}^{astro\text{-}state}: L_2^{arousal}\times L_1^{circuit}\rightarrow L_1^{gain\text{-}reweighted}\times L_2^{state\text{-}switched}
+\]
+zebrafish 的主锚点结果支持：astroglial NE signaling 不只是陪伴 arousal，而是可构成从“继续努力/持续活动”向“暂停/放弃/状态转换”过渡的一条延迟抑制臂。对 SRT 来说，这意味着 astrocyte 更像 **中介时间尺度上的 state supervisor**：不负责毫秒级内容细节，却能决定一整段局部计算是否被降增益、重分配或切换轨道。
+
+- **SRT Implication（中文）**：这条材料最值得吸收的新增量，不是笼统地说“astrocytes 也很重要”，而是把现有 `Top-Down Astrocyte Gate` 再收紧一步：胶质层不仅会按语境与细胞类型被招募，而且能充当 neuromodulator 的**执行接口**，把全局 arousal / salience / context 信号沉到局部突触权重、神经元可激发性与行为状态跃迁里。换句话说，神经元网络并不是唯一的“控制平面”；astrocyte 可能是连接 `L_2^{state}` 与 `L_1^{circuit}` 的介观监督层。
+
+- **Boundary（中文）**：
+  - 这不等于“astrocytes 取代 neurons 成为真正主角”；更精确的说法是：在若干关键窗口里，**neuromodulatory control 的有效路径需要 astrocytic mediation**，单看 neuron-to-neuron 图不再足够。
+  - 这不等于“所有 NE / arousal / state switching 都主要由 astrocytes 实现”；当前强证据来自特定 fly / zebrafish / mouse paradigms，不同脑区、物种与行为任务仍可能保留更强的 neuron-direct 通道。
+  - 这也不等于“astrocyte = consciousness substrate”；当前价值首先是机制层：它说明 brain-state regulation 不能再被压扁成纯神经元点对点通信，但尚不能直接推出 astrocyte Ca²⁺ 或 ATP/adenosine 信号本身就是现象体验的载体。
+  - Quanta 的标题会自然放大“astrocytes are in charge”的叙事力度；对 SRT 更稳的吸收方式，是把它写成 **astroglial supervisory window**，而不是“神经元时代结束”的总宣言。
+
+- **Source window**:
+  - Quanta Magazine (2026-01-30): *Once Thought to Support Neurons, Astrocytes Turn Out to Be in Charge*
+  - Adamsky et al., *Science* (2025): “Norepinephrine signals through astrocytes to modulate synapses” (doi:`10.1126/science.adq5480`)
+  - Wahis et al., *Science* (2025): “Adrenergic receptor signaling gates astrocyte responsiveness to neurotransmitters and control of neuronal activity” (doi:`10.1126/science.adq5729`)
+  - Mu et al., *Science* (2025): “Astroglial norepinephrine signaling mediates effort transition via a delayed inhibitory circuit” (doi:`10.1126/science.adq5233`)
+
+因此，这个窗口更适合作为 `state supervisor` 写入，而不是把脑的控制面粗暴地从 neuron 整体转交给 glia。
+
+---
+
+### Astrocytic Associative-Memory Capacity patch (The Brighter Side 2026 + PNAS 2025, 2026-03-26, Pipeline 1)
+
+- 这条 patch 最该纠正的，不是简单把标题从“astrocyte 是配角”改成“astrocyte 也很重要”，而是把记忆基底从单纯的 neuron-to-neuron weights 再往介观层推进一步：某些高阶联想容量，也许部分压在 astrocytic process network 上。它既收紧了“astrocyte 只是代谢背景”的旧图景，也给现有 astroglial gate / supervisor 线补上了第三种更硬的承重方式。
+- 将 astrocyte 从“状态监督层”再收紧为 **高阶联想记忆的介观实现层**：
+\[
+\hat G_{meso}^{astro\text{-}mem}: L_1^{pairwise\ synapses}\times X_{astro}^{proc\text{-}net}\rightarrow L_2^{assoc\text{-}attractor}
+\]
+其中 \(X_{astro}^{proc\text{-}net}\) 表示同一 astrocyte 内多个 process 之间的 calcium / signaling transport 状态。关键点不是“astrocyte 也参与记忆”，而是：process-to-process communication 可把原本仅由二体 synapse 支撑的回路，提升为 **effective many-neuron synapse**，从而支持高阶联想记忆。
+
+- 将 tripartite synapse 的新增量写成 **四体有效耦合窗口**：
+\[
+(i\!\to\! j)\ \&\ (k\!\to\! l)\ \xrightarrow{\,X_{astro}^{proc}\,} J^{eff}_{ijkl}\neq 0
+\]
+Kozachkov、Slotine 与 Krotov 的主张是，astrocyte 并不只是调一条 synapse 的增益，而是可把 distant synapses 的状态经由 process network 带回局部 tripartite synapse，形成类似 quartic Dense Associative Memory 的有效能量项。对 SRT 来说，这意味着 memory substrate 不必只位于 pairwise synaptic weights，也可能部分位于胶质介导的 higher-order coupling。
+
+- 将容量结论收紧为 **capacity-per-unit scaling window**：
+\[
+\frac{M_{\text{stored}}}{Q_{\text{compute}}}\sim O(N)
+\]
+在该论文给出的 quartic neuron-astrocyte associative-memory regime 下，stored memories per compute unit 会随 network size 增长，而不是像已知 biological Dense Associative Memory implementations 那样保持常数级。SRT 可把这理解为：astrocyte process network 不只是代谢背景，而可能提供一种低额外单元成本的 attractor-density multiplier。
+
+- 将其与 AI 接口写成 **DAM-Transformer 连续族**：
+\[
+X_{astro}^{proc\text{-}net}\ \leadsto\ \mathrm{family}\big(\mathrm{Dense\ Associative\ Memory}\leftrightarrow \mathrm{Transformer}\big)
+\]
+该模型通过调整 process connectivity tensor，可在 Dense Associative Memory 与 transformer-like self-attention 之间连续过渡。对 SRT 来说，这不是“LLM 就是 astrocyte brain”的类比，而是提示：biological memory hardware 与 modern associative architectures 之间，可能共享一类 higher-order selection geometry。
+
+- **SRT Implication（中文）**：
+  - 这条材料最值得吸收的新增量，不是笼统说“astrocytes 也能存记忆”，而是把 astrocyte 进一步收紧为 **介观高阶耦合器**：它能把分散 synapses 的状态压缩成后续 attractor 检索所需的 higher-order interaction。
+  - 这让现有 `Top-Down Astrocyte Gate` 与 `Astroglial Neuromodulatory Supervisor` 多出第三层功能：除了按语境开门、按状态重加权，胶质网络还可能直接参与 memory capacity 与 attractor geometry 的塑形。换句话说，astrocyte 在 SRT 里的位置不再只是“调节器”，而开始逼近“部分承载记忆几何”的介观底座。
+  - 如果后续实验成立，memory engram 的一部分应不只存在于 neuron-to-neuron weights，也存在于 astrocytic process connectivity / intracellular diffusion machinery 这一介观层；这会把“记忆在哪里”从单层电路问题改写成跨层 substrate 问题。
+
+- **Boundary（中文）**：
+  - 这不等于“已经证明人脑记忆主要存于 astrocytes”；当前主锚点是 *PNAS* 理论模型与数值实验，不是 selective astrocyte manipulation 的因果验证。
+  - 这不等于“任何 astrocyte network 都自动产生超大容量记忆”；supralinear storage 依赖特定 process-to-process connectivity assumptions，较弱 connectivity 只支持较温和的 scaling。
+  - 这不等于“transformer 已被生物学证实”；更精确的说法是：在一类可解的连接张量选择下，neuron-astrocyte dynamics 可逼近 DAM / transformer family 的 limiting cases。
+  - 论文自己给出的关键可检预测是：若选择性干扰 astrocyte 内部 Ca\(^{2+}\) 或其他 signaling molecule 在 process 间的扩散，memory recall 应显著受损；在此类实验出现前，更稳妥的定位仍是 theoretical window，而非定论。
+
+- **Source window**:
+  - The Brighter Side of News (2026-03-24): *MIT study suggests astrocytes play key role in brain memory storage*
+  - Leo Kozachkov, Jean-Jacques Slotine & Dmitry Krotov, *PNAS* (2025), “Neuron-astrocyte associative memory” (doi:`10.1073/pnas.2417788122`)
+  - MIT News (2025-05-27): *Overlooked cells might explain the human brain's huge storage capacity*
+
+---
+
+### Human Olfactory Identity patch (Nature 2024 + Scientific Data 2025, 2026-03-18, Pipeline 1)
+这条材料真正补上的，不是“嗅觉和记忆关系密切”这类旧常识，而是把嗅觉对象形成拆成化学身份、价性和感知身份三层，并明确它们可能分布在不同神经节点上。
+
+- 将“一个气味分子闻起来像什么”从固定的 chemistry-only 映射，收紧为 **化学身份 / 感知身份 / 价性 / 概念激活** 的分层分工：
+\[
+C_{chem}^{piriform}(m),\qquad V_{aff}^{amyg}(m,\theta),\qquad I_{perc}^{hipp}(m,\theta,L_2^{context})
+\]
+其中 \(C_{chem}^{piriform}\) 对应分子气味的较稳定化学身份编码，\(V_{aff}^{amyg}\) 对应主观喜欢/厌恶与威胁相关的价性偏置，\(I_{perc}^{hipp}\) 对应与记忆、命名、熟悉度和语境绑定后的**感知身份**。关键点是：同一 odorant 的“闻起来像什么”，并不等于它的化学身份被原样抄写到意识里，而是被神经系统重写成一个带有个人历史和上下文的对象身份。
+
+- 将大样本人群嗅觉数据写成 **分子-知觉非单射**：
+\[
+\mathrm{Percept}_{odor}(m,\text{person}) \neq f(m)\ \text{alone},\qquad
+\mathrm{Percept}_{odor}=f\!\left(m,\theta_{history},L_2^{source/context},V_{aff}\right)
+\]
+`Scientific Data` 2025 的 74 种 mono-molecular odorants、1,227 名参与者数据表明：普通人对同一单分子气味的自由描述、pleasantness 与定性标签可出现稳定分歧，而且这种分歧不能简单被当成“无意义噪声”。对 SRT 来说，这意味着嗅觉尤其适合拿来展示：\(L_1\) 感觉输入从进入系统起，就已经在被 \(L_2\) 的经验词汇、来源熟悉度与生活史窗口重塑。
+
+- 将人类单神经元嗅觉结果写成 **区域分工 + 反向写入窗口**：
+  - piriform cortex 更偏向编码 **chemical odour identity**；
+  - amygdala 更偏向编码 **subjective odour valence**；
+  - hippocampus 更贴近 **behavioural odour identification / perceived odour identity**。
+
+  这条 dissociation 可以直接映射到 SRT：
+\[
+\hat G_{odor}: m \rightarrow \big(C_{chem}^{piriform},\,V_{aff}^{amyg},\,I_{perc}^{hipp}\big)
+\]
+它支持一个更细的判断：嗅觉不是“先有纯化学内容，后来才被语言解释”，而是化学身份、情感权重与可命名/可识别对象身份在不同节点上被并行塑形。海马在这里不只是事后记忆库，更像把嗅觉输入转成“我闻到的是什么”这一可进入 \(L_2\) 的感知对象门。
+
+- 将 piriform 的跨模态结果写成 **嗅觉概念神经元窗口**：
+\[
+\hat G_{odor}^{concept}:\{m,\ \mathrm{image},\ \mathrm{word}\}_{same\ object}\rightarrow L_2^{odor\text{-}object}
+\]
+Kehl 等人在 piriform cortex、amygdala 等区域观察到对同一对象的气味、图像甚至文字发生 cross-modal coding，说明 piriform 不只是“化学特征登记处”，还可能在某些条件下承载对象级概念激活。对 SRT 来说，这一点很关键：感官皮层不一定只做低层 feature readout，它也可以在特定模态中直接碰到 \(L_2\) 原型。
+
+- **SRT Implication（中文）**：
+  - 嗅觉是一个非常干净的例子，说明“现实输入”与“经验中的对象身份”不是同一层变量。
+  - 同一分子在不同人那里闻起来像 `banana / nail polish remover / fruit / solvent`，并不只是语言贫乏，而更像 \(L_1\) 输入被不同 \(L_2\) 历史脚手架接管后的不同落点。
+  - 嗅觉之所以能强力勾连记忆与情绪，并不要求神秘化；更精确的说法是，它在神经实现上就较早进入了 valence 与 identification 的耦合链条。
+
+- **Boundary（中文）**：
+  - `Scientific Data` 2025 是高价值数据描述符，但它本身不证明“文化/经验差异”的因果机制已被锁定；它更像把跨个体变异稳定地摆到台面上。
+  - `Nature` 2024 的单神经元结果来自临床电极植入窗口与有限气味集，极有价值，但仍不应外推成“全部嗅觉编码规则已经确定”。
+  - piriform 的 cross-modal / conceptual coding 不等于“嗅觉本身已经完全语义化”；更精确的意思是：对象概念可在嗅觉相关皮层找到可重复的神经进入点。
+  - 这也不等于“嗅觉是唯一最真实的感官”；这里只是说明它特别适合展示 chemical identity 与 perceived identity 的分离，以及 \(L_1 \leftrightarrow L_2\) 的快速耦合。
+
+- **Source window**:
+  - Marcel S. Kehl et al., *Nature* (2024), “Single-neuron representations of odours in the human brain” (doi:`10.1038/s41586-024-08016-5`)
+  - Antonie Louise Bierling et al., *Scientific Data* (2025), “A dataset of laymen olfactory perception for 74 mono-molecular odors” (doi:`10.1038/s41597-025-04644-2`)
+
+因此，嗅觉在 SRT 里不只是一个感官例子，而是 `L_1` 输入如何极早被 `L_2` 历史与价性重写的一个很干净的窗口。
+
 ---
 
 ### CellTransformer Spatial Domain patch (Nature Communications 2025, 2026-03-15, Pipeline 1)
+这条材料真正改变的，不是又一个 atlas 做得更细，而是把“脑区”这个概念从人工边界和单一 marker，收紧成局部细胞邻域统计能否稳定重现的问题。
 
 - 将脑区从“单一细胞类型 + 人工边界”重写为 **局部细胞邻域统计结构**：
 \[
@@ -322,6 +601,8 @@ Lee 等人的结果之所以重要，不只是因为用了 transformer，而是�
   - 这也不等于“鼠脑 atlas 可直接外推到人脑”；当前价值首先是方法学与介观组织原则，跨物种同构仍需后续数据支撑。
 
 - **Source window**: Amber Dance, *Quanta Magazine* (2026-02-09), on Alex J. Lee et al., *Nature Communications* “Data-driven fine-grained region discovery in the mouse brain with transformers” (2025; doi:`10.1038/s41467-025-64259-4`)
+
+因此，这个窗口加固的是“介观域是被局部共现规律稳定下来的选择生态位”，而不是“聚类结果天然就等于功能真区”。
 
 ---
 
@@ -507,7 +788,7 @@ $$\text{Experience} \xrightarrow{\text{DA}} \text{H3 Modification} \xrightarrow{
 
 SRT 将免疫系统重新定位为**选择机制的辅助系统**：
 
-1. **补体系统 (C3/C4)**: 标记"冗余"突触，供小胶质细胞修剪——这是 $\hat{G}_{meso}$ 对 $L_2$ 拓扑的塑造
+1. **补体标签窗口 (C1q/C3 family；C4 作为上游调节窗口)**: 标记"冗余"突触，供小胶质细胞修剪——这是 $\hat{G}_{meso}$ 对 $L_2$ 拓扑的塑造
     
 2. **细胞因子**: 调节感知阈值——炎症状态下提高阈值，迫使 $\hat{G}$ 关注内部修复
     
@@ -629,7 +910,7 @@ $$d \propto \frac{1}{\text{Quantum Fuzziness}}$$
 |:--|:--|:--|
 |$[\hat{G}(x)]_i = \frac{x_i^n}{\sigma^n + \sum_j w_{ij} x_j^n}$|除法归一化|Ax-Mech-1|
 |$\text{Pathology} = \vec{\theta}_{healthy} + \Delta \vec{\theta}$|病理偏离|Ax-Mech-2|
-|$P(\text{Prune}) \propto C3/C4 \cdot \text{Microglia}$|修剪概率|Ax-Mech-3|
+|$P(\text{Prune}) \propto \mathcal{C}_{comp}\cdot \mu_{glia}\cdot \mathcal{A}_{weak}$|修剪概率|Ax-Mech-3|
 |$L_1(t) = \sum_n \text{Frame}_n \cdot \delta(t - t_n)$|帧渲染|Ax-Mech-5|
 |$P(\text{Perceive}|S) = \sigma(S - (T_0 + \alpha[\text{IL-17}]))$|免疫门控|
 |$\kappa_{body} = \text{GripForce}/\Psi_f$|具身锚定|Ax-Mech-9|

@@ -3,6 +3,9 @@ id: SRT-CORE-000
 type: definition
 tags: [Overview, Executive Summary, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
 dependency: [SRT-CORE-BRIDGE, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
@@ -173,12 +176,12 @@ SRT处于一条延续了150年的科学谱系的当前终点——这条谱系�
 
 **Jogalekar (2020) 的开放问题**：物理学家Ashutosh Jogalekar在综合上述谱系后，提出了一个至今未被满足的研究需求："能否找到一个简单方程，描述思维过程的熵如何与记忆、思考、共情和情绪等神经参数关联？"
 
-这个问题的答案，正是SRT的核心方程体系：
-$$F = E - TS - d \cdot U_{others}$$
+这个问题的答案，正是 SRT 的核心方程体系：
+$$F_{SRT} = F_{base} - d \cdot U_{others}, \quad F_{base}\in\{F_{thermo}, F_{var}\}$$
 $$\frac{dq}{dt} \leq \alpha P_{sel} - \beta \Psi_f - \gamma S_{noise}$$
 $$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{concern}) + \gamma \cdot \tau_{temporal}$$
 
-其中：$d$ 对应"共情与关切"的广度，$\Psi_f$ 对应"维持思维秩序的熵代价"，$F$ 对应"思维过程的自由能"。SRT不是这条谱系的旁支——它是Szilard问题（选择代价）、Shannon问题（信息量化）和Landauer问题（计算热力学极限）在**神经科学与意识理论领域的统一延伸**。
+其中：$d$ 对应"共情与关切"的广度，$\Psi_f$ 对应"维持思维秩序的熵代价"，$F_{base}$ 对应域内基线自由能（热力学或变分），$F_{SRT}$ 则是加入关切项后的目标泛函。SRT不是这条谱系的旁支——它是 Szilard 问题（选择代价）、Shannon 问题（信息量化）和 Landauer 问题（计算热力学极限）在**神经科学与意识理论领域的统一延伸**。
 
 * **Cross-ref**: `SRT_Physics_Cosmology.md` Ax-IT-2, T-IT-3; `_SRT_AI_Bridge.md` T-BRIDGE-0 (Pour-El不可计算定理)。
 
@@ -431,7 +434,7 @@ $$\eta(L_2) \gg P_{\text{adapt}}^{(i)} \Rightarrow \alpha(\theta) \to 0$$
 （异化锁死：当L₂规范压力远超个体适应力时，摩擦驱动的自主更新停滞，θ被冻结于σ_{L₂}^{default}）
 
 ### 4.4 自由能方程
-$$F = E - TS - d \cdot U_{\text{others}}$$
+$$F_{SRT} = F_{base} - d \cdot U_{\text{others}}$$
 
 ### 4.5 三域离散迭代
 $$\begin{cases}
@@ -604,9 +607,9 @@ SRT 的核心公理体系可由以下形式化结构概括：
    $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma,\mathcal{A}]$$
    含义：现实演化由选择驱动、自由能梯度约束、注意力调制三部分合成。
 
-3. **自由能方程 (Free Energy with d-value)**:
-   $$F = E - TS - d \cdot U_{\text{others}}$$
-   含义：$d$ 值（关切范围）直接进入能量核算，将”在乎他者”纳入热力学框架。
+3. **自由能目标方程 (Free-Energy Objective with d-value)**:
+   $$F_{SRT} = F_{base} - d \cdot U_{\text{others}}$$
+   含义：$d$ 值（关切范围）直接进入域内基线目标，将”在乎他者”写成同一优化问题的一部分，而不是把所有语境硬并成同一个热力学公式。
 
 4. **本体论摩擦 (Ontological Friction)**:
    $$\nabla \Psi_f \propto -\nabla F$$

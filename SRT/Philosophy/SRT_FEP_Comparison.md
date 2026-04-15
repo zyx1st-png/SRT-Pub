@@ -3,16 +3,32 @@ id: SRT-PHIL-COMPARE-FEP
 type: comparison
 tags: [Philosophy, Comparison, MetaTheory, FEP, ActiveInference]
 status: draft_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-PHIL-COMPARE-META, SRT-CLIN-02, SRT-CONSTITUTION-7THESES]
 ---
 
 # SRT vs FEP：为什么自由能最小化还不足以构成现实与主体
+
+> **Bridge Layer Note**
+> 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+
+
+> **FEP / Active Inference 研究者 3 分钟入口**
+> 本文件的核心问题是：$d$-value 和 $\Psi_f$ 是否只是 FEP 中 preferred priors 和精度权重的重命名？
+> - **FEP 反推 SRT 的最强论证，以及 SRT 的当前开放缺口** → `Neuroscience/SRT_Clin_02_FEP.md`（领域压力节 DP-FEP-1）
+> - **四框架的系统比较，含 Ramstead 阵营反推** → `Philosophy/SRT_MetaTheory_Framework_Comparison.md`（§5.1）
+> - **本文件**：专注于 SRT-FEP 的形式推导对比，适合已熟悉 FEP 数学的读者
 
 > **定位**：
 > 这不是文献综述，也不是对 FEP 的敌对性驳斥。
 > 它是一篇元理论比较稿，目标是回答一个更核心的问题：
 >
 > **如果自由能原理已经能够统一感知、行动与学习，SRT 还多做了什么？**
+>
+> **Bridge 注记**：
+> 本文属于 `Bridge` 层。其任务是比较、翻译与收紧分歧，而不是宣称 SRT 已在经验上取代 FEP。
 
 ---
 
@@ -31,7 +47,7 @@ dependency: [SRT-PHIL-COMPARE-META, SRT-CLIN-02, SRT-CONSTITUTION-7THESES]
 - **FEP 解释了选择动力学的重要局部**
 - **SRT 试图把这套动力学放进更高阶的存在-显现-收敛-支付架构中**
 
-如果这个判断成立，那么 SRT 不是 FEP 的竞争替代品，而是它的上位解释框架之一。
+如果这个判断成立，那么 SRT 更适合被读作 FEP 的候选上位解释框架之一，而不是它的已胜出替代品。
 
 ---
 

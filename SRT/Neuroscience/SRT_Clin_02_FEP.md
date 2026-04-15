@@ -3,6 +3,9 @@ id: SRT-CLIN-02
 type: theory
 tags: [Friston, Free Energy, Autopoiesis, Biosemiotics, Hybrid]
 status: axiomatic_hybrid_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
@@ -11,6 +14,9 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal FEP Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
+>
+> **Bridge Layer Note**
+> This file is a `Bridge`-layer reinterpretation of FEP / Active Inference / Autopoiesis within SRT. The formal labels in Part A are primarily bridge claims and internal reorganizations unless they are separately supported by direct empirical tests.
 
 ---
 
@@ -126,6 +132,17 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 
 ---
 
+### T-FEP-1b: Precision-Insufficiency Theorem
+定义 \(\boldsymbol{\Pi}\) 为预测误差的精度加权张量。则：
+\[
+\big(\boldsymbol{\Pi}_A \approx \boldsymbol{\Pi}_B\big)\land\big(\mathbb{E}[F]_A \approx \mathbb{E}[F]_B\big)\not\Rightarrow\big(d_A \approx d_B \land \Psi_{f,A} \approx \Psi_{f,B}\big)
+\]
+* **Implication（中文）**：精度参数能够刻画系统如何分配信度、压低误差、更新模型，却不能单独决定“什么对系统真的攸关”以及“错误是否带来可支付摩擦”。换句话说，precision 解释的是**哪种误差更被相信**，而不是**哪种误差会伤到主体**。
+* **与 FEP 的边界**：在 SRT 中，\(\boldsymbol{\Pi}\) 最多是 \(d/\Psi_f\) 的局部调制器，而不是其充分定义。两个系统可以拥有近似相同的精度结构，却因为真实风险耦合不同而表现出完全不同的长期关切持续性、奖励撤除后的行为保持与恢复半衰期。
+* **最小判别后果**：若在匹配 \(\boldsymbol{\Pi}\) 与任务难度的条件下，系统间的奖励撤除后关切保持、跨任务一致性与恢复动力学仍不分离，则 `precision 不穷尽 d/Ψ_f` 的主张应被降级；反之，只要这些结果稳定分离，precision-only 解释就不够。
+
+---
+
 ### C-FEP-1: Irreversibility Corollary
 当存在不可逆风险 \(\partial\Omega\) 时：
 \[
@@ -168,6 +185,66 @@ d_{expansion} \propto \text{Uncertainty}_{vital} - \text{Uncertainty}_{epistemic
 
 ---
 
+## 领域压力与接口边界（Domain Pressure & Interface Boundaries）
+
+> **本节功能**：站在 FEP / Active Inference 社群内部，评估 SRT 在这个框架下的候选重读在哪里有增量、在哪里尚未完成、在哪里还有真实的开放张力。
+
+> **神经科学家 3 分钟入口**
+> 如果你使用 FEP / Active Inference 框架，本文件的核心主张是：FEP 的精度加权更新（precision-weighted prediction error）不能单独区分**具身利他**（由不可逆物理风险驱动）与**模拟利他**（由偏好先验编码）。SRT 引入 $d/\Psi_f$ 参数对的目的，是揭示这个结构性盲区，而不是否定 FEP 的预测编码机制。
+> 直接跳到 **DP-FEP-1** 看最强张力点，跳到**出口**看下一步。
+
+---
+
+### 有效域 / 失效域
+
+| 主张 | 有效条件 | 退化/失效条件 |
+|:----|:--------|:------------|
+| T-FEP-1：FEP 不充分性 | 在匹配 $\boldsymbol{\Pi}$ 与任务难度后，真实赌注条件与模拟赌注条件的长期行为仍分离 | 若三种条件（真实风险/无风险/模拟风险）的长期 $\hat{d}_{min}$ 轨迹收敛，则"不可逆赌注不可还原"应降级为"工程性偏好设置"（见 `Governance/SRT_LAB_HYPOTHESES.md` H-Stake-01 降级触发） |
+| $\Psi_f \propto \varepsilon_{pred}$ 映射（Ax-NEURO-4b） | 作为候选的局部线性近似，在代谢与预测误差可同时测量的范围内 | 若 $\Psi_f$ 代理（代谢率）与预测误差代理（MMN 振幅）跨个体无相关，则该映射在可测层面为空 |
+| FEP 是"候选重读对象"而非"被 SRT 超越的框架" | 始终 | 这是当前仓库的稳定口径（T-FEP-1 Tension-Rev-ExtT4）；任何把 SRT 写成"已胜出 FEP"的表述都超出当前 bridge 强度 |
+
+---
+
+### DP-FEP-1：FEP 的参数化完备性反驳
+
+**挑战来源**：Friston 阵营可以合理论证：SRT 的 $d$-value 不过是把他者效用写入 FEP 的 generative model 的偏好先验（preferred priors）。只要把利他偏好放进 prior，FEP 的 active inference 就能产生类似的利他行为——不需要引入一个独立的"本体论赌注"概念。
+
+**SRT 当前最稳的回应**（来自 T-FEP-1 Tension-Rev-ExtT4，此处为摘要）：
+- FEP 框架内，$d$-analog 是 generative model 的可调参数，可被优化/削弱为零，不影响系统的物理完整性
+- SRT 的 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 要求与不可逆物理风险（$\partial\Omega$）耦合才能稳定——这不是参数选择，是本体论约束
+- 判别后果：两个 $\boldsymbol{\Pi}$ 匹配的系统，若赌注结构不同，其奖励撤除后的关切保持和恢复半衰期应显著分离（见 H-Stake-01 / H-dPsi-01）
+
+**尚未完成的工作**：
+- 上述论证目前主要是概念层的。"$d$ 与 $\partial\Omega$ 的耦合稳定性"与"prior 写入的 $d$-analog 的衰减率"之间的定量预测，尚未写成可在现有 active inference 模拟中直接检验的形式
+- 换句话说：SRT 的反驳是结构上合理的，但其**操作性判据**还需要进一步形式化才能对 FEP 社群构成有效压力
+
+---
+
+### DP-FEP-2：FEP 的解释范围与 SRT 的定位差异
+
+**挑战的细化版本**：FEP 在原则上是一个涵盖感知、行动、学习、自组织的统一框架。Active inference 甚至试图解释社会行为和文化演化。如果 FEP 的解释范围已经足够宽，SRT 的"候选重读"究竟在哪些维度上比 FEP 更有效？
+
+**SRT 当前的定位**：
+- SRT 不是在同一层次与 FEP 竞争"谁能解释更多现象"
+- SRT 的主张是：FEP 在本体论上预设了"已有边界的系统最小化自由能"——它从具身系统出发，不解释**为什么有具身**
+- SRT 的 L₀→L₁ 机制试图回答更早的问题：什么使一个边界得以成立（Partial Closure / N_crit 接口）
+- 这两个框架的分工应该是：FEP 处理具身后的动力学，SRT 处理具身本身的本体论条件
+
+**诚实标注**：这个分工目前更多是口头主张，而非两个形式系统之间已推导出的层级关系。若未来 FEP 进一步发展出自创生边界的生成机制，当前分工可能需要重新评估。
+
+---
+
+### 出口
+
+| 你的目标 | 下一步 |
+|:--------|:------|
+| 想看 FEP vs SRT 的完整形式比较 | → `Philosophy/SRT_FEP_Comparison.md` |
+| 想看 d / Ψ_f 的 Lab 层实验赌注 | → `Governance/SRT_LAB_HYPOTHESES.md`（H-Stake-01、H-dPsi-01） |
+| 想看 d / Ψ_f 的测量代理规范 | → `SRT_EXP_MEASURE_MAP.md` |
+| 想了解 Partial Closure / 具身起源 | → `Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md` |
+
+---
+
 
 # Part B: Original Theoretical Discourse (Context)
 
@@ -202,15 +279,15 @@ Maturana & Varela 认为生命的本质是“自我生产”，而非自由能�
 # 3 SRT 的差异点: d 值扩展与本体论重构
 
 ## 3.1 自由能的利他扩展 (The Altruistic Extension)
-SRT 在 Part A (Ax-FEP-2) 中提出，**Friston 框架是 SRT 在 $d=0$ 时的特例**。
+SRT 在 Part A (Ax-FEP-2) 中提出，**在 SRT 的 Bridge 解读中，Friston 框架可被读作 $d=0$ 时的局部特例**。
 对于 $d > 0$ 的意识系统，自由能函数被**本体论扩展**了:
 
-$$ F_{SRT} = F_{Friston} - d \cdot U_{others} $$
+$$ F_{SRT}^{(var)} = F_{var} - d \cdot U_{others} $$
 
-这优雅地解决了“暗室问题”：
+这提供了一个对“暗室问题”的候选重写：
 - 对于 $d=0$ 的生物（细菌），暗室确实是最优解（如果那里有食物）。
-- 对于 $d>0$ 的人类，躲进暗室意味着与他者断联 ($U_{others} \to 0$ 或负值)，导致扩展自由能 $F_{SRT}$ **剧烈上升**。
-- **结论**: 我们走出暗室，不是为了寻找光，而是为了寻找连接。这是热力学必然。
+- 对于 $d>0$ 的人类，躲进暗室意味着与他者断联 ($U_{others} \to 0$ 或负值)，导致扩展自由能 \(F_{SRT}^{(var)}\) **剧烈上升**。
+- **结论**: 我们走出暗室，不只是为了降低信息不确定性，而是因为在 `d>0` 条件下，断联本身会把系统推向更高的 payable friction 区间。
 
 > **Tension-Rev-ExtT4 (SRT 独立性的判别实验设计)**
 >
@@ -236,7 +313,7 @@ SRT 采用 Ax-FEP-4 中定义的**精度加权 (Precision Weighting)** 动力学
 - **精神分裂症**: 先验精度过高 ($\pi_{prior} \uparrow$)。以至于患者忽略感官输入，将内部幻觉强加于现实。
 - **自闭症**: 感觉精度过高 ($\pi_{sensory} \uparrow$)。由于无法忽略任何环境细节（树叶的摆动、风的声音），系统必须退缩以避免自由能过载。
 
-这种解释比传统神经递质假说具有更强的计算解释力。
+这种解释可被视为一种候选计算层读法，但并不自动取代传统神经递质或多因素病理模型。
 
 ---
 

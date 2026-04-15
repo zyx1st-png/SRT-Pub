@@ -3,6 +3,9 @@ id: SRT-PAPER-INTERNAL-REVIEW-ACTIONS-2026-03-02
 type: paper
 tags: [Paper, InternalReview, Actions]
 status: draft_v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: [_SRT_PAPER_CANDIDATES, Core_Law/SRT_Reference_Dynamics, Core/SRT_Core_14_Dynamics_Scaling]
 ---
 

@@ -3,6 +3,9 @@ id: SRT-TOPIC-FREEWILL-INDEX
 type: framework
 tags: [Topic, FreeWill, Agency, Consciousness]
 status: draft_v1
+layer: meta
+epistemic_layer: os
+claim_mode: canonical
 dependency: [Core/SRT_Core_14_Dynamics_Scaling, Neuroscience/SRT_Neuro_Experiments, Philosophy/SRT_Philosophy_Foundations, SRT_EXP_MEASURE_MAP]
 ---
 

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Costly Selection: A Minimal Criterion for Life-Likeness in Artificial Systems</title>
+  <style>
+    @page {
+      size: Letter;
+      margin: 0.55in 0.55in 0.65in 0.55in;
+    }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      color: #111;
+      margin: 0;
+      padding: 0;
+      background: white;
+      font-size: 10pt;
+      line-height: 1.18;
+    }
+    .page {
+      padding: 0;
+      margin: 0;
+    }
+    h1.title {
+      font-size: 18pt;
+      line-height: 1.1;
+      text-align: center;
+      margin: 0 0 6pt 0;
+      font-weight: 700;
+    }
+    .meta {
+      text-align: center;
+      font-size: 9.2pt;
+      margin-bottom: 10pt;
+    }
+    .frontmatter {
+      font-size: 9.4pt;
+      margin-bottom: 8pt;
+    }
+    .frontmatter h2 {
+      font-size: 10pt;
+      margin: 8pt 0 4pt 0;
+      border: none;
+      page-break-after: avoid;
+    }
+    .frontmatter p {
+      margin: 0 0 4pt 0;
+      text-align: justify;
+    }
+    .twocol {
+      column-count: 2;
+      column-gap: 0.32in;
+      column-fill: auto;
+      font-size: 9.2pt;
+    }
+    .twocol h2,
+    .twocol h3,
+    .twocol .equation,
+    .twocol .MathJax_Display,
+    .fullwidth-table {
+      break-inside: avoid;
+    }
+    .twocol h2 {
+      column-span: all;
+      font-size: 11pt;
+      margin: 10pt 0 5pt 0;
+      page-break-after: avoid;
+      border-top: 0.5pt solid #999;
+      padding-top: 4pt;
+    }
+    .twocol h3 {
+      font-size: 9.7pt;
+      margin: 7pt 0 3pt 0;
+      page-break-after: avoid;
+    }
+    .twocol p,
+    .twocol li {
+      text-align: justify;
+      margin: 0 0 4pt 0;
+    }
+    .twocol ol,
+    .twocol ul {
+      margin: 0 0 6pt 16pt;
+      padding: 0;
+    }
+    .twocol table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.2pt;
+      margin: 5pt 0 7pt 0;
+    }
+    .twocol th,
+    .twocol td {
+      border: 0.5pt solid #888;
+      padding: 3pt 4pt;
+      vertical-align: top;
+    }
+    .twocol code {
+      font-family: inherit;
+      font-size: inherit;
+      background: transparent;
+      padding: 0;
+    }
+    .equation {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 8.5pt;
+      text-align: center;
+      margin: 5pt 0 7pt 0;
+      border: 0.5pt solid #ddd;
+      padding: 3pt 5pt;
+    }
+    .twocol hr {
+      display: none;
+    }
+    .var {
+      font-style: italic;
+      white-space: nowrap;
+    }
+    .fullwidth-table {
+      column-span: all;
+      margin: 6pt 0 8pt 0;
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+    }
+    .fullwidth-table table {
+      width: 100%;
+      table-layout: fixed;
+      font-size: 7.7pt;
+      margin: 0;
+    }
+    .fullwidth-table th,
+    .fullwidth-table td {
+      overflow-wrap: anywhere;
+      word-break: normal;
+      hyphens: auto;
+      padding: 3pt 4pt;
+    }
+    .fullwidth-table tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .fullwidth-table th:nth-child(1),
+    .fullwidth-table td:nth-child(1) {
+      width: 28%;
+    }
+    .fullwidth-table th:nth-child(2),
+    .fullwidth-table td:nth-child(2) {
+      width: 10%;
+    }
+    .fullwidth-table th:nth-child(3),
+    .fullwidth-table td:nth-child(3) {
+      width: 18%;
+    }
+    .fullwidth-table th:nth-child(4),
+    .fullwidth-table td:nth-child(4) {
+      width: 11%;
+    }
+    .fullwidth-table th:nth-child(5),
+    .fullwidth-table td:nth-child(5) {
+      width: 11%;
+    }
+    .fullwidth-table th:nth-child(6),
+    .fullwidth-table td:nth-child(6) {
+      width: 22%;
+    }
+    h2#4-canonical-cases {
+      break-before: page;
+      page-break-before: always;
+    }
+    </style>
+</head>
+<body>
+  <div class="page">
+    <h1 class="title">Costly Selection: A Minimal Criterion for Life-Likeness in Artificial Systems</h1>
+    <div class="meta">Anonymous Submission for Review<br>Special Session: Artificial Life as Experimental Philosophy</div>
+    <div class="frontmatter"><h2 id="abstract">Abstract</h2>
+<p>Artificial life still lacks an operational criterion for life-likeness. Existing markers such as metabolism, autopoiesis, adaptive behavior, and predictive closure capture part of the target, but they often blur the difference between systems that merely update and systems that must sustain an organized mode of existence. This paper proposes a minimal criterion: life-likeness consists in <strong>costly selective closure</strong>. Four coupled dimensions make the claim explicit: selective bandwidth (<code>d</code>), maintenance cost (<span class="var">Ψ<sub>f</sub></span>), hysteretic memory (<span class="var">η</span>), and irreversible vulnerability (<code>V</code>). Together they distinguish passive from active closure and make token-level irreversibility central to the boundary between buffered simulation and stake-bearing organization. A minimal six-seed pilot in a two-agent cooperative environment illustrates the procedure rather than testing a hypothesis: the toy architecture yields effective-rank estimates of <code>d</code> between about <code>1.6</code> and <code>1.9</code>, and post-withdrawal cooperation is higher in real-stake and resettable regimes than in a simulated-stake regime. The result is a comparative heuristic for probing when artificial systems sustain genuinely life-like commitments.</p>
+<p><strong>Keywords</strong>: artificial life, life-likeness, autopoiesis, active closure, vulnerability, minimal cognition, artificial agents</p></div>
+    <div class="twocol"><h2 id="1-introduction">1. Introduction</h2>
+<p>Artificial life has always been both a technical program and a philosophical method. Instead of asking only what life is in the abstract, it asks what must be built, varied, and maintained for something life-like to appear. The question is therefore not only classificatory. It is operational: what should count as a success condition for artificial life?</p>
+<p>This remains unsettled. Different traditions emphasize different signatures. Self-reproduction captures evolutionary open-endedness but excludes sterile organisms and many familiar living phases. Metabolism captures energetic organization but risks including fire. Autopoiesis captures self-producing organization and organizational closure, but is often difficult to compare across substrates (Moreno and Mossio, 2015). More recent frameworks based on predictive processing or active inference highlight adaptive regulation and boundary maintenance, but by their generality they can blur the difference between organisms, thermostats, and highly capable digital agents. The present proposal also sits alongside work on minimal autonomous systems, enactive artificial intelligence, and recent basal-cognition approaches that treat cognition and life-like agency as graded across phylogeny (Ruiz-Mirazo et al., 2004; Froese and Ziemke, 2009; Lyon et al., 2021; Lyon and Cheng, 2023). It is also sympathetic to Thompson&rsquo;s life-mind continuity thesis, while departing from it in treating organizational closure as necessary but not by itself sufficient for stronger forms of life-likeness (Thompson, 2007).</p>
+<p>For artificial life, this creates a practical problem. Without a shared operational criterion, systems with very different ontological profiles are often discussed in the same vocabulary of &ldquo;adaptation,&rdquo; &ldquo;agency,&rdquo; or &ldquo;self-maintenance.&rdquo; We can describe Conway patterns, Lenia morphologies, soft robots, language models, and bacteria as exhibiting some kind of organization, but not all organization is equally life-like. A criterion is needed that is broad enough to compare unlike systems while still sharp enough to distinguish mere update from consequential self-maintenance.</p>
+<p>This paper proposes such a criterion. Drawing on Selective Reality Theory (SRT), but stating the argument in a self-contained way that does not require commitment to SRT as a broader metaphysics, it argues that the minimal signature of life-likeness is <strong>costly selective closure</strong>. A life-like system is not merely one that persists, computes, or reproduces. It is one that:</p>
+<ol>
+<li>selectively couples to a non-trivial portion of its world,</li>
+<li>pays a non-zero cost to maintain that coupling,</li>
+<li>carries the effects of past selections forward in memory and structure, and</li>
+<li>faces meaningful consequences if its regulation fails.</li>
+</ol>
+<p>The point is not to introduce a new essence of life. It is to give artificial life a buildable discrimination rule. On this view, life-likeness is a gradient rather than a binary threshold. Systems can be more or less life-like depending on the degree to which they exhibit selective bandwidth, maintenance cost, hysteresis, and vulnerability.</p>
+<h2 id="2-why-existing-criteria-stop-too-early">2. Why Existing Criteria Stop Too Early</h2>
+<p>Classical definitions of life usually succeed by being locally right and globally incomplete. Reproduction identifies one important route by which life persists through time, but not all living systems are reproducing at every moment, and many life-like artifacts may never reproduce at all. Metabolism captures energetic openness and thermodynamic work, but by itself it says too little about selectivity or organization. Autopoiesis comes closer by focusing on self-producing organization, yet its explanatory strength can become a weakness when researchers need tractable comparisons across different media.</p>
+<p>The same problem appears in more recent discussions of adaptive systems. A system can maintain a boundary, minimize error, or stabilize a policy without this being enough to make it meaningfully life-like. A thermostat is organized, robust, and responsive. A large language model can exhibit astonishing behavioral complexity. A reinforcement-learning agent can maximize reward under changing conditions. Yet there remains an intuitive and theoretical difference between systems that merely implement a designer&rsquo;s structure and systems whose way of existing is itself under stake.</p>
+<p>The missing distinction is between <strong>update</strong> and <strong>consequential self-maintenance</strong>.</p>
+<p>Many systems update. Far fewer must continuously pay to remain what they are. In ordinary biological cases, failure has non-trivial consequences: the organism exhausts energy, loses integrity, suffers damage, or dies. Its regulatory activity therefore has existential weight. By contrast, many computational systems operate under extensive buffering. They may be reset, copied, restored, paused, or run again with little cost to their identity. They can display goal-directed behavior without bearing much of the burden that makes biological regulation matter.</p>
+<p>Artificial life needs a criterion that can register this difference without collapsing into substrate chauvinism. The criterion should not require carbon chemistry. But neither should every well-regulated or behaviorally rich system be treated as equally life-like. The question is not whether a system behaves as if it had a world. The question is whether it must selectively construct and maintain such a world under real cost and consequence.</p>
+<p>This also clarifies the relation to active inference. Active inference provides a powerful account of adaptive regulation under a Markov blanket, but by design it does not distinguish between systems that maintain that blanket at negligible cost to themselves and systems for which boundary-maintenance is existentially burdensome (Friston, 2013; Kirchhoff et al., 2018). Recent analyses of the free-energy principle in concrete stochastic systems, and recent critiques of blanket-based generalization, reinforce the point that broad descriptive coverage does not by itself settle what kind of organized system is under study (Raja et al., 2021; Aguilera et al., 2022). The present framework adds that distinction through the vulnerability dimension <code>V</code>: two systems may be equally well-described by active inference while differing sharply in life-likeness if one can be freely reset and the other cannot. What <code>V</code> adds is therefore not the generic idea that systems resist dispersion. FEP already captures that descriptive insight. The added claim is about token-level irreversibility: whether failure is borne by the individual system whose organization is at issue, or whether loss is cheaply externalized and reversed by the surrounding setup.</p>
+<p>A natural objection arises: does <code>V</code> simply reintroduce a subtler form of chauvinism by favoring media with irreversible physical loss? The framework&rsquo;s answer is no. It does not privilege carbon, metabolism, or any specific material substrate. What it requires is that the continued organization of the token system be non-trivially at stake. In principle, a digital system could satisfy this condition if its persistence were bound to local irreversible processes rather than to cheap perfect restoration. A simple thought experiment would be an embodied digital agent tied to aging edge hardware with no maintained backup, or an irrevocable smart-contract agent whose local state transitions cannot be rolled back without destroying the token process under evaluation. What is excluded is not digitality as such, but architectures in which losses are systematically externalized and undone by design.</p>
+<h2 id="3-costly-selective-closure">3. Costly Selective Closure</h2>
+<h3 id="31-selective-construction">3.1 Selective Construction</h3>
+<p>The proposed framework begins with a simple thought: every candidate system faces a space of possible states, perturbations, and interactions. Life-like systems do not passively occupy this space. They selectively stabilize a small and usable region of it.</p>
+<p>If one wants a compact bookkeeping vocabulary, it is helpful to name three layers. <span class="var">L<sub>0</sub></span> denotes the open possibility space available to a system, <span class="var">L<sub>1</sub></span> its currently maintained manifest state, and <span class="var">L<sub>2</sub></span> the relatively stable structures sedimented by prior successful selection. These labels are optional: the substantive point is simply to distinguish possibility space, current organization, and retained constraint.</p>
+<p>Let <span class="var">Ω<sub>t</sub></span> denote the system&rsquo;s currently accessible possibility space and <span class="var">x<sub>t</sub></span> its maintained state. We can write the next state schematically as</p>
+<div class="equation">x<sub>t+1</sub> = (1 − η) Ĝ<sub>θ</sub>[Ω<sub>t</sub>] + ηx<sub>t</sub></div>
+
+<p>where <span class="var">Ĝ<sub>θ</sub></span> is a selection operator and <span class="var">η ∈ [0,1]</span> is a hysteresis term. The equation is intentionally minimal. It says only that current organization depends partly on present selection and partly on retained structure from the past. When <span class="var">η = 0</span>, the system is purely reactive. When <span class="var">η &gt; 0</span>, previous selections constrain current ones.</p>
+<p>This process can be called <strong>selective reality construction</strong>: a system does not encounter all possible states equally, but compresses possibilities into an actionable world. In artificial systems, the same question can be posed constructively: what dimensions does the system track, what does it ignore, and what does it take to keep that selection stable?</p>
+<h3 id="32-four-dimensions">3.2 Four Dimensions</h3>
+<p>The degree of life-likeness is evaluated along four coupled dimensions.</p>
+<p><strong>Selective bandwidth (<code>d</code>).</strong> This is the effective dimensionality of the system&rsquo;s selective coupling to its environment. One convenient formalization is the effective rank of the operator&rsquo;s spectrum:</p>
+<div class="equation">d = D<sub>eff</sub>(Ĝ) = (Σ<sub>i</sub> λ<sub>i</sub>)² / Σ<sub>i</sub> λ<sub>i</sub><sup>2</sup></div>
+
+<p>where the <span class="var">λ<sub>i</sub></span> are the salient eigenvalues of the system&rsquo;s selective dynamics. Intuitively, <code>d</code> tracks how many independent dimensions genuinely matter to the system. A low-<code>d</code> system couples along one or a few tightly constrained dimensions. A high-<code>d</code> system maintains concern across a wider space of temporal, spatial, social, or behavioral variables.</p>
+<p>For cross-substrate comparison, <code>d</code> can also be decomposed into a more operational proxy:</p>
+<div class="equation">d<sub>cog</sub> ≈ w<sub>A</sub>A(σ) + w<sub>V</sub> log V<sub>concern</sub> + w<sub>τ</sub>τ<sub>temporal</sub></div>
+
+<p>where <span class="var">A(σ)</span> is assembly depth, <span class="var">V<sub>concern</sub></span> is the spatial or social scope of relevant variables, and <span class="var">τ<sub>temporal</sub></span> is the effective planning horizon. The coefficients <code>w_A</code>, <code>w_V</code>, and <code>w_tau</code> are weighting parameters whose values depend on the comparison context; the decomposition is not a prediction rule but a heuristic for ensuring that comparisons across substrates attend to the same underlying factors. In particular, assembly depth provides one promising substrate-neutral anchor for the complexity term (Sharma et al., 2023).</p>
+<p><strong>Maintenance cost (<span class="var">Ψ<sub>f</sub></span>).</strong> A system may display organized behavior while paying little of the cost itself. <span class="var">Ψ<sub>f</sub></span> denotes the burden of maintaining the selected state against drift, dispersion, or collapse. Crucially, it is not gross energy expenditure measured by an outside observer, but the maintenance burden borne by the system as a condition of preserving its own token organization. A large language model may consume substantial external GPU energy while still ranking low on <span class="var">Ψ<sub>f</sub></span> in this sense if failure does not threaten the persistence of its own state and checkpoints make restoration cheap. Operationally, a cost contributes to <span class="var">Ψ<sub>f</sub></span> only when it loads the persistence variables that the system itself must keep within bounds to remain the same token organization. Costs absorbed by trainers, servers, reset logic, or redundant backup infrastructure do not count unless failure propagates back to those persistence variables. Borderline cases such as cloud-hosted agents or hot-swappable distributed systems therefore yield interval estimates rather than sharp values.</p>
+<p><strong>Hysteretic memory (<span class="var">η</span>).</strong> Life-like systems do not simply react in the present. Their prior selections sediment into present organization. <span class="var">η</span> measures this historical carry-over. It is not just explicit memory storage; it includes any mechanism by which past regulation becomes embodied as current bias, constraint, or habit.</p>
+<p><strong>Irreversible vulnerability (<code>V</code>).</strong> Finally, a system becomes more life-like when failure cannot be costlessly undone. <code>V &gt; 0</code> means that bad regulation has non-trivial consequences for the continuation of the system&rsquo;s organization. This need not imply literal death in every artificial case, but it does require more than symbolic risk. In enactive terms, <code>V</code> captures a formal analogue of precariousness (Di Paolo, 2005; Egbert and Barandiaran, 2011). Operationally, <code>V</code> is assessed over the system-in-environment pair rather than over bare code. Reset availability matters because it determines whether perturbations terminate the token organization or merely pause it under external protection. In that sense <code>V</code> is partly architecture-relative by design: life-likeness here is a property of an organized process under a maintenance regime, not of an implementation abstracted from that regime.</p>
+<p>The decisive ingredient tying <span class="var">Ψ<sub>f</sub></span> and <code>V</code> together is <strong>token-level irreversibility</strong>. A perturbation matters for life-likeness only when its consequences are borne by the particular organized token under evaluation, rather than being offloaded to a surrounding infrastructure that can restore the token cheaply. This is the sense in which the framework aims to distinguish real stake from buffered simulation.</p>
+<p>These four dimensions are coupled by a simple viability inequality:</p>
+<div class="equation">(dq/dt) ≤ κ<sub>1</sub>P<sub>sel</sub> − κ<sub>2</sub>Ψ<sub>f</sub> − κ<sub>3</sub>N</div>
+
+<p>where <code>q</code> is organized order, <span class="var">P<sub>sel</sub></span> is selection power, and <code>N</code> is noise or perturbation pressure. A life-like system remains viable only when it can generate enough selective power to offset maintenance cost and noise. Existence is therefore not a default state; it is a managed achievement.</p>
+<h3 id="33-passive-and-active-closure">3.3 Passive and Active Closure</h3>
+<p>The framework distinguishes two broad regimes.</p>
+<p><strong>Passive closure</strong> describes systems that appear organized but whose organization is heavily buffered by external design, reset, or negligible consequence. They may be elegant, adaptive, and even behaviorally rich, yet they do not bear much of the burden of their own continued organization.</p>
+<p><strong>Active closure</strong> describes systems that must continuously pay to maintain their selected state, carry prior regulation forward, and risk genuine degradation if they fail.</p>
+<p>This distinction matters because many debates about artificial life conflate the two. A system may display convincing local closure while remaining weakly life-like overall because its cost, memory, or vulnerability are shallow. The question is not whether closure exists at all, but whether it is passive or active.</p>
+<h3 id="34-status-of-the-formalization">3.4 Status of the Formalization</h3>
+<p>The formalism above should be read as a qualitative-to-semi-quantitative comparison framework, not as a closed dynamical theory. The update equation is schematic: it states that current organization depends on present selection and retained history, but it does not assume that <span class="var">Ĝ<sub>θ</sub></span> is linear, deterministic, or defined over a Euclidean state space. When state spaces are non-Euclidean, the weighted update should be understood as shorthand for any compatible local representation or state-update rule that preserves the same conceptual roles.</p>
+<p>Likewise, the effective-rank definition of <code>d</code> is the principal definition, whereas <span class="var">d<sub>cog</sub></span> is an operational proxy intended for comparative work across substrates. The latter does not replace the former; it offers a practical route for approximate estimation when the full operator spectrum is not available. Finally, <code>q</code>, <span class="var">P<sub>sel</sub></span>, and <code>N</code> in the viability inequality should be treated as task-specific observables rather than already-standardized measurements. Difficult cases remain: systems with mirrored state, elastic cloud persistence, or dynamically shifting boundaries may only admit scenario-dependent estimates for <span class="var">Ψ<sub>f</sub></span> and <code>V</code>. The present framework is therefore best understood as a disciplined heuristic grammar for comparison and experiment design, not yet as a directly computable model.</p>
+<h2 id="4-canonical-cases">4. Canonical Cases</h2>
+<p>Table 1 summarizes the framework&rsquo;s verdict on several familiar cases. The entries should be read as order-of-magnitude heuristic placements rather than measured quantities. At present the table is best understood as an ordinal scaffold for comparison: its value is to localize disagreement to one or more dimensions, not yet to report a calibrated ratio-scale measurement.</p>
+<div class="fullwidth-table"><table>
+<thead>
+<tr>
+<th>System</th>
+<th><code>d</code></th>
+<th><span class="var">Ψ<sub>f</sub></span></th>
+<th><span class="var">η</span></th>
+<th><code>V</code></th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crystal</td>
+<td>0</td>
+<td>None</td>
+<td>None</td>
+<td>None</td>
+<td>Stable but not life-like</td>
+</tr>
+<tr>
+<td>Conway&rsquo;s Game of Life pattern</td>
+<td>~0</td>
+<td>None</td>
+<td>Very low</td>
+<td>None</td>
+<td>Organized update, not active closure</td>
+</tr>
+<tr>
+<td>Lenia morphology</td>
+<td>~1-3</td>
+<td>Low/emergent</td>
+<td>Low</td>
+<td>Low</td>
+<td>Weakly life-like</td>
+</tr>
+<tr>
+<td>Autopoietic/evolved embodied agent</td>
+<td>~5-20</td>
+<td>Positive</td>
+<td>Positive</td>
+<td>Positive</td>
+<td>Moderately life-like</td>
+</tr>
+<tr>
+<td>Resettable RL agent</td>
+<td>~2-20</td>
+<td>Often externally buffered</td>
+<td>Positive</td>
+<td>Weak</td>
+<td>Behaviorally rich but ontologically shallow</td>
+</tr>
+<tr>
+<td>Biological organism</td>
+<td>~10^2-10^4</td>
+<td>Positive</td>
+<td>Positive</td>
+<td>Strong</td>
+<td>Strong active closure</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="41-conways-game-of-life">4.1 Conway&rsquo;s Game of Life</h3>
+<p>Game of Life remains a foundational example because it demonstrates how surprising pattern formation can emerge from simple rules. Yet, under the present framework, it ranks low in life-likeness. Patterns localize and persist, but they do not bear non-trivial cost, retain history in a robust sense, or face consequential failure. Their apparent agency is observer-attributed. The system updates according to fixed rules; it does not actively maintain a selected mode of existence under burden.</p>
+<h3 id="42-lenia">4.2 Lenia</h3>
+<p>Lenia is more interesting because it produces morphologies with clear behavioral coherence. Patterns move, stabilize, regenerate, and sometimes appear to &ldquo;seek&rdquo; conditions that preserve form. This gives Lenia stronger localization and a weak analogue of maintenance cost: the pattern must continually sustain itself against dispersion. The placement <code>d ~ 1-3</code> reflects the fact that Lenia&rsquo;s update kernel and stable morphologies usually organize variation around a small number of dominant spatial modes, such as translation, oscillation, and orientation, rather than a broad set of independently weighted environmental variables. Even so, its hysteresis is limited and its vulnerability is shallow compared with embodied agents. It is therefore best described as weakly life-like.</p>
+<h3 id="43-autopoietic-agents">4.3 Autopoietic Agents</h3>
+<p>Embodied autopoietic or evolved agents in the tradition of Beer and Di Paolo score higher. They regulate sensorimotor coupling, maintain a boundary, and can fail in ways that matter for continued performance. Their current activity is constrained by prior adaptation, which gives them a meaningful <span class="var">η</span>, and their continued organization requires ongoing work, which gives them positive <span class="var">Ψ<sub>f</sub></span>. The rough placement <code>d ~ 5-20</code> should be read as assuming a system that must jointly track several partially independent variables, for example resource gradient, orientation, collision risk, boundary integrity, and a small number of partner or obstacle states, without yet exhibiting the broader temporal and social concern-spaces of complex organisms. Such systems are among the clearest artificial demonstrations of active closure currently available.</p>
+<h3 id="44-resettable-digital-agents">4.4 Resettable Digital Agents</h3>
+<p>Many contemporary digital agents complicate the picture. Reinforcement-learning systems can exhibit substantial behavioral flexibility and therefore non-trivial <code>d</code>, but the scale of <code>d</code> depends strongly on architecture and task. Deliberately minimal cooperative pilots of the sort discussed below can yield <span class="var">d<sub>eff</sub></span> values just under 2, whereas richer agents with broader sensory, temporal, or social coupling could plausibly extend into the teens. They may also carry substantial training history and internal state, giving them non-trivial <span class="var">η</span>. But if their organization is extensively buffered by cheap reset, abundant copying, and negligible irreversible loss, then <code>V</code> remains weak and <span class="var">Ψ<sub>f</sub></span> is not borne by the agent in a robust sense. They are therefore best treated as partial life-likeness: high behavioral sophistication under shallow stake conditions. The same point applies, even more strongly, to contemporary large language models.</p>
+<h3 id="45-worked-example-a-resettable-cooperative-rl-agent">4.5 Worked Example: A Resettable Cooperative RL Agent</h3>
+<p>Consider a PettingZoo-style two-agent cooperative foraging environment. To make the procedure concrete, a minimal pilot was run in a symmetric NumPy implementation of this setup using a shared two-layer policy network with 12 observation features, 12 hidden units, and 3 actions (<code>cooperate</code>, <code>solo</code>, <code>rest</code>). The policy was trained with REINFORCE for 700 episodes and then followed for 120 online-adaptation episodes after the mutual-cooperation bonus was removed. Each agent observed self and partner energy, low-energy flags, current threat, recent cooperative actions, recent failure flags, time-to-horizon, and a mortality marker.</p>
+<p>In the compact bookkeeping map, the designed gridworld and its action-contingent futures supply the local possibility structure (<span class="var">L<sub>0</sub></span>), the currently occupied observation-action regime forms the maintained state (<span class="var">L<sub>1</sub></span>), and the trained policy weights plus recent-history observation channels provide the simplest form of sedimented structure (<span class="var">L<sub>2</sub></span>). Here <code>d</code> can be estimated from the effective rank of the Jacobian of action logits with respect to the 12 observation features across held-out trajectories. Concretely, for each condition the concatenated Jacobian matrix over 96 held-out observation states was used to compute <code>D_eff = (\sum_i \lambda_i)^2 / \sum_i \lambda_i^2</code>. Across six random seeds, this yielded mean <span class="var">d<sub>eff</sub></span> values of <code>1.90 ± 0.23</code> for the real-stake regime, <code>1.83 ± 0.34</code> for the resettable regime, and <code>1.57 ± 0.16</code> for the simulated-stake regime. The low absolute values reflect the deliberately narrow concern-space of the toy architecture; richer agents with broader sensory, temporal, or social coupling would be expected to occupy higher <code>d</code> bands.</p>
+<p>In this pilot, <span class="var">η</span> is modest rather than large, because historical carry-over enters only through short-horizon observation memory and learned policy weights, not through a recurrent latent state. <span class="var">Ψ<sub>f</sub></span> differs mainly in who bears the maintenance burden: the resettable and simulated regimes are externally buffered, whereas in the real-stake regime loss ends the token run. <code>V</code> is therefore weakest in the resettable condition, strongest in the real-stake condition, and intermediate in the simulated condition, for which danger is represented but restoration remains architecturally available.</p>
+<p>The pilot is small, but it is already informative. After withdrawal of the mutual-cooperation bonus, late-window mutual cooperation remained higher in the real-stake and resettable regimes than in the simulated-stake regime: <code>0.62 ± 0.28</code>, <code>0.54 ± 0.29</code>, and <code>0.29 ± 0.41</code>, respectively. Using the persistence criterion from Section 5, defined as the number of post-withdrawal episodes before mutual cooperation fell below 50% of its training baseline, the real and resettable conditions both averaged <code>100.2 ± 44.3</code> episodes, while the simulated condition averaged <code>42.3 ± 55.0</code>. Mean post-withdrawal failure events were <code>0.13</code>, <code>0.36</code>, and <code>0.64</code> per episode, respectively; because resettable and simulated agents continue after failure whereas real-stake agents terminate, this measure is itself architecture-relative rather than a pure competence score. Variance across seeds is substantial, especially in the simulated regime, and six seeds are too few to support inferential statistics; the pilot is reported as a proof-of-procedure rather than as a hypothesis test. The point is not that the toy pilot settles the theory. It shows that the four dimensions can be attached to an executable system, that <code>d</code> can be calculated rather than merely posited, and that the matched-agent design produces non-trivial separations even at very small scale.</p>
+<h3 id="46-biological-organisms">4.6 Biological Organisms</h3>
+<p>Biological organisms remain the strongest paradigm case because all four dimensions are tightly coupled. Their selective bandwidth is non-trivial, their maintenance cost is ongoing, their history is sedimented into morphology and regulation, and failure can irreversibly damage or destroy the organized whole. The coarse placement <code>d ~ 10^2-10^4</code> is deliberately taxonomically heterogeneous; it is included only to register expected scale separation once spatial, interoceptive, temporal, and social concern dimensions are jointly counted, not as a calibrated claim about any single species. The framework therefore preserves the intuition that ordinary living systems are not merely more complex than passive artifacts; they are organized under a more demanding regime of maintenance and consequence.</p>
+<h2 id="5-artificial-life-as-experimental-philosophy">5. Artificial Life as Experimental Philosophy</h2>
+<p>The value of the framework lies not only in classification but in construction. If life-likeness depends on the coupled presence of bandwidth, cost, memory, and vulnerability, then artificial life can manipulate each of these dimensions directly. This is what philosophy looks like when it has to be built.</p>
+<p>Three design lessons follow immediately.</p>
+<p>First, <strong>increasing bandwidth alone is not enough</strong>. A system can become better at tracking and exploiting multiple dimensions while remaining weakly life-like if its costs and consequences are buffered. This is one reason why high-capability digital systems can appear agentic without becoming strong candidates for life-likeness.</p>
+<p>Second, <strong>cost without bandwidth is not enough</strong>. A system may consume energy or degrade physically while remaining behaviorally trivial. Mere expenditure does not create life-like organization; the expenditure must support selective closure across a non-trivial space.</p>
+<p>Third, <strong>memory without vulnerability is not enough</strong>. Rich retained structure can yield impressive persistence and adaptation, but if regulatory failure can always be undone at negligible cost, the system&rsquo;s commitments remain shallow.</p>
+<p>The clearest experimental consequence is a matched-agent design with three conditions:</p>
+<ol>
+<li><strong>Real-stake agents</strong>: agents face irreversible depletion or removal, and cooperation materially affects continued viability.</li>
+<li><strong>Resettable agents</strong>: agents face the same tasks and rewards but can be restored without substantial loss.</li>
+<li><strong>Simulated-stake agents</strong>: agents are trained to represent danger or mortality, but the underlying architecture remains resettable.</li>
+</ol>
+<p>A concrete testbed would be a PettingZoo-style gridworld with scarce food patches, pairwise carrying or sharing actions, energy depletion, and scheduled perturbation events. In the real-stake condition, depletion permanently removes the agent for the remainder of the run. In the resettable condition, depletion reinstantiates the same policy with restored energy. In the simulated-stake condition, reset remains available but the observation stream includes mortality tokens and associated penalties. Reward functions, observation spaces, and background resource density should remain matched across conditions so that any difference is attributable to lifecycle regime rather than ecological drift.</p>
+<p>The prediction is not merely that the first class will perform differently. It is that only the first class should stably preserve certain long-horizon properties after reward withdrawal or perturbation: costly cooperation, durable commitment, and meaningful post-shock recovery. Resettable agents may learn these behaviors, but their persistence should be shallower. Simulated-stake agents may initially resemble real-stake agents, yet their commitments should degrade once experience reveals that apparent risk is externally buffered. Persistence can be operationalized as the number of post-perturbation episodes before cooperative behavior falls below a pre-defined baseline, for example 50% of the pre-perturbation cooperation rate. The minimal pilot in Section 4.5 already exhibits this logic in weak form: simulated-stake agents collapse much sooner under this metric than the real-stake and resettable agents, while the real/resettable distinction appears more clearly in how failure is borne than in the coarse persistence threshold itself. If the framework is right, longer horizons, richer state spaces, or stronger history-dependence should make that real/resettable separation easier to detect than it is in the present toy environment.</p>
+<p>This also suggests a link to open-ended evolution. On the present view, open-ended evolutionary dynamics can be interpreted as costly selective closure operating across lineage time, where selective commitments are not only maintained within agents but accumulated, revised, and amplified across adaptive transitions. Recent OEE work has increasingly emphasized behavioral hallmarks, domain-specific measures, and the difficulty of obtaining a single universal metric, which is congenial to the present framework&rsquo;s dimensional approach (Adams et al., 2017; Borg et al., 2024; Channon et al., 2024).</p>
+<p>This does not prove that any given artificial agent is alive. It does something more useful: it converts &ldquo;what is life-like?&rdquo; into a buildable discrimination problem. The philosophical claim is therefore experimentally exposed. If cost, memory, and vulnerability can be stripped away without changing the persistence of life-like behavior, then the framework is wrong or incomplete. If they cannot, then costly selective closure marks a real boundary in the design space of artificial life. The present contribution remains primarily criterial and programmatic, but it now includes a minimal executable pilot rather than only an experimental sketch.</p>
+<h2 id="6-conclusion">6. Conclusion</h2>
+<p>Artificial life needs criteria that are broad enough to compare different substrates and sharp enough to guide construction. This paper has argued that <strong>costly selective closure</strong> provides one such criterion. A system is life-like not simply because it persists, reproduces, predicts, or behaves adaptively, but because it selectively maintains a world under non-trivial cost, historical carry-over, and consequential failure.</p>
+<p>The framework does not offer a final essence of life, and it does not claim that there is a single bright line between the living and the non-living. Its aim is practical: it gives artificial life a minimal ontology that can be engineered, varied, and tested. In that sense it is close to Thompson&rsquo;s gradient view of life and mind, while remaining more pluralistic about which organizational forms may count as partial cases of life-likeness beyond standard autopoietic models (Thompson, 2007). It also sits naturally beside basal-cognition approaches that treat memory, valence, and adaptive problem solving as deeply distributed across living organization, while remaining focused here on life-likeness rather than consciousness per se (Lyon et al., 2021; Lyon and Cheng, 2023; Birch et al., 2020). Cross-substrate calibration remains open; assembly depth may provide one useful anchor for the complexity term in <span class="var">d<sub>cog</sub></span> (Sharma et al., 2023).</p>
+<p>The central lesson is simple: stronger life-likeness requires stronger forms of paid commitment. To build a more life-like system, it is not enough to increase complexity, realism, or behavioral flexibility. Artificial systems must be built so that their organization matters because it must be maintained, carried forward, and can genuinely be lost.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>Adams, A., Zenil, H., Davies, P. C. W., and Walker, S. I. (2017). Formal definitions of unbounded evolution and innovation reveal universal mechanisms for open-ended evolution in dynamical systems. <em>Scientific Reports</em>, 7, 997.</li>
+<li>Aguilera, M., Millidge, B., Tschantz, A., and Buckley, C. L. (2022). How particular is the physics of the free energy principle? <em>Physics of Life Reviews</em>, 40, 24-50.</li>
+<li>Beer, R. D. (2004). Autopoiesis and cognition in the Game of Life. <em>Artificial Life</em>, 10(3), 309-326.</li>
+<li>Birch, J., Ginsburg, S., and Jablonka, E. (2020). Unlimited Associative Learning and the origins of consciousness: a primer and some predictions. <em>Biology &amp; Philosophy</em>, 35, 56.</li>
+<li>Borg, J. M., Buskell, A., Kapitany, R., Powers, S. T., Reindl, E., and Tennie, C. (2024). Evolved open-endedness in cultural evolution: A new dimension in open-ended evolution research. <em>Artificial Life</em>, 30(3), 417-438.</li>
+<li>Chan, B. W.-C. (2019). Lenia: Biology of artificial life. <em>Complex Systems</em>, 28(3), 251-286.</li>
+<li>Channon, A., Bedau, M. A., Packard, N. H., and Taylor, T. (2024). Editorial introduction to the 2024 special issue on open-ended evolution. <em>Artificial Life</em>, 30(3), 300-301.</li>
+<li>Di Paolo, E. A. (2005). Autopoiesis, adaptivity, teleology, agency. <em>Phenomenology and the Cognitive Sciences</em>, 4(4), 429-452.</li>
+<li>Egbert, M. D., and Barandiaran, X. E. (2011). Quantifying normative behavior and precariousness in adaptive agency. In <em>Advances in Artificial Life (ECAL 2011)</em>, 210-217.</li>
+<li>Froese, T., and Ziemke, T. (2009). Enactive artificial intelligence: Investigating the systemic organization of life and mind. <em>Artificial Intelligence</em>, 173(3-4), 466-500.</li>
+<li>Friston, K. J. (2013). Life as we know it. <em>Journal of the Royal Society Interface</em>, 10(86), 20130475.</li>
+<li>Kirchhoff, M. D., Parr, T., Palacios, E., Friston, K. J., and Kiverstein, J. (2018). The Markov blankets of life: Autonomy, active inference and the free energy principle. <em>Journal of the Royal Society Interface</em>, 15(138), 20170792.</li>
+<li>Lyon, P., Keijzer, F., Arendt, D., and Levin, M. (2021). Reframing cognition: getting down to biological basics. <em>Philosophical Transactions of the Royal Society B</em>, 376, 20190750.</li>
+<li>Lyon, P., and Cheng, K. (2023). Basal cognition: shifting the center of gravity (again). <em>Animal Cognition</em>, 26(6), 1743-1750.</li>
+<li>Maturana, H. R., and Varela, F. J. (1980). <em>Autopoiesis and Cognition: The Realization of the Living</em>. Reidel.</li>
+<li>Moreno, A., and Mossio, M. (2015). <em>Biological Autonomy: A Philosophical and Theoretical Enquiry</em>. Springer.</li>
+<li>Raja, V., Valluri, D., Baggs, E., Chemero, A., and Anderson, M. L. (2021). The Markov blanket trick: On the scope of the free energy principle and active inference. <em>Physics of Life Reviews</em>, 39, 49-72.</li>
+<li>Ruiz-Mirazo, K., Peretó, J., and Moreno, A. (2004). A universal definition of life: Autonomy and open-ended evolution. <em>Origins of Life and Evolution of the Biosphere</em>, 34(3), 323-346.</li>
+<li>Schrödinger, E. (1944). <em>What Is Life?</em> Cambridge University Press.</li>
+<li>Sharma, A., et al. (2023). Assembly Theory explains and quantifies selection and evolution. <em>Nature</em>, 622, 321-328.</li>
+<li>Terry, J. K., et al. (2021). PettingZoo: Gym for multi-agent reinforcement learning. <em>Advances in Neural Information Processing Systems</em>, 34.</li>
+<li>Thompson, E. (2007). <em>Mind in Life: Biology, Phenomenology, and the Sciences of Mind</em>. Harvard University Press.</li>
+<li>von Neumann, J. (1966). <em>Theory of Self-Reproducing Automata</em>. University of Illinois Press.</li>
+<li>Watson, R. A., and Szathmáry, E. (2016). How can evolution learn? <em>Trends in Ecology &amp; Evolution</em>, 31(2), 147-157.</li>
+</ul></div>
+  </div>
+</body>
+</html>
