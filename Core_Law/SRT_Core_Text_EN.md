@@ -161,7 +161,15 @@ Selection is not isolated — we delegate selection authority to others, institu
    ε_pg > 0: L₀ minimal non-neutrality (scalar, not order) [structural axiom]
    Persistent Selection System:
      G^θ persists ∧ A_{t+1}≠∅ ∧ Ψ_f^next<∞               [structural axiom]
-   Amplification: T-Op-SIAM (from ①②) + Ax-Op-05 → closure bias
+   Amplification: T-Op-SIAM [structural postulate] + Ax-Op-05 → closure bias
+   ⚠ T-Op-SIAM status (2026-04-16): independent structural postulate, NOT theorem.
+     "from ①②" was incorrect: ①② give landscape-change-happens, not direction.
+     Ax-Op-03+04 also insufficient: no signed writeback, no persistence guarantee.
+     T-Op-SIAM carries 4 strong claims beyond existing axioms:
+       (1) direction ΔA(x_comp)<0, (2) persistence e^{-λN_prac},
+       (3) cue-independence (L₀ content, not L₁/L₂ retrieval link) — needs A(x,t) ontological positioning,
+       (4) non-monotone onset (priming window) — empirically grounded only.
+     Survives as postulate; pending Ax-Op-03b (history-dependent plasticity rule) to restore theorem status.
    Ax-Op-05 (2026-04-16): two-phase closure — Phase 1 payable non-monotone
              (Ψ_f<∞, local rise permitted during generative phases);
              Phase 2 attractor-domain monotone (Ψ_f↓ by δ once in B(θ))
