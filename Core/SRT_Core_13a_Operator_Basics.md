@@ -163,10 +163,32 @@ $$N_{prac} = 1 \Rightarrow A(x_{comp}, t+\Delta t) \geq A(x_{comp}, t) \quad \te
 $$L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \text{Noise}(L_0)]$$
 * **Implication**: 选择不是一次性事件，而是连续的迭代演化。
 
-### Ax-Op-05: Constraint Closure
-**Formal Definition**: Repeated self-application yields stable structures.
-$$\mathrm{Closure}(\theta) \iff \hat{G}_\theta^k[L_0] = \text{Stable Structure}$$
-* **Implication**: 稳定现实来自选择回路的自洽闭包。
+### Ax-Op-05: Two-Phase Constraint Closure（二阶段约束闭包）
+
+**改写注（2026-04-16）**：原版"重复自应用产生稳定结构"仅给出闭包态的定义性表述，未约束收敛路径，无法区分固定点、周期吸引子与混沌轨道，且与 Step ⑦（高阶意识生成的高代价相）存在内部一致性张力。现改写为二阶段闭包条件，采用弱/渐近 Lyapunov（盆地条件单调），允许前期 Ψ_f 上升的生成性阶段，同时保证终期吸引域内的单调下降与固定点收敛。
+
+**Formal Definition**（设 $\Psi_f^{(k)} \equiv \Psi_f(\hat{G}_\theta^k[L_0])$）：
+
+**Phase 1 — Generative (Payable, Non-Monotone / 生成期：可支付，不要求单调)**
+
+$$\forall k < k_0 : \quad \Psi_f^{(k)} < \infty \quad \text{（payable 条件；} \Psi_f \text{ 允许局部上升）}$$
+
+**Phase 2 — Convergent (Attractor-Domain Monotone / 收敛期：吸引域内单调下降)**
+
+$$\exists k_0,\, \delta > 0,\, \mathcal{B}(\theta) : \quad \forall k \geq k_0,\quad \hat{G}_\theta^k[L_0] \in \mathcal{B}(\theta) \;\land\; \Psi_f^{(k+1)} \leq \Psi_f^{(k)} - \delta$$
+
+**Closure Condition**：
+
+$$\mathrm{Closure}(\theta) \;\iff\; \Bigl(\exists k_0 : \hat{G}_\theta^{k_0}[L_0] \in \mathcal{B}(\theta)\Bigr) \;\land\; \lim_{k \to \infty} \Psi_f^{(k)} = \Psi_f^*$$
+
+其中 $\mathcal{B}(\theta)$ 为吸引域，$\Psi_f^*$ 为闭包固定点处的摩擦值。
+
+* **Implication**:
+  - **Phase 1** 允许 $\Psi_f$ 在生成性阶段局部上升，兼容 Step ⑦（高阶意识涌现的高代价生成窗口）；
+  - **Phase 2** 要求进入吸引域 $\mathcal{B}(\theta)$ 后严格单调下降（强度 $\delta > 0$），提供固定点收敛保证，排除纯周期轨道与混沌；
+  - 原"稳定结构"读法精化为：稳定 = 进入可支付吸引域 + 终期 $\Psi_f$ 单调收敛至 $\Psi_f^*$，非一步闭包；
+  - Phase 1 的非单调段受 payable 条件约束（$\Psi_f^{(k)} < \infty$），不是无界许可——超过可支付上界即退出 Closure 候选。
+* **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md Step ④`（闭包偏置机制与 Ax-Op-05 收敛条件更新）; `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-06`（规范性算子范围条件）; `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`（$\Psi_f$ 正则定义）.
 
 ## III. Agency Thresholds (能动性阈值)
 

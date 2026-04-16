@@ -162,7 +162,10 @@ Selection is not isolated — we delegate selection authority to others, institu
    Persistent Selection System:
      G^θ persists ∧ A_{t+1}≠∅ ∧ Ψ_f^next<∞               [structural axiom]
    Amplification: T-Op-SIAM (from ①②) + Ax-Op-05 → closure bias
-   ⚠ Ax-Op-05 needs explicit convergence condition         [open problem]
+   Ax-Op-05 (2026-04-16): two-phase closure — Phase 1 payable non-monotone
+             (Ψ_f<∞, local rise permitted during generative phases);
+             Phase 2 attractor-domain monotone (Ψ_f↓ by δ once in B(θ))
+             → fixed-point convergence guaranteed; periodic/chaotic excluded [resolved]
    Step ④ scope: conditional on Ax-Op-06 (normative systems only)
    "Order" = observer read-back of amplified sedimentation [not intrinsic to L₀]
    Original intention = field perception of cumulative bias [field perception]
