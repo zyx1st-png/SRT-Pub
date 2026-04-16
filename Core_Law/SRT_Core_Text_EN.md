@@ -169,7 +169,13 @@ Selection is not isolated — we delegate selection authority to others, institu
        (1) direction ΔA(x_comp)<0, (2) persistence e^{-λN_prac},
        (3) cue-independence (L₀ content, not L₁/L₂ retrieval link) — needs A(x,t) ontological positioning,
        (4) non-monotone onset (priming window) — empirically grounded only.
-     Survives as postulate; pending Ax-Op-03b (history-dependent plasticity rule) to restore theorem status.
+     Survives as postulate; pending Ax-Op-03b — three layers, all genuinely new content:
+       (a) update law: E[Ψ_f(path_i,t+1)] = E[Ψ_f(path_i,t)] + η·L_comp(i|W_ij,θ),
+           L_comp(x_comp)>0, L_comp(x_prac)≤0;
+       (b) bridge: A(path_i,t) ∝ f(E[Ψ_f]) monotone decreasing; exponential form
+           is Boltzmann borrowing — must be declared as new bridge postulate if used;
+       (c) L_comp sign-flip for priming window (requires N_c threshold structure).
+     Defensible without Ax-Op-03b: ordinal E[Ψ_f]↑ → A↓ (from payability + Ax-F-02).
    Ax-Op-05 (2026-04-16): two-phase closure — Phase 1 payable non-monotone
              (Ψ_f<∞, local rise permitted during generative phases);
              Phase 2 attractor-domain monotone (Ψ_f↓ by δ once in B(θ))

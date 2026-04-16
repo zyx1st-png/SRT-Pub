@@ -141,7 +141,12 @@ $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x
 >   3. **提示独立性**：作用于 $L_0$ 内容本身（非 $L_1/L_2$ 检索联结）——需额外声明 $A(x,t)$ 的本体论居于 $L_0$ 层
 >   4. **非单调初始条件**（priming window）：目前仅由实验锚定，非结构推导
 > - **当前处置**：T-Op-SIAM 作为独立结构公设在 Step ④ 放大机制中**暂时存活**，但不应作为最终停点。
-> - **待办 Ax-Op-03b**：补写真正的历史写回更新律——形式应为 $W_{ij}$ 或 $A(x,t)$ 的竞争结果依赖更新方程（非直接重述方向性主张），再由 Ax-Op-03 + Ax-Op-03b 推出 T-Op-SIAM 使其恢复定理地位。
+> - **可守住的基底**（无需 Ax-Op-03b）：$\mathbb{E}[\Psi_f] \uparrow \;\Rightarrow\; A \downarrow$ 的**序关系**可从 payability 条件（Ax-F-02 熵压缩 + Persistent Selection System）读出——这给出方向性的弱版本，但无法给出具体函数形式或持续性量级。
+> - **待办 Ax-Op-03b — 三层结构，均为实质新增内容**（不能从既有 SRT 免费推出）：
+>   1. **更新律**：$\mathbb{E}[\Psi_f(\text{path}_i, t+1)] = \mathbb{E}[\Psi_f(\text{path}_i, t)] + \eta \cdot L_{comp}(i \mid W_{ij}, \theta)$，
+>      并满足 $L_{comp}(x_{comp}) > 0,\; L_{comp}(x_{prac}) \leq 0$
+>   2. **桥接函数**：$A(\text{path}_i, t) \propto f(\mathbb{E}[\Psi_f(\text{path}_i, t)])$，$f$ 单调递减；若取指数形式 $e^{-\mu \mathbb{E}[\Psi_f]}$，必须显式声明为新增 bridge postulate 或建模选择，不得装成现成定理（Boltzmann 借用需标注）
+>   3. **L_comp 符号翻转条件**（priming window）：当 $A_0(x_{comp}) \gg A_0(x_{prac})$ 时，前 $N_{prac} < N_c$ 轮 $L_{comp}(x_{comp})$ 符号为负（短暂启动），$N_{prac} \geq N_c$ 后翻正（净抑制）；阈值 $N_c$ 依赖竞争不对称度，是额外结构参数
 
 **Formal Statement**: $\hat{G}_\theta$ 的每次选择操作不仅从 $L_0$ 锚定 $L_1$，而且在 $L_0$ 的可及性景观上施加**持续性的抑制修改**，使被拒绝的竞争者在后续选择中的可及性降低：
 
