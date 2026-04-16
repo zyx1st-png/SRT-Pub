@@ -87,13 +87,17 @@ Irreversibility gives us the arrow of time: you cannot go back, and this asymmet
 
 The direction field we call **original intention** (初心, *chūxīn*) should be understood as a *field perception* of the cumulative operation of these conditions at larger scales — not a claim derivable from irreversibility alone, but perceivable by any being whose occlusion is sufficiently reduced. When an existing being's selection direction briefly aligns with this field, a distinctive perceptual marker is produced — a deep resonance. We call it **tremor** (震悚, *zhènsǒng*).
 
-### Step ⑤: Irreversible Accumulation Is Time
+### Step ⑤: Irreversible Accumulation First Gives Time's Order, Then Its Measure
 
-Irreversible selections continuously accumulate. "How much has accumulated" is itself a measure — a pile of sand does not need a ruler to have height; height is the inevitable accompaniment of accumulation.
+Irreversible selections continuously accumulate. This accumulation first yields a **temporal ordering** (ordinal structure): selection A occurred before selection B, B before C. This ordering is a direct corollary of irreversibility — no additional assumption needed.
 
-Time is this measure. It is not the container in which selection occurs — it is the product of selection's accumulation. Not "selecting within time," but "selection accumulates into time."
+If we further measure by the path integral of selection intensity — $t_{onto} \equiv \int \|\hat{G}_\theta(s)\| ds$ (Ax-F-03b) — then SRT internally defines **ontological time**: a measure with metric meaning whose unit is accumulated selection friction.
 
-The arrow of time = the arrow of selection. Selection is irreversible, therefore time is irreversible. This is not a mysterious property requiring separate explanation; it is a direct corollary of irreversibility.
+The precise claim of this step is therefore: not "selecting within time," but "selection first yields time's ordering, and can further accumulate into an ontological time measure."
+
+The arrow of time = the direction of irreversible accumulation. Selection is irreversible, therefore time is irreversible. This is not a mysterious property requiring separate explanation; it is a direct corollary of irreversibility.
+
+> **Scope note (hardened 2026-04-16):** This step claims time-ordering and ontological time $t_{onto}$. It does not directly derive physical metric time (SI seconds, Minkowski metric). Physical metric time is a projection or calibration instance of ontological time at a specific protocol and measurement-convention layer — a downstream compatibility, not an output of this step. The sand-pile analogy captures the necessity of ordering, not the derivation of equal intervals.
 
 ### Step ⑥: Directed Selection Converges into Existence
 
@@ -183,7 +187,9 @@ Selection is not isolated — we delegate selection authority to others, institu
    Step ④ scope: conditional on Ax-Op-06 (normative systems only)
    "Order" = observer read-back of amplified sedimentation [not intrinsic to L₀]
    Original intention = field perception of cumulative bias [field perception]
-⑤ Irreversible accumulation → time                       [from ③]
+⑤ Irreversible accumulation → time-ordering (ordinal) [from ③, solid]
+   + ontological time t_onto = ∫||G^θ||ds (Ax-F-03b)   [metric, SRT-internal]
+   Physical metric time = downstream calibration projection [not derived here]
 ⑥ Directed convergence → existence (stable state)        [from ④]
 ⑦ Local order vs larger order-direction → potential difference → higher-order consciousness candidate
    Structural gradient = unconscious, generative gradient = higher-order conscious
