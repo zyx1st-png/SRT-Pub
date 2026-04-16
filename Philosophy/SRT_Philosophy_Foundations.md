@@ -364,9 +364,15 @@ $$Fact_{local} \equiv \hat{G}_i(L_0) \to L_{1,i}$$
 - **悖论消解**：
   - **对于朋友（算子 A）**：他的算子已经执行了选择，猫坍缩为 $L_1$（活）。这是他的事实。
   - **对于维格纳（算子 B）**：门内的系统对他来说仍处于 $L_0$（潜存状态/叠加态）。这是他的事实。
-  - **结论**：所谓的"客观现实"，只是算子 A 和算子 B 通过交流建立的 **$L_2$ 共识协议**。
+  - **结论**：所谓的"客观现实"，不是多个局部事实的简单交集，更不是先在的上帝视角，而是算子 A、B 等通过交流、记录、纠错与历史保留后形成的 **$L_2$ 收敛沉积**。
 
-$$\text{客观事实} = \bigcap_i L_{1,i} \quad (\text{通过 } L_2 \text{ 达成})$$
+$$
+\text{Objectivity}_{SRT}
+\sim
+L_2\text{-Convergence}\big(\{L_{1,i}\}\big)
+$$
+
+  - **收敛条件补充**：这里的“收敛”不只要求局部重合，还要求跨接口对齐与反共错稳健性；如果多个算子只是共享同一遮蔽来源，它们可以稳定地一起出错，而不因此自动升级为“客观”。
 
 #### 4.1.2 玻尔兹曼大脑悖论
 
@@ -634,6 +640,68 @@ $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 \]
 语言可赋名，不等于动力学可维持。
 
+> **解释层注（2026-04-16）**
+> 以下小节用于收紧旧的“不可逆即朝向秩序”与“客观 = 简单交集”写法。
+> 它们不是新的外部经验胜出声明，而是对 SRT 既有 `相对显现 → 历史沉淀 → L_2 收敛` 主线的 bridge-level 解释重排。
+
+### Cor-Phil-5.10d: Irreversibility Is Not Yet Structural Accumulation（不可逆不等于结构累积）
+\[
+\text{Irreversibility} \not\Rightarrow \text{Order Increase}
+\]
+不可逆本身只给出时间箭头；扩散、摩擦生热、老化与退相干都不可逆，但不会自动产生结构化秩序。更稳的 SRT 说法是：只有当差异被**选择性保留、锁存并递归写回**下一轮选择条件时，才会形成 `L_2` 意义上的结构箭头。
+
+### Def-Phil-5.10e: Relative Existence Distinction（相对存在三分）
+在 SRT 中，存在不是脱离一切关系的裸属性，而是相对于具体算子、耦合方式与历史沉淀而显现：
+\[
+x \in L_0 \Rightarrow x \text{ is potentially existent}
+\]
+\[
+x \in L_1^\theta \Rightarrow x \text{ is manifest for operator } \hat G_\theta
+\]
+\[
+x \in L_2 \Rightarrow x \text{ is sedimented through repeated retention and shared stabilization}
+\]
+相对，不等于任意；它始终受 `\theta`、耦合通道、边界条件、支付能力与历史沉淀约束。
+
+### Def-Phil-5.10f: Attention as Selective Coupling（注意力作为选择性耦合）
+这里的“注意力”不应窄化为人类主观注意，而应理解为系统对差异的**选择性敏感、耦合、放大与保留能力**。对象不是因为被主观意识“看见”才存在，而是因为被某个选择系统耦合、记录并反馈，才对该系统显现为现实。
+
+### Def-Phil-5.10g: Objectivity as Convergent Sedimentation（客观性作为收敛沉积）
+SRT 不把客观性理解为脱离一切视角的 “View from Nowhere”。更稳的写法是：
+\[
+\text{Objectivity}_{SRT}
+\sim
+\text{Convergent Sedimentation of Relative Manifestations}
+\]
+客观不是相对的对立面；客观是相对显现经过多主体、多轮互动、反馈与历史保留后形成的 `L_2` 收敛表现。
+
+### Cor-Phil-5.10h: L2 Is a Dynamics Question, Not a Static Truth Score（L2 是动力学问题，不是真值分级）
+因此，SRT 更该追问的不是“哪个 `L_2` 更客观”，而是：
+
+- `L_2` 如何形成；
+- 如何维持；
+- 如何扩展到更广共享范围；
+- 如何碎裂；
+- 如何再次收敛。
+
+一个 bridge-level 骨架可写为：
+\[
+L_2(t+1)
+\approx
+L_2(t)
++
+\alpha \mathcal O(t)
+-
+\beta \Psi_f^{consensus}(t)
+-
+\gamma \Psi_f^{maint}(t)
++
+\delta V(t)
+-
+\epsilon \mathcal D(t)
+\]
+其中 `\mathcal O(t)` 表示多算子选择重叠度，`\Psi_f^{consensus}` 表示共识摩擦，`\Psi_f^{maint}` 表示维持摩擦，`V(t)` 表示价值势能，`\mathcal D(t)` 表示扰动/解耦项。该式不是 canonical 主方程，而是 bridge-level 动力学骨架；它强调的是 `L_2` 作为沉淀现实，会被重叠、摩擦、价值催化与扰动恢复共同塑形。
+
 ### 分类映射表（Internal/External Question → SRT）
 
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
@@ -656,6 +724,8 @@ $$\nexists R': \text{Relation}(\hat{G}, L_0) = R'$$
 ### 【理论边界/防误用声明】
 - 不采纳”外部问题无意义=现实无结构”的推论：SRT 否定的是去参数化问法，不是否定跨尺度结构。
 - 不采纳“框架相对性=任意相对主义”的推论：所有框架仍受 \(\Psi_f\) 支付、可达性与一致性约束。
+- 不采纳“被主观意识看见才存在”的极端唯心推论：SRT 强调的是选择性显现，而非人类意识对存在的独占授权。
+- 不采纳“客观 = 上帝视角”或“自由能/摩擦/持续性 = 真值打分器”的推论：这些量在此处只用于描述 `L_2` 的收敛、维持与碎裂动力学。
 
 对 Problem of the Many，给出分辨率阈值判据：
 \[

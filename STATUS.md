@@ -13,13 +13,15 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 > **会话入口**：每次 SRT 工作会话开始前先读此文件（30 秒上手）。
 > **更新规则**：每次工作会话结束时由 agent 更新本文件。
-> **最后更新**：2026-04-15
+> **最后更新**：2026-04-16
 
 > **GitHub 根目录平铺（2026-04-15）**：已把仓库中原先包在 `SRT/` 下的全部内容提升到仓库根目录，当前 `main` 的根目录已经直接对应原 `SRT/` 内容；旧的 `SRT/` 包装层已删除。
 
 > **GitHub 主分支收口（2026-04-15）**：已按当前需求将远端整理为单一 `main` 分支，`main` 已强制对齐到当前 SRT 目录对应内容（`f5c9c4b`），并删除远端旧 `master`。本地分支也已改名为 `main`，当前工作区干净，后续只需围绕 `main` 继续维护。
 
 > **治理协议校正（2026-04-15 / d-value canonical anchor）**：已将 `Governance/_SRT_EXPLANATION_PROTOCOL.md` 的 `d` 值规范锚点从旧的 `AI/SRT_AI_01_Ontology.md` 收口到 `_SRT_D_VALUE_CANONICAL.md`，以和当前 canonical registry 保持一致。
+
+> **理论口径更新（2026-04-16 / relative-existence & L2 convergence）**：已将 `Core_Law/SRT_Core_Text_CN.md` 与 `Core_Law/SRT_Selection_Argument.md` 中“不可逆自动推出秩序”的旧强口径收紧为“不可逆只给时间箭头；结构箭头来自选择性保留、锁存与递归反馈”，并在 `Philosophy/SRT_Philosophy_Foundations.md` 补入 `相对存在 / 注意力 = 选择性耦合 / 客观 = 收敛沉积 / L2 动力学优先` 的压缩接口。
 
 > **材料审查更新（2026-04-14 / single-operator symbolic-regression bridge screen）**：已按 `Pipeline 1` 审查用户提交的 arXiv 预印本 `All elementary functions from a single operator`（https://arxiv.org/html/2603.21852v2；arXiv:`2603.21852v2`）。审核结论为 **B（延后观察）**。原因不是这条线不重要，而是它当前更稳地提供的是**工具层桥**，不是正文级机制桥：论文证明 `eml(x,y)=e^x-\ln(y)` 加常数 `1` 能生成作者所定义的 scientific-calculator 初等函数词汇表，并可把符号回归压到统一、可微、可做梯度下降的 EML 树空间里。但这还不等于 `EML = \hat G_\theta`、不等于 `EML tree depth = \Psi_f`，也不等于 `EML attractor = L_2 formation`。当前更稳的处置，是把它保留为 `AI-for-Science / low-operator symbolic regression / formula search basis` 的候选工具桥，待同行评审、更多深树恢复结果，或真正接入 SRT 方程发现任务后再重评。
 
