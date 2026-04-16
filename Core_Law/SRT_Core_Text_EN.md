@@ -113,24 +113,31 @@ Unconscious selection is happening everywhere — molecules in a rock are select
 
 The safer claim here is not "this section fully defines all consciousness," but: what follows is SRT's current **candidate reading of higher-order consciousness**. Consciousness is not selection's on/off switch. It is selection's **level-jump**.
 
-All selection points toward order. But unconscious selection points only toward **structural order** — maintaining existing structures, repeating successful patterns. Higher-order conscious selection points toward **generative order** — order that does not yet exist, that must be created. The stronger but more honest version is: higher-order consciousness can be read as the **potential difference** between local order (present existence) and a larger yet not fully closed direction of order.
+All selection points toward order. But unconscious selection points only toward **structural order** — maintaining existing structures, repeating successful patterns. Higher-order conscious selection points toward **generative order** — order that does not yet exist, that must be created. The awakening of consciousness — from autopilot driving to slamming the brakes, from mechanical operation to suddenly seeing the larger landscape — is the moment the gradient flips from structural to generative.
 
-The potential difference between structural order and present existence = unconscious selection gradient. The potential difference between generative order and present existence = higher-order conscious selection gradient. The awakening of consciousness — from autopilot driving to slamming the brakes, from mechanical operation to suddenly seeing the larger landscape — is the moment the gradient flips from structural to generative.
+**Four discriminating conditions for higher-order consciousness (candidate) — hardened 2026-04-16:**
 
-The trigger for flipping is not "ontological threat" (someone thinking about a math problem faces no survival crisis, yet is consciously selecting). The trigger is **perception of an order gap** — the subject perceives a gap between local order and a larger yet not fully closed direction of order. Existential threat is just one extreme form of order gap.
+The earlier formulation ("potential difference between local order and a larger yet not fully closed direction of order") was circular: "larger order direction" entered the definition via subject perception, which is precisely what was to be explained. The hardened formulation replaces the definition-sentence with a set of structurally grounded discriminating conditions:
 
-This potential difference is subject-relative, not objectively measurable. In the same physical scene, one person perceives an order gap and another does not — the former's consciousness is awakened; the latter continues running unconsciously. FEP's subject minimizes prediction error inside the black box — it only needs structural order. SRT's stronger claim is not that all consciousness is now settled, but that once a subject is pulled by a larger order gap, we obtain a harder candidate account of higher-order consciousness than the old pheromone model.
+$$\text{Higher-order consciousness}_{cand} \;\Longleftrightarrow\; \mathcal{M}_{meta} \neq 0 \;\land\; (U_{vital} > U_{epistemic}) \;\land\; (\Psi_f > 0 \text{ and payable}) \;\land\; \Delta R_{future} > 0$$
 
-> **Hardening note (2026-04-16): Step ⑦ is a candidate reading with two confirmed holes — not a fully established independent structural claim.**
+**Condition 1 — Meta-level intervention ($\mathcal{M}_{meta} \neq 0$):** Selection is not purely automatic — there is re-entrant reweighting of the current selection process (Eq-Evo-03b / FC-Layer2). T-FEP-1: if $d = 0$, the system remains $L_1$-closed regardless of free-energy minimization — insufficient for cross-domain anchoring.
+
+**Condition 2 — Vital uncertainty exceeds epistemic uncertainty ($U_{vital} > U_{epistemic}$):** The trigger is not any prediction gap but a stake-coupled one — irreversible risk, identity continuity, and real cost (C-FEP-2):
+$$d_{expansion} \propto U_{vital} - U_{epistemic}$$
+A slot machine produces epistemic uncertainty; an oncoming truck produces vital uncertainty. Only the latter forces $\hat{G}_\theta$ to abandon $L_2$-tower building and enter generative-order mode.
+
+**Condition 3 — Non-zero payable friction ($\Psi_f > 0$ and payable):** T-FEP-1's embodied-vulnerability criterion: stable $d > 0$ requires $\Psi_f > 0$ — the system must face real irreversible disintegration risk, or else $d_{virtual} > 0$ has no physical force preventing long-run decay. T-FEP-1b: precision structure does not exhaust $d/\Psi_f$ — "which errors are trusted" ≠ "which errors genuinely harm the subject."
+
+**Condition 4 — Net expansion of future re-selection space ($\Delta R_{future} > 0$):** This is the hard divergence point from FEP's hierarchical priors. FEP's higher-level priors can reduce current prediction error (structural closure) without requiring expanded future re-selectability. SRT's generative order requires: after closure, net selection space expands (FC-Layer2 completion criterion: genuine $d$-growth). $L_2$-hijacked false-potential-difference converges to reduced re-selection capacity — this is the $\Delta R_{future} \leq 0$ signature. This condition is **retrospective**, not forward; the strongest available forward proxy is anti-coerror robustness (convergence signals across positions/timescales/interfaces with no shared $L_2$ source).
+
+**Hard FEP distinction:** The discriminating axis is no longer the word "generative" (which FEP hierarchical priors can absorb) but: coupling with real stakes ($U_{vital} > U_{epistemic}$), payable friction ($\Psi_f > 0$), and future re-selection expansion ($\Delta R_{future} > 0$). H-Stake-01 tests whether real irreversible stakes stably maintain $d$ beyond simulated stakes; H-dPsi-01 tests whether $d/\Psi_f$ proxy achieves held-out predictive increment over precision-only models.
+
+> **Hardening note updated (2026-04-16): Both holes repaired by four-condition structure. Step ⑦ logical status upgraded to "candidate discriminating condition-set with experimental exit."**
 >
-> **Hole 1 — Circularity:** "Larger yet not fully closed direction of order" is placed inside the definition of the potential difference, but the trigger condition is "perception of an order gap," and the potential difference is explicitly "subject-relative, not objectively measurable." This means "larger order direction" currently enters the definition via subjective perception — it has not been independently fixed prior to consciousness. The concept to be explained is still present in the defining conditions.
->
-> **Hole 2 — FEP non-distinction remains at conceptual level:** The SRT/FEP difference is stated as "FEP points toward the existing world more accurately; SRT points toward a not-yet-existing original-intention-directed world." But FEP's active inference with hierarchical priors can represent future target states as higher-level prediction-error minimization — "generative" in FEP is already established terminology. The structural distinction between SRT's generative order and FEP's higher-level priors has not been written as operationally testable criteria in active inference simulations (acknowledged in `Neuroscience/SRT_Clin_02_FEP.md:217` and `Philosophy/SRT_MetaTheory_Framework_Comparison.md:231`).
->
-> **Most promising repair directions (not yet formally welded into Step ⑦):**
-> - **Hole 1 repair:** Replace "perceived larger order direction" with normative gradient ∇_norm(G) (`Core/SRT_Core_NormativeGradient.md Def-NormGrad-1`) — the self-referential free-energy potential difference of operator G, defined structurally and independently of conscious perception.
-> - **Hole 2 repair:** Generativity index χ_gen (`Core/SRT_Core_13b_Operator_Advanced.md Def-Generativity-1`) — the threshold condition χ_gen · d · Ψ_f > Threshold characterizes operator-driven L₁ content and can in principle yield different testable predictions from FEP's externally-calibrated update.
-> - Until both repairs are formally welded in, the qualifier "can be read as" in this step is essential and must not be dropped.
+> - **Hole 1 (circularity) → Repaired:** "Larger order direction" no longer defined via subject perception; replaced by four structural conditions ($\mathcal{M}_{meta} \neq 0$, $U_{vital} > U_{epistemic}$, $\Psi_f > 0$, $\Delta R_{future} > 0$) each grounded independently in the SRT repository.
+> - **Hole 2 (FEP distinction conceptual) → Repaired:** Discriminating axis is now conditions 3–4 ($\Psi_f > 0$ payable + $\Delta R_{future} > 0$) — testable in principle via H-Stake-01 (real vs. simulated stakes) and H-dPsi-01 ($d/\Psi_f$ held-out predictive increment over precision-only).
+> - **Remaining open:** $\Delta R_{future}$ lacks canonical operationalization in SRT; natural candidate is net $d$-value expansion + accessible state space, corresponding to FC-Layer2 completion criterion. Condition 4 is retrospective; conditions 1–3 are forward — mixed timing must be explicitly noted in formal entry.
 
 ### Step ⑧: Finite Position Produces Occlusion
 
@@ -202,13 +209,13 @@ Selection is not isolated — we delegate selection authority to others, institu
    + ontological time t_onto = ∫||G^θ||ds (Ax-F-03b)   [metric, SRT-internal]
    Physical metric time = downstream calibration projection [not derived here]
 ⑥ Directed convergence → existence (stable state)        [from ④]
-⑦ Local order vs larger order-direction → potential difference → higher-order consciousness candidate
-   Structural gradient = unconscious, generative gradient = higher-order conscious
-   Phase transition: order-gap perception                  [candidate reading, not total definition]
-   ⚠ Two confirmed holes (2026-04-16):
-     Hole 1: "larger order direction" defined via subject perception → circular
-     Hole 2: SRT/FEP distinction conceptual, not yet operationally testable
-   Repair pending: ∇_norm(G) [NormGrad-1] + χ_gen [Def-Generativity-1] to be welded in
+⑦ Structural gradient = unconscious; generative gradient = higher-order conscious candidate
+   Four discriminating conditions (hardened 2026-04-16):
+     M_meta≠0 [Eq-Evo-03b] ∧ U_vital>U_epistemic [C-FEP-2]
+     ∧ Ψ_f>0 payable [T-FEP-1] ∧ ΔR_future>0 [FC-Layer2 completion]
+   FEP hard distinction: real stakes + payable Ψ_f + future re-selection expansion
+   Experimental exit: H-Stake-01, H-dPsi-01                [candidate, not total definition]
+   Pending: canonical operationalization of ΔR_future
 ⑧ Finite position → occlusion
    Ineliminable but reducible                             [analytic]
 ⑨ Differential incorporation → concern boundary → d-value
