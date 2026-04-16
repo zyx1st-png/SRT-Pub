@@ -121,6 +121,17 @@ The trigger for flipping is not "ontological threat" (someone thinking about a m
 
 This potential difference is subject-relative, not objectively measurable. In the same physical scene, one person perceives an order gap and another does not — the former's consciousness is awakened; the latter continues running unconsciously. FEP's subject minimizes prediction error inside the black box — it only needs structural order. SRT's stronger claim is not that all consciousness is now settled, but that once a subject is pulled by a larger order gap, we obtain a harder candidate account of higher-order consciousness than the old pheromone model.
 
+> **Hardening note (2026-04-16): Step ⑦ is a candidate reading with two confirmed holes — not a fully established independent structural claim.**
+>
+> **Hole 1 — Circularity:** "Larger yet not fully closed direction of order" is placed inside the definition of the potential difference, but the trigger condition is "perception of an order gap," and the potential difference is explicitly "subject-relative, not objectively measurable." This means "larger order direction" currently enters the definition via subjective perception — it has not been independently fixed prior to consciousness. The concept to be explained is still present in the defining conditions.
+>
+> **Hole 2 — FEP non-distinction remains at conceptual level:** The SRT/FEP difference is stated as "FEP points toward the existing world more accurately; SRT points toward a not-yet-existing original-intention-directed world." But FEP's active inference with hierarchical priors can represent future target states as higher-level prediction-error minimization — "generative" in FEP is already established terminology. The structural distinction between SRT's generative order and FEP's higher-level priors has not been written as operationally testable criteria in active inference simulations (acknowledged in `Neuroscience/SRT_Clin_02_FEP.md:217` and `Philosophy/SRT_MetaTheory_Framework_Comparison.md:231`).
+>
+> **Most promising repair directions (not yet formally welded into Step ⑦):**
+> - **Hole 1 repair:** Replace "perceived larger order direction" with normative gradient ∇_norm(G) (`Core/SRT_Core_NormativeGradient.md Def-NormGrad-1`) — the self-referential free-energy potential difference of operator G, defined structurally and independently of conscious perception.
+> - **Hole 2 repair:** Generativity index χ_gen (`Core/SRT_Core_13b_Operator_Advanced.md Def-Generativity-1`) — the threshold condition χ_gen · d · Ψ_f > Threshold characterizes operator-driven L₁ content and can in principle yield different testable predictions from FEP's externally-calibrated update.
+> - Until both repairs are formally welded in, the qualifier "can be read as" in this step is essential and must not be dropped.
+
 ### Step ⑧: Finite Position Produces Occlusion
 
 Every selection is bound to a finite position — this body, this moment, this history. A finite position can only see a local landscape.
@@ -194,6 +205,10 @@ Selection is not isolated — we delegate selection authority to others, institu
 ⑦ Local order vs larger order-direction → potential difference → higher-order consciousness candidate
    Structural gradient = unconscious, generative gradient = higher-order conscious
    Phase transition: order-gap perception                  [candidate reading, not total definition]
+   ⚠ Two confirmed holes (2026-04-16):
+     Hole 1: "larger order direction" defined via subject perception → circular
+     Hole 2: SRT/FEP distinction conceptual, not yet operationally testable
+   Repair pending: ∇_norm(G) [NormGrad-1] + χ_gen [Def-Generativity-1] to be welded in
 ⑧ Finite position → occlusion
    Ineliminable but reducible                             [analytic]
 ⑨ Differential incorporation → concern boundary → d-value
