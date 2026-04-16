@@ -129,6 +129,52 @@ $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x
 > * **FC-Op03-1**（证伪条件）：若在神经影像研究中，已知的竞争选择（如双眼竞争/Stroop抑制）的BOLD信号不符合除法归一化预测（如竞争对手活化的非线性压制模式无法用W_ij·x_j^n拟合，ΔAICc < 2 vs 线性模型），则分归一化作为 $\hat{G}_\theta$ 神经实现候选的地位减弱。
 > * **FC-Op03-2**（证伪条件）：若决策场景中（如选项集效应），背景依赖的选择偏移无法被 $W_{ij}$ 参数化捕捉（模型预测与行为数据相关 r < 0.5），则需补充其他归一化变体（如基于rank的归一化）或切换实现候选。
 
+### Ax-Op-03b: Competitive History Writeback（竞争历史写回律）
+
+**新增（2026-04-16）**：Ax-Op-03 只给出当轮竞争的瞬态归一化；Ax-Op-04 只给出算子的递归迭代；两者均不足以保证"败者压制带方向写入历史"。本公理补充竞争结果对路径预期摩擦的写回律，使 T-Op-SIAM 从公设降格为 Ax-Op-03 + Ax-Op-03b 的推论。
+
+> **地位注**：本公理三层内容均为实质新增（不可从既有 SRT 免费推出）。目前以"可守住的基底"为最低承诺，三层全部接受后 T-Op-SIAM 可恢复定理地位。
+
+**可守住的基底（来自既有 SRT，无需本公理）**：
+
+$$\mathbb{E}[\Psi_f] \uparrow \;\Rightarrow\; A \downarrow \quad \text{（序关系，来自 payability 条件 + Ax-F-02 熵压缩）}$$
+
+**Layer 1 — 竞争结果依赖更新律（新增内容）**：
+
+设竞争事件中 $x_{prac}$ 被选中、$x_{comp}$ 被拒绝，路径预期摩擦按下式更新：
+
+$$\mathbb{E}[\Psi_f(\text{path}_i,\, t+1)] = \mathbb{E}[\Psi_f(\text{path}_i,\, t)] + \eta \cdot L_{comp}(i \mid W_{ij},\, \theta,\, N_{prac})$$
+
+约束条件：
+$$L_{comp}(x_{comp}) > 0, \qquad L_{comp}(x_{prac}) \leq 0$$
+
+（败者路径预期摩擦上升；胜者路径预期摩擦不升）
+
+**Layer 2 — 桥接函数（新增内容；含建模选择声明）**：
+
+$$A(\text{path}_i,\, t) \;\propto\; f\!\bigl(\mathbb{E}[\Psi_f(\text{path}_i,\, t)]\bigr), \quad f \text{ 单调递减}$$
+
+**建模选择注**：若取指数形式 $f = e^{-\mu \cdot \mathbb{E}[\Psi_f]}$，其形式与 Boltzmann 分布同构（$\mu$ 对应逆温度）。此指数形式是**建模选择**，非从既有 SRT 推出的定理——使用时须显式声明为桥接公设（bridge postulate），不得默认为现成结论。
+
+**Layer 3 — L_comp 符号翻转条件（priming window，新增内容）**：
+
+当初始可及性不对称度显著（$A_0(x_{comp}) \gg A_0(x_{prac})$）时，$L_{comp}$ 在早期轮次符号可为负（短暂启动），在累积超过阈值 $N_c$ 后翻正（净抑制）：
+
+$$N_{prac} < N_c \;\Rightarrow\; L_{comp}(x_{comp}) \leq 0 \quad \text{（priming window）}$$
+$$N_{prac} \geq N_c \;\Rightarrow\; L_{comp}(x_{comp}) > 0 \quad \text{（净抑制）}$$
+
+阈值 $N_c$ 为竞争不对称度 $\Delta A_0 = A_0(x_{comp}) - A_0(x_{prac})$ 的单调递增函数——初始优势越大，翻转所需累积次数越多。$N_c$ 是独立结构参数，目前主要由实验锚定（Johnson & Anderson 2004）。
+
+**T-Op-SIAM 的推导关系**：
+
+$$\text{Ax-Op-03} + \text{Ax-Op-03b} \;\Rightarrow\; \text{T-Op-SIAM（方向 + 持续性 + priming window）}$$
+
+提示独立性（cue-independence）仍需额外声明：$A(x,t)$ 的本体论居于 $L_0$ 层，而非 $L_1/L_2$ 检索联结层。
+
+* **Implication**：每次竞争选择不仅当轮归一化（Ax-Op-03），还通过摩擦写回改变后续轮次的可及性地形——选择历史以路径预期摩擦的形式积累在算子参数 $\theta(t)$ 中。
+
+* **Cross-ref**: Ax-Op-03（瞬态竞争归一化，本公理的必要前件）；T-Op-SIAM（本公理 + Ax-Op-03 的推论）；`_SRT_PSI_F_CANONICAL.md Def-Ψ-1`（$\Psi_f$ 正则定义）；`Core/SRT_Core_13a Ax-Op-04`（$\theta(t)$ 迭代演化）。
+
 ### T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理）
 
 > **地位注（2026-04-16 硬化结果）**：T-Op-SIAM 当前为**独立结构公设**，非定理。
@@ -140,7 +186,7 @@ $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x
 >   2. **持续性**：$e^{-\lambda N_{prac}}$ 累积衰减写回
 >   3. **提示独立性**：作用于 $L_0$ 内容本身（非 $L_1/L_2$ 检索联结）——需额外声明 $A(x,t)$ 的本体论居于 $L_0$ 层
 >   4. **非单调初始条件**（priming window）：目前仅由实验锚定，非结构推导
-> - **当前处置**：T-Op-SIAM 作为独立结构公设在 Step ④ 放大机制中**暂时存活**，但不应作为最终停点。
+> - **当前处置**：T-Op-SIAM 作为独立结构公设在 Step ④ 放大机制中**暂时存活**；Ax-Op-03b 已起草（见上方），一旦 Ax-Op-03b 三层内容被接受，T-Op-SIAM 即恢复为 Ax-Op-03 + Ax-Op-03b 的推论（定理），不再是独立公设。
 > - **可守住的基底**（无需 Ax-Op-03b）：$\mathbb{E}[\Psi_f] \uparrow \;\Rightarrow\; A \downarrow$ 的**序关系**可从 payability 条件（Ax-F-02 熵压缩 + Persistent Selection System）读出——这给出方向性的弱版本，但无法给出具体函数形式或持续性量级。
 > - **待办 Ax-Op-03b — 三层结构，均为实质新增内容**（不能从既有 SRT 免费推出）：
 >   1. **更新律**：$\mathbb{E}[\Psi_f(\text{path}_i, t+1)] = \mathbb{E}[\Psi_f(\text{path}_i, t)] + \eta \cdot L_{comp}(i \mid W_{ij}, \theta)$，
