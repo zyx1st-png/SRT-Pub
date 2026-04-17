@@ -183,7 +183,7 @@ SRT's core question is not "are there one-shot selection events in the world?" (
 
 **Two-level treatment of stability**:
 - *Floor level (definitional)*: Stability = entry condition for the theory object. Not derived here; it simply scopes what we are explaining. Without this gate, there is no "persistent perspective center" to theorize about.
-- *Dynamic layer (open question, addressed elsewhere)*: Why do certain processes achieve and maintain stable ISP status in reality — how do they sediment into L₂, form history, dominate unstable competitors? This requires separate explanation (Ax-Op-05 two-phase closure, L₂ writeback, Ax-Op-03b competitive history). Not assumed here.
+- *Dynamic layer (addressed by T-L2-Scaffold)*: Why certain processes achieve and maintain stable ISP status in reality — how they sediment into L₂, form history, and dominate unstable alternatives. Mechanism: successful closure deposits net-positive directional path trace → lowers Ψ_f for compatible future closures → accessibility amplification → multi-agent superposition crosses scaffold threshold ρ* → local path structure becomes background L₂ scaffolding (not merely archive). See `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold`.
 
 **Key Definitions**:
 - *Stable ISP*: Process P is a stable ISP if (a) iterative: at each t, selects from A_t ≠ ∅; (b) perspective-bearing: accumulates structured view from its position; (c) history-bearing: outputs at t constrain A_{t+1} with writeback; (d) re-selectable: can continue selecting across steps.

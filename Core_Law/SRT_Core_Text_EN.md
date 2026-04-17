@@ -234,6 +234,9 @@ Selection is not isolated — we delegate selection authority to others, institu
    + ontological time t_onto = ∫||G^θ||ds (Ax-F-03b)   [metric, SRT-internal]
    Physical metric time = downstream calibration projection [not derived here]
 ⑥ Directed convergence → existence (stable state)        [from ④]
+   Stable ISP history → L₂ scaffolding (not archive): T-L2-Scaffold (2026-04-17)
+   Mechanism: successful closure → net-positive directional trace → Ψ_f reduction → accessibility
+   amplification → multi-agent superposition crosses ρ* → foreground event → background structure
 ⑦ Structural gradient = unconscious; generative gradient = higher-order conscious candidate
    Four discriminating conditions (hardened 2026-04-16):
      M_meta≠0 [Eq-Evo-03b] ∧ U_vital>U_epistemic [C-FEP-2]

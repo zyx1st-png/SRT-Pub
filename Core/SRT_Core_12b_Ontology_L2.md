@@ -36,9 +36,72 @@ $$L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta \sigma) \cdot |\Delta \sig
 ### T-L2-01: Path-Dependence Inertia
 **Deductive Statement**: The magnitude of hysteresis determines resistance to structural change.
 $$\mathrm{Inertia}(L_2) \propto \mathrm{Hysteresis}(L_2)$$
-* **Implication**: 路径依赖越强，现实越“硬化”。
+* **Implication**: 路径依赖越强，现实越”硬化”。
 
-### Ax-L2-02: Causal Entropic Drive
+---
+
+### T-L2-Scaffold: Path-Trace Scaffold Formation Theorem（路径痕迹脚手架形成定理，2026-04-17）
+
+**[H — 机制已形式化；脚手架阈值 ρ* 与衰减率 λ_d 需经验测定]**
+
+**Motivation**: T-L2-01 explains that L₂ resists change once formed, but does not explain *why* stable ISP history becomes the *background* of new selection rather than merely its *record*. T-L2-Scaffold fills this gap: L₂ is not an archive; it is the weighted integral of directional path traces that have crossed the scaffold threshold — accumulated Ψ_f reductions and accessibility amplifications that make compatible futures structurally easier to recur.
+
+#### Key Definitions
+
+**Def-PathTrace**: Path trace density $\rho(p, t)$ along path $p$ at time $t$:
+$$\rho(p, t+1) = \rho(p, t)(1 - \lambda_d) + \Delta\rho^+(p, t)$$
+where:
+- $\lambda_d > 0$: decay rate (trace is perishable without re-traversal)
+- $\Delta\rho^+(p, t) > 0$: net positive deposit from *successful* closure along $p$; zero for failed/unstable traversals
+- “Decayable but reusable”: each successful traversal refreshes and deepens the trace
+
+**Friction reduction** (directional Ψ_f lowering for compatible subsequent closures):
+$$\Psi_f^{compat}(p, t) = \Psi_f^0(p) \cdot e^{-\gamma\,\rho(p,t)}, \quad \gamma > 0$$
+
+**Accessibility amplification** (compatible closures become more reachable):
+$$d_{accessible}^{compat}(p, t) \geq d_{accessible}^0 \cdot f\!\left(\rho(p,t)\right), \quad f \text{ monotone increasing}$$
+
+**Scaffold threshold** $\rho^* > 0$: When $\rho(p, t) > \rho^*$, path $p$ transitions from **foreground event** to **background scaffolding** — its structure is assumed as default organizational context for new selection processes arriving at $p$, rather than requiring active choice.
+
+**Multi-agent superposition**:
+$$\rho_{collective}(p, t) = \sum_i \rho_i(p, t)$$
+Compatible closures from multiple stable ISPs along the same path compound their traces. This allows $\rho^*$ to be crossed even when individual traces decay, provided repeated same-direction traversals maintain deposition above decay.
+
+#### Theorem Statement (scoped to stable ISPs under L₀ irreversibility)
+
+Given:
+1. Successful closure deposits net-positive directional trace: $\Delta\rho^+(p) > 0$ only for successful stable ISP closure along $p$
+2. Trace *directionally* reduces friction for compatible closures: $\partial\Psi_f^{compat}/\partial\rho < 0$
+3. Trace *directionally* amplifies accessibility for compatible closures: $\partial d_{accessible}^{compat}/\partial\rho > 0$
+4. Multi-agent superposition: $\rho_{collective}(p,t) = \sum_i \rho_i(p,t)$
+5. Scaffold threshold $\rho^*$ is finite
+
+When net deposition outpaces decay ($\sum_i \Delta\rho_i^+(p) > \lambda_d \cdot \rho_{collective}$):
+
+$$\rho_{collective}(p, t) \nearrow \rho^* \quad \Rightarrow \quad p \text{ transitions: foreground record} \to \text{background scaffold}$$
+
+New stable ISPs then form preferentially along $p$ (lowest Ψ_f, highest accessibility), compounding dominance.
+
+#### Four-Step Dominance Mechanism
+
+| Step | Mechanism | Formal Expression |
+|------|-----------|-------------------|
+| 1 | Only success net-deposits | $\Delta\rho^+ > 0$ iff successful closure |
+| 2 | Deposits directionally deepen along path | $\partial\Psi_f^{compat}/\partial\rho < 0$ (not uniform diffusion) |
+| 3 | Deposits lower cost of re-traversal | $\Psi_f^{compat}(t) < \Psi_f^0$ (compounding) |
+| 4 | Multi-agent repetition converts local path to background | $\rho_{collective} > \rho^*$ → scaffolding |
+
+#### Why Stable ISP History Becomes the Ground, Not Just the Record
+
+The asymmetry is not simply that stable ISPs write back while unstable events do not (that would explain an archive). The asymmetry is that **stable ISP traces are directionally self-reinforcing**: each deposit makes compatible future closures cheaper and more accessible, so those futures recur more often, deposit more traces, lower friction further — a ratchet. When this ratchet operates across multiple stable ISPs with compatible closures (multi-agent superposition), local path structures generalize into the background scaffolding of L₂.
+
+Unstable/one-shot events leave no net-positive directional trace (failed closures deposit zero by condition 1). They cannot participate in the compounding mechanism. Therefore, over time, the landscape asymmetry *accumulates in the direction of stable ISP history*, making L₂ the organizational background of visible selection rather than one among many archived trajectories.
+
+* **Dependence**: Ax-L2-01 (hysteresis accumulation base); Ax-L2-06b (successful-closure write-in gate: $\Psi_f < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$); T-ε-Constitute (stable ISP scope); Ax-Op-05 (two-phase closure, successful closure defined)
+* **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21_Formal_Axioms.md §VI` (T-ε-Constitute dynamic layer); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
+
+---
+
 **Formal Definition**: Selection tends toward maximizing future causal entropy within L_2 constraints.
 $$F_{causal} = T \nabla S(\tau)$$
 * **Implication**: L_2 同时是效率脚手架与适应陷阱。
