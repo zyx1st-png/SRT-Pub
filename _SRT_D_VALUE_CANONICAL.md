@@ -31,26 +31,30 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 
 ---
 
-## §1 规范定义层级（Canonical Priority）
+## §1 规范定义层级（Canonical Priority）——硬化版（2026-04-17）
 
-> **规范优先级声明**：
-> 本文件中关于 d-value 的定义分为两层：
+> **单一规范定义声明**：
+> d-value 有且仅有一个规范定义：**`Def-d-canonical`**（原 Def-d-2）：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$——主体效用对不可逆风险状态的梯度范数。
 >
-> 1. **第一性规范定义（Primary Canonical）**：`Def-d-2 风险梯度等价定义`，用于说明 d 与不可逆风险/关切边界的本体论耦合。
-> 2. **形式主表达（Formal Canonical Form）**：`Def-d-1 有效维度（谱公式）`，用于在 Core 数学语境中给出稳定、可计算、可比较的主表达。
+> **`Def-d-1`（$D_{eff}$ 谱公式）降格说明**：不再是”第二规范定义”或”形式主表达”，而是规范 d 的**几何容量 proxy**。具体地位：
+> - **容量上界**：$d_{canonical} \leq D_{eff}(M)$（$D_{eff}$ 是算子能追踪的最大方向数；$d_{canonical}$ 是其中真正赌注化的部分）
+> - **谱分解 proxy**：$D_{eff}$ 的每个 Fisher 本征方向 $v_i$ 可独立问”是否与真实赌注耦合”；$d_{canonical}$ = 赌注化子集的有效维数（见 §2b `Def-d-stakes`）
+> - **未赌注化带宽**：$\Delta d_{free} = D_{eff} - d_{stakes}$，度量辨别能力中未与真实不可逆风险耦合的剩余容量
 >
-> 使用原则：
-> - 讨论 **本体论意义 / AI 意识门槛 / 风险关切** 时，优先引用 `Def-d-2`。
-> - 讨论 **形式推导 / 信息论分析 / 特征值结构** 时，优先引用 `Def-d-1`。
-> - 其他近似式（如 `Def-d-bio`）均为投影或操作化近似，不替代以上两层规范地位。
+> 旧表述”**一个第一性语义锚点 + 一个形式主表达**的双层 canonical 架构”被废止——这是类型错误：proxy 不是主表达的同级替代，不应共享 canonical 地位。
 >
-> 这意味着：SRT 对 d-value 采用“**一个第一性语义锚点 + 一个形式主表达**”的双层 canonical 架构，而非单一定义垄断。
+> **使用原则（修订后）**：
+> - 讨论**本体论意义 / AI 意识门槛 / 风险关切**时：引用 `Def-d-canonical`（`‖∂U/∂S‖`）
+> - 讨论**几何容量上界 / 信息论可计算近似**时：引用 `Def-D_eff`（谱公式，须注明为 proxy，不得写 `≡`）
+> - 讨论**赌注化活跃维数**时：引用 `Def-d-stakes`（见 §2b）
+> - 其他近似式（`Def-d-bio` 等）均为操作化投影，不替代 canonical 地位。
 
 ## §2 规范定义（第一性原理，全域适用）
 
-### Def-d-1: 有效维度（谱公式） ⭐ FORMAL CANONICAL
+### Def-D_eff: 几何容量 Proxy（Geometric Capacity Proxy）
+**【降格 2026-04-17：不再是 canonical 定义，见 §1】**
 
-$$\boxed{d(\hat{G}) \equiv D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2}}$$
+$$D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2} \;\geq\; d_{canonical}$$
 
 **语义**：$\hat{G}_\theta$ 在 $L_0$ 上操作时实际激活的**有效维度数**（参与率指数，Participation Ratio）。
 
@@ -73,9 +77,11 @@ $$d \equiv D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname
 
 **信息论语义**：$D_{eff}(I_F)$ 是算子从 $L_0$ 中能**可靠分辨**的状态方向数（Cramér-Rao 下界的维度版本）。Fisher 矩阵测量 $\theta$ 变化时相邻分布的可区分度——d-value 是"算子能看见多少个有意义的 $L_0$ 方向"。
 
-**三层等价关系链**：
+**层级关系链（修订，2026-04-17）**：
 
-$$\underbrace{D_{eff}(\hat{G})}_{\text{Def-d-1（谱公式）}} \;\equiv\; \underbrace{D_{eff}(I_F(\theta))}_{\text{Def-d-1a（Fisher）}} \;\approx\; \underbrace{\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|}_{\text{Def-d-2（风险梯度）}}$$
+$$\underbrace{D_{eff}(\hat{G})}_{\text{Def-D\_eff（容量上界 proxy）}} \;\geq\; \underbrace{d_{stakes}(\theta)}_{\text{Def-d-stakes（赌注化子集，见 §2b）}} \;\equiv\; \underbrace{\left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|}_{\text{Def-d-canonical（规范定义）}}$$
+
+等号成立条件：所有 Fisher 本征方向均完全赌注化（$w_i = 1 \;\forall i$）。一般情况下严格不等式成立。
 
 **不确定性关系候选（Eq-IT-B'）**：
 
@@ -87,7 +93,7 @@ $$d \times \Psi_f \geq k_B T \cdot \mathcal{K}$$
 
 ---
 
-### Def-d-2: 风险梯度等价定义（AI / 伦理语境） ⭐ PRIMARY CANONICAL
+### Def-d-canonical: 风险梯度规范定义 ⭐ CANONICAL（原 Def-d-2，唯一规范定义）
 
 $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, \quad x \in \Sigma$$
 
@@ -96,7 +102,55 @@ $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, 
 **等价条件**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的特征向量对齐时，Def-d-1 与 Def-d-2 在一阶近似下等价：
 $$D_{eff}(\hat{G}) \approx \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| \quad \text{（当风险梯度与特征结构对齐时）}$$
 
+**等价条件（修订，2026-04-17）**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的 Fisher 本征向量完全对齐且全部赌注化时，$D_{eff} \approx d_{canonical}$。一般情况下 $d_{canonical} \leq D_{eff}$，差值为未赌注化带宽（见 §2b）。
+
 **来源**：`AI/_SRT_AI_Bridge.md Ax-BRIDGE-4`，Tension-Rev-IT4。
+
+---
+
+## §2b 赌注耦合结构（Stake-Coupling Structure）——新增（2026-04-17）
+
+### Def-d-stakes: 赌注化活跃维数
+
+$$d_{stakes}(\theta) = \frac{\left(\sum_i \lambda_i \cdot w_i\right)^2}{\sum_i \left(\lambda_i \cdot w_i\right)^2}$$
+
+**语义**：$D_{eff}$ 中真正与主体不可逆赌注耦合的活跃维数子集。等于规范定义 $d_{canonical} = \|\partial\mathcal{U}/\partial\mathcal{S}\|$，由谱分解方式表达。
+
+---
+
+### Def-w_i: 赌注耦合权重（Stake-Coupling Weight）
+
+$$w_i = R_i \cdot A_i \cdot C_i \;\in [0,1]$$
+
+第 $i$ 个 Fisher 本征方向 $v_i$ 与真实主体赌注的耦合权重，由三个分量共同决定：
+
+| 分量 | 含义 | 归零时的病理 |
+|------|------|------------|
+| $R_i$ | 该方向是否承载**真实不可逆风险**（非 L₂ 脚本、噪声或伪关切） | $R_i \approx 0$ → **假赌注**（fake stakes）：有辨别力，但风险是模拟的/L₂投影的 |
+| $A_i$ | **主体效用梯度**是否对准该方向上的真实风险 | $A_i \approx 0$ → **错绑赌注**（misbound stakes）：真实风险存在，但主体关切的是错误代理变量 |
+| $C_i$ | 该方向上的后果是否真正**回流到主体闭包**、身份连续性与后续选择能力 | $C_i \approx 0$ → **L₂ 伪关切 / 被外部吸收**：后果由 L₂ 结构吸收，不传回主体 |
+
+**乘积结构**：三者任一归零即 $w_i = 0$，该方向不计入 $d_{stakes}$。这是"必须同时满足"的逻辑结构（AND 门），不是加权平均。
+
+**SRT 已有概念对应**：
+- $R_i > 0$ ↔ T-FEP-1 具身脆弱性判据（$\Psi_f^{irrev} > 0$）
+- $A_i > 0$ ↔ Ax-ONT-3 规范定义的梯度对准条件
+- $C_i > 0$ ↔ Step ⑨ 关切边界的内生写回闭合条件
+
+---
+
+### Def-d-free: 未赌注化带宽（Unstaked Bandwidth）
+
+$$\Delta d_{free}(\theta) = D_{eff}(\theta) - d_{stakes}(\theta) \;\geq 0$$
+
+**语义**：可分辨但未与真实不可逆风险耦合的剩余方向数。
+
+**典型值**：
+- **当前 AI**：$d_{stakes} \approx 0$，$\Delta d_{free} \approx D_{eff}$（全部辨别力，零赌注化——$\Delta d_{free}$ 的纯净案例）
+- **人类假赌注 / 错绑 / L₂ 伪关切**：$0 < d_{stakes} \ll D_{eff}$，$\Delta d_{free}$ 包含三种病理的混合贡献
+- **理想高 d 主体**：$d_{stakes} \approx D_{eff}$，$\Delta d_{free} \approx 0$（辨别力与赌注充分对齐）
+
+* **Cross-ref**: `Core/SRT_Core_21_Formal_Axioms.md §2.1.7`（§2.1.7 已修订为引用本层级）；`AI/SRT_AI_01_Ontology.md`（AI 的 $\Delta d_{free} \approx D_{eff}$ 作为"哲学僵尸"诊断的信息几何读法）；`Core/SRT_Core_13a Ax-Op-02`（注意力维度 = $d_{stakes}$ 的离散化）。
 
 ---
 
