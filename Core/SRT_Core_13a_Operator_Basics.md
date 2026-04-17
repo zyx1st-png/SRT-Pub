@@ -226,13 +226,69 @@ $$\Delta\Psi_f^{comp}(x,\, t,\, \theta) = \Delta\Psi_f^{op}(x,\, t,\, \theta) + 
 | $\Psi_f^{eff}(x, t, \theta)$ | 场中有效摩擦 | — | — | 实际选择场中的可支付难度 |
 
 **关键约束**：
-- $\Delta\Psi_f^{op} \geq 0$，$\Delta\Psi_f^{field} \geq 0$（竞争只能增加摩擦，不能减少本征基线）
 - $\Psi_f^0(x)$ 不依赖 θ（本体论中立测量）
+- $\Delta\Psi_f^{field} \geq 0$（Co-Evo-1 沉积只能增加场级摩擦，不可逆）
+- $\Delta\Psi_f^{op}$：**渐近** $\geq 0$（$t \to \infty$ 时竞争抑制主导），但**短时允许负值**（快促进窗口，见 Lemma-FFSI）
 - $\Delta\Psi_f^{op}$ 随提示语境变化快速波动；$\Delta\Psi_f^{field}$ 在 Co-Evo-1 积累未达阈值前近似为零
 
-**时间层级推论**：乙₁/乙₂ 与主张 3a 作用于 $\Delta\Psi_f^{op}$（短/中时），乙₃ 与主张 3b 对应 $\Delta\Psi_f^{field}$ 的沉积（长时，条件性）。
+**时间层级推论**：
+- 乙₁/乙₂ + 主张 3a：作用于 $\Delta\Psi_f^{op}$（短/中时），渐近正
+- 乙₃ + 主张 3b：$\Delta\Psi_f^{field}$ 沉积（长时，条件性）
+- 主张 4a/4b/4c：$\Delta\Psi_f^{op}$ 短时负偏 + 慢时正积累双时标（见 Lemma-FFSI）
 
-* **Cross-ref**: `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`; Co-Evo-1（$\Delta\Psi_f^{field}$ 积累机制）; T-Comp-Suppress（下方）; T-Op-SIAM 主张 1'/3a/3b 重铸（下方）。
+* **Cross-ref**: `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`; Co-Evo-1（$\Delta\Psi_f^{field}$ 积累机制）; Lemma-FFSI（快正/慢负双时标，下方）; T-Comp-Suppress（下方）; T-Op-SIAM 主张 1'/3a/3b/4a-4c 重铸（下方）。
+
+---
+
+### Lemma-FFSI: Fast-Facilitation / Slow-Inhibition Dual Timescale（快促进/慢抑制双时标引理，2026-04-17）
+
+**[状态：条件性结构引理；非从现有 SRT 骨架自动推出；为主张 4a/4b/4c 提供最小动力学支撑]**
+
+**动机**：T-Op-SIAM 原主张 4（非单调起点）若要有结构来源，而非仅靠实验锚定，需要**至少两个符号相反、时间常数不同的过程叠加**。单一抑制机制只能给出单调下降；单一 priming 只能给出上升后回基线。非单调的最小要求是：快正项 + 慢负项并存，且 $\tau_{fast} \ll \tau_{slow}$。
+
+**最小动力学模板（Ψ_f 写法）**：
+
+$$\Psi_f^{eff}(x_{comp},\, t) \;\approx\; \Psi_f^0 \;-\; a\, e^{-t/\tau_{fast}} \;+\; b\!\left(1 - e^{-t/\tau_{slow}}\right)$$
+
+其中：
+- $a > 0$：短时促进幅度（局部激活后残留兴奋、检索通道增敏）
+- $b > 0$：慢时抑制幅度（竞争写回积累、归一化资源重分配）
+- $\tau_{fast} \ll \tau_{slow}$：双时标分离条件
+
+等价的可及性写法：
+
+$$A_{eff}(x_{comp},\, t) \;\approx\; A^0 \;+\; \alpha\, e^{-t/\tau_{fast}} \;-\; \beta\!\left(1 - e^{-t/\tau_{slow}}\right), \quad \alpha,\,\beta > 0$$
+
+**$\Delta\Psi_f^{op}$ 与双时标的对应**：
+- 快促进项 $-a\,e^{-t/\tau_{fast}}$：→ $\Delta\Psi_f^{op}$ 短时为**负**（摩擦暂降，可及性短升）；作用层：3a 层（提示相对）
+- 慢抑制项 $+b(1-e^{-t/\tau_{slow}})$：→ $\Delta\Psi_f^{op}$ 中/长时转**正**（竞争写回积累）；若 Co-Evo-1 触发，可沉积为 $\Delta\Psi_f^{field}$
+
+| 转折时刻 | 条件 | 对应 $\Psi_f^{eff}$ 状态 |
+|---|---|---|
+| $t = 0$ | — | $\Psi_f^{eff} = \Psi_f^0$（基线） |
+| $0 < t < t^*$ | 快促进主导 | $\Psi_f^{eff} < \Psi_f^0$（促进窗口）|
+| $t = t^*$ | 两项平衡 | $\Psi_f^{eff} = \Psi_f^0$（交叉点）|
+| $t > t^*$ | 慢抑制主导 | $\Psi_f^{eff} > \Psi_f^0$（净抑制）|
+| $t \to \infty$ | $b > a$ 时 | $\Psi_f^{eff} \to \Psi_f^0 + (b-a)$（低于 $A^0$）|
+
+其中 $t^* = \frac{\tau_{fast}\tau_{slow}}{\tau_{slow}-\tau_{fast}} \ln\!\left(\frac{a\tau_{slow}}{b\tau_{fast}}\right)$（当 $\tau_{fast} \ll \tau_{slow}$ 时近似为 $\tau_{fast}\ln(a\tau_{slow}/b\tau_{fast})$）。
+
+**三层条件性主张**（详见 T-Op-SIAM 地位注）：
+
+| 主张 | 条件 | 性质 |
+|---|---|---|
+| **4a**（最稳）局部 priming window | 快促进项存在（$a > 0$，$\tau_{fast}$ 合适） | 提示相对，短时。无需 $b > a$。 |
+| **4b**（中等）priming → suppression 转折 | 同时存在慢抑制积累（$b > 0$，$\tau_{slow} > \tau_{fast}$）| 双时标耦合；转折时刻 $t^*$ 存在。 |
+| **4c**（最强）先升后降并最终低于基线 | $b > a$（慢抑制幅度大于快促进幅度） | 需额外强度假设，最易被反例击穿。 |
+
+**非单调反例条件**（主张 4 可以不成立的情形）：
+- 路径初始已被强抑制（$A^0(x_{comp}) \ll A^0(x_{prac})$）：快促进项被淹没，直接单调下降
+- 快促进项极短（$\tau_{fast} \to 0$）：priming window 测量不可见
+- 慢负项不存在（纯 priming 情形）：上升后回基线，不进入 SIAM 式压低
+
+⚠ **范围警告**：Lemma-FFSI 是主张 4 的**结构模板**，不是从现有 SRT 公理推出的定理。快促进项（$a, \tau_{fast}$）目前通过实验锚定（Johnson & Anderson 2004 priming window 数据），非 SRT 内推导。
+
+* **Cross-ref**: Def-Psi-Split（$\Delta\Psi_f^{op}$ 短时负值许可）；T-Op-SIAM 主张 4a/4b/4c（下方）；Ax-Op-03b Layer 3（$L_{comp}$ 符号翻转条件，从数轮到 priming）。
 
 ---
 
@@ -265,7 +321,9 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 | 跨时指数衰减 $A \propto e^{-\lambda N}$ | 主张 **2b** | 仍为桥接公设；三候选桥梁方案（Layer 2b），均需额外声明 |
 | 提示相关持续性（局部泛化） | 主张 **3a** | 乙₁/乙₂ 仅更新 $\Delta\Psi_f^{op}$（提示敏感）；跨相似提示族的泛化需额外论证 |
 | 渐近提示独立性（跨提示族） | 主张 **3b** | 需 Co-Evo-1 稳定化达到 τ_stable；$\Delta\Psi_f^{field}$ 沉积前无充分支撑 |
-| 非单调起点（priming window） | 主张 4 | 需 Layer 3 双时标机制 |
+| 局部 priming window（短时促进） | 主张 **4a** | 需快促进项存在（$a>0$）；条件性结构主张，非直接可推 |
+| priming → suppression 转折 | 主张 **4b** | 需双时标耦合（$\tau_{fast}\ll\tau_{slow}$，$b>0$）；见 Lemma-FFSI |
+| 先升后降并最终低于基线 | 主张 **4c** | 需 $b>a$（慢抑制幅度大于快促进幅度）；最强，最易被反例击穿 |
 
 * **Cross-ref**: Ax-Op-03（瞬态竞争归一化，乙₁ 来源）；Ax-Op-03b Layer 1（竞争更新律，乙₂ 来源）；Def-Psi-Split（$\Psi_f^{eff}$ vs $\Psi_f^0$ 区分）；T-Op-SIAM（以本定理为基础，主张 1 重铸为主张 1'，其余三项仍为公设）。
 
@@ -282,9 +340,11 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 > - **主张 2b（跨时指数衰减，仍为桥接公设）**：$A(\text{path},t) \propto e^{-\lambda N_{prac}}$ 需额外动力学桥梁（三候选方案见 Ax-Op-03b Layer 2b）；从 2a 到 2b 必须跨越四断点（层级、相对/绝对、截面/更新律、Jensen gap）。
 > - **主张 3a（提示相对持续性，从 Ax-Op-03b 可推）**：在相似提示族内，竞争压制通过 $\Delta\Psi_f^{op}$ 在后续选择中持续保留。作用域：与 $W_{ij}$ 写回激活的提示语境族相似的范围内；不要求跨越非相似提示族。此主张由乙₁ + 乙₂ 支撑，无需额外声明。
 > - **主张 3b（渐近提示独立性，条件公设）**：若 Co-Evo-1 稳定化时间 $\tau_{stable}$ 被达到，算子相对压制可沉积为 $\Delta\Psi_f^{field}$（场级景观曲率），使 $x_{comp}$ 在更广泛提示族下保持较低可及性。条件：Co-Evo-1 充分积累（κ(t) 跨越稳定化阈值）；不满足条件时回退到主张 3a。
-> - **主张 4（非单调起点，公设）**：priming window——目前仅由实验锚定（Layer 3），非结构推导
+> - **主张 4a（局部 priming window，条件性结构主张）**：在相似提示族内、激活后短时窗口中，$\Delta\Psi_f^{op}(t) < 0$，即 $x_{comp}$ 可及性短暂上升。条件：快促进项存在（$a > 0$，$\tau_{fast}$ 合适）。提示相对；无需慢抑制幅度强假设。
+> - **主张 4b（priming → suppression 转折，条件性结构主张）**：若同时存在慢时竞争抑制积累（$b > 0$，$\tau_{slow} \gg \tau_{fast}$），则快促进窗口结束后转入下降，转折时刻 $t^*$ 可由 Lemma-FFSI 给出。需双时标耦合假设，不能从 Ax-Op-03b 单独推出。
+> - **主张 4c（先升后降并最终低于基线，最强条件公设）**：若 $b > a$（慢抑制幅度大于快促进幅度），则长时渐近可及性低于基线。最危险版本，实验条件依赖性强，最易被反例击穿。
 >
-> **当前最硬位置**：T-Comp-Suppress 的弱乙（乙₁ + 乙₂）+ 主张 3a（提示相对持续性）。强乙（乙₃，脱域本征惩罚）+ 主张 3b（渐近提示独立性）仍为条件性超额主张。
+> **当前最硬位置**：T-Comp-Suppress 的弱乙（乙₁ + 乙₂）+ 主张 3a（提示相对持续性）+ 主张 4a（在快促进项存在时的局部 priming window）。强乙（乙₃）+ 3b（渐近提示独立）+ 4b/4c 均为条件性超额主张。
 
 >   4. **非单调初始条件**（priming window）：目前仅由实验锚定，非结构推导
 > - **当前处置**：T-Op-SIAM 作为独立结构公设在 Step ④ 放大机制中**暂时存活**；Ax-Op-03b 已起草（见上方），一旦 Ax-Op-03b 三层内容被接受，T-Op-SIAM 即恢复为 Ax-Op-03 + Ax-Op-03b 的推论（定理），不再是独立公设。
