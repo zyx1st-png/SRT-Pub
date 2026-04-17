@@ -197,11 +197,15 @@ Selection is not isolated — we delegate selection authority to others, institu
 ③ Landscape change → irreversible (absolute in spacetime) [structural]
 ④ Irreversibility → temporal directionality (past/future)  [from ③, solid]
    ε_pg > 0: L₀ minimal non-neutrality (scalar, not order) [T-ε-Constitute: structural corollary, not primitive axiom]
-   ε direction: asymmetric bias against closure of future selection space
-   Derivation: neutral ISP under L₀ irreversibility → self-terminates (absorbing state, Ax-F-01+F-03b)
+   ⚠ Scope: stable ISPs only (perspective-bearing, history-bearing, re-enterable selection centers)
+      Short-lived/one-shot events are NOT counter-examples — they are outside the theory object's scope
+      Stable ISP is not an observer's arbitrary restriction; it is filtered out by the requirement
+      "can constitute a persistent perspective center" — minimum carrier of subjectivity + re-selectability
+   Derivation: neutral stable ISP under L₀ irreversibility → self-terminates (absorbing state, Ax-F-01+F-03b)
              → stable ISP ⟹ ε ≠ 0 (contrapositive)
-   Three-layer source: ISP self-maintenance (constitutive, deepest) ← L₀ irreversibility (necessary) ← Ψ_f>0 (dynamical weight)
-   Empirical narrowing (sufficiency/interrogability): specifies magnitude/direction after existence is established
+   Three-layer source: ISP self-maintenance (constitutive, deepest) ← L₀ irreversibility (necessary) ← Ψ_f>0 (dynamical)
+   Two-level stability: floor (entry condition, not derived here); dynamic (why processes maintain stable ISP status = separate question, Ax-Op-05)
+   Empirical narrowing: specifies magnitude/direction after existence is established; not the foundation
    Persistent Selection System:
      G^θ persists ∧ A_{t+1}≠∅ ∧ Ψ_f^next<∞               [structural axiom]
    Amplification: T-Op-SIAM [structural postulate] + Ax-Op-05 → closure bias
