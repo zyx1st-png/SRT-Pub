@@ -208,8 +208,12 @@ Selection is not isolated — we delegate selection authority to others, institu
    Empirical narrowing: specifies magnitude/direction after existence is established; not the foundation
    Persistent Selection System:
      G^θ persists ∧ A_{t+1}≠∅ ∧ Ψ_f^next<∞               [structural axiom]
-   Amplification: T-Op-SIAM [structural postulate] + Ax-Op-05 → closure bias
-   ⚠ T-Op-SIAM status (2026-04-16): independent structural postulate, NOT theorem.
+   Amplification: T-Op-SIAM [structural postulate, Claims 2-4] + Ax-Op-05 → closure bias
+   T-Comp-Suppress [weak theorem, 2026-04-17]: Claim 1 peeled off → effective accessibility ↓
+     乙₁ (online): divisive normalization → competitor active ⟹ x_comp suppressed immediately
+     乙₂ (plastic): repeated x_prac selection → W_ij↑ → suppression persists in similar contexts
+     NOT claimed: Ψ_f⁰(x_comp) elevated (乙₃); exponential form; cue-independence; priming window
+   ⚠ T-Op-SIAM status (2026-04-17): Claim 1 → T-Comp-Suppress (weak theorem, effective Ψ_f only).
      "from ①②" was incorrect: ①② give landscape-change-happens, not direction.
      Ax-Op-03+04 also insufficient: no signed writeback, no persistence guarantee.
      T-Op-SIAM carries 4 strong claims beyond existing axioms:

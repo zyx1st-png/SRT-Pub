@@ -175,16 +175,72 @@ $$\text{Ax-Op-03} + \text{Ax-Op-03b} \;\Rightarrow\; \text{T-Op-SIAM（方向 + 
 
 * **Cross-ref**: Ax-Op-03（瞬态竞争归一化，本公理的必要前件）；T-Op-SIAM（本公理 + Ax-Op-03 的推论）；`_SRT_PSI_F_CANONICAL.md Def-Ψ-1`（$\Psi_f$ 正则定义）；`Core/SRT_Core_13a Ax-Op-04`（$\theta(t)$ 迭代演化）。
 
+---
+
+### Def-Psi-Split: Effective vs Intrinsic Friction Distinction（有效摩擦与本征摩擦区分，2026-04-17）
+
+**动机**：T-Op-SIAM 的方向性主张（$\Delta A(x_{comp})<0$）在"场中有效摩擦"与"脱域本征摩擦"之间存在关键歧义。若不区分，会把尚未证明的强主张（乙₃）混入已有基础（乙₁/乙₂）。
+
+$$\Psi_f^{eff}(x,\, t,\, \theta) \;\equiv\; \Psi_f^0(x) + \Delta\Psi_f^{comp}(x,\, t,\, \theta)$$
+
+| 量 | 含义 | 测量语境 |
+|---|---|---|
+| $\Psi_f^0(x)$ | 本征基线摩擦 | 孤立测量，无竞争耦合激活 |
+| $\Delta\Psi_f^{comp}(x, t, \theta)$ | 竞争场附加摩擦 | 依赖当前算子 θ 的 $W_{ij}$ 结构（$\geq 0$）|
+| $\Psi_f^{eff}(x, t, \theta)$ | 场中有效摩擦 | 实际选择场中的可支付难度 |
+
+**关键约束**：$\Delta\Psi_f^{comp} \geq 0$（竞争只能增加摩擦，不能减少本征基线）；$\Psi_f^0(x)$ 不依赖 θ（本体论中立测量）。
+
+* **Cross-ref**: `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`; T-Comp-Suppress（下方）; T-Op-SIAM 主张 1' 重铸（下方）。
+
+---
+
+### T-Comp-Suppress: Competitive Suppression Weak Theorem（竞争压制弱定理，2026-04-17）
+
+**[状态：弱定理，从 Ax-Op-03 + Ax-Op-03b Layer 1 可推；不依赖 Layer 2/3；不主张乙₃]**
+
+**Statement**：在稳定竞争耦合（Ax-Op-03）与反复实践写回（Ax-Op-03b Layer 1）的条件下，$x_{prac}$ 的持续激活使 $x_{comp}$ 在相关竞争语境中的场中有效摩擦单调上升：
+
+$$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow\quad A_{eff}(x_{comp},\, t,\, \theta) \searrow$$
+
+**推导机制（两步，均来自已有结构）**：
+
+**乙₁（在线相对惩罚）—— 直接来自 Ax-Op-03 归一化**：
+
+幽灵算子除法归一化：$[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon_{reg} + \sum_j W_{ij} x_j^n)$
+
+当 $x_{prac}$（竞争项 $j$）被激活时，分母增大 → $[\hat{G}_\theta]_{x_{comp}}$ 当轮主动压低。这不是"未得折扣"，而是对手成功对 $x_{comp}$ 的实时惩罚。
+
+**乙₂（塑性关系惩罚）—— 来自 Ax-Op-03b Layer 1 写回律**：
+
+反复选择 $x_{prac}$ → $W_{ij}$（$i=x_{comp}, j=x_{prac}$）增大 → 此后相似竞争语境中，$x_{comp}$ 在归一化分母中受到更强的结构性压制 → $\Delta\Psi_f^{comp}$ 在相关语境中持续保留。
+
+**T-Comp-Suppress 不主张的内容（故意留空）**：
+
+| 不主张 | 对应 T-Op-SIAM 主张 | 原因 |
+|---|---|---|
+| $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 脱域本征惩罚） | 主张 1 强版本 | 需 Ax-Op-03b Layer 3 + 提示独立性声明 |
+| 指数衰减函数形式 | 主张 2 | 需 Layer 2 Boltzmann 桥接，已标注为建模选择 |
+| 提示无关性（线索无关） | 主张 3 | 现有动力学是语境依赖抑制；泛化程度是独立变量 |
+| 非单调起点（priming window） | 主张 4 | 需 Layer 3 双时标机制 |
+
+* **Cross-ref**: Ax-Op-03（瞬态竞争归一化，乙₁ 来源）；Ax-Op-03b Layer 1（竞争更新律，乙₂ 来源）；Def-Psi-Split（$\Psi_f^{eff}$ vs $\Psi_f^0$ 区分）；T-Op-SIAM（以本定理为基础，主张 1 重铸为主张 1'，其余三项仍为公设）。
+
+---
+
 ### T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理）
 
-> **地位注（2026-04-16 硬化结果）**：T-Op-SIAM 当前为**独立结构公设**，非定理。
+> **地位注（2026-04-17 重铸）**：T-Op-SIAM 为**独立结构公设**，非定理。主张 1 已被剥离为弱定理 T-Comp-Suppress（有效可及性版本）；下方主张 1' 为重铸后版本，更稳但作用域更窄。主张 2、3、4 仍为超额公设主张，待 Ax-Op-03b Layer 2/3 完成后再评估。
 >
-> - "从 Steps ①② 推出"的声称不成立：Steps ①② 仅给出"地形发生变化"，不给"变化方向"（败者可及性↓）。
-> - Ax-Op-03 + Ax-Op-04 亦不足：Ax-Op-03 只给瞬态归一化（当轮压制），Ax-Op-04 只给递归迭代（competition repeats）；两者均不保证"败者压制带方向写入历史"。
-> - **T-Op-SIAM 包含四项超出既有公理的强主张**：
->   1. **方向性**：$\Delta A(x_{comp}) < 0$
->   2. **持续性**：$e^{-\lambda N_{prac}}$ 累积衰减写回
->   3. **提示独立性**：作用于 $L_0$ 内容本身（非 $L_1/L_2$ 检索联结）——需额外声明 $A(x,t)$ 的本体论居于 $L_0$ 层
+> **主张 1'（条件化有效可及性降低，已由 T-Comp-Suppress 支撑）**：
+> 在稳定竞争耦合与反复实践写回条件下，$x_{comp}$ 在相关选择语境中的**有效可及性** $A_{eff}$ 下降。注意：这不等同于 $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 主张）；后者目前尚无充分支撑。
+>
+> - **主张 2（持续性，公设）**：$e^{-\lambda N_{prac}}$ 指数衰减写回——Boltzmann 借用，需声明为 bridge postulate
+> - **主张 3（提示独立性，公设）**：作用于 $L_0$ 内容本身（非 $L_1/L_2$ 检索联结）——需 $A(x,t)$ 本体论居于 $L_0$ 层的额外声明
+> - **主张 4（非单调起点，公设）**：priming window——目前仅由实验锚定（Layer 3），非结构推导
+>
+> **当前最硬位置**：T-Comp-Suppress 的弱乙（乙₁ + 乙₂）。强乙（乙₃，脱域本征惩罚）仍为超额主张。
+
 >   4. **非单调初始条件**（priming window）：目前仅由实验锚定，非结构推导
 > - **当前处置**：T-Op-SIAM 作为独立结构公设在 Step ④ 放大机制中**暂时存活**；Ax-Op-03b 已起草（见上方），一旦 Ax-Op-03b 三层内容被接受，T-Op-SIAM 即恢复为 Ax-Op-03 + Ax-Op-03b 的推论（定理），不再是独立公设。
 > - **可守住的基底**（无需 Ax-Op-03b）：$\mathbb{E}[\Psi_f] \uparrow \;\Rightarrow\; A \downarrow$ 的**序关系**可从 payability 条件（Ax-F-02 熵压缩 + Persistent Selection System）读出——这给出方向性的弱版本，但无法给出具体函数形式或持续性量级。
