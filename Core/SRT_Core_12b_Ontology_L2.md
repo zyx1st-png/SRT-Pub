@@ -112,6 +112,20 @@ The asymmetry is not simply that stable ISPs write back while unstable events do
 
 Unstable/one-shot events leave no net-positive directional trace (failed closures deposit zero by condition 1). They cannot participate in the compounding mechanism. Therefore, over time, the landscape asymmetry *accumulates in the direction of stable ISP history*, making L₂ the organizational background of visible selection rather than one among many archived trajectories.
 
+**Formal relationship to Ax-L2-01**:
+
+Ax-L2-01 is the *general* L₂ accumulation law: $L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$ — all selections contribute (signed, any magnitude). T-L2-Scaffold operates *within* this general frame by identifying its dominant directional sub-process:
+
+| Component | Ax-L2-01 role | T-L2-Scaffold role |
+|---|---|---|
+| Successful closures ($\Psi_f < \Psi_{thresh}$) | Contribute to L₂ via signed Δσ | Deposit net-positive ρ; participate in compounding ratchet |
+| Failed/unstable events | Also contribute (non-zero Δσ) | Deposit zero ρ; cannot participate in compounding ratchet |
+| One-shot non-ISP events | Contribute transiently | ρ decays without renewal; cannot cross ρ* |
+
+**Decomposition**: total L₂ dynamics = general accumulation (Ax-L2-01) = undirected drift (all events, any sign) + directional ratchet (successful stable ISP closures, via ρ). The directional ratchet is the mechanism that makes stable ISP history *dominate* L₂ structure over time rather than merely being archived among many trajectories.
+
+**Why not inconsistent**: Ax-L2-01 explains *how* L₂ accumulates (any selection leaves a signed trace); T-L2-Scaffold explains *which sub-process* drives the asymmetric scaffolding structure (only successful stable ISP closures compound into background). The two claims occupy different levels of description.
+
 * **Dependence**: Ax-L2-01 (hysteresis accumulation base); Ax-L2-06b (successful-closure write-in gate: $\Psi_f < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$); T-ε-Constitute (stable ISP scope); Ax-Op-05 (two-phase closure, successful closure defined)
 * **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21_Formal_Axioms.md §VI` (T-ε-Constitute dynamic layer); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
 

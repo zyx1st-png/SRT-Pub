@@ -196,7 +196,9 @@ Selection is not isolated — we delegate selection authority to others, institu
 ② Information creation → landscape change                 [analytic]
 ③ Landscape change → irreversible (absolute in spacetime) [structural]
 ④ Irreversibility → temporal directionality (past/future)  [from ③, solid]
-   ε_pg > 0: L₀ minimal non-neutrality (scalar, not order) [T-ε-Constitute: structural corollary, not primitive axiom]
+   ε_pg > 0: L₀ minimal non-neutrality (scalar, no inherent direction) [L₀ structural postulate — status UNCHANGED by T-ε-Constitute]
+   ISP-level ε: anti-closure asymmetric bias of stable ISPs [T-ε-Constitute: structural corollary, not primitive axiom]
+   ε_pg ↔ ISP-level ε bridge: ε_pg (seed: asymmetry exists) + Ax-F-03b (direction filter: closure=absorbing → only anti-closure stable-ISP-compatible) → ISP-level ε (anti-closure direction, non-contingent for stable ISPs)
    ⚠ Scope: stable ISPs only (perspective-bearing, history-bearing, re-enterable selection centers)
       Short-lived/one-shot events are NOT counter-examples — they are outside the theory object's scope
       Stable ISP is not an observer's arbitrary restriction; it is filtered out by the requirement
