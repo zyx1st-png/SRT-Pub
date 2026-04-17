@@ -93,6 +93,106 @@ $$\text{Algorithm} \equiv \lim_{\Psi_f \to 0,\; I_s \to 0} L_2$$
 
 ---
 
+## §L₂-Agency: L₂ Agency Structure & Legitimacy（L₂ 代理结构与合法性）
+
+**新增（2026-04-17，对话式硬化结果）**
+
+### Def-L2-DualLayer: L₂ Dual-Layer Structure（L₂ 双层结构定义）
+
+**定义**：L₂ 是双层涌现结构，而非单纯的历史路径沉积：
+
+$$L_2 = \langle \mathcal{P}_{low\text{-}\Psi}, \;\mathcal{A}_{auth} \rangle$$
+
+其中：
+- $\mathcal{P}_{low\text{-}\Psi}$：**路径层**——经反复实践后摩擦趋低的选择路径集合（$\Psi_f \leq \Psi_c$）；选择在此层以**内化结构**形式持续运行，不再呈现为离散事件
+- $\mathcal{A}_{auth}$：**代理层**——被 L₂ 结构固化的可合法行使选择的代理位（agency positions）及其被认可选择域的分配
+
+**L₁/L₂ 时间粒度区分**：L₁ 选择以事件粒度出现（punctuated，$\Psi_f > \Psi_c$）；L₂ 选择以结构粒度持续运行（continuous，$\Psi_f \leq \Psi_c$）。L₂ 并非选择停止，而是选择的时间形式发生转变。
+
+**选择解耦与真空期**：当 L₂ 代理结构因合法性危机而打开重组窗口时，路径层与代理层均暂时回到 L₁ 粒度——此即真空期的本体论描述。参见 `Core_Law/SRT_Core_Text_CN.md Step ⑧`。
+
+* **Cross-ref**: Ax-L2-01（迟滞积累 = 路径层形成机制）; `Core/SRT_Core_13a Ax-Op-01`（遮蔽而非排除：L₂ 路径仍在 L₀，只是低摩擦固化）; `Core/SRT_Core_13a Ax-Op-03b`（竞争历史写回律 = 路径层摩擦更新机制）。
+
+---
+
+### Def-L2-Rights: Rights as Recognized Selection Domain Allocation（权利的形式定义）
+
+**定义**：**权利**是代理层 $\mathcal{A}_{auth}$ 中，代理位之间被 L₂ 结构化分配的**可承认选择域**：
+
+$$\text{Rights}(a_i) \equiv \mathcal{D}_{auth}(a_i) \subseteq \Omega_{L_1}$$
+
+其中 $\mathcal{D}_{auth}(a_i)$ 是代理位 $a_i$ 在当前 L₂ 结构中被认可可行使选择的域，$\Omega_{L_1}$ 是 L₁ 选择全域。
+
+**权利不是道德概念，而是 L₂ 结构性事实**：某主体"拥有"某权利，等价于其对应选择域被当前 L₂ 代理层承认。"侵权"等价于某主体的实际选择被驱逐出其 $\mathcal{D}_{auth}$，或其 $\mathcal{D}_{auth}$ 本身被结构性压缩。
+
+* **Cross-ref**: T-L₂-Sustain（合法性判据：$\mathcal{D}_{auth}$ 分配的可持续性）; C-Legit-Retroactive（追认机制）。
+
+---
+
+### T-L₂-Sustain: Suppressive Closure Self-Defeat Theorem（抑制式闭包自我否定定理）
+
+**[从 Ax-Op-01 + Ax-Op-03b + Ax-Op-05 推导；H 标记保守]**
+
+**命题**：凡仅通过抑制未被编码之 L₀ 压力来恢复 L₂ 闭包者，皆不可持续。
+
+**形式表述**：设 $P_{blocked}(t) = \sum_{i \notin \mathcal{A}_{auth}} d_i \cdot \Psi_f^{blocked}(i,t)$ 为被当前代理层排除的主体所产生的累积 L₀ 压力。
+
+若 L₂ 的闭包策略满足"仅抑制型"条件：
+$$\frac{d P_{blocked}}{dt} > 0 \quad \text{（排除主体的压力持续积累）}$$
+
+则：
+1. 由 **Ax-Op-01**（遮蔽非排除）：被压制选择潜力留在 L₀，不消失
+2. 由 **Ax-Op-03b 更新律**：被压制路径持续积累 $\Psi_f^{blocked}$，总压力负载增长
+3. 由 **Ax-Op-05 两阶段闭包**：当 $P_{blocked}$ 增长至超出吸引域 $B(\theta_{L_2})$ 的承载边界时，Phase 2 单调下降条件失效，闭包固定点 $\Psi_f^*$ 不再可维持
+4. 因此：仅抑制型闭包不满足"可持续"条件 ∎
+
+**与 ΔR_future 的对接**：
+$$\text{抑制式} \;\Rightarrow\; P_{blocked} \uparrow \;\Rightarrow\; d_{accessible}^{collective} \downarrow \;\Rightarrow\; \Delta R_{future}^{collective} \leq 0$$
+$$\text{包容式} \;\Rightarrow\; P_{blocked} \to 0 \;\Rightarrow\; d_{accessible}^{collective} \uparrow \;\Rightarrow\; \Delta R_{future}^{collective} > 0$$
+
+因此 $\Delta R_{future}^{collective} > 0$ 是可持续闭包的形式操作化标准，自动区分包容式与抑制式稳定，无需引入额外判据。
+
+**[H] 标注范围**：$P_{blocked}$ 的聚合公式（对 $d_i \cdot \Psi_f^{blocked}$ 的线性求和）为简化候选，实际积累动力学可能非线性；定理的序关系结论（抑制式不可持续）比具体形式更稳健。
+
+* **Cross-ref**: Ax-Op-01（遮蔽非排除）; Ax-Op-03b（竞争历史写回律）; Ax-Op-05（两阶段闭包）; `_SRT_D_VALUE_CANONICAL.md Def-d-1a`（$d_{accessible}$ 定义）。
+
+---
+
+### C-Legit-Retroactive: Retroactive Legitimacy Corollary（追认式合法性推论）
+
+**从 T-L₂-Sustain 直接推出**
+
+**推论**：L₂ 代理位分配的合法性**不由先验授予**，而由其是否提高未来闭包可持续性来**追认**。
+
+**形式表述**：设 $L_2^{new}$ 为 $L_2^{old}$ 合法性危机后的候选替代分配。
+
+$$\text{Legitimate}(L_2^{new}) \;\Longleftrightarrow\; \exists \, T > 0 : \Delta R_{future}^{collective}(L_2^{new}, T) > \Delta R_{future}^{collective}(L_2^{old}, T)$$
+
+**追认机制**：合法性不由现有 L₂ 结构裁判（避免无限后退），而由继起 L₂ 的多主体收敛事后确认——操作代理：反共错稳健性（跨位置/时间/接口的收敛信号无共享 L₂ 来源）。
+
+**无限后退问题的解决**：无需元 L₂ 裁判，因合法性标准（$\Delta R_{future}^{collective}$）是功能性的，由闭包能力的实证演示确立，而非先验规则体系授予。
+
+* **Cross-ref**: T-L₂-Sustain; `Core_Law/SRT_Core_Text_CN.md Step ⑩`（正当性不是规则被遵守，而是规则仍然指向共同目标——现精确化为 $\Delta R_{future}^{collective} > 0$）。
+
+---
+
+### U-Unrepresented-Challenge: Unrepresented Agent Challenge Reading（未获代理位主体的挑战解读规则）
+
+**使用规则（非定理，解释框架）**
+
+**规则**：未获代理位的主体对现存 L₂ 结构的挑战，在 SRT 框架内**首先被读作压力信号**，而非预设为越权行为。其效力由是否导向更高 $\Delta R_{future}^{collective}$ 的重分配事后检验，而非由现有 L₂ 的认可标准预先裁判。
+
+**理由**：
+- 由 T-L₂-Sustain：未被编码的 L₀ 压力本身即为可持续闭包的约束信号
+- 由 Def-L2-Rights：现有 $\mathcal{D}_{auth}$ 分配由当前 L₂ 定义，不构成判断压力正当性的独立标准
+- 由 C-Legit-Retroactive：合法性追认依赖 $\Delta R_{future}^{collective}$，而非现有代理层授权
+
+**操作含义**：这不等于"所有挑战都有效"，而是说**检验标准是功能性的**（是否提升集体再选择空间），而非程序性的（是否获得当前结构认可）。
+
+* **Cross-ref**: T-L₂-Sustain; C-Legit-Retroactive; `Core_Law/SRT_Core_Text_CN.md Step ⑧`（遮蔽动态的干预逻辑：Phase B 主体的挑战不是越权，是压力信号）。
+
+---
+
 ## §Co-Evolution: L₀-Operator Co-evolutionary Dynamics（L₀-算子协同演化动力学）
 
 **新增（2026-04-10）**
