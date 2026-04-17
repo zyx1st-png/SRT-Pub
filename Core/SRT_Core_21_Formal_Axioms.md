@@ -197,9 +197,13 @@ $$ [\hat{G}_θ(x)]_i = \frac{x_i^n}{ε_{reg} + \sum_j W_{ij} \cdot x_j^n} $$
 
 $$ \frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ · ∇C_{L_2}[σ] $$
 
-### 2.1.7 d值的有效维度形式化（d = D_eff）
+### 2.1.7 d值层级与几何容量 Proxy（硬化 2026-04-17）
 
-$$ d(\hat{G}) ≡ D_{eff}(M) = \frac{(\sum λ_i)^2}{\sum λ_i^2} $$
+**【类型错误修正】** 原写法 $d(\hat{G}) \equiv D_{eff}(M)$ 是类型错误——将 proxy 写成了规范定义。修订为层级关系：
+
+$$d_{canonical} \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| \;\leq\; D_{eff}(M) = \frac{(\sum \lambda_i)^2}{\sum \lambda_i^2}$$
+
+其中 $D_{eff}$ 是几何容量上界 proxy，$d_{canonical}$ 是真正赌注化的活跃维数。两者差值 $\Delta d_{free} = D_{eff} - d_{stakes}$ 为未赌注化带宽。完整层级与赌注耦合权重 $w_i = R_i \cdot A_i \cdot C_i$ 的定义见 `_SRT_D_VALUE_CANONICAL.md §2b`。
 
 ### 2.1.8 信息论公理
 
@@ -224,7 +228,7 @@ $$ Mass_{ontological}(O) = Mass_{energy}(O) + τ \cdot Assembly(O) $$
 
 1. **选择-存在映射 (Ax-F-01)**：$\exists x \iff x \in \mathrm{Range}(\hat{G})$ — 存在是选择映射的值域，而非预设背景。
 2. **锚定熵压缩 (Ax-F-02)**：$E = 1 - H(L_1)/H(L_0)$ — 现实的稳固程度由从潜在域到显现域的熵压缩率决定。
-3. **d 值有效维度 (§2.1.7)**：$d(\hat{G}) \equiv D_{eff}(M) = (\sum \lambda_i)^2 / \sum \lambda_i^2$ — 算子的关切带宽由其选择流形的有效维度刻画。
+3. **d 值层级 (§2.1.7)**：$d_{canonical} \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\| \leq D_{eff}(M)$。$D_{eff}$ 是几何容量 proxy（上界），非规范定义；赌注化活跃维数 $d_{stakes} = d_{canonical}$，未赌注化带宽 $\Delta d_{free} = D_{eff} - d_{stakes}$（见 `_SRT_D_VALUE_CANONICAL.md §2b`）。
 4. **向下因果方程 (Ax-F-10)**：$d\sigma/dt = \hat{G}_\theta[\sigma] - \nabla F[\sigma] - \lambda \cdot \nabla C_{L_2}[\sigma]$ — 状态演化由选择驱动、自由能梯度和收敛域约束三项共同决定。
 
 5. **幽灵算子禀赋统一性 (Ax-F-11)**：$\hat{G}^{(n+1)} = \Lambda \circ \hat{G}^{(n)} \circ \Lambda^{-1}$ — 量子坍缩、侧抑制、粗粒化、归一化、范畴化均为同一选择结构在不同尺度的展开。
