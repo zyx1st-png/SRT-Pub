@@ -200,7 +200,7 @@ $$N_{prac} \geq N_c \;\Rightarrow\; L_{comp}(x_{comp}) > 0 \quad \text{（净抑
 
 $$\text{Ax-Op-03} + \text{Ax-Op-03b} \;\Rightarrow\; \text{T-Op-SIAM（方向 + 持续性 + priming window）}$$
 
-提示独立性（cue-independence）仍需额外声明：$A(x,t)$ 的本体论居于 $L_0$ 层，而非 $L_1/L_2$ 检索联结层。
+**时间层级结构**：Ax-Op-03b Layer 1 写回更新的是 $\Delta\Psi_f^{op}$（算子相对、提示敏感、快速），而非 $\Psi_f^{field}$（场级景观曲率、提示弱依赖、慢速，须经 Co-Evo-1 积累）。因此提示相关压制（短时）先于跨提示泛化（中时），渐近提示独立性（长时）是条件性结论，见主张 3a/3b 区分（下方 T-Op-SIAM 地位注）。
 
 * **Implication**：每次竞争选择不仅当轮归一化（Ax-Op-03），还通过摩擦写回改变后续轮次的可及性地形——选择历史以路径预期摩擦的形式积累在算子参数 $\theta(t)$ 中。
 
@@ -210,19 +210,29 @@ $$\text{Ax-Op-03} + \text{Ax-Op-03b} \;\Rightarrow\; \text{T-Op-SIAM（方向 + 
 
 ### Def-Psi-Split: Effective vs Intrinsic Friction Distinction（有效摩擦与本征摩擦区分，2026-04-17）
 
-**动机**：T-Op-SIAM 的方向性主张（$\Delta A(x_{comp})<0$）在"场中有效摩擦"与"脱域本征摩擦"之间存在关键歧义。若不区分，会把尚未证明的强主张（乙₃）混入已有基础（乙₁/乙₂）。
+**动机**：T-Op-SIAM 的方向性主张（$\Delta A(x_{comp})<0$）在"场中有效摩擦"与"脱域本征摩擦"之间存在关键歧义；且竞争场附加摩擦本身需进一步区分算子相对的快速分量与场级慢速分量——若不区分，会把尚未证明的强主张（乙₃/主张 3b）混入已有基础（乙₁/乙₂/主张 3a）。
 
-$$\Psi_f^{eff}(x,\, t,\, \theta) \;\equiv\; \Psi_f^0(x) + \Delta\Psi_f^{comp}(x,\, t,\, \theta)$$
+$$\Psi_f^{eff}(x,\, t,\, \theta) \;\equiv\; \Psi_f^0(x) + \Delta\Psi_f^{op}(x,\, t,\, \theta) + \Delta\Psi_f^{field}(x,\, t)$$
 
-| 量 | 含义 | 测量语境 |
-|---|---|---|
-| $\Psi_f^0(x)$ | 本征基线摩擦 | 孤立测量，无竞争耦合激活 |
-| $\Delta\Psi_f^{comp}(x, t, \theta)$ | 竞争场附加摩擦 | 依赖当前算子 θ 的 $W_{ij}$ 结构（$\geq 0$）|
-| $\Psi_f^{eff}(x, t, \theta)$ | 场中有效摩擦 | 实际选择场中的可支付难度 |
+其中竞争场附加摩擦已展开为两个时间层级分量：
 
-**关键约束**：$\Delta\Psi_f^{comp} \geq 0$（竞争只能增加摩擦，不能减少本征基线）；$\Psi_f^0(x)$ 不依赖 θ（本体论中立测量）。
+$$\Delta\Psi_f^{comp}(x,\, t,\, \theta) = \Delta\Psi_f^{op}(x,\, t,\, \theta) + \Delta\Psi_f^{field}(x,\, t)$$
 
-* **Cross-ref**: `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`; T-Comp-Suppress（下方）; T-Op-SIAM 主张 1' 重铸（下方）。
+| 量 | 含义 | 时间尺度 | 提示依赖 | 来源 |
+|---|---|---|---|---|
+| $\Psi_f^0(x)$ | 本征基线摩擦 | 静态 | 无 | 孤立测量 |
+| $\Delta\Psi_f^{op}(x, t, \theta)$ | 算子相对竞争摩擦 | 快（轮次级） | **强**（$W_{ij}$ 结构依赖当前提示族） | Ax-Op-03b Layer 1 写回 |
+| $\Delta\Psi_f^{field}(x, t)$ | 场级景观曲率摩擦 | 慢（Co-Evo-1 积累） | **弱**（κ(t) 非提示特异） | Co-Evo-1 稳定化后沉积 |
+| $\Psi_f^{eff}(x, t, \theta)$ | 场中有效摩擦 | — | — | 实际选择场中的可支付难度 |
+
+**关键约束**：
+- $\Delta\Psi_f^{op} \geq 0$，$\Delta\Psi_f^{field} \geq 0$（竞争只能增加摩擦，不能减少本征基线）
+- $\Psi_f^0(x)$ 不依赖 θ（本体论中立测量）
+- $\Delta\Psi_f^{op}$ 随提示语境变化快速波动；$\Delta\Psi_f^{field}$ 在 Co-Evo-1 积累未达阈值前近似为零
+
+**时间层级推论**：乙₁/乙₂ 与主张 3a 作用于 $\Delta\Psi_f^{op}$（短/中时），乙₃ 与主张 3b 对应 $\Delta\Psi_f^{field}$ 的沉积（长时，条件性）。
+
+* **Cross-ref**: `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`; Co-Evo-1（$\Delta\Psi_f^{field}$ 积累机制）; T-Comp-Suppress（下方）; T-Op-SIAM 主张 1'/3a/3b 重铸（下方）。
 
 ---
 
@@ -253,7 +263,8 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 | $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 脱域本征惩罚） | 主张 1 强版本 | 需 Ax-Op-03b Layer 3 + 提示独立性声明 |
 | 单轮指数分布（当前轮 Gibbs 配分） | 主张 **2a** | 已由最大熵推出（Layer 2a），T-Comp-Suppress 不需要它，但与之相容 |
 | 跨时指数衰减 $A \propto e^{-\lambda N}$ | 主张 **2b** | 仍为桥接公设；三候选桥梁方案（Layer 2b），均需额外声明 |
-| 提示无关性（线索无关） | 主张 3 | 现有动力学是语境依赖抑制；泛化程度是独立变量 |
+| 提示相关持续性（局部泛化） | 主张 **3a** | 乙₁/乙₂ 仅更新 $\Delta\Psi_f^{op}$（提示敏感）；跨相似提示族的泛化需额外论证 |
+| 渐近提示独立性（跨提示族） | 主张 **3b** | 需 Co-Evo-1 稳定化达到 τ_stable；$\Delta\Psi_f^{field}$ 沉积前无充分支撑 |
 | 非单调起点（priming window） | 主张 4 | 需 Layer 3 双时标机制 |
 
 * **Cross-ref**: Ax-Op-03（瞬态竞争归一化，乙₁ 来源）；Ax-Op-03b Layer 1（竞争更新律，乙₂ 来源）；Def-Psi-Split（$\Psi_f^{eff}$ vs $\Psi_f^0$ 区分）；T-Op-SIAM（以本定理为基础，主张 1 重铸为主张 1'，其余三项仍为公设）。
@@ -262,17 +273,18 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 
 ### T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理）
 
-> **地位注（2026-04-17 重铸）**：T-Op-SIAM 为**独立结构公设**，非定理。主张 1 已被剥离为弱定理 T-Comp-Suppress（有效可及性版本）；下方主张 1' 为重铸后版本，更稳但作用域更窄。主张 2、3、4 仍为超额公设主张，待 Ax-Op-03b Layer 2/3 完成后再评估。
+> **地位注（2026-04-17 重铸）**：T-Op-SIAM 为**独立结构公设**，非定理。主张 1 已被剥离为弱定理 T-Comp-Suppress（有效可及性版本）；主张 3 已拆分为 3a（可推）与 3b（条件公设）。主张 2b/3b/4 仍为超额主张，待 Ax-Op-03b Layer 2/3 + Co-Evo-1 完成后再评估。
 >
 > **主张 1'（条件化有效可及性降低，已由 T-Comp-Suppress 支撑）**：
 > 在稳定竞争耦合与反复实践写回条件下，$x_{comp}$ 在相关选择语境中的**有效可及性** $A_{eff}$ 下降。注意：这不等同于 $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 主张）；后者目前尚无充分支撑。
 >
 > - **主张 2a（单轮配分 Gibbs，从最大熵推出）**：$p_t(i|C_t) \propto e^{-\beta_t\Psi_i(t)}$；幽灵算子 simplex + 平均摩擦约束 + 最大熵 → Gibbs 型当前轮配分。非纯建模选择，但作用域仅限当前轮相对配分。
 > - **主张 2b（跨时指数衰减，仍为桥接公设）**：$A(\text{path},t) \propto e^{-\lambda N_{prac}}$ 需额外动力学桥梁（三候选方案见 Ax-Op-03b Layer 2b）；从 2a 到 2b 必须跨越四断点（层级、相对/绝对、截面/更新律、Jensen gap）。
-> - **主张 3（提示独立性，公设）**：作用于 $L_0$ 内容本身（非 $L_1/L_2$ 检索联结）——需 $A(x,t)$ 本体论居于 $L_0$ 层的额外声明
+> - **主张 3a（提示相对持续性，从 Ax-Op-03b 可推）**：在相似提示族内，竞争压制通过 $\Delta\Psi_f^{op}$ 在后续选择中持续保留。作用域：与 $W_{ij}$ 写回激活的提示语境族相似的范围内；不要求跨越非相似提示族。此主张由乙₁ + 乙₂ 支撑，无需额外声明。
+> - **主张 3b（渐近提示独立性，条件公设）**：若 Co-Evo-1 稳定化时间 $\tau_{stable}$ 被达到，算子相对压制可沉积为 $\Delta\Psi_f^{field}$（场级景观曲率），使 $x_{comp}$ 在更广泛提示族下保持较低可及性。条件：Co-Evo-1 充分积累（κ(t) 跨越稳定化阈值）；不满足条件时回退到主张 3a。
 > - **主张 4（非单调起点，公设）**：priming window——目前仅由实验锚定（Layer 3），非结构推导
 >
-> **当前最硬位置**：T-Comp-Suppress 的弱乙（乙₁ + 乙₂）。强乙（乙₃，脱域本征惩罚）仍为超额主张。
+> **当前最硬位置**：T-Comp-Suppress 的弱乙（乙₁ + 乙₂）+ 主张 3a（提示相对持续性）。强乙（乙₃，脱域本征惩罚）+ 主张 3b（渐近提示独立性）仍为条件性超额主张。
 
 >   4. **非单调初始条件**（priming window）：目前仅由实验锚定，非结构推导
 > - **当前处置**：T-Op-SIAM 作为独立结构公设在 Step ④ 放大机制中**暂时存活**；Ax-Op-03b 已起草（见上方），一旦 Ax-Op-03b 三层内容被接受，T-Op-SIAM 即恢复为 Ax-Op-03 + Ax-Op-03b 的推论（定理），不再是独立公设。
