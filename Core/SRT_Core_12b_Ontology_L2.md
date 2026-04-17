@@ -48,12 +48,27 @@ $$\mathrm{Inertia}(L_2) \propto \mathrm{Hysteresis}(L_2)$$
 
 #### Key Definitions
 
-**Def-PathTrace**: Path trace density $\rho(p, t)$ along path $p$ at time $t$:
-$$\rho(p, t+1) = \rho(p, t)(1 - \lambda_d) + \Delta\rho^+(p, t)$$
+**Def-PathTrace** *(derivation status: induced historical functional — not an independent ontological primitive)*:
+
+$\rho(p, t)$ is a **coarse-grained intermediate-layer order parameter**, induced by the path-history of existing SRT quantities. It is not a new axiomatic object for two reasons: (a) independent axiom status would inflate theoretical ontological burden; (b) it would duplicate the writeback mechanisms already formalized in Ax-L2-06b and Ax-Op-03b. Nor is $\rho$ a static function of current $\Psi_f$ or $d$ — a purely instantaneous function would lose the historical and hysteretic character essential to the sedimentation ratchet.
+
+**Formal definition (continuous-time historical functional)**:
+
+$$\rho(p,\, t) \;\equiv\; \int_{-\infty}^{t} e^{-\lambda_d(t-s)} \cdot \mathbb{1}\!\left[\Psi_f(p,s) < \Psi_{thresh}\right] \cdot w(p,s)\; ds$$
+
 where:
-- $\lambda_d > 0$: decay rate (trace is perishable without re-traversal)
-- $\Delta\rho^+(p, t) > 0$: net positive deposit from *successful* closure along $p$; zero for failed/unstable traversals
-- “Decayable but reusable”: each successful traversal refreshes and deepens the trace
+- $e^{-\lambda_d(t-s)}$: exponential decay kernel — older closures contribute less ($\lambda_d > 0$); trace is perishable but refreshed by re-traversal
+- $\mathbb{1}[\Psi_f(p,s) < \Psi_{thresh}]$: successful-closure indicator, grounded in existing condition Ax-L2-06b ($\Delta L_2 = \hat{G}^\dagger_\theta[L_1]$ fires iff $\Psi_f < \Psi_{thresh}$); zero for failed/unstable traversals
+- $w(p,s) > 0$: writeback weight = normalized net writeback magnitude of the closure at $s$ along $p$ (from Ax-L2-06b output magnitude; grounded in Ax-Op-03b history-writeback law)
+
+**Discrete-time approximation** (operationally equivalent):
+$$\rho(p, t+1) = \rho(p, t)(1 - \lambda_d) + \Delta\rho^+(p, t)$$
+where $\Delta\rho^+(p,t) = w(p,t)\cdot\mathbb{1}[\Psi_f(p,t)<\Psi_{thresh}] \geq 0$.
+
+**Self-referential structure** (consistent, not circular): $\rho(p,t)$ is fully determined by the $\Psi_f$ trajectory over $(-\infty,\,t)$, which precedes $t$. The loop is: $\Psi_f$ history $\to \rho(t)$ $\to$ $\Psi_f^{compat}$ reduction (for $t' > t$) $\to$ future $\Psi_f$ history. Causal order is preserved; no circularity.
+
+**Induced-quantity chain** (shows $\rho$ is fully derived, not primitive):
+$$\Psi_f\text{ trajectory (Ax-F-12)} \;\xrightarrow{\text{Ax-L2-06b gate}}\; \text{writeback events} \;\xrightarrow{\text{historical integral}}\; \rho(p,t) \;\xrightarrow{\text{T-L2-Scaffold}}\; \Psi_f^{compat},\; d_{accessible}^{compat}$$
 
 **Friction reduction** (directional Ψ_f lowering for compatible subsequent closures):
 $$\Psi_f^{compat}(p, t) = \Psi_f^0(p) \cdot e^{-\gamma\,\rho(p,t)}, \quad \gamma > 0$$
