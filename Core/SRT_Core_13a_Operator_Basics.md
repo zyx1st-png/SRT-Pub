@@ -150,11 +150,42 @@ $$L_{comp}(x_{comp}) > 0, \qquad L_{comp}(x_{prac}) \leq 0$$
 
 （败者路径预期摩擦上升；胜者路径预期摩擦不升）
 
-**Layer 2 — 桥接函数（新增内容；含建模选择声明）**：
+**Layer 2 — 桥接函数（拆分为 2a + 2b，2026-04-17）**：
 
-$$A(\text{path}_i,\, t) \;\propto\; f\!\bigl(\mathbb{E}[\Psi_f(\text{path}_i,\, t)]\bigr), \quad f \text{ 单调递减}$$
+**Layer 2a — 单轮配分版（从最大熵可推，非纯建模选择）**：
 
-**建模选择注**：若取指数形式 $f = e^{-\mu \cdot \mathbb{E}[\Psi_f]}$，其形式与 Boltzmann 分布同构（$\mu$ 对应逆温度）。此指数形式是**建模选择**，非从既有 SRT 推出的定理——使用时须显式声明为桥接公设（bridge postulate），不得默认为现成结论。
+在当前竞争语境 $C_t$ 下，幽灵算子归一化输出落在归一化 simplex 上。若施加平均摩擦约束 $\sum_i p_t(i)\Psi_i(t) = \bar\Psi_t$，对 Shannon 熵 $H(p) = -\sum_i p_i \log p_i$ 做最大化，标准结果：
+
+$$p_t(i \mid C_t) = \frac{e^{-\beta_t \Psi_i(t)}}{Z_t}, \qquad Z_t = \sum_j e^{-\beta_t \Psi_j(t)}$$
+
+其中 $\beta_t$ 为 Lagrange 乘数（对应"逆温度"），由约束 $\sum p_t(i)\Psi_i(t) = \bar\Psi_t$ 确定。
+
+**地位**：**从 Ax-Op-03 归一化（simplex）+ 平均摩擦约束 + 最大熵原则推出**，比"纯建模选择"更有结构依据——这是给定约束下承诺最少的分布（minimum commitment distribution），不是任意引入。
+
+> ⚠ **用语精确化**：不得称"配分函数守恒"——归一化确保当前轮输出权重之和为 1（simplex mass normalization），不是物理意义上的守恒律；守恒的是"总权重被规范到 1"，不是绝对可及性总量。
+
+---
+
+**Layer 2b — 跨时衰减版（仍为桥接公设，但有三个结构化候选）**：
+
+从 2a 的单轮 Gibbs 配分到主张 2 所需的跨时可及性 $A(\text{path},t) \propto e^{-\mu\mathbb{E}[\Psi_f]}$，必须跨越四个断点：
+
+| 断点 | 内容 | 原因 |
+|---|---|---|
+| **断点 1** | 当前轮 allocation ≠ 历史 accessibility | 瞬时配分（instantaneous allocation）与历史可进入性（historical accessibility）不在同一层 |
+| **断点 2** | 相对配分 ≠ 绝对可及性守恒 | simplex 归一化是"权重之比"；$A_i$ 本身不守恒；$p_i = A_i / \sum_j A_j$ 中若分母变化，指数形式不自动传递给 $A_i$ |
+| **断点 3** | 截面分布 ≠ 历史更新律 | 2a 给出某时刻在给定 $\Psi_f$ 下的分布；不给出 $A$ 如何随 $N_{prac}$ 演化 |
+| **断点 4** | Jensen gap | $\mathbb{E}[e^{-\beta\Psi}] \neq e^{-\beta\mathbb{E}[\Psi]}$；若 $\Psi_f$ 有方差，用 $E[\Psi_f]$ 入指数会引入系统性误差 |
+
+因此 **2b 仍为桥接公设**，但现有三个结构化候选方案（不再是"完全任意 Boltzmann 借用"）：
+
+- **桥梁方案 1（线性积累）**：$\Psi_{comp}(N) = \Psi_0 + \alpha N$ → 代入 2a → $A_N \propto e^{-\beta\alpha N} = A_0 e^{-\lambda N}$。指数衰减来自"2a 的 Gibbs 形式 + Ψ_f 线性增长"的组合；需额外声明 Ψ_f 线性增长律。
+
+- **桥梁方案 2（对数线性衰减）**：$\frac{d\log A}{dN} = -\lambda$，直接声明速率方程 → $A(N) = A_0 e^{-\lambda N}$。更简洁，但直接引入为动力学公设；与 2a 的关系需要说明。
+
+- **桥梁方案 3（准静态近似）**：每轮近似处于当前 $\Psi_f$ 下的 Gibbs 截面，历史 $\mathbb{E}[\Psi_f]$ 定义为轮次上的平滑统计量；需额外声明：$\text{Var}(\Psi_f) \approx 0$（mean-field 条件）以消除 Jensen gap。
+
+**当前建议**：明确标注"主张 2b 依赖三候选桥接方案之一，均需额外声明，目前最诚实位置是 bridge postulate"；同时把 2a 升格为"单轮配分层的最大熵推论"。
 
 **Layer 3 — L_comp 符号翻转条件（priming window，新增内容）**：
 
@@ -220,7 +251,8 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 | 不主张 | 对应 T-Op-SIAM 主张 | 原因 |
 |---|---|---|
 | $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 脱域本征惩罚） | 主张 1 强版本 | 需 Ax-Op-03b Layer 3 + 提示独立性声明 |
-| 指数衰减函数形式 | 主张 2 | 需 Layer 2 Boltzmann 桥接，已标注为建模选择 |
+| 单轮指数分布（当前轮 Gibbs 配分） | 主张 **2a** | 已由最大熵推出（Layer 2a），T-Comp-Suppress 不需要它，但与之相容 |
+| 跨时指数衰减 $A \propto e^{-\lambda N}$ | 主张 **2b** | 仍为桥接公设；三候选桥梁方案（Layer 2b），均需额外声明 |
 | 提示无关性（线索无关） | 主张 3 | 现有动力学是语境依赖抑制；泛化程度是独立变量 |
 | 非单调起点（priming window） | 主张 4 | 需 Layer 3 双时标机制 |
 
@@ -235,7 +267,8 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 > **主张 1'（条件化有效可及性降低，已由 T-Comp-Suppress 支撑）**：
 > 在稳定竞争耦合与反复实践写回条件下，$x_{comp}$ 在相关选择语境中的**有效可及性** $A_{eff}$ 下降。注意：这不等同于 $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 主张）；后者目前尚无充分支撑。
 >
-> - **主张 2（持续性，公设）**：$e^{-\lambda N_{prac}}$ 指数衰减写回——Boltzmann 借用，需声明为 bridge postulate
+> - **主张 2a（单轮配分 Gibbs，从最大熵推出）**：$p_t(i|C_t) \propto e^{-\beta_t\Psi_i(t)}$；幽灵算子 simplex + 平均摩擦约束 + 最大熵 → Gibbs 型当前轮配分。非纯建模选择，但作用域仅限当前轮相对配分。
+> - **主张 2b（跨时指数衰减，仍为桥接公设）**：$A(\text{path},t) \propto e^{-\lambda N_{prac}}$ 需额外动力学桥梁（三候选方案见 Ax-Op-03b Layer 2b）；从 2a 到 2b 必须跨越四断点（层级、相对/绝对、截面/更新律、Jensen gap）。
 > - **主张 3（提示独立性，公设）**：作用于 $L_0$ 内容本身（非 $L_1/L_2$ 检索联结）——需 $A(x,t)$ 本体论居于 $L_0$ 层的额外声明
 > - **主张 4（非单调起点，公设）**：priming window——目前仅由实验锚定（Layer 3），非结构推导
 >
