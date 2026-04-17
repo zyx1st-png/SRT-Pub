@@ -196,7 +196,12 @@ Selection is not isolated — we delegate selection authority to others, institu
 ② Information creation → landscape change                 [analytic]
 ③ Landscape change → irreversible (absolute in spacetime) [structural]
 ④ Irreversibility → temporal directionality (past/future)  [from ③, solid]
-   ε_pg > 0: L₀ minimal non-neutrality (scalar, not order) [structural axiom]
+   ε_pg > 0: L₀ minimal non-neutrality (scalar, not order) [T-ε-Constitute: structural corollary, not primitive axiom]
+   ε direction: asymmetric bias against closure of future selection space
+   Derivation: neutral ISP under L₀ irreversibility → self-terminates (absorbing state, Ax-F-01+F-03b)
+             → stable ISP ⟹ ε ≠ 0 (contrapositive)
+   Three-layer source: ISP self-maintenance (constitutive, deepest) ← L₀ irreversibility (necessary) ← Ψ_f>0 (dynamical weight)
+   Empirical narrowing (sufficiency/interrogability): specifies magnitude/direction after existence is established
    Persistent Selection System:
      G^θ persists ∧ A_{t+1}≠∅ ∧ Ψ_f^next<∞               [structural axiom]
    Amplification: T-Op-SIAM [structural postulate] + Ax-Op-05 → closure bias

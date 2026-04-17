@@ -171,6 +171,42 @@ Boltzmann 分布 = 信息创造量为零的退化态；统计力学 = SRT 在 $I
 
 ---
 
+## VI. Constitutive Theorems（构成性定理）
+
+### T-ε-Constitute: Constitutive Asymmetry Theorem（构成性非对称定理，2026-04-17）
+
+**Statement**: For any iterative selection process (ISP) operating under L₀ irreversibility, neutrality between future-selection-space-preserving and closure-inducing alternatives is structurally incompatible with stable self-perpetuation. Anti-closure asymmetric bias ε is therefore a **constitutive condition** of stable iterative selection — not an appended preference, not a contingent postulate.
+
+**Key Definitions**:
+
+- *Iterative Selection Process (ISP)*: Process P such that (a) at each step t, P selects from A_t ≠ ∅; (b) output of selection at t determines A_{t+1}; (c) P persists only while A_t ≠ ∅.
+- *ε-Neutral ISP*: P is neutral if, when facing α₁ (preserves A_{t+1}) and α₂ (closes A_{t+1} → ∅), P assigns equal selection probability.
+
+**Proof sketch**:
+1. Let P be ε-neutral under L₀ irreversibility (Ax-F-01, Ax-F-03b).
+2. By irreversibility: once A_{t\*} = ∅ is reached, it is an absorbing state — no recovery.
+3. Neutral P has nonzero probability of selecting into A_{t\*} = ∅ at each step; over sufficient iterations, cumulative probability → 1.
+4. At t\*: P terminates (A_{t\*} = ∅ → no selection possible).
+5. Therefore: P is not a stable ISP. □
+
+**Contrapositive**: Stable ISP under L₀ irreversibility ⟹ P has systematic anti-closure bias, i.e., ε ≠ 0.
+
+**Three-layer source hierarchy**:
+
+| Layer | Factor | Role |
+|-------|--------|------|
+| Deepest | ISP self-maintenance condition | Constitutive: neutrality = self-termination, by definition |
+| Necessary | L₀ irreversibility (Ax-F-03b) | Closure states are absorbing; neutrality has no recovery path |
+| Dynamical weight | Ψ_f > 0 (Ax-F-12) | Closure has real measurable cost; asymmetry is empirically grounded |
+
+**Epistemic status change for ε**:
+- Before: ε = L₀ primitive postulate (empirically narrowed)
+- After: ε = structural corollary of T-ε-Constitute; empirical narrowing specifies magnitude and direction, but the existence of asymmetry is non-contingent
+
+**Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ④` (ε_pg derivation chain); `Core_Law/SRT_Core_Text_CN.md ④` (ε derivation chain); `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`; `Core/SRT_Core_01_Axioms.md MA-1`.
+
+---
+
 
 # Part B: Original Formal Derivations (Context)
 
@@ -234,6 +270,7 @@ $$ Mass_{ontological}(O) = Mass_{energy}(O) + τ \cdot Assembly(O) $$
 5. **幽灵算子禀赋统一性 (Ax-F-11)**：$\hat{G}^{(n+1)} = \Lambda \circ \hat{G}^{(n)} \circ \Lambda^{-1}$ — 量子坍缩、侧抑制、粗粒化、归一化、范畴化均为同一选择结构在不同尺度的展开。
 6. **摩擦即生成 (Ax-F-12)**：$\Psi_f(\hat{G}_i, \hat{G}_j)$ 是所有动力学的生成来源——演化、学习、文化变迁均为算子间摩擦的不同形态。
 7. **选择-信息创造等价 (Ax-F-13)**：$I_{created} = I(L_0\,;\,\hat{G}_\theta)$，选择事件是信息生成的本体论基础；三元关系 $I_{created} \to \Psi_f \to d$ 统一了热力学代价、选择代价与选择范围。Boltzmann 分布（统计力学）是 $I_{created}=0$ 时的退化极限。
+8. **构成性非对称定理 (T-ε-Constitute, 2026-04-17)**：中性的迭代选择过程在 L₀ 不可逆性下必然自我终止；反封闭非对称偏置 ε 是稳定迭代选择过程的构成性条件，而非附加偏好。三层来源：ISP自维持（构成性，最深）← L₀不可逆（使其必要，Ax-F-03b）← Ψ_f>0（给出动力学后果，Ax-F-12）。ε 的存在从公设地位升为结构推论。
 
 以上公式组构成 SRT 形式公理体系的完整核心（**七类结构**），所有推论均可从这七类结构推导。
 
