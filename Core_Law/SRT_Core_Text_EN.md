@@ -175,7 +175,13 @@ The expansion of concern scope is directionally necessary (original intention po
 
 Concern scope expands → visible landscape expands → local optima exposed as local → new, better directions become visible. But seeing a larger landscape does not equal having completed an effective expansion. Bare enlargement of scope, momentary exaltation, or high-intensity concern impulses do not automatically constitute real d-growth.
 
-But "toward order" is not an empty direction. Whether a selection truly increments order is assessed by three structural criteria: **sustainability** (not depleting future order conditions), **coordinability** (not turning differences into unorganizable friction), **re-selectability** (not prematurely locking future directions). And whether an expansion path stands up is not judged by local relief alone, but by whether that relief is genuinely settled across longer time scales, more positions, and different interfaces. All three must be satisfied, without relying primarily on outsourcing, deferral, numbing, or single-interface self-certification, for a selection to be order-incrementing.
+But "toward order" is not an empty direction. Whether a selection truly increments order is assessed by three structural criteria: **sustainability** (not depleting future order conditions), **coordinability** (not turning differences into unorganizable friction), **re-selectability** (not prematurely locking future directions). These three criteria are not externally imposed moral rules, nor are they deduced from ε alone — they are the minimal closure derived from the conjunction of four factors:
+
+> **ε** (asymmetric bias against closure of future selection space) **+ F** (finiteness: no position sees all consequences) **+ M** (multi-agent coupling: selections across positions mutually lock) **+ U** (fallibility: selection errors will occur; correction capacity must be preserved)
+
+The division of labor: **re-selectability** is the most direct operationalization of ε itself — ε is the rejection of closure; re-selectability is not prematurely closing; the two are nearly equivalent; **sustainability** is ε projected onto the time axis — F+U make temporal violations locally invisible, so it must be stated explicitly; **coordinability** is ε projected onto the multi-agent coupling axis — M makes cross-position closures invisible to oneself, so it must be stated explicitly. Removing any one of the three opens a channel through which ε can be silently violated at a position that cannot locally detect it — the three together form the minimal cover, irreducible.
+
+And whether an expansion path stands up is not judged by local relief alone, but by whether that relief is genuinely settled across longer time scales, more positions, and different interfaces. All three must be satisfied, without relying primarily on outsourcing, deferral, numbing, or single-interface self-certification, for a selection to be order-incrementing.
 
 Therefore, not every d-expansion automatically moves closer to original intention; only expansions that still stand after broader-scale settlement, while keeping the three criteria intact, move selection from local optima toward larger-scale convergence — toward the direction indicated by original intention: dynamic equilibria that, under situated constraints, sustain greater continued existence. This is not heat death (all selection ceasing), but different existences coexisting and cooperating with minimum friction — living order.
 
@@ -237,7 +243,7 @@ Selection is not isolated — we delegate selection authority to others, institu
    Decoupling → vacuum period (structural necessity for space rebuilding, not failure)
 ⑨ Differential incorporation → concern boundary → d-value
    d = stabilized concern range, expansion pressure ≠ actual expansion
-⑩ Effective d expansion → larger-scale convergence       [conditional / long-term]
+⑩ Effective d expansion → larger-scale convergence       [ε+F+M+U → three-criteria min-closure; re-selectability≈ε body, sustainability=ε time-axis projection, coordinability=ε multi-agent projection; long-term/multi-position settlement required]
 ```
 
 ---
