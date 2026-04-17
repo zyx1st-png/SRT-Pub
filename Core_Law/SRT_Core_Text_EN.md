@@ -17,7 +17,9 @@
 
 ### The Postulate
 
-**The fundamental direction of the selection process points toward a dynamic equilibrium that sustains the maximum amount of continued existence.**
+**The fundamental direction of selection is to favor, under situated constraints, dynamic equilibria that sustain greater continued existence.**
+
+> **Postulate precision note (hardened 2026-04-17):** The original phrasing "the maximum amount" carried an implicit global-maximum commitment, which conflicts with the finite-position theory of Step ⑧ (no position can see the global landscape). The corrected reading: this postulate is a **structural partial-order preference principle**, not a global optimization claim. "Greater" (comparative) replaces "maximum" (superlative): among locally visible, comparable alternatives under situated constraints, selection prefers whichever sustains more continued existence. This is strictly stronger than satisficing (threshold logic: pass/fail) because it supplies ordering logic (prefer higher among comparables), but it makes no commitment to a global maximum existing or being reachable. The direction is real and asymmetric; the endpoint is open.
 
 This is a hypothesis given by an existing being from within the domain of existence. We cannot step outside existence to verify it — just as physics cannot step outside physical law to prove that "tomorrow's laws will be the same as today's." But we can stand on this hypothesis and examine whether it makes the totality of our experience coherent.
 
@@ -175,7 +177,7 @@ Concern scope expands → visible landscape expands → local optima exposed as 
 
 But "toward order" is not an empty direction. Whether a selection truly increments order is assessed by three structural criteria: **sustainability** (not depleting future order conditions), **coordinability** (not turning differences into unorganizable friction), **re-selectability** (not prematurely locking future directions). And whether an expansion path stands up is not judged by local relief alone, but by whether that relief is genuinely settled across longer time scales, more positions, and different interfaces. All three must be satisfied, without relying primarily on outsourcing, deferral, numbing, or single-interface self-certification, for a selection to be order-incrementing.
 
-Therefore, not every d-expansion automatically moves closer to original intention; only expansions that still stand after broader-scale settlement, while keeping the three criteria intact, move selection from local optima toward larger-scale convergence — toward the direction indicated by original intention: a dynamic equilibrium that sustains the maximum amount of continued existence. This is not heat death (all selection ceasing), but different existences coexisting and cooperating with minimum friction — living order.
+Therefore, not every d-expansion automatically moves closer to original intention; only expansions that still stand after broader-scale settlement, while keeping the three criteria intact, move selection from local optima toward larger-scale convergence — toward the direction indicated by original intention: dynamic equilibria that, under situated constraints, sustain greater continued existence. This is not heat death (all selection ceasing), but different existences coexisting and cooperating with minimum friction — living order.
 
 Selection is not isolated — we delegate selection authority to others, institutions, and systems. Healthy delegation maintains a shared goal and preserves re-selection capacity; pathological delegation lets the agent system's self-maintenance masquerade as the shared goal. Legitimacy is not rules being followed, but rules still pointing toward the shared goal.
 
