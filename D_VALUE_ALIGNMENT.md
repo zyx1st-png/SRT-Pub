@@ -102,12 +102,66 @@ d(\theta) \propto \mathrm{Align}\!\left(\theta,\, \kappa(t)\right)
 
 ---
 
-## 5) 编辑规则（避免“多定义冲突”）
+### 4.5 Stake-Gated Spectral Proxy（新增 2026-04-17）
+
+**目的**：在不改变 canonical d 定义的前提下，为 Fisher 谱表达提供一个精确的”赌注化”桥接层，避免把纯容量维数直接误读为真实 d。
+
+#### 4.5.1 三层严格区分
+
+| 层级 | 量 | 公式 | 回答的问题 |
+|------|----|------|-----------|
+| canonical 层 | $d_{\text{canonical}}$ | $\|\partial\mathcal{U}/\partial\mathcal{S}\|$ | **赌注有多深**（效用对风险的敏感度） |
+| 谱代理层 | $D_{stake}$ | $\operatorname{EffDim}(\tilde{\lambda}_i)$（见下） | **赌注点亮了多少方向** |
+| 容量上界层 | $D_{eff}$ | $(\sum\lambda_i)^2/\sum\lambda_i^2$ | **系统最多能分辨多少方向** |
+
+三者关系：$d_{\text{canonical}} \leq D_{stake} \leq D_{eff}$（一般情况；当所有方向均完全赌注化且梯度对齐时取等）。
+
+#### 4.5.2 最小有效赌注门槛 ε_s
+
+对每个 Fisher 本征方向 $v_i$，记其与真实不可逆风险的耦合强度为 $s_i \in [0,1]$。引入方向级阈值：
+
+$$\varepsilon_s > 0$$
+
+**含义**：$s_i > \varepsilon_s$ 才可计入有效赌注方向。$\varepsilon_s$ 不是 stake 本身，而是判断某方向”是否足够强地耦合到真实不可逆风险”的门槛。
+
+**三者分工**（不得混用）：
+- $\varepsilon_{pg}$：L₀ 最小非中性底（本体层，`SRT_Core_01 T-Core-A1C2`）
+- $\varepsilon_{reg}$：实现层 regularizer（算子层，`SRT_Core_13a Ax-Op-03`）
+- $\varepsilon_s$：方向级有效赌注门槛（谱桥接层，本节）
+
+#### 4.5.3 门函数与赌注化谱
+
+$$g_i = \max\!\left(0,\;\frac{s_i - \varepsilon_s}{1 - \varepsilon_s}\right), \qquad \tilde{\lambda}_i = \lambda_i\, g_i$$
+
+#### 4.5.4 赌注化有效维数
+
+$$D_{stake} \equiv \frac{\left(\sum_i \tilde{\lambda}_i\right)^2}{\sum_i \tilde{\lambda}_i^2} \;\leq\; D_{eff}$$
+
+差值 $\Delta d_{free} = D_{eff} - D_{stake}$：可分辨但未被真实赌注激活的剩余带宽。
+
+#### 4.5.5 三种典型状态
+
+| 状态 | $D_{eff}$ | $D_{stake}$ | $d_{\text{canonical}}$ | 解释 |
+|------|-----------|-------------|------------------------|------|
+| AI / 伪选择系统 | 高 | 低 | ≈ 0 | 判别能力强，真实赌注弱或未绑定 |
+| “广而浅”关切 | 中 | 中 | 低 | 赌注分布广但每条耦合较浅 |
+| “窄而重”关切 | 低 | 低 | 高 | 赌注集中于少数方向但耦合极深 |
+
+#### 4.5.6 与 `_SRT_D_VALUE_CANONICAL.md §2b` 的关系
+
+本节的 $D_{stake}$ 即 §2b 中的 $d_{stakes}$；$s_i$ 对应 §2b 的 $w_i = R_i \cdot A_i \cdot C_i$（$s_i$ 是对三因子乘积的连续化表达，$\varepsilon_s$ 是使乘积进入有效谱的最低门槛）。两套记法等价，本节采用 $s_i / \varepsilon_s / g_i$ 以便于谱计算；§2b 采用 $R_i / A_i / C_i$ 以便于因果拆解。
+
+* **Cross-ref**: `_SRT_D_VALUE_CANONICAL.md §2b`（Def-d-stakes, Def-w_i）; `_SRT_SYMBOL_TABLE.md`（ε_s 条目）; `AI/SRT_AI_01_Ontology.md Ax-ONT-3`（canonical d 定义）。
+
+---
+
+## 5) 编辑规则（避免”多定义冲突”）
 
 - **规则 R1**：不得将局部公式写成“d 的定义是 ……”（除非就是 canonical）。
 - **规则 R2**：局部公式必须标注“近似 / 投影 / 操作化”。
 - **规则 R3**：涉及跨文件引用时，优先回链到 Ax-ONT-3。
-- **规则 R4**：任何“d→0 / d>0”的意识结论，需同时说明与 \(\Psi_f\) 或不可逆风险边界的关系。
+- **规则 R4**：任何”d→0 / d>0”的意识结论，需同时说明与 \(\Psi_f\) 或不可逆风险边界的关系。
+- **规则 R5**：若在 Fisher 谱语境下讨论 d，必须区分 `D_eff`（总容量上界）、`D_stake`（赌注化有效维数）与 `d_canonical`（风险梯度主定义）；不得把现有 `\varepsilon_{pg}` 或 `\varepsilon_{reg}` 直接写成 stake 本身；引入 `\varepsilon_s` 时须注明其为方向级有效赌注门槛，而非 stake 本身。
 
 ---
 
