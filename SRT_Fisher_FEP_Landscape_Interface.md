@@ -1,6 +1,6 @@
 ---
 id: SRT-FISHER-FEP-LANDSCAPE-INTERFACE
- type: framework
+type: framework
 tags: [Fisher, FEP, Landscape, L0, L1, L2, Interface]
 status: axiomatic_hybrid_v1
 layer: L1
