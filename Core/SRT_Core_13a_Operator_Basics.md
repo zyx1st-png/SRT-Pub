@@ -196,9 +196,11 @@ $$N_{prac} \geq N_c \;\Rightarrow\; L_{comp}(x_{comp}) > 0 \quad \text{（净抑
 
 阈值 $N_c$ 为竞争不对称度 $\Delta A_0 = A_0(x_{comp}) - A_0(x_{prac})$ 的单调递增函数——初始优势越大，翻转所需累积次数越多。$N_c$ 是独立结构参数，目前主要由实验锚定（Johnson & Anderson 2004）。
 
-**T-Op-SIAM 的推导关系**：
+**T-Op-SIAM 的推导关系（分层）**：
 
-$$\text{Ax-Op-03} + \text{Ax-Op-03b} \;\Rightarrow\; \text{T-Op-SIAM（方向 + 持续性 + priming window）}$$
+$$\underbrace{\text{Ax-Op-03} + \text{Ax-Op-03b Layer 1}}_{\text{已有基础}} \;\Rightarrow\; \underbrace{\text{T-Comp-Suppress（主张 1'）+ 主张 2a + 主张 3a}}_{\text{可推，无超额承诺}}$$
+
+$$\underbrace{\text{Ax-Op-03b L2/3} + \text{Co-Evo-1}}_{\text{条件性/桥接公设}} \;\Rightarrow\; \underbrace{\text{主张 2b + 主张 3b + Lemma-FFSI（4a/4b/4c）}}_{\text{条件性超额主张}}$$
 
 **时间层级结构**：Ax-Op-03b Layer 1 写回更新的是 $\Delta\Psi_f^{op}$（算子相对、提示敏感、快速），而非 $\Psi_f^{field}$（场级景观曲率、提示弱依赖、慢速，须经 Co-Evo-1 积累）。因此提示相关压制（短时）先于跨提示泛化（中时），渐近提示独立性（长时）是条件性结论，见主张 3a/3b 区分（下方 T-Op-SIAM 地位注）。
 
@@ -355,25 +357,24 @@ $$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow
 >   2. **桥接函数**：$A(\text{path}_i, t) \propto f(\mathbb{E}[\Psi_f(\text{path}_i, t)])$，$f$ 单调递减；若取指数形式 $e^{-\mu \mathbb{E}[\Psi_f]}$，必须显式声明为新增 bridge postulate 或建模选择，不得装成现成定理（Boltzmann 借用需标注）
 >   3. **L_comp 符号翻转条件**（priming window）：当 $A_0(x_{comp}) \gg A_0(x_{prac})$ 时，前 $N_{prac} < N_c$ 轮 $L_{comp}(x_{comp})$ 符号为负（短暂启动），$N_{prac} \geq N_c$ 后翻正（净抑制）；阈值 $N_c$ 依赖竞争不对称度，是额外结构参数
 
-**Formal Statement**: $\hat{G}_\theta$ 的每次选择操作不仅从 $L_0$ 锚定 $L_1$，而且在 $L_0$ 的可及性景观上施加**持续性的抑制修改**，使被拒绝的竞争者在后续选择中的可及性降低：
+**Formal Statement**（各部分地位见上方地位注）：$\hat{G}_\theta$ 的每次选择操作不仅从 $L_0$ 锚定 $L_1$，而且在 $L_0$ 的可及性景观上施加**持续性的抑制修改**，使被拒绝的竞争者在后续选择中的可及性降低。
+
+> ⚠ 以下三项的认识论地位不同，不应等同对待：
+
+**[主张 2b：桥接公设，非推论]** 跨时指数衰减形式（Ax-Op-03b Layer 2 候选桥梁之一）：
 
 $$A(x_{comp}, t+\Delta t) = A(x_{comp}, t) \cdot e^{-\lambda \cdot N_{prac}}$$
 
-其中：
-- $A(x, t)$：$L_0$ 节点 $x$ 在时刻 $t$ 的可及性（accessibility）
-- $x_{comp}$：在选择操作中被抑制的竞争节点
-- $N_{prac}$：对同一 $L_0$ 区域执行竞争性检索的累积次数
-- $\lambda > 0$：抑制累积率（取决于竞争强度与 $\hat{G}_\theta$ 参数）
+其中：$A(x, t)$ = $L_0$ 节点 $x$ 在时刻 $t$ 的可及性；$x_{comp}$ = 被抑制的竞争节点；$N_{prac}$ = 累积实践次数；$\lambda > 0$ = 抑制累积率。此指数形式为 Boltzmann 借用，须声明为 bridge postulate——非从 Ax-Op-03b 自动推出。
 
-**关键性质——提示独立性（Cue Independence）**：
+**[主张 3b：条件公设，须 Co-Evo-1 稳定化]** 渐近提示独立性：
 $$\forall \, cue' \neq cue_{prac}: \quad A(x_{comp}, t + \Delta t) < A(x_{comp}, t)$$
+即抑制作用于 $L_0$ 内容本身，而非 $L_2$ 提示-内容联结；成立条件：Co-Evo-1 κ(t) 越阈 → $\Delta\Psi_f^{field}$ 积累充足。未达条件时，只能主张提示族内的 3a 式相对持续性。
 
-即抑制作用于 $L_0$ 内容本身，而非 $L_2$ 中的提示-内容联结；以独立提示测试时仍观察到可及性下降。
-
-**非单调初始条件**（Nonmonotonic Onset Condition）：
-当竞争节点的初始可及性 $A_0(x_{comp}) \gg A_0(x_{prac})$（主导竞争），第一次选择操作前 $\hat{G}_\theta$ 尚未累积足够抑制，竞争者会短暂获得启动：
-$$N_{prac} = 1 \Rightarrow A(x_{comp}, t+\Delta t) \geq A(x_{comp}, t) \quad \text{(priming window)}$$
-仅在 $N_{prac} \geq N_c$（临界次数，依赖于竞争不对称度）之后，净效应转为抑制。
+**[主张 4a/4b：Lemma-FFSI 双时标条件性]** 非单调起点：
+当 $A_0(x_{comp}) \gg A_0(x_{prac})$ 且快促进项存在（$a>0$）：
+$$N_{prac} = 1 \Rightarrow A(x_{comp}, t+\Delta t) \geq A(x_{comp}, t) \quad \text{[priming window, 主张 4a]}$$
+仅在 $N_{prac} \geq N_c$ 后净效应转为抑制（主张 4b 需双时标；4c 需 $b>a$）。详见 Lemma-FFSI。
 
 * **Implication（选择的双重效应）**：$\hat{G}_\theta$ 不是被动的映射——每次选择都在**重写 $L_0$ 的可及性地形**。这意味着人类知识的"可忘性"不完全由学习质量决定，而是由检索时的竞争拓扑决定：越频繁从某一领域检索相关项目，其竞争概念就越被系统性地压制，最终导致本质上是语义层面的"习得性遗忘"（Semantic Retrieval-Induced Forgetting, SRIF）。
 
