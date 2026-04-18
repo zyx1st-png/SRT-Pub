@@ -196,7 +196,9 @@ Selection is not isolated — we delegate selection authority to others, institu
 ② Information creation → landscape change                 [analytic]
 ③ Landscape change → irreversible (absolute in spacetime) [structural]
 ④ Irreversibility → temporal directionality (past/future)  [from ③, solid]
-   ε_pg > 0: L₀ minimal non-neutrality (scalar, not order) [T-ε-Constitute: structural corollary, not primitive axiom]
+   ε_pg > 0: L₀ minimal non-neutrality (scalar, no inherent direction) [L₀ structural postulate — status UNCHANGED by T-ε-Constitute]
+   ISP-level ε: anti-closure asymmetric bias of stable ISPs [T-ε-Constitute: structural corollary, not primitive axiom]
+   ε_pg ↔ ISP-level ε bridge: ε_pg (seed: asymmetry exists) + Ax-F-03b (direction filter: closure=absorbing → only anti-closure stable-ISP-compatible) → ISP-level ε (anti-closure direction, non-contingent for stable ISPs)
    ⚠ Scope: stable ISPs only (perspective-bearing, history-bearing, re-enterable selection centers)
       Short-lived/one-shot events are NOT counter-examples — they are outside the theory object's scope
       Stable ISP is not an observer's arbitrary restriction; it is filtered out by the requirement
@@ -208,20 +210,33 @@ Selection is not isolated — we delegate selection authority to others, institu
    Empirical narrowing: specifies magnitude/direction after existence is established; not the foundation
    Persistent Selection System:
      G^θ persists ∧ A_{t+1}≠∅ ∧ Ψ_f^next<∞               [structural axiom]
-   Amplification: T-Op-SIAM [structural postulate] + Ax-Op-05 → closure bias
-   ⚠ T-Op-SIAM status (2026-04-16): independent structural postulate, NOT theorem.
+   Amplification: T-Op-SIAM [structural postulate; Claim 2a derivable; 2b/3b/4b-4c conditional/postulate]
+                  + T-Comp-Suppress + Ax-Op-05 → closure bias
+   T-Comp-Suppress [weak theorem, 2026-04-17]: Claim 1 peeled off → effective accessibility ↓
+     乙₁ (online): divisive normalization → competitor active ⟹ x_comp suppressed immediately
+     乙₂ (plastic): repeated x_prac selection → W_ij↑ → suppression persists in similar contexts
+     NOT claimed: Ψ_f⁰(x_comp) elevated (乙₃); cross-time exponential form (2b);
+                  asymptotic cue-independence (3b); priming→suppression transition (4b); baseline undershoot (4c)
+   ⚠ T-Op-SIAM status (2026-04-17 hardened, full claim split):
      "from ①②" was incorrect: ①② give landscape-change-happens, not direction.
      Ax-Op-03+04 also insufficient: no signed writeback, no persistence guarantee.
-     T-Op-SIAM carries 4 strong claims beyond existing axioms:
-       (1) direction ΔA(x_comp)<0, (2) persistence e^{-λN_prac},
-       (3) cue-independence (L₀ content, not L₁/L₂ retrieval link) — needs A(x,t) ontological positioning,
-       (4) non-monotone onset (priming window) — empirically grounded only.
-     Survives as postulate; pending Ax-Op-03b — three layers, all genuinely new content:
-       (a) update law: E[Ψ_f(path_i,t+1)] = E[Ψ_f(path_i,t)] + η·L_comp(i|W_ij,θ),
-           L_comp(x_comp)>0, L_comp(x_prac)≤0;
-       (b) bridge: A(path_i,t) ∝ f(E[Ψ_f]) monotone decreasing; exponential form
-           is Boltzmann borrowing — must be declared as new bridge postulate if used;
-       (c) L_comp sign-flip for priming window (requires N_c threshold structure).
+     Claim 1 → T-Comp-Suppress (weak theorem, effective Ψ_f only; 乙₁+乙₂ derivable).
+     Claim 2 → 2a (single-round Gibbs, derivable from max entropy + simplex constraint):
+       p_t(i|C_t) ∝ e^{-β_t Ψ_i(t)}; minimum-commitment; scope: current-round relative distribution only.
+       2b (cross-time exponential): bridge postulate; 4 structural断点 separate 2a from 2b.
+     Claim 3 → 3a (cue-relative persistence, derivable from 乙₁+乙₂):
+       ΔΨ_f^op persists within similar W_ij-activated cue family; no cross-cue-family claim.
+       3b (asymptotic cue-independence): conditional postulate; requires Co-Evo-1 stabilization
+       (κ(t) crossing τ_stable threshold) → ΔΨ_f^field accumulation.
+     Claim 4 → split via Lemma-FFSI (Fast-Facilitation/Slow-Inhibition dual timescale):
+       4a (local priming window, conditional structural): ΔΨ_f^op transiently <0; cue-relative short-time.
+       4b (priming→suppression transition): requires τ_fast ≪ τ_slow dual-timescale coupling.
+       4c (below-baseline final state): requires b > a (inhibition amplitude > facilitation amplitude).
+     Current hardest position: T-Comp-Suppress (乙₁+乙₂) + Claims 2a + 3a + 4a (when fast-facilitation present).
+     Survives as postulate for Claims 2b/3b/4b/4c; pending Ax-Op-03b three layers:
+       (a) update law: E[Ψ_f(path_i,t+1)] = E[Ψ_f(path_i,t)] + η·L_comp(i|W_ij,θ);
+       (b) bridge: A(path_i,t) ∝ f(E[Ψ_f]) monotone decreasing (Boltzmann borrowing → declare as postulate);
+       (c) L_comp sign-flip for priming window (N_c threshold structure).
      Defensible without Ax-Op-03b: ordinal E[Ψ_f]↑ → A↓ (from payability + Ax-F-02).
    Ax-Op-05 (2026-04-16): two-phase closure — Phase 1 payable non-monotone
              (Ψ_f<∞, local rise permitted during generative phases);

@@ -112,6 +112,20 @@ The asymmetry is not simply that stable ISPs write back while unstable events do
 
 Unstable/one-shot events leave no net-positive directional trace (failed closures deposit zero by condition 1). They cannot participate in the compounding mechanism. Therefore, over time, the landscape asymmetry *accumulates in the direction of stable ISP history*, making L₂ the organizational background of visible selection rather than one among many archived trajectories.
 
+**Formal relationship to Ax-L2-01**:
+
+Ax-L2-01 is the *general* L₂ accumulation law: $L_2(t) = L_2(t-1) + \eta \cdot \mathrm{sign}(\Delta\sigma) \cdot |\Delta\sigma|^\alpha$ — all selections contribute (signed, any magnitude). T-L2-Scaffold operates *within* this general frame by identifying its dominant directional sub-process:
+
+| Component | Ax-L2-01 role | T-L2-Scaffold role |
+|---|---|---|
+| Successful closures ($\Psi_f < \Psi_{thresh}$) | Contribute to L₂ via signed Δσ | Deposit net-positive ρ; participate in compounding ratchet |
+| Failed/unstable events | Also contribute (non-zero Δσ) | Deposit zero ρ; cannot participate in compounding ratchet |
+| One-shot non-ISP events | Contribute transiently | ρ decays without renewal; cannot cross ρ* |
+
+**Decomposition**: total L₂ dynamics = general accumulation (Ax-L2-01) = undirected drift (all events, any sign) + directional ratchet (successful stable ISP closures, via ρ). The directional ratchet is the mechanism that makes stable ISP history *dominate* L₂ structure over time rather than merely being archived among many trajectories.
+
+**Why not inconsistent**: Ax-L2-01 explains *how* L₂ accumulates (any selection leaves a signed trace); T-L2-Scaffold explains *which sub-process* drives the asymmetric scaffolding structure (only successful stable ISP closures compound into background). The two claims occupy different levels of description.
+
 * **Dependence**: Ax-L2-01 (hysteresis accumulation base); Ax-L2-06b (successful-closure write-in gate: $\Psi_f < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$); T-ε-Constitute (stable ISP scope); Ax-Op-05 (two-phase closure, successful closure defined)
 * **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21_Formal_Axioms.md §VI` (T-ε-Constitute dynamic layer); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
 
@@ -291,6 +305,15 @@ $$\frac{d\theta(t)}{dt} = \mathcal{G}[\kappa(t),\, \theta(t)]$$
 - $\kappa_0 > 0$ 提供持久的非对称偏置，使协同演化不在所有方向等价
 
 $$\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}$$
+
+**Co-Evo-1 → ΔΨ_f^field 的显式链接**（为 T-Op-SIAM 主张 3b/Def-Psi-Split 提供机制基础）：
+
+当 κ(t) 积累超过稳定化阈值 $\tau_{stable}$，L₀ 曲率景观的局部方向结构发生**非提示特异**的改变，导致：
+$$\Delta\Psi_f^{field}(x_{comp},\, t) \;=\; f_\kappa(\kappa(t) - \kappa_0,\, x_{comp}), \quad f_\kappa > 0 \text{ 当竞争历史积累充足时}$$
+
+即：Co-Evo-1 的 κ(t) 动力学在竞争方向上积累足够曲率后，$x_{comp}$ 在 L₀ 景观中整体受到较高的曲率摩擦（$\Delta\Psi_f^{field} > 0$），与当前提示无关。这是 Def-Psi-Split 中 $\Delta\Psi_f^{field}$ 分量的来源，也是主张 3b（渐近提示独立性）的机制前提。注意：$f_\kappa$ 的具体形式目前为结构模板，非 Co-Evo-1 内推导；需额外声明或实验锚定。
+
+* **Cross-ref**: `Core/SRT_Core_13a Def-Psi-Split`（$\Delta\Psi_f^{field}$ 三分量结构）; T-Op-SIAM 主张 3b（渐近提示独立性条件公设）; `_SRT_SYMBOL_TABLE.md ΔΨ_f^field`（符号规范）。
 
 ### Co-Evo-2: Migrating Attractor Trap（迁移吸引子陷阱）
 

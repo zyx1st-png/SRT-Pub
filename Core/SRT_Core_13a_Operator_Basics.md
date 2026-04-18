@@ -150,11 +150,42 @@ $$L_{comp}(x_{comp}) > 0, \qquad L_{comp}(x_{prac}) \leq 0$$
 
 （败者路径预期摩擦上升；胜者路径预期摩擦不升）
 
-**Layer 2 — 桥接函数（新增内容；含建模选择声明）**：
+**Layer 2 — 桥接函数（拆分为 2a + 2b，2026-04-17）**：
 
-$$A(\text{path}_i,\, t) \;\propto\; f\!\bigl(\mathbb{E}[\Psi_f(\text{path}_i,\, t)]\bigr), \quad f \text{ 单调递减}$$
+**Layer 2a — 单轮配分版（从最大熵可推，非纯建模选择）**：
 
-**建模选择注**：若取指数形式 $f = e^{-\mu \cdot \mathbb{E}[\Psi_f]}$，其形式与 Boltzmann 分布同构（$\mu$ 对应逆温度）。此指数形式是**建模选择**，非从既有 SRT 推出的定理——使用时须显式声明为桥接公设（bridge postulate），不得默认为现成结论。
+在当前竞争语境 $C_t$ 下，幽灵算子归一化输出落在归一化 simplex 上。若施加平均摩擦约束 $\sum_i p_t(i)\Psi_i(t) = \bar\Psi_t$，对 Shannon 熵 $H(p) = -\sum_i p_i \log p_i$ 做最大化，标准结果：
+
+$$p_t(i \mid C_t) = \frac{e^{-\beta_t \Psi_i(t)}}{Z_t}, \qquad Z_t = \sum_j e^{-\beta_t \Psi_j(t)}$$
+
+其中 $\beta_t$ 为 Lagrange 乘数（对应"逆温度"），由约束 $\sum p_t(i)\Psi_i(t) = \bar\Psi_t$ 确定。
+
+**地位**：**从 Ax-Op-03 归一化（simplex）+ 平均摩擦约束 + 最大熵原则推出**，比"纯建模选择"更有结构依据——这是给定约束下承诺最少的分布（minimum commitment distribution），不是任意引入。
+
+> ⚠ **用语精确化**：不得称"配分函数守恒"——归一化确保当前轮输出权重之和为 1（simplex mass normalization），不是物理意义上的守恒律；守恒的是"总权重被规范到 1"，不是绝对可及性总量。
+
+---
+
+**Layer 2b — 跨时衰减版（仍为桥接公设，但有三个结构化候选）**：
+
+从 2a 的单轮 Gibbs 配分到主张 2 所需的跨时可及性 $A(\text{path},t) \propto e^{-\mu\mathbb{E}[\Psi_f]}$，必须跨越四个断点：
+
+| 断点 | 内容 | 原因 |
+|---|---|---|
+| **断点 1** | 当前轮 allocation ≠ 历史 accessibility | 瞬时配分（instantaneous allocation）与历史可进入性（historical accessibility）不在同一层 |
+| **断点 2** | 相对配分 ≠ 绝对可及性守恒 | simplex 归一化是"权重之比"；$A_i$ 本身不守恒；$p_i = A_i / \sum_j A_j$ 中若分母变化，指数形式不自动传递给 $A_i$ |
+| **断点 3** | 截面分布 ≠ 历史更新律 | 2a 给出某时刻在给定 $\Psi_f$ 下的分布；不给出 $A$ 如何随 $N_{prac}$ 演化 |
+| **断点 4** | Jensen gap | $\mathbb{E}[e^{-\beta\Psi}] \neq e^{-\beta\mathbb{E}[\Psi]}$；若 $\Psi_f$ 有方差，用 $E[\Psi_f]$ 入指数会引入系统性误差 |
+
+因此 **2b 仍为桥接公设**，但现有三个结构化候选方案（不再是"完全任意 Boltzmann 借用"）：
+
+- **桥梁方案 1（线性积累）**：$\Psi_{comp}(N) = \Psi_0 + \alpha N$ → 代入 2a → $A_N \propto e^{-\beta\alpha N} = A_0 e^{-\lambda N}$。指数衰减来自"2a 的 Gibbs 形式 + Ψ_f 线性增长"的组合；需额外声明 Ψ_f 线性增长律。
+
+- **桥梁方案 2（对数线性衰减）**：$\frac{d\log A}{dN} = -\lambda$，直接声明速率方程 → $A(N) = A_0 e^{-\lambda N}$。更简洁，但直接引入为动力学公设；与 2a 的关系需要说明。
+
+- **桥梁方案 3（准静态近似）**：每轮近似处于当前 $\Psi_f$ 下的 Gibbs 截面，历史 $\mathbb{E}[\Psi_f]$ 定义为轮次上的平滑统计量；需额外声明：$\text{Var}(\Psi_f) \approx 0$（mean-field 条件）以消除 Jensen gap。
+
+**当前建议**：明确标注"主张 2b 依赖三候选桥接方案之一，均需额外声明，目前最诚实位置是 bridge postulate"；同时把 2a 升格为"单轮配分层的最大熵推论"。
 
 **Layer 3 — L_comp 符号翻转条件（priming window，新增内容）**：
 
@@ -165,26 +196,158 @@ $$N_{prac} \geq N_c \;\Rightarrow\; L_{comp}(x_{comp}) > 0 \quad \text{（净抑
 
 阈值 $N_c$ 为竞争不对称度 $\Delta A_0 = A_0(x_{comp}) - A_0(x_{prac})$ 的单调递增函数——初始优势越大，翻转所需累积次数越多。$N_c$ 是独立结构参数，目前主要由实验锚定（Johnson & Anderson 2004）。
 
-**T-Op-SIAM 的推导关系**：
+**T-Op-SIAM 的推导关系（分层）**：
 
-$$\text{Ax-Op-03} + \text{Ax-Op-03b} \;\Rightarrow\; \text{T-Op-SIAM（方向 + 持续性 + priming window）}$$
+$$\underbrace{\text{Ax-Op-03} + \text{Ax-Op-03b Layer 1}}_{\text{已有基础}} \;\Rightarrow\; \underbrace{\text{T-Comp-Suppress（主张 1'）+ 主张 2a + 主张 3a}}_{\text{可推，无超额承诺}}$$
 
-提示独立性（cue-independence）仍需额外声明：$A(x,t)$ 的本体论居于 $L_0$ 层，而非 $L_1/L_2$ 检索联结层。
+$$\underbrace{\text{Ax-Op-03b L2/3} + \text{Co-Evo-1}}_{\text{条件性/桥接公设}} \;\Rightarrow\; \underbrace{\text{主张 2b + 主张 3b + Lemma-FFSI（4a/4b/4c）}}_{\text{条件性超额主张}}$$
+
+**时间层级结构**：Ax-Op-03b Layer 1 写回更新的是 $\Delta\Psi_f^{op}$（算子相对、提示敏感、快速），而非 $\Psi_f^{field}$（场级景观曲率、提示弱依赖、慢速，须经 Co-Evo-1 积累）。因此提示相关压制（短时）先于跨提示泛化（中时），渐近提示独立性（长时）是条件性结论，见主张 3a/3b 区分（下方 T-Op-SIAM 地位注）。
 
 * **Implication**：每次竞争选择不仅当轮归一化（Ax-Op-03），还通过摩擦写回改变后续轮次的可及性地形——选择历史以路径预期摩擦的形式积累在算子参数 $\theta(t)$ 中。
 
 * **Cross-ref**: Ax-Op-03（瞬态竞争归一化，本公理的必要前件）；T-Op-SIAM（本公理 + Ax-Op-03 的推论）；`_SRT_PSI_F_CANONICAL.md Def-Ψ-1`（$\Psi_f$ 正则定义）；`Core/SRT_Core_13a Ax-Op-04`（$\theta(t)$ 迭代演化）。
 
+---
+
+### Def-Psi-Split: Effective vs Intrinsic Friction Distinction（有效摩擦与本征摩擦区分，2026-04-17）
+
+**动机**：T-Op-SIAM 的方向性主张（$\Delta A(x_{comp})<0$）在"场中有效摩擦"与"脱域本征摩擦"之间存在关键歧义；且竞争场附加摩擦本身需进一步区分算子相对的快速分量与场级慢速分量——若不区分，会把尚未证明的强主张（乙₃/主张 3b）混入已有基础（乙₁/乙₂/主张 3a）。
+
+$$\Psi_f^{eff}(x,\, t,\, \theta) \;\equiv\; \Psi_f^0(x) + \Delta\Psi_f^{op}(x,\, t,\, \theta) + \Delta\Psi_f^{field}(x,\, t)$$
+
+其中竞争场附加摩擦已展开为两个时间层级分量：
+
+$$\Delta\Psi_f^{comp}(x,\, t,\, \theta) = \Delta\Psi_f^{op}(x,\, t,\, \theta) + \Delta\Psi_f^{field}(x,\, t)$$
+
+| 量 | 含义 | 时间尺度 | 提示依赖 | 来源 |
+|---|---|---|---|---|
+| $\Psi_f^0(x)$ | 本征基线摩擦 | 静态 | 无 | 孤立测量 |
+| $\Delta\Psi_f^{op}(x, t, \theta)$ | 算子相对竞争摩擦 | 快（轮次级） | **强**（$W_{ij}$ 结构依赖当前提示族） | Ax-Op-03b Layer 1 写回 |
+| $\Delta\Psi_f^{field}(x, t)$ | 场级景观曲率摩擦 | 慢（Co-Evo-1 积累） | **弱**（κ(t) 非提示特异） | Co-Evo-1 稳定化后沉积 |
+| $\Psi_f^{eff}(x, t, \theta)$ | 场中有效摩擦 | — | — | 实际选择场中的可支付难度 |
+
+**关键约束**：
+- $\Psi_f^0(x)$ 不依赖 θ（本体论中立测量）
+- $\Delta\Psi_f^{field} \geq 0$（Co-Evo-1 沉积只能增加场级摩擦，不可逆）
+- $\Delta\Psi_f^{op}$：**渐近** $\geq 0$（$t \to \infty$ 时竞争抑制主导），但**短时允许负值**（快促进窗口，见 Lemma-FFSI）
+- $\Delta\Psi_f^{op}$ 随提示语境变化快速波动；$\Delta\Psi_f^{field}$ 在 Co-Evo-1 积累未达阈值前近似为零
+
+**时间层级推论**：
+- 乙₁/乙₂ + 主张 3a：作用于 $\Delta\Psi_f^{op}$（短/中时），渐近正
+- 乙₃ + 主张 3b：$\Delta\Psi_f^{field}$ 沉积（长时，条件性）
+- 主张 4a/4b/4c：$\Delta\Psi_f^{op}$ 短时负偏 + 慢时正积累双时标（见 Lemma-FFSI）
+
+* **Cross-ref**: `_SRT_PSI_F_CANONICAL.md Def-Ψ-1`; Co-Evo-1（$\Delta\Psi_f^{field}$ 积累机制）; Lemma-FFSI（快正/慢负双时标，下方）; T-Comp-Suppress（下方）; T-Op-SIAM 主张 1'/3a/3b/4a-4c 重铸（下方）。
+
+---
+
+### Lemma-FFSI: Fast-Facilitation / Slow-Inhibition Dual Timescale（快促进/慢抑制双时标引理，2026-04-17）
+
+**[状态：条件性结构引理；非从现有 SRT 骨架自动推出；为主张 4a/4b/4c 提供最小动力学支撑]**
+
+**动机**：T-Op-SIAM 原主张 4（非单调起点）若要有结构来源，而非仅靠实验锚定，需要**至少两个符号相反、时间常数不同的过程叠加**。单一抑制机制只能给出单调下降；单一 priming 只能给出上升后回基线。非单调的最小要求是：快正项 + 慢负项并存，且 $\tau_{fast} \ll \tau_{slow}$。
+
+**最小动力学模板（Ψ_f 写法）**：
+
+$$\Psi_f^{eff}(x_{comp},\, t) \;\approx\; \Psi_f^0 \;-\; a\, e^{-t/\tau_{fast}} \;+\; b\!\left(1 - e^{-t/\tau_{slow}}\right)$$
+
+其中：
+- $a > 0$：短时促进幅度（局部激活后残留兴奋、检索通道增敏）
+- $b > 0$：慢时抑制幅度（竞争写回积累、归一化资源重分配）
+- $\tau_{fast} \ll \tau_{slow}$：双时标分离条件
+
+等价的可及性写法：
+
+$$A_{eff}(x_{comp},\, t) \;\approx\; A^0 \;+\; \alpha\, e^{-t/\tau_{fast}} \;-\; \beta\!\left(1 - e^{-t/\tau_{slow}}\right), \quad \alpha,\,\beta > 0$$
+
+**$\Delta\Psi_f^{op}$ 与双时标的对应**：
+- 快促进项 $-a\,e^{-t/\tau_{fast}}$：→ $\Delta\Psi_f^{op}$ 短时为**负**（摩擦暂降，可及性短升）；作用层：3a 层（提示相对）
+- 慢抑制项 $+b(1-e^{-t/\tau_{slow}})$：→ $\Delta\Psi_f^{op}$ 中/长时转**正**（竞争写回积累）；若 Co-Evo-1 触发，可沉积为 $\Delta\Psi_f^{field}$
+
+| 转折时刻 | 条件 | 对应 $\Psi_f^{eff}$ 状态 |
+|---|---|---|
+| $t = 0$ | — | $\Psi_f^{eff} = \Psi_f^0$（基线） |
+| $0 < t < t^*$ | 快促进主导 | $\Psi_f^{eff} < \Psi_f^0$（促进窗口）|
+| $t = t^*$ | 两项平衡 | $\Psi_f^{eff} = \Psi_f^0$（交叉点）|
+| $t > t^*$ | 慢抑制主导 | $\Psi_f^{eff} > \Psi_f^0$（净抑制）|
+| $t \to \infty$ | $b > a$ 时 | $\Psi_f^{eff} \to \Psi_f^0 + (b-a)$（低于 $A^0$）|
+
+其中 $t^* = \frac{\tau_{fast}\tau_{slow}}{\tau_{slow}-\tau_{fast}} \ln\!\left(\frac{a\tau_{slow}}{b\tau_{fast}}\right)$（当 $\tau_{fast} \ll \tau_{slow}$ 时近似为 $\tau_{fast}\ln(a\tau_{slow}/b\tau_{fast})$）。
+
+**三层条件性主张**（详见 T-Op-SIAM 地位注）：
+
+| 主张 | 条件 | 性质 |
+|---|---|---|
+| **4a**（最稳）局部 priming window | 快促进项存在（$a > 0$，$\tau_{fast}$ 合适） | 提示相对，短时。无需 $b > a$。 |
+| **4b**（中等）priming → suppression 转折 | 同时存在慢抑制积累（$b > 0$，$\tau_{slow} > \tau_{fast}$）| 双时标耦合；转折时刻 $t^*$ 存在。 |
+| **4c**（最强）先升后降并最终低于基线 | $b > a$（慢抑制幅度大于快促进幅度） | 需额外强度假设，最易被反例击穿。 |
+
+**非单调反例条件**（主张 4 可以不成立的情形）：
+- 路径初始已被强抑制（$A^0(x_{comp}) \ll A^0(x_{prac})$）：快促进项被淹没，直接单调下降
+- 快促进项极短（$\tau_{fast} \to 0$）：priming window 测量不可见
+- 慢负项不存在（纯 priming 情形）：上升后回基线，不进入 SIAM 式压低
+
+⚠ **范围警告**：Lemma-FFSI 是主张 4 的**结构模板**，不是从现有 SRT 公理推出的定理。快促进项（$a, \tau_{fast}$）目前通过实验锚定（Johnson & Anderson 2004 priming window 数据），非 SRT 内推导。
+
+* **Cross-ref**: Def-Psi-Split（$\Delta\Psi_f^{op}$ 短时负值许可）；T-Op-SIAM 主张 4a/4b/4c（下方）；Ax-Op-03b Layer 3（$L_{comp}$ 符号翻转条件，从数轮到 priming）。
+
+---
+
+### T-Comp-Suppress: Competitive Suppression Weak Theorem（竞争压制弱定理，2026-04-17）
+
+**[状态：弱定理，从 Ax-Op-03 + Ax-Op-03b Layer 1 可推；不依赖 Layer 2/3；不主张乙₃]**
+
+**Statement**：在稳定竞争耦合（Ax-Op-03）与反复实践写回（Ax-Op-03b Layer 1）的条件下，$x_{prac}$ 的持续激活使 $x_{comp}$ 在相关竞争语境中的场中有效摩擦单调上升：
+
+$$\Delta\Psi_f^{comp}(x_{comp},\, t,\, \theta) \nearrow \quad\Longleftrightarrow\quad A_{eff}(x_{comp},\, t,\, \theta) \searrow$$
+
+**推导机制（两步，均来自已有结构）**：
+
+**乙₁（在线相对惩罚）—— 直接来自 Ax-Op-03 归一化**：
+
+幽灵算子除法归一化：$[\hat{G}_\theta(x)]_i = x_i^n / (\varepsilon_{reg} + \sum_j W_{ij} x_j^n)$
+
+当 $x_{prac}$（竞争项 $j$）被激活时，分母增大 → $[\hat{G}_\theta]_{x_{comp}}$ 当轮主动压低。这不是"未得折扣"，而是对手成功对 $x_{comp}$ 的实时惩罚。
+
+**乙₂（塑性关系惩罚）—— 来自 Ax-Op-03b Layer 1 写回律**：
+
+反复选择 $x_{prac}$ → $W_{ij}$（$i=x_{comp}, j=x_{prac}$）增大 → 此后相似竞争语境中，$x_{comp}$ 在归一化分母中受到更强的结构性压制 → $\Delta\Psi_f^{comp}$ 在相关语境中持续保留。
+
+**T-Comp-Suppress 不主张的内容（故意留空）**：
+
+| 不主张 | 对应 T-Op-SIAM 主张 | 原因 |
+|---|---|---|
+| $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 脱域本征惩罚） | 主张 1 强版本 | 需 Ax-Op-03b Layer 3 + 提示独立性声明 |
+| 单轮指数分布（当前轮 Gibbs 配分） | 主张 **2a** | 已由最大熵推出（Layer 2a），T-Comp-Suppress 不需要它，但与之相容 |
+| 跨时指数衰减 $A \propto e^{-\lambda N}$ | 主张 **2b** | 仍为桥接公设；三候选桥梁方案（Layer 2b），均需额外声明 |
+| 提示相关持续性（局部泛化） | 主张 **3a** | 乙₁/乙₂ 仅更新 $\Delta\Psi_f^{op}$（提示敏感）；跨相似提示族的泛化需额外论证 |
+| 渐近提示独立性（跨提示族） | 主张 **3b** | 需 Co-Evo-1 稳定化达到 τ_stable；$\Delta\Psi_f^{field}$ 沉积前无充分支撑 |
+| 局部 priming window（短时促进） | 主张 **4a** | 需快促进项存在（$a>0$）；条件性结构主张，非直接可推 |
+| priming → suppression 转折 | 主张 **4b** | 需双时标耦合（$\tau_{fast}\ll\tau_{slow}$，$b>0$）；见 Lemma-FFSI |
+| 先升后降并最终低于基线 | 主张 **4c** | 需 $b>a$（慢抑制幅度大于快促进幅度）；最强，最易被反例击穿 |
+
+* **Cross-ref**: Ax-Op-03（瞬态竞争归一化，乙₁ 来源）；Ax-Op-03b Layer 1（竞争更新律，乙₂ 来源）；Def-Psi-Split（$\Psi_f^{eff}$ vs $\Psi_f^0$ 区分）；T-Op-SIAM（以本定理为基础，主张 1 重铸为主张 1'，其余三项仍为公设）。
+
+---
+
 ### T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理）
 
-> **地位注（2026-04-16 硬化结果）**：T-Op-SIAM 当前为**独立结构公设**，非定理。
+> **地位注（2026-04-17 重铸）**：T-Op-SIAM 为**独立结构公设**，非定理。主张 1 已被剥离为弱定理 T-Comp-Suppress（有效可及性版本）；主张 3 已拆分为 3a（可推）与 3b（条件公设）。主张 2b/3b/4 仍为超额主张，待 Ax-Op-03b Layer 2/3 + Co-Evo-1 完成后再评估。
 >
-> - "从 Steps ①② 推出"的声称不成立：Steps ①② 仅给出"地形发生变化"，不给"变化方向"（败者可及性↓）。
-> - Ax-Op-03 + Ax-Op-04 亦不足：Ax-Op-03 只给瞬态归一化（当轮压制），Ax-Op-04 只给递归迭代（competition repeats）；两者均不保证"败者压制带方向写入历史"。
-> - **T-Op-SIAM 包含四项超出既有公理的强主张**：
->   1. **方向性**：$\Delta A(x_{comp}) < 0$
->   2. **持续性**：$e^{-\lambda N_{prac}}$ 累积衰减写回
->   3. **提示独立性**：作用于 $L_0$ 内容本身（非 $L_1/L_2$ 检索联结）——需额外声明 $A(x,t)$ 的本体论居于 $L_0$ 层
+> **主张 1'（条件化有效可及性降低，已由 T-Comp-Suppress 支撑）**：
+> 在稳定竞争耦合与反复实践写回条件下，$x_{comp}$ 在相关选择语境中的**有效可及性** $A_{eff}$ 下降。注意：这不等同于 $\Psi_f^0(x_{comp}) > \Psi_f^{0,\text{baseline}}$（乙₃ 主张）；后者目前尚无充分支撑。
+>
+> - **主张 2a（单轮配分 Gibbs，从最大熵推出）**：$p_t(i|C_t) \propto e^{-\beta_t\Psi_i(t)}$；幽灵算子 simplex + 平均摩擦约束 + 最大熵 → Gibbs 型当前轮配分。非纯建模选择，但作用域仅限当前轮相对配分。
+> - **主张 2b（跨时指数衰减，仍为桥接公设）**：$A(\text{path},t) \propto e^{-\lambda N_{prac}}$ 需额外动力学桥梁（三候选方案见 Ax-Op-03b Layer 2b）；从 2a 到 2b 必须跨越四断点（层级、相对/绝对、截面/更新律、Jensen gap）。
+> - **主张 3a（提示相对持续性，从 Ax-Op-03b 可推）**：在相似提示族内，竞争压制通过 $\Delta\Psi_f^{op}$ 在后续选择中持续保留。作用域：与 $W_{ij}$ 写回激活的提示语境族相似的范围内；不要求跨越非相似提示族。此主张由乙₁ + 乙₂ 支撑，无需额外声明。
+> - **主张 3b（渐近提示独立性，条件公设）**：若 Co-Evo-1 稳定化时间 $\tau_{stable}$ 被达到，算子相对压制可沉积为 $\Delta\Psi_f^{field}$（场级景观曲率），使 $x_{comp}$ 在更广泛提示族下保持较低可及性。条件：Co-Evo-1 充分积累（κ(t) 跨越稳定化阈值）；不满足条件时回退到主张 3a。
+> - **主张 4a（局部 priming window，条件性结构主张）**：在相似提示族内、激活后短时窗口中，$\Delta\Psi_f^{op}(t) < 0$，即 $x_{comp}$ 可及性短暂上升。条件：快促进项存在（$a > 0$，$\tau_{fast}$ 合适）。提示相对；无需慢抑制幅度强假设。
+> - **主张 4b（priming → suppression 转折，条件性结构主张）**：若同时存在慢时竞争抑制积累（$b > 0$，$\tau_{slow} \gg \tau_{fast}$），则快促进窗口结束后转入下降，转折时刻 $t^*$ 可由 Lemma-FFSI 给出。需双时标耦合假设，不能从 Ax-Op-03b 单独推出。
+> - **主张 4c（先升后降并最终低于基线，最强条件公设）**：若 $b > a$（慢抑制幅度大于快促进幅度），则长时渐近可及性低于基线。最危险版本，实验条件依赖性强，最易被反例击穿。
+>
+> **当前最硬位置**：T-Comp-Suppress 的弱乙（乙₁ + 乙₂）+ 主张 3a（提示相对持续性）+ 主张 4a（在快促进项存在时的局部 priming window）。强乙（乙₃）+ 3b（渐近提示独立）+ 4b/4c 均为条件性超额主张。
+
 >   4. **非单调初始条件**（priming window）：目前仅由实验锚定，非结构推导
 > - **当前处置**：T-Op-SIAM 作为独立结构公设在 Step ④ 放大机制中**暂时存活**；Ax-Op-03b 已起草（见上方），一旦 Ax-Op-03b 三层内容被接受，T-Op-SIAM 即恢复为 Ax-Op-03 + Ax-Op-03b 的推论（定理），不再是独立公设。
 > - **可守住的基底**（无需 Ax-Op-03b）：$\mathbb{E}[\Psi_f] \uparrow \;\Rightarrow\; A \downarrow$ 的**序关系**可从 payability 条件（Ax-F-02 熵压缩 + Persistent Selection System）读出——这给出方向性的弱版本，但无法给出具体函数形式或持续性量级。
@@ -194,25 +357,24 @@ $$\text{Ax-Op-03} + \text{Ax-Op-03b} \;\Rightarrow\; \text{T-Op-SIAM（方向 + 
 >   2. **桥接函数**：$A(\text{path}_i, t) \propto f(\mathbb{E}[\Psi_f(\text{path}_i, t)])$，$f$ 单调递减；若取指数形式 $e^{-\mu \mathbb{E}[\Psi_f]}$，必须显式声明为新增 bridge postulate 或建模选择，不得装成现成定理（Boltzmann 借用需标注）
 >   3. **L_comp 符号翻转条件**（priming window）：当 $A_0(x_{comp}) \gg A_0(x_{prac})$ 时，前 $N_{prac} < N_c$ 轮 $L_{comp}(x_{comp})$ 符号为负（短暂启动），$N_{prac} \geq N_c$ 后翻正（净抑制）；阈值 $N_c$ 依赖竞争不对称度，是额外结构参数
 
-**Formal Statement**: $\hat{G}_\theta$ 的每次选择操作不仅从 $L_0$ 锚定 $L_1$，而且在 $L_0$ 的可及性景观上施加**持续性的抑制修改**，使被拒绝的竞争者在后续选择中的可及性降低：
+**Formal Statement**（各部分地位见上方地位注）：$\hat{G}_\theta$ 的每次选择操作不仅从 $L_0$ 锚定 $L_1$，而且在 $L_0$ 的可及性景观上施加**持续性的抑制修改**，使被拒绝的竞争者在后续选择中的可及性降低。
+
+> ⚠ 以下三项的认识论地位不同，不应等同对待：
+
+**[主张 2b：桥接公设，非推论]** 跨时指数衰减形式（Ax-Op-03b Layer 2 候选桥梁之一）：
 
 $$A(x_{comp}, t+\Delta t) = A(x_{comp}, t) \cdot e^{-\lambda \cdot N_{prac}}$$
 
-其中：
-- $A(x, t)$：$L_0$ 节点 $x$ 在时刻 $t$ 的可及性（accessibility）
-- $x_{comp}$：在选择操作中被抑制的竞争节点
-- $N_{prac}$：对同一 $L_0$ 区域执行竞争性检索的累积次数
-- $\lambda > 0$：抑制累积率（取决于竞争强度与 $\hat{G}_\theta$ 参数）
+其中：$A(x, t)$ = $L_0$ 节点 $x$ 在时刻 $t$ 的可及性；$x_{comp}$ = 被抑制的竞争节点；$N_{prac}$ = 累积实践次数；$\lambda > 0$ = 抑制累积率。此指数形式为 Boltzmann 借用，须声明为 bridge postulate——非从 Ax-Op-03b 自动推出。
 
-**关键性质——提示独立性（Cue Independence）**：
+**[主张 3b：条件公设，须 Co-Evo-1 稳定化]** 渐近提示独立性：
 $$\forall \, cue' \neq cue_{prac}: \quad A(x_{comp}, t + \Delta t) < A(x_{comp}, t)$$
+即抑制作用于 $L_0$ 内容本身，而非 $L_2$ 提示-内容联结；成立条件：Co-Evo-1 κ(t) 越阈 → $\Delta\Psi_f^{field}$ 积累充足。未达条件时，只能主张提示族内的 3a 式相对持续性。
 
-即抑制作用于 $L_0$ 内容本身，而非 $L_2$ 中的提示-内容联结；以独立提示测试时仍观察到可及性下降。
-
-**非单调初始条件**（Nonmonotonic Onset Condition）：
-当竞争节点的初始可及性 $A_0(x_{comp}) \gg A_0(x_{prac})$（主导竞争），第一次选择操作前 $\hat{G}_\theta$ 尚未累积足够抑制，竞争者会短暂获得启动：
-$$N_{prac} = 1 \Rightarrow A(x_{comp}, t+\Delta t) \geq A(x_{comp}, t) \quad \text{(priming window)}$$
-仅在 $N_{prac} \geq N_c$（临界次数，依赖于竞争不对称度）之后，净效应转为抑制。
+**[主张 4a/4b：Lemma-FFSI 双时标条件性]** 非单调起点：
+当 $A_0(x_{comp}) \gg A_0(x_{prac})$ 且快促进项存在（$a>0$）：
+$$N_{prac} = 1 \Rightarrow A(x_{comp}, t+\Delta t) \geq A(x_{comp}, t) \quad \text{[priming window, 主张 4a]}$$
+仅在 $N_{prac} \geq N_c$ 后净效应转为抑制（主张 4b 需双时标；4c 需 $b>a$）。详见 Lemma-FFSI。
 
 * **Implication（选择的双重效应）**：$\hat{G}_\theta$ 不是被动的映射——每次选择都在**重写 $L_0$ 的可及性地形**。这意味着人类知识的"可忘性"不完全由学习质量决定，而是由检索时的竞争拓扑决定：越频繁从某一领域检索相关项目，其竞争概念就越被系统性地压制，最终导致本质上是语义层面的"习得性遗忘"（Semantic Retrieval-Induced Forgetting, SRIF）。
 

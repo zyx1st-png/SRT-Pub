@@ -213,6 +213,22 @@ For any stable ISP P under L₀ irreversibility (Ax-F-01, Ax-F-03b), P necessari
 - Before: ε = L₀ primitive postulate (empirically narrowed)
 - After: ε = structural corollary of T-ε-Constitute (scoped to stable ISP); empirical narrowing specifies magnitude and direction; the *existence* of asymmetry is non-contingent within the theory object's scope
 
+**ε_pg (L₀) ↔ ISP-level ε: directional alignment bridge**:
+
+These are related but formally distinct objects at different levels; T-ε-Constitute does **not** collapse them into one:
+
+| Object | Level | Status | Direction |
+|--------|-------|--------|-----------|
+| ε_pg | L₀ | Structural postulate (unchanged by T-ε-Constitute) | None inherent — scalar seed only (B ≥ 2 vs self-erasing) |
+| ISP-level ε | Stable ISP | Structural corollary of T-ε-Constitute | Anti-closure — determined by Ax-F-03b |
+
+**Bridge (three-step)**:
+1. ε_pg provides the *existence* of asymmetry: some bias ≠ 0 holds at L₀ (scalar non-neutrality)
+2. Ax-F-03b provides the *direction*: closure states are absorbing → of all asymmetry directions, only anti-closure is stable-ISP-compatible (any other direction → self-termination)
+3. T-ε-Constitute confirms: for stable ISPs under L₀ irreversibility, the asymmetry they must maintain is specifically anti-closure ε
+
+**Reading**: ε_pg gives the *that* (asymmetry exists); Ax-F-03b + stable ISP requirement give the *which* (anti-closure); T-ε-Constitute makes the connection non-contingent. The bridge is: ε_pg (seed) + Ax-F-03b (direction filter) → ISP-level ε (anti-closure structural corollary).
+
 **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ④` (ε_pg); `Core_Law/SRT_Core_Text_CN.md ④` (ε); `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`; `Core/SRT_Core_01_Axioms.md MA-1`; Ax-Op-05 (dynamic layer: why stable ISPs emerge).
 
 ---
@@ -282,7 +298,7 @@ $$ Mass_{ontological}(O) = Mass_{energy}(O) + τ \cdot Assembly(O) $$
 7. **选择-信息创造等价 (Ax-F-13)**：$I_{created} = I(L_0\,;\,\hat{G}_\theta)$，选择事件是信息生成的本体论基础；三元关系 $I_{created} \to \Psi_f \to d$ 统一了热力学代价、选择代价与选择范围。Boltzmann 分布（统计力学）是 $I_{created}=0$ 时的退化极限。
 8. **构成性非对称定理 (T-ε-Constitute, 2026-04-17)**：**作用域**：稳定 ISP（视角承载/历史承载/可再进入的选择过程），而非全部选择事件。对稳定 ISP：中性处理在 L₀ 不可逆性下导致自我终止（吸收态）；反封闭非对称偏置 ε 是其构成性条件。稳定 ISP 不是观察者任意限制，而是被"能构成持续视角中心"这一要求筛出的理论对象。三层来源：ISP自维持（构成性，最深）← L₀不可逆（Ax-F-03b，必要条件）← Ψ_f>0（Ax-F-12，动力学后果）。地板层稳定性是理论对象进入条件；动力学层稳定性（为何某些过程能沉积为L₂）需另行解释（Ax-Op-05等）。ε 的存在从公设升为结构推论。
 
-以上公式组构成 SRT 形式公理体系的完整核心（**七类结构**），所有推论均可从这七类结构推导。
+以上公式组构成 SRT 形式公理体系的完整核心（**八类结构**），所有推论均可从这八类结构推导。
 
 ### Mechanism Explanation (机制解释)
 

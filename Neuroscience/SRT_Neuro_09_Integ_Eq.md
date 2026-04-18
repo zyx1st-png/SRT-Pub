@@ -124,7 +124,7 @@ $$\text{LIPFC} \uparrow \iff \text{Interference}(L_0^{sem}) \uparrow$$
 **关键推论——语义遗忘的正常机制**：
 $$\text{Semantic Forgetting} = f(\hat{G}_\theta^{LIPFC} \text{ suppression}, N_{prac}, A_{comp})$$
 
-正常人偶尔"忘掉本来知道的词义"，并非学习不充分，而是 $\hat{G}_\theta$ 历次语义检索所累积的竞争性抑制使目标概念的 $L_0$ 可及性下降所致（参见 T-Op-SIAM）。
+正常人偶尔"忘掉本来知道的词义"，并非学习不充分，而是 $\hat{G}_\theta$ 历次语义检索所累积的竞争性抑制使目标概念的 $L_0$ 有效可及性下降所致（参见 T-Comp-Suppress 乙₁+乙₂：可推的有效可及性下降，主张 1'；在相似提示族内持续，主张 3a；渐近提示独立性尚为条件性主张 3b，需 Co-Evo-1 稳定化）。
 
 **病理性反转**（对接 C-PATH-1）：当 LIPFC 功能受损（如额叶退行、TBI），抑制增益 $\lambda \to 0$，SRIF 机制失效——竞争概念无法被压制，$L_0$ 中多个语义节点同时保持高可及性并竞相涌入 $L_1$，临床表现为"思维联想散漫"或"概念边界崩溃"。
 
