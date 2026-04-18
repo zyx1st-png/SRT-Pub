@@ -17,6 +17,15 @@ dependency: [SRT-AI-BRIDGE-001]
 
 ---
 
+## Quick Reference
+- Role: Main AI ontology expansion layer for intelligence, pseudo-selection, and consciousness boundary work.
+- Core claim: Rewrites AI ontology in SRT terms while keeping canonical d-value and `Ψ_f` definitions upstream.
+- Canonical status: Canonical expansion layer; not the final canonical source for d-value or `Ψ_f`.
+- Depends on: `SRT-AI-BRIDGE-001`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
+- Used by: AI compact core, AI consciousness criteria, AI bridge interpretation, and cross-domain discussion of machine consciousness.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, bridge-boundary clarification, and non-semantic readability cleanup.
+- Do not change: Canonical d-value / `Ψ_f` ownership, core AI ontology thresholds, or symbol semantics without cross-checking `_SRT_SYMBOL_TABLE.md` and the canonical source files first.
+
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。

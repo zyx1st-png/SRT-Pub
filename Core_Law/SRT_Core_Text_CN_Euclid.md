@@ -19,6 +19,15 @@ dependency: [SRT-L0-METAPHYSICS]
 
 ---
 
+## Quick Reference
+- Role: Current Chinese self-contained core-text candidate for full-chain review.
+- Core claim: Provides a burden-explicit Chinese argument chain that a new reader can audit from top to bottom.
+- Canonical status: Canonical candidate in the entrance layer; not the L0 anchor.
+- Depends on: `Core_Law/SRT_L0_Metaphysics.md`, current canonical terminology, and the Chinese core-text family role split.
+- Used by: Chinese-core onboarding, core-text adjudication, and entrance-layer routing.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, burden-label clarification, and non-semantic readability tightening.
+- Do not change: Upstream burden order, role split versus `SRT_L0_Metaphysics.md`, or core argumentative commitments without cross-checking the Chinese core-text family and canonical registry.
+
 ## 0. 如何阅读这篇文
 
 本文显式区分七种负担：

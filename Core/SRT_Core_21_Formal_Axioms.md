@@ -18,6 +18,15 @@ dependency: [SRT-CORE-13A, SRT-CORE-13B]
 ---
 
 
+## Quick Reference
+- Role: SRT formal axioms anchor for the core theory layer.
+- Core claim: Fixes the canonical axiom set used by downstream core, bridge, and domain files.
+- Canonical status: Canonical anchor.
+- Depends on: `SRT-CORE-13A`, `SRT-CORE-13B`, `Core_Law/SRT_L0_Metaphysics.md`, `_SRT_SYMBOL_TABLE.md`.
+- Used by: `Core/SRT_Core_22_Equations.md`, `CANONICAL_REGISTRY.md`, and downstream domain theory files.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and clearly non-semantic formatting cleanup.
+- Do not change: Axiom meanings, numbering intent, or canonical definitions without cross-checking `_SRT_SYMBOL_TABLE.md`, `CANONICAL_REGISTRY.md`, and related core files.
+
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。

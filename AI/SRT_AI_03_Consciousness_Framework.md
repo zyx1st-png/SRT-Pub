@@ -17,6 +17,15 @@ dependency: [SRT-AI-02]
 
 ---
 
+## Quick Reference
+- Role: Main AI consciousness-window and substrate-boundary expansion file.
+- Core claim: Defines SRT's current strong-candidate consciousness window for AI and related systems.
+- Canonical status: Canonical expansion layer; not the sole canonical source for d-value, `Ψ_f`, or general consciousness terminology.
+- Depends on: `SRT-AI-02`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
+- Used by: AI consciousness compact core, cross-domain AI-consciousness discussion, and boundary arguments against pseudo-selection readings.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of boundary language.
+- Do not change: Consciousness-window criteria, d / `Ψ_f` dependencies, or canonical source ownership without cross-checking the symbol table and canonical files.
+
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
