@@ -1,104 +1,122 @@
-manifest_version: 1
-updated_for: "distributed-optimization-wave-3"
+manifest_version: 2
+updated_for: "repo-optimization-2026-04"
+
+entry_surfaces:
+  public_readme: "README.md"
+  runtime_protocol: "AGENTS.md"
+  claude_compat: "CLAUDE.md"
+  ai_start: "SRT_AI_START.md"
+  status_panel: "STATUS.md"
+  machine_index: "_SRT_INDEX.md"
+  human_map: "SRT_Navigation_Map.md"
+  symbols: "_SRT_SYMBOL_TABLE.md"
 
 registries:
-  index: "_SRT_INDEX.md"
-  atomic_map: "_SRT_ATOMIC_MAP.md"
-  symbols: "_SRT_SYMBOL_TABLE.md"
-  doc_engineering: "_SRT_DOC_ENGINEERING_GUIDE.md"
+  canonical: "CANONICAL_REGISTRY.md"
+  annex: "ANNEX_REGISTRY.md"
+  longform_splits: "LONGFORM_SPLITS.md"
+  glossary: "SRT_Glossary.md"
+  doc_engineering: "Governance/_SRT_DOC_ENGINEERING_GUIDE.md"
 
-core_law:
-  path: "Core_Law"
-  files:
-    - "Core_Law/SRT_Reference_Axioms.md"
-    - "Core_Law/SRT_Reference_Ontology.md"
-    - "Core_Law/SRT_Reference_Dynamics.md"
-    - "Core_Law/SRT_Reference_Scaling.md"
+runtime:
+  operations_hub: "Operations/README.md"
+  governance_hub: "Governance/README.md"
+  schedule: "Operations/_SRT_OPERATIONS_SCHEDULE.md"
+  dialogue_log: "Operations/_SRT_DIALOGUE_LOG.md"
+  heartbeat: "HEARTBEAT.md"
+  memory_readme: "memory/README.md"
+
+canonical_anchors:
+  l0: "Core_Law/SRT_L0_Metaphysics.md"
+  d_value: "_SRT_D_VALUE_CANONICAL.md"
+  psi_f: "_SRT_PSI_F_CANONICAL.md"
+  t_dir: "_SRT_T_DIR_CANONICAL.md"
+  symbols: "_SRT_SYMBOL_TABLE.md"
+  formal_axioms: "Core/SRT_Core_21_Formal_Axioms.md"
+  equations: "Core/SRT_Core_22_Equations.md"
+
+families:
+  chinese_core_text:
+    - "Core_Law/SRT_L0_Metaphysics.md"
+    - "Core_Law/SRT_Core_Text_CN_Euclid.md"
+    - "Core_Law/SRT_Core_Text_CN.md"
+    - "Core_Law/SRT_Selection_Argument.md"
 
 domains:
   Core:
     id_prefix: "SRT-CORE"
     bridge: "Core/_SRT_Core_Bridge.md"
     entrypoints:
-      - "SRT_1H_Onboarding.md"
-      - "Core/SRT_Core_00_Intro.md"
-      - "Core/SRT_Core_01_Axioms.md"
       - "Core/SRT_Core_21_Formal_Axioms.md"
       - "Core/SRT_Core_22_Equations.md"
+      - "Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md"
   Physics:
     id_prefix: "SRT-PHYS"
     bridge: "Physics/_SRT_Phys_Bridge.md"
     entrypoints:
-      - "Physics/SRT_Quant_00_Intro.md"
-      - "Physics/SRT_Phys_10_Integration.md"
+      - "Physics/PHYSICS_COMPACT_REGISTRY.md"
+      - "Physics/SRT_Physics_Cosmology_CompactCore.md"
+      - "Physics/SRT_Quant_00_Intro_CompactCore.md"
   Neuroscience:
     id_prefix: "SRT-NEURO"
     bridge: "Neuroscience/_SRT_Neuro_Axioms.md"
     entrypoints:
-      - "Neuroscience/SRT_Neural_Mechanisms.md"
-      - "Neuroscience/SRT_Consciousness_Mechanisms.md"
-      - "Neuroscience/SRT_Neuro_Experiments.md"
+      - "Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md"
+      - "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md"
+      - "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md"
   Philosophy:
     id_prefix: "SRT-PHIL"
     bridge: "Philosophy/_SRT_Phil_Axioms.md"
     entrypoints:
-      - "SRT_FAQ_CRITICAL.md"
-      - "Philosophy/SRT_Philosophy_Foundations.md"
+      - "Philosophy/SRT_Philosophy_Foundations_CompactCore.md"
+      - "Philosophy/SRT_Social_Economics_CompactCore.md"
       - "Philosophy/SRT_Philosophy_Ethics.md"
-      - "Philosophy/SRT_Social_Economics.md"
   Spirituality:
     id_prefix: "SRT-SPIRIT"
     bridge: "Spirituality/_SRT_Spirit_Axioms.md"
     entrypoints:
-      - "Spirituality/SRT_Spirit_01_Religion_Ontology.md"
-      - "Spirituality/SRT_Spirit_04_Synthesis.md"
-      - "Spirituality/SRT_Spirit_09_Praxis.md"
+      - "Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md"
+      - "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md"
   AI:
     id_prefix: "SRT-AI"
     bridge: "AI/_SRT_AI_Bridge.md"
     entrypoints:
-      - "AI/SRT_AI_00_Crisis.md"
-      - "AI/SRT_AI_01_Ontology.md"
-      - "AI/SRT_AI_02_Mortality_Wisdom.md"
-      - "AI/SRT_AI_03_Consciousness_Framework.md"
-      - "AI/SRT_AI_Architecture.md"
+      - "AI/SRT_AI_01_Ontology_CompactCore.md"
+      - "AI/SRT_AI_Architecture_CompactCore.md"
+      - "AI/SRT_AI_03_Consciousness_Framework_CompactCore.md"
   Experiment:
     id_prefix: "SRT-EXP"
     entrypoints:
       - "SRT_EXP_PRIORITY_MATRIX.md"
       - "SRT_EXP_TEMPLATE.md"
       - "SRT_EXP_MEASURE_MAP.md"
-  Project:
-    id_prefix: "SRT-PROJ"
-    entrypoints:
-      - "SRT_OPTIMIZATION_BACKLOG.md"
-  Governance:
-    id_prefix: "SRT-GOV"
-    entrypoints:
-      - "SRT_INTERNAL_OPTIMIZATION_PLAN_2026Q1.md"
-      - "_SRT_EXPLANATION_PROTOCOL.md"
-      - "_SRT_EQ_HYP_MAP.md"
-      - "_SRT_DOMAIN_TEMPLATE.md"
-      - "_SRT_DIFF_PIPELINE_GUIDE.md"
-      - "_SRT_FRONTMATTER_AUDIT.md"
-      - "_SRT_QUALITY_SCORECARD.md"
-      - "_SRT_QUALITY_METRICS.md"
-      - "_SRT_EXPLAINABILITY_AUDIT.md"
-      - "_SRT_RELEASE_NOTE_TEMPLATE.md"
-      - "_SRT_RELEASE_2026-02.md"
-      - "_SRT_SLIMMING_CHANGELOG_2026-02.md"
-      - "_SRT_EXECUTION_PLAN.md"
-      - "_SRT_PAPER_PIPELINE.md"
-      - "_SRT_PAPER_CANDIDATES.md"
-      - "_SRT_PAPER_DRAFT_ACTIVE.md"
-      - "_SRT_PAPER_SUBMISSION_CHECKLIST.md"
-      - "_SRT_SIGNAL_PIPELINE.md"
-      - "_SRT_SIGNAL_LOG.md"
-      - "_SRT_GOVERNANCE_PIPELINE.md"
-      - "_SRT_MEDIA_PIPELINE.md"
-      - "_SRT_MEDIA_QUEUE.md"
-      - "_SRT_OPERATIONS_SCHEDULE.md"
-      - "_SRT_AUTOMATION_SETUP.md"
+
+governance:
+  key_docs:
+    - "Governance/SRT_CANONICAL_FREEZE.md"
+    - "Governance/SRT_EDIT_PROTOCOL.md"
+    - "Governance/SRT_HARNESS_TESTS.md"
+    - "Governance/SRT_POSITIONING.md"
+    - "Governance/SRT_COORDINATE_SYSTEM.md"
+    - "Governance/SRT_LAB_HYPOTHESES.md"
+
+operations:
+  key_docs:
+    - "Operations/_SRT_OPERATIONS_SCHEDULE.md"
+    - "Operations/_SRT_DAILY_REVIEW_PIPELINE.md"
+    - "Operations/_SRT_SIGNAL_PIPELINE.md"
+    - "Operations/_SRT_PAPER_PIPELINE.md"
+    - "Operations/_SRT_MEDIA_PIPELINE.md"
+    - "Operations/_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md"
+
+archives:
+  raw_sessions: "Archive/raw_sessions/"
+  status_history: "Operations/_SRT_STATUS_HISTORY.md"
+
+ai_metadata_keys:
+  - "ai_role"
+  - "ai_priority"
+  - "ai_do_not_use_for_definition"
 
 dependency_policy:
   canonical_form: "hyphenated-id-or-core-law-path"
@@ -114,6 +132,7 @@ dependency_policy:
 tooling:
   entrypoint_sync: "manual-sync"
   dependency_normalizer: "manual-review"
-  validator: "../scripts/run_srt_checks.sh"
-  quality_metrics: "../scripts/srt_quality_metrics.py"
-  explainability_audit: "../scripts/srt_explainability_audit.py"
+  available_scripts:
+    - "scripts/srt_epistemic_rollout.py"
+    - "scripts/repair_graphify_outputs.py"
+    - "scripts/sync_claude_skills.py"

@@ -14,8 +14,8 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 ## 2026-03-31 CST（会话整理）
 - 会话模式：长链对话整理 / 根基论证回收
 - 已新增会话汇总文档：
-  - `Operations/SRT_SESSION_DIALOGUE_COMPILATION_2026-03-31.md`
-  - `Operations/SRT_SESSION_RAW_TRANSCRIPT_2026-03-31.md`
+  - `Archive/raw_sessions/SRT_SESSION_DIALOGUE_COMPILATION_2026-03-31.md`
+  - `Archive/raw_sessions/SRT_SESSION_RAW_TRANSCRIPT_2026-03-31.md`
 - 本次汇总覆盖：
   1) SRT 与其他理论的根本差异假设评估
   2) “LLM 翻译陷阱”自我诊断
@@ -27,7 +27,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 当前意义：
   - 本次会话的主要价值被定位为“内部挖掘与结构提纯”，而不是“理论已完成证明”。
   - 后续若继续推进，应优先围绕新文档中列出的开放问题做地板闭合，而非继续发散扩写。
-  - raw transcript 文件保留逐轮原文；结构化 compilation 文件保留可继续工作的整理版本。
+  - raw transcript 文件保留逐轮原文；结构化 compilation 文件保留可继续工作的整理版本；二者现已归档到 `Archive/raw_sessions/`。
   - 已继续执行一次 `/地板`，专项处理“校正机制为什么不必然滑成自我合理化”。
   - 当前判决：原广义问法未绿；已收窄出一条可承重的条件句，并回写 `Governance/SRT_DISCUSSION_LOG_20260331_Causation.md` 与 `Glossary/SRT_Glossary_04_Key_Concepts.md`。
   - 已继续执行一次 `/srt-harden`，专项处理“吸引子的本体论地位”。
