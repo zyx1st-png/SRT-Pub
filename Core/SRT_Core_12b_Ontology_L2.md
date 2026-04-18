@@ -306,6 +306,15 @@ $$\frac{d\theta(t)}{dt} = \mathcal{G}[\kappa(t),\, \theta(t)]$$
 
 $$\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}$$
 
+**Co-Evo-1 → ΔΨ_f^field 的显式链接**（为 T-Op-SIAM 主张 3b/Def-Psi-Split 提供机制基础）：
+
+当 κ(t) 积累超过稳定化阈值 $\tau_{stable}$，L₀ 曲率景观的局部方向结构发生**非提示特异**的改变，导致：
+$$\Delta\Psi_f^{field}(x_{comp},\, t) \;=\; f_\kappa(\kappa(t) - \kappa_0,\, x_{comp}), \quad f_\kappa > 0 \text{ 当竞争历史积累充足时}$$
+
+即：Co-Evo-1 的 κ(t) 动力学在竞争方向上积累足够曲率后，$x_{comp}$ 在 L₀ 景观中整体受到较高的曲率摩擦（$\Delta\Psi_f^{field} > 0$），与当前提示无关。这是 Def-Psi-Split 中 $\Delta\Psi_f^{field}$ 分量的来源，也是主张 3b（渐近提示独立性）的机制前提。注意：$f_\kappa$ 的具体形式目前为结构模板，非 Co-Evo-1 内推导；需额外声明或实验锚定。
+
+* **Cross-ref**: `Core/SRT_Core_13a Def-Psi-Split`（$\Delta\Psi_f^{field}$ 三分量结构）; T-Op-SIAM 主张 3b（渐近提示独立性条件公设）; `_SRT_SYMBOL_TABLE.md ΔΨ_f^field`（符号规范）。
+
 ### Co-Evo-2: Migrating Attractor Trap（迁移吸引子陷阱）
 
 **命题**：在 $t$ 时刻深度对齐某局部吸引子的算子，在 $t + \Delta t$ 该吸引子迁移后可能陷入错位。最大化当前 $d$ 的策略是局部最优但长期脆弱的。
