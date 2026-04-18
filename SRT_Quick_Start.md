@@ -62,6 +62,22 @@ SRT 现在有两根坐标轴，不要混读：
 
 完整说明见 `Governance/SRT_COORDINATE_SYSTEM.md`。
 
+### 0.5.1 Fisher / 景观 / FEP 应放在哪个箭头上？
+
+这一组概念**不要直接按域一一等同**。更稳的读法是：
+
+- **Fisher geometry**：主要刻画 `L0 → L1` 的局部可区分性 / 选择摩擦几何
+- **L1**：真实发生的显现事件与轨迹
+- **L2**：历史选择沉积后的稳定约束域
+- **energy / free-energy landscape**：`L2` 的有效投影
+- **FEP**：某些组织化系统在 `L1` 中、受 `L2` 约束时的自维持更新律
+
+最短公式化记法：
+
+> **Fisher 属于 `L0→L1` 的生成几何，景观属于 `L2` 对 `L1` 的约束投影，FEP 属于 `L1` 在 `L2` 中的自维持动力学。**
+
+详见：[`SRT_Fisher_FEP_Landscape_Interface.md`](SRT_Fisher_FEP_Landscape_Interface.md)
+
 ### 0.6 中文主论证现在怎么读
 
 当前中文主论证入口已经做过角色裁决，最稳的读法是：
