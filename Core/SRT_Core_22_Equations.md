@@ -20,6 +20,15 @@ dependency: [SRT-CORE-21]
 ---
 
 
+## Quick Reference
+- Role: SRT master-equations anchor for dynamics, thermodynamics, and stability.
+- Core claim: Fixes the canonical equation layer that downstream long-form and bridge files should cite back to.
+- Canonical status: Canonical anchor.
+- Depends on: `SRT-CORE-21`, `_SRT_SYMBOL_TABLE.md`, and canonical core terminology.
+- Used by: `CANONICAL_REGISTRY.md`, `Core/SRT_Core_14_Dynamics_Scaling.md`, and domain bridge or interpretation files.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic formatting cleanup.
+- Do not change: Equation semantics, canonical scope, or symbol usage without cross-checking `_SRT_SYMBOL_TABLE.md`, `Core/SRT_Core_21_Formal_Axioms.md`, and `CANONICAL_REGISTRY.md`.
+
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。

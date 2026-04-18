@@ -2,17 +2,34 @@
 
 This project keeps its own OpenClaw/ClawX entrypoints.
 
-Use this file as the canonical runtime overlay when the current work is inside `SRT/`, even if sibling projects exist in the same parent workspace.
+Use this file as the canonical runtime overlay when the current work is inside this repository, even if sibling projects exist in the same parent workspace.
+
+`CLAUDE.md` is only a compatibility wrapper.
+`SRT_AI_START.md` is the AI minimal-theory entry.
+`README.md` is the public-facing repo entry.
 
 ## Session Start
 
-Before doing substantial work in `SRT/`:
+For a fresh AI session inside this repo, read in this order:
 
-1. Read `STATUS.md`
-2. Read `Operations/README.md`
-3. Read `Governance/README.md`
-4. Read `memory/YYYY-MM-DD.md` (today + yesterday) if present
-5. Read `HEARTBEAT.md` before heartbeat-style or automation-style work
+1. `SRT_AI_START.md`
+2. `STATUS.md`
+3. `_SRT_INDEX.md`
+4. `_SRT_SYMBOL_TABLE.md`
+
+Read `README.md` when public-facing framing or external onboarding context is useful.
+
+Before doing substantial pipeline / governance / theory work:
+
+1. Read `Operations/README.md`
+2. Read `Governance/README.md`
+3. Read `memory/YYYY-MM-DD.md` (today + yesterday) if present
+4. Read `HEARTBEAT.md` before heartbeat-style or automation-style work
+
+Before editing theory files, also read:
+
+1. `Governance/SRT_CANONICAL_FREEZE.md`
+2. `Governance/SRT_EDIT_PROTOCOL.md`
 
 ## SRT Trigger Words
 
@@ -40,9 +57,11 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 - 更新 `STATUS.md` 中的今日执行状态
 - 需要留痕时追加到相应 `Operations/` 或 `Governance/` 台账
+- 不把 `Operations/` 日志、bridge 文件或 split / annex 导航写成新的 canonical 定义
 
 ## Canonical Runtime Paths
 
+- AI 最小首读入口：`SRT_AI_START.md`
 - 运行层入口：`Operations/README.md`
 - 治理层入口：`Governance/README.md`
 - 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`
@@ -52,6 +71,7 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 - `SRT_openclaw/` is retired and should be treated as legacy history, not a live path.
 - Active SRT workflow docs now live under `Operations/` and `Governance/`.
+- Root-level entry surfaces now separate public entry, runtime protocol, AI start, machine index, and human map.
 
 ## ClawX Environment
 

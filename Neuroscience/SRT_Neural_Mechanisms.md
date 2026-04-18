@@ -18,6 +18,15 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 ---
 
 
+## Quick Reference
+- Role: Main neuroscience mechanisms expansion layer for neural dynamics under SRT.
+- Core claim: Maps SRT selection dynamics into neural state-space, ignition, attractor, and systems-level mechanism language.
+- Canonical status: Canonical expansion layer within neuroscience; not a replacement for core canonical definitions.
+- Depends on: `SRT-CORE-000`, `SRT-NEURO-AXIOMS-001`, `Core_Law/SRT_Reference_Axioms`, `Core_Law/SRT_Reference_Ontology`, `Core_Law/SRT_Reference_Dynamics`, `_SRT_SYMBOL_TABLE.md`.
+- Used by: neuroscience compact core, consciousness mechanisms, experiment discussion, and bridge interpretation.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of mechanism summaries.
+- Do not change: Neural mechanism claims that depend on canonical core terms or rewrite d / `Ψ_f` ownership without cross-checking the symbol table and upstream canonical files.
+
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。

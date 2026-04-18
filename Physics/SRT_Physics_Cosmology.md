@@ -17,6 +17,15 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 
 ---
 
+## Quick Reference
+- Role: Main physics/cosmology expansion layer for thermodynamics, time, gravity, and cosmology in SRT.
+- Core claim: Projects SRT selection, friction, and time concepts into physical and cosmological interpretation space.
+- Canonical status: Canonical expansion layer within physics; not a replacement for L0, symbol-table, or core-equation anchors.
+- Depends on: `Core_Law/SRT_Reference_Axioms`, `Core_Law/SRT_Reference_Ontology`, `SRT-QUANT-02`, `_SRT_SYMBOL_TABLE.md`.
+- Used by: physics compact core, quantum/cosmology integration files, and cross-domain formal interpretation work.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of physical interpretation boundaries.
+- Do not change: Core physical interpretation claims that alter canonical symbol meaning or core equation ownership without cross-checking upstream anchors.
+
 # Part A: Formal Axioms
 ## 0. Notation & Conventions (符号与约定)
 

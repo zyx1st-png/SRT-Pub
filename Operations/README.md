@@ -19,6 +19,20 @@ dependency: [SRT-STATUS]
 - 论文 pipeline、候选池、活跃草稿、投稿清单
 - 材料台账、待审队列、自动化配置
 
+## Authority Boundary
+
+`Operations/` 是 **runtime layer**，不是 canonical theory layer。
+
+使用原则：
+
+- 用它追溯执行节奏、日志、队列与流程状态
+- 不用它替代理论主文、canonical 定义或符号规范
+- 若与 `CANONICAL_REGISTRY.md` 或 canonical 文件冲突，以后者为准
+
+raw session / dialogue compilation / residual archives 已下沉到：
+
+- `Archive/raw_sessions/`
+
 推荐阅读顺序：
 1. `_SRT_OPERATIONS_SCHEDULE.md`
 2. `_SRT_DAILY_REVIEW_PIPELINE.md`

@@ -18,6 +18,15 @@ dependency: [SRT-NEURO-MECH-001]
 ---
 
 
+## Quick Reference
+- Role: Main neuroscience consciousness-mechanisms expansion layer.
+- Core claim: Interprets ignition, re-entry, binding, sleep, and related consciousness mechanisms through SRT selection dynamics.
+- Canonical status: Canonical expansion layer within neuroscience; not the ultimate canonical source for core definitions.
+- Depends on: `SRT-NEURO-MECH-001`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
+- Used by: neuroscience compact core, consciousness-window discussion, and cross-domain consciousness comparisons.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of mechanism boundaries.
+- Do not change: Threshold logic, d / `Ψ_f` dependencies, or consciousness-mechanism framing in ways that conflict with upstream canonical anchors.
+
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。

@@ -19,6 +19,15 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 ---
 
 
+## Quick Reference
+- Role: Main philosophy expansion layer for ontology, epistemology, paradox, and interface work.
+- Core claim: Re-expresses core SRT commitments in philosophical form while interfacing with comparison problems and boundary disputes.
+- Canonical status: Canonical expansion layer; not the unique L0 anchor.
+- Depends on: `SRT-CORE-000`, `Core_Law/SRT_Reference_Axioms`, `Core_Law/SRT_Reference_Ontology`, `Core_Law/SRT_Reference_Dynamics`, `Core_Law/SRT_Reference_Scaling`, `SRT-PHIL-AXIOMS`.
+- Used by: philosophy compact core, comparison files, Chinese-core support texts, and multi-domain interpretation work.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of philosophical interface language.
+- Do not change: L0/L1 boundary, canonical ownership of core terms, or major philosophical derivation structure without cross-checking the relevant canonical anchors.
+
 ## Terminology Alignment (术语与原始意图对齐)
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。

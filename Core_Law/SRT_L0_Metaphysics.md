@@ -21,6 +21,15 @@ dependency: []
 
 ---
 
+## Quick Reference
+- Role: The unique L0 metaphysical anchor for the repository.
+- Core claim: Selection precedes stable existence, and all higher formalization or domain mapping must be constrained by this layer.
+- Canonical status: Canonical anchor; unique L0 source.
+- Depends on: No upstream theory file; all downstream layers depend on it.
+- Used by: `Core_Law/` reference files, `Core/` formal layer, the Chinese core-text family, bridge files, and onboarding docs.
+- Safe edits: Typo fixes, link fixes, Quick Reference updates, and clearly non-semantic wording cleanup.
+- Do not change: L0 burden structure, boundary against L1/L2 proof language, or the unique-anchor role without explicit high-risk cross-check.
+
 ## 一、选择先于存在
 
 存在不是一个背景。
