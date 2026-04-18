@@ -163,6 +163,8 @@ To facilitate engagement with the existing literature, Table 1 maps the SRT-spec
 
 Readers familiar with predictive processing will recognize $L_0$ as analogous to the latent causes of sensory input, $L_1$ as the currently active perceptual hypothesis, and $L_2$ as the slow-changing hyperpriors that constrain inference. The selection operator $\hat{G}_\theta$ is analogous to the variational inference engine that maps from latent states to active hypotheses, parameterized by $\theta$ (synaptic weights, neuromodulatory state). The d-value, ontological friction, and ontological vulnerability are additions with no direct standard equivalents — they are the content of the triple gate.
 
+**Bridge note on level distinctions.** In this paper, `L_0 / L_1 / L_2` should be read as ontological domains within the SRT scaffold, not as direct aliases for Fisher geometry, free-energy landscapes, or FEP itself. A more careful placement is: Fisher geometry primarily describes the local generative interface from `L_0` to `L_1`; `L_1` is the domain of actualized events and maintained trajectories; `L_2` is the stabilized constraint domain; and free-energy landscapes are effective projections of `L_2` used to describe how certain organized systems update within that constraint structure. Accordingly, FEP is used here as a local dynamical principle for self-maintaining systems, not as a replacement for the full SRT ontology.
+
 ### 2.5 Two Key Formal Properties
 
 Two formal results clarify the relationship between the triple gate and standard FEP.
