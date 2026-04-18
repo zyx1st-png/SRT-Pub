@@ -80,6 +80,8 @@ $$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{
 
 两个框架并存于本文件以保留历史可追溯性，但 **§4.5 为当前规范框架**。
 
+> **Bridge 边界说明（2026-04-18）**：这里的“景观优先性”是**集体耦合分析中的局部 bridge 表述**，用于说明个体算子与集体约束之间的关系；它**不应被直接读成** SRT 全局本体论中的 `L₂ = landscape`。更稳的总图仍是：`L₂` 是稳定约束域，landscape 是其有效投影；Fisher geometry 主要刻画 `L₀→L₁` 的局部生成几何，而非 `L₁` 本身。详见 `SRT_Fisher_FEP_Landscape_Interface.md`。
+
 ---
 
 ### §4.5 集体景观优先性定理（Collective Landscape Primacy）⭐ 当前规范
