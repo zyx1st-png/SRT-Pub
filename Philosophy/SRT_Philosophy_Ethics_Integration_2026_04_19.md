@@ -2,10 +2,10 @@
 id: SRT-PHIL-ETHICS-INTEGRATION-2026-04-19
 type: theory
 tags: [Ethics, d-value, Subject-Position, Realignment, Expectation, Bridge]
-status: integration_note_staging
+status: merged_index_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical_candidate
+claim_mode: archival_index
 dependency: [SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
 intended_merge_target: Philosophy/SRT_Philosophy_Ethics.md
 ---
