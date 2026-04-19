@@ -12,7 +12,7 @@ intended_merge_target: Philosophy/SRT_Philosophy_Ethics.md
 
 # Integration Note (2026-04-19): Subject-Position, d-Thickening, and the Emergence of New Expectation
 
-> 说明：本文件是对 `SRT_Philosophy_Ethics.md` 的低风险补充，用于先行落库；其内容已经形成闭链，可在下一轮并入主文档正文或现有 Integration Note 序列。
+> **已并入主文档**：本文件内容已作为 `Integration Note (2026-04-19)` 回写至 `Philosophy/SRT_Philosophy_Ethics.md` 正文末尾，仅保留 provenance。当前文件不再具有 doctrinal authority，不应作为独立 canonical 引用。
 
 ---
 
