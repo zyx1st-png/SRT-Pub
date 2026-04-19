@@ -241,12 +241,12 @@ $$
 
 ---
 
-## 11. 建议并入位置
+## 11. 已并入位置（Provenance Record）
 
-本文件建议并入 `Philosophy/SRT_Philosophy_Ethics.md` 的两个可能位置：
+本文件内容已实际并入 `Philosophy/SRT_Philosophy_Ethics.md` 的以下位置：
 
-1. 作为新的 `Integration Note (2026-04-19)` 追加在现有 `Integration Note (2026-04-18): Expectation, Floor, and Necessary Chaos` 之后。
-2. 或拆分并融入以下现有主轴：
-   - `§4 Spinoza 喜悦物理学`（更轻 / joy / d 上升）
-   - `§5 自由意志的第三立场`（有限 θ 下的操作性转向）
-   - `§6 斯多葛疗法的神经动力学`（再选择空间 / 更新与地板）
+1. **Integration Note (2026-04-19)**：作为完整 note 追加在 Integration Note (2026-04-18) 之后（包含最小闭链与压缩表述）。
+2. **正文深熔炼（三刀）**：
+   - `§4.4 真轻与伪轻 — 全局 vs 局部 d 增量`（对应原 §6–§7）
+   - `§5.5 元选择的主体位条件与全局 Ψ_f 最小化`（对应原 §3–§5）
+   - `§6.5 再选择空间与两阶段预期更新`（对应原 §8–§9）
