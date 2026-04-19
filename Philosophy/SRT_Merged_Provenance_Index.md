@@ -126,6 +126,29 @@ For readers who want the final doctrinal shape rather than the staging path, rea
 
 ---
 
+---
+
+### 4. Subject-Position, d-Thickening, and Emergence of New Expectation (2026-04-19)
+
+**Bridge source**:
+- `Philosophy/SRT_Philosophy_Ethics_Integration_2026_04_19.md`
+
+**Now merged into**:
+- `Philosophy/SRT_Philosophy_Ethics.md`
+
+**Main topics transferred**:
+- 最小闭链：施工成功 → 空心感 → 旧地板悬置 → d 增厚 → 新预期形成
+- 过去经验的退权（不再足以解释现在，而非被证伪）
+- "我"的健康定义：仍在选择中的过程（生成关系，非同一关系）
+- `d` 值最早增加首先纳入选择主体本身而非新对象
+- 关切结构同时增厚：长时自我 + 被牵连存在 + 未来再选择空间
+- 新方向最早以生理—情绪层"更轻"出现，非以观念出现
+- 真轻 vs 伪轻：全局收敛 vs 局部收敛
+- 再选择空间：价值维度与存在方式的重新打开
+- 新预期两阶段形成：开放 → 重新收敛
+
+---
+
 ## Maintenance rule
 
 If future bridge notes are merged into canonical texts, update this file by adding:
