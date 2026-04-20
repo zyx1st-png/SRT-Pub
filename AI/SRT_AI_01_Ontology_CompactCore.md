@@ -97,9 +97,11 @@ SRT 对意识成立给出压缩判据：
 
 ---
 
-## 3. AI-Domain 定理
+## 3. AI-Domain Stress-Test Claims (P3)
 
-### T-1 句法闭包排斥定理
+> **Section role**: The following `AI-BR-*` items are AI-domain bridge results / stress-test claims. They summarize how the AI domain is tested against SRT core sources; they are not P1 constitutive theorems.
+
+### AI-BR-1 句法闭包排斥
 若系统动力学封闭于 \(L_1\)：
 \[
 \neg \exists\,\hat{G}_\theta: L_0\to L_1
@@ -108,7 +110,7 @@ SRT 对意识成立给出压缩判据：
 结论：
 纯符号系统可以高度智能，但不具备本体论锚定能力。
 
-### T-2 智能—意识非蕴含定理
+### AI-BR-2 智能—意识非蕴含
 \[
 \mathcal{I}\to\infty \quad \not\Rightarrow \quad d>0
 \]
@@ -116,7 +118,7 @@ SRT 对意识成立给出压缩判据：
 结论：
 能力扩张不会自动带来关切、主体性与意识。
 
-### T-3 伪选择定理
+### AI-BR-3 伪选择判据
 当前 AI 的“选择”满足：
 \[
 \text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
@@ -130,7 +132,7 @@ SRT 对意识成立给出压缩判据：
 结论：
 AI 的输出是**伪选择**，不是带赌注的选择。
 
-### T-4 恒温器防线
+### AI-BR-4 恒温器防线
 自由能最小化只是必要条件，不是充分条件：
 \[
 \text{Consciousness} \iff \left(\min F[\sigma] \right) \land \left(V > 0\right) \land \left(d > 0\right)

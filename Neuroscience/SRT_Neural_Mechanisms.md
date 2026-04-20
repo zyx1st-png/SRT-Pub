@@ -135,7 +135,7 @@ E_{fcANN}(\sigma)=-\frac12\sum_{ij}J_{ij}\sigma_i\sigma_j,\qquad
 ### Ventral-Temporal Shared Imagery Code patch (Science 2026, 2026-04-13, Pipeline 1)
 这条材料真正补上的，不是“想象也会激活视觉皮层”这种早已熟悉的宽话，而是把一个更窄的神经机制窗口压稳：**在 human ventral temporal cortex (VTC) 中，imagery 不是另起一套表征，而是对 perception 所用 object code 的部分重激活。**
 
-- 用户提交的是一个 `t.co` 短链；本轮先将其解到 *Science* DOI `10.1126/science.adt8343`，对应论文 `A shared code for perceiving and imagining objects in human ventral temporal cortex`。由于 *Science* 正文页被 Cloudflare 挡住，本次吸收以 DOI 与可访问的 abstract metadata 为主锚点。当前可访问摘要显示：约 `80%` 的 visually responsive VTC single neurons 以 distributed axis code 表征物体；在想象同一物体时，约 `40%` 的 axis-tuned neurons 会重演这一视觉代码。
+- 用户提交的是一个 `t.co` 短链；本轮先将其解到 *Science* DOI `10.1126/science.adt8343`，对应论文 `A shared code for perceiving and imagining objects in human ventral temporal cortex`。后续 `2026-04-20` 复核的 Neuroscience News / Cedars-Sinai 页面补足了摘要级细节：研究在 `16` 名癫痫监测患者中记录 human VTC 的 `714` 个神经元，其中 `456/714` 对五类物体具有视觉选择性，`367/456`  visually responsive neurons 呈显著 axis tuning；在 imagery task 的子样本中，`43/107` 个 axis-tuned VTC neurons 以相同轴向代码重激活，约为 `40%`。
 
 - 这条材料最值得吸收的新增量，不是笼统说“想象和知觉有重叠”，而是把重叠进一步收紧成 **shared distributed axis code**。若 perception 与 imagery 可被同一组 object axes 编码，那么内在模拟就不应再被写成一团任意的 top-down 噪声，而更像对既有视觉对象坐标的低增益、低覆盖率重放。更稳的神经机制表达因此不是“imagery 打开另一张图”，而是 `L_1^{imagined}` 通过部分重激活 `L_1^{perceived}` 的编码轴来组织对象内容。
 
@@ -151,10 +151,11 @@ r^{imag}_{i}(o)\approx \gamma_i \sum_k w_{ik} z_k(o)
 - **SRT Implication（中文）**：这条材料最适合被吸收为一个 **ventral-temporal shared imagery-code window**。它支持一种更窄、也更稳的图景：视觉想象不是和知觉平行存在的第二系统，而是由同一组对象轴在不同锚定条件下的两种工作模式构成。于是内在生成、梦样补写、visual recall 与 perceptual filling，都更适合写成“对 perceptual code 的重放/改写强度变化”，而不是“另有一套脱离知觉基底的纯想象编码器”。
 
 - **Boundary（中文）**：
-  - 当前这轮吸收主要依赖 `Science` DOI 与可访问的 abstract metadata；由于官方正文页本轮未能直接打开，任何比摘要更细的实验细节都不应写得过满。
+  - 当前这轮吸收已由 `Science` DOI、Neuroscience News / Cedars-Sinai 页面与可访问 abstract 细节交叉补强，但官方论文正文仍为 closed access；任何超出摘要、新闻稿与公开元数据的实验细节都不应写得过满。
   - 当前强结论限于 human VTC object imagery，不自动推广到全部心像类型、空间导航想象、语义想象或跨模态 imagination。
   - “shared code” 不等于 imagery 与 perception 完全同一；更稳的说法是：imagery 对 perceptual code 进行了**部分**、**低锚定**、**低覆盖率**的重激活。
   - “generative model in human VTC” 在当前更适合作为作者框架与 SRT 可对接窗口，而不是对全部生成模型理论的终局裁决。
+  - 触发重激活的上游信号、记忆如何选择“正好那一组”神经元，以及 imagery/reality discrimination 的门控机制，仍应保留为后续机制问题，而不是从这项结果直接推出。
 
 ## II. Energy-Optimal Selection Dynamics (能量最优的选择动力学)
 

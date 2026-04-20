@@ -4,16 +4,19 @@ type: theory
 tags: [Spirituality, Subject-Position, Selection, L0, L2, d-value, Support, Modernity]
 status: active_v1
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P3-P5
 dependency: [SRT-CLAIM-LADDER, SRT-CORE-21, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
 ---
 
 # SRT Spirituality I: Selection Pathology and the Return of the Subject
 
-> **Role**: canonical spirituality framework in SRT.
-> This file does not replace `Philosophy/SRT_Philosophy_Ethics.md` or `Philosophy/SRT_Ethics_Agency.md`; it reorganizes a subset of their insights around lived spiritual pathology, crisis, discernment, support, and return.
-> **回链头部**：本文是 Spirituality domain exposition / companion bridge。它不新增 P0/P1 core definitions，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md` 或 `_SRT_PSI_F_CANONICAL.md`。本文主要为 P3/P5；涉及现实路径、支持机制或现代病理判断时按 P3/P4 处理。
+> **Role**: Spirituality domain framework / companion bridge for subject-position pathology and return.
+> **Claim-level note**：本文主要为 P3/P5；涉及现实路径、支持机制或现代病理判断时按 P3/P4 处理。
+> **Does not define**：P0/P1 core definitions, `d-value`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or real choice moment.
+> **Depends on**：`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Philosophy/SRT_Philosophy_Ethics.md`、`Philosophy/SRT_Ethics_Agency.md`。
+> **Relation**: This file does not replace `Philosophy/SRT_Philosophy_Ethics.md` or `Philosophy/SRT_Ethics_Agency.md`; it reorganizes a subset of their insights around lived spiritual pathology, crisis, discernment, support, and return.
 
 ---
 

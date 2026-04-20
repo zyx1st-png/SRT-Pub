@@ -37,9 +37,9 @@ SRT 现在默认用两根轴来读：
 如果你想按 **Theory First** 读理论主干：
 
 1. [Core_Law/SRT_L0_Metaphysics.md](Core_Law/SRT_L0_Metaphysics.md)
-2. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)
-3. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
-4. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
+2. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
+3. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
+4. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)（split index / legacy numbering map, not the first definition source）
 5. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
 6. [_SRT_D_VALUE_CANONICAL.md](_SRT_D_VALUE_CANONICAL.md)、[_SRT_PSI_F_CANONICAL.md](_SRT_PSI_F_CANONICAL.md)、[_SRT_T_DIR_CANONICAL.md](_SRT_T_DIR_CANONICAL.md)
 
@@ -58,9 +58,9 @@ SRT 现在默认用两根轴来读：
 
 如果你想看 formal core：
 
-1. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)
-2. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
-3. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
+1. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
+2. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
+3. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)（split index / legacy numbering map, not the first definition source）
 4. [Core/SRT_Core_21c_Bridge_Hypotheses.md](Core/SRT_Core_21c_Bridge_Hypotheses.md)
 5. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
 6. [_SRT_SYMBOL_TABLE.md](_SRT_SYMBOL_TABLE.md)

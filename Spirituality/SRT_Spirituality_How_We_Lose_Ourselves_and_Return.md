@@ -4,15 +4,19 @@ type: theory
 tags: [Spirituality, Companion, Modern Life, Hollowness, Support, Return]
 status: active_companion_v1
 layer: L1
-epistemic_layer: os
+epistemic_layer: bridge
 claim_mode: companion_exposition
-dependency: [SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN, SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
+claim_level: P5
+dependency: [SRT-CLAIM-LADDER, SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN, SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
 ---
 
 # SRT Spirituality Companion: How We Lose Ourselves in Modern Life and Slowly Return
 
 > **Role**: lived exposition / companion text.
-> This file does not define new canonical primitives. It translates the canonical spirituality line into everyday life, modern crisis, recognizable experience, and gentle guidance.
+> **Claim-level note**：本文主要为 P5 companion exposition；引用或转述 P3/P4 spirituality mapping 时以前置主文为准。
+> **Does not define**：P0/P1 core definitions, `d-value`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or real choice moment.
+> **Depends on**：`Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`、`Philosophy/SRT_Philosophy_Ethics.md`、`Philosophy/SRT_Ethics_Agency.md`、`Governance/SRT_CLAIM_LADDER.md`。
+> **Relation**: This file translates the spirituality line into everyday life, modern crisis, recognizable experience, and gentle guidance.
 
 ---
 

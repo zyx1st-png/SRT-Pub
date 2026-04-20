@@ -130,6 +130,7 @@ $$ R_{accessible} \propto \frac{d^{1.5}}{\bar{\Psi}_f} $$
 # Part B: Companion Theological Discourse (P5)
 
 > **Note**: The following sections provide philosophical, historical, and experiential context for the domain mappings above. They are companion exposition, not primitive theory source.
+> **Voice rule**: Formulas and synthesis language in Part B should be read as spirituality-domain mappings under SRT, not as new canonical equations or proof load.
 
 ---
 
@@ -375,7 +376,9 @@ $d_{critical}$ 操作化：当前L₂吸引子势垒被Ψ_f维持；当 $\Delta 
 
 ---
 
-## §8 实验预测框架 (Experimental Prediction Framework)
+## §8 P4 Operational Prediction Candidates (实验预测候选)
+
+> **Claim-level note**: The following hypotheses are P4 operational / lab-facing candidates. They are not completed canonical closure, and their spiritual meaning depends on the P3/P5 mapping above.
 
 ### H-Spirit-1: 自我边界的神经相关物
 
@@ -507,7 +510,7 @@ _SRT_Spirit_Axioms (本文件)
 
 ---
 
-### Formalization Summary (形式化概述)
+### Spirituality Mapping Summary (灵性映射概述)
 
 - **本源算子**：$\Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，定义神性为选择过程的拓扑极限而非实体。
 - **苦难-摩擦耦合**：$\text{Suffering} \propto 1/d$，$\Psi_f \uparrow \iff d \downarrow$；低关切维度导致高本体论摩擦。
@@ -515,7 +518,7 @@ _SRT_Spirit_Axioms (本文件)
 - **实践梯度**：$d\theta/dt = -\alpha \nabla_\theta \Phi + \text{Learning}$，修持是对 $\theta$ 参数的可操作优化。
 - **信之松弛**：$d\beta/dt < 0$，信仰是 $L_2$ 约束的受控放松以重开 $L_0$ 通道。
 
-### Mechanism Explanation (机制解释)
+### Mechanism Reading Under This Mapping (此映射下的机制读法)
 
 - $\hat{G}_\theta$ 是具身选择算子；$\Omega$ 作为其参数极限标记了选择空间的渐近边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容——无限者不可实例化。
 - $\Psi_f$ (本体论摩擦) 是维持 $L_1$ 显现态的结构成本；$d$ (关切维度) 控制 $\hat{G}_\theta$ 的关切半径。$d \downarrow$ 时 $\Psi_f \uparrow$，产生苦难的拓扑张力。
