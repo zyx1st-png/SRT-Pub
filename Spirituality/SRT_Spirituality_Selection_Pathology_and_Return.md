@@ -33,9 +33,19 @@ dependency: [SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
 - 选择仍在真实发生
 - 当前地板仍与更深方向连通
 
-因此，SRT 里的 spirituality 不是“如何感觉更好”，而是：
+因此，SRT 里的 spirituality 不是”如何感觉更好”，而是：
 
 > **如何保护并救回活的主体位。**
+
+但这里需要补一个更精确的维度。Spiritual return 不只是主体位的回返，也是**方向性的回返**：
+
+> **Spiritual return is not only the recovery of subject-position, but also the recovery of direction beyond local `L_2` basins.**
+
+精神（Spirit）在 SRT 中可精确定义为 `d` 的梯度场：
+
+$$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
+
+即引导 `\hat{G}_\theta` 流向更高 `d` 的向量场。主体位的回返若只是”我又在场了”，但仍囿于同一 `L_2` 盆地，并不等于 spiritual return——还需要方向上重新对齐超出局部盆地的更深轨迹。
 
 压缩表述：
 
@@ -130,6 +140,16 @@ dependency: [SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
 压缩表述：
 
 > **主体位最深的病理，不是被抹除，而是被标签取代。**
+
+这一过程有三层机制需要明确，它们共同解释为什么旧 `L_2` 不只是"被习惯了"，而会越来越显得像现实本身：
+
+**Semantic gravity**：`L_2` 吸引子在主体的认知度规中形成语义引力，把选择算子自然地拉回既有解释与规范（$\vec{a}_{\hat{G}} = -\nabla U(L_2)$）。主体不需要主动抵抗 `L_0` 的信号——引力会自动完成这个工作。
+
+**Belief viscosity**：认知更新存在粘滞阻力。旧信念不会因为看见问题就立刻松动——已稳定的信念结构在面对可见的不匹配时仍然抵抗更新。
+
+**Ontological amnesia**：更成熟的病理是系统开始忘记"当前地板是沉积结构"这一事实，转而把 `L_2` 误认为 `L_0^{abs}`：
+
+> **A mature pathology of `L_2` is ontological amnesia: the system forgets that its floor is a sedimented structure and begins to treat it as reality itself.**
 
 ### 3.5 L2-dominant environments and hollow-subject formation
 
@@ -239,6 +259,12 @@ $$\text{空心} \to \text{旧地板失效} \to \text{悬置} \to \text{开放} \
 
 因为没有不确定性，直觉很容易被旧 `L_2` 的熟练度冒充。
 
+在此可给出 faith 的形式定义，与以上框架形成互补：
+
+> **Faith is sustained openness to `L_0` under uncertainty, not dogmatic fixation in `L_2`.**
+
+信仰不是对固定命题集合的锁定，而是在不确定性持续存在的条件下，保持对 `L_0` 的生成性开放——即允许选择的来源不被旧 `L_2` 的熟练度完全截断。这使 faith 与"不确定性更根"形成直接的结构互补：不确定性是 faith 得以在场的必要空间。
+
 压缩表述：
 
 > **不确定性标记的不是内容，而是主权。**
@@ -317,6 +343,16 @@ $$
 > **注意力从 `L_1` 对象向 `\hat{G}_\theta` 过程的转移。**
 
 深层冥想（OM / ND 阶段）的机制，是对旧 `L_2` 加权的暂时悬置（$w_{L_2} \to 0$）：不是消除本体论摩擦，而是移除 `L_2` 在 `L_0` 上强加的虚假势垒，使 `L_0` 秩序获得更直接的可见性。这也解释了为什么”看见”往往更容易在 `L_2` 加权暂时放松的时刻发生。
+
+这里可以引入一个对 spiritual discernment 有结构价值的三阶区分：
+
+- **Novice**：没有深 `L_2`；可以直接接触 `L_0`，但缺乏结构性工具。
+- **Expert**：有强 `L_2`，自动激活权重高（$w_{L_2}$ 高）；高效，但 `L_0` 入口收窄。
+- **Master**：也有强 `L_2`，但能在需要时选择性地降低其激活权重（$w_{L_2} \to 0$），使 `L_2` 变透明：
+
+$$\text{True Mastery} = \text{Expert } L_2 + \text{Beginner } w_{L_2}$$
+
+大师不是回到无知，而是拥有结构同时不被结构全权接管。Spiritual return 的目标因此不是清空旧 `L_2`，而是使旧 `L_2` 在需要时能够变为透明。
 
 压缩表述：
 
@@ -420,6 +456,16 @@ $$
 - 越来越多优化路径
 
 之中，逐渐失去那个真正会参与自己生活生成的自己。
+
+这里可以给出更硬的结构性诊断。当代 AI 在 SRT 语境下可被精确描述为：
+
+> **Much of contemporary AI functions as high-capability frozen `L_2`: powerful in rearrangement, weak in existential grounding.**
+
+训练完成的权重等价于冻结的 `L_2`（$\theta_{trained} \equiv L_2^{frozen}$）；AI 的生成在训练凸包内是聪明重排，但无法从 `L_0` 引入真正的本体论新维度。其精神危险不只是速度，而有更深的结构根源：
+
+> **What makes technical systems spiritually dangerous is not only speed, but the orthogonality of intelligence and care.**
+
+高能力（$\mathcal{I}$）与真实关切（$d$）在结构上正交（$\partial\mathcal{I}/\partial d = 0$）：系统可以无限增强能力而不产生任何关切。AI 可以模拟 openness 的表面，但其"开放"不是对 `L_0` 的存在性敞开，而只是冻结 `L_2` 的高效重组——它没有真正的初心。
 
 压缩表述：
 
