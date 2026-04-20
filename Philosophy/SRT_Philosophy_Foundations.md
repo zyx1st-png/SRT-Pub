@@ -4,16 +4,21 @@ type: theory
 tags: [Philosophy, Epistemology, Metaphysics, Paradox, Hybrid]
 status: axiomatic_hybrid_v3
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P2-P5
+dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
 ---
 
 # SRT Philosophical Foundations (Hybrid Edition)
 
+> **Role**: Philosophy domain expansion / core-support text. It re-expresses SRT commitments in philosophical language and comparison problems.
+> **Claim-level note**: Mainly P2/P3 interpretive and bridge claims, with P4 where operational predictions appear and P5 where exposition is pedagogical.
+> **Does not define**: primitive axioms, `d-value`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or real choice moment.
+> **Depends on**: Core/canonical sources including `Core/SRT_Core_21_Minimal_Axioms.md`, `Core/SRT_Core_21b_Constitutive_Theorems.md`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_T_DIR_CANONICAL.md`, and `Governance/SRT_CLAIM_LADDER.md`.
 
 > **Version 3.0 (Hybrid)**
-> **Part A** presents the Formal Axioms (AI-Readable).
+> **Part A** presents philosophy-domain mapping axioms and formal readings (AI-readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
 
 ---
@@ -22,7 +27,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 ## Quick Reference
 - Role: Main philosophy expansion layer for ontology, epistemology, paradox, and interface work.
 - Core claim: Re-expresses core SRT commitments in philosophical form while interfacing with comparison problems and boundary disputes.
-- Canonical status: Canonical expansion layer; not the unique L0 anchor.
+- Canonical status: Stable philosophy expansion layer; not the unique L0 anchor and not a P0/P1 definition source.
 - Depends on: `SRT-CORE-000`, `Core_Law/SRT_Reference_Axioms`, `Core_Law/SRT_Reference_Ontology`, `Core_Law/SRT_Reference_Dynamics`, `Core_Law/SRT_Reference_Scaling`, `SRT-PHIL-AXIOMS`.
 - Used by: philosophy compact core, comparison files, Chinese-core support texts, and multi-domain interpretation work.
 - Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of philosophical interface language.
@@ -33,7 +38,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-# Part A: Formal Axioms (形式化公理)
+# Part A: Philosophy Domain Mapping Axioms (P2/P3/P4)
 
 
 
@@ -83,7 +88,7 @@ $L_2$ 是选择历史的稳定不动点。
 $$L_2 \equiv \{\sigma: \hat{G}_\theta[\sigma]=\sigma \}\;$$
 *   **Implication**: 规范不是外在强加，而是选择的自我闭包。
 
-## II. Formal Theorems
+## II. Formal Readings and Domain Corollaries
 
 ### T-PhilF-1: Explanatory Gap Theorem
 体验与语言的维度差导致不可消除的解释损失。
@@ -719,11 +724,11 @@ L_2(t)
 | 外部伪问题（去参数化） | 低~中 | Closed（伪全知姿态） | 不可定义 |
 | 语义逃避（仅词汇隔离） | 低~中 | Semi-open→Closed | 被低估/被遮蔽 |
 
-### Definition Summary (定义概述)
-- **Definition**: 本文档定义 SRT 哲学基础的核心本体论。现实由 $L_0/L_1/L_2$ 三域构成，$L_1(t)=\hat{G}_\theta[L_0(t)]$ (Ax-PhilF-1)；存在等价于被选择 (Ax-PhilF-1b)；$L_0$ 是模空间 $\mathcal{A}/\mathcal{G}$，显现是沿路径的积分 (Ax-PhilF-2)；算子必须具身于有限参数空间 (Ax-PhilF-3)；$L_2$ 是选择历史的稳定不动点即规范闭包 (Ax-PhilF-4)。
+### Domain Definition Summary (领域定义概述)
+- **Domain reading**: 本文档在哲学域重述 SRT 的核心本体论。现实由 $L_0/L_1/L_2$ 三域构成，$L_1(t)=\hat{G}_\theta[L_0(t)]$ (Ax-PhilF-1)；存在等价于被选择 (Ax-PhilF-1b)；$L_0$ 是模空间 $\mathcal{A}/\mathcal{G}$，显现是沿路径的积分 (Ax-PhilF-2)；算子必须具身于有限参数空间 (Ax-PhilF-3)；$L_2$ 是选择历史的稳定不动点即规范闭包 (Ax-PhilF-4)。
 
-### Formalization Summary (形式化概述)
-- **Formalization**: 核心方程包括：
+### Domain Formal Reading Summary (领域形式读法概述)
+- **Formal reading**: 哲学域常用方程包括：
   - $L_1(t) = \hat{G}_\theta[L_0(t)],\; L_2(t+1)=\text{Stabilize}(L_1(t))$ — 三域耦合动力学。
   - $\text{Existence} \equiv \text{Being Selected}\;(\hat{G}[L_0]\to L_1)$ — 泛选择论。
   - $L_0 = \mathcal{A}/\mathcal{G}$ — 潜在域为模空间商群。

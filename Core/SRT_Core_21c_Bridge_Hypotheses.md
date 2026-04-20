@@ -113,6 +113,8 @@ $$
 
 **Boundary**: This is a strong bridge. It must not be used as a P0/P1 proof of the SRT core.
 
+**Pressure note (JCS 2026)**: Even if spacetime emergence and consciousness emergence are both modeled through a non-spatiotemporal or holographic substrate, the two explanatory tasks must remain separate. A shared substrate proposal does not by itself show that the emergence of spacetime and the emergence of consciousness are one and the same process. This section may support a P3/P4 bridge, but it must not collapse physical emergence, conscious emergence, and holographic duality into a single proof move.
+
 ---
 
 ## P2/P3-B05: Topological Normativity
