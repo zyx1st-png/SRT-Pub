@@ -106,6 +106,14 @@ L0（潜在域，可能性场）
 - 解释：若无不可逆风险边界，\(d\to 0\) 的风险梯度关切难成立。
 - 结论：智能与意识在 SRT 中可解耦。
 
+### 额外提醒：Spirituality 现在不是单一入口
+
+如果你后面想从 Spirituality 进入，不要只把它理解成旧的 praxis 文档。现在更稳的读法是：
+
+- **旧主轴 / praxis**：从 `_SRT_Spirit_Axioms.md` 与 `SRT_Spirit_09_Praxis_CompactCore.md` 进入
+- **新双线**：看主体位丢失、现代生活、空心感与回返
+- **Community / Sangha**：看共同体如何托住回返而不变成新地板
+
 ---
 
 ## 55-60 分钟：你现在该怎么读
@@ -126,6 +134,14 @@ L0（潜在域，可能性场）
 - `Governance/SRT_Layer_Guard.md`（漂移检测清单，5 分钟）
 - `Governance/SRT_L1_Interface_Spec.md`（新建 L1 文件的规范）
 - `Governance/SRT_COORDINATE_SYSTEM.md`（二维坐标总说明）
+
+### 如果你想从 Spirituality 进入
+
+推荐最短读法：
+1. `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
+2. `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+3. `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
+4. 回到 `Spirituality/_SRT_Spirit_Axioms.md` 与 `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
 
 ---
 
