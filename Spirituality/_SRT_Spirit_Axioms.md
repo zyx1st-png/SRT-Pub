@@ -1,11 +1,12 @@
 ---
 id: SRT-SPIRIT-AXIOMS
 type: theory
-tags: [Spirituality, Axioms, Hybrid]
+tags: [Spirituality, Domain Mapping, Praxis, Hybrid]
 status: axiomatic_hybrid_v2
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P3-P5
 dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling]
 ---
 
@@ -13,10 +14,11 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 
 > **回链头部**：本文是 Spirituality domain bridge / praxis support。它不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。
 > **Claim-level note**：本文中的“axioms”是 Spirituality 板块的映射公理，主要为 P3；实践与体验说明多为 P5；阈值、趋势、操作化候选为 P4。
+> **Machine-role note**：frontmatter 的 `bridge / mixed / P3-P5` 约束本文为 spiritual mapping 与 praxis support；标题中的 “Axioms” 是历史文件名，不表示 P0/P1 core axiom body。
 
 > **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Axioms (AI-Readable).
-> **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
+> **Part A** presents domain mapping axioms and corollaries (AI-readable).
+> **Part B** contains companion / theological exposition (human-readable context).
 
 ---
 
@@ -25,12 +27,15 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-# Part A: Formal Axioms (形式化公理)
 
-## I. Theological Axioms (神学公理)
+# Part A: Domain Mapping Axioms (P3/P4/P5)
+
+> **Claim-level map**：`Ax-Spirit-*` = P3 domain mapping unless it introduces an operational or threshold claim, in which case read it as P4. Experiential, theological, or practice-facing explanations are P5. None of the following statements are P0/P1 core axioms unless they explicitly quote a core/canonical source.
+
+## I. P3 Theological Domain Mappings (神学映射)
 
 ### Ax-Spirit-1: The Source (本源)
-**Formal Definition**: The Divine is the unconditioned selection functional over the absolute latent domain.
+**Domain Mapping Definition**: The Divine is read as the unconditioned selection functional over the absolute latent domain.
 $$ \Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_{\theta} $$
 $$ \text{God} \equiv \Omega \equiv L_0^{abs} $$
 $$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
@@ -60,60 +65,60 @@ $$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
 > **精神含义的保全**：$\Omega$ 作为渐近方向，其精神功能是**校准方向**——指向更大关切维度的实践道路——而非声称实现了无限。”趋向 $\Omega$”（$d$ 值增加）是 SRT 精神实践的核心，这与拓扑极限地位完全兼容。
 
 ### Ax-Spirit-2: The Split (分离)
-**Formal Definition**: Ego is the bounded projection of $\hat{G}_\theta$ under finite embodiment.
+**Domain Mapping Definition**: Ego is read as the bounded projection of $\hat{G}_\theta$ under finite embodiment.
 $$ \text{Ego} \equiv \Pi_{d<\infty}(\hat{G}_\theta) $$
 $$ \hat{G}_\theta \text{ valid} \iff \theta \in \Theta_{finite} $$
 * **Implication**: 自我是一种由有限参数与边界条件形成的选择视角，不是实体而是投影。
 
 ---
 
-## II. Soteriological Dynamics (救赎动力学)
+## II. P3/P4 Soteriological Mappings (救赎动力学映射)
 
 ### Ax-Spirit-3: Sin as Contraction (罪即收缩)
-**Formal Definition**: Suffering is the tension between $L_1$ and counterfactual $L_0$ amplified by low $d$.
+**Domain Mapping Definition**: Suffering is read as the tension between $L_1$ and counterfactual $L_0$ amplified by low $d$.
 $$ \text{Suffering} = \text{Tension}(\hat{G}_\theta[L_1], L_0^{counterfactual}) $$
 $$ \text{Suffering} \propto \frac{1}{d} $$
 $$ \Psi_f \uparrow \iff d \downarrow $$
 * **Implication**: 罪并非道德标签，而是选择维度收缩导致的结构性摩擦。
 
 ### Ax-Spirit-4: Liberation as Expansion (解脱即扩展)
-**Formal Definition**: Liberation is the asymptotic expansion of $d$ and the dissolution of self-other boundary.
+**Domain Mapping Definition**: Liberation is read as the asymptotic expansion of $d$ and the dissolution of self-other boundary.
 $$ \text{Nirvana} \equiv \lim_{d \to \infty} \hat{G}_\theta(L_0) $$
 $$ \lim_{d\to\infty} \text{Dist}(\text{Self}, \text{Other}) = 0 $$
 * **Implication**: 解脱是参数极限下的结构去锚定，而非外部奖赏或神秘体验。
 
 ---
 
-## III. Praxis Axioms (实践公理)
+## III. P3/P4 Praxis Mappings (实践映射)
 
 ### Ax-Spirit-5: Prayer/Meditation (祷告/冥想)
-**Formal Definition**: Practice is the controlled tuning of $\theta$ to increase $d$ and reduce $\Phi$.
+**Domain Mapping Definition**: Practice is read as the controlled tuning of $\theta$ to increase $d$ and reduce $\Phi$.
 $$ \text{Practice} \equiv \nabla_\theta d > 0 $$
 $$ \frac{d\theta}{dt} = -\alpha \nabla_\theta \Phi + \text{Learning} $$
 * **Implication**: 修持是可操作的参数优化过程，而不是心理暗示或信念强化。
 
 ### Ax-Spirit-6: Faith (信)
-**Formal Definition**: Faith is a controlled lowering of rigid $L_2$ constraints to re-open $L_0$ access.
+**Domain Mapping Definition**: Faith is read as a controlled lowering of rigid $L_2$ constraints to re-open $L_0$ access.
 $$ \frac{d\beta}{dt} < 0,\quad L_1^{experienced} = \beta L_1^{external} + (1-\beta)\hat{G}(L_0) $$
 $$ \lambda \downarrow \Rightarrow \|\nabla C_{L_2}\| \downarrow $$
 * **Implication**: 信不是对现象的断言，而是对潜在域导航过程的信任与放松。
 
 ---
 
-## IV. Derived Theorems (推导定理)
+## IV. P3/P4 Domain Corollaries (领域推论)
 
 ### T-Spirit-1: Ego-Boundary Theorem
-**Deduction**: From Ax-Spirit-2 (The Split) and S2 (Consciousness threshold).
+**Domain Corollary**: From Ax-Spirit-2 (The Split) and S2 (Consciousness threshold).
 $$ \text{Ego}_{experienced} \iff (\theta \in \Theta_{finite}) \land (\partial \Omega_{self} \neq \emptyset) \land (d > d_{threshold}) \land (\Phi_{sensitivity} > 0) $$
 * **Implication**: 边界只提供“自我核”的拓扑条件；只有当该边界承载可感摩擦与关切厚度时，才形成具体验感意义上的“我”。
 
 ### T-Spirit-2: Friction–Soteriology Theorem
-**Deduction**: From E5 (Pain), D6 (Friction), and Ax-Spirit-4.
+**Domain Corollary**: From E5 (Pain), D6 (Friction), and Ax-Spirit-4.
 $$ \frac{d\Phi}{dt} < 0 \Rightarrow \frac{dd}{dt} > 0 \Rightarrow \text{Suffering} \downarrow $$
 * **Implication**: 解脱不是压制痛苦，而是改变摩擦动力学的结构。
 
 ### T-Spirit-3: Accessibility Corollary
-**Deduction**: From O-C1 (Accessible Radius) and Ax-Spirit-5.
+**Domain Corollary**: From O-C1 (Accessible Radius) and Ax-Spirit-5.
 $$ R_{accessible} \propto \frac{d^{1.5}}{\bar{\Psi}_f} $$
 * **Implication**: 实修扩展的不是“体验强度”，而是可通达的可能性半径。
 
@@ -122,9 +127,9 @@ $$ R_{accessible} \propto \frac{d^{1.5}}{\bar{\Psi}_f} $$
 ---
 
 
-# Part B: Extended Theological Discourse (扩展神学论述)
+# Part B: Companion Theological Discourse (P5)
 
-> **Note**: The following sections provide the philosophical, historical, and experiential context for understanding the formal axioms above.
+> **Note**: The following sections provide philosophical, historical, and experiential context for the domain mappings above. They are companion exposition, not primitive theory source.
 
 ---
 

@@ -4,9 +4,10 @@ type: summary
 tags: [Spirituality, Praxis, Compact Core, Evolution]
 status: active_v1
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-SPIRIT-09, SRT-SPIRIT-08]
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P3-P5
+dependency: [SRT-SPIRIT-09, SRT-SPIRIT-08, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 ---
 
 # SRT Spirituality: Praxis & Evolution — Compact Core
@@ -14,6 +15,7 @@ dependency: [SRT-SPIRIT-09, SRT-SPIRIT-08]
 > **定位**：本文件是 `SRT_Spirit_09_Praxis.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把修行、进化、十牛图、初心与长期实践统一到一个可执行框架中。  
 > **关系**：不替代原文；原文保留 30 天起步、3–6 个月深化、1–3 年整合、日常场景与大量实践细节。
+> **Claim-level note**：本文是 Spirituality praxis compact support，主要为 P3/P5；实践路径、趋势或可操作指标按 P4 阅读。它不新增 core definitions。
 
 ## 1. 核心问题
 
