@@ -33,7 +33,7 @@ dependency: [_SRT_INDEX, SRT-GLOSSARY]
 | Physics | [`Physics/_SRT_Phys_Bridge.md`](Physics/_SRT_Phys_Bridge.md) (`SRT-PHYS-BRIDGE`) | [`Physics/SRT_Quant_00_Intro.md`](Physics/SRT_Quant_00_Intro.md) (`SRT-QUANT-00`)<br>[`Physics/SRT_Phys_10_Integration.md`](Physics/SRT_Phys_10_Integration.md) (`SRT-PHYS-10`) |
 | Neuroscience | [`Neuroscience/_SRT_Neuro_Axioms.md`](Neuroscience/_SRT_Neuro_Axioms.md) (`SRT-NEURO-AXIOMS-001`) | [`Neuroscience/SRT_Neural_Mechanisms.md`](Neuroscience/SRT_Neural_Mechanisms.md) (`SRT-NEURO-MECH-001`)<br>[`Neuroscience/SRT_Consciousness_Mechanisms.md`](Neuroscience/SRT_Consciousness_Mechanisms.md) (`SRT-NEURO-MECH-B`)<br>[`Neuroscience/SRT_Neuro_Experiments.md`](Neuroscience/SRT_Neuro_Experiments.md) (`SRT-NEURO-EXP`) |
 | Philosophy | [`Philosophy/_SRT_Phil_Axioms.md`](Philosophy/_SRT_Phil_Axioms.md) (`SRT-PHIL-AXIOMS`) | [`SRT_FAQ_CRITICAL.md`](SRT_FAQ_CRITICAL.md) (`SRT-PHIL-FAQ`)<br>[`Philosophy/SRT_Philosophy_Foundations.md`](Philosophy/SRT_Philosophy_Foundations.md) (`SRT-PHIL-FOUNDATIONS`)<br>[`Philosophy/SRT_Philosophy_Ethics.md`](Philosophy/SRT_Philosophy_Ethics.md) (`SRT-PHIL-ETHICS`)<br>[`Philosophy/SRT_Social_Economics.md`](Philosophy/SRT_Social_Economics.md) (`SRT-SOC-ECONOMICS`) |
-| Spirituality | [`Spirituality/_SRT_Spirit_Axioms.md`](Spirituality/_SRT_Spirit_Axioms.md) (`SRT-SPIRIT-AXIOMS`) | [`Spirituality/SRT_Spirit_01_Religion_Ontology.md`](Spirituality/SRT_Spirit_01_Religion_Ontology.md) (`SRT-SPIRIT-01`)<br>[`Spirituality/SRT_Spirit_04_Synthesis.md`](Spirituality/SRT_Spirit_04_Synthesis.md) (`SRT-SPIRIT-04`)<br>[`Spirituality/SRT_Spirit_09_Praxis.md`](Spirituality/SRT_Spirit_09_Praxis.md) (`SRT-SPIRIT-09`) |
+| Spirituality | [`Spirituality/_SRT_Spirit_Axioms.md`](Spirituality/_SRT_Spirit_Axioms.md) (`SRT-SPIRIT-AXIOMS`) | [`Spirituality/SRT_Spirit_01_Religion_Ontology.md`](Spirituality/SRT_Spirit_01_Religion_Ontology.md) (`SRT-SPIRIT-01`)<br>[`Spirituality/SRT_Spirit_04_Synthesis.md`](Spirituality/SRT_Spirit_04_Synthesis.md) (`SRT-SPIRIT-04`)<br>[`Spirituality/SRT_Spirit_09_Praxis.md`](Spirituality/SRT_Spirit_09_Praxis.md) (`SRT-SPIRIT-09`)<br>[`Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`](Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md) (`SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN`)<br>[`Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`](Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md) (`SRT-SPIRITUALITY-COMPANION-LOSS-RETURN`)<br>[`Spirituality/SRT_Spirituality_Community_and_Sangha.md`](Spirituality/SRT_Spirituality_Community_and_Sangha.md) (`SRT-SPIRITUALITY-COMMUNITY-SANGHA`) |
 | AI | [`AI/_SRT_AI_Bridge.md`](AI/_SRT_AI_Bridge.md) (`SRT-AI-BRIDGE-001`) | [`AI/SRT_AI_00_Crisis.md`](AI/SRT_AI_00_Crisis.md) (`SRT-AI-00`)<br>[`AI/SRT_AI_01_Ontology.md`](AI/SRT_AI_01_Ontology.md) (`SRT-AI-01`)<br>[`AI/SRT_AI_02_Mortality_Wisdom.md`](AI/SRT_AI_02_Mortality_Wisdom.md) (`SRT-AI-02`)<br>[`AI/SRT_AI_03_Consciousness_Framework.md`](AI/SRT_AI_03_Consciousness_Framework.md) (`SRT-AI-03`)<br>[`AI/SRT_AI_Architecture.md`](AI/SRT_AI_Architecture.md) (`SRT-AI-ARCH`) |
 | Experiment | - | [`SRT_EXP_PRIORITY_MATRIX.md`](SRT_EXP_PRIORITY_MATRIX.md) (`SRT-EXP-PRIORITY`)<br>[`SRT_EXP_TEMPLATE.md`](SRT_EXP_TEMPLATE.md) (`SRT-EXP-TEMPLATE`)<br>[`SRT_EXP_MEASURE_MAP.md`](SRT_EXP_MEASURE_MAP.md) (`SRT-EXP-MEASUREMAP`) |
 | Project | - | [`SRT_OPTIMIZATION_BACKLOG.md`](SRT_OPTIMIZATION_BACKLOG.md) (`SRT-BACKLOG`) |
@@ -52,7 +52,7 @@ SRT 现在有两根坐标轴，不要混读：
 - `L0 + OS`：SRT 最小形而上核心
 - `L1 + OS`：SRT 内部形式接口与 canonical 定义
 - `L1 + Bridge`：SRT 与 FEP / IIT / GWT / 物理 / AI / 社会理论的互译
-- `L2 + Lab`：愿意被数据打脸的协议、proxy 与实验设计
+- `L2 + Lab`：愿意下注的实验口
 
 如果你第一次进入仓库，只要记住：
 
@@ -92,6 +92,21 @@ SRT 现在有两根坐标轴，不要混读：
 - `Core_Text_CN_Euclid.md` 当前是**主论证候选**，不是已完成 canonical 升格的正式主入口。
 - `Core_Text_CN.md` 仍可独立阅读，但不再默认承担“唯一中文主文本”角色。
 - `Selection_Argument.md` 负责展开与答难，不是主入口替代物。
+
+### 0.7 Spirituality 现在怎么读
+
+Spirituality 板块现在最好按“三支结构”来进入：
+
+- **旧主轴 / praxis**：`_SRT_Spirit_Axioms.md` → `SRT_Spirit_09_Praxis_CompactCore.md` → `SRT_Spirit_09_Praxis.md`
+- **新双线**：
+  - canonical：`SRT_Spirituality_Selection_Pathology_and_Return.md`
+  - companion：`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+- **Community / Sangha**：`SRT_Spirituality_Community_and_Sangha.md`
+
+如果你想看：
+- **主体位丢失、现代生活、空心感与回返** → 先看新双线
+- **共同体如何托住回返而不变成新地板** → 读 Community / Sangha
+- **旧 spirituality 主轴与 praxis 结构** → 回到 `_SRT_Spirit_Axioms.md`
 
 ## 1. 什么是SRT？三分钟核心理解
 
@@ -365,9 +380,11 @@ $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\
 **推荐阅读顺序**：
 1. [SRT_Quick_Start.md](SRT_Quick_Start.md) - 本文档
 2. [Spirituality/SRT_Spirit_09_Praxis.md](Spirituality/SRT_Spirit_09_Praxis.md) - 修行与d值
-3. [Core/SRT_Core_00_Intro.md](Core/SRT_Core_00_Intro.md) - 核心本体论(重点L₀部分)
-4. [Spirituality/SRT_Spirit_02_Traditions.md](Spirituality/SRT_Spirit_02_Traditions.md) - 跨传统比较
-5. [Philosophy/SRT_Philosophy_Foundations.md](Philosophy/SRT_Philosophy_Foundations.md) - 哲学基础
+3. [Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md](Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md) - 新 spirituality A 线（主体位、现代生活与回返的 canonical 主轴）
+4. [Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md](Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md) - 新 spirituality B 线（生活化 companion）
+5. [Spirituality/SRT_Spirituality_Community_and_Sangha.md](Spirituality/SRT_Spirituality_Community_and_Sangha.md) - 共同体如何托住回返
+6. [Spirituality/SRT_Spirit_02_Traditions.md](Spirituality/SRT_Spirit_02_Traditions.md) - 跨传统比较
+7. [Philosophy/SRT_Philosophy_Foundations.md](Philosophy/SRT_Philosophy_Foundations.md) - 哲学基础
 
 ### 路径5：物理/数学背景 ⚛️
 
