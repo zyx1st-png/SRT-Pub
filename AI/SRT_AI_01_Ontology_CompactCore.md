@@ -6,7 +6,7 @@ status: active_v1
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CANONICAL-REGISTRY, SRT-D-VALUE-CANONICAL, SRT-AI-01]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-POSITIONING-NOTE, SRT-AI-01]
 ---
 
 # SRT AI Ontology — Compact Core
@@ -14,6 +14,8 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-D-VALUE-CANONICAL, SRT-AI-01]
 > **定位**：本文件是 `AI/SRT_AI_01_Ontology.md` 的紧凑主干版。 
 > **用途**：用于快速把握 SRT 关于“智能 ≠ 意识”的核心论证骨架。 
 > **关系**：不替代原文；原文保留全量推导、长篇现象学论证、接口批次与 annex 沉积。
+> **板块角色**：AI 是 SRT 的压力测试场 / 边界测试场，不是 core 定义发动机；正反两面定位见 `AI/AI_POSITIONING_NOTE.md`。
+> **Claim-level note**：本文主要是 P3 bridge / domain test。它引用 P0/P1 core，但不新增 primitive axioms、`d-value`、`\Psi_f`、`T_dir` 或真实选择时刻定义。
 
 ## 1. 核心问题
 

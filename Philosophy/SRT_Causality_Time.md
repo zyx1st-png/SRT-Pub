@@ -146,7 +146,7 @@ $$\text{本体论时间} \equiv \text{选择不可逆性积累的方向性结构
 ## 四、核心引用
 
 - `Core/SRT_Core_01_Axioms.md MA-1`（原初方向性，时间无前序性）
-- `Core/SRT_Core_21_Formal_Axioms.md Ax-F-03`（水平因果定义）
+- `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T01`（水平因果定义）
 - `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`（时间无前序性的自举推论）
 - `Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 作为垂直因果的结构基础）
 - `Core/SRT_Core_12a T-L0-NonStatic`（κ(t) 动力学，参数化时间的典型使用）

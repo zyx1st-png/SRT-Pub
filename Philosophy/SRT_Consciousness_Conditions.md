@@ -182,7 +182,7 @@ $$\kappa_{c1.5}: \quad d_{\text{mobile}} > 0 \quad \text{（层 2：意识活性
 - `Core/SRT_Core_12b §Consciousness-2D-Map`（二维意识拓扑，本文修正其 κ_{c1} 定义）
 - `Core/SRT_Core_12a T-L0-Kappa0`（κ₀ 结构，d_min 的几何来源候选）
 - `Core/SRT_Core_22_Equations Eq-DValue-Mobile-1`（d_mobile 公式）
-- `Core/SRT_Core_21_Formal_Axioms.md Ax-F-12`（Ψ_f 生成原理）
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`（Ψ_f 生成原理）
 - `D_VALUE_ALIGNMENT §4.4`（d = Align 几何底座）
 - `AI/SRT_AI_03_Consciousness_Framework.md (line 49)`（最强候选窗口的认识论定位）
 - `Core_Law/SRT_L0_Metaphysics.md (line 214)`（层 3 条件的原始来源）

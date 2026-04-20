@@ -6,11 +6,13 @@ status: axiomatic_hybrid_v3
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
+dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
 # SRT Philosophical Axioms (Hybrid Edition)
 
+> **回链头部**：本文是 Philosophy domain axiomatic mapping / bridge support。它不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md` 或 `Core/SRT_Core_21b_Constitutive_Theorems.md`。本文中的“axioms”是 Philosophy 板块映射公理，主要对应 P2/P3；涉及操作化候选或可证伪预测时对应 P4。
+> **依赖锚点**：`Governance/SRT_CLAIM_LADDER.md`、`Core/SRT_Core_21_Formal_Axioms.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md`。
 
 > **Version 3.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).

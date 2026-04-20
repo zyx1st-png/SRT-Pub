@@ -38,7 +38,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CORE-14, SRT-D-VALUE-CANONICAL, SRT-COR
 - 选择算子在尺度变换 \(\Lambda\) 下保持共轭不变性
 - 量子坍缩、神经决策、社会选择、宏观结构稳定可以共享同一种拓扑逻辑
 
-> **注（Ax-F-11）**：粗粒化映射 \(\Lambda\) 本身即幽灵算子在尺度变换下的禀赋展开——量子坍缩、侧抑制、归一化、范畴化均为同一结构的不同尺度实现形式，而非形式类似的独立过程。见 `Core/SRT_Core_21_Formal_Axioms.md Ax-F-11`。
+> **注（Ax-F-11 / P3-B07）**：粗粒化映射 \(\Lambda\) 本身即幽灵算子在尺度变换下的禀赋展开——量子坍缩、侧抑制、归一化、范畴化均为同一结构的不同尺度实现形式，而非形式类似的独立过程。见 `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07`。
 
 这不是说“所有尺度的对象完全一样”，而是说：
 - 它们的**形成机制**存在同构性

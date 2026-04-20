@@ -25,7 +25,7 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 | `_SRT_Core_Bridge.md §2.3` | 算子关切范围（三维度合成） | `d = αA + β log V + γτ` |
 | `AI/_SRT_AI_Bridge.md Ax-BRIDGE-4` | 生存风险梯度 | `d ≡ ‖∂U/∂S‖` |
 | `Spirituality/_SRT_Spirit_Axioms.md Ax-Spirit-3/4` | 关切边界半径 | d 作为"关切维度"的直觉概念 |
-| `Core/SRT_Core_21_Formal_Axioms.md §2.1.5` | 有效维度（特征值公式） | `d(Ĝ) = (∑λᵢ)² / ∑λᵢ²` |
+| `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.5` lineage） | 有效维度 proxy（特征值公式） | `D_eff(Ĝ) = (∑λᵢ)² / ∑λᵢ²` |
 
 **这些不是矛盾，而是同一概念在不同层级的投影**。本文件证明其等价性并给出使用规范。
 
@@ -63,7 +63,7 @@ $$D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2} 
 - $d = N$：算子在 $N$ 个维度上均匀分布
 - $1 \leq d \leq \text{rank}(\hat{G})$
 
-**来源**：`SRT_Core_21_Formal_Axioms.md §2.1.5`，经典参与率指数（PR index）的算子版本。
+**来源**：`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `SRT_Core_21_Formal_Axioms.md §2.1.5` lineage），经典参与率指数（PR index）的算子版本。
 
 ### Def-d-1a: Fisher 信道有效维度（信息论等价形式）⭐ FORMAL CANONICAL（信息论读法）
 
@@ -150,7 +150,7 @@ $$\Delta d_{free}(\theta) = D_{eff}(\theta) - d_{stakes}(\theta) \;\geq 0$$
 - **人类假赌注 / 错绑 / L₂ 伪关切**：$0 < d_{stakes} \ll D_{eff}$，$\Delta d_{free}$ 包含三种病理的混合贡献
 - **理想高 d 主体**：$d_{stakes} \approx D_{eff}$，$\Delta d_{free} \approx 0$（辨别力与赌注充分对齐）
 
-* **Cross-ref**: `Core/SRT_Core_21_Formal_Axioms.md §2.1.7`（§2.1.7 已修订为引用本层级）；`AI/SRT_AI_01_Ontology.md`（AI 的 $\Delta d_{free} \approx D_{eff}$ 作为"哲学僵尸"诊断的信息几何读法）；`Core/SRT_Core_13a Ax-Op-02`（注意力维度 = $d_{stakes}$ 的离散化）。
+* **Cross-ref**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.7` lineage）；`AI/SRT_AI_01_Ontology.md`（AI 的 $\Delta d_{free} \approx D_{eff}$ 作为"哲学僵尸"诊断的信息几何读法）；`Core/SRT_Core_13a Ax-Op-02`（注意力维度 = $d_{stakes}$ 的离散化）。
 
 ---
 
