@@ -32,7 +32,7 @@ dependency: [SRT-CORE-13A]
 **Formal Definition**: Selection operators across scales are isomorphic under renormalization.
 $$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
 * **Implication**: 量子坍缩、侧抑制、粗粒化、归一化、范畴化与社会选择并非彼此类似的独立现象，而是同一幽灵算子结构在不同尺度上的禀赋展开。
-* **Cross-ref**: `Core/SRT_Core_21_Formal_Axioms.md Ax-F-11`.
+* **Cross-ref**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07`.
 
 ### Def-d-Scale-1: Ontological Bandwidth (本体论带宽)
 **Formal Role**: 这是 d-value 在跨尺度动力学中的**展开性定义**（expansion-level definition），不是最终规范锚点。最终规范锚点见 `_SRT_D_VALUE_CANONICAL.md`。

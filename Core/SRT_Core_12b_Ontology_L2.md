@@ -127,7 +127,7 @@ Ax-L2-01 is the *general* L₂ accumulation law: $L_2(t) = L_2(t-1) + \eta \cdot
 **Why not inconsistent**: Ax-L2-01 explains *how* L₂ accumulates (any selection leaves a signed trace); T-L2-Scaffold explains *which sub-process* drives the asymmetric scaffolding structure (only successful stable ISP closures compound into background). The two claims occupy different levels of description.
 
 * **Dependence**: Ax-L2-01 (hysteresis accumulation base); Ax-L2-06b (successful-closure write-in gate: $\Psi_f < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$); T-ε-Constitute (stable ISP scope); Ax-Op-05 (two-phase closure, successful closure defined)
-* **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21_Formal_Axioms.md §VI` (T-ε-Constitute dynamic layer); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
+* **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T07` (T-ε-Constitute dynamic layer); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
 
 ---
 

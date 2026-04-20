@@ -14,6 +14,8 @@ dependency: [SRT-INDEX]
 这里集中放置 SRT 的治理层文档：
 
 - canonical freeze / edit protocol / harness tests
+- claim ladder / proposition-level hardness (`P0-P5`)
+- open tensions / unresolved pressure-point ledger
 - 二维坐标治理（`layer × epistemic_layer`）
 - 定位与认知状态治理（`OS / Bridge / Lab`）
 - 全局 Lab 硬赌点与实验下注口
@@ -28,11 +30,16 @@ dependency: [SRT-INDEX]
 推荐阅读顺序：
 1. `SRT_CANONICAL_FREEZE.md`
 2. `SRT_EDIT_PROTOCOL.md`
-3. `SRT_HARNESS_TESTS.md`
-4. `SRT_POSITIONING.md`
-5. `SRT_COORDINATE_SYSTEM.md`
-6. `SRT_LAB_HYPOTHESES.md`
-7. `SRT_REPO_OPTIMIZATION_EXECUTION_PLAN_2026-04.md`
-8. `_SRT_DOC_ENGINEERING_GUIDE.md`
-9. `_SRT_EXPLANATION_PROTOCOL.md`
-10. `_SRT_QUALITY_SCORECARD.md`
+3. `SRT_CLAIM_LADDER.md`
+4. `SRT_HARNESS_TESTS.md`
+5. `SRT_POSITIONING.md`
+6. `SRT_COORDINATE_SYSTEM.md`
+7. `SRT_LAB_HYPOTHESES.md`
+8. `SRT_REPO_OPTIMIZATION_EXECUTION_PLAN_2026-04.md`
+9. `_SRT_DOC_ENGINEERING_GUIDE.md`
+10. `_SRT_EXPLANATION_PROTOCOL.md`
+11. `_SRT_QUALITY_SCORECARD.md`
+
+未收口理论问题的当前账本见：
+
+- `Core/SRT_OPEN_TENSIONS.md`

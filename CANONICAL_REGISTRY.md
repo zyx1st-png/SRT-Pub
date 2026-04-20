@@ -6,7 +6,7 @@ status: active_v1
 layer: meta
 claim_mode: canonical
 epistemic_layer: os
-dependency: [SRT-INDEX, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
+dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 ---
 
 # SRT Canonical Registry
@@ -21,6 +21,7 @@ dependency: [SRT-INDEX, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 
 - `canonical` 在本仓库内表示“当前内部优先引用的稳定锚点”，**不自动等于**“外部已证实的自然定律”。
 - 自 `2026-03-17` 起，SRT 默认按 `OS / Bridge / Lab` 三层理解；详见 `Governance/SRT_POSITIONING.md`。
+- 自 `2026-04-20` 起，SRT 额外按命题级硬度 `P0-P5` 管理；详见 `Governance/SRT_CLAIM_LADDER.md`。
 - 本注册表中的大多数条目默认属于 **OS** 或 **Bridge**，用于收口词汇、语法与高阶接口；真正的硬赌点应优先沉淀到实验与假说文件，而不是混在 canonical 锚点里。
 
 ## A. 核心定义层（Definitions）
@@ -44,13 +45,22 @@ dependency: [SRT-INDEX, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 
 ### 4. Core Axioms
 - 主锚点：`Core/SRT_Core_21_Formal_Axioms.md`
-- 说明：SRT 的形式公理主入口
-- 引用规则：涉及核心公理编号时，优先回链本文件
+- 分层正文：
+  - P0 minimal axioms → `Core/SRT_Core_21_Minimal_Axioms.md`
+  - P1 constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
+  - P2/P3/P4 bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+- 说明：`Core_21_Formal_Axioms.md` 现在是形式公理索引，不再承载混层正文
+- 引用规则：涉及核心公理编号时，先回链索引，再按命题硬度引用对应分层文件
 
-### 4. Core Equations
+### 4b. Core Equations
 - 主锚点：`Core/SRT_Core_22_Equations.md`
 - 说明：主动力学方程、热力学与稳定性方程主入口
 - 引用规则：涉及主方程、选择热力学、稳定性条件时优先回链本文件
+
+### 4c. Core Open Tensions
+- 主文件：`Core/SRT_OPEN_TENSIONS.md`
+- 说明：记录当前未完全封口的 core pressure points
+- 引用规则：凡涉及其中 tension，不得包装成已完成 P0/P1
 
 ## B. 规范辅助层（Canonical Support）
 
@@ -58,6 +68,11 @@ dependency: [SRT-INDEX, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 - 文件：`Core_Law/SRT_Constitution_Seven_Theses.md`
 - 角色：为 SRT 提供最短的元理论宪法摘要，用于对外解释、框架比较与自我收口
 - 注意：它是顶层摘要，不替代 `Core_Law/SRT_Reference_Axioms.md`、`Core_Law/SRT_Reference_Ontology.md`、canonical 定义文件或主方程文件
+
+### 5b. Claim Ladder
+- 文件：`Governance/SRT_CLAIM_LADDER.md`
+- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem
+- 注意：它是治理机制，不新增理论命题
 
 ### 6. d-value 跨尺度展开
 - 辅助文件：`Core/SRT_Core_14_Dynamics_Scaling.md`
@@ -92,11 +107,12 @@ dependency: [SRT-INDEX, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 - 开放问题：监督机构自身d验证完整机制、d倾向准入窗口规格（见文件§10）
 
 ### 10. AI 主轴
+- 定位说明：`AI/AI_POSITIONING_NOTE.md`
 - Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
 - Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`
 - Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`
 - 角色：形成 AI 板块从本体门槛、结构限制到正向意识路径的 compact core 主线
-- 注意：AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
+- 注意：AI 是压力测试场 / 边界测试场，不是 core 定义发动机；AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
 
 ### 11. Neuroscience 主轴
 - Neuro registry：`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`
@@ -130,10 +146,13 @@ dependency: [SRT-INDEX, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 当同一概念同时出现在多个文件时，默认优先级如下：
 
 1. `CANONICAL_REGISTRY.md`（找入口）
-2. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义）
-3. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释）
-4. 各 split 目录（找导航与局部阅读）
-5. 原始长文（找历史展开与全量语境）
+2. `Governance/SRT_CLAIM_LADDER.md`（判断命题硬度）
+3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义）
+4. `Core/SRT_Core_21_Minimal_Axioms.md` / `Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`（按 P-level 找 Core_21 正文）
+5. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释）
+6. `Core/SRT_OPEN_TENSIONS.md`（确认未封口问题）
+7. 各 split 目录（找导航与局部阅读）
+8. 原始长文（找历史展开与全量语境）
 
 ## D. 当前收口结论
 
@@ -142,6 +161,8 @@ dependency: [SRT-INDEX, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 - `Ψ_f` → `_SRT_PSI_F_CANONICAL.md`
 - `Core formal axioms` → `Core/SRT_Core_21_Formal_Axioms.md`
 - `Core master equations` → `Core/SRT_Core_22_Equations.md`
+- `Claim hardness` → `Governance/SRT_CLAIM_LADDER.md`
+- `Open tensions` → `Core/SRT_OPEN_TENSIONS.md`
 
 这意味着：
 - `AI/SRT_AI_01_Ontology.md` 不再单独承担 d-value 的最终规范权

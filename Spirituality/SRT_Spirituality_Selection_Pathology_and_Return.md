@@ -6,13 +6,14 @@ status: active_v1
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
+dependency: [SRT-CLAIM-LADDER, SRT-CORE-21, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
 ---
 
 # SRT Spirituality I: Selection Pathology and the Return of the Subject
 
 > **Role**: canonical spirituality framework in SRT.
 > This file does not replace `Philosophy/SRT_Philosophy_Ethics.md` or `Philosophy/SRT_Ethics_Agency.md`; it reorganizes a subset of their insights around lived spiritual pathology, crisis, discernment, support, and return.
+> **回链头部**：本文是 Spirituality domain exposition / companion bridge。它不新增 P0/P1 core definitions，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md` 或 `_SRT_PSI_F_CANONICAL.md`。本文主要为 P3/P5；涉及现实路径、支持机制或现代病理判断时按 P3/P4 处理。
 
 ---
 

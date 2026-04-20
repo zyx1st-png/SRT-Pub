@@ -7,6 +7,7 @@ SRT 是一个以“选择先于稳定存在”为核心命题的理论仓库。�
 - **一句话**：SRT 将现实理解为参数化选择在约束、代价与历史下形成的显现与收敛结构。
 - **三域**：`L0` = 潜在域，`L1` = 显现域，`L2` = 收敛域。
 - **核心量**：`\hat{G}_θ`、`d-value`、`Ψ_f`、`T_dir`。
+- **命题硬度**：核心命题按 P0-P5 分层；bridge / lab / companion 内容不自动等于 primitive axiom。
 - **仓库内容**：理论主文、跨域桥接、实验接口、治理协议、运行流水线。
 
 ```mermaid
@@ -33,6 +34,15 @@ SRT 现在默认用两根轴来读：
 
 ## 从哪里开始
 
+如果你想按 **Theory First** 读理论主干：
+
+1. [Core_Law/SRT_L0_Metaphysics.md](Core_Law/SRT_L0_Metaphysics.md)
+2. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)
+3. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
+4. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
+5. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
+6. [_SRT_D_VALUE_CANONICAL.md](_SRT_D_VALUE_CANONICAL.md)、[_SRT_PSI_F_CANONICAL.md](_SRT_PSI_F_CANONICAL.md)、[_SRT_T_DIR_CANONICAL.md](_SRT_T_DIR_CANONICAL.md)
+
 如果你是第一次来：
 
 1. [SRT_Quick_Start.md](SRT_Quick_Start.md)
@@ -49,12 +59,16 @@ SRT 现在默认用两根轴来读：
 如果你想看 formal core：
 
 1. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)
-2. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
-3. [_SRT_SYMBOL_TABLE.md](_SRT_SYMBOL_TABLE.md)
+2. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
+3. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
+4. [Core/SRT_Core_21c_Bridge_Hypotheses.md](Core/SRT_Core_21c_Bridge_Hypotheses.md)
+5. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
+6. [_SRT_SYMBOL_TABLE.md](_SRT_SYMBOL_TABLE.md)
+7. [Core/SRT_OPEN_TENSIONS.md](Core/SRT_OPEN_TENSIONS.md)
 
 如果你想看领域扩展：
 
-- AI → [AI/_SRT_AI_Bridge.md](AI/_SRT_AI_Bridge.md)
+- AI → [AI/AI_POSITIONING_NOTE.md](AI/AI_POSITIONING_NOTE.md)、[AI/_SRT_AI_Bridge.md](AI/_SRT_AI_Bridge.md)
 - Neuroscience → [Neuroscience/_SRT_Neuro_Axioms.md](Neuroscience/_SRT_Neuro_Axioms.md)
 - Physics → [Physics/_SRT_Phys_Bridge.md](Physics/_SRT_Phys_Bridge.md)
 - Philosophy → [Philosophy/_SRT_Phil_Axioms.md](Philosophy/_SRT_Phil_Axioms.md)
@@ -71,7 +85,7 @@ SRT 现在默认用两根轴来读：
 - `SRT_Navigation_Map.md`：人类阅读地图
 - `_SRT_SYMBOL_TABLE.md`：符号规范锚点
 
-## 协作与批评
+## Runtime / Agent / AI support
 
 如果你是协作者或 AI agent：
 
@@ -80,10 +94,13 @@ SRT 现在默认用两根轴来读：
 - 当前状态看 [STATUS.md](STATUS.md)
 - 机器入口看 [_SRT_INDEX.md](_SRT_INDEX.md)
 
+AI 支持层服务于读取、检索、压力测试与边界测试；它不是理论中心，也不替代 core/canonical 定义源。
+
 如果你准备修改理论正文，请先看：
 
 - [Governance/SRT_CANONICAL_FREEZE.md](Governance/SRT_CANONICAL_FREEZE.md)
 - [Governance/SRT_EDIT_PROTOCOL.md](Governance/SRT_EDIT_PROTOCOL.md)
+- [Governance/SRT_CLAIM_LADDER.md](Governance/SRT_CLAIM_LADDER.md)
 
 如果你想理解仓库结构与规范：
 

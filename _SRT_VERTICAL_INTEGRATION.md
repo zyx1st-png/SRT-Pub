@@ -228,7 +228,7 @@ $\hat{G}^*$ 是 L₀ 梯度场的内禀对象——它的存在是 L₀ 拓扑�
 
 ## §8 幽灵算子禀赋统一性与 Ψ_f 生成性原理
 
-> **新增节（2026-03-11）**：对应 `Core/SRT_Core_21_Formal_Axioms.md Ax-F-11/12`。
+> **新增节（2026-03-11）**：对应 `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07 / P2-P3-B08`（原 `Core_21 Ax-F-11/12` lineage）。
 
 ### §8.1 幽灵算子禀赋统一性
 
@@ -369,7 +369,7 @@ $$\mathrm{Payable}(X,\Delta t)\iff \alpha P_{sel}^X(\Delta t)\ge \beta \Psi_f^X(
 | $d/\Psi_f$ 效率 | 卡诺效率类比 | 单比特能耗 |
 | $\Psi_f$ 可支付性 | 稳态耗散可持续条件 | 闭包不崩溃的阈值判据 |
 
-**Cross-ref**: `Core_Law/SRT_Reference_Dynamics.md §15`（完整形式化）；`_SRT_D_VALUE_CANONICAL.md §2`（d = Fisher 维度的形式化）；`Core/SRT_Core_21_Formal_Axioms.md Ax-F-13`（选择-信息创造等价）。
+**Cross-ref**: `Core_Law/SRT_Reference_Dynamics.md §15`（完整形式化）；`_SRT_D_VALUE_CANONICAL.md §2`（d 与 Fisher proxy 的层级）；`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T04` / `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B09`（选择-信息创造等价）。
 
 ---
 

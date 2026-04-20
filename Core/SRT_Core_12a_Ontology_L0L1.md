@@ -196,7 +196,7 @@ $$\frac{d\kappa(t)}{dt} = \mathcal{F}[\hat{G}_\theta(t),\, \kappa(t)], \qquad \f
 $$\boxed{\text{有 } \kappa_0 \text{ 的方向场，没有终局目的论}}$$
 
 * **Implication**: L₀ 是算子与选择历史共同雕刻的动态结构，而非背景舞台。但 $\kappa_0 > 0$ 确保 L₀ 永远不被历史完全封闭。
-* **Cross-ref**: T-L0-Kappa0（原初曲率 κ₀）; Ax-F-13（选择创造信息，`SRT_Core_21_Formal_Axioms.md`）; Ax-L2-01（L₂ 迟滞）; `Core/SRT_Core_12b §Co-Evolution`（协同演化的 L₂ 侧视角）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对）; `Philosophy/SRT_L0_Ontological_Status.md`（L₀ 本体论地位：功能本构论，κ₀ 作为 L₀ 唯一可及面）。
+* **Cross-ref**: T-L0-Kappa0（原初曲率 κ₀）; P1-T04 / P2-P3-B09（选择创造信息，`Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`）; Ax-L2-01（L₂ 迟滞）; `Core/SRT_Core_12b §Co-Evolution`（协同演化的 L₂ 侧视角）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对）; `Philosophy/SRT_L0_Ontological_Status.md`（L₀ 本体论地位：功能本构论，κ₀ 作为 L₀ 唯一可及面）。
 
 ---
 

@@ -28,12 +28,17 @@ runtime:
 
 canonical_anchors:
   l0: "Core_Law/SRT_L0_Metaphysics.md"
+  claim_ladder: "Governance/SRT_CLAIM_LADDER.md"
   d_value: "_SRT_D_VALUE_CANONICAL.md"
   psi_f: "_SRT_PSI_F_CANONICAL.md"
   t_dir: "_SRT_T_DIR_CANONICAL.md"
   symbols: "_SRT_SYMBOL_TABLE.md"
   formal_axioms: "Core/SRT_Core_21_Formal_Axioms.md"
+  minimal_axioms: "Core/SRT_Core_21_Minimal_Axioms.md"
+  constitutive_theorems: "Core/SRT_Core_21b_Constitutive_Theorems.md"
+  bridge_hypotheses: "Core/SRT_Core_21c_Bridge_Hypotheses.md"
   equations: "Core/SRT_Core_22_Equations.md"
+  open_tensions: "Core/SRT_OPEN_TENSIONS.md"
 
 families:
   chinese_core_text:
@@ -48,7 +53,11 @@ domains:
     bridge: "Core/_SRT_Core_Bridge.md"
     entrypoints:
       - "Core/SRT_Core_21_Formal_Axioms.md"
+      - "Core/SRT_Core_21_Minimal_Axioms.md"
+      - "Core/SRT_Core_21b_Constitutive_Theorems.md"
+      - "Core/SRT_Core_21c_Bridge_Hypotheses.md"
       - "Core/SRT_Core_22_Equations.md"
+      - "Core/SRT_OPEN_TENSIONS.md"
       - "Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md"
   Physics:
     id_prefix: "SRT-PHYS"
@@ -81,6 +90,7 @@ domains:
     id_prefix: "SRT-AI"
     bridge: "AI/_SRT_AI_Bridge.md"
     entrypoints:
+      - "AI/AI_POSITIONING_NOTE.md"
       - "AI/SRT_AI_01_Ontology_CompactCore.md"
       - "AI/SRT_AI_Architecture_CompactCore.md"
       - "AI/SRT_AI_03_Consciousness_Framework_CompactCore.md"
@@ -95,6 +105,7 @@ governance:
   key_docs:
     - "Governance/SRT_CANONICAL_FREEZE.md"
     - "Governance/SRT_EDIT_PROTOCOL.md"
+    - "Governance/SRT_CLAIM_LADDER.md"
     - "Governance/SRT_HARNESS_TESTS.md"
     - "Governance/SRT_POSITIONING.md"
     - "Governance/SRT_COORDINATE_SYSTEM.md"

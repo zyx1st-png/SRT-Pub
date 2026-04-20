@@ -6,10 +6,13 @@ status: active_v1
 layer: meta
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CANONICAL-REGISTRY]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
 ---
 
 # SRT Spirituality Compact Registry
+
+> **回链头部**：本页是 Spirituality navigation / domain registry，不是 core definition source。Spirituality 文件可作为 bridge、praxis、companion、domain exposition，但不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。
+> **P-level**：本板块主文主要为 P3/P5；实践、现象学与生活化解释默认 P5；阈值、路径或可测代理默认 P4，除非回链到 core/canonical 文件。
 
 本页汇总 Spirituality 板块当前的 bridge、compact core、双线扩展文档与拆分导航入口，并给出最短阅读路径。
 
