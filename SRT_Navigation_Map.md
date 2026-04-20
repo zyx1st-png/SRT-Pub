@@ -49,7 +49,7 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 
 ## 我想进入 Spirituality
 
-Spirituality 板块现在有两条入口：
+Spirituality 板块现在有三条入口：
 
 ### 1. 旧主轴：公理 / praxis
 适合你想先看：
@@ -71,10 +71,20 @@ Spirituality 板块现在有两条入口：
 1. `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
 2. `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 
+### 3. Community / Sangha：共同体如何托住回返
+适合你想先看：
+- 为什么个体回返常常需要共同体
+- 什么样的共同体会托住你，而不是把你重新收编成模板
+- 如何理解 sangha、陪伴、共修与防腐机制
+
+推荐路线：
+1. `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
+
 ### 简单判断
 
 - 想先看 **硬骨架 / canonical spirituality framework** → 先读 `SRT_Spirituality_Selection_Pathology_and_Return.md`
 - 想先看 **更贴近生活、现代处境和 lived experience** → 先读 `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+- 想先看 **共同体如何成为支持，而不是新地板** → 读 `SRT_Spirituality_Community_and_Sangha.md`
 - 想回到 **旧 spirituality 主轴与 praxis compact core** → 从 `_SRT_Spirit_Axioms.md` 开始
 
 ## 我想看实验与下注口
@@ -102,6 +112,7 @@ Spirituality 板块现在有两条入口：
 | SRT 如何被检验 | `(L2, lab)` | `Governance/SRT_LAB_HYPOTHESES.md`, `SRT_EXP_*` |
 | SRT 如何理解主体位丢失、空心感与回返 | `(L1, spirituality)` | `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` |
 | 我想用更贴近生活的方式进入同一问题 | `(L1, spirituality-companion)` | `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` |
+| 我想理解共同体如何托住回返而不变成新地板 | `(L1, spirituality-community)` | `Spirituality/SRT_Spirituality_Community_and_Sangha.md` |
 
 ## Registry & Support Layer
 

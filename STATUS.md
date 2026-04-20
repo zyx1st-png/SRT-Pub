@@ -57,6 +57,7 @@ AI / agent 最短读法：
 ## 最近关键推进
 
 - `2026-04-20`：完成“理论硬化优先、去命题混层”回写：`Core/SRT_Core_21_Formal_Axioms.md` 改为 claim-layer index；新增 `Core/SRT_Core_21_Minimal_Axioms.md`（P0）、`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1）、`Core/SRT_Core_21c_Bridge_Hypotheses.md`（P2/P3/P4）、`Governance/SRT_CLAIM_LADDER.md` 与 `Core/SRT_OPEN_TENSIONS.md`；`SRT_AI_START.md` 瘦身为 bootstrap；AI / Philosophy / Spirituality 主入口已加角色与 P-level 回链头部。
+- `2026-04-20`：第二轮 spirituality 扩展已完成主要分流：A 线（`SRT_Spirituality_Selection_Pathology_and_Return.md`）已吸收 directional return、faith as openness to `L_0`、semantic gravity / belief viscosity / ontological amnesia、expert vs master、以及 frozen-`L_2` AI / intelligence ⟂ care；B 线（`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`）已反映初心不是无知、熟悉解释变成现实本身、技术系统高智能但不真正关切、以及 community 作为轻量支持接口；`SRT_Spirituality_Community_and_Sangha.md` 已作为独立 companion 支线建立；`SRT_Spirituality_Second_Expansion_Bridge.md` 已降权为 `archival_index` 并补全 provenance record。
 - `2026-04-20`：`SRT_Spirituality_Return_Expansion_Bridge.md` 已完成反向并入，降权为 `archival_index`；A 线（`SRT_Spirituality_Selection_Pathology_and_Return.md`）与 B 线（`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`）均已增强：B 线新增 §2 空心主体/L2 主导环境（生活化）、§4 病理 vs 苏醒性空心感区分、§5 初学现象学、§8-§9 工作/关系/忙碌场景、§10 过渡期（dark night 生活化版本）共五处增补与一个新章节；bridge provenance record 已完整记录并入落点。
 - `2026-04-20`：已新增 spirituality 双线文档：`Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` 作为 canonical 主轴，收口 ready-made floors、主体位丢失、危机现象学、真轻/伪轻、support、micro-selection 与现代技术的 spiritual crisis；`Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` 作为 companion exposition，以更生活化方式展开现代生活反思、空心感、现成答案、支持与回返路径。
 - `2026-04-20`：`SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md` 已反向并入 canonical 主文档：`§4.4`（更轻 = 自我扭曲成本下降，`processing load ≠ Ψ_f`）、`§5.5`（真选择 vs 标签内优化，不确定性更根于直觉）、`§6.5`（`d↑/d↓` 不确定性支付能力，混沌精确定义，微小选择）已熔入 `SRT_Philosophy_Ethics.md`；`3.1d Integration Note`（空心感封口、自我扭曲链条、健康支持、早期修复序列）已并入 `SRT_Ethics_Agency.md`；bridge 已降权为 `archival_index`；`SRT_Merged_Provenance_Index.md` 已更新留痕。
@@ -73,7 +74,7 @@ AI / agent 最短读法：
 - 保持 canonical 主链不被入口优化反向污染
 - 按 `Governance/SRT_CLAIM_LADDER.md` 持续标注 domain 文件中的 P-level
 - 继续把运行留痕与理论检索层分开
-- 将 spirituality 双线与后续导航/入口层建立更清晰索引关系
+- 将 spirituality 三支结构（旧主轴 / 新双线 / community companion）与后续导航/入口层建立更清晰索引关系
 - ~~将 `SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md` 反向合并进 `Philosophy/SRT_Philosophy_Ethics.md` 与 `Philosophy/SRT_Ethics_Agency.md`~~（已完成 2026-04-20）
 
 ## Pipeline 快照

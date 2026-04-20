@@ -141,6 +141,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
 - `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
 - `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+- `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
 
 ## Governance / Runtime
 
@@ -163,4 +164,4 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `SRT_Navigation_Map.md` 是人类阅读地图，不是 registry 摘要
 - `STATUS.md` 现在只保留当前状态，不再承载长历史
 - `Core/SRT_Core_21_Formal_Axioms.md` 现在是 Core_21 claim-layer index，不再是混层公理正文
-- Spirituality 板块现采用“旧主轴 + 新双线展开”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径的独立 spiritual 组织
+- Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板

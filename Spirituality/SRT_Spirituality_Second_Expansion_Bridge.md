@@ -2,13 +2,14 @@
 id: SRT-SPIRITUALITY-SECOND-EXPANSION-BRIDGE
 type: theory
 tags: [Spirituality, Bridge, Shoshin, Faith, L2, AI Crisis, Community, Modernity]
-status: bridge_hardened_v1
+status: merged_index_v1
 layer: L1
 epistemic_layer: os
-claim_mode: staging_canonical_candidate
+claim_mode: archival_index
 dependency:
   - SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN
   - SRT-SPIRITUALITY-COMPANION-LOSS-RETURN
+  - SRT-SPIRITUALITY-COMMUNITY-SANGHA
   - SRT-SPIRIT-05
   - SRT-CORE-12B
   - SRT-AI-00
@@ -21,8 +22,8 @@ possible_new_targets:
 
 # SRT Spirituality Bridge II: Direction, Faith, Frozen L2, and Community
 
-> **Role**: second-stage staging bridge for the Spirituality dual-track line.
-> This file collects additional mature materials from outside the first return-expansion bridge, with special attention to: directionality, faith, semantic gravity, belief viscosity, algorithmic frozen-L2 critique, and practice-community design.
+> **Role**: archived merge map / provenance index.
+> The second-wave material collected here has now been partially reabsorbed into the A-line, reflected in the B-line, and split into a separate community companion branch. This file no longer carries independent doctrinal authority.
 
 ---
 
@@ -33,7 +34,7 @@ possible_new_targets:
 - `Spirit_09` 中的 dark night / lived practice
 - `Spirit_07` 中的 meditation-neuro 接口
 
-但仓库里仍有一批**和 Spirituality 双线高度同簇、且成熟度很高**的材料，尚未被纳入：
+随后，仓库中仍有一批**和 Spirituality 双线高度同簇、且成熟度很高**的材料，需要进一步分流：
 
 1. `Spirituality/SRT_Spirit_05_Shoshin.md`
 2. `Core/SRT_Core_12b_Ontology_L2.md`
@@ -41,13 +42,7 @@ possible_new_targets:
 4. `SRT_PRACTICE_COMMUNITY_PLAN.md`
 5. `Spirituality/SRT_Spirit_04_Synthesis.md`（仅少量 cross-ref 价值）
 
-这些材料不适合无差别整块回写。它们需要更细的分流：
-
-- 哪些适合继续增强 **A 线 canonical spirituality**
-- 哪些适合继续增强 **B 线 companion exposition**
-- 哪些不适合塞进现有双线，而更适合长成一个新的 spirituality 子文档
-
-本 bridge 的功能就是完成这次分流。
+本 bridge 原本承担的是第二轮筛选与回写地图；现已完成其主要功能，保留为 provenance / merge index。
 
 ---
 
@@ -362,21 +357,22 @@ B 线可转成更贴近日常的表达：
 ## 8. Suggested merge strategy
 
 ### Step A — refine A line
-只吸入：
+已完成：
 - Shoshin as directional return
 - Faith as sustained openness to `L_0`
 - Semantic gravity / belief viscosity / ontological amnesia
 - AI as high-capability frozen-L2, intelligence orthogonal to care
 
 ### Step B — refine B line
-只吸入：
+已完成 / 已体现在当前 companion 文本中：
 - lived version of beginner's mind vs expert-mind lock-in
 - why mature people can become more closed, not more open
 - why technical systems can be highly intelligent but not truly caring
 - one short note that support may also require community, not just dyadic accompaniment
 
 ### Step C — spawn new branch
-将 `Community Plan` 整理为独立 spirituality 子文档，而不是继续塞进现有双线。
+已完成：
+- `Community Plan` 已整理为独立 spirituality 子文档：`SRT_Spirituality_Community_and_Sangha.md`
 
 ---
 
@@ -384,30 +380,62 @@ B 线可转成更贴近日常的表达：
 
 ### Into `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
 
-建议增强点：
-- `§1` 增加 spiritual return 的方向性维度
+已增强点：
+- `§1` spiritual return 的方向性维度
 - `§5` faith / openness under uncertainty
 - `§7` expert vs master / transparent L2
-- `§10` semantic gravity / ontological amnesia / frozen-L2 technology critique
+- `§10` frozen-L2 technology critique 与 intelligence-care orthogonality
 
 ### Into `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 
-建议增强点：
-- `§1` why maturity can become closure
-- `§3` how familiar explanations become reality itself
+已增强点：
+- `§2` hollow-subject environment 的生活化版本
+- `§3` familiar explanations becoming reality itself
 - `§5` beginner's mind as recovered openness, not ignorance
-- `§10-11` why smart systems can still fail to care; why community may matter for return
+- `§8` community as light support-interface
+- `§11` why smart systems can still fail to care
 
-### Into possible new file
+### Into realized new file
 
-建议新建：
+已新建：
 - `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
 
-可吸入内容：
-- sangha / practice funnel / companionship / torchbearers / risk control / community as non-capturing support structure
+其承担内容：
+- sangha / companionship / shared discernment / non-capturing support structure / anti-corruption conditions
 
 ---
 
-## 10. Minimal compression
+## 10. Provenance Record
 
-> **除第一轮已并入的“空心主体—必要混沌—dark night—practice”簇外，仓库里还存在第二批高度适合进入 Spirituality 的成熟材料：`Shoshin` 提供了方向性回返、faith 作为对 L0 的开放、master 与 expert 的差别，以及 AI 没有真正初心的结构诊断；`Core_L2` 提供了 semantic gravity、belief viscosity、ontological amnesia 与 algorithm as extreme-L2 的硬化说明；`AI_Crisis` 提供了 intelligence orthogonal to care、frozen-L2 高能力系统与技术批判的本体论版本；而 `Community Plan` 则更适合长成新的 spirituality 子文档，而非继续塞进现有 A/B 双线。**
+### A-line actual reabsorptions
+
+| Material cluster | Realized location |
+|:--|:--|
+| Directional return / Spirit as direction field | `SRT_Spirituality_Selection_Pathology_and_Return.md` §1 |
+| Faith as openness to `L_0` under uncertainty | `SRT_Spirituality_Selection_Pathology_and_Return.md` §5 |
+| Expert vs Master / transparent `L_2` | `SRT_Spirituality_Selection_Pathology_and_Return.md` §7 |
+| Semantic gravity / belief viscosity / ontological amnesia | `SRT_Spirituality_Selection_Pathology_and_Return.md` §3 |
+| Frozen-`L_2` AI / intelligence orthogonal to care | `SRT_Spirituality_Selection_Pathology_and_Return.md` §10 |
+
+### B-line actual reflections
+
+| Material cluster | Realized location |
+|:--|:--|
+| Mature closure vs recovered openness | `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` §5 |
+| Familiar explanation becoming reality itself | `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` §3 |
+| Technical intelligence without real care | `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` §11 |
+| Community as non-dyadic support interface | `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` §8 |
+
+### Community-branch realization
+
+| Material cluster | Realized location |
+|:--|:--|
+| Community / sangha as non-capturing support field | `SRT_Spirituality_Community_and_Sangha.md` |
+| Practice-community anti-corruption logic | `SRT_Spirituality_Community_and_Sangha.md` §5 |
+| Shared discernment / core communal forms | `SRT_Spirituality_Community_and_Sangha.md` §4 |
+
+---
+
+## 11. Minimal compression
+
+> **除第一轮已并入的“空心主体—必要混沌—dark night—practice”簇外，第二轮高度适合进入 Spirituality 的成熟材料也已完成主要分流：`Shoshin` 提供的方向性回返、faith、master 与 expert 的区分以及 AI 无真正初心的诊断，已进入 A 线并反映到 B 线；`Core_L2` 提供的 semantic gravity、belief viscosity 与 ontological amnesia，已增强双线对旧地板自我绝对化的解释；`AI_Crisis` 提供的 intelligence orthogonal to care 与 frozen-L2 高能力系统诊断，已进入技术批判部分；而 `Community Plan` 则已独立长成 `SRT_Spirituality_Community_and_Sangha.md`，不再继续塞入现有双线。**

@@ -14,7 +14,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 > **回链头部**：本页是 Spirituality navigation / domain registry，不是 core definition source。Spirituality 文件可作为 bridge、praxis、companion、domain exposition，但不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。
 > **P-level**：本板块主文主要为 P3/P5；实践、现象学与生活化解释默认 P5；阈值、路径或可测代理默认 P4，除非回链到 core/canonical 文件。
 
-本页汇总 Spirituality 板块当前的 bridge、compact core、双线扩展文档与拆分导航入口，并给出最短阅读路径。
+本页汇总 Spirituality 板块当前的 bridge、compact core、双线扩展文档、共同体支线与拆分导航入口，并给出最短阅读路径。
 
 ## Spirituality Entry Coverage
 ### A. Bridge / Axiomatic Layer
@@ -28,11 +28,19 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 ### D. Dual-Track Expansion (2026-04-20)
 - `SRT_Spirituality_Selection_Pathology_and_Return.md`
-  - canonical spirituality framework on ready-made floors, subject-position loss, crisis phenomenology, true/false lightness, support, and micro-selection
+  - canonical spirituality framework on ready-made floors, subject-position loss, crisis phenomenology, true/false lightness, support, micro-selection, directional return, faith as openness to `L_0`, and frozen-`L_2` technology critique
 - `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-  - companion exposition with modern-life reflection, lived phenomenology, and gentle practical guidance
+  - companion exposition with modern-life reflection, lived phenomenology, awakening vs pathological hollowness, beginner-mind recovery, technical-care critique, and gentle practical guidance
 
-### E. Split Navigation
+### E. Companion Community Branch
+- `SRT_Spirituality_Community_and_Sangha.md`
+  - companion theory / praxis interface on what kind of community can hold return without becoming another ready-made floor
+
+### F. Archived Merge Bridges
+- `SRT_Spirituality_Return_Expansion_Bridge.md`
+- `SRT_Spirituality_Second_Expansion_Bridge.md`
+
+### G. Split Navigation
 - `Praxis_Split/README.md`
 
 ## Recommended Reading Order
@@ -44,14 +52,17 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 3. `SRT_Spirit_09_Praxis.md`
 4. `SRT_Spirituality_Selection_Pathology_and_Return.md`
 5. `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-6. `Praxis_Split/README.md`
+6. `SRT_Spirituality_Community_and_Sangha.md`
+7. `Praxis_Split/README.md`
 
 ## Role Split
 - bridge / axioms：固定 Spirituality 板块与 SRT 公理层的连接方式
 - compact core：固定实践与进化主线的最短稳定入口
 - long-form：保留修行阶段、日常整合、暗夜、闭关与长期演化细节
-- canonical spirituality expansion：把“主体位丢失—危机—分辨—支持—回返”组织成独立 spiritual 主轴
+- canonical spirituality expansion：把“主体位丢失—危机—分辨—支持—回返—方向性回返”组织成独立 spiritual 主轴
 - companion exposition：把 canonical spirituality line 翻译成现代生活、可识别经验与生活化引导
+- companion community branch：处理 sangha / community 作为不接管主体的支持场
+- archived merge bridges：保留第二轮与第一轮回写的 provenance / merge map，不再承担独立 doctrinal authority
 - split：提供非删减式导航，不替代主干
 
 ## Minimal navigation note
@@ -60,3 +71,4 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 - **理解 Spirituality 板块的旧主轴** → 先读 `_SRT_Spirit_Axioms.md` 与 `SRT_Spirit_09_Praxis_CompactCore.md`
 - **理解现代生活中的选择病理、空心感、主体位回返** → 补读 `SRT_Spirituality_Selection_Pathology_and_Return.md`
 - **希望以更生活化方式进入同一问题** → 再读 `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+- **希望理解共同体如何托住回返而不变成新地板** → 读 `SRT_Spirituality_Community_and_Sangha.md`
