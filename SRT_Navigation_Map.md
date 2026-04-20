@@ -47,6 +47,36 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 - Philosophy → `Philosophy/_SRT_Phil_Axioms.md`
 - Spirituality → `Spirituality/_SRT_Spirit_Axioms.md`
 
+## 我想进入 Spirituality
+
+Spirituality 板块现在有两条入口：
+
+### 1. 旧主轴：公理 / praxis
+适合你想先看：
+- 灵性板块和 SRT 公理层怎么连上
+- 旧 spirituality 主轴怎么定义修行、信、解脱、暗夜等问题
+
+推荐路线：
+1. `Spirituality/_SRT_Spirit_Axioms.md`
+2. `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
+3. `Spirituality/SRT_Spirit_09_Praxis.md`
+
+### 2. 新双线：主体位丢失、现代生活与回返
+适合你想先看：
+- 人是怎么在现代生活里把自己活丢的
+- 空心感、现成答案、支持与回返路径
+- 为什么 AI / 搜索 / 模板会构成 spiritual crisis
+
+推荐路线：
+1. `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
+2. `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+
+### 简单判断
+
+- 想先看 **硬骨架 / canonical spirituality framework** → 先读 `SRT_Spirituality_Selection_Pathology_and_Return.md`
+- 想先看 **更贴近生活、现代处境和 lived experience** → 先读 `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+- 想回到 **旧 spirituality 主轴与 praxis compact core** → 从 `_SRT_Spirit_Axioms.md` 开始
+
 ## 我想看实验与下注口
 
 1. `Governance/SRT_LAB_HYPOTHESES.md`
@@ -70,6 +100,8 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 | SRT 如何形式化自己 | `(L1, os)` | `Core/SRT_Core_21_Formal_Axioms.md`, `Core/SRT_Core_22_Equations.md` |
 | SRT 如何和外部理论对接 | `(L1, bridge)` | 各领域 bridge 文件 |
 | SRT 如何被检验 | `(L2, lab)` | `Governance/SRT_LAB_HYPOTHESES.md`, `SRT_EXP_*` |
+| SRT 如何理解主体位丢失、空心感与回返 | `(L1, spirituality)` | `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` |
+| 我想用更贴近生活的方式进入同一问题 | `(L1, spirituality-companion)` | `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` |
 
 ## Registry & Support Layer
 

@@ -128,6 +128,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Spirituality/_SRT_Spirit_Axioms.md`
 - `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
+- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
+- `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 
 ## Governance / Runtime
 
@@ -148,3 +150,4 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `_SRT_MANIFEST.yaml` 是机器清单，不是 canonical 理论主文
 - `SRT_Navigation_Map.md` 是人类阅读地图，不是 registry 摘要
 - `STATUS.md` 现在只保留当前状态，不再承载长历史
+- Spirituality 板块现采用“旧主轴 + 新双线展开”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径的独立 spiritual 组织

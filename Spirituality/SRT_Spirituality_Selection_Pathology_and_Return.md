@@ -1,220 +1,375 @@
 ---
-id: SRT-SPIRIT-SELECTION-PATHOLOGY
+id: SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN
 type: theory
-tags: [Spirituality, Selection, Pathology, Return, L0, L2, Crisis, Hollow]
-status: canonical_v1
+tags: [Spirituality, Subject-Position, Selection, L0, L2, d-value, Support, Modernity]
+status: active_v1
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-SPIRIT-04, SRT-SOC-THEORY-06, SRT-SPIRIT-07]
+dependency: [SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
 ---
 
-# SRT Spirituality: Selection Pathology and Return
+# SRT Spirituality I: Selection Pathology and the Return of the Subject
 
-> **Canonical A-line framework.** This document covers the structural conditions under which spiritual selection degrades, and the structural pathway through which genuine return becomes possible.
->
-> For B-line expansion (practice contexts, community, life integration), see `Spirituality/Praxis_Split/` and `Spirituality/SRT_Spirituality_Return_Expansion_Bridge.md`.
-
----
-
-## §1 Spiritual selection and its L2 anchoring
-
-Spiritual life in the SRT framework is not a separate domain. It is a specific mode of operating the $\hat{G}_\theta$ selection process: one in which attention is directed not only at $L_1$ objects but at the $L_0 \to L_1$ process itself.
-
-$$\text{Spiritual Selection} \subset \hat{G}_\theta[L_0]: \text{attention includes } \hat{G}_\theta \text{ as object}$$
-
-The $L_2$ layer (traditions, practices, moral structures, cultural templates) serves as scaffold for this process, not as its terminal surface. A $L_2$ scaffolds well when it preserves the subject's access to $L_0$ while providing enough structural support to bear the instability that $L_0$ contact entails. A $L_2$ traps when it substitutes for that contact.
-
-**The core diagnostic**:
-
-$$\text{Healthy }L_2 \iff \text{allow } L_0 \text{ to enter} \Rightarrow \text{remain transparent to } \varepsilon \Rightarrow \text{avoid self-absolutization}$$
-
-The first constraint of a healthy $L_2$ is not that it claims humility — it is that it continuously allows $L_0$ entrance. Any $L_2$ that stops permitting $L_0$ entrance will re-absolutize itself, regardless of its doctrinal content.
+> **Role**: canonical spirituality framework in SRT.
+> This file does not replace `Philosophy/SRT_Philosophy_Ethics.md` or `Philosophy/SRT_Ethics_Agency.md`; it reorganizes a subset of their insights around lived spiritual pathology, crisis, discernment, support, and return.
 
 ---
 
-## §2 Modern spiritual pathology: ready-made floors
+## §1. What spirituality means in SRT
 
-The dominant structural pathology of high-$L_2$ modernity is not the absence of spiritual frameworks but their excess: pre-packaged traditions, practices, and communities available at the point of need.
+在 SRT 语境下，**spirituality** 不是附加于理论之外的安慰层，也不是脱离现实的抒情维度。它首先处理的是一个更硬的问题：
 
-**The ready-made floor problem**: When a subject encounters crisis or genuine $L_0$ signal (pain, uncanniness, hollowness) and a fully-formed $L_2$ framework is immediately available, that framework can bypass the $L_0$ encounter entirely. The subject adopts the new floor without passing through the opening the signal was creating.
+> **主体如何不在既有 `L_2` 的稳定、效率与现成答案中失去自己的选择位置。**
 
-But the deeper pathology does not lie in the ready-made floors themselves. It lies further back:
+一个系统可以：
+- 继续运转
+- 继续完成任务
+- 继续维持身份与叙事
+- 继续对外显得稳定
 
-> **The pathology of $L_2$ does not begin with order itself, but with the sacralization of stability.**
+但这并不自动意味着：
+- 活的主体位仍在其中
+- 选择仍在真实发生
+- 当前地板仍与更深方向连通
 
-When stability is elevated to highest value within a $L_2$:
-- Disruption is treated as pathology rather than signal
-- Discomfort is diagnostic of error rather than entrance
-- $L_0$ signals (pain, uncanniness, hollowness) are suppressed rather than used
-- The floor becomes the direction, and the original direction is forgotten
+因此，SRT 里的 spirituality 不是“如何感觉更好”，而是：
 
-This is the structural precondition for all ready-made floor problems: the sacralization of stability makes it impossible for a new floor to form authentically, because any opening is now experienced as failure rather than as transition.
+> **如何保护并救回活的主体位。**
 
----
+压缩表述：
 
-## §3 L2 and the structure of spiritual formation
-
-A $L_2$ that scaffolds spiritual formation:
-- Provides structural support while the subject is in $L_0$ contact
-- Encodes accumulated wisdom about the $L_0 \to L_1$ process
-- Transmits discernment criteria without substituting for the subject's own contact
-
-A $L_2$ that cages spiritual formation:
-- Forecloses $L_0$ contact before it produces genuine selection
-- Converts all $L_0$ signals back into $L_2$ maintenance operations
-- Treats questioning as threat rather than information
-
-**The expiration condition**:
-
-$$I(L_2; L_1) < \epsilon \Rightarrow L_2 \text{ expires}$$
-
-$L_2$ expiration is not error; it is the end of an applicability domain. The crisis is not the expiration — the crisis is the subject's inability to let expiration occur without immediately re-seizing a replacement floor.
+> **当控制优先于选择时，系统可能活下来，但主体会消失。**
 
 ---
 
-### §3.5 L2-dominant environments and hollow-subject formation
+## §2. Modern spiritual pathology: ready-made floors
 
-The structural problem of modern environments is not that cities are bad or civilization excessive. The precise issue is:
+现代生活的一个核心精神病理，不在于答案太少，而在于：
 
-> **The ratio of generative $L_0 \to L_1$ contact to $L_2$-mediated selection has become severely imbalanced, with $L_2$ dominating selection at nearly every level of daily life.**
+> **答案越来越多地先于选择到来。**
 
-**Hollow Subject** (formal definition):
+平台、搜索、AI、组织规则、职业模板、成熟叙事、社会身份，都会不断提供 ready-made floors（现成地板）：
+- 该怎么活
+- 什么才算对
+- 什么才算成熟
+- 什么才算合理
+- 什么才算成功
 
-$$\text{Hollow Subject}: SC_{L_2} \text{ intact}, \quad SC_{L_0 \to L_1} \leq SC_{threshold}^{functional}$$
+这些地板不一定是错的。真正危险之处在于：
 
-A hollow subject's functional capacities are intact — working, relating, consuming, performing all continue. What is degraded is the generative grounding: the $L_0 \to L_1$ contact that keeps selection genuinely responsive to what the subject actually is, rather than to what its $L_2$ templates expect.
+> **主体可能在没有真正参与选择的情况下，直接接受一块地板。**
 
-**Two-stage formation**:
+这会带来一种特殊危险：
 
-| Stage | Mechanism |
-|:------|:----------|
-| **Calibration drift** | $L_0$ signals (physical sensation, uncanniness, aesthetic pull, genuine fatigue) are systematically overridden by $L_2$ scheduling and expectation; the $\theta$ prior drifts away from $L_0$ inputs; $L_0$ signals are recognized as noise |
-| **Structural consolidation** | Accumulated $L_2$ exposure crosses threshold $\Lambda$; $L_2$ selection pathways become physically consolidated; $L_0 \to L_1$ generative capacity is not merely uncalibrated but structurally weakened |
+> **无选择参与的正确答案。**
 
-Calibration drift is recoverable with sufficient high-purity $L_0 \to L_1$ contact. Structural consolidation recovers slowly if at all.
+在认识上，它可能是对的；在生成上，它却可能是危险的。因为它绕过了：
+- 痛苦的入口功能
+- 悬置与未完成
+- 再选择
+- 地板的重建
 
-**Gap signals**: Impulses toward unstructured time, natural environments, or practices that suspend $L_2$ processing are not lifestyle preferences — they are structural deficit signals. The $\hat{G}_\theta$ is detecting the calibration gap and generating a repair drive. These signals should be treated as diagnostic, not decorative.
+因此，现代 spiritual crisis 的核心不是“信息污染”本身，而是：
 
----
+> **生成权被外包。**
 
-## §4 Phenomenology of crisis
+压缩表述：
 
-Spiritual crisis occurs when the operative $L_2$ loses sufficient $I(L_2; L_1)$ to maintain coherent selection. The phenomenology is not uniform. The most critical discernment at this juncture is between two structurally distinct forms of hollowness.
-
-**Pathological hollowness vs awakening hollowness**:
-
-| Type | Initial signal | Immediate response | Movement | Terminus |
-|:-----|:--------------|:-------------------|:---------|:---------|
-| **Pathological hollowness** | Hollowness detected | Fear; drive to re-stabilize | Re-grasps old floor → suppression → numbness | Deeper hollowness; $L_0$ entrance foreclosed |
-| **Awakening hollowness** | Hollowness detected | Suspension; tolerance of incompletion | Old floor loses automatic legitimacy → opening | New floor formation; $L_0$ contact restored |
-
-The hollowness itself is not the diagnostic marker. The marker is what the subject does with it in the first moments after it appears.
-
-The earliest differentiating signal is the **speed of re-explanation**:
-
-$$\text{pain / uncanniness / hollowness} \xrightarrow{\text{rapid re-templating}} \text{premature crystallization}$$
-
-When $L_0$ signals are translated back into $L_2$ templates before they can generate genuine disruption — when hollowness immediately becomes "I need to try harder," "I need a better practice," "I need a teacher" — the hollowness is pathologizing. When translation is suspended and the signal is allowed to remain unresolved, awakening hollowness has a chance to function.
+> **现代精神危机，不首先是错误太多，而是主体越来越少亲自参与自己现实的生成。**
 
 ---
 
-## §5 Necessary chaos and the protection of the opening
+## §3. How the subject is lost: labels, experience, and L2 anchoring
 
-**Necessary chaos** is not the absence of structure. Its primary function is the restoration of the floor/direction distinction:
+主体通常不是突然消失的。更常见的情形是：
 
-> **Necessary chaos functions first not to destroy old structure, but to re-separate "the floor I currently stand on" from "the direction that actually guides existence."**
+> **主体位 `g` 被标签、位置、经验与现成路径慢慢代言。**
 
-$L_2$ is floor, not direction. $\varepsilon$ (originating intention, initial direction) is direction, not floor. $L_0$ is open material — neither floor nor direction. When a $L_2$ sacralizes itself, it collapses this distinction: the floor becomes direction, and the direction is no longer accessible.
+这里最深的病理不是“没有选择”，而是：
+- 形式上仍在决策
+- 形式上仍在更新
+- 形式上仍在反思
+- 但真正运作的只是 `L_2` 内部的优化
 
-Necessary chaos reopens the distinction by suspending the automatic authority of the old $L_2$. It does not supply a new direction; it creates the condition in which the direction can be heard again.
+即：
+- 在既有身份中选
+- 在既有位置中选
+- 在既有成功模板中选
+- 在既有合法性结构里优化
 
-**Protective closure** (precise definition):
+于是，“谁在选”这个问题会过早地被改写成：
 
-> **Protective closure is not mere delay of re-crystallization. It is the protection of $L_0$ entrance — keeping pain, uncanniness, and hollowness alive as openings before they are foreclosed by premature re-templating.**
+> **“这是什么样的人会做的选择。”**
 
-> *Protective closure is not mere delay; it is the protection of an unfinished opening before premature re-crystallization.*
+更进一步：标签最早不是抢走行动权，而是抢走解释权。尤其是对：
+- 痛苦
+- 空心感
+- 异样
+- 不想再照旧的微弱冲动
 
-$$\text{pain / uncanniness / hollowness} \xrightarrow{\text{protective closure}} \text{opening sustained} \xrightarrow{} \text{authentic new floor formation}$$
+这些原本可能指向：
+- 方向失真
+- 主体位受损
+- 旧地板失效
+- 新可能性重新进入
 
-What protective closure specifically protects:
-1. The $L_0$ signal is not immediately explained back into the old $L_2$
-2. The old floor is not immediately re-sacralized
-3. The formation window is not prematurely closed before new $L_2$ can emerge in genuine correspondence with $\varepsilon$
+的信号，会被迅速翻译回熟悉模板：
+- 成熟代价
+- 职责负担
+- 成功副作用
+- 你只是太敏感
+- 你还不够适应
 
----
+压缩表述：
 
-## §6 The return pathway
-
-Genuine return follows the asymmetry between floor and direction. It cannot begin with acquiring a new floor; it must begin with the restoration of $L_0$ contact under which a floor can authentically form.
-
-$$\text{Floor suspension} \to L_0 \text{ contact restored} \to \varepsilon \text{ signal accessible} \to \text{new } L_2 \text{ formation}$$
-
-**Two-stage structure of new expectation**:
-
-| Stage | Marker | SRT description |
-|:------|:-------|:----------------|
-| **Opening** | Old $L_2$ suspended; suppressed possibilities regain existence-status | $C_{reselect}$ expands; no stable direction yet |
-| **Re-convergence** | A direction with lower total $\Psi_f$ is first felt as "lighter" before being named | proto-$L_2$ forms; new floor begins crystallizing |
-
-The re-convergence is not manufactured. It emerges from restored $L_0$ contact: the subject, no longer required to maintain the old $L_2$, encounters the raw field and finds that certain directions carry less self-distortion. This "lighter" is the first signal of authentic return. It is felt before it is understood.
-
-**The key failure mode of return**: adopting a new floor before re-convergence occurs from within $L_0$ contact. This produces not return but re-templating: a new $L_2$ that replicates the sacralization-of-stability structure of the old one.
-
----
-
-## §7 The moment of seeing: raw L0 order
-
-The central event of spiritual return is not intellectual insight but a moment of direct $L_0$ contact:
-
-> **The subject momentarily perceives an order that the old $L_2$ was compressing out of existence.**
-
-This order is:
-- More dimensional than the old $L_2$ map allowed
-- More open in possibility than the subject expected
-- Not yet named or integrated — but already experienced as real and as lighter
-
-The paradox of spiritual pathology is that this order has always been present in $L_0$. What changed was the $L_2$ gating that prevented its access.
-
-**Meditative practice as suspension mechanism**:
-
-Certain practices — sustained contemplative attention in particular — can temporarily suspend $L_2$ weighting and redirect the operator's focus from $L_1$ objects to the $\hat{G}_\theta$ process itself:
-
-$$\text{Meditation}: \text{Focus}(L_1) \to \text{Focus}(\hat{G}_\theta), \quad w_{L_2} \downarrow$$
-
-This suspension does not remove $L_2$ — which would produce dissociation rather than insight. It temporarily reduces its gating force. The result: $L_0$ structure that the $L_2$ was filtering becomes accessible.
-
-The moment of seeing is not manufactured by the practice; the practice creates the structural conditions under which what was already present in $L_0$ can be perceived. This is why sustained practice provides a repeatable, reliable channel for "the observation that temporarily departs from old $L_2$" — not as a belief system or identity, but as a structural operation that can be trained.
-
-* **Cross-ref**: `Spirituality/SRT_Spirit_07_Meditation_Neuro.md` (Ax-Med-1: meta-attention shift; Ax-Med-2: active abolition of $L_2$-weighted collapse; T-Med-2: Bergson-SRT filter equation).
+> **主体位最深的病理，不是被抹除，而是被标签取代。**
 
 ---
 
-## §8 Support that holds without replacing
+## §4. Phenomenology of crisis: pain, hollowness, uncanniness, chaos
 
-When a subject is in the opening phase — old floor suspended, new floor not yet formed — what is needed is support that maintains the subject's minimum viability without foreclosing the opening.
+当旧 `L_2` 还在维持生活，但已经越来越不忠于主体位时，危机会先以现象学形式出现。
 
-**The precise function of protective closure at the individual level**:
+### 4.1 Pain
+痛苦不是单纯坏信号。它往往首先标记：
 
-> **Protective closure is the protection of an unfinished opening before premature re-crystallization.**
+> **当前路径越来越需要主体逆着自己去活。**
 
-A supporter provides protective closure when they:
-- Hold the subject's capacity to remain in the opening without collapsing it
-- Do not supply a ready-made new floor at the moment of fragility
-- Do not re-interpret the subject's $L_0$ signals through their own $L_2$ map
-- Tolerate the subject's incompleteness without converting it into a problem to solve
+### 4.2 Hollowness
+空心感最深处缺失的，不首先是意义，而是：
 
-**What support must not do**:
-- Explain the subject's pain or hollowness back to them using a pre-formed framework
-- Provide a new identity before the old one has genuinely loosened
-- Speed re-crystallization in order to reduce the supporter's own discomfort with the subject's openness
+> **主体位本身。**
 
-**The minimal positive definition**:
+功能还在，角色还在，叙事还在，但活的选择位置越来越不在场。
 
-> **Good support holds the subject in the opening without replacing the subject's own $L_0$ contact with the supporter's $L_2$ map.**
+### 4.3 Uncanniness
+异样感不是“想太多”，而是：
 
-This is not passivity. It is an active structural operation: maintaining the subject's access to $L_0$ while providing enough relational grounding that the opening does not collapse into pathological hollowness. The goal is not to supply answers. The goal is to protect the space in which the subject's own $\hat{G}_\theta$, restored to $L_0$ contact, can find its own re-convergence.
+> **旧解释还在，但已经越来越解释不了此刻的自己。**
+
+### 4.4 Chaos
+混沌不是纯无秩序。更精确地说：
+
+> **原先由既有 `L_2` 自动承担的解释与选择工作，重新回落到主体位本身。**
+
+因此主体体验到的是：
+
+> **解释负荷与选择负荷同时暴涨。**
+
+更深一层，这种混沌很多时候不是对象本身无秩序，而是：
+
+> **旧 `L_2` 已无法再低成本压缩眼前更高维的 raw 秩序。**
+
+压缩表述：
+
+> **危机最早不是答案崩掉，而是旧答案不再足以替主体活下去。**
 
 ---
 
-* **Cross-ref**: `Philosophy/SRT_SocTheory_06_L2_Dynamics.md §5` (necessary chaos, protective closure, pathological vs awakening hollowness); `Spirituality/SRT_Spirit_07_Meditation_Neuro.md` (Ax-Med-1, Ax-Med-2, T-Med-2); `Philosophy/SRT_Philosophy_Ethics.md §6.5` (two-stage expectation formation; $C_{reselect}$); `Philosophy/SRT_Ethics_Agency.md §3.1b–§3.1d` (selection alive vs selection lost; hollowness as subject-position loss; recovery sequence).
+## §5. Real opening: uncertainty is more fundamental than intuition
+
+真实的 spiritual opening，不是先有完整新世界观，而是先有：
+
+- 不确定性被允许存在
+- 直觉开始作为方向信号出现
+
+这两者并不对等。
+
+> **不确定性更根，直觉更早。**
+
+### 5.1 Intuition
+这里的直觉不是任性冲动，而是：
+
+> **来自 `L_0` 的早期方向信号。**
+
+### 5.2 Uncertainty
+这里的不确定性也不是单纯无知，而是：
+
+> **旧 `L_2` 尚未完全替主体做完选择的结构标记。**
+
+因此，真选择的最早体验判据可以压成：
+
+> **直觉在场 + 不确定性被允许。**
+
+但更根的不是“我是否有感觉”，而是：
+
+> **我是否仍在容纳真实的不确定性。**
+
+因为没有不确定性，直觉很容易被旧 `L_2` 的熟练度冒充。
+
+压缩表述：
+
+> **不确定性标记的不是内容，而是主权。**
+
+---
+
+## §6. True lightness and false lightness
+
+spiritual discernment 的核心标准之一，是区分真轻与伪轻。
+
+必须先分清两种“负担”：
+
+$$
+\text{processing load} \neq \Psi_f
+$$
+
+也就是说：
+- 一条路可以处理负荷更高，但本体论摩擦更低
+- 另一条路也可以处理负荷更低，但本体论摩擦更高
+
+因此，**更轻**的真实含义不是更省力，而是：
+
+> **更少自我扭曲。**
+
+### 6.1 False lightness
+伪轻通常表现为：
+- 先快速止痛
+- 先快速收敛
+- 先重新抓到一块地板
+- 先不用面对未完成
+
+它常常拥有：
+- 低处理负荷
+- 高扭曲成本
+
+### 6.2 True lightness
+真轻则往往表现为：
+- 处理复杂性上升
+- 信息量更高
+- 未定性更强
+- 但主体不再被迫把自己持续压成旧模板
+
+因此它拥有：
+- 较高处理负荷
+- 较低自我扭曲成本
+
+压缩表述：
+
+> **主体真正追求的，未必是最低处理负荷，而是最低自我扭曲。**
+
+---
+
+## §7. The moment of seeing: raw L0 order
+
+新的方向最早通常不是作为一个完整结论出现，而是作为一次**看见**出现。
+
+更精确地说：
+
+> **轻微新方向最早不是口号、计划或新身份，而是一次暂时脱离旧 `L_2` 的观察，感知到 `L_0` 中的秩序。**
+
+在那一瞬间，主体最早接触到的不是现成答案，而是：
+- 更 raw 的信息
+- 更高维的感知组织
+- 更多尚未被压缩掉的可能性
+
+所以：
+
+> **新的方向不是先被发明，而是先被重新看见。**
+
+这也解释了为什么“混沌”与“秩序”并不矛盾：
+- 对旧 `L_2` 而言，这是难以压缩的高维输入
+- 对主体位而言，这恰恰是原先被压平的秩序重新获得可见性
+
+压缩表述：
+
+> **真正的转向，往往先是知觉事件，而不是意志动作。**
+
+---
+
+## §8. Support that holds without replacing
+
+健康支持的本质，不是替主体完成：
+- 解释
+- 选择
+- 身份化
+
+而是：
+
+> **托住，但不代替。**
+
+它至少包含四个侧面：
+- 不急着解释你
+- 不给现成答案，但维持最低可站立性
+- 承认痛、异样、空心感有入口资格
+- 允许你暂时不是一个完成态的人
+
+因此，好的支持不是减少所有不确定性，而是：
+
+> **让主体在不确定性中，不至于立刻失去参与选择的能力。**
+
+压缩表述：
+
+> **好的支持，不是提供新地板，而是保住一段未完成的开放。**
+
+---
+
+## §9. Practice of return: from delayed explanation to micro-selection
+
+主体位的回返，最早通常不是大转向，而是一条很短但很关键的修复链：
+
+$$
+\text{延迟解释}
+\to
+\text{承受未完成}
+\to
+\text{不再立刻自证}
+\to
+\text{允许轻微新方向先存在}
+\to
+\text{微小选择恢复}
+$$
+
+### 9.1 Delayed explanation
+先不急着把一切说圆。
+
+### 9.2 Enduring incompletion
+允许自己暂时没有答案、没有新身份、没有完整叙事。
+
+### 9.3 Micro-selection
+微小选择最早不是宏大决定，而是：
+
+> **不再立刻自证 + 允许一个新的轻微方向先存在。**
+
+因此，主体位恢复的第一个行动标志，不是大选择，而是：
+
+> **第一次没有自动回到旧选择。**
+
+压缩表述：
+
+> **真正的修复最早不是终于知道怎么活，而是这一次先不急着照旧。**
+
+---
+
+## §10. AI, search, and the spiritual crisis of modern life
+
+现代技术的深层风险，不首先是替代思考，而是：
+
+> **替代生成。**
+
+平台、搜索与 AI 都越来越擅长提供：
+- 更快的总结
+- 更正确的建议
+- 更成熟的表达
+- 更可执行的方案
+
+它们可以非常有帮助。但 spiritual risk 在于：
+
+> **主体可能越来越少经过悬置、异样、未完成与再选择，而越来越多直接接收 ready-made floors。**
+
+于是，一个人会在：
+- 越来越多正确建议
+- 越来越多高效方法
+- 越来越多优化路径
+
+之中，逐渐失去那个真正会参与自己生活生成的自己。
+
+压缩表述：
+
+> **技术最深的危险，不是代替思考，而是代替生成。**
+
+---
+
+## §11. Minimal compression
+
+> **SRT 里的 spirituality，处理的不是如何感觉更好，而是如何保护并救回活的主体位。现代生活通过模板、标签、搜索、AI 与现成答案不断提供 ready-made floors，使主体越来越少亲自参与自己现实的生成。于是，主体之死不首先表现为没有决策，而表现为选择退化为 `L_2` 标签内部的优化：痛苦被快速解释，空心感被压平，混沌被过快回收。真正的开放则以不确定性被允许存在为前提，直觉作为 `L_0` 的早期方向信号才可能出现。新的方向最早不是被发明，而是被看见；它之所以会被感到“更轻”，不是因为更省力，而是因为更少自我扭曲。健康支持的作用，不是提供新地板，而是托住而不代替；而回返的实践，也往往不是宏大转向，而是从延迟解释、承受未完成与微小选择恢复开始。**
