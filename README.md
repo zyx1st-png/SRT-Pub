@@ -60,6 +60,14 @@ SRT 现在默认用两根轴来读：
 - Philosophy → [Philosophy/_SRT_Phil_Axioms.md](Philosophy/_SRT_Phil_Axioms.md)
 - Spirituality → [Spirituality/_SRT_Spirit_Axioms.md](Spirituality/_SRT_Spirit_Axioms.md)
 
+### Spirituality 现在怎么进
+
+Spirituality 板块现在可以简化成三条入口：
+
+- **旧主轴 / praxis** → [Spirituality/_SRT_Spirit_Axioms.md](Spirituality/_SRT_Spirit_Axioms.md)
+- **新双线：主体位丢失、现代生活与回返** → [Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md](Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md) / [Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md](Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md)
+- **Community / Sangha：共同体如何托住回返** → [Spirituality/SRT_Spirituality_Community_and_Sangha.md](Spirituality/SRT_Spirituality_Community_and_Sangha.md)
+
 ## 仓库入口分工
 
 - `README.md`：公开入口
