@@ -149,6 +149,30 @@ For readers who want the final doctrinal shape rather than the staging path, rea
 
 ---
 
+### 5. Uncertainty Payment, Raw L0 Order, and Micro-Selection (2026-04-20)
+
+**Bridge source**:
+- `Philosophy/SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md`
+
+**Now merged into**:
+- `Philosophy/SRT_Philosophy_Ethics.md`
+- `Philosophy/SRT_Ethics_Agency.md`
+
+**Main topics transferred**:
+- `d↑/d↓` as uncertainty-payment capacity (earliest expression of d dynamics)
+- true selection vs label-internal optimization (selection layer, not decision presence)
+- uncertainty more fundamental than intuition (`g` sovereignty marker)
+- raw / high-dimensional `L_0` order
+- "lighter" = lower self-distortion, not lower processing load (`processing load ≠ Ψ_f`)
+- hollowness as loss of subject-position (not primarily loss of meaning)
+- phenomenological chain: pain → hollowness → labeling → hollow self-maintenance
+- healthy support = hold without replacing; delay explanation; preserve minimum standing
+- early repair sequence and micro-selection recovery
+
+**Downgrade confirmed**: source bridge now at `status: merged_index_v1`, `claim_mode: archival_index`.
+
+---
+
 ## Maintenance rule
 
 If future bridge notes are merged into canonical texts, update this file by adding:
