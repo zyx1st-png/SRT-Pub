@@ -18,6 +18,7 @@ dependency: [SRT-CORE-21, SRT-CLAIM-LADDER, SRT-L0-METAPHYSICS, SRT-SYMBOL-TABLE
 ## Quick Reference
 
 - Claim level: **P0 = Primitive axiom**
+- Numbering note: `P0-00` is a vocabulary gate / preface, not an additional substantive axiom.
 - Source lineage: split from `Core/SRT_Core_21_Formal_Axioms.md`
 - Governing ladder: `Governance/SRT_CLAIM_LADDER.md`
 - Companion layers:
@@ -37,7 +38,7 @@ When in doubt, demote to `P1` or below.
 
 ---
 
-## P0-00: Formal Vocabulary Gate
+## P0-00: Formal Vocabulary Gate (Preface)
 
 SRT minimally works with:
 
@@ -55,6 +56,8 @@ This is a vocabulary gate, not an additional substantive axiom. Canonical defini
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
 - `_SRT_T_DIR_CANONICAL.md`
+
+**P0 purity note**: `P0-00` keeps a P0-style number only because it fixes the notation required to read the P0 set. It should not be cited as a separate axiom or as an independent theoretical burden.
 
 ---
 
@@ -97,6 +100,8 @@ $$
 **Minimal Claim**: Once a selection is anchored into `L_1` and leaves history in `L_2`, it cannot be treated as never having occurred. Any reversal is itself a new selection event with its own trace.
 
 **Implication**: SRT requires historical asymmetry. Without irreversible trace, `L_2`, stable perspective, and real choice moments collapse into reversible bookkeeping.
+
+**Why P0 here**: This entry does not carry the fuller theory of ontological time, causality, or stable ISP. It only preserves the irreversibility floor needed for `L_2` and real choice to mean anything in SRT. The derived expressions and scoped theorems remain P1 in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 
 **Boundary**: The fuller ontological-time expression is not primitive here; it is carried as a P1 theorem in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 

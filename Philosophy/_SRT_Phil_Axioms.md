@@ -1,11 +1,12 @@
 ---
 id: SRT-PHIL-AXIOMS
 type: theory
-tags: [Philosophy, Epistemology, Phenomenology, Axioms, Hybrid]
+tags: [Philosophy, Epistemology, Phenomenology, Domain Mapping, Hybrid]
 status: axiomatic_hybrid_v3
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P2-P4
 dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
@@ -13,9 +14,10 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 
 > **回链头部**：本文是 Philosophy domain axiomatic mapping / bridge support。它不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md` 或 `Core/SRT_Core_21b_Constitutive_Theorems.md`。本文中的“axioms”是 Philosophy 板块映射公理，主要对应 P2/P3；涉及操作化候选或可证伪预测时对应 P4。
 > **依赖锚点**：`Governance/SRT_CLAIM_LADDER.md`、`Core/SRT_Core_21_Formal_Axioms.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md`。
+> **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P4` 约束本文为 Philosophy mapping support；标题中的 “Axioms” 不表示 P0/P1 core axiom body。
 
 > **Version 3.0 (Hybrid)**
-> **Part A** presents the Formal Axioms (AI-Readable).
+> **Part A** presents domain mapping axioms (AI-readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
 
 ---
@@ -26,7 +28,10 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-# Part A: Formal Axioms (形式化公理)
+
+# Part A: Domain Mapping Axioms (P2/P3/P4)
+
+> **Claim-level map**：`Ax-Phil-*` entries are Philosophy-domain mappings unless they explicitly quote core/canonical sources; operational candidates or falsification conditions are P4.
 
 
 ## I. Foundational Mappings

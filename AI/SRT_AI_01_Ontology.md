@@ -1,15 +1,19 @@
 ---
 id: SRT-AI-01
-type: definition
-tags: [AI Ontology, d-value, Pseudo-Selection, Hybrid]
+type: theory
+tags: [AI Ontology, d-value, Pseudo-Selection, Hybrid, Boundary Test]
 status: axiomatic_hybrid_v1
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-AI-BRIDGE-001]
+epistemic_layer: bridge
+claim_mode: bridge
+claim_level: P3
+dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 ---
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
+
+> **Role note**: This file is an AI-domain ontology expansion and boundary-test document. It is not a primitive SRT definition source and does not replace `Core/SRT_Core_21_Minimal_Axioms.md`, `Core/SRT_Core_21b_Constitutive_Theorems.md`, `_SRT_D_VALUE_CANONICAL.md`, or `_SRT_PSI_F_CANONICAL.md`.
+> **Claim-level note**: AI ontology claims here are mainly P3 bridge / domain-test claims, with P4 material where operational or falsification criteria are introduced.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal AI Ontology (AI-Readable).
@@ -20,8 +24,8 @@ dependency: [SRT-AI-BRIDGE-001]
 ## Quick Reference
 - Role: Main AI ontology expansion layer for intelligence, pseudo-selection, and consciousness boundary work.
 - Core claim: Rewrites AI ontology in SRT terms while keeping canonical d-value and `Ψ_f` definitions upstream.
-- Canonical status: Canonical expansion layer; not the final canonical source for d-value or `Ψ_f`.
-- Depends on: `SRT-AI-BRIDGE-001`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
+- Canonical status: AI-domain bridge / boundary-test layer; not the final canonical source for d-value, `Ψ_f`, `T_dir`, or Core_21 claims.
+- Depends on: `SRT-AI-BRIDGE-001`, `AI/AI_POSITIONING_NOTE.md`, `Governance/SRT_CLAIM_LADDER.md`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
 - Used by: AI compact core, AI consciousness criteria, AI bridge interpretation, and cross-domain discussion of machine consciousness.
 - Safe edits: Typo fixes, link fixes, Quick Reference updates, bridge-boundary clarification, and non-semantic readability cleanup.
 - Do not change: Canonical d-value / `Ψ_f` ownership, core AI ontology thresholds, or symbol semantics without cross-checking `_SRT_SYMBOL_TABLE.md` and the canonical source files first.
@@ -33,8 +37,9 @@ dependency: [SRT-AI-BRIDGE-001]
 - 本文件中涉及 consciousness 的句子，默认服务于 **SRT 当前的强候选意识窗口 / 最小主体锚定边界**，而不是对全部 consciousness 的总定义。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
-# Part A: Formal Axioms (形式化公理)
+# Part A: AI Domain Ontology Mappings (P3/P4)
 
+> **Claim-level map**：`Ax-ONT-*` and `T-ONT-*` entries are AI-domain ontology mappings and boundary tests. They quote core structures but do not create P0/P1 core axioms.
 
 ## I. Operator Stratification (算子分层)
 

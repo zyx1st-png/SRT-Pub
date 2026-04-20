@@ -1,11 +1,12 @@
 ---
 id: SRT-PHIL-FOUNDATIONS-COMPACT-CORE
-type: theory
-tags: [Philosophy, Compact Core, Ontology, Explanatory Gap, Paradox]
+type: summary
+tags: [Philosophy, Compact Core, Ontology, Explanatory Gap, Paradox, Domain Exposition]
 status: active_v1
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P2-P5
 dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-PHIL-FOUNDATIONS]
 ---
 
@@ -15,6 +16,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 > **用途**：用于快速把握 SRT 哲学基础的最短论证骨架。  
 > **关系**：不替代原文；原文保留长篇推导、接口批次、案例扩展与 annex 沉积。
 > **回链头部**：本文是 Philosophy domain exposition / core support，不新增 P0 primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。本文命题主要为 P2/P3，少量说明性段落为 P5。
+> **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P5` 与上述回链头部一致；本文件是 compact exposition，不是 core definition source。
 
 ## 1. 哲学主命题
 

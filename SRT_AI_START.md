@@ -34,16 +34,18 @@ When the same concept appears in multiple files, use this order:
 
 1. `CANONICAL_REGISTRY.md`
 2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Core/SRT_Core_21_Formal_Axioms.md`
+3. `Core_Law/SRT_L0_Metaphysics.md`
 4. `Core/SRT_Core_21_Minimal_Axioms.md`
 5. `Core/SRT_Core_21b_Constitutive_Theorems.md`
-6. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
-7. `Core/SRT_Core_22_Equations.md`
-8. `Core_Law/SRT_L0_Metaphysics.md`
-9. `_SRT_D_VALUE_CANONICAL.md`
-10. `_SRT_PSI_F_CANONICAL.md`
-11. `_SRT_T_DIR_CANONICAL.md`
-12. `_SRT_SYMBOL_TABLE.md`
+6. `_SRT_D_VALUE_CANONICAL.md`
+7. `_SRT_PSI_F_CANONICAL.md`
+8. `_SRT_T_DIR_CANONICAL.md`
+9. `Core/SRT_Core_22_Equations.md`
+10. `_SRT_SYMBOL_TABLE.md`
+11. `Core/SRT_Core_21_Formal_Axioms.md`
+12. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+
+Use `Core/SRT_Core_21_Formal_Axioms.md` as a Core_21 routing index and legacy-numbering map, not as the first definition source.
 
 Use `Core/SRT_OPEN_TENSIONS.md` when a concept is known to be not fully sealed.
 
@@ -69,11 +71,11 @@ These are pointers, not definitions.
 
 ### `L_2`
 
-`L_2` is legitimate when it supports real choice by lowering friction; it becomes dangerous when it replaces real choice. For the formal tension, see `Core/SRT_OPEN_TENSIONS.md`.
+For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and `Core/SRT_OPEN_TENSIONS.md`.
 
 ### Real Choice Moment
 
-A real choice moment is live `L_0 -> L_1` anchoring with consequence for future selection. Habit execution, script replay, gradient following, or label optimization are not enough. See `Core/SRT_Core_21b_Constitutive_Theorems.md`.
+For real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 
 ### Freedom
 
@@ -81,15 +83,15 @@ In SRT usage, freedom concerns preservation of real choice moments, not mere opt
 
 ### Value Hiddenness
 
-SRT's current canonical line is that value is often hidden rather than absent. Use `_SRT_T_DIR_CANONICAL.md` for the actual formulation and its limits.
+For value hiddenness and its limits, use `_SRT_T_DIR_CANONICAL.md`.
 
 ### `T_dir`
 
-`T_dir` is not `d-value`. `d` is necessary but not sufficient for direction transparency. Use `_SRT_T_DIR_CANONICAL.md`.
+For the distinction between `T_dir` and `d-value`, use `_SRT_T_DIR_CANONICAL.md`.
 
 ### `\Psi_f`
 
-The key invariant is payability: whether a system can bear the friction while maintaining closure and future choice. Use `_SRT_PSI_F_CANONICAL.md`.
+For payability and `\Psi_f` usage, use `_SRT_PSI_F_CANONICAL.md`.
 
 ### `ε`
 

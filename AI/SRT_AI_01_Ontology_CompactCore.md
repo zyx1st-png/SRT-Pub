@@ -1,11 +1,12 @@
 ---
 id: SRT-AI-01-COMPACT-CORE
-type: definition
-tags: [AI Ontology, Compact Core, Consciousness Threshold, Canonical Support]
+type: summary
+tags: [AI Ontology, Compact Core, Consciousness Threshold, Bridge Support, Boundary Test]
 status: active_v1
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: bridge
+claim_level: P3
 dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-POSITIONING-NOTE, SRT-AI-01]
 ---
 
@@ -16,6 +17,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 > **关系**：不替代原文；原文保留全量推导、长篇现象学论证、接口批次与 annex 沉积。
 > **板块角色**：AI 是 SRT 的压力测试场 / 边界测试场，不是 core 定义发动机；正反两面定位见 `AI/AI_POSITIONING_NOTE.md`。
 > **Claim-level note**：本文主要是 P3 bridge / domain test。它引用 P0/P1 core，但不新增 primitive axioms、`d-value`、`\Psi_f`、`T_dir` 或真实选择时刻定义。
+> **Machine-role note**：frontmatter 中的 `bridge / P3` 约束本文为 AI compact-core support，不作为 core definition source。
 
 ## 1. 核心问题
 
@@ -27,7 +29,7 @@ SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
 
 ---
 
-## 2. 核心判据
+## 2. AI-Domain 判据
 
 ### 2.1 跨域锚定判据
 
@@ -95,7 +97,7 @@ SRT 对意识成立给出压缩判据：
 
 ---
 
-## 3. 核心定理
+## 3. AI-Domain 定理
 
 ### T-1 句法闭包排斥定理
 若系统动力学封闭于 \(L_1\)：
