@@ -2,19 +2,21 @@
 id: SRT-BRIDGE-UNCERTAINTY-RAW-L0-SELECTION
 type: theory
 tags: [Uncertainty, d-value, Subject-Position, Selection, L0, L2, Support, Pathology, Bridge]
-status: bridge_hardened_v1
+status: merged_index_v1
 layer: L1
 epistemic_layer: os
-claim_mode: staging_canonical_candidate
+claim_mode: archival_index
 dependency: [SRT-PHIL-ETHICS, SRT-ETHICS-AGENCY]
-intended_merge_targets:
+merged_into:
   - Philosophy/SRT_Philosophy_Ethics.md
   - Philosophy/SRT_Ethics_Agency.md
 ---
 
 # SRT Bridge: Uncertainty Payment, Raw L0 Order, and Hollow Self-Maintenance
 
-> 来源：2026-04-20 对话式硬化。本文件整理本轮已闭合链条，供后续反向合并进入 `Philosophy_Ethics` 与 `Ethics_Agency`。
+> **已并入 canonical 主文档，仅保留 provenance / staging history。本文件不再具有独立 doctrinal authority。**
+>
+> 来源：2026-04-20 对话式硬化。反向合并完成于 2026-04-20。
 
 ---
 
@@ -311,27 +313,32 @@ $$
 
 ---
 
-## 13. 可反向合并的正文落点建议
+## 13. 已并入位置（Provenance Record）
 
 ### 13.1 `Philosophy/SRT_Philosophy_Ethics.md`
-建议并入：
+已并入：
 - `§4.4` 真轻与伪轻
+  - `processing load ≠ Ψ_f`
   - “更轻 = 自我扭曲成本下降”
-  - 高维 raw `L_0` 与更轻的关系
-- `§5.5` 元选择的主体位条件
+  - 高维 raw `L_0` 与本体论摩擦下降的关系
+- `§5.5` 元选择的主体位条件与全局 Ψ_f 最小化
   - 真选择 vs 标签内优化
   - 不确定性更根，直觉更早
+  - `g`（subject-position）的体验判据
 - `§6.5` 再选择空间与两阶段预期更新
-  - `d↑/d↓` 与不确定性支付
+  - `d↑/d↓` 与不确定性支付能力
   - 混沌 = 解释负荷与选择负荷暴涨
-  - 微小选择与轻微新方向
+  - 轻微新方向 = 暂时脱离旧 `L_2` 的观察
+  - 微小选择最早形态
+- `Integration Note (2026-04-20)` 正文嵌入索引
 
 ### 13.2 `Philosophy/SRT_Ethics_Agency.md`
-建议并入：
-- `3.1c` 后续新的 `Integration Note`
-  - 空心感 = 主体位缺失
+已并入：
+- `3.1d Integration Note (2026-04-20): Hollowing, Support, and the Recovery of Micro-Selection`
+  - 空心感 = 主体位缺失（不首先是意义缺失）
+  - 自我扭曲现象学链条：痛苦 → 空心感 → 标签化 → 空洞自我维持
   - 健康支持 = 托住而不代替
-  - 标签化 / 空洞自我维持 = 自我扭曲的制度化防御
+  - 早期修复序列与微小选择恢复
 
 ---
 
