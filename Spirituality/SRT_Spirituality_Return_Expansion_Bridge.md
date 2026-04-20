@@ -2,10 +2,10 @@
 id: SRT-SPIRITUALITY-RETURN-EXPANSION-BRIDGE
 type: theory
 tags: [Spirituality, Bridge, Subject-Position, Hollowness, Praxis, Meditation, Modern Life]
-status: bridge_hardened_v1
+status: merged_index_v1
 layer: L1
 epistemic_layer: os
-claim_mode: staging_canonical_candidate
+claim_mode: archival_index
 dependency:
   - SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN
   - SRT-SPIRITUALITY-COMPANION-LOSS-RETURN
@@ -19,8 +19,9 @@ intended_merge_targets:
 
 # SRT Spirituality Bridge: Return-of-the-Subject Expansion
 
-> **Role**: staging bridge for the newly created Spirituality dual-track line.
-> This file collects already-existing material from `SocTheory_06`, `Spirit_07`, and `Spirit_09` that appears structurally aligned with the new spirituality axis on subject-position loss, modern-life hollowness, discernment, support, and return.
+> **已完成反向合并。** 本文件仅保留 provenance / merge map，不再具有独立 doctrinal authority。
+>
+> A 线（`SRT_Spirituality_Selection_Pathology_and_Return.md`）与 B 线（`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`）均已完成增强。详见末尾 Provenance Record。
 
 ---
 
@@ -387,3 +388,34 @@ Glossary 非常适合做：
 ## 10. Minimal compression
 
 > **仓库中与新 Spirituality 双线最适合同簇迁移的现成内容，不在一般神学论述，而主要在三处：`SocTheory_06` 提供了 necessary chaos、protective closure、awakening vs pathological hollowness 与 hollow-subject 机制；`Spirit_09_Praxis` 提供了 dark night、日常整合、社群与支持的生活展开；`Spirit_07_Meditation_Neuro` 提供了冥想如何暂时悬置旧 `L_2` 加权，以及初学期现象学的简洁接口。这些内容不宜整块搬运，但非常适合通过一次精准回写，分别增强 canonical spirituality 主线与 companion lived exposition。**
+
+---
+
+## Provenance Record
+
+反向合并完成于 2026-04-20。
+
+### A 线已并入位置
+`Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`：
+
+| 主题 | 并入位置 |
+|:-----|:--------|
+| 稳定神圣化为 L2 病理根因 | `§2 Modern spiritual pathology` |
+| Hollow Subject 正式定义 + 两阶段形成 | `§3.5 L2-dominant environments` |
+| 缺口信号（一句） | `§3.5` |
+| 病理空心感 vs 苏醒性空心感正式区分 | `§4 Phenomenology of crisis` |
+| 保护性封闭精确定义（保护 L0 入口） | `§5 Necessary chaos` + `§8 Support` |
+| 冥想机制接口（悬置 L2 加权） | `§7 The moment of seeing` |
+| 支持精确定义（不替代主体 L0 接触） | `§8 Support that holds without replacing` |
+
+### B 线已并入位置
+`Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`：
+
+| 主题 | 并入位置 |
+|:-----|:--------|
+| L2 主导环境 + 空心主体（生活化语言） | `§2`（末尾增补） |
+| 病理空心感 vs 苏醒性空心感区分 | `§4`（末尾增补） |
+| 初学现象学：停下来才看见自己一直很乱 | `§5`（末尾增补） |
+| 支持/关系的生活场景 | `§8`（末尾增补） |
+| 工作/关系/忙碌时的微小不照旧 | `§9`（末尾增补） |
+| 过渡期（dark night 生活化版本） | `§10`（新增章节） |
