@@ -50,6 +50,7 @@ AI / agent 最短读法：
 
 ## 最近关键推进
 
+- `2026-04-20`：`SRT_Spirituality_Return_Expansion_Bridge.md` 已完成反向并入，降权为 `archival_index`；A 线（`SRT_Spirituality_Selection_Pathology_and_Return.md`）与 B 线（`SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`）均已增强：B 线新增 §2 空心主体/L2 主导环境（生活化）、§4 病理 vs 苏醒性空心感区分、§5 初学现象学、§8-§9 工作/关系/忙碌场景、§10 过渡期（dark night 生活化版本）共五处增补与一个新章节；bridge provenance record 已完整记录并入落点。
 - `2026-04-20`：已新增 spirituality 双线文档：`Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` 作为 canonical 主轴，收口 ready-made floors、主体位丢失、危机现象学、真轻/伪轻、support、micro-selection 与现代技术的 spiritual crisis；`Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md` 作为 companion exposition，以更生活化方式展开现代生活反思、空心感、现成答案、支持与回返路径。
 - `2026-04-20`：`SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md` 已反向并入 canonical 主文档：`§4.4`（更轻 = 自我扭曲成本下降，`processing load ≠ Ψ_f`）、`§5.5`（真选择 vs 标签内优化，不确定性更根于直觉）、`§6.5`（`d↑/d↓` 不确定性支付能力，混沌精确定义，微小选择）已熔入 `SRT_Philosophy_Ethics.md`；`3.1d Integration Note`（空心感封口、自我扭曲链条、健康支持、早期修复序列）已并入 `SRT_Ethics_Agency.md`；bridge 已降权为 `archival_index`；`SRT_Merged_Provenance_Index.md` 已更新留痕。
 - `2026-04-20`（earlier）：已新增 `Philosophy/SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md`，整理本轮关于 `d↑/d↓` 与不确定性支付、真选择 vs 标签内优化、raw `L_0` 秩序、自我扭曲（痛苦/空心感/标签化/空洞自我维持）及健康支持的闭链内容，作为后续反向并入 `Philosophy_Ethics / Ethics_Agency` 的 staging bridge。
