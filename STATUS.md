@@ -12,7 +12,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-04-19
+> **最后更新**：2026-04-20
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -50,6 +50,7 @@ AI / agent 最短读法：
 
 ## 最近关键推进
 
+- `2026-04-20`：已新增 `Philosophy/SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md`，整理本轮关于 `d↑/d↓` 与不确定性支付、真选择 vs 标签内优化、raw `L_0` 秩序、自我扭曲（痛苦/空心感/标签化/空洞自我维持）及健康支持的闭链内容，作为后续反向并入 `Philosophy_Ethics / Ethics_Agency` 的 staging bridge。
 - `2026-04-19`：已将 `Philosophy/SRT_Philosophy_Ethics_Integration_2026_04_19.md`（主体位、d 增厚、新预期形成）回写并入 `Philosophy/SRT_Philosophy_Ethics.md`，源文件降权为 `archival_index`，`SRT_Merged_Provenance_Index.md` 已更新留痕。
 - `2026-04-18`：已新增 `README.md`、`CLAUDE.md`、`Governance/SRT_CANONICAL_FREEZE.md`、`Governance/SRT_EDIT_PROTOCOL.md`、`Governance/SRT_HARNESS_TESTS.md`，并开始收口入口层、manifest 与运行层边界。
 - `2026-04-16`：已收紧 `relative existence / L2 convergence` 相关口径，并回写主文与哲学接口。
@@ -61,6 +62,7 @@ AI / agent 最短读法：
 - 完成入口层去重：`README / AGENTS / CLAUDE / STATUS / _SRT_INDEX / Navigation / manifest`
 - 保持 canonical 主链不被入口优化反向污染
 - 继续把运行留痕与理论检索层分开
+- 将 `SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md` 反向合并进 `Philosophy/SRT_Philosophy_Ethics.md` 与 `Philosophy/SRT_Ethics_Agency.md`
 
 ## Pipeline 快照
 
