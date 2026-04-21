@@ -245,6 +245,30 @@ So the line should be read as:
 - **B as working definition**: consequence-bearing subjects whose future choice space is actually rewritten;
 - **C as normative strengthening**: subjects who should be included in the same legitimacy calculus but are excluded by the closure.
 
+### 7.1c Compression as loss of reselection capacity
+
+The minimum sign of compression should not be read as merely “fewer options.”
+The more structural minimum is that the relevant subjects lose **reselection capacity**.
+
+Here “reselection capacity” should be read in three layers:
+
+1. **Exit capacity** — the subject can still leave the current closure rather than being fully locked inside it.
+2. **Revision capacity** — the subject can not only leave, but revise the closure's operative parameters, boundaries, or pathways.
+3. **Recomposition capacity** — the subject can participate in reorganizing who is counted inside the closure's legitimacy accounting and who can help form the closure itself.
+
+The hierarchy should be read as:
+- **exit** = lowest threshold;
+- **revision** = working core;
+- **recomposition** = higher-order institutional / political layer.
+
+So the operational minimum of pathological compression is:
+
+> **压缩的最小判据，不是相关主体“少了几个选项”，而是相关主体的再选择能力被削弱了。**
+
+And the strengthened lethal-L2 case is:
+
+> the loss of reselection capacity has become backgrounded, such that affected subjects increasingly misread “cannot reselect” as “reality itself.”
+
 ### 7.2 Lethal L2
 
 Lethal L2 is the stronger case.
@@ -261,7 +285,7 @@ So:
 
 If a short citation block is needed, use the following:
 
-> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
+> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and more concretely as the erosion of their reselection capacity, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
 
 ---
 
