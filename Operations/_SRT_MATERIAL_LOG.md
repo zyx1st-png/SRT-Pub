@@ -202,6 +202,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-04-20 | ML Chen Substack: *The Unbearable Lightness of a Premature Requiem for Philosophy*（https://mlchen.substack.com/p/the-unbearable-lightness-of-a-premature） | 哲学随笔/观点文章 | C | — | 不融入 | 新增接口：未形成超出仓库现有 philosophy interface 的新增稳定接口；反向修正：SRT 不应把一篇公共随笔中的反科学主义/哲学辩护语气升格为 P0/P1，也不应把“哲学像认知免疫系统”这类有用比喻写成核心机制；加固内容：该文与 `Philosophy/SRT_Philosophy_Foundations.md` 中“悖论消解、跨层语法纠错、客观性作为稳定对齐、反任意构造论”高度同向；SRT反哺：可把材料压成更清楚的问题结构，即哲学的功能不是与科学竞争预测，而是检查科学与常识默认携带的形而上学切口、概念边界和问题语法；残余压力：材料是 Substack 观点文，论证主要依赖概念评论和修辞推进，不提供新的可检机制、外部证据或未被 SRT 覆盖的理论接口 |
 | 2026-04-20 | Journal of Consciousness Studies: Crowther & Hassel Mørch, *The Emergence of Space-time and the Emergence of Consciousness: Could They Be One and the Same?*（https://www.ingentaconnect.com/contentone/imp/jcs/2026/00000033/f0020001/art00008；doi:`10.53765/20512201.33.1.127`） | 同行评审评论/哲学论文 | A | `Core/SRT_Core_21c_Bridge_Hypotheses.md`（`P3/P4-B04 Holographic Duality` pressure note） | 已融入 | 新增接口：`spacetime-consciousness co-emergence boundary`；反向修正：SRT 不应把 non-spatiotemporal substrate、holographic duality、spacetime emergence 与 consciousness emergence 压成同一个证明动作，也不应把强 bridge 当作 P0/P1；加固内容：直接加固 `Core_21c` 对 holographic / cross-scale unification 命题的降格边界；SRT反哺：可把 Superpsychism 类主张拆成三个问题分别审查：物理时空如何涌现、意识如何涌现、二者是否共享解释结构；残余压力：本条材料主要基于摘要与可访问元数据审查，且它是对 Schneider & Bailey 的评论文，不是独立物理或神经实证结果，因此只支持 boundary note，不支持正文级新机制 |
 | 2026-04-20 | Science and Culture: *The Story of Everything: Why This Documentary Matters*（https://scienceandculture.com/2026/04/the-story-of-everything-why-this-documentary-matters/） | 宣传性立场文/二手哲学-神学评论 | C | — | 不融入 | 新增接口：未形成超出 `2026-03-30` 同站点 fine-tuning / theism 立场文与仓库现有 science-religion 边界的新稳定接口；反向修正：SRT 不应把纪录片宣传文中的 `cosmic beginning + fine-tuning + DNA code + beauty -> intelligent design / God hypothesis` 解释链误记成新的宇宙学、生命起源或意识机制窗口，也不应把反 materialism 立场直接升级成 P0/P1；加固内容：本次复核加固了 `Governance/_SRT_EXPLANATION_PROTOCOL.md` 的解释门槛，即解释偏好、类比推断、机制说明、可证伪条件与本体结论必须分开记账；SRT反哺：可把该文压成一条更清楚的问题结构：科学方法可以约束 materialism 的强形而上学外推，但这不自动授权把 design inference 当成已完成的机制解释；残余压力：材料是 Discovery Institute 纪录片宣传/评论，不提供新的同行评审锚点、定量模型、反事实预测或可重复实验，因此不支撑正文 patch |
+| 2026-04-21 | The Epoch Times / Makai Allbert: *The Mystery of Intuition: Where Gut Feelings Really Come From*（https://www.theepochtimes.com/health/the-mystery-of-intuition-where-gut-feelings-really-come-from-5944925；可访问转载：https://udumbara.net/the-mystery-of-intuition-where-gut-feelings-really-come-from） | 健康特写/二手科普（含同行评审与争议文献线索） | A | `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`（`§5.3 Intuition-source discernment`） | 已融入 | 新增接口：`intuition-source discernment gate`，把直觉分流为 `L_2` 熟练模式、`\theta_{somatic}` 内感受/风险读数与候选 `L_0` 早期方向信号；反向修正：SRT 不应把 “gut feeling / 有感觉” 直接等同 `L_0` 开放，也不应把 presentiment / precognition / microtubule speculation 写成正文证据；加固内容：加固 spirituality §5 “不确定性更根，直觉更早” 与 `Core/SRT_Core_13a_Operator_Basics.md` 的 `\theta_{somatic}` 口径；SRT反哺：将材料提升为三通道辨别结构，并要求直觉必须经不确定性、可支付 `\Psi_f` 与后续 `L_2` 分析校准；残余压力：文章的 presentiment 段依赖争议性 meta-analysis 与反向因果解释，且已有 expectation/order effects 复核与未复现结果，因此本次只吸收辨别门，不吸收“未来信息”主张 |
 
 ---
 
@@ -221,8 +222,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：156 条
-- A（融入）：102 条
+- 总提交：157 条
+- A（融入）：103 条
 - B（观察）：7 条
 - C（拒绝）：47 条
-- 融入率：65.4%
+- 融入率：65.6%
