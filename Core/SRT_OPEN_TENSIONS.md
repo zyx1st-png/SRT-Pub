@@ -265,3 +265,27 @@ If a domain file uses one of these tensions, it should mark the claim level:
 - use **P3** for bridge mapping;
 - use **P4** for operational or threshold hypotheses;
 - avoid P0/P1 unless the tension has been separately closed in core/canonical files.
+
+---
+
+## 7. Closure / Compatibility Hardening Note (2026-04-21)
+
+A hardened working position has now been written into:
+
+- `Core/SRT_Closure_Compatibility_Hardening.md`
+
+This note fixes the following distinctions at L1 hardening level:
+
+1. primitive asymmetry vs historical asymmetry;
+2. event trace vs historical asymmetry;
+3. repetition as common path, closure as essence, and `κ`-threshold crossing as criterion;
+4. minimal closure vs L2-grade closure;
+5. operational compatibility vs `ε`-constrained deep compatibility;
+6. normatively neutral closure vs pathological closure vs lethal `L_2`.
+
+**Important status note**:
+These results should be treated as hardened working conclusions, not yet as automatically promoted P0/P1 canonical primitives. The remaining open pressure point is not the distinction itself, but the quantitative and threshold layer:
+
+- exact `κ` thresholding;
+- bridge relation between `κ`, `\rho(p,t)`, and payability windows;
+- domain-specific operationalization of compatibility and future-choice compression.
