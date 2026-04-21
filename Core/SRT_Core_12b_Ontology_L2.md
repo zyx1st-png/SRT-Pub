@@ -126,6 +126,25 @@ Ax-L2-01 is the *general* L₂ accumulation law: $L_2(t) = L_2(t-1) + \eta \cdot
 
 **Why not inconsistent**: Ax-L2-01 explains *how* L₂ accumulates (any selection leaves a signed trace); T-L2-Scaffold explains *which sub-process* drives the asymmetric scaffolding structure (only successful stable ISP closures compound into background). The two claims occupy different levels of description.
 
+**Precision Note (2026-04-21): trace / closure / scaffold ladder**
+
+To prevent slippage between irreversibility, closure, and full L₂ backgrounding, read the ladder as follows:
+
+1. **Trace floor**: every real selection can leave a trace — this is the irreversibility minimum.
+2. **Minimal closure**: a trace becomes closure only when prior traversal begins to **systematically lower `Ψ_f` for compatible subsequent traversals**.
+3. **L₂-grade closure**: closure becomes L₂-grade only when that low-friction path also becomes **inheritable, shareable, and backgrounded**.
+4. **Scaffold threshold**: crossing $\rho^*$ marks the transition from foreground event to background scaffold.
+
+Compressed form:
+
+> **选择都会留痕；只有当留痕开始系统性降低兼容后续选择的 `Ψ_f` 时，才构成闭包；只有当这种低摩擦路径可继承、可共享并被背景化时，才构成 L₂ 级闭包。**
+
+This note sharpens the reading of Ax-L2-01 and T-L2-Scaffold:
+- Ax-L2-01 gives the universal trace law;
+- T-L2-Scaffold gives the dominant ratchet by which some closures become background;
+- repetition is the common path of deposition, closure is the essence, and `κ`-threshold crossing remains the stabilization-mode criterion; $\rho^*$ is this theorem's local scaffold-threshold parameter;
+- the distinction between trace, closure, and L₂-grade scaffold must not be collapsed.
+
 * **Dependence**: Ax-L2-01 (hysteresis accumulation base); Ax-L2-06b (successful-closure write-in gate: $\Psi_f < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$); T-ε-Constitute (stable ISP scope); Ax-Op-05 (two-phase closure, successful closure defined)
 * **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T07` (T-ε-Constitute dynamic layer); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
 
@@ -204,6 +223,31 @@ $$L_2 = \langle \mathcal{P}_{low\text{-}\Psi}, \;\mathcal{A}_{auth} \rangle$$
 **选择解耦与真空期**：当 L₂ 代理结构因合法性危机而打开重组窗口时，路径层与代理层均暂时回到 L₁ 粒度——此即真空期的本体论描述。参见 `Core_Law/SRT_Core_Text_CN.md Step ⑧`。
 
 * **Cross-ref**: Ax-L2-01（迟滞积累 = 路径层形成机制）; `Core/SRT_Core_13a Ax-Op-01`（遮蔽而非排除：L₂ 路径仍在 L₀，只是低摩擦固化）; `Core/SRT_Core_13a Ax-Op-03b`（竞争历史写回律 = 路径层摩擦更新机制）。
+
+**Precision Note (2026-04-21): closure and compatibility**
+
+The path layer $\mathcal{P}_{low\text{-}\Psi}$ should be read through the following distinctions.
+
+**Minimal closure**:
+> A path counts as closed when the result of prior selection begins to **systematically lower `Ψ_f` for compatible subsequent selections**.
+
+**L₂-grade closure**:
+> A closure becomes properly L₂-grade when the same low-friction path becomes **inheritable, shareable, and re-enterable as background scaffold**.
+
+**Compatibility (working definition)**:
+> Compatibility is defined operationally by **absorbability into the current closure**: a path is compatible if it can be taken up by the current closure without breaking that closure's self-maintenance, and if its entry tends to further lower downstream `Ψ_f` for later compatible traversals.
+
+**Compatibility (deep constraint)**:
+> Operational compatibility is constrained more deeply by congruence with the `ε` direction. A path is not deeply compatible if it preserves local closure only by compressing a broader future selectability.
+
+Compressed form:
+
+> **兼容性在操作上由闭包的可吸纳性定义，在本体上受 `ε` 方向约束。**
+
+This prevents three common drifts:
+1. reducing closure to repetition alone;
+2. reducing compatibility to surface similarity alone;
+3. mistaking locally absorbable but globally self-erasing paths for healthy closure.
 
 ---
 
@@ -1153,6 +1197,27 @@ $$d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{(\sum_k \lambda_k)^
 **规范性的内生推导**：无需引入外部价值——“好”的 L₂ 就是维持且扩展集体算子存在的 L₂，由选择动力学内部自然筛选。在选择本体论中，”是”（selection dynamics）包含了”应当”（sustainable L₂ criterion）——这是 SRT 对休谟事实-价值鸿沟的本体论回应。
 
 > **是-应当推导的适用边界**：该推导的有效性依赖于 $\mathcal{F}_{collective}$ **完整覆盖所有相关算子**。若某 L₂ 通过将部分算子排出核算范围（如剥削/排斥机制）来实现 $dS/dt \geq 0$，则推导失效——此时 S 的”扩展”建立在对被排除算子的选择空间的压缩之上，不满足内生规范性的完备性前提。形式判据：F_collective 的算子集必须等于实际受该 L₂ 影响的完整算子集。
+
+**Precision Note (2026-04-21): normatively neutral closure / pathological closure / lethal L₂**
+
+Closure is structurally real but **normatively neutral**.
+It tells us that a path has formed a scaffold; it does not by itself tell us that the scaffold is good.
+
+**Normatively neutral closure**:
+> Closure means "formed," not yet "justified."
+
+**Pathological closure**:
+> A closure becomes pathological when it can preserve itself **only by compressing a broader future selectability**. Here the compression is not a mere side-effect; it is part of the sustaining mechanism of the closure itself.
+
+**Lethal L₂**:
+> Lethal `L₂` is the stronger case: a pathological closure that has already become **shared, inheritable, and backgrounded as scaffold**.
+
+Compressed form:
+
+> **闭包说明“成形了”，不说明“正当了”。病态闭包是靠压缩更大范围后续可选择性来维持自身的闭包；致命 `L₂` 则是这种病态闭包已经共享化、背景化之后的形态。**
+
+This note should be read together with the existing normative classification table.
+A stable structure is not automatically a sustainable structure, and a sustainable local closure is not automatically a healthy collective scaffold.
 
 ### Thm-L2-Cage-Resolution: L₂ 笼子悖论的消解
 
