@@ -269,6 +269,42 @@ And the strengthened lethal-L2 case is:
 
 > the loss of reselection capacity has become backgrounded, such that affected subjects increasingly misread “cannot reselect” as “reality itself.”
 
+### 7.1d Healthy closure as semipermeable membrane
+
+A healthy closure should not be imagined as a wall without edges.
+It is better imagined as a **semipermeable membrane**.
+The key issue is not whether a boundary exists, but how that boundary is gated.
+
+Three layers should be distinguished:
+
+1. **Channel presence** — there remain real passages rather than total sealing.
+2. **Gate-rule revisability** — the rules by which passages are opened, closed, filtered, or delayed remain revisable.
+3. **Appeal / pushback availability** — at the stronger normative level, relevant subjects are not merely filtered by the closure's gate; they retain some capacity to contest, push back on, or re-enter the formation of those gate rules.
+
+So the health hierarchy should be read as:
+- **channel presence** = lowest threshold;
+- **gate-rule revisability** = working core;
+- **appeal / pushback availability** = normative strengthening.
+
+### 7.1e Minimal lesion point of pathological closure
+
+The earliest lesion of a pathological closure is not usually the visible disappearance of all channels.
+The more primary lesion lies in the **gate rules**.
+
+That is:
+- channels may still appear to exist,
+- but their gating conditions become increasingly rigid,
+- increasingly one-way,
+- and increasingly non-revisable by the affected subjects.
+
+So the structural sequence should be read as:
+- **A (channel count)** = surface manifestation;
+- **B (gate-rule rigidity / non-revisability)** = minimal lesion point;
+- **C (monopoly over membrane interpretation)** = deeper institutionalized pathology.
+
+This is why a closure may still look open while already becoming pathological.
+What matters is not merely visible permeability, but whether the gating logic remains revisable under pressure from relevant subjects.
+
 ### 7.2 Lethal L2
 
 Lethal L2 is the stronger case.
@@ -285,7 +321,7 @@ So:
 
 If a short citation block is needed, use the following:
 
-> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and more concretely as the erosion of their reselection capacity, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
+> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and more concretely as the erosion of their reselection capacity. A healthy closure should be read less as a wall than as a semipermeable membrane: channel presence is the minimum threshold, gate-rule revisability is the working core, and appeal / pushback availability is the normative strengthening. The earliest lesion of pathological closure lies not primarily in the disappearance of visible channels but in the rigidification and non-revisability of gate rules, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
 
 ---
 
