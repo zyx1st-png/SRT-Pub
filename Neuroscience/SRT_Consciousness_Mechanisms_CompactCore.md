@@ -175,6 +175,8 @@ SRT 很有力的一点是：
 - 习惯与成瘾可被重写为 `L_2` 直接劫持行为路径
 - 绕开原本需要的显式选择过程
 
+**Closure-pathology bridge note (2026-04-21)**：神经科学语境只把这一路径桥接到 habituation、gating rigidity 与 re-entry loss：旧通路越能自动放行，显式再选择越少进入回路。这里不把 legitimacy、appeal standing 或制度性 pseudo-openness 强行写成神经层事实。
+
 这解释了为什么：
 - 人会“知道不对”却仍执行
 - 行为先发生，意识后补叙述
