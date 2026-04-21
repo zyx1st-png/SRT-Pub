@@ -210,6 +210,41 @@ So the minimum working definition is:
 
 > **病态闭包：一个闭包只能靠压缩更大范围的后续可选择性来维持自身。**
 
+### 7.1a What “broader future selectability” means
+
+“Broader future selectability” should not be read primarily as a larger number of options available to the same isolated self.
+Within this hardening line, it should be read first as a **future choice space that extends beyond a single self and into multiple relevant selecting subjects sharing the same or connected background scaffold**.
+
+So the relevant contrast is not:
+- this closure preserves my local stability,
+versus
+- this closure gives me many options.
+
+The relevant contrast is:
+- this closure preserves itself locally,
+versus
+- this closure preserves or compresses the future selectability of other relevant selectors entangled with the same scaffold.
+
+**Working clarification**:
+
+> **“更大范围的后续可选择性”首先不是指单一主体局部未来里的更多选项，而是指跨越单一自我的、共享背景中多个相关选择主体的未来选择空间。**
+
+### 7.1b Relevant selecting subjects
+
+“More selecting subjects” should not be read as a simple headcount.
+The relevant subjects are not just any subjects whatsoever, but those whose future selection space is actually rewritten by the closure.
+
+Two levels should be kept distinct:
+
+1. **Working definition**:
+   relevant subjects are those who genuinely bear the closure's consequences back into their own future selection capacity.
+2. **Normative strengthened form**:
+   relevant subjects are those who not only bear those consequences, but who should count inside the same legitimacy accounting of the closure rather than being silently excluded from it.
+
+So the line should be read as:
+- **B as working definition**: consequence-bearing subjects whose future choice space is actually rewritten;
+- **C as normative strengthening**: subjects who should be included in the same legitimacy calculus but are excluded by the closure.
+
 ### 7.2 Lethal L2
 
 Lethal L2 is the stronger case.
@@ -226,7 +261,7 @@ So:
 
 If a short citation block is needed, use the following:
 
-> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
+> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
 
 ---
 
