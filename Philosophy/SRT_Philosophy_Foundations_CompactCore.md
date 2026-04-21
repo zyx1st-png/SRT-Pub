@@ -168,6 +168,8 @@ L_2 \equiv \{\sigma: \hat{G}_\theta[\sigma]=\sigma \}
 
 规范不是外加命令，而是选择历史沉积后的稳定不动点。
 
+**Closure-pathology note (2026-04-21)**：closure 在这里先读作结构成形，不自动等于正当性。一个 `L_2` 若只能靠压缩更大范围后续可选择性来维持自身，就应读作 pathological closure；若这种压缩已经共享化、继承化、背景化，则进入 lethal `L_2` 的诊断窗口。该句是 P2/P3 reading rule，不替代 Core 判据。
+
 ### 7.2 Ontological Relativity
 \[
 \exists h: L_2^{(A)} \to L_2^{(B)} \text{ homeomorphic}
