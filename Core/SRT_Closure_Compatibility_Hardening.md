@@ -1,0 +1,241 @@
+---
+id: SRT-CLOSURE-COMPAT-HARDENING
+type: hardening_note
+tags: [Core, L0, L2, Closure, Compatibility, Pathology, Hardening]
+status: active_v1
+layer: L1
+epistemic_layer: os
+claim_mode: hardening
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-12B, SRT-PSIF-CANONICAL, SRT-OPEN-TENSIONS]
+---
+
+# SRT Closure / Compatibility Hardening
+
+> **Role**: This file records the hardening results confirmed in the 2026-04-21 theory dialogue.
+> It does not replace the canonical anchors, but fixes a non-drifting working position so later canonical integration can proceed without re-opening the same ambiguities.
+>
+> **Scope**: L0 asymmetry layering; event trace vs historical asymmetry; closure; compatibility; κ-threshold reading; pathological closure vs lethal L2.
+
+---
+
+## 1. Two Layers of L0 Asymmetry
+
+SRT should distinguish two different asymmetries in the latent domain.
+
+### 1.1 Primitive asymmetry
+
+Primitive asymmetry is the minimum non-neutrality required for selection to be possible at all.
+It is not produced by already-existing entities.
+It belongs to the L0 side as the thin structural condition of bootstrap.
+
+Working reading:
+- primitive asymmetry makes selection possible;
+- it is the thin condition behind `κ_0 > 0` and the non-self-erasure bias;
+- without it, selection has no grip.
+
+### 1.2 Historical asymmetry
+
+Historical asymmetry is the asymmetry produced when prior selections and their stabilized traces carve the latent landscape.
+For any later finite selector, the encountered `L_0` is usually not a bare primitive field but a historically sculpted one.
+
+Working reading:
+- primitive asymmetry makes selection possible;
+- historical asymmetry makes selection concrete.
+
+**Compressed slogan**:
+
+> **原初不对称使选择可能，历史不对称使选择具体。**
+
+---
+
+## 2. Event Trace vs Historical Asymmetry
+
+Every real selection leaves a trace.
+But not every trace rises to the level of historical asymmetry.
+
+### 2.1 Event trace
+
+Any real selection rewrites the possibility landscape in some degree.
+In this sense:
+
+> **selection always writes back.**
+
+This is the minimal consequence of irreversibility.
+A selection that happened cannot be treated as if nothing had changed.
+
+### 2.2 Historical asymmetry
+
+Historical asymmetry is stronger than event trace.
+It appears only when traces are repeated, maintained, and sedimented into stable constraints that bias later selection.
+
+So:
+- all real selection leaves trace;
+- only sedimented trace becomes landscape.
+
+**Compressed slogan**:
+
+> **选择都会留痕，只有沉积才会成地形。**
+
+---
+
+## 3. Stabilization: Path, Essence, Criterion
+
+The dialogue fixed a three-way distinction that should remain stable in future writing.
+
+### 3.1 Repetition is the common path
+
+Repeated traversal is the most common way by which a path becomes easier to traverse again.
+But repetition alone is not the definition of stabilization.
+
+### 3.2 Closure is the essence
+
+The essence of stabilization is closure formation.
+A structure counts as stabilized not because it happened many times, but because the result of prior selection begins to feed back into later selection as a lower-friction route.
+
+### 3.3 κ-threshold crossing is the criterion
+
+`κ` should be read here as a stabilization degree.
+To say that `κ` crosses a threshold means that the mode of being has changed:
+
+- from foreground event to background constraint;
+- from one-off path to usable scaffold;
+- from local trace to stabilized structure.
+
+For L2-grade backgrounding, the most relevant reading is threshold crossing toward the crystallized / scaffold regime.
+
+**Fixed triad**:
+
+> **A is the common path; B is the essence; C is the criterion.**
+
+In Chinese:
+
+> **重复是常见路径，闭包是本质，κ 跨阈值是判据。**
+
+---
+
+## 4. Minimal Closure and L2-Grade Closure
+
+### 4.1 Minimal closure
+
+Minimal closure is reached when the outcome of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections.
+
+This is the minimum definition.
+Not mere repetition.
+Not mere archival record.
+Not mere memory of occurrence.
+
+**Working definition**:
+
+> **闭包的最小定义：某次选择的结果开始系统性降低兼容后续选择的 Ψ_f。**
+
+### 4.2 L2-grade closure
+
+L2-grade closure is stronger.
+It requires that the low-friction path can be:
+
+- inherited,
+- shared,
+- and re-entered as background scaffolding.
+
+So a private habit may count as closure without yet counting as L2.
+A language rule, institutional default, or stabilized norm is closer to L2-grade closure.
+
+**Compressed slogan**:
+
+> **闭包 = 后续兼容选择的 Ψ_f 下降；L₂ = 这种下降已被共享并背景化。**
+
+---
+
+## 5. Compatibility: Working Definition and Deep Constraint
+
+Compatibility should not be defined merely by surface similarity.
+Surface resemblance is only a heuristic.
+
+### 5.1 Working definition of compatibility
+
+A path is compatible, in the working sense, if it can be absorbed by the current closure without breaking that closure's self-maintenance, and if its entry tends to further lower downstream `Ψ_f` for later compatible traversals.
+
+So compatibility is defined operationally by absorbability into the current closure.
+
+### 5.2 Deep constraint on compatibility
+
+Operational compatibility is not enough.
+A deeper constraint is required:
+compatible paths must remain congruent with the `ε` direction.
+
+That means compatibility cannot be purchased by a larger-scale collapse of future selectability.
+A path that preserves local closure only by compressing broader future optionality is not deeply compatible, even if it is locally absorbable.
+
+**Fixed statement**:
+
+> **兼容性在操作上由闭包的可吸纳性定义，在本体上受 ε 方向约束。**
+
+---
+
+## 6. Closure is Normatively Neutral
+
+Closure does not automatically imply goodness.
+Closure means that something has formed.
+It does not yet mean that it has become normatively justified.
+
+### 6.1 Normative neutrality of closure
+
+Closure is structurally real but normatively neutral.
+It tells us that a path has become scaffolded.
+It does not by itself tell us whether that scaffold should count as healthy, sustainable, or justifiable.
+
+**Compressed slogan**:
+
+> **闭包说明“成形了”，不说明“正当了”。**
+
+### 6.2 Positive normative condition
+
+A closure gains positive normative status only if it remains under the `ε`-direction constraint.
+That is:
+- it does not preserve itself by compressing a wider future selectability;
+- it does not require broader self-erasure to maintain local stability;
+- it remains compatible with non-self-erasing continuation.
+
+---
+
+## 7. Pathological Closure and Lethal L2
+
+### 7.1 Pathological closure
+
+A closure becomes pathological when the preservation of the closure depends on compressing a broader future selectability.
+Compression here is not merely a side-effect.
+It is part of the mechanism by which the closure sustains itself.
+
+So the minimum working definition is:
+
+> **病态闭包：一个闭包只能靠压缩更大范围的后续可选择性来维持自身。**
+
+### 7.2 Lethal L2
+
+Lethal L2 is the stronger case.
+It is a pathological closure that has already become shared, backgrounded, and scaffolded at the L2 level.
+At that point the pathology no longer appears as a local rigidity only; it appears as an inherited world-form.
+
+So:
+- pathological closure = local or limited pathological stabilization;
+- lethal L2 = pathological closure that has become a shared background scaffold.
+
+---
+
+## 8. Consolidated Short Form
+
+If a short citation block is needed, use the following:
+
+> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
+
+---
+
+## 9. Status and Integration Rule
+
+This file records a hardened working position.
+Until the relevant canonical anchors are explicitly updated, cite these results as **core hardening conclusions at L1**, not as already-promoted P0/P1 primitives.
+
+Intended future integration targets:
+- `Core_Law/SRT_L0_Metaphysics.md` — for the primitive / historical asymmetry distinction (minimal note only);
+- `Core/SRT_Core_12b_Ontology_L2.md` — for closure, compatibility, scaffolding, and pathological closure distinctions;
+- `Core/SRT_OPEN_TENSIONS.md` — for tracking what remains unresolved after this hardening pass.
