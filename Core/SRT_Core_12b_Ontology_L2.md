@@ -249,6 +249,14 @@ This prevents three common drifts:
 2. reducing compatibility to surface similarity alone;
 3. mistaking locally absorbable but globally self-erasing paths for healthy closure.
 
+**Reading Rule (2026-04-21): future selectability, reselection, and gate health**
+
+In this note, "broader future selectability" should not be read primarily as a larger option count for one isolated subject. The relevant object is the **future choice space of multiple relevant selecting subjects** whose later selection capacity is rewritten by the same or connected scaffold.
+
+The minimum sign of compression is loss of **reselection capacity**, not merely fewer local options. Read that capacity in three layers: **exit** capacity is the lowest threshold; **revision** capacity is the working core; **recomposition** capacity is the higher-order institutional / political layer.
+
+A healthy closure should therefore be read less as a wall than as a **semipermeable membrane**: channels remain present, gate rules remain revisable, and relevant subjects retain some appeal / pushback capacity. The earliest lesion of pathological closure is not necessarily visible channel disappearance; it is gate-rule rigidity and non-revisability while the closure may still look open from the surface.
+
 ---
 
 ### Def-L2-Rights: Rights as Recognized Selection Domain Allocation（权利的形式定义）
@@ -1218,6 +1226,14 @@ Compressed form:
 
 This note should be read together with the existing normative classification table.
 A stable structure is not automatically a sustainable structure, and a sustainable local closure is not automatically a healthy collective scaffold.
+
+**Reading Rule (2026-04-21): pathological-closure loop**
+
+Pathological closure should be checked by whether consequences can return to the closure as **effective input**, not merely by whether affected subjects can express burden. Appeal standing has a structural source: recognition as a relevant subject is the lowest prerequisite; consequence-return capacity is the working core; shared interpretive standing is the stronger co-governance layer.
+
+Consequence-return paths are commonly cut in three layers: information fails to arrive; arrived burden is not counted as valid input; counted burden is re-attributed as private failure rather than evidence against the gate. In the strict sense, a burden becomes effective input only when it can alter gate decisions or stabilization parameters; the stronger normative case is that it can also trigger legitimacy review of the gate itself.
+
+Pseudo-openness names the appearance of responsiveness without structural uptake: expression without decision change, parameter tuning without gate-logic change, or gate optimization without exposing the gate's legitimacy. Experientially, the typical sequence is habituation -> loss of appeal sense -> reality-misrecognition. In the full loop, gate-rule rigidity, consequence-return cuts, pseudo-openness, reselection loss, and reality-misrecognition reinforce one another until a contingent gate is lived as inherited background scaffold. This is a hardening-level diagnostic chain; exact thresholds and domain metrics remain open.
 
 ### Thm-L2-Cage-Resolution: L₂ 笼子悖论的消解
 
