@@ -322,6 +322,25 @@ So the experiential hierarchy should be read as:
 This sequence explains why pathological closure can deepen long before explicit coercion becomes visible.
 The subject first ceases to notice the gate, then ceases to feel entitled to address it, and only later takes its contingency to be reality itself.
 
+### 7.1g Sources of appeal standing
+
+The felt standing to appeal should not be treated as a purely psychological variable.
+It has a structural source.
+
+Three layers should be distinguished:
+
+1. **Recognition as a relevant subject** — the subject is at least acknowledged as one genuinely acted upon by the closure's gate.
+2. **Consequence return into the closure** — the subject's burden is not treated as external noise, but can push consequences back into the closure's own ongoing operation.
+3. **Shared interpretive standing** — at the stronger level, the subject is not only acted upon, but retains some standing as a co-interpreter of what the rule means and why it counts.
+
+So the standing hierarchy should be read as:
+- **recognition** = lowest prerequisite;
+- **consequence-return capacity** = working core;
+- **shared interpretive standing** = higher-order co-governance layer.
+
+This is why the loss of appeal sense is more than discouragement.
+It marks a deeper structural mutation: the subject is no longer positioned such that their burden can count back upon the gate that burdens them.
+
 ### 7.2 Lethal L2
 
 Lethal L2 is the stronger case.
@@ -338,7 +357,7 @@ So:
 
 If a short citation block is needed, use the following:
 
-> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and more concretely as the erosion of their reselection capacity. A healthy closure should be read less as a wall than as a semipermeable membrane: channel presence is the minimum threshold, gate-rule revisability is the working core, and appeal / pushback availability is the normative strengthening. The earliest lesion of pathological closure lies not primarily in the disappearance of visible channels but in the rigidification and non-revisability of gate rules; experientially, this first appears as habituation, then loss of appeal sense, and finally the misrecognition of contingent gate rules as reality itself, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
+> **L0 asymmetry should be read in two layers: primitive asymmetry and historical asymmetry. Primitive asymmetry makes selection possible; historical asymmetry makes selection concrete. Every real selection leaves an event trace, but only repeated, maintained, and sedimented traces become historical asymmetry. Repetition is the common path, closure is the essence, and κ-threshold crossing is the criterion of stabilization. Minimal closure means that the result of a selection begins to systematically lower `Ψ_f` for compatible subsequent selections; L2-grade closure requires this low-friction path to become inheritable, shareable, and backgrounded. Compatibility is defined operationally by absorbability into the current closure, but is constrained more deeply by congruence with the `ε` direction. Closure itself is normatively neutral; it becomes pathological when it preserves itself by compressing a broader future selectability, understood first as the future choice space of multiple relevant selectors sharing the same or connected scaffold, and more concretely as the erosion of their reselection capacity. A healthy closure should be read less as a wall than as a semipermeable membrane: channel presence is the minimum threshold, gate-rule revisability is the working core, and appeal / pushback availability is the normative strengthening. The earliest lesion of pathological closure lies not primarily in the disappearance of visible channels but in the rigidification and non-revisability of gate rules; experientially, this first appears as habituation, then loss of appeal sense, and finally the misrecognition of contingent gate rules as reality itself. The standing to appeal arises minimally from being recognized as a relevant subject, more centrally from being able to return consequences back into the closure's own operation, and more strongly from retaining shared interpretive standing over what the gate means and why it counts, and becomes lethal L2 when this pathological closure is shared and backgrounded as scaffold.**
 
 ---
 
