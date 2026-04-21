@@ -263,6 +263,16 @@ $$\text{空心} \to \text{旧地板失效} \to \text{悬置} \to \text{开放} \
 
 因为没有不确定性，直觉很容易被旧 `L_2` 的熟练度冒充。
 
+### 5.3 Intuition-source discernment
+
+这里需要一个辨别门：直觉不能被单一路径解释。至少要区分三类信号：
+
+- **`L_2` 熟练度**：长期经验沉积成低 `\Psi_f` 的模式识别，速度很快，但仍是历史轨迹，不自动指向新的 `L_0` 开放。
+- **`\theta_{somatic}` / interoceptive warning**：身体、内感受、肠脑轴、HRV 或情绪唤醒给出的风险读数；它能提醒主体，但也可能被恐惧、创伤、偏见或旧威胁模板放大。
+- **`L_0` early direction signal**：旧 `L_2` 尚未完成封口时，主体位在不确定性中感到的新方向。
+
+因此，SRT 不把“有感觉”本身当作真选择证据。直觉必须与不确定性、可支付的 `\Psi_f`、以及后续 `L_2` 分析共同校准；一旦它可以完全由熟练模式、身体威胁反应或愿望投射解释，就只应记为 `L_2 / \theta` 信号，而不是 `L_0` 的方向开放。
+
 在此可给出 faith 的形式定义，与以上框架形成互补：
 
 > **Faith is sustained openness to `L_0` under uncertainty, not dogmatic fixation in `L_2`.**
