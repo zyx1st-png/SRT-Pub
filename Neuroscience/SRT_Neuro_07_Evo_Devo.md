@@ -92,6 +92,21 @@ $$\text{Generativity}_{devo} \propto \frac{1}{\Psi_f(\theta_{morpho})}$$
 
 ---
 
+### Evo-Devo Bridge Note: Multi-Level Selection and Endogenous Selection Regimes (2026-04-22 patch)
+
+**Claim level**: P3 bridge / P4 empirical interface. This note does not redefine SRT's selection primitive.
+
+在生物演化语境中，"选择压力"不应被写成一个外部单标量，好像环境只从外面筛选被动表型。更稳的读法是：选择制度分布在 gene / cell / organism / group / ecological 多个层级上，并且这些层级可以具有不同时间尺度、不同可继承路径与相互冲突的梯度。某个性状可能降低低层复制子的 `\Psi_f`，却提高 organism 或 group 必须吸收的 `\Psi_f`；反过来，一个更高层级的 closure 也可能改写低层成分之后面对的 payoff landscape。
+
+因此，SRT 应把 major transition 少写成线性 `d` 爬升，多写成“哪个层级的 closure 获得了把后果返回未来选择制度的能力”。当一个更高层 `L_2` scaffold 能够反复改变其成分算子的可支付条件、继承条件或持久化条件时，低层选择就不再面对同一个外部环境；环境本身已经被上层 closure 历史性地改写。
+
+**Boundary**:
+- 这不是回到 species-good teleology。group / whole-level benefit 只有在能具体返回 lower-level payoff、inheritance 或 persistence condition 时才算数。
+- `d` expansion 仍是可逆和有代价的：multi-level closure 可以扩展 concern-scope，也可以制造层级冲突、寄生或 collapse。
+- Dialectical similarity 只作为 bridge analogy 处理，不作为 ontological homology 或证明来源。
+
+---
+
 ### Ax-EVO-3: Convergent Intelligence Multiplicity Law (Extension)
 定义“执行智能”可由不同解剖架构实现：
 \[

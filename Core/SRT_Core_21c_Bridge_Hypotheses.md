@@ -75,6 +75,8 @@ $$
 
 **Boundary**: This is a bridge/hypothesis claim. It may support AI, cognitive, or evolutionary interpretations, but it is not a primitive SRT axiom.
 
+**Multi-level selection pressure note (2026-04-22)**: In evolutionary use, the `Fitness` term must be level- and timescale-indexed. Gene-, cell-, organism-, group-, and ecological-level payoffs can oppose one another, and higher-level closure can rewrite the lower-level selection landscape rather than merely add an external pressure. Cite this section as `fitness beats truth` only after specifying which operator level is being modeled and which consequences return into that level's future selection capacity.
+
 ---
 
 ## P4-B03: Assembly Criterion
