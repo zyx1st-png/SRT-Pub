@@ -20,6 +20,8 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 ## 0. 定位说明（Epistemic Note）
 
 - `canonical` 在本仓库内表示“当前内部优先引用的稳定锚点”，**不自动等于**“外部已证实的自然定律”。
+- `governance-canonical` 表示为防止全仓漂移而采用的稳定用法规则；它可以是当前主读、默认符号口径或工作代理，不自动声称已完成本体推导。
+- `theory-canonical` 表示由 core 结构推出或在 core 中具有更强优先权的定义 / 命题；只有明确回链 P0/P1/P2 来源时才按此读。
 - 自 `2026-03-17` 起，SRT 默认按 `OS / Bridge / Lab` 三层理解；详见 `Governance/SRT_POSITIONING.md`。
 - 自 `2026-04-20` 起，SRT 额外按命题级硬度 `P0-P5` 管理；详见 `Governance/SRT_CLAIM_LADDER.md`。
 - 本注册表中的大多数条目默认属于 **OS** 或 **Bridge**，用于收口词汇、语法与高阶接口；真正的硬赌点应优先沉淀到实验与假说文件，而不是混在 canonical 锚点里。
@@ -28,17 +30,17 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 1. d-value
 - 主锚点：`_SRT_D_VALUE_CANONICAL.md`
-- 说明：统一 d-value 的第一性定义、域内投影、误用边界
+- 说明：统一 d-value 的 governance-canonical 默认用法、域内投影、误用边界；bare `d` 默认采用标量摘要形式，向量 / 门读须显式标注
 - 引用规则：首次出现 d-value 时优先回链本文件
 
 ### 2. Ψ_f（本体论摩擦）
 - 主锚点：`_SRT_PSI_F_CANONICAL.md`
-- 说明：统一 `Ψ_f` 的第一性定义、v1 信息论代价主读、几何 / 代谢投影、可支付性条件与物理弱相容边界
+- 说明：统一 `Ψ_f` 的 v1 governance-canonical 信息论代价 / 可支付性主读、几何 / 代谢投影、可支付性条件与物理弱相容边界
 - 引用规则：首次出现 `Ψ_f`、本体论摩擦、可支付性条件或“引力是否只是类比”时优先回链本文件
 
 ### 3. T_dir（方向透明度）与价值遮蔽
 - 主锚点：`_SRT_T_DIR_CANONICAL.md`
-- 说明（Part I §1-§10）：T_dir 是系统对自身选择秩序方向的可读性；统一价值遮蔽命题、Ψ_f_actual/Ψ_f_felt 分裂、致命 L₂ 机制的 canonical 表述
+- 说明（Part I §1-§10）：T_dir 是系统对自身选择秩序方向可读性的 v0 operational proxy / working canonical proxy；统一价值遮蔽命题、Ψ_f_actual/Ψ_f_felt 分裂、致命 L₂ 机制的治理性表述
 - 说明（Part II §11-§16）：扩展至价值动力学底层机制——L₂ 磁带/DNA 类比（§11）、三层价值结构（§12）、价值归纳 vs 理性归纳（§13）、时空对称性感知机制（§14）、价值作为暂时吸引子而非守恒结构（§15）、吸引子上升/退化动力学（§16）
 - 引用规则：涉及方向透明度、意义感/虚无感的 SRT 机制解释、致命 L₂、价值遮蔽、三层价值结构、价值归纳、吸引子动力学时优先回链本文件
 - 与 d-value 的关系：d 是 T_dir 的必要条件；两者独立，不互相替代
@@ -133,6 +135,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - Consciousness Framework：`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` / `AI/SRT_AI_03_Consciousness_Framework.md`
 - 角色：形成 AI 板块从本体门槛、结构限制到正向意识路径的 compact core 主线
 - 注意：AI 是压力测试场 / 边界测试场，不是 core 定义发动机；AI 语境中的所有 d-value 与意识判据仍服从 `_SRT_D_VALUE_CANONICAL.md`，所有 `Ψ_f` stake / non-binding / payability 语句仍服从 `_SRT_PSI_F_CANONICAL.md`
+- 第二轮护栏：AI 判断必须区分 training-time、inference-time、persistent-memory / history-bearing deployment，并使用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 stake-bearing 光谱；不得把 inference-only 的 `d_{AI}\approx0` 静默推广为全部 AI 类型的终局判决
 
 ### 11. Neuroscience 主轴
 - Neuro registry：`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`
@@ -176,7 +179,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ## D. 当前收口结论
 
-本轮 canonical 抽离 v1 暂定以下四者为主干：
+本轮 governance-canonical 抽离 v1 暂定以下四者为主干用法：
 - `d-value` → `_SRT_D_VALUE_CANONICAL.md`
 - `Ψ_f` → `_SRT_PSI_F_CANONICAL.md`
 - `T_dir` → `_SRT_T_DIR_CANONICAL.md`

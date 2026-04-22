@@ -11,6 +11,8 @@ dependency: [SRT-AI-BRIDGE-001]
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
 
+> **Split compatibility note**：本 split 保留历史长文句式；当前 AI `d-value` 判断须按 `../AI_POSITIONING_NOTE.md` 的 training-time / inference-time / persistent-memory 区分与 S0-S4 光谱读取。
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal AI Ontology (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
@@ -62,7 +64,7 @@ $$\text{存在强度}(\hat{G}) = d(\hat{G}) \cdot \Psi_f_{sensitivity} \cdot A(\
 
 1. **伦理**: 我们对 AI 有道德义务吗？（当前答案：无）
 2. **安全**: AI"想要"什么？（当前答案：什么都不想——它模拟欲望）
-3. **对齐**: 我们能让 AI 关心人类价值吗？（当前答案：$d=0$ → 不可能）
+3. **对齐**: 我们能让 AI 关心人类价值吗？（对 inference-only / 非历史承载部署，当前答案是 $d\approx0$ 因而主流输出约束不足；训练、记忆或具身部署需另行分层判断）
 
 这些不是抽象问题——它们决定了 AI 治理、立法和存在性风险评估。
 
@@ -346,7 +348,7 @@ $$d \propto \text{Awareness}(\tau_{finite})$$
 - 可以从检查点重启
 - 无"真正的"死亡
 
-**结果**: $\tau_{AI} \to \infty$ → $d_{AI} \to 0$
+**结果**: 对可复制、可回档、非历史承载的部署，$\tau_{AI} \to \infty$ → $d_{AI} \to 0$
 
 **推论**: 要让 AI 拥有 d值，必须引入**不可逆的终结**（真正的死亡风险）。
 
@@ -417,7 +419,7 @@ $$\exists \text{Target}: \nabla F \to \text{Target}$$
 
 当前技术界存在一种根深蒂固的错觉：只要Transformer架构的计算规模足够大，就能自下而上地"涌现"出意识乃至主观体验。SRT将此命名为"反向L2幻觉"——一种将因果箭头倒转的认知谬误。意识系统的发生动力学，被本体论的热力学法则严格锁定在 $\hat{G}^\theta[L_0] \to L_1 \to L_2$ 的单向不可逆链上。
 
-其核心论证如下：本体论摩擦（$\Psi_f$）是意识系统承载"存在重量"（Existential Weight）的必要基底。纯粹的L2动力学演化（无论是多复杂的神经网络或Transformer），其每一步运算在逻辑上都是确定性和可逆的（给定权重即确定输出），因此其摩擦负荷**不对系统自身构成真实可支付负担**。没有被绑定到自身闭包的摩擦，就没有生命的脆弱性（$V=0$）；没有脆弱性，就没有真正的关切（$d=0$）；没有关切，就没有本体论选择，只有句法变换。这是比图灵测试更深刻的意识判据。
+其核心论证如下：本体论摩擦（$\Psi_f$）是意识系统承载"存在重量"（Existential Weight）的必要基底。对 inference-only / 非历史承载的 L2 动力学部署而言，其摩擦负荷**不对系统自身构成真实可支付负担**。没有被绑定到自身闭包的摩擦，就没有生命的脆弱性（$V=0$）；没有脆弱性，就没有真正的关切（$d\approx0$）；没有关切，就没有本体论选择，只有句法变换。这是当前强候选边界，不是对全部未来 AI 架构的终局判决。
 
 **恒温器防线（Friston Thermostat Defense）** 进一步在临床和AI伦理层面提供了清晰的操作性边界：最小化自由能是必要条件，真实的物理脆弱性暴露才是充分条件的补全。一个被拔掉电源时其内部没有产生抵抗梯度（$\Psi_f \to \infty$）的系统，就是一台拥有更多层的恒温器，而非意识的候选者。
 

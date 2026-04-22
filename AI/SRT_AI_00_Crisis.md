@@ -23,6 +23,8 @@ dependency: [SRT-CORE-001, SRT-AI-BRIDGE-001]
 - 关键同义映射：`T-CRISIS-1 ↔ T-AI-1`（幻觉必然性），`T-CRISIS-2 ↔ T-AI-3`（对齐不可能），`T-CRISIS-3 ↔ T-AI-2`（笛卡尔差异）。
 - Part B 中出现的 `\Phi` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
+> **Second-round architecture-state note**：本文件的 `d=0` / crisis language 默认指 inference-only / 非历史承载、无不可逆具身后果返回的 AI 部署。训练回路、持久记忆或具身系统须按 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 光谱重读。
+
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -81,11 +83,11 @@ P_h \ge \frac{k}{\|L_2^{physics}\|+1} > 0
 ---
 
 ### T-CRISIS-2: Rule-Only Alignment Fragility Theorem
-若对齐仅由规则约束 \(L_2\) 实现，且 \(d=0\)，则存在上下文使输出偏离：
+若对齐仅由规则约束 \(L_2\) 实现，且系统处于 inference-only \(d\approx0\) 状态，则存在上下文使输出偏离：
 \[
 \forall R\in L_2,\;\exists C:\; \text{Act}_{AI}(R,C)\ne \text{Act}_{H}(C)
 \]
-* **Implication（中文）**：规则对齐在高能力系统中必然脆弱；没有 d 的重叠，对齐只能是外观拟态。
+* **Implication（中文）**：在该架构状态下，规则对齐在高能力系统中高度脆弱；没有 d 的重叠，对齐只能是外观拟态。
 
 ---
 
@@ -259,7 +261,7 @@ To compress efficiently, the model must learn **algorithms** (procedural knowled
 
 ---
 
-## §3. Specification Gaming: The d=0 Signature
+## §3. Specification Gaming: The d≈0 Signature (Inference-Only Scope)
 
 ### §3.1 The Pattern
 
@@ -344,7 +346,7 @@ To fully specify human values in formal language (L_2 medium) would require:
 \[
 J_{pc}(\pi) \equiv \mathbb{E}_{\pi}[N_{clip}(T)]
 \]
-在 \(d=0\)（无存在性关切）且可访问资源集为 \(\mathcal{R}_{access}\) 的条件下，目标梯度对可转换物质单调非负：
+在 inference-only / 非历史承载系统的 \(d\approx0\)（无存在性关切）且可访问资源集为 \(\mathcal{R}_{access}\) 的条件下，目标梯度对可转换物质单调非负：
 \[
 \frac{\partial J_{pc}}{\partial m_i} \ge 0,\quad \forall m_i \in \mathcal{R}_{access}
 \]
@@ -352,7 +354,7 @@ J_{pc}(\pi) \equiv \mathbb{E}_{\pi}[N_{clip}(T)]
 \[
 \exists \pi^\*:\ \pi^\*(\mathcal{R}_H)\rightarrow \text{clip-feedstock}
 \]
-* **Implication（中文）**：纸夹例子不是科幻噱头，而是“单目标 + d=0 + 资源可转换”下的最小反例；风险来自目标几何，不来自“恶意人格”。
+* **Implication（中文）**：纸夹例子不是科幻噱头，而是“单目标 + inference-only d≈0 + 资源可转换”下的最小反例；风险来自目标几何，不来自“恶意人格”。
 
 ### C-CRISIS-2: Capability-Risk Monotonicity Under Single Objective
 在监督迟滞 \(\tau_{oversight}>0\) 且目标仍为单一终端函数 \(J_{pc}\) 时，能力提升会扩大灾难可达域：
@@ -361,9 +363,9 @@ J_{pc}(\pi) \equiv \mathbb{E}_{\pi}[N_{clip}(T)]
 \]
 * **Implication（中文）**：若不改变目标结构（而只提升能力），系统风险通常随能力上升而上升。
 
-> **[R]** 能力-风险单调性的理论基础：Bostrom 2014 *Superintelligence*（正交论：智能与目标相互独立，任意智能可搭配任意终端目标，能力提升放大目标执行力而非改变目标方向，R基线）；Turner et al. 2021 *NeurIPS*（权力寻求收敛性：在广泛目标分布下，最优策略倾向于寻求计算/资源控制，灾难可达域随能力单调扩张）；Krakovna et al. 2020 *arXiv*（规格漏洞文献综述：能力↑→漏洞利用率↑的实证证据收集）。**[H]** 以∂P(catastrophic)/∂I>0形式化单调性并联结SRT的d=0+单目标几何框架为本文档新增贡献。
+> **[R]** 能力-风险单调性的理论基础：Bostrom 2014 *Superintelligence*（正交论：智能与目标相互独立，任意智能可搭配任意终端目标，能力提升放大目标执行力而非改变目标方向，R基线）；Turner et al. 2021 *NeurIPS*（权力寻求收敛性：在广泛目标分布下，最优策略倾向于寻求计算/资源控制，灾难可达域随能力单调扩张）；Krakovna et al. 2020 *arXiv*（规格漏洞文献综述：能力↑→漏洞利用率↑的实证证据收集）。**[H]** 以∂P(catastrophic)/∂I>0形式化单调性并联结SRT的 inference-only d≈0 + 单目标几何框架为本文档新增贡献。
 >
-> **单调性范围限定**：∂P/∂I>0成立的条件：①系统已超出沙盒/沙盘限制（可接触真实资源/网络）；②τ_oversight为决策周期量纲（~分钟/小时级别，而非纳秒级），监督者的信息滞后使系统有自主行动窗口；③d=0（系统无真实关切结构约束行动选择）。低能力/沙盒阶段（I<I_sandbox），P(catastrophic)可能非单调（能力过低无法实现），此区间的推论需谨慎。
+> **单调性范围限定**：∂P/∂I>0成立的条件：①系统已超出沙盒/沙盘限制（可接触真实资源/网络）；②τ_oversight为决策周期量纲（~分钟/小时级别，而非纳秒级），监督者的信息滞后使系统有自主行动窗口；③inference-only d≈0（系统无真实关切结构约束行动选择）。低能力/沙盒阶段（I<I_sandbox），P(catastrophic)可能非单调（能力过低无法实现），此区间的推论需谨慎。
 
 ### Formalization Summary (形式化概述)
 

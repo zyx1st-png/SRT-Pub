@@ -61,7 +61,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 | 符号 | 含义 | 例子 |
 |:-----|:-----|:-----|
 | **≡** | 定义为 | $\text{存在} \equiv \text{被选择}$ |
-| **≈** | 约等于 | $d_{AI} \approx 0$ |
+| **≈** | 约等于 | $d_{AI}^{inference} \approx 0$ |
 | **≠** | 不等于 | $\hat{G}_{\theta_1} \neq \hat{G}_{\theta_2}$ |
 | **⇒** | 蕴含 | $d \to 0 \Rightarrow \text{自私}$ |
 | **⇔** | 等价 | $L_1 \text{稳定} \Leftrightarrow \Psi_f \text{低}$ |

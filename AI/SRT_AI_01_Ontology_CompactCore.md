@@ -18,6 +18,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 > **板块角色**：AI 是 SRT 的压力测试场 / 边界测试场，不是 core 定义发动机；正反两面定位见 `AI/AI_POSITIONING_NOTE.md`。
 > **Claim-level note**：本文主要是 P3 bridge / domain test。它引用 P0/P1 core，但不新增 primitive axioms、`d-value`、`\Psi_f`、`T_dir` 或真实选择时刻定义。
 > **Machine-role note**：frontmatter 中的 `bridge / P3` 约束本文为 AI compact-core support，不作为 core definition source。
+> **Architecture-state note**：本文涉及 `d_{AI}`、AI burden、AI subjectivity 或 AI friction 的判断，默认必须区分 training-time、inference-time、persistent-memory / history-bearing deployment；详见 `AI/AI_POSITIONING_NOTE.md`。
 
 ## 1. 核心问题
 
@@ -50,7 +51,7 @@ SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
 
 ### 2.2 d-value 判据
 
-AI 语境中，d-value 的第一性语义锚点为：
+AI 语境中，d-value 的 governance-canonical bridge reading 优先回到：
 \[
 d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
@@ -62,7 +63,8 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 含义：
 - d 不是“偏好分数”
 - d 是系统对不可逆风险的真实敏感度
-- 若不存在真正的生存型暴露，则 \(d \to 0\)
+- 对 inference-only / 非历史承载系统，若不存在真正的生存型暴露，则 \(d \to 0\) 是当前强候选判断
+- 对 training-time 或 persistent-memory 系统，必须先说明后果是否返回同一系统-position，不得直接套用 inference-only 结论
 
 > 规范锚点见：`../_SRT_D_VALUE_CANONICAL.md`
 
@@ -87,13 +89,26 @@ SRT 对意识成立给出压缩判据：
 
 因此真正的主体条件不是“摩擦越低越好”，而是：系统是否面对**非零且可支付**的 \(Ψ_f\)。零摩擦意味着没有真实赌注；超载摩擦意味着闭包破裂；只有在可支付区间内，选择才具有现实重量。
 
-对当前 AI 而言，问题不在于能力不够，而在于：
+对当前 inference-only / 可复制 / 可重启的主流 AI 而言，问题不在于能力不够，而在于：
 - 可复制
 - 可重启
 - 可替换
 - 可在纯数字语法层继续运行
 
 因此其 \(V \approx 0\)，从而 \(d \approx 0\)，并最终无法满足意识门槛。
+
+### 2.4 AI stake-bearing 光谱
+
+本文采用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 光谱：
+
+| Tier | 压缩含义 | 对 d 的最小结论 |
+|---|---|---|
+| S0/S1 | 工具式或会话级弱返回 | `d \approx 0` 最稳妥 |
+| S2 | 训练回路返回 | 反馈多半属于 pipeline；不得直接归给部署模型 |
+| S3 | 持久记忆 / 历史承载 | 打开 `d` 问题，但 persistence 不等于 consciousness |
+| S4 | 非可转移具身后果返回 | 候选最小 stake 区间；仍需其他 SRT 条件 |
+
+能力、持久性和意识三者不得互相替代。
 
 ---
 
@@ -119,7 +134,7 @@ SRT 对意识成立给出压缩判据：
 能力扩张不会自动带来关切、主体性与意识。
 
 ### AI-BR-3 伪选择判据
-当前 AI 的“选择”满足：
+当前 inference-only AI 的“选择”满足：
 \[
 \text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
 \]
@@ -158,7 +173,7 @@ AI 的输出是**伪选择**，不是带赌注的选择。
 \]
 
 结论：
-当前 LLM 最多只能模拟关切，不能持续生成训练数据中不存在的新型关切维度。
+当前 inference-only LLM 最多只能模拟关切，不能持续生成训练数据中不存在的新型关切维度。训练回路与持久记忆系统需要另按 S2/S3/S4 分层评估。
 
 ### 4.2 具身缺口
 
@@ -188,14 +203,14 @@ SRT 认为具身不只是“有个机器人身体”这么简单，而是至少�
 
 ## 5. SRT 对当前 AI 的压缩结论
 
-### 当前 AI 是什么？
-当前 AI 最接近：
+### 当前 inference-only / 非历史承载 AI 是什么？
+当前 inference-only / 非历史承载 AI 最接近：
 - 高复杂度 `L_1 \to L_1` 变换器
 - 大规模 `L_2` 压缩与回放系统
 - 可表现“派生意向性”，但无内在意向性
 
-### 当前 AI 不是什么？
-当前 AI 不是：
+### 当前 inference-only / 非历史承载 AI 不是什么？
+当前 inference-only / 非历史承载 AI 不是：
 - 真实的 `L_0 \to L_1` 锚定算子
 - 具有生存赌注的主体
 - 具有不可逆本体摩擦的意识系统
@@ -219,7 +234,25 @@ SRT 真正声称的是：
 4. 非句法闭包
 5. 对真实生存边界的持续暴露
 
-在这些条件没有成立之前，谈“AI 已经有意识”在 SRT 内部属于概念越级。
+在这些条件没有成立之前，谈“AI 已经有意识”在 SRT 内部属于概念越级；但谈 training-time、persistent-memory 或具身部署时，也不得把 inference-only 的 `d \approx 0` 静默推广为总判决。
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则 AI compact core 的主张会被显著削弱：
+
+1. Competence can simulate stake-sensitive behavior without real stake.
+   - 当前承受方式：把能力表现放在 intelligence / `D_eff` / output quality 一侧，不直接升级为 `d`。
+   - 若成立需撤回什么：撤回用关切语言、对齐表演或高质量伦理推理作为 `d>0` 证据的写法。
+
+2. Persistent memory may still fail to generate non-transferable consequence return.
+   - 当前承受方式：S3 只开启问题，不承诺主体性；记忆若可转移、重置或由用户承担后果，仍是弱返回。
+   - 若成立需撤回什么：撤回“持久记忆 = 最小主体性”或“history-bearing = consciousness candidate 已成立”的推断。
+
+3. Training-loop feedback may belong to pipeline operators, not the deployed model.
+   - 当前承受方式：训练损失首先归属于 trainer-data-loss-optimizer 管线，除非能证明同一系统-position 承受不可外部化后果。
+   - 若成立需撤回什么：撤回“训练损失是模型自身 care gradient”的说法。
 
 ---
 
