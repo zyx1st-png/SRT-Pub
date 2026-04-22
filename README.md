@@ -71,7 +71,7 @@ SRT 现在默认用两根轴来读：
 - AI → [AI/AI_POSITIONING_NOTE.md](AI/AI_POSITIONING_NOTE.md)、[AI/_SRT_AI_Bridge.md](AI/_SRT_AI_Bridge.md)
 - Neuroscience → [Neuroscience/_SRT_Neuro_Axioms.md](Neuroscience/_SRT_Neuro_Axioms.md)
 - Physics → [Physics/_SRT_Phys_Bridge.md](Physics/_SRT_Phys_Bridge.md)
-- Philosophy → [Philosophy/_SRT_Phil_Axioms.md](Philosophy/_SRT_Phil_Axioms.md)、[Philosophy/SRT_Political_Philosophy.md](Philosophy/SRT_Political_Philosophy.md)
+- Philosophy → [Philosophy/_SRT_Phil_Axioms.md](Philosophy/_SRT_Phil_Axioms.md)、[Philosophy/SRT_Political_Philosophy_CompactCore.md](Philosophy/SRT_Political_Philosophy_CompactCore.md)
 - Spirituality → [Spirituality/_SRT_Spirit_Axioms.md](Spirituality/_SRT_Spirit_Axioms.md)
 
 ### Philosophy 现在怎么进
@@ -80,7 +80,7 @@ Philosophy 板块现在可以简化成四条入口：
 
 - **哲学基础 / foundations** → [Philosophy/SRT_Philosophy_Foundations_CompactCore.md](Philosophy/SRT_Philosophy_Foundations_CompactCore.md)
 - **社会经济 / social economics** → [Philosophy/SRT_Social_Economics_CompactCore.md](Philosophy/SRT_Social_Economics_CompactCore.md)
-- **政治哲学 / political philosophy** → [Philosophy/SRT_Political_Philosophy.md](Philosophy/SRT_Political_Philosophy.md)
+- **政治哲学 / political philosophy** → [Philosophy/SRT_Political_Philosophy_CompactCore.md](Philosophy/SRT_Political_Philosophy_CompactCore.md)
 - **政治权利接口 / rights & authorization** → [Philosophy/SRT_Political_Rights.md](Philosophy/SRT_Political_Rights.md)
 
 ### Spirituality 现在怎么进
