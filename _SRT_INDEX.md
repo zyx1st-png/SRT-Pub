@@ -133,6 +133,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Philosophy/_SRT_Phil_Axioms.md`
 - `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`
 - `Philosophy/SRT_Social_Economics_CompactCore.md`
+- `Philosophy/SRT_Political_Philosophy.md`
+- `Philosophy/SRT_Political_Rights.md`
 
 ### Spirituality
 
