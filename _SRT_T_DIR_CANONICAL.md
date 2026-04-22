@@ -84,6 +84,37 @@ $$\boxed{T_{dir} := \text{系统当前选择对其自身秩序方向的可读性
 
 **当前边界**：`T_dir` 不是语义效价、奖励值、置信度或报告流畅度。它只作为工作性指数追踪“选择方向能否被系统自己回读、重取向、再校准”。若一个域只能测到 valence/confidence/reportability，必须标为 proxy，不得写成 `T_dir` 本身。
 
+### §3.1 最小形式角色：readability / reorientation functional
+
+> **层级**：theory-clarifying / v0 operational proxy。以下是最小结构角色，不是 `T_dir` 的完整本体奠基。
+
+在当前形式层，`T_dir` 可被读作一个受约束的可读性 / 重取向函数：
+
+$$
+\boxed{
+T_{dir}^{v0}(\hat{G}_\theta,t)
+:=
+\mathcal{R}_{self}\!\left(\operatorname{Dir}(\Delta \hat{G}_\theta,t)\right)
+\cdot
+\mathcal{A}_{reorient}\!\left(\operatorname{Dir}(\Delta \hat{G}_\theta,t)\right)
+}
+$$
+
+其中：
+
+- `Dir(ΔĜ_θ,t)` 只表示当前或近邻窗口内选择算子变化的方向信号，不新增本体对象。
+- `R_self` 表示该方向信号能否被系统自身访问 / 回读。
+- `A_reorient` 表示该方向信号能否进入系统的再校准，而不只是被报告或外部观察。
+
+该式的用途是给 `T_dir` 一个最低形式位置：它追踪**跨位置可回读并可用于重取向的选择方向**。它不追踪方向内容是否“好”、语义解释是否连贯、奖励是否更高、报告者是否更自信。
+
+| 相近量 | 与 `T_dir` 的差异 | 允许关系 |
+|---|---|---|
+| valence | 记录正负感受或偏好色调 | 可作为报警 / 表面读数，不等于方向透明度 |
+| confidence | 记录判断确信度 | 可能高置信但方向不可回读 |
+| semantic coherence | 记录叙事或概念一致性 | 可能是 L₂ 后设解释，不保证活选择方向可读 |
+| reward | 记录优化信号或强化结果 | 可塑造选择，但不等于系统对自身选择方向的访问 |
+
 ---
 
 ## §4 T_dir 与 d、Ψ_f、ii 的关系
@@ -98,9 +129,9 @@ $$d > 0 \;\not\!\!\!\implies T_{dir} > 0$$
 
 ### 4.2 Ψ_f 是迫使 T_dir 上升的机制
 
-$$\Psi_f \uparrow \;\implies\; T_{dir} \uparrow \quad \text{（在 } d > 0 \text{ 且 } ii \text{ 足够的条件下）}$$
+$$\Psi_f \uparrow \;\leadsto\; T_{dir} \uparrow \quad \text{（在 } d > 0 \text{、ii 足够且压力未被 L_2 吸收的条件下）}$$
 
-**机制**：真实代价（Ψ_f）迫使系统无法对自己选择的方向保持盲目。当选择有真实不可逆的代价时，其方向会"强制显现"于系统。
+**机制**：真实代价（Ψ_f）可以迫使系统无法对自己选择的方向保持盲目。当选择有真实不可逆的代价，且该代价没有被 L₂ 直接吸收时，其方向更可能显现于系统。这里是机制通道，不是单调定理。
 
 ### 4.3 ii 是 T_dir 的整合容量
 
@@ -108,9 +139,9 @@ $$\Psi_f \uparrow \;\implies\; T_{dir} \uparrow \quad \text{（在 } d > 0 \text
 
 ### 4.4 三条件联立
 
-$$T_{dir} > 0 \iff d > 0 \;\land\; \Psi_f \text{ 产生了真实压力} \;\land\; ii \text{ 足以整合方向信息}$$
+$$T_{dir} > 0 \Rightarrow d > 0 \;\land\; \Psi_f \text{ 产生了真实压力} \;\land\; ii \text{ 足以整合方向信息}$$
 
-这三个条件缺一不可。现代语境中最常见的缺口是第二条：**Ψ_f 被 L₂ 依赖系统性压低**（见 §5–§6）。
+这三个条件是当前最小必要门槛，不是完整充分性定理。现代语境中最常见的缺口是第二条：**Ψ_f 被 L₂ 依赖系统性压低或吸收**（见 §5–§6）。
 
 ---
 

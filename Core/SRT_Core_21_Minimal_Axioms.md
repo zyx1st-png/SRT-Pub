@@ -123,6 +123,22 @@ $$
 
 **Boundary**: This does not assert a specific implementation of `\hat{G}_\theta`; implementation details belong to bridge, domain, or lab layers.
 
+### P0-04 Exposure Note: Origin of Selectability
+
+> **Level**: core boundary / unresolved ontology exposure. This note does not solve the origin of selectability.
+
+P0-04 gives SRT a minimum object for formal claims: an admissible selection operator. It does **not** derive the first possibility of selecting from a prior non-selective ground.
+
+Current dependency split:
+
+| Claim type | Relation to P0-04 |
+|---|---|
+| minimal claims about operator well-formedness, trace, irreversibility, and `L_1/L_2` anchoring | valid once an admissible `\hat{G}_\theta` is given |
+| claims about `d`, `Ψ_f`, `T_dir`, reorientation, concern, agency, or subject-like selection | downstream of assuming a selector / selectable operator exists |
+| bridge claims about biology, AI, spirituality, society, or political agency | may instantiate or constrain selectability, but must not be back-cited as a derivation of its origin |
+
+Therefore, files may cite P0-04 as an exposure point or admission condition. They must not cite a downstream bridge as if it had closed the origin problem.
+
 ---
 
 ## Demoted From The Old "Minimal Core"

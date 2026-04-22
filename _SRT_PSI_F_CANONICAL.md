@@ -162,6 +162,29 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 
 > 阻力是现象学读法，代价是记账读法，几何长度是形式读法。
 
+### §3.1 投影关系与失效条件（core-clarifying / no closure claim）
+
+> **层级**：theory-clarifying / governance-canonical usage。以下内容固定当前内部结构，不声称 `Ψ_f` 已有唯一最终推导。
+
+三种读法的关系不是无条件等价：
+
+| 读法 | 当前角色 | 可允许的形式关系 | 禁止捷径 |
+|---|---|---|---|
+| payability burden | `Ψ_f` 的 v1 主读：选择压缩开放可能性时必须可支付的组织性负担 | 作为跨域判准；问系统是否能在承担此负担时保持闭包、身份连续性与后续选择能力 | 不得把任何局部能耗或路径长度直接写成 `Ψ_f` 本身 |
+| geometric projection | Fisher / 路径 / 曲率语言中的形式投影 | 在路径度量有效、参数化不制造伪距离、且路径确实对应可支付重构时，可作为 lower-bound style proxy：`\Psi_f^{geom} \lesssim \Psi_f^{paid}` | 不得把几何长度当作实际支付成本的完整等价 |
+| metabolic / energetic projection | 生物、神经或物理实现中的预算侧 / 负荷侧 proxy | 可限制 payability window，也可作为 overload / recovery 的经验读数 | 不得把任意能量消耗、代谢升高或压力指标等同于 `Ψ_f` |
+
+因此当前最稳妥读法是：**payability burden 是主判准；几何与代谢读法是条件投影**。几何投影可以在满足条件时给出下界式形式约束；代谢投影可以给出预算约束或观察侧负荷，但二者都不自动穷尽实际可支付负担。
+
+### Projection Failure Conditions
+
+若出现以下任一情况，应标记为 `projection failure`，而不是反向修改 `Ψ_f` 的主读：
+
+1. 几何路径距离主要来自参数化选择、坐标尺度或模型冗余，而不是实际重构负担。
+2. Fisher / 曲率结构可分辨，但对应方向不回流到闭包、身份连续性或后续选择能力。
+3. 代谢或能耗指标升高主要来自旁路活动、噪声、热损耗或测量负担，而不是维持现实切片的 payability burden。
+4. 主观痛苦、压力报告或行为停顿与实际承担负担脱钩，只反映报警读数、遮蔽或 L₂ 吸收。
+
 ---
 
 ## §4 引力关系的规范立场

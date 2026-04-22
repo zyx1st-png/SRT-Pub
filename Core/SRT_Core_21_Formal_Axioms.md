@@ -91,6 +91,8 @@ It changes the **epistemic rank** and citation behavior of mixed claims.
 - Do not cite bridge claims such as fitness beats truth, holographic duality, assembly thresholds, or ghost-operator universality as P0/P1.
 - Do not use `D_eff` as the canonical definition of d-value. Use `_SRT_D_VALUE_CANONICAL.md`.
 - Do not use `Core_21c` empirical or bridge claims to override `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_T_DIR_CANONICAL.md`, or `Core_Law/SRT_L0_Metaphysics.md`.
+- Do not cite downstream bridge accounts of agency, biology, AI, spirituality, or society as if they solved P0-04 / the origin of selectability.
+- Do not treat governance-canonical usage stabilization as theory-canonical derivation unless the local file explicitly gives the stronger derivation level.
 
 ---
 
