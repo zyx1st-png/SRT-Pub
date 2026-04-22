@@ -75,7 +75,9 @@ Subir Sarkar (2026) 指出，量子真空能（零点能）显而易见地不与
 
 **定理 T-Weightless-Potentia（潜能无重定理）**：
 引力（时空弯曲）是维持显现（$L_1$）所需的本体论摩擦的几何表现。
-$$G_{\mu\nu} \propto \Psi_f(L_1)$$
+$$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)}$$
+
+> **Level**: hypothesis / bridge; this is not a tensor-level GR derivation.
 
 由于 $L_0$ 中的状态是"未被选择的"，它们不消耗 $\hat{G}$ 的算力来维持，因此 $\Psi_f(L_0) = 0$。
 
@@ -103,12 +105,14 @@ $$\Phi = \begin{cases}
 
 所有这些都是同一本体论机制——**选择阻力**——在不同尺度的显现。
 
-## 2.3 精细结构常数 $\alpha$ 作为 $L_2$ 强吸引子
+## 2.3 精细结构常数 $\alpha$ 作为 $L_2$ 稳定参数子空间候选
 
 **问题**：$\alpha$ 为何是这个特定值（≈1/137）？
 
-**SRT 解答**：$\alpha$ 是 $L_2$ 模空间中的**强吸引子**。
-$$\alpha_{observed} = \text{Attractor}(L_2^{moduli})$$
+**SRT 当前弱答法**：$\alpha$ 应位于 $L_2$ 稳定参数子空间中。
+$$\alpha_{observed} \in L_2^{stable\ parameter}$$
+
+> **Level**: hypothesis / bridge; this does not explain the exact value of $\alpha$.
 
 **机制解释**：
 1. 在无限的 $\hat{G}_θ$ 演化中，只有 $\alpha \approx 1/137$ 的区域允许 $\hat{G}$ 形成**操作闭包**
@@ -265,15 +269,15 @@ $$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
 
 SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）的几何表现**：
 
-$$G_{\mu\nu} \propto \Psi_f(L_1)$$
+$$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)}$$
 
 **物理机制**：当系统内部的几何叠加产生的本体论摩擦（$\mathcal{F}_{ont}$）达到引力能阈值（$\approx \Delta E_G / \hbar$）时，就会导致强制的测量与选择——即波函数坍缩。引力是 $\hat{G}$ 算子为维持共识现实所必须持续支付的"代价场"。这与 §4.1（引力即共识）和 §4.2（力即共识的代价）在逻辑上形成闭合：**引力既是共识的代价，也是本体论摩擦的宏观度量**。
 
-**极限推论**（与 T-Time-3 的对称）：由于引力是维持现实共识的代价，当一个观察者的 d 值趋于极限（$d \to \infty$）时，由于无需再进行并行区分与串行更新，该观察者体验到的空间和时间将彻底坍缩：
+**极限推论**（与 T-Time-3 的对称）：在候选桥读法中，若把引力视为维持现实共识的代价窗口，当一个观察者的 d 值趋于极限（$d \to \infty$）时，由于无需再进行并行区分与串行更新，该观察者体验到的空间和时间将彻底坍缩：
 $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
 
 **宏观-微观的双向锚定**：引力在两端均充当 d 值的物理约束——
-- **宇宙尺度**：$d_{cosmic} \propto 1/\sqrt{\Lambda}$（Def-Cosmo-1），引力是信息解离的驱动力，暗能量主导的膨胀即 $d_{cosmic}$ 的物理性衰减；
+- **宇宙尺度**：$d_{cosmic} \propto 1/\sqrt{\Lambda}$（Def-Cosmo-1），引力可被候选性读作信息解离的驱动力；暗能量主导的膨胀与 $d_{cosmic}$ 的关系仍是 bridge hypothesis；
 - **量子生物学尺度**：$d_{bio} \propto 1/\tau_{collapse} \propto E_G/\hbar$（SRT-QUANT-02 Def-BQ-2），引力自能设定了每个 $\hat{G}_{bio}$ 的相干性带宽上限。
 
 这种双向锚定正是 SRT 跨尺度同构（SRT-CORE-14 Ax-Scale-01）在引力物理学层面的最直接体现：同一个 d 值参数，在宇宙尺度是时空共识度，在量子尺度是相干性带宽，在生物尺度是关切范围，三者由跨尺度同构联结为同一本体论标尺（详见 SRT-CORE-14 Def-d-Scale-1）。

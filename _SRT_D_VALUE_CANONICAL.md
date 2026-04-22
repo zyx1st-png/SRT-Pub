@@ -24,7 +24,7 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 |---------|------|------|
 | `_SRT_Core_Bridge.md §2.3` | 算子关切范围（三维度合成） | `d = αA + β log V + γτ` |
 | `AI/_SRT_AI_Bridge.md Ax-BRIDGE-4` | 生存风险梯度 | `d ≡ ‖∂U/∂S‖` |
-| `Spirituality/_SRT_Spirit_Axioms.md Ax-Spirit-3/4` | 关切边界半径 | d 作为"关切维度"的直觉概念 |
+| `Spirituality/_SRT_Spirit_Axioms.md H-Spirit-3/4` | 关切边界半径 | d 作为"关切维度"的直觉概念 |
 | `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.5` lineage） | 有效维度 proxy（特征值公式） | `D_eff(Ĝ) = (∑λᵢ)² / ∑λᵢ²` |
 
 **这些不是矛盾，而是同一概念在不同层级的投影**。本文件证明其等价性并给出使用规范。
@@ -49,6 +49,22 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 > - 讨论**赌注化活跃维数**时：引用 `Def-d-stakes`（见 §2b）
 > - 其他近似式（`Def-d-bio` 等）均为操作化投影，不替代 canonical 地位。
 
+### §1.1 v1 Canonical Form Note（治理性钉住，2026-04-22）
+
+> **层级**：governance / canonical usage rule；不新增 core theorem。
+
+默认写作中，bare `d` 采用**标量摘要形式**：它把 stake-coupled concern / irreversible-risk sensitivity 压缩成一个可跨文件回链的摘要量。这个默认不把 `d` 本体化为“只能是标量”，而是给全仓一个最小不漂移的读法。
+
+因此三种写法必须分开：
+
+| 写法 | 层级 | 用途 | 禁止 |
+|---|---|---|---|
+| `d` | canonical scalar summary | 默认跨域引用；关切/赌注强度的摘要 | 不得把局部 proxy 写成新定义 |
+| `d-vector` | operational projection | 展开条件分布、方向分量或域内特征谱 | 不得与 bare `d` 混写成同一个量 |
+| `d-gate` | governance / judgment tool | 判读某方向是否进入 stake-coupled spectrum | 不得当作 d 的数值定义 |
+
+若域内需要向量读或门读，必须显式标注为 `d-vector` 或 `d-gate`，并说明它如何回到 `Def-d-canonical`。未标注时，一律按标量摘要读。
+
 ## §2 规范定义（第一性原理，全域适用）
 
 ### Def-D_eff: 几何容量 Proxy（Geometric Capacity Proxy）
@@ -65,17 +81,17 @@ $$D_{eff}(\hat{G}) = \frac{\left(\sum_i \lambda_i\right)^2}{\sum_i \lambda_i^2} 
 
 **来源**：`Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `SRT_Core_21_Formal_Axioms.md §2.1.5` lineage），经典参与率指数（PR index）的算子版本。
 
-### Def-d-1a: Fisher 信道有效维度（信息论等价形式）⭐ FORMAL CANONICAL（信息论读法）
+### Def-d-1a: Fisher 信道有效维度（信息论容量 proxy）
 
-**新增（2026-03-11）**：Def-d-1 的等价信息论解释。
+**新增（2026-03-11；2026-04-22 降承诺）**：Def-d-1 的信息论容量解释。
 
-$$d \equiv D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
+$$D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)} \;\geq\; d_{canonical}$$
 
 其中 $I_F(\theta) = E\!\left[(\partial \log p_\theta / \partial \theta)^2\right]$ 是算子选择流形上的 **Fisher 信息矩阵**。
 
-**等价关系**：当 $\lambda_k$ 为 $\hat{G}$ 的奇异值时，Def-d-1 的参与率指数 = $I_F(\theta)$ 的特征值参与率（两者在选择流形 Hessian 与 Fisher 矩阵对应时完全等价）。
+**层级说明（2026-04-22 修订）**：这是信息论容量 proxy / operational projection，不是 `Def-d-canonical` 的同级替代表达。只有当 Fisher 方向全部与真实不可逆赌注耦合、且风险梯度与特征结构对齐时，才允许把它作为 `d` 的近似读数。
 
-**信息论语义**：$D_{eff}(I_F)$ 是算子从 $L_0$ 中能**可靠分辨**的状态方向数（Cramér-Rao 下界的维度版本）。Fisher 矩阵测量 $\theta$ 变化时相邻分布的可区分度——d-value 是"算子能看见多少个有意义的 $L_0$ 方向"。
+**信息论语义**：$D_{eff}(I_F)$ 是算子从 $L_0$ 中能**可靠分辨**的状态方向数（Cramér-Rao 下界的维度版本）。Fisher 矩阵测量 $\theta$ 变化时相邻分布的可区分度；它给出 d 的可计算容量上界，而不是自动给出 stake-coupled `d` 本身。
 
 **层级关系链（修订，2026-04-17）**：
 
@@ -281,7 +297,7 @@ d 值描述关切范围，不描述本体论存在。
 
 ### 误用 4：将精神传统中的"d → ∞"字面化
 
-**正确**：`Ax-Spirit-4` 中的 $d \to \infty$ 是**渐近方向**，类比热力学极限 $N \to \infty$ 在有限系统中的意义。
+**正确**：`H-Spirit-4` 中的 $d \to \infty$ 是**渐近方向**，类比热力学极限 $N \to \infty$ 在有限系统中的意义。
 没有任何有限系统能达到 $d = \infty$；这是精神成长的方向，而非可到达的终点。
 
 ---

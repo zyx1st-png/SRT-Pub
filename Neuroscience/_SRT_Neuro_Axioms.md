@@ -79,8 +79,11 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 * **Implication（中文）**：学习不是“记忆增加”，而是 \(\hat{G}_\theta\) 在 \(L_2\) 上的收敛轨迹。
 
-### Ax-NEURO-4b: Prediction-Error Friction Mapping（新增）
-定义局部预测误差与本体论摩擦密度的映射：
+### H-NEURO-4b: Prediction-Error Friction Mapping（新增）
+
+> **Level**: hypothesis / operational proxy (P3/P4). This bridge belongs to the P3 candidate layer; any downstream conclusion that relies on it must not be promoted to P2 theorem status without an independent derivation or measurement path.
+
+定义局部预测误差与本体论摩擦密度的候选映射：
 \[
 \Psi_f^{local}(t)=\alpha_{pe}\,\|\varepsilon_{pred}(t)\|+\beta_{load}\,\mathcal{L}_{model}(t)
 \]
@@ -90,7 +93,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 * **R/H 区分**：
   - [R] 预测误差框架（Friston/Rao & Ballard）；多巴胺RPE（Schultz）——均为既有神经科学
-  - [H] **SRT核心联结**：Ψ_f^local = α_pe·||ε_pred|| + β_load·L_model——将PE与本体论摩擦密度等同/线性映射是SRT独有的双层桥接主张。此主张将计算层（PE）与本体论层（Ψ_f）等同，属于SRT的形而上学-神经科学接口核心
+  - [H] **SRT候选联结**：Ψ_f^local = α_pe·||ε_pred|| + β_load·L_model——将 PE 与本体论摩擦密度作局部线性 proxy 是 SRT 独有的双层桥接主张。此处不把计算层（PE）与本体论层（Ψ_f）写成同一对象，只把它们作为可测窗口中的候选接口
 
 * **L_model操作化**（模型不一致负荷）：
   - 贝叶斯模型复杂度代理：模型的有效自由度（EDF）或Bayes因子中的惩罚项
@@ -145,6 +148,16 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \Phi\cdot d > C_{critical}
 \]
 * **Implication（中文）**：整合信息量与存在关切的乘积才是意识阈值；任一缺失都不足以形成 \(L_1\) 稳定显现。
+
+> **Level reminder**: The multiplicative threshold is a structural preference and modeling hypothesis, not a proven phase-transition property.
+
+| Gate form | Level | Current use | Failure / revision condition |
+|-----------|-------|-------------|------------------------------|
+| Multiplicative gate: `\Phi_{proxy}\cdot d_{proxy} > C` | hypothesis / structural preference | Keeps integration and concern-gradient jointly necessary. | If either factor can compensate for the other in data, the product form must be weakened. |
+| Additive gate: `w_\Phi\Phi_{proxy}+w_d d_{proxy}>C` | operational proxy | Allowed when empirical compensation between integration and `d` is observed. | If additive fit hides distinct failure modes, return to separated gates. |
+| Probabilistic gate: `P(ignite)=\sigma(\alpha\Phi+\beta d+\gamma\Phi d-\delta)` | operational proxy | Lab-facing model for noisy or graded ignition reports. | If ignition is not separable from report/confidence effects, do not treat it as ontology. |
+
+The threshold / phase-transition reading remains a modeling hypothesis; downstream uses must state which gate they assume.
 
 ---
 
@@ -323,13 +336,13 @@ SRT 的核心论证: **困难问题源于 $L_2$ 寄生倒置**——当我们将
 - **神经幽灵算子 (Neural Ghost Operator, L₀→L₁)**：$\hat{G}_\theta^{neural}: L_0^{neural}\to L_1^{neural}$，具身参数 $\theta=(W,\vec{M},\mathcal{C},V(t))$；神经系统是跨域选择的物理实例化。
 - **三域映射 (Domain Mapping, L₀/L₁/L₂)**：$L_0$ = 所有可达发放模式流形；$L_1$ = 全局点燃子集；$L_2$ = 算子不动点（先验结构）。
 - **本体论摩擦 (Ontological Friction, L₀)**：$\Psi_f=\int_\gamma \|\nabla F\| dt \propto E_{metabolic}$；选择必须支付的能量代价。
-- **意识阈值 (Consciousness Threshold, L₁)**：$\Phi\cdot d > C_{critical}$；整合信息与关切梯度的乘积超过临界值方有稳定显现。
+- **意识阈值 (Consciousness Threshold, L₁)**：$\Phi\cdot d > C_{critical}$；乘法门当前只是结构性偏好，阈值 / 相变读法仍为建模假说。
 
 ### Formalization Summary (形式化概述)
 
 - **除法归一化** (Ax-NEURO-3)：$R_i = L_i^n / (\sigma^n + \sum_j w_{ij}L_j^n)$。受限系统执行选择的最优解形态，非经验细节。
 - **预测编码** (Ax-NEURO-4)：$\Delta\theta \propto -\nabla_\theta F$。学习是 $\hat{G}_\theta$ 在 $L_2$ 上的收敛轨迹。
-- **预测误差-摩擦映射** (Ax-NEURO-4b)：$\Psi_f^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal{L}_{model}(t)$。预测误差是 $\hat{G}_\theta$ 维持当前显现时的局部摩擦项。
+- **预测误差-摩擦映射** (H-NEURO-4b)：$\Psi_f^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal{L}_{model}(t)$。预测误差是 $\hat{G}_\theta$ 维持当前显现时的候选局部摩擦 proxy。
 
 ### Mechanism Explanation (机制解释)
 

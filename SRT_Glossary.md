@@ -170,7 +170,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 ### Prediction-Error Friction Mapping（预测误差-摩擦映射）
 - **Canonical Scope**：将预测误差 \(\varepsilon_{pred}\) 作为局部 \(\Psi_f\) 密度的操作化代理。
 - **Confusable With**：把 \(\Psi_f\) 简化成单一统计残差、否认本体支付项。
-- **Lineage/Source**：`Neuroscience/_SRT_Neuro_Axioms.md` Ax-NEURO-4b（2026-03-04 新增）。
+- **Lineage/Source**：`Neuroscience/_SRT_Neuro_Axioms.md` H-NEURO-4b（2026-03-04 新增；2026-04-22 降级为 hypothesis / operational proxy）。
 
 ### Cross-Scale Conceptual Misalignment（跨尺度概念错位）
 - **Canonical Scope**：用于描述把某一 \((d,\rho)\) 条件下收敛的概念强行外推到异尺度切片时产生的范畴冲突。

@@ -34,20 +34,24 @@ When the same concept appears in multiple files, use this order:
 
 1. `CANONICAL_REGISTRY.md`
 2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Core_Law/SRT_L0_Metaphysics.md`
-4. `Core/SRT_Core_21_Minimal_Axioms.md`
-5. `Core/SRT_Core_21b_Constitutive_Theorems.md`
-6. `_SRT_D_VALUE_CANONICAL.md`
-7. `_SRT_PSI_F_CANONICAL.md`
-8. `_SRT_T_DIR_CANONICAL.md`
-9. `Core/SRT_Core_22_Equations.md`
-10. `_SRT_SYMBOL_TABLE.md`
-11. `Core/SRT_Core_21_Formal_Axioms.md`
-12. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+3. `Governance/SRT_CLAIM_MODE_AUDIT.md`
+4. `Core_Law/SRT_L0_Metaphysics.md`
+5. `Core/SRT_Core_21_Minimal_Axioms.md`
+6. `Core/SRT_Core_21b_Constitutive_Theorems.md`
+7. `_SRT_D_VALUE_CANONICAL.md`
+8. `_SRT_PSI_F_CANONICAL.md`
+9. `_SRT_T_DIR_CANONICAL.md`
+10. `_SRT_CROSS_DOMAIN_MATRIX.md`
+11. `Core/SRT_Core_22_Equations.md`
+12. `_SRT_SYMBOL_TABLE.md`
+13. `Core/SRT_Core_21_Formal_Axioms.md`
+14. `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 
 Use `Core/SRT_Core_21_Formal_Axioms.md` as a Core_21 routing index and legacy-numbering map, not as the first definition source.
 
 Use `Core/SRT_OPEN_TENSIONS.md` when a concept is known to be not fully sealed.
+
+Use `_SRT_CROSS_DOMAIN_MATRIX.md` when a core term moves across Physics, Neuroscience, Philosophy, Spirituality, AI, or governance contexts.
 
 ---
 

@@ -66,6 +66,8 @@ T(d)=
 \text{Shoshin}=\cos\angle(\vec v_{self},-\nabla F_{global})
 \]
 
+> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface for alignment, not a canonical definition of Shoshin or global direction.
+
 最短说法：
 > **初心不是抽象美德，而是你当前行动方向与更深层最优方向之间的夹角。**
 
@@ -149,6 +151,8 @@ SRT 这篇一个很重要的实践洞见是：
 
 > **修行的关键不是追求特殊体验，而是用可持续的小循环逐步重写 `\theta`、`L_2` 与行动路径。**
 
+> **Level**: governance / praxis guardrail. Practice is not linear "more is better." It should stop, reduce, or re-scope when cost becomes unpayable, care narrows, agency is absorbed by practice identity, or ordinary consequence-bearing is being bypassed.
+
 所以：
 - 30 天阶段：先建立基线与最小可行习惯
 - 3–6 个月：增加时长，拓展技术，尝试闭关
@@ -175,3 +179,21 @@ SRT 这篇一个很重要的实践洞见是：
 - 拆分导航：`Praxis_Split/README.md`
 - Spirituality bridge：`_SRT_Spirit_Axioms.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则本域主张会被显著削弱：
+
+1. `d` expansion cannot be independently observed.
+   - 当前承受方式：spiritual `d` requires at least one external indicator; pure report is only subjective provisional `d`.
+   - 若成立需撤回什么：撤回 practice-as-`d` expansion claims and keep them as first-person reports.
+
+2. Shoshin cosine geometry fails to track real practice direction.
+   - 当前承受方式：the cosine form is marked `geometric-choice-pending`.
+   - 若成立需撤回什么：撤回 the geometric interface and retain Shoshin only as a praxis description.
+
+3. Practice increases identity capture while feeling like progress.
+   - 当前承受方式：the stop rule checks payable cost, care breadth, agency, and ordinary responsibility.
+   - 若成立需撤回什么：撤回 linear-progress readings and treat the path as potentially self-reinforcing closure.

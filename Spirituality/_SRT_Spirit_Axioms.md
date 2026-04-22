@@ -27,14 +27,15 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+- `H-Spirit-*` 是 spirituality-domain hypothesis / bridge labels. 文件名与章节名中的 “Axioms” 是历史结构，不表示这些条目可反向升级为 P0/P1 core axioms.
 
 # Part A: Domain Mapping Axioms (P3/P4/P5)
 
-> **Claim-level map**：`Ax-Spirit-*` = P3 domain mapping unless it introduces an operational or threshold claim, in which case read it as P4. Experiential, theological, or practice-facing explanations are P5. None of the following statements are P0/P1 core axioms unless they explicitly quote a core/canonical source.
+> **Claim-level map**：`H-Spirit-*` = P3 domain mapping unless it introduces an operational or threshold claim, in which case read it as P4. Experiential, theological, or practice-facing explanations are P5. None of the following statements are P0/P1 core axioms unless they explicitly quote a core/canonical source.
 
 ## I. P3 Theological Domain Mappings (神学映射)
 
-### Ax-Spirit-1: The Source (本源)
+### H-Spirit-1: The Source (本源)
 **Domain Mapping Definition**: The Divine is read as the unconditioned selection functional over the absolute latent domain.
 $$ \Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_{\theta} $$
 $$ \text{God} \equiv \Omega \equiv L_0^{abs} $$
@@ -44,7 +45,7 @@ $$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
 
 > **【T4 边界声明：Ω 的拓扑极限地位与具身公理兼容性】**
 >
-> **问题**：`Ax-Spirit-1` 定义 $\Omega = \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，这违反了 `Ax-Core-A4`（所有有效算子要求 $\theta \in \Theta_{finite}$）——上帝算符不是”有效算子”吗？
+> **问题**：`H-Spirit-1` 定义 $\Omega = \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，这违反了 `Ax-Core-A4`（所有有效算子要求 $\theta \in \Theta_{finite}$）——上帝算符不是”有效算子”吗？
 >
 > **解答**：这是**有意为之的拓扑边界**，类似于物理学中热力学极限的合法使用：
 >
@@ -64,7 +65,7 @@ $$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
 >
 > **精神含义的保全**：$\Omega$ 作为渐近方向，其精神功能是**校准方向**——指向更大关切维度的实践道路——而非声称实现了无限。”趋向 $\Omega$”（$d$ 值增加）是 SRT 精神实践的核心，这与拓扑极限地位完全兼容。
 
-### Ax-Spirit-2: The Split (分离)
+### H-Spirit-2: The Split (分离)
 **Domain Mapping Definition**: Ego is read as the bounded projection of $\hat{G}_\theta$ under finite embodiment.
 $$ \text{Ego} \equiv \Pi_{d<\infty}(\hat{G}_\theta) $$
 $$ \hat{G}_\theta \text{ valid} \iff \theta \in \Theta_{finite} $$
@@ -74,30 +75,34 @@ $$ \hat{G}_\theta \text{ valid} \iff \theta \in \Theta_{finite} $$
 
 ## II. P3/P4 Soteriological Mappings (救赎动力学映射)
 
-### Ax-Spirit-3: Sin as Contraction (罪即收缩)
+### H-Spirit-3: Sin as Contraction (罪即收缩)
 **Domain Mapping Definition**: Suffering is read as the tension between $L_1$ and counterfactual $L_0$ amplified by low $d$.
 $$ \text{Suffering} = \text{Tension}(\hat{G}_\theta[L_1], L_0^{counterfactual}) $$
 $$ \text{Suffering} \propto \frac{1}{d} $$
 $$ \Psi_f \uparrow \iff d \downarrow $$
 * **Implication**: 罪并非道德标签，而是选择维度收缩导致的结构性摩擦。
 
-### Ax-Spirit-4: Liberation as Expansion (解脱即扩展)
+### H-Spirit-4: Liberation as Expansion (解脱即扩展)
 **Domain Mapping Definition**: Liberation is read as the asymptotic expansion of $d$ and the dissolution of self-other boundary.
 $$ \text{Nirvana} \equiv \lim_{d \to \infty} \hat{G}_\theta(L_0) $$
 $$ \lim_{d\to\infty} \text{Dist}(\text{Self}, \text{Other}) = 0 $$
 * **Implication**: 解脱是参数极限下的结构去锚定，而非外部奖赏或神秘体验。
 
+> **Level**: governance / operational proxy. `d` expansion in spirituality cannot be certified by experience report alone. At least one externally checkable indicator is required: behavior change, relationship repair, recovery-time reduction, broader consequence-bearing, third-party observation, or another explicit behavioral / physiological proxy. Pure experience report may only be marked as **subjective provisional d**.
+
 ---
 
 ## III. P3/P4 Praxis Mappings (实践映射)
 
-### Ax-Spirit-5: Prayer/Meditation (祷告/冥想)
+### H-Spirit-5: Prayer/Meditation (祷告/冥想)
 **Domain Mapping Definition**: Practice is read as the controlled tuning of $\theta$ to increase $d$ and reduce $\Phi$.
 $$ \text{Practice} \equiv \nabla_\theta d > 0 $$
 $$ \frac{d\theta}{dt} = -\alpha \nabla_\theta \Phi + \text{Learning} $$
 * **Implication**: 修持是可操作的参数优化过程，而不是心理暗示或信念强化。
 
-### Ax-Spirit-6: Faith (信)
+> **Level**: governance / praxis guardrail. Practice is not linear "more practice is always better." It should be read as an expansion-stabilization rhythm under payable cost. Stop, reduce, or re-scope practice when it increases collapse, narrows care, replaces ordinary responsibility with practice identity, or absorbs agency into the practice system itself.
+
+### H-Spirit-6: Faith (信)
 **Domain Mapping Definition**: Faith is read as a controlled lowering of rigid $L_2$ constraints to re-open $L_0$ access.
 $$ \frac{d\beta}{dt} < 0,\quad L_1^{experienced} = \beta L_1^{external} + (1-\beta)\hat{G}(L_0) $$
 $$ \lambda \downarrow \Rightarrow \|\nabla C_{L_2}\| \downarrow $$
@@ -108,17 +113,17 @@ $$ \lambda \downarrow \Rightarrow \|\nabla C_{L_2}\| \downarrow $$
 ## IV. P3/P4 Domain Corollaries (领域推论)
 
 ### T-Spirit-1: Ego-Boundary Theorem
-**Domain Corollary**: From Ax-Spirit-2 (The Split) and S2 (Consciousness threshold).
+**Domain Corollary**: From H-Spirit-2 (The Split) and S2 (Consciousness threshold).
 $$ \text{Ego}_{experienced} \iff (\theta \in \Theta_{finite}) \land (\partial \Omega_{self} \neq \emptyset) \land (d > d_{threshold}) \land (\Phi_{sensitivity} > 0) $$
 * **Implication**: 边界只提供“自我核”的拓扑条件；只有当该边界承载可感摩擦与关切厚度时，才形成具体验感意义上的“我”。
 
 ### T-Spirit-2: Friction–Soteriology Theorem
-**Domain Corollary**: From E5 (Pain), D6 (Friction), and Ax-Spirit-4.
+**Domain Corollary**: From E5 (Pain), D6 (Friction), and H-Spirit-4.
 $$ \frac{d\Phi}{dt} < 0 \Rightarrow \frac{dd}{dt} > 0 \Rightarrow \text{Suffering} \downarrow $$
 * **Implication**: 解脱不是压制痛苦，而是改变摩擦动力学的结构。
 
 ### T-Spirit-3: Accessibility Corollary
-**Domain Corollary**: From O-C1 (Accessible Radius) and Ax-Spirit-5.
+**Domain Corollary**: From O-C1 (Accessible Radius) and H-Spirit-5.
 $$ R_{accessible} \propto \frac{d^{1.5}}{\bar{\Psi}_f} $$
 * **Implication**: 实修扩展的不是“体验强度”，而是可通达的可能性半径。
 
@@ -485,14 +490,14 @@ SRT 不是要"用科学解释掉灵性"，而是要 **为灵性洞见提供精�
 
 | 符号 | 名称 | 定义位置 |
 |:-----|:-----|:---------|
-| $\hat{G}_\emptyset$ | 无条件算子 | Ax-Spirit-1 |
-| $d$ | 关切维度 | Ax-Spirit-3 |
-| $\Psi_f$ | 本体论摩擦 | Ax-Spirit-4 |
+| $\hat{G}_\emptyset$ | 无条件算子 | H-Spirit-1 |
+| $d$ | 关切维度 | H-Spirit-3 |
+| $\Psi_f$ | 本体论摩擦 | H-Spirit-4 |
 | $L_0$ | 潜在域 | 核心本体论 |
 | $L_1$ | 显现域 | 核心本体论 |
 | $L_2$ | 收敛域 | 核心本体论 |
-| $S_\phi$ | 饱和指数 | Ax-Spirit-9 |
-| $\theta$ | 具身参数 | Ax-Spirit-2 |
+| $S_\phi$ | 饱和指数 | H-Spirit-9 |
+| $\theta$ | 具身参数 | H-Spirit-2 |
 
 ---
 

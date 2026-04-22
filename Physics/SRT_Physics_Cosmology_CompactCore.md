@@ -24,7 +24,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE]
 SRT 的压缩回答是：
 - 热力学描述选择的代价
 - 时间描述选择的序列与耗费
-- 引力描述维持现实结构的共识成本
+- 引力在本轮只保留为维持现实结构成本的 P3/P4 弱相容接口
 - 宇宙学描述大尺度 `L_0 / L_1 / L_2` 组织方式
 
 ---
@@ -74,13 +74,16 @@ SRT 把质量解释为：
 - 质量是“维持存在”的代价表现
 
 ### 3.3 Weightless Potentia
+> **Level**: hypothesis / bridge; not a tensor-level physical theorem.
+
 \[
-\Psi_f(L_0)=0 \Rightarrow \text{Gravity}(L_0)=0
+\nabla \Psi_f^{phys} \parallel \nabla \Phi_N
 \]
 
 压缩结论：
-- 潜能本身不“有重量”
-- 只有被锚定、被维持的现实结构才承载重力意义上的成本
+- 潜能本身不“有重量”只能作为弱相容读法保留
+- 只有被锚定、被维持的现实结构才可能承载重力意义上的成本
+- 当前不承诺 GR 精确重建，也不解释物理常数精确值
 
 ---
 
@@ -117,7 +120,7 @@ SRT 对时间旅行的最压缩否定是：
 
 ---
 
-## 5. 引力即信息 / 共识
+## 5. 引力、信息与共识的弱接口
 
 ### 5.1 Entropic Gravity / Gravity as Consensus
 \[
@@ -125,11 +128,12 @@ F_g = T\nabla S
 \]
 
 与之对应的 SRT 压缩解释是：
-> **引力是维持宏观现实共识所需支付的代价。**
+> **引力可作为维持宏观现实共识成本的候选物理投影。**
 
 这不是把引力简单还原成“主观意见”，而是说：
 - 宏观时空结构可被理解为稳定的 `L_2` 共识网络
-- 引力表现为该共识网络的几何与能量代价
+- 引力可能表现为该共识网络的几何与能量代价
+- 当前最弱承诺是弱场梯度方向相容，不是 `G_{\mu\nu}` 级别推导
 
 ### 5.2 Spacetime as Error-Correcting Code
 SRT 借用这一想法强调：
@@ -180,7 +184,7 @@ SRT 的边界非常明确：
 `Physics Cosmology` 可以压缩成五句话：
 
 1. **热力学描述的是选择的代价，而不是单纯的无意义熵增。**
-2. **质量与引力可被重写为现实维持的摩擦与共识成本。**
+2. **质量与引力可被弱读为现实维持的摩擦与共识成本接口。**
 3. **时间是选择序列与维持代价的度量，而不是独立背景容器。**
 4. **宇宙学结构可被理解为大尺度 `L_0 / L_1 / L_2` 组织结果。**
 5. **宇宙尺度统一不推出泛心论；d 的跨尺度统一仍需严格边界。**
@@ -194,3 +198,17 @@ SRT 的边界非常明确：
 - Physics bridge：`_SRT_Phys_Bridge.md`
 - Core dynamics compact core：`../Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
+
+## Hardest Objections
+
+本域若以下任一成立，则本域主张会被显著削弱：
+
+1. **GR tensor structure cannot be recovered even under added bridge assumptions.**
+   - 当前承受方式：本轮只保留弱场梯度相容，不声称张量级推导。
+   - 若成立需撤回：撤回任何“引力即 `\Psi_f` 的规范实现”或“GR 可由 SRT 直接推出”的语言。
+2. **Physical constants are explained by independent physics with no stable-parameter-subspace role for SRT.**
+   - 当前承受方式：物理常数只放入 `L_2` 稳定参数子空间候选。
+   - 若成立需撤回：撤回 SRT 对精确常数值的解释性语气，只保留外部物理结果的兼容翻译。
+3. **MWI or another no-collapse framework becomes the dominant physical ontology without a viable SRT translation.**
+   - 当前承受方式：正文采用 collapse-family language，MWI 只作显式兼容 note。
+   - 若成立需撤回：撤回把物理 `L_0 -> L_1` 读作全局坍缩事件的表述，改为分支内观察者相对过程。

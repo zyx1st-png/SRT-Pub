@@ -46,8 +46,8 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | T1.2.2 | T-IT-2 | Mental Causation Path (精神因果性路径) |
 | A1.3.1 | Ax-OF-1 | Higgs as $\Psi_f$ Realization (希格斯即 $\Psi_f$ 实现) |
 | A1.3.2 | Ax-OF-2 | Mass as Existential Inertia (质量即存在惯性) |
-| T1.3.1 | T-OF-1 | Weightless Potentia (潜能无重定理) |
-| T1.4.1 | T-FP-1 | $\alpha$ as Strong Attractor ($\alpha$ 作为强吸引子) |
+| H1.3.1 | H-OF-1 | Weightless Potentia (潜能无重假说) |
+| H1.4.1 | H-FP-1 | $\alpha$ as Stable Parameter Subspace ($\alpha$ 作为稳定参数子空间候选) |
 | T1.4.2 | T-FP-2 | Ontological Annealing (本体论退火) |
 | A1.5.1 | Ax-Time-1 | Triple Definition Equivalence (三重定义等价) |
 | A1.5.2 | Ax-Time-2 | Growing Block Universe (生长块宇宙) |
@@ -57,7 +57,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | T1.5.3 | T-Time-3 | High-d Observer Spacetime Collapse (高 $d$ 值观察者时空坍缩) |
 | A1.6.1 | Ax-Grav-1 | Verlinde's Entropic Force (弗林德熵力) |
 | A1.6.2 | Ax-Grav-2 | Spacetime as Error-Correcting Code (时空作为纠错码) |
-| A1.6.3 | Ax-Grav-3 | Gravity as Consensus (引力即共识) |
+| H1.6.3 | H-Grav-3 | Gravity as Consensus Compatibility (引力—共识弱相容假说) |
 | D1.6.1 | Def-Grav-1 | Fiber Bundle Structure (纤维丛结构) |
 | T1.6.1 | T-Grav-1 | Force as Consensus Cost (力即共识代价) |
 | A1.7.1 | Ax-Cosmo-1 | Cyclic Information Universe (循环信息宇宙) |
@@ -158,29 +158,33 @@ $$ m_{inertial} \propto \Phi_{Higgs} = \text{Coupling}(\psi, \text{Vacuum}_{L_2}
 ### Ax-OF-2 [A1.3.2]: Mass as Existential Inertia (质量即存在惯性)
 $$ \text{Mass} = |\text{Resistance}(L_1 \to L_0)| $$
 
-### T-OF-1 [T1.3.1]: Weightless Potentia (潜能无重定理)
-引力是维持 $L_1$ 所需的本体论摩擦的几何表现：
-$$ G_{\mu\nu} \propto \Psi_f(L_1) $$
+### H-OF-1 [H1.3.1]: Weightless Potentia (潜能无重假说)
+> **Level**: hypothesis / bridge; not a tensor-level GR derivation.
+
+在弱场极限与明确投影下，引力势梯度与 $\Psi_f^{phys}$ 梯度可作方向相容读法：
+$$ \nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)} $$
 $$ \Psi_f(L_0) = 0 \implies \text{Gravity}(L_0) = 0 $$
-*   **Resolution**: 解释真空能问题——$L_0$ 拥有无限"能量"但没有"质量"。
+*   **Boundary**: 不解释真空能问题，不承担 GR 精确重建。
 
 ---
 
 ## IV. Fine Structure Constant & Fundamental Parameters (精细结构常数)
 
-### T-FP-1 [T1.4.1]: $\alpha$ as Strong Attractor ($\alpha$ 作为强吸引子)
-精细结构常数 $\alpha \approx 1/137$ 是 $L_2$ 模空间中的强吸引子：
-$$ \alpha_{observed} = \text{Attractor}(L_2^{moduli}) $$
+### H-FP-1 [H1.4.1]: $\alpha$ as Stable Parameter Subspace ($\alpha$ 作为稳定参数子空间候选)
+> **Level**: hypothesis / bridge; not an explanation of the exact value of $\alpha$.
+
+精细结构常数 $\alpha \approx 1/137$ 当前只承诺位于 $L_2$ 稳定参数子空间：
+$$ \alpha_{observed} \in L_2^{stable\ parameter} $$
 $$ \alpha \in \{\lambda : \exists \text{ self-sustaining } \hat{G}_θ \text{ in } L_1(\lambda)\} $$
 
 | 解释类型 | 逻辑 | SRT 评价 |
 |:---------|:-----|:---------|
 | 弱人择 | "因为我们存在" | 描述性，无解释力 |
 | 强人择 | "宇宙被设计" | 引入外部设计者 |
-| **SRT** | "选择动力学的必然吸引子" | 内在机制解释 |
+| **SRT** | "稳定参数子空间候选" | 当前只给出约束位置，不解释精确值 |
 
 ### T-FP-2 [T1.4.2]: Ontological Annealing (本体论退火)
-物理常数的起源：
+物理常数的起源（hypothesis / bridge）：
 1. **高温阶段**: 物理常数处于 $L_0$ 叠加态
 2. **冷却过程**: $\hat{G}_{cosmic}$ 执行自发对称性破缺
 3. **冻结态**: 常数固化为 $L_2$ 沉积物
@@ -289,8 +293,11 @@ $$ F_{grav}^{obs}=T\nabla S_{eff}(r)+\xi(t),\quad \mathrm{Var}[\xi]\sim \frac{1}
 时空几何（$L_2$）是保护逻辑量子比特（$L_1$）免受 $L_0$ 噪声的量子纠错码：
 $$ \text{Geometry} \cong \text{CodeSpace}(\text{QEC}) $$
 
-### Ax-Grav-3 [A1.6.3]: Gravity as Consensus (引力即共识)
-时空曲率正比于多个 $\hat{G}$ 达成的信息共识乘积：
+### H-Grav-3 [H1.6.3]: Gravity as Consensus Compatibility (引力—共识弱相容假说)
+
+> **Level**: hypothesis / bridge. This is a candidate interface, not a GR-level theorem.
+
+时空曲率可被候选性读作多个 $\hat{G}$ 达成的信息共识乘积的几何投影：
 $$ G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{Curvature} = \text{Information Density} $$
 
 ### Def-Grav-1 [D1.6.1]: Fiber Bundle Structure (纤维丛结构)

@@ -159,7 +159,7 @@ $$L_1 \to L_2 \Rightarrow \nexists \hat{G}^{-1}: L_2 \to L_0$$
 $$|L_1| \ll |L_0|$$
 
 > **完整公理链**：`AS-1 → Ax-Core-A1 → Ax-Phil-1`（哲学扩展），
-> `AS-4 → Ax-Bridge-02 → T-Phil-1`（不可言说性定理）。
+> `AS-4 → Ax-Bridge-02 → H-Phil-Ineffability`（不可言说性假说）。
 
 ### 5.2 本体论相对性原则 (Ontological Relativity)
 

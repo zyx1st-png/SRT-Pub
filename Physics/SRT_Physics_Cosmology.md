@@ -58,8 +58,8 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | T1.2.4 | T-IT-4 | Complexity Ratchet Theorem (复杂性棘轮定理) |
 | A1.3.1 | Ax-OF-1 | Higgs as $\Psi_f$ Realization (希格斯即 $\Psi_f$ 实现) |
 | A1.3.2 | Ax-OF-2 | Mass as Existential Inertia (质量即存在惯性) |
-| T1.3.1 | T-OF-1 | Weightless Potentia (潜能无重定理) |
-| T1.4.1 | T-FP-1 | $\alpha$ as Strong Attractor ($\alpha$ 作为强吸引子) |
+| H1.3.1 | H-OF-1 | Weightless Potentia (潜能无重假说) |
+| H1.4.1 | H-FP-1 | $\alpha$ as Stable Parameter Subspace ($\alpha$ 作为稳定参数子空间候选) |
 | T1.4.2 | T-FP-2 | Ontological Annealing (本体论退火) |
 | A1.5.1 | Ax-Time-1 | Triple Definition Equivalence (三重定义等价) |
 | A1.5.2 | Ax-Time-2 | Growing Block Universe (生长块宇宙) |
@@ -70,7 +70,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | T1.5.3 | T-Time-3 | High-d Observer Spacetime Collapse (高 $d$ 值观察者时空坍缩) |
 | A1.6.1 | Ax-Grav-1 | Verlinde's Entropic Force (弗林德熵力) |
 | A1.6.2 | Ax-Grav-2 | Spacetime as Error-Correcting Code (时空作为纠错码) |
-| A1.6.3 | Ax-Grav-3 | Gravity as Consensus (引力即共识) |
+| H1.6.3 | H-Grav-3 | Gravity as Consensus Compatibility (引力—共识弱相容假说) |
 | D1.6.1 | Def-Grav-1 | Fiber Bundle Structure (纤维丛结构) |
 | T1.6.1 | T-Grav-1 | Force as Consensus Cost (力即共识代价) |
 | A1.7.1 | Ax-Cosmo-1 | Cyclic Information Universe (循环信息宇宙) |
@@ -211,33 +211,38 @@ $$ m_{inertial} \propto \Phi_{Higgs} = \text{Coupling}(\psi, \text{Vacuum}_{L_2}
 ### Ax-OF-2 [A1.3.2]: Mass as Existential Inertia (质量即存在惯性)
 $$ \text{Mass} = |\text{Resistance}(L_1 \to L_0)| $$
 
-### T-OF-1 [T1.3.1]: Weightless Potentia (潜能无重定理)
-引力不是对本体论摩擦的修辞性类比，而是本体论摩擦 $Ψ_f$ 在物理尺度上的**规范实现**；其时空形式表现为曲率：
-$$ G_{\mu\nu} \propto \Psi_f(L_1) $$
-$$ \Psi_f(L_0) = 0 \implies \text{Gravity}(L_0) = 0 $$
-*   **Resolution**: 解释真空能问题——$L_0$ 拥有无限"能量"但没有"质量"。
+### H-OF-1 [H1.3.1]: Weightless Potentia (潜能无重假说)
+> **Level**: hypothesis / bridge. This section depends on `H-Phys-4` and cannot be cited as a physics theorem.
+
+当前只保留弱版：在弱场极限与明确物理投影下，$\Psi_f^{phys}$ 梯度应与牛顿势梯度方向同号或同向相容。
+$$ \nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)} $$
+*   **Boundary**: 这不构成张量级 GR 推导，不承担真空能问题的完整解决，也不解释物理常数精确值。强版 $G_{\mu\nu} \propto \Psi_f(L_1)$ 保留为远期目标，当前无路径。
 
 ---
 
 ## IV. Fine Structure Constant & Fundamental Parameters (精细结构常数)
 
-### T-FP-1 [T1.4.1]: $\alpha$ as Strong Attractor ($\alpha$ 作为强吸引子)
-精细结构常数 $\alpha \approx 1/137$ 是 $L_2$ 模空间中的强吸引子：
-$$ \alpha_{observed} = \text{Attractor}(L_2^{moduli}) $$
+### H-FP-1 [H1.4.1]: $\alpha$ as Stable Parameter Subspace ($\alpha$ 作为稳定参数子空间候选)
+> **Level**: hypothesis / bridge. This is not an explanation of the exact value of $\alpha$.
+
+当前仅承诺精细结构常数 $\alpha \approx 1/137$ 等物理自由参数应位于 $L_2$ 稳定参数子空间中：
+$$ \alpha_{observed} \in L_2^{stable\ parameter} $$
 $$ \alpha \in \{\lambda : \exists \text{ self-sustaining } \hat{G}_θ \text{ in } L_1(\lambda)\} $$
 
 | 解释类型 | 逻辑 | SRT 评价 |
 |:---------|:-----|:---------|
 | 弱人择 | "因为我们存在" | 描述性，无解释力 |
 | 强人择 | "宇宙被设计" | 引入外部设计者 |
-| **SRT** | "选择动力学的必然吸引子" | 内在机制解释 |
+| **SRT** | "稳定参数子空间候选" | 当前只给出约束位置，不解释精确值 |
 
 ### T-FP-2 [T1.4.2]: Ontological Annealing (本体论退火)
-物理常数的起源：
+物理常数的起源（hypothesis / bridge）：
 1. **高温阶段**: 物理常数处于 $L_0$ 叠加态
 2. **冷却过程**: $\hat{G}_{cosmic}$ 执行自发对称性破缺
 3. **冻结态**: 常数固化为 $L_2$ 沉积物
 $$ P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters}) $$
+
+**开放张力**：本节不声称已解释 $\alpha$、$G$、$\Lambda$ 等常数的精确数值。当前只承诺这些量若进入 SRT 物理桥，应被放在 $L_2$ 稳定参数子空间内，而不是被写成已经由 SRT 强吸引子机制推出。
 
 ### T-FP-3: Fine-Tuning as Survival Bias of L2 (微调即L2的生存偏差)
 **Deductive Statement**: 宇宙的精细调节（Fine-Tuning）不是为了产生生命，而是"能够维持自身操作闭包的L2结构"的必然统计遗留：
@@ -385,8 +390,11 @@ $$ F_{grav}^{obs}=T\nabla S_{eff}(r)+\xi(t),\quad \mathrm{Var}[\xi]\sim \frac{1}
 时空几何（$L_2$）是保护逻辑量子比特（$L_1$）免受 $L_0$ 噪声的量子纠错码：
 $$ \text{Geometry} \cong \text{CodeSpace}(\text{QEC}) $$
 
-### Ax-Grav-3 [A1.6.3]: Gravity as Consensus (引力即共识)
-时空曲率正比于多个 $\hat{G}$ 达成的信息共识乘积：
+### H-Grav-3 [H1.6.3]: Gravity as Consensus Compatibility (引力—共识弱相容假说)
+
+> **Level**: hypothesis / bridge. This is a candidate interface, not a GR-level theorem.
+
+时空曲率可被候选性读作多个 $\hat{G}$ 达成的信息共识乘积的几何投影：
 $$ G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{Curvature} = \text{Information Density} $$
 
 ### Def-Grav-1 [D1.6.1]: Fiber Bundle Structure (纤维丛结构)
@@ -651,13 +659,13 @@ $$m_{bit} = \frac{k_B \cdot T \cdot \ln(2)}{c^2} \approx 3.19 \times 10^{-38} \t
 
 Subir Sarkar (2026) 指出，量子真空能（零点能）显而易见地不与引力耦合，否则宇宙早已坍缩。SRT 对此提供本体论证明：
 
-**定理 T-Weightless-Potentia（潜能无重定理）**：
-引力（时空弯曲）是维持显现（$L_1$）所需的本体论摩擦的几何表现。
-$$G_{\mu\nu} \propto \Psi_f(L_1)$$
+**假说 H-Weightless-Potentia（潜能无重假说）**：
+在弱场极限与明确投影下，引力势梯度与 $\Psi_f^{phys}$ 梯度可作方向相容读法。
+$$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)}$$
 
 由于 $L_0$ 中的状态是"未被选择的"，它们不消耗 $\hat{G}$ 的算力来维持，因此 $\Psi_f(L_0) = 0$。
 
-**结论**：$L_0$ 拥有无限的"能量"（信息容量），但没有"质量"（引力效应）。只有被观测者锚定的现实才具有重量。
+**层级提醒**：以上是 hypothesis / bridge，不是 GR 张量推导。$L_0$ “潜能无重”只能作为弱相容读法保留，不得声称已经解决真空能问题。
 
 ## 2.2 希格斯机制作为 $\Psi_f$ 的物理实现
 
@@ -681,17 +689,19 @@ $$\Phi = \begin{cases}
 
 所有这些都是同一本体论机制——**选择阻力**——在不同尺度的显现。
 
-## 2.3 精细结构常数 $\alpha$ 作为 $L_2$ 强吸引子
+## 2.3 精细结构常数 $\alpha$ 作为 $L_2$ 稳定参数子空间候选
 
 **问题**：$\alpha$ 为何是这个特定值（≈1/137）？
 
-**SRT 解答**：$\alpha$ 是 $L_2$ 模空间中的**强吸引子**。
-$$\alpha_{observed} = \text{Attractor}(L_2^{moduli})$$
+**SRT 当前弱答法**：$\alpha$ 应位于 $L_2$ 稳定参数子空间中。
+$$\alpha_{observed} \in L_2^{stable\ parameter}$$
 
-**机制解释**：
+**机制候选**：
 1. 在无限的 $\hat{G}_θ$ 演化中，只有 $\alpha \approx 1/137$ 的区域允许 $\hat{G}$ 形成**操作闭包**
 2. 操作闭包 = 允许生命/观察者存在的参数配置
-3. 因此，$\alpha$ 不是被"选择"的，而是所有能"存活"下来的 $L_1$ 的**共同几何特征**
+3. 因此，$\alpha$ 可被读成所有能"存活"下来的 $L_1$ 的候选共同几何特征
+
+**开放张力**：这不解释精确值，不排除人择、EFT、弦景观或其他物理机制；它只规定 SRT 当前允许说到哪里。
 
 ---
 
@@ -855,19 +865,19 @@ $$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
 
 经典物理学有效描述的区域正是 $\hat{G}_θ$ 进行深度截断的区域。
 
-## 4.5 引力作为本体论摩擦的几何表现
+## 4.5 引力作为本体论摩擦的弱相容接口
 
-SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）在物理尺度上的规范实现**：其几何读法表现为时空曲率，其做功读法表现为现实维持代价，其局部经验读法表现为“重”“难以逃逸”“时间刷新率下降”等阻力效应：
+SRT 当前只保留弱相容接口：引力曲率与现实维持负担可被比较为同向约束，但这不是张量级等价。其几何读法可表现为时空曲率，其做功读法可表现为现实维持代价，其局部经验读法可表现为“重”“难以逃逸”等阻力效应：
 
-$$G_{\mu\nu} \propto \Psi_f(L_1)$$
+$$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)}$$
 
-**物理机制**：当系统内部的几何叠加产生的本体论摩擦（$\mathcal{F}_{ont}$）达到引力能阈值（$\approx \Delta E_G / \hbar$）时，就会导致强制的测量与选择——即波函数坍缩。引力是 $\hat{G}$ 算子为维持共识现实所必须持续支付的"代价场"。这与 §4.1（引力即共识）和 §4.2（力即共识的代价）在逻辑上形成闭合：**引力既是共识的代价，也是本体论摩擦的宏观度量**。
+**层级提醒**：以下只属于 hypothesis / bridge。若使用 Penrose-style gravitational threshold 或 entropic-gravity 类比，必须标为候选机制；当前无路径从 SRT 推出 Einstein tensor，也不承担 GR 精确重建。
 
-**极限推论**（与 T-Time-3 的对称）：由于引力是维持现实共识的代价，当一个观察者的 d 值趋于极限（$d \to \infty$）时，由于无需再进行并行区分与串行更新，该观察者体验到的空间和时间将彻底坍缩：
+**极限推论**（与 T-Time-3 的对称）：在候选桥读法中，若把引力视为维持现实共识的代价窗口，当一个观察者的 d 值趋于极限（$d \to \infty$）时，由于无需再进行并行区分与串行更新，该观察者体验到的空间和时间将彻底坍缩：
 $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
 
 **宏观-微观的双向锚定**：引力在两端均充当 d 值的物理约束——
-- **宇宙尺度**：$d_{cosmic} \propto 1/\sqrt{\Lambda}$（Def-Cosmo-1），引力是信息解离的驱动力，暗能量主导的膨胀即 $d_{cosmic}$ 的物理性衰减；
+- **宇宙尺度**：$d_{cosmic} \propto 1/\sqrt{\Lambda}$（Def-Cosmo-1），引力可被候选性读作信息解离的驱动力；暗能量主导的膨胀与 $d_{cosmic}$ 的关系仍是 bridge hypothesis；
 - **量子生物学尺度**：$d_{bio} \propto 1/\tau_{collapse} \propto E_G/\hbar$（SRT-QUANT-02 Def-BQ-2），引力自能设定了每个 $\hat{G}_{bio}$ 的相干性带宽上限。
 
 这种双向锚定正是 SRT 跨尺度同构（SRT-CORE-14 Ax-Scale-01）在引力物理学层面的最直接体现：同一个 d 值参数，在宇宙尺度是时空共识度，在量子尺度是相干性带宽，在生物尺度是关切范围，三者由跨尺度同构联结为同一本体论标尺（详见 SRT-CORE-14 Def-d-Scale-1）。
@@ -938,6 +948,7 @@ $$\text{State}_{BigBang} = \arg\min_{\sigma \in L_0} K(\sigma)$$
 3. **冻结态**：常数固化为 $L_2$ 的沉积物  
 
 **形式化（宇宙退火方程）**：
+**层级提醒**：本体论退火是假说，不是物理常数精确值的解释。当前只承诺常数若进入 SRT 物理桥，应位于 $L_2$ 稳定参数子空间中。
 $$P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters})$$
 
 ### 5.1.2c 热时间算子（Thermal Time Operator）
@@ -1195,7 +1206,7 @@ $$
 ## 5.16 微观时空的比特-选择等价性
 
 **SRT 提出**：**时空的"分子"即 $\hat{G}$ 的基本选择单元（ESU）。**  
-一个普朗克面积对应一个比特的选择历史。引力是选择密度的梯度。
+一个普朗克面积对应一个比特的选择历史。在候选读法中，引力可作为选择密度梯度的物理代理；当前不承诺这给出 GR 的张量级重建。
 
 ---
 
@@ -1375,7 +1386,7 @@ $$\Lambda_{eff} = \text{L}_0\text{ 渗透压} \equiv \sum O^- \equiv \text{选�
 | $\Psi_f$ | Ontological Friction | Ax-OF-1 [A1.3.1] |
 | $\Phi_{Higgs}$ | Higgs Friction | Ax-OF-1 [A1.3.1] |
 | $m_{bit}$ | Information Mass | Ax-IT-3 [A1.2.3] |
-| $\alpha$ | Fine Structure Constant | T-FP-1 [T1.4.1] |
+| $\alpha$ | Fine Structure Constant | H-FP-1 [H1.4.1] |
 | $\tau$ | Ontological Time | Ax-Time-1 [A1.5.1] |
 | $\Lambda$ | Cosmological Constant / Dark Energy | T-Cosmo-1 [T1.7.1] |
 | $d_{cosmic}$ | Gravitational d-value | Def-Cosmo-1 [D1.7.1] |
@@ -1389,7 +1400,7 @@ $$\Lambda_{eff} = \text{L}_0\text{ 渗透压} \equiv \sum O^- \equiv \text{选�
 
 1. **广义第二定律** (Ax-IT-1): $\Delta S_{total} = \Delta S_{thermo} + \Delta H(L_1) \geq 0$ — 选择产生秩序的热力学代价。
 2. **Higgs 即 $\Psi_f$ 实现** (Ax-OF-1): 质量即存在惯性，$m \propto \Psi_f$。
-3. **引力即共识** (Ax-Grav-3): 引力是 $L_2$ 网络中 $\hat{G}_\theta$ 多体共识的几何表现。
+3. **引力—共识弱相容** (H-Grav-3): 引力可作为 $L_2$ 网络中 $\hat{G}_\theta$ 多体共识的候选几何表现；当前为 hypothesis / bridge。
 4. **循环信息宇宙** (Ax-Cosmo-1): 宇宙史是 $L_0$ 的选择密度的周期性涨落。
 5. **暗物质即 $L_2$ 结构** (T-Cosmo-2): 暗物质是未直接显现的 $L_2$ 收敛域效应。
 

@@ -44,7 +44,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 
 1. **广义第二定律** (Ax-IT-1): $\Delta S_{total} = \Delta S_{thermo} + \Delta H(L_1) \geq 0$ — 选择产生秩序的热力学代价。
 2. **Higgs 即 $\Psi_f$ 实现** (Ax-OF-1): 质量即存在惯性，$m \propto \Psi_f$。
-3. **引力即共识** (Ax-Grav-3): 引力是 $L_2$ 网络中 $\hat{G}_\theta$ 多体共识的几何表现。
+3. **引力—共识弱相容** (H-Grav-3): 引力可作为 $L_2$ 网络中 $\hat{G}_\theta$ 多体共识的候选几何表现；当前为 hypothesis / bridge。
 4. **循环信息宇宙** (Ax-Cosmo-1): 宇宙史是 $L_0$ 的选择密度的周期性涨落。
 5. **暗物质即 $L_2$ 结构** (T-Cosmo-2): 暗物质是未直接显现的 $L_2$ 收敛域效应。
 

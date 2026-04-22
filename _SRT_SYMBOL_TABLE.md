@@ -20,8 +20,9 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 | **L₂** | `L_2` | Convergence Domain | Stable consensus constraints from repeated/overlapping selections. | Topological manifold | Core, universal |
 | **Ĝ** | `\hat{G}` | Ghost Operator | Selection operator mapping $L_0 \to L_1$. | Operator | Never use plain `G` for this |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
-| **d** | `d` | d-value (Depth of Care) | Recursive concern depth and counterfactual handling range. | Scalar ($0 \to \infty$) | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md` |
-| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md` |
+| **d** | `d` | d-value (Depth of Care) | Canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity; vector and gate readings require explicit marking. | Scalar summary by default; vector/gate are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`; do not mix scalar `d`, `d-vector`, and `d-gate` in one claim without notation |
+| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance main reading is information-theoretic/payability cost; geometry and metabolic readings are projections |
+| **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy for the readability of a system's own current selection direction. | Proxy / accessibility index | Canonical source `_SRT_T_DIR_CANONICAL.md`; not a completed ontological foundation and not semantic valence or confidence |
 | **Ω** | `\Omega` | Ontological Consistency | Internal coherence of an $L_1/L_2$ structure. | Probability (0-1) | Canonical `\Omega` in Core_Law context |
 | **Ω_mis** | `\Omega_{\text{mis}}` | Ontological Mismatch Index | Distance between inherited $\theta$ and current-environment optimal $\theta$. | Scalar | Legacy docs may call this `Ω` |
 | **ω_sub** | `\omega_{sub}` | Subjective Frequency | Refresh rate of selection cycles. | Hz | Neuro/phenomenology |
@@ -87,6 +88,9 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 4. Use `\Omega` for consistency and `\Omega_{\text{mis}}` for mismatch to avoid symbol collision.
 5. In AI / pure `L_2` contexts, prefer "`\Psi_f` is non-binding to the system" over the blunt shorthand `\Psi_f = 0`, unless you are explicitly discussing an idealized limit.
 6. When discussing classical objectivity, prefer `\Delta\Psi_f^{readout}\to 0` over "object-maintenance friction vanishes".
+7. **d usage split**：bare `d` means scalar summary by default. Use `d-vector` only for conditional distribution / component expansion, and use `d-gate` only as a judgment tool for stake admission. These three are not interchangeable definitions.
+8. **T_dir usage split**：`T_dir` is a v0 operational proxy for directional readability. Do not use it as a completed formal object, as semantic valence, or as confidence.
+9. **ε usage split**：`ε_pg` is the L0 minimum non-neutrality postulate; `ε_reg` is an implementation regularizer; `ε_s` is a stake-threshold bridge. They must not be collapsed into one empirical theorem.
 
 ## D-Value Alignment (d 值专题规范)
 
@@ -138,4 +142,4 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 - **规则 F2**：不要把跨尺度同一性写成“单位相同”；优先写“可支付性条件相同”。
 - **规则 F3**：对现实主体，不要把最优条件写成 `\Psi_f \to 0`；优先写“非零且可支付”。
 - **规则 F4**：AI / 纯 `L_2` 语境中，优先写“non-binding friction”而非绝对 `\Psi_f = 0`。
-- **规则 F5**：物理语境中，若谈引力与 `\Psi_f` 的关系，当前规范口径是“引力是 `\Psi_f` 在物理尺度上的规范实现”。
+- **规则 F5**：物理语境中，若谈引力与 `\Psi_f` 的关系，当前规范口径降为 P3/P4 弱接口：只承诺弱场极限下 `\Psi_f` 梯度与牛顿势梯度方向同号的相容性候选；不得写成张量级 GR 重建或 `G_{\mu\nu}` 已由 SRT 推导。
