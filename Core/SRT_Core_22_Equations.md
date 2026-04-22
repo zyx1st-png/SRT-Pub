@@ -23,7 +23,7 @@ dependency: [SRT-CORE-21]
 ## Quick Reference
 - Role: SRT master-equations anchor for dynamics, thermodynamics, and stability.
 - Core claim: Fixes the canonical equation layer that downstream long-form and bridge files should cite back to.
-- Canonical status: Canonical anchor.
+- Canonical status: Canonical equation anchor; local equations may still be proxy / bridge / operational objects as marked.
 - Depends on: `SRT-CORE-21`, `_SRT_SYMBOL_TABLE.md`, and canonical core terminology.
 - Used by: `CANONICAL_REGISTRY.md`, `Core/SRT_Core_14_Dynamics_Scaling.md`, and domain bridge or interpretation files.
 - Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic formatting cleanup.
@@ -34,6 +34,9 @@ dependency: [SRT-CORE-21]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+- 本方程层默认假定 P0-04 所需的 admissible selection operator 已给定；它不推出 selectability 的起源。
+- `D_eff`、Fisher rank、Hessian effective dimension 等式是 capacity / geometry proxy，只有在 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling 条件满足时，才可近似 canonical `d`。
+- `\Psi_f` 的几何和代谢形式按 `_SRT_PSI_F_CANONICAL.md §3.1` 读作条件投影；不得由局部公式反向改写 payability 主读。
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -78,12 +81,13 @@ $$\boxed{\mathcal{F}_{collective}(\{\sigma_i, \theta_i\}) = \sum_i \Psi_f(\hat{G
 $$\boxed{\hat{G}_i[\sigma_i] = -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}}$$
 * **Implication**: 个体算子不是"为自身最小化自由能"的独立实体，而是集体景观在局部参数子空间 $\theta_i$ 的梯度下降方向。"个体与集体的目标张力"是景观局部曲率与全局曲率差的表达，而非两个对立实体的博弈。
 
-### Eq-Multi-03: d_collective as Landscape Effective Dimension（集体 d 值为景观有效维度）
-**Formal Definition**: 集体 d-value 是集体自由能景观 $\mathcal{F}_{collective}$ 的 Hessian 矩阵的有效维度（参与率指数）：
+### Eq-Multi-03: d_collective as Landscape Effective Dimension（集体 d 容量 proxy 为景观有效维度）
+**Formal Definition**: 集体 d-capacity proxy 是集体自由能景观 $\mathcal{F}_{collective}$ 的 Hessian 矩阵的有效维度（参与率指数）：
 $$\boxed{d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{\left(\sum_k \lambda_k\right)^2}{\sum_k \lambda_k^2}}$$
 其中 $\lambda_k$ 是 $\nabla^2 \mathcal{F}_{collective}$（Hessian）的特征值。个体 $d_i$ 是该景观在子空间 $\theta_i$ 上的截面有效维度：
 $$d_i = D_{eff}\!\left(\mathcal{F}_{collective}\big|_{\theta_i}\right)$$
 * **Implication**: $d_{collective}$ 不由 $d_i$ 聚合得出，而是景观固有的结构属性。个体 $d_i$ 是 $d_{collective}$ 的投影截面，包含关系而非组合关系。
+* **Level note**: 本式固定的是 landscape effective-dimension proxy。若要把它读成 stake-coupled collective `d`，必须另行说明哪些方向承载不可逆赌注、后果如何回流到相关主体或共同闭包，以及为何不是单纯 Hessian 容量。
 * **Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §4.5`；`_SRT_D_VALUE_CANONICAL.md §6`；`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`。
 
 ---

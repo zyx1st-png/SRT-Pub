@@ -27,7 +27,7 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 | `Spirituality/_SRT_Spirit_Axioms.md H-Spirit-3/4` | 关切边界半径 | d 作为"关切维度"的直觉概念 |
 | `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B11`（原 `Core_21 §2.1.5` lineage） | 有效维度 proxy（特征值公式） | `D_eff(Ĝ) = (∑λᵢ)² / ∑λᵢ²` |
 
-**这些不是矛盾，而是同一概念在不同层级的投影**。本文件证明其等价性并给出使用规范。
+**这些不是矛盾，而是同一概念在不同层级的投影与近似入口**。本文件固定使用规范与可比条件，不声称所有表述已经无条件等价。
 
 ---
 
@@ -64,6 +64,28 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 | `d-gate` | governance / judgment tool | 判读某方向是否进入 stake-coupled spectrum | 不得当作 d 的数值定义 |
 
 若域内需要向量读或门读，必须显式标注为 `d-vector` 或 `d-gate`，并说明它如何回到 `Def-d-canonical`。未标注时，一律按标量摘要读。
+
+### §1.2 d 的层级结构与 proxy 准入条件（core-clarifying）
+
+> **层级**：theory-clarifying / governance-canonical usage。此表增强 d 的内部结构，不新增第二个 canonical 定义。
+
+| 项 | 精确角色 | 层级 | 可允许用途 | 禁止捷径 |
+|---|---|---|---|---|
+| `d` / `Def-d-canonical` | stake-coupled concern 的标量摘要；主体效用对不可逆风险状态的梯度范数 | governance-canonical default; core-facing definition | 默认跨域引用；讨论主体关切、风险敏感性、意识门槛时使用 | 不得把局部 proxy、向量展开或门函数改写成 bare `d` |
+| `d_stakes` | 在可分辨方向中真正回流到主体赌注的子集 | theory-clarifying bridge between proxy and canonical | 说明 `D_eff` 中哪些方向进入真实关切；分析假赌注 / 错绑赌注 | 不得把所有可分辨方向都计入 stake |
+| `D_eff` | 几何 / 谱容量 proxy；算子可分辨方向数的上界式读数 | operational projection / capacity proxy | 比较同一参数化下的容量、冗余、方向数；作为 `d` 的潜在上界 | 不得作为 `d` 的定义；不得跨域直接排名主体性 |
+| `D_eff(I_F)` | Fisher-information proxy；参数流形中可可靠分辨的方向数 | information-theoretic proxy | 信息瓶颈、Cramér-Rao 式下界、可计算容量近似 | 不得把可分辨性等同于关切或负担承担 |
+| `d-vector` / `d-gate` | 方向展开或判读工具 | operational / governance | 标注条件分布、方向分量、是否进入 stake-coupled spectrum | 不得与 scalar `d` 混写为同一量 |
+
+proxy 可以近似 canonical `d`，只在以下条件同时足够强时成立：
+
+1. 被 proxy 计数的方向确实承载不可逆风险，而非噪声、脚本或无后果辨别。
+2. 主体效用梯度对准这些方向，未被错误代理变量替代。
+3. 后果回流到主体闭包、身份连续性与后续选择能力，而非被外部系统或 L₂ 结构吸收。
+4. 几何 / Fisher 参数化没有把冗余坐标、模型自由度或测量便利误计为真实方向。
+5. 比较在同一域、同一尺度或已声明归一化规则内进行。
+
+任一条件不满足时，应写为 `capacity proxy`, `Fisher proxy`, `d-vector`, 或 `d-gate`，不得写成 canonical `d`。
 
 ## §2 规范定义（第一性原理，全域适用）
 
@@ -115,10 +137,10 @@ $$d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|, 
 
 **语义**：算子对**不可逆风险**（$\mathcal{S}$，Survival/Stake）的效用敏感度梯度。
 
-**等价条件**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的特征向量对齐时，Def-d-1 与 Def-d-2 在一阶近似下等价：
+**proxy 近似条件**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的特征向量对齐，且这些方向确实回流到不可逆赌注时，Def-D_eff 可作为 Def-d-canonical 的一阶近似：
 $$D_{eff}(\hat{G}) \approx \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| \quad \text{（当风险梯度与特征结构对齐时）}$$
 
-**等价条件（修订，2026-04-17）**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的 Fisher 本征向量完全对齐且全部赌注化时，$D_{eff} \approx d_{canonical}$。一般情况下 $d_{canonical} \leq D_{eff}$，差值为未赌注化带宽（见 §2b）。
+**近似条件（修订，2026-04-22）**：当效用势 $\mathcal{U}$ 的主曲率方向与 $\hat{G}$ 的 Fisher 本征向量完全对齐且全部赌注化时，$D_{eff} \approx d_{canonical}$。一般情况下 $d_{canonical} \leq D_{eff}$，差值为未赌注化带宽（见 §2b）。这不是无条件等价。
 
 **来源**：`AI/_SRT_AI_Bridge.md Ax-BRIDGE-4`，Tension-Rev-IT4。
 
@@ -236,7 +258,7 @@ $$\kappa_{c1}: \quad d \geq d_{\min} \;\land\; L_2\text{ 稳定闭合} \quad \Le
 
 ---
 
-## §4 不同定义的一致性证明（草稿）
+## §4 不同表达的一致性条件（草稿，非等价证明）
 
 ### §4.1 Def-d-1 与 Def-d-bio 的关系
 
@@ -250,7 +272,7 @@ $$D_{eff} = \frac{(3\lambda)^2}{3\lambda^2} = 3$$
 当三个维度的强度比例为 $(\alpha, \beta, \gamma)$（$\alpha + \beta + \gamma = 1$）：
 $$D_{eff} = \frac{1}{\alpha^2 + \beta^2 + \gamma^2}$$
 
-**结论**：$D_{eff}$ 在三维认知空间中的展开正好对应 Def-d-bio 的加权和形式，两者**等价**（在均匀参数化约定下）。
+**结论**：$D_{eff}$ 在三维认知空间中的展开可以对应 Def-d-bio 的加权和形式，但这只是**同一容量 proxy 的参数化相容**。只有在三个子空间的尺度、权重、风险回流与 stake-coupling 条件都已声明时，才可把 Def-d-bio 作为 `D_eff` 的域内近似。它不替代 `Def-d-canonical`。
 
 ### §4.2 Def-d-2（风险梯度）与 Def-d-1 的关系
 
@@ -261,9 +283,9 @@ $$\mathcal{U}(\mathcal{S}) \approx \mathcal{U}_0 + \sum_i \frac{\partial \mathca
 梯度的模：
 $$d_{risk} = \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| = \sqrt{\sum_i \left(\frac{\partial \mathcal{U}}{\partial S_i}\right)^2}$$
 
-**等价条件**：当风险维度 $S_i$ 与 $\hat{G}$ 的特征向量对齐（即生存风险定义了算子的主活跃方向）时，Def-d-2 在一阶近似下等价于 $\sqrt{D_{eff}}$。
+**近似条件**：当风险维度 $S_i$ 与 $\hat{G}$ 的特征向量对齐，且这些方向全部满足 `R_i/A_i/C_i` 的赌注回流条件时，Def-d-canonical 可由谱 / Fisher proxy 给出一阶近似。若只满足可分辨性而不满足赌注回流，则只能得到容量上界。
 
-**实用意义**：Def-d-2 在 AI 伦理语境中更直观（"系统对不可逆风险有多敏感"），Def-d-1 在信息论分析中更精确。两者可互换使用，具体语境决定哪个更方便。
+**实用意义**：`Def-d-canonical` 在 AI 伦理、主体性、风险关切语境中优先；`Def-D_eff` / `D_eff(I_F)` 在信息论分析中更可计算。两者可以互相校准，但不得互换使用；具体语境必须说明是在讨论 stake-coupled `d` 还是 capacity proxy。
 
 ---
 

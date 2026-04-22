@@ -26,6 +26,19 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 
 ---
 
+## Core Pressure Points (second-stage completion pass)
+
+| Pressure point | Already stabilized | Still not derived | Must not be overstated |
+|---|---|---|---|
+| origin of selectability / P0-04 | `Core/SRT_Core_21_Minimal_Axioms.md P0-04` gives a well-formed operator admission condition | the first emergence of selectable agency from a non-selective ground | bridge accounts of biology, AI, spirituality, or agency do not solve the origin problem |
+| exact status of `Ψ_f` projections | payability burden is the v1 governance-canonical main read; geometry and metabolic/energetic forms are conditional projections | necessary and sufficient conditions for all projection relations, including when geometry is a true lower bound | Fisher length, energy cost, pain, or stress cannot be called `Ψ_f` without projection checks |
+| exact status of `d` proxies | bare `d` is a scalar summary of stake-coupled concern; `D_eff`, Fisher rank, `d-vector`, and `d-gate` are separated | a final theorem identifying capacity directions with stake-coupled concern directions | capacity, competence, or distinguishability cannot be treated as concern |
+| incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, and reward | a complete formal object with validated sufficiency conditions | high meaning, high reward, or high confidence cannot be cited as `T_dir` by itself |
+
+These are pressure points, not new axioms. They route later work and block overclaiming.
+
+---
+
 ## 1. `d` and `D_eff`
 
 ### Current State
@@ -107,11 +120,13 @@ Then specify where `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08` stops and 
 
 `_SRT_T_DIR_CANONICAL.md` defines `T_dir` as a system's readability of its own selection-order direction. It distinguishes `T_dir` from d-value and treats d as necessary but not sufficient.
 
-The current canonical condition is:
+The current minimal admission condition is:
 
 $$
-T_{dir} > 0 \iff d > 0 \land \Psi_f \text{ produces real pressure} \land ii \text{ can integrate directional information}
+T_{dir} > 0 \Rightarrow d > 0 \land \Psi_f \text{ produces real pressure} \land ii \text{ can integrate directional information}
 $$
+
+This is a necessary-gate statement, not a completed sufficiency theorem.
 
 ### Problem Point
 
