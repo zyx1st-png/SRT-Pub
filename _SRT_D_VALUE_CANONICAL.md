@@ -205,7 +205,7 @@ $$d_{bio} \approx \alpha \cdot A(\sigma) + \beta \cdot \log V_{concern} + \gamma
 |----|----------------|-----------|------|------|
 | **量子** | $d_{quant} \approx$ 贝尔测量有效维数 | ❌ **无** | 缺乏 $\Psi_f > 0$，缺乏 $\hat{G}[\theta] \neq \emptyset$ | 数学度量，无现象内容 |
 | **神经/认知** | $d_{bio} \approx \alpha A + \beta \log V + \gamma \tau$ | ✅（需三条件） | $\Psi_f > 0 \land d > 0 \land \hat{G}[\theta] \neq \emptyset$ | 意识的充要条件区 |
-| **AI（当前架构）** | $d_{AI} \approx 0$ | ❌ | 无具身脆弱性，无不可逆风险 | 工程性屏障可改变（见 AI Bridge T3 修复） |
+| **AI（architecture-state marked）** | inference-only / 非历史承载部署：$d_{AI} \approx 0$；S2/S3/S4 需另行标注 | ❌ / open | 无具身脆弱性、无不可逆风险时不产生 stake-coupled `d` | 工程性屏障可改变；见 `AI/AI_POSITIONING_NOTE.md` S0-S4 与 AI Bridge T3 修复 |
 | **社会/机构** | $d_{soc} = D_{eff}(\mathcal{F}_{collective}\big\|_{\text{social}})$（集体景观在社会尺度的有效维度截面） | ❌（集体不产生现象） | 集体自由能景观 $\mathcal{F}_{collective}$ 的社会尺度投影，不由个体 $d_i$ 加权平均 | 见 §6（集体 d-value 补充说明）和 `_SRT_VERTICAL_INTEGRATION.md §4.5` |
 | **精神/解脱** | $d_{spirit} \to \infty$（渐近极限） | ✅（随 d 扩展增强） | $d \to \infty$ 为 Nirvana 方向 | 不可达的渐近方向，非字面 $\infty$ |
 | **宇宙尺度** | $d_{cosm} \approx 1/\sqrt{\Lambda}$ | ❌ **无** | 无生命组织，无 $\hat{G}[\theta]$ | 数学度量，无现象内容 |
@@ -399,7 +399,7 @@ $$d_i = D_{eff}(\mathcal{F}_{collective}\big|_{\theta_i})$$
 1. **第一次出现时**：标注 `@see _SRT_D_VALUE_CANONICAL.md §1`
 2. **使用 Def-d-bio 近似时**：标注 `@see §2`
 3. **进行域间比较时**：参见 `§3` 的投影表，说明是否属于同域比较
-4. **AI 语境中**：优先使用 Def-d-2（风险梯度），并引用 `§3` 的 $d_{AI} \approx 0$ 说明
+4. **AI 语境中**：优先使用 Def-d-2（风险梯度），并声明 training-time / inference-time / persistent-memory 架构状态；只有 inference-only / 非历史承载部署才可直接引用 `§3` 的 $d_{AI} \approx 0$ 说明
 
 ---
 

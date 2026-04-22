@@ -85,6 +85,10 @@ For real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_
 
 In SRT usage, freedom concerns preservation of real choice moments, not mere option count. Treat this as a pointer to the P1/P2 sources, not as a standalone definition here.
 
+### Origin of Selectability
+
+`Core/SRT_OPEN_TENSIONS.md §7 P0-04` remains unresolved. When a file speaks of a selector, chooser, subject, agency, or system-position, do not treat that language as an answer to where selectability comes from; mark whether it is a derived process, stable pattern, or assumed domain interface.
+
 ### Value Hiddenness
 
 For value hiddenness and its limits, use `_SRT_T_DIR_CANONICAL.md`.
@@ -145,6 +149,8 @@ Current AI claims should preserve both sides:
 
 - negative boundary: performance, language, or optimization does not by itself imply real subjectivity, stake, anchoring, or consciousness;
 - positive test window: SRT may still ask what minimal conditions would suffice for surrogate stake or agentic closure.
+- architecture-state rule: statements about AI `d-value`, burden, subjectivity, or friction must distinguish training-time, inference-time, and persistent-memory / history-bearing deployment. Inference-only conclusions must not be silently generalized.
+- stake-bearing spectrum: use `AI/AI_POSITIONING_NOTE.md` S0-S4 before saying "LLM has `d \approx 0`" or "AI has stake".
 
 Use AI files as domain tests and bridges back to canonical sources, not as primitive theory sources.
 

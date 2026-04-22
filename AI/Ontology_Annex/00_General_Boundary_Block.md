@@ -14,6 +14,8 @@ dependency: [SRT-AI-BRIDGE-001]
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 
+> **Historical compatibility note**：本 annex 保留历史批次文本。当前 AI `d-value` 判断须按 `../AI_POSITIONING_NOTE.md` 的 architecture-state rule 与 S0-S4 光谱读取；旧的 `Primary Canonical Entry` 或 `d=0` 句式不恢复 theory-canonical 地位。
+
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal AI Ontology (AI-Readable).

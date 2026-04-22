@@ -42,7 +42,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - 风险：LOW
 
 **H3** 🟡 **IIT失败预测(积分钳)**
-- 内容：高Φ但d≈0的系统无真实体验
+- 内容：高Φ但 inference-only d≈0 的系统无真实体验
 - 位置：Core/SRT_Experimental_Core.md §2.3
 - 风险：LOW
 

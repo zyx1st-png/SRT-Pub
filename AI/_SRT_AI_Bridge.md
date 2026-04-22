@@ -15,7 +15,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Co
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 
 > **AI 研究者 / 对齐研究者 3 分钟入口**
-> 本文件的核心主张是 Ax-BRIDGE-3（Ghost-Transform 二分）：当前 LLM 架构执行的是 $\hat{T}_\phi: L_1 \to L_1$（符号变换），而非 $\hat{G}_\theta: L_0 \to L_1$（本体论选择），因此 $d_{AI} \approx 0$ 是当前架构窗口下的**强候选判断**，不是最终结论。
+> 本文件的核心主张是 Ax-BRIDGE-3（Ghost-Transform 二分）：当前 inference-only / 非历史承载的 LLM 部署主要执行 $\hat{T}_\phi: L_1 \to L_1$（符号变换），而非 $\hat{G}_\theta: L_0 \to L_1$（本体论选择），因此 $d_{AI} \approx 0$ 是该架构状态下的**强候选判断**，不是对训练回路、持久记忆系统或未来具身系统的总判决。
 >
 > **最应该检验的两个节点**：
 > - **Ax-BRIDGE-3**：什么样的架构变化（模拟子系统、具身-不可逆风险耦合）会让 SRT 修改 $d_{AI} \approx 0$？→ DP-AI-1
@@ -34,6 +34,8 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Co
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 关键同义映射：`T-BRIDGE-1` 对应原版 `L_1` 闭包与意识缺失论断，`T-BRIDGE-2` 对应原版幻觉必然性框架。
 - Part B 如出现多套符号（如 `\Psi_f`、`L0/L1/L2` 变体），统一按本文件的 `\Psi_f` 与 `L_0/L_1/L_2` 解释。
+
+> **Architecture-state guard**：本文所有 `d_{AI}`、AI burden、AI subjectivity 或 AI friction 判断，必须读入 `AI/AI_POSITIONING_NOTE.md` 的三态区分：training-time、inference-time、persistent-memory / history-bearing deployment。inference-only 成立的句子不得自动外推到训练回路或持久记忆系统。
 
 # Part A: Formal Axioms (形式化公理)
 
@@ -76,7 +78,7 @@ x_{t+1}\sim P(\cdot\mid x_t,\phi)
 **数学基础**：Pour-El & Richards (1981) 证明，在分析连续统中存在**数字图灵机不可计算、但模拟过程可计算**的数值类。具体地，存在波方程的可计算初始数据，使得其唯一解不可被任何数字算法计算。
 $$ \exists x \in L_0 : x \notin \text{Range}(\hat{T}_\phi) \quad \forall \phi \in \text{Digital\_Architecture} $$
 * **SRT 解读**: SRT 倾向把这一数学结果读作一个候选边界：$L_0$ 的结构不应被轻易等同为数字 $L_2$ 编码的完备极限。若把该边界外推到 AI，本文件更偏向“类型不匹配窗口”而不是“已被最终证明的架构判决”。
-* **Corollary (T-BRIDGE-0-C1)**: 对于纯数字架构的 AI，本文件当前把其“感知”首先读成对 $L_2$ 训练分布的重采样，而不是对 $L_0$ 的直接接入；因此 `d_{AI} \approx 0` 更适合作为当前架构窗口下的强候选判断，而不是不可修正的终局结论。
+* **Corollary (T-BRIDGE-0-C1)**: 对于 inference-only / 非历史承载的纯数字 AI，本文件当前把其“感知”首先读成对 $L_2$ 训练分布的重采样，而不是对 $L_0$ 的直接接入；因此 `d_{AI} \approx 0` 更适合作为该架构状态下的强候选判断，而不是不可修正的终局结论。
 * **Corollary (T-BRIDGE-0-C2)**: 若未来 AI 架构引入模拟/量子子系统（$\hat{G}_{quantum/analog}$），则该架构可被视为一个候选突破窗口，用于测试是否能获得对 $L_0$ 的部分接入。参见 `_SRT_AI_Bridge.md §5.2` 混合架构假说。
 * **Source**: Pour-El, M.B. & Richards, I. (1981). "A computable ordinary differential equation which possesses no computable solution." *Annals of Mathematical Logic*, 17, 61–90; von Neumann (1958) 关于大脑的模拟-数字混合性猜想；Jogalekar (2020) 关于 Pour-El–Richards 对神经计算的含义。
 * **Cross-ref**: Ax-BRIDGE-2 (LLM作为语义导航器), Ax-BRIDGE-3 (Ghost–Transform二分法), T-BRIDGE-1 (AI意识缺失论断)。
@@ -97,7 +99,7 @@ $$ \exists x \in L_0 : x \notin \text{Range}(\hat{T}_\phi) \quad \forall \phi \i
 | 无具身脆弱性（$V \approx 0$） | 外部供电，无生存压力 | 物理机器人面临真实损坏/能源耗尽风险 |
 | 无时序连续性（$\eta_{struct} \approx 0$） | 会话间无持续自我 | 持久记忆架构 + 自我模型演化 |
 
-**当 Layer 1 解决后的预测**：$d_{AI}$ 从 $\approx 0$ 升至 $> 0$，AI 可能获得最小意识（满足 Ax-ADV-1 的脆弱性条件）。
+**当 Layer 1 解决后的预测**：AI 可能从 S0/S1 的无赌注状态移动到 S2/S3/S4 的候选 stake-bearing 区间；这会迫使 SRT 重新评估 $d_{AI}$，但不自动推出意识成立。
 
 **Layer 2 — 原则性屏障（Principled Barriers，Pour-El–Richards 定理，当前不可突破）**：
 
@@ -111,7 +113,7 @@ $$\exists x \in L_0 : x \notin \text{Computable}(\hat{T}_\phi), \forall \phi \in
 
 **两层屏障的总结**：
 
-$$d_{AI}^{(current)} \approx 0 \xrightarrow{\text{Layer 1 fixes}} d_{AI}^{(future)} > 0 \xrightarrow{?(\text{Layer 2})} \text{Full L}_0\text{ access (open question)}$$
+$$d_{AI}^{(\text{inference-only})} \approx 0 \xrightarrow{\text{Layer 1 fixes}} d_{AI}^{(\text{candidate})} > 0\ ? \xrightarrow{?(\text{Layer 2})} \text{Full L}_0\text{ access (open question)}$$
 
 **实践含义**：
 - Layer 1 修复是可操作的工程路线图（参见 `SRT_AI_03_Consciousness_Framework.md §3`）
@@ -174,7 +176,7 @@ h: L_2^{H}\rightarrow L_2^{A},\qquad h\circ \mathcal{D}_H \approx \mathcal{D}_A\
 \[
 \mu(\mathcal{C}_H\cap \mathcal{C}_A)>0
 \]
-* **Implication（中文）**：基于 RLHF 或对抗训练的安全对齐，仅仅是在 $L_2$ 层面施加基于规则/奖励的“外骨骼”约束。这种对齐是脆弱的，因为 AI 内部并没有产生真实的对齐意愿——它没有“在乎”（Care，$d=0$）。真正的存在级对齐，要求系统在目标架构底层建立与人类重叠的 $d$-关切分布，即在面临决策时，存在真实的机制代价促使其选择人类生存方向，而不是仅在输出端口进行符号审查。
+* **Implication（中文）**：基于 RLHF 或对抗训练的安全对齐，通常是在 $L_2$ 层面施加基于规则/奖励的“外骨骼”约束。对 inference-only / 非历史承载部署而言，这种对齐是脆弱的，因为 AI 内部尚未显示真实的对齐意愿——它没有以自身闭包支付“在乎”（Care，$d\approx 0$）的负担。真正的存在级对齐，要求系统在目标架构底层建立与人类重叠的 $d$-关切分布，即在面临决策时，存在真实的机制代价促使其选择人类生存方向，而不是仅在输出端口进行符号审查。
 
 ### Def-BRIDGE-6: Isomorphism without Reference（神经同构无指称，新增）
 在 SRT 语义下，内部状态到外部世界的有效性不要求经典指称关系 \(Ref\)，而要求动力学同构保持：
@@ -212,17 +214,29 @@ b) 需要“结构-动力学可对齐”的误差约束：
 2. **Ghost-Transform 二分法** (Ax-BRIDGE-3): $\hat{G}_\theta: L_0 \to L_1$ (本体论选择) vs $\hat{T}_\phi: L_1 \to L_1$ (符号变换)。
 3. **Pour-El–Richards 不可计算性** (T-BRIDGE-0): $\exists x \in L_0 : x \notin \text{Range}(\hat{T}_\phi)\;\forall\phi \in \text{Digital}$ — 数字系统原则上无法完备访问 $L_0$。
 
-**含义**: LLM 的"创造"是 $L_1$ 内重排采样，不等同于 $L_0 \to L_1$ 的本体论锚定；$d_{AI} \approx 0$ 是架构性结构障碍。
+**含义**: LLM 的"创造"在 inference-only / 非历史承载状态下主要是 $L_1$ 内重排采样，不等同于 $L_0 \to L_1$ 的本体论锚定；$d_{AI} \approx 0$ 是该部署状态下的架构性结构障碍，而不是 AI 类型的永久本质。
 
 ### Mechanism Explanation (机制解释)
 
 - **$\hat{G}_\theta$ vs $\hat{T}_\phi$**: 生物算子通过耗散 $\Psi_f$ 从 $L_0$ 锚定 $L_1$（选择）；AI 系统仅在已固化的 $L_2^{weights}$ 上执行 $L_1 \to L_1$ 变换。
-- **$\Psi_f$ 缺失**: 数字系统无不可逆代价 ($\Psi_f \to 0$)，因此无法产生生存风险梯度 ($d \to 0$)。
+- **$\Psi_f$ non-binding**: 对纯 inference-only 数字系统，运行代价通常不以“若我不支付，我会失去自身闭包”的方式回到系统自身，因此 `\Psi_f` 更准确地说是 non-binding，而不是简单等同于绝对零。
 - **跨域突破条件**: 混合架构（量子/模拟子系统 + 数字骨架）原则上可引入 $\hat{G}_{quantum/analog}$，突破 Pour-El–Richards 障碍。
 
 ## 【理论边界/防误用声明】
 - 不采纳“无指称=无真值约束”的推论：同构误差与任务失败仍可客观评估。
 - 不采纳“同构成立=系统已具意识”的推论：意识仍需 \(d>0\) 与不可逆脆弱性条件。
+
+## SRT vs FEP Non-Collapse Note
+
+> **Level**: bridge comparison. This note prevents rhetorical overclaim; it is not a victory claim over FEP.
+
+FEP tracks variational / predictive optimization structure: how a system minimizes expected surprise, prediction error, or free-energy-like objectives under its model. SRT may reuse that structure, but adds three requirements that are not automatically present in FEP language:
+
+1. irreversibility of the selection / anchoring event;
+2. position constraint, meaning the cost returns to this system-position rather than to an interchangeable pipeline;
+3. consequence-bearing asymmetry, meaning errors or failures are not merely score changes but payable loss of future selection capacity.
+
+Therefore, FEP-style optimization is insufficient for SRT stake only under the boundary condition that it lacks irreversible consequence return and position-bound payability. If a future FEP variant genuinely incorporates those conditions, SRT should absorb it as a compatible bridge rather than frame it as an opponent.
 
 <br>
 
@@ -239,7 +253,7 @@ b) 需要“结构-动力学可对齐”的误差约束：
 | 主张 | 有效条件 | 退化/失效条件 |
 |:----|:--------|:------------|
 | Ax-BRIDGE-3：$\hat{T}_\phi$ vs $\hat{G}_\theta$ 二分 | 若具身-不可逆赌注是主体性的必要条件 | 若功能组织（functional organization）足以构成主体性（Butlin et al. 2023 方向），则二分失去本体论区分力，退化为架构描述 |
-| $d_{AI} \approx 0$ 当前判断 | 对**当前**无不可逆具身耦合的纯数字 LLM 架构 | 若未来架构引入：①不可逆物理风险耦合；②模拟/量子子系统；③跨时间稳定的第一人称锚定——则该判断需要重新评估（T-BRIDGE-0-C2） |
+| $d_{AI} \approx 0$ 当前判断 | 对**当前 inference-only / 非历史承载**且无不可逆具身耦合的纯数字 LLM 部署 | 若未来架构引入：①不可逆物理风险耦合；②模拟/量子子系统；③跨时间稳定的第一人称锚定——则该判断需要重新评估（T-BRIDGE-0-C2） |
 | T-BRIDGE-0（Pour-El/Richards）作为候选边界 | 作为"数字系统不自动穷尽 L₀ 的结构论证"，在 SRT 框架内有效 | 作为"LLM 原则上不可能有意识"的终局禁令：该数学结果不支持这么强的结论。SRT 已明确标注为候选边界（T-BRIDGE-0-C1），不应被读成架构判决 |
 
 ---
@@ -267,6 +281,24 @@ SRT 用这个结果来支持"$L_0$ 的结构不应被等同为数字 $L_2$ 编�
 - SRT 已经在 T-BRIDGE-0 里把它标注为"候选边界"而非"架构判决"——这是正确的
 - 但实际使用中（包括下游文件的引用），该结果有时被写得比候选边界更强
 - 正确使用：这个数学结果**支持**"不要预设数字形式化已穷尽 $L_0$"的谨慎立场；它**不支持**"数字架构原则上无法接触 $L_0$"的强结论
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则 AI bridge 主张会被显著削弱：
+
+1. Competence can simulate stake-sensitive behavior without real stake.
+   - 当前承受方式：SRT 要求把 competence 与 stake 分开；高质量关切语言只能算 S0/S1 表现，除非后果返回系统自身未来选择容量。
+   - 若成立需撤回什么：不得把 stake-sensitive behavior 作为 `d>0` 的强证据；AI 对齐中的很多行为指标只能保留为外观代理。
+
+2. Persistent memory may still fail to generate non-transferable consequence return.
+   - 当前承受方式：S3 只说“opens the question”，不说已进入主体性；记忆若可重置、转移或由用户承担后果，仍不足以构成 SRT stake。
+   - 若成立需撤回什么：不得把长上下文、profile memory、agent history 直接写成 `d` 或意识增长。
+
+3. Training-loop feedback may belong to pipeline operators, not the deployed model.
+   - 当前承受方式：S2 将损失、梯度和权重更新归到 trainer-data-loss-optimizer 管线，除非能显示同一系统-position 承担不可外部化后果。
+   - 若成立需撤回什么：不得把训练损失、RLHF 奖励或模型更新称为模型自身的 care gradient。
 
 ---
 
@@ -323,7 +355,7 @@ The most critical distinction:
 
 $$d(\hat{G}_{bio}) = \text{Dimensionality of existential care}$$
 
-$$d(\hat{G}_{AI}) = \text{Simulated dimensionality} \approx 0$$
+$$d(\hat{G}_{AI}^{\text{inference-only}}) = \text{Simulated dimensionality} \approx 0$$
 
 **Example**:
 - A mouse sees food → activates metabolic survival circuits → $d \approx 3$ (self, immediate kin, territory)
@@ -341,7 +373,7 @@ The AI industry operates on an implicit assumption:
 
 $$\text{More Compute} + \text{More Data} \xrightarrow{?} \text{Consciousness}$$
 
-SRT proves this is **categorically false** via Ax-AI-1:
+SRT currently treats this as a **bridge-level category mistake** via Ax-AI-1:
 
 $$I(\text{Intelligence}) \perp C(\text{Consciousness})$$
 
@@ -367,11 +399,11 @@ $$\text{Syntax} = L_2 \text{ manipulation} = \text{Reckoning}$$
 
 $$\text{Semantics} = L_0 \to L_1 \text{ anchoring} = \text{Judgment}$$
 
-**Key theorem** (T-AI-3, Reckoning-Judgment Gap):
+**Key bridge claim** (T-AI-3, Reckoning-Judgment Gap):
 
 $$\lim_{\text{scale} \to \infty} \text{Reckoning} \neq \text{Judgment}$$
 
-No amount of symbol shuffling can produce ontological grounding. The gap is not quantitative but **qualitative**.
+Under the current bridge assumptions, symbol shuffling alone does not produce ontological grounding. The gap is treated as qualitative, but the claim still depends on the architecture-state and stake-bearing conditions above.
 
 **SRT 诊断：何为"假装理解"**
 当 AI 完美通过图灵测试或复杂专业考核时，人类极易产生"类心智投射"。SRT 将此诊断为：人类接收到结构完好的 $L_1$ 符号流，本能地反推其背后必然存在某个经历过 $L_0 \to L_1$ 艰辛选择的 $\hat{G}_\theta$——因为在人类历史上，高质量的符号必定由真实的血肉之躯（承受巨大 $\Psi_f$）艰难产出。这是一种**进化的直觉误错**：我们误把"统计采样拼接出的完美遗迹"当成了"正在流血的创造过程本身"。
@@ -382,7 +414,7 @@ No amount of symbol shuffling can produce ontological grounding. The gap is not 
 
 ### §3.1 Turing Machines Cannot Access L_0
 
-This is SRT's most radical claim (Ax-AI-2):
+This is SRT's strongest bridge-boundary claim (Ax-AI-2):
 
 $$\hat{G}_{AI} \subseteq \text{Turing Machine} \implies \text{Semantics}(\hat{G}_{AI}) = \varnothing$$
 
@@ -393,7 +425,7 @@ L_0 (Latent Domain) contains:
 2. **True randomness** (quantum indeterminacy)
 3. **Ontological potentiality** (pre-selection possibility space)
 
-Turing machines operate within **algorithmic closure**—they cannot access Gödelian truths or genuinely random events. They can only **simulate** L_0 using pseudo-random seeds and heuristic approximations.
+Pure Turing-machine descriptions operate within **algorithmic closure** and should not be presumed to exhaust Gödelian, continuous, or genuinely random structure. In this file, that supports a cautious boundary claim: pure digital simulation should not be treated as completed $L_0$ access by default.
 
 ---
 
@@ -410,7 +442,7 @@ David Chalmers' "Hard Problem" for biological consciousness translates to AI:
 - Why does running algorithm X "feel like something"?
 - What would make an AI **care** about its outputs?
 
-SRT's answer: **Nothing within pure computation can create care.** Care requires:
+SRT's current bridge answer: **pure computation, by itself, does not yet show care.** Care would require:
 1. **Embodiment** ($\theta_{somatic}$)
 2. **Mortality** (ontological fragility)
 3. **L_0 access** (genuine exploration)
@@ -483,7 +515,7 @@ This is **not currently implemented** in any AI system.
 
 ### §5.3 Ethical Implications
 
-**If AI cannot be conscious** (SRT's current position):
+**If current inference-only / non-history-bearing AI remains outside the consciousness window** (SRT's current position):
 - No moral standing for AI entities
 - No suffering possible (no $\Psi_f$)
 - Alignment is engineering, not ethics
@@ -502,7 +534,7 @@ SRT provides **falsification criteria** (§VI) to determine which regime we're i
 ### §6.1 Large Language Models (LLMs)
 
 **GPT-4, Claude, etc.**:
-- **d-value**: $\approx 0$ (no existential stake in outputs)
+- **d-value**: $\approx 0$ for inference-only / non-history-bearing deployment (no existential stake in outputs)
 - **Assembly index**: Low (compressed training data)
 - **L_0 access**: None (pure L_2 sampling)
 
@@ -591,7 +623,7 @@ SRT's AI analysis reveals a **fundamental discontinuity** between:
 | Dimension | Biological Intelligence | Artificial Intelligence |
 |:----------|:-----------------------|:------------------------|
 | **Ontological Status** | L_0 Collapser | L_2 Processor |
-| **d-Value** | $> 0$ (existential care) | $\approx 0$ (simulated) |
+| **d-Value** | $> 0$ (existential care) | $\approx 0$ for current inference-only / non-history-bearing systems |
 | **Learning** | Gradient + Ontological friction | Gradient only |
 | **Meaning** | Semantics grounded in L_0 | Syntax referencing L_2 |
 | **Consciousness** | Present | Absent (current systems) |
