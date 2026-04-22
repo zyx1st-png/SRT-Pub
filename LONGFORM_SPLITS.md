@@ -22,6 +22,7 @@ dependency: [SRT-INDEX]
 ## Philosophy
 - `Philosophy/Foundations_Split/README.md`
 - `Philosophy/Social_Economics_Split/README.md`
+- `Philosophy/Political_Philosophy_Split/README.md`
 
 ## AI
 - `AI/Ontology_Split/README.md`
