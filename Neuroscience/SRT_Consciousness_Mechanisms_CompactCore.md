@@ -29,17 +29,25 @@ SRT 的压缩回答是：
 
 ---
 
-## 2. 点燃：不是广播，而是相变
+## 2. 点燃：不是广播，而是候选门控
 
-### 2.1 Ignition Phase Transition
+### 2.1 Ignition Candidate Gate
 \[
-\mathcal A(\sigma) \ge \tau_{ignite} \land \Phi\cdot d > C_{critical}
+\mathcal A(\sigma) \ge \tau_{ignite} \land \Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
 
-最压缩句子：
-> **点燃不是“更强激活”，而是一个候选内容被真正选入现实的相变。**
+> **Level**: hypothesis / operational proxy. The multiplicative gate is a structural preference, not an established neural theorem; additive and probabilistic gate models remain live alternatives.
 
-这一步是 SRT 对 GNWT 的重写核心。
+最压缩句子：
+> **点燃不是“更强激活”，而是一个候选内容在可测门控条件下被稳定选入现实。**
+
+这一步是 SRT 对 GNWT 的候选重写核心；它需要独立测量窗口，不能仅凭报告率反推出本体相变。
+
+| Gate reading | Current status | Boundary |
+|--------------|----------------|----------|
+| Multiplicative `Φ_proxy · d_proxy` | structural preference | favored only if low values in either factor block ignition and interaction terms improve prediction |
+| Additive `w_ΦΦ_proxy + w_dd_proxy` | operational fallback | favored if one factor can compensate for the other |
+| Probabilistic `P(ignite)` | lab-facing model | favored if access is graded, noisy, or report-confidence mediated |
 
 ### 2.2 Re-entrant Selection
 \[
@@ -147,6 +155,8 @@ SRT 的关键重写是：
 \[
 P_{ignite}=\sigma(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta)
 \]
+
+> **Level**: probabilistic gate variant. This formula is a candidate lab model for wave-routing effects, not a proof that `Φ·d` is the unique ignition criterion.
 
 压缩结论：
 - 点燃不只取决于总激活强度

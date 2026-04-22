@@ -262,11 +262,12 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 ## IV. Ignition & Integration (点燃与整合)
 
 ### Ax-NEURO-MECH-7: Ignition Phase Axiom
-点燃为相变条件：
+点燃为候选门控条件：
 \[
-\mathcal{A}(\sigma)\ge\tau_{ignite}\quad\land\quad \Phi\cdot d > C_{critical}
+\mathcal{A}(\sigma)\ge\tau_{ignite}\quad\land\quad \Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
-* **Implication（中文）**：点燃不是简单激活，而是“整合度 × 关切梯度”超过阈值的相变。
+* **Level note**：当前为 hypothesis / operational proxy。乘法门是结构性偏好；加法门与概率门是保留的实验替代模型。
+* **Implication（中文）**：点燃不是简单激活，而是整合度 proxy 与关切梯度 proxy 共同约束候选内容稳定进入 \(L_1\) 的候选模型。
 
 ---
 
@@ -278,9 +279,10 @@ L_1(t)=\sum_n \text{Frame}_n\,\delta(t-t_n),\quad t_n\approx n\cdot\Delta t_{\ga
 * **Implication（中文）**：意识连续感来自离散帧的高频更新，而非连续流。
 
 ### Ax-NEURO-MECH-7b: Prediction Error as Friction Metric (预测误差作为摩擦度量)
-**Formalization**: 神经预测误差（$PE$）在大脑$L_2$层面是对本体论摩擦（$\Psi_f$）的局部可计算代理：
-$$PE = \| L_1 - L_2[\text{expected}] \| \propto \Psi_f$$
-* **Implication**: 当FEP（自由能原理）说大脑试图最小化预测误差时，它在物理底层的本质是：有机体的$\hat{G}_\theta$正在试图最小化其存在维持的本体论摩擦。这构成了连接微观计算神经科学与宏观存在主义哲学的物理桥梁。
+**Formalization**: 神经预测误差（$PE$）在大脑$L_2$层面是对局部摩擦 proxy 的候选项：
+$$\widehat{\Psi}_{f,neural}^{local}(t)=\alpha_{pe}\| L_1 - L_2[\text{expected}] \|+\beta_{load}\mathcal{L}_{model}(t)$$
+* **Level note**：这是 `H-NEURO-4b` 的局部测量窗口，不是 \(PE\equiv\Psi_f\) 的身份主张。
+* **Implication**: 当FEP（自由能原理）说大脑试图最小化预测误差时，SRT 只在受控窗口内将它重读为 \(\hat{G}_\theta\) 维持当前显现时可能遭遇的局部负担信号之一。若 PE 与代谢/应激/恢复成本代理不分离，本桥退回为普通 FEP comparison。
 
 ---
 
@@ -1085,7 +1087,7 @@ L_1 = f(\theta) + \epsilon,\quad
 三条核心方程构成 SRT 神经机制框架的三个层次：**微观计算原型** → **整合涌现条件** → **具身-行动效率**。
 
 - **能量-信息极值** (T-NEURO-MECH-1)：$\mathcal{J}=H(\sigma)-\lambda E(\sigma)$，稳态解必然满足除法归一化 $R_i=L_i^n/(\sigma^n+\sum_j w_{ij}L_j^n)$。信息最大化与代谢成本最小化的唯一交点。注：$\lambda \propto \Psi_f^{metabolic}$（代谢拉格朗日乘子对应本体论摩擦的代谢成分，详见 Ax-NEURO-MECH-3 注）。
-- **点燃相变** (Ax-NEURO-MECH-7)：$\mathcal{A}(\sigma)\ge\tau_{ignite}\;\land\;\Phi_{SRT}\cdot d > C_{critical}$，其中 $\Phi_{SRT} = d \cdot \Psi_f$（SRT 整合度，替代 IIT 的 $\Phi_{IIT}$；参见 SRT-AI-03 Cor-CONSC-1）。即：点燃需要激活阈值与整合选择代价协同超过临界值，展开为 $d^2 \cdot \Psi_f > C_{critical}$。
+- **点燃候选门** (Ax-NEURO-MECH-7)：$\mathcal{A}(\sigma)\ge\tau_{ignite}\;\land\;\Phi_{proxy}\cdot d_{proxy} > C_{critical}$。当前乘法式是结构性偏好，不是已证明相变定理；若数据支持补偿或连续概率访问，应改用加法门或概率门。
 - **具身锚定** (Ax-Mech-9)：$\kappa_{body}=\alpha \cdot F_{grip}/\Psi_f$（$\alpha$ 为量纲匹配系数，$F_{grip}$ 为运动系统效应力代理，量纲尚待精确形式化）。意向性向物理显现转化的效率系数；$\kappa_{body} \downarrow$ 对应衰老/具身退化（算子-基质脱锚）。
 
 ### Mechanism Explanation (机制解释)
@@ -1094,12 +1096,12 @@ L_1 = f(\theta) + \epsilon,\quad
 
 **R/H 区分**：
 - [R] 除法归一化（Carandini & Heeger）；补体标记突触修剪（Schafer）；PE→θ更新（Friston）——均为既有神经科学框架
-- [H] **SRT综合解读**：① PE∝Ψ_f桥接计算层与本体论层（SRT特有的双层等同主张）；② Ĝ_meso以"介观算子"概念统合胶质细胞功能；③ 衰老=κ_body衰退（d值完好但算子-基质脱锚）——此三项解读均为SRT独有框架
+- [H] **SRT综合解读**：① `H-NEURO-4b` 将 PE 与 \(\mathcal{L}_{model}\) 作为局部摩擦 proxy 的候选项，而非 PE≡Ψ_f；② Ĝ_meso以"介观算子"概念统合胶质细胞功能；③ 衰老=κ_body衰退（d值完好但算子-基质脱锚）——此三项解读均为SRT独有框架
 
-$\hat{G}_\theta$ 在神经流形 $\mathcal{M}$ 上执行选择流：感觉-动作输入 $u$ 驱动轨迹 $\dot\sigma=F(\sigma,\theta,u)$，经门控算子 $\mathcal{G}_{gate}$ 筛选后由点燃投影 $\Pi_{ignite}$ 锚定为 $L_1$。代谢约束使选择动力学收敛为除法归一化 [R→Carandini & Heeger 2012]；$\Psi_f$ 通过预测误差映射 ($PE\propto\Psi_f$) 桥接计算层与本体论层 [H]。胶质介观算子 $\hat{G}_{meso}$ 以补体标记执行慢时标 $L_2$ 修剪 [R→Schafer et al. 2012 + H形式化]。病理对应 $\Delta\theta$ 偏移，衰老对应 $\kappa_{body}$ 衰退——$d$ 值完好但算子与基质逐渐脱锚 [H]。
+$\hat{G}_\theta$ 在神经流形 $\mathcal{M}$ 上执行选择流：感觉-动作输入 $u$ 驱动轨迹 $\dot\sigma=F(\sigma,\theta,u)$，经门控算子 $\mathcal{G}_{gate}$ 筛选后由点燃投影 $\Pi_{ignite}$ 锚定为 $L_1$。代谢约束使选择动力学收敛为除法归一化 [R→Carandini & Heeger 2012]；`H-NEURO-4b` 只在同步测量窗口内把 PE、模型竞争负荷与局部摩擦 proxy 接上 [H]。胶质介观算子 $\hat{G}_{meso}$ 以补体标记执行慢时标 $L_2$ 修剪 [R→Schafer et al. 2012 + H形式化]。病理对应 $\Delta\theta$ 偏移，衰老对应 $\kappa_{body}$ 衰退——$d$ 值完好但算子与基质逐渐脱锚 [H]。
 
 **可证伪预测**：
-- FC-MechSyn-1：PE∝Ψ_f：同一被试的前额叶预测误差信号（EEG MMN振幅）应与Ψ_f代谢代理（皮质醇/静息代谢率）正相关——若无相关则PE-Ψ_f桥接为类比而非可测联结
+- FC-MechSyn-1：`H-NEURO-4b`：同一被试的前额叶预测误差信号（EEG MMN振幅）应与局部摩擦代理（皮质醇/静息代谢率/恢复半衰期）在受控窗口内正相关——若无相关则 PE-to-friction 桥接为类比而非可测联结
 - FC-MechSyn-2：衰老被试（κ_body↓代理：握力/步态稳定性↓）的d值代理应与正常水平接近，但算子-基质耦合（运动-认知整合任务绩效）显著下降——若d值和耦合同步下降则"d完好但脱锚"的衰老特征主张需修订
 
 ---

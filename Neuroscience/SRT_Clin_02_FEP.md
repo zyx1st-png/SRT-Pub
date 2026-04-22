@@ -26,6 +26,17 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Neural Proxy Boundary
+
+This file may use FEP / predictive-processing quantities as bridge language, but it must not silently identify them with SRT core quantities. Prediction error, variational free energy, and precision weighting are optimization / inference constructs. Under `H-NEURO-4b`, they may enter a local neural friction proxy only inside an explicit measurement window:
+
+\[
+\widehat{\Psi}_{f,neural}^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal L_{model}(t)
+\]
+
+Outside that window, PE and FEP remain comparison terms rather than definitions of `Ψ_f`, `d`, burden, or subjectivity.
+
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -200,7 +211,7 @@ d_{expansion} \propto \text{Uncertainty}_{vital} - \text{Uncertainty}_{epistemic
 | 主张 | 有效条件 | 退化/失效条件 |
 |:----|:--------|:------------|
 | T-FEP-1：FEP 不充分性 | 在匹配 $\boldsymbol{\Pi}$ 与任务难度后，真实赌注条件与模拟赌注条件的长期行为仍分离 | 若三种条件（真实风险/无风险/模拟风险）的长期 $\hat{d}_{min}$ 轨迹收敛，则"不可逆赌注不可还原"应降级为"工程性偏好设置"（见 `Governance/SRT_LAB_HYPOTHESES.md` H-Stake-01 降级触发） |
-| $\Psi_f \propto \varepsilon_{pred}$ 映射（H-NEURO-4b） | 作为 P3/P4 候选的局部线性近似，在代谢与预测误差可同时测量的范围内 | 若 $\Psi_f$ 代理（代谢率）与预测误差代理（MMN 振幅）跨个体无相关，则该映射在可测层面为空；下游临床结论不得据此升级为 P2 定理 |
+| `H-NEURO-4b` neural friction proxy | 作为 P3/P4 候选的局部线性近似，在代谢、模型竞争负荷与预测误差可同时测量的范围内 | 若 \(\widehat{\Psi}_f\) 代理（代谢率/应激/恢复半衰期）与预测误差代理（MMN 振幅等）在受控窗口内无独立关联，则该映射退回为 FEP comparison；下游临床结论不得据此升级为 P2 定理 |
 | FEP 是"候选重读对象"而非"被 SRT 超越的框架" | 始终 | 这是当前仓库的稳定口径（T-FEP-1 Tension-Rev-ExtT4）；任何把 SRT 写成"已胜出 FEP"的表述都超出当前 bridge 强度 |
 
 ---
