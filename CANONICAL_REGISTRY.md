@@ -93,9 +93,18 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 ### 9. Philosophy 主轴
 - Foundations：`Philosophy/SRT_Philosophy_Foundations_CompactCore.md` / `Philosophy/SRT_Philosophy_Foundations.md`
 - Social Economics：`Philosophy/SRT_Social_Economics_CompactCore.md` / `Philosophy/SRT_Social_Economics.md`
+- Political Philosophy：`Philosophy/SRT_Political_Philosophy.md`（`SRT-POLITICAL-PHILOSOPHY`）
 - Political Rights：`Philosophy/SRT_Political_Rights.md`（`SRT-POLITICAL-RIGHTS`）
-- 角色：形成 Philosophy 板块从三域本体论与选择一元论，到社会现实、制度与价值结构的 compact core 主线
+- 角色：形成 Philosophy 板块从三域本体论与选择一元论，到社会现实、制度、权利、合法性与政治病理的 compact/main 主线
 - 注意：原文继续保留接口批次、案例扩展、社会科学经典映射与 split 导航
+
+### 9a. SRT 政治哲学
+- 主文件：`Philosophy/SRT_Political_Philosophy.md`
+- id：`SRT-POLITICAL-PHILOSOPHY`
+- layer：L1 / epistemic：bridge / status：axiomatic_hybrid_v1
+- 说明：把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一重写为多主体共同现实选择的生成—沉积—封闭—再打开过程；以 P2/P3 为主，并将制度判准与紧急状态边界显式标记为 P4
+- 与 `SRT-SOC-ECONOMICS` / `SRT-POLITICAL-RIGHTS` 的关系：前者提供社会现实、制度与结构性不公接口；后者提供权利、授权与投票后验验证的子接口；本文件负责收口为完整政治哲学主文
+- 重要追加：政治合法性被重写为可持续共同选择；反支配被重写为反现实定义权垄断；危机政治以 `minimum necessary interruption` 为护栏
 
 ### 9b. SRT 政治权利理论
 - 主文件：`Philosophy/SRT_Political_Rights.md`
