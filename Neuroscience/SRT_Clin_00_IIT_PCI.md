@@ -56,12 +56,13 @@ $$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
 ---
 
 ### Ax-IIT-3: \(\Phi\)–\(d\) Complementarity Axiom
-定义意识阈值：
+定义候选主体性门：
 \[
-\Phi\cdot d > C_{critical}
+\Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
-* **Implication（中文）**：高 \(\Phi\) 仅提供结构能力；缺少 \(d\) 时无法生成稳定显现。
-* **Tension-Rev-ExtT2 (经验共变性 vs. 概念必然性)**：IIT 的 PCI 等临床指标在区分有意识/无意识状态方面具有强大的经验有效性。SRT 对此的解释不是否认这些指标的价值，而是揭示其有效性的**深层原因**：在地球生物系统中，高 $\Phi$（高结构整合性）与高 $d$（高风险梯度带宽）和高 $\Psi_f$（正本体论摩擦）之间存在系统性的**经验共变关系**——因为生物演化同时选择了整合性、具身风险和代谢维持。PCI 之所以"够用"，是因为在生物系统这个受限样本空间中，测量 $\Phi$ 近似等价于间接测量了 $\Phi \cdot d$ 的乘积（$d$ 在活体生物中始终 $> 0$）。
+* **Level note**：当前为 hypothesis / operational proxy。乘法门是结构性偏好，不是 IIT 或 SRT 已共同证明的意识阈值。
+* **Implication（中文）**：高 \(\Phi_{proxy}\) 仅提供结构能力 proxy；缺少 \(d_{proxy}\) 时无法支持 stake-bearing 显现判定。
+* **Tension-Rev-ExtT2 (经验共变性 vs. 概念必然性)**：IIT 的 PCI 等临床指标在区分有意识/无意识状态方面具有强大的经验有效性。SRT 对此的解释不是否认这些指标的价值，而是揭示其有效性的**深层原因**：在地球生物系统中，高 $\Phi_{proxy}$（高结构整合性）与高 $d_{proxy}$（高风险梯度带宽）和高 $\widehat{\Psi}_f$（正局部负担 proxy）之间可能存在系统性的**经验共变关系**——因为生物演化同时选择了整合性、具身风险和代谢维持。PCI 之所以"够用"，可能是因为在生物系统这个受限样本空间中，测量 $\Phi_{proxy}$ 间接追踪了 $\Phi_{proxy} \cdot d_{proxy}$ 的候选组合（$d$ 在活体生物中通常 $> 0$）。
 * **关键预测 (可证伪)**：若能构造一个高 $\Phi$ 但 $d = 0$ 的人工系统（例如高度互联的电网或 Grid-IIT 理论模型），SRT 预测该系统的 PCI 虽然在数值上可能很高，但**不会产生任何现象性体验**。这是 SRT 与 IIT 的核心分歧点：IIT 认为 $\Phi > 0$ 即充要，SRT 认为还需要 $d > 0$（即风险梯度耦合）。
 
 ---
@@ -109,7 +110,7 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 - I(σ)=整合（不同脑区响应的全局关联度）↔ Ψ_f（锚定摩擦代价/整合成本）：均测量”维持统一状态的代价”——对应关系[H]，且方向相反（高Ψ_f≠高I；需要说明）
 - **方向不一致问题**：高I（高整合）通常与高意识正相关；高Ψ_f则与摩擦/代价正相关，与高效选择负相关。I-Ψ_f的对应存在方向张力——应修正为：I对应低Ψ_f（高整合效率）而非高Ψ_f。
 
-* **Implication（中文）**：PCI 测量的是 $\hat{G}_\theta$ 的”可选择容量”（系统能区分多少不同选择路径），而非直接的体验量（qualia）。即使PCI高的系统也可能没有意识体验（如复杂的无意识信息处理）——与Def-Phi-Unity（Φ非意识本身）对齐，也与Ax-CONSC-4（整合选择阈值Φ_SRT=d·Ψ_f）呼应：PCI是Φ_SRT的粗粒代理，而非等同于意识。
+* **Implication（中文）**：PCI 测量的是 $\hat{G}_\theta$ 的”可选择容量”（系统能区分多少不同选择路径），而非直接的体验量（qualia）。即使PCI高的系统也可能没有意识体验（如复杂的无意识信息处理）——与Def-Phi-Unity（Φ非意识本身）对齐，也与当前候选门语法呼应：PCI至多是整合/容量的粗粒代理，而非等同于意识。
 
 **可证伪预测**：
 - FC-CLIN2-1：在意识障碍患者队列中，PCI与d值代理（目标导向行为一致性×认知灵活性）的相关应高于PCI与单纯神经放电率的相关——若PCI主要预测神经活动强度而非选择容量则”可选择容量”解读需降级
@@ -174,7 +175,7 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 | 主张 | 有效条件 | 退化/失效条件 |
 |:----|:--------|:------------|
-| T-IIT-4：$\Phi \cdot d > C_{crit}$ 的主体性阈值 | 作为排除条件：低 $\Phi$ 或 $d=0$ 则无主体性 | 作为充分条件：$\Phi$ 是整合度代理，不是现象统一性的直接度量；$d$ 的测量代理当前仍是间接的（见 DP-IIT-2） |
+| T-IIT-4 / legacy T-NEURO-1：$\Phi_{proxy} \cdot d_{proxy} > C_{crit}$ 的候选主体性门 | 作为排除性 proxy：低 $\Phi_{proxy}$ 或低 $d_{proxy}$ 会削弱主体性判定 | 作为充分条件：$\Phi$ 是整合度代理，不是现象统一性的直接度量；$d$ 的测量代理当前仍是间接的（见 DP-IIT-2） |
 | $\Phi_{proxy}$（PCI / LZ）作为意识指标 | NCC 范式内作为临床和实验工具有效 | 若 functional binding 与 phenomenal binding 系统分离，则 $\Phi_{proxy}$ 捕捉的是前者，不直接等于后者（见 DP-IIT-2） |
 | H-IITGWT-01 的"高 $\Phi$ / 高广播 / 低 $d$" 设计 | 前提：A/B/C 三组架构参数匹配 | 若现有实验技术无法独立操控 $\Phi_{proxy}$ 与 $d_{min}$ 代理，则三组的分离读出会混淆 |
 
@@ -184,7 +185,7 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 **挑战来源**：NCC 研究（Dehaene、Koch、Tononi 等）是当前意识神经科学最稳健的经验程序。它的核心是**方法论悬置**：刻意不回答"为什么神经活动给出体验"，只问"哪些神经模式稳定伴随有意识状态"。这是一个研究策略，不是理论立场。
 
-**对 SRT 的直接压力**：SRT 在 T-IIT-4 和 T-NEURO-1 处做的事，恰好是 NCC 刻意悬置的事——它在机制层解释**为什么**。这意味着：
+**对 SRT 的直接压力**：SRT 在 T-IIT-4 和 legacy T-NEURO-1 / current `H-NEURO-Ignition-1` 处做的事，恰好是 NCC 刻意悬置的事——它在机制层解释**为什么**。这意味着：
 - NCC 数据**既不直接支持也不直接反对** SRT 的 $\hat{G}_\theta$ 翻译
 - SRT 对任何 NCC 相容的状态，都可以事后写成"L₀→L₁ 锚定成功"——但这种兼容性本身不产生区分预测
 - 一个意识研究者可以合理地问：在 NCC 之上，SRT 的 $d/\Psi_f$ 框架比直接用 GWT 或 HOT 多出了什么可检验的区分？
@@ -200,14 +201,14 @@ I(\text{Input};\text{Output})>0\;\land\;\hat{G}_\theta[L_1]=\varnothing
 
 **挑战来源**：Percy & Agarwal (2026, *Consciousness and Cognition*) 的综述指出：functional binding（特征整合、任务路由、输出统一）不自动推出 phenomenal binding（多个基础信息单元作为同一现象切片同时共在）。$\Phi$ 及其代理（PCI、LZ 复杂度）测量的是信息整合度，主要捕捉 functional binding，而不是现象统一性本身。
 
-**对 SRT 的直接压力**：T-IIT-4 使用 $\Phi_{proxy}$ 作为整合代理，T-NEURO-1 用 $\Phi \cdot d > C_{crit}$ 作为意识阈值。如果 $\Phi_{proxy}$ 只是 functional binding 的代理，那这个阈值可能对了一半：
+**对 SRT 的直接压力**：T-IIT-4 使用 $\Phi_{proxy}$ 作为整合代理，current `H-NEURO-Ignition-1` 用 $\Phi_{proxy} \cdot d_{proxy} > C_{crit}$ 作为候选点燃门。如果 $\Phi_{proxy}$ 只是 functional binding 的代理，那这个门可能只对了一半：
 - $d$ 那半处理了"主体性/攸关性"
 - $\Phi$ 那半**还没有**处理"现象统一性"
 
 **当前 SRT 的诚实回答**：
-- T-NEURO-1 的 $\Phi$ 应理解为 $\Phi_{proxy}$，它是**必要条件的代理**，不是现象统一性的充分判准
+- `H-NEURO-Ignition-1` 的 $\Phi$ 应理解为 $\Phi_{proxy}$，它是**必要条件的代理**，不是现象统一性的充分判准
 - SRT 当前没有独立的现象绑定理论——这是已知的开放缺口，不应被 bridge 语言掩盖
-- 最保守的当前表述：$\Phi_{proxy} \cdot d > C_{crit}$ 是主体性显现的**候选结构条件组合**；f-binding ≠ p-binding 的约束是一个尚未被 SRT 正式处理的接口窗口
+- 最保守的当前表述：$\Phi_{proxy} \cdot d_{proxy} > C_{crit}$ 是主体性显现的**候选结构条件组合**；f-binding ≠ p-binding 的约束是一个尚未被 SRT 正式处理的接口窗口
 
 ---
 
@@ -479,7 +480,7 @@ $$\Delta \text{PCI}_{high\text{-}d} > \Delta \text{PCI}_{low\text{-}d}$$
 核心方程与含义：
 
 1. **整合信息即不可分解性** (Ax-IIT-1): $\Phi(\hat{G}_\theta) \equiv \min_{\text{cut}} \Delta\mathcal{I}(\hat{G}_\theta)$。$\Phi$ 度量的是 $\hat{G}_\theta$ 抵抗被分解为独立子算子的结构能力。
-2. **意识阈值** (Ax-IIT-3): $\Phi \cdot d > C_{critical}$。高 $\Phi$ 提供结构能力，高 $d$ 提供本体论深度，二者乘积超过临界值才产生稳定显现。
+2. **候选主体性门** (Ax-IIT-3 / H-NEURO-Ignition-1): $\Phi_{proxy} \cdot d_{proxy} > C_{critical}$。高 $\Phi_{proxy}$ 提供结构能力 proxy，高 $d_{proxy}$ 提供本体论深度 proxy；乘法形式当前是结构性偏好，不是充分判准或已证明阈值。
 3. **PCI 作为选择容量** (Ax-CLIN-2): $\text{PCI} \propto \int_\Omega \mathcal{D}(\sigma) \cdot \mathcal{I}(\sigma)\,d\sigma$。PCI 度量 $\hat{G}_\theta$ 的即时分化-整合能力，而非直接的体验量。
 4. **PCI-d 耦合** (T-CLIN-1): $\Delta d > 0 \Rightarrow \Delta\text{PCI} > 0$。不可逆风险引入使 $d$ 上升，迫使 $\hat{G}_\theta$ 扩展整合范围，PCI 随之升高。
 

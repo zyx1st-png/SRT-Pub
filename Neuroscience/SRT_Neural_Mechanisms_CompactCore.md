@@ -112,15 +112,21 @@ SRT 在这里的强主张是：
 
 ## 6. 点燃、离散帧与摩擦
 
-### 6.1 Ignition as Phase Transition
+### 6.1 Ignition as Candidate Gate Family
 \[
-\mathcal A(\sigma) \ge \tau_{ignite} \land \Phi\cdot d > C_{critical}
+\mathcal A(\sigma) \ge \tau_{ignite} \land \Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
 
 > **Level**: hypothesis / operational proxy. The product gate is a current structural preference; ignition as threshold or phase transition is not yet a proven neural theorem.
 
 最短说法：
-> **点燃不是激活增强，而是整合度与关切梯度共同跨阈后的相变。**
+> **点燃不是激活增强；当前最小模型把它写成整合度 proxy 与关切梯度 proxy 共同约束的候选门。**
+
+| Gate | Use | What would favor it |
+|------|-----|---------------------|
+| Multiplicative | structural preference when both integration and concern-gradient look jointly necessary | Either factor being low blocks ignition, and an interaction term predicts access better than linear terms alone. |
+| Additive | operational fallback when compensation is observed | High integration can partly compensate low `d_proxy`, or high `d_proxy` can partly compensate low integration. |
+| Probabilistic | lab-facing model for noisy / graded reports | Trial-level access is better fit by sigmoid probability than by hard threshold. |
 
 ### 6.2 Discrete Frame Theorem
 \[
@@ -131,9 +137,9 @@ L_1(t)=\sum_n \text{Frame}_n\,\delta(t-t_n)
 - 显现是离散更新帧
 - 连续意识感是高频帧序列的结果
 
-### 6.3 Prediction Error as Friction Proxy
+### 6.3 Prediction Error as Local Friction Proxy
 \[
-PE \propto \Psi_f
+\widehat{\Psi}_{f,neural}^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal L_{model}(t)
 \]
 
 > **Level**: hypothesis / operational proxy, downstream of `H-NEURO-4b`. This bridge must not be used to promote PE-based conclusions to theorem level.
@@ -141,9 +147,12 @@ PE \propto \Psi_f
 这一步很关键，因为它把：
 - 预测误差
 - 自由能更新
-- 本体论摩擦
+- 模型竞争负荷
+- 局部摩擦 proxy
 
-压到同一条桥上。
+压到同一条可测桥上，但不把它们写成同一对象。
+
+`L_model` 在此指竞争内部假设的负荷：候选 latent cause、行动策略、身体状态解释或社会意图解释之间的后验歧义、有效复杂度与分歧度。实验上可用解码器后验熵、候选解释数量、ACC/PFC conflict proxy、反应时/眼动歧义指标近似；这些近似不能单独定义 `Ψ_f`。
 
 ---
 
@@ -207,12 +216,16 @@ SRT 对病理学的最强改写之一是：
 
 1. Prediction error is not an independent friction proxy.
    - 当前承受方式：`H-NEURO-4b` only treats PE as a local measurable candidate, not an identity with `Ψ_f`.
-   - 若成立需撤回什么：撤回 PE→`Ψ_f` 的局部线性桥，把相关段落降为普通 FEP comparison.
+   - 若成立需撤回什么：撤回 PE-to-local-friction-proxy 的局部线性桥，把相关段落降为普通 FEP comparison.
 
 2. `Φ` and `d` cannot be independently measured in neural systems.
    - 当前承受方式：the product gate is an operational proxy and can be replaced by additive or probabilistic gates.
-   - 若成立需撤回什么：撤回 `Φ·d` threshold as a consciousness criterion and keep only separated diagnostic dimensions.
+   - 若成立需撤回什么：撤回 `Φ_proxy·d_proxy` candidate gate as a subjectivity criterion and keep only separated diagnostic dimensions.
 
 3. Ignition is continuous, report-mediated, or task-dependent rather than a phase transition.
    - 当前承受方式：phase-transition language is marked as hypothesis and must be tied to explicit observation windows.
    - 若成立需撤回什么：撤回 “crossing threshold” as ontology and rewrite ignition as graded stabilization.
+
+4. Neural burden is fully reducible to generic predictive error.
+   - 当前承受方式：`H-NEURO-4b` requires residual burden proxies such as metabolic cost, recovery half-life, stress load, or position-bound consequence beyond PE itself.
+   - 若成立需撤回什么：撤回 SRT-specific neural burden language and keep the section as a predictive-processing translation note.

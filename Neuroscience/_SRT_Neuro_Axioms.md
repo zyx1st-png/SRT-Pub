@@ -83,29 +83,44 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 > **Level**: hypothesis / operational proxy (P3/P4). This bridge belongs to the P3 candidate layer; any downstream conclusion that relies on it must not be promoted to P2 theorem status without an independent derivation or measurement path.
 
-定义局部预测误差与本体论摩擦密度的候选映射：
+定义局部预测误差、模型负荷与本体论摩擦代理之间的候选映射：
 \[
-\Psi_f^{local}(t)=\alpha_{pe}\,\|\varepsilon_{pred}(t)\|+\beta_{load}\,\mathcal{L}_{model}(t)
+\widehat{\Psi}_{f,neural}^{local}(t)=\alpha_{pe}\,\|\varepsilon_{pred}(t)\|+\beta_{load}\,\mathcal{L}_{model}(t)
 \]
-其中 \(\varepsilon_{pred}\) 为预测误差，\(\mathcal{L}_{model}\) 为模型不一致负荷。
+其中 \(\widehat{\Psi}_{f,neural}^{local}\) 是神经层局部摩擦 proxy，不是全局 \(\Psi_f\) 本身；\(\varepsilon_{pred}\) 为预测误差，\(\mathcal{L}_{model}\) 为模型不一致负荷。
 
 > [R→Friston 2010 *Nature Reviews Neuroscience*（FEP：预测误差极小化作为大脑的第一性原理）; Rao & Ballard 1999 *Nature Neuroscience*（预测编码：PE在层级神经网络中的传播）; Schultz et al. 1997 *Science*（多巴胺奖励预测误差：RPE信号的神经基础）; Friston et al. 2014 *Neuropharmacology*（精神病理学的FEP解释：精度失调/PE紊乱）]
 
 * **R/H 区分**：
   - [R] 预测误差框架（Friston/Rao & Ballard）；多巴胺RPE（Schultz）——均为既有神经科学
-  - [H] **SRT候选联结**：Ψ_f^local = α_pe·||ε_pred|| + β_load·L_model——将 PE 与本体论摩擦密度作局部线性 proxy 是 SRT 独有的双层桥接主张。此处不把计算层（PE）与本体论层（Ψ_f）写成同一对象，只把它们作为可测窗口中的候选接口
+  - [H] **SRT候选联结**：\(\widehat{\Psi}_{f,neural}^{local}=\alpha_{pe}\|\varepsilon_{pred}\|+\beta_{load}\mathcal{L}_{model}\)。将 PE 与本体论摩擦作局部线性 proxy 是 SRT 的桥接主张；此处不把计算层（PE）与本体论层（\(\Psi_f\)）写成同一对象。
 
-* **L_model操作化**（模型不一致负荷）：
-  - 贝叶斯模型复杂度代理：模型的有效自由度（EDF）或Bayes因子中的惩罚项
-  - 实验室测量：同时激活的竞争性解释数量 × 各假设后验之差异度
+* **三层分离**：
+  - **Identity claim**：PE \(\equiv \Psi_f\) 或 \(F\equiv\Psi_f\) 不在本假说中成立；全局同一性禁止从此处回推。
+  - **Linear local approximation**：在任务、时标、代谢读数与报告窗口受控时，PE 与 \(\mathcal{L}_{model}\) 可以作为 \(\widehat{\Psi}_{f,neural}^{local}\) 的一阶候选项。
+  - **Operational measurement window**：只有在预测误差代理、模型竞争代理与代谢/应激代理可同步测量时，本式才可用于实验建模；超出窗口时应退回为 FEP / predictive processing 比较，而非 SRT core 结论。
 
-* **系数说明**：α_pe/β_load为待拟合参数（需多模态同步数据确定）；当前线性形式为候选，非唯一选择
+* **\(\mathcal{L}_{model}\) 候选函数族**（模型不一致负荷）：
+  \[
+  \mathcal{L}_{model}(t)=H(q_t(h))+\lambda_C\,C_{eff}(q_t)+\lambda_D\sum_{i<j}q_iq_jD(h_i,h_j)
+  \]
+  - \(h_i\)：当前系统内互斥或竞争的内部假设，包括潜在原因、行动策略、身体状态解释或社会意图解释。
+  - \(q_t(h)\)：各假设在当前时刻的后验权重；\(H(q_t)\) 表示歧义/不确定性。
+  - \(C_{eff}\)：有效自由度、活动参数数或 Bayes factor penalty 等复杂度代理。
+  - \(D(h_i,h_j)\)：竞争假设之间在感知预测、行动后果或价值方向上的分歧度。
 
-* **Implication（中文）**：预测误差不是纯统计残差，而是 $\hat{G}_\theta$ 维持当前显现时遭遇的局部摩擦项。
+* **操作化近似**：
+  - 解码器后验熵、候选 latent cause 数量、候选策略间表示距离、ACC/PFC conflict proxy、眼动/反应时的歧义指标。
+  - 这些只近似 \(\mathcal{L}_{model}\)，不能单独定义 \(\Psi_f\) 或 \(d\)。
+
+* **系数说明**：\(\alpha_{pe}/\beta_{load}\) 为待拟合参数（需多模态同步数据确定）；当前线性形式为 current candidate，不是唯一模型。若交互项或非线性项显著优于线性式，应保留 H-NEURO-4b 的 proxy 身份并替换函数族。
+
+* **Implication（中文）**：预测误差不是纯统计残差；在受控窗口内，它可能是 \(\hat{G}_\theta\) 维持当前显现时遭遇的局部摩擦信号之一。但 PE 不全局等同于 \(\Psi_f\)，也不自动推出主体性或体验。
 
 * **可证伪预测**：
-  - FC-NEURO4b-1：跨个体比较中，MMN振幅（EEG预测误差代理）应与皮质醇/代谢率（Ψ_f代谢代理）正相关（r>0.3）——若无相关则PE-Ψ_f线性映射在可测层面为空
-  - FC-NEURO4b-2：精准冥想训练降低L_model（减少竞争假设数量）后，Ψ_f代理应独立地（且早于）行为绩效提升下降——若Ψ_f代理改变与行为改变完全同步则PE-Ψ_f的独立测量路径存疑
+  - FC-NEURO4b-1：跨个体比较中，MMN振幅（EEG预测误差代理）应与皮质醇/代谢率（\(\widehat{\Psi}_f\) 代谢代理）正相关（r>0.3）——若无相关则 PE-to-friction 线性映射在可测层面为空。
+  - FC-NEURO4b-2：精准冥想训练降低 \(\mathcal{L}_{model}\)（减少竞争假设数量或后验分歧）后，\(\widehat{\Psi}_f\) 代理应独立地（且早于）行为绩效提升下降——若 \(\widehat{\Psi}_f\) 代理改变与行为改变完全同步，则独立测量路径存疑。
+  - FC-NEURO4b-3：若 PE 很高但代谢/应激/恢复半衰期代理稳定不变，或 PE 很低但局部负担代理持续升高，则 PE 不能作为该窗口中的摩擦 proxy。
 
 ---
 
@@ -140,24 +155,42 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 ---
 
-## III. Threshold Theorems (阈值定理)
+## III. Threshold / Gate Hypotheses (阈值/门控假说)
 
-### T-NEURO-1: Consciousness Threshold Theorem (\(\Phi\cdot d\))
-意识显现当且仅当：
+### H-NEURO-Ignition-1: Consciousness Ignition Gate Family (legacy `T-NEURO-1`)
+
+> **Compatibility note**: `T-NEURO-1` is a historical label. Current claim status is hypothesis / operational proxy; the label does not restore theorem status.
+
+候选点燃门可写成：
 \[
-\Phi\cdot d > C_{critical}
+\Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
-* **Implication（中文）**：整合信息量与存在关切的乘积才是意识阈值；任一缺失都不足以形成 \(L_1\) 稳定显现。
+* **Implication（中文）**：整合度 proxy 与关切/赌注 proxy 可能共同限制 \(L_1\) 稳定显现；当前不写成“当且仅当”，也不写成已证明的神经相变定理。
 
 > **Level reminder**: The multiplicative threshold is a structural preference and modeling hypothesis, not a proven phase-transition property.
 
-| Gate form | Level | Current use | Failure / revision condition |
-|-----------|-------|-------------|------------------------------|
-| Multiplicative gate: `\Phi_{proxy}\cdot d_{proxy} > C` | hypothesis / structural preference | Keeps integration and concern-gradient jointly necessary. | If either factor can compensate for the other in data, the product form must be weakened. |
-| Additive gate: `w_\Phi\Phi_{proxy}+w_d d_{proxy}>C` | operational proxy | Allowed when empirical compensation between integration and `d` is observed. | If additive fit hides distinct failure modes, return to separated gates. |
-| Probabilistic gate: `P(ignite)=\sigma(\alpha\Phi+\beta d+\gamma\Phi d-\delta)` | operational proxy | Lab-facing model for noisy or graded ignition reports. | If ignition is not separable from report/confidence effects, do not treat it as ontology. |
+| Gate form | Level | Current use | Evidence that would favor it | Failure / revision condition |
+|-----------|-------|-------------|------------------------------|------------------------------|
+| Multiplicative gate: `\Phi_{proxy}\cdot d_{proxy} > C` | hypothesis / structural preference | Keeps integration and concern-gradient jointly necessary. | Low `Φ_proxy` blocks ignition despite high `d_proxy`, and low `d_proxy` blocks ignition despite high `Φ_proxy`; interaction term improves trial prediction. | If either factor can compensate for the other in data, the product form must be weakened. |
+| Additive gate: `w_\Phi\Phi_{proxy}+w_d d_{proxy}>C` | operational proxy | Allowed when empirical compensation between integration and `d` is observed. | Weighted sum fits ignition/report better than interaction terms across tasks. | If additive fit hides distinct failure modes, return to separated gates. |
+| Probabilistic gate: `P(ignite)=\sigma(\alpha\Phi+\beta d+\gamma\Phi d-\delta)` | operational proxy | Lab-facing model for noisy or graded ignition reports. | Trial-level reports are graded/noisy and logistic models outperform hard thresholds. | If ignition is not separable from report/confidence effects, do not treat it as ontology. |
 
 The threshold / phase-transition reading remains a modeling hypothesis; downstream uses must state which gate they assume.
+
+### Measurement and Falsification Boundary
+
+| Neural bridge claim | Current status | What would count against it |
+|---------------------|----------------|-----------------------------|
+| PE as local friction proxy | H-NEURO-4b; P3/P4 operational proxy | PE proxies fail to covary with metabolic/stress/recovery-cost proxies under controlled task windows, or predict no variance beyond generic surprise. |
+| Separable `Φ_proxy` and `d_proxy` | measurement hypothesis | The two cannot be independently manipulated or statistically separated; all apparent `d` effects collapse into integration, arousal, report confidence, or task difficulty. |
+| Ignition as threshold phenomenon | modeling hypothesis | Conscious access varies continuously with no discontinuity after controlling report criteria, attention, and confidence. |
+| Neural burden not reducible to generic PE | bridge hypothesis | All proposed burden proxies are explained by precision-weighted PE alone, with no residual effect from stake, recovery cost, or position-bound consequence. |
+
+### Relation to Neighboring Frameworks
+
+- **FEP / predictive processing**: FEP tracks variational optimization, prediction error, precision weighting, and active inference. SRT only adds a distinct claim when it ties those quantities to payability, stake, and position-bound consequence. If a FEP model already explains those residuals, SRT should absorb that result rather than claim rhetorical victory.
+- **IIT**: IIT-style \(\Phi\) and PCI-like measures are treated here as integration / capacity proxies. They are not by themselves identical with consciousness, `d`, or \(\Psi_f\).
+- **Global workspace / ignition families**: SRT re-reads ignition as candidate selection and stabilization. Where global broadcasting alone predicts the data, the SRT-specific `d` / burden addition loses incremental force.
 
 ---
 
@@ -336,13 +369,13 @@ SRT 的核心论证: **困难问题源于 $L_2$ 寄生倒置**——当我们将
 - **神经幽灵算子 (Neural Ghost Operator, L₀→L₁)**：$\hat{G}_\theta^{neural}: L_0^{neural}\to L_1^{neural}$，具身参数 $\theta=(W,\vec{M},\mathcal{C},V(t))$；神经系统是跨域选择的物理实例化。
 - **三域映射 (Domain Mapping, L₀/L₁/L₂)**：$L_0$ = 所有可达发放模式流形；$L_1$ = 全局点燃子集；$L_2$ = 算子不动点（先验结构）。
 - **本体论摩擦 (Ontological Friction, L₀)**：$\Psi_f=\int_\gamma \|\nabla F\| dt \propto E_{metabolic}$；选择必须支付的能量代价。
-- **意识阈值 (Consciousness Threshold, L₁)**：$\Phi\cdot d > C_{critical}$；乘法门当前只是结构性偏好，阈值 / 相变读法仍为建模假说。
+- **点燃候选门 (Ignition Gate, L₁)**：$\Phi_{proxy}\cdot d_{proxy} > C_{critical}$；乘法门当前只是结构性偏好，阈值 / 相变读法仍为建模假说。
 
 ### Formalization Summary (形式化概述)
 
 - **除法归一化** (Ax-NEURO-3)：$R_i = L_i^n / (\sigma^n + \sum_j w_{ij}L_j^n)$。受限系统执行选择的最优解形态，非经验细节。
 - **预测编码** (Ax-NEURO-4)：$\Delta\theta \propto -\nabla_\theta F$。学习是 $\hat{G}_\theta$ 在 $L_2$ 上的收敛轨迹。
-- **预测误差-摩擦映射** (H-NEURO-4b)：$\Psi_f^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal{L}_{model}(t)$。预测误差是 $\hat{G}_\theta$ 维持当前显现时的候选局部摩擦 proxy。
+- **预测误差-摩擦映射** (H-NEURO-4b)：$\widehat{\Psi}_{f,neural}^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal{L}_{model}(t)$。预测误差是 $\hat{G}_\theta$ 维持当前显现时的候选局部摩擦 proxy 之一，不是全局 \(\Psi_f\) 的定义。
 
 ### Mechanism Explanation (机制解释)
 
@@ -427,6 +460,6 @@ $$\text{大脑损伤} = \theta_{bio} \to \theta_{bio}' \quad (\text{约束参数
 |具身 → 除法归一化|A4|有限代谢 → 信息论优化|Ax-Neuro-2, T-Neuro-1|
 |适应度 → 预测编码|A7|$\Psi_f$ 的变分上界 = $F$|Ax-Neuro-3|
 |锚定 → CTC 绑定|A2|存在需要稳定 → 再入振荡|Ax-Neuro-6, T-Neuro-3|
-|脆弱性 → 意识阈值|A11|无脆弱性 → 无 $d$ → 无意识|Ax-Neuro-8|
+|脆弱性 → 点燃候选门|A11|无脆弱性 → 无 $d$ → 无意识|Ax-Neuro-8|
 |闭包 → 自创生|A5|选择必须维持选择能力|Ax-Neuro-12, T-Neuro-7|
 |连续性 → 同构性|A12|选择谱系不中断|Ax-Neuro-0|

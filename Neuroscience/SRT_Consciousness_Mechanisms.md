@@ -37,12 +37,13 @@ dependency: [SRT-NEURO-MECH-001]
 
 ## I. Global Workspace as Selection Phase (全局工作空间作为选择相)
 
-### Ax-CONSC-MECH-1: Ignition Phase Transition Axiom
-定义全局点燃为相变条件：
+### Ax-CONSC-MECH-1: Ignition Candidate Gate Axiom
+定义全局点燃的候选门控条件：
 \[
-\mathcal{A}(\sigma)\ge \tau_{ignite}\quad\land\quad \Phi\cdot d > C_{critical}
+\mathcal{A}(\sigma)\ge \tau_{ignite}\quad\land\quad \Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
-* **Implication（中文）**：点燃不是“更强激活”，而是选择相变；只有当整合度与关切梯度同步超过阈值，才会形成稳定显现。
+* **Level note**：当前为 hypothesis / operational proxy。乘法门是结构性偏好，不是已证明的神经定理；加法门与概率门仍是可用替代模型。
+* **Implication（中文）**：点燃不是“更强激活”，而是候选内容在整合度 proxy 与关切梯度 proxy 的共同约束下被稳定选入。本文不把该条件写成“当且仅当”。
 
 ---
 
@@ -202,6 +203,8 @@ B_{consc} = \int \omega(\sigma)\,d\sigma < B_{max}
 P_{ignite}=\sigma\!\left(\alpha C_{wave}+\beta(\Phi\cdot d)+\gamma D_{align}-\delta\right)
 \]
 其中 \(C_{wave}\) 为跨区相位相干，\(D_{align}\) 为波方向与任务需求的一致性。
+
+> **Level note**：这是 probabilistic gate variant，用于实验建模行进波路由效应；不证明 `Φ·d` 是唯一点燃准则。
 
 > [R→Fries 2005 *Trends in Cognitive Sciences*（相干-通讯假说：脑区间γ相干作为路由门控）; Rubino et al. 2006 *Nature Neuroscience*（行进波在运动皮层决策中的时空组织作用）; Muller et al. 2018 *Nature Reviews Neuroscience*（大脑行进波综述：感知/认知/决策中的角色）; Dehaene & Changeux 2011（全局工作空间点燃：跨区大规模同步）]
 
@@ -633,7 +636,7 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
 
 ### Definition Summary (定义概述)
 
-- **点燃相变 (Ignition Phase Transition, L₀→L₁)**：$\mathcal{A}(\sigma)\ge\tau_{ignite} \land \Phi\cdot d > C_{critical}$；选择从潜势到实在的相变条件，非简单激活增强。
+- **点燃候选门 (Ignition Candidate Gate, L₀→L₁)**：$\mathcal{A}(\sigma)\ge\tau_{ignite} \land \Phi_{proxy}\cdot d_{proxy} > C_{critical}$；选择从潜势到实在的候选门控条件，非简单激活增强。阈值 / 相变读法仍是建模假说。
 - **拓扑绑定 (Topological Binding, L₁)**：$\mathcal{B}:\{\sigma_i\}\to\sigma_{bound}$，$\Delta\phi_i\to 0$；相位同步锁定产生统一体验。
 - **意识带宽 (Consciousness Bandwidth, L₁)**：$B_{consc}=\int\omega(\sigma)d\sigma < B_{max}$；受限资源下的显现竞争。
 - **行进波路由 (Traveling Wave Routing, L₀→L₁)**：$\mathcal{R}_{wave}=\nabla\phi\cdot\hat{n}_{hier}$；方向性门控决定候选进入 $L_1$ 的优先序。
