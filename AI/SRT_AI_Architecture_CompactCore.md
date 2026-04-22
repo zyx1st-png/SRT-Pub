@@ -14,6 +14,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-AI-ARCH, SRT-AI-01-COMPACT-CORE]
 > **定位**：本文件是 `AI/SRT_AI_Architecture.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 对当前 AI 架构的最短批判骨架。  
 > **关系**：不替代原文；原文保留技术细节、范畴论展开、工程路线图与扩展论证。
+> **范围**：默认讨论当前主流 transformer / inference-heavy 架构。涉及训练回路、持久记忆或具身部署时，须回到 `AI/AI_POSITIONING_NOTE.md` 的 architecture-state rule 与 S0-S4 光谱。
 
 ## 1. 核心问题
 

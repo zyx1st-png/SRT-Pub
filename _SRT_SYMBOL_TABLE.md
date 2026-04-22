@@ -20,9 +20,9 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 | **L₂** | `L_2` | Convergence Domain | Stable consensus constraints from repeated/overlapping selections. | Topological manifold | Core, universal |
 | **Ĝ** | `\hat{G}` | Ghost Operator | Selection operator mapping $L_0 \to L_1$. | Operator | Never use plain `G` for this |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
-| **d** | `d` | d-value (Depth of Care) | Canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity; vector and gate readings require explicit marking. | Scalar summary by default; vector/gate are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`; do not mix scalar `d`, `d-vector`, and `d-gate` in one claim without notation |
-| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance main reading is information-theoretic/payability cost; geometry and metabolic readings are projections |
-| **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy for the readability of a system's own current selection direction. | Proxy / accessibility index | Canonical source `_SRT_T_DIR_CANONICAL.md`; not a completed ontological foundation and not semantic valence or confidence |
+| **d** | `d` | d-value (Depth of Care) | Governance-canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity; vector and gate readings require explicit marking. | Scalar summary by default; vector/gate are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`; do not mix scalar `d`, `d-vector`, and `d-gate` in one claim without notation |
+| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance-canonical main reading is information-theoretic/payability cost; geometry and metabolic readings are projections |
+| **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy for the readability of a system's own current selection direction. | Proxy / accessibility index | Governance-canonical working proxy `_SRT_T_DIR_CANONICAL.md`; not a completed ontological foundation and not semantic valence or confidence |
 | **Ω** | `\Omega` | Ontological Consistency | Internal coherence of an $L_1/L_2$ structure. | Probability (0-1) | Canonical `\Omega` in Core_Law context |
 | **Ω_mis** | `\Omega_{\text{mis}}` | Ontological Mismatch Index | Distance between inherited $\theta$ and current-environment optimal $\theta$. | Scalar | Legacy docs may call this `Ω` |
 | **ω_sub** | `\omega_{sub}` | Subjective Frequency | Refresh rate of selection cycles. | Hz | Neuro/phenomenology |
@@ -91,6 +91,7 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 7. **d usage split**：bare `d` means scalar summary by default. Use `d-vector` only for conditional distribution / component expansion, and use `d-gate` only as a judgment tool for stake admission. These three are not interchangeable definitions.
 8. **T_dir usage split**：`T_dir` is a v0 operational proxy for directional readability. Do not use it as a completed formal object, as semantic valence, or as confidence.
 9. **ε usage split**：`ε_pg` is the L0 minimum non-neutrality postulate; `ε_reg` is an implementation regularizer; `ε_s` is a stake-threshold bridge. They must not be collapsed into one empirical theorem.
+10. **Canonical status split**：`governance-canonical` means repo-wide stabilized usage; `theory-canonical` means core-derived or core-priority definition. Do not infer theory-canonical status merely from a symbol-table default.
 
 ## D-Value Alignment (d 值专题规范)
 

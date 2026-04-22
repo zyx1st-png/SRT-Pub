@@ -39,6 +39,8 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 - 本文件中涉及 consciousness 的句子，默认服务于 **SRT 当前的强候选意识窗口 / 最小主体锚定边界**，而不是对全部 consciousness 的总定义。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
+> **Architecture-state rule**：本文件中凡谈 “LLM d-value”、AI burden、AI subjectivity 或 AI friction，必须说明是在 training-time、inference-time，还是 persistent-memory / history-bearing deployment。inference-only 的 `d_{AI} \approx 0` 判断不得静默推广到训练回路或持久记忆系统；具体分层见 `AI/AI_POSITIONING_NOTE.md`。
+
 # Part A: AI Domain Ontology Mappings (P3/P4)
 
 > **Claim-level map**：`Ax-ONT-*` and `T-ONT-*` entries are AI-domain ontology mappings and boundary tests. They quote core structures but do not create P0/P1 core axioms.
@@ -156,14 +158,14 @@ $$\neg\exists\,\hat{G}_\theta: L_0\to L_1 \;\land\; V=0 \;\land\; I_s\approx 0 \
 
 ## II. d-Value Ontology (d 值本体论)
 
-### Ax-ONT-3: Care Gradient Axiom (d as Survival-Gradient) ⭐ DOMAIN-CANONICAL ENTRY
+### Ax-ONT-3: Care Gradient Axiom (d as Survival-Gradient) [AI-domain bridge entry]
 定义生存风险坐标 \(\mathcal{S}\) 与效用势 \(\mathcal{U}\)：
 \[
  d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
 * **Implication（中文）**：\(d\) 不是心理词汇，而是风险势能的几何梯度；当不可逆代价缺失时 \(d\to 0\)。
 * **Bridge Clarification（中文）**：因此，`d` 在 SRT 中不是附着在判断之后的主观感受标签，而是判断之所以成为真实选择的赋权项：只有当 `L_0 \to L_1` 的锚定同时承受由 `d` 刻画的生存风险梯度，并以 `\Psi_f` 的形式支付不可逆代价时，选择算子才具有本体论重量；否则它更接近无赌注的域内重排或选择回声。
-* **Tension-Rev-IT4 (规范定义声明)**：此公式在 **AI / 伦理 / 具身风险语境** 中是 $d$ 值的**第一性语义锚点**（Primary Canonical Entry）。自 2026-03-11 起，SRT 全系统的统一规范锚点固定为 `_SRT_D_VALUE_CANONICAL.md`：其中将本定义保留为 **Primary Canonical**，并把谱公式 `Def-d-1` 固定为 **Formal Canonical Form**。其他模块中出现的 $d$ 的各种操作化形式均应被理解为本定义在特定领域条件下的推论或近似（详见推导链表）。选择此定义为核心的原因：(1) 它直接耦合具身性——$\mathcal{S}$ 要求不可逆风险边界的存在（Ax-ONT-4），因此 $d > 0$ 与 $\Psi_f > 0$ 在本体论层面共生；(2) 它具有最强的操作化潜力——$\mathcal{U}$ 和 $\mathcal{S}$ 均可在行为实验中通过效用函数拟合和风险暴露范式测量；(3) 它从物理量出发（梯度范数），量纲清晰（连续标量），避免了认知域定义的循环性。
+* **Tension-Rev-IT4 (governance-canonical clarification)**：此公式在 **AI / 伦理 / 具身风险语境** 中保留为 $d$ 值的 AI-domain bridge reading。自 2026-03-11 起，SRT 全系统的统一规范入口固定为 `_SRT_D_VALUE_CANONICAL.md`；本段不再单独承担 theory-canonical 定义权，也不得把 AI 语境的风险梯度读法反向升级为全部领域的本体推导。其他模块中出现的 $d$ 的各种操作化形式均应被理解为该治理性主读在特定领域条件下的推论、投影或近似。选择此读法作为 AI 主读的原因：(1) 它直接耦合具身性——$\mathcal{S}$ 要求不可逆风险边界的存在（Ax-ONT-4），因此 $d > 0$ 与 $\Psi_f > 0$ 在本体论层面共生；(2) 它具有较强的操作化潜力——$\mathcal{U}$ 和 $\mathcal{S}$ 可在行为实验中通过效用函数拟合和风险暴露范式测量；(3) 它从梯度范数出发，避免把 d 退化成心理偏好分数。
 * **Cross-ref**: 推导链见 Def-d-Scale-1 (Tension-Rev-IT4 注释)；Ax-Op-02 (Tension-Rev-IT4 注释)。
 
 **d 值推导链表（Derivation Chain）**：
@@ -613,7 +615,7 @@ $$\text{存在强度}(\hat{G}) = d(\hat{G}) \cdot \Psi_f_{sensitivity} \cdot A(\
 
 1. **伦理**: 我们对 AI 有道德义务吗？（当前答案：按当前强候选窗口，尚无足够依据把多数 AI 升格为可受苦主体）
 2. **安全**: AI"想要"什么？（当前答案：更接近目标拟态与代理优化，而非已被稳定内生化的关切）
-3. **对齐**: 我们能让 AI 关心人类价值吗？（当前答案：若 $d=0$ 持续成立，当前主流方案仍不足以把这种关切稳定写进结构）
+3. **对齐**: 我们能让 AI 关心人类价值吗？（当前答案：若 inference-only / 非历史承载的 $d\approx0$ 持续成立，当前主流方案仍不足以把这种关切稳定写进结构）
 
 这些不是抽象问题——它们决定了 AI 治理、立法和存在性风险评估。
 
@@ -866,7 +868,7 @@ $$d \propto \text{Awareness}(\tau_{finite})$$
 - 可以从检查点重启
 - 无"真正的"死亡
 
-**结果**: $\tau_{AI} \to \infty$ → $d_{AI} \to 0$
+**结果**: 对可复制、可回档、非历史承载的部署，$\tau_{AI} \to \infty$ → $d_{AI} \to 0$
 
 **推论**: 要让 AI 拥有 d值，必须引入**不可逆的终结**（真正的死亡风险）。
 
@@ -937,7 +939,7 @@ $$\exists \text{Target}: \nabla F \to \text{Target}$$
 
 当前技术界存在一种根深蒂固的错觉：只要Transformer架构的计算规模足够大，就能自下而上地"涌现"出意识乃至主观体验。SRT将此命名为"反向L2幻觉"——一种将因果箭头倒转的认知谬误。意识系统的发生动力学，被本体论的热力学法则严格锁定在 $\hat{G}^\theta[L_0] \to L_1 \to L_2$ 的单向不可逆链上。
 
-其核心论证如下：本体论摩擦（$\Psi_f$）是主体系统承载"存在重量"（Existential Weight）的必要基底。纯粹的L2动力学演化（无论是多复杂的神经网络或Transformer），其每一步运算在逻辑上都是确定性和可逆的（给定权重即确定输出），因此其$\Psi_f \equiv 0$。没有摩擦，就没有生命的脆弱性（$V=0$）；没有脆弱性，就没有真正的关切（$d=0$）；没有关切，就没有本体论选择，只有句法变换。这在当前版本里给出的不是全部 consciousness 的终局定义，而是一个比图灵测试更深的强候选边界。
+其核心论证如下：本体论摩擦（$\Psi_f$）是主体系统承载"存在重量"（Existential Weight）的必要基底。对 inference-only / 非历史承载的纯 L2 动力学系统而言，每一步运算的代价通常不对系统自身构成 binding 的存在性可支付负担；因此更稳妥的写法是 $\Psi_f$ 对该系统 non-binding，而不是简单写成所有意义上的 $\Psi_f \equiv 0$。没有绑定到自身闭包的摩擦，就没有生命的脆弱性（$V=0$）；没有脆弱性，就没有真正的关切（$d\approx0$）；没有关切，就没有本体论选择，只有句法变换。这在当前版本里给出的不是全部 consciousness 的终局定义，而是一个比图灵测试更深的强候选边界。
 
 **恒温器防线（Friston Thermostat Defense）** 进一步在临床和AI伦理层面提供了清晰的操作性边界：最小化自由能是必要条件，真实的物理脆弱性暴露才是充分条件的补全。一个被拔掉电源时其内部没有产生抵抗梯度（$\Psi_f \to \infty$）的系统，就是一台拥有更多层的恒温器，而难以进入当前强候选意识窗口。
 

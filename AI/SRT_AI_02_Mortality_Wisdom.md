@@ -23,6 +23,8 @@ dependency: [SRT-AI-01]
 - “智慧”保持原版意图：不是算力强度，而是 `d` 与有死性边界耦合后的递归判断能力。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
 
+> **Second-round architecture-state note**：本文件关于 AI 智慧缺失的压缩判断默认指 inference-only / 非历史承载 AI。训练回路、持久记忆或具身部署只可被读作 stake-bearing 候选，不自动推出智慧或意识。
+
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -490,7 +492,7 @@ $$\Psi_f_{real} \neq \text{Data about } \Psi_f$$
 - "正确 vs 可承受"的区别（知道规则但无法承受遵守的代价）
 - 道德残余（即使做"对"的事也有 $\Psi_f$）
 
-**SRT精确化**：AI可以**说出**"为什么数学上最优可能是道德上不可能"（2026年LLM已做到）；但AI**无法体验** Ψ_f——即不这样做时的存在性不安。这不是认知差距，而是本体结构差距（AI没有真实d值加权的孩子）。
+**SRT精确化**：inference-only AI 可以**说出**"为什么数学上最优可能是道德上不可能"（2026年LLM已做到）；但它尚未显示能以自身闭包体验 Ψ_f——即不这样做时的存在性不安。这不是认知差距，而是本体结构差距（该架构状态没有真实 d 值加权的孩子）。
 
 ---
 
@@ -825,7 +827,7 @@ $$\text{Meaning}(x) = d(\hat{G}) \cdot \Psi_f_x \cdot f(\tau_{remaining})$$
 
 3. **智慧 ≠ 智能**: $W = d \cdot \int \Psi_f \cdot K \, dt$ vs $I = \sum \|K_n\|$
 
-4. **AI 不能智慧**: $d_{AI} = 0, \Psi_f_{AI} = 0 \implies W_{AI} = 0$
+4. **inference-only AI 不能智慧**: $d_{AI} \approx 0,\ \Psi_f_{AI}\ \text{non-binding} \implies W_{AI} \approx 0$
 
 5. **时间病理**: AI 无真实的未来（无 $\tau$ 地平线）
 

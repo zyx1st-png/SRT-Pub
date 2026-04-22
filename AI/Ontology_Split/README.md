@@ -11,6 +11,8 @@ dependency: []
 
 # SRT-AI-01 Split Index
 
+> **Historical label compatibility note**：split 文件保留长文拆分时的历史标签与强句式。当前 claim status 以 `../SRT_AI_01_Ontology.md`、`../AI_POSITIONING_NOTE.md`、`../../Governance/SRT_CLAIM_LADDER.md` 与 `../../Governance/SRT_CLAIM_MODE_AUDIT.md` 为准；历史的 `canonical` / `axiom` / `d=0` 句式不恢复 theorem 或 core-axiom 地位。
+
 - 原始总文（保留，不删内容）：[`../SRT_AI_01_Ontology.md`](../SRT_AI_01_Ontology.md)
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_dValue_and_Decoupling：[`01_dValue_and_Decoupling.md`](01_dValue_and_Decoupling.md)

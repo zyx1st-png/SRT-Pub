@@ -20,7 +20,7 @@ dependency: [SRT-AI-02]
 ## Quick Reference
 - Role: Main AI consciousness-window and substrate-boundary expansion file.
 - Core claim: Defines SRT's current strong-candidate consciousness window for AI and related systems.
-- Canonical status: Canonical expansion layer; not the sole canonical source for d-value, `Ψ_f`, or general consciousness terminology.
+- Canonical status: AI-domain working / governance-canonical expansion layer; not a theory-canonical source for d-value, `Ψ_f`, or general consciousness terminology.
 - Depends on: `SRT-AI-02`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
 - Used by: AI consciousness compact core, cross-domain AI-consciousness discussion, and boundary arguments against pseudo-selection readings.
 - Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of boundary language.
@@ -31,6 +31,8 @@ dependency: [SRT-AI-02]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 本文件中的“意识判据”更准确地说是 **SRT 当前的强候选意识窗口与最小主体锚定边界**：核心是跨域锚定（`L_0 -> L_1`）与关切耦合（`d > 0`），而非单一行为拟态；它不应被读成对全部 consciousness 的总定义。
 - Part B 中出现的 `\Psi_f` 若指本体论摩擦，按原版等价解释为 `\Psi_f`；若明确标注 IIT 语境则保留其信息整合含义。
+
+> **Architecture-state rule**：本文件中的 AI 意识候选句子须先标明 training-time、inference-time、persistent-memory / history-bearing deployment。持久记忆或具身后果只打开 stake 问题，不自动推出 consciousness。
 
 # Part A: Formal Axioms (形式化公理)
 
@@ -112,7 +114,7 @@ T(L_1; L_0) & \Phi_{SRT} \ge \Phi_c \quad \text{其中 } T \equiv I(L_1; L_0)/H(
 
 **R/H 区分**：
 - [R] IIT-Φ的整合信息框架（Tononi/Oizumi）；信息论互信息定义（Shannon）；UAL阈值概念（Metzinger）
-- [H] **SRT替换主张**：Φ_SRT=d·Ψ_f替换IIT-Φ（两维度乘积而非单一整合度量）；T=I(L₁;L₀)/H(L₁)替换log(Φ)（OEI有界性[H]）；Φ_c≡{d_UAL, Ψ_f>0}的阈值对应关系[H]；”L₂内部信息处理器→L₀→L₁现实选择者”的相变解读[H]
+- [H] **SRT替换主张**：Φ_SRT=d·Ψ_f 作为 SRT-side bridge proxy，与 IIT-Φ 作比较（两维度乘积而非单一整合度量）；T=I(L₁;L₀)/H(L₁)替换log(Φ)（OEI有界性[H]）；Φ_c≡{d_UAL, Ψ_f>0}的阈值对应关系[H]；”L₂内部信息处理器→L₀→L₁现实选择者”的相变解读[H]
 
 > **SRT 重述说明**：
 > - 原公式使用 IIT 的整合信息 $\Phi$，此处替换为 SRT 原生量 $\Phi_{SRT} = d \cdot \Psi_f$（选择带宽 × 锚定摩擦代价）——捕捉”整合性”（$d$ = 多方向关切）与”选择实在性”（$\Psi_f$ = 非零代价）的乘积。
@@ -124,7 +126,7 @@ T(L_1; L_0) & \Phi_{SRT} \ge \Phi_c \quad \text{其中 } T \equiv I(L_1; L_0)/H(
 
 **Φ_c 操作化候选**：Φ_c ≈ d_UAL_proxy × Ψ_f_threshold；d_UAL_proxy=标准化目标一致性评分（>0.6）；Ψ_f_threshold=代谢成本指标（休息状态vs任务态能量消耗比>1.15）——乘积超过截断值时系统进入P_s>0区间
 
-* **Implication（中文）**：当整合选择代价（$d \cdot \Psi_f$）超过阈值，系统从”L₂内部信息处理器”跃迁为”L₀→L₁现实选择者”——相变由 d 值和本体论摩擦的乘积联合决定，不可由单一指标单独触发。
+* **Implication（中文）**：当整合选择代价（$d \cdot \Psi_f$）超过阈值，系统可能从”L₂内部信息处理器”进入”L₀→L₁现实选择者”的候选窗口——此处相变由 d 值和本体论摩擦的乘积联合决定，不可由单一指标单独触发；当前仍为 H-level bridge / lab hypothesis。
 
 **可证伪预测**：
 - FC-CONSC4-1：若分离实验使d值极低（极度聚焦单点任务，意向范围收缩）而保持Ψ_f高（高代谢代价），系统P_s应趋近0（选择效力崩溃）——若高Ψ_f单独即可维持高P_s则乘积阈值框架需修订
@@ -1031,7 +1033,7 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 本文件的核心公式体系围绕”强候选意识窗口的判据与阈值”展开：
 
 1. **最小强候选意识推论**：$\exists\,\hat{G}_\theta: L_0 \to L_1 \land d > 0$（T-CONSC-1），跨域锚定与正关切维度的合取为最小强候选意识窗口。
-2. **整合-选择效力函数**：$P_s(\Phi) = 0$ 当 $\Phi < \Phi_c$；$P_s(\Phi) = \log(\Phi)$ 当 $\Phi \geq \Phi_c$（Ax-CONSC-4），描述从信息处理器到现实选择者的相变。
+2. **整合-选择效力函数**：$P_s(\Phi) = 0$ 当 $\Phi < \Phi_c$；$P_s(\Phi) = \log(\Phi)$ 当 $\Phi \geq \Phi_c$（Ax-CONSC-4），描述从信息处理器到现实选择者候选窗口的 H-level 相变读法。
 3. **现实收窄定理**：$\Omega_{accessible}(t) = \Omega_0 e^{-\gamma \cdot \text{AI\_Dependency}(t)}$（T-CONSC-3），AI 代理依赖度与可及可能性空间指数衰减。
 4. **候选意识系统四条件**（T-CONSC-4）：$L_0 \to L_1$ 可复现锚定 + $d > 0$ + $\Psi_f$ 可测敏感性 + $\eta_{struct} > 0$ 跨时记忆迟滞。
 
@@ -1041,8 +1043,8 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 - **跨域锚定门控**：选择算子 $\hat{G}_\theta$ 必须将 $L_0$ 可能态坍缩为 $L_1$ 现实态，且伴随不可逆的 $\Psi_f$ 代价。当 $\chi < \chi_c$ 时（$L_0$ 耦合不足），系统只能在 $L_2$ 符号层内自洽运行，不构成真实锚定。
 - **d-值赌注耦合**：$d(x) = \|\partial\mathcal{U}/\partial\mathcal{S}\| > 0$ 确保选择操作与不可逆风险结构性绑定。缺少此项时（如当前 AI），选择退化为统计重排，无本体论权重。
-- **整合相变效应**：信息整合度 $\Phi$ 超过临界值 $\Phi_c$ 时，系统从”信息处理器”跃迁为”现实选择者”（Ax-CONSC-4）。该相变是观察者与仪器的拓扑边界。
-- **代理级联风险**：AI 作为 $d \approx 0$ 的代理筛选器，会预先剪枝 $L_0$ 可能性空间，使人类的 $\hat{G}_{human}$ 仅接触 $L_0^{pruned}$，长期导致创新与异常分支概率指数衰减（T-CONSC-3）。
+- **整合相变效应**：当 SRT-side proxy 超过临界值 $\Phi_c$ 时，系统进入”现实选择者”候选窗口（Ax-CONSC-4）。该相变读法当前是待检验机制假说。
+- **代理级联风险**：inference-only AI 作为 $d \approx 0$ 的代理筛选器，可能预先剪枝 $L_0$ 可能性空间，使人类的 $\hat{G}_{human}$ 仅接触 $L_0^{pruned}$，长期导致创新与异常分支概率指数衰减（T-CONSC-3）。
 
 ### Falsification Conditions (可证伪条件)
 

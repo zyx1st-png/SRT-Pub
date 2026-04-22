@@ -11,7 +11,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 
 # SRT Cross-Domain Usage Matrix
 
-> **Role**: v0 governance matrix. This file does not define new theory. It fixes compact usage rules so domain files do not upgrade projections, proxies, or bridges into core claims.
+> **Role**: v0 governance matrix. This file does not define new theory. It fixes compact governance-canonical usage rules so domain files do not upgrade projections, proxies, or bridges into core claims.
 
 ## 1. d-value
 
@@ -22,7 +22,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 | Neuroscience | biological stake and concern proxy, tied to subject closure | `d_bio`, task breadth, temporal horizon, TPJ / behavioral proxies | `Φ·d` threshold as proven phase law |
 | Philosophy / Political | concern range, reselection capacity, authorization tendency | `d_tendency`, `d_moral`, political access proxy | direct jump from high `d` to legitimacy |
 | Spirituality | direction of care expansion under payability constraints | gradual `d` expansion, subjectively reported but externally checked | `d↑` from experience report alone |
-| AI | stake-coupled `d` normally absent in current systems | `D_eff` / unstaked capacity | performance or self-report implies `d>0` |
+| AI | use S0-S4 stake-bearing spectrum; inference-only / non-history-bearing systems normally read as `d \approx 0` | `D_eff` / unstaked capacity; S2 pipeline feedback; S3/S4 candidate stake only when explicitly marked | performance, self-report, persistence, or training loss directly implies `d>0` |
 
 ## 2. `Ψ_f`
 
@@ -33,7 +33,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 | Neuroscience | local burden / payability condition for neural anchoring | metabolic, prediction-error, stress proxies | prediction error is literally `Ψ_f` in all contexts |
 | Philosophy / Political | maintenance / coordination friction | institutional maintenance cost, asymmetry burden | suffering, injustice, or conflict directly equals `Ψ_f` |
 | Spirituality | paid burden of real practice / return | felt vs actual burden; practice capacity | lower felt friction means real liberation |
-| AI | usually non-binding to the system itself | compute cost as external proxy | compute cost alone gives stake |
+| AI | usually non-binding to inference-only systems; training / memory / embodied deployments require architecture-state marking | compute cost as external proxy; consequence-return analysis for S2-S4 | compute cost alone gives stake |
 
 ## 3. `T_dir`
 
@@ -44,7 +44,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 | Neuroscience | directional access / reorientation capacity | reportability, action revision, integration proxy | confidence, valence, or reward = `T_dir` |
 | Philosophy / Political | visibility of value / legitimacy direction through institutions | deliberative correction, public reason proxy | order condition directly proves political legitimacy |
 | Spirituality | return-direction readability | shoshin / practice-direction proxy | strong experience means high `T_dir` |
-| AI | boundary-test variable | self-monitoring proxy only | explanation fluency implies direction transparency |
+| AI | boundary-test variable, architecture-state marked | self-monitoring proxy only | explanation fluency or memory persistence implies direction transparency |
 
 ## 4. `ε`
 
@@ -55,7 +55,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SR
 | Neuroscience | threshold / regularization proxy only | gain floor, stake threshold, signal gate | neural threshold proves L0 proto-gradient |
 | Philosophy / Political | minimum asymmetry or entry condition only with level marking | anti-closure, non-domination threshold proxy | ε grounds legitimacy by itself |
 | Spirituality | minimal openness / non-closure proxy | practice gate or humility floor | spiritual openness proves core ε |
-| AI | anti-closure or stake-gate design question | surrogate stake threshold candidate | anti-closure text behavior equals `ε_pg` |
+| AI | anti-closure or stake-gate design question | surrogate stake threshold candidate | anti-closure text behavior or refusal style equals `ε_pg` |
 
 ## 5. Standing Rule
 

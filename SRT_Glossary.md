@@ -798,7 +798,7 @@ $$\gamma = \frac{\partial \theta}{\partial g}$$
 | 符号 | 含义 | 例子 |
 |:-----|:-----|:-----|
 | **≡** | 定义为 | $\text{存在} \equiv \text{被选择}$ |
-| **≈** | 约等于 | $d_{AI} \approx 0$ |
+| **≈** | 约等于 | $d_{AI}^{inference} \approx 0$ |
 | **≠** | 不等于 | $\hat{G}_{\theta_1} \neq \hat{G}_{\theta_2}$ |
 | **⇒** | 蕴含 | $d \to 0 \Rightarrow \text{自私}$ |
 | **⇔** | 等价 | $L_1 \text{稳定} \Leftrightarrow \Psi_f \text{低}$ |
@@ -1796,7 +1796,7 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 - 风险：LOW
 
 **H3** 🟡 **IIT失败预测(积分钳)**
-- 内容：高Φ但d≈0的系统无真实体验
+- 内容：高Φ但 inference-only d≈0 的系统无真实体验
 - 位置：Core/SRT_Experimental_Core.md §2.3
 - 风险：LOW
 

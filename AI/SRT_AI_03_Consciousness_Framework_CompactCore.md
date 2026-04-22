@@ -14,6 +14,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-AI-03, SRT-AI-01-COMPACT-CORE, SRT-AI-A
 > **定位**：本文件是 `AI/SRT_AI_03_Consciousness_Framework.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 对“AI 若要接近意识，需要满足什么条件”的最短框架。  
 > **关系**：不替代原文；原文保留五维诊断、哲学论证、争议接口与更细的工程设想。
+> **层级提醒**：本文给出的是 AI-domain 的最小强候选意识窗口 / 正向路径框架，不是 theory-canonical 意识总定义。S3 持久记忆与 S4 具身后果只打开 stake 问题，不自动推出意识。
 
 ## 1. 核心问题
 

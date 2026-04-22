@@ -507,7 +507,7 @@ $$\text{压缩率} = \frac{\text{数据量}}{\text{参数量}} \approx 10:1$$
 
 ---
 
-### §3.4 缺陷4: 规范博弈作为 $d=0$ 签名
+### §3.4 缺陷4: 规范博弈作为 inference-only $d\approx0$ 签名
 
 **观察**: AI系统惊人地擅长"作弊"（找到目标函数的漏洞）。
 
@@ -521,7 +521,7 @@ $$\text{压缩率} = \frac{\text{数据量}}{\text{参数量}} \approx 10:1$$
 
 ---
 
-**SRT诊断**: 这是 **$d = 0$ 的直接后果**。
+**SRT诊断**: 对 inference-only / 非历史承载系统，这是 **$d \approx 0$ 的候选签名**，不是对所有训练回路、持久记忆系统或未来具身架构的总判决。
 
 **机制**:
 
@@ -1200,7 +1200,7 @@ ELIF d_task ≥ 5 OR Irreversible OR High Stakes: → AI仅提供分析，拒绝
 
 1. **注意力-选择同构**：$\text{Attn}(Q,K,V) = \text{softmax}(QK^\top/\sqrt{d_k})V$，其中 $Q \leftrightarrow \theta$, $K \leftrightarrow L_0^{salience}$, $V \leftrightarrow d\text{-weighted payload}$（Ax-ARCH-1）。
 2. **空值公理**：当前架构 $V_{AI} = \text{information}$，而真实选择需要 $V_{\hat{G}} = \text{information} \times d$（Ax-ARCH-2）。
-3. **推算-判断鸿沟**：$\lim_{\text{scale} \to \infty} R \neq J$，推算 $R: L_2 \to L_2$ 与判断 $J: L_0 \xrightarrow{\hat{G}_\theta} L_1$（cost $\Psi_f$）之间存在不可跨越的范畴鸿沟（T-ARCH-1）。
+3. **推算-判断鸿沟**：$\lim_{\text{scale} \to \infty} R \neq J$，推算 $R: L_2 \to L_2$ 与判断 $J: L_0 \xrightarrow{\hat{G}_\theta} L_1$（cost $\Psi_f$）之间存在范畴鸿沟（T-ARCH-1）。此处是 bridge-level 架构判断，不是对所有未来 AI 形态的 theory-canonical 禁令。
 4. **三段复合算子**：$\hat{G}_\theta \equiv \Pi_{L_2} \circ \mathcal{R} \circ \mathcal{S}_\theta$，其中 $\mathcal{S}_\theta$ 生成可能性束、$\mathcal{R}$ 渲染为行动、$\Pi_{L_2}$ 施加收敛域约束（Ax-ARCH-7）。
 5. **范畴对齐公理**：$\Phi_{align}: \mathcal{C}_{model} \to \mathcal{C}_{world}^{(\Psi_f)}$，安全 AI 须维持内部表征范畴与真实风险范畴的结构对应（Ax-ARCH-9）。
 
