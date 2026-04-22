@@ -6,7 +6,7 @@ status: active_v1
 layer: meta
 claim_mode: canonical
 epistemic_layer: os
-dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
+dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CROSS-DOMAIN-MATRIX, SRT-CORE-22]
 ---
 
 # SRT Canonical Registry
@@ -33,7 +33,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 2. Ψ_f（本体论摩擦）
 - 主锚点：`_SRT_PSI_F_CANONICAL.md`
-- 说明：统一 `Ψ_f` 的第一性定义、几何主表达、可支付性条件与引力实现地位
+- 说明：统一 `Ψ_f` 的第一性定义、v1 信息论代价主读、几何 / 代谢投影、可支付性条件与物理弱相容边界
 - 引用规则：首次出现 `Ψ_f`、本体论摩擦、可支付性条件或“引力是否只是类比”时优先回链本文件
 
 ### 3. T_dir（方向透明度）与价值遮蔽
@@ -62,6 +62,11 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 说明：记录当前未完全封口的 core pressure points
 - 引用规则：凡涉及其中 tension，不得包装成已完成 P0/P1
 
+### 4d. Cross-Domain Usage Matrix
+- 主文件：`_SRT_CROSS_DOMAIN_MATRIX.md`
+- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵
+- 引用规则：跨域使用上述概念时，先检查 canonical 用法、allowed projection 与 forbidden shortcut
+
 ## B. 规范辅助层（Canonical Support）
 
 ### 5. 七命题宪法摘要层
@@ -73,6 +78,11 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
 - 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem
 - 注意：它是治理机制，不新增理论命题
+
+### 5c. Claim-Mode Audit
+- 文件：`Governance/SRT_CLAIM_MODE_AUDIT.md`
+- 角色：记录本轮 `T-*` / `Ax-*` / `H-*` 扫描结果、降级决策与未完成同步债
+- 注意：它是治理台账；降级后条目不得在下游继续按高等级结论引用
 
 ### 6. d-value 跨尺度展开
 - 辅助文件：`Core/SRT_Core_14_Dynamics_Scaling.md`
@@ -142,7 +152,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - Complex Systems：`Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` / `Physics/SRT_Phys_07_Complex_Systems.md`
 - Ontology Ext：`Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` / `Physics/SRT_Phys_08_Ontology_Ext.md`
 - 角色：Physics 板块已形成从量子入口、宇宙学/形式化主干，到复杂性/深本体扩展的完整 compact core 入口层
-- 注意：Physics 的具体阅读顺序由 `Physics/PHYSICS_COMPACT_REGISTRY.md` 统一管理；其中“引力是 `Ψ_f` 的物理规范实现”这一口径以 `_SRT_PSI_F_CANONICAL.md` 为优先锚点
+- 注意：Physics 的具体阅读顺序由 `Physics/PHYSICS_COMPACT_REGISTRY.md` 统一管理；其中“引力—`Ψ_f`”当前只保留弱场梯度方向相容假说，强版规范实现 / 张量级 GR 重建不得作为已证结论引用
 
 ### 13. Spirituality 主轴
 - Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
@@ -156,8 +166,8 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 当同一概念同时出现在多个文件时，默认优先级如下：
 
 1. `CANONICAL_REGISTRY.md`（找入口）
-2. `Governance/SRT_CLAIM_LADDER.md`（判断命题硬度）
-3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义）
+2. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md`（判断命题硬度与降级状态）
+3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义与跨域用法）
 4. `Core/SRT_Core_21_Minimal_Axioms.md` / `Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`（按 P-level 找 Core_21 正文）
 5. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释）
 6. `Core/SRT_OPEN_TENSIONS.md`（确认未封口问题）
@@ -169,9 +179,12 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 本轮 canonical 抽离 v1 暂定以下四者为主干：
 - `d-value` → `_SRT_D_VALUE_CANONICAL.md`
 - `Ψ_f` → `_SRT_PSI_F_CANONICAL.md`
+- `T_dir` → `_SRT_T_DIR_CANONICAL.md`
+- `d / Ψ_f / T_dir / ε` usage matrix → `_SRT_CROSS_DOMAIN_MATRIX.md`
 - `Core formal axioms` → `Core/SRT_Core_21_Formal_Axioms.md`
 - `Core master equations` → `Core/SRT_Core_22_Equations.md`
 - `Claim hardness` → `Governance/SRT_CLAIM_LADDER.md`
+- `Claim-mode downgrade audit` → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - `Open tensions` → `Core/SRT_OPEN_TENSIONS.md`
 
 这意味着：

@@ -32,6 +32,8 @@ SRT 的压缩回答是：
 - 权利 = 防止现实定义权被封闭性垄断的高阶约束
 - 民主 = 对代理者 `d` 倾向的低精度后验验证
 
+> **Level**: governance / bridge. The legitimacy ladder is: order condition → institutional type judgment → delegation legitimacy → political legitimacy. Do not infer legitimacy directly from `L_1/L_2` stability; missing middle criteria must be written as conditional diagnostics.
+
 ---
 
 ## 2. 政治现实如何形成
@@ -215,3 +217,21 @@ SRT 不等于：
 - 权利与授权子接口：`SRT_Political_Rights.md`
 - 社会经济主轴：`SRT_Social_Economics_CompactCore.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则本域主张会被显著削弱：
+
+1. Stable order can exist without any legitimacy relation.
+   - 当前承受方式：the ladder separates order condition from political legitimacy.
+   - 若成立需撤回什么：撤回任何把 `L_2` stability directly treated as legitimate governance.
+
+2. Political `d`-tendency is too noisy or manipulable to audit.
+   - 当前承受方式：democracy is only a low-precision posterior validation, not truth production.
+   - 若成立需撤回什么：撤回 vote-as-`d` calibration language and keep democracy as procedural anti-monopoly only.
+
+3. Institutions preserve formal reselection while materially blocking it.
+   - 当前承受方式：rights and legitimacy require access, correction, and consequence-return channels, not nominal participation.
+   - 若成立需撤回什么：撤回 legitimacy claims for systems that satisfy procedure while compressing real reselection capacity.

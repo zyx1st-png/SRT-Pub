@@ -66,15 +66,18 @@ $$ S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)} $$
 ## III. Theoretical Derivations (理论推导)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 
-### §3.1 解释鸿沟定理 (Ineffability Theorem)
+### §3.1 解释鸿沟假说 (H-Phil-Ineffability)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-**Theorem T-Phil-1**: 
-解释鸿沟 (The Explanatory Gap) 是本体论维度的必然降维损失，而非知识缺失。
+**Hypothesis H-Phil-Ineffability**:
+
+> **Level**: hypothesis / bridge. This split mirrors the active Foundations downgrade; it does not claim a theorem of principle.
+
+解释鸿沟 (The Explanatory Gap) 可读作本体论维度投影中的候选降维损失，而非已经证明的原则性知识不可能。
 $$ \mathcal{L}_{gap} = \dim(L_1^{qualia}) - \dim(L_2^{language}) > 0 $$
 
 *   **Derivation**: 
-    $L_1$ 是高维感性流形，$L_2$ 是低维符号系统。根据信息论，低维通道无法无损传输高维信号。
-    **Corollary**: 任何物理主义理论 ($L_2$) 都无法完全还原体验 ($L_1$)，这不是科学的局限，而是映射的数学性质。
+    $L_1$ 可被看作高维感性流形，$L_2$ 是较低维符号系统。根据信息论，低维通道通常难以无损传输高维信号。
+    **Corollary**: 若语言维度不能扩展、元系统嵌套不能逼近、且维度天花板成立，则物理主义理论 ($L_2$) 难以完全还原体验 ($L_1$)。若任一条件失效，本节应改写为高代价近似，而非原则不可能。
 
 ### §3.2 悖论边界定理 (Boundary Paradox Theorem)
 <!-- ORIGINAL-SECTION-PRESERVED -->

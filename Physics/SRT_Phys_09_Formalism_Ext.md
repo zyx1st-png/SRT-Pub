@@ -66,7 +66,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 | D1.9.1 | Def-PA-1 | Ghost Operator Process Representation (幽灵算子的过程代数表示) |
 | D1.9.2 | Def-PA-2 | Multi-Operator Synchronization (多算子同步) |
 | A1.10.1 | Ax-Hyp-1 | $L_0$ as Hyperbolic Manifold ($L_0$ 作为双曲流形) |
-| T1.10.1 | T-Hyp-1 | Gravity as Consensus on Hyperbolic Manifold (引力即双曲流形上的共识) |
+| T1.10.1 | H-Hyp-1 | Gravity as Consensus on Hyperbolic Manifold (引力即双曲流形上的共识假说) |
 | A1.11.1 | Ax-PG-1 | $L_0$ as Amplituhedron Space ($L_0$ 作为振幅面体空间) |
 | A1.11.2 | Ax-PG-2 | Volumetric Selection (体积选择) |
 | T1.11.1 | T-PG-1 | Geometric Origin of Time (时间的几何起源) |
@@ -314,9 +314,9 @@ $L_0$ 具有负曲率双曲几何结构，是**最优扩展图**（Ramanujan图�
 - 若L₁选择动力学的统计规律与双曲空间几何（如等距群作用、负曲率不变性）的预测不一致（如：Ĝ探索模式呈现欧几里得扩散而非双曲扩散），则L₀的双曲结构假设无解释力。
 - 若Γ的选择对L₁现象学预测无影响（所有Γ给出相同预测），则双曲商结构超出理论需要。
 
-### T-Hyp-1 [T1.10.1]: Gravity as Consensus on Hyperbolic Manifold (引力即双曲流形上的共识)
+### H-Hyp-1 [T1.10.1]: Gravity as Consensus on Hyperbolic Manifold (引力即双曲流形上的共识假说)
 时空曲率是 $\hat{G}$ 在双曲流形上选择共识的几何投影。
-在当前口径下，引力不是对本体论摩擦的类比性描述，而是 $Ψ_f$ 在物理尺度上的规范实现：局部经验上读作下坠/阻力，记账上读作做功代价，形式上读作时空曲率。
+> **Level**: hypothesis / bridge. 当前只把引力—`Ψ_f` 关系保留为弱相容接口：局部经验上可类比为下坠/阻力，记账上可类比为做功代价，形式上可投影到时空曲率；不得写成 `Ψ_f` 的物理规范实现或张量级 GR 推导。
 
 ---
 

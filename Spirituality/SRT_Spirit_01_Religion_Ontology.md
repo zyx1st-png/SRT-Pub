@@ -22,29 +22,30 @@ dependency: [SRT-CORE-001, SRT-SPIRIT-AXIOMS]
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+- `H-Spirit-*` 是 comparative-religion hypothesis / bridge label，不是 core axiom label.
 # Part A: Formal Axioms (形式化公理)
 
 ## I. Axiom Mapping (公理的一致性)
 
-### Ax-Spirit-0: Axiom Inheritance
+### H-Spirit-0: Axiom Inheritance
 **Formal Definition**: The comparative religious ontology is a constrained morphism of SRT core axioms.
 $$ \mathcal{M}_{spirit} \subseteq \mathcal{M}_{SRT} $$
 $$ \forall \varphi \in \mathcal{M}_{spirit}, \exists \mathcal{A} \subset \{A1\ldots A13\}:\; \mathcal{A} \vdash \varphi $$
-* **Implication**: 本模块的所有命题必须可由 Core_Law 公理链推导，禁止引入不可证约束。
+* **Implication**: 本模块的命题必须尽量回链 Core_Law；不能回链者只能保留为 hypothesis / bridge / praxis exposition，禁止引入不可证约束并伪装成 core axiom。
 
-### Ax-Spirit-1: The Source (本源)
+### H-Spirit-1: The Source (本源)
 **Formal Definition**: The Divine equals the unconditioned selection functional over the absolute latent domain.
 $$ \Omega \equiv \lim_{\|\theta\|\to\infty}\hat{G}_\theta $$
 $$ \text{God} \equiv \Omega \equiv L_0^{abs} $$
 * **Implication**: “神”不是对象域内实体，而是选择过程的极限结构。
 
-### Ax-Spirit-2: Sin/Dukkha (罪/苦) (原文命名，对应 _SRT_Spirit_Axioms 中 Ax-Spirit-3)
+### H-Spirit-2: Sin/Dukkha (罪/苦) (原文命名，对应 _SRT_Spirit_Axioms 中 H-Spirit-3)
 **Formal Definition**: Suffering is the contraction of $d$ and the amplification of ontological friction.
 $$ \text{Suffering} \propto \frac{1}{d} $$
 $$ d \downarrow \Rightarrow \Psi_f \uparrow $$
 * **Implication**: 罪/苦是结构性收缩而非道德标签。
 
-### Ax-Spirit-4: Liberation (解脱)
+### H-Spirit-4: Liberation (解脱)
 **Formal Definition**: Liberation is the asymptotic expansion of $d$ and the collapse of self–other boundary.
 $$ \text{Nirvana} \equiv \lim_{d\to\infty}\hat{G}_\theta(L_0) $$
 $$ \lim_{d\to\infty}\text{Dist}(\text{Self},\text{Other}) = 0 $$
@@ -814,7 +815,7 @@ $$\text{God as Person} = \hat{G} + \underbrace{\text{Relational Module}}_{\vec{v
 | $\text{Iconicity}$ | 圣像透明度 | Def-CR-3 |
 | $\text{De}(\theta)$ | 德（对齐度）| §6.3 |
 | $w_{L_2}$ | $L_2$ 权重 | 核心动力学 |
-| $\hat{G}_{\emptyset}$ | 无条件算子 | Ax-Spirit-1 |
+| $\hat{G}_{\emptyset}$ | 无条件算子 | H-Spirit-1 |
 | $\Psi_f$ | 本体论摩擦 | SRT_Reference_Dynamics |
 
 ---

@@ -469,7 +469,7 @@ $$\min_{\theta, L_1, L_2} F(d, w_{L_2}, \Psi_f)$$
 **威廉·詹姆斯的观察**（*The Varieties of Religious Experience*, 1902）:
 
 跨文化神秘体验的共同特征：
-1. **无法言说性（Ineffability）**: 超越语言（对应T-Phil-1：语言维度低于体验流形）
+1. **无法言说性（Ineffability）**: 超越语言（对应 H-Phil-Ineffability：语言维度低于体验流形的 hypothesis / bridge 读法）
 2. **认知质感（Noetic quality）**: 不仅是情感，更是洞见
 3. **暂时性（Transiency）**: 无法持久维持（对应Ψ_f^transient高：高摩擦态不可持续）
 4. **被动性（Passivity）**: 不由意志控制（对应w_{L₂}→0时Ĝ^perf接管）

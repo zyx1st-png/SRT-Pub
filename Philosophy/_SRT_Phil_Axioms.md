@@ -92,10 +92,18 @@ $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 
 ## II. Core Theorems
 
-### T-Phil-1: Ineffability Gap
-语言与逻辑在维度上低于体验流形，导致不可约信息损失。
+### H-Phil-Ineffability: Ineffability Gap
+
+> **Level**: hypothesis / bridge. This is no longer treated as a theorem of principle; it is a dimensional-mismatch hypothesis that must absorb counterexamples from language expansion, meta-system nesting, and high-cost approximation.
+
+语言与逻辑在维度上通常低于体验流形，可能导致不可约或高代价的信息损失。
 $$\mathcal{L}_{gap} = \dim(L_1) - \dim(L_2) > 0$$
-*   **Implication**: “解释鸿沟”是映射维度差的数学结果，而非知识暂时不足。
+*   **Implication**: “解释鸿沟”可被读作映射维度差造成的候选结构损失，而非已证明的原则性不可能。
+
+**Counterexample absorption slots**:
+1. If language dimensions can expand, the claim weakens from impossibility to present-interface inadequacy.
+2. If meta-system nesting can approximate first-person structure, the claim weakens from non-translatability to lossy convergence.
+3. If no hard dimension ceiling holds, rewrite the result as "too costly under current interfaces" rather than "impossible in principle."
 
 ### T-Phil-2: Paradox Boundary Theorem
 悖论产生于 $L_2$ 对自身或对 $L_1$ 的非法封闭。
@@ -166,10 +174,17 @@ $$ \text{Epoché} \equiv \hat{G}_{\theta \setminus L_2}[L_0] $$
 ## §3. 核心定理 (Key Theorems)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 
-### T-Phil-1: 解释鸿沟必然性 (Ineffability)
+### H-Phil-Ineffability: 解释鸿沟假说 (Ineffability)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-由于 $L_1$ (体验) 的维度远高于 $L_2$ (语言) 的维度，Qualia 不可完全言说。
+> **Level**: hypothesis / bridge. 这不是原则性定理，而是当前把体验流形投影到语言/概念系统时的维度错配假说。
+
+由于 $L_1$ (体验) 的维度可能远高于 $L_2$ (语言) 的维度，Qualia 在当前接口下可能不可完全言说或代价过高。
 $$ \dim(L_1) \gg \dim(L_2) \implies \text{Information Loss} > 0 $$
+
+**反例吸收位**：
+1. 若语言维度可扩展，则改写为当前语言接口不足。
+2. 若元系统嵌套可逼近，则改写为有损逼近而非不可翻译。
+3. 若维度天花板不成立，则改写为代价过高而非原则不可能。
 
 ### T-Phil-2: 悖论作为边界 (Paradox as Boundary)
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -199,7 +214,7 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 *   **例子**：罗素悖论是 $L_2$ 试图自封闭（集合包含自身），违反了 T-Phil-2 的边界条件。
 
 ## 5. 机制推演（从公理到结论）
-由 Ax-Phil-1，存在是选择的锚定结果，知识对象必须是 $L_1$ 事件；由 Ax-Phil-2，暂时抑制 $L_2$ 可让算子接近 $L_0$ 的结构；由 Ax-Phil-3，意向性被定义为向量场，使得体验具备可微结构；由 Ax-Phil-4，饱和度定义了何时体验超出概念容量。于是定理 T-Phil-1 与 T-Phil-2 直接给出"解释鸿沟"和"悖论边界"的数学原因。
+由 Ax-Phil-1，存在是选择的锚定结果，知识对象必须是 $L_1$ 事件；由 Ax-Phil-2，暂时抑制 $L_2$ 可让算子接近 $L_0$ 的结构；由 Ax-Phil-3，意向性被定义为向量场，使得体验具备可微结构；由 Ax-Phil-4，饱和度定义了何时体验超出概念容量。于是 H-Phil-Ineffability 与 T-Phil-2 分别给出"解释鸿沟"的候选维度错配读法和"悖论边界"的数学原因。
 
 ## 6. 代价与风险
 1. 代价是放弃"客观-主观二分"这一传统框架，接受选择过程为第一性。
@@ -222,11 +237,11 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 
 1. 在 `Ax-Ph1`（存在即被选择）下引入“主体问题约束”：主体性必须由可追踪的选择路径定义，而不是由微观属性并置自动生成。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕〔source: doi:10.5040/9781350508644.ch-4〕
 2. 将“组合问题”的讨论转化为算子可达性条件：只有当候选微观状态对同一 `\theta` 空间可达时，才允许判定其可组合为单一经验体。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph2〕〔source: doi:10.53765/20512201.28.9.129〕
-3. 对 `T-Phil-1` 增加一条解释注记：解释鸿沟不仅是表达带宽差，也包含“主体合成约束”导致的跨层投影损耗。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕〔source: doi:10.5040/9781350508644.ch-4〕
+3. 对 `H-Phil-Ineffability` 增加一条解释注记：解释鸿沟不仅是表达带宽差，也包含“主体合成约束”导致的跨层投影损耗。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕〔source: doi:10.5040/9781350508644.ch-4〕
 
 ### 主体同一性与解组合 *(R: 基于意识统一性文献的 SRT 重构)*
 
-1. 对”单一状态=统一意识”的充分性提出 SRT 约束：统一意识至少需要 `U_sync`（同现）与 `U_bind`（可整合）双条件，而非仅一个全局状态标签。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
+1. 对”单一状态=统一意识”的充分性提出 SRT 约束：统一意识至少需要 `U_sync`（同现）与 `U_bind`（可整合）双条件，而非仅一个全局状态标签。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262036993.003.0003〕〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕
 
    **U_sync/U_bind SRT 形式化候选**：
    - $U_{sync}$：$\exists t:\ X_i \in L_1^{exp}(t)\ \land\ X_j \in L_1^{exp}(t)$（多内容同时存在于同一 $L_1$ 时刻）
@@ -239,13 +254,13 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 
 ### 统一性操作化
 
-1. 将“现象统一性”拆分为 SRT 可判定双指标：`U_sync`（同现统一）与 `U_bind`（跨通道可绑定统一），避免把统一性压成单一形容词。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1093/oxfordhb/9780198749677.013.10〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
-2. 在 `T-Phil-1`（解释鸿沟）下补充注记：统一性不足并不等于无意识，而是可能处于低 `U_bind` 的分层显现态。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
+1. 将“现象统一性”拆分为 SRT 可判定双指标：`U_sync`（同现统一）与 `U_bind`（跨通道可绑定统一），避免把统一性压成单一形容词。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1093/oxfordhb/9780198749677.013.10〕〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕
+2. 在 `H-Phil-Ineffability`（解释鸿沟假说）下补充注记：统一性不足并不等于无意识，而是可能处于低 `U_bind` 的分层显现态。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕
 3. 将统一性讨论与 `T-Phil-2` 对齐：若出现“统一性报告-结构不一致”，优先按边界失配处理，不先诉诸实体增补。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
 
 ### 部分统一与多元统一
 
-1. 将“单一统一假设”改写为 SRT 的“统一性族”判据：`U_sync` 与 `U_bind` 是必要但不总是充分条件，可在任务域中继续展开子判据。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262027786.003.0005〕〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-1〕
+1. 将“单一统一假设”改写为 SRT 的“统一性族”判据：`U_sync` 与 `U_bind` 是必要但不总是充分条件，可在任务域中继续展开子判据。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.7551/mitpress/9780262027786.003.0005〕〔source: Philosophy/_SRT_Phil_Axioms.md#H-Phil-Ineffability〕
 2. 在 `T-Phil-2` 下补充“多统一并存”注记：不同统一性失败样式（跨模态裂解、跨时叙事断裂）应按层处理，而非一刀切否定主体连续性。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
 3. 对 `Ax-Ph1` 增加解释约束：主体同一性判定必须绑定到可追踪选择轨道，不允许仅凭单一统一报告直接上升为本体结论。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
 

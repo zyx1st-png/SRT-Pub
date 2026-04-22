@@ -204,6 +204,17 @@ SRT 可能被用成效率工具、管理技术、个人成功方法。这会把 
 
 这是最重要的风险。SRT 如果让人更敢看现实，它是工具；如果让人更会解释自己为什么总是对，它就是遮蔽。共同体的成熟，不在于成员越来越像“SRT 的人”，而在于成员越来越能在需要时连 SRT 也不抓住。
 
+### 5.1 集体 `L_2` 劫持风险
+
+> **Level**: governance / praxis guardrail. This is a risk test, not a theory of ideal community.
+
+共同体最容易失控的地方，是把“共同保护真实选择时刻”慢慢换成“共同维护共同体自身”。最低限度需要周期性检查：
+
+1. 共同目标是否仍在，还是只剩共同体自我维持？
+2. 共同体是否把自我维持伪装成目标、传统、方向或神圣性？
+3. 个体再选择能力是否保留，包括离开、质疑、重新命名、拒绝被解释的能力？
+4. 承担是否被集体吸收，以至于个人不再需要把后果带回自己的生活与关系？
+
 ---
 
 ## 6. 最小压缩总结
@@ -217,6 +228,24 @@ SRT 所说的 spiritual community，不是宗教组织、自助社群、身份�
 - 什么是真实开放
 - 什么是关切范围扩展
 - 什么是理论变成新遮蔽
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则本域主张会被显著削弱：
+
+1. Community support reliably becomes identity capture.
+   - 当前承受方式：the text adds periodic `L_2` hijack checks.
+   - 若成立需撤回什么：撤回 community-as-support default and treat sangha as high-risk containment only.
+
+2. Group calibration suppresses dissent more than it reveals blind spots.
+   - 当前承受方式：gate-rule revisability and the right to question SRT are explicit guardrails.
+   - 若成立需撤回什么：撤回 group-field calibration language and require individual exit/appeal channels first.
+
+3. Collective absorption of burden reduces individual consequence-bearing.
+   - 当前承受方式：the hijack test asks whether responsibility returns to ordinary life and relations.
+   - 若成立需撤回什么：撤回 any claim that shared practice automatically expands `d`.
 
 它最重要的防腐原则是：
 

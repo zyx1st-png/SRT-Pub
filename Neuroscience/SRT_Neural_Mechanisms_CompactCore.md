@@ -117,6 +117,8 @@ SRT 在这里的强主张是：
 \mathcal A(\sigma) \ge \tau_{ignite} \land \Phi\cdot d > C_{critical}
 \]
 
+> **Level**: hypothesis / operational proxy. The product gate is a current structural preference; ignition as threshold or phase transition is not yet a proven neural theorem.
+
 最短说法：
 > **点燃不是激活增强，而是整合度与关切梯度共同跨阈后的相变。**
 
@@ -133,6 +135,8 @@ L_1(t)=\sum_n \text{Frame}_n\,\delta(t-t_n)
 \[
 PE \propto \Psi_f
 \]
+
+> **Level**: hypothesis / operational proxy, downstream of `H-NEURO-4b`. This bridge must not be used to promote PE-based conclusions to theorem level.
 
 这一步很关键，因为它把：
 - 预测误差
@@ -194,3 +198,21 @@ SRT 对病理学的最强改写之一是：
 - Neuro bridge：`_SRT_Neuro_Axioms.md`
 - Consciousness 机制：`SRT_Consciousness_Mechanisms.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则本域主张会被显著削弱：
+
+1. Prediction error is not an independent friction proxy.
+   - 当前承受方式：`H-NEURO-4b` only treats PE as a local measurable candidate, not an identity with `Ψ_f`.
+   - 若成立需撤回什么：撤回 PE→`Ψ_f` 的局部线性桥，把相关段落降为普通 FEP comparison.
+
+2. `Φ` and `d` cannot be independently measured in neural systems.
+   - 当前承受方式：the product gate is an operational proxy and can be replaced by additive or probabilistic gates.
+   - 若成立需撤回什么：撤回 `Φ·d` threshold as a consciousness criterion and keep only separated diagnostic dimensions.
+
+3. Ignition is continuous, report-mediated, or task-dependent rather than a phase transition.
+   - 当前承受方式：phase-transition language is marked as hypothesis and must be tied to explicit observation windows.
+   - 若成立需撤回什么：撤回 “crossing threshold” as ontology and rewrite ignition as graded stabilization.

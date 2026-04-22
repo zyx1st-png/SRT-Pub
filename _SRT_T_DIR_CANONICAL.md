@@ -14,6 +14,7 @@ dependency: [SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-21, SRT-L0-META
 > **目的**：固定 T_dir（方向透明度）的第一性定义，并建立"价值遮蔽"命题的 canonical 表述。
 > 本文件是 2026-04-02 会话中形成的核心理论推进的正式回写。
 > `_SRT_D_VALUE_CANONICAL.md` 管理 d-value；本文件管理 T_dir 及其展开的病理学结构。
+> **2026-04-22 降承诺说明**：`T_dir` 当前按 **v0 operational proxy / 最小操作定义** 使用。它帮助区分“跨位置可回读性”与“语义效价/置信度”，但尚不是已完成的本体基础或形式对象。
 
 ---
 
@@ -28,6 +29,8 @@ SRT 现有 canonical 变量（d、Ψ_f）描述了选择的范围和代价，但
 - 价值在场，但对选择者不可及
 
 本文件引入 **T_dir**（方向透明度）以填补这个缺口，并展开其所揭示的价值遮蔽结构。
+
+> **层级**：operational proxy / canonical usage rule。以下定义固定最低可用口径，不声称已经完成 `T_dir` 的完整形式化。
 
 ---
 
@@ -67,7 +70,7 @@ $$\boxed{\text{价值内嵌于选择本身，不是缺席的，而是被遮蔽�
 
 ## §3 T_dir 规范定义
 
-### Def-T-1: 方向透明度（第一性定义）⭐ PRIMARY CANONICAL
+### Def-T-1: 方向透明度（v0 operational proxy）
 
 $$\boxed{T_{dir} := \text{系统当前选择对其自身秩序方向的可读性}}$$
 
@@ -78,6 +81,8 @@ $$\boxed{T_{dir} := \text{系统当前选择对其自身秩序方向的可读性
 - $T_{dir} \to 1$：系统对当前选择的秩序方向有高度透明的访问——目标感、价值感、意义感的来源
 
 **T_dir 不是 d-value 的重命名**。两者是不同概念，有不同的因果结构（见 §4）。
+
+**当前边界**：`T_dir` 不是语义效价、奖励值、置信度或报告流畅度。它只作为工作性指数追踪“选择方向能否被系统自己回读、重取向、再校准”。若一个域只能测到 valence/confidence/reportability，必须标为 proxy，不得写成 `T_dir` 本身。
 
 ---
 

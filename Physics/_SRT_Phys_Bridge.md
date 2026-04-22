@@ -13,6 +13,8 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+>
+> **Language commitment (governance / bridge, 2026-04-22)**：正文默认使用 collapse-family / anchoring language。MWI / Everett 翻译只能作为 note、appendix 或 explicit compatibility paragraph 出现。凡依赖 collapse 的段落，后续细化时应标 `[collapse-dependent]`；禁止在同一论证段中无标注混用 collapse 与 MWI 两套语言。
 
 > **物理学家 3 分钟入口**
 > 如果你是量子基础、量子引力或理论物理领域的读者，直接跳到 §VI（领域压力与接口边界）。
@@ -21,7 +23,7 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 >
 > **你最应该检验的两个节点**：
 > - **Ax-P1**（测量即选择）：在多世界诠释下，”选择”是否仍有意义？→ DP-PHYS-1
-> - **T-Phys-2**（时间离散化）：这是一个有潜在经验内容的声明，目前受 FERMI 时序数据约束。→ DP-PHYS-2
+> - **H-Phys-2**（时间离散化）：这是候选 bridge / hypothesis，目前受 FERMI 时序数据约束。→ DP-PHYS-2
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Physical Axioms mapping SRT to Theoretical Physics (AI-Readable).
@@ -68,9 +70,9 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 | A1.3.2 | Ax-P2 | It from Bit from Select (比特源于选择 — Wheeler-SRT公理) |
 | A1.3.3 | Ax-P3 | Holographic Duality (全息对偶公理) |
 | T1.4.1 | T-Phys-1 | Naturalness of Scale (尺度自然性定理) |
-| T1.4.2 | T-Phys-2 | Discrete Time (时间离散化定理) |
+| H1.4.2 | H-Phys-2 | Discrete Time (时间离散化假说) |
 | T1.4.3 | T-Phys-3 | Conservation from Symmetry (Noether-SRT 守恒定理) |
-| T1.4.4 | T-Phys-4 | Weightless Potentia (潜能无重定理) |
+| H1.4.4 | H-Phys-4 | Weightless Potentia (潜能无重假说) |
 
 
 ## I. Operator Mapping (算子映射)
@@ -144,7 +146,9 @@ The macroscopic classical world ($L_1$) is stable because it represents the stat
 $$ L_{classical} = \arg\min_{\sigma \in L_0} \Psi_f(\sigma) $$
 *   **Mechanism**: Classical pointer states are thermodynamically preferred because they minimize the cost of maintaining reality.
 
-### T-Phys-2 [T1.4.2]: Discrete Time (时间离散化定理)
+### H-Phys-2 [H1.4.2]: Discrete Time (时间离散化假说)
+> **Level**: hypothesis / bridge. This is not derived from L0/L1 as a physics theorem.
+
 Time is not a continuous flow but a sequence of discrete selection operations by $\hat{G}$. Each "tick" is one selection event.
 $$ t_n \equiv n \cdot \tau_{Planck} \quad \text{where } \tau_{Planck} = \sqrt{\frac{\hbar G}{c^5}} $$
 *   **Connection**: This formalizes Core Axiom A1 (Selection Priority)—time is the ordinal index of selection events.
@@ -155,10 +159,12 @@ Physical conservation laws are direct consequences of the symmetries of the $L_2
 $$ \text{Conserved Quantity } Q \iff \delta_{\hat{G}} Q = 0 $$
 *   **Interpretation**: What we call "laws of physics" are the stable fixed points of collective selection.
 
-### T-Phys-4 [T1.4.4]: Weightless Potentia (潜能无重定理)
-Gravity (spacetime curvature) is the geometric manifestation of the Ontological Friction $\Psi_f$ required to maintain manifestation ($L_1$). Since $L_0$ states are unselected, $\Psi_f(L_0) = 0$.
-$$ G_{\mu\nu} \propto \Psi_f(L_1) \quad \Rightarrow \quad \text{Gravity}(L_0) = 0 $$
-*   **Implication**: Quantum vacuum energy has infinite information capacity but zero gravitational mass. Only observed reality has weight.
+### H-Phys-4 [H1.4.4]: Weightless Potentia (潜能无重假说)
+> **Level**: hypothesis / bridge. This is a weak physical compatibility claim, not a tensor-level derivation.
+
+Current minimal claim: in weak-field regimes and under an explicit physical projection, the gradient of the physical `\Psi_f` proxy should be directionally compatible with the Newtonian potential gradient.
+$$ \nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)} $$
+*   **Boundary**: This does not reconstruct the Einstein tensor, does not derive GR, and does not explain the exact value of physical constants. The strong version remains a long-range target with no current derivation path.
 
 ### Def-Phys-3 [D1.4.5]: Primacy of Physics as Boundary Priority（物理优先性的边界优先重述，新增）
 SRT 不将 PPC 解释为“本体论唯一优先”，而解释为极限边界优先：
@@ -213,7 +219,7 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 | Speed of Light $c$ | Maximum $L_2$ signal propagation | $c = \max[v_{L_2}]$ |
 | Gravitational Constant $G$ | $L_2$ consensus density coupling | $G \propto 1/\rho_{L_2}$ |
 | Boltzmann's Constant $k_B$ | Selection-entropy conversion factor | $k_B T \ln 2 = E_{min}^{select}$ |
-| Fine Structure Constant $\alpha$ | Strong attractor in $L_2$ moduli space | $\alpha \in \text{Attractor}(L_2)$ |
+| Fine Structure Constant $\alpha$ | Stable parameter in an $L_2$ subspace | $\alpha \in L_2^{stable\ parameter}$ |
 
 <br>
 
@@ -232,8 +238,8 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 | Ax-P1：测量即选择 | 哥本哈根诠释及其变体；关系量子力学（RQM）；QBism 框架 | 多世界诠释（Everett）：无坍缩，无"选择"，所有分支共存。在 MWI 下 $\hat{G}_\theta$ 需要重新定位为分支内的观察者-相对过程，而不是全局本体论判决 |
 | Ax-P2：比特源于选择（Wheeler 修正） | 若 Wheeler 意图中确实缺乏算子概念 | Wheeler 后期的"参与性观察者"框架已接近 $\hat{G}_\theta$ 的角色；"修正"可能过于强硬——更准确的说法是"补充形式化"而非纠错 |
 | Ax-P3：全息对偶（$d \propto S_{entanglement}$） | 全息原理本身（Bekenstein-Hawking）的有效范围内 | 全息对偶的 $d \propto S_{entangle}$ 是候选类比，不是推导。边界纠缠面积对应 d-value 需要独立论证 |
-| T-Phys-2：时间离散化（普朗克尺度） | 若 QG 发展出离散时间的完整形式化 | 2009 年 FERMI/LAT 对 GRB 090510 的观测将洛伦兹不变性破坏限制到普朗克尺度以下（Abdo et al., *Nature*, 2009）。T-Phys-2 当前是桥接层的候选读法，不是已有经验支持的定理 |
-| T-Phys-4：引力即 $\Psi_f$（$G_{\mu\nu} \propto \Psi_f$） | 作为结构类比，揭示两个框架中"维持现实的代价"的平行角色 | $G_{\mu\nu} \propto \Psi_f(L_1)$ 是一个比例声明，但爱因斯坦场方程的精确张量形式未从 SRT 公理推导出。Verlinde 的熵引力程序有类似志向但遭遇了严重挑战。T-Phys-4 目前是类比强度，不是定理强度 |
+| H-Phys-2：时间离散化（普朗克尺度） | 若 QG 发展出离散时间的完整形式化 | 2009 年 FERMI/LAT 对 GRB 090510 的观测将洛伦兹不变性破坏限制到普朗克尺度以下（Abdo et al., *Nature*, 2009）。H-Phys-2 当前是桥接层的候选读法，不是已有经验支持的定理 |
+| H-Phys-4：引力-摩擦弱相容 | 作为结构类比，揭示两个框架中"维持现实的代价"的平行角色 | 当前只承诺弱场极限下 `\Psi_f^{phys}` 梯度与牛顿势梯度方向同号的候选相容性；$G_{\mu\nu} \propto \Psi_f(L_1)$ 不得读作已证结论 |
 
 ---
 
@@ -250,30 +256,30 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 
 ---
 
-### DP-PHYS-2：T-Phys-2 的经验压力
+### DP-PHYS-2：H-Phys-2 的经验压力
 
-**挑战来源**：T-Phys-2 把时间写成离散的选择序列 $t_n \equiv n \cdot \tau_{Planck}$，每个"时钟节拍"是一次选择事件。这不只是诠释性主张，而是一个有潜在经验内容的物理声明——离散时空会对不同能量光子的传播速度产生频散效应。
+**挑战来源**：H-Phys-2 把时间写成离散的选择序列 $t_n \equiv n \cdot \tau_{Planck}$，每个"时钟节拍"是一次选择事件。如果被升级为物理离散时空主张，它会获得潜在经验内容：离散时空可能对不同能量光子的传播速度产生频散效应。
 
 **经验状态**：FERMI/LAT 对 GRB 090510（Abdo et al., *Nature*, 462, 2009）的分析显示，不同能量的光子几乎同时到达，把线性洛伦兹不变性破坏系数约束到 $\xi_1 < 0.1$（普朗克单位）。后续 GRB 数据进一步收紧了这一限制。
 
 **对 SRT 的直接压力**：若时间的离散化在普朗克尺度上是真实物理效应，某些具体的 QG 模型（如部分形式的圈量子引力）预测的频散就应该已经被 FERMI 探测到。未探测到这一效应，对强版本的普朗克离散时间是约束。
 
 **当前 SRT 的诚实回答**：
-- T-Phys-2 没有指定具体的频散模型，因此无法直接被 FERMI 数据证伪
-- 更准确的读法：T-Phys-2 是 L₀ 第一命题（选择产生存在）在时间概念上的 bridge 投影——"每次不可撤回选择对应一个时间原子"。这是诠释性的，不是量子引力领域意义上的经验预测
-- 结论：T-Phys-2 应降低声调，标记为"候选桥接读法"，而不是带有经验内容的推导定理
+- H-Phys-2 没有指定具体的频散模型，因此无法直接被 FERMI 数据证伪
+- 更准确的读法：H-Phys-2 是 L₀ 第一命题（选择产生存在）在时间概念上的 bridge 投影——"每次不可撤回选择对应一个时间原子"。这是诠释性的，不是量子引力领域意义上的经验预测
+- 结论：H-Phys-2 保持 hypothesis / bridge 地位，不得回升为推导定理
 
 ---
 
-### DP-PHYS-3：T-Phys-4 的推导缺口
+### DP-PHYS-3：H-Phys-4 的推导缺口
 
-**挑战来源**：T-Phys-4 声称 $G_{\mu\nu} \propto \Psi_f(L_1)$——引力场方程等价于维持显现所需的本体论摩擦。这是一个非常雄心勃勃的类比，在精神上接近 Verlinde 的熵引力（entropic gravity）或 Jacobson 的热力学推导（1995）。这些程序显示，在特定假设下，Einstein 方程可以从热力学/信息论关系推导出来。
+**挑战来源**：H-Phys-4 的强版本曾声称 $G_{\mu\nu} \propto \Psi_f(L_1)$——引力场方程等价于维持显现所需的本体论摩擦。这是一个非常雄心勃勃的类比，在精神上接近 Verlinde 的熵引力（entropic gravity）或 Jacobson 的热力学推导（1995）。这些程序显示，在特定假设下，Einstein 方程可以从热力学/信息论关系推导出来。
 
 **对 SRT 的直接压力**：$G_{\mu\nu}$ 有精确的张量结构，包含黎曼曲率的具体收缩。$\Psi_f$ 是一个本体论摩擦概念。要让比例关系成立，需要证明：SRT 的 Ψ_f 结构确实产生正确的张量形式，而不只是"引力高的地方维持代价也高"这个直觉。Verlinde 的程序本身就遭遇了严重的理论困难（低加速度极限、CMB 等）。
 
 **当前 SRT 的诚实回答**：
-- T-Phys-4 目前是结构类比层次，不是推导结果
-- 正确表述：在 SRT 框架内，引力曲率和本体论摩擦扮演结构上平行的角色（都标记维持显现的代价），但这个平行性是否可以发展成一个推导程序，是一个真实开放的研究方向
+- H-Phys-4 目前是弱相容假说，不是推导结果
+- 正确表述：在 SRT 框架内，引力曲率和本体论摩擦扮演结构上平行的角色（都标记维持显现的代价）。当前只保留弱场梯度方向相容；这个平行性是否可以发展成推导程序，是一个真实开放的研究方向
 - 在推导完成之前，$G_{\mu\nu} \propto \Psi_f$ 不应被读成已证结论
 
 ---
@@ -286,7 +292,7 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 | 想看 SRT 与量子引力各诠释的系统比较 | → `Physics/SRT_Quant_00_Intro.md` |
 | 想了解多世界兼容性的当前状态 | → `Physics/SRT_Quant_02_Cosmology.md`（候选接口） |
 | 想看 SRT 在物理上的 Lab 层赌注 | → `Governance/SRT_LAB_HYPOTHESES.md` |
-| 想了解 T-Phys-4 引力类比的更深背景 | → `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` |
+| 想了解 H-Phys-4 引力类比的更深背景 | → `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` |
 
 ---
 
@@ -310,7 +316,7 @@ Modern physics faces a constellation of interrelated foundational problems:
 | **Non-Locality** | "Spooky action at a distance" | $L_0$ has no spatial separation |
 | **Quantum-Classical Boundary** | Decoherence is incomplete | $L_2$ stability threshold |
 | **Vacuum Energy Catastrophe** | 120 orders of magnitude mismatch | $L_0$ carries no gravitational mass |
-| **Fine-Tuning** | Anthropic coincidence | $L_2$ strong attractor selection |
+| **Fine-Tuning** | Anthropic coincidence | stable `L_2` parameter-subspace hypothesis |
 
 **SRT's Contribution**: By recognizing that selection is ontologically primitive, physics regains conceptual coherence without abandoning mathematical rigor.
 
@@ -464,6 +470,6 @@ I(L_1^A;L_1^B)\to 0
 | $\hat{G}_{phys}$ | Physical Selection Operator | §I Def-Phys-1 [D1.1.1] |
 | $\theta_{basis}$ | Basis Choice Parameter | §I Def-Phys-1 [D1.1.1] |
 | $\theta_{boundary}$ | Heisenberg Cut Parameter | §I Def-Phys-1 [D1.1.1] |
-| $\Psi_f$ | Ontological Friction | T-Phys-1 [T1.4.1], T-Phys-4 [T1.4.4] |
-| $\tau_{Planck}$ | Planck Time | T-Phys-2 [T1.4.2] |
+| $\Psi_f$ | Ontological Friction | T-Phys-1 [T1.4.1], H-Phys-4 [H1.4.4] |
+| $\tau_{Planck}$ | Planck Time | H-Phys-2 [H1.4.2] |
 | $S_{entanglement}$ | Entanglement Entropy | Ax-P3 [A1.3.3] |

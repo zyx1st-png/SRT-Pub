@@ -47,6 +47,8 @@ $$ d \uparrow \land w_{L_2} \downarrow \land \vec{v}_{self} \parallel -\nabla F_
 ### Ax-Evo-3: Shoshin Alignment
 **Formal Definition**: Shoshin is the cosine alignment between agent velocity and global free-energy descent.
 $$ \text{Shoshin} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{global}) $$
+
+> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface, not a settled canonical definition.
 * **Implication**: 初心是方向一致性指标，而非抽象道德情绪。
 
 ## II. Praxis Dynamics (实践动力学)

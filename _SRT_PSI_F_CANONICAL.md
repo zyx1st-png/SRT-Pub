@@ -24,7 +24,7 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 |---------|------|---------|
 | Core / Core_Law | 锚定代价 | 把 `L_0` 压成 `L_1` 的支付项 |
 | Dynamics / Scaling | 生成性摩擦 | 学习、演化、文化变迁的动力学来源 |
-| Physics | 几何曲率 / 引力 | 物理尺度上的规范实现 |
+| Physics | 几何曲率 / 引力 | 物理尺度上的 P3/P4 弱相容接口，不是已完成张量级推导 |
 | AI / Consciousness | 痛苦与 stake 的必要条件 | 没有真实 `Ψ_f` 负担就没有真实关切 |
 | Experiment | 潜变量 | 通过 HRV / SCR / 语言情态比等 proxy 读取 |
 
@@ -44,8 +44,16 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 >
 > 使用原则：
 > - 讨论 **本体论意义 / 现实化 / stake / AI 门槛** 时，优先引用 `Def-Ψ-1`。
-> - 讨论 **方程 / Fisher 几何 / 引力实现 / 路径积分** 时，优先引用 `Def-Ψ-2`。
+> - 讨论 **方程 / Fisher 几何 / 路径积分** 时，优先引用 `Def-Ψ-2`，并说明几何读法是 projection / lower-bound style formalization，不自动等同实际支付成本。
 > - 讨论 **跨尺度比较 / 量子-神经-社会统一 / 实验操作化** 时，优先引用 `Def-Ψ-3`。
+
+### §1.1 v1 Canonical Main Reading（治理性钉住，2026-04-22）
+
+> **层级**：governance / canonical usage rule；不新增 core theorem。
+
+全仓默认主读暂取 **information-theoretic payability cost**：`Ψ_f` 首先表示把开放可能性压成可维持现实切片时，系统必须可支付的信息论/组织性负担。几何读法（路径长度、曲率）与代谢读法（能量、恢复、压力代理）是该主读在特定域内的 projection / allowed proxy。
+
+若同一域内的几何 projection、代谢 projection 与 payability 主读发生冲突，默认以 payability 主读为准；冲突的投影应标记为 projection failure，而不是反向改写 `Ψ_f` 的 canonical 含义。
 
 ---
 
@@ -158,22 +166,25 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 
 ## §4 引力关系的规范立场
 
-### Def-Ψ-G-1: Gravity as Normative Physical Realization
+### H-Ψ-G-1: Weak Gravity-Friction Compatibility
 
 \[
 \boxed{
-\text{Gravity is not merely analogous to } \Psi_f;\ \text{it is the normative physical-scale realization of } \Psi_f
+\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{in the weak-field compatibility window}
 }
 \]
 
-这意味着：
-- 局部经验上：引力读作下坠、沉重、难以逃逸
-- 记账上：引力读作做功代价
-- 形式上：引力读作时空曲率
+> **层级**：hypothesis / bridge；物理域 P3/P4 接口，不是 core necessity。
 
-因此，SRT 不再把“引力像本体论摩擦”当作弱比喻，而把它定为强陈述：
+当前最弱承诺是：在弱场极限与适当投影下，`Ψ_f` 的物理投影梯度应与牛顿势梯度方向同号或同向相容。它只保留“引力曲率与现实维持负担在物理尺度上结构相容”的接口。
 
-> 引力是 `Ψ_f` 在物理尺度上的规范实现。
+本节明确不承诺：
+
+- 已从 SRT 推出 Einstein tensor 的精确张量形式；
+- `G_{\mu\nu} \propto \Psi_f` 是已证定理；
+- 物理常数或 GR 精确重建已经由 `Ψ_f` 解释。
+
+强版“GR / quantum gravity level reconstruction from `Ψ_f`”保留为远期目标，当前无可执行推导路径。
 
 **重要补注**：  
 “客观性”不能再写成“对象维持摩擦 = 0”。更准确的写法是：
@@ -274,7 +285,7 @@ SRT 的最优条件不是：
   - `Eq-Select-Thermo-C2` 给出可支付条件
 
 - 与 `Physics/SRT_Physics_Cosmology.md` 的关系：
-  - 本文件固定“引力是 `Ψ_f` 的物理规范实现”的规范立场
+  - 本文件固定弱场相容接口；物理主文不得把 `Ψ_f` 写成已完成的 GR 张量重建
 
 - 与 `AI/SRT_AI_01_Ontology.md` 的关系：
   - 本文件固定“non-binding friction”优于“粗暴 `Ψ_f=0`”的写法
@@ -307,4 +318,3 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 若只需要一句最短规范句，使用：
 
 > **`Ψ_f` 是选择把开放可能性压缩为一个可维持、可行动、可协调的现实切片时必须承担的本体论阻抗；它在动力学上读作阻力，在记账上读作代价，在形式化上读作几何长度；跨尺度真正保持不变的不是单位，而是该阻抗是否可支付。**
-

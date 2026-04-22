@@ -200,7 +200,7 @@ d_{expansion} \propto \text{Uncertainty}_{vital} - \text{Uncertainty}_{epistemic
 | 主张 | 有效条件 | 退化/失效条件 |
 |:----|:--------|:------------|
 | T-FEP-1：FEP 不充分性 | 在匹配 $\boldsymbol{\Pi}$ 与任务难度后，真实赌注条件与模拟赌注条件的长期行为仍分离 | 若三种条件（真实风险/无风险/模拟风险）的长期 $\hat{d}_{min}$ 轨迹收敛，则"不可逆赌注不可还原"应降级为"工程性偏好设置"（见 `Governance/SRT_LAB_HYPOTHESES.md` H-Stake-01 降级触发） |
-| $\Psi_f \propto \varepsilon_{pred}$ 映射（Ax-NEURO-4b） | 作为候选的局部线性近似，在代谢与预测误差可同时测量的范围内 | 若 $\Psi_f$ 代理（代谢率）与预测误差代理（MMN 振幅）跨个体无相关，则该映射在可测层面为空 |
+| $\Psi_f \propto \varepsilon_{pred}$ 映射（H-NEURO-4b） | 作为 P3/P4 候选的局部线性近似，在代谢与预测误差可同时测量的范围内 | 若 $\Psi_f$ 代理（代谢率）与预测误差代理（MMN 振幅）跨个体无相关，则该映射在可测层面为空；下游临床结论不得据此升级为 P2 定理 |
 | FEP 是"候选重读对象"而非"被 SRT 超越的框架" | 始终 | 这是当前仓库的稳定口径（T-FEP-1 Tension-Rev-ExtT4）；任何把 SRT 写成"已胜出 FEP"的表述都超出当前 bridge 强度 |
 
 ---

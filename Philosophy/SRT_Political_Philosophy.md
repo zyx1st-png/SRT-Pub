@@ -32,6 +32,15 @@ created: 2026-04-22
 - 文中若涉及 “最大秩序”，优先按 `_SRT_T_DIR_CANONICAL.md §19` 读取：它首先是方向，不是终点国家，也不是一次性可抵达的完满政治体制。
 - 文中若出现 “公正 / 不公”，默认回链 `Philosophy/SRT_Philosophy_Ethics.md` 中的 `Structural Injustice Thermodynamics Interface` 与 `ε-Grounded Moral Topology`。
 
+## Legitimacy Ladder (秩序条件到正当性的推理阶梯)
+
+> **Level**: governance / bridge. This ladder prevents direct jumps from `L_1/L_2` order conditions to political legitimacy.
+
+1. **秩序条件**：某个 `L_2` structure stabilizes coordination or lowers local friction.
+2. **制度类型判断**：该 structure 是地板、门控、委托、垄断、应急装置，还是病理闭包。
+3. **委托关系正当性**：被影响主体是否保留可追责、可修正、可退出或可再选择的通道。
+4. **政治正当性**：只有当前三层都可说明时，才能讨论 legitimacy；缺少中间判据时，表述必须写成 conditional / diagnostic，不得从 `L_1` 或 `L_2` 稳定性直接推出正当性。
+
 # Part A: Political Axioms & Criteria (P2/P3/P4)
 
 > **Claim-level map**：`Ax-Pol-*` 为 Political-domain mapping axioms（P2/P3）；显式阈值、代理指标、制度判准与可证伪条件为 P4。

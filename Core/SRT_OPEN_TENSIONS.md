@@ -271,6 +271,40 @@ Only systems meeting such a window could be candidates for surrogate stake. Even
 
 ---
 
+## 7. P0-04: Origin of Selectability
+
+### Current State
+
+`Core/SRT_Core_21_Minimal_Axioms.md P0-04` currently constrains operator well-formedness. It does not explain where selectability itself comes from, nor does it fully derive the first selecting capacity from a prior non-selective ground.
+
+### Problem Point
+
+This is an unresolved core exposure point, not a solved theorem. The repo must not let bridge layers quietly smuggle in a pre-existing chooser, subject, agent, will, or "capacity to select" and then cite SRT Core as if that origin had already been derived.
+
+The weak point is especially visible when a domain says:
+
+- "the system chooses";
+- "the subject expands";
+- "the operator reads";
+- "the community reselects";
+- "the practice increases agency."
+
+Those phrases may be useful bridge language, but they are not answers to the origin of selectability.
+
+### Minimal Guardrail
+
+> **Level**: governance / core exposure. This is a boundary rule, not a solution.
+
+Any bridge that uses a selector-like term must mark which layer it is using:
+
+1. **Derived process**: selector-like behavior emerges from already specified dynamics.
+2. **Stable pattern**: selector is a stabilized `L_1/L_2` pattern, not a primitive.
+3. **Assumed interface**: selector is taken as a domain interface and must not be cited as core derivation.
+
+Until the origin question is actually hardened, P0-04 should be cited as an open exposure point. Do not add a formula here to make the gap look closed.
+
+---
+
 ## Standing Rule
 
 If a domain file uses one of these tensions, it should mark the claim level:

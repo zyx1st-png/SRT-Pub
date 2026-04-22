@@ -59,13 +59,15 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 1. `CANONICAL_REGISTRY.md`
 2. `Governance/SRT_CLAIM_LADDER.md`
-3. `Core_Law/SRT_L0_Metaphysics.md`
-4. `_SRT_D_VALUE_CANONICAL.md`
-5. `_SRT_PSI_F_CANONICAL.md`
-6. `_SRT_T_DIR_CANONICAL.md`
-7. `_SRT_SYMBOL_TABLE.md`
-8. `Core/SRT_Core_21_Formal_Axioms.md`
-9. `Core/SRT_Core_22_Equations.md`
+3. `Governance/SRT_CLAIM_MODE_AUDIT.md`
+4. `Core_Law/SRT_L0_Metaphysics.md`
+5. `_SRT_D_VALUE_CANONICAL.md`
+6. `_SRT_PSI_F_CANONICAL.md`
+7. `_SRT_T_DIR_CANONICAL.md`
+8. `_SRT_CROSS_DOMAIN_MATRIX.md`
+9. `_SRT_SYMBOL_TABLE.md`
+10. `Core/SRT_Core_21_Formal_Axioms.md`
+11. `Core/SRT_Core_22_Equations.md`
 
 以下层默认不承担最终定义权：
 
@@ -87,9 +89,11 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - L0 → `Core_Law/SRT_L0_Metaphysics.md`
 - Chinese core text candidate → `Core_Law/SRT_Core_Text_CN_Euclid.md`
 - claim ladder → `Governance/SRT_CLAIM_LADDER.md`
+- claim-mode audit → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - d-value → `_SRT_D_VALUE_CANONICAL.md`
 - `Ψ_f` → `_SRT_PSI_F_CANONICAL.md`
 - `T_dir` → `_SRT_T_DIR_CANONICAL.md`
+- cross-domain usage matrix → `_SRT_CROSS_DOMAIN_MATRIX.md`
 - formal axioms → `Core/SRT_Core_21_Formal_Axioms.md`
 - minimal axioms → `Core/SRT_Core_21_Minimal_Axioms.md`
 - constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
@@ -154,6 +158,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - freeze policy → `Governance/SRT_CANONICAL_FREEZE.md`
 - edit protocol → `Governance/SRT_EDIT_PROTOCOL.md`
 - claim ladder → `Governance/SRT_CLAIM_LADDER.md`
+- claim-mode audit → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - harness tests → `Governance/SRT_HARNESS_TESTS.md`
 
 ## Archives
