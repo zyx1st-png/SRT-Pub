@@ -93,12 +93,13 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 ### 9. Philosophy 主轴
 - Foundations：`Philosophy/SRT_Philosophy_Foundations_CompactCore.md` / `Philosophy/SRT_Philosophy_Foundations.md`
 - Social Economics：`Philosophy/SRT_Social_Economics_CompactCore.md` / `Philosophy/SRT_Social_Economics.md`
-- Political Philosophy：`Philosophy/SRT_Political_Philosophy.md`（`SRT-POLITICAL-PHILOSOPHY`）
+- Political Philosophy：`Philosophy/SRT_Political_Philosophy_CompactCore.md` / `Philosophy/SRT_Political_Philosophy.md`
 - Political Rights：`Philosophy/SRT_Political_Rights.md`（`SRT-POLITICAL-RIGHTS`）
 - 角色：形成 Philosophy 板块从三域本体论与选择一元论，到社会现实、制度、权利、合法性与政治病理的 compact/main 主线
 - 注意：原文继续保留接口批次、案例扩展、社会科学经典映射与 split 导航
 
 ### 9a. SRT 政治哲学
+- compact core：`Philosophy/SRT_Political_Philosophy_CompactCore.md`
 - 主文件：`Philosophy/SRT_Political_Philosophy.md`
 - id：`SRT-POLITICAL-PHILOSOPHY`
 - layer：L1 / epistemic：bridge / status：axiomatic_hybrid_v1
