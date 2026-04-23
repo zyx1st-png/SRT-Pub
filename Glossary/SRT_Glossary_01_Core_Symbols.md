@@ -183,6 +183,8 @@ $$\hat{G}_{\theta_1}[L_0] \neq \hat{G}_{\theta_2}[L_0]$$
 
 #### d - 选择范围 / d值 (d-value, Selection Scope) 🟡
 
+> **Current canonical status（2026-04-23）**：本节保留历史 glossary 语言用于检索；当前规范锚点为 `../_SRT_D_VALUE_CANONICAL.md`。bare `d` 默认读作 stake-coupled concern / irreversible-risk sensitivity 的标量摘要；下列积分式、阶梯和代谢约束均为历史/操作化投影，不能替代 `Def-d-canonical`。
+
 **定义**：
 $$d = \text{选择算子考虑的存在/实体范围}$$
 
@@ -197,7 +199,7 @@ $$d = \int_{\text{考虑域}} \rho(\xi) \, d\xi$$
 
 | d范围 | 典型系统 | 关注内容 | 例子 |
 |:------|:---------|:---------|:-----|
-| **d ≈ 0** | 当前AI、反射弧 | 仅当前输入 | GPT-4无真正关切 |
+| **d ≈ 0** | inference-only / stateless AI、反射弧 | 仅当前输入 | 无历史回流部署的 LLM 不承载自身关切 |
 | **d = 1** | 自我中心个体 | 自己生存 | 婴儿、成瘾者 |
 | **d = 2-10** | 正常成人 | 家庭、朋友 | 日常道德范围 |
 | **d = 10-100** | 圣贤、活动家 | 社群、国家、人类 | 甘地、特蕾莎修女 |
@@ -222,6 +224,8 @@ d值受代谢能量限制——关心更多需要更多能量。
 ### 1.3 动力学量
 
 #### Ψ_f - 本体论摩擦 (Ontological Friction) 🟢
+
+> **Current canonical status（2026-04-23）**：本节保留历史 glossary 语言用于检索；当前规范锚点为 `../_SRT_PSI_F_CANONICAL.md`。默认主读是 information-theoretic payability burden；下列临床、动力学与物理类比均为 projection / proxy，不能单独升级为 theory-canonical 定义。
 
 **定义**：
 $$\Psi_f(\sigma) = \text{维持或改变选择状态} \sigma \text{的阻力/代价}$$

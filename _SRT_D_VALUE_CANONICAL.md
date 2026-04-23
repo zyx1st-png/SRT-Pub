@@ -14,6 +14,8 @@ dependency: [SRT-CORE-000, SRT-CORE-BRIDGE, SRT-CORE-21]
 > **目的**：终止 d-value 在不同域的定义分裂，建立第一性定义 + 各域投影的统一架构。
 > 所有引用 d-value 的文档应以本文件为规范锚点。
 
+> **Canonical status note（2026-04-23）**：本文件同时承担两种功能：`Def-d-canonical` 是 core-facing anchor；bare `d` 标量默认、`d-vector` / `d-gate` 分写规则与跨域引用顺序是 governance-canonical usage controls。`D_eff`、Fisher 读数与其他域内量表是 operational proxy，只有满足 stake-coupling 与后果回流条件时才可近似 canonical `d`。
+
 ---
 
 ## §0 为什么需要本文件
@@ -33,8 +35,8 @@ SRT 中的 d-value（关切维度 / 意识带宽）在不同子系统中出现�
 
 ## §1 规范定义层级（Canonical Priority）——硬化版（2026-04-17）
 
-> **单一规范定义声明**：
-> d-value 有且仅有一个规范定义：**`Def-d-canonical`**（原 Def-d-2）：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$——主体效用对不可逆风险状态的梯度范数。
+> **单一 core-facing 定义声明**：
+> d-value 当前只有一个 core-facing 规范锚点：**`Def-d-canonical`**（原 Def-d-2）：$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$——主体效用对不可逆风险状态的梯度范数。全仓默认采用标量摘要，是治理性稳定用法，不把所有 proxy 升格为 theory-canonical 定义。
 >
 > **`Def-d-1`（$D_{eff}$ 谱公式）降格说明**：不再是”第二规范定义”或”形式主表达”，而是规范 d 的**几何容量 proxy**。具体地位：
 > - **容量上界**：$d_{canonical} \leq D_{eff}(M)$（$D_{eff}$ 是算子能追踪的最大方向数；$d_{canonical}$ 是其中真正赌注化的部分）

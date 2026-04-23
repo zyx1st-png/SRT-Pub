@@ -18,6 +18,7 @@ dependency: [SRT-INDEX]
 - open tensions / unresolved pressure-point ledger
 - 二维坐标治理（`layer × epistemic_layer`）
 - 定位与认知状态治理（`OS / Bridge / Lab`）
+- canonical 状态区分（governance-canonical / theory-canonical / operational proxy / bridge hypothesis）
 - 全局 Lab 硬赌点与实验下注口
 - 文档工程规范
 - 解释协议
@@ -32,14 +33,16 @@ dependency: [SRT-INDEX]
 2. `SRT_EDIT_PROTOCOL.md`
 3. `SRT_CLAIM_LADDER.md`
 4. `SRT_CLAIM_MODE_AUDIT.md`
-5. `SRT_HARNESS_TESTS.md`
-6. `SRT_POSITIONING.md`
-7. `SRT_COORDINATE_SYSTEM.md`
-8. `SRT_LAB_HYPOTHESES.md`
-9. `SRT_REPO_OPTIMIZATION_EXECUTION_PLAN_2026-04.md`
-10. `_SRT_DOC_ENGINEERING_GUIDE.md`
-11. `_SRT_EXPLANATION_PROTOCOL.md`
-12. `_SRT_QUALITY_SCORECARD.md`
+5. `../CANONICAL_REGISTRY.md`（见 §0 的 canonical 状态区分）
+6. `../_SRT_CROSS_DOMAIN_MATRIX.md`
+7. `SRT_HARNESS_TESTS.md`
+8. `SRT_POSITIONING.md`
+9. `SRT_COORDINATE_SYSTEM.md`
+10. `SRT_LAB_HYPOTHESES.md`
+11. `SRT_REPO_OPTIMIZATION_EXECUTION_PLAN_2026-04.md`
+12. `_SRT_DOC_ENGINEERING_GUIDE.md`
+13. `_SRT_EXPLANATION_PROTOCOL.md`
+14. `_SRT_QUALITY_SCORECARD.md`
 
 未收口理论问题的当前账本见：
 

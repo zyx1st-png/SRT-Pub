@@ -22,6 +22,9 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - `canonical` 在本仓库内表示“当前内部优先引用的稳定锚点”，**不自动等于**“外部已证实的自然定律”。
 - `governance-canonical` 表示为防止全仓漂移而采用的稳定用法规则；它可以是当前主读、默认符号口径或工作代理，不自动声称已完成本体推导。
 - `theory-canonical` 表示由 core 结构推出或在 core 中具有更强优先权的定义 / 命题；只有明确回链 P0/P1/P2 来源时才按此读。
+- `operational proxy` 表示为了测量、比较或建模而采用的工作性读数；它可以近似 canonical 对象，但不得反向改写 canonical 对象。
+- `bridge hypothesis` 表示跨域映射或解释性接口；它可以承载候选结构，但不得被下游引用成 core theorem。
+- 旧文件名、旧 theorem/axiom 标签或 glossary 历史条目若仍保留，均按当前 claim ladder、claim-mode audit 与本注册表的本地说明判读；历史命名不恢复更高等级。
 - 自 `2026-03-17` 起，SRT 默认按 `OS / Bridge / Lab` 三层理解；详见 `Governance/SRT_POSITIONING.md`。
 - 自 `2026-04-20` 起，SRT 额外按命题级硬度 `P0-P5` 管理；详见 `Governance/SRT_CLAIM_LADDER.md`。
 - 本注册表中的大多数条目默认属于 **OS** 或 **Bridge**，用于收口词汇、语法与高阶接口；真正的硬赌点应优先沉淀到实验与假说文件，而不是混在 canonical 锚点里。
@@ -30,18 +33,18 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 1. d-value
 - 主锚点：`_SRT_D_VALUE_CANONICAL.md`
-- 说明：统一 d-value 的 governance-canonical 默认用法、域内投影、误用边界；bare `d` 默认采用标量摘要形式，向量 / 门读须显式标注
+- 说明：统一 d-value 的 governance-canonical 默认用法、域内投影、误用边界；bare `d` 默认采用标量摘要形式，向量 / 门读须显式标注；`D_eff`、Fisher 读数、d-vector 与 d-gate 均为 proxy / judgment tool，不能反向替代 `Def-d-canonical`
 - 引用规则：首次出现 d-value 时优先回链本文件
 
 ### 2. Ψ_f（本体论摩擦）
 - 主锚点：`_SRT_PSI_F_CANONICAL.md`
-- 说明：统一 `Ψ_f` 的 v1 governance-canonical 信息论代价 / 可支付性主读、几何 / 代谢投影、可支付性条件与物理弱相容边界
+- 说明：统一 `Ψ_f` 的 v1 governance-canonical 信息论代价 / 可支付性主读、几何 / 代谢投影、可支付性条件与物理弱相容边界；几何与代谢表达是有条件 projection，不是最终唯一推导
 - 引用规则：首次出现 `Ψ_f`、本体论摩擦、可支付性条件或“引力是否只是类比”时优先回链本文件
 
 ### 3. T_dir（方向透明度）与价值遮蔽
 - 主锚点：`_SRT_T_DIR_CANONICAL.md`
-- 说明（Part I §1-§10）：T_dir 是系统对自身选择秩序方向可读性的 v0 operational proxy / working canonical proxy；统一价值遮蔽命题、Ψ_f_actual/Ψ_f_felt 分裂、致命 L₂ 机制的治理性表述
-- 说明（Part II §11-§16）：扩展至价值动力学底层机制——L₂ 磁带/DNA 类比（§11）、三层价值结构（§12）、价值归纳 vs 理性归纳（§13）、时空对称性感知机制（§14）、价值作为暂时吸引子而非守恒结构（§15）、吸引子上升/退化动力学（§16）
+- 说明（Part I §1-§10）：T_dir 是系统对自身选择秩序方向可读性的 v0 operational proxy / working canonical proxy；统一价值遮蔽命题、Ψ_f_actual/Ψ_f_felt 分裂、致命 L₂ 机制的治理性表述；它尚不是 theory-canonical 形式基础
+- 说明（Part II §11-§16）：扩展至价值动力学底层机制——L₂ 磁带/DNA 类比（§11）、三层价值结构（§12）、价值归纳 vs 理性归纳（§13）、时空对称性感知机制（§14）、价值作为暂时吸引子而非守恒结构（§15）、吸引子上升/退化动力学（§16）；这些段落按 bridge / theory-clarifying 读，不因文件名而升级为 core theorem
 - 引用规则：涉及方向透明度、意义感/虚无感的 SRT 机制解释、致命 L₂、价值遮蔽、三层价值结构、价值归纳、吸引子动力学时优先回链本文件
 - 与 d-value 的关系：d 是 T_dir 的必要条件；两者独立，不互相替代
 
@@ -66,7 +69,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 4d. Cross-Domain Usage Matrix
 - 主文件：`_SRT_CROSS_DOMAIN_MATRIX.md`
-- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵
+- 说明：提供 `d`、`Ψ_f`、`T_dir`、`ε` 的 v0 跨域用法矩阵；该矩阵是 governance-canonical usage layer，不新增 theory-canonical 定义
 - 引用规则：跨域使用上述概念时，先检查 canonical 用法、allowed projection 与 forbidden shortcut
 
 ## B. 规范辅助层（Canonical Support）
