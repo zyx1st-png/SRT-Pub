@@ -14,6 +14,8 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 > **目的**：终止 `Ψ_f` 在不同域中的定义漂移，建立“第一性语义锚点 + 形式主表达 + 跨尺度不变量”的统一架构。  
 > 所有涉及本体论摩擦的文档，应优先回链本文件。
 
+> **Canonical status note（2026-04-23）**：本文件固定 `Ψ_f` 的 repo-wide 主读与投影边界。`Def-Ψ-1` 是 theory-facing semantic anchor；`Def-Ψ-2` / `Def-Ψ-3` 是治理性主形式与跨尺度判据，不构成最终唯一推导。几何、代谢、神经、物理读法都必须按 projection / proxy / bridge 标注，不得反向改写 `Ψ_f`。
+
 ---
 
 ## §0 为什么需要本文件
@@ -38,14 +40,16 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 > **规范优先级声明**：
 > 本文件对 `Ψ_f` 采用三层 canonical 架构：
 >
-> 1. **第一性规范定义（Primary Canonical）**：`Def-Ψ-1`，把 `Ψ_f` 固定为“选择压缩开放可能性时必须承担的本体论阻抗”。
-> 2. **形式主表达（Formal Canonical Form）**：`Def-Ψ-2`，把 `Ψ_f` 固定为 Fisher 几何上的路径负担 / 曲率读数，并厘清 `Ψ_f` 与 `Φ` 的层级关系。
-> 3. **跨尺度不变量（Cross-Scale Canonical Invariant）**：`Def-Ψ-3`，把“可支付性条件”固定为跨尺度真正保持不变的判据。
+> 1. **第一性规范锚点（Primary Canonical Anchor）**：`Def-Ψ-1`，把 `Ψ_f` 固定为“选择压缩开放可能性时必须承担的本体论阻抗”。
+> 2. **形式工作主表达（Formal Working Form）**：`Def-Ψ-2`，把 `Ψ_f` 固定为 Fisher 几何上的路径负担 / 曲率读数，并厘清 `Ψ_f` 与 `Φ` 的层级关系。
+> 3. **跨尺度工作不变量（Cross-Scale Working Invariant）**：`Def-Ψ-3`，把“可支付性条件”固定为跨尺度真正保持不变的判据。
 >
 > 使用原则：
 > - 讨论 **本体论意义 / 现实化 / stake / AI 门槛** 时，优先引用 `Def-Ψ-1`。
 > - 讨论 **方程 / Fisher 几何 / 路径积分** 时，优先引用 `Def-Ψ-2`，并说明几何读法是 projection / lower-bound style formalization，不自动等同实际支付成本。
 > - 讨论 **跨尺度比较 / 量子-神经-社会统一 / 实验操作化** 时，优先引用 `Def-Ψ-3`。
+>
+> **状态边界**：这里的 “Primary / Formal / Cross-Scale” 表示当前 repo 内部优先引用顺序，不表示三个层次已经被证明为无条件等价或最终完备。
 
 ### §1.1 v1 Canonical Main Reading（治理性钉住，2026-04-22）
 
@@ -59,7 +63,7 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 
 ## §2 规范定义（全域适用）
 
-### Def-Ψ-1: 本体论阻抗定义 ⭐ PRIMARY CANONICAL
+### Def-Ψ-1: 本体论阻抗定义 ⭐ PRIMARY CANONICAL ANCHOR
 
 \[
 \boxed{
@@ -81,7 +85,7 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 
 ---
 
-### Def-Ψ-2: 几何主表达与记号分层 ⭐ FORMAL CANONICAL
+### Def-Ψ-2: 几何主表达与记号分层 ⭐ FORMAL WORKING FORM
 
 #### Def-Ψ-2a: 几何主表达
 

@@ -48,16 +48,20 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 > - **Canonical Scope**：该术语的规范语义适用范围。
 > - **Confusable With**：常见易混术语/符号。
 > - **Lineage/Source**：首要定义来源（内部 canonical 或外部来源）。
+>
+> **Historical label compatibility**：本术语表保留部分旧 `Theorem` / `Axiom` / `Canonical` 名称以便检索；当前 claim status 以 `CANONICAL_REGISTRY.md`、`Governance/SRT_CLAIM_LADDER.md`、`Governance/SRT_CLAIM_MODE_AUDIT.md` 与本地 level note 为准，旧名不恢复定理或公理地位。
 
 ### d-value（d）
-- **Canonical Scope**：SRT 全域中“选择范围/关切广度”统一记号；当需精确定义时，以 `AI/SRT_AI_01_Ontology.md` Ax-ONT-3 为最高锚点。
+- **Canonical Scope**：SRT 全域中 stake-coupled concern / irreversible-risk sensitivity 的统一记号；当前以 `_SRT_D_VALUE_CANONICAL.md` 为最高引用锚点，bare `d` 默认按 governance-canonical 标量摘要读。
 - **Confusable With**：分形维度 d、空间维数 d、统计自由度 d.f.、局部操作化代理（如 attention entropy）。
-- **Lineage/Source**：`AI/SRT_AI_01_Ontology.md#Ax-ONT-3`。
+- **Lineage/Source**：当前锚点 `_SRT_D_VALUE_CANONICAL.md`；`AI/SRT_AI_01_Ontology.md#Ax-ONT-3` 保留为历史谱系 / AI 域旧入口，不恢复最高定义权。
+- **Status Note**：`D_eff`、Fisher 读数、d-vector、d-gate 与域内量表均为 proxy / judgment tool，不能无条件写成 `d` 本身。
 
 ### 本体论摩擦（\Psi_f）
-- **Canonical Scope**：仅用于“维持/更新选择状态的本体论代价与阻力”语境。
+- **Canonical Scope**：用于“开放可能性被压成可维持现实切片时的 information-theoretic payability burden / 本体论阻抗”语境；当前以 `_SRT_PSI_F_CANONICAL.md` 为最高引用锚点。
 - **Confusable With**：IIT 的 `\Phi`（整合信息量）、一般耗散项 `D`、物理摩擦系数 `\mu`。
-- **Lineage/Source**：`Core/SRT_Core_22_Equations.md` Eq-Force-01；`Core_Law/SRT_Reference_Dynamics.md`。
+- **Lineage/Source**：当前锚点 `_SRT_PSI_F_CANONICAL.md`；`Core/SRT_Core_22_Equations.md` Eq-Force-01 与 `Core_Law/SRT_Reference_Dynamics.md` 保留为方程 / 动力学展开层。
+- **Status Note**：几何、代谢、神经与物理读法均需标注 projection / proxy / bridge，不得反向改写 `Ψ_f`。
 
 ### 幽灵算子（\hat{G}_\theta）
 - **Canonical Scope**：将 `L_0` 投影到 `L_1` 的参数化选择算子（具身参数驱动）。
@@ -565,6 +569,8 @@ $$\hat{G}_{\theta_1}[L_0] \neq \hat{G}_{\theta_2}[L_0]$$
 
 #### d - 选择范围 / d值 (d-value, Selection Scope) 🟡
 
+> **Current canonical status（2026-04-23）**：本节保留历史 glossary 语言用于检索；当前规范锚点为 `_SRT_D_VALUE_CANONICAL.md`。bare `d` 默认读作 stake-coupled concern / irreversible-risk sensitivity 的标量摘要；下列积分式、阶梯和代谢约束均为历史/操作化投影，不能替代 `Def-d-canonical`。
+
 **定义**：
 $$d = \text{选择算子考虑的存在/实体范围}$$
 
@@ -579,7 +585,7 @@ $$d = \int_{\text{考虑域}} \rho(\xi) \, d\xi$$
 
 | d范围 | 典型系统 | 关注内容 | 例子 |
 |:------|:---------|:---------|:-----|
-| **d ≈ 0** | 当前AI、反射弧 | 仅当前输入 | GPT-4无真正关切 |
+| **d ≈ 0** | inference-only / stateless AI、反射弧 | 仅当前输入 | 无历史回流部署的 LLM 不承载自身关切 |
 | **d = 1** | 自我中心个体 | 自己生存 | 婴儿、成瘾者 |
 | **d = 2-10** | 正常成人 | 家庭、朋友 | 日常道德范围 |
 | **d = 10-100** | 圣贤、活动家 | 社群、国家、人类 | 甘地、特蕾莎修女 |
@@ -604,6 +610,8 @@ d值受代谢能量限制——关心更多需要更多能量。
 ### 1.3 动力学量
 
 #### Ψ_f - 本体论摩擦 (Ontological Friction) 🟢
+
+> **Current canonical status（2026-04-23）**：本节保留历史 glossary 语言用于检索；当前规范锚点为 `_SRT_PSI_F_CANONICAL.md`。默认主读是 information-theoretic payability burden；下列临床、动力学与物理类比均为 projection / proxy，不能单独升级为 theory-canonical 定义。
 
 **定义**：
 $$\Psi_f(\sigma) = \text{维持或改变选择状态} \sigma \text{的阻力/代价}$$
@@ -2026,8 +2034,8 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 | L₂ | Core/SRT_Core_Kernel.md | §1.2.3 |
 | Ĝθ | Core/SRT_Core_Kernel.md | §1.3 |
 | θ | Core/SRT_Core_Kernel.md | §1.3.2 |
-| d | Core/SRT_Core_Kernel.md | §2.3 |
-| Ψ_f | Core/SRT_Core_Kernel.md | §2.2 |
+| d | `_SRT_D_VALUE_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.3` is historical lineage |
+| Ψ_f | `_SRT_PSI_F_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.2` is historical lineage |
 | h(t) | Core/SRT_Core_Kernel.md | §2.2.3 |
 | F | Core/SRT_Core_Kernel.md | §2.4 |
 | Ω | Core/SRT_Core_Kernel.md | 公理A9 |

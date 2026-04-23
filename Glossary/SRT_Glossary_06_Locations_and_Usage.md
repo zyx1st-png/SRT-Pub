@@ -33,8 +33,8 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 | L₂ | Core/SRT_Core_Kernel.md | §1.2.3 |
 | Ĝθ | Core/SRT_Core_Kernel.md | §1.3 |
 | θ | Core/SRT_Core_Kernel.md | §1.3.2 |
-| d | Core/SRT_Core_Kernel.md | §2.3 |
-| Ψ_f | Core/SRT_Core_Kernel.md | §2.2 |
+| d | `../_SRT_D_VALUE_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.3` is historical lineage |
+| Ψ_f | `../_SRT_PSI_F_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.2` is historical lineage |
 | h(t) | Core/SRT_Core_Kernel.md | §2.2.3 |
 | F | Core/SRT_Core_Kernel.md | §2.4 |
 | Ω | Core/SRT_Core_Kernel.md | 公理A9 |

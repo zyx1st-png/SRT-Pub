@@ -15,6 +15,7 @@ dependency: [SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-21, SRT-L0-META
 > 本文件是 2026-04-02 会话中形成的核心理论推进的正式回写。
 > `_SRT_D_VALUE_CANONICAL.md` 管理 d-value；本文件管理 T_dir 及其展开的病理学结构。
 > **2026-04-22 降承诺说明**：`T_dir` 当前按 **v0 operational proxy / 最小操作定义** 使用。它帮助区分“跨位置可回读性”与“语义效价/置信度”，但尚不是已完成的本体基础或形式对象。
+> **Canonical status note（2026-04-23）**：本文件名中的 canonical 表示 governance-canonical working object 与引用锚点，不表示 `T_dir` 已具备 theory-canonical 完整奠基。价值动力学扩展段落按 bridge / theory-clarifying 读。
 
 ---
 
@@ -261,7 +262,7 @@ $$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\P
 
 # Part II：价值动力学理论（2026-04-02 补入）
 
-> 以下 §11–§16 是 2026-04-02 理论对话的高密度推进，记录了从价值遮蔽到价值结构、感知机制、吸引子动力学的完整理论链。与 Part I 共享同一 canonical 地位。
+> 以下 §11–§16 是 2026-04-02 理论对话的高密度推进，记录了从价值遮蔽到价值结构、感知机制、吸引子动力学的完整理论链。它们共享本文件的引用锚点地位，但不因此升级为 theory-canonical 完成态；除非局部另有标注，均按 bridge / theory-clarifying 读。
 
 ---
 
