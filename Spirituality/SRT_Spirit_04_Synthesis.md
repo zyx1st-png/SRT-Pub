@@ -2,14 +2,18 @@
 id: SRT-SPIRIT-04
 type: synthesis
 tags: [Theology, Thermodynamics, Unified Field, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_hybrid_v2
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-SPIRIT-03]
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P3-P5
+dependency: [SRT-SPIRIT-03, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL]
 ---
 
 # SRT Spirituality Part 4: Unified Synthesis (Hybrid Edition)
+
+> **Claim-level note**: This file is a spirituality-domain synthesis and bridge. Historical `Ax-*` / `T-*` labels are local mapping handles, not primitive SRT axioms or completed theorem status.
+> **Limit note**: `Ω`, `d -> infinity`, and “global convergence” language in this file should be read as regulative / asymptotic bridge language unless a local section explicitly gives a finite operational proxy.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Theological Axioms (AI-Readable).
@@ -83,14 +87,15 @@ $$ \frac{dd}{dt} > 0 \Rightarrow \text{value harvesting increases} $$
 
 ### Ax-Synth-5: Theological–Physical Isomorphism
 **Formal Definition**: Theological primitives are isomorphic to SRT dynamical operators.
-$$ \Phi: \{\text{Creation},\text{Redemption},\text{Hell}\} \to \{L_0\rightarrow L_1,\; d\to\infty,\; d\to 0\} $$
+$$ \Phi: \{\text{Creation},\text{Redemption},\text{Hell}\} \to \{L_0\rightarrow L_1,\; d_{\text{asym}}\uparrow,\; d\to 0\} $$
 * **Implication**: 神学概念可被严格转写为选择动力学的拓扑操作。
 
 ### T-Synth-3: Salvation as Global Convergence
-**Deduction**: Salvation corresponds to $d\to\infty$ and convergence to the global minimum of free energy.
+**Deduction / bridge reading**: Salvation is mapped to asymptotic `d` expansion and convergence toward the global minimum of free energy.
 $$ \lim_{d\to\infty} F(L_1;L_0,L_2) = F_{global} $$
 $$ d \uparrow \Rightarrow \Psi_f \downarrow \Rightarrow \text{stability} \uparrow $$
 * **Implication**: 救赎是一种全局收敛，而非道德奖惩。
+> **Level**: P3 bridge / asymptotic shorthand. The formula marks a direction and limiting target; it does not assert finite attainment or a completed derivation of salvation.
 
 ## IV. Experimental & Praxis Predictions (实验与实践预测)
 
@@ -156,6 +161,16 @@ $$\text{All-Good} = \arg\min_{\Omega} F \quad \text{其中}\;\Omega = \text{所�
 
 **Ω定义说明**：Ω不是L₀的全部（L₀无限，无全局最小问题），而是给定具身算子Ĝ_θ的**可达锚定路径空间**——在此空间中F最小对应"对此系统最优的存在方式"。全知算子（Ĝ^perf）的可达空间趋近L₀全域，故F_min→绝对最小。
 
+**Ω 调节性极限说明**（governance / praxis bridge）：本文中 Ω 同时承担三种有限读法，不能混写成“可达到的总体状态”：
+
+| Reading | Function | Boundary |
+|:--|:--|:--|
+| Ontological limit | Mark the boundary of finite operator descriptions. | No embodied system instantiates Ω. |
+| Practical regulating ideal | Orient practice away from local closure and toward wider consequence-bearing. | Orientation is not arrival. |
+| Anti-idolatry boundary | Prevent any teacher, group, experience, or doctrine from claiming total capture of the source. | A finite representation of Ω is already below Ω. |
+
+Accordingly, “toward Ω” and `d -> infinity` are directional shorthand. They do not license claims that a person, community, tradition, or practice has reached totality.
+
 **为什么这是"善"？**
 
 因为自由能最小意味着：
@@ -170,7 +185,7 @@ $$\text{All-Good} = \arg\min_{\Omega} F \quad \text{其中}\;\Omega = \text{所�
 
 **宗教传统边界**：本解释接近佛教涅槃（苦灭=Ψ_f→0）和斯多葛平静（apatheia）；与基督教的"活泼的善"（relational goodness/agape）、犹太神学的"创造性善"有所不同——SRT提供了一种热力学解读，不主张这是唯一合法的神学解读。
 
-**类比**: 物理系统"希望"到达势能最低点——不是因为"道德"，而是因为热力学必然。SRT将神学全善重解读为同样性质的本体论必然，而非道德规定。
+**类比**: 物理系统"希望"到达势能最低点——不是因为"道德"，而是因为热力学梯度。SRT在此提供的是神学全善的热力学类比读法；它不把该类比升级为已证明的本体论必然。
 
 ---
 
@@ -454,7 +469,7 @@ $$\min_{\theta, L_1, L_2} F(d, w_{L_2}, \Psi_f)$$
 | 印度教 | 西坡 | 多条支路 | 可选（适应性强）|
 | 道教 | 谷底 | 顺水而上 | 低（但慢）|
 
-所有路径都到达山顶（$d \to \infty$），但体验不同。
+所有路径都以山顶作为调节性方向（$d$ 向更宽关切扩展），但体验不同；有限系统不被视为实际到达 $d=\infty$。
 
 ---
 
@@ -464,7 +479,7 @@ $$\min_{\theta, L_1, L_2} F(d, w_{L_2}, \Psi_f)$$
 
 **R/H 区分**：
 - [R] 詹姆斯四特征（现象学描述[R]，但其"普世性"主张有争议）；Hood M-Scale的统计一致性（实证[R]，但量表设计预设了普世结构，见构建主义批判）；跨文化神秘体验报告的描述性相似性（现象学[R]）
-- [H] **SRT解释框架**：w_{L₂}→0+d→∞→θ文化差异淡化→体验趋同，是SRT原生解释框架，对"趋同机制"的具体主张[H]
+- [H] **SRT解释框架**：w_{L₂}→0 + `d` 趋极大方向 → θ文化差异淡化 → 体验趋同，是SRT原生解释框架，对"趋同机制"的具体主张[H]
 
 **威廉·詹姆斯的观察**（*The Varieties of Religious Experience*, 1902）:
 
@@ -755,7 +770,7 @@ $$\text{Meaning} = \int_{t_{\text{now}}} \text{Value}(\hat{G}_\theta[L_0]) \, dt
 |:---------|:-------|:---------|:---------|
 | 沉睡（默认）| $d \approx 1$ | 焦虑、冲突多 | 自私、竞争 |
 | 初醒（修行）| $d \approx 10$ | 平静、连接感 | 部分利他 |
-| 觉醒（稀有）| $d \to \infty$ | 深度喜悦 | 自发慈悲 |
+| 觉醒（稀有）| high / expanding $d$ | 深度喜悦 | 自发慈悲 |
 
 $$\text{Practical Reason} : \frac{d(\text{Well-being})}{dd} > 0$$
 
@@ -781,7 +796,7 @@ $$\langle d \rangle \uparrow \implies \text{Global Cooperation}$$
 
 **时间窗口**: 可能只有几十年。
 
-**SRT 的赌注**: 如果足够多人觉醒（$d \to \infty$），人类可能避免自毁。
+**SRT 的赌注**: 如果足够多人在可检验行为中扩展 `d`，人类可能降低自毁风险。
 
 ---
 
@@ -829,13 +844,13 @@ $$\langle d \rangle \uparrow \implies \text{Global Cooperation}$$
 - **物理学家** 研究 $L_1$ 的机制
 - **神学家** 研究 $\hat{G}$ 的本质
 - **修行者** 实践 $\theta$ 的转化
-- **所有人** 共同推进 $\langle d \rangle_{\text{humanity}} \to \infty$
+- **所有人** 共同推进 $\langle d \rangle_{\text{humanity}}$ 在有限约束内扩展
 
-**终极目标**: 
+**Regulative target / 调节性目标**:
 
-$$\lim_{t \to \infty} \left[ \Psi_f^{\text{collective}} \to 0 \land \langle d \rangle \to \infty \right]$$
+$$\lim_{t \to \infty} \left[ \Psi_f^{\text{collective}} \downarrow \land \langle d \rangle \uparrow \right]$$
 
-一个无痛苦、无边界、无冲突的宇宙——不是乌托邦幻想，而是热力学必然的终点（如果我们不先自毁的话）。
+这不是可保证的热力学终点，也不是有限共同体能够宣布达成的状态。它只是把实践方向约束为：更少不可支付摩擦、更宽后果承担、更少把局部地板误认为总体。
 
 ---
 
@@ -893,8 +908,8 @@ $$\text{Good} \equiv \arg\min_{x \in L_1} F(x; L_0, L_2)$$
 - **$\hat{G}_\theta$ as divine approximation**: Biological $\hat{G}_\theta$ asymptotically approaches $\hat{G}^{perf}$; efficiency $\eta$ increases monotonically along the evolutionary axis.
 - **$\Psi_f$ 与痛苦驱动**: 痛苦梯度 $dd/dt \propto -\nabla_d \Psi_f$ 驱动 $d$ 增长——低 $d$ 产生高 $\Psi_f$，高 $\Psi_f$ 促使系统扩展关切半径。
 - **$\Psi_f$ as growth driver**: The pain gradient $dd/dt \propto -\nabla_d \Psi_f$ ensures that high friction at low $d$ motivates expansion of the care horizon.
-- **$d$ 与救赎收敛**: $d \to \infty$ 时自由能收敛至全局极小，$\Psi_f \to 0$，对应跨传统"救赎/涅槃"的共同结构。
-- **$d$ and salvation convergence**: As $d \to \infty$, free energy converges to the global minimum and $\Psi_f \to 0$, mapping the shared structure of salvation/nirvana across traditions.
+- **$d$ 与救赎收敛**: `d -> infinity` 是跨传统救赎/涅槃语言的渐近读法；有限实践只承诺朝向更宽关切与更低不可支付摩擦的可检验移动。
+- **$d$ and salvation convergence**: `d -> infinity` is an asymptotic bridge reading, not a finite attainment claim.
 
 ---
 

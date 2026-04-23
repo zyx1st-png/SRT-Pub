@@ -210,10 +210,14 @@ SRT 可能被用成效率工具、管理技术、个人成功方法。这会把 
 
 共同体最容易失控的地方，是把“共同保护真实选择时刻”慢慢换成“共同维护共同体自身”。最低限度需要周期性检查：
 
-1. 共同目标是否仍在，还是只剩共同体自我维持？
-2. 共同体是否把自我维持伪装成目标、传统、方向或神圣性？
-3. 个体再选择能力是否保留，包括离开、质疑、重新命名、拒绝被解释的能力？
-4. 承担是否被集体吸收，以至于个人不再需要把后果带回自己的生活与关系？
+| Audit point | Question | Capture signal | Required repair |
+|:--|:--|:--|:--|
+| Common goal | 共同目标是否仍在，还是只剩共同体自我维持？ | 成员越来越先保护组织形象，而不是保护真实选择。 | Re-state the goal in ordinary language and allow members to test whether the group still serves it. |
+| Sacred disguise | 共同体是否把自我维持伪装成目标、传统、方向或神圣性？ | “维护共同体”被说成“维护真理 / 传统 / 能量 / 方向”。 | Separate the sacred aim from the group’s survival interest. |
+| Exit / dissent / renaming | 个体再选择能力是否保留，包括离开、质疑、重新命名、拒绝被解释的能力？ | 离开者被自动解释为退转、低阶、受伤、未准备好。 | Preserve clean exit, dissent, and the right to describe one’s own process. |
+| Return of burden | 承担是否被集体吸收，以至于个人不再需要把后果带回自己的生活与关系？ | 集体语言替成员承担所有后果，个人生活不再被检验。 | Require ordinary-life return: repair, work, relationship, body, finances, and civic responsibility. |
+
+The decisive test is not whether a community feels loving. It is whether love returns burden to life in a more payable form, instead of absorbing it into group myth.
 
 ---
 
