@@ -71,21 +71,21 @@ $$m_{bit} = \frac{k_B \cdot T \cdot \ln(2)}{c^2} \approx 3.19 \times 10^{-38} \t
 
 ## 2.1 真空能问题的 SRT 视角
 
-Subir Sarkar (2026) 指出，量子真空能（零点能）显而易见地不与引力耦合，否则宇宙早已坍缩。SRT 对此提供本体论证明：
+Subir Sarkar (2026) 指出，量子真空能（零点能）显而易见地不与引力耦合，否则宇宙早已坍缩。SRT 对此只提供 bridge 层的相容读法：
 
-**定理 T-Weightless-Potentia（潜能无重定理）**：
-引力（时空弯曲）是维持显现（$L_1$）所需的本体论摩擦的几何表现。
+**假说 H-Weightless-Potentia（潜能无重假说）**：
+在弱场极限与明确投影下，引力势梯度与 $\Psi_f^{phys}$ 梯度可作方向相容读法。
 $$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)}$$
 
 > **Level**: hypothesis / bridge; this is not a tensor-level GR derivation.
 
-由于 $L_0$ 中的状态是"未被选择的"，它们不消耗 $\hat{G}$ 的算力来维持，因此 $\Psi_f(L_0) = 0$。
+由于 $L_0$ 中的状态是"未被选择的"，它们不以同一种方式进入物理维持账本；更稳妥的写法是：未锚定潜能对物理引力账本是 non-binding，而不是已经证明 $\Psi_f(L_0)=0$。
 
 **结论**：$L_0$ 拥有无限的"能量"（信息容量），但没有"质量"（引力效应）。只有被观测者锚定的现实才具有重量。
 
 ## 2.2 希格斯机制作为 $\Psi_f$ 的物理实现
 
-**核心命题**：希格斯机制是本体论摩擦在弱电统一尺度上的物理实现。
+**候选桥读法**：希格斯机制可被读成本体论摩擦在弱电统一尺度上的一个物理投影窗口。
 $$m_{inertial} \propto \Phi_{Higgs} = \text{Coupling}(\psi, \text{Vacuum}_{L_2})$$
 
 **理论推论**：
@@ -103,7 +103,7 @@ $$\Phi = \begin{cases}
 \Phi_{Psychological} & \text{（认知惯性层面）}
 \end{cases}$$
 
-所有这些都是同一本体论机制——**选择阻力**——在不同尺度的显现。
+这些可被比较为“选择阻力”在不同尺度上的投影；当前不把它们写成同一物理机制或同单位量。
 
 ## 2.3 精细结构常数 $\alpha$ 作为 $L_2$ 稳定参数子空间候选
 
@@ -114,10 +114,10 @@ $$\alpha_{observed} \in L_2^{stable\ parameter}$$
 
 > **Level**: hypothesis / bridge; this does not explain the exact value of $\alpha$.
 
-**机制解释**：
-1. 在无限的 $\hat{G}_θ$ 演化中，只有 $\alpha \approx 1/137$ 的区域允许 $\hat{G}$ 形成**操作闭包**
-2. 操作闭包 = 允许生命/观察者存在的参数配置
-3. 因此，$\alpha$ 不是被"选择"的，而是所有能"存活"下来的 $L_1$ 的**共同几何特征**
+**机制候选（非解释）**：
+1. 某些参数区域可能允许稳定记录、可传播结构与操作闭包；
+2. $\alpha \approx 1/137$ 是否由这种区域唯一选出，当前没有证明；
+3. 因此，$\alpha$ 最多可被读成稳定 `L_2` 参数区域中的一个观测值，不是 SRT 已推出的共同几何特征。
 
 ---
 
@@ -231,8 +231,10 @@ $$\text{Time}_{flow} \propto \frac{S_{L_1}}{I_{L_0}}$$
 
 ## 4.1 引力即共识
 
-时空曲率正比于多个观察者/算子达成的信息共识乘积。
-$$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
+时空曲率可被候选性读作稳定 `L_2` 共识结构的信息密度/维持代价投影。
+$$\text{curvature proxy} \leadsto \text{information-density / consensus-cost proxy}$$
+
+**层级提醒**：这是结构类比，不是 $G_{\mu\nu}$ 的推导。任何把该式升级为 Einstein tensor reconstruction 的写法都必须另给张量结构、桥接假设与经验判据。
 
 ## 4.2 规范场与 $L_2$ 共识的本体论
 
@@ -267,11 +269,11 @@ $$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
 
 ## 4.5 引力作为本体论摩擦的几何表现
 
-SRT 的核心主张之一，是引力并非传统意义上跨越虚空的拉力，而是维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）的几何表现**：
+SRT 的候选桥读法之一，是将引力不只看作传统意义上跨越虚空的拉力，也看作维持显现域（$L_1$）所需的**本体论摩擦（$\Psi_f$）的几何投影候选**：
 
 $$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)}$$
 
-**物理机制**：当系统内部的几何叠加产生的本体论摩擦（$\mathcal{F}_{ont}$）达到引力能阈值（$\approx \Delta E_G / \hbar$）时，就会导致强制的测量与选择——即波函数坍缩。引力是 $\hat{G}$ 算子为维持共识现实所必须持续支付的"代价场"。这与 §4.1（引力即共识）和 §4.2（力即共识的代价）在逻辑上形成闭合：**引力既是共识的代价，也是本体论摩擦的宏观度量**。
+**候选机制（collapse-family / bridge）**：若采用 Penrose-style gravitational threshold 读法，系统内部几何叠加产生的本体论摩擦（$\mathcal{F}_{ont}$）可被建模为接近引力能阈值（$\approx \Delta E_G / \hbar$）的候选选择压力。这不是已成立的物理机制，也不是波函数坍缩的推导；它只说明引力阈值语言可作为 `H-Phys-4` 的一个候选接口。引力作为"共识代价场"也应保留为 bridge metaphor / weak candidate，不得写成闭合证明。
 
 **极限推论**（与 T-Time-3 的对称）：在候选桥读法中，若把引力视为维持现实共识的代价窗口，当一个观察者的 d 值趋于极限（$d \to \infty$）时，由于无需再进行并行区分与串行更新，该观察者体验到的空间和时间将彻底坍缩：
 $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
@@ -280,7 +282,7 @@ $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
 - **宇宙尺度**：$d_{cosmic} \propto 1/\sqrt{\Lambda}$（Def-Cosmo-1），引力可被候选性读作信息解离的驱动力；暗能量主导的膨胀与 $d_{cosmic}$ 的关系仍是 bridge hypothesis；
 - **量子生物学尺度**：$d_{bio} \propto 1/\tau_{collapse} \propto E_G/\hbar$（SRT-QUANT-02 Def-BQ-2），引力自能设定了每个 $\hat{G}_{bio}$ 的相干性带宽上限。
 
-这种双向锚定正是 SRT 跨尺度同构（SRT-CORE-14 Ax-Scale-01）在引力物理学层面的最直接体现：同一个 d 值参数，在宇宙尺度是时空共识度，在量子尺度是相干性带宽，在生物尺度是关切范围，三者由跨尺度同构联结为同一本体论标尺（详见 SRT-CORE-14 Def-d-Scale-1）。
+这种双向锚定可作为 SRT 跨尺度同构（SRT-CORE-14 Ax-Scale-01）在引力物理学层面的候选投影：同一个 governance-canonical `d` 接口在宇宙尺度、量子尺度与生物尺度可能有不同代理量；这些代理量当前不得被直接等同为同一物理标尺。
 
 ---
 

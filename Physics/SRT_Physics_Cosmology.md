@@ -25,6 +25,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 - Used by: physics compact core, quantum/cosmology integration files, and cross-domain formal interpretation work.
 - Safe edits: Typo fixes, link fixes, Quick Reference updates, and non-semantic clarification of physical interpretation boundaries.
 - Do not change: Core physical interpretation claims that alter canonical symbol meaning or core equation ownership without cross-checking upstream anchors.
+- Language discipline: collapse-family / anchoring language is the default local idiom; Everett / MWI references must be explicit compatibility translations, not mixed into the same argument as a global-collapse claim.
 
 # Part A: Formal Axioms
 ## 0. Notation & Conventions (符号与约定)
@@ -216,7 +217,7 @@ $$ \text{Mass} = |\text{Resistance}(L_1 \to L_0)| $$
 
 当前只保留弱版：在弱场极限与明确物理投影下，$\Psi_f^{phys}$ 梯度应与牛顿势梯度方向同号或同向相容。
 $$ \nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)} $$
-*   **Boundary**: 这不构成张量级 GR 推导，不承担真空能问题的完整解决，也不解释物理常数精确值。强版 $G_{\mu\nu} \propto \Psi_f(L_1)$ 保留为远期目标，当前无路径。
+*   **Boundary**: 这不构成张量级 GR 推导，不承担真空能问题的完整解决，也不解释物理常数精确值。强版 tensor reconstruction 仅是远期目标，当前无路径。
 
 ---
 
@@ -231,9 +232,9 @@ $$ \alpha \in \{\lambda : \exists \text{ self-sustaining } \hat{G}_θ \text{ in 
 
 | 解释类型 | 逻辑 | SRT 评价 |
 |:---------|:-----|:---------|
-| 弱人择 | "因为我们存在" | 描述性，无解释力 |
-| 强人择 | "宇宙被设计" | 引入外部设计者 |
-| **SRT** | "稳定参数子空间候选" | 当前只给出约束位置，不解释精确值 |
+| 弱人择 | "因为我们存在" | 可作为外部兼容解释；SRT 不试图在本轮击败它 |
+| EFT / 标准模型 / 景观类解释 | 从更深物理结构或测度推出参数 | 若成功，SRT 应吸收为 `L_2` 稳定机制的物理实现 |
+| **SRT** | "稳定参数子空间候选" | 当前只给出结构放置约束，不解释精确值 |
 
 ### T-FP-2 [T1.4.2]: Ontological Annealing (本体论退火)
 物理常数的起源（hypothesis / bridge）：
@@ -244,10 +245,12 @@ $$ P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters}) $$
 
 **开放张力**：本节不声称已解释 $\alpha$、$G$、$\Lambda$ 等常数的精确数值。当前只承诺这些量若进入 SRT 物理桥，应被放在 $L_2$ 稳定参数子空间内，而不是被写成已经由 SRT 强吸引子机制推出。
 
-### T-FP-3: Fine-Tuning as Survival Bias of L2 (微调即L2的生存偏差)
-**Deductive Statement**: 宇宙的精细调节（Fine-Tuning）不是为了产生生命，而是"能够维持自身操作闭包的L2结构"的必然统计遗留：
-$$P(\alpha \approx 1/137 \mid \text{Existence of } \hat{G}) \to 1$$
-* **Implication**: 人择原理被本体论化。不是"宇宙为了我们而被微调"，而是"能经历本体论退火并凝固成时空的参数，只能是这些"。其他参数在L0中瞬间坍缩，无法形成具备时间厚度的L2结构。
+### H-FP-3: Fine-Tuning as Candidate L2 Survival Bias (legacy `T-FP-3`)
+> **Level**: hypothesis / bridge. Legacy theorem naming does not restore theorem status.
+
+宇宙的精细调节（Fine-Tuning）可被候选性重读为"能够维持自身操作闭包的 L2 结构"的生存偏差：
+$$P(\lambda \in L_2^{stable\ parameter} \mid \text{persistent physical } L_2) \text{ is constrained, not computed here}$$
+* **Implication**: 这不是"宇宙为了我们而被微调"，也不是 $\alpha \approx 1/137$ 的推导。它只说：能凝固成持久时空与记录结构的参数区域必须满足稳定性约束。其他参数是否失败、如何失败、失败测度多大，仍需外部物理或独立模型给出。
 
 ---
 
@@ -262,7 +265,8 @@ $$t \propto \int \Psi_f(L_1) \, dn$$
 ### Ax-Time-0: Discreteness of Selection Framing (选择帧的离散性)
 **Formal Definition**: 主观时间不是连续流，而是由 $\hat{G}_\theta$ 执行离散的"锚定帧"（Ontological Frames）拼接而成，最小时间量子 $\Delta t_{min}$ 受限于算子的硬件带宽。
 $$t_{subjective} = \sum_{k=1}^N \Delta t_k(\hat{G}_\theta)$$
-* **Implication**: 电影胶片比喻是字面意义上真实的。抑郁症的时间流逝感变慢，是因为算子采样率下降（每秒生成的帧数减少）；恐慌发作时时间变慢，是因为特征提取受阻导致处理单帧耗时增加。
+* **Boundary**: This is a phenomenological / operator-framing hypothesis, not a physical discrete-time theorem. It does not imply Planck-scale time atoms or Lorentz-violating dispersion unless an additional physics model is specified.
+* **Implication**: 电影胶片比喻在体验建模层有用，但不得直接读成物理时空本身逐帧刷新。抑郁、恐慌等例子只支持主观时间采样/处理窗口假说。
 
 ### Ax-Time-1 [A1.5.1]: Triple Definition Equivalence (三重定义等价)
 
@@ -343,6 +347,8 @@ $$
 3. **因果投影的单向性**: 时间本身就是选择的度量
 
 ### T-Time-3 [T1.5.3]: High-d Observer Spacetime Collapse (高 $d$ 值观察者时空坍缩)
+> **Terminology note**: "Collapse" here names a phenomenological / geometric limit of spatial-temporal differentiation, not a global quantum-collapse event.
+
 $$ \lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing $$
 
 | 观察者类型 | $d$ 值范围 | 时空体验 |
@@ -394,8 +400,10 @@ $$ \text{Geometry} \cong \text{CodeSpace}(\text{QEC}) $$
 
 > **Level**: hypothesis / bridge. This is a candidate interface, not a GR-level theorem.
 
-时空曲率可被候选性读作多个 $\hat{G}$ 达成的信息共识乘积的几何投影：
-$$ G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{Curvature} = \text{Information Density} $$
+时空曲率可被候选性读作稳定 `L_2` 共识结构的几何投影：
+$$ \text{Curvature / gravity proxy} \leadsto \text{stable information-density / consensus-cost proxy} $$
+
+**Boundary**: This is Level 1 structural analogy unless a weak-field projection is specified. It is not an Einstein-equation reconstruction and does not assert `G_{\mu\nu}` is derived from SRT.
 
 ### Def-Grav-1 [D1.6.1]: Fiber Bundle Structure (纤维丛结构)
 - **底空间**: $L_2$
@@ -657,19 +665,19 @@ $$m_{bit} = \frac{k_B \cdot T \cdot \ln(2)}{c^2} \approx 3.19 \times 10^{-38} \t
 
 ## 2.1 真空能问题的 SRT 视角
 
-Subir Sarkar (2026) 指出，量子真空能（零点能）显而易见地不与引力耦合，否则宇宙早已坍缩。SRT 对此提供本体论证明：
+Subir Sarkar (2026) 指出，量子真空能（零点能）显而易见地不与引力耦合，否则宇宙早已坍缩。SRT 对此只提供一个 bridge 层的相容读法：
 
 **假说 H-Weightless-Potentia（潜能无重假说）**：
 在弱场极限与明确投影下，引力势梯度与 $\Psi_f^{phys}$ 梯度可作方向相容读法。
 $$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)}$$
 
-由于 $L_0$ 中的状态是"未被选择的"，它们不消耗 $\hat{G}$ 的算力来维持，因此 $\Psi_f(L_0) = 0$。
+由于 $L_0$ 中的状态是"未被选择的"，它们不以同一种方式进入物理维持账本；更稳妥的写法是：未锚定潜能对物理引力账本是 non-binding，而不是已经证明 $\Psi_f(L_0)=0$。
 
 **层级提醒**：以上是 hypothesis / bridge，不是 GR 张量推导。$L_0$ “潜能无重”只能作为弱相容读法保留，不得声称已经解决真空能问题。
 
 ## 2.2 希格斯机制作为 $\Psi_f$ 的物理实现
 
-**核心命题**：希格斯机制是本体论摩擦在弱电统一尺度上的物理实现。
+**候选桥读法**：希格斯机制可被读成本体论摩擦在弱电统一尺度上的一个物理投影窗口。
 $$m_{inertial} \propto \Phi_{Higgs} = \text{Coupling}(\psi, \text{Vacuum}_{L_2})$$
 
 **理论推论**：
@@ -687,7 +695,7 @@ $$\Phi = \begin{cases}
 \Phi_{Psychological} & \text{（认知惯性层面）}
 \end{cases}$$
 
-所有这些都是同一本体论机制——**选择阻力**——在不同尺度的显现。
+这些可被比较为“选择阻力”在不同尺度上的投影；当前不把它们写成同一物理机制或同单位量。
 
 ## 2.3 精细结构常数 $\alpha$ 作为 $L_2$ 稳定参数子空间候选
 
@@ -696,10 +704,10 @@ $$\Phi = \begin{cases}
 **SRT 当前弱答法**：$\alpha$ 应位于 $L_2$ 稳定参数子空间中。
 $$\alpha_{observed} \in L_2^{stable\ parameter}$$
 
-**机制候选**：
-1. 在无限的 $\hat{G}_θ$ 演化中，只有 $\alpha \approx 1/137$ 的区域允许 $\hat{G}$ 形成**操作闭包**
-2. 操作闭包 = 允许生命/观察者存在的参数配置
-3. 因此，$\alpha$ 可被读成所有能"存活"下来的 $L_1$ 的候选共同几何特征
+**机制候选（非解释）**：
+1. 某些参数区域可能允许稳定记录、可传播结构与操作闭包；
+2. $\alpha \approx 1/137$ 是否由这种区域唯一选出，当前没有证明；
+3. 因此，$\alpha$ 最多可被读成稳定 `L_2` 参数区域中的一个观测值，不是 SRT 已推出的共同几何特征。
 
 **开放张力**：这不解释精确值，不排除人择、EFT、弦景观或其他物理机制；它只规定 SRT 当前允许说到哪里。
 
@@ -831,8 +839,10 @@ $$\text{Time}_{flow} \propto \frac{S_{L_1}}{I_{L_0}}$$
 
 ## 4.1 引力即共识
 
-时空曲率正比于多个观察者/算子达成的信息共识乘积。
-$$G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{曲率} = \text{信息密度}$$
+时空曲率可被候选性读作稳定 `L_2` 共识结构的信息密度/维持代价投影。
+$$\text{curvature proxy} \leadsto \text{information-density / consensus-cost proxy}$$
+
+**层级提醒**：这是结构类比，不是 $G_{\mu\nu}$ 的推导。任何把该式升级为 Einstein tensor reconstruction 的写法都必须另给张量结构、桥接假设与经验判据。
 
 ## 4.2 规范场与 $L_2$ 共识的本体论
 
@@ -873,6 +883,11 @@ $$\nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibi
 
 **层级提醒**：以下只属于 hypothesis / bridge。若使用 Penrose-style gravitational threshold 或 entropic-gravity 类比，必须标为候选机制；当前无路径从 SRT 推出 Einstein tensor，也不承担 GR 精确重建。
 
+**三层程序**：
+1. **结构类比 / 方向相容**：允许说引力、曲率与 `\Psi_f^{phys}` 都可标记维持稳定显现的约束。
+2. **弱场候选关系**：只在弱场窗口内使用 $\nabla \Psi_f^{phys} \parallel \nabla \Phi_N$。
+3. **张量重建目标**：只有在未来推出张量结构、唯一桥接假设与独立经验判据后，才可重新讨论 GR 级别语言。
+
 **极限推论**（与 T-Time-3 的对称）：在候选桥读法中，若把引力视为维持现实共识的代价窗口，当一个观察者的 d 值趋于极限（$d \to \infty$）时，由于无需再进行并行区分与串行更新，该观察者体验到的空间和时间将彻底坍缩：
 $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
 
@@ -880,7 +895,7 @@ $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
 - **宇宙尺度**：$d_{cosmic} \propto 1/\sqrt{\Lambda}$（Def-Cosmo-1），引力可被候选性读作信息解离的驱动力；暗能量主导的膨胀与 $d_{cosmic}$ 的关系仍是 bridge hypothesis；
 - **量子生物学尺度**：$d_{bio} \propto 1/\tau_{collapse} \propto E_G/\hbar$（SRT-QUANT-02 Def-BQ-2），引力自能设定了每个 $\hat{G}_{bio}$ 的相干性带宽上限。
 
-这种双向锚定正是 SRT 跨尺度同构（SRT-CORE-14 Ax-Scale-01）在引力物理学层面的最直接体现：同一个 d 值参数，在宇宙尺度是时空共识度，在量子尺度是相干性带宽，在生物尺度是关切范围，三者由跨尺度同构联结为同一本体论标尺（详见 SRT-CORE-14 Def-d-Scale-1）。
+这种双向锚定可作为 SRT 跨尺度同构（SRT-CORE-14 Ax-Scale-01）在引力物理学层面的候选投影：同一个 governance-canonical `d` 接口在宇宙尺度、量子尺度与生物尺度可能有不同代理量；这些代理量当前不得被直接等同为同一物理标尺。
 
 ---
 

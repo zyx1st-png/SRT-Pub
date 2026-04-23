@@ -121,11 +121,13 @@ The embodiment parameter $\theta$ decomposes into:
 ## III. Core Physical Axioms (核心物理公理)
 
 ### Ax-P1 [A1.3.1]: Measurement as Selection (测量即选择)
-Wavefunction collapse is not a stochastic process but an information-theoretic selection executed by $\hat{G}_\theta$ on $L_0$.
+[collapse-dependent]
+In collapse-family SRT language, wavefunction collapse is modeled not as an unconstrained stochastic primitive but as an information-theoretic selection executed by $\hat{G}_\theta$ on $L_0$.
 $$ \text{Collapse} \equiv \hat{G}_\theta : |\Psi\rangle_{L_0} \to |\pi_k\rangle_{L_1} $$
 *   **Implication**: Within SRT, the "measurement problem" receives a candidate reinterpretation: measurement is read as an anchoring act that turns potentiality into actuality.
 *   **Stability Clause (M1/M2)**: 合法 $L_1$ 需满足固定点与稳定性：
     $$\Pi_\Delta\!\left(\alpha(\hat{G}_\theta(x^*)-x^*)-\lambda\nabla F(x^*)\right)=0,\quad \text{Re}(\lambda_J)<0$$
+*   **Everett / MWI translation note**: In no-collapse frameworks, this paragraph can only be translated as an observer-relative branch update or anchoring-readout process, not as a global physical collapse event.
 
 ### Ax-P2 [A1.3.2]: It from Bit from Select (比特源于选择 — Wheeler-SRT公理)
 Physical entities (It) emerge from the cumulative binary selections (Bit) of $\hat{G}$.
@@ -149,10 +151,15 @@ $$ L_{classical} = \arg\min_{\sigma \in L_0} \Psi_f(\sigma) $$
 ### H-Phys-2 [H1.4.2]: Discrete Time (时间离散化假说)
 > **Level**: hypothesis / bridge. This is not derived from L0/L1 as a physics theorem.
 
-Time is not a continuous flow but a sequence of discrete selection operations by $\hat{G}$. Each "tick" is one selection event.
+Current split:
+- **Interpretive selection-index reading**: time may be read as the ordinal / historical index of irreversible selection events. This is a bridge interpretation of selection priority.
+- **Physical discrete-time hypothesis**: a stronger claim would identify those indices with an actual Planck-scale discrete temporal substrate. The repo does not currently derive or specify that substrate.
+
+Candidate notation for the strong version:
 $$ t_n \equiv n \cdot \tau_{Planck} \quad \text{where } \tau_{Planck} = \sqrt{\frac{\hbar G}{c^5}} $$
-*   **Connection**: This formalizes Core Axiom A1 (Selection Priority)—time is the ordinal index of selection events.
+*   **Connection**: This uses Core Axiom A1 (Selection Priority) as interpretive support only; it does not turn Planck time into a derived SRT tick.
 *   **Phase Link (T-Phase-1)**: $v_{sub} = \dot{\phi}/\phi_0$ 将“选择节拍”与主观时间速率绑定。
+*   **Empirical boundary**: FERMI / LIV constraints bear on specified dispersion-producing discrete-spacetime models. H-Phys-2 has not specified such a dispersion model, so those constraints pressure strong physical discretization but do not directly test the interpretive selection-index reading.
 
 ### T-Phys-3 [T1.4.3]: Conservation from Symmetry (Noether-SRT 守恒定理)
 Physical conservation laws are direct consequences of the symmetries of the $L_2$ structure—invariants under $\hat{G}$ operations.
@@ -165,6 +172,22 @@ $$ \text{Conserved Quantity } Q \iff \delta_{\hat{G}} Q = 0 $$
 Current minimal claim: in weak-field regimes and under an explicit physical projection, the gradient of the physical `\Psi_f` proxy should be directionally compatible with the Newtonian potential gradient.
 $$ \nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)} $$
 *   **Boundary**: This does not reconstruct the Einstein tensor, does not derive GR, and does not explain the exact value of physical constants. The strong version remains a long-range target with no current derivation path.
+
+#### Gravity Bridge Layering
+
+| Level | Current repo status | Already allowed | Not yet justified |
+|:--|:--|:--|:--|
+| **Level 1: structural analogy / directional compatibility** | Active P3 bridge. | Say that gravity, curvature, and `\Psi_f^{phys}` can play parallel roles as constraints on maintaining stable manifestation. | Do not claim identity, derivation, or that gravity literally is `\Psi_f`. |
+| **Level 2: weak-field candidate relation** | Minimal mathematical candidate. | Use `\nabla \Psi_f^{phys} \parallel \nabla \Phi_N` only inside a weak-field projection window. | Do not infer GR, strong-field behavior, tensor equations, or exact coupling constants. |
+| **Level 3: hypothetical tensor reconstruction target** | Future target, currently open. | Name it as a possible research program. | Do not write `G_{\mu\nu} \propto \Psi_f` as a result; no unique bridge assumptions or tensor derivation exist yet. |
+
+#### What Would Count as Real Completion Here?
+
+H-Phys-4 could be reconsidered only if future work supplies all three:
+
+1. A derivation of the Einstein-tensor or successor tensor structure from SRT quantities, not only a scalar or gradient analogy.
+2. A small set of unique bridge assumptions showing why this mapping follows rather than being chosen for convenience.
+3. An independent empirical discriminator, such as a weak-field residual, fluctuation signature, or strong-field prediction not already absorbed by GR / EFT / entropic-gravity alternatives.
 
 ### Def-Phys-3 [D1.4.5]: Primacy of Physics as Boundary Priority（物理优先性的边界优先重述，新增）
 SRT 不将 PPC 解释为“本体论唯一优先”，而解释为极限边界优先：
@@ -221,6 +244,8 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 | Boltzmann's Constant $k_B$ | Selection-entropy conversion factor | $k_B T \ln 2 = E_{min}^{select}$ |
 | Fine Structure Constant $\alpha$ | Stable parameter in an $L_2$ subspace | $\alpha \in L_2^{stable\ parameter}$ |
 
+> **Constants boundary**: This table gives structural placement constraints only. It is not a derivation of exact values for $\hbar$, $c$, $G$, $k_B$, $\alpha$, or $\Lambda$, and it does not compete with anthropic, EFT, Standard Model, string-landscape, asymptotic-safety, or other external-physics explanations. Those frameworks may explain values in ways SRT currently cannot.
+
 <br>
 
 ---
@@ -240,6 +265,7 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 | Ax-P3：全息对偶（$d \propto S_{entanglement}$） | 全息原理本身（Bekenstein-Hawking）的有效范围内 | 全息对偶的 $d \propto S_{entangle}$ 是候选类比，不是推导。边界纠缠面积对应 d-value 需要独立论证 |
 | H-Phys-2：时间离散化（普朗克尺度） | 若 QG 发展出离散时间的完整形式化 | 2009 年 FERMI/LAT 对 GRB 090510 的观测将洛伦兹不变性破坏限制到普朗克尺度以下（Abdo et al., *Nature*, 2009）。H-Phys-2 当前是桥接层的候选读法，不是已有经验支持的定理 |
 | H-Phys-4：引力-摩擦弱相容 | 作为结构类比，揭示两个框架中"维持现实的代价"的平行角色 | 当前只承诺弱场极限下 `\Psi_f^{phys}` 梯度与牛顿势梯度方向同号的候选相容性；$G_{\mu\nu} \propto \Psi_f(L_1)$ 不得读作已证结论 |
+| 物理常数稳定参数子空间 | 作为结构放置约束：常数若进入 SRT 物理桥，应被读作 `L_2` 稳定参数子空间中的量 | 这不是精确值解释、不是推导，也不排除外部物理或人择解释 |
 
 ---
 
@@ -282,6 +308,25 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 - 正确表述：在 SRT 框架内，引力曲率和本体论摩擦扮演结构上平行的角色（都标记维持显现的代价）。当前只保留弱场梯度方向相容；这个平行性是否可以发展成推导程序，是一个真实开放的研究方向
 - 在推导完成之前，$G_{\mu\nu} \propto \Psi_f$ 不应被读成已证结论
 
+### DP-PHYS-4：物理常数的非解释边界
+
+**挑战来源**：物理常数的精确值可能由标准模型参数、EFT 流、弦景观、宇宙学边界条件、人择选择效应或未来更深的物理理论解释。SRT 目前没有独立计算这些值的机制。
+
+**当前 SRT 的诚实回答**：
+- SRT 只能说：若一个参数进入稳定物理 `L_2`，它必须位于允许持久结构、记录与选择闭包的参数区域。
+- 这只是 structural placement constraint，不是 exact-value explanation。
+- 若外部物理给出精确推导，SRT 应吸收为 `L_2` 稳定机制的物理实现，而不是声称已经预先解释了这些数值。
+
+### Future Derivation Standard
+
+Physics bridge claims may be upgraded only under these standards:
+
+| Bridge | Current level | Re-upgrade requirement |
+|:--|:--|:--|
+| Gravity-friction bridge | H-Phys-4 / P3 bridge | Tensor-level derivation, unique bridge assumptions, and at least one empirical discriminator. |
+| Discrete-time bridge | H-Phys-2 / bridge hypothesis | A specified physical discrete-time model with Lorentz behavior, dispersion predictions, and a relation to selection-index language. |
+| Constants / stable-parameter bridge | H-FP style bridge | Calculation or derivation of exact values, or a principled probability measure over parameter space that outperforms anthropic/external alternatives. |
+
 ---
 
 ### 出口（Exit）
@@ -312,23 +357,23 @@ Modern physics faces a constellation of interrelated foundational problems:
 
 | Problem | Standard Physics View | SRT Reinterpretation |
 |:--------|:---------------------|:---------------------|
-| **Measurement Problem** | Collapse is ill-defined | Collapse = $\hat{G}_\theta[L_0 \to L_1]$ |
+| **Measurement Problem** | collapse-family criterion is ill-defined | collapse-family reading: anchoring-readout by $\hat{G}_\theta[L_0 \to L_1]$ |
 | **Non-Locality** | "Spooky action at a distance" | $L_0$ has no spatial separation |
 | **Quantum-Classical Boundary** | Decoherence is incomplete | $L_2$ stability threshold |
-| **Vacuum Energy Catastrophe** | 120 orders of magnitude mismatch | $L_0$ carries no gravitational mass |
+| **Vacuum Energy Catastrophe** | 120 orders of magnitude mismatch | unanchored $L_0$ is non-binding in the gravity ledger |
 | **Fine-Tuning** | Anthropic coincidence | stable `L_2` parameter-subspace hypothesis |
 
 **SRT's Contribution**: By recognizing that selection is ontologically primitive, physics regains conceptual coherence without abandoning mathematical rigor.
 
 ### §1.2 The Operator as Ontological Bridge
 
-The Ghost Operator $\hat{G}_\theta$ is not merely an abstract formalism—it is the **bridge between potentiality and actuality**. In physical terms:
+The Ghost Operator $\hat{G}_\theta$ is not merely an abstract formalism—it is the **bridge between potentiality and actuality**. In collapse-family physical language:
 
 - **Before $\hat{G}$ acts**: The system exists as a superposition in $L_0$ (Hilbert space)
 - **During $\hat{G}$ operation**: Selection occurs based on $\theta$ parameters
 - **After $\hat{G}$ acts**: A specific $L_1$ state (eigenvalue) is anchored
 
-This is precisely what physicists call "measurement," but SRT provides the missing ontological specification.
+This is a collapse-family bridge reading of "measurement," not a settled physical ontology. In Everett / MWI translation it can only be read as branch-relative anchoring or readout, not as a global collapse event.
 
 ### §1.3 The Embodiment Parameter $\theta$ in Physical Systems
 
@@ -384,11 +429,11 @@ The Vergence Domain $L_2$ manifests as:
 
 ### §3.1 Resolving the Measurement Problem
 
-The measurement problem asks: "When does collapse happen?" SRT answers: **Collapse occurs when $\hat{G}_\theta$ executes selection**, which is defined by objective information-theoretic criteria:
+The measurement problem asks: "When does collapse happen?" Within collapse-family language, SRT proposes: **a collapse-style anchoring event occurs when $\hat{G}_\theta$ executes selection**, with candidate information-theoretic criteria:
 
 $$ \text{Measurement Event} \iff \Delta S_{entanglement} > 0 \land \Delta I_{classical} > 0 $$
 
-No consciousness is required—any physical system satisfying these criteria is a valid $\hat{G}_{proxy}$.
+No consciousness is required in this proxy reading—any physical system satisfying these criteria is a candidate $\hat{G}_{proxy}$. In no-collapse translations, the same paragraph must be rewritten as branch-relative readout rather than global physical collapse.
 
 ### §3.2 Non-Locality Without Mystery
 
