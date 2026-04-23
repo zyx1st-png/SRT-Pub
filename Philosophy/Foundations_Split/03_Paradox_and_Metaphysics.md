@@ -4,8 +4,8 @@ type: theory
 tags: [Philosophy, Epistemology, Metaphysics, Paradox, Hybrid]
 status: axiomatic_hybrid_v3
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
 ---
 
@@ -93,6 +93,15 @@ $$I_s = \int_{-\infty}^{t} |\hat{G}_\theta[L_0 \to L_2]| \, d\tau, \quad P(Reali
 - d 值高 → 将"预测者+我"视为纠缠的 $L_2$ 系统，选 B 是对 $L_2$ 共识的确认
 
 ### 4.3 语言与逻辑悖论
+
+**Self-reference typing**：并非所有自指都是悖论。SRT 只把未分层、试图在同一平面完成自我终审的闭合尝试看成边界违规。
+
+| Type | Example | Status |
+|---|---|---|
+| Harmless indexical self-reference | “我正在说话。” | 安全，只要绑定到当前位置而不声称全局闭合。 |
+| Quoted / packaged self-reference | 句子谈论自身文本或 token。 | 安全，只要对象层与元层保持分离。 |
+| Godel-style formal self-reference | 形式系统编码关于自身可证性的命题。 | 合法的分层构造；可能展示不完备性，不等于病理。 |
+| Pathological closure attempt | 同一层级中既当对象又当最终真值裁判。 | 边界违规；这是悖论诊断的目标。 |
 
 #### 4.3.1 说谎者悖论
 正常结构是 $L_2 \supset L_1$。说谎者构造怪圈 $L_1 \supset L_2 \supset L_1$。悖论不是逻辑错误，而是 **$L_2$ 的边界标记**——系统进入**双稳态振荡**（真 → 假 → 真...）。

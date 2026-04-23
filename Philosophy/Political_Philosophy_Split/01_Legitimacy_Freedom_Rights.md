@@ -22,6 +22,16 @@ claim_level: P2-P4
 最短理解：
 - 合法性不是多数、传统、效率或革命叙事中的任一单一点源
 - 合法性来自：更多主体、较低不对称摩擦、更高再选择能力的共同维持
+- 但不得从秩序稳定直接推出合法性；必须先通过制度类型、委托、后果回流、再选择/退出/纠错通道的中间判据
+
+### 1.1 Middle Criteria
+
+| Criterion | Minimum question | Shortcut blocked |
+|---|---|---|
+| Institutional type | 是地板、门控、委托、垄断、应急装置，还是病理闭包？ | “能协调，所以正当。” |
+| Delegation legitimacy | 授权范围、期限、复核、撤回机制是否存在？ | “代表人民”但无审计。 |
+| Consequence-return symmetry | 决策后果是否回到决策位置，还是外包给弱势者？ | 只谈效率，不谈谁支付维护摩擦。 |
+| Reselection / exit / correction | 受影响者能否重新打开、退出、申诉、纠错或修订？ | 名义参与被当成真实选择。 |
 
 ## 2. Freedom as Access to Reality-Shaping
 \[

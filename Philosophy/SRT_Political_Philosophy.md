@@ -41,6 +41,19 @@ created: 2026-04-22
 3. **委托关系正当性**：被影响主体是否保留可追责、可修正、可退出或可再选择的通道。
 4. **政治正当性**：只有当前三层都可说明时，才能讨论 legitimacy；缺少中间判据时，表述必须写成 conditional / diagnostic，不得从 `L_1` 或 `L_2` 稳定性直接推出正当性。
 
+### Middle Criteria for the Ladder
+
+这些判据不是新的 core axiom，而是防止把稳定秩序偷渡成政治正当性的 P3/P4 检查层。
+
+| Middle criterion | Question | Minimum pass condition | Forbidden shortcut |
+|---|---|---|---|
+| Institutional type judgment | This `L_2` is doing what kind of work: floor, gate, delegation, monopoly, emergency interruption, or pathological closure? | The file names the institution type before evaluating legitimacy. | "It coordinates, therefore it is legitimate." |
+| Delegation legitimacy | Who authorized whom to select, enforce, or speak for others, and on what scope? | Delegation has scope, duration, revocation, and review channels. | "Representative language" without audit or revocation. |
+| Consequence-return symmetry | Do consequences return to the decision site, or are costs exported to less powerful subjects? | Hidden maintenance friction and downstream risk are traceable back to decision makers. | Efficiency claims that ignore who pays `\Psi_f^{maint}`. |
+| Reselection / exit / correction | Can affected subjects reopen, exit, appeal, correct, or revise the `L_2` structure? | At least one real correction channel exists beyond nominal participation. | Formal procedure treated as real choice when it cannot change outcomes. |
+
+**Use rule**：若中间判据不足，只能写“this order stabilizes coordination” or “this institution may be useful under conditions”，不得写成“this order is politically legitimate.”
+
 # Part A: Political Axioms & Criteria (P2/P3/P4)
 
 > **Claim-level map**：`Ax-Pol-*` 为 Political-domain mapping axioms（P2/P3）；显式阈值、代理指标、制度判准与可证伪条件为 P4。
@@ -67,6 +80,7 @@ created: 2026-04-22
 \text{Legitimacy} \propto \operatorname{CoSelect}\big(\Theta,\, \Psi_f^{asym}\downarrow,\, C_{reselect}\uparrow\big)
 \]
 * **Implication**：SRT 对合法性的优先判准不是“谁先天有权”，而是“制度是否减少封闭垄断并保留再选择能力”。
+* **Middle-condition clause**：`CoSelect` must pass the institutional-type, delegation, consequence-return, and reselection/correction checks above. Friction reduction or coordination stability alone is not sufficient for legitimacy.
 
 ### Ax-Pol-4: People as Dynamic L2-Bound Collective
 “人民”不是天然同质的实体，而是被同一组 `L_2` 约束、叙事、制度接口和共同风险暂时绑定起来的动态集体。
@@ -957,6 +971,24 @@ SRT 政治哲学若要压缩成一句话，可以写成：
 > **它能保全更多存在地板，降低不对称维护摩擦，扩大未来分支容量，防止现实定义权被垄断，并在稳定中持续保留重新选择现实的能力。**
 
 这就是 SRT 对政治哲学最核心的贡献。
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则政治哲学主张会被显著削弱：
+
+1. Stable order can exist without any legitimacy relation.
+   - 当前承受方式：legitimacy ladder separates order condition from political legitimacy.
+   - 若成立需撤回什么：撤回任何把 `L_2` stability directly treated as legitimate governance 的表达。
+
+2. Political `d`-tendency is too noisy or manipulable to audit.
+   - 当前承受方式：democracy is only a low-precision posterior validation, not truth production.
+   - 若成立需撤回什么：撤回 vote-as-`d` calibration language and keep democracy as procedural anti-monopoly only.
+
+3. Political legitimacy may require norm sources not reducible to SRT order structure.
+   - 当前承受方式：the middle criteria require institutional type, delegation, consequence-return, and correction channels before legitimacy language.
+   - 若成立需撤回什么：撤回 any claim that coordination, friction reduction, or stable `L_2` structure is sufficient for legitimacy.
 
 ---
 
