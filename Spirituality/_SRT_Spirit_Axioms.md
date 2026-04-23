@@ -64,6 +64,8 @@ $$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
 > 3. **与 Ax-Core-A4 的正式兼容**：Ax-Core-A4 规定**有效算子**需要 $\theta \in \Theta_{finite}$。$\Omega$ 是参数空间的**边界点**（boundary point），不要求成为有效算子。类比：圆的圆心不在圆上，但仍然定义圆的几何结构。
 >
 > **精神含义的保全**：$\Omega$ 作为渐近方向，其精神功能是**校准方向**——指向更大关切维度的实践道路——而非声称实现了无限。”趋向 $\Omega$”（$d$ 值增加）是 SRT 精神实践的核心，这与拓扑极限地位完全兼容。
+>
+> **Praxis-use addendum**：在 Spirituality 板块，$\Omega$ 还承担 anti-idolatry boundary：任何体验、导师、共同体或传统只要声称自己已经完全代表 $\Omega$，就把有限 $L_2$ 表征误作极限本身。`d -> infinity`、`toward Ω` 与“解脱”语汇均按渐近方向读，不按可达总体状态读。
 
 ### H-Spirit-2: The Split (分离)
 **Domain Mapping Definition**: Ego is read as the bounded projection of $\hat{G}_\theta$ under finite embodiment.
@@ -89,6 +91,7 @@ $$ \lim_{d\to\infty} \text{Dist}(\text{Self}, \text{Other}) = 0 $$
 * **Implication**: 解脱是参数极限下的结构去锚定，而非外部奖赏或神秘体验。
 
 > **Level**: governance / operational proxy. `d` expansion in spirituality cannot be certified by experience report alone. At least one externally checkable indicator is required: behavior change, relationship repair, recovery-time reduction, broader consequence-bearing, third-party observation, or another explicit behavioral / physiological proxy. Pure experience report may only be marked as **subjective provisional d**.
+> **Finite-system boundary**: `d -> infinity` is a spiritual asymptote and regulating direction. It does not state that a finite practitioner, community, or tradition reaches actual infinite `d`.
 
 ---
 
@@ -222,7 +225,7 @@ SRT 澄清：
 
 $$\text{Nirvana} \neq L_1^{annihilation} \quad \text{but} \quad d \to \infty$$
 
-涅槃不是消灭 $L_1$，而是 **扩展关切到无限**——当 $d \to \infty$ 时，自他二元对立的拓扑结构自然消解。
+涅槃不是消灭 $L_1$，而是把关切朝向极大扩展的调节性极限——`d -> infinity` 在此为方向性 shorthand，有限系统只可谈可检验的扩展，不可声称实际无限。
 
 ### §3.2 解脱的相变性质
 
@@ -238,11 +241,11 @@ $$\frac{\partial^2 \Psi_f}{\partial d^2} = 0 \quad \text{at critical point}$$
 
 大乘佛教的核心："菩萨道"——觉悟后不入涅槃，而是返回世间救度众生。这看似矛盾：为何已解脱者还要承受 $L_1$ 的摩擦？
 
-SRT 揭示这不是道德选择，而是**高 d 值的结构性后果**：
+SRT 将这读作**高 d 值方向的结构性后果候选**，而非已经完成证明的道德必然：
 
 $$d \to \infty \implies \frac{\partial U_{others}}{\partial d} = \frac{\partial U_{self}}{\partial d}$$
 
-当关切边界消失，他者的痛苦 = 自身的痛苦。慈悲不是"善良"，而是扩展后的自然感受。
+在渐近极限上，关切边界趋于消解；在有限实践中，只能要求他者痛苦更少被排除在后果承担之外。慈悲不是单纯"善良"，而是扩展后的方向性表现候选。
 
 ---
 
@@ -372,12 +375,12 @@ $d_{critical}$ 操作化：当前L₂吸引子势垒被Ψ_f维持；当 $\Delta 
 
 | 传统 | 终极实在 | 个体 | 堕落/问题 | 解脱/救赎 | 实践 |
 |:-----|:---------|:-----|:----------|:----------|:-----|
-| **佛教** | 空性/缘起 | 五蕴（无我）| 无明/执着 | 涅槃（$d \to \infty$）| 八正道 |
+| **佛教** | 空性/缘起 | 五蕴（无我）| 无明/执着 | 涅槃（$d$ 渐近扩展）| 八正道 |
 | **吠檀多** | 梵 | 阿特曼 | Maya（无知）| Moksha | 瑜伽/智慧 |
 | **基督教** | 神（三位一体）| 按神形象造 | 原罪（与神分离）| Theosis | 祈祷/圣事 |
 | **伊斯兰** | 真主（Tawhid）| Ruh（灵魂）| Shirk（以物配主）| Fana-Baqa | Dhikr/五功 |
 | **道家** | 道 | 德 | 人为/执着 | 与道合一 | 无为/内丹 |
-| **SRT** | $\hat{G}[L_0]$ | $\hat{G}_\theta$ | $d \to 0$ | $d \to \infty$ | $\frac{d\theta}{dt} = -\nabla \Psi_f$ |
+| **SRT** | $\hat{G}[L_0]$ | $\hat{G}_\theta$ | $d \to 0$ | $d$ 渐近扩展 | $\frac{d\theta}{dt} = -\nabla \Psi_f$ |
 
 ---
 
@@ -389,7 +392,7 @@ $d_{critical}$ 操作化：当前L₂吸引子势垒被Ψ_f维持；当 $\Delta 
 
 **预测**: 在深度祈祷/冥想状态下（$d$ 扩展），顶叶的定向联结区（OAA, Orientation Association Area）应显示活动抑制。
 
-**机制**: OAA 负责构建"自我-他者"边界，$d \to \infty$ 时边界消解。
+**机制**: OAA 负责构建"自我-他者"边界；在 `d` 渐近扩展读法下，边界应弱化或更可重构，但这不是实际无限 `d` 的经验声明。
 
 **证伪条件**: 冥想组 OAA 活动增强或无变化。
 
@@ -456,7 +459,7 @@ $$\text{Grace} = \text{External}(\nabla_\theta d) \text{ from } L_2^{cultural/di
 为何某些传统强调个体解脱（小乘），而另一些强调集体救赎（大乘、基督教末世论）？
 
 **假设**: 
-- 个体解脱 = 单一 $\hat{G}_\theta$ 的 $d \to \infty$
+- 个体解脱 = 单一 $\hat{G}_\theta$ 的 `d` 渐近扩展方向
 - 集体救赎 = $L_2$ 层面的相变，影响所有嵌入其中的 $\hat{G}_\theta$
 
 ---
@@ -519,7 +522,7 @@ _SRT_Spirit_Axioms (本文件)
 
 - **本源算子**：$\Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，定义神性为选择过程的拓扑极限而非实体。
 - **苦难-摩擦耦合**：$\text{Suffering} \propto 1/d$，$\Psi_f \uparrow \iff d \downarrow$；低关切维度导致高本体论摩擦。
-- **解脱渐近线**：$\text{Nirvana} \equiv \lim_{d\to\infty} \hat{G}_\theta(L_0)$，解脱是 $d$ 的无穷扩展而非 $L_1$ 的消灭。
+- **解脱渐近线**：$\text{Nirvana} \equiv \lim_{d\to\infty} \hat{G}_\theta(L_0)$，解脱是 `d` 的渐近扩展方向而非 $L_1$ 的消灭；有限系统不声称实际无穷。
 - **实践梯度**：$d\theta/dt = -\alpha \nabla_\theta \Phi + \text{Learning}$，修持是对 $\theta$ 参数的可操作优化。
 - **信之松弛**：$d\beta/dt < 0$，信仰是 $L_2$ 约束的受控放松以重开 $L_0$ 通道。
 

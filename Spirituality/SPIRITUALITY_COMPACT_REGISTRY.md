@@ -23,24 +23,28 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 ### B. Compact Core Layer
 - `SRT_Spirit_09_Praxis_CompactCore.md`
 
-### C. Longform Counterparts
+### C. Metric / Direction Detail
+- `SRT_Spirit_05_Shoshin.md`
+  - Shoshin / 初心 as direction-field proxy, first-person report boundary, and provisional metric comparison
+
+### D. Longform Counterparts
 - `SRT_Spirit_09_Praxis.md`
 
-### D. Dual-Track Expansion (2026-04-20)
+### E. Dual-Track Expansion (2026-04-20)
 - `SRT_Spirituality_Selection_Pathology_and_Return.md`
   - canonical spirituality framework on ready-made floors, subject-position loss, crisis phenomenology, true/false lightness, support, micro-selection, directional return, faith as openness to `L_0`, and frozen-`L_2` technology critique
 - `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
   - companion exposition with modern-life reflection, lived phenomenology, awakening vs pathological hollowness, beginner-mind recovery, technical-care critique, and gentle practical guidance
 
-### E. Companion Community Branch
+### F. Companion Community Branch
 - `SRT_Spirituality_Community_and_Sangha.md`
   - companion theory / praxis interface on what kind of community can hold return without becoming another ready-made floor
 
-### F. Archived Merge Bridges
+### G. Archived Merge Bridges
 - `SRT_Spirituality_Return_Expansion_Bridge.md`
 - `SRT_Spirituality_Second_Expansion_Bridge.md`
 
-### G. Split Navigation
+### H. Split Navigation
 - `Praxis_Split/README.md`
 
 ## Recommended Reading Order
@@ -50,14 +54,16 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 ### 第二层展开
 3. `SRT_Spirit_09_Praxis.md`
-4. `SRT_Spirituality_Selection_Pathology_and_Return.md`
-5. `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-6. `SRT_Spirituality_Community_and_Sangha.md`
-7. `Praxis_Split/README.md`
+4. `SRT_Spirit_05_Shoshin.md`
+5. `SRT_Spirituality_Selection_Pathology_and_Return.md`
+6. `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+7. `SRT_Spirituality_Community_and_Sangha.md`
+8. `Praxis_Split/README.md`
 
 ## Role Split
 - bridge / axioms：固定 Spirituality 板块与 SRT 公理层的连接方式
 - compact core：固定实践与进化主线的最短稳定入口
+- metric / direction detail：固定 Shoshin 的方向指标读法、体验报告边界与暂定几何接口
 - long-form：保留修行阶段、日常整合、暗夜、闭关与长期演化细节
 - canonical spirituality expansion：把“主体位丢失—危机—分辨—支持—回返—方向性回返”组织成独立 spiritual 主轴
 - companion exposition：把 canonical spirituality line 翻译成现代生活、可识别经验与生活化引导

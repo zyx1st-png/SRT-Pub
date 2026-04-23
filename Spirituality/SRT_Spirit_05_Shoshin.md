@@ -2,14 +2,18 @@
 id: SRT-SPIRIT-05
 type: concept
 tags: [Shoshin, Faith, Counter-Actualization, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_hybrid_v2
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-SPIRIT-04]
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P3-P5
+dependency: [SRT-SPIRIT-04, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-T-DIR-CANONICAL]
 ---
 
 # SRT Spirituality Part 5: Shoshin & Direction (Hybrid Edition)
+
+> **Claim-level note**: This file is a spirituality-domain bridge and praxis interface. Historical labels such as `Ax-Sho-*` and `T-Sho-*` are local mapping names, not P0/P1 core axioms or settled theorems.
+> **Metric note**: Shoshin formulas below are operational proxies. They stabilize comparison and practice language; they do not settle the final geometry of direction.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Directional Axioms (AI-Readable).
@@ -22,6 +26,30 @@ dependency: [SRT-SPIRIT-04]
 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Reading Rule: 初心的两种读法
+
+本文中的“初心 / Shoshin”必须区分两个层级：
+
+| Reading | Level | What can be mistaken | What can be checked | Prohibited shortcut |
+|:--|:--|:--|:--|:--|
+| Direction-field / normative orientation | P3/P4 bridge / operational proxy | The chosen metric may misread the direction field, or confuse local relief with broader return. | Broader care, lower defensive rigidity, better re-entry into ordinary responsibility, and reduced need for identity protection. | Do not infer that a person has reached `Ω`, completed practice, or gained authority over others. |
+| First-person experiential report | P5 phenomenology | Intensity, bliss, terror, relief, or “openness” can be narrow, defensive, chemically induced, or socially reinforced. | Only as report-level evidence unless paired with external behavioral, relational, physiological, or third-party indicators. | Do not certify `d` expansion, `T_dir`, moral insight, or spiritual rank from experience alone. |
+
+Thus Shoshin is not “how open I feel.” It is a candidate reading of whether a finite operator is being reoriented toward wider, more payable consequence-bearing. The experience may accompany that reorientation, but it may also imitate it.
+
+## Metric Status: provisional comparison logic
+
+The cosine form remains the default compact interface because it is easy to compare as a directional angle. It is not the only admissible metric.
+
+| Candidate metric | Best use | What would favor it | Failure mode |
+|:--|:--|:--|:--|
+| Cosine alignment | Symmetric comparison of current movement with a candidate direction field. | Direction vectors are available, magnitude is secondary, and the question is “same way or not?” | Fails when path cost, irreversible burden, or asymmetric update difficulty is central. |
+| Fisher-distance style reading | Sensitivity / capacity geometry of the operator under perturbation. | Practice changes can be measured as altered discrimination capacity, stability, or update curvature. | A larger capacity geometry does not by itself prove concern, care, or stake-coupled `d`. |
+| KL / asymmetric divergence style reading | Directional cost of moving from old to new priors or from self-locked to wider models. | The return path is not symmetric, and update cost / surprise / payability is part of the claim. | Depends heavily on distribution choice and may overfit the modeler's representation. |
+
+Current rule: use cosine for compact directional exposition, but mark deeper claims as metric-dependent. If two metrics disagree in the same domain, the stronger spiritual claim must pause until the projection failure is explained.
+
 # Part A: Formal Axioms (形式化公理)
 
 ## I. Shoshin Dynamics (初心动力学)

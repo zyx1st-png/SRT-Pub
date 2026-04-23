@@ -66,7 +66,7 @@ T(d)=
 \text{Shoshin}=\cos\angle(\vec v_{self},-\nabla F_{global})
 \]
 
-> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface for alignment, not a canonical definition of Shoshin or global direction.
+> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface and compact default for directional exposition, not a canonical definition of Shoshin or global direction. See `SRT_Spirit_05_Shoshin.md` for metric alternatives and first-person report boundaries.
 
 最短说法：
 > **初心不是抽象美德，而是你当前行动方向与更深层最优方向之间的夹角。**
@@ -152,6 +152,7 @@ SRT 这篇一个很重要的实践洞见是：
 > **修行的关键不是追求特殊体验，而是用可持续的小循环逐步重写 `\theta`、`L_2` 与行动路径。**
 
 > **Level**: governance / praxis guardrail. Practice is not linear "more is better." It should stop, reduce, or re-scope when cost becomes unpayable, care narrows, agency is absorbed by practice identity, or ordinary consequence-bearing is being bypassed.
+> **d-evidence rule**: first-person report can start a hypothesis, but it cannot certify spiritual `d` by itself. A stronger `d` claim needs at least one external indicator such as behavioral change, repair, recovery-time reduction, third-party observation, physiological proxy, or broader consequence-bearing.
 
 所以：
 - 30 天阶段：先建立基线与最小可行习惯
@@ -161,7 +162,30 @@ SRT 这篇一个很重要的实践洞见是：
 
 ---
 
-## 8. 最压缩结论
+## 8. 最小 praxis rhythm
+
+实践不是线性累积，而是一个必须回到生活的节律：
+
+| Phase | Function | Failure if skipped |
+|:--|:--|:--|
+| Expansion | Loosen old `L_2`, widen attention and care. | Becomes dull repetition if no new contact appears. |
+| Stabilization | Let the new opening become payable and behaviorally stable. | Becomes fragile intensity or dependency on special states. |
+| Return of consequence | Test whether the change bears costs in relationships, work, body, and ordinary duty. | Becomes consequence bypass: “insight” without lived return. |
+| Re-entry | Bring the new structure back into ordinary life without turning it into identity superiority. | Becomes practice identity capture or withdrawal from shared reality. |
+
+The stop rule should be applied at every phase. A practice should pause or narrow when it reduces care, increases performative identity, bypasses ordinary consequences, or lets a group absorb burdens that should return to the practitioner’s life.
+
+## 9. False-growth diagnostics
+
+| Pattern | Short description | SRT reading | Minimal check |
+|:--|:--|:--|:--|
+| Real expansion | Wider care with more payable consequence-bearing. | Candidate `d` expansion. | External indicator plus report: changed behavior, repair, reduced recovery time, broader responsibility. |
+| Intense but narrow experience | Powerful state with smaller world after it. | High salience, not necessarily `d`. | Does the experience increase humility and re-entry, or only certainty and specialness? |
+| Pseudo-openness | Sounds open, but only admits inputs that protect the current identity. | `L_2` flexibility at the surface, closure at the gate rules. | Can the person revise the frame that names the experience? |
+| Identity-based inflation | Practice becomes a superior self-description. | `d` collapses into `L_2` status. | Does the person become more teachable, or harder to question? |
+| Collective reinforcement loop | Group confirms the state faster than consequences can return. | Shared `L_2` capture risk. | Are dissent, exit, and ordinary-life responsibility still preserved? |
+
+## 10. 最压缩结论
 
 `SRT Spirit 09 Praxis` 可以压缩成五句话：
 
@@ -173,7 +197,7 @@ SRT 这篇一个很重要的实践洞见是：
 
 ---
 
-## 9. 阅读路径
+## 11. 阅读路径
 
 - 全量原文：`SRT_Spirit_09_Praxis.md`
 - 拆分导航：`Praxis_Split/README.md`
