@@ -34,6 +34,15 @@ SRT 的压缩回答是：
 
 > **Level**: governance / bridge. The legitimacy ladder is: order condition → institutional type judgment → delegation legitimacy → political legitimacy. Do not infer legitimacy directly from `L_1/L_2` stability; missing middle criteria must be written as conditional diagnostics.
 
+Middle criteria:
+
+| Criterion | Minimum question | Shortcut blocked |
+|---|---|---|
+| Institutional type | Is this a floor, gate, delegation, monopoly, emergency tool, or pathological closure? | Stability → legitimacy. |
+| Delegation legitimacy | Are scope, duration, review, and revocation specified? | "Represents the people" without audit. |
+| Consequence-return symmetry | Do costs and risks return to decision sites? | Efficiency while exporting `\Psi_f^{maint}`. |
+| Reselection / exit / correction | Can affected subjects reopen, exit, appeal, or revise? | Nominal participation treated as real choice. |
+
 ---
 
 ## 2. 政治现实如何形成
@@ -235,3 +244,7 @@ SRT 不等于：
 3. Institutions preserve formal reselection while materially blocking it.
    - 当前承受方式：rights and legitimacy require access, correction, and consequence-return channels, not nominal participation.
    - 若成立需撤回什么：撤回 legitimacy claims for systems that satisfy procedure while compressing real reselection capacity.
+
+4. Political legitimacy may require norm sources not reducible to SRT order structure.
+   - 当前承受方式：the ladder separates order, institution type, delegation, and political legitimacy; SRT does not infer legitimacy from stability alone.
+   - 若成立需撤回什么：撤回 any claim that friction reduction, coordination, or `L_2` stability is sufficient for legitimacy.

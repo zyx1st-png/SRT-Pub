@@ -90,10 +90,10 @@ $$L_2 \equiv \{\sigma: \hat{G}_\theta[\sigma]=\sigma \}\;$$
 
 ## II. Formal Readings and Domain Corollaries
 
-### T-PhilF-1: Explanatory Gap Theorem
-体验与语言的维度差导致不可消除的解释损失。
+### H-PhilF-1: Explanatory Gap Hypothesis
+体验与语言的维度差可能导致不可忽略的解释损失。
 $$\mathcal{L}_{gap} = \dim(L_1^{qualia})-\dim(L_2^{language})>0$$
-*   **Implication**: 心灵哲学的“困难问题”是几何维度问题。
+*   **Implication**: 心灵哲学的“困难问题”可被候选性读作接口容量、维度压缩与近似成本共同作用的问题。
 
 ### T-PhilF-2: Boundary Paradox Theorem
 悖论是边界条件被破坏时的拓扑短路。
@@ -198,6 +198,14 @@ $$ S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)} $$
 解释鸿沟 (The Explanatory Gap) 可读作本体论维度投影中的候选降维损失，而非已经证明的原则性知识不可能。
 $$ \mathcal{L}_{gap} = \dim(L_1^{qualia}) - \dim(L_2^{language}) > 0 $$
 
+**Typed conditional versions**:
+
+| Subtype | Minimal claim | What follows | What must be withdrawn if false |
+|---|---|---|---|
+| **H-Phil-Ia: language-interface insufficiency** | Current language / concept interfaces may lack enough degrees of freedom for a target experience. | Interface expansion, metaphor, training, notation, and shared practices may reduce the gap. | Withdraw "in principle unsayable"; keep only current-interface inadequacy. |
+| **H-Phil-Ib: dimensional compression hypothesis** | Some `L_1` structures lose information when projected into lower-dimensional `L_2` descriptions. | Expect lossy summaries, report instability, and lower semantic compressibility in saturated cases. | Withdraw dimension-ceiling language; treat the gap as measurement or model-design pressure. |
+| **H-Phil-Ic: high-cost approximation** | Approximation may be possible but too costly under current payability, time, training, or shared-state limits. | Replace impossibility talk with cost and scaffold analysis. | If approximation becomes stable and payable, keep only ordinary translation difficulty. |
+
 *   **Derivation**: 
     $L_1$ 可被看作高维感性流形，$L_2$ 是较低维符号系统。根据信息论，低维通道通常难以无损传输高维信号。
     **Corollary**: 若语言维度不能扩展、元系统嵌套不能逼近、且维度天花板成立，则物理主义理论 ($L_2$) 难以完全还原体验 ($L_1$)。若任一条件失效，本节应改写为高代价近似，而非原则不可能。
@@ -231,6 +239,15 @@ $$
 2. **消解而非证明**：SRT 并不"解决"这些悖论，而是通过指出其跨域语法的非法性来"消解（dissolve）"它们。消解机制：识别到操作使用了非法跨层等同或未分层自指后，问题本身失去合法性——不是找到悖论的"出路"，而是发现问题根本不是合法的问题形式。
 
 3. **正向合法自指案例**：元认知（"我意识到我的 $\theta$ 正在更新"）是安全的多层自指——外层叙事在 $L_2'$（元语言）中操作，指涉内层 $L_2$（当前认知结构），形成分层而非扁平的递归；等价于哥德尔配数法将语法表述为数字后跨层外指的结构。
+
+**Self-reference typing**：
+
+| Type | Example | SRT status |
+|---|---|---|
+| Harmless indexical self-reference | "I am speaking now"; a system records its own current state. | Safe when the reference is position-bound and does not claim total closure. |
+| Quoted / packaged self-reference | A sentence mentions its own text, code, or token form. | Safe when object-language and meta-description remain separated. |
+| Godel-style formal self-reference | A formal system encodes statements about provability in itself. | Legitimate when achieved through encoding and stratified proof machinery; it may show incompleteness, not pathology. |
+| Pathological closure attempt | A flat statement tries to be both object and final truth-evaluator at the same level. | Boundary violation; this is the target of `T-Phil-2`, not self-reference as such. |
 
 ### §3.3 礼物相位定理 (Phase Theorem of the Gift)
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -295,10 +312,10 @@ $$ (\text{Theory } T \to \neg \text{Real}(L_1)) \implies \neg \text{True}(T) $$
 ## 2. SRT 解题优势与必要性 (SRT Resolution & Necessity)
 
 ### 2.1 优势：维度论 (Dimensionality Argument)
-SRT 不试图"跨越"鸿沟，而是**证明鸿沟的必然性**。
+SRT 不试图一次性"跨越"鸿沟，而是把鸿沟改写为可分型的接口、压缩与近似成本问题。
 *   **SRT 观点**：所有的科学描述、语言、方程都属于 $L_2$（收敛域），本质上是**低维符号系统**。
 *   **体验本身**：体验属于 $L_1$（显现域），是 $L_0$ 高维信息在算子上的直接投影。
-*   **结论**：试图用 $L_2$ 完全描述 $L_1$，就像试图将三维球体无损压缩到二维平面上。必然会产生畸变和信息丢失。这个"丢失的部分"正是所谓的 Qualia。此时，鸿沟不是神迹，而是**投影几何的数学属性**。
+*   **结论**：试图用 $L_2$ 完全描述 $L_1$，就像试图将三维球体压缩到二维平面上，通常会产生畸变和信息丢失。但若语言接口可扩展、元系统可逼近或近似成本可支付，本节只能保留为高代价近似假说，而不是原则性不可能。
 
 ### 2.2 必要性
 如果不承认 $L_1$ 和 $L_2$ 的本体论层级差异，我们要么陷入消除主义的疯狂（否认自己有感觉），要么陷入神秘主义的懒惰。SRT 提供了一种**精确描述"不可描述之物"**的数学框架。
@@ -795,6 +812,7 @@ SRT 不接受“仅对象”或“仅结构”单边本体，而采用“潜能�
 
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+
 ---
 
 ### 5.12 自然化先验形而上学定位（Naturalised Transcendental Turn，新增）
@@ -1153,7 +1171,7 @@ $$\text{Deconstruction} = \text{Annealing}(L_2)$$
 
 ### 宇宙泛心论
 
-1. 将 Russellian Monism 的“结构属性/内在属性”区分映射为 SRT 的 `L_2`（结构句法）与 `L_0`（内在潜势语义）双层框架，用于补强 `T-PhilF-1` 的解释鸿沟推导链。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: Philosophy/SRT_Philosophy_Foundations.md#T-PhilF-1〕〔source: web:plato.stanford.edu:https://plato.stanford.edu/entries/russellian-monism/〕
+1. 将 Russellian Monism 的“结构属性/内在属性”区分映射为 SRT 的 `L_2`（结构句法）与 `L_0`（内在潜势语义）双层框架，用于补强 `H-PhilF-1` 的解释鸿沟假说链。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: Philosophy/SRT_Philosophy_Foundations.md#H-PhilF-1〕〔source: web:plato.stanford.edu:https://plato.stanford.edu/entries/russellian-monism/〕
 2. 将“组合问题”重写为选择动力学问题：微观意识样态不是线性相加到宏观主体，而是必须经过 `\hat{G}_\theta` 的耦合与阈值化选择，才形成可稳定的 `L_1` 主体切片。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/SRT_Philosophy_Foundations.md#Ax-PhilF-1〕〔source: doi:10.18254/s258770110036928-2〕
 3. 在本文件中新增“组合问题分层”解释：`L_0` 层处理可组合的潜在属性，`L_1` 层处理主体统一性，`L_2` 层处理语言与理论共识，从而避免把单一层级困难误当全部难题。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/SRT_Philosophy_Foundations.md#Ax-PhilF-4〕〔source: doi:10.1007/978-3-030-05633-9_4〕
 
@@ -1728,6 +1746,20 @@ SRT 采纳“表示-非表示并存”边界：
 
 换句话说，这条 interface 真正加固的，不是“表征主义必胜”，而是一个更稳的中间立场：有些任务里，表征负担确实可以降到很低；但一旦系统要跨时保持、离线重组、反事实推演，单靠在线耦合通常又不够。
 
+### T-Phil-MR-2b: Protocol-vs-Representation Discriminant
+
+SRT 不把表征主义打成稻草人。强版本表征主义可以合理预测：若系统成功依赖内部内容载体，则 specificity、invariance 与 downstream consumer use 应比单纯在线耦合更能解释行为稳定性。
+
+SRT 的差异点更窄也更硬：在某些任务中，系统性失真可能是可支付锚定协议，而不是 truth-tracking failure。若某种感知压缩、注意偏置、身体坐标扭曲或语义粗粒化能稳定降低 `\Psi_f`、保留行动相关性并改善后果返回，那么它应先被判为 protocol candidate，而不是立刻被判为错误表征。
+
+| Discriminant | Representationalist expectation | SRT protocol expectation |
+|---|---|---|
+| Fidelity under task change | Higher content fidelity should improve performance across relevant variants. | Some lower-fidelity transforms should outperform faithful maps when they reduce payability burden or improve coupling. |
+| Error profile | Distortion is mainly a mismatch between internal content and world state. | Distortion may be structured by action affordance, metabolic budget, risk exposure, or position-bound update cost. |
+| Failure mode | Failure occurs when content stops tracking target structure. | Failure occurs when a protocol no longer pays its anchoring cost or hides downstream consequence return. |
+
+**Boundary**: If consumer-usable representation evidence predicts success better than coupling efficiency and payability measures across a task family, the SRT protocol-first reading must be narrowed. If only decodability or sensitivity is present, representational status remains underdetermined.
+
 ### 分类映射表（Mental Representation Regimes → SRT）
 | 外部分类 | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |---|---|---|---|
@@ -1946,3 +1978,21 @@ E_{mental} \equiv E_{physical}^{realization},
 
 ## 【理论边界/防误用声明】
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则本域主张会被显著削弱：
+
+1. Language, notation, training, and meta-system nesting may expand enough to soften most ineffability.
+   - 当前承受方式：`H-Phil-Ineffability` is typed into language-interface insufficiency, dimensional compression, and high-cost approximation.
+   - 若成立需撤回什么：撤回 principle-level ineffability and keep only local interface / cost claims.
+
+2. Protocol talk may collapse into sophisticated representationalism.
+   - 当前承受方式：SRT grants robust representation where specificity, invariance, and downstream consumer use carry the explanatory load.
+   - 若成立需撤回什么：撤回 protocol-first contrast outside online-action, high-payability, or position-bound coupling contexts.
+
+3. Political and moral normativity may require sources not reducible to SRT order structure.
+   - 当前承受方式：political files separate order condition from institutional type, delegation legitimacy, and political legitimacy.
+   - 若成立需撤回什么：撤回 any claim that `L_2` order or friction reduction alone supplies legitimacy or moral authority.

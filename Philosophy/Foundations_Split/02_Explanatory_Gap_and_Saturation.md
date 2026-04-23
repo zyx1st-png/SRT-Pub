@@ -4,8 +4,8 @@ type: theory
 tags: [Philosophy, Epistemology, Metaphysics, Paradox, Hybrid]
 status: axiomatic_hybrid_v3
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
 ---
 
@@ -50,10 +50,18 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 ## 2. SRT 解题优势与必要性 (SRT Resolution & Necessity)
 
 ### 2.1 优势：维度论 (Dimensionality Argument)
-SRT 不试图"跨越"鸿沟，而是**证明鸿沟的必然性**。
+SRT 不试图一次性"跨越"鸿沟，而是把鸿沟改写为可分型的接口、压缩与近似成本问题。
 *   **SRT 观点**：所有的科学描述、语言、方程都属于 $L_2$（收敛域），本质上是**低维符号系统**。
 *   **体验本身**：体验属于 $L_1$（显现域），是 $L_0$ 高维信息在算子上的直接投影。
-*   **结论**：试图用 $L_2$ 完全描述 $L_1$，就像试图将三维球体无损压缩到二维平面上。必然会产生畸变和信息丢失。这个"丢失的部分"正是所谓的 Qualia。此时，鸿沟不是神迹，而是**投影几何的数学属性**。
+*   **结论**：试图用 $L_2$ 完全描述 $L_1$，就像试图将三维球体压缩到二维平面上，通常会产生畸变和信息丢失。但若语言接口可扩展、元系统可逼近或近似成本可支付，本节只能保留为高代价近似假说，而不是原则性不可能。
+
+**H-Phil-Ineffability versions**:
+
+| Version | Claim | If weakened |
+|---|---|---|
+| Language-interface insufficiency | 当前语言/概念通道不足。 | 改写为接口扩展问题。 |
+| Dimensional compression | `L_1` 到 `L_2` 的投影可能有损。 | 撤回维度天花板语言。 |
+| High-cost approximation | 逼近可能但当前成本过高。 | 改写为 payability / scaffold 问题。 |
 
 ### 2.2 必要性
 如果不承认 $L_1$ 和 $L_2$ 的本体论层级差异，我们要么陷入消除主义的疯狂（否认自己有感觉），要么陷入神秘主义的懒惰。SRT 提供了一种**精确描述"不可描述之物"**的数学框架。

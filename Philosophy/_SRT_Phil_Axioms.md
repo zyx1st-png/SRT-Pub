@@ -70,6 +70,16 @@ $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 
 **”可支付锚定”定义**：锚定可支付（payable anchoring）= Ψ_f^paid < Ψ_f^critical，即有机体在L₀中稳定化L₁所付出的摩擦成本不超过其存续阈值。θ的进化/学习压力方向：保留使Ψ_f^paid最小化的耦合路径，淘汰代价过高的路径，与”复制L₀^abs”的表征主义目标无关。
 
+**Representationalism / protocol discriminant**：
+
+| Reading | Non-straw prediction | SRT contrast |
+|---|---|---|
+| Robust representationalism | Internal content vehicles with specificity, invariance, and downstream consumption should explain successful action better than sensorimotor coupling alone. | SRT accepts this where cross-time planning, counterfactual reasoning, or offline recombination is doing the work. |
+| Protocol-first SRT | Some systematic distortions should persist because they lower payable anchoring cost or preserve action-relevant coupling, even when they reduce map-like fidelity. | These distortions are not merely truth-tracking failures; they can be optimal protocols under `\Psi_f` and position constraints. |
+| Hybrid boundary | Some tasks require internal representations; others can be solved by live coupling and environmental scaffolding. | The burden is task-typed: do not infer "no representation" from efficient coupling, or "representation wins" from decodability alone. |
+
+**Withdrawal condition**：若在一个任务族中，specificity / invariance / downstream consumer evidence systematically predicts success better than payability or coupling-efficiency measures, the protocol-first reading must be narrowed to online-action or high-cost contexts.
+
 **θ 的三层来源**：
 1. 进化选择层：物种层面淘汰高Ψ_f_baseline的θ构型（种系遗传）
 2. 发育塑形层：早期经验修剪无效耦合路径（临界期θ可塑性→W₀）
@@ -99,6 +109,14 @@ $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 语言与逻辑在维度上通常低于体验流形，可能导致不可约或高代价的信息损失。
 $$\mathcal{L}_{gap} = \dim(L_1) - \dim(L_2) > 0$$
 *   **Implication**: “解释鸿沟”可被读作映射维度差造成的候选结构损失，而非已证明的原则性不可能。
+
+**Typed versions**：
+
+| Subtype | Claim | What follows | If it fails |
+|---|---|---|---|
+| H-Phil-Ia: language-interface insufficiency | Current language / concept interfaces may lack enough channels for a target experiential structure. | Improve interface design before claiming metaphysical impossibility. | Withdraw "unsayable"; keep only "not sayable with current interface." |
+| H-Phil-Ib: dimensional compression hypothesis | Some `L_1` structures lose information under projection into lower-dimensional `L_2` descriptions. | Expect lossy summaries, residual first-person gaps, and lower compressibility in saturated cases. | Withdraw dimension-ceiling language; treat gap as model-choice or measurement artifact. |
+| H-Phil-Ic: high-cost approximation | Approximation may be possible but require prohibitive time, training, formal scaffolding, or shared state. | Replace "impossible" with "too costly under current payability constraints." | If cost is payable and stable, keep only ordinary translation difficulty. |
 
 **Counterexample absorption slots**:
 1. If language dimensions can expand, the claim weakens from impossibility to present-interface inadequacy.
@@ -180,6 +198,11 @@ $$ \text{Epoché} \equiv \hat{G}_{\theta \setminus L_2}[L_0] $$
 
 由于 $L_1$ (体验) 的维度可能远高于 $L_2$ (语言) 的维度，Qualia 在当前接口下可能不可完全言说或代价过高。
 $$ \dim(L_1) \gg \dim(L_2) \implies \text{Information Loss} > 0 $$
+
+**三种版本**：
+- **语言接口不足**：当前语言/概念通道不够；若语言维度可扩展，只保留“当前接口不足”。
+- **维度压缩假说**：`L_1` 到 `L_2` 的投影造成有损压缩；若维度天花板不成立，撤回“不可约损失”。
+- **高代价近似**：可以逼近，但训练、共享背景、形式脚手架或时间成本过高；若这些成本变得可支付，撤回“不可言说”强语气。
 
 **反例吸收位**：
 1. 若语言维度可扩展，则改写为当前语言接口不足。

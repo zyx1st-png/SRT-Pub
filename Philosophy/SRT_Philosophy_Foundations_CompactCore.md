@@ -85,23 +85,26 @@ SRT 的压缩答案是：
 
 ## 4. 解释鸿沟的 SRT 解法
 
-### 4.1 Explanatory Gap Theorem
+### 4.1 H-Phil-Ineffability
 \[
 \mathcal{L}_{gap} = \dim(L_1^{qualia})-\dim(L_2^{language})>0
 \]
 
 SRT 对困难问题的回答不是“消除鸿沟”，而是：
-> **证明鸿沟为何必然存在。**
+> **把鸿沟拆成可条件化的接口问题。**
 
-因为：
-- 体验属于 \(L_1\)
-- 语言与理论属于 \(L_2\)
-- 低维符号系统无法无损压缩高维体验结构
+三种版本必须区分：
+
+| Version | What it says | If weakened |
+|---|---|---|
+| Language-interface insufficiency | 当前语言/概念通道不足。 | 改写为接口扩展问题。 |
+| Dimensional compression | \(L_1\) 到 \(L_2\) 投影可能有损。 | 撤回维度天花板语言。 |
+| High-cost approximation | 逼近可行但成本太高。 | 改写为 payability / scaffold 问题。 |
 
 所以：
 - 鸿沟不是神秘主义奇迹
 - 也不是认知错觉
-- 而是跨层投影的几何损失
+- 而是跨层投影、接口容量与近似成本共同形成的候选结构损失
 
 SRT 因而避免了两种失败：
 1. 消除主义：否认体验的真实地位
@@ -129,6 +132,15 @@ SRT 认为，经典哲学悖论本质上不是“逻辑系统突然坏掉”，�
 压缩说法：
 - **悖论 = 域混淆的症状**
 - **不是宇宙真的矛盾，而是切口错了**
+
+自指需要分型：
+
+| Type | Status |
+|---|---|
+| Indexical self-reference | Safe when position-bound. |
+| Quoted / packaged self-reference | Safe when object/meta levels remain separated. |
+| Godel-style formal self-reference | Legitimate stratified construction; may show incompleteness. |
+| Pathological closure attempt | Boundary violation: flat self-finalization at one level. |
 
 ---
 
@@ -222,3 +234,21 @@ SRT 哲学基础可以压缩成四句话：
 - split 导航：`Foundations_Split/README.md`
 - annex 导航：`Foundations_Annex/README.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
+
+---
+
+## Hardest Objections
+
+本域若以下任一成立，则本域主张会被显著削弱：
+
+1. Language and formal systems may expand enough to dissolve most ineffability.
+   - 当前承受方式：`H-Phil-Ineffability` is typed into interface insufficiency, compression, and high-cost approximation.
+   - 若成立需撤回什么：撤回 principle-level ineffability; keep only local interface and cost claims.
+
+2. Protocol talk may collapse into sophisticated representationalism.
+   - 当前承受方式：SRT allows strong representations where specificity, invariance, and downstream use carry the explanatory load.
+   - 若成立需撤回什么：撤回 protocol-first contrast outside online-action or high-payability contexts.
+
+3. Paradox diagnosis may miss logics where self-reference is harmless or productive.
+   - 当前承受方式：self-reference is typed; only unstratified closure attempts count as boundary violations.
+   - 若成立需撤回什么：撤回 any blanket "self-reference = paradox" language.
