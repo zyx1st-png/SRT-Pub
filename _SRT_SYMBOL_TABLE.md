@@ -21,7 +21,7 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 | **Ĝ** | `\hat{G}` | Ghost Operator | Selection operator mapping $L_0 \to L_1$. | Operator | Never use plain `G` for this |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
 | **d** | `d` | d-value (Depth of Care) | Governance-canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity; geometric, Fisher, vector, and gate readings require explicit marking. | Scalar summary by default; proxies are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`; `Def-d-canonical` is the core-facing anchor, while scalar default / vector / gate rules are governance-canonical usage controls; do not mix scalar `d`, `D_eff`, Fisher proxy, `d-vector`, and `d-gate` in one claim without notation |
-| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance-canonical main reading is information-theoretic/payability cost; geometry may be lower-bound style proxy and metabolic readings are budget/load projections only under stated conditions; domain projections do not become theory-canonical by reuse |
+| **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance-canonical main reading is information-theoretic/payability cost; Fisher geometry may induce local second-order proxy `δΨ_f^{geom}=1/2 dθ^T g_F dθ+O(||dθ||^3)` and path functionals, but `Ψ_f ≡ g_F` is never a literal scalar-tensor identity; metabolic readings are budget/load projections only under stated conditions; domain projections do not become theory-canonical by reuse |
 | **T_dir** | `T_{dir}` | Direction Transparency | v0 operational proxy / constrained readability-reorientation functional for a system's own current selection direction. | Proxy / accessibility index | Governance-canonical working proxy `_SRT_T_DIR_CANONICAL.md`; not a completed ontological foundation and not semantic valence, reward, coherence, or confidence |
 | **Ω** | `\Omega` | Ontological Consistency | Internal coherence of an $L_1/L_2$ structure. | Probability (0-1) | Canonical `\Omega` in Core_Law context |
 | **Ω_mis** | `\Omega_{\text{mis}}` | Ontological Mismatch Index | Distance between inherited $\theta$ and current-environment optimal $\theta$. | Scalar | Legacy docs may call this `Ω` |
@@ -92,6 +92,7 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 8. **T_dir usage split**：`T_dir` is a v0 operational proxy for directional readability. Do not use it as a completed formal object, as semantic valence, or as confidence.
 9. **ε usage split**：`ε_pg` is the L0 minimum non-neutrality postulate; ISP-level ε is P1 only when sourced to the constitutive theorem; `ε_reg` is an implementation regularizer; `ε_s` is a stake-threshold bridge. They must not be collapsed into one empirical theorem.
 10. **Canonical status split**：`governance-canonical` means repo-wide stabilized usage; `theory-canonical` means core-derived or core-priority definition; `operational proxy` means measurable working readout; `bridge hypothesis` means cross-domain candidate mapping. Do not infer theory-canonical status merely from a symbol-table default, filename, or historical label.
+11. **Ψ_f / Fisher split**：do not write `\Psi_f \equiv g_F` as a literal identity. Use `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta+O(\|d\theta\|^3)` for local cost, or a path functional such as `\Psi_f^{geom}[\gamma]=\int_\gamma\sqrt{g^F_{ij}\dot\theta^i\dot\theta^j}\,dt` when the statistical-manifold projection is valid.
 
 ## D-Value Alignment (d 值专题规范)
 
@@ -129,13 +130,15 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 | :--- | :--- | :--- |
 | 阻力 | 动力学上的阻抗 | 经验/现象读法 |
 | 代价 | 记账上的支付项 | 能量、时间、风险预算读法 |
-| 几何长度 | 参数流形上的路径负担 | 形式化读法 |
+| Fisher 几何投影 | 由 Fisher–Rao metric 诱导的局部二阶代价 / 路径泛函 | 形式化读法；不是 `Ψ_f = g_F` 裸等号 |
 
 ### 3) 符号分层
 | 记号 | 含义 | 使用建议 |
 | :--- | :--- | :--- |
 | `\Psi_f(x,t)` | 局部摩擦负荷 | 默认首选 |
 | `\Phi(\Delta t)=\int \Psi_f dt` | 累积摩擦势 / 时间窗总账 | 需要强调积分时使用 |
+| `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta + O(\|d\theta\|^3)` | Fisher–Rao metric 诱导的局部二阶几何代价 | 谈 Fisher metric 时首选；避免裸写 `Ψ_f ≡ g_F` |
+| `\Psi_f^{geom}[\gamma]=\int_\gamma\sqrt{g^F_{ij}\dot\theta^i\dot\theta^j}\,dt` | Fisher 几何路径泛函 | 作用域明确、统计流形投影有效时使用 |
 | `\Psi_f(\hat{G}_i,\hat{G}_j)` | 耦合摩擦泛函的简写 | 作用域明确时允许 |
 
 ### 4) 编辑规则
@@ -144,3 +147,4 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 - **规则 F3**：对现实主体，不要把最优条件写成 `\Psi_f \to 0`；优先写“非零且可支付”。
 - **规则 F4**：AI / 纯 `L_2` 语境中，优先写“non-binding friction”而非绝对 `\Psi_f = 0`。
 - **规则 F5**：物理语境中，若谈引力与 `\Psi_f` 的关系，当前规范口径降为 P3/P4 弱接口：只承诺弱场极限下 `\Psi_f` 梯度与牛顿势梯度方向同号的相容性候选；不得写成张量级 GR 重建或 `G_{\mu\nu}` 已由 SRT 推导。
+- **规则 F6**：谈 Fisher metric 时，必须把 `g_F` 标注为局部信息几何投影 / proxy；不得把 `\Psi_f \equiv g_F` 当成标量代价与度量张量的严格恒等式。
