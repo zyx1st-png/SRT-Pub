@@ -4,8 +4,8 @@ type: theory
 tags: [Thermodynamics, Time, Gravity, Cosmology, Information Physics, Hybrid]
 status: axiomatic_hybrid_v2
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: translation
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT-QUANT-02]
 ---
 
@@ -163,8 +163,8 @@ $$ \text{Mass} = |\text{Resistance}(L_1 \to L_0)| $$
 
 在弱场极限与明确投影下，引力势梯度与 $\Psi_f^{phys}$ 梯度可作方向相容读法：
 $$ \nabla \Psi_f^{phys} \parallel \nabla \Phi_N \quad \text{(weak-field compatibility window)} $$
-$$ \Psi_f(L_0) = 0 \implies \text{Gravity}(L_0) = 0 $$
-*   **Boundary**: 不解释真空能问题，不承担 GR 精确重建。
+未锚定潜能对物理引力账本的当前最稳读法是 non-binding，而不是已证明 $\Psi_f(L_0)=0$。
+*   **Boundary**: 不解释真空能问题，不承担 GR 精确重建，也不解释物理常数精确值。
 
 ---
 
@@ -179,9 +179,9 @@ $$ \alpha \in \{\lambda : \exists \text{ self-sustaining } \hat{G}_θ \text{ in 
 
 | 解释类型 | 逻辑 | SRT 评价 |
 |:---------|:-----|:---------|
-| 弱人择 | "因为我们存在" | 描述性，无解释力 |
-| 强人择 | "宇宙被设计" | 引入外部设计者 |
-| **SRT** | "稳定参数子空间候选" | 当前只给出约束位置，不解释精确值 |
+| 弱人择 | "因为我们存在" | 可兼容；SRT 本轮不试图击败它 |
+| EFT / 标准模型 / 景观类解释 | 从更深物理结构或测度推出参数 | 若成功，SRT 应吸收为 `L_2` 稳定机制的物理实现 |
+| **SRT** | "稳定参数子空间候选" | 当前只给出结构放置约束，不解释精确值 |
 
 ### T-FP-2 [T1.4.2]: Ontological Annealing (本体论退火)
 物理常数的起源（hypothesis / bridge）：
@@ -190,10 +190,12 @@ $$ \alpha \in \{\lambda : \exists \text{ self-sustaining } \hat{G}_θ \text{ in 
 3. **冻结态**: 常数固化为 $L_2$ 沉积物
 $$ P_{physics} = \lim_{T \to 0} \hat{G}_{cosmic}(L_0^{parameters}) $$
 
-### T-FP-3: Fine-Tuning as Survival Bias of L2 (微调即L2的生存偏差)
-**Deductive Statement**: 宇宙的精细调节（Fine-Tuning）不是为了产生生命，而是"能够维持自身操作闭包的L2结构"的必然统计遗留：
-$$P(\alpha \approx 1/137 \mid \text{Existence of } \hat{G}) \to 1$$
-* **Implication**: 人择原理被本体论化。不是"宇宙为了我们而被微调"，而是"能经历本体论退火并凝固成时空的参数，只能是这些"。其他参数在L0中瞬间坍缩，无法形成具备时间厚度的L2结构。
+### H-FP-3: Fine-Tuning as Candidate L2 Survival Bias (legacy `T-FP-3`)
+> **Level**: hypothesis / bridge. Legacy theorem naming does not restore theorem status.
+
+宇宙的精细调节（Fine-Tuning）可被候选性重读为稳定 `L_2` 结构的生存偏差：
+$$P(\lambda \in L_2^{stable\ parameter} \mid \text{persistent physical } L_2) \text{ is constrained, not computed here}$$
+* **Implication**: 这不是 $\alpha \approx 1/137$ 的推导。它只说能凝固成持久时空与记录结构的参数区域必须满足稳定性约束。
 
 ---
 
@@ -250,6 +252,8 @@ $$ d(x, y) \propto \frac{1}{I(x; y | \hat{G}_θ)} $$
 3. **因果投影的单向性**: 时间本身就是选择的度量
 
 ### T-Time-3 [T1.5.3]: High-d Observer Spacetime Collapse (高 $d$ 值观察者时空坍缩)
+> **Terminology note**: "Collapse" here names a phenomenological / geometric limit of spatial-temporal differentiation, not a global quantum-collapse event.
+
 $$ \lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing $$
 
 | 观察者类型 | $d$ 值范围 | 时空体验 |
@@ -297,8 +301,10 @@ $$ \text{Geometry} \cong \text{CodeSpace}(\text{QEC}) $$
 
 > **Level**: hypothesis / bridge. This is a candidate interface, not a GR-level theorem.
 
-时空曲率可被候选性读作多个 $\hat{G}$ 达成的信息共识乘积的几何投影：
-$$ G_{\mu\nu} = 8\pi T_{\mu\nu} \iff \text{Curvature} = \text{Information Density} $$
+时空曲率可被候选性读作稳定 `L_2` 共识结构的几何投影：
+$$ \text{Curvature / gravity proxy} \leadsto \text{stable information-density / consensus-cost proxy} $$
+
+**Boundary**: 这是结构类比，不是 Einstein-equation reconstruction，也不推出 `G_{\mu\nu}`。
 
 ### Def-Grav-1 [D1.6.1]: Fiber Bundle Structure (纤维丛结构)
 - **底空间**: $L_2$

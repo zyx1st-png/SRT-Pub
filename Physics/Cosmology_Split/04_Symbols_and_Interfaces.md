@@ -30,7 +30,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 | $\Psi_f$ | Ontological Friction | Ax-OF-1 [A1.3.1] |
 | $\Phi_{Higgs}$ | Higgs Friction | Ax-OF-1 [A1.3.1] |
 | $m_{bit}$ | Information Mass | Ax-IT-3 [A1.2.3] |
-| $\alpha$ | Fine Structure Constant | T-FP-1 [T1.4.1] |
+| $\alpha$ | Fine Structure Constant | H-FP-1 [H1.4.1] |
 | $\tau$ | Ontological Time | Ax-Time-1 [A1.5.1] |
 | $\Lambda$ | Cosmological Constant / Dark Energy | T-Cosmo-1 [T1.7.1] |
 | $d_{cosmic}$ | Gravitational d-value | Def-Cosmo-1 [D1.7.1] |

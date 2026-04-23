@@ -80,6 +80,14 @@ SRT 把质量解释为：
 \nabla \Psi_f^{phys} \parallel \nabla \Phi_N
 \]
 
+三层读法：
+
+| Level | Meaning | Current status |
+|---|---|---|
+| 1 | Structural analogy / directional compatibility | Allowed bridge language. |
+| 2 | Weak-field candidate relation | Allowed only as `\nabla \Psi_f^{phys} \parallel \nabla \Phi_N`. |
+| 3 | Tensor reconstruction | Future target only; not currently justified. |
+
 压缩结论：
 - 潜能本身不“有重量”只能作为弱相容读法保留
 - 只有被锚定、被维持的现实结构才可能承载重力意义上的成本
@@ -96,6 +104,8 @@ t \propto \int \Psi_f(L_1)\,dn
 
 时间不是抽象容器，而是：
 > **选择序列的度量与现实维持的耗费。**
+
+**Boundary**：这首先是 interpretive time-as-selection-index reading。若进一步声称物理时空本身是 Planck-scale discrete time，必须给出独立物理模型、Lorentz behavior 与 dispersion predictions；FERMI / LIV 约束只直接压迫这类已指定的强模型。
 
 ### 4.2 Triple Definition Equivalence
 SRT 把时间统一成三种等价视角：
@@ -135,7 +145,14 @@ F_g = T\nabla S
 - 引力可能表现为该共识网络的几何与能量代价
 - 当前最弱承诺是弱场梯度方向相容，不是 `G_{\mu\nu}` 级别推导
 
-### 5.2 Spacetime as Error-Correcting Code
+### 5.2 Constants as Stable-Parameter Placement
+
+物理常数在本轮只允许这样读：
+- 位于可维持稳定 `L_2` 结构的参数区域
+- 不是精确数值解释
+- 不是对人择、EFT、标准模型、弦景观或其他外部物理解释的替代
+
+### 5.3 Spacetime as Error-Correcting Code
 SRT 借用这一想法强调：
 - 时空不是被动背景
 - 它更像现实稳定化协议的一部分
@@ -212,3 +229,13 @@ SRT 的边界非常明确：
 3. **MWI or another no-collapse framework becomes the dominant physical ontology without a viable SRT translation.**
    - 当前承受方式：正文采用 collapse-family language，MWI 只作显式兼容 note。
    - 若成立需撤回：撤回把物理 `L_0 -> L_1` 读作全局坍缩事件的表述，改为分支内观察者相对过程。
+
+## Future Derivation Standard
+
+本域关键 bridge 在升级前必须满足：
+
+| Bridge | Must achieve before re-upgrade |
+|---|---|
+| Gravity-friction | Tensor structure, unique bridge assumptions, and empirical discriminator. |
+| Discrete-time | Specified physical model, Lorentz behavior, and testable dispersion / non-dispersion consequences. |
+| Constants | Exact-value derivation or principled parameter-space measure; stable-subspace placement alone is insufficient. |
