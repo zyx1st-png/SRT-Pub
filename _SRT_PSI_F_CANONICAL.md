@@ -14,7 +14,7 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 > **目的**：终止 `Ψ_f` 在不同域中的定义漂移，建立“第一性语义锚点 + 形式主表达 + 跨尺度不变量”的统一架构。  
 > 所有涉及本体论摩擦的文档，应优先回链本文件。
 
-> **Canonical status note（2026-04-23）**：本文件固定 `Ψ_f` 的 repo-wide 主读与投影边界。`Def-Ψ-1` 是 theory-facing semantic anchor；`Def-Ψ-2` / `Def-Ψ-3` 是治理性主形式与跨尺度判据，不构成最终唯一推导。几何、代谢、神经、物理读法都必须按 projection / proxy / bridge 标注，不得反向改写 `Ψ_f`。
+> **Canonical status note（2026-04-24）**：本文件固定 `Ψ_f` 的 repo-wide 主读与投影边界。`Def-Ψ-1` 是 theory-facing semantic anchor；`Def-Ψ-2` / `Def-Ψ-3` 是治理性主形式与跨尺度判据，不构成最终唯一推导。几何、代谢、神经、物理读法都必须按 projection / proxy / bridge 标注，不得反向改写 `Ψ_f`。尤其是 `Ψ_f ≡ g_F` 不得按裸等号读取；它只能作为 “`Ψ_f` 的局部信息几何投影由 Fisher–Rao metric 给出” 的速记。
 
 ---
 
@@ -41,12 +41,12 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 > 本文件对 `Ψ_f` 采用三层 canonical 架构：
 >
 > 1. **第一性规范锚点（Primary Canonical Anchor）**：`Def-Ψ-1`，把 `Ψ_f` 固定为“选择压缩开放可能性时必须承担的本体论阻抗”。
-> 2. **形式工作主表达（Formal Working Form）**：`Def-Ψ-2`，把 `Ψ_f` 固定为 Fisher 几何上的路径负担 / 曲率读数，并厘清 `Ψ_f` 与 `Φ` 的层级关系。
+> 2. **形式工作主表达（Formal Working Form）**：`Def-Ψ-2`，把 Fisher–Rao metric 固定为 `Ψ_f` 在可微统计流形上的局部二阶信息几何投影 / 路径泛函诱导结构，并厘清 `Ψ_f` 与 `Φ` 的层级关系。
 > 3. **跨尺度工作不变量（Cross-Scale Working Invariant）**：`Def-Ψ-3`，把“可支付性条件”固定为跨尺度真正保持不变的判据。
 >
 > 使用原则：
 > - 讨论 **本体论意义 / 现实化 / stake / AI 门槛** 时，优先引用 `Def-Ψ-1`。
-> - 讨论 **方程 / Fisher 几何 / 路径积分** 时，优先引用 `Def-Ψ-2`，并说明几何读法是 projection / lower-bound style formalization，不自动等同实际支付成本。
+> - 讨论 **方程 / Fisher 几何 / 路径积分** 时，优先引用 `Def-Ψ-2`，并说明 Fisher 几何读法是 projection / lower-bound style formalization，不自动等同实际支付成本。
 > - 讨论 **跨尺度比较 / 量子-神经-社会统一 / 实验操作化** 时，优先引用 `Def-Ψ-3`。
 >
 > **状态边界**：这里的 “Primary / Formal / Cross-Scale” 表示当前 repo 内部优先引用顺序，不表示三个层次已经被证明为无条件等价或最终完备。
@@ -85,23 +85,80 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 
 ---
 
-### Def-Ψ-2: 几何主表达与记号分层 ⭐ FORMAL WORKING FORM
+### Def-Ψ-2: Fisher 信息几何投影与记号分层 ⭐ FORMAL WORKING FORM
 
-#### Def-Ψ-2a: 几何主表达
+#### Def-Ψ-2a: 局部二阶信息几何投影（禁止裸等号）
+
+当某一选择域可被表示为平滑统计流形 \(\{p(x\mid\theta)\}\) 时，Fisher–Rao metric 给出相邻可选状态之间的局部可区分性：
+
+\[
+g^F_{ij}(\theta)
+=
+\mathbb{E}_{p(x\mid\theta)}
+\left[
+\partial_i \log p(x\mid\theta)\,\partial_j \log p(x\mid\theta)
+\right]
+\]
+
+KL 散度的局部二阶展开为：
+
+\[
+D_{KL}\!\left(p_\theta \parallel p_{\theta+d\theta}\right)
+=
+\frac{1}{2}d\theta^\top g_F(\theta)d\theta
++O(\|d\theta\|^3)
+\]
+
+因此，`Ψ_f` 的 Fisher 几何读法应写成局部代价或路径泛函，而不是写成标量代价与度量张量的裸等同：
 
 \[
 \boxed{
-\Psi_f(\hat{G}_i,\hat{G}_j)=\int_\gamma \sqrt{g_{ij}^{(i,j)}(\theta)\,\dot{\theta}^i\dot{\theta}^j}\,dt
+\delta \Psi_f^{geom}
+:=
+\frac{1}{2}d\theta^\top g_F(\theta)d\theta
++O(\|d\theta\|^3)
 }
-\,,
 \]
 
-其中 \(g_{ij}^{(i,j)}\) 为耦合参数流形上的 Fisher 信息度量。
+在路径形式中，可使用：
+
+\[
+\boxed{
+\Psi_f^{geom}[\gamma]
+=
+\int_\gamma
+\sqrt{g^F_{ij}(\theta)\,\dot{\theta}^i\dot{\theta}^j}\,dt
+}
+\]
+
+若强调能量式或行动量式累计，可使用：
+
+\[
+\boxed{
+\mathcal{E}_{\Psi}^{geom}[\gamma]
+=
+\frac{1}{2}\int_\gamma
+\dot{\theta}^\top g_F(\theta)\dot{\theta}\,dt
+}
+\]
 
 **语义**：  
-`Ψ_f` 在形式化上不是任意成本函数，而是“从一种可维持现实走到另一种可维持现实，需要跨越多远、多陡、多难”的几何负担。
+`Ψ_f` 在形式化上不是任意成本函数；在可微统计流形投影中，它的局部二阶代价结构由 Fisher–Rao metric 诱导。Fisher metric 本身是张量；`Ψ_f` 是 payability burden / 局部标量代价 / 路径泛函。故 `Ψ_f ≡ g_F` 只能作为内部速记，完整读法必须是：
 
-#### Def-Ψ-2b: `Ψ_f` 与 `Φ` 的分层
+> `Ψ_f` 的局部信息几何投影由 Fisher–Rao metric 给出。
+
+#### Def-Ψ-2b: 适用条件与失效边界
+
+Fisher 投影只在以下条件下作为 formal working form 使用：
+
+1. 存在可解释的参数空间 \(\theta\) 或统计模型族 \(p(x\mid\theta)\)。
+2. 局部可微近似有效，KL 二阶展开未被奇异点、相变、模型冗余或强非线性破坏。
+3. Fisher 可区分方向确实回流到现实维持、闭包、身份连续性或后续选择能力。
+4. 跨尺度使用时，必须给出该尺度自己的状态空间、观测量、参数化方式与 proxy，而不能直接搬用同一单位。
+
+若这些条件不满足，应把 Fisher 读法降为失败投影或启发式类比，不得用它反向定义 `Ψ_f`。
+
+#### Def-Ψ-2c: `Ψ_f` 与 `Φ` 的分层
 
 \[
 \boxed{\Phi(\Delta t)=\int_{\Delta t}\Psi_f(t)\,dt}
@@ -110,12 +167,13 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 使用规范：
 - `Ψ_f(x,t)`：局部摩擦负荷 / 局部阻抗读数
 - `Φ(\Delta t)`：累积摩擦势 / 时间窗内总账
+- `Ψ_f^{geom}`：Fisher–Rao metric 诱导的局部几何投影 / 路径泛函
 - `Ψ_f(\hat{G}_i,\hat{G}_j)`：在文档里允许作为“路径积分后的耦合摩擦泛函”的简写
 
 这意味着：
 - `Ψ_f` 可以指局部场，也可以在作用域明确时指积分泛函
 - `Φ` 用于强调“时间累积后的总账”
-- 若不加说明，优先将 `Ψ_f` 理解为“局部负荷 / 几何阻抗结构”，而非单纯总账
+- 若不加说明，优先将 `Ψ_f` 理解为“局部负荷 / 可支付阻抗结构”，而非单纯总账或裸 Fisher 张量
 
 ---
 
@@ -159,12 +217,12 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 2. **记账读法**：`Ψ_f` 是代价  
    含义：要顶住这种阻抗，必须支付能量、时间、组织复杂度、失败风险。
 
-3. **形式读法**：`Ψ_f` 是几何长度 / 曲率负担  
-   含义：它衡量的是参数流形里路径有多远、多陡、多难。
+3. **形式读法**：`Ψ_f` 的局部几何投影是 Fisher metric 所诱导的路径长度 / 曲率负担  
+   含义：在统计流形近似有效时，它衡量参数流形中相邻可选态或路径有多远、多陡、多难。
 
 压缩成一句：
 
-> 阻力是现象学读法，代价是记账读法，几何长度是形式读法。
+> 阻力是现象学读法，代价是记账读法，Fisher 诱导的路径长度是条件形式读法。
 
 ### §3.1 投影关系与失效条件（core-clarifying / no closure claim）
 
@@ -174,11 +232,11 @@ dependency: [SRT-CORE-21, SRT-CORE-22, SRT-REF-DYNAMICS, SRT-PHYS-COSMO, SRT-AI-
 
 | 读法 | 当前角色 | 可允许的形式关系 | 禁止捷径 |
 |---|---|---|---|
-| payability burden | `Ψ_f` 的 v1 主读：选择压缩开放可能性时必须可支付的组织性负担 | 作为跨域判准；问系统是否能在承担此负担时保持闭包、身份连续性与后续选择能力 | 不得把任何局部能耗或路径长度直接写成 `Ψ_f` 本身 |
-| geometric projection | Fisher / 路径 / 曲率语言中的形式投影 | 在路径度量有效、参数化不制造伪距离、且路径确实对应可支付重构时，可作为 lower-bound style proxy：`\Psi_f^{geom} \lesssim \Psi_f^{paid}` | 不得把几何长度当作实际支付成本的完整等价 |
+| payability burden | `Ψ_f` 的 v1 主读：选择压缩开放可能性时必须可支付的组织性负担 | 作为跨域判准；问系统是否能在承担此负担时保持闭包、身份连续性与后续选择能力 | 不得把任何局部能耗、路径长度或 Fisher 张量直接写成 `Ψ_f` 本身 |
+| geometric projection | Fisher / 路径 / 曲率语言中的形式投影 | 在路径度量有效、参数化不制造伪距离、且路径确实对应可支付重构时，可作为 lower-bound style proxy：`\Psi_f^{geom} \lesssim \Psi_f^{paid}`；局部二阶形式为 `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta + O(\|d\theta\|^3)` | 不得把 `\Psi_f \equiv g_F` 当作标量-张量恒等式；不得把几何长度当作实际支付成本的完整等价 |
 | metabolic / energetic projection | 生物、神经或物理实现中的预算侧 / 负荷侧 proxy | 可限制 payability window，也可作为 overload / recovery 的经验读数 | 不得把任意能量消耗、代谢升高或压力指标等同于 `Ψ_f` |
 
-因此当前最稳妥读法是：**payability burden 是主判准；几何与代谢读法是条件投影**。几何投影可以在满足条件时给出下界式形式约束；代谢投影可以给出预算约束或观察侧负荷，但二者都不自动穷尽实际可支付负担。
+因此当前最稳妥读法是：**payability burden 是主判准；Fisher 几何与代谢读法是条件投影**。Fisher 投影可以在满足条件时给出局部二阶形式或下界式形式约束；代谢投影可以给出预算约束或观察侧负荷，但二者都不自动穷尽实际可支付负担。
 
 ### Projection Failure Conditions
 
@@ -294,6 +352,10 @@ SRT 的最优条件不是：
 
 **正确**：对现实主体而言，最优是“非零且可支付”；零摩擦只适合极限数学语境、理想路径语境或边际读出语境。
 
+### 误用 7：把 `Ψ_f ≡ g_F` 当作严格恒等式
+
+**正确**：`g_F` 是 Fisher–Rao 度量张量；`Ψ_f` 是可支付阻抗、局部标量代价或路径泛函。正式写法应为“`Ψ_f` 的局部信息几何投影由 Fisher–Rao metric 给出”，例如 `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta + O(\|d\theta\|^3)`。
+
 ---
 
 ## §8 与其他 canonical 文件的关系
@@ -344,4 +406,4 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 
 若只需要一句最短规范句，使用：
 
-> **`Ψ_f` 是选择把开放可能性压缩为一个可维持、可行动、可协调的现实切片时必须承担的本体论阻抗；它在动力学上读作阻力，在记账上读作代价，在形式化上读作几何长度；跨尺度真正保持不变的不是单位，而是该阻抗是否可支付。**
+> **`Ψ_f` 是选择把开放可能性压缩为一个可维持、可行动、可协调的现实切片时必须承担的本体论阻抗；它在动力学上读作阻力，在记账上读作代价，在形式化上读作 Fisher–Rao metric 所诱导的局部二阶信息几何代价或路径泛函；跨尺度真正保持不变的不是单位，而是该阻抗是否可支付。**
