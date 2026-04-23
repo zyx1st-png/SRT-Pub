@@ -6,7 +6,7 @@ status: axiomatic_hybrid_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: canonical
-dependency: [SRT-QUICKSTART, SRT-VERTICAL-INTEGRATION, SRT-CORE-22]
+dependency: [SRT-QUICKSTART, SRT-VERTICAL-INTEGRATION, SRT-CORE-22, SRT-PSIF-CANONICAL]
 ---
 
 # SRT 中 Fisher 几何、能量景观与 FEP 的落位澄清
@@ -20,13 +20,15 @@ dependency: [SRT-QUICKSTART, SRT-VERTICAL-INTEGRATION, SRT-CORE-22]
 
 - 能量景观 / FEP 是否可以直接看成 `L₂`？
 - Fisher 空间是否可以直接看成 `L₁`？
+- `Ψ_f ≡ Fisher metric` 是否可以作为严格等号使用？
 
-当前结论是：**这些对应可以作为启发式类比，但不宜直接等同。**
+当前结论是：**这些对应可以作为启发式类比或局部形式投影，但不宜直接等同。**
 
 原因在于：
 
 - `L₀ / L₁ / L₂` 是 **SRT 的本体论域**
 - Fisher 几何 / 能量景观 / FEP 是 **描述这些域之间过程的几何或动力学接口**
+- `Ψ_f` 是 **信息论 / 组织性可支付负担**；Fisher–Rao metric 是该负担在平滑统计流形中的 **局部二阶信息几何投影**，不是与 `Ψ_f` 本身的裸恒等式
 
 因此，更稳的做法不是“一一替代”，而是把它们放到 SRT 的不同箭头上。
 
@@ -39,6 +41,7 @@ dependency: [SRT-QUICKSTART, SRT-VERTICAL-INTEGRATION, SRT-CORE-22]
 - `Fisher space = L₁`
 - `energy landscape = L₂`
 - `FEP = L₂`
+- `Ψ_f ≡ g_F`（若按标量代价与度量张量的裸等号读取）
 
 ### 更准确的写法：
 
@@ -47,10 +50,11 @@ dependency: [SRT-QUICKSTART, SRT-VERTICAL-INTEGRATION, SRT-CORE-22]
 - **L₂**：由历史选择沉积而成的稳定约束域
 - **energy / free-energy landscape**：`L₂` 的一种有效投影或低维表达
 - **FEP**：某些组织化系统在 `L₁` 中、受 `L₂` 约束时的自维持更新律
+- **`Ψ_f` 与 Fisher–Rao metric 的关系**：`Ψ_f` 的局部信息几何投影由 Fisher–Rao metric 诱导；严格写作应使用 `δΨ_f^{geom}=1/2 dθ^T g_F dθ + O(||dθ||^3)` 或路径泛函，而不是裸写 `Ψ_f = g_F`
 
 最压缩的一句话是：
 
-> **Fisher 属于 `L₀→L₁` 的生成几何，景观属于 `L₂` 对 `L₁` 的约束投影，FEP 属于 `L₁` 在 `L₂` 中的自维持动力学。**
+> **Fisher 属于 `L₀→L₁` 的生成几何，景观属于 `L₂` 对 `L₁` 的约束投影，FEP 属于 `L₁` 在 `L₂` 中的自维持动力学；`Ψ_f` 的 Fisher 读法是局部二阶投影，不是裸等号。**
 
 ---
 
@@ -82,7 +86,7 @@ dependency: [SRT-QUICKSTART, SRT-VERTICAL-INTEGRATION, SRT-CORE-22]
 Fisher metric 给出的是：
 
 \[
- ds^2 = d\theta^\top g(\theta) d\theta
+ ds^2 = d\theta^\top g_F(\theta) d\theta
 \]
 
 它描述的是：
@@ -107,7 +111,43 @@ Fisher metric 给出的是：
 
 ---
 
-### 2.3 L₂ 比景观更厚，景观只是其有效切片
+### 2.3 `Ψ_f` 不是 Fisher 张量本身，而是由 Fisher 张量诱导的局部代价 / 路径泛函
+
+Fisher–Rao metric 是一个度量张量 \(g_F\)，而 `Ψ_f` 在 SRT 中是 payability burden、局部标量代价或路径泛函。二者范畴不同，不能直接写成严格裸等式。
+
+在可微统计流形 \(p(x\mid\theta)\) 上，KL 散度有局部二阶展开：
+
+\[
+D_{KL}(p_\theta\parallel p_{\theta+d\theta})
+=
+\frac12 d\theta^\top g_F(\theta)d\theta
++O(\|d\theta\|^3)
+\]
+
+因此 SRT 中最稳的 Fisher 表达是：
+
+\[
+\delta\Psi_f^{geom}
+=
+\frac12 d\theta^\top g_F(\theta)d\theta
++O(\|d\theta\|^3)
+\]
+
+或路径形式：
+
+\[
+\Psi_f^{geom}[\gamma]
+=
+\int_\gamma \sqrt{g^F_{ij}(\theta)\dot\theta^i\dot\theta^j}\,dt
+\]
+
+这意味着：
+
+> **Fisher metric 不是 `Ψ_f` 本身，而是 `Ψ_f` 在统计流形投影中的局部二阶几何结构。**
+
+---
+
+### 2.4 L₂ 比景观更厚，景观只是其有效切片
 
 `L₂` 在 SRT 中不仅包含稳定性，还包含：
 
@@ -134,7 +174,7 @@ V(x) \quad \text{or} \quad F(x)
 
 ---
 
-### 2.4 FEP 是更新原则，不是整个 L₂
+### 2.5 FEP 是更新原则，不是整个 L₂
 
 FEP 的核心工作是描述：
 
@@ -168,9 +208,18 @@ FEP 的核心工作是描述：
 **它刻画的内容**：
 
 - 局部可区分性
-- 选择摩擦
+- 选择摩擦的几何投影
 - 哪个方向更自然
 - 选择参数微扰如何放大为显现差异
+
+**推荐公式**：
+
+\[
+\delta\Psi_f^{geom}
+=
+\frac12 d\theta^\top g_F(\theta)d\theta
++O(\|d\theta\|^3)
+\]
 
 ---
 
@@ -208,12 +257,12 @@ FEP 的核心工作是描述：
 在适用场景下，可以用如下关系帮助读者建立直觉：
 
 \[
-\dot{\theta} \sim - g^{-1}(\theta)\, \nabla_\theta F_{eff}
+\dot{\theta} \sim - g_F^{-1}(\theta)\, \nabla_\theta F_{eff}
 \]
 
 其中：
 
-- \(g(\theta)\) 提供局部 Fisher 几何
+- \(g_F(\theta)\) 提供局部 Fisher 几何
 - \(F_{eff}\) 提供有效景观或目标地形
 - 更新轨迹发生在组织化系统的实际运动中
 
@@ -221,7 +270,7 @@ FEP 的核心工作是描述：
 
 > **景观给出“往哪边低”，Fisher 给出“在这个统计空间里怎么走才自然”，而实际走出来的就是 `L₁` 中的更新轨迹。**
 
-注意：这是一种 **bridge-level** 写法，用于局部动力学接口；不应反过来把它当作 SRT 全体本体论的替代物。
+注意：这是一种 **bridge-level** 写法，用于局部动力学接口；不应反过来把它当作 SRT 全体本体论的替代物，也不应把 \(g_F\) 当作 `Ψ_f` 的完整定义。
 
 ---
 
@@ -229,15 +278,15 @@ FEP 的核心工作是描述：
 
 ### 版本 A（最短）
 
-> 在 SRT 中，Fisher 几何不等于 `L₁`，而是主要刻画 `L₀→L₁` 的局部选择几何；能量景观也不等于整个 `L₂`，而是 `L₂` 作为稳定约束域的一种有效投影；FEP 则描述组织化系统在 `L₂` 约束下于 `L₁` 中的自维持更新。
+> 在 SRT 中，Fisher 几何不等于 `L₁`，而是主要刻画 `L₀→L₁` 的局部选择几何；`Ψ_f` 的 Fisher 读法不是 `Ψ_f = g_F`，而是 `Ψ_f` 的局部二阶信息几何投影由 Fisher–Rao metric 诱导；能量景观也不等于整个 `L₂`，而是 `L₂` 作为稳定约束域的一种有效投影；FEP 则描述组织化系统在 `L₂` 约束下于 `L₁` 中的自维持更新。
 
 ### 版本 B（中文压缩）
 
-> **Fisher 属于生成前沿，景观属于稳定地形，FEP 属于地形中的更新规则。**
+> **Fisher 属于生成前沿，景观属于稳定地形，FEP 属于地形中的更新规则；`Ψ_f` 的 Fisher 表达是局部二阶代价投影，不是裸恒等式。**
 
 ### 版本 C（英文压缩）
 
-> **Fisher geometry belongs primarily to the generative interface from `L₀` to `L₁`; energy landscapes are effective projections of `L₂`; FEP characterizes self-maintaining updates within `L₁` under `L₂` constraints.**
+> **Fisher geometry belongs primarily to the generative interface from `L₀` to `L₁`; the Fisher reading of `Ψ_f` is a local second-order information-geometric projection, not a bare identity; energy landscapes are effective projections of `L₂`; FEP characterizes self-maintaining updates within `L₁` under `L₂` constraints.**
 
 ---
 
@@ -248,38 +297,41 @@ FEP 的核心工作是描述：
 1. 若某文把景观写成结构上“更原初”，应理解为：**在该局部 bridge 框架下，景观被当作组织化约束的有效起点**。
 2. 这不等于在 SRT 全局本体论中，`L₂ = landscape`。
 3. 同理，若某文把 Fisher 与选择成本紧密绑定，应理解为：**Fisher 给出局部可区分性与选择摩擦的几何表达**。
-4. 这不等于在 SRT 全局本体论中，`L₁ = Fisher space`。
+4. 这不等于在 SRT 全局本体论中，`L₁ = Fisher space`，也不等于 `Ψ_f = g_F` 的裸恒等式。
 
 因此，仓库中的更稳读法应是：
 
 - **ontology**：`L₀ / L₁ / L₂`
-- **geometry**：Fisher metric
+- **payability burden**：`Ψ_f`
+- **local information geometry**：Fisher–Rao metric induced projection of `Ψ_f`
 - **effective constraint picture**：landscape
 - **local update rule**：FEP
 
-四者互相连接，但不应被压扁成同一层。
+五者互相连接，但不应被压扁成同一层。
 
 ---
 
-## 7. 建议固定下来的三句话
+## 7. 建议固定下来的四句话
 
 1. **Fisher 主要描述现实生成前沿的局部几何。**
-2. **L₂ 不是景观图本身，而是景观图所压缩表达的稳定约束域。**
-3. **FEP 不是选择本身的普遍本体论，而是某些组织化系统在既有约束场中的自维持动力学。**
+2. **`Ψ_f` 的 Fisher 表达是局部二阶信息几何投影，不是 `Ψ_f ≡ g_F` 的裸等号。**
+3. **L₂ 不是景观图本身，而是景观图所压缩表达的稳定约束域。**
+4. **FEP 不是选择本身的普遍本体论，而是某些组织化系统在既有约束场中的自维持动力学。**
 
 ---
 
 ## 8. 结论
 
-因此，针对“能量景观和 FEP 能否看成 SRT 的 `L₂`，Fisher 空间能否看成 `L₁`”这一问题，当前仓库更推荐的规范答案是：
+因此，针对“能量景观和 FEP 能否看成 SRT 的 `L₂`，Fisher 空间能否看成 `L₁`，以及 `Ψ_f ≡ Fisher metric` 能否作为严格恒等式”这一问题，当前仓库更推荐的规范答案是：
 
-> **可以把这种说法当成启发式类比，但在正式写作中应改写为：Fisher 刻画 `L₀→L₁` 的局部选择几何，景观刻画 `L₂` 对 `L₁` 的有效约束投影，FEP 刻画组织化系统在该约束下的局部更新动力学。**
+> **可以把这种说法当成启发式类比或内部速记，但在正式写作中应改写为：Fisher 刻画 `L₀→L₁` 的局部选择几何，`Ψ_f` 的 Fisher 读法是由 Fisher–Rao metric 诱导的局部二阶信息几何代价或路径泛函，景观刻画 `L₂` 对 `L₁` 的有效约束投影，FEP 刻画组织化系统在该约束下的局部更新动力学。**
 
 这样可以同时保留：
 
 - SRT 的本体层级清晰性
+- `Ψ_f` 的 payability 主读
 - Fisher 的几何角色
 - 景观的有效约束角色
 - FEP 的局部动力学角色
 
-避免把 ontology、metric 和 dynamics 混成一层。
+避免把 ontology、cost、metric 和 dynamics 混成一层。
