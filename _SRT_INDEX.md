@@ -43,6 +43,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 | `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md` | 中优先级 Physics 覆盖索引 |
 | `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md` | 中优先级 Spirituality 覆盖索引 |
 | `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` | 中优先级 Papers/Publication 覆盖索引 |
+| `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` | 中优先级 Root Topic/FAQ 覆盖索引 |
 
 ## Default Read Order
 
@@ -61,6 +62,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 11. `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`（physics coverage-audit follow-up only）
 12. `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`（spirituality coverage-audit follow-up only）
 13. `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`（papers / publication coverage-audit follow-up only）
+14. `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md`（root topic / FAQ coverage-audit follow-up only）
 
 ### Human / Public
 
@@ -142,6 +144,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`（coverage-audit follow-up for Physics medium-priority files; not a canonical source）
 - `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`（coverage-audit follow-up for Spirituality medium-priority files; not a canonical source）
 - `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`（coverage-audit follow-up for papers / publication medium-priority files; not a canonical source）
+- `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md`（coverage-audit follow-up for root topic / FAQ medium-priority files; not a canonical source）
 
 ### Bridge / Interface
 
@@ -215,6 +218,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 Physics 中优先级候选，不提升 canonical 权限
 - `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 Spirituality 中优先级候选，不提升 canonical 权限
 - `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 papers / publication 中优先级候选，不提升 canonical 权限
+- `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 root topic / FAQ 中优先级候选，不提升 canonical 权限
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 是相邻理论接口导航，不新增 P0/P1，不替代 FEP/IIT/GNW/量子/社会现实等既有正文
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
 - Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
