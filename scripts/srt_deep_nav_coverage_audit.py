@@ -8,31 +8,9 @@ Find tracked repository files that are not referenced by the SRT navigation
 layer, then classify which unreferenced files are likely deep-content candidates
 for future routing.
 
-This complements `scripts/srt_deep_nav_path_audit.py`:
+Complements `scripts/srt_deep_nav_path_audit.py`:
 - path audit: referenced path -> does it exist?
 - coverage audit: repository file -> is it referenced by the navigation layer?
-
-Usage
------
-Run from repository root:
-
-    uv run python scripts/srt_deep_nav_coverage_audit.py
-
-Recommended:
-
-    uv run python scripts/srt_deep_nav_coverage_audit.py \
-      --report Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.md \
-      --json Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json
-
-Exit codes
-----------
-0 = script ran successfully. Unreferenced files are expected and do not fail CI.
-
-Notes
------
-Coverage is not an authority signal. Many files should remain unreferenced:
-raw sessions, generated artifacts, media, data samples, scripts, caches, and
-short operational records. The report flags candidates for human review.
 """
 
 from __future__ import annotations
@@ -42,7 +20,7 @@ import json
 import re
 import subprocess
 from collections import defaultdict
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Iterable
 
@@ -57,6 +35,7 @@ DEFAULT_NAV_FILES = [
     "_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md",
     "_SRT_MEDIUM_AI_NEURO_COVERAGE_INDEX.md",
     "_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md",
+    "_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md",
     "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
     "Governance/README.md",
     "Operations/README.md",
@@ -64,26 +43,8 @@ DEFAULT_NAV_FILES = [
     "Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md",
 ]
 
-THEORY_EXTENSIONS = (
-    ".md",
-    ".markdown",
-    ".html",
-    ".htm",
-)
-
-PATH_EXTENSIONS = (
-    ".md",
-    ".markdown",
-    ".yaml",
-    ".yml",
-    ".json",
-    ".html",
-    ".htm",
-    ".py",
-    ".sh",
-    ".csv",
-    ".txt",
-)
+THEORY_EXTENSIONS = (".md", ".markdown", ".html", ".htm")
+PATH_EXTENSIONS = (".md", ".markdown", ".yaml", ".yml", ".json", ".html", ".htm", ".py", ".sh", ".csv", ".txt")
 
 IGNORE_FILE_PATTERNS = (
     r"^\.git/",
@@ -113,56 +74,12 @@ SUPPORT_ONLY_PATTERNS = (
     r"(_GUIDE|_PIPELINE|_SCORECARD|_METRICS|_RELEASE|_HISTORY|_REVIEW)",
 )
 
-LOW_PRIORITY_PREFIXES = (
-    "Archive/",
-    "memory/",
-    "graphify-out/wiki/",
-)
+LOW_PRIORITY_PREFIXES = ("Archive/", "memory/", "graphify-out/wiki/")
+HIGH_PRIORITY_PREFIXES = ("Core/", "Core_Law/", "Governance/")
+MEDIUM_PRIORITY_PREFIXES = ("AI/", "Neuroscience/", "Physics/", "Philosophy/", "Spirituality/", "Bridge/", "papers/")
+ROOT_DEEP_PREFIXES = ("SRT_", "_SRT_", "CANONICAL_", "ANNEX_", "LONGFORM_")
+SYMBOLIC_TOKENS = {"Ψ_f", "Psi_f", "d-value", "d", "T_dir", "L0", "L1", "L2", "L_0", "L_1", "L_2", "Ĝ", "Ĝθ", "g_F", "D_eff", "FEP", "IIT", "GNW"}
 
-HIGH_PRIORITY_PREFIXES = (
-    "Core/",
-    "Core_Law/",
-    "Governance/",
-)
-
-MEDIUM_PRIORITY_PREFIXES = (
-    "AI/",
-    "Neuroscience/",
-    "Physics/",
-    "Philosophy/",
-    "Spirituality/",
-    "Bridge/",
-    "papers/",
-)
-
-ROOT_DEEP_PREFIXES = (
-    "SRT_",
-    "_SRT_",
-    "CANONICAL_",
-    "ANNEX_",
-    "LONGFORM_",
-)
-
-SYMBOLIC_TOKENS = {
-    "Ψ_f",
-    "Psi_f",
-    "d-value",
-    "d",
-    "T_dir",
-    "L0",
-    "L1",
-    "L2",
-    "L_0",
-    "L_1",
-    "L_2",
-    "Ĝ",
-    "Ĝθ",
-    "g_F",
-    "D_eff",
-    "FEP",
-    "IIT",
-    "GNW",
-}
 
 @dataclass
 class FileCoverage:
@@ -176,8 +93,7 @@ class FileCoverage:
 
 def repo_root() -> Path:
     try:
-        out = subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()
-        return Path(out)
+        return Path(subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip())
     except Exception:
         return Path.cwd()
 
@@ -185,14 +101,9 @@ def repo_root() -> Path:
 def git_files(root: Path) -> set[str]:
     try:
         out = subprocess.check_output(["git", "ls-files", "-z"], cwd=root)
-        text = out.decode("utf-8", errors="surrogateescape")
-        return {line for line in text.split("\0") if line}
+        return {x for x in out.decode("utf-8", errors="surrogateescape").split("\0") if x}
     except Exception:
-        files: set[str] = set()
-        for p in root.rglob("*"):
-            if p.is_file() and ".git" not in p.parts:
-                files.add(p.relative_to(root).as_posix())
-        return files
+        return {p.relative_to(root).as_posix() for p in root.rglob("*") if p.is_file() and ".git" not in p.parts}
 
 
 def git_dirs(files: Iterable[str]) -> set[str]:
@@ -221,41 +132,28 @@ def extract_code_spans(text: str) -> list[str]:
 
 
 def extract_markdown_links(text: str) -> list[str]:
-    # Captures target part of [label](target). Keeps local paths only later.
     return re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
 
 
 def extract_bare_path_candidates(text: str) -> list[str]:
-    # Finds unquoted repository-style paths in lists, plain paragraphs, and code fences.
-    # This intentionally favors conservative path shapes; exact known-path scanning below
-    # handles paths with spaces or non-ASCII characters.
     return re.findall(r"(?<![\w./-])(?:[A-Za-z0-9_.-]+/)+[A-Za-z0-9_.+@%=-]+(?:\.[A-Za-z0-9]+)?", text)
 
 
 def looks_like_path(token: str) -> bool:
     t = token.strip().strip("'\"")
-    if not t or t in SYMBOLIC_TOKENS:
-        return False
-    if t.startswith(("http://", "https://", "mailto:", "#")):
+    if not t or t in SYMBOLIC_TOKENS or t.startswith(("http://", "https://", "mailto:", "#")):
         return False
     if any(ch in t for ch in ["\\", "$", "{", "}", "=", "→"]):
         return False
     if " " in t and not any(ext in t for ext in PATH_EXTENSIONS):
         return False
-    if t.endswith(PATH_EXTENSIONS):
-        return True
-    if "/" in t and not re.search(r"\s", t):
-        return True
-    return False
+    return t.endswith(PATH_EXTENSIONS) or ("/" in t and not re.search(r"\s", t))
 
 
 def normalize_path(token: str) -> str:
     t = token.strip().strip("'\"<>")
-    t = t.split("#", 1)[0]
-    t = t.split("?", 1)[0]
-    t = t.rstrip(".,;:，。；：、")
-    t = t.lstrip("./")
-    return t
+    t = t.split("#", 1)[0].split("?", 1)[0]
+    return t.rstrip(".,;:，。；：、").lstrip("./")
 
 
 def collect_referenced_paths(root: Path, nav_files: list[str], files: set[str]) -> tuple[set[str], set[str]]:
@@ -274,14 +172,15 @@ def collect_referenced_paths(root: Path, nav_files: list[str], files: set[str]) 
             refs.add(nav)
         candidates = extract_code_spans(text) + extract_markdown_links(text) + extract_bare_path_candidates(text)
         for c in candidates:
-            if looks_like_path(c):
-                norm = normalize_path(c)
-                if norm in dirs:
-                    dir_refs.add(norm)
-                elif norm.rstrip("/") in dirs:
-                    dir_refs.add(norm.rstrip("/"))
-                else:
-                    refs.add(norm)
+            if not looks_like_path(c):
+                continue
+            norm = normalize_path(c)
+            if norm in dirs:
+                dir_refs.add(norm)
+            elif norm.rstrip("/") in dirs:
+                dir_refs.add(norm.rstrip("/"))
+            else:
+                refs.add(norm)
 
     combined_text = "\n".join(nav_texts)
     for f in files:
@@ -302,16 +201,12 @@ def top_dir(path: str) -> str:
 
 def find_covering_dir(path: str, dir_refs: set[str]) -> str:
     candidates = [d for d in dir_refs if path.startswith(f"{d.rstrip('/')}/")]
-    if not candidates:
-        return ""
-    return max(candidates, key=len)
+    return max(candidates, key=len) if candidates else ""
 
 
 def classify_priority(path: str, referenced: bool, covered_by: str = "") -> tuple[str, str]:
     if referenced:
-        if covered_by:
-            return "referenced", f"covered by navigation directory reference `{covered_by}`"
-        return "referenced", "exact path referenced by navigation layer"
+        return ("referenced", f"covered by navigation directory reference `{covered_by}`") if covered_by else ("referenced", "exact path referenced by navigation layer")
     if should_ignore_file(path):
         return "ignored", "ignored generated/data/cache/report pattern"
     if not is_theory_like(path):
@@ -334,7 +229,6 @@ def classify_priority(path: str, referenced: bool, covered_by: str = "") -> tupl
 def build_coverage(files: set[str], refs: set[str], dir_refs: set[str]) -> list[FileCoverage]:
     coverage: list[FileCoverage] = []
     for f in sorted(files):
-        # A file can be referenced with or without leading ./; refs are normalized.
         covered_by = "" if f in refs else find_covering_dir(f, dir_refs)
         referenced = f in refs or bool(covered_by)
         priority, reason = classify_priority(f, referenced, covered_by)
@@ -352,7 +246,7 @@ def group_by_priority(coverage: Iterable[FileCoverage]) -> dict[str, list[FileCo
 def group_unreferenced_by_dir(coverage: Iterable[FileCoverage]) -> dict[str, list[FileCoverage]]:
     groups: dict[str, list[FileCoverage]] = defaultdict(list)
     for item in coverage:
-        if not item.referenced and item.priority not in {"ignored"}:
+        if not item.referenced and item.priority != "ignored":
             groups[item.top_dir].append(item)
     return groups
 
@@ -367,78 +261,68 @@ def build_markdown_report(coverage: list[FileCoverage], refs: set[str], dir_refs
     medium = len(groups.get("medium", []))
     low = len(groups.get("low", []))
 
-    lines: list[str] = []
-    lines.append("---")
-    lines.append("id: SRT-DEEP-NAV-COVERAGE-AUDIT-REPORT")
-    lines.append("type: audit_report")
-    lines.append("tags: [Navigation, Coverage Audit, Retrieval]")
-    lines.append("status: generated")
-    lines.append("layer: operations")
-    lines.append("epistemic_layer: meta")
-    lines.append("claim_mode: navigation")
-    lines.append("---")
-    lines.append("")
-    lines.append("# SRT Deep Navigation Coverage Audit Report")
-    lines.append("")
-    lines.append("> Generated by `scripts/srt_deep_nav_coverage_audit.py`.")
-    lines.append("")
-    lines.append("## Summary")
-    lines.append("")
-    lines.append(f"- Tracked files checked: `{total}`")
-    lines.append(f"- Navigation files scanned: `{len(nav_files)}`")
-    lines.append(f"- Unique navigation references detected: `{len(refs)}`")
-    lines.append(f"- Directory references detected: `{len(dir_refs)}`")
-    lines.append(f"- Referenced tracked files: `{referenced}`")
-    lines.append(f"- Ignored files: `{ignored}`")
-    lines.append(f"- Unreferenced high-priority candidates: `{high}`")
-    lines.append(f"- Unreferenced medium-priority candidates: `{medium}`")
-    lines.append(f"- Unreferenced low-priority candidates: `{low}`")
-    lines.append("")
-    lines.append("Interpretation: high/medium/low are review priorities, not proof that a file must be added to navigation.")
+    lines: list[str] = [
+        "---",
+        "id: SRT-DEEP-NAV-COVERAGE-AUDIT-REPORT",
+        "type: audit_report",
+        "tags: [Navigation, Coverage Audit, Retrieval]",
+        "status: generated",
+        "layer: operations",
+        "epistemic_layer: meta",
+        "claim_mode: navigation",
+        "---",
+        "",
+        "# SRT Deep Navigation Coverage Audit Report",
+        "",
+        "> Generated by `scripts/srt_deep_nav_coverage_audit.py`.",
+        "",
+        "## Summary",
+        "",
+        f"- Tracked files checked: `{total}`",
+        f"- Navigation files scanned: `{len(nav_files)}`",
+        f"- Unique navigation references detected: `{len(refs)}`",
+        f"- Directory references detected: `{len(dir_refs)}`",
+        f"- Referenced tracked files: `{referenced}`",
+        f"- Ignored files: `{ignored}`",
+        f"- Unreferenced high-priority candidates: `{high}`",
+        f"- Unreferenced medium-priority candidates: `{medium}`",
+        f"- Unreferenced low-priority candidates: `{low}`",
+        "",
+        "Interpretation: high/medium/low are review priorities, not proof that a file must be added to navigation.",
+        "",
+        "## Navigation Sources",
+        "",
+    ]
+    lines.extend(f"- `{nav}`" for nav in nav_files)
     lines.append("")
 
-    lines.append("## Navigation Sources")
-    lines.append("")
-    for nav in nav_files:
-        lines.append(f"- `{nav}`")
-    lines.append("")
-
-    for priority, title in [
-        ("high", "High-Priority Unreferenced Candidates"),
-        ("medium", "Medium-Priority Unreferenced Candidates"),
-        ("low", "Low-Priority Unreferenced Candidates"),
-    ]:
+    for priority, title in [("high", "High-Priority Unreferenced Candidates"), ("medium", "Medium-Priority Unreferenced Candidates"), ("low", "Low-Priority Unreferenced Candidates")]:
         items = groups.get(priority, [])
-        lines.append(f"## {title}")
-        lines.append("")
+        lines.extend([f"## {title}", ""])
         if not items:
-            lines.append("None.")
-            lines.append("")
+            lines.extend(["None.", ""])
             continue
-        lines.append("| Path | Reason |")
-        lines.append("|---|---|")
+        lines.extend(["| Path | Reason |", "|---|---|"])
         for item in items[:300]:
             lines.append(f"| `{item.path}` | {item.reason} |")
         if len(items) > 300:
             lines.append(f"| ... | truncated; {len(items) - 300} more |")
         lines.append("")
 
-    lines.append("## Unreferenced Candidates by Top-Level Directory")
-    lines.append("")
-    lines.append("| Directory | Count |")
-    lines.append("|---|---:|")
+    lines.extend(["## Unreferenced Candidates by Top-Level Directory", "", "| Directory | Count |", "|---|---:|"])
     for d, items in sorted(unref_groups.items(), key=lambda kv: (-len(kv[1]), kv[0])):
         lines.append(f"| `{d}` | {len(items)} |")
-    lines.append("")
-
-    lines.append("## Suggested Review Workflow")
-    lines.append("")
-    lines.append("1. Review high-priority candidates first.")
-    lines.append("2. Decide whether each candidate should be added to `_SRT_CONTEXT_ROUTER.md`, `_SRT_DEEP_THEORY_MAP.md`, `_SRT_INDEX.md`, or none.")
-    lines.append("3. Review medium-priority domain and paper files next.")
-    lines.append("4. Treat graphify, memory, and archive files as support-only unless a page is repeatedly useful.")
-    lines.append("5. Do not add every unreferenced file to navigation; the goal is retrieval quality, not exhaustive listing.")
-    lines.append("")
+    lines.extend([
+        "",
+        "## Suggested Review Workflow",
+        "",
+        "1. Review high-priority candidates first.",
+        "2. Decide whether each candidate should be added to `_SRT_CONTEXT_ROUTER.md`, `_SRT_DEEP_THEORY_MAP.md`, `_SRT_INDEX.md`, or none.",
+        "3. Review medium-priority domain and paper files next.",
+        "4. Treat graphify, memory, and archive files as support-only unless a page is repeatedly useful.",
+        "5. Do not add every unreferenced file to navigation; the goal is retrieval quality, not exhaustive listing.",
+        "",
+    ])
     return "\n".join(lines)
 
 
