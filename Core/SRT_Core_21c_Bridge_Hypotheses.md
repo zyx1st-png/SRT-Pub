@@ -278,6 +278,31 @@ $$
 
 ---
 
+## P2/P3-B12: Information-Geometry / Complexity / Neural-Computational Hardening
+
+**Lineage**: 2026-04-24 hardening sync from `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`; cross-checked against `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`, `SRT_Fisher_FEP_Landscape_Interface.md`, and `Neuroscience/SRT_Neural_Mechanisms.md`.
+
+**Status Note**: This bridge adds no new P0/P1 theorem. It only assigns mechanism-interface languages to already existing parts of the SRT loop.
+
+This bridge assigns three scientific interface languages to different parts of the SRT loop: information geometry hardens the `L_0 -> L_1` selection frontier; complex-systems theory hardens `L_1 -> L_2` sedimentation and stabilization; neural computation provides implementation-level proxies for embodied `\hat{G}_\theta` operations. The bridge does not identify these interfaces with SRT ontology itself.
+
+**Interface split**:
+
+- **Information geometry (`L_0 -> L_1`)**: local discriminability, selection cost, and Fisher-Rao-induced local second-order burden.
+- **Complex systems (`L_1 -> L_2`)**: historical deposition, attractor basin formation, order-parameter locking, hysteresis, and metastability.
+- **Neural computation (`\hat{G}_\theta` implementation proxies)**: candidate activation, competitive inhibition, divisive normalization, threshold / ignition, global availability, and plastic writeback.
+
+**Boundary**:
+
+- Fisher metric is a local information-geometric projection / kernel for `\Psi_f`, not `\Psi_f` itself; do not write `\Psi_f \equiv g_F`.
+- Fisher eigenspectra may bound readable or stake-bearing directions via `D_eff` or `\operatorname{rank}_{\text{eff}}\!\left(\mathcal{I}_F\right)`, but neither replaces canonical `d`.
+- Energy / free-energy landscapes are effective projections of `L_2`, not the whole convergence domain.
+- Neural normalization, ignition, and plasticity are implementation proxies for embodied `\hat{G}_\theta`, not the Ghost Operator in full.
+
+**Cross-ref**: `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`; `SRT_Fisher_FEP_Landscape_Interface.md`; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1, Eq-DValue-Mobile-1`; `Core/SRT_Core_14_Dynamics_Scaling.md`; `Neuroscience/SRT_Neural_Mechanisms.md`; `_SRT_VERTICAL_INTEGRATION.md §8, §10`.
+
+---
+
 ## Mechanism Summary After Demotion
 
 Former `Core_21` described SRT as a "selection-anchoring-constraint" loop. The loop remains useful, but its claims now have levels:

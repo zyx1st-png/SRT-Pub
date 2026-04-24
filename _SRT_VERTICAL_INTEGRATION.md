@@ -172,14 +172,14 @@ $$d_{collective}^{(E)} = \frac{\sum_i w_i d_i}{\sum_i w_i} \cdot \sigma\!\left(\
 
 ### §6.2 解答
 
-**数学结构相同，物理实现不同**：两者都是信息几何意义下参数流形上的曲线长度积分：
+**投影结构可相容，物理实现不同**：当某一层存在有效统计流形与可解释参数化时，`Ψ_f` 可使用 Fisher–Rao metric 诱导的局部信息几何投影；但该投影不是 `Ψ_f` 本身，跨层真正保持的是可支付性条件：
 
-$$\Psi_f = \int_\gamma \sqrt{g_{ij}(\theta) \dot{\theta}^i \dot{\theta}^j} \, dt$$
+$$\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g_{ij}(\theta) \dot{\theta}^i \dot{\theta}^j} \, dt$$
 
 在量子层，$g_{ij}$ 是量子 Fisher 信息度量（Fubini-Study 度量）；
 在认知层，$g_{ij}$ 是行为参数空间的 Fisher 信息度量（由决策数据估计）。
 
-**跨层可比性**：在同一层内（如不同个体的认知 $\Psi_f$）可比；跨层（量子 $\Psi_f$ vs 认知 $\Psi_f$）数值不可比，但**函数角色**是相同的。
+**跨层可比性**：在同一层内（如不同个体的认知 $\Psi_f$ proxy）可比；跨层（量子 $\Psi_f$ vs 认知 $\Psi_f$）数值和单位不可比。更稳的共同项不是同一 Fisher 长度数值，而是系统能否在承担该摩擦时维持闭包、身份连续性与后续选择能力。
 
 **Ax-F-12 补充（摩擦的双重视角）**：$\Psi_f$ 的函数角色不只是"维持现实的成本"（微观锚定视角），还是**所有动力学的生成来源**（宏观生成视角）：
 
@@ -243,6 +243,8 @@ $\hat{G}^*$ 是 L₀ 梯度场的内禀对象——它的存在是 L₀ 拓扑�
 | 跨尺度 | 粗粒化 | 高层 $\hat{G} = \Lambda \circ \hat{G}_{low} \circ \Lambda^{-1}$（重整化投影） | 信息压缩损失（$H(\hat{G}_{n+1}) \leq H(\hat{G}_n)$） |
 
 **关键含义**：这不是"数学形式相似"的类比关系——幽灵算子 $\hat{G}_\theta$ 就是现实的选择结构，上述现象是这个结构在不同尺度的物理实现形式。
+
+**Bridge boundary（2026-04-24 sync）**：上表中的每一行都是实现层接口，不是对 `\hat{G}_\theta` 的完整定义。尤其是神经侧抑制 / 归一化只覆盖候选竞争与压缩，不能替代 candidate activation、threshold / global availability、plastic writeback，也不能把 neural implementation 反向写成 Ghost Operator 的全部本体论。
 
 ### §8.2 Ψ_f 作为生成性原理
 
@@ -310,19 +312,19 @@ $$\boxed{
 
 ### §10.1 五条关系
 
-**关系 A：Ψ_f = Landauer 原理在 Fisher 几何中的推广**
+**关系 A：`Ψ_f` 的局部 Fisher 投影与 Landauer-style 下界相容**
 
-$$\Psi_f = \int_\gamma \sqrt{g_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j}\, dt \quad \geq \quad k_B T \ln 2 \times (\text{被擦除的比特数})$$
+$$\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j}\, dt \quad \text{（投影有效时）}$$
 
-Landauer 原理（抹去 1 bit 代价 $\geq k_B T \ln 2$）是 Ψ_f 在**平坦参数空间**（$g_{ij} = k_B T \cdot \delta_{ij}$）的零曲率极限。一般情况：Ψ_f 是在弯曲 Fisher 流形中"擦除选择信息足迹"的代价。
+Landauer 原理（抹去 1 bit 代价 $\geq k_B T \ln 2$）可作为 `Ψ_f^{geom}` 在平坦参数空间中的 lower-bound style 参照；一般情况应写成：Fisher 几何给出局部二阶投影 / 路径负担，实际 `Ψ_f` 仍须通过可支付性条件结算。不得把 `Ψ_f \equiv g_F` 当作裸恒等式。
 
 > *推论*：高曲率 L₀ 区域（密集可能性空间）完成同等信息量的选择需要更高 Ψ_f——这是大脑比蛋白质翻译高能耗 5 个数量级的本体论解释（不是演化失败）。
 
-**关系 B：d-value = 选择信道的 Fisher 有效维度 = Shannon 容量的几何读法**
+**关系 B：d-value 有 Fisher 有效维度 capacity proxy**
 
-$$d \equiv D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)}$$
+$$D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)} \;\geq\; d_{canonical}$$
 
-Fisher 信息矩阵 $I_F(\theta)$ 的有效维度就是算子从 L₀ 中能可靠分辨的状态方向数（Cramér-Rao 下界的维度版本）。
+Fisher 信息矩阵 $I_F(\theta)$ 的有效维度给出算子从 L₀ 中能可靠分辨的状态方向数（Cramér-Rao 下界的维度版本）。它是 capacity proxy；只有这些方向同时承载不可逆风险、主体效用梯度对准且后果回流到闭包 / 身份连续性 / 后续选择能力时，才可近似 canonical `d`。
 
 > *不确定性关系候选*：$d \times \Psi_f \geq k_B T \cdot \mathcal{K}$——选择范围与选择代价之间存在基本权衡。
 
@@ -363,13 +365,13 @@ $$\mathrm{Payable}(X,\Delta t)\iff \alpha P_{sel}^X(\Delta t)\ge \beta \Psi_f^X(
 |:---------|:-----------|:----------|
 | $\Psi_f$（单算子） | Landauer 擦除代价 | Fisher 流形上的路径长度 |
 | $\Psi_f(\hat{G}_i, \hat{G}_j)$（算子间） | 自由能交互项 $F_{interaction}$ | 互信息代价 |
-| $d$ | 相空间有效维度 | Fisher 信道容量 |
+| $d$ | stake-coupled risk-gradient summary | Fisher 信道容量 proxy / `D_eff` 上界 |
 | $F_{collective}$ | 多体统计自由能 | 联合 KL 散度 |
 | $d \to 0$ 极限 | 热平衡（Boltzmann） | 无结构信道（容量=0）|
 | $d/\Psi_f$ 效率 | 卡诺效率类比 | 单比特能耗 |
 | $\Psi_f$ 可支付性 | 稳态耗散可持续条件 | 闭包不崩溃的阈值判据 |
 
-**Cross-ref**: `Core_Law/SRT_Reference_Dynamics.md §15`（完整形式化）；`_SRT_D_VALUE_CANONICAL.md §2`（d 与 Fisher proxy 的层级）；`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T04` / `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B09`（选择-信息创造等价）。
+**Cross-ref**: `Core_Law/SRT_Reference_Dynamics.md §15`（完整形式化）；`_SRT_D_VALUE_CANONICAL.md §2`（d 与 Fisher proxy 的层级）；`_SRT_PSI_F_CANONICAL.md §2-§3`（`Ψ_f` 与 Fisher projection 的边界）；`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T04` / `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B09, P2/P3-B12`（选择-信息创造等价与 IG / complexity / neuro bridge）。
 
 ---
 
