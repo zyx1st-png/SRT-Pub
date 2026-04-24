@@ -32,6 +32,7 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+- 本文件中的 candidate activation、competitive inhibition、divisive normalization、ignition / global availability 与 plastic writeback 是 neural-computational implementation proxies；它们不替代 `\hat{G}_\theta`、`L_1`、`L_2` 或 `\Psi_f` 的 core / canonical 定义。详见 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`。
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -167,6 +168,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 > **与 D3 的关系**：本式为 SRT-REF-DYNAMICS §1.3 Def D3（$\hat{G}_\theta$ 通用原型）在神经系统的特化实例，其中 $L_i \leftrightarrow x_i$，$w_{ij} \leftrightarrow W_{ij}$。**符号差异**：本式分母为 $\sigma^n$（半饱和项带幂次），D3 分母为 $\varepsilon$（无幂次，更简化的一阶原型）；在 $\sigma$ 较小时两式近似等价，精确形式以本式为准（经验上更符合 V1 的对比度增益控制数据）。参见 D3 极限行为表中 $\varepsilon\to 0^+$ 奇点警告。
 > **适用前提**：”必然收敛”的条件为：(1) 系统追求信息最大化（$H(\sigma)$ 最大化）且 (2) 代谢成本 $E(\sigma)$ 受约束（$\lambda > 0$）。在此二条件下，T-NEURO-MECH-1 给出充分性证明。若代谢约束为零（$\lambda=0$），则退化为无约束信息最大化，不必然产生归一化结构。
+> **Bridge boundary（2026-04-24 sync）**：除法归一化是 embodied neural `\hat{G}_\theta` 的实现级 proxy；它覆盖候选竞争与响应压缩，不穷尽 Ghost Operator。完整 neural loop 还需 threshold / ignition、global availability 与 plastic writeback，且这些仍是神经域机制接口，不是跨域 `\hat{G}_\theta` 的总定义。
 
 * **Implication（中文）**：归一化是选择算子的最优形式，不是经验性”电路细节”。
 
@@ -179,7 +181,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 在 \(\delta\mathcal{J}=0\) 条件下，稳态解必然满足 Ax-NEURO-MECH-3 的归一化结构。
 
-> **SRT 量桥接**：拉格朗日乘子 $\lambda \propto \Psi_f^{metabolic}$（本体论摩擦的代谢成分，SRT-CORE-22 §15.5 Eq-IT-E 约束：$\Psi_f \geq k_B T \ln 2 \cdot I_{created}$）。$\lambda \uparrow$（代谢越紧张）→ 归一化越强（竞争抑制越显著）→ $d(\theta) \downarrow$（选择带宽被压缩）。这将代谢经济学与 SRT 意识带宽直接联系：能量稀缺时，意识带宽系统性收窄。
+> **SRT 量桥接**：拉格朗日乘子 $\lambda \propto \Psi_f^{metabolic}$（本体论摩擦的代谢成分，SRT-CORE-22 §15.5 Eq-IT-E 约束：$\Psi_f \geq k_B T \ln 2 \cdot I_{created}$）。$\lambda \uparrow$（代谢越紧张）→ 归一化越强（竞争抑制越显著）→ $d(\theta) \downarrow$（选择带宽 proxy 被压缩）。这里的 $d(\theta)$ 是神经选择带宽读数；只有当被压缩方向同时满足 stake-coupling 与后果回流时，才可近似 canonical `d`。
 
 * **Implication（中文）**：神经归一化是信息最大化与代谢成本最小化的唯一交点。
 
@@ -267,6 +269,7 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \mathcal{A}(\sigma)\ge\tau_{ignite}\quad\land\quad \Phi_{proxy}\cdot d_{proxy} > C_{critical}
 \]
 * **Level note**：当前为 hypothesis / operational proxy。乘法门是结构性偏好；加法门与概率门是保留的实验替代模型。
+* **Boundary**：ignition / global availability 是 neural `L_1` stabilization 的实现级候选判据，不是所有尺度上 `L_1` 的定义。若要把点燃读成 `L_0 -> L_1`，必须同时保留 `\hat{G}_\theta` 的抽象选择角色与 `\Psi_f` 的可支付性边界。
 * **Implication（中文）**：点燃不是简单激活，而是整合度 proxy 与关切梯度 proxy 共同约束候选内容稳定进入 \(L_1\) 的候选模型。
 
 ---

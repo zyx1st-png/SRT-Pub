@@ -37,6 +37,7 @@ dependency: [SRT-CORE-21]
 - 本方程层默认假定 P0-04 所需的 admissible selection operator 已给定；它不推出 selectability 的起源。
 - `D_eff`、Fisher rank、Hessian effective dimension 等式是 capacity / geometry proxy，只有在 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling 条件满足时，才可近似 canonical `d`。
 - `\Psi_f` 的几何和代谢形式按 `_SRT_PSI_F_CANONICAL.md §3.1` 读作条件投影；不得由局部公式反向改写 payability 主读。
+- `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12` 只提供 mechanism interface：information geometry 用于 `L_0 -> L_1` 的局部代价 / 可区分性；complex-systems language 用于 `L_1 -> L_2` 的历史沉积与稳定化；neural normalization / ignition / plasticity 仍是 embodied `\hat{G}_\theta` 的实现代理，不新增 P0/P1 方程。
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -88,6 +89,7 @@ $$\boxed{d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{\left(\sum_k
 $$d_i = D_{eff}\!\left(\mathcal{F}_{collective}\big|_{\theta_i}\right)$$
 * **Implication**: $d_{collective}$ 不由 $d_i$ 聚合得出，而是景观固有的结构属性。个体 $d_i$ 是 $d_{collective}$ 的投影截面，包含关系而非组合关系。
 * **Level note**: 本式固定的是 landscape effective-dimension proxy。若要把它读成 stake-coupled collective `d`，必须另行说明哪些方向承载不可逆赌注、后果如何回流到相关主体或共同闭包，以及为何不是单纯 Hessian 容量。
+* **Landscape boundary**: 这里的 landscape 是集体约束域的有效投影，不等同于完整 `L_2`。`L_2` 还包括历史沉积、hysteresis、制度/规范惯性与 metastability；详见 `SRT_Fisher_FEP_Landscape_Interface.md` 与 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`。
 * **Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §4.5`；`_SRT_D_VALUE_CANONICAL.md §6`；`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`。
 
 ---
@@ -105,6 +107,8 @@ $$\boxed{d_{\max}(\theta) = \min\!\left(\operatorname{rank}_{\text{eff}}\!\left(
 - $\Psi_f^{\text{budget}} / \kappa_0$：稳定性预算能支撑的最大对齐方向数（**稳定性瓶颈**）
 
 **$\kappa_0$ 的角色分工**：$\kappa_0$ 决定哪些方向值得被对齐（方向场）；$d$ 决定算子能稳定对齐多少这样的方向（容量）。
+
+**Information-geometry bridge note**: `\operatorname{rank}_{\text{eff}}(\mathcal{I}_F)` 是 `L_0 -> L_1` selection frontier 上的 Fisher-capacity proxy；它给出可分辨方向上限，不自动给出 stake-coupled canonical `d`。只有满足 `_SRT_D_VALUE_CANONICAL.md §1.2` 的 stake-coupling / consequence-writeback 条件时，才可作为 `d` 的近似读数。
 
 **两个瓶颈的失效形态**：
 
@@ -218,6 +222,8 @@ $$\boxed{d_{\text{mobile}} \propto d \cdot \frac{\operatorname{rank}_{\text{eff}
 | $\chi_{\text{payable}}$ | 门控项 (II) | 摩擦变化率是否落在可吸收窗口内 | 创伤冻结：景观在撕扯但超出承载 |
 
 **"感到"≠"能动"原则**：$\Psi_f$ 变化率是信号/警报量，不是移动能力本身。创伤冻结系统可具有极高的 $|d\Psi_f/dt|$ 而 d_mobile ≈ 0。不得将"景观变化被强烈感到"替换为"算子有能力重新对齐景观"。
+
+**Complex-systems bridge note**: $\operatorname{Hysteresis}(L_2)$ 应按 `L_1 -> L_2` 的历史沉积、attractor basin、order-parameter locking 与 metastability 读取；能量 / 自由能 landscape 只是这些结构在某组状态变量上的有效投影，不能替代完整 `L_2`。
 
 **双重记账防止**：$\operatorname{Hysteresis}(L_2)$、$C_r$ 仅在 d_mobile 分母出现一次。$\chi_{\text{payable}}$ 的崩塌阈值 $\Theta_\theta$ 使用 L₂ 自同构群 $\Lambda_{L_2}$（结构硬度），与此处的动态粘滞性参数不重叠。
 

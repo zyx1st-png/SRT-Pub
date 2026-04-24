@@ -111,6 +111,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Core/SRT_Core_21b_Constitutive_Theorems.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - `Core/SRT_Core_22_Equations.md`
+- `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`（bridge hardening entry; not a canonical core source）
 - `Core/SRT_OPEN_TENSIONS.md`
 
 ### AI

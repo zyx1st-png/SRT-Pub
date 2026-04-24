@@ -23,6 +23,8 @@ dependency: [SRT-CORE-13A]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+- `d-value` 的最终规范锚点仍是 `_SRT_D_VALUE_CANONICAL.md`；本文件中的 bandwidth、Fisher rank、复杂度等级与跨尺度表述均为动力学展开 / proxy，不替代 canonical `d`。
+- `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` 与 `Core_21c P2/P3-B12` 在本文件中的落点是接口分工：information geometry 加固 `L_0 -> L_1` selection frontier；complex systems 加固 `L_1 -> L_2` sedimentation / stabilization；neural computation 只作为 embodied `\hat{G}_\theta` 的实现代理。
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -32,10 +34,13 @@ dependency: [SRT-CORE-13A]
 **Formal Definition**: Selection operators across scales are isomorphic under renormalization.
 $$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
 * **Implication**: 量子坍缩、侧抑制、粗粒化、归一化、范畴化与社会选择并非彼此类似的独立现象，而是同一幽灵算子结构在不同尺度上的禀赋展开。
+* **Bridge boundary**: 这里的跨尺度同构指选择功能形式在粗粒化映射下的结构相容，不表示各实现层彼此同一。神经归一化、侧抑制或社会选择都是 `\hat{G}_\theta` 的尺度化实现代理，不能单独定义完整 Ghost Operator。
 * **Cross-ref**: `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07`.
 
 ### Def-d-Scale-1: Ontological Bandwidth (本体论带宽)
 **Formal Role**: 这是 d-value 在跨尺度动力学中的**展开性定义**（expansion-level definition），不是最终规范锚点。最终规范锚点见 `_SRT_D_VALUE_CANONICAL.md`。
+
+**Bridge boundary**: 若用 Fisher rank、`D_eff` 或频谱带宽近似本节的 `d`，必须标注为 capacity proxy；只有可分辨方向同时满足 stake-coupling、payability 与后果回流条件时，才可近似 canonical `d`。
 
 **Formal Definition**: d-value is the maximum processing bandwidth of $\hat{G}_\theta$ against $\Psi_f$ across all scales:
 $$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, and sustaining } L_0 \to L_1 \text{ against } \Psi_f) $$
@@ -156,6 +161,8 @@ H(L_0\mid\theta)\gg H(L_1\mid\theta)\Rightarrow \Psi_f^{Truth}\gg \Psi_f^{Fitnes
 \Psi_f^{pred}\propto -\mathbb{E}_{q}[\log p_\theta(y\mid z)]
 \]
 即预测误差可作为局部摩擦密度代理。
+
+**Interface boundary（2026-04-24 sync）**：FEP 在此处是组织化系统于 `L_1` 中、受 `L_2` 约束时的局部更新规则；free-energy / energy landscape 是 `L_2` 约束域的有效投影，不是完整 `L_2`。若需要 Fisher 几何，应把它放在 `L_0 -> L_1` 的局部可区分性与 `\delta\Psi_f^{geom}` 投影上，而不是把 Fisher space 写成 `L_1` 本身。
 
 ### T-Scale-04: Life–Mind Continuity via Closure Minimization（新增）
 若系统满足约束闭包与马尔可夫毯维持条件：
@@ -545,7 +552,7 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 - **跨尺度同构机制**: $\hat{G}_\theta$ 算子在尺度变换 $\Lambda$（粗粒化映射）下保持功能形式不变。这源于选择的本质是熵减（$\Delta S = H(L_0) - H(L_1)$），而最小作用原理 $\delta \int \Psi_f \, dt = 0$ 在所有尺度上成立。尺度间通过耦合动力学 $d\hat{G}_j/dt = f_j(\hat{G}_j) + \sum \kappa_{ij} g_{ij}$ 进行信息交互，其中向下因果（社会→神经，$\kappa_{S \to N} \approx 10^0$）远强于向上因果。
 - **三项竞争动力学**: 主方程中的酉流项代表 $L_0$ 的自由展开趋势，$\hat{G}_\theta$ 锚定项代表算子的主动选择压力（将 $\rho$ 拉向 $\rho_{target}$），退相干项 $\mathcal{D}[\rho]$ 代表环境引起的信息丢失。三者的竞争平衡决定了 $L_1$ 的稳定性与可预测性。在被动选择退化形式（Cor-Master-01a）中，当约束梯度远大于算子锚定力时，系统进入约束主导的滑行模式。
 - **摩擦驱动的适应度优先机制**: 由于有限算子无法无损编码 $L_0$（$\Psi_f^{Truth} \gg \Psi_f^{Fitness}$），系统在演化上优先选择低摩擦可维持界面（适应度追踪），而非高保真真相重建。偏差-方差热力学（T-Scale-05）进一步表明，总维持成本中方差的边际代价远高于偏差，导致系统倾向”高偏差-低方差”的稳定对象表征。
-- **$\Psi_f$ 作为统一约束与生成性原理**: 本体论摩擦 $\Psi_f$ 贯穿所有机制，既作为 $\theta$ 演化的梯度信号驱动语义边界维持，又作为边界划定的成本项约束对象个体化，还作为适应度-真相权衡的判据。更进一步，$\Psi_f$ 不只是维持现实的代价，而是动力学本身的生成来源：没有摩擦就没有演化、学习、文化变迁等跨尺度动力学；没有动力学就没有现实的生成。对同一 $Ψ_f$，可作三种等价读法：动力学上读作阻力，记账上读作代价，形式上读作几何长度 / 曲率负担。跨尺度真正保持不变的不是各层的单位制，而是**可支付性条件**：系统能否在承担该摩擦时维持闭包、身份连续性与后续选择能力。d 值在三个尺度上的不同现象学（量子相干性、生物关切、宇宙拓扑紧致度）均是 $\hat{G}_\theta$ 对抗 $Ψ_f$ 的最大带宽的投影实现。
+- **$\Psi_f$ 作为统一约束与生成性原理**: 本体论摩擦 $\Psi_f$ 贯穿所有机制，既作为 $\theta$ 演化的梯度信号驱动语义边界维持，又作为边界划定的成本项约束对象个体化，还作为适应度-真相权衡的判据。更进一步，$\Psi_f$ 不只是维持现实的代价，而是动力学本身的生成来源：没有摩擦就没有演化、学习、文化变迁等跨尺度动力学；没有动力学就没有现实的生成。对同一 $Ψ_f$，可作三种受限读法：动力学上读作阻力，记账上读作代价，形式上读作 Fisher–Rao metric 诱导的局部二阶几何投影 / 路径泛函。跨尺度真正保持不变的不是各层的单位制，也不是 `\Psi_f \equiv g_F` 的裸等号，而是**可支付性条件**：系统能否在承担该摩擦时维持闭包、身份连续性与后续选择能力。d 值在三个尺度上的不同现象学（量子相干性、生物关切、宇宙拓扑紧致度）均是 canonical d 经尺度约束后的动力学投影 / proxy，不能替代 `_SRT_D_VALUE_CANONICAL.md` 的风险梯度锚点。
 - **预算超载下的时分复用**: 当 \(\mathcal{C}_{dense}(T,k)>E_{avail}\) 时，系统不能以纯直流方式并行维持全部目标，必须通过间歇、分时或重放来重新分配锚定窗口；theta-replay、注意切换与宏观睡眠-觉醒循环都可读作这一机制在不同尺度上的实例化。
 - **占空比-切换密度可行窗口**: 间歇调度不由单一参数（占空比 $\delta$）刻画——同一 $\delta$ 可对应极不同的切换密度 $\nu$。维持成本与松散惩罚夹出 $\delta$ 的上下界，切换成本限制 $\nu$，三力合围产生 $(\delta, \nu)$ 二维可行区域。窗口坍缩时系统必须放弃锚定目标或降低切换频率。
 - **耦合驱动的周期化**: 孤立算子可随机间歇；但当多算子耦合时，下游需要预测上游的锚定窗口，预测成本与调度的时间熵率 $h[A]$ 成正比。当预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c = (C_{per}-C_{rand})/h_{rand}$ 时，周期性调度成为全局最优——这是从间歇到节律的相变。
