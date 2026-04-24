@@ -36,6 +36,7 @@ DEFAULT_NAV_FILES = [
     "_SRT_MEDIUM_AI_NEURO_COVERAGE_INDEX.md",
     "_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md",
     "_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md",
+    "_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md",
     "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
     "Governance/README.md",
     "Operations/README.md",
