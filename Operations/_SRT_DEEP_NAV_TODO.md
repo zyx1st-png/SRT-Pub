@@ -25,7 +25,7 @@ SRT already contains many deep theory files. The main risk is not lack of conten
 - Existing indexes tell readers where entry surfaces are, but not always which files should be retrieved together for a recurring deep question.
 - Adjacent-theory interfaces, `Ψ_f`, d-value, `L2`, AI consciousness, political philosophy, spirituality, and quantum measurement each require multi-file context.
 
-Therefore the navigation layer now has eight complementary files:
+Therefore the navigation layer now has nine complementary files:
 
 1. `_SRT_INDEX.md` — machine entry index and authority order.
 2. `_SRT_CONTEXT_ROUTER.md` — query type → retrieval route.
@@ -35,6 +35,7 @@ Therefore the navigation layer now has eight complementary files:
 6. `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md` — M2 Philosophy medium coverage-audit follow-up.
 7. `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md` — M3 Physics medium coverage-audit follow-up.
 8. `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md` — M4 Spirituality medium coverage-audit follow-up.
+9. `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` — M5 Papers/Publication medium coverage-audit follow-up.
 
 Repository-level audit scripts:
 
@@ -88,10 +89,11 @@ uv run python scripts/srt_deep_nav_coverage_audit.py --report Operations/_SRT_DE
 - [x] Add M2 medium-priority Philosophy coverage index: `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md`.
 - [x] Add M3 medium-priority Physics coverage index: `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`.
 - [x] Add M4 medium-priority Spirituality coverage index: `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`.
+- [x] Add M5 medium-priority Papers/Publication coverage index: `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`.
 - [ ] Run automated path audit locally/CI and commit `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md`.
 - [ ] Verify all routes in `_SRT_CONTEXT_ROUTER.md` point to existing files using the generated report.
 - [ ] Verify all deep nodes in `_SRT_DEEP_THEORY_MAP.md` point to existing files using the generated report.
-- [ ] Re-run coverage audit and confirm M4 medium candidates are reduced after `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md` is scanned.
+- [ ] Re-run coverage audit and confirm M5 medium candidates are reduced after `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` is scanned.
 
 ### P1 — Deep route quality pass
 
@@ -109,7 +111,7 @@ uv run python scripts/srt_deep_nav_coverage_audit.py --report Operations/_SRT_DE
 - [x] Batch M2: Philosophy domain files.
 - [x] Batch M3: Physics domain files.
 - [x] Batch M4: Spirituality domain files.
-- [ ] Batch M5: papers / article / publication version index.
+- [x] Batch M5: papers / article / publication version index.
 - [ ] Batch M6: root-level topic indexes and FAQ.
 
 ### P2 — Cross-file consistency pass
@@ -250,7 +252,7 @@ Suggested grouping order:
 2. Philosophy coverage index. **Done:** `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md`.
 3. Physics coverage index. **Done:** `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`.
 4. Spirituality coverage index. **Done:** `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`.
-5. Papers / publication version index.
+5. Papers / publication version index. **Done:** `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`.
 6. Root topic index / FAQ coverage.
 
 ---
@@ -271,6 +273,7 @@ The deep navigation layer is acceptable when:
 10. Philosophy medium-priority coverage candidates are routed through `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md` or equivalent.
 11. Physics medium-priority coverage candidates are routed through `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md` or equivalent.
 12. Spirituality medium-priority coverage candidates are routed through `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md` or equivalent.
+13. Papers / publication medium-priority coverage candidates are routed through `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` or equivalent.
 
 ---
 
