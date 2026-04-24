@@ -31,6 +31,12 @@ Therefore the navigation layer now has three complementary files:
 2. `_SRT_CONTEXT_ROUTER.md` — query type → retrieval route.
 3. `_SRT_DEEP_THEORY_MAP.md` — theory node → primary/support files.
 
+A repository-level path-audit script now exists:
+
+```bash
+python scripts/srt_deep_nav_path_audit.py --report Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md --json Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json
+```
+
 ---
 
 ## 1. Ongoing Maintenance Cadence
@@ -40,6 +46,7 @@ Therefore the navigation layer now has three complementary files:
 - Check whether new or edited files need route updates in `_SRT_CONTEXT_ROUTER.md`.
 - Check whether new or edited files belong to a deep node in `_SRT_DEEP_THEORY_MAP.md`.
 - Check whether `_SRT_INDEX.md` needs only an entrypoint update, not every file addition.
+- Run `scripts/srt_deep_nav_path_audit.py` and inspect missing references.
 
 ### After new canonical or bridge file
 
@@ -63,19 +70,21 @@ Therefore the navigation layer now has three complementary files:
 - [x] Add `_SRT_CONTEXT_ROUTER.md`.
 - [x] Add `_SRT_DEEP_THEORY_MAP.md`.
 - [x] Add `Bridge/SRT_Adjacent_Theory_Interface_Index.md`.
-- [ ] Update `_SRT_INDEX.md` to include `_SRT_CONTEXT_ROUTER.md` and `_SRT_DEEP_THEORY_MAP.md` as meta navigation surfaces.
-- [ ] Verify all routes in `_SRT_CONTEXT_ROUTER.md` point to existing files.
-- [ ] Verify all deep nodes in `_SRT_DEEP_THEORY_MAP.md` point to existing files.
+- [x] Update `_SRT_INDEX.md` to include `_SRT_CONTEXT_ROUTER.md` and `_SRT_DEEP_THEORY_MAP.md` as meta navigation surfaces.
+- [x] Add automated path-audit script: `scripts/srt_deep_nav_path_audit.py`.
+- [ ] Run automated path audit locally/CI and commit `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md`.
+- [ ] Verify all routes in `_SRT_CONTEXT_ROUTER.md` point to existing files using the generated report.
+- [ ] Verify all deep nodes in `_SRT_DEEP_THEORY_MAP.md` point to existing files using the generated report.
 
 ### P1 — Deep route quality pass
 
-- [ ] Expand route for `Ψ_f` measurement / experimental proxies.
+- [x] Expand route for `Ψ_f` measurement / experimental proxies.
 - [ ] Expand route for `L2` subject-status problem: sedimentation vs emergent operator.
-- [ ] Expand route for `d-value` and consciousness conditions.
-- [ ] Expand route for AI consciousness / non-binding friction.
+- [x] Expand route for `d-value` and consciousness conditions.
+- [x] Expand route for AI consciousness / non-binding friction.
 - [ ] Expand route for political philosophy and rights.
 - [ ] Expand route for spirituality / subject-position / return path.
-- [ ] Add route for publication / paper preparation if needed.
+- [x] Add route for publication / paper preparation if needed.
 
 ### P2 — Cross-file consistency pass
 
@@ -111,6 +120,7 @@ For every route in `_SRT_CONTEXT_ROUTER.md`, verify:
 - [ ] Does it include domain implementation files only as secondary unless the question is domain-specific?
 - [ ] Does it include a boundary note?
 - [ ] Does it avoid promoting papers, graphify outputs, or operations logs over canonical files?
+- [ ] Does every referenced path exist according to `scripts/srt_deep_nav_path_audit.py`?
 
 ---
 
@@ -123,6 +133,7 @@ For every node in `_SRT_DEEP_THEORY_MAP.md`, verify:
 - [ ] Are support files clearly secondary?
 - [ ] Is the boundary note strong enough to prevent common misreadings?
 - [ ] Does the node avoid repeating long theoretical content?
+- [ ] Does every referenced path exist according to `scripts/srt_deep_nav_path_audit.py`?
 
 ---
 
@@ -148,6 +159,12 @@ Actions:
 Goal: prevent broken links or missing file references.
 
 Actions:
+
+- Run:
+
+```bash
+python scripts/srt_deep_nav_path_audit.py --report Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md --json Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json
+```
 
 - Check all file paths in `_SRT_CONTEXT_ROUTER.md`.
 - Check all file paths in `_SRT_DEEP_THEORY_MAP.md`.
@@ -195,6 +212,7 @@ The deep navigation layer is acceptable when:
 3. Each major theory node has a primary/support file split.
 4. `_SRT_INDEX.md` exposes the router and map.
 5. No router entry silently upgrades bridge files to canonical authority.
+6. `scripts/srt_deep_nav_path_audit.py` can run from repo root and generate a missing-path report.
 
 ---
 
