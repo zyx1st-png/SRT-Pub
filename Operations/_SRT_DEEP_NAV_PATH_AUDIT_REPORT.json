@@ -1,0 +1,4018 @@
+[
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 30,
+    "raw": "README.md",
+    "normalized": "README.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 31,
+    "raw": "AGENTS.md",
+    "normalized": "AGENTS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 32,
+    "raw": "CLAUDE.md",
+    "normalized": "CLAUDE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 33,
+    "raw": "SRT_AI_START.md",
+    "normalized": "SRT_AI_START.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 34,
+    "raw": "STATUS.md",
+    "normalized": "STATUS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 35,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 36,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 37,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 38,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 39,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 45,
+    "raw": "AGENTS.md",
+    "normalized": "AGENTS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 46,
+    "raw": "SRT_AI_START.md",
+    "normalized": "SRT_AI_START.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 47,
+    "raw": "STATUS.md",
+    "normalized": "STATUS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 48,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 49,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 50,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 51,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 55,
+    "raw": "README.md",
+    "normalized": "README.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 56,
+    "raw": "SRT_Quick_Start.md",
+    "normalized": "SRT_Quick_Start.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 57,
+    "raw": "SRT_1H_Onboarding.md",
+    "normalized": "SRT_1H_Onboarding.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 58,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 64,
+    "raw": "CANONICAL_REGISTRY.md",
+    "normalized": "CANONICAL_REGISTRY.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 65,
+    "raw": "Governance/SRT_CLAIM_LADDER.md",
+    "normalized": "Governance/SRT_CLAIM_LADDER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 66,
+    "raw": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "normalized": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 67,
+    "raw": "Core_Law/SRT_L0_Metaphysics.md",
+    "normalized": "Core_Law/SRT_L0_Metaphysics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 68,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 69,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 70,
+    "raw": "_SRT_T_DIR_CANONICAL.md",
+    "normalized": "_SRT_T_DIR_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 71,
+    "raw": "_SRT_CROSS_DOMAIN_MATRIX.md",
+    "normalized": "_SRT_CROSS_DOMAIN_MATRIX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 72,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 73,
+    "raw": "Core/SRT_Core_21_Formal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Formal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 74,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 81,
+    "raw": "Operations/",
+    "normalized": "Operations/",
+    "status": "ok_dir",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 82,
+    "raw": "memory/",
+    "normalized": "memory/",
+    "status": "ok_dir",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 86,
+    "raw": "CANONICAL_REGISTRY.md",
+    "normalized": "CANONICAL_REGISTRY.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 87,
+    "raw": "ANNEX_REGISTRY.md",
+    "normalized": "ANNEX_REGISTRY.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 88,
+    "raw": "LONGFORM_SPLITS.md",
+    "normalized": "LONGFORM_SPLITS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 89,
+    "raw": "SRT_Glossary.md",
+    "normalized": "SRT_Glossary.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 90,
+    "raw": "_SRT_MANIFEST.yaml",
+    "normalized": "_SRT_MANIFEST.yaml",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 94,
+    "raw": "Core_Law/SRT_L0_Metaphysics.md",
+    "normalized": "Core_Law/SRT_L0_Metaphysics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 95,
+    "raw": "Core_Law/SRT_Core_Text_CN_Euclid.md",
+    "normalized": "Core_Law/SRT_Core_Text_CN_Euclid.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 96,
+    "raw": "Governance/SRT_CLAIM_LADDER.md",
+    "normalized": "Governance/SRT_CLAIM_LADDER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 97,
+    "raw": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "normalized": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 98,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 99,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 100,
+    "raw": "_SRT_T_DIR_CANONICAL.md",
+    "normalized": "_SRT_T_DIR_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 101,
+    "raw": "_SRT_CROSS_DOMAIN_MATRIX.md",
+    "normalized": "_SRT_CROSS_DOMAIN_MATRIX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 102,
+    "raw": "Core/SRT_Core_21_Formal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Formal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 103,
+    "raw": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 104,
+    "raw": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "normalized": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 105,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 106,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 107,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 113,
+    "raw": "Core/_SRT_Core_Bridge.md",
+    "normalized": "Core/_SRT_Core_Bridge.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 114,
+    "raw": "Core/SRT_Core_21_Formal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Formal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 115,
+    "raw": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 116,
+    "raw": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "normalized": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 117,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 118,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 119,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 120,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 124,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 125,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 129,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 133,
+    "raw": "AI/_SRT_AI_Bridge.md",
+    "normalized": "AI/_SRT_AI_Bridge.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 134,
+    "raw": "AI/AI_POSITIONING_NOTE.md",
+    "normalized": "AI/AI_POSITIONING_NOTE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 135,
+    "raw": "AI/SRT_AI_01_Ontology_CompactCore.md",
+    "normalized": "AI/SRT_AI_01_Ontology_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 136,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework_CompactCore.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 140,
+    "raw": "Neuroscience/_SRT_Neuro_Axioms.md",
+    "normalized": "Neuroscience/_SRT_Neuro_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 141,
+    "raw": "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md",
+    "normalized": "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 142,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 146,
+    "raw": "Physics/_SRT_Phys_Bridge.md",
+    "normalized": "Physics/_SRT_Phys_Bridge.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 147,
+    "raw": "Physics/PHYSICS_COMPACT_REGISTRY.md",
+    "normalized": "Physics/PHYSICS_COMPACT_REGISTRY.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 148,
+    "raw": "Physics/SRT_Physics_Cosmology_CompactCore.md",
+    "normalized": "Physics/SRT_Physics_Cosmology_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 152,
+    "raw": "Philosophy/_SRT_Phil_Axioms.md",
+    "normalized": "Philosophy/_SRT_Phil_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 153,
+    "raw": "Philosophy/SRT_Philosophy_Foundations_CompactCore.md",
+    "normalized": "Philosophy/SRT_Philosophy_Foundations_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 154,
+    "raw": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "normalized": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 155,
+    "raw": "Philosophy/SRT_Political_Philosophy_CompactCore.md",
+    "normalized": "Philosophy/SRT_Political_Philosophy_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 156,
+    "raw": "Philosophy/SRT_Political_Philosophy.md",
+    "normalized": "Philosophy/SRT_Political_Philosophy.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 157,
+    "raw": "Philosophy/SRT_Political_Rights.md",
+    "normalized": "Philosophy/SRT_Political_Rights.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 161,
+    "raw": "Spirituality/_SRT_Spirit_Axioms.md",
+    "normalized": "Spirituality/_SRT_Spirit_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 162,
+    "raw": "Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md",
+    "normalized": "Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 163,
+    "raw": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "normalized": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 164,
+    "raw": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 165,
+    "raw": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 166,
+    "raw": "Spirituality/SRT_Spirituality_Community_and_Sangha.md",
+    "normalized": "Spirituality/SRT_Spirituality_Community_and_Sangha.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 170,
+    "raw": "Governance/README.md",
+    "normalized": "Governance/README.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 171,
+    "raw": "Operations/README.md",
+    "normalized": "Operations/README.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 172,
+    "raw": "Operations/_SRT_OPERATIONS_SCHEDULE.md",
+    "normalized": "Operations/_SRT_OPERATIONS_SCHEDULE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 173,
+    "raw": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 174,
+    "raw": "Governance/SRT_CANONICAL_FREEZE.md",
+    "normalized": "Governance/SRT_CANONICAL_FREEZE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 175,
+    "raw": "Governance/SRT_EDIT_PROTOCOL.md",
+    "normalized": "Governance/SRT_EDIT_PROTOCOL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 176,
+    "raw": "Governance/SRT_CLAIM_LADDER.md",
+    "normalized": "Governance/SRT_CLAIM_LADDER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 177,
+    "raw": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "normalized": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 178,
+    "raw": "Governance/SRT_HARNESS_TESTS.md",
+    "normalized": "Governance/SRT_HARNESS_TESTS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 182,
+    "raw": "Archive/raw_sessions/",
+    "normalized": "Archive/raw_sessions/",
+    "status": "ok_dir",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 183,
+    "raw": "Operations/_SRT_STATUS_HISTORY.md",
+    "normalized": "Operations/_SRT_STATUS_HISTORY.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 187,
+    "raw": "_SRT_MANIFEST.yaml",
+    "normalized": "_SRT_MANIFEST.yaml",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 188,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 189,
+    "raw": "STATUS.md",
+    "normalized": "STATUS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 190,
+    "raw": "Core/SRT_Core_21_Formal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Formal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 191,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 192,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 193,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_INDEX.md",
+    "line": 194,
+    "raw": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 38,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 39,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 40,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 41,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 45,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 46,
+    "raw": "_SRT_VERTICAL_INTEGRATION.md",
+    "normalized": "_SRT_VERTICAL_INTEGRATION.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 47,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 48,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 64,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 65,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 66,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 70,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 71,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 72,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 73,
+    "raw": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "normalized": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 74,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 81,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 91,
+    "raw": "_SRT_T_DIR_CANONICAL.md",
+    "normalized": "_SRT_T_DIR_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 92,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 96,
+    "raw": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 97,
+    "raw": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 98,
+    "raw": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "normalized": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 99,
+    "raw": "_SRT_CROSS_DOMAIN_MATRIX.md",
+    "normalized": "_SRT_CROSS_DOMAIN_MATRIX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 105,
+    "raw": "_SRT_T_DIR_CANONICAL.md",
+    "normalized": "_SRT_T_DIR_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 115,
+    "raw": "Core/SRT_Core_21_Formal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Formal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 116,
+    "raw": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 117,
+    "raw": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "normalized": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 118,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 122,
+    "raw": "Core/SRT_Core_13a_Operator_Basics.md",
+    "normalized": "Core/SRT_Core_13a_Operator_Basics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 123,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 124,
+    "raw": "Neuroscience/SRT_Neural_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Neural_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 125,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 126,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 142,
+    "raw": "Core_Law/SRT_L0_Metaphysics.md",
+    "normalized": "Core_Law/SRT_L0_Metaphysics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 143,
+    "raw": "Core/SRT_Core_12a_Ontology_L0L1.md",
+    "normalized": "Core/SRT_Core_12a_Ontology_L0L1.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 144,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 148,
+    "raw": "graphify-out/wiki/Ontology_Split_Index.md",
+    "normalized": "graphify-out/wiki/Ontology_Split_Index.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 149,
+    "raw": "_SRT_VERTICAL_INTEGRATION.md",
+    "normalized": "_SRT_VERTICAL_INTEGRATION.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 150,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 151,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 152,
+    "raw": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "normalized": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 159,
+    "raw": "graphify-out/wiki/Ontology_Split_Index.md",
+    "normalized": "graphify-out/wiki/Ontology_Split_Index.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 169,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 170,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 171,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 175,
+    "raw": "Philosophy/SRT_FEP_Comparison.md",
+    "normalized": "Philosophy/SRT_FEP_Comparison.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 176,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 177,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 178,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 179,
+    "raw": "Philosophy/SRT_Social_Cognition.md",
+    "normalized": "Philosophy/SRT_Social_Cognition.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 180,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 195,
+    "raw": "Philosophy/SRT_FEP_Comparison.md",
+    "normalized": "Philosophy/SRT_FEP_Comparison.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 196,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 197,
+    "raw": "Neuroscience/SRT_Clin_02_FEP.md",
+    "normalized": "Neuroscience/SRT_Clin_02_FEP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 201,
+    "raw": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "normalized": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 202,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 217,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 218,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 219,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 223,
+    "raw": "Neuroscience/SRT_Neuro_09_Integ_Eq.md",
+    "normalized": "Neuroscience/SRT_Neuro_09_Integ_Eq.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 224,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 225,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 226,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 227,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 228,
+    "raw": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "normalized": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 229,
+    "raw": "graphify-out/wiki/SRT_Hard_Problem_Epistemology.md",
+    "normalized": "graphify-out/wiki/SRT_Hard_Problem_Epistemology.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 246,
+    "raw": "Physics/SRT_Quant_00_Intro.md",
+    "normalized": "Physics/SRT_Quant_00_Intro.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 247,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 248,
+    "raw": "Physics/SRT_Quant_01_Selection_CompactCore.md",
+    "normalized": "Physics/SRT_Quant_01_Selection_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 252,
+    "raw": "graphify-out/wiki/Measurement_as_Selection.md",
+    "normalized": "graphify-out/wiki/Measurement_as_Selection.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 253,
+    "raw": "graphify-out/wiki/Objective_Measurement_Theorem.md",
+    "normalized": "graphify-out/wiki/Objective_Measurement_Theorem.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 254,
+    "raw": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "normalized": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 255,
+    "raw": "graphify-out/wiki/Theorem_of_Decoherence_Insufficiency.md",
+    "normalized": "graphify-out/wiki/Theorem_of_Decoherence_Insufficiency.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 256,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 271,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 272,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 273,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 274,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 278,
+    "raw": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "normalized": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 279,
+    "raw": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "normalized": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 280,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 281,
+    "raw": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "normalized": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 297,
+    "raw": "Philosophy/SRT_Social_Cognition.md",
+    "normalized": "Philosophy/SRT_Social_Cognition.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 298,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 299,
+    "raw": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "normalized": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 300,
+    "raw": "Philosophy/SRT_Social_MacroDynamics.md",
+    "normalized": "Philosophy/SRT_Social_MacroDynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 301,
+    "raw": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "normalized": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 302,
+    "raw": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "normalized": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 306,
+    "raw": "graphify-out/wiki/Social_Reality_Construction.md",
+    "normalized": "graphify-out/wiki/Social_Reality_Construction.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 307,
+    "raw": "graphify-out/wiki/Language_Topology.md",
+    "normalized": "graphify-out/wiki/Language_Topology.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 308,
+    "raw": "graphify-out/wiki/Normative_Closure.md",
+    "normalized": "graphify-out/wiki/Normative_Closure.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 309,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 324,
+    "raw": "AI/SRT_AI_01_Ontology_CompactCore.md",
+    "normalized": "AI/SRT_AI_01_Ontology_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 325,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 326,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 327,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 331,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 332,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 333,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 334,
+    "raw": "SRT_EXP_TEMPLATE.md",
+    "normalized": "SRT_EXP_TEMPLATE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 335,
+    "raw": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "normalized": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 351,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 352,
+    "raw": "SRT_EXP_TEMPLATE.md",
+    "normalized": "SRT_EXP_TEMPLATE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 353,
+    "raw": "Governance/SRT_LAB_HYPOTHESES.md",
+    "normalized": "Governance/SRT_LAB_HYPOTHESES.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 354,
+    "raw": "_SRT_EQ_HYP_MAP.md",
+    "normalized": "_SRT_EQ_HYP_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 358,
+    "raw": "Neuroscience/SRT_Neuro_Experiments.md",
+    "normalized": "Neuroscience/SRT_Neuro_Experiments.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 359,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 360,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 361,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 362,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 363,
+    "raw": "Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 379,
+    "raw": "Philosophy/SRT_Political_Philosophy.md",
+    "normalized": "Philosophy/SRT_Political_Philosophy.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 380,
+    "raw": "Philosophy/SRT_Political_Philosophy_CompactCore.md",
+    "normalized": "Philosophy/SRT_Political_Philosophy_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 381,
+    "raw": "Philosophy/SRT_Political_Rights.md",
+    "normalized": "Philosophy/SRT_Political_Rights.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 382,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 386,
+    "raw": "Philosophy/SRT_Social_MacroDynamics.md",
+    "normalized": "Philosophy/SRT_Social_MacroDynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 387,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 388,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 389,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 404,
+    "raw": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 405,
+    "raw": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 406,
+    "raw": "Spirituality/SRT_Spirituality_Community_and_Sangha.md",
+    "normalized": "Spirituality/SRT_Spirituality_Community_and_Sangha.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 407,
+    "raw": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "normalized": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 411,
+    "raw": "_SRT_T_DIR_CANONICAL.md",
+    "normalized": "_SRT_T_DIR_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 412,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 413,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 428,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 429,
+    "raw": "Governance/SRT_CLAIM_LADDER.md",
+    "normalized": "Governance/SRT_CLAIM_LADDER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 430,
+    "raw": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "normalized": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 435,
+    "raw": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 436,
+    "raw": "Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 451,
+    "raw": "SRT_TOPIC_ARTICLE_INDEX.md",
+    "normalized": "SRT_TOPIC_ARTICLE_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 452,
+    "raw": "Operations/_SRT_MEDIA_PIPELINE.md",
+    "normalized": "Operations/_SRT_MEDIA_PIPELINE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 456,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 457,
+    "raw": "SRT_Quick_Start.md",
+    "normalized": "SRT_Quick_Start.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 473,
+    "raw": "Operations/_SRT_PAPER_PIPELINE.md",
+    "normalized": "Operations/_SRT_PAPER_PIPELINE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 474,
+    "raw": "papers/working_notes/PAPER_INTERNAL_REVIEW_ACTIONS_2026-03-02.md",
+    "normalized": "papers/working_notes/PAPER_INTERNAL_REVIEW_ACTIONS_2026-03-02.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 475,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 479,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 480,
+    "raw": "papers/SRT_MetaOS_JCS_v1.md",
+    "normalized": "papers/SRT_MetaOS_JCS_v1.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 481,
+    "raw": "papers/SRT_MetaOS_JCS_v2.md",
+    "normalized": "papers/SRT_MetaOS_JCS_v2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 482,
+    "raw": "papers/SRT_MetaOS_JCS_reframe.md",
+    "normalized": "papers/SRT_MetaOS_JCS_reframe.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 483,
+    "raw": "papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.html",
+    "normalized": "papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.html",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 497,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 498,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 499,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_CONTEXT_ROUTER.md",
+    "line": 500,
+    "raw": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 16,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 43,
+    "raw": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 44,
+    "raw": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "normalized": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 45,
+    "raw": "Core/SRT_Core_21_Formal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Formal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 46,
+    "raw": "Core_Law/SRT_Constitution_Seven_Theses.md",
+    "normalized": "Core_Law/SRT_Constitution_Seven_Theses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 50,
+    "raw": "SRT_Quick_Start.md",
+    "normalized": "SRT_Quick_Start.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 51,
+    "raw": "SRT_1H_Onboarding.md",
+    "normalized": "SRT_1H_Onboarding.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 52,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 68,
+    "raw": "Core_Law/SRT_L0_Metaphysics.md",
+    "normalized": "Core_Law/SRT_L0_Metaphysics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 69,
+    "raw": "Core/SRT_Core_12a_Ontology_L0L1.md",
+    "normalized": "Core/SRT_Core_12a_Ontology_L0L1.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 70,
+    "raw": "Core_Law/SRT_Core_Text_CN_Euclid.md",
+    "normalized": "Core_Law/SRT_Core_Text_CN_Euclid.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 75,
+    "raw": "Physics/SRT_Quant_00_Intro.md",
+    "normalized": "Physics/SRT_Quant_00_Intro.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 76,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 77,
+    "raw": "graphify-out/wiki/Ontology_Split_Index.md",
+    "normalized": "graphify-out/wiki/Ontology_Split_Index.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 93,
+    "raw": "Core/SRT_Core_12a_Ontology_L0L1.md",
+    "normalized": "Core/SRT_Core_12a_Ontology_L0L1.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 94,
+    "raw": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "normalized": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 95,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 99,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 100,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 101,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 117,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 118,
+    "raw": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "normalized": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 119,
+    "raw": "_SRT_VERTICAL_INTEGRATION.md",
+    "normalized": "_SRT_VERTICAL_INTEGRATION.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 123,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 124,
+    "raw": "Philosophy/SRT_Social_MacroDynamics.md",
+    "normalized": "Philosophy/SRT_Social_MacroDynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 125,
+    "raw": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "normalized": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 126,
+    "raw": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "normalized": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 127,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 143,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 144,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 145,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 146,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 150,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 151,
+    "raw": "_SRT_VERTICAL_INTEGRATION.md",
+    "normalized": "_SRT_VERTICAL_INTEGRATION.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 152,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 153,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 169,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 170,
+    "raw": "_SRT_SYMBOL_TABLE.md",
+    "normalized": "_SRT_SYMBOL_TABLE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 171,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 175,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 176,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 177,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 178,
+    "raw": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "normalized": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 179,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 195,
+    "raw": "Core/SRT_Core_21_Formal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Formal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 196,
+    "raw": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "normalized": "Core/SRT_Core_21_Minimal_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 197,
+    "raw": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "normalized": "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 198,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 202,
+    "raw": "Core/SRT_Core_13a_Operator_Basics.md",
+    "normalized": "Core/SRT_Core_13a_Operator_Basics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 203,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 204,
+    "raw": "Neuroscience/SRT_Neural_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Neural_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 205,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 221,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 222,
+    "raw": "Core/SRT_Core_22_Equations.md",
+    "normalized": "Core/SRT_Core_22_Equations.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 223,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 227,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 228,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 229,
+    "raw": "Neuroscience/SRT_Neural_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Neural_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 230,
+    "raw": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "normalized": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 246,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 247,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 248,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 252,
+    "raw": "Philosophy/SRT_FEP_Comparison.md",
+    "normalized": "Philosophy/SRT_FEP_Comparison.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 253,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 254,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 255,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 256,
+    "raw": "Philosophy/SRT_Social_Cognition.md",
+    "normalized": "Philosophy/SRT_Social_Cognition.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 257,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 258,
+    "raw": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "normalized": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 274,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 275,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 276,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 277,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 281,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 282,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 283,
+    "raw": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "normalized": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 284,
+    "raw": "graphify-out/wiki/SRT_Hard_Problem_Epistemology.md",
+    "normalized": "graphify-out/wiki/SRT_Hard_Problem_Epistemology.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 285,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 301,
+    "raw": "Physics/_SRT_Phys_Bridge.md",
+    "normalized": "Physics/_SRT_Phys_Bridge.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 302,
+    "raw": "Physics/SRT_Quant_00_Intro.md",
+    "normalized": "Physics/SRT_Quant_00_Intro.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 303,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 304,
+    "raw": "Physics/SRT_Physics_Cosmology_CompactCore.md",
+    "normalized": "Physics/SRT_Physics_Cosmology_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 308,
+    "raw": "graphify-out/wiki/Measurement_as_Selection.md",
+    "normalized": "graphify-out/wiki/Measurement_as_Selection.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 309,
+    "raw": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "normalized": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 310,
+    "raw": "graphify-out/wiki/Theorem_of_Decoherence_Insufficiency.md",
+    "normalized": "graphify-out/wiki/Theorem_of_Decoherence_Insufficiency.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 311,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 327,
+    "raw": "Philosophy/SRT_Social_Cognition.md",
+    "normalized": "Philosophy/SRT_Social_Cognition.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 328,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 329,
+    "raw": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "normalized": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 330,
+    "raw": "Philosophy/SRT_Social_MacroDynamics.md",
+    "normalized": "Philosophy/SRT_Social_MacroDynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 331,
+    "raw": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "normalized": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 332,
+    "raw": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "normalized": "Philosophy/SRT_SocTheory_06_L2_Dynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 336,
+    "raw": "graphify-out/wiki/Social_Reality_Construction.md",
+    "normalized": "graphify-out/wiki/Social_Reality_Construction.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 337,
+    "raw": "graphify-out/wiki/Language_Topology.md",
+    "normalized": "graphify-out/wiki/Language_Topology.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 338,
+    "raw": "graphify-out/wiki/Normative_Closure.md",
+    "normalized": "graphify-out/wiki/Normative_Closure.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 339,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 355,
+    "raw": "AI/SRT_AI_01_Ontology_CompactCore.md",
+    "normalized": "AI/SRT_AI_01_Ontology_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 356,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 357,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 358,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 362,
+    "raw": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "normalized": "Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 363,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 364,
+    "raw": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "normalized": "graphify-out/wiki/SRT_Consciousness_Conditions.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 380,
+    "raw": "Philosophy/SRT_Political_Philosophy.md",
+    "normalized": "Philosophy/SRT_Political_Philosophy.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 381,
+    "raw": "Philosophy/SRT_Political_Philosophy_CompactCore.md",
+    "normalized": "Philosophy/SRT_Political_Philosophy_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 382,
+    "raw": "Philosophy/SRT_Political_Rights.md",
+    "normalized": "Philosophy/SRT_Political_Rights.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 386,
+    "raw": "Philosophy/SRT_Social_MacroDynamics.md",
+    "normalized": "Philosophy/SRT_Social_MacroDynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 387,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 388,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 389,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 405,
+    "raw": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 406,
+    "raw": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "normalized": "Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 407,
+    "raw": "Spirituality/SRT_Spirituality_Community_and_Sangha.md",
+    "normalized": "Spirituality/SRT_Spirituality_Community_and_Sangha.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 408,
+    "raw": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "normalized": "Spirituality/SRT_Spirit_09_Praxis_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 412,
+    "raw": "_SRT_T_DIR_CANONICAL.md",
+    "normalized": "_SRT_T_DIR_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 413,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 414,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 430,
+    "raw": "SRT_EXP_MEASURE_MAP.md",
+    "normalized": "SRT_EXP_MEASURE_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 431,
+    "raw": "SRT_EXP_TEMPLATE.md",
+    "normalized": "SRT_EXP_TEMPLATE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 432,
+    "raw": "Governance/SRT_LAB_HYPOTHESES.md",
+    "normalized": "Governance/SRT_LAB_HYPOTHESES.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 433,
+    "raw": "_SRT_EQ_HYP_MAP.md",
+    "normalized": "_SRT_EQ_HYP_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 437,
+    "raw": "Neuroscience/SRT_Neuro_Experiments.md",
+    "normalized": "Neuroscience/SRT_Neuro_Experiments.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 438,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 439,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 440,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 441,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 457,
+    "raw": "SRT_TOPIC_ARTICLE_INDEX.md",
+    "normalized": "SRT_TOPIC_ARTICLE_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 458,
+    "raw": "Operations/_SRT_MEDIA_PIPELINE.md",
+    "normalized": "Operations/_SRT_MEDIA_PIPELINE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 462,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 463,
+    "raw": "SRT_Quick_Start.md",
+    "normalized": "SRT_Quick_Start.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 480,
+    "raw": "Operations/_SRT_PAPER_PIPELINE.md",
+    "normalized": "Operations/_SRT_PAPER_PIPELINE.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 481,
+    "raw": "papers/working_notes/PAPER_INTERNAL_REVIEW_ACTIONS_2026-03-02.md",
+    "normalized": "papers/working_notes/PAPER_INTERNAL_REVIEW_ACTIONS_2026-03-02.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 482,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 486,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 487,
+    "raw": "papers/SRT_MetaOS_JCS_v1.md",
+    "normalized": "papers/SRT_MetaOS_JCS_v1.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 488,
+    "raw": "papers/SRT_MetaOS_JCS_v2.md",
+    "normalized": "papers/SRT_MetaOS_JCS_v2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 489,
+    "raw": "papers/SRT_MetaOS_JCS_reframe.md",
+    "normalized": "papers/SRT_MetaOS_JCS_reframe.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 490,
+    "raw": "papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.html",
+    "normalized": "papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.html",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 507,
+    "raw": "Core/SRT_OPEN_TENSIONS.md",
+    "normalized": "Core/SRT_OPEN_TENSIONS.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 508,
+    "raw": "Governance/SRT_CLAIM_LADDER.md",
+    "normalized": "Governance/SRT_CLAIM_LADDER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 509,
+    "raw": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "normalized": "Governance/SRT_CLAIM_MODE_AUDIT.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 510,
+    "raw": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 514,
+    "raw": "Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 529,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "_SRT_DEEP_THEORY_MAP.md",
+    "line": 530,
+    "raw": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 48,
+    "raw": "Philosophy/SRT_FEP_Comparison.md",
+    "normalized": "Philosophy/SRT_FEP_Comparison.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 48,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 48,
+    "raw": "Neuroscience/SRT_Clin_02_FEP.md",
+    "normalized": "Neuroscience/SRT_Clin_02_FEP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 48,
+    "raw": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "normalized": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 49,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 49,
+    "raw": "Neuroscience/SRT_Neuro_09_Integ_Eq.md",
+    "normalized": "Neuroscience/SRT_Neuro_09_Integ_Eq.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 49,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 50,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 50,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 50,
+    "raw": "Neuroscience/SRT_Neuro_Experiments.md",
+    "normalized": "Neuroscience/SRT_Neuro_Experiments.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 50,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 51,
+    "raw": "Physics/SRT_Quant_00_Intro.md",
+    "normalized": "Physics/SRT_Quant_00_Intro.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 51,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 51,
+    "raw": "Physics/SRT_Quant_01_Selection_CompactCore.md",
+    "normalized": "Physics/SRT_Quant_01_Selection_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 51,
+    "raw": "graphify-out/wiki/Measurement_as_Selection.md",
+    "normalized": "graphify-out/wiki/Measurement_as_Selection.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 51,
+    "raw": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "normalized": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 53,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 53,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 53,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 53,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 54,
+    "raw": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "normalized": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 54,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 54,
+    "raw": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "normalized": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 55,
+    "raw": "Philosophy/SRT_Social_Cognition.md",
+    "normalized": "Philosophy/SRT_Social_Cognition.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 55,
+    "raw": "Philosophy/_SRT_Phil_Axioms.md",
+    "normalized": "Philosophy/_SRT_Phil_Axioms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 55,
+    "raw": "Neuroscience/SRT_Neuro_Experiments.md",
+    "normalized": "Neuroscience/SRT_Neuro_Experiments.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 56,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 56,
+    "raw": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "normalized": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 56,
+    "raw": "Philosophy/SRT_Social_MacroDynamics.md",
+    "normalized": "Philosophy/SRT_Social_MacroDynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 56,
+    "raw": "graphify-out/wiki/Social_Reality_Construction.md",
+    "normalized": "graphify-out/wiki/Social_Reality_Construction.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 56,
+    "raw": "graphify-out/wiki/Language_Topology.md",
+    "normalized": "graphify-out/wiki/Language_Topology.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 56,
+    "raw": "graphify-out/wiki/Normative_Closure.md",
+    "normalized": "graphify-out/wiki/Normative_Closure.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 68,
+    "raw": "Philosophy/SRT_FEP_Comparison.md",
+    "normalized": "Philosophy/SRT_FEP_Comparison.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 69,
+    "raw": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "normalized": "SRT_Fisher_FEP_Landscape_Interface.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 70,
+    "raw": "Neuroscience/SRT_Clin_02_FEP.md",
+    "normalized": "Neuroscience/SRT_Clin_02_FEP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 71,
+    "raw": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "normalized": "Core/SRT_Core_14_Dynamics_Scaling.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 109,
+    "raw": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "normalized": "Neuroscience/SRT_Clin_00_IIT_PCI.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 110,
+    "raw": "Neuroscience/SRT_Neuro_09_Integ_Eq.md",
+    "normalized": "Neuroscience/SRT_Neuro_09_Integ_Eq.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 111,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 112,
+    "raw": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "normalized": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 113,
+    "raw": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "normalized": "AI/SRT_AI_03_Consciousness_Framework.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 138,
+    "raw": "Physics/SRT_Quant_00_Intro.md",
+    "normalized": "Physics/SRT_Quant_00_Intro.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 139,
+    "raw": "Physics/SRT_Quant_00_Intro_CompactCore.md",
+    "normalized": "Physics/SRT_Quant_00_Intro_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 140,
+    "raw": "Physics/SRT_Quant_01_Selection.md",
+    "normalized": "Physics/SRT_Quant_01_Selection.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 141,
+    "raw": "Physics/SRT_Quant_01_Selection_CompactCore.md",
+    "normalized": "Physics/SRT_Quant_01_Selection_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 142,
+    "raw": "graphify-out/wiki/Measurement_as_Selection.md",
+    "normalized": "graphify-out/wiki/Measurement_as_Selection.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 143,
+    "raw": "graphify-out/wiki/Objective_Measurement_Theorem.md",
+    "normalized": "graphify-out/wiki/Objective_Measurement_Theorem.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 144,
+    "raw": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "normalized": "graphify-out/wiki/Quantum_Darwinism_Equivalence.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 145,
+    "raw": "graphify-out/wiki/Theorem_of_Decoherence_Insufficiency.md",
+    "normalized": "graphify-out/wiki/Theorem_of_Decoherence_Insufficiency.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 179,
+    "raw": "papers/ontological_friction/paper_ontological_friction.md",
+    "normalized": "papers/ontological_friction/paper_ontological_friction.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 180,
+    "raw": "_SRT_D_VALUE_CANONICAL.md",
+    "normalized": "_SRT_D_VALUE_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 181,
+    "raw": "_SRT_PSI_F_CANONICAL.md",
+    "normalized": "_SRT_PSI_F_CANONICAL.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 182,
+    "raw": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "normalized": "Core/SRT_Core_21c_Bridge_Hypotheses.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 183,
+    "raw": "Core/SRT_Core_12b_Ontology_L2.md",
+    "normalized": "Core/SRT_Core_12b_Ontology_L2.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 184,
+    "raw": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "normalized": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 210,
+    "raw": "Philosophy/SRT_Social_Cognition.md",
+    "normalized": "Philosophy/SRT_Social_Cognition.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 211,
+    "raw": "Philosophy/SRT_Social_Economics.md",
+    "normalized": "Philosophy/SRT_Social_Economics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 212,
+    "raw": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "normalized": "Philosophy/SRT_Social_Economics_CompactCore.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 213,
+    "raw": "Philosophy/SRT_Social_MacroDynamics.md",
+    "normalized": "Philosophy/SRT_Social_MacroDynamics.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 214,
+    "raw": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "normalized": "Philosophy/SRT_SocTheory_05_Language_Eco.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 215,
+    "raw": "graphify-out/wiki/Social_Reality_Construction.md",
+    "normalized": "graphify-out/wiki/Social_Reality_Construction.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 216,
+    "raw": "graphify-out/wiki/Language_Topology.md",
+    "normalized": "graphify-out/wiki/Language_Topology.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "line": 217,
+    "raw": "graphify-out/wiki/Normative_Closure.md",
+    "normalized": "graphify-out/wiki/Normative_Closure.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 30,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 31,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 32,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 46,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 47,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 48,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 49,
+    "raw": "scripts/srt_deep_nav_path_audit.py",
+    "normalized": "scripts/srt_deep_nav_path_audit.py",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 53,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 54,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 55,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 70,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 71,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 72,
+    "raw": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "normalized": "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 73,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 73,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 73,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 74,
+    "raw": "scripts/srt_deep_nav_path_audit.py",
+    "normalized": "scripts/srt_deep_nav_path_audit.py",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 75,
+    "raw": "Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 76,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 77,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 100,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 101,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 110,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 110,
+    "raw": "graphify-out/GRAPH_REPORT.md",
+    "normalized": "graphify-out/GRAPH_REPORT.md",
+    "status": "ok_file",
+    "note": "generated_support"
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 116,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 123,
+    "raw": "scripts/srt_deep_nav_path_audit.py",
+    "normalized": "scripts/srt_deep_nav_path_audit.py",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 129,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 136,
+    "raw": "scripts/srt_deep_nav_path_audit.py",
+    "normalized": "scripts/srt_deep_nav_path_audit.py",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 148,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 149,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 153,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 153,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 154,
+    "raw": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "normalized": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 169,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 170,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 200,
+    "raw": "SRT_Navigation_Map.md",
+    "normalized": "SRT_Navigation_Map.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 201,
+    "raw": "_SRT_CONTEXT_ROUTER.md",
+    "normalized": "_SRT_CONTEXT_ROUTER.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 202,
+    "raw": "_SRT_DEEP_THEORY_MAP.md",
+    "normalized": "_SRT_DEEP_THEORY_MAP.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 213,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 215,
+    "raw": "scripts/srt_deep_nav_path_audit.py",
+    "normalized": "scripts/srt_deep_nav_path_audit.py",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 227,
+    "raw": "CANONICAL_REGISTRY.md",
+    "normalized": "CANONICAL_REGISTRY.md",
+    "status": "ok_file",
+    "note": ""
+  },
+  {
+    "source_file": "Operations/_SRT_DEEP_NAV_TODO.md",
+    "line": 228,
+    "raw": "_SRT_INDEX.md",
+    "normalized": "_SRT_INDEX.md",
+    "status": "ok_file",
+    "note": ""
+  }
+]
