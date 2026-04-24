@@ -35,6 +35,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 | `SRT_Navigation_Map.md` | 人类阅读地图 |
 | `_SRT_INDEX.md` | 机器索引 |
 | `_SRT_SYMBOL_TABLE.md` | 符号规范锚点 |
+| `_SRT_CONTEXT_ROUTER.md` | 深层问题上下文抓取路由 |
+| `_SRT_DEEP_THEORY_MAP.md` | 深层理论节点地图 |
 
 ## Default Read Order
 
@@ -45,6 +47,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 3. `STATUS.md`
 4. `_SRT_INDEX.md`
 5. `_SRT_SYMBOL_TABLE.md`
+6. `_SRT_CONTEXT_ROUTER.md`（deep questions only）
+7. `_SRT_DEEP_THEORY_MAP.md`（cross-domain theory questions only）
 
 ### Human / Public
 
@@ -73,6 +77,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 - bridge
 - split / annex 导航层
+- context router / deep theory map
 - `Operations/` 日志
 - `memory/`
 
@@ -113,6 +118,11 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Core/SRT_Core_22_Equations.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`（bridge hardening entry; not a canonical core source）
 - `Core/SRT_OPEN_TENSIONS.md`
+
+### Meta Navigation
+
+- `_SRT_CONTEXT_ROUTER.md`（query-type retrieval router; not a canonical source）
+- `_SRT_DEEP_THEORY_MAP.md`（deep theory node map; not a canonical source）
 
 ### Bridge / Interface
 
@@ -160,6 +170,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - governance hub → `Governance/README.md`
 - operations hub → `Operations/README.md`
 - schedule → `Operations/_SRT_OPERATIONS_SCHEDULE.md`
+- deep navigation TODO → `Operations/_SRT_DEEP_NAV_TODO.md`
 - freeze policy → `Governance/SRT_CANONICAL_FREEZE.md`
 - edit protocol → `Governance/SRT_EDIT_PROTOCOL.md`
 - claim ladder → `Governance/SRT_CLAIM_LADDER.md`
@@ -177,5 +188,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `SRT_Navigation_Map.md` 是人类阅读地图，不是 registry 摘要
 - `STATUS.md` 现在只保留当前状态，不再承载长历史
 - `Core/SRT_Core_21_Formal_Axioms.md` 现在是 Core_21 claim-layer index，不再是混层公理正文
+- `_SRT_CONTEXT_ROUTER.md` 是深层问题的上下文抓取路由，不新增定义权
+- `_SRT_DEEP_THEORY_MAP.md` 是深层理论节点地图，不替代 canonical 文件
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 是相邻理论接口导航，不新增 P0/P1，不替代 FEP/IIT/GNW/量子/社会现实等既有正文
+- `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
 - Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
