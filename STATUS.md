@@ -12,7 +12,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-04-22
+> **最后更新**：2026-04-24
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -56,6 +56,7 @@ AI / agent 最短读法：
 
 ## 最近关键推进
 
+- `2026-04-24`：Pipeline 1 处理 MIT News 关于 Lohmiller & Slotine `On computing quantum waves exactly from classical action`（RSPA 2026；doi:`10.1098/rspa.2025.0413`；arXiv:`2405.06328`）的材料；判定为 A 类小回写，已在 `Physics/SRT_Quant_00_Intro.md` 增加 `Classical Action-Density Bridge`，将 multi-valued classical action + density 压成量子 `L_0` 多路径候选结构的计算接口，并在 `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 增加相邻理论入口；边界为 mathematical / computational bridge，不升级为 `quantum = classical`、不替代 measurement / anchoring 判据。
 - `2026-04-22`：Pipeline 1 处理 Dialectical Systems / Sébastien Ibanez 关于 evolutionary biology 中 multi-level selection 与 dialectical thinking 的评论；判定为 A 类小回写，已在 `Neuroscience/SRT_Neuro_07_Evo_Devo.md` 增加 `Multi-Level Selection and Endogenous Selection Regimes` 边界，并在 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 的 `Fitness Beats Truth` 段补充 level / timescale 护栏：选择压力不是外部单标量，fitness bridge 必须说明 gene / organism / group / ecological 哪一层在承重，以及后果如何返回该层未来选择能力。
 - `2026-04-21`：Pipeline 1 处理 The Epoch Times / Makai Allbert 关于 intuition / gut feeling 的健康特写；判定为 A 类小回写，已在 `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` §5 增加 `intuition-source discernment` 护栏，将直觉分流为 `L_2` 熟练模式、`\theta_{somatic}` 内感受/风险读数与候选 `L_0` 早期方向信号；presentiment / precognition / microtubule speculation 不进入正文，只作为残余压力留痕。
 - `2026-04-20`：Pipeline 1 处理 Science and Culture 关于纪录片 *The Story of Everything* 的宣传性评论；判定为 C 类不融入正文，因其把宇宙开端、fine-tuning、DNA code 与 beauty 组合成 intelligent design / theism 解释链，但未提供新的同行评审锚点、机制变量或可证伪窗口；已在 `Operations/_SRT_MATERIAL_LOG.md` 留痕。

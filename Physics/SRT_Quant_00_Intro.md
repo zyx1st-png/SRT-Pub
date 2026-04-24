@@ -231,6 +231,29 @@ MIT 的 `idealized double-slit` 变体使用 ultracold atoms 充当最小“狭�
 
 ---
 
+### 0.2.1b Classical Action-Density Bridge (RSPA 2026)
+
+Lohmiller 与 Slotine 的 *Proceedings of the Royal Society A* 论文 `On computing quantum waves exactly from classical action`（2026；doi:`10.1098/rspa.2025.0413`；arXiv:`2405.06328`）提供了一个值得吸收的形式接口：在若干量子问题中，精确波函数可由 **multi-valued classical action** 与其 associated classical position density 组合构造，而不是必须对 Feynman 式无穷 zig-zag 路径逐项求和。MIT News 对该工作的报道强调，作者用改写后的 Hamilton-Jacobi / least-action 框架复现了 double-slit、quantum tunneling、hydrogen atom 与 EPR 相关案例的量子结果。
+
+对 SRT 来说，这条材料最稳的落点不是“量子现象其实是经典现象”，而是 **`L_0` 的多路径候选结构可以在某些物理问题中通过 action + density 的低维桥接被精确计算**。这正好加固本文件的 path-measure 读法：
+
+\[
+P(k) \propto \int_{\Gamma_k} e^{-\Phi[\gamma]}\,\mathcal D\gamma
+\]
+
+可以在局部物理语境中被更细地读成：`Γ_k` 不一定要作为无穷路径总和直接承担全部计算负担；当问题允许有限或离散的 extremal action branches 时，classical density over those branches 可作为波函数结构的计算接口。这里的 density 不是 `L_2` 历史沉积密度，也不是 SRT 的 `d-value`；它是物理配置空间中路径可达性的概率/流体式读数。
+
+**SRT Implication（中文）**：双缝干涉可更稳地写成“未锚定路径候选的 action-density 结构仍在共同承重”，而不是“粒子真的沿某条隐藏经典轨道走了”。测量发生时，SRT 仍把问题写成 `\hat{G}_\theta` 将可计算的多路径候选结构压成一个稳定 `L_1` 结果；该论文只加固了候选结构如何被计算，不替代测量/锚定判据本身。
+
+**Boundary（中文）**：
+
+- 这是 mathematical / computational bridge，不是 `L_0 = classical action` 或 `quantum = classical` 的本体同一声明。
+- 文中 “hidden variable / density / action branch” 的语言不能直接升级成 Bohm-like ontology；在 SRT 中更稳地保留为配置空间与计算接口。
+- 它不解决“为什么这个结果被锚定”这一 measurement criterion；SRT 的 `\hat{G}_\theta` / proxy-observer / decoherence-readout 条件仍需另行承担。
+- 该桥接对 SRT 最有价值的是收紧 `path-measure view` 与 quantum-classical boundary 的形式表达，而不是替代现有量子诠释边界。
+
+---
+
 ### 0.2.2 Wheeler Delayed-Choice Experiment: Temporal Non-Locality of Selection
 
 **Experimental Finding**: Even after a photon has "passed through" the double slit, deciding whether to detect path information still affects the interference pattern. The photon appears to "retroactively" change its behavior.

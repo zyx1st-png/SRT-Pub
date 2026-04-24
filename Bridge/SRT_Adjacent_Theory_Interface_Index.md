@@ -49,6 +49,7 @@ Compressed rule:
 | **IIT / PCI** | `L_1` integration-side structure; clinical consciousness proxy; perturbational complexity readout | `Neuroscience/SRT_Clin_00_IIT_PCI.md`; `Neuroscience/SRT_Neuro_09_Integ_Eq.md`; `Neuroscience/SRT_Consciousness_Mechanisms.md` | `Φ` / PCI are integration or complexity readouts; they are not canonical `d-value` and do not by themselves supply stake / payability. |
 | **GNW / Global Workspace** | `L_1` global availability, reportability, broadcast, and ignition | `Neuroscience/SRT_Consciousness_Mechanisms.md`; `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`; `Neuroscience/SRT_Neuro_Experiments.md`; `AI/SRT_AI_03_Consciousness_Framework.md` | GNW explains access / broadcast after selection; it does not explain the full `L_0 -> L_1` selection origin. |
 | **Quantum measurement / decoherence / Quantum Darwinism** | Physical `L_0 -> L_1` actualization interface; pointer states, measurement events, environment-induced stability | `Physics/SRT_Quant_00_Intro.md`; `Physics/SRT_Quant_01_Selection.md`; `Physics/SRT_Quant_01_Selection_CompactCore.md`; `graphify-out/wiki/Measurement_as_Selection.md`; `graphify-out/wiki/Quantum_Darwinism_Equivalence.md` | Quantum measurement is a physical bridge instance of actualization; SRT is not reducible to quantum collapse theory. |
+| **Classical action-density quantum bridge** | Computational bridge for physical `L_0` multipath candidates; least-action branches plus density can reconstruct quantum wave structure in specific problems | `Physics/SRT_Quant_00_Intro.md §0.2.1b`; `Physics/SRT_Quant_00_Intro_CompactCore.md §2.2`; `Physics/SRT_Quant_01_Selection.md Lemma Sel-POVM` | Action-density reconstruction is a mathematical / computational interface, not `L_0 = classical action` and not a replacement for measurement / anchoring criteria. |
 | **Multilevel selection** | Cross-scale selection pressure; which level pays consequences and receives future-selection feedback | `papers/ontological_friction/paper_ontological_friction.md`; `Core/SRT_Core_21c_Bridge_Hypotheses.md`; `_SRT_D_VALUE_CANONICAL.md`; `_SRT_PSI_F_CANONICAL.md` | Always specify the selection level: gene, cell, organism, group, institution, ecology. Do not use “selection” without consequence-return level. |
 | **Niche construction / language ecology** | `L_1 -> L_2 -> L_1` environmental rewrite; organisms and language-users reshape their own future selection landscape | `Philosophy/SRT_SocTheory_05_Language_Eco.md`; `Core/SRT_Core_12b_Ontology_L2.md`; `Core/SRT_Core_14_Dynamics_Scaling.md` | Niche construction is an evolutionary / ecological instance of SRT writeback, not the whole SRT mechanism. |
 | **Shared intentionality / social cognition** | Multi-operator coordination, joint attention, shared goals, and collective `L_2` stabilization | `Philosophy/SRT_Social_Cognition.md`; `Philosophy/_SRT_Phil_Axioms.md`; `Neuroscience/SRT_Neuro_Experiments.md` | Shared intentionality explains human-social coordination; it does not define all cross-domain selection. |
@@ -130,6 +131,8 @@ IIT / PCI and GNW should not be collapsed into one consciousness interface.
 
 Quantum measurement, decoherence, and Quantum Darwinism belong to the physical `L_0 -> L_1` bridge. They are useful because they model how physical alternatives become stable, recordable, and redundant under environmental interaction.
 
+Classical action-density reconstructions belong in the same physical interface family, but with a narrower role: they help compute the structured multipath candidate field before measurement. They do not define the measurement event itself.
+
 ### Existing locations
 
 - `Physics/SRT_Quant_00_Intro.md`
@@ -144,6 +147,8 @@ Quantum measurement, decoherence, and Quantum Darwinism belong to the physical `
 ### Safe wording
 
 > Quantum measurement theories provide a physical actualization interface for `L_0 -> L_1`. Decoherence, pointer states, and environmental redundancy may be read as physical bridge mechanisms for how some possibilities become stable, recordable, and objective-like.
+
+> Action-density bridges may be used to describe how a quantum wave structure is computed from multi-valued classical action branches and their density, while keeping measurement / anchoring as a separate SRT question.
 
 ### Boundary
 
@@ -272,4 +277,3 @@ When adding new adjacent-theory material:
 3. Always mark the interface role.
 4. Always mark the boundary condition.
 5. Do not promote bridge interfaces into P0/P1 core claims without updating the claim ladder and canonical registry.
-
