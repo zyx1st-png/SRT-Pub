@@ -14,15 +14,15 @@ claim_mode: navigation
 
 ## Summary
 
-- Tracked files checked: `1140`
-- Navigation files scanned: `15`
-- Unique navigation references detected: `229`
-- Directory references detected: `7`
-- Referenced tracked files: `283`
-- Ignored files: `248`
+- Tracked files checked: `1143`
+- Navigation files scanned: `19`
+- Unique navigation references detected: `335`
+- Directory references detected: `8`
+- Referenced tracked files: `419`
+- Ignored files: `202`
 - Unreferenced high-priority candidates: `0`
-- Unreferenced medium-priority candidates: `73`
-- Unreferenced low-priority candidates: `536`
+- Unreferenced medium-priority candidates: `0`
+- Unreferenced low-priority candidates: `522`
 
 Interpretation: high/medium/low are review priorities, not proof that a file must be added to navigation.
 
@@ -38,6 +38,10 @@ Interpretation: high/medium/low are review priorities, not proof that a file mus
 - `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md`
 - `_SRT_MEDIUM_AI_NEURO_COVERAGE_INDEX.md`
 - `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md`
+- `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`
+- `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`
+- `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`
+- `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md`
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md`
 - `Governance/README.md`
 - `Operations/README.md`
@@ -50,81 +54,7 @@ None.
 
 ## Medium-Priority Unreferenced Candidates
 
-| Path | Reason |
-|---|---|
-| `Physics/SRT_AT_Physics_of_Causation_Processing_2026-03-02.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_07_Complex_Systems.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_08_Ontology_Ext.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_09_Formalism_Ext.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_10_Integration.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Phys_10_Integration_CompactCore.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Physics_Cosmology.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Quant_02_Cosmology.md` | domain or paper theory file not referenced by navigation |
-| `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | domain or paper theory file not referenced by navigation |
-| `SRT_FAQ_CRITICAL.md` | root-level SRT/theory file not referenced by navigation |
-| `SRT_OPTIMIZATION_BACKLOG.md` | root-level SRT/theory file not referenced by navigation |
-| `SRT_TOPIC_CONSCIOUSNESS_AGENCY_INDEX.md` | root-level SRT/theory file not referenced by navigation |
-| `SRT_TOPIC_FREE_WILL_INDEX.md` | root-level SRT/theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_01_Religion_Ontology.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_02_Traditions.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_03_Zhensong_NDE.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_04_Synthesis.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_05_Shoshin.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_06_Love_Ontology.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_07_Meditation_Neuro.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirit_08_Music.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirituality_Return_Expansion_Bridge.md` | domain or paper theory file not referenced by navigation |
-| `Spirituality/SRT_Spirituality_Second_Expansion_Bridge.md` | domain or paper theory file not referenced by navigation |
-| `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md` | root-level SRT/theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_new.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v10_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v11_anonymous_submission.html` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v11_anonymous_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v12_anonymous_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v12_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v13_anonymous_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v13_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v14_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v15_anonymous_submission.html` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v15_anonymous_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v15_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v15_zh_archive.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v3.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v4.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v5_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v6_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v7_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v8_compact_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_SelectiveRealityConstruction_v9_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_linklings_fill_guide.md` | domain or paper theory file not referenced by navigation |
-| `papers/ALIFE2026_submission_checklist.md` | domain or paper theory file not referenced by navigation |
-| `papers/SRT_Article_BorrowedDirection_v1_2026-04.md` | domain or paper theory file not referenced by navigation |
-| `papers/SRT_Article_BorrowedDirection_v2_2026-04.md` | domain or paper theory file not referenced by navigation |
-| `papers/SRT_Article_GoodTeacher_v1_2026-04.md` | domain or paper theory file not referenced by navigation |
-| `papers/SRT_Article_SelectionSubject_v1_2026-04.md` | domain or paper theory file not referenced by navigation |
-| `papers/SRT_Article_ValueHiddenness_2026-04.md` | domain or paper theory file not referenced by navigation |
-| `papers/SRT_Article_ValueHiddenness_v3_2026-04.md` | domain or paper theory file not referenced by navigation |
-| `papers/alife2026_pilot_results/pilot_results_summary.md` | domain or paper theory file not referenced by navigation |
-| `papers/markov_blanket/paper_markov_blanket_d_value.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_contribution_to_field_statement.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_cover_letter.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_figure_captions.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_scope_statement.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_submission_checklist.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_submission_fields.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_submission_fields_zh.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/frontiers_submission_qc.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/paper_ontological_friction.html` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/paper_ontological_friction_frontiers_submission.html` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/paper_ontological_friction_frontiers_submission.md` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/paper_ontological_friction_zh.html` | domain or paper theory file not referenced by navigation |
-| `papers/ontological_friction/paper_ontological_friction_zh.md` | domain or paper theory file not referenced by navigation |
-| `papers/working_notes/PAPER_ABSTRACT_DRAFT_PartialClosure_Ncrit_2026-03-02.md` | domain or paper theory file not referenced by navigation |
+None.
 
 ## Low-Priority Unreferenced Candidates
 
@@ -159,16 +89,7 @@ None.
 | `AI/Ontology_Split/README.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Archive/root_misc/README.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Archive/root_misc/_COMMUNITY_Ontology II - The Vergence Domain  Hysteresis Accumulation.md` | support/split/annex/operations artifact; review only if repeatedly useful |
-| `D_VALUE_ALIGNMENT.md` | unreferenced theory-like file |
 | `Glossary/README.md` | support/split/annex/operations artifact; review only if repeatedly useful |
-| `Glossary/SRT_Glossary_00_Governance_and_Prelude.md` | unreferenced theory-like file |
-| `Glossary/SRT_Glossary_01_Core_Symbols.md` | unreferenced theory-like file |
-| `Glossary/SRT_Glossary_02_Notation.md` | unreferenced theory-like file |
-| `Glossary/SRT_Glossary_03_Domain_Parameters.md` | unreferenced theory-like file |
-| `Glossary/SRT_Glossary_04_Key_Concepts.md` | unreferenced theory-like file |
-| `Glossary/SRT_Glossary_05_Expectation_and_Selection.md` | unreferenced theory-like file |
-| `Glossary/SRT_Glossary_05_Hypothesis_Index.md` | unreferenced theory-like file |
-| `Glossary/SRT_Glossary_06_Locations_and_Usage.md` | unreferenced theory-like file |
 | `Philosophy/Foundations_Annex/00_General_Boundary_Block.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Philosophy/Foundations_Annex/01_Synchronicity_Interface_Batch.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Philosophy/Foundations_Annex/02_FreeWill_Interface_Batch.md` | support/split/annex/operations artifact; review only if repeatedly useful |
@@ -214,10 +135,6 @@ None.
 | `Physics/Formalism_Ext_Split/03_Quantum_and_Advanced_Extensions.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Physics/Formalism_Ext_Split/04_Symbols_and_Interfaces.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Physics/Formalism_Ext_Split/README.md` | support/split/annex/operations artifact; review only if repeatedly useful |
-| `SRT 金句.md` | unreferenced theory-like file |
-| `SRT_PP_ALIGNMENT_GUIDE.md` | support/split/annex/operations artifact; review only if repeatedly useful |
-| `SRT_PRACTICE_COMMUNITY_PLAN.md` | support/split/annex/operations artifact; review only if repeatedly useful |
-| `Selection-Reality Theory (SRT).md` | unreferenced theory-like file |
 | `Spirituality/Praxis_Split/00_Formal_Core.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Spirituality/Praxis_Split/01_30Days_to_6Months.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Spirituality/Praxis_Split/02_1to3Years_and_LifeIntegration.md` | support/split/annex/operations artifact; review only if repeatedly useful |
@@ -430,23 +347,35 @@ None.
 | `graphify-out/wiki/Meta-Definitions_-_Triadic_Manifold_Partition.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `graphify-out/wiki/Metabolic_Friction.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `graphify-out/wiki/Methodological_Closure_Guard(方法论闭包护栏，新增).md` | support/split/annex/operations artifact; review only if repeatedly useful |
-| ... | truncated; 236 more |
+| `graphify-out/wiki/Microgravity_d-value_Drift.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Microtubule_as_Interface.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Mind-Body_Two-Horn_Constraint.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Minimal_Consciousness_Candidate_Window.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Minimal_Embodiment_Threshold.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Minimum_Selection_Interval.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Money_as_L2_Metric.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Moral_Prediction_Error.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Mortality_Coupling.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Mortality_and_Wisdom.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Mortality_and_Wisdom_-_Mortality_Coupling.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/NCC_Non-Equivalence.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `graphify-out/wiki/Natural_Gradient_Descent.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| ... | truncated; 222 more |
 
 ## Unreferenced Candidates by Top-Level Directory
 
 | Directory | Count |
 |---|---:|
 | `graphify-out` | 428 |
-| `papers` | 47 |
 | `Philosophy` | 33 |
 | `AI` | 26 |
-| `Physics` | 24 |
-| `Spirituality` | 16 |
-| `.` | 12 |
+| `Physics` | 12 |
 | `video` | 11 |
-| `Glossary` | 9 |
+| `Spirituality` | 6 |
+| `.` | 2 |
 | `Archive` | 2 |
 | `.agents` | 1 |
+| `Glossary` | 1 |
 
 ## Suggested Review Workflow
 
