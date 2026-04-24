@@ -114,6 +114,10 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`（bridge hardening entry; not a canonical core source）
 - `Core/SRT_OPEN_TENSIONS.md`
 
+### Bridge / Interface
+
+- `Bridge/SRT_Adjacent_Theory_Interface_Index.md`（navigation index for adjacent-theory interfaces; not a canonical core source）
+
 ### AI
 
 - `AI/_SRT_AI_Bridge.md`
@@ -173,4 +177,5 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `SRT_Navigation_Map.md` 是人类阅读地图，不是 registry 摘要
 - `STATUS.md` 现在只保留当前状态，不再承载长历史
 - `Core/SRT_Core_21_Formal_Axioms.md` 现在是 Core_21 claim-layer index，不再是混层公理正文
+- `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 是相邻理论接口导航，不新增 P0/P1，不替代 FEP/IIT/GNW/量子/社会现实等既有正文
 - Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
