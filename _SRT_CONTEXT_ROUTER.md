@@ -70,7 +70,7 @@ When answering or editing a deep SRT question:
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Clin_00_IIT_PCI.md`
 - `AI/SRT_AI_03_Consciousness_Framework.md`
-- `Philosophy/SRT_Consciousness_Conditions.md`
+- `graphify-out/wiki/SRT_Consciousness_Conditions.md`
 - `SRT_EXP_MEASURE_MAP.md`（for lab proxy mapping）
 
 ### Boundary
@@ -78,6 +78,7 @@ When answering or editing a deep SRT question:
 - Do not reduce `d-value` to Fisher effective dimension.
 - Do not reduce `d-value` to IIT `Φ`, GNW access, preference strength, or pain.
 - `D_eff`, Fisher rank, and bandwidth are capacity proxies unless stake-coupling and payability are satisfied.
+- Graphify consciousness condition files are support-only and do not override `_SRT_D_VALUE_CANONICAL.md`.
 
 ---
 
@@ -141,13 +142,14 @@ When answering or editing a deep SRT question:
 - `Core_Law/SRT_L0_Metaphysics.md`
 - `Core/SRT_Core_12a_Ontology_L0L1.md`
 - `Core/SRT_Core_12b_Ontology_L2.md`
-- `graphify-out/wiki/Ontology_Split_Index.md`（support-only generated index）
 
 ### Secondary
 
+- `graphify-out/wiki/Ontology_Split_Index.md`（support-only generated index）
 - `_SRT_VERTICAL_INTEGRATION.md`
 - `SRT_Fisher_FEP_Landscape_Interface.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 
 ### Boundary
 
@@ -208,7 +210,7 @@ When answering or editing a deep SRT question:
 
 ## 8. Route: IIT / PCI / GNW / Consciousness Mechanisms
 
-**Use when the query mentions**: IIT, `Φ`, PCI, GNW, global workspace, access consciousness, consciousness mechanisms, ignition.
+**Use when the query mentions**: IIT, `Φ`, PCI, GNW, global workspace, access consciousness, consciousness mechanisms, ignition, hard problem, explanatory gap.
 
 ### Primary
 
@@ -223,12 +225,15 @@ When answering or editing a deep SRT question:
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
 - `SRT_EXP_MEASURE_MAP.md`
+- `graphify-out/wiki/SRT_Consciousness_Conditions.md`
+- `graphify-out/wiki/SRT_Hard_Problem_Epistemology.md`
 
 ### Boundary
 
 - IIT / PCI are integration or complexity readouts.
 - GNW is global availability / broadcast.
 - Neither defines `d-value` or `Ψ_f`.
+- Graphify consciousness pages are support-only and should not outrank canonical consciousness / d-value / Ψ_f sources.
 
 ---
 
@@ -271,6 +276,7 @@ When answering or editing a deep SRT question:
 ### Secondary
 
 - `Philosophy/SRT_SocTheory_05_Language_Eco.md`
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 - `Core/SRT_Core_12b_Ontology_L2.md`
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
 
@@ -284,7 +290,7 @@ When answering or editing a deep SRT question:
 
 ## 11. Route: Language / Social Reality / Institutions / L2 Social Layer
 
-**Use when the query mentions**: language, social reality, institutions, norms, money, law, roles, social construction, social cognition, social `L2`.
+**Use when the query mentions**: language, social reality, institutions, norms, money, law, roles, social construction, social cognition, social `L2`, L2 dynamics.
 
 ### Primary
 
@@ -293,6 +299,7 @@ When answering or editing a deep SRT question:
 - `Philosophy/SRT_Social_Economics_CompactCore.md`
 - `Philosophy/SRT_Social_MacroDynamics.md`
 - `Philosophy/SRT_SocTheory_05_Language_Eco.md`
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 
 ### Secondary
 
@@ -325,6 +332,7 @@ When answering or editing a deep SRT question:
 - `Neuroscience/SRT_Consciousness_Mechanisms.md`
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md`
 - `SRT_EXP_TEMPLATE.md`
+- `graphify-out/wiki/SRT_Consciousness_Conditions.md`
 
 ### Boundary
 
@@ -336,7 +344,7 @@ When answering or editing a deep SRT question:
 
 ## 13. Route: Experimental Proxies / Measurement / Falsification
 
-**Use when the query mentions**: experiment, measurement, proxy, falsification, lab, operationalization, `HRV`, `SCR`, PCI proxy, Fisher proxy, ROS proxy, task switching, measure map.
+**Use when the query mentions**: experiment, measurement, proxy, falsification, lab, operationalization, variables, protocol, empirical test, `HRV`, `SCR`, PCI proxy, Fisher proxy, ROS proxy, task switching, measure map.
 
 ### Primary
 
@@ -352,6 +360,7 @@ When answering or editing a deep SRT question:
 - `_SRT_D_VALUE_CANONICAL.md`
 - `Core/SRT_Core_22_Equations.md`
 - `papers/ontological_friction/paper_ontological_friction.md`
+- `Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md`
 
 ### Boundary
 
@@ -424,6 +433,7 @@ When answering or editing a deep SRT question:
 
 - Relevant canonical anchor depending on the topic.
 - `Operations/_SRT_DEEP_NAV_TODO.md`
+- `Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md`
 
 ### Boundary
 
@@ -432,7 +442,55 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 17. Maintenance Rule
+## 17. Route: Writing / Article Framing / Public Communication
+
+**Use when the query mentions**: article topic, writing, media, public communication, Medium, Substack, video script, social post, topic planning.
+
+### Primary
+
+- `SRT_TOPIC_ARTICLE_INDEX.md`
+- `Operations/_SRT_MEDIA_PIPELINE.md`
+
+### Secondary
+
+- `SRT_Navigation_Map.md`
+- `SRT_Quick_Start.md`
+- Relevant theory route depending on selected topic
+
+### Boundary
+
+- Writing indexes route theory into article topics; they do not define theory.
+- Always return to canonical anchors before making strong claims in public-facing writing.
+
+---
+
+## 18. Route: Publication / Paper Preparation / Review Risk
+
+**Use when the query mentions**: paper, publication, manuscript, submission, journal fit, reviewer risk, Entropy, JCS, ALIFE, internal review.
+
+### Primary
+
+- `Operations/_SRT_PAPER_PIPELINE.md`
+- `papers/working_notes/PAPER_INTERNAL_REVIEW_ACTIONS_2026-03-02.md`
+- `Core/SRT_OPEN_TENSIONS.md`
+
+### Secondary
+
+- `papers/ontological_friction/paper_ontological_friction.md`
+- `papers/SRT_MetaOS_JCS_v1.md`
+- `papers/SRT_MetaOS_JCS_v2.md`
+- `papers/SRT_MetaOS_JCS_reframe.md`
+- `papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.html`
+- Relevant canonical file and bridge file for the paper topic
+
+### Boundary
+
+- Paper drafts should not outrank canonical files unless explicitly promoted through the registry.
+- Review-risk edits must not silently upgrade bridge claims into core claims.
+
+---
+
+## 19. Maintenance Rule
 
 Whenever a new deep file is created:
 
