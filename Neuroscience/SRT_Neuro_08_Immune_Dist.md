@@ -404,6 +404,42 @@ Varela 的免疫知识论与 SRT 高度一致：
 
 ---
 
+### 4.3a Neuropsychiatric Autoimmunity Gate（2026-04-24）
+
+精神症状不能默认只归入神经参数漂移或心理叙事失配；在少数但临床上高价值的窗口中，它们可能是 $\hat{G}_{immune}$ 直接误攻神经目标后，对 $\hat{G}_{neural}$ 的选择门槛、节律、记忆写回与 $L_2$ 稳定性造成的二级扰动。
+
+New Scientist 2026 对 autoimmune conditions 与 mental illness 的综述性报道，最值得吸收的不是“炎症让人心情不好”这句宽泛结论，而是 **brain-directed antibodies / autoimmune encephalitis / autoimmune psychosis** 形成的鉴别诊断压力：某些 schizophrenia-like psychosis、dementia-like decline、OCD-like rigidity 或 mood symptoms，可能不是 primary psychiatric disorder 的单一路径，而是免疫算子把神经受体、突触蛋白或中枢组织误标为威胁后的跨算子后果。
+
+这条接口可写成：
+
+\[
+\hat{G}_{immune}^{misfire}(x_{neural})
+\rightarrow
+\Delta\theta_{neural}
+\rightarrow
+\Delta L_1^{psychiatric}
+\land
+\Delta L_2^{self/memory}
+\]
+
+其中 $x_{neural}$ 可包括受体、突触蛋白、髓鞘、胶质调节目标或其他中枢抗原。其 SRT 意义是：免疫系统的“自我/非我”边界错误，不只会在外周组织中表现为炎症，也可能把中枢神经的候选激活、抑制平衡、记忆稳定与 reality-model 写回链条拖入异常。
+
+**Clinical gate（候选）**：若精神症状呈现急性/亚急性起病、波动性意识或记忆受损、癫痫/运动异常/自主神经不稳、紧张症、非典型多形性症状、治疗反应异常、或伴随系统性自身免疫线索，应先启动 immune / neuroimmune exclusion gate，再把病例稳定写入普通 psychiatric $\Delta\theta$ 分类。
+
+**Evidence split**：
+
+- BMJ Mental Health / Our Future Health 大队列支持较宽的 chronic inflammatory condition ↔ affective disorder 关联：自身免疫群体中 depression / anxiety / bipolar 等 affective disorders 更常见，但该研究是观察性、self-report，并缺乏疾病时间线与直接炎症 biomarker。
+- Autoimmune encephalitis / autoimmune psychosis 文献支持较窄的可治疗窗口：anti-NMDAR encephalitis 等疾病可先以精神症状显现，部分疑似 first-episode psychosis 需通过 CSF、MRI、EEG、神经抗体与神经体征综合判定。
+
+**Boundary**：
+
+- 该接口不是“多数精神疾病都是自身免疫病”的声明。
+- serum autoantibody 阳性不能单独定义 autoimmune psychiatric disorder；CSF、MRI、EEG、神经体征、病程与治疗反应必须共同约束。
+- “autoimmune OCD / autoimmune depression / autoimmune dementia”等标签只能作 differential-diagnosis prompt，不能把综合征名称直接重命名为病因。
+- 免疫治疗、抗炎治疗或免疫筛查属于临床专业判断，本文件只固定理论和鉴别诊断边界。
+
+---
+
 # 5 炎症-抑郁关联的 SRT 解释
 
 ## 5.1 炎症假说的兴起
@@ -616,7 +652,7 @@ SRT 的分布式算子框架提供了一个新的自我隐喻：
 ### Mechanism Explanation (机制解释)
 
 - **$\hat{G}_\theta$ 的分布式结构**: 大脑、免疫系统、肠道各自运行独立 $\hat{G}$ 子算子，通过同步耦合项 ($\eta$) 协调为统一选择流。
-- **$\Psi_f$ 的免疫调制**: 慢性炎症可能抬高局部负担 proxy，使候选点燃门槛上升（"脑雾"）；免疫系统的自身免疫 = $\hat{G}_{immune}$ 的分类先验错误。
+- **$\Psi_f$ 的免疫调制**: 慢性炎症可能抬高局部负担 proxy，使候选点燃门槛上升（"脑雾"）；免疫系统的自身免疫 = $\hat{G}_{immune}$ 的分类先验错误。若该错误直接指向中枢神经目标，则可形成 neuropsychiatric autoimmunity gate：精神症状先作为跨算子误攻的读数处理，而不是立即归入 primary psychiatric $\Delta\theta$。
 - **$d$ 值的多器官依赖**: 完整的 $d$ 值需要神经-免疫-肠脑多子算子的协同带宽；任一子系统降级都缩窄总体关切范围。
 
 ## 【理论边界/防误用声明】

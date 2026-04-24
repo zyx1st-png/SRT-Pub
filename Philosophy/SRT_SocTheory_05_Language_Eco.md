@@ -113,6 +113,32 @@ $$W_k(\hat{G}_B) = \Delta \Pi_B \text{ such that } \hat{G}_B[L_0] \approx \hat{G
 
 ---
 
+### Empirical Interface Note: Non-Human Phonology-Like Coding (2026-04-24)
+
+**Claim level**: P3 empirical interface. This note supports cross-species comparison of communication protocols; it does not redefine language as such, and does not claim that sperm whales possess human semantic language.
+
+Project CETI's sperm-whale work adds a useful bridge constraint for Ax-Lang-1 and Ax-Lang-4. The 2024 *Nature Communications* paper showed that sperm-whale codas are not merely fixed click labels: rhythm, tempo, rubato, and ornamentation combine into a larger context-sensitive coda space. The 2026 *Proceedings of the Royal Society B* follow-up sharpens this by arguing that coda "vowel" qualities (`a-codas` / `i-codas`), duration contrasts, individual timing baselines, and edge-click interactions pattern in ways close to human phonology.
+
+For SRT, the stable import is not "whales speak human-like sentences." The stronger and safer point is:
+
+\[
+\text{Social vocal exchange}
+\rightarrow
+\text{context-sensitive combinatorial code}
+\rightarrow
+\Delta\theta_{\text{receiver}}^{social}
+\]
+
+This supports the view that language-like structure can emerge first as a **phonology / protocol layer**: reusable acoustic units become jointly constrained by caller identity, conversational context, turn-taking, and social coordination before their semantic payload is decoded. In SRT terms, a communication system may begin by stabilizing the receiver's selection context (`\Delta \theta`) rather than by transmitting fully explicit propositions.
+
+**Boundary**:
+
+- Phonology-like patterning is not yet semantics, syntax, reference, or recursive propositional language.
+- Similarity to human vowels does not imply shared neural architecture or human-level consciousness.
+- The result should be used as an independent-evolution pressure on human exceptionalism, not as a claim that all complex animal calls are language.
+
+---
+
 ### T-Lang-2: World Synchronization Theorem (世界同步定理)
 当两个主体通过高频语言交换达到稳态时，他们的存在域发生度量融合：
 \[
