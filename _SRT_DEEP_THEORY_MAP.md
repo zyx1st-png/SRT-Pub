@@ -71,13 +71,14 @@ What is `L0` and how can latent potentiality be structured without being already
 
 ### Support files
 
-- `_SRT_CONTEXT_ROUTER.md Route 4`
+- `_SRT_CONTEXT_ROUTER.md Route 5`
 - `Physics/SRT_Quant_00_Intro.md`
 - `Physics/SRT_Quant_01_Selection.md`
+- `graphify-out/wiki/Ontology_Split_Index.md`
 
 ### Boundary
 
-`L0` is not nothingness, not merely hidden variables, and not identical with quantum superposition. Quantum superposition is a physical bridge case.
+`L0` is not nothingness, not merely hidden variables, and not identical with quantum superposition. Quantum superposition is a physical bridge case. Graphify ontology pages are support-only.
 
 ---
 
@@ -122,6 +123,7 @@ How do repeated selections become habits, laws, norms, institutions, attractors,
 - `Philosophy/SRT_Social_Economics.md`
 - `Philosophy/SRT_Social_MacroDynamics.md`
 - `Philosophy/SRT_SocTheory_05_Language_Eco.md`
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md`
 
 ### Boundary
@@ -148,6 +150,7 @@ What is the cost, friction, or payability burden of actualizing and maintaining 
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `_SRT_VERTICAL_INTEGRATION.md`
 - `papers/ontological_friction/paper_ontological_friction.md`
+- `SRT_EXP_MEASURE_MAP.md`
 
 ### Boundary
 
@@ -172,11 +175,12 @@ What makes a system's selections matter to itself or to its future selection cap
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `AI/SRT_AI_03_Consciousness_Framework.md`
 - `Neuroscience/SRT_Clin_00_IIT_PCI.md`
-- `Philosophy/SRT_Consciousness_Conditions.md`
+- `graphify-out/wiki/SRT_Consciousness_Conditions.md`
+- `SRT_EXP_MEASURE_MAP.md`
 
 ### Boundary
 
-`d-value` is not information integration alone, not Fisher rank alone, not preference intensity, and not suffering. It requires stake coupling and payability.
+`d-value` is not information integration alone, not Fisher rank alone, not preference intensity, and not suffering. It requires stake coupling and payability. Graphify consciousness conditions are support-only.
 
 ---
 
@@ -195,6 +199,7 @@ What is the operator that maps latent possibilities into manifest selections?
 
 ### Support files
 
+- `Core/SRT_Core_13a_Operator_Basics.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Neural_Mechanisms.md`
 - `Physics/SRT_Quant_01_Selection.md`
@@ -250,6 +255,7 @@ How does SRT relate to FEP, IIT/GNW, quantum measurement, multilevel selection, 
 - `Physics/SRT_Quant_01_Selection.md`
 - `Philosophy/SRT_Social_Cognition.md`
 - `Philosophy/SRT_Social_Economics.md`
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 
 ### Boundary
 
@@ -274,11 +280,13 @@ When does selection become conscious, and how do integration, access, stake, and
 
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
-- `Philosophy/SRT_Consciousness_Conditions.md`
+- `graphify-out/wiki/SRT_Consciousness_Conditions.md`
+- `graphify-out/wiki/SRT_Hard_Problem_Epistemology.md`
+- `SRT_EXP_MEASURE_MAP.md`
 
 ### Boundary
 
-Consciousness is not reducible to IIT, GNW, attention, reportability, or integration alone. SRT requires selection, anchoring, stake, and payability relations.
+Consciousness is not reducible to IIT, GNW, attention, reportability, or integration alone. SRT requires selection, anchoring, stake, and payability relations. Graphify consciousness pages are support-only.
 
 ---
 
@@ -321,6 +329,7 @@ How do language, shared intentionality, social cognition, institutions, and norm
 - `Philosophy/SRT_Social_Economics_CompactCore.md`
 - `Philosophy/SRT_Social_MacroDynamics.md`
 - `Philosophy/SRT_SocTheory_05_Language_Eco.md`
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
 
 ### Support files
 
@@ -352,6 +361,7 @@ Can artificial systems have selection, stake, payability, or consciousness-like 
 
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms.md`
+- `graphify-out/wiki/SRT_Consciousness_Conditions.md`
 
 ### Boundary
 
@@ -409,7 +419,84 @@ Spirituality files provide existential / praxis interpretation. They do not own 
 
 ---
 
-## 16. Open Tensions Node
+## 16. Experimental / Lab / Falsification Node
+
+### Core question
+
+How can SRT claims be operationalized, measured, or falsified?
+
+### Primary files
+
+- `SRT_EXP_MEASURE_MAP.md`
+- `SRT_EXP_TEMPLATE.md`
+- `Governance/SRT_LAB_HYPOTHESES.md`
+- `_SRT_EQ_HYP_MAP.md`
+
+### Support files
+
+- `Neuroscience/SRT_Neuro_Experiments.md`
+- `Core/SRT_OPEN_TENSIONS.md`
+- `papers/ontological_friction/paper_ontological_friction.md`
+- `_SRT_PSI_F_CANONICAL.md`
+- `_SRT_D_VALUE_CANONICAL.md`
+
+### Boundary
+
+Lab routes produce proxies and tests; they do not create canonical definitions.
+
+---
+
+## 17. Writing / Media / Public Communication Node
+
+### Core question
+
+How should deep SRT content be transformed into article topics, scripts, public explanations, or media outputs?
+
+### Primary files
+
+- `SRT_TOPIC_ARTICLE_INDEX.md`
+- `Operations/_SRT_MEDIA_PIPELINE.md`
+
+### Support files
+
+- `SRT_Navigation_Map.md`
+- `SRT_Quick_Start.md`
+- Relevant theory node depending on topic
+
+### Boundary
+
+Writing indexes do not define SRT. They reorganize existing theory into communicable problem frames.
+
+---
+
+## 18. Publication / Review / Paper Preparation Node
+
+### Core question
+
+How should SRT papers be prepared, reviewed, submitted, and hardened against reviewer risk?
+
+### Primary files
+
+- `Operations/_SRT_PAPER_PIPELINE.md`
+- `papers/working_notes/PAPER_INTERNAL_REVIEW_ACTIONS_2026-03-02.md`
+- `Core/SRT_OPEN_TENSIONS.md`
+
+### Support files
+
+- `papers/ontological_friction/paper_ontological_friction.md`
+- `papers/SRT_MetaOS_JCS_v1.md`
+- `papers/SRT_MetaOS_JCS_v2.md`
+- `papers/SRT_MetaOS_JCS_reframe.md`
+- `papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.html`
+- Relevant canonical and bridge files for the paper topic
+
+### Boundary
+
+Paper drafts do not outrank canonical definitions. Review-risk edits must not silently upgrade claim level.
+
+---
+
+## 19. Open Tensions Node
 
 ### Core question
 
@@ -424,6 +511,7 @@ Where are SRT's unresolved problems, vulnerabilities, or claim-level risks?
 
 ### Support files
 
+- `Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md`
 - Relevant canonical file for the topic.
 - Relevant bridge or domain file.
 
@@ -433,7 +521,7 @@ Tensions should be routed and classified, not silently patched by upgrading clai
 
 ---
 
-## 17. Maintenance Rule
+## 20. Maintenance Rule
 
 When a new deep content file appears:
 
