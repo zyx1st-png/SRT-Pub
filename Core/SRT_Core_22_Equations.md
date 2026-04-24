@@ -94,6 +94,116 @@ $$d_i = D_{eff}\!\left(\mathcal{F}_{collective}\big|_{\theta_i}\right)$$
 
 ---
 
+## 0-D. Bridge Equations: Information Geometry / Complexity / Neural Computation
+
+> **Status**: bridge / operational proxy equations. This section does not add P0/P1 theorems and does not replace the canonical definitions of `Ψ_f`, `d-value`, `Ĝθ`, or `L_0 / L_1 / L_2`. It only provides modeling interfaces synchronized with `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md` and `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`.
+
+### Eq-Bridge-IG-01: Fisher-Induced Local Ψ_f Cost
+
+$$
+\boxed{
+\delta\Psi_f^{geom}
+=
+\frac{1}{2}d\theta^\top g_F(\theta)d\theta
++
+O(\|d\theta\|^3)
+}
+$$
+
+This equation gives the local second-order information-geometric projection of `Ψ_f` when a smooth statistical-manifold representation exists. It must not be read as `Ψ_f ≡ g_F`; `g_F` is the Fisher-Rao metric tensor, while `Ψ_f` is a payability burden, local scalar cost, or path functional.
+
+### Eq-Bridge-IG-02: Fisher Path Functional
+
+$$
+\boxed{
+\Psi_f^{geom}[\gamma]
+=
+\int_\gamma
+\sqrt{
+g^F_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j
+}
+\,dt
+}
+$$
+
+This path functional is used for finite update paths when the statistical-manifold projection is valid. It is a geometry proxy, not the global definition of `Ψ_f`.
+
+### Eq-Bridge-D-01: Stake-Gated d-Value Proxy
+
+$$
+\boxed{
+d_{stake}
+=
+\frac{
+(\sum_i s_i\lambda_i)^2
+}{
+\sum_i(s_i\lambda_i)^2
+}
+}
+$$
+
+Here `λ_i` are Fisher-spectrum directions and `s_i ∈ [0,1]` is the stake gate for irreversible-risk coupling. This is a bridge-level proxy, not the canonical definition of `d`. `D_eff` / Fisher rank only approximate canonical `d(x)=||∂𝒰/∂𝒮||` when distinguishable directions are stake-bearing and payable.
+
+### Eq-Bridge-G-01: Ghost Operator Normalization Proxy
+
+$$
+\boxed{
+[\hat{G}_\theta(x)]_i
+=
+\frac{
+a_i(\theta,L_2)^n
+}{
+\sigma^n+\sum_j w_{ij}a_j(\theta,L_2)^n
+}
+}
+$$
+
+This is an implementation-level normalization proxy for embodied `Ĝθ`: it models candidate activation, competition, and response compression. It does not define the Ghost Operator in full; canonical `Ĝθ` remains the abstract `L_0 -> L_1` selection operator.
+
+### Eq-Bridge-L2-01: L2 Path-Trace Writeback
+
+$$
+\boxed{
+\dot{\rho}_k
+=
+\alpha\phi_k(L_1)
+-
+\beta\rho_k
++
+\eta R_k
+}
+$$
+
+Here `ρ_k` is path-trace density. The equation models how repeated `L_1` actualizations sediment into `L_2`, which may be read through attractor, order-parameter, hysteresis, and metastability structures. Energy or free-energy landscape language is only an effective projection of `L_2`, not the whole `L_2`.
+
+### Eq-Bridge-Loop-01: Minimal L0-L1-L2 Loop
+
+$$
+\boxed{
+L_0
+\xrightarrow{\hat{G}_\theta}
+L_1
+\xrightarrow{writeback}
+L_2
+\xrightarrow{constraint}
+\hat{G}_{\theta'}
+\rightarrow
+L_1'
+}
+$$
+
+This bridge-level loop reads `L_0 -> L_1` as the information-geometric frontier, `L_1 -> L_2` as complex-systems sedimentation, and `L_2 -> L_1` as constraint feedback into future selection. It does not replace core ontology.
+
+### Boundary Notes
+
+- Fisher geometry is local and projection-dependent; it does not define the whole of `Ψ_f`.
+- `d_{stake}` is a proxy, not canonical `d`.
+- Divisive normalization is an implementation proxy, not the full Ghost Operator.
+- `L2` is thicker than any one energy or free-energy landscape.
+- This section should be cited together with `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`, and `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`.
+
+---
+
 ### Eq-DValue-Max-1: Maximum Achievable d-Value（d 值可达上限）
 
 **新增（2026-04-10）**：给出单个算子在给定参数结构与稳定性预算下可实现的 d 值上限。
