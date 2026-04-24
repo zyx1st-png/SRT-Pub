@@ -45,6 +45,7 @@ When answering or editing a deep SRT question:
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `_SRT_VERTICAL_INTEGRATION.md`
 - `papers/ontological_friction/paper_ontological_friction.md`
+- `SRT_EXP_MEASURE_MAP.md`（for experimental proxies）
 
 ### Boundary
 
@@ -70,6 +71,7 @@ When answering or editing a deep SRT question:
 - `Neuroscience/SRT_Clin_00_IIT_PCI.md`
 - `AI/SRT_AI_03_Consciousness_Framework.md`
 - `Philosophy/SRT_Consciousness_Conditions.md`
+- `SRT_EXP_MEASURE_MAP.md`（for lab proxy mapping）
 
 ### Boundary
 
@@ -79,7 +81,31 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 3. Route: Ghost Operator / Selection Operator / `Ĝθ`
+## 3. Route: T_dir / Direction Transparency / Reorientation
+
+**Use when the query mentions**: `T_dir`, direction transparency, current selection direction, readability, reorientation, direction access, orientation clarity.
+
+### Primary
+
+- `_SRT_T_DIR_CANONICAL.md`
+- `_SRT_SYMBOL_TABLE.md`
+
+### Secondary
+
+- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
+- `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
+- `_SRT_CROSS_DOMAIN_MATRIX.md`
+
+### Boundary
+
+- `T_dir` is a v0 operational proxy for directional readability / reorientation.
+- It is not semantic valence, reward, confidence, or a completed ontology of will.
+- Spirituality uses of `T_dir` must route back to `_SRT_T_DIR_CANONICAL.md`.
+
+---
+
+## 4. Route: Ghost Operator / Selection Operator / `Ĝθ`
 
 **Use when the query mentions**: Ghost Operator, `Ĝ`, selection operator, collapse, anchoring, normalization, lateral inhibition, `L0 -> L1`.
 
@@ -92,6 +118,7 @@ When answering or editing a deep SRT question:
 
 ### Secondary
 
+- `Core/SRT_Core_13a_Operator_Basics.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Neural_Mechanisms.md`
 - `Physics/SRT_Quant_01_Selection.md`
@@ -105,7 +132,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 4. Route: `L0 / L1 / L2` Ontology and Domain Split
+## 5. Route: `L0 / L1 / L2` Ontology and Domain Split
 
 **Use when the query mentions**: `L0`, `L1`, `L2`, latent domain, manifest domain, convergence domain, ontology split, reality domains.
 
@@ -114,7 +141,7 @@ When answering or editing a deep SRT question:
 - `Core_Law/SRT_L0_Metaphysics.md`
 - `Core/SRT_Core_12a_Ontology_L0L1.md`
 - `Core/SRT_Core_12b_Ontology_L2.md`
-- `Ontology_Split_Index.md` if available in current navigation context
+- `graphify-out/wiki/Ontology_Split_Index.md`（support-only generated index）
 
 ### Secondary
 
@@ -127,10 +154,11 @@ When answering or editing a deep SRT question:
 - `L0` is not nothingness.
 - `L1` is not merely physical matter; it is actualized slice / event / manifest state.
 - `L2` is not identical to any single landscape; landscapes are effective projections of stable constraint domains.
+- `graphify-out/wiki/Ontology_Split_Index.md` is support-only; it is not a canonical source.
 
 ---
 
-## 5. Route: Adjacent Theories / SRT Is Not Just X
+## 6. Route: Adjacent Theories / SRT Is Not Just X
 
 **Use when the query asks**: Is SRT just FEP? IIT? GNW? Quantum collapse? Social constructionism? Multilevel selection?
 
@@ -156,7 +184,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 6. Route: FEP / Active Inference / Predictive Processing
+## 7. Route: FEP / Active Inference / Predictive Processing
 
 **Use when the query mentions**: FEP, Active Inference, predictive processing, variational free energy, Markov blanket, generative model.
 
@@ -178,7 +206,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 7. Route: IIT / PCI / GNW / Consciousness Mechanisms
+## 8. Route: IIT / PCI / GNW / Consciousness Mechanisms
 
 **Use when the query mentions**: IIT, `Φ`, PCI, GNW, global workspace, access consciousness, consciousness mechanisms, ignition.
 
@@ -194,6 +222,7 @@ When answering or editing a deep SRT question:
 - `AI/SRT_AI_03_Consciousness_Framework.md`
 - `_SRT_D_VALUE_CANONICAL.md`
 - `_SRT_PSI_F_CANONICAL.md`
+- `SRT_EXP_MEASURE_MAP.md`
 
 ### Boundary
 
@@ -203,7 +232,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 8. Route: Quantum Measurement / Decoherence / Quantum Darwinism
+## 9. Route: Quantum Measurement / Decoherence / Quantum Darwinism
 
 **Use when the query mentions**: quantum measurement, collapse, decoherence, pointer states, Quantum Darwinism, measurement as selection.
 
@@ -228,7 +257,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 9. Route: Multilevel Selection / Evolution / Niche Construction
+## 10. Route: Multilevel Selection / Evolution / Niche Construction
 
 **Use when the query mentions**: multilevel selection, evolutionary selection, niche construction, ecological inheritance, evolutionary feedback, selection levels.
 
@@ -253,7 +282,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 10. Route: Language / Social Reality / Institutions / L2 Social Layer
+## 11. Route: Language / Social Reality / Institutions / L2 Social Layer
 
 **Use when the query mentions**: language, social reality, institutions, norms, money, law, roles, social construction, social cognition, social `L2`.
 
@@ -279,7 +308,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 11. Route: AI Consciousness / AI Ontology / Synthetic Operators
+## 12. Route: AI Consciousness / AI Ontology / Synthetic Operators
 
 **Use when the query mentions**: AI consciousness, synthetic subject, model consciousness, artificial `d`, artificial `Ψ_f`, OpenClaw / agent relevance to SRT.
 
@@ -295,6 +324,7 @@ When answering or editing a deep SRT question:
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms.md`
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md`
+- `SRT_EXP_TEMPLATE.md`
 
 ### Boundary
 
@@ -304,7 +334,34 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 12. Route: Political Philosophy / Ethics / Normativity
+## 13. Route: Experimental Proxies / Measurement / Falsification
+
+**Use when the query mentions**: experiment, measurement, proxy, falsification, lab, operationalization, `HRV`, `SCR`, PCI proxy, Fisher proxy, ROS proxy, task switching, measure map.
+
+### Primary
+
+- `SRT_EXP_MEASURE_MAP.md`
+- `SRT_EXP_TEMPLATE.md`
+- `Governance/SRT_LAB_HYPOTHESES.md`
+- `_SRT_EQ_HYP_MAP.md`
+
+### Secondary
+
+- `Neuroscience/SRT_Neuro_Experiments.md`
+- `_SRT_PSI_F_CANONICAL.md`
+- `_SRT_D_VALUE_CANONICAL.md`
+- `Core/SRT_Core_22_Equations.md`
+- `papers/ontological_friction/paper_ontological_friction.md`
+
+### Boundary
+
+- Experimental proxies do not replace canonical definitions.
+- Lab-layer canonical templates do not automatically promote a variable to core theorem status.
+- Proxy conclusions must state operational scope and cannot be back-projected as ontology.
+
+---
+
+## 14. Route: Political Philosophy / Ethics / Normativity
 
 **Use when the query mentions**: political philosophy, ethics, rights, normativity, justice, governance, social order, collective `d`.
 
@@ -329,7 +386,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 13. Route: Spirituality / Subject-Position / Return Path
+## 15. Route: Spirituality / Subject-Position / Return Path
 
 **Use when the query mentions**: spirituality, subject-position, loss of self, return path, sangha, community, practice, existential orientation.
 
@@ -353,7 +410,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 14. Route: Open Tensions / Unresolved Problems
+## 16. Route: Open Tensions / Unresolved Problems
 
 **Use when the query mentions**: unresolved, open tension, contradiction, critique, vulnerability, review risk.
 
@@ -375,7 +432,7 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 15. Maintenance Rule
+## 17. Maintenance Rule
 
 Whenever a new deep file is created:
 
