@@ -55,6 +55,7 @@ DEFAULT_NAV_FILES = [
     "_SRT_CONTEXT_ROUTER.md",
     "_SRT_DEEP_THEORY_MAP.md",
     "_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md",
+    "_SRT_MEDIUM_AI_NEURO_COVERAGE_INDEX.md",
     "Bridge/SRT_Adjacent_Theory_Interface_Index.md",
     "Governance/README.md",
     "Operations/README.md",
