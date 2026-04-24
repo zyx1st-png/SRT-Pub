@@ -25,16 +25,21 @@ SRT already contains many deep theory files. The main risk is not lack of conten
 - Existing indexes tell readers where entry surfaces are, but not always which files should be retrieved together for a recurring deep question.
 - Adjacent-theory interfaces, `Ψ_f`, d-value, `L2`, AI consciousness, political philosophy, spirituality, and quantum measurement each require multi-file context.
 
-Therefore the navigation layer now has three complementary files:
+Therefore the navigation layer now has four complementary files:
 
 1. `_SRT_INDEX.md` — machine entry index and authority order.
 2. `_SRT_CONTEXT_ROUTER.md` — query type → retrieval route.
 3. `_SRT_DEEP_THEORY_MAP.md` — theory node → primary/support files.
+4. `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md` — first-batch Core/Core_Law coverage-audit follow-up.
 
-A repository-level path-audit script now exists:
+Repository-level audit scripts:
 
 ```bash
 python scripts/srt_deep_nav_path_audit.py --report Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md --json Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json
+```
+
+```bash
+uv run python scripts/srt_deep_nav_coverage_audit.py --report Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.md --json Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json
 ```
 
 ---
@@ -47,6 +52,7 @@ python scripts/srt_deep_nav_path_audit.py --report Operations/_SRT_DEEP_NAV_PATH
 - Check whether new or edited files belong to a deep node in `_SRT_DEEP_THEORY_MAP.md`.
 - Check whether `_SRT_INDEX.md` needs only an entrypoint update, not every file addition.
 - Run `scripts/srt_deep_nav_path_audit.py` and inspect missing references.
+- Run `scripts/srt_deep_nav_coverage_audit.py` and inspect high / medium coverage candidates.
 
 ### After new canonical or bridge file
 
@@ -72,9 +78,12 @@ python scripts/srt_deep_nav_path_audit.py --report Operations/_SRT_DEEP_NAV_PATH
 - [x] Add `Bridge/SRT_Adjacent_Theory_Interface_Index.md`.
 - [x] Update `_SRT_INDEX.md` to include `_SRT_CONTEXT_ROUTER.md` and `_SRT_DEEP_THEORY_MAP.md` as meta navigation surfaces.
 - [x] Add automated path-audit script: `scripts/srt_deep_nav_path_audit.py`.
+- [x] Add automated coverage-audit script: `scripts/srt_deep_nav_coverage_audit.py`.
+- [x] Add first-batch high-priority Core/Core_Law coverage index: `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md`.
 - [ ] Run automated path audit locally/CI and commit `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md`.
 - [ ] Verify all routes in `_SRT_CONTEXT_ROUTER.md` point to existing files using the generated report.
 - [ ] Verify all deep nodes in `_SRT_DEEP_THEORY_MAP.md` point to existing files using the generated report.
+- [ ] Re-run coverage audit and confirm high-priority candidates are reduced after `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md` is scanned.
 
 ### P1 — Deep route quality pass
 
@@ -85,6 +94,15 @@ python scripts/srt_deep_nav_path_audit.py --report Operations/_SRT_DEEP_NAV_PATH
 - [ ] Expand route for political philosophy and rights.
 - [ ] Expand route for spirituality / subject-position / return path.
 - [x] Add route for publication / paper preparation if needed.
+
+### P1.5 — Medium-priority coverage batches
+
+- [ ] Batch M1: AI + Neuroscience domain files.
+- [ ] Batch M2: Philosophy domain files.
+- [ ] Batch M3: Physics domain files.
+- [ ] Batch M4: Spirituality domain files.
+- [ ] Batch M5: papers / article / publication version index.
+- [ ] Batch M6: root-level topic indexes and FAQ.
 
 ### P2 — Cross-file consistency pass
 
@@ -137,7 +155,20 @@ For every node in `_SRT_DEEP_THEORY_MAP.md`, verify:
 
 ---
 
-## 5. Suggested Next Editing Batches
+## 5. Coverage Audit Checklist
+
+For every high / medium candidate in `Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.md`, decide:
+
+- [ ] Should it be added directly to `_SRT_CONTEXT_ROUTER.md`?
+- [ ] Should it be added directly to `_SRT_DEEP_THEORY_MAP.md`?
+- [ ] Should it be handled by a coverage index, such as `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md`?
+- [ ] Should it be grouped into a domain index or paper-version index?
+- [ ] Should it be left unreferenced because it is support-only / historical / redundant?
+- [ ] Should the coverage-audit script downgrade it to low priority?
+
+---
+
+## 6. Suggested Next Editing Batches
 
 ### Batch A — Index integration
 
@@ -201,9 +232,22 @@ Actions:
   - “Deep question? Start with `_SRT_CONTEXT_ROUTER.md`.”
   - “Want theory overview? Start with `_SRT_DEEP_THEORY_MAP.md`.”
 
+### Batch E — Medium coverage grouping
+
+Goal: reduce medium-priority candidates without bloating the router.
+
+Suggested grouping order:
+
+1. AI + Neuroscience coverage index.
+2. Philosophy coverage index.
+3. Physics coverage index.
+4. Spirituality coverage index.
+5. Papers / publication version index.
+6. Root topic index / FAQ coverage.
+
 ---
 
-## 6. Done Criteria
+## 7. Done Criteria
 
 The deep navigation layer is acceptable when:
 
@@ -213,10 +257,12 @@ The deep navigation layer is acceptable when:
 4. `_SRT_INDEX.md` exposes the router and map.
 5. No router entry silently upgrades bridge files to canonical authority.
 6. `scripts/srt_deep_nav_path_audit.py` can run from repo root and generate a missing-path report.
+7. `scripts/srt_deep_nav_coverage_audit.py` can run from repo root and identify high / medium candidates for batch handling.
+8. High-priority Core/Core_Law coverage candidates are routed through `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md` or equivalent.
 
 ---
 
-## 7. Non-Goals
+## 8. Non-Goals
 
 This plan does not aim to:
 
