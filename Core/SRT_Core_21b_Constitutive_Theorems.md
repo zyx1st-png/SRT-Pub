@@ -181,7 +181,7 @@ Bridge relation:
 
 **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ④`; `Core_Law/SRT_Core_Text_CN.md ④`; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`; `Core/SRT_Core_01_Axioms.md MA-1`; `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold`.
 
-**L1 Expansion (2026-04-24)**: `Core_Law/SRT_Irreversibility.md` T-IRR-3 把本定理精确化为 `L_0` 残余项层面的非守恒声明，对应 `Core_Law/SRT_L1_Formalism.md §4.3` 中 `\dot{\Delta}_{avail}` 的非对称残余；T-IRR-2 给出"终止"作为本定理 `A_{t*} = empty` 吸收态的结构化分型（宪定 / 吸收 / 集体）。集体版见 `Core_Law/SRT_Collective_Selection.md` T-COLL-3。本定理为上位 P1 源头，不被下位 L1 层替代。
+**L1 Expansion (2026-04-24)**: `Core_Law/SRT_Irreversibility.md` T-IRR-3 把本定理精确化为 `L_0` 残余项层面的非守恒声明，对应 `Core_Law/SRT_L1_Formalism.md §4.3` 中 `\dot{\Delta}_{avail}` 的非对称残余；T-IRR-2 给出"终止"作为本定理 `A_{t*} = empty` 吸收态的结构化分型（宪定 / 吸收 / 集体）。**算子级精化（H4，2026-04-25）**：`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 §4.3 的 `\nu_{block}` 写为本定理 Three-Layer Source Hierarchy 的本地化 `\nu_{block}(P,t) := \eta\cdot\varepsilon_{pg}(P,t)\cdot\kappa_{\Psi_f}(P,t)`，正性与单向性自此为本定理的 L1 算子层后果而非自由建模假设。集体版见 `Core_Law/SRT_Collective_Selection.md` T-COLL-3。本定理为上位 P1 源头，不被下位 L1 层替代。
 
 ---
 

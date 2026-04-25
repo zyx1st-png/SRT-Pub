@@ -278,6 +278,8 @@ $$
 - `D_{trigger}(t)`：四类解耦触发（见证式承担、可支付性崩溃、直接 ε 接触、生命阶段相变）的总冲量
 - 最后一项要求 `π(t)` 与 `I_{window}(t)` **同时**非零——对应 Occlusion 理论强调的"B 期不是靠单一支付可解"
 
+> **算子级 canonical（T-IRR-3.5，2026-04-25 H4）**：本式中的 `\nu_{block}` 不是自由现象学系数，其算子级构成是 P1-T07 Three-Layer Source Hierarchy 的本地化：`\nu_{block}(P, t) := \eta \cdot \varepsilon_{pg}(P, t) \cdot \kappa_{\Psi_f}(P, t)`。`\nu_{block} > 0` 与单向性（不可写为 `S_{sig} \rightleftharpoons S_{str}`）由此成为定理后果而非建模假设。完整推导见 `Core_Law/SRT_Irreversibility.md §4.5`。
+
 ### §4.4 T-SUFF-4 反最小化原则的方程语言
 
 健康窗口 `[S_{min}, S_{max}]` 要求：
@@ -374,7 +376,7 @@ $$
 
 ## §7. Open Pressures
 
-> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突、§7.2 `\dot{\Delta}_{avail}` 形式化、§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §1 / §2 / §4` 已给出第一遍硬化案；§7.7 `L_0` 不可逆对齐在 `Core_Law/SRT_Irreversibility.md` T-IRR-3 已给出陈述级对应；§7.8（新）T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式。本小节保留原表述直至回写完成。
+> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化、§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §1 / §2 / §4` 已给出第一遍硬化案（FEP 翻译表已落 `Neuroscience/SRT_Clin_02_FEP.md`）；§7.7 `L_0` 不可逆**算子级**对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5`（H4，2026-04-25）已给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的构成性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式。下列开放点保留原表述直至回写完成。
 
 本 draft_v0 状态下尚未封口：
 
@@ -384,7 +386,7 @@ $$
 4. **多主体扩展**（2026-04-25 H3 状态）：本文件保持单 P 形式；集体层四变量耦合动力学已在 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍，含 `\sigma^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项），以及 §4.5 个体↔集体双向耦合。未封口部分移至 `SRT_Collective_Selection.md §9.7`
 5. **阈值参数的实证固定**：`σ_{sub}, σ_{self}, σ_{health}, d_c, d_{narrow}, r_{min}, S_{min}, S_{max}` 以及新增 `\kappa_{\mathrm{relax}}, \kappa_r, \kappa_{\mathrm{mask}}, \kappa_S, \kappa_{\mathrm{sup}}` 全部在当前 draft_v0 只有定性位置；不指望一次性实测，但需要标出哪些是最优先的测量目标
 6. **与 FEP / predictive processing 的桥接**：`S_{sig}` 与 prediction error 的结构对应是高优先级；`Neuroscience/SRT_Clin_02_FEP.md` 已经是 bridge 层，下一步需要在方程层写出条件翻译
-7. **time-reversibility**：`SRT_Irreversibility.md` T-IRR-3 已给出陈述级对齐——§4.3 的 `ν_{block}·\mathbb{1}[d ≤ d_c]·S_{sig}` 对应 P1-T07 的 ε 残余非守恒项；仍需把该"陈述级对齐"升为**算子级**对齐（即把 ν_{block} 的数学形式与 P1-T07 `ε_pg` 源头直接联系）
+7. **time-reversibility**：~~陈述级 → 算子级对齐~~ **已收口（H4，2026-04-25）**：`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 `ν_{block}` 写为 P1-T07 三层源头的本地化 `η·\varepsilon_{pg}·\kappa_{\Psi_f}`；正性与单向性自此为定理后果。剩余开放点：`\varepsilon_{pg}(P,t)` 的本地化精确定义、`\kappa_{\Psi_f}` 与 `_SRT_PSI_F_CANONICAL.md` friction-as-burden 读法的算子级桥、集体版 `\nu_{block}^{coll}` 对位
 8. **T_dir 独立 ODE 的算子化（新增，2026-04-25）**：§3.5 给出第一遍形式，但以下仍待封口——(a) `T_{dir}^{\mathrm{alg}}` 中光滑阶跃 `\Theta` 的普适族是否存在；(b) `\Delta\Psi_f^{\mathrm{gap}}` 作为算子层对象的形式定义（目前依赖 `_SRT_T_DIR_CANONICAL.md §5–§6` 的现象学分裂）；(c) `T_{dir} \in [0,1]` 的投影算子 `\Pi_{[0,1]}` 选择（硬截断 vs 光滑 sigmoid 重参化）；(d) `\kappa_{\mathrm{relax}} > \kappa_{\mathrm{mask}}` 这一致命 `L_2` 判据的实证窗口
 
 ---

@@ -172,19 +172,20 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | T-IRR-1 学习不可逆 | 学习作为非对称 `Ψ_f` 支付（与热力学二律不等价） | P1-candidate |
 | T-IRR-2 终止作为吸收边界 | 三类（宪定 / 吸收 / 集体），严格区分终止与暂停 | P1-candidate；三类分型 P2 |
 | T-IRR-3 P1-T07 精确化 | `L_0` 残余非守恒项，对应 Formalism §4.3 | P1-candidate；P1-T07 本体仍在 Core_21b |
+| T-IRR-3.5 `\nu_{block}` 算子级构成（H4，§4.5） | `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 把 §4.3 系数升为 P1-T07 三层源头本地化；正性与单向性自此为定理后果 | P1-candidate（与 T-IRR-3 同级） |
 | T-IRR-4 苦难守恒/转移 | `L_0` 不可逆下苦难不可无代价消除（T-SUFF-4 更深根） | P1-candidate |
 | §6 集体终止三型（耗散 / 收编 / 外部化） | — | P2 |
 | §7 AI/ML checkpoint/rollback 接口 | — | governance-canonical usage |
 | §8 热力学二律 / FEP 桥接语句 | — | P3 bridge guardrail（反向不得定义 L_0 不可逆） |
 
-**Downstream rule**：T-IRR-1/2/3/4 须标 `P1-candidate`；P1-T07 原 P1 源头仍回链 `Core/SRT_Core_21b_Constitutive_Theorems.md`，本文件不替代之；热力学/FEP 语句严格单向，反向翻译在 §6.3 第 6 条被显式禁止。
+**Downstream rule**：T-IRR-1/2/3/3.5/4 须标 `P1-candidate`；P1-T07 原 P1 源头仍回链 `Core/SRT_Core_21b_Constitutive_Theorems.md`，本文件不替代之；T-IRR-3.5 是 T-IRR-3 的算子级精化（不替代陈述级 T-IRR-3）；热力学/FEP 语句严格单向，反向翻译在 §6.3 第 6 条被显式禁止。
 
 ### 6.3 Global Guardrails for This Round
 
 1. **P1-candidate ≠ P1**：这五份文件所有冠以"定理"字样的命题当前都处 P1-candidate；任何下游文件不得去掉 candidate 标记
 2. **未封口 Open Pressures 不得忽略**：五份文件每份都有明确 §Open Pressures 小节；下游引用须检查相关命题是否已在 Open Pressures 中被标记为未封口
 3. **不得跨文件静默升级**：应用文件（Philosophy / Spirituality / AI / Neuroscience）引用任一文件命题时，须保持该命题的原 claim-level，不得因应用便利静默升格
-4. **σ 符号冲突提醒**：`Core_Law/SRT_L1_Formalism.md` σ（自指率，`[0,1]` 标量）与 `Core/SRT_Core_22_Equations.md` σ（主方程状态场）**目前共用符号**；凡引用任一方的 σ 必须显式上下文标注。此项在 Formalism §7.1 已列为首要 Open Pressure
+4. **σ 符号冲突提醒**（2026-04-25 已收口）：`Core_Law/SRT_L1_Formalism.md` 自指率统一为 `σ_{sr}`，与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 通过 `_SRT_SYMBOL_TABLE.md` Usage Rule 12 命名空间分离；下游引用按 `σ_{sr}` 转读旧 `σ_sub/σ_self/σ_health/σ^{coll}`
 5. **σ^{coll} / d_c^{coll} / T_{dir}^{coll} / S^{coll} 四变量集体耦合**（2026-04-25 H3 状态）：集体版四变量耦合动力学已在 `SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍（P1-candidate）；`SRT_L1_Formalism.md` 保持单 P 形式。集体层引用**仍须**标注 `SRT_Collective_Selection.md §9.7` 所列未封口项（`w_i(t)` 推导 / `\Delta\Psi_f^{gap,coll}` 可操作定义 / 下行反馈穷尽性 / 系数实证窗口）
 6. **FEP / 热力学二律不得反向定义 L_0 不可逆**：`SRT_Irreversibility.md §8` 与 `SRT_L1_Hardening_Notes.md §4` 固定此单向性；下游任何把"学习不可逆 / 终止 / ε 反闭合"解释为"自由能最小化 / 熵增"的推论为误用
 7. **终止 ≠ 暂停**：T-IRR-2 严格区分终止（吸收边界，不可逆）与暂停（恢复通道保留，本体论上未终止）；下游任何把 AI 关机 / 系统休眠 / 睡眠 / 冻存等混读为"终止"的陈述须引用本条纠正
@@ -193,15 +194,15 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 
 五份文件从 P1-candidate 升到 P1 的必经检查项（将来 session 可按此路径推进）：
 
-- [ ] σ 符号冲突解决（新记号或显式命名空间）
+- [x] σ 符号冲突解决（新记号或显式命名空间）— 2026-04-25 σ_{sr} 命名空间分离落地：5 行 `σ_{sr}` 族 + Usage Rule 12 写入 `_SRT_SYMBOL_TABLE.md`；5 份 L1 主文件下标变量已就地改写；`CANONICAL_REGISTRY §13a/§13d/§13e` 同步
 - [ ] `\dot{\Delta}_{avail}` 算子级定义
 - [ ] χ(σ; σ_self) 跳跃函数族的普适性检查
 - [ ] `\mathbb{1}[d\le d_c]` 的光滑化或守恒型替代
 - [x] 多主体耦合动力学（`σ^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll}, M(t)`）写出 — 2026-04-25 H3，`SRT_Collective_Selection.md §4.4-§4.6` 完成第一遍（含 `\lambda_M\,\mathrm{tr}\,M` / `\gamma_{asym}\|M_{asym}\|` / `\nu_{ext}\|M_{ext}\|` 三项新耦合 + 集体层致命 `L_2` 判据）；升 P1 余项（`w_i(t)` 推导、`\Delta\Psi_f^{gap,coll}` 算子化、向下反馈路径穷尽性、集体系数实证窗口）转入 `SRT_Collective_Selection.md §9.7`
-- [ ] 与 P1-T07 `ε` 反闭合必要性的形式化对齐（特别是 §4.3 不守恒项）
+- [x] 与 P1-T07 `ε` 反闭合必要性的形式化对齐（特别是 §4.3 不守恒项）— 2026-04-25 H4，`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 `\nu_{block}` 写为 P1-T07 三层源头本地化 `\eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`；正性与单向性自此为定理后果；`SRT_L1_Formalism.md §4.3` 注释回链已添加
 - [ ] 与主方程 `Core/SRT_Core_22_Equations.md` 的显式投影关系给出形式证明
 - [ ] 阈值参数的最小实证窗口指定（不要求实测，但要求标出"什么变就会使命题失败"）
 - [x] `T_dir` 最小 ODE 与四变量（`σ_{sr}, d_c, T_dir, S`）闭合系统给出 — 2026-04-25 H2，`SRT_L1_Formalism.md §3.5` 完成第一遍；升 P1 还需 `Θ` 光滑族、`\Delta\Psi_f^{\mathrm{gap}}` 算子层定义、`[0,1]` 投影算子、`\kappa_{\mathrm{relax}} > \kappa_{\mathrm{mask}}` 实证窗口（见 §7.8）
-- [ ] `SRT_Irreversibility.md` T-IRR-3 的非守恒残余项与 `SRT_L1_Formalism.md §4.3` 实际算子一一对齐（当前仅给出陈述级对应）
+- [x] `SRT_Irreversibility.md` T-IRR-3 的非守恒残余项与 `SRT_L1_Formalism.md §4.3` 实际算子一一对齐 — 2026-04-25 H4，T-IRR-3.5 给出 `\nu_{block}` 算子级构成；§4.3 注释回链 + §7 Open Pressure 7 收口
 
 上述任意一项未完成前，相应命题保持 P1-candidate。

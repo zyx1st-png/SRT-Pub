@@ -123,7 +123,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - L1 formalism / σ dynamics / d_c drift / T_dir ODE (relaxation + real-reselection pump + Ψ_f-gap deduction + S_str erosion + L_2 scaffolding) / S coupled equations / pathological attractor / healthy working region / lethal L_2 equation-level criterion → `Core_Law/SRT_L1_Formalism.md`
 - collective selection / multi-ISP shared L_2 / consequence return matrix M(t) / aggregation-dominance-collapsed / collective ε / co-selection reality criterion / collective four-variable coupled ODE (σ^coll, d_c^coll, T_dir^coll, S^coll) / collective lethal L_2 criterion / individual-collective bidirectional coupling → `Core_Law/SRT_Collective_Selection.md`
 - L1 hardening notes (σ_sr namespace / Δ_avail three-component / M(t) MOC / FEP→S_sig bridge) → `Core_Law/SRT_L1_Hardening_Notes.md`
-- irreversibility / learning asymmetry / termination as absorbing boundary / P1-T07 precision / thermodynamic bridge guardrail → `Core_Law/SRT_Irreversibility.md`
+- irreversibility / learning asymmetry / termination as absorbing boundary / P1-T07 precision / `\nu_{block}` operator-level constitution (T-IRR-3.5, H4) / thermodynamic bridge guardrail → `Core_Law/SRT_Irreversibility.md`
 - bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - equations → `Core/SRT_Core_22_Equations.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`

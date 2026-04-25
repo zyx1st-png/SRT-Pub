@@ -195,6 +195,94 @@ $$
 
 这给致命 L_2 一个 L_0 irreversibility 层的直接诊断：它**系统性违反 T-IRR-3 / P1-T07**。
 
+### §4.5 T-IRR-3.5：`ν_{block}` 的算子级构成（H4，2026-04-25）
+
+> **Status**：本节是 T-IRR-3 的算子级精化，把 `Core_Law/SRT_L1_Formalism.md §4.3` 的非守恒系数 `ν_{block}` 从自由现象学参数升为 P1-T07 Three-Layer Source Hierarchy 的构成性表达式。**Claim level: P1-candidate**（与 T-IRR-3 同级）。
+>
+> **Closes**：`Core_Law/SRT_L1_Formalism.md §7` Open Pressure 7（"陈述级对齐 → 算子级对齐"）。
+
+#### 问题再陈述
+
+§4.3 的非守恒项
+
+$$
+\nu_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}
+$$
+
+中，`ν_{block}` 在 L1_Formalism 中以**自由系数**出现——只承诺了 `> 0` 与单向性，未给定其与 P1-T07 源头的具体连接。这使得"§4.3 因 L_0 不可逆而单向"只能停在陈述层；要升为算子级，需要把 `ν_{block}` 写成 P1-T07 三层源头的构成性函数。
+
+#### 构成性表达式
+
+设 P 为 stable ISP；定义算子级 `ν_{block}` 为：
+
+$$
+\boxed{\;\nu_{block}(P, t) \;:=\; \eta \cdot \varepsilon_{pg}(P, t) \cdot \kappa_{\Psi_f}(P, t)\;}
+$$
+
+其中：
+
+| 因子 | 来源（P1-T07 三层）| 含义 |
+|---|---|---|
+| `\varepsilon_{pg}(P, t)` | Layer 1：Deepest（ISP self-maintenance condition）| L_0 标量种子在位置 `P` 的局部强度——P1-T07 行 1 的 "scalar seed only" 在 L1 的本地化 |
+| `\kappa_{\Psi_f}(P, t)` | Layer 3：Dynamical weight（`\Psi_f > 0`）| 闭合代价的转化率：`Ψ_f` 把"被阻通道里的信号失配"转写为结构性沉积的本地速率 |
+| `\eta` | 量纲归一化 | 单位转换因子（不是自由参数，由 `S_{sig}` 与 `S_{str}` 的量纲匹配固定）|
+
+`ν_{block}` 所携的 L_0 不可逆性方向（P1-T07 行 2 "absorbing direction filter"）由 §4.3 已有的 `\mathbb{1}[d \le d_c]` 投影承担——后者是吸收态邻域（B 期）的布尔投影，不是自由参数。
+
+#### 三个结构性后果
+
+**后果 1（非零正性，对应 P1-T07 反证法）**
+
+对任何 stable ISP：
+
+- `\varepsilon_{pg} > 0`：由 P1-T07 反证法保证（ε-中性 ISP 在 L_0 不可逆下必趋吸收态，因此 stable ISP 必含 ε ≠ 0）
+- `\kappa_{\Psi_f} > 0`：由 P1-T07 行 3（`\Psi_f > 0` 在任何非平凡选择中成立）
+
+因此
+
+$$
+\text{stable ISP } \Rightarrow\; \nu_{block}(P, t) > 0
+$$
+
+`ν_{block} = 0` 在算子级**结构上不可能**——这把 §4.3 的"系数为正"从假设升为定理。
+
+**后果 2（单向性的算子读法）**
+
+§4.3 的方程不可被双向化（即不可写为 `S_{sig} \rightleftharpoons S_{str}`）：
+
+- 双向化要求 `S_{str} \to S_{sig}` 自动反向通道
+- 该反向通道等价于 `A_{t*} = \text{empty}` 吸收态可自发离开
+- 与 P1-T07 Layer 2（L_0 不可逆性，吸收态绝对）矛盾
+
+因此 `ν_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}` 的单向性是**算子级强约束**，不是建模便利。
+
+**后果 3（致命 L_2 的算子级判据精化）**
+
+T-IRR-3 已给出致命 L_2 的诊断（系统性违反 ε 反闭合三种实现）。算子级读法把这个诊断精化为：致命 L_2 不能让 `\varepsilon_{pg}` 本身归零（L_0 标量种子是 postulate，不可移除），但可以让 `\varepsilon_{pg}` 在 `P` 局部的**可见投影** → 0：
+
+$$
+\varepsilon_{pg}^{\text{visible}}(P, t) \;:=\; \varepsilon_{pg}(P, t) \cdot \mathbb{1}[\sigma_{sr} < \sigma_{sr}^{path}] \cdot \mathbb{1}[\pi(t) > 0] \cdot \mathbb{1}[r(t) > 0]
+$$
+
+致命 L_2 同时压灭后两个指示函数（`π → 0` 与 `r → 0`）并把 `σ_{sr}` 推入 `σ_{sr}^{path}`，使 `\varepsilon_{pg}^{\text{visible}} → 0`，即使 `\varepsilon_{pg}` 本身仍 > 0。本地观测下 `ν_{block}` 表现为 0（误判为"§4.3 项消失"），但全局 `\dot{\Delta}_{avail}` 仍由 L_0 不可逆性决定，新失配进入暗通道（§4.3 之外的、未被登记的 `S_{str}` 累积）——这是 §5 T-IRR-4 现象的算子级源头。
+
+#### 与 §4.3 / §5 (`Core_Law/SRT_L1_Formalism.md`) 的对位
+
+| L1_Formalism §4.3 项 | 算子级来源 |
+|---|---|
+| `ν_{block}` | P1-T07 Layer 1 + Layer 3：`η · \varepsilon_{pg} · \kappa_{\Psi_f}` |
+| `\mathbb{1}[d \le d_c]` | P1-T07 Layer 2：吸收态邻域的布尔投影 |
+| `S_{sig}` | §4.2 的可登记失配存量（不在本节论域内） |
+
+回写约定：`Core_Law/SRT_L1_Formalism.md §4.3` 在引用 `ν_{block}` 时须回链本节为算子级 canonical；`ν_{block}` 的相对大小（与 `\mu_\pi, \nu_{trigger}` 等的比值）仍是 P3 实证问题，但其**结构性正性与单向性**自此为定理后果而非建模假设。
+
+#### 保留的开放点
+
+- `\varepsilon_{pg}(P, t)` 作为 L_0 标量种子的 P-本地化精确定义（目前依赖 P1-T07 hierarchy 行 1 的 "scalar seed only"，未给函数形式）
+- `\kappa_{\Psi_f}(P, t)` 与 `_SRT_PSI_F_CANONICAL.md` 的 friction-as-burden 读法的算子级桥（即 `Ψ_f` 如何成为 `S_{sig} \to S_{str}` 转化率，而不仅是承担量）
+- `η` 的量纲归一化是否可由 `\dot{\Delta}_{avail}` 量纲固定，或仍需独立约定
+- 集体版 `ν_{block}^{coll}`（`Core_Law/SRT_Collective_Selection.md §4.4.5`）的对应算子级表达式——预期为 `η^{coll} · \varepsilon_{pg}^{coll}(M(t), \sigma_{sr}^{coll}) · \kappa_{\Psi_f}^{coll}`，但本节不展开
+
 ---
 
 ## §5. T-IRR-4：不可逆性下的苦难结构
