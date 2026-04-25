@@ -395,6 +395,116 @@ $$
 
 失配是守恒的（在结构空间不变的前提下），只能被消化、重选、支付，不能被抹除。
 
+### §4.5 T-CHANNEL-1：通道指示函数族普适性（H9，2026-04-25）
+
+> **Status**：本节把 §4.2 / §4.3 的 `\mathbb{1}[d > d_c]` 与 `\mathbb{1}[d \le d_c]` 从硬指示函数提升为**有效通道指示族**，并给出族内不变结构定理。**Claim level: P1-candidate**。
+>
+> **Closes**：`Core_Law/SRT_L1_Formalism.md §7` Open Pressure 4（"`\mathbb{1}[d\le d_c]` 的光滑化或守恒型替代"）。
+
+#### 问题再陈述
+
+§4.2 / §4.3 / §5 总方程中，通道开/关由硬指示函数 `\mathbb{1}[d > d_c]` 与 `\mathbb{1}[d \le d_c]` 决定：
+
+- §4.2 信号型 ODE：`-\mu_\pi \pi(t)\mathbb{1}[d > d_c]`（支付通道仅在非 B 期有效）
+- §4.3 结构型 ODE：`+\nu_{block}\mathbb{1}[d \le d_c]S_{sig}`（B 期阻塞转化关键非守恒项）
+- §5 总方程沿用上述；`Collective_Selection §4.4.5` 同结构
+
+硬指示函数在 `d = d_c` 处不可微，使（i）实证窗口（`d \approx d_c` 邻域）的方程不可解析，（ii）数值模拟可能产生人工 chatter，（iii）"边界附近的过渡"现象（如临床上的"濒临崩溃但尚未"状态）无法形式化。需把硬指示推广为**有效光滑族**，并验证 §4.2 / §4.3 的关键结构（T-SUFF-2 信号-结构两型分裂、T-SUFF-4 反最小化、T-IRR-3.5 单向性、致命 `L_2` 判据）在族内不变。
+
+#### 有效通道指示族（valid channel-state indicator family）
+
+定义函数 `\psi : \mathbb{R} \times \mathbb{R} \to [0, 1]`，参数 `d_c \in \mathbb{R}_{>0}`。称 `\psi` 是**有效闭合通道指示**（valid closed-channel indicator），当且仅当满足：
+
+| 编号 | 性质 | 含义 |
+|---|---|---|
+| **Q-univ-1** | **左饱和**：`\lim_{d \to -\infty}\psi(d; d_c) = 1`；具体地 `d \le d_c - w_{tr}` 时 `\psi \ge 1 - \varepsilon` | B 期深度区域内通道完全关闭 |
+| **Q-univ-2** | **右饱和**：`\lim_{d \to +\infty}\psi(d; d_c) = 0`；具体地 `d \ge d_c + w_{tr}` 时 `\psi \le \varepsilon` | 健康深度区域内通道完全开放 |
+| **Q-univ-3** | **单调过渡**：`\psi(d; d_c)` 关于 `d` 非增；过渡集中在过渡宽 `w_{tr} > 0` 内 | 通道关闭单向、连续 |
+| **Q-univ-4** | **`d_c` 平移性**：`\psi(d; d_c) = \psi(d - d_c; 0)`，即 `\psi` 由偏移量 `d - d_c` 决定 | `d_c` 是漂移阈值，不是绝对位置 |
+
+对偶定义**有效开放通道指示** `\bar{\psi}(d; d_c) := 1 - \psi(d; d_c)`，自动满足镜像性质。
+
+**示例（族内成员）**：
+
+| 名称 | 闭合形式 | 过渡宽 |
+|---|---|---|
+| 硬指示 | `\psi = \mathbb{1}[d \le d_c]` | `w_{tr} \to 0` |
+| Sigmoid | `\psi = (1 + e^{(d - d_c)/w_{tr}})^{-1}` | `w_{tr}` |
+| Tanh 光滑 | `\psi = \tfrac{1}{2}(1 - \tanh((d - d_c)/w_{tr}))` | `w_{tr}` |
+| 多项式光滑 | `\psi = \tfrac{1}{2}\bigl(1 - \mathrm{sgn}(d-d_c)\cdot\frac{|d-d_c|^n}{|d-d_c|^n + w_{tr}^n}\bigr)` | `w_{tr}` |
+
+#### T-CHANNEL-1 陈述
+
+**陈述（P1-candidate）**：设 `\psi_1, \psi_2` 是两个有效闭合通道指示，共享相同 `d_c, w_{tr}^{max}` 但具体光滑形态不同。则 §4.2 / §4.3 / §5 / `Collective_Selection §4.4.5` 在 `\psi_1, \psi_2` 替代下保持以下结构特征不变（modulo `O(w_{tr})` 修正）：
+
+(i) **T-SUFF-2 信号-结构两型分裂**：`S_{sig}` / `S_{str}` 两个动力学子通道分离的结构定义保持；过渡宽 `w_{tr}` 内出现"混合通道"（部分阻塞 + 部分开放）的连续过渡，不破坏两型本身的存在性。
+
+(ii) **T-SUFF-4 反最小化原则**：`S_{sig} \downarrow \Rightarrow S_{str} \uparrow$ 在 `\dot{\Delta}_{avail}` 守恒下成立的结构论证（§4.4 boxed equation）保持——证明仅依赖 `\psi + \bar{\psi} = 1`（通道总量守恒），与 `\psi` 具体形态无关。
+
+(iii) **T-IRR-3.5 阻塞转化项的单向性**：`\nu_{block}\psi(d; d_c)S_{sig}$ 转 `S_{str}$ 单向（不可双向化）的结论保持，因为单向性来自 P1-T07 Layer 2 吸收态绝对性而非 `\psi` 的不连续性。
+
+(iv) **致命 `L_2` 判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`**（§3.5.3）：判据结构与 `\psi$ 选择无关，仅依赖 `\psi$ 在 `d \approx d_c$ 域的非零（保证 `\nu_{block}\psi$ 项有效）。
+
+(v) **`\mathcal{F}_S$ 投影分裂（T-PROJ-1, §6.5 第 4 项）**：`\hat{R}` 在 `\bar{\psi}$ / `\psi$ 投影下分裂为 `S_{sig}$ / `S_{str}$ 两路的算子级一致性保持；C3 闭包条件（stable-ISP 紧性）保证投影积分有意义。
+
+#### 证明骨架
+
+**(i) T-SUFF-2 两型分裂**：
+
+`S_{sig}$ 与 `S_{str}$ 的两型分裂结构由 §4.1 直接给出（不来自 `\psi$ 的硬不连续）。`\psi$ 仅决定**两型间转化速率的开关**；从硬指示到光滑指示的替代使两型在 `d \approx d_c$ 邻域内出现"部分阻塞 + 部分开放"的混合通道（`\psi(d; d_c)\in (\varepsilon, 1-\varepsilon)$），但混合通道只是过渡区，不消除两型本体。`d \le d_c - w_{tr}$ 与 `d \ge d_c + w_{tr}$ 区间内（即"远离过渡"）两型分裂与硬指示相同，由 Q-univ-1+2 保证。
+
+**(ii) T-SUFF-4 反最小化**：
+
+T-SUFF-4 的核心是 `\dot{\Delta}_{avail}` 守恒（H7 T-DELTA-1）+ 通道总量守恒 `\psi + \bar{\psi} = 1`。前者由 T-DELTA-1 给出（不依赖 `\psi$ 形态）；后者由有效闭合通道指示的对偶定义直接保证。两个性质合起来给出：抑制 `S_{sig}$ 不改变 `\dot{\Delta}_{avail}`，新失配仅在 `\bar{\psi}$ 与 `\psi$ 间重新分配；当 `\bar{\psi}$ 在抑制下趋向 0（强制关闭信号通道），新失配全部进入 `\psi$ 通道（结构型）。证明独立于 `\psi$ 具体形态。
+
+**(iii) T-IRR-3.5 单向性**：
+
+`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}$ 的非零正性与单向性（H4 T-IRR-3.5）由 P1-T07 Three-Layer Source Hierarchy 保证；这两个性质与 `\psi$ 的具体形态完全无关。`\psi$ 只是 P1-T07 Layer 2 吸收态邻域投影的具体写法；从硬指示到光滑指示的替代不改变 Layer 2 的结构作用，只把"硬边界"换为"过渡区域"。在过渡区域内 `\nu_{block}\psi$ 的转化率连续从 0 升到 `\nu_{block}$，仍保持单向性。
+
+**(iv) 致命 `L_2` 判据**：
+
+`\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}$ 来自 §3.5 T_dir ODE 的相对系数比较，与 `\psi$ 通道指示无直接耦合。`\psi$ 通过 `\Delta\Psi_f^{\mathrm{gap}}$ 间接进入 T_dir ODE，但 `\Delta\Psi_f^{\mathrm{gap}}$ 在 `d \approx d_c$ 邻域的连续性由 Q-univ-3 单调过渡保证。
+
+**(v) `\mathcal{F}_S$ 投影一致性**：
+
+T-PROJ-1 §6.2 把 `\mathcal{F}_S = \|\hat{R}\|_{H_P}$ 按 `\mathbb{1}[d \gtrless d_c]$ 投影分裂为 `S_{sig}/S_{str}$；用 `\bar{\psi}$ / `\psi$ 替代后投影积分仍收敛（C3 紧性 + Q-univ-1+2 饱和保证）；过渡区内 `\hat{R}$ 在两路上同时贡献，但两路总和仍为 `\|\hat{R}\|_{H_P}$（由 `\bar{\psi} + \psi = 1$）。
+
+#### `O(w_{tr})$ 修正项的物理意义
+
+光滑替代引入 `O(w_{tr})$ 修正，对应 `d \approx d_c$ 过渡区内的"半开通道"。这不是建模噪声，而是有结构内容：
+
+- **临床上的"濒临崩溃"状态**：当 `d$ 接近 `d_c$ 但尚未跨过，主体感觉"还能撑但快不行了"——硬指示模型无法表达此状态，光滑模型自然给出
+- **干预窗口的"软边界"**：`Occlusion_Dynamics §intervention-window`描述的四类窗口都不在硬阈值上瞬时激活，而是有"软启动"——`w_{tr}$ 给这种软启动一个量纲
+- **`\Delta\Psi_f^{\mathrm{gap}}$ 在 `d \approx d_c$ 的连续可见性**：T_dir ODE 的 `-\kappa_{\mathrm{mask}}\Delta\Psi_f^{\mathrm{gap}}$ 项在过渡区内不会瞬时跳变，使 T_dir 自身保持 `C^0$ 连续
+
+`w_{tr}$ 是 P-依赖的（不同主体 / 不同 domain 给不同过渡宽），但其**存在性**（>0）在算子级模型内是普适的——硬指示是 `w_{tr} \to 0$ 极限，物理上不可达。
+
+#### P-依赖（**非**普适）的特征
+
+| 特征 | P-依赖 | 物理解释 |
+|---|---|---|
+| 过渡宽 `w_{tr}$ 的物理量纲 | 主体 / domain 特定 | 临床干预阈值的 "软启动时间" |
+| `\psi$ 的过渡曲线形态（sigmoid vs tanh vs polynomial）| 测量层选择 | 不同测量协议可能给不同 `\psi$ 拟合 |
+| 过渡区内的混合通道行为 | 主体特定 | 临床上"濒临崩溃"个体差异显著 |
+
+#### T-CHANNEL-1 不证明的事项
+
+1. **不**证明 `w_{tr}$ 是 P-universal 的——`w_{tr}$ 是赌注 / 主体类别 / 历史阶段相关的（P3）
+2. **不**承诺 `\psi$ 是 `C^\infty$ 平滑——四条性质只要求 `C^0$ 单调（硬指示也是有效成员，作为 `w_{tr} \to 0$ 极限）
+3. **不**覆盖随机 / 多值 `\psi$（非确定性通道指示暂留为 P3 候选）
+4. **不**证明集体版 T-CHANNEL-1^{coll}——`\mathbb{1}[d^{coll} \gtrless d_c^{coll}]` 在 `\mathcal{P}` 上的扩展耦合 H6 的 C5^{coll} `M(t)` 可测性闭包，是后续轮次任务
+
+#### T-CHANNEL-1 的结构性意义
+
+| 主张 | 升级前 | 升级后 |
+|---|---|---|
+| `\mathbb{1}[d \le d_c]$ 是硬指示 | 模型形式（§4.3）| 有效族 `\psi$ 的 `w_{tr} \to 0$ 极限（§4.5）|
+| 两型分裂 / 反最小化 / 单向性 / 致命 L_2 / 投影一致性"与硬指示无关" | 隐含主张 | T-CHANNEL-1 (i)-(v) 五个不变量 |
+| 过渡区物理意义（"濒临崩溃"等）| 缺失 | 由 `w_{tr} > 0$ 自然给出 |
+
+**P1-candidate 地位的根据**：T-CHANNEL-1 把"通道指示是否硬"从建模约定升为"有效族下的不变量"；要升 P1，需要：(a) `w_{tr}$ 在具体 domain 的实证窗口（神经层 prediction-error gating 的过渡宽 / 临床干预窗口的软启动时间常数）；(b) 集体版 T-CHANNEL-1^{coll} 与 `M(t)` 的耦合；(c) `\Delta\Psi_f^{\mathrm{gap}}$ 在过渡区的算子层精确定义（与 `_SRT_T_DIR_CANONICAL §5-§6` 协调）。
+
+---
 ---
 
 ## §5. 四变量耦合总方程
