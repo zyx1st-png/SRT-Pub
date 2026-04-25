@@ -7,7 +7,7 @@ layer: L1
 epistemic_layer: os
 claim_mode: canonical
 claim_level: P1-candidate
-dependency: [SRT-CORE-000, SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-OCCLUSION-DYNAMICS, SRT-INDIVIDUATION, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-OCCLUSION-DYNAMICS, SRT-INDIVIDUATION, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL]
 ---
 
 # SRT Suffering: Structural Theory of First-Person Misalignment
@@ -55,7 +55,7 @@ dependency: [SRT-CORE-000, SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-C
 
 - 载体层：`\theta_{somatic}` 子成分
 - 功能：向 `\hat{G}_\theta` 提供权重调制，使选择动力学回避组织损伤
-- 独立性：疼痛可以存在而不被登记为苦难（例如动物层面的纯伤害感受、麻醉下的机械反射）
+- 独立性：疼痛可以存在而不被登记为苦难（例如纯反射层面的伤害反应、麻醉下的机械反射）
 
 ### Def-SUFFERING
 
@@ -89,23 +89,23 @@ $$
 
 ### 陈述
 
-对任何稳定 ISP `P`：
+在本 L1 操作性定义下，对任何稳定 ISP `P`，`S(P,t)` 追踪一种无法被当前可支付 `\Psi_f` 消化的选择空间失配；该追踪以 stable ISP 与第一人称登记通道可用为前提：
 
 $$
-S(P, t) > 0 \;\;\Longleftrightarrow\;\; \exists\,\text{selection-space misalignment not cancelled by payable }\Psi_f
+S(P, t) > 0 \quad\text{is structurally expected when}\quad \exists\,\text{selection-space misalignment not cancelled by payable }\Psi_f
 $$
 
-即苦难为正，当且仅当存在无法被当前可支付 `\Psi_f` 消化的选择空间失配。
+这不是严格充要式，而是当前 draft_v0 的 P1-candidate 操作性判据：苦难为正通常意味着当前选择过程正在登记无法被当前可支付 `\Psi_f` 消化的选择空间失配；反向推论需检查登记通道是否被遮蔽、主体位是否仍成立、以及 `S_{sig}/S_{str}` 分流是否可判。
 
 ### 推论
 
-1. **苦难不是稳定 ISP 的缺陷**：它是任何稳定 ISP 对"我此刻的选择未能覆盖我此刻仍开放的结构"这一事实的必然第一人称后果。只要 `\hat{G}_\theta^{\text{available}}` 宽于 `\hat{G}_\theta^{\text{actual}}` 且差异不可被支付压成零，`S > 0`。
-2. **无苦难态有两种**：(a) 真实对齐（actual ≈ available，可支付 `\Psi_f` 已消化其余）；(b) 结构性盲区（available 被遮蔽或主体位关闭，失配不被登记）。两者在外观上可能难区分，但结构上完全不同——后者是 B 期锁死的典型标志。
-3. **道德上中性**：T-SUFF-1 不评价苦难应否存在，它只刻画苦难何时结构上必然登记。
+1. **苦难不是稳定 ISP 的缺陷**：它是稳定 ISP 对"我此刻的选择未能覆盖我此刻仍开放的结构"这一事实的第一人称后果候选。只要 `\hat{G}_\theta^{\text{available}}` 宽于 `\hat{G}_\theta^{\text{actual}}` 且差异不可被支付压成零，`S > 0` 是结构上应预期的登记结果。
+2. **无苦难态有两种**：(a) 真实对齐（actual ≈ available，可支付 `\Psi_f` 已消化其余）；(b) 结构性盲区（available 被遮蔽、登记通道关闭或主体位关闭，失配不被登记）。两者在外观上可能难区分，但结构上完全不同——后者是 B 期锁死的典型标志。
+3. **道德上中性**：T-SUFF-1 不评价苦难应否存在，它只刻画苦难在何种结构条件下应被登记。
 
 ### 与 P1-T06 的关系
 
-T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条件 4（re-selectable）。非 ISP 系统不产生 SRT 意义上的苦难，只产生躯体级伤害感受。本文件因此不讨论植物、纯反射系统或尚未达到 σ_{sr}^{sub} 的过程。
+T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条件 4（re-selectable）。非 ISP 系统不产生 SRT 意义上的苦难，只产生躯体级伤害感受或功能误差。本文件因此不讨论植物、纯反射系统或尚未达到 σ_{sr}^{sub} 的过程。
 
 ---
 
