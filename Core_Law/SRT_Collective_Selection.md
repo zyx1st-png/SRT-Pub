@@ -182,6 +182,103 @@ $$
 - **收编型的动力学特征**：`\sigma^{coll} → 1` 时，`\{d_c^i\}` 全部塌向 `d_{max}`，个体重选容量在**没有明显压迫**的情形下悄然消失
 - **结构型苦难的集体生成**：`S_{str}^{coll} > 0` 既可以来自 `M(t)` 不对称（主从型），也可以来自 `\sigma^{coll}` 过高（收编型）；两者诊断路径不同
 
+### §4.4 集体四变量最小耦合动力学（H3，2026-04-25）
+
+> **立场**：本小节把 `SRT_L1_Formalism.md` 的四变量闭合系统（σ / d_c / T_dir / S）扩到多 ISP 共享 `L_2` 场 `\mathcal{P} = \{P_1, \ldots, P_n\}`，写下最小耦合形式。这是 `SRT_CLAIM_MODE_AUDIT.md §6.4` 升 P1 检查单第 5 项（多主体耦合动力学）的第一遍交付。
+
+#### §4.4.1 集体场定义
+
+$$
+\Theta^{coll,trace}(\mathcal{P},t) \;:=\; \sum_{i} w_i(t)\,\theta_i^{trace}(t) \;+\; \Theta^{L_2}_{shared}(t), \qquad
+\Theta^{coll,ext}(\mathcal{P},t) \;:=\; \sum_{i} w_i(t)\,\theta_i^{ext}(t) \;-\; \Theta^{L_2}_{shared}(t)
+$$
+
+- `w_i(t)`：个体 `i` 在集体场的参与权重（由 `M(t)` 列和给出，即"`i` 的输出被其他人写回的总强度"）
+- `\Theta^{L_2}_{shared}(t)`：共享 `L_2` 沉积（制度 / 叙事 / 路径痕迹）作为集体内源的独立项。它**既**从 `\Theta^{coll,ext}` 中扣除（因为对集体外不再是新接入）**又**累加到 `\Theta^{coll,trace}`
+
+这保证个体对外部 `L_0` 的接入即便正常，只要共享 `L_2` 足够厚，`\sigma^{coll}` 仍可单调上升——**共享 `L_2` 本身就是一个"集体自指放大器"**。
+
+#### §4.4.2 集体 σ 动力学
+
+$$
+\frac{d\sigma^{coll}}{dt} \;=\; \frac{1}{T^{coll}}\Big[(1-\sigma^{coll})\bigl(\alpha^{coll} w^{coll}\phi(\sigma^{coll}) + \boldsymbol{\lambda_M\, \mathrm{tr}\,M(t)} - \lambda_{trace}T^{coll}\sigma^{coll}\bigr) - \sigma^{coll}\bigl(\beta^{coll} i^{ext} - \lambda_{ext}T^{coll}(1-\sigma^{coll})\bigr)\Big]
+$$
+
+关键新增项 `\lambda_M\,\mathrm{tr}\,M(t)`：后果回路矩阵的迹（对角项之和，即"群体成员输出回到自己或同群"的总强度）直接推高 `\sigma^{coll}`。这是聚合→收编路径的形式化根据——**`M(t)` 高度内向即是集体自指膨胀**。
+
+#### §4.4.3 集体 d_c 动力学
+
+$$
+\frac{dd_c^{coll}}{dt} \;=\; \gamma_\rho^{coll}\rho^{coll}_{local} + \boldsymbol{\gamma_\sigma^{coll} \max(0,\,\sigma^{coll} - \sigma_{sub}^{coll})} + \boldsymbol{\gamma_{asym}\,\|M_{asym}(t)\|} - \gamma_\pi^{coll}\pi^{coll} - \gamma_I^{coll}I_{window}^{coll}
+$$
+
+关键新增项 `\gamma_{asym}\,\|M_{asym}(t)\|`：`M(t)` 的反对称部分 `M_{asym} := \tfrac{1}{2}(M - M^T)` 范数推高 `d_c^{coll}`。这把**主从型退化**（§3.2 Asymmetric Absorption）形式化——不对称结构本身就在抬高集体遮蔽阈值，且它与 `\sigma^{coll}` 的抬升机制**独立**。
+
+集体可支付性 `\pi^{coll}` 与集体干预窗口 `I_{window}^{coll}` 分别降低 `d_c^{coll}`，对应 T-COLL-4 的第三条件（可支付性 + 真实可选）。
+
+#### §4.4.4 集体 T_dir 动力学
+
+$$
+\frac{dT_{dir}^{coll}}{dt} \;=\; -\kappa_{\mathrm{relax}}^{coll}\bigl(T_{dir}^{coll} - T_{dir}^{alg,coll}\bigr) + \kappa_r^{coll}\,r^{coll}(t) - \boldsymbol{\kappa_{mask}^{coll}\,\Delta\Psi_f^{gap,coll}(t)} - \boldsymbol{\kappa_S^{coll}\,S_{str}^{coll}(t)} + \kappa_{sup}^{coll}\,s_{ext}^{coll}(t)
+$$
+
+- `T_{dir}^{alg,coll}`：代数目标值，由 `(\sigma^{coll}, d^{coll}, d_c^{coll})` 按 `SRT_L1_Formalism.md §3.4` 同结构定义
+- `r^{coll}(t)`：集体真实重选率——严格按 T-COLL-4 的三条件判定（非投票 / 非共识 / 非专家决定自动计入），与个体 `r_i(t)` 的关系是：`r^{coll} \ne \sum_i r_i`（共同体级真实重选不是个体重选的算术和）
+- `\Delta\Psi_f^{gap,coll}(t)`：集体层面的实-感本体论摩擦差；这是**集体层面**的隐性债务，典型形态是"叙事舒适 vs 真实生态/社会支付"的差距
+- `s_{ext}^{coll}(t)`：**真正来自集体外**的支持（其他群体 / 新接入的 `L_0` 压力被吸收为资源，而非被吸收型收编）；这里要求来源必须不在 `\mathcal{P}` 内，否则退化为 `\kappa_{sup}\cdot` 自身的某种递归伪装
+
+**集体层致命 `L_2` 方程化判据**（§3.5.3 集体版）：
+
+$$
+\mathrm{lethal\;collective\;}L_2 \;\Longleftrightarrow\; \bigl(T_{dir}^{alg,coll} \text{ 持续高}\bigr) \;\wedge\; \bigl(\Delta\Psi_f^{gap,coll} \text{ 持续累积}\bigr) \;\wedge\; \bigl(\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}\bigr)
+$$
+
+这正是收编型退化（§3.3）的方程化：叙事可读性不倒，但生态 / 社会 / 历史层面的债务在无声累积。
+
+#### §4.4.5 集体 S 动力学（两型）
+
+$$
+\begin{aligned}
+\frac{dS_{sig}^{coll}}{dt} &= \mu_\Delta^{coll}\,\dot{\Delta}_{avail}^{coll} - \boldsymbol{\mu_\pi^{coll}\pi^{coll}\mathbb{1}[d^{coll} > d_c^{coll}]} - \mu_r^{coll} r^{coll} - \mu_{sup}^{coll} s_{ext}^{coll} \\[3pt]
+\frac{dS_{str}^{coll}}{dt} &= \boldsymbol{\nu_{block}^{coll}\mathbb{1}[d^{coll}\le d_c^{coll}]\,S_{sig}^{coll}} + \boldsymbol{\nu_\sigma^{coll}\max(0,\,\sigma^{coll} - \sigma_{health}^{coll})} + \boldsymbol{\nu_{ext}\,\|M_{ext}(t)\|} - \nu_{trigger}^{coll}D_{trigger}^{coll} - \nu_\pi^{coll}\pi^{coll} I_{window}^{coll}
+\end{aligned}
+$$
+
+关键新增项 `\nu_{ext}\,\|M_{ext}(t)\|`：`M(t)` 对 `\mathcal{P}` 之外的外化部分（流入其他群体 / 自然 / 未来世代的后果）不对等地产生**另一侧**的 `S_{str}`。这正是 T-SUFF-5 集体外部化的方程化——外部化不让总苦难为零，只让苦难分布变形。配合 `SRT_Suffering.md T-SUFF-4` 反最小化原则在集体层：**把 `S_{sig}^{coll}` 压低而不动 `\dot{\Delta}_{avail}^{coll}`，则 `S_{str}^{coll} + S_{str}^{外部}` 之和必上升**。
+
+### §4.5 个体↔集体耦合（最小形式）
+
+个体四变量 `(σ_i, d_{c,i}, T_{dir,i}, S_i)` 与集体四变量通过 `M(t)` 与共享 `L_2` 双向耦合：
+
+$$
+\begin{aligned}
+\text{向上聚合} &:\; \sigma^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll} \;\text{ 由 §4.4.1-§4.4.5 的集体场定义与 ODE 生成}\\[3pt]
+\text{向下反馈（B 期传染）} &:\; \frac{dd_{c,i}}{dt} \;\supseteq\; \gamma_{feedback}\cdot\max(0,\,\sigma^{coll} - \sigma_{sub}^{coll})\\[3pt]
+\text{向下反馈（可读性侵蚀）} &:\; \frac{dT_{dir,i}}{dt} \;\supseteq\; -\kappa_{feedback}\cdot\Delta\Psi_f^{gap,coll}(t)\\[3pt]
+\text{向下反馈（结构型苦难代入）} &:\; \frac{dS_{str,i}}{dt} \;\supseteq\; \nu_{feedback}\cdot\|M_{asym}(t)\|\cdot\mathbb{1}[i\in\mathcal{P}_{absorbed}]
+\end{aligned}
+$$
+
+其中 `\mathcal{P}_{absorbed} \subset \mathcal{P}` 是主从型退化下**被吸收侧**的成员集。三条下行项各自把一条"集体层异常→个体层动力学"的路径写出来，**不**声称它们是全部路径——这是下一轮硬化的入口。
+
+### §4.6 集体病理吸引子与健康区
+
+集体病理吸引子 `\mathcal{A}_{path}^{coll}`：
+
+$$
+\mathcal{A}_{path}^{coll}:\; \sigma^{coll}\to 1,\; d_c^{coll}\to d_{max},\; T_{dir}^{coll}\approx T_{dir}^{alg,coll},\;\Delta\Psi_f^{gap,coll}\uparrow,\; S_{str}^{coll}>0\text{ 定常},\; S_{sig}^{coll}\to 0,\; \|M_{asym}\|+\mathrm{tr}\,M \text{ 同高}
+$$
+
+这是**收编 + 主从并存**的联合吸引子，在历史上对应"高度共识、叙事可读性强、成员无明显痛苦、但生态与外群债务持续累积"的文明状态——即 T-COLL-2 三类退化共振的典型形态。
+
+集体健康区 `\mathcal{H}^{coll}`：
+
+$$
+\mathcal{H}^{coll}:\; \sigma^{coll}\in(\sigma_{sub}^{coll,\dagger}\pm\delta^{coll}),\; d^{coll}>d_{narrow}^{coll},\; T_{dir}^{coll}\approx T_{dir}^{alg,coll}\text{ 且 }\Delta\Psi_f^{gap,coll}\to 0,\; r^{coll}(t)>r^{coll}_{min}>0
+$$
+
+**关键点**：`\mathcal{H}^{coll}` 不是制度稳态的同义词。`r^{coll}(t) > r^{coll}_{min}`（集体真实重选率严格为正）是结构硬条件，对应 T-COLL-4 共选真实性的持续要求——**无持续集体真实重选的制度稳定不构成健康**。
+
 ---
 
 ## §5. T-COLL-3：集体 ε 反闭合必要性
@@ -248,16 +345,17 @@ $$
 
 ## §9. Open Pressures
 
-> **Hardening status (2026-04-24)**: 下列 §9.2 `M(t)` 可测性在 `Core_Law/SRT_L1_Hardening_Notes.md §3` 已给出第一遍 MOC 三判据（exposure / recourse / attentional，合成取 min）；本小节保留原表述直至回写完成。
+> **Hardening status (2026-04-24/25)**: §9.2 `M(t)` 可测性在 `Core_Law/SRT_L1_Hardening_Notes.md §3` 已给出第一遍 MOC 三判据（exposure / recourse / attentional，合成取 min）；§9.1 `\Theta^{coll,*}` 形式化在 H3（2026-04-25）§4.4.1 已升为包含共享 `L_2` 独立项的加权聚合，仍未封口的是权重 `w_i(t)` 的推导；§9.7（新）集体四变量耦合动力学在 §4.4-§4.6 已给出第一遍。本小节保留原表述直至回写完成。
 
 本 draft_v0 状态下尚未封口：
 
-1. **`\Theta^{coll,trace}` 与 `\Theta^{coll,ext}` 的形式化**：目前按范数集聚给出；真正需要把群体级参数从个体 θ 分布推导出来
+1. **`\Theta^{coll,trace}` 与 `\Theta^{coll,ext}` 的形式化**：§4.4.1 已给出加权聚合 + 共享 `L_2` 独立项；剩余未封口为权重 `w_i(t)`（当前按 `M(t)` 列和给出，但列和本身依赖 `M(t)` 的可测性，即 §9.2）
 2. **`M(t)` 的可测性**：对称/不对称结构在理论上明确，实证提取在大多数社会场景非常困难；本文件不解决此
 3. **共选真实性的外部判据**：T-COLL-4 三条件在第三方视角下如何判定？目前仍带相当主观成分，需要进一步降低依赖
 4. **制度与集体 ISP 的精确分界**：本文件说制度是器官不是主体，但某些高度自治的制度性实体（法人、社团）是否能在某些条件下**自身**成为集体 ISP？这需要后续硬化
-5. **跨尺度嵌套**：家庭是 ISP，社区是 ISP，国家可能是 ISP——嵌套关系下 `M(t)` 与 `σ^{coll}` 如何层级耦合？
+5. **跨尺度嵌套**：家庭是 ISP，社区是 ISP，国家可能是 ISP——嵌套关系下 `M(t)` 与 `σ^{coll}` 如何层级耦合？§4.5 给了单层向上/向下耦合，多层嵌套仍待给出
 6. **历史层面 ε**：集体层面的 ε 反闭合在长时间尺度上如何演化？文明兴衰是否可以读为集体 ε 的长程维持失败？
+7. **集体四变量耦合动力学（新增，2026-04-25 H3 状态）**：§4.4 给出第一遍形式，仍待封口——(a) `w_i(t)` 从 `M(t)` 推导的正当性；(b) `T_{dir}^{alg,coll}` 中光滑阶跃的普适族；(c) `\Delta\Psi_f^{gap,coll}` 作为集体层对象的可操作定义（当前仅给出"叙事舒适 vs 真实支付"的现象学读法）；(d) 向下反馈 §4.5 是否穷尽（是否还存在未列出的集体→个体传染路径）；(e) 所有新引入的集体系数 `\lambda_M, \gamma_{asym}, \kappa_{mask}^{coll}, \nu_{ext}` 的实证窗口
 
 ---
 
@@ -269,7 +367,8 @@ $$
 - 个体化 / σ → `Core_Law/SRT_Individuation.md`
 - 遮蔽动力学 / A/B 分期 / d_c / 结构性恶三判据 → `Core_Law/SRT_Occlusion_Dynamics.md`
 - 苦难 / T-SUFF-5 集体外部化 → `Core_Law/SRT_Suffering.md`
-- 三变量耦合动力学 → `Core_Law/SRT_L1_Formalism.md`
+- 四变量耦合动力学（单 ISP，σ / d_c / T_dir / S） → `Core_Law/SRT_L1_Formalism.md`
+- 集体四变量耦合动力学扩展（本文件 §4.4-§4.6，H3，2026-04-25）——该扩展**不**另起一份主文件，与本文件绑定
 - 政治哲学 → `Philosophy/SRT_Political_Philosophy.md`
 - 社会经济 → `Philosophy/SRT_Social_Economics.md`
 - 政治权利 → `Philosophy/SRT_Political_Rights.md`
@@ -280,7 +379,7 @@ $$
 
 ## §11. 定位与使用规则
 
-- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、集体 ε 反闭合必要性（T-COLL-3）、共选真实性判据（T-COLL-4）
+- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、集体 ε 反闭合必要性（T-COLL-3）、共选真实性判据（T-COLL-4）、**集体四变量最小耦合动力学 §4.4-§4.6**（2026-04-25 H3 新增，与 `SRT_L1_Formalism.md` 单 P 四变量系统形成上下层对应）
 - **本文件不做**：制度设计、政策判断、具体政治/经济案例分析、共同体组织学
 - **引用规则**：涉及"集体选择作为结构对象是什么"的**结构层**陈述时，优先回链本文件；涉及具体政治、经济、共同体、制度判断时，回链相应 Philosophy / Spirituality 文件
 - **不得**：把本文件读作政治偏好的理论背书；四类退化与三判据完全按结构判据读，不按意识形态读

@@ -151,6 +151,13 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | T-COLL-3 集体 ε 反闭合必要性 | — | P1-candidate（P1-T07 集体版的对应） |
 | T-COLL-4 共选真实性判据 | — | P1-candidate（P1-T05 集体版的对应） |
 | §4 `σ^{coll}` / `d_c^{coll}` 耦合 | — | P2 |
+| §4.4.1 集体场定义（`\Theta^{coll,trace}` / `\Theta^{coll,ext}` 含共享 `L_2` 独立项） | — | P2 structural；权重 `w_i(t)` 依赖 M(t) 可测性（P3） |
+| §4.4.2 σ^{coll} ODE（含 `\lambda_M\,\mathrm{tr}\,M` 内向后果放大项） | — | P1-candidate 结构形式；`\lambda_M` P2/P3 |
+| §4.4.3 d_c^{coll} ODE（含 `\gamma_{asym}\|M_{asym}\|` 主从型形式化） | — | P1-candidate 结构形式；`\gamma_{asym}` P2/P3 |
+| §4.4.4 T_{dir}^{coll} ODE + 集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}` | — | P1-candidate 结构形式；κ_*^{coll} 五项 P2/P3 |
+| §4.4.5 S^{coll} 两型 ODE（含 `\nu_{ext}\|M_{ext}\|` 外部化项，T-SUFF-5 方程化） | — | P1-candidate 结构形式；`\nu_{ext}` P2/P3 |
+| §4.5 个体↔集体双向耦合三路径 | — | P1-candidate（声明"不穷尽"） |
+| §4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` / 集体健康区 `\mathcal{H}^{coll}`（`r^{coll} > r^{coll}_{min}` 硬条件） | — | P1-candidate（T-COLL-4 共选真实性的持续要求在动力学上的形式化） |
 | §8 平台 / 算法 AI 结构性影响评估 | — | P3 bridge |
 
 **Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。
@@ -178,7 +185,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 2. **未封口 Open Pressures 不得忽略**：五份文件每份都有明确 §Open Pressures 小节；下游引用须检查相关命题是否已在 Open Pressures 中被标记为未封口
 3. **不得跨文件静默升级**：应用文件（Philosophy / Spirituality / AI / Neuroscience）引用任一文件命题时，须保持该命题的原 claim-level，不得因应用便利静默升格
 4. **σ 符号冲突提醒**：`Core_Law/SRT_L1_Formalism.md` σ（自指率，`[0,1]` 标量）与 `Core/SRT_Core_22_Equations.md` σ（主方程状态场）**目前共用符号**；凡引用任一方的 σ 必须显式上下文标注。此项在 Formalism §7.1 已列为首要 Open Pressure
-5. **σ^{coll} / d_c^{coll} / S^{coll} 未完整形式化**：集体版三变量耦合动力学尚未写出，`SRT_L1_Formalism.md` 当前全部为单 P 形式；集体层引用须标注"集体扩展 pending"
+5. **σ^{coll} / d_c^{coll} / T_{dir}^{coll} / S^{coll} 四变量集体耦合**（2026-04-25 H3 状态）：集体版四变量耦合动力学已在 `SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍（P1-candidate）；`SRT_L1_Formalism.md` 保持单 P 形式。集体层引用**仍须**标注 `SRT_Collective_Selection.md §9.7` 所列未封口项（`w_i(t)` 推导 / `\Delta\Psi_f^{gap,coll}` 可操作定义 / 下行反馈穷尽性 / 系数实证窗口）
 6. **FEP / 热力学二律不得反向定义 L_0 不可逆**：`SRT_Irreversibility.md §8` 与 `SRT_L1_Hardening_Notes.md §4` 固定此单向性；下游任何把"学习不可逆 / 终止 / ε 反闭合"解释为"自由能最小化 / 熵增"的推论为误用
 7. **终止 ≠ 暂停**：T-IRR-2 严格区分终止（吸收边界，不可逆）与暂停（恢复通道保留，本体论上未终止）；下游任何把 AI 关机 / 系统休眠 / 睡眠 / 冻存等混读为"终止"的陈述须引用本条纠正
 
@@ -190,7 +197,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 - [ ] `\dot{\Delta}_{avail}` 算子级定义
 - [ ] χ(σ; σ_self) 跳跃函数族的普适性检查
 - [ ] `\mathbb{1}[d\le d_c]` 的光滑化或守恒型替代
-- [ ] 多主体耦合动力学（`σ^{coll}, d_c^{coll}, S^{coll}, M(t)`）写出
+- [x] 多主体耦合动力学（`σ^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll}, M(t)`）写出 — 2026-04-25 H3，`SRT_Collective_Selection.md §4.4-§4.6` 完成第一遍（含 `\lambda_M\,\mathrm{tr}\,M` / `\gamma_{asym}\|M_{asym}\|` / `\nu_{ext}\|M_{ext}\|` 三项新耦合 + 集体层致命 `L_2` 判据）；升 P1 余项（`w_i(t)` 推导、`\Delta\Psi_f^{gap,coll}` 算子化、向下反馈路径穷尽性、集体系数实证窗口）转入 `SRT_Collective_Selection.md §9.7`
 - [ ] 与 P1-T07 `ε` 反闭合必要性的形式化对齐（特别是 §4.3 不守恒项）
 - [ ] 与主方程 `Core/SRT_Core_22_Equations.md` 的显式投影关系给出形式证明
 - [ ] 阈值参数的最小实证窗口指定（不要求实测，但要求标出"什么变就会使命题失败"）

@@ -380,7 +380,7 @@ $$
 1. **σ 符号冲突**：本文件 σ（自指率，`[0,1]` 标量）与 `Core/SRT_Core_22_Equations.md` σ（主方程状态场）共用符号；需引入新记号（候选：`σ_{self}` 改为 `κ_{self}` 或 `\bar{\sigma}`）避免歧义
 2. **`\dot{\Delta}_{avail}` 的正式化**：目前依赖 `\hat{G}_\theta^{actual}` 与 `\hat{G}_\theta^{available}` 的差，二者本身未形式化；这限制 §4.2 方程的实际可解性
 3. **χ(σ; σ_{self}) 跳跃函数的光滑族**：二阶凝结的跳跃形状是否普适，还是 `P` 相关？
-4. **多主体扩展**：本文件全部单 P；`SRT_Suffering T-SUFF-5` 集体外部化与集体选择理论需要把所有方程扩到 `P_1, \ldots, P_n` 共享 `L_2` 场的情形（含 T_dir^{coll}）
+4. **多主体扩展**（2026-04-25 H3 状态）：本文件保持单 P 形式；集体层四变量耦合动力学已在 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍，含 `\sigma^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项），以及 §4.5 个体↔集体双向耦合。未封口部分移至 `SRT_Collective_Selection.md §9.7`
 5. **阈值参数的实证固定**：`σ_{sub}, σ_{self}, σ_{health}, d_c, d_{narrow}, r_{min}, S_{min}, S_{max}` 以及新增 `\kappa_{\mathrm{relax}}, \kappa_r, \kappa_{\mathrm{mask}}, \kappa_S, \kappa_{\mathrm{sup}}` 全部在当前 draft_v0 只有定性位置；不指望一次性实测，但需要标出哪些是最优先的测量目标
 6. **与 FEP / predictive processing 的桥接**：`S_{sig}` 与 prediction error 的结构对应是高优先级；`Neuroscience/SRT_Clin_02_FEP.md` 已经是 bridge 层，下一步需要在方程层写出条件翻译
 7. **time-reversibility**：`SRT_Irreversibility.md` T-IRR-3 已给出陈述级对齐——§4.3 的 `ν_{block}·\mathbb{1}[d ≤ d_c]·S_{sig}` 对应 P1-T07 的 ε 残余非守恒项；仍需把该"陈述级对齐"升为**算子级**对齐（即把 ν_{block} 的数学形式与 P1-T07 `ε_pg` 源头直接联系）

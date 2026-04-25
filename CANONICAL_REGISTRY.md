@@ -204,7 +204,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 主文件：`Core_Law/SRT_Collective_Selection.md`
 - id：`SRT-COLLECTIVE-SELECTION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 集体 ε 反闭合必要性（P1-T07 集体版）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 σ^{coll} / d_c^{coll} 到多主体场
+- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 集体 ε 反闭合必要性（P1-T07 集体版）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 σ^{coll} / d_c^{coll}；**§4.4-§4.6（H3，2026-04-25）**给出集体四变量最小耦合动力学——σ^{coll} ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、d_c^{coll} ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、T_{dir}^{coll} ODE（集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}`）、S^{coll} 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项）、§4.5 个体↔集体双向耦合、§4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` 与集体健康区 `\mathcal{H}^{coll}`（健康要求 `r^{coll}(t) > r^{coll}_{min} > 0`）
 - 与 T-SUFF-5 的关系：本文件给出 T-SUFF-5 集体外部化的结构基础（`M(t)` 强不对称 → 主从型退化 → 结构型苦难外溢）
 - 与政治/经济/共同体 domain 的关系：本文件是它们的 L1 结构基石；制度是集体 ISP 的**器官**不是主体；投票/共识/专家不自动是共选
 - 与 AI/平台场景的关系：评估重点不是"AI 是否有意识"，而是算法中介对 `M(t)` 与 `σ^{coll}` 的结构性影响
