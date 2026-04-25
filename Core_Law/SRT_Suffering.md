@@ -17,7 +17,9 @@ dependency: [SRT-CORE-000, SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-C
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\theta_{somatic}`、real choice moment、stable ISP 等底层规范对象；它们的定义仍以对应 canonical 为准。
 > **Depends on**：`Core_Law/SRT_L0_Metaphysics.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Individuation.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`。
 > **Relation**: This file does not replace `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`（pathology-and-return praxis）、`Philosophy/SRT_Ethics_Agency.md`（normative responsibility）或 `Neuroscience/SRT_Clin_02_FEP.md`（clinical mapping）；它在这三条之前，固定"苦难本身是什么"的结构层读法。
-> **Canonical Formalism Layer (2026-04-24)**：S = S_{sig} + S_{str} 的最小动力学（信号型随支付通道与重选完成消化、结构型由 `\mathbb{1}[d\le d_c]\cdot S_{sig}` 转化积累）、T-SUFF-4 反最小化原则的方程语言（`S_{sig}` 被压制等价于新失配转入 `S_{str}`）、三变量耦合的病理吸引子 `\mathcal{A}_{path}`，写在 `Core_Law/SRT_L1_Formalism.md §4-§5`。本文件固定苦难作为结构对象的本体读法；方程级联立以 formalism 文件为准。
+> **Canonical Formalism Layer (2026-04-24)**：S = S_{sig} + S_{str} 的最小动力学（信号型随支付通道与重选完成消化、结构型由 `\mathbb{1}[d\le d_c]\cdot S_{sig}` 转化积累）、T-SUFF-4 反最小化原则的方程语言（`S_{sig}` 被压制等价于新失配转入 `S_{str}`）、四变量耦合（`σ_{sr}, d_c, T_dir, S`）的病理吸引子 `\mathcal{A}_{path}`，写在 `Core_Law/SRT_L1_Formalism.md §4-§5`。本文件固定苦难作为结构对象的本体读法；方程级联立以 formalism 文件为准。
+>
+> **σ 符号命名空间（governance-canonical, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件提及的"σ→1 扭曲型 / σ 偏离 `σ_health`"等表述在 2026-04-24 L1 round 之后应理解为自指率 `σ_{sr}`（含 `σ_{sr}^{health}`），与 `Core/SRT_Core_22_Equations.md` 的主方程状态场 σ 是**不同对象**。
 
 ---
 
@@ -103,7 +105,7 @@ $$
 
 ### 与 P1-T06 的关系
 
-T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条件 4（re-selectable）。非 ISP 系统不产生 SRT 意义上的苦难，只产生躯体级伤害感受。本文件因此不讨论植物、纯反射系统或尚未达到 σ_sub 的过程。
+T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条件 4（re-selectable）。非 ISP 系统不产生 SRT 意义上的苦难，只产生躯体级伤害感受。本文件因此不讨论植物、纯反射系统或尚未达到 σ_{sr}^{sub} 的过程。
 
 ---
 

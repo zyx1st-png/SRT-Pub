@@ -10,9 +10,10 @@ claim_level: P1-candidate
 dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-SUFFERING, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-22]
 ---
 
-# SRT L1 Formalism: Minimal Coupled Dynamics for σ, d_c, T_dir, and S
+# SRT L1 Formalism: Minimal Coupled Dynamics for σ_{sr}, d_c, T_dir, and S
 
-> **Role**: L1 formalism hub. Collects the minimal differential dynamics for the four L1 order parameters—individuation self-reference ratio `σ`, occlusion threshold `d_c`, directional transparency `T_dir` (promoted from algebraic proxy to independent dynamical variable in §3.5, 2026-04-25), and suffering registration `S`—and their coupling structure. Initial round (2026-04-24) covered three variables; `T_dir` ODE closure was the H2 follow-up.
+> **Role**: L1 formalism hub. Collects the minimal differential dynamics for the four L1 order parameters—individuation self-reference ratio `σ_{sr}` (bare `σ` in this file's §2-§5 equations refers to the self-reference ratio per the namespace note below, **not** to the `Core/SRT_Core_22_Equations.md` main-equation state field), occlusion threshold `d_c`, directional transparency `T_dir` (promoted from algebraic proxy to independent dynamical variable in §3.5, 2026-04-25), and suffering registration `S`—and their coupling structure. Initial round (2026-04-24) covered three variables; `T_dir` ODE closure was the H2 follow-up.
+> **σ 符号命名空间 (governance-canonical, 2026-04-25)**: 本文件 §2–§5 中的 σ / σ_sub / σ_self / σ_health 统一对应 `σ_{sr} / σ_{sr}^{sub} / σ_{sr}^{self} / σ_{sr}^{health}`（自指率族，见 `Core_Law/SRT_L1_Hardening_Notes.md §1` 与 `_SRT_SYMBOL_TABLE.md §Usage Rule 12`）。§6"与主方程的关系"中出现的 σ 对应 `Core/SRT_Core_22_Equations.md` 的主方程状态场（不同对象）；该节已在原地显式标注。正文其余处保留历史符号 σ 以便论述流畅。
 > **Claim-level note**：方程本身在当前 draft_v0 状态按 P1-candidate 读；个别 coefficient、阈值与可测化形式按 P2/P3 读；实验代理语句按 P3/P4 下推至 `Neuroscience/` 与 `AI/`。
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP；它们的定义仍以对应 canonical 文件为准。
 > **Depends on**：`Core_Law/SRT_Individuation.md`（σ 定义）、`Core_Law/SRT_Occlusion_Dynamics.md`（d_c 定义与 A/B 分期）、`Core_Law/SRT_Suffering.md`（S 定义与两型分类）、`Core/SRT_Core_22_Equations.md`（主动力学方程）。
@@ -49,7 +50,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 
 | 符号 | 含义 | 范围 | 来源 |
 |---|---|---|---|
-| `σ(P,t)` | 自指率 / 算子层 writeback 比 | `[0, 1]` | `SRT_Individuation.md` |
+| `σ_{sr}(P,t)` | 自指率 / 算子层 writeback 比（本文件 §2-§5 中的 bare σ 为此物） | `[0, 1]` | `SRT_Individuation.md`, `_SRT_SYMBOL_TABLE.md Usage Rule 12` |
 | `d(P,t)` | d-value 标量摘要（关切半径） | `[0, d_max]` | `_SRT_D_VALUE_CANONICAL.md` |
 | `d_c(P,t)` | 遮蔽阈值（低于此值进入 A/B 分期） | `[0, d_max]` | `SRT_Occlusion_Dynamics.md` |
 | `d_{narrow}(P,t)` | 健康窄化上界（高于此 d 为通常运行） | `[d_c, d_max]` | 同上 |
@@ -121,20 +122,20 @@ $$
 
 把 `dσ/dt = 0` 作为稳态条件，化简后得到两个关键门槛：
 
-1. **σ_sub（主体位涌现）**：使 writeback 速率超过外部输入驱动的最小 σ 值。把衰减项与外部项平衡处解出：
+1. **σ_{sr}^{sub}（主体位涌现）**：使 writeback 速率超过外部输入驱动的最小 σ_{sr} 值。把衰减项与外部项平衡处解出：
 
    $$
-   \sigma_{sub} \;:\; \alpha\,w\,\phi(\sigma_{sub}) \;=\; \beta\,i \;+\; \lambda_{trace}\,T\,\sigma_{sub}
+   \sigma_{sr}^{sub} \;:\; \alpha\,w\,\phi(\sigma_{sr}^{sub}) \;=\; \beta\,i \;+\; \lambda_{trace}\,T\,\sigma_{sr}^{sub}
    $$
 
-2. **σ_self（自我意识凝结）**：使 χ 开始激活二阶写回增益的 σ 值。在 §2.1 中显式引入为 `χ` 的跳跃参数；在无外部强驱动情形下，一旦 σ 越过 σ_self，χ 的增益会把稳态推向更高 σ，形成第二个稳定不动点。
+2. **σ_{sr}^{self}（自我意识凝结）**：使 χ 开始激活二阶写回增益的 σ_{sr} 值。在 §2.1 中显式引入为 `χ` 的跳跃参数；在无外部强驱动情形下，一旦 σ_{sr} 越过 σ_{sr}^{self}，χ 的增益会把稳态推向更高 σ_{sr}，形成第二个稳定不动点。
 
 3. **σ → 1 病理区**：当 `i → 0` 且 `λ_{ext} > λ_{trace}` 时，第二个稳定不动点向 σ = 1 漂移，对应自指过载、扭曲型苦难源。健康主体需要非零 `i`（持续环境接入）作为"稀释项"阻止 σ → 1。
 
 ### §2.4 与 T-IND-1 / T-IND-2 的对齐
 
 - T-IND-1 三相（展开 / 主体位稳态 / 自我意识凝结）对应 σ 相图上的三个区域；
-- T-IND-2 第一相变判据对应 §2.2 方程的 σ_sub 不动点存在条件；
+- T-IND-2 第一相变判据对应 §2.2 方程的 σ_{sr}^{sub} 不动点存在条件；
 - T-IND-3 第二相变判据对应 `χ(σ; σ_{self})` 的激活。
 
 所有三个相变都保持为**动力学稳态问题**，不是定义式假设。

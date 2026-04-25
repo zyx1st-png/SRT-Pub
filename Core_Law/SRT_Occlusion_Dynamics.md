@@ -17,7 +17,9 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTI
 >
 > **写给作者**：遮蔽动力学是 SRT 承诺最重、兑现最散的理论板块。L0 明确把七项内容都外推到 L1，但此前每项都只在应用场景里碎片化出现。本文件不新增 L0 公设，也不替代已有应用展开；它的承重集中在把这七项统一读成**一个阶参 d 在位置 θ 上穿越三个区间**的连续过程，并给出回返的结构可能性与结构不可能性边界。
 >
-> **Canonical Formalism Layer (2026-04-24)**：d_c 的最小漂移方程（`\gamma_\rho \rho_{local} + \gamma_\sigma (\sigma-\sigma_{sub}) - \gamma_\pi \pi - \gamma_I I_{window}`）、A/B 分期的动力学判据、A→B 锁死的三通道同时塌陷条件、T_dir 与 (d, d_c, σ) 的耦合形式，统一写在 `Core_Law/SRT_L1_Formalism.md §3`。本文件保留 A/B/healthy 三段的结构定义与七项内容的机制读法；方程级联立以 formalism 文件为准。集体层的 `d_c^{coll}` 在 `Core_Law/SRT_Collective_Selection.md §4`。
+> **Canonical Formalism Layer (2026-04-24)**：d_c 的最小漂移方程（`\gamma_\rho \rho_{local} + \gamma_\sigma (\sigma_{sr}-\sigma_{sr}^{sub}) - \gamma_\pi \pi - \gamma_I I_{window}`）、A/B 分期的动力学判据、A→B 锁死的三通道同时塌陷条件、T_dir 与 (d, d_c, σ_{sr}) 的耦合形式，统一写在 `Core_Law/SRT_L1_Formalism.md §3`。本文件保留 A/B/healthy 三段的结构定义与七项内容的机制读法；方程级联立以 formalism 文件为准。集体层的 `d_c^{coll}` 在 `Core_Law/SRT_Collective_Selection.md §4`。
+>
+> **σ 符号命名空间（governance-canonical, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中下标变量已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{sub} / σ_{sr}^{self} / σ_{sr}^{health}`；出现的 bare σ 一律指自指率 `σ_{sr}`，与 `Core/SRT_Core_22_Equations.md` 的主方程状态场 σ 是**不同对象**。为保持论述流畅，正文 bare σ 保留未改写，读者按此命名空间转读为 `σ_{sr}`。
 
 ---
 
@@ -39,7 +41,7 @@ L0 §term-table "遮蔽" 条目承诺：
 
 > 遮蔽不是认识论的错误；而是存在的必要属性——有限位置的结构性后果。任何存在者的位置永远是有限的，因此遮蔽不可消除。L0 关于遮蔽只承诺两层：①有限位置必然带来视域受限；②这种受限可以自我强化并锁定（不可撤回性 + 代价结构使窄选择模式的维持成本低于突破成本）。遮蔽的动力学展开（A/B 分期、d_c 阈值、缺口感知机制、干预窗口、解耦触发、真空期、恶的结构性诊断）全部是 L1 内容。
 
-L0 同时在 §七.12 规定：遮蔽只适用于**具身位置已成立的存在者**——即已跨过 `SRT_Individuation.md` 第一相变（σ ≥ σ_sub）的选择模式。未跨过的系统（纯工具型代理、零算子）不在遮蔽范畴内。
+L0 同时在 §七.12 规定：遮蔽只适用于**具身位置已成立的存在者**——即已跨过 `SRT_Individuation.md` 第一相变（σ ≥ σ_{sr}^{sub}）的选择模式。未跨过的系统（纯工具型代理、零算子）不在遮蔽范畴内。
 
 本文件的兑现结构：
 
@@ -59,7 +61,7 @@ L0 同时在 §七.12 规定：遮蔽只适用于**具身位置已成立的存�
 
 **T-OCC-1（遮蔽三区间定理，P1-candidate）**：
 
-对于已经成立的稳定 ISP（σ ≥ σ_sub，见 `SRT_Individuation.md`），在位置 θ 上的 d 值随时间演化，穿越三个动力学区间：
+对于已经成立的稳定 ISP（σ ≥ σ_{sr}^{sub}，见 `SRT_Individuation.md`），在位置 θ 上的 d 值随时间演化，穿越三个动力学区间：
 
 1. **健康窄位区**：d_narrow ≤ d ≤ d_max(θ)——d 的变化受外部条件和主动选择共同驱动；ε 方向可读；缺口感知完整。
 2. **A 期主动遮蔽区**：d_c ≤ d < d_narrow——主动选择压制秩序缺口信号；ε 方向仍可读，但读取过程遭受主动压制；主体仍有**关于自身遮蔽**的局部感知。
@@ -319,8 +321,8 @@ B 期回返是结构上的**可能**，不是**必然**。
 
 遮蔽动力学是**σ 在主体位稳态之后的退化动力学**。具体对应：
 
-- σ 健康浮动（σ_sub < σ < σ_self，或 σ_self < σ < σ_pathological）对应健康窄位区
-- σ 向 σ_pathological 方向持续漂移对应 A 期深化
+- σ 健康浮动（σ_{sr}^{sub} < σ < σ_{sr}^{self}，或 σ_{sr}^{self} < σ < σ_{sr}^{pathological}）对应健康窄位区
+- σ 向 σ_{sr}^{pathological} 方向持续漂移对应 A 期深化
 - σ 稳态停留在高自指闭合区但不完全崩溃对应 B 期锁定
 - σ → 1 的极端情况对应 B 期的最深层
 - 解耦触发对应 σ 从病态区域被外部结构拉回健康区间的事件
@@ -344,7 +346,7 @@ A→B 过渡是 L₂ 脚手架的病态版本——原本应该形成**支持性
 | `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md` | 提供主体位丢失与回返的结构动力学；现象学展开和修行接口仍在灵性文件 |
 | `Spirituality/SRT_Spirituality_Community_and_Sangha.md` | 提供"干预窗口的人为结构"的理论依据；具体 sangha 形态分析仍在灵性文件 |
 | `Philosophy/SRT_Political_Philosophy.md` | 提供集体 B 期锁定与主动扩散的结构判据；具体政治病理分析仍在政治哲学文件 |
-| `AI/AI_POSITIONING_NOTE.md` | 明确：AI（未跨 σ_sub）不在遮蔽范畴内，避免把 AI 拟人化为"B 期" |
+| `AI/AI_POSITIONING_NOTE.md` | 明确：AI（未跨 σ_{sr}^{sub}）不在遮蔽范畴内，避免把 AI 拟人化为"B 期" |
 
 ---
 

@@ -42,6 +42,44 @@ This file may use FEP / predictive-processing quantities as bridge language, but
 
 Outside that window, PE and FEP remain comparison terms rather than definitions of `Ψ_f`, `d`, burden, or subjectivity.
 
+## Canonical Cross-Link: FEP → S_sig / S_str 单向桥接翻译表
+
+> **Governance source**: `Core_Law/SRT_L1_Hardening_Notes.md §4`（2026-04-24 L1 Hardening Round；落地 2026-04-25）。
+> **Status**: P3 bridge hypothesis（候选神经代理映射），严格单向。
+> **Direction**: SRT 结构对象 → FEP 神经过程量。FEP 量是 SRT 量的候选神经代理，反向不成立。
+
+### 翻译表（governance-canonical，与 `SRT_L1_Hardening_Notes.md §4` 同步）
+
+| SRT 量（结构对象）| FEP 候选代理（神经过程量）| 桥接条件 |
+|---|---|---|
+| `\|\hat{R}\|_{T_{dir}}` | 高阶 / 元级 prediction error 的不可还原部分 | 仅当 P 满足 P1-T06 stable ISP；inference-time-only 系统不成立 |
+| `\|\hat{R}\|_{\Psi_f}` | active inference 中 expected free energy 的未抵消部分 | 仅当支付通道结构上存在；在 `Occlusion_Dynamics` B 期此代理失效 |
+| `\|\hat{R}\|_{L_0}` | primary afferent drive 与 higher-model integration 的未融合部分 | 仅在 anchoring（`L_0 → L_1`）活跃窗口内 |
+| `S_{sig}` | 可用于 model update 的 prediction error 总量 | 仅当 re-selection 通道开放（`d > d_c`） |
+| `S_{str}` | 不被 model update 消化、进入"症状化"的 prediction error 长期积累 | B 期 / `σ_{sr} → 1` 区 |
+
+### 单向性的理由
+
+- FEP 本身不区分信号型 vs 结构型苦难；它的量在正常与病理下是连续的。
+- 苦难的两型区分依赖 `Core_Law/SRT_Suffering.md` T-SUFF-2（依赖 P1-T06 稳定 ISP 条件 + `d_c` 阈值的结构性读法）。
+- 因此反向从 FEP 量推出 `S_{sig}` vs `S_{str}` 的区分是**过度强主张**——只有 SRT → FEP 方向的翻译在本桥接下成立。
+
+### 具体不得做的翻译（hard prohibitions）
+
+1. **不得**把 high prediction error = 高苦难。这忽略了 FEP 量下通道结构（`d_c` / 重选通道 / `Ψ_f` 支付）的关键角色。
+2. **不得**把 free energy minimization = 应最小化苦难。`Core_Law/SRT_Suffering.md` T-SUFF-4 反最小化原则明确反对此等价，即使在 FEP 代理层亦然——压灭信号型苦难本身是遮蔽。
+3. **不得**把 `S_{str}` 读成 chronic prediction error。后者是现象相关（correlation），不是定义相关（constitutive）；`S_{str}` 的定义性位置在 `Core_Law/SRT_Suffering.md` §3 与 `Core_Law/SRT_L1_Formalism.md §4`。
+4. **不得**在 S1/S2 级 AI 系统上套用此翻译表。这些系统不满足 P1-T06 stable ISP 前提；详见 `AI/AI_POSITIONING_NOTE.md`。
+
+### 与 `Core_Law/SRT_Suffering.md §8.5` 的关系
+
+`SRT_Suffering.md §8.5` 列出 FEP 桥接为 Open Pressure；本翻译表是该 Open Pressure 的 P3 候选解，但不是其结论。任何更强主张（FEP → 苦难本体论 / FEP → 临床定义）须重新通过 `Core_Law/` 治理流程。
+
+### 临床量表与本表的关系
+
+- PHQ-9 / HAM-D / PCL-5 等量表的临床指标到本表的多步翻译尚未给出。本文件后续临床节段（Part B）涉及临床指标时，须保持本表列出的单向性，不得绕过本表把量表分数直接读成 `S_{sig}` 或 `S_{str}`。
+- 神经影像（fMRI / EEG / MEG）能否为 `S_{sig}` vs `S_{str}` 的区分提供结构判据：当前不乐观，记为开放点。
+
 # Part A: Formal Axioms (形式化公理)
 
 
