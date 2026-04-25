@@ -298,17 +298,17 @@
   {
     "path": "AI/SRT_AI_00_Crisis.md",
     "top_dir": "AI",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "AI/SRT_AI_01_Ontology.md",
     "top_dir": "AI",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -322,9 +322,9 @@
   {
     "path": "AI/SRT_AI_02_Mortality_Wisdom.md",
     "top_dir": "AI",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -346,17 +346,17 @@
   {
     "path": "AI/SRT_AI_Architecture.md",
     "top_dir": "AI",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "AI/SRT_AI_Architecture_CompactCore.md",
     "top_dir": "AI",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -466,201 +466,201 @@
   {
     "path": "Core/Dynamics_Scaling_Annex/00_General_Boundary_Block.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/03_Constructive_Fracture_Interface.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/04_InVitro_LowD_Batch.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/05_Type_to_Individual_Batch.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/06_Cognitive_Capitalization_Batch.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/07_SelectionBarrier_L0L1_PriorSystem.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/08_MoralPredictionError_MultiG_System.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/09_ErrorAccumulation_L2Reconstruction.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/10_ROS_Apoptosis_ErrorDose.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/12_ProxyModel_OcclusionPhases_Intervention.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/14_ST_Rhythm_Spatial_Draft.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Annex/README.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Split/00_Formal_Core.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Split/01_Master_Equation_and_ScaleCoupling.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Split/02_Friction_Time_Awakening.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Split/03_RecursiveDepth_and_Appendix.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Split/04_Interface_Additions.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/Dynamics_Scaling_Split/README.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/SRT_Closure_Compatibility_Hardening.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core/SRT_Core_00_Intro.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core/SRT_Core_01_Axioms.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -674,26 +674,26 @@
   {
     "path": "Core/SRT_Core_12a_SPLIT_PLAN.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/SRT_Core_12b_Closure_Compatibility_Annex.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core/SRT_Core_12b_Merge_Targets_2026_04_21.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "low",
-    "reason": "support/split/annex/operations artifact; review only if repeatedly useful",
-    "covered_by": ""
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "covered by navigation directory reference `Core`",
+    "covered_by": "Core"
   },
   {
     "path": "Core/SRT_Core_12b_Ontology_L2.md",
@@ -714,9 +714,9 @@
   {
     "path": "Core/SRT_Core_13b_Operator_Advanced.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -730,9 +730,9 @@
   {
     "path": "Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -786,33 +786,33 @@
   {
     "path": "Core/SRT_Core_NormativeGradient.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core/SRT_Core_PhaseState_TripleCondition.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core/SRT_Experimental_Applications.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core/SRT_Experimental_Core.md",
     "top_dir": "Core",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -834,9 +834,9 @@
   {
     "path": "Core_Law/SRT_Constitution_One_Page_CN.md",
     "top_dir": "Core_Law",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -866,9 +866,9 @@
   {
     "path": "Core_Law/SRT_Core_Text_EN.md",
     "top_dir": "Core_Law",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -882,41 +882,41 @@
   {
     "path": "Core_Law/SRT_L0_Philosophy_Bridge.md",
     "top_dir": "Core_Law",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core_Law/SRT_Reference_Axioms.md",
     "top_dir": "Core_Law",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core_Law/SRT_Reference_Dynamics.md",
     "top_dir": "Core_Law",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core_Law/SRT_Reference_Ontology.md",
     "top_dir": "Core_Law",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Core_Law/SRT_Reference_Scaling.md",
     "top_dir": "Core_Law",
-    "referenced": false,
-    "priority": "high",
-    "reason": "core/governance file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1298,9 +1298,9 @@
   {
     "path": "Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md",
     "top_dir": "Neuroscience",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1314,9 +1314,9 @@
   {
     "path": "Neuroscience/SRT_Clin_01_Pathology.md",
     "top_dir": "Neuroscience",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1330,9 +1330,9 @@
   {
     "path": "Neuroscience/SRT_Clin_03_DMN_Networks.md",
     "top_dir": "Neuroscience",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1370,25 +1370,25 @@
   {
     "path": "Neuroscience/SRT_Neuro_06_Field_Effects.md",
     "top_dir": "Neuroscience",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Neuroscience/SRT_Neuro_07_Evo_Devo.md",
     "top_dir": "Neuroscience",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Neuroscience/SRT_Neuro_08_Immune_Dist.md",
     "top_dir": "Neuroscience",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1402,9 +1402,9 @@
   {
     "path": "Neuroscience/SRT_Neuro_10_Advanced_Models.md",
     "top_dir": "Neuroscience",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1468,16 +1468,16 @@
     "top_dir": "Operations",
     "referenced": true,
     "priority": "referenced",
-    "reason": "covered by navigation directory reference `Operations`",
-    "covered_by": "Operations"
+    "reason": "exact path referenced by navigation layer",
+    "covered_by": ""
   },
   {
     "path": "Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.md",
     "top_dir": "Operations",
     "referenced": true,
     "priority": "referenced",
-    "reason": "covered by navigation directory reference `Operations`",
-    "covered_by": "Operations"
+    "reason": "exact path referenced by navigation layer",
+    "covered_by": ""
   },
   {
     "path": "Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json",
@@ -1866,17 +1866,17 @@
   {
     "path": "Philosophy/SRT_Agency_Selection_Freedom_Supplement.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Causality_Time.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1890,9 +1890,9 @@
   {
     "path": "Philosophy/SRT_Ethics_Agency.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -1906,65 +1906,65 @@
   {
     "path": "Philosophy/SRT_HardProblem_Epistemology.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_L0_Ontological_Status.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Merged_Provenance_Index.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_MetaTheory_Framework_Comparison.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Philosophy_Ethics.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Philosophy_Ethics_Integration_2026_04_19.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Philosophy_Expectation_L2_Pathology.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Philosophy_Foundations.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -2002,9 +2002,9 @@
   {
     "path": "Philosophy/SRT_SocTheory_04_Luhmann_ANT.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -2026,25 +2026,25 @@
   {
     "path": "Philosophy/SRT_Soc_01_Construction.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Soc_02_Behavioral.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Soc_03_Institutions.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -2082,25 +2082,25 @@
   {
     "path": "Philosophy/SRT_Subject_Position_d_Expansion_Realignment_Bridge.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/SRT_dValue_Not_PreferredPriors.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -2154,17 +2154,17 @@
   {
     "path": "Philosophy/_SRT_Soc_Axioms.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
     "path": "Philosophy/_SRT_Soc_Bridge.md",
     "top_dir": "Philosophy",
-    "referenced": false,
-    "priority": "medium",
-    "reason": "domain or paper theory file not referenced by navigation",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
@@ -2856,6 +2856,14 @@
     "covered_by": ""
   },
   {
+    "path": "_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md",
+    "top_dir": ".",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
+    "covered_by": ""
+  },
+  {
     "path": "_SRT_INDEX.md",
     "top_dir": ".",
     "referenced": true,
@@ -2869,6 +2877,30 @@
     "referenced": true,
     "priority": "referenced",
     "reason": "exact path referenced by navigation layer",
+    "covered_by": ""
+  },
+  {
+    "path": "_SRT_MEDIUM_AI_NEURO_COVERAGE_INDEX.md",
+    "top_dir": ".",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
+    "covered_by": ""
+  },
+  {
+    "path": "_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md",
+    "top_dir": ".",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
+    "covered_by": ""
+  },
+  {
+    "path": "_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md",
+    "top_dir": ".",
+    "referenced": false,
+    "priority": "medium",
+    "reason": "root-level SRT/theory file not referenced by navigation",
     "covered_by": ""
   },
   {
@@ -8754,9 +8786,9 @@
   {
     "path": "scripts/srt_deep_nav_coverage_audit.py",
     "top_dir": "scripts",
-    "referenced": false,
-    "priority": "ignored",
-    "reason": "non-theory extension",
+    "referenced": true,
+    "priority": "referenced",
+    "reason": "exact path referenced by navigation layer",
     "covered_by": ""
   },
   {
