@@ -107,6 +107,13 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - formal axioms → `Core/SRT_Core_21_Formal_Axioms.md`
 - minimal axioms → `Core/SRT_Core_21_Minimal_Axioms.md`
 - constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- individuation / ISP entry / self-consciousness condensate → `Core_Law/SRT_Individuation.md`
+- occlusion dynamics / A-B phases / d_c / intervention window / vacuum period / structural evil → `Core_Law/SRT_Occlusion_Dynamics.md`
+- suffering / pain vs suffering / signal-vs-structural / four phenomenological types / anti-minimization / collective externalization → `Core_Law/SRT_Suffering.md`
+- L1 formalism / σ dynamics / d_c drift / S coupled equations / pathological attractor / healthy working region → `Core_Law/SRT_L1_Formalism.md`
+- collective selection / multi-ISP shared L_2 / consequence return matrix M(t) / aggregation-dominance-collapsed / collective ε / co-selection reality criterion → `Core_Law/SRT_Collective_Selection.md`
+- L1 hardening notes (σ_sr namespace / Δ_avail three-component / M(t) MOC / FEP→S_sig bridge) → `Core_Law/SRT_L1_Hardening_Notes.md`
+- irreversibility / learning asymmetry / termination as absorbing boundary / P1-T07 precision / thermodynamic bridge guardrail → `Core_Law/SRT_Irreversibility.md`
 - bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - equations → `Core/SRT_Core_22_Equations.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`

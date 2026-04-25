@@ -17,6 +17,8 @@ dependency: [SRT-CLAIM-LADDER, SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN, SRT-
 > **Does not define**：P0/P1 core definitions, `d-value`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or real choice moment.
 > **Depends on**：`Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`、`Philosophy/SRT_Philosophy_Ethics.md`、`Philosophy/SRT_Ethics_Agency.md`、`Governance/SRT_CLAIM_LADDER.md`。
 > **Relation**: This file translates the spirituality line into everyday life, modern crisis, recognizable experience, and gentle guidance.
+> **Canonical Structural Layer**: 当本文描述"d 收得太窄"、"B 期锁死"、"真空期"、"缺口感知残余"、"结构性恶"等结构层图景时，结构判据以 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）为准；本文只做生活化的翻译。
+> **Canonical Suffering Layer**: 本文涉及的"空心感"、"不像自己"、"慢慢回不来"等第一人称体验的结构读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）；本文不重复疼痛 vs 苦难、信号 vs 结构两型的定义。
 
 ---
 

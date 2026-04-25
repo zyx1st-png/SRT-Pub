@@ -27,6 +27,11 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 
+## Canonical Cross-Link: Suffering Theory
+
+- 本文件把 prediction error / FEP / active inference 作为 SRT 算子/路径动力学的神经代理；涉及"失配"、"预测误差持续性"、临床苦难相关段落时，结构层读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
+- 本文件不把 prediction error 等同于苦难：苦难要求稳定 ISP 的第一人称登记；prediction error 是其候选神经代理之一，具体桥接尚在 `SRT_Suffering.md §8` Open Pressures 下待推进，不得反向定义苦难。
+
 ## Neural Proxy Boundary
 
 This file may use FEP / predictive-processing quantities as bridge language, but it must not silently identify them with SRT core quantities. Prediction error, variational free energy, and precision weighting are optimization / inference constructs. Under `H-NEURO-4b`, they may enter a local neural friction proxy only inside an explicit measurement window:

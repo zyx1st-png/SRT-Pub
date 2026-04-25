@@ -18,6 +18,7 @@ created: 2026-04-22
 > **定位**：本文尝试把国家、权利、合法性、民主、结构性不公、危机决断与政治病理，统一重写为多主体选择如何共同生成、稳定、封闭并再打开现实的过程。
 > **Claim-level note**：本文以 P2/P3 为主：政治本体论与规范解释主要为 canonical interpretation / bridge mapping；制度判准、阈值、操作化候选与失效条件属于 P4。不得将本文中的政治制度设计句子反向升级为 P0/P1 core axiom。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P4` 与上述说明一致；本文件是 Philosophy 主文，不是 core definition source。
+> **Canonical Collective Selection Layer (2026-04-24)**：本文涉及"多主体共同现实选择"、合法性作为可持续共同选择、反支配、结构性不公、危机决断、民主作为 d 倾向后验验证等结构层读法，回链 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）。集体 ISP 存在条件（T-COLL-1）、三类退化（聚合 / 主从 / 收编）、集体 ε 反闭合必要性（T-COLL-3）、共选真实性判据（T-COLL-4）不在本文件重新定义；本文件保留 P2/P3 政治哲学与 P4 制度判准，但其结构基石以 canonical 为准。
 
 > **Version 1.0 (Hybrid)**
 > **Part A** presents the Political Axioms & Criteria (AI-readable).

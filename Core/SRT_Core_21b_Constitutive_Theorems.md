@@ -59,6 +59,8 @@ $$
 
 **Cross-ref**: `Philosophy/SRT_Causality_Time.md §二`; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`; `Core/SRT_Core_01_Axioms.md MA-1`.
 
+**L1 Expansion**: `Core_Law/SRT_Irreversibility.md` Def-IRR-2 / T-IRR-1（学习不可逆的非对称 `Ψ_f` 支付）把 `L_0` 不可逆性从 P1-T02 的推论展开为可引用 L1 层；热力学二律与 FEP 自由能最小化**不**由此获得反向定义权。
+
 ---
 
 ## P1-T03: `L_2` Downward Constraint
@@ -124,7 +126,7 @@ $$
 
 **Implication**: Stability is not an arbitrary restriction imposed by the observer. It is the entry condition for any process that can bear a continuous perspective.
 
-**Dynamic Layer**: Why some processes achieve and maintain stable ISP status is treated through `T-L2-Scaffold` in `Core/SRT_Core_12b_Ontology_L2.md`.
+**Dynamic Layer**: Why some processes achieve and maintain stable ISP status is treated through `T-L2-Scaffold` in `Core/SRT_Core_12b_Ontology_L2.md` (path-layer trace dynamics) and through the operator-layer self-reference ratio `σ` in `Core_Law/SRT_Individuation.md` (entry-transition dynamics). The four conditions above are the **result-state criterion** for being a stable ISP; `T-IND-2` in the individuation file is the **entry-dynamics criterion** for when a process crosses into that state. Self-consciousness is treated there as a distinct second-order condensate (second phase transition at `σ_self`), not as a precondition for being a stable ISP.
 
 **Precision note (2026-04-21)**: `T-L2-Scaffold` explains how successful stable ISP history can become background scaffold; it does not decide whether that scaffold is healthy support, pathological closure, or lethal `L_2`. Read those distinctions through `Core/SRT_Core_12b_Ontology_L2.md Def-L2-DualLayer / Def-L2-Normative` and `Core/SRT_OPEN_TENSIONS.md §4`.
 
@@ -178,6 +180,8 @@ Bridge relation:
 3. This theorem shows that stable ISPs must maintain anti-closure asymmetry.
 
 **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ④`; `Core_Law/SRT_Core_Text_CN.md ④`; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`; `Core/SRT_Core_01_Axioms.md MA-1`; `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold`.
+
+**L1 Expansion (2026-04-24)**: `Core_Law/SRT_Irreversibility.md` T-IRR-3 把本定理精确化为 `L_0` 残余项层面的非守恒声明，对应 `Core_Law/SRT_L1_Formalism.md §4.3` 中 `\dot{\Delta}_{avail}` 的非对称残余；T-IRR-2 给出"终止"作为本定理 `A_{t*} = empty` 吸收态的结构化分型（宪定 / 吸收 / 集体）。集体版见 `Core_Law/SRT_Collective_Selection.md` T-COLL-3。本定理为上位 P1 源头，不被下位 L1 层替代。
 
 ---
 

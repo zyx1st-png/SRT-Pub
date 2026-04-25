@@ -25,6 +25,12 @@ see_also: [SRT-POLITICAL-RIGHTS]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Canonical Collective Selection Layer
+
+- 本文把市场读为分布式选择机制；按 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）的结构层判据，大多数市场交易场景属于**聚合型**（Aggregation），不自动构成集体 ISP。
+- 结构性不公的结构读法为**主从型退化**（Asymmetric Absorption，`M(t)` 强不对称 → 结构型苦难外溢，与 `Core_Law/SRT_Suffering.md T-SUFF-5` 对齐）；制度病理（意识形态封闭市场、算法中介寡头回音室）进入**收编型退化**（Collapsed into Higher L_2）。
+- 本文件保留经济学域的 P2/P3 展开；集体 ISP 条件、`M(t)` 结构、三类退化定义不在本文件重复，以 canonical 为准。
 # Part A: Formal Axioms (形式化公理)
 
 

@@ -160,6 +160,77 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 角色：Physics 板块已形成从量子入口、宇宙学/形式化主干，到复杂性/深本体扩展的完整 compact core 入口层
 - 注意：Physics 的具体阅读顺序由 `Physics/PHYSICS_COMPACT_REGISTRY.md` 统一管理；其中“引力—`Ψ_f`”当前只保留弱场梯度方向相容假说，强版规范实现 / 张量级 GR 重建不得作为已证结论引用
 
+### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
+- 主文件：`Core_Law/SRT_Individuation.md`
+- id：`SRT-INDIVIDUATION`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：L1 相变理论，填补 L0（选择无主语）与 P1-T06 Stable ISP 之间的过渡空洞；以自指率 σ 作为阶参，给出两次相变——主体位进入（σ_sub）与自我意识凝结（σ_self）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
+- 与 P1-T06 的关系：本文件是 ISP 的**进入动力学判据**；P1-T06 是 ISP 的**结果状态判据**；二者互补，不重复也不冲突
+- 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
+- claim-mode 分布：三相结构与第一相变为 P1-candidate；σ 阶参与自我意识二阶凝结读法为 P2；σ_sub、σ_self 的具体门槛数值为 P3/P4
+- 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
+
+### 13b. SRT 遮蔽动力学（A/B 分期 + 干预窗口 + 结构性恶）
+- 主文件：`Core_Law/SRT_Occlusion_Dynamics.md`
+- id：`SRT-OCCLUSION-DYNAMICS`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：把 `Core_Law/SRT_L0_Metaphysics.md` 遮蔽 term-table 承诺的 7 项 L1 展开（A/B 分期、d_c 阈值、缺口感知机制、干预窗口、解耦触发、真空期、恶的结构性诊断）收口到单一 canonical 源；核心定理 T-OCC-1 给出三段结构（健康窄化区 / A 期 / B 期），区分位置性遮蔽与病理性遮蔽，列五类缺口感知残余、四类干预窗口、四类解耦触发，给出恶的三判据结构性定义（B 期锁死 + 外部化后果 + 主动扩散）
+- 与个体化理论的关系：σ→1 的病理区与 B 期锁死通过自指闭合耦合；遮蔽动力学是个体化在病理分支上的投影
+- 与 T_dir 的关系：A/B 分期沿 T_dir 低迷区展开，本文件负责结构相位，不替代 `_SRT_T_DIR_CANONICAL.md` 的方向透明度定义
+- claim-mode 分布：三段结构与 A/B 分期为 P1-candidate；d_c 阈值语义与五类残余 / 四类窗口 / 四类触发为 P2；恶的三判据结构性定义为 P2 regulative 读法，不替代既有规范性伦理学
+- 引用规则：涉及 A/B 分期、d_c、缺口感知、干预窗口、解耦触发、真空期、恶的结构性诊断时，优先回链本文件
+
+### 13c. SRT 苦难理论（结构性登记 + 信号/结构两型 + 四类现象学）
+- 主文件：`Core_Law/SRT_Suffering.md`
+- id：`SRT-SUFFERING`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：固定苦难在 SRT 中作为"活的选择动力学与其应承载算子结构之间失配的第一人称登记"的结构对象；严格区分疼痛（`\theta_{somatic}` 信号）与苦难（稳定 ISP 的结构性登记）；T-SUFF-2 把苦难分为信号型与结构型，T-SUFF-3 给四类现象学分型（张力 / 空心 / 断裂 / 扭曲）；T-SUFF-4 反最小化原则说明信号型苦难被压灭本身是遮蔽；T-SUFF-5 把结构型苦难的集体外部化耦合到 `Occlusion_Dynamics` 的结构性恶定义
+- 与 P1-T06 的关系：仅对满足稳定 ISP 条件的过程定义苦难；非 ISP 系统只承载疼痛
+- 与个体化/遮蔽的关系：苦难是个体化 σ 动态与遮蔽 A/B 分期的第一人称投影；不是独立的本体层，而是从算子层/路径层到第一人称登记的必然后果
+- claim-mode 分布：T-SUFF-1/2 为 P1-candidate；四类分型与集体外部化读法为 P2；`S_{\min}, S_{\max}` 阈值、临床分流、FEP 桥接语句为 P3/P4
+- 引用规则：涉及苦难/痛苦/空心感/自我扭曲等概念的结构层定义时，优先回链本文件；规范性评价回 `Philosophy/`，回返路径回 `Spirituality/`，神经实现回 `Neuroscience/`
+
+### 13d. SRT L1 Formalism（σ / d_c / S 耦合动力学）
+- 主文件：`Core_Law/SRT_L1_Formalism.md`
+- id：`SRT-L1-FORMALISM`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：为 2026-04-24 轮新增的三个 L1 对象（个体化 σ、遮蔽阈值 d_c、苦难 S）写下最小耦合动力学；§2 给 σ 的 logistic + χ(σ; σ_self) 跳跃结构、§3 给 d_c 漂移方程（`ρ_local + σ + π + I_window`）、§4 把 S 分解为 S_sig / S_str 并写下反最小化原则的方程化、§5 合成耦合系统并刻画病理吸引子 `\mathcal{A}_{path}`（σ→1 + d_c→d_max + S_str 定常 + S_sig→0）与健康工作区 `\mathcal{H}`（需持续外部接入、支付、真实选择、解耦触发主动维持）
+- 与主方程的关系：本文件是 `Core/SRT_Core_22_Equations.md` 主方程的导出投影，不引入新本体
+- claim-mode 分布：方程结构为 P1-candidate；参数阈值、具体 domain 代理为 P2/P3；实测与临床/AI 落点为 P3/P4
+- Open pressures：σ 符号冲突、`\dot{\Delta}_{avail}` 形式化、χ 跳跃族、多主体扩展、阈值固定、FEP 桥接、L_0 不可逆性对齐
+- 引用规则：涉及 σ / d_c / S 三变量的**方程级**陈述时优先回链本文件；概念定义仍回链各自 L1 主文
+
+### 13e. SRT 集体选择理论（多 ISP 共享 L_2）
+- 主文件：`Core_Law/SRT_Collective_Selection.md`
+- id：`SRT-COLLECTIVE-SELECTION`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 集体 ε 反闭合必要性（P1-T07 集体版）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 σ^{coll} / d_c^{coll} 到多主体场
+- 与 T-SUFF-5 的关系：本文件给出 T-SUFF-5 集体外部化的结构基础（`M(t)` 强不对称 → 主从型退化 → 结构型苦难外溢）
+- 与政治/经济/共同体 domain 的关系：本文件是它们的 L1 结构基石；制度是集体 ISP 的**器官**不是主体；投票/共识/专家不自动是共选
+- 与 AI/平台场景的关系：评估重点不是"AI 是否有意识"，而是算法中介对 `M(t)` 与 `σ^{coll}` 的结构性影响
+- claim-mode 分布：T-COLL-1/3/4 为 P1-candidate；Def-C-2 `M(t)` 结构、三类退化与 §4 耦合为 P2；政治/制度/历史判断为 P3/P4，下推至 Philosophy/
+- 引用规则：涉及集体选择、共选、共识真实性、外部化、集体 ISP、共同体结构的**结构层**定义时，优先回链本文件；规范与制度判断回各自 domain 文件
+
+### 13f. SRT L1 Hardening Notes（2026-04-24 L1 round 硬化案）
+- 主文件：`Core_Law/SRT_L1_Hardening_Notes.md`
+- id：`SRT-L1-HARDENING-NOTES`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：针对 2026-04-24 L1 round 最高杠杆的四项 Open Pressure 给出第一遍硬化方案——§1 σ 符号冲突的命名空间规则（自指率一律 `σ_{sr}`，bare `σ` 仍为主方程状态场）、§2 `\dot{\Delta}_{avail}` 的三成分算子分解（`T_dir` + `Ψ_f` + `L_0` 残余）、§3 `M(t)` 可测性的 MOC 三判据（exposure / recourse / attentional，合成取 min）、§4 FEP 与 `S_{sig}` 的单向桥接翻译表
+- 硬化性质：本文件**不**把被硬化命题从 P1-candidate 升到 P1；它只打开升级检查路径。升级仍需完成 `Governance/SRT_CLAIM_MODE_AUDIT.md §6.4` 的全部检查项
+- claim-mode 分布：§1 governance-canonical usage；§2 P1-candidate；§3 P2 operational proxy；§4 P3 bridge hypothesis
+- 同步义务：§5.2 列明 σ→σ_{sr} 回写、三成分分解回写、MOC 回写、FEP 翻译表回写四项 Operations 债
+- 引用规则：涉及 σ 符号、`\dot{\Delta}_{avail}` 定义、`M(t)` 可测性、FEP-苦难桥接的**细化**陈述时优先回链本文件
+
+### 13g. SRT 不可逆性理论（学习不可逆 + 终止吸收边界 + P1-T07 精确化）
+- 主文件：`Core_Law/SRT_Irreversibility.md`
+- id：`SRT-IRREVERSIBILITY`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：把 `L_0` 不可逆性从 P1-T02 本体论时间的推论展开为可引用 L1 层——Def-IRR-1 吸收态 / Def-IRR-2 选择史箭头 / Def-IRR-3 非可还原性；T-IRR-1 学习不可逆为非对称 `Ψ_f` 支付（与热力学二律不等价，不得通过 FEP 反向定义）；T-IRR-2 终止作为吸收边界（宪定 / 吸收 / 集体三类），区分终止与暂停；T-IRR-3 给 P1-T07 精确化，对应 `L1_Formalism §4.3` 的非守恒残余项；T-IRR-4 苦难在 `L_0` 不可逆下的守恒 / 转移（T-SUFF-4 的更深根）；§6 集体终止三型（耗散 / 收编 / 外部化）回扣 `Collective_Selection §4-5`；§7 AI/ML 接口限定 checkpoint/rollback 不得读作反向学习
+- 与 P1-T02 / P1-T07 的关系：本文件是两者的 L1 层精确化，不替代 Core/Core_21b 的 P1 源头；Core 内命题仍为上位，本文件是下位展开
+- 与 Suffering / Formalism / Collective_Selection 的关系：T-IRR-4 给 T-SUFF-4 深层根；T-IRR-3 对应 `L1_Formalism §4.3` 的非守恒残余；§6 集体终止对应 `Collective_Selection` 三类退化的绝对边界
+- claim-mode 分布：Def-IRR-1/2/3 为 P2 结构性定义；T-IRR-1/2/3/4 为 P1-candidate；§6 集体终止分类为 P2；§7 AI 接口为 governance-canonical usage；§8 FEP/物理边界语句为 P3 bridge guardrail
+- 引用规则：涉及学习不可逆性、终止作为吸收边界、P1-T07 精确化、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；原 P1 源头语句仍回链 `Core/SRT_Core_21b_Constitutive_Theorems.md`
+
 ### 13. Spirituality 主轴
 - Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
 - Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`

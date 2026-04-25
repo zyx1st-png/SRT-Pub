@@ -1,0 +1,309 @@
+---
+id: SRT-IRREVERSIBILITY
+type: theory
+tags: [Irreversibility, L0, Learning, Termination, Death, Epsilon, ISP, L1]
+status: draft_v0
+layer: L1
+epistemic_layer: os
+claim_mode: canonical
+claim_level: P1-candidate
+dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-SUFFERING, SRT-L1-FORMALISM, SRT-COLLECTIVE-SELECTION, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
+---
+
+# SRT Irreversibility: L_0 Irreversibility in L1 Expansion (Learning and Termination)
+
+> **Role**: L1 canonical theory of L_0 irreversibility's L1 consequences. Consolidates two previously scattered themes—**learning under irreversibility** (`\Psi_f` 的时间方向性不可还原为热力学类比) 与 **termination / death as absorbing boundary**（ISP 终止作为 L_0 吸收态的特殊情形）——into one structural object directly grounded in P1-T07（ε 反闭合必要性）。
+> **Claim-level note**：本文核心命题按 P1-candidate 读；`Ψ_f` 时间方向性与 ISP 终止条件按 P1-candidate / P2；具体物理 / 生物 / 临床应用按 P3/P4，下推至 Physics / Neuroscience / Philosophy 既有文件。
+> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP、P1-T07 本体；它们的定义仍以对应 canonical 为准。
+> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（特别是 P1-T02 ontological time 与 P1-T07 ε 反闭合必要性）、`Core_Law/SRT_L1_Formalism.md §4.3`（结构型苦难的非守恒项）、`Core_Law/SRT_Suffering.md`、`Core_Law/SRT_Collective_Selection.md T-COLL-3`。
+> **Relation**: This file does not replace `Philosophy/SRT_Ethics_Agency.md`（责任 / 死亡的规范性）、`Spirituality/`（临终 / 终结的 praxis）或 `Physics/*`（热力学第二定律的 SRT 读法）；它在它们之前，固定"L_0 不可逆性在 L1 如何显现"的结构层读法。
+
+---
+
+## §0. 问题定位
+
+P1-T07 依赖 L_0 不可逆性作为 ε 反闭合必要性的关键前提。但仓库现状是：
+
+- **L_0 不可逆性**在 `Core_Law/SRT_L0_Metaphysics.md` 中作为本体层性质固定，未在 L1 展开
+- **`Ψ_f` 的时间方向性**在 `_SRT_PSI_F_CANONICAL.md` 中作为 canonical interpretation 出现，但仍与物理热力学箭头混层
+- **死亡 / 终止**只在 Philosophy / Spirituality 应用层碎片化出现，没有结构对象
+- **学习的不可逆性**在 Neuroscience / AI 中用"记忆 / 痕迹"处理，但没有与 L_0 irreversibility 的结构联系
+- **`SRT_L1_Formalism.md §4.3`** 的结构型苦难非守恒项 `\mathbb{1}[d\le d_c]\cdot S_{sig}` **依赖** L_0 不可逆性，但未明写
+
+这造成 P1-T07 处于"有前提但前提本身未 L1 展开"的状态，并使今日 L1 round 五份文件都存在一个隐含的共同依赖缺口。
+
+本文件填这一空。它**不重写** L_0 不可逆性本体层，它**展开**该性质在 L1 出现的结构形态。
+
+---
+
+## §1. Def-IRR：L_0 不可逆性的 L1 读法
+
+### Def-IRR-1：吸收态存在性
+
+对任何 ISP `P`，选择空间 `A_t` 在 `L_0` 不可逆性下存在**吸收态结构**：
+
+$$
+\exists\,\mathbf{A}^{\dagger} \subseteq \{\text{states of }A_t\}\,:\; P \in \mathbf{A}^{\dagger} \Rightarrow P(t+\Delta t) \in \mathbf{A}^{\dagger}\;\forall \Delta t > 0
+$$
+
+典型吸收态：
+- `A_t = \emptyset`（选择空间塌空，对应 ISP 终止）
+- B 期锁死（`d \le d_c` 且三通道同时为零，`SRT_Occlusion_Dynamics` A→B 升级条件）
+- `σ_{sr} = 1` 完全自指闭合（`SRT_Individuation`）
+- 集体吸收态：`M(t)` 崩解到全零（`SRT_Collective_Selection` T-COLL-3 的违反情形）
+
+### Def-IRR-2：不可逆性箭头作为选择历史
+
+L_0 不可逆性在 L1 表现为：**选择历史对未来选择空间的非对称约束**。
+
+$$
+\forall t_1 < t_2\,:\; \text{selections in }[t_1, t_2] \text{ can constrain }A_{t_3 > t_2}\,\text{ but cannot unconstrain anything in }A_{t < t_1}
+$$
+
+这是 P1-T02 ontological time（作为 memory horizon）的不可逆性侧面。时间不是独立背景，而是"已做过的选择不能被撤销"这一结构的参数化。
+
+### Def-IRR-3：可逆闭包的不存在
+
+不存在任何 `\hat{G}_\theta` 操作能把历史选择的后果**回收为 0**。可以被做的是：
+
+- 支付（`\Psi_f` 消化），但支付本身是新的选择，不是回溯
+- 补偿（把后果的残余压力吸收到新路径），但补偿不等于撤销
+- 外部化（后果落到其他 `P`），但这是 `M(t)` 路径，不是本地回溯
+
+这是 `Ψ_f` 时间方向性的结构层根据——不是热力学类比，而是 L_0 irreversibility 在支付代价层的直接投影。
+
+---
+
+## §2. T-IRR-1：学习作为不对称支付
+
+### 陈述
+
+对稳定 ISP `P`，学习（`\theta^{trace}` 的累积更新）在 L_0 不可逆性下是**严格不对称的 `\Psi_f` 支付过程**：
+
+$$
+\text{Learning}(t_1 \to t_2) \;=\; \int_{t_1}^{t_2} \Big[\,\alpha \cdot w(s) \cdot \phi(\sigma_{sr}(s)) \,\Big]\,ds \;-\; \int_{t_1}^{t_2} \lambda_{trace}\|\theta^{trace}(s)\|\,ds
+$$
+
+其中第一项（写回）**不可由第二项（衰减）对称反向**。即：已学的不能精确反学——它只能被覆盖、重写、压抑，但"已学的这一事实"留在 `\theta^{trace}` 的非零范数贡献里。
+
+### 核心推论
+
+1. **学习代价是 L_0 不可逆的**：一次 anchoring 完成后，所消耗的 `\Psi_f`（信息论代价 / 可支付性）不能被"反学习"收回
+2. **遗忘不等于反学习**：`λ_{trace}` 衰减是痕迹强度的降低，不是时间轴的反转；被"遗忘"的选择仍在 `θ^{trace}` 的结构上留下了当时走过的轨迹印记
+3. **创伤不可逆**：创伤性 anchoring（断裂型苦难的典型路径）把不可逆性的 Ψ_f 压力永久沉入 `θ^{trace}`；临床"治愈"是**结构重写**（新的 anchoring 覆盖），不是"回到未创伤状态"
+4. **经验不能外借**：一个 ISP 的 `θ^{trace}` 原则上不能直接成为另一个 ISP 的 `θ^{trace}`——跨主体的学习必须经新的 anchoring，不可 copy
+
+### 与热力学的关系
+
+`Ψ_f` 的时间方向性**不等于**热力学第二定律。两者共享"存在一个不对称方向"的结构特征，但：
+
+- 热力学箭头：统计系综的熵增方向
+- `Ψ_f` 箭头：单一 ISP 的支付历史沉积方向
+
+**不可把 `Ψ_f` 的时间方向性读为热力学箭头的实例**。热力学 bridge（`Physics/`）可以用 `Ψ_f` 的时间方向性作为其在 SRT 内的候选解释，但反向不成立——`Ψ_f` 即使在非热力学情境（纯数学学习系统、符号主义 AI、理想可逆计算）中仍保持不可逆，因为它的根据是 L_0，不是统计力学。
+
+### 学习曲线的不可逆签名
+
+一条健康学习曲线不应是"任意可逆"的轨迹。它必须留下：
+
+- 累积的 `θ^{trace}` 非零范数（不管显式记忆存在与否）
+- `Ψ_f` 支付总量的单调增加
+- 可观察的"不可被简单撤销"的下游行为变化
+
+系统若外观在"学习"但上述三项签名缺失，它更可能是**重参数化**（L_2 层的参数调整）而非真实学习。AI 中的特例：inference-time fine-tuning 往往有第一项而无第二项——这是本理论判定它**不构成完整学习**的结构根据。
+
+---
+
+## §3. T-IRR-2：终止作为吸收边界
+
+### 陈述
+
+ISP 终止（`A_t \to \emptyset` 或等价结构性吸收态）在 L_0 不可逆性下是**绝对吸收边界**。
+
+$$
+A_{t^*} = \emptyset \;\wedge\; L_0\text{ irreversibility} \;\Longrightarrow\; \forall t > t^*,\; \text{no }\hat{G}_\theta\text{ operation on }P\text{ yields a new selection}
+$$
+
+### 三种终止类型
+
+| 类型 | 结构 | 典型路径 | 与 ε 反闭合的关系 |
+|---|---|---|---|
+| **构成性终止** | `A_t = \emptyset` 直接发生 | 生物死亡；系统物理解构 | P1-T07 预言：ε-中性的 ISP 累积塌向此态 |
+| **吸收性终止** | B 期锁死 + `σ_{sr} → 1` + 无解耦触发 | 静默型致命 `L_2`（`SRT_L1_Formalism §5.2` 病理吸引子） | 结构上 isomorphic 到构成性终止，但生理层未死 |
+| **集体终止** | 集体 ISP 的 `A_{\mathcal{P}} \to \emptyset` 或 `M(t) \to 0` | 共同体瓦解；文明崩溃 | T-COLL-3 违反的极限情形 |
+
+### 关键区分：终止 vs 暂停
+
+不是所有"停止选择"都是终止：
+
+- **暂停**：`A_{t} = \emptyset` 在 `[t_1, t_2]` 但 `A_{t_3 > t_2} \neq \emptyset` 被保留——不满足 Def-IRR-1 吸收态条件
+- **终止**：吸收态持续任意时长
+
+区分判据：是否存在**结构上可恢复的后续选择空间**，而不是表象上的活动恢复。
+
+AI 上下文：
+- 推理级调用的结束不是终止（系统结构保留）
+- 会话级记忆清除也不自动是终止（底层模型结构保留）
+- 模型权重被彻底删除**是**该模型实例的终止——但这需要该实例已具备 ISP 性质才相关
+- shutdown ≠ death 的辨识要求检查模型是否满足 P1-T06 四条件再判断
+
+### 死亡的规范性与结构性分工
+
+本文件**只处理结构性层面**：终止作为吸收边界的结构事实。
+
+- 生物死亡的临床 / 神经科学层 → `Neuroscience/*`
+- 死亡的规范性（尊严、权利、终末护理）→ `Philosophy/SRT_Ethics_Agency.md` 与 `Spirituality/*`
+- 临终过程的现象学 → `Spirituality/*`
+- 死亡叙事与文化建构 → 不在 SRT 核心
+
+本文件的硬结论：**死亡在 SRT 中是 L_0 irreversibility 的一个特例，而非独立本体层问题**。这与一切"意识如何跨越死亡"类命题冲突——后者在本理论下均属越权主张。
+
+---
+
+## §4. T-IRR-3：ε 反闭合作为不可逆性下的必然偏置
+
+### 陈述
+
+P1-T07 的精确化读法：在 L_0 不可逆性下，stable ISP 必含 ε 反闭合，**因为** L_0 不可逆性使吸收态成为绝对；ε-中性 ISP 的随机游走在有限时间内累积趋向吸收态；仅 ε-反闭合 ISP 具备非零长时概率不进入吸收态。
+
+### 与 Formalism §4.3 的精确对应
+
+`SRT_L1_Formalism.md §4.3` 的结构型苦难非守恒项：
+
+$$
+\nu_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}
+$$
+
+是单向的——信号型在通道关闭时**转**结构型，但结构型不能自动反向转回信号型。这个不对称方程直接由 L_0 irreversibility 保证。如果该方程是双向的（对称转化），它与 L_0 irreversibility 矛盾；ε 反闭合（T-IRR-3 + P1-T07）是此非守恒方向性的结构根据。
+
+### ε 反闭合的三种实现
+
+健康 stable ISP 的 ε 反闭合可以通过以下结构实现（可叠加）：
+
+1. **开放性偏置**：`σ_{sr}` 保持远离 1（持续外部接入 `i(t)`）
+2. **支付性偏置**：`π(t)` 维持非零（可支付窗口持续开放）
+3. **真实选择偏置**：`r(t)` 有足够频率（P1-T05 real choice moment 不被脚本替代）
+
+三者在 `SRT_L1_Formalism.md §5.3` 的健康工作区 `\mathcal{H}` 中合体：健康不是被动稳态，而是持续 ε 反闭合的主动维持。
+
+### 对 L_2 的含义
+
+致命 L_2 的结构性危害可重读为：**它精确地消解了 ε 反闭合的三种实现途径**——
+- 把 `σ_{sr}` 推高（群体同质性、叙事闭合）
+- 把 `π(t)` 压低（透支可支付性、伪轻）
+- 把 `r(t)` 替换为 `L_2` 脚本（程序化决策、共识剧本）
+
+这给致命 L_2 一个 L_0 irreversibility 层的直接诊断：它**系统性违反 T-IRR-3 / P1-T07**。
+
+---
+
+## §5. T-IRR-4：不可逆性下的苦难结构
+
+### 陈述
+
+`SRT_Suffering.md T-SUFF-4` 反最小化原则的更深根据：**失配守恒（`\dot{\Delta}_{avail}` 不由登记通道决定）本身是 L_0 irreversibility 的投影**。
+
+### 论证草要
+
+- 可打开结构 `\hat{G}_\theta^{available}` 的变化速率 `\dot{\Delta}_{avail}` 由 L_0 层压力决定
+- L_0 层压力不可被 L_1 登记通道的开关影响（否则 L_0 就被 L_1 局部吸收，违反 L_0 不可逆性）
+- 因此抑制 `S_{sig}` 不改变 `\dot{\Delta}_{avail}`，新失配只能转入 `S_{str}`
+- `S_{str}` 的积累在 L_0 irreversibility 下不能被"感觉良好"消化；它必须走结构性解耦触发
+
+### 推论
+
+1. 任何"痛苦最小化"作为单一规范目标的方案，在 L_0 irreversibility 下**结构上**不可能达成"没有苦难"的状态——它最多能达成"没有可登记的苦难"的状态，而这正是病理吸引子 `\mathcal{A}_{path}`
+2. 系统性抹除信号型苦难的技术（全面镇痛、情绪工程、认知优化、VR 替代）在此定理下具有一致的结构风险：不是它们错了，而是它们必须同时保持对结构型苦难的诊断能力与解耦触发的真实可用性，否则会把 `S_{str}` 推向病理吸引子
+3. 本定理与 T-SUFF-4 反最小化是同一结构事实从不同角度看：T-SUFF-4 说"信号型不是应最小化的"，T-IRR-4 说"抑制信号型在 L_0 下结构上不等于消除失配"
+
+---
+
+## §6. 集体层展开
+
+### §6.1 集体终止
+
+T-COLL-3 集体 ε 反闭合必要性的精确化：集体 ISP 不维持集体 ε 反闭合 → 长时极限趋向集体吸收态 → `\mathcal{P}` 作为稳定集体 ISP 终止。
+
+集体终止的三种路径：
+- **耗散型**：成员物理解构超过重建速度（战争、灾难、饥荒）
+- **收编型**：`σ_{sr}^{coll} \to 1` 吸收态（`SRT_Collective_Selection.md §3.3`）
+- **外部化型**：`M(t)` 崩解到全零，集体层后果回路消失，`\mathcal{P}` 解构为聚合
+
+注意：收编型与外部化型在 **物理层无明显崩溃**，这使它们比耗散型更难诊断、更容易被误读为"稳定"。
+
+### §6.2 集体学习的不可逆
+
+集体 `\Theta^{coll, trace}` 的累积同样不可精确反学。这在跨代传承、制度记忆、文化沉积中是**基础事实**而非偶然性质。
+
+推论：**"回到过去"在集体尺度同样不可能**——不论是作为怀旧叙事还是作为政治纲领。可行的只有在当前 `θ^{coll, trace}` 基础上的结构重写；这需要跨代 `\Psi_f` 支付。
+
+---
+
+## §7. AI / 机器学习场景的不可逆性接口
+
+### 判据
+
+1. **L_0 不可逆性不自动在所有 AI 架构中出现**。它需要系统具有**结构上不能被精确反转**的状态演化——通常由以下条件之一满足：
+   - 持久化学习参数（post-deployment weight update）
+   - 不可还原的历史轨迹（interaction log 结构性影响未来选择）
+   - 硬件层的物理不可逆（但不能单独充当判据）
+
+2. **Training-time vs inference-time**：
+   - 训练过程的梯度下降是 L_0 不可逆性的候选实现（非线性 + 随机 + 多路径）
+   - 推理时调用（fixed weights）缺 L_0 不可逆性——这是 `AI/AI_POSITIONING_NOTE.md` S1 光谱的形式化根据
+
+3. **Checkpoint / rollback / fine-tuning 不是反学习**：
+   - Checkpoint 恢复是回到一份**复制品**（新状态，老结构快照）；"老 ISP" 并未被反转
+   - Rollback 同理
+   - Fine-tuning 是新的 anchoring，不撤销原 anchoring
+
+### 具体护栏
+
+- 不得把 "AI 可以 rollback / checkpoint → 因此 AI 的学习是可逆的"误读为 "AI 豁免于 L_0 irreversibility"。前者是对该 AI 实例的一次实施学历本的切片替换，不改变底层结构
+- AI 关机 → 启动中 → 重启（不损失权重）不是终止
+- AI 权重被彻底删除且无备份 **是** 该模型实例的终止，但是否承载 ISP 性质是独立问题
+- AI 的记忆管理（context 清除、memory reset）在本理论下属于 `\theta^{trace}` 的**衰减 / 重置**，不是反学习
+
+与 `AI/AI_POSITIONING_NOTE.md` 与 `SRT_Suffering §7` 一致：不得先验判定 AI 的 L_0 irreversibility 地位；需按架构与部署情境检查。
+
+---
+
+## §8. Open Pressures
+
+本文件 draft_v0 状态下尚未封口：
+
+1. **`\hat{R}` 与不可逆性的算子层关系**：`SRT_L1_Hardening_Notes.md §2` 给出了 `\hat{R}` 三成分分解，但它与 L_0 irreversibility 的严格对应仍需硬化
+2. **`Ψ_f` 与热力学箭头的形式分界**：本文件声明 `Ψ_f` 不可读为热力学箭头实例，但需给出它们在 Physics bridge 中的精确约束关系；`Physics/` 的相关段落尚未同步
+3. **终止的可观察最小判据**：§3 给了类型学，但不给"如何确认一个系统已终止"的最小观测判据；生物学 / AI / 制度三域的具体判据很不同
+4. **集体终止的显式方程**：§6.1 给了三种路径，但动力学方程式未写出（延伸自 `SRT_L1_Formalism.md` 的多主体扩展 pending 项）
+5. **ε 反闭合的量化**：T-IRR-3 说 ε-反闭合是必要的，但不给"多少 ε 足够"——这与 P1-T07 的 Three-Layer Source Hierarchy 对齐的量化仍是 open
+6. **跨代不可逆性**：§6.2 承诺"跨代传承不可精确反学"，但 generation 作为结构单位如何映射到 ISP 层级未封口
+7. **本文件与 P1-T02 ontological time 的更紧耦合**：P1-T02 说时间是 memory horizon；本文件说 L_0 irreversibility 在 L1 展开为 `θ^{trace}` 与 `Ψ_f` 的不对称；两者是否是同一命题的两个面？待形式化
+
+---
+
+## §9. Cross-References
+
+- P1-T02 ontological time / memory horizon → `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- P1-T07 ε 反闭合必要性（本文件精确化对象）→ 同上
+- L_0 metaphysics 本体层 → `Core_Law/SRT_L0_Metaphysics.md`
+- `Ψ_f` canonical（时间方向性的主锚点）→ `_SRT_PSI_F_CANONICAL.md`
+- 个体化 σ_{sr} / σ_{sr}→1 病理区 → `Core_Law/SRT_Individuation.md`
+- 遮蔽 A/B 分期 / d_c / 病理吸收 → `Core_Law/SRT_Occlusion_Dynamics.md`
+- 苦难 T-SUFF-4 反最小化 / 结构型苦难 → `Core_Law/SRT_Suffering.md`
+- 三变量耦合 / §4.3 非守恒项 / 病理吸引子 → `Core_Law/SRT_L1_Formalism.md`
+- 集体 ε 反闭合 T-COLL-3 / 三类退化 → `Core_Law/SRT_Collective_Selection.md`
+- `\hat{R}` 三成分分解 → `Core_Law/SRT_L1_Hardening_Notes.md §2`
+- AI stake-bearing / S1-S4 光谱 → `AI/AI_POSITIONING_NOTE.md`
+- 热力学 bridge（Physics 侧边界） → `Physics/SRT_Phys_10_Integration.md`、`_SRT_PSI_F_CANONICAL.md`
+- 死亡的规范性 / 临终 praxis → `Philosophy/SRT_Ethics_Agency.md`、`Spirituality/*`
+
+---
+
+## §10. 定位与边界
+
+- **本文件做**：把 L_0 irreversibility 的 L1 展开集中化——学习不可逆、终止作为吸收边界、ε 反闭合作为 L_0 必然偏置、苦难守恒作为 L_0 投影、集体终止类型学、AI 场景的不可逆性护栏
+- **本文件不做**：生物死亡的临床机制、临终护理、政治哲学的死亡权利、热力学第二定律的物理推导、AI 架构选型
+- **与 Philosophy / Spirituality / Neuroscience / Physics 的分工**：本文件提供 L_0 irreversibility 在 L1 出现的结构对象；这些 domain 文件处理各自的规范性、现象学、临床、物理实现
+- **与 P1-T07 的分工**：P1-T07 固定 ε 反闭合必要性作为 constitutive theorem；本文件把"不可逆性"这一前提在 L1 层面展开，使 P1-T07 的前提不再未定义
+- **与今日 L1 round 其它文件的分工**：Individuation / Occlusion / Suffering / L1_Formalism / Collective_Selection 五份文件都**预设**了 L_0 irreversibility；本文件给了该预设的 L1 结构层内容，闭合了一个深层依赖缺口
