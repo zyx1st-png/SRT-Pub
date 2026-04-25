@@ -480,7 +480,7 @@ $$
 1. **不**证明 L1 系数（`α, β, λ_{trace}, γ_ρ, κ_{relax}, μ_Δ, ν_{block}` 等）的具体数值——这些仍为 P3 实证问题
 2. **不**证明 χ(σ_{sr}; σ_{sr}^{self}) 跳跃函数族的普适性（C2 闭包之外）
 3. **不**证明 `\Delta\Psi_f^{\mathrm{gap}}` 的算子层定义（`_SRT_T_DIR_CANONICAL.md §5-§6` 现象学分裂仍为依赖）
-4. **不**证明集体版主方程（Eq-Multi-01 / 02 / 03）→ `Collective_Selection §4.4-§4.6` 的对应投影；集体版 T-PROJ-1^{coll} 是后续轮次的扩展任务
+4. ~~**不**证明集体版主方程（Eq-Multi-01 / 02 / 03）→ `Collective_Selection §4.4-§4.6` 的对应投影；集体版 T-PROJ-1^{coll} 是后续轮次的扩展任务~~ **已在 H6（2026-04-25）落地**：`Core_Law/SRT_Collective_Selection.md §4.7 T-PROJ-1^{coll}` 给出集体投影定理（C1^{coll}-C5^{coll} 五条闭包，含新增 `M(t)` 可测性 MOC 闭包 C5^{coll}）；T-PROJ-1^{coll} 在 `\mathcal{P} = \{P\}` 极限下退化为本节 §6 T-PROJ-1
 
 ### §6.7 T-PROJ-1 的结构性意义
 

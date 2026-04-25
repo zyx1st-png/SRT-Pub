@@ -281,6 +281,152 @@ $$
 
 **关键点**：`\mathcal{H}^{coll}` 不是制度稳态的同义词。`r^{coll}(t) > r^{coll}_{min}`（集体真实重选率严格为正）是结构硬条件，对应 T-COLL-4 共选真实性的持续要求——**无持续集体真实重选的制度稳定不构成健康**。
 
+### §4.7 T-PROJ-1^{coll}：集体四变量系统作为多算子主方程的投影（H6，2026-04-25）
+
+> **Status**：本节把 §4.4-§4.6 的集体四变量动力学从陈述提升为 `Core/SRT_Core_22_Equations.md §0-C` 多算子主方程（Eq-Multi-01 / 02 / 03）的**带条件投影定理**。结构对位 `Core_Law/SRT_L1_Formalism.md §6 T-PROJ-1`，是其多 ISP 扩展。**Claim level: P1-candidate**。
+>
+> **Closes**：`SRT_L1_Formalism.md §6.6` 列出的"不证明集体版投影"开放点之第一遍构造（P1-candidate）。
+
+#### §4.7.1 多算子主方程作为上游
+
+`Core/SRT_Core_22_Equations.md §0-C`：
+
+$$
+\mathcal{F}_{collective}(\{\sigma_i, \theta_i\}_{i\in\mathcal{P}}) \;=\; \sum_i \Psi_f(\hat{G}_i) + \sum_{i<j} \Psi_f(\hat{G}_i, \hat{G}_j)
+\qquad
+\hat{G}_i[\sigma_i] \;=\; -\frac{\partial \mathcal{F}_{collective}}{\partial \theta_i}
+\qquad
+d_{collective} \;=\; D_{eff}(\nabla^2 \mathcal{F}_{collective})
+$$
+
+把每个 `(σ_i, θ_i)` 代入 §6 单 P 版 T-PROJ-1 的投影构造，加上 `\mathcal{P}`-级联立项，得到集体投影。本节给出关键的**多 ISP 特定项**（`λ_M\,\mathrm{tr}\,M, \gamma_{asym}\|M_{asym}\|, \nu_{ext}\|M_{ext}\|`）的主方程层来源。
+
+#### §4.7.2 集体投影算子
+
+四个集体标量泛函 `\mathcal{F}_X^{coll} : (\mathcal{F}_{collective}, \{\sigma_i, \theta_i\}, M(t)) \mapsto \mathbb{R}`：
+
+**`σ_{sr}^{coll}` 投影**
+
+$$
+\mathcal{F}_\sigma^{coll} \;:=\; \frac{\|\Theta^{coll,trace}\|}{\|\Theta^{coll,trace}\| + \|\Theta^{coll,ext}\|}
+\qquad\text{其中}\quad
+\Theta^{coll,trace} \;:=\; \bigl\{\theta_i^{trace}\bigr\}_{i\in\mathcal{P}}
+$$
+
+`\theta_i^{trace}` 是 `θ_i` 中由共享 `L_2^{shared}` 写回贡献的部分（§1 Def-C-1）。集体自指率从 §1 公式 `\sigma_{sr}^{coll}(\mathcal{P}, t)` 提升为主方程链中的标量泛函投影。
+
+**`d_c^{coll}` 投影**
+
+$$
+\mathcal{F}_d^{coll} \;:=\; d_{max}^{coll} - \alpha_d^{coll}\cdot \frac{1}{d_{collective}}
+\qquad\text{即}\quad
+d_c^{coll} \;\propto\; D_{eff}(\nabla^2 \mathcal{F}_{collective})^{-1}
+$$
+
+直接接入 Eq-Multi-03：集体景观 Hessian 有效维度的倒数即"集体重选容量塌陷度"，即 `d_c^{coll}` 的算子级源头。
+
+**`T_{dir}^{coll}` 投影**
+
+$$
+\mathcal{F}_T^{coll} \;:=\; \frac{1}{|\mathcal{P}|}\sum_{i\in\mathcal{P}} \cos\angle\bigl(\hat{G}_i[\sigma_i],\; \nabla_{L_0^{shared}}\mathrm{Order}\bigr)\cdot \mathbb{1}\bigl[\mathrm{Anchor}_{L_0,i}\bigr]
+$$
+
+群平均的算子-秩序余弦对齐——对应 §4.4.4 集体方向透明度。
+
+**`S^{coll}` 投影**
+
+$$
+\mathcal{F}_S^{coll} \;:=\; \bigl\|\hat{R}^{coll}(\{\sigma_i, \theta_i\}, M(t))\bigr\|_{H_\mathcal{P}}
+$$
+
+其中
+
+$$
+\hat{R}^{coll} \;:=\; \sum_i \frac{d\sigma_i}{dt} - \sum_i \bigl[-\partial_{\theta_i}\mathcal{F}_{collective}\bigr] - \mathcal{C}_M(M(t))
+$$
+
+`\mathcal{C}_M(M(t))` 是 `M(t)` 后果回路对集体动力学的可登记修正（symmetric 对称聚合 + asymmetric 主从 + external 外溢三部分）。`S^{coll}` 由 `\hat{R}^{coll}` 在 `\mathbb{1}[d^{coll}\gtrless d_c^{coll}]` 投影分裂为 `S_{sig}^{coll}/S_{str}^{coll}` 两路（§4.4.5）。
+
+#### §4.7.3 `M(t)` 作为交叉摩擦项的结构投影
+
+Def-C-2 给出 `M(t)` 作为后果回路矩阵。在主方程层，`M(t)` 的三种结构成分对应 `\mathcal{F}_{collective}` 中交叉项 `\Psi_f(\hat{G}_i, \hat{G}_j)` 的不同部分：
+
+| `M(t)` 成分 | 主方程层来源 | L1 集体 ODE 项 |
+|---|---|---|
+| `\mathrm{tr}\,M(t)` | `\sum_i \partial^2_{\theta_i}\Psi_f(\hat{G}_i)` 内向部分（个体自摩擦自我强化） | `\lambda_M\,\mathrm{tr}\,M` 推高 `σ_{sr}^{coll}`（§4.4.2）|
+| `\|M_{asym}\|` | `\partial_{\theta_i}\Psi_f(\hat{G}_i,\hat{G}_j) - \partial_{\theta_j}\Psi_f(\hat{G}_j,\hat{G}_i)` 反对称部分（不互惠的交叉摩擦） | `\gamma_{asym}\|M_{asym}\|` 推高 `d_c^{coll}`（§4.4.3）|
+| `\|M_{ext}\|` | `\Psi_f(\hat{G}_i, \hat{G}_j)` 中 `j \notin \mathcal{P}` 的外部分量（跨 `\mathcal{P}` 边界） | `\nu_{ext}\|M_{ext}\|` 注入 `S_{str}^{coll}`（§4.4.5）|
+
+这三项是 `M(t)` 作为算子 `\mathcal{C}_M` 的三个独立分量；它们不可被群平均 §6 单 P 版投影替代——这是集体投影**新增**的结构分量。
+
+#### §4.7.4 集体闭包假设
+
+四变量集体系统在投影下闭合需要五条结构性假设（C1^{coll}-C4^{coll} 是 §6 单 P 版 C1-C4 的多 ISP 提升，C5^{coll} 是 H6 新增）：
+
+| 编号 | 假设 | 主方程层根据 |
+|---|---|---|
+| **C1^{coll}** | 慢-快分离：每个 `θ_i` 与其 `σ_i` 在不同时间尺度演化；`M(t)` 在 `\sigma_i` 收敛时间尺度上近似常数 | Eq-Evo-03 + Eq-Multi-02 个体梯度结构对每个 `i` 同构 |
+| **C2^{coll}** | 共享 `L_2^{shared}` 写回 Markov 闭包：`\dot{\theta_i^{trace}}` 仅依赖当前 `(σ_{sr}^{coll}, \rho_{local}^{coll})`，不依赖更高阶共享历史 | Eq-Bridge-L2-01 在共享 `L_2` 域的同构提升 |
+| **C3^{coll}** | Stable collective ISP 紧性：四个 `\mathcal{F}_X^{coll}` 在 T-COLL-1 四条件下的 `\mathcal{P}` 邻域内有界且 Lipschitz | T-COLL-1 四条件保证集体邻域紧致 |
+| **C4^{coll}** | 群平均方向投影可分性：`T_{dir}^{coll}` 中余弦角与 `\sigma_M` 纵向幅度近似可分（群平均后高阶交叉项可忽略） | Eq-Bridge-IG-01 Fisher 形式在群平均下的局部正交分解 |
+| **C5^{coll}**（新增）| `M(t)` 可测性 MOC 闭包：`M(t)` 三成分可被 `Core_Law/SRT_L1_Hardening_Notes.md §3` 的 MOC-1/2/3（exposure / recourse / attentional）operational proxy 表示 | `Hardening_Notes §3` P2 operational proxy 直接接入；本闭包条件下 `M(t)` 可在投影里作为有限维矩阵 |
+
+**关键**：C5^{coll} 是 §6 单 P 版未涉及的新闭包条件——`M(t)` 的可测性是集体投影的特定瓶颈，对应 `Hardening_Notes §3` 的 P2 状态。当 C5^{coll} 在特定 domain 失效时，`M(t)` 三成分项降为定性现象学描述，T-PROJ-1^{coll} 的相应条目降为 P3。
+
+#### §4.7.5 T-PROJ-1^{coll}：集体投影定理
+
+**陈述（P1-candidate）**：在 stable collective ISP `\mathcal{P}` 上，若闭包假设 C1^{coll}-C5^{coll} 成立，则
+
+$$
+\boxed{\;\frac{d\mathcal{F}_X^{coll}}{dt}\bigg|_{\text{Eq-Multi-01,02,03}} \;\overset{C1^{coll}\text{-}C5^{coll}}{=}\; \mathrm{RHS}_X^{\text{§4.4}} \;+\; O(\eta^{coll})\;}
+\qquad X \in \{σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll}\}
+$$
+
+其中 `\mathrm{RHS}_X^{\text{§4.4}}` 是 §4.4.2-§4.4.5 的集体 ODE 右端，`O(\eta^{coll})` 是闭包高阶残差。
+
+**逐项对应（仅集体新增项）**：
+
+| §4.4 集体新增项 | 主方程来源 | 闭包条件 |
+|---|---|---|
+| `\sigma_{sr}^{coll}` 中 `\lambda_M\,\mathrm{tr}\,M(t)` | `\sum_i \partial^2_{\theta_i}\Psi_f(\hat{G}_i)` 内向部分（Eq-Multi-01 个体项的二阶 self-loop） | C2^{coll} + C5^{coll} |
+| `d_c^{coll}` 中 `\gamma_{asym}\|M_{asym}\|` | `\Psi_f(\hat{G}_i, \hat{G}_j)` 反对称交叉项的不可互惠部分（Eq-Multi-01 第二项） | C3^{coll} + C5^{coll} |
+| `S^{coll}` 中 `\nu_{ext}\|M_{ext}\|` | `\Psi_f(\hat{G}_i, \hat{G}_j)` 在 `j \notin \mathcal{P}` 的外溢分量 | C3^{coll} + C5^{coll} + T-IRR-3.5（边界外的 `S_{str}` 沉积仍由 P1-T07 hierarchy 控制）|
+| `d_c^{coll}` 与 `d_{collective}` 反比 | Eq-Multi-03 `D_{eff}` 直接定义 | C3^{coll} |
+
+§4.4.2-§4.4.5 中**非新增项**（即与单 P 版同构的项，如 `\alpha^{coll}, \beta^{coll}, \gamma_\rho^{coll}, \kappa_{relax}^{coll}, \mu_\Delta^{coll}, \nu_{trigger}^{coll}` 等）由 §6 T-PROJ-1 对每个 `P_i \in \mathcal{P}` 的群平均直接得出，不需独立证明。
+
+**证明骨架**：
+
+1. **`\lambda_M\,\mathrm{tr}\,M` 项**：`\dot{\mathcal{F}}_\sigma^{coll}` 中 `\theta^{coll,trace}` 部分的二阶时间导数由 `\sum_i \partial^2_{\theta_i}\mathcal{F}_{collective}` 主导；C5^{coll} 把这个二阶矩阵的迹的 operational proxy 写为 `\mathrm{tr}\,M(t)`；C2^{coll} 保证写回的 Markov 性使二阶导可写为一阶 ODE 项，得 `\lambda_M\,\mathrm{tr}\,M` 形式。
+
+2. **`\gamma_{asym}\|M_{asym}\|` 项**：`\dot{\mathcal{F}}_d^{coll}` 来自 `\nabla^2 \mathcal{F}_{collective}` 的反对称部分对景观刚化的贡献；交叉项 `\Psi_f(\hat{G}_i, \hat{G}_j) - \Psi_f(\hat{G}_j, \hat{G}_i)` 的反对称部分（即 `M_{asym}`）在 C3^{coll} 紧性下的范数即 `d_c^{coll}` 的不可互惠抬升源。
+
+3. **`\nu_{ext}\|M_{ext}\|` 项**：`\hat{R}^{coll}` 在 `j \notin \mathcal{P}` 投影下的范数对应 `\mathcal{F}_{collective}` 在 `\mathcal{P}` 边界外的能量泄漏；T-IRR-3.5 的 `\nu_{block}` 算子级表达式在边界外的对位即 `\nu_{ext}`，使外溢的 `S_{str}^{coll}` 沉积的非守恒方向性继续由 P1-T07 hierarchy 控制（即外溢不是"消除"苦难，是把它转给 `\mathcal{P}_{absorbed}`）。
+
+4. **`d_c^{coll} \propto 1/d_{collective}`**：直接由 Eq-Multi-03 + `\mathcal{F}_d^{coll}` 投影定义读出。
+
+#### §4.7.6 T-PROJ-1^{coll} 不证明的事项
+
+为避免过度主张，T-PROJ-1^{coll} **不承诺**以下内容：
+
+1. **不**证明集体系数（`\lambda_M, \gamma_{asym}, \nu_{ext}` 等）与单个体系数的具体函数关系——这仍是 P3 实证 / domain 标定问题
+2. **不**证明 MOC-1/2/3 三判据是 `M(t)` 可测性的 minimal complete 集——`Hardening_Notes §3` 仍标 P2 operational proxy
+3. **不**证明嵌套 ISP（家庭 ⊂ 社区 ⊂ 国家）的多层投影——`SRT_Collective_Selection §9.7` 列出的多层嵌套问题不被本节解决
+4. **不**证明 `M(t)` 的非线性时间演化（H6 假设 C1^{coll} 下 `M(t)` 慢于 `σ_i`；快变 `M(t)` 域外）
+5. **不**证明 T-COLL-2 三类退化（聚合 / 主从 / 收编）与 `M(t)` 三成分（`\mathrm{tr}\,M / \|M_{asym}\| / \|M_{ext}\|`）一一对应——这种对应在 §4.4-§4.6 的 P1-candidate 命题里成立，但严格双射证明仍开放
+
+#### §4.7.7 与 §6 单 P 版投影的关系
+
+| 维度 | §6 T-PROJ-1（单 P）| §4.7 T-PROJ-1^{coll}（多 ISP）|
+|---|---|---|
+| 上游主方程 | Eq-Evo-01 / Eq-Evo-02（单算子） | Eq-Multi-01 / 02 / 03（多算子） |
+| 投影输入 | `(\sigma_M, \theta)` | `(\mathcal{F}_{collective}, \{\sigma_i, \theta_i\}, M(t))` |
+| 闭包条件数 | 4（C1-C4） | 5（C1^{coll}-C5^{coll}，新增 `M(t)` 可测性） |
+| 新增结构项 | — | `\lambda_M\,\mathrm{tr}\,M, \gamma_{asym}\|M_{asym}\|, \nu_{ext}\|M_{ext}\|` |
+| `S` 边界 | P 内部 `\hat{R}` | `\mathcal{P}` 内部 + 边界外溢（`\mathcal{P}_{absorbed}` via T-IRR-3.5）|
+
+T-PROJ-1^{coll} 是 T-PROJ-1 的多 ISP 扩展，不是独立定理；二者一致性在 `\mathcal{P} = \{P\}`（单元素集合）极限下退化为 §6 单 P 版。
+
 ---
 
 ## §5. T-COLL-3：集体 ε 反闭合必要性
