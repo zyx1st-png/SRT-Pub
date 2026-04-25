@@ -215,10 +215,10 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 主文件：`Core_Law/SRT_L1_Hardening_Notes.md`
 - id：`SRT-L1-HARDENING-NOTES`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：针对 2026-04-24 L1 round 最高杠杆的四项 Open Pressure 给出第一遍硬化方案——§1 σ 符号冲突的命名空间规则（自指率一律 `σ_{sr}`，bare `σ` 仍为主方程状态场）、§2 `\dot{\Delta}_{avail}` 的三成分算子分解（`T_dir` + `Ψ_f` + `L_0` 残余）、§3 `M(t)` 可测性的 MOC 三判据（exposure / recourse / attentional，合成取 min）、§4 FEP 与 `S_{sig}` 的单向桥接翻译表
-- 硬化性质：本文件**不**把被硬化命题从 P1-candidate 升到 P1；它只打开升级检查路径。升级仍需完成 `Governance/SRT_CLAIM_MODE_AUDIT.md §6.4` 的全部检查项
-- claim-mode 分布：§1 governance-canonical usage；§2 P1-candidate；§3 P2 operational proxy；§4 P3 bridge hypothesis
-- 同步义务：§5.2 列明 σ→σ_{sr} 回写、三成分分解回写、MOC 回写、FEP 翻译表回写四项 Operations 债
+- 说明：针对 2026-04-24 L1 round 最高杠杆的四项 Open Pressure 给出第一遍硬化方案——§1 σ 符号冲突的命名空间规则（自指率一律 `σ_{sr}`，bare `σ` 仍为主方程状态场；2026-04-25 已落地：5 份 L1 主文件 + `_SRT_SYMBOL_TABLE.md` Usage Rule 12）、§2 `\dot{\Delta}_{avail}` 的三成分算子分解（`T_dir` + `Ψ_f` + `L_0` 残余）+ **§2 T-DELTA-1（H7，2026-04-25）**算子级定理：`\hat{G}_\theta^{available} := \sup_{\mathrm{Op}(P)}\{\hat{G} \mid \text{结构上可达} \wedge \theta\text{-相容}\}` 与 `\hat{R} \in T\mathrm{Op}(P)` 的算子级定义、三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}`、A1（仿射结构）/ A2（近似正交）/ A3（权重赌注决定性）三条可证伪假设；§3 `M(t)` 可测性的 MOC 三判据（exposure / recourse / attentional，合成取 min）；§4 FEP 与 `S_{sig}` 的单向桥接翻译表（已落 `Neuroscience/SRT_Clin_02_FEP.md`）
+- 硬化性质：本文件**不**把被硬化命题从 P1-candidate 升到 P1；它只打开升级检查路径。升级仍需完成 `Governance/SRT_CLAIM_MODE_AUDIT.md §6.4` 的全部检查项；T-DELTA-1 升 P1 需 A1 在更广 stable-ISP 域验证、A2 实证窗口、A3 与 Eq-Bridge-D-01 stake-gated source-by-source 对位
+- claim-mode 分布：§1 governance-canonical usage；§2 P1-candidate（含 T-DELTA-1）；§3 P2 operational proxy；§4 P3 bridge hypothesis
+- 同步义务：§5.2 列明的四项 Operations 债已全部结清（σ→σ_{sr} 命名空间 / 三成分分解算子级 T-DELTA-1 / MOC 已写入 §3 / FEP 翻译表已落 `Neuroscience/SRT_Clin_02_FEP.md`）
 - 引用规则：涉及 σ 符号、`\dot{\Delta}_{avail}` 定义、`M(t)` 可测性、FEP-苦难桥接的**细化**陈述时优先回链本文件
 
 ### 13g. SRT 不可逆性理论（学习不可逆 + 终止吸收边界 + P1-T07 精确化）

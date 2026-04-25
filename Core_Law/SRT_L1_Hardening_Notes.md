@@ -135,12 +135,114 @@ T-SUFF-4 要求：当 `S_{sig}` 被外部抑制（不改变可打开结构），
 
 因此 `\dot{\Delta}_{avail}` 在结构空间不变前提下守恒的结论在本硬化下仍然成立。
 
-### 保留的开放点
+### 保留的开放点（v0 第一遍）
 
 - `w_{dir}, w_{pay}, w_{L_0}` 系数的确定性：三项加权关系是否因主体、位置、时期而异？
 - 算子空间的仿射/非仿射结构：若非仿射，`\hat{R}` 的定义需要改写
 - 三子空间是否正交？若不正交，加权范数的内积结构需要进一步规定
 - 与具体测量（神经、行为、语言）的映射：暂按 P3 候选读法，见 §4 FEP 桥接
+
+### T-DELTA-1：`\dot{\Delta}_{avail}` 算子级定理（H7，2026-04-25）
+
+> **Status**：本节把 §2 的三成分分解从 P1-candidate 第一遍**结构形式**升为带显式算子空间假设 A1-A3 的 P1-candidate **形式定理**。**Claim level: P1-candidate**（与 §2 主体同级，但带显式可证伪假设）。
+>
+> **Closes**：`SRT_L1_Formalism.md §7` Open Pressure 2（"`\dot{\Delta}_{avail}` 的正式化"）。
+
+#### 算子空间假设
+
+设 P 为 stable ISP；记其上"算子族" `\mathrm{Op}(P)` 为 P 在 t 时刻所有结构上可达的选择算子的集合。本定理基于以下三条算子空间假设：
+
+| 编号 | 假设 | 失效后果 |
+|---|---|---|
+| **A1** | **仿射结构假设**：`\mathrm{Op}(P)` 在 stable-ISP 邻域内具有仿射结构，使得算子差 `\hat{G}_1 \ominus \hat{G}_2` 是切空间元素 `T_{\hat{G}_2}\mathrm{Op}(P)` | A1 失效则 `\hat{R}` 退化为定性方向感，三成分分解仅在拓扑类层面成立（降为 P3 现象学） |
+| **A2** | **三子空间近似正交**：`T_{dir}, \Psi_f, L_0` 三子空间在 `T_{\hat{G}_2}\mathrm{Op}(P)` 上近似正交（残余交叉项为 `o(1)`） | A2 失效则需引入显式内积 `g_{ij}`，三成分加权升为带交叉项的二次型；`\Delta` 仍可定义但形式更复杂 |
+| **A3** | **权重的赌注决定性**：`w_{dir}(P,t), w_{pay}(P,t), w_{L_0}(P,t)` 由 P 在 t 的赌注结构（参见 `_SRT_D_VALUE_CANONICAL.md` Eq-Bridge-D-01 stake-gated d）决定，不依赖外部规约选择 | A3 失效则权重退化为外部建模选择，`\Delta` 失去主体内在性，降为 P2 operational proxy |
+
+#### `\hat{G}_\theta^{available}` 与 `\hat{G}_\theta^{actual}` 的算子层定义
+
+在 A1 下：
+
+$$
+\hat{G}_\theta^{available}(P, t) \;:=\; \sup_{\mathrm{Op}(P)}\bigl\{\hat{G}\;\bigl|\;\hat{G}\text{ 结构上可达且 }\theta\text{-相容}\bigr\}
+\qquad
+\hat{G}_\theta^{actual}(P, t) \;:=\; \hat{G}_\theta\bigl[\sigma_M(t)\bigr]
+$$
+
+其中：
+
+- `结构上可达` 指 P 在 t 的位置上不被 `L_2` scaffold 压灭、不被 `Ψ_f` 透支阻断、不在 `L_0` 不可逆吸收态投影下的所有候选算子
+- `θ-相容` 指算子 `\hat{G}` 的应用不会立即违反 `θ` 张量惯性约束（Eq-Evo-02b）
+- 上确界 `\sup` 在 A1 仿射结构下取作切空间锥的最大方向
+
+未兑现选择残差算子：
+
+$$
+\boxed{\;\hat{R}(P, t) \;:=\; \hat{G}_\theta^{available}(P, t) \;\ominus\; \hat{G}_\theta^{actual}(P, t) \;\in\; T_{\hat{G}_\theta^{actual}}\mathrm{Op}(P)\;}
+$$
+
+**关键**：`\hat{R}` 是切空间元素，不是新算子；在 A1 失效区间它退化为 `\mathrm{Op}(P)` 等价类层面的方向。
+
+#### 三个投影算子的算子级定义
+
+定义三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` 作用在切空间 `T_{\hat{G}_\theta^{actual}}\mathrm{Op}(P)` 上：
+
+| 投影 | 算子级定义 | 几何对应 |
+|---|---|---|
+| `\Pi_{T_{dir}}` | 沿"算子方向可读性"维度的正交投影；与 `T_{dir}` 投影 `\mathcal{F}_T`（`Core_Law/SRT_L1_Formalism.md §6.2`）的微分共享方向场 | "我感知得到我未走的方向"清晰度 |
+| `\Pi_{\Psi_f}` | 沿"支付能力"维度的正交投影；由 `_SRT_PSI_F_CANONICAL.md` friction tensor `\Psi_f^{ij}` 的局部正交基张成 | "我未走那条路所需支付的累积" |
+| `\Pi_{L_0}` | 沿"L_0 残余压力"维度的正交投影；由 P1-T07 hierarchy Layer 1 的 `\varepsilon_{pg}(P, t)` 局部场张成 | "底层选择压力未被路径消化的累积" |
+
+A2 假设保证三个投影近似互斥；非正交残余以 `o(1)` 修正项进入。
+
+三成分分量：
+
+$$
+\|\hat{R}\|_{T_{dir}} := \|\Pi_{T_{dir}}\hat{R}\|_2 \qquad \|\hat{R}\|_{\Psi_f} := \|\Pi_{\Psi_f}\hat{R}\|_2 \qquad \|\hat{R}\|_{L_0} := \|\Pi_{L_0}\hat{R}\|_2
+$$
+
+#### T-DELTA-1 陈述
+
+**陈述（P1-candidate）**：在 stable ISP P 上，若假设 A1、A2、A3 成立，则
+
+$$
+\boxed{\;\Delta(P, t) \;=\; w_{dir}(P, t)\|\hat{R}\|_{T_{dir}} \;+\; w_{pay}(P, t)\|\hat{R}\|_{\Psi_f} \;+\; w_{L_0}(P, t)\|\hat{R}\|_{L_0} \;+\; o(1)\;}
+$$
+
+且其时间导数
+
+$$
+\dot{\Delta}_{avail}(P, t) \;=\; \sum_{X\in\{dir, pay, L_0\}} \dot{w}_X(P,t)\|\hat{R}\|_X + w_X(P,t)\frac{d}{dt}\|\hat{R}\|_X
+$$
+
+**关键性质**：
+
+1. **`\dot{\Delta}_{avail}` 不由 `S_{sig}` 登记通道决定**——这是 A1-A3 下"可打开结构变化率不可被 L_1 通道开关影响"的算子级证明，对应 T-SUFF-4 反最小化原则与 T-IRR-4 的算子层根据。
+2. **`\dot{\Delta}_{avail}` 的方向**——其各分量的符号由 `\|\hat{R}\|_X` 的几何变化（赌注接入新维度 / 路径关闭旧维度）决定，不被建模者选择。
+3. **`\Delta` 与 `\hat{R}` 等价**（在 A1-A3 下）——T-PROJ-1 的 `\mathcal{F}_S = \|\hat{R}\|_{H_P}` 即是本节 `\Delta` 在希尔伯特结构 `H_P` 下的范数读法；二者在 A1-A3 + C1-C4 同时成立时等价。
+
+#### 与下游已有命题的算子级一致性
+
+| 下游命题 | T-DELTA-1 提供的算子级根据 |
+|---|---|
+| `SRT_Suffering.md` Def-SUFFERING `S = \Delta(\hat{G}^{actual}, \hat{G}^{available})` | `\Delta` 现在是带显式算子空间假设的可证伪定义，不是抽象差函数 |
+| `SRT_L1_Formalism.md §4.2` 信号型 ODE `\mu_\Delta\dot{\Delta}_{avail}` 项 | `\dot{\Delta}_{avail}` 的算子级表达式 + A1-A3 失效边界 |
+| `SRT_L1_Formalism.md §6 T-PROJ-1` 投影 `\mathcal{F}_S = \|\hat{R}\|_{H_P}` | `\hat{R}` 的算子级定义即 `\mathcal{F}_S` 的算子级展开；C4（方向投影可分性）↔ A2（三子空间近似正交）一致 |
+| `SRT_L1_Formalism.md §4.3` `\nu_{block}\mathbb{1}[d\le d_c]S_{sig}` 的 `\nu_{block} = \eta\varepsilon_{pg}\kappa_{\Psi_f}`（T-IRR-3.5）| `\kappa_{\Psi_f}` 在本节即 `\partial\|\hat{R}\|_{\Psi_f}/\partial t$ 单位面积转化系数；A3 给 `w_{pay}` 的赌注决定性即 `κ_{\Psi_f}` 的 P-本地化根据 |
+| `SRT_L1_Formalism.md §4.4` 反最小化原则 | `\dot{\Delta}_{avail}` 不由登记通道决定 → 抑制 `S_{sig}` 不改变 `\dot{\Delta}_{avail}`，新失配进入 `S_{str}` |
+
+#### T-DELTA-1 不证明的事项
+
+为避免过度主张，T-DELTA-1 **不承诺**以下内容：
+
+1. **不**证明权重 `w_X(P, t)` 的具体函数形式——A3 只承诺它由赌注结构决定，未给函数形式（仍依赖 `_SRT_D_VALUE_CANONICAL.md` Eq-Bridge-D-01 的 stake-gated 形式）
+2. **不**证明 A2 三子空间严格正交——在 stable-ISP 邻域内近似正交，但全域性是 P3 实证问题
+3. **不**证明算子空间 `\mathrm{Op}(P)` 的全局拓扑（紧致 / 单连通 / 等）；A1 仅在 stable-ISP 邻域内承诺仿射结构
+4. **不**证明 `\sup` 在算子族上的存在性和唯一性——若 `\mathrm{Op}(P)` 不紧致，`\hat{G}^{available}` 可能不可达，需以序列极限替代
+5. **不**给出 T-DELTA-1 的集体版（`\dot{\Delta}_{avail}^{coll}` 在 `\mathcal{P}` 上的扩展）；这与 T-PROJ-1^{coll} 的 C5^{coll} `M(t)` 可测性 MOC 闭包耦合，是后续轮次任务
+
+#### 升 P1 路径
+
+本节升 P1 需要：(a) A1 仿射结构在更广 stable-ISP 域上的验证（或非仿射域的明确边界）；(b) A2 三子空间正交性的实证窗口指定；(c) A3 权重赌注决定性与 `_SRT_D_VALUE_CANONICAL` Eq-Bridge-D-01 的 source-by-source 对位完成。
 
 ---
 

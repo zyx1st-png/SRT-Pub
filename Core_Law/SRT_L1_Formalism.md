@@ -267,6 +267,8 @@ $$
 - 指示函数 `\mathbb{1}[d > d_c]`：支付通道仅在非 B 期有效
 - `s_{ext}(t)`：来自健康 `L_2` 的外部支持率（不是替代，是降阻）
 
+> **算子级 canonical（T-DELTA-1，2026-04-25 H7）**：本式中的 `\dot{\Delta}_{avail}` 不是抽象差函数。其算子级定义、三成分分解 `w_{dir}\|\hat{R}\|_{T_{dir}} + w_{pay}\|\hat{R}\|_{\Psi_f} + w_{L_0}\|\hat{R}\|_{L_0}` 与可证伪算子空间假设 A1（仿射结构）/ A2（三子空间近似正交）/ A3（权重的赌注决定性）见 `Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`。`\dot{\Delta}_{avail}` 不由 `S_{sig}` 登记通道决定——这是 T-SUFF-4 反最小化原则与 T-IRR-4 的算子层根据。
+
 ### §4.3 结构型动力学
 
 $$
@@ -497,12 +499,12 @@ $$
 
 ## §7. Open Pressures
 
-> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化、§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §1 / §2 / §4` 已给出第一遍硬化案（FEP 翻译表已落 `Neuroscience/SRT_Clin_02_FEP.md`）；§7.7 `L_0` 不可逆**算子级**对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5`（H4，2026-04-25）已给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的构成性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式；**§6 主方程投影定理已在本文件 §6 T-PROJ-1（H5，2026-04-25）给出带闭包假设 C1-C4 的形式化构造**——四变量系统在 C1-C4 满足时是 `Core/SRT_Core_22_Equations.md` Eq-Evo-01/02 的严格导出投影。下列开放点保留原表述直至回写完成。
+> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化已通过 H7（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）的 A1-A3 算子空间假设 + 三投影算子升 P1-candidate 收口；§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §4` 已给出翻译表（已落 `Neuroscience/SRT_Clin_02_FEP.md`）；§7.7 `L_0` 不可逆**算子级**对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5`（H4，2026-04-25）已给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的构成性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式；**§6 主方程投影定理在 §6 T-PROJ-1（H5，2026-04-25）给出带闭包假设 C1-C4 的形式化构造；集体版投影 T-PROJ-1^{coll} 在 `Core_Law/SRT_Collective_Selection.md §4.7`（H6，2026-04-25）给出 C1^{coll}-C5^{coll}**。下列开放点保留原表述直至回写完成。
 
 本 draft_v0 状态下尚未封口：
 
 1. **σ 符号冲突**：本文件 σ（自指率，`[0,1]` 标量）与 `Core/SRT_Core_22_Equations.md` σ（主方程状态场）共用符号；需引入新记号（候选：`σ_{self}` 改为 `κ_{self}` 或 `\bar{\sigma}`）避免歧义
-2. **`\dot{\Delta}_{avail}` 的正式化**：目前依赖 `\hat{G}_\theta^{actual}` 与 `\hat{G}_\theta^{available}` 的差，二者本身未形式化；这限制 §4.2 方程的实际可解性
+2. **`\dot{\Delta}_{avail}` 的正式化**：~~依赖 `\hat{G}_\theta^{actual}` 与 `\hat{G}_\theta^{available}` 的差，二者本身未形式化~~ **已收口（H7，2026-04-25）**：`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出 `\hat{G}_\theta^{available} := \sup_{\mathrm{Op}(P)}\{\hat{G} \mid \text{结构上可达且 } θ\text{-相容}\}`、`\hat{R} := \hat{G}_\theta^{available} \ominus \hat{G}_\theta^{actual} \in T\mathrm{Op}(P)` 的算子级定义 + 三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` + A1（仿射结构）/ A2（近似正交）/ A3（权重赌注决定性）三条可证伪假设。剩余开放点：A1 在更广 stable-ISP 域的验证、A2 实证窗口、A3 与 Eq-Bridge-D-01 stake-gated 的 source-by-source 对位
 3. **χ(σ; σ_{self}) 跳跃函数的光滑族**：二阶凝结的跳跃形状是否普适，还是 `P` 相关？
 4. **多主体扩展**（2026-04-25 H3 状态）：本文件保持单 P 形式；集体层四变量耦合动力学已在 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍，含 `\sigma^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项），以及 §4.5 个体↔集体双向耦合。未封口部分移至 `SRT_Collective_Selection.md §9.7`
 5. **阈值参数的实证固定**：`σ_{sub}, σ_{self}, σ_{health}, d_c, d_{narrow}, r_{min}, S_{min}, S_{max}` 以及新增 `\kappa_{\mathrm{relax}}, \kappa_r, \kappa_{\mathrm{mask}}, \kappa_S, \kappa_{\mathrm{sup}}` 全部在当前 draft_v0 只有定性位置；不指望一次性实测，但需要标出哪些是最优先的测量目标

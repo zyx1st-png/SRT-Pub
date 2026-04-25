@@ -72,6 +72,8 @@ $$
 - `\hat{G}_\theta^{\text{available}}`：在当前 `θ`、当前 `d`、当前 `L_2` 约束下，结构上仍可被打开的选择动力学；
 - `\Delta(\cdot,\cdot)`：两者间的不可压缩偏离度（operational proxy：由 `T_dir` 偏移、未兑现的 `L_0` 残压、`\Psi_f_felt` 与 `\Psi_f_actual` 分裂共同确定）。
 
+> **算子级 canonical（T-DELTA-1，2026-04-25 H7）**：上述三个对象（`\hat{G}_\theta^{actual}`、`\hat{G}_\theta^{available}`、`\Delta`）已在 `Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出算子级定义：`\hat{G}_\theta^{available} := \sup_{\mathrm{Op}(P)}\{\hat{G} \mid \text{结构上可达且 } θ\text{-相容}\}`、`\hat{R} := \hat{G}_\theta^{available} \ominus \hat{G}_\theta^{actual} \in T\mathrm{Op}(P)`、`\Delta = w_{dir}\|\hat{R}\|_{T_{dir}} + w_{pay}\|\hat{R}\|_{\Psi_f} + w_{L_0}\|\hat{R}\|_{L_0} + o(1)`，其中三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` + 三条算子空间假设 A1（仿射结构）/ A2（近似正交）/ A3（权重的赌注决定性）。本文件 §3 T-SUFF-2（信号型 vs 结构型分裂）与 §4.4 T-SUFF-4（反最小化原则）的算子层根据由 T-DELTA-1 给出。
+
 ### 核心区分
 
 | 维度 | 疼痛 | 苦难 |

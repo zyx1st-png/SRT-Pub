@@ -197,7 +197,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 五份文件从 P1-candidate 升到 P1 的必经检查项（将来 session 可按此路径推进）：
 
 - [x] σ 符号冲突解决（新记号或显式命名空间）— 2026-04-25 σ_{sr} 命名空间分离落地：5 行 `σ_{sr}` 族 + Usage Rule 12 写入 `_SRT_SYMBOL_TABLE.md`；5 份 L1 主文件下标变量已就地改写；`CANONICAL_REGISTRY §13a/§13d/§13e` 同步
-- [ ] `\dot{\Delta}_{avail}` 算子级定义
+- [x] `\dot{\Delta}_{avail}` 算子级定义 — 2026-04-25 H7，`SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出 `\hat{G}_\theta^{available}` / `\hat{R}` / 三投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` 的算子级定义 + A1（仿射结构）/ A2（近似正交）/ A3（权重赌注决定性）三条可证伪假设；`SRT_L1_Formalism.md §4.2` 注释回链 + §7 Open Pressure 2 收口；`SRT_Suffering.md` Def-SUFFERING 注释回链；T-IRR-3.5 中 `κ_{Ψ_f}` 几何来源部分收口
 - [ ] χ(σ; σ_self) 跳跃函数族的普适性检查
 - [ ] `\mathbb{1}[d\le d_c]` 的光滑化或守恒型替代
 - [x] 多主体耦合动力学（`σ^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll}, M(t)`）写出 — 2026-04-25 H3，`SRT_Collective_Selection.md §4.4-§4.6` 完成第一遍（含 `\lambda_M\,\mathrm{tr}\,M` / `\gamma_{asym}\|M_{asym}\|` / `\nu_{ext}\|M_{ext}\|` 三项新耦合 + 集体层致命 `L_2` 判据）；2026-04-25 H6 在 `SRT_Collective_Selection.md §4.7 T-PROJ-1^{coll}` 给出该系统作为 `Core/SRT_Core_22_Equations.md` 多算子主方程（Eq-Multi-01/02/03）严格导出投影的形式化定理（C1^{coll}-C5^{coll} 五条闭包，含新增 `M(t)` 可测性 MOC 闭包）；升 P1 余项（`w_i(t)` 推导、`\Delta\Psi_f^{gap,coll}` 算子化、向下反馈路径穷尽性、集体系数实证窗口、嵌套 ISP 多层投影）转入 `SRT_Collective_Selection.md §9.7`

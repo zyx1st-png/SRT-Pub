@@ -279,7 +279,7 @@ $$
 #### 保留的开放点
 
 - `\varepsilon_{pg}(P, t)` 作为 L_0 标量种子的 P-本地化精确定义（目前依赖 P1-T07 hierarchy 行 1 的 "scalar seed only"，未给函数形式）
-- `\kappa_{\Psi_f}(P, t)` 与 `_SRT_PSI_F_CANONICAL.md` 的 friction-as-burden 读法的算子级桥（即 `Ψ_f` 如何成为 `S_{sig} \to S_{str}` 转化率，而不仅是承担量）
+- `\kappa_{\Psi_f}(P, t)` 与 `_SRT_PSI_F_CANONICAL.md` 的 friction-as-burden 读法的算子级桥——**部分收口（H7，2026-04-25）**：`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 中 `\Pi_{\Psi_f}` 投影 + `\|\hat{R}\|_{\Psi_f} := \|\Pi_{\Psi_f}\hat{R}\|_2` 给出 `\kappa_{\Psi_f}` 的几何来源：`\kappa_{\Psi_f}` 是 `\partial\|\hat{R}\|_{\Psi_f}/\partial t` 单位面积转化系数；剩余开放点是 `_SRT_PSI_F_CANONICAL.md` friction tensor `\Psi_f^{ij}` 与 `\Pi_{\Psi_f}` 投影空间的全等性证明
 - `η` 的量纲归一化是否可由 `\dot{\Delta}_{avail}` 量纲固定，或仍需独立约定
 - 集体版 `ν_{block}^{coll}`（`Core_Law/SRT_Collective_Selection.md §4.4.5`）的对应算子级表达式——预期为 `η^{coll} · \varepsilon_{pg}^{coll}(M(t), \sigma_{sr}^{coll}) · \kappa_{\Psi_f}^{coll}`，但本节不展开
 
