@@ -12,7 +12,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-04-24
+> **最后更新**：2026-04-25
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -56,6 +56,7 @@ AI / agent 最短读法：
 
 ## 最近关键推进
 
+- `2026-04-25`：H2 四变量闭合完成——`Core_Law/SRT_L1_Formalism.md` §3.5 新增把 `T_dir` 从代数代理升为独立动力学变量的最小 ODE，五项源分别为弛豫（`-\kappa_{\mathrm{relax}}(T_{dir}-T_{dir}^{\mathrm{alg}})`）、真实重选泵入（`+\kappa_r r(t)`）、实-感 `Ψ_f` 差扣除（`-\kappa_{\mathrm{mask}}\,\Delta\Psi_f^{\mathrm{gap}}`）、结构型苦难侵蚀（`-\kappa_S S_{str}`）、健康 `L_2` 支架（`+\kappa_{\mathrm{sup}} s_{ext}`）；§3.5.3 给出致命 `L_2` 的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`；§5 总方程升为四变量（σ / d_c / T_dir / S）闭合系统，病理吸引子与健康工作区刻画相应更新，新增"苦难-可读性正反馈环"第 6 条关键耦合路径；`CANONICAL_REGISTRY.md §13d` 标题/说明 / `_SRT_INDEX.md` anchor / `_SRT_T_DIR_CANONICAL.md §10` 关系表已同步；T_dir 作为 v0 operational proxy 的 canonical 地位不改变，本轮只把时间演化法则明文化。
 - `2026-04-24`：新增 `Core_Law/SRT_Irreversibility.md`（draft_v0）作为 L1 不可逆性 canonical 主文，把 `L_0` 不可逆性从 P1-T02 / P1-T07 的推论展开为可引用层——Def-IRR-1 吸收态 / Def-IRR-2 选择史箭头 / Def-IRR-3 非可还原性；T-IRR-1 学习不可逆作为非对称 `Ψ_f` 支付（与热力学二律不等价、不得经 FEP 反向定义）、T-IRR-2 终止作为吸收边界（宪定 / 吸收 / 集体三类，严格区分终止与暂停）、T-IRR-3 给 P1-T07 精确化并对应 `L1_Formalism §4.3` 的非守恒残余项、T-IRR-4 苦难在 `L_0` 不可逆下的守恒 / 转移（T-SUFF-4 更深根）；§6 集体终止三型（耗散 / 收编 / 外部化）与 `Collective_Selection` 回扣；§7 AI/ML 接口限定 checkpoint/rollback 不得读作反向学习；`CANONICAL_REGISTRY.md §13g` 与 `_SRT_INDEX.md Canonical Theory Anchors` 已同步。
 - `2026-04-24`：新增 `Core_Law/SRT_L1_Hardening_Notes.md`（draft_v0）针对当日 L1 round 最高杠杆的四项 Open Pressure 给出第一遍硬化：§1 σ 符号命名空间（自指率统一为 `σ_{sr}`，主方程状态场保留 `σ`）、§2 `\dot{\Delta}_{avail}` 三成分算子分解（T_dir + Ψ_f + L_0 残余，取加权范数）、§3 `M(t)` 可测性 MOC 三判据（exposure / recourse / attentional，合成取 min 的瓶颈规则）、§4 FEP → `S_{sig}` 单向桥接翻译表（严格单向，反向不得定义苦难）；claim-level 分布 governance-canonical / P1-candidate / P2 / P3；`CANONICAL_REGISTRY.md §13f` 与 `_SRT_INDEX.md` 已同步；五份主文件的符号与定义回写记为 Operations 债。
 - `2026-04-24`：完成 L1 round claim-mode audit：`Governance/SRT_CLAIM_MODE_AUDIT.md §6` 新增 2026-04-24 round 段落，为当日新增五份 draft_v0 L1 canonical（Individuation / Occlusion_Dynamics / Suffering / L1_Formalism / Collective_Selection）逐文件固定 claim-level map、下游 reminder rule 与 §6.3 五项全局 guardrails（含 σ 符号冲突提醒、σ^{coll} 扩展 pending 标注）、§6.4 升 P1 检查单共 8 项（覆盖 σ 符号、`\dot{\Delta}_{avail}` 形式化、χ 函数族、`\mathbb{1}[d\le d_c]` 光滑化、多主体耦合、P1-T07 对齐、主方程投影证明、阈值实证窗口）。

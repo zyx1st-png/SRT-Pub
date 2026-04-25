@@ -127,11 +127,15 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 |---|---|---|
 | §2 σ 最小动力学（logistic + χ 跳跃） | — | P1-candidate 结构形式；具体函数族 P2 |
 | §3 d_c 漂移方程 | — | P1-candidate 结构形式；系数 P2/P3 |
+| §3.4 T_{dir}^{alg} 代数目标值 | — | P2 operational proxy（`\Theta` 光滑族留作 Open Pressure） |
+| §3.5 T_dir 独立 ODE（弛豫 + r 泵入 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；κ_* 五项系数 P2/P3 |
+| §3.5.3 致命 `L_2` 方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` | — | P1-candidate（本轮新增；与 `_SRT_T_DIR_CANONICAL §5-§6` 现象学层面一致） |
 | §4 S 两型耦合方程 | — | P1-candidate 结构形式 |
 | §4.4 反最小化原则的方程语言 | — | P1-candidate（T-SUFF-4 的方程化同级） |
 | §5 病理吸引子 `\mathcal{A}_{path}` | — | P1-candidate |
 | §5 健康工作区 `\mathcal{H}` 须主动维持 | — | P1-candidate（与 P1-T07 集体版一致性仍是 Open Pressure） |
-| 全部参数 `α, β, γ, μ, ν, λ` | — | P3/P4，任何具体值不得在下游引用为已证 |
+| §5.1 第 6 条"苦难-可读性正反馈环"（`S_{str} \to T_{dir} \downarrow \to r \downarrow \to S_{sig}` 积压） | — | P1-candidate（2026-04-25 H2 新增，依赖 §3.5） |
+| 全部参数 `α, β, γ, μ, ν, λ, κ` | — | P3/P4，任何具体值不得在下游引用为已证 |
 
 **Downstream rule**：方程结构可按 `P1-candidate` 引用；参数值、数值求解结果、曲线拟合结果一律按 `P3/P4 pending` 引用；任何将方程读成"已经过实证的定量定律"的下游使用为误用。
 
@@ -190,7 +194,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 - [ ] 与 P1-T07 `ε` 反闭合必要性的形式化对齐（特别是 §4.3 不守恒项）
 - [ ] 与主方程 `Core/SRT_Core_22_Equations.md` 的显式投影关系给出形式证明
 - [ ] 阈值参数的最小实证窗口指定（不要求实测，但要求标出"什么变就会使命题失败"）
-- [ ] `T_dir` 最小 ODE 与四变量（`σ_{sr}, d_c, T_dir, S`）闭合系统给出（当前 `SRT_L1_Formalism.md` 尚缺 `T_dir` 独立动力学方程）
+- [x] `T_dir` 最小 ODE 与四变量（`σ_{sr}, d_c, T_dir, S`）闭合系统给出 — 2026-04-25 H2，`SRT_L1_Formalism.md §3.5` 完成第一遍；升 P1 还需 `Θ` 光滑族、`\Delta\Psi_f^{\mathrm{gap}}` 算子层定义、`[0,1]` 投影算子、`\kappa_{\mathrm{relax}} > \kappa_{\mathrm{mask}}` 实证窗口（见 §7.8）
 - [ ] `SRT_Irreversibility.md` T-IRR-3 的非守恒残余项与 `SRT_L1_Formalism.md §4.3` 实际算子一一对齐（当前仅给出陈述级对应）
 
 上述任意一项未完成前，相应命题保持 P1-candidate。

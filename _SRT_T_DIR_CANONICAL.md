@@ -257,6 +257,8 @@ $$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\P
 | `Core_Law/SRT_L0_Metaphysics.md` | L₀ 的中性定义约束了相干性梯度只能是操作化代理，不是本体属性 |
 | `Philosophy/SRT_Ethics_Agency.md` | 价值遮蔽命题的伦理延伸 |
 | `Governance/SRT_POSITIONING.md` | T_dir 应用层作为 SRT 最有力入口的论证 |
+| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，ODE 含弛豫、真实重选泵入、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀、`s_{ext}` 支架五项。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
+| `Core_Law/SRT_Irreversibility.md` | T-IRR-3 把 P1-T07 ε 反闭合必要性精确化；L1_Formalism §5.3 健康工作区的主动维持条件与之同源 |
 
 ---
 

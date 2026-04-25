@@ -190,15 +190,15 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - claim-mode 分布：T-SUFF-1/2 为 P1-candidate；四类分型与集体外部化读法为 P2；`S_{\min}, S_{\max}` 阈值、临床分流、FEP 桥接语句为 P3/P4
 - 引用规则：涉及苦难/痛苦/空心感/自我扭曲等概念的结构层定义时，优先回链本文件；规范性评价回 `Philosophy/`，回返路径回 `Spirituality/`，神经实现回 `Neuroscience/`
 
-### 13d. SRT L1 Formalism（σ / d_c / S 耦合动力学）
+### 13d. SRT L1 Formalism（σ / d_c / T_dir / S 四变量耦合动力学）
 - 主文件：`Core_Law/SRT_L1_Formalism.md`
 - id：`SRT-L1-FORMALISM`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：为 2026-04-24 轮新增的三个 L1 对象（个体化 σ、遮蔽阈值 d_c、苦难 S）写下最小耦合动力学；§2 给 σ 的 logistic + χ(σ; σ_self) 跳跃结构、§3 给 d_c 漂移方程（`ρ_local + σ + π + I_window`）、§4 把 S 分解为 S_sig / S_str 并写下反最小化原则的方程化、§5 合成耦合系统并刻画病理吸引子 `\mathcal{A}_{path}`（σ→1 + d_c→d_max + S_str 定常 + S_sig→0）与健康工作区 `\mathcal{H}`（需持续外部接入、支付、真实选择、解耦触发主动维持）
+- 说明：为 2026-04-24 轮新增的四个 L1 对象写下最小耦合动力学——个体化 σ、遮蔽阈值 d_c、方向透明度 T_dir（2026-04-25 §3.5 从代数代理升为独立动力学变量）、苦难 S；§2 给 σ 的 logistic + χ(σ; σ_self) 跳跃结构、§3 给 d_c 漂移方程（`ρ_local + σ + π + I_window`）、§3.5 给 T_dir 五项 ODE（弛豫 + 真实重选泵入 + `\Delta\Psi_f^{\mathrm{gap}}` 扣除 + `S_{str}` 侵蚀 + `s_{ext}` 支架）并给出致命 `L_2` 方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`、§4 把 S 分解为 S_sig / S_str 并写下反最小化原则的方程化、§5 合成四变量耦合系统并刻画病理吸引子 `\mathcal{A}_{path}` 与健康工作区 `\mathcal{H}`
 - 与主方程的关系：本文件是 `Core/SRT_Core_22_Equations.md` 主方程的导出投影，不引入新本体
-- claim-mode 分布：方程结构为 P1-candidate；参数阈值、具体 domain 代理为 P2/P3；实测与临床/AI 落点为 P3/P4
-- Open pressures：σ 符号冲突、`\dot{\Delta}_{avail}` 形式化、χ 跳跃族、多主体扩展、阈值固定、FEP 桥接、L_0 不可逆性对齐
-- 引用规则：涉及 σ / d_c / S 三变量的**方程级**陈述时优先回链本文件；概念定义仍回链各自 L1 主文
+- claim-mode 分布：方程结构为 P1-candidate；参数阈值（含新 `κ_*` 五项）、具体 domain 代理为 P2/P3；实测与临床/AI 落点为 P3/P4
+- Open pressures：σ 符号冲突、`\dot{\Delta}_{avail}` 形式化、χ 跳跃族、多主体扩展、阈值固定、FEP 桥接、L_0 不可逆性**算子级**对齐、T_dir ODE 算子化（`Θ` 光滑族 / `\Delta\Psi_f^{\mathrm{gap}}` 算子层定义 / `[0,1]` 投影算子 / `κ_{\mathrm{relax}} > κ_{\mathrm{mask}}` 实证窗口）
+- 引用规则：涉及 σ / d_c / T_dir / S 四变量的**方程级**陈述时优先回链本文件；概念定义仍回链各自 L1 主文（T_dir → `_SRT_T_DIR_CANONICAL.md`）
 
 ### 13e. SRT 集体选择理论（多 ISP 共享 L_2）
 - 主文件：`Core_Law/SRT_Collective_Selection.md`
