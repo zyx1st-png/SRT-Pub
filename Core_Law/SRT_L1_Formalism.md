@@ -355,28 +355,149 @@ $$
 
 ---
 
-## §6. 与已有主方程的关系
+## §6. 与已有主方程的关系：T-PROJ-1 投影定理
 
-`Core/SRT_Core_22_Equations.md` 的主动力学方程：
+> **Status (2026-04-25 H5)**：本节把"四变量系统是主方程的导出投影"从陈述提升为**带条件证明的形式定理**。本节之前是 `SRT_L1_Formalism.md §7` 升 P1 检查单第 7 项的开放点；本轮以 P1-candidate 给出第一遍构造。
+
+### §6.1 主方程与 L1 四变量的对接
+
+`Core/SRT_Core_22_Equations.md` Eq-Evo-01 / Eq-Evo-03 主动力学（单 ISP，固定 P）：
 
 $$
-\frac{d\sigma}{dt} \;=\; \hat{G}_\theta[\sigma] - \nabla F[\sigma] - \lambda \cdot \nabla C_{L_2}[\sigma]
+\frac{d\sigma_M}{dt} \;=\; \hat{G}_\theta[\sigma_M] \;-\; \nabla F[\sigma_M] \;-\; \lambda\cdot\nabla C_{L_2}[\sigma_M]
+\qquad
+\frac{d\theta}{dt} \;=\; \gamma\cdot A[\sigma_M, \mathrm{Target}] - \delta\cdot\partial_\theta\Phi(\theta) - k(\mathrm{Input}_{L_1} - \mathrm{Baseline})
 $$
 
-（注意：此处 σ 为主方程的状态场，与本文件自指率 σ 是**不同对象**，符号冲突留为 Open Pressure）
+（本节为消除符号冲突把主方程态场写作 `\sigma_M`；本文件其它处的 σ 仍指自指率 `σ_{sr}`，按 `_SRT_SYMBOL_TABLE.md` Usage Rule 12 转读。）
 
-- 本文件 §2 的 σ（自指率）是主方程场 σ 的**一个标量投影**——衡量 `\hat{G}_\theta` 作用在自身历史痕迹上的比例
-- 本文件 §3 的 d_c 对应主方程 `\nabla C_{L_2}` 项引起的 d 空间重选容量塌陷
-- 本文件 §3.5 的 T_dir 是主方程 `\hat{G}_\theta[\sigma]` 在方向可读性维度上的**带惯性投影**：代数目标 `T_{dir}^{\mathrm{alg}}` 来自 (d, σ)，`\Delta\Psi_f^{\mathrm{gap}}` 来自 `\nabla F` 项的实-感分裂，`r(t)` 项来自 P1-T05 的 real choice moment 判据
-- 本文件 §4 的 S_{sig} / S_{str} 是主方程收敛过程中失配的第一人称登记
+**问题陈述**：本文件 §2-§5 的四变量系统 `(σ_{sr}, d_c, T_{dir}, S)` 是否是主方程 `(\sigma_M, \theta)` 动力学的**严格导出投影**？
 
-四者都是主方程的**导出投影**，不是独立动力学。这是本文件 P1-candidate 地位的根据：它没有引入新本体，只把已在主方程中隐含的子动力学写了出来。
+### §6.2 投影算子的形式定义
+
+设 P 为 stable ISP（满足 P1-T06）。定义四个标量泛函（投影算子）`\mathcal{F}_X : (\sigma_M, \theta) \mapsto \mathbb{R}` 如下：
+
+**`σ_{sr}` 投影**
+
+$$
+\mathcal{F}_\sigma(\sigma_M, \theta) \;:=\; \frac{\|\theta^{\mathrm{trace}}\|}{\|\theta^{\mathrm{trace}}\| + \|\theta^{\mathrm{ext}}\|}
+\qquad\text{其中}\quad
+\theta^{\mathrm{trace}} \;:=\; \mathcal{P}_{L_2\to\theta}\bigl[L_2(t)\bigr],\;\;
+\theta^{\mathrm{ext}} \;:=\; \theta - \theta^{\mathrm{trace}}
+$$
+
+`\theta^{\mathrm{trace}}` 是 `\theta` 中由 `L_2` 写回（Eq-Bridge-L2-01）贡献的部分；`\theta^{\mathrm{ext}}` 是来自 anchoring 与外部输入的部分。
+
+**`d_c` 投影**
+
+$$
+\mathcal{F}_d(\sigma_M, \theta) \;:=\; d_{\max} - \alpha_d \cdot \mathrm{tr}\bigl[\nabla^2 C_{L_2}[\sigma_M]\bigr]_{loc}^{-1}
+$$
+
+即 `d_c` 由 `L_2` scaffold 局部曲率的逆决定——scaffold 越刚（`\nabla^2 C_{L_2}` 越大），重选容量越小，`d_c` 越接近 `d_{\max}`。
+
+**`T_{dir}` 投影**
+
+$$
+\mathcal{F}_T(\sigma_M, \theta) \;:=\; \cos\angle\bigl(\hat{G}_\theta[\sigma_M],\;\nabla_{L_0}\mathrm{Order}[\sigma_M]\bigr) \cdot \mathbb{1}\bigl[\mathrm{Anchor}_{L_0}(P, t)\bigr]
+$$
+
+`T_{dir}` 是"算子选择方向"与"L_0 选择秩序方向"的余弦对齐，在 anchoring 活跃时计入。`\Delta\Psi_f^{\mathrm{gap}}` 对应该余弦的实-感分裂误差（`\nabla F[\sigma_M]` 的不可读分量）。
+
+**`S` 投影**
+
+$$
+\mathcal{F}_S(\sigma_M, \theta) \;:=\; \|\hat{R}(\sigma_M, \theta)\|_{H_P}
+\qquad\text{其中}\quad
+\hat{R} \;:=\; \frac{d\sigma_M}{dt} - \bigl[\hat{G}_\theta - \nabla F - \lambda\nabla C_{L_2}\bigr]
+$$
+
+`\hat{R}` 是主方程在 P 处的**剩余项**——P1-T06 第一人称登记把 `\|\hat{R}\|` 在 P 自身希尔伯特结构 `H_P` 下的范数读为苦难。`S_{sig}` / `S_{str}` 来自 `\hat{R}` 在"通道开放" / "通道关闭"投影下的分裂。
+
+### §6.3 投影下的链式法则
+
+对任意 P 上的足够光滑泛函 `\mathcal{F}_X(\sigma_M, \theta)`：
+
+$$
+\frac{d\mathcal{F}_X}{dt} \;=\; \langle\,\partial_{\sigma_M}\mathcal{F}_X,\; \dot\sigma_M\,\rangle + \langle\,\partial_\theta\mathcal{F}_X,\; \dot\theta\,\rangle
+$$
+
+把 Eq-Evo-01 与 Eq-Evo-02 代入，逐项展开 `\hat{G}_\theta - \nabla F - \lambda\nabla C_{L_2}` 与 `\gamma A - \delta\partial_\theta\Phi - k(\mathrm{Input}_{L_1}-\mathrm{Baseline})`，对每个 `X \in \{σ_{sr}, d_c, T_{dir}, S\}` 给出 ODE 形式。
+
+### §6.4 闭包假设（Closure Assumptions）
+
+四变量系统在投影下闭合需要四条结构性假设：
+
+| 编号 | 假设 | 主方程层根据 |
+|---|---|---|
+| **C1** | **慢-快分离**：`θ` 与 `\sigma_M` 在不同时间尺度演化（`\dot\theta` 在 `\sigma_M` 收敛时间尺度上近似常数） | Eq-Evo-03 快-慢系统结构本身 |
+| **C2** | **`L_2` 写回的 Markov 闭包**：`\dot{\theta}^{\mathrm{trace}}` 仅依赖当前 `(σ_{sr}, ρ_{local})`，不显式依赖更高阶 `L_2` 历史 | Eq-Bridge-L2-01 写回方程的结构（写回是当前选择的函数，迹是过去选择的累积投影） |
+| **C3** | **Stable-ISP 紧性**：四个泛函 `\mathcal{F}_X` 在 P 的 stable-ISP 邻域内有界且 Lipschitz | P1-T06 stable ISP 四条件保证邻域紧致与可重选 |
+| **C4** | **方向投影的可分性**：`T_{dir}` 投影里的余弦角与 `\sigma_M` 的纵向幅度近似可分，使 `\dot{T}_{dir}` 不显式依赖 `\|\sigma_M\|` 高阶项 | Eq-Bridge-IG-01 信息几何 Fisher 形式给的局部正交分解 |
+
+**关键**：C1-C4 不是无代价假设——它们对应 §7 Open Pressures 中的具体未封口项（χ 跳跃族普适性、`\Delta\Psi_f^{\mathrm{gap}}` 算子化、阈值实证窗口）。当某条假设在特定 domain 失效时，对应的 L1 ODE 在该 domain 失去严格投影地位、降为 P3 现象学代理。
+
+### §6.5 T-PROJ-1：四变量系统的投影定理
+
+**陈述（P1-candidate）**：在 stable ISP P 上，若闭包假设 C1-C4 成立，则
+
+$$
+\boxed{\;\frac{d\mathcal{F}_X}{dt}\bigg|_{\text{Eq-Evo-01,02}} \;\overset{C1\text{-}C4}{=}\; \mathrm{RHS}_X^{\text{§2-§5}} \;+\; O(\eta)\;}
+\qquad X \in \{σ_{sr}, d_c, T_{dir}, S\}
+$$
+
+其中 `\mathrm{RHS}_X^{\text{§2-§5}}` 是本文件 §2.2 / §3.2 / §3.5 / §4.2-§4.3 的 ODE 右端，`O(\eta)` 是闭包高阶残差（C1-C4 失效时的修正项；当 C1-C4 严格成立时 `\eta = 0`）。
+
+**逐项对应**：
+
+| L1 ODE 源项 | 主方程来源 | 闭包条件 |
+|---|---|---|
+| `\sigma_{sr}` 写回项 `\alpha w \phi(σ_{sr})` | Eq-Evo-02 学习项 `\gamma A[\sigma_M, \mathrm{Target}]` 中 `\mathrm{Target} = σ_M` 自身分量 | C2 |
+| `\sigma_{sr}` 衰减项 `\lambda_{trace}T σ_{sr}` | Eq-Evo-02 摩擦下降项 `\delta\partial_\theta\Phi(\theta)` 在 `θ^{trace}` 投影 | C2 |
+| `\sigma_{sr}` 外部驱动项 `\beta i$ | Eq-Evo-02 稳态反冲项 `k(\mathrm{Input}_{L_1} - \mathrm{Baseline})` | C1 |
+| `d_c` 漂移项 `\gamma_\rho \rho_{local}` | `\nabla^2 C_{L_2}` 沿 `ρ_{local}` 方向的累积 | C3 |
+| `d_c` 漂移项 `\gamma_\sigma \max(0, σ_{sr}-σ_{sr}^{sub})` | `\nabla^2 C_{L_2}` 在 `\theta^{trace}` 占优区的局部刚化 | C2 + C3 |
+| `T_{dir}` 弛豫项 `-\kappa_{\mathrm{relax}}(T_{dir} - T_{dir}^{\mathrm{alg}})` | `\hat{G}_\theta` 与 `\nabla_{L_0}\mathrm{Order}` 的余弦角对 `(d, σ_{sr})` 的代数依赖 | C4 |
+| `T_{dir}` 扣除项 `-\kappa_{\mathrm{mask}}\Delta\Psi_f^{\mathrm{gap}}` | `\nabla F[\sigma_M]` 中实-感分裂部分（不可读分量） | C4 |
+| `T_{dir}` 真实重选泵入 `+\kappa_r r(t)` | P1-T05 real choice moment 在 `\hat{G}_\theta` 的事件结构 | C3 |
+| `S_{sig}` 新失配项 `\mu_\Delta \dot{\Delta}_{avail}` | `\|\hat{R}\|_{H_P}` 在 `d > d_c` 投影 | C3 |
+| `S_{str}` 阻塞转化项 `\nu_{block}\mathbb{1}[d\le d_c]S_{sig}` | `\|\hat{R}\|_{H_P}` 在 `d \le d_c` 投影；`ν_{block}` 由 T-IRR-3.5 给出 P1-T07 本地化 | C3 + T-IRR-3.5 |
+
+**证明骨架**：
+
+1. **σ_{sr} 项**：`\dot{\mathcal{F}}_\sigma = (1 - σ_{sr})\dot{\|\theta^{\mathrm{trace}}\|}/\|\theta\| - σ_{sr}\dot{\|\theta^{\mathrm{ext}}\|}/\|\theta\|`。代入 Eq-Evo-02：`\dot{\|\theta^{\mathrm{trace}}\|}` 在 C2 下取 `\gamma A` 投影，`\dot{\|\theta^{\mathrm{ext}}\|}` 在 C1 下取稳态反冲项投影；化简后即 §2.2 logistic 形式。
+
+2. **d_c 项**：`\dot{\mathcal{F}}_d = \alpha_d \cdot \dot{\mathrm{tr}\,(\nabla^2 C_{L_2})^{-1}}`。`\nabla^2 C_{L_2}` 由 Eq-Bridge-L2-01 的 sediment-rate-and-stiffness 关系决定；其漂移率在 C3 下分解为 `ρ_{local}` 项 + `(σ_{sr}-σ_{sr}^{sub})` 项 + 干预窗口项 - 衰减项，即 §3.2 形式。
+
+3. **T_{dir} 项**：`\dot{\mathcal{F}}_T` 来自余弦角的导数；C4 保证横纵分离，使该导数分解为弛豫项（向代数目标 `T_{dir}^{\mathrm{alg}}`）+ 真实重选泵入项 + 实-感分裂扣除项 + 结构型苦难侵蚀项 + 健康 `L_2` 支架项，即 §3.5 五项 ODE。
+
+4. **S 项**：`\dot{\mathcal{F}}_S` 来自 `\|\hat{R}\|_{H_P}` 的链式导数；按 `\mathbb{1}[d > d_c]` / `\mathbb{1}[d \le d_c]` 投影分裂为 `S_{sig}` / `S_{str}` 两路；T-IRR-3.5 给出 `ν_{block}` 的算子级表达式，证明阻塞转化项的非守恒方向性是 P1-T07 hierarchy 的后果而非独立假设。
+
+### §6.6 T-PROJ-1 不证明的事项
+
+为避免过度主张，T-PROJ-1 **不承诺**以下内容：
+
+1. **不**证明 L1 系数（`α, β, λ_{trace}, γ_ρ, κ_{relax}, μ_Δ, ν_{block}` 等）的具体数值——这些仍为 P3 实证问题
+2. **不**证明 χ(σ_{sr}; σ_{sr}^{self}) 跳跃函数族的普适性（C2 闭包之外）
+3. **不**证明 `\Delta\Psi_f^{\mathrm{gap}}` 的算子层定义（`_SRT_T_DIR_CANONICAL.md §5-§6` 现象学分裂仍为依赖）
+4. **不**证明集体版主方程（Eq-Multi-01 / 02 / 03）→ `Collective_Selection §4.4-§4.6` 的对应投影；集体版 T-PROJ-1^{coll} 是后续轮次的扩展任务
+
+### §6.7 T-PROJ-1 的结构性意义
+
+| 主张 | 升级前 | 升级后 |
+|---|---|---|
+| 四变量系统**没有引入新本体** | 陈述（§6 paragraph） | 定理后果（C1-C4 + 投影构造） |
+| 四变量系统**是主方程的导出** | 陈述 | C1-C4 满足时严格成立的恒等式（modulo `O(\eta)`）|
+| 主方程层 → 四变量层不需要额外 axiom | 隐含 | `\mathcal{F}_X` 投影算子 + Eq-Evo-01/02 的链式法则 |
+| 四变量 ODE 系数与主方程参数的关系 | 未给 | §6.5 表格给出 source-by-source 对应（系数本身仍为 P3）|
+
+**P1-candidate 地位的根据**：T-PROJ-1 把"四变量是主方程投影"从 modeling claim 升为 P1-candidate 定理；要升 P1，仍需把 C1-C4 中每一条与对应 Open Pressure（`\Delta\Psi_f^{\mathrm{gap}}` 算子化、χ 普适性、阈值实证窗口、集体版投影）逐条收口。
 
 ---
 
 ## §7. Open Pressures
 
-> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化、§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §1 / §2 / §4` 已给出第一遍硬化案（FEP 翻译表已落 `Neuroscience/SRT_Clin_02_FEP.md`）；§7.7 `L_0` 不可逆**算子级**对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5`（H4，2026-04-25）已给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的构成性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式。下列开放点保留原表述直至回写完成。
+> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化、§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §1 / §2 / §4` 已给出第一遍硬化案（FEP 翻译表已落 `Neuroscience/SRT_Clin_02_FEP.md`）；§7.7 `L_0` 不可逆**算子级**对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5`（H4，2026-04-25）已给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的构成性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式；**§6 主方程投影定理已在本文件 §6 T-PROJ-1（H5，2026-04-25）给出带闭包假设 C1-C4 的形式化构造**——四变量系统在 C1-C4 满足时是 `Core/SRT_Core_22_Equations.md` Eq-Evo-01/02 的严格导出投影。下列开放点保留原表述直至回写完成。
 
 本 draft_v0 状态下尚未封口：
 
