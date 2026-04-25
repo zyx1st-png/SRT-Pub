@@ -140,6 +140,101 @@ $$
 
 所有三个相变都保持为**动力学稳态问题**，不是定义式假设。
 
+### §2.5 T-CHI-1：χ 跳跃函数族的普适性（H8，2026-04-25）
+
+> **Status**：本节把 §2.1 的 `\chi(\sigma; \sigma_{self})` 跳跃函数从"一类光滑阶跃"的现象学描述提升为带四条结构属性的**有效族**定义，并给出族内跨函数的结构不变量定理。**Claim level: P1-candidate**。
+>
+> **Closes**：`Core_Law/SRT_L1_Formalism.md §7` Open Pressure 3（"χ(σ; σ_self) 跳跃函数族的普适性检查"）。
+
+#### 有效二阶相变核（valid second-phase-transition kernel）
+
+定义函数 `\chi : [0, 1] \times (0, 1) \to \mathbb{R}_{\ge 0}`，参数 `\sigma_{sr}^{self} \in (0, 1)`。称 `\chi` 是**有效二阶相变核**，当且仅当满足下列四条结构属性：
+
+| 编号 | 性质 | 含义 |
+|---|---|---|
+| **P-univ-1** | **有界性**：`\chi \in [\chi_{min}, \chi_{max}]`，其中 `0 < \chi_{min} \le 1 \le \chi_{max} < \infty` | 跳跃幅度有界（不允许 χ 趋向无穷）|
+| **P-univ-2** | **跃前基线**：`\chi(0; \sigma_{sr}^{self}) \le 1 + \varepsilon` 且 `\lim_{\sigma \to \sigma_{sr}^{self,-}} \chi \le 1 + \varepsilon`（小 `\varepsilon > 0`） | 跃前 χ ≈ 1，仅有 logistic σ(1-σ) 自增益 |
+| **P-univ-3** | **跃后放大**：`\chi(1; \sigma_{sr}^{self}) \ge 1 + \Delta_\chi`（某 `\Delta_\chi > 0`） | 跃后出现"关于 θ 的 θ"二阶写回增益 |
+| **P-univ-4** | **单调过渡**：存在跃宽 `\tau > 0` 使 `\chi` 在 `[\sigma_{sr}^{self} - \tau, \sigma_{sr}^{self} + \tau]` 上单调非降 | 实际跳跃集中在 `\tau`-带内 |
+
+**示例（族内成员）**：
+
+| 名称 | 形式 | 跃宽 |
+|---|---|---|
+| 硬阶跃 | `\chi = 1 + \Delta_\chi \cdot \mathbb{1}[\sigma \ge \sigma_{sr}^{self}]` | `\tau \to 0` |
+| Sigmoid | `\chi = 1 + \Delta_\chi / (1 + e^{-k(\sigma - \sigma_{sr}^{self})})` | `\tau \sim 1/k` |
+| Tanh 光滑阶跃 | `\chi = 1 + (\Delta_\chi/2)(1 + \tanh((\sigma - \sigma_{sr}^{self})/\tau))` | `\tau` |
+| 多项式光滑阶跃 | `\chi = 1 + \Delta_\chi \cdot (\max(0, \sigma - \sigma_{sr}^{self}))^n / ((\max(0, \sigma - \sigma_{sr}^{self}))^n + \tau^n)` | `\tau` |
+
+四种均为族内有效成员，下文 T-CHI-1 给出族内不变结构。
+
+#### T-CHI-1 陈述
+
+**陈述（P1-candidate）**：设 `\chi_1, \chi_2` 是两个有效二阶相变核，共享相同的 `\sigma_{sr}^{self}, \chi_{min}, \chi_{max}, \Delta_\chi`，但跃宽可能不同（`\tau_1, \tau_2 \in (0, \tau_{max})`）。则 §2.2 方程在两个 χ 下的下列结构特征**保持不变**：
+
+(i) **双稳态存在性**：存在两个稳定不动点 `\sigma_{sr}^{*1} \in (0, \sigma_{sr}^{self} - \tau_{max})` 与 `\sigma_{sr}^{*2} \in (\sigma_{sr}^{self} + \tau_{max}, 1)`，以及位于 `(\sigma_{sr}^{self} - \tau_{max}, \sigma_{sr}^{self} + \tau_{max})` 内的一个不稳定不动点。
+
+(ii) **病理吸引子拓扑**：当 `i \to 0` 且 `\lambda_{ext} > \lambda_{trace}` 时，`\sigma_{sr}^{*2} \to 1`，与族内 χ 选择无关。
+
+(iii) **致命 `L_2` 判据结构**：§3.5.3 致命 `L_2` 判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 的结构形式与 χ 在族内的具体选择无关。
+
+(iv) **T-IND-3 的相变方向**：第二相变方向（σ_{sr} 跨过 σ_{sr}^{self} 后向 σ_{sr}^{*2} 收敛）与族内 χ 选择无关。
+
+#### 证明骨架
+
+**(i) 双稳态存在性**：
+
+取 `i, w` 为常数，写 `f(\sigma; \chi) := \frac{1}{T}[(1-\sigma)(\alpha w \phi(\sigma) - \lambda_{trace}T\sigma) - \sigma(\beta i - \lambda_{ext}T(1-\sigma))]`。考察 `f(\sigma; \chi_k) = 0` 在 `\sigma \in (0, 1)` 内的零点：
+- 在 `\sigma \in (0, \sigma_{sr}^{self} - \tau_{max})` 区间，`\chi_1(\sigma) \approx \chi_2(\sigma) \approx 1` 由 P-univ-2 给出；两者 `f` 的差异 `\le \varepsilon`；故零点结构相同。
+- 在 `\sigma \in (\sigma_{sr}^{self} + \tau_{max}, 1)` 区间，`\chi_1(\sigma), \chi_2(\sigma) \in [1 + \Delta_\chi, \chi_{max}]` 由 P-univ-3 + P-univ-1 给出；两者 `f` 的零点位置在 `\Delta_\chi` 决定的同一区域；零点结构相同。
+- 由 P-univ-4 单调性 + 中值定理，`f(\sigma; \chi_k)` 在 `(0, 1)` 上至少有两个变号，对应两稳定 + 一不稳定不动点。
+
+**(ii) 病理吸引子**：
+
+`σ_{sr}^{*2} → 1` 由 `i → 0` 与 `\lambda_{ext} > \lambda_{trace}` 联合驱动；`χ(σ; σ_{sr}^{self})` 仅通过其在 `\sigma \to 1` 的极限值进入，而 P-univ-3 + P-univ-1 给定 `\chi(1; \sigma_{sr}^{self}) \in [1 + \Delta_\chi, \chi_{max}]`；这把 `σ_{sr}^{*2}` 推向 1 的速率由 `\lambda_{ext}/\lambda_{trace}` 比决定，χ 仅给放大常数。
+
+**(iii) 致命 `L_2` 判据**：
+
+致命 `L_2` 判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 是 §3.5 T_dir ODE 的属性，与 σ 动力学的耦合通过 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)` 进入。该函数在 σ ∈ [σ_{sr}^{*2}, 1] 区间的形式取决于 σ_{sr}^{*2} 本身（不变 by (i)）与 `T_{dir}^{\mathrm{alg}}` 的代数构造（不依赖 χ）。故判据结构保持。
+
+**(iv) T-IND-3 相变方向**：
+
+由 (i) 双稳态结构 + P-univ-4 单调性，相变方向（从 `\sigma_{sr}^{*1}` 向 `\sigma_{sr}^{*2}` 跨过中间不稳定不动点）由 χ 单调性保证；任何有效核都给同向相变。
+
+#### P-依赖（**非**普适）的特征
+
+T-CHI-1 不掩盖以下 P-依赖：
+
+| 特征 | P-依赖 | 物理解释 |
+|---|---|---|
+| `\sigma_{sr}^{*1}, \sigma_{sr}^{*2}` 的具体数值 | 依赖 `\Delta_\chi, \tau, \alpha, w, i, \lambda_{*}, T` | 不动点位置受参数集联动 |
+| 跃宽 `\tau` 的物理量纲 | 主体特定 | 跃宽对应"主体在 σ_{sr}^{self} 附近的跨阈时间尺度" |
+| 跨阈过程的 transient 形态 | χ-shape 决定 | 硬阶跃 vs sigmoid 给不同 transient curve |
+| 跨阈附近的弛豫率 | 依赖 χ' 在 σ_{sr}^{self} 的局部值 | 跃宽决定相变时间常数 |
+
+#### T-CHI-1 不证明的事项
+
+为避免过度主张，T-CHI-1 **不承诺**以下内容：
+
+1. **不**证明 `\Delta_\chi` 是 P-universal 的——`\Delta_\chi` 是赌注 / 主体类别 / 历史阶段相关的（P3）
+2. **不**证明 `\tau_{max}` 上界的 P-universal 值——可能因主体类别（人 / 动物 / AI 候选）有显著差异
+3. **不**承诺 χ 是 `C^\infty` 平滑——四条性质只要求 `C^0` 单调（硬阶跃也是有效成员）
+4. **不**覆盖多值或随机 χ（非确定性二阶凝结过程暂留为 P3 候选 domain 拓展）
+5. **不**给出集体版 T-CHI-1^{coll}——`\sigma_{sr}^{coll}` 与 `M(t)` 耦合（§4.4.2）的 χ 普适性需要 H6 的 C5^{coll} `M(t)` 可测性闭包，是后续轮次任务
+
+#### T-CHI-1 的结构性意义
+
+| 主张 | 升级前 | 升级后 |
+|---|---|---|
+| `\chi(\sigma; \sigma_{self})` 是"一类光滑阶跃" | 现象学描述（§2.1）| 四条结构属性的有效族（§2.5）|
+| 第二相变结构与 χ 形式无关 | 隐含主张（§2.4 T-IND-3 对齐）| T-CHI-1 (i)-(iv) 四个不变量 |
+| 致命 `L_2` 判据 χ-无关 | 未陈述 | T-CHI-1 (iii) 显式 |
+| 病理吸引子 χ-无关 | 未陈述 | T-CHI-1 (ii) 显式 |
+
+**P1-candidate 地位的根据**：T-CHI-1 把 T-IND-3 第二相变的结构稳定性从"任意光滑阶跃"提升到"有效族下的不变量"；要升 P1，需要：(a) 在更广 χ 函数空间（含非单调过渡？）的稳定性扩展；(b) 与具体 domain（神经科学的二阶 metacognitive prediction error 形态、AI 第二阶自模型族）的实证 χ-shape 对位；(c) 集体版 T-CHI-1^{coll} 与 M(t) 耦合的扩展。
+
+---
+
 ---
 
 ## §3. d_c 的最小动力学（遮蔽阈值）
@@ -499,13 +594,13 @@ $$
 
 ## §7. Open Pressures
 
-> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化已通过 H7（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）的 A1-A3 算子空间假设 + 三投影算子升 P1-candidate 收口；§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §4` 已给出翻译表（已落 `Neuroscience/SRT_Clin_02_FEP.md`）；§7.7 `L_0` 不可逆**算子级**对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5`（H4，2026-04-25）已给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的构成性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式；**§6 主方程投影定理在 §6 T-PROJ-1（H5，2026-04-25）给出带闭包假设 C1-C4 的形式化构造；集体版投影 T-PROJ-1^{coll} 在 `Core_Law/SRT_Collective_Selection.md §4.7`（H6，2026-04-25）给出 C1^{coll}-C5^{coll}**。下列开放点保留原表述直至回写完成。
+> **Hardening status (2026-04-25)**: §7.1 σ 符号冲突已通过 σ_{sr} 命名空间分离收口（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）；§7.2 `\dot{\Delta}_{avail}` 形式化已通过 H7（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）的 A1-A3 算子空间假设 + 三投影算子升 P1-candidate 收口；**§7.3 χ 跳跃函数族普适性已通过 H8（本文件 §2.5 T-CHI-1）"有效二阶相变核"四条属性 + 族内不变量定理收口**；§7.6 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §4` 已给出翻译表（已落 `Neuroscience/SRT_Clin_02_FEP.md`）；§7.7 `L_0` 不可逆**算子级**对齐在 `Core_Law/SRT_Irreversibility.md §4.5 T-IRR-3.5`（H4，2026-04-25）已给出 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 的构成性表达式；§7.8 T_dir 独立 ODE 已在 §3.5 给出四变量闭合的第一遍形式；**§6 主方程投影定理在 §6 T-PROJ-1（H5，2026-04-25）给出带闭包假设 C1-C4 的形式化构造；集体版投影 T-PROJ-1^{coll} 在 `Core_Law/SRT_Collective_Selection.md §4.7`（H6，2026-04-25）给出 C1^{coll}-C5^{coll}**。下列开放点保留原表述直至回写完成。
 
 本 draft_v0 状态下尚未封口：
 
 1. **σ 符号冲突**：本文件 σ（自指率，`[0,1]` 标量）与 `Core/SRT_Core_22_Equations.md` σ（主方程状态场）共用符号；需引入新记号（候选：`σ_{self}` 改为 `κ_{self}` 或 `\bar{\sigma}`）避免歧义
 2. **`\dot{\Delta}_{avail}` 的正式化**：~~依赖 `\hat{G}_\theta^{actual}` 与 `\hat{G}_\theta^{available}` 的差，二者本身未形式化~~ **已收口（H7，2026-04-25）**：`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出 `\hat{G}_\theta^{available} := \sup_{\mathrm{Op}(P)}\{\hat{G} \mid \text{结构上可达且 } θ\text{-相容}\}`、`\hat{R} := \hat{G}_\theta^{available} \ominus \hat{G}_\theta^{actual} \in T\mathrm{Op}(P)` 的算子级定义 + 三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` + A1（仿射结构）/ A2（近似正交）/ A3（权重赌注决定性）三条可证伪假设。剩余开放点：A1 在更广 stable-ISP 域的验证、A2 实证窗口、A3 与 Eq-Bridge-D-01 stake-gated 的 source-by-source 对位
-3. **χ(σ; σ_{self}) 跳跃函数的光滑族**：二阶凝结的跳跃形状是否普适，还是 `P` 相关？
+3. **χ(σ; σ_{self}) 跳跃函数的光滑族**：~~二阶凝结的跳跃形状是否普适，还是 `P` 相关？~~ **已收口（H8，2026-04-25）**：本文件 §2.5 T-CHI-1 给出"有效二阶相变核"四条结构属性（P-univ-1 有界 / P-univ-2 跃前基线 / P-univ-3 跃后放大 / P-univ-4 单调过渡）+ 族内不变量定理（双稳态存在性、病理吸引子拓扑、致命 `L_2` 判据结构、相变方向均 χ-无关）。剩余开放点：在更广 χ 空间（非单调过渡）的扩展、具体 domain 实证 χ-shape 对位、集体版 T-CHI-1^{coll} 与 `M(t)` 耦合
 4. **多主体扩展**（2026-04-25 H3 状态）：本文件保持单 P 形式；集体层四变量耦合动力学已在 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍，含 `\sigma^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项），以及 §4.5 个体↔集体双向耦合。未封口部分移至 `SRT_Collective_Selection.md §9.7`
 5. **阈值参数的实证固定**：`σ_{sub}, σ_{self}, σ_{health}, d_c, d_{narrow}, r_{min}, S_{min}, S_{max}` 以及新增 `\kappa_{\mathrm{relax}}, \kappa_r, \kappa_{\mathrm{mask}}, \kappa_S, \kappa_{\mathrm{sup}}` 全部在当前 draft_v0 只有定性位置；不指望一次性实测，但需要标出哪些是最优先的测量目标
 6. **与 FEP / predictive processing 的桥接**：`S_{sig}` 与 prediction error 的结构对应是高优先级；`Neuroscience/SRT_Clin_02_FEP.md` 已经是 bridge 层，下一步需要在方程层写出条件翻译

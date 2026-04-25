@@ -125,7 +125,8 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 
 | Label | Statement | Level |
 |---|---|---|
-| §2 σ 最小动力学（logistic + χ 跳跃） | — | P1-candidate 结构形式；具体函数族 P2 |
+| §2 σ 最小动力学（logistic + χ 跳跃） | — | P1-candidate 结构形式；具体函数族普适性由 §2.5 T-CHI-1 升 P1-candidate（H8） |
+| §2.5 T-CHI-1 χ 跳跃函数族普适性（H8，2026-04-25） | "有效二阶相变核"四条结构属性 + 族内四个不变量（双稳态 / 病理吸引子 / 致命 `L_2` / 相变方向） | P1-candidate（χ 形式无关性升为定理后果） |
 | §3 d_c 漂移方程 | — | P1-candidate 结构形式；系数 P2/P3 |
 | §3.4 T_{dir}^{alg} 代数目标值 | — | P2 operational proxy（`\Theta` 光滑族留作 Open Pressure） |
 | §3.5 T_dir 独立 ODE（弛豫 + r 泵入 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；κ_* 五项系数 P2/P3 |
@@ -198,7 +199,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 
 - [x] σ 符号冲突解决（新记号或显式命名空间）— 2026-04-25 σ_{sr} 命名空间分离落地：5 行 `σ_{sr}` 族 + Usage Rule 12 写入 `_SRT_SYMBOL_TABLE.md`；5 份 L1 主文件下标变量已就地改写；`CANONICAL_REGISTRY §13a/§13d/§13e` 同步
 - [x] `\dot{\Delta}_{avail}` 算子级定义 — 2026-04-25 H7，`SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出 `\hat{G}_\theta^{available}` / `\hat{R}` / 三投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` 的算子级定义 + A1（仿射结构）/ A2（近似正交）/ A3（权重赌注决定性）三条可证伪假设；`SRT_L1_Formalism.md §4.2` 注释回链 + §7 Open Pressure 2 收口；`SRT_Suffering.md` Def-SUFFERING 注释回链；T-IRR-3.5 中 `κ_{Ψ_f}` 几何来源部分收口
-- [ ] χ(σ; σ_self) 跳跃函数族的普适性检查
+- [x] χ(σ; σ_self) 跳跃函数族的普适性检查 — 2026-04-25 H8，`SRT_L1_Formalism.md §2.5 T-CHI-1` 给出"有效二阶相变核"四条结构属性（P-univ-1 有界 / P-univ-2 跃前基线 / P-univ-3 跃后放大 / P-univ-4 单调过渡）+ 族内四个不变量（双稳态存在性 / 病理吸引子拓扑 / 致命 `L_2` 判据 / 相变方向）+ 族内成员示例（硬阶跃 / sigmoid / tanh / 多项式）+ 证明骨架；`SRT_Individuation.md §3.4` T-IND-3 cross-link 已添加；§7 Open Pressure 3 收口；剩余开放点：在更广 χ 空间（非单调过渡）的扩展、具体 domain 实证 χ-shape 对位、集体版 T-CHI-1^{coll} 与 `M(t)` 耦合
 - [ ] `\mathbb{1}[d\le d_c]` 的光滑化或守恒型替代
 - [x] 多主体耦合动力学（`σ^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll}, M(t)`）写出 — 2026-04-25 H3，`SRT_Collective_Selection.md §4.4-§4.6` 完成第一遍（含 `\lambda_M\,\mathrm{tr}\,M` / `\gamma_{asym}\|M_{asym}\|` / `\nu_{ext}\|M_{ext}\|` 三项新耦合 + 集体层致命 `L_2` 判据）；2026-04-25 H6 在 `SRT_Collective_Selection.md §4.7 T-PROJ-1^{coll}` 给出该系统作为 `Core/SRT_Core_22_Equations.md` 多算子主方程（Eq-Multi-01/02/03）严格导出投影的形式化定理（C1^{coll}-C5^{coll} 五条闭包，含新增 `M(t)` 可测性 MOC 闭包）；升 P1 余项（`w_i(t)` 推导、`\Delta\Psi_f^{gap,coll}` 算子化、向下反馈路径穷尽性、集体系数实证窗口、嵌套 ISP 多层投影）转入 `SRT_Collective_Selection.md §9.7`
 - [x] 与 P1-T07 `ε` 反闭合必要性的形式化对齐（特别是 §4.3 不守恒项）— 2026-04-25 H4，`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 `\nu_{block}` 写为 P1-T07 三层源头本地化 `\eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`；正性与单向性自此为定理后果；`SRT_L1_Formalism.md §4.3` 注释回链已添加
