@@ -172,6 +172,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 - `Neuroscience/README.md`（directory entry; separates canonical-facing material from bridge/lab hardening drafts）
 - `Neuroscience/_SRT_Neuro_Axioms.md`
+- `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（claim-status audit for the neuro axiom bridge; not a replacement for the axiom file）
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（bridge/lab working draft; not a canonical source）
@@ -234,5 +235,6 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 root topic / FAQ 中优先级候选，不提升 canonical 权限
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 是相邻理论接口导航，不新增 P0/P1，不替代 FEP/IIT/GNW/量子/社会现实等既有正文
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
+- `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限
 - Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
