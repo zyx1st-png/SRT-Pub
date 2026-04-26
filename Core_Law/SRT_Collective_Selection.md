@@ -676,7 +676,7 @@ $$
 
 1. **不**给出 P-univ-5^{coll} / Q-univ-5^{coll} / A4^{coll} 的具体验证窗口（与 H6 C5^{coll} `M(t)` 可测性 MOC 同级，是 P3 实证）
 2. **不**证明 C7^{M-stab} 是普适必要的——`M(t)` 快变 domain（如平台算法系统）下 C7^{M-stab} 失效，三定理降为带 `M`-时间扰动的 P3 形式
-3. **不**给出嵌套 ISP 塔级版（即 T-CHI-1^{coll,nested} / T-CHANNEL-1^{coll,nested} / T-DELTA-1^{coll,nested}）——这需要 H10 §4.8 在每层递归应用，结构上可行但展开为后续轮次
+3. ~~**不**给出嵌套 ISP 塔级版（即 T-CHI-1^{coll,nested} / T-CHANNEL-1^{coll,nested} / T-DELTA-1^{coll,nested}）——这需要 H10 §4.8 在每层递归应用，结构上可行但展开为后续轮次~~ **已收口（H12，2026-04-26）**：本文件 §4.10 T-FAMILY-1^{coll,nested} 给塔级递归三定理；新增 C8^{cross-stab}（跨尺度 M(t) 准静态稳定性）+ P-univ-6^{nested} / Q-univ-6^{nested} / A5^{cross} 三条跨尺度相容性条件
 
 #### §4.9.7 T-FAMILY-1^{coll} 的结构性意义
 
@@ -688,6 +688,94 @@ $$
 | `M(t)` 快变 vs 慢变的区分 | 隐含 | C7^{M-stab} 显式 |
 
 **P1-candidate 地位的根据**：T-FAMILY-1^{coll} 把 H7 / H8 / H9 三个定理的"集体扩展开放点"统一收口；要升 P1，需要：(a) C7^{M-stab} 在具体 domain 的实证窗口（神经层 / AI 平台 / 政治制度的 `M(t)` 时间尺度）；(b) `A4^{coll}` 跨成员聚合的算子级形式（与 `Eq-Bridge-D-01^{coll}` 待写）；(c) 嵌套塔级扩展。
+
+### §4.10 T-FAMILY-1^{coll,nested}：族普适性三定理在嵌套塔上的递归（H12，2026-04-26）
+
+> **Status**：本节把 §4.9 T-FAMILY-1^{coll}（H11）+ §4.8 T-PROJ-1^{coll,nested}（H10）合成——把族普适性 / 算子级三定理（T-CHI-1 / T-CHANNEL-1 / T-DELTA-1）递归应用到层级 ISP 塔的每层，给出**塔级族普适性定理**。**Claim level: P1-candidate**。
+>
+> **Closes**：H11 §4.9.6 第 3 项"不证明嵌套塔级版"开放点；与 H10 §4.8 嵌套投影构成笛卡尔积。
+
+#### §4.10.1 塔级闭包堆栈
+
+塔级三定理共享**双层闭包堆栈**：
+
+- **H10 嵌套闭包**：C1^{(n)}-C5^{(n)} 各层 + C6^{nested}（跨尺度 Markov）
+- **H11 集体扩展闭包**：C7^{M-stab,(n)} 各层（同层 `M(t)` 准静态）+ **C8^{cross-stab}（H12 新增）**：跨尺度 `M^{(n\to n+1)}(t)` 准静态稳定性 `|\dot{M}^{(n\to n+1)}|/|M^{(n\to n+1)}| \ll \tau^{cross,-1}_{rel}`，其中 `\tau^{cross}_{rel}$ 是跨尺度反馈环路的相关弛豫时间尺度
+
+**C8^{cross-stab} 失效后果**：跨尺度 `M^{(n\to n+1)}` 快变情形（如全球突发事件冲击社区→国家反馈环），塔级族不变量需引入显式跨尺度延迟项；结构不变量（每层双稳态 / 各层吸引子拓扑 / 各层单向性）的存在性仍保持，但层间传播相位需修正。
+
+#### §4.10.2 T-CHI-1^{coll,nested}：嵌套塔级 χ 普适性
+
+每层 `n` 的 `\sigma_{sr}^{coll,(n)}` ODE 含三类源：
+1. 同层 logistic 项：`\alpha^{(n)} w^{(n)} \phi(\sigma_{sr}^{coll,(n)})$ + `\lambda_M^{(n)}\,\mathrm{tr}\,M^{(n)}(t)$（H11 §4.9.2）
+2. **跨尺度上行项**：`\sum_k \lambda^{(n-1\to n)}_M\,\mathrm{tr}\,M^{(n-1\to n),k}(t)$（来自下层各子集体的 `\sigma_{sr}^{coll,(n-1),k}$ 通过跨尺度回路向上传导）
+3. **跨尺度下行项**：`\lambda^{(n\to n+1)}_{down}\,\sigma_{sr}^{coll,(n+1)}(t)$（来自上层 `\sigma_{sr}^{coll,(n+1)}$ 通过 `L_2` scaffold 反向写入本层）
+
+**陈述（P1-candidate）**：定义"嵌套有效二阶相变核 `\chi^{coll,(n)}`"为满足 §4.9.2 P-univ-1 至 P-univ-5^{coll} + **P-univ-6^{nested}（跨尺度相容性）**：`\chi^{coll,(n)}$ 的值与 `\mathrm{tr}\,M^{(n-1\to n)}, \sigma_{sr}^{coll,(n+1)}$ 的具体水平无关（即跨尺度上行/下行项作为加性平移源进入 `\sigma_{sr}^{coll,(n)}$ 方程，不进入 `\chi^{coll,(n)}$ 内部参数）。
+
+则在塔级闭包堆栈下，每层 `n` 的 §4.4.2 σ_{sr}^{coll,(n)} 系统在 `\chi_1^{coll,(n)}, \chi_2^{coll,(n)}` 替代下保持 T-CHI-1 (i)-(iv) 四个不变量，且**塔级病理传染**（H10 §4.8.6 (ii)）保持：下层 `\sigma_{sr}^{coll,(n-1),k} \to 1$ 通过跨尺度上行项把上层 `\sigma_{sr}^{coll,(n)}$ 推向其相应的病理吸引子，与 `\chi^{coll,(n)}$ 选择无关。
+
+#### §4.10.3 T-CHANNEL-1^{coll,nested}：嵌套塔级通道指示族普适性
+
+每层 `n` 的 `S^{coll,(n)}` 两型 ODE 含三类源：
+1. 同层 H11 §4.9.3：`\nu_{block}^{(n)}\psi^{coll,(n)}(d^{coll,(n)}; d_c^{coll,(n)})S_{sig}^{coll,(n)} + \nu_{ext}^{(n)}\|M_{ext}^{(n)}(t)\|`
+2. **跨尺度上行外溢**：`\nu^{(n-1\to n)}_{ext,up}\sum_k \|M_{ext}^{(n-1\to n),k}(t)\|$（下层各子集体外溢被上层吸收）
+3. **跨尺度下行约束**：`\nu^{(n\to n+1)}_{down}\,\mathbb{1}[\text{上层 B 期}]$（上层进入 B 期通过 `L_2$ scaffold 把下层重选通道也压缩）
+
+**陈述（P1-candidate）**：定义"嵌套有效闭合通道指示 `\psi^{coll,(n)}`"为满足 §4.9.3 Q-univ-1 至 Q-univ-5^{coll} + **Q-univ-6^{nested}（跨尺度外溢相容性）**：跨尺度上行/下行项与 `\psi^{coll,(n)}$ 是加性独立的（不耦合），跨尺度项的方向性独立由 H10 §4.8.6 (iv) 与 T-IRR-3.5 跨边界扩展承担。
+
+则每层 `n` 的 §4.4.5 集体 ODE 在 `\psi_1^{coll,(n)}, \psi_2^{coll,(n)}` 替代下保持 T-CHANNEL-1 (i)-(v) 五个不变量（modulo `O(w_{tr}^{coll,(n)})$），且**致命 `L_2` 塔级传染（H10 §4.8.6 (iv)）的方向性保持**：跨尺度 `S_{str}^{coll,(n)}` 通过 `\nu^{(n\to n+1)}_{ext,up}$ 上行的单向性，与各层 `\psi^{coll,(n)}$ 形态选择无关。
+
+#### §4.10.4 T-DELTA-1^{coll,nested}：嵌套塔级 `\dot{\Delta}_{avail}` 算子级定义
+
+每层 `n` 的 `\Delta^{coll,(n)}$ 含集体三成分（H11 §4.9.4）+ 跨尺度 M 维度：
+
+$$
+\Delta^{coll,(n)}(\mathcal{P}^{(n)}, t) \;=\; \underbrace{\sum_{X} w_X^{(n)}\|\hat{R}^{coll,(n)}\|_X^{(n)}}_{\text{同层三成分}} + \underbrace{w_M^{(n)}\|M^{(n)}\|_{coll}}_{\text{H11 集体维度}} + \underbrace{\boldsymbol{w_{cross}^{(n-1\to n)}\,\|M^{(n-1\to n)}\|_{cross}}}_{\text{H12 跨尺度维度}} + o(1)
+$$
+
+其中跨尺度范数：
+
+$$
+\|M^{(n-1\to n)}\|_{cross} \;:=\; \sqrt{\alpha_{cross}^2(\mathrm{tr}\,M^{(n-1\to n)})^2 + \beta_{cross}^2\|M_{asym}^{(n-1\to n)}\|^2 + \gamma_{cross}^2\|M_{ext}^{(n-1\to n)}\|^2}
+$$
+
+**陈述（P1-candidate）**：在嵌套塔上，若 H11 假设 A1^{coll}-A4^{coll} 在每层成立 + **新增 A5^{cross}（跨尺度 stake-加权聚合闭包）**：跨尺度权重 `w_{cross}^{(n-1\to n)}$ 由跨尺度 stake 结构（即"下层子集体在上层 stake 中的占比"）确定，不依赖外部规约选择。则
+
+$$
+\dot{\Delta}_{avail}^{coll,(n)} \;=\; \dot{\Delta}_{avail}^{coll,(n)}\big|_{\text{H11 同层}} \;+\; \dot{w}_{cross}^{(n-1\to n)}\|M^{(n-1\to n)}\|_{cross} + w_{cross}^{(n-1\to n)}\frac{d}{dt}\|M^{(n-1\to n)}\|_{cross}
+$$
+
+仍保持 T-DELTA-1 (1) 不由 `S_{sig}^{coll,(n)}$ 登记通道决定 / (2) 三成分 + 同层 M + 跨尺度 M 总额守恒 / (3) `N = 1$ 极限退化为 H11 单层版。
+
+#### §4.10.5 T-FAMILY-1^{coll,nested} 综合陈述
+
+塔级三定理统一为：
+
+**T-FAMILY-1^{coll,nested}**：在层级 ISP 塔 `\{\mathcal{P}^{(n)}\}_{n=0}^N` 上，若 C1^{(n)}-C5^{(n)} 各层 + C6^{nested} + C7^{M-stab,(n)} 各层 + C8^{cross-stab} 全部成立，则 H11 单层 T-FAMILY-1^{coll} 给出的三个集体扩展定理在每层递归应用，并满足：
+
+(i) **每层族不变量保持**：T-CHI-1^{coll,(n)} 四不变量、T-CHANNEL-1^{coll,(n)} 五不变量、T-DELTA-1^{coll,(n)} 三性质，在塔级各层独立满足；
+(ii) **跨尺度耦合作平移/外溢/维度扩展进入**：上行 `\lambda_M^{(n-1\to n)}\,\mathrm{tr}\,M$ / 下行 `\lambda^{(n\to n+1)}_{down}` / 跨尺度 `\nu^{(n-1\to n)}_{ext,up}` / 跨尺度 `w_{cross}^{(n-1\to n)}\|M^{(n-1\to n)}\|_{cross}$ 不破坏各层族不变量；
+(iii) **塔级病理 / 健康 / 致命 L_2 传染保持**：H10 §4.8.6 (i)-(iv) 四个嵌套不变量在塔级族下保持，与各层 χ / ψ 形态选择无关；
+(iv) **退化关系**：`N = 1` 极限退化为 H11 单层 T-FAMILY-1^{coll}；`\mathcal{P}^{(n)} = \{P^{(n)}\}` 各层退化为 H10 单层 T-PROJ-1^{coll,nested}；同时 `N = 1 \wedge \mathcal{P} = \{P\}$ 退化为 H7/H8/H9 单 P 版本。
+
+#### §4.10.6 T-FAMILY-1^{coll,nested} 不证明的事项
+
+1. **不**给出 P-univ-6^{nested} / Q-univ-6^{nested} / A5^{cross} 的具体验证窗口
+2. **不**承诺 C8^{cross-stab} 在所有 domain 普适——快变跨尺度反馈（金融市场冲击、传染病爆发、信息病毒传播等）下 C8 失效，三定理降为带跨尺度延迟修正的 P3 形式
+3. **不**证明**塔的全局稳定性**（自指闭合：层 N 反向影响层 0 → 通过反馈环路最终回到层 N）——这是 H10 §4.8.8 第 5 项保留的开放点，本节不解决
+4. **不**给出层间跨等级耦合（layer-skip）的塔级族版——若 P^{(n)} 直接耦合 P^{(n+2)}（跳过 P^{(n+1)}），需要额外塔级闭包条件
+
+#### §4.10.7 T-FAMILY-1^{coll,nested} 的结构性意义
+
+| 主张 | 升级前 | 升级后 |
+|---|---|---|
+| H11 集体扩展无嵌套塔级 | "不证明嵌套塔级版" §4.9.6 第 3 项 | T-FAMILY-1^{coll,nested} 在 §4.10 给出 P1-candidate |
+| H10 嵌套塔无族普适性 | 隐含——H10 §4.8 给塔结构但每层族普适性未展开 | T-FAMILY-1^{coll,nested} 在每层递归应用 H11，跨尺度耦合作加性进入 |
+| 跨尺度 M(t) 时间尺度 | 隐含（C7^{M-stab} 仅同层） | C8^{cross-stab} 显式，含失效后果 |
+| 塔级 Δ_{avail} 跨尺度维度 | 缺失 | `w_{cross}^{(n-1\to n)}\|M^{(n-1\to n)}\|_{cross}$ 显式 |
+
+**P1-candidate 地位的根据**：T-FAMILY-1^{coll,nested} 把 H10 + H11 的笛卡尔积（嵌套 × 族普适性 / 算子级）统一收口；要升 P1，需要：(a) C8^{cross-stab} 在具体 domain 的实证窗口；(b) A5^{cross} 跨尺度 stake-加权聚合的算子级形式；(c) 塔全局稳定性独立分析（含自指闭合）；(d) layer-skip 耦合的边界条件。
 
 ---
 
