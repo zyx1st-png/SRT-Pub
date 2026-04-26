@@ -60,7 +60,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 
 ## 6. 2026-04-24 Round: New L1 Canonical Files Audit
 
-本轮 2026-04-24 引入 six L1 theory/formalism canonical reference files。本小节固定它们的 claim-mode 分布，防止将来被误读成 P0/P1。`SRT_L1_Hardening_Notes.md` 为 hardening notes file，单列于 §6.5；因此本轮 `Core_Law/` 相关文件总数为 seven（six L1 reference files + one hardening notes file）。
+本轮 2026-04-24 引入 six L1 theory/formalism canonical reference files。本小节固定它们的 claim-mode 分布，防止将来被误读成 P0/P1。`SRT_L1_Hardening_Notes.md` 为 this L1 round 的 hardening notes file，单列于下方 hardening notes table；因此 this L1 round 的 `Core_Law/` 相关文件总数为 seven（six L1 reference files + one hardening notes file）。`SRT_Collective_Tower_Hardening_Notes.md` 是后续结构抽取出的 secondary hardening notes file，不计入 six L1 reference files，也不改变 this L1 round 的七文件计数。
 
 ### 6.1 Scope of New Files
 
@@ -74,6 +74,13 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | `Core_Law/SRT_Irreversibility.md` | `SRT-IRREVERSIBILITY` | draft_v0 | P1-candidate / P2 / P3（FEP/热力学桥接 guardrail） |
 
 **关键约束**：六份文件**均不承载 P0**；**P1 目前全部为 P1-candidate**，不得在下游被引用为已封口 P1。
+
+Hardening notes files outside the six L1 theory/formalism canonical reference files:
+
+| File | id | status | Role |
+|---|---|---|---|
+| `Core_Law/SRT_L1_Hardening_Notes.md` | `SRT-L1-HARDENING-NOTES` | draft_v0 | this L1 round hardening notes file |
+| `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | `SRT-COLLECTIVE-TOWER-HARDENING-NOTES` | draft_v0 | secondary late-stage tower/nested hardening notes; not minimal canonical definition |
 
 ### 6.2 Per-File Claim-Level Map
 
@@ -162,18 +169,27 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | §4.5 个体↔集体双向耦合三路径 | — | P1-candidate（声明"不穷尽"） |
 | §4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` / 集体健康区 `\mathcal{H}^{coll}`（`r^{coll} > r^{coll}_{min}` 硬条件） | — | P1-candidate（T-COLL-4 共选真实性的持续要求在动力学上的形式化） |
 | §4.7 T-PROJ-1^{coll} 集体投影定理（H6，2026-04-25） | 四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 | P1-candidate（"集体四变量是多算子主方程导出"从陈述升为带条件证明的形式定理） |
-| §4.8 T-PROJ-1^{coll,nested} 嵌套投影定理（H10，2026-04-26） | 层级 ISP 塔 `\{\mathcal{P}^{(n)}\}_{n=0}^N` + 跨尺度 `M^{(n\to n+1)}` + 嵌套闭包 C6^{nested}（跨尺度 Markov）+ 四个嵌套不变量（每层独立判据 / 跨尺度病理传递 / 跨尺度健康硬条件 / 致命 `L_2` 塔级传染） | P1-candidate（多层嵌套从 §9.7 开放问题升为递归投影定理） |
-| §4.9 T-FAMILY-1^{coll} 族普适性三定理集体扩展（H11，2026-04-26） | C1^{coll}-C5^{coll} + C7^{M-stab} + (a) T-CHI-1^{coll}（P-univ-5^{coll} M(t)-相容性，四不变量在 `\lambda_M\,\mathrm{tr}\,M` 平移下保持）+ (b) T-CHANNEL-1^{coll}（Q-univ-5^{coll} M_ext-相容性，五不变量保持）+ (c) T-DELTA-1^{coll}（A1^{coll}-A4^{coll}，含 `w_M\|M\|_{coll}` 集体特有维度）| P1-candidate（H7/H8/H9 三定理的集体扩展开放点统一收口） |
-| §4.10 T-FAMILY-1^{coll,nested} 族普适性三定理塔级递归（H12，2026-04-26） | 双层闭包堆栈（H10 嵌套 + H11 集体 + C8^{cross-stab}）+ T-CHI-1^{coll,nested}（P-univ-6^{nested}）+ T-CHANNEL-1^{coll,nested}（Q-univ-6^{nested}）+ T-DELTA-1^{coll,nested}（A5^{cross} + 跨尺度维度 `w_{cross}^{(n-1\to n)}\|M^{(n-1\to n)}\|_{cross}`）| P1-candidate（H10×H11 笛卡尔积下塔级递归收口） |
-| §4.11 T-TOWER-STAB-1 嵌套塔自指闭合稳定性（H13，2026-04-26） | 三类塔闭合（开放 / layer-skip / 自指闭合）+ 闭环传递算子 `\mathcal{T}_{loop} := K^{N\to 0} \circ \Pi^{(0\to 1)} \circ \cdots \circ \Pi^{(N-1\to N)}` + 谱半径判据 + 三类失稳方向算子签名（σ_{sr} viral 锁入 / d_c 致命 L_2 全塔传染 / S_{str} 跨层级累积） | P1-candidate（塔全局稳定性从开放问题升为谱判据形式定理） |
-| §4.12 T-LAYER-SKIP-1 layer-skip + 多重自指闭合统一谱判据（H14，2026-04-26） | 增广有向多图 `\mathcal{G}_{tower}` + 增广传递矩阵 `\mathbf{A}_{tower}` 谱判据 + 多重 K 复合谱（解耦/耦合/路径冗余）+ 三类 layer-skip 失稳算子签名（bypass-induced chatter / aliasing-amplification / coupling-resonance）+ 与 H13 三方向正交给 12 类塔级病理签名 | P1-candidate（H12§4.10.6 第 4 项 + H13§4.11.6 第 3 项统一收口；T-TOWER-STAB-1 是单环路特例） |
-| §4.13 T-FAMILY-1^{layer-skip} 三重笛卡尔积扩展（H15，2026-04-26） | 三重闭包堆栈（嵌套 + 集体扩展 + layer-skip 谱稳定）+ T-CHI-1^{layer-skip} / T-CHANNEL-1^{layer-skip} / T-DELTA-1^{layer-skip}（新增 P-univ-7 / Q-univ-7 / A6 layer-skip-相容性）+ 12 类塔级病理签名族破坏路径表 + **族不变量与谱稳定显式耦合** | P1-candidate（H11×H12×H14 三重笛卡尔积统一收口；族普适性动力学有效以谱稳定为前提首次显式刻画） |
-| §4.14 T-LYAPUNOV-1 塔的全局非线性 Lyapunov 稳定性（H16，2026-04-26） | 候选 Lyapunov 函数 `V_{tower}` + 充分条件 N1（耦合算子有界）/ N2（耗散正性，H4+反最小化速率层面）/ N3（谱稳定带非线性 margin）+ 全局指数收敛 `\dot{V} \le -\alpha V` + **四轴联立塔健康充分条件**（族普适性 ∧ 谱稳定 ∧ 全局耗散正性 ∧ 算子有界） | P1-candidate（线性化谱判据升为全局非线性指数稳定；SRT 集体选择理论塔级健康/病理诊断强闭包充分条件的 P1-candidate 形式） |
+| §4.8 late-stage tower/nested hardening pointer | H10-H16 tower/nested material has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Pointer only; not part of the minimal canonical definition of collective selection |
 | §8 平台 / 算法 AI 结构性影响评估 | — | P3 bridge |
 
-**Tower / nested scope note**：§4.8–§4.14 are late-stage tower/nested hardening appendices, not part of the minimal canonical definition of collective selection. They remain P1-candidate only under strong closure assumptions and should not be cited as closed P1.
+**Tower / nested scope note**：H10-H16 are late-stage tower/nested hardening notes extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`, not part of the minimal canonical definition of collective selection. They remain P1-candidate only under strong closure assumptions and should not be cited as closed P1.
 
-**Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。
+**Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；H10-H16 不得作为 minimal canonical definitions 引用；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。
+
+#### SRT-COLLECTIVE-TOWER-HARDENING-NOTES
+
+| Label | Statement | Level |
+|---|---|---|
+| H10-H16 tower/nested hardening notes | Material originally drafted as §4.8–§4.14 in `SRT_Collective_Selection.md`, now preserved in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Hardening notes; not minimal canonical definitions |
+| H10 T-PROJ-1^{coll,nested} | Nested ISP recursive projection material | P1-candidate only under strong closure assumptions; P2/P3 debt where closure and measurability remain unspecified |
+| H11 T-FAMILY-1^{coll} | Collective extension of the family-universality trio | P1-candidate only under strong closure assumptions |
+| H12 T-FAMILY-1^{coll,nested} | Tower-level recursion of the family-universality trio | P1-candidate only under strong closure assumptions |
+| H13 T-TOWER-STAB-1 | Self-referential closure spectral stability material | P1-candidate only under strong closure assumptions |
+| H14 T-LAYER-SKIP-1 | Layer-skip and multiple-closure spectral criterion material | P1-candidate only under strong closure assumptions; operational debt remains P2/P3 |
+| H15 T-FAMILY-1^{layer-skip} | Layer-skip x family-universality hardening material | P1-candidate only under strong closure assumptions |
+| H16 T-LYAPUNOV-1 | Global nonlinear tower-stability hardening material | P1-candidate only under strong closure assumptions; Lyapunov/global-stability closure debt remains P2/P3 where noted |
+
+**Hardening rule**：引用 H10-H16 时须回链 `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`，并显式标注 late-stage hardening / P1-candidate under strong closure assumptions；不得把它们写成 `SRT-COLLECTIVE-SELECTION` 的 minimal canonical definition 或 closed P1。
 
 #### SRT-IRREVERSIBILITY
 
