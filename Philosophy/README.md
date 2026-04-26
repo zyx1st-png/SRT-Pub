@@ -2,13 +2,13 @@
 id: SRT-PHILOSOPHY-README
 type: index
 tags: [Philosophy, Index, Reading Guide, Claim Hygiene]
-status: active_v2
+status: active_v3
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide
 claim_level: P5
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
 ---
 
 # SRT Philosophy — Section Guide
@@ -32,13 +32,14 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 
 | Step | File | Role |
 |---|---|---|
-| 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; use this before the long foundations file. |
+| 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; hardened with existence levels, `\Psi_f` resistance proxies, `L_1` anchoring, and subjecthood thresholds. |
 | 2 | `SRT_Philosophy_Objection_Ledger.md` | Hardest-objection map; use before upgrading any philosophical claim. |
-| 3 | `_SRT_Phil_Axioms.md` | Philosophy-domain mapping axioms; not P0/P1 primitive axioms. |
-| 4 | `SRT_Philosophy_Foundations.md` | Long-form argument, historical context, and accumulated hardening notes. |
-| 5 | `SRT_Ethics_Agency.md` / `SRT_Philosophy_Ethics.md` | Agency, responsibility, free will, suffering, love, and virtue. |
-| 6 | `SRT_Political_Philosophy.md` | Institutions, legitimacy, collective stabilization, and political order. |
-| 7 | `_SRT_Soc_Bridge.md` / `_SRT_Soc_Axioms.md` | Social-theory bridge; use when extending SRT into culture, language, and economy. |
+| 3 | `SRT_Philosophy_Hardening_TODO.md` | Concrete checklist for future hardening passes. |
+| 4 | `_SRT_Phil_Axioms.md` | Philosophy-domain mapping axioms; not P0/P1 primitive axioms. |
+| 5 | `SRT_Philosophy_Foundations.md` | Long-form argument, historical context, and accumulated hardening notes. |
+| 6 | `SRT_Ethics_Agency.md` / `SRT_Philosophy_Ethics.md` | Agency, responsibility, free will, suffering, love, and virtue. |
+| 7 | `SRT_Political_Philosophy.md` | Institutions, legitimacy, collective stabilization, and political order. |
+| 8 | `_SRT_Soc_Bridge.md` / `_SRT_Soc_Axioms.md` | Social-theory bridge; use when extending SRT into culture, language, and economy. |
 
 ---
 
@@ -80,6 +81,10 @@ Philosophical slogan:
 
 > **What can be constructed is the interpretive cut; what cannot be waived is the cost of anchoring.**
 
+Hardening slogan:
+
+> **Do not make SRT less bold. Make every bold sentence pay its layer, cost, threshold, and failure condition.**
+
 ---
 
 ## 5. Anti-misreading guardrails
@@ -97,7 +102,7 @@ Philosophical slogan:
 
 ## 6. Objection-led hardening protocol
 
-Before adding or strengthening a Philosophy claim, check `SRT_Philosophy_Objection_Ledger.md`.
+Before adding or strengthening a Philosophy claim, check `SRT_Philosophy_Objection_Ledger.md` and `SRT_Philosophy_Hardening_TODO.md`.
 
 Minimum upgrade template:
 
@@ -125,6 +130,7 @@ The Philosophy folder should gradually move toward this architecture:
 3. **Objection-led hardening** — each major claim should include the strongest objection and what must be withdrawn if the objection succeeds.
 4. **Layer separation** — avoid mixing ontology, phenomenology, ethics, neuroscience, and politics without explicit bridge labels.
 5. **Public vs academic voice separation** — slogans are useful in public texts; academic files should keep scope and claim levels visible.
+6. **Formula-role discipline** — every equation in philosophy files should state whether it is definition, model, analogy, proxy, or placeholder.
 
 ---
 
@@ -132,10 +138,12 @@ The Philosophy folder should gradually move toward this architecture:
 
 Priority edits for future passes:
 
-1. Split `SRT_Philosophy_Foundations.md` into a clean canonical-facing main file plus annex/history notes.
+1. Add existence levels and subjecthood threshold to `_SRT_Phil_Axioms.md`.
 2. Deduplicate `_SRT_Phil_Axioms.md` and `SRT_Philosophy_Foundations.md` where they repeat the same explanatory-gap and paradox material.
-3. Link major claims in ethics and political philosophy to the relevant objection IDs from `SRT_Philosophy_Objection_Ledger.md`.
-4. Add cross-links from ethics/political philosophy back to `d-value`, `Psi_f`, occlusion dynamics, and collective selection canonical files.
+3. Add formula-role labels to explanatory-gap, paradox, gift, love, grief, and legitimacy formulas.
+4. Add a moral legitimacy ladder to ethics files so `d-value` expansion is not mistaken as sufficient moral goodness.
+5. Link major claims in ethics and political philosophy to relevant objection IDs from `SRT_Philosophy_Objection_Ledger.md`.
+6. Split `SRT_Philosophy_Foundations.md` into a clean canonical-facing main file plus annex/history notes.
 
 ---
 
