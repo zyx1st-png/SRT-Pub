@@ -2,7 +2,7 @@
 id: SRT-PHIL-FOUNDATIONS-COMPACT-CORE
 type: summary
 tags: [Philosophy, Compact Core, Ontology, Explanatory Gap, Paradox, Domain Exposition]
-status: active_v1
+status: active_v2
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
@@ -12,243 +12,260 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 # SRT Philosophical Foundations — Compact Core
 
-> **定位**：本文件是 `Philosophy/SRT_Philosophy_Foundations.md` 的紧凑主干版。  
-> **用途**：用于快速把握 SRT 哲学基础的最短论证骨架。  
-> **关系**：不替代原文；原文保留长篇推导、接口批次、案例扩展与 annex 沉积。
-> **回链头部**：本文是 Philosophy domain exposition / core support，不新增 P0 primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。本文命题主要为 P2/P3，少量说明性段落为 P5。
-> **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P5` 与上述回链头部一致；本文件是 compact exposition，不是 core definition source。
+> **Role**: This is the short entry point for SRT philosophy. Read it before `SRT_Philosophy_Foundations.md`.
+> **Status**: Philosophy-domain exposition and bridge layer. It does **not** define P0/P1 core terms.
+> **Dependency**: Core definitions of `L_0/L_1/L_2`, `\hat G_\theta`, `d-value`, `\Psi_f`, and `T_dir` remain in the canonical Core / Core_Law files.
+> **Claim discipline**: Main claims are P2/P3 philosophical readings; compact slogans are P5; operational predictions, where present, are P4 candidates.
 
-## 1. 哲学主命题
+---
 
-SRT 的哲学核心不是“意识先于物质”或“物质先于意识”，而是：
+## 0. One-sentence thesis
 
-> **存在先于一切实体分类的，不是物，也不是心，而是选择。**
+SRT begins neither from matter nor mind as already-given substances, but from **constrained selection**: a latent possibility becomes a determinate reality only when it is cut, anchored, and stabilized by an embodied operator under real friction.
 
-换句话说：
+Compressed formula:
+
+\[
+L_0 \xrightarrow{\hat G_\theta,\ \Psi_f} L_1 \xrightarrow{\text{stabilization}} L_2
+\]
+
+Plain version:
+
+> Reality is not merely found and not merely invented; it is selected under constraint.
+
+---
+
+## 1. What SRT philosophy is not
+
+SRT is easy to misread because it uses terms that overlap with many older traditions. The following boundaries should be kept explicit.
+
+| Misreading | Corrective reading |
+|---|---|
+| **Subjective idealism**: reality is whatever a subject projects. | No. `\theta` filters, but `\Psi_f` resists. Construction has cost. |
+| **Naive physicalism**: only stabilized third-person descriptions are real. | No. physical description is a powerful `L_2` stabilization, not the whole process of manifestation. |
+| **Dualism**: mind and matter are two separate substances. | No. mind/matter contrasts are phase and layer differences within selection dynamics. |
+| **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; subjecthood requires further closure, `d-value`, and integration conditions. |
+| **Relativism**: every projection is equally valid. | No. projections remain answerable to anchoring cost, stability, intervention, and cross-operator alignment. |
+
+---
+
+## 2. The basic ontology: three layers and one operator
+
+SRT uses a three-layer ontology:
+
+| Layer | Minimal meaning | Philosophical correlate |
+|---|---|---|
+| `L_0` | Latent field of not-yet-selected possibilities | potentiality, moduli space, pre-objective field |
+| `L_1` | Manifest event, object, or experience after selection | appearance, lived event, determinate occurrence |
+| `L_2` | Stabilized selection history | language, norm, habit, institution, law, model |
+
+The operator is not an abstract view from nowhere:
+
+\[
+L_1(t)=\hat G_\theta[L_0(t)]
+\]
+
+`\theta` encodes embodied, historical, cognitive, social, and technical constraints. A valid selection is therefore never parameter-free.
+
+Philosophical consequence:
+
+> Many classic disputes are not disagreements about one flat world, but confusions between latent possibility, manifest event, and stabilized description.
+
+---
+
+## 3. Selection-first ontology
+
+The strongest philosophical inversion in SRT is:
+
 \[
 \text{Existence} \equiv \text{Being Selected}
 \]
 
-现实不是一个已经摆好的对象仓库，而是：
-- 潜在域 \(L_0\)
-- 经由具身算子 \(\hat{G}_\theta\)
-- 被锚定为显现域 \(L_1\)
-- 再沉积为收敛域 \(L_2\)
+This should not be read as “human perception creates the universe.” It means that determinate existence, for any operator-relative domain, is not a bare item on an inventory list; it is the result of a cut from latency into manifestation.
 
-的连续过程。
+Better slogan:
 
----
+> Being is not first a thing with properties; being is a stabilized result of selection.
 
-## 2. 三域本体论
+This gives SRT a clean alternative to three unsatisfactory options:
 
-### 2.1 Triadic Ontology
-\[
-L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1)=\text{Stabilize}(L_1(t))
-\]
+1. **Object-first metaphysics**: assumes determinate objects before explaining how determinacy appears.
+2. **Subject-first idealism**: overstates the creative power of the observer.
+3. **Mystical ineffability**: protects experience by refusing to analyze its conditions.
 
-含义：
-- **\(L_0\)**：潜在域，可能性、模空间、未坍缩结构
-- **\(L_1\)**：显现域，体验、对象、事件、当下现实
-- **\(L_2\)**：收敛域，语言、制度、逻辑、规范、共识
-
-哲学问题之所以难，是因为很多争论其实是：
-> **把不同层的问题误当成同一层的问题。**
+SRT instead says: selection is participatory, but participation is constrained by friction.
 
 ---
 
-## 3. 选择一元论
+## 4. Filter–resistance duality
 
-SRT 的形而上学立场可压缩为：
+The key anti-relativist guardrail is:
 
-### 3.1 Pan-Selectionism
 \[
-\text{Existence} \equiv \hat{G}[L_0] \to L_1
+\text{Filter Shape}=f(\theta)
 \]
 
-这意味着：
-- 不是“电子也有微弱心灵”
-- 而是“电子之所以对我们显现为存在，是因为发生了选择事件”
+\[
+\text{Resistance Cost}=\Psi_f(L_0,\hat G_\theta)>0
+\]
 
-SRT 因此拒绝两种常见极端：
-1. **对象先验论**：世界是先给定好的独立实体总和
-2. **主观唯心论**：世界完全由心灵任意构造
+This duality lets SRT keep both sides of a difficult truth:
 
-SRT 的压缩答案是：
-> **现实是模板与阻抗共同塑形的结果。**
+- experience is formatted by an operator;
+- the operator cannot format reality arbitrarily.
 
-即：
-- 算子提供结构模板（filter shape）
-- 外部世界提供阻抗地形（resistance cost）
-- 二者通过 \(\Psi_f\) 发生约束耦合
+Most compact formulation:
+
+> What can be constructed is the interpretive cut; what cannot be waived is the cost of anchoring.
+
+This is why SRT can accept participatory observation without collapsing into “anything goes.” A selection that cannot pay its anchoring cost does not stabilize.
 
 ---
 
-## 4. 解释鸿沟的 SRT 解法
+## 5. The explanatory gap as interface, compression, and cost
 
-### 4.1 H-Phil-Ineffability
+SRT does not claim to magically solve the hard problem. It weakens and types the problem:
+
 \[
-\mathcal{L}_{gap} = \dim(L_1^{qualia})-\dim(L_2^{language})>0
+\mathcal L_{gap}=\dim(L_1^{qualia})-\dim(L_2^{language})>0
 \]
 
-SRT 对困难问题的回答不是“消除鸿沟”，而是：
-> **把鸿沟拆成可条件化的接口问题。**
+The gap should be treated as a family of claims, not one dramatic metaphysical wall.
 
-三种版本必须区分：
-
-| Version | What it says | If weakened |
+| Version | Claim | What must be withdrawn if weakened |
 |---|---|---|
-| Language-interface insufficiency | 当前语言/概念通道不足。 | 改写为接口扩展问题。 |
-| Dimensional compression | \(L_1\) 到 \(L_2\) 投影可能有损。 | 撤回维度天花板语言。 |
-| High-cost approximation | 逼近可行但成本太高。 | 改写为 payability / scaffold 问题。 |
+| Language-interface insufficiency | current language/concepts lack enough channels for a target experience | withdraw “in principle unsayable”; keep “not sayable with this interface” |
+| Dimensional compression | some `L_1` structures lose information when projected into `L_2` | withdraw hard dimension-ceiling language if better encodings remove the loss |
+| High-cost approximation | approximation is possible but too costly under current time, training, or shared-state conditions | withdraw impossibility talk; keep payability/scaffold analysis |
 
-所以：
-- 鸿沟不是神秘主义奇迹
-- 也不是认知错觉
-- 而是跨层投影、接口容量与近似成本共同形成的候选结构损失
+Philosophical payoff:
 
-SRT 因而避免了两种失败：
-1. 消除主义：否认体验的真实地位
-2. 神秘主义：承认鸿沟但拒绝分析它
+> SRT turns “the ineffable” into a structured problem of interface capacity, projection loss, and approximation cost.
+
+This avoids both eliminativism and lazy mysticism.
 
 ---
 
-## 5. 悖论的统一解释
+## 6. Paradox as boundary failure
 
-### 5.1 Boundary Paradox Theorem
+SRT diagnoses many philosophical paradoxes as illegal crossing or flattening of layers:
+
 \[
-\text{Paradox} \iff L_2 \not\subset L_1 \lor (L_2 \supset L_2)
+\text{Paradox} \Rightarrow \text{boundary violation or unstratified closure attempt}
 \]
 
-SRT 认为，经典哲学悖论本质上不是“逻辑系统突然坏掉”，而是：
-> **边界条件被错误调用，导致层级短路。**
+Examples:
 
-这可以统一解释：
-- 说谎者悖论
-- 罗素悖论
-- Sorites 悖论
-- 飞矢不动
-- 观测者悖论
-
-压缩说法：
-- **悖论 = 域混淆的症状**
-- **不是宇宙真的矛盾，而是切口错了**
-
-自指需要分型：
-
-| Type | Status |
+| Paradox type | SRT diagnosis |
 |---|---|
-| Indexical self-reference | Safe when position-bound. |
-| Quoted / packaged self-reference | Safe when object/meta levels remain separated. |
-| Godel-style formal self-reference | Legitimate stratified construction; may show incompleteness. |
-| Pathological closure attempt | Boundary violation: flat self-finalization at one level. |
+| Zeno / motion paradoxes | discrete symbolic cuts are forced to exhaust continuous dynamical flow |
+| Sorites | binary `L_2` labels are forced onto continuous `L_0/L_1` gradients |
+| Liar paradox | a flat statement tries to be object-language and final truth-evaluator at once |
+| Russell-style paradox | an unstratified rule allows a formal object to close over itself pathologically |
+
+Important boundary:
+
+> SRT does not say all self-reference is bad. It targets unstratified self-finalization.
+
+Safe self-reference includes indexical statements, quoted self-reference, meta-language descriptions, delayed feedback, and Gödel-style encoded self-reference. These may produce incompleteness or recursion, but not necessarily pathological paradox.
 
 ---
 
-## 6. 过滤—阻抗二元结构
+## 7. Normativity as stabilization, not automatic legitimacy
 
-### 6.1 Filter–Resistance Duality
+`L_2` is the stabilization of selection history:
+
 \[
-\text{Filter Shape} = f(\theta)
-\]
-\[
-\text{Resistance Cost} = \Psi_f(L_0,\hat{G}_\theta) > 0
-\]
-
-这条是 SRT 哲学最关键的边界之一。
-
-它同时允许：
-- 观察具有参与性
-- 认知具有构造性
-- 经验具有格式化结构
-
-但同时拒绝：
-- 世界可被任意捏造
-- 现实完全是主观投影
-- “受控幻觉”=“一切皆幻”
-
-最压缩的句子是：
-> **可被构造的是解释框架，不可被豁免的是摩擦代价。**
-
----
-
-## 7. 规范、相对性与多元性
-
-### 7.1 Normative Closure
-\[
-L_2 \equiv \{\sigma: \hat{G}_\theta[\sigma]=\sigma \}
+L_2 \equiv \{\sigma:\hat G_\theta[\sigma]=\sigma\}
 \]
 
-规范不是外加命令，而是选择历史沉积后的稳定不动点。
+This explains how norms, concepts, institutions, and habits become real constraints. But it does **not** mean every stabilized norm is justified.
 
-**Closure-pathology note (2026-04-21)**：closure 在这里先读作结构成形，不自动等于正当性。一个 `L_2` 若只能靠压缩更大范围后续可选择性来维持自身，就应读作 pathological closure；若这种压缩已经共享化、继承化、背景化，则进入 lethal `L_2` 的诊断窗口。该句是 P2/P3 reading rule，不替代 Core 判据。
+Crucial distinction:
 
-### 7.2 Ontological Relativity
+| Structure | Meaning |
+|---|---|
+| Stabilized closure | a pattern has become self-maintaining |
+| Legitimate closure | a pattern preserves or expands future selectable possibilities under acceptable cost |
+| Pathological closure | a pattern survives by narrowing future selection, hiding cost, or exporting friction to weaker operators |
+
+Therefore:
+
+> SRT explains how norms become real before it judges whether they are good.
+
+This distinction is essential for ethics and political philosophy.
+
+---
+
+## 8. Ontological relativity without relativism
+
+Different operators may project the same latent field differently:
+
 \[
-\exists h: L_2^{(A)} \to L_2^{(B)} \text{ homeomorphic}
+\hat G_{\theta_A}[L_0]\neq \hat G_{\theta_B}[L_0]
 \]
 
-这意味着：
-- 不同算子可对同一 \(L_0\) 给出不同投影
-- 但这不必导致彻底相对主义
-- 客观性来自**可对齐的稳定结构**，不是来自无参的“上帝视角”
+But SRT does not infer that all projections are equal. Objectivity is reconstructed as cross-operator alignment:
 
-### 7.3 Ontological Pluralism Constraint
-若两套分类都具有：
-- 预测力
-- 干预力
-- 可迁移性
+\[
+\exists h:L_2^{(A)}\to L_2^{(B)}\ \text{with stable correspondence}
+\]
 
-则二者可以并存为合法本体切分。
+In plain language:
 
-SRT 因而反对“唯一正确切分”的执念。
+> Truth is not a view from nowhere; it is stable alignment across constrained views.
+
+A classification is licensed when it improves prediction, intervention, transfer, and shared stabilization. This allows pluralism without surrendering standards.
 
 ---
 
-## 8. 为什么 SRT 在哲学上有必要
+## 9. Why the philosophy section matters
 
-如果没有这套三域+选择框架，我们通常会在三种失败里打转：
+The philosophy section is not decorative. It protects SRT from four reduction errors:
 
-1. **强物理主义**：把体验压扁成语言/物理报告
-2. **二元论**：承认差异但无法说明交互
-3. **泛心论 / 神秘主义**：扩大解释词汇但降低可检验性
+1. reducing experience to already-stabilized description;
+2. reducing reality to subjective construction;
+3. reducing normativity to arbitrary preference;
+4. reducing paradox to mere logical entertainment rather than boundary pathology.
 
-SRT 的哲学价值在于：
-> **它把“不可描述之物”为何不可描述，变成了一个可形式化的问题。**
+Its central job is to keep the whole theory layer-aware:
 
----
+```text
+latent possibility  -> manifest event  -> stabilized description
+L_0                 -> L_1             -> L_2
+```
 
-## 9. 最压缩结论
-
-SRT 哲学基础可以压缩成四句话：
-
-1. **现实是三域结构，不是单层实体平面。**
-2. **存在由选择事件奠基，而不是由实体清单奠基。**
-3. **体验与语言的鸿沟是跨层投影的几何后果。**
-4. **悖论、规范、对象性与客观性，都来自切口、沉积与边界成本。**
+Without this discipline, SRT collapses either into vague metaphysics or into ordinary physicalism with new labels.
 
 ---
 
-## 10. 阅读路径
+## 10. Hardest objections
 
-- 全量原文：`SRT_Philosophy_Foundations.md`
-- split 导航：`Foundations_Split/README.md`
-- annex 导航：`Foundations_Annex/README.md`
-- canonical 总注册表：`../CANONICAL_REGISTRY.md`
+The following objections should stay visible. They make the theory stronger by preventing overclaiming.
+
+| Objection | Why it matters | Current SRT response | If the objection succeeds |
+|---|---|---|---|
+| Language expansion may dissolve most ineffability. | It challenges the explanatory-gap reading. | Type the gap into interface, compression, and cost versions. | Withdraw principle-level ineffability; keep local interface/cost claims. |
+| Sophisticated representationalism may absorb “protocol-first” SRT. | It challenges anti-representational rhetoric. | Allow representations where specificity, invariance, and downstream use explain success. | Restrict protocol-first claims to online-action or high-payability contexts. |
+| Physicalism may explain `L_1` without extra ontology. | It challenges the need for triadic layers. | Treat physicalism as strong `L_2`, but ask whether it accounts for manifestation and first-person anchoring. | Recast SRT as interface theory rather than meta-ontology. |
+| Panpsychism may better explain continuity from micro to macro. | It challenges selection-first subjecthood. | Require `d-value`, integration, closure, and subject-boundary criteria before calling something a subject. | Admit SRT only solves combination if those criteria are operationalized. |
+| Formal logics already handle self-reference. | It challenges the paradox theorem. | Restrict the diagnosis to unstratified closure attempts. | Withdraw blanket paradox language; keep boundary-typing only. |
 
 ---
 
-## Hardest Objections
+## 11. Editing rules for this file
 
-本域若以下任一成立，则本域主张会被显著削弱：
+1. Do not define core primitives here; link to Core / Core_Law.
+2. Keep slogans visibly downstream of formal claims.
+3. Mark P4 predictions with proxies and failure conditions.
+4. When adding a philosophical comparison, state both the similarity and the difference.
+5. Prefer “SRT reads X as…” over “SRT proves X…” unless a canonical proof exists.
 
-1. Language and formal systems may expand enough to dissolve most ineffability.
-   - 当前承受方式：`H-Phil-Ineffability` is typed into interface insufficiency, compression, and high-cost approximation.
-   - 若成立需撤回什么：撤回 principle-level ineffability; keep only local interface and cost claims.
+---
 
-2. Protocol talk may collapse into sophisticated representationalism.
-   - 当前承受方式：SRT allows strong representations where specificity, invariance, and downstream use carry the explanatory load.
-   - 若成立需撤回什么：撤回 protocol-first contrast outside online-action or high-payability contexts.
+## 12. Four-sentence conclusion
 
-3. Paradox diagnosis may miss logics where self-reference is harmless or productive.
-   - 当前承受方式：self-reference is typed; only unstratified closure attempts count as boundary violations.
-   - 若成立需撤回什么：撤回 any blanket "self-reference = paradox" language.
+1. Reality is triadic, not a single flat inventory of objects.
+2. Determinate existence is the result of constrained selection.
+3. Experience, language, norm, and institution differ by layer and stabilization state.
+4. Philosophy’s hardest problems often arise when those layers are collapsed, over-identified, or forced into premature closure.
