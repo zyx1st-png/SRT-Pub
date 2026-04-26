@@ -238,7 +238,7 @@ $$
 2. **不**证明 A2 三子空间严格正交——在 stable-ISP 邻域内近似正交，但全域性是 P3 实证问题
 3. **不**证明算子空间 `\mathrm{Op}(P)` 的全局拓扑（紧致 / 单连通 / 等）；A1 仅在 stable-ISP 邻域内承诺仿射结构
 4. **不**证明 `\sup` 在算子族上的存在性和唯一性——若 `\mathrm{Op}(P)` 不紧致，`\hat{G}^{available}` 可能不可达，需以序列极限替代
-5. **不**给出 T-DELTA-1 的集体版（`\dot{\Delta}_{avail}^{coll}` 在 `\mathcal{P}` 上的扩展）；这与 T-PROJ-1^{coll} 的 C5^{coll} `M(t)` 可测性 MOC 闭包耦合，是后续轮次任务
+5. ~~**不**给出 T-DELTA-1 的集体版（`\dot{\Delta}_{avail}^{coll}` 在 `\mathcal{P}` 上的扩展）；这与 T-PROJ-1^{coll} 的 C5^{coll} `M(t)` 可测性 MOC 闭包耦合，是后续轮次任务~~ **已收口（H11，2026-04-26）**：`Core_Law/SRT_Collective_Selection.md §4.9.4 T-DELTA-1^{coll}` 给出集体版（A1^{coll}-A3^{coll} + 新增 A4^{coll} 跨成员 stake-加权聚合闭包 + C7^{M-stab}），含集体特有的 `w_M\|M(t)\|_{coll}` 维度（单 P 版没有），三个关键性质（不由 `S_{sig}^{coll}` 登记通道决定 / 三成分+M项总额守恒 / `\mathcal{P}=\{P\}` 退化）保持
 
 #### 升 P1 路径
 

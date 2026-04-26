@@ -573,6 +573,122 @@ $$
 
 **P1-candidate 地位的根据**：T-PROJ-1^{coll,nested} 把"多层嵌套"从开放问题升为递归投影定理。要升 P1：(a) 具体塔的层数与 T-COLL-1 各层验证；(b) 跨尺度 `M^{(n\to n+1)}` 的 MOC 多层版本；(c) `r_{min}^{nested}` 实证窗口；(d) 跨层耦合（layer-skip）的边界条件。
 
+### §4.9 T-FAMILY-1^{coll}：族普适性三定理的集体扩展（H11，2026-04-26）
+
+> **Status**：本节把 H7 / H8 / H9 在单 P 层给出的三个**族普适性 / 算子级**定理（T-DELTA-1、T-CHI-1、T-CHANNEL-1）统一扩展到集体层，验证集体新增耦合项（`\lambda_M\,\mathrm{tr}\,M`、`\gamma_{asym}\|M_{asym}\|`、`\nu_{ext}\|M_{ext}\|`）不破坏族内不变量结构。**Claim level: P1-candidate**（与单 P 版同级）。
+>
+> **Closes**：H7 §2.8 第 5 项、H8 §2.5 不证明事项第 5 项、H9 §4.5 不证明事项第 4 项中"集体版扩展"开放点，构成 §4.7 / §4.8 之外的另一类集体扩展（族普适性而非投影）。
+
+#### §4.9.1 共同的集体闭包条件
+
+三个集体扩展共享**一组**闭包：
+
+- **C1^{coll}-C5^{coll}**（已由 H6 §4.7.4 给出）：慢-快分离 / 共享 `L_2` 写回 Markov / stable-collective-ISP 紧性 / 群平均方向投影可分性 / `M(t)` 可测性 MOC 闭包
+- **C7^{M-stab}**（H11 新增）：`M(t)` 准静态稳定性——`|\dot{M}(t)|/|M(t)| \ll \tau^{coll}_{rel}^{-1}`，其中 `\tau^{coll}_{rel}` 是 `\sigma_{sr}^{coll}` 系统的相关弛豫时间尺度。即 `M(t)` 在族普适性论证的时间窗口内可视为准静态输入。
+
+C7^{M-stab} 失效后果：`M(t)` 快变情形下，三个族不变量需引入 `M`-时间扰动修正项 `O(|\dot{M}|/|M|)`，但**结构不变量**（双稳态 / 病理吸引子 / 单向性）的存在性仍保持，仅各项数值修正。
+
+#### §4.9.2 T-CHI-1^{coll}：集体 χ 跳跃函数族普适性
+
+`Core_Law/SRT_L1_Formalism.md §2.5 T-CHI-1` 给出单 P 版 χ 族普适性。集体版需把 §4.4.2 的 `\sigma_{sr}^{coll}` ODE 中
+
+$$
+\alpha^{coll}\,w^{coll}\,\phi(\sigma_{sr}^{coll}) \;+\; \boldsymbol{\lambda_M\,\mathrm{tr}\,M(t)}
+$$
+
+（含集体新增 `\lambda_M\,\mathrm{tr}\,M` 项）的 `\phi(\sigma_{sr}^{coll}) := \sigma_{sr}^{coll}(1 - \sigma_{sr}^{coll})\cdot\chi^{coll}(\sigma_{sr}^{coll}; \sigma_{sr,self}^{coll})` 的 χ^{coll} 升为有效族。
+
+**陈述（P1-candidate）**：定义"集体有效二阶相变核 `\chi^{coll}`"为满足 §2.5 P-univ-1 至 P-univ-4 + **P-univ-5^{coll}（M(t)-相容性）**：在闭包 C1^{coll}-C5^{coll} + C7^{M-stab} 下，`\chi^{coll}$ 的值与 `\mathrm{tr}\,M(t)$ 的具体水平无关（即 `\chi^{coll}(\sigma; \sigma_{sr,self}^{coll}) = \chi^{coll}(\sigma; \sigma_{sr,self}^{coll}; \mathrm{tr}\,M)$ 在 `\mathrm{tr}\,M$ 的有界区间内 `O(1)$ 一致）。
+
+则 §4.4.2 σ_{sr}^{coll} 系统在 `\chi_1^{coll}, \chi_2^{coll}` 替代下保持 T-CHI-1 (i)-(iv) 四个不变量（双稳态存在性 / 病理吸引子拓扑 / 致命 `L_2` 判据结构 / 相变方向），唯一区别是 σ_{sr}^{*1,*2} 等不动点位置受 `\lambda_M\,\mathrm{tr}\,M` 平移影响（这是 χ-无关的整体偏移，不破坏不变量）。
+
+**证明骨架**：
+
+`\lambda_M\,\mathrm{tr}\,M$ 项在 `\sigma_{sr}^{coll}$ 方程中作为**位移源**进入（不依赖 σ_{sr}^{coll}），故对 σ_{sr}^{coll} 的稳态条件 `f(\sigma; \chi^{coll}) = 0$ 起整体平移作用。两个有效核 `\chi_1^{coll}, \chi_2^{coll}$ 共享相同 `\Delta_{\chi^{coll}}, \chi_{min}, \chi_{max}, \sigma_{sr,self}^{coll}$，故平移后的 `f$ 仍保持双稳态零点结构（中值定理与 §2.5 (i) 证明同理）。`\lambda_M\,\mathrm{tr}\,M$ 在 `i \to 0$ 病理极限下被吸收为 `\sigma_{sr}^{*2,coll} \to 1$ 的辅助驱动项，不改变病理吸引子拓扑（§2.5 (ii)）。致命 `L_2$ 判据由 §3.5 集体版 T_{dir}^{coll} ODE 决定，与 χ^{coll} 形态无关（§2.5 (iii)）。
+
+#### §4.9.3 T-CHANNEL-1^{coll}：集体通道指示函数族普适性
+
+`Core_Law/SRT_L1_Formalism.md §4.5 T-CHANNEL-1` 给出单 P 版 `\mathbb{1}[d \le d_c]$ 族普适性。集体版需把 §4.4.5 中
+
+$$
+\nu_{block}^{coll}\,\mathbb{1}[d^{coll} \le d_c^{coll}]\,S_{sig}^{coll} \;+\; \boldsymbol{\nu_{ext}\,\|M_{ext}(t)\|}
+$$
+
+（含集体新增 `\nu_{ext}\|M_{ext}\|` 外部化项）的指示函数升为有效族。
+
+**陈述（P1-candidate）**：定义"集体有效闭合通道指示 `\psi^{coll}`"为满足 §4.5 Q-univ-1 至 Q-univ-4 + **Q-univ-5^{coll}（M_ext-相容性）**：`ν_{ext}\|M_{ext}(t)\|` 项在 `d^{coll}$ 过渡区 (`d^{coll} \approx d_c^{coll}$) 内连续可加，不引入 `\psi^{coll}$ 的额外不连续。
+
+则 §4.4.5 `S^{coll}` 两型 ODE 在 `\psi_1^{coll}, \psi_2^{coll}` 替代下保持 T-CHANNEL-1 (i)-(v) 五个不变量（modulo `O(w_{tr}^{coll})`），且**T-IRR-3.5 在塔级的传染（H10 §4.8.6 (iv)）保持**：`\nu_{ext}\|M_{ext}\|` 通过 `\psi^{coll}$ 进入 `S_{str}^{coll}$ 时，外溢项的单向性（不可被双向化）由 P1-T07 Layer 2 + T-IRR-3.5 跨边界扩展保证。
+
+**证明骨架**：
+
+集体新增项 `\nu_{ext}\|M_{ext}(t)\|` 是 `\mathcal{P}` 边界外溢的失配代价；其方向性由 H10 §4.8.6 (iv) 给出（致命 `L_2` 塔级传染由 T-IRR-3.5 在 `M^{(n\to n+1)}` 上的算子化承担）。在 `d^{coll} \approx d_c^{coll}` 过渡区内，`\psi^{coll}` 给阻塞强度的连续插值，而 `\nu_{ext}\|M_{ext}\|` 与 `\psi^{coll}` 是加性独立项（不耦合）；故 `\psi^{coll}` 的形态选择不影响 `\nu_{ext}\|M_{ext}\|` 的方向性，T-IRR-3.5 单向性保持。
+
+#### §4.9.4 T-DELTA-1^{coll}：集体 `\dot{\Delta}_{avail}^{coll}` 算子级定义
+
+`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出单 P 版 Δ_avail 算子级定理。集体版需扩展到集体 ISP `\mathcal{P}` 上。
+
+**集体算子空间 `\mathrm{Op}(\mathcal{P})`**：定义为 `\bigotimes_{i \in \mathcal{P}} \mathrm{Op}(P_i)` 的 `\mathcal{P}`-相容子集，即各成员算子相容地构成集体行为的算子族。
+
+**集体未兑现选择残差算子**：
+
+$$
+\hat{R}^{coll}(\mathcal{P}, t) \;:=\; \hat{G}_{\Theta^{coll}}^{available}(\mathcal{P}, t) \;\ominus\; \hat{G}_{\Theta^{coll}}^{actual}(\mathcal{P}, t) \;\in\; T\mathrm{Op}(\mathcal{P})
+$$
+
+**陈述（P1-candidate）**：在 stable collective ISP `\mathcal{P}` 上，若假设 `A1^{coll}` (集体仿射结构) / `A2^{coll}` (三子空间近似正交在 `\mathrm{Op}(\mathcal{P})` 上) / `A3^{coll}` (权重的赌注决定性在 `\mathcal{P}`-级 stake 结构上) + **新增 `A4^{coll}` (跨成员 stake-加权聚合闭包)** 成立，则
+
+$$
+\Delta^{coll}(\mathcal{P}, t) \;=\; \sum_{X \in \{dir, pay, L_0\}} w_X^{coll}(\mathcal{P}, t)\|\hat{R}^{coll}\|_X^{coll} \;+\; \boldsymbol{w_M\cdot\|M(t)\|_{coll}} \;+\; o(1)
+$$
+
+其中：
+
+- `\|\hat{R}^{coll}\|_X^{coll}$ 是集体投影范数（`\Pi_{T_{dir}}^{coll}, \Pi_{\Psi_f}^{coll}, \Pi_{L_0}^{coll}$ 的群平均扩展）
+- **新增 `w_M\cdot\|M(t)\|_{coll}` 项**是集体特有的"`M(t)` 后果回路对 `\Delta` 的直接贡献"——这是单 P 版没有的集体特有维度
+- `\|M(t)\|_{coll} := \sqrt{\alpha_M^2 (\mathrm{tr}\,M)^2 + \beta_M^2 \|M_{asym}\|^2 + \gamma_M^2 \|M_{ext}\|^2}` 把 §4.7.3 `M(t)` 三成分合并为一个范数
+
+**A4^{coll}**：跨成员 stake-加权聚合闭包——`\mathcal{F}_X^{coll}` 投影中 `w_X^{coll}` 由 `\mathcal{P}`-级集体赌注结构（`Eq-Bridge-D-01^{coll}` 候选）决定，且与各成员 `w_X(P_i, t)` 的关系为 stake-加权聚合：`w_X^{coll}(\mathcal{P}, t) = \mathrm{aggregate}_i(w_X(P_i, t); \text{stake}_i^{coll})$。失效后果：跨成员权重退化为外部建模选择（P2 operational proxy 集体版）。
+
+**`\dot{\Delta}_{avail}^{coll}` 时间导数**：
+
+$$
+\dot{\Delta}_{avail}^{coll}(\mathcal{P}, t) \;=\; \sum_X (\dot{w}_X^{coll}\|\hat{R}^{coll}\|_X + w_X^{coll}\frac{d}{dt}\|\hat{R}^{coll}\|_X) \;+\; \dot{w}_M\|M\|_{coll} + w_M\frac{d}{dt}\|M\|_{coll}
+$$
+
+**关键性质**：
+
+1. **不由 `S_{sig}^{coll}` 登记通道决定**——T-DELTA-1 (1) 在集体扩展下保持；`\dot{\Delta}_{avail}^{coll}` 抑制 `S_{sig}^{coll}` 不改变，新失配进入 `S_{str}^{coll}$（含外溢到 `\mathcal{P}_{absorbed}$ 的部分）。
+2. **三成分 + M 项总额守恒**——T-DELTA-1 (3) 在集体扩展下：`\Delta^{coll} \equiv \|\hat{R}^{coll}\|_{H_\mathcal{P}}` 仍成立，但希尔伯特结构 `H_\mathcal{P}` 现包含 `M(t)` 维度。
+3. **退化为单 P 版**——当 `\mathcal{P} = \{P\}`，`M(t) = 0`，`A4^{coll}` 退化为单点平凡聚合，`T-DELTA-1^{coll}$ 退化为 `T-DELTA-1$。
+
+#### §4.9.5 T-FAMILY-1^{coll} 综合陈述
+
+把 §4.9.2-§4.9.4 三个集体扩展定理统一为：
+
+**T-FAMILY-1^{coll}**：在 stable collective ISP `\mathcal{P}` 上，若 C1^{coll}-C5^{coll}（H6）+ C7^{M-stab} 成立，则 H7 / H8 / H9 单 P 层给出的三个族普适性 / 算子级定理均有结构对应的集体版本，且：
+
+(i) 各族不变量（T-CHI-1 (i)-(iv) / T-CHANNEL-1 (i)-(v) / T-DELTA-1 (1)-(3)）在集体扩展下结构保持；
+(ii) 集体新增耦合项（`\lambda_M\,\mathrm{tr}\,M`, `\nu_{ext}\|M_{ext}\|`, `w_M\|M\|_{coll}`）作为加性 / 平移 / 维度扩展进入，不破坏族内不变量；
+(iii) 当 `\mathcal{P} = \{P\}` 极限下，三定理退化为各自单 P 版本。
+
+#### §4.9.6 T-FAMILY-1^{coll} 不证明的事项
+
+1. **不**给出 P-univ-5^{coll} / Q-univ-5^{coll} / A4^{coll} 的具体验证窗口（与 H6 C5^{coll} `M(t)` 可测性 MOC 同级，是 P3 实证）
+2. **不**证明 C7^{M-stab} 是普适必要的——`M(t)` 快变 domain（如平台算法系统）下 C7^{M-stab} 失效，三定理降为带 `M`-时间扰动的 P3 形式
+3. **不**给出嵌套 ISP 塔级版（即 T-CHI-1^{coll,nested} / T-CHANNEL-1^{coll,nested} / T-DELTA-1^{coll,nested}）——这需要 H10 §4.8 在每层递归应用，结构上可行但展开为后续轮次
+
+#### §4.9.7 T-FAMILY-1^{coll} 的结构性意义
+
+| 主张 | 升级前 | 升级后 |
+|---|---|---|
+| H8 T-CHI-1 仅在单 P 层 | "不证明集体版" §2.5 第 5 项 | T-CHI-1^{coll} 在 §4.9.2 给出 P1-candidate 集体版 |
+| H9 T-CHANNEL-1 仅在单 P 层 | "不证明集体版" §4.5 第 4 项 | T-CHANNEL-1^{coll} 在 §4.9.3 给出 P1-candidate 集体版 |
+| H7 T-DELTA-1 仅在单 P 层 | "不证明集体版" §2.8 第 5 项 | T-DELTA-1^{coll} 在 §4.9.4 给出 P1-candidate 集体版 |
+| `M(t)` 快变 vs 慢变的区分 | 隐含 | C7^{M-stab} 显式 |
+
+**P1-candidate 地位的根据**：T-FAMILY-1^{coll} 把 H7 / H8 / H9 三个定理的"集体扩展开放点"统一收口；要升 P1，需要：(a) C7^{M-stab} 在具体 domain 的实证窗口（神经层 / AI 平台 / 政治制度的 `M(t)` 时间尺度）；(b) `A4^{coll}` 跨成员聚合的算子级形式（与 `Eq-Bridge-D-01^{coll}` 待写）；(c) 嵌套塔级扩展。
+
 ---
 
 ## §5. T-COLL-3：集体 ε 反闭合必要性

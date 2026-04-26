@@ -220,7 +220,7 @@ T-CHI-1 不掩盖以下 P-依赖：
 2. **不**证明 `\tau_{max}` 上界的 P-universal 值——可能因主体类别（人 / 动物 / AI 候选）有显著差异
 3. **不**承诺 χ 是 `C^\infty` 平滑——四条性质只要求 `C^0` 单调（硬阶跃也是有效成员）
 4. **不**覆盖多值或随机 χ（非确定性二阶凝结过程暂留为 P3 候选 domain 拓展）
-5. **不**给出集体版 T-CHI-1^{coll}——`\sigma_{sr}^{coll}` 与 `M(t)` 耦合（§4.4.2）的 χ 普适性需要 H6 的 C5^{coll} `M(t)` 可测性闭包，是后续轮次任务
+5. ~~**不**给出集体版 T-CHI-1^{coll}——`\sigma_{sr}^{coll}` 与 `M(t)` 耦合（§4.4.2）的 χ 普适性需要 H6 的 C5^{coll} `M(t)` 可测性闭包，是后续轮次任务~~ **已收口（H11，2026-04-26）**：`Core_Law/SRT_Collective_Selection.md §4.9.2 T-CHI-1^{coll}` 给出集体版（C1^{coll}-C5^{coll} + C7^{M-stab} + P-univ-5^{coll}），四个不变量在 `\lambda_M\,\mathrm{tr}\,M` 平移下保持
 
 #### T-CHI-1 的结构性意义
 
@@ -492,7 +492,7 @@ T-PROJ-1 §6.2 把 `\mathcal{F}_S = \|\hat{R}\|_{H_P}$ 按 `\mathbb{1}[d \gtrles
 1. **不**证明 `w_{tr}$ 是 P-universal 的——`w_{tr}$ 是赌注 / 主体类别 / 历史阶段相关的（P3）
 2. **不**承诺 `\psi$ 是 `C^\infty$ 平滑——四条性质只要求 `C^0$ 单调（硬指示也是有效成员，作为 `w_{tr} \to 0$ 极限）
 3. **不**覆盖随机 / 多值 `\psi$（非确定性通道指示暂留为 P3 候选）
-4. **不**证明集体版 T-CHANNEL-1^{coll}——`\mathbb{1}[d^{coll} \gtrless d_c^{coll}]` 在 `\mathcal{P}` 上的扩展耦合 H6 的 C5^{coll} `M(t)` 可测性闭包，是后续轮次任务
+4. ~~**不**证明集体版 T-CHANNEL-1^{coll}——`\mathbb{1}[d^{coll} \gtrless d_c^{coll}]` 在 `\mathcal{P}` 上的扩展耦合 H6 的 C5^{coll} `M(t)` 可测性闭包，是后续轮次任务~~ **已收口（H11，2026-04-26）**：`Core_Law/SRT_Collective_Selection.md §4.9.3 T-CHANNEL-1^{coll}` 给出集体版（C1^{coll}-C5^{coll} + C7^{M-stab} + Q-univ-5^{coll}），五个不变量保持，`\nu_{ext}\|M_{ext}\|` 与 `\psi^{coll}` 加性独立
 
 #### T-CHANNEL-1 的结构性意义
 

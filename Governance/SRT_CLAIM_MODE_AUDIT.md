@@ -163,6 +163,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | §4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` / 集体健康区 `\mathcal{H}^{coll}`（`r^{coll} > r^{coll}_{min}` 硬条件） | — | P1-candidate（T-COLL-4 共选真实性的持续要求在动力学上的形式化） |
 | §4.7 T-PROJ-1^{coll} 集体投影定理（H6，2026-04-25） | 四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 | P1-candidate（"集体四变量是多算子主方程导出"从陈述升为带条件证明的形式定理） |
 | §4.8 T-PROJ-1^{coll,nested} 嵌套投影定理（H10，2026-04-26） | 层级 ISP 塔 `\{\mathcal{P}^{(n)}\}_{n=0}^N` + 跨尺度 `M^{(n\to n+1)}` + 嵌套闭包 C6^{nested}（跨尺度 Markov）+ 四个嵌套不变量（每层独立判据 / 跨尺度病理传递 / 跨尺度健康硬条件 / 致命 `L_2` 塔级传染） | P1-candidate（多层嵌套从 §9.7 开放问题升为递归投影定理） |
+| §4.9 T-FAMILY-1^{coll} 族普适性三定理集体扩展（H11，2026-04-26） | C1^{coll}-C5^{coll} + C7^{M-stab} + (a) T-CHI-1^{coll}（P-univ-5^{coll} M(t)-相容性，四不变量在 `\lambda_M\,\mathrm{tr}\,M` 平移下保持）+ (b) T-CHANNEL-1^{coll}（Q-univ-5^{coll} M_ext-相容性，五不变量保持）+ (c) T-DELTA-1^{coll}（A1^{coll}-A4^{coll}，含 `w_M\|M\|_{coll}` 集体特有维度）| P1-candidate（H7/H8/H9 三定理的集体扩展开放点统一收口） |
 | §8 平台 / 算法 AI 结构性影响评估 | — | P3 bridge |
 
 **Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。
