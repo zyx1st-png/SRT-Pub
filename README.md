@@ -69,7 +69,7 @@ SRT 现在默认用两根轴来读：
 如果你想看领域扩展：
 
 - AI → [AI/AI_POSITIONING_NOTE.md](AI/AI_POSITIONING_NOTE.md)、[AI/_SRT_AI_Bridge.md](AI/_SRT_AI_Bridge.md)
-- Neuroscience → [Neuroscience/_SRT_Neuro_Axioms.md](Neuroscience/_SRT_Neuro_Axioms.md)
+- Neuroscience → [Neuroscience/README.md](Neuroscience/README.md)（入口；canonical axioms 与 N1-N9 hardening draft 分流）
 - Physics → [Physics/_SRT_Phys_Bridge.md](Physics/_SRT_Phys_Bridge.md)
 - Philosophy → [Philosophy/_SRT_Phil_Axioms.md](Philosophy/_SRT_Phil_Axioms.md)、[Philosophy/SRT_Political_Philosophy_CompactCore.md](Philosophy/SRT_Political_Philosophy_CompactCore.md)
 - Spirituality → [Spirituality/_SRT_Spirit_Axioms.md](Spirituality/_SRT_Spirit_Axioms.md)
