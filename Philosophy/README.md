@@ -2,13 +2,13 @@
 id: SRT-PHILOSOPHY-README
 type: index
 tags: [Philosophy, Index, Reading Guide, Claim Hygiene]
-status: active_v1
+status: active_v2
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide
 claim_level: P5
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER]
 ---
 
 # SRT Philosophy — Section Guide
@@ -33,11 +33,12 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 | Step | File | Role |
 |---|---|---|
 | 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; use this before the long foundations file. |
-| 2 | `_SRT_Phil_Axioms.md` | Philosophy-domain mapping axioms; not P0/P1 primitive axioms. |
-| 3 | `SRT_Philosophy_Foundations.md` | Long-form argument, historical context, and accumulated hardening notes. |
-| 4 | `SRT_Ethics_Agency.md` / `SRT_Philosophy_Ethics.md` | Agency, responsibility, free will, suffering, love, and virtue. |
-| 5 | `SRT_Political_Philosophy.md` | Institutions, legitimacy, collective stabilization, and political order. |
-| 6 | `_SRT_Soc_Bridge.md` / `_SRT_Soc_Axioms.md` | Social-theory bridge; use when extending SRT into culture, language, and economy. |
+| 2 | `SRT_Philosophy_Objection_Ledger.md` | Hardest-objection map; use before upgrading any philosophical claim. |
+| 3 | `_SRT_Phil_Axioms.md` | Philosophy-domain mapping axioms; not P0/P1 primitive axioms. |
+| 4 | `SRT_Philosophy_Foundations.md` | Long-form argument, historical context, and accumulated hardening notes. |
+| 5 | `SRT_Ethics_Agency.md` / `SRT_Philosophy_Ethics.md` | Agency, responsibility, free will, suffering, love, and virtue. |
+| 6 | `SRT_Political_Philosophy.md` | Institutions, legitimacy, collective stabilization, and political order. |
+| 7 | `_SRT_Soc_Bridge.md` / `_SRT_Soc_Axioms.md` | Social-theory bridge; use when extending SRT into culture, language, and economy. |
 
 ---
 
@@ -94,7 +95,28 @@ Philosophical slogan:
 
 ---
 
-## 6. Current optimization targets
+## 6. Objection-led hardening protocol
+
+Before adding or strengthening a Philosophy claim, check `SRT_Philosophy_Objection_Ledger.md`.
+
+Minimum upgrade template:
+
+```text
+Claim:
+Claim level: P2 / P3 / P4 / P5
+Canonical dependencies:
+Formula role, if any: definition / model / analogy / proxy / placeholder
+Strongest objection:
+What would narrow the claim:
+What would falsify or withdraw it:
+Which file should own the claim:
+```
+
+This prevents the Philosophy section from becoming a collection of impressive but unfalsifiable interpretations.
+
+---
+
+## 7. Current optimization targets
 
 The Philosophy folder should gradually move toward this architecture:
 
@@ -106,18 +128,18 @@ The Philosophy folder should gradually move toward this architecture:
 
 ---
 
-## 7. Best next edits
+## 8. Best next edits
 
 Priority edits for future passes:
 
 1. Split `SRT_Philosophy_Foundations.md` into a clean canonical-facing main file plus annex/history notes.
 2. Deduplicate `_SRT_Phil_Axioms.md` and `SRT_Philosophy_Foundations.md` where they repeat the same explanatory-gap and paradox material.
-3. Add a one-page “Philosophy Objection Ledger” collecting the hardest objections: representationalism, language expansion, physicalist reduction, panpsychist combination, and formal self-reference.
+3. Link major claims in ethics and political philosophy to the relevant objection IDs from `SRT_Philosophy_Objection_Ledger.md`.
 4. Add cross-links from ethics/political philosophy back to `d-value`, `Psi_f`, occlusion dynamics, and collective selection canonical files.
 
 ---
 
-## 8. Safe editing protocol
+## 9. Safe editing protocol
 
 Before adding new philosophy material, classify it:
 
