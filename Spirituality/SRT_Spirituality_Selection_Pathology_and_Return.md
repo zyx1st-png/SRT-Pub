@@ -17,6 +17,8 @@ dependency: [SRT-CLAIM-LADDER, SRT-CORE-21, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CAN
 > **Does not define**：P0/P1 core definitions, `d-value`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or real choice moment.
 > **Depends on**：`Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Philosophy/SRT_Philosophy_Ethics.md`、`Philosophy/SRT_Ethics_Agency.md`。
 > **Relation**: This file does not replace `Philosophy/SRT_Philosophy_Ethics.md` or `Philosophy/SRT_Ethics_Agency.md`; it reorganizes a subset of their insights around lived spiritual pathology, crisis, discernment, support, and return.
+> **Canonical Structural Layer**: A/B 分期、d_c 阈值、缺口感知机制、干预窗口、解耦触发、真空期与结构性恶的结构性定义由 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）承担。本文件处理活的现象学、语言、支持与回返路径；结构层诊断以 canonical 为准，不在本文件重新定义阈值与判据。
+> **Canonical Suffering Layer**: 涉及空心感、痛苦、自我扭曲、真空期体验等第一人称现象的结构定义回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。本文件保留回返现象学与 praxis 展开；苦难作为结构对象的定义（疼痛 vs 苦难、信号/结构两型、四类分型、反最小化原则）不在本文件重复。
 
 ---
 

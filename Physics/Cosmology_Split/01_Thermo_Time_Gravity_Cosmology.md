@@ -17,6 +17,15 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 
 ---
 
+## Canonical Cross-Link: Irreversibility Boundary (2026-04-24)
+
+- 本文件关于时间箭头、热力学不可逆、熵增、黑洞吸收等段落的**结构层**回链 `Core_Law/SRT_Irreversibility.md`（`SRT-IRREVERSIBILITY`）。
+- 分工：`SRT_Irreversibility.md` 固定 SRT 意义上的不可逆——`L_0` 层吸收态（Def-IRR-1）、选择史箭头（Def-IRR-2）、学习不可逆的非对称 `Ψ_f` 支付（T-IRR-1）；本文件负责物理侧热力学二律、宇宙学 arrow、黑洞吸收等具体物理桥接读法。
+- **严格单向**：物理侧二律 / 熵增 / free-energy 最小化不得反向定义 `L_0` 不可逆性或 SRT 的选择史箭头；见 `SRT_Irreversibility.md §8` 与 `SRT_L1_Hardening_Notes.md §4`。反之，本文件可以把物理不可逆读作 SRT 选择史在物理 `L_1` / `L_2` 上的**一种**表现，但这只是 P3 bridge 读法，不升为 P1。
+- 终止语义：物理意义上的"吸收"（如黑洞事件视界）是 T-IRR-2 吸收边界的**一种**具体物理实现，但 T-IRR-2 的宪定 / 集体终止分型不通过物理吸收全部覆盖；不得在本文件中把 T-IRR-2 读作纯物理结论。
+
+---
+
 # Part A: Formal Axioms
 
 ## 1.1 选择的热力学签名：闯入与吸收

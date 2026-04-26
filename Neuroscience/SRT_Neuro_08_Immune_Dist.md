@@ -23,6 +23,11 @@ dependency: [SRT-NEURO-07, SRT-CORE-000]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Canonical Cross-Link: Suffering Theory
+
+- 本文件涉及炎症负担、肠脑轴、分布式算子如何影响选择动力学；涉及"分布式苦难负担"、心身病与躯体化等段落时，对苦难作为结构对象的读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
+- 炎症与免疫失衡进入苦难讨论时按疼痛（`\theta_{somatic}` 层）与苦难（稳定 ISP 层）双轨理解；不得把炎症读数等同于苦难量化。
 # Part A: Formal Axioms (形式化公理)
 
 

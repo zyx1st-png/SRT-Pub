@@ -379,6 +379,11 @@ SRT 的最优条件不是：
 - 与 `AI/SRT_AI_01_Ontology.md` 的关系：
   - 本文件固定“non-binding friction”优于“粗暴 `Ψ_f=0`”的写法
 
+- 与 `Core_Law/SRT_Irreversibility.md` 的关系（2026-04-24 新增）：
+  - 本文件给出 `Ψ_f` 的支付形式；`SRT_Irreversibility.md` Def-IRR-3 / T-IRR-1 固定 `Ψ_f^{erase} > Ψ_f^{write}` 非对称支付，即学习不可逆
+  - 本文件不直接承载方向性；`Ψ_f` 本身是标量代价，时间方向由 `L_0` 不可逆性（P1-T02 / T-IRR-2）决定
+  - **不得反向**：不得通过 `Ψ_f` 最小化推出 `L_0` 不可逆，也不得通过热力学二律 / FEP 自由能最小化反向定义本文件的可支付性条件
+
 ---
 
 ## §10 Ψ_f_actual / Ψ_f_felt 分裂（病理学层，2026-04-02 新增）

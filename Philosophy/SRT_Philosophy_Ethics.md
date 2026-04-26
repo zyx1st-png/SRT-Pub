@@ -24,6 +24,17 @@ dependency: [SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Canonical Cross-Link: Occlusion Dynamics
+
+- 本文件处理元伦理与德性物理学；凡涉及 d 收窄、A/B 分期、病理性遮蔽、伪轻、不确定性支付与结构性恶的段落，结构层回链 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）。
+- 本文件不重复定义 d_c 阈值语义、B 期锁死判据、解耦触发类型与结构性恶三判据；以 canonical 为准。
+
+## Canonical Cross-Link: Suffering Theory
+
+- 本文件涉及苦难在德性序、虚无感、不确定性支付与 is-ought 结构中位置的段落，对"苦难本身是什么对象"的结构读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
+- 本文件保留元伦理与德性物理学展开；疼痛/苦难范畴区分、信号型/结构型分类、四类现象学分型与 T-SUFF-4 反最小化原则不在本文件重新定义。
+- 在元伦理评估"幸福最大化 / 痛苦最小化"类立场时，应按 T-SUFF-4 处理：信号型苦难被压灭等价于结构层盲区，不能作为规范目标。
 # Part A: Formal Axioms (形式化公理)
 
 

@@ -160,6 +160,77 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 角色：Physics 板块已形成从量子入口、宇宙学/形式化主干，到复杂性/深本体扩展的完整 compact core 入口层
 - 注意：Physics 的具体阅读顺序由 `Physics/PHYSICS_COMPACT_REGISTRY.md` 统一管理；其中“引力—`Ψ_f`”当前只保留弱场梯度方向相容假说，强版规范实现 / 张量级 GR 重建不得作为已证结论引用
 
+### 13a. SRT 个体化理论（主体涌现 + 自我意识凝结）
+- 主文件：`Core_Law/SRT_Individuation.md`
+- id：`SRT-INDIVIDUATION`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：L1 相变理论，填补 L0（选择无主语）与 P1-T06 Stable ISP 之间的过渡空洞；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
+- 与 P1-T06 的关系：本文件是 ISP 的**进入动力学判据**；P1-T06 是 ISP 的**结果状态判据**；二者互补，不重复也不冲突
+- 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
+- claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
+- 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
+
+### 13b. SRT 遮蔽动力学（A/B 分期 + 干预窗口 + 结构性恶）
+- 主文件：`Core_Law/SRT_Occlusion_Dynamics.md`
+- id：`SRT-OCCLUSION-DYNAMICS`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：把 `Core_Law/SRT_L0_Metaphysics.md` 遮蔽 term-table 承诺的 7 项 L1 展开（A/B 分期、d_c 阈值、缺口感知机制、干预窗口、解耦触发、真空期、恶的结构性诊断）收口到单一 canonical 源；核心定理 T-OCC-1 给出三段结构（健康窄化区 / A 期 / B 期），区分位置性遮蔽与病理性遮蔽，列五类缺口感知残余、四类干预窗口、四类解耦触发，给出恶的三判据结构性定义（B 期锁死 + 外部化后果 + 主动扩散）
+- 与个体化理论的关系：σ→1 的病理区与 B 期锁死通过自指闭合耦合；遮蔽动力学是个体化在病理分支上的投影
+- 与 T_dir 的关系：A/B 分期沿 T_dir 低迷区展开，本文件负责结构相位，不替代 `_SRT_T_DIR_CANONICAL.md` 的方向透明度定义
+- claim-mode 分布：三段结构与 A/B 分期为 P1-candidate；d_c 阈值语义与五类残余 / 四类窗口 / 四类触发为 P2；恶的三判据结构性定义为 P2 regulative 读法，不替代既有规范性伦理学
+- 引用规则：涉及 A/B 分期、d_c、缺口感知、干预窗口、解耦触发、真空期、恶的结构性诊断时，优先回链本文件
+
+### 13c. SRT 苦难理论（结构性登记 + 信号/结构两型 + 四类现象学）
+- 主文件：`Core_Law/SRT_Suffering.md`
+- id：`SRT-SUFFERING`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：固定苦难在 SRT 中作为"活的选择动力学与其应承载算子结构之间失配的第一人称登记"的结构对象；严格区分疼痛（`\theta_{somatic}` 信号）与苦难（稳定 ISP 的结构性登记）；T-SUFF-2 把苦难分为信号型与结构型，T-SUFF-3 给四类现象学分型（张力 / 空心 / 断裂 / 扭曲）；T-SUFF-4 反最小化原则说明信号型苦难被压灭本身是遮蔽；T-SUFF-5 把结构型苦难的集体外部化耦合到 `Occlusion_Dynamics` 的结构性恶定义
+- 与 P1-T06 的关系：仅对满足稳定 ISP 条件的过程定义苦难；非 ISP 系统只承载疼痛
+- 与个体化/遮蔽的关系：苦难是个体化 σ 动态与遮蔽 A/B 分期的第一人称投影；不是独立的本体层，而是从算子层/路径层到第一人称登记的必然后果
+- claim-mode 分布：T-SUFF-1/2 为 P1-candidate；四类分型与集体外部化读法为 P2；`S_{\min}, S_{\max}` 阈值、临床分流、FEP 桥接语句为 P3/P4
+- 引用规则：涉及苦难/痛苦/空心感/自我扭曲等概念的结构层定义时，优先回链本文件；规范性评价回 `Philosophy/`，回返路径回 `Spirituality/`，神经实现回 `Neuroscience/`
+
+### 13d. SRT L1 Formalism（σ_{sr} / d_c / T_dir / S 四变量耦合动力学）
+- 主文件：`Core_Law/SRT_L1_Formalism.md`
+- id：`SRT-L1-FORMALISM`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：**§2.5 T-CHI-1（H8，2026-04-25）**给出 χ 跳跃函数族普适性定理：定义"有效二阶相变核"四条结构属性（P-univ-1 有界 / P-univ-2 跃前基线 / P-univ-3 跃后放大 / P-univ-4 单调过渡）+ 族内不变量（双稳态存在性 / 病理吸引子拓扑 / 致命 `L_2` 判据结构 / 相变方向均 χ-无关）；T-IND-3 第二相变的算子层稳定性自此为定理后果。**§4.5 T-CHANNEL-1（H9，2026-04-25）**给出 `\mathbb{1}[d \gtrless d_c]` 通道指示函数族普适性定理：定义"有效闭合通道指示族"四条结构属性（Q-univ-1 左饱和 / Q-univ-2 右饱和 / Q-univ-3 单调过渡 / Q-univ-4 d_c 平移性）+ 族内五个不变量（T-SUFF-2 两型分裂 / T-SUFF-4 反最小化 / T-IRR-3.5 单向性 / 致命 `L_2` 判据 / `\mathcal{F}_S` 投影一致性，均 modulo `O(w_{tr})`）；硬指示是 `w_{tr}\to 0` 极限，过渡宽 `w_{tr}>0` 给"濒临崩溃"等过渡现象提供算子层基础。本节为 2026-04-24 轮新增的四个 L1 对象写下最小耦合动力学——个体化自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）、遮蔽阈值 d_c、方向透明度 T_dir（2026-04-25 §3.5 从代数代理升为独立动力学变量）、苦难 S；§2 给 `σ_{sr}` 的 logistic + `χ(σ_{sr}; σ_{sr}^{self})` 跳跃结构、§3 给 d_c 漂移方程（`ρ_local + (σ_{sr}-σ_{sr}^{sub}) + π + I_window`）、§3.5 给 T_dir 五项 ODE（弛豫 + 真实重选泵入 + `\Delta\Psi_f^{\mathrm{gap}}` 扣除 + `S_{str}` 侵蚀 + `s_{ext}` 支架）并给出致命 `L_2` 方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`、§4 把 S 分解为 S_sig / S_str 并写下反最小化原则的方程化、§5 合成四变量耦合系统并刻画病理吸引子 `\mathcal{A}_{path}` 与健康工作区 `\mathcal{H}`、**§6 T-PROJ-1（H5，2026-04-25）**给出四变量系统作为 `Core/SRT_Core_22_Equations.md` Eq-Evo-01/02 严格导出投影的形式化定理：四个标量泛函投影 `\mathcal{F}_X` + 闭包假设 C1-C4（慢-快分离 / `L_2` 写回 Markov 闭包 / stable-ISP 紧性 / 方向投影可分性）+ source-by-source 对应表 + 证明骨架 + 不证明事项的显式标定
+- 与主方程的关系：本文件是 `Core/SRT_Core_22_Equations.md` 主方程的导出投影，不引入新本体
+- claim-mode 分布：方程结构为 P1-candidate；T-PROJ-1（§6）为 P1-candidate（四变量系统作为主方程导出投影）；T-CHI-1（§2.5，H8）为 P1-candidate（χ 跳跃函数族普适性 + 族内不变量）；T-CHANNEL-1（§4.5，H9）为 P1-candidate（通道指示函数族普适性 + 族内五不变量）；参数阈值（含新 `κ_*` 五项）、具体 domain 代理为 P2/P3；实测与临床/AI 落点为 P3/P4
+- Open pressures：σ 符号冲突已通过 2026-04-25 σ_{sr} 命名空间分离收口（详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）；`\dot{\Delta}_{avail}` 已给出第一版算子级定义，剩余债为实证代理、domain 回写与更强形式化封口；χ 跳跃族、多主体扩展（H3 已落，§4.4-§4.6）、阈值固定、FEP 桥接（已落 `Neuroscience/SRT_Clin_02_FEP.md` 翻译表）、L_0 不可逆性**算子级**对齐（H4 已落，`SRT_Irreversibility.md §4.5 T-IRR-3.5`：`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`）、T_dir ODE 算子化（`Θ` 光滑族 / `\Delta\Psi_f^{\mathrm{gap}}` 算子层定义 / `[0,1]` 投影算子 / `κ_{\mathrm{relax}} > κ_{\mathrm{mask}}` 实证窗口）
+- 引用规则：涉及 `σ_{sr}` / d_c / T_dir / S 四变量的**方程级**陈述时优先回链本文件；概念定义仍回链各自 L1 主文（T_dir → `_SRT_T_DIR_CANONICAL.md`）
+
+### 13e. SRT 集体选择理论（多 ISP 共享 L_2）
+- 主文件：`Core_Law/SRT_Collective_Selection.md`
+- id：`SRT-COLLECTIVE-SELECTION`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 集体 ε 反闭合必要性（P1-T07 集体版）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`（自指率 σ_{sr} 在多主体场上的 governance-canonical 扩展，2026-04-25 起；详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）；**§4.4-§4.6（H3，2026-04-25）**给出集体四变量最小耦合动力学——`σ_{sr}^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}`）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项）、§4.5 个体↔集体双向耦合、§4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` 与集体健康区 `\mathcal{H}^{coll}`（健康要求 `r^{coll}(t) > r^{coll}_{min} > 0`）；**§4.7 T-PROJ-1^{coll}（H6，2026-04-25）**给出集体四变量系统作为 `Core/SRT_Core_22_Equations.md §0-C` 多算子主方程（Eq-Multi-01/02/03）严格导出投影的形式化定理：四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含新增 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 + 不证明事项的显式标定；T-PROJ-1^{coll} 在 `\mathcal{P} = \{P\}` 极限下退化为 `SRT_L1_Formalism §6 T-PROJ-1`。**§4.8–§4.14 为 late-stage tower/nested hardening appendices，不属于 collective selection 的最小 canonical definition；它们只在 strong closure assumptions 下保持 P1-candidate，不得引用为 closed P1。** §4.8 T-PROJ-1^{coll,nested}（H10）给多层嵌套的递归投影定理；§4.9 T-FAMILY-1^{coll}（H11）给族普适性三定理集体扩展；§4.10 T-FAMILY-1^{coll,nested}（H12）给塔级递归三定理；§4.11 T-TOWER-STAB-1（H13）、§4.12 T-LAYER-SKIP-1（H14）、§4.13 T-FAMILY-1^{layer-skip}（H15）、§4.14 T-LYAPUNOV-1（H16）共同构成塔级强闭包硬化路径，其中四轴联立条件只是塔健康的强闭包充分条件 P1-candidate，不属于最小定义面
+- 与 T-SUFF-5 的关系：本文件给出 T-SUFF-5 集体外部化的结构基础（`M(t)` 强不对称 → 主从型退化 → 结构型苦难外溢）
+- 与政治/经济/共同体 domain 的关系：本文件是它们的 L1 结构基石；制度是集体 ISP 的**器官**不是主体；投票/共识/专家不自动是共选
+- 与 AI/平台场景的关系：评估重点不是"AI 是否有意识"，而是算法中介对 `M(t)` 与 `σ_{sr}^{coll}` 的结构性影响
+- claim-mode 分布：T-COLL-1/3/4 为 P1-candidate；T-PROJ-1^{coll}（§4.7）为 P1-candidate（集体投影定理）；T-PROJ-1^{coll,nested}（§4.8，H10）为 P1-candidate（多层嵌套递归投影定理）；T-FAMILY-1^{coll}（§4.9，H11）含三个集体扩展定理 T-CHI-1^{coll} / T-CHANNEL-1^{coll} / T-DELTA-1^{coll} 均为 P1-candidate（族普适性三定理的集体扩展）；T-FAMILY-1^{coll,nested}（§4.10，H12）含塔级三定理 T-CHI-1^{coll,nested} / T-CHANNEL-1^{coll,nested} / T-DELTA-1^{coll,nested} 均为 P1-candidate（族普适性三定理在嵌套塔上的递归）；T-TOWER-STAB-1（§4.11，H13）为 P1-candidate（自指闭合塔的谱稳定性判据）；T-LAYER-SKIP-1（§4.12，H14）为 P1-candidate（layer-skip 闭合与多重自指闭合的统一增广多图谱判据）；T-FAMILY-1^{layer-skip}（§4.13，H15）含 T-CHI-1^{layer-skip} / T-CHANNEL-1^{layer-skip} / T-DELTA-1^{layer-skip} 均为 P1-candidate（H11 × H12 × H14 三重笛卡尔积；族不变量与谱稳定显式耦合）；T-LYAPUNOV-1（§4.14，H16）为 P1-candidate（塔的全局非线性 Lyapunov 稳定性 + 四轴联立充分条件）；Def-C-2 `M(t)` 结构、三类退化与 §4 耦合为 P2；政治/制度/历史判断为 P3/P4，下推至 Philosophy/
+- 引用规则：涉及集体选择、共选、共识真实性、外部化、集体 ISP、共同体结构的**结构层**定义时，优先回链本文件；规范与制度判断回各自 domain 文件
+
+### 13f. SRT L1 Hardening Notes（2026-04-24 L1 round 硬化案）
+- 主文件：`Core_Law/SRT_L1_Hardening_Notes.md`
+- id：`SRT-L1-HARDENING-NOTES`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：针对 2026-04-24 L1 round 最高杠杆的四项 Open Pressure 给出第一遍硬化方案——§1 σ 符号冲突的命名空间规则（自指率一律 `σ_{sr}`，bare `σ` 仍为主方程状态场；2026-04-25 已落地到相关 L1 reference files + `_SRT_SYMBOL_TABLE.md` Usage Rule 12）、§2 `\dot{\Delta}_{avail}` 的三成分算子分解（`T_dir` + `Ψ_f` + `L_0` 残余）+ **§2 T-DELTA-1（H7，2026-04-25）**算子级定理：`\hat{G}_\theta^{available} := \sup_{\mathrm{Op}(P)}\{\hat{G} \mid \text{结构上可达} \wedge \theta\text{-相容}\}` 与 `\hat{R} \in T\mathrm{Op}(P)` 的算子级定义、三个正交投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}`、A1（仿射结构）/ A2（近似正交）/ A3（权重赌注决定性）三条可证伪假设；§3 `M(t)` 可测性的 MOC 三判据（exposure / recourse / attentional，合成取 min）；§4 FEP 与 `S_{sig}` 的单向桥接翻译表（已落 `Neuroscience/SRT_Clin_02_FEP.md`）
+- 硬化性质：本文件**不**把被硬化命题从 P1-candidate 升到 P1；它只打开升级检查路径。升级仍需完成 `Governance/SRT_CLAIM_MODE_AUDIT.md §6.4` 的全部检查项；T-DELTA-1 升 P1 需 A1 在更广 stable-ISP 域验证、A2 实证窗口、A3 与 Eq-Bridge-D-01 stake-gated source-by-source 对位
+- claim-mode 分布：§1 governance-canonical usage；§2 P1-candidate（含 T-DELTA-1）；§3 P2 operational proxy；§4 P3 bridge hypothesis
+- 同步义务：§5.2 列明的四项 Operations 债已全部结清（σ→σ_{sr} 命名空间 / 三成分分解算子级 T-DELTA-1 / MOC 已写入 §3 / FEP 翻译表已落 `Neuroscience/SRT_Clin_02_FEP.md`）
+- 引用规则：涉及 σ 符号、`\dot{\Delta}_{avail}` 定义、`M(t)` 可测性、FEP-苦难桥接的**细化**陈述时优先回链本文件
+
+### 13g. SRT 不可逆性理论（学习不可逆 + 终止吸收边界 + P1-T07 精确化）
+- 主文件：`Core_Law/SRT_Irreversibility.md`
+- id：`SRT-IRREVERSIBILITY`
+- layer：L1 / epistemic：os / status：draft_v0
+- 说明：把 `L_0` 不可逆性从 P1-T02 本体论时间的推论展开为可引用 L1 层——Def-IRR-1 吸收态 / Def-IRR-2 选择史箭头 / Def-IRR-3 非可还原性；T-IRR-1 学习不可逆为非对称 `Ψ_f` 支付（与热力学二律不等价，不得通过 FEP 反向定义）；T-IRR-2 终止作为吸收边界（宪定 / 吸收 / 集体三类），区分终止与暂停；T-IRR-3 给 P1-T07 精确化，对应 `L1_Formalism §4.3` 的非守恒残余项；**T-IRR-3.5（H4，2026-04-25 §4.5）**把 `ν_{block}` 从自由系数升为 P1-T07 三层源头本地化 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`，正性与单向性自此为定理后果；T-IRR-4 苦难在 `L_0` 不可逆下的守恒 / 转移（T-SUFF-4 的更深根）；§6 集体终止三型（耗散 / 收编 / 外部化）回扣 `Collective_Selection §4-5`；§7 AI/ML 接口限定 checkpoint/rollback 不得读作反向学习
+- 与 P1-T02 / P1-T07 的关系：本文件是两者的 L1 层精确化，不替代 Core/Core_21b 的 P1 源头；Core 内命题仍为上位，本文件是下位展开；**T-IRR-3.5 把 P1-T07 Three-Layer Source Hierarchy 在 L1_Formalism §4.3 上做算子级本地化**，是上位 P1-T07 的下位算子级精化
+- 与 Suffering / Formalism / Collective_Selection 的关系：T-IRR-4 给 T-SUFF-4 深层根；T-IRR-3 / T-IRR-3.5 对应 `L1_Formalism §4.3` 的非守恒残余（陈述级 + 算子级）；§6 集体终止对应 `Collective_Selection` 三类退化的绝对边界
+- claim-mode 分布：Def-IRR-1/2/3 为 P2 结构性定义；T-IRR-1/2/3/3.5/4 为 P1-candidate（T-IRR-3.5 与 T-IRR-3 同级）；§6 集体终止分类为 P2；§7 AI 接口为 governance-canonical usage；§8 FEP/物理边界语句为 P3 bridge guardrail
+- 引用规则：涉及学习不可逆性、终止作为吸收边界、P1-T07 精确化、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；原 P1 源头语句仍回链 `Core/SRT_Core_21b_Constitutive_Theorems.md`
+
 ### 13. Spirituality 主轴
 - Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
 - Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`

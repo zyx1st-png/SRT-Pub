@@ -32,6 +32,24 @@ dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, 
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Canonical Cross-Link: Occlusion Dynamics
+
+- 本文件涉及遮蔽、d 收窄、B 期锁死、缺口感知、干预窗口、解耦触发与结构性恶的段落（§3.1d Integration Note、§7 Deep Implications、§Multiaxial Responsibility、§Integration Note 2026-04-18/2026-04-19 等），结构层回链 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）。
+- 本文件负责能动性/责任的规范性展开；A/B 分期、d_c 阈值语义、五类缺口残余、四类干预窗口、四类解耦触发、恶的三判据结构性定义不在本文件重复，以 canonical 为准。
+
+## Canonical Cross-Link: Suffering Theory
+
+- 本文件涉及自我扭曲、痛苦、责任地理、d↑/d↓ 不确定性支付等段落中对苦难作为结构对象的引用，结构层回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
+- 本文件负责苦难在规范序上的责任与能动性读法；疼痛 vs 苦难的范畴区分、信号型 vs 结构型两型、四类现象学分型、反最小化原则与集体外部化耦合由 canonical 承担。
+- 特别：T-SUFF-4 反最小化原则是"痛苦最小化作为伦理目标不充分"的结构层根据，本文件的规范论述应与之一致，不得独立降级或架空。
+
+## Canonical Cross-Link: Irreversibility (Termination Interface)
+
+- 本文件涉及死亡、终止、不可逆伤害、责任在 `L_0` 不可逆下的形态、学习作为单向沉淀等段落，结构层回链 `Core_Law/SRT_Irreversibility.md`（`SRT-IRREVERSIBILITY`）。
+- 本文件负责规范性读法（责任、悼、复仇、恢复、善后）；T-IRR-1 学习不可逆的非对称 `Ψ_f` 支付、T-IRR-2 终止作为吸收边界（宪定 / 吸收 / 集体三类）、**终止 ≠ 暂停**、T-IRR-4 苦难在 `L_0` 不可逆下不可无代价消除，均由 canonical 承担，不在本文件重写。
+- 特别：本文件不得把"死亡"与"系统暂停/休眠/冻存"混读；T-IRR-2 严格区分终止与暂停的本体论地位。
+
 # Part A: Formal Axioms (形式化公理)
 
 

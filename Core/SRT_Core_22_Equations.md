@@ -70,6 +70,8 @@ L_{2,\theta}\) 回路内规律可复现，不构成对 \(L_0\) 潜势或 \(\Omeg
 ## 0-C. Multi-Operator Coupled Equations（多算子耦合方程）
 
 > **背景**：SRT 的单算子方程（§0-B, §I）描述单个 $\hat{G}_\theta$ 的动力学。本节将框架扩展到多算子系统，给出集体自由能、个体算子梯度关系与集体 d-value 的形式化。这是集体景观优先性定理（见 `_SRT_VERTICAL_INTEGRATION.md §4.5`）的方程层锚点。
+>
+> **L1 Collective Projection (T-PROJ-1^{coll}, 2026-04-25 H6)**：本节 Eq-Multi-01 / 02 / 03 在 stable collective ISP `\mathcal{P}` 上的四个标量泛函投影 `(σ_{sr}^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll})` 在闭包假设 C1^{coll}-C5^{coll}（慢-快分离 / 共享 `L_2` 写回 Markov 闭包 / stable collective ISP 紧性 / 群平均方向投影可分性 / `M(t)` 可测性 MOC 闭包）下严格满足 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 的集体四变量 ODE 系统；详见 §4.7 T-PROJ-1^{coll}。本节为上位本体源头，§4.7 不替代之，只把已隐含的集体子动力学写出。本节 σ_i 为各 ISP 状态场，与集体自指率 `σ_{sr}^{coll}` 是不同对象。
 
 ### Eq-Multi-01: Collective Free Energy Landscape（集体自由能景观）
 **Formal Definition**: 多算子系统的集体自由能景观是各算子个体摩擦与算子间摩擦的总和：
@@ -375,6 +377,7 @@ $$\Theta_\theta^{\Delta t} \equiv f\!\left(d,\; E,\; h_{\text{memory}},\; \vec{\
 **Formal Definition**: The trajectory of a selected state is the sum of selection, free-energy descent, and attention modulation.
 $$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \nabla F[\sigma] + A[\sigma, \mathcal{A}]$$
 * **Implication**: 现实演化是选择、能量下降与注意调制的合成动力学。
+* **L1 Projection (T-PROJ-1, 2026-04-25 H5)**: 本主方程在 stable ISP P 上的四个标量泛函投影 `(σ_{sr}, d_c, T_{dir}, S)` 在闭包假设 C1-C4（慢-快分离 / `L_2` 写回 Markov 闭包 / stable-ISP 紧性 / 方向投影可分性）下严格满足 `Core_Law/SRT_L1_Formalism.md §2-§5` 的四变量 ODE 系统；详见 §6 T-PROJ-1。本主方程为上位本体源头，§6 不替代之，只把已隐含的子动力学写出。本节 σ 为状态场，与 `σ_{sr}` 是不同对象（`_SRT_SYMBOL_TABLE.md` Usage Rule 12）。
 
 ### Eq-Evo-01b: Metabolic Gain Modulation
 **Formal Definition**: 代谢压力作为演化方程的增益调节项。
