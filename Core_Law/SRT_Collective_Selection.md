@@ -975,7 +975,7 @@ T-TOWER-STAB-1（§4.11）是 T-LAYER-SKIP-1（§4.12）在以下条件下的**�
 2. **不**承诺 layer-skip 的"信息"含义——本节只给"塔级耦合的拓扑结构"，不分析为什么某些 layer-skip 在某 domain 出现而另一些不出现（domain 实证 + 历史叙事问题）
 3. **不**覆盖**时间变化的 layer-skip**（如某 `K^{(n\to m)}(t)$ 在不同时段强度不同）——本节假设 `K$ 准静态（C8^{cross-stab} 的扩展）；快变 layer-skip 需进一步带时间扰动谱分析
 4. **不**给出 Lyapunov 全局非线性稳定性（与 H13 §4.11.6 第 5 项相同的局限保留）
-5. **不**完成 layer-skip × 族普适性 / 算子级（χ / ψ / Δ）的笛卡尔积扩展——`\Pi^{(n\to m)}$ 对各 χ^{(n)} / ψ^{(n)} / Δ^{(n)} 族不变量的作用待独立 P1-candidate 验证（属 H11 + H12 + H14 三重笛卡尔积，留作后续）
+5. ~~**不**完成 layer-skip × 族普适性 / 算子级（χ / ψ / Δ）的笛卡尔积扩展——`\Pi^{(n\to m)}$ 对各 χ^{(n)} / ψ^{(n)} / Δ^{(n)} 族不变量的作用待独立 P1-candidate 验证（属 H11 + H12 + H14 三重笛卡尔积，留作后续）~~ **已收口（H15，2026-04-26）**：本文件 §4.13 T-FAMILY-1^{layer-skip} 给三重笛卡尔积扩展；新增 P-univ-7^{layer-skip} / Q-univ-7^{layer-skip} / A6^{layer-skip} 三条 layer-skip-相容性条件 + 12 类病理签名的具体族破坏路径表 + 族不变量与谱稳定显式耦合关系
 
 #### §4.12.8 T-LAYER-SKIP-1 的结构性意义
 
@@ -987,6 +987,114 @@ T-TOWER-STAB-1（§4.11）是 T-LAYER-SKIP-1（§4.12）在以下条件下的**�
 | Layer-skip 失稳特定签名 | 缺失 | §4.12.5 三类（bypass / aliasing / resonance）+ 与 H13 三方向正交，给 12 类塔级病理签名 |
 
 **P1-candidate 地位的根据**：T-LAYER-SKIP-1 把 "layer-skip + 多重自指闭合" 从两项独立开放点统一收口；T-TOWER-STAB-1 自动是其特例。要升 P1：(a) 具体 `K^{(n\to m)}$ 在 domain 的实证（政治制度 / AI 平台 / 全球叙事）；(b) 时间变化 layer-skip 的扰动谱；(c) Lyapunov 全局；(d) layer-skip × 族普适性笛卡尔积扩展。
+
+### §4.13 T-FAMILY-1^{layer-skip}：layer-skip × 族普适性三定理（H15，2026-04-26）
+
+> **Status**：本节把 H11 §4.9 / H12 §4.10 的族普适性三定理（χ / ψ / Δ）与 H14 §4.12 的 layer-skip 谱判据合成笛卡尔积，验证族不变量在任意 layer-skip + 多重 K 闭合下的保持。**Claim level: P1-candidate**。
+>
+> **Closes**：H14 §4.12.7 第 5 项（"layer-skip × 族普适性 χ/ψ/Δ 笛卡尔积"）；H10 §4.10.6 第 4 项剩余部分（layer-skip × 族普适性的塔级版）。
+
+#### §4.13.1 三重笛卡尔积闭包堆栈
+
+塔级族普适性三定理在 layer-skip 下的成立需要堆栈：
+
+- **H10/H12 嵌套闭包**：C1^{(n)}-C5^{(n)} 各层 + C6^{nested}
+- **H11/H12 集体扩展闭包**：C7^{M-stab,(n)} 各层 + C8^{cross-stab}
+- **H14 layer-skip 谱稳定闭包**：`\rho(\mathbf{A}_{tower}) < 1 - \delta_{stab}^{global}$
+- **H15 新增三条 layer-skip-相容性条件**：
+  - **P-univ-7^{layer-skip}**：每个 `K^{(n'\to n)}$ 对 `\sigma_{sr}^{(n)}$ 的贡献作加性平移源进入，不进入 `\chi^{coll,(n)}$ 内部参数；多重 `K$ 同时作用时贡献以**线性叠加**方式进入（不引入二阶非线性扰动）
+  - **Q-univ-7^{layer-skip}**：每个 `K^{(n'\to n)}$ 对 `d^{(n)}$ / `S^{(n)}$ 的贡献与 `\psi^{coll,(n)}$ 加性独立；多重 `K$ 同时作用时不破坏 Q-univ-1+2 饱和性
+  - **A6^{layer-skip}**：每个 `K^{(n'\to n)}$ 对 `\Delta^{(n)}$ 引入新维度 `w_{ls}^{(n'\to n)}\|K^{(n'\to n)}\|$，权重 `w_{ls}^{(n'\to n)}$ 由 layer-skip stake 结构决定（不依赖外部规约）
+
+#### §4.13.2 T-CHI-1^{layer-skip}：layer-skip 下的 χ 族不变量
+
+每层 `n` 的 `\sigma_{sr}^{coll,(n)}$ ODE 在 layer-skip 下含**四类源**：
+
+$$
+\frac{d\sigma_{sr}^{coll,(n)}}{dt} \;=\; \underbrace{\text{H11 同层项}}_{\alpha^{(n)}w^{(n)}\phi(\sigma) + \lambda_M^{(n)}\mathrm{tr}\,M^{(n)}} \;+\; \underbrace{\text{H12 邻层项}}_{\sum_k\lambda^{(n-1\to n)}_M\mathrm{tr}\,M^{(n-1\to n),k}} \;+\; \underbrace{\boldsymbol{\text{H15 layer-skip 项}}}_{\sum_{n'\ne n,n\pm 1}\lambda^{(n'\to n)}_K\,\mathrm{tr}\,K^{(n'\to n)}} \;+\; \cdots
+$$
+
+**陈述（P1-candidate）**：在 §4.13.1 闭包堆栈下，T-CHI-1 (i)-(iv) 四个不变量在每层 `n$ 保持，且**塔级病理传染**（H10 §4.8.6 (ii)）通过 layer-skip 的额外路径**强化但不改变方向性**——即 layer-skip 提供更短的病理传播路径，但传播方向（朝 `\sigma_{sr}^{*2}\to 1$ 病理吸引子）不变。
+
+**证明骨架**：layer-skip 项在 P-univ-7^{layer-skip} 下作加性平移源进入；与 H11 P-univ-5^{coll}、H12 P-univ-6^{nested} 共同保证 χ 不进入 layer-skip 项内部；中值定理与 §2.5 (i)-(iv) 同理给出双稳态、病理吸引子、致命 L_2、相变方向四个不变量。**关键限制**：当 H14 谱判据失效（`\rho(\mathbf{A}_{tower}) \ge 1$），`\sigma_{sr}^{(n)}$ 沿不稳定方向 runaway，双稳态结构在动力学上**被破坏**（不动点不再被达到）；此时 T-CHI-1^{layer-skip} 仅在静态分析层面保持，动力学层面退化为 P3 现象学。这把族普适性与稳定性首次**显式耦合**：族不变量的有效性以 H14 谱稳定为前提。
+
+#### §4.13.3 T-CHANNEL-1^{layer-skip}：layer-skip 下的 ψ 族不变量
+
+每层 `n` 的 `S^{coll,(n)}$ 两型 ODE 在 layer-skip 下含**四类源**：同层（H11）+ 邻层（H12）+ **layer-skip 项**：
+
+$$
+\boldsymbol{\nu^{(n'\to n)}_{ls}\sum_{n'\ne n,n\pm 1}\|K^{(n'\to n)}_{ext}\|}
+$$
+
+**陈述（P1-candidate）**：在 §4.13.1 闭包堆栈下，T-CHANNEL-1 (i)-(v) 五个不变量在每层 `n$ 保持（modulo `O(w_{tr}^{coll,(n)})$）；**致命 `L_2` 跨层级传染**（H10 §4.8.6 (iv)）通过 layer-skip 获得**捷径路径**——即 `S_{str}^{(n)}$ 不必经过中间层逐级上行，可通过 `K^{(n\to m)}$ 直接到达 `\mathcal{P}^{(m)}$；T-IRR-3.5 单向性在 layer-skip 路径上同样保持（来自 P1-T07 Layer 2 的算子级根据，与拓扑路径无关）。
+
+**与 H14 §4.12.5 三类失稳模式的整合**：layer-skip 下 ψ 族不变量保持的**结构条件**与 H14 §4.12.5 三类失稳模式互补——bypass-induced chatter / aliasing-amplification / coupling-resonance 都是"族不变量保持但谱稳定失效"情形（系统不再收敛到健康吸引子，但 ψ 族层面无矛盾）。两者合起来给出：layer-skip 下塔的健康要求**同时**满足族不变量（H15）+ 谱稳定（H14）。
+
+#### §4.13.4 T-DELTA-1^{layer-skip}：layer-skip 下的 Δ 算子级
+
+每层 `n` 的 `\Delta^{coll,(n)}$ 在 layer-skip 下含**四个维度**：同层三成分 + H11 集体维度 + H12 跨尺度维度 + **新增 layer-skip 维度**：
+
+$$
+\Delta^{coll,(n)} \;=\; \cdots \;+\; \underbrace{\boldsymbol{\sum_{n'\ne n, n\pm 1}w_{ls}^{(n'\to n)}\|K^{(n'\to n)}\|_{ls}}}_{\text{H15 layer-skip 维度}} \;+\; o(1)
+$$
+
+其中：
+
+$$
+\|K^{(n'\to n)}\|_{ls} \;:=\; \sqrt{\alpha_{ls}^2(\mathrm{tr}\,K)^2 + \beta_{ls}^2\|K_{asym}\|^2 + \gamma_{ls}^2\|K_{ext}\|^2}
+$$
+
+**陈述（P1-candidate）**：在 A1^{coll}-A5^{cross} + **新增 A6^{layer-skip}** 下，每层 `\Delta^{coll,(n)}$ 仍保持 T-DELTA-1 三性质（不由 `S_{sig}^{coll,(n)}$ 登记通道决定 / 同层三成分 + 集体 M + 跨尺度 M + layer-skip K 总额守恒 / `|\mathcal{K}|=0$ 退化为 H12 单层）。`\dot{\Delta}_{avail}^{coll,(n)}$ 多了 layer-skip 维度的时间导数项 `\dot{w}_{ls}^{(n'\to n)}\|K^{(n'\to n)}\|_{ls} + w_{ls}^{(n'\to n)}\frac{d}{dt}\|K^{(n'\to n)}\|_{ls}$。
+
+#### §4.13.5 T-FAMILY-1^{layer-skip} 综合陈述
+
+**T-FAMILY-1^{layer-skip}**：在层级塔 `\{\mathcal{P}^{(n)}\}_{n=0}^N$ 上含任意 layer-skip 集合 `\mathcal{K}$（包括多重自指闭合），若 §4.13.1 三重笛卡尔积闭包堆栈成立，则：
+
+(i) **族不变量在静态层面保持**：T-CHI-1^{layer-skip} (i)-(iv) / T-CHANNEL-1^{layer-skip} (i)-(v) / T-DELTA-1^{layer-skip} (1)-(3) 在每层独立成立
+(ii) **layer-skip 以加性 / 外溢 / 维度方式进入**：不破坏各层族普适性，作为"额外耦合源"扩展每层 ODE
+(iii) **塔级病理 / 致命 L_2 传染**通过 layer-skip 获得捷径但不改变方向性
+(iv) **族不变量与谱稳定显式耦合**：`\rho(\mathbf{A}_{tower}) < 1$ 时族不变量动力学层面有效；失效时退化为静态分析层面（动力学被 runaway 干扰）
+(v) **多重退化关系**：`\mathcal{K} = \emptyset$ → H12 T-FAMILY-1^{coll,nested}；进一步 `N=1$ → H11 T-FAMILY-1^{coll}；`N=1 \wedge \mathcal{P}=\{P\}$ → H7/H8/H9 单 P 版
+
+#### §4.13.6 与 H14 12 类塔级病理签名的精确对位
+
+H14 §4.12.5 给出 12 类塔级病理签名（4 方向 × 3 拓扑机制）。本节给出每类病理签名在族不变量层面的具体破坏路径：
+
+| 12 类病理签名 | 族不变量破坏路径 |
+|---|---|
+| 沿 σ_{sr} × bypass | T-CHI-1 (i) 双稳态被中间层 σ chatter 破坏 |
+| 沿 σ_{sr} × aliasing | T-CHI-1 (ii) 病理吸引子在频域被混叠路径推到非物理区 |
+| 沿 σ_{sr} × resonance | T-CHI-1 (i) 双稳态 + (iv) 相变方向被共振环路逆转 |
+| 沿 d_c × bypass | T-CHANNEL-1 (i) 两型分裂被中间层 d_c chatter 破坏 |
+| 沿 d_c × aliasing | T-CHANNEL-1 (ii) 反最小化在混叠路径下出现伪反例 |
+| 沿 d_c × resonance | T-CHANNEL-1 (iii) 单向性被共振环路逆转（罕见但可能：极端嵌套 K 配置）|
+| 沿 S_{str} × bypass | T-CHANNEL-1 (iv) 致命 L_2 判据被旁路绕过 |
+| 沿 S_{str} × aliasing | T-DELTA-1 (1) Δ_{avail} 不由登记通道决定的论证被混叠扰动 |
+| 沿 S_{str} × resonance | T-DELTA-1 (2) 总额守恒被共振环路放大破坏 |
+| 沿 T_{dir} × bypass | T-CHANNEL-1 (v) 投影分裂在 bypass 旁路下出现非投影分量 |
+| 沿 T_{dir} × aliasing | T-CHI-1 (iii) 致命 L_2 在频域混叠下被错误诊断 |
+| 沿 T_{dir} × resonance | T-DELTA-1 (3) 退化关系在共振下不收敛 |
+
+此 12 类对位是**族不变量与谱稳定耦合**的具体后果——每类病理签名在不同族定理上有不同破坏路径，给"诊断塔级病理时应优先看哪个族不变量"提供一阶指引。
+
+#### §4.13.7 T-FAMILY-1^{layer-skip} 不证明的事项
+
+1. **不**给出 P-univ-7^{layer-skip} / Q-univ-7^{layer-skip} / A6^{layer-skip} 的具体验证窗口
+2. **不**承诺族不变量与谱稳定的耦合是**充分必要**——本节给"谱稳定 ⟹ 族动力学有效"的必要方向；反向（族静态有效 ⟹ 谱稳定）不成立
+3. **不**覆盖**多重族失效叠加**——若两类失效模式（如 σ × bypass 与 d_c × resonance）同时发生，§4.13.6 表给单类破坏路径，未分析叠加效应
+4. **不**给出**时间变化 layer-skip × 族普适性**——准静态假设保留（与 H14 §4.12.7 第 3 项相同限制）
+5. **不**给出**族不变量 + 谱稳定 + Lyapunov 三重耦合的全局 P1 形式**——这是后续轮次的最终统一目标
+
+#### §4.13.8 T-FAMILY-1^{layer-skip} 的结构性意义
+
+| 主张 | 升级前 | 升级后 |
+|---|---|---|
+| Layer-skip × 族普适性是开放问题 | H14 §4.12.7 第 5 项 | T-FAMILY-1^{layer-skip} 在 §4.13 给 P1-candidate |
+| 族不变量与谱稳定的关系 | 隐含独立 | §4.13.5 (iv) 显式耦合：动力学有效性以谱稳定为前提 |
+| 12 类病理签名的具体破坏路径 | H14 给签名分类，不给破坏路径 | §4.13.6 给每类签名的族不变量破坏路径 |
+| Layer-skip 维度在 Δ 中的位置 | 缺失 | §4.13.4 `w_{ls}^{(n'\to n)}\|K^{(n'\to n)}\|_{ls}$ 显式 |
+
+**P1-candidate 地位的根据**：T-FAMILY-1^{layer-skip} 把 H11 × H12 × H14 三重笛卡尔积统一收口；族普适性 / 算子级三定理在塔级 + layer-skip + 多重 K 闭合下的成立条件首次完整刻画。要升 P1：(a) §4.13.1 三组新条件 P-univ-7 / Q-univ-7 / A6 的 domain 实证；(b) §4.13.6 12 类破坏路径的实证检验；(c) 多重族失效叠加分析；(d) 与 Lyapunov 全局非线性的最终统一。
 
 ---
 
