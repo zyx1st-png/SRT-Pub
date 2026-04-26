@@ -60,7 +60,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 
 ## 6. 2026-04-24 Round: New L1 Canonical Files Audit
 
-本轮 2026-04-24 引入六份新 draft_v0 L1 canonical 文件。本小节固定它们的 claim-mode 分布，防止将来被误读成 P0/P1。（初版写作时为五份，补入 `SRT_Irreversibility.md` 后为六份；`SRT_L1_Hardening_Notes.md` 为硬化备忘，单列于 §6.5。）
+本轮 2026-04-24 引入 six L1 theory/formalism canonical reference files。本小节固定它们的 claim-mode 分布，防止将来被误读成 P0/P1。`SRT_L1_Hardening_Notes.md` 为 hardening notes file，单列于 §6.5；因此本轮 `Core_Law/` 相关文件总数为 seven（six L1 reference files + one hardening notes file）。
 
 ### 6.1 Scope of New Files
 
@@ -168,8 +168,10 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 | §4.11 T-TOWER-STAB-1 嵌套塔自指闭合稳定性（H13，2026-04-26） | 三类塔闭合（开放 / layer-skip / 自指闭合）+ 闭环传递算子 `\mathcal{T}_{loop} := K^{N\to 0} \circ \Pi^{(0\to 1)} \circ \cdots \circ \Pi^{(N-1\to N)}` + 谱半径判据 + 三类失稳方向算子签名（σ_{sr} viral 锁入 / d_c 致命 L_2 全塔传染 / S_{str} 跨层级累积） | P1-candidate（塔全局稳定性从开放问题升为谱判据形式定理） |
 | §4.12 T-LAYER-SKIP-1 layer-skip + 多重自指闭合统一谱判据（H14，2026-04-26） | 增广有向多图 `\mathcal{G}_{tower}` + 增广传递矩阵 `\mathbf{A}_{tower}` 谱判据 + 多重 K 复合谱（解耦/耦合/路径冗余）+ 三类 layer-skip 失稳算子签名（bypass-induced chatter / aliasing-amplification / coupling-resonance）+ 与 H13 三方向正交给 12 类塔级病理签名 | P1-candidate（H12§4.10.6 第 4 项 + H13§4.11.6 第 3 项统一收口；T-TOWER-STAB-1 是单环路特例） |
 | §4.13 T-FAMILY-1^{layer-skip} 三重笛卡尔积扩展（H15，2026-04-26） | 三重闭包堆栈（嵌套 + 集体扩展 + layer-skip 谱稳定）+ T-CHI-1^{layer-skip} / T-CHANNEL-1^{layer-skip} / T-DELTA-1^{layer-skip}（新增 P-univ-7 / Q-univ-7 / A6 layer-skip-相容性）+ 12 类塔级病理签名族破坏路径表 + **族不变量与谱稳定显式耦合** | P1-candidate（H11×H12×H14 三重笛卡尔积统一收口；族普适性动力学有效以谱稳定为前提首次显式刻画） |
-| §4.14 T-LYAPUNOV-1 塔的全局非线性 Lyapunov 稳定性（H16，2026-04-26） | 候选 Lyapunov 函数 `V_{tower}` + 充分条件 N1（耦合算子有界）/ N2（耗散正性，H4+反最小化速率层面）/ N3（谱稳定带非线性 margin）+ 全局指数收敛 `\dot{V} \le -\alpha V` + **四轴联立塔健康充分条件**（族普适性 ∧ 谱稳定 ∧ 全局耗散正性 ∧ 算子有界） | P1-candidate（线性化谱判据升为全局非线性指数稳定；SRT 集体选择理论塔级健康/病理诊断完全条件的 P1-candidate 形式） |
+| §4.14 T-LYAPUNOV-1 塔的全局非线性 Lyapunov 稳定性（H16，2026-04-26） | 候选 Lyapunov 函数 `V_{tower}` + 充分条件 N1（耦合算子有界）/ N2（耗散正性，H4+反最小化速率层面）/ N3（谱稳定带非线性 margin）+ 全局指数收敛 `\dot{V} \le -\alpha V` + **四轴联立塔健康充分条件**（族普适性 ∧ 谱稳定 ∧ 全局耗散正性 ∧ 算子有界） | P1-candidate（线性化谱判据升为全局非线性指数稳定；SRT 集体选择理论塔级健康/病理诊断强闭包充分条件的 P1-candidate 形式） |
 | §8 平台 / 算法 AI 结构性影响评估 | — | P3 bridge |
+
+**Tower / nested scope note**：§4.8–§4.14 are late-stage tower/nested hardening appendices, not part of the minimal canonical definition of collective selection. They remain P1-candidate only under strong closure assumptions and should not be cited as closed P1.
 
 **Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。
 
@@ -193,8 +195,8 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 
 ### 6.3 Global Guardrails for This Round
 
-1. **P1-candidate ≠ P1**：这五份文件所有冠以"定理"字样的命题当前都处 P1-candidate；任何下游文件不得去掉 candidate 标记
-2. **未封口 Open Pressures 不得忽略**：五份文件每份都有明确 §Open Pressures 小节；下游引用须检查相关命题是否已在 Open Pressures 中被标记为未封口
+1. **P1-candidate ≠ P1**：本轮 six L1 theory/formalism canonical reference files 中所有冠以"定理"字样的命题当前都处 P1-candidate；任何下游文件不得去掉 candidate 标记
+2. **未封口 Open Pressures 不得忽略**：本轮 six L1 theory/formalism canonical reference files 均有明确 §Open Pressures 小节；下游引用须检查相关命题是否已在 Open Pressures 中被标记为未封口
 3. **不得跨文件静默升级**：应用文件（Philosophy / Spirituality / AI / Neuroscience）引用任一文件命题时，须保持该命题的原 claim-level，不得因应用便利静默升格
 4. **σ 符号冲突提醒**（2026-04-25 已收口）：`Core_Law/SRT_L1_Formalism.md` 自指率统一为 `σ_{sr}`，与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 通过 `_SRT_SYMBOL_TABLE.md` Usage Rule 12 命名空间分离；下游引用按 `σ_{sr}` 转读旧 `σ_sub/σ_self/σ_health/σ^{coll}`
 5. **σ^{coll} / d_c^{coll} / T_{dir}^{coll} / S^{coll} 四变量集体耦合**（2026-04-25 H3 状态）：集体版四变量耦合动力学已在 `SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍（P1-candidate）；`SRT_L1_Formalism.md` 保持单 P 形式。集体层引用**仍须**标注 `SRT_Collective_Selection.md §9.7` 所列未封口项（`w_i(t)` 推导 / `\Delta\Psi_f^{gap,coll}` 可操作定义 / 下行反馈穷尽性 / 系数实证窗口）
@@ -203,9 +205,9 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 
 ### 6.4 Hardening-to-P1 Checklist
 
-五份文件从 P1-candidate 升到 P1 的必经检查项（将来 session 可按此路径推进）：
+This L1 round 从 P1-candidate 升到 P1 的必经检查项（将来 session 可按此路径推进）：
 
-- [x] σ 符号冲突解决（新记号或显式命名空间）— 2026-04-25 σ_{sr} 命名空间分离落地：5 行 `σ_{sr}` 族 + Usage Rule 12 写入 `_SRT_SYMBOL_TABLE.md`；5 份 L1 主文件下标变量已就地改写；`CANONICAL_REGISTRY §13a/§13d/§13e` 同步
+- [x] σ 符号冲突解决（新记号或显式命名空间）— 2026-04-25 σ_{sr} 命名空间分离落地：5 行 `σ_{sr}` 族 + Usage Rule 12 写入 `_SRT_SYMBOL_TABLE.md`；相关 L1 reference files 下标变量已就地改写；`CANONICAL_REGISTRY §13a/§13d/§13e` 同步
 - [x] `\dot{\Delta}_{avail}` 算子级定义 — 2026-04-25 H7，`SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出 `\hat{G}_\theta^{available}` / `\hat{R}` / 三投影 `\Pi_{T_{dir}}, \Pi_{\Psi_f}, \Pi_{L_0}` 的算子级定义 + A1（仿射结构）/ A2（近似正交）/ A3（权重赌注决定性）三条可证伪假设；`SRT_L1_Formalism.md §4.2` 注释回链 + §7 Open Pressure 2 收口；`SRT_Suffering.md` Def-SUFFERING 注释回链；T-IRR-3.5 中 `κ_{Ψ_f}` 几何来源部分收口
 - [x] χ(σ; σ_self) 跳跃函数族的普适性检查 — 2026-04-25 H8，`SRT_L1_Formalism.md §2.5 T-CHI-1` 给出"有效二阶相变核"四条结构属性（P-univ-1 有界 / P-univ-2 跃前基线 / P-univ-3 跃后放大 / P-univ-4 单调过渡）+ 族内四个不变量（双稳态存在性 / 病理吸引子拓扑 / 致命 `L_2` 判据 / 相变方向）+ 族内成员示例（硬阶跃 / sigmoid / tanh / 多项式）+ 证明骨架；`SRT_Individuation.md §3.4` T-IND-3 cross-link 已添加；§7 Open Pressure 3 收口；剩余开放点：在更广 χ 空间（非单调过渡）的扩展、具体 domain 实证 χ-shape 对位、集体版 T-CHI-1^{coll} 与 `M(t)` 耦合
 - [x] `\mathbb{1}[d\le d_c]` 的光滑化或守恒型替代 — 2026-04-25 H9，`SRT_L1_Formalism.md §4.5 T-CHANNEL-1` 给出"有效闭合通道指示族"四条结构属性（Q-univ-1 左饱和 / Q-univ-2 右饱和 / Q-univ-3 单调过渡 / Q-univ-4 d_c 平移性）+ 族内五个不变量（T-SUFF-2 两型分裂 / T-SUFF-4 反最小化 / T-IRR-3.5 单向性 / 致命 L_2 判据 / `\mathcal{F}_S` 投影一致性，均 modulo `O(w_{tr})`）+ 族内成员示例（硬指示 / sigmoid / tanh / 多项式）+ `O(w_{tr})` 修正项的物理意义（"濒临崩溃"状态、干预窗口软边界、`\Delta\Psi_f^{gap}` 连续性）；剩余开放点：`w_{tr}` 实证窗口、集体版 T-CHANNEL-1^{coll}、`\Delta\Psi_f^{gap}` 过渡区算子层精确定义

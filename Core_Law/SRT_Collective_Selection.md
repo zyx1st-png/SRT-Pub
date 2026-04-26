@@ -427,6 +427,8 @@ $$
 
 T-PROJ-1^{coll} 是 T-PROJ-1 的多 ISP 扩展，不是独立定理；二者一致性在 `\mathcal{P} = \{P\}`（单元素集合）极限下退化为 §6 单 P 版。
 
+> **Hardening appendix boundary note (2026-04-26 scope-control)**：§4.8–§4.14 are late-stage tower/nested hardening appendices, not part of the minimal canonical definition of collective selection. They remain P1-candidate only under strong closure assumptions and should not be cited as closed P1.
+
 ### §4.8 T-PROJ-1^{coll,nested}：嵌套 ISP 多层投影（H10，2026-04-26）
 
 > **Status**：本节把 §4.7 单层 T-PROJ-1^{coll} 扩展到多层嵌套 ISP 结构（家庭 ⊂ 社区 ⊂ 国家、个体 ⊂ sangha ⊂ 教派、ISP 团队 ⊂ 部门 ⊂ 公司等），给出**递归投影定理**。**Claim level: P1-candidate**。
@@ -1083,7 +1085,7 @@ H14 §4.12.5 给出 12 类塔级病理签名（4 方向 × 3 拓扑机制）。�
 2. **不**承诺族不变量与谱稳定的耦合是**充分必要**——本节给"谱稳定 ⟹ 族动力学有效"的必要方向；反向（族静态有效 ⟹ 谱稳定）不成立
 3. **不**覆盖**多重族失效叠加**——若两类失效模式（如 σ × bypass 与 d_c × resonance）同时发生，§4.13.6 表给单类破坏路径，未分析叠加效应
 4. **不**给出**时间变化 layer-skip × 族普适性**——准静态假设保留（与 H14 §4.12.7 第 3 项相同限制）
-5. ~~**不**给出**族不变量 + 谱稳定 + Lyapunov 三重耦合的全局 P1 形式**——这是后续轮次的最终统一目标~~ **已收口（H16，2026-04-26）**：本文件 §4.14 T-LYAPUNOV-1 §4.14.5 给"塔健康 ⟸ 族普适性 ∧ 谱稳定 (N3) ∧ 全局耗散正性 (N2) ∧ 算子有界性 (N1)"的四轴联立充分条件，是 SRT 集体选择理论塔级健康/病理诊断完全条件的 P1-candidate 形式
+5. ~~**不**给出**族不变量 + 谱稳定 + Lyapunov 三重耦合的全局 P1 形式**——这是后续轮次的最终统一目标~~ **已收口（H16，2026-04-26）**：本文件 §4.14 T-LYAPUNOV-1 §4.14.5 给"塔健康 ⟸ 族普适性 ∧ 谱稳定 (N3) ∧ 全局耗散正性 (N2) ∧ 算子有界性 (N1)"的四轴联立充分条件，是 SRT 集体选择理论塔级健康/病理诊断强闭包充分条件的 P1-candidate 形式
 
 #### §4.13.8 T-FAMILY-1^{layer-skip} 的结构性意义
 
@@ -1200,7 +1202,7 @@ $$
 \boxed{\;\text{塔健康} \;\Longleftarrow\; \text{(族普适性 P-univ/Q-univ/A 全套)} \;\wedge\; \text{(谱稳定 N3)} \;\wedge\; \text{(全局耗散正性 N2)} \;\wedge\; \text{(算子有界性 N1)}\;}
 $$
 
-四个轴（族 / 谱 / 耗散 / 有界）联立给塔健康的**充分条件**；任何一个失效都对应一类塔级病理。这是 SRT 集体选择理论的**塔级健康/病理诊断完全条件**的 P1-candidate 形式。
+四个轴（族 / 谱 / 耗散 / 有界）联立给塔健康的**充分条件**；任何一个失效都对应一类塔级病理。这是 SRT 集体选择理论的**塔级健康/病理诊断强闭包充分条件**的 P1-candidate 形式，不属于最小 canonical 定义。
 
 #### §4.14.6 T-LYAPUNOV-1 不证明的事项
 

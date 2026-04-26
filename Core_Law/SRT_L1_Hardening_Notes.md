@@ -7,16 +7,16 @@ layer: L1
 epistemic_layer: os
 claim_mode: canonical
 claim_level: P1-candidate / P2
-dependency: [SRT-L1-FORMALISM, SRT-SUFFERING, SRT-COLLECTIVE-SELECTION, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-T-DIR-CANONICAL, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-CORE-22, SRT-CLAIM-LADDER, SRT-CLAIM-MODE-AUDIT]
+dependency: [SRT-L1-FORMALISM, SRT-SUFFERING, SRT-COLLECTIVE-SELECTION, SRT-INDIVIDUATION, SRT-OCCLUSION-DYNAMICS, SRT-IRREVERSIBILITY, SRT-T-DIR-CANONICAL, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-CORE-22, SRT-CLAIM-LADDER, SRT-CLAIM-MODE-AUDIT]
 ---
 
 # SRT L1 Hardening Notes: Targeted Resolutions of 2026-04-24 Open Pressures
 
-> **Role**: Targeted hardening notes for the four highest-leverage Open Pressures across the 2026-04-24 L1 round. Each section gives a first-pass operator-level or operational definition for a previously-informal object, so that the P1-candidate theorems in the five new files can be jointly criticized and tested rather than drift independently.
+> **Role**: Targeted hardening notes for the four highest-leverage Open Pressures across the 2026-04-24 L1 round. Each section gives a first-pass operator-level or operational definition for a previously-informal object, so that the P1-candidate theorems in the six L1 theory/formalism canonical reference files can be jointly criticized and tested rather than drift independently.
 > **Claim-level note**：本文件所有内容按 P1-candidate / P2 读；硬化案本身不自动让被硬化的上游命题升级到 P1——它只把该命题能被升级检查的路径打开。
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\hat{G}_\theta`、stable ISP；它们的定义仍以对应 canonical 为准。
-> **Depends on**：同 2026-04-24 round 五份 L1 canonical 文件。
-> **Relation**: This file does not replace the Open Pressures sections in the five L1 files; it complements them by offering first-pass hardening. Unresolved items remain open in those files.
+> **Depends on**：同 2026-04-24 round six L1 theory/formalism canonical reference files。
+> **Relation**: This file does not replace the Open Pressures sections in the six L1 reference files; it complements them by offering first-pass hardening. Unresolved items remain open in those files. This preserves the round distinction: six L1 reference files + one hardening notes file = seven `Core_Law/` files total.
 
 ---
 

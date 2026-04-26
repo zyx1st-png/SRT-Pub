@@ -254,11 +254,11 @@ T-SUFF-5 的多主体结构基础由 `Core_Law/SRT_Collective_Selection.md`（`S
 
 ## §8. Open Pressures
 
-> **Hardening status (2026-04-24)**: 下列 §8.1 `\Delta(\cdot,\cdot)` 算子级定义、§8.5 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §2 / §4` 已给出第一遍硬化案；本小节保留原表述直至回写完成。
+> **Hardening status (2026-04-24/25)**: 下列 §8.1 `\Delta(\cdot,\cdot)` 已给出第一版算子级定义（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）；剩余债为实证代理、domain 回写与更强形式化封口。§8.5 FEP 桥接在 `Core_Law/SRT_L1_Hardening_Notes.md §4` 已给出第一遍硬化案。
 
 本文件 `draft_v0` 状态下尚未封口：
 
-1. **`\Delta(\cdot,\cdot)` 的算子级定义**：目前只给了操作性代理（`T_dir` 偏移 + `L_0` 残压 + `\Psi_f` 分裂），真正的算子几何需要 `\hat{G}_\theta` 的形式化推进
+1. **`\Delta(\cdot,\cdot)` 的算子级定义**：已在 `Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 给出第一版算子级定义；剩余债为实证代理、domain 回写与更强形式化封口
 2. **信号型/结构型的可判据性**：目前只给了结构层条件，未给在没有完整 `Occlusion_Dynamics` 读数情况下的简化判据
 3. **四类现象学分型的完备性**：混合态（张力+扭曲、断裂+空心）的处理未显式覆盖
 4. **S_{\min}, S_{\max}` 阈值**：目前是定性，不是可测
