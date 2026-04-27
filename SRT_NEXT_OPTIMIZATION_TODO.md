@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v7
+status: active_v8
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -32,12 +32,13 @@ dependency:
   - Experiments/SRT_Experimental_Roadmap_v1.md
   - SRT_Terminology_Consistency_Audit.md
   - Neuroscience/SRT_Neuro_Predictions_Table.md
+  - Philosophy/SRT_Ethics_Casebook.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
   AI agency/responsibility note, experimental roadmap, terminology consistency audit, neuroscience
-  prediction table, ethics/political casebooks, paper-facing outputs, formula-role cleanup, and optional
-  long-file refactor.
+  prediction table, ethics casebook, political casebook, paper-facing outputs, formula-role cleanup,
+  and optional long-file refactor.
 ---
 
 # SRT Next Optimization TODO
@@ -75,13 +76,14 @@ AI consciousness evaluation rubric created;
 AI agency / responsibility note created;
 Experimental roadmap v1 created;
 Terminology consistency audit created;
-Neuroscience differential prediction table created.
+Neuroscience differential prediction table created;
+Ethics casebook created.
 ```
 
 Current next-stage goal:
 
 ```text
-From guardrail hardening -> toward case-based ethics / politics,
+From guardrail hardening -> toward case-based politics / institutions,
 paper-ready outputs, and optional cleanup / merge passes.
 ```
 
@@ -98,7 +100,8 @@ paper-ready outputs, and optional cleanup / merge passes.
 | P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | done |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
-| P1 | Ethics / Political casebooks | makes moral and institutional theory usable on real cases | direct new files | todo |
+| P1 | Ethics casebook | makes ethics guardrails usable on concrete cases | direct new file | done |
+| P1 | Political / institutional casebook | makes political philosophy usable on institutional diagnosis | direct new file | todo |
 | P2 | Paper-facing outlines | converts repository content into publishable trajectories | direct new files | todo |
 | P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | todo |
 | P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | optional |
@@ -240,43 +243,6 @@ Created file:
 Neuroscience/SRT_Neuro_Predictions_Table.md
 ```
 
-The table compares:
-
-```text
-Predictive Processing / FEP;
-GNW;
-IIT;
-RL / Active Inference;
-SRT;
-standard salience / arousal accounts.
-```
-
-Across cases:
-
-```text
-blindsight;
-bistable perception;
-pain;
-dreaming;
-anesthesia;
-meditation;
-trauma;
-addiction;
-OCD;
-social anxiety.
-```
-
-It includes:
-
-```text
-mainstream explanation;
-SRT added variable;
-SRT-specific prediction;
-proxy measure;
-failure condition;
-pilot-ready candidates.
-```
-
 Done condition met:
 
 ```text
@@ -289,29 +255,15 @@ Neuroscience section has differential predictions, not only reinterpretations.
 
 ### Task 6.1 — Create ethics casebook
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 Philosophy/SRT_Ethics_Casebook.md
 ```
 
-Case template:
-
-```text
-Case:
-Relevant L2:
-Affected subjects:
-Moral intensity:
-Moral reality:
-Moral legitimacy:
-Hidden Psi_f:
-Future selectability:
-Exit / correction channel:
-Responsibility / culpability / repair:
-What would improve the structure:
-```
-
-Cases:
+The casebook includes:
 
 ```text
 family obligation;
@@ -323,9 +275,22 @@ public shaming;
 AI tool misuse.
 ```
 
-**Execution method**: direct new file.
+It uses the template:
 
-**Done condition**:
+```text
+Relevant L2;
+Affected subjects;
+Moral intensity;
+Moral reality;
+Moral legitimacy;
+Hidden Psi_f;
+Future selectability;
+Responsibility / culpability / repair;
+What would improve the structure;
+Failure / narrowing condition.
+```
+
+Done condition met:
 
 ```text
 Ethics guardrails become usable diagnostic tools.
@@ -524,9 +489,10 @@ Recommended next steps:
 5. Experiments/SRT_Experimental_Roadmap_v1.md.                   DONE
 6. SRT_Terminology_Consistency_Audit.md.                         DONE
 7. Neuroscience/SRT_Neuro_Predictions_Table.md.                  DONE
-8. Ethics / Political casebooks.                                 NEXT
-9. Paper outlines.
-10. Only then consider second formula-role pass and deeper long-file reorganization.
+8. Philosophy/SRT_Ethics_Casebook.md.                            DONE
+9. Philosophy/SRT_Political_Casebook.md.                         NEXT
+10. Paper outlines.
+11. Only then consider second formula-role pass and deeper long-file reorganization.
 ```
 
 ---
@@ -536,12 +502,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create Philosophy/SRT_Ethics_Casebook.md
+Create Philosophy/SRT_Political_Casebook.md
 ```
 
 Reason:
 
-> Neuroscience now has differential predictions. The next bottleneck is making SRT ethics and political philosophy usable on concrete cases through friction export, future selectability, responsibility, legitimacy, and repair templates.
+> Ethics casebook is now created. The next bottleneck is applying collective L2, friction export, future selectability, appeal/correction channels, and legitimacy tests to concrete institutions.
 
 ---
 
