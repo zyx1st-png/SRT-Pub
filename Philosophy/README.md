@@ -8,12 +8,14 @@ epistemic_layer: bridge
 claim_mode: guide
 claim_level: P5
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
 ---
 
 # SRT Philosophy — Section Guide
 
 > **Purpose**: This folder translates SRT into philosophical language: ontology, epistemology, phenomenology, ethics, political philosophy, and social theory. It is an **interpretive bridge**, not the canonical source for primitive SRT definitions.
+
+> **2026-04-27 READ-FIRST UPDATE**: For future human and machine readers, start with `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` before editing or interpreting this folder. It concentrates the current soft points and upgrade map: `L_0` ontology, selection-before-existence, selection realism, layered realism, anti-idealism, anti-relativism, `Psi_f` layering, `d-value`, normativity, social ontology, consciousness thresholds, and non-reductive validation.
 
 ## 1. What this section is for
 
@@ -32,6 +34,7 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 
 | Step | File | Role |
 |---|---|---|
+| 0 | `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | Highest-priority soft-point and upgrade map; machine-readable + human-readable; use before major philosophy edits. |
 | 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; hardened with existence levels, `\Psi_f` resistance proxies, `L_1` anchoring, and subjecthood thresholds. |
 | 2 | `SRT_Philosophy_Objection_Ledger.md` | Hardest-objection map; use before upgrading any philosophical claim. |
 | 3 | `SRT_Philosophy_Hardening_TODO.md` | Concrete checklist for future hardening passes. |
@@ -40,6 +43,35 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 | 6 | `SRT_Ethics_Agency.md` / `SRT_Philosophy_Ethics.md` | Agency, responsibility, free will, suffering, love, and virtue. |
 | 7 | `SRT_Political_Philosophy.md` | Institutions, legitimacy, collective stabilization, and political order. |
 | 8 | `_SRT_Soc_Bridge.md` / `_SRT_Soc_Axioms.md` | Social-theory bridge; use when extending SRT into culture, language, and economy. |
+
+---
+
+## 2.5 Current Philosophy Hardening Priorities
+
+The current hardening pass should keep these guardrails visible:
+
+```text
+L0 is not a hidden object-world;
+selection-before-existence is manifestational, not temporal;
+theta is not subjective will;
+Psi_f is not a single cost;
+stabilization is not moral justification;
+selected reality is not relativism;
+not all selection is consciousness.
+```
+
+Priority upgrade labels:
+
+- `selection_realism`
+- `layered_realism`
+- `anti_wrong_floor_statement`
+- `anti_idealism_guardrail`
+- `anti_relativism_guardrail`
+- `psi_f_layering`
+- `normativity_generation`
+- `purpose_as_high_d_value_attractor`
+- `collective_L2_social_ontology`
+- `non_reductive_validation`
 
 ---
 
@@ -63,12 +95,12 @@ Philosophy files often use words like “axiom,” “theorem,” and “ontolog
 
 The cleanest summary is:
 
-> SRT is not idealism, physicalism, dualism, or panpsychism in the ordinary sense. It is a **selection-first ontology**: existence becomes determinate only through constrained selection from a latent field into manifest and stabilized structures.
+> SRT is not idealism, physicalism, dualism, or panpsychism in the ordinary sense. It is a **selection-first ontology** and, more precisely for the current hardening pass, a **selection realism**: existence becomes determinate only through constrained selection from a latent field into manifest and stabilized structures.
 
 Minimal chain:
 
 ```text
-L_0 latent possibilities
+L_0 latent possibilities / modal field of selectability
   --[ embodied selection: G_theta, paying Psi_f ]-->
 L_1 manifest experience / event / object
   --[ stabilization, repetition, intersubjective closure ]-->
@@ -97,12 +129,15 @@ Hardening slogan:
 | “SRT is panpsychism.” | Not directly. Micro-scale selection does not automatically imply macro-conscious subjects. Subjecthood requires further closure, `d-value`, and integration conditions. |
 | “SRT dissolves all paradoxes.” | No. It diagnoses many paradoxes as boundary failures; formal paradoxes still need technical treatment inside their own systems. |
 | “SRT rejects representation.” | No. It rejects representation as the universal first principle; representation is task-local and may be useful when it lowers selection cost. |
+| “SRT says stable norms are morally good.” | No. `L_2` formation only means a path has hardened; moral legitimacy requires further tests such as expanded future selectability, non-externalized cost, cross-subject `d-value` bandwidth, and protection of subject-generation. |
+| “SRT means truth is relative to whoever chooses.” | No. Selection is constrained by `Psi_f`, embodied limits, environmental feedback, intersubjective checking, historical path-dependence, and downward `L_2` constraints. |
+| “L0 is a hidden world full of already-existing objects.” | No. `L_0` should be read as a modal field of selectability / condition of possible manifestation, not an object-like parallel realm. |
 
 ---
 
 ## 6. Objection-led hardening protocol
 
-Before adding or strengthening a Philosophy claim, check `SRT_Philosophy_Objection_Ledger.md` and `SRT_Philosophy_Hardening_TODO.md`.
+Before adding or strengthening a Philosophy claim, check `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`, `SRT_Philosophy_Objection_Ledger.md`, and `SRT_Philosophy_Hardening_TODO.md`.
 
 Minimum upgrade template:
 
@@ -131,6 +166,7 @@ The Philosophy folder should gradually move toward this architecture:
 4. **Layer separation** — avoid mixing ontology, phenomenology, ethics, neuroscience, and politics without explicit bridge labels.
 5. **Public vs academic voice separation** — slogans are useful in public texts; academic files should keep scope and claim levels visible.
 6. **Formula-role discipline** — every equation in philosophy files should state whether it is definition, model, analogy, proxy, or placeholder.
+7. **Soft-point visibility** — major philosophy upgrades should either address one of `PH-SS-01` to `PH-SS-12` or explicitly explain why they are outside the current hardening map.
 
 ---
 
@@ -142,8 +178,9 @@ Priority edits for future passes:
 2. Deduplicate `_SRT_Phil_Axioms.md` and `SRT_Philosophy_Foundations.md` where they repeat the same explanatory-gap and paradox material.
 3. Add formula-role labels to explanatory-gap, paradox, gift, love, grief, and legitimacy formulas.
 4. Add a moral legitimacy ladder to ethics files so `d-value` expansion is not mistaken as sufficient moral goodness.
-5. Link major claims in ethics and political philosophy to relevant objection IDs from `SRT_Philosophy_Objection_Ledger.md`.
+5. Link major claims in ethics and political philosophy to relevant objection IDs from `SRT_Philosophy_Objection_Ledger.md` and soft-point IDs from `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`.
 6. Split `SRT_Philosophy_Foundations.md` into a clean canonical-facing main file plus annex/history notes.
+7. Add `selection realism`, `layered realism`, and `non-reductive validation` subsections to the long-form foundations file after checking canonical dependencies.
 
 ---
 
