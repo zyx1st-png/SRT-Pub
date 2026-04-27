@@ -103,9 +103,6 @@ Current hardened reading now visible in Compact Core:
 
 | Pending task | Why still pending |
 |---|---|
-| Direct merge into `_SRT_Phil_Axioms.md` | long file with legacy sections; safer to review companion first |
-| Direct merge into `SRT_Philosophy_Ethics.md` | long file; fetch output truncates, full replacement risks deleting content |
-| Direct merge into long `SRT_Philosophy_Foundations.md` | needs careful legacy / annex refactor |
 | Core 24 non-reductive validation cross-link | cross-domain governance step |
 | AI / Neuroscience subjecthood threshold links | should be done after checking target file content |
 | Tradition comparison table | optional but useful novelty defense |
@@ -122,8 +119,9 @@ Current hardened reading now visible in Compact Core:
 6. **Done as companion**: `SRT_Ethics_PH_SS_Guardrails.md` adds moral legitimacy ladder, friction export, future selectability, responsibility recalibration, poetic-math guardrails.
 7. **Done as companion**: `SRT_Social_Political_PH_SS_Guardrails.md` adds collective `L_2`, institutional legitimacy, market/money guardrails, friction export, reselection capacity.
 8. **Done direct pointer**: `SRT_Social_Economics_CompactCore.md` and `SRT_Political_Philosophy_CompactCore.md` now point to the social-political guardrail companion.
-9. **Next**: Long Foundations refactor / annex cleanup.
-10. **Next**: Optional direct merge from companions into owner files after review.
+9. **Done direct pointer (2026-04-27)**: PH-SS guardrail pointers inserted directly into all 7 long owner files: `SRT_Philosophy_Ethics.md`, `SRT_Ethics_Agency.md`, `SRT_Philosophy_Foundations.md`, `_SRT_Phil_Axioms.md`, `SRT_Philosophy_Objection_Ledger.md`, `SRT_Political_Philosophy.md`, `SRT_Social_Economics.md`. Local guardrail notes added near `T-Eth-1`, `Ax-Eth-7`, `Ax-Phil-1`, and `Existence ≡ Being Selected`.
+10. **Next**: Long Foundations refactor / annex cleanup.
+11. **Next**: Core 24 non-reductive validation cross-link.
 
 ---
 

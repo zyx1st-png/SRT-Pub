@@ -50,6 +50,19 @@ dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, 
 - 本文件负责规范性读法（责任、悼、复仇、恢复、善后）；T-IRR-1 学习不可逆的非对称 `Ψ_f` 支付、T-IRR-2 终止作为吸收边界（宪定 / 吸收 / 集体三类）、**终止 ≠ 暂停**、T-IRR-4 苦难在 `L_0` 不可逆下不可无代价消除，均由 canonical 承担，不在本文件重写。
 - 特别：本文件不得把"死亡"与"系统暂停/休眠/冻存"混读；T-IRR-2 严格区分终止与暂停的本体论地位。
 
+## PH-SS Guardrail Pointer
+
+Read this file with `SRT_Ethics_PH_SS_Guardrails.md`.
+
+Core guardrails:
+
+- `d-value` expansion is not automatically moral progress.
+- `L_2` stabilization is not automatically moral legitimacy.
+- Moral intensity, moral reality, and moral legitimacy must remain distinct.
+- Responsibility requires selectable agency, not merely high harm or high concern.
+- Love / grief / gift / virtue formulas should be read with explicit formula-role labels unless operationalized.
+- Ethics claims involving social norms should check friction export, future selectability, reversibility, and correction channels.
+
 # Part A: Formal Axioms (形式化公理)
 
 

@@ -35,6 +35,20 @@ dependency: [SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY]
 - 本文件涉及苦难在德性序、虚无感、不确定性支付与 is-ought 结构中位置的段落，对"苦难本身是什么对象"的结构读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
 - 本文件保留元伦理与德性物理学展开；疼痛/苦难范畴区分、信号型/结构型分类、四类现象学分型与 T-SUFF-4 反最小化原则不在本文件重新定义。
 - 在元伦理评估"幸福最大化 / 痛苦最小化"类立场时，应按 T-SUFF-4 处理：信号型苦难被压灭等价于结构层盲区，不能作为规范目标。
+
+## PH-SS Guardrail Pointer
+
+Read this file with `SRT_Ethics_PH_SS_Guardrails.md`.
+
+Core guardrails:
+
+- `d-value` expansion is not automatically moral progress.
+- `L_2` stabilization is not automatically moral legitimacy.
+- Moral intensity, moral reality, and moral legitimacy must remain distinct.
+- Responsibility requires selectable agency, not merely high harm or high concern.
+- Love / grief / gift / virtue formulas should be read with explicit formula-role labels unless operationalized.
+- Ethics claims involving social norms should check friction export, future selectability, reversibility, and correction channels.
+
 # Part A: Formal Axioms (形式化公理)
 
 
@@ -96,6 +110,8 @@ $$\text{Responsible} = \{\hat{G}_\theta\} \setminus \{L_0, L_2^{physics}\}$$
 $$\frac{d}{dt} d > 0 \iff \frac{d}{dt} \text{Moral} > 0$$
 *   **Implication**: 伦理不是规则集合，而是带宽扩展动力学。
 
+> **PH-SS guardrail**: This theorem should be read as a directional / phenomenological model, not as a sufficient condition for moral legitimacy. `d-value` expansion may signal moral widening, but moral legitimacy also requires non-exported friction, future-selectability, cross-subject bandwidth, and correction channels. See `SRT_Ethics_PH_SS_Guardrails.md`.
+
 ### T-Eth-2: Friction Expectation Pathology
 当预期摩擦放大时，道德判断系统性失真。
 $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual},\quad \mu_{expect} \gg 1$$
@@ -105,6 +121,8 @@ $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual},\quad \mu_{expect} \gg
 **Formal Definition**: 在L0中，当算子A将实体B完全纳入其d值范围，B的毁灭即为A方程的奇点（不可计算的无限大摩擦）。
 $$\text{If } B \in \text{Scope}(A) \land B \to L_0, \text{then } \Psi_f(A) \to \infty$$
 * **Implication**: 悲伤（Grief）是物理学上的"幻肢痛"。对方的L1实体已消失，但你的$\theta$参数网络中仍留有与对方耦合的巨大权重，算子不断试图向虚空发起连接，遭遇无限大的预测误差。
+
+> **Formula role guardrail**: This formula is a phenomenological / existential-weight model unless explicitly operationalized. Do not read poetic infinity, gift-phase, or grief-weight language as literal mathematical divergence without a stated proxy and failure condition. See `SRT_Ethics_PH_SS_Guardrails.md`.
 
 ---
 

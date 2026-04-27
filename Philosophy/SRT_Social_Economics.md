@@ -31,6 +31,20 @@ see_also: [SRT-POLITICAL-RIGHTS]
 - 本文把市场读为分布式选择机制；按 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）的结构层判据，大多数市场交易场景属于**聚合型**（Aggregation），不自动构成集体 ISP。
 - 结构性不公的结构读法为**主从型退化**（Asymmetric Absorption，`M(t)` 强不对称 → 结构型苦难外溢，与 `Core_Law/SRT_Suffering.md T-SUFF-5` 对齐）；制度病理（意识形态封闭市场、算法中介寡头回音室）进入**收编型退化**（Collapsed into Higher L_2）。
 - 本文件保留经济学域的 P2/P3 展开；集体 ISP 条件、`M(t)` 结构、三类退化定义不在本文件重复，以 canonical 为准。
+
+## PH-SS Social / Political Guardrail Pointer
+
+Read this file with `SRT_Social_Political_PH_SS_Guardrails.md`.
+
+Core guardrails:
+
+- Social `L_2` reality is not social legitimacy.
+- Institutional persistence is not political justification.
+- Market selection is not moral truth.
+- Money / price is an `L_2` metric, not final value.
+- Low friction is not justice unless hidden `Psi_f` is not exported.
+- Legitimacy requires reselection capacity, consequence-return symmetry, non-exported friction, exit/correction channels, and future-selectability.
+
 # Part A: Formal Axioms (形式化公理)
 
 

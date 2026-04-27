@@ -38,6 +38,27 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CAN
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## PH-SS Guardrail Pointer
+
+Read this file with:
+
+- `SRT_Philosophy_Foundations_CompactCore.md` — current active short entry, active_v4.
+- `_SRT_Phil_Axioms_PH_SS_Guardrails.md` — safe readings for `L_0`, selection-before-existence, reality strength, `Psi_f` layers, normativity, and subjecthood.
+- `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` — `O-Phil-11..20` objections.
+
+Core guardrails:
+
+```text
+L0 is not a hidden object-world;
+selection-before-existence is manifestational, not temporal;
+theta is not subjective will;
+Psi_f is not a single cost;
+stabilization is not moral justification;
+selected reality is not relativism;
+not all selection is consciousness.
+```
+
 # Part A: Philosophy Domain Mapping Axioms (P2/P3/P4)
 
 
@@ -58,6 +79,9 @@ $$L_1(t) = \hat{G}_\theta[L_0(t)], \quad L_2(t+1)=\text{Stabilize}(L_1(t))$$
 \[
 \text{Existence} \equiv \text{Being Selected} \quad (\hat{G}[L_0] \to L_1)
 \]
+
+> **PH-SS guardrail**: Selection-before-existence is manifestational priority, not chronological priority. `L_0` should be read as a modal field of selectability / condition of possible manifestation, not an object-like hidden world. Micro-selection does not entail subjecthood.
+
 * **Implication（中文）**：泛心论认为电子"拥有"微弱的意识，SRT 纠正为：电子的存在正是微观环境对其发生了一次 $\hat{G}$ 观测/选择的结果。意识不是属性，而是使现实得以跨越存在门槛的守门动作（The Cut）。
 * **补注（2026-04-14）**：若需要在 SRT 内部保留电子尺度的“内侧性”语言，最稳的写法不是“电子 already has weak consciousness”，而是：电子只携带一个电子尺度的方向种子 `e_{pg}`。大脑意识不是这些 `e_{pg}` 的简单相加，而是该方向种子在分子、细胞与神经层级中被持续写回、放大并最终跨过 `(\Psi_f>0,\ d>0,\ \text{minimal }L_2\text{ closure})` 门槛后的相变式展开。
 

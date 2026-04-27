@@ -19,6 +19,23 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-FOUNDATIONS-COMP
 
 ---
 
+## PH-SS Extension Pointer
+
+For the current PH-SS objection extension, also read `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md`, which adds:
+
+- `O-Phil-11` L0 hidden-world objection
+- `O-Phil-12` temporal priority objection
+- `O-Phil-13` reality-strength flattening objection
+- `O-Phil-14` `Psi_f` equivocation objection
+- `O-Phil-15` mystical teleology objection
+- `O-Phil-16` `d-value` preference-reduction objection
+- `O-Phil-17` social construction / institutional reification objection
+- `O-Phil-18` consciousness over-attribution objection
+- `O-Phil-19` non-reductive verification objection
+- `O-Phil-20` selected-reality relativism objection
+
+---
+
 ## 0. How to use this ledger
 
 Use this file before adding or upgrading claims in the Philosophy folder.

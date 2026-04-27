@@ -29,6 +29,26 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 
+## PH-SS Guardrail Pointer
+
+Read this file with:
+
+- `SRT_Philosophy_Foundations_CompactCore.md` — current active short entry, active_v4.
+- `_SRT_Phil_Axioms_PH_SS_Guardrails.md` — safe readings for `L_0`, selection-before-existence, reality strength, `Psi_f` layers, normativity, and subjecthood.
+- `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` — `O-Phil-11..20` objections.
+
+Core guardrails:
+
+```text
+L0 is not a hidden object-world;
+selection-before-existence is manifestational, not temporal;
+theta is not subjective will;
+Psi_f is not a single cost;
+stabilization is not moral justification;
+selected reality is not relativism;
+not all selection is consciousness.
+```
+
 # Part A: Domain Mapping Axioms (P2/P3/P4)
 
 > **Claim-level map**：`Ax-Phil-*` entries are Philosophy-domain mappings unless they explicitly quote core/canonical sources; operational candidates or falsification conditions are P4.
@@ -37,7 +57,9 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 ## I. Foundational Mappings
 
 ### Ax-Phil-1: Selection-Existence Equivalence
-存在是被选择的结果，哲学对象的“给出性”即算子对潜在域的锚定。
+存在是被选择的结果，哲学对象的”给出性”即算子对潜在域的锚定。
+
+> **PH-SS guardrail**: `L_0` should be read here as a modal field of selectability / condition of possible manifestation, not an object-like hidden world. Selection-before-existence is manifestational priority, not chronological priority. Micro-selection does not entail subjecthood; consciousness requires threshold conditions such as structured `d-value`, integration, `L_2` closure, boundary maintenance, and counterfactual access.
 $$\text{Existence}(X) \iff \exists \hat{G}_\theta: \hat{G}_\theta[L_0] \to X_{L_1}$$
 *   **Implication**: 任何认识论都必须从“选择-显现”而非“对象-属性”出发。
 

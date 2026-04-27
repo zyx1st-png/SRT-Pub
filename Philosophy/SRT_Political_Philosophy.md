@@ -33,6 +33,19 @@ created: 2026-04-22
 - 文中若涉及 “最大秩序”，优先按 `_SRT_T_DIR_CANONICAL.md §19` 读取：它首先是方向，不是终点国家，也不是一次性可抵达的完满政治体制。
 - 文中若出现 “公正 / 不公”，默认回链 `Philosophy/SRT_Philosophy_Ethics.md` 中的 `Structural Injustice Thermodynamics Interface` 与 `ε-Grounded Moral Topology`。
 
+## PH-SS Social / Political Guardrail Pointer
+
+Read this file with `SRT_Social_Political_PH_SS_Guardrails.md`.
+
+Core guardrails:
+
+- Social `L_2` reality is not social legitimacy.
+- Institutional persistence is not political justification.
+- Market selection is not moral truth.
+- Money / price is an `L_2` metric, not final value.
+- Low friction is not justice unless hidden `Psi_f` is not exported.
+- Legitimacy requires reselection capacity, consequence-return symmetry, non-exported friction, exit/correction channels, and future-selectability.
+
 ## Legitimacy Ladder (秩序条件到正当性的推理阶梯)
 
 > **Level**: governance / bridge. This ladder prevents direct jumps from `L_1/L_2` order conditions to political legitimacy.
