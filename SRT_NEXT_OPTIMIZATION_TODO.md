@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v5
+status: active_v6
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -30,10 +30,11 @@ dependency:
   - AI/SRT_AI_Consciousness_Evaluation_Rubric.md
   - AI/SRT_AI_Agency_Responsibility_Note.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
+  - SRT_Terminology_Consistency_Audit.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
-  AI agency/responsibility note, experimental roadmap, terminology consistency, ethics/political
+  AI agency/responsibility note, experimental roadmap, terminology consistency audit, ethics/political
   casebooks, neuroscience prediction table, paper-facing outputs, formula-role cleanup, and optional
   long-file refactor.
 ---
@@ -71,14 +72,15 @@ Registry / README / index discovery pass completed;
 Core validation template created;
 AI consciousness evaluation rubric created;
 AI agency / responsibility note created;
-Experimental roadmap v1 created.
+Experimental roadmap v1 created;
+Terminology consistency audit created.
 ```
 
 Current next-stage goal:
 
 ```text
-From guardrail hardening -> toward validation discipline,
-experimental tractability, flagship AI application, terminology consistency, and paper-ready outputs.
+From guardrail hardening -> toward differential neuroscience predictions,
+case-based ethics / politics, terminology cleanup, and paper-ready outputs.
 ```
 
 ---
@@ -92,7 +94,7 @@ experimental tractability, flagship AI application, terminology consistency, and
 | P0 | AI consciousness evaluation rubric | strongest near-term flagship application | direct new file | done |
 | P1 | AI responsibility / agency note | prevents vague AI agency / culpability language | direct new file | done |
 | P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | done |
-| P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | Claude Code prompt or direct audit file | todo |
+| P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | todo |
 | P1 | Ethics / Political casebooks | makes moral and institutional theory usable on real cases | direct new files | todo |
 | P2 | Paper-facing outlines | converts repository content into publishable trajectories | direct new files | todo |
@@ -144,51 +146,11 @@ Purpose:
 
 > Provide a standard template for turning SRT claims into testable claim packages.
 
-The template includes:
-
-```text
-Claim;
-Layer;
-Claim level;
-Nearby theory;
-SRT-specific prediction;
-Proxy measurement;
-Baseline;
-Expected result;
-Failure condition;
-What would narrow SRT;
-What would strengthen SRT;
-Owner file;
-Current status.
-```
-
-Also includes example packages for:
-
-```text
-d-value vs salience;
-Psi_f vs prediction error;
-L2 hardening vs ordinary memory;
-subjecthood vs AI self-report;
-social legitimacy vs institutional stability.
-```
-
 Done condition met:
 
 ```text
 A reusable validation template exists and links to Core24 / O-Phil-19 / PH-SS-11.
 ```
-
-### Task 2.2 — Create example validation packages
-
-**Status**: partially done inside `Core/SRT_Validation_Template.md`.
-
-The standalone file may still be useful later:
-
-```text
-Core/SRT_Validation_Examples.md
-```
-
-But five initial example packages already exist inside the template.
 
 ---
 
@@ -202,35 +164,6 @@ Created file:
 
 ```text
 AI/SRT_AI_Consciousness_Evaluation_Rubric.md
-```
-
-Purpose:
-
-> Convert the S0-S6 subjecthood ladder into an evaluation rubric for AI systems.
-
-The rubric distinguishes:
-
-```text
-S0 selection event
-S1 local L1 anchoring
-S2 conscious content
-S3 integrated conscious field
-S4 subjecthood
-S5 agency
-S6 responsibility-bearing subject
-```
-
-It includes:
-
-```text
-observable indicators;
-required evidence;
-false positive risks;
-current LLM status;
-failure / narrowing condition;
-classification labels;
-deployment responsibility map;
-validation package for AI subjecthood claims.
 ```
 
 Done condition met:
@@ -247,30 +180,6 @@ Created file:
 
 ```text
 AI/SRT_AI_Agency_Responsibility_Note.md
-```
-
-Purpose:
-
-> Distinguish tool agency, delegated agency, autonomous operational agency, and responsibility-bearing agency.
-
-The note distinguishes:
-
-```text
-A0 tool execution;
-A1 delegated agency;
-A2 autonomous operational agency;
-A3 responsibility-bearing agency.
-```
-
-It includes:
-
-```text
-responsibility network map;
-culpability decomposition;
-classification labels;
-deployment evaluation checklist;
-institutional design implications;
-validation package for AI responsibility claims.
 ```
 
 Done condition met:
@@ -291,40 +200,6 @@ Created file:
 
 ```text
 Experiments/SRT_Experimental_Roadmap_v1.md
-```
-
-Structure:
-
-```text
-Level 1: cognitive / behavioral proxy
-Level 2: neural / physiological proxy
-Level 3: AI / agent simulation
-Level 4: social / institutional case study
-Level 5: cross-domain flagship prediction
-```
-
-Initial experiment families:
-
-```text
-d-value vs salience;
-Psi_f vs prediction error;
-L2 hardening vs memory / habit;
-subjecthood threshold vs AI self-report;
-friction export vs institutional legitimacy.
-```
-
-It includes:
-
-```text
-SRT-specific prediction;
-nearby theories;
-proxy measurements;
-baselines;
-expected results;
-failure conditions;
-narrowing conditions;
-pilot priority list;
-standard experiment card.
 ```
 
 Done condition met:
@@ -505,13 +380,15 @@ Political philosophy becomes applicable to concrete institutional diagnosis.
 
 ### Task 7.1 — Create terminology consistency audit
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 SRT_Terminology_Consistency_Audit.md
 ```
 
-Terms to audit:
+The audit covers:
 
 ```text
 L0 / latent field / modal field of selectability / possibility space;
@@ -524,23 +401,22 @@ G_hat_theta / Ghost Operator / selection operator;
 subjecthood / consciousness / agency / responsibility.
 ```
 
-For each term:
+It includes:
 
 ```text
 canonical term;
 allowed aliases;
 forbidden overreadings;
 domain-specific usage;
-owner file;
-needs cleanup? yes/no.
+owner / route;
+cleanup priority;
+future repository scan prompt.
 ```
 
-**Execution method**: Claude Code prompt or direct audit file.
-
-**Done condition**:
+Done condition met:
 
 ```text
-Semantic drift becomes visible and correctable.
+Semantic drift is now visible and correctable.
 ```
 
 ---
@@ -671,8 +547,8 @@ Recommended next steps:
 3. AI/SRT_AI_Consciousness_Evaluation_Rubric.md.                 DONE
 4. AI/SRT_AI_Agency_Responsibility_Note.md.                      DONE
 5. Experiments/SRT_Experimental_Roadmap_v1.md.                   DONE
-6. SRT_Terminology_Consistency_Audit.md.                         NEXT
-7. Neuroscience/SRT_Neuro_Predictions_Table.md.
+6. SRT_Terminology_Consistency_Audit.md.                         DONE
+7. Neuroscience/SRT_Neuro_Predictions_Table.md.                  NEXT
 8. Ethics / Political casebooks.
 9. Paper outlines.
 10. Only then consider second formula-role pass and deeper long-file reorganization.
@@ -685,12 +561,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create SRT_Terminology_Consistency_Audit.md
+Create Neuroscience/SRT_Neuro_Predictions_Table.md
 ```
 
 Reason:
 
-> Registry, validation, AI flagship application, and experimental roadmap are now in place. The next bottleneck is semantic drift: SRT uses many aliases for `L0`, `L1`, `L2`, `Psi_f`, `d-value`, `theta`, `G_hat_theta`, subjecthood, consciousness, agency, and responsibility.
+> Validation template and experimental roadmap are in place. The next bottleneck is making the neuroscience section produce differential predictions rather than only reinterpretations.
 
 ---
 
