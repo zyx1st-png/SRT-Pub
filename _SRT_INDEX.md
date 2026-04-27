@@ -131,6 +131,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 ## Secondary Hardening Notes
 
 - collective tower/nested hardening H10-H16 / late-stage hardening only / P1-candidate under strong closure assumptions / not a primary canonical anchor → `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`
+- floor replacement / object-first ontology critique / purpose-value-morality-framework dynamics / non-reductive validation / Ψ_f-d-L2 operational projections / reviewer-risk guardrails → `Core/SRT_Core_24_Floor_Normativity_Verification.md`
+- retrieval index for Core 24 floor replacement and non-reductive verification note → `Core/SRT_Core_24_Index.md`
 
 ## Domain Entrypoints
 
@@ -143,6 +145,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - `Core/SRT_Core_22_Equations.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`（bridge hardening entry; not a canonical core source）
+- `Core/SRT_Core_24_Floor_Normativity_Verification.md`（bridge-hardening note for floor replacement, normativity, and non-reductive verification; not a canonical replacement）
+- `Core/SRT_Core_24_Index.md`（navigation index for Core 24）
 - `Core/SRT_OPEN_TENSIONS.md`
 
 ### Meta Navigation
@@ -231,5 +235,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 papers / publication 中优先级候选，不提升 canonical 权限
 - `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 root topic / FAQ 中优先级候选，不提升 canonical 权限
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 是相邻理论接口导航，不新增 P0/P1，不替代 FEP/IIT/GNW/量子/社会现实等既有正文
+- `Core/SRT_Core_24_Floor_Normativity_Verification.md` is a bridge-hardening supplement for floor replacement, dynamic normativity, and non-reductive verification; it does not outrank canonical anchors until promoted through claim governance.
+- `Core/SRT_Core_24_Index.md` is a retrieval index for Core 24 and does not define theory.
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
 - Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
