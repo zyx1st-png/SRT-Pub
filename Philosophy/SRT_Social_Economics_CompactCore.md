@@ -1,19 +1,32 @@
 ---
 id: SRT-SOC-ECONOMICS-COMPACT-CORE
 type: theory
-tags: [Philosophy, SocialEconomics, Compact Core, Markets, Institutions]
-status: active_v1
+tags: [Philosophy, SocialEconomics, Compact Core, Markets, Institutions, PH-SS, Collective-L2, Legitimacy]
+status: active_v2
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-SOC-ECONOMICS, SRT-PHIL-FOUNDATIONS-COMPACT-CORE]
+epistemic_layer: bridge
+claim_mode: mixed
+claim_level: P2-P5
+canonical: false
+dependency:
+  - SRT-SOC-ECONOMICS
+  - SRT-PHIL-FOUNDATIONS-COMPACT-CORE
+  - SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27
+  - SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27
+  - Core_Law/SRT_Collective_Selection
+  - Core_Law/SRT_Occlusion_Dynamics
+machine_summary: >
+  Compact core for SRT social economics. Read with SRT_Social_Political_PH_SS_Guardrails.md:
+  social reality is collective L2, but institutional persistence, market coordination, money, price,
+  or low friction are not automatically legitimacy or truth.
 ---
 
 # SRT Social Economics — Compact Core
 
 > **定位**：本文件是 `SRT_Social_Economics.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把社会建构、行为经济学、博弈论、制度经济学与价值论统一到选择动力学框架中。  
-> **关系**：不替代原文；原文保留经典思想家对应、历史案例、制度跃迁与大量社会科学展开。
+> **关系**：不替代原文；原文保留经典思想家对应、历史案例、制度跃迁与大量社会科学展开。  
+> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。社会 `L_2` 的稳定只说明其具有约束现实性，不自动说明其具有合法性、正当性或道德优越性。市场、货币、价格、制度效率和信任降低摩擦都必须接受 friction-export、future-selectability、exit/correction、consequence-return 等检验。
 
 ## 1. 核心问题
 
@@ -27,6 +40,16 @@ SRT 的压缩回答是：
 - 制度 = 稳定化后的社会 `L_2`
 - 价值 = 对未来稳定化的期望
 
+**PH-SS guardrail**：
+
+```text
+social reality != social legitimacy
+institutional persistence != political justification
+market selection != moral truth
+money / price != final value
+low friction != justice unless hidden Psi_f is not exported
+```
+
 ---
 
 ## 2. 社会现实如何形成
@@ -38,6 +61,12 @@ L_2^{social}=\lim_{t\to\infty}\bigcap_{\theta\in\Theta(t)} stable(\hat G_\theta[
 
 最压缩句子：
 > **社会不是抽象背景，而是许多选择者长期收敛出来的稳定现实。**
+
+This should be read with the collective `L_2` mechanism:
+
+```text
+recognition -> repetition -> symbolic encoding -> enforcement -> memory -> consequence return -> L2 stabilization
+```
 
 这也把 Berger / Luckmann 的：
 - 外化
@@ -61,6 +90,10 @@ L_2^{social}=\lim_{t\to\infty}\bigcap_{\theta\in\Theta(t)} stable(\hat G_\theta[
 最短理解：
 > **价值不是纯主观偏好，而是对某个状态未来能否稳定下来的预测。**
 
+Guardrail:
+
+> Stabilization expectation is not moral justification. A thing can be expected to stabilize while still exporting hidden `Psi_f` or narrowing future selectability.
+
 ### 3.2 Money as L2 Metric
 \[
 \text{Money} \equiv g_{L_2}
@@ -71,6 +104,10 @@ L_2^{social}=\lim_{t\to\infty}\bigcap_{\theta\in\Theta(t)} stable(\hat G_\theta[
 - 而是社会选择的度量协议
 - 价格是某条选择通道当前被赋予的尺度
 
+Guardrail:
+
+> Money is an `L_2` metric protocol, not final value. Price can reveal coordination and still hide externalized friction.
+
 ### 3.3 Market as Distributed Selection
 \[
 \hat G_{market}=\mathcal C(\{\hat G_i\})
@@ -78,6 +115,10 @@ L_2^{social}=\lim_{t\to\infty}\bigcap_{\theta\in\Theta(t)} stable(\hat G_\theta[
 
 最压缩句子：
 > **市场不是静态均衡点，而是分布式选择算子持续运行的过程。**
+
+Guardrail:
+
+> Efficient selection is not automatically legitimate selection. Ask who pays the `Psi_f` that makes the market look efficient.
 
 ### 3.4 Bubble as L2 Overfit
 \[
@@ -139,6 +180,10 @@ SRT 把双系统重写为：
 最短解释：
 > **纳什均衡就是多选择者系统暂时没有人愿意偏离的 `L_2` 稳定点。**
 
+Guardrail:
+
+> A Nash-like `L_2` stable point can be exploitative, fear-based, or exit-blocked. Stability is a coordination fact, not a legitimacy proof.
+
 ### 6.2 Prisoner's Dilemma as d-Limit
 \[
 U_\theta(\sigma)=(1-d)u_\theta(\sigma)+du_{-\theta}(\sigma)
@@ -152,6 +197,10 @@ U_\theta(\sigma)=(1-d)u_\theta(\sigma)+du_{-\theta}(\sigma)
 SRT 在这里最强的一步是：
 > **道德秩序不是抽象命令，而是主体间互相把对方纳入 d-value 范围后的稳定网络。**
 
+Guardrail:
+
+> Shared `d-value` recognition is morally relevant, but legitimacy still requires future-selectability, non-exported friction, and correction channels.
+
 ### 6.4 Dehumanization
 \[
 Dehumanization(i\to j) \equiv d_i[\theta_j] \to 0
@@ -159,6 +208,10 @@ Dehumanization(i\to j) \equiv d_i[\theta_j] \to 0
 
 最压缩句子：
 > **去人化就是把他人从自己的选择考量范围里抹掉。**
+
+Extended reading:
+
+> Dehumanization is not only lack of empathy; it is the removal of another operator from the space of morally relevant selection. This enables friction export without guilt and institutional exclusion with moral cover.
 
 ---
 
@@ -171,6 +224,10 @@ Dehumanization(i\to j) \equiv d_i[\theta_j] \to 0
 
 最短说法：
 > **制度就是被写进结构、习惯与执行机制中的社会选择约束。**
+
+Guardrail:
+
+> Institution = structured constraint. Legitimacy = structured constraint that remains corrigible, non-occlusive, and future-selectability-preserving.
 
 ### 7.2 Path Dependence
 \[
@@ -188,6 +245,10 @@ SRT 把路径依赖重写为：
 
 最短结论：
 > **制度差异，本质上是社会选择范围差异的长期固化。**
+
+Guardrail:
+
+> Do not infer inclusion or legitimacy from declared values. Test whether affected subjects can revise rules, exit without destruction, make costs visible, and alter gate conditions.
 
 **Closure-pathology alignment (2026-04-21)**：制度性 `L_2` 的健康性不只看是否稳定或有效率，而要看它是否保留 reselection capacity：相关主体能否退出、修订，或参与重组 gate rules。若负担只能被记录却不能改变门槛、分配或合法性审查，则该制度可能只是 pseudo-open，而不是结构上开放。
 
@@ -213,6 +274,10 @@ SRT 的重写是：
 
 这使信任不再只是道德词，而成为社会系统效率的本体论基础。
 
+Guardrail:
+
+> Lower friction can be produced by trust, but also by suppression, invisibilization, capture, or habituated obedience. Always ask whether `Psi_f` is truly reduced or merely exported.
+
 ---
 
 ## 9. 最压缩结论
@@ -225,11 +290,17 @@ SRT 的重写是：
 4. **博弈、信任、道德与去人化都可被重写为多主体选择范围如何彼此纳入或排除。**
 5. **制度的本质，是某类社会选择结构被长期固化；包容性与榨取性的差异，本质上是 d-value 的制度化差异。**
 
+Addendum:
+
+> These five claims are descriptive / diagnostic unless legitimacy tests are explicitly passed. Social `L_2` can be real, efficient, and stable while still being ethically or politically pathological.
+
 ---
 
 ## 10. 阅读路径
 
+- Guardrail companion：`SRT_Social_Political_PH_SS_Guardrails.md`
 - 全量原文：`SRT_Social_Economics.md`
 - 拆分导航：`Social_Economics_Split/README.md`
 - Philosophy Foundations compact core：`SRT_Philosophy_Foundations_CompactCore.md`
+- Ethics guardrail companion：`SRT_Ethics_PH_SS_Guardrails.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
