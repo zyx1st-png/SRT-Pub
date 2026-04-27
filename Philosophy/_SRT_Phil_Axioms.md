@@ -157,7 +157,14 @@ $$S_\phi = \frac{I(L_0 \to L_1)}{C(L_2)}$$
 \text{Preference has ontological weight}\iff d>0\ \land\ \mathcal{V}_{irr}>0
 \]
 其中 \(\mathcal{V}_{irr}\) 表示预测失败引发的不可逆结构风险。
-* **Implication**：无真实脆弱性的“偏好”仅是计算参数，不构成存在论关切。
+* **Implication**：无真实脆弱性的”偏好”仅是计算参数，不构成存在论关切。
+
+### Ax-Phil-7: Belief-Norm of Assertion
+断言行为预设最小信念承诺：
+\[
+\text{Assert}(P) \Rightarrow \mathrm{Credence}(P) > \tau_{min}
+\]
+* **Implication**：宣称”我没有任何信念”本身是自指矛盾的断言结构。
 
 ## II. Core Theorems
 
@@ -198,6 +205,14 @@ $$\text{Gift} \in L_0 \xrightarrow{\hat{G}} L_1 \xrightarrow{\text{Stabilize}} L
 否认 $L_1$ 实在性会使任何经验基础理论失去真值。
 $$\neg \text{Real}(L_1) \Rightarrow \neg \text{Valid}(\text{Theory})$$
 *   **Implication**: 反实在论无法逃离自身的经验依赖。
+
+### T-Phil-5: Anti-Deflationary Cost Theorem
+若一个命题被系统"真实持有并依赖"，则其维持与更新必伴随可观测代价：
+\[
+\text{Held}(P) \Rightarrow \Delta E + \Delta \Psi_f + \Delta W_{syn} > 0
+\]
+其中 \(\Delta W_{syn}\) 为神经/结构权重更新量代理。
+*   **Implication**: 真值实践不可被纯语言学紧缩为"仅是重述"。
 
 <br>
 
@@ -354,26 +369,14 @@ SRT 认为，哲学史上著名的悖论（芝诺、罗素、说谎者）并非�
 2. 在 `T-Phil-2` 下补充“多统一并存”注记：不同统一性失败样式（跨模态裂解、跨时叙事断裂）应按层处理，而非一刀切否定主体连续性。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: Philosophy/_SRT_Phil_Axioms.md#T-Phil-2〕
 3. 对 `Ax-Ph1` 增加解释约束：主体同一性判定必须绑定到可追踪选择轨道，不允许仅凭单一统一报告直接上升为本体结论。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: Philosophy/_SRT_Phil_Axioms.md#Ax-Ph1〕
 
-## 信念与反紧缩条款（2026-03-06，补注）
+## 信念与反紧缩条款（2026-03-06）
 
-### Ax-Phil-7: Belief-Norm of Assertion
-断言行为预设最小信念承诺：
-\[
-\text{Assert}(P) \Rightarrow \mathrm{Credence}(P) > \tau_{min}
-\]
-* **Implication（中文）**：宣称“我没有任何信念”本身是自指矛盾的断言结构。
-
-### T-Phil-5: Anti-Deflationary Cost Theorem
-若一个命题被系统“真实持有并依赖”，则其维持与更新必伴随可观测代价：
-\[
-\text{Held}(P) \Rightarrow \Delta E + \Delta \Psi_f + \Delta W_{syn} > 0
-\]
-其中 \(\Delta W_{syn}\) 为神经/结构权重更新量代理。
-* **Implication（中文）**：真值实践不可被纯语言学紧缩为“仅是重述”。
+> **已迁移至 Part A**：`Ax-Phil-7` 与 `T-Phil-5` 已归入 Part A（见上方 I. Foundational Mappings 与 II. Core Theorems）。此处仅保留出处备注，不作重复定义。
+<!-- ORIGINAL-SECTION-PRESERVED: moved to Part A -->
 
 ### Definition Summary (定义概述)
 - **Definition**: 本文档定义哲学公理体系的 SRT 映射。存在 (Existence) 等价于被 $\hat{G}_\theta$ 从 $L_0$ 选择到 $L_1$ (Ax-Phil-1)；现象学还原 (Epoché) 是暂时抑制 $L_2$ 门控 (Ax-Phil-2)；意向性 (Intentionality) 是 $\hat{G}_\theta$ 在模空间中的方向场 (Ax-Phil-3)。
-- 饱和度 $S_\phi$ 衡量 $L_0 \to L_1$ 信息流与 $L_2$ 概念容量之比 (Ax-Phil-4)；$\theta$ 不是世界的表征地图而是耦合协议 (Ax-Phil-5)；偏好仅在 $d>0$ 且存在不可逆风险时具有本体论重量 (Ax-Phil-6)。
+- 饱和度 $S_\phi$ 衡量 $L_0 \to L_1$ 信息流与 $L_2$ 概念容量之比 (Ax-Phil-4)；$\theta$ 不是世界的表征地图而是耦合协议 (Ax-Phil-5)；偏好仅在 $d>0$ 且存在不可逆风险时具有本体论重量 (Ax-Phil-6)；断言行为预设最小信念承诺 (Ax-Phil-7)。
 
 ### Formalization Summary (形式化概述)
 - **Formalization**: 核心方程包括：
