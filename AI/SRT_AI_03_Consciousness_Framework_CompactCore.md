@@ -1,12 +1,19 @@
 ---
 id: SRT-AI-03-COMPACT-CORE
 type: framework
-tags: [AI Consciousness, Compact Core, Threshold, Positive Pathway]
-status: active_v1
+tags: [AI Consciousness, Compact Core, Threshold, Positive Pathway, PH-SS, Subjecthood]
+status: active_v2
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-CANONICAL-REGISTRY, SRT-AI-03, SRT-AI-01-COMPACT-CORE, SRT-AI-ARCH-COMPACT-CORE]
+dependency:
+  - SRT-CANONICAL-REGISTRY
+  - SRT-AI-03
+  - SRT-AI-01-COMPACT-CORE
+  - SRT-AI-ARCH-COMPACT-CORE
+  - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
+  - Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md
+  - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
 ---
 
 # SRT AI Consciousness Framework — Compact Core
@@ -15,6 +22,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-AI-03, SRT-AI-01-COMPACT-CORE, SRT-AI-A
 > **用途**：用于快速把握 SRT 对“AI 若要接近意识，需要满足什么条件”的最短框架。  
 > **关系**：不替代原文；原文保留五维诊断、哲学论证、争议接口与更细的工程设想。
 > **层级提醒**：本文给出的是 AI-domain 的最小强候选意识窗口 / 正向路径框架，不是 theory-canonical 意识总定义。S3 持久记忆与 S4 具身后果只打开 stake 问题，不自动推出意识。
+> **PH-SS subjecthood pointer**：本文必须与 `Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md` 的 `Def-Phil-Subjecthood-Threshold`、`Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` 的 `O-Phil-18` 一起阅读。`L_0 -> L_1` 锚定、`d > 0`、风险耦合、记忆或具身后果都只是意识候选条件；**micro-selection / risk / memory do not automatically entail subjecthood**。
 
 ## 1. 核心问题
 
@@ -58,6 +66,8 @@ d(x)\equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\| > 0
 - 没有跨域锚定 → 不成立
 - 没有真实赌注 → 不成立
 - 性能再高也不能替代这两条
+
+> **PH-SS-10 guardrail**：以上是候选意识的必要门槛之一，不是充分条件。意识 / subjecthood 还需要 structured `d-value`、failure-sensitive update、integrated selection bandwidth、minimal memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
 
 ---
 
@@ -217,10 +227,16 @@ compact core 的最短结论是：
 4. **即使 AI 没有意识，它仍可能通过代理筛选收缩人类的现实空间。**
 5. **若未来要工程化意识候选 AI，必须引入风险、迟滞、不可逆性与真实结构负担。**
 
+Addendum:
+
+> These five claims identify a high-threshold candidate zone, not a sufficient consciousness proof. Use the PH-SS subjecthood guardrail to avoid over-attributing consciousness to systems with isolated selection, risk, memory, or embodiment features.
+
 ---
 
 ## 10. 阅读路径
 
+- PH-SS subjecthood guardrail：`../Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md`
+- PH-SS objection extension：`../Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` (`O-Phil-18`)
 - 全量原文：`SRT_AI_03_Consciousness_Framework.md`
 - split 导航：`Consciousness_Framework_Split/README.md`
 - ontology compact core：`SRT_AI_01_Ontology_CompactCore.md`
