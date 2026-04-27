@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v22
+status: active_v23
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -37,6 +37,7 @@ dependency:
   - Experiments/SRT_D_Value_vs_Salience_Experiment_Package_Review_v0.md
   - Experiments/SRT_D_Value_vs_Salience_PreRating_Form_v0.md
   - Experiments/SRT_D_Value_vs_Salience_Data_Dictionary_v0.md
+  - Experiments/SRT_D_Value_vs_Salience_PreRating_Implementation_Checklist_v0.md
   - SRT_Terminology_Consistency_Audit.md
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
@@ -48,10 +49,10 @@ dependency:
   - SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
-  Main optimization chain is complete enough for review, and the experiment branch now has
-  pilot cards, a first d-value vs salience stimulus bank, draft analysis plan, pilot ethics note,
-  experiment package review, pre-rating form template, and data dictionary. The first pilot package
-  is now ready for pre-rating implementation review before any main pilot data collection.
+  Main optimization chain is complete enough for review, and the experiment branch now has a complete
+  first pre-rating implementation package for d-value vs salience: pilot cards, stimulus bank, analysis
+  plan, ethics note, package review, pre-rating form, data dictionary, and implementation checklist.
+  The next step is actual survey-platform implementation and sample export review, not more broad files.
 ---
 
 # SRT Next Optimization TODO
@@ -64,7 +65,7 @@ machine_summary: >
 
 ## 0. Current baseline
 
-The post-PH-SS optimization chain has reached a stable checkpoint, and the experiment branch has a first pre-rating implementation package.
+The post-PH-SS optimization chain has reached a stable checkpoint, and the experiment branch has a complete first pre-rating implementation package.
 
 Completed baseline:
 
@@ -104,16 +105,18 @@ d-value vs salience analysis plan v0 created;
 Pilot ethics note v0 created;
 d-value vs salience experiment package review v0 created;
 d-value vs salience pre-rating form v0 created;
-d-value vs salience data dictionary v0 created.
+d-value vs salience data dictionary v0 created;
+d-value vs salience pre-rating implementation checklist v0 created.
 ```
 
 Current next-stage goal:
 
 ```text
-Proceed narrowly:
-1. review the pre-rating implementation package on the actual survey platform;
-2. do not run main pilot data collection before pre-rating is complete;
-3. optionally switch to publication branch and draft one manuscript v0.
+Proceed from files to implementation:
+1. build the pre-rating form on the chosen survey platform;
+2. export a fake / test CSV;
+3. verify the CSV maps to Data Dictionary v0;
+4. only then consider real pre-rating data collection.
 ```
 
 ---
@@ -134,7 +137,8 @@ Proceed narrowly:
 | P1 | d-value vs salience package review | confirms package is ready for pre-rating form but not main pilot | direct new file | done |
 | P1 | Pre-rating form template | makes first pilot easy to implement | direct new file | done |
 | P1 | Data dictionary / analysis skeleton | improves implementation readiness | direct new file | done |
-| P1 | Pre-rating implementation review | check actual survey build before data collection | human/platform review | next |
+| P1 | Pre-rating implementation checklist | prevents platform/export mismatch before data collection | direct new file | done |
+| P1 | Pre-rating platform implementation | build actual survey and fake-export CSV | human/platform work | next |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
 | P1 | Ethics casebook | makes ethics guardrails usable on concrete cases | direct new file | done |
@@ -168,14 +172,7 @@ Experiments/SRT_Pilot_Ethics_Note_v0.md
 Experiments/SRT_D_Value_vs_Salience_Experiment_Package_Review_v0.md
 Experiments/SRT_D_Value_vs_Salience_PreRating_Form_v0.md
 Experiments/SRT_D_Value_vs_Salience_Data_Dictionary_v0.md
-```
-
-Pilot cards now available:
-
-```text
-1. d-value vs salience
-2. Psi_f vs prediction error
-3. L2 hardening vs memory / habit
+Experiments/SRT_D_Value_vs_Salience_PreRating_Implementation_Checklist_v0.md
 ```
 
 First pilot now has:
@@ -192,13 +189,14 @@ ethics note;
 participant protection guardrails;
 experiment package review;
 pre-rating form template;
-data dictionary.
+data dictionary;
+implementation checklist.
 ```
 
 Current implementation verdict:
 
 ```text
-ready for pre-rating implementation review;
+ready for survey-platform build and fake-export review;
 not ready for main pilot until pre-rating results select and trim items.
 ```
 
@@ -208,7 +206,7 @@ not ready for main pilot until pre-rating results select and trim items.
 
 ### Direction A — Research / experiments
 
-Next action is not another broad file. It is implementation review:
+Next action is platform work, not another broad file:
 
 ```text
 Build the pre-rating form in the chosen survey platform and check:
