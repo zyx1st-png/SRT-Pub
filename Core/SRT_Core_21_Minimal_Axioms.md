@@ -38,6 +38,14 @@ When in doubt, demote to `P1` or below.
 
 ---
 
+## Selection-First Framing Note (Non-Axiom)
+
+SRT does not treat stable reality as a pre-given set of objects to which selection is later applied. Its starting point is selection-first: latent possibilities become manifest through constrained selection, and repeated manifestations harden into future constraints. The theory's cross-scale explanatory power comes from this floor replacement, not from an unrestricted claim to explain everything.
+
+**Boundary**: This note frames the P0 set but does not add a new primitive axiom. It should not be cited as proof that all prior ontologies are false; rather, it marks the SRT departure from object-first ontology.
+
+---
+
 ## P0-00: Formal Vocabulary Gate (Preface)
 
 SRT minimally works with:
