@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v4
+status: active_v5
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -29,6 +29,7 @@ dependency:
   - Core/SRT_Validation_Template.md
   - AI/SRT_AI_Consciousness_Evaluation_Rubric.md
   - AI/SRT_AI_Agency_Responsibility_Note.md
+  - Experiments/SRT_Experimental_Roadmap_v1.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
@@ -69,7 +70,8 @@ Foundations / Axioms first safe refactor pass completed;
 Registry / README / index discovery pass completed;
 Core validation template created;
 AI consciousness evaluation rubric created;
-AI agency / responsibility note created.
+AI agency / responsibility note created;
+Experimental roadmap v1 created.
 ```
 
 Current next-stage goal:
@@ -89,8 +91,8 @@ experimental tractability, flagship AI application, terminology consistency, and
 | P0 | Validation template | converts SRT from broad philosophy to testable research program | direct new file | done |
 | P0 | AI consciousness evaluation rubric | strongest near-term flagship application | direct new file | done |
 | P1 | AI responsibility / agency note | prevents vague AI agency / culpability language | direct new file | done |
+| P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | done |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | Claude Code prompt or direct audit file | todo |
-| P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | todo |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | todo |
 | P1 | Ethics / Political casebooks | makes moral and institutional theory usable on real cases | direct new files | todo |
 | P2 | Paper-facing outlines | converts repository content into publishable trajectories | direct new files | todo |
@@ -283,7 +285,9 @@ AI ethics discussions route through S5/S6 rather than vague agency language.
 
 ### Task 4.1 — Create SRT experimental roadmap
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 Experiments/SRT_Experimental_Roadmap_v1.md
@@ -305,13 +309,25 @@ Initial experiment families:
 d-value vs salience;
 Psi_f vs prediction error;
 L2 hardening vs memory / habit;
-subjecthood threshold vs self-report;
+subjecthood threshold vs AI self-report;
 friction export vs institutional legitimacy.
 ```
 
-**Execution method**: direct new file.
+It includes:
 
-**Done condition**:
+```text
+SRT-specific prediction;
+nearby theories;
+proxy measurements;
+baselines;
+expected results;
+failure conditions;
+narrowing conditions;
+pilot priority list;
+standard experiment card.
+```
+
+Done condition met:
 
 ```text
 SRT has a readable path from philosophical claims to staged empirical work.
@@ -654,8 +670,8 @@ Recommended next steps:
 2. Core/SRT_Validation_Template.md.                              DONE
 3. AI/SRT_AI_Consciousness_Evaluation_Rubric.md.                 DONE
 4. AI/SRT_AI_Agency_Responsibility_Note.md.                      DONE
-5. Experiments/SRT_Experimental_Roadmap_v1.md.                   NEXT
-6. SRT_Terminology_Consistency_Audit.md.
+5. Experiments/SRT_Experimental_Roadmap_v1.md.                   DONE
+6. SRT_Terminology_Consistency_Audit.md.                         NEXT
 7. Neuroscience/SRT_Neuro_Predictions_Table.md.
 8. Ethics / Political casebooks.
 9. Paper outlines.
@@ -669,12 +685,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create Experiments/SRT_Experimental_Roadmap_v1.md
+Create SRT_Terminology_Consistency_Audit.md
 ```
 
 Reason:
 
-> Registry, validation template, and AI flagship application are now in place. The next bottleneck is experimental tractability: a staged roadmap from cognitive proxies to neural, AI, social, and cross-domain flagship predictions.
+> Registry, validation, AI flagship application, and experimental roadmap are now in place. The next bottleneck is semantic drift: SRT uses many aliases for `L0`, `L1`, `L2`, `Psi_f`, `d-value`, `theta`, `G_hat_theta`, subjecthood, consciousness, agency, and responsibility.
 
 ---
 
