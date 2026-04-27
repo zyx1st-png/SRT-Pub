@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v8
+status: active_v9
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -33,6 +33,7 @@ dependency:
   - SRT_Terminology_Consistency_Audit.md
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
+  - Philosophy/SRT_Political_Casebook.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
@@ -77,14 +78,14 @@ AI agency / responsibility note created;
 Experimental roadmap v1 created;
 Terminology consistency audit created;
 Neuroscience differential prediction table created;
-Ethics casebook created.
+Ethics casebook created;
+Political / institutional casebook created.
 ```
 
 Current next-stage goal:
 
 ```text
-From guardrail hardening -> toward case-based politics / institutions,
-paper-ready outputs, and optional cleanup / merge passes.
+From guardrail hardening -> toward paper-ready outputs and optional cleanup / merge passes.
 ```
 
 ---
@@ -101,7 +102,7 @@ paper-ready outputs, and optional cleanup / merge passes.
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
 | P1 | Ethics casebook | makes ethics guardrails usable on concrete cases | direct new file | done |
-| P1 | Political / institutional casebook | makes political philosophy usable on institutional diagnosis | direct new file | todo |
+| P1 | Political / institutional casebook | makes political philosophy usable on institutional diagnosis | direct new file | done |
 | P2 | Paper-facing outlines | converts repository content into publishable trajectories | direct new files | todo |
 | P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | todo |
 | P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | optional |
@@ -263,33 +264,6 @@ Created file:
 Philosophy/SRT_Ethics_Casebook.md
 ```
 
-The casebook includes:
-
-```text
-family obligation;
-school discipline;
-medical triage;
-eldercare responsibility;
-algorithmic recommendation;
-public shaming;
-AI tool misuse.
-```
-
-It uses the template:
-
-```text
-Relevant L2;
-Affected subjects;
-Moral intensity;
-Moral reality;
-Moral legitimacy;
-Hidden Psi_f;
-Future selectability;
-Responsibility / culpability / repair;
-What would improve the structure;
-Failure / narrowing condition.
-```
-
 Done condition met:
 
 ```text
@@ -298,27 +272,15 @@ Ethics guardrails become usable diagnostic tools.
 
 ### Task 6.2 — Create political / institutional casebook
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 Philosophy/SRT_Political_Casebook.md
 ```
 
-Case template:
-
-```text
-Institution:
-Stabilized L2:
-Who benefits:
-Who pays hidden Psi_f:
-Who gains future selectability:
-Who loses reselection capacity:
-Exit / appeal / correction channel:
-Legitimacy judgment:
-Repair path:
-```
-
-Cases:
+The casebook includes:
 
 ```text
 bureaucratic process;
@@ -331,9 +293,22 @@ algorithmic governance;
 workplace hierarchy.
 ```
 
-**Execution method**: direct new file.
+It uses the template:
 
-**Done condition**:
+```text
+Stabilized L2;
+Selection power;
+Who benefits;
+Who pays hidden Psi_f;
+Future selectability;
+Exit / appeal / correction channel;
+Consequence return;
+Legitimacy judgment;
+Repair path;
+Failure / narrowing condition.
+```
+
+Done condition met:
 
 ```text
 Political philosophy becomes applicable to concrete institutional diagnosis.
@@ -490,8 +465,8 @@ Recommended next steps:
 6. SRT_Terminology_Consistency_Audit.md.                         DONE
 7. Neuroscience/SRT_Neuro_Predictions_Table.md.                  DONE
 8. Philosophy/SRT_Ethics_Casebook.md.                            DONE
-9. Philosophy/SRT_Political_Casebook.md.                         NEXT
-10. Paper outlines.
+9. Philosophy/SRT_Political_Casebook.md.                         DONE
+10. Paper outlines.                                              NEXT
 11. Only then consider second formula-role pass and deeper long-file reorganization.
 ```
 
@@ -502,12 +477,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create Philosophy/SRT_Political_Casebook.md
+Create Papers/SRT_Selection_Realism_Paper_Outline.md
 ```
 
 Reason:
 
-> Ethics casebook is now created. The next bottleneck is applying collective L2, friction export, future selectability, appeal/correction channels, and legitimacy tests to concrete institutions.
+> Registry, validation, AI flagship application, experimental roadmap, terminology audit, neuroscience predictions, and casebooks are now in place. The next stage is converting repository material into publishable paper trajectories.
 
 ---
 
