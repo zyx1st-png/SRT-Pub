@@ -1,22 +1,44 @@
 ---
 id: SRT-PHIL-FOUNDATIONS-COMPACT-CORE
 type: summary
-tags: [Philosophy, Compact Core, Ontology, Explanatory Gap, Paradox, Domain Exposition, Hardening]
-status: active_v3
+tags: [Philosophy, Compact Core, Ontology, Selection-Realism, Layered-Realism, Explanatory Gap, Paradox, Normativity, Social Ontology, Hardening]
+status: active_v4
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
 claim_level: P2-P5
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-PHIL-FOUNDATIONS, SRT-PHIL-OBJECTION-LEDGER]
+canonical: false
+dependency:
+  - SRT-CANONICAL-REGISTRY
+  - SRT-CLAIM-LADDER
+  - SRT-CORE-21
+  - SRT-D-VALUE-CANONICAL
+  - SRT-PSIF-CANONICAL
+  - SRT-T-DIR-CANONICAL
+  - SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27
+  - SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27
+  - SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27
+  - SRT-PHIL-SELECTION-REALISM-LAYERED-REALISM-PATCH-2026-04-27
+  - SRT-PHIL-FOUNDATIONS
+  - SRT-PHIL-OBJECTION-LEDGER
+machine_summary: >
+  Compact entry point for SRT philosophy. Current hardened reading: SRT is selection realism
+  plus layered realism plus anti-relativist constraint realism. This file clarifies L0 as a
+  modal field of selectability, selection-before-existence as manifestational priority,
+  reality as layered strength, Psi_f as layer-typed friction, normativity as stabilization
+  without automatic legitimacy, social ontology as collective L2, consciousness as thresholded
+  selection, and validation as non-reductive structural validation.
 ---
 
 # SRT Philosophical Foundations — Compact Core
 
-> **Role**: This is the short entry point for SRT philosophy. Read it before `SRT_Philosophy_Foundations.md`.
+> **Role**: Short entry point for SRT philosophy. Read this before `SRT_Philosophy_Foundations.md`.
+>
 > **Status**: Philosophy-domain exposition and bridge layer. It does **not** define P0/P1 core terms.
-> **Dependency**: Core definitions of `L_0/L_1/L_2`, `\hat G_\theta`, `d-value`, `\Psi_f`, and `T_dir` remain in the canonical Core / Core_Law files.
-> **Claim discipline**: Main claims are P2/P3 philosophical readings; compact slogans are P5; operational predictions, where present, are P4 candidates.
-> **Hardening note**: This version adds existence-level distinctions, `\Psi_f` resistance proxies, `L_1` anchoring language, subjecthood thresholds, and formula-role labels to reduce idealist, panpsychist, physicalist, and mathematical-metaphor misreadings.
+>
+> **Canonical dependency**: Core definitions of `L_0/L_1/L_2`, `G_hat_theta`, `d-value`, `Psi_f`, and `T_dir` remain in Core / Core_Law / canonical files.
+>
+> **Current hardening line**: SRT should be read as **selection realism + layered realism + anti-relativist constraint realism**.
 
 ---
 
@@ -24,53 +46,65 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 SRT begins neither from matter nor mind as already-given substances, but from **constrained selection**: a latent possibility becomes a determinate reality only when it is cut, anchored, and stabilized by an embodied operator under real friction.
 
-Compressed formula:
+```text
+L_0 --[G_hat_theta, paying Psi_f]--> L_1 --[stabilization]--> L_2
+```
 
-\[
-L_0 \xrightarrow{\hat G_\theta,\ \Psi_f} L_1 \xrightarrow{\text{stabilization}} L_2
-\]
-
-**Formula role**: compact model / orientation diagram, not a full canonical definition.
+**Formula role**: compact orientation model, not a full canonical definition.
 
 Plain version:
 
-> Reality is not merely found and not merely invented; it is selected under constraint.
+> Reality is not merely found and not merely invented; it is selected under constraint, stabilized through history, and tested by resistance.
 
 ---
 
 ## 1. What SRT philosophy is not
 
-SRT is easy to misread because it uses terms that overlap with many older traditions. The following boundaries should be kept explicit.
+SRT is easy to misread because it overlaps with older metaphysical vocabularies. Keep these boundaries explicit.
 
 | Misreading | Corrective reading |
 |---|---|
-| **Subjective idealism**: reality is whatever a subject projects. | No. `\theta` filters, but `\Psi_f` resists. Construction has cost. |
+| **Subjective idealism**: reality is whatever a subject projects. | No. `theta` filters, but `Psi_f` resists. Construction has cost. |
 | **Naive physicalism**: only stabilized third-person descriptions are real. | No. physical description is a powerful `L_2` stabilization, not the whole process of manifestation. |
 | **Dualism**: mind and matter are two separate substances. | No. mind/matter contrasts are phase and layer differences within selection dynamics. |
 | **Panpsychism**: every micro-entity already has consciousness. | No. micro-selection does not automatically imply macro-subjecthood; subjecthood requires further closure, `d-value`, and integration conditions. |
 | **Relativism**: every projection is equally valid. | No. projections remain answerable to anchoring cost, stability, intervention, and cross-operator alignment. |
+| **Hidden-world modal realism**: `L_0` is a parallel warehouse of fully formed objects. | No. `L_0` is better read as a modal field of selectability / condition of possible manifestation. |
+| **Stability-as-goodness**: stable `L_2` norms are morally justified. | No. stabilization explains reality of constraint; legitimacy requires further tests. |
 
 ---
 
-## 2. The basic ontology: three layers and one operator
+## 2. Current hardened philosophical reading
 
-SRT uses a three-layer ontology:
+SRT should now be read as:
 
-| Layer | Minimal meaning | Philosophical correlate |
-|---|---|---|
-| `L_0` | Latent field of not-yet-selected possibilities | potentiality, moduli space, pre-objective field |
-| `L_1` | Manifest event, object, or experience after selection | appearance, lived event, determinate occurrence |
-| `L_2` | Stabilized selection history | language, norm, habit, institution, law, model |
+> **Selection realism + layered realism + anti-relativist constraint realism.**
 
-The operator is not an abstract view from nowhere:
+This means:
 
-\[
-L_1(t)=\hat G_\theta[L_0(t)]
-\]
+1. Reality is not a flat inventory of already-finished objects.
+2. Determinate reality arises through constrained selection, anchoring, and stabilization.
+3. Selection is not subjective invention; it must pay friction and survive resistance.
+4. Reality has strength levels: local manifestation, stabilized reality, cross-operator reality, and canonical physical reality.
+5. Normativity, purpose, and value are not externally pasted onto a neutral world; they are generated through high-`d-value` selection and stabilization, but legitimacy requires further tests.
 
-**Formula role**: compact model; the canonical semantics of `\hat G_\theta` belong to Core / Core_Law.
+Shortest hardening slogan:
 
-`\theta` encodes embodied, historical, cognitive, social, and technical constraints. A valid selection is therefore never parameter-free.
+> **Do not make SRT less bold. Make every bold sentence pay its layer, cost, threshold, and failure condition.**
+
+Associated soft-point map: `PH-SS-01` to `PH-SS-12` in `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`.
+
+---
+
+## 3. The basic ontology: three layers and one operator
+
+| Layer | Minimal meaning | Philosophical correlate | Guardrail |
+|---|---|---|---|
+| `L_0` | modal field of not-yet-selected possibilities | potentiality / pre-objective selectability | not a hidden object-world |
+| `L_1` | manifest event, object, or experience after selection | appearance / lived event / determinate occurrence | not a second substance |
+| `L_2` | stabilized selection history | language / norm / habit / institution / law / model | not automatically legitimate |
+
+The operator is not a view from nowhere. `theta` encodes embodied, historical, cognitive, social, technical, and scale-specific constraints. A valid selection is never parameter-free.
 
 Philosophical consequence:
 
@@ -78,62 +112,88 @@ Philosophical consequence:
 
 ---
 
-## 3. Selection-first ontology
+## 4. `L_0` as modal field of selectability
 
-The strongest philosophical inversion in SRT is:
+The safest philosophical reading of `L_0` is not “a hidden realm full of already-existing possible things.”
 
-\[
-\text{Existence} \equiv \text{Being Selected}
-\]
+Bridge statement:
+
+> `L_0` is the modal field of selectability: the condition under which differences can become manifest through constrained selection.
+
+`L_0` is not:
+
+- a second physical universe;
+- a warehouse of fully formed possible objects;
+- private imagination;
+- mystical potentiality ocean;
+- many-worlds ontology by default.
+
+Safer slogan:
+
+> `L_0` is not where hidden things are; it is the field of what can become determinate.
+
+**PH-SS addressed**: `PH-SS-01`.
+
+---
+
+## 5. Selection-before-existence as manifestational priority
+
+The strongest philosophical inversion in SRT is often stated as:
+
+```text
+Existence ≡ Being Selected
+```
 
 **Formula role**: philosophical thesis / bridge slogan. It must be read with the existence-level distinctions below.
 
-This should not be read as “human perception creates the universe.” It means that determinate existence, for any operator-relative domain, is not a bare item on an inventory list; it is the result of a cut from latency into manifestation.
+This should not mean “a human subject existed before the world and then created it.” It means that determinate existence, for any operator-relative domain, is not a bare item on an inventory list; it is the result of a cut from latency into manifestation.
 
-Better slogan:
+| Priority type | SRT status |
+|---|---|
+| Temporal priority | Avoid unless explicitly modeled. |
+| Logical priority | Yes: determinate existence depends on selection conditions. |
+| Manifestational priority | Yes: a possible difference becomes manifest through selection. |
+| Stabilization priority | Stronger reality requires repeated anchoring and `L_2` closure. |
 
-> Being is not first a thing with properties; being is a stabilized result of selection.
+Safer formulation:
 
-This gives SRT a clean alternative to three unsatisfactory options:
+> Selection is not chronologically earlier than all existence; it is manifestationally prior to determinate existence.
 
-1. **Object-first metaphysics**: assumes determinate objects before explaining how determinacy appears.
-2. **Subject-first idealism**: overstates the creative power of the observer.
-3. **Mystical ineffability**: protects experience by refusing to analyze its conditions.
+**PH-SS addressed**: `PH-SS-02`.
 
-SRT instead says: selection is participatory, but participation is constrained by friction.
+---
 
-### 3.1 Def-Phil-Existence-Levels
+## 6. Layered realism: reality has thickness
 
-To prevent idealist and anthropocentric misreadings, “existence” should be typed.
+SRT should not force every real thing into one ontological bucket. Reality has thickness, strength, and hardening degree.
 
-| Level | Meaning | SRT status | Failure mode |
+| Level | Meaning | Example | Failure mode |
 |---|---|---|---|
-| **E1 — local manifestation** | something appears or is selected for a specific operator under a specific `\theta` | `L_0 \to L_1` event | hallucination, fantasy, unstable interpretation, private appearance |
-| **E2 — stabilized reality** | a selected structure persists across time, action, memory, correction, and repeated anchoring | `L_1 \to L_2` stabilization | local appearance fails to become durable constraint |
-| **E3 — cross-operator reality** | a structure remains alignable across operators, instruments, interventions, and contexts | intersubjective / interventional robustness | projection remains private or collapses under independent tests |
-| **E4 — canonical physical reality** | a structure shows multi-scale resistance and repeatability independent of a single observer’s preferred description | high-stability `L_2` / scientific stabilization | model overfits local operator or local measurement regime |
+| **E1 — local manifestation** | selected for one operator under one `theta` | dream, hallucination, private perception | unstable, private, non-repeatable |
+| **E2 — stabilized reality** | persists through repetition, memory, action, correction | durable habit, stable object-use | fails to become durable constraint |
+| **E3 — cross-operator reality** | alignable across operators, instruments, contexts, interventions | public object, shared fact, robust institution | collapses under independent tests |
+| **E4 — canonical physical reality** | multi-scale resistant, repeatable, scientifically stabilized | physical law, measured constant, stable biological body | local model overfit |
 
 Use rule:
 
 > `Existence ≡ Being Selected` first licenses E1. Stronger existence claims require E2/E3/E4 stabilization tests.
 
-This lets SRT say that dreams, hallucinations, scientific objects, moral norms, institutions, and physical bodies are all real in different ways, without flattening them into the same ontological status.
+This lets SRT say that dreams, hallucinations, scientific facts, legal institutions, and physical objects are not equally real, but they are also not simply sorted into “real” and “unreal.”
+
+**PH-SS addressed**: `PH-SS-03`, `PH-SS-12`.
 
 ---
 
-## 4. Filter–resistance duality
+## 7. Filter-resistance duality
 
-The key anti-relativist guardrail is:
+The key anti-idealist and anti-relativist guardrail is:
 
-\[
-\text{Filter Shape}=f(\theta)
-\]
-
-\[
-\text{Resistance Cost}=\Psi_f(L_0,\hat G_\theta)>0
-\]
-
-**Formula role**: bridge model / guardrail. `\Psi_f` itself remains canonically owned by Core / Core_Law.
+```text
+theta filters;
+Psi_f resists;
+L_2 stabilizes;
+cross-operator correction tests.
+```
 
 This duality lets SRT keep both sides of a difficult truth:
 
@@ -144,16 +204,33 @@ Most compact formulation:
 
 > What can be constructed is the interpretive cut; what cannot be waived is the cost of anchoring.
 
-This is why SRT can accept participatory observation without collapsing into “anything goes.” A selection that cannot pay its anchoring cost does not stabilize.
+A selection that cannot survive prediction, intervention, repetition, cross-operator checking, or long-term stabilization remains weakly real or locally manifest only.
 
-### 4.1 `\Psi_f` is not subjective difficulty
+**PH-SS addressed**: `PH-SS-04`, `PH-SS-12`.
 
-A recurring soft spot is the possible confusion between `\Psi_f` and felt difficulty. In philosophy files, use the following distinction:
+---
+
+## 8. `Psi_f` is not one simple cost
+
+A recurring soft spot is the possible confusion between `Psi_f` and felt difficulty. In philosophy files, use the following distinction:
 
 | Not enough | Stronger SRT reading |
 |---|---|
 | “This feels hard to me.” | subjective difficulty / affective load |
-| “This interpretation is resisted by prediction, intervention, repetition, and other operators.” | candidate `\Psi_f` resistance |
+| “This interpretation is resisted by prediction, intervention, repetition, and other operators.” | candidate `Psi_f` resistance |
+
+Layer typing:
+
+| Symbol | Layer | Meaning |
+|---|---|---|
+| `Psi_f^ont` | ontological / manifestational | resistance of a candidate possibility becoming determinate |
+| `Psi_f^inf` | information-geometric | model-update, discrimination, Fisher-like cost |
+| `Psi_f^emb` | embodied / action | sensorimotor and bodily cost of re-anchoring |
+| `Psi_f^norm` | social / normative | resistance of changing habits, institutions, obligations, or identities |
+
+Important guardrail:
+
+> Fisher information metric may express `Psi_f` on an information-geometric slice; it does not exhaust the whole meaning of ontological friction.
 
 Operational resistance proxies:
 
@@ -163,15 +240,13 @@ Operational resistance proxies:
 | Intervention resistance | Does the structure resist attempts to alter it by intention, reinterpretation, or local manipulation? |
 | Repetition cost | How much cost is required to reproduce the same anchoring across time? |
 | Cross-operator alignment cost | How much coordination is required for multiple operators to stabilize the same object or claim? |
-| Model-update cost | How much must `\theta` or `L_2` be reorganized for the selection to remain coherent? |
+| Model-update cost | How much must `theta` or `L_2` reorganize for the selection to remain coherent? |
 
-Use rule:
-
-> A philosophical appeal to `\Psi_f` should state whether it means subjective difficulty, operational resistance, or canonical friction.
+**PH-SS addressed**: `PH-SS-05`.
 
 ---
 
-## 5. `L_1` as anchoring event, not extra substance
+## 9. `L_1` as anchoring event, not extra substance
 
 SRT should not defend `L_1` as a ghostly substance added to physics. The stronger reading is:
 
@@ -181,13 +256,11 @@ A complete third-person description may describe a state, but SRT asks a differe
 
 > Under what operator, cost, boundary, and stabilization conditions does that state become a manifest event?
 
-This reframes the physicalist objection. SRT need not deny physical description; it asks whether physical description also accounts for manifestation, anchoring, first-person access, and update cost.
+Contrastive model:
 
-Hardening formula:
-
-\[
-\text{Physical description}(S) \not\equiv \text{Anchoring event}(S,\hat G_\theta,\Psi_f)
-\]
+```text
+Physical description(S) is not identical to Anchoring event(S, G_hat_theta, Psi_f)
+```
 
 **Formula role**: contrastive model. It is not a denial that anchoring has physical implementation.
 
@@ -197,48 +270,35 @@ Withdrawal condition:
 
 ---
 
-## 6. Subjecthood threshold: micro-selection is not macro-consciousness
+## 10. Subjecthood threshold: micro-selection is not macro-consciousness
 
 SRT can allow selection events at many scales without saying that every scale already contains a subject.
 
-Use the following threshold language:
+A selection process becomes a candidate conscious subject only when additional thresholds are met:
 
 | Condition | Why it matters |
 |---|---|
-| `d-value > 0` | there is existential stake or concern, not mere state transition |
-| failure-sensitive update | the system changes when its selection fails |
-| integrated selection bandwidth | multiple selection channels can be coordinated as one perspective |
-| minimal memory / `L_2` closure | the system can stabilize traces across time |
-| boundary maintenance | the system distinguishes self-relevant from non-self-relevant perturbations |
-| cross-time reidentification | there is continuity sufficient for a subject-like trajectory |
+| structured `d-value > 0` | existential stake or concern, not mere state transition |
+| failure-sensitive update | the system changes when selection fails |
+| integrated selection bandwidth | multiple selection channels coordinate as one perspective |
+| minimal memory / `L_2` closure | traces stabilize across time |
+| boundary maintenance | self-relevant and non-self-relevant perturbations are distinguished |
+| counterfactual access | the system can track alternatives |
+| cross-time reidentification | continuity is sufficient for a subject-like trajectory |
 
-Compact definition:
+Guardrail:
 
-\[
-\text{Subjecthood} \Rightarrow d>0\ \land\ U_{bind}>\tau\ \land\ L_2^{min}\ \land\ \text{boundary maintenance}
-\]
+> A selection event is not yet a subject. Consciousness requires high-stake, integrated, boundary-maintaining selection across time.
 
-**Formula role**: threshold model / candidate bridge, not canonical P0 definition.
-
-Use rule:
-
-> A selection event is not yet a subject. Subjecthood requires integrated, failure-sensitive, boundary-maintaining selection across time.
-
-This is the main guardrail against collapsing SRT into panpsychism.
+**PH-SS addressed**: `PH-SS-10`.
 
 ---
 
-## 7. The explanatory gap as interface, compression, and cost
+## 11. The explanatory gap as interface, compression, and cost
 
-SRT does not claim to magically solve the hard problem. It weakens and types the problem:
+SRT does not claim to magically solve the hard problem. It weakens and types the problem.
 
-\[
-\mathcal L_{gap}=\dim(L_1^{qualia})-\dim(L_2^{language})>0
-\]
-
-**Formula role**: model / placeholder. Unless operationalized, `dim` means expressive degrees of freedom, not a canonical geometric dimension.
-
-The gap should be treated as a family of claims, not one dramatic metaphysical wall.
+The explanatory gap should be treated as a family of claims, not one dramatic metaphysical wall.
 
 | Version | Claim | What must be withdrawn if weakened |
 |---|---|---|
@@ -246,7 +306,7 @@ The gap should be treated as a family of claims, not one dramatic metaphysical w
 | Dimensional compression | some `L_1` structures lose information when projected into `L_2` | withdraw hard dimension-ceiling language if better encodings remove the loss |
 | High-cost approximation | approximation is possible but too costly under current time, training, or shared-state conditions | withdraw impossibility talk; keep payability/scaffold analysis |
 
-Possible operational readings of `dim`:
+Possible operational readings of “dimension”:
 
 | Reading | Proxy |
 |---|---|
@@ -259,19 +319,17 @@ Philosophical payoff:
 
 > SRT turns “the ineffable” into a structured problem of interface capacity, projection loss, and approximation cost.
 
-This avoids both eliminativism and lazy mysticism.
-
 ---
 
-## 8. Paradox as boundary failure
+## 12. Paradox as boundary failure
 
-SRT diagnoses many philosophical paradoxes as illegal crossing or flattening of layers:
+SRT diagnoses many philosophical paradoxes as illegal crossing or flattening of layers.
 
-\[
-\text{Paradox-risk} \Leftarrow \text{unstratified self-finalization}\ \lor\ \text{illegal cross-layer equivalence}
-\]
+Diagnostic model:
 
-**Formula role**: diagnostic model, not a complete formal solution to any specific paradox.
+```text
+Paradox-risk occurs when a system attempts unstratified self-finalization or illegal cross-layer equivalence.
+```
 
 Two main types:
 
@@ -284,111 +342,154 @@ Important boundary:
 
 > SRT does not say all self-reference is bad. It targets unstratified self-finalization.
 
-Safe self-reference includes indexical statements, quoted self-reference, meta-language descriptions, delayed feedback, and Gödel-style encoded self-reference. These may produce incompleteness or recursion, but not necessarily pathological paradox.
+Safe self-reference includes indexical statements, quoted self-reference, meta-language descriptions, delayed feedback, and Gödel-style encoded self-reference.
 
 ---
 
-## 9. Normativity as stabilization, not automatic legitimacy
+## 13. Purpose as high-d-value attractor, not cosmic destiny
 
-`L_2` is the stabilization of selection history:
+SRT should avoid mystical teleology. It does not need to claim that the universe has a prewritten purpose.
 
-\[
-L_2 \equiv \{\sigma:\hat G_\theta[\sigma]=\sigma\}
-\]
+Safer reading:
 
-**Formula role**: compact model. Legitimacy cannot be inferred from stabilization alone.
+> Purpose is directionality generated when high-`d-value` differences shape selection trajectories over time.
 
-This explains how norms, concepts, institutions, and habits become real constraints. But it does **not** mean every stabilized norm is justified.
+Purpose emerges when some possible states matter for:
 
-Crucial distinction:
+- future selectability;
+- system continuity;
+- identity maintenance;
+- risk and harm;
+- social recognition;
+- long-term stabilization.
 
-| Structure | Meaning |
-|---|---|
-| Stabilized closure | a pattern has become self-maintaining |
-| Legitimate closure | a pattern preserves or expands future selectable possibilities under acceptable cost |
-| Pathological closure | a pattern survives by narrowing future selection, hiding cost, or exporting friction to weaker operators |
+Purpose is therefore not an external endpoint but an attractor-like direction in selection dynamics.
 
-Therefore:
+**PH-SS addressed**: `PH-SS-07`, `PH-SS-08`.
+
+---
+
+## 14. Normativity as stabilization, not automatic legitimacy
+
+`L_2` explains how norms become real constraints, but it does **not** mean every stabilized norm is justified.
+
+| Type | Meaning | Moral status |
+|---|---|---|
+| Descriptive norm | a repeated and stabilized pattern | real but not automatically good |
+| Functional norm | a pattern that helps a system continue | useful but not sufficient for legitimacy |
+| Evaluative norm | a pattern worth protecting or pursuing | requires legitimacy tests |
+| Pathological norm | a stable pattern that survives by coercion, occlusion, or friction export | real but ethically suspect |
+
+Legitimacy tests:
+
+1. Does it preserve or expand future selectability?
+2. Does it reduce unnecessary `Psi_f` rather than export it to weaker agents?
+3. Does it widen cross-subject `d-value` bandwidth?
+4. Does it protect subject-generation rather than suppress it?
+5. Does it contain correction, exit, or reversibility channels?
+
+Core distinction:
 
 > SRT explains how norms become real before it judges whether they are good.
 
-This distinction is essential for ethics and political philosophy.
+**PH-SS addressed**: `PH-SS-06`, `PH-SS-09`, `PH-SS-12`.
 
 ---
 
-## 10. Ontological relativity without relativism
+## 15. Social ontology: collective `L_2`
 
-Different operators may project the same latent field differently:
+Social facts are not merely private beliefs, and they are not ordinary physical objects. In SRT, they are best read as collective `L_2` structures.
 
-\[
-\hat G_{\theta_A}[L_0]\neq \hat G_{\theta_B}[L_0]
-\]
+| Social object | SRT reading |
+|---|---|
+| Money | exchange pathway stabilized by shared trust, recognition, and enforcement |
+| Law | normative `L_2` stabilized by authority, memory, enforcement, and consequence return |
+| Identity | self-selection and other-recognition jointly stabilized across time |
+| Culture | cross-generational selection preferences hardened into shared forms |
+| Organization | role, responsibility, and action pathways stabilized as collective agency |
+| Morality | high-`d-value` social conflict stabilized into legitimacy-seeking norms |
 
-But SRT does not infer that all projections are equal. Objectivity is reconstructed as cross-operator alignment:
+Minimal claim:
 
-\[
-\exists h:L_2^{(A)}\to L_2^{(B)}\ \text{with stable correspondence}
-\]
+> Society is not the sum of private minds; it is the sedimentation of cross-subject selection paths.
 
-**Formula role**: bridge model for objectivity; not a literal topological proof unless formalized in a specified domain.
+**PH-SS addressed**: `PH-SS-09`.
 
-In plain language:
+---
+
+## 16. Ontological relativity without relativism
+
+Different operators may project the same latent field differently, but SRT does not infer that all projections are equal.
+
+Objectivity is reconstructed as cross-operator alignment:
 
 > Truth is not a view from nowhere; it is stable alignment across constrained views.
 
 A classification is licensed when it improves prediction, intervention, transfer, and shared stabilization. This allows pluralism without surrendering standards.
 
----
+Anti-relativist constraints:
 
-## 11. Why the philosophy section matters
+- anchoring cost;
+- intervention resistance;
+- repeated stabilization;
+- cross-operator alignment;
+- environmental feedback;
+- historical path dependence;
+- downward `L_2` constraints.
 
-The philosophy section is not decorative. It protects SRT from four reduction errors:
-
-1. reducing experience to already-stabilized description;
-2. reducing reality to subjective construction;
-3. reducing normativity to arbitrary preference;
-4. reducing paradox to mere logical entertainment rather than boundary pathology.
-
-Its central job is to keep the whole theory layer-aware:
-
-```text
-latent possibility  -> manifest event  -> stabilized description
-L_0                 -> L_1             -> L_2
-```
-
-Without this discipline, SRT collapses either into vague metaphysics or into ordinary physicalism with new labels.
+**PH-SS addressed**: `PH-SS-12`.
 
 ---
 
-## 12. Hardest objections
+## 17. Non-reductive validation
 
-The following objections should stay visible. They make the theory stronger by preventing overclaiming.
+SRT should not pretend that its primitives can always be directly measured by a single instrument. But it also should not escape empirical discipline.
+
+| Validation layer | Meaning |
+|---|---|
+| Proxy measurement | measurable stand-ins for `d-value`, `Psi_f`, `L_2` stability, or anchoring cost |
+| Structural convergence | the same selection-cost-stabilization pattern appears across domains |
+| Differential prediction | SRT predicts something nearby theories do not clearly predict |
+| Failure / narrowing condition | what would force SRT to retreat, defer, or specialize |
+
+Minimal statement:
+
+> SRT’s empirical discipline comes from proxy operationalization, cross-domain structural convergence, and differential predictions against nearby theories, not from directly photographing `L_0`.
+
+**PH-SS addressed**: `PH-SS-11`.
+
+---
+
+## 18. Hardest objections
 
 | Objection | Why it matters | Current SRT response | If the objection succeeds |
 |---|---|---|---|
-| Physicalism may explain `L_1` without extra ontology. | It challenges the need for triadic layers. | `L_1` is anchoring event, not extra substance; physicalism must also explain manifestation, anchoring, first-person access, and update cost. | Recast SRT as interface theory rather than meta-ontology. |
-| Subjective idealism may absorb selection-first language. | It challenges `Existence ≡ Being Selected`. | Type existence into E1/E2/E3/E4 and pair selection with `\Psi_f` resistance. | Weaken selection-first slogans to operator-relative manifestation claims. |
-| Panpsychism may better explain continuity from micro to macro. | It challenges selection-first subjecthood. | Require `d-value`, integration, closure, and subject-boundary criteria before calling something a subject. | Admit SRT only reframes combination unless thresholds are operationalized. |
-| Language expansion may dissolve most ineffability. | It challenges the explanatory-gap reading. | Type the gap into interface, compression, and cost versions. | Withdraw principle-level ineffability; keep local interface/cost claims. |
-| Sophisticated representationalism may absorb “protocol-first” SRT. | It challenges anti-representational rhetoric. | Allow representations where specificity, invariance, and downstream use explain success. | Restrict protocol-first claims to online-action or high-payability contexts. |
-| Formal logics already handle self-reference. | It challenges the paradox theorem. | Restrict the diagnosis to unstratified closure attempts and illegal cross-layer equivalence. | Withdraw blanket paradox language; keep boundary-typing only. |
+| Physicalism may explain `L_1` without extra ontology. | It challenges triadic necessity. | `L_1` is anchoring event, not extra substance; physicalism must also explain manifestation, anchoring, first-person access, and update cost. | Recast SRT as interface theory rather than meta-ontology. |
+| Subjective idealism may absorb selection-first language. | It challenges `Existence ≡ Being Selected`. | Type existence into E1/E2/E3/E4 and pair selection with `Psi_f` resistance. | Weaken slogans to operator-relative manifestation claims. |
+| `L_0` may look like hidden-world metaphysics. | It challenges philosophical seriousness. | Read `L_0` as modal field of selectability, not object inventory. | Downgrade object-like `L_0` claims to metaphor or relocate to Core_Law. |
+| Panpsychism may better explain continuity from micro to macro. | It challenges subjecthood. | Require `d-value`, integration, closure, and boundary criteria before subjecthood. | Admit SRT reframes rather than solves combination. |
+| Language expansion may dissolve ineffability. | It challenges explanatory-gap claims. | Type the gap into interface, compression, and cost versions. | Withdraw principle-level ineffability; keep local interface/cost claims. |
+| Formal logics already handle self-reference. | It challenges paradox theory. | Restrict diagnosis to unstratified closure and illegal cross-layer equivalence. | Withdraw blanket paradox language; keep boundary-typing only. |
+| Is-ought gap blocks normative upgrade. | It challenges ethics. | Separate stabilized norm from legitimate norm. | Keep ethics descriptive until legitimacy tests are specified. |
+| SRT is unfalsifiable. | It challenges empirical value. | Use proxies, structural convergence, and differential predictions. | Reclassify as metaphysical program or narrow bridge theory. |
 
 ---
 
-## 13. Editing rules for this file
+## 19. Editing rules for this file
 
 1. Do not define core primitives here; link to Core / Core_Law.
 2. Keep slogans visibly downstream of formal claims.
 3. Mark P4 predictions with proxies and failure conditions.
 4. When adding a philosophical comparison, state both the similarity and the difference.
-5. Prefer “SRT reads X as…” over “SRT proves X…” unless a canonical proof exists.
-6. Every equation in this file should declare its formula role: definition, model, analogy, proxy, or placeholder.
+5. Prefer “SRT reads X as...” over “SRT proves X...” unless a canonical proof exists.
+6. Every formula should declare its role: definition, model, analogy, proxy, or placeholder.
+7. Major upgrades should state which `PH-SS` they address.
 
 ---
 
-## 14. Four-sentence conclusion
+## 20. Four-sentence conclusion
 
 1. Reality is triadic, not a single flat inventory of objects.
 2. Determinate existence is the result of constrained selection, but stronger reality claims require stabilization and cross-operator resistance.
-3. Experience, language, norm, institution, and subjecthood differ by layer, threshold, and stabilization state.
+3. Experience, language, norm, institution, subjecthood, and truth differ by layer, threshold, stabilization, and resistance.
 4. Philosophy’s hardest problems often arise when those layers are collapsed, over-identified, or forced into premature closure.
