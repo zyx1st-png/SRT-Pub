@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v19
+status: active_v20
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -34,6 +34,7 @@ dependency:
   - Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md
   - Experiments/SRT_D_Value_vs_Salience_Analysis_Plan_v0.md
   - Experiments/SRT_Pilot_Ethics_Note_v0.md
+  - Experiments/SRT_D_Value_vs_Salience_Experiment_Package_Review_v0.md
   - SRT_Terminology_Consistency_Audit.md
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
@@ -46,9 +47,9 @@ dependency:
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   Main optimization chain is complete enough for review, and the experiment branch now has
-  pilot cards, a first d-value vs salience stimulus bank, draft analysis plan, and pilot ethics note.
-  Remaining next actions should be narrow: create a pre-rating form template, create a data dictionary,
-  or start one manuscript.
+  pilot cards, a first d-value vs salience stimulus bank, draft analysis plan, pilot ethics note,
+  and experiment package review. The next narrow action is to create a pre-rating form template,
+  or pause before expanding.
 ---
 
 # SRT Next Optimization TODO
@@ -98,7 +99,8 @@ Optimization completion audit created;
 Pilot cards v1 created for d-value, Psi_f, and L2 hardening;
 d-value vs salience stimulus bank v0 created;
 d-value vs salience analysis plan v0 created;
-Pilot ethics note v0 created.
+Pilot ethics note v0 created;
+d-value vs salience experiment package review v0 created.
 ```
 
 Current next-stage goal:
@@ -125,7 +127,8 @@ Proceed narrowly in the experiment branch:
 | P1 | d-value vs salience stimulus bank | provides item pool and pre-rating dimensions | direct new file | done |
 | P1 | d-value vs salience analysis plan | makes first pilot statistically executable | direct new file | done |
 | P1 | Pilot ethics note | keeps first studies low-risk and reviewable | direct new file | done |
-| P1 | Pre-rating form template | makes first pilot easy to implement | direct new file | optional |
+| P1 | d-value vs salience package review | confirms package is ready for pre-rating form but not main pilot | direct new file | done |
+| P1 | Pre-rating form template | makes first pilot easy to implement | direct new file | optional next |
 | P1 | Data dictionary / analysis skeleton | improves implementation readiness | direct new file | optional |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
@@ -157,6 +160,7 @@ Experiments/SRT_Pilot_Cards_v1.md
 Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md
 Experiments/SRT_D_Value_vs_Salience_Analysis_Plan_v0.md
 Experiments/SRT_Pilot_Ethics_Note_v0.md
+Experiments/SRT_D_Value_vs_Salience_Experiment_Package_Review_v0.md
 ```
 
 Pilot cards now available:
@@ -178,7 +182,15 @@ analysis model;
 failure / narrowing rules;
 minimal preregistration text;
 ethics note;
-participant protection guardrails.
+participant protection guardrails;
+experiment package review.
+```
+
+Package review verdict:
+
+```text
+ready for pre-rating form template;
+not yet ready for main pilot data collection.
 ```
 
 ---
