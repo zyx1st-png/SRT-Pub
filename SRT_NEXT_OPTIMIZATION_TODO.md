@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v3
+status: active_v4
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -28,11 +28,13 @@ dependency:
   - Core/SRT_Core_24_Floor_Normativity_Verification.md
   - Core/SRT_Validation_Template.md
   - AI/SRT_AI_Consciousness_Evaluation_Rubric.md
+  - AI/SRT_AI_Agency_Responsibility_Note.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
-  experimental roadmap, terminology consistency, ethics/political casebooks, neuroscience prediction
-  table, paper-facing outputs, formula-role cleanup, and optional long-file refactor.
+  AI agency/responsibility note, experimental roadmap, terminology consistency, ethics/political
+  casebooks, neuroscience prediction table, paper-facing outputs, formula-role cleanup, and optional
+  long-file refactor.
 ---
 
 # SRT Next Optimization TODO
@@ -66,7 +68,8 @@ Core24 PH-SS-11 validation link added;
 Foundations / Axioms first safe refactor pass completed;
 Registry / README / index discovery pass completed;
 Core validation template created;
-AI consciousness evaluation rubric created.
+AI consciousness evaluation rubric created;
+AI agency / responsibility note created.
 ```
 
 Current next-stage goal:
@@ -85,7 +88,7 @@ experimental tractability, flagship AI application, terminology consistency, and
 | P0 | Registry / README / index discovery pass | new PH-SS files must be discoverable by humans and agents | Claude Code prompt | done |
 | P0 | Validation template | converts SRT from broad philosophy to testable research program | direct new file | done |
 | P0 | AI consciousness evaluation rubric | strongest near-term flagship application | direct new file | done |
-| P1 | AI responsibility / agency note | prevents vague AI agency / culpability language | direct new file | todo |
+| P1 | AI responsibility / agency note | prevents vague AI agency / culpability language | direct new file | done |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | Claude Code prompt or direct audit file | todo |
 | P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | todo |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | todo |
@@ -236,7 +239,9 @@ AI consciousness claims can be evaluated without jumping from performance or sel
 
 ### Task 3.2 — Create AI responsibility / agency note
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 AI/SRT_AI_Agency_Responsibility_Note.md
@@ -244,11 +249,29 @@ AI/SRT_AI_Agency_Responsibility_Note.md
 
 Purpose:
 
-> Distinguish tool agency, delegated agency, autonomous agency, and responsibility-bearing agency.
+> Distinguish tool agency, delegated agency, autonomous operational agency, and responsibility-bearing agency.
 
-**Execution method**: direct new file after rubric.
+The note distinguishes:
 
-**Done condition**:
+```text
+A0 tool execution;
+A1 delegated agency;
+A2 autonomous operational agency;
+A3 responsibility-bearing agency.
+```
+
+It includes:
+
+```text
+responsibility network map;
+culpability decomposition;
+classification labels;
+deployment evaluation checklist;
+institutional design implications;
+validation package for AI responsibility claims.
+```
+
+Done condition met:
 
 ```text
 AI ethics discussions route through S5/S6 rather than vague agency language.
@@ -630,8 +653,8 @@ Recommended next steps:
 1. Registry / README / index discovery pass.                     DONE
 2. Core/SRT_Validation_Template.md.                              DONE
 3. AI/SRT_AI_Consciousness_Evaluation_Rubric.md.                 DONE
-4. AI/SRT_AI_Agency_Responsibility_Note.md.                      NEXT
-5. Experiments/SRT_Experimental_Roadmap_v1.md.
+4. AI/SRT_AI_Agency_Responsibility_Note.md.                      DONE
+5. Experiments/SRT_Experimental_Roadmap_v1.md.                   NEXT
 6. SRT_Terminology_Consistency_Audit.md.
 7. Neuroscience/SRT_Neuro_Predictions_Table.md.
 8. Ethics / Political casebooks.
@@ -646,12 +669,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create AI/SRT_AI_Agency_Responsibility_Note.md
+Create Experiments/SRT_Experimental_Roadmap_v1.md
 ```
 
 Reason:
 
-> The consciousness rubric separates S0-S6. A dedicated agency/responsibility note will prevent vague claims like “the AI did it” or “the AI is responsible” by mapping tool, delegated, autonomous, and responsibility-bearing agency.
+> Registry, validation template, and AI flagship application are now in place. The next bottleneck is experimental tractability: a staged roadmap from cognitive proxies to neural, AI, social, and cross-domain flagship predictions.
 
 ---
 
