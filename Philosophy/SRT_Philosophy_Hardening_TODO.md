@@ -2,7 +2,7 @@
 id: SRT-PHIL-HARDENING-TODO
 type: hardening-plan
 tags: [Philosophy, TODO, Hardening, Claim Hygiene, Refactor, PH-SS]
-status: active_v5
+status: active_v6
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide
@@ -56,6 +56,9 @@ SRT_Ethics_PH_SS_Guardrails.md                         -> created
 SRT_Social_Political_PH_SS_Guardrails.md               -> created
 SRT_Social_Economics_CompactCore.md                    -> direct pointer added / active_v2
 SRT_Political_Philosophy_CompactCore.md                -> direct pointer added / active_v2
+AI/SRT_AI_03_Consciousness_Framework_CompactCore.md    -> PH-SS-10 subjecthood pointer added / active_v2
+Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md -> PH-SS-10 subjecthood pointer added / active_v2
+Core/SRT_Core_24_Floor_Normativity_Verification.md     -> PH-SS-11 validation pointer added / draft_v2
 ```
 
 Current hardened reading now visible in Compact Core:
@@ -68,20 +71,20 @@ Current hardened reading now visible in Compact Core:
 
 | Priority | Soft spot | Risk | Target file | Status |
 |---|---|---|---|---|
-| P0 | PH-SS-01: `L_0` ontology | hidden-world / modal mysticism | Compact Core, `_SRT_Phil_Axioms.md`, Core_Law L0 | compact core v4 hardened; axiom companion done; direct axiom merge pending |
-| P0 | PH-SS-02: selection-before-existence | temporal priority / circularity | Compact Core, `_SRT_Phil_Axioms.md`, Foundations | compact core v4 hardened; axiom companion done; direct axiom merge pending |
-| P0 | PH-SS-03: reality strength | hallucination / fact flattening | Compact Core, Foundations | compact core v4 hardened; axiom companion done; long file pending |
-| P0 | PH-SS-04: subjective idealism | mind creates reality | Compact Core, README, Objection Ledger | compact core v4 hardened; O-Phil extension done |
-| P0 | PH-SS-05: `Psi_f` layer confusion | concept equivocation / math metaphor | Compact Core, `_SRT_Phil_Axioms.md`, `Psi_f` canonical links | compact core v4 layer-typed; axiom companion done; canonical cross-check pending |
-| P0 | PH-SS-10: consciousness threshold | panpsychism / over-attribution | Compact Core, AI, Neuroscience | compact core v4 threshold added; axiom companion done; O-Phil extension done; cross-domain files pending |
-| P1 | PH-SS-06: normativity jump | is-ought gap / oppression legitimation | Ethics, Political Philosophy | compact core v4 guardrail added; axiom companion done; ethics companion done; political compact pointer done |
-| P1 | PH-SS-07: purpose/teleology | mystical purpose | Compact Core, Core 24, Foundations | compact core v4 hardened; O-Phil extension done; Core 24 cross-link pending |
-| P1 | PH-SS-08: `d-value` philosophy | preference-reduction | Compact Core, `d-value` canonical links | compact core v4 added; O-Phil extension done; ethics companion done; canonical cross-check pending |
-| P1 | PH-SS-09: social ontology | mere construction / individualism | Social Economics, Political Philosophy | compact core v4 added; O-Phil extension done; social-political companion done; social compact pointer done |
-| P1 | PH-SS-11: validation | unfalsifiability | Compact Core, Core 24, Claim Ladder | compact core v4 added; O-Phil extension done; Core 24 pending |
-| P1 | PH-SS-12: anti-relativism | anything-goes | Compact Core, README, Political Philosophy | compact core v4 hardened; O-Phil extension done; social-political companion done; political compact pointer done |
-| P2 | old preserved sections | duplicate / outdated claims | `_SRT_Phil_Axioms.md`, Foundations | pending refactor |
-| P2 | tradition comparison | unclear novelty | Compact Core or new comparison file | pending |
+| P0 | PH-SS-01: `L_0` ontology | hidden-world / modal mysticism | Compact Core, `_SRT_Phil_Axioms.md`, Core_Law L0 | compact core v4 hardened; axiom companion done; long owner pointer done |
+| P0 | PH-SS-02: selection-before-existence | temporal priority / circularity | Compact Core, `_SRT_Phil_Axioms.md`, Foundations | compact core v4 hardened; axiom companion done; long owner pointer done |
+| P0 | PH-SS-03: reality strength | hallucination / fact flattening | Compact Core, Foundations | compact core v4 hardened; axiom companion done; long owner pointer done |
+| P0 | PH-SS-04: subjective idealism | mind creates reality | Compact Core, README, Objection Ledger | compact core v4 hardened; O-Phil extension done; long owner pointer done |
+| P0 | PH-SS-05: `Psi_f` layer confusion | concept equivocation / math metaphor | Compact Core, `_SRT_Phil_Axioms.md`, `Psi_f` canonical links | compact core v4 layer-typed; axiom companion done; long owner pointer done; canonical cross-check optional |
+| P0 | PH-SS-10: consciousness threshold | panpsychism / over-attribution | Compact Core, AI, Neuroscience | compact core v4 threshold added; axiom companion done; O-Phil extension done; AI / Neuroscience pointers done |
+| P1 | PH-SS-06: normativity jump | is-ought gap / oppression legitimation | Ethics, Political Philosophy | compact core v4 guardrail added; axiom companion done; ethics companion done; political compact pointer done; long owner pointer done |
+| P1 | PH-SS-07: purpose/teleology | mystical purpose | Compact Core, Core 24, Foundations | compact core v4 hardened; O-Phil extension done; Core24 PH-SS-11 validation pointer done; purpose/teleology still protected via objections |
+| P1 | PH-SS-08: `d-value` philosophy | preference-reduction | Compact Core, `d-value` canonical links | compact core v4 added; O-Phil extension done; ethics companion done; canonical cross-check optional |
+| P1 | PH-SS-09: social ontology | mere construction / individualism | Social Economics, Political Philosophy | compact core v4 added; O-Phil extension done; social-political companion done; social compact pointer done; long owner pointer done |
+| P1 | PH-SS-11: validation | unfalsifiability | Compact Core, Core 24, Claim Ladder | compact core v4 added; O-Phil extension done; Core24 validation pointer done |
+| P1 | PH-SS-12: anti-relativism | anything-goes | Compact Core, README, Political Philosophy | compact core v4 hardened; O-Phil extension done; social-political companion done; political compact pointer done; long owner pointer done |
+| P2 | old preserved sections | duplicate / outdated claims | `_SRT_Phil_Axioms.md`, Foundations | pending full refactor only |
+| P2 | tradition comparison | unclear novelty | Compact Core or new comparison file | pending optional novelty defense |
 
 ---
 
@@ -96,6 +99,9 @@ Current hardened reading now visible in Compact Core:
 - Social-political companion contains collective `L_2`, institutional legitimacy ladder, friction-export test, future-selectability test, dehumanization as d-exclusion, market/money guardrails, and agency-alignment checks.
 - Social Economics Compact Core directly links to `SRT_Social_Political_PH_SS_Guardrails.md`.
 - Political Philosophy Compact Core directly links to `SRT_Social_Political_PH_SS_Guardrails.md`.
+- AI Consciousness Compact Core directly links to PH-SS-10 subjecthood threshold and O-Phil-18.
+- Neuroscience Consciousness Mechanisms Compact Core directly links to PH-SS-10 subjecthood threshold and O-Phil-18.
+- Core24 directly links to PH-SS-11 / O-Phil-19 non-reductive validation guardrail.
 
 ---
 
@@ -103,9 +109,9 @@ Current hardened reading now visible in Compact Core:
 
 | Pending task | Why still pending |
 |---|---|
-| Core 24 non-reductive validation cross-link | cross-domain governance step |
-| AI / Neuroscience subjecthood threshold links | should be done after checking target file content |
-| Tradition comparison table | optional but useful novelty defense |
+| Tradition comparison table | optional but useful novelty defense against “SRT is just Kant / Whitehead / constructivism / panpsychism / pragmatism” |
+| Long Foundations / Axioms full refactor | secondary cleanup, not required for guardrail routing; should be done as separate review pass |
+| Optional companion-to-owner merges | should happen only after review to avoid flattening bridge / canonical boundaries |
 
 ---
 
@@ -120,8 +126,10 @@ Current hardened reading now visible in Compact Core:
 7. **Done as companion**: `SRT_Social_Political_PH_SS_Guardrails.md` adds collective `L_2`, institutional legitimacy, market/money guardrails, friction export, reselection capacity.
 8. **Done direct pointer**: `SRT_Social_Economics_CompactCore.md` and `SRT_Political_Philosophy_CompactCore.md` now point to the social-political guardrail companion.
 9. **Done direct pointer (2026-04-27)**: PH-SS guardrail pointers inserted directly into all 7 long owner files: `SRT_Philosophy_Ethics.md`, `SRT_Ethics_Agency.md`, `SRT_Philosophy_Foundations.md`, `_SRT_Phil_Axioms.md`, `SRT_Philosophy_Objection_Ledger.md`, `SRT_Political_Philosophy.md`, `SRT_Social_Economics.md`. Local guardrail notes added near `T-Eth-1`, `Ax-Eth-7`, `Ax-Phil-1`, and `Existence ≡ Being Selected`.
-10. **Next**: Long Foundations refactor / annex cleanup.
-11. **Next**: Core 24 non-reductive validation cross-link.
+10. **Done cross-domain pointer**: AI / Neuroscience compact consciousness files now link to PH-SS-10 subjecthood threshold.
+11. **Done Core24 pointer**: Core24 now links to PH-SS-11 / O-Phil-19 non-reductive validation guardrail.
+12. **Next optional**: Tradition comparison table.
+13. **Next optional**: Long Foundations / Axioms full refactor.
 
 ---
 
