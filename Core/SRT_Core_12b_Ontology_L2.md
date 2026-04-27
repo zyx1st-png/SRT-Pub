@@ -40,6 +40,25 @@ $$\mathrm{Inertia}(L_2) \propto \mathrm{Hysteresis}(L_2)$$
 
 ---
 
+### Operational Signature of L₂ Hardening（L₂ 硬化的操作性签名）
+
+Although `L_2` is not reducible to any single substrate, its hardening can be operationally recognized when repeated selections lower local selection cost while increasing global constraint and producing hysteresis under perturbation. This signature allows `L_2` to be studied across neural, cognitive, social, institutional, and artificial systems without reducing it to mere memory, learned habit, or convention.
+
+Compact signature:
+
+```text
+L₂ hardening
+= reduced local selection cost
++ increased global constraint
++ hysteresis under perturbation
+```
+
+**Boundary**: This signature does **not** define the whole ontology of `L_2`. It is an operational bridge for detecting hardening across domains. Do not reduce `L_2` to memory, learned habit, convention, institutional rule, attractor landscape alone, or friction reduction alone. A structure becomes L₂-grade only when a selection history becomes sufficiently stable, inheritable, re-enterable, and constraining for later selections.
+
+**Failure condition**: If the proposed hardening signature cannot be distinguished from ordinary memory, learned habit, convention, or environmental stability, then this operational bridge weakens and must be refined.
+
+---
+
 ### T-L2-Scaffold: Path-Trace Scaffold Formation Theorem（路径痕迹脚手架形成定理，2026-04-17）
 
 **[H — 机制已形式化；脚手架阈值 ρ* 与衰减率 λ_d 需经验测定]**
