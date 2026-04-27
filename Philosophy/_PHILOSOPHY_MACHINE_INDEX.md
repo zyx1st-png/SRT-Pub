@@ -8,7 +8,7 @@ tags:
   - Selection-Realism
   - Layered-Realism
   - Objection-Led-Hardening
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: bridge
 claim_mode: index
@@ -22,17 +22,19 @@ dependency:
   - SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27
   - SRT-PHIL-SELECTION-REALISM-LAYERED-REALISM-PATCH-2026-04-27
   - SRT-PHIL-FOUNDATIONS-COMPACT-CORE
+  - SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27
+  - SRT-PHIL-OBJECTION-LEDGER-PH-SS-EXTENSION-2026-04-27
 machine_summary: >
   Directory-local machine index for the Philosophy folder. Use this file to route SRT philosophy
-  queries through the PH-SS hardening sequence and the active_v4 Compact Core. It does not define
-  canonical SRT primitives.
+  queries through the PH-SS hardening sequence, the active_v4 Compact Core, the axiom guardrail
+  companion, and the PH-SS objection ledger extension. It does not define canonical SRT primitives.
 ---
 
 # Philosophy Machine Index
 
 > **Role**: Directory-local machine routing file for `Philosophy/`.  
 > **Canonical status**: not canonical; does not define P0/P1 primitives.  
-> **Main routing principle**: for philosophy hardening, start with PH-SS files, then Compact Core v4, then long / legacy / domain-specific files.
+> **Main routing principle**: for philosophy hardening, start with PH-SS files, then Compact Core v4, then companion owner-file guardrails, then long / legacy / domain-specific files.
 
 ---
 
@@ -44,6 +46,8 @@ Philosophy/_PHILOSOPHY_MACHINE_INDEX.md
   -> Philosophy/01_PH_SS_Objection_Crosswalk.md
   -> Philosophy/02_PH_SS_Hardening_Execution_Plan.md
   -> Philosophy/SRT_Philosophy_Foundations_CompactCore.md  # active_v4 main short entry
+  -> Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md       # axiom companion guardrails
+  -> Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
   -> target owner file
 ```
 
@@ -82,6 +86,8 @@ not all selection is consciousness.
 | `02_PH_SS_Hardening_Execution_Plan.md` | turns PH-SS into staged repository tasks | active bridge hardening |
 | `03_Selection_Realism_Layered_Realism_CompactPatch.md` | merge-candidate patch; now mostly merged into Compact Core v4 | active bridge patch |
 | `SRT_Philosophy_Foundations_CompactCore.md` | main short entry point for current hardened philosophy | active_v4 |
+| `_SRT_Phil_Axioms_PH_SS_Guardrails.md` | companion guardrail file for axiom-layer over-readings | active bridge guardrail |
+| `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` | companion objection extension containing O-Phil-11..20 | active bridge hardening |
 
 ---
 
@@ -89,18 +95,18 @@ not all selection is consciousness.
 
 | PH-SS | Soft spot | First target | Current status |
 |---|---|---|---|
-| PH-SS-01 | `L_0` ontology ambiguity | Compact Core / `_SRT_Phil_Axioms.md` | compact core v4 done; axioms pending |
-| PH-SS-02 | selection-before-existence temporal misread | Compact Core / `_SRT_Phil_Axioms.md` | compact core v4 done; axioms pending |
-| PH-SS-03 | reality-strength flattening | Compact Core / Foundations | compact core v4 done; long file pending |
-| PH-SS-04 | subjective idealism risk | Compact Core / Objection Ledger | compact core v4 done; ledger expansion pending |
-| PH-SS-05 | `Psi_f` layer confusion | Compact Core / `Psi_f` canonical links | compact core v4 done; canonical cross-check pending |
-| PH-SS-06 | stabilization to value jump | Ethics / Political Philosophy | compact core guardrail done; ethics pending |
-| PH-SS-07 | mystical teleology risk | Compact Core / Core 24 | compact core v4 done; Core 24 link pending |
-| PH-SS-08 | `d-value` philosophical status | Compact Core / `d-value` canonical links | compact core v4 done; canonical cross-check pending |
-| PH-SS-09 | social ontology underdeveloped | Social Economics / Political Philosophy | compact core v4 done; social files pending |
-| PH-SS-10 | consciousness threshold | Compact Core / AI / Neuroscience | compact core v4 done; cross-domain pending |
-| PH-SS-11 | non-reductive validation | Compact Core / Core 24 / Claim Ladder | compact core v4 done; Core 24 pending |
-| PH-SS-12 | anti-relativism | Compact Core / Political Philosophy | compact core v4 done; political links pending |
+| PH-SS-01 | `L_0` ontology ambiguity | Compact Core / `_SRT_Phil_Axioms_PH_SS_Guardrails.md` | compact core v4 done; axiom companion done |
+| PH-SS-02 | selection-before-existence temporal misread | Compact Core / `_SRT_Phil_Axioms_PH_SS_Guardrails.md` | compact core v4 done; axiom companion done |
+| PH-SS-03 | reality-strength flattening | Compact Core / Axiom companion / Foundations | compact core v4 done; axiom companion done; long file pending |
+| PH-SS-04 | subjective idealism risk | Compact Core / Objection Ledger extension | compact core v4 done; objection extension done |
+| PH-SS-05 | `Psi_f` layer confusion | Compact Core / Axiom companion / `Psi_f` canonical links | compact core v4 done; axiom companion done; canonical cross-check pending |
+| PH-SS-06 | stabilization to value jump | Compact Core / Axiom companion / Ethics | compact core guardrail done; axiom companion done; ethics pending |
+| PH-SS-07 | mystical teleology risk | Compact Core / Objection extension / Core 24 | compact core v4 done; objection extension done; Core 24 link pending |
+| PH-SS-08 | `d-value` philosophical status | Compact Core / Objection extension / `d-value` canonical links | compact core v4 done; objection extension done; canonical cross-check pending |
+| PH-SS-09 | social ontology underdeveloped | Compact Core / Objection extension / Social Economics | compact core v4 done; objection extension done; social files pending |
+| PH-SS-10 | consciousness threshold | Compact Core / Axiom companion / Objection extension / AI / Neuroscience | compact core v4 done; axiom companion done; objection extension done; cross-domain pending |
+| PH-SS-11 | non-reductive validation | Compact Core / Objection extension / Core 24 / Claim Ladder | compact core v4 done; objection extension done; Core 24 pending |
+| PH-SS-12 | anti-relativism | Compact Core / Objection extension / Political Philosophy | compact core v4 done; objection extension done; political links pending |
 
 ---
 
@@ -110,8 +116,10 @@ not all selection is consciousness.
 |---|---|
 | `SRT_Philosophy_Foundations_CompactCore.md` | Need the current short hardened statement of SRT philosophy. |
 | `SRT_Philosophy_Foundations.md` | Need long historical / accumulated argument; beware legacy and duplicate sections. |
-| `_SRT_Phil_Axioms.md` | Need philosophy-domain mapping axioms; pending PH-SS guardrail cleanup. |
-| `SRT_Philosophy_Objection_Ledger.md` | Need strongest objections and claim-hygiene rules; pending O-Phil-11..20 expansion. |
+| `_SRT_Phil_Axioms.md` | Need philosophy-domain mapping axioms; read with the PH-SS guardrails companion. |
+| `_SRT_Phil_Axioms_PH_SS_Guardrails.md` | Need safe readings of axiom-layer claims and six guardrail definitions. |
+| `SRT_Philosophy_Objection_Ledger.md` | Need original strongest objections and claim-hygiene rules. |
+| `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` | Need O-Phil-11..20 for PH-SS-specific objections. |
 | `SRT_Philosophy_Hardening_TODO.md` | Need current execution status and next tasks. |
 | `SRT_Philosophy_Ethics.md` / `SRT_Ethics_Agency.md` | Need ethics / agency; pending moral legitimacy ladder update. |
 | `SRT_Social_Economics_CompactCore.md` | Need social ontology and economics; pending collective L2 guardrail update. |
@@ -124,13 +132,13 @@ not all selection is consciousness.
 | Query type | Route |
 |---|---|
 | “What is SRT philosophically?” | Compact Core v4 -> 00 read-first map |
-| “Is SRT idealism?” | Compact Core v4 §1/§7 -> Objection Ledger O-Phil-2 -> PH-SS-04/12 |
-| “What is L0?” | Compact Core v4 §4 -> PH-SS-01 -> Core_Law L0 anchor |
-| “Does selection precede existence?” | Compact Core v4 §5 -> PH-SS-02 -> `_SRT_Phil_Axioms.md` pending guardrail |
-| “Does SRT make everything relative?” | Compact Core v4 §16 -> PH-SS-12 -> Objection Crosswalk |
-| “Does SRT justify stable norms?” | Compact Core v4 §14 -> PH-SS-06 -> ethics files pending |
-| “Does SRT imply panpsychism?” | Compact Core v4 §10 -> PH-SS-10 -> AI / Neuroscience pending |
-| “How can SRT be tested?” | Compact Core v4 §17 -> PH-SS-11 -> Core 24 pending |
+| “Is SRT idealism?” | Compact Core v4 §1/§7 -> Objection Ledger extension O-Phil-20 / O-Phil-12 as needed |
+| “What is L0?” | Compact Core v4 §4 -> PH-SS-01 -> Axiom guardrail Def-Phil-L0-Selectability -> Core_Law L0 anchor |
+| “Does selection precede existence?” | Compact Core v4 §5 -> PH-SS-02 -> Axiom guardrail Def-Phil-Manifestational-Priority |
+| “Does SRT make everything relative?” | Compact Core v4 §16 -> PH-SS-12 -> Objection extension O-Phil-20 |
+| “Does SRT justify stable norms?” | Compact Core v4 §14 -> PH-SS-06 -> Axiom guardrail Def-Phil-Normativity-Ladder -> ethics files pending |
+| “Does SRT imply panpsychism?” | Compact Core v4 §10 -> PH-SS-10 -> Axiom guardrail Def-Phil-Subjecthood-Threshold -> Objection extension O-Phil-18 |
+| “How can SRT be tested?” | Compact Core v4 §17 -> PH-SS-11 -> Objection extension O-Phil-19 -> Core 24 pending |
 
 ---
 
@@ -138,30 +146,24 @@ not all selection is consciousness.
 
 ```yaml
 next_owner_file_upgrades:
-  _SRT_Phil_Axioms.md:
-    - Def-Phil-L0-Selectability
-    - Def-Phil-Manifestational-Priority
-    - Def-Phil-Reality-Strength
-    - Def-Phil-PsiF-Layers
-    - Def-Phil-Normativity-Ladder
-    - Def-Phil-Subjecthood-Threshold
-  SRT_Philosophy_Objection_Ledger.md:
-    - O-Phil-11_L0-hidden-world
-    - O-Phil-12_temporal-priority
-    - O-Phil-13_reality-strength-flattening
-    - O-Phil-14_PsiF-equivocation
-    - O-Phil-15_mystical-teleology
-    - O-Phil-16_d-value-preference-reduction
-    - O-Phil-17_social-construction-institutional-reification
-    - O-Phil-18_consciousness-over-attribution
-    - O-Phil-19_non-reductive-verification
-    - O-Phil-20_selected-reality-relativism
+  long_foundations:
+    - add_current_hardened_reading_near_top
+    - mark_legacy_passages_as_superseded_by_compact_core_v4_where_needed
+    - add_formula_role_labels
   ethics_and_political_files:
     - moral_legitimacy_ladder
     - friction_export_test
     - future_selectability_test
     - cross_subject_d_value_bandwidth
     - reversibility_correction_channel
+  social_files:
+    - collective_L2_definition
+    - recognition_enforcement_memory_loop
+    - money_law_identity_culture_table
+  cross_domain_files:
+    - AI_consciousness_threshold_link
+    - neuroscience_subjecthood_threshold_link
+    - Core24_non_reductive_validation_link
 ```
 
 ---
