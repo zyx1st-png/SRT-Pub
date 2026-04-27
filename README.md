@@ -83,6 +83,20 @@ Philosophy 板块现在可以简化成四条入口：
 - **政治哲学 / political philosophy** → [Philosophy/SRT_Political_Philosophy_CompactCore.md](Philosophy/SRT_Political_Philosophy_CompactCore.md)
 - **政治权利接口 / rights & authorization** → [Philosophy/SRT_Political_Rights.md](Philosophy/SRT_Political_Rights.md)
 
+### Philosophy PH-SS hardening route
+
+For the current hardened philosophy route, start with:
+
+- [`Philosophy/_PHILOSOPHY_MACHINE_INDEX.md`](Philosophy/_PHILOSOPHY_MACHINE_INDEX.md)
+- [`Philosophy/SRT_Philosophy_Foundations_CompactCore.md`](Philosophy/SRT_Philosophy_Foundations_CompactCore.md)
+- [`Philosophy/PH_SS_Hardening_Audit_2026-04-27.md`](Philosophy/PH_SS_Hardening_Audit_2026-04-27.md)
+
+Public / comparison / subjecthood entries:
+
+- [`Philosophy/SRT_Philosophy_Public_OnePager.md`](Philosophy/SRT_Philosophy_Public_OnePager.md)
+- [`Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md`](Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md)
+- [`Philosophy/SRT_Subjecthood_Threshold_Interface.md`](Philosophy/SRT_Subjecthood_Threshold_Interface.md)
+
 ### Spirituality 现在怎么进
 
 Spirituality 板块现在可以简化成三条入口：

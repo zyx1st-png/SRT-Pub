@@ -37,3 +37,7 @@ The N1-N9 draft should be treated as a staging document, while the two compact c
 4. sharpen `d-value` against salience, reward, precision, and motivational relevance;
 5. compress the experimental roadmap into 1-2 flagship studies;
 6. eventually decide which `_SRT_Neuro_Axioms.md` theorem labels should be renamed, downgraded, or formally proven.
+
+## Cross-domain links
+
+- PH-SS subjecthood guardrail: [`../Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md) — S0-S6 ladder distinguishing selection, anchoring, conscious content, subjecthood, agency, and responsibility; use when making consciousness attribution claims.

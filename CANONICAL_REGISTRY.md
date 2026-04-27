@@ -271,3 +271,23 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - `Core/SRT_Core_14_Dynamics_Scaling.md` 不再单独承担 d-value 的最终规范权
 - `Core_Law/SRT_Reference_Dynamics.md` 不再单独承担 `Ψ_f` 的最终规范权
 - 上述文件保留为高价值展开层
+
+## E. PH-SS Philosophy Hardening / Guardrail Files
+
+These files are **not P0/P1 canonical primitive sources**. They are routing, bridge hardening, audit, or companion files that protect interpretation of the Philosophy domain. Entry point is `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md`.
+
+| File | Role | Status |
+|---|---|---|
+| `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | current compact philosophy entry | active_v4 |
+| `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | read-first PH-SS soft-point map | active bridge hardening |
+| `Philosophy/01_PH_SS_Objection_Crosswalk.md` | PH-SS to objection / response / withdrawal crosswalk | active bridge hardening |
+| `Philosophy/02_PH_SS_Hardening_Execution_Plan.md` | staged execution plan for PH-SS edits | active bridge hardening |
+| `Philosophy/03_Selection_Realism_Layered_Realism_CompactPatch.md` | compact patch; mostly merged into Compact Core v4 | active bridge patch |
+| `Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md` | axiom companion guardrail file | active bridge guardrail |
+| `Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` | objection extension O-Phil-11..20 | active bridge hardening |
+| `Philosophy/SRT_Ethics_PH_SS_Guardrails.md` | ethics / normativity / d-value / responsibility guardrails | active bridge guardrail |
+| `Philosophy/SRT_Social_Political_PH_SS_Guardrails.md` | collective L2 / institution / market / legitimacy guardrails | active bridge guardrail |
+| `Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md` | SRT vs Kant / phenomenology / Whitehead / FEP / IIT etc. | active_v1 |
+| `Philosophy/SRT_Subjecthood_Threshold_Interface.md` | S0-S6 selection / consciousness / subjecthood / agency / responsibility interface | active_v1 |
+| `Philosophy/SRT_Philosophy_Public_OnePager.md` | public-facing one-page explanation | active_v1 |
+| `Philosophy/PH_SS_Hardening_Audit_2026-04-27.md` | audit record for the 2026-04-27 PH-SS hardening pass | active audit |
