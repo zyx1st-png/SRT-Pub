@@ -1,18 +1,29 @@
 ---
 id: SRT-CORE-24-FLOOR-NORMATIVITY-VERIFICATION
 type: theory_hardening_note
-tags: [SRT, Core, Ontology, Normativity, Verification, Floor Replacement, d-value, L2, Ψ_f]
-status: draft_v1
+tags: [SRT, Core, Ontology, Normativity, Verification, Floor Replacement, d-value, L2, Ψ_f, PH-SS, Non-Reductive-Validation]
+status: draft_v2
 layer: core_bridge
 epistemic_layer: theory_hardening
 claim_mode: bridge
 created: 2026-04-27
-dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-12A-ONTOLOGY-L0L1, SRT-CORE-12B-ONTOLOGY-L2, SRT-D-VALUE-CANONICAL, SRT-PSI-F-CANONICAL, SRT-EXP-MEASURE-MAP]
+dependency:
+  - SRT-CORE-21-MINIMAL-AXIOMS
+  - SRT-CORE-12A-ONTOLOGY-L0L1
+  - SRT-CORE-12B-ONTOLOGY-L2
+  - SRT-D-VALUE-CANONICAL
+  - SRT-PSI-F-CANONICAL
+  - SRT-EXP-MEASURE-MAP
+  - Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md
+  - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
+  - Philosophy/PH_SS_Hardening_Audit_2026-04-27.md
 ---
 
 # SRT Core 24 — Floor Replacement, Normativity, and Non-Reductive Verification
 
 > **Status note**: This file records a theory-hardening supplement. It does not replace canonical definitions of `L0/L1/L2`, `Ψ_f`, `d-value`, or `Ĝθ`. Its role is to clarify why SRT has cross-scale explanatory power, how normativity can be presented dynamically, and how SRT can remain experimentally tractable without collapsing into reductive measurement.
+>
+> **PH-SS-11 validation pointer**: Read this file with `Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` (`O-Phil-19`) and `Philosophy/PH_SS_Hardening_Audit_2026-04-27.md`. Non-reductive verification is not a license to avoid empirical risk. SRT claims should specify proxy measurements, structural convergence, differential predictions, and withdrawal / narrowing conditions.
 
 ---
 
@@ -136,6 +147,8 @@ In SRT, morality becomes real as a constraint domain. It is sedimented through r
 
 Thus morality is an `L2` reality: not object-like, but genuinely constraining.
 
+> **Normativity guardrail**: `L2` moral reality is not automatically moral legitimacy. Use the Philosophy ethics guardrails for friction-export, future-selectability, cross-subject `d-value` bandwidth, and correction-channel tests.
+
 ### 2.4 Frameworks
 
 Frameworks are not neutral descriptions applied after reality is already present.
@@ -181,6 +194,8 @@ Instead, SRT should be tested through:
 - comparative predictions against adjacent theories.
 
 This is not an escape from verification. It is a different verification logic.
+
+> **PH-SS-11 guardrail**: A non-reductive validation strategy must still include empirical risk. Each strong claim should state at least one proxy class, one structural consequence, one comparison target, and one withdrawal / narrowing condition. If no differential prediction beyond nearby theories can be specified, classify the claim as metaphysical program or bridge hypothesis rather than empirical theory.
 
 Many scientific constructs are not directly observed as substances. Fields, curvature, latent variables, constraints, phase transitions, and information geometry are often inferred through their effects. SRT concepts should be treated similarly.
 
@@ -273,6 +288,10 @@ Purpose, value, morality, and frameworks are not subjective additions placed on 
 
 SRT can be experimentally examined without reducing its core concepts to single objective measurements. `Ψ_f`, `d-value`, and `L2` hardening function more like inferred constraints, fields, curvatures, or latent variables: they are known by the structured consequences they produce.
 
+Guardrail:
+
+> Non-reductive does not mean non-falsifiable. The minimum package is proxy measurement + structural convergence + differential prediction + withdrawal condition.
+
 ---
 
 ## 8. Reviewer-Risk Guardrails
@@ -352,5 +371,6 @@ Suggested routing:
 - Experimental node: use this file to clarify non-reductive validation.
 - Political / ethical / normative node: use this file to clarify morality as cross-subject `L2` boundary.
 - Open tensions node: use this file to preserve reviewer-risk guardrails.
+- PH-SS validation node: use `Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` (`O-Phil-19`) and `Philosophy/PH_SS_Hardening_Audit_2026-04-27.md` to keep non-reductive verification from becoming an unfalsifiability shield.
 
 This file should not outrank canonical anchors. It should be used as a bridge-hardening note until its claims are promoted through the claim ladder.
