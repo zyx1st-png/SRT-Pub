@@ -70,6 +70,21 @@ Reader rule:
 - Compact current entry: `SRT_Philosophy_Foundations_CompactCore.md`
 - Objection extension: `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md`
 - Subjecthood interface: `SRT_Subjecthood_Threshold_Interface.md`
+- Reorganization plan: `Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md`
+
+## Long-File Future Target Structure
+
+Future deeper reorganization should use this shape (not yet executed — do not move content without a separate review pass):
+
+```text
+Part A — Current Hardened Reading (navigation + compact entry pointers)
+Part B — Formal / Semi-formal Claims (axioms, theorems, formal bridge models)
+Part C — Tradition Interface (panpsychism integration, belief/assertion, unity formalism)
+Part D — Objection and Withdrawal Conditions (boundary declarations, failure conditions)
+Part E — Legacy Notes / Preserved Drafts (§1–3 legacy layer, older formulations)
+```
+
+Do not read older legacy sections as overriding the current PH-SS guardrails.
 
 # Part A: Domain Mapping Axioms (P2/P3/P4)
 

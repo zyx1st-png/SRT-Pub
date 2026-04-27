@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v13
+status: active_v14
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -86,7 +86,8 @@ Political / institutional casebook created;
 Selection Realism paper outline created;
 d-value ontology of concern paper outline created;
 Non-reductive verification paper outline created;
-Second formula-role pass completed for Philosophy / Ethics / Political / Social high-risk formulas.
+Second formula-role pass completed for Philosophy / Ethics / Political / Social high-risk formulas;
+Long Foundations / Axioms deeper reorganization: audit plan created; Mode 2 structure notes added; full content reorganization not yet executed.
 ```
 
 Current next-stage goal:
@@ -114,7 +115,7 @@ From paper-facing outlines -> toward optional cleanup / merge passes and deeper 
 | P2 | d-value paper outline | converts concern ontology into publication trajectory | direct new file | done |
 | P2 | Non-reductive validation paper outline | converts validation strategy into publication trajectory | direct new file | done |
 | P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | done |
-| P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | optional |
+| P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | plan done; structure notes added; full reorganization optional |
 | P3 | Companion-to-owner merge | reduces fragmentation after review | staged manual / Claude Code | optional |
 
 ---

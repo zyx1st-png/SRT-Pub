@@ -82,6 +82,22 @@ Reader rule:
 - Tradition comparison: `SRT_Philosophy_Tradition_Comparison_PH_SS.md`
 - Subjecthood interface: `SRT_Subjecthood_Threshold_Interface.md`
 - Public one-pager: `SRT_Philosophy_Public_OnePager.md`
+- Reorganization plan: `Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md`
+
+## Long-File Future Target Structure
+
+Future deeper reorganization should use this shape (not yet executed — do not move content without a separate review pass):
+
+```text
+Part A — Current Hardened Reading (navigation + compact entry pointers)
+Part B — Formal / Semi-formal Claims (axioms, theorems, formal bridge models)
+Part C — Tradition Interface (Spinoza, Kant, Marion, Nagarjuna, phenomenology,
+          pragmatism, FEP/PP, IIT/GNW, Wittgenstein, Qualia, Daoism, etc.)
+Part D — Objection and Withdrawal Conditions (hardest objections, failure / narrowing)
+Part E — Legacy Notes / Preserved Drafts (older formulations, historical layers)
+```
+
+Do not read older sections in Parts C–E as overriding the current PH-SS guardrails.
 
 # Part A: Philosophy Domain Mapping Axioms (P2/P3/P4)
 
@@ -1292,6 +1308,8 @@ R^{2nd} \neq \phi^{1st}
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 ---
 
+<!-- FUTURE-PART-C: Tradition Interface sections begin here. All sections below until Part D are cross-tradition comparisons. Do not move content without review. -->
+
 ## Synchronicity Interface (Jung–Pauli) → SRT 映射条款（2026-03-02）
 
 ### Def-Phil-Sync-1: Meaning-Coupled Coincidence
@@ -2038,6 +2056,8 @@ E_{mental} \equiv E_{physical}^{realization},
 本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
 
 ---
+
+<!-- FUTURE-PART-D: Objection and Withdrawal Conditions section begins here. -->
 
 ## Hardest Objections
 
