@@ -63,6 +63,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 12. `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`（spirituality coverage-audit follow-up only）
 13. `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`（papers / publication coverage-audit follow-up only）
 14. `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md`（root topic / FAQ coverage-audit follow-up only）
+15. `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（philosophy deep-hardening / objection-led edits only）
 
 ### Human / Public
 
@@ -70,6 +71,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 2. `SRT_Quick_Start.md`
 3. `SRT_1H_Onboarding.md`
 4. `SRT_Navigation_Map.md`
+5. `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（when reading or editing the Philosophy folder）
 
 ## Authority Order
 
@@ -133,6 +135,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - collective tower/nested hardening H10-H16 / late-stage hardening only / P1-candidate under strong closure assumptions / not a primary canonical anchor → `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`
 - floor replacement / object-first ontology critique / purpose-value-morality-framework dynamics / non-reductive validation / Ψ_f-d-L2 operational projections / reviewer-risk guardrails → `Core/SRT_Core_24_Floor_Normativity_Verification.md`
 - retrieval index for Core 24 floor replacement and non-reductive verification note → `Core/SRT_Core_24_Index.md`
+- philosophy soft spots / selection realism / layered realism / anti-idealism / anti-relativism / Psi_f layering / d-value philosophy / normativity generation / social ontology / consciousness threshold / non-reductive validation → `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`
 
 ## Domain Entrypoints
 
@@ -189,6 +192,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 ### Philosophy
 
+- `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（read-first philosophy soft-point map; not a canonical definition source）
 - `Philosophy/_SRT_Phil_Axioms.md`
 - `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`
 - `Philosophy/SRT_Social_Economics_CompactCore.md`
@@ -240,6 +244,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 是相邻理论接口导航，不新增 P0/P1，不替代 FEP/IIT/GNW/量子/社会现实等既有正文
 - `Core/SRT_Core_24_Floor_Normativity_Verification.md` is a bridge-hardening supplement for floor replacement, dynamic normativity, and non-reductive verification; it does not outrank canonical anchors until promoted through claim governance.
 - `Core/SRT_Core_24_Index.md` is a retrieval index for Core 24 and does not define theory.
+- `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` is the read-first Philosophy hardening map for soft points and additions; it is machine-readable and human-readable but does not define P0/P1 canonical terms.
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限
