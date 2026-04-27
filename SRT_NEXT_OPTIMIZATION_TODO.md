@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v11
+status: active_v12
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -36,6 +36,7 @@ dependency:
   - Philosophy/SRT_Political_Casebook.md
   - Papers/SRT_Selection_Realism_Paper_Outline.md
   - Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+  - Papers/SRT_NonReductive_Verification_Outline.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
@@ -83,13 +84,14 @@ Neuroscience differential prediction table created;
 Ethics casebook created;
 Political / institutional casebook created;
 Selection Realism paper outline created;
-d-value ontology of concern paper outline created.
+d-value ontology of concern paper outline created;
+Non-reductive verification paper outline created.
 ```
 
 Current next-stage goal:
 
 ```text
-From guardrail hardening -> toward paper-ready outputs and optional cleanup / merge passes.
+From paper-facing outlines -> toward optional cleanup / merge passes and deeper operationalization.
 ```
 
 ---
@@ -109,7 +111,7 @@ From guardrail hardening -> toward paper-ready outputs and optional cleanup / me
 | P1 | Political / institutional casebook | makes political philosophy usable on institutional diagnosis | direct new file | done |
 | P2 | Selection Realism paper outline | converts hardened philosophy into publication trajectory | direct new file | done |
 | P2 | d-value paper outline | converts concern ontology into publication trajectory | direct new file | done |
-| P2 | Non-reductive validation paper outline | converts validation strategy into publication trajectory | direct new file | todo |
+| P2 | Non-reductive validation paper outline | converts validation strategy into publication trajectory | direct new file | done |
 | P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | todo |
 | P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | optional |
 | P3 | Companion-to-owner merge | reduces fragmentation after review | staged manual / Claude Code | optional |
@@ -358,7 +360,9 @@ Paper outline has abstract, thesis, sections, objections, validation path, and t
 
 ### Task 8.3 — Create paper outline: non-reductive validation
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 Papers/SRT_NonReductive_Verification_Outline.md
@@ -366,9 +370,13 @@ Papers/SRT_NonReductive_Verification_Outline.md
 
 Thesis:
 
-> SRT can be tested through proxy measurement, structural convergence, differential predictions, and withdrawal conditions.
+> SRT can be tested through proxy measurement, structural convergence, differential predictions, baseline comparison, and withdrawal / narrowing conditions.
 
-**Status**: todo.
+Done condition met:
+
+```text
+Paper outline has abstract, thesis, sections, objections, validation path, five validation case packages, and target audiences.
+```
 
 ---
 
@@ -458,8 +466,9 @@ Recommended next steps:
 9. Philosophy/SRT_Political_Casebook.md.                         DONE
 10. Papers/SRT_Selection_Realism_Paper_Outline.md.               DONE
 11. Papers/SRT_D_Value_Ontology_of_Concern_Outline.md.           DONE
-12. Papers/SRT_NonReductive_Verification_Outline.md.             NEXT
-13. Only then consider second formula-role pass and deeper long-file reorganization.
+12. Papers/SRT_NonReductive_Verification_Outline.md.             DONE
+13. CODEX_PROMPT_Second_Formula_Role_Pass.md.                    NEXT
+14. Only then consider deeper long-file reorganization.
 ```
 
 ---
@@ -469,12 +478,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create Papers/SRT_NonReductive_Verification_Outline.md
+Create CODEX_PROMPT_Second_Formula_Role_Pass.md
 ```
 
 Reason:
 
-> Selection Realism and d-value paper outlines are now created. The next paper-facing bottleneck is turning SRT's validation strategy itself into a publishable route: proxy measurement, structural convergence, differential predictions, and withdrawal conditions.
+> Paper-facing outputs are now in place. The next high-value cleanup is a second formula-role pass over high-risk formulas in Philosophy / Ethics / Political / Social files, without altering formulas or rewriting long files.
 
 ---
 
