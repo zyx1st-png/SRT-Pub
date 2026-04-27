@@ -241,7 +241,35 @@ z(consensus_{stability}),
 
 ### 4b.4 边界
 - 不采纳“群体一定像流体”的绝对化推论：只有在高密度、局部相互作用与 coarse-graining 有效时，Eq-LDP-01 才成立。
-- 不采纳“拟合到指数衰减就等于 action 已被唯一识别”的推论：当前只是在做 rate-function window，不是唯一 canonical derivation。
+- 不采纳”拟合到指数衰减就等于 action 已被唯一识别”的推论：当前只是在做 rate-function window，不是唯一 canonical derivation。
+
+---
+
+## 4c) Non-Reductive Validation Rule（非还原验证规则）
+
+SRT concepts should be tested through convergent structural consequences rather than a single direct objective ruler. A proxy may support an SRT construct only when it helps distinguish selection friction, concern-weighted non-substitutability, or hardening from simpler alternatives such as loss, reward, salience, memory, convention, or generic task difficulty.
+
+A measurement package should not ask whether one variable directly “is” `Ψ_f`, `d-value`, or `L_2`. It should ask whether a set of proxies jointly detects the structured consequences expected from the construct.
+
+| Construct | Non-reductive validation target | Simpler alternatives to control against |
+|---|---|---|
+| `Ψ_f` | structured transition difficulty, recovery burden, switching cost, update curvature | generic effort, task difficulty, prediction error, raw energy use |
+| `d-value` | concern-weighted non-substitutability, cost-bearing, identity/stake continuity | preference intensity, reward, salience, pain, self-report |
+| `L_2` hardening | local cost reduction plus global constraint plus hysteresis | memory, habit, convention, environmental stability |
+
+### 最小验收标准（Minimum Acceptance Criteria）
+
+A proxy package is acceptable only if it satisfies all three conditions:
+
+1. **Multi-proxy convergence**：至少两类独立 proxy 同向收敛。
+2. **Alternative exclusion**：结果不能完全被 reward、salience、memory 或 generic task difficulty 等更简单解释吸收。
+3. **Scope declaration**：必须声明 proxy 的操作范围，不能把 proxy 反投为 ontology 本身。
+
+### 失效条件（Failure Conditions）
+
+- **F-EXP-NR-1**：如果单一 proxy 被当作 SRT construct 本身，则该测量层退化为 reductionism，应拒绝。
+- **F-EXP-NR-2**：如果 proxy package 不能区分 `Ψ_f`、`d-value` 或 `L_2` 与更简单替代解释，则只能报告为 ambiguous proxy result。
+- **F-EXP-NR-3**：如果 proxy package 在 session、task 或 perturbation context 之间没有基本稳定性，则它与目标 construct 的关系仍然较弱。
 
 ---
 
