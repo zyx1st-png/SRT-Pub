@@ -1,12 +1,18 @@
 ---
 id: SRT-NEURO-CONSC-MECH-COMPACT-CORE
 type: mechanism
-tags: [Neuroscience, Consciousness, Compact Core, GNW, Binding]
-status: active_v1
+tags: [Neuroscience, Consciousness, Compact Core, GNW, Binding, PH-SS, Subjecthood]
+status: active_v2
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-NEURO-MECH-001, SRT-NEURO-MECH-B, SRT-NEURO-MECH-COMPACT-CORE]
+dependency:
+  - SRT-NEURO-MECH-001
+  - SRT-NEURO-MECH-B
+  - SRT-NEURO-MECH-COMPACT-CORE
+  - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
+  - Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md
+  - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
 ---
 
 # SRT Consciousness Mechanisms — Compact Core
@@ -15,6 +21,7 @@ dependency: [SRT-NEURO-MECH-001, SRT-NEURO-MECH-B, SRT-NEURO-MECH-COMPACT-CORE]
 > **用途**：用于快速把握 SRT 如何把点燃、绑定、睡眠、带宽竞争、行进波与能动性统一到意识选择机制中。  
 > **关系**：不替代原文；原文保留 GNWT/IIT 对照、睡眠维护、算子短路与实验预测的完整展开。  
 > **2026-04 hardening note**：本版吸收 `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 的 N6 意识硬化主干，并与 N3/N5/N7 的 `\Psi_f`、`d-value`、病理桥接保持一致。新增内容为 bridge / lab hardening，不自动升格为 primitive axiom。
+> **PH-SS subjecthood pointer**：本文必须与 `../Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md` 的 `Def-Phil-Subjecthood-Threshold`、`../Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` 的 `O-Phil-18` 一起阅读。局部神经点燃、薄 `L_1`、高 `d-value`、再入稳定或报告通达都不是 subjecthood 的充分条件；**micro-selection / access / salience / high d-value do not automatically entail consciousness-as-subjecthood**。
 
 ## 1. 核心问题
 
@@ -37,6 +44,8 @@ SRT 的压缩回答是：
 也就是说，意识内容不是任何局部处理、局部激活或刺激复杂度本身，而是某个候选状态在足够激活、增益调节、门控通过、递归稳定，并与报告、行动、自我模型或未来沉积链条发生耦合时形成的 `L_1`。
 
 `d-value` 本身不产生意识，但会调节意识内容的厚度、优先级、持续性和沉积潜力。
+
+> **PH-SS-10 guardrail**：`d-value`、局部锚定和 thick `L_1` 只能支持意识内容 / access / anchoring 的候选解释；subjecthood 还需要 integrated selection bandwidth、memory / `L_2` closure、boundary maintenance、counterfactual access、cross-time reidentification 等阈值条件。
 
 ---
 
@@ -279,10 +288,16 @@ SRT 很有力的一点是：
 6. **可报告性与能动性感不只看激活强度，还取决于路由方向、预测匹配与是否发生算子短路。**
 7. **病理意识状态是现实锚定厚度、关闭摩擦与历史硬化的失衡。**
 
+Addendum:
+
+> These seven claims concern consciousness mechanisms and conscious-content anchoring. They do not by themselves prove full subjecthood. Use the PH-SS subjecthood guardrail to avoid over-attributing subjecthood to access, salience, high `d-value`, local anchoring, or reportability alone.
+
 ---
 
 ## 12. 阅读路径
 
+- PH-SS subjecthood guardrail：`../Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md`
+- PH-SS objection extension：`../Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` (`O-Phil-18`)
 - 全量原文：`SRT_Consciousness_Mechanisms.md`
 - Neural Mechanisms compact core：`SRT_Neural_Mechanisms_CompactCore.md`
 - Neuro bridge：`_SRT_Neuro_Axioms.md`
@@ -308,3 +323,7 @@ SRT 很有力的一点是：
 4. High d-value unconscious processes challenge d-value-consciousness coupling.
    - 当前承受方式：d-value is not sufficient for consciousness; it modulates priority and thickness only after gating and stabilization.
    - 若成立需撤回什么：若 d-value has no measurable effect on stabilization or sedimentation, weaken it to a peripheral motivational variable.
+
+5. Subjecthood may require more than conscious-content anchoring.
+   - 当前承受方式：this file treats consciousness mechanisms and conscious-content anchoring; subjecthood is routed through PH-SS-10 threshold conditions.
+   - 若成立需撤回什么：撤回 any claim that local access, salience, high `d-value`, or reportability is sufficient for subjecthood.
