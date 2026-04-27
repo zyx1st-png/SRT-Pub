@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v18
+status: active_v19
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -33,6 +33,7 @@ dependency:
   - Experiments/SRT_Pilot_Cards_v1.md
   - Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md
   - Experiments/SRT_D_Value_vs_Salience_Analysis_Plan_v0.md
+  - Experiments/SRT_Pilot_Ethics_Note_v0.md
   - SRT_Terminology_Consistency_Audit.md
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
@@ -44,9 +45,10 @@ dependency:
   - SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
-  Main optimization chain is complete enough for review, and the experiment branch has begun with
-  pilot cards, a first d-value vs salience stimulus bank, and a draft analysis plan. Remaining next
-  actions should be narrow: create a pilot ethics note, create a pre-rating form template, or start one manuscript.
+  Main optimization chain is complete enough for review, and the experiment branch now has
+  pilot cards, a first d-value vs salience stimulus bank, draft analysis plan, and pilot ethics note.
+  Remaining next actions should be narrow: create a pre-rating form template, create a data dictionary,
+  or start one manuscript.
 ---
 
 # SRT Next Optimization TODO
@@ -95,16 +97,17 @@ Long Foundations / Axioms deeper reorganization: audit plan created; Mode 2 stru
 Optimization completion audit created;
 Pilot cards v1 created for d-value, Psi_f, and L2 hardening;
 d-value vs salience stimulus bank v0 created;
-d-value vs salience analysis plan v0 created.
+d-value vs salience analysis plan v0 created;
+Pilot ethics note v0 created.
 ```
 
 Current next-stage goal:
 
 ```text
 Proceed narrowly in the experiment branch:
-1. create a pilot ethics note;
-2. optionally create a pre-rating form template;
-3. optionally create a data dictionary / analysis skeleton.
+1. optionally create a pre-rating form template;
+2. optionally create a data dictionary / analysis skeleton;
+3. or pause and review the experiment v0 package before expanding.
 ```
 
 ---
@@ -121,8 +124,9 @@ Proceed narrowly in the experiment branch:
 | P1 | Pilot cards v1 | turns roadmap into low-cost experimental cards | direct new file | done |
 | P1 | d-value vs salience stimulus bank | provides item pool and pre-rating dimensions | direct new file | done |
 | P1 | d-value vs salience analysis plan | makes first pilot statistically executable | direct new file | done |
-| P1 | Pilot ethics note | keeps first studies low-risk and reviewable | direct new file | todo |
+| P1 | Pilot ethics note | keeps first studies low-risk and reviewable | direct new file | done |
 | P1 | Pre-rating form template | makes first pilot easy to implement | direct new file | optional |
+| P1 | Data dictionary / analysis skeleton | improves implementation readiness | direct new file | optional |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
 | P1 | Ethics casebook | makes ethics guardrails usable on concrete cases | direct new file | done |
@@ -152,6 +156,7 @@ Experiment branch files:
 Experiments/SRT_Pilot_Cards_v1.md
 Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md
 Experiments/SRT_D_Value_vs_Salience_Analysis_Plan_v0.md
+Experiments/SRT_Pilot_Ethics_Note_v0.md
 ```
 
 Pilot cards now available:
@@ -171,7 +176,9 @@ item exclusion rules;
 main outcome candidates;
 analysis model;
 failure / narrowing rules;
-minimal preregistration text.
+minimal preregistration text;
+ethics note;
+participant protection guardrails.
 ```
 
 ---
@@ -180,17 +187,22 @@ minimal preregistration text.
 
 ### Direction A — Research / experiments
 
-Next recommended file:
+Optional next file:
 
 ```text
-Experiments/SRT_Pilot_Ethics_Note_v0.md
+Experiments/SRT_D_Value_vs_Salience_PreRating_Form_v0.md
 ```
 
 Then optionally:
 
 ```text
-Experiments/SRT_D_Value_vs_Salience_PreRating_Form_v0.md
 Experiments/SRT_D_Value_vs_Salience_Data_Dictionary_v0.md
+```
+
+Recommended pause point:
+
+```text
+Review the v0 experiment package before expanding to more files.
 ```
 
 ### Direction B — Publication
