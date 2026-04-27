@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v6
+status: active_v7
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -31,11 +31,12 @@ dependency:
   - AI/SRT_AI_Agency_Responsibility_Note.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
   - SRT_Terminology_Consistency_Audit.md
+  - Neuroscience/SRT_Neuro_Predictions_Table.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
-  AI agency/responsibility note, experimental roadmap, terminology consistency audit, ethics/political
-  casebooks, neuroscience prediction table, paper-facing outputs, formula-role cleanup, and optional
+  AI agency/responsibility note, experimental roadmap, terminology consistency audit, neuroscience
+  prediction table, ethics/political casebooks, paper-facing outputs, formula-role cleanup, and optional
   long-file refactor.
 ---
 
@@ -73,14 +74,15 @@ Core validation template created;
 AI consciousness evaluation rubric created;
 AI agency / responsibility note created;
 Experimental roadmap v1 created;
-Terminology consistency audit created.
+Terminology consistency audit created;
+Neuroscience differential prediction table created.
 ```
 
 Current next-stage goal:
 
 ```text
-From guardrail hardening -> toward differential neuroscience predictions,
-case-based ethics / politics, terminology cleanup, and paper-ready outputs.
+From guardrail hardening -> toward case-based ethics / politics,
+paper-ready outputs, and optional cleanup / merge passes.
 ```
 
 ---
@@ -95,7 +97,7 @@ case-based ethics / politics, terminology cleanup, and paper-ready outputs.
 | P1 | AI responsibility / agency note | prevents vague AI agency / culpability language | direct new file | done |
 | P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | done |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
-| P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | todo |
+| P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
 | P1 | Ethics / Political casebooks | makes moral and institutional theory usable on real cases | direct new files | todo |
 | P2 | Paper-facing outlines | converts repository content into publishable trajectories | direct new files | todo |
 | P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | todo |
@@ -141,10 +143,6 @@ Created file:
 ```text
 Core/SRT_Validation_Template.md
 ```
-
-Purpose:
-
-> Provide a standard template for turning SRT claims into testable claim packages.
 
 Done condition met:
 
@@ -234,23 +232,26 @@ Each major concept has at least 2-3 proxy families and at least 1 failure condit
 
 ### Task 5.1 — Create neuroscience differential prediction table
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 Neuroscience/SRT_Neuro_Predictions_Table.md
 ```
 
-Compare:
+The table compares:
 
 ```text
 Predictive Processing / FEP;
 GNW;
 IIT;
 RL / Active Inference;
-SRT.
+SRT;
+standard salience / arousal accounts.
 ```
 
-Cases:
+Across cases:
 
 ```text
 blindsight;
@@ -265,19 +266,18 @@ OCD;
 social anxiety.
 ```
 
-For each case:
+It includes:
 
 ```text
 mainstream explanation;
 SRT added variable;
 SRT-specific prediction;
+proxy measure;
 failure condition;
-proxy measure.
+pilot-ready candidates.
 ```
 
-**Execution method**: direct new file.
-
-**Done condition**:
+Done condition met:
 
 ```text
 Neuroscience section has differential predictions, not only reinterpretations.
@@ -386,31 +386,6 @@ Created file:
 
 ```text
 SRT_Terminology_Consistency_Audit.md
-```
-
-The audit covers:
-
-```text
-L0 / latent field / modal field of selectability / possibility space;
-L1 / manifestation / anchoring / selected reality;
-L2 / hardening / stabilization / sedimentation / automation;
-Psi_f / friction / selection cost / Fisher metric;
-d-value / concern bandwidth / existential stake / salience / utility;
-theta / operator constraint / embodied parameter;
-G_hat_theta / Ghost Operator / selection operator;
-subjecthood / consciousness / agency / responsibility.
-```
-
-It includes:
-
-```text
-canonical term;
-allowed aliases;
-forbidden overreadings;
-domain-specific usage;
-owner / route;
-cleanup priority;
-future repository scan prompt.
 ```
 
 Done condition met:
@@ -548,8 +523,8 @@ Recommended next steps:
 4. AI/SRT_AI_Agency_Responsibility_Note.md.                      DONE
 5. Experiments/SRT_Experimental_Roadmap_v1.md.                   DONE
 6. SRT_Terminology_Consistency_Audit.md.                         DONE
-7. Neuroscience/SRT_Neuro_Predictions_Table.md.                  NEXT
-8. Ethics / Political casebooks.
+7. Neuroscience/SRT_Neuro_Predictions_Table.md.                  DONE
+8. Ethics / Political casebooks.                                 NEXT
 9. Paper outlines.
 10. Only then consider second formula-role pass and deeper long-file reorganization.
 ```
@@ -561,12 +536,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create Neuroscience/SRT_Neuro_Predictions_Table.md
+Create Philosophy/SRT_Ethics_Casebook.md
 ```
 
 Reason:
 
-> Validation template and experimental roadmap are in place. The next bottleneck is making the neuroscience section produce differential predictions rather than only reinterpretations.
+> Neuroscience now has differential predictions. The next bottleneck is making SRT ethics and political philosophy usable on concrete cases through friction export, future selectability, responsibility, legitimacy, and repair templates.
 
 ---
 
