@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -26,6 +26,7 @@ dependency:
   - Philosophy/PH_SS_Hardening_Audit_2026-04-27.md
   - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
   - Core/SRT_Core_24_Floor_Normativity_Verification.md
+  - Core/SRT_Validation_Template.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, experimental roadmap,
@@ -61,13 +62,15 @@ Subjecthood threshold interface created;
 Public one-pager created;
 AI / Neuroscience PH-SS-10 subjecthood links added;
 Core24 PH-SS-11 validation link added;
-Foundations / Axioms first safe refactor pass completed.
+Foundations / Axioms first safe refactor pass completed;
+Registry / README / index discovery pass completed;
+Core validation template created.
 ```
 
 Current next-stage goal:
 
 ```text
-From guardrail hardening -> toward registry completeness, validation discipline,
+From guardrail hardening -> toward validation discipline,
 experimental tractability, flagship AI application, terminology consistency, and paper-ready outputs.
 ```
 
@@ -77,8 +80,8 @@ experimental tractability, flagship AI application, terminology consistency, and
 
 | Priority | Task | Why it matters | Suggested method | Status |
 |---|---|---|---|---|
-| P0 | Registry / README / index discovery pass | new PH-SS files must be discoverable by humans and agents | Claude Code prompt | todo |
-| P0 | Validation template | converts SRT from broad philosophy to testable research program | direct new file | todo |
+| P0 | Registry / README / index discovery pass | new PH-SS files must be discoverable by humans and agents | Claude Code prompt | done |
+| P0 | Validation template | converts SRT from broad philosophy to testable research program | direct new file | done |
 | P0 | AI consciousness evaluation rubric | strongest near-term flagship application | direct new file | todo |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | Claude Code prompt or direct audit file | todo |
 | P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | todo |
@@ -95,47 +98,24 @@ experimental tractability, flagship AI application, terminology consistency, and
 
 ### Task 1.1 — Update registry / README / indexes for PH-SS files
 
-**Goal**: Ensure all newly created PH-SS files can be found by humans and machines.
+**Status**: done.
 
-Target files to check:
-
-```text
-CANONICAL_REGISTRY.md
-README.md
-Philosophy/README.md
-Philosophy/_PHILOSOPHY_MACHINE_INDEX.md
-Philosophy/SRT_Philosophy_Hardening_TODO.md
-Philosophy/PH_SS_Hardening_Audit_2026-04-27.md
-```
-
-Files that should be discoverable:
+Completed by Claude Code / Codex discovery pass:
 
 ```text
-Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md
-Philosophy/01_PH_SS_Objection_Crosswalk.md
-Philosophy/02_PH_SS_Hardening_Execution_Plan.md
-Philosophy/03_Selection_Realism_Layered_Realism_CompactPatch.md
-Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md
-Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
-Philosophy/SRT_Ethics_PH_SS_Guardrails.md
-Philosophy/SRT_Social_Political_PH_SS_Guardrails.md
-Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md
-Philosophy/SRT_Subjecthood_Threshold_Interface.md
-Philosophy/SRT_Philosophy_Public_OnePager.md
-Philosophy/PH_SS_Hardening_Audit_2026-04-27.md
-AI/SRT_AI_03_Consciousness_Framework_CompactCore.md
-Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md
-Core/SRT_Core_24_Floor_Normativity_Verification.md
+README.md -> PH-SS hardening route added.
+CANONICAL_REGISTRY.md -> non-canonical PH-SS section added.
+Neuroscience/README.md -> subjecthood interface cross-link added.
+Philosophy README / Machine Index / TODO / Audit -> already current.
+AI/README.md and Core/README.md -> not present, skipped.
 ```
 
-**Execution method**: Claude Code / Codex prompt recommended, because registry and README files may be long and should be patched carefully.
-
-**Done condition**:
+Done condition met:
 
 ```text
 All new PH-SS files are discoverable from at least one root-level or directory-level index.
-No canonical status is accidentally promoted.
-No long-file rewrite is performed.
+No canonical status accidentally promoted.
+No long-file rewrite performed.
 ```
 
 ---
@@ -144,7 +124,9 @@ No long-file rewrite is performed.
 
 ### Task 2.1 — Create SRT validation template
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 Core/SRT_Validation_Template.md
@@ -154,37 +136,35 @@ Purpose:
 
 > Provide a standard template for turning SRT claims into testable claim packages.
 
-Template fields:
+The template includes:
 
 ```text
-Claim:
-Layer:
-Claim level:
-Nearby theory:
-SRT-specific prediction:
-Proxy measurement:
-Baseline:
-Expected result:
-Failure condition:
-What would narrow SRT:
-What would strengthen SRT:
-Owner file:
+Claim;
+Layer;
+Claim level;
+Nearby theory;
+SRT-specific prediction;
+Proxy measurement;
+Baseline;
+Expected result;
+Failure condition;
+What would narrow SRT;
+What would strengthen SRT;
+Owner file;
+Current status.
 ```
 
-Priority example claims:
+Also includes example packages for:
 
 ```text
-d-value is not reducible to salience;
-Psi_f is not reducible to prediction error;
-L2 hardening is not reducible to ordinary memory;
-subjecthood is not reducible to self-report;
-social legitimacy is not reducible to stability;
-non-reductive validation is not unfalsifiability.
+d-value vs salience;
+Psi_f vs prediction error;
+L2 hardening vs ordinary memory;
+subjecthood vs AI self-report;
+social legitimacy vs institutional stability.
 ```
 
-**Execution method**: direct new file.
-
-**Done condition**:
+Done condition met:
 
 ```text
 A reusable validation template exists and links to Core24 / O-Phil-19 / PH-SS-11.
@@ -192,28 +172,20 @@ A reusable validation template exists and links to Core24 / O-Phil-19 / PH-SS-11
 
 ### Task 2.2 — Create example validation packages
 
-Suggested file:
+**Status**: partially done inside `Core/SRT_Validation_Template.md`.
+
+The standalone file may still be useful later:
 
 ```text
 Core/SRT_Validation_Examples.md
 ```
 
-Initial examples:
+But five initial example packages already exist inside the template.
+
+**Recommended next action**:
 
 ```text
-d-value vs salience;
-Psi_f vs prediction error;
-L2 hardening vs habit/memory;
-subjecthood threshold vs AI self-report;
-friction export vs institutional efficiency.
-```
-
-**Execution method**: direct new file after Task 2.1.
-
-**Done condition**:
-
-```text
-At least 5 example claims are converted into testable packages.
+Proceed to Phase 3.1: AI consciousness evaluation rubric.
 ```
 
 ---
@@ -656,14 +628,14 @@ Fragmentation is reduced without promoting bridge material to canonical primitiv
 Recommended next steps:
 
 ```text
-1. Create Claude prompt for registry / README / index discovery pass.
-2. Create Core/SRT_Validation_Template.md.
-3. Create AI/SRT_AI_Consciousness_Evaluation_Rubric.md.
-4. Create Experiments/SRT_Experimental_Roadmap_v1.md.
-5. Create SRT_Terminology_Consistency_Audit.md.
-6. Create Neuroscience/SRT_Neuro_Predictions_Table.md.
-7. Create Ethics / Political casebooks.
-8. Create paper outlines.
+1. Registry / README / index discovery pass.                     DONE
+2. Core/SRT_Validation_Template.md.                              DONE
+3. AI/SRT_AI_Consciousness_Evaluation_Rubric.md.                 NEXT
+4. Experiments/SRT_Experimental_Roadmap_v1.md.
+5. SRT_Terminology_Consistency_Audit.md.
+6. Neuroscience/SRT_Neuro_Predictions_Table.md.
+7. Ethics / Political casebooks.
+8. Paper outlines.
 9. Only then consider second formula-role pass and deeper long-file reorganization.
 ```
 
@@ -674,12 +646,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create CODEX_PROMPT_Update_Registry_For_PH_SS_Files.md
+Create AI/SRT_AI_Consciousness_Evaluation_Rubric.md
 ```
 
 Reason:
 
-> Many PH-SS files were added recently. Before building more, ensure the repository's registry and README surfaces can discover them reliably.
+> AI consciousness / agency / responsibility is currently SRT's strongest near-term flagship application. The rubric will convert the S0-S6 subjecthood ladder into an evaluable framework.
 
 ---
 
