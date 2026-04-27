@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v2
+status: active_v3
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -27,11 +27,12 @@ dependency:
   - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
   - Core/SRT_Core_24_Floor_Normativity_Verification.md
   - Core/SRT_Validation_Template.md
+  - AI/SRT_AI_Consciousness_Evaluation_Rubric.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
-  It lists staged tasks for registry/index updates, validation templates, experimental roadmap,
-  AI consciousness rubric, terminology consistency, ethics/political casebooks, neuroscience
-  prediction table, paper-facing outputs, formula-role cleanup, and optional long-file refactor.
+  It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
+  experimental roadmap, terminology consistency, ethics/political casebooks, neuroscience prediction
+  table, paper-facing outputs, formula-role cleanup, and optional long-file refactor.
 ---
 
 # SRT Next Optimization TODO
@@ -64,7 +65,8 @@ AI / Neuroscience PH-SS-10 subjecthood links added;
 Core24 PH-SS-11 validation link added;
 Foundations / Axioms first safe refactor pass completed;
 Registry / README / index discovery pass completed;
-Core validation template created.
+Core validation template created;
+AI consciousness evaluation rubric created.
 ```
 
 Current next-stage goal:
@@ -82,7 +84,8 @@ experimental tractability, flagship AI application, terminology consistency, and
 |---|---|---|---|---|
 | P0 | Registry / README / index discovery pass | new PH-SS files must be discoverable by humans and agents | Claude Code prompt | done |
 | P0 | Validation template | converts SRT from broad philosophy to testable research program | direct new file | done |
-| P0 | AI consciousness evaluation rubric | strongest near-term flagship application | direct new file | todo |
+| P0 | AI consciousness evaluation rubric | strongest near-term flagship application | direct new file | done |
+| P1 | AI responsibility / agency note | prevents vague AI agency / culpability language | direct new file | todo |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | Claude Code prompt or direct audit file | todo |
 | P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | todo |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | todo |
@@ -182,19 +185,15 @@ Core/SRT_Validation_Examples.md
 
 But five initial example packages already exist inside the template.
 
-**Recommended next action**:
-
-```text
-Proceed to Phase 3.1: AI consciousness evaluation rubric.
-```
-
 ---
 
 ## 4. Phase 3 — Flagship AI consciousness application
 
 ### Task 3.1 — Create AI consciousness evaluation rubric
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 AI/SRT_AI_Consciousness_Evaluation_Rubric.md
@@ -204,7 +203,7 @@ Purpose:
 
 > Convert the S0-S6 subjecthood ladder into an evaluation rubric for AI systems.
 
-Rubric levels:
+The rubric distinguishes:
 
 ```text
 S0 selection event
@@ -216,20 +215,20 @@ S5 agency
 S6 responsibility-bearing subject
 ```
 
-For each level include:
+It includes:
 
 ```text
 observable indicators;
 required evidence;
 false positive risks;
 current LLM status;
-future AI possible status;
-failure / narrowing condition.
+failure / narrowing condition;
+classification labels;
+deployment responsibility map;
+validation package for AI subjecthood claims.
 ```
 
-**Execution method**: direct new file.
-
-**Done condition**:
+Done condition met:
 
 ```text
 AI consciousness claims can be evaluated without jumping from performance or self-report to subjecthood.
@@ -630,13 +629,14 @@ Recommended next steps:
 ```text
 1. Registry / README / index discovery pass.                     DONE
 2. Core/SRT_Validation_Template.md.                              DONE
-3. AI/SRT_AI_Consciousness_Evaluation_Rubric.md.                 NEXT
-4. Experiments/SRT_Experimental_Roadmap_v1.md.
-5. SRT_Terminology_Consistency_Audit.md.
-6. Neuroscience/SRT_Neuro_Predictions_Table.md.
-7. Ethics / Political casebooks.
-8. Paper outlines.
-9. Only then consider second formula-role pass and deeper long-file reorganization.
+3. AI/SRT_AI_Consciousness_Evaluation_Rubric.md.                 DONE
+4. AI/SRT_AI_Agency_Responsibility_Note.md.                      NEXT
+5. Experiments/SRT_Experimental_Roadmap_v1.md.
+6. SRT_Terminology_Consistency_Audit.md.
+7. Neuroscience/SRT_Neuro_Predictions_Table.md.
+8. Ethics / Political casebooks.
+9. Paper outlines.
+10. Only then consider second formula-role pass and deeper long-file reorganization.
 ```
 
 ---
@@ -646,12 +646,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create AI/SRT_AI_Consciousness_Evaluation_Rubric.md
+Create AI/SRT_AI_Agency_Responsibility_Note.md
 ```
 
 Reason:
 
-> AI consciousness / agency / responsibility is currently SRT's strongest near-term flagship application. The rubric will convert the S0-S6 subjecthood ladder into an evaluable framework.
+> The consciousness rubric separates S0-S6. A dedicated agency/responsibility note will prevent vague claims like “the AI did it” or “the AI is responsible” by mapping tool, delegated, autonomous, and responsibility-bearing agency.
 
 ---
 
