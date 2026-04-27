@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v16
+status: active_v17
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -31,6 +31,7 @@ dependency:
   - AI/SRT_AI_Agency_Responsibility_Note.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
   - Experiments/SRT_Pilot_Cards_v1.md
+  - Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md
   - SRT_Terminology_Consistency_Audit.md
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
@@ -43,8 +44,8 @@ dependency:
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   Main optimization chain is complete enough for review, and the experiment branch has begun with
-  first pilot cards for d-value vs salience, Psi_f vs prediction error, and L2 hardening vs memory/habit.
-  Remaining next actions should be narrow: build a stimulus bank, an analysis plan, or start one manuscript.
+  pilot cards and a first d-value vs salience stimulus bank. Remaining next actions should be narrow:
+  build the d-value vs salience analysis plan, create a pilot ethics note, or start one manuscript.
 ---
 
 # SRT Next Optimization TODO
@@ -91,16 +92,17 @@ Non-reductive verification paper outline created;
 Second formula-role pass completed for Philosophy / Ethics / Political / Social high-risk formulas;
 Long Foundations / Axioms deeper reorganization: audit plan created; Mode 2 structure notes added; full content reorganization not yet executed;
 Optimization completion audit created;
-Pilot cards v1 created for d-value, Psi_f, and L2 hardening.
+Pilot cards v1 created for d-value, Psi_f, and L2 hardening;
+d-value vs salience stimulus bank v0 created.
 ```
 
 Current next-stage goal:
 
 ```text
 Proceed narrowly in the experiment branch:
-1. build a d-value vs salience stimulus bank;
-2. build a d-value vs salience analysis plan;
-3. create a pilot ethics note.
+1. build a d-value vs salience analysis plan;
+2. create a pilot ethics note;
+3. optionally create a pre-rating form template.
 ```
 
 ---
@@ -115,6 +117,9 @@ Proceed narrowly in the experiment branch:
 | P1 | AI responsibility / agency note | prevents vague AI agency / culpability language | direct new file | done |
 | P1 | Experimental roadmap | organizes proxy tests and flagship predictions | direct new file | done |
 | P1 | Pilot cards v1 | turns roadmap into low-cost experimental cards | direct new file | done |
+| P1 | d-value vs salience stimulus bank | provides item pool and pre-rating dimensions | direct new file | done |
+| P1 | d-value vs salience analysis plan | makes first pilot statistically executable | direct new file | todo |
+| P1 | Pilot ethics note | keeps first studies low-risk and reviewable | direct new file | todo |
 | P1 | Terminology consistency audit | prevents semantic drift across Core / Philosophy / AI / Neuro | direct audit file | done |
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
 | P1 | Ethics casebook | makes ethics guardrails usable on concrete cases | direct new file | done |
@@ -138,10 +143,11 @@ Main checkpoint file:
 SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 ```
 
-Experiment branch file:
+Experiment branch files:
 
 ```text
 Experiments/SRT_Pilot_Cards_v1.md
+Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md
 ```
 
 Pilot cards now available:
@@ -150,6 +156,16 @@ Pilot cards now available:
 1. d-value vs salience
 2. Psi_f vs prediction error
 3. L2 hardening vs memory / habit
+```
+
+Stimulus bank now available:
+
+```text
+A. high salience / low d_proxy
+B. matched salience / high d_proxy
+C. low-to-moderate salience / high d_proxy
+D. low salience / low d_proxy controls
+E. high salience / high d_proxy later-use items
 ```
 
 ---
@@ -161,14 +177,14 @@ Pilot cards now available:
 Next recommended file:
 
 ```text
-Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md
+Experiments/SRT_D_Value_vs_Salience_Analysis_Plan_v0.md
 ```
 
 Then:
 
 ```text
-Experiments/SRT_D_Value_vs_Salience_Analysis_Plan_v0.md
 Experiments/SRT_Pilot_Ethics_Note_v0.md
+Experiments/SRT_D_Value_vs_Salience_PreRating_Form_v0.md
 ```
 
 ### Direction B — Publication
