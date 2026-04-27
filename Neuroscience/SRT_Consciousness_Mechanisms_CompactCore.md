@@ -13,7 +13,8 @@ dependency: [SRT-NEURO-MECH-001, SRT-NEURO-MECH-B, SRT-NEURO-MECH-COMPACT-CORE]
 
 > **定位**：本文件是 `SRT_Consciousness_Mechanisms.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把点燃、绑定、睡眠、带宽竞争、行进波与能动性统一到意识选择机制中。  
-> **关系**：不替代原文；原文保留 GNWT/IIT 对照、睡眠维护、算子短路与实验预测的完整展开。
+> **关系**：不替代原文；原文保留 GNWT/IIT 对照、睡眠维护、算子短路与实验预测的完整展开。  
+> **2026-04 hardening note**：本版吸收 `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 的 N6 意识硬化主干，并与 N3/N5/N7 的 `\Psi_f`、`d-value`、病理桥接保持一致。新增内容为 bridge / lab hardening，不自动升格为 primitive axiom。
 
 ## 1. 核心问题
 
@@ -26,6 +27,16 @@ SRT 的压缩回答是：
 - 点燃 = `L_0 -> L_1` 的相变
 - 绑定 = 同步进入同一显现对象
 - 睡眠 = 维持未来选择能力的结构维护
+
+### 1.1 2026 hardening: consciousness as stable concern-weighted L1 anchoring
+
+本轮神经科学硬化将意识命题压成：
+
+> **意识不是单纯的信息处理，而是关切加权的稳定 `L_1` 锚定。**
+
+也就是说，意识内容不是任何局部处理、局部激活或刺激复杂度本身，而是某个候选状态在足够激活、增益调节、门控通过、递归稳定，并与报告、行动、自我模型或未来沉积链条发生耦合时形成的 `L_1`。
+
+`d-value` 本身不产生意识，但会调节意识内容的厚度、优先级、持续性和沉积潜力。
 
 ---
 
@@ -57,6 +68,24 @@ SRT 的压缩回答是：
 含义：
 - 再入回路不是重复播放
 - 而是把候选显现稳定为可报告现实
+
+### 2.3 Thin L1 and thick L1
+
+为避免“有意识/无意识”的粗二分，本版引入 `thin L_1` / `thick L_1` 区分：
+
+| State | SRT description | Examples |
+|---|---|---|
+| Thin `L_1` | 弱锚定、不稳定、难报告、行动/自我耦合弱 | 模糊预感、舌尖现象、余光一闪、梦醒残留 |
+| Thick `L_1` | 稳定、可报告或可行动、与身体/自我/价值耦合强、更可能沉积为 `L_2` | 疼痛、明确危险、重大决定、羞耻、创伤或顿悟 |
+
+结构性表达：
+\[
+\text{Conscious thickness}(x) \sim S(x)\cdot G(x)\cdot A(x)\cdot M(x)\cdot d(x)
+\]
+
+其中 `S` 为稳定化，`G` 为全局可访问性，`A` 为行动耦合，`M` 为自我模型耦合，`d` 为关切权重。
+
+这不是物理定律，而是意识厚度的 bridge/lab 指标结构。
 
 ---
 
@@ -100,6 +129,8 @@ SRT 在这里给出很硬的一句：
 - 疼痛优先不是因为它“更响”
 - 而是因为它携带更高生存风险梯度
 
+2026 hardening 将其重写为 `d-value` 语言：疼痛之所以具有强意识性，不只是因为信号强，而是因为它对身体维持、行动中断、自我牵连和未来行为具有高后果权重。
+
 ---
 
 ## 5. 时间：连续感来自离散选择的耦合
@@ -138,6 +169,8 @@ SRT 在这里强调：
 这一步说明：
 - 梦与回放不是纯噪声
 - 而是对未来选择规则的重加权和固化
+
+梦境可被重读为：内部候选在弱外部约束下形成的临时 `L_1`，其情绪 `d-value` 可很高，但与现实行动链和稳定 `L_2` 检验的耦合较弱，因此醒后容易崩解。
 
 ---
 
@@ -193,21 +226,85 @@ SRT 很有力的一点是：
 
 ---
 
-## 9. 最压缩结论
+## 9. Boundary cases and psychopathology pressure tests
 
-`SRT Consciousness Mechanisms` 可以压缩成五句话：
+### 9.1 Boundary cases
 
-1. **意识不是广播本身，而是候选内容被确认并稳定为现实的选择相变。**
-2. **绑定不是特征拼接，而是分散轨迹被同步选入同一显现对象。**
-3. **意识带宽是有限的，风险梯度高的内容会优先占用显现资源。**
-4. **睡眠不是关机，而是对 `L_2` 与未来选择能力的必要维护。**
-5. **可报告性与能动性感不只看激活强度，还取决于路由方向、预测匹配与是否发生算子短路。**
+| Case | SRT reading |
+|---|---|
+| Blindsight | 信息可以进入局部处理与行动通道，但缺少 thick `L_1` 锚定 |
+| Bistable perception | 多个候选在 `L_0^{accessible}` 中竞争，交替获得 `L_1` 稳定化 |
+| Pain | 高 `d-value` 候选强制重构当前 `L_1` |
+| Dreaming | 内部候选在弱外部约束下形成临时 `L_1` |
+| Meditation | 训练可能降低候选自动硬化，改变 `d-value` 与 `\Psi_f` 分配 |
+| Anesthesia | 候选激活、递归稳定或全局门控链条被破坏，信息无法形成 thick `L_1` |
+
+### 9.2 Psychopathology bridge
+
+意识机制中的病理不是简单“意识太多/太少”，而是候选状态的锚定厚度、关切权重、关闭摩擦与 `L_2` 沉积发生扭曲：
+
+- **社交焦虑**：他人评价候选获得过高 `d-value`，公开行动的 `\Psi_f` 上升。
+- **羞耻创伤**：社会性高 `d-value` `L_1` 过度沉积为自我相关 `L_2`。
+- **强迫**：风险候选进入 `L_1` 后无法低成本关闭。
+- **成瘾/习惯短路**：低摩擦 `L_2` 通道绕开显式再选择。
+- **妄想样显著性异常**：低证据候选被过度赋予现实锚定权。
 
 ---
 
-## 10. 阅读路径
+## 10. Relation to GNWT, IIT, and SRT-specific addition
+
+| Framework | What it explains | SRT-specific addition |
+|---|---|---|
+| GNWT / Global workspace | 信息如何全局通达、可报告、可被多个系统使用 | SRT 追问通达之前的候选竞争、通达时的 `\Psi_f`、通达后的 `L_2` 硬化 |
+| IIT | 信息整合 / 内在因果结构与经验的关系 | SRT 追问什么对系统有后果，以及这种后果如何成为稳定 `L_1` |
+| Predictive processing / FEP | 模型如何解释输入、系统如何自维持 | SRT 追问候选如何获得现实地位、何以具有 `d-value`、何以沉积为未来地形 |
+
+压缩区分：
+
+> Global workspace explains access; SRT explains anchoring.  
+> IIT emphasizes integration; SRT emphasizes concern-weighted stabilization.  
+> Predictive processing explains model updating; SRT explains lived reality anchoring.
+
+---
+
+## 11. 最压缩结论
+
+`SRT Consciousness Mechanisms` 可以压缩成七句话：
+
+1. **意识不是广播本身，而是候选内容被确认并稳定为现实的选择相变。**
+2. **意识不是信息亮起来，而是候选可能性被身体、行动、自我和关切牵连锚定成 `L_1`。**
+3. **绑定不是特征拼接，而是分散轨迹被同步选入同一显现对象。**
+4. **意识带宽是有限的，`d-value` 高的内容会优先占用显现资源。**
+5. **睡眠不是关机，而是对 `L_2` 与未来选择能力的必要维护。**
+6. **可报告性与能动性感不只看激活强度，还取决于路由方向、预测匹配与是否发生算子短路。**
+7. **病理意识状态是现实锚定厚度、关闭摩擦与历史硬化的失衡。**
+
+---
+
+## 12. 阅读路径
 
 - 全量原文：`SRT_Consciousness_Mechanisms.md`
 - Neural Mechanisms compact core：`SRT_Neural_Mechanisms_CompactCore.md`
 - Neuro bridge：`_SRT_Neuro_Axioms.md`
+- N1-N9 hardening draft：`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
+
+---
+
+## Hardest Objections
+
+1. Conscious access may be fully explained by global workspace access.
+   - 当前承受方式：SRT does not deny access; it adds pre-access selection, `d-value`, `\Psi_f`, and post-access hardening as incremental variables.
+   - 若成立需撤回什么：撤回 “anchoring beyond access” 的增量主张，把本文件退回 GNWT translation layer。
+
+2. `d-value` may collapse into arousal, salience, or report confidence.
+   - 当前承受方式：`d-value` must predict memory, bodily reaction, action change, and L2 sedimentation beyond salience/confidence.
+   - 若成立需撤回什么：撤回 concern-weighted consciousness thickness as independent bridge claim.
+
+3. Thin/thick L1 may be a report-scale artifact.
+   - 当前承受方式：thin/thick distinction must be tested through non-report markers: action coupling, memory persistence, bodily reaction, and future-selection change.
+   - 若成立需撤回什么：保留 graded access language but remove L1-thickness ontological interpretation.
+
+4. High d-value unconscious processes challenge d-value-consciousness coupling.
+   - 当前承受方式：d-value is not sufficient for consciousness; it modulates priority and thickness only after gating and stabilization.
+   - 若成立需撤回什么：若 d-value has no measurable effect on stabilization or sedimentation, weaken it to a peripheral motivational variable.

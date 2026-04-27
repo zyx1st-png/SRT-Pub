@@ -2,7 +2,7 @@
 id: SRT-MEDIUM-AI-NEURO-COVERAGE-INDEX
 type: coverage_index
 tags: [Navigation, Coverage Audit, AI, Neuroscience, Medium Priority]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
@@ -21,7 +21,7 @@ dependency: [_SRT_CONTEXT_ROUTER, _SRT_DEEP_THEORY_MAP, Operations/_SRT_DEEP_NAV
 
 Use this file when a coverage audit flags AI or Neuroscience files as unreferenced. It tells readers and agents which route family those files support.
 
-This file does **not** mean every listed file should become a primary route. Many are full versions, compact versions, domain implementations, or support files.
+This file does **not** mean every listed file should become a primary route. Many are full versions, compact versions, domain implementations, hardening drafts, or support files.
 
 ---
 
@@ -60,13 +60,37 @@ Suggested routes:
 
 ---
 
-## 3. Neuroscience Registry / Clinical Support
+## 3. Neuroscience Registry / Bridge / Hardening Support
 
-These files support clinical and neuroscience-domain routing.
+These files support neuroscience-domain routing, claim-status separation, and the 2026-04 N1-N9 hardening cycle.
 
 | File | Navigation role | Boundary |
 |---|---|---|
+| `Neuroscience/README.md` | Neuroscience directory entry | Navigation only; not a theory source. |
 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | Neuroscience compact registry | Domain registry; not a canonical theory source. |
+| `Neuroscience/_SRT_Neuro_Axioms.md` | Canonical-facing neuro bridge | Hybrid bridge; do not treat every internal claim as canonical. |
+| `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` | Claim-status audit | Guardrail for `_SRT_Neuro_Axioms.md`; not a replacement for it. |
+| `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` | N1-N9 hardening staging draft | Bridge/lab working draft; not canonical unless promoted through claim ladder. |
+
+Suggested routes:
+
+- `_SRT_CONTEXT_ROUTER.md Route 8: IIT / PCI / GNW / Consciousness Mechanisms`
+- `_SRT_CONTEXT_ROUTER.md Route 13: Experimental Proxies / Measurement / Falsification`
+- `_SRT_DEEP_THEORY_MAP.md Node 10: Consciousness`
+- `_SRT_DEEP_THEORY_MAP.md Node 16: Experimental / Lab / Falsification`
+- `_SRT_CONTEXT_ROUTER.md Route 2: d-value / Stake / Concern Bandwidth / Consciousness Depth` when d-value, stake, or concern bandwidth is involved
+
+---
+
+## 4. Neuroscience Compact Core / Clinical Support
+
+These files support current compact-core doctrine and clinical/measured-consciousness routes.
+
+| File | Navigation role | Boundary |
+|---|---|---|
+| `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Current formal neural-mechanisms compact core | Contains N1-N5 / N7-N9 hardening summary; new hardening content remains bridge/lab unless promoted. |
+| `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | Current formal consciousness-mechanisms compact core | Contains N6 hardening summary; consciousness claims require d-value / L1 anchoring guardrails. |
+| `Neuroscience/SRT_Clin_00_IIT_PCI.md` | IIT / PCI / clinical measurement support | PCI/Φ-like measures are proxies, not identities with SRT consciousness. |
 | `Neuroscience/SRT_Clin_01_Pathology.md` | Clinical pathology support | Clinical interpretation layer; route back to Ψ_f / d-value for definitions. |
 | `Neuroscience/SRT_Clin_03_DMN_Networks.md` | DMN / network support | Neuroscience implementation layer; not a universal definition of L2 or consciousness. |
 
@@ -75,10 +99,11 @@ Suggested routes:
 - `_SRT_CONTEXT_ROUTER.md Route 8: IIT / PCI / GNW / Consciousness Mechanisms`
 - `_SRT_DEEP_THEORY_MAP.md Node 10: Consciousness`
 - `_SRT_CONTEXT_ROUTER.md Route 2: d-value / Stake / Concern Bandwidth / Consciousness Depth` when clinical severity, stake, or concern bandwidth is involved
+- `_SRT_CONTEXT_ROUTER.md Route 13: Experimental Proxies / Measurement / Falsification` for measurement and falsification questions
 
 ---
 
-## 4. Neuroscience Mechanism / Advanced Model Support
+## 5. Neuroscience Mechanism / Advanced Model Support
 
 These files support deeper neuro-mechanistic and biological implementation routes.
 
@@ -99,7 +124,7 @@ Suggested routes:
 
 ---
 
-## 5. First Medium Batch Coverage Status
+## 6. First Medium Batch Coverage Status
 
 The following medium-priority candidates from the coverage audit are now explicitly routed by this index:
 
@@ -108,7 +133,14 @@ The following medium-priority candidates from the coverage audit are now explici
 - `AI/SRT_AI_02_Mortality_Wisdom.md`
 - `AI/SRT_AI_Architecture.md`
 - `AI/SRT_AI_Architecture_CompactCore.md`
+- `Neuroscience/README.md`
 - `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`
+- `Neuroscience/_SRT_Neuro_Axioms.md`
+- `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`
+- `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
+- `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
+- `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`
+- `Neuroscience/SRT_Clin_00_IIT_PCI.md`
 - `Neuroscience/SRT_Clin_01_Pathology.md`
 - `Neuroscience/SRT_Clin_03_DMN_Networks.md`
 - `Neuroscience/SRT_Neuro_06_Field_Effects.md`
@@ -120,6 +152,13 @@ Future coverage audits should scan this file as a navigation source.
 
 ---
 
-## 6. Editing Rule
+## 7. Editing Rule
 
 Do not promote any file listed here to canonical status merely because it is medium-priority coverage material. Promotion requires updates to `CANONICAL_REGISTRY.md`, the claim ladder, and the relevant canonical anchors.
+
+For Neuroscience specifically:
+
+- Treat `_SRT_Neuro_Axioms.md` as canonical-facing hybrid bridge.
+- Treat `SRT_Neuro_Axioms_Claim_Status.md` as the claim-level guardrail for `_SRT_Neuro_Axioms.md`.
+- Treat the two compact core files as the current concise formal summary.
+- Treat `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` as staging / lab material.

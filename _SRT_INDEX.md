@@ -155,11 +155,11 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `_SRT_DEEP_THEORY_MAP.md`（deep theory node map; not a canonical source）
 - `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md`（coverage-audit follow-up for Core/Core_Law high-priority files; not a canonical source）
 - `_SRT_MEDIUM_AI_NEURO_COVERAGE_INDEX.md`（coverage-audit follow-up for AI/Neuroscience medium-priority files; not a canonical source）
-- `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md`（coverage-audit follow-up for Philosophy medium-priority files; not a canonical source）
-- `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`（coverage-audit follow-up for Physics medium-priority files; not a canonical source）
-- `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`（coverage-audit follow-up for Spirituality medium-priority files; not a canonical source）
-- `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`（coverage-audit follow-up for papers / publication medium-priority files; not a canonical source）
-- `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md`（coverage-audit follow-up for root topic / FAQ medium-priority files; not a canonical source）
+- `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md`（philosophy coverage-audit follow-up only; not a canonical source）
+- `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`（physics coverage-audit follow-up only; not a canonical source）
+- `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`（spirituality coverage-audit follow-up only; not a canonical source）
+- `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`（papers / publication coverage-audit follow-up only; not a canonical source）
+- `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md`（root topic / FAQ coverage-audit follow-up only; not a canonical source）
 
 ### Bridge / Interface
 
@@ -174,9 +174,12 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 ### Neuroscience
 
+- `Neuroscience/README.md`（directory entry; separates canonical-facing material from bridge/lab hardening drafts）
 - `Neuroscience/_SRT_Neuro_Axioms.md`
+- `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（claim-status audit for the neuro axiom bridge; not a replacement for the axiom file）
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
+- `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（bridge/lab working draft; not a canonical source）
 
 ### Physics
 
@@ -238,4 +241,6 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Core/SRT_Core_24_Floor_Normativity_Verification.md` is a bridge-hardening supplement for floor replacement, dynamic normativity, and non-reductive verification; it does not outrank canonical anchors until promoted through claim governance.
 - `Core/SRT_Core_24_Index.md` is a retrieval index for Core 24 and does not define theory.
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
+- `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
+- `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限
 - Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板

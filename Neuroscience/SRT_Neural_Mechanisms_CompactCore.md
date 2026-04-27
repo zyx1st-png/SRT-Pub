@@ -13,7 +13,8 @@ dependency: [SRT-NEURO-AXIOMS-001, SRT-NEURO-MECH-001]
 
 > **定位**：本文件是 `SRT_Neural_Mechanisms.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把神经机制重写为选择动力学，而不是单纯信息处理。  
-> **关系**：不替代原文；原文保留病理参数化、免疫接口、量子基质与工作记忆振荡等展开层。
+> **关系**：不替代原文；原文保留病理参数化、免疫接口、量子基质与工作记忆振荡等展开层。  
+> **2026-04 hardening note**：本版吸收 `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 的神经选择主干，尤其是 N1-N5 / N8-N9。新增内容在功能上是 bridge / lab hardening；除非另经 claim-ladder 提升，不自动升格为 primitive axiom。
 
 ## 1. 核心问题
 
@@ -25,6 +26,23 @@ SRT 的压缩回答是：
 - 神经系统不是被动传输器
 - 而是 `\hat G_\theta` 的具身实现
 - 它在神经流形上把 `L_0` 压成可显现的 `L_1`
+
+### 1.1 2026 hardening: neural selection before representation
+
+本轮神经科学硬化把本文件的核心命题压成更可防守的形式：
+
+> **神经系统不只是表征器；表征是选择稳定后的产物。**
+
+因此，感知、行动、判断与意识内容不应被理解为外部输入的直接复制，而应被理解为候选状态在身体状态、注意增益、行动准备、历史权重与关切价值约束下被稳定出来的 `L_1`。
+
+| SRT term | Neuroscience-facing interpretation |
+|---|---|
+| `L_0^{accessible}` | 当前系统可访问、可激活、可竞争的候选知觉 / 行动 / 解释空间 |
+| `\hat G_\theta` | 竞争、增益、门控、稳定化构成的具身选择过程 |
+| `L_1` | 当前被锚定的知觉、行动、判断、意识内容 |
+| `L_2` | 选择历史沉积成的先验、习惯、图式、技能、情绪标记与规范内化 |
+| `\Psi_f` | 候选状态稳定为 `L_1` 所需支付的多维选择摩擦 |
+| `d-value` | 候选状态对身体调节、行动后果、自我模型与未来可选择性的关切权重 |
 
 ---
 
@@ -47,6 +65,23 @@ SRT 的压缩回答是：
 
 最短说法：
 > **意识相关显现不是“活动更强”，而是轨迹被成功投影到可锚定区域。**
+
+### 2.3 Composite `\hat G_\theta` architecture
+
+2026 hardening 将神经层面的 `\hat G_\theta` 明确写成复合选择架构，而不是单一脑区或单一机制：
+
+\[
+\hat G_\theta^{neural}\approx \text{Stabilization}\circ \text{Gating}\circ \text{Gain}\circ \text{Competition}
+\]
+
+| Stage | Role | Candidate neural realization |
+|---|---|---|
+| Competition | 多个候选状态共激活但尚未稳定为 `L_1` | 侧抑制、多稳态知觉、表征竞争 |
+| Gain modulation | 根据身体、注意、情绪、精度与 `d-value` 改变候选胜率 | 注意增益、精度加权、神经调质、salience network |
+| Gating | 决定候选能否进入行动、报告、工作记忆或意识通达 | 基底节-丘脑-皮层环路、前额叶门控、动作选择 |
+| Stabilization | 候选获得持续性并可指导行为或报告 | 递归加工、工作记忆、全局通达、可塑性 |
+
+约束条件：不是所有神经活动都算完整的 `\hat G_\theta` 实例。只有当存在候选竞争、theta/d/L2/Psi_f 相关偏置、门控许可与稳定化结果时，才构成 SRT 意义上的现实锚定事件。
 
 ---
 
@@ -84,6 +119,27 @@ SRT 在这里的强主张是：
 也就是说：
 - 突触改变不是“存东西”这么简单
 - 而是在塑造下一次 `\hat G_\theta` 如何取值
+
+### 4.2 L2 as sedimented selection constraint
+
+2026 hardening 将 `L_2` 的神经科学解释从“记忆/先验”扩展为：
+
+> **`L_2` 是过往选择沉积形成的结构，它通过降低稳定路径内部的 `\Psi_f`、提高不兼容替代路径的 `\Psi_f`，来约束未来选择动力学。**
+
+| Phenomenon | SRT reading |
+|---|---|
+| Habit | 重复 `L_1` 行动沉积为低摩擦 `L_2` 路径 |
+| Expert intuition | 专业图式降低领域相关候选的锚定摩擦 |
+| Trauma | 高 `d-value` 事件异常硬化为威胁型 `L_2` |
+| Bias | 某些解释路径低摩擦化，导致过早现实锚定 |
+| Norm internalization | 社会 `L_2` 被内化为个体选择地形的一部分 |
+
+核心预测：
+\[
+\Psi_f(\text{trained path})\downarrow,\qquad \Psi_f(\text{incompatible alternative})\uparrow
+\]
+
+这意味着 `L_2` 硬化同时带来效率提升与可能性收缩。
 
 ---
 
@@ -154,6 +210,29 @@ L_1(t)=\sum_n \text{Frame}_n\,\delta(t-t_n)
 
 `L_model` 在此指竞争内部假设的负荷：候选 latent cause、行动策略、身体状态解释或社会意图解释之间的后验歧义、有效复杂度与分歧度。实验上可用解码器后验熵、候选解释数量、ACC/PFC conflict proxy、反应时/眼动歧义指标近似；这些近似不能单独定义 `Ψ_f`。
 
+### 6.4 `\Psi_f` as multidimensional selection friction
+
+2026 hardening 将 `\Psi_f` 明确降格为可测潜变量，而非单一神经标记：
+
+\[
+\Psi_f(\theta)=\alpha_\theta C+\beta_\theta E+\gamma_\theta M+\delta_\theta A+\eta_\theta B+\lambda_\theta H+\rho_\theta R
+\]
+
+| Term | Meaning |
+|---|---|
+| `C` | 候选冲突 |
+| `E` | 预测违背 / epistemic mismatch |
+| `M` | 模型重构成本 |
+| `A` | 行动切换与门控成本 |
+| `B` | 身体负荷 / interoceptive strain |
+| `H` | 历史惯性 / `L_2` 阻力 |
+| `R` | 情绪、社会或实际风险 |
+
+区别：
+- `\Psi_f` 不是 cognitive effort；effort 只是其主观/行为表现之一。
+- `\Psi_f` 不是 prediction error；PE 衡量不匹配，`\Psi_f` 衡量锚定成本。
+- `\Psi_f` 不是 uncertainty；uncertainty 衡量候选分布分散，`\Psi_f` 衡量把分散压缩成现实承诺的成本。
+
 ---
 
 ## 7. 工作记忆与时间复用
@@ -187,25 +266,107 @@ SRT 对病理学的最强改写之一是：
 - 病理可量化
 - 治疗目标变成参数校正而不是只压表象
 
+### 8.2 Anchoring-dynamics pathology bridge
+
+2026 hardening 对病理学作出更细分的 reality-anchoring 解释：
+
+| Condition | Core SRT imbalance |
+|---|---|
+| Anxiety | 威胁候选获得过高 `d-value`，模糊输入过早锚定为危险 `L_1` |
+| Compulsion / OCD-like closure failure | 低概率高后果风险候选进入 `L_1` 后无法关闭，`\Psi_f(closure)` 持续升高 |
+| Trauma | 高 `d-value` `L_1` 事件异常沉积为威胁型 `L_2` |
+| Depression | 面向未来的可访问 `L_0` 收缩，正向行动候选难以锚定 |
+| Addiction | 即时奖赏路径低摩擦化，替代路径摩擦升高 |
+| Delusion-like salience abnormality | 低证据候选获得不成比例现实锚定权 |
+
+原则：治疗不是把正确信息塞入系统，而是帮助系统形成新的、可重复、低摩擦、可行动的 `L_1` 锚定，并逐渐重塑 `L_2`。
+
 ---
 
-## 9. 最压缩结论
+## 9. `d-value`: concern-weighted selectability
 
-`SRT Neural Mechanisms` 可以压缩成五句话：
+本文件把 `d-value` 明确区别于 salience、attention、reward 与 precision：
+
+| Concept | Question answered |
+|---|---|
+| Salience | 什么突出？ |
+| Attention | 什么被资源处理？ |
+| Reward | 什么被趋近或强化？ |
+| Precision | 什么被系统信任为信息源？ |
+| `\Psi_f` | 锚定需要支付多大成本？ |
+| `d-value` | 什么真正关系到系统？ |
+
+核心句：
+
+> **Salience makes a signal noticeable; d-value makes a signal matter.**
+
+神经层面，`d-value` 不定位于单一区域，而是内感受、奖赏/威胁、行动后果、自我相关、社会评价和未来可选择性系统的整合变量。
+
+概念式：
+\[
+d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
+\]
+
+其中 `B` 为身体相关性，`A` 为行动后果，`R` 为奖赏/威胁，`S` 为自我模型相关性，`M` 为记忆/身份共振，`F` 为未来选择空间影响。
+
+---
+
+## 10. Experimental roadmap and mainstream-theory distinction
+
+### 10.1 Minimal experimental variables
+
+| SRT variable | Manipulation | Measures |
+|---|---|---|
+| `L_0^{accessible}` | 模糊图像、多稳态刺激、多义词、动作选择 | 候选报告、选择分布、眼动 |
+| `d-value` | 自我相关、健康风险、金钱、威胁、身份、声誉 | 记忆、行动改变、生理唤醒、主观重要性 |
+| `\Psi_f` | 冲突、规则切换、不确定反馈、关闭需求、责任负荷 | RT、错误率、瞳孔、皮电、信心、修改率 |
+| `L_2` | 训练、重复、情绪标记、奖惩强化 | 迁移、偏置、逆转成本、保持率 |
+
+旗舰实验候选：
+1. 模糊知觉 × `d-value` × `L_2` 训练；
+2. 规则硬化与逆转成本；
+3. 高责任关闭成本任务；
+4. 安全重锚定任务；
+5. 未来 `L_0` 可访问性任务；
+6. 成瘾替代路径摩擦任务。
+
+### 10.2 Distinction from neighboring frameworks
+
+| Theory | SRT absorbs as | SRT distinction |
+|---|---|---|
+| Predictive processing | 候选生成、误差、precision/gain | SRT 解释现实锚定，不只是模型更新 |
+| FEP | 自维持底层与稳定约束 | SRT 加入 lived anchoring、`d-value` 与 `L_1 -> L_2` 沉积 |
+| Active inference | 行动门控与策略选择层 | SRT 把行动解释为现实承诺与沉积路径 |
+| Global workspace | `L_1` 稳定化/通达路径之一 | SRT 包含通达前竞争与通达后硬化 |
+| IIT | 可能的整合结构约束 | SRT 强调关切加权锚定，而非整合度本身 |
+| Reinforcement learning | `L_2` 形成机制之一 | `d-value` 宽于 reward；`\Psi_f` 宽于 prediction error |
+| Embodied cognition | `\theta`、身体 d、行动 affordances | SRT 主张 reality-selection itself is bodily |
+
+压缩区分：
+> Predictive processing explains how the brain guesses the world. FEP explains how systems maintain themselves. Global workspace explains access. RL explains value updating. Embodied cognition explains bodily dependence. SRT explains how a candidate possibility, under bodily, concern-weighted, cost-constrained, and historically sedimented conditions, becomes real for the system.
+
+---
+
+## 11. 最压缩结论
+
+`SRT Neural Mechanisms` 可以压缩成七句话：
 
 1. **神经系统不是单纯信息处理器，而是具身选择算子的实现。**
-2. **神经显现来自流形轨迹被门控并投影进可锚定的点燃子空间。**
-3. **除法归一化是受限选择的本体必然，不只是经验电路技巧。**
-4. **学习、剪枝与工作记忆都可被统一写成多时标选择动力学。**
-5. **病理最深层上是参数漂移与选择失衡，而不是表面症状清单。**
+2. **表征不是选择之前的原始事实，而是选择稳定后的产物。**
+3. **神经显现来自流形轨迹经竞争、增益、门控、稳定化后投影进可锚定区域。**
+4. **除法归一化是受限选择的本体必然，不只是经验电路技巧。**
+5. **学习、剪枝与工作记忆都可被统一写成多时标选择动力学。**
+6. **`\Psi_f` 是候选进入 `L_1` 的多维锚定成本；`d-value` 是候选对系统的关切后果。**
+7. **病理最深层上是现实锚定动力学的扭曲，而不是表面症状清单。**
 
 ---
 
-## 10. 阅读路径
+## 12. 阅读路径
 
 - 全量原文：`SRT_Neural_Mechanisms.md`
 - Neuro bridge：`_SRT_Neuro_Axioms.md`
 - Consciousness 机制：`SRT_Consciousness_Mechanisms.md`
+- N1-N9 hardening draft：`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
 
 ---
@@ -229,3 +390,11 @@ SRT 对病理学的最强改写之一是：
 4. Neural burden is fully reducible to generic predictive error.
    - 当前承受方式：`H-NEURO-4b` requires residual burden proxies such as metabolic cost, recovery half-life, stress load, or position-bound consequence beyond PE itself.
    - 若成立需撤回什么：撤回 SRT-specific neural burden language and keep the section as a predictive-processing translation note.
+
+5. `d-value` collapses into salience, reward, precision, or motivational relevance.
+   - 当前承受方式：`d-value` is defined as concern-weighted consequence for body, action, self-model, and future selectability, not as stimulus prominence or reward alone.
+   - 若成立需撤回什么：撤回 d-value as an independent bridge variable and reclassify it as a terminological aggregation of existing constructs.
+
+6. `L_2` hardening improves trained-path efficiency without increasing alternative-path friction.
+   - 当前承受方式：the efficiency-flexibility tradeoff is an explicit empirical prediction, not a definitional truth.
+   - 若成立需撤回什么：weaken the `L_2` basin-hardening model and treat hardening as ordinary learning unless alternative-path cost is demonstrated.

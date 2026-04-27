@@ -34,6 +34,7 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | exact status of `Ψ_f` projections | payability burden is the v1 governance-canonical main read; geometry and metabolic/energetic forms are conditional projections | necessary and sufficient conditions for all projection relations, including when geometry is a true lower bound | Fisher length, energy cost, pain, or stress cannot be called `Ψ_f` without projection checks |
 | exact status of `d` proxies | bare `d` is a scalar summary of stake-coupled concern; `D_eff`, Fisher rank, `d-vector`, and `d-gate` are separated | a final theorem identifying capacity directions with stake-coupled concern directions | capacity, competence, or distinguishability cannot be treated as concern |
 | incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, and reward | a complete formal object with validated sufficiency conditions | high meaning, high reward, or high confidence cannot be cited as `T_dir` by itself |
+| Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
 
 These are pressure points, not new axioms. They route later work and block overclaiming.
 
@@ -333,6 +334,58 @@ Any bridge that uses a selector-like term must mark which layer it is using:
 3. **Assumed interface**: selector is taken as a domain interface and must not be cited as core derivation.
 
 Until the origin question is actually hardened, P0-04 should be cited as an open exposure point. Do not add a formula here to make the gap look closed.
+
+---
+
+## 8. Core 24: Floor Replacement, Dynamic Normativity, and Non-Reductive Verification
+
+### Current State
+
+Core 24 has now been integrated at safe levels across the repository:
+
+- `Core/SRT_Core_24_Floor_Normativity_Verification.md` records the full bridge-hardening supplement.
+- `Core/SRT_Core_24_Canonical_Merge_Draft.md` compresses it into merge-ready candidates.
+- `Core/SRT_Core_21_Minimal_Axioms.md` now includes a non-axiom selection-first framing note.
+- `Core/SRT_Core_12b_Ontology_L2.md` now includes the operational signature of `L_2` hardening.
+- `SRT_EXP_MEASURE_MAP.md` now includes the non-reductive validation rule.
+
+The stabilized current position is:
+
+1. SRT's explanatory power should be framed as **selection-first floor replacement**, not as unrestricted explanation of everything.
+2. Purpose, value, morality, and frameworks may be treated as **stable forms of selection dynamics**, not as subjective overlays on a pre-given world.
+3. SRT's core constructs should be tested through **structural consequences, convergent proxies, comparative predictions, and failure conditions**, not through a single direct objective ruler.
+
+### Problem Point
+
+The Core 24 layer is now integrated as framing, bridge-hardening, and measurement governance, but it is not fully promoted to theorem status.
+
+Open issues:
+
+- The floor replacement claim is still primarily a framing thesis unless it generates domain-specific discriminating predictions.
+- The dynamic normativity claim is promising but must not collapse into the claim that any stable norm is thereby justified.
+- Value as non-substitutability still needs a clean bridge into `d-value` without redefining canonical `d` too quickly.
+- `Ψ_f` as inferred selection friction still needs projection checks so it does not collapse into generic task difficulty, pain, energy, or Fisher geometry.
+- Non-reductive validation must not be misused as a shield against falsification.
+
+### Failure Conditions
+
+Core 24 must remain accountable to the following failure conditions:
+
+1. **`Ψ_f` distinctiveness failure**: If `Ψ_f` produces no transition-cost signatures distinguishable from ordinary loss, prediction error, energy expenditure, or task difficulty, its operational role weakens.
+2. **`d-value` distinctiveness failure**: If `d-value` does not predict concern-weighted non-substitutability better than reward, preference, salience, or pain, its distinct theoretical role weakens.
+3. **`L_2` hardening failure**: If `L_2` hardening cannot be distinguished from ordinary memory, learned habit, convention, or environmental stability, its bridge role weakens.
+4. **Cross-scale loop failure**: If the selection-manifestation-hardening loop cannot generate domain-specific discriminating predictions, SRT's cross-scale explanatory claim collapses into analogy.
+5. **Normativity failure**: If purpose, value, morality, and frameworks cannot be modeled as selection constraints with identifiable consequences, the dynamic normativity claim remains philosophical interpretation rather than an operational bridge.
+
+### Future Hardening Direction
+
+Core 24 should be hardened in three directions:
+
+1. **d-value bridge**: add a carefully scoped note that value is concern-weighted non-substitutability, without replacing the canonical `d-value` definition.
+2. **Ψ_f bridge**: add a carefully scoped note that `Ψ_f` can be inferred from structured transition difficulty, without identifying it with Fisher geometry, effort, pain, or raw cost.
+3. **comparative prediction**: define at least one domain where SRT predicts a pattern not predicted by FEP, predictive processing, RL, IIT/GNW, social constructionism, or ordinary habit theory.
+
+Until these are done, Core 24 should be cited as a bridge-hardening supplement and canonical framing layer, not as a completed theorem package.
 
 ---
 
