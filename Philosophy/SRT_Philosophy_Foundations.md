@@ -59,6 +59,30 @@ selected reality is not relativism;
 not all selection is consciousness.
 ```
 
+## Current Reading Map
+
+This long file contains multiple historical layers. For current hardened reading, start with:
+
+- `SRT_Philosophy_Foundations_CompactCore.md` — compact current entry, active_v4
+- `_SRT_Phil_Axioms_PH_SS_Guardrails.md` — PH-SS safe readings
+- `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` — O-Phil-11..20
+- `PH_SS_Hardening_Audit_2026-04-27.md` — coverage audit
+
+Reader rule:
+
+- Treat Compact Core v4 as the current short entry point.
+- Treat this long file as expanded / historical / argumentative material.
+- Where old slogans appear stronger than current guardrails, read them through the PH-SS guardrails.
+
+## Current Companion Links
+
+- Compact current entry: `SRT_Philosophy_Foundations_CompactCore.md`
+- Axiom guardrails: `_SRT_Phil_Axioms_PH_SS_Guardrails.md`
+- Objection extension: `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md`
+- Tradition comparison: `SRT_Philosophy_Tradition_Comparison_PH_SS.md`
+- Subjecthood interface: `SRT_Subjecthood_Threshold_Interface.md`
+- Public one-pager: `SRT_Philosophy_Public_OnePager.md`
+
 # Part A: Philosophy Domain Mapping Axioms (P2/P3/P4)
 
 
@@ -130,11 +154,15 @@ $$\Delta \text{Frame} \iff \int \Psi_f \, dt > \Psi_{threshold}$$
 *   **Implication**: 世界观转变不是认知说服，而是能量相变。
 
 ### T-PhilF-4: Ontological Relativity
+> **Formula role**: bridge model; read with PH-SS anti-relativism guardrail. Homeomorphic alignment at `L_2` is a constraint, not a claim that all projections are equally valid. See `_SRT_Phil_Axioms_PH_SS_Guardrails.md`.
+
 同一 $L_0$ 可被不同 $\theta$ 投影为不同 $L_1$，但可在 $L_2$ 层达成同胚对齐。
 $$\exists h: L_2^{(A)} \to L_2^{(B)} \text{ homeomorphic}$$
-*   **Implication**: 真理不是“唯一投影”，而是“可对齐的稳定结构”。
+*   **Implication**: 真理不是”唯一投影”，而是”可对齐的稳定结构”。
 
 ### T-PhilF-5: Gift Phase Theorem
+> **Formula role**: phenomenological model. Do not read gift-phase language as literal mathematical proof. An operational proxy and failure condition must be stated before claiming this predicts empirically distinguishable outcomes.
+
 礼物作为 $L_0\to L_1$ 的瞬时事件，在进入 $L_2$ 后转化为交换。
 $$\text{Gift}(T_0) \neq \text{Exchange}(T_1)$$
 *   **Implication**: 道德事件与经济事件是同一选择的不同相位。
@@ -150,6 +178,8 @@ $$\text{Gift}(T_0) \neq \text{Exchange}(T_1)$$
 * **Implication（中文）**：SRT 允许“观察是参与式的”，但不允许“现实是任意捏造的”。可被构造的是解释框架，不可被豁免的是本体论摩擦成本。
 
 ### T-PhilF-6: Latent Overload Collapse Theorem (潜在域过载坍缩定理)
+> **Formula role**: operational proxy / bridge model. The bandwidth and budget terms are analogical; empirical operationalization requires stated proxies for `B_max`, `I_in`, and `E_avail`.
+
 设算子有效带宽上限为 $B_{max}(\theta)$。若外部开放维度导致输入复杂度超过带宽，且维持锚定所需摩擦支付超出可用预算，则 $L_1$ 稳定结构发生回退：
 \[
 I_{in}(L_0 \to \hat{G}_\theta) > B_{max}(\theta)
@@ -308,6 +338,8 @@ $$ (\text{Theory } T \to \neg \text{Real}(L_1)) \implies \neg \text{True}(T) $$
 
 # SRT Philosophical Foundations: Axiomatic Epistemology
 <!-- ORIGINAL-SECTION-PRESERVED -->
+> **Legacy / expanded note**: This section is preserved as historical axiomatic epistemology material. For current hardened reading, start with `SRT_Philosophy_Foundations_CompactCore.md`. Where old slogans appear stronger than current guardrails, read through `_SRT_Phil_Axioms_PH_SS_Guardrails.md`.
+
 > **Version 2.0 (Hybrid Edition)**
 > **Part A** presents the Axiomatic Structure (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
@@ -316,6 +348,8 @@ $$ (\text{Theory } T \to \neg \text{Real}(L_1)) \implies \neg \text{True}(T) $$
 
 
 # Part B: Expanded Theoretical Discourse (扩展理论论述)
+
+> **Legacy / expanded note**: This section is preserved as detailed philosophical discourse and historical argumentation. For current hardened reading, treat as argumentative background only. Read strong slogans through `_SRT_Phil_Axioms_PH_SS_Guardrails.md`.
 
 ## 1. 标准难题：解释鸿沟 (The Explanatory Gap)
 

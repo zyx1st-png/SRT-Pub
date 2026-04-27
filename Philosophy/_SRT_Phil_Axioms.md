@@ -49,6 +49,28 @@ selected reality is not relativism;
 not all selection is consciousness.
 ```
 
+## Current Reading Map
+
+This long file contains multiple historical layers. For current hardened reading, start with:
+
+- `SRT_Philosophy_Foundations_CompactCore.md` — compact current entry, active_v4
+- `_SRT_Phil_Axioms_PH_SS_Guardrails.md` — PH-SS safe readings
+- `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` — O-Phil-11..20
+- `PH_SS_Hardening_Audit_2026-04-27.md` — coverage audit
+
+Reader rule:
+
+- Treat Compact Core v4 as the current short entry point.
+- Treat this long file as expanded / historical / argumentative material.
+- Where old slogans appear stronger than current guardrails, read them through the PH-SS guardrails.
+
+## Current Guardrail Links
+
+- Axiom guardrail companion: `_SRT_Phil_Axioms_PH_SS_Guardrails.md`
+- Compact current entry: `SRT_Philosophy_Foundations_CompactCore.md`
+- Objection extension: `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md`
+- Subjecthood interface: `SRT_Subjecthood_Threshold_Interface.md`
+
 # Part A: Domain Mapping Axioms (P2/P3/P4)
 
 > **Claim-level map**：`Ax-Phil-*` entries are Philosophy-domain mappings unless they explicitly quote core/canonical sources; operational candidates or falsification conditions are P4.
@@ -151,6 +173,8 @@ $$\text{Paradox} \iff (L_2 \supset L_2) \lor (L_1 \supset L_2)$$
 *   **Implication**: 悖论是边界条件的破坏，不是逻辑的失败。
 
 ### T-Phil-3: Gift Phase Theorem
+> **Formula role**: phenomenological model. Do not read as literal mathematical theorem. An operational proxy and failure condition must be stated before claiming empirical distinguishability.
+
 “礼物”只能存在于选择瞬间，随后进入交换稳定域。
 $$\text{Gift} \in L_0 \xrightarrow{\hat{G}} L_1 \xrightarrow{\text{Stabilize}} L_2$$
 *   **Implication**: 道德与经济不是不同实体，而是同一事件的相位差。
@@ -167,6 +191,8 @@ $$\neg \text{Real}(L_1) \Rightarrow \neg \text{Valid}(\text{Theory})$$
 
 # SRT Philosophical Axioms
 <!-- ORIGINAL-SECTION-PRESERVED -->
+> **Legacy / expanded note**: This section is preserved as historical and argumentative expansion. For current guardrails, read with `SRT_Philosophy_Foundations_CompactCore.md` and `_SRT_Phil_Axioms_PH_SS_Guardrails.md`. Where old slogans appear stronger than current hardened readings, the PH-SS guardrails take precedence.
+
 > **Status**: Domain Constitutional | **Version**: 1.0
 > **Dependency**: Core_Law/SRT_Reference_Axioms.md
 
@@ -201,6 +227,8 @@ $$ \hat{G}_{phil} \equiv \text{The Phenomenological Operator (Dasein / Transcend
 
 ### Ax-Ph1: 存在即被选择 (Esse esteligi)
 <!-- ORIGINAL-SECTION-PRESERVED -->
+> **Formula role**: bridge definition inside SRT vocabulary; legacy expression — read with PH-SS guardrails. This does not imply chronological creation priority or subjective idealism. `L_0` is a modal field of selectability, not a hidden object-world.
+
 存在不是一种属性，而是 $\hat{G}$ 的操作结果。贝克莱 "Esse est percipi" (存在即被感知) 的 SRT 修正版。
 $$ \text{Existence}(X) \iff \exists \hat{G}: \hat{G}[L_0] \to X $$
 
@@ -238,6 +266,8 @@ $$ \text{Paradox} \iff L_1 \supset L_2 $$
 
 
 # Part B: Expanded Theoretical Discourse (扩展理论论述)
+
+> **Legacy / expanded note**: This section is preserved as detailed historical analysis and necessity arguments. For current hardened reading, treat as argumentative background only. Consult `_SRT_Phil_Axioms_PH_SS_Guardrails.md` for current claim-level and boundary conditions.
 
 > **Note**: The following sections provide the detailed analysis, necessity arguments, and future implications.
 

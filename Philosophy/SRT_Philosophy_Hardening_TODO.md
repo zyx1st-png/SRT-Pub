@@ -2,7 +2,7 @@
 id: SRT-PHIL-HARDENING-TODO
 type: hardening-plan
 tags: [Philosophy, TODO, Hardening, Claim Hygiene, Refactor, PH-SS]
-status: active_v9
+status: active_v10
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide
@@ -65,6 +65,7 @@ Core/SRT_Core_24_Floor_Normativity_Verification.md     -> PH-SS-11 validation po
 SRT_Philosophy_Tradition_Comparison_PH_SS.md           -> created / active_v1
 SRT_Subjecthood_Threshold_Interface.md                 -> created / active_v1
 SRT_Philosophy_Public_OnePager.md                      -> created / active_v1
+SRT_Philosophy_Foundations.md and _SRT_Phil_Axioms.md  -> safe refactor pass started: reading map, formula-role labels, legacy markers, companion links
 ```
 
 Current hardened reading now visible in Compact Core:
@@ -120,7 +121,7 @@ Current hardened reading now visible in Compact Core:
 
 | Pending task | Why still pending |
 |---|---|
-| Long Foundations / Axioms full refactor | secondary cleanup, not required for guardrail routing; should be done as separate review pass |
+| Long Foundations / Axioms full refactor | secondary cleanup, not required for guardrail routing; should be done as separate review pass — **started 2026-04-27**: reading map, formula-role labels, legacy markers, companion links added; only safe marking / linking pass completed |
 | Optional companion-to-owner merges | should happen only after review to avoid flattening bridge / canonical boundaries |
 
 ---
