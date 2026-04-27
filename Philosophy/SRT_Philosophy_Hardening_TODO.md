@@ -2,7 +2,7 @@
 id: SRT-PHIL-HARDENING-TODO
 type: hardening-plan
 tags: [Philosophy, TODO, Hardening, Claim Hygiene, Refactor, PH-SS]
-status: active_v2
+status: active_v3
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide
@@ -14,6 +14,8 @@ dependency:
   - SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27
   - SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27
   - SRT-PHIL-SELECTION-REALISM-LAYERED-REALISM-PATCH-2026-04-27
+  - SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27
+  - SRT-PHIL-OBJECTION-LEDGER-PH-SS-EXTENSION-2026-04-27
   - SRT-PHIL-OBJECTION-LEDGER
   - SRT-PHIL-FOUNDATIONS-COMPACT-CORE
   - SRT-PHIL-AXIOMS
@@ -45,6 +47,9 @@ The PH-SS hardening sequence has been added and partially merged into the main s
 02_PH_SS_Hardening_Execution_Plan.md                   -> created
 03_Selection_Realism_Layered_Realism_CompactPatch.md  -> created
 SRT_Philosophy_Foundations_CompactCore.md             -> upgraded to active_v4
+_PHILOSOPHY_MACHINE_INDEX.md                          -> created / active_v2
+_SRT_Phil_Axioms_PH_SS_Guardrails.md                   -> created
+SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md     -> created (O-Phil-11..20)
 ```
 
 Current hardened reading now visible in Compact Core:
@@ -57,18 +62,18 @@ Current hardened reading now visible in Compact Core:
 
 | Priority | Soft spot | Risk | Target file | Status |
 |---|---|---|---|---|
-| P0 | PH-SS-01: `L_0` ontology | hidden-world / modal mysticism | Compact Core, `_SRT_Phil_Axioms.md`, Core_Law L0 | compact core v4 hardened; axioms pending |
-| P0 | PH-SS-02: selection-before-existence | temporal priority / circularity | Compact Core, `_SRT_Phil_Axioms.md`, Foundations | compact core v4 hardened; axioms pending |
-| P0 | PH-SS-03: reality strength | hallucination / fact flattening | Compact Core, Foundations | compact core v4 hardened; long file pending |
-| P0 | PH-SS-04: subjective idealism | mind creates reality | Compact Core, README, Objection Ledger | compact core v4 hardened; ledger expansion pending |
-| P0 | PH-SS-05: `Psi_f` layer confusion | concept equivocation / math metaphor | Compact Core, `_SRT_Phil_Axioms.md`, `Psi_f` canonical links | compact core v4 layer-typed; canonical cross-check pending |
-| P0 | PH-SS-10: consciousness threshold | panpsychism / over-attribution | Compact Core, AI, Neuroscience | compact core v4 threshold added; cross-domain files pending |
-| P1 | PH-SS-06: normativity jump | is-ought gap / oppression legitimation | Ethics, Political Philosophy | compact core v4 guardrail added; ethics pending |
-| P1 | PH-SS-07: purpose/teleology | mystical purpose | Compact Core, Core 24, Foundations | compact core v4 hardened; Core 24 cross-link pending |
-| P1 | PH-SS-08: `d-value` philosophy | preference-reduction | Compact Core, `d-value` canonical links | compact core v4 added; canonical cross-check pending |
-| P1 | PH-SS-09: social ontology | mere construction / individualism | Social Economics, Political Philosophy | compact core v4 added; social files pending |
-| P1 | PH-SS-11: validation | unfalsifiability | Compact Core, Core 24, Claim Ladder | compact core v4 added; Core 24 pending |
-| P1 | PH-SS-12: anti-relativism | anything-goes | Compact Core, README, Political Philosophy | compact core v4 hardened; political links pending |
+| P0 | PH-SS-01: `L_0` ontology | hidden-world / modal mysticism | Compact Core, `_SRT_Phil_Axioms.md`, Core_Law L0 | compact core v4 hardened; axiom companion done; direct axiom merge pending |
+| P0 | PH-SS-02: selection-before-existence | temporal priority / circularity | Compact Core, `_SRT_Phil_Axioms.md`, Foundations | compact core v4 hardened; axiom companion done; direct axiom merge pending |
+| P0 | PH-SS-03: reality strength | hallucination / fact flattening | Compact Core, Foundations | compact core v4 hardened; axiom companion done; long file pending |
+| P0 | PH-SS-04: subjective idealism | mind creates reality | Compact Core, README, Objection Ledger | compact core v4 hardened; O-Phil extension done |
+| P0 | PH-SS-05: `Psi_f` layer confusion | concept equivocation / math metaphor | Compact Core, `_SRT_Phil_Axioms.md`, `Psi_f` canonical links | compact core v4 layer-typed; axiom companion done; canonical cross-check pending |
+| P0 | PH-SS-10: consciousness threshold | panpsychism / over-attribution | Compact Core, AI, Neuroscience | compact core v4 threshold added; axiom companion done; O-Phil extension done; cross-domain files pending |
+| P1 | PH-SS-06: normativity jump | is-ought gap / oppression legitimation | Ethics, Political Philosophy | compact core v4 guardrail added; axiom companion done; ethics pending |
+| P1 | PH-SS-07: purpose/teleology | mystical purpose | Compact Core, Core 24, Foundations | compact core v4 hardened; O-Phil extension done; Core 24 cross-link pending |
+| P1 | PH-SS-08: `d-value` philosophy | preference-reduction | Compact Core, `d-value` canonical links | compact core v4 added; O-Phil extension done; canonical cross-check pending |
+| P1 | PH-SS-09: social ontology | mere construction / individualism | Social Economics, Political Philosophy | compact core v4 added; O-Phil extension done; social files pending |
+| P1 | PH-SS-11: validation | unfalsifiability | Compact Core, Core 24, Claim Ladder | compact core v4 added; O-Phil extension done; Core 24 pending |
+| P1 | PH-SS-12: anti-relativism | anything-goes | Compact Core, README, Political Philosophy | compact core v4 hardened; O-Phil extension done; political links pending |
 | P2 | old preserved sections | duplicate / outdated claims | `_SRT_Phil_Axioms.md`, Foundations | pending refactor |
 | P2 | tradition comparison | unclear novelty | Compact Core or new comparison file | pending |
 
@@ -99,7 +104,8 @@ Add or cross-link a four-level existence distinction:
 ### Done condition
 
 - Compact Core includes E1–E4. **Done in Compact Core v4.**
-- `_SRT_Phil_Axioms.md` references E1–E4 near Ax-Phil-1.
+- Axiom companion contains `Def-Phil-Reality-Strength`. **Done.**
+- `_SRT_Phil_Axioms.md` directly references E1–E4 near Ax-Phil-1. **Pending direct merge.**
 - Strong existence claims specify which E-level they mean.
 
 ---
@@ -134,8 +140,9 @@ Layer typing:
 ### Done condition
 
 - Compact Core includes proxies and layer typing. **Done in Compact Core v4.**
-- `SRT_Philosophy_Objection_Ledger.md` links `O-Phil-2` and future `O-Phil-14` to these proxies.
-- Any philosophy file appealing to `Psi_f` says whether it means subjective difficulty, operational resistance, or canonical friction.
+- Axiom companion contains `Def-Phil-PsiF-Layers`. **Done.**
+- Objection extension contains `O-Phil-14`. **Done.**
+- Any philosophy file appealing to `Psi_f` says whether it means subjective difficulty, operational resistance, or canonical friction. **Ongoing.**
 
 ---
 
@@ -157,8 +164,8 @@ L_1 is the operator-relative anchoring event by which a candidate state becomes 
 ### Done condition
 
 - Compact Core includes anchoring distinction. **Done in Compact Core v4.**
-- Foundations long file avoids language implying `L_1` is a second substance.
-- Objection Ledger O-Phil-1 references anchoring explicitly.
+- Foundations long file avoids language implying `L_1` is a second substance. **Pending.**
+- Objection Ledger O-Phil-1 references anchoring explicitly. **Existing ledger covers; extension adds surrounding guardrails.**
 
 ---
 
@@ -183,8 +190,9 @@ Subjecthood requires at least:
 ### Done condition
 
 - Compact Core includes threshold model. **Done in Compact Core v4.**
-- `_SRT_Phil_Axioms.md` adds or links a `Def-Phil-Subjecthood-Threshold`.
-- Any micro-selection paragraph says micro-selection does not entail subjecthood.
+- Axiom companion contains `Def-Phil-Subjecthood-Threshold`. **Done.**
+- Objection extension contains `O-Phil-18`. **Done.**
+- Any micro-selection paragraph says micro-selection does not entail subjecthood. **Ongoing.**
 
 ---
 
@@ -209,8 +217,9 @@ Every formula should be tagged as one of:
 ### Done condition
 
 - Compact Core formula roles are labeled or converted into prose where safer. **Mostly done in Compact Core v4.**
-- `_SRT_Phil_Axioms.md` formula roles are labeled.
-- Ethics / political formulas with strong language are labeled.
+- Objection extension contains formula-risk objections where relevant (`O-Phil-14`, `O-Phil-19`). **Done.**
+- `_SRT_Phil_Axioms.md` formula roles are labeled. **Pending.**
+- Ethics / political formulas with strong language are labeled. **Pending.**
 
 ---
 
@@ -238,8 +247,8 @@ Two main types:
 ### Done condition
 
 - Compact Core uses unified diagnostic. **Done in Compact Core v4.**
-- `_SRT_Phil_Axioms.md` old paradox formulas are replaced or annotated.
-- Foundations long file points to unified diagnostic.
+- `_SRT_Phil_Axioms.md` old paradox formulas are replaced or annotated. **Pending.**
+- Foundations long file points to unified diagnostic. **Pending.**
 
 ---
 
@@ -263,9 +272,11 @@ Add a moral ladder:
 ### Done condition
 
 - Compact Core includes stabilization ≠ legitimacy guardrail. **Done in Compact Core v4.**
-- Ethics file distinguishes moral intensity, moral reality, and moral legitimacy.
-- `d-value` expansion is not treated as sufficient for moral progress.
-- Structural evil / occlusion links are explicit.
+- Axiom companion contains normativity ladder. **Done.**
+- Objection extension includes `O-Phil-17` and `O-Phil-20`. **Done.**
+- Ethics file distinguishes moral intensity, moral reality, and moral legitimacy. **Pending.**
+- `d-value` expansion is not treated as sufficient for moral progress. **Pending in ethics.**
+- Structural evil / occlusion links are explicit. **Pending in ethics/political files.**
 
 ---
 
@@ -347,11 +358,12 @@ Create comparison table:
 1. **Done**: Add PH-SS read-first map, crosswalk, execution plan, and compact patch.
 2. **Done**: Promote PH-SS files in Philosophy README.
 3. **Done**: Upgrade Compact Core to v4 with selection realism / layered realism.
-4. **Next**: `_SRT_Phil_Axioms.md` cleanup: `L_0` selectability, manifestational priority, reality-strength levels, `Psi_f` layers, normativity ladder, subjecthood threshold.
-5. **Next**: Expand Objection Ledger with `O-Phil-11..20` or explicit PH-SS cross-links.
+4. **Done as companion**: `_SRT_Phil_Axioms_PH_SS_Guardrails.md` adds `L_0` selectability, manifestational priority, reality-strength levels, `Psi_f` layers, normativity ladder, subjecthood threshold.
+5. **Done as companion**: `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` adds `O-Phil-11..20`.
 6. **Next**: Ethics hardening: moral legitimacy ladder, `d-value` safeguards, love/grief formula roles.
 7. **Next**: Social / political philosophy patch: collective `L_2`, friction export, institutional legitimacy.
 8. **Next**: Long Foundations refactor / annex cleanup.
+9. **Next**: Optional direct merge from companions into `_SRT_Phil_Axioms.md` and main Objection Ledger after review.
 
 ---
 
