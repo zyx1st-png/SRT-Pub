@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v12
+status: active_v13
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -85,7 +85,8 @@ Ethics casebook created;
 Political / institutional casebook created;
 Selection Realism paper outline created;
 d-value ontology of concern paper outline created;
-Non-reductive verification paper outline created.
+Non-reductive verification paper outline created;
+Second formula-role pass completed for Philosophy / Ethics / Political / Social high-risk formulas.
 ```
 
 Current next-stage goal:
@@ -112,7 +113,7 @@ From paper-facing outlines -> toward optional cleanup / merge passes and deeper 
 | P2 | Selection Realism paper outline | converts hardened philosophy into publication trajectory | direct new file | done |
 | P2 | d-value paper outline | converts concern ontology into publication trajectory | direct new file | done |
 | P2 | Non-reductive validation paper outline | converts validation strategy into publication trajectory | direct new file | done |
-| P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | todo |
+| P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | done |
 | P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | optional |
 | P3 | Companion-to-owner merge | reduces fragmentation after review | staged manual / Claude Code | optional |
 
@@ -467,8 +468,8 @@ Recommended next steps:
 10. Papers/SRT_Selection_Realism_Paper_Outline.md.               DONE
 11. Papers/SRT_D_Value_Ontology_of_Concern_Outline.md.           DONE
 12. Papers/SRT_NonReductive_Verification_Outline.md.             DONE
-13. CODEX_PROMPT_Second_Formula_Role_Pass.md.                    NEXT
-14. Only then consider deeper long-file reorganization.
+13. CODEX_PROMPT_Second_Formula_Role_Pass.md.                    done
+14. Only then consider deeper long-file reorganization.            NEXT
 ```
 
 ---
@@ -478,12 +479,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create CODEX_PROMPT_Second_Formula_Role_Pass.md
+Review whether deeper long-file reorganization is needed after the formula-role pass.
 ```
 
 Reason:
 
-> Paper-facing outputs are now in place. The next high-value cleanup is a second formula-role pass over high-risk formulas in Philosophy / Ethics / Political / Social files, without altering formulas or rewriting long files.
+> The second formula-role pass is complete. The next optional step is to assess whether `SRT_Philosophy_Foundations.md` and `_SRT_Phil_Axioms.md` benefit from deeper section reorganization and deduplication (Part A / B / C / D / E structure). This is optional cleanup, not emergency hardening.
 
 ---
 

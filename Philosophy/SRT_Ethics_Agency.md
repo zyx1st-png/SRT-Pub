@@ -174,10 +174,14 @@ $$ \text{Ought}(\sigma) \implies \exists \theta_{accessible} : P(\sigma|\theta) 
 Moral progress is defined as the monotonic expansion of the d-value (Scope of Concern).
 $$ \frac{d}{dt} \text{Moral} > 0 \iff \frac{d}{dt} d > 0 $$
 
+> **Formula role**: bridge model. `d-value` expansion is a necessary indicator of moral widening, not a sufficient condition for moral legitimacy. Moral legitimacy also requires non-exported friction, future-selectability, cross-subject bandwidth, and correction channels. See `SRT_Ethics_PH_SS_Guardrails.md` and PH-SS-06.
+
 ### Ax-Moral-2: Appropriation Operator (归化算子)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 Love/Care is the topological operation of re-defining "Other" as "Self" in $L_0$.
 $$ \text{Love}(A, B) \iff L_0^A \cup L_0^B \to L_0^{Unified} $$
+
+> **Formula role**: phenomenological model. The union of `L_0` domains formalizes the felt experience of care and boundary expansion; it does not describe a literal ontological fusion. Operational proxies and failure conditions must be stated before using this as an empirical claim.
 
 <br>
 
@@ -772,6 +776,8 @@ When we love someone, our $\theta$ parameters become **entangled** with theirs. 
 **Mechanism of Grief**: When a loved one dies, this is not merely the disappearance of an external object but **a violent tearing of the self-parameter tensor**.
 
 **SRT Corollary**: Grief pain is **phantom limb pain**. Our $\theta$ still attempts to connect to a node in $L_0$ that no longer exists, generating infinite prediction error ($\Psi_f \to \infty$).
+
+> **Formula role**: phenomenological model. The `Ψ_f → ∞` divergence language captures the felt impossibility of grief resolution; it is not a literal divergence claim. Do not read poetic infinity here as a mathematical proof. See also `SRT_Ethics_PH_SS_Guardrails.md`.
 
 ### 7.2 The Is-Ought Bridge: Dissolution Rather Than Derivation（消解而非推导）
 

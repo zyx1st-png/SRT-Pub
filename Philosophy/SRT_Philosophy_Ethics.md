@@ -115,6 +115,9 @@ $$\frac{d}{dt} d > 0 \iff \frac{d}{dt} \text{Moral} > 0$$
 ### T-Eth-2: Friction Expectation Pathology
 当预期摩擦放大时，道德判断系统性失真。
 $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual},\quad \mu_{expect} \gg 1$$
+
+> **Formula role**: phenomenological model. The multiplicative amplification is a structural description of distorted friction perception; `μ_expect` is not a directly measurable scalar without an operational proxy specification.
+
 *   **Implication**: “懒惰”可能是摩擦参数病理而非意志薄弱。
 
 ### Ax-Eth-7: The Ontological Weight of Love (爱的本体论重量)

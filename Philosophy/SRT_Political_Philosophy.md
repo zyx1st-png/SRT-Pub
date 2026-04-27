@@ -93,7 +93,10 @@ Core guardrails:
 \[
 \text{Legitimacy} \propto \operatorname{CoSelect}\big(\Theta,\, \Psi_f^{asym}\downarrow,\, C_{reselect}\uparrow\big)
 \]
-* **Implication**：SRT 对合法性的优先判准不是“谁先天有权”，而是“制度是否减少封闭垄断并保留再选择能力”。
+
+> **Formula role**: bridge model. This is a structural diagnostic, not a measurement formula. `CoSelect`, `Ψ_f^{asym}`, and `C_{reselect}` require operational proxies before being applied as empirical tests. Low friction alone is not legitimacy if hidden `Ψ_f` is exported. See `SRT_Social_Political_PH_SS_Guardrails.md`.
+
+* **Implication**：SRT 对合法性的优先判准不是”谁先天有权”，而是”制度是否减少封闭垄断并保留再选择能力”。
 * **Middle-condition clause**：`CoSelect` must pass the institutional-type, delegation, consequence-return, and reselection/correction checks above. Friction reduction or coordination stability alone is not sufficient for legitimacy.
 
 ### Ax-Pol-4: People as Dynamic L2-Bound Collective

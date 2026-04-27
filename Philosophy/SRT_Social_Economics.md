@@ -66,11 +66,17 @@ $$\text{Money} \equiv g_{L_2}$$
 市场不是个体选择的简单堆叠，而是集体自由能景观在社会尺度上的局部梯度展开。
 $$\mathcal{F}_{collective}^{market}=\sum_i \Psi_f(\hat{G}_i)+\sum_{i<j}\Psi_f(\hat{G}_i,\hat{G}_j)$$
 $$\hat{G}_i^{market} = -\frac{\partial \mathcal{F}_{collective}^{market}}{\partial \theta_i}$$
+
+> **Formula role**: bridge model / analogy. The free-energy landscape formalism is a structural analogy, not a canonical reduction of SRT. `Ψ_f` interaction terms between operators are not individually measurable without operationalized proxies. Market selection is not moral truth. See `SRT_Social_Political_PH_SS_Guardrails.md`.
+
 *   **Implication**: 市场不是均衡点，也不是个体偏好加总，而是选择景观；个体算子只是该景观的局部导数表达。
 
 ### Ax-Eco-4: Bubble as L2 Overfit
 泡沫是 $L_2$ 对短期 $L_1$ 的过拟合。
 $$\text{Bubble} \iff \partial_t L_2 \gg \partial_t L_1$$
+
+> **Formula role**: bridge model / analogy. The `∂_t L_2 ≫ ∂_t L_1` inequality is a structural diagnostic heuristic; the time derivatives of layer-emergence rates are not directly observable scalars without measurement proxies.
+
 *   **Implication**: 泡沫是结构先行于现实的相位失配。
 
 ## III. Inequality & Trust
@@ -84,6 +90,9 @@ $$G_{agency}=\text{Gini}(d_i)$$
 ### Ax-Eco-6: Trust as Friction Reduction
 信任降低交易摩擦与系统熵。
 $$\text{Trust} = \arg\min(\Psi_f, S_{soc})$$
+
+> **Formula role**: placeholder. The joint minimization of `Ψ_f` and social entropy `S_soc` is a schematic; neither term has a canonical numerical definition here. Requires operational proxies before being applied empirically.
+
 *   **Implication**: 信任是经济效率的本体论基础。
 
 ## IV. Derived Theorems
