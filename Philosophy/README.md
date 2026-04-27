@@ -8,14 +8,14 @@ epistemic_layer: bridge
 claim_mode: guide
 claim_level: P5
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
 ---
 
 # SRT Philosophy — Section Guide
 
 > **Purpose**: This folder translates SRT into philosophical language: ontology, epistemology, phenomenology, ethics, political philosophy, and social theory. It is an **interpretive bridge**, not the canonical source for primitive SRT definitions.
 
-> **2026-04-27 READ-FIRST UPDATE**: For future human and machine readers, start with `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` before editing or interpreting this folder. It concentrates the current soft points and upgrade map: `L_0` ontology, selection-before-existence, selection realism, layered realism, anti-idealism, anti-relativism, `Psi_f` layering, `d-value`, normativity, social ontology, consciousness thresholds, and non-reductive validation.
+> **2026-04-27 READ-FIRST UPDATE**: For future human and machine readers, start with the PH-SS sequence: `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` → `01_PH_SS_Objection_Crosswalk.md` → `02_PH_SS_Hardening_Execution_Plan.md`. These files concentrate the current soft points and upgrade map: `L_0` ontology, selection-before-existence, selection realism, layered realism, anti-idealism, anti-relativism, `Psi_f` layering, `d-value`, normativity, social ontology, consciousness thresholds, and non-reductive validation.
 
 ## 1. What this section is for
 
@@ -35,6 +35,8 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 | Step | File | Role |
 |---|---|---|
 | 0 | `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | Highest-priority soft-point and upgrade map; machine-readable + human-readable; use before major philosophy edits. |
+| 0.1 | `01_PH_SS_Objection_Crosswalk.md` | Crosswalk from `PH-SS-01..12` to objection families, responses, withdrawal conditions, and target files. |
+| 0.2 | `02_PH_SS_Hardening_Execution_Plan.md` | Sequential execution plan for turning soft spots into repository edits. |
 | 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; hardened with existence levels, `\Psi_f` resistance proxies, `L_1` anchoring, and subjecthood thresholds. |
 | 2 | `SRT_Philosophy_Objection_Ledger.md` | Hardest-objection map; use before upgrading any philosophical claim. |
 | 3 | `SRT_Philosophy_Hardening_TODO.md` | Concrete checklist for future hardening passes. |
@@ -72,6 +74,15 @@ Priority upgrade labels:
 - `purpose_as_high_d_value_attractor`
 - `collective_L2_social_ontology`
 - `non_reductive_validation`
+
+PH-SS routing sequence:
+
+```text
+00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md
+  -> 01_PH_SS_Objection_Crosswalk.md
+    -> 02_PH_SS_Hardening_Execution_Plan.md
+      -> target owner files
+```
 
 ---
 
@@ -137,12 +148,13 @@ Hardening slogan:
 
 ## 6. Objection-led hardening protocol
 
-Before adding or strengthening a Philosophy claim, check `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`, `SRT_Philosophy_Objection_Ledger.md`, and `SRT_Philosophy_Hardening_TODO.md`.
+Before adding or strengthening a Philosophy claim, check `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`, `01_PH_SS_Objection_Crosswalk.md`, `02_PH_SS_Hardening_Execution_Plan.md`, `SRT_Philosophy_Objection_Ledger.md`, and `SRT_Philosophy_Hardening_TODO.md`.
 
 Minimum upgrade template:
 
 ```text
 Claim:
+PH-SS addressed:
 Claim level: P2 / P3 / P4 / P5
 Canonical dependencies:
 Formula role, if any: definition / model / analogy / proxy / placeholder
