@@ -2,7 +2,7 @@
 id: SRT-PHIL-HARDENING-TODO
 type: hardening-plan
 tags: [Philosophy, TODO, Hardening, Claim Hygiene, Refactor, PH-SS]
-status: active_v7
+status: active_v8
 layer: L1
 epistemic_layer: bridge
 claim_mode: guide
@@ -19,6 +19,7 @@ dependency:
   - SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27
   - SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27
   - SRT-PHIL-TRADITION-COMPARISON-PH-SS-2026-04-27
+  - SRT-PHIL-SUBJECTHOOD-THRESHOLD-INTERFACE-2026-04-27
   - SRT-PHIL-OBJECTION-LEDGER
   - SRT-PHIL-FOUNDATIONS-COMPACT-CORE
   - SRT-PHIL-AXIOMS
@@ -50,7 +51,7 @@ The PH-SS hardening sequence has been added and partially merged into the main s
 02_PH_SS_Hardening_Execution_Plan.md                   -> created
 03_Selection_Realism_Layered_Realism_CompactPatch.md  -> created
 SRT_Philosophy_Foundations_CompactCore.md             -> upgraded to active_v4
-_PHILOSOPHY_MACHINE_INDEX.md                          -> created / active_v4
+_PHILOSOPHY_MACHINE_INDEX.md                          -> created / active_v5
 _SRT_Phil_Axioms_PH_SS_Guardrails.md                   -> created
 SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md     -> created (O-Phil-11..20)
 SRT_Ethics_PH_SS_Guardrails.md                         -> created
@@ -61,6 +62,7 @@ AI/SRT_AI_03_Consciousness_Framework_CompactCore.md    -> PH-SS-10 subjecthood p
 Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md -> PH-SS-10 subjecthood pointer added / active_v2
 Core/SRT_Core_24_Floor_Normativity_Verification.md     -> PH-SS-11 validation pointer added / draft_v2
 SRT_Philosophy_Tradition_Comparison_PH_SS.md           -> created / active_v1
+SRT_Subjecthood_Threshold_Interface.md                 -> created / active_v1
 ```
 
 Current hardened reading now visible in Compact Core:
@@ -78,15 +80,16 @@ Current hardened reading now visible in Compact Core:
 | P0 | PH-SS-03: reality strength | hallucination / fact flattening | Compact Core, Foundations | compact core v4 hardened; axiom companion done; long owner pointer done |
 | P0 | PH-SS-04: subjective idealism | mind creates reality | Compact Core, README, Objection Ledger | compact core v4 hardened; O-Phil extension done; long owner pointer done |
 | P0 | PH-SS-05: `Psi_f` layer confusion | concept equivocation / math metaphor | Compact Core, `_SRT_Phil_Axioms.md`, `Psi_f` canonical links | compact core v4 layer-typed; axiom companion done; long owner pointer done; canonical cross-check optional |
-| P0 | PH-SS-10: consciousness threshold | panpsychism / over-attribution | Compact Core, AI, Neuroscience | compact core v4 threshold added; axiom companion done; O-Phil extension done; AI / Neuroscience pointers done |
-| P1 | PH-SS-06: normativity jump | is-ought gap / oppression legitimation | Ethics, Political Philosophy | compact core v4 guardrail added; axiom companion done; ethics companion done; political compact pointer done; long owner pointer done |
+| P0 | PH-SS-10: consciousness threshold | panpsychism / over-attribution | Compact Core, AI, Neuroscience, Subjecthood Interface | compact core v4 threshold added; axiom companion done; O-Phil extension done; subjecthood interface done; AI / Neuroscience pointers done |
+| P1 | PH-SS-06: normativity jump | is-ought gap / oppression legitimation | Ethics, Political Philosophy | compact core v4 guardrail added; axiom companion done; ethics companion done; political compact pointer done; long owner pointer done; subjecthood/responsibility interface done |
 | P1 | PH-SS-07: purpose/teleology | mystical purpose | Compact Core, Core 24, Foundations | compact core v4 hardened; O-Phil extension done; Core24 PH-SS-11 validation pointer done; purpose/teleology protected via objections; tradition comparison done |
-| P1 | PH-SS-08: `d-value` philosophy | preference-reduction | Compact Core, `d-value` canonical links | compact core v4 added; O-Phil extension done; ethics companion done; canonical cross-check optional |
+| P1 | PH-SS-08: `d-value` philosophy | preference-reduction | Compact Core, `d-value` canonical links | compact core v4 added; O-Phil extension done; ethics companion done; subjecthood interface done; canonical cross-check optional |
 | P1 | PH-SS-09: social ontology | mere construction / individualism | Social Economics, Political Philosophy | compact core v4 added; O-Phil extension done; social-political companion done; social compact pointer done; long owner pointer done |
 | P1 | PH-SS-11: validation | unfalsifiability | Compact Core, Core 24, Claim Ladder | compact core v4 added; O-Phil extension done; Core24 validation pointer done |
 | P1 | PH-SS-12: anti-relativism | anything-goes | Compact Core, README, Political Philosophy | compact core v4 hardened; O-Phil extension done; social-political companion done; political compact pointer done; long owner pointer done |
 | P2 | old preserved sections | duplicate / outdated claims | `_SRT_Phil_Axioms.md`, Foundations | pending full refactor only |
 | P2 | tradition comparison | unclear novelty | `SRT_Philosophy_Tradition_Comparison_PH_SS.md` | done / active_v1 |
+| P2 | subjecthood threshold interface | AI/neuro/ethics/responsibility mixing | `SRT_Subjecthood_Threshold_Interface.md` | done / active_v1 |
 
 ---
 
@@ -105,6 +108,7 @@ Current hardened reading now visible in Compact Core:
 - Neuroscience Consciousness Mechanisms Compact Core directly links to PH-SS-10 subjecthood threshold and O-Phil-18.
 - Core24 directly links to PH-SS-11 / O-Phil-19 non-reductive validation guardrail.
 - Tradition comparison file distinguishes SRT from Kant, Husserl / phenomenology, Whitehead, pragmatism, constructivism, social construction theory, panpsychism, physicalism, FEP / PP, IIT, GNW, Wittgenstein, Deleuze, and critical theory.
+- Subjecthood threshold interface distinguishes S0 selection event, S1 local `L_1` anchoring, S2 conscious content, S3 integrated conscious field, S4 subjecthood, S5 agency, and S6 responsibility-bearing subject.
 
 ---
 
@@ -112,7 +116,6 @@ Current hardened reading now visible in Compact Core:
 
 | Pending task | Why still pending |
 |---|---|
-| Subjecthood threshold interface | optional but useful for unifying AI / neuroscience / philosophy / responsibility levels |
 | Public one-page philosophy version | useful for outreach and non-specialist readers |
 | Long Foundations / Axioms full refactor | secondary cleanup, not required for guardrail routing; should be done as separate review pass |
 | Optional companion-to-owner merges | should happen only after review to avoid flattening bridge / canonical boundaries |
@@ -133,7 +136,7 @@ Current hardened reading now visible in Compact Core:
 10. **Done cross-domain pointer**: AI / Neuroscience compact consciousness files now link to PH-SS-10 subjecthood threshold.
 11. **Done Core24 pointer**: Core24 now links to PH-SS-11 / O-Phil-19 non-reductive validation guardrail.
 12. **Done tradition comparison**: `SRT_Philosophy_Tradition_Comparison_PH_SS.md` created and routed through Philosophy machine index.
-13. **Next optional**: Subjecthood threshold interface.
+13. **Done subjecthood interface**: `SRT_Subjecthood_Threshold_Interface.md` created and routed through Philosophy machine index.
 14. **Next optional**: Public one-page philosophy version.
 15. **Next optional**: Long Foundations / Axioms full refactor.
 
