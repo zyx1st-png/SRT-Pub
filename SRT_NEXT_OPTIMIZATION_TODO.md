@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v14
+status: active_v15
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -37,12 +37,15 @@ dependency:
   - Papers/SRT_Selection_Realism_Paper_Outline.md
   - Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
   - Papers/SRT_NonReductive_Verification_Outline.md
+  - Philosophy/Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md
+  - SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
-  It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
-  AI agency/responsibility note, experimental roadmap, terminology consistency audit, neuroscience
-  prediction table, ethics casebook, political casebook, paper-facing outputs, formula-role cleanup,
-  and optional long-file refactor.
+  Main optimization chain is now complete enough for review: registry/index discovery, validation
+  template, AI consciousness rubric, AI agency/responsibility note, experimental roadmap, terminology
+  audit, neuroscience prediction table, ethics and political casebooks, paper-facing outlines, second
+  formula-role pass, and long-file reorganization plan. Remaining work is optional and should branch
+  into experiments, manuscript drafting, or narrow cleanup after human review.
 ---
 
 # SRT Next Optimization TODO
@@ -55,7 +58,7 @@ machine_summary: >
 
 ## 0. Current baseline
 
-The Philosophy PH-SS hardening pass is now stable enough to move from emergency guardrails to staged optimization.
+The post-PH-SS optimization chain has reached a stable checkpoint.
 
 Completed baseline:
 
@@ -87,13 +90,17 @@ Selection Realism paper outline created;
 d-value ontology of concern paper outline created;
 Non-reductive verification paper outline created;
 Second formula-role pass completed for Philosophy / Ethics / Political / Social high-risk formulas;
-Long Foundations / Axioms deeper reorganization: audit plan created; Mode 2 structure notes added; full content reorganization not yet executed.
+Long Foundations / Axioms deeper reorganization: audit plan created; Mode 2 structure notes added; full content reorganization not yet executed;
+Optimization completion audit created.
 ```
 
 Current next-stage goal:
 
 ```text
-From paper-facing outlines -> toward optional cleanup / merge passes and deeper operationalization.
+Choose one branch after review:
+A. experiments / pilot cards;
+B. manuscript drafting;
+C. narrow cleanup only.
 ```
 
 ---
@@ -115,391 +122,103 @@ From paper-facing outlines -> toward optional cleanup / merge passes and deeper 
 | P2 | d-value paper outline | converts concern ontology into publication trajectory | direct new file | done |
 | P2 | Non-reductive validation paper outline | converts validation strategy into publication trajectory | direct new file | done |
 | P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | done |
-| P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | plan done; structure notes added; full reorganization optional |
+| P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt | plan done; structure notes added; full reorganization optional |
+| P2 | Optimization completion audit | records checkpoint and branch options | direct new file | done |
 | P3 | Companion-to-owner merge | reduces fragmentation after review | staged manual / Claude Code | optional |
+| P3 | Full long-file reorganization | improves long-file structure but risky | separate review-gated prompt | optional |
 
 ---
 
-## 2. Phase 1 — Discovery and registry completeness
+## 2. Current checkpoint
 
-### Task 1.1 — Update registry / README / indexes for PH-SS files
-
-**Status**: done.
-
-Completed by Claude Code / Codex discovery pass:
+Main checkpoint file:
 
 ```text
-README.md -> PH-SS hardening route added.
-CANONICAL_REGISTRY.md -> non-canonical PH-SS section added.
-Neuroscience/README.md -> subjecthood interface cross-link added.
-Philosophy README / Machine Index / TODO / Audit -> already current.
-AI/README.md and Core/README.md -> not present, skipped.
+SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 ```
 
-Done condition met:
+This audit records:
 
 ```text
-All new PH-SS files are discoverable from at least one root-level or directory-level index.
-No canonical status accidentally promoted.
-No long-file rewrite performed.
+completed artifacts;
+conceptual changes;
+current safe reading;
+remaining optional work;
+risks of continuing too aggressively;
+recommended next fork.
 ```
 
 ---
 
-## 3. Phase 2 — Validation discipline
+## 3. Recommended next fork
 
-### Task 2.1 — Create SRT validation template
+### Direction A — Research / experiments
 
-**Status**: done.
-
-Created file:
+Create:
 
 ```text
-Core/SRT_Validation_Template.md
+Experiments/SRT_Pilot_Cards_v1.md
 ```
 
-Done condition met:
+Start with:
 
 ```text
-A reusable validation template exists and links to Core24 / O-Phil-19 / PH-SS-11.
+d-value vs salience;
+Psi_f vs prediction error;
+L2 hardening vs memory / habit.
 ```
 
----
+### Direction B — Publication
 
-## 4. Phase 3 — Flagship AI consciousness application
-
-### Task 3.1 — Create AI consciousness evaluation rubric
-
-**Status**: done.
-
-Created file:
-
-```text
-AI/SRT_AI_Consciousness_Evaluation_Rubric.md
-```
-
-Done condition met:
-
-```text
-AI consciousness claims can be evaluated without jumping from performance or self-report to subjecthood.
-```
-
-### Task 3.2 — Create AI responsibility / agency note
-
-**Status**: done.
-
-Created file:
-
-```text
-AI/SRT_AI_Agency_Responsibility_Note.md
-```
-
-Done condition met:
-
-```text
-AI ethics discussions route through S5/S6 rather than vague agency language.
-```
-
----
-
-## 5. Phase 4 — Experimental roadmap
-
-### Task 4.1 — Create SRT experimental roadmap
-
-**Status**: done.
-
-Created file:
-
-```text
-Experiments/SRT_Experimental_Roadmap_v1.md
-```
-
-Done condition met:
-
-```text
-SRT has a readable path from philosophical claims to staged empirical work.
-```
-
-### Task 4.2 — Create experiment measure map update
-
-Suggested file:
-
-```text
-Experiments/SRT_Experiment_Measure_Map_PH_SS_Update.md
-```
-
-Purpose:
-
-> Map PH-SS concepts to measurable proxies.
-
-**Execution method**: direct new file or update existing experiment map if present.
-
-**Done condition**:
-
-```text
-Each major concept has at least 2-3 proxy families and at least 1 failure condition.
-```
-
----
-
-## 6. Phase 5 — Neuroscience prediction table
-
-### Task 5.1 — Create neuroscience differential prediction table
-
-**Status**: done.
-
-Created file:
-
-```text
-Neuroscience/SRT_Neuro_Predictions_Table.md
-```
-
-Done condition met:
-
-```text
-Neuroscience section has differential predictions, not only reinterpretations.
-```
-
----
-
-## 7. Phase 6 — Ethics / Political casebooks
-
-### Task 6.1 — Create ethics casebook
-
-**Status**: done.
-
-Created file:
-
-```text
-Philosophy/SRT_Ethics_Casebook.md
-```
-
-Done condition met:
-
-```text
-Ethics guardrails become usable diagnostic tools.
-```
-
-### Task 6.2 — Create political / institutional casebook
-
-**Status**: done.
-
-Created file:
-
-```text
-Philosophy/SRT_Political_Casebook.md
-```
-
-Done condition met:
-
-```text
-Political philosophy becomes applicable to concrete institutional diagnosis.
-```
-
----
-
-## 8. Phase 7 — Terminology consistency
-
-### Task 7.1 — Create terminology consistency audit
-
-**Status**: done.
-
-Created file:
-
-```text
-SRT_Terminology_Consistency_Audit.md
-```
-
-Done condition met:
-
-```text
-Semantic drift is now visible and correctable.
-```
-
----
-
-## 9. Phase 8 — Paper-facing outputs
-
-### Task 8.1 — Create paper outline: Selection Realism
-
-**Status**: done.
-
-Created file:
+Choose one manuscript route:
 
 ```text
 Papers/SRT_Selection_Realism_Paper_Outline.md
-```
-
-Thesis:
-
-> SRT as selection realism and layered realism: a meta-ontology of manifestation and hardening.
-
-Done condition met:
-
-```text
-Paper outline has abstract, thesis, sections, objections, validation path, and target audiences.
-```
-
-### Task 8.2 — Create paper outline: d-value and ontology of concern
-
-**Status**: done.
-
-Created file:
-
-```text
 Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
-```
-
-Thesis:
-
-> `d-value` as existential stake / concern bandwidth, not reducible to preference, salience, reward, utility, or moral goodness.
-
-Done condition met:
-
-```text
-Paper outline has abstract, thesis, sections, objections, validation path, and target audiences.
-```
-
-### Task 8.3 — Create paper outline: non-reductive validation
-
-**Status**: done.
-
-Created file:
-
-```text
 Papers/SRT_NonReductive_Verification_Outline.md
 ```
 
-Thesis:
-
-> SRT can be tested through proxy measurement, structural convergence, differential predictions, baseline comparison, and withdrawal / narrowing conditions.
-
-Done condition met:
+Then create:
 
 ```text
-Paper outline has abstract, thesis, sections, objections, validation path, five validation case packages, and target audiences.
+Papers/<chosen>_Manuscript_v0.md
 ```
+
+### Direction C — Narrow cleanup
+
+Only if needed, create a very narrow prompt such as:
+
+```text
+CODEX_PROMPT_Add_Part_E_Anchors_To_Long_Philosophy_Files.md
+```
+
+Do not run full deep reorganization yet.
 
 ---
 
-## 10. Phase 9 — Optional long-file cleanup
+## 4. Work explicitly not urgent
 
-### Task 9.1 — Second formula-role pass
-
-Suggested method:
-
-```text
-Claude Code / Codex prompt
-```
-
-Target files:
-
-```text
-Philosophy/SRT_Philosophy_Foundations.md
-Philosophy/_SRT_Phil_Axioms.md
-Philosophy/SRT_Philosophy_Ethics.md
-Philosophy/SRT_Political_Philosophy.md
-Philosophy/SRT_Social_Economics.md
-```
-
-Done condition:
-
-```text
-More high-risk formulas have role labels.
-No formulas altered.
-No full-file rewrites.
-```
-
-### Task 9.2 — Deeper Foundations / Axioms reorganization
-
-Only after review.
-
-Suggested future structure:
-
-```text
-Part A: Current Hardened Reading
-Part B: Formal / Semi-formal Claims
-Part C: Tradition Interface
-Part D: Objection and Withdrawal Conditions
-Part E: Legacy Notes / Preserved Drafts
-```
-
-Done condition:
-
-```text
-Long files become structurally clearer without losing historical material.
-```
-
-### Task 9.3 — Companion-to-owner merge
-
-Only after review.
-
-Candidate merges:
-
-```text
-Axioms guardrails -> _SRT_Phil_Axioms.md selected sections;
-O-Phil-11..20 -> main Objection Ledger;
-Ethics guardrails -> main Ethics compact or long file;
-Social-political guardrails -> Social / Political compact cores;
-Subjecthood interface -> AI / Neuro / Ethics indexes.
-```
-
-Done condition:
-
-```text
-Fragmentation is reduced without promoting bridge material to canonical primitives.
-```
+| Task | Status | Recommendation |
+|---|---|---|
+| Full long-file reorganization | optional | do only after human review of `Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md` |
+| Companion-to-owner merge | optional | do section by section only |
+| Deduplication of paradox / explanatory gap material | optional | do after long-file review |
+| Additional formula-role pass outside target files | optional | do only if new high-risk formulas are found |
 
 ---
 
-## 11. Suggested execution order
+## 5. Completion philosophy
 
-Recommended next steps:
-
-```text
-1. Registry / README / index discovery pass.                     DONE
-2. Core/SRT_Validation_Template.md.                              DONE
-3. AI/SRT_AI_Consciousness_Evaluation_Rubric.md.                 DONE
-4. AI/SRT_AI_Agency_Responsibility_Note.md.                      DONE
-5. Experiments/SRT_Experimental_Roadmap_v1.md.                   DONE
-6. SRT_Terminology_Consistency_Audit.md.                         DONE
-7. Neuroscience/SRT_Neuro_Predictions_Table.md.                  DONE
-8. Philosophy/SRT_Ethics_Casebook.md.                            DONE
-9. Philosophy/SRT_Political_Casebook.md.                         DONE
-10. Papers/SRT_Selection_Realism_Paper_Outline.md.               DONE
-11. Papers/SRT_D_Value_Ontology_of_Concern_Outline.md.           DONE
-12. Papers/SRT_NonReductive_Verification_Outline.md.             DONE
-13. CODEX_PROMPT_Second_Formula_Role_Pass.md.                    done
-14. Only then consider deeper long-file reorganization.            NEXT
-```
-
----
-
-## 12. Minimal next action
-
-The immediate next action should be:
-
-```text
-Review whether deeper long-file reorganization is needed after the formula-role pass.
-```
-
-Reason:
-
-> The second formula-role pass is complete. The next optional step is to assess whether `SRT_Philosophy_Foundations.md` and `_SRT_Phil_Axioms.md` benefit from deeper section reorganization and deduplication (Part A / B / C / D / E structure). This is optional cleanup, not emergency hardening.
-
----
-
-## 13. Completion philosophy
-
-Do not try to finish all tasks at once.
+At this checkpoint, do not continue adding broad infrastructure by default.
 
 Use the rhythm:
 
 ```text
+choose one branch;
 create one small artifact;
 link it from the relevant index;
-update TODO;
-stop and review.
+review;
+stop.
 ```
 
 This prevents SRT from becoming large but unreadable.
