@@ -148,6 +148,48 @@ $$D_{eff}(\hat{G}) \approx \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{
 
 ---
 
+### Value as Non-Substitutability（价值作为不可替代性）
+
+In SRT, value should not be reduced to reward, utility, preference strength, salience, pain, or self-report intensity. Value names the dynamic expression of non-substitutability: the degree to which a selection matters for a system's future continuity, concern structure, and stake-bearing organization.
+
+This use of value is a bridge to `d-value`, not a replacement for the canonical definition of `d-value`. A selection has value in the SRT sense when losing, blocking, or substituting that selection forces non-trivial reorganization in the system's future selection capacity, identity-continuity, or consequence-return structure.
+
+Compact reading:
+
+```text
+value ≠ reward intensity
+value ≠ preference strength
+value = concern-weighted non-substitutability under consequence return
+```
+
+**Operational signs**: Possible signs that a selection has value in the SRT sense include:
+
+- the system bears cost to preserve it;
+- losing it forces structural reorganization;
+- it remains stable across time and perturbation;
+- it affects identity-continuity or future choice capacity;
+- it organizes downstream selections;
+- consequences return to the system rather than being absorbed by an external structure;
+- it can sediment into shared L₂ constraints when cross-subject coupling is present.
+
+These signs are not themselves d-value. They are bridge-level indicators that a selection may be stake-coupled rather than merely preferred.
+
+**Boundary**: Do not write:
+
+- value = reward;
+- value = utility;
+- value = preference intensity;
+- value = salience;
+- value = pain;
+- value = self-report;
+- value = d-value without the non-substitutability and consequence-return bridge.
+
+Preferred wording: Value is the dynamic expression of concern-weighted non-substitutability. It bridges to d-value when the relevant selection is coupled to irreversible stake, future continuity, and consequence return.
+
+**Failure condition**: If d-value cannot predict concern-weighted non-substitutability better than reward, preference, salience, pain, or self-report intensity, then this bridge weakens and must be revised.
+
+---
+
 ## §2b 赌注耦合结构（Stake-Coupling Structure）——新增（2026-04-17）
 
 ### Def-d-stakes: 赌注化活跃维数
