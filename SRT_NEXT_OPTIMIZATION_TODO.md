@@ -13,7 +13,7 @@ tags:
   - Neuroscience
   - Terminology
   - Paper-Plan
-status: active_v9
+status: active_v10
 layer: meta
 epistemic_layer: workflow
 claim_mode: todo
@@ -34,6 +34,7 @@ dependency:
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
   - Philosophy/SRT_Political_Casebook.md
+  - Papers/SRT_Selection_Realism_Paper_Outline.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   It lists staged tasks for registry/index updates, validation templates, AI consciousness rubric,
@@ -79,7 +80,8 @@ Experimental roadmap v1 created;
 Terminology consistency audit created;
 Neuroscience differential prediction table created;
 Ethics casebook created;
-Political / institutional casebook created.
+Political / institutional casebook created;
+Selection Realism paper outline created.
 ```
 
 Current next-stage goal:
@@ -103,7 +105,9 @@ From guardrail hardening -> toward paper-ready outputs and optional cleanup / me
 | P1 | Neuroscience prediction table | turns neuroscience from interpretation into differential prediction | direct new file | done |
 | P1 | Ethics casebook | makes ethics guardrails usable on concrete cases | direct new file | done |
 | P1 | Political / institutional casebook | makes political philosophy usable on institutional diagnosis | direct new file | done |
-| P2 | Paper-facing outlines | converts repository content into publishable trajectories | direct new files | todo |
+| P2 | Selection Realism paper outline | converts hardened philosophy into publication trajectory | direct new file | done |
+| P2 | d-value paper outline | converts concern ontology into publication trajectory | direct new file | todo |
+| P2 | Non-reductive validation paper outline | converts validation strategy into publication trajectory | direct new file | todo |
 | P2 | Second formula-role pass | reduces poetic-math / overclaim risk | Claude Code prompt | todo |
 | P2 | Long Foundations / Axioms deeper reorganization | improves long-file readability but not urgent | Claude Code prompt only | optional |
 | P3 | Companion-to-owner merge | reduces fragmentation after review | staged manual / Claude Code | optional |
@@ -280,34 +284,6 @@ Created file:
 Philosophy/SRT_Political_Casebook.md
 ```
 
-The casebook includes:
-
-```text
-bureaucratic process;
-market platform;
-school system;
-medical institution;
-eldercare institution;
-local government procedure;
-algorithmic governance;
-workplace hierarchy.
-```
-
-It uses the template:
-
-```text
-Stabilized L2;
-Selection power;
-Who benefits;
-Who pays hidden Psi_f;
-Future selectability;
-Exit / appeal / correction channel;
-Consequence return;
-Legitimacy judgment;
-Repair path;
-Failure / narrowing condition.
-```
-
 Done condition met:
 
 ```text
@@ -340,7 +316,9 @@ Semantic drift is now visible and correctable.
 
 ### Task 8.1 — Create paper outline: Selection Realism
 
-Suggested file:
+**Status**: done.
+
+Created file:
 
 ```text
 Papers/SRT_Selection_Realism_Paper_Outline.md
@@ -350,10 +328,10 @@ Thesis:
 
 > SRT as selection realism and layered realism: a meta-ontology of manifestation and hardening.
 
-**Done condition**:
+Done condition met:
 
 ```text
-Paper outline has abstract, thesis, sections, objections, and target venues.
+Paper outline has abstract, thesis, sections, objections, validation path, and target audiences.
 ```
 
 ### Task 8.2 — Create paper outline: d-value and ontology of concern
@@ -368,6 +346,8 @@ Thesis:
 
 > `d-value` as existential stake / concern bandwidth, not reducible to preference, salience, or utility.
 
+**Status**: todo.
+
 ### Task 8.3 — Create paper outline: non-reductive validation
 
 Suggested file:
@@ -379,6 +359,8 @@ Papers/SRT_NonReductive_Verification_Outline.md
 Thesis:
 
 > SRT can be tested through proxy measurement, structural convergence, differential predictions, and withdrawal conditions.
+
+**Status**: todo.
 
 ---
 
@@ -466,8 +448,10 @@ Recommended next steps:
 7. Neuroscience/SRT_Neuro_Predictions_Table.md.                  DONE
 8. Philosophy/SRT_Ethics_Casebook.md.                            DONE
 9. Philosophy/SRT_Political_Casebook.md.                         DONE
-10. Paper outlines.                                              NEXT
-11. Only then consider second formula-role pass and deeper long-file reorganization.
+10. Papers/SRT_Selection_Realism_Paper_Outline.md.               DONE
+11. Papers/SRT_D_Value_Ontology_of_Concern_Outline.md.           NEXT
+12. Papers/SRT_NonReductive_Verification_Outline.md.
+13. Only then consider second formula-role pass and deeper long-file reorganization.
 ```
 
 ---
@@ -477,12 +461,12 @@ Recommended next steps:
 The immediate next action should be:
 
 ```text
-Create Papers/SRT_Selection_Realism_Paper_Outline.md
+Create Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
 ```
 
 Reason:
 
-> Registry, validation, AI flagship application, experimental roadmap, terminology audit, neuroscience predictions, and casebooks are now in place. The next stage is converting repository material into publishable paper trajectories.
+> Selection Realism paper outline is now created. The next paper-facing bottleneck is giving `d-value` its own publishable trajectory as existential stake / concern bandwidth, distinct from salience, preference, reward, and utility.
 
 ---
 
