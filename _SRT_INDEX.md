@@ -183,6 +183,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（bridge/lab working draft; not a canonical source）
+- `Neuroscience_Annex/README.md`（bridge/interface annex index for extracted neuroscience comparison material; `canonical: false`, not a Core definition source）
 
 ### Physics
 
