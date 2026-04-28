@@ -37,8 +37,8 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 | Trigger | Pipeline / Mode | Action |
 |--------|------------------|--------|
-| `材料 <文本/URL/文件>` | Pipeline 1 | 审查并双向整合外部材料（6项审核门 → A/B/C 结论 → 若 A 则直接改文档，并回答新增接口 / 反向修正 / 加固内容 / SRT反哺 / 残余压力；正文默认再做一轮“去材料化改写”，写成可脱离材料阅读的原生章节） |
-| `材料裁决 <文本/URL/文件>` | 辅助工作流 | 启动第二轮结构裁决：审查第一轮候选接口，压成最小可承重命题，并给出 A/B/C 建议与主/备/禁止落点 |
+| `材料 <文本/URL/文件>` | Pipeline 1 | 按 `Operations/_SRT_MATERIAL_PIPELINE.md` 执行材料融合：6项审核门 → A/B/C 结论 → 必要时二轮裁决 → SourceCard / PatchNote / Material Log / Index / Registry / IntegrationHook；A 类正文回写必须先做“去材料化改写”，写成可脱离材料阅读的原生章节。 |
+| `材料裁决 <文本/URL/文件>` | 辅助工作流 | 启动第二轮结构裁决：审查第一轮候选接口，压成最小可承重命题，并给出 A/B/C 建议与主/备/禁止落点；结果必须回注 Pipeline 1。 |
 | `二轮裁决 <文本/URL/文件>` | 辅助工作流 | 同 `材料裁决` |
 | `信号采集` | Pipeline 3 | 立即执行网络信号采集 |
 | `内审` | Pipeline 6 | 立即执行每日内部审查 |
@@ -52,12 +52,14 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 - 先读 `STATUS.md`
 - 以 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 为当前节奏入口
+- 若触发 `材料`，还必须读 `Operations/_SRT_MATERIAL_PIPELINE.md` 与 `Operations/_SRT_MATERIAL_LOG.md`
 
 执行后：
 
 - 更新 `STATUS.md` 中的今日执行状态
 - 需要留痕时追加到相应 `Operations/` 或 `Governance/` 台账
-- 不把 `Operations/` 日志、bridge 文件或 split / annex 导航写成新的 canonical 定义
+- Pipeline 1 的正式状态以 `Operations/_SRT_MATERIAL_LOG.md` 为准
+- 不把 `Operations/` 日志、bridge 文件、patch 文件、hook 文件或 split / annex 导航写成新的 canonical 定义
 
 ## Canonical Runtime Paths
 
@@ -65,6 +67,8 @@ When the user sends the following trigger words, use the current `SRT/` structur
 - 运行层入口：`Operations/README.md`
 - 治理层入口：`Governance/README.md`
 - 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`
+- Pipeline 1 主流程：`Operations/_SRT_MATERIAL_PIPELINE.md`
+- Pipeline 1 正式台账：`Operations/_SRT_MATERIAL_LOG.md`
 - 对话留痕：`Operations/_SRT_DIALOGUE_LOG.md`
 
 ## Migration Note
