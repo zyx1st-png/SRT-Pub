@@ -22,6 +22,8 @@ dependency: []
 - 07_Daoism_Interface_Batch：[`07_Daoism_Interface_Batch.md`](07_Daoism_Interface_Batch.md)
 - 08_QuantumConsciousness_Interface_Batch：[`08_QuantumConsciousness_Interface_Batch.md`](08_QuantumConsciousness_Interface_Batch.md)
 - 09_Epistemic_Delegation_Interface_Batch：[`09_Epistemic_Delegation_Interface_Batch.md`](09_Epistemic_Delegation_Interface_Batch.md)
+- 09b_FrictionProbing_Interface：[`09b_FrictionProbing_Interface.md`](09b_FrictionProbing_Interface.md)
+- 09c_Lahav_Relativistic_Interface：[`09c_Lahav_Relativistic_Interface.md`](09c_Lahav_Relativistic_Interface.md)
 - 10_MentalRepresentation_Interface_Batch：[`10_MentalRepresentation_Interface_Batch.md`](10_MentalRepresentation_Interface_Batch.md)
 - 11_Concepts_Interface_Batch：[`11_Concepts_Interface_Batch.md`](11_Concepts_Interface_Batch.md)
 - 12_SelfConsciousness_Interface_Batch：[`12_SelfConsciousness_Interface_Batch.md`](12_SelfConsciousness_Interface_Batch.md)
