@@ -8,7 +8,7 @@ epistemic_layer: bridge
 claim_mode: guide
 claim_level: P5
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
 ---
 
 # SRT Philosophy — Section Guide
@@ -16,6 +16,8 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-HARDENING-SOFT-S
 > **Purpose**: This folder translates SRT into philosophical language: ontology, epistemology, phenomenology, ethics, political philosophy, and social theory. It is an **interpretive bridge**, not the canonical source for primitive SRT definitions.
 
 > **2026-04-27 READ-FIRST UPDATE**: For future human and machine readers, start with the PH-SS sequence: `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` → `01_PH_SS_Objection_Crosswalk.md` → `02_PH_SS_Hardening_Execution_Plan.md`. These files concentrate the current soft points and upgrade map: `L_0` ontology, selection-before-existence, selection realism, layered realism, anti-idealism, anti-relativism, `Psi_f` layering, `d-value`, normativity, social ontology, consciousness thresholds, and non-reductive validation.
+
+> **2026-04-29 PHENOMENAL STRUCTURE UPDATE**: For qualia-space, automorphism, structural-turn, IIT/GNWT/FEP consciousness-structure, multistable perception, or first-person/third-person bridge questions, route through `SRT_Phenomenal_Structure_Interface.md`. It introduces stake-gated phenomenal structure and stake-gated automorphism as bridge notions, while preserving the subjecthood and consciousness-threshold guardrails.
 
 ## 1. What this section is for
 
@@ -38,6 +40,7 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 | 0.1 | `01_PH_SS_Objection_Crosswalk.md` | Crosswalk from `PH-SS-01..12` to objection families, responses, withdrawal conditions, and target files. |
 | 0.2 | `02_PH_SS_Hardening_Execution_Plan.md` | Sequential execution plan for turning soft spots into repository edits. |
 | 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; hardened with existence levels, `\Psi_f` resistance proxies, `L_1` anchoring, and subjecthood thresholds. |
+| 1.5 | `SRT_Phenomenal_Structure_Interface.md` | Bridge for qualia space, phenomenal structure, structural turn, automorphism, IIT/GNWT/FEP structure questions; not a consciousness or subjecthood definition source. |
 | 2 | `SRT_Philosophy_Objection_Ledger.md` | Hardest-objection map; use before upgrading any philosophical claim. |
 | 3 | `SRT_Philosophy_Hardening_TODO.md` | Concrete checklist for future hardening passes. |
 | 4 | `_SRT_Phil_Axioms.md` | Philosophy-domain mapping axioms; not P0/P1 primitive axioms. |
@@ -59,7 +62,8 @@ theta is not subjective will;
 Psi_f is not a single cost;
 stabilization is not moral justification;
 selected reality is not relativism;
-not all selection is consciousness.
+not all selection is consciousness;
+phenomenal structure is not automatically subjecthood.
 ```
 
 Priority upgrade labels:
@@ -74,6 +78,8 @@ Priority upgrade labels:
 - `purpose_as_high_d_value_attractor`
 - `collective_L2_social_ontology`
 - `non_reductive_validation`
+- `phenomenal_structure_interface`
+- `stake_gated_automorphism`
 
 PH-SS routing sequence:
 
@@ -128,6 +134,10 @@ Hardening slogan:
 
 > **Do not make SRT less bold. Make every bold sentence pay its layer, cost, threshold, and failure condition.**
 
+Phenomenal-structure slogan:
+
+> **Do not only ask what structure experience has; ask which structures are selected, borne, paid for, and sedimented as reality-differences.**
+
 ---
 
 ## 5. Anti-misreading guardrails
@@ -143,6 +153,8 @@ Hardening slogan:
 | “SRT says stable norms are morally good.” | No. `L_2` formation only means a path has hardened; moral legitimacy requires further tests such as expanded future selectability, non-externalized cost, cross-subject `d-value` bandwidth, and protection of subject-generation. |
 | “SRT means truth is relative to whoever chooses.” | No. Selection is constrained by `Psi_f`, embodied limits, environmental feedback, intersubjective checking, historical path-dependence, and downward `L_2` constraints. |
 | “L0 is a hidden world full of already-existing objects.” | No. `L_0` should be read as a modal field of selectability / condition of possible manifestation, not an object-like parallel realm. |
+| “Non-trivial automorphism means consciousness.” | No. Automorphism may model structure-preserving phenomenal variation; SRT-relevant phenomenal structure also requires `L_1` manifestation, `d-value` relevance, `Psi_f` payability, and possible `L_2` closure. |
+| “Phenomenal structure means subjecthood.” | No. Phenomenal structure can support conscious content or field structure, but subjecthood must route through the S0-S6 threshold interface. |
 
 ---
 
@@ -179,6 +191,7 @@ The Philosophy folder should gradually move toward this architecture:
 5. **Public vs academic voice separation** — slogans are useful in public texts; academic files should keep scope and claim levels visible.
 6. **Formula-role discipline** — every equation in philosophy files should state whether it is definition, model, analogy, proxy, or placeholder.
 7. **Soft-point visibility** — major philosophy upgrades should either address one of `PH-SS-01` to `PH-SS-12` or explicitly explain why they are outside the current hardening map.
+8. **Phenomenal-structure hygiene** — structural-turn, automorphism, qualia-space, IIT/GNWT/FEP structure, and multistable-perception claims should route through `SRT_Phenomenal_Structure_Interface.md` before being used as consciousness-threshold claims.
 
 ---
 
@@ -193,6 +206,7 @@ Priority edits for future passes:
 5. Link major claims in ethics and political philosophy to relevant objection IDs from `SRT_Philosophy_Objection_Ledger.md` and soft-point IDs from `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`.
 6. Split `SRT_Philosophy_Foundations.md` into a clean canonical-facing main file plus annex/history notes.
 7. Add `selection realism`, `layered realism`, and `non-reductive validation` subsections to the long-form foundations file after checking canonical dependencies.
+8. Add a neuroscience-facing operationalization note for phenomenal-structure measures after the Philosophy interface has been reviewed.
 
 ---
 
