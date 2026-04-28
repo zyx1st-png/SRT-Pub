@@ -20,6 +20,7 @@
 |---|---|---|---|
 | QBox / hyper-decoherence | `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md` | ordinary quantum theory may be read as an access-limited effective layer emerging from a deeper causally indefinite post-quantum structure | Medium-priority ontology bridge |
 | Earth inner Solar System accretion | `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` | Earth formation as constrained reservoir selection; `L0_total != L0_accessible`; manifest physical objects preserve selection history | Medium-low-priority physical analogy |
+| Cosmological principle / effective symmetry | `Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md` | homogeneity/isotropy as effective symmetry closure; FLRW/Lambda-CDM as L1/L2 modeling layer; anomalies as model-friction probes | Medium-priority methodology bridge |
 
 ---
 
@@ -63,6 +64,32 @@ L1_Earth composition
 
 Do not anthropomorphize planetary formation. At this level, `d-value` is not active except as a later life-relative interpretation.
 
+### Cosmological principle / effective symmetry
+
+Use cosmological-principle challenges as a disciplined methodology bridge:
+
+```text
+useful effective symmetry != final ontological structure
+```
+
+SRT use:
+
+```text
+L0_total cosmic structure
+  -> observational access limits + averaging + symmetry closure
+L1_effective FLRW layer
+  -> repeated model success and parameter fitting
+L2_standard_cosmology
+```
+
+Do not claim:
+
+```text
+the cosmological principle is already overturned
+SRT predicted the failure of Lambda-CDM
+New Scientist alone is sufficient evidence
+```
+
 ---
 
 ## 3. Recommended future synthesis
@@ -79,8 +106,9 @@ Proposed additions:
 2. Manifest causal order may be emergent or effective
 3. Access restriction as a component of `G_hat_theta`
 4. Physical examples of `L0_total != L0_accessible`
-5. Distinguish physical friction, information-geometric friction, neural friction, and existential concern
-6. Boundary cautions: analogy vs proof
+5. Effective symmetry as L1/L2 modeling compression
+6. Distinguish physical friction, information-geometric friction, neural friction, and existential concern
+7. Boundary cautions: analogy vs proof
 
 ---
 
@@ -90,6 +118,7 @@ Proposed additions:
 Physics bridge core = existing files
 QBox patch = added as separate bridge note
 Earth accretion patch = added as separate bridge note
+Cosmological principle patch = added as Pipeline 1 v2 patch note
 Index = current file
 Full synthesis = pending
 ```
