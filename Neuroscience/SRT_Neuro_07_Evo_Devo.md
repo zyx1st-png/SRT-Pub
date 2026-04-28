@@ -28,7 +28,7 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 - **Canonical dependencies**: `SRT-NEURO-06`, `SRT-CORE-000`, `SRT-NEURO-MECH-001`; read after the field-dynamics owner file.
 - **Primary SRT claims in this file**: BIO-1 through EVO-3, Ax-PATH-1/2, T-EVO-1/2, C-EVO-1/2, Genome-as-Generative-Model, and H-Evo predictions.
-- **Bridge/interface sections in this file**: §3.2 Levin interface, §5 convergent evolution comparisons, §6 GRT comparison, and §8 Waddington reinterpretation.
+- **Bridge/interface sections in this file**: §3.2 Levin interface summary + §3.2.4/3.2.5 empirical patches (§3.2.1–3.2.3 extracted to Annex in PR-D Batch 2b); §5 SRT framework §5.3–5.5 (§5.1–5.2 empirical basis extracted to Annex); §6 geometric regularity / Dehaene / symbolic compression (NOT a GRT section; full §6 remains pending separate adjudication); §8 Waddington pointer (§8.1–8.2 extracted to Annex).
 - **Empirical / operational anchors**: Evo-Devo Bridge Note, cancer mechanical window patch, single-cell learning patch, Science 2025 empirical anchor, and H-Evo-1 through H-Evo-4.
 - **Do not move in this PR**: BIO-1 through EVO-3, Evo-Devo Bridge Note, `Ĝ_devo`, `L2^bioelectric`, Genome-as-Generative-Model, H-Evo predictions, and empirical patches.
 
@@ -48,15 +48,15 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 - [`SRT_Neuro_08_Immune_Dist.md`](SRT_Neuro_08_Immune_Dist.md)
 - [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
 
-## Refactor Notes (PR-B: navigation-only)
+## Refactor Notes (PR-B: navigation-only; updated PR-D Batch 2b 2026-04-28)
 
-- Navigation-only update. No formulas changed. No theory content changed.
-- Candidate extraction, if any, must happen in a separate human-reviewed PR-D.
-- §3.2 Levin interface, §5 convergent evolution, §6 GRT, and §8 Waddington are possible future Annex candidates.
+- PR-B: Navigation-only update. No formulas changed. No theory content changed.
+- PR-D Batch 2b (2026-04-28): §3.2.1–3.2.3 (Levin experiments), §5.1–5.2 (convergent evolution empirical basis), and §8 (Waddington reinterpretation) extracted to `Neuroscience_Annex/08_Evo_Devo_Interface.md`.
+- §6 (geometric regularity / Dehaene / symbolic compression) is NOT a GRT section. §6.1–6.2 are external empirical; §6.3–6.5 contain SRT-internal d_symbolic and η_compress / Ψ_f claims. Requires separate adjudication before extraction.
+- §3.2.4, §3.2.5 (empirical patches), §3.3, §3.4, §5.3–5.5, §9, §10 must stay in owner.
 - BIO-1 through EVO-3 must stay in the owner file.
 - Evo-Devo Bridge Note is already P3/P4 self-labeled and must remain in the owner file.
 - `Ĝ_devo`, `L2^bioelectric`, Genome-as-Generative-Model, and H-Evo predictions must stay in the owner file.
-- GRT comparison overlaps with SRT-NEURO-06 §6; a deduplication decision is needed before PR-D.
 - Do not move the following items: Part A axioms and theorems, Evo-Devo Bridge Note, `Ĝ_devo`, `L2^bioelectric`, Genome-as-Generative-Model, H-Evo predictions, and empirical patches.
 # Part A: Formal Axioms (形式化公理)
 
@@ -334,23 +334,13 @@ SRT 不是在基因中心论和组织场论之间选边站，而是**重构了�
 
 Michael Levin 实验室的一系列实验为 SRT 提供了关键支持：
 
-### 3.2.1 双头涡虫实验
-
-- **操作**：通过改变缝隙连接（调制 $\Phi_{\text{coupling}}$）改变涡虫的生物电模式
-- **结果**：产生稳定的双头涡虫——这个表型可以遗传到后代，即使切除再生
-- **SRT 解释**：生物电模式存储了"形态目标"（$\theta_{\text{morpho}}$），这个目标独立于基因组存在
-
-### 3.2.2 青蛙眼睛移位实验
-
-- **操作**：将眼睛移植到青蛙的尾部
-- **结果**：青蛙能够通过尾部的眼睛看东西——神经找到了正确的目标
-- **SRT 解释**：存在一个"解剖地图"指导神经生长，这个地图存储在生物电场中
-
-### 3.2.3 癌症电学逆转实验
-
-- **操作**：通过操纵离子通道改变癌细胞的生物电状态
-- **结果**：癌细胞可以被"正常化"——恢复正常的细胞行为
-- **SRT 解释**：癌症不仅是基因问题，更是 $\Phi_{\text{coupling}}$ 崩溃问题——恢复电学耦合可以恢复正常 $d$ 值
+> **Levin Interface Annex Pointer**
+>
+> §3.2.1–3.2.3 (three Levin experiments: double-headed planaria, frog eye transplant, cancer electrical reversal) are extracted to [`Neuroscience_Annex/08_Evo_Devo_Interface.md`](../Neuroscience_Annex/08_Evo_Devo_Interface.md).
+>
+> These experiments are bridge/interface applications of SRT. They apply `θ_morpho`, `Φ_coupling`, and `d-value` as interpretive terms — they do not define them. The canonical definitions are in Part A: Ax-BIO-2b defines `θ_morpho`; Ax-BIO-1 defines `L2^bioelectric`; `Ĝ_devo` is defined in Part A formal axioms.
+>
+> §3.2.4 (cancer mechanical window, 2026-03-16) and §3.2.5 (single-cell learning, 2026-03-21) remain below as canonical empirical anchors.
 
 ### 3.2.4 癌症的机械窗口（2026-03-16 patch）
 
@@ -432,35 +422,13 @@ SRT 最大胆的主张之一是：**形态发生和认知是同构的**。
 
 # 5 趋同演化与 $L_2$ 吸引子拓扑
 
-> **来源**：García-Moreno *et al.*, Zaremba *et al.*, Kempynck & Hecker, *Science* 387 (2025); 综述见 Tosches, *Science* 387 (2025); 科普报道见 Saplakoglu, *Quanta Magazine* (2025.04)。
-
-## 5.1 标准难题：回路趋同之谜
-
-发育神经科学的一个核心谜题：
-
-**回路趋同之谜**：鸟类的背侧室脊（DVR）与哺乳类的新皮层（neocortex）在解剖学上截然不同——新皮层有六层有序结构，DVR 只是"无地标的神经元球"。但鸟类却展现出与灵长类相当的认知能力（乌鸦计数、鹦鹉计划、山雀追踪数万颗种子的位置）。一个 10 克大脑的鸟类完成的认知任务，相当于拥有 400 克大脑的黑猩猩（Güntürkün）。这些相似回路是从 3.2 亿年前的共祖继承的，还是独立演化的？
-
-## 5.2 实证基础
-
-2025 年 2 月发表于 *Science* 的三项独立研究利用**单细胞 RNA 测序**（scRNA-seq）给出了迄今最明确的答案：
-
-### 5.2.1 García-Moreno 团队
-
-- **方法**：追踪鸡、小鼠、壁虎的 pallium 内神经元在胚胎各阶段的生成时间与成熟位置
-- **发现**：成熟回路**跨物种惊人相似**（证实 Karten），但发育路径**完全不同**——回路在不同时间、不同顺序、不同脑区构建（证实 Puelles）
-- **结论**：相似回路 ≠ 共祖遗传，而是独立组装
-
-### 5.2.2 Zaremba 团队
-
-- **方法**：构建迄今最完整的鸟类 pallium 细胞图谱，与蜥蜴和小鼠进行跨物种比较
-- **发现**：新皮层与 DVR 由**相似回路但不同细胞类型**构建——"你可以用不同的细胞类型构建相同的回路"
-- **关键发现**：鸟类中，不同胚胎区域的细胞可以成熟为相同类型的成年神经元——"前脑的惊人重组"（Güntürkün）
-
-### 5.2.3 Kempynck & Hecker 团队
-
-- **方法**：利用深度学习比较小鼠、鸡、人类的基因组调控元件
-- **发现**：共享的 DNA 片段影响新皮层/DVR 的发育 → 相似的**遗传工具箱**在不同物种中被独立部署
-- **补充**：抑制性神经元（调节信号的沉默神经元）跨鸟类和哺乳类保守
+> **Convergent Evolution Annex Pointer**
+>
+> §5.1 (circuit convergence mystery — avian DVR vs. mammalian neocortex) and §5.2 (three Science 2025 empirical studies: García-Moreno, Zaremba, Kempynck & Hecker) are extracted to [`Neuroscience_Annex/08_Evo_Devo_Interface.md`](../Neuroscience_Annex/08_Evo_Devo_Interface.md).
+>
+> The external empirical foundation — avian DVR vs. mammalian neocortex, three independent scRNA-seq studies — is bridge/interface material. The SRT-internal interpretation (S_d attractor topology, F_Bio functional equivalence, d-value universality) remains in §5.3–5.5 below.
+>
+> **Source**: García-Moreno *et al.*, Zaremba *et al.*, Kempynck & Hecker, *Science* 387 (2025); Tosches, *Science* 387 (2025); Saplakoglu, *Quanta Magazine* (2025.04). Full content in Annex.
 
 ## 5.3 SRT 解释：$L_2$ 吸引子的拓扑必然性
 
@@ -681,28 +649,11 @@ $$d > d_{symbolic} \quad \Rightarrow \quad \text{涌现符号化选择通路}$$
 
 # 8 Waddington 表观遗传景观的 SRT 重新诠释
 
-## 8.1 经典 Waddington 景观
-
-Conrad Waddington 在 1940 年代提出了著名的"表观遗传景观"隐喻：
-
-- **山谷 (Chreods)**：发育的稳定路径
-- **山脊**：发育路径之间的能量屏障
-- **滚动的球**：细胞的发育状态
-
-## 8.2 SRT 重新诠释
-
-|景观特征|SRT 对应|深层含义|
-|:--|:--|:--|
-|山谷|$L_2$ 吸引子|物种典型形态作为选择收敛点|
-|山脊|$L_0$ 中的高自由能屏障|形态转换的能量代价|
-|滚动的球|$\hat{G}_\theta$ 的当前选择状态|细胞正在经历的选择过程|
-|景观本身|形态空间 $L_0^{\text{anatomical}}$|所有可能发育路径的相空间|
-
-**SRT 的独特贡献**：
-
-1. Waddington 景观是**动态的**——它本身在演化中被塑造
-2. 球不是"被动滚动"，而是**主动导航**——细胞群体作为 $\hat{G}^{\text{collective}}$ 在选择路径
-3. "到达谷底"不是终点，而是 $L_1 \to L_2$ 固化的开始
+> **Waddington Landscape Annex Pointer**
+>
+> §8.1 (classical Waddington landscape description) and §8.2 (SRT reinterpretation correspondence table) are extracted to [`Neuroscience_Annex/08_Evo_Devo_Interface.md`](../Neuroscience_Annex/08_Evo_Devo_Interface.md).
+>
+> The Waddington landscape is an analogical interface; it does not define `Ĝ_devo`, `L2^bioelectric`, or `Generativity_devo ∝ 1/Ψ_f(θ_morpho)`. These are defined in Part A (Ax-BIO-2, Ax-BIO-1, Ax-BIO-3). The correspondence table (valleys = L_2 attractors, ball = Ĝ_θ state) is bridge mapping only — not canonical identity.
 
 ---
 
