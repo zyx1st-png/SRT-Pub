@@ -32,6 +32,36 @@ dependency: [SRT-NEURO-MECH-001]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-NEURO-MECH-001` (`SRT_Neural_Mechanisms.md`), `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
+- **Primary SRT claims in this file**: Ignition candidate gate (Ax-CONSC-MECH-1); re-entrant selection axiom; binding as attractor stabilization; sleep as deselection / L2 writeback; consciousness-window threshold claims.
+- **Bridge/interface sections in this file (Part B)**: Comparisons with GWT (Dehaene/Changeux), IIT, higher-order theories, and binding debate. These sections are **future Annex extraction candidates** for PR-B (Neuroscience_Annex/). Do not move them in this PR.
+- **Do not move in this PR**: All Ax-CONSC-MECH-* axioms; ignition gate formula; `d`/`Ψ_f` threshold dependencies; consciousness-window minimum criteria.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `Neuroscience/SRT_Neural_Mechanisms.md` | upstream neural dynamics layer | High — this file extends it |
+| `_SRT_D_VALUE_CANONICAL.md` | d-value canonical anchor | High — do not inline |
+| `_SRT_PSI_F_CANONICAL.md` | Ψ_f canonical anchor | High — do not inline |
+| `Neuroscience/_SRT_Neuro_Axioms.md` | neuroscience axiom base | Medium |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`](SRT_Consciousness_Mechanisms_CompactCore.md) — compact navigation entry
+- [`Neuroscience/SRT_Neural_Mechanisms.md`](SRT_Neural_Mechanisms.md) — neural mechanisms upstream owner
+- [`Neuroscience/SRT_Neuro_Predictions_Table.md`](SRT_Neuro_Predictions_Table.md) — empirical prediction register
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Part B GWT/IIT/higher-order comparison sections are **PR-B candidates** for extraction to `Neuroscience_Annex/`. Must not be moved without a separate human-reviewed PR.
+- The CompactCore file (`SRT_Consciousness_Mechanisms_CompactCore.md`) is already hardened and should not be modified.
+
 # Part A: Formal Axioms (形式化公理)
 
 

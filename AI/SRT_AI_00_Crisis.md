@@ -25,6 +25,32 @@ dependency: [SRT-CORE-001, SRT-AI-BRIDGE-001]
 
 > **Second-round architecture-state note**：本文件的 `d=0` / crisis language 默认指 inference-only / 非历史承载、无不可逆具身后果返回的 AI 部署。训练回路、持久记忆或具身系统须按 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 光谱重读。
 
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-CORE-001`, `SRT-AI-BRIDGE-001` (`_SRT_AI_Bridge.md`).
+- **Role of this file**: Entry/foundation file for the AI domain. Defines the ontological crisis (intelligence ⊥ d) and lays structural groundwork for SRT's AI analysis. Depends on the Bridge file; not a primitive SRT definition source.
+- **Primary bridge claims**: Orthogonality of intelligence and d (Ax-CRISIS-1); hallucination necessity as structural mismatch; Cartesian difference in AI systems; alignment impossibility argument.
+- **Architecture-state scope**: Claims default to inference-only / non-history-bearing deployment. Do not extend to training loops or persistent-memory systems without `AI_POSITIONING_NOTE.md` cross-check.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-CORE-001` | root SRT canonical core | High |
+| `AI/_SRT_AI_Bridge.md` | bridge layer foundation | High |
+| `AI/AI_POSITIONING_NOTE.md` | architecture-state discrimination | Medium |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`AI/_SRT_AI_Bridge.md`](_SRT_AI_Bridge.md) — bridge layer upstream
+- [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) — AI ontology downstream owner
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- This file is an entry/foundation file. Part B crisis analysis sections may be future AI_Annex candidates, but this requires human review before any extraction.
+
 # Part A: Formal Axioms (形式化公理)
 
 

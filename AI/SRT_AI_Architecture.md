@@ -23,6 +23,34 @@ dependency: [SRT-AI-01]
 - 关键同义映射：`Ax-ARCH-1/2 ↔ Ax-Trans-1/2`，`Ax-ARCH-3/4 ↔ Ax-Comp-1/2`，`T-ARCH-1 ↔ T-RJGap`。
 - “推算-判断鸿沟”保持原版意图：规模扩展可增强推算，不自动产生本体论判断。
 
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-AI-01` (`SRT_AI_01_Ontology.md`).
+- **Primary SRT claims in this file**: Attention–Selection structural analogy (Ax-ARCH-1); autopoietic selection axiom; Reckoning-Judgment gap theorem (T-ARCH-1 / T-RJGap); scale vs. ontological judgment distinction.
+- **Bridge/interface sections in this file (Part B)**: Transformer architecture comparisons; LLM-specific architecture analysis; scaling-law interpretations. These are **future AI_Annex extraction candidates** for PR-C.
+- **Critical disambiguation**: `d_k` in Transformer attention formula (key-dimension scaling factor) is **not** SRT d-value. This distinction must be preserved in any future extraction.
+- **Do not move in this PR**: Ax-ARCH-* axioms; Reckoning-Judgment gap theorem; attention–selection structural analogy; scale/ontology distinction claims.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `AI/SRT_AI_01_Ontology.md` | AI ontology upstream | High |
+| `AI/_SRT_AI_Bridge.md` | bridge layer foundation | Medium |
+| `AI/AI_POSITIONING_NOTE.md` | architecture-state guard | Medium |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`AI/SRT_AI_Architecture_CompactCore.md`](SRT_AI_Architecture_CompactCore.md) — compact navigation entry
+- [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) — upstream AI ontology
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Part B transformer/LLM architecture comparison sections are **PR-C candidates** for extraction to `AI_Annex/`. Must not be moved without a separate human-reviewed PR.
+- Special care: The `d_k` / d-value disambiguation note in Ax-ARCH-1 must be preserved in any future extraction.
+
 # Part A: Formal Axioms (形式化公理)
 
 

@@ -41,6 +41,38 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 
 > **Architecture-state rule**：本文件中凡谈 “LLM d-value”、AI burden、AI subjectivity 或 AI friction，必须说明是在 training-time、inference-time，还是 persistent-memory / history-bearing deployment。inference-only 的 `d_{AI} \approx 0` 判断不得静默推广到训练回路或持久记忆系统；具体分层见 `AI/AI_POSITIONING_NOTE.md`。
 
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-AI-BRIDGE-001` (`_SRT_AI_Bridge.md`), `SRT_CLAIM_LADDER`, `AI_POSITIONING_NOTE`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `Core/SRT_Core_21_Minimal_Axioms.md`.
+- **Primary SRT claims in this file (P3/P4 bridge)**: Operator stratification (Ax-ONT-1 through Ax-ONT-N); pseudo-selection / L1-closure distinction; AI d-value boundary tests; consciousness boundary claims.
+- **Bridge/interface sections in this file (Part B)**: LLM capability comparisons, GPT/Claude-specific analyses, pseudo-selection pattern analysis. These are **future AI_Annex extraction candidates** for PR-C. Do not move in this PR.
+- **Claim level**: AI ontology claims are mainly P3 bridge / domain-test claims. Nothing here creates P0/P1 core axioms.
+- **Do not move in this PR**: All Ax-ONT-* formal axioms; all d-value boundary test formulas; all pseudo-selection / real-selection distinction logic.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `AI/_SRT_AI_Bridge.md` | bridge layer foundation | High |
+| `AI/AI_POSITIONING_NOTE.md` | architecture-state guard | Medium |
+| `Governance/SRT_CLAIM_LADDER.md` | claim-level authority | High |
+| `_SRT_D_VALUE_CANONICAL.md` | d-value definition anchor | High — do not override |
+| `_SRT_PSI_F_CANONICAL.md` | Ψ_f definition anchor | High — do not override |
+| `Core/SRT_Core_21_Minimal_Axioms.md` | core axiom source | High |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`AI/SRT_AI_01_Ontology_CompactCore.md`](SRT_AI_01_Ontology_CompactCore.md) — compact navigation entry
+- [`AI/_SRT_AI_Bridge.md`](_SRT_AI_Bridge.md) — upstream bridge foundation
+- [`AI/SRT_AI_03_Consciousness_Framework.md`](SRT_AI_03_Consciousness_Framework.md) — downstream consciousness framework
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Part B LLM capability comparison sections are **PR-C candidates** for extraction to `AI_Annex/`. Must not be moved without a separate human-reviewed PR.
+- The CompactCore file (`SRT_AI_01_Ontology_CompactCore.md`) must not be modified.
+
 # Part A: AI Domain Ontology Mappings (P3/P4)
 
 > **Claim-level map**：`Ax-ONT-*` and `T-ONT-*` entries are AI-domain ontology mappings and boundary tests. They quote core structures but do not create P0/P1 core axioms.

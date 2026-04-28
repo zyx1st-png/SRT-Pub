@@ -26,6 +26,33 @@ dependency: [SRT-NEURO-AXIOMS-001]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-NEURO-AXIOMS-001` (`_SRT_Neuro_Axioms.md`).
+- **Role of this file**: Bridge/interface reinterpretation of IIT (Tononi), PCI (Casali/Massimini), GNWT (Dehaene), and blindsight cases in SRT terms. This is an **interface file**, not a canonical definition source.
+- **Primary bridge claims**: IIT Φ as topological prerequisite (not d-value substitute); PCI as proxy measurement for L1-anchoring window; blindsight as partial L0→L1 without full d-coupling.
+- **Do not read as canonical**: No claim in this file redefines d-value, Ψ_f, or consciousness-window criteria. All strong labels (Axiom, Theorem) here are bridge-formalization devices.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `Neuroscience/_SRT_Neuro_Axioms.md` | neuroscience axiom base | High |
+| `_SRT_D_VALUE_CANONICAL.md` | d-value anchor (do not override here) | High |
+| `_SRT_PSI_F_CANONICAL.md` | Ψ_f anchor (do not override here) | High |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Neuroscience/SRT_Consciousness_Mechanisms.md`](SRT_Consciousness_Mechanisms.md) — formal SRT consciousness claims
+- [`Neuroscience/SRT_Neuro_Predictions_Table.md`](SRT_Neuro_Predictions_Table.md) — empirical prediction register
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- **This entire file is a primary PR-B candidate** for extraction to `Neuroscience_Annex/01_IIT_PCI_Interface.md`. The whole file is an external-theory interface section. Do not move in this PR; requires a separate human-reviewed PR.
+
 # Part A: Formal Axioms (形式化公理)
 
 

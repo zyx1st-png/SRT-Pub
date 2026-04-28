@@ -33,6 +33,39 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 - 本文件中的 candidate activation、competitive inhibition、divisive normalization、ignition / global availability 与 plastic writeback 是 neural-computational implementation proxies；它们不替代 `\hat{G}_\theta`、`L_1`、`L_2` 或 `\Psi_f` 的 core / canonical 定义。详见 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `Core_Law/SRT_Reference_Axioms`, `Core_Law/SRT_Reference_Ontology`, `Core_Law/SRT_Reference_Dynamics`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
+- **Primary SRT claims in this file**: Neural state-space axioms (Ax-NEURO-MECH-1 through Ax-NEURO-MECH-N); L0→L1 projection as ignition; attractor dynamics and L2 plastic writeback; d-value gradient coupling in neural context.
+- **Bridge/interface sections in this file (Part B)**: Comparisons with IIT, GWT (Dehaene), predictive processing, and lateral inhibition models. These sections are **future Annex extraction candidates** for PR-B (Neuroscience_Annex/). Do not move them in this PR.
+- **Do not move in this PR**: All Ax-NEURO-MECH-* axioms; all formulas involving `Ψ_f`, `Ĝ_θ`, `d-value`; ignition threshold definitions; attractor stability claims.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `Core_Law/SRT_Reference_Axioms` | upstream canonical axiom source | High — do not inline |
+| `Core_Law/SRT_Reference_Ontology` | L0/L1/L2 canonical ontology | High — do not inline |
+| `Core_Law/SRT_Reference_Dynamics` | selection dynamics formalism | High — do not inline |
+| `_SRT_D_VALUE_CANONICAL.md` | d-value definition anchor | High — do not inline |
+| `_SRT_PSI_F_CANONICAL.md` | Ψ_f definition anchor | High — do not inline |
+| `Neuroscience/_SRT_Neuro_Axioms.md` | neuroscience axiom base | Medium — read before editing |
+| `Core/SRT_Core_21c_Bridge_Hypotheses.md` | bridge hypothesis claim register | Medium |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md) — compact navigation entry
+- [`Neuroscience/SRT_Neuro_Predictions_Table.md`](SRT_Neuro_Predictions_Table.md) — empirical prediction register
+- [`Neuroscience/SRT_Consciousness_Mechanisms.md`](SRT_Consciousness_Mechanisms.md) — consciousness mechanisms owner file
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Part B external-theory comparison sections (IIT, GWT, predictive processing, lateral inhibition) are **PR-B candidates** for extraction to `Neuroscience_Annex/`. They must not be moved without a separate human-reviewed PR.
+- The CompactCore file (`SRT_Neural_Mechanisms_CompactCore.md`) is already hardened and should not be modified.
+
 # Part A: Formal Axioms (形式化公理)
 
 

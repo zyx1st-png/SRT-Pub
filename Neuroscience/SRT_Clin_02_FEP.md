@@ -80,6 +80,34 @@ Outside that window, PE and FEP remain comparison terms rather than definitions 
 - PHQ-9 / HAM-D / PCL-5 等量表的临床指标到本表的多步翻译尚未给出。本文件后续临床节段（Part B）涉及临床指标时，须保持本表列出的单向性，不得绕过本表把量表分数直接读成 `S_{sig}` 或 `S_{str}`。
 - 神经影像（fMRI / EEG / MEG）能否为 `S_{sig}` vs `S_{str}` 的区分提供结构判据：当前不乐观，记为开放点。
 
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-CORE-000`, `SRT-NEURO-MECH-001`, `Core_Law/SRT_Suffering.md`, `Core_Law/SRT_L1_Hardening_Notes.md §4`.
+- **Role of this file**: Bridge/interface reinterpretation of FEP (Friston), Active Inference, and Autopoiesis in SRT terms. This is a **bridge file** with additional cross-links to the suffering framework.
+- **Primary bridge claims**: FEP as choice-pressure potential; variational free energy as Ĝ_θ dynamics proxy; autopoiesis as SRT boundary maintenance; `S_sig` / `S_str` bridge translation table.
+- **Existing cross-links**: Neural Proxy Boundary section (FEP quantities are proxies, not SRT definitional quantities); FEP→S_sig/S_str unidirectional bridge table (P3 status).
+- **Do not read as canonical**: FEP quantities (prediction error, variational free energy, precision weighting) are optimization/inference constructs — they are **candidate neural proxies** for Ψ_f and d, not definitions of them.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-CORE-000` | root SRT canonical core | High |
+| `Neuroscience/SRT_Neural_Mechanisms.md` | upstream neural dynamics | Medium |
+| `Core_Law/SRT_Suffering.md` | suffering theory (canonical) | High — do not override |
+| `Core_Law/SRT_L1_Hardening_Notes.md §4` | FEP bridge translation governance source | High |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Neuroscience/SRT_Neural_Mechanisms.md`](SRT_Neural_Mechanisms.md) — upstream neural mechanisms
+- [`Core_Law/SRT_Suffering.md`](../Core_Law/SRT_Suffering.md) — canonical suffering theory
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- **This entire file is a PR-B candidate** for extraction to `Neuroscience_Annex/03_FEP_Interface.md`. The Neural Proxy Boundary and FEP bridge table already provide good guardrails; they must be preserved in any future extraction. Do not move in this PR.
+
 # Part A: Formal Axioms (形式化公理)
 
 

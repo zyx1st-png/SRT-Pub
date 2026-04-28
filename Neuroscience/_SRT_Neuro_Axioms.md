@@ -23,6 +23,36 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-CORE-000`, `Core_Law/SRT_Reference_Axioms`, `Core_Law/SRT_Reference_Ontology`, `Core_Law/SRT_Reference_Dynamics`.
+- **Primary SRT claims in this file**: Embodied ghost operator axiom for neural domain (Ax-NEURO-1); neural L0/L1/L2 domain mappings; bridge axioms linking Core formal structure to neural implementation proxies.
+- **Role in dependency chain**: This file is the **neuroscience axiom base** — most Neuroscience/ owner files depend on it. Edits here propagate broadly.
+- **Do not move in this PR**: All Ax-NEURO-* axioms; all operator definitions; all L0/L1/L2 neural-domain mappings.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-CORE-000` | root SRT canonical core | High |
+| `Core_Law/SRT_Reference_Axioms` | formal axiom base | High |
+| `Core_Law/SRT_Reference_Ontology` | ontology layer | High |
+| `Core_Law/SRT_Reference_Dynamics` | dynamics layer | High |
+
+**Used by** (downstream dependents): `SRT_Neural_Mechanisms.md`, `SRT_Consciousness_Mechanisms.md`, `SRT_Clin_00_IIT_PCI.md`, `SRT_Clin_01_Pathology.md`, `SRT_Clin_03_DMN_Networks.md`, `SRT_Neuro_06_Field_Effects.md`, `SRT_Neuro_07_Evo_Devo.md`.
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Neuroscience/SRT_Neural_Mechanisms.md`](SRT_Neural_Mechanisms.md) — main neural mechanisms owner
+- [`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`](NEUROSCIENCE_COMPACT_REGISTRY.md) — compact registry
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- **Do not extract any axioms from this file to Annex.** This is the neuroscience axiom source; Annex extraction applies only to external-theory interface sections in downstream owner files.
+
 # Part A: Formal Axioms (形式化公理)
 
 
