@@ -28,7 +28,7 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 - **Canonical dependencies**: `SRT-NEURO-06`, `SRT-CORE-000`, `SRT-NEURO-MECH-001`; read after the field-dynamics owner file.
 - **Primary SRT claims in this file**: BIO-1 through EVO-3, Ax-PATH-1/2, T-EVO-1/2, C-EVO-1/2, Genome-as-Generative-Model, and H-Evo predictions.
-- **Bridge/interface sections in this file**: §3.2 Levin interface summary + §3.2.4/3.2.5 empirical patches (§3.2.1–3.2.3 extracted to Annex in PR-D Batch 2b); §5 SRT framework §5.3–5.5 (§5.1–5.2 empirical basis extracted to Annex); §6 geometric regularity / Dehaene / symbolic compression (NOT a GRT section; full §6 remains pending separate adjudication); §8 Waddington pointer (§8.1–8.2 extracted to Annex).
+- **Bridge/interface sections in this file**: §3.2 Levin interface summary + §3.2.4/3.2.5 empirical patches (§3.2.1–3.2.3 extracted to 08 Annex); §5 SRT framework §5.3–5.5 (§5.1–5.2 extracted to 08 Annex); §6 Annex pointer + §6.3–6.5 owner-retained (§6.1–6.2 extracted to 09 Annex; §6.3 Ĝ_θ^{ventral/dorsal}, §6.4 η_compress/Ψ_f, §6.5 d_symbolic remain in owner); §8 Waddington pointer (§8.1–8.2 extracted to 08 Annex).
 - **Empirical / operational anchors**: Evo-Devo Bridge Note, cancer mechanical window patch, single-cell learning patch, Science 2025 empirical anchor, and H-Evo-1 through H-Evo-4.
 - **Do not move in this PR**: BIO-1 through EVO-3, Evo-Devo Bridge Note, `Ĝ_devo`, `L2^bioelectric`, Genome-as-Generative-Model, H-Evo predictions, and empirical patches.
 
@@ -48,11 +48,11 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 - [`SRT_Neuro_08_Immune_Dist.md`](SRT_Neuro_08_Immune_Dist.md)
 - [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
 
-## Refactor Notes (PR-B: navigation-only; updated PR-D Batch 2b 2026-04-28)
+## Refactor Notes (PR-B: navigation-only; updated PR-D Batch 2b 2026-04-28; updated PR-D Batch 2c 2026-04-29)
 
 - PR-B: Navigation-only update. No formulas changed. No theory content changed.
 - PR-D Batch 2b (2026-04-28): §3.2.1–3.2.3 (Levin experiments), §5.1–5.2 (convergent evolution empirical basis), and §8 (Waddington reinterpretation) extracted to `Neuroscience_Annex/08_Evo_Devo_Interface.md`.
-- §6 (geometric regularity / Dehaene / symbolic compression) is NOT a GRT section. §6.1–6.2 are external empirical; §6.3–6.5 contain SRT-internal d_symbolic and η_compress / Ψ_f claims. Requires separate adjudication before extraction.
+- PR-D Batch 2c (2026-04-29): §6.1–§6.2 (geometric regularity problem framing and Dehaene/Sablé-Meyer empirical basis) extracted to `Neuroscience_Annex/09_Geometric_Regularity_Interface.md` after annotation conversion (PR #56). §6.3–§6.5 remain in owner (SRT-internal operator specializations, Ψ_f formula, d_symbolic threshold).
 - §3.2.4, §3.2.5 (empirical patches), §3.3, §3.4, §5.3–5.5, §9, §10 must stay in owner.
 - BIO-1 through EVO-3 must stay in the owner file.
 - Evo-Devo Bridge Note is already P3/P4 self-labeled and must remain in the owner file.
@@ -496,40 +496,17 @@ $d$ 值不依赖于特定神经架构，而依赖于**选择动力学的拓扑�
 
 # 6 几何规则性与选择的符号化压缩
 
-> **来源**：Sablé-Meyer, Bhatt *et al.*, "A geometric shape regularity effect in the human brain", *eLife* 13 (2025), e106464; 基于 Dehaene *et al.* (2022), Sablé-Meyer *et al.* (2021, 2022) 的行为学前序工作。
-
-## 6.1 标准难题：为什么人类能"看见"几何规则？
-
-认知人类学的核心发现：
-
-**几何规则性之谜**：远在书写发明之前，人类最早的图形产品就是高度规则的非具象几何符号——平行线、锯齿、三角网格。全球各文化在绘画、建筑、装饰中自发使用对称、平行等几何规则性。即使没有接受过西方正规教育的群体（如纳米比亚的 Himba 族），也能直觉地感知点、线及其组合成规则形状的方式。然而，狒狒不展现几何规则性效应，黑猩猩不能将具象图片的学习迁移到几何线条图。
-
-**核心问题**：如果几何规则性感知不是教育的产物，那么它在大脑中的**神经基础**是什么？为什么人类拥有而其他灵长类缺乏这种能力？
-
-## 6.2 实证基础：fMRI/MEG 双通路证据
-
-Dehaene 团队通过 fMRI（成人和 6 岁儿童）和 MEG（成人）记录了人脑在感知简单几何形状（三角形、四边形、六边形）时的神经活动：
-
-### 6.2.1 双重编码系统
-
-| 通路 | 时间 | 脑区 | 计算模型 | 跨物种保守性 |
-|:--|:--|:--|:--|:--|
-| **腹侧通路** | 早期（~100-200ms）| 枕颞区 | CNN 可解释 | 人类与非人灵长类同源 |
-| **背侧-前额通路** | 晚期（>200ms）| IPS + ITG + 前额 | 仅符号化几何特征模型可解释 | **人类独有** |
-
-### 6.2.2 关键发现
-
-> **[R]** 以下5条发现均来自 Dehaene 团队 fMRI/MEG 实验（Dehaene et al. 2022/2023, *Science*；Amalric & Dehaene 2019；Meyer et al. 2025, *Nature Neuroscience*）。SRT 解释见 §6.3-6.5。
-
-1. **规则性效应** **[R]**：几何规则性越高（如正方形 > 矩形 > 任意四边形），IPS/ITG/前额区的调制越强。→ SRT interpretation: see owner §6.4 (`η_compress`, `Ψ_f` relationship). This empirical finding supports the owner-file interpretation that geometric regularity can serve as an operational proxy for compression efficiency; it does not define `η_compress` or `Ψ_f`.
-2. **压缩编码** **[R]**：大脑活动与**最小描述长度**（MDL，Rissanen 1978; Grünwald 2007）成比例 → 规则形状 = 更高压缩效率。→ SRT interpretation: see owner §6.4 (`η_compress` as neural implementation; MDL as one operational proxy for `Ψ_f`). The empirical finding is brain activity tracking MDL; the SRT formula remains defined in the owner file.
-3. **CNN 失败** **[R]**：卷积神经网络可解释早期视觉反应（腹侧 L₁ 生成），但完全无法捕获后期背侧-前额信号。→ SRT interpretation: see owner §6.3 (`Ĝ_θ^{dorsal}` as symbolic selection / ontological transition). The empirical finding is CNN failure on late dorsal-prefrontal signals; the SRT operator-specialization claim remains in the owner file.
-4. **发育先天性** **[R]**：6 岁儿童在相同 IPS/ITG 位置显示几何形状激活 → 先于正规教育。**混淆因素注**：6 岁前已有大量非正式几何暴露（积木、环境中的直线）；"先天性"的更强证据应来自：① 文化剥夺对照（Himba 族数据已部分支持）；② 先天盲后复明者（视觉经验受限）的几何激活检验。
-5. **人类皮层扩展** **[R]**：人类相对于非人灵长类，**顶叶区的皮层面积扩展最大**（Meyer et al. 2025）。→ SRT interpretation: see owner §6.5 (`d_symbolic` threshold; parietal expansion as embodied hardware condition). This empirical finding supports the owner-file interpretation but does not define `d_symbolic` or the d-value threshold.
-
-**证伪方向（§6.2.2 实验发现层）**：
-- 若训练后的 CNN 变体（整合符号推理模块）能捕获后期背侧-前额信号（预测 MEG 晚期分量），则 "CNN 失败 → 本体论跃迁必需" 的推论被削弱（允许连续架构模拟符号化通路）。
-- 若 Himba 族等缺乏正式几何教育的群体缺乏背侧-前额激活（仅腹侧），则"先天性"主张需修订（激活是教育诱发的，而非进化内置的）。
+> **Geometric Regularity Interface Annex Pointer**
+>
+> The external geometric-regularity and Dehaene/Sablé-Meyer empirical material formerly in §6.1–§6.2 has been moved to [`Neuroscience_Annex/09_Geometric_Regularity_Interface.md`](../Neuroscience_Annex/09_Geometric_Regularity_Interface.md).
+>
+> This Annex is bridge/interface material. It does not define SRT Core primitives.
+>
+> `Ĝ_θ^{ventral}` / `Ĝ_θ^{dorsal}` remain owner-file formal operator specializations in §6.3 below. `η_compress` and `Ψ_f(σ) ∝ 1/η_compress(σ)` remain owner-file formal claims in §6.4 below. `d_symbolic` and `d > d_symbolic` remain owner-file d-threshold claims in §6.5 below.
+>
+> The `→ SRT interpretation` notes in the Annex point back to owner §6.3–§6.5 and do not define those concepts.
+>
+> **Source**: Sablé-Meyer, Bhatt *et al.*, *eLife* 13 (2025), e106464; Dehaene *et al.* (2022), Sablé-Meyer *et al.* (2021, 2022). Full content in Annex.
 
 ## 6.3 SRT 解释：$L_0 \to L_1$ 选择的分层架构
 
