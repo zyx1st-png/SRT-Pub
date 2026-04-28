@@ -20,14 +20,18 @@ Annex files do not define SRT Core primitives, do not replace owner-file formal 
 
 ## Files
 
+- [`07_Field_Effects_Interface.md`](07_Field_Effects_Interface.md) — synaptic synchrony / GWT / IIT / GRT external-theory comparisons extracted from [`../Neuroscience/SRT_Neuro_06_Field_Effects.md`](../Neuroscience/SRT_Neuro_06_Field_Effects.md). Bridge/interface only — does not define `κ_sync`, `Ĝ_macro`, QUALIA-1/2, or T-FIELD-2.
 - [`10_Integration_Theory_Comparisons.md`](10_Integration_Theory_Comparisons.md) — external consciousness-theory comparison material extracted from [`../Neuroscience/SRT_Neuro_09_Integ_Eq.md`](../Neuroscience/SRT_Neuro_09_Integ_Eq.md).
 
-## Owner File
+## Owner Files
 
-- [`../Neuroscience/SRT_Neuro_09_Integ_Eq.md`](../Neuroscience/SRT_Neuro_09_Integ_Eq.md)
+- [`../Neuroscience/SRT_Neuro_06_Field_Effects.md`](../Neuroscience/SRT_Neuro_06_Field_Effects.md) — owner for `07_Field_Effects_Interface.md`
+- [`../Neuroscience/SRT_Neuro_09_Integ_Eq.md`](../Neuroscience/SRT_Neuro_09_Integ_Eq.md) — owner for `10_Integration_Theory_Comparisons.md`
 
 ## Operations Records
 
 - [`../Operations/PR_B_Neuro_06_10_Navigation_Record.md`](../Operations/PR_B_Neuro_06_10_Navigation_Record.md)
 - [`../Operations/PR_D0_Neuro_09_PreExtraction_Audit.md`](../Operations/PR_D0_Neuro_09_PreExtraction_Audit.md)
 - [`../Operations/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md`](../Operations/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md)
+- [`../Operations/PR_D_Batch2_GRT_Deduplication_Adjudication.md`](../Operations/PR_D_Batch2_GRT_Deduplication_Adjudication.md)
+- [`../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md`](../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md)
