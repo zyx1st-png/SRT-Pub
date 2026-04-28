@@ -28,6 +28,41 @@ dependency: [SRT-NEURO-07, SRT-CORE-000]
 
 - 本文件涉及炎症负担、肠脑轴、分布式算子如何影响选择动力学；涉及"分布式苦难负担"、心身病与躯体化等段落时，对苦难作为结构对象的读法回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）。
 - 炎症与免疫失衡进入苦难讨论时按疼痛（`\theta_{somatic}` 层）与苦难（稳定 ISP 层）双轨理解；不得把炎症读数等同于苦难量化。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-NEURO-07`, `SRT-CORE-000`; read as a distributed physiology owner file with several guarded interface patches.
+- **Primary SRT claims in this file**: IMM-1 through PHYS-2, T-IMM-1, C-IMM-1, Suffering Theory cross-link, and H-Dist predictions.
+- **Bridge/interface sections in this file**: §2 PNI / gut-brain / embodied cognition comparisons, §4 Varela history, §5 inflammation-depression interface, AD interface, and Tanycyte interface.
+- **Empirical / operational anchors**: Vagus Multiplex, Interoceptive Axes, Gut-Microbiome Encephalization, Neuropsychiatric Autoimmunity Gate, AD interface, Tanycyte interface, and H-Dist-1 through H-Dist-4.
+- **Do not move in this PR**: Suffering Theory cross-link, IMM-1 through PHYS-2, T-IMM-1, H-Dist predictions, Vagus / Interoceptive / Gut-Microbiome / Autoimmunity patches, and AD/Tanycyte interface equations.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-NEURO-07` | Supplies developmental and bioelectric context for distributed physiology. | Medium: 08's physiological claims depend on 07's owner-file anchors. |
+| `SRT-CORE-000` | Core SRT operator, `L_0/L_1/L_2`, `d-value`, and friction vocabulary. | High: immune and physiology axioms must remain tied to core vocabulary. |
+| `Core_Law/SRT_Suffering.md` | Canonical cross-link for suffering as a structural object. | High: the cross-link must remain in the owner file. |
+| `Neuroscience/SRT_Neuro_09_Integ_Eq.md` | Downstream integration/equations file. | Medium: 09 depends on 08 in the 06-10 chain. |
+
+## Companion Links
+
+- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`SRT_Neuro_07_Evo_Devo.md`](SRT_Neuro_07_Evo_Devo.md)
+- [`SRT_Neuro_09_Integ_Eq.md`](SRT_Neuro_09_Integ_Eq.md)
+- [`../Core_Law/SRT_Suffering.md`](../Core_Law/SRT_Suffering.md)
+
+## Refactor Notes (PR-B: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Candidate extraction, if any, must happen in a separate human-reviewed PR-D.
+- This is the lowest extraction readiness file among 06-10.
+- AD/Tanycyte interface equations require human decision before extraction.
+- Suffering Theory cross-link must stay in the owner file.
+- IMM-1 through PHYS-2, T-IMM-1, H-Dist predictions, Vagus / Interoceptive / Gut-Microbiome / Autoimmunity patches must stay in the owner file.
+- Do not extract AD/Tanycyte sections until a boundary pass decides whether Eq-Neuro-AD-PI-1 and Eq-Neuro-TAN-1/2 are canonical or bridge.
+- Do not move the following items: Part A immune/physiology axioms, Suffering Theory cross-link, H-Dist predictions, late empirical patches, AD interface equations, and Tanycyte interface equations.
 # Part A: Formal Axioms (形式化公理)
 
 

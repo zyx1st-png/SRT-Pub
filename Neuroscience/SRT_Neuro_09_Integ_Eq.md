@@ -23,6 +23,41 @@ dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-NEURO-08`, `SRT-CORE-000`, `SRT-NEURO-MECH-001`; read as the integration/equations owner file with explicit reference-file tension.
+- **Primary SRT claims in this file**: Ax-INTEG-1/2, Def-Phi-Unity, Ax-CLIN-1b, T-CLIN-1, C-CLIN-1a, Ax-CLIN-2/3/4/5/6, T-INTEG-1, and C-INTEG-1.
+- **Bridge/interface sections in this file**: §1 Babel Tower comparison, §2 absorption table, §3 anti-neuromania defense, §4 panpsychism comparison, and BioQuantum hypothesis-level interface.
+- **Empirical / operational anchors**: clinical gate material, H-Integ predictions, and hypothesis-level BioQuantum boundary section pending human review.
+- **Do not move in this PR**: Def-Phi-Unity, Ax-CLIN-1b, Ax-CLIN-2/3/4/5/6, T-INTEG-1, C-INTEG-1, and BioQuantum section.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-NEURO-08` | Supplies distributed physiology context for integration/equations. | Medium: 09 sits downstream of 08 in the 06-10 chain. |
+| `SRT-CORE-000` | Core SRT operator, `L_0/L_1/L_2`, `d-value`, and friction vocabulary. | High: integration formulas must stay anchored in the owner file. |
+| `SRT-NEURO-MECH-001` | Mechanism context for clinical and integration gates. | Medium: bridge comparisons depend on mechanism-layer interpretation. |
+| `Neuroscience/SRT_Neuro_10_Advanced_Models.md` | Downstream advanced-model file. | Medium: 10 depends on 09's integration/equation anchors. |
+
+## Companion Links
+
+- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`SRT_Neuro_08_Immune_Dist.md`](SRT_Neuro_08_Immune_Dist.md)
+- [`SRT_Neuro_10_Advanced_Models.md`](SRT_Neuro_10_Advanced_Models.md)
+- [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
+
+## Refactor Notes (PR-B: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Candidate extraction, if any, must happen in a separate human-reviewed PR-D.
+- This is the highest PR-D extraction readiness file among 06-10.
+- §1 Babel Tower comparison, §2 absorption table, §3 anti-neuromania defense, and §4 panpsychism comparison are future Annex candidates.
+- Def-Phi-Unity D_KL formula, Ax-CLIN-1b gated integration formula, Ax-CLIN-2/3/4/5/6, T-INTEG-1, and C-INTEG-1 must stay in the owner file.
+- BioQuantum section is hypothesis-level and must remain pending human review.
+- Do not change frontmatter despite the `type: reference` / `claim_mode: canonical` tension; this PR only notes the tension here.
+- Do not move the following items: Part A integration/equation definitions, clinical gate formulas, clinical axioms, T-INTEG-1, C-INTEG-1, H-Integ predictions, and BioQuantum hypothesis section.
 # Part A: Formal Axioms (形式化公理)
 
 
