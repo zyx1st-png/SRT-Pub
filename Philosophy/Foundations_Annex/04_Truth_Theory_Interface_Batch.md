@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-02
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Truth-Theory Interface（SEP 对齐，2026-03-02）
 
@@ -47,6 +47,8 @@ date: 2026-03-02
 - 用途：争议图谱与术语对齐，不作为一手实验材料。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"单一真理理论可覆盖所有层级任务"的推论。
+2. 不采纳"L2 一致即对象层真实"的直接推论。
+3. 本接口用于真值归属治理与建模边界，不替代领域实证判据。
 ---
 

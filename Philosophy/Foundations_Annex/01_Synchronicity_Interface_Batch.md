@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-02
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Synchronicity Interface (Jung–Pauli) → SRT 映射条款（2026-03-02）
 
@@ -52,6 +52,10 @@ date: 2026-03-02
 - 引入年份：2026（SRT 映射写入）。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. **SRT 不采纳**"同步性可替代因果机制"的推论。  
+   - 原因：同步性在本框架中是现象学标签与解释层接口，不是机制证明本身。  
+2. **SRT 不采纳**"任何巧合都具有本体论必然意义"的推论。  
+   - 原因：需区分统计偶然、叙事放大与稳定结构耦合，避免 L2 过拟合。  
+3. 适用边界：本条款用于哲学解释与建模假设生成，不可直接作为实证因果结论。
 ---
 

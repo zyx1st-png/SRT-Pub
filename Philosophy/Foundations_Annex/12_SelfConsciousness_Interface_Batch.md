@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-08
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Self-Consciousness Interface（2026-03-08）
 
@@ -35,11 +35,16 @@ I_k \in \mathcal{S}_{immune} \Rightarrow P(\text{misidentify subject}\mid I_k)\t
 这解释了“可错内容 + 不易错主语”的并存。
 
 ### Def-Phil-SC-2: Embodied Ownership Window
-身体所有感由多模态一致性门控，而非单一“mineness”感受即可决定：
+
+身体所有感由多模态一致性门控，而非单一最小自我感（mineness，Zahavi）即可决定：
+
 \[
-Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
+P(Own) = \sigma\!\left(\beta \cdot \text{Sync}(V,T,P,K) - \tau_{own}\right)
 \]
-其中 \(V/T/P/K\) 分别代表视觉、触觉、本体觉、运动觉一致性（对应橡胶手/换身错觉可操纵边界）。
+
+其中 $V/T/P/K$ 分别代表视觉、触觉、本体觉、运动觉一致性（对应橡胶手/换身错觉可操纵边界）；$\tau_{own}$ 为动态阈值，受预测误差与具身历史调节，与 $\hat{G}_\theta$ 的 d-value 动态具有结构同构性。
+
+$Own = 1$ 的区域构成 $\hat{G}_\theta$ 当前操作的具身内部空间——身体所有感是 G 算子具身边界的实时确认机制。
 
 ### T-Phil-SC-2: Self–Other Co-Development Constraint
 自我意识与他心理解存在对称/非对称并存关系：
@@ -64,4 +69,6 @@ Own(bodypart)=\mathbf{1}\{\text{Sync}(V,T,P,K) > \tau_{own}\}
 - 关键脉络：Kant “I think”、生态知觉自指信息、镜像识别、身体所有感与 ToM 互构。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"镜像识别通过 = 完整反思性自我已形成"的推论；该任务仅覆盖部分自我表征能力。  
+2. 不采纳"身体所有感 = 单一内在感觉实体"的推论；所有感可由多模态一致性操纵并解离。  
+3. 不采纳"第一人称与第三人称完全同构"的推论；二者共享部分概念但证据机制不同。

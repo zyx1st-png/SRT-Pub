@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-08
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Concepts Interface（2026-03-08）
 
@@ -101,4 +101,6 @@ R_{adhoc}=\mathcal{C}(R_{i_1},R_{i_2},...,Goal_t,Context_t)
 - **SRT附加**[H]：将Shea的hybridism解读为θ参数化的多模式加工（不同θ→不同概念加工主导模式）；concept/conception区分对应L₂共享指称vs L₁个体展开（参见lines 1634-1637）
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"概念=定义条目"的推论；大量概念使用依赖原型、样例、理论与情境表征协同。  
+2. 不采纳"分类成功=语义指称已被内在信息唯一决定"的推论；应用机制与指称基础需要区分。  
+3. 不采纳"LLM 的分布式语义成功 = 人类概念语义问题已解决"的推论；功能近似不等于语义地基完成。

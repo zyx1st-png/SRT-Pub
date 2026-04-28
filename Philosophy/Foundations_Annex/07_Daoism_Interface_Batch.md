@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-02
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Daoism Interface（SEP 对齐，2026-03-02）
 
@@ -44,4 +44,6 @@ SRT 立场：二者可耦合但不可互相吞并。
 - 用途：自然规范与制度规范分层接口对齐。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"自然路径 = 道德正确"的直接等同推论。
+2. 不采纳"社会规范可完全脱离自然可行性约束"的推论。
+3. 本接口用于规范层建模，不替代具体历史文本训诂与实证社会分析。

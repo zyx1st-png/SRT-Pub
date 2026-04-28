@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-02
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Qualia Interface（SEP 对齐，2026-03-02）
 
@@ -67,6 +67,8 @@ date: 2026-03-02
 - 用途：术语分层与争议边界治理。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"承认 broad qualia = 承认强非物理实体"的跳跃推论。
+2. 不采纳"否认 strong qualia = 否认全部体验现实性"的反向推论。
+3. 本接口用于层级澄清，不替代具体神经/行为实验判据。
 ---
 

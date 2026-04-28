@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-02
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Wittgenstein Interface（SEP 对齐，2026-03-02）
 
@@ -46,6 +46,8 @@ date: 2026-03-02
 - 关键脉络：Tractatus（可说性边界）→ Investigations（meaning-as-use, language-games）
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"语义全相对化（anything goes）"推论：SRT 要求规则路径可共享、可复用。  
+2. 不采纳"不可言说 = 不可研究"推论：可作为 L1 现象对象进入操作化流程。  
+3. 本接口用于语义治理与断言边界，不替代对象层机制证明。
 ---
 

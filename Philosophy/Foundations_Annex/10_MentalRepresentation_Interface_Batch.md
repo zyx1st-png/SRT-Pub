@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-08
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Mental Representation Interface（2026-03-08）
 
@@ -125,4 +125,6 @@ SRT 的差异点更窄也更硬：在某些任务中，系统性失真可能是�
 - Stephan Pohl et al. (2026), *Nature Reviews Neuroscience*: *Clarifying the conceptual dimensions of representation in neuroscience*（doi:`10.1038/s41583-026-01030-8`）。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"有神经相关 = 已确定内容"的推论；内容归因必须经功能与任务约束验证。  
+2. 不采纳"4E 成立 = 一切内部表征可删除"的推论；不同任务对内部代理依赖度不同。  
+3. 不采纳"teleosemantics 成立 = 语义已完全解决"的推论；误表征、远距内容与格式差异仍需经验判定。

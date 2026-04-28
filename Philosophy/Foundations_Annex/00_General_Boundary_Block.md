@@ -12,10 +12,13 @@ claim_mode: translation
 canonical: false
 parent: Philosophy/SRT_Philosophy_Foundations.md
 note: >
-  Annex file for §5.12-§5.18 extensions and boundary declarations referenced by SRT_Philosophy_Foundations.md.
+  General boundary declarations plus late-foundations preserved material (§5.11–§5.18 extensions,
+  §6 心灵哲学深化, §7 代价与风险, §8 可证伪预测, 融合映射整合). Referenced by pointers in
+  SRT_Philosophy_Foundations.md. Does NOT contain interface-specific guardrails for the
+  individual tradition-interface sections (01–13); those live in each Annex file directly.
 ---
 
-> **Annex file** — referenced from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Contains §5.12–§5.18 extensions and boundary declarations.
+> **Annex file** — General Boundary and Late Foundations Block. Referenced from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Contains §5.11–§5.18 extensions, §6 心灵哲学深化, §7–§8, and 融合映射整合. Interface-specific guardrails for tradition-interface sections are in their respective Annex files (01–13), not here.
 
 ## 【理论边界/防误用声明】
 - 不采纳“Px 由算子生成=外部世界任意可塑”的推论：\(L_0\) 存在阻抗地形，失败投影会触发高 \(\Psi_f\) 或崩解。

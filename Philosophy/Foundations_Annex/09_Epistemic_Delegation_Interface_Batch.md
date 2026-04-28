@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-07
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Epistemic Delegation as Phase Transition（Proof-Trust Interface，2026-03-07）
 
@@ -76,4 +76,6 @@ J = \mathbb{E}[\Psi_f^{total}] + \lambda\,\mathrm{CatastrophicRisk}
 - 方法谱系：Active Inference / Free Energy 风格的“成本-风险-策略切换”建模语义（映射到 SRT 记号，不等同原理论）。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"需要信任 = 真理纯属社会发明"的推论；SRT 仍要求 \(L_0\) 约束与环境摩擦闭环。  
+2. 不采纳"机器给出结果 = 可跳过可回滚机制"的推论；无 \(K_r\)/\(G_e\) 保障的输出仅是暂态候选。  
+3. 不采纳"任何共识都等价"的推论；只有能持续降低 \(\Psi_f^{env}\) 的共识结构才具吸引子地位。

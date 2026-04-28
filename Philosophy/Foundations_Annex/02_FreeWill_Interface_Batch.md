@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-02
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Free-Will Compatibility Interface（2026-03-02）
 
@@ -53,6 +53,8 @@ date: 2026-03-02
 - 接口语义：与 SRT 既有能动性滞后定理（Libet 窗口）和 \(\hat G_\theta\) 门控框架对齐。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. **SRT 不采纳**"决定论真/假可单独裁定责任归属"的简单化推论。  
+2. **SRT 不采纳**"意识仅是幻觉因此规范评价无效"的全盘取消主义推论。  
+3. 适用边界：本接口用于解释与建模，不直接替代法律伦理裁判标准。
 ---
 

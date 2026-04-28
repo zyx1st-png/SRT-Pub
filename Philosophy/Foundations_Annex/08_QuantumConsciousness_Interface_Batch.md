@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-05
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Quantum-Consciousness Interface（2026-03-05）
 
@@ -58,4 +58,6 @@ L_0\to L_1\ \text{(collapse/selection)}\ \not\Rightarrow\ \text{subjective conti
 | 泛心论等价跳跃 | 低~中 | Closed（概念越级） | 被误估 |
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+- 不采纳"相对性等效候选 = 任意系统都必然有意识"的推论。
+- 不采纳"内部模拟语言 = 屏幕式表征实在"的推论。
+- 适用边界：SRT 使用 constrained projection / rendering 语义；任何 L1 显现必须受 \(\Psi_f\) 支付约束。

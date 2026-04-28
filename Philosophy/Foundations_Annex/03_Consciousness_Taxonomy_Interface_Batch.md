@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-02
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Consciousness Taxonomy Interface（SEP 对齐，2026-03-02）
 
@@ -50,6 +50,8 @@ Q_F:\ \text{What function does experience serve?}
 - 用途：定义分类与争议框架对齐，不作为新实证证据。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"分类框架 = 机制证明"的推论。
+2. 不采纳"解释鸿沟不可消除 = 科学终止"的推论。
+3. 本接口用于术语治理与理论导航，不替代实验判据。
 ---
 

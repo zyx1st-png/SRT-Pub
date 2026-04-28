@@ -14,7 +14,7 @@ parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-08
 ---
 
-> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Canonical content.
+> **Annex file** — extracted from [`SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md). Extracted current bridge/interface content; `canonical: false` means this file does not define Core primitives.
 
 ## Mind–Body Problem Interface（2026-03-08）
 
@@ -81,4 +81,6 @@ E_{mental} \equiv E_{physical}^{realization},
 - 关键脉络：Cartesian dualism、物理主义/超覆(supervenience)、心因果论证、解释鸿沟与可想象性挑战。
 
 ## 【理论边界/防误用声明】
-本段边界声明已 annex 化；详见 `Foundations_Annex/00_General_Boundary_Block.md`。
+1. 不采纳"承认解释鸿沟 = 物理主义必假"的推论；语义-解释难题不自动转成本体否定。  
+2. 不采纳"因果闭包成立 = 心理层无效"的推论；心理描述可对应同一实现事件的高层因果刻画。  
+3. 不采纳"中性一元/泛心 = 已解决意识难题"的推论；组合问题与可检验性仍是硬约束。
