@@ -22,6 +22,7 @@
 | Earth inner Solar System accretion | `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` | Earth formation as constrained reservoir selection; `L0_total != L0_accessible`; manifest physical objects preserve selection history | Medium-low-priority physical analogy |
 | Cosmological principle / effective symmetry | `Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md` | homogeneity/isotropy as effective symmetry closure; FLRW/Lambda-CDM as L1/L2 modeling layer; anomalies as model-friction probes | Medium-priority methodology bridge |
 | Spontaneous collapse / classicality | `Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md` | physical localization of superposed geometries as an analogue of L0-to-L1 manifestation without external observers | Medium-high quantum cosmology bridge |
+| Quantum proper time / optical ion clocks | `Physics/patches/SRT_Phys_P05_Quantum_Proper_Time_Optical_Clocks_v0_1.md` | proper time as operational temporal record; quantum clock motion can reveal limits of classical timekeeping as an L2-effective regime | Medium-high quantum time bridge |
 
 ---
 
@@ -113,6 +114,29 @@ spontaneous collapse proves G_hat_theta
 objective collapse is established physics
 ```
 
+### Quantum proper time / optical ion clocks
+
+Use quantum proper-time proposals as disciplined temporal-access bridge:
+
+```text
+quantum clock motion -> relativistic/quantum coupling -> recorded proper time
+```
+
+SRT use:
+
+```text
+time becomes manifest through a physical clock/interface;
+classical timekeeping is an L2-effective regime whose limits may appear at quantum precision
+```
+
+Do not claim:
+
+```text
+quantum proper time = subjective time
+human time perception is caused by quantum clock effects
+time travel is possible
+```
+
 ---
 
 ## 3. Recommended future synthesis
@@ -130,9 +154,10 @@ Proposed additions:
 3. Access restriction as a component of `G_hat_theta`
 4. Physical examples of `L0_total != L0_accessible`
 5. Physical localization without external observers
-6. Effective symmetry as L1/L2 modeling compression
-7. Distinguish physical friction, information-geometric friction, neural friction, and existential concern
-8. Boundary cautions: analogy vs proof
+6. Temporal access layers and quantum clock interfaces
+7. Effective symmetry as L1/L2 modeling compression
+8. Distinguish physical friction, information-geometric friction, neural friction, and existential concern
+9. Boundary cautions: analogy vs proof
 
 ---
 
@@ -144,6 +169,7 @@ QBox patch = added as separate bridge note
 Earth accretion patch = added as separate bridge note
 Cosmological principle patch = added as Pipeline 1 v2 patch note
 Spontaneous collapse patch = added as Pipeline 1 v2 patch note
+Quantum proper time patch = added as Pipeline 1 v2 patch note
 Index = current file
 Full synthesis = pending
 ```
