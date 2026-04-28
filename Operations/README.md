@@ -40,4 +40,12 @@ raw session / dialogue compilation / residual archives 已下沉到：
 4. `_SRT_PAPER_PIPELINE.md`
 5. `_SRT_MEDIA_PIPELINE.md`
 6. `_SRT_KNOWLEDGE_REVIEW_PIPELINE.md`（Pipeline 7：知识点抽查与回写）
-7. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线）
+7. `_SRT_MATERIAL_PIPELINE.md`（Pipeline 1：材料融合 v2 结构化写入版）
+8. `_SRT_MATERIAL_LOG.md`（Pipeline 1 正式材料融入台账）
+9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线）
+
+## Pipeline 1 Authority
+
+`Operations/_SRT_MATERIAL_PIPELINE.md` 是材料进入仓库的主流程说明。`SourceCard / PatchNote / Registry / IntegrationHook` 都是 Pipeline 1 的结构化产物，不是平行工作流。
+
+`Operations/_SRT_MATERIAL_LOG.md` 仍是正式状态台账；任何 patch、hook 或 index 的状态若与台账冲突，以台账为准。
