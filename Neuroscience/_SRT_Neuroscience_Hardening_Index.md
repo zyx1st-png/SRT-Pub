@@ -1,0 +1,110 @@
+# SRT Neuroscience Hardening Index
+
+> Status: domain navigation index.  
+> Scope: neuroscience-facing bridge hypotheses, experimental handles, and external-material patches.  
+> Canonical caution: indexed files are bridge/hardening notes unless explicitly promoted into a canonical SRT document.
+
+## 0. Core neuroscience sequence
+
+| Range | File | Role |
+|---|---|---|
+| N1-N9 | `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` | current compact neuroscience bridge: selection architecture, Psi_f, d-value, L2, consciousness, psychopathology, experiments, mainstream-theory distinctions |
+
+---
+
+## 1. Recent N10-N12 patch sequence
+
+| Claim | File | Core thesis | Status |
+|---|---|---|---|
+| N10 | `Neuroscience/SRT_Neuroscience_Hardening_N10_BTSP_v0_1.md` | Behavioral timescale synaptic plasticity as a candidate micro-mechanism for rapid single-experience L1-to-L2 hardening | High-priority integration candidate |
+| N11 | `Neuroscience/SRT_Neuroscience_Hardening_N11_Transition_Field_Subjective_Time_v0_1.md` | Mind as historically shaped selection-transition field; subjective time as inverse transition accessibility; impaired action as attractor capture | Very high-priority integration candidate |
+| N12 | `Neuroscience/SRT_Neuroscience_Hardening_N12_Astrocyte_Plastic_Networks_v0_1.md` | Astrocyte gap-junction networks as non-neuronal support topology for L2 and transition-field reachability | Medium-high integration candidate |
+
+---
+
+## 2. How N10-N12 should be merged later
+
+### N10 integration target
+
+Insert into the future N1-N12 synthesis after current N4/L2 or N8/experimental roadmap:
+
+```text
+BTSP shows how eligible traces across behavioral timescales can be captured by a local trigger and written into synaptic structure after a single experience.
+```
+
+SRT use:
+
+```text
+high-d L1 event + eligibility trace + plateau trigger -> L2 micro-hardening
+```
+
+### N11 integration target
+
+N11 should become a major section in the next version because it gives the cleanest neuroscience-facing ontology:
+
+```text
+mind = historically shaped field of reachable transitions
+subjective time = phenomenological index of transition accessibility
+action failure = attractor capture, not merely weak will
+```
+
+SRT use:
+
+```text
+L2 = historically sedimented topology of selection reachability
+```
+
+### N12 integration target
+
+N12 should be merged as a substrate-expansion note:
+
+```text
+L2 is not only synaptic memory; it also includes non-neuronal support topology such as astrocyte network coupling.
+```
+
+SRT use:
+
+```text
+can represent != can sustain != can transition
+```
+
+---
+
+## 3. Recommended future synthesis
+
+Create a new synthesis file rather than continuously expanding the N1-N9 draft:
+
+```text
+Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
+```
+
+Proposed structure:
+
+1. Purpose and canonical caution
+2. Mind as embodied selection-transition field
+3. G_hat_theta as composite neural selection architecture
+4. Psi_f as operational selection friction
+5. d-value as concern-weighted selectability
+6. L2 as historically sedimented transition topology
+7. Consciousness as stable concern-weighted L1 anchoring
+8. Rapid hardening: BTSP and one-shot L1-to-L2 sedimentation
+9. Non-neuronal support topology: astrocyte networks
+10. Psychopathology as distorted anchoring / attractor capture
+11. Experimental roadmap and multimodal measurement
+12. Comparison with mainstream neuroscience theories
+13. Boundary cautions and falsification handles
+
+---
+
+## 4. Current integration status
+
+```text
+N1-N9 = existing compact core
+N10 = added as separate patch
+N11 = added as separate patch
+N12 = added as separate patch
+Index = current file
+Full synthesis = pending
+```
+
+Do not treat N10-N12 as primitive axioms yet. They are high-value bridge materials awaiting v0.2 synthesis.
