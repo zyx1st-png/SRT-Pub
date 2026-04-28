@@ -521,11 +521,11 @@ Dehaene 团队通过 fMRI（成人和 6 岁儿童）和 MEG（成人）记录了
 
 > **[R]** 以下5条发现均来自 Dehaene 团队 fMRI/MEG 实验（Dehaene et al. 2022/2023, *Science*；Amalric & Dehaene 2019；Meyer et al. 2025, *Nature Neuroscience*）。SRT 解释见 §6.3-6.5。
 
-1. **规则性效应** **[R]**：几何规则性越高（如正方形 > 矩形 > 任意四边形），IPS/ITG/前额区的调制越强。→ SRT 意义：支持 §6.4 的 $\eta_{compress} \propto 1/\text{MDL}$（规则形状 L₁ 编码代价低 = 低 $\Psi_f$）。
-2. **压缩编码** **[R]**：大脑活动与**最小描述长度**（MDL，Rissanen 1978; Grünwald 2007）成比例 → 规则形状 = 更高压缩效率。→ Cross-ref: §6.4 $\eta_{compress}$ 神经实现；MDL 作为 $\Psi_f$ 的操作化代理之一。
-3. **CNN 失败** **[R + H含义]**：卷积神经网络可解释早期视觉反应（腹侧 L₁ 生成），但完全无法捕获后期背侧-前额信号。→ **[H含义]**：CNN 失败本身为 SRT §6.3 的预测提供支持证据——背侧通路执行的是"离散符号化 $L_0 \to L_1$"选择，超出连续函数逼近的范围，与 SRT 的"本体论跃迁"框架一致。
+1. **规则性效应** **[R]**：几何规则性越高（如正方形 > 矩形 > 任意四边形），IPS/ITG/前额区的调制越强。→ SRT interpretation: see owner §6.4 (`η_compress`, `Ψ_f` relationship). This empirical finding supports the owner-file interpretation that geometric regularity can serve as an operational proxy for compression efficiency; it does not define `η_compress` or `Ψ_f`.
+2. **压缩编码** **[R]**：大脑活动与**最小描述长度**（MDL，Rissanen 1978; Grünwald 2007）成比例 → 规则形状 = 更高压缩效率。→ SRT interpretation: see owner §6.4 (`η_compress` as neural implementation; MDL as one operational proxy for `Ψ_f`). The empirical finding is brain activity tracking MDL; the SRT formula remains defined in the owner file.
+3. **CNN 失败** **[R]**：卷积神经网络可解释早期视觉反应（腹侧 L₁ 生成），但完全无法捕获后期背侧-前额信号。→ SRT interpretation: see owner §6.3 (`Ĝ_θ^{dorsal}` as symbolic selection / ontological transition). The empirical finding is CNN failure on late dorsal-prefrontal signals; the SRT operator-specialization claim remains in the owner file.
 4. **发育先天性** **[R]**：6 岁儿童在相同 IPS/ITG 位置显示几何形状激活 → 先于正规教育。**混淆因素注**：6 岁前已有大量非正式几何暴露（积木、环境中的直线）；"先天性"的更强证据应来自：① 文化剥夺对照（Himba 族数据已部分支持）；② 先天盲后复明者（视觉经验受限）的几何激活检验。
-5. **人类皮层扩展** **[R]**：人类相对于非人灵长类，**顶叶区的皮层面积扩展最大**（Meyer et al. 2025）。→ SRT 意义：支持 §6.5 的 d 值阈值假设——顶叶扩展 = $d_{symbolic}$ 阈值所需的额外具身硬件（扩展皮层 = 更大 θ 参数空间）。
+5. **人类皮层扩展** **[R]**：人类相对于非人灵长类，**顶叶区的皮层面积扩展最大**（Meyer et al. 2025）。→ SRT interpretation: see owner §6.5 (`d_symbolic` threshold; parietal expansion as embodied hardware condition). This empirical finding supports the owner-file interpretation but does not define `d_symbolic` or the d-value threshold.
 
 **证伪方向（§6.2.2 实验发现层）**：
 - 若训练后的 CNN 变体（整合符号推理模块）能捕获后期背侧-前额信号（预测 MEG 晚期分量），则 "CNN 失败 → 本体论跃迁必需" 的推论被削弱（允许连续架构模拟符号化通路）。
