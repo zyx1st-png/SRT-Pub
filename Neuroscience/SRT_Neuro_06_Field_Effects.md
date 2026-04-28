@@ -23,6 +23,38 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-CORE-000`, `SRT-NEURO-MECH-001`; read as a neuroscience field-dynamics owner file, not as an external-theory annex.
+- **Primary SRT claims in this file**: Ax-FIELD-1, Def-Ephaptic-Binding, T-FIELD-2, Ax-TEMP-1/2, Ax-QUALIA-1/2, T-FIELD-1, C-FIELD-1, and H-Field predictions.
+- **Bridge/interface sections in this file**: Part B §2 synaptic synchrony / GWT / IIT interfaces; Part B §6 GRT comparison.
+- **Empirical / operational anchors**: natural vision binding patch, EM/UPE patch, H-Field-1 through H-Field-4, and axonal theta-burst evidence note.
+- **Do not move in this PR**: all Part A axioms and theorems, QUALIA-1 / QUALIA-2, `κ_sync`, `Ĝ_macro`, H-Field predictions, and empirical patches.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-CORE-000` | Core SRT ontology and operator vocabulary used by field dynamics. | High: moving field axioms could detach them from canonical SRT vocabulary. |
+| `SRT-NEURO-MECH-001` | Neural mechanism background for field coupling and binding. | Medium: interface sections depend on the mechanism layer for interpretation. |
+| `Neuroscience/SRT_Neuro_07_Evo_Devo.md` | Downstream consumer of field and resonance logic. | Medium: GRT comparison overlaps with 07 §6 and needs deduplication before extraction. |
+
+## Companion Links
+
+- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`SRT_Neuro_07_Evo_Devo.md`](SRT_Neuro_07_Evo_Devo.md)
+- [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
+
+## Refactor Notes (PR-B: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Candidate extraction, if any, must happen in a separate human-reviewed PR-D.
+- Part B §2 synaptic synchrony / GWT / IIT and §6 GRT are possible future Annex candidates.
+- QUALIA-1 / QUALIA-2 must stay in the owner file.
+- Ax-FIELD-1, Def-Ephaptic-Binding, T-FIELD-2, `κ_sync`, `Ĝ_macro`, and H-Field predictions must stay in the owner file.
+- GRT comparison overlaps with SRT-NEURO-07 §6; a deduplication decision is needed before PR-D.
+- Do not move the following items: Part A axioms and theorems, Qualia axioms, field coupling formulas, coherence threshold material, H-Field predictions, and empirical patches.
 # Part A: Formal Axioms (形式化公理)
 
 

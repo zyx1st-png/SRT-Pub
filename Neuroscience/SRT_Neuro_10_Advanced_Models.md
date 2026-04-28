@@ -23,6 +23,38 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-NEURO-09`, `SRT-CORE-000`, `SRT-NEURO-MECH-001`; read after the integration/equations owner file.
+- **Primary SRT claims in this file**: Ax-ADV-1 through ADV-6, T-ADV-1, C-ADV-1, Feeling-as-Friction, T1 tension resolution, and H-Adv predictions.
+- **Bridge/interface sections in this file**: Part B embodied cognition comparisons, Damasio/Friston interface, and low-priority AI/interoception comparisons where externally framed.
+- **Empirical / operational anchors**: interoceptive precision, reality fidelity, control energy gap, and H-Adv-1 through H-Adv-4.
+- **Do not move in this PR**: Ax-ADV-1 through ADV-6, Ax-ADV-2 Feeling-as-Friction, T1 tension resolution, T-ADV-1, C-ADV-1, H-Adv predictions, and Part A owner-file anchors.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-NEURO-09` | Supplies integration/equation anchors for advanced models. | High: advanced-model claims depend on 09's owner-file formulas. |
+| `SRT-CORE-000` | Core SRT operator, `L_0/L_1/L_2`, `d-value`, and friction vocabulary. | High: Feeling-as-Friction must remain tied to SRT vocabulary. |
+| `SRT-NEURO-MECH-001` | Mechanism context for embodied, interoceptive, and metabolic claims. | Medium: external comparisons are tightly bound to Part A claims. |
+
+## Companion Links
+
+- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`SRT_Neuro_09_Integ_Eq.md`](SRT_Neuro_09_Integ_Eq.md)
+- [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
+
+## Refactor Notes (PR-B: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Candidate extraction, if any, must happen in a separate human-reviewed PR-D.
+- Navigation-only is sufficient for now.
+- Part B comparisons are tightly bound to Part A axioms; extraction is low priority.
+- Ax-ADV-1 through ADV-6, T-ADV-1, C-ADV-1, and H-Adv predictions must stay in the owner file.
+- Ax-ADV-2 Feeling-as-Friction and its T1 tension resolution are essential and must not be moved.
+- Do not move the following items: Part A advanced-model axioms, Feeling-as-Friction, T1 tension resolution, theorem/corollary material, and H-Adv predictions.
 # Part A: Formal Axioms (形式化公理)
 
 

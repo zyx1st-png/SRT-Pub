@@ -23,6 +23,41 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
+
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-NEURO-06`, `SRT-CORE-000`, `SRT-NEURO-MECH-001`; read after the field-dynamics owner file.
+- **Primary SRT claims in this file**: BIO-1 through EVO-3, Ax-PATH-1/2, T-EVO-1/2, C-EVO-1/2, Genome-as-Generative-Model, and H-Evo predictions.
+- **Bridge/interface sections in this file**: §3.2 Levin interface, §5 convergent evolution comparisons, §6 GRT comparison, and §8 Waddington reinterpretation.
+- **Empirical / operational anchors**: Evo-Devo Bridge Note, cancer mechanical window patch, single-cell learning patch, Science 2025 empirical anchor, and H-Evo-1 through H-Evo-4.
+- **Do not move in this PR**: BIO-1 through EVO-3, Evo-Devo Bridge Note, `Ĝ_devo`, `L2^bioelectric`, Genome-as-Generative-Model, H-Evo predictions, and empirical patches.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `SRT-NEURO-06` | Supplies field and resonance logic used by evolutionary/developmental extensions. | Medium: GRT overlap with 06 §6 requires coordinated PR-D treatment. |
+| `SRT-CORE-000` | Core SRT operator, `L_0/L_1/L_2`, `d-value`, and friction vocabulary. | High: moving BIO/EVO axioms could detach owner-file definitions from core vocabulary. |
+| `SRT-NEURO-MECH-001` | Mechanistic neuroscience background for bioelectric and developmental claims. | Medium: external interface sections require mechanism-layer context. |
+| `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | Downstream file in the 06-10 chain. | Medium: later distributed-system claims depend on 07's developmental owner content. |
+
+## Companion Links
+
+- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`SRT_Neuro_06_Field_Effects.md`](SRT_Neuro_06_Field_Effects.md)
+- [`SRT_Neuro_08_Immune_Dist.md`](SRT_Neuro_08_Immune_Dist.md)
+- [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
+
+## Refactor Notes (PR-B: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Candidate extraction, if any, must happen in a separate human-reviewed PR-D.
+- §3.2 Levin interface, §5 convergent evolution, §6 GRT, and §8 Waddington are possible future Annex candidates.
+- BIO-1 through EVO-3 must stay in the owner file.
+- Evo-Devo Bridge Note is already P3/P4 self-labeled and must remain in the owner file.
+- `Ĝ_devo`, `L2^bioelectric`, Genome-as-Generative-Model, and H-Evo predictions must stay in the owner file.
+- GRT comparison overlaps with SRT-NEURO-06 §6; a deduplication decision is needed before PR-D.
+- Do not move the following items: Part A axioms and theorems, Evo-Devo Bridge Note, `Ĝ_devo`, `L2^bioelectric`, Genome-as-Generative-Model, H-Evo predictions, and empirical patches.
 # Part A: Formal Axioms (形式化公理)
 
 
