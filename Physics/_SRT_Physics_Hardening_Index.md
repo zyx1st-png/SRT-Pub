@@ -21,6 +21,7 @@
 | QBox / hyper-decoherence | `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md` | ordinary quantum theory may be read as an access-limited effective layer emerging from a deeper causally indefinite post-quantum structure | Medium-priority ontology bridge |
 | Earth inner Solar System accretion | `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` | Earth formation as constrained reservoir selection; `L0_total != L0_accessible`; manifest physical objects preserve selection history | Medium-low-priority physical analogy |
 | Cosmological principle / effective symmetry | `Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md` | homogeneity/isotropy as effective symmetry closure; FLRW/Lambda-CDM as L1/L2 modeling layer; anomalies as model-friction probes | Medium-priority methodology bridge |
+| Spontaneous collapse / classicality | `Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md` | physical localization of superposed geometries as an analogue of L0-to-L1 manifestation without external observers | Medium-high quantum cosmology bridge |
 
 ---
 
@@ -90,6 +91,28 @@ SRT predicted the failure of Lambda-CDM
 New Scientist alone is sufficient evidence
 ```
 
+### Spontaneous collapse / classicality
+
+Use spontaneous-collapse cosmology as a disciplined physical-localization bridge:
+
+```text
+superposition of geometries -> spontaneous physical localization -> classical effective geometry
+```
+
+SRT use:
+
+```text
+physical localization can be selection-like without being agency-like
+```
+
+Do not claim:
+
+```text
+the universe consciously collapsed itself
+spontaneous collapse proves G_hat_theta
+objective collapse is established physics
+```
+
 ---
 
 ## 3. Recommended future synthesis
@@ -106,9 +129,10 @@ Proposed additions:
 2. Manifest causal order may be emergent or effective
 3. Access restriction as a component of `G_hat_theta`
 4. Physical examples of `L0_total != L0_accessible`
-5. Effective symmetry as L1/L2 modeling compression
-6. Distinguish physical friction, information-geometric friction, neural friction, and existential concern
-7. Boundary cautions: analogy vs proof
+5. Physical localization without external observers
+6. Effective symmetry as L1/L2 modeling compression
+7. Distinguish physical friction, information-geometric friction, neural friction, and existential concern
+8. Boundary cautions: analogy vs proof
 
 ---
 
@@ -119,6 +143,7 @@ Physics bridge core = existing files
 QBox patch = added as separate bridge note
 Earth accretion patch = added as separate bridge note
 Cosmological principle patch = added as Pipeline 1 v2 patch note
+Spontaneous collapse patch = added as Pipeline 1 v2 patch note
 Index = current file
 Full synthesis = pending
 ```
