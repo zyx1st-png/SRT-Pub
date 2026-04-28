@@ -22,12 +22,13 @@ Annex files do not define SRT Core primitives, do not replace owner-file formal 
 
 - [`07_Field_Effects_Interface.md`](07_Field_Effects_Interface.md) — synaptic synchrony / GWT / IIT / GRT external-theory comparisons extracted from [`../Neuroscience/SRT_Neuro_06_Field_Effects.md`](../Neuroscience/SRT_Neuro_06_Field_Effects.md). Bridge/interface only — does not define `κ_sync`, `Ĝ_macro`, QUALIA-1/2, or T-FIELD-2.
 - [`08_Evo_Devo_Interface.md`](08_Evo_Devo_Interface.md) — Levin bioelectric experiments (§3.2.1–3.2.3), convergent evolution empirical basis (§5.1–5.2), and Waddington landscape interface (§8) extracted from [`../Neuroscience/SRT_Neuro_07_Evo_Devo.md`](../Neuroscience/SRT_Neuro_07_Evo_Devo.md). Bridge/interface only — does not define `θ_morpho`, `Ĝ_devo`, `L2^bioelectric`, `S_d`, `F_Bio` equivalence, or `Generativity_devo`.
+- [`09_Geometric_Regularity_Interface.md`](09_Geometric_Regularity_Interface.md) — geometric regularity problem framing (§6.1) and Dehaene/Sablé-Meyer fMRI/MEG empirical basis (§6.2) extracted from [`../Neuroscience/SRT_Neuro_07_Evo_Devo.md`](../Neuroscience/SRT_Neuro_07_Evo_Devo.md). Bridge/interface only — does not define `η_compress`, `Ψ_f`, `d_symbolic`, or `Ĝ_θ^{ventral/dorsal}`.
 - [`10_Integration_Theory_Comparisons.md`](10_Integration_Theory_Comparisons.md) — external consciousness-theory comparison material extracted from [`../Neuroscience/SRT_Neuro_09_Integ_Eq.md`](../Neuroscience/SRT_Neuro_09_Integ_Eq.md).
 
 ## Owner Files
 
 - [`../Neuroscience/SRT_Neuro_06_Field_Effects.md`](../Neuroscience/SRT_Neuro_06_Field_Effects.md) — owner for `07_Field_Effects_Interface.md`
-- [`../Neuroscience/SRT_Neuro_07_Evo_Devo.md`](../Neuroscience/SRT_Neuro_07_Evo_Devo.md) — owner for `08_Evo_Devo_Interface.md`
+- [`../Neuroscience/SRT_Neuro_07_Evo_Devo.md`](../Neuroscience/SRT_Neuro_07_Evo_Devo.md) — owner for `08_Evo_Devo_Interface.md` and `09_Geometric_Regularity_Interface.md`
 - [`../Neuroscience/SRT_Neuro_09_Integ_Eq.md`](../Neuroscience/SRT_Neuro_09_Integ_Eq.md) — owner for `10_Integration_Theory_Comparisons.md`
 
 ## Operations Records
@@ -38,3 +39,6 @@ Annex files do not define SRT Core primitives, do not replace owner-file formal 
 - [`../Operations/PR_D_Batch2_GRT_Deduplication_Adjudication.md`](../Operations/PR_D_Batch2_GRT_Deduplication_Adjudication.md)
 - [`../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md`](../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md)
 - [`../Operations/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md`](../Operations/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md)
+- [`../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md`](../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md)
+- [`../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md`](../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md)
+- [`../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md`](../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md)
