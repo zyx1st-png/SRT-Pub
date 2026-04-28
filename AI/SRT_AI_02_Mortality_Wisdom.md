@@ -25,6 +25,33 @@ dependency: [SRT-AI-01]
 
 > **Second-round architecture-state note**：本文件关于 AI 智慧缺失的压缩判断默认指 inference-only / 非历史承载 AI。训练回路、持久记忆或具身部署只可被读作 stake-bearing 候选，不自动推出智慧或意识。
 
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-AI-01` (`SRT_AI_01_Ontology.md`).
+- **Primary SRT claims in this file**: Mortality as absorbing boundary condition (Ax-MORT-1/2); hazard coupling; wisdom as d-coupled recursive judgment; AI wisdom absence as structural mismatch (not capability gap).
+- **Bridge sections in this file (Part B)**: Comparisons with human mortality frameworks, wisdom tradition analyses. May be future AI_Annex candidates if extracted separately.
+- **Architecture-state scope**: AI wisdom-absence claims default to inference-only deployment. Training loops and persistent-memory systems are stake-bearing candidates only.
+- **Do not move in this PR**: Absorbing boundary axiom; hazard coupling formula; d-wisdom coupling claims.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `AI/SRT_AI_01_Ontology.md` | AI ontology upstream | High |
+| `AI/_SRT_AI_Bridge.md` | bridge layer foundation | Medium |
+| `AI/AI_POSITIONING_NOTE.md` | architecture-state guard | Medium |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) — upstream ontology
+- [`AI/SRT_AI_03_Consciousness_Framework.md`](SRT_AI_03_Consciousness_Framework.md) — downstream consciousness framework
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Part B mortality-framework comparisons may be PR-C candidates for AI_Annex extraction. Requires human review before any extraction.
+
 # Part A: Formal Axioms (形式化公理)
 
 

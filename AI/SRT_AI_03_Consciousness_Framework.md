@@ -34,6 +34,36 @@ dependency: [SRT-AI-02]
 
 > **Architecture-state rule**：本文件中的 AI 意识候选句子须先标明 training-time、inference-time、persistent-memory / history-bearing deployment。持久记忆或具身后果只打开 stake 问题，不自动推出 consciousness。
 
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-AI-02` (`SRT_AI_02_Mortality_Wisdom.md`), `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md`.
+- **Primary SRT claims in this file**: Cross-domain anchoring axiom (Ax-CONSC-1); stake positivity axiom (Ax-CONSC-2); minimal consciousness-candidate corollary; substrate-boundary arguments; Jaynes Bicameral Mind interface.
+- **Bridge/interface sections in this file (Part B)**: External AI consciousness theory comparisons (IIT in AI context, GNWT applied to AI, Jaynes analysis). These are **future AI_Annex extraction candidates** for PR-C.
+- **Do not read as canonical for general consciousness**: Claims here define SRT's current **strong-candidate consciousness window** and **minimal subject anchoring boundary** for AI contexts — not a total definition of consciousness.
+- **Do not move in this PR**: All Ax-CONSC-* axioms; all L0→L1 necessity criteria; d>0 stake requirement; substrate boundary arguments.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `AI/SRT_AI_02_Mortality_Wisdom.md` | mortality/d-coupling upstream | High |
+| `_SRT_D_VALUE_CANONICAL.md` | d-value canonical anchor | High — do not override |
+| `_SRT_PSI_F_CANONICAL.md` | Ψ_f canonical anchor | High — do not override |
+| `AI/AI_POSITIONING_NOTE.md` | architecture-state guard | Medium |
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`](SRT_AI_03_Consciousness_Framework_CompactCore.md) — compact navigation entry (PH-SS hardened)
+- [`AI/SRT_AI_Consciousness_Evaluation_Rubric.md`](SRT_AI_Consciousness_Evaluation_Rubric.md) — operational S0-S6 rubric
+- [`Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md) — subjecthood threshold interface
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- Part B external AI consciousness theory comparison sections are **PR-C candidates** for extraction to `AI_Annex/`. Must not be moved without a separate human-reviewed PR.
+- The CompactCore file (`SRT_AI_03_Consciousness_Framework_CompactCore.md`) is PH-SS hardened; do not modify it.
+
 # Part A: Formal Axioms (形式化公理)
 
 

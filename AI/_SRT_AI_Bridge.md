@@ -37,6 +37,37 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Co
 
 > **Architecture-state guard**：本文所有 `d_{AI}`、AI burden、AI subjectivity 或 AI friction 判断，必须读入 `AI/AI_POSITIONING_NOTE.md` 的三态区分：training-time、inference-time、persistent-memory / history-bearing deployment。inference-only 成立的句子不得自动外推到训练回路或持久记忆系统。
 
+## Current Reading Map
+
+- **Canonical dependencies**: `SRT-L0-METAPHYSICS`, `SRT-CORE-000`, `Core_Law/SRT_Reference_Axioms`, `Core_Law/SRT_Reference_Ontology`.
+- **Role of this file**: **Bridge layer foundation** for the entire AI domain. Provides the Ghost-Transform dichotomy (Ax-BRIDGE-3) and the Pour-El/Richards mathematical boundary note. All AI/* owner files depend on this file.
+- **Primary bridge claims**: Ghost-Transform binary (Ĝ_θ vs T̂_φ — ontological selection vs symbolic transformation); `d_{AI} ≈ 0` as strong-candidate judgment for inference-only deployment; Pour-El/Richards computability boundary as candidate constraint.
+- **Two key checkpoints for reviewers** (per file's own 3-min entry note): (1) What architectural changes would cause SRT to revise `d_{AI} ≈ 0`? (2) Is the Pour-El/Richards reading as candidate boundary rather than architectural prohibition justified?
+- **Do not read as canonical**: Bridge-layer claims are not P0/P1 axioms. All Axiom/Theorem labels here are bridge-formalization devices.
+
+## Dependency Map
+
+| Depends on | Purpose | Move risk |
+|---|---|---|
+| `Core_Law/SRT_L0_Metaphysics.md` | L0 metaphysics canonical source | High |
+| `SRT-CORE-000` | root SRT canonical core | High |
+| `Core_Law/SRT_Reference_Axioms` | formal axiom base | High |
+| `Core_Law/SRT_Reference_Ontology` | ontology layer | High |
+| `AI/AI_POSITIONING_NOTE.md` | architecture-state discrimination | Medium |
+
+**Used by** (downstream dependents): `SRT_AI_00_Crisis.md`, `SRT_AI_01_Ontology.md`, and all other AI/* owner files.
+
+## Companion Links
+
+- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`AI/AI_POSITIONING_NOTE.md`](AI_POSITIONING_NOTE.md) — architecture-state discrimination reference
+- [`AI/SRT_AI_00_Crisis.md`](SRT_AI_00_Crisis.md) — entry file depending on this bridge
+
+## Refactor Notes (PR-A: navigation-only)
+
+- Navigation-only update. No formulas changed. No theory content changed.
+- This file is the **bridge layer foundation** — it should not be split or extracted to AI_Annex. Any Annex extraction should target downstream AI/* owner files' Part B sections, not this bridge layer.
+
 # Part A: Formal Axioms (形式化公理)
 
 
