@@ -26,6 +26,7 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 - `SRT_Neural_Mechanisms_CompactCore.md`: formal mechanism compact core; now contains the current neural-selection hardening summary.
 - `SRT_Consciousness_Mechanisms_CompactCore.md`: formal consciousness compact core; now contains the current consciousness hardening summary.
 - `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`: non-canonical staging draft for theory hardening, experimental design, and future citation work.
+- [`../Neuroscience_Annex/`](../Neuroscience_Annex/) contains bridge/interface Annex files extracted from Neuroscience owner files. Annex files are `canonical: false` and do not define Core primitives or replace owner-file formal anchors.
 
 ## Current hardening path
 

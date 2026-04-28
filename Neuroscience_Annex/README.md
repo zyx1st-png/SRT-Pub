@@ -18,6 +18,10 @@ This directory contains Neuroscience bridge/interface Annex files.
 
 Annex files do not define SRT Core primitives, do not replace owner-file formal anchors, and do not serve as canonical sources for `L_0/L_1/L_2`, `Psi_f`, `d-value`, `Phi`, or `\hat{G}_\theta`.
 
+## Round 1 Status
+
+Round 1 is closed as of `2026-04-29`. The active Annex inventory is 07/08/09/10 below. Further extraction should start with a new audit/adjudication PR.
+
 ## Files
 
 - [`07_Field_Effects_Interface.md`](07_Field_Effects_Interface.md) — synaptic synchrony / GWT / IIT / GRT external-theory comparisons extracted from [`../Neuroscience/SRT_Neuro_06_Field_Effects.md`](../Neuroscience/SRT_Neuro_06_Field_Effects.md). Bridge/interface only — does not define `κ_sync`, `Ĝ_macro`, QUALIA-1/2, or T-FIELD-2.
@@ -42,3 +46,4 @@ Annex files do not define SRT Core primitives, do not replace owner-file formal 
 - [`../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md`](../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md)
 - [`../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md`](../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md)
 - [`../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md`](../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md)
+- [`../Operations/Neuroscience_Annex_Round1_Closure_Report.md`](../Operations/Neuroscience_Annex_Round1_Closure_Report.md)
