@@ -76,11 +76,13 @@ IIT 试图通过将意识等同于信息几何来回避这个问题；GNWT 关�
 
 |被吸收理论|SRT 翻译|新洞见|
 |:--|:--|:--|
-|IIT ($\Phi$)|$\Phi = \text{Complexity}(\hat{G}_\theta)$|$\Phi$ 测量算子结构，而非意识本身|
-|GNWT (点燃)|点燃 = $L_0 \to L_1$ 相变|意识准入是拓扑相变|
-|FEP ($\min F$)|$\min F = -\nabla \Psi_f$|自由能 = 本体论摩擦|
-|HOT|高阶表征 = $\hat{G}[\hat{G}]$|元认知是算子的自指|
-|Orch-OR|量子坍缩 = $L_0 \to L_1$ 的物理机制|需补充语义张力项|
+|IIT ($\Phi$)|$\Phi$ 可比较为 $\hat{G}_\theta$ 复杂度 / 绑定完整性的 bridge translation|$\Phi$ 可作为算子结构读数候选，而非意识本身或 Def-Phi-Unity 的替代定义|
+|GNWT (点燃)|点燃可比较为 $L_0 \to L_1$ transition 的 broadcast / access bridge|意识准入可被理解为拓扑相变候选，不定义 $L_0 \to L_1$|
+|FEP ($\min F$)|free-energy minimization 可比较为 / 作为 $\Psi_f$-gradient descent 的候选 proxy|FEP 描述推断/优化压力；不等同于定义本体论摩擦|
+|HOT|高阶表征可比较为 $\hat{G}[\hat{G}]$ 的 self-reference bridge|元认知可作为算子自指的候选接口，不定义 $\hat{G}_\theta$|
+|Orch-OR|量子坍缩可比较为 $L_0 \to L_1$ physical-mechanism candidate|仅为 hypothesis-level 物理机制比较，仍需补充语义张力项|
+
+All rows in this table are bridge translations, not equivalence claims.
 
 ---
 
