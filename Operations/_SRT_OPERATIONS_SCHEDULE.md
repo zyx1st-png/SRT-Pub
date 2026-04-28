@@ -11,6 +11,7 @@ dependency: [SRT-EXECUTION-PLAN, SRT-HEARTBEAT]
 
 # SRT 运行节奏（Cadence）
 
+> **版本 v2.4（2026-04-28）**：Pipeline 1 升级为 v2 结构化写入版；`SourceCard / PatchNote / Registry / IntegrationHook` 纳入 Pipeline 1 产物层，但正式状态仍以 `Operations/_SRT_MATERIAL_LOG.md` 为准。  
 > **版本 v2.3（2026-04-10）**：保留 6 条 Pipeline 节奏；恢复原 Pipeline 1，并新增独立的“材料第二轮结构裁决工作流”作为辅助流程；A 类材料回写默认追加一轮“去材料化改写”，正文目标为原生章节而非材料补丁口吻。
 
 ---
@@ -19,7 +20,7 @@ dependency: [SRT-EXECUTION-PLAN, SRT-HEARTBEAT]
 
 | Pipeline | 任务 | 触发方式 | 交付物 |
 |---------|------|---------|-------|
-| Pipeline 1 | 材料融合（双向增益版：等待用户提交，提交后立即审查并双向整合；A 类默认原生化回写） | 用户指令或文件提交 | `Operations/_SRT_MATERIAL_LOG.md` 新记录 |
+| Pipeline 1 | 材料融合（v2 结构化写入版：6 项审核门 → A/B/C → SourceCard / PatchNote / Material Log / Index / Registry / IntegrationHook；A 类默认原生化回写） | 用户指令或文件提交 | `Operations/_SRT_MATERIAL_LOG.md` 新记录；必要时新增 source/patch/hook/index/registry |
 | Pipeline 3 | 网络信号采集与审核 | HEARTBEAT（≥22h 自动触发）或 `信号采集` | `Operations/_SRT_SIGNAL_LOG.md` 新记录 |
 | Pipeline 5 | 双路线媒体选题（大众+精英各 1 条） | Cron 08:00 / HEARTBEAT / `选题` | `Operations/_SRT_MEDIA_QUEUE.md` 新增 2 条 |
 | Pipeline 6 | 每日自动内部审查 | HEARTBEAT（≥22h 自动触发）或 `内审` | 自动修复 + `Operations/_SRT_REVIEW_QUEUE.md` + `Operations/_SRT_DAILY_REVIEW_LOG.md` |
@@ -64,7 +65,7 @@ dependency: [SRT-EXECUTION-PLAN, SRT-HEARTBEAT]
 
 | 触发词 | 对应 Pipeline | 动作 |
 |--------|-------------|------|
-| `材料 <内容/URL/文件>` | Pipeline 1 | 审查并双向整合外部材料 |
+| `材料 <内容/URL/文件>` | Pipeline 1 | 按 `Operations/_SRT_MATERIAL_PIPELINE.md` 审查并双向整合外部材料；正式状态写入 `Operations/_SRT_MATERIAL_LOG.md` |
 | `信号采集` | Pipeline 3 | 立即执行网络信号采集 |
 | `内审` | Pipeline 6 | 立即执行每日内部审查 |
 | `选题` | Pipeline 5 | 生成当日双路线选题 |
