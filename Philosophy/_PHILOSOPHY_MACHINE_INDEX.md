@@ -10,14 +10,17 @@ tags:
   - Objection-Led-Hardening
   - Tradition-Comparison
   - Subjecthood
+  - Phenomenal-Structure
+  - Structural-Turn
+  - Automorphism
   - Public-OnePager
-status: active_v6
+status: active_v7
 layer: meta
 epistemic_layer: bridge
 claim_mode: index
 claim_level: P5
 canonical: false
-date: 2026-04-27
+date: 2026-04-29
 dependency:
   - SRT-PHILOSOPHY-README
   - SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27
@@ -31,19 +34,20 @@ dependency:
   - SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27
   - SRT-PHIL-TRADITION-COMPARISON-PH-SS-2026-04-27
   - SRT-PHIL-SUBJECTHOOD-THRESHOLD-INTERFACE-2026-04-27
+  - SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29
   - SRT-PHILOSOPHY-PUBLIC-ONEPAGER-2026-04-27
 machine_summary: >
   Directory-local machine index for the Philosophy folder. Use this file to route SRT philosophy
   queries through the PH-SS hardening sequence, Compact Core v4, axiom guardrails, objection extension,
   ethics guardrails, social/political guardrails, tradition-comparison file, subjecthood threshold
-  interface, and public one-pager. It does not define canonical SRT primitives.
+  interface, phenomenal-structure interface, and public one-pager. It does not define canonical SRT primitives.
 ---
 
 # Philosophy Machine Index
 
 > **Role**: Directory-local machine routing file for `Philosophy/`.  
 > **Canonical status**: not canonical; does not define P0/P1 primitives.  
-> **Main routing principle**: for philosophy hardening, start with PH-SS files, then Compact Core v4, then companion owner-file guardrails, then tradition comparison / subjecthood interface / public one-pager / long / legacy / domain-specific files.
+> **Main routing principle**: for philosophy hardening, start with PH-SS files, then Compact Core v4, then companion owner-file guardrails, then tradition comparison / subjecthood interface / phenomenal-structure interface / public one-pager / long / legacy / domain-specific files.
 
 ---
 
@@ -61,6 +65,7 @@ Philosophy/_PHILOSOPHY_MACHINE_INDEX.md
   -> Philosophy/SRT_Social_Political_PH_SS_Guardrails.md
   -> Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md
   -> Philosophy/SRT_Subjecthood_Threshold_Interface.md
+  -> Philosophy/SRT_Phenomenal_Structure_Interface.md
   -> Philosophy/SRT_Philosophy_Public_OnePager.md
   -> target owner file
 ```
@@ -75,6 +80,8 @@ The Philosophy folder should currently be read through this frame:
 SRT = selection realism
     + layered realism
     + anti-relativist constraint realism
+    + thresholded consciousness / subjecthood
+    + stake-gated phenomenal structure
 ```
 
 Core guardrails:
@@ -86,7 +93,9 @@ theta is not subjective will;
 Psi_f is not a single cost;
 stabilization is not moral justification;
 selected reality is not relativism;
-not all selection is consciousness.
+not all selection is consciousness;
+phenomenal structure is not automatically subjecthood;
+automorphism alone is not a consciousness criterion.
 ```
 
 ---
@@ -106,6 +115,7 @@ not all selection is consciousness.
 | `SRT_Social_Political_PH_SS_Guardrails.md` | companion guardrail file for collective L2, institutions, markets, legitimacy, and friction export | active bridge guardrail |
 | `SRT_Philosophy_Tradition_Comparison_PH_SS.md` | comparison matrix distinguishing SRT from Kant, phenomenology, Whitehead, pragmatism, constructivism, panpsychism, physicalism, FEP, IIT, GNW, etc. | active_v1 |
 | `SRT_Subjecthood_Threshold_Interface.md` | S0-S6 interface distinguishing selection, anchoring, conscious content, subjecthood, agency, and responsibility-bearing subject | active_v1 |
+| `SRT_Phenomenal_Structure_Interface.md` | structural-turn / qualia-space interface distinguishing mathematical model, phenomenal structure, automorphism, conscious content, and subjecthood; introduces stake-gated phenomenal structure | active_v1 |
 | `SRT_Philosophy_Public_OnePager.md` | public-facing one-page explanation of SRT philosophy; not idealism, not relativism, not panpsychism, still testable | active_v1 |
 
 ---
@@ -123,7 +133,7 @@ not all selection is consciousness.
 | PH-SS-07 | mystical teleology risk | Compact Core / Objection extension / Core 24 | compact core v4 done; objection extension done; Core24 validation pointer done |
 | PH-SS-08 | `d-value` philosophical status | Compact Core / Objection extension / Ethics guardrail / `d-value` canonical links | compact core v4 done; objection extension done; ethics companion done; canonical cross-check optional |
 | PH-SS-09 | social ontology underdeveloped | Compact Core / Objection extension / Social-political guardrail / Public OnePager | compact core v4 done; objection extension done; social-political companion done; public one-pager done |
-| PH-SS-10 | consciousness threshold | Compact Core / Axiom companion / Objection extension / Subjecthood interface / AI / Neuroscience / Public OnePager | compact core v4 done; axiom companion done; objection extension done; subjecthood interface done; AI/Neuro pointers done; public one-pager done |
+| PH-SS-10 | consciousness threshold | Compact Core / Axiom companion / Objection extension / Subjecthood interface / Phenomenal-structure interface / AI / Neuroscience / Public OnePager | compact core v4 done; axiom companion done; objection extension done; subjecthood interface done; phenomenal-structure interface done; AI/Neuro pointers done; public one-pager done |
 | PH-SS-11 | non-reductive validation | Compact Core / Objection extension / Core 24 / Claim Ladder / Public OnePager | compact core v4 done; objection extension done; Core24 pointer done; public one-pager done |
 | PH-SS-12 | anti-relativism | Compact Core / Objection extension / Social-political guardrail / Public OnePager | compact core v4 done; objection extension done; social-political companion done; public one-pager done |
 
@@ -137,6 +147,7 @@ not all selection is consciousness.
 | `SRT_Philosophy_Public_OnePager.md` | Need a public-facing explanation: not idealism, not relativism, not panpsychism, still testable. |
 | `SRT_Philosophy_Tradition_Comparison_PH_SS.md` | Need to answer “Is SRT just Kant / phenomenology / Whitehead / constructivism / FEP / IIT / GNW?” |
 | `SRT_Subjecthood_Threshold_Interface.md` | Need to distinguish selection event, `L_1` anchoring, conscious content, subjecthood, agency, and responsibility-bearing subject. |
+| `SRT_Phenomenal_Structure_Interface.md` | Need to discuss qualia space, structural turn, automorphism, multistable perception, IIT/GNWT/FEP structure, or first-person/third-person bridge without over-reading structure as subjecthood. |
 | `SRT_Philosophy_Foundations.md` | Need long historical / accumulated argument; beware legacy and duplicate sections. |
 | `_SRT_Phil_Axioms.md` | Need philosophy-domain mapping axioms; read with the PH-SS guardrails companion. |
 | `_SRT_Phil_Axioms_PH_SS_Guardrails.md` | Need safe readings of axiom-layer claims and six guardrail definitions. |
@@ -165,6 +176,10 @@ not all selection is consciousness.
 | “Does SRT imply panpsychism?” | Public OnePager -> Subjecthood interface -> Compact Core v4 §10 -> Axiom guardrail Def-Phil-Subjecthood-Threshold -> Objection extension O-Phil-18 |
 | “When does selection become subjecthood?” | Subjecthood interface S0-S6 -> Axiom guardrail Def-Phil-Subjecthood-Threshold -> AI/Neuro compact cores |
 | “When is an agent morally responsible?” | Subjecthood interface S5-S6 -> Ethics guardrail -> Ethics / Agency files |
+| “What is phenomenal structure in SRT?” | Phenomenal-structure interface -> Subjecthood interface -> Consciousness conditions |
+| “Does automorphism imply consciousness?” | Phenomenal-structure interface §5/§12 -> Subjecthood interface S0-S6 |
+| “How should SRT read IIT qualia structure?” | Phenomenal-structure interface §6 -> Tradition comparison -> AI consciousness framework |
+| “How should SRT use GNWT / FEP in consciousness?” | Phenomenal-structure interface §7/§8 -> Neuroscience compact cores |
 | “How can SRT be tested?” | Public OnePager -> Compact Core v4 §17 -> Objection extension O-Phil-19 -> Core 24 |
 | “How does SRT treat markets/institutions?” | Public OnePager -> Social Economics Compact Core -> Social-political guardrail -> PH-SS-09/12 |
 | “How does SRT avoid is-ought gap?” | Ethics guardrail -> Objection extension O-Phil-17/20 -> Compact Core §14 |
@@ -181,6 +196,10 @@ next_owner_file_upgrades:
     - legacy_duplicate_pass
     - canonical_link_pass
     - companion_merge_pass
+  phenomenal_structure_followup:
+    - add_neuroscience_operationalization_note
+    - map_multistable_perception_experiment_to_Psi_f_d_L2_proxies
+    - crosslink_IIT_GNWT_FEP_comparison_from_tradition_file
 ```
 
 ---
@@ -192,6 +211,7 @@ Do not use this file as:
 - canonical definition source;
 - replacement for Core / Core_Law;
 - replacement for `SRT_Philosophy_Foundations_CompactCore.md`;
+- replacement for `SRT_Phenomenal_Structure_Interface.md`;
 - evidence that all long-file refactors are completed.
 
 It is only a routing surface.
