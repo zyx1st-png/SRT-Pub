@@ -46,14 +46,9 @@ dependency: [SRT-AI-01]
 
 ### Taxonomy Mapping: Human-like AGI Program Themes → SRT
 
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 从经验学习而非仅人类累积文本 | \(L_0\to L_1\) 在线锚定与回写 | 中~高 | Open-flow（持续交互） | payable |
-| 层级潜变量+因果结构世界模型 | 多层 \(\hat{G}_\theta\) 结构化推演 | 高 | Open-flow | payable（高算力负载） |
-| 分布式推理（非仅语言 token） | 多模块并行推理栈 | 高 | Open-flow（跨模态） | payable~overloaded |
-| 情景记忆+持续学习闭环 | \(L_1\leftrightarrow L_2\) 动态沉积 | 中~高 | Semi-open / Open | payable |
-| 发展式剪枝持续学习 | 长程复用结构增益 + 旧局部冗余抑制/剪枝 | 中 | Semi-open（阶段重组） | payable |
-| 神经科学-算法三角互证 | 结构先验提炼机制 | 中 | Semi-open | task-dependent |
+> **Extracted to Annex**: The detailed AGI program-themes taxonomy has been moved to [`../Architecture_Annex/02_AGI_Program_Themes_Interface.md`](../Architecture_Annex/02_AGI_Program_Themes_Interface.md#taxonomy-mapping-human-like-agi-program-themes--srt).
+>
+> **Owner summary**: This taxonomy maps external AGI program themes into SRT architecture language as a proxy/interface. It does not imply that engineering sophistication, continual learning, or neuroscience-inspired design is sufficient for SRT subjecthood, consciousness, or genuine `L_0 -> L_1` anchoring.
 
 ### 发展式持续学习窗口（Temporal-Development Continual-Learning Window）
 
