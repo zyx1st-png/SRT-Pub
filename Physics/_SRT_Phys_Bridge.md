@@ -6,6 +6,7 @@ layer: L1
 status: axiomatic_hybrid_v2
 epistemic_layer: bridge
 claim_mode: translation
+canonical: false
 dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 ---
 

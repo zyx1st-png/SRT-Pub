@@ -5,7 +5,8 @@ tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geome
 status: axiomatic_hybrid_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Ontology]
 ---
 
