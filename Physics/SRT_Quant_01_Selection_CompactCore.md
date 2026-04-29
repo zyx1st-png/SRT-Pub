@@ -5,7 +5,8 @@ tags: [Quantum, Selection, Measurement, Compact Core]
 status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-01, SRT-PHYS-BRIDGE]
 ---
 

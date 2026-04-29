@@ -5,7 +5,8 @@ tags: [Physics, Complexity, Emergence, Compact Core, Criticality]
 status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-07, SRT-PHYS-10-COMPACT-CORE]
 ---
 
