@@ -170,10 +170,16 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 ### AI
 
-- `AI/_SRT_AI_Bridge.md`
+- `AI/README.md`（directory entry; separates positioning, bridge, compact summaries, operational rubrics, split reading aids, and annex/interface material）
+- `AI/SRT_AI_Claim_Status.md`（claim-status audit for AI-domain claims; prevents `d_AI`, AI suffering, subjecthood, and architecture-state claims from being over-read）
 - `AI/AI_POSITIONING_NOTE.md`
+- `AI/_SRT_AI_Bridge.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
 - `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`（operational rubric; not a canonical consciousness definition source）
+- `AI/SRT_AI_Agency_Responsibility_Note.md`（operational agency / responsibility note）
+- `AI/Ontology_Annex/README.md`（historical AI ontology interface batches; claim status governed by AI claim-status + positioning note）
+- `AI/Ontology_Split/README.md`、`AI/Consciousness_Framework_Split/README.md`、`AI/Architecture_Split/README.md`（longform split reading aids; not independent authority layers）
 
 ### Neuroscience
 
@@ -221,6 +227,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - claim ladder → `Governance/SRT_CLAIM_LADDER.md`
 - claim-mode audit → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - harness tests → `Governance/SRT_HARNESS_TESTS.md`
+- AI split / annex pre-audit → `Operations/AI_Split_Annex_PreAudit_2026-04-29.md`
 
 ## Archives
 
@@ -241,12 +248,16 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 Physics 中优先级候选，不提升 canonical 权限
 - `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 Spirituality 中优先级候选，不提升 canonical 权限
 - `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 papers / publication 中优先级候选，不提升 canonical 权限
-- `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 root topic / FAQ 中优先级候选，不提升 canonical 权限
+- `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` 是 coverage audit 后续索引，只处理 root topic / FAQ 候选，不提升 canonical 权限
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md` 是相邻理论接口导航，不新增 P0/P1，不替代 FEP/IIT/GNW/量子/社会现实等既有正文
 - `Core/SRT_Core_24_Floor_Normativity_Verification.md` is a bridge-hardening supplement for floor replacement, dynamic normativity, and non-reductive verification; it does not outrank canonical anchors until promoted through claim governance.
 - `Core/SRT_Core_24_Index.md` is a retrieval index for Core 24 and does not define theory.
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` is the read-first Philosophy hardening map for soft points and additions; it is machine-readable and human-readable but does not define P0/P1 canonical terms.
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
+- `AI/README.md` 是 AI 目录入口，不定义 AI 意识、d-value 或 `Psi_f`
+- `AI/SRT_AI_Claim_Status.md` 是 AI 领域 claim-status 审计与 guardrail；它不替代 `_SRT_AI_Bridge.md` 或 canonical anchors，但用于防止整类 AI claim 被过度读成 P0/P1 定义
+- `AI/Ontology_Split/`、`AI/Consciousness_Framework_Split/`、`AI/Architecture_Split/` 是 longform reading aids，不新增权威层
+- `AI/Ontology_Annex/` 与未来可能的 `AI_Annex/` 是 interface / comparison 层，默认 `canonical: false`
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限
 - Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
