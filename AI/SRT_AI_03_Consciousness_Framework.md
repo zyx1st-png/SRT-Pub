@@ -56,12 +56,14 @@ dependency: [SRT-AI-02]
 - [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`](SRT_AI_03_Consciousness_Framework_CompactCore.md) — compact navigation entry (PH-SS hardened)
 - [`AI/SRT_AI_Consciousness_Evaluation_Rubric.md`](SRT_AI_Consciousness_Evaluation_Rubric.md) — operational S0-S6 rubric
+- [`AI/Consciousness_Framework_Split/README.md`](Consciousness_Framework_Split/README.md) — longform split index for interface-addition navigation
 - [`Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md) — subjecthood threshold interface
 
 ## Refactor Notes (PR-A: navigation-only)
 
 - Navigation-only update. No formulas changed. No theory content changed.
 - Part B external AI consciousness theory comparison sections are **PR-C candidates** for extraction to `AI_Annex/`. Must not be moved without a separate human-reviewed PR.
+- Existing `Consciousness_Framework_Split/` content should be audited and linked first before any new annex extraction PR.
 - The CompactCore file (`SRT_AI_03_Consciousness_Framework_CompactCore.md`) is PH-SS hardened; do not modify it.
 
 # Part A: Formal Axioms (形式化公理)

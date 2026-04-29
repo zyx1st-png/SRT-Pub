@@ -174,6 +174,10 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `AI/AI_POSITIONING_NOTE.md`
 - `AI/SRT_AI_01_Ontology_CompactCore.md`
 - `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+- `AI/Ontology_Split/README.md`（longform split index for AI ontology; navigation only, not a definition source）
+- `AI/Architecture_Split/README.md`（longform split index for AI architecture; navigation only, not a definition source）
+- `AI/Consciousness_Framework_Split/README.md`（longform split index for AI consciousness framework; navigation only, not a definition source）
+- `AI/Ontology_Annex/README.md`（bridge/interface annex index for AI ontology boundary batches; not a Core definition source）
 
 ### Neuroscience
 

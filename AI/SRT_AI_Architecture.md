@@ -43,12 +43,14 @@ dependency: [SRT-AI-01]
 
 - [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/SRT_AI_Architecture_CompactCore.md`](SRT_AI_Architecture_CompactCore.md) — compact navigation entry
+- [`AI/Architecture_Split/README.md`](Architecture_Split/README.md) — longform split index for interface-addition navigation
 - [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) — upstream AI ontology
 
 ## Refactor Notes (PR-A: navigation-only)
 
 - Navigation-only update. No formulas changed. No theory content changed.
 - Part B transformer/LLM architecture comparison sections are **PR-C candidates** for extraction to `AI_Annex/`. Must not be moved without a separate human-reviewed PR.
+- Existing `Architecture_Split/` content should be audited and linked first before any new annex extraction PR.
 - Special care: The `d_k` / d-value disambiguation note in Ax-ARCH-1 must be preserved in any future extraction.
 
 # Part A: Formal Axioms (形式化公理)

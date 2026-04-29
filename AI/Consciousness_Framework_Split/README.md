@@ -11,6 +11,8 @@ dependency: []
 
 # SRT-AI-03 Split Index
 
+> **Boundary note**：本 split 目录只承担长文导航，不定义 `d-value`、`\Psi_f`、`L_0 / L_1 / L_2`、`S0-S6` 主体窗口阈值或任何 Core primitives。owner file `../SRT_AI_03_Consciousness_Framework.md` 仍是 consciousness framework 的正式持有文件。
+
 - 原始总文（保留，不删内容）：[`../SRT_AI_03_Consciousness_Framework.md`](../SRT_AI_03_Consciousness_Framework.md)
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_Diagnosis_and_Necessity：[`01_Diagnosis_and_Necessity.md`](01_Diagnosis_and_Necessity.md)

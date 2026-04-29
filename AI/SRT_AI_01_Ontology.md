@@ -65,12 +65,15 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 - [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/SRT_AI_01_Ontology_CompactCore.md`](SRT_AI_01_Ontology_CompactCore.md) — compact navigation entry
 - [`AI/_SRT_AI_Bridge.md`](_SRT_AI_Bridge.md) — upstream bridge foundation
+- [`AI/Ontology_Split/README.md`](Ontology_Split/README.md) — longform split index for owner-file navigation
+- [`AI/Ontology_Annex/README.md`](Ontology_Annex/README.md) — bridge/interface annex index for boundary batches
 - [`AI/SRT_AI_03_Consciousness_Framework.md`](SRT_AI_03_Consciousness_Framework.md) — downstream consciousness framework
 
 ## Refactor Notes (PR-A: navigation-only)
 
 - Navigation-only update. No formulas changed. No theory content changed.
 - Part B LLM capability comparison sections are **PR-C candidates** for extraction to `AI_Annex/`. Must not be moved without a separate human-reviewed PR.
+- Existing `Ontology_Split/` and `Ontology_Annex/` directories should be audited and linked first before any new extraction PR.
 - The CompactCore file (`SRT_AI_01_Ontology_CompactCore.md`) must not be modified.
 
 # Part A: AI Domain Ontology Mappings (P3/P4)

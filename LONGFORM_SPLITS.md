@@ -25,9 +25,9 @@ dependency: [SRT-INDEX]
 - `Philosophy/Political_Philosophy_Split/README.md`
 
 ## AI
-- `AI/Ontology_Split/README.md`
-- `AI/Architecture_Split/README.md`
-- `AI/Consciousness_Framework_Split/README.md`
+- `AI/Ontology_Split/README.md`（owner-file navigation only; owner remains `AI/SRT_AI_01_Ontology.md`）
+- `AI/Architecture_Split/README.md`（owner-file navigation only; owner remains `AI/SRT_AI_Architecture.md`）
+- `AI/Consciousness_Framework_Split/README.md`（owner-file navigation only; owner remains `AI/SRT_AI_03_Consciousness_Framework.md`）
 
 ## Core
 - `Core/Dynamics_Scaling_Split/README.md`

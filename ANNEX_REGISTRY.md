@@ -25,7 +25,7 @@ dependency: [SRT-INDEX]
 - `Philosophy/Foundations_Annex/README.md`
 
 ## AI
-- `AI/Ontology_Annex/README.md`
+- `AI/Ontology_Annex/README.md`（bridge/interface annex index only; owner remains `AI/SRT_AI_01_Ontology.md`）
 
 ## Core
 - `Core/Dynamics_Scaling_Annex/README.md`
