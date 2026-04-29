@@ -11,6 +11,8 @@ dependency: []
 
 # SRT-AI-ARCH Split Index
 
+> **Reading-aid guardrail**：本 split 目录只承担长文导航与局部阅读，不创建新的定义权。claim status 以 [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)、[`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md) 与 [`../../Governance/SRT_CLAIM_LADDER.md`](../../Governance/SRT_CLAIM_LADDER.md) 为准。
+
 - 原始总文（保留，不删内容）：[`../SRT_AI_Architecture.md`](../SRT_AI_Architecture.md)
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_Transformer_and_Judgment：[`01_Transformer_and_Judgment.md`](01_Transformer_and_Judgment.md)
@@ -18,3 +20,4 @@ dependency: []
 - 03_AGI_Limits_and_Assistant_Vision：[`03_AGI_Limits_and_Assistant_Vision.md`](03_AGI_Limits_and_Assistant_Vision.md)
 - 04_Roadmap_and_Appendix：[`04_Roadmap_and_Appendix.md`](04_Roadmap_and_Appendix.md)
 - 05_Interface_Additions：[`05_Interface_Additions.md`](05_Interface_Additions.md)
+- Claim-status guardrail：[`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)
