@@ -1,3 +1,24 @@
+---
+id: SRT-PHYS-BRIDGE-INTEGRATION-HOOKS-QBOX-EARTH-ACCRETION
+type: bridge_integration_hooks
+tags: [Physics, QBox, Earth-Accretion, Integration-Hooks, Access-Limitation]
+status: active_hook_v1
+layer: L1
+epistemic_layer: bridge
+claim_mode: exploratory
+canonical: false
+date: 2026-04-29
+dependency:
+  - Physics/README.md
+  - Physics/SRT_Physics_Claim_Status.md
+  - Physics/_SRT_Phys_Bridge.md
+  - Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md
+  - Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md
+machine_summary: >
+  Lightweight integration hooks for QBox / hyper-decoherence and Earth accretion bridge notes.
+  Non-canonical exploratory layer; does not prove SRT, modify physics primitives, or promote QBox / accretion analogies.
+---
+
 # Integration Hooks for SRT Physics Bridge: QBox and Earth Accretion
 
 > Status: lightweight integration hook.  
