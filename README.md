@@ -7,7 +7,7 @@ SRT 是一个以“选择先于稳定存在”为核心命题的理论仓库。�
 - **一句话**：SRT 将现实理解为参数化选择在约束、代价与历史下形成的显现与收敛结构。
 - **三域**：`L0` = 潜在域，`L1` = 显现域，`L2` = 收敛域。
 - **核心量**：`\hat{G}_θ`、`d-value`、`Ψ_f`、`T_dir`。
-- **命题硬度**：核心命题按 P0-P5 分层；bridge / lab / companion 内容不自动等于 primitive axiom。
+- **命题硬度**：核心命题按 P0-P5 分层；bridge / lab / companion / annex 内容不自动等于 primitive axiom。
 - **仓库内容**：理论主文、跨域桥接、实验接口、治理协议、运行流水线。
 
 ```mermaid
@@ -49,6 +49,13 @@ SRT 现在默认用两根轴来读：
 2. [SRT_1H_Onboarding.md](SRT_1H_Onboarding.md)
 3. [SRT_Navigation_Map.md](SRT_Navigation_Map.md)
 
+如果你想看最新仓库结构治理状态：
+
+1. [ANNEX_REGISTRY.md](ANNEX_REGISTRY.md)
+2. [Operations/Closure_Index_2026-04-29.md](Operations/Closure_Index_2026-04-29.md)
+3. [Operations/Structural_Governance_Rollup_2026-04-29.md](Operations/Structural_Governance_Rollup_2026-04-29.md)
+4. [SRT_Glossary_Structural_Governance_Terms.md](SRT_Glossary_Structural_Governance_Terms.md)
+
 如果你想读中文主论证：
 
 1. [Core_Law/SRT_L0_Metaphysics.md](Core_Law/SRT_L0_Metaphysics.md)
@@ -68,9 +75,9 @@ SRT 现在默认用两根轴来读：
 
 如果你想看领域扩展：
 
-- AI → [AI/AI_POSITIONING_NOTE.md](AI/AI_POSITIONING_NOTE.md)、[AI/_SRT_AI_Bridge.md](AI/_SRT_AI_Bridge.md)
+- AI → [AI/README.md](AI/README.md)（先读入口、claim-status 与 annex guardrails）
 - Neuroscience → [Neuroscience/README.md](Neuroscience/README.md)（入口；canonical axioms 与 N1-N9 hardening draft 分流）
-- Physics → [Physics/_SRT_Phys_Bridge.md](Physics/_SRT_Phys_Bridge.md)
+- Physics → [Physics/README.md](Physics/README.md)（先读 claim-status；QBox / Earth annex 均为 `canonical: false`）
 - Philosophy → [Philosophy/_SRT_Phil_Axioms.md](Philosophy/_SRT_Phil_Axioms.md)、[Philosophy/SRT_Political_Philosophy_CompactCore.md](Philosophy/SRT_Political_Philosophy_CompactCore.md)
 - Spirituality → [Spirituality/_SRT_Spirit_Axioms.md](Spirituality/_SRT_Spirit_Axioms.md)
 
@@ -115,6 +122,8 @@ Spirituality 板块现在可以简化成三条入口：
 - `_SRT_INDEX.md`：机器索引
 - `SRT_Navigation_Map.md`：人类阅读地图
 - `_SRT_SYMBOL_TABLE.md`：符号规范锚点
+- `ANNEX_REGISTRY.md`：annex / interface 层注册表
+- `Operations/Closure_Index_2026-04-29.md`：最近结构治理闭环入口
 
 ## Runtime / Agent / AI support
 
@@ -124,6 +133,7 @@ Spirituality 板块现在可以简化成三条入口：
 - AI 最小骨架从 [SRT_AI_START.md](SRT_AI_START.md) 开始
 - 当前状态看 [STATUS.md](STATUS.md)
 - 机器入口看 [_SRT_INDEX.md](_SRT_INDEX.md)
+- 结构治理闭环看 [Operations/Closure_Index_2026-04-29.md](Operations/Closure_Index_2026-04-29.md)
 
 AI 支持层服务于读取、检索、压力测试与边界测试；它不是理论中心，也不替代 core/canonical 定义源。
 
@@ -137,3 +147,5 @@ AI 支持层服务于读取、检索、压力测试与边界测试；它不是�
 
 - [Governance/README.md](Governance/README.md)
 - [Operations/README.md](Operations/README.md)
+- [ANNEX_REGISTRY.md](ANNEX_REGISTRY.md)
+- [SRT_Glossary_Structural_Governance_Terms.md](SRT_Glossary_Structural_Governance_Terms.md)
