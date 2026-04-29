@@ -20,4 +20,6 @@ dependency: []
 - 03_AGI_Limits_and_Assistant_Vision：[`03_AGI_Limits_and_Assistant_Vision.md`](03_AGI_Limits_and_Assistant_Vision.md)
 - 04_Roadmap_and_Appendix：[`04_Roadmap_and_Appendix.md`](04_Roadmap_and_Appendix.md)
 - 05_Interface_Additions：[`05_Interface_Additions.md`](05_Interface_Additions.md)
+- Architecture Annex：[`../Architecture_Annex/README.md`](../Architecture_Annex/README.md)
+- Engineering Interfaces：[`../Architecture_Annex/01_Engineering_Interfaces.md`](../Architecture_Annex/01_Engineering_Interfaces.md)
 - Claim-status guardrail：[`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)

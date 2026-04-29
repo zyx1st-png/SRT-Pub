@@ -26,6 +26,7 @@ dependency: [SRT-INDEX]
 
 ## AI
 - `AI/Ontology_Annex/README.md`
+- `AI/Architecture_Annex/README.md`（architecture interface / engineering comparison layer; `canonical: false`; owner remains `AI/SRT_AI_Architecture.md`）
 
 ## Core
 - `Core/Dynamics_Scaling_Annex/README.md`
