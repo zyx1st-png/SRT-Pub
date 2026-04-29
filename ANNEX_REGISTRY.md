@@ -27,6 +27,7 @@ dependency: [SRT-INDEX]
 ## AI
 - `AI/Ontology_Annex/README.md`
 - `AI/Architecture_Annex/README.md`（architecture interface / engineering comparison layer; `canonical: false`; owner remains `AI/SRT_AI_Architecture.md`）
+- `AI/Consciousness_Annex/README.md`（consciousness interface / external-theory comparison layer; `canonical: false`; owner remains `AI/SRT_AI_03_Consciousness_Framework.md`）
 
 ## Core
 - `Core/Dynamics_Scaling_Annex/README.md`
