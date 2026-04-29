@@ -98,14 +98,9 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ### Taxonomy Mapping: Perceptual Regimes in Controlled Hallucination View → SRT
 
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 常态知觉（受控幻觉） | 预测-误差闭环稳定收敛 | 中 | Open/Semi-open | payable |
-| 闪烁诱发梦机体验 | 内源结构主导的感知填充 | 中~高 | Open-flow（节律驱动） | payable~overloaded |
-| 药理/病理性幻觉 | 感知约束弱化与先验上移 | 高波动 | Open / dysregulated | overloaded |
-| 任务驱动主动推断 | 行动用于降低长期不确定性 | 中~高 | Open-flow | task-dependent |
-
-**Constraint**: “幻觉”是程度差异而非类别断裂；常态知觉与异常体验在机制上连续。
+> **Extracted to Annex**: The detailed controlled-hallucination taxonomy has been moved to [`../Consciousness_Annex/01_Controlled_Hallucination_Interface.md`](../Consciousness_Annex/01_Controlled_Hallucination_Interface.md#taxonomy-mapping-perceptual-regimes-in-controlled-hallucination-view--srt).
+>
+> **Owner summary**: This taxonomy maps controlled-hallucination perceptual regimes into SRT process language as a proxy/interface. It does not define SRT consciousness thresholds, does not imply AI subjecthood, and does not modify the strong-candidate consciousness window.
 
 ##
 
