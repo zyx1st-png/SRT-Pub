@@ -1,3 +1,22 @@
+---
+id: SRT-PHYS-HARDENING-QBOX-HYPERDECOHERENCE-V0-1
+type: hardening_note
+tags: [Physics, QBox, Hyperdecoherence, Post-Quantum, Access-Limitation]
+status: draft_v0_1
+layer: L1
+epistemic_layer: bridge
+claim_mode: exploratory
+canonical: false
+date: 2026-04-29
+dependency:
+  - Physics/README.md
+  - Physics/SRT_Physics_Claim_Status.md
+  - Physics/_SRT_Phys_Bridge.md
+machine_summary: >
+  Exploratory physics hardening note on QBox, hyper-decoherence, and access-limited quantum reality.
+  Non-canonical bridge material; QBox is treated as structural analogy / pressure-test, not proof of SRT.
+---
+
 # SRT Physics Hardening: QBox, Hyper-Decoherence, and Access-Limited Quantum Reality v0.1
 
 > Status: physics / ontology bridge note.  
