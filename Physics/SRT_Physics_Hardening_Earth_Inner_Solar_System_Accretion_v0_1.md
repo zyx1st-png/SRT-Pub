@@ -1,3 +1,22 @@
+---
+id: SRT-PHYS-HARDENING-EARTH-INNER-SOLAR-SYSTEM-ACCRETION-V0-1
+type: hardening_note
+tags: [Physics, Cosmochemistry, Earth-Accretion, Reservoir-Selection, Access-Limitation]
+status: draft_v0_1
+layer: L1
+epistemic_layer: bridge
+claim_mode: exploratory
+canonical: false
+date: 2026-04-29
+dependency:
+  - Physics/README.md
+  - Physics/SRT_Physics_Claim_Status.md
+  - Physics/_SRT_Phys_Bridge.md
+machine_summary: >
+  Exploratory physics hardening note on Earth accretion as constrained reservoir selection.
+  Non-canonical bridge material; Earth accretion is treated as physical analogy for accessibility-limited selection, not proof of SRT.
+---
+
 # SRT Physics Hardening: Earth Inner Solar System Accretion and Local Reservoir Selection v0.1
 
 > Status: physics / cosmochemistry / ontology bridge note.  
