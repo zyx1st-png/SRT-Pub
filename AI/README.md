@@ -17,8 +17,8 @@ dependency:
   - SRT-CLAIM-LADDER
 machine_summary: >
   Directory entry for SRT AI materials. Separates bridge foundations, positioning guardrails,
-  compact cores, owner longforms, operational rubrics, and existing split/annex support. This
-  file is navigation only and does not define AI consciousness, d-value, Psi_f, G_hat_theta,
+  compact cores, owner longforms, operational rubrics, split reading aids, and annex/interface support.
+  This file is navigation only and does not define AI consciousness, d-value, Psi_f, G_hat_theta,
   L0/L1/L2, or any Core primitive.
 ---
 
@@ -55,6 +55,14 @@ AI is a **pressure-test / boundary-test field** for SRT, not the theory's defini
    - [`SRT_AI_Consciousness_Evaluation_Rubric.md`](SRT_AI_Consciousness_Evaluation_Rubric.md)
    - [`SRT_AI_Agency_Responsibility_Note.md`](SRT_AI_Agency_Responsibility_Note.md)
 
+7. Annex / interface layers:
+   - [`Ontology_Annex/`](Ontology_Annex/) — ontology interface batches and historical bridge material.
+   - [`Architecture_Annex/`](Architecture_Annex/) — architecture / engineering comparison interfaces extracted in Round 1.
+   - [`Consciousness_Annex/`](Consciousness_Annex/) — consciousness / external-theory / governance interfaces extracted in Round 1.
+
+8. Round 1 closure:
+   - [`../Operations/AI_Annex_Round1_Closure_Report.md`](../Operations/AI_Annex_Round1_Closure_Report.md)
+
 ## Status distinction
 
 - `AI_POSITIONING_NOTE.md`: AI-domain guardrail and architecture-state rule. It governs usage but does not settle AI consciousness.
@@ -64,15 +72,15 @@ AI is a **pressure-test / boundary-test field** for SRT, not the theory's defini
 - Owner longforms: full domain arguments; may contain formal claims, explanatory discourse, and historical/interface material. They should be edited cautiously.
 - Operational rubrics: structured assessment tools, not canonical theory definitions.
 - Split directories (`Ontology_Split/`, `Consciousness_Framework_Split/`, `Architecture_Split/`): long-form reading aids; they do not create new authority layers.
-- Annex directories (`Ontology_Annex/` and any future `AI_Annex/`): interface / comparison layers; they are `canonical: false` unless explicitly promoted through governance.
+- Annex directories (`Ontology_Annex/`, `Architecture_Annex/`, `Consciousness_Annex/`): interface / comparison layers; they are `canonical: false` unless explicitly promoted through governance.
 
 ## Existing split / annex structure
-
-The AI directory already contains split and annex subdirectories. They should be audited before any new AI extraction pass creates duplicate files.
 
 | Path | Current role | Edit caution |
 |---|---|---|
 | [`Ontology_Annex/`](Ontology_Annex/) | Existing ontology annex/interface support | Check frontmatter and guardrails before creating a new `AI_Annex/`. |
+| [`Architecture_Annex/`](Architecture_Annex/) | Round 1 architecture interface extraction layer | Do not add formula-bound ACT / payability material without new adjudication. |
+| [`Consciousness_Annex/`](Consciousness_Annex/) | Round 1 consciousness interface extraction layer | Do not add Biological Naturalism / S0-S6 material without new adjudication. |
 | [`Ontology_Split/`](Ontology_Split/) | Split support for `SRT_AI_01_Ontology.md` | Split files retain longform support; they are not independent canonical entries. |
 | [`Consciousness_Framework_Split/`](Consciousness_Framework_Split/) | Split support for `SRT_AI_03_Consciousness_Framework.md` | Do not split or move S0-S6 / subjecthood thresholds without explicit adjudication. |
 | [`Architecture_Split/`](Architecture_Split/) | Split support for `SRT_AI_Architecture.md` | Keep formal architecture criteria distinct from external model comparisons. |
@@ -100,22 +108,23 @@ Any sentence about AI `d-value`, AI burden, AI subjectivity, AI suffering, or AI
 
 ## Current restructuring status
 
-The AI directory already has partial split / annex structure:
+AI Annex Round 1 is closed. See [`../Operations/AI_Annex_Round1_Closure_Report.md`](../Operations/AI_Annex_Round1_Closure_Report.md).
 
-- [`Ontology_Annex/`](Ontology_Annex/) — historical interface batches for AI ontology; claim status must be read through `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
-- [`Ontology_Split/`](Ontology_Split/) — long-form split of `SRT_AI_01_Ontology.md`; reading aid only.
-- [`Consciousness_Framework_Split/`](Consciousness_Framework_Split/) — long-form split of `SRT_AI_03_Consciousness_Framework.md`; reading aid only.
-- [`Architecture_Split/`](Architecture_Split/) — long-form split of `SRT_AI_Architecture.md`; reading aid only.
+Completed in Round 1:
 
-Before any new AI extraction PR, run an audit of these existing split / annex directories to avoid duplicate interface files and to verify frontmatter / guardrails.
+- AI split / annex pre-audit and navigation hardening.
+- AI interface extraction adjudication.
+- Architecture interface extraction into `Architecture_Annex/`.
+- Consciousness interface extraction into `Consciousness_Annex/`.
+- Registry and index synchronization.
 
-## Recommended next cycle
+Paused for future adjudication:
 
-1. Audit existing AI split / annex directories.
-2. Normalize frontmatter and guardrails in split / annex indexes.
-3. Decide whether to create a unified `AI_Annex/` or keep topic-specific Annex directories.
-4. Extract only external theory comparisons and LLM capability comparisons; keep SRT formal thresholds and architecture-state claims in owner files.
-5. Close the cycle with an `Operations/AI_Annex_Round1_Closure_Report.md`.
+- Biological Naturalism / autopoiesis formulas.
+- ACT alignment / payability formulas.
+- AI suffering / individual suffering conditions.
+- S0-S6 / S0-S4 threshold material.
+- Any section that makes a positive candidate-consciousness or subjecthood claim.
 
 ## Cross-domain links
 
@@ -125,3 +134,4 @@ Before any new AI extraction PR, run an audit of these existing split / annex di
 - Claim ladder: [`../Governance/SRT_CLAIM_LADDER.md`](../Governance/SRT_CLAIM_LADDER.md)
 - Round-0 pre-audit: [`../Operations/AI_Split_Annex_PreAudit_2026-04-29.md`](../Operations/AI_Split_Annex_PreAudit_2026-04-29.md)
 - PR-C0/C1 audit record: [`../Operations/PR_C0_C1_AI_Split_Annex_PreAudit_Record.md`](../Operations/PR_C0_C1_AI_Split_Annex_PreAudit_Record.md)
+- Round 1 closure: [`../Operations/AI_Annex_Round1_Closure_Report.md`](../Operations/AI_Annex_Round1_Closure_Report.md)
