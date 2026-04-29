@@ -25,10 +25,11 @@ dependency:
 - Original architecture owner: [`../SRT_AI_Architecture.md`](../SRT_AI_Architecture.md)
 - Split source: [`../Architecture_Split/05_Interface_Additions.md`](../Architecture_Split/05_Interface_Additions.md)
 - Engineering interfaces: [`01_Engineering_Interfaces.md`](01_Engineering_Interfaces.md)
+- AGI program themes interface: [`02_AGI_Program_Themes_Interface.md`](02_AGI_Program_Themes_Interface.md)
 
 ## Guardrails
 
 - Architecture similarity is not subjecthood.
 - Engineering inspiration is not consciousness evidence.
-- Continual learning, internal steering, and concept control are architecture interfaces, not SRT core primitives.
+- Continual learning, internal steering, concept control, and AGI program themes are architecture interfaces, not SRT core primitives.
 - Any `d-value` or `Psi_f` reference in this annex is a proxy / translation aid, not a local definition.
