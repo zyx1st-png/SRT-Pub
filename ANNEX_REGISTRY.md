@@ -32,6 +32,7 @@ dependency: [SRT-INDEX]
 
 ## Physics
 - `Physics/QBox_Annex/README.md`（QBox / hyperdecoherence external interface layer; `canonical: false`; owner remains `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md`）
+- `Physics/Earth_Accretion_Annex/README.md`（Earth accretion / reservoir-selection external interface layer; `canonical: false`; owner remains `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md`）
 
 ## Core
 - `Core/Dynamics_Scaling_Annex/README.md`
