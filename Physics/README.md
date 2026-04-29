@@ -17,8 +17,8 @@ dependency:
   - SRT-PSIF-CANONICAL
 machine_summary: >
   Directory entry for SRT Physics materials. Separates bridge foundations, compact registry,
-  longform files, and claim-status guardrails. This file is navigation only and does not define
-  quantum collapse, gravity, time, d-value, Psi_f, or any physical law.
+  longform files, claim-status guardrails, and non-canonical interface annexes. This file is
+  navigation only and does not define quantum collapse, gravity, time, d-value, Psi_f, or any physical law.
 ---
 
 # Physics
@@ -58,6 +58,10 @@ Physics is a **high-risk bridge domain** for SRT. Physics-domain files may trans
    - [`SRT_Phys_07_Complex_Systems.md`](SRT_Phys_07_Complex_Systems.md)
    - [`SRT_Phys_08_Ontology_Ext.md`](SRT_Phys_08_Ontology_Ext.md)
 
+6. Non-canonical interface annexes:
+   - [`QBox_Annex/`](QBox_Annex/) — QBox / hyperdecoherence external interface layer.
+   - [`Earth_Accretion_Annex/`](Earth_Accretion_Annex/) — Earth accretion / reservoir-selection external interface layer.
+
 ## Claim-status guardrails
 
 - Collapse / measurement language is bridge language unless the claim is explicitly restricted to a collapse-family interpretation.
@@ -67,21 +71,24 @@ Physics is a **high-risk bridge domain** for SRT. Physics-domain files may trans
 - Physical constants tables are structural placement constraints, not derivations of exact values.
 - Holography / entanglement / d-value mappings are candidate analogies unless independently justified.
 - QBox / hyperdecoherence / post-quantum references must be treated as external interface pressure-tests, not proof of SRT.
+- Earth accretion / reservoir-selection references must be treated as physical analogy, not proof of SRT or evidence of agency / intention / concern.
 
 ## Current restructuring status
 
-Physics has not yet undergone a full split / annex restructuring round comparable to Neuroscience or AI.
+Physics P2 interface work is closed. See [`../Operations/Physics_P2_Interface_Closure_Report.md`](../Operations/Physics_P2_Interface_Closure_Report.md).
 
 Current safe state:
 
 - compact registry exists;
 - main bridge exists;
 - longform / compact counterparts exist;
-- claim-status audit now exists;
-- no Physics annex has been created in this pass;
-- no Physics source text has been moved.
+- claim-status audit exists;
+- Physics frontmatter / claim-mode normalization is complete;
+- QBox interface annex exists as `canonical: false`;
+- Earth accretion interface annex exists as `canonical: false`;
+- Physics source text has not been moved during P2 copy-to-annex work.
 
-Before any extraction, run a targeted adjudication for specific files / sections.
+Before any further extraction, run a new targeted adjudication for specific files / sections.
 
 ## Paused high-risk material
 
@@ -92,10 +99,13 @@ Do not extract or promote the following without separate adjudication:
 - discrete-time / Planck-time hypotheses;
 - gravity / `Psi_f` / Einstein-tensor analogies;
 - physical constants and Standard Model parameter claims;
-- QBox / hyperdecoherence / post-quantum reality claims;
 - cosmology / anthropic / multiverse claims;
-- anything that would read as a new physics prediction.
+- candidate empirical predictions;
+- anything that would read as a new physics prediction or proof-language claim.
 
 ## Operations
 
 - Pre-audit: [`../Operations/Physics_Split_Annex_PreAudit_2026-04-29.md`](../Operations/Physics_Split_Annex_PreAudit_2026-04-29.md)
+- P1 closure: [`../Operations/Physics_P1_Frontmatter_Normalization_Closure_Report.md`](../Operations/Physics_P1_Frontmatter_Normalization_Closure_Report.md)
+- P2 high-risk adjudication: [`../Operations/Physics_P2_High_Risk_Category_Adjudication.md`](../Operations/Physics_P2_High_Risk_Category_Adjudication.md)
+- P2 closure: [`../Operations/Physics_P2_Interface_Closure_Report.md`](../Operations/Physics_P2_Interface_Closure_Report.md)
