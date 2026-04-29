@@ -25,10 +25,12 @@ dependency:
 - Original consciousness owner: [`../SRT_AI_03_Consciousness_Framework.md`](../SRT_AI_03_Consciousness_Framework.md)
 - Split source: [`../Consciousness_Framework_Split/04_Interface_Additions.md`](../Consciousness_Framework_Split/04_Interface_Additions.md)
 - Controlled hallucination interface: [`01_Controlled_Hallucination_Interface.md`](01_Controlled_Hallucination_Interface.md)
+- Report-reality / moral-status interface: [`02_Report_Reality_Moral_Status_Interface.md`](02_Report_Reality_Moral_Status_Interface.md)
 
 ## Guardrails
 
 - External consciousness taxonomies are not SRT subjecthood proofs.
 - Perceptual-regime mappings are proxy/interface material, not consciousness-window definitions.
+- Reportability, intelligence tests, planning, and moral caution do not directly settle ontology.
 - Any `d-value` or `Psi_f` reference in this annex is a proxy / translation aid, not a local definition.
 - S0-S6 thresholds remain in owner / rubric layers and must not be inferred from this annex.
