@@ -19,4 +19,6 @@ dependency: []
 - 02_Architecture_and_Paths：[`02_Architecture_and_Paths.md`](02_Architecture_and_Paths.md)
 - 03_Ethics_Uncertainty_and_Appendix：[`03_Ethics_Uncertainty_and_Appendix.md`](03_Ethics_Uncertainty_and_Appendix.md)
 - 04_Interface_Additions：[`04_Interface_Additions.md`](04_Interface_Additions.md)
+- Consciousness Annex：[`../Consciousness_Annex/README.md`](../Consciousness_Annex/README.md)
+- Controlled Hallucination Interface：[`../Consciousness_Annex/01_Controlled_Hallucination_Interface.md`](../Consciousness_Annex/01_Controlled_Hallucination_Interface.md)
 - Claim-status guardrail：[`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)
