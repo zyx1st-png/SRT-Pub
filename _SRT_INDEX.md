@@ -104,6 +104,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - annex registry → `ANNEX_REGISTRY.md`
 - longform split registry → `LONGFORM_SPLITS.md`
 - glossary → `SRT_Glossary.md`
+- structural governance glossary → `SRT_Glossary_Structural_Governance_Terms.md`
 - manifest → `_SRT_MANIFEST.yaml`
 
 ## Canonical Theory Anchors
@@ -179,6 +180,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`（operational rubric; not a canonical consciousness definition source）
 - `AI/SRT_AI_Agency_Responsibility_Note.md`（operational agency / responsibility note）
 - `AI/Ontology_Annex/README.md`（historical AI ontology interface batches; claim status governed by AI claim-status + positioning note）
+- `AI/Architecture_Annex/README.md`（AI architecture interface/comparison annex; claim_mode: translation; canonical: false）
+- `AI/Consciousness_Annex/README.md`（AI consciousness interface/comparison annex; claim_mode: translation; canonical: false）
 - `AI/Ontology_Split/README.md`、`AI/Consciousness_Framework_Split/README.md`、`AI/Architecture_Split/README.md`（longform split reading aids; not independent authority layers）
 
 ### Neuroscience
@@ -193,9 +196,13 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 ### Physics
 
+- `Physics/README.md`（directory entry; separates canonical-facing material, bridge files, compact summaries, claim-status audit, and annex/interface material）
 - `Physics/_SRT_Phys_Bridge.md`
 - `Physics/PHYSICS_COMPACT_REGISTRY.md`
 - `Physics/SRT_Physics_Cosmology_CompactCore.md`
+- `Physics/SRT_Physics_Claim_Status.md`（claim-status audit for Physics-domain claims; prevents quantum, cosmology, and bridge claims from being over-read as P0/P1）
+- `Physics/QBox_Annex/README.md`（QBox / hyperdecoherence interface annex; claim_mode: translation; canonical: false）
+- `Physics/Earth_Accretion_Annex/README.md`（Earth accretion / reservoir-selection interface annex; claim_mode: translation; canonical: false）
 
 ### Philosophy
 
@@ -228,6 +235,8 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - claim-mode audit → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - harness tests → `Governance/SRT_HARNESS_TESTS.md`
 - AI split / annex pre-audit → `Operations/AI_Split_Annex_PreAudit_2026-04-29.md`
+- operations closure index → `Operations/Closure_Index_2026-04-29.md`
+- structural governance rollup → `Operations/Structural_Governance_Rollup_2026-04-29.md`
 
 ## Archives
 
@@ -260,4 +269,14 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `AI/Ontology_Annex/` 与未来可能的 `AI_Annex/` 是 interface / comparison 层，默认 `canonical: false`
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限
-- Spirituality 板块现采用“旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
+- Spirituality 板块现采用”旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
+- `ANNEX_REGISTRY.md` 是各 annex 批次的注册总表，不定义 canonical 术语，不提升 annex 内容权限
+- `SRT_Glossary_Structural_Governance_Terms.md` 是治理/结构操作层术语补充词汇表；`canonical: false`，不替代 `SRT_Glossary.md` 主体
+- `Operations/Closure_Index_2026-04-29.md` 是 2026-04-29 各 annex / Physics / AI 批次的 closure 汇总索引；`canonical: false`，仅运行层留痕
+- `Operations/Structural_Governance_Rollup_2026-04-29.md` 是结构治理 rollup 报告；`canonical: false`，仅运行层留痕
+- `AI/Architecture_Annex/README.md` 是 AI 架构接口/对比 annex 的批次索引；`canonical: false`，claim status 受 `AI/SRT_AI_Claim_Status.md` 和 `AI/AI_POSITIONING_NOTE.md` 管控
+- `AI/Consciousness_Annex/README.md` 是 AI 意识接口/对比 annex 的批次索引；`canonical: false`，claim status 受 `AI/SRT_AI_Claim_Status.md` 和 `AI/AI_POSITIONING_NOTE.md` 管控
+- `Physics/README.md` 是 Physics 目录入口，分离 canonical-facing 材料、bridge、compact summaries、claim-status audit 和 annex 层，不定义 P0/P1 物理命题
+- `Physics/SRT_Physics_Claim_Status.md` 是 Physics 领域 claim-status 审计与 guardrail；防止量子、宇宙学和 bridge 命题被过度读成 P0/P1
+- `Physics/QBox_Annex/README.md` 是 QBox / hyperdecoherence 接口 annex 的批次索引；`canonical: false`，claim_mode: translation
+- `Physics/Earth_Accretion_Annex/README.md` 是地球吸积 / reservoir-selection 接口 annex 的批次索引；`canonical: false`，claim_mode: translation
