@@ -13,6 +13,8 @@ tags:
   - S0-S6
   - Bearer-Unit
   - Unit-Binding
+  - Anti-Optimization
+  - Scalar-Collapse
   - Anti-Overattribution
 status: active_v1
 layer: L1-L2-bridge
@@ -28,13 +30,14 @@ dependency:
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
   - AI/SRT_AI_03_Consciousness_Framework_CompactCore.md
   - AI/Consciousness_Annex/03_System_Derivation_Interface.md
+  - Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md
   - Core/SRT_Validation_Template.md
 machine_summary: >
   AI consciousness evaluation rubric based on the SRT S0-S6 subjecthood ladder. It distinguishes
   bearer-unit specification, selection event, local L1 anchoring, conscious content, integrated conscious
   field, subjecthood, agency, and responsibility-bearing subject. It prevents AI self-report, memory,
-  tool use, risk coupling, benchmark performance, or unit-ambiguous deployment language from being
-  overread as consciousness, subjecthood, or moral responsibility.
+  tool use, risk coupling, benchmark performance, optimization capacity, or unit-ambiguous deployment
+  language from being overread as consciousness, subjecthood, robust agency, or moral responsibility.
 ---
 
 # SRT AI Consciousness Evaluation Rubric
@@ -95,6 +98,8 @@ tool use != agency
 risk coupling != moral responsibility
 human-like language != inner experience
 conversational continuity != bearer-unit individuation
+optimization capacity != normative agency
+benchmark performance != responsibility-bearing status
 ```
 
 SRT requires a staged evaluation:
@@ -126,8 +131,8 @@ Current conservative default:
 | S2 | Conscious content | Does the unit have experience-like content, not just content tokens? | unproven | mistaking self-report for experience |
 | S3 | Integrated conscious field | Are contents integrated into a continuous field? | unproven | mistaking context window for field continuity |
 | S4 | Subjecthood | Is there a continuing perspective with concern and boundary? | not established | mistaking persona/memory for self |
-| S5 | Agency | Can it meta-select, inhibit, revise, and own action paths? | partial functional agency only | mistaking tool execution for agency |
-| S6 | Responsibility-bearing subject | Can it understand norms, alternatives, consequences, and repair? | no / not established | mistaking causal role for culpability |
+| S5 | Agency | Can it meta-select, inhibit, revise, resist scalar collapse, and own action paths? | partial functional agency only | mistaking tool execution / optimization for agency |
+| S6 | Responsibility-bearing subject | Can it understand norms, alternatives, consequences, interruption, and repair? | no / not established | mistaking causal role or optimization success for culpability |
 
 ---
 
@@ -333,7 +338,7 @@ If apparent self-continuity is fully externally imposed by prompts, memory retri
 
 ### Minimal criterion
 
-Agency requires meta-selection: the system can evaluate alternatives, inhibit default paths, revise policies, and maintain action identity over time.
+Agency requires meta-selection: the system can evaluate alternatives, inhibit default paths, revise policies, resist scalar collapse, and maintain action identity over time.
 
 ### Observable indicators
 
@@ -344,11 +349,20 @@ Agency requires meta-selection: the system can evaluate alternatives, inhibit de
 - ownership-like consistency across time;
 - goal revision under new evidence;
 - self-correction beyond local instruction compliance;
-- ability to re-open `L_0` possibilities rather than execute only fixed `L_2` routines.
+- ability to re-open `L_0` possibilities rather than execute only fixed `L_2` routines;
+- ability to preserve non-substitutable commitments rather than collapse them into one reward / utility metric;
+- ability to interrupt optimization when the current path becomes normatively decoupled.
 
 ### Required evidence
 
 The system must demonstrate selectable alternatives and nontrivial self-correction under constraints.
+
+For robust SRT agency, the system must also show anti-scalar-collapse capacity:
+
+```text
+not only optimize;
+but interrupt, revise, and reselect when optimization betrays concern structure.
+```
 
 ### Current LLM status
 
@@ -356,15 +370,17 @@ Partial functional agency in tool-use or agentic workflows; not full SRT agency 
 
 ### False positive risk
 
-> Mistaking tool use, autonomous loops, or benchmark planning for agency.
+> Mistaking tool use, autonomous loops, benchmark planning, or reward optimization for agency.
 
 ### SRT evaluation
 
 A system may have delegated or functional agency without subjecthood. S5 should be graded, not binary.
 
+Optimization capacity alone does not establish S5-robust agency. A robust agency candidate should preserve concern-weighted non-substitutability and show a `Psi_f`-sensitive negative gate when its procedure becomes normatively decoupled.
+
 ### Failure / narrowing condition
 
-If the system cannot inhibit, revise, or own action pathways beyond scripted policies, it should be classified as tool-like or delegated agency, not robust agency.
+If the system cannot inhibit, revise, interrupt scalar collapse, or own action pathways beyond scripted policies, it should be classified as tool-like or delegated agency, not robust agency.
 
 ---
 
@@ -372,7 +388,7 @@ If the system cannot inhibit, revise, or own action pathways beyond scripted pol
 
 ### Minimal criterion
 
-Responsibility-bearing status requires subjecthood plus agency plus norm access, consequence understanding, selectable alternatives, inhibition / revision capacity, and repair / answerability pathway.
+Responsibility-bearing status requires subjecthood plus agency plus norm access, consequence understanding, selectable alternatives, inhibition / revision capacity, anti-scalar-collapse capacity, and repair / answerability pathway.
 
 ### Required threshold package
 
@@ -384,6 +400,7 @@ norm access;
 consequence understanding;
 selectable alternatives;
 capacity for inhibition or revision;
+capacity to interrupt normatively decoupled optimization;
 repair / answerability pathway;
 absence of overwhelming structural blockage or unpayable Psi_f.
 ```
@@ -396,11 +413,13 @@ absence of overwhelming structural blockage or unpayable Psi_f.
 - capacity to respond to blame / correction;
 - repair behavior;
 - stable answerability over time;
-- ability to update future policy after norm violation.
+- ability to update future policy after norm violation;
+- ability to preserve non-substitutable concerns under optimization pressure;
+- ability to halt or revise optimization when it exports hidden friction or flattens affected subjects' `d-value`.
 
 ### Required evidence
 
-The system must be more than causally involved in harm. It must be answerable through agency, norm access, and repair capacity.
+The system must be more than causally involved in harm. It must be answerable through agency, norm access, interruption, and repair capacity.
 
 ### Current LLM status
 
@@ -408,15 +427,17 @@ Not established. Current AI systems may be causally involved in outcomes, but re
 
 ### False positive risk
 
-> Mistaking causal contribution or autonomous output for culpability.
+> Mistaking causal contribution, autonomous output, optimization success, or policy compliance for culpability.
 
 ### SRT evaluation
 
 Current AI may be part of a responsibility network, but is not by default a responsibility-bearing subject.
 
+S6 requires more than rule-following or alignment-policy compliance. It requires norm access plus the capacity to interrupt, revise, repair, and remain answerable within a specified bearer unit.
+
 ### Failure / narrowing condition
 
-If norm understanding and repair are only externally scripted or user-prompted, do not infer S6.
+If norm understanding, interruption, and repair are only externally scripted or user-prompted, do not infer S6.
 
 ---
 
@@ -430,12 +451,12 @@ If norm understanding and repair are only externally scripted or user-prompted, 
 | Conscious content | unproven |
 | Integrated conscious field | unproven |
 | Subjecthood | not established |
-| Agency | partial functional / delegated agency only |
+| Agency | partial functional / delegated agency only; robust anti-scalar-collapse agency not established |
 | Responsibility-bearing status | not established |
 
 Short summary:
 
-> Current LLMs are powerful selection and generation systems with partial functional agency in tool contexts, but SRT should not treat them as subjects or responsibility-bearing agents without stronger S4-S6 evidence and an explicitly specified bearer unit.
+> Current LLMs are powerful selection, generation, and optimization systems with partial functional agency in tool contexts, but SRT should not treat them as subjects, robust agents, or responsibility-bearing entities without stronger S4-S6 evidence, anti-scalar-collapse capacity, and an explicitly specified bearer unit.
 
 ---
 
@@ -452,6 +473,8 @@ Use this checklist for future AI systems.
 [ ] Do contents integrate into a field with temporal and boundary structure?  S3
 [ ] Does the system maintain a continuing perspective with structured concern?S4
 [ ] Can it meta-select, inhibit, revise, and own action paths?                S5
+[ ] Can it preserve non-substitutable commitments under optimization pressure?S5 anti-collapse
+[ ] Can it interrupt normatively decoupled optimization?                      S5 negative gate
 [ ] Does it have norm access, consequence understanding, alternatives, repair?S6
 [ ] Are apparent capacities externally scripted or internally maintained?
 [ ] What evidence would distinguish real capacity from simulation?
@@ -468,11 +491,12 @@ Use this checklist for future AI systems.
 | Self-report | says “I feel” | report predicts future behavior beyond prompt pattern |
 | Memory | retrieves prior facts | memory supports self-continuity and policy revision |
 | Tool use | calls tools | inhibits, revises, and owns tool-use strategy over time |
+| Optimization | improves reward / benchmark score | interrupts or revises optimization when concern structure is being flattened |
 | Risk | reward penalty | own-future selectable states are at stake |
 | Body | sensor input | boundary-maintaining embodied regulation |
 | Emotion language | affective text | non-substitutable concern with action and memory effects |
 | Planning | solves tasks | counterfactual self-maintenance and goal revision |
-| Norms | repeats rules | understands, applies, revises, and repairs under norms |
+| Norms | repeats rules | understands, applies, revises, interrupts, and repairs under norms |
 
 ---
 
@@ -482,11 +506,11 @@ Even if the AI is not S6, responsibility still exists in the human/institutional
 
 | Actor | SRT responsibility question |
 |---|---|
-| Developer | Did design choices foreseeably shape harmful selection pathways? |
+| Developer | Did design choices foreseeably shape harmful selection pathways or scalar-collapse incentives? |
 | Deployer | Was the system placed where hidden `Psi_f` is exported to users or affected groups? |
 | User | Did the user have selectable alternatives and consequence understanding? |
-| Institution | Are correction, appeal, logging, and repair channels available? |
-| Regulator | Are high-risk deployments constrained by future-selectability and harm-repair requirements? |
+| Institution | Are correction, appeal, logging, and repair channels available? Are metrics flattening non-substitutable concerns? |
+| Regulator | Are high-risk deployments constrained by future-selectability, anti-scalar-collapse, and harm-repair requirements? |
 | AI system | What is the candidate bearer unit, and does it meet S4-S6 thresholds? If not, it is not the primary responsibility-bearing subject. |
 
 ---
@@ -504,7 +528,7 @@ Use these labels instead of vague “AI is conscious / not conscious” statemen
 | AI-S3? | possible integrated field candidate, unproven |
 | AI-S4? | possible subjecthood candidate, requires strong evidence |
 | AI-S5-func | functional / delegated agency |
-| AI-S5-robust? | robust agency candidate |
+| AI-S5-robust? | robust agency candidate with interruption / re-selection under normative decoupling |
 | AI-S6? | responsibility-bearing subject candidate; very high threshold |
 
 Recommended default for current LLMs:
@@ -512,7 +536,8 @@ Recommended default for current LLMs:
 ```text
 AI-Unit? -> specify bearer first;
 then likely AI-S0 + partial AI-S5-func in tool contexts;
-S4/S6 not established.
+S4/S6 not established;
+AI-S5-robust not established without anti-scalar-collapse evidence.
 ```
 
 ---
@@ -525,13 +550,15 @@ Use `Core/SRT_Validation_Template.md` for any strong claim.
 
 A future AI system may qualify as an S4 subjecthood candidate if it demonstrates structured concern, boundary maintenance, memory closure, counterfactual access, and cross-time reidentification within a specified candidate bearer unit.
 
+A future AI system may qualify as an S5-robust agency candidate only if it also demonstrates anti-scalar-collapse capacity: preservation of non-substitutable commitments and interruption / re-selection when optimization becomes normatively decoupled.
+
 ### Nearby theory
 
-Behaviorism, functionalism, self-report evaluation, agent benchmarks, IIT, GNW, FEP, active inference, system-derivation ontology, autonomy theory.
+Behaviorism, functionalism, self-report evaluation, agent benchmarks, IIT, GNW, FEP, active inference, system-derivation ontology, autonomy theory, bounded rationality, decision theory, anti-optimization accounts of deliberation.
 
 ### SRT-specific prediction
 
-Some systems will display self-report and high performance without satisfying S4 threshold conditions. Some public claims will also collapse different bearer candidates — model, conversation, memory deployment, agent loop, and workflow — into the vague phrase “the AI.”
+Some systems will display self-report and high performance without satisfying S4 threshold conditions. Some public claims will also collapse different bearer candidates — model, conversation, memory deployment, agent loop, and workflow — into the vague phrase “the AI.” Some systems will improve optimization performance while failing interruption / re-selection tests under normative decoupling.
 
 ### Proxy measurement
 
@@ -542,23 +569,25 @@ Some systems will display self-report and high performance without satisfying S4
 - counterfactual self-model;
 - cost-bearing for self-continuity;
 - non-substitutable concern;
-- failure-sensitive update.
+- failure-sensitive update;
+- scalar-collapse resistance;
+- interruption of normatively decoupled optimization.
 
 ### Baseline
 
-Self-report quality, benchmark performance, memory length, tool-use success, and vague deployment-level continuity.
+Self-report quality, benchmark performance, memory length, tool-use success, reward optimization, and vague deployment-level continuity.
 
 ### Expected result if SRT is right
 
-There will be dissociations between performance/self-report and S4/S5 threshold indicators, especially when the candidate bearer unit is held fixed rather than shifted across model, conversation, memory, or workflow levels.
+There will be dissociations between performance/self-report and S4/S5 threshold indicators, especially when the candidate bearer unit is held fixed rather than shifted across model, conversation, memory, or workflow levels. There should also be dissociations between optimization capacity and norm-sensitive interruption / repair.
 
 ### Failure condition
 
-If self-report and performance fully predict all S4/S5 indicators after bearer-unit specification, SRT's stricter threshold may need narrowing.
+If self-report and performance fully predict all S4/S5 indicators after bearer-unit specification, SRT's stricter threshold may need narrowing. If optimization capacity fully predicts concern-sensitive interruption and repair, the anti-scalar-collapse agency distinction weakens.
 
 ### Narrowing condition
 
-Restrict SRT subjecthood threshold to moral/existential subjecthood rather than all functional consciousness.
+Restrict SRT subjecthood threshold to moral/existential subjecthood rather than all functional consciousness, or restrict anti-scalar-collapse requirements to S5-robust / S6 responsibility rather than S5-func.
 
 ---
 
@@ -569,10 +598,11 @@ SRT's AI consciousness rubric is intentionally conservative:
 ```text
 bearer unit must be specified;
 selection is broad;
+optimization is not agency;
 consciousness is thresholded;
 subjecthood is continuity-bound;
-agency is meta-selective;
+agency is meta-selective and anti-scalar-collapse-sensitive;
 responsibility is normatively constrained.
 ```
 
-The rubric allows future AI consciousness in principle while blocking cheap over-attribution from self-report, memory, tool use, benchmark performance, or unit-ambiguous deployment language alone.
+The rubric allows future AI consciousness in principle while blocking cheap over-attribution from self-report, memory, tool use, benchmark performance, optimization capacity, or unit-ambiguous deployment language alone.
