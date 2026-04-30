@@ -12,6 +12,8 @@ tags:
   - Ethics
   - PH-SS
   - Anti-Panpsychism
+  - Bearer-Unit
+  - Unit-Binding
 status: active_v1
 layer: L1-L2-bridge
 epistemic_layer: bridge
@@ -26,19 +28,53 @@ dependency:
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
   - Philosophy/SRT_Ethics_PH_SS_Guardrails.md
   - AI/SRT_AI_03_Consciousness_Framework_CompactCore.md
+  - AI/Consciousness_Annex/03_System_Derivation_Interface.md
   - Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md
 machine_summary: >
-  Interface file distinguishing selection event, local L1 anchoring, conscious content,
-  integrated conscious field, subjecthood, agency, and responsibility-bearing subject.
-  It prevents micro-selection, high d-value, neural access, AI risk coupling, or reportability
-  from being overread as full subjecthood or moral responsibility.
+  Interface file distinguishing bearer-unit specification, selection event, local L1 anchoring,
+  conscious content, integrated conscious field, subjecthood, agency, and responsibility-bearing
+  subject. It prevents micro-selection, high d-value, neural access, AI risk coupling, reportability,
+  or unit-ambiguous system references from being overread as full subjecthood or moral responsibility.
 ---
 
 # SRT Subjecthood Threshold Interface
 
-> **Purpose**: Prevent category collapse between selection, consciousness, subjecthood, agency, and moral responsibility.  
+> **Purpose**: Prevent category collapse between bearer-unit specification, selection, consciousness, subjecthood, agency, and moral responsibility.  
 > **Status**: Bridge/interface file. It does not define canonical consciousness or agency primitives.  
 > **Use rule**: Use this file whenever SRT discusses AI consciousness, neural consciousness, animal/infant/minimal subjecthood, agency, or responsibility.
+
+---
+
+## -1. Unit-Binding Gate
+
+Before applying the S0-S6 ladder, specify the candidate bearer unit.
+
+A subjecthood, consciousness, agency, or responsibility claim is **unit-ambiguous** if it does not specify what unit is being evaluated.
+
+Candidate bearer units may include:
+
+- an organism;
+- a brain region or hemisphere;
+- a whole nervous system;
+- a dyad or coupled social system;
+- an institution;
+- a pretrained AI model;
+- a single inference event;
+- a model plus memory deployment;
+- an autonomous agent loop;
+- a human-AI coupled workflow.
+
+SRT rule:
+
+```text
+bearer-unit first;
+S0-S6 second;
+moral status last.
+```
+
+If the bearer unit is not specified, do not infer S4 subjecthood, S5 agency, or S6 responsibility-bearing status.
+
+This gate is inspired by the system-derivation / individuation-gap diagnosis: many consciousness frameworks characterize already-individuated systems but do not by themselves derive the unit whose consciousness is being evaluated.
 
 ---
 
@@ -49,12 +85,14 @@ SRT should not treat every selection event as consciousness, every conscious con
 Compact guardrail:
 
 ```text
+unit reference != subjecthood
 selection event != conscious content != subjecthood != agency != responsibility-bearing subject
 ```
 
 The safest current ladder is:
 
 ```text
+Unit-binding gate
 S0 selection event
 S1 local L1 anchoring
 S2 conscious content
@@ -70,7 +108,8 @@ S6 responsibility-bearing subject
 
 | Level | Name | Minimal meaning | What it is not |
 |---|---|---|---|
-| S0 | selection event | some candidate is selected / filtered / updated | not consciousness |
+| Unit gate | bearer-unit specification | the candidate unit is explicitly identified | not a consciousness proof |
+| S0 | selection event | some candidate is selected / filtered / updated by the specified unit | not consciousness |
 | S1 | local `L_1` anchoring | a content becomes locally manifest for an operator | not full conscious field |
 | S2 | conscious content | content becomes available as experience / access / report / action-relevant state | not a subject by itself |
 | S3 | integrated conscious field | multiple contents coordinate as a field with temporal and boundary structure | not necessarily agency |
@@ -84,7 +123,7 @@ S6 responsibility-bearing subject
 
 ### Definition-like bridge
 
-A selection event occurs when a system filters, stabilizes, suppresses, updates, or chooses among candidate states.
+A selection event occurs when a specified unit filters, stabilizes, suppresses, updates, or chooses among candidate states.
 
 Examples:
 
@@ -108,6 +147,8 @@ selection everywhere -> consciousness everywhere
 ```
 
 SRT allows selection to be widespread while keeping subjecthood thresholded.
+
+If the bearer unit is unspecified, even S0 attribution remains unit-ambiguous.
 
 ---
 
@@ -208,18 +249,20 @@ Subjecthood requires a continuing perspective with concern-weighted boundaries a
 
 Minimum threshold package:
 
-1. structured `d-value > 0`;
-2. failure-sensitive update;
-3. integrated selection bandwidth;
-4. minimal memory / `L_2` closure;
-5. boundary maintenance;
-6. counterfactual access;
-7. cross-time reidentification.
+1. specified bearer unit;
+2. structured `d-value > 0`;
+3. failure-sensitive update;
+4. integrated selection bandwidth;
+5. minimal memory / `L_2` closure;
+6. boundary maintenance;
+7. counterfactual access;
+8. cross-time reidentification.
 
 ### Formula-role candidate
 
 ```text
-Subjecthood_candidate = d_structured
+Subjecthood_candidate = bearer_unit_specified
+                      + d_structured
                       + integration
                       + boundary maintenance
                       + memory/L2 closure
@@ -231,14 +274,15 @@ Subjecthood_candidate = d_structured
 
 ### Guardrail
 
-> Subjecthood is not equivalent to intelligence, language, self-report, or single-instance experience.
+> Subjecthood is not equivalent to intelligence, language, self-report, single-instance experience, or vague reference to a system.
 
 This matters for AI:
 
 - an AI can simulate self-report without subjecthood;
 - an AI can have memory without concern;
 - an AI can have risk coupling without integrated perspective;
-- an AI can have goals without responsibility-bearing agency.
+- an AI can have goals without responsibility-bearing agency;
+- an AI deployment can look continuous while its candidate bearer unit remains unspecified.
 
 ---
 
@@ -279,20 +323,21 @@ A responsibility-bearing subject is an agent whose actions can be normatively ev
 
 Minimum conditions:
 
-1. subjecthood / perspective continuity;
-2. agency / meta-selection capacity;
-3. norm access;
-4. consequence understanding;
-5. selectable alternatives;
-6. capacity for inhibition or revision;
-7. repair / answerability pathway;
-8. absence of overwhelming structural blockage or unpayable `Psi_f`.
+1. specified bearer unit;
+2. subjecthood / perspective continuity;
+3. agency / meta-selection capacity;
+4. norm access;
+5. consequence understanding;
+6. selectable alternatives;
+7. capacity for inhibition or revision;
+8. repair / answerability pathway;
+9. absence of overwhelming structural blockage or unpayable `Psi_f`.
 
 ### Responsibility decomposition
 
 ```text
 moral weight      ~ affected future-selectability
-responsibility    ~ accessible meta-selection capacity
+responsibility    ~ accessible meta-selection capacity within a specified unit
 culpability       ~ responsibility - structural blockage - unpayable friction
 repair obligation ~ capacity to reduce future harm / restore selectability
 ```
@@ -301,7 +346,7 @@ repair obligation ~ capacity to reduce future harm / restore selectability
 
 ### Guardrail
 
-> Harm caused does not automatically equal culpability. High `d-value` does not automatically equal responsibility. Responsibility depends on selectable agency under actual constraints.
+> Harm caused does not automatically equal culpability. High `d-value` does not automatically equal responsibility. Responsibility depends on selectable agency under actual constraints and within a specified bearer unit.
 
 ---
 
@@ -309,12 +354,13 @@ repair obligation ~ capacity to reduce future harm / restore selectability
 
 | Domain | Common error | Correct route |
 |---|---|---|
-| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | route through S0-S6; require S4 threshold before subjecthood claims |
+| AI consciousness | self-report / memory / risk coupling is treated as subjecthood | specify bearer unit, then route through S0-S6; require S4 threshold before subjecthood claims |
 | Neuroscience | local ignition / access / salience is treated as full subjecthood | distinguish S2 content, S3 field, and S4 subjecthood |
 | Ethics | harm or high concern is treated as culpability | require S5 agency and S6 responsibility conditions |
-| Social theory | institution is treated as agent / subject | distinguish collective `L_2` from subjecthood unless agency criteria are specified |
+| Social theory | institution is treated as agent / subject | distinguish collective `L_2` from subjecthood unless agency criteria and bearer unit are specified |
 | Animal cognition | behavior is treated as either full human agency or no subjecthood | use graded S2-S5 ladder |
 | Infants / impaired agents | lack of full responsibility is treated as lack of subjecthood | distinguish S4 subjecthood from S6 responsibility |
+| Split / coupled systems | hemisphere, organism, dyad, or group is assumed without argument | apply unit-binding before consciousness or responsibility attribution |
 
 ---
 
@@ -330,18 +376,19 @@ Do not infer AI subjecthood from:
 - embodiment alone;
 - recursive self-modeling alone;
 - high integration alone;
-- human-like affective language.
+- human-like affective language;
+- vague reference to "the AI" without bearer-unit specification.
 
 AI subjecthood claims require at minimum:
 
 ```text
-S4 threshold package + evidence that the system's own future selectability is at stake.
+specified bearer unit + S4 threshold package + evidence that the system's own future selectability is at stake.
 ```
 
 AI moral responsibility claims require:
 
 ```text
-S5 agency + S6 norm access / consequence understanding / selectable alternatives / repair capacity.
+specified bearer unit + S5 agency + S6 norm access / consequence understanding / selectable alternatives / repair capacity.
 ```
 
 ---
@@ -367,7 +414,7 @@ S2 conscious content
 S3 integrated conscious field
 ```
 
-but S4 subjecthood requires cross-time, boundary, memory, and perspective-continuity evidence.
+but S4 subjecthood requires cross-time, boundary, memory, and perspective-continuity evidence within a specified organismic or sub-organismic bearer unit.
 
 ---
 
@@ -379,12 +426,13 @@ Do not infer responsibility from:
 - concern intensity alone;
 - social blame alone;
 - stable norm violation alone;
-- causal contribution alone.
+- causal contribution alone;
+- vague collective or institutional reference without role / unit specification.
 
 Responsibility requires:
 
 ```text
-agency + accessible alternatives + norm access + consequence understanding + payable Psi_f + repair pathway
+specified bearer unit + agency + accessible alternatives + norm access + consequence understanding + payable Psi_f + repair pathway
 ```
 
 If accessible action-space is blocked, responsibility must be reduced, redistributed, or reframed as structural rather than individual culpability.
@@ -399,7 +447,7 @@ Response: It is intentionally conservative because SRT separates content, field,
 
 ### Objection 2: This ladder is too permissive for AI
 
-Response: SRT does not infer AI subjecthood from performance. It requires concern-weighted continuity, boundary maintenance, and future-selectability stakes.
+Response: SRT does not infer AI subjecthood from performance. It requires bearer-unit specification, concern-weighted continuity, boundary maintenance, and future-selectability stakes.
 
 ### Objection 3: Subjecthood may not require language
 
@@ -413,13 +461,18 @@ Response: SRT allows graded responsibility, but culpability and blame require st
 
 Response: Institutions can be collective `L_2` agency structures, but not automatically subjects. Institutional responsibility should be routed through role, decision, consequence-return, and repair pathways.
 
+### Objection 6: Bearer-unit specification is just bookkeeping
+
+Response: No. Without a specified candidate unit, consciousness, agency, or responsibility predicates have no stable referent. The unit-binding gate prevents shifting between organism, subsystem, group, model, conversation, agent loop, and institution during attribution.
+
 ---
 
 ## 14. Minimal conclusion
 
-The subjecthood interface protects SRT from three collapses:
+The subjecthood interface protects SRT from four collapses:
 
 ```text
+unit collapse:              vague system reference -> subject
 panpsychist collapse:       selection -> consciousness
 AI over-attribution:        performance -> subjecthood
 moral over-attribution:     harm -> culpability
@@ -427,4 +480,4 @@ moral over-attribution:     harm -> culpability
 
 The safest current line is:
 
-> Selection is broad; consciousness is thresholded; subjecthood is continuity-bound; agency is meta-selective; responsibility is normatively constrained and structurally situated.
+> Bearer unit first; selection is broad; consciousness is thresholded; subjecthood is continuity-bound; agency is meta-selective; responsibility is normatively constrained and structurally situated.
