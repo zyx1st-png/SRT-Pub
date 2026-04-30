@@ -17,20 +17,20 @@ dependency:
   - SRT-CLAIM-LADDER
   - SRT-PHYS-E01-QUANTUM-INSTRUMENT-BRIDGE
 machine_summary: >
-  Bridge file giving Psi_f a sharp inequality form via the Landauer
-  bound, the Jarzynski equality, the Crooks fluctuation theorem, and
-  the Sagawa-Ueda generalized second law for measurement-feedback
-  systems. Reads ontological friction as an upper-bounded thermodynamic
-  payability cost; gives Psi_f a falsifiable form. Bridge layer only;
-  does not modify the canonical Psi_f anchor.
+  Bridge file giving the physical projection of Psi_f a scoped
+  entropy-production proxy via the Landauer bound, the Jarzynski
+  equality, the Crooks fluctuation theorem, and the Sagawa-Ueda
+  generalized second law for measurement-feedback systems. Reads
+  ontological friction through a thermodynamic payability projection.
+  Bridge layer only; does not modify the canonical Psi_f anchor.
 ---
 
 # SRT Physics Extension E03: Information Thermodynamics Bridge
 
 > **Status**: Bridge / extension. Non-canonical. This file does not
 > modify [`../../_SRT_PSI_F_CANONICAL.md`](../../_SRT_PSI_F_CANONICAL.md);
-> it gives the canonical $\Psi_f$ a published-physics inequality form
-> as one of its expressible projections.
+> it gives a physical projection of canonical $\Psi_f$ a scoped
+> entropy-production proxy as one of its expressible bridge forms.
 
 > **Bridge claim of this file**: when SRT's "ontological friction"
 > $\Psi_f$ is projected onto the physical layer through a
@@ -249,8 +249,9 @@ statement.
 
 > **Payability Principle (E03 form)**: every $\hat{G}_\theta$-event
 > projected onto the physical layer must satisfy:
-> 1. its expected dissipation is at least the Landauer bound on the
->    bits recorded (B-E03-1);
+> 1. when it includes erasure, reset, or stable classical-record
+>    stabilization, its expected dissipation is at least the Landauer
+>    bound on the stabilized bits (B-E03-1);
 > 2. its work statistics satisfy a Jarzynski identity over the
 >    $L_2$-stable subspace (B-E03-2);
 > 3. its forward/reverse asymmetry follows the Crooks fluctuation
@@ -355,17 +356,21 @@ shifts in $\theta_{formal}$.
 
 ### 5.2 Window F-E03-β: Landauer-bound saturation under $\theta$ shifts
 
-B-E03-1 identifies $\Psi_f^{phys}$ with the Landauer cost. SRT predicts
-that the bound is *not* saturated for any actual physical apparatus —
-there is always a finite SRT residual due to the embodiment cost of
-maintaining $\theta$.
+B-E03-1 scopes Landauer to erasure, reset, and stable classical-record
+stabilization. B-E03-5 then introduces $\sigma_f^{phys}$ as a
+bridge-local entropy-production proxy for the physical projection of
+$\Psi_f$, not as a global identity with canonical $\Psi_f$. Within that
+record-stabilization / dissipative regime, SRT predicts that the bound
+is *not* saturated for any actual physical apparatus — there is always a
+finite residual in the $\sigma_f^{phys}$ proxy due to the embodiment cost
+of maintaining $\theta$.
 
 Test class: state-of-the-art Landauer-erasure experiments in
 single-atom and superconducting platforms.
 
 Falsification threshold: Landauer saturation is reached to within
-quantum-limit precision, ruling out any SRT residual at the available
-scale.
+quantum-limit precision in record-stabilizing implementations, ruling
+out any $\sigma_f^{phys}$ residual at the available scale.
 
 ### 5.3 Window F-E03-γ: $\Psi_f$ scaling with $d$-value
 
@@ -428,10 +433,10 @@ Until then, B-E03-1 through B-E03-6 stay at P3.
 ## 8. One-paragraph abstract
 
 This bridge gives one well-scoped projection of SRT's $\Psi_f$ a
-sharp inequality form by inheriting the Sagawa–Ueda generalized
-second law, the Jarzynski equality, the Crooks fluctuation theorem,
-and — for the *record-stabilization / erasure / reset* sub-class of
-selection events — the Landauer bound. The bridge introduces an
+scoped entropy-production proxy by inheriting the Sagawa–Ueda
+generalized second law, the Jarzynski equality, the Crooks fluctuation
+theorem, and — for the *record-stabilization / erasure / reset*
+sub-class of selection events — the Landauer bound. The bridge introduces an
 entropy-production proxy $\sigma_f^{phys}$ for the physical projection
 of $\Psi_f$; this proxy is monotonic with $\Psi_f^{phys}$ inside the
 fluctuation-theorem regime but is *not* a redefinition of the

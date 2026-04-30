@@ -72,8 +72,8 @@ empirical victory.
 | File | Bridge target | Role |
 |---|---|---|
 | [`SRT_Phys_E01_Quantum_Instrument_Bridge.md`](SRT_Phys_E01_Quantum_Instrument_Bridge.md) | GKLS / Davies–Lewis quantum instruments / Stinespring dilation | Gives `\hat{G}_\theta` a textbook home as a CPTP-instrument family |
-| [`SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md`](SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md) | Giacomini–Castro-Ruiz–Brukner quantum reference frames (2019) | Formalizes `\theta_{boundary}` as a QRF transformation orbit |
-| [`SRT_Phys_E03_Information_Thermodynamics_Bridge.md`](SRT_Phys_E03_Information_Thermodynamics_Bridge.md) | Landauer / Jarzynski / Crooks / Sagawa–Ueda | Gives `\Psi_f` a sharp inequality form via fluctuation theorems |
+| [`SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md`](SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md) | Giacomini–Castro-Ruiz–Brukner quantum reference frames (2019) | Gives `\theta_{boundary}` a QRF-compatible projection |
+| [`SRT_Phys_E03_Information_Thermodynamics_Bridge.md`](SRT_Phys_E03_Information_Thermodynamics_Bridge.md) | Landauer / Jarzynski / Crooks / Sagawa–Ueda | Gives `\Psi_f` a scoped `\sigma_f^{phys}` proxy via fluctuation theorems |
 | [`SRT_Phys_E04_Relational_Time_Bridge.md`](SRT_Phys_E04_Relational_Time_Bridge.md) | Page–Wootters relational time + recent revivals | Provides a non-discrete relational-time bridge as an alternative read of L1 manifest time |
 | [`SRT_Phys_E05_Falsifiability_Program.md`](SRT_Phys_E05_Falsifiability_Program.md) | Lakatos research-programme schema | Hard core / protective belt and five near-term falsification windows |
 

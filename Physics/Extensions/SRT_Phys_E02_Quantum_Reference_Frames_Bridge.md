@@ -18,7 +18,7 @@ dependency:
 machine_summary: >
   Bridge file giving theta_boundary (Heisenberg cut) a textbook formal
   home in the Giacomini-Castro-Ruiz-Brukner quantum-reference-frame
-  formalism. Reads the Heisenberg cut as a QRF transformation orbit
+  formalism. Reads the Heisenberg cut through a QRF-compatible projection
   rather than as an arbitrary observer choice. Shows that in SRT, what
   looks like observer-relative non-classicality (mass superposition,
   entanglement) is the natural reading of the cut as a physical degree
@@ -41,9 +41,9 @@ machine_summary: >
 
 > **Conservative caveat**: SRT does not claim to predict the outcomes of
 > QRF experiments. It claims that the outcomes already published in QRF
-> literature are best read as *empirical confirmation that
-> $\theta_{boundary}$ is a physical parameter*, not a hidden variable
-> outside physics.
+> literature provide *support for physically structured frame choice under
+> QRF projection*, not evidence that $\theta_{boundary}$ is a literal hidden
+> variable outside physics.
 
 ---
 
@@ -103,7 +103,7 @@ E02 closes these gaps.
 
 ---
 
-## 2. The bridge: $\theta_{boundary}$ as a QRF orbit
+## 2. The bridge: $\theta_{boundary}$ as a QRF-compatible projection
 
 ### 2.1 QRF reminder (bridge-local)
 
@@ -161,14 +161,15 @@ two systems are entangled in the laboratory frame, choosing either of
 them as the QRF can render the other in a definite state.
 
 Bridge claim **B-E02-3**: SRT's "$L_1$ is the manifest layer relative to
-embodied selection" *is* this QRF result, written in SRT vocabulary.
-Manifest classicality is *frame-relative*. The SRT addition is the
-identification of the frame system with the embodied selector
-$\hat{G}_\theta$.
+embodied selection" is *structurally aligned with this QRF result under
+projection*, written in SRT vocabulary. Manifest classicality is
+*frame-relative*. The SRT addition is the bridge-level identification of
+the projected frame system with the embodied selector $\hat{G}_\theta$.
 
 This is a substantive bridge, not a redescription. It says: the
-"observer-dependence" in SRT is the same observer-dependence that QRF
-publications already establish, not a separate philosophical layer.
+"observer-dependence" in SRT is aligned with the observer-dependence that
+QRF publications already establish under projection, not a separate
+philosophical layer.
 
 ---
 
