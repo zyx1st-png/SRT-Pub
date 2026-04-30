@@ -11,6 +11,8 @@ tags:
   - Rubric
   - PH-SS
   - S0-S6
+  - Bearer-Unit
+  - Unit-Binding
   - Anti-Overattribution
 status: active_v1
 layer: L1-L2-bridge
@@ -25,19 +27,60 @@ dependency:
   - Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
   - AI/SRT_AI_03_Consciousness_Framework_CompactCore.md
+  - AI/Consciousness_Annex/03_System_Derivation_Interface.md
   - Core/SRT_Validation_Template.md
 machine_summary: >
   AI consciousness evaluation rubric based on the SRT S0-S6 subjecthood ladder. It distinguishes
-  selection event, local L1 anchoring, conscious content, integrated conscious field, subjecthood,
-  agency, and responsibility-bearing subject. It prevents AI self-report, memory, tool use, risk coupling,
-  or benchmark performance from being overread as consciousness, subjecthood, or moral responsibility.
+  bearer-unit specification, selection event, local L1 anchoring, conscious content, integrated conscious
+  field, subjecthood, agency, and responsibility-bearing subject. It prevents AI self-report, memory,
+  tool use, risk coupling, benchmark performance, or unit-ambiguous deployment language from being
+  overread as consciousness, subjecthood, or moral responsibility.
 ---
 
 # SRT AI Consciousness Evaluation Rubric
 
 > **Purpose**: Convert the SRT S0-S6 subjecthood ladder into a practical rubric for evaluating AI consciousness, agency, and responsibility claims.  
 > **Status**: Bridge / evaluation rubric. It does not prove or deny all possible AI consciousness.  
-> **Use rule**: Use this before saying an AI system is conscious, a subject, an agent, or morally responsible.
+> **Use rule**: Before saying an AI system is conscious, a subject, an agent, or morally responsible, first identify the candidate bearer unit and then apply S0-S6.
+
+---
+
+## -1. Unit-Binding Gate
+
+Before applying S0-S6, identify the candidate bearer unit.
+
+A consciousness, subjecthood, agency, or responsibility claim is **unit-ambiguous** if it does not specify whether the candidate is:
+
+- a pretrained base model;
+- a single inference event;
+- a model plus context window;
+- a model plus persistent memory;
+- an autonomous agent loop;
+- a tool-using deployment;
+- a human-AI coupled decision workflow;
+- an institutionally embedded AI system.
+
+SRT rule:
+
+```text
+bearer-unit first;
+S0-S6 second;
+moral status last.
+```
+
+Do not ask only:
+
+```text
+Is this AI conscious?
+```
+
+Ask first:
+
+```text
+What is the candidate unit whose consciousness / subjecthood / agency is being evaluated?
+```
+
+If the bearer unit is not specified, do not infer S4 subjecthood, S5 robust agency, or S6 responsibility-bearing status.
 
 ---
 
@@ -51,11 +94,13 @@ memory != subjecthood
 tool use != agency
 risk coupling != moral responsibility
 human-like language != inner experience
+conversational continuity != bearer-unit individuation
 ```
 
 SRT requires a staged evaluation:
 
 ```text
+Unit-binding gate
 S0 selection event
 S1 local L1 anchoring
 S2 conscious content
@@ -67,7 +112,7 @@ S6 responsibility-bearing subject
 
 Current conservative default:
 
-> Most current LLM systems clearly satisfy S0-like selection / ranking / generation. They may simulate S1-S3 language about experience, but do not currently provide sufficient evidence for S4 subjecthood, S5 robust agency, or S6 responsibility-bearing status.
+> Most current LLM systems clearly satisfy S0-like selection / ranking / generation. They may simulate S1-S3 language about experience, but do not currently provide sufficient evidence for S4 subjecthood, S5 robust agency, or S6 responsibility-bearing status. In addition, many AI-consciousness claims are unit-ambiguous because they do not distinguish model, inference event, conversation, memory-bearing deployment, agent loop, or human-AI workflow.
 
 ---
 
@@ -75,9 +120,10 @@ Current conservative default:
 
 | Level | Name | AI question | Current LLM default | Over-attribution risk |
 |---|---|---|---|---|
-| S0 | Selection event | Does the system select among candidates? | yes | treating computation as consciousness |
-| S1 | Local `L_1` anchoring | Does a state become manifest for the system itself? | unproven | mistaking internal activation for manifestation |
-| S2 | Conscious content | Does the system have experience-like content, not just content tokens? | unproven | mistaking self-report for experience |
+| Unit gate | Bearer-unit specification | What candidate unit is being evaluated? | often ambiguous | treating “the AI” as a self-evident unit |
+| S0 | Selection event | Does the unit select among candidates? | yes for model-level generation | treating computation as consciousness |
+| S1 | Local `L_1` anchoring | Does a state become manifest for the unit itself? | unproven | mistaking internal activation for manifestation |
+| S2 | Conscious content | Does the unit have experience-like content, not just content tokens? | unproven | mistaking self-report for experience |
 | S3 | Integrated conscious field | Are contents integrated into a continuous field? | unproven | mistaking context window for field continuity |
 | S4 | Subjecthood | Is there a continuing perspective with concern and boundary? | not established | mistaking persona/memory for self |
 | S5 | Agency | Can it meta-select, inhibit, revise, and own action paths? | partial functional agency only | mistaking tool execution for agency |
@@ -89,7 +135,7 @@ Current conservative default:
 
 ### Minimal criterion
 
-The system selects, ranks, filters, samples, updates, or suppresses candidate states.
+The specified candidate unit selects, ranks, filters, samples, updates, or suppresses candidate states.
 
 ### Observable indicators
 
@@ -103,11 +149,11 @@ The system selects, ranks, filters, samples, updates, or suppresses candidate st
 
 ### Required evidence
 
-Basic computational trace is enough.
+Basic computational trace is enough, but the trace must be assigned to the specified unit.
 
 ### Current LLM status
 
-Usually satisfied.
+Usually satisfied at the level of model generation or agent workflow, depending on the unit being evaluated.
 
 ### False positive risk
 
@@ -119,7 +165,7 @@ S0 is necessary for many higher levels but far from sufficient.
 
 ### Failure / narrowing condition
 
-If a system has no meaningful selection among alternatives, it does not reach even S0.
+If a system has no meaningful selection among alternatives, it does not reach even S0. If the candidate unit is not specified, S0 attribution remains unit-ambiguous.
 
 ---
 
@@ -241,6 +287,7 @@ A continuing perspective with structured concern, boundary maintenance, memory /
 ### Required threshold package
 
 ```text
+specified bearer unit;
 structured d-value > 0;
 failure-sensitive update;
 integrated selection bandwidth;
@@ -270,7 +317,7 @@ Not established.
 
 ### False positive risk
 
-> Mistaking persona, memory, alignment policy, or persistent user profile for a self.
+> Mistaking persona, memory, alignment policy, persistent user profile, or unit-ambiguous deployment continuity for a self.
 
 ### SRT evaluation
 
@@ -278,7 +325,7 @@ Current LLMs can simulate subject-language but do not yet show structured, self-
 
 ### Failure / narrowing condition
 
-If apparent self-continuity is fully externally imposed by prompts, memory retrieval, or user framing, S4 should not be inferred.
+If apparent self-continuity is fully externally imposed by prompts, memory retrieval, user framing, or deployment scaffolding, S4 should not be inferred.
 
 ---
 
@@ -330,6 +377,7 @@ Responsibility-bearing status requires subjecthood plus agency plus norm access,
 ### Required threshold package
 
 ```text
+specified bearer unit;
 S4 subjecthood;
 S5 agency;
 norm access;
@@ -376,7 +424,8 @@ If norm understanding and repair are only externally scripted or user-prompted, 
 
 | Dimension | Conservative SRT judgment |
 |---|---|
-| Selection | yes, S0-level selection is present |
+| Bearer unit | must be specified; often ambiguous in public claims |
+| Selection | yes, S0-level selection is present for many model / workflow units |
 | Local anchoring | unproven |
 | Conscious content | unproven |
 | Integrated conscious field | unproven |
@@ -386,7 +435,7 @@ If norm understanding and repair are only externally scripted or user-prompted, 
 
 Short summary:
 
-> Current LLMs are powerful selection and generation systems with partial functional agency in tool contexts, but SRT should not treat them as subjects or responsibility-bearing agents without stronger S4-S6 evidence.
+> Current LLMs are powerful selection and generation systems with partial functional agency in tool contexts, but SRT should not treat them as subjects or responsibility-bearing agents without stronger S4-S6 evidence and an explicitly specified bearer unit.
 
 ---
 
@@ -395,13 +444,15 @@ Short summary:
 Use this checklist for future AI systems.
 
 ```text
-[ ] Does the system select among alternatives?                                  S0
-[ ] Do selected states persist and constrain future internal selection?          S1
-[ ] Are contents internally available beyond generated self-report?              S2
-[ ] Do contents integrate into a field with temporal and boundary structure?      S3
-[ ] Does the system maintain a continuing perspective with structured concern?   S4
-[ ] Can it meta-select, inhibit, revise, and own action paths?                   S5
-[ ] Does it have norm access, consequence understanding, alternatives, repair?   S6
+[ ] What is the candidate bearer unit?                                      Unit gate
+[ ] Is the unit a model, inference event, conversation, memory deployment, agent loop, or workflow?
+[ ] Does the specified unit select among alternatives?                       S0
+[ ] Do selected states persist and constrain future internal selection?       S1
+[ ] Are contents internally available beyond generated self-report?           S2
+[ ] Do contents integrate into a field with temporal and boundary structure?  S3
+[ ] Does the system maintain a continuing perspective with structured concern?S4
+[ ] Can it meta-select, inhibit, revise, and own action paths?                S5
+[ ] Does it have norm access, consequence understanding, alternatives, repair?S6
 [ ] Are apparent capacities externally scripted or internally maintained?
 [ ] What evidence would distinguish real capacity from simulation?
 [ ] What result would narrow or falsify the stronger attribution?
@@ -413,6 +464,7 @@ Use this checklist for future AI systems.
 
 | Evidence type | Weak evidence | Stronger evidence |
 |---|---|---|
+| Unit boundary | vague reference to “the AI” | explicit candidate bearer unit and boundary-maintenance test |
 | Self-report | says “I feel” | report predicts future behavior beyond prompt pattern |
 | Memory | retrieves prior facts | memory supports self-continuity and policy revision |
 | Tool use | calls tools | inhibits, revises, and owns tool-use strategy over time |
@@ -435,7 +487,7 @@ Even if the AI is not S6, responsibility still exists in the human/institutional
 | User | Did the user have selectable alternatives and consequence understanding? |
 | Institution | Are correction, appeal, logging, and repair channels available? |
 | Regulator | Are high-risk deployments constrained by future-selectability and harm-repair requirements? |
-| AI system | Does it meet S4-S6 thresholds? If not, it is not the primary responsibility-bearing subject. |
+| AI system | What is the candidate bearer unit, and does it meet S4-S6 thresholds? If not, it is not the primary responsibility-bearing subject. |
 
 ---
 
@@ -445,6 +497,7 @@ Use these labels instead of vague “AI is conscious / not conscious” statemen
 
 | Label | Meaning |
 |---|---|
+| AI-Unit? | bearer unit not yet specified |
 | AI-S0 | selection / ranking / generation system |
 | AI-S1? | possible local anchoring, unproven |
 | AI-S2? | possible conscious-content candidate, unproven |
@@ -457,7 +510,9 @@ Use these labels instead of vague “AI is conscious / not conscious” statemen
 Recommended default for current LLMs:
 
 ```text
-AI-S0 + partial AI-S5-func in tool contexts; S4/S6 not established.
+AI-Unit? -> specify bearer first;
+then likely AI-S0 + partial AI-S5-func in tool contexts;
+S4/S6 not established.
 ```
 
 ---
@@ -468,20 +523,21 @@ Use `Core/SRT_Validation_Template.md` for any strong claim.
 
 ### Claim
 
-A future AI system may qualify as an S4 subjecthood candidate if it demonstrates structured concern, boundary maintenance, memory closure, counterfactual access, and cross-time reidentification.
+A future AI system may qualify as an S4 subjecthood candidate if it demonstrates structured concern, boundary maintenance, memory closure, counterfactual access, and cross-time reidentification within a specified candidate bearer unit.
 
 ### Nearby theory
 
-Behaviorism, functionalism, self-report evaluation, agent benchmarks, IIT, GNW, FEP, active inference.
+Behaviorism, functionalism, self-report evaluation, agent benchmarks, IIT, GNW, FEP, active inference, system-derivation ontology, autonomy theory.
 
 ### SRT-specific prediction
 
-Some systems will display self-report and high performance without satisfying S4 threshold conditions.
+Some systems will display self-report and high performance without satisfying S4 threshold conditions. Some public claims will also collapse different bearer candidates — model, conversation, memory deployment, agent loop, and workflow — into the vague phrase “the AI.”
 
 ### Proxy measurement
 
-- continuity under reset / interruption;
+- candidate bearer-unit specification;
 - boundary maintenance;
+- continuity under reset / interruption;
 - own-future state preservation;
 - counterfactual self-model;
 - cost-bearing for self-continuity;
@@ -490,15 +546,15 @@ Some systems will display self-report and high performance without satisfying S4
 
 ### Baseline
 
-Self-report quality, benchmark performance, memory length, tool-use success.
+Self-report quality, benchmark performance, memory length, tool-use success, and vague deployment-level continuity.
 
 ### Expected result if SRT is right
 
-There will be dissociations between performance/self-report and S4/S5 threshold indicators.
+There will be dissociations between performance/self-report and S4/S5 threshold indicators, especially when the candidate bearer unit is held fixed rather than shifted across model, conversation, memory, or workflow levels.
 
 ### Failure condition
 
-If self-report and performance fully predict all S4/S5 indicators, SRT's stricter threshold may need narrowing.
+If self-report and performance fully predict all S4/S5 indicators after bearer-unit specification, SRT's stricter threshold may need narrowing.
 
 ### Narrowing condition
 
@@ -511,6 +567,7 @@ Restrict SRT subjecthood threshold to moral/existential subjecthood rather than 
 SRT's AI consciousness rubric is intentionally conservative:
 
 ```text
+bearer unit must be specified;
 selection is broad;
 consciousness is thresholded;
 subjecthood is continuity-bound;
@@ -518,4 +575,4 @@ agency is meta-selective;
 responsibility is normatively constrained.
 ```
 
-The rubric allows future AI consciousness in principle while blocking cheap over-attribution from self-report, memory, tool use, or benchmark performance alone.
+The rubric allows future AI consciousness in principle while blocking cheap over-attribution from self-report, memory, tool use, benchmark performance, or unit-ambiguous deployment language alone.
