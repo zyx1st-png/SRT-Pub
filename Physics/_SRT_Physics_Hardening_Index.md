@@ -46,6 +46,7 @@ machine_summary: >
 | Quantum proper time / optical ion clocks | `Physics/patches/SRT_Phys_P05_Quantum_Proper_Time_Optical_Clocks_v0_1.md` | proper time as operational temporal record; quantum clock motion can reveal limits of classical timekeeping as an L2-effective regime | Medium-high quantum time bridge |
 | Accessible counterfactual closure | `Physics/patches/SRT_Phys_P06_Accessible_Counterfactual_Closure_v0_1.md` | reality as accessible counterfactual closure; defines `L0_accessible^phys(theta,t)`, `Psi_f^phys`, `d_phys`, low-marginal-readout objectivity, gravity as accessible-domain reshaping, Bell as a warning against projecting L1/L2 local-object grammar into L0, and P9-P23 as future hardening lines | Medium-high physics hardening bridge |
 | Closure ontology of physical objects | `Physics/patches/SRT_Phys_P07_Closure_Ontology_of_Physical_Objects_v0_1.md` | physical objects as stable bundles of closure records; measurement as closure participation; boundary as permeability profile; noise as unresolved finite-theta residual; vacuum as untriggered accessible excitation baseline; particles as repeatable closure modes | Medium-high physics hardening bridge |
+| Closure dynamics and physical law | `Physics/patches/SRT_Phys_P08_Closure_Dynamics_and_Physical_Law_v0_1.md` | causality as counterfactual-constraint propagation; scale as closure depth; phase transition as closure-protocol restructuring; symmetry as residual freedom after closure; locality as closure-propagation bandwidth constraint; path integrals as pre-closure counterfactual weighting; entropy increase as loss of reversible counterfactual access; physical laws as grammar of admissible closure | Medium-high physics hardening bridge |
 
 ---
 
@@ -216,6 +217,7 @@ Proposed additions:
 10. Accessible counterfactual closure as the upper-level bridge object connecting `L0_accessible^phys(theta,t)`, record stabilization, `Psi_f^phys`, closure-order time, low-marginal-readout objectivity, `d_phys`, gravity as accessible-domain reshaping, Bell/locality guardrails, and P9-P23 future hardening lines.
 11. Future decomposition into P07 closure ontology of physical objects, P08 closure dynamics and physical law, and P09 gravity / causal accessibility / horizon boundaries.
 12. Closure ontology of physical objects as the first decomposition of P06, covering record bundles, object identity as re-identification stability, measurement interfaces, boundary permeability, noise, vacuum, and particles.
+13. Closure dynamics and physical law as the second decomposition of P06, covering causal constraint propagation, closure depth, phase-transition-like protocol restructuring, symmetry, locality, path-integral weighting, entropy, and lawhood as admissible closure grammar.
 
 ---
 
