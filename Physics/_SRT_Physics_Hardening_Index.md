@@ -44,7 +44,7 @@ machine_summary: >
 | Cosmological principle / effective symmetry | `Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md` | homogeneity/isotropy as effective symmetry closure; FLRW/Lambda-CDM as L1/L2 modeling layer; anomalies as model-friction probes | Medium-priority methodology bridge |
 | Spontaneous collapse / classicality | `Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md` | physical localization of superposed geometries as an analogue of L0-to-L1 manifestation without external observers | Medium-high quantum cosmology bridge |
 | Quantum proper time / optical ion clocks | `Physics/patches/SRT_Phys_P05_Quantum_Proper_Time_Optical_Clocks_v0_1.md` | proper time as operational temporal record; quantum clock motion can reveal limits of classical timekeeping as an L2-effective regime | Medium-high quantum time bridge |
-| Accessible counterfactual closure | `Physics/patches/SRT_Phys_P06_Accessible_Counterfactual_Closure_v0_1.md` | reality as accessible counterfactual closure stabilized into low-friction readout structure; reframes Psi_f, time, objectivity, gravity, and d_phys under a unified bridge object | Medium-high physics hardening bridge |
+| Accessible counterfactual closure | `Physics/patches/SRT_Phys_P06_Accessible_Counterfactual_Closure_v0_1.md` | reality as accessible counterfactual closure; defines `L0_accessible^phys(theta,t)`, `Psi_f^phys`, `d_phys`, low-marginal-readout objectivity, gravity as accessible-domain reshaping, Bell as a warning against projecting L1/L2 local-object grammar into L0, and P9-P23 as future hardening lines | Medium-high physics hardening bridge |
 
 ---
 
@@ -212,7 +212,8 @@ Proposed additions:
 7. Effective symmetry as L1/L2 modeling compression
 8. Distinguish physical friction, information-geometric friction, neural friction, and existential concern
 9. Boundary cautions: analogy vs proof
-10. Accessible counterfactual closure as the upper-level bridge object connecting L0_accessible, record stabilization, Psi_f closure cost, closure-order time, low-marginal-readout objectivity, gravity as accessible-domain reshaping, and d_phys as future-consequence bandwidth.
+10. Accessible counterfactual closure as the upper-level bridge object connecting `L0_accessible^phys(theta,t)`, record stabilization, `Psi_f^phys`, closure-order time, low-marginal-readout objectivity, `d_phys`, gravity as accessible-domain reshaping, Bell/locality guardrails, and P9-P23 future hardening lines.
+11. Future decomposition into P07 closure ontology of physical objects, P08 closure dynamics and physical law, and P09 gravity / causal accessibility / horizon boundaries.
 
 ---
 
