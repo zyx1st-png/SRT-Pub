@@ -8,9 +8,11 @@
 
 | File | Role |
 |---|---|
+| `Physics/README.md` | physics directory entry / read order |
 | `Physics/_SRT_Phys_Bridge.md` | existing physics bridge document |
 | `Physics/SRT_Quant_00_Intro.md` | quantum-facing introductory material |
 | `Physics/SRT_Quant_01_Selection.md` | quantum selection-facing material |
+| `Physics/Extensions/README.md` | v0.1 Extensions batch index (E01-E05) |
 
 ---
 
@@ -23,6 +25,38 @@
 | Cosmological principle / effective symmetry | `Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md` | homogeneity/isotropy as effective symmetry closure; FLRW/Lambda-CDM as L1/L2 modeling layer; anomalies as model-friction probes | Medium-priority methodology bridge |
 | Spontaneous collapse / classicality | `Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md` | physical localization of superposed geometries as an analogue of L0-to-L1 manifestation without external observers | Medium-high quantum cosmology bridge |
 | Quantum proper time / optical ion clocks | `Physics/patches/SRT_Phys_P05_Quantum_Proper_Time_Optical_Clocks_v0_1.md` | proper time as operational temporal record; quantum clock motion can reveal limits of classical timekeeping as an L2-effective regime | Medium-high quantum time bridge |
+
+---
+
+## 1.5 Physics Extensions v0.1 (E01-E05)
+
+Located under `Physics/Extensions/`. All entries are bridge layer
+(`claim_mode: bridge`, `canonical_status: non_canonical`).
+
+| Extension | File | Core bridge | Hard-core line tested |
+|---|---|---|---|
+| E01 | `Physics/Extensions/SRT_Phys_E01_Quantum_Instrument_Bridge.md` | `\hat{G}_\theta` as Davies-Lewis quantum instrument family in CPTP / GKLS / Stinespring formalism | HC-1 (selection primitive); HC-2 (embodiment) |
+| E02 | `Physics/Extensions/SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md` | `\theta_{boundary}` as a Giacomini-Castro-Ruiz-Brukner QRF coset; Heisenberg cut as frame choice | HC-2 (embodiment); HC-5 (`L_2` as embodiment-invariant) |
+| E03 | `Physics/Extensions/SRT_Phys_E03_Information_Thermodynamics_Bridge.md` | `\Psi_f^{phys}` as Sagawa-Ueda residual; Landauer / Jarzynski / Crooks lower bounds | HC-3 (selection has cost) |
+| E04 | `Physics/Extensions/SRT_Phys_E04_Relational_Time_Bridge.md` | `t_{L_1}` as Page-Wootters conditional time; alternative to H-Phys-2 | HC-4 (manifest time relational); demotes PB-5 (H-Phys-2) |
+| E05 | `Physics/Extensions/SRT_Phys_E05_Falsifiability_Program.md` | Lakatos-style hard core / protective belt + 13 falsification windows | All HC lines |
+
+Use rule:
+
+```text
+Extensions remain bridge layer until promoted by:
+  1. canonical-registry update,
+  2. positive empirical handle on at least one falsification window,
+  3. symbol-table reconciliation.
+```
+
+Do not claim:
+
+```text
+Extensions prove SRT physics
+Page-Wootters / GKLS / QRF / Sagawa-Ueda are SRT-specific results
+H-Phys-2 has been deleted (it has been demoted to PB-5; still listed)
+```
 
 ---
 
@@ -165,13 +199,17 @@ Proposed additions:
 
 ```text
 Physics bridge core = existing files
+Physics directory README = added (this batch)
 QBox patch = added as separate bridge note
 Earth accretion patch = added as separate bridge note
 Cosmological principle patch = added as Pipeline 1 v2 patch note
 Spontaneous collapse patch = added as Pipeline 1 v2 patch note
 Quantum proper time patch = added as Pipeline 1 v2 patch note
+Extensions v0.1 (E01-E05) = added under Physics/Extensions/
 Index = current file
 Full synthesis = pending
 ```
 
-The safest current strategy is hook-level integration only, followed by later v0.2 synthesis.
+The safest current strategy is hook-level integration plus the
+Extensions batch, followed by later v0.2 synthesis once at least one
+falsification window in E05 returns a discriminator.

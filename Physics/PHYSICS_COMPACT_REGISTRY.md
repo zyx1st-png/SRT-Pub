@@ -46,6 +46,7 @@ dependency: [SRT-CANONICAL-REGISTRY]
 - compact core：最短稳定主线
 - long-form：完整推导、接口批次、历史沉积
 - bridge / registry：入口与回链层
+- extensions：v0.1 桥接批次（E01-E05），bridge layer，非 canonical
 
 ## Longform Counterparts
 - `SRT_Quant_00_Intro.md`
@@ -56,3 +57,13 @@ dependency: [SRT-CANONICAL-REGISTRY]
 - `SRT_Phys_10_Integration.md`
 - `SRT_Phys_07_Complex_Systems.md`
 - `SRT_Phys_08_Ontology_Ext.md`
+
+## Extensions v0.1 (Bridge Batch)
+
+> 见 [`Extensions/README.md`](Extensions/README.md)。所有条目均为 bridge layer，非 canonical，不替代任何 compact core 或 canonical anchor。
+
+- `Extensions/SRT_Phys_E01_Quantum_Instrument_Bridge.md` — `\hat{G}_\theta` 形式化（CPTP / GKLS / Stinespring）
+- `Extensions/SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md` — `\theta_{boundary}` 形式化（Giacomini-Castro-Ruiz-Brukner QRF）
+- `Extensions/SRT_Phys_E03_Information_Thermodynamics_Bridge.md` — `\Psi_f^{phys}` 不等式形式（Landauer / Jarzynski / Crooks / Sagawa-Ueda）
+- `Extensions/SRT_Phys_E04_Relational_Time_Bridge.md` — 显现时间的 Page-Wootters 关系时间桥（H-Phys-2 的非离散替代）
+- `Extensions/SRT_Phys_E05_Falsifiability_Program.md` — Lakatos 式硬核 / 保护带 + 十三个可证伪窗口
