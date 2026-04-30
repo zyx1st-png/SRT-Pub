@@ -1,21 +1,21 @@
 ---
 id: SRT-CORE-24-INDEX
 type: navigation_index
-tags: [SRT, Core 24, Index, Floor Replacement, Normativity, Verification, Retrieval, Discriminating Predictions]
-status: active_v3
+tags: [SRT, Core 24, Index, Floor Replacement, Normativity, Verification, Retrieval, Discriminating Predictions, Anti-Optimization, Scalar Collapse]
+status: active_v4
 layer: meta
 claim_mode: navigation
 epistemic_layer: meta
-dependency: [SRT-CORE-24-FLOOR-NORMATIVITY-VERIFICATION, SRT-CORE-24-CANONICAL-MERGE-DRAFT, SRT-CORE-24-DISCRIMINATING-PREDICTIONS, _SRT_CONTEXT_ROUTER, _SRT_DEEP_THEORY_MAP, _SRT_INDEX]
+dependency: [SRT-CORE-24-FLOOR-NORMATIVITY-VERIFICATION, SRT-CORE-24-CANONICAL-MERGE-DRAFT, SRT-CORE-24-DISCRIMINATING-PREDICTIONS, SRT-CORE-24-NORMATIVITY-ANTI-OPTIMIZATION-INTERFACE, _SRT_CONTEXT_ROUTER, _SRT_DEEP_THEORY_MAP, _SRT_INDEX]
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-30
 ---
 
 # SRT Core 24 Index — Floor Replacement / Normativity / Non-Reductive Verification
 
 > **Purpose**: Retrieval and integration index for Core 24.
 >
-> Core 24 began as a bridge-hardening supplement, but selected compact claims have now been integrated into the core framework through safe insertion points. It now also includes a discriminating-prediction module for falsification and adjacent-theory contrast.
+> Core 24 began as a bridge-hardening supplement, but selected compact claims have now been integrated into the core framework through safe insertion points. It now also includes discriminating-prediction and anti-optimization interface modules for falsification, scalar-collapse analysis, and adjacent-theory contrast.
 >
 > This file is an index and does not define theory.
 
@@ -26,6 +26,10 @@ updated: 2026-04-27
 ### Primary source
 
 - `Core/SRT_Core_24_Floor_Normativity_Verification.md`
+
+### Interface / hardening modules
+
+- `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md`
 
 ### Merge, prediction, and routing files
 
@@ -56,6 +60,10 @@ Retrieve Core 24 when the query mentions any of the following:
 - 选择先于存在的外部防御；
 - 目的、价值、道德、框架的动力学化；
 - normativity / normative constraints / 道德约束；
+- anti-optimization / 反优化；
+- scalar collapse / 标量坍缩；
+- deliberation vs optimization / 审议与优化；
+- apophatic responsiveness / negative gate / 否定性中断门；
 - d-value 与价值、关切、不可替代性；
 - 社会 d-structure / collective d-value；
 - 非还原验证；
@@ -64,13 +72,14 @@ Retrieve Core 24 when the query mentions any of the following:
 - SRT 如何避免玄学化或不可证伪；
 - reviewer-risk guardrails / 审稿风险护栏；
 - discriminating predictions / 区分性预测；
-- SRT 与 FEP / predictive processing / RL / IIT / GNW / social construction / habit theory 的可检验区分；
+- SRT 与 FEP / predictive processing / RL / IIT / GNW / social construction / habit theory / bounded rationality 的可检验区分；
 - non-monotonic Ψ_f；
 - non-substitutability beyond reward；
 - L₂ hardening triple signature；
 - framework-driven option visibility and admissibility；
 - moral norms as cross-subject L₂ boundaries；
-- AI agency under consequence return.
+- AI agency under consequence return;
+- AI optimization capacity vs normative agency.
 
 ---
 
@@ -110,6 +119,18 @@ Retrieve Core 24 when the query mentions any of the following:
   - P24-5: moral norms as cross-subject `L_2` boundaries.
   - P24-6: AI optimization without binding `Ψ_f` fails consequence-return agency tests.
 
+### Phase 4 — Anti-Optimization / Scalar-Collapse Interface
+
+- [x] `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md` created / indexed.
+- [x] Bridge mapping added:
+  - incommensurability -> `d-value` non-substitutability.
+  - apophatic responsiveness -> `Psi_f`-sensitive negative gate.
+  - optimization residue -> scalar collapse.
+- [x] AI agency guardrail added at interface level:
+  - high optimization capacity != normative agency.
+  - benchmark performance != S5/S6.
+  - robust agency requires interruption / re-selection under normative decoupling.
+
 ### Branch / merge note
 
 Some long-file insertions were reported as completed by external code-agent runs and may reside on feature branches before merge to `main`. If a file is not visible from `main`, check the relevant branch or merge PR before treating the integration as mainline-complete.
@@ -127,6 +148,7 @@ Some long-file insertions were reported as completed by external code-agent runs
 | Value as non-substitutability | `_SRT_D_VALUE_CANONICAL.md` | reported integrated | Does not replace canonical `d-value`; reward / preference / salience remain non-definitional. |
 | Ψ_f as inferred selection friction | `_SRT_PSI_F_CANONICAL.md` | reported integrated | Does not identify `Ψ_f` with task difficulty, pain, effort, energy, Fisher, or prediction error. |
 | Discriminating predictions | `Core/SRT_Core_24_Discriminating_Predictions.md` | drafted | Predictions are pressure tests, not proof of SRT. |
+| Normativity as resistance to scalar collapse | `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md` | indexed bridge interface | Does not define `d-value` or `Psi_f`; maps adjacent theory into SRT guardrails. |
 
 ---
 
@@ -138,6 +160,7 @@ When the question asks whether SRT makes distinctive predictions, retrieve:
 
 - `Core/SRT_Core_24_Discriminating_Predictions.md`
 - `Core/SRT_Core_24_Canonical_Merge_Draft.md`
+- `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md`
 - `SRT_EXP_MEASURE_MAP.md`
 - `Core/SRT_OPEN_TENSIONS.md`
 
@@ -149,12 +172,14 @@ When the question asks whether SRT makes distinctive predictions, retrieve:
 - `Philosophy/SRT_FEP_Comparison.md`
 - `Bridge/SRT_Adjacent_Theory_Interface_Index.md`
 - `AI/SRT_AI_03_Consciousness_Framework.md`
+- `AI/SRT_AI_Consciousness_Evaluation_Rubric.md`
 
 ### Boundary
 
 - Do not use the predictions as proof that SRT is correct.
 - Use them as discriminating pressure tests.
 - Each prediction should specify adjacent-theory contrast, proxy class, and failure condition.
+- Use anti-optimization claims as scalar-collapse guardrails, not as proof that all optimization is non-normative.
 
 ---
 
@@ -166,7 +191,7 @@ However, Core 24 still should not be cited as a completed theorem package.
 
 Correct current wording:
 
-> Core 24 has been partially integrated into canonical and canonical-adjacent files as a framing, operational, validation, and discriminating-prediction layer. Its strongest thesis is that SRT's explanatory power comes from selection-first floor replacement, while its scientific credibility depends on structural, convergent, comparative, and falsifiable validation.
+> Core 24 has been partially integrated into canonical and canonical-adjacent files as a framing, operational, validation, discriminating-prediction, and anti-optimization layer. Its strongest thesis is that SRT's explanatory power comes from selection-first floor replacement, while its scientific credibility depends on structural, convergent, comparative, falsifiable, and scalar-collapse-sensitive validation.
 
 Avoid:
 
@@ -179,6 +204,10 @@ Avoid:
 Avoid:
 
 > Core 24 places SRT beyond measurement.
+
+Avoid:
+
+> Core 24 proves optimization is always bad or non-normative.
 
 ---
 
@@ -206,13 +235,17 @@ The following lines are candidates for future higher-level promotion if supporte
 
 > Core 24 claims should be treated as scientifically strengthened only when they generate discriminating predictions not equally entailed by adjacent theories.
 
+### Candidate 6 — Anti-Optimization Guardrail
+
+> Normativity is not richer optimization; it is the maintenance of concern-weighted non-substitutability under pressure toward scalar collapse.
+
 ---
 
 ## 8. Guardrail
 
 Core 24 should now be treated as:
 
-> a partially integrated bridge-hardening, canonical-framing, and discriminating-prediction layer.
+> a partially integrated bridge-hardening, canonical-framing, discriminating-prediction, and anti-optimization layer.
 
 It should not yet be treated as:
 
@@ -227,4 +260,5 @@ The next hardening task is protocolization:
 - Convert P24-3 into a concrete lab protocol.
 - Convert P24-1 into a machine-learning regime-shift toy model.
 - Convert P24-2 into a behavioral task distinguishing reward from non-substitutability.
+- Convert scalar-collapse / negative-gate claims into an AI agency evaluation protocol.
 - Add the selected protocol to `SRT_EXP_TEMPLATE.md` or a new `Core/SRT_Core_24_Protocol_Pilot.md` file.
