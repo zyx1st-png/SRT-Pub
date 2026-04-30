@@ -83,6 +83,7 @@ back to canonical anchors.
    - [`_SRT_Physics_Hardening_Index.md`](_SRT_Physics_Hardening_Index.md)
    - [`patches/`](patches/)
    - [`hooks/`](hooks/)
+   - P06 Accessible Counterfactual Closure reframes SRT physics around accessible possibility, irreversible fact formation, and low-friction objective readout. It is non-canonical and must be read through [`SRT_Physics_Claim_Status.md`](SRT_Physics_Claim_Status.md).
 
 8. Non-canonical Extensions v0.1:
    - [`Extensions/README.md`](Extensions/README.md) — quantum-instrument, QRF, information-thermodynamics, relational-time, and falsifiability bridge batch.
