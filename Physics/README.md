@@ -84,6 +84,7 @@ back to canonical anchors.
    - [`patches/`](patches/)
    - [`hooks/`](hooks/)
    - [`patches/SRT_Phys_P06_Accessible_Counterfactual_Closure_v0_1.md`](patches/SRT_Phys_P06_Accessible_Counterfactual_Closure_v0_1.md) — non-canonical hardening patch reframing SRT physics around `L0_accessible^phys(theta,t)`, counterfactual closure, stable records, low marginal readout friction, `Psi_f^phys`, `d_phys`, gravity-as-accessibility reshaping, Bell/local-object guardrails, and P9-P23 candidate future hardening lines. Read P06 only through `SRT_Physics_Claim_Status.md`; it is not a new established physics theory and does not redefine canonical primitives.
+   - [`patches/SRT_Phys_P07_Closure_Ontology_of_Physical_Objects_v0_1.md`](patches/SRT_Phys_P07_Closure_Ontology_of_Physical_Objects_v0_1.md) — non-canonical hardening patch extending P06 into physical object formation: stable closure-record bundles, low-cost re-identification, measurement as closure participation, boundary permeability, noise, vacuum, and particles. Read P07 only through `SRT_Physics_Claim_Status.md`; it is not a replacement for QFT, thermodynamics, particle physics, or measurement theory.
 
 8. Non-canonical Extensions v0.1:
    - [`Extensions/README.md`](Extensions/README.md) — quantum-instrument, QRF, information-thermodynamics, relational-time, and falsifiability bridge batch.
