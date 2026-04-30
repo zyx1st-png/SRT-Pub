@@ -5,7 +5,8 @@ tags: [Quantum Selection, Measurement Theory, Probability Flow, Non-Locality, Hy
 status: axiomatic_hybrid_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT-PHYS-BRIDGE, SRT-QUANT-00]
 ---
 

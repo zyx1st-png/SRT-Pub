@@ -1,3 +1,22 @@
+---
+id: SRT-PHYSICS-HARDENING-INDEX
+type: index
+tags: [Physics, Hardening, Index, QBox, Cosmology, Spontaneous-Collapse, Quantum-Time]
+status: active_v1
+layer: meta
+epistemic_layer: bridge
+claim_mode: navigation
+canonical: false
+date: 2026-04-29
+dependency:
+  - Physics/README.md
+  - Physics/SRT_Physics_Claim_Status.md
+  - Physics/_SRT_Phys_Bridge.md
+machine_summary: >
+  Navigation index for physics-facing bridge hypotheses, ontology analogues, and external-material patches.
+  Non-canonical index; indexed files remain bridge/hardening notes unless explicitly promoted through claim governance.
+---
+
 # SRT Physics Hardening Index
 
 > Status: domain navigation index.  

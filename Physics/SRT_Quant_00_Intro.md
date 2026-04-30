@@ -5,7 +5,8 @@ tags: [Quantum Mechanics, Measurement, History Construction, Interpretations, Hy
 status: axiomatic_hybrid_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 ---
 

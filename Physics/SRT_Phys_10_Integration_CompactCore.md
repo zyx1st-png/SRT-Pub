@@ -5,7 +5,8 @@ tags: [Physics, Integration, Compact Core, Quantum Darwinism, Penrose]
 status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-10, SRT-PHYS-09-COMPACT-CORE, SRT-PHYS-COSMO-COMPACT-CORE]
 ---
 

@@ -6,12 +6,19 @@ status: axiomatic_hybrid_v1
 layer: meta
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
+dependency:
+  - SRT-REF-AXIOMS
+  - SRT-REF-DYNAMICS
+  - SRT-GLOSSARY-STRUCTURAL-GOVERNANCE-TERMS
+  - SRT-ANNEX-REGISTRY
+  - SRT-OPS-CLOSURE-INDEX-2026-04-29
 ---
 
 # SRT Symbol Table & Definition Registry
 
 > **Purpose**: Canonical symbol registry for cross-domain writing and AI parsing.
+>
+> **Governance boundary**: Terms such as `interface_annex`, `copy-to-annex`, `owner-bound`, `claim_mode`, and `canonical:false` are structural governance vocabulary (see `SRT_Glossary_Structural_Governance_Terms.md`); they are not canonical mathematical symbols and do not appear in this table's symbol rows. Non-canonical annexes and Operations records may reference symbols defined here but must not redefine them.
 
 | Symbol | LaTeX | Name | Atomic Definition | Dimensions/Units | Scope / Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -99,6 +106,8 @@ dependency: [SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 10. **Canonical status split**：`governance-canonical` means repo-wide stabilized usage; `theory-canonical` means core-derived or core-priority definition; `operational proxy` means measurable working readout; `bridge hypothesis` means cross-domain candidate mapping. Do not infer theory-canonical status merely from a symbol-table default, filename, or historical label.
 11. **Ψ_f / Fisher split**：do not write `\Psi_f \equiv g_F` as a literal identity. Use `\delta\Psi_f^{geom}=\frac12 d\theta^\top g_F d\theta+O(\|d\theta\|^3)` for local cost, or a path functional such as `\Psi_f^{geom}[\gamma]=\int_\gamma\sqrt{g^F_{ij}\dot\theta^i\dot\theta^j}\,dt` when the statistical-manifold projection is valid.
 12. **σ namespace split** (2026-04-24 L1 round, governance-canonical per `Core_Law/SRT_L1_Hardening_Notes.md §1`): bare `σ` defaults to the **main-equation state field** (`Core/SRT_Core_22_Equations.md`); `σ_{sr}` is the self-reference ratio (with subscripts `sub / self / health / coll`); `σ_j` is an anchoring sub-target (`SRT_Core_14 T-Scale-Rhythm-5`). These are three different objects. Any file using σ in a sense other than the main-equation state field must either (a) use the `σ_{sr}` / `σ_j` form explicitly, or (b) carry a file-level symbol namespace note binding bare `σ` to the intended meaning per this rule. Historical files predating 2026-04-24 where bare `σ` means self-reference ratio are being progressively rewritten; in the meantime, read them as `σ_{sr}` when the context is Individuation / Occlusion Dynamics / Suffering / L1 Formalism §2 / Collective Selection §4.
+13. **Governance terms are not theory symbols**: `interface_annex`, `copy-to-annex`, `owner-bound`, `claim_mode`, `canonical:false`, and related structural-governance vocabulary (defined in `SRT_Glossary_Structural_Governance_Terms.md`) are repository-organisation terms, not canonical mathematical or phenomenological symbols. Do not add them as rows to this table or treat them as carrying theory-canonical status.
+14. **Annex and Operations reference scope**: Non-canonical annex files (`AI/Architecture_Annex/`, `AI/Consciousness_Annex/`, `Physics/QBox_Annex/`, `Physics/Earth_Accretion_Annex/`, etc.) and Operations records (e.g. `Operations/Closure_Index_2026-04-29.md`, `Operations/Structural_Governance_Rollup_2026-04-29.md`) may cite and use symbols defined in this table. They must not introduce new symbol definitions, override existing usage rules, or alter the scope of canonical symbols established here.
 
 ## D-Value Alignment (d 值专题规范)
 

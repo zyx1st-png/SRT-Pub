@@ -5,7 +5,8 @@ tags: [Physics, Formalism, Compact Core, Category Theory, Information Geometry]
 status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-09, SRT-CORE-14-COMPACT-CORE]
 ---
 

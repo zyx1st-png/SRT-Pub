@@ -5,7 +5,8 @@ tags: [Physics, Compact Core, Registry]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
+canonical: false
 dependency: [SRT-CANONICAL-REGISTRY]
 ---
 

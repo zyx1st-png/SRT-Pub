@@ -5,7 +5,8 @@ tags: [Physics, Cosmology, Thermodynamics, Time, Gravity, Compact Core]
 status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE]
 ---
 

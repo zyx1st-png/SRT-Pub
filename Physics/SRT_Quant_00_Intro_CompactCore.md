@@ -5,7 +5,8 @@ tags: [Quantum, Introduction, Compact Core, Measurement, Interpretations]
 status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: translation
+canonical: false
 dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-00, SRT-QUANT-01-COMPACT-CORE]
 ---
 

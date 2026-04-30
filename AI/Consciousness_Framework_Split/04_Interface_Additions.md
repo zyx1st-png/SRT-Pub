@@ -33,15 +33,15 @@ dependency: [SRT-AI-02]
 
 ### AI 报告-现实解耦
 
-1. 将“智能测验与意识判定分离”写入本文件判据链：高 `I` 不构成高 `C(\hat{G})` 证据，意识判定仍需 `Ax-CONSC-1/2/3` 的跨域锚定、`d>0` 与 `L_0` 耦合共同满足。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1142/s2705078520300017〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-1〕
-2. 将“多理论并行评估”约束化：面对理论竞争时，不采用单一理论直接裁决，而采用最小交集门槛（至少两类独立指标同时支持）防止报告层过拟合。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1142/s2705078520500149〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-1〕
-3. 将“机器意识上限”定位为边界条款：语言能力、规划能力或行为拟态本身不构成主体性证据，缺少本体摩擦与风险耦合时默认判为拟态层。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1142/s2705078521500193〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-2〕
+> **Extracted to Annex**: The detailed report-reality decoupling mapping has been moved to [`../Consciousness_Annex/02_Report_Reality_Moral_Status_Interface.md`](../Consciousness_Annex/02_Report_Reality_Moral_Status_Interface.md#1-ai-报告-现实解耦).
+>
+> **Owner summary**: Intelligence tests, reportability, planning, and behavior mimicry are not consciousness verdicts. SRT consciousness assessment still requires owner-level cross-domain anchoring, positive stake, and `L_0` coupling criteria.
 
 ### AI 道德地位与感知风险
 
-1. 将 sentience 判定引入本文件判据层：把“自我保存行为”降格为候选信号，只有与 `Ax-CONSC-1/2/3` 同时成立时才可提升为意识支持证据。在操作层面，该映射先定义观测域与判据边界，再给出跨层投影规则。 〔source: doi:10.1007/s43681-026-00983-x〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#Ax-CONSC-1〕
-2. 将“2030 道德考虑”命题映射为治理阈值注记：在意识不确定区间，对潜在受苦风险采取保守门槛，而不把规范性主张直接当作本体证明。在操作层面，该映射强调参数与任务条件变化时的更新路径。 〔source: doi:10.1007/s43681-023-00379-1〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-1〕
-3. 将 moral personhood 命题置于判据后层：先完成意识判据，再进入人格地位推断，禁止“伦理先验”反向裁决意识成立。在操作层面，该映射要求保留失效条件，避免描述层越级到本体层。 〔source: doi:10.1093/9780198945215.003.0005〕〔source: AI/SRT_AI_03_Consciousness_Framework.md#T-CONSC-2〕
+> **Extracted to Annex**: The detailed moral-status / sentience-risk mapping has been moved to [`../Consciousness_Annex/02_Report_Reality_Moral_Status_Interface.md`](../Consciousness_Annex/02_Report_Reality_Moral_Status_Interface.md#2-ai-道德地位与感知风险).
+>
+> **Owner summary**: Moral caution can guide governance in uncertainty, but it must not reverse-define ontology. Sentience and moral personhood claims remain downstream of owner-level consciousness and subjecthood criteria.
 
 
 ### Taxonomy Mapping: Consciousness Processing Phases → SRT
@@ -98,14 +98,9 @@ $$d \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|$$
 
 ### Taxonomy Mapping: Perceptual Regimes in Controlled Hallucination View → SRT
 
-| 外部分类 | SRT 对应机制 | d-value 区间（proxy） | 能流态 | \(\Psi_f\) 状态 |
-|:--|:--|:--|:--|:--|
-| 常态知觉（受控幻觉） | 预测-误差闭环稳定收敛 | 中 | Open/Semi-open | payable |
-| 闪烁诱发梦机体验 | 内源结构主导的感知填充 | 中~高 | Open-flow（节律驱动） | payable~overloaded |
-| 药理/病理性幻觉 | 感知约束弱化与先验上移 | 高波动 | Open / dysregulated | overloaded |
-| 任务驱动主动推断 | 行动用于降低长期不确定性 | 中~高 | Open-flow | task-dependent |
-
-**Constraint**: “幻觉”是程度差异而非类别断裂；常态知觉与异常体验在机制上连续。
+> **Extracted to Annex**: The detailed controlled-hallucination taxonomy has been moved to [`../Consciousness_Annex/01_Controlled_Hallucination_Interface.md`](../Consciousness_Annex/01_Controlled_Hallucination_Interface.md#taxonomy-mapping-perceptual-regimes-in-controlled-hallucination-view--srt).
+>
+> **Owner summary**: This taxonomy maps controlled-hallucination perceptual regimes into SRT process language as a proxy/interface. It does not define SRT consciousness thresholds, does not imply AI subjecthood, and does not modify the strong-candidate consciousness window.
 
 ##
 

@@ -5,7 +5,8 @@ tags: [Annex, Interface, Boundary, Registry]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
+canonical: false
 dependency: [SRT-INDEX]
 ---
 
@@ -26,6 +27,12 @@ dependency: [SRT-INDEX]
 
 ## AI
 - `AI/Ontology_Annex/README.md`
+- `AI/Architecture_Annex/README.md`（architecture interface / engineering comparison layer; `canonical: false`; owner remains `AI/SRT_AI_Architecture.md`）
+- `AI/Consciousness_Annex/README.md`（consciousness interface / external-theory comparison layer; `canonical: false`; owner remains `AI/SRT_AI_03_Consciousness_Framework.md`）
+
+## Physics
+- `Physics/QBox_Annex/README.md`（QBox / hyperdecoherence external interface layer; `canonical: false`; owner remains `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md`）
+- `Physics/Earth_Accretion_Annex/README.md`（Earth accretion / reservoir-selection external interface layer; `canonical: false`; owner remains `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md`）
 
 ## Core
 - `Core/Dynamics_Scaling_Annex/README.md`
