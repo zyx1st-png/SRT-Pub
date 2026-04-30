@@ -6,6 +6,7 @@ status: active_v1
 layer: meta
 epistemic_layer: bridge
 claim_mode: navigation
+canonical_status: non_canonical
 canonical: false
 batch: physics_extensions_v0_1
 date: 2026-04-30

@@ -74,25 +74,44 @@ Internal:
 
 ---
 
-## 1. The hard core
+## 1. The provisional physics-facing hard core
 
-The hard core of SRT physics is the set of commitments that, if
-falsified, would refute SRT *as a theory of physics* rather than refute
-a particular bridge.
+The set of commitments below is a **provisional physics-facing hard
+core**: a tentative, repo-internal, programme-bookkeeping construct
+for the v0.1 Extensions batch. It is *not* the canonical SRT hard
+core. Canonical SRT primitives live in `Core_Law/`, `Core/`, and
+`_SRT_*_CANONICAL.md`; nothing in this file replaces or constrains
+them.
 
-| HC# | Commitment | Source |
+The provisional hard core states which physics-facing commitments
+this Extensions batch is willing to put under explicit empirical
+pressure, and what would refute *the physics-bridge programme* (not
+SRT-as-a-whole) if it failed.
+
+| HC# | Provisional physics-facing commitment | Source |
 |---|---|---|
-| HC-1 | Selection events are physically primitive: $\hat{G}_\theta$ is not eliminable in favour of a fully unitary, fully observer-independent global description of $L_1$. | Core Axiom A1; Def-Phys-1 |
-| HC-2 | Embodiment is non-trivial: there is no view from nowhere; $\theta$ tracks a real physical degree of freedom (the Heisenberg cut, the frame system, the dilation environment). | `_SRT_Phys_Bridge.md` §I; E01 §3; E02 §2 |
-| HC-3 | Selection has cost: the projection of $\hat{G}_\theta$ onto physics satisfies a generalized second law (Sagawa–Ueda form). | E03 B-E03-4 |
-| HC-4 | Manifest time is relational: $t_{L_1}$ is conditional on a clock subsystem; there is no globally accessible time variable. | E04 B-E04-1 |
-| HC-5 | $L_2$ is the invariant structure across embodiment changes: conservation laws are what survives every $\theta$-shift. | T-Phys-3; E02 B-E02-7 |
+| HC-1 | Selection events resist full eliminability: any complete physical description of $L_1$ that drops $\hat{G}_\theta$ also loses access to the embodiment-relative content of measurement. | Core Axiom A1; Def-Phys-1 |
+| HC-2 | Embodiment is non-trivial: there is no view from nowhere on the physical projection; $\theta$ tracks a real physical degree of freedom (Heisenberg cut, frame system, dilation environment). | `_SRT_Phys_Bridge.md` §I; E01 §3; E02 §2 |
+| HC-3 | Selection has cost: the physical projection of $\hat{G}_\theta$ obeys a *generalized payability constraint* — a non-negative cost is incurred whenever the event includes irreversible record stabilization. The specific mathematical form (Sagawa–Ueda, Crooks-style, Fisher-monotone, or another) is one of several allowed instantiations under E03. | E03 (one instantiation); `_SRT_PSI_F_CANONICAL.md` |
+| HC-4 | Manifest time is relational: physical-domain $t_{L_1}$ is given through a clock-conditioned reduced state, not a globally extracted scalar. | E04 B-E04-1 |
+| HC-5 | $L_2$ has an embodiment-invariant content: some structure survives every change of $\theta$, and physics-side conservation laws are an image of that content. | T-Phys-3; E02 B-E02-7 |
 
-Falsification of any HC line by reproducible experiment would be a
-*global* refutation of SRT physics, not a local bridge replacement.
+A reproducible experiment that falsified an HC line in its
+*physics-bridge reading* would refute the physics-bridge programme —
+i.e., would force replacement of the corresponding canonical-to-physics
+projection — without by itself refuting SRT-as-a-whole, because
+canonical SRT does not depend on any single physical projection.
 
-The hard core is *small on purpose*. SRT survives in physics by
-keeping HC-1 through HC-5 small, sharp, and falsifiable.
+The provisional hard core is *small on purpose*. The physics-bridge
+programme survives by keeping HC-1 through HC-5 small, sharp, and
+falsifiable in their physics-facing readings.
+
+Critically, **HC-3 is not bound to Sagawa–Ueda**. E03 supplies one
+instantiation (the entropy-production proxy $\sigma_f^{phys}$ of
+B-E03-5), but a Fisher-monotone instantiation (per
+`SRT_Phys_09_Formalism_Ext_CompactCore.md` §4) or any other
+non-negative payability quantity also satisfies HC-3. Failure of one
+instantiation is a belt-line retraction, not a hard-core failure.
 
 ---
 
@@ -100,7 +119,7 @@ keeping HC-1 through HC-5 small, sharp, and falsifiable.
 
 The protective belt is the set of revisable bridges. These are
 hypotheses that can be modified or replaced without disturbing the
-hard core.
+provisional physics-facing hard core in §1.
 
 | PB# | Bridge | Source | Replaceability |
 |---|---|---|---|
@@ -112,9 +131,9 @@ hard core.
 | PB-6 | Gravity / friction structural analogy (H-Phys-4) | `_SRT_Phys_Bridge.md` H1.4.4 | Open research direction, no current empirical pressure or support |
 | PB-7 | Selection-index reading of A1 | `_SRT_Phys_Bridge.md` H-Phys-2 commentary | Preserved under E04; survives even if H-Phys-2 fails |
 
-The hard core (HC-*) does *not* depend on any single PB-* line. SRT
-physics can lose any one of PB-1 through PB-7 and remain alive as a
-research programme.
+The provisional physics-facing hard core (HC-*) does *not* depend on
+any single PB-* line. The physics-bridge programme can lose any one
+of PB-1 through PB-7 and remain alive.
 
 ---
 
@@ -178,9 +197,9 @@ gain. The following criteria flag SRT physics as degenerating:
 | Criterion | Trigger |
 |---|---|
 | **Belt-line proliferation without prediction** | Each falsification window forces a new belt-line auxiliary that does not predict any independent test |
-| **Hard-core erosion** | An HC-* line is silently relaxed to accommodate a failure (e.g. HC-3 weakened from "Sagawa–Ueda" to "Sagawa–Ueda within experimental noise") |
+| **Hard-core erosion** | A provisional HC-* line is silently relaxed to accommodate a failure (e.g. HC-3 silently narrowed from "generalized payability constraint" to "Sagawa–Ueda within experimental noise" without an open governance entry) |
 | **Bridge proliferation** | More than ~3 distinct formal homes for the same primitive (e.g., three different mathematical homes for $\hat{G}_\theta$) maintained simultaneously without prediction-discriminating |
-| **Empirical-anchor abandonment** | The Bérut / Yan / Toyabe et al. anchors are explicitly abandoned in favour of "but our $\Psi_f^{phys}$ is not theirs" |
+| **Empirical-anchor abandonment** | The Bérut / Yan / Toyabe et al. anchors are explicitly abandoned in favour of "but our $\sigma_f^{phys}$ is not theirs" |
 | **Empirical retreat** | After any positive-direction discovery, no follow-up testable prediction is generated |
 
 If two or more of these criteria are satisfied, the research-programme
@@ -197,10 +216,10 @@ priority is recommended:
 
 | Priority | Window | Reason |
 |---|---|---|
-| **1** | **F-E04-β** (interacting quantum clocks) | Empirical infrastructure already published (P05 patch); near-term laboratory horizon; directly tests HC-4 |
-| **2** | **F-E03-α** (Sagawa–Ueda residual under $\theta_{formal}$) | Builds on existing colloidal-feedback infrastructure; tests HC-3 |
-| **3** | **F-E03-γ** ($d$-value scaling of Landauer dissipation) | High-leverage, distinctive of SRT, but highest experimental difficulty |
-| **4** | **F-E02-β** (dual-rail QRF cost asymmetry) | Tests HC-2; existing dual-rail interferometry infrastructure |
+| **1** | **F-E04-β** (interacting quantum clocks) | Empirical infrastructure already published (P05 patch); near-term laboratory horizon; tests HC-4 in projection |
+| **2** | **F-E03-α** (Sagawa–Ueda residual under $\theta_{formal}$) | Builds on existing colloidal-feedback infrastructure; tests one HC-3 instantiation |
+| **3** | **F-E03-γ** ($d$-value scaling of Landauer dissipation) | High-leverage, distinctive of SRT, but highest experimental difficulty; restricted to record-stabilization scope |
+| **4** | **F-E02-β** (dual-rail QRF cost asymmetry) | Tests HC-2 in projection; existing dual-rail interferometry infrastructure |
 | **5** | **F-E01-β** (dilation-environment selection) | Tests HC-1's non-eliminability route; existing engineered-reservoir platforms |
 
 F-E03-γ deserves a separate note: it is the one window where SRT could
@@ -243,17 +262,25 @@ This program-statement should be revised when:
 
 ## 9. One-paragraph abstract
 
-This file states SRT physics as an explicit Lakatosian research
-programme: a hard core of five irreducible commitments (selection is
-primitive; embodiment is non-trivial; selection has cost; manifest
-time is relational; $L_2$ is the embodiment-invariant), a protective
-belt of seven revisable bridges (E01–E04 plus H-Phys-2, H-Phys-4, and
-the selection-index reading), and a consolidated table of thirteen
-falsification windows pulled from E01–E04 §5 and `_SRT_Phys_Bridge.md`
-§VI. The programme is degenerating if its belt proliferates without
-prediction, its hard core erodes silently, or its empirical anchors
-are abandoned. The single most empirically-pressing near-term window
-in 2026 is F-E04-β (interacting quantum clocks); the most
-SRT-distinctive is F-E03-γ ($d$-value scaling of Landauer dissipation).
-The programme makes SRT's physics-side bet legible without claiming
-victory.
+This file states the SRT physics-bridge programme as an explicit
+Lakatosian research programme: a *provisional physics-facing* hard
+core of five commitments (selection resists full eliminability;
+embodiment is non-trivial; selection has cost as a generalized
+payability constraint; manifest time is relational via clock-
+conditioned states; $L_2$ has embodiment-invariant content), a
+protective belt of seven revisable bridges (E01–E04 plus H-Phys-2,
+H-Phys-4, and the selection-index reading), and a consolidated table
+of thirteen falsification windows pulled from E01–E04 §5 and
+`_SRT_Phys_Bridge.md` §VI. The provisional hard core is *not* the
+canonical SRT hard core; it is a programme-bookkeeping construct
+specifying what would refute the physics-bridge programme without
+refuting SRT-as-a-whole. HC-3 is deliberately not bound to any
+single inequality (Sagawa–Ueda or otherwise); E03's instantiation is
+one of several allowed forms. The programme is degenerating if its
+belt proliferates without prediction, a provisional HC-* line is
+silently relaxed, or its empirical anchors are abandoned. The single
+most empirically-pressing near-term window in 2026 is F-E04-β
+(interacting quantum clocks); the most SRT-distinctive is F-E03-γ
+($d$-value scaling of Landauer dissipation, restricted to the
+record-stabilization scope). The programme makes the physics-side
+bet legible without claiming victory.

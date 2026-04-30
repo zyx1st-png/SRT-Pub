@@ -32,20 +32,30 @@ machine_summary: >
 > it gives the canonical $\Psi_f$ a published-physics inequality form
 > as one of its expressible projections.
 
-> **Bold claim of this file**: SRT's "ontological friction" $\Psi_f$,
-> when projected onto the physical layer, *must* satisfy a generalized
-> second law of the Sagawa–Ueda type. The Landauer bound, the Jarzynski
-> equality, and the Crooks fluctuation theorem then become particular
-> readings of the SRT *payability principle*. SRT thereby acquires a
-> hard, published inequality where it previously had a slogan.
+> **Bridge claim of this file**: when SRT's "ontological friction"
+> $\Psi_f$ is projected onto the physical layer through a
+> non-equilibrium-thermodynamics interface, that projection inherits
+> the published inequalities of information thermodynamics
+> (Sagawa–Ueda, Crooks, Jarzynski) and — for the *erasure / reset /
+> stable-classical-record* sub-class of selection events — the
+> Landauer lower bound. SRT thereby acquires hard, published
+> inequalities for one well-scoped projection where it previously had
+> a slogan.
 
-> **Conservative caveat**: this is a *direction-of-inheritance* bridge.
-> SRT inherits the inequality. It does *not* claim that fluctuation
-> theorems prove anything specifically SRT-shaped; their content is
-> already fixed by non-equilibrium statistical mechanics. The
-> non-trivial SRT addition is the identification with $\Psi_f$ and the
-> commitment that no SRT $\hat{G}_\theta$ event can violate the
-> Sagawa–Ueda bound.
+> **Conservative caveats**:
+> 1. This is a *direction-of-inheritance* bridge. SRT inherits the
+>    inequalities. It does *not* claim that fluctuation theorems prove
+>    anything specifically SRT-shaped; their content is already fixed
+>    by non-equilibrium statistical mechanics.
+> 2. The Landauer bound applies to *erasure, reset, and stabilization
+>    of classical records*; it does **not** apply to arbitrary
+>    measurement / selection events on its own. Quantum measurements
+>    that reversibly distribute information without resetting any
+>    classical bit are not Landauer-bounded in the usual sense.
+> 3. The physical-layer projection of $\Psi_f$ defined here is an
+>    *entropy-production proxy / monotone projection*, not a
+>    redefinition of canonical $\Psi_f$. Canonical $\Psi_f$ remains
+>    pre-physical and is not exhausted by this projection.
 
 ---
 
@@ -114,7 +124,7 @@ bridge.
 
 ## 2. The four published inequalities, in SRT vocabulary
 
-### 2.1 Landauer bound
+### 2.1 Landauer bound (scope: erasure / reset / stable record)
 
 For an erasure operation reducing classical entropy by $\Delta H$ at
 temperature $T$:
@@ -122,20 +132,35 @@ $$
 \langle Q_{\mathrm{erase}} \rangle \geq k_B T \ln 2 \cdot \Delta H.
 $$
 
-Bridge claim **B-E03-1** (Landauer reading of $\Psi_f$):
+Landauer's principle is a statement about *erasure, reset, and the
+stabilization of a classical record*. It does **not** apply to
+arbitrary quantum measurements: a unitary measurement that distributes
+information into an entangled environment without resetting any
+classical bit incurs no Landauer cost on its own.
 
-> Any $\hat{G}_\theta$ event that records an outcome (i.e., reduces
-> $L_0$-multiplicity to a definite $L_1$ branch) requires at least one
-> bit's worth of dilation-environment dissipation per bit recorded.
+Bridge claim **B-E03-1** (Landauer reading of $\Psi_f^{phys}$, scoped):
 
-In SRT formal:
+> An $\hat{G}_\theta$ event whose physical projection includes a
+> *classical-record-stabilization step* (e.g., latching a pointer
+> state, resetting an apparatus register, committing an outcome to a
+> classical memory) must dissipate at least $k_B T \ln 2$ per bit of
+> classical record produced.
+
+In SRT formal, restricted to the record-stabilization sub-class
+$\mathcal{S}_{rec}$:
 $$
-\Psi_f^{phys}[\hat{G}_\theta\text{-event}] \;\geq\; k_B T \ln 2 \cdot H[\hat{G}_\theta(\rho)].
+\Psi_f^{phys}[\hat{G}_\theta\text{-event} \in \mathcal{S}_{rec}] \;\geq\; k_B T \ln 2 \cdot \Delta H_{\mathrm{record}}.
 $$
 
-This is *not* a redefinition of $\Psi_f$. It is a lower bound on the
-physical-projection cost of any selection event, derived from
-Landauer's principle.
+This is *not* a redefinition of $\Psi_f$ and *not* a universal lower
+bound on all selection events. It is a lower bound on the
+physical-projection cost of those selection events that actually
+stabilize a classical record, derived from Landauer's principle.
+
+Selection events that do not stabilize a classical record (purely
+quantum information distribution, reversible coherent transitions)
+fall outside this scope. SRT does not on this bridge claim a Landauer
+bound for them.
 
 ### 2.2 Jarzynski equality
 
@@ -235,25 +260,41 @@ statement.
 
 This is the SRT version of the second law: *no free selection*.
 
-### 3.2 What $\Psi_f$ actually is, on this bridge
+### 3.2 An entropy-production proxy for the physical projection
 
-Bridge claim **B-E03-5**:
+Bridge claim **B-E03-5** (entropy-production proxy / monotone
+projection):
 $$
-\Psi_f^{phys}[\hat{G}_\theta\text{-event}] \;=\; \beta\,\langle W_{\mathrm{diss}} \rangle_{\theta} \;-\; I[\hat{G}_\theta;\, \theta_{\mathrm{instrument}}, \theta_{\mathrm{formal}}],
+\sigma_f^{phys}[\hat{G}_\theta\text{-event}] \;\equiv\; \beta\,\langle W_{\mathrm{diss}} \rangle_{\theta} \;-\; I[\hat{G}_\theta;\, \theta_{\mathrm{instrument}}, \theta_{\mathrm{formal}}],
 $$
-where $\langle W_{\mathrm{diss}} \rangle_\theta$ is the mean dissipated
-work in the dilation environment and $I[\cdot]$ is the imported
-information.
+where $\langle W_{\mathrm{diss}} \rangle_\theta$ is the mean
+dissipated work in the dilation environment and $I[\cdot]$ is the
+imported information. The notation $\sigma_f^{phys}$ marks this as a
+specific *entropy-production proxy* for the physical projection, not
+a redefinition of $\Psi_f$.
 
-This is *one* expressible projection of $\Psi_f$. It is *not* the
-canonical definition of $\Psi_f$ (which lives in
-[`../../_SRT_PSI_F_CANONICAL.md`](../../_SRT_PSI_F_CANONICAL.md) and is
-pre-physical). It is the form $\Psi_f$ takes when projected to a
-physical instrument context.
+The relation to canonical $\Psi_f$ is *projective and monotonic*: if
+$\Pi_{thermo}$ denotes the non-equilibrium-thermodynamics projection,
+$$
+\Pi_{thermo}\!\left(\Psi_f^{phys}\right) \;\propto\; \sigma_f^{phys},
+$$
+where $\propto$ here means "tracks monotonically within the regime of
+validity of fluctuation-theorem analysis", **not** strict equality. We
+do not claim $\Psi_f^{phys} = \sigma_f^{phys}$ globally; we claim that
+$\sigma_f^{phys}$ is one available, falsifiable proxy for the cost
+content of $\Psi_f^{phys}$ inside this projection.
 
-The *non-negativity* requirement
-$\Psi_f^{phys} \geq 0$ on this bridge becomes the Sagawa–Ueda
-inequality. **This is the falsifiable content.**
+Canonical $\Psi_f$ remains pre-physical
+([`../../_SRT_PSI_F_CANONICAL.md`](../../_SRT_PSI_F_CANONICAL.md)) and
+is *not* exhausted by $\sigma_f^{phys}$. Other projections (Fisher /
+information-geometric, decoherence-rate, embodiment-cost) supply
+other proxies that need not coincide outside the overlap region.
+
+The non-negativity requirement
+$\sigma_f^{phys} \geq 0$ becomes, on this bridge, the Sagawa–Ueda
+inequality. **This is the falsifiable content** within the
+record-stabilization / dissipative regime where the proxy is
+well-defined.
 
 ### 3.3 Connection to Fisher / information geometry
 
@@ -285,11 +326,13 @@ Unlike E01 / E02, E03 has *immediately existing* empirical anchors:
 - Sagawa–Ueda has been tested in feedback-controlled colloidal-bead
   experiments (Toyabe et al. 2010).
 
-Bridge claim **B-E03-6**: *to the extent these experiments confirm the
-underlying inequalities, they confirm the bound on any candidate
-$\hat{G}_\theta$ projection.* SRT is empirically constrained from the
-moment it commits to E03; it cannot retreat to "but our $\Psi_f$ is
-different" without abandoning the bridge.
+Bridge claim **B-E03-6**: *to the extent these experiments confirm
+the underlying inequalities, they constrain any candidate
+$\sigma_f^{phys}$ proxy for $\hat{G}_\theta$ projections that falls
+within the record-stabilization / dissipative scope.* SRT is
+empirically constrained from the moment it commits to E03 *for that
+scope*; it cannot retreat to "but our $\Psi_f$ is different" without
+abandoning the bridge proxy.
 
 ---
 
@@ -373,8 +416,10 @@ E03 could ascend the claim ladder only if:
    [`../../_SRT_PSI_F_CANONICAL.md`](../../_SRT_PSI_F_CANONICAL.md) is
    updated to register the bridged inequality form;
 3. Symbol-table reconciliation is completed, including a clean
-   distinction between $\Psi_f$ (canonical) and $\Psi_f^{phys}$
-   (bridged projection).
+   distinction between canonical $\Psi_f$, its physical-projection
+   $\Psi_f^{phys}$, and the entropy-production proxy
+   $\sigma_f^{phys}$ that lives only within the record-stabilization
+   / dissipative scope.
 
 Until then, B-E03-1 through B-E03-6 stay at P3.
 
@@ -382,15 +427,19 @@ Until then, B-E03-1 through B-E03-6 stay at P3.
 
 ## 8. One-paragraph abstract
 
-This bridge gives SRT's $\Psi_f$ a sharp inequality form by inheriting
-the Landauer bound, the Jarzynski equality, the Crooks fluctuation
-theorem, and the Sagawa–Ueda generalized second law. The combined
-statement — that no $\hat{G}_\theta$ event projected onto physics can
-violate the Sagawa–Ueda inequality on dissipation, free-energy change,
-and information import — becomes SRT's *payability principle* in
-published-physics form. The canonical $\Psi_f$ is unchanged; what is
-new is its physical projection $\Psi_f^{phys}$ as a measurable
-inequality. The bridge inherits decades of laboratory anchoring and
-opens three falsification windows tied to a Sagawa–Ueda residual term,
+This bridge gives one well-scoped projection of SRT's $\Psi_f$ a
+sharp inequality form by inheriting the Sagawa–Ueda generalized
+second law, the Jarzynski equality, the Crooks fluctuation theorem,
+and — for the *record-stabilization / erasure / reset* sub-class of
+selection events — the Landauer bound. The bridge introduces an
+entropy-production proxy $\sigma_f^{phys}$ for the physical projection
+of $\Psi_f$; this proxy is monotonic with $\Psi_f^{phys}$ inside the
+fluctuation-theorem regime but is *not* a redefinition of the
+canonical pre-physical $\Psi_f$. The combined statement — that no
+$\hat{G}_\theta$ event projected onto this regime can violate
+Sagawa–Ueda — becomes the published-physics form of SRT's
+*payability principle* for that regime. The bridge inherits decades
+of laboratory anchoring (Bérut 2012, Yan 2018, Toyabe 2010) and opens
+three falsification windows tied to a Sagawa–Ueda residual term,
 Landauer-bound saturation under $\theta$ shifts, and a $d$-value
 scaling of dissipation per bit recorded.

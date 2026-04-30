@@ -30,13 +30,17 @@ machine_summary: >
 > Def-Phys-1 [D1.1.1] in [`../_SRT_Phys_Bridge.md`](../_SRT_Phys_Bridge.md);
 > it gives that definition a published mathematical home.
 
-> **Bold claim of this file**: SRT's selection operator $\hat{G}_\theta$,
-> when restricted to physical-domain projections of $L_0$, is *literally*
-> a Davies–Lewis quantum instrument with a fixed Stinespring dilation
-> environment. The "embodiment parameter" $\theta$ is what physicists
-> would otherwise hide inside the choice of dilation, the choice of POVM
-> coarse-graining, and the choice of conditional Lindbladian. SRT names
-> what was already implicit, and asks why the choice is not arbitrary.
+> **Bridge claim of this file**: in its physical-domain quantum
+> projection, SRT's selection operator $\hat{G}_\theta$ *can be
+> modeled by* a Davies–Lewis quantum instrument with a fixed
+> Stinespring dilation environment. The "embodiment parameter"
+> $\theta$ is then what physicists would otherwise hide inside the
+> choice of dilation, the choice of POVM coarse-graining, and the
+> choice of conditional Lindbladian. SRT names what was already
+> implicit, and asks why the choice is not arbitrary. This is a
+> *modeling identification*, not a metaphysical equation:
+> $\hat{G}_\theta$ as a primitive of SRT is broader than any single
+> instrument family.
 
 > **Conservative caveat**: SRT does not on this basis predict any
 > deviation from standard quantum mechanics for ordinary laboratory
@@ -121,12 +125,13 @@ $\rho_k = \mathcal{I}_k(\rho) / \mathrm{Tr}\,\mathcal{I}_k(\rho)$.
 
 ### 2.2 SRT mapping
 
-Bridge claim **B-E01-1**:
+Bridge claim **B-E01-1** (modeling identification):
 $$
-\hat{G}_\theta = \mathcal{I}^{(\theta)} = \{\mathcal{I}^{(\theta)}_k\}_{k \in \Omega(\theta)},
+\hat{G}_\theta \;\xrightarrow{\;\Pi_{phys}\;}\; \mathcal{I}^{(\theta)} = \{\mathcal{I}^{(\theta)}_k\}_{k \in \Omega(\theta)},
 $$
-where the embodiment parameter $\theta$ controls *all five* slots that
-must be filled to specify a physical instrument:
+where $\Pi_{phys}$ denotes the physical-domain projection of the
+selection operator and the embodiment parameter $\theta$ controls
+*all five* slots that must be filled to specify a physical instrument:
 
 | Slot | Standard QM name | SRT reading |
 |---|---|---|
@@ -145,16 +150,33 @@ cost.
 
 ### 2.3 Stinespring dilation form
 
-By Stinespring's theorem every CPTP map $\Phi : \mathcal{B}(\mathcal{H}_S) \to \mathcal{B}(\mathcal{H}_S)$
-admits a dilation
-$$
-\Phi(\rho) = \mathrm{Tr}_E [\, U (\rho \otimes |0\rangle_E\langle 0|) U^\dagger \,]
-$$
-for some isometry $U : \mathcal{H}_S \to \mathcal{H}_S \otimes \mathcal{H}_E$.
+By Stinespring's theorem every CPTP map
+$\Phi : \mathcal{B}(\mathcal{H}_S) \to \mathcal{B}(\mathcal{H}_S)$
+admits a dilation that may be written in two equivalent forms.
 
-Bridge claim **B-E01-2**: the Stinespring environment $\mathcal{H}_E$ is
-the **physical realization of the friction reservoir** that supports
-$\Psi_f$. This means:
+**Isometric form** (the original Stinespring statement): there exists
+an isometry
+$V : \mathcal{H}_S \to \mathcal{H}_S \otimes \mathcal{H}_E$,
+$V^\dagger V = I_S$, such that
+$$
+\Phi(\rho) = \mathrm{Tr}_E\!\left[\, V \rho V^\dagger \,\right].
+$$
+
+**Unitary-extension form** (used when the environment is given an
+explicit initial state): there exists a unitary
+$U_{SE}$ on $\mathcal{H}_S \otimes \mathcal{H}_E$ and a fixed state
+$|0\rangle_E$ such that
+$$
+\Phi(\rho) = \mathrm{Tr}_E\!\left[\, U_{SE}\,(\rho \otimes |0\rangle_E\langle 0|)\, U_{SE}^\dagger \,\right],
+$$
+with $V \rho = U_{SE}(\rho \otimes |0\rangle_E\langle 0|)$ on the
+$|0\rangle_E$ sector. The two forms are interchangeable; the isometric
+form is more economical, the unitary form is more physically intuitive
+when the reservoir is treated as an autonomous quantum system.
+
+Bridge claim **B-E01-2**: the Stinespring environment $\mathcal{H}_E$
+is the **physical realization of the friction reservoir** that
+supports $\Psi_f$ in this projection. This means:
 
 - $\Psi_f$ is *not* a new field added to the Hilbert space.
 - $\Psi_f$ tracks *what fraction of the dilation environment is
@@ -201,8 +223,8 @@ Under E01 these become:
 | SRT component | Instrument-formalism counterpart |
 |---|---|
 | $\theta_{basis}$ | The POVM $\{E_k^{(\theta)}\}$ on $\mathcal{H}_S$ |
-| $\theta_{boundary}$ | The factorization $\mathcal{H} = \mathcal{H}_S \otimes \mathcal{H}_E$ in the Stinespring dilation (the Heisenberg cut *is* the bipartition) |
-| $\theta_{H_{int}}$ | The interaction Hamiltonian generating the dilation isometry $U$ |
+| $\theta_{boundary}$ | The factorization $\mathcal{H} = \mathcal{H}_S \otimes \mathcal{H}_E$ on which the Stinespring isometry $V$ acts (the Heisenberg cut as a candidate bipartition) |
+| $\theta_{H_{int}}$ | The interaction Hamiltonian generating $V$ in the unitary-extension form via $U_{SE}$ |
 
 This makes **$\theta_{boundary}$ a genuine physical degree of freedom**:
 it is the choice of bipartition. It is also where E02 (Quantum Reference
@@ -356,16 +378,20 @@ Without all three, E01 stays at P3 (bridge mapping).
 
 ## 8. One-paragraph abstract
 
-This bridge places SRT's selection operator $\hat{G}_\theta$ inside the
-standard CPTP / quantum-instrument / Stinespring-dilation /
-Gorini–Kossakowski–Lindblad–Sudarshan formalism. The embodiment parameter
+This bridge proposes that SRT's selection operator $\hat{G}_\theta$,
+*projected onto the physical-domain quantum layer*, can be modeled by
+a family of CPTP / quantum-instrument / Stinespring-dilated /
+Gorini–Kossakowski–Lindblad–Sudarshan maps. The embodiment parameter
 $\theta$ is unfolded into five textbook slots — outcome alphabet, Kraus
-operators, Stinespring environment, coarse-graining, and conditional
-Lindbladian — and SRT's specific contribution becomes the claim that
-these slots are not freely chosen by an external experimenter but are
-constrained by a stability-of-realization condition on the dilation
-environment, with $\Psi_f$ tracking the cost of maintaining a given
-instrument. The bridge is interpretive plus structural; it does not
-modify standard QM predictions for ordinary measurements but opens three
-falsifiability windows tied to instrument coherence, dilation-selection
-asymmetry, and GKLS unraveling uniqueness.
+operators, Stinespring environment (with isometry $V$ or unitary
+extension $U_{SE}$), coarse-graining, and conditional Lindbladian — and
+SRT's specific contribution becomes the claim that these slots are not
+freely chosen by an external experimenter but are constrained by a
+stability-of-realization condition on the dilation environment, with
+the physical projection of $\Psi_f$ tracking the cost of maintaining a
+given instrument. The identification is a *modeling projection*, not a
+metaphysical equation: $\hat{G}_\theta$ as an SRT primitive is broader
+than any single instrument family. The bridge does not modify standard
+QM predictions for ordinary measurements but opens three falsifiability
+windows tied to instrument coherence, dilation-selection asymmetry, and
+GKLS unraveling uniqueness.

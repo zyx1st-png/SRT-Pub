@@ -30,13 +30,14 @@ machine_summary: >
 
 > **Status**: Bridge / extension. Non-canonical. Pairs with E01.
 
-> **Bold claim of this file**: SRT's $\theta_{boundary}$ — the Heisenberg
-> cut placement parameter — is *not* a free philosophical choice
-> sitting outside physics. It is the parameter of a quantum-reference-frame
-> transformation in the Giacomini–Castro-Ruiz–Brukner sense, with a
-> precise group-theoretic structure and a published experimental
-> programme. SRT thereby gains a published mathematical home for what
-> previously read as embodied perspectivalism.
+> **Bridge claim of this file**: SRT's $\theta_{boundary}$ — the
+> Heisenberg cut placement parameter — admits a *QRF-compatible
+> projection* in the Giacomini–Castro-Ruiz–Brukner sense. Under that
+> projection, changes of cut behave like quantum-reference-frame
+> transformations and the cut acquires partial group-theoretic
+> structure. SRT thereby gains a published mathematical home for what
+> previously read as embodied perspectivalism, *without* claiming that
+> $\theta_{boundary}$ is exhausted by any single coset construction.
 
 > **Conservative caveat**: SRT does not claim to predict the outcomes of
 > QRF experiments. It claims that the outcomes already published in QRF
@@ -126,25 +127,31 @@ into a moving one.
 
 ### 2.2 SRT mapping
 
-Bridge claim **B-E02-1**:
+Bridge claim **B-E02-1** (QRF-compatible projection):
 $$
-\theta_{boundary} \in \mathcal{F}/G,
+\theta_{boundary} \;\xrightarrow{\;\Pi_{QRF}\;}\; [\,\mathrm{frame\ system}\,] \in \mathcal{F}/G,
 $$
-where $\mathcal{F}$ is the set of admissible frame systems (subsystems
-that can play the role of QRF) and $G$ is the relevant symmetry group.
-$\theta_{boundary}$ is the *coset* selecting one such frame.
+where $\mathcal{F}$ is the set of admissible frame systems
+(subsystems that can play the role of QRF), $G$ is the relevant
+symmetry group, and $\Pi_{QRF}$ is the QRF-compatible projection.
+Under that projection, the Heisenberg cut content of
+$\theta_{boundary}$ is represented as a coset selecting a frame.
 
-In words: the Heisenberg cut is the choice of which subsystem plays the
-role of the reference frame relative to which the rest is described.
-This is not a free philosophical choice. It is the choice of a section
-of a $G$-bundle over $\mathcal{F}$.
+In words: when SRT's cut is read through the QRF formalism, the
+choice of cut maps onto the choice of which subsystem plays the role
+of the reference frame. This is not a free philosophical choice in
+that projection. SRT does *not* claim that the entirety of
+$\theta_{boundary}$ — including non-quantum, biological, or
+historical contributions — is exhausted by $\mathcal{F}/G$.
 
-Bridge claim **B-E02-2**: changes of $\theta_{boundary}$ are unitary
-QRF transformations $\hat{S}^{(G)}_{C \to A}$.
+Bridge claim **B-E02-2**: under the QRF-compatible projection, changes
+of $\theta_{boundary}$ are represented by unitary QRF transformations
+$\hat{S}^{(G)}_{C \to A}$.
 
-This means SRT inherits a published transformation law. Two SRT
-descriptions with different $\theta_{boundary}$ are related by a
-specific unitary, not by an arbitrary epistemic relabeling.
+This means SRT inherits a published transformation law for the
+projected component. Two SRT descriptions with different
+$\theta_{boundary}$ are then related, in projection, by a specific
+unitary — not by an arbitrary epistemic relabeling.
 
 ### 2.3 Frame-relative classicality
 
@@ -165,10 +172,10 @@ publications already establish, not a separate philosophical layer.
 
 ---
 
-## 3. Group structure of $\theta$
+## 3. Group structure of $\theta$ (under projection)
 
-Once $\theta_{boundary}$ is in $\mathcal{F}/G$, the rest of $\theta$
-acquires structure too:
+Once $\theta_{boundary}$ is read into $\mathcal{F}/G$ via $\Pi_{QRF}$,
+the rest of $\theta$ acquires partial structure on the same projection:
 
 | SRT component | QRF-side counterpart |
 |---|---|
@@ -176,15 +183,17 @@ acquires structure too:
 | $\theta_{basis}$ | choice of orthogonal decomposition of $\mathcal{H}^{(\theta_{boundary})}$ |
 | $\theta_{H_{int}}$ | choice of interaction Hamiltonian *relative to the chosen frame* |
 
-Bridge claim **B-E02-4**: $\theta$ as a whole is a tuple
-$(\theta_{boundary}, \theta_{basis}, \theta_{H_{int}})$ with a
-hierarchical structure: $\theta_{boundary}$ is selected first (it
-determines what Hilbert space we work in), then $\theta_{basis}$ on the
-selected $\mathcal{H}^{(\theta_{boundary})}$, then $\theta_{H_{int}}$
-governing dynamics.
+Bridge claim **B-E02-4** (projected hierarchy): in the QRF projection,
+$\theta$ has a *partially ordered* structure on its components:
+$\theta_{boundary}$ is fixed first (it sets the Hilbert space we work
+in), $\theta_{basis}$ is then chosen on
+$\mathcal{H}^{(\theta_{boundary})}$, and $\theta_{H_{int}}$ governs
+the post-projection dynamics.
 
-This hierarchy is non-trivial: it gives a partial order on the
-embodiment parameter that SRT could not previously articulate.
+This hierarchy holds *under the QRF projection*. The full
+embodiment parameter need not satisfy a strict tuple decomposition;
+real embodied selectors may have entangled or co-determined
+components that this projection coarse-grains away.
 
 ---
 
@@ -232,15 +241,20 @@ Per Def-Phys-2 in `_SRT_Phys_Bridge.md`:
 |---|---|---|
 | $L_0$ | Hilbert space $\mathcal{H}$ | the *perspective-neutral* layer (Vanrietvelde et al. 2020) |
 | $L_1$ | classical pointer states | the manifest content of $\mathcal{H}^{(\theta_{boundary})}$ for a stable frame choice |
-| $L_2$ | conservation laws / symmetries | the symmetry group $G$ itself, viewed as the invariant structure across frame choices |
+| $L_2$ | conservation laws / symmetries | the QRF symmetry group $G$ acts as a *bridge image* of the $L_2$ invariant structure across frame choices |
 
-Bridge claim **B-E02-7**: $L_2$ is *exactly* the symmetry structure that
-makes QRF transformations possible. Conservation laws are SRT's name
-for "what survives every change of $\theta_{boundary}$".
+Bridge claim **B-E02-7** (invariant-structure bridge): under the
+QRF-compatible projection, the QRF symmetry group $G$ provides a
+*bridge image* of $L_2$'s embodiment-invariant content; conservation
+laws on this projection are SRT's name for "what survives every
+change of $\theta_{boundary}$ in the QRF projection".
 
-This is a stronger claim than T-Phys-3 ("conservation from symmetry")
-because it identifies SRT's $L_2$ with QRF's group $G$, rather than
-merely asserting structural similarity.
+SRT does not claim that $L_2$ is exhausted by $G$. The full $L_2$
+includes biological, historical, and cultural invariants that need
+not have any QRF representation. This bridge is a *projection-level
+identification*, not an exhaustive equation, and is therefore a
+sharpening — but not an upgrade in claim strength — of T-Phys-3
+("conservation from symmetry").
 
 ---
 
@@ -337,17 +351,20 @@ Until then, B-E02-1 through B-E02-7 stay at P3.
 
 ## 9. One-paragraph abstract
 
-This bridge identifies SRT's $\theta_{boundary}$ — the Heisenberg cut
-parameter — with a coset in the quantum-reference-frame space of
-Giacomini–Castro-Ruiz–Brukner. Changes of $\theta_{boundary}$ become
-unitary QRF transformations, and the well-published result that
+This bridge proposes a QRF-compatible projection of SRT's
+$\theta_{boundary}$ — the Heisenberg cut parameter — onto a coset in
+the quantum-reference-frame space of Giacomini–Castro-Ruiz–Brukner.
+Under that projection, changes of $\theta_{boundary}$ are represented
+by unitary QRF transformations, and the well-published result that
 classicality is frame-relative is read as the physical content of
-SRT's $L_0 / L_1$ split. SRT contributes a non-arbitrariness rule:
-admissible embodiment frames lie in the subspace where the frame
-system can be physically maintained as a reference, with
-$\Psi_f^{phys}$ tracking the maintenance cost. The bridge tightens
+SRT's $L_0 / L_1$ split. SRT contributes a non-arbitrariness rule on
+the projection: admissible embodiment frames lie in the subspace where
+the frame system can be physically maintained as a reference, with the
+physical projection of $\Psi_f$ tracking the maintenance cost. The
+QRF symmetry group $G$ acts as a bridge image — not an exhaustive
+equation — of $L_2$'s embodiment-invariant content. The bridge tightens
 SRT's response to the multi-world challenge, gives $\theta$ a
-hierarchical structure, and opens three falsifiability windows tied to
-frame-relative classicality experiments, frame-maintenance cost
-asymmetry, and the hierarchical specification of the embodiment
-parameter.
+projected hierarchical structure, and opens three falsifiability
+windows tied to frame-relative classicality experiments,
+frame-maintenance cost asymmetry, and the hierarchical specification
+of the embodiment parameter.

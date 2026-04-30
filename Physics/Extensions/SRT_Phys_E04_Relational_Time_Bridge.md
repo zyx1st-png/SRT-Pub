@@ -142,17 +142,27 @@ formulations (the "trinity"), and extensible to interacting clocks.
 
 Bridge claim **B-E04-1**:
 
-> SRT's $L_1$ manifest time *is* the conditional Page–Wootters time
-> with respect to a physically embodied clock subsystem; the choice of
-> clock is part of $\theta$.
+> SRT's $L_1$ manifest time, in its physical-quantum projection,
+> reads as the *clock-conditioned reduced state* of the rest of the
+> universe given a Page–Wootters clock subsystem. The choice of clock
+> subsystem is part of $\theta$.
 
-In SRT formal:
+In SRT formal: the manifest content of $L_1$ at clock-reading $t$ is
+the conditional system state
 $$
-t_{L_1}^{(\theta)} \;\equiv\; \mathrm{argmax}_{t}\, P\big(C(\theta) = t \,\big|\, |\Psi\rangle\rangle\big),
+\rho_S^{(\theta)}(t) \;\equiv\; \mathrm{Tr}_{C(\theta)}\!\left[\,\big(|t\rangle_{C(\theta)}\langle t| \otimes I_S\big)\, \rho_{\mathrm{tot}}\,\right] \big/ \mathcal{N}(t),
 $$
 where $C(\theta)$ is the embodied clock subsystem chosen by $\theta$
-(specifically by $\theta_{boundary}$, since "what counts as the clock"
-is a frame-system choice).
+(specifically by $\theta_{boundary}$, since "what counts as the
+clock" is a frame-system choice), $\rho_{\mathrm{tot}}$ is the global
+stationary state, and $\mathcal{N}(t)$ is the appropriate
+normalization. The clock parameter $t$ is *not* an extracted scalar
+("the time"); it is an *index* labelling the family of clock-relative
+system states that constitutes manifest temporal content.
+
+This is the standard Page–Wootters / Höhn–Smith–Lock formulation
+written in SRT vocabulary. SRT does not claim to have derived the
+formula; SRT inherits it.
 
 Bridge claim **B-E04-2**:
 
@@ -340,14 +350,16 @@ Until then, B-E04-1 through B-E04-5 stay at P3 (bridge mapping).
 This bridge gives SRT manifest time a published formal home in the
 Page–Wootters relational-time mechanism and its modern revivals
 (Giovannetti–Lloyd–Maccone, Marletto–Vedral, Höhn–Smith–Lock). The
-core identification is that SRT's $L_1$ time is the conditional
-probability on a chosen clock subsystem, where the clock choice is
-part of the embodiment parameter $\theta_{boundary}$ shared with the
-QRF bridge of E02. This formalization is FERMI-compatible (no Lorentz-
-invariance pressure), connects directly to the P05 quantum-proper-time
-patch, preserves the selection-index reading of Core Axiom A1, and
-should serve as SRT's *primary* time-bridge — with H-Phys-2 demoted to
-an additional, more speculative, currently FERMI-pressed alternative.
+core identification is that SRT's $L_1$ manifest temporal content,
+in its physical-quantum projection, reads as the family of
+clock-conditioned reduced states $\rho_S^{(\theta)}(t)$ on the chosen
+clock subsystem, where the clock choice is part of the embodiment
+parameter $\theta_{boundary}$ shared with the QRF bridge of E02.
+This formalization is FERMI-compatible (no Lorentz-invariance
+pressure), connects directly to the P05 quantum-proper-time patch,
+preserves the selection-index reading of Core Axiom A1, and should
+serve as SRT's *primary* time-bridge — with H-Phys-2 demoted to an
+additional, more speculative, currently FERMI-pressed alternative.
 The bridge opens three falsification windows tied to clock-choice
 dependence, interacting-clock consistency, and the alignment of
 irreversibility-marking events with clock readings.
