@@ -46,7 +46,7 @@ Compressed rule:
 | Adjacent theory | SRT interface role | Existing SRT locations | Boundary condition |
 |---|---|---|---|
 | **FEP / Active Inference** | `L_2 -> L_1` self-maintenance, prediction-error / free-energy update under existing closure | `Philosophy/SRT_FEP_Comparison.md`; `SRT_Fisher_FEP_Landscape_Interface.md`; `Neuroscience/SRT_Clin_02_FEP.md`; `Core/SRT_Core_14_Dynamics_Scaling.md` | FEP is a local self-maintenance dynamics, not SRT ontology. It does not replace `selection precedes existence`. |
-| **IIT / PCI** | `L_1` integration-side structure; clinical consciousness proxy; perturbational complexity readout | `Neuroscience/SRT_Clin_00_IIT_PCI.md`; `Neuroscience/SRT_Neuro_09_Integ_Eq.md`; `Neuroscience/SRT_Consciousness_Mechanisms.md` | `Φ` / PCI are integration or complexity readouts; they are not canonical `d-value` and do not by themselves supply stake / payability. |
+| **IIT / PCI** | `L_1` integration-side structure; clinical consciousness proxy; perturbational complexity readout | `Philosophy/SRT_IIT_Comparison.md`; `Neuroscience/SRT_Clin_00_IIT_PCI.md`; `Neuroscience/SRT_Neuro_09_Integ_Eq.md`; `Neuroscience/SRT_Consciousness_Mechanisms.md` | `Φ` / PCI are integration or complexity readouts; they are not canonical `d-value` and do not by themselves supply stake / payability. |
 | **GNW / Global Workspace** | `L_1` global availability, reportability, broadcast, and ignition | `Neuroscience/SRT_Consciousness_Mechanisms.md`; `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`; `Neuroscience/SRT_Neuro_Experiments.md`; `AI/SRT_AI_03_Consciousness_Framework.md` | GNW explains access / broadcast after selection; it does not explain the full `L_0 -> L_1` selection origin. |
 | **Quantum measurement / decoherence / Quantum Darwinism** | Physical `L_0 -> L_1` actualization interface; pointer states, measurement events, environment-induced stability | `Physics/SRT_Quant_00_Intro.md`; `Physics/SRT_Quant_01_Selection.md`; `Physics/SRT_Quant_01_Selection_CompactCore.md`; `graphify-out/wiki/Measurement_as_Selection.md`; `graphify-out/wiki/Quantum_Darwinism_Equivalence.md` | Quantum measurement is a physical bridge instance of actualization; SRT is not reducible to quantum collapse theory. |
 | **Classical action-density quantum bridge** | Computational bridge for physical `L_0` multipath candidates; least-action branches plus density can reconstruct quantum wave structure in specific problems | `Physics/SRT_Quant_00_Intro.md §0.2.1b`; `Physics/SRT_Quant_00_Intro_CompactCore.md §2.2`; `Physics/SRT_Quant_01_Selection.md Lemma Sel-POVM` | Action-density reconstruction is a mathematical / computational interface, not `L_0 = classical action` and not a replacement for measurement / anchoring criteria. |
@@ -106,6 +106,7 @@ IIT / PCI and GNW should not be collapsed into one consciousness interface.
 
 ### Existing locations
 
+- `Philosophy/SRT_IIT_Comparison.md`
 - `Neuroscience/SRT_Clin_00_IIT_PCI.md`
 - `Neuroscience/SRT_Neuro_09_Integ_Eq.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms.md`
@@ -122,6 +123,14 @@ IIT / PCI and GNW should not be collapsed into one consciousness interface.
 - PCI is not the full condition for consciousness in SRT.
 - GNW explains access and broadcast, not the full origin of selection from `L_0`.
 - High integration or broadcast does not automatically imply stake, payability, or existential concern.
+
+### Dedicated comparison
+
+For the metatheoretical comparison with IIT, use:
+
+- `Philosophy/SRT_IIT_Comparison.md`
+
+That file gives the standard thesis: IIT explains integration; SRT adds selection, stake, payability, and writeback. It should be used when the question is whether SRT is "just IIT plus d-value" or whether `Φ` is sufficient for subjectivity.
 
 ---
 
@@ -246,7 +255,7 @@ No. FEP models local self-maintenance under existing constraints. SRT also model
 
 ### “Is SRT just IIT or GNW?”
 
-No. IIT / PCI and GNW are consciousness-interface theories. They help describe integration and access of `L_1`, but they do not define selection, payability, or stake.
+No. IIT / PCI and GNW are consciousness-interface theories. They help describe integration and access of `L_1`, but they do not define selection, payability, or stake. For a dedicated comparison with IIT, see `Philosophy/SRT_IIT_Comparison.md`.
 
 ### “Is SRT just quantum measurement?”
 
