@@ -59,6 +59,7 @@ AI is a **pressure-test / boundary-test field** for SRT, not the theory's defini
    - [`Ontology_Annex/`](Ontology_Annex/) — ontology interface batches and historical bridge material.
    - [`Architecture_Annex/`](Architecture_Annex/) — architecture / engineering comparison interfaces extracted in Round 1.
    - [`Consciousness_Annex/`](Consciousness_Annex/) — consciousness / external-theory / governance interfaces extracted in Round 1.
+   - [`Consciousness_Annex/Life_Centered_Consciousness_Li_Hengwei_2026.md`](Consciousness_Annex/Life_Centered_Consciousness_Li_Hengwei_2026.md) — life-centered consciousness / homeostasis / artificial-consciousness bridge note; non-canonical, useful for mapping homeostasis and feeling to `d-value`, payable `Psi_f`, and embodied closure.
 
 8. Round 1 closure:
    - [`../Operations/AI_Annex_Round1_Closure_Report.md`](../Operations/AI_Annex_Round1_Closure_Report.md)
@@ -80,7 +81,7 @@ AI is a **pressure-test / boundary-test field** for SRT, not the theory's defini
 |---|---|---|
 | [`Ontology_Annex/`](Ontology_Annex/) | Existing ontology annex/interface support | Check frontmatter and guardrails before creating a new `AI_Annex/`. |
 | [`Architecture_Annex/`](Architecture_Annex/) | Round 1 architecture interface extraction layer | Do not add formula-bound ACT / payability material without new adjudication. |
-| [`Consciousness_Annex/`](Consciousness_Annex/) | Round 1 consciousness interface extraction layer | Do not add Biological Naturalism / S0-S6 material without new adjudication. |
+| [`Consciousness_Annex/`](Consciousness_Annex/) | Round 1 consciousness interface extraction layer | Do not add Biological Naturalism / S0-S6 material without new adjudication. New life-centered bridge notes may be added only if marked non-canonical and do not promote positive subjecthood claims. |
 | [`Ontology_Split/`](Ontology_Split/) | Split support for `SRT_AI_01_Ontology.md` | Split files retain longform support; they are not independent canonical entries. |
 | [`Consciousness_Framework_Split/`](Consciousness_Framework_Split/) | Split support for `SRT_AI_03_Consciousness_Framework.md` | Do not split or move S0-S6 / subjecthood thresholds without explicit adjudication. |
 | [`Architecture_Split/`](Architecture_Split/) | Split support for `SRT_AI_Architecture.md` | Keep formal architecture criteria distinct from external model comparisons. |
