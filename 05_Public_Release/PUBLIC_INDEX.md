@@ -15,21 +15,32 @@ This index maps existing public-facing material without moving files.
 
 Public release is controlled outward expression. It is not canonical and not a substitute for formal anchors.
 
-## One-page summaries
+## One-Page Summaries
 
 | File | Public role |
 |---|---|
 | [`SRT_IN_ONE_PAGE.md`](SRT_IN_ONE_PAGE.md) | Public-facing one-page summary for first readers; non-canonical. |
 | [`SRT_IN_ONE_PAGE_CN.md`](SRT_IN_ONE_PAGE_CN.md) | 中文公众一页版；public-facing summary; non-canonical. |
 
-## Current Public-Facing Files
+## Reader Orientation
 
 | File | Public role |
 |---|---|
 | [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md) | Frontstage new-reader guide; public-friendly orientation before formal anchors. |
 | [`../SRT_1H_Onboarding.md`](../SRT_1H_Onboarding.md) | One-hour onboarding route for readers who want more than a brief intro. |
 | [`../SRT_Public_Reading_Guide.md`](../SRT_Public_Reading_Guide.md) | Public reading guide when available as a reader-facing path. |
+
+## FAQ / Guardrails
+
+| File | Public role |
+|---|---|
+| [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) | Language guardrails for public-facing materials; non-canonical. |
 | [`../SRT_FAQ_CRITICAL.md`](../SRT_FAQ_CRITICAL.md) | Critical FAQ and objection-facing public material. |
+
+## Public / Video / Longform Materials
+
+| File | Public role |
+|---|---|
 | [`../Philosophy/SRT_Philosophy_Public_OnePager.md`](../Philosophy/SRT_Philosophy_Public_OnePager.md) | Existing one-page philosophy-facing public summary. |
 | [`../video/`](../video/) | Video scripts, sources, and outputs for public release workflows. |
 | [`../Papers/`](../Papers/) | Publicly readable or publication-facing paper materials, where scoped by file status. |

@@ -2,9 +2,11 @@
 
 This layer prepares SRT for public readers, talks, essays, short explanations, videos, newsletters, outreach emails, and visual maps.
 
-Public release is not a weaker version of SRT. It is the controlled release of SRT's force into public language.
+Public release is a controlled public-facing layer. It is not canonical and not a substitute for formal anchors.
 
-Public release is not canonical. Public materials should stay sharp without outrunning the formal anchors.
+公众释放不是低配版 SRT，也不是夸张版 SRT，而是受控释放版。
+
+Public materials should stay sharp without outrunning the formal anchors.
 
 ## Role
 
@@ -25,13 +27,18 @@ Even shorter:
 
 > Reality is selected under constraint, stabilized through history, and tested by resistance.
 
-## Current public-facing anchors
+## First Public Entries
 
-Until a later migration pass, this layer points to existing public files rather than moving them.
+Use these before sending a reader into formal anchors, bridges, evidence drafts, or repository maintenance layers.
 
-- [`SRT_IN_ONE_PAGE.md`](SRT_IN_ONE_PAGE.md) — SRT in One Page; public summary, not canonical, and a good first public-facing entry.
-- [`PUBLIC_INDEX.md`](PUBLIC_INDEX.md) maps current public-facing material.
-- [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) defines safe and unsafe public claims.
+- English one-page: [`SRT_IN_ONE_PAGE.md`](SRT_IN_ONE_PAGE.md) — English public one-page summary; best for first English readers.
+- 中文一页版: [`SRT_IN_ONE_PAGE_CN.md`](SRT_IN_ONE_PAGE_CN.md) — 中文公众一页版；适合中文读者、知乎/公众号/社群介绍。
+- Quick Start: [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md) — frontstage new-reader guide; broader repository orientation.
+- Public guardrails: [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) — language guardrails for public-facing materials.
+
+## Current Public Index
+
+[`PUBLIC_INDEX.md`](PUBLIC_INDEX.md) maps current public-facing material without moving files.
 
 ## Suggested future folders
 
