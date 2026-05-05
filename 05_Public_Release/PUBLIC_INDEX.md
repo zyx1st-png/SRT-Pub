@@ -20,6 +20,7 @@ Public release is controlled outward expression. It is not canonical and not a s
 | File | Public role |
 |---|---|
 | [`SRT_IN_ONE_PAGE.md`](SRT_IN_ONE_PAGE.md) | Public-facing one-page summary for first readers; non-canonical. |
+| [`SRT_IN_ONE_PAGE_CN.md`](SRT_IN_ONE_PAGE_CN.md) | 中文公众一页版；public-facing summary; non-canonical. |
 
 ## Current Public-Facing Files
 
