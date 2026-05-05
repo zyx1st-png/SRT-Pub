@@ -19,7 +19,7 @@ Each future card must be independently sourced, graded E0-E5, and paired with al
 
 ## Candidate 1: Information geometry / Fisher metric
 
-- Possible SRT anchors: `Psi_f`, `d-value`, selection cost.
+- Possible SRT anchors: `Psi_f`, selection cost, and possibly `d-value` only where stake-coupled concern can be independently operationalized.
 - Why this is promising: May provide structural language for distinguishability, curvature, update cost, and parameter-space friction.
 - Required source check: Primary sources on Fisher information geometry, Cencov uniqueness, natural gradient, and information geometry.
 - Alternative explanations: Generic optimization difficulty, prediction error, ordinary statistical distance.
@@ -30,7 +30,7 @@ Each future card must be independently sourced, graded E0-E5, and paired with al
   - bridge note? Yes, likely first route.
   - lab hypothesis? Possible only after measurable proxy conditions are specified.
   - public example? Not initially.
-- Do not claim: Fisher geometry establishes `Psi_f` or `d-value` as canonical definitions.
+- Do not claim: Fisher geometry establishes `Psi_f` or `d-value` as canonical definitions, or that statistical distinguishability alone implies stake-coupled concern.
 
 ## Candidate 2: Thermodynamics / Landauer / irreversible selection cost
 
@@ -49,7 +49,7 @@ Each future card must be independently sourced, graded E0-E5, and paired with al
 
 ## Candidate 3: Neuroscience / PCI / Lempel-Ziv / perturbational complexity
 
-- Possible SRT anchors: subjecthood threshold, consciousness threshold, `L1` complexity, `d-value` only if stake proxies are present.
+- Possible SRT anchors: consciousness-state complexity, `L1` state richness, and subjecthood threshold only as a weaker downstream candidate if stake coupling, consequence return, and self-modulation are separately shown.
 - Why this is promising: May provide external markers for differentiated-integrated dynamics and state-space richness.
 - Required source check: PCI literature, Lempel-Ziv complexity under anesthesia, and disorders of consciousness.
 - Alternative explanations: Generic neural complexity, arousal, task difficulty.
@@ -60,7 +60,7 @@ Each future card must be independently sourced, graded E0-E5, and paired with al
   - bridge note? Yes, especially for consciousness-mechanism translation.
   - lab hypothesis? Possible.
   - public example? Maybe, with careful anti-panpsychism guardrails.
-- Do not claim: Complexity measures alone establish consciousness, subjecthood, or `d-value`.
+- Do not claim: Complexity measures alone establish consciousness, subjecthood, `d-value`, or stake-coupled concern.
 
 ## Candidate 4: Cognitive control / task switching / recovery cost
 
