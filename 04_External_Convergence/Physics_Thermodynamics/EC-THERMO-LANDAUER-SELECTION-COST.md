@@ -52,7 +52,7 @@ This is not an operational proxy yet. It becomes operational only if a later car
 
 E2 = structural convergence.
 
-Reason for E2: Landauer-style information thermodynamics provides a mature physical framework in which erasing, resetting, and recording information carry constrained thermodynamic bookkeeping. That structure converges with the SRT intuition that durable selection, when physically instantiated, can require cost-bearing stabilization.
+Reason for E2: Landauer-style information thermodynamics provides a mature physical framework in which erasing, resetting, and recording information carry constrained thermodynamic bookkeeping. That structure is compatible with the SRT intuition that durable selection, when physically instantiated, can require cost-bearing stabilization.
 
 Reason not to rate E3: this draft card does not yet provide a domain-specific operational proxy for SRT selection cost or `Psi_f`. It does not show how to measure `Psi_f` in a given physical, biological, cognitive, AI, or social system.
 
@@ -68,7 +68,7 @@ The relevance is structural:
 - reversible computation warns against treating every information transformation as dissipative;
 - information thermodynamics shows that measurement, feedback, memory, and erasure require protocol-level bookkeeping rather than broad metaphor.
 
-This makes Landauer-style thermodynamics a serious candidate bridge for physical selection cost and one projection of `Psi_f`. It does not show that all selection has thermodynamic cost in the Landauer sense.
+This makes Landauer-style thermodynamics a candidate physical bridge for selection cost and one projection of `Psi_f`. It does not show that all selection has thermodynamic cost in the Landauer sense.
 
 ## 7. Alternative explanations
 
