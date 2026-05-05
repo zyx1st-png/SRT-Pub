@@ -27,9 +27,17 @@ A better rule is:
 ## Local files
 
 - [`EVIDENCE_GRADING.md`](EVIDENCE_GRADING.md) defines E0-E5.
-- [`EVIDENCE_INDEX.md`](EVIDENCE_INDEX.md) provides empty index structures for future cards.
+- [`EVIDENCE_INDEX.md`](EVIDENCE_INDEX.md) indexes draft and accepted evidence cards.
 - [`EVIDENCE_CARD_TEMPLATE.md`](EVIDENCE_CARD_TEMPLATE.md) gives the card format.
 - [`CONTRADICTION_LEDGER.md`](CONTRADICTION_LEDGER.md) records pressure, failed predictions, and stronger alternative explanations.
+- [`REVIEW_MAP.md`](REVIEW_MAP.md) maps current draft evidence cards, pressure links, and next-step routes. It is not an acceptance decision.
+
+## Review Map
+
+Review map:
+[`REVIEW_MAP.md`](REVIEW_MAP.md)
+
+Current map of draft evidence cards, pressure links, and next-step routes. Not an acceptance decision.
 
 ## Candidate Directions
 

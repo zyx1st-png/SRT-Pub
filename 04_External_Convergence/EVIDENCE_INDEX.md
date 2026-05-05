@@ -18,6 +18,8 @@ No evidence cards have been accepted yet. Candidate directions are listed in:
 
 Do not list candidates as accepted evidence.
 
+For a summary of current draft cards and pressure links, see [`REVIEW_MAP.md`](REVIEW_MAP.md).
+
 ## Card Index
 
 | ID | Domain | SRT Anchor | Level | Status | Summary | Pressure Link |
