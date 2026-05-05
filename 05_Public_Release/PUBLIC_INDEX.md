@@ -15,6 +15,12 @@ This index maps existing public-facing material without moving files.
 
 Public release is controlled outward expression. It is not canonical and not a substitute for formal anchors.
 
+## One-page summaries
+
+| File | Public role |
+|---|---|
+| [`SRT_IN_ONE_PAGE.md`](SRT_IN_ONE_PAGE.md) | Public-facing one-page summary for first readers; non-canonical. |
+
 ## Current Public-Facing Files
 
 | File | Public role |

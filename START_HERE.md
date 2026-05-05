@@ -26,7 +26,7 @@ SRT begins from a reversal:
 Use this if you want the theory's core shape without entering governance or formal machinery.
 
 1. [`README.md`](README.md)
-2. [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md)
+2. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
 3. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
 
 ### 1 Hour
@@ -54,8 +54,9 @@ Use this if you want a map of the whole repository without getting lost in opera
 ### First-Time Reader
 
 1. [`README.md`](README.md)
-2. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
-3. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
+2. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
+3. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
+4. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 
 ### Academic Reader
 
@@ -107,10 +108,9 @@ Use this if you want a map of the whole repository without getting lost in opera
 
 ### Public Reader
 
-1. [`05_Public_Release/README.md`](05_Public_Release/README.md)
-2. [`05_Public_Release/PUBLIC_INDEX.md`](05_Public_Release/PUBLIC_INDEX.md)
-3. [`05_Public_Release/PUBLIC_GUARDRAILS.md`](05_Public_Release/PUBLIC_GUARDRAILS.md)
-4. [`SRT_FAQ_CRITICAL.md`](SRT_FAQ_CRITICAL.md)
+1. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
+2. [`05_Public_Release/PUBLIC_GUARDRAILS.md`](05_Public_Release/PUBLIC_GUARDRAILS.md)
+3. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 
 ### Agent / Collaborator
 

@@ -57,9 +57,10 @@ Guiding rule:
 ### If you are new
 
 1. [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md)
-2. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
-3. [`START_HERE.md`](START_HERE.md)
-4. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
+2. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
+3. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
+4. [`START_HERE.md`](START_HERE.md)
+5. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 
 ### If you are a philosophy reader
 
@@ -96,10 +97,11 @@ Guiding rule:
 
 ### If you are a public reader
 
-1. [`05_Public_Release/README.md`](05_Public_Release/README.md)
-2. [`05_Public_Release/PUBLIC_INDEX.md`](05_Public_Release/PUBLIC_INDEX.md)
-3. [`05_Public_Release/PUBLIC_GUARDRAILS.md`](05_Public_Release/PUBLIC_GUARDRAILS.md)
-4. [`SRT_FAQ_CRITICAL.md`](SRT_FAQ_CRITICAL.md)
+1. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
+2. [`05_Public_Release/README.md`](05_Public_Release/README.md)
+3. [`05_Public_Release/PUBLIC_INDEX.md`](05_Public_Release/PUBLIC_INDEX.md)
+4. [`05_Public_Release/PUBLIC_GUARDRAILS.md`](05_Public_Release/PUBLIC_GUARDRAILS.md)
+5. [`SRT_FAQ_CRITICAL.md`](SRT_FAQ_CRITICAL.md)
 
 ### If you are a collaborator / agent
 
@@ -125,6 +127,7 @@ Start with [`05_Public_Release/README.md`](05_Public_Release/README.md).
 
 Current public-facing anchors:
 
+- Public one-page summary: [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
 - [`Philosophy/SRT_Philosophy_Public_OnePager.md`](Philosophy/SRT_Philosophy_Public_OnePager.md)
 - [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 - [`SRT_1H_Onboarding.md`](SRT_1H_Onboarding.md)

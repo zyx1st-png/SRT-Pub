@@ -29,6 +29,7 @@ Even shorter:
 
 Until a later migration pass, this layer points to existing public files rather than moving them.
 
+- [`SRT_IN_ONE_PAGE.md`](SRT_IN_ONE_PAGE.md) — SRT in One Page; public summary, not canonical, and a good first public-facing entry.
 - [`PUBLIC_INDEX.md`](PUBLIC_INDEX.md) maps current public-facing material.
 - [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) defines safe and unsafe public claims.
 
@@ -41,7 +42,6 @@ Until a later migration pass, this layer points to existing public files rather 
 - `Substack_Zhihu_Wechat/`
 - `FAQ/`
 - `Visual_Maps/`
-- Future one-page entry may live here as `SRT_IN_ONE_PAGE.md`; do not place it at the repository root during the first frontstage pass.
 
 ## Public guardrails
 
