@@ -2,7 +2,13 @@
 
 This layer collects independent findings, models, measurements, and constraints from other fields that may support, sharpen, pressure-test, or operationalize SRT constructs.
 
-It should not be framed as "other fields prove SRT." A better rule is:
+This layer is not `Proofs`.
+
+External fields cannot directly prove SRT. They can provide structural convergence, operational proxy, formal constraint, differential support, or falsification pressure.
+
+Convergence strengthens or pressures SRT; it does not directly prove SRT.
+
+A better rule is:
 
 > Bridge translates. Convergence strengthens. Lab tests. Governance restrains.
 >
@@ -18,53 +24,27 @@ It should not be framed as "other fields prove SRT." A better rule is:
 - Which external results create pressure or possible failure conditions for SRT?
 - Which materials should be promoted into lab hypotheses, bridge files, or public release?
 
-## Evidence grading
+## Local files
 
-Use the following default scale:
+- [`EVIDENCE_GRADING.md`](EVIDENCE_GRADING.md) defines E0-E5.
+- [`EVIDENCE_INDEX.md`](EVIDENCE_INDEX.md) indexes draft and accepted evidence cards.
+- [`EVIDENCE_CARD_TEMPLATE.md`](EVIDENCE_CARD_TEMPLATE.md) gives the card format.
+- [`CONTRADICTION_LEDGER.md`](CONTRADICTION_LEDGER.md) records pressure, failed predictions, and stronger alternative explanations.
+- [`REVIEW_MAP.md`](REVIEW_MAP.md) maps current draft evidence cards, pressure links, and next-step routes. It is not an acceptance decision.
 
-| Level | Name | Meaning |
-|---|---|---|
-| E0 | Loose analogy | Interesting resemblance only; no support claim. |
-| E1 | Conceptual resonance | Similar intuition or vocabulary, but no variable mapping. |
-| E2 | Structural convergence | Similar structure, such as selection-cost-stabilization. |
-| E3 | Operational proxy | Can help measure or approximate an SRT construct. |
-| E4 | Differential support | Supports a prediction that distinguishes SRT from simpler alternatives. |
-| E5 | Strong corroboration | Strong support with alternatives partly excluded; rare and should be used cautiously. |
+## Review Map
 
-## Evidence card template
+Review map:
+[`REVIEW_MAP.md`](REVIEW_MAP.md)
 
-Each entry should use a compact card format:
+Current map of draft evidence cards, pressure links, and next-step routes. Not an acceptance decision.
 
-```md
-# Evidence Card: [External finding]
+## Candidate Directions
 
-## 1. External finding
-What was found?
+Link:
+[`FIRST_EVIDENCE_CANDIDATES.md`](FIRST_EVIDENCE_CANDIDATES.md)
 
-## 2. Source domain
-Physics / neuroscience / AI / biology / social science / information geometry / other.
-
-## 3. SRT construct involved
-L0 / L1 / L2 / G_hat_theta / d-value / Psi_f / T_dir / subjecthood / stake-coupling.
-
-## 4. Support type
-Conceptual convergence / structural convergence / operational proxy / formal constraint / differential support / falsification pressure.
-
-## 5. Evidence level
-E0-E5.
-
-## 6. Why it matters for SRT
-How does it strengthen, constrain, or pressure SRT?
-
-## 7. Alternative explanations
-Could this be explained by FEP, IIT, predictive processing, reward, salience, memory, generic task difficulty, or conventional social theory?
-
-## 8. Boundary
-What does this evidence not prove?
-
-## 9. Upgrade path
-Bridge / formal anchor / lab hypothesis / public release / archive.
-```
+This is a planning index for future evidence cards. It is not an evidence index and does not claim that any external field proves SRT.
 
 ## Suggested subdomains
 
@@ -89,4 +69,4 @@ The repository already contains experiment and proxy infrastructure that can fee
 
 ## Boundary
 
-External convergence does not replace formal anchors. It is a disciplined evidence interface. When evidence is weak, label it weak. When evidence creates trouble, preserve the trouble rather than hiding it.
+External convergence does not replace formal anchors. It is a disciplined support-and-pressure interface. When evidence is weak, label it weak. When evidence creates trouble, preserve the trouble rather than hiding it.

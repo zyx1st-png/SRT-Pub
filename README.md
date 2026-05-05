@@ -10,11 +10,21 @@ SRT 是一个以“选择先于稳定存在”为核心命题的理论框架。�
 
 ## 30 秒版
 
-- **一句话**：SRT 将现实理解为参数化选择在约束、代价、关切与历史下形成的显现与收敛结构。
-- **三域**：`L0` = 潜在域，`L1` = 显现域，`L2` = 收敛域。
-- **核心量**：`\hat{G}_θ`、`d-value`、`Ψ_f`、`T_dir`。
-- **基本姿态**：SRT 不是“心灵创造现实”，也不是相对主义或泛心论；它是受约束的选择现实论。
-- **读法顺序**：先读源头直觉，再读形式锚点，再看桥接、外部收敛与公众释放。
+- **SRT asks how possibilities become realities.**
+- **Reality is selected under constraint, stabilized through history, and tested by resistance.**
+- Selection is broad; consciousness is thresholded.
+- Stability is not legitimacy.
+- What becomes real must pay cost, survive resistance, and leave consequences.
+
+Minimal notation:
+
+- `L0` = latent possibilities.
+- `L1` = manifest selection.
+- `L2` = stabilized convergence.
+- `\hat{G}_θ` = embodied selection / anchoring operator.
+- `d-value`, `Ψ_f`, and `T_dir` name stake, payability / friction, and directional readability.
+
+SRT is not "mind creates reality," not relativism, and not panpsychism. It is a selection-first theory of constrained reality formation.
 
 ```mermaid
 flowchart LR
@@ -30,57 +40,80 @@ This repository is now organized around five frontstage reading layers:
 
 | Layer | Role | Start here |
 |---|---|---|
-| `01_Source_Intuition` | Restores the founding force: selection before existence, subject as stabilized selection-pattern, value as consequence-bearing non-substitutability. | [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md) |
-| `02_Formal_Anchors` | Defines the load-bearing skeleton: axioms, equations, canonical variables, symbols, open tensions. | [`02_Formal_Anchors/README.md`](02_Formal_Anchors/README.md) |
-| `03_Bridges` | Translates SRT into neighboring theories and domains. Bridge files make SRT comparable; they do not prove SRT. | [`03_Bridges/README.md`](03_Bridges/README.md) |
-| `04_External_Convergence` | Grades independent findings from other fields as support, proxy, constraint, differential prediction, or pressure. | [`04_External_Convergence/README.md`](04_External_Convergence/README.md) |
-| `05_Public_Release` | Prepares public one-pagers, essays, talks, FAQ, scripts, and visual maps. | [`05_Public_Release/README.md`](05_Public_Release/README.md) |
+| `01_Source_Intuition/` | Restores the founding force: selection before existence, subject as stabilized selection-pattern, value as consequence-bearing non-substitutability. | [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md) |
+| `02_Formal_Anchors/` | Defines the load-bearing skeleton: axioms, equations, canonical variables, claim levels, symbols, and open tensions. | [`02_Formal_Anchors/README.md`](02_Formal_Anchors/README.md) |
+| `03_Bridges/` | Translates SRT into neighboring theories and domains. Bridge files make SRT comparable; they do not prove SRT. | [`03_Bridges/README.md`](03_Bridges/README.md) |
+| `04_External_Convergence/` | Grades independent findings from other fields as support, proxy, constraint, differential prediction, or pressure. | [`04_External_Convergence/README.md`](04_External_Convergence/README.md) |
+| `05_Public_Release/` | Prepares public one-pagers, essays, talks, FAQ, scripts, and visual maps. | [`05_Public_Release/README.md`](05_Public_Release/README.md) |
 
 Guiding rule:
 
 > Source intuition gives SRT force. Formal anchors give SRT hardness. Bridges make SRT comparable. External convergence gives SRT support and pressure. Public release gives SRT reach.
+>
+> Governance keeps SRT from overclaiming.
 
 ## How to read SRT
 
 ### If you are new
 
 1. [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md)
-2. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
-3. [`SRT_1H_Onboarding.md`](SRT_1H_Onboarding.md)
-4. [`SRT_Navigation_Map.md`](SRT_Navigation_Map.md)
+2. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
+3. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
+4. [`START_HERE.md`](START_HERE.md)
+5. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 
-### If you want the philosophical source
+### If you are a philosophy reader
 
 1. [`Core_Law/SRT_L0_Metaphysics.md`](Core_Law/SRT_L0_Metaphysics.md)
 2. [`Core_Law/SRT_Selection_Argument.md`](Core_Law/SRT_Selection_Argument.md)
 3. [`Core_Law/SRT_Core_Text_CN_Euclid.md`](Core_Law/SRT_Core_Text_CN_Euclid.md)
 4. [`Core_Law/SRT_Core_Text_CN.md`](Core_Law/SRT_Core_Text_CN.md)
 
-### If you want the formal core
+### If you are a formal core reader
 
 1. [`02_Formal_Anchors/README.md`](02_Formal_Anchors/README.md)
-2. [`Core/SRT_Core_21_Minimal_Axioms.md`](Core/SRT_Core_21_Minimal_Axioms.md)
-3. [`Core/SRT_Core_21b_Constitutive_Theorems.md`](Core/SRT_Core_21b_Constitutive_Theorems.md)
-4. [`Core/SRT_Core_21_Formal_Axioms.md`](Core/SRT_Core_21_Formal_Axioms.md)
-5. [`Core/SRT_Core_21c_Bridge_Hypotheses.md`](Core/SRT_Core_21c_Bridge_Hypotheses.md)
-6. [`Core/SRT_Core_22_Equations.md`](Core/SRT_Core_22_Equations.md)
-7. [`_SRT_SYMBOL_TABLE.md`](_SRT_SYMBOL_TABLE.md)
-8. [`_SRT_D_VALUE_CANONICAL.md`](_SRT_D_VALUE_CANONICAL.md), [`_SRT_PSI_F_CANONICAL.md`](_SRT_PSI_F_CANONICAL.md), [`_SRT_T_DIR_CANONICAL.md`](_SRT_T_DIR_CANONICAL.md)
-9. [`Core/SRT_OPEN_TENSIONS.md`](Core/SRT_OPEN_TENSIONS.md)
+2. [`02_Formal_Anchors/INDEX.md`](02_Formal_Anchors/INDEX.md)
+3. [`Core/SRT_Core_21_Minimal_Axioms.md`](Core/SRT_Core_21_Minimal_Axioms.md)
+4. [`Core/SRT_Core_21b_Constitutive_Theorems.md`](Core/SRT_Core_21b_Constitutive_Theorems.md)
+5. [`Core/SRT_Core_22_Equations.md`](Core/SRT_Core_22_Equations.md)
+6. [`_SRT_SYMBOL_TABLE.md`](_SRT_SYMBOL_TABLE.md)
+7. [`Core/SRT_OPEN_TENSIONS.md`](Core/SRT_OPEN_TENSIONS.md)
 
-### If you want cross-domain translation
+### If you are an AI / consciousness reader
 
-Start with [`03_Bridges/README.md`](03_Bridges/README.md), then choose a domain:
+1. [`03_Bridges/README.md`](03_Bridges/README.md)
+2. [`AI/README.md`](AI/README.md)
+3. [`AI/AI_POSITIONING_NOTE.md`](AI/AI_POSITIONING_NOTE.md)
+4. [`AI/SRT_AI_Claim_Status.md`](AI/SRT_AI_Claim_Status.md)
+5. [`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`](AI/SRT_AI_03_Consciousness_Framework_CompactCore.md)
+6. [`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`](Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md)
 
-- AI → [`AI/README.md`](AI/README.md)
-- Neuroscience → [`Neuroscience/README.md`](Neuroscience/README.md)
-- Physics → [`Physics/README.md`](Physics/README.md)
-- Philosophy → [`Philosophy/_SRT_Phil_Axioms.md`](Philosophy/_SRT_Phil_Axioms.md)
-- Spirituality → [`Spirituality/_SRT_Spirit_Axioms.md`](Spirituality/_SRT_Spirit_Axioms.md)
+### If you are a physics / neuroscience reader
 
-### If you want external support, proxy, or pressure-testing
+1. [`03_Bridges/BRIDGE_INDEX.md`](03_Bridges/BRIDGE_INDEX.md)
+2. [`Physics/README.md`](Physics/README.md) or [`Neuroscience/README.md`](Neuroscience/README.md)
+3. [`04_External_Convergence/README.md`](04_External_Convergence/README.md)
+4. [`04_External_Convergence/EVIDENCE_GRADING.md`](04_External_Convergence/EVIDENCE_GRADING.md)
 
-Start with [`04_External_Convergence/README.md`](04_External_Convergence/README.md).
+### If you are a public reader
+
+1. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
+2. [`05_Public_Release/README.md`](05_Public_Release/README.md)
+3. [`05_Public_Release/PUBLIC_INDEX.md`](05_Public_Release/PUBLIC_INDEX.md)
+4. [`05_Public_Release/PUBLIC_GUARDRAILS.md`](05_Public_Release/PUBLIC_GUARDRAILS.md)
+5. [`SRT_FAQ_CRITICAL.md`](SRT_FAQ_CRITICAL.md)
+
+### If you are a collaborator / agent
+
+This path is for editing, auditing, or running repository workflows, not for first-time public reading.
+
+1. [`AGENTS.md`](AGENTS.md)
+2. [`SRT_AI_START.md`](SRT_AI_START.md)
+3. [`STATUS.md`](STATUS.md)
+4. [`_SRT_INDEX.md`](_SRT_INDEX.md)
+5. [`_SRT_SYMBOL_TABLE.md`](_SRT_SYMBOL_TABLE.md)
+
+## External support, proxy, and pressure
 
 Related experiment and measurement files:
 
@@ -94,6 +127,7 @@ Start with [`05_Public_Release/README.md`](05_Public_Release/README.md).
 
 Current public-facing anchors:
 
+- Public one-page summary: [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
 - [`Philosophy/SRT_Philosophy_Public_OnePager.md`](Philosophy/SRT_Philosophy_Public_OnePager.md)
 - [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 - [`SRT_1H_Onboarding.md`](SRT_1H_Onboarding.md)
@@ -107,14 +141,15 @@ Use this distinction:
 >
 > 桥接负责互译，收敛负责增强，实验负责检验，治理负责降承诺。
 
-- `03_Bridges`: how SRT maps to another framework.
-- `04_External_Convergence`: whether external findings independently support, constrain, or pressure SRT constructs.
-- `SRT_EXP_*`: how claims become measurable or falsifiable.
-- `Governance/`: how claim status, edit rules, and canonical boundaries are maintained.
+- `03_Bridges/`: translation and comparison. Bridge files do not prove SRT.
+- `04_External_Convergence/`: external support, proxy, constraint, and pressure. This layer does not directly prove SRT.
+- `Experiments/` and `SRT_EXP_*`: lab-facing tests, measurement maps, and falsification windows.
+- `Governance/`: claim discipline, edit rules, and anti-overclaiming controls.
+- `Operations/`: workflow, logs, material intake, and repository maintenance.
 
 ## Repository operations
 
-Operational and governance files remain available, but they are no longer the first face of the repository.
+Governance and Operations are necessary maintenance layers, not the first face of SRT.
 
 - `AGENTS.md`：运行协议主入口
 - `CLAUDE.md`：Claude 兼容包装层
@@ -122,6 +157,8 @@ Operational and governance files remain available, but they are no longer the fi
 - `STATUS.md`：当前状态面板
 - `_SRT_INDEX.md`：机器索引
 - `ANNEX_REGISTRY.md`：annex / interface 层注册表
+- `Governance/README.md`：治理层入口
+- `Operations/README.md`：运行层入口
 - `Operations/Closure_Index_2026-04-29.md`：最近结构治理闭环入口
 - `FRONTSTAGE_RESTRUCTURE_PLAN.md`：本轮前台结构重构计划
 

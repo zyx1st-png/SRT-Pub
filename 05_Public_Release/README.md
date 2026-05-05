@@ -2,7 +2,11 @@
 
 This layer prepares SRT for public readers, talks, essays, short explanations, videos, newsletters, outreach emails, and visual maps.
 
-Public release is not a weaker version of SRT. It is the controlled release of SRT's force into public language.
+Public release is a controlled public-facing layer. It is not canonical and not a substitute for formal anchors.
+
+公众释放不是低配版 SRT，也不是夸张版 SRT，而是受控释放版。
+
+Public materials should stay sharp without outrunning the formal anchors.
 
 ## Role
 
@@ -23,14 +27,18 @@ Even shorter:
 
 > Reality is selected under constraint, stabilized through history, and tested by resistance.
 
-## Current public-facing anchors
+## First Public Entries
 
-Until a later migration pass, this layer points to existing public files rather than moving them.
+Use these before sending a reader into formal anchors, bridges, evidence drafts, or repository maintenance layers.
 
-- [`../Philosophy/SRT_Philosophy_Public_OnePager.md`](../Philosophy/SRT_Philosophy_Public_OnePager.md)
-- [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md)
-- [`../SRT_1H_Onboarding.md`](../SRT_1H_Onboarding.md)
-- [`../SRT_FAQ_CRITICAL.md`](../SRT_FAQ_CRITICAL.md)
+- English one-page: [`SRT_IN_ONE_PAGE.md`](SRT_IN_ONE_PAGE.md) — English public one-page summary; best for first English readers.
+- 中文一页版: [`SRT_IN_ONE_PAGE_CN.md`](SRT_IN_ONE_PAGE_CN.md) — 中文公众一页版；适合中文读者、知乎/公众号/社群介绍。
+- Quick Start: [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md) — frontstage new-reader guide; broader repository orientation.
+- Public guardrails: [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) — language guardrails for public-facing materials.
+
+## Current Public Index
+
+[`PUBLIC_INDEX.md`](PUBLIC_INDEX.md) maps current public-facing material without moving files.
 
 ## Suggested future folders
 
@@ -44,23 +52,7 @@ Until a later migration pass, this layer points to existing public files rather 
 
 ## Public guardrails
 
-Avoid saying:
-
-- SRT explains everything.
-- SRT proves all other theories wrong.
-- SRT says mind creates reality.
-- SRT says truth is relative.
-- SRT says everything is conscious.
-- SRT is beyond testing.
-
-Prefer saying:
-
-- SRT asks how possibilities become realities.
-- SRT studies how repeated realities harden into the world we inherit.
-- SRT is selection-first, not mind-first.
-- Selection is broad; consciousness is thresholded.
-- Stability is not the same as legitimacy.
-- What becomes real must pay cost, survive resistance, and leave consequences.
+Use [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) before drafting public essays, scripts, one-pagers, talks, or social posts.
 
 ## Boundary
 

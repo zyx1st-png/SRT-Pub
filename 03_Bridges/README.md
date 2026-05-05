@@ -2,7 +2,9 @@
 
 This layer translates SRT into the languages of neighboring theories, disciplines, and problem domains.
 
-Bridge files do not prove SRT. They make SRT comparable.
+Bridge translates. It does not prove SRT.
+
+Bridge files make SRT comparable. They do not automatically upgrade SRT claims into canonical commitments.
 
 ## Role
 
@@ -18,12 +20,8 @@ Bridge files do not prove SRT. They make SRT comparable.
 
 Until a later migration pass, this layer points to existing domain folders rather than moving them.
 
-- [`../AI/`](../AI/) — AI, agency, consciousness, architecture, and stake-coupling.
-- [`../Neuroscience/`](../Neuroscience/) — neural mechanisms, consciousness mechanisms, experiments, and clinical interfaces.
-- [`../Physics/`](../Physics/) — quantum, cosmology, measurement, and physical analogies.
-- [`../Philosophy/`](../Philosophy/) — foundations, subjecthood, ethics, social theory, political philosophy.
-- [`../Spirituality/`](../Spirituality/) — praxis, loss and return, community / sangha.
-- [`../Core/SRT_Core_21c_Bridge_Hypotheses.md`](../Core/SRT_Core_21c_Bridge_Hypotheses.md) — core-facing bridge hypotheses.
+- [`BRIDGE_INDEX.md`](BRIDGE_INDEX.md) maps existing bridge files and domain folders.
+- [`BRIDGE_TEMPLATE.md`](BRIDGE_TEMPLATE.md) provides the standard bridge-card format.
 
 ## Bridge versus external convergence
 

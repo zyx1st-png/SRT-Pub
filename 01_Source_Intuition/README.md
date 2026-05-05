@@ -10,7 +10,7 @@ SRT does not begin as a documentation system. It begins from a reversal:
 
 ## Role
 
-`01_Source_Intuition` is the frontstage home for SRT's founding intuition, philosophical essays, non-formal descriptions, and source-level orientation.
+`01_Source_Intuition` is the frontstage home for SRT's founding intuition, philosophical source texts, non-formal descriptions, and source-level orientation.
 
 It should answer:
 
@@ -25,6 +25,8 @@ It should answer:
 SRT's founding intuition can be stated as:
 
 > Existence is not a static inventory of objects. It is the stabilized trace of selection under constraint, cost, concern, and history.
+>
+> 存在不是静态对象清单，而是选择在约束、代价、关切与历史下留下的稳定痕迹。
 
 More compactly:
 
@@ -38,7 +40,13 @@ The current repository already contains source-level files. Until a later migrat
 - [`../Core_Law/SRT_Selection_Argument.md`](../Core_Law/SRT_Selection_Argument.md) — positive argument and objection handling for selection before existence.
 - [`../Core_Law/SRT_Core_Text_CN_Euclid.md`](../Core_Law/SRT_Core_Text_CN_Euclid.md) — Chinese core-text candidate.
 - [`../Core_Law/SRT_Core_Text_CN.md`](../Core_Law/SRT_Core_Text_CN.md) — historical Chinese core-text entry.
+- [`../Manifesto/SRT_MANIFESTO.md`](../Manifesto/SRT_MANIFESTO.md) — worldview-level manifesto, not a canonical definition source.
 - [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md) — introductory reader path.
+
+## Local files
+
+- [`INDEX.md`](INDEX.md) maps existing source-intuition files without moving them.
+- [`CORE_REVERSALS.md`](CORE_REVERSALS.md) lists the five founding reversals and their formal anchors.
 
 ## Writing mode
 
@@ -55,4 +63,4 @@ Preferred style:
 
 ## Boundary
 
-This layer is not a substitute for canonical definitions. It is the source of orientation and force. Formal definitions belong in `02_Formal_Anchors`; external theory translation belongs in `03_Bridges`; evidence grading belongs in `04_External_Convergence`; public-facing release belongs in `05_Public_Release`.
+This layer is not a substitute for canonical definitions. It restores SRT's force and orientation. Formal definitions belong in `02_Formal_Anchors`; external theory translation belongs in `03_Bridges`; evidence grading belongs in `04_External_Convergence`; public-facing release belongs in `05_Public_Release`.
