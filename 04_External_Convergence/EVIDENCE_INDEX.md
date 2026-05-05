@@ -22,7 +22,7 @@ Do not list candidates as accepted evidence.
 
 | ID | Domain | SRT Anchor | Level | Status | Summary | Pressure Link |
 |---|---|---|---|---|---|---|
-| [`EC-IG-FISHER-PSIF`](Mathematics_Information/EC-IG-Fisher-PsiF.md) | mathematics / information geometry | `Psi_f`; selection cost | E2 | draft_v1; not accepted | Fisher information geometry as a candidate structural interface for local distinguishability, transition burden, and parameter-space friction. | pending ledger review |
+| [`EC-IG-FISHER-PSIF`](Mathematics_Information/EC-IG-Fisher-PsiF.md) | mathematics / information geometry | `Psi_f`; selection cost | E2 | draft_v1; not accepted | Fisher information geometry as a candidate structural interface for local distinguishability, transition burden, and parameter-space friction. | [`CL-IG-FISHER-GENERIC-DIFFICULTY`](CONTRADICTION_LEDGER.md#cl-ig-fisher-generic-difficulty) |
 
 Draft rows are not accepted evidence.
 
