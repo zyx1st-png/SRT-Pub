@@ -7,7 +7,7 @@ claim_mode: public_summary
 canonical: false
 ---
 
-# SRT In One Page
+# SRT in One Page
 
 > Reality is not first given and then selected. Reality becomes determinate through constrained selection.
 >
@@ -39,6 +39,8 @@ SRT uses three simple domains to keep the structure visible.
 
 `L1` is manifest reality. It is what has become actual here and now for a system, observer-position, situation, or process. It is the selected slice.
 
+This does not mean private appearance is enough; stronger L1 claims must be tested by constraint, resistance, and consequence.
+
 `L2` is stabilized convergence. It is what hardens when selections repeat, overlap, and become durable: habits, language, institutions, scientific objects, shared worlds, identities, and inherited expectations.
 
 The important warning is this: `L2` can feel like the original world because it is stable. But stability is not legitimacy. A pattern can be stable and still be harmful, false, coercive, or costly.
@@ -49,7 +51,7 @@ Selection in SRT is broader than conscious choice. It includes attention, action
 
 So when SRT says reality becomes determinate through selection, it is not saying a person simply wills the world into being. It is saying that determinacy requires a selecting structure: something that constrains, anchors, filters, pays, repeats, and stabilizes.
 
-That is why SRT often speaks of `G_hat_theta` or `Ĝθ`: the embodied selection / anchoring operator. The `theta` names the parameters of selection: body, history, training, environment, memory, context, and system-state.
+That is why SRT often speaks of `G_hat_theta` or `Ĝθ`: a parameterized selection / anchoring operator. The `theta` names the conditions of selection: embodiment when relevant, but also history, training, environment, memory, context, institutional position, model structure, and system-state.
 
 ## What d-value means
 
@@ -117,4 +119,4 @@ This matters for value because value is not just preference. A society can rewar
 
 If you want one safe summary:
 
-> SRT asks how possibilities become realities. Reality becomes determinate through constrained selection, is stabilized through history, and is tested by resistance. Selection is broader than attention, consciousness is thresholded, and stability is not legitimacy.
+> SRT asks how possibilities become realities. Reality becomes determinate through constrained selection, is stabilized through history, and is tested by resistance. Selection is broader than conscious choice, consciousness is thresholded, and stability is not legitimacy.
