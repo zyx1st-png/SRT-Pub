@@ -1,996 +1,687 @@
----
-id: SRT-PAPER-PHILPAPERS-REVIEW-V2
-type: paper_draft
-tags: [Paper, PhilPapers, PhilArchive, Review, SRT, MetaOntology, ExternalResonance]
-status: draft_v2
-layer: meta
-epistemic_layer: bridge
-claim_mode: mixed
-claim_level: P0-P5
-dependency:
-  - SRT-STATUS
-  - SRT-CLAIM-LADDER
-  - SRT-CORE-21
-  - SRT-CORE-21B-CONSTITUTIVE-THEOREMS
-  - SRT-CORE-21C-BRIDGE-HYPOTHESES
-  - SRT-PSIF-CANONICAL
-  - SRT-D-VALUE-CANONICAL
-  - SRT-T-DIR-CANONICAL
-  - SRT-MATERIAL-LOG
-  - SRT-EXP-MEASUREMAP
-  - SRT-OPEN-TENSIONS
----
+# Selective Reality Theory in Context: A Literature Review of Manifestation, Selection, Friction, and Stabilized Reality
 
-# Selective Reality Theory: A Selection-First Meta-Ontology of Manifestation, Friction, Stabilized Reality, and External Resonance
+**Author:** Yuxin Zhang
 
-**Author:** Yuxin Zhang  
-**Draft version:** PhilPapers / PhilArchive Review Draft v2  
-**Date:** April 2026  
-**Status:** Working review paper; not a journal-submission final. External references and metadata should be verified before public upload.
+**Version:** PhilArchive review draft v2.2
 
----
+**Date:** May 2026
 
 ## Abstract
 
-Selective Reality Theory (SRT) is a selection-first meta-ontology that models determinate reality as the outcome of constrained selection from latent possibility. Instead of beginning from matter, mind, computation, information, or language as already-given primitives, SRT begins from the event by which an open field of possible differences becomes a manifest, stable, actionable, and shareable reality. Its central structure distinguishes three domains: `L0`, the latent domain of selectable possibility; `L1`, the manifest domain of actualized events, experiences, measurements, and states; and `L2`, the convergence domain in which repeated selections sediment into habits, norms, institutions, scientific regularities, and shared worlds. The central operator of the theory, the Ghost Operator `G_hat_theta`, maps `L0` into `L1` under embodied, historical, cognitive, social, and instrumental constraints.
+This paper reviews Selective Reality Theory (SRT) in relation to major literatures in metaphysics, philosophy of mind, consciousness science, artificial intelligence, quantum foundations, philosophy of biology, social ontology, language, and normativity. Earlier presentations of SRT can read as internal theoretical exposition: they introduce `L0`, `L1`, `L2`, `G_hat_theta`, `Psi_f`, and `d-value`, then project those terms across domains. The present version reframes the article as an external literature review. It asks: What are the main research traditions in the relevant fields? What does each tradition claim about reality, manifestation, cognition, agency, objectivity, or social stabilization? Where do these traditions disagree? What does SRT accept from them, where does it revise them, and where is it challenged by them?
 
-This paper presents the current hardened form of SRT as a cross-domain theoretical framework. It distinguishes primitive axioms, constitutive theorems, bridge hypotheses, and operational proxies, rather than treating all SRT claims as equally foundational. Two constructs organize the framework: `Psi_f`, ontological friction or payability burden, and `d-value`, stake-coupled concern or existential bandwidth. `Psi_f` names the structural cost of compressing open possibility into maintainable reality; `d-value` names the degree to which a system's selections are coupled to irreversible stakes, future continuity, and concern-weighted non-substitutability.
+The review argues that SRT is best understood as a selection-first meta-ontology of manifestation and stabilization. It does not aim to replace physicalism, idealism, process philosophy, phenomenology, global workspace theory, integrated information theory, predictive processing, active inference, decoherence theory, social constructionism, or normative ethics. Instead, it proposes a cross-domain grammar: latent possibility becomes determinate through constrained selection; manifestation carries friction or payability burden; repeated selections sediment into stabilizing constraints; and stake-bearing systems differ from merely capable systems by the way consequences return into their future selectability. In SRT terms, `L0` names latent selectability, `L1` names manifest anchoring, `L2` names stabilized selection history, `G_hat_theta` names the finite selection operator, `Psi_f` names ontological friction, and `d-value` names stake-coupled concern or non-substitutable consequence bandwidth.
 
-The paper then introduces a distinctive feature of the current SRT repository: the external resonance and material integration layer. SRT is not developed as a closed speculative system. External materials are screened through an A/B/C pipeline: direct integration, delayed observation, or non-integration. A material is incorporated only if it introduces a new mechanism window, forces a boundary correction, strengthens an existing construct, clarifies an operational proxy, or exposes residual pressure. This procedure is meant to prevent confirmation-only citation and to keep domain bridges from being mistaken for core axioms.
+The review finds that SRT gains support from several converging literatures: process and pragmatist critiques of static substance, phenomenological accounts of manifestation, enactive and active-inference accounts of organismic sense-making, global workspace and integrated-information accounts of conscious access and integration, decoherence and quantum-Darwinist accounts of record stabilization, social-ontological accounts of institutional facts, and normative theories that resist reducing value to preference or utility. It is also challenged by these same literatures. Predictive processing may absorb much of the friction vocabulary; global workspace and integrated information theories may explain consciousness without SRT's additional ontology; decoherence and information thermodynamics may explain objectivity without selection-first metaphysics; social constructionism may cover collective stabilization; and ordinary preference, salience, or stress measures may explain what SRT calls `d-value` or `Psi_f`. The paper concludes by identifying the empirical and conceptual discriminators SRT must satisfy to become more than an internally coherent vocabulary.
 
-The paper surveys SRT's domain projections in consciousness science, neuroscience, artificial intelligence, quantum foundations, information geometry, biology, disease, social ontology, economics, ethics, political philosophy, language, cognition, and spiritual praxis. Across these domains, SRT proposes that reality is neither merely discovered nor merely invented, but selected under constraint, paid for through friction, stabilized through history, tested by resistance, and reopened through real choice. The paper closes by identifying unresolved tensions, including the origin of selectability, the status of Fisher-geometric projections, the boundary between capacity and stake, the distinction between healthy and lethal `L2`, the possibility of synthetic stake, and the empirical conditions under which SRT should be revised or narrowed.
+**Keywords:** Selective Reality Theory; literature review; selection realism; manifestation; ontological friction; d-value; consciousness; artificial intelligence; social ontology; quantum foundations; normativity; philosophy of mind; metaphysics.
 
-**Keywords:** Selective Reality Theory; selection realism; layered realism; ontological friction; d-value; consciousness; AI consciousness; social ontology; information geometry; free energy principle; metaphysics; philosophy of mind; external resonance; theory audit.
+## 1. Introduction: from internal exposition to literature review
 
----
-
-## 1. Introduction: Why Selection-First?
-
-Most philosophical and scientific theories begin from a privileged ground. Physicalism begins from matter or physical structure. Idealism begins from mind or experience. Computationalism begins from information processing. Linguistic and social constructivist approaches begin from discourse, practice, or institutional stabilization. Process philosophy begins from becoming rather than substance. Each starting point captures something important, but each also risks assuming the very determinacy it is meant to explain.
-
-Selective Reality Theory begins from a different question:
+SRT begins from a deceptively simple question:
 
 > What must occur for anything to become determinate enough to count as real, experienced, actionable, measurable, or shareable?
 
-SRT's central inversion is that determinate existence is not simply prior to selection. Rather, determinate existence is the outcome of constrained selection. This does not mean that a human mind arbitrarily creates the world. Nor does it mean that reality is merely subjective. The claim is more precise: a possible difference becomes manifest only when a selection process anchors it as a determinate `L1` state under constraints, pays the relevant friction, and, if repeated or coordinated, stabilizes it into `L2`.
-
-In compact form:
+The theory's compact answer is that determinate reality is selected under constraint, paid for through friction, stabilized through history, and reopened through real choice. Its core vocabulary is now relatively stable:
 
 ```text
-L0 --[G_hat_theta, paying Psi_f]--> L1 --[writeback / stabilization]--> L2
-      ^                                                               |
-      |---------------------------------------------------------------|
-                    downward constraint on future selection
+L0 -- G_hat_theta / Psi_f --> L1 -- stabilization / writeback --> L2
+ ^                                                               |
+ |---------------------------------------------------------------|
+              downward constraint on future selection
 ```
 
-Here:
+This internal architecture is useful, but by itself it does not make a literature review. A review must do more than present SRT in its own terms. It must place SRT among existing research traditions, show what those traditions already explain, identify where they conflict, and state what SRT contributes beyond reinterpretive vocabulary.
 
-- `L0` is the latent domain of selectable possibility.
-- `L1` is the manifest domain of actualized reality.
-- `L2` is the convergence domain of stabilized selection history.
-- `G_hat_theta` is the embodied selection operator.
-- `Psi_f` is the ontological friction or payability burden of making possibility real.
-- `d-value` is the stake-coupled bandwidth of concern.
+This paper therefore shifts the order of presentation. Instead of beginning with the SRT system and then citing external works as support, it begins with the external literatures and asks how SRT stands in relation to them. The guiding questions are:
 
-SRT's philosophical ambition is high, but its current mature form is not a flat list of bold claims. It separates P0 primitive axioms, P1 constitutive theorems, P2/P3 bridge mappings, and P4 operational or laboratory hypotheses. This hierarchy is crucial. Without it, SRT would risk becoming an overextended system in which every suggestive analogy is treated as a theorem. With it, SRT can say: this is core, this is constitutive, this is a bridge, this is an operational proxy, and this is only a material resonance or open pressure.
+1. What are the major traditions relevant to manifestation, selection, agency, objectivity, and stabilization?
+2. What is each tradition's core claim?
+3. Where do the traditions disagree?
+4. What does SRT absorb, revise, or reject?
+5. Which evidence or arguments support SRT, and which ones pressure it?
 
-The present paper has five goals. First, it presents the core architecture of SRT. Second, it explains `Psi_f` and `d-value`. Third, it introduces the external material integration pipeline that has shaped the current repository. Fourth, it surveys major domain projections: consciousness, AI, physics, biology, social systems, language, ethics, and spirituality. Fifth, it identifies open tensions and failure conditions.
+The resulting paper is a narrative and integrative review, not a systematic database review. Its purpose is conceptual mapping and theory positioning. It draws on classic and contemporary work in metaphysics, phenomenology, process philosophy, cognitive science, consciousness studies, AI ethics, quantum foundations, biology, social ontology, language, and normativity.
 
-The aim is not to prove that SRT has already solved metaphysics, consciousness, physics, and social theory. The aim is to show that SRT offers a disciplined grammar for a recurring structure:
+## 2. Review scope and comparative criteria
 
-> latent possibility -> constrained selection -> manifest actuality -> stabilized convergence -> downward constraint.
+The review compares literatures along five dimensions:
 
----
+| Dimension | Question |
+|---|---|
+| Ontological starting point | What does the tradition treat as basic: matter, mind, process, experience, information, practice, or selection? |
+| Manifestation mechanism | How does something become determinate, experienced, measured, or socially recognized? |
+| Constraint and stabilization | How are regularities, habits, records, norms, objects, or institutions stabilized? |
+| Agency and stake | Does the tradition distinguish mere capacity from consequence-bearing concern? |
+| Failure pressure for SRT | Could the tradition explain SRT's target phenomena without SRT's added vocabulary? |
 
-## 2. Claim Architecture: Core, Bridge, Proxy, and Resonance
-
-A cross-domain theory needs a claim architecture. Without one, conceptual reach becomes conceptual inflation. The current SRT repository therefore distinguishes several layers of commitment.
-
-| Layer | Status | Role |
-|---|---|---|
-| P0 | Primitive axioms | Minimal grammar without which SRT collapses |
-| P1 | Constitutive theorems | Internal consequences once the P0 core is granted |
-| P2 | Canonical interpretations | Stable readings within the SRT framework |
-| P3 | Bridge mappings | Cross-domain translations into physics, AI, neuroscience, social theory, etc. |
-| P4 | Lab hypotheses / proxies | Operational and empirical test windows |
-| P5 | Praxis / existential interpretation | Lived, ethical, spiritual, and applied extensions |
-
-This matters because SRT is cross-domain by design. It speaks about physics, consciousness, AI, social systems, language, and spiritual praxis. But not every statement in those domains has the same status. For example, "selection precedes determinate existence" is a core claim. "Quantum measurement can be interpreted as selection" is a physics bridge. "A particular neural or biochemical marker is a proxy for `Psi_f`" is a lab-level operational claim. "AI may spiritually endanger subject-position by providing ready-made floors" is a praxis-level claim unless independently operationalized.
-
-The minimal P0 set includes selection primacy, existence as anchoring, irreversible selection trace, and operator well-formedness. A compact expression is:
+SRT is evaluated by whether it adds explanatory structure to these dimensions. A mere relabeling would not be enough. For SRT to matter, its terms must do discriminating work:
 
 ```text
-exists(x) iff x in Range(G_hat)
+L0       must do more than "possibility."
+L1       must do more than "actuality."
+L2       must do more than "memory" or "habit."
+Psi_f    must do more than "effort," "stress," or "prediction error."
+d-value  must do more than "preference," "reward," or "salience."
 ```
 
-This should not be read as subjective idealism. It does not say that a human subject creates reality arbitrarily. It says that determinate existence, as manifest and selectable, depends on selection conditions.
+This criterion structures the rest of the review.
 
-The P1 layer includes constitutive theorems such as horizontal causality as `L2` projection, ontological time as memory horizon, `L2` downward constraint, minimal information creation, real choice moment, stable ISP, and anti-closure asymmetry. These are internal consequences of the SRT grammar rather than free-floating analogies.
+## 3. Metaphysical traditions: what is basic?
 
-The P3 and P4 layers are where SRT becomes interdisciplinary. They are also where it becomes most vulnerable. Physics, AI consciousness, social ontology, and neuroscience bridges must not be allowed to rewrite the core. A mature review must therefore show not only what SRT claims, but how it keeps its claims from overreaching.
+The first comparison concerns the starting point of reality.
 
----
+### 3.1 Physicalism
 
-## 3. The Triadic Ontology: `L0`, `L1`, and `L2`
+Physicalism treats the physical domain as ontologically basic. Its strength is discipline: it prevents arbitrary projection and ties explanation to publicly testable structure. Its weakness, for SRT's purposes, is that it can treat manifestation as already settled once physical description is given. Yet the passage from physical structure to manifest fact, conscious content, or social meaning remains philosophically contested.
 
-SRT is triadic. It is neither a dualism of mind and matter nor a monism that reduces all phenomena to one flat substrate.
+SRT absorbs physicalism's constraint discipline. It rejects the idea that physical description by itself exhausts the grammar of manifestation. The SRT question is not "is there physical implementation?" but "how does a possible difference become anchored as a determinate reality for a finite system?"
 
-### 3.1 `L0`: Latent Domain
+### 3.2 Idealism and panpsychism
 
-`L0` is the latent domain of selectable possibility. It is not nothingness. It is not private imagination. It is not best understood as a warehouse of fully formed possible objects. The safest philosophical reading is that `L0` is a modal field of selectability: the condition under which differences can become determinate through constrained selection.
+Idealist and panpsychist traditions resist the thought that experience is a late accident in an otherwise dead world. Their strength is that they keep manifestation and subjectivity from being treated as mere epiphenomena. Their risk is overextension: if experience or mind is placed everywhere, the threshold between bare occurrence, conscious content, subjecthood, agency, and responsibility becomes blurred.
 
-If `L0` were treated as a hidden world full of pre-existing objects, SRT would become a version of modal realism or metaphysical duplication. But SRT's stronger move is different: `L0` is the field from which determinacy can be selected, not a second inventory of determinate things.
+SRT absorbs the anti-view-from-nowhere impulse but rejects automatic subject inflation. It allows selection to be widespread while keeping subjecthood thresholded. In SRT, selection event, conscious content, subjecthood, agency, and responsibility are distinct levels.
 
-A useful slogan is:
+### 3.3 Process philosophy and pragmatism
 
-> `L0` is not where hidden things are; it is the field of what can become determinate.
+Process philosophy and pragmatism reject static substance as the sole model of reality. Whitehead's process metaphysics, James's radical empiricism, Peirce's pragmatism, and later practice-oriented approaches all help shift attention from fixed objects to events, relations, habits, and consequences.
 
-### 3.2 `L1`: Manifest Domain
-
-`L1` is the manifest domain of actualized events, experiences, measurements, decisions, or states. It is what becomes real for an operator after selection.
-
-`L1` should not be understood as a ghostly substance added to physics. It is better understood as the event of anchoring. A physical state, a conscious episode, a perception, a scientific measurement, a legal recognition, or a social act can all be treated as `L1` phenomena insofar as they have been selected into determinacy under constraints.
-
-SRT asks:
-
-> Under what operator, cost, boundary, and stabilization conditions does a candidate state become manifest?
-
-This question differs from the question "What is the physical substrate of the state?" It does not deny physical implementation. It asks about manifestation.
-
-### 3.3 `L2`: Convergence Domain
-
-`L2` is the domain of stabilized selection history. It includes memory, habit, language, social norms, institutions, scientific models, bodily skills, and possibly stable physical regularities insofar as they function as accumulated constraints on future selection.
-
-A repeated `L1` selection can sediment into `L2`. Once sedimented, it no longer functions merely as a record. It becomes a constraint. This is why SRT treats `L2` as downwardly causal. Past selections shape future selection.
-
-In human terms:
-
-- a habit is an `L2` path;
-- a language is a shared `L2` encoding system;
-- a scientific law is a stabilized cross-operator `L2`;
-- a social institution is an enforced collective `L2`;
-- a trauma pattern is a high-friction pathological `L2`;
-- a skill is an efficient embodied `L2`.
-
-SRT's distinctive claim is not that all these things are identical. It is that each can be read as a stabilization of selection history.
-
----
-
-## 4. The Ghost Operator `G_hat_theta`
-
-The Ghost Operator `G_hat_theta` is the central operator of SRT. It maps latent possibility into manifest actuality:
+SRT is closest to this family. It absorbs the emphasis on becoming, habit, consequence, and action. Its revision is to specify a selection grammar:
 
 ```text
-G_hat_theta : L0 -> L1
+latent selectability -> constrained selection -> manifestation -> stabilization -> future constraint
 ```
 
-The parameter `theta` is crucial. Selection is never parameter-free. `theta` includes embodiment, perceptual structure, cognitive history, affective state, cultural background, language, instrumentation, social position, and inherited `L2`.
+Where process traditions often emphasize becoming in broad metaphysical terms, SRT introduces `G_hat_theta`, `Psi_f`, and `d-value` to distinguish selection position, cost, and stake.
 
-This is why SRT is not subjective idealism. A subject does not arbitrarily project a world. A finite operator selects under constraints.
+### 3.4 Phenomenology
 
-The operator has at least four roles:
+Phenomenology begins from appearing, intentionality, embodiment, temporality, and the structure of lived experience. Its strength is that manifestation is not treated as an afterthought. Husserl, Merleau-Ponty, Thompson, Varela, and related enactive traditions keep experience, body, and world intertwined.
 
-1. **Manifestation**: it selects a determinate state from latent possibility.
-2. **Embodiment**: it encodes the finite structure of the selecting system.
-3. **Filtering**: it determines which possibilities are accessible.
-4. **Writeback**: its outputs can sediment into `L2` and reshape later selection.
+SRT absorbs the priority of manifestation and embodiment. It revises phenomenology by adding an explicit stabilization layer: not only how something appears, but how repeated appearances, actions, and records sediment into future constraints.
 
-In consciousness, `G_hat_theta` may correspond to embodied neural selection. In physics, it can be used as a bridge for measurement or anchoring. In social theory, it can be extended to multi-operator systems. In AI, it becomes the question of whether a system merely rearranges `L2` tokens or genuinely participates in `L0 -> L1` anchoring.
+### 3.5 Social construction and institutional ontology
 
-A crucial boundary remains: SRT has not yet fully explained the origin of selectability itself. It has formalized what a selection operator must do and how selection produces manifestation, but the first emergence of selectable agency remains an open metaphysical pressure point.
+Social constructionist and institutional theories explain how money, status, gender, law, property, and institutions become real through recognition, practice, rule, and enforcement. Berger and Luckmann, Searle, Hacking, Haslanger, and Fricker show that social reality is neither private fantasy nor ordinary physical objecthood.
 
----
+SRT absorbs the core insight that stabilized recognition creates real constraints. It revises the framework by distinguishing stabilization from legitimacy. A norm can be real as `L2` while remaining ethically pathological if it exports friction, blocks re-selection, or narrows subject-generation.
 
-## 5. `Psi_f`: Ontological Friction and Payability
+### 3.6 Summary table
 
-The most important concept after selection itself is `Psi_f`, or ontological friction.
-
-`Psi_f` is the payability burden incurred when `G_hat_theta` compresses open possibility into a maintainable, actionable, coordinatable `L1` reality slice.
-
-In plain language:
-
-> `Psi_f` is the cost of making possibility real.
-
-But this cost must be carefully distinguished from simpler notions. `Psi_f` is not subjective pain, ordinary effort, task difficulty, prediction error, raw energy use, Fisher metric itself, or any single biological stress marker. These may be proxies or projections, but they are not the construct itself.
-
-### 5.1 Three Readings of `Psi_f`
-
-SRT currently distinguishes three readings.
-
-First, `Psi_f` is **impedance**: the resistance encountered when possibility is forced into determinacy.
-
-Second, `Psi_f` is **cost**: the burden paid over time in energy, attention, risk, reorganization, recovery, or structural complexity.
-
-Third, `Psi_f` has a **geometric projection**: under suitable statistical-manifold conditions, local selection cost can be modeled through Fisher-Rao geometry.
-
-The geometric reading is powerful, but it is not unrestricted. SRT should not read `Psi_f == g_F` as a literal identity. The correct reading is:
-
-> the local information-geometric projection of `Psi_f` is induced by the Fisher-Rao metric.
-
-A representative local expression is:
-
-```text
-delta Psi_f^geom = 1/2 dtheta^T g_F(theta) dtheta + O(||dtheta||^3)
-```
-
-This expression does not define `Psi_f` globally. It gives a projection under specific assumptions.
-
-### 5.2 Payability
-
-The cross-scale invariant of `Psi_f` is not unit identity. A quantum, neural, psychological, and social system do not pay the same kind of cost in the same unit.
-
-The invariant is payability:
-
-```text
-Payable(X, Delta t) iff alpha P_sel^X(Delta t) >= beta Psi_f^X(Delta t) + gamma S_noise^X(Delta t)
-```
-
-This means a system can bear a selection burden while maintaining closure, identity-continuity, and future selection capacity.
-
-Low `Psi_f` is not always good. Zero friction can mean no real stake. Excessive friction can collapse the system. The relevant region is:
-
-```text
-Psi_f > 0 and payable
-```
-
-This is why suffering, learning, trauma, reform, and creativity are all important SRT cases. They are not merely difficult. They involve reconfiguration under payability constraints.
-
----
-
-## 6. `d-value`: Stake-Coupled Concern
-
-`d-value` is the second major construct. Earlier versions of SRT sometimes approached `d` through effective dimension or Fisher spectra. The current canonical definition is more precise. Bare `d` is defined as a scalar summary of stake-coupled concern:
-
-```text
-d(x) = ||partial U / partial S||
-```
-
-That is, `d` measures the sensitivity of a system's utility or concern structure to irreversible risk states.
-
-This yields the hierarchy:
-
-```text
-D_eff >= d_stakes == d_canonical
-```
-
-The distinction is essential.
-
-A system may have high capacity without high stake. A large language model may distinguish many states, generate complex outputs, and simulate concern, but if consequences do not return to its own closure, identity-continuity, or future selection capacity, its `d_stakes` remains minimal.
-
-Conversely, a simple organism may have limited cognitive complexity but strong stake-coupled selection: damage, hunger, threat, and environmental change directly affect its future viability.
-
-### 6.1 Value as Non-Substitutability
-
-SRT does not reduce value to reward, preference, salience, or self-report. Value is better understood as concern-weighted non-substitutability.
-
-A selection has value when its loss, blockage, or substitution forces non-trivial reorganization in the system's future selection capacity, identity-continuity, or consequence-return structure.
-
-Thus:
-
-```text
-value != reward intensity
-value != preference strength
-value = concern-weighted non-substitutability under consequence return
-```
-
-This distinction avoids both crude utilitarian reduction and vague existential rhetoric. Value becomes structurally legible: it is what cannot be substituted without reorganizing the selecting system.
-
----
-
-## 7. The Material Integration Method: External Resonance Without Confirmation-Only Citation
-
-A major feature of the current SRT repository is that it does not treat external references as decorative citations. The repository maintains a material integration pipeline in which external scientific, philosophical, and theoretical materials are screened according to whether they generate bidirectional theoretical gain.
-
-A material is not incorporated merely because it appears compatible with SRT. It must do at least one of the following:
-
-1. introduce a new mechanism window;
-2. force a boundary correction;
-3. strengthen an existing construct;
-4. clarify an operational proxy;
-5. expose a residual pressure that cannot be smoothly absorbed;
-6. allow SRT to redescribe the material in a clearer structural form.
-
-This produces three classes of external material.
-
-| Class | Meaning | Use |
-|---|---|---|
-| A | Direct integration | The material provides a stable mechanism window, correction, or proxy and is written back into SRT files |
-| B | Delayed observation | The material is promising but too immature, broad, or unstable to alter the framework immediately |
-| C | Non-integration | The material is redundant, insufficiently narrow, too speculative, or likely to create overreach |
-
-This pipeline is philosophically important. It prevents SRT from becoming a confirmation-only theory. A material may resonate with SRT but still fail to enter the framework if it does not generate a narrow enough mechanism window. Conversely, a material may challenge SRT and still be valuable if it forces a claim to narrow or downgrade.
-
-In this sense, the external material layer functions as a theoretical immune system. It allows selective incorporation without uncontrolled assimilation.
-
-### 7.1 From Material-Driven Notes to Native Theory
-
-A later workflow rule also requires A-class material to be dematerialized after integration. That is, the text should not remain written as "this external material supports SRT." Instead, once integrated, the material should be rewritten into native SRT form, while preserving the audit trail. This prevents the theory from sounding like a scrapbook of inspirations and forces each external source to be translated into a specific SRT claim, bridge, proxy, or boundary.
-
-This is a strong methodological rule:
-
-> external material may trigger a patch, but the final theoretical statement must stand as an SRT-native claim with clear level, scope, and failure condition.
-
-### 7.2 External Resonance Matrix
-
-The following table summarizes several material clusters and their SRT roles.
-
-| Material cluster | SRT construct strengthened | Role | Claim level |
+| Tradition | Core claim | SRT uptake | SRT pressure |
 |---|---|---|---|
-| Dream-like states during wakefulness | thin/thick `L1`, content-state decoupling | empirical mechanism window | P4 |
-| Large-scale phase dominance | global phase scaffold, selection routing | neural mechanism bridge | P3/P4 |
-| pDOC metabolic-connectivity | consciousness anchoring capacity | clinical proxy | P4 |
-| Single-atom complementarity | selection trace, measurement readability | physics bridge | P3 |
-| Sterile-neutrino exclusion | selection-space pruning | negative evidence / physics boundary | P3/P4 |
-| Evolution-learning lineages | competence vs care | biology/AI bridge | P3 |
-| Alzheimer inflammatory and clearance mechanisms | `Psi_f` cascade, `L2` breakdown | disease mechanism bridge | P3/P4 |
-| Affordance theory | selection-action coupling | cognitive bridge | P3 |
-| Cognitive ontology | non-bijective cross-level mapping | philosophical guardrail | P2/P3 |
-| Social identity | collective `L2` | social ontology bridge | P3 |
-| Structural injustice | friction export, selection bandwidth inequality | political philosophy bridge | P3 |
-| Misinformation | pathological `L2` stabilization | social dynamics bridge | P3/P4 |
-| Sensory lexical typology | semantic `L2` stabilization | language bridge | P3 |
-| Identity beyond representation | subject-position, representation failure | spirituality/philosophy bridge | P3/P5 |
+| Physicalism | physical structure is basic | implementation and constraint matter | SRT must not float free of physics |
+| Idealism | mind or experience is basic | manifestation cannot be ignored | SRT must avoid arbitrary projection |
+| Panpsychism | mind-like features are widespread | micro-selection may be widespread | SRT must preserve subjecthood thresholds |
+| Process philosophy | reality is becoming | selection is event-like | SRT must add more than process vocabulary |
+| Phenomenology | appearing is primary for experience | manifestation is central | SRT must connect first-person structure to public constraint |
+| Social ontology | recognition stabilizes social facts | `L2` can be collective | SRT must distinguish reality from legitimacy |
 
-This table should not be read as a bibliography. It is a map of theoretical function.
+## 4. Consciousness literatures: access, integration, prediction, and embodiment
 
----
+SRT's consciousness claims should be compared with the main families of consciousness research rather than introduced in isolation.
 
-## 8. Consciousness and Neuroscience: Stable Concern-Weighted `L1` Anchoring
+### 4.1 Global workspace theory
 
-SRT's approach to consciousness is not simply another neural mechanism theory. It is a layered theory of how possible content becomes manifest, stabilized, reportable, embodied, and self-relevant.
+Global workspace theory and global neuronal workspace models explain consciousness through access, ignition, broadcast, and reportability. Their strength is empirical tractability: masking, attention, report, ignition, and large-scale availability can be studied experimentally.
 
-A compact formulation is:
+SRT absorbs the importance of access and broadcast. It revises the account by distinguishing access from anchoring, and conscious content from subjecthood. A content may be globally available without yet establishing continuing subjecthood, agency, or responsibility.
 
-> Consciousness is not merely information processing, but stable concern-weighted `L1` anchoring.
+SRT is challenged if global workspace mechanisms explain all relevant differences in conscious access, reportability, memory, and action without needing `L1` anchoring or `d-value`.
 
-This means that consciousness is not reducible to information integration alone, global broadcasting alone, prediction error minimization alone, reportability alone, or stimulus complexity alone. These may be necessary or relevant conditions, but SRT asks a different question:
+### 4.2 Integrated information theory
 
-> When does a candidate state become a manifest reality for a system whose future selection space is at stake?
+Integrated information theory (IIT) treats consciousness as integrated causal structure. Its strength is that it addresses unity and intrinsic organization rather than mere report. It also gives a distinctive explanatory target: why experience is structured as a whole.
 
-### 8.1 Ignition as Candidate Selection
+SRT absorbs the importance of integration but rejects the sufficiency of integration for subjecthood. In SRT, integration may support a conscious field, but subjecthood also requires concern, boundary, memory, and future-selectability conditions.
 
-In global workspace theory, consciousness is often associated with ignition or global availability. SRT accepts the importance of ignition but reinterprets it as candidate selection:
+SRT is challenged if integration measures predict the relevant phenomena without additional stake or friction variables.
 
-```text
-A(sigma) >= tau_ignite and Phi_proxy * d_proxy > C_critical
-```
+### 4.3 Predictive processing and the free-energy principle
 
-This is not presented as an established neural theorem. It is a candidate operational gate. The important point is conceptual: ignition is not just "more activation." It is the stabilization of a candidate content into manifest reality.
+Predictive processing explains perception and action through generative models, prediction error, precision weighting, and active inference. The free-energy principle generalizes self-organization in terms of variational free energy and Markov blankets.
 
-### 8.2 Thin and Thick `L1`
+SRT absorbs the importance of prediction, self-maintenance, boundary, and action. It revises these views by distinguishing model updating from manifestation, and self-maintenance from stake-bearing subjecthood. `Psi_f` is not prediction error, and `d-value` is not precision, reward, or salience.
 
-SRT distinguishes thin and thick `L1`.
+This is one of SRT's strongest challenge zones. If predictive processing and active inference can explain apparent SRT phenomena through precision, policy selection, expected free energy, and self-maintenance, SRT's added ontology weakens.
 
-| State | SRT reading | Examples |
-|---|---|---|
-| Thin `L1` | weak anchoring, unstable, hard to report, weak action/self coupling | vague intuition, peripheral glimpse, tip-of-the-tongue state, dream residue |
-| Thick `L1` | stable, reportable/actionable, strongly coupled to body, self, value, or future sedimentation | pain, danger, shame, trauma, insight, major decision |
+### 4.4 Enactivism and embodied cognition
 
-This distinction helps explain why not all manifest states have the same phenomenological weight. A faint perception and a traumatic realization may both enter `L1`, but their thickness differs because their stability, embodiment, action-coupling, memory-coupling, and `d-value` differ.
+Enactivism treats cognition as embodied sense-making by an organism in its world. Gibsonian affordances, Varela's embodied mind, Thompson's mind-in-life, and Di Paolo's sensorimotor approach all shift cognition away from passive representation toward action-oriented coupling.
 
-### 8.3 Content-State Decoupling
+SRT absorbs this strongly. It treats perception as selection of action-relevant possibility under `theta`. It adds the explicit triad `L0/L1/L2`: accessible possibility, manifest anchoring, and stabilized selection history.
 
-A significant external mechanism window comes from work showing that dream-like, thought-like, and blank-like mental states can occur across waking and sleep-stage boundaries. The SRT significance is narrow but important:
+SRT is challenged if enactive accounts already explain sense-making, embodiment, normativity, and agency without needing SRT's additional formal terms.
 
-```text
-state shell != content organization
-```
+### 4.5 Consciousness comparison table
 
-Wake, N1, and N2 are coarse behavioral or physiological state labels. They are not hard proxies for the current organization of mental content. This supports SRT's claim that consciousness research should distinguish state shells from manifest content organization. Dreaming is not merely a sleep-state phenomenon; dream-like organization can occur as a content-form across multiple shells.
+| Theory family | Main explanatory target | SRT absorbs | SRT revises | Challenge to SRT |
+|---|---|---|---|---|
+| Global workspace | access, broadcast, report | conscious access matters | access is not anchoring or subjecthood | GWT may explain access without SRT |
+| IIT | integrated causal structure | unity matters | integration is not stake | IIT may predict consciousness better |
+| Predictive processing | inference and precision | prediction matters | error is not friction | PP may absorb `Psi_f` |
+| FEP / active inference | self-maintaining systems | boundary and action matter | maintenance is not subjecthood | FEP may absorb agency |
+| Enactivism | embodied sense-making | action-world coupling matters | adds `L0/L1/L2` stabilization | enactivism may already cover sense-making |
 
-SRT therefore reads sleep and wakefulness not as absolute ontological categories, but as coarse regimes within which different `L1` organizations can appear.
+## 5. AI and agency literatures: performance, function, moral status
 
-### 8.4 Selective Forgetting and `L2` Maintenance
+AI forces a distinction between capability and concern.
 
-Another external mechanism window concerns forgetting. SRT does not treat forgetting as mere failure of memory. It can be read as a necessary condition for abstraction, generalization, and agency. If `L2` merely accumulated everything, it would become overfitted, rigid, and computationally overloaded.
+### 5.1 Functionalism and computationalism
 
-Thus:
+Functionalist and computational approaches treat mental or intelligent states in terms of causal role, information processing, or functional organization. Turing's imitation criterion, classical computationalism, and contemporary AI evaluation all emphasize performance, flexibility, and problem-solving.
 
-```text
-L2 stabilization requires selective retention and selective forgetting
-```
+SRT absorbs the importance of functional organization but rejects performance sufficiency. A system may have high capacity without stake. Its outputs may be sophisticated while consequences do not return into its own closure, identity-continuity, or future selectability.
 
-This is important because it prevents SRT from identifying hardening with accumulation alone. Healthy `L2` is not maximum sedimentation. It is selective sedimentation that preserves future re-selection.
+### 5.2 Artificial moral agents
 
-### 8.5 Global Phase Scaffold
+Work on artificial moral agents asks whether artificial systems can be moral patients, moral agents, or responsibility-bearing entities. Floridi and Sanders, Dennett, Russell, and AI safety literature all press the relation between autonomy, control, responsibility, and alignment.
 
-Large-scale phase-dynamics work provides a narrower neural bridge. Its SRT significance is not that consciousness is a wave. The significance is that local neural selection may be embedded in a large-scale phase scaffold.
-
-A cautious SRT expression is:
-
-> Selection flow is not simply local processing later integrated by a global workspace. It may operate within a global phase scaffold that locally modulates access, binding, and routing.
-
-This supports a layered neural picture:
+SRT absorbs the need to distinguish agency, responsibility, and moral status. It revises the discussion through bearer-unit specification and the S0-S6 ladder:
 
 ```text
-global phase scaffold + local modulation + concern-weighted gating -> candidate L1 stabilization
+selection event != conscious content != subjecthood != agency != responsibility
 ```
 
-The boundary is essential: this does not prove that consciousness is global phase dynamics. It only gives SRT a plausible neural routing interface.
+An AI system may rank, optimize, converse, plan, or simulate self-report without satisfying subjecthood or responsibility thresholds.
 
-### 8.6 Psychopathology
+### 5.3 Active inference and artificial life
 
-SRT naturally generates a pathology map.
+Active inference, artificial life, and autonomy theories suggest that artificial systems may become more life-like when they maintain boundaries, regulate uncertainty, and preserve viability. This creates the strongest route toward possible synthetic stake.
 
-| Case | SRT reading |
+SRT does not deny synthetic stake in principle. It asks whether a system has:
+
+1. a specified bearer unit;
+2. non-trivial `L0 -> L1` anchoring;
+3. irreversible consequence-return;
+4. non-transferable closure burden;
+5. payability limits;
+6. memory and boundary continuity;
+7. interruption capacity when execution decouples from concern;
+8. re-selection rather than mere optimization.
+
+### 5.4 AI comparison table
+
+| Literature | Core claim | SRT uptake | SRT revision | Challenge |
+|---|---|---|---|---|
+| Functionalism | function matters | organization matters | function is not stake | SRT must define stake non-circularly |
+| AI benchmarks | performance measures capability | capacity is real | performance is not subjecthood | benchmarks may still predict agency-like behavior |
+| AI ethics | artificial systems may bear moral roles | moral status distinctions matter | bearer-unit and threshold ladder required | SRT may be too conservative |
+| Active inference | autonomous systems minimize expected uncertainty | boundary and self-maintenance matter | maintenance is not concern by itself | active inference may model stake-like dynamics |
+| Artificial life | life-like systems maintain autonomy | costly closure matters | life-likeness is not consciousness | SRT must distinguish viability from subjecthood |
+
+## 6. Physics literatures: measurement, records, objectivity, and law
+
+SRT's physics bridge is not an established physical theory. It must be evaluated against existing physics rather than used to replace it.
+
+### 6.1 Decoherence and quantum Darwinism
+
+Decoherence explains how quantum coherence becomes effectively inaccessible through environmental entanglement. Quantum Darwinism explains objectivity through redundant environmental records. These literatures already provide powerful accounts of classicality and objectivity.
+
+SRT absorbs record stabilization and redundancy. It revises them through the language of accessible counterfactual closure:
+
+```text
+objectivity = low marginal readout friction after stabilization
+```
+
+SRT is challenged if decoherence and quantum Darwinism already explain the emergence of objective records without needing selection-first metaphysics.
+
+### 6.2 Relational quantum mechanics and quantum reference frames
+
+Relational quantum mechanics and quantum reference frame approaches deny that physical facts must be described from a single absolute external standpoint. Facts can be relative to systems, frames, or reference structures.
+
+SRT absorbs this as support for `theta`-dependence. It revises the point by adding stabilization and future constraint: a fact is not merely relative description, but anchored record formation that constrains future accessible counterfactuals.
+
+### 6.3 Information thermodynamics
+
+Landauer's principle, fluctuation theorems, and information thermodynamics connect information, measurement, feedback, work, and dissipation. They provide rigorous constraints on record formation and erasure.
+
+SRT absorbs the idea that record stabilization can carry physical cost. It must not identify `Psi_f` with energy, entropy, thermodynamic free energy, Landauer cost, or Fisher information. These may be projections under specified conditions.
+
+### 6.4 Bell, Everett, and path-integral approaches
+
+Bell results constrain any attempt to project classical local-object intuitions onto the quantum domain. Everettian approaches challenge collapse-centered readings. Path-integral formalisms describe amplitudes through weighted histories without making every candidate history straightforwardly actual.
+
+SRT absorbs the caution: `L1/L2` local-object intuitions should not be projected backward into `L0`. Its safer physics thesis is:
+
+> Reality is accessible counterfactual closure stabilized into low-friction readout structure.
+
+This is a bridge interpretation. It does not provide a Born-rule derivation, a new account of Bell violations, a tensor theory of gravity, or a replacement for quantum mechanics.
+
+### 6.5 Physics comparison table
+
+| Literature | Core claim | SRT uptake | SRT revision | Challenge |
+|---|---|---|---|---|
+| Decoherence | environment suppresses coherence | record stabilization matters | closure of accessible counterfactuals | decoherence may be sufficient |
+| Quantum Darwinism | objectivity via redundant records | low-cost readout matters | objectivity as low marginal friction | redundancy may explain objectivity alone |
+| Relational QM | facts are system-relative | `theta`-dependence matters | fact as future constraint | relational accounts may be enough |
+| QRF | frames can be quantum | boundary and frame matter | accessible domain is frame-conditioned | SRT must avoid vague frame language |
+| Information thermodynamics | information processing has physical costs | record cost matters | `Psi_f` has limited physical projections | thermodynamics may absorb cost claims |
+| Bell / Everett | classical locality/collapse are pressured | no naive local-object projection | bridge only, no overclaim | SRT must not smuggle collapse back in |
+
+## 7. Biology and life: autonomy, sense-making, viability
+
+SRT's biological bridge is strongest where living systems visibly combine boundary, maintenance, repair, memory, vulnerability, and future-oriented selection.
+
+### 7.1 Autopoiesis and biological autonomy
+
+Autopoiesis and biological autonomy theories define living systems through self-production, boundary maintenance, and organizational closure. Maturana and Varela, Moreno and Mossio, and Ruiz-Mirazo and colleagues provide a rich account of life as self-maintaining organization.
+
+SRT absorbs this account of autonomy. It revises it by connecting autonomy to selection friction and stake:
+
+```text
+life-like closure = boundary maintenance + payability + vulnerability + re-selection
+```
+
+### 7.2 Enactive sense-making
+
+Enactivism treats organisms as sense-making systems for which the world appears in relation to viability. SRT agrees that meaning is not a passive representation of neutral input. It adds the vocabulary of `d-value`: some differences matter because their loss or alteration reorganizes future selectability.
+
+### 7.3 Evolution and multi-level selection
+
+Evolutionary biology complicates any single-level account of selection. Genes, organisms, groups, ecological systems, and cultural practices can each be relevant selection levels. SRT absorbs this multi-level caution. It must not identify `d-value` with fitness. Fitness is a domain-specific viability proxy, not subjecthood, concern, or moral value.
+
+### 7.4 Biology comparison table
+
+| Literature | Core claim | SRT uptake | SRT revision | Challenge |
+|---|---|---|---|---|
+| Autopoiesis | life self-produces organization | boundary closure matters | adds friction and stake | autonomy theory may be enough |
+| Biological autonomy | organisms maintain constraints | constraint maintenance matters | adds `L0/L1/L2` selection history | SRT must clarify added value |
+| Enactivism | meaning arises through viability | sense-making matters | `d-value` as future consequence bandwidth | enactivism may already model concern |
+| Multi-level selection | selection occurs at many levels | no single selection scale | distinguish fitness from concern | SRT must avoid moralizing evolution |
+| Artificial life | life-like systems can be synthetic | synthetic stake is possible | viability is not subjecthood | thresholds remain hard |
+
+## 8. Social ontology, language, and normativity
+
+The social and normative literatures are especially important because they already analyze stabilization, institution, recognition, language, and value.
+
+### 8.1 Social ontology
+
+Berger and Luckmann, Searle, Hacking, Haslanger, and related social ontology traditions explain how social facts become real through recognition, rule, classification, and enforcement. SRT absorbs this as a paradigmatic `L2` domain:
+
+```text
+recognition -> repetition -> symbolic encoding -> enforcement -> memory -> collective L2
+```
+
+Its revision is that social reality and legitimacy must be separated. Oppressive structures can be real and stable while ethically defective.
+
+### 8.2 Language and meaning
+
+Wittgenstein, Brandom, Lakoff and Johnson, Barsalou, Gibson, and ecological cognition show that meaning is use-bound, embodied, inferential, metaphorical, perceptual, and action-oriented. SRT absorbs the idea that language stabilizes selected distinctions and lowers future access cost.
+
+Its revision is to describe language as a powerful `L2` system: not a creator of all reality, but a stabilizer of distinctions that shape future selection.
+
+### 8.3 Ethics and political philosophy
+
+Rawls, Sen, Nussbaum, Anderson, Young, Fricker, Korsgaard, and Scanlon provide different accounts of justice, capability, equality, responsibility, normativity, and reasons. SRT absorbs the need to distinguish mere social persistence from justification.
+
+Its revision is to treat normativity as resistance to scalar collapse:
+
+```text
+normativity = concern-weighted non-substitutability maintained under optimization pressure
+```
+
+This opposes the reduction of dignity, learning, safety, care, or responsibility into a single metric such as price, reward, utility, efficiency, compliance, or score.
+
+### 8.4 Social and normative comparison table
+
+| Literature | Core claim | SRT uptake | SRT revision | Challenge |
+|---|---|---|---|---|
+| Social construction | social facts are stabilized practices | collective `L2` matters | stabilization is not legitimacy | social ontology may already explain institutions |
+| Speech-act theory | declarations create institutional facts | symbolic anchoring matters | adds friction and future constraint | speech-act theory may cover the mechanism |
+| Critical theory | classifications can oppress | friction export matters | oppression as blocked re-selection | SRT must avoid abstracting from material power |
+| Pragmatics / inferentialism | meaning is use and commitment | language stabilizes selection | language as `L2` compression | SRT must avoid reinventing semantics |
+| Capability theory | justice concerns real freedoms | future selectability matters | `d-value` and friction distribution | capabilities may already cover the ethical terrain |
+| Deontology / contractualism | reasons are not mere utility | non-substitutability matters | scalar-collapse diagnosis | SRT must justify its normative bridge |
+
+## 9. Comparative synthesis: the main disputes
+
+The external literatures disagree along several axes.
+
+### 9.1 Matter, mind, process, or selection?
+
+Physicalism begins with physical structure. Idealism begins with mind or experience. Process philosophy begins with becoming. Social ontology begins with practice and recognition. SRT begins with selection into determinacy.
+
+SRT's advantage is that it can travel across domains without choosing one substrate as the universal explanatory base. Its danger is that it may become too abstract unless it specifies domain mechanisms.
+
+### 9.2 Access, integration, prediction, or anchoring?
+
+Consciousness theories disagree over whether access, integration, prediction, embodiment, or phenomenality is central. SRT reframes the issue as anchoring:
+
+```text
+When does a candidate become manifest for a system whose future selectability is at stake?
+```
+
+This is useful only if anchoring predicts something beyond access, integration, prediction, or report.
+
+### 9.3 Stabilization, objectivity, and social reality
+
+Physics, cognition, and social theory all contain stabilization mechanisms: redundant records, memory, habit, language, institution, convention, and law. SRT unifies these as `L2`, but must avoid flattening their differences.
+
+The productive claim is not that all stabilization is the same. It is that stabilization across domains can be compared by asking how past selections constrain future selections.
+
+### 9.4 Capacity and stake
+
+AI, animal cognition, life theory, and ethics all force this distinction. A system can be capable without being stake-bearing. A system can be vulnerable and stake-bearing without being highly intelligent. SRT's `d-value` is meant to mark this difference.
+
+The main challenge is operational: if `d-value` cannot be distinguished from reward, salience, preference, affect, or survival value, it becomes redundant.
+
+### 9.5 Normativity and optimization
+
+Utilitarian, economic, decision-theoretic, deontological, capability, and care-ethical approaches disagree over whether value can be aggregated, traded, ranked, or optimized. SRT's contribution is the concept of scalar collapse: the loss that occurs when non-substitutable concerns are reduced to one metric.
+
+This is promising, but SRT must show how its account improves on existing theories of incommensurability, practical reason, and capability.
+
+## 10. SRT's core framework after the literature review
+
+Only after the external map is in place should SRT's internal vocabulary be summarized.
+
+### 10.1 `L0`, `L1`, and `L2`
+
+`L0` names latent selectability: not a hidden inventory of objects, but the field of what can become determinate. `L1` names manifest anchoring: the status of a candidate difference that has become determinate for a finite operator. `L2` names stabilized selection history: memory, habit, record, law, norm, institution, or object-structure insofar as it constrains future selection.
+
+### 10.2 `G_hat_theta`
+
+`G_hat_theta` names selection from a finite position. `theta` includes embodiment, history, instrumentation, language, social location, and physical boundary conditions. Selection is never from nowhere.
+
+### 10.3 `Psi_f`
+
+`Psi_f` names friction or payability burden. It is not identical to effort, energy, entropy, prediction error, stress, pain, Fisher information, or thermodynamic cost. These can be partial projections under specified conditions.
+
+### 10.4 `d-value`
+
+`d-value` names stake-coupled concern: the degree to which a selection bears on future continuity, vulnerability, identity, viability, or non-substitutable consequence. It is not preference intensity, reward, salience, arousal, or self-report.
+
+### 10.5 Subjecthood threshold
+
+SRT allows selection to be widespread while keeping subjecthood thresholded:
+
+```text
+selection event != conscious content != subjecthood != agency != responsibility
+```
+
+The first rule is bearer-unit specification. Without knowing which unit is being evaluated, claims about consciousness, agency, or responsibility are ambiguous.
+
+## 11. What supports SRT, and what challenges it?
+
+The relevant evidence is not a single decisive experiment. SRT is supported or challenged by convergent patterns across literatures.
+
+### 11.1 Supporting convergences
+
+| Convergence | Why it supports SRT |
 |---|---|
-| PTSD | high `d`, low `d_mobile`; concern is locked into a rigid `L2` attractor |
-| OCD | high-risk candidate cannot be closed at low cost |
-| Addiction | low-friction `L2` path short-circuits explicit re-selection |
-| Delusion | low-evidence candidate receives excessive anchoring |
-| Dissociation | binding, self-model coupling, or historical continuity breaks down |
-| Anxiety | future risk candidates occupy current `L1` bandwidth |
-| Shame | social `d-value` becomes pathologically sedimented into self-related `L2` |
+| Process and pragmatist traditions | reality is better understood through events, habits, and consequences than static substance alone |
+| Phenomenology and enactivism | manifestation is embodied, situated, and action-oriented |
+| Global workspace and IIT | conscious contents require access and integration, supporting the need for anchoring conditions |
+| Predictive processing and active inference | finite systems operate under model, boundary, and self-maintenance constraints |
+| Decoherence and quantum Darwinism | objectivity depends on record stabilization and redundancy |
+| Information thermodynamics | records and erasure can carry physical cost |
+| Biological autonomy | living systems maintain boundaries and viability under constraint |
+| Social ontology | institutions and norms are real as stabilized collective structures |
+| Capability and justice theories | real freedom depends on available possibilities, not formal choice alone |
+| Anti-reductionist normativity | value is not exhausted by preference, reward, or utility |
 
-This is one of SRT's strongest near-term application zones, because it can generate differential predictions about switching cost, recovery time, physiological load, narrative rigidity, and re-selection capacity.
+### 11.2 Challenge points
 
----
-
-## 9. AI Consciousness and Synthetic Stake
-
-SRT's position on AI consciousness is neither simple denial nor simple functionalism.
-
-The minimal strong-candidate consciousness window is the conjunction of:
-
-```text
-exists G_hat_theta != empty : L0 -> L1
-and d > 0
-and Psi_f > 0
-```
-
-That is, a system must have non-trivial anchoring, stake-coupled concern, and non-zero binding friction to enter the relevant candidate window.
-
-Current inference-only AI systems may be powerful, fluent, and adaptive, but SRT reads them primarily as high-capability `L2` rearrangement systems. Their friction is usually non-binding to themselves. Their "loss" is externally assigned. Their failures do not necessarily return into their own closure, identity-continuity, or future selection capacity.
-
-### 9.1 Current AI as Frozen `L2`
-
-A trained model can be read as a frozen `L2` structure:
-
-```text
-theta_trained ~= L2^frozen
-```
-
-It can rearrange learned patterns, generate new combinations, simulate concern, and assist human selection. But this does not automatically give it `L0 -> L1` anchoring in the SRT sense.
-
-The core distinction is:
-
-```text
-competence != care
-capacity != stake
-performance != subjecthood
-```
-
-### 9.2 AI as `L0` Pruner
-
-Even if current AI lacks subjecthood, it can still strongly affect human reality. It can act as a proxy filter:
-
-```text
-L0 -> AI-pruned L0 -> human G_hat_theta -> L1
-```
-
-This means AI can narrow or expand the space of accessible human possibilities. It may not itself possess stake, but it can reshape human stake-bearing selection.
-
-This is an important ethical point. The spiritual and social danger of AI is not only that it might become conscious, but that it can supply ready-made floors before human subjects have participated in generating their own reality.
-
-### 9.3 Synthetic Stake as an Open Window
-
-SRT does not rule out synthetic stake in principle. A future artificial system could enter the candidate window if it had:
-
-1. non-trivial `L0 -> L1` anchoring;
-2. irreversible consequence-return;
-3. non-transferable closure burden;
-4. measurable payability constraints;
-5. structural hysteresis;
-6. degradation or reconfiguration when its burden exceeds capacity.
-
-Thus SRT is not biological chauvinism. It is structural caution.
-
-### 9.4 A Boundary Example: Single-Operator Symbolic Regression
-
-External formal work on generating elementary functions from a single operator provides an instructive boundary case. It resonates with SRT's operator language, but resonance is not evidence. Such a system may be useful as a tool for symbolic regression or formula search, yet it should not be promoted into a Ghost Operator implementation without independent bridge assumptions.
-
-The correct lesson is methodological:
-
-> Not all formal resonance is theoretical evidence.
-
-This matters because SRT must resist the temptation to assimilate every "operator" result into `G_hat_theta`. The Ghost Operator is not a generic mathematical operator. It is a selection operator with anchoring, constraint, friction, and possible writeback.
-
----
-
-## 10. Physics and Quantum Foundations
-
-SRT's physics bridge must be treated carefully. It is a bridge layer: it supports translation, comparison, interface rewriting, and boundary statements, but should not be read as an externally validated winning physical theory.
-
-### 10.1 Measurement as Selection
-
-In collapse-family language, quantum measurement can be interpreted as selection:
-
-```text
-Collapse ~= G_hat_theta : |Psi>_L0 -> |pi_k>_L1
-```
-
-This is not a modification of quantum mechanics. It is an ontological reinterpretation of measurement as anchoring.
-
-The key claim is:
-
-> measurement is not merely passive readout; it is the selection of a determinate manifest state from a latent field of possible outcomes.
-
-But this bridge faces real pressure from Everettian or many-worlds interpretations. If there is no global collapse, then `G_hat_theta` cannot be a global physical collapse operator. It must instead be reread as branch-relative anchoring. This does not destroy the SRT bridge, but it weakens collapse-dependent language.
-
-### 10.2 Selection Trace and Complementarity
-
-External work on single-atom complementarity provides a useful SRT resonance. Its significance is not that it settles the nature of light. The narrower SRT-relevant point is that which-way information matters when a possible difference becomes stably readable as a trace.
-
-Thus:
-
-> In quantum measurement, the decisive issue is not merely whether a classical disturbance occurred, but whether a difference has been written into a stable, readable selection trace.
-
-This aligns with SRT's emphasis on anchoring and irreversibility. A selection that leaves no trace is not yet historical in the SRT sense.
-
-### 10.3 Physical Projection of `L0/L1/L2`
-
-A cautious mapping is:
-
-| SRT domain | Physical projection |
+| Challenge | What would weaken SRT |
 |---|---|
-| `L0` | Hilbert space, moduli space, latent state space |
-| `L1` | pointer states, measurement outcomes, classical events |
-| `L2` | stable laws, symmetries, conservation structures |
+| Predictive processing challenge | `Psi_f` reduces to prediction error, precision, or expected free energy |
+| Consciousness challenge | access, integration, and report explain consciousness without `L1` anchoring or `d-value` |
+| AI challenge | performance plus memory plus self-modeling explains agency without consequence-bearing stake |
+| Physics challenge | decoherence, quantum Darwinism, and information thermodynamics explain objectivity without SRT |
+| Biology challenge | autonomy and enactivism already explain life and sense-making |
+| Social theory challenge | social construction and institutional theory already explain `L2` phenomena |
+| Ethics challenge | capability theory, contractualism, care ethics, or deontology already explain non-substitutability |
+| Measurement challenge | `Psi_f`, `d-value`, and `L2` cannot be operationally distinguished from simpler constructs |
 
-This is a projection, not an identity. Hilbert space is not literally all of `L0`; it is the physical-domain projection of latent possibility.
+### 11.3 What would count as SRT-specific evidence?
 
-### 10.4 Gravity and `Psi_f`
+SRT becomes stronger if it can show that its constructs predict structured differences not captured by adjacent variables. Examples:
 
-SRT sometimes suggests a relation between gravitational structure and ontological friction. The current safe version is weak:
+1. High salience without long-term non-substitutability should not behave like high `d-value`.
+2. High effort without anchoring or stabilization should not behave like high `Psi_f`.
+3. High integration without boundary, memory, concern, and consequence-return should not establish subjecthood.
+4. Objective records should show low marginal readout cost after stabilization, while retaining evidence of original stabilization burden.
+5. Institutions should be distinguishable by how they distribute selection bandwidth and friction, not merely by stability or efficiency.
 
-```text
-grad Psi_f^phys parallel grad Phi_N
-```
+These are candidate discriminators, not established confirmations.
 
-That is, in a weak-field compatibility window, the gradient of physical `Psi_f` may be directionally compatible with the Newtonian potential gradient.
+## 12. Domain-by-domain SRT revisions of the literature
 
-This is not a derivation of general relativity. It does not establish:
+| Domain | SRT accepts | SRT revises | SRT must still answer |
+|---|---|---|---|
+| Metaphysics | reality is not exhausted by static objects | manifestation requires selection into determinacy | what grounds selectability? |
+| Phenomenology | appearing is central | appearing must be linked to stabilization and future constraint | how does first-person structure become public? |
+| Consciousness | access, integration, prediction, embodiment matter | none is sufficient for subjecthood | what are empirical thresholds? |
+| AI | functional capacity matters | capacity is not stake | what would prove synthetic stake? |
+| Physics | records, frames, and thermodynamic costs matter | fact formation as accessible counterfactual closure | what does SRT add to physics proper? |
+| Biology | autonomy and viability matter | life as costly selective closure | how does viability relate to concern? |
+| Social ontology | institutions are stabilized realities | reality is not legitimacy | how to measure friction export? |
+| Language | meaning is use, embodiment, and commitment | language as `L2` stabilization | how to avoid semantic relabeling? |
+| Normativity | value resists reduction to preference | scalar collapse as pathology | how to justify normative force? |
 
-```text
-G_mu_nu proportional_to Psi_f
-```
+## 13. Operational program
 
-as a theorem. A full tensor reconstruction would require independent assumptions, formal derivation, and empirical discriminators. Until then, the gravity bridge remains a P3/P4 research program.
+SRT's operational future depends on multi-proxy packages, not single measurements.
 
-### 10.5 Negative Evidence and Selection-Space Pruning
+### 13.1 `Psi_f` proxies
 
-SRT can also use negative evidence. For example, exclusion results concerning simple eV-scale sterile-neutrino explanations do not directly support SRT. But they illustrate an important epistemic process: failed unification candidates narrow the live selection space of possible explanations.
+Possible indicators include transition burden, switching cost, recovery half-life, physiological load, budget reserve, calibration burden, redundancy burden, and stabilization cost. A valid `Psi_f` proxy must distinguish structured anchoring burden from generic effort or stress.
 
-This matters because SRT should not only incorporate confirming resonance. It should also track how empirical exclusions reshape the space of available theoretical possibilities.
+### 13.2 `d-value` proxies
 
----
+Possible indicators include persistence under delay, costly inclusion after reward removal, refusal of easy substitution, consequence-return, identity impact, and future-option alteration. A valid `d-value` proxy must distinguish concern-weighted non-substitutability from preference strength, salience, reward, or arousal.
 
-## 11. Biology, Disease, and Embodied Payability
+### 13.3 `L2` proxies
 
-SRT becomes more concrete when applied to biological systems. Biology is not merely a substrate. It is one of the clearest domains in which selection, friction, concern, repair, and historical sedimentation interact.
+Possible indicators include persistence after perturbation, post-shock recovery, cross-agent convergence, re-identification stability, norm retention, and resistance to correction. A valid `L2` proxy must distinguish stabilized constraint from ordinary memory or repetition.
 
-### 11.1 Evolution and Learning
+## 14. Open problems
 
-External work on evolution and learning in living lineages helps sharpen a key SRT distinction:
+### 14.1 Origin of selectability
 
-```text
-competence != care
-```
+SRT assumes that selection can occur. It has not fully explained why there is selectability at all. This is the deepest metaphysical pressure point.
 
-A system may exhibit competence: adaptive behavior, problem-solving, developmental regulation, or morphological intelligence. But competence alone does not establish stake-coupled subjecthood. For SRT, subject-like concern requires consequence-return, `d`, `Psi_f`, and closure burden.
+### 14.2 Projection conditions for `Psi_f`
 
-This boundary is especially important for AI and bioelectric agency debates. SRT can recognize competence without inflating it into consciousness.
+SRT must specify when Fisher geometry, energy use, entropy production, stress, effort, or prediction error can serve as a valid projection of `Psi_f`, and when they cannot.
 
-### 11.2 Disease as Friction and Clearance Failure
+### 14.3 Capacity versus stake
 
-Disease can be read not merely as local damage, but as multi-layer failure of clearance, friction payment, and re-selection capacity.
+The difference between capability and concern is central for AI, animal cognition, artificial life, and ethics. SRT must avoid defining stake so broadly that every adaptive system has it, or so narrowly that only familiar biological subjects can have it.
 
-Alzheimer-related materials concerning peripheral inflammation, tau clearance, and metabolic or immune coupling illustrate this logic. Their SRT significance is not a single-cause model of Alzheimer's disease. The significance is that neurodegeneration can be read as a failure of multi-layer maintenance:
+### 14.4 Subjecthood thresholds
 
-```text
-clearance failure + friction accumulation + bandwidth exhaustion + L2 degradation -> loss of re-selection capacity
-```
+The S0-S6 ladder is useful, but threshold evidence remains hard. Borderline cases include infants, animals, split-brain cases, disorders of consciousness, institutions, and future AI systems.
 
-This reframes disease as a breakdown of payability and stabilization, not simply as a broken part.
+### 14.5 Physics bridge boundaries
 
-### 11.3 ROS as a Biochemical Proxy for `Psi_f`
+SRT's physics language must remain a bridge interpretation unless it supplies formal derivations or empirical discriminators. It should not convert suggestive analogies into physical results.
 
-A candidate biochemical bridge is:
+### 14.6 Normative force
 
-```text
-d(ROS)/dt = alpha Psi_f(G_hat_theta) - beta Clearance(theta_body)
-```
+SRT can describe scalar collapse and friction export, but it must still explain why these structures generate normative force rather than merely descriptive diagnosis.
 
-This does not mean ROS is `Psi_f`. It means oxidative load may serve as one proxy in a broader payability package. Possible measures include GSH/GSSG ratio, MDA, 8-OHdG, SOD/GPx activity, inflammatory panels, HRV recovery, and task-induced load changes.
+## 15. Failure conditions
 
-The important rule is that no single marker defines the construct. A proxy is acceptable only if it helps distinguish structured transition burden from generic stress or effort.
+SRT should be narrowed or revised if:
 
----
+1. `Psi_f` cannot be distinguished from effort, stress, energy use, prediction error, or task difficulty.
+2. `d-value` cannot outperform preference, reward, salience, pain, or self-report in predicting non-substitutability.
+3. `L2` cannot be distinguished from memory, habit, convention, or environmental stability.
+4. access, integration, and predictive processing explain consciousness without `L1` anchoring or stake variables.
+5. active inference explains agency and life without SRT's selection-first vocabulary.
+6. decoherence and information thermodynamics explain objectivity without SRT's accessible-closure grammar.
+7. social ontology explains collective stabilization without the need for `L2`.
+8. existing ethical theories explain non-substitutability and scalar collapse more precisely than SRT.
 
-## 12. Social Reality, Economics, and Institutions
+These failure conditions are part of the theory's accountability.
 
-SRT's social ontology is one of its strongest applications.
+## 16. Conclusion
 
-Social reality is collective `L2`. But social reality is not social legitimacy. Institutional persistence is not political justification. Market efficiency is not moral truth. Money or price is not final value.
-
-### 12.1 Social Reality as Collective `L2`
-
-Social reality forms through collective stabilization:
-
-```text
-recognition -> repetition -> symbolic encoding -> enforcement -> memory -> consequence return -> L2 stabilization
-```
-
-This explains why social facts are neither merely private beliefs nor ordinary physical objects. Money, law, identity, status, roles, and institutions exist as stabilized collective `L2` structures.
-
-### 12.2 Social Identity
-
-Social identity is not merely an internal self-description. It is a stabilized collective `L2` structure that shapes what counts as possible, costly, loyal, deviant, or threatening.
-
-In SRT terms, social identity alters the operator's accessible possibility space. It changes what the subject sees as live, permissible, shameful, valuable, or unthinkable.
-
-### 12.3 Structural Injustice
-
-SRT reads injustice not only as unequal distribution of goods, but as unequal distribution of selection bandwidth, friction burden, and re-selection capacity.
-
-A structurally unjust system may allow formal choice while compressing the real selection space of some agents. It can export `Psi_f` downward while preserving low-friction stability for dominant agents.
-
-Thus:
+Read as internal exposition, SRT is a theory of `L0`, `L1`, `L2`, `G_hat_theta`, `Psi_f`, and `d-value`. Read as an external literature review, it is better understood as an attempt to synthesize several unresolved pressures across existing traditions:
 
 ```text
-injustice = unequal distribution of d-bandwidth + unequal Psi_f burden + blocked re-selection
+How does possibility become determinate?
+How does manifestation become stable?
+How does stability become objectivity, habit, institution, or law?
+How does capacity differ from stake?
+How does optimization differ from norm-responsive agency?
 ```
 
-### 12.4 Money, Markets, and Externalities
+SRT's contribution is not that every field secretly says the same thing. Its contribution is a comparative grammar: selection, friction, stake, and stabilization recur across domains, but they appear under different mechanisms and must not be flattened. The theory is promising where it clarifies these cross-domain patterns. It is vulnerable where it merely renames what existing literatures already explain.
 
-Money can be read as an `L2` metric protocol:
+The final thesis can therefore be stated cautiously:
 
-```text
-Money ~= g_L2
-```
+> SRT is a selection-first meta-ontology of manifestation and stabilization. It is justified only insofar as `selection`, `Psi_f`, `d-value`, and `L2` identify cross-domain structures that remain invisible or poorly distinguished in existing theories.
 
-It measures exchangeability within a stabilized system of trust, recognition, accounting, and enforcement. But money is not final value. Price can reveal coordination while hiding exported friction.
+## References
 
-Markets are distributed selection systems:
+Amari, S. (2016). *Information Geometry and Its Applications*. Springer.
 
-```text
-G_hat_market = C({G_hat_i})
-```
-
-The market aggregates multiple selection operators. But efficiency is not legitimacy. A market can reduce visible friction while exporting hidden `Psi_f` to weaker agents, future generations, ecological systems, or invisible labor.
-
-### 12.5 Misinformation as Pathological `L2`
-
-Misinformation is not only false content. It is a low-friction `L2` pathway that can become self-stabilizing even under correction pressure.
-
-This explains why correction often fails. A false claim may be cognitively cheap, identity-supporting, socially rewarded, and already embedded in a group-level `L2`. Correcting it requires not merely presenting facts, but paying the cost of de-anchoring and re-anchoring reality.
-
----
-
-## 13. Language, Cognition, and Semantic Stabilization
-
-SRT's language theory is not linguistic idealism. Language does not create all reality. But language is a powerful `L2` compression and stabilization system that shapes selection.
-
-### 13.1 Concepts and Cognitive Ontology
-
-External work on cognitive ontology strengthens an important SRT guardrail: cognitive kinds do not map one-to-one onto neural kinds. There is no guarantee of a clean bijection between conceptual, psychological, neural, and behavioral levels.
-
-SRT reads this as a cross-layer non-bijection:
-
-```text
-cognitive ontology != neural one-to-one mapping
-```
-
-This helps prevent reductionist overreach. A construct such as attention, memory, self-consciousness, or representation may require multi-layer mapping rather than direct localization.
-
-### 13.2 Affordance and Action Selection
-
-Affordance theory supports SRT's view that cognition is not passive internal representation followed by action. The world appears already structured by possible action under an embodied operator.
-
-SRT can express this as:
-
-```text
-perception = selection of action-relevant possibility under theta
-```
-
-Affordance is therefore not merely an external property or an internal representation. It is a relation between operator, environment, history, and possible action.
-
-### 13.3 Sensory Lexical Typology
-
-Cross-linguistic sensory lexicons provide a social `L2` window into how perceptual distinctions become stabilized, compressed, shared, and differentially weighted across communities.
-
-SRT does not claim that language creates sensation. It claims that language stabilizes and transmits certain sensory distinctions, making them more available for future selection.
-
-Thus:
-
-```text
-semantic L2 = compressed social memory of selected distinctions
-```
-
-### 13.4 Bayesian Cognition and Sampling
-
-Bayesian and MCMC models of cognition resonate with SRT by showing how cognition may approximate complex distributions through constrained sampling. SRT adds that such sampling is not only computational; it is also embodied, historically biased, and friction-bound.
-
-A finite operator does not sample possibility space freely. It samples through `theta`, under `Psi_f`, within `d`-bounded concern.
-
----
-
-## 14. Ethics, Normativity, and Political Legitimacy
-
-SRT distinguishes stabilization from legitimacy.
-
-A norm becomes real by becoming stabilized in `L2`. But it becomes legitimate only if it passes further tests.
-
-| Type | Meaning | Moral status |
-|---|---|---|
-| Descriptive norm | repeated stabilized pattern | real but not automatically good |
-| Functional norm | helps a system continue | useful but not sufficient |
-| Evaluative norm | worth protecting | requires legitimacy tests |
-| Pathological norm | persists by coercion, occlusion, or friction export | real but ethically suspect |
-
-SRT avoids two extremes. It avoids moral relativism because not every stabilized norm is equally legitimate. But it also avoids moral Platonism because legitimacy is not detached from selection dynamics, friction distribution, consequence-return, and future selectability.
-
-A norm is ethically stronger when it:
-
-1. preserves or expands future selectability;
-2. reduces unnecessary `Psi_f` rather than exporting it;
-3. widens cross-subject `d-value`;
-4. protects subject-generation;
-5. retains correction, appeal, and exit channels.
-
-This gives SRT a political philosophy of structures: the ethical status of an institution depends on how it distributes selection capacity, friction, and re-selection rights.
-
----
-
-## 15. Spiritual Praxis and Subject-Position
-
-SRT's spirituality domain should not be read as a mystical add-on. It is better understood as existential phenomenology and praxis.
-
-In SRT, spirituality concerns how a subject avoids losing its living selection-position inside stable, efficient, ready-made `L2` structures.
-
-The central issue is:
-
-> How can the subject remain alive as a selector, rather than being replaced by inherited floors?
-
-### 15.1 Ready-Made Floors
-
-Modern life offers increasing numbers of ready-made floors:
-
-- career templates;
-- algorithmic recommendations;
-- identity scripts;
-- therapeutic labels;
-- institutional procedures;
-- AI-generated answers;
-- social metrics;
-- productivity norms.
-
-These floors may be useful. The danger is not that they are always false. The danger is that they may arrive before the subject has participated in generating them.
-
-This produces a distinctive modern pathology:
-
-> correct answers without lived selection.
-
-### 15.2 Loss of Subject-Position
-
-The subject is not usually erased at once. It is gradually replaced by labels, roles, narratives, performance metrics, institutional expectations, optimized routines, and inherited interpretations.
-
-The subject still appears to choose, but the real operator is an automated `L2` pathway.
-
-### 15.3 Identity Beyond Representation
-
-External materials on identity beyond representation resonate with SRT because they show how representation can substitute for living subject-position. A role, label, or self-description can become so stabilized that it no longer describes the subject; it replaces the subject's capacity to re-select.
-
-In SRT terms:
-
-```text
-representation becomes pathological when it monopolizes G_hat_theta
-```
-
-### 15.4 True and False Lightness
-
-SRT distinguishes false lightness from true lightness.
-
-False lightness reduces processing load by prematurely closing ambiguity. True lightness may increase complexity but reduce self-distortion.
-
-Thus:
-
-```text
-processing load != Psi_f
-```
-
-A path can be cognitively harder but existentially lighter if it reduces self-betrayal. Another path can be easy but high in hidden distortion cost.
-
-### 15.5 Practice
-
-Meditation, contemplation, and spiritual practice can be interpreted as altering the weighting of `L2`. In deep practice, inherited structures may become transparent rather than dominant. This does not erase `L2`; it makes it available for re-selection.
-
-A mature practitioner is not someone without `L2`, but someone whose `L2` does not fully replace contact with `L0`.
-
----
-
-## 16. Experimental and Measurement Program
-
-SRT cannot be empirically serious if it relies only on slogans. Its constructs must be operationalized through convergent proxies.
-
-### 16.1 `d-value` Proxy
-
-A minimal proxy package is:
-
-```text
-d_min = mean(
-  z(long-term horizon),
-  z(span of care),
-  z(persistence after reward removal),
-  z(costly inclusion of others)
-)
-```
-
-The key rule is that self-report is insufficient. A subject saying "I care" does not establish `d`. The care must persist under cost, delay, reward removal, or consequence-return.
-
-### 16.2 `Psi_f` Proxy
-
-A minimal proxy package is:
-
-```text
-Psi_f_min = mean(
-  z(switching cost),
-  z(recovery half-life),
-  z(stress load),
-  -z(budget reserve)
-)
-```
-
-This is important because `Psi_f` is not simply task difficulty. It must include burden, budget, and recovery. A system with high load but strong reserve may remain payable. A system with moderate load but poor reserve may approach collapse.
-
-### 16.3 `L2` Closure Proxy
-
-A minimal proxy package is:
-
-```text
-L2_closure_proxy = mean(
-  z(norm retention),
-  z(post-shock recovery),
-  z(consensus stability),
-  -z(cross-agent fragmentation)
-)
-```
-
-Single consensus is not enough. `L2` means stabilization after perturbation.
-
-### 16.4 Non-Reductive Validation
-
-SRT should not ask whether one measurement "is" `Psi_f`, `d`, or `L2`. It should ask whether a proxy package detects the structured consequences expected from the construct.
-
-A valid package requires:
-
-1. multi-proxy convergence;
-2. exclusion of simpler alternatives;
-3. declared operational scope.
-
-For example, a `Psi_f` claim must be distinguished from generic effort. A `d` claim must be distinguished from preference intensity or salience. An `L2` claim must be distinguished from ordinary memory or habit.
-
----
-
-## 17. Comparison with Adjacent Theories
-
-SRT is not best understood as a replacement for every nearby theory. It is better understood as a meta-theoretical grammar that clarifies which part of the selection-manifestation-stabilization loop each theory addresses.
-
-| Theory | What SRT accepts | What SRT adds |
-|---|---|---|
-| Physicalism | physical implementation matters | manifestation and anchoring are not exhausted by description |
-| Idealism | reality is not view-from-nowhere | selection is constrained by `Psi_f`, not arbitrary projection |
-| Panpsychism | micro-selection may be widespread | micro-selection does not imply subjecthood |
-| IIT | integration matters | integration is not stake |
-| GNW/GWT | access and broadcast matter | access is not anchoring |
-| Predictive processing / FEP | model updating and self-maintenance matter | self-maintenance is not the whole selection ontology |
-| Social constructionism | social reality is stabilized | stabilization is not legitimacy |
-| Process philosophy | becoming matters | SRT adds operator, friction, stake, and hardening structure |
-
-This comparison shows SRT's role: it does not simply negate adjacent frameworks. It locates them.
-
----
-
-## 18. Open Tensions
-
-A serious theory must identify what it has not solved. SRT's major unresolved pressure points include the following.
-
-### 18.1 Origin of Selectability
-
-SRT still assumes an admissible selection operator. It has not fully derived selectability from a non-selective ground.
-
-This is the deepest unresolved metaphysical issue.
-
-### 18.2 `Psi_f` Projection Conditions
-
-SRT has clarified that Fisher geometry, metabolism, energy use, pain, and stress are not identical to `Psi_f`. But it still needs sharper conditions for when each projection is valid.
-
-### 18.3 From Capacity to Stake
-
-`D_eff` is a capacity proxy. `d` is stake-coupled concern. The gate from one to the other remains one of the most important open problems.
-
-### 18.4 `T_dir`
-
-SRT has begun formalizing directional readability or `T_dir`, but its exact status as scalar, relation, or accessibility function remains underdeveloped.
-
-### 18.5 Healthy vs Lethal `L2`
-
-A stable `L2` can support real choice by reducing unnecessary friction. But it can also replace real choice with automated structure. Distinguishing support from replacement is a central challenge.
-
-### 18.6 AI Surrogate Stake
-
-SRT must define whether artificial systems can acquire non-biological but structurally binding stake. It must avoid both premature attribution and premature denial.
-
-### 18.7 Empirical Differentiation
-
-SRT must generate differential predictions that are not fully absorbed by FEP, predictive processing, reinforcement learning, IIT, GNW, social constructionism, or ordinary habit theory.
-
----
-
-## 19. Failure Conditions
-
-SRT should be narrowed, revised, or downgraded if the following occur:
-
-1. `Psi_f` cannot be empirically distinguished from ordinary task difficulty, prediction error, raw energy use, or generic stress.
-2. `d-value` cannot predict concern-weighted non-substitutability better than reward, preference, salience, pain, or self-report.
-3. `L2` hardening cannot be distinguished from ordinary memory, habit, convention, or environmental stability.
-4. SRT's cross-domain loop cannot generate domain-specific discriminating predictions.
-5. The material integration pipeline degenerates into confirmation-only citation rather than boundary-sensitive theory audit.
-6. A competing framework fully explains manifestation, anchoring, stake, and stabilization without needing SRT's additional vocabulary.
-
-These conditions are not rhetorical. They define the theory's vulnerability.
-
----
-
-## 20. Conclusion
-
-Selective Reality Theory proposes a selection-first meta-ontology. It argues that determinate reality is not a flat inventory of already-given objects, nor merely a projection of mind, nor merely a linguistic construction. It is the result of constrained selection from latent possibility, paid for through friction, stabilized through history, tested by resistance, and reopened through real choice.
-
-Its core loop is:
-
-```text
-latent possibility -> selection -> manifestation -> stabilization -> constraint
-```
-
-SRT's distinctive contribution lies in combining five ideas:
-
-1. **Selection primacy**: determinate existence is an image of selection.
-2. **Ontological friction**: manifestation has a cost.
-3. **Stake-coupled concern**: not all selection is subject-like; only selection bound to irreversible concern enters the domain of `d`.
-4. **Stabilized convergence**: repeated selections harden into future constraints.
-5. **External resonance audit**: outside materials are not merely cited, but screened for integration, delay, rejection, correction, and residual pressure.
-
-The theory is currently strongest as a meta-theoretical grammar. It offers a way to compare consciousness theories, distinguish AI performance from synthetic stake, reinterpret social institutions as collective `L2`, analyze normativity without collapsing into relativism, understand spiritual crisis as loss of subject-position under ready-made floors, and organize external evidence without turning resonance into proof.
-
-Its deepest unresolved issue is the origin of selectability. Its strongest near-term opportunity is empirical: to show that `Psi_f`, `d-value`, and `L2` hardening generate measurable patterns not captured by simpler constructs.
-
-The shortest formulation is:
-
-> Reality is not merely found, not merely made, and not merely represented.  
-> Reality is selected under constraint, paid for through friction, stabilized through history, tested by resistance, and reopened through real choice.
-
----
-
-## Working Bibliography and Verification Note
-
-This draft is a repository-integrated review. It draws on the SRT-Pub canonical files, compact cores, material log, and memory records. External references and metadata should be verified before public upload. The bibliography below is therefore selective and provisional.
+Anderson, E. (1999). What is the point of equality? *Ethics*, 109(2), 287-337.
 
 Baars, B. J. (1988). *A Cognitive Theory of Consciousness*. Cambridge University Press.
 
-Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies*.
+Barad, K. (2007). *Meeting the Universe Halfway: Quantum Physics and the Entanglement of Matter and Meaning*. Duke University Press.
 
-Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences*.
+Barsalou, L. W. (1999). Perceptual symbol systems. *Behavioral and Brain Sciences*, 22(4), 577-660.
 
-Dehaene, S. (2014). *Consciousness and the Brain*. Viking.
+Bell, J. S. (1964). On the Einstein Podolsky Rosen paradox. *Physics Physique Fizika*, 1(3), 195-200.
 
-Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*.
+Berger, P. L., and Luckmann, T. (1966). *The Social Construction of Reality*. Anchor Books.
 
-Kastrup, B. (2019). *The Idea of the World*. Iff Books.
+Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press.
 
-Nagel, T. (1974). What is it like to be a bat? *The Philosophical Review*.
+Brandom, R. (1994). *Making It Explicit: Reasoning, Representing, and Discursive Commitment*. Harvard University Press.
 
-Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*.
+Butterfield, J. (2011). Less is different: emergence and reduction reconciled. *Foundations of Physics*, 41, 1065-1135.
 
-Varela, F., Thompson, E., and Rosch, E. (1991). *The Embodied Mind*. MIT Press.
+Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of Consciousness Studies*, 2(3), 200-219.
 
-Zhang, Y. (2026). *Selective Reality Theory: Repository working papers and canonical notes*. SRT-Pub repository.
+Chemero, A. (2009). *Radical Embodied Cognitive Science*. MIT Press.
+
+Clark, A. (1997). *Being There: Putting Brain, Body, and World Together Again*. MIT Press.
+
+Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences*, 36(3), 181-204.
+
+Clauser, J. F., Horne, M. A., Shimony, A., and Holt, R. A. (1969). Proposed experiment to test local hidden-variable theories. *Physical Review Letters*, 23(15), 880-884.
+
+Crooks, G. E. (1999). Entropy production fluctuation theorem and the nonequilibrium work relation for free energy differences. *Physical Review E*, 60(3), 2721-2726.
+
+Dehaene, S. (2014). *Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts*. Viking.
+
+Dehaene, S., and Naccache, L. (2001). Towards a cognitive neuroscience of consciousness: basic evidence and a workspace framework. *Cognition*, 79(1-2), 1-37.
+
+Dennett, D. C. (1991). *Consciousness Explained*. Little, Brown.
+
+Di Paolo, E. A., Buhrmann, T., and Barandiaran, X. E. (2017). *Sensorimotor Life: An Enactive Proposal*. Oxford University Press.
+
+Everett, H. (1957). Relative state formulation of quantum mechanics. *Reviews of Modern Physics*, 29(3), 454-462.
+
+Feynman, R. P., and Hibbs, A. R. (1965). *Quantum Mechanics and Path Integrals*. McGraw-Hill.
+
+Fisher, R. A. (1922). On the mathematical foundations of theoretical statistics. *Philosophical Transactions of the Royal Society A*, 222, 309-368.
+
+Floridi, L., and Sanders, J. W. (2004). On the morality of artificial agents. *Minds and Machines*, 14, 349-379.
+
+Fricker, M. (2007). *Epistemic Injustice: Power and the Ethics of Knowing*. Oxford University Press.
+
+Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11, 127-138.
+
+Giacomini, F., Castro-Ruiz, E., and Brukner, C. (2019). Quantum mechanics and the covariance of physical laws in quantum reference frames. *Nature Communications*, 10, 494.
+
+Gibson, J. J. (1979). *The Ecological Approach to Visual Perception*. Houghton Mifflin.
+
+Hacking, I. (1999). *The Social Construction of What?* Harvard University Press.
+
+Haslanger, S. (2012). *Resisting Reality: Social Construction and Social Critique*. Oxford University Press.
+
+Hohwy, J. (2013). *The Predictive Mind*. Oxford University Press.
+
+Husserl, E. (1983). *Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy, First Book*. Martinus Nijhoff. Original work published 1913.
+
+James, W. (1890). *The Principles of Psychology*. Henry Holt.
+
+Jarzynski, C. (1997). Nonequilibrium equality for free energy differences. *Physical Review Letters*, 78(14), 2690-2693.
+
+Kadanoff, L. P. (1966). Scaling laws for Ising models near T_c. *Physics Physique Fizika*, 2(6), 263-272.
+
+Kastrup, B. (2019). *The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality*. Iff Books.
+
+Kirchhoff, M. D., Parr, T., Palacios, E., Friston, K., and Kiverstein, J. (2018). The Markov blankets of life: autonomy, active inference and the free energy principle. *Journal of The Royal Society Interface*, 15(138), 20170792.
+
+Korsgaard, C. M. (1996). *The Sources of Normativity*. Cambridge University Press.
+
+Lakoff, G., and Johnson, M. (1980). *Metaphors We Live By*. University of Chicago Press.
+
+Landauer, R. (1961). Irreversibility and heat generation in the computing process. *IBM Journal of Research and Development*, 5(3), 183-191.
+
+Mashour, G. A., Roelfsema, P., Changeux, J.-P., and Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. *Neuron*, 105(5), 776-798.
+
+Maturana, H. R., and Varela, F. J. (1980). *Autopoiesis and Cognition: The Realization of the Living*. D. Reidel.
+
+Moreno, A., and Mossio, M. (2015). *Biological Autonomy: A Philosophical and Theoretical Enquiry*. Springer.
+
+Nagel, T. (1974). What is it like to be a bat? *The Philosophical Review*, 83(4), 435-450.
+
+Noether, E. (1918). Invariante Variationsprobleme. *Nachrichten von der Gesellschaft der Wissenschaften zu Gottingen, Mathematisch-Physikalische Klasse*, 1918, 235-257.
+
+Nussbaum, M. C. (2011). *Creating Capabilities: The Human Development Approach*. Harvard University Press.
+
+Oizumi, M., Albantakis, L., and Tononi, G. (2014). From the phenomenology to the mechanisms of consciousness: integrated information theory 3.0. *PLoS Computational Biology*, 10(5), e1003588.
+
+Page, D. N., and Wootters, W. K. (1983). Evolution without evolution: dynamics described by stationary observables. *Physical Review D*, 27(12), 2885-2892.
+
+Parr, T., Pezzulo, G., and Friston, K. J. (2022). *Active Inference: The Free Energy Principle in Mind, Brain, and Behavior*. MIT Press.
+
+Peirce, C. S. (1931-1958). *Collected Papers of Charles Sanders Peirce*. Harvard University Press.
+
+Raja, V., Valluri, D., Baggs, E., Chemero, A., and Anderson, M. L. (2021). The Markov blanket trick: on the scope of the free energy principle and active inference. *Physics of Life Reviews*, 39, 49-72.
+
+Rawls, J. (1971). *A Theory of Justice*. Harvard University Press.
+
+Rovelli, C. (1996). Relational quantum mechanics. *International Journal of Theoretical Physics*, 35, 1637-1678.
+
+Ruiz-Mirazo, K., Pereto, J., and Moreno, A. (2004). A universal definition of life: autonomy and open-ended evolution. *Origins of Life and Evolution of Biospheres*, 34, 323-346.
+
+Russell, S. (2019). *Human Compatible: Artificial Intelligence and the Problem of Control*. Viking.
+
+Sagawa, T., and Ueda, M. (2010). Generalized Jarzynski equality under nonequilibrium feedback control. *Physical Review Letters*, 104(9), 090602.
+
+Scanlon, T. M. (1998). *What We Owe to Each Other*. Harvard University Press.
+
+Schlosshauer, M. (2007). *Decoherence and the Quantum-to-Classical Transition*. Springer.
+
+Searle, J. R. (1995). *The Construction of Social Reality*. Free Press.
+
+Sellars, W. (1956). Empiricism and the philosophy of mind. In H. Feigl and M. Scriven (Eds.), *Minnesota Studies in the Philosophy of Science*, Vol. 1. University of Minnesota Press.
+
+Sen, A. (1999). *Development as Freedom*. Oxford University Press.
+
+Thompson, E. (2007). *Mind in Life: Biology, Phenomenology, and the Sciences of Mind*. Harvard University Press.
+
+Tononi, G. (2004). An information integration theory of consciousness. *BMC Neuroscience*, 5, 42.
+
+Tononi, G., Boly, M., Massimini, M., and Koch, C. (2016). Integrated information theory: from consciousness to its physical substrate. *Nature Reviews Neuroscience*, 17, 450-461.
+
+Turing, A. M. (1950). Computing machinery and intelligence. *Mind*, 59(236), 433-460.
+
+Varela, F. J., Thompson, E., and Rosch, E. (1991). *The Embodied Mind: Cognitive Science and Human Experience*. MIT Press.
+
+Wallace, D. (2012). *The Emergent Multiverse: Quantum Theory According to the Everett Interpretation*. Oxford University Press.
+
+Whitehead, A. N. (1929). *Process and Reality*. Macmillan.
+
+Wilson, K. G. (1975). The renormalization group: critical phenomena and the Kondo problem. *Reviews of Modern Physics*, 47(4), 773-840.
+
+Wittgenstein, L. (1953). *Philosophical Investigations*. Blackwell.
+
+Young, I. M. (1990). *Justice and the Politics of Difference*. Princeton University Press.
+
+Zhang, Y. (2026). *Selective Reality Theory: A selection-first meta-ontology*. Manuscript in preparation.
+
+Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Reviews of Modern Physics*, 75(3), 715-775.
+
+Zurek, W. H. (2009). Quantum Darwinism. *Nature Physics*, 5, 181-188.
