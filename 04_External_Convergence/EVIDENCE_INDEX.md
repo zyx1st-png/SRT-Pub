@@ -13,6 +13,11 @@ canonical: false
 
 This is the future index for external convergence cards. No concrete evidence cards are created in this first frontstage pass.
 
+No evidence cards have been accepted yet. Candidate directions are listed in:
+[`FIRST_EVIDENCE_CANDIDATES.md`](FIRST_EVIDENCE_CANDIDATES.md)
+
+Do not list candidates as accepted evidence.
+
 ## Card Index
 
 | ID | Domain | SRT Anchor | Level | Status | Summary | Pressure Link |
