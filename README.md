@@ -1,14 +1,20 @@
 # Selection-Reality Theory (SRT)
 
-SRT 是一个以“选择先于稳定存在”为核心命题的理论仓库。它试图把本体论、意识、AI、物理、神经机制与实验接口放到同一套选择-锚定-收敛框架下理解。
+SRT begins from a reversal:
+
+> Reality is not first given and then selected. Reality becomes determinate through constrained selection.
+>
+> 现实不是先被给定、再被选择；现实是在约束中的选择里变得确定。
+
+SRT 是一个以“选择先于稳定存在”为核心命题的理论框架。它试图把本体论、意识、AI、物理、神经机制、社会秩序、价值与实验接口放到同一套选择—锚定—收敛框架下理解。
 
 ## 30 秒版
 
-- **一句话**：SRT 将现实理解为参数化选择在约束、代价与历史下形成的显现与收敛结构。
+- **一句话**：SRT 将现实理解为参数化选择在约束、代价、关切与历史下形成的显现与收敛结构。
 - **三域**：`L0` = 潜在域，`L1` = 显现域，`L2` = 收敛域。
 - **核心量**：`\hat{G}_θ`、`d-value`、`Ψ_f`、`T_dir`。
-- **命题硬度**：核心命题按 P0-P5 分层；bridge / lab / companion / annex 内容不自动等于 primitive axiom。
-- **仓库内容**：理论主文、跨域桥接、实验接口、治理协议、运行流水线。
+- **基本姿态**：SRT 不是“心灵创造现实”，也不是相对主义或泛心论；它是受约束的选择现实论。
+- **读法顺序**：先读源头直觉，再读形式锚点，再看桥接、外部收敛与公众释放。
 
 ```mermaid
 flowchart LR
@@ -18,134 +24,124 @@ flowchart LR
   L2 --> G
 ```
 
-## 5 分钟版
+## Frontstage structure / 前台结构
 
-SRT 现在默认用两根轴来读：
+This repository is now organized around five frontstage reading layers:
 
-- `L0 / L1 / L2`：垂直理论深度
-- `OS / Bridge / Lab`：水平发言姿态
+| Layer | Role | Start here |
+|---|---|---|
+| `01_Source_Intuition` | Restores the founding force: selection before existence, subject as stabilized selection-pattern, value as consequence-bearing non-substitutability. | [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md) |
+| `02_Formal_Anchors` | Defines the load-bearing skeleton: axioms, equations, canonical variables, symbols, open tensions. | [`02_Formal_Anchors/README.md`](02_Formal_Anchors/README.md) |
+| `03_Bridges` | Translates SRT into neighboring theories and domains. Bridge files make SRT comparable; they do not prove SRT. | [`03_Bridges/README.md`](03_Bridges/README.md) |
+| `04_External_Convergence` | Grades independent findings from other fields as support, proxy, constraint, differential prediction, or pressure. | [`04_External_Convergence/README.md`](04_External_Convergence/README.md) |
+| `05_Public_Release` | Prepares public one-pagers, essays, talks, FAQ, scripts, and visual maps. | [`05_Public_Release/README.md`](05_Public_Release/README.md) |
 
-最短理解是：
+Guiding rule:
 
-- `(L0, os)`：形而上学锚点
-- `(L1, os)`：内部形式化与 canonical 定义
-- `(L1, bridge)`：与外部理论或领域现实的互译
-- `(L2, lab)`：愿意被数据打脸的实验接口
+> Source intuition gives SRT force. Formal anchors give SRT hardness. Bridges make SRT comparable. External convergence gives SRT support and pressure. Public release gives SRT reach.
 
-## 从哪里开始
+## How to read SRT
 
-如果你想按 **Theory First** 读理论主干：
+### If you are new
 
-1. [Core_Law/SRT_L0_Metaphysics.md](Core_Law/SRT_L0_Metaphysics.md)
-2. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
-3. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
-4. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)（split index / legacy numbering map, not the first definition source）
-5. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
-6. [_SRT_D_VALUE_CANONICAL.md](_SRT_D_VALUE_CANONICAL.md)、[_SRT_PSI_F_CANONICAL.md](_SRT_PSI_F_CANONICAL.md)、[_SRT_T_DIR_CANONICAL.md](_SRT_T_DIR_CANONICAL.md)
+1. [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md)
+2. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
+3. [`SRT_1H_Onboarding.md`](SRT_1H_Onboarding.md)
+4. [`SRT_Navigation_Map.md`](SRT_Navigation_Map.md)
 
-如果你是第一次来：
+### If you want the philosophical source
 
-1. [SRT_Quick_Start.md](SRT_Quick_Start.md)
-2. [SRT_1H_Onboarding.md](SRT_1H_Onboarding.md)
-3. [SRT_Navigation_Map.md](SRT_Navigation_Map.md)
+1. [`Core_Law/SRT_L0_Metaphysics.md`](Core_Law/SRT_L0_Metaphysics.md)
+2. [`Core_Law/SRT_Selection_Argument.md`](Core_Law/SRT_Selection_Argument.md)
+3. [`Core_Law/SRT_Core_Text_CN_Euclid.md`](Core_Law/SRT_Core_Text_CN_Euclid.md)
+4. [`Core_Law/SRT_Core_Text_CN.md`](Core_Law/SRT_Core_Text_CN.md)
 
-如果你想看最新仓库结构治理状态：
+### If you want the formal core
 
-1. [ANNEX_REGISTRY.md](ANNEX_REGISTRY.md)
-2. [Operations/Closure_Index_2026-04-29.md](Operations/Closure_Index_2026-04-29.md)
-3. [Operations/Structural_Governance_Rollup_2026-04-29.md](Operations/Structural_Governance_Rollup_2026-04-29.md)
-4. [SRT_Glossary_Structural_Governance_Terms.md](SRT_Glossary_Structural_Governance_Terms.md)
+1. [`02_Formal_Anchors/README.md`](02_Formal_Anchors/README.md)
+2. [`Core/SRT_Core_21_Minimal_Axioms.md`](Core/SRT_Core_21_Minimal_Axioms.md)
+3. [`Core/SRT_Core_21b_Constitutive_Theorems.md`](Core/SRT_Core_21b_Constitutive_Theorems.md)
+4. [`Core/SRT_Core_21_Formal_Axioms.md`](Core/SRT_Core_21_Formal_Axioms.md)
+5. [`Core/SRT_Core_21c_Bridge_Hypotheses.md`](Core/SRT_Core_21c_Bridge_Hypotheses.md)
+6. [`Core/SRT_Core_22_Equations.md`](Core/SRT_Core_22_Equations.md)
+7. [`_SRT_SYMBOL_TABLE.md`](_SRT_SYMBOL_TABLE.md)
+8. [`_SRT_D_VALUE_CANONICAL.md`](_SRT_D_VALUE_CANONICAL.md), [`_SRT_PSI_F_CANONICAL.md`](_SRT_PSI_F_CANONICAL.md), [`_SRT_T_DIR_CANONICAL.md`](_SRT_T_DIR_CANONICAL.md)
+9. [`Core/SRT_OPEN_TENSIONS.md`](Core/SRT_OPEN_TENSIONS.md)
 
-如果你想读中文主论证：
+### If you want cross-domain translation
 
-1. [Core_Law/SRT_L0_Metaphysics.md](Core_Law/SRT_L0_Metaphysics.md)
-2. [Core_Law/SRT_Core_Text_CN_Euclid.md](Core_Law/SRT_Core_Text_CN_Euclid.md)
-3. [Core_Law/SRT_Core_Text_CN.md](Core_Law/SRT_Core_Text_CN.md)
-4. [Core_Law/SRT_Selection_Argument.md](Core_Law/SRT_Selection_Argument.md)
+Start with [`03_Bridges/README.md`](03_Bridges/README.md), then choose a domain:
 
-如果你想看 formal core：
+- AI → [`AI/README.md`](AI/README.md)
+- Neuroscience → [`Neuroscience/README.md`](Neuroscience/README.md)
+- Physics → [`Physics/README.md`](Physics/README.md)
+- Philosophy → [`Philosophy/_SRT_Phil_Axioms.md`](Philosophy/_SRT_Phil_Axioms.md)
+- Spirituality → [`Spirituality/_SRT_Spirit_Axioms.md`](Spirituality/_SRT_Spirit_Axioms.md)
 
-1. [Core/SRT_Core_21_Minimal_Axioms.md](Core/SRT_Core_21_Minimal_Axioms.md)
-2. [Core/SRT_Core_21b_Constitutive_Theorems.md](Core/SRT_Core_21b_Constitutive_Theorems.md)
-3. [Core/SRT_Core_21_Formal_Axioms.md](Core/SRT_Core_21_Formal_Axioms.md)（split index / legacy numbering map, not the first definition source）
-4. [Core/SRT_Core_21c_Bridge_Hypotheses.md](Core/SRT_Core_21c_Bridge_Hypotheses.md)
-5. [Core/SRT_Core_22_Equations.md](Core/SRT_Core_22_Equations.md)
-6. [_SRT_SYMBOL_TABLE.md](_SRT_SYMBOL_TABLE.md)
-7. [Core/SRT_OPEN_TENSIONS.md](Core/SRT_OPEN_TENSIONS.md)
+### If you want external support, proxy, or pressure-testing
 
-如果你想看领域扩展：
+Start with [`04_External_Convergence/README.md`](04_External_Convergence/README.md).
 
-- AI → [AI/README.md](AI/README.md)（先读入口、claim-status 与 annex guardrails）
-- Neuroscience → [Neuroscience/README.md](Neuroscience/README.md)（入口；canonical axioms 与 N1-N9 hardening draft 分流）
-- Physics → [Physics/README.md](Physics/README.md)（先读 claim-status；QBox / Earth annex 均为 `canonical: false`）
-- Philosophy → [Philosophy/_SRT_Phil_Axioms.md](Philosophy/_SRT_Phil_Axioms.md)、[Philosophy/SRT_Political_Philosophy_CompactCore.md](Philosophy/SRT_Political_Philosophy_CompactCore.md)
-- Spirituality → [Spirituality/_SRT_Spirit_Axioms.md](Spirituality/_SRT_Spirit_Axioms.md)
+Related experiment and measurement files:
 
-### Philosophy 现在怎么进
+- [`SRT_EXP_PRIORITY_MATRIX.md`](SRT_EXP_PRIORITY_MATRIX.md)
+- [`SRT_EXP_MEASURE_MAP.md`](SRT_EXP_MEASURE_MAP.md)
+- [`SRT_EXP_TEMPLATE.md`](SRT_EXP_TEMPLATE.md)
 
-Philosophy 板块现在可以简化成四条入口：
+### If you want public-facing versions
 
-- **哲学基础 / foundations** → [Philosophy/SRT_Philosophy_Foundations_CompactCore.md](Philosophy/SRT_Philosophy_Foundations_CompactCore.md)
-- **社会经济 / social economics** → [Philosophy/SRT_Social_Economics_CompactCore.md](Philosophy/SRT_Social_Economics_CompactCore.md)
-- **政治哲学 / political philosophy** → [Philosophy/SRT_Political_Philosophy_CompactCore.md](Philosophy/SRT_Political_Philosophy_CompactCore.md)
-- **政治权利接口 / rights & authorization** → [Philosophy/SRT_Political_Rights.md](Philosophy/SRT_Political_Rights.md)
+Start with [`05_Public_Release/README.md`](05_Public_Release/README.md).
 
-### Philosophy PH-SS hardening route
-
-For the current hardened philosophy route, start with:
-
-- [`Philosophy/_PHILOSOPHY_MACHINE_INDEX.md`](Philosophy/_PHILOSOPHY_MACHINE_INDEX.md)
-- [`Philosophy/SRT_Philosophy_Foundations_CompactCore.md`](Philosophy/SRT_Philosophy_Foundations_CompactCore.md)
-- [`Philosophy/PH_SS_Hardening_Audit_2026-04-27.md`](Philosophy/PH_SS_Hardening_Audit_2026-04-27.md)
-
-Public / comparison / subjecthood entries:
+Current public-facing anchors:
 
 - [`Philosophy/SRT_Philosophy_Public_OnePager.md`](Philosophy/SRT_Philosophy_Public_OnePager.md)
-- [`Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md`](Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md)
-- [`Philosophy/SRT_Subjecthood_Threshold_Interface.md`](Philosophy/SRT_Subjecthood_Threshold_Interface.md)
+- [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
+- [`SRT_1H_Onboarding.md`](SRT_1H_Onboarding.md)
+- [`SRT_FAQ_CRITICAL.md`](SRT_FAQ_CRITICAL.md)
 
-### Spirituality 现在怎么进
+## Bridge, convergence, lab, governance
 
-Spirituality 板块现在可以简化成三条入口：
+Use this distinction:
 
-- **旧主轴 / praxis** → [Spirituality/_SRT_Spirit_Axioms.md](Spirituality/_SRT_Spirit_Axioms.md)
-- **新双线：主体位丢失、现代生活与回返** → [Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md](Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md) / [Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md](Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md)
-- **Community / Sangha：共同体如何托住回返** → [Spirituality/SRT_Spirituality_Community_and_Sangha.md](Spirituality/SRT_Spirituality_Community_and_Sangha.md)
+> Bridge translates. Convergence strengthens. Lab tests. Governance restrains.
+>
+> 桥接负责互译，收敛负责增强，实验负责检验，治理负责降承诺。
 
-## 仓库入口分工
+- `03_Bridges`: how SRT maps to another framework.
+- `04_External_Convergence`: whether external findings independently support, constrain, or pressure SRT constructs.
+- `SRT_EXP_*`: how claims become measurable or falsifiable.
+- `Governance/`: how claim status, edit rules, and canonical boundaries are maintained.
 
-- `README.md`：公开入口
+## Repository operations
+
+Operational and governance files remain available, but they are no longer the first face of the repository.
+
 - `AGENTS.md`：运行协议主入口
 - `CLAUDE.md`：Claude 兼容包装层
 - `SRT_AI_START.md`：AI 最小首读入口
 - `STATUS.md`：当前状态面板
 - `_SRT_INDEX.md`：机器索引
-- `SRT_Navigation_Map.md`：人类阅读地图
-- `_SRT_SYMBOL_TABLE.md`：符号规范锚点
 - `ANNEX_REGISTRY.md`：annex / interface 层注册表
 - `Operations/Closure_Index_2026-04-29.md`：最近结构治理闭环入口
+- `FRONTSTAGE_RESTRUCTURE_PLAN.md`：本轮前台结构重构计划
 
-## Runtime / Agent / AI support
+If you plan to modify theory-facing content, read:
 
-如果你是协作者或 AI agent：
+- [`Governance/SRT_CANONICAL_FREEZE.md`](Governance/SRT_CANONICAL_FREEZE.md)
+- [`Governance/SRT_EDIT_PROTOCOL.md`](Governance/SRT_EDIT_PROTOCOL.md)
+- [`Governance/SRT_CLAIM_LADDER.md`](Governance/SRT_CLAIM_LADDER.md)
 
-- 运行协议从 [AGENTS.md](AGENTS.md) 开始
-- AI 最小骨架从 [SRT_AI_START.md](SRT_AI_START.md) 开始
-- 当前状态看 [STATUS.md](STATUS.md)
-- 机器入口看 [_SRT_INDEX.md](_SRT_INDEX.md)
-- 结构治理闭环看 [Operations/Closure_Index_2026-04-29.md](Operations/Closure_Index_2026-04-29.md)
+## What SRT should not be read as
 
-AI 支持层服务于读取、检索、压力测试与边界测试；它不是理论中心，也不替代 core/canonical 定义源。
+SRT should not be read as claiming:
 
-如果你准备修改理论正文，请先看：
+- mind creates reality at will;
+- all truth is relative;
+- everything is conscious;
+- every bridge proves SRT;
+- every public-facing formulation is canonical;
+- every proxy is the thing itself.
 
-- [Governance/SRT_CANONICAL_FREEZE.md](Governance/SRT_CANONICAL_FREEZE.md)
-- [Governance/SRT_EDIT_PROTOCOL.md](Governance/SRT_EDIT_PROTOCOL.md)
-- [Governance/SRT_CLAIM_LADDER.md](Governance/SRT_CLAIM_LADDER.md)
+Safer reading:
 
-如果你想理解仓库结构与规范：
-
-- [Governance/README.md](Governance/README.md)
-- [Operations/README.md](Operations/README.md)
-- [ANNEX_REGISTRY.md](ANNEX_REGISTRY.md)
-- [SRT_Glossary_Structural_Governance_Terms.md](SRT_Glossary_Structural_Governance_Terms.md)
+> SRT asks how possibilities become realities, how repeated realities harden into the world we inherit, and how subjects, values, institutions, and scientific objects emerge through constrained selection, cost, concern, and stabilization.
