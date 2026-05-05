@@ -4,6 +4,8 @@ This layer prepares SRT for public readers, talks, essays, short explanations, v
 
 Public release is not a weaker version of SRT. It is the controlled release of SRT's force into public language.
 
+Public release is not canonical. Public materials should stay sharp without outrunning the formal anchors.
+
 ## Role
 
 `05_Public_Release` should answer:
@@ -27,10 +29,8 @@ Even shorter:
 
 Until a later migration pass, this layer points to existing public files rather than moving them.
 
-- [`../Philosophy/SRT_Philosophy_Public_OnePager.md`](../Philosophy/SRT_Philosophy_Public_OnePager.md)
-- [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md)
-- [`../SRT_1H_Onboarding.md`](../SRT_1H_Onboarding.md)
-- [`../SRT_FAQ_CRITICAL.md`](../SRT_FAQ_CRITICAL.md)
+- [`PUBLIC_INDEX.md`](PUBLIC_INDEX.md) maps current public-facing material.
+- [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) defines safe and unsafe public claims.
 
 ## Suggested future folders
 
@@ -41,26 +41,11 @@ Until a later migration pass, this layer points to existing public files rather 
 - `Substack_Zhihu_Wechat/`
 - `FAQ/`
 - `Visual_Maps/`
+- Future one-page entry may live here as `SRT_IN_ONE_PAGE.md`; do not place it at the repository root during the first frontstage pass.
 
 ## Public guardrails
 
-Avoid saying:
-
-- SRT explains everything.
-- SRT proves all other theories wrong.
-- SRT says mind creates reality.
-- SRT says truth is relative.
-- SRT says everything is conscious.
-- SRT is beyond testing.
-
-Prefer saying:
-
-- SRT asks how possibilities become realities.
-- SRT studies how repeated realities harden into the world we inherit.
-- SRT is selection-first, not mind-first.
-- Selection is broad; consciousness is thresholded.
-- Stability is not the same as legitimacy.
-- What becomes real must pay cost, survive resistance, and leave consequences.
+Use [`PUBLIC_GUARDRAILS.md`](PUBLIC_GUARDRAILS.md) before drafting public essays, scripts, one-pagers, talks, or social posts.
 
 ## Boundary
 

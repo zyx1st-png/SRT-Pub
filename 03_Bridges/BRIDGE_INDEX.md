@@ -1,0 +1,43 @@
+---
+id: SRT-BRIDGE-INDEX
+type: index
+tags: [Bridge, Frontstage, Navigation]
+status: active_v1
+layer: meta
+epistemic_layer: bridge
+claim_mode: navigation
+canonical: false
+---
+
+# Bridge Index
+
+This index maps existing bridge and domain folders without moving files.
+
+Bridge translates. It does not prove SRT.
+
+## Domain Entrypoints
+
+| Domain | Current entry | Bridge role |
+|---|---|---|
+| AI | [`../AI/README.md`](../AI/README.md) | AI, agency, consciousness, architecture, stake-coupling, and inference-only boundaries. |
+| Physics | [`../Physics/README.md`](../Physics/README.md) | Quantum, cosmology, measurement, physical analogy, and formalism interfaces. |
+| Neuroscience | [`../Neuroscience/README.md`](../Neuroscience/README.md) | Neural mechanisms, consciousness mechanisms, clinical interfaces, and lab-facing proxies. |
+| Philosophy | [`../Philosophy/README.md`](../Philosophy/README.md) | Foundations, subjecthood, ethics, social theory, rights, and political philosophy. |
+| Spirituality | [`../Spirituality/_SRT_Spirit_Axioms.md`](../Spirituality/_SRT_Spirit_Axioms.md) | Praxis, loss and return, community / sangha, and lived-experience interfaces. |
+| General adjacent theories | [`../Bridge/SRT_Adjacent_Theory_Interface_Index.md`](../Bridge/SRT_Adjacent_Theory_Interface_Index.md) | Neighboring theory interface index. |
+| Core bridge hypotheses | [`../Core/SRT_Core_21c_Bridge_Hypotheses.md`](../Core/SRT_Core_21c_Bridge_Hypotheses.md) | Core-facing bridge hypotheses and claim-level boundaries. |
+
+## Named Bridge Areas
+
+| Area | Current pointer | Notes |
+|---|---|---|
+| FEP / predictive processing | [`../Philosophy/SRT_FEP_Comparison.md`](../Philosophy/SRT_FEP_Comparison.md), [`../Neuroscience/SRT_Clin_02_FEP.md`](../Neuroscience/SRT_Clin_02_FEP.md) | Translation between SRT friction / suffering / signaling and FEP-like language. |
+| IIT | [`../Philosophy/SRT_IIT_Comparison.md`](../Philosophy/SRT_IIT_Comparison.md), [`../Neuroscience/SRT_Clin_00_IIT_PCI.md`](../Neuroscience/SRT_Clin_00_IIT_PCI.md) | Comparison with integrated-information and PCI-facing interfaces. |
+| GWT | [`../Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`](../Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md) | Use as a consciousness-mechanism comparison route when GWT is discussed. |
+| Ruliad / Observer Theory | [`../Bridge/SRT_Adjacent_Theory_Interface_Index.md`](../Bridge/SRT_Adjacent_Theory_Interface_Index.md) | Treat as adjacent-theory translation unless a specific file is later added. |
+| Assembly Theory | [`../Bridge/SRT_Adjacent_Theory_Interface_Index.md`](../Bridge/SRT_Adjacent_Theory_Interface_Index.md) | Treat as adjacent-theory translation unless a specific file is later added. |
+| Social theory | [`../Philosophy/_SRT_Soc_Bridge.md`](../Philosophy/_SRT_Soc_Bridge.md), [`../Philosophy/SRT_Soc_03_Institutions.md`](../Philosophy/SRT_Soc_03_Institutions.md) | Institutions, `L2` hardening, hidden friction, and social reality formation. |
+
+## Use Rule
+
+When a bridge also appears to offer external support or pressure, do not upgrade it inside the bridge file. Route that support to [`../04_External_Convergence/EVIDENCE_INDEX.md`](../04_External_Convergence/EVIDENCE_INDEX.md) once evidence cards exist.
