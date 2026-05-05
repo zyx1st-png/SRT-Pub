@@ -10,7 +10,7 @@ evidence_level: E2
 target_srt_anchor:
   - d-value
   - consequence_return
-  - subjecthood_threshold
+  - capacity_stake_distinction
 ---
 
 # Evidence Card: AI / High Capacity Low Stake as a Candidate Interface for `d-value`, Consequence Return, and Subjecthood Threshold
@@ -43,8 +43,11 @@ Related SRT constructs:
 
 - `d-value`
 - consequence return
-- subjecthood threshold
 - stake-coupled concern
+
+Related downstream construct:
+
+- subjecthood threshold
 
 This card concerns a contrast between high inference / task capacity and direct stake-coupled consequence return. It does not classify AI systems as a whole.
 
@@ -58,7 +61,7 @@ This is not an operational proxy yet. It becomes operational only if a later car
 
 E2 = structural convergence / conceptual contrast.
 
-Reason for E2: The AI literature supports a careful separation between performance capacity, reward optimization, preference following, agentic task behavior, and stronger claims about internal stake or subjecthood. That separation is compatible with SRT's distinction between capacity-like proxies and `d-value` as stake-coupled concern.
+Reason for E2: The checked AI literature motivates a careful separation between performance capacity, reward optimization, preference following, agentic task behavior, and stronger claims about internal stake or subjecthood. That separation is compatible with SRT's distinction between capacity-like proxies and `d-value` as stake-coupled concern.
 
 Reason not to rate E3: this draft card does not provide a validated operational proxy for `d-value`, consequence return, or subjecthood threshold in AI systems.
 
@@ -66,7 +69,7 @@ Reason not to rate E3: this draft card does not provide a validated operational 
 
 SRT treats `d-value` as stake-coupled concern, not merely bandwidth, fluency, reward sensitivity, or task competence. AI systems are therefore a useful test case for separating capacity from concern.
 
-Current dominant LLM-style systems appear to separate high inference capacity from direct stake-coupled consequence return under many deployment conditions, but future architectures with persistent memory, embodiment, self-maintenance, or consequence-bearing loops may require revised classification.
+Current dominant LLM-style deployments often present high inference capacity without clear evidence of direct stake-coupled consequence return to the model itself, but future architectures with persistent memory, embodiment, self-maintenance, or consequence-bearing loops may require revised classification.
 
 The relevance is structural:
 
