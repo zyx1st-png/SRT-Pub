@@ -64,12 +64,12 @@ SRT already treats `Psi_f` as the burden or resistance involved when open possib
 
 The relevance is structural:
 
-- A choice among possible parameterized states is not neutral if nearby states differ strongly in the induced distribution.
+- A transition among possible parameterized states is not geometrically neutral if nearby states differ strongly in the induced distribution.
 - A path through a statistical manifold can have local geometric length or energy-like accumulation.
 - Natural-gradient learning shows that Fisher geometry can change what counts as a steep or efficient update direction, which makes it relevant to update friction and selection path structure.
 - Chentsov-style uniqueness results reduce the worry that the Fisher metric is merely an arbitrary coordinate choice within statistical geometry.
 
-This strengthens the case that Fisher information geometry is a serious formal interface for one projection of `Psi_f`. It does not show that statistical distinguishability is already stake, value, subjecthood, or reality-selection.
+This makes Fisher information geometry a serious candidate formal interface for one projection of `Psi_f`. It does not show that statistical distinguishability is already stake, value, subjecthood, or reality-selection.
 
 ## 7. Alternative explanations
 
