@@ -17,7 +17,8 @@ This is the future index for external convergence cards. No concrete evidence ca
 
 | ID | Domain | SRT Anchor | Level | Status | Summary | Pressure Link |
 |---|---|---|---|---|---|---|
-| TBD | TBD | TBD | TBD | planned | Future evidence cards will be listed here. | TBD |
+
+_(no entries yet — first cards should be added in a later evidence pass)_
 
 ## Construct Lookup
 

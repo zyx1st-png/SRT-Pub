@@ -21,10 +21,13 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 
 | ID | Domain | SRT Construct Pressured | Pressure Type | Status | Summary | Related Evidence Card |
 |---|---|---|---|---|---|---|
-| TBD | TBD | TBD | TBD | planned | Future pressure entries will be listed here. | TBD |
+
+_(no entries yet — first cards should be added in a later evidence pass)_
 
 ## Required Practice
 
+- Hard rule: For every 3 accepted E2+ supportive evidence cards in a domain, at least 1 pressure / contradiction entry must be registered for that same domain.
+- Hard rule: If this condition is not met, that domain must not be summarized as externally convergent in [`EVIDENCE_INDEX.md`](EVIDENCE_INDEX.md).
 - Every future evidence domain should include at least one pressure or contradiction entry.
 - Strong support entries should be paired with a weakening condition.
 - Alternative explanations should be preserved rather than hidden.

@@ -55,8 +55,7 @@ Use this if you want a map of the whole repository without getting lost in opera
 
 1. [`README.md`](README.md)
 2. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
-3. [`START_HERE.md`](START_HERE.md)
-4. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
+3. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 
 ### Academic Reader
 
