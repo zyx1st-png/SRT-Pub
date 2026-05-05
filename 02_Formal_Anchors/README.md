@@ -4,6 +4,8 @@ This layer is the home for SRT's canonical definitions, minimal axioms, formal c
 
 If `01_Source_Intuition` says why SRT begins, this layer says what SRT commits to.
 
+This is the frontstage entrance to formal anchors. It is not a public outreach layer and not an external-evidence layer.
+
 ## Role
 
 `02_Formal_Anchors` should answer:
@@ -18,16 +20,8 @@ If `01_Source_Intuition` says why SRT begins, this layer says what SRT commits t
 
 Until a later migration pass, this layer points to current canonical files rather than moving them.
 
-- [`../Core/SRT_Core_21_Minimal_Axioms.md`](../Core/SRT_Core_21_Minimal_Axioms.md)
-- [`../Core/SRT_Core_21b_Constitutive_Theorems.md`](../Core/SRT_Core_21b_Constitutive_Theorems.md)
-- [`../Core/SRT_Core_21_Formal_Axioms.md`](../Core/SRT_Core_21_Formal_Axioms.md)
-- [`../Core/SRT_Core_21c_Bridge_Hypotheses.md`](../Core/SRT_Core_21c_Bridge_Hypotheses.md)
-- [`../Core/SRT_Core_22_Equations.md`](../Core/SRT_Core_22_Equations.md)
-- [`../_SRT_SYMBOL_TABLE.md`](../_SRT_SYMBOL_TABLE.md)
-- [`../_SRT_D_VALUE_CANONICAL.md`](../_SRT_D_VALUE_CANONICAL.md)
-- [`../_SRT_PSI_F_CANONICAL.md`](../_SRT_PSI_F_CANONICAL.md)
-- [`../_SRT_T_DIR_CANONICAL.md`](../_SRT_T_DIR_CANONICAL.md)
-- [`../Core/SRT_OPEN_TENSIONS.md`](../Core/SRT_OPEN_TENSIONS.md)
+- [`INDEX.md`](INDEX.md) — mapped list of current formal anchors.
+- [`CLAIM_LEVEL_GUIDE.md`](CLAIM_LEVEL_GUIDE.md) — quick distinction between canonical, axiom, theorem, bridge, proxy, lab, public, and governance roles.
 
 ## Formal posture
 
@@ -44,4 +38,4 @@ Preferred style:
 
 ## Boundary
 
-Formal anchors do not need to carry the full public force of SRT. They serve as the load-bearing skeleton. Source intuition belongs in `01_Source_Intuition`; translation to other frameworks belongs in `03_Bridges`; public-facing versions belong in `05_Public_Release`.
+Formal anchors do not need to carry the full public force of SRT. They serve as the load-bearing skeleton. Source intuition belongs in `01_Source_Intuition`; translation to other frameworks belongs in `03_Bridges`; external support and pressure belong in `04_External_Convergence`; public-facing versions belong in `05_Public_Release`.
