@@ -25,7 +25,7 @@ Public release is controlled outward expression. It is not canonical and not a s
 
 | File | Public role |
 |---|---|
-| [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md) | Existing quick-start guide. Current quick-start file exists, but may still be too governance-heavy and should be rewritten in a later pass. |
+| [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md) | Frontstage new-reader guide; public-friendly orientation before formal anchors. |
 | [`../SRT_1H_Onboarding.md`](../SRT_1H_Onboarding.md) | One-hour onboarding route for readers who want more than a brief intro. |
 | [`../SRT_Public_Reading_Guide.md`](../SRT_Public_Reading_Guide.md) | Public reading guide when available as a reader-facing path. |
 | [`../SRT_FAQ_CRITICAL.md`](../SRT_FAQ_CRITICAL.md) | Critical FAQ and objection-facing public material. |
