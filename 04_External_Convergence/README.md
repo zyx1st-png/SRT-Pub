@@ -31,6 +31,13 @@ A better rule is:
 - [`EVIDENCE_CARD_TEMPLATE.md`](EVIDENCE_CARD_TEMPLATE.md) gives the card format.
 - [`CONTRADICTION_LEDGER.md`](CONTRADICTION_LEDGER.md) records pressure, failed predictions, and stronger alternative explanations.
 
+## Candidate Directions
+
+Link:
+[`FIRST_EVIDENCE_CANDIDATES.md`](FIRST_EVIDENCE_CANDIDATES.md)
+
+This is a planning index for future evidence cards. It is not an evidence index and does not claim that any external field proves SRT.
+
 ## Suggested subdomains
 
 Future evidence cards can be organized under:
