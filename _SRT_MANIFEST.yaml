@@ -3,6 +3,7 @@ updated_for: "repo-optimization-2026-04"
 
 entry_surfaces:
   public_readme: "README.md"
+  public_manifesto: "Manifesto/SRT_MANIFESTO.md"
   runtime_protocol: "AGENTS.md"
   claude_compat: "CLAUDE.md"
   ai_start: "SRT_AI_START.md"
@@ -10,6 +11,16 @@ entry_surfaces:
   machine_index: "_SRT_INDEX.md"
   human_map: "SRT_Navigation_Map.md"
   symbols: "_SRT_SYMBOL_TABLE.md"
+
+manifesto:
+  file: "Manifesto/SRT_MANIFESTO.md"
+  version: "v1.0"
+  claim_mode: "manifesto"
+  canonical: false
+  audience: "human_public"
+  governing_rule: "Governance/SRT_CLAIM_LADDER.md §2A"
+  ai_bootstrap: false
+  review_window_until: "2026-05-31"
 
 registries:
   canonical: "CANONICAL_REGISTRY.md"

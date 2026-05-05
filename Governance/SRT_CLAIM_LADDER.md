@@ -1,8 +1,8 @@
 ---
 id: SRT-CLAIM-LADDER
 type: governance
-tags: [Governance, Claim Ladder, Canonical, Bridge, Lab]
-status: active_v1
+tags: [Governance, Claim Ladder, Canonical, Bridge, Lab, Manifesto]
+status: active_v1_1
 layer: meta
 epistemic_layer: os
 claim_mode: canonical
@@ -48,6 +48,57 @@ File roles and claim levels do not automatically determine each other.
 | companion / praxis / public exposition | P5 plus quoted P0-P2 | Must distinguish explanation from definition |
 
 The same file may mix P-levels. If it does, mark the level at least at section level. Inline marking is preferred for high-risk statements.
+
+---
+
+## 2A. `claim_mode: manifesto`
+
+A `manifesto` claim mode authorizes worldview-level rhetorical compression while keeping the claim ladder load-bearing. It exists so that SRT can have a public-facing front-edge document without inviting silent P3-as-P0 inflation.
+
+**Scope**: applies to files under `Manifesto/` and to any first-screen reference block in `README.md` that quotes a manifesto center sentence.
+
+**Allowed**:
+
+- Restate already-canonical P0/P1/P2 claims in slogan, compressed, or metaphorical form.
+- Place P0 (hard) and P3 (bridge) claims in the same paragraph or center sentence, **provided the paragraph itself carries inline claim-level tags distinguishing them**.
+- Bilingual parallel passages (e.g., Chinese + English) where the non-Chinese line is a rhetorical mirror, not an independent assertion.
+
+**Forbidden**:
+
+- Introducing any new P0 or P1 claim. New claims must first pass through `Core/`, `Core_Law/`, or `Governance/` promotion before a manifesto may quote them.
+- Hiding P3/P4 hardness behind P0-style phrasing. Bridge claims must remain bridge claims even in slogan form.
+- Coining new symbols, operators, or domain names. Manifestos only reference symbols already registered in `_SRT_SYMBOL_TABLE.md`.
+- Single-file deferred footers as a substitute for inline tagging.
+
+**Inline tag rule**:
+
+- Every reversal proposition, center sentence, and free-standing assertion paragraph must carry an inline claim tag in `[P0-XX]` / `[P1, canonical]` / `[P2, canonical]` / `[P3, bridge]` / `[P3, conjectural]` / `[P4, speculative]` / `[P5, exposition]` form.
+- Tags must appear in the same line or paragraph as the claim, not in a separate footnote section.
+- When a center sentence compresses (a) P0 + (b) P3, the two halves must be sub-labeled `(a)` and `(b)` and tagged separately at least once in the file.
+
+**Frontmatter requirement**:
+
+A manifesto-mode file's YAML frontmatter must include:
+
+- `claim_mode: manifesto`
+- `audience: human_public`
+- `manifesto_version: vX.Y`
+- `anchored_claims:` — explicit list of canonical anchor IDs (e.g., `P0-01`, `P3-B07`, `PSI-F-CANONICAL`) the manifesto draws from
+- `last_review: YYYY-MM-DD`
+- `review_window_until: YYYY-MM-DD` — date for the next mandated reception review
+
+**Versioning and trace**:
+
+Any change to a manifesto's center sentence (Layer A / Layer B / Layer C) must be logged as a separate `Operations/` entry on the day of the change.
+
+**AI session boundary**:
+
+Manifesto files are human-first entries. They are **not** part of the AI session bootstrap defined in `AGENTS.md §Session Start`. AI agents read manifesto material only when the task involves user-facing framing.
+
+**Relation to existing modes**:
+
+- `claim_mode: manifesto` is rhetorically less constrained than `canonical` but governance-wise more constrained than `mixed`: it authorizes compression in exchange for mandatory inline tagging.
+- It does not grant manifestos any authority over canonical files. Canonical files always outrank manifesto restatements.
 
 ---
 

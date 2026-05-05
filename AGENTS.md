@@ -19,6 +19,8 @@ For a fresh AI session inside this repo, read in this order:
 
 Read `README.md` when public-facing framing or external onboarding context is useful.
 
+`Manifesto/SRT_MANIFESTO.md` is a human-first worldview entry (`claim_mode: manifesto`, governed by `Governance/SRT_CLAIM_LADDER.md §2A`). It is **not** part of AI session bootstrap; read it only when the task involves user-facing framing.
+
 Before doing substantial pipeline / governance / theory work:
 
 1. Read `Operations/README.md`

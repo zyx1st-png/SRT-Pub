@@ -44,6 +44,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 | `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md` | 中优先级 Spirituality 覆盖索引 |
 | `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md` | 中优先级 Papers/Publication 覆盖索引 |
 | `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md` | 中优先级 Root Topic/FAQ 覆盖索引 |
+| `Manifesto/SRT_MANIFESTO.md` | 公开宣言（`claim_mode: manifesto`，非 canonical 主源） |
 
 ## Default Read Order
 
@@ -68,10 +69,11 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 ### Human / Public
 
 1. `README.md`
-2. `SRT_Quick_Start.md`
-3. `SRT_1H_Onboarding.md`
-4. `SRT_Navigation_Map.md`
-5. `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（when reading or editing the Philosophy folder）
+2. `Manifesto/SRT_MANIFESTO.md`（worldview-level center sentence；`claim_mode: manifesto`，不替代 canonical core）
+3. `SRT_Quick_Start.md`
+4. `SRT_1H_Onboarding.md`
+5. `SRT_Navigation_Map.md`
+6. `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（when reading or editing the Philosophy folder）
 
 ## Authority Order
 
@@ -280,3 +282,4 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Physics/SRT_Physics_Claim_Status.md` 是 Physics 领域 claim-status 审计与 guardrail；防止量子、宇宙学和 bridge 命题被过度读成 P0/P1
 - `Physics/QBox_Annex/README.md` 是 QBox / hyperdecoherence 接口 annex 的批次索引；`canonical: false`，claim_mode: translation
 - `Physics/Earth_Accretion_Annex/README.md` 是地球吸积 / reservoir-selection 接口 annex 的批次索引；`canonical: false`，claim_mode: translation
+- `Manifesto/SRT_MANIFESTO.md` 是公开宣言（worldview-level front-edge）；`claim_mode: manifesto`，非 canonical 主源；遵循 `Governance/SRT_CLAIM_LADDER.md §2A`；human-first，不进 AI session bootstrap
