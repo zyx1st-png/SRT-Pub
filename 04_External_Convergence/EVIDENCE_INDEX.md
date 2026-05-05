@@ -24,7 +24,7 @@ Do not list candidates as accepted evidence.
 |---|---|---|---|---|---|---|
 | [`EC-IG-FISHER-PSIF`](Mathematics_Information/EC-IG-Fisher-PsiF.md) | mathematics / information geometry | `Psi_f`; selection cost | E2 | draft_v1; not accepted | Fisher information geometry as a candidate structural interface for local distinguishability, transition burden, and parameter-space friction. | [`CL-IG-FISHER-GENERIC-DIFFICULTY`](CONTRADICTION_LEDGER.md#cl-ig-fisher-generic-difficulty) |
 | [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md) | physics / thermodynamics | selection cost; `Psi_f` | E2 | draft_v1; not accepted | Landauer principle and irreversible record formation as candidate interfaces for physical erasure, reset, durable records, and selection-cost projection. | [`CL-THERMO-LANDAUER-OVEREXTENSION`](CONTRADICTION_LEDGER.md#cl-thermo-landauer-overextension) |
-| [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) | AI / ML | `d-value`; consequence return; capacity-stake distinction | E2 | draft_v1; not accepted | High inference / task capacity as a candidate contrast with stake-coupled consequence return and subjecthood threshold. | pending ledger review |
+| [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) | AI / ML | `d-value`; consequence return; capacity-stake distinction | E2 | draft_v1; not accepted | High inference / task capacity as a candidate contrast with stake-coupled consequence return and subjecthood threshold. | [`CL-AI-FUNCTIONALIST-STAKE-CHALLENGE`](CONTRADICTION_LEDGER.md#cl-ai-functionalist-stake-challenge) |
 
 Draft rows are not accepted evidence.
 
