@@ -37,27 +37,42 @@ The chapter opens with a morning route scene instead of a direct analytic handof
 
 Purpose: respond to the anti-homogenization style rule and make order visible as background.
 
-### 2.2 Reduced negative guardrails
+### 2.2 Added order-failure visibility
+
+V2 adds a short “order becomes visible when it fails” passage:
+
+- key fails to open door;
+- payment system breaks;
+- familiar road is blocked;
+- language stops being transparent;
+- family taboo phrase;
+- platform default changes.
+
+Purpose: make readers feel that they already live inside background order, rather than only conceptually agreeing.
+
+### 2.3 Reduced negative guardrails
 
 The chapter does not build around long “秩序不是 X” lists. It uses positive construction:
 
 - 可继承;
 - 可共享;
 - 背景化;
-- 降低重新选择成本;
+- 降低从零开始的成本;
 - 脚手架;
 - 牢笼;
 - L2 as backgrounded second-layer stability.
 
-### 2.3 Bridge shadow kept internal
+### 2.4 Bridge shadow kept internal
 
-No stand-alone “桥接提示” section. Scientific/social bridge material is implied via:
+No stand-alone “桥接提示” section. Scientific/social bridge material is implied or compressed into short internal passages:
 
 - roads / language / habits / institutions;
 - technical standards;
 - platform defaults;
 - AI pre-pruning;
-- institutions and social order.
+- institutions and social order;
+- habits / chunking / procedural action / predictive models;
+- path dependence / hysteresis / attractors / infrastructure lock-in.
 
 ---
 
@@ -70,6 +85,10 @@ Recovered chain:
 > 选择留下痕迹。锚定让痕迹开始承重。秩序让承重的锚彼此继承、共享，并退到背景里。
 
 Chapter 6 expands this into the order skeleton.
+
+V2 refines this into a gradual relation:
+
+> 选择留下痕迹；留痕开始承重，才成为锚；许多锚彼此继承、共享、背景化，并系统性改变后来选择的坡度，才成为秩序。
 
 ### 3.2 From style guide precision pass
 
@@ -99,28 +118,68 @@ Recovered motifs:
 - L2 as both enabling and dangerous;
 - AI pre-pruning as new background order;
 - stability does not imply legitimacy;
-- order may make the world habitable while closing future becoming.
+- order may make the world habitable while closing future becoming;
+- consequence return as health / legitimacy entry.
 
 ---
 
-## 4. Candidate nochange / quasi-nochange lines
+## 4. V2 refinements applied
+
+### 4.1 Cost distinction
+
+V2 replaces / clarifies “降低重新选择成本” with:
+
+> 健康秩序首先降低的是从零开始的成本，而不是重新选择的成本。
+
+And adds:
+
+> 病理秩序则常常降低表面摩擦，却提高重新选择的成本。
+
+### 4.2 L2 threshold guardrail
+
+V2 adds:
+
+> 不是所有痕迹都会成为秩序，也不是所有背景化结构都自动进入 L2。只有当痕迹开始系统性改变后续选择成本，并且足够稳定、可继承、可共享、可再入场，对后续选择形成持续约束时，它才进入 L2 级别。
+
+### 4.3 Consequence return as legitimacy entry
+
+V2 strengthens §9 around health / legitimacy:
+
+> 一个秩序是否健康，不只看它能否稳定运行，而要看谁承担后果，后果能否回到改写通道，承担者是否能参与规则重写，痛苦是否能作为结构输入，而不是被解释成个人失败。
+
+### 4.4 Book-title guardrail
+
+V2 adds:
+
+> 秩序是成就，不是正当性。
+
+And:
+
+> 本书说“从存在到秩序”，不是把秩序当成最终答案，而是把秩序从背景里召回为问题。
+
+---
+
+## 5. Candidate nochange / quasi-nochange lines
 
 1. “一个人早晨醒来，不会重新发明世界。”
 2. “秩序最成熟的形态，不是站在眼前被人凝视，而是退到背景里。”
-3. “秩序不是单个痕迹。秩序是痕迹之间的可继承关系。”
-4. “稳定只是‘不散’。秩序是‘后来者必须在这里开始’。”
-5. “秩序最先不是压迫，而是节省。”
-6. “彻底开放不是自由，而是无法行动。”
-7. “秩序是已经被忘记为选择结果的选择结果。”
-8. “秩序的健康不在于它多稳定。秩序的健康在于它是否仍然服务再选择。”
-9. “L2 是世界可居住的条件。也是世界可能停止成为的地方。”
-10. “地形如何反过来选择人？”
+3. “秩序通常只在失效时显影。”
+4. “秩序不是单个痕迹。秩序是痕迹之间的可继承关系。”
+5. “稳定只是‘不散’。秩序是‘后来者必须在这里开始’。”
+6. “秩序最先不是压迫，而是节省。”
+7. “健康秩序首先降低的是从零开始的成本，而不是重新选择的成本。”
+8. “彻底开放不是自由，而是无法行动。”
+9. “秩序是已经被忘记为选择结果的选择结果。”
+10. “秩序的健康不在于它多稳定。秩序的健康在于它是否仍然服务再选择。”
+11. “L2 是世界可居住的条件。也是世界可能停止成为的地方。”
+12. “秩序是成就，不是正当性。”
+13. “地形如何反过来选择人？”
 
 ---
 
-## 5. Deferred material
+## 6. Deferred material
 
-### 5.1 Full lethal L2 formalism
+### 6.1 Full lethal L2 formalism
 
 Deferred to later L2 / lethal-L2 chapter:
 
@@ -132,7 +191,7 @@ Deferred to later L2 / lethal-L2 chapter:
 
 Reason: chapter 6 only introduces order and L2; lethal L2 requires more scaffolding.
 
-### 5.2 Collective M(t) / oppression diagnostics
+### 6.2 Collective M(t) / oppression diagnostics
 
 Deferred to collective selection chapters:
 
@@ -143,7 +202,7 @@ Deferred to collective selection chapters:
 
 Reason: chapter 6 mentions oppression/legitimacy but should not become political diagnosis.
 
-### 5.3 Full AI bridge
+### 6.3 Full AI bridge
 
 Deferred to AI chapter:
 
@@ -155,7 +214,7 @@ Deferred to AI chapter:
 
 Chapter 6 only names AI代理系统 as a possible new background order.
 
-### 5.4 Full rights / institution bridge
+### 6.4 Full rights / institution bridge
 
 Deferred to social philosophy bridge:
 
@@ -166,7 +225,7 @@ Deferred to social philosophy bridge:
 
 ---
 
-## 6. Do-not-recover notes
+## 7. Do-not-recover notes
 
 - Do not make chapter 6 primarily an institutional theory chapter.
 - Do not introduce formulas or claim-mode language in the book layer.
@@ -174,3 +233,5 @@ Deferred to social philosophy bridge:
 - Do not turn the script into a critique of all structure; SRT is not anti-order.
 - Do not overuse “不是 X”; chapter 6 must remain positive construction.
 - Do not fully resolve L2 health vs pathology here; chapter 6 should only open that problem.
+- Do not expand the science / philosophy shadows into literature review.
+- Do not introduce κ_mask / κ_relax, Ψ_f actual/felt split, or A/B occlusion phases in this chapter.
