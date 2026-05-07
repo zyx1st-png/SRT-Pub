@@ -112,29 +112,65 @@ chapter: 05
 
 ---
 
-## 2. Deferred material after v2
+## 2. Recovered into prologue / style guide during this pass
 
-### 2.1 Full bridge treatment of neuroscience / complex systems / social systems / computation
+### 2.1 Prologue tone: less manual-like, more philosophical tension
+
+**Recovered location:** `01_Source_Intuition/BOOK/00_序_为什么要从存在走向秩序.md`, §§6–8.
+
+**Core motif:**
+
+> 写这本书最容易的诱惑，是把它写成一种已经完成的系统：先给定义，再排章节，再告诉读者每个概念应该放在哪里。那样会清楚，但也会过早地把 SRT 变成它自己正在警惕的东西：一个替人完成选择的地板。
+
+**Function:** responds to the review concern that the prologue was too much like a manual / project statement and not enough like a philosophical book facing a real difficulty.
+
+### 2.2 Prologue commitments split and strengthened
+
+**Recovered location:** prologue §8.
+
+**Core motif:**
+
+> 本书首先承诺一件事：它会把世界的地板，从静态存在，移到选择生成的秩序。
+
+**Function:** avoids stacking too many “does not” claims and turns the commitments section into a positive promise plus controlled refusals.
+
+### 2.3 Style guide additions
+
+**Recovered location:** `90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`.
+
+**Added rules:**
+
+- “现象学入口要有呼吸，特别是困难概念”;
+- “边界要挡具体误读，不要堆叠否定”;
+- “让思考过程适度可见”.
+
+**Function:** makes the Claude review actionable for later chapters without imposing a rigid template.
+
+---
+
+## 3. Deferred material after v2
+
+### 3.1 Full bridge treatment of neuroscience / complex systems / social systems / computation
 
 **Reason deferred:** chapter 5 now includes only “bridge shadows”. Full treatment belongs in the domain bridge layer.
 
 **Future targets:** neuroscience bridge, social bridge, AI/computation bridge, complex-systems note.
 
-### 2.2 Full friction / Ψ_f formalization
+### 3.2 Full friction / Ψ_f formalization
 
 **Reason deferred:** “history grows barbs” is an intuition-level image. The full account of friction, payability, maintenance cost, and structural impedance belongs to Ψ_f chapters and formal anchors.
 
-### 2.3 Full social/political theory of falsehood and oppression
+### 3.3 Full social/political theory of falsehood and oppression
 
 **Reason deferred:** chapter 5 only establishes that false or unjust structures can gain reality thickness through anchoring. The full political/social account belongs to L2, collective selection, and public essays.
 
-### 2.4 Full order network theory
+### 3.4 Full order network theory
 
 **Reason deferred:** chapter 5 only introduces networked anchoring. The next chapter should treat how anchors connect into order.
 
 ---
 
-## 3. Candidate nochange / quasi-nochange lines from chapter 5 v2
+## 4. Candidate nochange / quasi-nochange lines from chapter 5 v2
 
 1. “选择让一出现。锚定让一留下。”
 2. “写入是选择切入现实的那一瞬间。锚定是这个切入没有立刻消散，而是开始获得持续摩擦、继承和再入场能力。”
@@ -152,7 +188,16 @@ chapter: 05
 
 ---
 
-## 4. Do-not-recover notes for chapter 5 main prose
+## 5. Candidate nochange / quasi-nochange lines from prologue/style update
+
+1. “那样会清楚，但也会过早地把 SRT 变成它自己正在警惕的东西：一个替人完成选择的地板。”
+2. “每当文字变得太像说明书，就回到裂缝本身；每当概念变得太顺滑，就追问它遮住了什么。”
+3. “本书首先承诺一件事：它会把世界的地板，从静态存在，移到选择生成的秩序。”
+4. “这些拒绝不是为了提前防御所有误读，而是为了给后文留出干净空间。”
+
+---
+
+## 6. Do-not-recover notes for chapter 5 main prose
 
 Do not add the following back into chapter 5 unless future founder pass explicitly requests it:
 
@@ -168,3 +213,12 @@ Do not add the following back into chapter 5 unless future founder pass explicit
 Chapter 5 v2 should stay clean:
 
 `selection writes in → anchoring makes write-in remain → history does not automatically preserve occurrence → anchoring = trace / bearing / re-entry → anchoring is networked → not memory/naming → bridge shadows → trace/constraint/terrain → friction image → bearing vs payability → reality thickness → falsehood can be deeply anchored → anchoring can lock → order handoff`.
+
+---
+
+## 7. Do-not-recover notes for prologue/style pass
+
+- Do not turn the prologue into a full autobiographical preface.
+- Do not add long first-person “how I discovered SRT” passages into the prologue.
+- Do not expand §8 into a full list of every adjacent theory.
+- Do not make every chapter use first-person process language; use thought-process visibility only where the concept genuinely needs it.
