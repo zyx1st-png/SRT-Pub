@@ -5,11 +5,15 @@ type: backstage_recovery_register
 canonical: false
 ---
 
-# Recovered Materials · Ch01 v8 → Prologue/Ch01 v10 Split
+# Recovered Materials · Book Project
 
-> Purpose: preserve high-value material moved out of chapter 1 during the v8 → v9/v10 split, so contraction does not become loss.
+> Purpose: preserve high-value material moved out of book chapters during drafting, so contraction does not become loss.
 >
 > Rule: material listed here is not canonical and is not automatically accepted into future chapters. It is a recovery register for later founder pass and chapter-level rewriting.
+
+---
+
+# A. Recovered Materials · Ch01 v8 → Prologue/Ch01 v10 Split
 
 ## 0. Current split summary
 
@@ -245,3 +249,177 @@ The following should not be restored to chapter 1 unless a future founder pass e
 - Long method-coda after the chapter 1 L0 handoff.
 
 Chapter 1 should stay clean: arrow → river → slice → existence as stable label → becoming → thickness/value → order → L0.
+
+---
+
+# B. Recovered Materials · Ch03 ε_pg Drafting
+
+## 0. Current treatment
+
+| Source / motif | Current treatment |
+|---|---|
+| `ε_pg` as L0 minimum non-neutrality | Recovered into chapter 3 draft_v2 as founder-intuition prose. |
+| Non-self-erasure | Recovered into chapter 3 as the central intuitive definition. |
+| Avoiding teleology | Recovered into §§3 and 6. |
+| `ε_pg` source/open tension | Recovered into §8 as an explicit unresolved tension. |
+| Extended technical/adjacent-theory comparisons | Deferred; not suitable for chapter 3 main prose. |
+
+## 1. Recovered into chapter 3 v2
+
+### 1.1 Self-erasure scene
+
+**Recovered location:** `03_ε_pg_L0的最小非中立性.md`, §2.
+
+**Core retained text / motif:**
+
+> 这种痛苦不只是“我说错了”。更准确地说，是你亲手取消了某些后续可能性。
+
+**Function:** makes self-erasure experientially graspable rather than merely conceptual.
+
+### 1.2 Anti-purpose / anti-teleology compression
+
+**Recovered location:** chapter 3 §3.
+
+**Core retained text / motif:**
+
+> 生命、意识、善、秩序，这些词都太晚、太厚。
+
+**Function:** prevents mechanical negation while preserving boundary against “toward life/order/consciousness/good” readings.
+
+### 1.3 Darwinian selection minimal boundary
+
+**Recovered location:** chapter 3 §5.
+
+**Current text motif:**
+
+> 达尔文选择已经预设了个体、群体、繁殖和变异；ε_pg 处理的是这些单位能够出现之前，什么样的配置至少不在开端处取消自身。
+
+**Future target:** full treatment in Volume II / selection chapter.
+
+### 1.4 Stability versus legitimacy boundary
+
+**Recovered location:** chapter 3 §6.
+
+**Core retained text / motif:**
+
+> SRT 说选择优先，并不等于说凡是能稳定下来的东西就是好的。稳定性与正当性，在 SRT 中必须被严格分开。
+
+**Future target:** lethal L2, collective selection, public article on stability not legitimacy.
+
+### 1.5 Gradient as borrowed term
+
+**Recovered location:** chapter 3 §7.
+
+**Core retained text / motif:**
+
+> “梯度”在本章只借用最朴素的含义：不是平铺，而是有差异的倾斜。它不在这里启用完整的数学含义。
+
+**Function:** protects founder-intuition prose from premature formalization.
+
+### 1.6 Open tension around ε_pg source
+
+**Recovered location:** chapter 3 §8.
+
+**Core retained text / motif:**
+
+> 这个问题不能在这里被完全回答。它属于 SRT 至今未封口的张力之一。
+
+**Future target:** open tensions chapter; formal anchor / governance review.
+
+## 2. Deferred materials — do not add to chapter 3 main prose yet
+
+### 2.1 Modal logic / principle of indifference / possible worlds
+
+**Reason deferred:** too technical for founder-intuition chapter 3; risks turning the chapter into philosophy-bridge material.
+
+**Future target:** `03_Domain_Bridges/Philosophy/`, modal possibility / L0 boundary note, or appendix.
+
+**Compressed motif to preserve:**
+
+> L0 is not a set of already-complete possible worlds. Possible-world frameworks presuppose world-like completeness; L0 names a pre-world, pre-object layer.
+
+### 2.2 Physics boundary: spontaneous symmetry breaking / vacuum fluctuation
+
+**Reason deferred:** valuable analogy, but chapter 3 should not become a physics bridge.
+
+**Future target:** `03_Domain_Bridges/Physics/` or `04_Domain_Corroboration/Physics_Thermodynamics/`.
+
+**Compressed motif to preserve:**
+
+> Physics has its own technical ways of confronting how structure emerges from high-symmetry or vacuum-like states. SRT should not collapse ε_pg into those mechanisms, but the comparison may be useful later.
+
+### 2.3 Fine-tuning / anthropic / multiverse debate
+
+**Reason deferred:** high-value but large topic; would overload the chapter.
+
+**Future target:** physics/cosmology bridge or public essay.
+
+**Motif to preserve:**
+
+> SRT may offer a non-design, non-anthropic way to think about why only continuable configurations are observed: self-erasing configurations do not leave a world from which they can be observed.
+
+**Guardrail:** do not present this as a solved cosmological argument or evidence for SRT.
+
+### 2.4 Creation myths comparison
+
+**Reason deferred:** rhetorically powerful but risks mythological / religious framing too early.
+
+**Future target:** public essay or spirituality/philosophy bridge.
+
+**Motif to preserve:**
+
+> Creation myths often explain beginning by invoking an external originator or primordial source. SRT asks a thinner question: what minimal non-self-erasing condition allows any beginning to be continuable?
+
+### 2.5 Aristotle potentiality / dynamis
+
+**Reason deferred:** useful for trained philosophical readers, but too early for main prose.
+
+**Future target:** philosophy bridge.
+
+**Motif to preserve:**
+
+> ε_pg is not Aristotelian potentiality moving toward a pre-given actuality. It does not prescribe what a possibility is to become; it only marks the minimal condition by which manifestation can continue.
+
+### 2.6 Progress traditions: Hegel / Spencer / Marx / moral arc
+
+**Reason deferred:** chapter 3 already blocks progress/teleology sufficiently; naming major traditions would shift the chapter into intellectual history.
+
+**Future target:** public or philosophy bridge on anti-progressivist boundary.
+
+**Motif to preserve:**
+
+> ε_pg is thinner than any philosophy of progress. It does not guarantee development toward consciousness, complexity, liberation, justice, or moral improvement.
+
+### 2.7 ε_pg and shoshin / 初心
+
+**Reason deferred:** promising later internal echo, but too early.
+
+**Future target:** later praxis/spirituality chapter.
+
+**Motif to preserve:**
+
+> 初心 may be treated as a first-person echo of ε_pg, not as ε_pg itself.
+
+## 3. Candidate nochange / quasi-nochange lines from chapter 3
+
+1. “SRT 不依靠奇迹。”
+2. “自我抹除指的是：一个配置连留下痕迹、被接续、被修正、被再次选择的条件都取消掉了。”
+3. “中立看起来避免了目的论，却可能把奇迹藏进‘随机’这个词里。”
+4. “生命、意识、善、秩序，这些词都太晚、太厚。”
+5. “ε_pg 不是世界的目标。它是目标出现之前，显现不被立刻取消的最低条件。”
+6. “稳定性与正当性，在 SRT 中必须被严格分开。”
+7. “ε_pg 位于这两者之间。它是比内容更薄的偏向。”
+8. “第三章把 L0 从‘完全中立’中救出来。”
+
+## 4. Do-not-recover notes for chapter 3
+
+Do not restore the following into chapter 3 main prose unless a future founder pass explicitly requires it:
+
+- Long comparisons with fine-tuning, multiverse, or anthropic reasoning.
+- Long progress-tradition lists.
+- Detailed modal logic / possible worlds discussion.
+- Detailed physics analogies such as spontaneous symmetry breaking.
+- Creation myth survey.
+- Heavy formalization of branching number or gradient.
+
+Chapter 3 should stay clean: L0 not neutral → non-self-erasure → not teleology → not mere randomness → intuitive branching → not good/progress → why “gradient” → open tension → selection handoff.
