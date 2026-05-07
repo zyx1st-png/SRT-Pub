@@ -258,15 +258,18 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 
 | Source / motif | Current treatment |
 |---|---|
-| `ε_pg` as L0 minimum non-neutrality | Recovered into chapter 3 draft_v3 as founder-intuition prose. |
+| `ε_pg` as L0 minimum non-neutrality | Recovered into chapter 3 draft_v4 as founder-intuition prose. |
 | Non-self-erasure | Recovered into chapter 3 as the central intuitive definition. |
-| Avoiding teleology | Recovered into §§3 and 6. |
+| Avoiding teleology | Recovered into §§3, 6, and 7. |
 | `ε_pg` source/open tension | Recovered into §8 as an explicit unresolved tension. |
 | Symbol strategy for `ε_pg` | Recovered into §1 as a note on symbols as temporary scaffolds. |
 | `ε_pg` / selection mechanism distinction | Recovered into §9 as a handoff to the selection chapter. |
+| Anti-tautology / survivorship-bias guardrail | Recovered into §4. |
+| Bifurcation/menu-option guardrail | Recovered into §5. |
+| Gradient-vs-bias clarification | Recovered into §7. |
 | Extended technical/adjacent-theory comparisons | Deferred; not suitable for chapter 3 main prose. |
 
-## 1. Recovered into chapter 3 v2/v3
+## 1. Recovered into chapter 3 v2/v3/v4
 
 ### 1.1 Self-erasure scene
 
@@ -351,6 +354,48 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 **Function:** prevents `ε_pg` from being mistaken for a selection mechanism; preserves the handoff to chapter 4.
 
 **Future target:** chapter 4 on selection; Volume II selection mechanism elaboration.
+
+### 1.9 Anti-tautology / survivorship-bias guardrail
+
+**Recovered location:** chapter 3 §4.
+
+**Core retained text / motif:**
+
+> 自我抹除不是事后给失败者贴标签……它们不是因为没有留下来才被叫作自我抹除；而是因为它们的结构一开始就不能留下可接续的后果。
+
+**Function:** prevents `ε_pg` from becoming a post-hoc “whatever survived was non-self-erasing” tautology.
+
+**Future target:** formalization of continuability / non-zero future-selection-space constraints.
+
+### 1.10 Bifurcation/menu-option guardrail
+
+**Recovered location:** chapter 3 §5.
+
+**Core retained text / motif:**
+
+> 这里的“分叉”不能被理解成已经铺好的 A 路线和 B 路线……它指的是一种还没有被焊死的余量。
+
+**Function:** prevents the bifurcation metaphor from reintroducing a pre-given menu of options.
+
+### 1.11 Gradient-vs-bias clarification
+
+**Recovered location:** chapter 3 §7.
+
+**Core retained text / motif:**
+
+> 差异先于方向感，梯度先于目的。
+
+**Function:** reduces the teleological or subjectivist connotations of “bias / 偏向”.
+
+### 1.12 Zero versus one handoff
+
+**Recovered location:** chapter 3 §9.
+
+**Core retained text / motif:**
+
+> ε_pg 拒绝的是零，但它不决定一。
+
+**Function:** sharpens the boundary between ε_pg and selection; prepares chapter 4.
 
 ## 2. Deferred materials — do not add to chapter 3 main prose yet
 
@@ -466,6 +511,14 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 
 > `ε_pg`, ISP-level ε, `ε_reg`, and `ε_s` must not be collapsed. They may echo structurally, but they belong to different layers.
 
+### 2.12 L0 bubble / boiling-pot imagery
+
+**Reason deferred:** vivid, but risks objectifying L0 as a container or fluid field.
+
+**Future target:** only use if later founder pass explicitly wants a public-facing metaphor.
+
+**Guardrail:** avoid “configurations leave L0 then return to L0” as if L0 were a spatial reservoir.
+
 ## 3. Candidate nochange / quasi-nochange lines from chapter 3
 
 1. “SRT 不依靠奇迹。”
@@ -478,6 +531,8 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 8. “第三章把 L0 从‘完全中立’中救出来。”
 9. “符号在这里是一种临时支架。”
 10. “它不做选择。它只是让选择不必从完全平的虚无中奇迹般发生。”
+11. “差异先于方向感，梯度先于目的。”
+12. “ε_pg 拒绝的是零，但它不决定一。”
 
 ## 4. Do-not-recover notes for chapter 3
 
@@ -492,5 +547,6 @@ Do not restore the following into chapter 3 main prose unless a future founder p
 - Full ε usage split.
 - Full SRT-name reveal.
 - Value-return bearer analysis.
+- L0 boiling-pot / bubble imagery as a main metaphor.
 
-Chapter 3 should stay clean: L0 not neutral → non-self-erasure → not teleology → not mere randomness → intuitive branching → not good/progress → why “gradient” → open tension → selection handoff.
+Chapter 3 should stay clean: L0 not neutral → non-self-erasure → not teleology → not mere randomness → anti-tautology → intuitive branching → not good/progress → why “gradient” → open tension → selection handoff.
