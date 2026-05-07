@@ -550,3 +550,179 @@ Do not restore the following into chapter 3 main prose unless a future founder p
 - L0 boiling-pot / bubble imagery as a main metaphor.
 
 Chapter 3 should stay clean: L0 not neutral → non-self-erasure → not teleology → not mere randomness → anti-tautology → intuitive branching → not good/progress → why “gradient” → open tension → selection handoff.
+
+---
+
+# C. Recovered Materials · Ch04 Selection Drafting
+
+## 0. Current treatment
+
+| Source / motif | Current treatment |
+|---|---|
+| Selection as compression from L0 into manifestation | Recovered into chapter 4 draft_v1. |
+| Selection is not menu-picking | Recovered into §§1–2. |
+| Selection is not preference expression | Recovered into §3. |
+| Selection terminates possibilities without annihilating latent | Recovered into §4. |
+| Selector as fossil | Recovered into §5. |
+| Reasoning → judgment → decision → selection → bearing → execution | Recovered into §6 as founder-intuition prose. |
+| Selection cost and irreversibility | Recovered into §§7–8. |
+| Selection → manifestation → stable existence bridge | Recovered into §9. |
+| Technical formal chain and table | Deferred; not suitable for main book prose at this layer. |
+
+## 1. Recovered into chapter 4 v1
+
+### 1.1 Selection is not menu-picking
+
+**Recovered location:** `04_选择不是挑选.md`, §§1–2.
+
+**Core retained text / motif:**
+
+> 菜单只是选择在很晚阶段留下的界面。
+
+**Function:** prevents selection from being reduced to selecting among pre-given options.
+
+### 1.2 Selection is compression
+
+**Recovered location:** chapter 4 §§1 and 3.
+
+**Core retained text / motif:**
+
+> 选择把一片未定形的可成为性，压缩成一个可以被遭遇、被回应、被承担的形状。
+
+**Function:** provides the chapter-level positive image of selection.
+
+### 1.3 Potential is not annihilated
+
+**Recovered location:** chapter 4 §4.
+
+**Core retained text / motif:**
+
+> 被压回潜在，不等于无。
+
+**Function:** prevents “selection as elimination” from becoming metaphysical annihilation.
+
+### 1.4 Selector as fossil
+
+**Recovered location:** chapter 4 §5.
+
+**Core retained text / motif:**
+
+> 选择者是选择的化石。
+
+**Function:** links chapter 4 to later subjecthood chapters while preserving the L0 claim that selection does not require a prior selector.
+
+### 1.5 Decision is not selection
+
+**Recovered location:** chapter 4 §6.
+
+**Core retained text / motif:**
+
+> 决策可以发生在头脑中。选择必须改变现实地形。
+
+**Function:** separates cognitive narrowing from ontological manifestation.
+
+### 1.6 Selection has costs
+
+**Recovered location:** chapter 4 §7.
+
+**Core retained text / motif:**
+
+> 没有代价的选择，不会真正进入世界。
+
+**Function:** prepares Ψ_f / cost / anchoring themes without introducing formulas.
+
+### 1.7 Selection is irreversible
+
+**Recovered location:** chapter 4 §8.
+
+**Core retained text / motif:**
+
+> 不可逆性让世界受伤。也让世界能够积累。
+
+**Function:** connects selection to time, history, responsibility, repair, and later anchoring.
+
+### 1.8 Selection precedes stable existence
+
+**Recovered location:** chapter 4 §9.
+
+**Core retained text / motif:**
+
+> 选择先于稳定存在。
+
+**Function:** makes chapter 4 the positive statement that first three chapters prepared for.
+
+## 2. Deferred materials — do not add to chapter 4 main prose yet
+
+### 2.1 Full cognitive-chain table
+
+**Reason deferred:** too didactic / formal for the founder-intuition chapter.
+
+**Future target:** formal anchor or appendix.
+
+**Motif to preserve:**
+
+> 推理展开可能性；判断赋予权重；决策收窄范围；选择终止可能性；承担接受后果不可外部化；执行将选择写入共享现实。
+
+### 2.2 Selection hierarchy: physical / adaptive / subject-level
+
+**Reason deferred:** important but risks overloading chapter 4; should be developed in subjecthood / AI / formalization chapters.
+
+**Future target:** subjecthood, AI bridge, formalization.
+
+**Motif to preserve:**
+
+> Not all selection is subject-level selection. Subjecthood requires higher-order adjustment, consequence-return, and bearing closure.
+
+### 2.3 Quantum / measurement problem use
+
+**Reason deferred:** relevant to selection bridge but should not be used as proof in book chapter 4.
+
+**Future target:** Physics bridge, external convergence review, or formal appendix.
+
+**Guardrail:** do not use quantum mechanics to prove selection-first metaphysics.
+
+### 2.4 Detailed proxy/delegation interface
+
+**Reason deferred:** chapter 4 touches interfaces and menus, but the full proxy/delegation problem belongs to AI/L2 chapters.
+
+**Future target:** AI chapter, proxy/delegation public essay, L0 pre-pruning.
+
+### 2.5 Full responsibility / moral blame discussion
+
+**Reason deferred:** chapter 4 introduces bearing but should not become ethics yet.
+
+**Future target:** value, d-value, collective selection, and governance/public chapters.
+
+### 2.6 Selection versus Darwinian natural selection expanded section
+
+**Reason deferred:** chapter 3 and chapter 4 include minimal boundary statements. Full treatment should wait for Volume II or bridge with biology/evolution.
+
+**Future target:** Volume II selection chapter; biology/evolution bridge.
+
+## 3. Candidate nochange / quasi-nochange lines from chapter 4
+
+1. “选择不是从菜单中拿起一项。”
+2. “选择是‘让一从未定形中变得可遭遇’。”
+3. “菜单只是选择在很晚阶段留下的界面。”
+4. “真正的选择不只发生在菜单上。更深的选择发生在菜单形成之前。”
+5. “选择把一片未定形的可成为性，压缩成一个可以被遭遇、被回应、被承担的形状。”
+6. “被压回潜在，不等于无。”
+7. “选择之后，显现改变了；潜在也改变了。”
+8. “选择者是选择的化石。”
+9. “决策可以发生在头脑中。选择必须改变现实地形。”
+10. “没有代价的选择，不会真正进入世界。”
+11. “不可逆性让世界受伤。也让世界能够积累。”
+12. “选择先于稳定存在。”
+
+## 4. Do-not-recover notes for chapter 4
+
+Do not restore the following into chapter 4 main prose unless a future founder pass explicitly requires it:
+
+- Full technical cognitive-chain table.
+- Quantum-measurement argument as support.
+- Full selection-level taxonomy.
+- Extended moral responsibility / blame discussion.
+- Long proxy/delegation examples.
+- Full Darwinian selection comparison.
+
+Chapter 4 should stay clean: ε_pg rejects zero → selection compresses possibility into manifestation → not menu-picking → not preference expression → potential not annihilated → selector not prior → decision not selection → cost → irreversibility → stable-existence handoff.
