@@ -258,13 +258,15 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 
 | Source / motif | Current treatment |
 |---|---|
-| `ε_pg` as L0 minimum non-neutrality | Recovered into chapter 3 draft_v2 as founder-intuition prose. |
+| `ε_pg` as L0 minimum non-neutrality | Recovered into chapter 3 draft_v3 as founder-intuition prose. |
 | Non-self-erasure | Recovered into chapter 3 as the central intuitive definition. |
 | Avoiding teleology | Recovered into §§3 and 6. |
 | `ε_pg` source/open tension | Recovered into §8 as an explicit unresolved tension. |
+| Symbol strategy for `ε_pg` | Recovered into §1 as a note on symbols as temporary scaffolds. |
+| `ε_pg` / selection mechanism distinction | Recovered into §9 as a handoff to the selection chapter. |
 | Extended technical/adjacent-theory comparisons | Deferred; not suitable for chapter 3 main prose. |
 
-## 1. Recovered into chapter 3 v2
+## 1. Recovered into chapter 3 v2/v3
 
 ### 1.1 Self-erasure scene
 
@@ -325,6 +327,30 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 > 这个问题不能在这里被完全回答。它属于 SRT 至今未封口的张力之一。
 
 **Future target:** open tensions chapter; formal anchor / governance review.
+
+### 1.7 Symbol strategy: why use `ε_pg`
+
+**Recovered location:** chapter 3 §1.
+
+**Core retained text / motif:**
+
+> 符号在这里是一种临时支架。它先把日常语言的误导性意义抽空，让我们能够标记一个位置，而不急着把它说成某个东西。
+
+**Function:** responds to the apparent tension between anti-objectifying prose and symbolic labels such as `L0` / `ε_pg`.
+
+**Guardrail:** do not expand this into a general semiotics discussion in chapter 3.
+
+### 1.8 `ε_pg` does not select
+
+**Recovered location:** chapter 3 §9.
+
+**Core retained text / motif:**
+
+> 它不做选择。它只是让选择不必从完全平的虚无中奇迹般发生。
+
+**Function:** prevents `ε_pg` from being mistaken for a selection mechanism; preserves the handoff to chapter 4.
+
+**Future target:** chapter 4 on selection; Volume II selection mechanism elaboration.
 
 ## 2. Deferred materials — do not add to chapter 3 main prose yet
 
@@ -400,6 +426,46 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 
 > 初心 may be treated as a first-person echo of ε_pg, not as ε_pg itself.
 
+### 2.8 SRT full-name reveal
+
+**Reason deferred:** not appropriate for chapter 3. The reader-facing full-name reveal should be handled in the prologue or, preferably, at the end of Part I after “selection” has been established.
+
+**Future target:** Part I closing chapter / book design decision.
+
+**Motif to preserve:**
+
+> The name “Selection-Reality Theory / 选择性现实理论” should feel earned, not merely announced.
+
+### 2.9 Value-return bearer problem
+
+**Reason deferred:** belongs to d-value / subjecthood chapters, not chapter 3.
+
+**Future target:** value, d-value, subjecthood, and consequence-return chapters.
+
+**Motif to preserve:**
+
+> Before stable subjecthood, there may be consequence-return without full value-return. Value-return requires a stake-bearing continuity or emergent bearer; this must not be prematurely assumed.
+
+### 2.10 Selection mechanism vacuum
+
+**Reason deferred:** chapter 3 only distinguishes ε_pg from selection; chapter 4 should develop selection itself.
+
+**Future target:** chapter 4 / Volume II selection mechanism.
+
+**Motif to preserve:**
+
+> If there is no conscious subject and no Darwinian unit yet, “selection” cannot mean choosing from a menu. It must mean a pre-subjective compression from open possibility into a determinate, consequence-bearing manifestation.
+
+### 2.11 ε usage split
+
+**Reason deferred:** explicitly deferred by founder direction; too many symbols too early in chapter 3.
+
+**Future target:** formal-symbol note, appendix, or later bridge when `ε_reg`, ISP-level ε, or `ε_s` first appear.
+
+**Motif to preserve:**
+
+> `ε_pg`, ISP-level ε, `ε_reg`, and `ε_s` must not be collapsed. They may echo structurally, but they belong to different layers.
+
 ## 3. Candidate nochange / quasi-nochange lines from chapter 3
 
 1. “SRT 不依靠奇迹。”
@@ -410,6 +476,8 @@ Chapter 1 should stay clean: arrow → river → slice → existence as stable l
 6. “稳定性与正当性，在 SRT 中必须被严格分开。”
 7. “ε_pg 位于这两者之间。它是比内容更薄的偏向。”
 8. “第三章把 L0 从‘完全中立’中救出来。”
+9. “符号在这里是一种临时支架。”
+10. “它不做选择。它只是让选择不必从完全平的虚无中奇迹般发生。”
 
 ## 4. Do-not-recover notes for chapter 3
 
@@ -421,5 +489,8 @@ Do not restore the following into chapter 3 main prose unless a future founder p
 - Detailed physics analogies such as spontaneous symmetry breaking.
 - Creation myth survey.
 - Heavy formalization of branching number or gradient.
+- Full ε usage split.
+- Full SRT-name reveal.
+- Value-return bearer analysis.
 
 Chapter 3 should stay clean: L0 not neutral → non-self-erasure → not teleology → not mere randomness → intuitive branching → not good/progress → why “gradient” → open tension → selection handoff.
