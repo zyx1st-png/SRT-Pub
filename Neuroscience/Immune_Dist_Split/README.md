@@ -13,6 +13,8 @@ dependency: [SRT-NEURO-08]
 # SRT Neuro 08 Immune Dist Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Neuro_08_Immune_Dist.md`](../SRT_Neuro_08_Immune_Dist.md)
+- Source owner bytes: `60553`
+- Source owner SHA-256: `5c52d007ecb26a6a7679c4b9192488ca3378df3b4ad0c0998afb34c538c55634`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

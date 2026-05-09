@@ -13,6 +13,8 @@ dependency: [未命名-1]
 # SRT Legacy Scratch Note Split Index
 
 - 原始总文（保留，不删内容）：[`../未命名 1.md`](../未命名%201.md)
+- Source owner bytes: `75764`
+- Source owner SHA-256: `a36d05157e26ce444b0612e61732e59c6f0df12b5f881f39716e5fc169487698`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

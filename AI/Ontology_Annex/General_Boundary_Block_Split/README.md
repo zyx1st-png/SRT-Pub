@@ -13,6 +13,8 @@ dependency: [SRT-AI-01]
 # AI Ontology General Boundary Block Split Index
 
 - 原始总文（保留，不删内容）：[`../00_General_Boundary_Block.md`](../00_General_Boundary_Block.md)
+- Source owner bytes: `51698`
+- Source owner SHA-256: `accc76f5cbeccb7a937b46efd40eb27d4e2db8f178844a27d48f91c6e5ea98c8`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

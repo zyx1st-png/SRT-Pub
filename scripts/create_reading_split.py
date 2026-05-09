@@ -192,6 +192,8 @@ def write_readme(
     parts: list[Part],
 ) -> None:
     source_link = rel(source, split_dir)
+    source_bytes = source.stat().st_size
+    source_sha = hashlib.sha256(source.read_bytes()).hexdigest()
     rows = []
     for part in parts:
         path = split_dir / part.filename
@@ -216,6 +218,8 @@ def write_readme(
             f"# {title} Split Index",
             "",
             f"- 原始总文（保留，不删内容）：[`{source_link}`]({md_target(source_link)})",
+            f"- Source owner bytes: `{source_bytes}`",
+            f"- Source owner SHA-256: `{source_sha}`",
             "- 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。",
             "- 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。",
             "",
