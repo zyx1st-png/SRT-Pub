@@ -101,6 +101,7 @@ Proposed structure:
 | Claim | Source / Patch | Target | Core thesis | Status |
 |---|---|---|---|---|
 | CONSC14 | `Materials/2026/SRC_2026_05_08_Neuro_Propofol_Traveling_Waves_bioRxiv.md` / `Neuroscience/patches/SRT_Neuro_CONSC14_Propofol_Traveling_Wave_Reorganization_v0_1.md` | `Neuroscience/SRT_Consciousness_Mechanisms.md §2.8a` + `H-C14` | Propofol loss of responsiveness may reorganize traveling-wave routing rather than simply suppress it; direction, spectral structure, and spike-wave coupling must not be collapsed into total power or speed | Integrated as bridge; preprint abstract-level evidence only |
+| NEURAL15 | `Materials/2026/SRC_2025_10_03_Neuro_Creative_Experience_Brain_Clocks_NatCommun.md` / `Neuroscience/patches/SRT_Neuro_NEURAL15_Creative_Experience_Brain_Clock_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms.md` Creative-Experience Brain-Clock patch | Creative expertise and short-term creative learning provide a functional-connectivity brain-clock window for `theta / L2` plasticity; expertise can be skill-plus-openness rather than mere rigid closure | Integrated as bridge; peer-reviewed open-access evidence, BAG remains a functional proxy |
 
 ---
 
@@ -112,8 +113,9 @@ N10 = added as separate patch
 N11 = added as separate patch
 N12 = added as separate patch
 CONSC14 = Pipeline 1 bridge patch integrated into Consciousness_Mechanisms longform
+NEURAL15 = Pipeline 1 bridge patch integrated into Neural_Mechanisms longform
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12 or CONSC14 as primitive axioms yet. They are high-value bridge materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, or NEURAL15 as primitive axioms yet. They are high-value bridge materials awaiting future synthesis or empirical hardening.
