@@ -29,6 +29,12 @@ def main() -> None:
         action="store_true",
         help="Require source-owner SHA metadata without enabling all strict checks.",
     )
+    parser.add_argument(
+        "--frontmatter-baseline",
+        default="Governance/Frontmatter_Warning_Baseline.txt",
+        help="Known frontmatter warning baseline.",
+    )
+    parser.add_argument("--no-frontmatter-baseline", action="store_true")
     parser.add_argument("--skip-write-report", action="store_true")
     args = parser.parse_args()
 
@@ -56,6 +62,15 @@ def main() -> None:
     frontmatter_cmd = [python, "scripts/check_frontmatter.py"]
     if args.strict:
         frontmatter_cmd.append("--strict")
+    baseline_path = ROOT / args.frontmatter_baseline
+    if not args.no_frontmatter_baseline and baseline_path.is_file():
+        frontmatter_cmd.extend(
+            [
+                "--baseline",
+                args.frontmatter_baseline,
+                "--fail-on-new-warnings",
+            ]
+        )
     steps.append(("frontmatter", frontmatter_cmd))
 
     noise_cmd = [python, "scripts/check_forbidden_noise.py"]

@@ -19,6 +19,7 @@ SKIP_DIRS = {
 }
 
 ARTIFACT_PREFIXES = (
+    "Papers/",
     "papers/",
     "graphify-out/",
     "Archive/",

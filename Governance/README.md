@@ -24,6 +24,7 @@ dependency: [SRT-INDEX]
 - 解释协议
 - 质量指标与评分卡
 - Frontmatter / Explainability 审计
+- Frontmatter warning baseline / ratchet（既有债务基线与新增 warning 阻断）
 - 发布快照与 release note 模板
 - 结构优化计划与周评记录
 - changelog 与治理 pipeline
@@ -44,6 +45,7 @@ dependency: [SRT-INDEX]
 13. `_SRT_EXPLANATION_PROTOCOL.md`
 14. `_SRT_QUALITY_SCORECARD.md`
 15. `_SRT_CHANGELOG_2026.md`（long connector reads should start from `_SRT_CHANGELOG_2026_Split/README.md`）
+16. `Frontmatter_Warning_Baseline.txt`
 
 未收口理论问题的当前账本见：
 

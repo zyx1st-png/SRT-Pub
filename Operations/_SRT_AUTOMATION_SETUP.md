@@ -26,6 +26,7 @@ uv run python scripts/governance_preflight.py --skip-write-report --strict-split
 - 检查 split README 中的 owner bytes / SHA-256 是否落后于源文件；
 - 检查主书大纲拆分是否仍保持连接器安全；
 - 检查 frontmatter 与辅助层 canonical 泄漏；
+- 使用 `Governance/Frontmatter_Warning_Baseline.txt` 把既有 frontmatter 债务作为基线，只让新增 warning 失败；
 - 检查 staged 文件中是否混入 `.DS_Store`、`.claude/`、`__pycache__/` 等本地噪音。
 
 `Governance_Preflight_GitHub_Actions_Template.yml` 提供同一组命令的 GitHub Actions 模板。启用时需由具备 GitHub `workflow` 权限的凭证复制到 `.github/workflows/governance-preflight.yml`。当前不默认开启全局 `--strict`，因为历史 frontmatter 债务仍按 warning 管理；等 frontmatter 基线收口后再升级。
