@@ -13,6 +13,8 @@ dependency: [SRT-REF-DYNAMICS]
 # SRT Reference Dynamics Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Reference_Dynamics.md`](../SRT_Reference_Dynamics.md)
+- Source owner bytes: `52311`
+- Source owner SHA-256: `70f933719504061f85dd19c692f61366c45def72adad68dd0fcf9f69b3c23bc8`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

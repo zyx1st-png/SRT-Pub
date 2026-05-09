@@ -13,6 +13,8 @@ dependency: [SRT-QUANT-01]
 # SRT Quantum Selection Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Quant_01_Selection.md`](../SRT_Quant_01_Selection.md)
+- Source owner bytes: `55321`
+- Source owner SHA-256: `6ebcb8224ce1d4b20ca3d4e632846b23b5dceef1685ab0982d2e3daa3b183330`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

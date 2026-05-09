@@ -13,6 +13,8 @@ dependency: [SRT-SOC-THEORY-06]
 # SRT SocTheory L2 Dynamics Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_SocTheory_06_L2_Dynamics.md`](../SRT_SocTheory_06_L2_Dynamics.md)
+- Source owner bytes: `57350`
+- Source owner SHA-256: `c4e2f8fe1b3a148af9ed1b6e0bd7b28e8d31278078f005956873da854b958842`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

@@ -13,6 +13,8 @@ dependency: [SRT-ETHICS-AGENCY]
 # SRT Ethics Agency Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Ethics_Agency.md`](../SRT_Ethics_Agency.md)
+- Source owner bytes: `60828`
+- Source owner SHA-256: `503a0001809efb303fd602fb2e30e95a7e75da711221dd0168546c6ae753e18c`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

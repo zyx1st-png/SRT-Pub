@@ -13,6 +13,8 @@ dependency: [SRT-CORE-22]
 # SRT Core 22 Equations Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Core_22_Equations.md`](../SRT_Core_22_Equations.md)
+- Source owner bytes: `66331`
+- Source owner SHA-256: `0b0eefc0e9d2d10ca4c4cea86adfc630b200ff72c5b360fd71c12124c16a36e1`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

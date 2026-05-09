@@ -13,6 +13,8 @@ dependency: [SRT-SOC-COG]
 # SRT Social Cognition Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Social_Cognition.md`](../SRT_Social_Cognition.md)
+- Source owner bytes: `55427`
+- Source owner SHA-256: `9fdcc04d0333adaad39df5c1b3b553e7841cdf2de9960ada3d3ecd61f8faa7af`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

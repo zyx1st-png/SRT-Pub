@@ -13,6 +13,8 @@ dependency: [SRT-QUANT-02]
 # SRT Quantum Cosmology Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Quant_02_Cosmology.md`](../SRT_Quant_02_Cosmology.md)
+- Source owner bytes: `51606`
+- Source owner SHA-256: `44dc9df8c9e8c78c173f24f35e587800419bfdd40f9369ed21af96592907f109`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

@@ -13,6 +13,8 @@ dependency: [SRT-CORE-001]
 # SRT Core Constitution Axioms Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Core_01_Axioms.md`](../SRT_Core_01_Axioms.md)
+- Source owner bytes: `75991`
+- Source owner SHA-256: `dd0d02198595a7724c52d9b00664a01bd574a38b4a887f475ae975020e1d0514`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
