@@ -43,6 +43,7 @@ dependency: [SRT-INDEX]
 12. `_SRT_DOC_ENGINEERING_GUIDE.md`
 13. `_SRT_EXPLANATION_PROTOCOL.md`
 14. `_SRT_QUALITY_SCORECARD.md`
+15. `_SRT_CHANGELOG_2026.md`（long connector reads should start from `_SRT_CHANGELOG_2026_Split/README.md`）
 
 未收口理论问题的当前账本见：
 

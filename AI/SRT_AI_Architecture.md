@@ -11,6 +11,8 @@ dependency: [SRT-AI-01]
 
 # SRT AI Architecture: Transformer & Dynamics (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Architecture_Split/README.md`](Architecture_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Architecture Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).

@@ -47,6 +47,8 @@ Neuroscience 现在采用五层结构：
 ### D. Hardening / Lab Draft Layer
 
 - `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` — full staging draft for the 2026-04 N1-N9 neuroscience hardening cycle. Non-canonical unless later promoted through the claim ladder.
+- `_SRT_Neuroscience_Hardening_Index.md` — domain index for hardening drafts and Pipeline 1 material patches.
+- `patches/` and `hooks/` — Pipeline 1 patch notes and integration hooks. These are bridge records, not canonical definitions.
 
 ### E. Longform Counterparts
 
@@ -98,7 +100,7 @@ Neuroscience 现在采用五层结构：
 | Claim-status audit | `SRT_Neuro_Axioms_Claim_Status.md` | classifies claim status of `_SRT_Neuro_Axioms.md` | audit, not replacement |
 | Canonical-facing bridge | `_SRT_Neuro_Axioms.md` | formal neuro bridge and historical axiom/discourse container | hybrid; not all internal claims are canonical |
 | Compact core | `SRT_Neural_Mechanisms_CompactCore.md`, `SRT_Consciousness_Mechanisms_CompactCore.md` | current concise formal neuroscience summary | hardening content is bridge/lab unless promoted |
-| Hardening draft | `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` | full N1-N9 staging record | non-canonical working draft |
+| Hardening draft / material patches | `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`, `_SRT_Neuroscience_Hardening_Index.md`, `patches/`, `hooks/` | full N1-N9 staging record plus Pipeline 1 neuroscience patch records | non-canonical working drafts / bridge records |
 | Longform | `SRT_Neural_Mechanisms.md`, `SRT_Consciousness_Mechanisms.md` | expanded material | may lag compact core |
 | Measurement | `SRT_Clin_00_IIT_PCI.md` | clinical / PCI / IIT interface | measurement proxies are not identities |
 

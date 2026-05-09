@@ -154,6 +154,7 @@ automorphism alone is not a consciousness criterion.
 | `SRT_Philosophy_Objection_Ledger.md` | Need original strongest objections and claim-hygiene rules. |
 | `SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md` | Need O-Phil-11..20 for PH-SS-specific objections. |
 | `SRT_Philosophy_Hardening_TODO.md` | Need current execution status and next tasks. |
+| `SRT_Social_Cognition.md` | Need affordance, belief-lag, attention, social reality dynamics, discriminatory cognition, dehumanization, or ZBS / active-inference social-cognition bridge material. |
 | `SRT_Philosophy_Ethics.md` / `SRT_Ethics_Agency.md` | Need ethics / agency; read with `SRT_Ethics_PH_SS_Guardrails.md` and subjecthood interface for responsibility questions. |
 | `SRT_Ethics_PH_SS_Guardrails.md` | Need moral legitimacy ladder, friction-export test, future-selectability test, responsibility recalibration. |
 | `SRT_Social_Economics_CompactCore.md` | Need social ontology and economics; read with `SRT_Social_Political_PH_SS_Guardrails.md`. |

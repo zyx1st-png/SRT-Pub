@@ -12,6 +12,8 @@ dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, 
 # SRT Philosophy Part 2: Ethics & Agency (Hybrid Edition)
 
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Ethics_Agency_Split/README.md`](Ethics_Agency_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Ethical Axioms (AI-Readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).

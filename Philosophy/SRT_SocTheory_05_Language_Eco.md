@@ -11,6 +11,8 @@ dependency: [SRT-SOC-THEORY-04]
 
 # SRT Social Theory Part 2: Language & Evolution (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Language_Eco_Split/README.md`](Language_Eco_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 

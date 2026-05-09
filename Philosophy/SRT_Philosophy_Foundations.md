@@ -12,6 +12,8 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CAN
 
 # SRT Philosophical Foundations (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Foundations_Split/README.md`](Foundations_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Role**: Philosophy domain expansion / core-support text. It re-expresses SRT commitments in philosophical language and comparison problems.
 > **Claim-level note**: Mainly P2/P3 interpretive and bridge claims, with P4 where operational predictions appear and P5 where exposition is pedagogical.
 > **Does not define**: primitive axioms, `d-value`, `\Psi_f`, `T_dir`, `L_0/L_1/L_2`, or real choice moment.
