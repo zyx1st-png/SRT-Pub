@@ -25,20 +25,13 @@
 01_Source_Intuition/BOOK/Outline_Parts/README.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_01_从存在到成为/01_现实不是先给定的.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_01_从存在到成为/02_L0不是虚无.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/02_L0不是虚无_v8.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性_v7.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_01_从存在到成为/04_选择不是挑选.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/04_选择不是挑选_v5.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_01_从存在到成为/05_锚定让一留下.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/05_锚定让一留下_v5.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景_v4.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人_v7.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现_v4.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_02_选择的本性/09_排除_选择的阴影.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/README.md: missing frontmatter
@@ -216,13 +209,6 @@ duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/02_Defects_and_Cat
 duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/03_AGI_Limits_and_Assistant_Vision.md / AI/Architecture_Split/04_Roadmap_and_Appendix.md
 duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/04_Roadmap_and_Appendix.md / AI/Architecture_Split/05_Interface_Additions.md
 duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/05_Interface_Additions.md / AI/SRT_AI_Architecture.md
-duplicate frontmatter id `SRT-BOOK-CH02-L0-NOT-NOTHING`: 01_Source_Intuition/BOOK/Part_01_从存在到成为/02_L0不是虚无.md / 01_Source_Intuition/BOOK/Part_01_从存在到成为/02_L0不是虚无_v8.md
-duplicate frontmatter id `SRT-BOOK-CH03-EPSILON-PG`: 01_Source_Intuition/BOOK/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md / 01_Source_Intuition/BOOK/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性_v7.md
-duplicate frontmatter id `SRT-BOOK-CH04-SELECTION-NOT-PICKING`: 01_Source_Intuition/BOOK/Part_01_从存在到成为/04_选择不是挑选.md / 01_Source_Intuition/BOOK/Part_01_从存在到成为/04_选择不是挑选_v5.md
-duplicate frontmatter id `SRT-BOOK-CH05-ANCHORING`: 01_Source_Intuition/BOOK/Part_01_从存在到成为/05_锚定让一留下.md / 01_Source_Intuition/BOOK/Part_01_从存在到成为/05_锚定让一留下_v5.md
-duplicate frontmatter id `SRT-BOOK-CH06-ORDER-AS-BACKGROUND`: 01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景.md / 01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景_v4.md
-duplicate frontmatter id `SRT-BOOK-CH07-TERRAIN-SELECTS`: 01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人.md / 01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人_v7.md
-duplicate frontmatter id `SRT-BOOK-CH08-CHOICE-OPERATOR`: 01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现.md / 01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现_v4.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/00_General_Boundary_Block.md / Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md / Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md / Core/Dynamics_Scaling_Annex/03_Constructive_Fracture_Interface.md
