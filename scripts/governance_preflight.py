@@ -24,6 +24,11 @@ def run_step(label: str, command: list[str]) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--strict", action="store_true", help="Escalate warning-prone checks.")
+    parser.add_argument(
+        "--strict-split-metadata",
+        action="store_true",
+        help="Require source-owner SHA metadata without enabling all strict checks.",
+    )
     parser.add_argument("--skip-write-report", action="store_true")
     args = parser.parse_args()
 
@@ -39,7 +44,7 @@ def main() -> None:
         steps.append(("book outline split", [python, "scripts/check_book_outline_split.py"]))
 
     split_cmd = [python, "scripts/check_split_freshness.py"]
-    if args.strict:
+    if args.strict or args.strict_split_metadata:
         split_cmd.append("--strict-metadata")
     steps.append(("split freshness", split_cmd))
 

@@ -22,6 +22,11 @@ OWNER_PATTERNS = [
     r"总表[^`]*：\[`[^`]+`\]\(([^)]+)\)",
 ]
 
+ALLOW_NO_OWNER = {
+    "Operations/Material_Log/README.md",
+    "Operations/Status_History/README.md",
+}
+
 
 def extract_owner_link(text: str) -> str | None:
     for pattern in OWNER_PATTERNS:
@@ -62,7 +67,7 @@ def main() -> None:
             owner_path = resolve_markdown_link(readme, owner_link)
             if not owner_path.is_file():
                 errors.append(f"{rel}: source owner link is broken: {owner_link}")
-        else:
+        elif rel not in ALLOW_NO_OWNER:
             warnings.append(f"{rel}: no source owner link found")
 
         declared_sha = extract_declared_owner_sha(text)
