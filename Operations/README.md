@@ -64,6 +64,13 @@ raw session / dialogue compilation / residual archives 已下沉到：
 3. `Status_History/README.md`
 4. `../STATUS_Split/README.md`
 
+### Automation / preflight
+
+1. `_SRT_AUTOMATION_SETUP.md`
+2. `Governance_Preflight_GitHub_Actions_Template.yml`
+3. `../scripts/governance_preflight.py`
+4. `../scripts/refresh_split_metadata.py`
+
 ## Pipeline 1 Authority
 
 `Operations/_SRT_MATERIAL_PIPELINE.md` 是材料进入仓库的主流程说明。`SourceCard / PatchNote / Registry / IntegrationHook` 都是 Pipeline 1 的结构化产物，不是平行工作流。
