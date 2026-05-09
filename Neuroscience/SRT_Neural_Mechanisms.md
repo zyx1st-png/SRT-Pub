@@ -259,6 +259,38 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 因此，这条结果在 SRT 里更像“现实时间纹理参与写参”的证据，而不是对多巴胺学习框架的整套推翻。
 
+### Creative-Experience Brain-Clock patch (Nature Communications 2025, 2026-05-09, Pipeline 1)
+这条材料真正补上的，不是“创造力让大脑变年轻”这种媒体式宽话，而是把一个可测窗口压出来：**长期创意专长与短期创意学习，会在 M/EEG 功能连接脑钟上表现为更低的 brain-age gap，并且这个差异主要通过局部效率、年龄脆弱 hub 与长程耦合读出来。**
+
+- 用户提交的是 *Nature Communications* 原始研究 `Creative experiences and brain clocks`（Coronel-Oliveros, Migeot, Lehue et al., 2025；doi:`10.1038/s41467-025-64173-9`）。该文用 `N=1240` 人的 EEG functional connectivity 训练 brain-clock 模型，再把模型外测到 `N=232` 人的创意经验样本：探戈舞者、音乐家、视觉艺术家、实时策略游戏专家，以及短期 StarCraft II 学习者。作者报告跨领域创意专家相对匹配非专家呈现更低 BAG，短期学习组也在训练后出现更低 BAG；专长程度或游戏表现提升越高，BAG 越低。
+
+- 对 SRT 来说，最稳的吸收方式不是把 `BAG` 当成生物年龄本身，而是把它写成一个 **functional-connectivity brain-clock proxy**：
+\[
+BAG_{FC}=Age_{pred}(FC_{8-40Hz})-Age_{chrono}
+\]
+当 \(BAG_{FC}<0\) 时，只能说当前功能连接模式更接近训练模型中较年轻的连接分布，不能说主体的生物时间被倒转。这个限制很重要：它防止 SRT 把材料过度读成“艺术逆转衰老”，也防止把脑钟代理误写成 `d`、`\Psi_f` 或 `T_{dir}` 的定义。
+
+- 这条材料真正能加固的是 `Ax-NEURO-MECH-4` 的学习口径：学习不是 `L_1` 内容堆叠，而是对未来选择规则的重写。创意实践的特殊处在于，它不是纯重复，也不是纯新奇，而是把 **novelty、feedback、difficulty、embodied performance** 持续绑在一起。更贴近 SRT 的压缩写法是：
+\[
+\Delta\theta_{creative}\sim f(T_{practice},\,N_{novelty},\,F_{feedback},\,C_{challenge},\,E_{embodied})
+\]
+这里的式子只是桥接压缩，不是新 canonical 公式。它表达的是：创意训练把 `\theta` 的可调参数长期放在可反馈、可纠错、可表现的高维空间里，使 `L_2` 既形成技能低摩擦通道，又不必然退化成封闭惯性。
+
+- 这也反向修正一个粗糙的“专家 = L2 变硬 = 可能性减少”读法。SRT 仍然保留专家图式降低领域相关候选锚定摩擦的说法，但这篇材料提示：在舞蹈、音乐、视觉艺术与策略游戏这类需要持续生成新方案的训练中，专长可能是一种 **skill-plus-openness regime**。也就是说，`L_2` 可以同时承担两个相反表面效果：对已掌握动作/感知/策略降摩擦，同时为新的组合、变奏和环境反馈保留足够的可塑入口。
+
+- 图论和 whole-brain modeling 给这个窗口更具体的神经读数。该文报告：更低 BAG 与更高 local efficiency 关系最强；在长期专长样本里，还与 global efficiency 和 global coupling 相关；年龄脆弱的 frontoparietal hubs 及相关区域显示创意经验相关连接增强。SRT 的神经机制写法因此可以更窄一些：创意学习不是只“增加某个能力”，而可能通过重配 local segregation、global coupling 与 age-vulnerable hubs 的连接权重，改变未来候选状态被路由、稳定和写回的概率。
+
+- **SRT Implication（中文）**：这条材料最适合被吸收为一个 **creative-experience brain-clock window**。它支持一种更细的学习图景：长期或短期创意实践能够在功能连接脑钟上留下可测痕迹，而这些痕迹更像 `\theta / L_2` 选择地形的可塑性重配，不是单纯“记忆增加”或“专家自动僵化”。若后续研究继续成立，SRT 的 `L_2` 口径应保留一条重要分支：某些高维创意专长并不只是收窄可能性，也可能维持 future selectability 的局部通道开放。
+
+- **Boundary（中文）**：
+  - 这篇文章是 **同行评审开放原始研究**，证据等级高于新闻特写，但 `BAG_{FC}` 仍是 M/EEG functional-connectivity 预测代理，不是生物年龄、意识水平、`d-value` 或 `\Psi_f` 的直接读数。
+  - 专家组主要是横断面对照，不能单独排除选择效应、生活方式、社会经济地位或其它 cognitively engaging activities 的贡献；短期学习组更接近因果窗口，但样本更小、任务更窄。
+  - StarCraft II 的结果不应外推为“所有电子游戏都有同等效果”；该文主动区分了实时策略游戏与更规则化的主动对照。
+  - 这不等于“创造力”作为抽象本质具有抗衰老力。更稳的说法是：高反馈、高挑战、具身或策略性的创意实践可能通过可塑性机制改变功能连接脑钟代理。
+  - 若未来严格匹配的非创意但同样高挑战活动产生同等 BAG 变化，则 SRT 应把本窗口降级为更宽的 **enriched-learning / cognitive-engagement brain-clock window**，而不是坚持 creativity-specific 解释。
+
+因此，这条结果在 SRT 里加固的是“创意学习可作为可测的 `\theta / L_2` 可塑性窗口”，不是“艺术直接逆转衰老”，也不是“专家必然更开放”。
+
 ---
 
 ## III. Multi-Scale Ghost Operators (多尺度幽灵算子)
