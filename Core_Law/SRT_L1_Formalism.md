@@ -12,6 +12,8 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 
 # SRT L1 Formalism: Minimal Coupled Dynamics for σ_{sr}, d_c, T_dir, and S
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`L1_Formalism_Split/README.md`](L1_Formalism_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Role**: L1 formalism hub. Collects the minimal differential dynamics for the four L1 order parameters—individuation self-reference ratio `σ_{sr}` (bare `σ` in this file's §2-§5 equations refers to the self-reference ratio per the namespace note below, **not** to the `Core/SRT_Core_22_Equations.md` main-equation state field), occlusion threshold `d_c`, directional transparency `T_dir` (promoted from algebraic proxy to independent dynamical variable in §3.5, 2026-04-25), and suffering registration `S`—and their coupling structure. Initial round (2026-04-24) covered three variables; `T_dir` ODE closure was the H2 follow-up.
 > **σ 符号命名空间 (governance-canonical, 2026-04-25)**: 本文件 §2–§5 中的 σ / σ_sub / σ_self / σ_health 统一对应 `σ_{sr} / σ_{sr}^{sub} / σ_{sr}^{self} / σ_{sr}^{health}`（自指率族，见 `Core_Law/SRT_L1_Hardening_Notes.md §1` 与 `_SRT_SYMBOL_TABLE.md §Usage Rule 12`）。§6"与主方程的关系"中出现的 σ 对应 `Core/SRT_Core_22_Equations.md` 的主方程状态场（不同对象）；该节已在原地显式标注。正文其余处保留历史符号 σ 以便论述流畅。
 > **Claim-level note**：方程本身在当前 draft_v0 状态按 P1-candidate 读；个别 coefficient、阈值与可测化形式按 P2/P3 读；实验代理语句按 P3/P4 下推至 `Neuroscience/` 与 `AI/`。

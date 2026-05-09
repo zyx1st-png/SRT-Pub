@@ -1,0 +1,288 @@
+#!/usr/bin/env python3
+"""Audit connector-risk large files in the SRT repository."""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+import argparse
+import datetime as dt
+import re
+
+
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_REPORT = ROOT / "Operations" / "Large_File_Audit_2026-05-09.md"
+
+SKIP_DIRS = {
+    ".git",
+    ".claude",
+    "__pycache__",
+}
+
+TEXT_SUFFIXES = {
+    ".md",
+    ".markdown",
+    ".txt",
+    ".html",
+    ".json",
+    ".yaml",
+    ".yml",
+    ".csv",
+}
+
+MARKDOWN_SUFFIXES = {".md", ".markdown", ".txt"}
+
+ARTIFACT_PREFIXES = (
+    "papers/",
+    "graphify-out/",
+    "Archive/",
+    "video/",
+)
+
+OPERATIONS_PREFIX = "Operations/"
+
+WARNING_BYTES = 50_000
+ACTION_BYTES = 70_000
+URGENT_BYTES = 100_000
+
+
+@dataclass(frozen=True)
+class FileRecord:
+    rel: str
+    size: int
+    suffix: str
+    category: str
+    risk: str
+
+
+def iter_files() -> list[Path]:
+    out: list[Path] = []
+    for path in ROOT.rglob("*"):
+        if any(part in SKIP_DIRS for part in path.relative_to(ROOT).parts):
+            continue
+        if not path.is_file():
+            continue
+        if path.name == ".DS_Store":
+            continue
+        out.append(path)
+    return out
+
+
+def category_for(rel: str, suffix: str) -> str:
+    if rel.startswith(ARTIFACT_PREFIXES):
+        return "artifact_or_generated"
+    if rel.startswith(OPERATIONS_PREFIX):
+        if suffix in MARKDOWN_SUFFIXES:
+            return "operations_log"
+        return "artifact_or_generated"
+    if suffix in TEXT_SUFFIXES:
+        return "active_text"
+    return "binary_or_media"
+
+
+def risk_for(size: int) -> str:
+    if size >= URGENT_BYTES:
+        return "urgent"
+    if size >= ACTION_BYTES:
+        return "action"
+    if size >= WARNING_BYTES:
+        return "warning"
+    return "ok"
+
+
+def collect() -> list[FileRecord]:
+    records: list[FileRecord] = []
+    for path in iter_files():
+        size = path.stat().st_size
+        if size < WARNING_BYTES:
+            continue
+        rel = path.relative_to(ROOT).as_posix()
+        suffix = path.suffix.lower()
+        records.append(
+            FileRecord(
+                rel=rel,
+                size=size,
+                suffix=suffix,
+                category=category_for(rel, suffix),
+                risk=risk_for(size),
+            )
+        )
+    return sorted(records, key=lambda item: (item.category, item.size, item.rel))
+
+
+def kib(size: int) -> str:
+    return f"{size / 1024:.1f} KiB"
+
+
+def split_status(rel: str) -> str:
+    path = Path(rel)
+    if path.suffix.lower() not in MARKDOWN_SUFFIXES:
+        return "-"
+    if rel == "SRT_Glossary.md" and split_points_to_source(
+        ROOT / "Glossary", rel
+    ):
+        return "Glossary/README.md"
+    stem = path.stem
+    parent = ROOT / path.parent
+    simplified: list[str] = [stem]
+    simplified.append(stem.replace("SRT_", "").replace("SRT-", ""))
+
+    parent_name = path.parent.name
+    if parent_name and parent_name != ".":
+        simplified.append(re.sub(rf"^SRT_{re.escape(parent_name)}_", "", stem))
+
+    numbered = re.sub(r"^SRT_[A-Za-z]+_\d+[a-z]?_", "", stem)
+    if numbered != stem:
+        simplified.append(numbered)
+
+    prefixed_numbered = re.sub(r"^\d+[a-z]?_", "", stem)
+    if prefixed_numbered != stem:
+        simplified.append(prefixed_numbered)
+
+    candidates = [
+        parent / f"{name}_Split"
+        for name in dict.fromkeys(simplified)
+    ]
+    for candidate in candidates:
+        if candidate.is_dir() and split_points_to_source(candidate, rel):
+            return candidate.relative_to(ROOT).as_posix()
+    return "missing_or_not_needed"
+
+
+def split_points_to_source(split_dir: Path, source_rel: str) -> bool:
+    readme = split_dir / "README.md"
+    if not readme.is_file():
+        return False
+    text = readme.read_text(encoding="utf-8")
+    source_name = Path(source_rel).name
+    return source_rel in text or source_name in text
+
+
+def render_report(records: list[FileRecord]) -> str:
+    today = dt.date(2026, 5, 9).isoformat()
+    lines = [
+        "---",
+        "id: SRT-LARGE-FILE-AUDIT-2026-05-09",
+        "type: audit_report",
+        "tags: [LargeFiles, ConnectorSafety, DocumentationEngineering]",
+        "status: active_v1",
+        "layer: operations",
+        "epistemic_layer: os",
+        "claim_mode: evidence",
+        "canonical: false",
+        "---",
+        "",
+        "# Large File Audit 2026-05-09",
+        "",
+        "> Purpose: identify files that may be truncated by GitHub-style connectors and route them into split, archive, or artifact policies.",
+        "",
+        f"- Generated: {today}",
+        f"- Warning threshold: `{kib(WARNING_BYTES)}`",
+        f"- Action threshold: `{kib(ACTION_BYTES)}`",
+        f"- Urgent threshold: `{kib(URGENT_BYTES)}`",
+        "- Excluded scan roots: `.git/`, `.claude/`",
+        "",
+    ]
+
+    by_category: dict[str, list[FileRecord]] = {}
+    for record in records:
+        by_category.setdefault(record.category, []).append(record)
+
+    for category in [
+        "operations_log",
+        "active_text",
+        "artifact_or_generated",
+        "binary_or_media",
+    ]:
+        items = by_category.get(category, [])
+        if not items:
+            continue
+        lines.extend(
+            [
+                f"## {category}",
+                "",
+                "| Risk | Size | File | Split / handling |",
+                "|---|---:|---|---|",
+            ]
+        )
+        for item in sorted(items, key=lambda rec: (-rec.size, rec.rel)):
+            handling = split_status(item.rel)
+            if item.category == "operations_log":
+                handling = "split by dated Operations archive"
+            elif item.category == "artifact_or_generated":
+                handling = "artifact/generated; do not use as primary connector read path"
+            elif item.category == "binary_or_media":
+                handling = "binary/media artifact"
+            lines.append(
+                f"| {item.risk} | {kib(item.size)} | `{item.rel}` | {handling} |"
+            )
+        lines.append("")
+
+    active_action = [
+        rec
+        for rec in records
+        if rec.category == "active_text"
+        and rec.suffix in MARKDOWN_SUFFIXES
+        and rec.size >= ACTION_BYTES
+    ]
+    missing_action = [
+        rec for rec in active_action if split_status(rec.rel) == "missing_or_not_needed"
+    ]
+    lines.extend(
+        [
+            "## Recommended Queue",
+            "",
+            f"- Action-threshold active markdown without split route: `{len(missing_action)}`",
+            "",
+            "1. Use the split route shown in the table before reading any action-threshold owner file through a connector.",
+            "2. Treat `Operations/_SRT_MATERIAL_LOG.md` and `Operations/_SRT_STATUS_HISTORY.md` as split master indexes; read dated parts through `Operations/Material_Log/README.md` and `Operations/Status_History/README.md`.",
+            "3. Treat artifact/generated files as non-primary connector read paths; prefer source Markdown, split indexes, or generated summaries.",
+            "",
+            "### Active Markdown Over Action Threshold",
+            "",
+            "| Size | File | Split status |",
+            "|---:|---|---|",
+        ]
+    )
+    for item in sorted(active_action, key=lambda rec: (-rec.size, rec.rel)):
+        lines.append(f"| {kib(item.size)} | `{item.rel}` | {split_status(item.rel)} |")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--write-report", action="store_true")
+    parser.add_argument("--report", default=str(DEFAULT_REPORT))
+    args = parser.parse_args()
+
+    records = collect()
+    report = render_report(records)
+    if args.write_report:
+        report_path = Path(args.report)
+        if not report_path.is_absolute():
+            report_path = ROOT / report_path
+        report_path.write_text(report, encoding="utf-8")
+        print(f"wrote {report_path.relative_to(ROOT)}")
+    print(f"large_files={len(records)}")
+    active_action_count = sum(
+        1
+        for rec in records
+        if rec.category == "active_text"
+        and rec.suffix in MARKDOWN_SUFFIXES
+        and rec.size >= ACTION_BYTES
+    )
+    missing_active_action_count = sum(
+        1
+        for rec in records
+        if rec.category == "active_text"
+        and rec.suffix in MARKDOWN_SUFFIXES
+        and rec.size >= ACTION_BYTES
+        and split_status(rec.rel) == "missing_or_not_needed"
+    )
+    print(f"active_markdown_action={active_action_count}")
+    print(f"active_markdown_action_missing_split={missing_active_action_count}")
+
+
+if __name__ == "__main__":
+    main()

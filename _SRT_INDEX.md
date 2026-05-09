@@ -154,6 +154,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Core/SRT_Core_24_Floor_Normativity_Verification.md`（bridge-hardening note for floor replacement, normativity, and non-reductive verification; not a canonical replacement）
 - `Core/SRT_Core_24_Index.md`（navigation index for Core 24）
 - `Core/SRT_OPEN_TENSIONS.md`
+- `Core/Axioms_Split/README.md`、`Core/Ontology_L0L1_Split/README.md`、`Core/Ontology_L2_Split/README.md`、`Core/Operator_Basics_Split/README.md`、`Core/Dynamics_Scaling_Split/README.md`、`Core/Equations_Split/README.md`（longform split reading aids; not independent authority layers）
 
 ### Meta Navigation
 
@@ -185,6 +186,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `AI/Architecture_Annex/README.md`（AI architecture interface/comparison annex; claim_mode: translation; canonical: false）
 - `AI/Consciousness_Annex/README.md`（AI consciousness interface/comparison annex; claim_mode: translation; canonical: false）
 - `AI/Ontology_Split/README.md`、`AI/Consciousness_Framework_Split/README.md`、`AI/Architecture_Split/README.md`（longform split reading aids; not independent authority layers）
+- `AI/Ontology_Annex/General_Boundary_Block_Split/README.md`（annex longform split reading aid; not an independent authority layer）
 
 ### Neuroscience
 
@@ -193,8 +195,10 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（claim-status audit for the neuro axiom bridge; not a replacement for the axiom file）
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
 - `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
+- `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`（domain index for hardening drafts and Pipeline 1 neuroscience material patches; not a canonical source）
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（bridge/lab working draft; not a canonical source）
 - `Neuroscience_Annex/README.md`（bridge/interface annex index for extracted neuroscience comparison material; `canonical: false`, not a Core definition source）
+- `Neuroscience/Neural_Mechanisms_Split/README.md`、`Neuroscience/Immune_Dist_Split/README.md`（longform split reading aids; not independent authority layers）
 
 ### Physics
 
@@ -205,16 +209,19 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Physics/SRT_Physics_Claim_Status.md`（claim-status audit for Physics-domain claims; prevents quantum, cosmology, and bridge claims from being over-read as P0/P1）
 - `Physics/QBox_Annex/README.md`（QBox / hyperdecoherence interface annex; claim_mode: translation; canonical: false）
 - `Physics/Earth_Accretion_Annex/README.md`（Earth accretion / reservoir-selection interface annex; claim_mode: translation; canonical: false）
+- `Physics/Cosmology_Split/README.md`、`Physics/Formalism_Ext_Split/README.md`、`Physics/Selection_Split/README.md`、`Physics/Quant_02_Cosmology_Split/README.md`（longform split reading aids; not independent authority layers）
 
 ### Philosophy
 
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（read-first philosophy soft-point map; not a canonical definition source）
 - `Philosophy/_SRT_Phil_Axioms.md`
 - `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`
+- `Philosophy/SRT_Social_Cognition.md`
 - `Philosophy/SRT_Social_Economics_CompactCore.md`
 - `Philosophy/SRT_Political_Philosophy_CompactCore.md`
 - `Philosophy/SRT_Political_Philosophy.md`
 - `Philosophy/SRT_Political_Rights.md`
+- `Philosophy/Foundations_Split/README.md`、`Philosophy/Ethics_Split/README.md`、`Philosophy/Ethics_Agency_Split/README.md`、`Philosophy/Social_Cognition_Split/README.md`、`Philosophy/Social_Economics_Split/README.md`、`Philosophy/Political_Philosophy_Split/README.md`、`Philosophy/Language_Eco_Split/README.md`、`Philosophy/L2_Dynamics_Split/README.md`（longform split reading aids; not independent authority layers）
 
 ### Spirituality
 
@@ -236,6 +243,11 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - claim ladder → `Governance/SRT_CLAIM_LADDER.md`
 - claim-mode audit → `Governance/SRT_CLAIM_MODE_AUDIT.md`
 - harness tests → `Governance/SRT_HARNESS_TESTS.md`
+- 2026 changelog split index → `Governance/_SRT_CHANGELOG_2026_Split/README.md`
+- material log split index → `Operations/Material_Log/README.md`
+- status history split index → `Operations/Status_History/README.md`
+- current status split index → `STATUS_Split/README.md`
+- large-file connector audit → `Operations/Large_File_Audit_2026-05-09.md`
 - AI split / annex pre-audit → `Operations/AI_Split_Annex_PreAudit_2026-04-29.md`
 - operations closure index → `Operations/Closure_Index_2026-04-29.md`
 - structural governance rollup → `Operations/Structural_Governance_Rollup_2026-04-29.md`
@@ -243,7 +255,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 ## Archives
 
 - raw sessions → `Archive/raw_sessions/`
-- status history → `Operations/_SRT_STATUS_HISTORY.md`
+- status history → `Operations/_SRT_STATUS_HISTORY.md`（connector-safe dated parts in `Operations/Status_History/README.md`）
 
 ## Machine Notes
 
@@ -267,7 +279,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
 - `AI/README.md` 是 AI 目录入口，不定义 AI 意识、d-value 或 `Psi_f`
 - `AI/SRT_AI_Claim_Status.md` 是 AI 领域 claim-status 审计与 guardrail；它不替代 `_SRT_AI_Bridge.md` 或 canonical anchors，但用于防止整类 AI claim 被过度读成 P0/P1 定义
-- `AI/Ontology_Split/`、`AI/Consciousness_Framework_Split/`、`AI/Architecture_Split/` 是 longform reading aids，不新增权威层
+- `AI/*_Split/`、`AI/Ontology_Annex/*_Split/`、`Core/*_Split/`、`Core_Law/*_Split/`、`Philosophy/*_Split/`、`Neuroscience/*_Split/`、`Physics/*_Split/`、`STATUS_Split/` 是 longform reading aids，不新增权威层；总表见 `LONGFORM_SPLITS.md`
 - `AI/Ontology_Annex/` 与未来可能的 `AI_Annex/` 是 interface / comparison 层，默认 `canonical: false`
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限

@@ -11,6 +11,8 @@ dependency: [_SRT_INDEX]
 
 # SRT 变更日志（2026）
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`_SRT_CHANGELOG_2026_Split/README.md`](_SRT_CHANGELOG_2026_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new governance authority.
+
 > 本文件承载从 `_SRT_INDEX.md` 迁移出的历史增量记录与版本事件，避免主索引过载。
 
 ## 🆕 最新理论增量（2026-03-31 第五批 - 因果四层结构与赋权机制）

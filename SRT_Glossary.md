@@ -12,6 +12,8 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 # SRT术语表与符号索引
 # SRT Glossary & Symbol Index
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Glossary/README.md`](Glossary/README.md), then open only the needed glossary shard. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 ---
 
 > **📚 文档类型：参考手册**

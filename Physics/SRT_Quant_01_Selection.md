@@ -12,6 +12,8 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT
 
 # SRT Quantum Mechanics: Selection & Measurement (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Selection_Split/README.md`](Selection_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Selection Axioms and Theorems (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed mechanism analysis (Human-Readable Context).

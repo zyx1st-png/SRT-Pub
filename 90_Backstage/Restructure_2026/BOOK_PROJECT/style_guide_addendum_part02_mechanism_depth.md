@@ -7,6 +7,7 @@ scope: book_project
 related:
   - 90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md
   - 01_Source_Intuition/BOOK/00_全书章节写作概要.md
+  - 01_Source_Intuition/BOOK/Outline_Parts/02_卷二_选择的本性.md
 ---
 
 # Style Guide Addendum · 卷二机制厚度与隐性支撑

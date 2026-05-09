@@ -11,6 +11,8 @@ dependency: [SRT-CORE-21]
 
 # SRT Core Definition 22: Master Equations (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Equations_Split/README.md`](Equations_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Canonical Role（规范角色）**：本文件是 SRT 当前 `master dynamics / thermodynamics / stability equations` 的主锚点文件。若其他长文出现同类方程的扩展写法，默认以本文件为优先回链对象。
 
 > **Version 2.0 (Hybrid)**

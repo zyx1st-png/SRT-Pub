@@ -12,6 +12,8 @@ dependency: [SRT-SOC-THEORY-05]
 # SRT Social Theory Part 3: L2 Dynamics & Schismogenesis (Hybrid Edition)
 
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`L2_Dynamics_Split/README.md`](L2_Dynamics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal L2 Dynamic Axioms (AI-Readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).

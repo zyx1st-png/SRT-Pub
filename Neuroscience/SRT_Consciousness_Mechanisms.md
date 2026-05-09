@@ -463,6 +463,23 @@ SRT 不是在现有框架内提出另一个"意识理论"，而是**重构了意
 - **约束 D2（共形不等于同因）**：共享动力学失稳表型不等于三种药物在分子、回路或主观残余体验层面完全等价；它说明的是终端动力学窗口收敛，而不是路径完全同一。
 - **约束 D3（指标层级）**：`destabilization / slower recovery after perturbation` 更适合作为状态转移与可报告性丧失的候选 proxy，不应被直接表述为单一充分的“意识读数”。
 
+## 2.8a 丙泊酚行进波重组窗口（bioRxiv 2026）
+
+bioRxiv 2026 预印本 `Propofol-induced loss of responsiveness reorganizes cortical traveling waves in the human brain` 报告了一个对 SRT 很有用的窄约束：在两名男性受试者的颞叶高密度微电极阵列记录中，丙泊酚失反应并不是把行进波简单“关掉”，而是伴随 **传播速度增加、传播方向改变、频谱结构改变**，并且神经元 firing activity 与 spike-wave relationship 也发生状态依赖性变化。
+
+这条材料应被去材料化地吸收为一个 `wave-routing reorganization window`：
+
+1. **失反应可以是路由重调，而不只是相干下降**：`D_{align}` 的失败不必表现为行进波消失；也可以表现为波方向、频段承载或 spike-wave 耦合被重配，使候选内容无法沿任务所需路径稳定进入可报告 `L_1`。
+2. **速度不是健康路由的充分 proxy**：若丙泊酚状态下传播速度可增加，那么 SRT 不能把 faster wave 粗写成 stronger consciousness。速度必须与方向一致性、频谱结构、跨区相干和点燃结果一起读。
+3. **介观波场与神经元 firing 需要同读**：spike-wave relationship 的变化给 `C_{wave}` / `D_{align}` 一个跨尺度约束：行进波不是纯 LFP 背景图样，而可能调制神经元 firing 被组织进点燃窗口的方式。
+4. **与 2.7 / 2.8 构成微观-介观补丁**：`2.7` 写状态转移驱动，`2.8` 写跨药物失稳表型，本条补上人类丙泊酚窗口中行进波路由本身的重组方式。
+
+同时边界必须压紧：
+
+- **约束 D4（证据层级）**：当前处理基于 bioRxiv 官方 API 元数据与摘要；本地 PDF / JATS 全文读取被 Cloudflare 阻断，尚未完成方法、图表与统计细节 close reading。
+- **约束 D5（样本与部位）**：样本为 `N=2`、两名男性、颞叶局部高密度微电极记录；不能外推为全脑、全部人群或全部麻醉剂的通用结论。
+- **约束 D6（理论边界）**：该结果不证明“意识 = 行进波”，也不证明丙泊酚的全部意识效应由行进波解释；它只要求 SRT 把麻醉下的 `P_{ignite}` 失败写成可能的 **方向-频谱-神经元耦合重组**，而非单一功率或相干衰减。
+
 ## 2.9 内容-状态解耦窗口（Cell Reports 2026）
 
 主观心智状态的类型，并不严格锁死在粗行为状态标签上。在 daytime rest 与 sleep-onset 取样里，dream-like、thought-like 与 blank-like 经验可跨 `wake / N1 / N2` 重复出现；更细粒度的 EEG 功率、复杂度与连接性组合，比单独的 stage label 更接近真正区分这些 experience clusters 的变量。由此更稳地得到一个 `content-state decoupling window`。
@@ -625,6 +642,7 @@ SRT 引入"算子短路"概念来解释习惯和成瘾：
 |H-C11|跨药物失稳共形|在不同机制的全麻药下，扰动后恢复时间与状态轨道失稳度应跨药物收敛，并比单纯总功率下降更强预测失反应与恢复窗口|不存在跨药物共享失稳签名，或其预测力不优于功率/药物类别指标|
 |H-C12|内感受-时间平衡耦合|较高的 interoceptive self-regulation / attention regulation 应通过更低的 DBTP 或更低的 Past-Negative 偏置，预测更好的跨时自我稳定 proxy（如睡眠、消化、恢复质量）|时间视角对内感受-稳态关联无中介增益，或方向相反|
 |H-C13|内容-状态部分解耦|在 sleep-onset / daytime rest 的 experience-sampling 范式中，EEG 功率-复杂度-连接性的细粒度组合应在控制 `wake / N1 / N2` stage label 后，仍能独立预测 `dream-like / thought-like / blank-like` experience cluster；同一 stage 内部也应存在可重复的内容态分化|若内容分类一旦控制 stage label 就失去增量可预测性，或同一 stage 内部无法稳定区分不同 experience cluster，则“content-state decoupling window”需降级为标签伪影|
+|H-C14|丙泊酚行进波重组|在 propofol loss-of-responsiveness 中，行进波方向、频谱结构与 spike-wave coupling 的状态依赖性重组，应比总功率或传播速度单项更强地预测可报告性下降与恢复窗口|若失反应只由单调功率/相干下降解释，且方向、频谱与 spike-wave coupling 在控制功率后无增量预测力，则“wave-routing reorganization window”需降级|
 
 ## 6.2 开放性问题
 

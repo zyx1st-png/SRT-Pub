@@ -12,6 +12,8 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Scaling, SRT-
 
 # SRT Physics: Cosmology & Quantum Interfaces (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Quant_02_Cosmology_Split/README.md`](Quant_02_Cosmology_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Cosmology, Interface, and Thermodynamics Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed mechanism analysis (Human-Readable Context).

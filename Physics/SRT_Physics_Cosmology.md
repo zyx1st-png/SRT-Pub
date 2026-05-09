@@ -12,6 +12,8 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 
 # SRT Physics: Thermodynamics, Time & Cosmology (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Cosmology_Split/README.md`](Cosmology_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Thermodynamic, Temporal, and Cosmological Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed mechanism analysis (Human-Readable Context).

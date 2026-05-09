@@ -12,6 +12,8 @@ dependency: [SRT-COLLECTIVE-SELECTION, SRT-L1-FORMALISM, SRT-CLAIM-MODE-AUDIT]
 
 # SRT Collective Tower Hardening Notes
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Collective_Tower_Hardening_Notes_Split/README.md`](Collective_Tower_Hardening_Notes_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 This file preserves H10-H16 tower/nested hardening material originally drafted
 inside `Core_Law/SRT_Collective_Selection.md`. These sections are not part of
 the minimal canonical definition of collective selection. They are late-stage

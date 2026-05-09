@@ -96,15 +96,24 @@ Proposed structure:
 
 ---
 
-## 4. Current integration status
+## 4. Pipeline 1 material patches
+
+| Claim | Source / Patch | Target | Core thesis | Status |
+|---|---|---|---|---|
+| CONSC14 | `Materials/2026/SRC_2026_05_08_Neuro_Propofol_Traveling_Waves_bioRxiv.md` / `Neuroscience/patches/SRT_Neuro_CONSC14_Propofol_Traveling_Wave_Reorganization_v0_1.md` | `Neuroscience/SRT_Consciousness_Mechanisms.md §2.8a` + `H-C14` | Propofol loss of responsiveness may reorganize traveling-wave routing rather than simply suppress it; direction, spectral structure, and spike-wave coupling must not be collapsed into total power or speed | Integrated as bridge; preprint abstract-level evidence only |
+
+---
+
+## 5. Current integration status
 
 ```text
 N1-N9 = existing compact core
 N10 = added as separate patch
 N11 = added as separate patch
 N12 = added as separate patch
+CONSC14 = Pipeline 1 bridge patch integrated into Consciousness_Mechanisms longform
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12 as primitive axioms yet. They are high-value bridge materials awaiting v0.2 synthesis.
+Do not treat N10-N12 or CONSC14 as primitive axioms yet. They are high-value bridge materials awaiting future synthesis or empirical hardening.

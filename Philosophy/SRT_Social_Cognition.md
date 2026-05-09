@@ -12,6 +12,8 @@ dependency: [SRT-PHIL-AXIOMS]
 # SRT Social Cognition: Affordance & Pathology (Hybrid Edition)
 
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Social_Cognition_Split/README.md`](Social_Cognition_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Cognitive Axioms (AI-Readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
@@ -146,6 +148,50 @@ T^* = \arg\max_{T_i\in\mathcal{T}} \Pi(T_i),\qquad
 \]
 其中 top-down（任务意图）、bottom-up（显著性）与 historical（价值/习惯）共同决定选择偏置。
 * **Implication（中文）**：注意力既非纯资源也非单一机制，而是“为响应而选择”的统一功能结构；分心、捕获与习惯化可由同一优先级框架解释。
+
+### T-Cog-6: Bounded-Surprisal Discrimination Gate（有限惊讶带宽与歧视性认知门）
+
+[R→Manrique, Friston & Walker 2026, *BioSystems*, `doi:10.1016/j.biosystems.2026.105793`（active inference + zones of bounded surprisal, ZBS, 解释歧视性/非人化认知）]
+[H→SRT 将 ZBS 压成社会认知中的“更新带宽代理”，用于解释跨群体证据为何无法进入可修正选择场；它不是 `d`、`\Psi_f` 或 `T_dir` 的新定义。]
+
+当一个算子的跨群体惊讶容忍带宽收窄、群体先验精度升高、且外群体识别通道被降权时，歧视性认知成为稳定候选：
+
+\[
+\mathrm{DiscCog}(P,g)
+\Rightarrow
+\mathrm{ZBS}_{cross}(P,g)\downarrow
+\land
+\Pi^{group}_{prior}(P)\uparrow
+\land
+R_{outgroup}(P,g)\downarrow
+\]
+
+其中 `ZBS_cross` 是 active-inference 桥接代理：它表示系统在面对跨群体反证、陌生行为、或外群体痛苦信号时，能够承受并更新的 surprise / dissonance 区间。区间越窄，越容易把修正性证据处理为噪声、威胁、羞辱或对自我身份的攻击。
+
+**SRT mapping（映射）**：
+
+| Active-inference / ZBS 术语 | SRT 读法 | 边界 |
+|---|---|---|
+| narrow ZBS | 低跨群体更新带宽 / 高 `L_2` 势垒 | 不是 `d` 的定义 |
+| high prior precision | 群体 `L_2` 刚性与确认偏置 | 不是 `\Psi_f` 的定义 |
+| discriminatory mind | 外群体证据低权重化 + 内群体自证循环 | 不等于必然暴力 |
+| dehumanising mind | 外群体从有效 `d` 场与 recognition channel 中被移除 | 对应 `d_i[\theta_j]\to0` 的社会操作 |
+| bystander silence | `S_{sig}` 抑制与 `S_{str}` 外部化 | 不取消责任 |
+| institutional betrayal | `M(t)` 非对称吸收 + 集体 `L_2` 自我保护 | 不自动推出制度合法性 |
+
+**Mechanism（机制）**：
+
+1. 窄 `ZBS_cross` 使外群体反证不能稳定进入后验更新，而被吸收为对既有群体身份的威胁。
+2. 内群体不当行为可被沉默、合理化或旁观者顺从重新写成 `L_2` 自证，降低当事群体内部的即时 `\Psi_f`。
+3. 当行动被用于让社会世界“配合”既有先验时，歧视性认知从静态信念变成 self-evidencing 行为环。
+4. 非人化是该环路的极端形式：外群体不再被读作同等 stake-bearing operator，而被降格为背景、噪声、威胁或可处理对象。
+
+**Boundary（护栏）**：
+
+- ZBS 只作为 FEP / active-inference 的外部机制桥，不替代 SRT canonical primitives。
+- 不是所有内群体偏好都会推出外群体伤害；歧视性认知与非人化行为需要分层判断。
+- 机制解释不是道德或法律免责；“窄 ZBS”描述的是更新失败机制，不是责任豁免。
+- 该来源是理论性 peer-reviewed article / preprint full text，支持机制接口与政策假说，不等于已完成直接实验判定。
 
 <br>
 

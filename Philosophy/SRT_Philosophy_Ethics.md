@@ -12,6 +12,8 @@ dependency: [SRT-PHIL-FOUNDATIONS, SRT-ETHICS-AGENCY]
 # SRT Philosophy Part 3: Meta-Ethics & The Physics of Virtue (Hybrid Edition)
 
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Ethics_Split/README.md`](Ethics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axiomatic Ethics (AI-Readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).

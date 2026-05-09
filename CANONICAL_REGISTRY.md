@@ -107,6 +107,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 9. Philosophy 主轴
 - Foundations：`Philosophy/SRT_Philosophy_Foundations_CompactCore.md` / `Philosophy/SRT_Philosophy_Foundations.md`
+- Social Cognition：`Philosophy/SRT_Social_Cognition.md`
 - Social Economics：`Philosophy/SRT_Social_Economics_CompactCore.md` / `Philosophy/SRT_Social_Economics.md`
 - Political Philosophy：`Philosophy/SRT_Political_Philosophy_CompactCore.md` / `Philosophy/SRT_Political_Philosophy.md`
 - Political Rights：`Philosophy/SRT_Political_Rights.md`（`SRT-POLITICAL-RIGHTS`）
@@ -131,6 +132,13 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 重要追加：d值范畴澄清（决策属性非主体属性）已同步写入 `_SRT_D_VALUE_CANONICAL.md §范畴边界`
 - 开放问题：监督机构自身d验证完整机制、d倾向准入窗口规格（见文件§10）
 
+### 9c. SRT 社会认知
+- 主文件：`Philosophy/SRT_Social_Cognition.md`
+- id：`SRT-SOC-COG`
+- layer：L1 / status：axiomatic_hybrid_v2
+- 说明：承接 affordance、行动势能、belief-lag、注意力选择、社会现实迟滞、极化/echo chamber、文化镜片、second-person interaction disorder、以及歧视性/非人化认知等社会认知接口；其中 `T-Cog-6 Bounded-Surprisal Discrimination Gate` 将 Manrique / Friston / Walker 2026 的 active-inference / ZBS 材料压成跨群体更新带宽代理
+- 引用规则：涉及 social cognition、belief update、dehumanization、recognition-channel break、bystander silence、或 ZBS / active-inference bridge 时，可引用本文件；但 ZBS 只能作为 bridge proxy，不得替代 `d`、`\Psi_f`、`T_dir` 或 recognition operator 的 canonical 定义
+
 ### 10. AI 主轴
 - 定位说明：`AI/AI_POSITIONING_NOTE.md`
 - Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
@@ -142,11 +150,12 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 11. Neuroscience 主轴
 - Neuro registry：`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`
+- Hardening / material patch index：`Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
 - Neuro Axioms / Bridge：`Neuroscience/_SRT_Neuro_Axioms.md`
 - Neural Mechanisms：`Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` / `Neuroscience/SRT_Neural_Mechanisms.md`
 - Consciousness Mechanisms：`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` / `Neuroscience/SRT_Consciousness_Mechanisms.md`
 - 角色：形成 Neuroscience 板块从桥接公理、神经选择动力学到意识机制的主入口层
-- 注意：Neuroscience 已具备 bridge + compact core + registry 的入口骨架，但仍少于 Physics 的覆盖深度
+- 注意：Neuroscience 已具备 bridge + compact core + registry 的入口骨架；Pipeline 1 patch / hook 只作为 bridge record 读取，不因被索引而升级为 canonical definition
 
 ### 12. Physics 主轴
 - Quant Intro：`Physics/SRT_Quant_00_Intro_CompactCore.md` / `Physics/SRT_Quant_00_Intro.md`

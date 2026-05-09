@@ -11,6 +11,8 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 # SRT Neural Mechanisms: Axiomatic Derivations & Dynamics
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Neural_Mechanisms_Split/README.md`](Neural_Mechanisms_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).

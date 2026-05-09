@@ -7,6 +7,7 @@ scope: book_project
 related:
   - 90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md
   - 01_Source_Intuition/BOOK/00_全书章节写作概要.md
+  - 01_Source_Intuition/BOOK/Outline_Parts/README.md
   - 01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人.md
 ---
 

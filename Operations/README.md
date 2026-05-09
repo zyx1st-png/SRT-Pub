@@ -54,8 +54,15 @@ raw session / dialogue compilation / residual archives 已下沉到：
 5. `_SRT_MEDIA_PIPELINE.md`
 6. `_SRT_KNOWLEDGE_REVIEW_PIPELINE.md`（Pipeline 7：知识点抽查与回写）
 7. `_SRT_MATERIAL_PIPELINE.md`（Pipeline 1：材料融合 v2 结构化写入版）
-8. `_SRT_MATERIAL_LOG.md`（Pipeline 1 正式材料融入台账）
+8. `_SRT_MATERIAL_LOG.md`（Pipeline 1 正式材料融入台账；长记录读取从 `Material_Log/README.md` 进入）
 9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线）
+
+### Connector / large-file safety
+
+1. `Large_File_Audit_2026-05-09.md`
+2. `Material_Log/README.md`
+3. `Status_History/README.md`
+4. `../STATUS_Split/README.md`
 
 ## Pipeline 1 Authority
 

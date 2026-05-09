@@ -11,6 +11,8 @@ dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY]
 
 # SRT_Reference_Dynamics.md
 
+> **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Reference_Dynamics_Split/README.md`](Reference_Dynamics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **层级说明**：本文件属于 **L1（接口层）**。
 > 本文件将 L0 命题"选择总是有位置的"（Ĝ_θ 算子）与"选择有代价"（Ψ_f）形式化为动力学方程。
 > L0 意义见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)。

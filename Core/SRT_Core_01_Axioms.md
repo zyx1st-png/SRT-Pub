@@ -12,6 +12,8 @@ version: 6.0 (Hybrid Constitution)
 
 # SRT Core Constitution: The 12 Axioms (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Axioms_Split/README.md`](Axioms_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Version 6.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable Definitions).
 > **Part B** contains the Original Axiomatic Discourse (Human-Readable Context).

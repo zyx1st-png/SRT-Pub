@@ -9,6 +9,8 @@ scope: book_project
 # Chapter Outline Recovery Notes
 
 > Purpose: record why `01_Source_Intuition/BOOK/00_全书章节写作概要.md` was added and how it should be used.
+>
+> 2026-05-08 update: the outline was split into `01_Source_Intuition/BOOK/Outline_Parts/`; the root outline file now acts as a connector-safe index.
 
 ---
 
@@ -43,7 +45,14 @@ Added:
 01_Source_Intuition/BOOK/00_全书章节写作概要.md
 ```
 
-This file provides:
+Current split layout:
+
+```text
+01_Source_Intuition/BOOK/00_全书章节写作概要.md
+01_Source_Intuition/BOOK/Outline_Parts/
+```
+
+The root file provides the entry index. The split files provide:
 
 - whole-book movement;
 - 7-volume / 52-chapter structure;
@@ -63,7 +72,7 @@ This file provides:
 
 Before drafting a chapter:
 
-1. Read the corresponding chapter brief.
+1. Open `00_全书章节写作概要.md`, then read the corresponding `Outline_Parts/` chapter brief.
 2. Check what must be introduced.
 3. Check what must be deferred.
 4. Draft the chapter in book voice.
@@ -107,4 +116,3 @@ Future improvements may include:
 - a chapter status tracker table with PR/commit links;
 - mapping from each chapter to canonical / bridge / public-layer anchors;
 - a load-bearing sentence pool by chapter.
-

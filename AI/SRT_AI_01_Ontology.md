@@ -12,6 +12,8 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
 
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Ontology_Split/README.md`](Ontology_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+
 > **Role note**: This file is an AI-domain ontology expansion and boundary-test document. It is not a primitive SRT definition source and does not replace `Core/SRT_Core_21_Minimal_Axioms.md`, `Core/SRT_Core_21b_Constitutive_Theorems.md`, `_SRT_D_VALUE_CANONICAL.md`, or `_SRT_PSI_F_CANONICAL.md`.
 > **Claim-level note**: AI ontology claims here are mainly P3 bridge / domain-test claims, with P4 material where operational or falsification criteria are introduced.
 > **Does not define**: primitive axioms, `d-value`, `\Psi_f`, `T_dir`, real choice moment, or Core_21 claim levels.
