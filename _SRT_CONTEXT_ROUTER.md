@@ -6,7 +6,7 @@ status: draft_v1
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
-dependency: [_SRT_INDEX, CANONICAL_REGISTRY, SRT-ADJACENT-THEORY-INTERFACE-INDEX]
+dependency: [_SRT_INDEX, SRT-AGENT-RETRIEVAL-PROFILE, CANONICAL_REGISTRY, SRT-ADJACENT-THEORY-INTERFACE-INDEX]
 ---
 
 # SRT Context Router
@@ -19,13 +19,17 @@ dependency: [_SRT_INDEX, CANONICAL_REGISTRY, SRT-ADJACENT-THEORY-INTERFACE-INDEX
 
 ## 0. Retrieval Protocol
 
-When answering or editing a deep SRT question:
+When answering or editing a non-simple SRT question:
 
+0. If the task is theory advancement, book writing, domain deep-dive, material fusion, public release, or repository governance, first classify it with `_SRT_AGENT_RETRIEVAL_PROFILE.md`.
 1. Identify the nearest route below.
 2. Read all **Primary** files first.
-3. Add **Secondary** files only when the question needs domain depth.
+3. Add **Secondary** files when the question needs domain depth, writing context, evidence pressure, or adjacent-theory comparison.
 4. Check the **Boundary** note before forming the answer.
 5. If the question crosses domains, combine the relevant routes rather than inventing a new definition.
+6. If a route points to a long owner file, check `LONGFORM_SPLITS.md` and use the split README for connector-safe reading.
+
+`canonical: false` files may appear in Primary or Secondary context. That status prevents them from defining SRT; it does not remove their retrieval value.
 
 ---
 
@@ -490,7 +494,37 @@ When answering or editing a deep SRT question:
 
 ---
 
-## 19. Maintenance Rule
+## 19. Route: Book Writing / Manuscript Continuity
+
+**Use when the query mentions**: book, chapter, manuscript, volume, 卷, 章节, 书稿, polish, third-tier writing, source intuition, continuity, inclusion matrix, consistency pass.
+
+### Primary
+
+- `_SRT_AGENT_RETRIEVAL_PROFILE.md`（Book Writing profile）
+- `01_Source_Intuition/README.md`
+- `01_Source_Intuition/INDEX.md`
+- `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
+- `01_Source_Intuition/BOOK/Outline_Parts/README.md`
+- `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md`
+
+### Secondary
+
+- `90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
+- `90_Backstage/Restructure_2026/BOOK_PROJECT/philosophical_style_rules.md`
+- `90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
+- `90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_precision_pass_2026-05-10.md`
+- relevant current chapter files under `01_Source_Intuition/BOOK/`
+- relevant formal anchors only as accuracy guardrails
+
+### Boundary
+
+- Book files are high retrieval value but not canonical definition sources.
+- Use formal anchors to keep terms accurate, but do not write the book in registry style.
+- Backstage notes preserve continuity and editorial decisions; they do not create new theory authority.
+
+---
+
+## 20. Maintenance Rule
 
 Whenever a new deep file is created:
 
@@ -498,4 +532,3 @@ Whenever a new deep file is created:
 2. Add it to `_SRT_CONTEXT_ROUTER.md` if it should be retrieved for a recurring question type.
 3. Add it to `_SRT_DEEP_THEORY_MAP.md` if it represents a major theory node.
 4. Add a task to `Operations/_SRT_DEEP_NAV_TODO.md` if its route, boundary, or cross-references are incomplete.
-

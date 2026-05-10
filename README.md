@@ -112,6 +112,9 @@ This path is for editing, auditing, or running repository workflows, not for fir
 3. [`STATUS.md`](STATUS.md)
 4. [`_SRT_INDEX.md`](_SRT_INDEX.md)
 5. [`_SRT_SYMBOL_TABLE.md`](_SRT_SYMBOL_TABLE.md)
+6. [`_SRT_AGENT_RETRIEVAL_PROFILE.md`](_SRT_AGENT_RETRIEVAL_PROFILE.md)
+
+For theory advancement, book writing, domain deep-dives, material fusion, or public-facing drafting, agents should use `_SRT_AGENT_RETRIEVAL_PROFILE.md` before deciding context depth. `canonical: false` means "not a definition authority"; it does not mean "do not retrieve."
 
 ## External support, proxy, and pressure
 

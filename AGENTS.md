@@ -16,8 +16,11 @@ For a fresh AI session inside this repo, read in this order:
 2. `STATUS.md`
 3. `_SRT_INDEX.md`
 4. `_SRT_SYMBOL_TABLE.md`
+5. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
 
 Read `README.md` when public-facing framing or external onboarding context is useful.
+
+For theory advancement, book writing, domain deep-dives, or any non-trivial SRT answer, classify the task with `_SRT_AGENT_RETRIEVAL_PROFILE.md` before deciding how much context to load. `canonical: false` means "not a definition authority"; it does not mean "do not retrieve."
 
 `Manifesto/SRT_MANIFESTO.md` is a human-first worldview entry (`claim_mode: manifesto`, governed by `Governance/SRT_CLAIM_LADDER.md §2A`). It is **not** part of AI session bootstrap; read it only when the task involves user-facing framing.
 
@@ -66,6 +69,7 @@ When the user sends the following trigger words, use the current `SRT/` structur
 ## Canonical Runtime Paths
 
 - AI 最小首读入口：`SRT_AI_START.md`
+- Agent 检索扩展协议：`_SRT_AGENT_RETRIEVAL_PROFILE.md`
 - 运行层入口：`Operations/README.md`
 - 治理层入口：`Governance/README.md`
 - 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`

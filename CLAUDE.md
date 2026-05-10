@@ -14,17 +14,20 @@
 3. [STATUS.md](STATUS.md)
 4. [_SRT_INDEX.md](_SRT_INDEX.md)
 5. [_SRT_SYMBOL_TABLE.md](_SRT_SYMBOL_TABLE.md)
+6. [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md)
 
 如需公开/对外 framing，再读：
 
-6. [README.md](README.md)
+7. [README.md](README.md)
 
 如进入具体 pipeline、治理或运行留痕，再补读：
 
-7. [Operations/README.md](Operations/README.md)
-8. [Governance/README.md](Governance/README.md)
-9. `memory/YYYY-MM-DD.md`（today + yesterday）
-10. [HEARTBEAT.md](HEARTBEAT.md)（仅 heartbeat / automation 风格工作）
+8. [Operations/README.md](Operations/README.md)
+9. [Governance/README.md](Governance/README.md)
+10. `memory/YYYY-MM-DD.md`（today + yesterday）
+11. [HEARTBEAT.md](HEARTBEAT.md)（仅 heartbeat / automation 风格工作）
+
+理论推进、书籍写作、领域深挖、材料融合、public release 或仓库治理任务，必须先用 [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md) 判定检索 profile。`canonical: false` 只表示不能替代定义源，不表示不值得读取。
 
 ## 权威层级
 
@@ -45,6 +48,8 @@
 - split / annex 导航文件
 - `Operations/` 运行日志
 - `memory/` 短时上下文
+
+但这些文件可作为高价值检索上下文；是否读取由 [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md) 与 [_SRT_CONTEXT_ROUTER.md](_SRT_CONTEXT_ROUTER.md) 决定。
 
 ## 禁改与编辑协议
 
@@ -73,3 +78,4 @@
 - 人类阅读地图 → [SRT_Navigation_Map.md](SRT_Navigation_Map.md)
 - 机器入口 → [_SRT_INDEX.md](_SRT_INDEX.md)
 - AI 最小首读入口 → [SRT_AI_START.md](SRT_AI_START.md)
+- Agent 检索扩展 → [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md)

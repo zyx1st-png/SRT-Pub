@@ -6,14 +6,14 @@ status: draft_v1
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
-dependency: [_SRT_CONTEXT_ROUTER, CANONICAL_REGISTRY, SRT-INDEX]
+dependency: [_SRT_CONTEXT_ROUTER, SRT-AGENT-RETRIEVAL-PROFILE, CANONICAL_REGISTRY, SRT-INDEX]
 ---
 
 # SRT Deep Theory Map
 
 > **Purpose**: This file maps the deep theory nodes of SRT so that important theoretical content is not lost during context retrieval. It is a theory-node map, not a canonical definition file.
 
-> **Use rule**: Use this file when the question is conceptual and cross-domain, or when a route in `_SRT_CONTEXT_ROUTER.md` needs a broader theory-node view.
+> **Use rule**: Use this file when the question is conceptual and cross-domain, or when a route in `_SRT_CONTEXT_ROUTER.md` needs a broader theory-node view. For agent work, use it together with `_SRT_AGENT_RETRIEVAL_PROFILE.md` so non-canonical support nodes are retrieved without being treated as definition authorities.
 
 ---
 
@@ -529,4 +529,3 @@ When a new deep content file appears:
 2. Add it to `_SRT_CONTEXT_ROUTER.md` only if it should be retrieved for recurring questions.
 3. Add a maintenance task to `Operations/_SRT_DEEP_NAV_TODO.md` if its route is incomplete.
 4. Avoid duplicating theory in the map. Maps route; canonical files define.
-

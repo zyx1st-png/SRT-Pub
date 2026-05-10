@@ -47,6 +47,11 @@ dependency: [SRT-INDEX]
 15. `_SRT_CHANGELOG_2026.md`（long connector reads should start from `_SRT_CHANGELOG_2026_Split/README.md`）
 16. `Frontmatter_Warning_Baseline.txt`
 
+Agent 检索扩展与 authority / retrieval value 分离见：
+
+- `../_SRT_AGENT_RETRIEVAL_PROFILE.md`
+- `../Operations/Agent_Context_Retrieval_Audit_2026-05-10.md`
+
 未收口理论问题的当前账本见：
 
 - `Core/SRT_OPEN_TENSIONS.md`

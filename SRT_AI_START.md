@@ -6,7 +6,7 @@ status: active_v3
 layer: meta
 epistemic_layer: os
 claim_mode: index
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CORE-21, SRT-CORE-22]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CORE-21, SRT-CORE-22, SRT-AGENT-RETRIEVAL-PROFILE]
 ai_role: bootstrap
 ai_priority: 1
 ai_do_not_use_for_definition: true
@@ -52,6 +52,20 @@ Use `Core/SRT_Core_21_Formal_Axioms.md` as a Core_21 routing index and legacy-nu
 Use `Core/SRT_OPEN_TENSIONS.md` when a concept is known to be not fully sealed.
 
 Use `_SRT_CROSS_DOMAIN_MATRIX.md` when a core term moves across Physics, Neuroscience, Philosophy, Spirituality, AI, or governance contexts.
+
+---
+
+## 2A. Retrieval Expansion Guard
+
+Use `_SRT_AGENT_RETRIEVAL_PROFILE.md` before substantial theory advancement, book writing, domain deep-dives, public-facing drafting, material fusion, or repository governance work.
+
+Do not confuse authority with retrieval:
+
+- `canonical: false` means a file must not define or override SRT terms.
+- It does not mean the file has low context value.
+- Bridge, split, annex, Operations, External Convergence, Source Intuition, and Backstage book files may be high-value retrieval context for the right task.
+
+For any non-simple SRT question, route through `_SRT_CONTEXT_ROUTER.md` and, when cross-domain, `_SRT_DEEP_THEORY_MAP.md`.
 
 ---
 
@@ -139,6 +153,8 @@ Do not promote bridge or lab claims into core claims. In particular:
 
 If a file is `split`, `annex`, `bridge`, `operations`, or `memory`, do not use it as a first definition source unless a canonical file explicitly points there for that purpose.
 
+That restriction is about definition authority, not retrieval. Use `_SRT_AGENT_RETRIEVAL_PROFILE.md` to decide when these files should still be read as support, provenance, connector-safe copies, or writing context.
+
 ---
 
 ## 7. AI-Specific Guard
@@ -164,4 +180,5 @@ When answering about SRT:
 2. State the claim level if hardness matters.
 3. Mark bridge, lab, or companion material explicitly.
 4. If a point is listed in `Core/SRT_OPEN_TENSIONS.md`, do not present it as closed.
-5. Prefer short, hard claims over broad unification language unless the question explicitly asks for bridge speculation.
+5. For non-trivial questions, name the retrieval route or task profile used.
+6. Prefer short, hard claims over broad unification language unless the question explicitly asks for bridge speculation.

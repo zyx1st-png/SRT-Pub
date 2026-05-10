@@ -59,10 +59,12 @@ raw session / dialogue compilation / residual archives 已下沉到：
 
 ### Connector / large-file safety
 
-1. `Large_File_Audit_2026-05-09.md`
-2. `Material_Log/README.md`
-3. `Status_History/README.md`
-4. `../STATUS_Split/README.md`
+1. `../_SRT_AGENT_RETRIEVAL_PROFILE.md`
+2. `Agent_Context_Retrieval_Audit_2026-05-10.md`
+3. `Large_File_Audit_2026-05-09.md`
+4. `Material_Log/README.md`
+5. `Status_History/README.md`
+6. `../STATUS_Split/README.md`
 
 ### Automation / preflight
 

@@ -121,5 +121,8 @@ This path is for repository work. Ordinary readers should not start here.
 3. [`STATUS.md`](STATUS.md)
 4. [`_SRT_INDEX.md`](_SRT_INDEX.md)
 5. [`_SRT_SYMBOL_TABLE.md`](_SRT_SYMBOL_TABLE.md)
-6. [`Governance/SRT_CANONICAL_FREEZE.md`](Governance/SRT_CANONICAL_FREEZE.md)
-7. [`Governance/SRT_EDIT_PROTOCOL.md`](Governance/SRT_EDIT_PROTOCOL.md)
+6. [`_SRT_AGENT_RETRIEVAL_PROFILE.md`](_SRT_AGENT_RETRIEVAL_PROFILE.md)
+7. [`Governance/SRT_CANONICAL_FREEZE.md`](Governance/SRT_CANONICAL_FREEZE.md)
+8. [`Governance/SRT_EDIT_PROTOCOL.md`](Governance/SRT_EDIT_PROTOCOL.md)
+
+For theory advancement, book writing, domain deep-dives, material fusion, or public-facing drafting, do not stop at the minimal agent path. Use [`_SRT_AGENT_RETRIEVAL_PROFILE.md`](_SRT_AGENT_RETRIEVAL_PROFILE.md) to load the right non-canonical support context without treating it as definition authority.
