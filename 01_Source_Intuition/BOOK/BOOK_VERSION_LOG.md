@@ -15,10 +15,29 @@ updated: 2026-05-10
 ## 版本规则
 
 1. `01_Source_Intuition/BOOK/Part_*` 正文目录只保留稳定章节文件名，例如 `02_L0不是虚无.md`。
-2. 后续修订直接写回稳定章节文件；不要再新增 `*_vN*.md` 正文副本。
-3. 版本历史由 Git commit / branch 承接；重要版本变化在本文件追加记录。
-4. 需要并行试写时，优先使用 Git branch；若只是材料回收，放入 `90_Backstage/Restructure_2026/BOOK_PROJECT/`。
-5. frontmatter 中的 `status` 可以继续标注 `draft_vN`、`draft_vN_polished` 等施工状态，但文件名保持稳定。
+2. 后续修订原则上直接写回稳定章节文件；不要再在正文目录新增 `*_vN*.md` 正文副本。
+3. 若工具环境无法可靠取得稳定正文的当前 blob SHA（例如网页工具读取大文件被截断），不得覆盖正文文件；应把完整改稿或 patch 写入 `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/`，并在文件头注明目标章节、基准 commit / blob SHA（若可得）和合并意图。
+4. 版本历史由 Git commit / branch 承接；重要版本变化在本文件追加记录。
+5. 需要并行试写时，优先使用 Git branch；若只是工具中转、材料回收或待合并改稿，放入 `90_Backstage/Restructure_2026/BOOK_PROJECT/`。
+6. frontmatter 中的 `status` 可以继续标注 `draft_vN`、`draft_vN_polished` 等施工状态，但文件名保持稳定。
+
+## Web / GitHub 工具写入例外
+
+正文目录的规则是“不新增版本副本”，不是“不允许工具协作”。
+
+当 ChatGPT / 网页工具只能通过 GitHub `create_or_update_file` 写入，且无法取得目标正文的可靠 blob SHA 时：
+
+1. 不要用截断内容生成覆盖式更新。
+2. 不要在 `Part_*` 正文目录创建 `*_vN*.md`。
+3. 可以创建后台队列文件，例如：
+   `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-05-10_ch08_v5_polish_patch.md`
+4. 队列文件必须包含：
+   - `target_path`
+   - `base_commit`
+   - `base_blob_sha`（若工具可得；不可得则写 `unknown_due_to_truncated_read`）
+   - `merge_mode`（`replace_full_file` / `section_patch` / `notes_only`）
+   - 完整改稿或清晰 patch
+5. 后续由本地 Codex / git 环境读取完整文件，合并到稳定正文路径并提交。
 
 ## 2026-05-10 版本收束
 

@@ -60,7 +60,7 @@ updated: 2026-05-10
 - **章节状态总表**：`01_Source_Intuition/BOOK/Outline_Parts/08_收尾与维护规则.md`
 - **当前风格规则**：`90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
 - **第三类改写指南**：`01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md`
-- **当前版本规则**：章节正文使用稳定文件名；不再在 `Part_*` 正文目录中新增 `*_vN*.md` 版本副本。版本留痕由 Git commit / branch 和 `BOOK_VERSION_LOG.md` 承接。
+- **当前版本规则**：章节正文使用稳定文件名；不再在 `Part_*` 正文目录中新增 `*_vN*.md` 版本副本。版本留痕由 Git commit / branch 和 `BOOK_VERSION_LOG.md` 承接。若网页 / GitHub 工具因大文件截断无法取得可靠 blob SHA，不覆盖正文，改写入 `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/` 待本地合并。
 - **当前主任务**：第 7 章已由 `draft_v16_final_compression_pass` 合并回稳定文件名；下一步先做第 7 章人工/卷二一致性确认，再推进第 8 章 third-tier polished。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
 - **卷二调整指导**：`01_Source_Intuition/BOOK/00_全书章节写作概要_卷二调整指导.md`
@@ -198,8 +198,8 @@ L2 作为摩擦分配
 ## 7. 更新规则
 
 - 每完成卷二一章优化，更新本文件第 2 节、卷二大纲入口和章节状态总表。
-- 后续正文修订直接写回稳定章节文件名；不要在 `Part_*` 正文目录中新建 `*_vN*.md`。
-- 需要并行试写时，使用 Git branch / commit，或放入 backstage recovered notes；不要让正文目录重新出现版本堆。
+- 后续正文修订原则上直接写回稳定章节文件名；不要在 `Part_*` 正文目录中新建 `*_vN*.md`。
+- 需要并行试写、网页工具中转或 blob SHA 不可靠时，使用 Git branch / commit，或写入 `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/`；不要让正文目录重新出现版本堆。
 - 每次重要正文更新，确认 frontmatter 中标注 based_on 与 optimization_axis，并在 `BOOK_VERSION_LOG.md` 追加一条版本说明。
 - 卷二章节未完成新版调整前，状态保持“待优化”。
 - 如果第 7 章重构改变第 8 章任务，先更新卷二调整指导，再写第 8 章。
