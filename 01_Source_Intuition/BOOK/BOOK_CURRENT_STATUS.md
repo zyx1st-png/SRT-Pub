@@ -60,7 +60,8 @@ updated: 2026-05-10
 - **章节状态总表**：`01_Source_Intuition/BOOK/Outline_Parts/08_收尾与维护规则.md`
 - **当前风格规则**：`90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
 - **第三类改写指南**：`01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md`
-- **当前主任务**：基于新版卷一，卷二第 7–13 章统一改为待优化；下一步从第 7 章《地形如何反过来选择人》开始做 third-tier polished。
+- **当前版本规则**：章节正文使用稳定文件名；不再在 `Part_*` 正文目录中新增 `*_vN*.md` 版本副本。版本留痕由 Git commit / branch 和 `BOOK_VERSION_LOG.md` 承接。
+- **当前主任务**：第 7 章已由 `draft_v16_final_compression_pass` 合并回稳定文件名；下一步先做第 7 章人工/卷二一致性确认，再推进第 8 章 third-tier polished。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
 - **卷二调整指导**：`01_Source_Intuition/BOOK/00_全书章节写作概要_卷二调整指导.md`
 
@@ -72,22 +73,22 @@ updated: 2026-05-10
 |---:|---|---|---|
 | 0 | 序：为什么要从存在走向秩序 | `draft_v12`，已完成第三类方向多轮加压 | 暂作当前基准版；后续只做小幅出版级精修 |
 | 1 | 现实不是先给定的 | current baseline：`Part_01_从存在到成为/01_现实不是先给定的.md`，frontmatter 为 `draft_v16` | 暂作第一章当前基准稿；后续只随全书一致性微调 |
-| 2 | L0 不是虚无 | active draft：`Part_01_从存在到成为/02_L0不是虚无_v13_polished.md` | 暂作第二章当前基准稿；后续随卷一一致性 pass 微调 |
-| 3 | ε_pg：L0 的最小非中立性 | active draft：`Part_01_从存在到成为/03_ε_pg_L0的最小非中立性_v12_polished.md` | 暂作第三章当前基准稿；后续随卷一一致性 pass 微调 |
-| 4 | 选择不是挑选 | active draft：`Part_01_从存在到成为/04_选择不是挑选_v10_polished.md` | 暂作第四章当前基准稿；后续随卷一一致性 pass 微调 |
-| 5 | 锚定让一留下 | active draft：`Part_01_从存在到成为/05_锚定让一留下_v15_polished.md` | 暂作第五章当前基准稿；后续只随卷一一致性 pass 微调 |
-| 6 | 秩序如何成为背景 | active draft：`Part_01_从存在到成为/06_秩序如何成为背景_v9_polished.md` | 暂作第六章当前基准稿；后续只做小幅出版级精修 |
+| 2 | L0 不是虚无 | current baseline：`Part_01_从存在到成为/02_L0不是虚无.md`，来自 `draft_v13_polished` | 暂作第二章当前基准稿；后续随卷一一致性 pass 微调 |
+| 3 | ε_pg：L0 的最小非中立性 | current baseline：`Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md`，来自 `draft_v12_polished` | 暂作第三章当前基准稿；后续随卷一一致性 pass 微调 |
+| 4 | 选择不是挑选 | current baseline：`Part_01_从存在到成为/04_选择不是挑选.md`，来自 `draft_v10_polished` | 暂作第四章当前基准稿；后续随卷一一致性 pass 微调 |
+| 5 | 锚定让一留下 | current baseline：`Part_01_从存在到成为/05_锚定让一留下.md`，来自 `draft_v15_polished` | 暂作第五章当前基准稿；后续只随卷一一致性 pass 微调 |
+| 6 | 秩序如何成为背景 | current baseline：`Part_01_从存在到成为/06_秩序如何成为背景.md`，来自 `draft_v9_polished` | 暂作第六章当前基准稿；后续只做小幅出版级精修 |
 | 6b | 卷一命题组：第一条生成链 | active draft：`Part_01_从存在到成为/06b_卷一小结_第一条生成链.md` | 暂作卷一短桥基准稿；后续随卷一一致性 pass 微调 |
-| 7 | 地形如何反过来选择人 | 待优化；现稿 `Part_02_选择的本性/07_地形如何反过来选择人.md` 为 draft_v7 | 下一步：按卷二调整指导生成 v8 third-tier polished |
-| 8 | 选择算子：从可成为性到显现 | 待优化；现稿 `Part_02_选择的本性/08_选择算子_从可成为性到显现.md` 为 draft_v4 | 待第 7 章重构后，按新卷二机制链生成 v5 polished |
+| 7 | 地形如何反过来选择人 | current consolidated draft：`Part_02_选择的本性/07_地形如何反过来选择人.md`，来自 `draft_v16_final_compression_pass` | 先做人工/卷二一致性确认，再决定第 8 章推进 |
+| 8 | 选择算子：从可成为性到显现 | 待优化；现稿 `Part_02_选择的本性/08_选择算子_从可成为性到显现.md` 为 draft_v4 | 待第 7 章确认后，在稳定文件名上推进 v5 polished |
 | 9 | 排除：选择的阴影 | 待优化；现稿 `Part_02_选择的本性/09_排除_选择的阴影.md` 为 draft_v4 | 后续 precision pass：重排为选择算子的阴影面 |
 | 10 | 不可逆性：撤回不是回到原点 | 待优化；现稿 `Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md` 为 draft_v7 | 后续 precision pass：与第 9、11 章对齐 |
 | 11 | 本体论摩擦：为什么现实不会免费成形 | 待优化；现稿 `Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形.md` 为 draft_v3 | 待第 7–10 章优化后做 alignment pass |
 | 12 | 可支付性：为什么路径越走越像路 | 待优化；现稿 `Part_02_选择的本性/12_可支付性_为什么路径越走越像路.md` 为 draft_v4 | 待第 7–11 章优化后做 alignment pass |
 | 13 | 三判据：可延续、可协调、可再选择 | 待优化；现稿 `Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md` 为 draft_v4 | 待第 7–12 章优化后做卷二收束 alignment pass |
-| 14 | 在乎是什么 | `Part_03_从选择到主体与价值/14_在乎是什么_v4.md` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
-| 15 | 价值不是偏好 | `Part_03_从选择到主体与价值/15_价值不是偏好_v4.md` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
-| 16 | d-value：在乎的最小形式化尝试 | `Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v5.md` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
+| 14 | 在乎是什么 | current consolidated draft：`Part_03_从选择到主体与价值/14_在乎是什么.md`，来自 `draft_v4` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
+| 15 | 价值不是偏好 | current consolidated draft：`Part_03_从选择到主体与价值/15_价值不是偏好.md`，来自 `draft_v4` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
+| 16 | d-value：在乎的最小形式化尝试 | current consolidated draft：`Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试.md`，来自 `draft_v5` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
 | 17–22 | 卷三：主体与价值后半 | 未写 | 待卷二重构和 14–16 第三类 pass 后继续推进 |
 | 23–30 | 卷四：秩序的双面性 | 未写 | 后续推进 |
 | 31–35 | 卷五：共同秩序 | 未写 | 后续推进 |
@@ -103,8 +104,8 @@ updated: 2026-05-10
 
 ```text
 卷一 1–6 / 6b 已阶段性闭环
-→ 卷二 7–13 待优化
-→ 第 7 章 v8 third-tier polished
+→ 第 7 章已合并为稳定文件名下的 v16 final compression pass
+→ 第 7 章人工/卷二一致性确认
 → 第 8 章 v5 third-tier polished
 → 第 9–10 章 precision pass
 → 第 11–13 章 alignment pass
@@ -167,6 +168,7 @@ L2 作为摩擦分配
 | 层级 | 材料 | 当前规则 |
 |---|---|---|
 | 当前施工入口 | `BOOK_CURRENT_STATUS.md` | 每次开工先读；只管当前路线和状态 |
+| 版本管理日志 | `BOOK_VERSION_LOG.md` | 记录稳定文件名策略、版本收束和重要正文版本变更 |
 | 卷二最新指导 | `00_全书章节写作概要_卷二调整指导.md` | 第 7–13 章优化的主要依据 |
 | 第三类写作指南 | `THIRD_TIER_REWRITE_GUIDE.md` | 全书章节优化护栏 |
 | 正文 | `Part_*/xx_*.md` | 最终面向读者；卷二当前全部待优化 |
@@ -181,7 +183,7 @@ L2 作为摩擦分配
 
 ## 6. 当前护栏
 
-1. **卷二全部待优化**：第 7–13 章不再标作 active draft，直到按新版卷二指导完成重构或 alignment pass。
+1. **卷二施工状态**：第 7 章已合并为稳定文件名下的 `draft_v16_final_compression_pass`，仍需人工/卷二一致性确认；第 8–13 章继续保持“待优化 / alignment pass”。
 2. **卷一不再大修**：卷一 1–6 / 6b 只在后续全书一致性需要时微调。
 3. **卷二主轴明确**：选择如何在已经沉积的摩擦分配中发生。
 4. **第 7 章优先**：第 7 章决定卷二入口，必须先优化。
@@ -196,7 +198,9 @@ L2 作为摩擦分配
 ## 7. 更新规则
 
 - 每完成卷二一章优化，更新本文件第 2 节、卷二大纲入口和章节状态总表。
-- 每次新增卷二正文版本，确认 frontmatter 中标注 based_on 与 optimization_axis。
+- 后续正文修订直接写回稳定章节文件名；不要在 `Part_*` 正文目录中新建 `*_vN*.md`。
+- 需要并行试写时，使用 Git branch / commit，或放入 backstage recovered notes；不要让正文目录重新出现版本堆。
+- 每次重要正文更新，确认 frontmatter 中标注 based_on 与 optimization_axis，并在 `BOOK_VERSION_LOG.md` 追加一条版本说明。
 - 卷二章节未完成新版调整前，状态保持“待优化”。
 - 如果第 7 章重构改变第 8 章任务，先更新卷二调整指导，再写第 8 章。
 - 本文件是施工入口，不是理论正文；不要把长篇理论说明塞进这里。
