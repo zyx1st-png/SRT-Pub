@@ -14,30 +14,23 @@ updated: 2026-05-10
 
 ## 版本规则
 
-1. `01_Source_Intuition/BOOK/Part_*` 正文目录只保留稳定章节文件名，例如 `02_L0不是虚无.md`。
-2. 后续修订原则上直接写回稳定章节文件；不要再在正文目录新增 `*_vN*.md` 正文副本。
-3. 若工具环境无法可靠取得稳定正文的当前 blob SHA（例如网页工具读取大文件被截断），不得覆盖正文文件；应把完整改稿或 patch 写入 `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/`，并在文件头注明目标章节、基准 commit / blob SHA（若可得）和合并意图。
-4. 版本历史由 Git commit / branch 承接；重要版本变化在本文件追加记录。
-5. 需要并行试写时，优先使用 Git branch；若只是工具中转、材料回收或待合并改稿，放入 `90_Backstage/Restructure_2026/BOOK_PROJECT/`。
-6. frontmatter 中的 `status` 可以继续标注 `draft_vN`、`draft_vN_polished` 等施工状态，但文件名保持稳定。
+1. 稳定章节文件仍是最终入口，例如 `02_L0不是虚无.md`。
+2. 为兼容 ChatGPT / 网页 GitHub 工具，可以在 `01_Source_Intuition/BOOK/Part_*` 正文目录临时生成独立新版本文件，例如 `08_选择算子_从可成为性到显现_v5_polished.md`。
+3. 独立版本文件应在 frontmatter 标注 `status`、`based_on`、`optimization_axis`；若知道基准 commit / blob SHA，也应写入。
+4. 稳定正文与独立版本文件允许短期并存。后续由本地 git 环境比较、合并、清理，把最终版本回写到稳定章节文件。
+5. 版本历史最终由 Git commit / branch 承接；重要版本变化在本文件追加记录。
+6. `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/` 保留为可选通道，用于 section patch、合并说明或不适合放入正文目录的工具中转材料。
 
-## Web / GitHub 工具写入例外
+## Web / GitHub 工具写入规则
 
-正文目录的规则是“不新增版本副本”，不是“不允许工具协作”。
+当 ChatGPT / 网页工具有新版要提交时：
 
-当 ChatGPT / 网页工具只能通过 GitHub `create_or_update_file` 写入，且无法取得目标正文的可靠 blob SHA 时：
-
-1. 不要用截断内容生成覆盖式更新。
-2. 不要在 `Part_*` 正文目录创建 `*_vN*.md`。
-3. 可以创建后台队列文件，例如：
-   `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-05-10_ch08_v5_polish_patch.md`
-4. 队列文件必须包含：
-   - `target_path`
-   - `base_commit`
-   - `base_blob_sha`（若工具可得；不可得则写 `unknown_due_to_truncated_read`）
-   - `merge_mode`（`replace_full_file` / `section_patch` / `notes_only`）
-   - 完整改稿或清晰 patch
-5. 后续由本地 Codex / git 环境读取完整文件，合并到稳定正文路径并提交。
+1. 如果能可靠取得目标稳定文件的完整内容和 blob SHA，可以直接更新稳定章节文件。
+2. 如果读取大文件被截断、无法可靠取得 blob SHA，可以在同一 `Part_*` 正文目录创建独立版本文件。
+3. 独立版本文件命名建议：
+   `08_选择算子_从可成为性到显现_v5_polished.md`
+4. 不要求网页工具强行使用 `update_queue`。`update_queue` 只作为可选的 patch / notes 通道。
+5. 后续清理时，把最新版并入稳定文件名，删除或归档多余版本副本，并在 Git commit 中保留历史。
 
 ## 2026-05-10 版本收束
 

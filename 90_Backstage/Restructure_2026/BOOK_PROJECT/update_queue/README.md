@@ -9,9 +9,9 @@ created: 2026-05-10
 
 # Book Update Queue
 
-This folder is for tool-generated book updates that cannot safely overwrite the stable chapter file.
+This folder is an optional queue for tool-generated book updates that do not fit well as standalone chapter drafts.
 
-Use it when a web / GitHub tool cannot reliably fetch the current full file or blob SHA for a large chapter.
+Web / GitHub tools may also create standalone `*_vN*.md` chapter drafts directly under `01_Source_Intuition/BOOK/Part_*`. Use this queue mainly for section patches, merge notes, or non-chapter update material.
 
 Required header for each queued update:
 
@@ -29,6 +29,6 @@ status: pending_merge
 
 Rules:
 
-- Do not create `*_vN*.md` chapter copies under `01_Source_Intuition/BOOK/Part_*`.
-- Put full replacement drafts, section patches, or merge notes here.
-- A local git-capable agent should later merge the queued update into the stable chapter file and commit it.
+- Standalone `*_vN*.md` chapter drafts are allowed under `01_Source_Intuition/BOOK/Part_*` when that is easier for the tool.
+- Put section patches, merge notes, or non-chapter update material here.
+- A local git-capable agent should later merge queued updates or standalone draft files into the stable chapter file and commit the cleanup.
