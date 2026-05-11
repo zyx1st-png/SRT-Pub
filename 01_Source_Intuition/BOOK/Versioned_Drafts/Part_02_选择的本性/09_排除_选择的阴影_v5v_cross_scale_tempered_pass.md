@@ -6,8 +6,8 @@ chapter: 09
 status: draft_v5v_cross_scale_tempered_pass
 based_on:
   - 01_Source_Intuition/BOOK/Part_02_选择的本性/09_排除_选择的阴影.md
-  - 01_Source_Intuition/BOOK/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_v5u_cross_scale_third_tier_compression.md
-  - 01_Source_Intuition/BOOK/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5q_final_compression_pass.md
+  - 01_Source_Intuition/BOOK/Part_02_选择的本性/09_排除_选择的阴影_v5u_cross_scale_third_tier_compression.md
+  - 01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5q_final_compression_pass.md
   - 01_Source_Intuition/BOOK/Outline_Parts/02_卷二_选择的本性.md
   - 01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md
   - Physics/SRT_Quant_01_Selection_CompactCore.md

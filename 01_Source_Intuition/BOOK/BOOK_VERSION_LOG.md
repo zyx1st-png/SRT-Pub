@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-11
 ---
 
 # 《从存在到秩序》书稿版本管理日志
@@ -53,3 +53,20 @@ updated: 2026-05-10
 - 卷一第 2–6 章采用已在施工入口中标为当前基准 / active draft 的 polished 稿。
 - 卷二第 7 章采用当前最高压缩版本 `draft_v16_final_compression_pass`，但仍需人工/卷二一致性确认。
 - 卷三第 14–16 章采用当前最高已有版本，并合并为稳定文件名；后续仍暂缓，待卷二重构后再做第三类 pass。
+
+## 2026-05-11 卷二版本归档
+
+本次同步远端后，将卷二第 7–9 章的最新版回写到稳定章节文件名，并把独立版本草稿移入 `Versioned_Drafts/Part_02_选择的本性/`。正文目录只保留稳定入口；旧稿仍作为仓库内版本材料保留，后续也可通过 Git 历史追溯。
+
+| 章 | 稳定文件 | 本次采用来源 | 归档的独立版本 |
+|---:|---|---|---|
+| 7 | `Part_02_选择的本性/07_地形如何反过来选择人.md` | `07_地形如何反过来选择人_v18_final_literary_philosophical_polish.md` | v17, v18 |
+| 8 | `Part_02_选择的本性/08_选择算子_从可成为性到显现.md` | `08_选择算子_从可成为性到显现_v5q_final_compression_pass.md` | v5, v5c–v5q |
+| 9 | `Part_02_选择的本性/09_排除_选择的阴影.md` | `origin/codex/ch09-v5s-third-tier-tightening` 的 `09_排除_选择的阴影_v5v_cross_scale_tempered_pass.md` | v5s, v5t, v5u, v5v |
+
+选择原则：
+
+- 第 7 章采用当前最高文学 / 哲学 polish 版本 `draft_v18_final_literary_philosophical_polish`。
+- 第 8 章采用当前最高机制压缩版本 `draft_v5q_final_compression_pass`。
+- 第 9 章采用未合并远端分支中的最高 tempering pass：`draft_v5v_cross_scale_tempered_pass`。
+- `Versioned_Drafts/` 是书稿版本归档区，不替代稳定正文入口。
