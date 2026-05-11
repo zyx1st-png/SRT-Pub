@@ -441,6 +441,50 @@ The minimal canonical collective-selection surface consists of:
 - T-COLL-1 / T-COLL-2 / T-COLL-3 / T-COLL-4
 - §4.1–§4.7 collective four-variable coupling and T-PROJ-1^{coll}
 
+### §4.8a Situated individuation diagnostic (P3 empirical bridge, 2026-05-11)
+
+In a collective system, the useful empirical question is not whether a component has
+become isolated from the collective. It is whether predictive structure has been
+relocated from the collective field into a component-local loop while non-zero
+collective coupling remains.
+
+For a component `i`, let `X_i(t)` be a focal state variable, `X_i(t+1)` its next
+state, and `C_i(t)` the contemporaneous collective context available to that
+component. A non-trivial information-closure style bridge can be written:
+
+$$
+\mathrm{NTIC}_i
+  := I(X_i(t+1); X_i(t))
+     - I(X_i(t+1); X_i(t)\mid C_i(t)).
+$$
+
+This scalar must not be read alone. In SRT collective-selection terms, the
+diagnostic object is the pair:
+
+$$
+\bigl(I(X_i(t+1); C_i(t)),\; \mathrm{NTIC}_i\bigr).
+$$
+
+| Empirical regime | SRT reading | Guardrail |
+|---|---|---|
+| `I(X_i(t+1); C_i(t)) \approx 0` | isolated or context-untracked component | not evidence of mature embedded agency |
+| `I(X_i(t+1); C_i(t)) > 0` and `\mathrm{NTIC}_i \gg 0` | component self-prediction and collective prediction are redundant; the component is still strongly aligned with the collective field | not automatically "more agency" |
+| `I(X_i(t+1); C_i(t)) > 0` and `\mathrm{NTIC}_i \approx 0` | situated individuation window: the component remains embedded, but its future is no longer predictively reducible to collective-context redundancy | candidate proxy for relational agency relocation |
+| `\mathrm{NTIC}_i < 0` | synergy-dominated / pre-specialization regime | not evidence by itself of stabilized individuality |
+
+This gives a concrete empirical bridge for §4.5 individual-collective coupling:
+collective organization can generate a component-level individuation window
+without severing the component from the shared `L_2` field. Put negatively:
+decoupling is not the mark of mature individuation; embedded non-redundancy is
+the more useful diagnostic.
+
+**Boundary**：This is a P3 empirical bridge, not a definition of `d`,
+`\Psi_f`, `T_dir`, stable ISP, subjecthood, consciousness, moral agency, or
+responsibility. For biological cells, it should be read as minimal
+predictive/functional individuation only. For social, AI, or political systems,
+the same pattern requires independent checks for stake, consequence return
+`M(t)`, boundary maintenance, memory, and real re-selection.
+
 ---
 
 ## §5. T-COLL-3：集体 ε 反闭合必要性

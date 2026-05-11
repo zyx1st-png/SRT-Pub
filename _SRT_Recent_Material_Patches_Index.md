@@ -15,19 +15,93 @@ Recent material patches should be handled in three layers:
 Recommended synthesis targets:
 
 ```text
+Core_Law/SRT_Collective_Selection.md
 Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
 Physics/SRT_Physics_Bridge_v0_2.md
+Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
 ```
 
 ---
 
-## 1. Neuroscience patches
+## 1. Core-law / collective-selection patches
+
+| Patch | File | Main SRT use | Integration priority |
+|---|---|---|---|
+| COLL08 NTIC situated individuation | `Core_Law/patches/SRT_CoreLaw_COLL08_NTIC_Situated_Individuation_v0_1.md` | treats component-level individuation in collectives as coupling-qualified embedded non-redundancy; prevents raw positive NTIC from being used as a monotone agency scalar | High |
+
+### Core-law synthesis direction
+
+COLL08 should remain tied to the collective-selection / agency-relocation interface:
+
+```text
+Core_Law/SRT_Collective_Selection.md
+Core_Law/SRT_Reference_Scaling.md
+Core_Law/SRT_L1_Hardening_Notes.md
+```
+
+It should preserve the distinction:
+
+```text
+minimal predictive individuation != subjecthood != consciousness != moral agency != responsibility
+```
+
+---
+
+## 2. Philosophy patches
+
+| Patch | File | Main SRT use | Integration priority |
+|---|---|---|---|
+| PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents "emergence" from functioning as an explanatory primitive; forces bridge claims to specify mechanism, order parameter, macro-pattern, and implementation channel | Medium-high |
+| PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | prevents hard-problem arguments from smuggling in a view-from-nowhere picture of science; treats first/third-person difference as access route and description-grain difference before metaphysical gap | Medium-high |
+| PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | prevents depsychologized pure feel from being overread as SRT subjecthood; binds consciousness claims to bearer unit, access, stake, `Psi_f`, boundary, memory, and continuity | Medium-high |
+| SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | treats cognitive development as child-body-caregiver-environment coordination; uses variability, cascades, degeneracy, and rhythmic support as developmental bridge probes | Medium-high |
+
+### Philosophy synthesis direction
+
+PH-CONSC01 should later be folded into a versioned agency / subjecthood synthesis:
+
+```text
+Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
+```
+
+PH-CONSC02 should remain tied to the hard-problem / explanatory-gap route:
+
+```text
+Philosophy/SRT_HardProblem_Epistemology.md
+Philosophy/SRT_Philosophy_Foundations_CompactCore.md
+Philosophy/SRT_Subjecthood_Threshold_Interface.md
+```
+
+SOC-COG02 should also be folded into a social cognition / language ecology synthesis:
+
+```text
+Philosophy/SRT_Social_Cognition.md
+Philosophy/SRT_SocTheory_05_Language_Eco.md
+```
+
+PH-METH01 should remain tied to the core bridge / claim-hygiene layer:
+
+```text
+Core/SRT_Core_21c_Bridge_Hypotheses.md
+Governance/SRT_CLAIM_LADDER.md
+```
+
+It should preserve the distinction:
+
+```text
+selection event != conscious content != subjecthood != agency != responsibility-bearing subject
+```
+
+---
+
+## 3. Neuroscience patches
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
 | N10 BTSP | `Neuroscience/SRT_Neuroscience_Hardening_N10_BTSP_v0_1.md` | single-experience L1-to-L2 micro-hardening; eligibility trace; plateau trigger | High |
 | N11 Transition field | `Neuroscience/SRT_Neuroscience_Hardening_N11_Transition_Field_Subjective_Time_v0_1.md` | mind as historically shaped transition field; subjective time as transition accessibility; attractor capture | Very high |
 | N12 Astrocyte plastic networks | `Neuroscience/SRT_Neuroscience_Hardening_N12_Astrocyte_Plastic_Networks_v0_1.md` | non-neuronal L2 topology; astrocyte support networks; multi-substrate transition field | Medium-high |
+| NEURAL16 BOLD-CMRO2 uncertainty gate | `Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md` | uncertainty-gated admission rule for hemodynamic-metabolic proxies; indeterminate CMRO2 direction must not be used as sign-reversal evidence | Medium-high |
 
 ### Neuroscience synthesis direction
 
@@ -47,7 +121,7 @@ Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
 
 ---
 
-## 2. Physics / ontology patches
+## 4. Physics / ontology patches
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
@@ -71,7 +145,7 @@ Physics/SRT_Physics_Bridge_v0_2.md
 
 ---
 
-## 3. Canonical caution
+## 5. Canonical caution
 
 These recent patches should not be merged into SRT primitive axioms without a separate hardening cycle.
 

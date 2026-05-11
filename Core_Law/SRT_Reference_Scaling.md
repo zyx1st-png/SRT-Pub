@@ -330,19 +330,47 @@ $$\text{Agency} ≈ d · A$$
 
 ### §6.4 被动-主动选择连续谱
 
-**定义 S5 (选择连续性)**:
+**定义 S5 (选择连续性，NTIC regime guarded)**:
 
-$$\text{Agency} \propto i_{diff} × \text{NTIC}$$
+旧速记式：
 
-其中 NTIC = Non-Trivial Information Closure（非平凡信息闭包）
+$$\text{Agency} \propto i_{diff} \times \text{NTIC}$$
 
-| 特征 | 被动选择 | 主动选择 |
-|:-----|:---------|:---------|
-| 能量流向 | 沿热力学梯度 | 可逆热力学梯度 |
-| $θ$ 性质 | 固定/外部强加 | 动态/内部演化 |
-| 持久性类型 | 静态（结晶）| 动态（代谢）|
+只能作为启发式，不可把 raw NTIC 标量读成"越大越能动"。NTIC = Non-Trivial Information Closure（非平凡信息闭包）必须与系统的 collective/context coupling 一起读。
+
+对组件 `i`，若 `X_i(t)` 为其当前状态，`X_i(t+1)` 为下一状态，`C_i(t)` 为其集体/情境变量，则：
+
+$$
+\mathrm{NTIC}_i
+  := I(X_i(t+1); X_i(t))
+     - I(X_i(t+1); X_i(t)\mid C_i(t)).
+$$
+
+SRT 使用的是 coupling-qualified NTIC regime，而不是孤立标量：
+
+| Regime | 结构读法 | 能动性含义 |
+|:-------|:---------|:-----------|
+| `I(X_i(t+1); C_i(t)) \approx 0` | 组件与情境近似脱耦或未被测到耦合 | 不能单独作为主动选择证据 |
+| `I(X_i(t+1); C_i(t)) > 0` 且 `NTIC_i \gg 0` | 自身预测与情境预测高度冗余，组件仍强随集体场 | 表示耦合/对齐，不自动表示更高 agency |
+| `I(X_i(t+1); C_i(t)) > 0` 且 `NTIC_i \approx 0` | 嵌入式个体化窗口：仍有集体耦合，但未来预测结构不再被情境冗余吸收 | 最适合作为 minimal relational agency / situated autonomy 的候选代理 |
+| `NTIC_i < 0` | synergy-dominated / pre-specialization | 可提示协同转折，但不是稳定个体性判据 |
+
+因此更稳的代理式是：
+
+$$
+\text{Agency}_{proxy}
+  \propto d \cdot A \cdot R_{\mathrm{NTIC}}(X_i, C_i)
+$$
+
+其中 `R_NTIC` 不是 raw NTIC 数值，而是同时检查 `NTIC_i` 与 `I(X_i(t+1); C_i(t))` 的 regime variable。
+
+| 特征 | 被动选择 | 嵌入式主动选择 |
+|:-----|:---------|:---------------|
+| 能量流向 | 沿热力学梯度 | 可局部逆转或调制热力学梯度 |
+| $θ$ 性质 | 固定/外部强加 | 动态/内部演化且受情境耦合 |
+| 持久性类型 | 静态（结晶）| 动态（代谢/调节/重选）|
 | $i_{diff}$ | ≈ 0 | > 0 |
-| NTIC | ≈ 0 | > 0 |
+| NTIC regime | 无耦合或无稳定个体回路 | `I(X';C)>0` 与 `NTIC≈0` 的嵌入式非冗余窗口，或其他经 domain 证明的稳定 agency regime |
 
 ---
 
@@ -493,7 +521,7 @@ $$\frac{dθ}{dt} = -α ∇_θ Φ + \text{Learning}$$
 | $κ_{ij}$ | 尺度耦合强度 | §3.1 |
 | $A$ | 汇编指数 | §6.1 |
 | $D_p$ | 观察者参与度 | §7.1 |
-| $\text{NTIC}$ | 非平凡信息闭包 | §6.4 |
+| $\text{NTIC}$ | 非平凡信息闭包（需按 coupling-qualified regime 解读） | §6.4 |
 | $d_{threshold}$ | 意识阈值 | §5.2 |
 | $θ_c$ | 相变临界值 | §8.1 |
 
@@ -520,8 +548,10 @@ Life = (dθ/dt ≠ 0) ∧ (dθ/dt = -η ∂Φ/∂θ)
 
 ### 能动性判据
 ```
-Agency = d · A · NTIC
+Agency_proxy = d · A · R_NTIC
 ```
+
+其中 `R_NTIC` 表示 coupling-qualified NTIC regime，不是 raw NTIC 数值。
 
 ### Def-Scale-TEL-1: d-value Polarity Extension（d 值极性扩展，新增）
 将驱动分解为风险推力与价值牵引：
