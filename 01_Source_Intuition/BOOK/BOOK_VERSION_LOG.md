@@ -14,11 +14,23 @@ updated: 2026-05-10
 
 ## 版本规则
 
-1. `01_Source_Intuition/BOOK/Part_*` 正文目录只保留稳定章节文件名，例如 `02_L0不是虚无.md`。
-2. 后续修订直接写回稳定章节文件；不要再新增 `*_vN*.md` 正文副本。
-3. 版本历史由 Git commit / branch 承接；重要版本变化在本文件追加记录。
-4. 需要并行试写时，优先使用 Git branch；若只是材料回收，放入 `90_Backstage/Restructure_2026/BOOK_PROJECT/`。
-5. frontmatter 中的 `status` 可以继续标注 `draft_vN`、`draft_vN_polished` 等施工状态，但文件名保持稳定。
+1. 稳定章节文件仍是最终入口，例如 `02_L0不是虚无.md`。
+2. 为兼容 ChatGPT / 网页 GitHub 工具，可以在 `01_Source_Intuition/BOOK/Part_*` 正文目录临时生成独立新版本文件，例如 `08_选择算子_从可成为性到显现_v5_polished.md`。
+3. 独立版本文件应在 frontmatter 标注 `status`、`based_on`、`optimization_axis`；若知道基准 commit / blob SHA，也应写入。
+4. 稳定正文与独立版本文件允许短期并存。后续由本地 git 环境比较、合并、清理，把最终版本回写到稳定章节文件。
+5. 版本历史最终由 Git commit / branch 承接；重要版本变化在本文件追加记录。
+6. `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/` 保留为可选通道，用于 section patch、合并说明或不适合放入正文目录的工具中转材料。
+
+## Web / GitHub 工具写入规则
+
+当 ChatGPT / 网页工具有新版要提交时：
+
+1. 如果能可靠取得目标稳定文件的完整内容和 blob SHA，可以直接更新稳定章节文件。
+2. 如果读取大文件被截断、无法可靠取得 blob SHA，可以在同一 `Part_*` 正文目录创建独立版本文件。
+3. 独立版本文件命名建议：
+   `08_选择算子_从可成为性到显现_v5_polished.md`
+4. 不要求网页工具强行使用 `update_queue`。`update_queue` 只作为可选的 patch / notes 通道。
+5. 后续清理时，把最新版并入稳定文件名，删除或归档多余版本副本，并在 Git commit 中保留历史。
 
 ## 2026-05-10 版本收束
 

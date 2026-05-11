@@ -60,7 +60,7 @@ updated: 2026-05-10
 - **章节状态总表**：`01_Source_Intuition/BOOK/Outline_Parts/08_收尾与维护规则.md`
 - **当前风格规则**：`90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
 - **第三类改写指南**：`01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md`
-- **当前版本规则**：章节正文使用稳定文件名；不再在 `Part_*` 正文目录中新增 `*_vN*.md` 版本副本。版本留痕由 Git commit / branch 和 `BOOK_VERSION_LOG.md` 承接。
+- **当前版本规则**：稳定章节文件仍是最终入口；为兼容 ChatGPT / 网页 GitHub 工具，允许在 `Part_*` 正文目录临时生成 `*_vN*.md` 独立新版本文件。后续由本地 git 环境比较、合并、清理，并把最终版本回写到稳定文件名。具体规则见 `BOOK_VERSION_LOG.md`。
 - **当前主任务**：第 7 章已由 `draft_v16_final_compression_pass` 合并回稳定文件名；下一步先做第 7 章人工/卷二一致性确认，再推进第 8 章 third-tier polished。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
 - **卷二调整指导**：`01_Source_Intuition/BOOK/00_全书章节写作概要_卷二调整指导.md`
@@ -80,7 +80,7 @@ updated: 2026-05-10
 | 6 | 秩序如何成为背景 | current baseline：`Part_01_从存在到成为/06_秩序如何成为背景.md`，来自 `draft_v9_polished` | 暂作第六章当前基准稿；后续只做小幅出版级精修 |
 | 6b | 卷一命题组：第一条生成链 | active draft：`Part_01_从存在到成为/06b_卷一小结_第一条生成链.md` | 暂作卷一短桥基准稿；后续随卷一一致性 pass 微调 |
 | 7 | 地形如何反过来选择人 | current consolidated draft：`Part_02_选择的本性/07_地形如何反过来选择人.md`，来自 `draft_v16_final_compression_pass` | 先做人工/卷二一致性确认，再决定第 8 章推进 |
-| 8 | 选择算子：从可成为性到显现 | 待优化；现稿 `Part_02_选择的本性/08_选择算子_从可成为性到显现.md` 为 draft_v4 | 待第 7 章确认后，在稳定文件名上推进 v5 polished |
+| 8 | 选择算子：从可成为性到显现 | 待优化；现稿 `Part_02_选择的本性/08_选择算子_从可成为性到显现.md` 为 draft_v4 | 待第 7 章确认后，可生成 v5 polished 独立文件，再由本地合并 |
 | 9 | 排除：选择的阴影 | 待优化；现稿 `Part_02_选择的本性/09_排除_选择的阴影.md` 为 draft_v4 | 后续 precision pass：重排为选择算子的阴影面 |
 | 10 | 不可逆性：撤回不是回到原点 | 待优化；现稿 `Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md` 为 draft_v7 | 后续 precision pass：与第 9、11 章对齐 |
 | 11 | 本体论摩擦：为什么现实不会免费成形 | 待优化；现稿 `Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形.md` 为 draft_v3 | 待第 7–10 章优化后做 alignment pass |
@@ -198,8 +198,8 @@ L2 作为摩擦分配
 ## 7. 更新规则
 
 - 每完成卷二一章优化，更新本文件第 2 节、卷二大纲入口和章节状态总表。
-- 后续正文修订直接写回稳定章节文件名；不要在 `Part_*` 正文目录中新建 `*_vN*.md`。
-- 需要并行试写时，使用 Git branch / commit，或放入 backstage recovered notes；不要让正文目录重新出现版本堆。
+- 后续正文修订可以直接写回稳定章节文件名；也可以为了兼容网页工具临时生成 `*_vN*.md` 独立版本文件。
+- 需要并行试写、网页工具中转或 blob SHA 不可靠时，允许在正文目录生成新版本文件；后续由本地清理合并，避免长期堆积。
 - 每次重要正文更新，确认 frontmatter 中标注 based_on 与 optimization_axis，并在 `BOOK_VERSION_LOG.md` 追加一条版本说明。
 - 卷二章节未完成新版调整前，状态保持“待优化”。
 - 如果第 7 章重构改变第 8 章任务，先更新卷二调整指导，再写第 8 章。
