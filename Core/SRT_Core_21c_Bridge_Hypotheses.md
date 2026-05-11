@@ -299,6 +299,10 @@ This bridge assigns three scientific interface languages to different parts of t
 - Energy / free-energy landscapes are effective projections of `L_2`, not the whole convergence domain.
 - Neural normalization, ignition, and plasticity are implementation proxies for embodied `\hat{G}_\theta`, not the Ghost Operator in full.
 
+**Emergence hygiene guardrail (2026-05-11)**: In this bridge set, "emergence" is not an explanatory primitive. It is shorthand for a mechanism that still has to specify lower-level parts or states, their organization and coupling, the transition condition or order parameter, the stabilized macro-pattern or `L_2` constraint, and the implementation channel by which that macro-pattern changes future trajectories. Do not cite "X emerges" as an explanation of X, as proof that X is ontologically extra, or as permission to treat the whole as exerting a new force on its parts.
+
+SRT's `L_2` downward constraint is therefore not a separate configurational force added on top of part-level interactions. At P1, it means stabilized history constrains future selection. At P3/P4, any domain-specific "downward causation" claim must say how the constraint is implemented through boundary conditions, accessible selection space, update costs, coupling channels, or other specified mechanisms.
+
 **Cross-ref**: `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`; `SRT_Fisher_FEP_Landscape_Interface.md`; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1, Eq-DValue-Mobile-1`; `Core/SRT_Core_14_Dynamics_Scaling.md`; `Neuroscience/SRT_Neural_Mechanisms.md`; `_SRT_VERTICAL_INTEGRATION.md §8, §10`.
 
 ---

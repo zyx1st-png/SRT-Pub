@@ -131,10 +131,11 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - occlusion dynamics / A-B phases / d_c / intervention window / vacuum period / structural evil → `Core_Law/SRT_Occlusion_Dynamics.md`
 - suffering / pain vs suffering / signal-vs-structural / four phenomenological types / anti-minimization / collective externalization → `Core_Law/SRT_Suffering.md`
 - L1 formalism / σ dynamics / d_c drift / T_dir ODE (relaxation + real-reselection pump + Ψ_f-gap deduction + S_str erosion + L_2 scaffolding) / S coupled equations / pathological attractor / healthy working region / lethal L_2 equation-level criterion / **T-CHI-1 χ jump-function family universality (H8, §2.5)** / **T-CHANNEL-1 channel-indicator family universality (H9, §4.5)** / **T-PROJ-1 main-equation projection theorem (H5, §6)** → `Core_Law/SRT_L1_Formalism.md`
-- collective selection / multi-ISP shared L_2 / consequence return matrix M(t) / aggregation-dominance-collapsed / collective ε / co-selection reality criterion / collective four-variable coupled ODE (σ^coll, d_c^coll, T_dir^coll, S^coll) / collective lethal L_2 criterion / individual-collective bidirectional coupling / **T-PROJ-1^{coll} collective projection theorem (H6, §4.7)** / minimal canonical collective-selection surface through §4.7. Tower/nested hardening H10-H16 has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` → `Core_Law/SRT_Collective_Selection.md`
+- collective selection / multi-ISP shared L_2 / consequence return matrix M(t) / aggregation-dominance-collapsed / collective ε / co-selection reality criterion / collective four-variable coupled ODE (σ^coll, d_c^coll, T_dir^coll, S^coll) / collective lethal L_2 criterion / individual-collective bidirectional coupling / **T-PROJ-1^{coll} collective projection theorem (H6, §4.7)** / **NTIC situated individuation diagnostic (§4.8a, P3 empirical bridge)** / minimal canonical collective-selection surface through §4.7. Tower/nested hardening H10-H16 has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` → `Core_Law/SRT_Collective_Selection.md`
 - L1 hardening notes (σ_sr namespace / Δ_avail three-component / **T-DELTA-1 operator-level theorem (H7, §2)** / M(t) MOC / FEP→S_sig bridge) → `Core_Law/SRT_L1_Hardening_Notes.md`
+- core-law hardening index / COLL08 NTIC situated individuation / coupling-qualified NTIC regime guardrail → `Core_Law/_SRT_Core_Law_Hardening_Index.md`
 - irreversibility / learning asymmetry / termination as absorbing boundary / P1-T07 precision / `\nu_{block}` operator-level constitution (T-IRR-3.5, H4) / thermodynamic bridge guardrail → `Core_Law/SRT_Irreversibility.md`
-- bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+- bridge hypotheses / emergence hygiene guardrail → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - equations → `Core/SRT_Core_22_Equations.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`
 
@@ -153,7 +154,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `Core/SRT_Core_21_Formal_Axioms.md`
 - `Core/SRT_Core_21_Minimal_Axioms.md`
 - `Core/SRT_Core_21b_Constitutive_Theorems.md`
-- `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md`（P2/P3/P4 bridge hypotheses; includes mechanism-first emergence hygiene guardrail）
 - `Core/SRT_Core_22_Equations.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`（bridge hardening entry; not a canonical core source）
 - `Core/SRT_Core_24_Floor_Normativity_Verification.md`（bridge-hardening note for floor replacement, normativity, and non-reductive verification; not a canonical replacement）
@@ -222,6 +223,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `Philosophy/_SRT_Phil_Axioms.md`
 - `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`
 - `Philosophy/SRT_Social_Cognition.md`
+- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`（S0-S6 selection / consciousness / subjecthood / agency / responsibility threshold interface; includes anti-panpsychism and depsychologization guardrails）
 - `Philosophy/SRT_Social_Economics_CompactCore.md`
 - `Philosophy/SRT_Political_Philosophy_CompactCore.md`
 - `Philosophy/SRT_Political_Philosophy.md`

@@ -193,6 +193,42 @@ R_{outgroup}(P,g)\downarrow
 - 机制解释不是道德或法律免责；“窄 ZBS”描述的是更新失败机制，不是责任豁免。
 - 该来源是理论性 peer-reviewed article / preprint full text，支持机制接口与政策假说，不等于已完成直接实验判定。
 
+### T-Cog-7: Developmental Coordination Scaffold（发展性协调支架）
+
+[R→De Jonge-Hoekstra & Cox 2026 preprint chapter, *Embodied and Embedded Cognitive Development*（embodied / embedded cognitive development, coordination dynamics, developmental cascades, nonlinear time-series methods, co-regulation, degeneracy, rhythmic scaffolding）]
+[H→SRT 将该材料压成发展性社会认知桥：认知发展不是内部表征单独成熟后再外显，而是 child-body-caregiver-environment-history 的可选行动场持续重组。该桥不改写 `\theta`、`d`、`\Psi_f` 或 `L_2` 的 canonical 定义。]
+
+儿童认知发展可以读作软装配协调结构的稳定与重组：身体能力、照护者响应、环境可供性、语言场、节律支架与既有 `L_2` 痕迹一起改变儿童未来可选择的行动、注意和自我调节空间。
+
+\[
+\Delta\theta_{child}(t)
+\sim
+F(
+\mathrm{AffordanceFit}_t,
+\mathrm{CoReg}_t,
+\mathrm{MotorAccess}_t,
+\mathrm{RhythmScaffold}_t,
+L_2^{trace}(t),
+\mathrm{VarStruct}_t
+)
+\]
+
+**SRT mapping（映射）**：
+
+| 发展系统术语 | SRT 读法 | 边界 |
+|---|---|---|
+| soft-assembled coordinative structure | 临时但功能性的 `\theta` / action / attention 配置 | 不是新 primitive |
+| interaction-dominant dynamics | 耦合历史比单个部件属性更能解释行为输出 | 不否认脑、身体或环境部件约束 |
+| developmental cascade | 一个可供性变化重组相邻选择场 | 不是线性迁移定律 |
+| temporal variability | 吸引子变弱、过渡或重组的信号候选 | 不是所有噪声都有意义 |
+| co-regulation -> self-regulation | 外部社会支架逐步沉积为自我调节 `L_2` | 不等于照护者单因果 |
+| degeneracy | 多条路径可达同一功能性 `L_1` 结果 | 不等于任意路径都等价 |
+| rhythmic support | 低摩擦时间支架，辅助语言/阅读/动作耦合 | 不是普遍疗法 |
+
+**Methodological guardrail（方法护栏）**：
+
+对发展性认知问题，SRT 不应只看横截面年龄均值，也不应把波动全部当测量误差。更合适的观察对象是单个儿童随时间变化的选择场：何时可供性扩大，何时变异性上升，何时旧吸引子松动，何时新协调结构稳定，以及哪些社会/物理支架改变了可支付路径。
+
 <br>
 
 ---

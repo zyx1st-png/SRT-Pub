@@ -11,7 +11,7 @@ dependency: [SRT-LAB-HYPOTHESES]
 
 # SRT 核心变量—观测指标映射（P1-3）
 
-更新时间：2026-03-17
+更新时间：2026-05-11
 目标：将核心理论变量映射到可测 proxy
 
 ---
@@ -270,6 +270,23 @@ A proxy package is acceptable only if it satisfies all three conditions:
 - **F-EXP-NR-1**：如果单一 proxy 被当作 SRT construct 本身，则该测量层退化为 reductionism，应拒绝。
 - **F-EXP-NR-2**：如果 proxy package 不能区分 `Ψ_f`、`d-value` 或 `L_2` 与更简单替代解释，则只能报告为 ambiguous proxy result。
 - **F-EXP-NR-3**：如果 proxy package 在 session、task 或 perturbation context 之间没有基本稳定性，则它与目标 construct 的关系仍然较弱。
+
+### Hemodynamic-metabolic proxy uncertainty gate (bioRxiv 2026, 2026-05-11, Pipeline 1)
+
+Metabolic readouts only become SRT-usable proxies when their direction survives an explicit uncertainty gate. If a BOLD / CMRO₂ sign relation is inferred from group-mean direction while participant-level or voxel-level uncertainty remains large, the correct SRT classification is **indeterminate proxy**, not evidence for physiological sign reversal and not evidence for or against `Ψ_f`, `d-value`, consciousness, or `L_2`.
+
+Minimum rule:
+
+\[
+R_{metab}(v)=1
+\quad\Longrightarrow\quad
+\Delta CMRO_2(v)\neq 0
+\text{ under a declared error model and correction rule.}
+\]
+
+If \(R_{metab}(v)=0\), the voxel / region / contrast must be reported as ambiguous, even when the group-mean BOLD and CMRO₂ signs oppose each other. Negative BOLD receives an additional caution flag because its metabolic underpinnings are heterogeneous.
+
+This gate was added after the 2026 bioRxiv reanalysis of BOLD-CMRO₂ discordance (`doi:10.64898/2026.04.21.719913`). Its SRT role is methodological: protect metabolic proxy claims from being back-projected into ontology.
 
 ---
 

@@ -41,6 +41,7 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 | 0.2 | `02_PH_SS_Hardening_Execution_Plan.md` | Sequential execution plan for turning soft spots into repository edits. |
 | 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; hardened with existence levels, `\Psi_f` resistance proxies, `L_1` anchoring, and subjecthood thresholds. |
 | 1.5 | `SRT_Phenomenal_Structure_Interface.md` | Bridge for qualia space, phenomenal structure, structural turn, automorphism, IIT/GNWT/FEP structure questions; not a consciousness or subjecthood definition source. |
+| 1.6 | `SRT_HardProblem_Epistemology.md` | Hard-problem dissolution route; includes the view-from-nowhere trap guardrail for first/third-person explanatory-gap claims. |
 | 2 | `SRT_Philosophy_Objection_Ledger.md` | Hardest-objection map; use before upgrading any philosophical claim. |
 | 3 | `SRT_Philosophy_Hardening_TODO.md` | Concrete checklist for future hardening passes. |
 | 4 | `_SRT_Phil_Axioms.md` | Philosophy-domain mapping axioms; not P0/P1 primitive axioms. |

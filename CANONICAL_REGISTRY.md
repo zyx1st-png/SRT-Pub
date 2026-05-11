@@ -55,6 +55,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
   - P1 constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
   - P2/P3/P4 bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - 说明：`Core_21_Formal_Axioms.md` 现在是形式公理索引，不再承载混层正文
+- Bridge 用法提醒：`Core_21c` 中的 "emergence" 只能作为机制占位词使用，不能作为解释原语；`L_2` downward constraint 仍回链 P1，但 domain-specific downward causation 必须说明具体实现通道
 - 引用规则：涉及核心公理编号时，先回链索引，再按命题硬度引用对应分层文件
 
 ### 4b. Core Equations
@@ -136,8 +137,8 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 主文件：`Philosophy/SRT_Social_Cognition.md`
 - id：`SRT-SOC-COG`
 - layer：L1 / status：axiomatic_hybrid_v2
-- 说明：承接 affordance、行动势能、belief-lag、注意力选择、社会现实迟滞、极化/echo chamber、文化镜片、second-person interaction disorder、以及歧视性/非人化认知等社会认知接口；其中 `T-Cog-6 Bounded-Surprisal Discrimination Gate` 将 Manrique / Friston / Walker 2026 的 active-inference / ZBS 材料压成跨群体更新带宽代理
-- 引用规则：涉及 social cognition、belief update、dehumanization、recognition-channel break、bystander silence、或 ZBS / active-inference bridge 时，可引用本文件；但 ZBS 只能作为 bridge proxy，不得替代 `d`、`\Psi_f`、`T_dir` 或 recognition operator 的 canonical 定义
+- 说明：承接 affordance、行动势能、belief-lag、注意力选择、社会现实迟滞、极化/echo chamber、文化镜片、second-person interaction disorder、发展性协调支架、以及歧视性/非人化认知等社会认知接口；其中 `T-Cog-6 Bounded-Surprisal Discrimination Gate` 将 Manrique / Friston / Walker 2026 的 active-inference / ZBS 材料压成跨群体更新带宽代理，`T-Cog-7 Developmental Coordination Scaffold` 将 embodied / embedded cognitive development 材料压成 child-body-caregiver-environment coordination bridge
+- 引用规则：涉及 social cognition、belief update、developmental coordination、co-regulation、dehumanization、recognition-channel break、bystander silence、或 ZBS / active-inference bridge 时，可引用本文件；但 ZBS 与 developmental coordination 都只能作为 bridge proxy，不得替代 `d`、`\Psi_f`、`T_dir`、`\theta` 或 recognition operator 的 canonical 定义
 
 ### 10. AI 主轴
 - 定位说明：`AI/AI_POSITIONING_NOTE.md`
@@ -213,12 +214,12 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 主文件：`Core_Law/SRT_Collective_Selection.md`
 - id：`SRT-COLLECTIVE-SELECTION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 集体 ε 反闭合必要性（P1-T07 集体版）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`（自指率 σ_{sr} 在多主体场上的 governance-canonical 扩展，2026-04-25 起；详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）；**§4.4-§4.6（H3，2026-04-25）**给出集体四变量最小耦合动力学——`σ_{sr}^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}`）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项）、§4.5 个体↔集体双向耦合、§4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` 与集体健康区 `\mathcal{H}^{coll}`（健康要求 `r^{coll}(t) > r^{coll}_{min} > 0`）；**§4.7 T-PROJ-1^{coll}（H6，2026-04-25）**给出集体四变量系统作为 `Core/SRT_Core_22_Equations.md §0-C` 多算子主方程（Eq-Multi-01/02/03）严格导出投影的形式化定理：四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含新增 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 + 不证明事项的显式标定；T-PROJ-1^{coll} 在 `\mathcal{P} = \{P\}` 极限下退化为 `SRT_L1_Formalism §6 T-PROJ-1`。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
+- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 集体 ε 反闭合必要性（P1-T07 集体版）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`（自指率 σ_{sr} 在多主体场上的 governance-canonical 扩展，2026-04-25 起；详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）；**§4.4-§4.6（H3，2026-04-25）**给出集体四变量最小耦合动力学——`σ_{sr}^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}`）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项）、§4.5 个体↔集体双向耦合、§4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` 与集体健康区 `\mathcal{H}^{coll}`（健康要求 `r^{coll}(t) > r^{coll}_{min} > 0`）；**§4.7 T-PROJ-1^{coll}（H6，2026-04-25）**给出集体四变量系统作为 `Core/SRT_Core_22_Equations.md §0-C` 多算子主方程（Eq-Multi-01/02/03）严格导出投影的形式化定理：四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含新增 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 + 不证明事项的显式标定；T-PROJ-1^{coll} 在 `\mathcal{P} = \{P\}` 极限下退化为 `SRT_L1_Formalism §6 T-PROJ-1`。2026-05-11 新增 §4.8a `NTIC situated individuation diagnostic` 作为 P3 empirical bridge：`I(X_i(t+1); C_i(t)) > 0` 且 `NTIC_i ≈ 0` 可作为嵌入式个体化候选代理，但不进入最小 canonical surface。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
 - Tower/nested hardening pointer：H10-H16 has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`. The extracted file is a secondary hardening notes file, not a new core canonical reference file and not part of the minimal canonical definition of collective selection.
 - 与 T-SUFF-5 的关系：本文件给出 T-SUFF-5 集体外部化的结构基础（`M(t)` 强不对称 → 主从型退化 → 结构型苦难外溢）
 - 与政治/经济/共同体 domain 的关系：本文件是它们的 L1 结构基石；制度是集体 ISP 的**器官**不是主体；投票/共识/专家不自动是共选
 - 与 AI/平台场景的关系：评估重点不是"AI 是否有意识"，而是算法中介对 `M(t)` 与 `σ_{sr}^{coll}` 的结构性影响
-- claim-mode 分布：T-COLL-1/3/4 为 P1-candidate；T-PROJ-1^{coll}（§4.7）为 P1-candidate（集体投影定理）；Def-C-2 `M(t)` 结构、三类退化与 §4 耦合为 P2；H10-H16 are late-stage hardening notes only in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`, P1-candidate only under strong closure assumptions with P2/P3 operational debt where noted；政治/制度/历史判断为 P3/P4，下推至 Philosophy/
+- claim-mode 分布：T-COLL-1/3/4 为 P1-candidate；T-PROJ-1^{coll}（§4.7）为 P1-candidate（集体投影定理）；Def-C-2 `M(t)` 结构、三类退化与 §4 耦合为 P2；§4.8a NTIC situated individuation diagnostic 为 P3 empirical bridge / operational proxy guardrail；H10-H16 are late-stage hardening notes only in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`, P1-candidate only under strong closure assumptions with P2/P3 operational debt where noted；政治/制度/历史判断为 P3/P4，下推至 Philosophy/
 - 引用规则：涉及集体选择、共选、共识真实性、外部化、集体 ISP、共同体结构的**结构层**定义时，优先回链本文件；规范与制度判断回各自 domain 文件
 
 ### 13f. SRT L1 Hardening Notes（2026-04-24 L1 round 硬化案）
@@ -297,6 +298,6 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | `Philosophy/SRT_Ethics_PH_SS_Guardrails.md` | ethics / normativity / d-value / responsibility guardrails | active bridge guardrail |
 | `Philosophy/SRT_Social_Political_PH_SS_Guardrails.md` | collective L2 / institution / market / legitimacy guardrails | active bridge guardrail |
 | `Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md` | SRT vs Kant / phenomenology / Whitehead / FEP / IIT etc. | active_v1 |
-| `Philosophy/SRT_Subjecthood_Threshold_Interface.md` | S0-S6 selection / consciousness / subjecthood / agency / responsibility interface | active_v1 |
+| `Philosophy/SRT_Subjecthood_Threshold_Interface.md` | S0-S6 selection / consciousness / subjecthood / agency / responsibility interface; includes anti-panpsychism and depsychologization guardrails | active_v1 |
 | `Philosophy/SRT_Philosophy_Public_OnePager.md` | public-facing one-page explanation | active_v1 |
 | `Philosophy/PH_SS_Hardening_Audit_2026-04-27.md` | audit record for the 2026-04-27 PH-SS hardening pass | active audit |

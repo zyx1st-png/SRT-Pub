@@ -220,6 +220,29 @@ R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 
 * **Implication（中文）**：神经归一化是信息最大化与代谢成本最小化的唯一交点。
 
+### BOLD-CMRO₂ uncertainty gate (bioRxiv 2026, 2026-05-11, Pipeline 1)
+这条材料真正补上的，不是“BOLD 失效”或“代谢信号总是与 BOLD 同向”，而是给神经代谢 proxy 加上一个必要统计门：**CMRO₂ 方向如果没有稳健不确定性支持，就不能被拿来判定 BOLD 与代谢 concordant / discordant。**
+
+- 用户提交的是 bioRxiv 预印本 `Opposing BOLD signals and oxygen metabolism largely arise from statistical uncertainty in metabolic estimates`（Goltermann, Huth, Büchel, 2026；doi:`10.64898/2026.04.21.719913`）。该文重分析 Epp et al. 2025 的开放数据，指出原先约 35% 到 40% 的 BOLD-CMRO₂ sign-discordance 读法，在很大程度上没有先处理 model-based CMRO₂ 估计的方差与方向不确定性。
+
+- 对 SRT 来说，最稳的吸收方式是把它写成 **hemodynamic-metabolic proxy uncertainty gate**：
+\[
+R_{metab}(v)=1
+\Longleftrightarrow
+\Delta CMRO_2(v)\ \text{方向在声明的误差模型下可判定}
+\]
+当 \(R_{metab}(v)=0\) 时，该 voxel / region / contrast 应标记为 indeterminate，而不是被写成代谢与 BOLD 相反。这个限制直接保护上面的 \(\lambda \propto \Psi_f^{metabolic}\) 桥接：代谢 proxy 可以帮助约束 `\Psi_f` 的生理投影，但不能把 noisy sign label 反向当成 `\Psi_f` 或选择预算本身。
+
+- 该文报告，在 BOLD activation mask 中，77.2% voxels 没有显著 group-level \(\Delta CMRO_2\) 方向，因而不能稳健归类；positive BOLD 在可归类处主要与代谢同向，而 negative BOLD 的 sign opposition 与不确定性都更高。SRT 的写法应保留这一区分：positive BOLD 可以作为更受限的 proxy 窗口，negative BOLD 则必须单独处理，不应被压成一个单调的“更少活动 / 更多代谢 / 更高摩擦”规则。
+
+- **SRT Implication（中文）**：凡使用 fMRI BOLD、CMRO₂、CBF、CBV 或其 sign relation 来支持 `\Psi_f^{metabolic}`、选择预算或局部摩擦读数时，必须显式报告 proxy 的误差模型、方向可靠性与 indeterminate class。否则结果只能进入 ambiguous proxy result，不得升级为神经机制命题。
+
+- **Boundary（中文）**：
+  - 这篇材料是 bioRxiv 预印本与开放数据再分析，证据等级是 preprint method guardrail，不是同行评审定论。
+  - 它不证明 BOLD 永远可靠，也不证明 BOLD-CMRO₂ 生理 dissociation 不存在；它只要求先把统计不确定性从机制解释中拆出来。
+  - CMRO₂ 仍是 model-based quantitative fMRI estimate，不是 oxygen-tracer PET 金标准；若后续 PET 或更高 SNR 代谢测量在 uncertainty gate 后仍显示广泛 sign reversal，应把本窗口改写为真实 neurovascular-metabolic dissociation window。
+  - 任何单一 hemodynamic proxy 都不得直接定义 `d`、`\Psi_f`、`T_dir`、意识水平或 `L_2`。
+
 ---
 
 ### Ax-NEURO-MECH-4: Predictive Update Axiom

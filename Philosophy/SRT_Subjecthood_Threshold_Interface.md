@@ -150,6 +150,18 @@ SRT allows selection to be widespread while keeping subjecthood thresholded.
 
 If the bearer unit is unspecified, even S0 attribution remains unit-ambiguous.
 
+### Depsychologization trap
+
+A consciousness claim should not be formed by subtracting all psychological function, consequence return, access, memory, action coupling, and ethical stake until only "pure feel" remains. Once consciousness is detached from those roles, it becomes unusable for SRT subjecthood: it cannot be cleanly measured, cannot ground responsibility or moral status, and tends to slide toward panpsychist universalism.
+
+SRT therefore treats first-person feel as a candidate content or field dimension only when it is routed through bearer-unit specification, `d` / stake, `Psi_f` payability, boundary maintenance, `L_2` memory, and cross-time continuity.
+
+This is the anti-panpsychism guardrail at the consciousness level:
+
+```text
+depsychologized pure feel != SRT subjecthood
+```
+
 ---
 
 ## 3. S1 — Local `L_1` anchoring
