@@ -288,6 +288,27 @@ If \(R_{metab}(v)=0\), the voxel / region / contrast must be reported as ambiguo
 
 This gate was added after the 2026 bioRxiv reanalysis of BOLD-CMRO₂ discordance (`doi:10.64898/2026.04.21.719913`). Its SRT role is methodological: protect metabolic proxy claims from being back-projected into ontology.
 
+### High-gamma local-spike dissociation gate (Nature 2026, 2026-05-12, Pipeline 1)
+
+High-gamma activity (HGA) can be used as an SRT neural proxy only after declaring what it is supposed to index: local output spiking, local synaptic input, or distributed population synchrony. If HGA and spike rate recorded from the same intracortical electrode can be actively dissociated, then HGA alone cannot be admitted as a direct local-spiking proxy in that domain.
+
+Minimum rule:
+
+\[
+R_{HGA}(e,t)=1
+\quad\Longleftrightarrow\quad
+\text{the proxy target is declared and supported by spike/LFP/population evidence.}
+\]
+
+If \(R_{HGA}(e,t)=0\), HGA power may still be reported as a mesoscale neural signal, but it must not be promoted into local neuronal output, local selection intensity, `\Psi_f`, `d-value`, consciousness, or `L_2`. The safer default reading is:
+
+```text
+HGA -> mesoscale input / synchrony / postsynaptic-integration proxy
+not HGA -> nearby spikes by default
+```
+
+This gate was added after the 2026 Nature article `Active dissociation of intracortical spiking and high gamma activity` (`doi:10.1038/s41586-026-10331-y`). Its SRT role is to protect gamma-band and broadband neural readouts from being reduced to a single local-output ruler.
+
 ---
 
 ## 5) 使用原则

@@ -104,6 +104,8 @@ $$W_k(\hat{G}_B) = \Delta \Pi_B \text{ such that } \hat{G}_B[L_0] \approx \hat{G
 
 * **Cross-ref**: Ax-Op-05（主体间对齐）；Ax-Lang-1（语言三分量效应）→ `Philosophy/SRT_SocTheory_05_Language_Eco.md §Ax-Lang-1`。
 
+* **AI bridge**: For an AI-facing analogue of shared context and selection coherence, see `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md`.
+
 ---
 
 ### Ax-Lang-5: Recursive Anchoring (递归锚定 / Merge as Operator Recursion)

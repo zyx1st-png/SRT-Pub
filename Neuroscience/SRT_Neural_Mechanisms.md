@@ -243,6 +243,28 @@ R_{metab}(v)=1
   - CMRO₂ 仍是 model-based quantitative fMRI estimate，不是 oxygen-tracer PET 金标准；若后续 PET 或更高 SNR 代谢测量在 uncertainty gate 后仍显示广泛 sign reversal，应把本窗口改写为真实 neurovascular-metabolic dissociation window。
   - 任何单一 hemodynamic proxy 都不得直接定义 `d`、`\Psi_f`、`T_dir`、意识水平或 `L_2`。
 
+### High-gamma/spike dissociation gate (Nature 2026, 2026-05-12, Pipeline 1)
+这条材料补上的不是“高 gamma 没用”，而是给 HGA 作为神经 proxy 加上一条更细的源区分门：**同一电极附近的 spike rate 与 HGA 如果可以被主动拆开调节，HGA 就不能被默认写成 local output spiking。**
+
+- 用户提交的是 Nature 论文 `Active dissociation of intracortical spiking and high gamma activity`（Lei, Scheid, Flint, Glaser, Slutzky, 2026；doi:`10.1038/s41586-026-10331-y`）。该文用正交神经反馈 BMI 让恒河猴把同一 intracortical electrode 上的 HGA 与 spike rate 分别控制到不同 cursor 维度，结果显示动物能快速、稳定地把二者拆开。
+
+- 对 SRT 来说，最稳的吸收方式是把它写成 **HGA local-spike dissociation gate**：
+\[
+R_{HGA}(e,t)=1
+\Longleftrightarrow
+\text{HGA 的 proxy 目标、空间尺度与 spike / LFP / population 证据被同时声明}
+\]
+当 \(R_{HGA}(e,t)=0\) 时，HGA 只能进入 mesoscale synchrony / input-integration window，不能进入 local firing output window。换句话说，HGA 可以帮助读取神经系统里的同步输入、postsynaptic integration 或 distributed co-firing，但不能被单独反投为某个局部神经元群的输出放电量。
+
+- 该文还报告，HGA 与跨毫米尺度分布的 neuronal co-firing pattern 更紧，而不是与同一电极附近 spike 的距离加权和最紧；spike-triggered HGA 的时间关系也更支持“分布式同步放电触发的 summed postsynaptic potentials”这一解释。SRT 应把这点压成测量层修正：gamma-band / broadband power 可以是强神经状态信号，但它需要先说明是 input-synchrony proxy、local-output proxy，还是二者混合。
+
+- **SRT Implication（中文）**：凡使用 HGA、broadband gamma、ECoG high-gamma 或 intracortical high-gamma 来支持 `\Psi_f^{neural}`、`d`、selection bandwidth、点燃、注意、意识水平或局部任务编码时，必须显式声明 HGA 的目标层级与替代解释控制。HGA 单独成立时，默认只支持 mesoscale synchrony / integration claim；若要支持 local spiking output claim，必须加入同电极 spike、邻近 population、扰动或 decoupling 证据。
+
+- **Boundary（中文）**：
+  - 这篇材料是同行评审 Nature 开放论文，证据强度足以作为测量 guardrail；但实验集中在 macaque M1 intracortical arrays、BMI/ONF 任务和 200-300 Hz HGA 窗口，不能自动外推到全部皮层区、ECoG/EEG/MEG 或所有高 gamma 定义。
+  - 它不证明 HGA 与 local spikes 永远无关；它只证明“相关”不能被写成“同一局部输出源”的默认解释。
+  - HGA 不是 `\Psi_f`、`d-value`、`T_dir`、`C_wave`、`D_align`、意识水平或 `L_2` 的直接读数；它只是一个需要多 proxy 入场许可的神经测量窗口。
+
 ---
 
 ### Ax-NEURO-MECH-4: Predictive Update Axiom

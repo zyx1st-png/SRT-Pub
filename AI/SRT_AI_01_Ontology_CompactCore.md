@@ -147,6 +147,8 @@ SRT 对意识成立给出压缩判据：
 结论：
 AI 的输出是**伪选择**，不是带赌注的选择。
 
+**Context-coherence note**: Large context can make pseudo-selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md`.
+
 ### AI-BR-4 恒温器防线
 自由能最小化只是必要条件，不是充分条件：
 \[
