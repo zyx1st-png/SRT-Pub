@@ -5,7 +5,7 @@ status: active_draft
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-05-11
+updated: 2026-05-12
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -61,7 +61,7 @@ updated: 2026-05-11
 - **当前风格规则**：`90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
 - **第三类改写指南**：`01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md`
 - **当前版本规则**：稳定章节文件仍是最终入口；为兼容 ChatGPT / 网页 GitHub 工具，允许在 `Part_*` 正文目录临时生成 `*_vN*.md` 独立新版本文件。后续由本地 git 环境比较、合并、清理，并把最终版本回写到稳定文件名。具体规则见 `BOOK_VERSION_LOG.md`。
-- **当前主任务**：第 7–11 章已收束到稳定文件名；独立版本草稿已归档到 `Versioned_Drafts/Part_02_选择的本性/`。下一步推进第 12–13 章 alignment pass。
+- **当前主任务**：卷二第 7–13 章已收束到稳定文件名；独立版本草稿已归档到 `Versioned_Drafts/Part_02_选择的本性/`。下一步做卷二整体一致性 pass，并准备卷三第 14–16 章后续第三类 pass。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
 - **卷二调整指导**：`01_Source_Intuition/BOOK/00_全书章节写作概要_卷二调整指导.md`
 
@@ -83,13 +83,13 @@ updated: 2026-05-11
 | 8 | 选择算子：从可成为性到显现 | current consolidated draft：`Part_02_选择的本性/08_选择算子_从可成为性到显现.md`，来自 `draft_v5q_final_compression_pass` | 后续随第 9–13 章做机制连续性校准 |
 | 9 | 排除：选择的阴影 | current consolidated draft：`Part_02_选择的本性/09_排除_选择的阴影.md`，来自 `draft_v5v_cross_scale_tempered_pass` | 后续随第 10 章不可逆性做阴影 / 代价连续性校准 |
 | 10 | 不可逆性：撤回不是逆操作 | current consolidated draft：`Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md`，来自 `draft_v14_review_polish_pass` | 后续随第 11–13 章做摩擦 / 可支付性连续性校准 |
-| 11 | 本体论摩擦：为什么现实不会免费成形 | current consolidated draft：`Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形.md`，来自 `draft_v12_philosophical_synthesis_pass` | 后续随第 12–13 章做可支付性 / 三判据连续性校准 |
-| 12 | 可支付性：为什么路径越走越像路 | 待优化；现稿 `Part_02_选择的本性/12_可支付性_为什么路径越走越像路.md` 为 draft_v4；归档区已有 `draft_v5_alignment_hardening_pass` 候选稿 | 下一步确认并收束第 12 章 |
-| 13 | 三判据：可延续、可协调、可再选择 | 待优化；现稿 `Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md` 为 draft_v4 | 待第 7–12 章优化后做卷二收束 alignment pass |
-| 14 | 在乎是什么 | current consolidated draft：`Part_03_从选择到主体与价值/14_在乎是什么.md`，来自 `draft_v4` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
-| 15 | 价值不是偏好 | current consolidated draft：`Part_03_从选择到主体与价值/15_价值不是偏好.md`，来自 `draft_v4` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
-| 16 | d-value：在乎的最小形式化尝试 | current consolidated draft：`Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试.md`，来自 `draft_v5` | 暂缓；待卷二 7–13 重构后再做第三类 pass |
-| 17–22 | 卷三：主体与价值后半 | 未写 | 待卷二重构和 14–16 第三类 pass 后继续推进 |
+| 11 | 本体论摩擦：为什么现实不会免费成形 | current consolidated draft：`Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形.md`，来自 `draft_v12_philosophical_synthesis_pass` | 后续随卷二整体一致性 pass 做可支付性 / 三判据连续性校准 |
+| 12 | 可支付性：为什么路径越走越像路 | current consolidated draft：`Part_02_选择的本性/12_可支付性_为什么路径越走越像路.md`，来自 `draft_v16_final_prose_pass` | 后续随卷二整体一致性 pass 小幅校准 |
+| 13 | 三判据：可延续、可协调、可再选择 | current consolidated draft：`Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md`，来自 `draft_v8_final_prose_tension_pass` | 作为卷二收束章，后续随卷二整体一致性 pass 和卷三入口校准 |
+| 14 | 在乎是什么 | current consolidated draft：`Part_03_从选择到主体与价值/14_在乎是什么.md`，来自 `draft_v4` | 暂缓；待卷二整体一致性 pass 后再做第三类 pass |
+| 15 | 价值不是偏好 | current consolidated draft：`Part_03_从选择到主体与价值/15_价值不是偏好.md`，来自 `draft_v4` | 暂缓；待卷二整体一致性 pass 后再做第三类 pass |
+| 16 | d-value：在乎的最小形式化尝试 | current consolidated draft：`Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试.md`，来自 `draft_v5` | 暂缓；待卷二整体一致性 pass 后再做第三类 pass |
+| 17–22 | 卷三：主体与价值后半 | 未写 | 待卷二整体一致性 pass 和 14–16 第三类 pass 后继续推进 |
 | 23–30 | 卷四：秩序的双面性 | 未写 | 后续推进 |
 | 31–35 | 卷五：共同秩序 | 未写 | 后续推进 |
 | 36–45 | 卷六：意识、AI、修行 | 未写 | 后续推进 |
@@ -108,8 +108,8 @@ updated: 2026-05-11
 → 第 7 章人工/卷二一致性确认
 → 第 8 章 v5 third-tier polished
 → 第 9–10 章 precision pass
-→ 第 11–13 章 alignment pass
-→ 卷二命题组 / 短桥
+→ 第 11–13 章当前基准收束
+→ 卷二整体一致性 pass / 卷二命题组 / 短桥
 → 卷三 14–16 第三类 pass
 ```
 
@@ -171,7 +171,7 @@ L2 作为摩擦分配
 | 版本管理日志 | `BOOK_VERSION_LOG.md` | 记录稳定文件名策略、版本收束和重要正文版本变更 |
 | 卷二最新指导 | `00_全书章节写作概要_卷二调整指导.md` | 第 7–13 章优化的主要依据 |
 | 第三类写作指南 | `THIRD_TIER_REWRITE_GUIDE.md` | 全书章节优化护栏 |
-| 正文 | `Part_*/xx_*.md` | 最终面向读者；卷二当前全部待优化 |
+| 正文 | `Part_*/xx_*.md` | 最终面向读者；卷二第 7–13 章当前为 consolidated draft |
 | 卷级大纲 | `Outline_Parts/*.md` | 每章 brief 的状态入口，需与本文件同步 |
 | 状态总表 | `Outline_Parts/08_收尾与维护规则.md` | 每完成/新增章节后同步更新 |
 | 旧卷二机制补充 | `00_全书章节写作概要_卷二机制补充.md` | 参考材料，不再是卷二最新施工入口 |
@@ -183,13 +183,13 @@ L2 作为摩擦分配
 
 ## 6. 当前护栏
 
-1. **卷二施工状态**：第 7–11 章已合并为稳定文件名下的当前基准稿；第 12–13 章继续保持“待优化 / alignment pass”。
+1. **卷二施工状态**：第 7–13 章已合并为稳定文件名下的当前基准稿；下一步是卷二整体一致性 pass。
 2. **卷一不再大修**：卷一 1–6 / 6b 只在后续全书一致性需要时微调。
 3. **卷二主轴明确**：选择如何在已经沉积的摩擦分配中发生。
-4. **第 7–11 章已收束**：它们构成卷二入口、选择算子、排除阴影、不可逆性和本体论摩擦的当前基准链。
-5. **第 12 章优先**：可支付性是卷二下一处机制承重节点。
-6. **第 12–13 章不废弃**：它们是强底稿，但需等待第 7–11 章当前基准链稳定后统一对齐。
-7. **不提前进入卷三**：第 14–16 章第三类 pass 暂缓到卷二重构之后。
+4. **第 7–13 章已收束**：它们构成卷二入口、选择算子、排除阴影、不可逆性、本体论摩擦、可支付性和三判据的当前基准链。
+5. **卷二整体一致性优先**：先检查第 7–13 章机制连续性、术语节奏和卷三入口，再推进卷三。
+6. **第 14–16 章暂缓大修**：待卷二整体一致性 pass 后再进入第三类 pass。
+7. **不提前跳过卷二收束**：卷三推进前先确认第 13 章到第 14 章的过渡。
 8. **桥接材料只作压力点**：科学、AI、复杂系统材料不承担证明 SRT 的责任。
 9. **后台材料不自动入正文**：只在当前章节确实需要时局部提取。
 
@@ -201,6 +201,6 @@ L2 作为摩擦分配
 - 后续正文修订可以直接写回稳定章节文件名；也可以为了兼容网页工具临时生成 `*_vN*.md` 独立版本文件。
 - 需要并行试写、网页工具中转或 blob SHA 不可靠时，允许在正文目录生成新版本文件；后续由本地清理合并，避免长期堆积。
 - 每次重要正文更新，确认 frontmatter 中标注 based_on 与 optimization_axis，并在 `BOOK_VERSION_LOG.md` 追加一条版本说明。
-- 卷二章节未完成新版调整前，状态保持“待优化”；第 7–11 章当前已进入 consolidated draft 状态。
-- 如果第 12 章重构改变第 13 章任务，先更新卷二调整指导，再推进后续章节。
+- 卷二第 7–13 章当前已进入 consolidated draft 状态；后续修改以整体一致性 pass 或局部校准为主。
+- 如果卷二整体一致性 pass 改变卷三入口，先更新卷二调整指导和卷三大纲入口，再推进第 14 章。
 - 本文件是施工入口，不是理论正文；不要把长篇理论说明塞进这里。

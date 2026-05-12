@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-05-11
+updated: 2026-05-12
 ---
 
 # 《从存在到秩序》书稿版本管理日志
@@ -96,3 +96,18 @@ updated: 2026-05-11
 
 - 第 11 章当前基准为 `draft_v12_philosophical_synthesis_pass`。
 - 远端同时带入了第 12 章 `v5_alignment_hardening_pass` 归档稿；本次不提前回写第 12 章稳定文件，留待第 12 章完成确认后收束。
+
+## 2026-05-12 第十二、十三章版本收束
+
+本次将第 12、13 章最新版回写到稳定章节文件名。独立版本草稿保留在 `Versioned_Drafts/Part_02_选择的本性/`，正文目录继续只保留稳定入口。
+
+| 章 | 稳定文件 | 本次采用来源 | 归档的独立版本 |
+|---:|---|---|---|
+| 12 | `Part_02_选择的本性/12_可支付性_为什么路径越走越像路.md` | `Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v16_final_prose_pass.md` | v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15, v16 |
+| 13 | `Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md` | `Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_v8_final_prose_tension_pass.md` | v5, v6, v7, v8 |
+
+同步说明：
+
+- 第 12 章当前基准为 `draft_v16_final_prose_pass`。
+- 第 13 章当前基准为 `draft_v8_final_prose_tension_pass`。
+- 至此卷二第 7–13 章均已收束到稳定文件名；下一步进入卷二整体一致性 pass。
