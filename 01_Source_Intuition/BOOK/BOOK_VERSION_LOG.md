@@ -20,6 +20,7 @@ updated: 2026-05-12
 4. 稳定正文与独立版本文件允许短期并存。后续由本地 git 环境比较、合并、清理，把最终版本回写到稳定章节文件。
 5. 版本历史最终由 Git commit / branch 承接；重要版本变化在本文件追加记录。
 6. `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/` 保留为可选通道，用于 section patch、合并说明或不适合放入正文目录的工具中转材料。
+7. 稳定主稿 frontmatter 保留精确来源 `status`，并增加 `maintext_status: stable_candidate`，用于区分当前主阅读入口与过程稿。
 
 ## Web / GitHub 工具写入规则
 
@@ -111,3 +112,37 @@ updated: 2026-05-12
 - 第 12 章当前基准为 `draft_v16_final_prose_pass`。
 - 第 13 章当前基准为 `draft_v8_final_prose_tension_pass`。
 - 至此卷二第 7–13 章均已收束到稳定文件名；下一步进入卷二整体一致性 pass。
+
+## 2026-05-12 BOOK 主稿路径同步与卷二冻结
+
+本次对 `Part_01_从存在到成为/`、`Part_02_选择的本性/`、`Part_03_从选择到主体与价值/` 做主稿路径审计。审计结果：三个 `Part_*` 主目录当前只保留稳定章节文件名，没有 `*_vN*.md` 版本副本残留；无需移动文件。已有过程稿继续保留在 `Versioned_Drafts/`，其中卷二过程稿集中在 `Versioned_Drafts/Part_02_选择的本性/`。
+
+同步动作：
+
+- 所有当前主稿 frontmatter 增加 `maintext_status: stable_candidate`。
+- 保留每章原 `status`，不把来源版本号抹成统一标签。
+- 第 8、9、11 章稳定主稿已按最新冻结候选同步；第 7、10、12、13 章未改正文内容，仅补主稿标记。
+
+卷二冻结矩阵：
+
+| 章 | 稳定文件 | 当前主稿 status |
+|---:|---|---|
+| 7 | `Part_02_选择的本性/07_地形如何反过来选择人.md` | `draft_v18_final_literary_philosophical_polish` |
+| 8 | `Part_02_选择的本性/08_选择算子_从可成为性到显现.md` | `draft_v5r_terrain_embodiment_focus_pass` |
+| 9 | `Part_02_选择的本性/09_排除_选择的阴影.md` | `draft_v5w_shadow_return_alignment_pass` |
+| 10 | `Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md` | `draft_v14_review_polish_pass` |
+| 11 | `Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形.md` | `draft_v13_bridge_boundary_shadow_alignment_pass` |
+| 12 | `Part_02_选择的本性/12_可支付性_为什么路径越走越像路.md` | `draft_v16_final_prose_pass` |
+| 13 | `Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md` | `draft_v8_final_prose_tension_pass` |
+
+机制链确认：
+
+```text
+07 地形进入选择之前
+08 选择算子在地形中压出显现
+09 显现制造阴影，阴影回流改变地形
+10 前景与阴影共同造成不可逆
+11 不可逆使现实不能免费成形
+12 摩擦必须支付，支付沉积为路径
+13 路径健康需要三判据，主体与价值被推出
+```

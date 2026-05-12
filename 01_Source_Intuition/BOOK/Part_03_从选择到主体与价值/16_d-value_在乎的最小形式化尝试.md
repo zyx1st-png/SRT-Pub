@@ -4,6 +4,7 @@ type: book_chapter
 part: 03_subject_value
 chapter: 16
 status: draft_v5
+maintext_status: stable_candidate
 source_of:
   - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v4.md
 related:
