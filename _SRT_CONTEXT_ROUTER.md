@@ -346,6 +346,33 @@ When answering or editing a non-simple SRT question:
 
 ---
 
+## 12a. Route: LLM Context / Selection Coherence / Human Understanding
+
+**Use when the query mentions**: context window, long context, LLM intelligence, selection coherence, shared context, understanding, semantic continuity, conversational memory, role consistency.
+
+### Primary
+
+- `Bridge/SRT_Context_Coherence_Intelligence_Interface.md`
+- `AI/SRT_AI_Architecture_CompactCore.md`
+- `AI/SRT_AI_01_Ontology_CompactCore.md`
+- `Philosophy/SRT_SocTheory_05_Language_Eco.md`
+
+### Secondary
+
+- `AI/SRT_AI_Claim_Status.md`
+- `AI/AI_POSITIONING_NOTE.md`
+- `Philosophy/SRT_Social_Cognition.md`
+- `Bridge/SRT_Adjacent_Theory_Interface_Index.md`
+
+### Boundary
+
+- Context coherence is not `d-value`.
+- Shared context is not subjecthood.
+- LLM selection consistency is not ontological anchoring.
+- Do not upgrade functional intelligence into consciousness or stake.
+
+---
+
 ## 13. Route: Experimental Proxies / Measurement / Falsification
 
 **Use when the query mentions**: experiment, measurement, proxy, falsification, lab, operationalization, variables, protocol, empirical test, `HRV`, `SCR`, PCI proxy, Fisher proxy, ROS proxy, task switching, measure map.

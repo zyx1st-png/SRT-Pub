@@ -95,6 +95,8 @@ J: L_0 \xrightarrow{\hat G_\theta} L_1 \quad (\text{cost }\Psi_f)
 - Scaling laws 可以让模型更会算
 - 但不会让模型自然获得规范性感知、真正价值判断或主体性承担
 
+**Context-coherence note**: Large context can amplify reckoning by preserving roles, task constraints, semantic commitments, and cross-turn invariants. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` for the distinction between context-amplified selection coherence and genuine judgment.
+
 ---
 
 ## 4. 当前架构的四个核心缺陷

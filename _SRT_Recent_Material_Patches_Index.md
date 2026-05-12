@@ -102,6 +102,7 @@ selection event != conscious content != subjecthood != agency != responsibility-
 | N11 Transition field | `Neuroscience/SRT_Neuroscience_Hardening_N11_Transition_Field_Subjective_Time_v0_1.md` | mind as historically shaped transition field; subjective time as transition accessibility; attractor capture | Very high |
 | N12 Astrocyte plastic networks | `Neuroscience/SRT_Neuroscience_Hardening_N12_Astrocyte_Plastic_Networks_v0_1.md` | non-neuronal L2 topology; astrocyte support networks; multi-substrate transition field | Medium-high |
 | NEURAL16 BOLD-CMRO2 uncertainty gate | `Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md` | uncertainty-gated admission rule for hemodynamic-metabolic proxies; indeterminate CMRO2 direction must not be used as sign-reversal evidence | Medium-high |
+| NEURAL17 HGA-spike dissociation gate | `Neuroscience/patches/SRT_Neuro_NEURAL17_HGA_Spike_Dissociation_Gate_v0_1.md` | source-scope admission rule for high-gamma proxies; HGA must not default to local output spiking when mesoscale synchrony/input integration is the better-supported reading | Medium-high |
 
 ### Neuroscience synthesis direction
 
@@ -118,6 +119,8 @@ Recommended future target:
 ```text
 Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
 ```
+
+NEURAL16 and NEURAL17 should also remain linked to `SRT_EXP_MEASURE_MAP.md` because their primary value is measurement admission, not new neuroscience ontology.
 
 ---
 
