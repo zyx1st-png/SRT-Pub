@@ -4,6 +4,8 @@ type: backstage_style_guide_addendum
 status: active_draft
 canonical: false
 scope: book_project
+updated: 2026-05-14
+phase_status: part02_mechanism_depth_stage_completed
 related:
   - 90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md
   - 01_Source_Intuition/BOOK/00_全书章节写作概要.md
@@ -13,6 +15,8 @@ related:
 # Style Guide Addendum · 卷二机制厚度与隐性支撑
 
 > 目的：记录第七章 draft_v2 → draft_v3 评审后形成的写作原则。卷二开始，文本不能只保持卷一的形而上散文节奏，还要逐步增加“选择如何运作”的机制厚度。
+>
+> 2026-05-14 更新：卷二机制深度已经阶段完成。后续本文件作为 post-weld maintenance 参考，不再要求继续加机制层。
 
 ---
 
@@ -140,3 +144,17 @@ L2 作为下一次选择的天气
 后续第八章应接住最后一环：
 
 > 地形之所以能选择人，不是因为它有意志，而是因为它已经进入了那个把可能性压成现实的动作。这个动作需要一个名字：选择算子。
+
+---
+
+## 8. Post-weld maintenance
+
+卷二第 7–13 章已经完成 `post_part02_consistency_weld`，机制深度阶段完成。
+
+后续维护规则：
+
+1. 不再继续加机制层。
+2. 后续只维护桥句、术语一致和卷三入口。
+3. 避免第 8 / 9 / 11 章继续膨胀。
+4. 保持卷二作为“机制卷”，不滑向伦理卷、社会诊断卷或 AI 评论卷。
+5. 科学、信息论、神经、生物、AI、系统论材料继续只作压力点，不作证明。

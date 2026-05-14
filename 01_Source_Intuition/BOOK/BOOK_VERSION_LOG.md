@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-05-12
+updated: 2026-05-14
 ---
 
 # 《从存在到秩序》书稿版本管理日志
@@ -15,23 +15,24 @@ updated: 2026-05-12
 ## 版本规则
 
 1. 稳定章节文件仍是最终入口，例如 `02_L0不是虚无.md`。
-2. 为兼容 ChatGPT / 网页 GitHub 工具，可以在 `01_Source_Intuition/BOOK/Part_*` 正文目录临时生成独立新版本文件，例如 `08_选择算子_从可成为性到显现_v5_polished.md`。
-3. 独立版本文件应在 frontmatter 标注 `status`、`based_on`、`optimization_axis`；若知道基准 commit / blob SHA，也应写入。
-4. 稳定正文与独立版本文件允许短期并存。后续由本地 git 环境比较、合并、清理，把最终版本回写到稳定章节文件。
-5. 版本历史最终由 Git commit / branch 承接；重要版本变化在本文件追加记录。
-6. `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/` 保留为可选通道，用于 section patch、合并说明或不适合放入正文目录的工具中转材料。
-7. 稳定主稿 frontmatter 保留精确来源 `status`，并增加 `maintext_status: stable_candidate`，用于区分当前主阅读入口与过程稿。
+2. `Part_*` 正文目录应只保留当前可读主稿；过程版本、候选稿、alignment pass 和 hardening pass 应进入 `Versioned_Drafts/` 或工具中转目录。
+3. 为兼容 ChatGPT / 网页 GitHub 工具，若不得不在 `Part_*` 正文目录短期生成独立新版本文件，应在本地同步时尽快合并、清理，并移入 `Versioned_Drafts/`。
+4. 独立版本文件应在 frontmatter 标注 `status`、`based_on`、`optimization_axis`；若知道基准 commit / blob SHA，也应写入。
+5. 稳定正文与独立版本文件只允许短期并存。后续由本地 git 环境比较、合并、清理，把最终版本回写到稳定章节文件。
+6. 版本历史最终由 Git commit / branch 承接；重要版本变化在本文件追加记录。
+7. `90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/` 保留为可选通道，用于 section patch、合并说明或不适合放入正文目录的工具中转材料。
+8. 稳定主稿 frontmatter 保留精确来源 `status`，并增加 `maintext_status: stable_candidate`，用于区分当前主阅读入口与过程稿。
 
 ## Web / GitHub 工具写入规则
 
 当 ChatGPT / 网页工具有新版要提交时：
 
 1. 如果能可靠取得目标稳定文件的完整内容和 blob SHA，可以直接更新稳定章节文件。
-2. 如果读取大文件被截断、无法可靠取得 blob SHA，可以在同一 `Part_*` 正文目录创建独立版本文件。
+2. 如果读取大文件被截断、无法可靠取得 blob SHA，优先创建 `Versioned_Drafts/` 或 `update_queue/` 中转稿；若工具限制导致必须在同一 `Part_*` 正文目录创建独立版本文件，只能作为短期中转。
 3. 独立版本文件命名建议：
    `08_选择算子_从可成为性到显现_v5_polished.md`
 4. 不要求网页工具强行使用 `update_queue`。`update_queue` 只作为可选的 patch / notes 通道。
-5. 后续清理时，把最新版并入稳定文件名，删除或归档多余版本副本，并在 Git commit 中保留历史。
+5. 后续清理时，把最新版并入稳定文件名，删除或归档多余版本副本，并在 Git commit 中保留历史。卷级 pass 后的主目录不得长期保留过程版本。
 
 ## 2026-05-10 版本收束
 
@@ -145,4 +146,57 @@ updated: 2026-05-12
 11 不可逆使现实不能免费成形
 12 摩擦必须支付，支付沉积为路径
 13 路径健康需要三判据，主体与价值被推出
+```
+
+## 2026-05-14 卷二整体一致性 weld pass
+
+本次对卷二第 7–13 章稳定主稿执行整体一致性焊接修订。旧稳定主稿已归档至 `Versioned_Drafts/Part_02_选择的本性/`，主阅读入口仍为 `Part_02_选择的本性/` 下稳定文件名。
+
+本次不做整卷重写，不新增正文目录版本副本。修订重点为：
+
+- 增加卷二总导语；
+- 补强 7→8、8→9、9→10、10→11、11→12、12→13、13→卷三桥句；
+- 统一“地形、显现、阴影、不可逆、本体论摩擦、可支付性、路径、三判据”的术语分工；
+- 压缩重复跨尺度材料；
+- 明确第 13 章推出卷三主体与价值的问题；
+- 新增 `13b_卷二小结_选择如何在地形中发生.md` 作为卷二命题组 / 短桥；
+- 将卷二状态确认为 `stable_candidate / post_part02_consistency_weld`。
+
+远端 rebase 后同步到稳定主稿的最新候选状态：
+
+| 章 | 当前主稿 status |
+|---:|---|
+| 7 | `draft_v18_final_literary_philosophical_polish` |
+| 8 | `draft_v5r_terrain_embodiment_focus_pass` |
+| 9 | `draft_v6_philosophical_depth_pass` |
+| 10 | `draft_v15_third_tier_final` |
+| 11 | `draft_v13_literary_final_pass` |
+| 12 | `draft_v17_final_literary_polish` |
+| 13 | `draft_v9_necessity_hardening` |
+
+归档动作：
+
+- `07_地形如何反过来选择人_pre_consistency_weld_2026-05-14.md`
+- `08_选择算子_从可成为性到显现_pre_consistency_weld_2026-05-14.md`
+- `09_排除_选择的阴影_pre_consistency_weld_2026-05-14.md`
+- `10_不可逆性_撤回不是回到原点_pre_consistency_weld_2026-05-14.md`
+- `11_本体论摩擦_为什么现实不会免费成形_pre_consistency_weld_2026-05-14.md`
+- `12_可支付性_为什么路径越走越像路_pre_consistency_weld_2026-05-14.md`
+- `13_三判据_可延续_可协调_可再选择_pre_consistency_weld_2026-05-14.md`
+- `07_地形如何反过来选择人_v17_completion_pass.md` 已从 `Part_02_选择的本性/` 移入 `Versioned_Drafts/Part_02_选择的本性/`，避免过程版本长期留在正文主目录。
+- rebase 后进入主目录的第 7–13 章过程候选稿已同步进稳定主稿，并移入 `Versioned_Drafts/Part_02_选择的本性/`；其中第 7/8 章因已有同名归档且内容不同，追加 `_remote_main_2026-05-14` 后缀保留。
+
+当前卷二机制链：
+
+```text
+L2 / 地形作为过去选择沉积后的摩擦分配
+→ 选择不是从选项出现后才开始
+→ 可成为性在地形中被压成显现
+→ 显现必然制造排除与阴影
+→ 前景与阴影共同写回，造成不可逆
+→ 不可逆使现实不能免费改变
+→ 本体论摩擦要求支付
+→ 反复支付沉积为路径
+→ 路径健康需要三判据
+→ 主体与价值被推出
 ```
