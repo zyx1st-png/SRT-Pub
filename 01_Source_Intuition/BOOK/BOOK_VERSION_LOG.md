@@ -200,3 +200,26 @@ L2 / 地形作为过去选择沉积后的摩擦分配
 → 路径健康需要三判据
 → 主体与价值被推出
 ```
+
+## 2026-05-14 卷一主稿路径修复
+
+本次修复卷一 `Part_01_从存在到成为/` 主目录中的多版本并存问题。第 1–6 章与 6b 的最新第三类候选已完整回写到稳定文件名；原稳定主稿与过程候选稿均归档至 `Versioned_Drafts/Part_01_从存在到成为/`。
+
+主阅读入口保持稳定文件名：
+
+| 章 | 稳定文件 | 当前主稿 status |
+|---:|---|---|
+| 1 | `Part_01_从存在到成为/01_现实不是先给定的.md` | `draft_v17_third_tier_polish` |
+| 2 | `Part_01_从存在到成为/02_L0不是虚无.md` | `draft_v14_third_tier_precision` |
+| 3 | `Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md` | `draft_v13_argument_sharpening` |
+| 4 | `Part_01_从存在到成为/04_选择不是挑选.md` | `draft_v12_third_tier_argument` |
+| 5 | `Part_01_从存在到成为/05_锚定让一留下.md` | `draft_v16_third_tier_final` |
+| 6 | `Part_01_从存在到成为/06_秩序如何成为背景.md` | `draft_v10_third_tier_final` |
+| 6b | `Part_01_从存在到成为/06b_卷一小结_第一条生成链.md` | `draft_v2_proposition_bridge` |
+
+同步动作：
+
+- 稳定主稿增加 `maintext_status: stable_candidate` 与 `consolidation_pass: part01_maintext_sync_2026_05_14`。
+- 主阅读稿删除末尾过程性“修订说明”，归档稿保留完整版本记录。
+- `Part_01_从存在到成为/` 主目录不再保留 `_v*.md` 过程版本文件。
+- `BOOK_CURRENT_STATUS.md`、卷一大纲与章节状态总表已同步。

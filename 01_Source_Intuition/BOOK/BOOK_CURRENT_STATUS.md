@@ -63,6 +63,7 @@ updated: 2026-05-14
 - **当前版本规则**：稳定章节文件仍是最终入口；`Part_*` 主路径只保留当前可读主稿，并以 `maintext_status: stable_candidate` 标记。工具中转产生的过程稿不得长期留在 `Part_*` 主目录，后续由本地 git 环境比较、合并、清理，并把过程稿移入 `Versioned_Drafts/` 或交给 Git 历史承接。具体规则见 `BOOK_VERSION_LOG.md`。
 - **当前主任务**：卷二第 7–13 章已完成整体一致性 weld pass；下一步写卷二命题组 / 短桥，并准备卷三第 14–16 章第三类 pass。
 - **卷二当前判断**：卷二不再是待优化散稿，而是稳定候选稿；后续只做轻量一致性修订、卷二命题组和卷三入口。
+- **卷一主稿路径**：卷一 1–6 / 6b 已同步最新第三类候选到稳定文件名，过程版本已移入 `Versioned_Drafts/Part_01_从存在到成为/`。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
 - **卷二调整指导**：`01_Source_Intuition/BOOK/00_全书章节写作概要_卷二调整指导.md`
 
@@ -73,13 +74,13 @@ updated: 2026-05-14
 | 章 | 标题 / 范围 | 当前状态 | 下一步 |
 |---:|---|---|---|
 | 0 | 序：为什么要从存在走向秩序 | `draft_v12`，已完成第三类方向多轮加压 | 暂作当前基准版；后续只做小幅出版级精修 |
-| 1 | 现实不是先给定的 | current baseline：`Part_01_从存在到成为/01_现实不是先给定的.md`，frontmatter 为 `draft_v16` | 暂作第一章当前基准稿；后续只随全书一致性微调 |
-| 2 | L0 不是虚无 | current baseline：`Part_01_从存在到成为/02_L0不是虚无.md`，来自 `draft_v13_polished` | 暂作第二章当前基准稿；后续随卷一一致性 pass 微调 |
-| 3 | ε_pg：L0 的最小非中立性 | current baseline：`Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md`，来自 `draft_v12_polished` | 暂作第三章当前基准稿；后续随卷一一致性 pass 微调 |
-| 4 | 选择不是挑选 | current baseline：`Part_01_从存在到成为/04_选择不是挑选.md`，来自 `draft_v10_polished` | 暂作第四章当前基准稿；后续随卷一一致性 pass 微调 |
-| 5 | 锚定让一留下 | current baseline：`Part_01_从存在到成为/05_锚定让一留下.md`，来自 `draft_v15_polished` | 暂作第五章当前基准稿；后续只随卷一一致性 pass 微调 |
-| 6 | 秩序如何成为背景 | current baseline：`Part_01_从存在到成为/06_秩序如何成为背景.md`，来自 `draft_v9_polished` | 暂作第六章当前基准稿；后续只做小幅出版级精修 |
-| 6b | 卷一命题组：第一条生成链 | active draft：`Part_01_从存在到成为/06b_卷一小结_第一条生成链.md` | 暂作卷一短桥基准稿；后续随卷一一致性 pass 微调 |
+| 1 | 现实不是先给定的 | `stable_candidate / part01_maintext_sync`，来源 `draft_v17_third_tier_polish` | 只随全书一致性微调 |
+| 2 | L0 不是虚无 | `stable_candidate / part01_maintext_sync`，来源 `draft_v14_third_tier_precision` | 只随术语校准微调 |
+| 3 | ε_pg：L0 的最小非中立性 | `stable_candidate / part01_maintext_sync`，来源 `draft_v13_argument_sharpening` | 只随术语校准微调 |
+| 4 | 选择不是挑选 | `stable_candidate / part01_maintext_sync`，来源 `draft_v12_third_tier_argument` | 只随全书一致性微调 |
+| 5 | 锚定让一留下 | `stable_candidate / part01_maintext_sync`，来源 `draft_v16_third_tier_final` | 只随全书一致性微调 |
+| 6 | 秩序如何成为背景 | `stable_candidate / part01_maintext_sync`，来源 `draft_v10_third_tier_final` | 只随卷二入口微调 |
+| 6b | 卷一命题组：第一条生成链 | `stable_candidate / part01_maintext_sync`，来源 `draft_v2_proposition_bridge` | 只随第 7 章入口微调 |
 | 7 | 地形如何反过来选择人 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v18_final_literary_philosophical_polish` | 只随全书微调 |
 | 8 | 选择算子：从可成为性到显现 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v5r_terrain_embodiment_focus_pass` | 只做术语校准 |
 | 9 | 排除：选择的阴影 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v6_philosophical_depth_pass` | 只做与 10/11 的桥句校准 |
