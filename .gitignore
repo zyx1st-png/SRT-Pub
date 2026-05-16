@@ -3,3 +3,8 @@
 **/.DS_Store
 __pycache__/
 *.pyc
+.claude/worktrees/
+.openclaw/
+IDENTITY.md
+SOUL.md
+USER.md
