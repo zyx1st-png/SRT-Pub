@@ -1,4 +1,0 @@
-interface:
-  display_name: "SRT Harden"
-  short_description: "Adversarial dialogue to nail down SRT weak links"
-  default_prompt: "Use $srt-harden to continue hardening this SRT soft spot with strongest-opponent dialogue."

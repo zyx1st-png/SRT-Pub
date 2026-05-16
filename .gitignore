@@ -3,8 +3,10 @@
 **/.DS_Store
 __pycache__/
 *.pyc
+.agents/
 .claude/worktrees/
 .openclaw/
+Operations/Hermes_Agents_Config_2026-05-16.md
 IDENTITY.md
 SOUL.md
 USER.md
