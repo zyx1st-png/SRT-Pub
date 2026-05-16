@@ -6,7 +6,7 @@ chapter: 17
 status: draft_v5
 maintext_status: stable_candidate
 source_of:
-  - 01_Source_Intuition/BOOK/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v4.md
+  - 01_Source_Intuition/BOOK/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v14_reader_entry_polish.md
 related:
   - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/15_在乎是什么.md
   - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/16_价值不是偏好.md
