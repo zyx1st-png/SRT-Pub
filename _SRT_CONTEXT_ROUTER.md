@@ -166,7 +166,7 @@ When answering or editing a non-simple SRT question:
 
 ## 6. Route: Adjacent Theories / SRT Is Not Just X
 
-**Use when the query asks**: Is SRT just FEP? IIT? GNW? Quantum collapse? Social constructionism? Multilevel selection?
+**Use when the query asks**: Is SRT just FEP? IIT? GNW? Quantum collapse? Social constructionism? Multilevel selection? Enactivism? Process philosophy? Buddhist metaphysics?
 
 ### Primary
 
@@ -182,6 +182,8 @@ When answering or editing a non-simple SRT question:
 - `Physics/SRT_Quant_01_Selection.md`
 - `Philosophy/SRT_Social_Cognition.md`
 - `Philosophy/SRT_Social_Economics.md`
+- `Philosophy/SRT_Philosophy_Foundations.md`
+- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
 
 ### Boundary
 

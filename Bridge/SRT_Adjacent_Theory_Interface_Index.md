@@ -1,8 +1,8 @@
 ---
 id: SRT-ADJACENT-THEORY-INTERFACE-INDEX
 type: index
-tags: [Adjacent Theory, Bridge, FEP, IIT, GNW, Quantum Measurement, Multilevel Selection, Social Reality, Interface]
-status: draft_v1
+tags: [Adjacent Theory, Bridge, FEP, IIT, GNW, Quantum Measurement, Multilevel Selection, Social Reality, Enactivism, Process Philosophy, Buddhist Metaphysics, Interface]
+status: draft_v2
 layer: L1
 epistemic_layer: bridge
 claim_mode: navigation
@@ -34,6 +34,9 @@ Adjacent theories are useful because they clarify particular segments of this lo
 - **Multilevel selection**: which scale carries selection pressure and where consequences return.
 - **Niche construction / language ecology**: how repeated `L_1` action rewrites the future selection environment (`L_1 -> L_2 -> L_1`).
 - **Language / social reality theories**: human-social stabilization of `L_2` through meaning, shared intentionality, norms, roles, and institutions.
+- **Enactivism / embodied cognition**: operator-environment coupling and embodied selection loops.
+- **Process philosophy**: philosophical neighborhood for becoming, event, and actuality language.
+- **Buddhist metaphysics / dependent origination**: anti-substantialist and practice-adjacent comparison layer, not a source of SRT definitions.
 
 Compressed rule:
 
@@ -54,6 +57,9 @@ Compressed rule:
 | **Niche construction / language ecology** | `L_1 -> L_2 -> L_1` environmental rewrite; organisms and language-users reshape their own future selection landscape | `Philosophy/SRT_SocTheory_05_Language_Eco.md`; `Core/SRT_Core_12b_Ontology_L2.md`; `Core/SRT_Core_14_Dynamics_Scaling.md` | Niche construction is an evolutionary / ecological instance of SRT writeback, not the whole SRT mechanism. |
 | **Shared intentionality / social cognition** | Multi-operator coordination, joint attention, shared goals, and collective `L_2` stabilization | `Philosophy/SRT_Social_Cognition.md`; `Philosophy/_SRT_Phil_Axioms.md`; `Neuroscience/SRT_Neuro_Experiments.md` | Shared intentionality explains human-social coordination; it does not define all cross-domain selection. |
 | **Language / social reality / institutions** | Human-social `L_2`: meanings, roles, money, law, norms, institutions, public reality | `Philosophy/SRT_Social_Economics.md`; `Philosophy/SRT_Social_Economics_CompactCore.md`; `Philosophy/SRT_Social_MacroDynamics.md`; `graphify-out/wiki/Social_Reality_Construction.md`; `graphify-out/wiki/Language_Topology.md`; `graphify-out/wiki/Normative_Closure.md` | Social construction is a human-social `L_2` formation case; SRT is not reducible to social constructionism. |
+| **Enactivism / embodied cognition** | Embodied operator-environment coupling; sensorimotor and affordance-level support for selection loops | `Philosophy/SRT_Social_Cognition.md`; `Neuroscience/SRT_Neural_Mechanisms.md`; `AI/SRT_AI_03_Consciousness_Framework.md` | Enactivism supports embodied coupling language, but it does not define `Ĝθ`, `L_0`, `d-value`, or `Ψ_f`. |
+| **Process philosophy** | Philosophical neighborhood for event, becoming, actuality, and anti-substance framing | `Philosophy/SRT_Philosophy_Foundations.md`; `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`; `Core/SRT_Core_21_Minimal_Axioms.md` | Process vocabulary can help explain becoming, but `process` is not a substitute for SRT's selection / friction / writeback chain. |
+| **Buddhist metaphysics / dependent origination** | Anti-substantialist and practice-adjacent comparison layer: conditioned arising, non-fixed self, occlusion/return analogies | `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`; `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`; `Core_Law/SRT_Suffering.md`; `Core_Law/SRT_Individuation.md` | Buddhist terms may be comparison or praxis bridges; they must not define `L_0/L_1/L_2`, ISP, suffering, or SRT ontology. |
 
 ---
 
@@ -247,7 +253,113 @@ Social constructionism explains a major human-social case of `L_2` formation, no
 
 ---
 
-## 7. Anti-Reduction Quick Answers
+## 7. Enactivism / Embodied Cognition Interface
+
+### Role
+
+Enactivism and embodied cognition belong to the operator-environment coupling side of SRT. They help describe how selection is constrained and enabled by bodily action, sensorimotor loops, affordances, and environmental coordination.
+
+### Existing locations
+
+- `Philosophy/SRT_Social_Cognition.md`
+- `Neuroscience/SRT_Neural_Mechanisms.md`
+- `AI/SRT_AI_03_Consciousness_Framework.md`
+- `_SRT_CONTEXT_ROUTER.md` routes for `Ĝθ`, d-value, and consciousness mechanisms
+
+### Safe wording
+
+> Enactivism is an embodied-coupling bridge for SRT: it supports the claim that actualized reality is not passively represented, but stabilized through operator-body-environment coordination.
+
+### Boundary
+
+Do not write:
+
+\[
+\text{SRT} = \text{enactivism with metaphysics}
+\]
+
+Prefer:
+
+\[
+\text{enactivism} = \text{embodied coupling interface for selected } L_1 \text{ trajectories}
+\]
+
+Affordances are not identical to `L_0` possibilities; embodiment does not define `Ĝθ`; coupling does not automatically supply `d-value` or `Ψ_f` payability.
+
+---
+
+## 8. Process Philosophy Interface
+
+### Role
+
+Process philosophy is a philosophical neighbor for event, becoming, actualization, and anti-substance language. It is useful for explaining why SRT does not begin from static entities, but it must not replace SRT's own selection chain.
+
+### Existing locations
+
+- `Philosophy/SRT_Philosophy_Foundations.md`
+- `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`
+- `Core/SRT_Core_21_Minimal_Axioms.md`
+- `Core/SRT_Core_21b_Constitutive_Theorems.md`
+
+### Safe wording
+
+> Process philosophy is a comparative philosophical neighbor. SRT shares an anti-static orientation, but SRT compresses becoming into the structural chain of selection, friction, writeback, and constraint.
+
+### Boundary
+
+Do not write:
+
+\[
+\text{SRT} = \text{process philosophy formalized}
+\]
+
+Prefer:
+
+\[
+\text{process philosophy} = \text{philosophical comparison layer for becoming/event language}
+\]
+
+`Process`, `event`, and `becoming` are not substitutes for `Ĝθ`, `Ψ_f`, `d-value`, or `L_2` writeback.
+
+---
+
+## 9. Buddhist Metaphysics / Dependent Origination Interface
+
+### Role
+
+Buddhist metaphysics and dependent origination belong to SRT's anti-substantialist and practice-adjacent comparison layer. They can clarify conditioned arising, non-fixed self, attachment/occlusion, suffering, and return, but they do not define SRT ontology.
+
+### Existing locations
+
+- `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
+- `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+- `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
+- `Core_Law/SRT_Suffering.md`
+- `Core_Law/SRT_Individuation.md`
+
+### Safe wording
+
+> Buddhist dependent-origination language can be used as a comparison and praxis bridge: it helps express non-fixed self and conditioned arising, while SRT retains its own structural vocabulary of ISP, `L_0/L_1/L_2`, `d-value`, `Ψ_f`, and `T_dir`.
+
+### Boundary
+
+Do not write:
+
+\[
+\text{SRT} = \text{Buddhist metaphysics in modern language}
+\]
+
+Prefer:
+
+\[
+\text{Buddhist comparison} = \text{anti-substantialist / praxis bridge, not definition authority}
+\]
+
+`śūnyatā` / emptiness must not be identified with `L_0`; no-self must not replace ISP or subject-position theory; suffering in Buddhism must not be directly equated with `Core_Law/SRT_Suffering.md`; contemplative practice reports cannot close canonical tensions by themselves.
+
+---
+
+## 10. Anti-Reduction Quick Answers
 
 ### “Is SRT just FEP?”
 
@@ -269,15 +381,27 @@ No. Multilevel selection disambiguates the level of selection pressure. SRT addi
 
 No. Social constructionism is a theory of human-social `L_2` formation. SRT generalizes selection, anchoring, sedimentation, and constraint feedback beyond the social-linguistic domain.
 
+### “Is SRT just enactivism?”
+
+No. Enactivism is an embodied-coupling interface. SRT also requires `L_0 -> L_1` selection, `Ψ_f` payability, `d-value` stake coupling, and `L_1 -> L_2` writeback.
+
+### “Is SRT just process philosophy?”
+
+No. Process philosophy is a philosophical neighbor for becoming and event language. SRT gives a specific selection / friction / writeback / constraint loop rather than using `process` as an explanatory primitive.
+
+### “Is SRT just Buddhist metaphysics?”
+
+No. Buddhist metaphysics and dependent origination can function as anti-substantialist and praxis-adjacent comparison layers. They do not define `L_0/L_1/L_2`, ISP, `d-value`, `Ψ_f`, `T_dir`, or SRT suffering.
+
 ---
 
-## 8. Reusable Summary Paragraph
+## 11. Reusable Summary Paragraph
 
-SRT does not absorb adjacent theories by identity. It assigns them to different interface roles: FEP / Active Inference models local self-maintenance under existing constraints (`L_2 -> L_1`); IIT / PCI models integration-side complexity of actualized `L_1`; GNW models global availability and broadcast; quantum measurement theories model physical actualization (`L_0 -> L_1`) under decoherence and environmental selection; multilevel selection specifies which scale bears selection pressure and where consequences return; niche construction and language ecology model how repeated `L_1` actions rewrite `L_2`; and social-reality theories model human-social `L_2` stabilization through shared intentionality, symbols, norms, roles, and institutions. None of these theories replaces SRT's core loop; each supplies a bridge language for one part of it.
+SRT does not absorb adjacent theories by identity. It assigns them to different interface roles: FEP / Active Inference models local self-maintenance under existing constraints (`L_2 -> L_1`); IIT / PCI models integration-side complexity of actualized `L_1`; GNW models global availability and broadcast; quantum measurement theories model physical actualization (`L_0 -> L_1`) under decoherence and environmental selection; multilevel selection specifies which scale bears selection pressure and where consequences return; niche construction and language ecology model how repeated `L_1` actions rewrite `L_2`; social-reality theories model human-social `L_2` stabilization through shared intentionality, symbols, norms, roles, and institutions; enactivism supplies embodied operator-environment coupling language; process philosophy supplies a comparison layer for becoming and event language; and Buddhist dependent-origination language supplies an anti-substantialist / praxis-adjacent comparison layer. None of these theories replaces SRT's core loop; each supplies a bridge language for one part of it.
 
 ---
 
-## 9. Editing Rule
+## 12. Editing Rule
 
 When adding new adjacent-theory material:
 
