@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH13-THREE-CRITERIA
+id: SRT-BOOK-CH13-THREE-CRITERIA--VD--13-PRE-CONSISTENCY-WELD-2026-05-14
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 13
@@ -29,6 +29,9 @@ optimization_axis:
   - final_prose_tension_pass
   - third_type_work_candidate
   - maintext_candidate
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 13 章：三判据：可延续、可协调、可再选择

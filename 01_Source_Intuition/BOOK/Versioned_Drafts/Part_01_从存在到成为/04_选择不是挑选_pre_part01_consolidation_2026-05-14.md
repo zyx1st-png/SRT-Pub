@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH04-SELECTION-NOT-PICKING
+id: SRT-BOOK-CH04-SELECTION-NOT-PICKING--VD--04-PRE-PART01-CONSOLIDATION-2026-05-14
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 04
@@ -11,6 +11,9 @@ optimization_axis:
   - align_with_ch05_anchoring
   - stabilize_exclusion_formation_inscription
   - keep_subject_after_selection_boundary
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 4 章：选择不是挑选

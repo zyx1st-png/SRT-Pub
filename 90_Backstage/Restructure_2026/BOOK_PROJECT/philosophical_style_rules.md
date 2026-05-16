@@ -3,6 +3,9 @@ id: SRT-BOOK-PHILOSOPHICAL-STYLE-RULES
 status: active_draft_v1
 type: backstage_style_protocol
 canonical: false
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Philosophical Style Rules · 《从存在到秩序》

@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH09-EXCLUSION-SHADOW-OF-SELECTION
+id: SRT-BOOK-CH09-EXCLUSION-SHADOW-OF-SELECTION--VD--09-V5T-CROSS-SCALE-DEANTHROPOCENTRIC-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 09
@@ -27,6 +27,9 @@ optimization_axis:
   - strong_opponents_philosophy_physics_biology_neuroscience
   - no_full_occlusion_theory
   - no_formula_main_text
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 9 章：排除：选择的阴影

@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION
+id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION--VD--10-V8-THIRD-TIER-PRECISION-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 10
@@ -19,6 +19,9 @@ optimization_axis:
   - strong_opponent_rollback_and_path_dependence
   - compress_repetitive_enumeration
   - bridge_to_ontological_friction
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 10 章：不可逆性：撤回不是逆操作

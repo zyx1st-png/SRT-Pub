@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH16-DVALUE-V14-READER-ENTRY-POLISH
+id: SRT-BOOK-CH16-DVALUE-V14-READER-ENTRY-POLISH--VD--16-D-VALUE-V14-READER-ENTRY-POLISH
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 16
@@ -28,6 +28,9 @@ optimization_axis:
   - preserve_formula_as_anchor_not_main_beam
   - preserve_general_d_vs_value_direction_d
   - preserve_ch17_structural_necessity_bridge
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 16 章：d-value：在乎的最小形式化尝试

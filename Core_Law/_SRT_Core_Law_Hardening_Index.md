@@ -1,3 +1,13 @@
+---
+id: SRT-CORELAW-HARDENING-INDEX
+type: index
+status: active_v1
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
+canonical: false
+---
+
 # SRT Core-Law Hardening Index
 
 > Status: domain navigation index for Core_Law bridge and hardening patches.

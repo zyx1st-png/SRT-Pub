@@ -22,6 +22,10 @@ related:
   - AI/Consciousness_Framework_Split/00_Formal_Core.md
   - Philosophy/SRT_Ethics_Agency.md
   - 01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
+canonical: false
 ---
 
 # 第 17 章：d-value：在乎的最小形式化尝试

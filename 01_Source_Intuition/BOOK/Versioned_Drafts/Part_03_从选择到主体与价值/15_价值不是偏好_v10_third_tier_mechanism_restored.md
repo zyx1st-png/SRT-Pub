@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V10-THIRD-TIER-MECHANISM-RESTORED
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V10-THIRD-TIER-MECHANISM-RESTORED--VD--15-V10-THIRD-TIER-MECHANISM-RESTORED
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -22,6 +22,9 @@ optimization_axis:
   - keep_external_pressure_as_pressure_points_not_review
   - keep_value_as_non_substitutability
   - defer_d_value_expansion_to_ch16
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

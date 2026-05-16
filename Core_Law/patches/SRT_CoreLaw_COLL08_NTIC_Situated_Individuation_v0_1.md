@@ -21,6 +21,12 @@ tags:
   - collective_dynamics
   - embedded_agency
   - tetrahymena
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-CORELAW-COLL08-NTIC-SITUATED-INDIVIDUATION
 ---
 
 # SRT Core-Law Patch COLL08: NTIC Situated Individuation v0.1

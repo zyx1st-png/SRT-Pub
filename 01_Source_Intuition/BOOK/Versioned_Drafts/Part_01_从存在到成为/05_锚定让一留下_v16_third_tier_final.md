@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH05-ANCHORING
+id: SRT-BOOK-CH05-ANCHORING--VD--05-V16-THIRD-TIER-FINAL
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 05
@@ -17,6 +17,9 @@ optimization_axis:
   - competitive_anchor_suppression_seed
   - cross_scale_anchor_examples
   - bridge_to_order_without_L2_terminology
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 5 章：锚定让一留下

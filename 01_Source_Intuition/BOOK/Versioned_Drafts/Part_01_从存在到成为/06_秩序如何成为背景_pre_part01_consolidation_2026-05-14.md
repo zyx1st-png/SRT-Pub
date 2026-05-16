@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH06-ORDER-AS-BACKGROUND
+id: SRT-BOOK-CH06-ORDER-AS-BACKGROUND--VD--06-PRE-PART01-CONSOLIDATION-2026-05-14
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 06
@@ -12,6 +12,9 @@ optimization_axis:
   - reduce_explanatory_repetition
   - keep_third_tier_pressure
   - active_draft_for_chapter_06
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 6 章：秩序如何成为背景

@@ -4,6 +4,9 @@ type: book_project_outline_index
 status: active_draft
 canonical: false
 scope: 01_source_intuition_book
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 全书章节写作概要拆分索引

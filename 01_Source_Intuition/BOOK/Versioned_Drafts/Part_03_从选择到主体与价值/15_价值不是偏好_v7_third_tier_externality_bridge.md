@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V7-THIRD-TIER-EXTERNALITY-BRIDGE
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V7-THIRD-TIER-EXTERNALITY-BRIDGE--VD--15-V7-THIRD-TIER-EXTERNALITY-BRIDGE
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -21,6 +21,9 @@ optimization_axis:
   - distinguish_preference_youguan_caring_value_irreplaceability_d_value
   - defer_d_value_expansion_to_ch16
   - add_final_proposition_compression
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

@@ -4,6 +4,12 @@ patch_id: PATCH-NEURO-CONSC14-PROPOFOL-TRAVELING-WAVE-REORGANIZATION
 target_document: "Neuroscience/SRT_Consciousness_Mechanisms.md"
 status: integrated
 domain: neuroscience_consciousness
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-NEURO-CONSC14-PROPOFOL-TRAVELING-WAVE-REORGANIZATION
 ---
 
 # Integration Hook: CONSC14 Propofol Traveling-Wave Reorganization

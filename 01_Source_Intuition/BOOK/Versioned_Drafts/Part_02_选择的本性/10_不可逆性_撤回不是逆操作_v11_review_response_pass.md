@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION
+id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION--VD--10-V11-REVIEW-RESPONSE-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 10
@@ -24,6 +24,9 @@ optimization_axis:
   - information_record_erasure_bridge
   - no_information_theory_reduction
   - bridge_to_ontological_friction_payability_path
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 10 章：不可逆性：撤回不是逆操作

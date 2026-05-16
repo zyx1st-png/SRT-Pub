@@ -21,6 +21,12 @@ tags:
   - perspectivalism
   - view_from_nowhere
   - philosophical_zombies
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-PHIL-PH-CONSC02-PERSPECTIVAL-GAP-GATE
 ---
 
 # SRT Philosophy Patch PH-CONSC02: Perspectival Gap Gate v0.1

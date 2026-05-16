@@ -11,6 +11,9 @@ related:
   - 01_Source_Intuition/BOOK/Outline_Parts/01_卷一_从存在到成为.md
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景_v9_polished.md
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 卷一 1–6 一致性与术语精度 pass：初步审校记录

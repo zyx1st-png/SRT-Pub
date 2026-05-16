@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION
+id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION--VD--11-V13-LITERARY-FINAL-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 11
@@ -20,6 +20,9 @@ optimization_axis:
   - actual_felt_friction_split
   - bridge_from_irreversibility_to_payability
   - avoid_formulaic_fisher_expansion
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 11 章：本体论摩擦：为什么现实不会免费成形

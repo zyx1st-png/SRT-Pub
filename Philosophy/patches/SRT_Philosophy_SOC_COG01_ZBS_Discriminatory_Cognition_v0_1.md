@@ -22,6 +22,12 @@ tags:
   - dehumanization
   - recognition
   - bystander_silence
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-PHIL-SOC-COG01-ZBS-DISCRIMINATORY-COGNITION
 ---
 
 # SRT Philosophy Patch SOC-COG01: ZBS and Discriminatory Cognition v0.1

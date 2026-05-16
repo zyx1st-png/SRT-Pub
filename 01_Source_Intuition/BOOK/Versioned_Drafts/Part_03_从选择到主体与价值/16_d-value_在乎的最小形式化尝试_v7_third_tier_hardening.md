@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH16-DVALUE-V7-THIRD-TIER-HARDENING
+id: SRT-BOOK-CH16-DVALUE-V7-THIRD-TIER-HARDENING--VD--16-D-VALUE-V7-THIRD-TIER-HARDENING
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 16
@@ -26,6 +26,9 @@ optimization_axis:
   - redundancy_with_ch15_eliminated
   - d_value_fallibility
   - third_tier_derivation_depth
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 16 章：d-value：在乎的最小形式化尝试

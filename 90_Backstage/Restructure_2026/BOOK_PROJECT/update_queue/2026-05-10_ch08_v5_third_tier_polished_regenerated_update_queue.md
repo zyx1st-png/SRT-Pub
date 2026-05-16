@@ -7,6 +7,12 @@ generated_at: 2026-05-10
 chapter: 08
 status: ready_for_local_merge
 reason: GitHub connector read of target chapter is truncated; per BOOK_VERSION_LOG, do not overwrite stable Part_* file without reliable blob SHA.
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
+canonical: false
+id: SRT-BACKSTAGE-2026-05-10-CH08-V5-THIRD-TIER-POLISHED-REGENERATED-UPDATE-QUEUE
+type: book_project_update_note
 ---
 
 # 待合并改稿：第 8 章 v5 third-tier polished regenerated

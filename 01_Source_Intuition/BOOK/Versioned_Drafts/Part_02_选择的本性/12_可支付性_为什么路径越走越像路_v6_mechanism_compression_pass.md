@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH12-PAYABILITY-PATH
+id: SRT-BOOK-CH12-PAYABILITY-PATH--VD--12-V6-MECHANISM-COMPRESSION-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 12
@@ -23,6 +23,9 @@ optimization_axis:
   - path_as_L2_friction_distribution_not_static_track
   - stronger_opponents_resource_dependence_low_friction_expensive_path
   - bridge_to_ch13_without_solving_health_criteria
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 12 章：可支付性：为什么路径越走越像路

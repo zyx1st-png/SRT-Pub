@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V10-YOUGUAN-LINEAGE-HARDENING
+id: SRT-BOOK-CH14-CARING-V10-YOUGUAN-LINEAGE-HARDENING--VD--14-V10-YOUGUAN-LINEAGE-HARDENING
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -20,6 +20,9 @@ optimization_axis:
   - clarify_d_value_externality_sentence
   - move_epsilon_youguan_caring_dvalue_lineage_forward
   - preserve_caring_externality_without_moralizing
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

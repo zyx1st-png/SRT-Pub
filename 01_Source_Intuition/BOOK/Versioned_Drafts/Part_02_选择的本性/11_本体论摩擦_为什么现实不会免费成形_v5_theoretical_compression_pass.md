@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION
+id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION--VD--11-V5-THEORETICAL-COMPRESSION-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 11
@@ -24,6 +24,9 @@ optimization_axis:
   - stronger_opponent_pressure
   - signature_proposition_judgment_list
   - bridge_to_chapter_12_payability
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 11 章：本体论摩擦：为什么现实不会免费成形

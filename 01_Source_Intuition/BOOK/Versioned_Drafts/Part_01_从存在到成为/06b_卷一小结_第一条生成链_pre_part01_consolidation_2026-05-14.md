@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-PART01-INTERLUDE-FIRST-GENERATIVE-CHAIN
+id: SRT-BOOK-PART01-INTERLUDE-FIRST-GENERATIVE-CHAIN--VD--06B-PRE-PART01-CONSOLIDATION-2026-05-14
 type: book_interlude
 part: 01_from_being_to_becoming
 status: active_draft
@@ -11,6 +11,9 @@ optimization_axis:
   - convert_summary_to_proposition_bridge
   - compress_part01_generation_chain
   - prepare_part02_selection_problem
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 卷一命题组：第一条生成链

@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH03-EPSILON-PG
+id: SRT-BOOK-CH03-EPSILON-PG--VD--03-PG-L0-PRE-PART01-CONSOLIDATION-2026-05-14
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 03
@@ -11,6 +11,9 @@ optimization_axis:
   - align_with_ch04_selection
   - stabilize_epsilon_pg_as_minimal_non_neutrality
   - avoid_teleology_and_physics_equivalence
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 3 章：ε_pg：L0 的最小非中立性

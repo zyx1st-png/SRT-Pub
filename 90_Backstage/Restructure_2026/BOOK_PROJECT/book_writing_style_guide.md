@@ -4,6 +4,9 @@ type: backstage_style_guide
 status: active_draft
 canonical: false
 scope: book_project
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Book Writing Style Guide · 《从存在到秩序》

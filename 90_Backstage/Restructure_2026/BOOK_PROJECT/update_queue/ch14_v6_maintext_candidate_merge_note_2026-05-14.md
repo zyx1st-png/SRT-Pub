@@ -9,6 +9,10 @@ source_candidate:
   - 01_Source_Intuition/BOOK/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v6_third_tier_maintext_candidate.md
 current_stable_file:
   - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/14_在乎是什么.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
+canonical: false
 ---
 
 # 第 14 章 v6 主稿候选合并说明

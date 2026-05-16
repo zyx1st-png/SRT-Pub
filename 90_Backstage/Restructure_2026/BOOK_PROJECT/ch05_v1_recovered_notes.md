@@ -4,6 +4,9 @@ type: backstage_recovery_notes
 status: active_draft
 canonical: false
 chapter: 05
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Chapter 5 v1 Recovery Notes

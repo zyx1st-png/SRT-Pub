@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH05-ANCHORING
+id: SRT-BOOK-CH05-ANCHORING--VD--05-PRE-PART01-CONSOLIDATION-2026-05-14
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 05
@@ -11,6 +11,9 @@ optimization_axis:
   - align_with_ch06_order_background
   - keep_anchor_order_boundary_clear
   - stabilize_trace_force_reentry
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 5 章：锚定让一留下

@@ -9,6 +9,9 @@ related:
   - 01_Source_Intuition/BOOK/00_全书章节写作概要.md
   - 01_Source_Intuition/BOOK/Outline_Parts/README.md
   - 01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Third-Tier Philosophical Weight Notes · 第三档哲学厚重护栏

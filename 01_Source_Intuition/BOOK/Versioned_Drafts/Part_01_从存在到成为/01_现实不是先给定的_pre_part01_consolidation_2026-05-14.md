@@ -1,10 +1,13 @@
 ---
-id: SRT-BOOK-CH01-REALITY-NOT-GIVEN
+id: SRT-BOOK-CH01-REALITY-NOT-GIVEN--VD--01-PRE-PART01-CONSOLIDATION-2026-05-14
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 01
 status: draft_v16
 maintext_status: stable_candidate
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 1 章：现实不是先给定的

@@ -6,6 +6,12 @@ target_documents:
   - "Neuroscience/SRT_Neural_Mechanisms.md"
 status: integrated
 domain: neuroscience_measurement
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-NEURO-NEURAL16-BOLD-CMRO2-UNCERTAINTY-GATE
 ---
 
 # Integration Hook: NEURAL16 BOLD-CMRO2 Uncertainty Gate

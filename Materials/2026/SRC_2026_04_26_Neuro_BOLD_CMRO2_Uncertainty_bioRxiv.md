@@ -30,6 +30,12 @@ tags:
   - measurement
   - bioRxiv
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-04-26-NEURO-BOLD-CMRO2-UNCERTAINTY-BIORXIV
 ---
 
 # SourceCard: BOLD-CMRO2 Uncertainty Reanalysis

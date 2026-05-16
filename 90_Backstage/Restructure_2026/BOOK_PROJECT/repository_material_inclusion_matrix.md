@@ -4,6 +4,9 @@ type: backstage_planning_matrix
 status: active_draft
 canonical: false
 scope: book_project
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 《从存在到秩序》仓库内容纳入矩阵

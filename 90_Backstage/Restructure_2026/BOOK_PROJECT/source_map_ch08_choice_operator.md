@@ -7,6 +7,9 @@ scope: book_project_chapter_08
 related:
   - 01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现.md
   - 01_Source_Intuition/BOOK/00_全书章节写作概要_卷二机制补充.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Source Map · Chapter 8 Choice Operator

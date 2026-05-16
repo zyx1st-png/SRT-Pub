@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V9-THIRD-TIER-CROSS-PRESSURE-COMPRESSED
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V9-THIRD-TIER-CROSS-PRESSURE-COMPRESSED--VD--15-V9-THIRD-TIER-CROSS-PRESSURE-COMPRESSED
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -22,6 +22,9 @@ optimization_axis:
   - keep_value_as_non_substitutability
   - keep_external_value_bridge_from_ch14_v17
   - defer_d_value_expansion_to_ch16
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

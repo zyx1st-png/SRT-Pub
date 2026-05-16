@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH16-DVALUE-V10-CH15-BRIDGE-FORMULA-LITE
+id: SRT-BOOK-CH16-DVALUE-V10-CH15-BRIDGE-FORMULA-LITE--VD--16-D-VALUE-V10-CH15-BRIDGE-FORMULA-LITE
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 16
@@ -28,6 +28,9 @@ optimization_axis:
   - compress_crossdomain_pressure_lines
   - preserve_misbound_fake_d_boundary
   - strengthen_ch17_bridge_without_literature_overload
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 16 章：d-value：在乎的最小形式化尝试

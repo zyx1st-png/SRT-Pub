@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION
+id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION--VD--11-V8-HARDENING-NECESSITY-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 11
@@ -25,6 +25,9 @@ optimization_axis:
   - psi_f_as_primary_canonical_anchor_not_slogan
   - bridge_to_payability_and_d_bandwidth
   - third_type_work_candidate
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 11 章：本体论摩擦：为什么现实不会免费成形

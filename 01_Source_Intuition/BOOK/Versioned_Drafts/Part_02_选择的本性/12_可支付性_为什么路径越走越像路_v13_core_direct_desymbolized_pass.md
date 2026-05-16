@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH12-PAYABILITY-PATH
+id: SRT-BOOK-CH12-PAYABILITY-PATH--VD--12-V13-CORE-DIRECT-DESYMBOLIZED-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 12
@@ -29,6 +29,9 @@ optimization_axis:
   - non_anthropocentric_physics_biology_neuro_axis
   - social_and_life_examples_only_as_manifestation
   - third_type_work_candidate
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 12 章：可支付性：为什么路径越走越像路

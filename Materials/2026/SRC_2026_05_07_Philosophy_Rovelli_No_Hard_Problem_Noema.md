@@ -30,6 +30,12 @@ tags:
   - philosophical_zombies
   - qualia
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-05-07-PHIL-ROVELLI-NO-HARD-PROBLEM-NOEMA
 ---
 
 # SourceCard: Rovelli on the Hard Problem of Consciousness

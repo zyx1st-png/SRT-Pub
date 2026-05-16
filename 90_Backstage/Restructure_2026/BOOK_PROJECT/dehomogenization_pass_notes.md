@@ -4,6 +4,9 @@ type: backstage_review_notes
 status: active_draft
 canonical: false
 scope: book_project
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Dehomogenization Pass Notes

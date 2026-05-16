@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V14-MAINTEXT-LOCK-CANDIDATE
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V14-MAINTEXT-LOCK-CANDIDATE--VD--15-V14-MAINTEXT-LOCK-CANDIDATE
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -21,6 +21,9 @@ optimization_axis:
   - compress_false_caring_and_external_pressure_lines
   - preserve_ch13_ch14_necessity_bridge
   - preserve_d_value_bridge_without_formal_overreach
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

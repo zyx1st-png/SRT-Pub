@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION
+id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION--VD--11-V11-CHAIN-ROLE-PREDICTION-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 11
@@ -28,6 +28,9 @@ review_inputs:
   - residual_six_issue_review_after_v10
   - judgment_list_review
   - bridge_readability_review
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 11 章：本体论摩擦：为什么现实不会免费成形

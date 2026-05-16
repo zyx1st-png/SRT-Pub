@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH12-PAYABILITY-PATH
+id: SRT-BOOK-CH12-PAYABILITY-PATH--VD--12-V5-ALIGNMENT-HARDENING-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 12
@@ -22,6 +22,9 @@ optimization_axis:
   - four_payment_positions_formation_maintenance_switching_repair
   - opponents_resource_path_dependence_low_friction_expensive_paths
   - bridge_to_ch13_path_health_criteria
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 12 章：可支付性：为什么路径越走越像路

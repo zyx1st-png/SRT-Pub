@@ -14,6 +14,9 @@ related:
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/05_锚定让一留下_v15_polished.md
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景_v9_polished.md
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 卷一 1–6 / 6b 一致性闭环审校

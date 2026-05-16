@@ -13,8 +13,8 @@ dependency: [SRT-SOC-THEORY-05]
 # SRT SocTheory Language Eco Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_SocTheory_05_Language_Eco.md`](../SRT_SocTheory_05_Language_Eco.md)
-- Source owner bytes: `50445`
-- Source owner SHA-256: `67b413bafc715903f958199b5a7ec8e114af0b2e96ddbb0f0f4a645adc157635`
+- Source owner bytes: `50597`
+- Source owner SHA-256: `437fc1e7c4211966207ccfb607e76101e42e92de99f5b6d6b585e73bb36eaf8a`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

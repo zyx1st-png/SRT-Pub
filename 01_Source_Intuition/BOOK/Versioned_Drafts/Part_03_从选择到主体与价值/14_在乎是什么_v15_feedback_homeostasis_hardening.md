@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V15-FEEDBACK-HOMEOSTASIS-HARDENING
+id: SRT-BOOK-CH14-CARING-V15-FEEDBACK-HOMEOSTASIS-HARDENING--VD--14-V15-FEEDBACK-HOMEOSTASIS-HARDENING
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -25,6 +25,9 @@ optimization_axis:
   - harden_epsilon_to_youguan_lineage
   - clarify_youguan_to_caring_bridge_as_subjectivity_problem
   - clarify_d_value_as_degree_of_staked_consequence_return
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

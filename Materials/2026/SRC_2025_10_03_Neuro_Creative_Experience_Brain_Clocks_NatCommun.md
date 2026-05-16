@@ -33,6 +33,12 @@ tags:
   - learning
   - Nature_Communications
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2025-10-03-NEURO-CREATIVE-EXPERIENCE-BRAIN-CLOCKS-NATCOMM
 ---
 
 # SourceCard: Creative Experiences and Brain Clocks

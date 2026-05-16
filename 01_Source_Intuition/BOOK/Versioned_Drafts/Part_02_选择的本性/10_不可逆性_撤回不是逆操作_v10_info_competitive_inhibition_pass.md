@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION
+id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION--VD--10-V10-INFO-COMPETITIVE-INHIBITION-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 10
@@ -31,6 +31,9 @@ optimization_axis:
   - trauma_as_structural_rewrite_not_psychology_chapter
   - neural_plasticity_without_neuroscience_expansion
   - bridge_to_ontological_friction_payability_path
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 10 章：不可逆性：撤回不是逆操作

@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH03-EPSILON-PG
+id: SRT-BOOK-CH03-EPSILON-PG--VD--03-PG-L0-V13-ARGUMENT-SHARPENING
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 03
@@ -17,6 +17,9 @@ optimization_axis:
   - distinguish_from_theology_teleology_and_value_preference
   - cross_scale_analogies_without_identity
   - bridge_to_selection_as_determination
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 3 章：ε_pg：L0 的最小非中立性

@@ -4,6 +4,12 @@ patch_id: PATCH-PHIL-SOC-COG01-ZBS-DISCRIMINATORY-COGNITION
 target_document: "Philosophy/SRT_Social_Cognition.md"
 status: integrated
 domain: philosophy_social_cognition
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-PHIL-SOC-COG01-ZBS-DISCRIMINATORY-COGNITION
 ---
 
 # Integration Hook: SOC-COG01 ZBS and Discriminatory Cognition

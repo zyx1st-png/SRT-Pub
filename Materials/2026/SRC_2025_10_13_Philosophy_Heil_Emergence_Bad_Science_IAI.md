@@ -28,6 +28,12 @@ tags:
   - claim_hygiene
   - anti_overreading
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2025-10-13-PHIL-HEIL-EMERGENCE-BAD-SCIENCE-IAI
 ---
 
 # SourceCard: Heil on Emergence as Bad Explanation

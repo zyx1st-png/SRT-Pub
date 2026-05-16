@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-PART01-INTERLUDE-FIRST-GENERATIVE-CHAIN
+id: SRT-BOOK-PART01-INTERLUDE-FIRST-GENERATIVE-CHAIN--VD--06B-V2-PROPOSITION-BRIDGE
 type: book_interlude
 part: 01_from_being_to_becoming
 status: draft_v2_proposition_bridge
@@ -17,6 +17,9 @@ optimization_axis:
   - preserve_interlude_length
   - visualize_first_generative_chain
   - force_part02_necessity
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 卷一命题组：第一条生成链

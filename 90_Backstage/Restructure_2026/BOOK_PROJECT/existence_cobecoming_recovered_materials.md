@@ -8,6 +8,9 @@ related:
   - 01_Source_Intuition/BOOK/00_全书章节写作概要_存在共成体补充.md
   - 01_Source_Intuition/BOOK/00_全书章节写作概要.md
   - 01_Source_Intuition/BOOK/Outline_Parts/README.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Recovered Materials · Existence Co-Becoming / 存在共成体

@@ -23,6 +23,12 @@ tags:
   - conscious_agency
   - shared_agency
   - sense_of_agency
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-PHIL-PH-AG01-AGENCY-LADDER
 ---
 
 # SRT Philosophy Patch PH-AG01: Agency Ladder and Selection-Control Architecture v0.1

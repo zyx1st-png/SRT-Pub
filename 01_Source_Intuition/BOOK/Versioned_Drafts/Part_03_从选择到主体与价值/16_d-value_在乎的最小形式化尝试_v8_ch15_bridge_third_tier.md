@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH16-DVALUE-V8-CH15-BRIDGE-THIRD-TIER
+id: SRT-BOOK-CH16-DVALUE-V8-CH15-BRIDGE-THIRD-TIER--VD--16-D-VALUE-V8-CH15-BRIDGE-THIRD-TIER
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 16
@@ -29,6 +29,9 @@ optimization_axis:
   - opponent_pressure_hardening
   - reduce_formula_overreach
   - ch17_bridge_d_expansion_not_love
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 16 章：d-value：在乎的最小形式化尝试

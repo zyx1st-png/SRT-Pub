@@ -36,6 +36,12 @@ tags:
   - bystander_silence
   - institutional_betrayal
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-05-08-PHIL-SOC-ACTIVE-INFERENCE-DISCRIMINATORY-COGNITION
 ---
 
 # SourceCard: Active Inference, ZBS, and Discriminatory Cognition

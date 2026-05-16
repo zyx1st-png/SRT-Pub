@@ -3,6 +3,9 @@ id: SRT-BOOK-RECOVERED-MATERIALS-2026
 status: active_draft
 type: backstage_recovery_register
 canonical: false
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Recovered Materials · Book Project

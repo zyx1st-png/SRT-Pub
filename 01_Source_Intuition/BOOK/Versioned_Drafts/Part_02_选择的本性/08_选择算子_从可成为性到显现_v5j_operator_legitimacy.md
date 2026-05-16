@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH08-CHOICE-OPERATOR
+id: SRT-BOOK-CH08-CHOICE-OPERATOR--VD--08-V5J-OPERATOR-LEGITIMACY
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 08
@@ -16,6 +16,9 @@ optimization_axis:
   - writeback_vs_anchoring_boundary
   - metaphor_partition_stabilized
   - no_new_symbols_in_main_text
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 8 章：选择算子：从可成为性到显现

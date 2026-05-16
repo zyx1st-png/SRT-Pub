@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH16-DVALUE-V12-TEMPORAL-LOCK-POLISH
+id: SRT-BOOK-CH16-DVALUE-V12-TEMPORAL-LOCK-POLISH--VD--16-D-VALUE-V12-TEMPORAL-LOCK-POLISH
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 16
@@ -25,6 +25,9 @@ optimization_axis:
   - compress_s6_name_substitution_terms
   - soften_wanton_to_d_zero_mapping
   - preserve_v11_temporal_structure_and_ch17_bridge
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 16 章：d-value：在乎的最小形式化尝试

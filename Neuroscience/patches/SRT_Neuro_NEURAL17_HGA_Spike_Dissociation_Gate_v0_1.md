@@ -23,6 +23,12 @@ tags:
   - BMI
   - proxy_guardrail
   - Nature
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-NEURO-NEURAL17-HGA-SPIKE-DISSOCIATION-GATE
 ---
 
 # SRT Neuroscience Patch NEURAL17: HGA-Spike Dissociation Gate v0.1

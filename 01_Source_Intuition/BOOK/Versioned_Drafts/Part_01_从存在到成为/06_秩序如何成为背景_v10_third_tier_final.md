@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH06-ORDER-AS-BACKGROUND
+id: SRT-BOOK-CH06-ORDER-AS-BACKGROUND--VD--06-V10-THIRD-TIER-FINAL
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 06
@@ -18,6 +18,9 @@ optimization_axis:
   - introduce_L2_as_backgrounded_stable_layer
   - seed_order_double_edge_without_expansion
   - complete_part01_to_part02_transition
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 6 章：秩序如何成为背景

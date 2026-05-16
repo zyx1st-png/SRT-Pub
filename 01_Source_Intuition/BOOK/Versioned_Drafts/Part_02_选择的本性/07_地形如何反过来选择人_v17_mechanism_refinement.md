@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH07-TERRAIN-SELECTS
+id: SRT-BOOK-CH07-TERRAIN-SELECTS--VD--07-V17-MECHANISM-REFINEMENT
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 07
@@ -22,6 +22,9 @@ optimization_axis:
   - subject_as_bearing_form
   - reselection_as_condition_reopening
   - choice_operator_as_formative_relation
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 7 章：地形如何反过来选择人

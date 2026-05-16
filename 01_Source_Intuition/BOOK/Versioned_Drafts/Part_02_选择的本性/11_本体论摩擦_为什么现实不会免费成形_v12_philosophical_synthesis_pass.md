@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION
+id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION--VD--11-V12-PHILOSOPHICAL-SYNTHESIS-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 11
@@ -23,6 +23,9 @@ optimization_axis:
   - prediction_contribution_hardened
   - bridge_to_payability_closure_identity_future_choice
   - third_type_work_candidate
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 11 章：本体论摩擦：为什么现实不会免费成形

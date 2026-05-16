@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION
+id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION--VD--11-V7-MICRO-POLISH-SIGNATURE-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 11
@@ -24,6 +24,9 @@ review_inputs:
   - micro_polish_suggestions_on_repair_shadow_cost
   - micro_polish_suggestions_on_felt_actual_cost
   - micro_polish_suggestions_on_judgment_list_compression
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 11 章：本体论摩擦：为什么现实不会免费成形

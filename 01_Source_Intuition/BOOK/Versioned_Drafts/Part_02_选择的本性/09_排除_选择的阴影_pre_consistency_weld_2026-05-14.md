@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH09-EXCLUSION-SHADOW-OF-SELECTION
+id: SRT-BOOK-CH09-EXCLUSION-SHADOW-OF-SELECTION--VD--09-PRE-CONSISTENCY-WELD-2026-05-14
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 09
@@ -24,6 +24,9 @@ optimization_axis:
   - less_negation_rhythm
   - no_full_occlusion_theory
   - third_type_work_candidate
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 9 章：排除：选择的阴影

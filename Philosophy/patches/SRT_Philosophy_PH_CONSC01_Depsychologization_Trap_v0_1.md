@@ -20,6 +20,12 @@ tags:
   - panpsychism
   - subjecthood
   - anti_overreading
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-PHIL-PH-CONSC01-DEPSYCHOLOGIZATION-TRAP
 ---
 
 # SRT Philosophy Patch PH-CONSC01: Depsychologization Trap v0.1

@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH08-CHOICE-OPERATOR
+id: SRT-BOOK-CH08-CHOICE-OPERATOR--VD--08-V5R-TERRAIN-EMBODIMENT-FOCUS-PASS-REMOTE-MAIN-2026-05-14
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 08
@@ -19,6 +19,9 @@ optimization_axis:
   - L0_to_L1_selective_compression_without_formula
   - L2_feedback_loop_seed
   - bridge_to_shadow_without_expanding_ch09
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 8 章：选择算子：从可成为性到显现

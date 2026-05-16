@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V5-THIRD-TIER-ARGUMENT
+id: SRT-BOOK-CH14-CARING-V5-THIRD-TIER-ARGUMENT--VD--14-V5-THIRD-TIER-ARGUMENT
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -24,6 +24,9 @@ optimization_axis:
   - attention_option_body_terrain_mechanism
   - d_value_semantic_seed_only
   - bridge_to_value_not_preference
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

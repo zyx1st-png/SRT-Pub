@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH08-CHOICE-OPERATOR
+id: SRT-BOOK-CH08-CHOICE-OPERATOR--VD--08-V5I-METAPHOR-PARTITION-COMPRESSED
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 08
@@ -16,6 +16,9 @@ optimization_axis:
   - glue_for_conditional_formation
   - reduce_mid_late_repetition
   - stabilize_choice_operator_as_becoming_one
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 8 章：选择算子：从可成为性到显现

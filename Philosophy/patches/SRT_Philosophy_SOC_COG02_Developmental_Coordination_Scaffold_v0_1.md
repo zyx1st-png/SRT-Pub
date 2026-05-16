@@ -22,6 +22,12 @@ tags:
   - coordination_dynamics
   - child_environment_fit
   - social_cognition
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-PHIL-SOC-COG02-DEVELOPMENTAL-COORDINATION-SCAFFOLD
 ---
 
 # SRT Philosophy Patch SOC-COG02: Developmental Coordination Scaffold v0.1

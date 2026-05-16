@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH12-PAYABILITY-PATH
+id: SRT-BOOK-CH12-PAYABILITY-PATH--VD--12-V17-FINAL-LITERARY-POLISH
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 12
@@ -21,6 +21,9 @@ optimization_axis:
   - path_trace_density_mechanism
   - actual_felt_debt_bridge
   - non_anthropic_payability_axis
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 12 章：可支付性：为什么路径越走越像路

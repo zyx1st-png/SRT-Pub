@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION
+id: SRT-BOOK-CH11-ONTOLOGICAL-FRICTION--VD--11-V6-STRUCTURAL-REVIEW-INTEGRATION-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 11
@@ -30,6 +30,9 @@ review_inputs:
   - psi_f_canonical_s_sig_s_str_payability_condition
   - irreversibility_t_irr_1_repair_as_trace_rewrite
   - irreversibility_t_irr_4_suppressed_signal_to_structural_accumulation
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 11 章：本体论摩擦：为什么现实不会免费成形

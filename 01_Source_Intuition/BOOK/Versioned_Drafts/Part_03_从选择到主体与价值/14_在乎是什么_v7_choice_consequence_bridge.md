@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V7-CHOICE-CONSEQUENCE-BRIDGE
+id: SRT-BOOK-CH14-CARING-V7-CHOICE-CONSEQUENCE-BRIDGE--VD--14-V7-CHOICE-CONSEQUENCE-BRIDGE
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -21,6 +21,9 @@ optimization_axis:
   - subject_as_bearing_position
   - consequence_return_test
   - d_value_semantic_seed_only
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

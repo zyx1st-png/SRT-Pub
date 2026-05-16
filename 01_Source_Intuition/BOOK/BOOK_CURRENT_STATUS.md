@@ -6,6 +6,9 @@ canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
 updated: 2026-05-14
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 《从存在到秩序》当前唯一施工入口

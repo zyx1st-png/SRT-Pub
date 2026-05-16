@@ -8,6 +8,9 @@ related:
   - 01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md
   - 01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md
   - 01_Source_Intuition/BOOK/00_全书章节写作概要_第三档哲学厚重补充.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 《从存在到秩序》第三类著作方向治理锚点

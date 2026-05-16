@@ -22,6 +22,12 @@ tags:
   - plasticity
   - expertise
   - learning
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-NEURO-NEURAL15-CREATIVE-EXPERIENCE-BRAIN-CLOCK
 ---
 
 # SRT Neuroscience Patch NEURAL15: Creative Experience Brain-Clock v0.1

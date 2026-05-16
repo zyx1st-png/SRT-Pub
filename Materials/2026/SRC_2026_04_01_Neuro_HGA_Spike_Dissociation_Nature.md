@@ -32,6 +32,12 @@ tags:
   - proxy_guardrail
   - Nature
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-04-01-NEURO-HGA-SPIKE-DISSOCIATION-NATURE
 ---
 
 # SourceCard: HGA-Spike Dissociation

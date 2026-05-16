@@ -4,6 +4,12 @@ patch_id: PATCH-PHIL-PH-METH01-EMERGENCE-HYGIENE
 target_document: "Core/SRT_Core_21c_Bridge_Hypotheses.md"
 status: integrated
 domain: philosophy_of_science
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-PHIL-PH-METH01-EMERGENCE-HYGIENE
 ---
 
 # Integration Hook: PH-METH01 Emergence Hygiene

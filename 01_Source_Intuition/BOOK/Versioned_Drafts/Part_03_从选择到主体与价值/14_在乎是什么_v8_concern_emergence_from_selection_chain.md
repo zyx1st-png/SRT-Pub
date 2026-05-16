@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V8-CONCERN-EMERGENCE-FROM-SELECTION-CHAIN
+id: SRT-BOOK-CH14-CARING-V8-CONCERN-EMERGENCE-FROM-SELECTION-CHAIN--VD--14-V8-CONCERN-EMERGENCE-FROM-SELECTION-CHAIN
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -22,6 +22,9 @@ optimization_axis:
   - concern_as_non_externalizable_coupling
   - caring_as_subjective_manifestation_of_concern
   - d_value_as_formal_extension
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

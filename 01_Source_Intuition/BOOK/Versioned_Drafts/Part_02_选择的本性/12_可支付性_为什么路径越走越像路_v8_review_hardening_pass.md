@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH12-PAYABILITY-PATH
+id: SRT-BOOK-CH12-PAYABILITY-PATH--VD--12-V8-REVIEW-HARDENING-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 12
@@ -30,6 +30,9 @@ optimization_axis:
   - four_payments_as_recursive_generator
   - stronger_opponents_with_srt_non_redundancy
   - ch11_to_ch13_bridge_hardened
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 12 章：可支付性：为什么路径越走越像路

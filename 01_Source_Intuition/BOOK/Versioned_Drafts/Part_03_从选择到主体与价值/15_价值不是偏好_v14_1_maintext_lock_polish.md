@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V14-1-MAINTEXT-LOCK-POLISH
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V14-1-MAINTEXT-LOCK-POLISH--VD--15-V14-1-MAINTEXT-LOCK-POLISH
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -22,6 +22,9 @@ optimization_axis:
   - strengthen_proposition_group
   - preserve_ch13_ch14_necessity_bridge
   - preserve_d_value_bridge_without_formal_overreach
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

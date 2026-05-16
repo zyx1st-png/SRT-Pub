@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V12-BRIDGE-AND-DEPTH-COMPLETION
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V12-BRIDGE-AND-DEPTH-COMPLETION--VD--15-V12-BRIDGE-AND-DEPTH-COMPLETION
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -22,6 +22,9 @@ optimization_axis:
   - preserve_v11_three_route_old_picture
   - preserve_v11_structural_criterion_bold
   - preserve_v11_named_neuroscience_social_science
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

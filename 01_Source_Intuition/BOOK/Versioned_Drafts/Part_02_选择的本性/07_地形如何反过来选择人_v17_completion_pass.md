@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH07-TERRAIN-SELECTS
+id: SRT-BOOK-CH07-TERRAIN-SELECTS--VD--07-V17-COMPLETION-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 07
@@ -29,6 +29,9 @@ optimization_axis:
   - strong_opponent_hardening
   - nonhuman_terrain_examples
   - operator_bridge_compression
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 7 章：地形如何反过来选择人

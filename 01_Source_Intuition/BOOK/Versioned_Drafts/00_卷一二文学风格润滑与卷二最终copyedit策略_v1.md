@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-PART01-02-LITERARY-COPYEDIT-PLAN
+id: SRT-BOOK-PART01-02-LITERARY-COPYEDIT-PLAN--VD--00-COPYEDIT-V1
 type: book_style_copyedit_plan
 scope:
   - part_01_from_being_to_becoming
@@ -16,6 +16,9 @@ purpose:
   - fuse_physical_and_information_metaphor_fields
   - preserve_third_type_work_density
   - prepare_final_copyedit_after_freeze
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 卷一、卷二文学风格润滑与卷二最终 copyedit 策略 v1

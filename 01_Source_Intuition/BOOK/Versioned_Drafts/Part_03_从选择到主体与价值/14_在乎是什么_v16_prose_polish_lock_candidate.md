@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V16-PROSE-POLISH-LOCK-CANDIDATE
+id: SRT-BOOK-CH14-CARING-V16-PROSE-POLISH-LOCK-CANDIDATE--VD--14-V16-PROSE-POLISH-LOCK-CANDIDATE
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -22,6 +22,9 @@ optimization_axis:
   - preserve_youguan_lineage
   - preserve_caring_externality
   - preserve_d_value_seed
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

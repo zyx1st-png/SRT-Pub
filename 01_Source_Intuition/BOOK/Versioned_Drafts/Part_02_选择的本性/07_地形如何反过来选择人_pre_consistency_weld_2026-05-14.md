@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH07-TERRAIN-SELECTS
+id: SRT-BOOK-CH07-TERRAIN-SELECTS--VD--07-PRE-CONSISTENCY-WELD-2026-05-14
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 07
@@ -22,6 +22,9 @@ optimization_axis:
   - compress_explanatory_sections
   - sharpen_formative_relation
   - preserve_mechanism_chain
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 7 章：地形如何反过来选择人

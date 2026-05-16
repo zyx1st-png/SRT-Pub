@@ -4,6 +4,12 @@ patch_id: PATCH-NEURO-NEURAL15-CREATIVE-EXPERIENCE-BRAIN-CLOCK
 target_document: "Neuroscience/SRT_Neural_Mechanisms.md"
 status: integrated
 domain: neuroscience_plasticity
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-NEURO-NEURAL15-CREATIVE-EXPERIENCE-BRAIN-CLOCK
 ---
 
 # Integration Hook: NEURAL15 Creative Experience Brain-Clock

@@ -5,6 +5,9 @@ status: active_draft
 canonical: false
 chapter: 05
 candidate: v6
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Chapter 5 v6 Recovery Notes

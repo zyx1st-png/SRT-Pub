@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V8-CROSS-DOMAIN-PRESSURE
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V8-CROSS-DOMAIN-PRESSURE--VD--15-V8-CROSS-DOMAIN-PRESSURE-HARDENING
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -25,6 +25,9 @@ optimization_axis:
   - social_science_polanyi_path_dependence
   - irreversibility_physical_substrate
   - biology_sub_experiential_non_substitutability
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

@@ -4,6 +4,12 @@ patch_id: PATCH-PHIL-PH-CONSC01-DEPSYCHOLOGIZATION-TRAP
 target_document: "Philosophy/SRT_Subjecthood_Threshold_Interface.md"
 status: integrated
 domain: philosophy_of_mind
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-PHIL-PH-CONSC01-DEPSYCHOLOGIZATION-TRAP
 ---
 
 # Integration Hook: PH-CONSC01 Depsychologization Trap

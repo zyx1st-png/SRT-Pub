@@ -21,6 +21,12 @@ tags:
   - anesthesia
   - consciousness
   - spike_wave_coupling
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-NEURO-CONSC14-PROPOFOL-TRAVELING-WAVE-REORGANIZATION
 ---
 
 # SRT Neuroscience Patch CONSC14: Propofol Traveling-Wave Reorganization v0.1

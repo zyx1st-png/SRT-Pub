@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION
+id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-REVERSE-OPERATION--VD--10-V14-REVIEW-POLISH-PASS
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 10
@@ -31,6 +31,9 @@ review_changes:
   - soften_formal_term_introduction_in_section_4
   - strengthen_section_7_title
   - sharpen_section_14_closing_cadence
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 10 章：不可逆性：撤回不是逆操作

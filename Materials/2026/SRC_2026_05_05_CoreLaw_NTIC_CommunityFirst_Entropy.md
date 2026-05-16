@@ -30,6 +30,12 @@ tags:
   - situated_autonomy
   - minimal_agency
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-05-05-CORELAW-NTIC-COMMUNITY-FIRST-ENTROPY
 ---
 
 # SourceCard: Community First Theory and NTIC

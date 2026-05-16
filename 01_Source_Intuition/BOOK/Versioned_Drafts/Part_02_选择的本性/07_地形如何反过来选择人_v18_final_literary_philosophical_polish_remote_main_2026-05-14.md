@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH07-TERRAIN-SELECTS
+id: SRT-BOOK-CH07-TERRAIN-SELECTS--VD--07-V18-FINAL-LITERARY-PHILOSOPHICAL-POLISH-REMOTE-MAIN-2026-05-14
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 07
@@ -18,6 +18,9 @@ optimization_axis:
   - preserve_five_signature_propositions
   - compress_cross_scale_examples
   - bridge_to_choice_operator_without_formalization
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 7 章：地形如何反过来选择人

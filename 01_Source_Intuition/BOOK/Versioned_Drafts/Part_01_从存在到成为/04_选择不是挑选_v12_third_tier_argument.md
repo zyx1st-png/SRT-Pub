@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH04-SELECTION-NOT-PICKING
+id: SRT-BOOK-CH04-SELECTION-NOT-PICKING--VD--04-V12-THIRD-TIER-ARGUMENT
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 04
@@ -18,6 +18,9 @@ optimization_axis:
   - generalize_selection_beyond_human_psychology
   - seed_irreversibility_without_ch10_expansion
   - bridge_from_epsilon_pg_to_anchoring
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 4 章：选择不是挑选

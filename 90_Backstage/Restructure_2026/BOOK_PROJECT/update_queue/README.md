@@ -5,6 +5,9 @@ status: active
 canonical: false
 scope: book_project_backstage
 created: 2026-05-10
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Book Update Queue

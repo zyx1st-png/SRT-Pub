@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V11-NECESSITY-BRIDGE-FROM-YOUGUAN
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V11-NECESSITY-BRIDGE-FROM-YOUGUAN--VD--15-V11-NECESSITY-BRIDGE-FROM-YOUGUAN
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -23,6 +23,9 @@ optimization_axis:
   - preserve_neuroscience_and_social_mechanism_pressure
   - keep_value_as_non_substitutability
   - defer_d_value_expansion_to_ch16
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

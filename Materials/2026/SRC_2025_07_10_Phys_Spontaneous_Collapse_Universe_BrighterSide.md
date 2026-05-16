@@ -33,6 +33,12 @@ tags:
   - objective_collapse
   - cosmological_constant
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2025-07-10-PHYS-SPONTANEOUS-COLLAPSE-UNIVERSE-BRIGHTERSIDE
 ---
 
 # SourceCard: Brighter Side / JHEP spontaneous collapse cosmology

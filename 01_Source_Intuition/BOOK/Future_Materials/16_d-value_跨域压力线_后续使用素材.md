@@ -11,6 +11,10 @@ usage_note: >
   第16章 v10 为保持第三类主文本节奏，仅保留少量压力点；
   以下材料不进入当前章主梁，后续可用于卷内附录、跨域论证章节，或新书中“各领域如何把 SRT 推到边界”的系统展开。
   所有经验科学、人名、年份、术语与强事实表述均需在后续正式使用前逐条核验原文。
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
+type: book_future_material
 ---
 
 # 第 16 章 d-value：跨域压力线后续使用素材

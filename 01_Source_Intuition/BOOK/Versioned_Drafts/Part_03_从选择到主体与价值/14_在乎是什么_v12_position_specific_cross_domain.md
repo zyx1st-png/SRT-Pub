@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V12-POSITION-SPECIFIC-CROSS-DOMAIN
+id: SRT-BOOK-CH14-CARING-V12-POSITION-SPECIFIC-CROSS-DOMAIN--VD--14-V12-POSITION-SPECIFIC-CROSS-DOMAIN
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -21,6 +21,9 @@ optimization_axis:
   - cross_domain_examples_physics_biology_neuroscience_philosophy_social_science
   - clarify_youguan_to_caring_bridge_as_subjectivity_problem
   - clarify_d_value_as_degree_of_staked_consequence_return
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

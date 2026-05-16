@@ -33,6 +33,12 @@ tags:
   - intentional_action
   - philosophy_of_mind
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-04-27-PHIL-AGENCY-PACHERIE-CAMBRIDGE
 ---
 
 # SourceCard: Elisabeth Pacherie, *Agency* \(Cambridge Elements in Philosophy of Mind\)

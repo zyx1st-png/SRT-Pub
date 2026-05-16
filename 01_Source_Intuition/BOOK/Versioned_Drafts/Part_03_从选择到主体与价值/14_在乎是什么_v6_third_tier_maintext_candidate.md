@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V6-THIRD-TIER-MAINTEXT-CANDIDATE
+id: SRT-BOOK-CH14-CARING-V6-THIRD-TIER-MAINTEXT-CANDIDATE--VD--14-V6-THIRD-TIER-MAINTEXT-CANDIDATE
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -23,6 +23,9 @@ optimization_axis:
   - operational_contrast_cases
   - d_value_semantic_seed_only
   - transition_to_value_not_preference
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

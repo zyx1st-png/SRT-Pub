@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-PART02-STABLE-REPLACEMENT-PATCH-0811
+id: SRT-BOOK-PART02-STABLE-REPLACEMENT-PATCH-0811--VD--00-08-09-11-V1-CODEX-READY
 type: codex_ready_patch_instruction
 part: 02_nature_of_selection
 status: draft_v1_codex_ready
@@ -12,6 +12,9 @@ purpose:
   - codex_or_human_safe_full_file_replacement
   - avoid_truncated_chat_copy_risk
   - synchronize_part02_stable_maintexts
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 卷二 08 / 09 / 11 稳定主稿替换补丁说明 v1

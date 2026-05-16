@@ -34,6 +34,12 @@ tags:
   - relativity
   - quantum_foundations
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-04-27-PHYS-QUANTUM-PROPER-TIME-POPULARMECHANICS
 ---
 
 # SourceCard: Popular Mechanics / PRL quantum signatures of proper time in optical ion clocks

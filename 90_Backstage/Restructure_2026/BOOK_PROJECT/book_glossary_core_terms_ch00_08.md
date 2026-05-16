@@ -9,6 +9,9 @@ related:
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md
   - 01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人.md
   - 01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Core Glossary · Ch00–08

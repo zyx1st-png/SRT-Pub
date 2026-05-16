@@ -30,6 +30,12 @@ tags:
   - Hubble_tension
   - large_scale_structure
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-04-27-PHYS-COSMOLOGICAL-PRINCIPLE-NEWSCIENTIST
 ---
 
 # SourceCard: New Scientist on the 100-year-old cosmological-principle assumption

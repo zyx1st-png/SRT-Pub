@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH16-DVALUE-V11-TEMPORAL-STRUCTURE-REFINEMENT
+id: SRT-BOOK-CH16-DVALUE-V11-TEMPORAL-STRUCTURE-REFINEMENT--VD--16-D-VALUE-V11-TEMPORAL-STRUCTURE-REFINEMENT
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 16
@@ -23,6 +23,9 @@ optimization_axis:
   - s10_reframe_as_structural_gap_not_name_swap
   - s11_compress_five_questions_to_one_paradox
   - s11_add_structural_necessity_ch17_bridge
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 16 章：d-value：在乎的最小形式化尝试

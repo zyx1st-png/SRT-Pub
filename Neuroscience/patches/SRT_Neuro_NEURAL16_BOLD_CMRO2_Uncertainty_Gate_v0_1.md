@@ -22,6 +22,12 @@ tags:
   - metabolic_proxy
   - measurement_uncertainty
   - neurovascular_coupling
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-NEURO-NEURAL16-BOLD-CMRO2-UNCERTAINTY-GATE
 ---
 
 # SRT Neuroscience Patch NEURAL16: BOLD-CMRO2 Uncertainty Gate v0.1

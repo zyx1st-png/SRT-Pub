@@ -6,6 +6,12 @@ target_documents:
   - "Core_Law/SRT_Reference_Scaling.md"
 status: integrated
 domain: core_law_collective_selection
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-CORELAW-COLL08-NTIC-SITUATED-INDIVIDUATION
 ---
 
 # Integration Hook: COLL08 NTIC Situated Individuation

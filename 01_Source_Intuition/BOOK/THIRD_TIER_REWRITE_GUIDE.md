@@ -10,6 +10,9 @@ related:
   - 01_Source_Intuition/BOOK/Outline_Parts/00_总览与序章.md
   - 01_Source_Intuition/BOOK/Outline_Parts/03_卷三_从选择到主体与价值.md
   - 90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 《从存在到秩序》第三类著作改写与写作指南

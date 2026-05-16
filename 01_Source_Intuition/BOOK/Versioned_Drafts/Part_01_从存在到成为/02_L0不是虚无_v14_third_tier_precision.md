@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH02-L0-NOT-NOTHING
+id: SRT-BOOK-CH02-L0-NOT-NOTHING--VD--02-L0-V14-THIRD-TIER-PRECISION
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 02
@@ -17,6 +17,9 @@ optimization_axis:
   - strengthen_indirect_edge_detection
   - prepare_minimum_non_neutrality_question
   - avoid_entity_substrate_and_subjectivization_readings
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 2 章：L0 不是虚无

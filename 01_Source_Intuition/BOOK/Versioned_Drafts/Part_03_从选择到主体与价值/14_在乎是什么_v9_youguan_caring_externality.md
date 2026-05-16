@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V9-YOUGUAN-CARING-EXTERNALITY
+id: SRT-BOOK-CH14-CARING-V9-YOUGUAN-CARING-EXTERNALITY--VD--14-V9-YOUGUAN-CARING-EXTERNALITY
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -22,6 +22,9 @@ optimization_axis:
   - mark_caring_externality_without_moralizing
   - seed_value_and_collective_order
   - d_value_as_structural_extension_of_youguan
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

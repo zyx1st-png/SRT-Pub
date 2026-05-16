@@ -33,6 +33,12 @@ tags:
   - spike_wave_coupling
   - bioRxiv
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-05-08-NEURO-PROPOFOL-TRAVELING-WAVES-BIORXIV
 ---
 
 # SourceCard: Propofol, Traveling Waves, and Loss of Responsiveness

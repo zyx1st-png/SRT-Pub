@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-PART02-PROPOSITION-BRIDGE
+id: SRT-BOOK-PART02-PROPOSITION-BRIDGE--VD--00-V1-BRIDGE
 type: book_part_bridge
 part: 02_nature_of_selection
 status: draft_v1_bridge
@@ -17,6 +17,9 @@ optimization_axis:
   - bridge_to_part03
   - proposition_group
   - third_type_work_candidate
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 卷二命题组：选择如何在地形中发生

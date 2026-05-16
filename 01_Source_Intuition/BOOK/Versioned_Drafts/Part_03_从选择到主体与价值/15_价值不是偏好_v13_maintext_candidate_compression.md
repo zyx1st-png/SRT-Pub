@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V13-MAINTEXT-CANDIDATE-COMPRESSION
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V13-MAINTEXT-CANDIDATE-COMPRESSION--VD--15-V13-MAINTEXT-CANDIDATE-COMPRESSION
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -22,6 +22,9 @@ optimization_axis:
   - lighten_d_value_formula_preview
   - remove_revision_note_from_body
   - keep_value_as_non_substitutability
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

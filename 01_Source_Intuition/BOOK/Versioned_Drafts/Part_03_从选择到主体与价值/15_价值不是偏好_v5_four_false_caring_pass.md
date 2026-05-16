@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V5-FOUR-FALSE-CARING
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V5-FOUR-FALSE-CARING--VD--15-V5-FOUR-FALSE-CARING-PASS
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -24,6 +24,9 @@ optimization_axis:
   - false_caring_structural_differentiation
   - modern_systems_produce_false_caring
   - bridge_to_d_value_without_formalization
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

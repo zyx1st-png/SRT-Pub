@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH16-DVALUE-V6-COMPRESSION-PRECISION
+id: SRT-BOOK-CH16-DVALUE-V6-COMPRESSION-PRECISION--VD--16-D-VALUE-V6-COMPRESSION-PRECISION
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 16
@@ -26,6 +26,9 @@ optimization_axis:
   - d_not_moral_value
   - d_value_fallibility
   - bridge_to_d_expansion_not_benevolence
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 16 章：d-value：在乎的最小形式化尝试

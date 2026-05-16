@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH02-L0-NOT-NOTHING
+id: SRT-BOOK-CH02-L0-NOT-NOTHING--VD--02-L0-PRE-PART01-CONSOLIDATION-2026-05-14
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 02
@@ -11,6 +11,9 @@ optimization_axis:
   - align_with_ch03_epsilon_pg
   - stabilize_l0_as_pre_object_becoming
   - avoid_subjectivization_and_warehouse_reading
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 2 章：L0 不是虚无

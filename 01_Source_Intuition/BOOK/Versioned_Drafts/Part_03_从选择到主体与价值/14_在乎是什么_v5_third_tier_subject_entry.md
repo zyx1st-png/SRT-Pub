@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V5-THIRD-TIER-SUBJECT-ENTRY
+id: SRT-BOOK-CH14-CARING-V5-THIRD-TIER-SUBJECT-ENTRY--VD--14-V5-THIRD-TIER-SUBJECT-ENTRY
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -22,6 +22,9 @@ optimization_axis:
   - subjectivity_entry
   - d_value_semantic_seed
   - transition_to_value_not_preference
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

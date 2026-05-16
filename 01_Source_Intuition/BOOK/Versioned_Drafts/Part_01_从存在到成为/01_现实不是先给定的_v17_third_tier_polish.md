@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH01-REALITY-NOT-GIVEN
+id: SRT-BOOK-CH01-REALITY-NOT-GIVEN--VD--01-V17-THIRD-TIER-POLISH
 type: book_chapter
 part: 01_from_being_to_becoming
 chapter: 01
@@ -17,6 +17,9 @@ optimization_axis:
   - return_flying_arrow_arc
   - reduce_defensive_clarification
   - lead_to_L0_without_downstream_terms
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 1 章：现实不是先给定的

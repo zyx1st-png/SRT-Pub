@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V6-THIRD-TIER
+id: SRT-BOOK-CH15-VALUE-NOT-PREFERENCE-V6-THIRD-TIER--VD--15-V6-THIRD-TIER-HARDENING
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 15
@@ -24,6 +24,9 @@ optimization_axis:
   - restore_value_not_moral_label_with_three_tier_distinction
   - add_strong_opponent_section
   - bridge_to_d_value_hardened
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 15 章：价值不是偏好

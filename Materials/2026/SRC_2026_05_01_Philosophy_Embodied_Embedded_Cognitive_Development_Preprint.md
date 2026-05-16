@@ -34,6 +34,12 @@ tags:
   - co_regulation
   - degeneracy
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2026-05-01-PHIL-EMBODIED-EMBEDDED-COGNITIVE-DEVELOPMENT
 ---
 
 # SourceCard: Embodied and Embedded Cognitive Development

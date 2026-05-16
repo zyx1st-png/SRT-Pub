@@ -10,6 +10,9 @@ related:
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/05_锚定让一留下.md
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景_v3.md
   - 01_Source_Intuition/BOOK/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # Ch00–08 Crosslink Insertion Patch

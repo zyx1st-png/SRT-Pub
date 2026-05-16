@@ -4,6 +4,12 @@ patch_id: PATCH-PHIL-PH-CONSC02-PERSPECTIVAL-GAP-GATE
 target_document: "Philosophy/SRT_HardProblem_Epistemology.md"
 status: integrated
 domain: philosophy_of_mind
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: integration_hook
+id: HOOK-PHIL-PH-CONSC02-PERSPECTIVAL-GAP-GATE
 ---
 
 # Integration Hook: PH-CONSC02 Perspectival Gap Gate

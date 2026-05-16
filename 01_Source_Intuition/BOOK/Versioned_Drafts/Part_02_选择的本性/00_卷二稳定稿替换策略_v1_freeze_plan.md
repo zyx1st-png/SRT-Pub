@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-PART02-FREEZE-PLAN
+id: SRT-BOOK-PART02-FREEZE-PLAN--VD--00-V1-FREEZE-PLAN
 type: book_part_freeze_plan
 part: 02_nature_of_selection
 status: draft_v1_freeze_plan
@@ -18,6 +18,9 @@ optimization_axis:
   - freeze_sequence
   - final_copyedit_scope
   - no_more_mechanism_expansion
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 卷二稳定稿替换策略 v1

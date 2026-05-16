@@ -19,6 +19,12 @@ tags:
   - mechanism_first
   - claim_hygiene
   - anti_overreading
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_patch
+id: PATCH-PHIL-PH-METH01-EMERGENCE-HYGIENE
 ---
 
 # SRT Philosophy Patch PH-METH01: Emergence Hygiene v0.1

@@ -31,6 +31,12 @@ tags:
   - illusionism
   - philosophy_of_mind
 status: source_card
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+type: material_source_card
+id: SRC-2021-07-02-PHIL-FRANKISH-DEPSYCHOLOGIZATION-PANPSYCHISM
 ---
 
 # SourceCard: Frankish on Panpsychism and Depsychologized Consciousness

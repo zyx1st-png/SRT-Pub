@@ -6,6 +6,9 @@ canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
 updated: 2026-05-14
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 ---
 
 # 《从存在到秩序》书稿版本管理日志

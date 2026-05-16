@@ -1,3 +1,13 @@
+---
+id: SRT-BOOK-VERSIONED-DRAFTS
+type: book_versioned_drafts_index
+status: active_v1
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
+canonical: false
+---
+
 # Book Versioned Drafts
 
 This directory stores independent chapter drafts after they have been consolidated back into stable chapter files.

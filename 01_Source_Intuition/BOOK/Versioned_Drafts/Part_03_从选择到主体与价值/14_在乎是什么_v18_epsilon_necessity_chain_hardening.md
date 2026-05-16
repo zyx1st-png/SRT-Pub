@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH14-CARING-V18-EPSILON-NECESSITY-CHAIN-HARDENING
+id: SRT-BOOK-CH14-CARING-V18-EPSILON-NECESSITY-CHAIN-HARDENING--VD--14-V18-EPSILON-NECESSITY-CHAIN-HARDENING
 type: book_chapter_versioned_draft
 part: 03_subject_value
 chapter: 14
@@ -16,6 +16,9 @@ optimization_axis:
   - theory_contrast_hardened
   - part03_entry_strengthened
   - examples_before_definition
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 14 章：在乎是什么

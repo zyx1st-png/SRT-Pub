@@ -1,5 +1,5 @@
 ---
-id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-RETURN-TO-ORIGIN
+id: SRT-BOOK-CH10-IRREVERSIBILITY-NO-RETURN-TO-ORIGIN--VD--10-V15-THIRD-TIER-FINAL
 type: book_chapter
 part: 02_nature_of_selection
 chapter: 10
@@ -20,6 +20,9 @@ optimization_axis:
   - epsilon_anti_closure_as_reselection_window
   - psi_f_historical_debt_bridge
   - avoid_thermodynamic_reduction
+layer: L1
+epistemic_layer: bridge
+claim_mode: companion_exposition
 ---
 
 # 第 10 章：不可逆性：撤回不是回到原点
