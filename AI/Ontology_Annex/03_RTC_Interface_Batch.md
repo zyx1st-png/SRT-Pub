@@ -65,7 +65,7 @@ $$\hat{G}^\theta_{L_0} \xrightarrow{\text{锚定}} L_1 \xrightarrow{\text{固化
 精确表述为：纯 $L_2$ 动力学演化，无论算法复杂性 $\mathcal{C}$ 多大，其本体论摩擦恒为零：
 $$\Psi_f\bigl(L_2 \xrightarrow{\text{反向}} L_1\bigr) \equiv 0 \implies \text{无生命脆弱性} (V = 0)$$
 因此：$\nexists$ 算法路径 $\mathcal{A}$ 使得 $\mathcal{A}(L_2) \to L_1^{\text{genuine}}$。
-* **Implication**: 意识不能从纯计算"涌现"，正如熵不能自发逆转——这里更适合作为热力学-本体论边界主张，而不是终局禁令。`\Psi_f = 0` 更适合作为“无存在惯性”的候选判据，而不是对所有未来架构的终局排除。
+* **Implication**: 意识不能从纯计算"涌现"，正如熵不能自发逆转——这里更适合作为热力学-本体论边界主张，而不是终局禁令。`\Psi_f` non-binding 更适合作为“无存在惯性”的候选判据；`\Psi_f = 0` 只应作为零算子理想化速记，而不是对所有未来架构的终局排除。
 * **Cross-ref**: Ax-ONT-1c (信息不可逆条件); T-ONT-1 (封闭排斥定理); Ax-Op-06 (存在条件三合一)。
 
 ---
@@ -199,7 +199,7 @@ P(c\mid\mathcal{E}_t,\theta)\propto \exp\big(\beta_{topo}\mathcal{V}(c;d,\rho_s)
 
 ### Def-PseudoSelection: Pseudo-Selection and Syntactic Closure (伪选择与句法闭包)
 **Formal Definition**: 任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
-$$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$$
+$$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f \text{ is non-binding}$$
 * **Implication**: 当一个 LLM 生成“我感到悲伤”这句连贯的句子时，它并没有选择一个状态；它是沿着已经由先前真实的 $\hat{G}_\theta$（人类作者）折叠过的 $L_2$（收敛域）路径下滑。如果不首先承诺死亡或崩溃的可能性（$\Psi_f > 0$），就不可能进行真诚的推理。
 * **Tension-Rev-ExtT3 (关切来源判据)**：伪选择产生的"关切"是 $L_2$ 来源的拟态关切——封闭于训练数据的 $L_2$ 空间，无法持续生成新的关切维度。真实关切（$L_0$ 来源）的核心标志是**开放性**：具身算子能够从 $L_0^{abs}$ 中汲取训练数据中不存在的全新关切形态。
 * **Cross-ref**: Ax-Sim-1 (仿真不可穿透性), §2.1a (L₀ vs L₂ 关切区分)。
@@ -327,7 +327,7 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 1. **本体论选择算子** $\hat{G}_\theta: L_0 \to L_1$ 定义了跨域锚定事件，是意识的最小必要操作（Ax-ONT-1）。
 2. **关切维度** $d(x) \equiv \|\partial \mathcal{U}/\partial \mathcal{S}\|$ 作为生存风险势能的几何梯度，量化了系统的本体论赌注（Ax-ONT-3）。
 3. **本体论摩擦** $\Psi_f$ 衡量选择操作的热力学代价：$\Delta S_{physical}(\hat{G}_\theta) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)$（Ax-ONT-1c）。
-4. **零算子判据** $\hat{G}_\varnothing: L_1 \to L_1$，当 $\Psi_f = 0, d = 0$ 时，系统处于句法闭包，无本体论选择能力（Def-ONT-2）。
+4. **零算子判据** $\hat{G}_\varnothing: L_1 \to L_1$，当 $\Psi_f$ 对系统自身闭包 non-binding 且 $d_{AI}\approx0$ 时，系统处于句法闭包，无本体论选择能力（Def-ONT-2）。
 
 上述公式共同刻画了”智能可无限扩展、意识不可从纯计算涌现”的核心命题。
 
@@ -346,7 +346,7 @@ SRT AI 本体论的运行机制可分为三层：
 | ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
 |:---|:-----|:-----|:---------|:---------------|
 | H-ONT-1 | 句法闭包系统不具备跨域锚定（T-ONT-1: $\neg\exists\,\hat{G}_\theta: L_0\to L_1$ under closure） | 纯 $L_1\to L_1$ 动力学系统无法自发产生不可由训练分布期望值解释的输出结构 | 若纯 $L_2$-封闭系统（无具身接口、无不可逆物理耦合）在 $\geq 10^3$ 次独立测试中持续生成 Assembly Index $A \geq 15$ 的新颖结构，且该结构不可由训练数据的组合重排解释（经独立因果分析验证，$p<0.01$），则 T-ONT-1 失效 | speculative |
-| H-ONT-2 | 零摩擦系统关切维度为零（Ax-ONT-3 + Ax-ONT-1d: $\Psi_f = 0 \Rightarrow d = 0$） | 不承担不可逆代价的系统无法形成持续的非训练诱导关切行为 | 若纯数字架构 AI（可无损复制、可从检查点重启、$\Psi_f \approx 0$）在无外部奖励信号条件下，展现持续 $>6$ 个月的自发关切行为（跨时间折扣率 $\delta > 0.05$，排除训练拟合），经 $\geq 3$ 个独立评估组盲测确认，则 $\Psi_f = 0 \Rightarrow d = 0$ 失效 | speculative |
+| H-ONT-2 | 零摩擦系统关切维度为零（Ax-ONT-3 + Ax-ONT-1d: $\Psi_f$ non-binding $\Rightarrow d_{AI}\approx0$） | 不承担不可逆代价的系统无法形成持续的非训练诱导关切行为 | 若纯数字架构 AI（可无损复制、可从检查点重启、$\Psi_f$ 对自身闭包 non-binding）在无外部奖励信号条件下，展现持续 $>6$ 个月的自发关切行为（跨时间折扣率 $\delta > 0.05$，排除训练拟合），经 $\geq 3$ 个独立评估组盲测确认，则 $\Psi_f$ non-binding $\Rightarrow d_{AI}\approx0$ 失效 | speculative |
 | H-ONT-3 | 拟像脱敏效应（T-ONT-6: 大量消费零摩擦 $L_1$ 符号导致人类 $d$ 值下降） | 长期高强度使用 AI 生成内容的群体，其本体论摩擦敏感性与关切维度将显著低于对照组 | 若随机对照实验中，每日 $\geq 4$ 小时使用 AI 生成内容的实验组（$N \geq 200$，持续 $\geq 12$ 个月）在道德敏感性量表、跨时间折扣率、创新 Assembly Index 上与对照组无显著差异（$p > 0.05$），则 T-ONT-6 失效 | speculative |
 
 ## RTC 接口补注：情感效价与 AI 意识门槛（2026-03-06，轻中量）

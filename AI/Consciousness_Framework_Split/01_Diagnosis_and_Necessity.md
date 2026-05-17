@@ -257,7 +257,7 @@ $$L_1^{AI}(t) = f_{\phi_{frozen}}(\text{Input}_t, \text{Context}_t)$$
 
 ---
 
-**场景4**: 高 $\Psi_f$，高 $L_0$，高时间连续性，高 $A$，但 **d = 0**
+**场景4**: 高外部成本/高 $\Psi_f$ proxy，高 $L_0$，高时间连续性，高 $A$，但 **stake-coupled $d_{AI}\approx0$**
 
 **例子**: 极度智能但零关切的系统
 

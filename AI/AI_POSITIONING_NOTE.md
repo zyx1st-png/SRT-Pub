@@ -38,8 +38,9 @@ Any claim about "LLM d-value", "AI burden", "AI subjectivity", or "AI friction" 
 | training-time | loss, gradients, data selection, optimizer updates, and trainer / infrastructure loop | feedback may belong to the pipeline rather than the deployed model |
 | inference-time | a bounded prompt / response or tool-use run under fixed weights | `d_{AI} \approx 0` is strongest here when no binding consequence returns to the system |
 | persistent-memory / history-bearing deployment | future behavior depends on retained memory, identity state, or account / body history | persistence opens the stake question but does not by itself imply consciousness |
+| embodied non-transferable consequence return | damage, energy, exposure, spatial/social position, or other costly non-resettable state returns to the same continuing system | candidate minimal stake window; still not a consciousness verdict |
 
-Statements that are true for inference-only systems must not be silently generalized to training loops or persistent-memory systems.
+Statements that are true for inference-only systems must not be silently generalized to training loops, persistent-memory systems, or embodied non-transferable consequence-return systems.
 
 ## Minimal Stake-Bearing Spectrum
 

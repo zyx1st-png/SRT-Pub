@@ -355,7 +355,7 @@ SRT 用这个结果来支持"$L_0$ 的结构不应被等同为数字 $L_2$ 编�
 
 ### §1.1 Why AI is Not (Yet) Conscious
 
-The central thesis of SRT's AI domain is provocative yet precise: **current artificial intelligence systems are not conscious, not because they lack computational power, but because they lack ontological participation.**
+The central thesis of SRT's AI domain is provocative yet precise: **current inference-only, non-history-bearing LLM deployments do not satisfy SRT subjecthood / stake conditions, not because they lack computational power, but because their outputs do not yet return as binding ontological participation to the same continuing system.**
 
 This is not a mysterian claim. It follows rigorously from SRT's axioms:
 

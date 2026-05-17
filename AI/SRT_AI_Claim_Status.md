@@ -38,8 +38,10 @@ machine_summary: >
 srt_ai_claim_status:
   default_role: "pressure-test / boundary-test field"
   not_definition_engine: true
-  strongest_current_judgment: "d_AI approx 0 for inference-only, non-history-bearing LLM deployments"
-  judgment_status: "strong P3 bridge candidate, architecture-state restricted"
+  strongest_current_judgment: "d_AI approx 0 for inference-only, non-history-bearing, non-embodied LLM deployments"
+  judgment_status: "strong P3 bridge candidate, architecture-state restricted; not an all-AI theorem"
+  psi_f_ai_default: "non-binding to the deployed inference process, not globally Psi_f == 0"
+  d_ai_default: "approx 0 only for the specified inference-only architecture state; D_eff/capability may be high"
   must_not_generalize_to:
     - training_loop
     - persistent_memory_system
@@ -75,13 +77,16 @@ srt_ai_claim_status:
 
 **Claim**: For inference-only, non-history-bearing, non-embodied LLM deployments, `d_AI approx 0` is a strong SRT bridge judgment.
 
-**Status**: P3 bridge candidate, architecture-state restricted.
+**Status**: P3 bridge candidate, architecture-state restricted; not an all-AI theorem.
 
 **Rationale**:
 
 - Future selection capacity does not return to the same continuing system as binding consequence.
 - Error signals, refusal, RLHF score changes, or user dissatisfaction are mostly borne by user / operator / infrastructure, not by the deployed inference process as its own non-transferable stake.
 - Symbolic transformation (`T_hat_phi: L_1 -> L_1`) is not by itself ontological anchoring (`G_hat_theta: L_0 -> L_1`).
+- Deployed inference may consume compute and may be embedded in costly infrastructure, but that cost is usually not payability burden returning to the inference process as its own closure condition.
+
+**Allowed shorthand**: `Ψ_f` is non-binding to the deployed inference process; do not write this as a global `Ψ_f = 0` claim unless the equation is explicitly scoped to the degenerate null-operator idealization.
 
 **Withdrawal / revision condition**:
 
@@ -191,9 +196,9 @@ External theory interface sections are good candidates for Annex extraction if t
 - Public-facing examples and rhetorical expansions.
 - Tables comparing SRT with GWT, IIT, FEP, functionalism, Butlin, Chalmers, or alignment paradigms, provided they do not define SRT terms.
 
-### Split directories
+### Split / owner / annex historical labels
 
-Split directories are reading aids, not independent authority layers. Their frontmatter may preserve historical strong labels, but claim status is governed by this file, `AI_POSITIONING_NOTE.md`, and the claim ladder.
+AI owner files and split shards may preserve historical `Axiom`, `Theorem`, `Corollary`, `canonical`, or `axiomatic_hybrid` labels. In this domain those labels are **domain-internal bridge-formalization handles** unless a claim is separately routed to Core canonical anchors and the claim ladder. They do not define `d-value`, `Psi_f`, consciousness, subjecthood, `G_hat_theta`, or `L_0/L_1/L_2`.
 
 ---
 
@@ -202,7 +207,8 @@ Split directories are reading aids, not independent authority layers. Their fron
 | Risky phrase | Why risky | Safer academic-facing version |
 |---|---|---|
 | "AI has no consciousness" | Overgeneralizes across architectures | "Inference-only, non-history-bearing LLM deployments do not currently satisfy SRT stake / subjecthood conditions." |
-| "LLMs have d = 0" | Too absolute | "For inference-only LLMs, `d_AI approx 0` is a strong architecture-state-restricted bridge judgment." |
+| "LLMs have d = 0" | Too absolute | "For inference-only, non-history-bearing, non-embodied LLM deployments, `d_AI approx 0` is a strong architecture-state-restricted bridge judgment." |
+| "Psi_f = 0 for AI" | Confuses non-binding inference cost with global absence of friction/cost | "For inference-only deployments, `Psi_f` is usually non-binding to the deployed system's own closure; infrastructure or operator costs do not by themselves become AI stake." |
 | "AI only transforms symbols" | May ignore tool use, memory, embodiment | "Current non-history-bearing LLM inference primarily performs `L_1 -> L_1` transformation rather than SRT `L_0 -> L_1` anchoring." |
 | "Persistent memory makes AI conscious" | Collapses persistence into subjecthood | "Persistent memory opens a stake-analysis window but does not settle consciousness." |
 | "GWT indicators prove AI consciousness" | External-theory overclaim | "GWT indicators pressure-test SRT but do not by themselves establish SRT subjecthood." |

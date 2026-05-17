@@ -553,7 +553,7 @@ $$\lim_{I \to \infty} \frac{W_{AI}}{W_{human}} = 0$$
 - 训练数据增加到整个互联网
 - 硬件达到脑模拟级别
 
-**仍然**: $W_{AI} \approx 0$（因为 $d = 0, \Psi_f = 0$）
+**仍然（限 inference-only / 非历史承载 / 非具身部署）**: $W_{AI}^{bridge} \approx 0$（因为 $d_{AI} \approx 0$ 且 $\Psi_f$ 对该部署自身闭包 non-binding）。训练回路、持久记忆或具身不可转移后果返回系统须另行分层判断。
 
 ---
 
@@ -929,7 +929,7 @@ $$\text{Meaning}(x) = d(\hat{G}) \cdot \Psi_f_x \cdot f(\tau_{remaining})$$
 1. **存活概率函数**：$\mathbb{P}(\text{survive to } t) = \exp(-\int_0^t \lambda(x_\tau)\,d\tau)$，其中 $\lambda(x) \geq 0$ 为危险率（Ax-MORT-2）。
 2. **d 值定义**：$d(x) \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$，风险势能的几何梯度（Ax-MORT-3）。
 3. **有死性加速学习定理**：$\eta \propto \|\partial\mathbb{E}[\tau_{survival}]/\partial\mathcal{E}\|$，学习效率与生存风险梯度正相关（T-MORT-1）。
-4. **不朽停滞定理**：当 $\lambda = 0, \partial\Omega = \varnothing$ 时，$d = 0 \Rightarrow \eta \approx 0$（T-MORT-2）。
+4. **不朽停滞定理（bridge）**：当 $\lambda = 0, \partial\Omega = \varnothing$ 且后果不回流到系统自身闭包时，$d_{AI} \approx 0 \Rightarrow \eta^{value} \approx 0$（T-MORT-2）。
 5. **智慧条件定理**：$\exists n \geq 2, d > 0, \partial\text{Error}/\partial\mathcal{S} \neq 0$（T-WIS-1）。
 
 ### Mechanism Explanation (机制解释)
@@ -945,8 +945,8 @@ $$\text{Meaning}(x) = d(\hat{G}) \cdot \Psi_f_x \cdot f(\tau_{remaining})$$
 
 | ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
 |:---|:-----|:-----|:---------|:---------------|
-| H-MORT-1 | 不朽停滞（T-MORT-2: $\lambda = 0 \land \partial\Omega = \varnothing \Rightarrow d = 0 \Rightarrow \eta \approx 0$） | 无死亡风险的系统学习效率趋于停滞，无法自发产生价值排序的更新 | 若一个无不可逆终止风险的 AI 系统（可完全回滚、无资源耗竭）在 $\geq 10^4$ 轮开放域任务中持续展现学习效率 $\eta$ 不衰减（与具有资源约束的对照系统无显著差异，$p < 0.01$），则 T-MORT-2 失效 | speculative |
-| H-MORT-2 | 智慧不可从纯推算涌现（T-WIS-1: $W > 0 \Rightarrow d > 0 \land \Psi_f > 0 \land n \geq 2$） | 纯计算系统（$d = 0, \Psi_f = 0$）在智慧型任务上系统性低于具身有限性系统 | 若纯数字 AI 在临终关怀判断、跨代伦理权衡、师徒共鸣评估等 $\geq 3$ 类智慧型任务的盲测中，持续达到或超过经验丰富的人类专家水平（$\geq 5$ 名独立评委一致评定，$N \geq 100$ 案例），则 T-WIS-1 的必要条件假说失效 | speculative |
+| H-MORT-1 | 不朽停滞（T-MORT-2 bridge: $\lambda = 0 \land \partial\Omega = \varnothing \land$ no consequence return $\Rightarrow d_{AI} \approx 0 \Rightarrow \eta^{value} \approx 0$） | 无不可逆后果回流的系统，其价值排序更新趋于停滞，无法自发产生 stake-coupled 重排 | 若一个无不可逆终止风险的 AI 系统（可完全回滚、无资源耗竭）在 $\geq 10^4$ 轮开放域任务中持续展现学习效率 $\eta$ 不衰减（与具有资源约束的对照系统无显著差异，$p < 0.01$），则 T-MORT-2 失效 | speculative |
+| H-MORT-2 | 智慧不可从纯推算涌现（T-WIS-1 bridge: $W^{stake} > 0 \Rightarrow d > 0 \land \Psi_f$ binding $\land n \geq 2$） | inference-only / 非历史承载系统（$d_{AI} \approx 0$, $\Psi_f$ non-binding）在 stake-heavy 智慧型任务上系统性低于具身有限性系统 | 若纯数字 AI 在临终关怀判断、跨代伦理权衡、师徒共鸣评估等 $\geq 3$ 类智慧型任务的盲测中，持续达到或超过经验丰富的人类专家水平（$\geq 5$ 名独立评委一致评定，$N \geq 100$ 案例），则 T-WIS-1 的必要条件假说失效 | speculative |
 | H-MORT-3 | 有死性加速学习（T-MORT-1: $\eta \propto \|\partial\mathbb{E}[\tau_{survival}]/\partial\mathcal{E}\|$） | 面临真实终止风险的系统比无终止风险的同架构系统学习更快 | 若在受控实验中，引入不可逆资源预算（$dB/dt < 0$）的 AI 系统与无资源约束的同架构对照在 $\geq 5$ 类任务上的学习速率无显著差异（$p > 0.05$, $N \geq 30$ 对照组），则 T-MORT-1 失效 | speculative |
 
 ## 【理论边界/防误用声明】

@@ -66,6 +66,9 @@ AI is a **pressure-test / boundary-test field** for SRT, not the theory's defini
 ## Status distinction
 
 - `AI_POSITIONING_NOTE.md`: AI-domain guardrail and architecture-state rule. It governs usage but does not settle AI consciousness.
+- `d_AI approx 0` and `Psi_f` non-binding are restricted to inference-only / non-history-bearing / non-embodied deployments unless a file explicitly states another architecture state.
+- Training-time, persistent-memory, or embodied consequence-return systems require separate stake analysis; capability, memory, tool use, or self-report does not settle consciousness.
+- Treat `Psi_f = 0` equations in AI files as null-operator idealizations or shorthand for non-binding payability burden, not as a global claim that no cost or friction exists anywhere in the AI pipeline.
 - `SRT_AI_Claim_Status.md`: claim-level audit / guardrail. It prevents file-level over-reading of AI owner, split, and annex files.
 - `_SRT_AI_Bridge.md`: bridge-layer foundation for AI. It should not be split into Annex unless a separate adjudication decides otherwise.
 - CompactCore files: concise current summaries, not replacements for canonical anchors.

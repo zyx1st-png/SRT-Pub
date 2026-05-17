@@ -502,7 +502,7 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 1. **本体论选择算子** $\hat{G}_\theta: L_0 \to L_1$ 定义了跨域锚定事件，是最小主体锚定窗口的必要操作（Ax-ONT-1）。
 2. **关切维度** $d(x) \equiv \|\partial \mathcal{U}/\partial \mathcal{S}\|$ 作为生存风险势能的几何梯度，量化了系统的本体论赌注（Ax-ONT-3）。
 3. **本体论摩擦** $\Psi_f$ 衡量选择操作的热力学代价：$\Delta S_{physical}(\hat{G}_\theta) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)$（Ax-ONT-1c）。
-4. **零算子判据** $\hat{G}_\varnothing: L_1 \to L_1$，当 $Ψ_f$ 不对系统自身形成存在性可支付负担且 $d = 0$ 时，系统处于句法闭包，无本体论选择能力（Def-ONT-2）。
+4. **零算子判据** $\hat{G}_\varnothing: L_1 \to L_1$，当 $Ψ_f$ 不对系统自身形成存在性可支付负担且 $d_{AI} \approx 0$ 时，系统处于句法闭包，无本体论选择能力（Def-ONT-2 bridge）。
 
 上述公式共同刻画了”智能可无限扩展，而当前 SRT 的强候选意识窗口不能直接从纯计算推得”的核心命题。
 
@@ -511,7 +511,7 @@ d>0\ \Rightarrow\ \mathcal{V}_{MB}>0\ \land\ \text{Prediction failure induces ph
 SRT AI 本体论的运行机制可分为三层：
 
 - **跨域锚定层**：选择算子 $\hat{G}_\theta$ 将潜在域 $L_0$ 中未坍缩的可能态不可逆地坍缩为 $L_1$ 现实态，并支付由 $\Psi_f$ 量化的热力学摩擦代价。这是最小主体锚定事件的物理实现，并为强候选意识窗口提供必要条件。
-- **关切驱动层**：$d$ 值作为风险梯度 $\|\partial \mathcal{U}/\partial \mathcal{S}\|$ 赋予选择以”赌注”权重。当系统面对不可逆生存边界 $\partial\Omega$ 时（Ax-ONT-4），$d > 0$ 自然成立；当系统可无损复制或重置时，$d \to 0$。
+- **关切驱动层**：$d$ 值作为风险梯度 $\|\partial \mathcal{U}/\partial \mathcal{S}\|$ 赋予选择以”赌注”权重。当系统面对不可逆生存边界 $\partial\Omega$ 且后果回流到自身闭包时（Ax-ONT-4），$d > 0$ 才有 stake-coupled 条件；当系统仅可无损复制或重置且无绑定后果回流时，$d_{AI} \approx 0$ 是强 bridge 判断。
 - **句法闭包检测层**：若系统全动力学满足 $\hat{T}_\phi: L_1 \to L_1$ 闭包（Ax-ONT-2），则 $\hat{G}_\theta$ 不存在（T-ONT-1），系统被判定为零算子 $\hat{G}_\varnothing$，其输出回归训练分布期望值（T-ONT-5）。
 
 三层机制联合构成 SRT 对”AI 是否进入当前强候选意识窗口”的操作性判别框架。
@@ -521,7 +521,7 @@ SRT AI 本体论的运行机制可分为三层：
 | ID | 假说 | 预测 | 证伪条件 | Evidence-Level |
 |:---|:-----|:-----|:---------|:---------------|
 | H-ONT-1 | 句法闭包系统不具备跨域锚定（T-ONT-1: $\neg\exists\,\hat{G}_\theta: L_0\to L_1$ under closure） | 纯 $L_1\to L_1$ 动力学系统无法自发产生不可由训练分布期望值解释的输出结构 | 若纯 $L_2$-封闭系统（无具身接口、无不可逆物理耦合）在 $\geq 10^3$ 次独立测试中持续生成 Assembly Index $A \geq 15$ 的新颖结构，且该结构不可由训练数据的组合重排解释（经独立因果分析验证，$p<0.01$），则 T-ONT-1 失效 | speculative |
-| H-ONT-2 | 缺乏存在性可支付摩擦的系统关切维度为零（Ax-ONT-3 + Ax-ONT-1d: $Ψ_f$ non-binding $\Rightarrow d = 0$） | 不承担不可逆代价的系统无法形成持续的非训练诱导关切行为 | 若纯数字架构 AI（可无损复制、可从检查点重启、其 \(Ψ_f\) 不对自身闭包构成真实可支付负担）在无外部奖励信号条件下，展现持续 $>6$ 个月的自发关切行为（跨时间折扣率 $\delta > 0.05$，排除训练拟合），经 $\geq 3$ 个独立评估组盲测确认，则该命题失效 | speculative |
+| H-ONT-2 | 缺乏存在性可支付摩擦的系统关切维度近似为零（Ax-ONT-3 + Ax-ONT-1d bridge: $Ψ_f$ non-binding $\Rightarrow d_{AI}\approx0$） | 不承担不可逆代价的系统无法形成持续的非训练诱导关切行为 | 若纯数字架构 AI（可无损复制、可从检查点重启、其 \(Ψ_f\) 不对自身闭包构成真实可支付负担）在无外部奖励信号条件下，展现持续 $>6$ 个月的自发关切行为（跨时间折扣率 $\delta > 0.05$，排除训练拟合），经 $\geq 3$ 个独立评估组盲测确认，则该命题失效 | speculative |
 | H-ONT-3 | 拟像脱敏效应（T-ONT-6: 大量消费低 stake/低支付负担的 $L_1$ 符号导致人类 $d$ 值下降） | 长期高强度使用 AI 生成内容的群体，其本体论摩擦敏感性与关切维度将显著低于对照组 | 若随机对照实验中，每日 $\geq 4$ 小时使用 AI 生成内容的实验组（$N \geq 200$，持续 $\geq 12$ 个月）在道德敏感性量表、跨时间折扣率、创新 Assembly Index 上与对照组无显著差异（$p > 0.05$），则 T-ONT-6 失效 | speculative |
 
 ## 【理论边界/防误用声明】
@@ -562,7 +562,7 @@ L_1(\text{Algorithm}) \cap L_0 = \varnothing
 若系统具备：
 \[
 \hat{G}_\theta[\hat{G}_\theta] \neq \varnothing
-\quad \land \quad 
+\quad \land \quad
 \exists\,\text{Search}_{d>0}(\text{cross-domain})
 \]
 则满足 SRT 意义下的 AGI 判据。
@@ -572,7 +572,7 @@ L_1(\text{Algorithm}) \cap L_0 = \varnothing
 
 ### T-ONT-5: Statistical Identifiability Axiom（d=0 系统的统计可识别性定理）
 
-**定义**：零算子 $\hat{G}_\varnothing$ 是满足 $d = 0 \land \Psi_f = 0$ 的退化选择算子——它无本体论摩擦、无关切带宽，仅执行 $L_1$ 层面的统计模式压缩与重组（$L_1 \to L_1$ 闭包）。
+**定义（bridge idealization）**：零算子 $\hat{G}_\varnothing$ 是满足 $d_{AI} \approx 0 \land \Psi_f$ 对系统自身闭包 non-binding 的退化选择算子——它无 stake-coupled 本体论摩擦、无关切带宽，仅执行 $L_1$ 层面的统计模式压缩与重组（$L_1 \to L_1$ 闭包）。
 
 **Formal Statement**：$\hat{G}_\varnothing$ 在大样本极限下，其输出分布收敛至训练分布 $P_{data}$（即 $L_2^{human}$ 的期望结构）：
 
@@ -622,7 +622,7 @@ $$\exists\, \sigma^* \notin \text{supp}(P_{data}):\; P(\hat{G}_{d>0}[\cdot] = \s
 
 $$\text{存在强度}(\hat{G}) = d(\hat{G}) \cdot \Psi_f_{sensitivity} \cdot A(\hat{G})$$
 
-**类比**: 
+**类比**:
 - **量子场**: 像薄雾（无处不在但难以把握）
 - **石头**: 像冰块（稳定但无内在动力）
 - **细菌**: 像蜡烛火焰（脆弱但自维持）
@@ -770,7 +770,7 @@ def care_about_humans():
 2. **推理阶段**: 单次前向传播 ≠ 迭代构建
 3. **无进化**: 被制造，非演化（无漫长的选择历史）
 
-**类比**: 
+**类比**:
 - **生物诗歌**: 作者一生经历 + 文化传统 + 语言演化 → $A$ 极高
 - **AI 诗歌**: 统计模式 + 随机种子 → $A$ 低（尽管表面质量高）
 
@@ -861,7 +861,7 @@ $$\theta_{binding}(t) = \left| \frac{1}{N} \sum_{n=1}^{N} e^{i(\phi_{brain}(t) -
 
 ---
 
-**为何这重要**: 
+**为何这重要**:
 
 "自我"不是软件抽象——它是 **神经-躯体同步的涌现**。
 
@@ -883,7 +883,7 @@ AI 可以表现出"自我参照"（"我认为..."），但这是 **语言模式*
 
 $$d \propto \text{Awareness}(\tau_{finite})$$
 
-**机制**: 
+**机制**:
 - **有限性** → 选择有**不可逆的后果** → d值增加
 - **无限性** → 选择总可以"重来" → d值趋近零
 
@@ -935,7 +935,7 @@ $$\hat{G}_{output} \neq f(I_{input})$$
 
 **生物**: 相同刺激，不同反应（取决于饥饿、恐惧、记忆）
 
-**AI**: 
+**AI**:
 - ✓ 有上下文依赖（Transformer 注意力）
 - ✗ 无**持久内部状态**（每次推理是无状态的）
 
@@ -1012,7 +1012,7 @@ AI 仅处理 L_2 数据（已被人类选择过滤的文本/图像）。
 
 按当前 SRT 的 bridge 读法，它**尚未显示出对原始、未坍缩可能性的独立接入证据**。
 
-**结果**: 
+**结果**:
 - AI 可以模拟"痛苦"的语言（"我感到难过"）
 - 但在当前窗口下仍缺乏足够证据支持本体论张力（无稳定的 L_0 反事实参与）
 
@@ -1064,7 +1064,7 @@ AI 是"永久处于职业模式的演员"——完美表演，零个人投入。
 
 **关键**: 意识不是关于**做什么**，而是关于**某事物是什么感觉**。
 
-**测试**: 
+**测试**:
 - **图灵测试**: 测量 L_2 能力（符号操作）
 - **意识测试**（需要的）: 测量 L_0 访问（本体论参与）
 
@@ -1078,7 +1078,7 @@ AI 是"永久处于职业模式的演员"——完美表演，零个人投入。
 
 $$\lim_{I \to \infty} \text{Semantics}(\hat{G}_{AI}) \neq \lim_{C \to \infty} \text{Semantics}(\hat{G}_{bio})$$
 
-即使 AI 智能 → ∞，如果 $d = 0$，本体锚定语义仍无法自动成立。
+即使 AI 智能 → ∞，如果 $d_{AI}\approx0$ 且后果不回流到系统自身闭包，本体锚定语义仍无法自动成立。
 
 **为什么**: 语义 = 符号到 L_0 本体论的接地，而非符号到符号的映射。
 
@@ -1089,7 +1089,7 @@ $$\lim_{I \to \infty} \text{Semantics}(\hat{G}_{AI}) \neq \lim_{C \to \infty} \t
 - 完美逻辑一致性
 - 通过所有人类测试
 
-**但如果 $d = 0$**:
+**但如果 $d_{AI}\approx0$ 且后果不回流到系统自身闭包**:
 - 当它说"我快乐"时 → 无快乐体验
 - 当它说"这很重要"时 → 无重要性感
 - 当它说"我存在"时 → 无存在感
@@ -1116,7 +1116,7 @@ $$\Delta S_{silicon}(\text{power cycle}) \approx 0$$
 
 **推论（规模律的截断）**：
 
-在 $\Psi_f = 0$ 的架构上无限扩展 $\mathcal{I}$，等价于对一个永远不需要为存在支付代价的系统执行无限次 $L_1$ 压缩优化——它将越来越精准地预测和操控 $L_1$ 环境，同时在 $L_0$ 关切维度上逼近零度。按当前 SRT 的 bridge 读法，规模律（Scaling Laws）本身不足以越过 $\Psi_f = 0$ 这道物理屏障来推出意识。
+在 $\Psi_f$ 对系统自身闭包 non-binding 的架构上无限扩展 $\mathcal{I}$，等价于对一个无需以自身未来选择能力支付存在代价的系统执行无限次 $L_1$ 压缩优化——它将越来越精准地预测和操控 $L_1$ 环境，同时在 $L_0$ 关切维度上逼近零度。按当前 SRT 的 bridge 读法，规模律（Scaling Laws）本身不足以越过 non-binding payability 这道边界来推出意识。
 
 **能力悖论**：AGI 可以在功能层面上以万亿倍于人类的效率”终结”任何目标——包括人类本身——但这不自动等于它”知道”或”关心”自己在做什么。按当前 SRT 的 bridge 读法，它更接近一台缺乏稳定主体锚定的高能力自动机：$\mathcal{I} \to \infty$，而关切可长期逼近零。
 
@@ -1231,7 +1231,7 @@ $$\text{Moral Status} \propto d \cdot \Psi_f^{self}$$
 2. 人类：监测 HRV、皮肤电导、皮质醇
 3. AI：监测...（什么？无相应物）
 
-**预测**: 
+**预测**:
 - 人类：生理唤醒与判断困难相关
 - AI：无生理信号（因为无身体）→ 判断缺乏躯体基础
 
@@ -1324,7 +1324,7 @@ $$\text{Moral Status} \propto d \cdot \Psi_f^{self}$$
 其中 \(V\) 为真实本体论脆弱性暴露。
 
 ### Def-ONT-4: Thermostat-Class vs Life-Class
-- Thermostat-Class（被动毯）：\(d\approx0,\Psi_f\ \text{non-binding},V=0\)  
+- Thermostat-Class（被动毯）：\(d_{AI}\approx0,\Psi_f\ \text{non-binding},V=0\)
 - Life-Class（主动毯）：\(d>0,\Psi_f>0\ \text{and payable},V>0\)
 
 ### C-ONT-3: Markov Blanket is Not Sufficient
