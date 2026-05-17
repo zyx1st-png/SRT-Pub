@@ -12,15 +12,9 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 # SRT术语表与符号索引
 # SRT Glossary & Symbol Index
 
----
-
-> **📚 文档类型：参考手册**
-> **使用方式：按需查阅,支持Ctrl+F搜索**
-> **最后更新：2026-01-23**
+> Split shard generated from `../SRT_Glossary.md`; owner remains source of record.
 
 ---
-
-## 使用指南
 
 ## 3. 领域特定参数
 
@@ -55,10 +49,10 @@ $$\kappa_\tau = \frac{\text{整合的时间窗口长度}}{\text{基础神经振�
 
 **首次出现**：Neuroscience/SRT_Consciousness_Mechanisms.md §7.2
 
-**深思维定理**：
-$$\text{Wisdom} \propto \kappa_\tau \cdot d$$
+**深思维关系（降级为 proxy）**：
+$$\text{Wisdom}^{proxy} \sim f(\kappa_\tau, d_{proxy}, d_{mobile}, \text{correction window})$$
 
-智慧 ∝ 时间耦合深度 × 考虑范围
+智慧不能简化为时间耦合深度 × d。时间整合、赌注化关切、可移动性和纠错窗口都只是候选 proxy。
 
 **神经基础**：
 - 慢皮层节律(~0.01-0.1 Hz)
@@ -156,10 +150,10 @@ $$V(t) = V_0 e^{-\beta t}$$
 
 **首次出现**：Neuroscience/SRT_Consciousness_Mechanisms.md
 
-**SRT解释**：
-$$\beta \propto \frac{1}{d \cdot \kappa_\tau}$$
+**SRT解释（降级为 behavioral proxy）**：
+$$\beta^{proxy} \sim f(d_{proxy}, \kappa_\tau, d_{mobile}, \text{risk}, \text{context})$$
 
-折扣率 ∝ 1 / (考虑范围 × 时间耦合)
+时间折扣率可作为未来后果回流 / 时间耦合的行为 proxy；不得直接反推 canonical d-value。
 
 **应用**：
 - 成瘾：β极高(只看眼前)
@@ -200,10 +194,10 @@ $$\mu_{expect} = E[\Psi_f | \text{未来情境}]$$
 
 **首次出现**：Philosophy/SRT_Ethics_Agency.md §4
 
-**道德责任**：
-$$\text{Responsibility} \propto \mu_{expect} - \mu_{actual}$$
+**责任相关性（降级为局部 proxy）**：
+$$\text{Responsibility}^{proxy} \sim f(\mu_{expect},\mu_{actual},\text{choice window},\text{consequence return})$$
 
-责任 ∝ 期望摩擦 - 实际摩擦的偏差
+责任不能简化为期望摩擦与实际摩擦的差值；还必须检查真实可选择性、后果回流、信息可得性和可支付的重选通道。
 
 **应用**：
 - 高估μ：过度悲观,不敢尝试

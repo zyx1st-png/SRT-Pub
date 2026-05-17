@@ -27,7 +27,7 @@ canonical: false
 | urgent | 109.5 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | action | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | action | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
-| action | 83.4 KiB | `SRT_Glossary.md` | Glossary/README.md |
+| action | 88.1 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | action | 82.1 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
 | action | 81.6 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | action | 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
@@ -39,8 +39,8 @@ canonical: false
 | action | 69.9 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
 | warning | 66.1 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
 | warning | 64.8 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
-| warning | 60.8 KiB | `Physics/SRT_Phys_09_Formalism_Ext.md` | Physics/Formalism_Ext_Split |
-| warning | 59.4 KiB | `Philosophy/SRT_Ethics_Agency.md` | Philosophy/Ethics_Agency_Split |
+| warning | 63.8 KiB | `Physics/SRT_Phys_09_Formalism_Ext.md` | Physics/Formalism_Ext_Split |
+| warning | 62.4 KiB | `Philosophy/SRT_Ethics_Agency.md` | Philosophy/Ethics_Agency_Split |
 | warning | 59.1 KiB | `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | Neuroscience/Immune_Dist_Split |
 | warning | 57.5 KiB | `Core_Law/SRT_L1_Formalism.md` | Core_Law/L1_Formalism_Split |
 | warning | 56.4 KiB | `Philosophy/SRT_Social_Cognition.md` | Philosophy/Social_Cognition_Split |
@@ -139,7 +139,7 @@ canonical: false
 | 109.5 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
-| 83.4 KiB | `SRT_Glossary.md` | Glossary/README.md |
+| 88.1 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | 82.1 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
 | 81.6 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |

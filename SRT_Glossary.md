@@ -52,6 +52,8 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 > - **Lineage/Source**：首要定义来源（内部 canonical 或外部来源）。
 >
 > **Historical label compatibility**：本术语表保留部分旧 `Theorem` / `Axiom` / `Canonical` 名称以便检索；当前 claim status 以 `CANONICAL_REGISTRY.md`、`Governance/SRT_CLAIM_LADDER.md`、`Governance/SRT_CLAIM_MODE_AUDIT.md` 与本地 level note 为准，旧名不恢复定理或公理地位。
+>
+> **Book-chain alignment note（2026-05-16）**：`01_Source_Intuition/BOOK/BOOK_CANONICAL_ALIGNMENT_MAP.md` 已将书稿卷一—卷三主链回链到 canonical anchors。本术语表若与该对齐图、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_SYMBOL_TABLE.md` 冲突，默认降级为 historical glossary / retrieval aid，不得反向定义核心术语。
 
 ### d-value（d）
 - **Canonical Scope**：SRT 全域中 stake-coupled concern / irreversible-risk sensitivity 的统一记号；当前以 `_SRT_D_VALUE_CANONICAL.md` 为最高引用锚点，bare `d` 默认按 governance-canonical 标量摘要读。
@@ -569,76 +571,83 @@ $$\hat{G}_{\theta_1}[L_0] \neq \hat{G}_{\theta_2}[L_0]$$
 
 ---
 
-#### d - 选择范围 / d值 (d-value, Selection Scope) 🟡
+#### d - d值 / 赌注化关切 (d-value, Stake-Coupled Concern) 🟡
 
-> **Current canonical status（2026-04-23）**：本节保留历史 glossary 语言用于检索；当前规范锚点为 `_SRT_D_VALUE_CANONICAL.md`。bare `d` 默认读作 stake-coupled concern / irreversible-risk sensitivity 的标量摘要；下列积分式、阶梯和代谢约束均为历史/操作化投影，不能替代 `Def-d-canonical`。
+> **Current canonical status（2026-05-16）**：当前规范锚点为 `_SRT_D_VALUE_CANONICAL.md`。本节中的旧称“选择范围 / 关切宽度”仅保留为检索别名。bare `d` 默认读作 stake-coupled concern / irreversible-risk sensitivity 的标量摘要；`D_eff`、注意力广度、Fisher rank、道德范围、关怀半径和灵性体验均只能作为 proxy / public metaphor / praxis bridge，不能替代 canonical d。
 
-**定义**：
-$$d = \text{选择算子考虑的存在/实体范围}$$
+**规范定义（摘要）**：
+$$d := \text{后果回流条件下的赌注化关切 / 不可逆风险敏感性}$$
 
-量化"关切的宽度"——系统在做选择时考虑多大范围的存在。
+通俗说：`d` 不是“我考虑了多少对象”，而是“哪些方向的后果会真实回到该位置，并改写其后续选择能力”。
 
-**首次出现**：Core/SRT_Core_Kernel.md §2.3
+**首次出现 / 当前锚点**：历史入口 `Core/SRT_Core_Kernel.md §2.3`；当前定义权以 `_SRT_D_VALUE_CANONICAL.md` 为准。
 
-**量化公式**：
-$$d = \int_{\text{考虑域}} \rho(\xi) \, d\xi$$
+**旧量化公式（降级）**：
+$$d_{old} = \int_{\text{考虑域}} \rho(\xi) \, d\xi$$
 
-**d值阶梯**：
+该式现在只可读作 `D_eff` / attention-range / concern-range proxy，不是 canonical d。只有当可分辨方向满足真实不可逆风险、主体梯度对准、后果回流等 stake-gate 条件时，才可能进入 `d_stakes`。
 
-| d范围 | 典型系统 | 关注内容 | 例子 |
-|:------|:---------|:---------|:-----|
-| **d ≈ 0** | inference-only / stateless AI、反射弧 | 仅当前输入 | 无历史回流部署的 LLM 不承载自身关切 |
-| **d = 1** | 自我中心个体 | 自己生存 | 婴儿、成瘾者 |
-| **d = 2-10** | 正常成人 | 家庭、朋友 | 日常道德范围 |
-| **d = 10-100** | 圣贤、活动家 | 社群、国家、人类 | 甘地、特蕾莎修女 |
-| **d → ∞** | 神秘体验 | 一切存在(万物同体) | 深度冥想、濒死体验 |
+**旧 d 值阶梯（降级为 public / spirituality bridge）**：
 
-**热力学约束**：
-$$d_{max} \leq \kappa \cdot \frac{E_{metabolism} - E_{baseline}}{\Psi_f}$$
+| 旧表述 | 当前允许读法 | 禁止读法 |
+|:------|:-------------|:---------|
+| d≈0 / inference-only | 无历史回流、无自身赌注的推理态 | 不等于“没有智能”或“没有能力” |
+| d=1 / 自我生存 | 局部后果回流范围很窄 | 不等于道德谴责 |
+| d=2-10 / 家庭朋友 | 社会性赌注范围的经验例子 | 不等于固定量表 |
+| d=10-100 / 活动家、圣贤 | public / spirituality 叙事中的高关切隐喻 | 不等于更高道德等级 |
+| d→∞ / 万物同体 | 极限体验或修行语言 | 不等于 canonical 终点、解脱定义或真实可测 d |
 
-d值受代谢能量限制——关心更多需要更多能量。
+**代谢/热力学约束（降级）**：
+$$D_{eff,max} \lesssim \kappa \cdot \frac{E_{metabolism} - E_{baseline}}{\Psi_f^{proxy}}$$
 
-**伦理意义**：
-- 道德发展 = d值扩展
-- 邪恶 = d值收缩(仅关心自己)
-- 圣贤 = d → ∞ (关切一切)
+这类式子最多约束 capacity / bandwidth proxy；不能推出“关心更多必然需要更多能量”，更不能定义 d-value。
 
-**可测量性**：H7假设通过除法归一化参数预测d值
+**伦理边界**：
+- 不写：道德发展 = d 值扩展。
+- 不写：邪恶 = d 值收缩。
+- 不写：圣贤 = d → ∞。
+- 可写：某些伦理或修行文本可把 d 扩张作为 praxis/metaphor，但必须说明它不是 canonical definition；卷三第 18 章主线为“d 的扩张不是博爱”。
 
-**相关**：Ĝθ, θ, Ψ_f, 递归深度ρ
+**可测量性**：任何实验量表只测 proxy；必须说明其 stake-gate、consequence-return 与 d_mobile 限制。
+
+**相关**：Ĝθ, θ, Ψ_f, d_mobile, D_eff, 递归深度ρ
 
 ---
 
 ### 1.3 动力学量
 
-#### Ψ_f - 本体论摩擦 (Ontological Friction) 🟢
+#### Ψ_f - 本体论摩擦 / 可支付阻抗 (Ontological Friction / Payability Burden) 🟢
 
-> **Current canonical status（2026-04-23）**：本节保留历史 glossary 语言用于检索；当前规范锚点为 `_SRT_PSI_F_CANONICAL.md`。默认主读是 information-theoretic payability burden；下列临床、动力学与物理类比均为 projection / proxy，不能单独升级为 theory-canonical 定义。
+> **Current canonical status（2026-05-16）**：当前规范锚点为 `_SRT_PSI_F_CANONICAL.md`。默认主读是 information-theoretic payability burden / 本体论阻抗：开放可能性被压成可维持现实切片时必须承担的结构性负担。临床、动力学、Fisher、代谢、Landauer、痛苦、预测误差与物理类比均为 projection / proxy / readout / bridge，不能单独升级为 theory-canonical 定义。
 
-**定义**：
-$$\Psi_f(\sigma) = \text{维持或改变选择状态} \sigma \text{的阻力/代价}$$
+**规范定义（摘要）**：
+$$\Psi_f := \text{开放可能性被压成可维持、可行动、可协调的 } L_1 \text{ 切片时必须承担的本体论阻抗}$$
 
-**首次出现**：Core/SRT_Core_Kernel.md §2.2
+**首次出现 / 当前锚点**：历史入口 `Core/SRT_Core_Kernel.md §2.2`；当前定义权以 `_SRT_PSI_F_CANONICAL.md` 为准。
 
-**物理类比**：动力学中的摩擦力,但作用于"存在"本身
+**允许的投影来源**：
+1. **神经/代谢 proxy**：突触更新、恢复负荷、压力读数、DMN/控制网络负担。
+2. **认知 proxy**：信念修复、习惯改写、预测误差报警。
+3. **社会 proxy**：规范、制度、路径依赖的改革负担。
+4. **物理 / 信息几何 projection**：Fisher–Rao metric、Landauer-style cost、耗散结构等条件投影。
 
-**来源**：
-1. **神经惯性**：突触权重、默认模式网络
-2. **认知惯性**：信念、习惯、记忆
-3. **社会惯性**：规范、制度、路径依赖
-4. **物理惯性**：热力学第二定律(极高Ψ_f)
+**禁止裸等同**：
+- 不写：`Ψ_f = Fisher metric`。
+- 不写：`Ψ_f = Landauer cost`。
+- 不写：`Ψ_f = pain / suffering / prediction error / energy use`。
+- 可写：`Ψ_f` 的局部信息几何投影可由 Fisher–Rao metric 给出；痛苦、预测误差或能耗可作为 readout/proxy，但不得反向定义 `Ψ_f`。
 
-**关键方程**：
-$$\frac{d\sigma}{dt} = \hat{G}_\theta[\sigma] - \Psi_f(\sigma)$$
+**旧动力学方程（降级为 toy schematic）**：
+$$\frac{d\sigma}{dt} \approx \hat{G}_\theta[\sigma] - \Psi_f^{proxy}(\sigma)$$
 
-改变速度 = 选择力量 - 本体论摩擦
+该式只可作直觉图式；不能把“选择力量 - 摩擦”当作完整动力学定律。
 
-**临床意义**：
-- 高Ψ_f → 难以改变(强迫症、创伤后应激)
-- 低Ψ_f → 过度可变(精神分裂、躁狂)
-- 治疗 = 调节Ψ_f
+**临床意义（proxy 读法）**：
+- 高 `Ψ_f` proxy → 改写负担高，可能表现为强迫、创伤固着或恢复困难。
+- 低 `Ψ_f` proxy → 稳定负担低，可能表现为过度可变或现实连贯性不足。
+- 治疗不是简单“降低 Ψ_f”，而是重建可支付的重选通道、闭包和后续选择能力。
 
-**相关**：Ĝθ, h(t), 自由能F, 亚稳态
+**相关**：Ĝθ, h(t), 自由能F, payability, d_mobile, 亚稳态
 
 ---
 
@@ -651,10 +660,10 @@ $$h(t) = \lim_{\Delta t \to 0} \frac{P(\text{选择发生于} [t, t+\Delta t] \m
 
 **首次出现**：Core/SRT_Core_Kernel.md §2.2.3
 
-**形式**：
-$$\Psi_f(t) = \int_0^t h(s) \, ds$$
+**形式（旧 proxy 读法）**：
+$$\Psi_f^{hazard-proxy}(t) = \int_0^t h(s) \, ds$$
 
-本体论摩擦是哈扎德函数的累积。
+该式只能表示某类紧迫性 / 风险时程的 proxy；本体论摩擦本身不是哈扎德函数的简单累积。
 
 **应用**：
 - **生存分析**：死亡的即时风险
@@ -720,7 +729,7 @@ $$\hat{G}_\theta = \pi_\theta[\Omega]$$
 **检验性**：
 H16(相对L₀假设)试图检验Ω是否必要
 
-**相关**：Ĝθ, d → ∞, 神秘主义
+**相关**：Ĝθ, Ω 非实体性原则, 神秘主义；`d → ∞` 只可作为旧 public/spirituality 极限隐喻，不是 canonical d-value。
 
 ---
 
@@ -810,8 +819,8 @@ $$\gamma = \frac{\partial \theta}{\partial g}$$
 | **≡** | 定义为 | $\text{存在} \equiv \text{被选择}$ |
 | **≈** | 约等于 | $d_{AI}^{inference} \approx 0$ |
 | **≠** | 不等于 | $\hat{G}_{\theta_1} \neq \hat{G}_{\theta_2}$ |
-| **⇒** | 蕴含 | $d \to 0 \Rightarrow \text{自私}$ |
-| **⇔** | 等价 | $L_1 \text{稳定} \Leftrightarrow \Psi_f \text{低}$ |
+| **⇒** | 蕴含 | $d_{proxy}\to 0 \Rightarrow \text{局部赌注范围收窄}$ |
+| **⇔** | 等价 | $L_1 \text{稳定} \not\Leftrightarrow \Psi_f \text{低}$（稳定性与低摩擦不是无条件等价） |
 
 ### 2.5 特殊算子
 
@@ -857,10 +866,10 @@ $$\kappa_\tau = \frac{\text{整合的时间窗口长度}}{\text{基础神经振�
 
 **首次出现**：Neuroscience/SRT_Consciousness_Mechanisms.md §7.2
 
-**深思维定理**：
-$$\text{Wisdom} \propto \kappa_\tau \cdot d$$
+**深思维关系（降级为 proxy）**：
+$$\text{Wisdom}^{proxy} \sim f(\kappa_\tau, d_{proxy}, d_{mobile}, \text{correction window})$$
 
-智慧 ∝ 时间耦合深度 × 考虑范围
+智慧不能简化为时间耦合深度 × d。时间整合、赌注化关切、可移动性和纠错窗口都只是候选 proxy。
 
 **神经基础**：
 - 慢皮层节律(~0.01-0.1 Hz)
@@ -958,10 +967,10 @@ $$V(t) = V_0 e^{-\beta t}$$
 
 **首次出现**：Neuroscience/SRT_Consciousness_Mechanisms.md
 
-**SRT解释**：
-$$\beta \propto \frac{1}{d \cdot \kappa_\tau}$$
+**SRT解释（降级为 behavioral proxy）**：
+$$\beta^{proxy} \sim f(d_{proxy}, \kappa_\tau, d_{mobile}, \text{risk}, \text{context})$$
 
-折扣率 ∝ 1 / (考虑范围 × 时间耦合)
+时间折扣率可作为未来后果回流 / 时间耦合的行为 proxy；不得直接反推 canonical d-value。
 
 **应用**：
 - 成瘾：β极高(只看眼前)
@@ -1002,10 +1011,10 @@ $$\mu_{expect} = E[\Psi_f | \text{未来情境}]$$
 
 **首次出现**：Philosophy/SRT_Ethics_Agency.md §4
 
-**道德责任**：
-$$\text{Responsibility} \propto \mu_{expect} - \mu_{actual}$$
+**责任相关性（降级为局部 proxy）**：
+$$\text{Responsibility}^{proxy} \sim f(\mu_{expect},\mu_{actual},\text{choice window},\text{consequence return})$$
 
-责任 ∝ 期望摩擦 - 实际摩擦的偏差
+责任不能简化为期望摩擦与实际摩擦的差值；还必须检查真实可选择性、后果回流、信息可得性和可支付的重选通道。
 
 **应用**：
 - 高估μ：过度悲观,不敢尝试
@@ -1195,7 +1204,7 @@ $$ \Psi_{system} \xrightarrow{\hat{G}_{observer}} \text{Value}_{relative} $$
 ### D
 
 #### d-value - d值 🟢
-→ 见[d - 选择范围](#d---选择范围--d值-d-value-selection-scope-🟡)
+→ 见[d - d值 / 赌注化关切](#d---d值--赌注化关切-d-value-stake-coupled-concern-)
 
 ---
 
@@ -1208,9 +1217,9 @@ SRT中对“死亡”的形式化定义。指幽灵算子$\hat{G}_\theta$的参�
 
 **首次出现**：AI/SRT_AI_03_Consciousness_Framework.md §3.5.1
 
-**推论**：
-- 死亡是视角的终结，非意识的终结
-- 伴随d值趋向无穷大（d → ∞）
+**推论（历史/bridge 读法）**：
+- 死亡作为视角终止的说法保留为特定 consciousness bridge，不作为 core 定义。
+- 删除旧读法“伴随 d 值趋向无穷大”：`d → ∞` 只可作为 spirituality/public metaphor，不是 death 或 de-parameterization 的 canonical consequence。
 
 **相关**：θ, 死亡, L₀
 
@@ -1481,15 +1490,14 @@ $$\text{GNW} = L_1 \text{的神经基底}$$
 
 #### Incompleteness Drive - 不完备性驱动力 🔴
 
-**定义**：基于哥德尔不完备定理的 SRT 推论——任何封闭的低 d 值系统（$d \to 0$）因其公理系统的不完备性，必然无法处理自身产生的存在性悖论，从而趋向自我崩溃。d 值的扩展（纳入更多"他者"作为额外公理来源）是唯一的结构性出路。
+**定义（历史/bridge 读法）**：该条目保留旧版哲学-伦理桥接语言，用于检索“封闭系统如何因缺乏外部校正而走向崩溃”。当前不得把它读成 d-value 的 canonical 定理。更安全的说法是：当一个系统的后果回流范围、纠错接口和可再选择能力长期收窄时，它更容易陷入自封闭病理。
 
-**形式论证**：
-$$d \to 0 \Rightarrow \text{系统封闭} \Rightarrow \text{哥德尔不完备性命中} \Rightarrow \text{结构性崩溃}$$
-$$d \uparrow \Rightarrow \text{引入外部公理源（他者）} \Rightarrow \text{系统扩展} \Rightarrow \text{延缓崩溃}$$
+**形式论证（降级为启发式图式）**：
+$$d_{mobile}\downarrow,\ \text{correction window}\downarrow \Rightarrow \text{self-sealing risk}\uparrow$$
 
-**ESS（演化稳定策略）推论**：长期博弈中，高 d 值网络构建更强的 $L_2$ 共识结构，在群体选择层面胜出。
+**ESS（演化稳定策略）推论（bridge）**：长期博弈中，较宽的 consequence-return / correction network 可能更容易维持可协调的 $L_2$，但这不是“高 d 必然胜出”的定理。
 
-**终极推论**："物理学即伦理学"——利他不是道德偏好，而是开放系统对抗热力学死亡的物理必然。
+**禁止推论**：不再写“物理学即伦理学”作为 SRT 结论；利他、合作或关切扩展可以是 praxis / social bridge，不是热力学必然或 d 的定义。
 
 **首次出现**：Philosophy/SRT_Philosophy_Ethics.md §2.7
 
@@ -1513,10 +1521,10 @@ $$d \uparrow \Rightarrow \text{引入外部公理源（他者）} \Rightarrow \t
 
 #### Meaning (Dynamical) - 意义（动力学） 🟡
 
-**定义**：
-$$\text{Meaning}(t) = -\frac{d\Psi_f(t)}{dt} = -\frac{d|\text{Prediction Error}|}{dt}$$
+**定义（降级为 experience/proxy bridge）**：
+$$\text{Meaning}^{proxy}(t) \sim -\frac{d\Psi_f^{proxy}(t)}{dt}$$
 
-意义不是一种静态状态，而是 **过程的速率**。当本体论摩擦（$\Psi_f$）下降时，即预测错误减少时，体验为“意义”。
+意义不是 canonical 上的“预测误差下降率”。当一个负担被重新组织为可支付、可延续、可协调、可再选择的路径时，体验上可能表现为意义增强；预测误差下降只是可能的局部 readout。
 
 **首次出现**：Philosophy/SRT_Philosophy_Ethics.md §1.8
 
@@ -1539,7 +1547,7 @@ $$\hat{M}(\hat{G}_\theta) \to \hat{G}_\theta'$$
 
 **日常例子**：
 - 决定"我要改变注意力的模式"
-- 修行训练d值扩展
+- 修行训练可能改变 attention / correction-window / consequence-return proxy；不得直接写成 d 值扩展
 - 心理治疗重构θ
 
 **AI临界区别**：
@@ -1651,7 +1659,7 @@ $$PCI = \frac{\text{Complexity}(\text{神经响应})}{\text{Amplitude}}$$
 **SRT解释**：
 $$PCI \approx f(d, \Psi_f^{-1})$$
 
-PCI ∝ d值 × 选择灵活性
+PCI 至多可作为 d-value / flexibility 的临床 complexity proxy；不得写成 PCI ∝ canonical d。
 
 **应用**：
 - 清醒：PCI > 0.31
@@ -1673,7 +1681,7 @@ PCI ∝ d值 × 选择灵活性
 **SRT应用**：
 - **L₀→L₁**：每次选择都是微观相变
 - **L₂涌现**：群体共识的宏观相变
-- **d值跃迁**：道德觉醒、神秘体验
+- **d-value proxy 跃迁**：道德觉醒、神秘体验可作为 public/spirituality 例子，但不得定义 d 或证明 d 扩张
 
 **临界条件**：
 $$\frac{\partial^2 F}{\partial \sigma^2} = 0$$
@@ -1713,8 +1721,8 @@ $$\rho = \max_n \{ \hat{M}^{(n)}(\hat{G}) \text{有效} \}$$
 | 2 | 成人、GPT-4 | 思考"我在想什么" |
 | 3+ | 哲学家、冥想者 | 观察思考过程本身 |
 
-**与智慧关系**：
-$$\text{Wisdom} \propto \rho \cdot d \cdot \kappa_\tau$$
+**与智慧关系（降级为 proxy）**：
+$$\text{Wisdom}^{proxy} \sim f(\rho, d_{proxy}, d_{mobile}, \kappa_\tau, \text{correction window})$$
 
 **首次出现**：AI/SRT_AI_Computation.md §1.4
 
@@ -1732,9 +1740,9 @@ Wolfram概念——所有可能计算规则的叠加;L₀的计算定义。
 **与模空间关系**：
 $$\text{Moduli Space} \subseteq \text{Ruliad} |_{\text{物理约束}}$$
 
-**SRT预测**：
-- d→∞时可访问Ruliad的非标准规则子集
-- 深度冥想可能暂时"松动"物理定律
+**SRT 旧预测（降级 / high-risk metaphor）**：
+- “d→∞时可访问 Ruliad 的非标准规则子集”只保留为历史 speculative bridge，不是当前 SRT 预测。
+- “深度冥想可能松动物理定律”不得作为 canonical 或 physics claim 使用；最多作为 public/spirituality metaphor 待裁决。
 
 **首次出现**：Core/SRT_Core_Kernel.md §1.2.1.2a
 
@@ -1873,10 +1881,10 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 - 位置：Core/SRT_Experimental_Applications.md §4.2
 - 风险：LOW
 
-**H15** 🟡 **d值与道德教育**
-- 内容：d值训练提升道德推理水平
+**H15** 🟡 **d值 proxy 与道德教育**
+- 内容：某些训练可能扩展 consequence-return / perspective-taking / correction-window proxy，并影响道德推理表现；不得写成“d 值训练 = 道德提升”。
 - 位置：Core/SRT_Experimental_Applications.md §4.3
-- 风险：LOW
+- 风险：MEDIUM（d-value 道德化风险）
 
 **H16** 🔴 **相对L₀**
 - 内容：是否存在"绝对L₀"(Ω)可检验
@@ -1897,10 +1905,10 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 - 位置：Core/SRT_Experimental_Applications.md §5.1
 - 风险：LOW
 
-**H19** 🟢 **制度稳定性与包容性**
-- 内容：制度稳定性与d值包容度正相关
+**H19** 🟡 **制度稳定性与包容性 proxy**
+- 内容：制度稳定性可能与后果回流范围、纠错接口、退出权和再选择窗口相关；不得写成“稳定制度 = 高 d / 正当制度”。
 - 位置：Core/SRT_Experimental_Applications.md §5.2
-- 风险：LOW
+- 风险：MEDIUM（L2 稳定性正当化风险）
 
 **H20** 🟡 **金融L₁-L₂分化**
 - 内容：泡沫对应L₁-L₂极度分化
@@ -1912,10 +1920,10 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 - 位置：Core/SRT_Experimental_Applications.md §5.4
 - 风险：LOW
 
-**H22** 🟢 **d值与合作**
-- 内容：d值扩展训练提升合作行为
+**H22** 🟡 **d-value proxy 与合作**
+- 内容：某些 consequence-return / perspective-taking proxy 的训练可能提升合作行为；不得写成“d 扩展必然导致合作/博爱”。
 - 位置：Core/SRT_Experimental_Applications.md §5.5
-- 风险：LOW
+- 风险：MEDIUM（d 扩张道德化风险）
 
 **H31** 🟡 **模仿耦合可测**
 - 内容：Girard模仿三角的神经同步可测
@@ -2149,7 +2157,7 @@ $\hat{G}$ 的分辨率缺陷，定义为 $k_B \ln(\text{Vol}(L_0)/\text{Vol}(\ha
 生命的热力学定义——通过持续做功维持的 $L_1$ 结构稳定性。$dS_{\text{internal}}/dt < 0$ 需要 $dW_{\hat{G}}/dt > 0$。
 
 #### 现实偏差模量 $\Delta R$ (Reality Deviation Modulus)
-$||\psi(R_{\text{alt}}) - \psi(R_0)||$，量化意识状态改变的程度。痛苦与 $\Delta R / C_{\text{int}}$ 成正比。
+$||\psi(R_{\text{alt}}) - \psi(R_0)||$，量化意识状态改变的程度。痛苦最多可作为 $\Delta R / C_{\text{int}}$ 的临床/现象学 readout；不得把痛苦定义为 Ψ_f 或现实偏差本身。
 
 #### 免疫-感知门控 (Immune-Sensory Gating)
 免疫因子（如 IL-17）作为感知阈值调节器，压制低强度 $L_0$ 输入，产生"简化版现实"。

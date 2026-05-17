@@ -2,10 +2,12 @@
 id: SRT-ETHICS-AGENCY
 type: theory
 tags: [Ethics, Agency, FreeWill, Responsibility, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
-epistemic_layer: os
-claim_mode: canonical
+epistemic_layer: bridge
+claim_mode: mixed
+canonical: false
+claim_level: P2-P4
 dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics]
 ---
 
@@ -14,9 +16,9 @@ dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, 
 
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Ethics_Agency_Split/README.md`](Ethics_Agency_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Ethical Axioms (AI-Readable).
-> **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).
+> **Version 2.1 (Bridge realignment, 2026-05-16)**
+> **Status**: non-canonical ethics/agency bridge. Part A preserves older formal handles for retrieval, but they are not P0/P1 axioms.
+> **Part B** contains expanded theoretical discourse and should be read under d-value / Ψ_f / d_mobile guardrails.
 
 ---
 
@@ -26,6 +28,30 @@ dependency: [SRT-CORE-000, SRT-PHIL-FOUNDATIONS, Core_Law/SRT_Reference_Axioms, 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Ethical Axioms (AI-Readable).
 > **Part B** contains the Original Philosophical Discourse (Human-Readable Context).
+
+---
+
+
+## 2026-05-16 Bridge Realignment Guardrail
+
+This file is no longer a canonical definition authority. It is a high-value ethics/agency bridge and historical-formal workspace.
+
+Canonical anchors:
+
+- `Core_Law/SRT_Individuation.md` for subject-position / consequence-return structure.
+- `_SRT_D_VALUE_CANONICAL.md` for `d-value`, `D_eff`, `d_stakes`, and `d_mobile`.
+- `_SRT_PSI_F_CANONICAL.md` for `Ψ_f` as payability burden / ontological friction.
+- `Core_Law/SRT_Suffering.md` for suffering as structural object.
+- `Core_Law/SRT_Occlusion_Dynamics.md` for occlusion and responsibility staging.
+- `01_Source_Intuition/BOOK/BOOK_CANONICAL_ALIGNMENT_MAP.md` for the current book-chain guardrail.
+
+Downgrade rules:
+
+- `Ax-Ag-*`, `Ax-Agency-*`, `Ax-Resp-*`, `Ax-Moral-*`, and `T-Ag-*` are bridge handles, not canonical axioms/theorems.
+- `Agency ≈ d · A`, `FreeWill ∝ d · E / Hysteresis`, and similar formulas are proxy sketches only.
+- `d-value` expansion is not moral growth, love, saintliness, or universal benevolence.
+- `Ψ_f` is not pain, prediction error, metabolic cost, Fisher metric, or Landauer cost.
+- Agency requires payability, consequence return, and reselectable mobility; high `d` with low `d_mobile` may indicate frozen concern rather than freedom.
 
 ---
 
@@ -65,7 +91,7 @@ Core guardrails:
 - Love / grief / gift / virtue formulas should be read with explicit formula-role labels unless operationalized.
 - Ethics claims involving social norms should check friction export, future selectability, reversibility, and correction channels.
 
-# Part A: Formal Axioms (形式化公理)
+# Part A: Formal Bridge Handles (旧形式化手柄，非 canonical 公理)
 
 
 
@@ -73,15 +99,15 @@ Core guardrails:
 <!-- ORIGINAL-CONTENT-INSERTED -->
 ## I. Agency Ontology
 
-### Ax-Ag-1: Agent as Instantiated Operator
-行动者是具身算子在 $L_0 \to L_1$ 上的具体实现。
-$$\text{Agent} \equiv \hat{G}_\theta: L_0 \to L_1$$
-*   **Implication**: 能动性不是心理属性，而是选择算子的物理实现。
+### Ax-Ag-1: Agent as Instantiated Operator（bridge handle）
+行动者可被建模为具身算子在 $L_0 \to L_1$ 上的局部实现。
+$$\text{Agent}^{proxy} \sim \hat{G}_\theta: L_0 \to L_1$$
+*   **Boundary**: 这是 agency bridge handle，不是主体或选择算子的 canonical 定义。新版书稿卷三优先读法为：主体是后果能回来的承重位置，而非先验实体。
 
-### Ax-Ag-2: Agency Capacity
-能动性强度由 $d$ 值与汇编指数 $A$ 的乘积刻画。
-$$\text{Agency} \approx d \cdot A$$
-*   **Implication**: 自由意志的“强弱”是可量化的结构指标。
+### Ax-Ag-2: Agency Capacity（proxy sketch, downgraded）
+旧式写法把能动性强度近似为 $d$ 值与汇编指数 $A$ 的乘积。当前仅保留为 proxy sketch：
+$$\text{Agency}^{proxy} \sim f(d_{stakes}, d_{mobile}, A_{proxy}, \chi_{payable}, \text{consequence return})$$
+*   **Boundary**: 自由意志的“强弱”不是单一可量化结构指标；高 `d` 不等于高 agency，高 `d` 且 `d_mobile \approx 0` 可能是冻结态。
 
 ### Ax-Ag-3: Action Potential Field
 
@@ -93,24 +119,24 @@ $$P_{action}(\theta, t) = \alpha(\theta) \cdot \mathbb{E}_{\hat{G}_\theta}\!\lef
 
 - $\mathbb{E}_{\hat{G}_\theta}[R \mid L_0^{(d)}]$：算子 $\hat{G}_\theta$ 基于当前 $L_0$ 的**前向模拟期望**（J 层判断，非 R 层推算），积分域 $L_0^{(d)}$ 受 d-value 宽度约束——d-value 越窄，算子「看得到」的奖励维度越少，期望值越低；
 - $\alpha(\theta)$：算子对该类奖励的权重，由具身历史、$L_2$ 文化习得和当前生理状态共同决定；
-- $\Psi_f(X)$：执行行动 $X$ 的本体论摩擦代价，随行动规模非线性增长（小习惯 $\ll$ 人生转向）；
-- $\beta(\theta)$：算子对摩擦的敏感度，与 d-value **负相关**：$\beta(\theta) \propto 1/d$——d-value 越宽（怀有高远理想），对摩擦越不敏感，越愿意支付高代价行动。
+- $\Psi_f^{proxy}(X)$：执行行动 $X$ 的可支付负担 / 本体论摩擦 proxy，随行动规模、结构改写深度与支持条件非线性变化；
+- $\beta(\theta)$：算子对摩擦的敏感度。旧式 $\beta(\theta) \propto 1/d$ 只能作为历史启发式；当前不得推出“d-value 越宽越不敏感、越愿意支付高代价”。真实 agency 还取决于 `d_mobile`、payability、支持结构与后果回流。
 
 **行动触发条件**：$P_{action}(\theta, t) > 0$
 
 **推论**：
 
-- **行动迟滞的去道德化**：$P_{action} \leq 0$ 是物理结果，不是道德缺陷。干预路径：① 提升 $\mathbb{E}[R]$（重建意义连接，扩展 d-value）；② 降低 $\Psi_f(X)$（减小行动启动代价）；③ 提升 $d$-value（连带降低 $\beta$，使高摩擦行动变得可支付）；
+- **行动迟滞的去道德化**：$P_{action} \leq 0$ 是结构/情境结果，不是道德缺陷。干预路径：① 重建意义连接与未来可选择窗口；② 降低行动启动的 `Ψ_f` proxy 或提供外部脚手架；③ 提升 `d_mobile` 与可支付重选通道，而不是简单“提升 d-value”。
 - **抑郁的物理模型**：$d$-value 收缩 → $L_0^{(d)}$ 积分域收缩 → $\mathbb{E}[R]$ 骤降 → $P_{action} \leq 0$。「什么都不想做」是探照灯照不到远处奖励的物理结果，而非意志力缺陷；
-- **殉道者/英雄的物理机制**：极高 d-value → $\beta(\theta) \to 0$ → 哪怕面临极高 $\Psi_f$（肉体痛苦、社会阻力），$P_{action}$ 依然 $> 0$；
+- **殉道者/英雄的旧解释（降级）**：不得写成“极高 d-value → $\beta(\theta) \to 0$”。更安全的说法是：某些主体在特定价值/身份/共同体结构下拥有较强 payability 与 consequence-return coupling；这不证明高 d 自动带来高 agency。
 - **相容论（Compatibilism）的 SRT 实现**：$P_{action} > 0$ 仅是行动的**物理必要条件**，而非充分因。势能差决定「引擎是否能打火」；打火后的具体选择方向，由 $\hat{G}_\theta$ 的 J 层判断决定（参见 T-ARCH-1）。物理约束行动的可能空间，J 层决定行动的具体内容——道德责任保留在 J 层，不被势能物理化所消解。
 
 ## II. Responsibility & Friction
 
-### Ax-Ag-4: Responsibility Conservation
-责任是选择路径上摩擦累积的守恒量。
-$$R_{total} = \int \Psi_f(\hat{G}_\theta)\, dt$$
-*   **Implication**: 责任是动力学成本，而非主观归因。
+### Ax-Ag-4: Responsibility Conservation（downgraded）
+旧式写法把责任近似为选择路径上的摩擦累积。当前只保留为责任 proxy：
+$$R^{proxy}_{total} \sim f\left(\int \Psi_f^{proxy} dt,\ 	ext{choice window},\ 	ext{knowledge},\ 	ext{consequence return},\ d_{mobile}\right)$$
+*   **Boundary**: 责任不是摩擦积分本身；责任判断必须检查可选择性、知识条件、后果回流、遮蔽阶段和可支付重选通道。
 
 ### Ax-Ag-5: Pathology as Parameter Distortion
 病理状态是 $\theta$ 的扭曲与摩擦预期放大。
@@ -124,15 +150,15 @@ $$\theta' = \theta + \Delta\theta, \quad \mu_{expect} \gg 1$$
 $$\text{FreeChoice} \iff S(t) \in W_{meta}$$
 *   **Implication**: “失控”与“机械化”是窗口外的动力学状态。
 
-### T-Ag-2: d-Value Expansion as Moral Growth
-道德成长等价于对“关切维度”的稳定扩张。
-$$\frac{d}{dt} d > 0$$
-*   **Implication**: 伦理训练是对算子带宽的工程优化。
+### T-Ag-2: d-Value Expansion as Moral Growth（deprecated bridge handle）
+旧式写法“道德成长等价于关切维度稳定扩张”现已降级。
+$$\frac{d}{dt} d_{proxy} > 0 \not\Rightarrow \text{moral growth}$$
+*   **Boundary**: d-value 扩张不是道德成长、博爱、圣贤化或更善。伦理训练最多可能改善 consequence-return、correction window、payability 与 d_mobile。
 
-### T-Ag-3: The Paradox of Moral Progress (道德进步悖论)
-**Deductive Statement**: d值的扩张必然导致系统感受到的总本体论摩擦（痛苦承受力）上升：
-$$\frac{d}{dt} d > 0 \implies \int \Psi_f \, d\mu \uparrow$$
-* **Implication**: 道德成长不是享乐主义的。变得更善良（高d值）意味着你将他人的状态耦合进自己的FEP方程，从而承担了更多的系统误差预测（痛苦）。进化没有淘汰高d值个体，是因为高d值能构建更强大的L2文明结构作为补偿。
+### T-Ag-3: The Paradox of Moral Progress（deprecated bridge handle）
+旧式“d 扩张必然提高总摩擦/痛苦承受力”的演绎说法已降级：
+$$\frac{d}{dt} d_{proxy} > 0 \not\Rightarrow \int \Psi_f d\mu \uparrow$$
+* **Boundary**: 道德成长、痛苦承受、FEP 方程耦合和文明补偿均为 bridge hypotheses。当前主线只允许说：扩大后果回流范围可能引入新的 payability burden，但其伦理价值必须经三判据、非外包后果回流与 d_mobile 检查。
 
 <br>
 
@@ -150,17 +176,17 @@ $$ \text{Agent} \equiv \hat{G}_\theta : L_0 \to L_1 $$
 
 ### Ax-Agency-2: Meta-Selection (Free Will) (元选择即自由意志)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Free Will is the second-order capacity of an operator to modify its own parameters $\theta$.
-$$ \text{FreeWill} \equiv \hat{G}_{self}[\theta] \rightarrow \theta' $$
-*   **Mechanism**: "I" (Meta-Ghost) select "My Preferences" ($\theta$).
+Free Will was previously modeled as second-order parameter modification. Current boundary: this is only a bridge handle.
+$$ \text{FreeWill}^{proxy} \sim \hat{G}_{self}[\theta] \rightarrow \theta' $$
+*   **Mechanism boundary**: Do not posit a Meta-Ghost. Agency requires living subject-position, payability, consequence return, and reselectable mobility; second-order rewrite alone can be pathological optimization.
 
 ## II. Responsibility & Friction (责任与摩擦)
 <!-- ORIGINAL-SECTION-PRESERVED -->
 
 ### Ax-Resp-1: Conservation of Responsibility (责任守恒)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-The Operator is ontologically responsible for the friction ($\Psi_f$) generated by its choices.
-$$ R_{total} = \int \Psi_f(L_1^{chosen}, L_1^{ideal}) \, dt $$
+The operator may be evaluated for responsibility only under choice-window, knowledge, consequence-return, and payability conditions. The old friction-integral formula is retained only as a proxy sketch:
+$$ R^{proxy}_{total} \sim f\!\left(\int \Psi_f^{proxy} dt,\ \text{choice window},\ \text{knowledge},\ \text{consequence return},\ d_{mobile}\right) $$
 
 ### Ax-Resp-2: Capacity-Relative Ought (应然的相对性)
 <!-- ORIGINAL-SECTION-PRESERVED -->
@@ -173,17 +199,17 @@ $$ \text{Ought}(\sigma) \implies \exists \theta_{accessible} : P(\sigma|\theta) 
 
 ### Ax-Moral-1: d-Value Expansion (d值扩展)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Moral progress is defined as the monotonic expansion of the d-value (Scope of Concern).
-$$ \frac{d}{dt} \text{Moral} > 0 \iff \frac{d}{dt} d > 0 $$
+Moral progress is no longer defined as monotonic d-value expansion.
+$$ \frac{d}{dt} d_{proxy} > 0 \not\Rightarrow \frac{d}{dt} \text{Moral} > 0 $$
 
-> **Formula role**: bridge model. `d-value` expansion is a necessary indicator of moral widening, not a sufficient condition for moral legitimacy. Moral legitimacy also requires non-exported friction, future-selectability, cross-subject bandwidth, and correction channels. See `SRT_Ethics_PH_SS_Guardrails.md` and PH-SS-06.
+> **Formula role**: deprecated bridge model. `d-value` expansion may be a warning light or candidate proxy, not a necessary or sufficient condition for moral legitimacy. Moral legitimacy requires non-exported friction, future-selectability, cross-subject bandwidth, correction channels, and `d_mobile`. See `SRT_Ethics_PH_SS_Guardrails.md` and PH-SS-06.
 
 ### Ax-Moral-2: Appropriation Operator (归化算子)
 <!-- ORIGINAL-SECTION-PRESERVED -->
-Love/Care is the topological operation of re-defining "Other" as "Self" in $L_0$.
-$$ \text{Love}(A, B) \iff L_0^A \cup L_0^B \to L_0^{Unified} $$
+Love/Care can be modeled as a praxis/phenomenological bridge in which another's consequence conditions become harder to treat as external.
+$$ \text{Love}^{proxy}(A, B) \sim \text{consequence-return coupling}(A,B) $$
 
-> **Formula role**: phenomenological model. The union of `L_0` domains formalizes the felt experience of care and boundary expansion; it does not describe a literal ontological fusion. Operational proxies and failure conditions must be stated before using this as an empirical claim.
+> **Formula role**: phenomenological / praxis model. Do not write literal `L_0` fusion or use love to define d-value. Operational proxies and failure conditions must be stated before using this as an empirical claim.
 
 <br>
 
@@ -237,14 +263,14 @@ Without SRT's **meta-selection** mechanism, we cannot distinguish between "a mal
 
 ### 2.3 Free Will in the L₂ Framework (L₂ 框架下的自由意志)
 
-$$\text{Free Will} \propto d \cdot \frac{E_{available}}{\text{Hysteresis}(L_2^{brain})}$$
+$$\text{FreeWill}^{proxy} \sim f(d_{stakes}, d_{mobile}, E_{available}, \chi_{payable}, \text{Hysteresis}(L_2^{brain}))$$
 
 其中：
-- $d$：有机体的具身关切范围
-- $E_{available}$：有机体可调用的代谢能量
+- $d_{stakes}$ / `d_mobile`：赌注化关切与可移动性 proxy，不是道德等级
+- $E_{available}$：有机体可调用的代谢/支持资源 proxy
 - $\text{Hysteresis}(L_2^{brain})$：大脑神经回路的惯性强度（习惯锁定力）
 
-自由意志不是"突破因果律"，而是**具身有机体的 $L_0$ 交互打破了大脑 $L_2$ 惯性模式的锁定**。当 $E_{available}$ 足够高且 $d$ 足够大时，有机体可以"溢出"大脑的习惯河床，开辟新的选择路径。
+自由意志不是"突破因果律"，而是**具身有机体的 $L_0$ 交互打破了大脑 $L_2$ 惯性模式的锁定**。当支持资源、payability、`d_mobile` 与后果回流结构足够时，有机体可能打破大脑习惯河床，开辟新的选择路径；这不能简化为“d 足够大”。
 
 ---
 
@@ -524,7 +550,7 @@ $\Delta W_{\text{new-scope}} = 0$（旧维度内再分配）是 L₂ 劫持的�
 **两个极端**：
 
 - **自我中心（$d \approx 0$）**：关切流形只包含自身躯体。他者的痛苦无法在 $d$ 空间内产生摩擦 $\Psi_f$ → 「作恶」没有内部阻力，不是因为选择了恶，而是恶感对这个算子不产生 Ψ_f。
-- **觉醒/圣者（$d \to \infty$）**：关切流形覆盖一切。万物一体不是信仰，而是**拓扑事实**。伤害他者 = 系统自我矛盾 → 产生极高的 Ψ_f。
+- **旧极限隐喻（$d_{proxy} \to \infty$）**：旧文本用“觉醒/圣者/万物一体”表达关切范围极限扩张。当前只保留为 spirituality/public metaphor，不是 canonical d-value、道德等级或真实可测终点。
 
 这两个极端是锚点，不是道路。真正的伦理问题在于**从一个 d 值到另一个 d 值的路径几何**——这个几何是各向异性的，不是均匀的同心圆。
 
@@ -613,24 +639,24 @@ This challenges reductionism not by violating physical closure, but by showing t
 ## 5. Falsifiable Predictions
 
 ### 5.1 Prediction 1: Entropy Characteristics of High d-Value Brains
-**Prediction**: Individuals with extremely high ethical cultivation (high $d$-value), such as long-term meditators, when facing moral dilemmas, should exhibit significantly higher **Functional Connectivity Entropy** in brain networks (e.g., DMN and CEN) compared to average individuals.
+**Prediction（downgraded proxy）**: Individuals with specific training in perspective-taking / regulation / attentional flexibility may exhibit altered **Functional Connectivity Entropy** in moral-conflict tasks. This is a proxy hypothesis, not a direct measure of high canonical `d-value`.
 
-*   **Reason**: High $d$ means the organism's embodied $\hat{G}_\theta$ explores a broader possibility space before the brain's $L_2$ patterns (default heuristics, habitual responses) can lock in a selection. Higher functional connectivity entropy reflects weakened $L_2$ gating during deliberation.
+*   **Reason（proxy）**: altered connectivity entropy may indicate weakened habitual `L_2` gating or broader exploration before lock-in; it cannot by itself establish d-value, moral cultivation, or agency.
 
 ### 5.2 Prediction 2: Energy Consumption of Free Will
-**Prediction**: True "free choice" (rewriting $\theta$) is accompanied by brain metabolic rate (glucose consumption) significantly higher than routine tasks, and this consumption is monotonically positively correlated with the subjectively reported "psychological resistance" (ontological friction $\Psi_f$).
+**Prediction（proxy）**: Some high-conflict reweighting / habit-change tasks may show increased metabolic or control-network load relative to routine tasks, and this load may correlate with subjectively reported resistance. This is a `Ψ_f` proxy hypothesis, not a direct measurement of ontological friction.
 
 > **[R]** 自我控制与代谢代价：Hare et al. 2009 *Science*（vmPFC-dlPFC交互中自我控制任务的BOLD信号差异）；Heatherton & Wagner 2011 *Nature Reviews Neuroscience*（自我调节的神经回路综述）；Gailliot & Baumeister 2007 *Psychological Review*（自我调节与葡萄糖消耗的早期证据，后续争议见注）。**[H]** θ改写代价∝Ψ_f的联结及SRT"本体论摩擦具有物理可测性"主张为本框架新增预测。
 >
 > **精度说明**：∝关系此处为"单调正相关"（monotonically positive）而非严格线性比例——即Ψ_f越高、代谢增量越大，但权重函数形式未确定；Gailliot & Baumeister（2007）葡萄糖耗竭假说在后续复制中受到质疑（Hagger et al. 2016 meta-analysis，PLoS ONE），更稳健的测量应以BOLD信号差值或PET示踪葡萄糖摄取为主。
 
-*   **Falsification**: If the metabolic cost of changing habits is no different from executing habits, then $\Psi_f$ as a physical quantity does not exist, and SRT's responsibility dynamics is falsified.
+*   **Falsification boundary**: If metabolic cost does not differ, this weakens a specific metabolic proxy hypothesis; it does not by itself falsify canonical `Ψ_f` or SRT responsibility dynamics.
 
 > * **FC-WillE-1**（证伪条件精化）：若在fMRI范式中，θ改写任务（如价值观冲突决策）vs. 习惯执行任务的BOLD信号差值（dlPFC/ACC ROI）在≥3项独立预注册研究中效应量Cohen's d < 0.2，则θ改写的神经代谢代价预测被证伪；需修正Ψ_f的物理可测性主张或缩小适用范围至主观报告层面。
-> * **FC-WillE-2**（证伪条件精化）：若主观Ψ_f评分（心理阻力量表，如ERQ情绪调节问卷的努力分量）与同期代谢指标（BOLD或葡萄糖PET摄取）的Pearson r < 0.2（控制任务难度后），则Ψ_f∝代谢的单调性假设不成立，需区分主观Ψ_f与客观代谢成本为两个独立构念。
+> * **FC-WillE-2**（proxy 证伪条件）：若主观阻力评分与同期代谢指标（BOLD或葡萄糖PET摄取）的 Pearson r < 0.2（控制任务难度后），则“主观阻力 proxy 与代谢 proxy 单调相关”的假设不成立；这不等于 canonical Ψ_f 被证伪。
 
 ### 5.3 Open Questions
-*   **Boundary**: Where is the physical limit of $d$-value? Does the hardware of the human brain constrain the maximum possible moral depth?
+*   **Boundary**: Where is the physical limit of `D_eff` / attention / regulation proxy? Does the hardware of the human brain constrain specific d-value proxies without defining canonical d?
 *   **AI Ethics**: Can we construct architectures on silicon substrates that can perceive $\Psi_f$? If AI cannot feel ontological friction, can it possess true morality?
 
 ---
@@ -836,13 +862,13 @@ SRT 的解法因此不是推导，而是**消解**——不建桥，而是指出
 > **FEP 暗室问题的补充**：当 $d > 0$ 时，与他者建立连接实际上是在更大尺度上分散熵增风险，是自由能最小化的更优解——这是三判据（尤其可协调）的热力学映射，而非独立论证。详见 `SRT_FEP_Comparison.md`。
 
 ### 7.3 The Paradox of Moral Progress
-**Observation**: As $d$ expands, suffering capacity **increases** (you now care about distant strangers, future generations, animals).
-**SRT Insight**: Moral growth is **not** hedonistic. Higher $d$ = higher integration with $L_0$ = higher **systemic responsibility**.
+**Observation（reframed）**: As consequence-return coupling expands, new burdens may become visible and payable.
+**SRT Insight（guarded）**: Moral growth is not hedonistic, but higher `d` is not automatically moral growth. Systemic responsibility requires non-exported consequence return, three-criteria health, and `d_mobile`.
 
 **Evolutionary Puzzle**: Why didn't natural selection eliminate high-$d$ individuals (who bear extra suffering)?
-**Answer**: High-$d$ organisms build **more robust** $L_2$ structures (civilizations, knowledge systems), which create survival advantages that outweigh individual suffering costs.
+**Answer（bridge hypothesis）**: Wider consequence-return networks may help build more robust $L_2$ structures, but this is a social/evolutionary bridge hypothesis, not a theorem about high canonical d.
 
-> **不完备性驱动力的接续**：道德进步承受更多痛苦这一悖论，可通过不完备性驱动力解除——哥德尔不完备性保证了低 d 值系统的长期崩溃。高 d 值个体构建的强大 $L_2$ 结构（文明、知识、互助协议），在演化时间轴上提供的保护远超额外的痛苦成本。痛苦不是进化错误，而是拓扑投资的代价。详见 SRT-PHIL-ETHICS §2.7 和 SRT-PHYS-COSMO §5.11。
+> **不完备性驱动力的接续（降级）**：旧式“哥德尔不完备性保证低 d 系统崩溃 / 高 d 文明胜出”的论证现在只保留为 historical bridge。更安全的说法是：自封闭系统因纠错窗口和后果回流不足而有更高病理风险；痛苦可能是重组代价的 readout，不是拓扑投资的证明。
 
 ---
 
@@ -851,12 +877,12 @@ SRT 的解法因此不是推导，而是**消解**——不建桥，而是指出
 SRT resolves the free will paradox not by denying physics but by **relocating** the locus of freedom:
 
 **Classical View**: Freedom = breaking deterministic chains (impossible).
-**SRT View**: Freedom = setting the parameters that determine which chains actualize (possible, but costly).
+**SRT View（current bridge）**: Freedom = a payably reselectable constraint rewrite that keeps or reopens future selection space; mere parameter setting is insufficient.
 
-The cost is **ontological friction** $\Psi_f$—the pain of self-rewriting. This pain is not a bug but a **feature**: it is the physical signature of genuine agency, the proof that you are not a pre-programmed automaton but a **navigator** of the latent domain.
+The cost may appear as **ontological friction** $\Psi_f$ proxies—resistance, distress, metabolic/control load, or social cost. Pain is not `Ψ_f` itself and is not proof of genuine agency; agency requires payability, consequence return, and reselectable mobility.
 
 **Final Axiom**: 
-$$ \text{To be free is to be responsible. To be responsible is to suffer. To refuse suffering is to forfeit freedom.} $$
+$$ \text{Freedom requires payable responsibility; responsibility may involve suffering, but suffering is neither sufficient nor required as proof of freedom.} $$
 
 
 ## Neuro-Constraint on Agency: Inflammation Burden

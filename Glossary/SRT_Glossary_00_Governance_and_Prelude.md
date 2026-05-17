@@ -12,15 +12,9 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 # SRT术语表与符号索引
 # SRT Glossary & Symbol Index
 
----
-
-> **📚 文档类型：参考手册**
-> **使用方式：按需查阅,支持Ctrl+F搜索**
-> **最后更新：2026-01-23**
+> Split shard generated from `../SRT_Glossary.md`; owner remains source of record.
 
 ---
-
-## 使用指南
 
 ## 使用指南
 
@@ -51,18 +45,20 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 > - **Confusable With**：常见易混术语/符号。
 > - **Lineage/Source**：首要定义来源（内部 canonical 或外部来源）。
 >
-> **Historical label compatibility**：本术语表保留部分旧 `Theorem` / `Axiom` / `Canonical` 名称以便检索；当前 claim status 以 `../CANONICAL_REGISTRY.md`、`../Governance/SRT_CLAIM_LADDER.md`、`../Governance/SRT_CLAIM_MODE_AUDIT.md` 与本地 level note 为准，旧名不恢复定理或公理地位。
+> **Historical label compatibility**：本术语表保留部分旧 `Theorem` / `Axiom` / `Canonical` 名称以便检索；当前 claim status 以 `CANONICAL_REGISTRY.md`、`Governance/SRT_CLAIM_LADDER.md`、`Governance/SRT_CLAIM_MODE_AUDIT.md` 与本地 level note 为准，旧名不恢复定理或公理地位。
+>
+> **Book-chain alignment note（2026-05-16）**：`01_Source_Intuition/BOOK/BOOK_CANONICAL_ALIGNMENT_MAP.md` 已将书稿卷一—卷三主链回链到 canonical anchors。本术语表若与该对齐图、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_SYMBOL_TABLE.md` 冲突，默认降级为 historical glossary / retrieval aid，不得反向定义核心术语。
 
 ### d-value（d）
-- **Canonical Scope**：SRT 全域中 stake-coupled concern / irreversible-risk sensitivity 的统一记号；当前以 `../_SRT_D_VALUE_CANONICAL.md` 为最高引用锚点，bare `d` 默认按 governance-canonical 标量摘要读。
+- **Canonical Scope**：SRT 全域中 stake-coupled concern / irreversible-risk sensitivity 的统一记号；当前以 `_SRT_D_VALUE_CANONICAL.md` 为最高引用锚点，bare `d` 默认按 governance-canonical 标量摘要读。
 - **Confusable With**：分形维度 d、空间维数 d、统计自由度 d.f.、局部操作化代理（如 attention entropy）。
-- **Lineage/Source**：当前锚点 `../_SRT_D_VALUE_CANONICAL.md`；`AI/SRT_AI_01_Ontology.md#Ax-ONT-3` 保留为历史谱系 / AI 域旧入口，不恢复最高定义权。
+- **Lineage/Source**：当前锚点 `_SRT_D_VALUE_CANONICAL.md`；`AI/SRT_AI_01_Ontology.md#Ax-ONT-3` 保留为历史谱系 / AI 域旧入口，不恢复最高定义权。
 - **Status Note**：`D_eff`、Fisher 读数、d-vector、d-gate 与域内量表均为 proxy / judgment tool，不能无条件写成 `d` 本身。
 
 ### 本体论摩擦（\Psi_f）
-- **Canonical Scope**：用于“开放可能性被压成可维持现实切片时的 information-theoretic payability burden / 本体论阻抗”语境；当前以 `../_SRT_PSI_F_CANONICAL.md` 为最高引用锚点。
+- **Canonical Scope**：用于“开放可能性被压成可维持现实切片时的 information-theoretic payability burden / 本体论阻抗”语境；当前以 `_SRT_PSI_F_CANONICAL.md` 为最高引用锚点。
 - **Confusable With**：IIT 的 `\Phi`（整合信息量）、一般耗散项 `D`、物理摩擦系数 `\mu`。
-- **Lineage/Source**：当前锚点 `../_SRT_PSI_F_CANONICAL.md`；`Core/SRT_Core_22_Equations.md` Eq-Force-01 与 `Core_Law/SRT_Reference_Dynamics.md` 保留为方程 / 动力学展开层。
+- **Lineage/Source**：当前锚点 `_SRT_PSI_F_CANONICAL.md`；`Core/SRT_Core_22_Equations.md` Eq-Force-01 与 `Core_Law/SRT_Reference_Dynamics.md` 保留为方程 / 动力学展开层。
 - **Status Note**：几何、代谢、神经与物理读法均需标注 projection / proxy / bridge，不得反向改写 `Ψ_f`。
 
 ### 幽灵算子（\hat{G}_\theta）

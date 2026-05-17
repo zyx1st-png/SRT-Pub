@@ -12,15 +12,9 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 # SRT术语表与符号索引
 # SRT Glossary & Symbol Index
 
----
-
-> **📚 文档类型：参考手册**
-> **使用方式：按需查阅,支持Ctrl+F搜索**
-> **最后更新：2026-01-23**
+> Split shard generated from `../SRT_Glossary.md`; owner remains source of record.
 
 ---
-
-## 使用指南
 
 ## 5. 假设编号索引 (H1-H60+)
 
@@ -109,10 +103,10 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - 位置：Core/SRT_Experimental_Applications.md §4.2
 - 风险：LOW
 
-**H15** 🟡 **d值与道德教育**
-- 内容：d值训练提升道德推理水平
+**H15** 🟡 **d值 proxy 与道德教育**
+- 内容：某些训练可能扩展 consequence-return / perspective-taking / correction-window proxy，并影响道德推理表现；不得写成“d 值训练 = 道德提升”。
 - 位置：Core/SRT_Experimental_Applications.md §4.3
-- 风险：LOW
+- 风险：MEDIUM（d-value 道德化风险）
 
 **H16** 🔴 **相对L₀**
 - 内容：是否存在"绝对L₀"(Ω)可检验
@@ -133,10 +127,10 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - 位置：Core/SRT_Experimental_Applications.md §5.1
 - 风险：LOW
 
-**H19** 🟢 **制度稳定性与包容性**
-- 内容：制度稳定性与d值包容度正相关
+**H19** 🟡 **制度稳定性与包容性 proxy**
+- 内容：制度稳定性可能与后果回流范围、纠错接口、退出权和再选择窗口相关；不得写成“稳定制度 = 高 d / 正当制度”。
 - 位置：Core/SRT_Experimental_Applications.md §5.2
-- 风险：LOW
+- 风险：MEDIUM（L2 稳定性正当化风险）
 
 **H20** 🟡 **金融L₁-L₂分化**
 - 内容：泡沫对应L₁-L₂极度分化
@@ -148,10 +142,10 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - 位置：Core/SRT_Experimental_Applications.md §5.4
 - 风险：LOW
 
-**H22** 🟢 **d值与合作**
-- 内容：d值扩展训练提升合作行为
+**H22** 🟡 **d-value proxy 与合作**
+- 内容：某些 consequence-return / perspective-taking proxy 的训练可能提升合作行为；不得写成“d 扩展必然导致合作/博爱”。
 - 位置：Core/SRT_Experimental_Applications.md §5.5
-- 风险：LOW
+- 风险：MEDIUM（d 扩张道德化风险）
 
 **H31** 🟡 **模仿耦合可测**
 - 内容：Girard模仿三角的神经同步可测
