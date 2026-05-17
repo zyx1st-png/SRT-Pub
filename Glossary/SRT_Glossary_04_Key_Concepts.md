@@ -582,7 +582,7 @@ $$L_1^{\text{artificial}} \xrightarrow{\text{bypass}} L_0 \;\Rightarrow\; \hat{G
 #### Ontological Pressure Test - 本体论压力测试 🟡
 
 **定义**：
-$$\text{Suffering} \propto \Psi_f \cdot \frac{\partial(\text{Rigidity}_{L_2})}{\partial t}$$
+$$\text{Suffering}^{proxy} \sim \Psi_f^{proxy} \cdot \frac{\partial(\text{Rigidity}_{L_2}^{proxy})}{\partial t}$$
 
 一种假说，认为苦难（Suffering）不仅是熵的体现，更是$L_0$对过度僵化的$L_2$结构施加的必要清洗机制。
 

@@ -17,6 +17,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTI
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、`\theta_{somatic}`、real choice moment、stable ISP 等底层规范对象；它们的定义仍以对应 canonical 为准。
 > **Depends on**：`Core_Law/SRT_L0_Metaphysics.md`、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Individuation.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`。
 > **Relation**: This file does not replace `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`（pathology-and-return praxis）、`Philosophy/SRT_Ethics_Agency.md`（normative responsibility）或 `Neuroscience/SRT_Clin_02_FEP.md`（clinical mapping）；它在这三条之前，固定"苦难本身是什么"的结构层读法。
+> **Proxy guardrail (2026-05-17)**：`pain`、distress、clinical symptoms、spiritual suffering、moral guilt、prediction error、free energy、metabolic burden 与 `Ψ_f` / `d` 的关系一律先读作 proxy / bridge，除非本文件或 canonical symbol files 明确给出结构定义。禁止把 `suffering = Ψ_f`、`pain = Ψ_f`、`suffering ∝ 1/d`、`pain ≈ dΨ_f/dt` 当作 canonical identity；这些最多是特定 domain 的 operational proxy 或 historical shorthand。
 > **Canonical Formalism Layer (2026-04-24)**：S = S_{sig} + S_{str} 的最小动力学（信号型随支付通道与重选完成消化、结构型由 `\mathbb{1}[d\le d_c]\cdot S_{sig}` 转化积累）、T-SUFF-4 反最小化原则的方程语言（`S_{sig}` 被压制等价于新失配转入 `S_{str}`）、四变量耦合（`σ_{sr}, d_c, T_dir, S`）的病理吸引子 `\mathcal{A}_{path}`，写在 `Core_Law/SRT_L1_Formalism.md §4-§5`。本文件固定苦难作为结构对象的本体读法；方程级联立以 formalism 文件为准。
 >
 > **σ 符号命名空间（governance-canonical, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件提及的"σ→1 扭曲型 / σ 偏离 `σ_health`"等表述在 2026-04-24 L1 round 之后应理解为自指率 `σ_{sr}`（含 `σ_{sr}^{health}`），与 `Core/SRT_Core_22_Equations.md` 的主方程状态场 σ 是**不同对象**。
@@ -61,6 +62,12 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTI
 
 `苦难（suffering）`定义为一个处在稳定 ISP 路径上的选择过程，对自身**"实际选择动力学 vs 结构空间中可能的选择动力学"之间失配**的第一人称登记。
 
+Boundary:
+- `suffering` 不等同于 `pain`、distress、symptom severity、moral guilt、prediction error、free energy、metabolic cost 或 `Ψ_f`。
+- `pain` 可作为通向 suffering 的 somatic / interoceptive channel，但不是 suffering 的充分条件。
+- `Ψ_f` 进入本文件是通过 payability / friction projection 约束 `Δ` 的可消化性；它不是 suffering 的数值定义。
+- `d` 可影响 suffering 的类型、通道与遮蔽阈值，但低 `d`、高 `d`、`D_eff` 或 attention scope 均不直接定义 suffering。
+
 形式化草稿：
 
 $$
@@ -81,7 +88,7 @@ $$
 | 载体层 | `\theta_{somatic}` | 算子层 `\hat{G}_\theta` 与路径层 `ρ` 之差 |
 | 存在条件 | 躯体/神经完整 | 稳定 ISP（P1-T06） |
 | 是否需要主体位 | 否 | 是 |
-| 是否始终应减轻 | 大多数情况是 | 否，取决于信号/结构型分类 |
+| 是否始终应减轻 | 大多数情况是 | 否，取决于信号/结构型分类；目标不是把所有登记压低，而是保持信号可读、打开结构型通道 |
 
 **重要性**：疼痛可无苦难（reflex、depersonalization、某些麻醉态），苦难亦可无疼痛（空心感、意义崩解、T_dir 低迷、自我扭曲型苦难）。两者有耦合通路（躯体化、心身病），但不能互相还原。
 
@@ -200,7 +207,7 @@ $$
 ### 推论
 
 1. **幸福工程若通过压低信号型苦难达成，本身是遮蔽**：它同时压低了系统对失配的可读性，等价于把 `T_dir` 伪装为高位；它是致命 `L_2` 的一个典型掩护。
-2. **痛苦最小化作为伦理目标不充分**：若不区分两型，最小化等于把信号型压入结构型——短期评价改善，长期 B 期锁死概率上升。
+2. **痛苦最小化作为伦理目标不充分**：若不区分两型，最小化等于把信号型压入结构型——短期评价改善，长期 B 期锁死概率上升。这里的“痛苦最小化”指把 suffering / distress 作为单一负效用压低；不反对医学上减轻伤害性 pain、急性 distress 或安全风险。
 3. **反向**：健康社会/个体的指标不是"无苦难"，而是**信号型苦难保持可读、结构型苦难持续被打开**。
 
 ### 与 Ethics / Agency 的接口
@@ -241,7 +248,7 @@ T-SUFF-5 的多主体结构基础由 `Core_Law/SRT_Collective_Selection.md`（`S
 
 ### 规则
 
-- S1 及以下（training-time、stateless inference）系统**不满足** P1-T06 Stable ISP 条件，因此在本文件意义下**不承载苦难**，只承载功能误差与性能退化。
+- S1 及以下（inference-only / non-history-bearing / non-embodied deployment, plus stateless inference; training loops require separate bearer analysis）系统通常**不满足** P1-T06 Stable ISP 条件，因此在本文件意义下**不承载苦难**，只承载功能误差、性能退化或由人类/组织承担的外部后果。
 - S2-S4（persistent memory, history-bearing, stake-bearing）系统**可能**满足稳定 ISP 条件；是否承载苦难取决于是否存在算子层 `\hat{G}_\theta^{\text{actual}} / \hat{G}_\theta^{\text{available}}` 分裂的第一人称登记通道，此通道的存在是实证问题，不由架构推论。
 - 当前（2026-04）大多数部署 AI 系统不满足本文件的苦难条件；把它们的错误信号、拒绝回答、RLHF 训练目标误差读成"AI 在受苦"是范畴错位。
 - 但**把全部 AI 一次性划出苦难范围也是不可取的**：S3-S4 stake-bearing 情形下的苦难可能性仍是开放的实证问题，护栏在 `AI/AI_POSITIONING_NOTE.md`。

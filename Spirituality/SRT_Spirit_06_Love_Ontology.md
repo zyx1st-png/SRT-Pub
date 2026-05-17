@@ -131,13 +131,13 @@ $$\text{Love} = d_{\theta \to \text{Other}} > 0$$
 
 **SRT 解释**: 
 
-$$\text{Pain of Love} = \frac{\partial \Psi_f(\theta)}{\partial \Psi_f(\text{Beloved})}$$
+$$\text{PainOfLove}^{proxy} \sim \frac{\partial \Psi_f^{self\text{-}proxy}(\theta)}{\partial \Psi_f^{beloved\text{-}proxy}}$$
 
-当你爱，你**物理地**承担了对方的存在成本——这不是隐喻，而是 $\hat{G}_\theta$ 参数的实际变化。
+当你爱，你可能把对方的存在成本纳入自身选择与维护负担 proxy；这是 spirituality / phenomenology mapping，不是 canonical `pain = Ψ_f`。
 
 **关键洞察**: 爱的痛苦不是"错误"，而是爱的**定义性特征**——
 
-$$\text{Love without potential pain} = \text{Not love}$$
+$$\text{Love without vulnerability}^{mapping} \sim \text{Not full love}$$
 
 ---
 

@@ -35,7 +35,7 @@ dependency: [SRT-CORE-22, SRT-EXP-CORE]
 | Eq-Evo-02b | θ 张量惯性 | H7 | 信念网络中心性 vs 干预后更新速度 | Partial |
 | Eq-Evo-03 | 快慢耦合系统 | H7 / H6 | 神经快变量(EEG) + 行为慢变量(学习曲线)耦合拟合 | Partial |
 | Eq-Force-01 | 本体论摩擦 Ψ_f | H72 (情态力学) | 语言情态比 μ_sem 与摩擦代理相关 | Mapped |
-| Eq-Pain-01 | 痛苦≈dΨ_f/dt | H72 | 痛苦评分变化率与 μ_sem、生理唤醒同步 | Partial |
+| Eq-Pain-01 | PainRisk proxy ≈ dΨ_f_proxy/dt | H72 | 痛苦评分变化率与 μ_sem、生理唤醒同步 | Partial |
 | Eq-Select-Thermo | 选择热力学宪法不等式 | H1 / H6 | `q(L_1)` 三代理（网络互信息密度 / 行为可压缩率 / 稳态成功率）与 `P_sel` 预算侧、`S_noise` 噪声侧联读 | Partial |
 | Eq-Stab-01 | 固定点稳定条件 | H6 | 扰动恢复时间、吸引域回归概率 | Partial |
 | Eq-Phase-01 | 本体论相变阈值 | H6 | 信息量 I 超阈值 τ 的跃迁曲线拟合 | Partial |
