@@ -206,6 +206,29 @@ L2 作为摩擦分配
 
 ---
 
+## 8. 出版导出规则（Publication Export）
+
+源文件保留完整 YAML front matter，用于仓库状态、版本管理与 AI 协作。
+
+出版稿 / 读者版导出时应自动剥离 YAML front matter（`---` 至 `---` 之间的全部内容），只保留正文 Markdown。
+
+推荐导出方式：
+
+```bash
+# 去掉 YAML front matter，输出纯正文
+sed '/^---$/,/^---$/d' 原文件.md > 导出文件.md
+```
+
+或使用 pandoc：
+
+```bash
+pandoc 原文件.md -o 导出文件.pdf  # pandoc 默认不渲染 YAML front matter 为正文
+```
+
+正文中的 `optimization_axis`、`based_on`、`references` 等字段不进入读者稿；这些信息留存于源文件 YAML 和 BOOK_VERSION_LOG.md。
+
+---
+
 ## 7. 更新规则
 
 - 每完成卷级 pass，更新本文件第 2 节、卷级大纲入口、章节状态总表和版本日志。
