@@ -47,16 +47,9 @@ Many `canonical: false` files are high retrieval value for writing, theory devel
 
 After the minimal bootstrap, an agent must classify the task before deciding context depth.
 
-Minimal bootstrap remains:
+Fresh-session read order is owned by `AGENTS.md §Session Start`. Do not maintain a competing bootstrap list here.
 
-1. `AGENTS.md`
-2. `SRT_AI_START.md`
-3. `STATUS.md` or `STATUS_Split/README.md` when connector limits matter
-4. `_SRT_INDEX.md`
-5. `_SRT_SYMBOL_TABLE.md`
-6. this file
-
-Then:
+This file's role in bootstrap is to define what happens **after** the minimal guard files are loaded:
 
 1. Identify the task profile below.
 2. Load the authority anchors needed for definitions.

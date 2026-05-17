@@ -27,13 +27,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 ## 当前建议首读顺序
 
-AI / agent 最短读法：
-
-1. `AGENTS.md`
-2. `SRT_AI_START.md`
-3. `STATUS.md`
-4. `_SRT_INDEX.md`
-5. `_SRT_SYMBOL_TABLE.md`
+首读顺序唯一权威见 `AGENTS.md §Session Start`。本文件是 full dashboard；fast bootstrap 请用 `STATUS_FAST.md`。
 
 进入具体 pipeline / 治理工作时，再补读：
 
@@ -48,7 +42,7 @@ AI / agent 最短读法：
 - d-value canonical → `_SRT_D_VALUE_CANONICAL.md`
 - `Ψ_f` canonical → `_SRT_PSI_F_CANONICAL.md`
 - `T_dir` canonical → `_SRT_T_DIR_CANONICAL.md`
-- 符号规范 → `_SRT_SYMBOL_TABLE.md`
+- 符号规范 → `_SRT_SYMBOL_TABLE.md`（fast guard: `_SRT_SYMBOL_QUICK_GUARD.md`）
 - formal axioms → `Core/SRT_Core_21_Formal_Axioms.md`
 - P0 minimal axioms → `Core/SRT_Core_21_Minimal_Axioms.md`
 - P1 constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
