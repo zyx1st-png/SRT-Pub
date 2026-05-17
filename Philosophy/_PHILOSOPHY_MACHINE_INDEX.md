@@ -22,6 +22,7 @@ claim_level: P5
 canonical: false
 date: 2026-04-29
 dependency:
+  - SRT-PHILOSOPHY-CLAIM-STATUS
   - SRT-PHILOSOPHY-README
   - SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27
   - SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27
@@ -56,6 +57,7 @@ machine_summary: >
 
 ```text
 Philosophy/_PHILOSOPHY_MACHINE_INDEX.md
+  -> Philosophy/SRT_Philosophy_Claim_Status.md
   -> Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md
   -> Philosophy/01_PH_SS_Objection_Crosswalk.md
   -> Philosophy/02_PH_SS_Hardening_Execution_Plan.md

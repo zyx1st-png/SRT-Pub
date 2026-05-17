@@ -8,7 +8,7 @@ epistemic_layer: bridge
 claim_mode: guide
 claim_level: P5
 canonical: false
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STATUS, SRT-PHIL-HARDENING-SOFT-SPOTS-2026-04-27, SRT-PHIL-PH-SS-OBJECTION-CROSSWALK-2026-04-27, SRT-PHIL-PH-SS-HARDENING-EXECUTION-PLAN-2026-04-27, SRT-PHIL-PHENOMENAL-STRUCTURE-INTERFACE-2026-04-29, SRT-PHIL-FOUNDATIONS, SRT-PHIL-AXIOMS, SRT-PHIL-OBJECTION-LEDGER, SRT-PHIL-HARDENING-TODO]
 ---
 
 # SRT Philosophy — Section Guide
@@ -36,9 +36,10 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 
 | Step | File | Role |
 |---|---|---|
-| 0 | `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | Highest-priority soft-point and upgrade map; machine-readable + human-readable; use before major philosophy edits. |
-| 0.1 | `01_PH_SS_Objection_Crosswalk.md` | Crosswalk from `PH-SS-01..12` to objection families, responses, withdrawal conditions, and target files. |
-| 0.2 | `02_PH_SS_Hardening_Execution_Plan.md` | Sequential execution plan for turning soft spots into repository edits. |
+| 0 | `SRT_Philosophy_Claim_Status.md` | Folder-level guardrail for God-view / d-infinity / Psi_f-pain / morality-as-physics / selection-creates-reality language. |
+| 0.1 | `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | Highest-priority soft-point and upgrade map; machine-readable + human-readable; use before major philosophy edits. |
+| 0.2 | `01_PH_SS_Objection_Crosswalk.md` | Crosswalk from `PH-SS-01..12` to objection families, responses, withdrawal conditions, and target files. |
+| 0.3 | `02_PH_SS_Hardening_Execution_Plan.md` | Sequential execution plan for turning soft spots into repository edits. |
 | 1 | `SRT_Philosophy_Foundations_CompactCore.md` | Best short entry point; hardened with existence levels, `\Psi_f` resistance proxies, `L_1` anchoring, and subjecthood thresholds. |
 | 1.5 | `SRT_Phenomenal_Structure_Interface.md` | Bridge for qualia space, phenomenal structure, structural turn, automorphism, IIT/GNWT/FEP structure questions; not a consciousness or subjecthood definition source. |
 | 1.6 | `SRT_HardProblem_Epistemology.md` | Hard-problem dissolution route; includes the view-from-nowhere trap guardrail for first/third-person explanatory-gap claims. |
@@ -57,6 +58,11 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 The current hardening pass should keep these guardrails visible:
 
 ```text
+God-view / view-from-nowhere language is a negative contrast, not a finite operator state;
+d->infinity is regulative shorthand, not actual finite attainment;
+Psi_f is not pain, grief, guilt, language collapse, or moral cost without an explicit proxy;
+morality is not reducible to physics or self-preservation;
+selection creates determinate manifestation only under resistance, anchoring, and stabilization;
 L0 is not a hidden object-world;
 selection-before-existence is manifestational, not temporal;
 theta is not subjective will;

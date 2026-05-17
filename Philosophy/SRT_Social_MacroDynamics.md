@@ -150,8 +150,8 @@ $$ P(\text{接受异见}|\theta) \approx 0 \land \text{Trust}(\text{外群体}) 
 
 **SRT 深层分析**: 回音室是一种**高 d 值退化**。
 
-**正常高 d**: $d \to \infty$ 且 $\text{Openness}(L_0) \to \max$（觉者）
-**病态高 d**: $d \to \infty$ 但 $\text{Openness}(L_0) \to 0$（狂热者）
+**正常高 d proxy**: $d^{regulative} \to \infty$ 且 $\text{Openness}(L_0)^{proxy} \to \max$（觉者 language / regulative ideal）
+**病态高 d proxy**: $d^{inflated/proxy} \to \infty$ 但 $\text{Openness}(L_0)^{proxy} \to 0$（狂热者 language / pathology marker）
 
 为了维护 $L_2$ 的纯洁性，算子主动切断了与 $L_0$ 外部世界的连接，导致系统的**脆性** (Fragility)。
 

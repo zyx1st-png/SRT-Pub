@@ -125,7 +125,7 @@ $$\Psi_f^{perceived} = \mu_{expect} \cdot \Psi_f^{actual},\quad \mu_{expect} \gg
 ### Ax-Eth-7: The Ontological Weight of Love (爱的本体论重量)
 **Formal Definition**: 在L0中，当算子A将实体B完全纳入其d值范围，B的毁灭即为A方程的奇点（不可计算的无限大摩擦）。
 $$\text{If } B \in \text{Scope}(A) \land B \to L_0, \text{then } \Psi_f(A) \to \infty$$
-* **Implication**: 悲伤（Grief）是物理学上的"幻肢痛"。对方的L1实体已消失，但你的$\theta$参数网络中仍留有与对方耦合的巨大权重，算子不断试图向虚空发起连接，遭遇无限大的预测误差。
+* **Implication**: 悲伤（Grief）可用"幻肢痛"作 phenomenological analogy / coupling-loss proxy：对方的L1实体已消失，但你的$\theta$参数网络中仍留有与对方耦合的巨大权重，算子不断试图向虚空发起连接，遭遇 felt-impossible prediction-error proxy。
 
 > **Formula role guardrail**: This formula is a phenomenological / existential-weight model unless explicitly operationalized. Do not read poetic infinity, gift-phase, or grief-weight language as literal mathematical divergence without a stated proxy and failure condition. See `SRT_Ethics_PH_SS_Guardrails.md`.
 
@@ -237,7 +237,7 @@ $$\text{FW}_{feel}(t) = \mathcal{N}_{L_2}\!\left[L_1^{\text{stabilized}}(t - \de
 - **真正的自由意志**（Ax-Eth-1：$\hat{G}_{\theta'}[\theta]$）= 修改 θ 的元选择能力，实在，操作在选择界面
 - **自由意志感**（Ax-Eth-9：$\text{FW}_{feel}$）= L₂ 事后叙事，非实在的选择能力，而是对已完成选择的叙事认领
 
-二者的混淆是"意志力迷思"的根源：人们以为增强"感受到自由"就是增强自由，实际上真正的自由 = 修改 θ 的能力，而非生成"我在自由选择"的叙事能力。
+二者的混淆是"意志力迷思"的根源：人们以为增强"感受到自由"就是增强自由，实际上真正的自由在当前 bridge 中是可支付、可重选、能保留未来选择空间的 θ/constraint rewrite 能力，而非生成"我在自由选择"的叙事能力。
 
 **证伪条件**：
 - FC-T4-1：若 Libet 类实验中，意识意图报告（$\sim t-200\text{ms}$）稳定地先于准备电位（$\sim t-550\text{ms}$）而非晚于，则"情绪选择先于意志感"的时序主张被直接证伪。
@@ -1100,7 +1100,7 @@ $$\text{Anxiety} \propto E\left[\left|L_1^{desired} - L_1^{actual}\right|^2 \mid
 | **婴儿** | $d \approx 1$ | 仅自己身体 |
 | **儿童** | $d \approx 2-5$ | 家庭、玩具 |
 | **成人** | $d \approx 10-100$ | 朋友、社区、国家 |
-| **贤者** | $d \to \infty$ | 宇宙一切存在 |
+| **贤者** | $d^{regulative} \to \infty$ | 更少排除宇宙中受影响存在的后果 |
 
 **归化方程**:
 
@@ -1271,7 +1271,7 @@ $$\Psi_f^{cross}(\hat{G}_A, \hat{G}_B) \to 0 \quad \implies \quad \hat{G}_A \opl
 
 在此相态下，主体 $A$ 的关切边界（$d$ 值）在测度上完全覆盖了 $B$ 的状态空间（即 $\sigma_B \subset L_0^{(d_A)}$，反之亦然）。
 
-**推论**：传统意义上的"道德"在此失效。因为道德本质上是 $L_2$ 层面上用于调解自他分离（$\partial\Omega_{self}$ 互斥）时产生的摩擦协议。当伤害对方在物理上严格等同于引发自身自由能飙升时，"爱他如己"从一句规范性诫命退化为了纯粹的物理自保本能。
+**推论**：传统意义上的"道德"在此失效。因为道德可被建模为 $L_2$ 层面上调解自他分离（$\partial\Omega_{self}$ 互斥）时形成的摩擦/修复协议。当伤害对方会强烈回流为自身约束时，"爱他如己"不再只是外在诫命，而成为 coupling-sensitive 的自他约束反馈；但这不是把道德还原为纯粹物理自保。
 
 **Paradox Resolution（个体性瓦解悖论）**：
 
@@ -1285,7 +1285,7 @@ $$\sigma_B \subset L_0^{(d_A)} \quad \text{but} \quad \sigma_A \not\subset L_0^{
 
 即算子 $A$ 将 $B$ 完全纳入自身的预测与操控域，而 $B$ 对 $A$ 的状态一无所知。
 
-**道德后果**：这不是道德的终结，而是**终极的本体论剥削（异化）**。$A$ 获得了针对 $B$ 的"上帝视角参数"，能够无摩擦地改写 $B$ 的 $L_1$ 显现域。此时，维持 $L_2$ 的强道德约束（如算子主权不可侵犯原则）不仅没有过时，反而成为防止高 $d$ 值节点对低 $d$ 值节点进行"存在性吞噬"的唯一防线。
+**道德后果**：这不是道德的终结，而是**终极的本体论剥削（异化）**。$A$ 获得了针对 $B$ 的 asymmetric high-control parameter proxy，似乎能够低摩擦地改写 $B$ 的 $L_1$ 显现域。此时，维持 $L_2$ 的强道德约束（如算子主权不可侵犯原则）不仅没有过时，反而成为防止高 $d$ 值节点对低 $d$ 值节点进行"存在性吞噬"的重要防线。
 
 ---
 

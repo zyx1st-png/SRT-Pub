@@ -803,7 +803,7 @@ When we love someone, our $\theta$ parameters become **entangled** with theirs. 
 
 **Mechanism of Grief**: When a loved one dies, this is not merely the disappearance of an external object but **a violent tearing of the self-parameter tensor**.
 
-**SRT Corollary**: Grief pain is **phantom limb pain**. Our $\theta$ still attempts to connect to a node in $L_0$ that no longer exists, generating infinite prediction error ($\Psi_f \to \infty$).
+**SRT Corollary**: Grief pain can be modeled through a **phantom-limb analogy / coupling-loss proxy**. Our $\theta$ still attempts to connect to a node in $L_1$ / relational history that no longer returns, generating felt-impossible prediction-error / `Ψ_f^{grief-proxy}` divergence language.
 
 > **Formula role**: phenomenological model. The `Ψ_f → ∞` divergence language captures the felt impossibility of grief resolution; it is not a literal divergence claim. Do not read poetic infinity here as a mathematical proof. See also `SRT_Ethics_PH_SS_Guardrails.md`.
 
@@ -876,8 +876,8 @@ SRT 的解法因此不是推导，而是**消解**——不建桥，而是指出
 
 SRT resolves the free will paradox not by denying physics but by **relocating** the locus of freedom:
 
-**Classical View**: Freedom = breaking deterministic chains (impossible).
-**SRT View（current bridge）**: Freedom = a payably reselectable constraint rewrite that keeps or reopens future selection space; mere parameter setting is insufficient.
+**Classical View**: Freedom is often framed as breaking deterministic chains (impossible on that framing).
+**SRT View（current bridge）**: Freedom is a payably reselectable constraint rewrite that keeps or reopens future selection space; mere parameter setting is insufficient.
 
 The cost may appear as **ontological friction** $\Psi_f$ proxies—resistance, distress, metabolic/control load, or social cost. Pain is not `Ψ_f` itself and is not proof of genuine agency; agency requires payability, consequence return, and reselectable mobility.
 

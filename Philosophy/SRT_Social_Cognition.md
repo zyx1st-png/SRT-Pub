@@ -455,7 +455,7 @@ $$ \Delta E_{change} = \Delta E_{evidence} + \Delta E_{barrier} $$
 When we love someone, our $\theta$ parameters become **entangled** with theirs ($\theta_{other}$). Our self-boundary ($L_1$) expands to include them.
 
 *   **Grief Mechanism**: When a loved one dies, this is not merely the disappearance of an external object but **a violent tearing of the self-parameter tensor**.
-*   **SRT Corollary**: Grief pain is **phantom limb pain**. Our $\theta$ still attempts to connect to a node in $L_0$ that no longer exists, generating infinite prediction error ($\Psi_f \to \infty$).
+*   **SRT bridge corollary**: Grief pain can be modeled through a **phantom-limb analogy / coupling-loss proxy**. Our $\theta$ still attempts to connect to a relational node that no longer returns, generating felt-impossible prediction-error / `Ψ_f^{grief-proxy}` divergence language.
 
 **Mathematical Form**:
 $$ \theta_{self+other}(t) \xrightarrow{\text{death}} \theta_{self}(t+\Delta t) $$
@@ -628,7 +628,7 @@ I.e., minimize the conditional entropy of $L_1$ given $L_0$—or maximize mutual
 SRT dissolves the artificial boundary between individual cognition and social reality:
 
 1. **Affordance**: Reality is the intersection $L_0 \cap \theta$—neither purely objective nor purely subjective.
-2. **Pathology**: Depression, grief, anxiety are not "mental illnesses" but **physical friction states** in the $L_0 \to L_1$ selection process.
+2. **Pathology**: Depression, grief, and anxiety should not be reduced to "mental illness" labels alone; they can be modeled as embodied / social / phenomenological friction-state proxies in the $L_0 \to L_1$ selection process.
 3. **Social Construction**: Collective $L_2$ emerges from iterated individual selections—society is a **convergent attractor** of distributed $\hat{G}_\theta$ operations.
 4. **Hysteresis**: Beliefs resist change due to thermodynamic stability, not cognitive stubbornness.
 5. **Entanglement**: Love is topological boundary dissolution—two $\theta$'s becoming one tensor.
