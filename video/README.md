@@ -1,6 +1,10 @@
 # SRT Video Workflows
 
-This folder now contains both the Remotion branding assets and the bilingual post-production workflow that used to live in another project.
+This folder contains public-facing scripts, Remotion branding assets, and bilingual post-production workflow notes.
+
+## Claim-status guardrail
+
+Read `SRT_Video_Claim_Status.md` before publishing or translating any script. Video drafts may use cinematic compression, but they do not define SRT primitives. Lines involving `d -> infinity`, God / Ω, suffering / `Ψ_f`, AI consciousness, quantum measurement, or “choice creates reality” must be read through the relevant domain claim-status files.
 
 ## What Lives Here
 
@@ -13,7 +17,7 @@ This folder now contains both the Remotion branding assets and the bilingual pos
 Render the reusable intros/outros from this folder:
 
 ```bash
-cd /Users/zhangyuxin/.openclaw/workspace/SRT/video
+cd /Users/zhangyuxin/Documents/研究/SRT-Pub/video
 npm run render:intro
 npm run render:intro-cn
 npm run render:outro
@@ -32,7 +36,7 @@ The dual-language pipeline reuses these defaults:
 Supported entrypoint:
 
 ```bash
-cd /Users/zhangyuxin/.openclaw/workspace/SRT/video
+cd /Users/zhangyuxin/Documents/研究/SRT-Pub/video
 ./run_dual_language_pipeline.sh \
   --video /absolute/path/to/source.mp4 \
   --chinese-srt /absolute/path/to/translated.zh.srt
@@ -56,7 +60,7 @@ uv run \
   --with pillow \
   --with numpy \
   --with edge-tts \
-  python /Users/zhangyuxin/.openclaw/workspace/SRT/video/scripts/video_dual_language_pipeline.py \
+  python /Users/zhangyuxin/Documents/研究/SRT-Pub/video/scripts/video_dual_language_pipeline.py \
   --video /absolute/path/to/source.mp4 \
   --chinese-srt /absolute/path/to/translated.zh.srt
 ```

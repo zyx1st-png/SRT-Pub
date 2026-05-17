@@ -158,7 +158,8 @@ SRT is not claiming:
 - God / Ω / divine language in SRT is a canonical theological proof;
 - `d -> infinity`, liberation, awakening, or mystical experience is an actual finite attainment claim;
 - suffering, sin, fear, or spiritual darkness literally equals `Ψ_f`;
-- practice, meditation, prayer, or community membership automatically increases `d` or lowers `Ψ_f`.
+- practice, meditation, prayer, or community membership automatically increases `d` or lowers `Ψ_f`;
+- public video scripts or cinematic drafts are canonical theory statements without `video/SRT_Video_Claim_Status.md` review.
 
 SRT's stronger and safer claim is:
 
