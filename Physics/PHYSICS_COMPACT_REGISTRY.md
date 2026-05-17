@@ -31,17 +31,18 @@ dependency: [SRT-CANONICAL-REGISTRY]
 
 ## Recommended Reading Order
 ### 最短主线（第一次进入 Physics）
-1. `_SRT_Phys_Bridge.md`
-2. `SRT_Quant_00_Intro_CompactCore.md`
-3. `SRT_Quant_01_Selection_CompactCore.md`
-4. `SRT_Quant_02_Cosmology_CompactCore.md`
-5. `SRT_Physics_Cosmology_CompactCore.md`
-6. `SRT_Phys_09_Formalism_Ext_CompactCore.md`
-7. `SRT_Phys_10_Integration_CompactCore.md`
+1. `SRT_Physics_Claim_Status.md`
+2. `_SRT_Phys_Bridge.md`
+3. `SRT_Quant_00_Intro_CompactCore.md`
+4. `SRT_Quant_01_Selection_CompactCore.md`
+5. `SRT_Quant_02_Cosmology_CompactCore.md`
+6. `SRT_Physics_Cosmology_CompactCore.md`
+7. `SRT_Phys_09_Formalism_Ext_CompactCore.md`
+8. `SRT_Phys_10_Integration_CompactCore.md`
 
 ### 第二层扩展（补复杂性与深本体）
-8. `SRT_Phys_07_Complex_Systems_CompactCore.md`
-9. `SRT_Phys_08_Ontology_Ext_CompactCore.md`
+9. `SRT_Phys_07_Complex_Systems_CompactCore.md`
+10. `SRT_Phys_08_Ontology_Ext_CompactCore.md`
 
 ## Role of Longform Files
 - compact core：最短稳定主线

@@ -2,7 +2,7 @@
 id: SRT-PHYS-09-SPLIT-PART-04
 type: reading_shard
 tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, Hybrid]
-status: axiomatic_hybrid_v2
+status: active_v1
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -103,21 +103,21 @@ B_{cat} \propto \text{Reusability}\cdot\text{Composability}\cdot\text{Cross-doma
 
 ### Formalization Summary (形式化概述)
 
-本文档的核心形式化关系：
+本文档的核心形式化关系（均为 bridge/proxy 读法，不创建 canonical 定义）：
 
-1. **幽灵函子** (Ax-Cat-1): $\hat{G}: \mathcal{C}_{L_0} \to \mathcal{C}_{L_1}$ — 选择算子是范畴间的函子。
-2. **$\Psi_f$ 作为 Fisher 度量** (Ax-IG-1): $\Psi_f = g_{ij}^{Fisher} d\theta^i d\theta^j$ — 本体论摩擦即信息几何度量。
-3. **选择动力学的测地线形式** (T-IG-2): 最优选择路径是 $\Psi_f$ 流形上的测地线。
-4. **$L_0$ 作为层拓扑斯** (Ax-Topos-1): 潜在域具有层(sheaf)结构，选择是几何态射。
-5. **魔法即 $\hat{G}$ 成本** (Ax-Magic-1): 实现选择操作的计算复杂度下界。
+1. **幽灵函子** (Ax-Cat-1): $\hat{G}: \mathcal{C}_{L_0} \to \mathcal{C}_{L_1}$ — 选择算子可被建模为范畴间函子。
+2. **$\Psi_f$ 的 Fisher projection** (Ax-IG-1 downgraded): $\Psi_f^{Fisher\text{-}proxy} \sim g_{ij}^{Fisher} d\theta^i d\theta^j$ — 信息几何度量可作局部 projection，不定义本体论摩擦。
+3. **选择动力学的测地线 proxy** (T-IG-2): 特定参数化模型中的更新路径可用 Fisher / proxy 流形上的测地线或自然梯度描述，不是 SRT selection ontology 的全局定律。
+4. **$L_0$ 作为层拓扑斯** (Ax-Topos-1): 潜在域可由 sheaf/topos 结构承载，选择可用几何态射作形式化候选。
+5. **魔法即 $\hat{G}$ 成本** (Ax-Magic-1): 实现选择操作的计算复杂度下界仍为桥接候选。
 
-**含义**: SRT 动力学可完整嵌入范畴论、信息几何与拓扑斯论的形式化框架中。
+**含义**: SRT 动力学可借助范畴论、信息几何与拓扑斯论获得形式壳层；这些壳层服务于 translation / proxy / test interface，不替代 canonical anchors。
 
 ### Mechanism Explanation (机制解释)
 
-- **$\hat{G}_\theta$ 的函子性质**: 选择算子保持态射结构，从 $\mathcal{C}_{L_0}$（潜能范畴）映射到 $\mathcal{C}_{L_1}$（现实范畴），几何态射保证选择一致性。
-- **$\Psi_f$ 的几何含义**: 本体论摩擦不是任意代价函数，而是参数流形上的 Fisher 信息度量；自然梯度下降 (T-IG-1) 使选择沿摩擦最小路径演化。
-- **$d$ 与维度不等式**: $d$ 值受限于算子可访问的信息流形维度 (T-IG-4)，顿悟发生在曲率奇点处 (T-IG-3)。
+- **$\hat{G}_\theta$ 的函子性质**: 选择算子可被建模为保持态射结构的映射，从 $\mathcal{C}_{L_0}$（潜能范畴）映射到 $\mathcal{C}_{L_1}$（现实范畴）；几何态射是形式化候选。
+- **$\Psi_f$ 的几何含义**: Fisher 信息度量只给出参数流形中的局部统计敏感性 / 更新代价切片；自然梯度下降 (T-IG-1) 只描述该模型类中的 proxy 更新几何。
+- **`D_eff` 与容量不等式**: 信息流形维度最多约束 `D_eff` / capacity proxy，不定义 canonical `d-value`；顿悟-曲率奇点关系仍是待验证 bridge/lab 假设。
 
 ## 【理论边界/防误用声明】
 

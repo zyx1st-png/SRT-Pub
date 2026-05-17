@@ -13,8 +13,8 @@ canonical: false
 # SRT-PHYS-09 Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Phys_09_Formalism_Ext.md`](../SRT_Phys_09_Formalism_Ext.md)
-- Source owner bytes: `65285`
-- Source owner SHA-256: `520b94c62e7d073e3f3f9096c30aee71977aab2cc834f8ae0f2d2b227df7632d`
+- Source owner bytes: `65697`
+- Source owner SHA-256: `7d3debe3b265076a313356d882073031c89910a5364bfe9b9dd91b0b4d254d61`
 - 00_Foundational_Formalism：[`00_Foundational_Formalism.md`](00_Foundational_Formalism.md)
 - 01_Math_and_Category_Stack：[`01_Math_and_Category_Stack.md`](01_Math_and_Category_Stack.md)
 - 02_Information_Geometry_and_Dynamics：[`02_Information_Geometry_and_Dynamics.md`](02_Information_Geometry_and_Dynamics.md)

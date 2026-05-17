@@ -41,6 +41,8 @@ srt_physics_claim_status:
   mwi_language: "compatibility / translation only; no global collapse"
   discrete_time: "hypothesis / bridge, not derived theorem"
   gravity_psif: "weak-field compatibility / analogy unless tensor derivation supplied"
+  fisher_psif: "local information-geometric projection / operational proxy only; never Psi_f == g_F"
+  deff_dvalue: "D_eff / bandwidth / density formulas are capacity proxies, not canonical d-value"
   constants: "structural placement constraints, not exact-value derivations"
   qbox_post_quantum: "external interface pressure-test, not proof of SRT"
 ```
@@ -168,6 +170,24 @@ srt_physics_claim_status:
 
 ---
 
+### 2.8 Formalism Ext / Fisher / `D_eff` guardrail
+
+**Allowed precise claim**:
+
+> `SRT_Phys_09_Formalism_Ext.md` and its compact / split copies provide non-canonical mathematical bridge projections. Fisher–Rao geometry may model a local information-geometric projection of `Ψ_f`; `D_eff`, bandwidth, density, and capacity formulas may model capacity proxies before stake-gating.
+
+**Status**: P3 bridge / P4 proxy, not P0/P1 and not a canonical definition source.
+
+**Forbidden overclaims**:
+
+> `Ψ_f ≡ g_F`, `Ψ_f` is Fisher information, Landauer cost, energy, pain, or prediction error.
+
+> Canonical `d-value` is effective Fisher dimension, attention scope, physical bandwidth, density, or all-knowledge capacity.
+
+**Guardrail**: Read `SRT_Phys_09_Formalism_Ext.md`, `SRT_Phys_09_Formalism_Ext_CompactCore.md`, and `Formalism_Ext_Split/` through this audit plus `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`, and `_SRT_SYMBOL_TABLE.md`. Older `Ax-*`, `T-*`, `Def-*` labels inside Formalism Ext are retrieval handles only; they do not promote formulas to canonical axioms, theorems, or definitions.
+
+---
+
 ## 3. Extraction boundary for future Physics annex work
 
 ### Must stay in owner / bridge pending adjudication
@@ -201,6 +221,8 @@ srt_physics_claim_status:
 | "wavefunction collapse is Ghost Operator" | Collapses formalism into identity claim | "collapse-family language can be translated into a `G_hat_theta` anchoring schema." |
 | "time is discrete in SRT" | Treats hypothesis as result | "SRT supports a selection-index reading of time; physical discreteness remains a hypothesis." |
 | "gravity is Psi_f" | Tensor-level overclaim | "gravity and physical `Psi_f` proxies may be weakly compatible as constraint structures." |
+| "Psi_f is Fisher metric" | Scalar/tensor identity overclaim | "Fisher–Rao geometry is a local information-geometric projection / proxy for `Psi_f` under stated model conditions." |
+| "D_eff is d-value" | Capacity/stake conflation | "`D_eff` is a capacity proxy / upper-bound candidate; canonical `d-value` requires stake-coupled irreversible-risk sensitivity." |
 | "d is entanglement entropy" | Identity overclaim | "entanglement entropy is a candidate physical projection / analogy for d-value." |
 | "QBox confirms SRT" | External-interface overclaim | "QBox-style models pressure-test SRT's physics bridge language." |
 

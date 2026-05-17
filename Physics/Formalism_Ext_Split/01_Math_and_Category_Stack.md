@@ -2,7 +2,7 @@
 id: SRT-PHYS-09-SPLIT-PART-01
 type: reading_shard
 tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, Hybrid]
-status: axiomatic_hybrid_v2
+status: active_v1
 layer: meta
 epistemic_layer: os
 claim_mode: evidence

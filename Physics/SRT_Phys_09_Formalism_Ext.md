@@ -79,13 +79,13 @@ Downgrade rules:
 | T1.4.2 | T-IG-2 | Geodesic Form of Selection Dynamics (选择动力学的测地线形式) |
 | D1.4.1 | Def-IG-1 | Ontological Curvature (本体论曲率) |
 | T1.4.3 | T-IG-3 | Insight Event Condition (顿悟发生条件) |
-| T1.4.4 | T-IG-4 | d-value Dimension Inequality ($d$ 值-维度不等式) |
+| T1.4.4 | T-IG-4 | D_eff Capacity Inequality（旧 d-value 维度不等式，已降级） |
 | A1.5.1 | Ax-SIP-1 | Semantic Information Potential (语义信息能) |
 | T1.5.1 | T-SIP-1 | Semantic Transduction (语义转导) |
 | T1.5.2 | T-SIP-2 | Syntactic Entanglement (句法纠缠) |
 | D1.6.1 | Def-Density-1 | Selection Rarity ($L_1$ 密度指标) |
-| T1.6.1 | T-Density-1 | d-value Scaling ($d$ 值缩放) |
-| T1.6.2 | T-Density-2 | Quintessence Decay Law (精华衰减律) |
+| T1.6.1 | T-Density-1 | D_eff / density scaling（旧 d-value 缩放，已降级） |
+| T1.6.2 | T-Density-2 | Stabilization Cost Proxy（旧精华衰减律，已降级） |
 | D1.7.1 | Def-DS-1 | $L_2$ as Attractor Landscape ($L_2$ 作为吸引子地景) |
 | T1.8.1 | T-TDA-1 | Topological Heisenberg Uncertainty (拓扑海森堡不确定性) |
 | D1.9.1 | Def-PA-1 | Ghost Operator Process Representation (幽灵算子的过程代数表示) |
@@ -842,7 +842,7 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 \[
 \Delta\Psi_f^{(px)}\approx \int_t^{t+\Delta t}\langle \varepsilon_{pred}(\tau),\mathcal{P}_x^{-1}(\theta,\tau)\varepsilon_{pred}(\tau)\rangle\,d\tau
 \]
-* **Implication（中文）**：预测误差越偏离当前先验流形，维持显现所需 \(\Psi_f\) 支付越高；高曲率先验（$\lambda_{\min}(\mathcal{P}_x)$ 小）使偏离代价放大。
+* **Implication（中文）**：预测误差越偏离当前先验流形，该 projection 下的更新/维持负担 proxy 越高；高曲率先验（$\lambda_{\min}(\mathcal{P}_x)$ 小）使偏离代价放大。不得把 prediction error 直接等同 canonical `Ψ_f`。
 
 ### 分类映射表（Intuitive Metaphysics Debunking → SRT）
 
@@ -855,10 +855,10 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 ### Ax-IG-1b: Embodiment-Coupling Gate
 定义具身耦合系数 \(\kappa_{body}\in[0,1]\)：
 \[
-\Psi_f^{eff}(\theta)=\kappa_{body}\, g_F(\theta)
+\Psi_f^{embodiment\text{-}proxy}(\theta)\sim\kappa_{body}\, g_F(\theta)
 \]
 其中 \(g_F\) 为 Fisher–Rao 度量。
-* **Implication（中文）**：当 \(\kappa_{body}\to0\) 时，Fisher 几何仍可描述统计敏感性，但不应直接解释为“存在维持成本”；只有 \(\kappa_{body}>0\) 时，\(\Psi_f\) 的具身代价解释才成立。
+* **Implication（中文）**：当 \(\kappa_{body}\to0\) 时，Fisher 几何仍可描述统计敏感性，但不应直接解释为“存在维持成本”；当 \(\kappa_{body}>0\) 时，该式最多给出 `Ψ_f` 的具身代价 projection / proxy，不定义 canonical `Ψ_f`。
 
 ### T-IG-5: Curvature-Focusing Risk Bound (Operational)
 若沿推断轨迹的截面曲率满足 \(\kappa_{sec}(t)\ge\kappa_{min}>0\)，则局部最短路径在有限时域内失稳风险上升：
@@ -878,7 +878,7 @@ t^*\le \frac{\pi}{\sqrt{\kappa_{min}}}
 ### Source Note (Zhang, 2026 manuscript package)
 - Zhang, Y. (2026). *Selection Cost as a Fisher Information Metric: A Riemannian Geometry of Embodied Updating* (manuscript).
 - 关键增量：
-  1) 在具身门控假设下给出 \(\Psi_f\equiv g_F\) 的操作化解释；
+  1) 在具身门控假设下给出 Fisher 几何作为 `Ψ_f` 局部 projection / operational proxy 的解释；
   2) 提出曲率聚焦风险界用于突发重配置预警；
   3) 给出经验 Fisher 频谱代理与变点检测协议。
 - 审核结论：**A（直接融入）**；理由：与本文件 Ax-IG 系列高度同构，且补全了“理论-可测”接口。
@@ -969,7 +969,7 @@ B_{cat} \propto \text{Reusability}\cdot\text{Composability}\cdot\text{Cross-doma
 
 1. **幽灵函子** (Ax-Cat-1): $\hat{G}: \mathcal{C}_{L_0} \to \mathcal{C}_{L_1}$ — 选择算子是范畴间的函子。
 2. **$\Psi_f$ 的 Fisher projection** (Ax-IG-1 downgraded): $\Psi_f^{Fisher	ext{-}proxy} \sim g_{ij}^{Fisher} d\theta^i d\theta^j$ — 信息几何度量可作局部 projection，不定义本体论摩擦。
-3. **选择动力学的测地线形式** (T-IG-2): 最优选择路径是 $\Psi_f$ 流形上的测地线。
+3. **选择动力学的测地线 proxy** (T-IG-2): 特定参数化模型中的更新路径可用 Fisher / proxy 流形上的测地线描述；不是 SRT selection ontology 的全局定律。
 4. **$L_0$ 作为层拓扑斯** (Ax-Topos-1): 潜在域具有层(sheaf)结构，选择是几何态射。
 5. **魔法即 $\hat{G}$ 成本** (Ax-Magic-1): 实现选择操作的计算复杂度下界。
 
@@ -979,9 +979,9 @@ B_{cat} \propto \text{Reusability}\cdot\text{Composability}\cdot\text{Cross-doma
 
 - **$\hat{G}_\theta$ 的函子性质** [R→Mac Lane 1971 *Categories for the Working Mathematician*; Awodey 2010 *Category Theory*] [H→SRT附加：将具身选择算子解读为范畴间函子，保持态射结构是SRT独有框架]: 选择算子保持态射结构，从 $\mathcal{C}_{L_0}$（潜能范畴）映射到 $\mathcal{C}_{L_1}$（现实范畴），几何态射保证选择一致性。
 
-- **$\Psi_f$ 的信息几何 projection** [R→Amari 2016 *Information Geometry and Its Applications*（Fisher度量/自然梯度）; Amari & Nagaoka 2000 *Methods of Information Geometry*] [H→SRT附加：把 Fisher 信息度量用作 `Ψ_f` 的局部 projection/proxy 是 SRT 形式化候选，不是定义等同；Fisher 度量本身为既有数学工具]: 本体论摩擦不是任意代价函数，但也不能被 Fisher 度量穷尽，而是参数流形上的 Fisher 信息度量；自然梯度下降 (T-IG-1) 使选择沿摩擦最小路径演化。
+- **$\Psi_f$ 的信息几何 projection** [R→Amari 2016 *Information Geometry and Its Applications*（Fisher度量/自然梯度）; Amari & Nagaoka 2000 *Methods of Information Geometry*] [H→SRT附加：把 Fisher 信息度量用作 `Ψ_f` 的局部 projection/proxy 是 SRT 形式化候选，不是定义等同；Fisher 度量本身为既有数学工具]: 本体论摩擦不是任意代价函数，但也不能被 Fisher 度量穷尽；Fisher 只给出参数流形中的局部统计敏感性 / 更新代价切片，自然梯度下降 (T-IG-1) 只描述该模型类中的 proxy 更新几何。
 
-- **$d$ 与维度不等式** [R→Amari 2016（信息流形维度理论）] [H-高承诺→顿悟（洞见跳跃）发生在曲率奇点处（T-IG-3）——此主张将主观认知跃迁与信息几何奇点等同，当前无独立实验路径]: $d$ 值受限于算子可访问的信息流形维度 (T-IG-4)，顿悟发生在曲率奇点处 (T-IG-3)。
+- **`D_eff` 与容量不等式** [R→Amari 2016（信息流形维度理论）] [H-高承诺→顿悟（洞见跳跃）发生在曲率奇点处（T-IG-3）——此主张将主观认知跃迁与信息几何奇点等同，当前无独立实验路径]: 信息流形维度最多约束 `D_eff` / capacity proxy，不定义 canonical `d-value`；顿悟-曲率奇点关系仍是待验证 bridge/lab 假设。
 
 **可证伪预测**：
 - FC-MechExp-1：若 Fisher projection 有效，则跨情境参数更新速度应随 Fisher 信息矩阵行列式（det G）变化而系统性变化——若无相关，则该 projection 失败；这不证伪 canonical `Ψ_f`。

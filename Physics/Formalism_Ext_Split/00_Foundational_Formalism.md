@@ -2,7 +2,7 @@
 id: SRT-PHYS-09-SPLIT-PART-00
 type: reading_shard
 tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, Hybrid]
-status: axiomatic_hybrid_v2
+status: active_v1
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -52,18 +52,18 @@ source_owner: ../SRT_Phys_09_Formalism_Ext.md
 | A1.3.2 | Ax-Topos-1 | $L_0$ as Sheaf Topos ($L_0$ 作为层拓扑斯) |
 | T1.3.1 | T-Topos-1 | Geometric Morphism Selection (几何态射选择) |
 | L1.3.1 | Lemma Topos-Int (O-T1 对应) | — |
-| A1.4.1 | Ax-IG-1 | Ontological Friction as Fisher Metric ($\Psi_f$ 作为 Fisher 度量) |
+| A1.4.1 | Ax-IG-1 | Fisher Projection of Ontological Friction (`Ψ_f` 的 Fisher 投影，非定义) |
 | T1.4.1 | T-IG-1 | Natural Gradient Descent (自然梯度下降) |
 | T1.4.2 | T-IG-2 | Geodesic Form of Selection Dynamics (选择动力学的测地线形式) |
 | D1.4.1 | Def-IG-1 | Ontological Curvature (本体论曲率) |
 | T1.4.3 | T-IG-3 | Insight Event Condition (顿悟发生条件) |
-| T1.4.4 | T-IG-4 | d-value Dimension Inequality ($d$ 值-维度不等式) |
+| T1.4.4 | T-IG-4 | D_eff Capacity Inequality（旧 d-value 维度不等式，已降级） |
 | A1.5.1 | Ax-SIP-1 | Semantic Information Potential (语义信息能) |
 | T1.5.1 | T-SIP-1 | Semantic Transduction (语义转导) |
 | T1.5.2 | T-SIP-2 | Syntactic Entanglement (句法纠缠) |
 | D1.6.1 | Def-Density-1 | Selection Rarity ($L_1$ 密度指标) |
-| T1.6.1 | T-Density-1 | d-value Scaling ($d$ 值缩放) |
-| T1.6.2 | T-Density-2 | Quintessence Decay Law (精华衰减律) |
+| T1.6.1 | T-Density-1 | D_eff / density scaling（旧 d-value 缩放，已降级） |
+| T1.6.2 | T-Density-2 | Stabilization Cost Proxy（旧精华衰减律，已降级） |
 | D1.7.1 | Def-DS-1 | $L_2$ as Attractor Landscape ($L_2$ 作为吸引子地景) |
 | T1.8.1 | T-TDA-1 | Topological Heisenberg Uncertainty (拓扑海森堡不确定性) |
 | D1.9.1 | Def-PA-1 | Ghost Operator Process Representation (幽灵算子的过程代数表示) |
@@ -175,16 +175,17 @@ $$ L_1 = f_{\theta *}(\omega_{L_0}), \quad \oint_\gamma \omega_{L_0} = \int f_{\
 
 ## IV. Information Geometry (信息几何)
 
-### Ax-IG-1 [A1.4.1]: Ontological Friction as Fisher Metric ($\Psi_f$ 作为 Fisher 度量)
-$\Psi_f$ 是 $θ$ 参数流形上的黎曼度量张量：
-$$ \Psi_f(θ) \equiv g_{jk}(θ) = \mathbb{E}\left[\partial_j \log p \cdot \partial_k \log p\right] $$
+### Ax-IG-1 [A1.4.1]: Fisher Projection of Ontological Friction（非定义）
+旧标题“$\Psi_f$ 作为 Fisher 度量”已降级。当前只允许把 Fisher–Rao 度量读作 `Ψ_f` 的局部信息几何 projection / operational proxy：
+$$ \Psi_f^{Fisher\text{-}proxy}(θ) \sim g_{jk}(θ) = \mathbb{E}\left[\partial_j \log p \cdot \partial_k \log p\right] $$
 
-### T-IG-1 [T1.4.1]: Natural Gradient Descent (自然梯度下降)
-选择动力学遵循自然梯度下降：
-$$ \dot{θ} = -\Psi_f^{-1} \nabla F $$
+Boundary: $g_F$ measures statistical sensitivity of a parameterized model. It does not define `Ψ_f` as payability burden, and it does not capture consequence return, stake, or reselectable mobility by itself.
 
-**Sketch**：在约束度量 $\Psi_f$ 下最小化 $F$，令 $\delta F + \lambda \langle \delta \theta, \delta \theta \rangle_{\Psi_f}=0$，
-得到 $\dot{\theta} = -\Psi_f^{-1}\nabla F$ 的自然梯度形式。
+### T-IG-1 [T1.4.1]: Natural Gradient Descent（proxy）
+若某任务已被参数化为统计模型，选择/更新动力学可用自然梯度形式作局部 proxy：
+$$ \dot{θ}^{proxy} = -\left(g_F + \epsilon I\right)^{-1} \nabla F $$
+
+**Sketch**：在 Fisher projection $g_F$ 下最小化 $F$，得到自然梯度形式。该式不说明 SRT 选择本体“遵循”自然梯度；它只描述特定模型类中的更新几何。
 
 ### T-IG-2 [T1.4.2]: Geodesic Form of Selection Dynamics (选择动力学的测地线形式)
 $$ \frac{d\xi}{dt} = -g^{-1}(\xi) \nabla F(\xi) $$
@@ -196,9 +197,9 @@ $$ K(θ) = \text{scalar curvature of } \Psi_f(θ) $$
 $$ \text{Insight Event} \iff K(θ) > K_{crit} $$
 *   **T-Insight Link**: 与尺度定理中的顿悟阈值一致，曲率跃迁触发结构重组。
 
-### T-IG-4 [T1.4.4]: d-value Dimension Inequality ($d$ 值-维度不等式)
-$$ E_{existence}(d) \geq \kappa \cdot d \cdot \log(d) $$
-要达到"神的全知视角"（$d \to \infty$），需要的能量将超过宇宙可用资源。
+### T-IG-4 [T1.4.4]: D_eff Capacity Inequality（旧 d-value 维度不等式，已降级）
+$$ E_{capacity}^{proxy}(D_{eff}) \gtrsim \kappa \cdot D_{eff} \cdot \log(D_{eff}) $$
+该式最多约束有效维度 / 注意力带宽 / 模型容量 proxy。不得写成 canonical d-value 的能量定律；“神的全知视角”与 $d \to \infty$ 只保留为旧 public/spirituality 极限隐喻。
 
 ---
 
@@ -223,12 +224,13 @@ $$ \text{Entangle}(A, B) \iff d_G(A, B) \ll d_{L_1}(A, B) $$
 ### Def-Density-1 [D1.6.1]: Selection Rarity ($L_1$ 密度指标)
 $$ D(L_1) = -\log_2\left(\frac{\text{Vol}(L_1)}{\text{Vol}(L_0)}\right) $$
 
-### T-Density-1 [T1.6.1]: d-value Scaling ($d$ 值缩放)
-$$ D(L_1) \propto d \cdot \log(\text{Complexity}(L_0)) $$
+### T-Density-1 [T1.6.1]: D_eff / density scaling（旧 d-value 缩放，已降级）
+$$ D(L_1)^{proxy} \propto D_{eff} \cdot \log(\text{Complexity}(L_0)) $$
+This is a density/capacity proxy, not a definition or measurement of canonical d-value.
 
-### T-Density-2 [T1.6.2]: Quintessence Decay Law (精华衰减律)
-$$ \Psi_f(t) = \Psi_0 \cdot e^{-t/\tau_{L_2}} + \Psi_\infty $$
-随着 $L_2$ 固化，维持现实所需的"选择能量"递减。
+### T-Density-2 [T1.6.2]: Stabilization Cost Proxy（旧精华衰减律，已降级）
+$$ \Psi_f^{stabilization\text{-}proxy}(t) = \Psi_0 \cdot e^{-t/\tau_{L_2}} + \Psi_\infty $$
+该式只表示某些稳定结构的维护/更新负担可能随沉积而降低；不得写成维持现实所需的“选择能量”定律，也不得把低维护成本等同于健康或正当。
 
 ---
 

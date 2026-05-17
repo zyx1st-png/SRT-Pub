@@ -87,22 +87,25 @@ L_0 \equiv \mathcal{E}
 
 ## 4. 信息几何骨架
 
-### 4.1 Ontological Friction as Fisher Metric
+### 4.1 Fisher Projection of Ontological Friction（非定义）
 \[
-\Psi_f(\theta) \equiv g_{jk}(\theta)
+\Psi_f^{Fisher\text{-}proxy}(\theta) \sim g_{jk}(\theta)
 \]
 
-SRT 在这里最重要的形式动作是：
-> **把本体论摩擦写成参数流形上的度量。**
+当前 guardrail：Fisher–Rao 度量只能作为 `Ψ_f` 的局部信息几何 projection / operational proxy。`g_F` 测的是参数化模型的统计敏感性，不定义 canonical `Ψ_f` 的 payability burden，也不包含 consequence return、stake 或 reselectable mobility。
 
-### 4.2 Natural Gradient Form
+SRT 在这里保留的形式动作是：
+> **把本体论摩擦的某些局部可测切片投影到参数流形度量上；不是把 `Ψ_f` 改写成 Fisher metric。**
+
+### 4.2 Natural Gradient Proxy
 \[
-\dot{\theta} = -\Psi_f^{-1} \nabla F
+\dot{\theta}^{proxy} = -(g_F + \epsilon I)^{-1} \nabla F
 \]
 
 压缩含义：
 - 选择动力学不是任意移动
-- 而是在摩擦度量下沿自然梯度演化
+- 但自然梯度只描述特定参数化模型中的更新几何
+- 不能写成 SRT selection ontology 必然“遵循”自然梯度
 
 ### 4.3 Insight as Curvature Threshold
 \[
@@ -154,8 +157,8 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 ### 6.2 Density / Decay / Scaling
 形式化里最重要的辅助结论是：
 - 稀有性
-- d-value 缩放
-- 精华衰减
+- `D_eff` / capacity proxy 缩放（旧 d-value 缩放）
+- 稳定化负担 proxy（旧精华衰减）
 
 都可以被纳入这一动态地景框架。
 
@@ -166,8 +169,8 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 它真正固定下来的不是“所有数学细节”，而是以下四件事：
 
 1. **\hat G 不只是哲学隐喻，而有明确的范畴论位置**
-2. **\Psi_f 不只是形容词，而有明确的几何度量位置**
-3. **d 不只是经验词，而可进入不等式、带宽、密度与曲率关系**
+2. **`Ψ_f` 不只是形容词，但 Fisher / Landauer / curvature 只能给出局部 projection 或 operational proxy**
+3. **`d` 不等于有效维度；`D_eff` / 带宽 / 密度公式只能作为 stake-gated 之前的 capacity proxy**
 4. **L₀ / L₁ / L₂ 可以被嵌入统一的形式结构，而不是零散比喻**
 
 ---
@@ -178,7 +181,7 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 
 1. **数学构造在 SRT 中被重写为选择事件。**
 2. **L₀ 与 L₁ 的关系可通过范畴论 / 拓扑斯框架承载。**
-3. **\Psi_f 可被写成信息几何度量，而不是纯形容词。**
+3. **`Ψ_f` 可有信息几何 projection，但不得与 Fisher metric 裸等同。**
 4. **语义信息的核心不是比特数，而是是否改变现实轨迹。**
 5. **整套形式化的价值，是让 SRT 的核心变量进入可严肃讨论的数学壳层。**
 

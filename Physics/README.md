@@ -96,6 +96,8 @@ back to canonical anchors.
 - MWI / Everett compatibility requires explicit translation: branch-relative anchoring is not global collapse.
 - Discrete time is a hypothesis / bridge, not a derived theorem of SRT physics.
 - Gravity / `Psi_f` links are weak compatibility or analogy unless a tensor-level derivation is supplied.
+- Fisher / Landauer / curvature / metabolic / prediction-error formulas are local projections or operational proxies for `Psi_f`; never canonical definitions.
+- `D_eff`, bandwidth, density, and capacity formulas are not canonical `d-value` unless a stake-coupled irreversible-risk gate is explicitly supplied.
 - Physical constants tables are structural placement constraints, not derivations of exact values.
 - Holography / entanglement / d-value mappings are candidate analogies unless independently justified.
 - QBox / hyperdecoherence / post-quantum references must be treated as external interface pressure-tests, not proof of SRT.

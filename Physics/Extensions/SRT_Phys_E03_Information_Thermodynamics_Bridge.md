@@ -98,7 +98,7 @@ Internal anchors:
 - [`../_SRT_Phys_Bridge.md`](../_SRT_Phys_Bridge.md) T-Phys-1 (decoherence
   as friction minimization), table V (Boltzmann constant entry).
 - [`../SRT_Phys_09_Formalism_Ext_CompactCore.md`](../SRT_Phys_09_Formalism_Ext_CompactCore.md)
-  §4 ($\Psi_f$ as Fisher metric).
+  §4 (`Ψ_f` Fisher projection / operational proxy, not a definition identity).
 - [`SRT_Phys_E01_Quantum_Instrument_Bridge.md`](SRT_Phys_E01_Quantum_Instrument_Bridge.md)
   for the instrument-side description of $\hat{G}_\theta$.
 
@@ -300,17 +300,19 @@ well-defined.
 ### 3.3 Connection to Fisher / information geometry
 
 Per [`../SRT_Phys_09_Formalism_Ext_CompactCore.md`](../SRT_Phys_09_Formalism_Ext_CompactCore.md)
-§4.1, $\Psi_f$ has a Fisher-metric reading. E03 is *consistent* with
-this:
+§4.1, Fisher geometry is a local projection / operational proxy for
+`Ψ_f`, not a definition identity. E03 is *compatible* with that proxy
+only inside stated physical regimes:
 $$
-\Psi_f(\theta) \approx g_{jk}(\theta)
+\delta\Psi_f^{Fisher\text{-}proxy}(\theta) \sim \tfrac12 d\theta^\top g_F(\theta)d\theta
 $$
-gives the *infinitesimal* friction at $\theta$. E03 gives the
-*integrated* cost over an actual selection event. The Fisher and
-information-thermodynamic readings agree at the differential level via
-the Cramér–Rao / thermodynamic uncertainty relation chain (see Hasegawa
-2020 for the explicit linkage; this batch does not formalize that
-linkage further).
+This gives a local statistical-sensitivity cost slice at $\theta$. E03
+gives an integrated thermodynamic / record-stabilization cost over an
+actual selection event. The Fisher and information-thermodynamic
+readings may align through Cramér–Rao / thermodynamic-uncertainty
+relations, but this batch does not prove a global identity between
+canonical `Ψ_f`, Fisher information, entropy production, or Landauer
+cost.
 
 ---
 

@@ -2,7 +2,7 @@
 id: SRT-PHYS-09-SPLIT-PART-03
 type: reading_shard
 tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, Hybrid]
-status: axiomatic_hybrid_v2
+status: active_v1
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
@@ -154,7 +154,7 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 \[
 \Delta\Psi_f^{(px)}\approx \int_t^{t+\Delta t}\langle \varepsilon_{pred}(\tau),\mathcal{P}_x^{-1}(\theta,\tau)\varepsilon_{pred}(\tau)\rangle\,d\tau
 \]
-* **Implication（中文）**：预测误差越偏离当前先验流形，维持显现所需 \(\Psi_f\) 支付越高。
+* **Implication（中文）**：预测误差越偏离当前先验流形，该 projection 下的更新/维持负担 proxy 越高；不得把 prediction error 直接等同 canonical `Ψ_f`。
 
 ### 分类映射表（Intuitive Metaphysics Debunking → SRT）
 
@@ -167,10 +167,10 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 ### Ax-IG-1b: Embodiment-Coupling Gate
 定义具身耦合系数 \(\kappa_{body}\in[0,1]\)：
 \[
-\Psi_f^{eff}(\theta)=\kappa_{body}\, g_F(\theta)
+\Psi_f^{embodiment\text{-}proxy}(\theta)\sim\kappa_{body}\, g_F(\theta)
 \]
 其中 \(g_F\) 为 Fisher–Rao 度量。
-* **Implication（中文）**：当 \(\kappa_{body}\to0\) 时，Fisher 几何仍可描述统计敏感性，但不应直接解释为“存在维持成本”；只有 \(\kappa_{body}>0\) 时，\(\Psi_f\) 的具身代价解释才成立。
+* **Implication（中文）**：当 \(\kappa_{body}\to0\) 时，Fisher 几何仍可描述统计敏感性，但不应直接解释为“存在维持成本”；当 \(\kappa_{body}>0\) 时，该式最多给出 `Ψ_f` 的具身代价 projection / proxy，不定义 canonical `Ψ_f`。
 
 ### T-IG-5: Curvature-Focusing Risk Bound (Operational)
 若沿推断轨迹的截面曲率满足 \(\kappa_{sec}(t)\ge\kappa_{min}>0\)，则局部最短路径在有限时域内失稳风险上升：
@@ -190,7 +190,7 @@ t^*\le \frac{\pi}{\sqrt{\kappa_{min}}}
 ### Source Note (Zhang, 2026 manuscript package)
 - Zhang, Y. (2026). *Selection Cost as a Fisher Information Metric: A Riemannian Geometry of Embodied Updating* (manuscript).
 - 关键增量：
-  1) 在具身门控假设下给出 \(\Psi_f\equiv g_F\) 的操作化解释；
+  1) 在具身门控假设下给出 Fisher 几何作为 `Ψ_f` 局部 projection / operational proxy 的解释；
   2) 提出曲率聚焦风险界用于突发重配置预警；
   3) 给出经验 Fisher 频谱代理与变点检测协议。
 - 审核结论：**A（直接融入）**；理由：与本文件 Ax-IG 系列高度同构，且补全了“理论-可测”接口。
