@@ -20,6 +20,12 @@ ai_do_not_use_for_definition: true
 
 ---
 
+## Current bootstrap pointer
+
+`AGENTS.md §Session Start` is the single authority for fresh-session read order. This file is the minimal theory/runtime guard inside that sequence; it is not the file that owns the sequence itself.
+
+---
+
 ## 1. One-Sentence Orientation
 
 SRT's minimal orientation is: **choice precedes stable existence; reality is the manifestation and convergence of parameterized selection under constraint, friction, and history.**

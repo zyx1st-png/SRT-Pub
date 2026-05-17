@@ -31,10 +31,12 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 | `AGENTS.md` | 运行协议主入口 |
 | `CLAUDE.md` | Claude 兼容包装层 |
 | `SRT_AI_START.md` | AI 最小首读入口 |
-| `STATUS.md` | 当前状态面板 |
+| `STATUS.md` | 当前状态面板；full dashboard，fast bootstrap 用 `STATUS_FAST.md` |
+| `STATUS_FAST.md` | 快速状态入口；fresh-session compact status，不替代 `STATUS.md` |
 | `SRT_Navigation_Map.md` | 人类阅读地图 |
 | `_SRT_INDEX.md` | 机器索引 |
-| `_SRT_SYMBOL_TABLE.md` | 符号规范锚点 |
+| `_SRT_SYMBOL_TABLE.md` | 符号规范锚点；full definition registry |
+| `_SRT_SYMBOL_QUICK_GUARD.md` | 高风险符号/proxy 快速守门；不替代 full symbol table |
 | `_SRT_AGENT_RETRIEVAL_PROFILE.md` | Agent 检索扩展协议：区分 authority 与 retrieval value |
 | `_SRT_CONTEXT_ROUTER.md` | 深层问题上下文抓取路由 |
 | `_SRT_DEEP_THEORY_MAP.md` | 深层理论节点地图 |
@@ -49,24 +51,9 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 
 ## Default Read Order
 
-### AI / Agent
+`AGENTS.md §Session Start` is the single authority for fresh AI / agent read order. This index records entry surfaces and routing, but should not maintain a competing bootstrap list.
 
-1. `AGENTS.md`
-2. `SRT_AI_START.md`
-3. `STATUS.md`
-4. `_SRT_INDEX.md`
-5. `_SRT_SYMBOL_TABLE.md`
-6. `_SRT_AGENT_RETRIEVAL_PROFILE.md`（non-trivial theory / book / domain / public / governance tasks）
-7. `_SRT_CONTEXT_ROUTER.md`（any non-simple SRT question; required for deep questions）
-8. `_SRT_DEEP_THEORY_MAP.md`（cross-domain theory questions）
-9. `_SRT_HIGH_PRIORITY_CORE_COVERAGE_INDEX.md`（coverage-audit follow-up / missed core context）
-10. `_SRT_MEDIUM_AI_NEURO_COVERAGE_INDEX.md`（AI / neuroscience coverage-audit follow-up）
-11. `_SRT_MEDIUM_PHILOSOPHY_COVERAGE_INDEX.md`（philosophy coverage-audit follow-up）
-12. `_SRT_MEDIUM_PHYSICS_COVERAGE_INDEX.md`（physics coverage-audit follow-up）
-13. `_SRT_MEDIUM_SPIRITUALITY_COVERAGE_INDEX.md`（spirituality coverage-audit follow-up）
-14. `_SRT_MEDIUM_PAPERS_PUBLICATION_COVERAGE_INDEX.md`（papers / publication coverage-audit follow-up）
-15. `_SRT_MEDIUM_ROOT_TOPIC_FAQ_COVERAGE_INDEX.md`（root topic / FAQ coverage-audit follow-up）
-16. `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（philosophy deep-hardening / objection-led edits）
+For current bootstrap, read `AGENTS.md`, then load this file only when file routing, domain entrypoints, registry relations, or edit landing zones matter.
 
 ### Human / Public
 

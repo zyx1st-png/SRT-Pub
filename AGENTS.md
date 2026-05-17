@@ -10,17 +10,26 @@ Use this file as the canonical runtime overlay when the current work is inside t
 
 ## Session Start
 
+`AGENTS.md` is the **single authority for fresh-session read order**. Other entry files should point here rather than maintaining competing bootstrap lists.
+
 For a fresh AI session inside this repo, read in this order:
 
-1. `SRT_AI_START.md`
-2. `STATUS.md`
-3. `_SRT_INDEX.md`
-4. `_SRT_SYMBOL_TABLE.md`
-5. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
+1. `SRT_AI_START.md` — minimal theory/runtime guard; not a definition authority.
+2. `_SRT_AGENT_RETRIEVAL_PROFILE.md` — classify the task before choosing context depth.
+3. `STATUS_FAST.md` — compact current status for bootstrap.
+4. `_SRT_SYMBOL_QUICK_GUARD.md` — high-risk symbol/proxy guard.
+
+Then load conditionally:
+
+5. `STATUS.md` or `STATUS_Split/README.md` when full status history or recent material detail matters.
+6. `_SRT_INDEX.md` when file routing, domain entrypoints, registry relations, or edit landing zones matter.
+7. `_SRT_SYMBOL_TABLE.md` when exact symbol definitions, notation conflicts, or canonical term precision matters.
+8. `_SRT_CONTEXT_ROUTER.md` for non-simple conceptual, cross-domain, or deep theory questions.
+9. `_SRT_DEEP_THEORY_MAP.md` for cross-domain theory synthesis.
 
 Read `README.md` when public-facing framing or external onboarding context is useful.
 
-For theory advancement, book writing, domain deep-dives, or any non-trivial SRT answer, classify the task with `_SRT_AGENT_RETRIEVAL_PROFILE.md` before deciding how much context to load. `canonical: false` means "not a definition authority"; it does not mean "do not retrieve."
+For theory advancement, book writing, domain deep-dives, material fusion, public release, governance work, or any non-trivial SRT answer, classify the task with `_SRT_AGENT_RETRIEVAL_PROFILE.md` before deciding how much context to load. `canonical: false` means "not a definition authority"; it does not mean "do not retrieve."
 
 `Manifesto/SRT_MANIFESTO.md` is a human-first worldview entry (`claim_mode: manifesto`, governed by `Governance/SRT_CLAIM_LADDER.md §2A`). It is **not** part of AI session bootstrap; read it only when the task involves user-facing framing.
 
@@ -70,6 +79,9 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 - AI 最小首读入口：`SRT_AI_START.md`
 - Agent 检索扩展协议：`_SRT_AGENT_RETRIEVAL_PROFILE.md`
+- 快速状态入口：`STATUS_FAST.md`
+- 快速符号守门：`_SRT_SYMBOL_QUICK_GUARD.md`
+- Full 当前状态面板：`STATUS.md`
 - 运行层入口：`Operations/README.md`
 - 治理层入口：`Governance/README.md`
 - 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`
