@@ -12,15 +12,9 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 # SRT术语表与符号索引
 # SRT Glossary & Symbol Index
 
----
-
-> **📚 文档类型：参考手册**
-> **使用方式：按需查阅,支持Ctrl+F搜索**
-> **最后更新：2026-01-23**
+> Split shard generated from `../SRT_Glossary.md`; owner remains source of record.
 
 ---
-
-## 使用指南
 
 ## 2. 数学记号约定
 
@@ -63,8 +57,8 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 | **≡** | 定义为 | $\text{存在} \equiv \text{被选择}$ |
 | **≈** | 约等于 | $d_{AI}^{inference} \approx 0$ |
 | **≠** | 不等于 | $\hat{G}_{\theta_1} \neq \hat{G}_{\theta_2}$ |
-| **⇒** | 蕴含 | $d \to 0 \Rightarrow \text{自私}$ |
-| **⇔** | 等价 | $L_1 \text{稳定} \Leftrightarrow \Psi_f \text{低}$ |
+| **⇒** | 蕴含 | $d_{proxy}\to 0 \Rightarrow \text{局部赌注范围收窄}$ |
+| **⇔** | 等价 | $L_1 \text{稳定} \not\Leftrightarrow \Psi_f \text{低}$（稳定性与低摩擦不是无条件等价） |
 
 ### 2.5 特殊算子
 

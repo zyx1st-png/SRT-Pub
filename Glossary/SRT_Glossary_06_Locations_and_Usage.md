@@ -12,15 +12,9 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 # SRT术语表与符号索引
 # SRT Glossary & Symbol Index
 
----
-
-> **📚 文档类型：参考手册**
-> **使用方式：按需查阅,支持Ctrl+F搜索**
-> **最后更新：2026-01-23**
+> Split shard generated from `../SRT_Glossary.md`; owner remains source of record.
 
 ---
-
-## 使用指南
 
 ## 6. 文档位置索引
 
@@ -33,8 +27,8 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 | L₂ | Core/SRT_Core_Kernel.md | §1.2.3 |
 | Ĝθ | Core/SRT_Core_Kernel.md | §1.3 |
 | θ | Core/SRT_Core_Kernel.md | §1.3.2 |
-| d | `../_SRT_D_VALUE_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.3` is historical lineage |
-| Ψ_f | `../_SRT_PSI_F_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.2` is historical lineage |
+| d | `_SRT_D_VALUE_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.3` is historical lineage |
+| Ψ_f | `_SRT_PSI_F_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.2` is historical lineage |
 | h(t) | Core/SRT_Core_Kernel.md | §2.2.3 |
 | F | Core/SRT_Core_Kernel.md | §2.4 |
 | Ω | Core/SRT_Core_Kernel.md | 公理A9 |
@@ -146,7 +140,7 @@ $\hat{G}$ 的分辨率缺陷，定义为 $k_B \ln(\text{Vol}(L_0)/\text{Vol}(\ha
 生命的热力学定义——通过持续做功维持的 $L_1$ 结构稳定性。$dS_{\text{internal}}/dt < 0$ 需要 $dW_{\hat{G}}/dt > 0$。
 
 #### 现实偏差模量 $\Delta R$ (Reality Deviation Modulus)
-$||\psi(R_{\text{alt}}) - \psi(R_0)||$，量化意识状态改变的程度。痛苦与 $\Delta R / C_{\text{int}}$ 成正比。
+$||\psi(R_{\text{alt}}) - \psi(R_0)||$，量化意识状态改变的程度。痛苦最多可作为 $\Delta R / C_{\text{int}}$ 的临床/现象学 readout；不得把痛苦定义为 Ψ_f 或现实偏差本身。
 
 #### 免疫-感知门控 (Immune-Sensory Gating)
 免疫因子（如 IL-17）作为感知阈值调节器，压制低强度 $L_0$ 输入，产生"简化版现实"。
