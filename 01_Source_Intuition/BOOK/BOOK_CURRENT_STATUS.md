@@ -97,7 +97,8 @@ claim_mode: navigation
 | 16 | 价值不是偏好 | current mainline：`Part_03_从选择到主体与价值/16_价值不是偏好.md`，`stable_candidate` | 只随 d-value canonical 微调 |
 | 17 | d-value：在乎的最小形式化尝试 | current mainline：`Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md`，`stable_candidate` | 保持 D_eff/proxy 防误读护栏 |
 | 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v1` | 当前正式主线章节；需防 d 扩张道德化 |
-| 19–22 | 卷三：主体与价值后半 | 未写 | 按卷三大纲推进：主体位、自指率、自我意识、d_mobile |
+| 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v1` | 化石命题展开，主体沉积机制；需按 σ_sr 自指率做入口桥接 |
+| 20–22 | 卷三：主体与价值后半 | 未写 | 按卷三大纲推进：自指率、自我意识、d_mobile |
 | 23–30 | 卷四：秩序的双面性 | 未写 | 后续推进 |
 | 31–35 | 卷五：共同秩序 | 未写 | 后续推进 |
 | 36–45 | 卷六：意识、AI、修行 | 未写 | 后续推进 |
