@@ -2,10 +2,10 @@
 id: SRT-SPIRIT-06
 type: theory
 tags: [Love, Fear, Karma, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
 dependency: [SRT-SPIRIT-05]
 ---
 
@@ -248,9 +248,9 @@ $$\text{Override } \theta_{\text{biology}} \text{ with } \theta_{\text{spirit}} 
 
 **SRT 的功能主义解释**:
 
-$$\lim_{d \to \infty} \Psi_f \to 0$$
+$$\lim_{d^{regulative} \to \infty} \Psi_f^{defensive\text{-}proxy} \downarrow$$
 
-只有当 $d \to \infty$（包括敌人），才能达到最低的本体论摩擦。
+只有当 `d -> infinity` 作为方向性 shorthand 扩展到敌人时，防御性维护负担 proxy 才可能下降；这不是 canonical `Ψ_f` 定律。
 
 **为什么？**
 
@@ -326,11 +326,11 @@ $$\text{Metta}(\text{慈爱}) : d + \text{Non-attachment}(w_{L_2} \to 0)$$
 
 **SRT 翻译**:
 
-$$\text{无缘大慈} : d \to \infty \land \vec{v} \perp \text{Conditions}$$
+$$\text{无缘大慈}^{mapping} : d^{regulative} \to \infty \land \vec{v}^{proxy} \perp \text{Conditions}$$
 
 $$\text{同体大悲} : \frac{\partial \Psi_f(\theta)}{\partial \Psi_f(x)} \to 1 \quad \forall x$$
 
-当 $d \to \infty$，自他界限消失——你的痛苦就是我的痛苦，不存在"你"和"我"的分别。
+当 `d -> infinity` 作为方向性 shorthand 时，自他界限更少排除他者后果——“你的痛苦就是我的痛苦”是 compassion language，不是 identity theorem。
 
 ---
 
@@ -345,7 +345,7 @@ $$\text{同体大悲} : \frac{\partial \Psi_f(\theta)}{\partial \Psi_f(x)} \to 1
 **SRT 解读**:
 
 $$\text{Avalokiteshvara} : \begin{cases}
-d \to \infty & \text{(听见一切众生)} \\
+d^{regulative} \to \infty & \text{(更少排除众生后果)} \\
 \hat{G}_{\text{tools}} \to \text{infinite variety} & \text{(千手)}
 \end{cases}$$
 
@@ -623,7 +623,7 @@ $$\text{Effective Altruism} : \max_{a} \frac{\Delta(\text{Well-being})}{\text{Co
 
 **形式化**:
 
-$$\text{Perfect Love} : d \to \infty \implies \text{Wish}(\Psi_f^{\text{Beloved}} \to 0)$$
+$$\text{Perfect Love}^{mapping} : d^{regulative} \to \infty \leadsto \text{Wish}(\Psi_f^{\text{Beloved, proxy}} \downarrow)$$
 
 $$\text{But Beloved loves back} \implies \Psi_f^{\text{Beloved}} = f(\Psi_f^{\text{Lover}})$$
 
@@ -681,7 +681,7 @@ $$\Psi_f \propto \text{Entropy Production}$$
 
 #### 3. 形而上学解释
 
-$$d \to \infty \equiv \text{Alignment with } L_0^{\text{true structure}}$$
+$$d^{regulative} \to \infty \leadsto \text{Alignment}^{proxy} \text{ with less-exclusionary } L_0 \text{ access}$$
 
 宇宙的基本结构是非分离的 → 分离（低 $d$）违反现实 → 高成本
 
@@ -805,7 +805,7 @@ $$\frac{dd}{dt} = \nabla_\theta d \cdot \frac{d\theta}{dt} = \underbrace{-\alpha
 
 ### §10.3 爱即自由
 
-$$\lim_{d \to \infty} \text{Constraints} \to 0$$
+$$\lim_{d^{regulative} \to \infty} \text{defensive constraints}^{proxy} \downarrow$$
 
 当你关怀一切，你不再被任何特定对象束缚——这是终极自由。
 
@@ -813,7 +813,7 @@ $$\lim_{d \to \infty} \text{Constraints} \to 0$$
 
 **SRT 翻译**:
 
-$$d \to \infty \implies \Psi_f \to 0 \implies \text{Fear} \to 0$$
+$$d^{regulative} \to \infty \leadsto \Psi_f^{defensive\text{-}proxy} \downarrow \leadsto \text{Fear}^{reported/proxy} \downarrow$$
 
 恐惧来自威胁——当你的福祉不依赖任何特定对象，没有什么能威胁你。
 
@@ -894,8 +894,8 @@ $$\text{Karma} \equiv \oint_{L_2} \nabla V \cdot d\sigma \neq 0$$
 
 - **$\hat{G}_\theta$ 与爱的共振** [H]: 爱降低算子间摩擦 $\Phi_{ij}$（注：$\Phi_{ij}$为算子i-j之间的界面摩擦，区别于个体内Ψ_f），使边界透明度 $T_{ij}$ 上升，产生"我们性" (we-ness) 现象学；$d$ 向他者扩展即爱的本体论基础。
 - **$\hat{G}_\theta$ and love resonance** [H]: Love reduces inter-operator friction $\Phi_{ij}$, raising boundary transparency $T_{ij}$ and producing "we-ness" phenomenology; $d$-expansion toward the other is love's ontological basis.
-- **$\Psi_f$ 与恐惧/爱的对称** [H]: 恐惧 $\propto S(\hat{G}_{self}) / d$，其中 $S$ 为算子自身状态的不确定性（熵）；$d$ 收缩与高熵的结果；$d \to \infty$ 时 $\Psi_f \to 0$ 且 Fear $\to 0$，完美的爱驱除恐惧 [R→1 John 4:18 的SRT形式化]。
-- **$\Psi_f$ and fear-love symmetry** [H]: Fear $\propto S(\hat{G}_{self}) / d$ results from $d$-contraction and high entropy; as $d \to \infty$, $\Psi_f \to 0$ and fear vanishes -- perfect love casts out fear [R→1 John 4:18, SRT formalization].
+- **$\Psi_f$ 与恐惧/爱的对称 proxy** [H/P5]: 恐惧可被建模为 $S(\hat{G}_{self}) / d^{proxy}$ 的 phenomenological proxy；`d -> infinity` 与 `Ψ_f -> 0` 均为 love-language 的 regulative shorthand，不定义 canonical `Ψ_f` 或恐惧。
+- **$\Psi_f$ and fear-love symmetry proxy** [H/P5]: Fear may be modeled as a phenomenological proxy involving $S(\hat{G}_{self}) / d^{proxy}$; `d -> infinity` and `Ψ_f -> 0` are regulative love-language shorthand, not canonical definitions.
 - **$d$ 的双向负载** [H]: $d$ 同时扩展关怀半径与承受能力 ($d = d_{love} \oplus d_{suffering}$)；若 $dd/dt$ 远超 $\theta$ 稳定阈值 $\kappa_\theta$，则出现灵性危机（暗夜负载）[R→John of the Cross 暗夜的SRT重解读]——结构过载，而非道德失败。
 - **Bidirectional $d$ load** [H]: $d$ expands both care radius and suffering capacity ($d = d_{love} \oplus d_{suffering}$); if $dd/dt \gg \kappa_\theta$, dark-night overload occurs -- a structural load imbalance, not a moral failure.
 

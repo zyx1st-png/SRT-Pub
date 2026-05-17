@@ -2,10 +2,10 @@
 id: SRT-SPIRIT-02
 type: analysis
 tags: [Buddhism, Vedanta, Christianity, Sufism, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
 dependency: [SRT-SPIRIT-01]
 ---
 
@@ -50,7 +50,7 @@ $$ \lim_{\|\theta\|\to\infty}\hat{G}_\theta = \Omega \Rightarrow \text{Atman} \c
 
 ### Ax-Trad-3: Unio Mystica (神人合一)
 **Formal Definition**: Mystical union is the state of minimal $L_2$ constraint and maximal $d$.
-$$ \text{Union} = \lim_{d \to \infty} \hat{G}_\theta[L_0] $$
+$$ \text{Union}^{mapping} \sim \lim_{d^{regulative} \to \infty} \hat{G}_\theta[L_0] $$
 $$ \|\nabla C_{L_2}\| \to 0,\quad \beta \to 0 $$
 * **Implication**: 合一不是“吸收”，而是约束解除后对潜在域的直接接入。
 

@@ -154,7 +154,11 @@ SRT is not claiming:
 - every attractor is conscious;
 - entropy production equals consciousness;
 - AI role stability equals moral patienthood;
-- physics has already been replaced by SRT.
+- physics has already been replaced by SRT;
+- God / Ω / divine language in SRT is a canonical theological proof;
+- `d -> infinity`, liberation, awakening, or mystical experience is an actual finite attainment claim;
+- suffering, sin, fear, or spiritual darkness literally equals `Ψ_f`;
+- practice, meditation, prayer, or community membership automatically increases `d` or lowers `Ψ_f`.
 
 SRT's stronger and safer claim is:
 

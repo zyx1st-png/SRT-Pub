@@ -2,10 +2,10 @@
 id: SRT-SPIRIT-09
 type: summary
 tags: [Praxis, Evolution, Ox-Herding, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
 dependency: [SRT-SPIRIT-08]
 ---
 
@@ -941,7 +941,7 @@ $\theta$ 永远在演化。
 
 **是**: 
 
-$$\text{Freedom} = \lim_{d \to \infty, \Psi_f \to 0} \hat{G}_\theta$$
+$$\text{Freedom}^{praxis\text{-}mapping} \sim \lim_{d^{regulative} \to \infty, \Psi_f^{defensive\text{-}proxy} \downarrow} \hat{G}_\theta$$
 
 **具体化**:
 - 痛苦出现，但不被淹没
@@ -955,14 +955,14 @@ $$\text{Freedom} = \lim_{d \to \infty, \Psi_f \to 0} \hat{G}_\theta$$
 
 **最深的洞见**:
 
-$$\lim_{d \to \infty} \text{Self} = \text{Disappears into Universal Care}$$
+$$\lim_{d^{regulative} \to \infty} \text{Self-boundary}^{proxy} \to \text{less exclusionary care}$$
 
-当 $d \to \infty$，"你"的边界消失——
+当 `d -> infinity` 作为方向性 shorthand 时，“你”的边界更少把他者后果排除在外——
 
 - 不是"你"关怀一切
 - 而是"关怀"通过你流动
 
-**这不是理论，而是直接体验**。
+**这不是 canonical 理论证明，而是 practice-facing experiential language。**
 
 ---
 

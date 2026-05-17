@@ -2,10 +2,10 @@
 id: SRT-SPIRIT-01
 type: core_module
 tags: [Religion, Ontology, Comparative Religion, Axioms]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
 dependency: [SRT-CORE-001, SRT-SPIRIT-AXIOMS]
 ---
 
@@ -34,20 +34,20 @@ $$ \forall \varphi \in \mathcal{M}_{spirit}, \exists \mathcal{A} \subset \{A1\ld
 * **Implication**: 本模块的命题必须尽量回链 Core_Law；不能回链者只能保留为 hypothesis / bridge / praxis exposition，禁止引入不可证约束并伪装成 core axiom。
 
 ### H-Spirit-1: The Source (本源)
-**Formal Definition**: The Divine equals the unconditioned selection functional over the absolute latent domain.
+**Domain Mapping (not canonical definition)**: The Divine is read as an unconditioned-selection asymptote over the absolute latent-domain language.
 $$ \Omega \equiv \lim_{\|\theta\|\to\infty}\hat{G}_\theta $$
-$$ \text{God} \equiv \Omega \equiv L_0^{abs} $$
+$$ \text{God}^{mapping} \sim \Omega \sim L_0^{abs} $$
 * **Implication**: “神”不是对象域内实体，而是选择过程的极限结构。
 
 ### H-Spirit-2: Sin/Dukkha (罪/苦) (原文命名，对应 _SRT_Spirit_Axioms 中 H-Spirit-3)
 **Formal Definition**: Suffering is the contraction of $d$ and the amplification of ontological friction.
-$$ \text{Suffering} \propto \frac{1}{d} $$
-$$ d \downarrow \Rightarrow \Psi_f \uparrow $$
+$$ \text{Suffering}^{spirit\text{-}proxy} \sim \frac{1}{d^{spirit\text{-}proxy}} $$
+$$ d^{spirit\text{-}proxy} \downarrow \leadsto \Psi_f^{spirit\text{-}proxy} \uparrow $$
 * **Implication**: 罪/苦是结构性收缩而非道德标签。
 
 ### H-Spirit-4: Liberation (解脱)
-**Formal Definition**: Liberation is the asymptotic expansion of $d$ and the collapse of self–other boundary.
-$$ \text{Nirvana} \equiv \lim_{d\to\infty}\hat{G}_\theta(L_0) $$
+**Domain Mapping (not canonical definition)**: Liberation is read as asymptotic expansion of care-bearing capacity and softening of self–other exclusion.
+$$ \text{Nirvana}^{mapping} \sim \lim_{d^{regulative}\to\infty}\hat{G}_\theta(L_0) $$
 $$ \lim_{d\to\infty}\text{Dist}(\text{Self},\text{Other}) = 0 $$
 * **Implication**: 解脱是拓扑去锚定，不是经验奖励。
 
@@ -89,7 +89,7 @@ $$ \forall r,\; \exists \theta_r:\; \Phi_r \hookrightarrow \langle L_0, L_1, L_2
 **降级说明**：原公式使用 $\cong$（同构），已改为 $\hookrightarrow$（结构嵌入/部分表征）。同构要求双向一一对应且保持所有结构关系，但宗教框架包含大量SRT难以完全对应的概念（神的人格性、末日论、业力道德等）；嵌入（$\hookrightarrow$）表示SRT可捕捉核心选择结构，但不声称完整复现宗教框架的所有维度。
 
 * **Implication**: 宗教差异在 SRT 可表征的核心结构上，可以还原为参数化差异（$\theta_r$ 不同）；但这不排除宗教框架在SRT表征之外保有额外的本体论内容——SRT主张可以捕捉，但不主张完全等价。
-* **与Stace 1960的关联** [R]：Stace记录了跨文化神秘体验的共性（统一体验/时间消融/喜悦），SRT解读为L₀局部暴露（Ψ_f暂时解除时的L₀-L₁边界模糊）；θ_r差异解释了为何同样的"统一体验"被不同传统解读为"梵/上帝/空性/道"
+* **与Stace 1960的关联** [R]：Stace记录了跨文化神秘体验的共性（统一体验/时间消融/喜悦），SRT解读为L₀局部暴露候选（`Ψ_f`-related defensive burden proxy 暂时下降时的L₀-L₁边界模糊）；θ_r差异解释了为何同样的"统一体验"被不同传统解读为"梵/上帝/空性/道"
 
 **非空洞性条件（防止定理空洞化）**：若∃某宗教框架其核心主张不能被任何 $\theta_r$ 的选择结构表达（如"无因性神明创造"要求L₀以外的超验来源），则该框架不在定理范围内；这是定理的**边界条件**，而非漏洞。SRT在以下情况表征失败：① 框架要求超越L₀/L₁/L₂三层结构的独立本体层；② 框架要求Ĝ_θ以外的无选择性绝对存在。
 
@@ -265,14 +265,14 @@ $L_1$ 中的任何对象都是选择的产物，因此依赖于：
 
 **SRT 统一解释**:
 
-$$\text{Nirvana} \neq \text{Annihilation}(L_1) \quad \text{but} \quad d \to \infty \land w_{L_2} \to 0$$
+$$\text{Nirvana}^{mapping} \neq \text{Annihilation}(L_1) \quad \text{but points toward} \quad d^{regulative} \to \infty \land w_{L_2}^{proxy} \to 0$$
 
 涅槃不是"我消失了"，而是"自他二元对立的拓扑结构消解了"。
 
 **类比**: 水蒸发不是"水分子消失"，而是液态结构解体——分子仍在，但组织方式改变。
 
 **具体机制**:
-1. $d \to \infty$: 关切边界扩展至无限（渐近趋近，非离散跳变）
+1. `d -> infinity`: 关切边界扩展的方向性 shorthand（渐近趋近，非离散跳变；有限系统不可声称实际无限）
 2. $w_{L_2} \to 0$: 概念层（"我"/"他"）的权重归零
 3. $\Psi_f \to 0$: 维持 $L_1$ 的摩擦消失
 4. 但 $\hat{G}_\theta$ 的信息模式保留于 $L_0$
@@ -773,7 +773,7 @@ $$\text{God as Person} = \hat{G} + \underbrace{\text{Relational Module}}_{\vec{v
 **SRT 的贡献**: 提供元语言，使不同传统能够：
 - 识别共同的本体论结构
 - 尊重文化特定的表达
-- 将对话从"谁的神更真"转移到"如何更有效地 $d \to \infty$"
+- 将对话从"谁的神更真"转移到"如何更有效地朝向更宽 consequence-bearing / less-exclusionary care 移动"
 
 ---
 
@@ -802,7 +802,7 @@ $$\text{God as Person} = \hat{G} + \underbrace{\text{Relational Module}}_{\vec{v
 
 但这不是"化约主义"——科学语言不取代宗教体验，只是为其提供精确的元描述。
 
-**最终目标**: 让人类在理解宇宙结构的同时，实现 $d \to \infty$ 的集体跃迁。
+**实践方向**: 让人类在理解宇宙结构的同时，朝向更宽的 consequence-bearing 与更少排除性关切移动；`d -> infinity` 只作 regulative shorthand。
 
 ---
 
@@ -838,18 +838,18 @@ SRT_Spirit_01_Religion_Ontology (本文件)
 ### Formalization Summary (形式化概述)
 
 - **统一宗教场**：$\forall r,\;\exists \theta_r:\; \Phi_r \mapsto \langle L_0, L_1, L_2, \hat{G}_{\theta_r}\rangle$；宗教差异是参数化差异而非本体论差异（$\mapsto$ 表示 SRT 框架对宗教现象的映射/代表，不主张两者数学同构 $\cong$）。
-- **苦的结构**：$d \downarrow \Rightarrow \Psi_f \uparrow$，罪/苦是关切维度收缩的结构性后果。精确表达：$\text{Pain} \approx d\Psi_f/dt$（本体论摩擦变化率，见 `Core_Law/SRT_Reference_Dynamics.md §Mechanism`）；$\text{Suffering} \propto 1/d$ 为低d值下的近似，**不适用于**高d值的存在性苦难（悲悼、良知之苦等需要高d值才能被认识到的痛苦）。
-- **神圣饱和**：$S_\phi \equiv \|\hat{G}_\theta[L_0]\|_{info} / C_{L_1}$，其中 $\|\hat{G}_\theta[L_0]\|_{info}$ 为算子从 $L_0$ 提取的信息量，$C_{L_1}$ 为 $L_1$ 的信息承载容量（$\leq d_{max}$）；$S_\phi \gg 1$ 时 $L_0$ 信息溢出 $L_1$ 容量产生神圣震颤（$\Psi_f$ 急剧上升，高 A 值体验）。
+- **苦的结构 proxy**：$d^{spirit\text{-}proxy} \downarrow \leadsto \Psi_f^{spirit\text{-}proxy} \uparrow$，罪/苦可被读作关切维度收缩后的结构性后果候选。`Pain ≈ dΨ_f/dt` 与 `Suffering ∝ 1/d` 只可作为低 d proxy / phenomenological bridge，不定义 canonical `Ψ_f` 或 `d-value`，也**不适用于**高d值的存在性苦难（悲悼、良知之苦等需要高d值才能被认识到的痛苦）。
+- **神圣饱和 proxy**：$S_\phi^{proxy} \equiv \|\hat{G}_\theta[L_0]\|_{info} / C_{L_1}$，其中 $\|\hat{G}_\theta[L_0]\|_{info}$ 为算子从 $L_0$ 提取的信息量 proxy，$C_{L_1}$ 为 $L_1$ 的信息承载容量 proxy（$\leq d_{max}$）；$S_\phi^{proxy} \gg 1$ 时可解释为 $L_0$ 信息溢出 $L_1$ 容量导致神圣震颤 / high-arousal experience，但不定义 `Ψ_f`。
 - **透明度指标**：$T \equiv I(L_1; L_0)/H(L_1) \in [0,1]$；$T \to 1$ 为圣像（$L_1$ 与 $L_0$ 高度互信息，透明指向源头），$T \to 0$ 为偶像（$L_1$ 与 $L_0$ 解耦，不透明阻断）。注：与 OEI（观察者-环境整合度）公式结构相同。
 - **解脱渐近**：$\text{Nirvana} \approx \{\hat{G}_\theta \mid d \to d_{max}, \; \rho_{self} \to 0, \; \Psi_f^{cross} \to 0\}$，自他边界（$\rho_{self}$）随 d 值接近物理上界而消解（注：$d \to \infty$ 在物理上不可达，以 $d \to d_{max}$ 替代；涅槃 = 带宽饱和 + 自他边界消解 + 跨算子摩擦趋零）。
 
 ### Mechanism Explanation (机制解释)
 
-- $\hat{G}_\theta$ 在不同传统中以不同参数 $\theta_r$ 实例化（佛教→空性=$L_0$，吠檀多→梵=$\Omega$，基督教→三位一体=$\hat{G}$ 的三操作模式），但底层选择本体论 $(L_0, L_1, L_2)$ 保持不变。
-- $\Psi_f$ 作为本体论摩擦驱动救赎动力学：$d$ 收缩使 $\Psi_f$ 升高（苦），$d$ 扩展使 $\Psi_f$ 降低（解脱），$\Psi_f$ 梯度提供修持的方向信号。
+- `\hat{G}_\theta` 在不同传统中可作为映射接口（佛教→空性≈`L_0` language，吠檀多→梵≈`Ω` language，基督教→三位一体≈`\hat{G}` 的三操作模式 language），但这些是 comparative theology mappings，不是 canonical identity。
+- `Ψ_f` 在本文仅作为 spirituality-domain proxy / burden language 使用：`d` 收缩可能伴随 `Ψ_f^{spirit-proxy}` 升高，`d` 扩展可能伴随防御性维护负担下降；它不定义 canonical `Ψ_f`，也不保证修行总是降低负担。
 - 宗教体验的机制是 $L_2$ 约束松弛（$\|\nabla C_{L_2}\| \to 0$）使 $\hat{G}_\theta$ 直接访问 $L_0$，而非超自然实体介入。
 - 跨传统差异映射为 $L_2^{cultural}$ 的编码差异（Level 3），而 Level 1（本体结构）和 Level 2（救赎机制）保持同构。
-- $d$ 值增长沿 $-\nabla_\theta \Psi_f$ 方向进行，对应不同传统的修行路径（祈祷、冥想、Dhikr 等）。
+- `d` 值增长沿某些可操作 proxy 的改善方向进行；`-∇_θ Ψ_f` 只能作为 practice-model shorthand，对应不同传统的修行路径（祈祷、冥想、Dhikr 等）时必须另行指定指标与边界。
 
 ---
 

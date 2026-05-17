@@ -5,8 +5,8 @@ tags: [Spirituality, Compact Core, Registry]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
+claim_mode: navigation
+dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SPIRITUALITY-CLAIM-STATUS]
 ---
 
 # SRT Spirituality Compact Registry
@@ -17,6 +17,10 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 本页汇总 Spirituality 板块当前的 bridge、compact core、双线扩展文档、共同体支线与拆分导航入口，并给出最短阅读路径。
 
 ## Spirituality Entry Coverage
+### Z. Claim-status / Guardrail
+- `SRT_Spirituality_Claim_Status.md`
+  - Spirituality / praxis / companion writing guardrail for God / Ω / d->infinity / liberation / suffering / Ψ_f / practice / choice-creates-reality language
+
 ### A. Bridge / Axiomatic Layer
 - `_SRT_Spirit_Axioms.md`
 
@@ -49,16 +53,17 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 ## Recommended Reading Order
 ### 最短主线（第一次进入 Spirituality）
-1. `_SRT_Spirit_Axioms.md`
-2. `SRT_Spirit_09_Praxis_CompactCore.md`
+1. `SRT_Spirituality_Claim_Status.md`
+2. `_SRT_Spirit_Axioms.md`
+3. `SRT_Spirit_09_Praxis_CompactCore.md`
 
 ### 第二层展开
-3. `SRT_Spirit_09_Praxis.md`
-4. `SRT_Spirit_05_Shoshin.md`
-5. `SRT_Spirituality_Selection_Pathology_and_Return.md`
-6. `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
-7. `SRT_Spirituality_Community_and_Sangha.md`
-8. `Praxis_Split/README.md`
+4. `SRT_Spirit_09_Praxis.md`
+5. `SRT_Spirit_05_Shoshin.md`
+6. `SRT_Spirituality_Selection_Pathology_and_Return.md`
+7. `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
+8. `SRT_Spirituality_Community_and_Sangha.md`
+9. `Praxis_Split/README.md`
 
 ## Role Split
 - bridge / axioms：固定 Spirituality 板块与 SRT 公理层的连接方式
@@ -73,8 +78,10 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 ## Minimal navigation note
 
+- **任何涉及 God / Ω / d->infinity / 解脱 / 苦难 / 修行 / Ψ_f 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读具体正文。
+
 若目标是：
-- **理解 Spirituality 板块的旧主轴** → 先读 `_SRT_Spirit_Axioms.md` 与 `SRT_Spirit_09_Praxis_CompactCore.md`
+- **理解 Spirituality 板块的旧主轴** → 先读 `SRT_Spirituality_Claim_Status.md`，再读 `_SRT_Spirit_Axioms.md` 与 `SRT_Spirit_09_Praxis_CompactCore.md`
 - **理解现代生活中的选择病理、空心感、主体位回返** → 补读 `SRT_Spirituality_Selection_Pathology_and_Return.md`
 - **希望以更生活化方式进入同一问题** → 再读 `SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
 - **希望理解共同体如何托住回返而不变成新地板** → 读 `SRT_Spirituality_Community_and_Sangha.md`

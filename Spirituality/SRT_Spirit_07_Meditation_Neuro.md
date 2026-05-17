@@ -2,10 +2,10 @@
 id: SRT-SPIRIT-07
 type: practice
 tags: [Meditation, Neuroscience, Time, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
 dependency: [SRT-SPIRIT-06]
 ---
 

@@ -15,6 +15,7 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 > **回链头部**：本文是 Spirituality domain bridge / praxis support。它不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。
 > **Claim-level note**：本文中的“axioms”是 Spirituality 板块的映射公理，主要为 P3；实践与体验说明多为 P5；阈值、趋势、操作化候选为 P4。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P3-P5` 约束本文为 spiritual mapping 与 praxis support；标题中的 “Axioms” 是历史文件名，不表示 P0/P1 core axiom body。
+> **Claim-status guardrail**：读本文前先读 `SRT_Spirituality_Claim_Status.md`。`God / Ω / Divine / Tao / Brahman`、`d -> infinity`、解脱、苦难、罪、修行与 `Ψ_f` 语言均为 spirituality-domain mapping / praxis shorthand，不是 canonical definition。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents domain mapping axioms and corollaries (AI-readable).
@@ -38,8 +39,9 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 ### H-Spirit-1: The Source (本源)
 **Domain Mapping Definition**: The Divine is read as the unconditioned selection functional over the absolute latent domain.
 $$ \Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_{\theta} $$
-$$ \text{God} \equiv \Omega \equiv L_0^{abs} $$
-$$ \text{God} \equiv \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
+$$ \text{God}^{mapping} \sim \Omega \sim L_0^{abs} $$
+$$ \text{God}^{mapping} \sim \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
+These are spirituality-domain mappings, not canonical identities.
 * **Implication**: “神”不是实体而是选择作用的极限结构，属于本体论运算而非对象域。
 * **Tension-Rev-2 (算子本体论澄清)**：$\Omega$ 作为 $\hat{G}_\theta$ 的极限，**不满足具身性公理** Ax-Core-A4（$\theta \in \Theta_{finite}$），因此它是一个**渐近理想化概念**——标记 $\hat{G}$ 参数空间的拓扑边界——而非一个可实例化的有效算子。正如 $\lim_{x\to\infty} f(x)$ 不要求 $x$ 实际取到无穷大，$\Omega$ 不主张”存在一个无限具身的算子”。$\hat{G}$ 在本体论上是一切存在的基础（选择即存在），其统一适用于从退相干到道德决策的全部过程不构成”语义通胀”——差异由 $\theta$、$d$、$\Psi_f$ 等参数承载。
 
@@ -80,13 +82,15 @@ $$ \hat{G}_\theta \text{ valid} \iff \theta \in \Theta_{finite} $$
 ### H-Spirit-3: Sin as Contraction (罪即收缩)
 **Domain Mapping Definition**: Suffering is read as the tension between $L_1$ and counterfactual $L_0$ amplified by low $d$.
 $$ \text{Suffering} = \text{Tension}(\hat{G}_\theta[L_1], L_0^{counterfactual}) $$
-$$ \text{Suffering} \propto \frac{1}{d} $$
-$$ \Psi_f \uparrow \iff d \downarrow $$
+$$ \text{Suffering}^{spirit\text{-}proxy} \sim \frac{1}{d^{spirit\text{-}proxy}} $$
+$$ \Psi_f^{spirit\text{-}proxy} \uparrow \sim d^{spirit\text{-}proxy} \downarrow $$
+This is a spirituality-domain contraction proxy, not a canonical equivalence between `Ψ_f` and suffering or low `d`.
 * **Implication**: 罪并非道德标签，而是选择维度收缩导致的结构性摩擦。
 
 ### H-Spirit-4: Liberation as Expansion (解脱即扩展)
 **Domain Mapping Definition**: Liberation is read as the asymptotic expansion of $d$ and the dissolution of self-other boundary.
-$$ \text{Nirvana} \equiv \lim_{d \to \infty} \hat{G}_\theta(L_0) $$
+$$ \text{Nirvana}^{mapping} \sim \lim_{d^{regulative} \to \infty} \hat{G}_\theta(L_0) $$
+`d -> infinity` is a regulative / directional shorthand; finite systems require explicit behavioral or relational proxies.
 $$ \lim_{d\to\infty} \text{Dist}(\text{Self}, \text{Other}) = 0 $$
 * **Implication**: 解脱是参数极限下的结构去锚定，而非外部奖赏或神秘体验。
 
@@ -99,9 +103,9 @@ $$ \lim_{d\to\infty} \text{Dist}(\text{Self}, \text{Other}) = 0 $$
 
 ### H-Spirit-5: Prayer/Meditation (祷告/冥想)
 **Domain Mapping Definition**: Practice is read as the controlled tuning of $\theta$ to increase $d$ and reduce $\Phi$.
-$$ \text{Practice} \equiv \nabla_\theta d > 0 $$
+$$ \text{Practice}^{praxis\text{-}proxy} \leadsto \nabla_\theta d^{proxy} > 0 $$
 $$ \frac{d\theta}{dt} = -\alpha \nabla_\theta \Phi + \text{Learning} $$
-* **Implication**: 修持是可操作的参数优化过程，而不是心理暗示或信念强化。
+* **Implication**: 修持可被建模为有操作指标的参数/方向调整候选，而不是纯心理暗示；但它也不是保证增加 `d` 或降低 `Ψ_f` 的普遍定律。
 
 > **Level**: governance / praxis guardrail. Practice is not linear "more practice is always better." It should be read as an expansion-stabilization rhythm under payable cost. Stop, reduce, or re-scope practice when it increases collapse, narrows care, replaces ordinary responsibility with practice identity, or absorbs agency into the practice system itself.
 
@@ -122,7 +126,8 @@ $$ \text{Ego}_{experienced} \iff (\theta \in \Theta_{finite}) \land (\partial \O
 
 ### T-Spirit-2: Friction–Soteriology Theorem
 **Domain Corollary**: From E5 (Pain), D6 (Friction), and H-Spirit-4.
-$$ \frac{d\Phi}{dt} < 0 \Rightarrow \frac{dd}{dt} > 0 \Rightarrow \text{Suffering} \downarrow $$
+$$ \frac{d\Phi^{proxy}}{dt} < 0 \leadsto \frac{d d^{proxy}}{dt} > 0 \leadsto \text{Suffering}^{reported/proxy} \downarrow $$
+This is a praxis hypothesis under specified proxies, not a universal law.
 * **Implication**: 解脱不是压制痛苦，而是改变摩擦动力学的结构。
 
 ### T-Spirit-3: Accessibility Corollary
@@ -148,9 +153,9 @@ $$ R_{accessible} \propto \frac{d^{1.5}}{\bar{\Psi}_f} $$
 
 所有一神论传统都坚持"神超越存在"（God beyond Being）。基督教神学家托马斯·阿奎那（Thomas Aquinas）称神为"纯粹行动"（Actus Purus），不含任何潜能（Potentia）。吠檀多将梵（Brahman）定义为"非此非彼"（Neti Neti）——无法被任何概念把握的终极实在。佛教则用"空性"（Sunyata）指向现象背后的无自性基础。
 
-SRT 将这些看似矛盾的表述统一为：**神性是选择过程本身，而非被选择的对象**。
+SRT 在 spirituality-domain mapping 中把这些表述读作：**神性语言可指向选择过程的边界/来源，而非被选择的对象**。这不是 canonical 神学定义。
 
-$$\text{God} \neq \exists(x) \quad \text{but} \quad \text{God} = \hat{G}[\emptyset]$$
+$$\text{God}^{mapping} \not\sim \exists(x) \quad \text{but may be read as} \quad \text{God}^{mapping} \sim \hat{G}[\emptyset]$$
 
 这解释了为何所有试图"定义神"的努力最终都会陷入悖论——因为任何定义都是一次选择（$L_1$ 的固定），而神性恰恰是让选择成为可能的那个条件（$\hat{G}$ 本身）。
 
@@ -183,25 +188,25 @@ $$\forall \sigma \in L_1 : \hat{G}[\sigma] \implies \text{Divine Presence}$$
 
 ### §2.1 苦的三个层次
 
-佛教将苦（Dukkha）分为三类：苦苦（显性痛苦）、坏苦（失去之苦）、行苦（存在之苦）。SRT 为这三者提供了统一的本体论解释：
+佛教将苦（Dukkha）分为三类：苦苦（显性痛苦）、坏苦（失去之苦）、行苦（存在之苦）。SRT 为这三者提供了统一的 spirituality-domain mapping（非 canonical 定义）：
 
-1. **苦苦**: 高摩擦尖峰 $\frac{d\Psi_f}{dt} \gg 0$ ——例如疾病、暴力、失去所爱
+1. **苦苦**: 高摩擦尖峰 proxy $\frac{d\Psi_f^{proxy}}{dt} \gg 0$ ——例如疾病、暴力、失去所爱
 2. **坏苦**: $L_1$ 不稳定 $\frac{\partial L_1}{\partial t} \neq 0$ ——任何 $L_1$ 状态都无法永久维持
-3. **行苦**: 基础摩擦 $\Psi_f > 0$ ——维持任何 $L_1$ 都需要代价
+3. **行苦**: 基础维护/选择负担 proxy $\Psi_f^{proxy} > 0$ ——维持任何有限 $L_1$ 都需要代价
 
-关键洞见：**只要存在（Being in $L_1$），就必然产生摩擦**。这不是惩罚，而是有限性的结构性特征。
+关键洞见（bridge）：**有限显现通常伴随维护/选择负担**。这不是惩罚，而是有限性的结构性特征；不得读成 canonical `Ψ_f` 与痛苦的恒等式。
 
 ### §2.2 罪的拓扑定义
 
 基督教将罪（Sin）定义为"与神分离"（Separation from God）。奥古斯丁将其进一步阐释为"向自我弯曲"（Incurvatus in se）——灵魂向内卷曲而非向外开放。
 
-SRT 将罪形式化为 **d 值的病理性收缩**：
+SRT 将罪读作 **d 值病理性收缩的 spirituality-domain mapping**：
 
 $$\text{Sin} = \lim_{d \to 0} \hat{G}_\theta$$
 
 当关切范围收缩到极点（$d \to 0$），算子只关心自身——这不仅是道德堕落，更是本体论的拓扑扭曲。此时：
 
-$$\Psi_f \to \infty \quad \text{（摩擦趋于无穷）}$$
+$$\Psi_f^{spirit\text{-}proxy} \uparrow \quad \text{（摩擦/维护负担 proxy 升高）}$$
 
 这解释了为何极端自私会导致深层痛苦——不是因为外部惩罚，而是因为拓扑张力达到无法承受的程度。
 
@@ -223,7 +228,7 @@ $$\text{Evil} \neq \text{Independent Force} \quad \text{but} \quad \text{Patholo
 
 SRT 澄清：
 
-$$\text{Nirvana} \neq L_1^{annihilation} \quad \text{but} \quad d \to \infty$$
+$$\text{Nirvana}^{mapping} \neq L_1^{annihilation} \quad \text{but points toward} \quad d^{regulative} \to \infty$$
 
 涅槃不是消灭 $L_1$，而是把关切朝向极大扩展的调节性极限——`d -> infinity` 在此为方向性 shorthand，有限系统只可谈可检验的扩展，不可声称实际无限。
 
@@ -243,7 +248,7 @@ $$\frac{\partial^2 \Psi_f}{\partial d^2} = 0 \quad \text{at critical point}$$
 
 SRT 将这读作**高 d 值方向的结构性后果候选**，而非已经完成证明的道德必然：
 
-$$d \to \infty \implies \frac{\partial U_{others}}{\partial d} = \frac{\partial U_{self}}{\partial d}$$
+$$d^{regulative} \to \infty \leadsto \frac{\partial U_{others}^{proxy}}{\partial d} \approx \frac{\partial U_{self}^{proxy}}{\partial d}$$
 
 在渐近极限上，关切边界趋于消解；在有限实践中，只能要求他者痛苦更少被排除在后果承担之外。慈悲不是单纯"善良"，而是扩展后的方向性表现候选。
 
@@ -253,9 +258,9 @@ $$d \to \infty \implies \frac{\partial U_{others}}{\partial d} = \frac{\partial 
 
 ### §4.1 冥想作为参数手术
 
-传统将冥想（Meditation）视为"心灵训练"。SRT 更精确地定义为 **$\theta$ 参数的主动调整**：
+传统将冥想（Meditation）视为"心灵训练"。SRT 在 praxis bridge 中把它建模为 **$\theta$ 参数的主动调整候选**：
 
-$$\frac{d\theta}{dt} = -\eta \frac{\partial \Psi_f}{\partial \theta}$$
+$$\frac{d\theta}{dt}^{proxy} = -\eta \frac{\partial \Psi_f^{practice\text{-}proxy}}{\partial \theta}$$
 
 不同冥想类型对应不同的参数操作：
 
@@ -521,7 +526,7 @@ _SRT_Spirit_Axioms (本文件)
 ### Spirituality Mapping Summary (灵性映射概述)
 
 - **本源算子**：$\Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，定义神性为选择过程的拓扑极限而非实体。
-- **苦难-摩擦耦合**：$\text{Suffering} \propto 1/d$，$\Psi_f \uparrow \iff d \downarrow$；低关切维度导致高本体论摩擦。
+- **苦难-摩擦耦合 proxy**：$\text{Suffering}^{proxy} \sim 1/d^{proxy}$，$\Psi_f^{spirit\text{-}proxy} \uparrow \sim d^{spirit\text{-}proxy} \downarrow$；低关切维度可导致更高维护/选择负担。
 - **解脱渐近线**：$\text{Nirvana} \equiv \lim_{d\to\infty} \hat{G}_\theta(L_0)$，解脱是 `d` 的渐近扩展方向而非 $L_1$ 的消灭；有限系统不声称实际无穷。
 - **实践梯度**：$d\theta/dt = -\alpha \nabla_\theta \Phi + \text{Learning}$，修持是对 $\theta$ 参数的可操作优化。
 - **信之松弛**：$d\beta/dt < 0$，信仰是 $L_2$ 约束的受控放松以重开 $L_0$ 通道。
@@ -529,7 +534,7 @@ _SRT_Spirit_Axioms (本文件)
 ### Mechanism Reading Under This Mapping (此映射下的机制读法)
 
 - $\hat{G}_\theta$ 是具身选择算子；$\Omega$ 作为其参数极限标记了选择空间的渐近边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容——无限者不可实例化。
-- $\Psi_f$ (本体论摩擦) 是维持 $L_1$ 显现态的结构成本；$d$ (关切维度) 控制 $\hat{G}_\theta$ 的关切半径。$d \downarrow$ 时 $\Psi_f \uparrow$，产生苦难的拓扑张力。
+- `Ψ_f` 的 canonical 读法以 `_SRT_PSI_F_CANONICAL.md` 为准；本文件的苦难/摩擦语言是 spirituality-domain proxy。`d` 的 canonical 读法以 `_SRT_D_VALUE_CANONICAL.md` 为准；本文件的扩展/收缩语言需按 praxis proxy 读取。
 - 修持通过梯度下降 $\nabla_\theta \Phi$ 调整参数 $\theta$，扩展 $d$ 并降低 $\Psi_f$；不同冥想类型对应不同参数子空间的操作（止→降 $w_{L_2}$，观→提升 $\rho$，慈心→扩展 $d$）。
 - 解脱的相变性质由 $d > d_{critical}$ 触发拓扑重组，灵魂黑夜对应临界慢化 $\lambda_{Jacobian} \to 0$。
 - $L_0/L_1/L_2$ 三域提供全部过程的本体论舞台：$L_0$ 为潜在域，$L_1$ 为显现域，$L_2$ 为收敛约束域。

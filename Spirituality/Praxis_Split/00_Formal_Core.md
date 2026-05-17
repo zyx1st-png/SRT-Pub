@@ -2,9 +2,9 @@
 id: SRT-SPIRIT-09
 type: summary
 tags: [Praxis, Evolution, Ox-Herding, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
 dependency: [SRT-SPIRIT-08]
 ---
 

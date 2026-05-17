@@ -4,15 +4,15 @@ type: index
 tags: [Split, Navigation, Longform]
 status: active_v1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
 dependency: []
 ---
 
 # SRT-SPIRIT-09 Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Spirit_09_Praxis.md`](../SRT_Spirit_09_Praxis.md)
-- Source owner bytes: `36676`
-- Source owner SHA-256: `db1725811074276cea545ba76d51a97de81670416bba821988330ed182e6a2b5`
+- Source owner bytes: `36861`
+- Source owner SHA-256: `6c8b3a02319fca4747fed181f38417ebd44ca83f99e0bbc6cdd8b2d96f0229eb`
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_30Days_to_6Months：[`01_30Days_to_6Months.md`](01_30Days_to_6Months.md)
 - 02_1to3Years_and_LifeIntegration：[`02_1to3Years_and_LifeIntegration.md`](02_1to3Years_and_LifeIntegration.md)
