@@ -1,12 +1,14 @@
 ---
-id: SRT-PHYS-09
-type: equation
+id: SRT-PHYS-09-SPLIT-PART-00
+type: reading_shard
 tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, Hybrid]
 status: axiomatic_hybrid_v2
-layer: L1
+layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: evidence
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Ontology]
+canonical: false
+source_owner: ../SRT_Phys_09_Formalism_Ext.md
 ---
 
 # SRT Physics: Advanced Mathematical Formalism (Hybrid Edition)

@@ -5,15 +5,16 @@ tags: [Split, Navigation, Longform]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
 dependency: []
+canonical: false
 ---
 
 # SRT-PHYS-09 Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Phys_09_Formalism_Ext.md`](../SRT_Phys_09_Formalism_Ext.md)
-- Source owner bytes: `62243`
-- Source owner SHA-256: `5826b5e88965ef0e8c67e7d2580c7513f5fe4e4166c0e53c7e891a58dc9f9c22`
+- Source owner bytes: `65285`
+- Source owner SHA-256: `520b94c62e7d073e3f3f9096c30aee71977aab2cc834f8ae0f2d2b227df7632d`
 - 00_Foundational_Formalism：[`00_Foundational_Formalism.md`](00_Foundational_Formalism.md)
 - 01_Math_and_Category_Stack：[`01_Math_and_Category_Stack.md`](01_Math_and_Category_Stack.md)
 - 02_Information_Geometry_and_Dynamics：[`02_Information_Geometry_and_Dynamics.md`](02_Information_Geometry_and_Dynamics.md)

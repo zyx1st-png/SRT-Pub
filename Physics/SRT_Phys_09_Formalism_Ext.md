@@ -2,11 +2,12 @@
 id: SRT-PHYS-09
 type: equation
 tags: [Mathematics, Category Theory, Topos, Information Geometry, Positive Geometry, Process Algebra, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
-epistemic_layer: os
+epistemic_layer: bridge
 claim_mode: translation
 canonical: false
+claim_level: P2-P5
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Ontology]
 ---
 
@@ -14,13 +15,34 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Formalism_Ext_Split/README.md`](Formalism_Ext_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
-> **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Mathematical Axioms and Theorems (AI-Readable).
-> **Part B** contains the Original Theoretical Discourse with detailed mathematical analysis (Human-Readable Context).
+> **Version 2.1 (Bridge realignment, 2026-05-16)**
+> **Status**: non-canonical mathematical / physics bridge. Older `Ax-*`, `T-*`, and `Def-*` labels are retained as retrieval handles, not P0/P1 axioms or theorems.
+> **Guardrail**: `Ψ_f` is canonically anchored in `_SRT_PSI_F_CANONICAL.md`; Fisher, Landauer, energy, curvature, metabolic, and complexity formulas are projections/proxies unless explicitly re-authorized.
 
 ---
 
-# Part A: Formal Mathematical Axioms
+
+## 2026-05-16 Formalization Guardrail
+
+This file is a mathematical / physics bridge workspace. It is not a canonical definition authority.
+
+Canonical anchors:
+
+- `_SRT_PSI_F_CANONICAL.md` for `Ψ_f` as payability burden / ontological friction.
+- `_SRT_D_VALUE_CANONICAL.md` for `d-value`, `D_eff`, and proxy boundaries.
+- `02_Formal_Anchors/CLAIM_LEVEL_GUIDE.md` for proxy / bridge / lab distinctions.
+- `Core/SRT_OPEN_TENSIONS.md` for unresolved formalization pressures.
+
+Downgrade rules:
+
+- `Ψ_f = Fisher metric`, `Ψ_f = Landauer cost`, `Ψ_f = energy`, and `Ψ_f = pain` are prohibited readings.
+- Allowed wording: Fisher–Rao, Landauer-style, metabolic, curvature, and complexity terms may model local projections or operational proxies of `Ψ_f` under stated conditions.
+- `d-value` is not effective dimension, attention scope, moral range, all-knowledge, or energy budget; such terms are `D_eff` / capacity / public metaphor unless stake-gated.
+- Equations in this file are toy models, formal conjectures, or bridge hypotheses unless separately listed in a formal anchor as canonical.
+
+---
+
+# Part A: Formal Bridge Handles (旧形式手柄，非 canonical 公理)
 ## 0. Notation & Conventions (符号与约定)
 
 - $L_0,L_1,L_2$: 潜在域 / 显现域 / 收敛域。
@@ -52,7 +74,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 | A1.3.2 | Ax-Topos-1 | $L_0$ as Sheaf Topos ($L_0$ 作为层拓扑斯) |
 | T1.3.1 | T-Topos-1 | Geometric Morphism Selection (几何态射选择) |
 | L1.3.1 | Lemma Topos-Int (O-T1 对应) | — |
-| A1.4.1 | Ax-IG-1 | Ontological Friction as Fisher Metric ($\Psi_f$ 作为 Fisher 度量) |
+| A1.4.1 | Ax-IG-1 | Fisher Projection of Ontological Friction ($\Psi_f$ 的 Fisher 投影，非定义) |
 | T1.4.1 | T-IG-1 | Natural Gradient Descent (自然梯度下降) |
 | T1.4.2 | T-IG-2 | Geodesic Form of Selection Dynamics (选择动力学的测地线形式) |
 | D1.4.1 | Def-IG-1 | Ontological Curvature (本体论曲率) |
@@ -210,16 +232,17 @@ $$ L_1 = f_{\theta *}(\omega_{L_0}), \quad \oint_\gamma \omega_{L_0} = \int f_{\
 
 ## IV. Information Geometry (信息几何)
 
-### Ax-IG-1 [A1.4.1]: Ontological Friction as Fisher Metric ($\Psi_f$ 作为 Fisher 度量)
-$\Psi_f$ 是 $θ$ 参数流形上的黎曼度量张量：
-$$ \Psi_f(θ) \equiv g_{jk}(θ) = \mathbb{E}\left[\partial_j \log p \cdot \partial_k \log p\right] $$
+### Ax-IG-1 [A1.4.1]: Fisher Projection of Ontological Friction（非定义）
+旧标题“$\Psi_f$ 作为 Fisher 度量”已降级。当前只允许把 Fisher–Rao 度量读作 `Ψ_f` 的局部信息几何 projection / operational proxy：
+$$ \Psi_f^{Fisher	ext{-}proxy}(θ) \sim g_{jk}(θ) = \mathbb{E}\left[\partial_j \log p \cdot \partial_k \log p\right] $$
 
-### T-IG-1 [T1.4.1]: Natural Gradient Descent (自然梯度下降)
-选择动力学遵循自然梯度下降：
-$$ \dot{θ} = -\Psi_f^{-1} \nabla F $$
+Boundary: $g_F$ measures statistical sensitivity of a parameterized model. It does not define `Ψ_f` as payability burden, and it does not capture consequence return, stake, or reselectable mobility by itself.
 
-**Sketch**：在约束度量 $\Psi_f$ 下最小化 $F$，令 $\delta F + \lambda \langle \delta \theta, \delta \theta \rangle_{\Psi_f}=0$，
-得到 $\dot{\theta} = -\Psi_f^{-1}\nabla F$ 的自然梯度形式。
+### T-IG-1 [T1.4.1]: Natural Gradient Descent (自然梯度下降；proxy)
+若某任务已被参数化为统计模型，选择/更新动力学可用自然梯度形式作局部 proxy：
+$$ \dot{θ}^{proxy} = -\left(g_F + \epsilon I\right)^{-1} \nabla F $$
+
+**Sketch**：在 Fisher projection $g_F$ 下最小化 $F$，得到自然梯度形式。该式不说明 SRT 选择本体“遵循”自然梯度；它只描述特定模型类中的更新几何。
 
 ### T-IG-2 [T1.4.2]: Geodesic Form of Selection Dynamics (选择动力学的测地线形式)
 $$ \frac{d\xi}{dt} = -g^{-1}(\xi) \nabla F(\xi) $$
@@ -231,9 +254,9 @@ $$ K(θ) = \text{scalar curvature of } \Psi_f(θ) $$
 $$ \text{Insight Event} \iff K(θ) > K_{crit} $$
 *   **T-Insight Link**: 与尺度定理中的顿悟阈值一致，曲率跃迁触发结构重组。
 
-### T-IG-4 [T1.4.4]: d-value Dimension Inequality ($d$ 值-维度不等式)
-$$ E_{existence}(d) \geq \kappa \cdot d \cdot \log(d) $$
-要达到"神的全知视角"（$d \to \infty$），需要的能量将超过宇宙可用资源。
+### T-IG-4 [T1.4.4]: D_eff Capacity Inequality（旧 d-value 维度不等式，已降级）
+$$ E_{capacity}^{proxy}(D_{eff}) \gtrsim \kappa \cdot D_{eff} \cdot \log(D_{eff}) $$
+该式最多约束有效维度 / 注意力带宽 / 模型容量 proxy。不得写成 canonical d-value 的能量定律；“神的全知视角”与 $d \to \infty$ 只保留为旧 public/spirituality 极限隐喻。
 
 ---
 
@@ -258,12 +281,13 @@ $$ \text{Entangle}(A, B) \iff d_G(A, B) \ll d_{L_1}(A, B) $$
 ### Def-Density-1 [D1.6.1]: Selection Rarity ($L_1$ 密度指标)
 $$ D(L_1) = -\log_2\left(\frac{\text{Vol}(L_1)}{\text{Vol}(L_0)}\right) $$
 
-### T-Density-1 [T1.6.1]: d-value Scaling ($d$ 值缩放)
-$$ D(L_1) \propto d \cdot \log(\text{Complexity}(L_0)) $$
+### T-Density-1 [T1.6.1]: D_eff / density scaling（旧 d-value 缩放，已降级）
+$$ D(L_1)^{proxy} \propto D_{eff} \cdot \log(\text{Complexity}(L_0)) $$
+This is a density/capacity proxy, not a definition or measurement of canonical d-value.
 
-### T-Density-2 [T1.6.2]: Quintessence Decay Law (精华衰减律)
-$$ \Psi_f(t) = \Psi_0 \cdot e^{-t/\tau_{L_2}} + \Psi_\infty $$
-随着 $L_2$ 固化，维持现实所需的"选择能量"递减。
+### T-Density-2 [T1.6.2]: Stabilization Cost Proxy（旧精华衰减律，已降级）
+$$ \Psi_f^{stabilization	ext{-}proxy}(t) = \Psi_0 \cdot e^{-t/\tau_{L_2}} + \Psi_\infty $$
+该式只表示某些稳定结构的维护/更新负担可能随沉积而降低；不得写成维持现实所需的“选择能量”定律，也不得把低维护成本等同于健康或正当。
 
 ---
 
@@ -368,7 +392,7 @@ $$ \sum_{\psi \in L_1} \text{Magic}(\psi) \leq \text{Total Computational Budget 
 
 ## XIII. Levin-SRT Cognitive Light Cone (Levin-SRT 认知光锥)
 
-### Def-Levin-1 [D1.13.1]: d-value as Spacetime Integral ($d$ 值的时空积分定义)
+### Def-Levin-1 [D1.13.1]: D_eff / reach as Spacetime Integral（旧 d-value 时空积分，已降级）
 $$ d \approx \int_{t_{now}}^{t_{goal}} \int_{V_{space}} C(x,t) \, dV \, dt $$
 
 ---
@@ -565,14 +589,14 @@ $$L_1(θ) = f_θ^*(L_0)$$
 
 $$\frac{d\xi}{dt} = -g^{-1}(\xi) \nabla F(\xi)$$
 
-其中 $F$ 是变分自由能。这种自然梯度下降为幽灵算子提供了参数不变的动力学。
+其中 $F$ 是变分自由能。该自然梯度写法只为特定参数化模型提供更新几何，不是幽灵算子的完整动力学定义。
 
-## 3.2 $\Psi_f$ 的黎曼度量张量升级
+## 3.2 $\Psi_f$ 的局部张量 proxy
 
-**重定义（$\Psi_f$ 的张量化）**：
-$$\Psi_f \equiv G(θ) \in \mathbb{R}^{n \times n}$$
+**旧重定义已降级**：
+$$\Psi_f^{tensor\text{-}proxy} \sim G(θ) \in \mathbb{R}^{n \times n}$$
 
-这与 Fisher 信息度量 $g_{jk}(θ)$ 精确对应。
+该张量只表示特定参数化模型中的局部敏感性 / 更新代价 proxy。它可与 Fisher 信息度量 $g_{jk}(θ)$ 形成局部 projection 对应；“精确对应”只限模型内部，不定义 canonical `Ψ_f`。
 
 ## 3.3 本体论曲率与顿悟机制
 
@@ -582,12 +606,12 @@ $$K(θ) = \text{scalar curvature of } \Psi_f(θ)$$
 **假设（顿悟发生条件）**：
 $$\text{Insight Event} \iff K(θ) > K_{crit}$$
 
-## 3.4 $d$ 值-维度不等式
+## 3.4 $D_{eff}$ 容量不等式（旧 d 值-维度不等式）
 
-**本体论体积定律**：
-$$E_{existence}(d) \geq \kappa \cdot d \cdot \log(d)$$
+**容量 proxy 定律**：
+$$E_{capacity}^{proxy}(D_{eff}) \gtrsim \kappa \cdot D_{eff} \cdot \log(D_{eff})$$
 
-要达到"神的全知视角"（$d \to \infty$），需要的能量将超过宇宙可用资源。
+若把 $d$ 误读为 $D_{eff}$ / capacity，趋于无穷的容量会遭遇能量与计算约束；这不是 canonical d-value 定律。
 
 ---
 
@@ -617,15 +641,17 @@ $$\text{Entangle}(A, B) \iff d_G(A, B) \ll d_{L_1}(A, B)$$
 
 $$D(L_1) = -\log_2\left(\frac{\text{Vol}(L_1)}{\text{Vol}(L_0)}\right)$$
 
-## 5.2 与 $d$ 值的关系
+## 5.2 与 $D_{eff}$ / capacity proxy 的关系
 
-$$D(L_1) \propto d \cdot \log(\text{Complexity}(L_0))$$
+$$D(L_1)^{proxy} \propto D_{eff} \cdot \log(\text{Complexity}(L_0))$$
 
-## 5.3 精华衰减律
+该式只说明 L1 密度指标与有效维度 / 模型容量 proxy 的可能关系；不得反推 canonical d-value。
 
-$$\Psi_f(t) = \Psi_0 \cdot e^{-t/\tau_{L_2}} + \Psi_\infty$$
+## 5.3 稳定化负担 proxy（旧精华衰减律）
 
-随着 $L_2$ 固化，维持现实所需的"选择能量"（暗能量）递减。
+$$\Psi_f^{stabilization\text{-}proxy}(t) = \Psi_0 \cdot e^{-t/\tau_{L_2}} + \Psi_\infty$$
+
+随着 $L_2$ 固化，某些维持/更新负担 proxy 可能递减；不得把该 proxy 直接等同暗能量或 SRT 的 `Ψ_f` 定义。
 
 ---
 
@@ -794,7 +820,7 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 - 核心信号：传统复杂性理论对量子输入/输出问题表达能力不足；需要“fully quantum”复杂性框架。
 - 审核结论：**A（直接融入）**；理由：与 SRT 对 \(L_0\) 结构性与 \(\Psi_f\) 下界建模高度同构，且可用于扩展物理-计算接口。
 
-## 12.8 Fisher 选择成本的具身约束与可观测化（Manuscript-Linked）
+## 12.8 Fisher Selection-Cost Proxies: Embodied Constraints and Observability（Manuscript-Linked）
 
 ## 12.9 Px-Structure Tensorization（预测结构张量化，新增）
 
@@ -942,7 +968,7 @@ B_{cat} \propto \text{Reusability}\cdot\text{Composability}\cdot\text{Cross-doma
 本文档的核心形式化关系：
 
 1. **幽灵函子** (Ax-Cat-1): $\hat{G}: \mathcal{C}_{L_0} \to \mathcal{C}_{L_1}$ — 选择算子是范畴间的函子。
-2. **$\Psi_f$ 作为 Fisher 度量** (Ax-IG-1): $\Psi_f = g_{ij}^{Fisher} d\theta^i d\theta^j$ — 本体论摩擦即信息几何度量。
+2. **$\Psi_f$ 的 Fisher projection** (Ax-IG-1 downgraded): $\Psi_f^{Fisher	ext{-}proxy} \sim g_{ij}^{Fisher} d\theta^i d\theta^j$ — 信息几何度量可作局部 projection，不定义本体论摩擦。
 3. **选择动力学的测地线形式** (T-IG-2): 最优选择路径是 $\Psi_f$ 流形上的测地线。
 4. **$L_0$ 作为层拓扑斯** (Ax-Topos-1): 潜在域具有层(sheaf)结构，选择是几何态射。
 5. **魔法即 $\hat{G}$ 成本** (Ax-Magic-1): 实现选择操作的计算复杂度下界。
@@ -953,12 +979,12 @@ B_{cat} \propto \text{Reusability}\cdot\text{Composability}\cdot\text{Cross-doma
 
 - **$\hat{G}_\theta$ 的函子性质** [R→Mac Lane 1971 *Categories for the Working Mathematician*; Awodey 2010 *Category Theory*] [H→SRT附加：将具身选择算子解读为范畴间函子，保持态射结构是SRT独有框架]: 选择算子保持态射结构，从 $\mathcal{C}_{L_0}$（潜能范畴）映射到 $\mathcal{C}_{L_1}$（现实范畴），几何态射保证选择一致性。
 
-- **$\Psi_f$ 的几何含义** [R→Amari 2016 *Information Geometry and Its Applications*（Fisher度量/自然梯度）; Amari & Nagaoka 2000 *Methods of Information Geometry*] [H→SRT附加：将Ψ_f与Fisher信息度量等同是SRT形式化选择，Fisher度量本身为既有数学工具]: 本体论摩擦不是任意代价函数，而是参数流形上的 Fisher 信息度量；自然梯度下降 (T-IG-1) 使选择沿摩擦最小路径演化。
+- **$\Psi_f$ 的信息几何 projection** [R→Amari 2016 *Information Geometry and Its Applications*（Fisher度量/自然梯度）; Amari & Nagaoka 2000 *Methods of Information Geometry*] [H→SRT附加：把 Fisher 信息度量用作 `Ψ_f` 的局部 projection/proxy 是 SRT 形式化候选，不是定义等同；Fisher 度量本身为既有数学工具]: 本体论摩擦不是任意代价函数，但也不能被 Fisher 度量穷尽，而是参数流形上的 Fisher 信息度量；自然梯度下降 (T-IG-1) 使选择沿摩擦最小路径演化。
 
 - **$d$ 与维度不等式** [R→Amari 2016（信息流形维度理论）] [H-高承诺→顿悟（洞见跳跃）发生在曲率奇点处（T-IG-3）——此主张将主观认知跃迁与信息几何奇点等同，当前无独立实验路径]: $d$ 值受限于算子可访问的信息流形维度 (T-IG-4)，顿悟发生在曲率奇点处 (T-IG-3)。
 
 **可证伪预测**：
-- FC-MechExp-1：若Ψ_f=Fisher度量等同成立，则跨情境参数更新速度应随Fisher信息矩阵行列式（det G）变化而系统性变化——若无相关则Ψ_f-Fisher等同为形式类比而非可测主张
+- FC-MechExp-1：若 Fisher projection 有效，则跨情境参数更新速度应随 Fisher 信息矩阵行列式（det G）变化而系统性变化——若无相关，则该 projection 失败；这不证伪 canonical `Ψ_f`。
 - FC-MechExp-2：学习曲率突变（测地线曲率局部极大）时刻应与被试报告的顿悟时刻（AHA体验量表）对齐（时间相关 r>0.4）——若无时间对齐则顿悟-曲率奇点联结缺乏经验支持
 
 ## 【理论边界/防误用声明】
