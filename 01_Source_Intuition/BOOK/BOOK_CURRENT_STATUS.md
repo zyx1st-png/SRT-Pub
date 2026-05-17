@@ -5,7 +5,7 @@ status: active_draft
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-05-14
+updated: 2026-05-17
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -99,7 +99,7 @@ claim_mode: navigation
 | 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v1` | 当前正式主线章节；需防 d 扩张道德化 |
 | 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v4_stable_candidate` | 稳定候选稿；化石命题、沉积机制、层级护栏、利希滕贝格裂缝；下一步只随第20章入口做桥句校准 |
 | 20 | 自指率：主体如何越积越厚 | current mainline：`Part_03_从选择到主体与价值/20_自指率_主体如何越积越厚.md`，`draft_v3_stable_candidate` | σ_sr 书稿层引入；五通道写回、"否定后果"段、旧图景三失效具体锚点、主动推断最强反对者回应、缘起扩展、Prop2精准分拆；稳定候选稿；下一步只随第21章入口做桥句校准 |
-| 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v2_third_tier_candidate` | 笛卡尔护栏（否定解释地位非经验事实）、主体位/自我意识硬区分命题、语言条件降承诺（等价符号化能力）、高阶主体间性区分、朋友话语触发原因（沉积历史）、ε术语替换、萨特层级区分（非对立）、吠檀多压缩一句、Prop3/4承诺校准；需按第22章 d_mobile 做入口桥接 |
+| 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v3_stable_candidate` | §1增加必要性段落（主体位/自我意识"褶子"金句）、§3主体位硬区分金句、§4五条件改为有机逻辑链（历史底层→材料→形式→社会锚→激活），末尾矛盾修复、§5补全跨时间承担统一论证（结构连续性vs规范归属，"历史变成'我的历史'"金句）、§7灵性段金句（枷锁以'我'的名义运作）、§8增加HOT理论（Rosenthal）作为最强分析传统反对者 + 系统近概念区分（SC≠元认知/HOT/自我叙事/内省，"叙事是显影，写回才是底片"）；稳定候选稿；下一步只随第22章入口做桥句校准 |
 | 22 | 感到不等于能动 | 未写 | 按卷三大纲推进：d_mobile 引入 |
 | 23–30 | 卷四：秩序的双面性 | 未写 | 后续推进 |
 | 31–35 | 卷五：共同秩序 | 未写 | 后续推进 |
