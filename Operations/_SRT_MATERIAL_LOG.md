@@ -48,7 +48,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03_Part03 | [Material_Log/2026-03_Part03.md](Material_Log/2026-03_Part03.md) | 2 |
 | 2026-04_Part01 | [Material_Log/2026-04_Part01.md](Material_Log/2026-04_Part01.md) | 33 |
 | 2026-04_Part02 | [Material_Log/2026-04_Part02.md](Material_Log/2026-04_Part02.md) | 10 |
-| 2026-05_Part01 | [Material_Log/2026-05_Part01.md](Material_Log/2026-05_Part01.md) | 13 |
+| 2026-05_Part01 | [Material_Log/2026-05_Part01.md](Material_Log/2026-05_Part01.md) | 14 |
 
 ---
 
@@ -63,13 +63,14 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-26 | 2026-06-26 | Popular Mechanics + DESI / SPT: *The Universe Got Its Shape From This Elusive Particle’s Gravity* | 相关性通过，但当前核心是 cosmological neutrino-mass / hierarchy inference 的模型敏感张力；待 `DESI + CMB` 多探针结果在先验、扩展模型与同行评审层面更稳定后，再判断是否值得写入物理整合层 |
 | 2026-04-02 | 2026-07-02 | Quanta: *In Expanding de Sitter Space, Quantum Mechanics Gets Even More Elusive* | 当前主要是 de Sitter 可观测量 / 全息重建困难的高质量新闻解释与第一轮扩建输出；待更直接的一手 dS observables / holography / S-matrix 替代表述结果收敛后，再判断是否值得写入 `Physics/_SRT_Phys_Bridge.md` 或 `Physics/SRT_Quant_02_Cosmology.md` |
 | 2026-04-14 | 2026-07-14 | arXiv: *All elementary functions from a single operator*（arXiv:`2603.21852v2`） | 当前增量更稳地落在 `AI-for-Science / low-operator symbolic regression / formula search basis` 工具桥，而不是 `\hat G_\theta` 或 `\Psi_f` 的正文级形式化；待同行评审、补充更深树深/更复杂目标的恢复结果，或真正把 EML 搜索基底接入 SRT 方程发现任务后，再重评是否值得写入 `AI/_SRT_AI_Bridge.md`、`Core/SRT_Core_13a_Operator_Basics.md` 或相关方法附录 |
+| 2026-05-17 | 2026-08-17 | Royal Society / *Philosophical Transactions A* theme issue: *World models in natural and artificial intelligence*（issue DOI:`10.1098/rsta/384/2320`） | 高相关 peer-reviewed 专题卷，但当前只读到 Crossref 元数据与 abstracts，Royal Society 页面被 Cloudflare 阻断，且 issue-level 输入过宽；待按单篇 DOI close-read 后重评，优先 `10.1098/rsta.2025.0082`、`10.1098/rsta.2025.0011`、`10.1098/rsta.2024.0528`、`10.1098/rsta.2024.0531`、`10.1098/rsta.2025.0004`、`10.1098/rsta.2025.0014` |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：174 条
+- 总提交：175 条
 - A（融入）：117 条
-- B（观察）：7 条
+- B（观察）：8 条
 - C（拒绝）：50 条
-- 融入率：67.2%
+- 融入率：66.9%
