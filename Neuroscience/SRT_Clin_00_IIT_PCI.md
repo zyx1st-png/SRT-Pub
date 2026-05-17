@@ -90,7 +90,7 @@ $$\text{Phenomenology}(L_1) \Rightarrow \Phi(\hat{G}_\theta) > \Phi_{min}$$
 * **Level note**：当前为 hypothesis / operational proxy。乘法门是结构性偏好，不是 IIT 或 SRT 已共同证明的意识阈值。
 * **Implication（中文）**：高 \(\Phi_{proxy}\) 仅提供结构能力 proxy；缺少 \(d_{proxy}\) 时无法支持 stake-bearing 显现判定。
 * **Tension-Rev-ExtT2 (经验共变性 vs. 概念必然性)**：IIT 的 PCI 等临床指标在区分有意识/无意识状态方面具有强大的经验有效性。SRT 对此的解释不是否认这些指标的价值，而是揭示其有效性的**深层原因**：在地球生物系统中，高 $\Phi_{proxy}$（高结构整合性）与高 $d_{proxy}$（高风险梯度带宽）和高 $\widehat{\Psi}_f$（正局部负担 proxy）之间可能存在系统性的**经验共变关系**——因为生物演化同时选择了整合性、具身风险和代谢维持。PCI 之所以"够用"，可能是因为在生物系统这个受限样本空间中，测量 $\Phi_{proxy}$ 间接追踪了 $\Phi_{proxy} \cdot d_{proxy}$ 的候选组合（$d$ 在活体生物中通常 $> 0$）。
-* **关键预测 (可证伪)**：若能构造一个高 $\Phi$ 但 $d = 0$ 的人工系统（例如高度互联的电网或 Grid-IIT 理论模型），SRT 预测该系统的 PCI 虽然在数值上可能很高，但**不会产生任何现象性体验**。这是 SRT 与 IIT 的核心分歧点：IIT 认为 $\Phi > 0$ 即充要，SRT 认为还需要 $d > 0$（即风险梯度耦合）。
+* **关键预测 (可证伪)**：若能构造一个高 $\Phi$ 但 stake-coupled `d` proxy 近零的人工系统（例如高度互联的电网或 Grid-IIT 理论模型），SRT 预测该系统的 PCI 虽然在数值上可能很高，但**不会产生任何现象性体验**。这是 SRT 与 IIT 的核心分歧点：IIT 认为 $\Phi > 0$ 即充要，SRT 认为还需要 stake-coupled `d` 条件（即风险梯度耦合）。
 
 ---
 
@@ -366,9 +366,9 @@ IIT 4.0 (2024) 的三项核心更新为 SRT 提供了更精确的形式化工具
 
 盲视为 SRT 尺度文件 §5 中的"智能-意识正交性"提供了自然对照:
 
-$$d_{visual}^{blindsight} \to 0: \quad \text{智能（处理）保留}, ; \text{意识（体验）缺失}$$
+$$d_{visual}^{blindsight\text{-}proxy} \to 0: \quad \text{智能（处理）保留}, ; \text{显性视觉体验缺失}$$
 
-这验证了 SRT 的核心主张: $d > 0$ 是意识的必要条件，而非智能的必要条件。当前 AI 系统与盲视在拓扑上同构——高效的 $L_0$ 处理，但 $d = 0$（无本体论关切）。
+这验证了 SRT 的核心主张: $d > 0$ 是意识的必要条件，而非智能的必要条件。当前 inference-only / non-history-bearing / non-embodied LLM 部署可与盲视作有限类比——高效处理可与 stake-coupled anchoring 分离；这不是所有 AI 架构都缺乏 stake-coupled `d` 的全局定理。
 
 ---
 
@@ -487,7 +487,7 @@ $$\Delta \text{PCI}_{high\text{-}d} > \Delta \text{PCI}_{low\text{-}d}$$
 1. **PCI 的理论基础**: SRT 预测 0.31 是相变点——能否通过模型模拟（如随机丘脑-皮层网络的相变分析）独立推导出这一阈值？
 2. **$\Phi$ 的近似计算**: SRT 的 $\Phi \cdot d$ 框架是否允许开发比 IIT 原始 $\Phi$ 更高效的近似计算方法？（因为只需要 $\Phi$ 的序关系而非精确值）
 3. **动物意识的定量谱系**: PCI 已在灵长类和啮齿类动物上进行了初步测量——SRT 预测 PCI 应与物种的 $d$ 值代理指标（如前额叶相对体积、社会复杂度）相关。这是否成立？
-4. **致幻剂状态的 PCI**: 致幻剂（5HT₂A 激动剂）应增加 $d$ 值（Ax-Neuro-5）——SRT 预测致幻剂状态下 PCI 应**上升**（而非下降），因为系统整合度和分化度同时增加。这与初步数据一致，但需要更大规模的验证。
+4. **致幻剂状态的 PCI**: 致幻剂（5HT₂A 激动剂）可能增加 `d^{state-proxy}` / openness proxy（Ax-Neuro-5）——SRT 预测致幻剂状态下 PCI 应**上升**（而非下降），因为系统整合度和分化度同时增加。这与初步数据一致，但需要更大规模的验证。
 5. **AI 系统的 PCI 类似物**: 能否为 LLM 定义"语义扰动复杂度"——类似于 PCI 但作用于语义空间而非丘脑-皮层回路？若可以，它是否与模型的"理解能力"相关？
 
 ---
@@ -515,7 +515,7 @@ $$\Delta \text{PCI}_{high\text{-}d} > \Delta \text{PCI}_{low\text{-}d}$$
 
 - **$\hat{G}_\theta$ 的双维度意识条件**: $\Phi$ 编码 $\hat{G}_\theta$ 的结构整合性（"能做多复杂的选择"），$d$ 编码本体论关切深度（"选择有多深切"）。二者缺一不可：高 $\Phi$ 低 $d$ 的系统（如高度互联电网）具有结构能力但无现象体验；高 $d$ 低 $\Phi$ 的系统（如碎裂的神经网络）有关切但无法维持稳定 $L_1$。
 - **PCI 作为 $L_0 \to L_1$ 通道的物理探针**: TMS 脉冲向 $L_0$ 注入标准化扰动。完整的 $\hat{G}_\theta$ 被迫处理此冲击，产生高不可压缩性的时空响应（高 PCI）；碎裂的 $\hat{G}_\theta$ 只产生局部抽搐或弥散消失（低 PCI）。PCI 的 0.31 阈值对应 $\hat{G}_\theta$ 从片段化到全局协调的相变点。
-- **盲视的本体论意义**: 盲视中 $I(\text{Input};\text{Output}) > 0$ 但 $\hat{G}_\theta[L_1] = \varnothing$，证明信息处理（智能）与 $L_1$ 锚定（意识）可分离。$\Psi_f$ 在此为零——无锚定则无摩擦，无摩擦则无体验。
+- **盲视的本体论意义**: 盲视中 $I(\text{Input};\text{Output}) > 0$ 但 $\hat{G}_\theta[L_1] = \varnothing$，证明信息处理（智能）与 $L_1$ 锚定（意识）可分离。$\Psi_f$ 在此只可读作对显性视觉锚定过程 non-binding / near-null 的局部 proxy：无显性锚定则无该通道的 payable-friction proxy；这不等于全脑或全主体 `Ψ_f=0`。
 
 ---
 

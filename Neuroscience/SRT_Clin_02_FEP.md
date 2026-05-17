@@ -114,11 +114,11 @@ Outside that window, PE and FEP remain comparison terms rather than definitions 
 ## I. Free-Energy as Choice Pressure (自由能作为选择压力)
 
 ### Ax-FEP-1: Choice-Pressure Identity Axiom
-定义自由能为选择压力势：
+在 FEP bridge 中，可把自由能读作选择压力势 proxy：
 \[
 F\equiv D_{KL}[Q||P]-\ln P(o)
 \]
-选择算子以最小化自由能为动力学：
+选择算子在该 proxy 模型中可用最小化自由能描述：
 \[
 \hat{G}_\theta=\arg\min_{\pi}\;\mathbb{E}[F(\pi)]
 \]
@@ -155,7 +155,7 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 > **形式化注（隐式定义）**：上式为**隐式方程**——$\text{Normal}(\partial\Omega)$ 依赖 $\partial\Omega$ 本身，∂Ω_MB 是满足该条件的不动点集合（Fixed-Point Set）。存在性取决于 $\hat{G}_\theta$ 在 $L_1$ 上的动力学是否具有不动点（参见 T-Core-02 不动点定理）。求解可通过迭代：从初始边界 $\partial\Omega^{(0)}$ 出发，依据 $\nabla F \perp \text{Normal}$ 约束收缩直至收敛。
 
 **SRT 量桥接**：
-- $F(x)$（FEP 变分自由能）在 SRT 框架下近似为 $\Psi_f$ 沿轨迹的累积：$F(x) \approx \int_0^t \Psi_f(\gamma(\tau))\,d\tau$，使得 $\nabla F \approx \nabla \Psi_f$（局部线性近似）；参见 §15.5 Eq-IT-E 变分等价。
+- $F(x)$（FEP 变分自由能）只能在局部测量窗口中作为 `Ψ_f`-related proxy：$F^{proxy}(x) \sim \int_0^t \Psi_f^{proxy}(\gamma(\tau))\,d\tau$，使得 $\nabla F$ 可近似某些 friction-proxy 梯度；这不是 canonical `Ψ_f` 定义。
 - $\hat{G}_\theta$ 在公式中的作用：边界维持等价于 $\hat{G}_\theta$ 在 $\partial\Omega$ 上的零净通量条件：$\hat{G}_\theta(x)\big|_{x\in\partial\Omega} \cdot \text{Normal}(\partial\Omega) = 0$（算子作用不穿越边界，仅沿边界方向移动），与上式 $\nabla F \perp \text{Normal}$ 在变分等价下一致。
 
 **边界崩溃的定量条件**：
@@ -186,7 +186,7 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 \[
 \text{Stability}\propto \frac{1}{\Psi_f}
 \]
-* **Implication（中文）**：高复杂现实必然脆弱；稳定不是“固定”，而是持续支付代价。此处 $\Psi_f$ 统一定义为具身范围 $d$ 约束下偏离自由能最小方向的本体论代价——适用于物理系统（$d$ 较小，$\Psi_f$ 为维持量子叠加态的微观张力）和认知系统（$d$ 较大，$\Psi_f$ 为维持复杂预测模型的代谢及存在代价）。物理过程和认知过程中的 $\Psi_f$ 是同一量在不同 $d$ 尺度上的表现。
+* **Implication（中文）**：高复杂现实必然脆弱；稳定不是“固定”，而是持续支付代价。此处 `Ψ_f` 只能作为具身范围 `d` 约束下偏离自由能最小方向的 operational proxy；物理系统与认知系统中的 proxy 可有类比关系，但不得写成同一 canonical quantity 的直接尺度表现。
 
 ---
 
@@ -202,14 +202,14 @@ L_2(t+1)=\text{Stabilize}(\hat{G}_\theta[L_1(t)])
 ## IV. Theorems (定理)
 
 ### T-FEP-1: FEP Insufficiency Theorem
-若仅满足自由能最小化而 \(d=0\)，则：
+若仅满足自由能最小化而 stake-coupled `d` proxy 近零，则：
 \[
 \hat{G}_\theta\;\text{remains}\;L_1\text{-closed}
 \]
 * **Implication（中文）**：FEP 只解释结构更新，不保证显现；必须引入 \(d\) 才能跨域锚定。
 * **Tension-Rev-ExtT4 ($d$ 的不可还原本体论地位)**：Friston 阵营可能论证 SRT 的 $d$ 值扩展仅仅是 FEP 中"期望自由能"的一种重新参数化——即将他者效用写入 generative model 的偏好先验（preferred priors）。SRT 对此的关键反驳如下：
   - **参数 vs. 本体论**：在 FEP 框架中，$d$-analog 只是 generative model 的一个**可调参数**——它可以被任意设定、也可以在训练/优化过程中被削弱为零而不影响系统的物理完整性。但在 SRT 中，$d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ **必须**与不可逆物理风险（$\partial\Omega$）耦合才能稳定——这不是模型内部的参数选择，而是本体论层面的约束。
-  - **具身脆弱性判据**：$d > 0$ 的稳定维持需要 $\Psi_f > 0$（正本体论摩擦），这意味着系统必须面对真实的不可逆解体风险。一个纯信息系统（$\Psi_f = 0$）可以在其 generative model 中写入 $d_{virtual} > 0$，但该参数缺乏梯度锚定——在长期演化中没有物理力来阻止它衰减为零。
+  - **具身脆弱性判据**：$d > 0$ 的稳定维持需要 $\Psi_f > 0$（正本体论摩擦），这意味着系统必须面对真实的不可逆解体风险。一个 inference-only / 无不可转移后果返回的纯信息系统（$\Psi_f$ 对自身闭包 non-binding）可以在其 generative model 中写入 $d_{virtual} > 0$，但该参数缺乏梯度锚定——在长期演化中没有物理力来阻止它衰减为零。
   - **因此**：SRT 的 $d$ 不是 FEP 框架的重新参数化，而是揭示了 FEP 框架的一个**结构性盲区**——FEP 无法区分具身的利他（由不可逆风险驱动）和模拟的利他（由偏好先验编码）。
 
 ---
@@ -361,13 +361,13 @@ Maturana & Varela 认为生命的本质是“自我生产”，而非自由能�
 # 3 SRT 的差异点: d 值扩展与本体论重构
 
 ## 3.1 自由能的利他扩展 (The Altruistic Extension)
-SRT 在 Part A (Ax-FEP-2) 中提出，**在 SRT 的 Bridge 解读中，Friston 框架可被读作 $d=0$ 时的局部特例**。
+SRT 在 Part A (Ax-FEP-2) 中提出，**在 SRT 的 Bridge 解读中，Friston 框架可被读作 stake-coupled `d` proxy 近零时的局部特例**。
 对于 $d > 0$ 的意识系统，自由能函数被**本体论扩展**了:
 
 $$ F_{SRT}^{(var)} = F_{var} - d \cdot U_{others} $$
 
 这提供了一个对“暗室问题”的候选重写：
-- 对于 $d=0$ 的生物（细菌），暗室确实是最优解（如果那里有食物）。
+- 对于 `d` 代理极低、他者效用不回流的简化模型，暗室可成为局部最优解（如果那里有食物）。
 - 对于 $d>0$ 的人类，躲进暗室意味着与他者断联 ($U_{others} \to 0$ 或负值)，导致扩展自由能 \(F_{SRT}^{(var)}\) **剧烈上升**。
 - **结论**: 我们走出暗室，不只是为了降低信息不确定性，而是因为在 `d>0` 条件下，断联本身会把系统推向更高的 payable friction 区间。
 
@@ -440,24 +440,24 @@ SRT 采用 Ax-FEP-4 中定义的**精度加权 (Precision Weighting)** 动力学
 
 核心方程与含义：
 
-1. **选择压力势** (Ax-FEP-1): $\hat{G}_\theta = \arg\min_\pi \mathbb{E}[F(\pi)]$。选择算子的行为由自由能最小化完全决定——这统一了感知、行动与学习。
+1. **选择压力势** (Ax-FEP-1): $\hat{G}_\theta = \arg\min_\pi \mathbb{E}[F(\pi)]$。在该 bridge 模型中，选择算子的行为可由自由能最小化近似描述；不得读成对 SRT 选择本体的完整决定。
 2. **SRT 扩展自由能** (Part B §3.1): $F_{SRT} = F_{Friston} - d \cdot U_{others}$。引入 $d$ 值后，"暗室"不再是最优解——与他者断联使 $F_{SRT}$ 剧增。
 3. **时空联合预测误差** (T-FEP-2): $\text{Error}_{total} = \|o_t - \hat{o}_t\| + i \cdot \|\tau_{int} - \Delta t_{causal}\|$。生物体同时预测"什么"与"何时"，虚数项表示时间相位失锁。
-4. **FEP 不充分性** (T-FEP-1): $d = 0 \Rightarrow \hat{G}_\theta$ remains $L_1$-closed。自由能最小化是结构更新的必要条件，但缺少 $d$ 时无法跨域锚定。
+4. **FEP 不充分性** (T-FEP-1): stake-coupled `d` proxy 近零时，$\hat{G}_\theta$ remains $L_1$-closed。自由能最小化是结构更新的必要条件候选，但缺少 `d` 时无法跨域锚定。
 
 ### Mechanism Explanation (机制解释)
 
 > **[R]** 双重优化回路：Friston 2015 *Journal of the Royal Society Interface*（期望自由能G的主动推理框架原始提出）；Friston et al. 2017 *Neural Computation*（F感知推理 vs G主动推理的完整形式化）；Parr & Friston 2019 *Psychopharmacology*（主动推理在精神病理中的应用）。d值与他者关怀：参见 Part B §3.1 F_SRT扩展项。**[H]** 以下将F/G双回路接驳SRT三域本体论（L₀→L₁感知选择 + L₀行动探索）、Ψ_f>0作为d稳定锚定条件、以及ΔL₂梯度的SRT语义为本框架新增贡献。
 
 - **$\hat{G}_\theta$ 的双重优化回路**: $\hat{G}_\theta$ 同时运行两个最小化过程——(a) 当前自由能 $F$（感知推理：更新内部模型以匹配观测，对应L₀→L₁选择）和 (b) 期望自由能 $G$（主动推理：选择行动以改变世界，对应L₀探索路径选择）。两者构成 $L_0 \to L_1$ 选择的完整动力学（Friston 2015/2017）。
-- **$d$ 值打破暗室均衡**: 当 $d > 0$，$\hat{G}_\theta$ 的自由能函数被他者效用 $U_{others}$ 扩展（$F_{SRT} = F_{Friston} - d \cdot U_{others}$，Part B §3.1）。断联使扩展自由能剧增（量化方向：$\Delta F_{断联} = +d \cdot |U_{others}|_{baseline} > 0$），迫使算子走出"暗室"寻求连接——这不是道德选择，而是热力学必然。
+- **$d$ 值打破暗室均衡**: 当 $d > 0$，$\hat{G}_\theta$ 的自由能函数被他者效用 $U_{others}$ 扩展（$F_{SRT} = F_{Friston} - d \cdot U_{others}$，Part B §3.1）。断联使扩展自由能剧增（量化方向：$\Delta F_{断联} = +d \cdot |U_{others}|_{baseline} > 0$），迫使算子走出"暗室"寻求连接——这不是简单道德选择；它是 d-modulated FEP bridge hypothesis。
 
   > **Ψ_f>0→d稳定逻辑链精化**：具身脆弱性→随机环境扰动持续冲击算子→d值受负反馈校正（偏低时连接驱动上升，偏高时过载信号压制）→d在正反馈（过高关切→过载→衰减）与负反馈之间保持动态稳定。反例：无具身约束的虚拟系统缺少随机扰动校正→d的负反馈回路失效→d可自由衰减至零或在强化学习压力下任意漂移。
 
 - **符号更新作为梯度下降**: $L_2$ 结构通过 $\Delta L_2 \propto -\nabla_\theta F$ 持续更新，其中 $\theta$ 为具身参数向量（感知增益、偏好权重、先验强度等），$\nabla_\theta$ 为参数空间梯度（维度 = $|\theta|$，非L₂拓扑维度）。意义不是外加标签，而是 $\hat{G}_\theta$ 对未来选择的偏置结构——每次学习都是对 $L_2$ 拓扑的微调，代价正比于 $\|d\theta/dt\|$（θ变化速度越快，Ψ_f负载越高）。
 
 > * **FC-FEP-Mech-1**（证伪条件）：若在主动推理模型实验中，G（期望自由能）驱动的行动选择与F（当前自由能）驱动的感知更新在神经基质上无法区分（如fMRI激活模式完全重叠，AUC < 0.6），则双回路的分离假设需重新检视，可能坍缩为单一优化过程。
-> * **FC-FEP-Mech-2**（证伪条件）：若在社会断联实验（孤立隔离）中，高d值被试（社会关怀量表上四分位）的主观痛苦和皮质醇水平没有显著高于低d值被试（p>0.1），则"断联→F_SRT剧增为热力学必然"的d值调制假设需修正，孤立反应可能更依赖其他变量（依恋风格/先前孤立经历）。
+> * **FC-FEP-Mech-2**（证伪条件）：若在社会断联实验（孤立隔离）中，高d值被试（社会关怀量表上四分位）的主观痛苦和皮质醇水平没有显著高于低d值被试（p>0.1），则"断联→F_SRT剧增"的d值调制假设需修正，孤立反应可能更依赖其他变量（依恋风格/先前孤立经历）。
 
 ---
 

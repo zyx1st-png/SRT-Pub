@@ -4,23 +4,27 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 
 ## Read order
 
-1. [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)  
+1. [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md)
+   Folder-level guardrail for neuroscience, clinical, FEP, NDE, AI-comparison, `Psi_f` proxy, and `d-value` proxy language.
+
+2. [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
    Current canonical-facing / axiomatic hybrid neuroscience bridge. Use this as the main reference for existing formal neuro claims and legacy theorem/hypothesis labels, but do not treat every internal claim as canonical by default.
 
-2. [`SRT_Neuro_Axioms_Claim_Status.md`](SRT_Neuro_Axioms_Claim_Status.md)  
+3. [`SRT_Neuro_Axioms_Claim_Status.md`](SRT_Neuro_Axioms_Claim_Status.md)
    Claim-status audit for `_SRT_Neuro_Axioms.md`. Use this to distinguish bridge axioms, operational proxies, theorem candidates, contextual discourse, and claims needing downgrade/guardrails.
 
-3. [`SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md)  
+4. [`SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md)
    Formal compact core for neural mechanisms. Integrates the 2026-04 N1-N5 / N7-N9 hardening into the main neuroscience mechanism path.
 
-4. [`SRT_Consciousness_Mechanisms_CompactCore.md`](SRT_Consciousness_Mechanisms_CompactCore.md)  
+5. [`SRT_Consciousness_Mechanisms_CompactCore.md`](SRT_Consciousness_Mechanisms_CompactCore.md)
    Formal compact core for consciousness mechanisms. Integrates the N6 hardening: consciousness as stable concern-weighted `L1` anchoring.
 
-5. [`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`](SRT_Neuroscience_Hardening_N1_N9_v0_1.md)  
+6. [`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`](SRT_Neuroscience_Hardening_N1_N9_v0_1.md)
    Bridge / lab working draft that records the full N1-N9 hardening cycle: neural selection, `G_hat_theta`, `Psi_f`, `d-value`, `L1 -> L2` sedimentation, consciousness, psychopathology, experiments, and distinction from mainstream neuroscience frameworks.
 
 ## Status distinction
 
+- `SRT_Neuroscience_Claim_Status.md`: folder-level proxy/clinical guardrail. Read before public, clinical, AI-consciousness, FEP, NDE, or treatment-facing use.
 - `_SRT_Neuro_Axioms.md`: canonical-facing hybrid bridge. Changes here require canonical caution; internal claims must be read through the claim-status audit.
 - `SRT_Neuro_Axioms_Claim_Status.md`: audit / status guardrail. It does not replace the axiom file, but prevents file-level canonical over-reading.
 - `SRT_Neural_Mechanisms_CompactCore.md`: formal mechanism compact core; now contains the current neural-selection hardening summary.

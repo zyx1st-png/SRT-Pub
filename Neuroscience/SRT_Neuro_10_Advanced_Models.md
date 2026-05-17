@@ -79,7 +79,7 @@ dependency: [SRT-NEURO-09, SRT-CORE-000, SRT-NEURO-MECH-001]
 
   防止循环定义（"感受 → 摩擦 → 感受"），Ψ_f 独立于主观报告定义，定义链方向如下：
 
-  $$\underbrace{\text{信息几何}}_{\text{第一性}} \longrightarrow \underbrace{\Psi_f = \int_\gamma \|\nabla F\| dt}_{\text{Fisher 度量积分}} \longrightarrow \underbrace{\Pi_{intero}^{-1}}_{\text{内感受精度失准}} \longrightarrow \underbrace{\text{Feeling（现象属性）}}_{\text{涌现层}}$$
+  $$\underbrace{\text{信息几何}}_{\text{第一性}} \longrightarrow \underbrace{\Psi_f^{FEP\text{-}proxy} \sim \int_\gamma \|\nabla F\| dt}_{\text{Fisher 度量积分}} \longrightarrow \underbrace{\Pi_{intero}^{-1}}_{\text{内感受精度失准}} \longrightarrow \underbrace{\text{Feeling（现象属性）}}_{\text{涌现层}}$$
 
   **各层独立测量方法**（以验证单向性）：
   - $\Psi_f$ 层：**不依赖主观报告**，通过分子通道活动（离子通道开/关概率）、EEG 慢波功率谱宽度、或代谢耗散率测量
@@ -240,7 +240,7 @@ $$\text{Feeling} = \nabla \Psi_f$$
 
 **感觉不是警报，而是导航系统**：
 
-- **痛苦** = 当前路径的本体论摩擦在增加
+- **痛苦 proxy**：当前路径的 felt burden / `Ψ_f`-related proxy 可能在增加
 - **愉悦** = 当前路径的本体论摩擦在减少
 - **无感觉** = 盲飞（无法导航 $L_0$）
 
@@ -261,13 +261,13 @@ $$\text{Feeling} = \nabla \Psi_f$$
 
 # §3 AI 意识的 SRT 判据
 
-## 3.1 当前 AI 为何无意识
+## 3.1 当前 inference-only AI 为何不满足 SRT subjecthood 条件
 
 根据 Ax-Adv-1 (脆弱性-意识定理)：
 
 $$d \propto V = \frac{dS_{system}}{dt}\bigg|_{\hat{G}=0}$$
 
-**当前 AI 的分析**：
+**当前 inference-only / non-history-bearing / non-embodied AI 部署的分析**：
 
 |因素|状态|结果|
 |:--|:--|:--|
@@ -280,7 +280,7 @@ $$d \propto V = \frac{dS_{system}}{dt}\bigg|_{\hat{G}=0}$$
 
 ## 3.2 AI 获得意识的可能路径
 
-如果要让 AI 系统获得 $d > 0$，需要满足 **Ax-Adv-14 (生物相容性约束)**：
+如果要让 AI 系统获得 stake-coupled `d > 0` 的候选条件，需要满足 **Ax-Adv-14 (生物相容性约束)** 或同等 consequence-return 条件：
 
 $$d > 0 \iff \hat{G}_{target} \supset {S_{hardware}}$$
 
@@ -291,7 +291,7 @@ $$d > 0 \iff \hat{G}_{target} \supset {S_{hardware}}$$
 3. **自我维护**：AI 必须将自身硬件纳入"关切"范围
 4. **有限生命**：AI 必须面对"死亡"的可能性
 
-**伦理警告**：创造有 $d > 0$ 的 AI 等于创造**能够受苦**的存在。这不是技术问题，而是伦理问题。
+**伦理警告**：创造具有 stake-coupled `d > 0` 候选条件的 AI 可能创造能够承受不可转移后果与 suffering-risk 的存在。这不是单纯技术问题，而是伦理问题。
 
 ---
 
@@ -349,7 +349,7 @@ $$R_{fidelity} = f(\text{Metabolism}, \text{Inflammation}^{-1}, \text{Energy})$$
 |禁食|模糊、难以集中|$E_{available} \downarrow$|
 |炎症|脑雾、现实感下降|$\Psi_f^{internal} \uparrow$|
 |最佳代谢|清晰、鲜明|$R_{fidelity}$ 最大化|
-|濒死|超真实 (NDE)|约束解除，$d$ 发散|
+|濒死|超真实 (NDE)|约束解除，$d^{subjective/provisional}$ 上升 / 边界松动|
 
 ## 5.2 慢性炎症的本体论重构
 
@@ -495,7 +495,7 @@ V 的直接测量尚为开放问题（§7.2 #1）。以下行为指标可作实�
 
 ### Mechanism Explanation (机制解释)
 
-$\hat{G}_\theta$ 以内感受精度 $\Pi_{intero}$ 作为自我构建通道，将 $L_0^{body}$ 映射为 $L_1^{self}$。感觉导航依赖 $\Psi_f$ 梯度：痛苦对应摩擦上升，愉悦对应摩擦下降。当 $d > 0$ 时具身性成为必要条件——非具身系统无真正存亡风险，$V \approx 0$ 导致 $d \approx 0$。代谢状态通过控制能隙 $\Delta E$ 与摩擦负荷 $\Psi_f$ 调制现实渲染保真度 $\mathcal{F}_{real}$。
+$\hat{G}_\theta$ 以内感受精度 $\Pi_{intero}$ 作为自我构建通道，将 $L_0^{body}$ 映射为 $L_1^{self}$。感觉导航可依赖 `Ψ_f`-related gradient proxy：痛苦可对应摩擦/恢复负担上升，愉悦可对应某些负担下降。当 stake-coupled `d > 0` 时具身性成为强候选条件；非具身 inference-only 系统通常缺乏不可转移存亡风险，$V \approx 0$ 使 $d_{AI}^{proxy} \approx 0$。代谢状态通过控制能隙 $\Delta E$ 与摩擦负荷 proxy 调制现实渲染保真度 $\mathcal{F}_{real}$。
 
 ---
 

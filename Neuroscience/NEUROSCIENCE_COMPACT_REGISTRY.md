@@ -6,7 +6,7 @@ status: active_v2
 layer: meta
 epistemic_layer: os
 claim_mode: canonical_facing_index
-dependency: [SRT-CANONICAL-REGISTRY, SRT-NEURO-AXIOMS-001]
+dependency: [SRT-CANONICAL-REGISTRY, SRT-NEUROSCIENCE-CLAIM-STATUS, SRT-NEURO-AXIOMS-001]
 ---
 
 # SRT Neuroscience Compact Registry
@@ -33,6 +33,7 @@ Neuroscience 现在采用五层结构：
 
 - `README.md` — human-facing directory entry; separates canonical-facing material, compact cores, and hardening drafts.
 - `NEUROSCIENCE_COMPACT_REGISTRY.md` — this compact registry.
+- `SRT_Neuroscience_Claim_Status.md` — folder-level guardrail for clinical, FEP, NDE, AI-comparison, `Psi_f` proxy, and `d-value` proxy language.
 - `SRT_Neuro_Axioms_Claim_Status.md` — claim-status audit for `_SRT_Neuro_Axioms.md`; prevents file-level canonical over-reading.
 
 ### B. Canonical-facing Bridge Layer
@@ -66,10 +67,11 @@ Neuroscience 现在采用五层结构：
 ### 最短主线（第一次进入 Neuroscience）
 
 1. `README.md`
-2. `SRT_Neuro_Axioms_Claim_Status.md`
-3. `SRT_Neural_Mechanisms_CompactCore.md`
-4. `SRT_Consciousness_Mechanisms_CompactCore.md`
-5. `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（if you need the full N1-N9 staging record）
+2. `SRT_Neuroscience_Claim_Status.md`
+3. `SRT_Neuro_Axioms_Claim_Status.md`
+4. `SRT_Neural_Mechanisms_CompactCore.md`
+5. `SRT_Consciousness_Mechanisms_CompactCore.md`
+6. `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（if you need the full N1-N9 staging record）
 
 ### canonical-facing bridge path
 

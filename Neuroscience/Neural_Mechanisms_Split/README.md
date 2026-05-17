@@ -13,8 +13,8 @@ dependency: [SRT-NEURO-MECH-001]
 # SRT Neural Mechanisms Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Neural_Mechanisms.md`](../SRT_Neural_Mechanisms.md)
-- Source owner bytes: `113240`
-- Source owner SHA-256: `3dd00be5fbd1af342ccb3efb3bd633be3c1218ec353a3466ba814512c01704ec`
+- Source owner bytes: `113277`
+- Source owner SHA-256: `facdf9434dec839988485c973a557a0cd3ddcf7e2666068520efe76df2a0285f`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
