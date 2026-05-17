@@ -5,7 +5,7 @@ status: active_draft
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-05-14
+updated: 2026-05-17
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -92,13 +92,15 @@ claim_mode: navigation
 | 12 | 可支付性：为什么路径越走越像路 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v17_final_literary_polish` | 保持可支付性三条件 |
 | 13 | 三判据：可延续、可协调、可再选择 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v9_necessity_hardening` | 强化主体/价值桥 |
 | 13b | 卷二小结：选择如何在地形中发生 | `stable_candidate / draft_v1_part02_bridge` | 作为卷二命题组 / 短桥，后续只随卷三入口微调 |
-| 14 | 后果攸关谁 / 承重位置 | current mainline：`Part_03_从选择到主体与价值/14_承重位置_路径如何产生回流节点.md`，`draft_v1` | 卷三入口主线稿；需按 d-value stake gate 做轻量回链校准 |
-| 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v1`，由旧编号 Ch14 候选稿拆分重组 | 需按 value-as-non-substitutability 做轻量回链校准 |
+| 14 | 后果攸关谁 | current mainline：`Part_03_从选择到主体与价值/14_后果攸关谁.md`，`draft_v3_stable_candidate` | 升级完成：三处精修（标题答案前置、承重→攸关桥段扩展、三判据×两层映射表）；下一步只随卷三一致性微调 |
+| 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v3_stable_candidate` | 升级完成：两处精修（主体经验层入口加厚、d-value三深度直觉扩展）；下一步只随d-value canonical微调 |
 | 16 | 价值不是偏好 | current mainline：`Part_03_从选择到主体与价值/16_价值不是偏好.md`，`stable_candidate` | 只随 d-value canonical 微调 |
 | 17 | d-value：在乎的最小形式化尝试 | current mainline：`Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md`，`stable_candidate` | 保持 D_eff/proxy 防误读护栏 |
-| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v1` | 当前正式主线章节；需防 d 扩张道德化 |
-| 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v4_stable_candidate` | 稳定候选稿；化石命题、沉积机制、层级护栏、利希滕贝格裂缝；下一步只随第20章入口做桥句校准 |
-| 20–22 | 卷三：主体与价值后半 | 未写 | 按卷三大纲推进：自指率、自我意识、d_mobile |
+| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v6_final`（`stable_candidate`） | 补入 d_mobile 预警句（感到≠能动，指向卷三后半）；其余稳定 |
+| 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v4_stable_candidate` | 稳定候选稿；化石命题、沉积机制、层级护栏、利希滕贝格裂缝；只随第20章入口做桥句校准 |
+| 20 | 自指率与主体位入场 | current mainline：`Part_03_从选择到主体与价值/20_自指率与主体位入场.md`，`draft_v3_stable_candidate` | 稳定候选稿；σ_sr、T-IND-2相变、三相结构；v3.1精修已提交 |
+| 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v3_stable_candidate` | 稳定候选稿；二阶折叠、T-IND-3、五条凝结条件；v3.1精修已提交 |
+| 22 | 感到不等于能动 | current mainline：`Part_03_从选择到主体与价值/22_感到不等于能动.md`，`draft_v3_stable_candidate` | 稳定候选稿；d/d_mobile区分、冻结态/漂移态、可整合摩擦窗口、Prop 6卷三终点命题；v3.1精修已提交 |
 | 23–30 | 卷四：秩序的双面性 | 未写 | 后续推进 |
 | 31–35 | 卷五：共同秩序 | 未写 | 后续推进 |
 | 36–45 | 卷六：意识、AI、修行 | 未写 | 后续推进 |
@@ -114,8 +116,9 @@ claim_mode: navigation
 ```text
 卷一 1–6 / 6b 已阶段性闭环
 → 第 7–13 / 13b 已进入稳定主阅读路径
-→ 卷三 14–18 已有主线稿，16–17 为 stable_candidate，14/15/18 为 draft
-→ 下一步：卷三 14–18 canonical 回链校准，并继续推进 19–22
+→ 卷三 14–22 全部已有主线稿，14/15/16/17/18/19/20/21/22 均为 stable_candidate
+→ 卷三逻辑链评估：整体 8.0–8.5/10，Ch19–22 衔接近乎完美，Ch14–15 已升级
+→ 下一步：卷四 23–30 推进；或卷三局部一致性微调
 ```
 
 ### 3.2 卷二重设判断
