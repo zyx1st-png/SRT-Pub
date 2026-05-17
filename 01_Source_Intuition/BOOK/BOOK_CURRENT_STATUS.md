@@ -9,6 +9,7 @@ updated: 2026-05-17
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
+last_pass: part3_consistency_optimization_2026-05-17
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -64,7 +65,7 @@ claim_mode: navigation
 - **当前风格规则**：`90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
 - **第三类改写指南**：`01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md`
 - **当前版本规则**：稳定章节文件仍是最终入口；`Part_*` 主路径只保留当前可读主稿，并以 `maintext_status: stable_candidate` 标记。工具中转产生的过程稿不得长期留在 `Part_*` 主目录，后续由本地 git 环境比较、合并、清理，并把过程稿移入 `Versioned_Drafts/` 或交给 Git 历史承接。具体规则见 `BOOK_VERSION_LOG.md`。
-- **当前主任务**：卷二第 7–13 章已完成整体一致性 weld pass；下一步写卷二命题组 / 短桥，并准备卷三第 14–16 章第三类 pass。
+- **当前主任务**：卷三 Ch14–22 整体一致性 pass 已完成（2026-05-17）；卷三第一回路闭合；下一步进入卷四 L2 双面性，或做卷三出版级压缩。
 - **卷二当前判断**：卷二不再是待优化散稿，而是稳定候选稿；后续只做轻量一致性修订、卷二命题组和卷三入口。
 - **卷一主稿路径**：卷一 1–6 / 6b 已同步最新第三类候选到稳定文件名，过程版本已移入 `Versioned_Drafts/Part_01_从存在到成为/`。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
@@ -96,11 +97,11 @@ claim_mode: navigation
 | 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v3_stable_candidate` | 升级完成：两处精修（主体经验层入口加厚、d-value三深度直觉扩展）；下一步只随d-value canonical微调 |
 | 16 | 价值不是偏好 | current mainline：`Part_03_从选择到主体与价值/16_价值不是偏好.md`，`stable_candidate` | 只随 d-value canonical 微调 |
 | 17 | d-value：在乎的最小形式化尝试 | current mainline：`Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md`，`stable_candidate` | 保持 D_eff/proxy 防误读护栏 |
-| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v6_final`（`stable_candidate`） | 补入 d_mobile 预警句（感到≠能动，指向卷三后半）；其余稳定 |
+| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v6_final`（`stable_candidate`） | 稳定候选稿；d扩张结构诊断、承重变厚条件、d_mobile预警；只随卷三一致性微调 |
 | 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v4_stable_candidate` | 稳定候选稿；化石命题、沉积机制、层级护栏、利希滕贝格裂缝；只随第20章入口做桥句校准 |
-| 20 | 自指率与主体位入场 | current mainline：`Part_03_从选择到主体与价值/20_自指率与主体位入场.md`，`draft_v3_stable_candidate` | 稳定候选稿；σ_sr、T-IND-2相变、三相结构；v3.1精修已提交 |
-| 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v3_stable_candidate` | 稳定候选稿；二阶折叠、T-IND-3、五条凝结条件；v3.1精修已提交 |
-| 22 | 感到不等于能动 | current mainline：`Part_03_从选择到主体与价值/22_感到不等于能动.md`，`draft_v3_stable_candidate` | 稳定候选稿；d/d_mobile区分、冻结态/漂移态、可整合摩擦窗口、Prop 6卷三终点命题；v3.1精修已提交 |
+| 20 | 自指率：主体如何越积越厚 | current mainline：`Part_03_从选择到主体与价值/20_自指率_主体如何越积越厚.md`，`draft_v3_stable_candidate` | 稳定候选稿；σ_sr、主体位连续性机制、健康区间、闭合风险；只随一致性微调 |
+| 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v3_stable_candidate` | 稳定候选稿；二阶折叠、五条凝结条件、凝结物脆弱性、笛卡尔倒置；只随一致性微调 |
+| 22 | 感到不等于能动 | current mainline：`Part_03_从选择到主体与价值/22_感到不等于能动.md`，`draft_v3_stable_candidate` | 稳定候选稿；d/d_mobile区分、冻结态/漂移态、可整合摩擦窗口、卷三第一回路闭合命题；卷三收束完成 |
 | 23–30 | 卷四：秩序的双面性 | 未写 | 后续推进 |
 | 31–35 | 卷五：共同秩序 | 未写 | 后续推进 |
 | 36–45 | 卷六：意识、AI、修行 | 未写 | 后续推进 |
@@ -116,9 +117,9 @@ claim_mode: navigation
 ```text
 卷一 1–6 / 6b 已阶段性闭环
 → 第 7–13 / 13b 已进入稳定主阅读路径
-→ 卷三 14–22 全部已有主线稿，14/15/16/17/18/19/20/21/22 均为 stable_candidate
-→ 卷三逻辑链评估：整体 8.0–8.5/10，Ch19–22 衔接近乎完美，Ch14–15 已升级
-→ 下一步：卷四 23–30 推进；或卷三局部一致性微调
+→ 卷三 14–22 全部已为 stable_candidate；卷三整体一致性 pass 完成（2026-05-17）
+→ 卷三第一回路已闭合：承重位置 → 攸关 → 在乎 → 价值 → d-value → d扩张 → 主体位 → 自指率 → 自我意识 → d_mobile
+→ 下一步：进入卷四 L2 双面性（23–30），或做卷三出版级压缩
 ```
 
 ### 3.2 卷二重设判断
@@ -200,7 +201,7 @@ L2 作为摩擦分配
 3. **卷二主轴明确**：选择如何在已经沉积的摩擦分配中发生。
 4. **第 7–13 章已收束**：它们构成卷二入口、选择算子、排除阴影、不可逆性、本体论摩擦、可支付性和三判据的当前基准链。
 5. **卷二维护方式**：后续只做轻量一致性修订、卷二命题组和卷三入口，不再按待优化散稿处理。
-6. **卷三 14–18 已进入主线稿阶段**：14/15/18 仍为 draft，16/17 为 stable_candidate；下一步是 canonical 回链校准与 19–22 续写。
+6. **卷三 14–22 全部为 stable_candidate**：2026-05-17 整体一致性 pass 完成；卷三第一回路闭合（承重位置→攸关→在乎→价值→d-value→d扩张→主体位→自指率→自我意识→d_mobile）；下一步是卷四 L2 双面性或卷三出版级压缩。
 7. **卷二不反向吸收卷三定义**：主体、价值、d-value 只能作为第 13/13b 的桥，不回写成卷二的定义负担。
 8. **桥接材料只作压力点**：科学、AI、复杂系统材料不承担证明 SRT 的责任。
 9. **后台材料不自动入正文**：只在当前章节确实需要时局部提取。
