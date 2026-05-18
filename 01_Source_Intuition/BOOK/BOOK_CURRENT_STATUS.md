@@ -5,10 +5,11 @@ status: active_draft
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-05-17
+updated: 2026-05-18
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
+last_pass: part3_consistency_optimization_2026-05-17
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -92,8 +93,8 @@ claim_mode: navigation
 | 12 | 可支付性：为什么路径越走越像路 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v17_final_literary_polish` | 保持可支付性三条件 |
 | 13 | 三判据：可延续、可协调、可再选择 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v9_necessity_hardening` | 强化主体/价值桥 |
 | 13b | 卷二小结：选择如何在地形中发生 | `stable_candidate / draft_v1_part02_bridge` | 作为卷二命题组 / 短桥，后续只随卷三入口微调 |
-| 14 | 后果攸关谁 / 承重位置 | current mainline：`Part_03_从选择到主体与价值/14_承重位置_路径如何产生回流节点.md`，`draft_v1` | 卷三入口主线稿；需按 d-value stake gate 做轻量回链校准 |
-| 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v1`，由旧编号 Ch14 候选稿拆分重组 | 需按 value-as-non-substitutability 做轻量回链校准 |
+| 14 | 后果攸关谁 | current mainline：`Part_03_从选择到主体与价值/14_后果攸关谁.md`，`draft_v3_stable_candidate` | 升级完成：三处精修（标题答案前置、承重→攸关桥段扩展、三判据×两层映射表）；下一步只随卷三一致性微调 |
+| 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v3_stable_candidate` | 升级完成：两处精修（主体经验层入口加厚、d-value三深度直觉扩展）；下一步只随d-value canonical微调 |
 | 16 | 价值不是偏好 | current mainline：`Part_03_从选择到主体与价值/16_价值不是偏好.md`，`stable_candidate` | 只随 d-value canonical 微调 |
 | 17 | d-value：在乎的最小形式化尝试 | current mainline：`Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md`，`stable_candidate` | 保持 D_eff/proxy 防误读护栏 |
 | 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v1` | 当前正式主线章节；需防 d 扩张道德化 |
@@ -123,8 +124,9 @@ claim_mode: navigation
 ```text
 卷一 1–6 / 6b 已阶段性闭环
 → 第 7–13 / 13b 已进入稳定主阅读路径
-→ 卷三 14–18 已有主线稿，16–17 为 stable_candidate，14/15/18 为 draft
-→ 下一步：卷三 14–18 canonical 回链校准，并继续推进 19–22
+→ 卷三 14–22 全部已为 stable_candidate；卷三整体一致性 pass 完成（2026-05-17）
+→ 卷三第一回路已闭合：承重位置 → 攸关 → 在乎 → 价值 → d-value → d扩张 → 主体位 → 自指率 → 自我意识 → d_mobile
+→ 下一步：进入卷四 L2 双面性（23–30），或做卷三出版级压缩
 ```
 
 ### 3.2 卷二重设判断
@@ -206,7 +208,7 @@ L2 作为摩擦分配
 3. **卷二主轴明确**：选择如何在已经沉积的摩擦分配中发生。
 4. **第 7–13 章已收束**：它们构成卷二入口、选择算子、排除阴影、不可逆性、本体论摩擦、可支付性和三判据的当前基准链。
 5. **卷二维护方式**：后续只做轻量一致性修订、卷二命题组和卷三入口，不再按待优化散稿处理。
-6. **卷三 14–18 已进入主线稿阶段**：14/15/18 仍为 draft，16/17 为 stable_candidate；下一步是 canonical 回链校准与 19–22 续写。
+6. **卷三 14–22 全部为 stable_candidate**：2026-05-17 整体一致性 pass 完成；卷三第一回路闭合（承重位置→攸关→在乎→价值→d-value→d扩张→主体位→自指率→自我意识→d_mobile）；下一步是卷四 L2 双面性或卷三出版级压缩。
 7. **卷二不反向吸收卷三定义**：主体、价值、d-value 只能作为第 13/13b 的桥，不回写成卷二的定义负担。
 8. **桥接材料只作压力点**：科学、AI、复杂系统材料不承担证明 SRT 的责任。
 9. **后台材料不自动入正文**：只在当前章节确实需要时局部提取。

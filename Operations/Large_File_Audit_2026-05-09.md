@@ -27,7 +27,7 @@ canonical: false
 | urgent | 109.9 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | action | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | action | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
-| action | 88.2 KiB | `SRT_Glossary.md` | Glossary/README.md |
+| action | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | action | 82.1 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
 | action | 82.0 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | action | 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
@@ -47,7 +47,7 @@ canonical: false
 | warning | 56.0 KiB | `Philosophy/SRT_SocTheory_06_L2_Dynamics.md` | Philosophy/L2_Dynamics_Split |
 | warning | 54.0 KiB | `Physics/SRT_Quant_01_Selection.md` | Physics/Selection_Split |
 | warning | 53.7 KiB | `Core/SRT_Core_12a_Ontology_L0L1.md` | Core/Ontology_L0L1_Split |
-| warning | 51.1 KiB | `Core_Law/SRT_Reference_Dynamics.md` | Core_Law/Reference_Dynamics_Split |
+| warning | 52.6 KiB | `Core_Law/SRT_Reference_Dynamics.md` | Core_Law/Reference_Dynamics_Split |
 | warning | 50.8 KiB | `AI/Ontology_Annex/00_General_Boundary_Block.md` | AI/Ontology_Annex/General_Boundary_Block_Split |
 | warning | 50.4 KiB | `Physics/SRT_Quant_02_Cosmology.md` | Physics/Quant_02_Cosmology_Split |
 | warning | 50.3 KiB | `AI/SRT_AI_Architecture.md` | AI/Architecture_Split |
@@ -139,7 +139,7 @@ canonical: false
 | 109.9 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
-| 88.2 KiB | `SRT_Glossary.md` | Glossary/README.md |
+| 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | 82.1 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
 | 82.0 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |

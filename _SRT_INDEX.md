@@ -97,7 +97,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - annex registry → `ANNEX_REGISTRY.md`
 - longform split registry → `LONGFORM_SPLITS.md`
 - agent retrieval profile → `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- glossary → `SRT_Glossary.md`
+- glossary → `SRT_Glossary.md`（mixed historical / retrieval source; subordinate to canonical symbol anchors and domain claim-status files）
 - structural governance glossary → `SRT_Glossary_Structural_Governance_Terms.md`
 - manifest → `_SRT_MANIFEST.yaml`
 
@@ -184,6 +184,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 ### Neuroscience
 
 - `Neuroscience/README.md`（directory entry; separates canonical-facing material from bridge/lab hardening drafts）
+- `Neuroscience/SRT_Neuroscience_Claim_Status.md`（folder-level proxy/clinical guardrail for FEP, NDE, AI-comparison, clinical, `Psi_f`, and `d-value` proxy language）
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（claim-status audit for the neuro axiom bridge; not a replacement for the axiom file）
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
@@ -206,6 +207,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 
 ### Philosophy
 
+- `Philosophy/SRT_Philosophy_Claim_Status.md`（folder-level guardrail for God-view, d-infinity, Psi_f-pain, morality-as-physics, and selection-realism slogans）
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`（read-first philosophy soft-point map; not a canonical definition source）
 - `Philosophy/_SRT_Phil_Axioms.md`
 - `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`
@@ -219,8 +221,9 @@ Important retrieval note: "not final definition authority" is not the same as "l
 
 ### Spirituality
 
-- `Spirituality/_SRT_Spirit_Axioms.md`
 - `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
+- `Spirituality/SRT_Spirituality_Claim_Status.md`（God/Omega, d-infinity, suffering/Psi_f, practice and choice-creates-reality metaphor guardrail）
+- `Spirituality/_SRT_Spirit_Axioms.md`
 - `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md`
 - `Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md`
 - `Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md`
@@ -275,9 +278,10 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `AI/SRT_AI_Claim_Status.md` 是 AI 领域 claim-status 审计与 guardrail；它不替代 `_SRT_AI_Bridge.md` 或 canonical anchors，但用于防止整类 AI claim 被过度读成 P0/P1 定义
 - `AI/*_Split/`、`AI/Ontology_Annex/*_Split/`、`Core/*_Split/`、`Core_Law/*_Split/`、`Philosophy/*_Split/`、`Neuroscience/*_Split/`、`Physics/*_Split/`、`STATUS_Split/` 是 longform reading aids，不新增权威层；总表见 `LONGFORM_SPLITS.md`
 - `AI/Ontology_Annex/` 与未来可能的 `AI_Annex/` 是 interface / comparison 层，默认 `canonical: false`
+- `Neuroscience/SRT_Neuroscience_Claim_Status.md` 是 Neuroscience 文件夹级 proxy/clinical guardrail；它不替代 canonical anchors，但必须在 public / clinical / FEP / NDE / AI-comparison 使用前读取
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md` 是 neuroscience bridge/lab hardening 草稿；它不替代 `_SRT_Neuro_Axioms.md`，也不提升 canonical 权限
-- Spirituality 板块现采用”旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板
+- Spirituality 板块现采用”旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板；涉及 God / Ω / d-infinity / suffering / Ψ_f / practice 的语言先读 `Spirituality/SRT_Spirituality_Claim_Status.md`
 - `ANNEX_REGISTRY.md` 是各 annex 批次的注册总表，不定义 canonical 术语，不提升 annex 内容权限
 - `SRT_Glossary_Structural_Governance_Terms.md` 是治理/结构操作层术语补充词汇表；`canonical: false`，不替代 `SRT_Glossary.md` 主体
 - `Operations/Closure_Index_2026-04-29.md` 是 2026-04-29 各 annex / Physics / AI 批次的 closure 汇总索引；`canonical: false`，仅运行层留痕
@@ -285,7 +289,8 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `AI/Architecture_Annex/README.md` 是 AI 架构接口/对比 annex 的批次索引；`canonical: false`，claim status 受 `AI/SRT_AI_Claim_Status.md` 和 `AI/AI_POSITIONING_NOTE.md` 管控
 - `AI/Consciousness_Annex/README.md` 是 AI 意识接口/对比 annex 的批次索引；`canonical: false`，claim status 受 `AI/SRT_AI_Claim_Status.md` 和 `AI/AI_POSITIONING_NOTE.md` 管控
 - `Physics/README.md` 是 Physics 目录入口，分离 canonical-facing 材料、bridge、compact summaries、claim-status audit 和 annex 层，不定义 P0/P1 物理命题
-- `Physics/SRT_Physics_Claim_Status.md` 是 Physics 领域 claim-status 审计与 guardrail；防止量子、宇宙学和 bridge 命题被过度读成 P0/P1
+- `Physics/SRT_Physics_Claim_Status.md` 是 Physics 领域 claim-status 审计与 guardrail；防止量子、宇宙学、Fisher/Landauer/D_eff 和 bridge 命题被过度读成 P0/P1
 - `Physics/QBox_Annex/README.md` 是 QBox / hyperdecoherence 接口 annex 的批次索引；`canonical: false`，claim_mode: translation
 - `Physics/Earth_Accretion_Annex/README.md` 是地球吸积 / reservoir-selection 接口 annex 的批次索引；`canonical: false`，claim_mode: translation
 - `Manifesto/SRT_MANIFESTO.md` 是公开宣言（worldview-level front-edge）；`claim_mode: manifesto`，非 canonical 主源；遵循 `Governance/SRT_CLAIM_LADDER.md §2A`；human-first，不进 AI session bootstrap
+- `video/SRT_Video_Claim_Status.md` 是 public/cinematic script guardrail；视频脚本、演讲稿、字幕与公共压缩表达不定义 canonical terms

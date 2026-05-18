@@ -98,7 +98,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 ### 7. Ψ_f 跨尺度展开
 - 辅助文件：`Core_Law/SRT_Reference_Dynamics.md`、`_SRT_VERTICAL_INTEGRATION.md`
 - 角色：把 canonical `Ψ_f` 映射到选择热力学、多算子耦合、跨尺度可支付性与实验代理
-- 注意：展开层负责方程与场景化，不替代 `_SRT_PSI_F_CANONICAL.md` 的规范地位
+- 注意：展开层负责方程与场景化，不替代 `_SRT_PSI_F_CANONICAL.md` 的规范地位；Fisher / Landauer / FEP / KL / Boltzmann / energy language in this layer is proxy / projection only
 
 ### 8. Core Dynamics & Scaling 主轴
 - compact core：`Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
@@ -107,6 +107,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 注意：原文继续保留长篇机制解释、接口批次与 annex 沉积
 
 ### 9. Philosophy 主轴
+- Claim-status：`Philosophy/SRT_Philosophy_Claim_Status.md`（folder-level metaphor/proxy guardrail; not a primitive source）
 - Foundations：`Philosophy/SRT_Philosophy_Foundations_CompactCore.md` / `Philosophy/SRT_Philosophy_Foundations.md`
 - Social Cognition：`Philosophy/SRT_Social_Cognition.md`
 - Social Economics：`Philosophy/SRT_Social_Economics_CompactCore.md` / `Philosophy/SRT_Social_Economics.md`
@@ -141,6 +142,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 引用规则：涉及 social cognition、belief update、developmental coordination、co-regulation、dehumanization、recognition-channel break、bystander silence、或 ZBS / active-inference bridge 时，可引用本文件；但 ZBS 与 developmental coordination 都只能作为 bridge proxy，不得替代 `d`、`\Psi_f`、`T_dir`、`\theta` 或 recognition operator 的 canonical 定义
 
 ### 10. AI 主轴
+- Claim-status：`AI/SRT_AI_Claim_Status.md`（architecture-state / AI suffering / subjecthood guardrail; not a primitive source）
 - 定位说明：`AI/AI_POSITIONING_NOTE.md`
 - Ontology：`AI/SRT_AI_01_Ontology_CompactCore.md` / `AI/SRT_AI_01_Ontology.md`
 - Architecture：`AI/SRT_AI_Architecture_CompactCore.md` / `AI/SRT_AI_Architecture.md`
@@ -150,6 +152,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 第二轮护栏：AI 判断必须区分 training-time、inference-time、persistent-memory / history-bearing deployment，并使用 `AI/AI_POSITIONING_NOTE.md` 的 S0-S4 stake-bearing 光谱；不得把 inference-only 的 `d_{AI}\approx0` 静默推广为全部 AI 类型的终局判决
 
 ### 11. Neuroscience 主轴
+- Claim-status：`Neuroscience/SRT_Neuroscience_Claim_Status.md`（clinical / FEP / NDE / AI-comparison proxy guardrail; not a primitive source）
 - Neuro registry：`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`
 - Hardening / material patch index：`Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
 - Neuro Axioms / Bridge：`Neuroscience/_SRT_Neuro_Axioms.md`
@@ -159,6 +162,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 注意：Neuroscience 已具备 bridge + compact core + registry 的入口骨架；Pipeline 1 patch / hook 只作为 bridge record 读取，不因被索引而升级为 canonical definition
 
 ### 12. Physics 主轴
+- Claim-status：`Physics/SRT_Physics_Claim_Status.md`（Fisher / Landauer / D_eff / quantum / cosmology guardrail; not a primitive source）
 - Quant Intro：`Physics/SRT_Quant_00_Intro_CompactCore.md` / `Physics/SRT_Quant_00_Intro.md`
 - Quant Selection：`Physics/SRT_Quant_01_Selection_CompactCore.md` / `Physics/SRT_Quant_01_Selection.md`
 - Quant Cosmology：`Physics/SRT_Quant_02_Cosmology_CompactCore.md` / `Physics/SRT_Quant_02_Cosmology.md`
@@ -243,6 +247,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 引用规则：涉及学习不可逆性、终止作为吸收边界、P1-T07 精确化、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；原 P1 源头语句仍回链 `Core/SRT_Core_21b_Constitutive_Theorems.md`
 
 ### 13. Spirituality 主轴
+- Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（God/Omega, d-infinity, suffering/Psi_f, practice metaphor guardrail; not a primitive source）
 - Spirit registry：`Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`
 - Spirit Bridge：`Spirituality/_SRT_Spirit_Axioms.md`
 - Praxis：`Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` / `Spirituality/SRT_Spirit_09_Praxis.md`
@@ -257,10 +262,11 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 2. `Governance/SRT_CLAIM_LADDER.md` / `Governance/SRT_CLAIM_MODE_AUDIT.md`（判断命题硬度与降级状态）
 3. `_SRT_D_VALUE_CANONICAL.md` / `_SRT_PSI_F_CANONICAL.md` / `_SRT_T_DIR_CANONICAL.md` / `_SRT_CROSS_DOMAIN_MATRIX.md` / `Core/SRT_Core_21_Formal_Axioms.md` / `Core/SRT_Core_22_Equations.md`（找规范定义与跨域用法）
 4. `Core/SRT_Core_21_Minimal_Axioms.md` / `Core/SRT_Core_21b_Constitutive_Theorems.md` / `Core/SRT_Core_21c_Bridge_Hypotheses.md`（按 P-level 找 Core_21 正文）
-5. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释）
-6. `Core/SRT_OPEN_TENSIONS.md`（确认未封口问题）
-7. 各 split 目录（找导航与局部阅读）
-8. 原始长文（找历史展开与全量语境）
+5. domain claim-status files（防止 bridge / public / clinical / spirituality / AI / physics overclaim）
+6. `Core/SRT_Core_14_Dynamics_Scaling.md` / `Core_Law/SRT_Reference_Dynamics.md` / `AI/SRT_AI_01_Ontology.md`（找展开与跨域解释；not final definitions）
+7. `Core/SRT_OPEN_TENSIONS.md`（确认未封口问题）
+8. 各 split 目录（找导航与局部阅读）
+9. 原始长文（找历史展开与全量语境）
 
 ## D. 当前收口结论
 
