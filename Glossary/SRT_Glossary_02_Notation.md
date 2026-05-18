@@ -5,7 +5,7 @@ tags: [Glossary, Terminology, Registry]
 status: axiomatic_hybrid_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
 dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 ---
 

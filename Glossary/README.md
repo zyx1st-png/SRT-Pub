@@ -5,7 +5,7 @@ tags: [Glossary, Navigation, Split]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
 dependency: [SRT-GLOSSARY]
 ---
 
@@ -14,8 +14,8 @@ dependency: [SRT-GLOSSARY]
 为避免单一术语表过长，这里提供按功能拆分的导航版本。
 
 - 总表（保留原文，不删内容）：[`../SRT_Glossary.md`](../SRT_Glossary.md)
-- Source owner bytes: `90310`
-- Source owner SHA-256: `a203843c9d6f8be30fb8b03a669ce20b270ea63cf628f2c8970d3bd2839c11a3`
+- Source owner bytes: `90867`
+- Source owner SHA-256: `2f0829ea3d5aa42c41c12d6167d7338c6519af2791f564b5e878f437d88ca61b`
 - 00 治理与前导：[`SRT_Glossary_00_Governance_and_Prelude.md`](SRT_Glossary_00_Governance_and_Prelude.md)
 - 01 核心符号：[`SRT_Glossary_01_Core_Symbols.md`](SRT_Glossary_01_Core_Symbols.md)
 - 02 数学记号：[`SRT_Glossary_02_Notation.md`](SRT_Glossary_02_Notation.md)
@@ -24,4 +24,4 @@ dependency: [SRT-GLOSSARY]
 - 05 假设索引：[`SRT_Glossary_05_Hypothesis_Index.md`](SRT_Glossary_05_Hypothesis_Index.md)
 - 06 位置索引与新增术语：[`SRT_Glossary_06_Locations_and_Usage.md`](SRT_Glossary_06_Locations_and_Usage.md)
 
-说明：拆分版用于导航与检索；`SRT_Glossary.md` 继续保留为历史完整总表。
+说明：拆分版用于导航与检索；`SRT_Glossary.md` 继续保留为历史完整总表。术语定义若涉及 `d-value`、`Ψ_f`、suffering / pain、Fisher、Landauer、AI consciousness、spirituality 或 public metaphor，必须回读相应 canonical anchor / claim-status guardrail；split shard 不创建新定义。

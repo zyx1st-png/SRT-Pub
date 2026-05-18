@@ -5,14 +5,15 @@ tags: [Glossary, Terminology, Registry]
 status: axiomatic_hybrid_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-REF-AXIOMS, SRT-AI-01]
+claim_mode: mixed
+dependency: [SRT-REF-AXIOMS, SRT-AI-01, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-SUFFERING]
 ---
 
 # SRT术语表与符号索引
 # SRT Glossary & Symbol Index
 
-> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Glossary/README.md`](Glossary/README.md), then open only the needed glossary shard. The owner remains the source of record; split files are reading aids and do not create new definitions.
+> **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Glossary/README.md`](Glossary/README.md), then open only the needed glossary shard. The owner is a historical glossary / retrieval source of record; split files are reading aids and do not create new definitions.
+> **Canonical guardrail（2026-05）**: For `d-value`, `Ψ_f`, suffering / pain, Fisher, Landauer, FEP, AI consciousness, spirituality and public metaphors, this glossary is subordinate to `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `Core_Law/SRT_Suffering.md`, and domain claim-status files. Formula-like glossary entries are retrieval handles unless explicitly marked canonical by those anchors.
 
 ---
 
@@ -28,7 +29,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 
 - **符号/术语**：标准表示
 - **中英文名称**：双语对照
-- **定义**：严格数学/哲学定义
+- **定义**：严格数学/哲学定义，或 historical / proxy / bridge definition when explicitly marked
 - **首次出现**：在哪个文档引入
 - **相关概念**：交叉引用
 - **难度等级**：🟢基础 | 🟡中级 | 🔴高级

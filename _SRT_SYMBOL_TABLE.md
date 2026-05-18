@@ -9,6 +9,9 @@ claim_mode: canonical
 dependency:
   - SRT-REF-AXIOMS
   - SRT-REF-DYNAMICS
+  - SRT-D-VALUE-CANONICAL
+  - SRT-PSIF-CANONICAL
+  - SRT-SUFFERING
   - SRT-GLOSSARY-STRUCTURAL-GOVERNANCE-TERMS
   - SRT-ANNEX-REGISTRY
   - SRT-OPS-CLOSURE-INDEX-2026-04-29
@@ -19,6 +22,7 @@ dependency:
 > **Purpose**: Canonical symbol registry for cross-domain writing and AI parsing.
 >
 > **Governance boundary**: Terms such as `interface_annex`, `copy-to-annex`, `owner-bound`, `claim_mode`, and `canonical:false` are structural governance vocabulary (see `SRT_Glossary_Structural_Governance_Terms.md`); they are not canonical mathematical symbols and do not appear in this table's symbol rows. Non-canonical annexes and Operations records may reference symbols defined here but must not redefine them.
+> **Proxy boundary**: This table records canonical symbol usage plus governed projections. It does not license domain formulas to redefine `d`, `Ψ_f`, suffering/pain, Fisher, Landauer, or AI consciousness; use `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `Core_Law/SRT_Suffering.md`, and the relevant claim-status file when a row points to a proxy.
 
 | Symbol | LaTeX | Name | Atomic Definition | Dimensions/Units | Scope / Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -163,3 +167,4 @@ dependency:
 - **规则 F4**：AI / 纯 `L_2` 语境中，优先写“non-binding friction”而非绝对 `\Psi_f = 0`。
 - **规则 F5**：物理语境中，若谈引力与 `\Psi_f` 的关系，当前规范口径降为 P3/P4 弱接口：只承诺弱场极限下 `\Psi_f` 梯度与牛顿势梯度方向同号的相容性候选；不得写成张量级 GR 重建或 `G_{\mu\nu}` 已由 SRT 推导。
 - **规则 F6**：谈 Fisher metric 时，必须把 `g_F` 标注为局部信息几何投影 / proxy；不得把 `\Psi_f \equiv g_F` 当成标量代价与度量张量的严格恒等式。
+- **规则 F7**：谈 pain / suffering / distress / moral guilt / clinical burden 时，不得把它们写成 `Ψ_f` 或 `d` 的 canonical 等同；优先回链 `Core_Law/SRT_Suffering.md` 与 domain claim-status guardrails。
