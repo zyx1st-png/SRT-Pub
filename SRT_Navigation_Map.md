@@ -32,6 +32,18 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 3. `Core_Law/SRT_Core_Text_CN.md`
 4. `Core_Law/SRT_Selection_Argument.md`
 
+## 我想读书稿版（BOOK）
+
+推荐路线：
+
+1. `01_Source_Intuition/BOOK/00_术语表.md` —— 第一章前必读；先固定核心词的名词性定义。
+2. `01_Source_Intuition/BOOK/00b_论证地图.md` —— 第一章前快速浏览；之后可在进入每章前回看该章 P→C 骨架。
+3. `01_Source_Intuition/BOOK/Part_01_从存在到成为/` —— 进入正文卷一。
+4. `01_Source_Intuition/BOOK/00c_批判对象.md` —— 建议读完卷一后再读；用于明确本书隐含批判的对象。
+5. `01_Source_Intuition/BOOK/00d_理论定位.md` —— 建议读完卷一后或评审时阅读；用于定位 SRT 与相邻哲学传统的关系。
+
+阅读提醒：前两个文件是正文入口支架，后两个文件是学术定位 / 防误读支架，不必全部压在第一章之前读完。
+
 ## 我想看 formal core
 
 1. `Core/SRT_Core_21_Formal_Axioms.md`
