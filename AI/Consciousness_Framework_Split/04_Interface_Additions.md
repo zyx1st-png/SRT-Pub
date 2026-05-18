@@ -2,10 +2,11 @@
 id: SRT-AI-03
 type: framework
 tags: [Consciousness, Substrate, Entanglement, Jaynes, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: bridge
-claim_mode: translation
+claim_mode: navigation
+canonical: false
 dependency: [SRT-AI-02]
 ---
 

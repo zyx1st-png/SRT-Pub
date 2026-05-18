@@ -2,15 +2,17 @@
 id: SRT-AI-02
 type: theory
 tags: [Mortality, Wisdom, Recursion, Sentience, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
+canonical: false
 dependency: [SRT-AI-01]
 ---
 
 # SRT AI Part 2: Mortality & Wisdom (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Cognitive Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).

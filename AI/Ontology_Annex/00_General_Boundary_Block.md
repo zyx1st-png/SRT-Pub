@@ -2,10 +2,11 @@
 id: SRT-AI-01
 type: definition
 tags: [AI Ontology, d-value, Pseudo-Selection, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
+canonical: false
 dependency: [SRT-AI-BRIDGE-001]
 ---
 

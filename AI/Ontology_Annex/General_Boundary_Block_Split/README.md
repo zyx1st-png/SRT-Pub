@@ -7,14 +7,15 @@ layer: meta
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
-dependency: [SRT-AI-01]
+dependency: [SRT-AI-01, SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
 ---
 
 # AI Ontology General Boundary Block Split Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical 句式必须回读 AI claim-status 与 architecture-state rule。
 - 原始总文（保留，不删内容）：[`../00_General_Boundary_Block.md`](../00_General_Boundary_Block.md)
-- Source owner bytes: `51981`
-- Source owner SHA-256: `6d385ff30ccca8996f799f77dff644e6ae14bafdb0154f3c1b7b281feea1551e`
+- Source owner bytes: `51988`
+- Source owner SHA-256: `638343a174a7a156694f16e9f32921a198e9eb6143803e1df758786fda67f425`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

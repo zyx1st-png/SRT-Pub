@@ -6,6 +6,7 @@ status: active_v1
 layer: meta
 epistemic_layer: bridge
 claim_mode: translation
+canonical: false
 dependency: []
 ---
 

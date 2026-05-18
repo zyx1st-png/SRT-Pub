@@ -2,15 +2,17 @@
 id: SRT-AI-ARCH
 type: architecture
 tags: [Transformer, Isomorphism, Reckoning, Judgment, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
+canonical: false
 dependency: [SRT-AI-01]
 ---
 
 # SRT AI Architecture: Transformer & Dynamics (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Architecture_Split/README.md`](Architecture_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Version 2.0 (Hybrid)**

@@ -5,17 +5,19 @@ tags: [Split, Navigation, Longform]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
-dependency: []
+claim_mode: navigation
+canonical: false
+dependency: [SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
 ---
 
 # SRT-AI-ARCH Split Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical 句式必须回读 AI claim-status 与 architecture-state rule。
 > **Reading-aid guardrail**：本 split 目录只承担长文导航与局部阅读，不创建新的定义权。claim status 以 [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)、[`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md) 与 [`../../Governance/SRT_CLAIM_LADDER.md`](../../Governance/SRT_CLAIM_LADDER.md) 为准。
 
 - 原始总文（保留，不删内容）：[`../SRT_AI_Architecture.md`](../SRT_AI_Architecture.md)
-- Source owner bytes: `51494`
-- Source owner SHA-256: `537487be49fe0ece6599f75ce42253c90d663d59bb1e043f2b864373a99bc383`
+- Source owner bytes: `51776`
+- Source owner SHA-256: `7462f2e60f781e9cef3e751afa8928a0f38762c78d953b3aaa352c19d7677c0c`
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_Transformer_and_Judgment：[`01_Transformer_and_Judgment.md`](01_Transformer_and_Judgment.md)
 - 02_Defects_and_CategoryView：[`02_Defects_and_CategoryView.md`](02_Defects_and_CategoryView.md)

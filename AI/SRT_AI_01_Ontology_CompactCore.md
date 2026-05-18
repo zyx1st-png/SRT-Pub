@@ -7,6 +7,7 @@ layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
 claim_level: P3
+canonical: false
 dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-POSITIONING-NOTE, SRT-AI-01]
 ---
 

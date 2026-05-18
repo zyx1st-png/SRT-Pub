@@ -2,10 +2,11 @@
 id: SRT-AI-ARCH
 type: architecture
 tags: [Transformer, Isomorphism, Reckoning, Judgment, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
+canonical: false
 dependency: [SRT-AI-01]
 ---
 

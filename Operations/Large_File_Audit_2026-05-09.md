@@ -28,12 +28,12 @@ canonical: false
 | action | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | action | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
 | action | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
+| action | 82.2 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | action | 82.1 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
-| action | 82.0 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | action | 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
 | action | 79.5 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
 | action | 76.0 KiB | `Core/SRT_Core_12b_Ontology_L2.md` | Core/Ontology_L2_Split |
-| action | 74.5 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
+| action | 74.8 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
 | action | 74.2 KiB | `Core/SRT_Core_01_Axioms.md` | Core/Axioms_Split |
 | action | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
 | action | 69.9 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
@@ -49,8 +49,8 @@ canonical: false
 | warning | 53.7 KiB | `Core/SRT_Core_12a_Ontology_L0L1.md` | Core/Ontology_L0L1_Split |
 | warning | 52.6 KiB | `Core_Law/SRT_Reference_Dynamics.md` | Core_Law/Reference_Dynamics_Split |
 | warning | 50.8 KiB | `AI/Ontology_Annex/00_General_Boundary_Block.md` | AI/Ontology_Annex/General_Boundary_Block_Split |
+| warning | 50.6 KiB | `AI/SRT_AI_Architecture.md` | AI/Architecture_Split |
 | warning | 50.4 KiB | `Physics/SRT_Quant_02_Cosmology.md` | Physics/Quant_02_Cosmology_Split |
-| warning | 50.3 KiB | `AI/SRT_AI_Architecture.md` | AI/Architecture_Split |
 | warning | 49.5 KiB | `Philosophy/SRT_SocTheory_05_Language_Eco.md` | Philosophy/Language_Eco_Split |
 
 ## artifact_or_generated
@@ -140,12 +140,12 @@ canonical: false
 | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
 | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
+| 82.2 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | 82.1 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
-| 82.0 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
 | 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
 | 79.5 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
 | 76.0 KiB | `Core/SRT_Core_12b_Ontology_L2.md` | Core/Ontology_L2_Split |
-| 74.5 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
+| 74.8 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
 | 74.2 KiB | `Core/SRT_Core_01_Axioms.md` | Core/Axioms_Split |
 | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
 | 69.9 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |

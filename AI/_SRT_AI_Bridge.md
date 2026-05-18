@@ -3,14 +3,16 @@ id: SRT-AI-BRIDGE-001
 type: theory
 tags: [AI, Bridge, Ontology, Alignment, Hybrid]
 layer: L1
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 epistemic_layer: bridge
 claim_mode: translation
+canonical: false
 dependency: [SRT-L0-METAPHYSICS, SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology]
 ---
 
 # SRT AI Bridge & Axioms
 
+> **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 

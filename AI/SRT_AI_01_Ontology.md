@@ -2,16 +2,18 @@
 id: SRT-AI-01
 type: theory
 tags: [AI Ontology, d-value, Pseudo-Selection, Hybrid, Boundary Test]
-status: axiomatic_hybrid_v1
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
 claim_level: P3
+canonical: false
 dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-CORE-21]
 ---
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Ontology_Split/README.md`](Ontology_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Role note**: This file is an AI-domain ontology expansion and boundary-test document. It is not a primitive SRT definition source and does not replace `Core/SRT_Core_21_Minimal_Axioms.md`, `Core/SRT_Core_21b_Constitutive_Theorems.md`, `_SRT_D_VALUE_CANONICAL.md`, or `_SRT_PSI_F_CANONICAL.md`.

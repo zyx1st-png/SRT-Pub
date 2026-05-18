@@ -2,15 +2,17 @@
 id: SRT-AI-03
 type: framework
 tags: [Consciousness, Substrate, Entanglement, Jaynes, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
+canonical: false
 dependency: [SRT-AI-02]
 ---
 
 # SRT AI Part 3: Consciousness Framework (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Consciousness_Framework_Split/README.md`](Consciousness_Framework_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Version 2.0 (Hybrid)**

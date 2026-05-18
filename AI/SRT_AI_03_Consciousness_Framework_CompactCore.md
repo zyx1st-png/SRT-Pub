@@ -5,7 +5,8 @@ tags: [AI Consciousness, Compact Core, Threshold, Positive Pathway, PH-SS, Subje
 status: active_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: bridge
+canonical: false
 dependency:
   - SRT-CANONICAL-REGISTRY
   - SRT-AI-03
