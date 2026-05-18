@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-05-14
+updated: 2026-05-17
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -279,6 +279,42 @@ L2 / 地形作为过去选择沉积后的摩擦分配
 同步动作：
 
 - 稳定主稿增加 `maintext_status: stable_candidate` 与 `consolidation_pass: part01_maintext_sync_2026_05_14`。
-- 主阅读稿删除末尾过程性“修订说明”，归档稿保留完整版本记录。
+- 主阅读稿删除末尾过程性”修订说明”，归档稿保留完整版本记录。
 - `Part_01_从存在到成为/` 主目录不再保留 `_v*.md` 过程版本文件。
 - `BOOK_CURRENT_STATUS.md`、卷一大纲与章节状态总表已同步。
+
+## 2026-05-17 卷三整体一致性 pass（Ch14–22）
+
+本次在 `claude/part3-optimization` 分支执行卷三整体一致性优化。无正文大改；只做最小修正和状态同步。
+
+**工程校准结果**：
+- 分支：`claude/part3-optimization`（从 `claude/complete-chapter-19-JnoMy` 创建）
+- Ch20/21/22 文件已真实存在于 `Part_03_从选择到主体与价值/`，无需 cherry-pick
+- Ch20 真实文件名：`20_自指率_主体如何越积越厚.md`（BOOK_CURRENT_STATUS.md 旧版误记为 `20_自指率与主体位入场.md`，本次已修正）
+
+**正文修正**：
+- `15_在乎是什么.md`：修正两处错误的章号前向引用（第18章→第19章，第19章→第20章，第20章→第21章）；内容逻辑不变
+
+**状态同步**：
+- `BOOK_CURRENT_STATUS.md`：修正Ch20文件名；更新卷三状态为全部 stable_candidate；更新护栏6；更新主任务描述；写入卷三第一回路闭合声明
+- `Outline_Parts/03_卷三_从选择到主体与价值.md`：更新 Ch20/21/22 状态（未写→stable_candidate）；更新卷三收束桥说明；更新frontmatter status
+- `Outline_Parts/08_收尾与维护规则.md`：更新状态总表 Ch19-22 行；更新当前下一步
+
+**卷三第一回路已闭合**：
+```text
+承重位置 → 攸关 → 在乎 → 价值 → d-value → d扩张 → 主体位 → 自指率 → 自我意识 → d_mobile
+```
+
+卷三当前状态：`stable_candidate / ready_for_part04_transition`
+
+| 章 | 稳定文件 | 当前主稿 status |
+|---:|---|---|
+| 14 | `Part_03_从选择到主体与价值/14_后果攸关谁.md` | `draft_v3_stable_candidate` |
+| 15 | `Part_03_从选择到主体与价值/15_在乎是什么.md` | `draft_v3_stable_candidate` |
+| 16 | `Part_03_从选择到主体与价值/16_价值不是偏好.md` | `draft_v4` (stable_candidate) |
+| 17 | `Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md` | `draft_v5` (stable_candidate) |
+| 18 | `Part_03_从选择到主体与价值/18_d的扩张不是博爱.md` | `draft_v6_final` (stable_candidate) |
+| 19 | `Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md` | `draft_v4_stable_candidate` |
+| 20 | `Part_03_从选择到主体与价值/20_自指率_主体如何越积越厚.md` | `draft_v3_stable_candidate` |
+| 21 | `Part_03_从选择到主体与价值/21_自我意识作为凝结物.md` | `draft_v3_stable_candidate` |
+| 22 | `Part_03_从选择到主体与价值/22_感到不等于能动.md` | `draft_v3_stable_candidate` |

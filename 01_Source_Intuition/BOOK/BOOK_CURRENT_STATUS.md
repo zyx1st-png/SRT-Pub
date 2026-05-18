@@ -9,6 +9,7 @@ updated: 2026-05-18
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
+last_pass: part3_consistency_optimization_2026-05-17
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -92,15 +93,15 @@ claim_mode: navigation
 | 12 | 可支付性：为什么路径越走越像路 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v17_final_literary_polish` | 保持可支付性三条件 |
 | 13 | 三判据：可延续、可协调、可再选择 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v9_necessity_hardening` | 强化主体/价值桥 |
 | 13b | 卷二小结：选择如何在地形中发生 | `stable_candidate / draft_v1_part02_bridge` | 作为卷二命题组 / 短桥，后续只随卷三入口微调 |
-| 14 | 后果攸关谁 / 承重位置 | current mainline：`Part_03_从选择到主体与价值/14_承重位置_路径如何产生回流节点.md`，`draft_v1` | 卷三入口主线稿；需按 d-value stake gate 做轻量回链校准 |
-| 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v1`，由旧编号 Ch14 候选稿拆分重组 | 需按 value-as-non-substitutability 做轻量回链校准 |
+| 14 | 后果攸关谁 | current mainline：`Part_03_从选择到主体与价值/14_后果攸关谁.md`，`draft_v3_stable_candidate` | 升级完成：三处精修（标题答案前置、承重→攸关桥段扩展、三判据×两层映射表）；下一步只随卷三一致性微调 |
+| 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v3_stable_candidate` | 升级完成：两处精修（主体经验层入口加厚、d-value三深度直觉扩展）；下一步只随d-value canonical微调 |
 | 16 | 价值不是偏好 | current mainline：`Part_03_从选择到主体与价值/16_价值不是偏好.md`，`stable_candidate` | 只随 d-value canonical 微调 |
 | 17 | d-value：在乎的最小形式化尝试 | current mainline：`Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md`，`stable_candidate` | 保持 D_eff/proxy 防误读护栏 |
-| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v1` | 当前正式主线章节；需防 d 扩张道德化 |
-| 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v4_stable_candidate` | 稳定候选稿；化石命题、沉积机制、层级护栏、利希滕贝格裂缝；下一步只随第20章入口做桥句校准 |
-| 20 | 自指率：主体如何越积越厚 | current mainline：`Part_03_从选择到主体与价值/20_自指率_主体如何越积越厚.md`，`draft_v3_stable_candidate` | σ_sr 书稿层引入；五通道写回、"否定后果"段、旧图景三失效具体锚点、主动推断最强反对者回应、缘起扩展、Prop2精准分拆；稳定候选稿；下一步只随第21章入口做桥句校准 |
-| 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v3_stable_candidate` | §1增加必要性段落（主体位/自我意识"褶子"金句）、§3主体位硬区分金句、§4五条件改为有机逻辑链（历史底层→材料→形式→社会锚→激活），末尾矛盾修复、§5补全跨时间承担统一论证（结构连续性vs规范归属，"历史变成'我的历史'"金句）、§7灵性段金句（枷锁以'我'的名义运作）、§8增加HOT理论（Rosenthal）作为最强分析传统反对者 + 系统近概念区分（SC≠元认知/HOT/自我叙事/内省，"叙事是显影，写回才是底片"）；稳定候选稿；下一步只随第22章入口做桥句校准 |
-| 22 | 感到不等于能动 | current mainline：`Part_03_从选择到主体与价值/22_感到不等于能动.md`，`draft_v3_stable_candidate` | §5增两道门槛结构定位（意识开关/活性，冻结态处于两者之间）；§6末尾统一"可整合摩擦窗口"概念（信号太弱/太强均产生d_mobile≈0，窗口有结构条件）；§9增第6条命题（活选择位置需d+d_mobile同时在场，漂移/冻结对比，卷三回路终点命题）；结尾集体层面机制具体化（默认通道/支付资源剥夺/冻结规范化三条路径，桥接卷四）；stable_candidate |
+| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v6_final`（`stable_candidate`） | 稳定候选稿；d扩张结构诊断、承重变厚条件、d_mobile预警；只随卷三一致性微调 |
+| 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v4_stable_candidate` | 稳定候选稿；化石命题、沉积机制、层级护栏、利希滕贝格裂缝；只随第20章入口做桥句校准 |
+| 20 | 自指率：主体如何越积越厚 | current mainline：`Part_03_从选择到主体与价值/20_自指率_主体如何越积越厚.md`，`draft_v3_stable_candidate` | 稳定候选稿；σ_sr、主体位连续性机制、健康区间、闭合风险；只随一致性微调 |
+| 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v3_stable_candidate` | 稳定候选稿；二阶折叠、五条凝结条件、凝结物脆弱性、笛卡尔倒置；只随一致性微调 |
+| 22 | 感到不等于能动 | current mainline：`Part_03_从选择到主体与价值/22_感到不等于能动.md`，`draft_v3_stable_candidate` | 稳定候选稿；d/d_mobile区分、冻结态/漂移态、可整合摩擦窗口、卷三第一回路闭合命题；卷三收束完成 |
 | 23–30 | 卷四：秩序的双面性 | 未写 | 后续推进 |
 | 31–35 | 卷五：共同秩序 | 未写 | 后续推进 |
 | 36–45 | 卷六：意识、AI、修行 | 未写 | 后续推进 |
@@ -116,8 +117,9 @@ claim_mode: navigation
 ```text
 卷一 1–6 / 6b 已阶段性闭环
 → 第 7–13 / 13b 已进入稳定主阅读路径
-→ 卷三 14–18 已有主线稿，16–17 为 stable_candidate，14/15/18 为 draft
-→ 下一步：卷三 14–18 canonical 回链校准，并继续推进 19–22
+→ 卷三 14–22 全部已为 stable_candidate；卷三整体一致性 pass 完成（2026-05-17）
+→ 卷三第一回路已闭合：承重位置 → 攸关 → 在乎 → 价值 → d-value → d扩张 → 主体位 → 自指率 → 自我意识 → d_mobile
+→ 下一步：进入卷四 L2 双面性（23–30），或做卷三出版级压缩
 ```
 
 ### 3.2 卷二重设判断
@@ -199,7 +201,7 @@ L2 作为摩擦分配
 3. **卷二主轴明确**：选择如何在已经沉积的摩擦分配中发生。
 4. **第 7–13 章已收束**：它们构成卷二入口、选择算子、排除阴影、不可逆性、本体论摩擦、可支付性和三判据的当前基准链。
 5. **卷二维护方式**：后续只做轻量一致性修订、卷二命题组和卷三入口，不再按待优化散稿处理。
-6. **卷三 14–18 已进入主线稿阶段**：14/15/18 仍为 draft，16/17 为 stable_candidate；下一步是 canonical 回链校准与 19–22 续写。
+6. **卷三 14–22 全部为 stable_candidate**：2026-05-17 整体一致性 pass 完成；卷三第一回路闭合（承重位置→攸关→在乎→价值→d-value→d扩张→主体位→自指率→自我意识→d_mobile）；下一步是卷四 L2 双面性或卷三出版级压缩。
 7. **卷二不反向吸收卷三定义**：主体、价值、d-value 只能作为第 13/13b 的桥，不回写成卷二的定义负担。
 8. **桥接材料只作压力点**：科学、AI、复杂系统材料不承担证明 SRT 的责任。
 9. **后台材料不自动入正文**：只在当前章节确实需要时局部提取。
