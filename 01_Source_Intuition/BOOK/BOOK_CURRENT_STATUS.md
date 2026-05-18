@@ -206,29 +206,6 @@ L2 作为摩擦分配
 
 ---
 
-## 8. 出版导出规则（Publication Export）
-
-源文件保留完整 YAML front matter，用于仓库状态、版本管理与 AI 协作。
-
-出版稿 / 读者版导出时应自动剥离 YAML front matter（`---` 至 `---` 之间的全部内容），只保留正文 Markdown。
-
-推荐导出方式：
-
-```bash
-# 去掉 YAML front matter，输出纯正文
-sed '/^---$/,/^---$/d' 原文件.md > 导出文件.md
-```
-
-或使用 pandoc：
-
-```bash
-pandoc 原文件.md -o 导出文件.pdf  # pandoc 默认不渲染 YAML front matter 为正文
-```
-
-正文中的 `optimization_axis`、`based_on`、`references` 等字段不进入读者稿；这些信息留存于源文件 YAML 和 BOOK_VERSION_LOG.md。
-
----
-
 ## 7. 更新规则
 
 - 每完成卷级 pass，更新本文件第 2 节、卷级大纲入口、章节状态总表和版本日志。
@@ -238,3 +215,27 @@ pandoc 原文件.md -o 导出文件.pdf  # pandoc 默认不渲染 YAML front mat
 - 卷二第 7–13 章当前已进入 consolidated draft 状态；后续修改以整体一致性 pass 或局部校准为主。
 - 如果卷二整体一致性 pass 改变卷三入口，先更新卷二调整指导和卷三大纲入口，再推进第 14 章。
 - 本文件是施工入口，不是理论正文；不要把长篇理论说明塞进这里。
+
+---
+
+## 8. 出版导出规则（Publication Export）
+
+源文件保留完整 YAML front matter，用于仓库状态、版本管理与 AI 协作。
+
+出版稿 / 读者版导出时应自动剥离 YAML front matter，只保留正文 Markdown。注意：`---` 也在正文中用作章节分隔线，请勿使用 `sed '/^---$/,/^---$/d'`（会误删正文分隔线）。
+
+推荐导出方式（只剥离文件开头第一段 YAML front matter）：
+
+```bash
+awk 'NR==1 && $0=="---" {skip=1; next}
+     skip && $0=="---" {skip=0; next}
+     !skip {print}' 原文件.md > 导出文件.md
+```
+
+或使用 pandoc：
+
+```bash
+pandoc 原文件.md -o 导出文件.pdf  # pandoc 默认不渲染 YAML front matter 为正文
+```
+
+正文中的 `optimization_axis`、`based_on`、`references` 等字段不进入读者稿；这些信息留存于源文件 YAML 和 BOOK_VERSION_LOG.md。
