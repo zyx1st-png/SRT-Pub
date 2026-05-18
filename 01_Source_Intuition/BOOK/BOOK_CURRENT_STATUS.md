@@ -64,7 +64,7 @@ claim_mode: navigation
 - **当前风格规则**：`90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
 - **第三类改写指南**：`01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md`
 - **当前版本规则**：稳定章节文件仍是最终入口；`Part_*` 主路径只保留当前可读主稿，并以 `maintext_status: stable_candidate` 标记。工具中转产生的过程稿不得长期留在 `Part_*` 主目录，后续由本地 git 环境比较、合并、清理，并把过程稿移入 `Versioned_Drafts/` 或交给 Git 历史承接。具体规则见 `BOOK_VERSION_LOG.md`。
-- **当前主任务**：卷二第 7–13 章已完成整体一致性 weld pass 与读者友好性优化 pass（§1 现象学入口替换 + 命题压缩→本章收束）；下一步准备卷三第 14–18 章 canonical 回链校准。
+- **当前主任务**：卷二第 7–13 章与卷三第 14–22 章已完成读者友好性优化 pass（§1 现象学入口替换 + 命题压缩→本章收束）；下一步准备卷三 canonical 回链校准与卷四推进。
 - **卷二当前判断**：卷二不再是待优化散稿，而是稳定候选稿；后续只做轻量一致性修订、卷二命题组和卷三入口。
 - **卷一主稿路径**：卷一 1–6 / 6b 已同步最新第三类候选到稳定文件名，过程版本已移入 `Versioned_Drafts/Part_01_从存在到成为/`。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
