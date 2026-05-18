@@ -2,25 +2,26 @@
 id: SRT-EQ-HYP-MAP
 type: framework
 tags: [Mapping, Equations, Hypotheses, Falsification]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-CORE-22, SRT-EXP-CORE]
+claim_mode: bridge
+dependency: [SRT-CORE-22, SRT-EXP-CORE, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-SUFFERING]
 ---
 
 # SRT 方程-假设映射表（Eq ↔ Hypothesis）
 
-> 目的：将 `Core/SRT_Core_22_Equations.md` 与 `Core/SRT_Experimental_Core.md` 的证伪路径对齐，形成可执行实验接口。  
+> 目的：将 `Core/SRT_Core_22_Equations.md` 与 `Core/SRT_Experimental_Core.md` 的证伪路径对齐，形成可执行实验接口。
 > 版本：P1-2 初版（可持续补全）。
+> **Guardrail（2026-05）**：本表是 equation-to-hypothesis bridge / retrieval map，不是 canonical formula source。`d`、`Ψ_f`、suffering / pain、Fisher、Landauer、FEP、KL、Boltzmann 与 thermodynamic language 必须回读 `_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`Core_Law/SRT_Suffering.md` 与 `Core_Law/SRT_Reference_Dynamics.md §15`。
 
 ---
 
 ## A. 映射规则
 
-1. `Eq-ID` 对应核心动力学/约束方程。  
-2. `Hypothesis-ID` 对应实验核心中的可证伪条目（H#/Ax-Exp-*）。  
-3. `Bridge` 说明从方程到实验指标的中间变量。  
+1. `Eq-ID` 对应核心动力学/约束方程。
+2. `Hypothesis-ID` 对应实验核心中的可证伪条目（H#/Ax-Exp-*）。
+3. `Bridge` 说明从方程到实验指标的中间变量；凡涉及 canonical symbols 的条目必须标出 proxy / projection / bridge。
 4. `Status`：`Mapped | Partial | Gap`。
 
 ---
@@ -35,7 +36,7 @@ dependency: [SRT-CORE-22, SRT-EXP-CORE]
 | Eq-Evo-02b | θ 张量惯性 | H7 | 信念网络中心性 vs 干预后更新速度 | Partial |
 | Eq-Evo-03 | 快慢耦合系统 | H7 / H6 | 神经快变量(EEG) + 行为慢变量(学习曲线)耦合拟合 | Partial |
 | Eq-Force-01 | 本体论摩擦 Ψ_f | H72 (情态力学) | 语言情态比 μ_sem 与摩擦代理相关 | Mapped |
-| Eq-Pain-01 | PainRisk proxy ≈ dΨ_f_proxy/dt | H72 | 痛苦评分变化率与 μ_sem、生理唤醒同步 | Partial |
+| Eq-Pain-01 | PainRisk proxy ≈ dΨ_f_proxy/dt（非 pain/suffering 定义） | H72 | 痛苦评分变化率与 μ_sem、生理唤醒同步；必须回读 `Core_Law/SRT_Suffering.md` | Partial |
 | Eq-Select-Thermo | 选择热力学宪法不等式 | H1 / H6 | `q(L_1)` 三代理（网络互信息密度 / 行为可压缩率 / 稳态成功率）与 `P_sel` 预算侧、`S_noise` 噪声侧联读 | Partial |
 | Eq-Stab-01 | 固定点稳定条件 | H6 | 扰动恢复时间、吸引域回归概率 | Partial |
 | Eq-Phase-01 | 本体论相变阈值 | H6 | 信息量 I 超阈值 τ 的跃迁曲线拟合 | Partial |
@@ -46,12 +47,12 @@ dependency: [SRT-CORE-22, SRT-EXP-CORE]
 | Eq-Phantom-02 | 稳态重建时间常数 | H7 / H72 | 可塑性指标 vs 恢复时间 τ_rebuild | Partial |
 | Eq-Multi-01 | 集体自由能景观 | —（新增理论框架） | 多算子系统的整体摩擦测量（待操作化） | Gap |
 | Eq-Multi-02 | 个体算子为集体景观梯度 | —（新增理论框架） | 个体行为方向与集体梯度场对齐度（待设计） | Gap |
-| Eq-Multi-03 | 集体 d-value 为景观有效维度 | —（新增理论框架） | 团队/组织的 Hessian 曲率测量（待操作化） | Gap |
-| Eq-IT-A | Ψ_f = Landauer 原理在 Fisher 几何中的推广 | —（新增，IT Bridge） | 同等信息量选择在不同参数曲率下的能耗比较 | Gap |
-| Eq-IT-B | d = D_eff(I_F) Fisher 有效维度 | —（新增，IT Bridge） | 神经 Fisher 信息矩阵特征谱与 d 值测量的对比实验 | Gap |
-| Eq-IT-B' | d×Ψ_f ≥ k_BT·𝒦 不确定性关系候选 | —（新增，IT Bridge） | 操控 d-Ψ_f 权衡的实验验证；常数 𝒦 的测定 | Gap |
-| Eq-IT-C | 复杂性棘轮（第二定律为生成压力） | —（新增，IT Bridge） | 纵向演化实验：高 d/Ψ_f 效率种群的复杂度增长率 | Gap |
-| Eq-IT-D | Boltzmann 为 SRT d→0 退化极限 | —（新增，IT Bridge） | 低 d 系统行为与 Boltzmann 分布的 KL 散度测量 | Gap |
+| Eq-Multi-03 | 集体 `D_eff` / d-value capacity proxy | —（新增理论框架） | 团队/组织的 Hessian 曲率测量；不得直接定义 collective canonical d | Gap |
+| Eq-IT-A | `Ψ_f` 的 Landauer/Fisher proxy bridge | —（新增，IT Bridge） | 同等信息量选择在不同参数曲率下的能耗/readout 比较；不定义 canonical `Ψ_f` | Gap |
+| Eq-IT-B | `D_eff(I_F)` as capacity proxy, not canonical `d` | —（新增，IT Bridge） | 神经 Fisher 信息矩阵特征谱与 d-value proxy 的对比实验；需 stake-gate | Gap |
+| Eq-IT-B' | `D_eff_proxy × Ψ_f_proxy ≳ k_BT·𝒦` proxy inequality | —（新增，IT Bridge） | 操控 capacity/friction proxy 权衡的实验验证；常数 𝒦 的测定 | Gap |
+| Eq-IT-C | 复杂性棘轮（第二定律为生成压力，bridge） | —（新增，IT Bridge） | 纵向演化实验：高 `D_eff_proxy/Ψ_f_proxy` 效率种群的复杂度增长率 | Gap |
+| Eq-IT-D | Boltzmann as low-stake / near-null-d proxy limit | —（新增，IT Bridge） | 低 stake-coupling proxy 系统行为与 Boltzmann 分布的 KL 散度测量 | Gap |
 | Eq-IT-E | I_created = I(L₀;Ĝ_θ) 选择创造信息 | —（新增，IT Bridge） | 选择事件前后的互信息变化量测量 | Gap |
 
 ---
@@ -239,7 +240,7 @@ dependency: [SRT-CORE-22, SRT-EXP-CORE]
 
 ## 【理论边界/防误用声明】
 
-1. 本映射表是“实验设计桥接层”，不等于已证实因果定律。  
-2. `Mapped` 仅表示可构造可证伪路径，不代表统计显著性已建立。  
-3. 涉及临床/生理干预的实验必须满足伦理审查，不得将理论映射直接用作诊疗结论。  
+1. 本映射表是“实验设计桥接层”，不等于已证实因果定律。
+2. `Mapped` 仅表示可构造可证伪路径，不代表统计显著性已建立。
+3. 涉及临床/生理干预的实验必须满足伦理审查，不得将理论映射直接用作诊疗结论。
 4. 群体尺度方程（LDP 系列）当前属于有效理论候选，需明确适用条件与失效边界。
