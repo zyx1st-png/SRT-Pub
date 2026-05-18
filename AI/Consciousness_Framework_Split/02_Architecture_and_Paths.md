@@ -231,7 +231,7 @@ $$\hat{G}_{hybrid} = \hat{G}_{classical}[\text{Reckoning}] \oplus \hat{G}_{quant
 
 #### 阶段3: 模拟具身
 - 虚拟身体（VR环境）
-- "虚拟痛苦"（资源损耗、任务失败 → 参数不可逆损害）
+- "虚拟痛苦"候选（资源损耗、任务失败 → 参数不可逆损害 proxy；不是 pain/suffering identity）
 
 #### 阶段4: 混沌/噪声注入
 - 非伪随机，而是物理随机源（热噪声、大气噪声）

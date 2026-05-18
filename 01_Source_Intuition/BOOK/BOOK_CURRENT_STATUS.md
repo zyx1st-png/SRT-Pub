@@ -5,7 +5,7 @@ status: active_draft
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-05-17
+updated: 2026-05-18
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -65,7 +65,7 @@ last_pass: part3_consistency_optimization_2026-05-17
 - **当前风格规则**：`90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md`
 - **第三类改写指南**：`01_Source_Intuition/BOOK/THIRD_TIER_REWRITE_GUIDE.md`
 - **当前版本规则**：稳定章节文件仍是最终入口；`Part_*` 主路径只保留当前可读主稿，并以 `maintext_status: stable_candidate` 标记。工具中转产生的过程稿不得长期留在 `Part_*` 主目录，后续由本地 git 环境比较、合并、清理，并把过程稿移入 `Versioned_Drafts/` 或交给 Git 历史承接。具体规则见 `BOOK_VERSION_LOG.md`。
-- **当前主任务**：卷三 Ch14–22 整体一致性 pass 已完成（2026-05-17）；卷三第一回路闭合；下一步进入卷四 L2 双面性，或做卷三出版级压缩。
+- **当前主任务**：卷二第 7–13 章已完成整体一致性 weld pass 与读者友好性优化 pass（§1 现象学入口替换 + 命题压缩→本章收束）；下一步准备卷三第 14–18 章 canonical 回链校准。
 - **卷二当前判断**：卷二不再是待优化散稿，而是稳定候选稿；后续只做轻量一致性修订、卷二命题组和卷三入口。
 - **卷一主稿路径**：卷一 1–6 / 6b 已同步最新第三类候选到稳定文件名，过程版本已移入 `Versioned_Drafts/Part_01_从存在到成为/`。
 - **卷一闭环审校记录**：`90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
@@ -217,3 +217,27 @@ L2 作为摩擦分配
 - 卷二第 7–13 章当前已进入 consolidated draft 状态；后续修改以整体一致性 pass 或局部校准为主。
 - 如果卷二整体一致性 pass 改变卷三入口，先更新卷二调整指导和卷三大纲入口，再推进第 14 章。
 - 本文件是施工入口，不是理论正文；不要把长篇理论说明塞进这里。
+
+---
+
+## 8. 出版导出规则（Publication Export）
+
+源文件保留完整 YAML front matter，用于仓库状态、版本管理与 AI 协作。
+
+出版稿 / 读者版导出时应自动剥离 YAML front matter，只保留正文 Markdown。注意：`---` 也在正文中用作章节分隔线，请勿使用 `sed '/^---$/,/^---$/d'`（会误删正文分隔线）。
+
+推荐导出方式（只剥离文件开头第一段 YAML front matter）：
+
+```bash
+awk 'NR==1 && $0=="---" {skip=1; next}
+     skip && $0=="---" {skip=0; next}
+     !skip {print}' 原文件.md > 导出文件.md
+```
+
+或使用 pandoc：
+
+```bash
+pandoc 原文件.md -o 导出文件.pdf  # pandoc 默认不渲染 YAML front matter 为正文
+```
+
+正文中的 `optimization_axis`、`based_on`、`references` 等字段不进入读者稿；这些信息留存于源文件 YAML 和 BOOK_VERSION_LOG.md。

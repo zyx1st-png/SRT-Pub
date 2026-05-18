@@ -14,8 +14,8 @@ dependency: [SRT-GLOSSARY]
 为避免单一术语表过长，这里提供按功能拆分的导航版本。
 
 - 总表（保留原文，不删内容）：[`../SRT_Glossary.md`](../SRT_Glossary.md)
-- Source owner bytes: `90184`
-- Source owner SHA-256: `6b840276e1247542fbd93701502bd713c52ebf5e2fc872f06950d44e2e201265`
+- Source owner bytes: `90310`
+- Source owner SHA-256: `a203843c9d6f8be30fb8b03a669ce20b270ea63cf628f2c8970d3bd2839c11a3`
 - 00 治理与前导：[`SRT_Glossary_00_Governance_and_Prelude.md`](SRT_Glossary_00_Governance_and_Prelude.md)
 - 01 核心符号：[`SRT_Glossary_01_Core_Symbols.md`](SRT_Glossary_01_Core_Symbols.md)
 - 02 数学记号：[`SRT_Glossary_02_Notation.md`](SRT_Glossary_02_Notation.md)

@@ -13,8 +13,8 @@ dependency: [SRT-PHIL-ETHICS]
 # SRT Philosophy Ethics Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Philosophy_Ethics.md`](../SRT_Philosophy_Ethics.md)
-- Source owner bytes: `112375`
-- Source owner SHA-256: `beab13565c87895b99abee41029ef1d9ff9c106409029e4fb4593d59478285df`
+- Source owner bytes: `112550`
+- Source owner SHA-256: `30cc8272c494889c155b57be9cad170858beb0058a223bc0d77a35ba42c8b7f5`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

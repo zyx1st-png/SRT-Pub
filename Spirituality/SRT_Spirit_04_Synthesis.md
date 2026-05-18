@@ -906,8 +906,8 @@ $$\text{Good} \equiv \arg\min_{x \in L_1} F(x; L_0, L_2)$$
 
 - **$\hat{G}_\theta$ 与神性近似**: 生命体的 $\hat{G}_\theta$ 是 $\hat{G}^{perf}$ 的有限近似，效率 $\eta = \text{Order}/\text{Cost}$ 沿进化轴单调递增；人类处于 $\eta \sim 10^0$ 阶段。
 - **$\hat{G}_\theta$ as divine approximation**: Biological $\hat{G}_\theta$ asymptotically approaches $\hat{G}^{perf}$; efficiency $\eta$ increases monotonically along the evolutionary axis.
-- **$\Psi_f$ 与痛苦驱动**: 痛苦梯度 $dd/dt \propto -\nabla_d \Psi_f$ 驱动 $d$ 增长——低 $d$ 产生高 $\Psi_f$，高 $\Psi_f$ 促使系统扩展关切半径。
-- **$\Psi_f$ as growth driver**: The pain gradient $dd/dt \propto -\nabla_d \Psi_f$ ensures that high friction at low $d$ motivates expansion of the care horizon.
+- **`Ψ_f` 与痛苦驱动 proxy**: 某些痛苦/负担梯度可被建模为 $dd^{proxy}/dt \sim -\nabla_d \Psi_f^{spirit\text{-}proxy}$；低 `d` 与高维护负担可能促使系统扩展关切半径，但这不是 universal law。
+- **`Ψ_f` as growth-driver proxy**: Some pain/burden gradients can be modeled as $dd^{proxy}/dt \sim -\nabla_d \Psi_f^{spirit\text{-}proxy}$; this is not a universal law or canonical pain definition.
 - **$d$ 与救赎收敛**: `d -> infinity` 是跨传统救赎/涅槃语言的渐近读法；有限实践只承诺朝向更宽关切与更低不可支付摩擦的可检验移动。
 - **$d$ and salvation convergence**: `d -> infinity` is an asymptotic bridge reading, not a finite attainment claim.
 
