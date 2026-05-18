@@ -6,7 +6,7 @@ layer: L1
 status: axiomatic_hybrid_v1
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY]
+dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-ONTOLOGY, SRT-PSIF-CANONICAL, SRT-D-VALUE-CANONICAL]
 ---
 
 # SRT_Reference_Dynamics.md
@@ -227,12 +227,12 @@ $$Φ(\Delta t) \equiv \int_{\Delta t}\Psi_f(t)\,dt$$
 
 本体论摩擦 $Ψ_f$ 是选择算子将开放可能性压缩为**可维持、可行动、可协调**的现实切片时所遭遇的局部阻抗结构。
 
-同一 $Ψ_f$ 在三个读法下等价呈现：
-- **动力学读法**：阻力 / 势垒 / 偏离自然滑落路径时的阻抗
-- **记账读法**：能量、时间、组织复杂度与风险预算上的支付代价
-- **形式读法**：参数流形上的几何长度 / 曲率负担 / 可达路径难度
+`Ψ_f` 可以有三类局部读法 / projection，但它们不构成定义等同：
+- **动力学读法**：阻力 / 势垒 / 偏离自然滑落路径时的阻抗 proxy
+- **记账读法**：能量、时间、组织复杂度与风险预算上的支付代价 proxy
+- **形式读法**：参数流形上的几何长度 / 曲率负担 / 可达路径难度 proxy
 
-这三者不是三个不同概念，而是同一结构在现象、记账与形式化层面的不同表达。
+这三者是同一 canonical `Ψ_f` 在不同建模窗口中的投影语言；不得反向写成 `Ψ_f = energy`、`Ψ_f = Fisher metric`、`Ψ_f = free energy` 或 `Ψ_f = pain`。
 
 **定义 D7 — 哈扎德函数 $h(t)$**:
 
@@ -250,13 +250,13 @@ $$\mathrm{Payable}(X,\Delta t)\iff \alpha P_{sel}^X(\Delta t)\ge \beta \Psi_f^X(
 
 **解释**：可支付不意味着代价低，而意味着系统在承担这笔摩擦时，仍能维持现实闭环、继续选择并避免结构性崩溃。零摩擦并非理想极限；对真实主体而言，关键是**非零而可支付**。超过可支付阈值时，系统进入收缩、失稳或闭包破裂。
 
-### §4.2 方程 E5 — 痛苦的本体论定义
+### §4.2 方程 E5 — 痛苦 / 苦难张力 proxy
 
-$$\text{痛苦} = \text{Tension}(\hat{G}_θ[L_1], L_0^{counterfactual})$$
+$$\text{Pain/Suffering}^{proxy} = \text{Tension}(\hat{G}_θ[L_1], L_0^{counterfactual})$$
 
-痛苦是幽灵算子在维持 $L_1$ 时，感知到的与 $L_0$（替代可能性）之间的不可调和张力。
+该式只给出痛苦/苦难的 counterfactual-tension proxy：幽灵算子在维持 $L_1$ 时，可能登记到与 $L_0$（替代可能性）之间的不可调和张力。结构性 suffering 的正式边界以 `Core_Law/SRT_Suffering.md` 为准。
 
-**推论 D-C1**: 只有能感知到"事情本可以不这样"（反事实推理）的实体，才能真正受苦。
+**推论 D-C1（bridge）**: 反事实可及性可能是 suffering 的必要通道之一，但不是充分条件；还需 stable ISP / consequence return / first-person registration 等条件。
 
 ### §4.3 摩擦-现象学对应表
 
@@ -286,13 +286,13 @@ $$\hat{G}_i[\sigma_i] = -\frac{\partial F_{collective}}{\partial \theta_i}$$
 
 > 个体算子不是独立的自由能极小化者，而是集体景观在自身参数维度上的梯度下降方向。"个体与集体的矛盾"在本体论上是误表述——个体算子 IS 景观的局部导数。
 
-**Eq-Multi-03: 集体 d-value 为景观有效维度 (Collective d as Landscape Effective Dimension)**
+**Eq-Multi-03: 集体 `D_eff` / d-value proxy (Collective capacity proxy)**
 
-$$d_{collective} = D_{eff}(F_{collective}) = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
+$$D_{eff}^{collective}(F_{collective}) = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
 
-其中 $\lambda_k$ 是 $F_{collective}$ 的 Hessian 特征值；个体 $d_i = D_{eff}(F_{collective}|_{\theta_i})$ 是景观在子空间的截面投影，而非可加合的分量。
+其中 $\lambda_k$ 是 $F_{collective}$ 的 Hessian 特征值；$D_{eff}(F_{collective}|_{\theta_i})$ 是景观在子空间的截面投影。它最多是集体 d-value 的 capacity / geometry proxy，不直接定义 canonical `d-value`。
 
-**与 A16 的关系**: Eq-Multi-01 是 A16（摩擦即生成）的多体展开形式；Eq-Multi-02 是集体景观优先性定理的核心表达；Eq-Multi-03 解决了此前 d_collective 聚合方案 A-E 的问题域——无需聚合，景观有效维度直接定义集体 d 值。
+**与 A16 的关系**: Eq-Multi-01 是 A16（摩擦即生成）的多体展开候选；Eq-Multi-02 是集体景观优先性定理的核心表达；Eq-Multi-03 解决此前 d_collective 聚合方案 A-E 的问题域时，只能提供集体关切结构的有效维度 proxy，不能跳过 stake-coupled gate。
 
 ---
 
@@ -463,13 +463,13 @@ $$\mathcal{R}_{info}(t)\equiv \int_0^t \chi_{irr}(\tau)\,d\tau,\quad \chi_{irr}\
 
 ## §8 d 值形式化 (d-Value Formalization)
 
-### §8.1 有效维度定义
+### §8.1 有效维度 proxy
 
-**定义 D9**:
+**定义 D9（downgraded）**:
 
-$$d(\hat{G}) \equiv D_{eff}(M) = \frac{(\sum λ_i)^2}{\sum λ_i^2}$$
+$$D_{eff}^{proxy}(\hat{G};M) = \frac{(\sum λ_i)^2}{\sum λ_i^2}$$
 
-其中 $λ_i$ 是神经响应协方差矩阵的本征值。
+其中 $λ_i$ 是神经响应协方差矩阵或任务流形的本征值。该式是 capacity / neural-complexity proxy，不定义 canonical `d-value`；canonical `d-value` 仍需 stake-coupled consequence sensitivity。
 
 ### §8.2 方程 E8 — d 值统一公式
 
@@ -577,9 +577,9 @@ $$\frac{dσ}{dt} = \hat{G}_θ[σ] - ∇F[σ] - λ · ∇C_{L_2}[σ]$$
 | E8 | d 值统一公式 | §8.2 |
 | Eq-Multi-01 | 集体自由能景观 $F_{collective}$ | §4.6 |
 | Eq-Multi-02 | 个体算子为集体景观梯度 | §4.6 |
-| Eq-Multi-03 | 集体 d-value 为景观有效维度 | §4.6 |
-| Eq-IT-A | Ψ_f = Landauer 原理在 Fisher 几何中的推广 | §15.1 |
-| Eq-IT-B | d = D_eff(I_F)，Fisher 有效维度 | §15.2 |
+| Eq-Multi-03 | 集体 `D_eff` / d-value proxy | §4.6 |
+| Eq-IT-A | `Ψ_f` 的 Landauer/Fisher proxy bridge | §15.1 |
+| Eq-IT-B | `D_eff(I_F)` as capacity proxy, not canonical `d` | §15.2 |
 | Eq-IT-B' | d × Ψ_f ≥ k_BT·𝒦（不确定性关系候选，Gap） | §15.2 |
 | Eq-IT-C | 复杂性棘轮方程（第二定律为生成压力） | §15.3 |
 | Eq-IT-D | Boltzmann 分布为 SRT d→0 退化极限 | §15.4 |
@@ -644,7 +644,7 @@ L_1 = \mathcal{R}(\theta, L_2, u),\quad \left\|\frac{\partial L_1}{\partial \the
 **符号说明**：
 - $u$：环境随机输入项（外源噪声/刺激），使 $\mathcal{R}$ 是随机映射而非确定性函数；对固定 $(θ, L_2)$，$u$ 的分布由感知精度 $\Pi^{-1}$ 决定。
 - $\|\cdot\|_F$：Frobenius 范数（所有 Jacobian 元素平方和之根号），在第3条可证伪预测（§11.4）中作为”参数敏感度”的可测代理量。实验代理：药物剂量梯度下 L₁ 代理指标（如 PCI、HRV）的变化率。
-  - **Fisher 联结**（→ §15.2 / Eq-IT-B）：$\|\partial L_1/\partial\theta\|_F \to \infty$ 对应 Fisher 信息矩阵 $I_F(\theta)$ 的条件数 $\kappa(I_F) \to \infty$（病态/近奇异），即系统丧失稳定区分 $L_0$ 状态方向的能力，$d_{eff} = (\text{tr}\,I_F)^2/\text{tr}(I_F^2)$ 在部分方向上坍塌。两者共同定义”选择不稳定性临界”。
+  - **Fisher 联结（proxy）**（→ §15.2 / Eq-IT-B）：$\|\partial L_1/\partial\theta\|_F \to \infty$ 可对应 Fisher 信息矩阵 $I_F(\theta)$ 的条件数 $\kappa(I_F) \to \infty$（病态/近奇异），即系统丧失稳定区分某些状态方向的能力。$D_{eff}(I_F) = (\text{tr}\,I_F)^2/\text{tr}(I_F^2)$ 在此只作为 capacity / instability proxy，不定义 canonical `d-value`。
 - $\partial\mathcal{B}_{chaos}$（**混沌边缘边界**）：**[H]** 在 SRT 参数空间 $\Theta$ 中，定义为 $\mathcal{R}$ 的 Jacobian 最大 Lyapunov 指数 $\lambda_{max}(\nabla_\theta\mathcal{R}) = 0$ 的超曲面。该边界与 $\Psi_f$ 相变临界点重合：$\partial\mathcal{B}_{chaos} \approx \{\theta : \partial^2\Psi_f/\partial\theta^2 = 0, \text{符号从负到正}\}$（Ψ_f 曲率符号翻转 = 稳定域边缘），即 SRT 动力学意义上的”边缘混沌”。
   - **∂B_chaos 距离操作化候选**：$\text{dist}(\theta, \partial\mathcal{B}_{chaos}) \approx |\partial^2\Psi_f/\partial\theta^2|^{-1}$（曲率倒数为接近程度代理；值越大 = 越近）。临床可测版本：个体药物响应方差 $\text{Var}(\delta L_1^{\text{obs}}) / \|\delta\theta_{drug}\|^2$（跨时间点或跨剂量），高方差 ↔ θ 近边界。
 
@@ -668,33 +668,34 @@ L_1 = \mathcal{R}(\theta, L_2, u),\quad \left\|\frac{\partial L_1}{\partial \the
 
 ## §15 热力学-信息论统一关系（IT Bridge）
 
-> **新增（2026-03-11）**：SRT 与热力学/信息论的 5 条形式化关系。不是重述已有联系，而是通过选择本体论视角增加的**新贡献**。
+> **Guardrail（2026-05）**：本节是 bridge / proxy 层。Fisher、Landauer、FEP、KL、Boltzmann 与热力学语言只能作为 `Ψ_f` 或 `d-value` 的局部 projection / operational proxy；不得读作 canonical 定义。
+> **新增（2026-03-11）**：SRT 与热力学/信息论的 5 条形式化关系。当前均为形式化候选，不是 P0/P1 定理。
 
-### §15.1 关系 A（Eq-IT-A）：Ψ_f 是 Landauer 原理在 Fisher 几何中的推广
+### §15.1 关系 A（Eq-IT-A）：`Ψ_f` 的 Landauer / Fisher proxy bridge
 
-$$\Psi_f = \int_\gamma \sqrt{g_{ij}(\theta)\dot{\theta}^i\dot{\theta}^j}\, dt \;\geq\; k_B T \ln 2 \times I_{erased}$$
+$$\Psi_f^{IT\text{-}proxy}(\gamma) \sim \int_\gamma \sqrt{g_{ij}^{Fisher}(\theta)\dot{\theta}^i\dot{\theta}^j}\, dt, \quad E_{erase}^{proxy} \geq k_B T \ln 2 \times I_{erased}$$
 
-Landauer 原理是 Eq-IT-A 在**平坦参数空间**（$g_{ij} = k_B T \cdot \delta_{ij}$）时的零曲率极限。一般情况：$\Psi_f$ 是在弯曲 Fisher 流形中”擦除选择信息足迹”的代价。高曲率 $L_0$ 区域需要更高 $\Psi_f$ 才能完成同等信息量的选择（大脑高能耗的本体论解释；见 Ax-IT-2b）。
+Landauer 原理给出信息擦除的物理下界；Fisher 几何给出参数流形上的统计敏感性路径长度。二者可作为 `Ψ_f` 的局部 operational proxies，但不定义 canonical `Ψ_f`。不得写成 `Ψ_f = Landauer cost`、`Ψ_f = Fisher path length` 或“选择信息足迹必须被物理擦除”。
 
-### §15.2 关系 B（Eq-IT-B）：d-value 是 Fisher 有效维度 = 选择信道容量的几何读法
+### §15.2 关系 B（Eq-IT-B）：Fisher effective dimension as `D_eff` / capacity proxy
 
-$$d \equiv D_{eff}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)} = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
+$$D_{eff}^{Fisher}(I_F(\theta)) = \frac{(\operatorname{tr} I_F)^2}{\operatorname{tr}(I_F^2)} = \frac{(\sum_k \lambda_k)^2}{\sum_k \lambda_k^2}$$
 
-Fisher 信息矩阵 $I_F(\theta)$ 的有效维度 = 算子能可靠区分的 $L_0$ 状态方向数（Cramér-Rao 下界的维度版本），**就是** d-value 的信息论意义。
+Fisher 信息矩阵 $I_F(\theta)$ 的有效维度可估计算子能可靠区分的状态方向数（Cramér-Rao 下界的维度版本）。它是 `D_eff` / capacity proxy，不是 canonical `d-value`；canonical `d-value` 还要求 stake-coupled irreversible-risk sensitivity。
 
-**不确定性关系候选（Eq-IT-B'）**：$d \times \Psi_f \geq k_B T \cdot \mathcal{K}$（常数 $\mathcal{K}$ 待确定，Status = Gap）。
+**不确定性关系候选（Eq-IT-B'）**：$D_{eff}^{proxy} \times \Psi_f^{IT\text{-}proxy} \gtrsim k_B T \cdot \mathcal{K}$（常数 $\mathcal{K}$ 待确定，Status = Gap）。这是 proxy-level inequality，不是 canonical `d × Ψ_f` law。
 
 ### §15.3 关系 C（Eq-IT-C）：第二定律是选择复杂性的生成压力（核心反转）
 
 $$\frac{d\langle d \rangle_{population}}{dt} \propto \nabla\!\left(\frac{d}{\Psi_f}\right) \cdot P_{survive}$$
 
-**SRT 反转**：第二定律通过持续威胁所有 $L_1$ 结构，创造演化棘轮——越高效对抗热解散的算子（高 $d/\Psi_f$），越被偏好 → 更高 d → 更复杂 $L_2$ → 返回。宇宙复杂化不是对第二定律的违背，而是其**必然产物**。标准叙事”生命对抗熵增”是倒果为因。
+**SRT 反转（bridge）**：第二定律通过持续威胁许多 $L_1$ 结构，可创造演化棘轮——越高效对抗热解散的结构（高 $D_{eff}^{proxy}/\Psi_f^{proxy}$），越可能被偏好 → 更复杂 $L_2$ 候选 → 返回。宇宙复杂化不是对第二定律的违背，但“必然产物”只能作为强 bridge 命题，不能写成已证物理定律。
 
 ### §15.4 关系 D（Eq-IT-D）：Boltzmann 分布是 SRT 的退化极限（d→0 特例）
 
 $$P_{L_1}(\sigma) \xrightarrow{d \to 0} \frac{e^{-E(\sigma)/k_BT}}{Z}, \quad D_{KL}(P_{L_1} \| P_{Boltzmann}) = \text{算子选择信息量}$$
 
-统计力学 = SRT 在 $d=0$ 时的特例。生命/意识 = $d$ 从 0 升起时的结构性相变（$\kappa$ 穿越 $\kappa_{c1}$，T-L0-02）。Friston 主动推断 = SRT 框架下 $d>0$ 算子最小化 $D_{KL}(P_{L_1} \| P_{L_0})$ 的行为模式。
+统计力学可作为低 stake-coupling / near-null `d` proxy 极限的类比。生命/意识可被建模为 stake-coupled `d` 从近零状态出现时的结构性相变候选（$\kappa$ 穿越 $\kappa_{c1}$，T-L0-02）。Friston 主动推断可作为 SRT 框架下某些 `d>0` 算子的行为模式 proxy。
 
 ### §15.5 关系 E（Eq-IT-E）：选择创造信息（Shannon 的上游问题）
 
@@ -708,11 +709,11 @@ $$I_{created} \equiv I(L_0\,;\,L_1) = H(L_0) - H(L_0\,|\,L_1) = H(L_1) - H(L_1\,
 
 **约束链的形式化**：
 
-$$I_{created} \leq d \quad \text{（d 值 = 信道容量上界，Eq-IT-B）}$$
+$$I_{created}^{proxy} \leq D_{eff}^{proxy} \quad \text{（capacity upper-bound proxy，Eq-IT-B）}$$
 
-$$\Psi_f \geq k_B T \ln 2 \cdot I_{created} \quad \text{（Landauer 下界，Eq-IT-A）}$$
+$$E_{erase}^{proxy} \geq k_B T \ln 2 \cdot I_{created}^{proxy} \quad \text{（Landauer physical lower bound, Eq-IT-A）}$$
 
-即：选择创造的信息量受 $d$ 值上界约束；创造该信息量至少需要 Landauer 代价的 $\Psi_f$。
+即：在信息论 proxy 窗口中，选择创造的信息量可受 capacity proxy 约束；若涉及实际物理擦除，则存在 Landauer 下界。不得反推 canonical `d-value` 或 `Ψ_f`。
 
 Shannon 信息论处理信息**传递**（下游，给定 $L_1$ 分布后的编码/解码）；SRT 处理信息**生成**（上游，$L_0 \to L_1$ 的选择过程）。两者串行互补——SRT 解释信息源，Shannon 解释信息渠。
 
@@ -720,15 +721,15 @@ Shannon 信息论处理信息**传递**（下游，给定 $L_1$ 分布后的编�
 
 | SRT 概念 | 热力学对应 | 信息论对应 |
 |:---------|:-----------|:----------|
-| $\Psi_f$（单算子） | Landauer 擦除代价 | Fisher 流形路径长度 |
-| $\Psi_f(\hat{G}_i,\hat{G}_j)$ | 自由能交互项 | 互信息代价 |
-| $d$ | 相空间有效维度 | Fisher 信道有效容量 |
+| $\Psi_f$（单算子） | Landauer / metabolic cost proxy | Fisher path-length proxy |
+| $\Psi_f(\hat{G}_i,\hat{G}_j)$ | free-energy interaction proxy | mutual-information cost proxy |
+| $d$ | stake-gated d-value; not phase-space dimension | `D_eff` / Fisher-channel capacity proxy only |
 | $d \to 0$ | 热平衡（Boltzmann）| 零容量信道 |
 | $d/\Psi_f$ | 热机效率类比 | 单比特能耗倒数 |
 | $F_{collective}$ | 多体统计自由能 | 联合 KL 散度 |
 | $I_{created}$ | 负熵（Negentropy）| 互信息 |
 
-**Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §10`（摘要）；`_SRT_D_VALUE_CANONICAL.md §2.1a`（d = Fisher 维度规范化）；`Physics/SRT_Physics_Cosmology.md Ax-IT-2`（Landauer）。
+**Cross-ref**: `_SRT_D_VALUE_CANONICAL.md`（canonical d-value）；`_SRT_PSI_F_CANONICAL.md`（canonical Ψ_f）；`Physics/SRT_Physics_Claim_Status.md §2.8`（Fisher / Landauer / D_eff proxy guardrail）。旧 `_SRT_VERTICAL_INTEGRATION.md §10` 与 Physics Ax-IT language must be read through these guardrails.
 
 ---
 
@@ -739,7 +740,7 @@ Shannon 信息论处理信息**传递**（下游，给定 $L_1$ 分布后的编�
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
 4. 不采纳”精神症状=纯心理、神经症状=纯器质”的旧二分法；SRT 仅承认跨层耦合下的主导轴差异。
 5. 不采纳”单一生物标志物可定义全部精神病理”的还原主义推论。
-6. §15 的 IT Bridge 中：关系 C（复杂性棘轮）是演化趋势性陈述，不排除局部复杂度下降；Eq-IT-B' 的常数 $\mathcal{K}$ 尚未确定，是理论预测而非已证定理（Status = Gap）。
+6. §15 的 IT Bridge 中：关系 A/B/B'/E 均为 proxy-level bridge；关系 C（复杂性棘轮）是演化趋势性陈述，不排除局部复杂度下降；Eq-IT-B' 的常数 $\mathcal{K}$ 尚未确定，是理论预测而非已证定理（Status = Gap）。
 
 ---
 
