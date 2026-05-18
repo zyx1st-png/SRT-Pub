@@ -5,16 +5,17 @@ tags: [Navigation, Split, Longform]
 status: active_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
 dependency: [SRT-INDEX]
 ---
 
 # SRT Longform Split Registry
 
-本页汇总所有“非删减式导航拆分层”。原则：
+本页汇总所有“非删减式导航拆分层”。本文件是 navigation registry，不是 canonical definition source。原则：
 - 原始总文保留
 - 不删减正文内容
 - 通过 split 目录提供可检索、可引用、可局部阅读的入口
+- split README / shard 不新增定义权；涉及 `d`、`Ψ_f`、suffering、Fisher、Landauer、AI consciousness、spirituality/public metaphor 时，必须回读 canonical anchors 与 domain claim-status files
 
 ## Glossary
 - `Glossary/README.md`

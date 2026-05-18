@@ -164,10 +164,10 @@ Domain starter map:
 | Domain | Start |
 |---|---|
 | AI | `AI/README.md`, `AI/AI_POSITIONING_NOTE.md`, `AI/SRT_AI_Claim_Status.md` |
-| Neuroscience | `Neuroscience/README.md`, `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` |
+| Neuroscience | `Neuroscience/README.md`, `Neuroscience/SRT_Neuroscience_Claim_Status.md`, `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` |
 | Physics | `Physics/README.md`, `Physics/PHYSICS_COMPACT_REGISTRY.md`, `Physics/SRT_Physics_Claim_Status.md` |
-| Philosophy | `Philosophy/README.md`, `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md`, `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` |
-| Spirituality | `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`, `Spirituality/_SRT_Spirit_Axioms.md` |
+| Philosophy | `Philosophy/README.md`, `Philosophy/SRT_Philosophy_Claim_Status.md`, `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md`, `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` |
+| Spirituality | `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md`, `Spirituality/SRT_Spirituality_Claim_Status.md`, `Spirituality/_SRT_Spirit_Axioms.md` |
 | External convergence | `04_External_Convergence/README.md`, `04_External_Convergence/EVIDENCE_INDEX.md`, `04_External_Convergence/EVIDENCE_GRADING.md` |
 
 ### 2.6 Material Fusion
@@ -198,9 +198,11 @@ Read:
 2. `05_Public_Release/README.md`
 3. `05_Public_Release/PUBLIC_INDEX.md`
 4. `05_Public_Release/PUBLIC_GUARDRAILS.md`
-5. `01_Source_Intuition/CORE_REVERSALS.md`
-6. `Manifesto/SRT_MANIFESTO.md` when worldview tone is needed
-7. formal anchors only as guardrails
+5. `SRT_Public_Reading_Guide.md`
+6. `video/SRT_Video_Claim_Status.md` when scripts / talks / cinematic drafts are involved
+7. `01_Source_Intuition/CORE_REVERSALS.md`
+8. `Manifesto/SRT_MANIFESTO.md` when worldview tone is needed
+9. formal anchors only as guardrails
 
 Rule:
 
