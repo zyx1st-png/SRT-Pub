@@ -98,7 +98,7 @@ last_pass: part3_consistency_optimization_2026-05-17
 | 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v3_stable_candidate` | 升级完成：两处精修（主体经验层入口加厚、d-value三深度直觉扩展）；下一步只随d-value canonical微调 |
 | 16 | 价值不是偏好 | current mainline：`Part_03_从选择到主体与价值/16_价值不是偏好.md`，`stable_candidate` | 只随 d-value canonical 微调 |
 | 17 | d-value：在乎的最小形式化尝试 | current mainline：`Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md`，`stable_candidate` | 保持 D_eff/proxy 防误读护栏 |
-| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v1` | 当前正式主线章节；需防 d 扩张道德化 |
+| 18 | d 的扩张不是博爱 | current mainline：`Part_03_从选择到主体与价值/18_d的扩张不是博爱.md`，`draft_v6_final / stable_candidate` | 稳定候选稿；防 d 扩张道德化；§3 末尾已补一的扩张与 d 扩张层级区分 |
 | 19 | 选择者作为位置，而非实体 | current mainline：`Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md`，`draft_v4_stable_candidate` | 稳定候选稿；化石命题、沉积机制、层级护栏、利希滕贝格裂缝；下一步只随第20章入口做桥句校准 |
 | 20 | 自指率：主体如何越积越厚 | current mainline：`Part_03_从选择到主体与价值/20_自指率_主体如何越积越厚.md`，`draft_v3_stable_candidate` | σ_sr 书稿层引入；五通道写回、"否定后果"段、旧图景三失效具体锚点、主动推断最强反对者回应、缘起扩展、Prop2精准分拆；稳定候选稿；下一步只随第21章入口做桥句校准 |
 | 21 | 自我意识作为凝结物 | current mainline：`Part_03_从选择到主体与价值/21_自我意识作为凝结物.md`，`draft_v3_stable_candidate` | §1增加必要性段落（主体位/自我意识"褶子"金句）、§3主体位硬区分金句、§4五条件改为有机逻辑链（历史底层→材料→形式→社会锚→激活），末尾矛盾修复、§5补全跨时间承担统一论证（结构连续性vs规范归属，"历史变成'我的历史'"金句）、§7灵性段金句（枷锁以'我'的名义运作）、§8增加HOT理论（Rosenthal）作为最强分析传统反对者 + 系统近概念区分（SC≠元认知/HOT/自我叙事/内省，"叙事是显影，写回才是底片"）；稳定候选稿；下一步只随第22章入口做桥句校准 |

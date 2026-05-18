@@ -10,7 +10,7 @@ source_of:
 related:
   - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/15_在乎是什么.md
   - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/16_价值不是偏好.md
-  - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/14_承重位置_路径如何产生回流节点.md
+  - 01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/14_后果攸关谁.md
   - 01_Source_Intuition/BOOK/Outline_Parts/03_卷三_从选择到主体与价值.md
   - _SRT_D_VALUE_CANONICAL.md
   - _SRT_SYMBOL_TABLE.md
@@ -131,6 +131,8 @@ d-value 的最低正面判据可以这样说：如果某类后果的变化，会
 旧图景问：偏好有多强？
 
 SRT 要问：后果有多能回来？
+
+d-value 不是在 ε_pg 之外额外发明的一套价值尺度。它是同一条生成链在主体与价值层的刻度化表达：ε_pg 建立最低非中立性与最低落点；选择让一成形；锚定让一留下；一的扩张让更多后果进入该位置的后续条件；后果回流让这些后果开始改写该位置之后还能怎样选择。d-value 衡量的，正是这种回流后果对承重位置的改写带宽。
 
 ---
 
