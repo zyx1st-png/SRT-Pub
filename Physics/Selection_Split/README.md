@@ -7,14 +7,15 @@ layer: meta
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
-dependency: [SRT-QUANT-01]
+dependency: [SRT-PHYSICS-CLAIM-STATUS, SRT-QUANT-01]
 ---
 
 # SRT Quantum Selection Split Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片或 interface layer；历史正文中的 axiom/theorem/canonical/physics-law 句式必须回读 `../SRT_Physics_Claim_Status.md`。
 - 原始总文（保留，不删内容）：[`../SRT_Quant_01_Selection.md`](../SRT_Quant_01_Selection.md)
-- Source owner bytes: `55321`
-- Source owner SHA-256: `6ebcb8224ce1d4b20ca3d4e632846b23b5dceef1685ab0982d2e3daa3b183330`
+- Source owner bytes: `55635`
+- Source owner SHA-256: `acce40301b87512458ae7b4bc915c2916ae1fea0bf9693417ad5ba72d3293bf7`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

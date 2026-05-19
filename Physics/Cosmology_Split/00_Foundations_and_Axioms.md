@@ -2,10 +2,11 @@
 id: SRT-PHYS-COSMO
 type: theory
 tags: [Thermodynamics, Time, Gravity, Cosmology, Information Physics, Hybrid]
-status: axiomatic_hybrid_v2
+status: active_v1
 layer: L1
 epistemic_layer: bridge
-claim_mode: translation
+claim_mode: navigation
+canonical: false
 dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT-QUANT-02]
 ---
 

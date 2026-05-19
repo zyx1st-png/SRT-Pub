@@ -5,7 +5,7 @@ tags: [Physics, Earth-Accretion, Cosmochemistry, Reservoir-Selection, Annex, Int
 status: active_v1
 layer: meta
 epistemic_layer: bridge
-claim_mode: translation
+claim_mode: navigation
 canonical: false
 date: 2026-04-29
 dependency:
@@ -20,6 +20,7 @@ machine_summary: >
 
 # Earth Accretion Annex
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片或 interface layer；历史正文中的 axiom/theorem/canonical/physics-law 句式必须回读 `../SRT_Physics_Claim_Status.md`。
 > **Boundary note**: This annex contains Earth accretion / reservoir-selection interface material only. It does not define `L0/L1/L2`, `Psi_f`, d-value, planetary science, or any physical law.
 >
 > Earth accretion does **not** prove SRT. Planetary accretion is **not** agency, intention, concern, or choice. Reservoir selection is used here as a physical analogy for accessibility-limited selection.

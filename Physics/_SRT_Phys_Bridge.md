@@ -3,7 +3,7 @@ id: SRT-PHYS-BRIDGE
 type: constitutional_bridge
 tags: [Physics, Axiom Mapping, Operator Bridge, Hybrid]
 layer: L1
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 epistemic_layer: bridge
 claim_mode: translation
 canonical: false
@@ -12,6 +12,7 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 
 # SRT Physics Bridge & Foundational Axioms (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 >

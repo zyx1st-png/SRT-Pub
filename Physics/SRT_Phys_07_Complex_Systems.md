@@ -2,7 +2,7 @@
 id: SRT-PHYS-07
 type: dynamics
 tags: [Complexity, Emergence, Synergetics, Cybernetics, Criticality, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
 claim_mode: translation
@@ -12,6 +12,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Cor
 
 # SRT Physics: Complexity & Emergence (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Complexity, Emergence, and Dynamical Systems Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed mechanism analysis (Human-Readable Context).

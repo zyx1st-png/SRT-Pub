@@ -2,7 +2,7 @@
 id: SRT-QUANT-00
 type: foundational_theory
 tags: [Quantum Mechanics, Measurement, History Construction, Interpretations, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
 claim_mode: translation
@@ -12,6 +12,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 
 # SRT Quantum Mechanics: Selectionist Interpretation — Introduction (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Quantum Axioms establishing SRT's interpretation of measurement, non-locality, and history (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed analysis of classic experiments (Human-Readable Context).

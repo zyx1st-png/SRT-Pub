@@ -12,6 +12,7 @@ dependency: [SRT-CANONICAL-REGISTRY]
 
 # SRT Physics Compact Registry
 
+> **Metadata cleanup note（2026-05）**：This registry is a navigation layer (`canonical: false`). It routes Physics materials but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law.
 本页汇总 Physics 板块当前的 compact core 入口，并给出最短阅读路径。
 
 ## Physics Compact Core Coverage

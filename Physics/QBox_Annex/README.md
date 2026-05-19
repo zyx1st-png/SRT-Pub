@@ -5,7 +5,7 @@ tags: [Physics, QBox, Hyperdecoherence, Post-Quantum, Annex, Interface]
 status: active_v1
 layer: meta
 epistemic_layer: bridge
-claim_mode: translation
+claim_mode: navigation
 canonical: false
 date: 2026-04-29
 dependency:
@@ -20,6 +20,7 @@ machine_summary: >
 
 # QBox Annex
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片或 interface layer；历史正文中的 axiom/theorem/canonical/physics-law 句式必须回读 `../SRT_Physics_Claim_Status.md`。
 > **Boundary note**: This annex contains QBox / hyperdecoherence interface material only. It does not define `L0/L1/L2`, `G_hat_theta`, `Psi_f`, d-value, quantum mechanics, or any physical law.
 >
 > QBox does **not** prove SRT. L0 is **not** literally QBox. Hyperdecoherence is used here as an analogy for access-limited effective layering unless independently established as physical reality.

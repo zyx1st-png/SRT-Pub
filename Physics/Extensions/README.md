@@ -29,6 +29,7 @@ machine_summary: >
 
 # SRT Physics Extensions v0.1
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片或 interface layer；历史正文中的 axiom/theorem/canonical/physics-law 句式必须回读 `../SRT_Physics_Claim_Status.md`。
 > **Status**: bridge / extension batch. Non-canonical. Each file routes back
 > to canonical anchors and to the existing `_SRT_Phys_Bridge.md`.
 

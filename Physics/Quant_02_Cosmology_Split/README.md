@@ -7,14 +7,15 @@ layer: meta
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
-dependency: [SRT-QUANT-02]
+dependency: [SRT-PHYSICS-CLAIM-STATUS, SRT-QUANT-02]
 ---
 
 # SRT Quantum Cosmology Split Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片或 interface layer；历史正文中的 axiom/theorem/canonical/physics-law 句式必须回读 `../SRT_Physics_Claim_Status.md`。
 - 原始总文（保留，不删内容）：[`../SRT_Quant_02_Cosmology.md`](../SRT_Quant_02_Cosmology.md)
-- Source owner bytes: `51606`
-- Source owner SHA-256: `44dc9df8c9e8c78c173f24f35e587800419bfdd40f9369ed21af96592907f109`
+- Source owner bytes: `51920`
+- Source owner SHA-256: `d1e6b76bcfe92f4fccc58ebbc7a31c950b6ca12535b7a6afbab3403757188361`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

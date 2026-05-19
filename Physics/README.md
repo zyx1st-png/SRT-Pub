@@ -29,6 +29,7 @@ machine_summary: >
 
 # Physics
 
+> **Metadata cleanup note（2026-05）**：This README is a Physics section guide, not a definition source. Historical file names and theorem/axiom labels in Physics must be read through `SRT_Physics_Claim_Status.md`; Fisher, Landauer, D_eff, gravity, quantum measurement, cosmology, and Psi_f language are bridge/proxy unless explicitly supported elsewhere.
 This directory contains SRT's physics-facing bridge, quantum, cosmology,
 formalism, complexity / ontology, interface-annex, hardening, and extension
 materials.

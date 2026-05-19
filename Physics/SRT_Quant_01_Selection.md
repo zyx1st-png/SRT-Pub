@@ -2,7 +2,7 @@
 id: SRT-QUANT-01
 type: core_module
 tags: [Quantum Selection, Measurement Theory, Probability Flow, Non-Locality, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
 claim_mode: translation
@@ -12,6 +12,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT
 
 # SRT Quantum Mechanics: Selection & Measurement (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Selection_Split/README.md`](Selection_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Version 2.0 (Hybrid)**
