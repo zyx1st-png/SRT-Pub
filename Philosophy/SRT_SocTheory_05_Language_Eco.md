@@ -2,15 +2,17 @@
 id: SRT-SOC-THEORY-05
 type: theory
 tags: [Language, Ecology, Evolution, Neoteny, Cognitive Science, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
+canonical: false
 dependency: [SRT-SOC-THEORY-04]
 ---
 
 # SRT Social Theory Part 2: Language & Evolution (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Language_Eco_Split/README.md`](Language_Eco_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Bridge Layer Note**

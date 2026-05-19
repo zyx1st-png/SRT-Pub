@@ -5,12 +5,14 @@ tags: [Philosophy, Social, AxiomSet]
 status: domain_constitutional_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: bridge
+canonical: false
 dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHIL-AXIOMS]
 ---
 
 # SRT Social Axioms (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).

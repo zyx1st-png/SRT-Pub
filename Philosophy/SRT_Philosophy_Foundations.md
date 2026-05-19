@@ -2,16 +2,18 @@
 id: SRT-PHIL-FOUNDATIONS
 type: theory
 tags: [Philosophy, Epistemology, Metaphysics, Paradox, Hybrid]
-status: axiomatic_hybrid_v3
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
 claim_level: P2-P5
+canonical: false
 dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
 ---
 
 # SRT Philosophical Foundations (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Foundations_Split/README.md`](Foundations_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Role**: Philosophy domain expansion / core-support text. It re-expresses SRT commitments in philosophical language and comparison problems.

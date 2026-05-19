@@ -2,16 +2,18 @@
 id: SRT-PHIL-AXIOMS
 type: theory
 tags: [Philosophy, Epistemology, Phenomenology, Domain Mapping, Hybrid]
-status: axiomatic_hybrid_v3
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: bridge
-claim_mode: mixed
+claim_mode: bridge
 claim_level: P2-P4
+canonical: false
 dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
 # SRT Philosophical Axioms (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 > **回链头部**：本文是 Philosophy domain axiomatic mapping / bridge support。它不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md` 或 `Core/SRT_Core_21b_Constitutive_Theorems.md`。本文中的“axioms”是 Philosophy 板块映射公理，主要对应 P2/P3；涉及操作化候选或可证伪预测时对应 P4。
 > **依赖锚点**：`Governance/SRT_CLAIM_LADDER.md`、`Core/SRT_Core_21_Formal_Axioms.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md`。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P4` 约束本文为 Philosophy mapping support；标题中的 “Axioms” 不表示 P0/P1 core axiom body。

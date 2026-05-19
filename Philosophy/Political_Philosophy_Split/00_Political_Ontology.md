@@ -5,8 +5,9 @@ tags: [PoliticalPhilosophy, Split, Ontology, State, People, Sovereignty]
 status: active_v1
 layer: L1
 epistemic_layer: bridge
-claim_mode: mixed
+claim_mode: navigation
 claim_level: P2-P3
+canonical: false
 ---
 
 # Political Ontology

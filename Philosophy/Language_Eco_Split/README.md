@@ -7,14 +7,15 @@ layer: meta
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
-dependency: [SRT-SOC-THEORY-05]
+dependency: [SRT-PHILOSOPHY-CLAIM-STATUS, SRT-SOC-THEORY-05]
 ---
 
 # SRT SocTheory Language Eco Split Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/ethics/political/social-theory 句式必须回读 `../SRT_Philosophy_Claim_Status.md` 与相关 PH-SS guardrails。
 - 原始总文（保留，不删内容）：[`../SRT_SocTheory_05_Language_Eco.md`](../SRT_SocTheory_05_Language_Eco.md)
-- Source owner bytes: `50696`
-- Source owner SHA-256: `f59f4e864441352824133f347c4cf6be8715747977035a631a5a73dca5eb5642`
+- Source owner bytes: `51077`
+- Source owner SHA-256: `f3887412693b3babaea1a350f9bc68abf0d887f126198075ac99c414b2944fcd`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

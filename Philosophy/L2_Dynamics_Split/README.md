@@ -7,14 +7,15 @@ layer: meta
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
-dependency: [SRT-SOC-THEORY-06]
+dependency: [SRT-PHILOSOPHY-CLAIM-STATUS, SRT-SOC-THEORY-06]
 ---
 
 # SRT SocTheory L2 Dynamics Split Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/ethics/political/social-theory 句式必须回读 `../SRT_Philosophy_Claim_Status.md` 与相关 PH-SS guardrails。
 - 原始总文（保留，不删内容）：[`../SRT_SocTheory_06_L2_Dynamics.md`](../SRT_SocTheory_06_L2_Dynamics.md)
-- Source owner bytes: `57350`
-- Source owner SHA-256: `c4e2f8fe1b3a148af9ed1b6e0bd7b28e8d31278078f005956873da854b958842`
+- Source owner bytes: `57727`
+- Source owner SHA-256: `56336b3447f82097c5b5a7bc5fce951826a4b7577a3e18eec22cfaa737e6abae`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

@@ -3,9 +3,10 @@ id: SRT-PHIL-FOUNDATIONS
 type: theory
 tags: [Philosophy, Epistemology, Metaphysics, Paradox, Hybrid]
 layer: L1
-status: axiomatic_hybrid_v3
+status: active_v1
 epistemic_layer: bridge
-claim_mode: translation
+claim_mode: navigation
+canonical: false
 dependency: [SRT-L0-METAPHYSICS, SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-PHIL-AXIOMS]
 ---
 

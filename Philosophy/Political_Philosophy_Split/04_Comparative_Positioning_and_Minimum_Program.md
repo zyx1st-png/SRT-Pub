@@ -5,8 +5,9 @@ tags: [PoliticalPhilosophy, Split, Comparative, Liberalism, Conservatism, Social
 status: active_v1
 layer: L1
 epistemic_layer: bridge
-claim_mode: mixed
+claim_mode: navigation
 claim_level: P2-P4
+canonical: false
 ---
 
 # Comparative Positioning and Minimum Program

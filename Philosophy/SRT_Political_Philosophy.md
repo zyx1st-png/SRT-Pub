@@ -2,11 +2,12 @@
 id: SRT-POLITICAL-PHILOSOPHY
 type: theory
 tags: [PoliticalPhilosophy, Legitimacy, State, Rights, Democracy, Justice, Governance, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: mixed
 claim_level: P2-P4
+canonical: false
 dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-PHIL-ETHICS]
 see_also: [SRT-SOC-ECONOMICS, SRT-POLITICAL-RIGHTS, SRT-PHIL-ETHICS]
 created: 2026-04-22
@@ -14,6 +15,7 @@ created: 2026-04-22
 
 # SRT Political Philosophy (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 > **回链头部**：本文是 Philosophy domain political-theory mainline / bridge support。它不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md` 或 `Core_Law/SRT_L0_Metaphysics.md`。
 > **定位**：本文尝试把国家、权利、合法性、民主、结构性不公、危机决断与政治病理，统一重写为多主体选择如何共同生成、稳定、封闭并再打开现实的过程。
 > **Claim-level note**：本文以 P2/P3 为主：政治本体论与规范解释主要为 canonical interpretation / bridge mapping；制度判准、阈值、操作化候选与失效条件属于 P4。不得将本文中的政治制度设计句子反向升级为 P0/P1 core axiom。

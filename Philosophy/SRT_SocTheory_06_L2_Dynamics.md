@@ -2,15 +2,17 @@
 id: SRT-SOC-THEORY-06
 type: theory
 tags: [L2, Dynamics, Bateson, Schismogenesis, Complexity, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
+canonical: false
 dependency: [SRT-SOC-THEORY-05]
 ---
 
 # SRT Social Theory Part 3: L2 Dynamics & Schismogenesis (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`L2_Dynamics_Split/README.md`](L2_Dynamics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 

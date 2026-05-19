@@ -2,15 +2,17 @@
 id: SRT-SOC-01
 type: core_module
 tags: [Social Construction, Sociology, Axioms, Collective Dynamics, TMT, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
+canonical: false
 dependency: [SRT-SOC-THEORY-04, SRT-AXIOMS-SOC]
 ---
 
 # SRT Sociology I: Social Construction & TMT (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Construction Axioms (AI-Readable).

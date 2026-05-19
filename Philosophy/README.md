@@ -13,6 +13,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STAT
 
 # SRT Philosophy — Section Guide
 
+> **Metadata cleanup note（2026-05）**：本 README 是 Philosophy section guide，不定义 primitives；历史文件名中的 axiom/theorem/canonical 句式必须回读 `SRT_Philosophy_Claim_Status.md` 与 PH-SS guardrails。
 > **Purpose**: This folder translates SRT into philosophical language: ontology, epistemology, phenomenology, ethics, political philosophy, and social theory. It is an **interpretive bridge**, not the canonical source for primitive SRT definitions.
 
 > **2026-04-27 READ-FIRST UPDATE**: For future human and machine readers, start with the PH-SS sequence: `00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` → `01_PH_SS_Objection_Crosswalk.md` → `02_PH_SS_Hardening_Execution_Plan.md`. These files concentrate the current soft points and upgrade map: `L_0` ontology, selection-before-existence, selection realism, layered realism, anti-idealism, anti-relativism, `Psi_f` layering, `d-value`, normativity, social ontology, consciousness thresholds, and non-reductive validation.

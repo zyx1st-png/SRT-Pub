@@ -2,10 +2,11 @@
 id: SRT-SOC-ECONOMICS
 type: theory
 tags: [SocialEconomics, Markets, Value, Inequality, Hybrid]
-status: axiomatic_hybrid_v2
+status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
+canonical: false
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-AXIOMS-SOC]
 ---
 

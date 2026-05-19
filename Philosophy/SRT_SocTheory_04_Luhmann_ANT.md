@@ -2,15 +2,17 @@
 id: SRT-SOC-THEORY-04
 type: theory
 tags: [Luhmann, ANT, Systems Theory, Latour, Sociology, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
+canonical: false
 dependency: [SRT-SOC-THEORY-05, SRT-AXIOMS-SOC]
 ---
 
 # SRT Social Theory Part 1: Systems & Networks (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 

@@ -2,16 +2,18 @@
 id: SRT-SOC-ECONOMICS
 type: theory
 tags: [SocialEconomics, Markets, Value, Inequality, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
+canonical: false
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, Core_Law/SRT_Reference_Scaling, SRT-AXIOMS-SOC]
 see_also: [SRT-POLITICAL-RIGHTS]
 ---
 
 # SRT Social Economics (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Social_Economics_Split/README.md`](Social_Economics_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 

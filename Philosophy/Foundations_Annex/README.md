@@ -5,12 +5,14 @@ tags: [Annex, Interface, Boundary]
 status: active_v1
 layer: meta
 epistemic_layer: bridge
-claim_mode: translation
-dependency: []
+claim_mode: navigation
+canonical: false
+dependency: [SRT-PHILOSOPHY-CLAIM-STATUS, ]
 ---
 
 # SRT-PHIL-FOUNDATIONS Annex Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/ethics/political/social-theory 句式必须回读 `../SRT_Philosophy_Claim_Status.md` 与相关 PH-SS guardrails。
 - 原始总文：[`../SRT_Philosophy_Foundations.md`](../SRT_Philosophy_Foundations.md)
 - 00_General_Boundary_Block：[`00_General_Boundary_Block.md`](00_General_Boundary_Block.md)
 - 01_Synchronicity_Interface_Batch：[`01_Synchronicity_Interface_Batch.md`](01_Synchronicity_Interface_Batch.md)

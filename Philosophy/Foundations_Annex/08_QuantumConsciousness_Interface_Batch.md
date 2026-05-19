@@ -8,7 +8,7 @@ tags:
 status: active_v1
 layer: bridge
 epistemic_layer: bridge
-claim_mode: translation
+claim_mode: navigation
 canonical: false
 parent: Philosophy/SRT_Philosophy_Foundations.md
 date: 2026-03-05

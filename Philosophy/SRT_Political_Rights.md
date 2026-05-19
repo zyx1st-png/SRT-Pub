@@ -5,13 +5,15 @@ tags: [PoliticalPhilosophy, Rights, Authorization, Governance, d-value, Democrac
 status: draft_v1
 layer: L1
 epistemic_layer: bridge
-claim_mode: canonical
+claim_mode: mixed
+canonical: false
 dependency: [SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, SRT-SOC-ECONOMICS]
 created: 2026-04-06
 ---
 
 # SRT 政治权利理论：权利、授权与d值的选择论基础
 
+> **Claim-status note（2026-05）**：This Philosophy / Ethics / Social Theory file is bridge / mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, truth, moral legitimacy, freedom, love, grief, social ontology, political authority, or institutional legitimacy. Read with `SRT_Philosophy_Claim_Status.md` and relevant PH-SS guardrails.
 > **目的**：从SRT第一性原理推导权利的本体论定义，建立以决策d值为核心的授权合法性框架，并分析其对民主制度的含义。
 > 本文件是2026-04-06会话中形成的核心理论推进的正式回写。
 > 与 `Philosophy/SRT_Social_Economics.md` 为兄弟关系：后者处理市场与经济不平等，本文件处理政治权利与制度授权。
