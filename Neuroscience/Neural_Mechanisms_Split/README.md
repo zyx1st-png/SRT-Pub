@@ -7,14 +7,15 @@ layer: meta
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
-dependency: [SRT-NEURO-MECH-001]
+dependency: [SRT-NEUROSCIENCE-CLAIM-STATUS, SRT-NEURO-MECH-001]
 ---
 
 # SRT Neural Mechanisms Split Index
 
+> **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/clinical 句式必须回读 `../SRT_Neuroscience_Claim_Status.md` 与 `../SRT_Neuro_Axioms_Claim_Status.md`。
 - 原始总文（保留，不删内容）：[`../SRT_Neural_Mechanisms.md`](../SRT_Neural_Mechanisms.md)
-- Source owner bytes: `113277`
-- Source owner SHA-256: `facdf9434dec839988485c973a557a0cd3ddcf7e2666068520efe76df2a0285f`
+- Source owner bytes: `113630`
+- Source owner SHA-256: `04d310c5584dcbc6fe69e8ca7b7d9423da99c744dd53ff7997a362354f27517c`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

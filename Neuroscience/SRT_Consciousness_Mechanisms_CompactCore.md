@@ -5,7 +5,8 @@ tags: [Neuroscience, Consciousness, Compact Core, GNW, Binding, PH-SS, Subjectho
 status: active_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: bridge
+canonical: false
 dependency:
   - SRT-NEURO-MECH-001
   - SRT-NEURO-MECH-B
@@ -17,6 +18,7 @@ dependency:
 
 # SRT Consciousness Mechanisms — Compact Core
 
+> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
 > **定位**：本文件是 `SRT_Consciousness_Mechanisms.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把点燃、绑定、睡眠、带宽竞争、行进波与能动性统一到意识选择机制中。  
 > **关系**：不替代原文；原文保留 GNWT/IIT 对照、睡眠维护、算子短路与实验预测的完整展开。  

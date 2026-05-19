@@ -2,15 +2,17 @@
 id: SRT-NEURO-08
 type: dynamics
 tags: [Immune, Distributed Operator, Inflammation, Gut-Brain, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: bridge
+canonical: false
 dependency: [SRT-NEURO-07, SRT-CORE-000]
 ---
 
 # SRT Neuroscience Extension III: Distributed Systems (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Immune_Dist_Split/README.md`](Immune_Dist_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
 > **Version 2.0 (Hybrid)**

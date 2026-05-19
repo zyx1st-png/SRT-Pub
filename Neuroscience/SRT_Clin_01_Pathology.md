@@ -2,15 +2,17 @@
 id: SRT-CLIN-01
 type: dynamics
 tags: [Pathology, NDE, Schizophrenia, L2 Inversion, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_v1
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation
+canonical: false
 dependency: [SRT-NEURO-AXIOMS-001]
 ---
 
 # SRT Neuroscience II: Pathology & Anomalies (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 

@@ -23,7 +23,7 @@ canonical: false
 
 | Risk | Size | File | Split / handling |
 |---|---:|---|---|
-| urgent | 110.6 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
+| urgent | 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | urgent | 109.9 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | action | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | action | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
@@ -41,7 +41,7 @@ canonical: false
 | warning | 65.1 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
 | warning | 64.2 KiB | `Physics/SRT_Phys_09_Formalism_Ext.md` | Physics/Formalism_Ext_Split |
 | warning | 62.6 KiB | `Philosophy/SRT_Ethics_Agency.md` | Philosophy/Ethics_Agency_Split |
-| warning | 59.1 KiB | `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | Neuroscience/Immune_Dist_Split |
+| warning | 59.5 KiB | `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | Neuroscience/Immune_Dist_Split |
 | warning | 57.5 KiB | `Core_Law/SRT_L1_Formalism.md` | Core_Law/L1_Formalism_Split |
 | warning | 56.6 KiB | `Philosophy/SRT_Social_Cognition.md` | Philosophy/Social_Cognition_Split |
 | warning | 56.0 KiB | `Philosophy/SRT_SocTheory_06_L2_Dynamics.md` | Philosophy/L2_Dynamics_Split |
@@ -135,7 +135,7 @@ canonical: false
 
 | Size | File | Split status |
 |---:|---|---|
-| 110.6 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
+| 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | 109.9 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | 90.6 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |

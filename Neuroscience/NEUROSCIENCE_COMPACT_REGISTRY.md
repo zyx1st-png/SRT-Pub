@@ -5,12 +5,14 @@ tags: [Neuroscience, Compact Core, Registry]
 status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical_facing_index
+claim_mode: navigation
+canonical: false
 dependency: [SRT-CANONICAL-REGISTRY, SRT-NEUROSCIENCE-CLAIM-STATUS, SRT-NEURO-AXIOMS-001]
 ---
 
 # SRT Neuroscience Compact Registry
 
+> **Metadata cleanup note（2026-05）**：本 registry 是 navigation layer，`canonical: false`；它路由 neuroscience materials，不定义 `d-value`、`Ψ_f`、consciousness、clinical diagnosis 或 treatment claims。
 本页汇总 Neuroscience 板块当前的 compact core、桥接入口、claim-status guardrail 与 hardening draft，并给出最短阅读路径。
 
 ## 0. Current structure

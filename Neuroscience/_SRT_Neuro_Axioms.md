@@ -2,15 +2,17 @@
 id: SRT-NEURO-AXIOMS-001
 type: theory
 tags: [Neuroscience, Bridge, Axioms, Hybrid]
-status: axiomatic_hybrid_v2
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: bridge
+canonical: false
 dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Core_Law/SRT_Reference_Dynamics]
 ---
 
 # SRT Neuroscience Axioms & Bridge
 
+> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Axioms (AI-Readable).
 > **Part B** contains the Expanded Theoretical Discourse (Human-Readable Context).

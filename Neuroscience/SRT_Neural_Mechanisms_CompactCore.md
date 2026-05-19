@@ -5,12 +5,14 @@ tags: [Neuroscience, Mechanisms, Compact Core, Ghost Operator]
 status: active_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: bridge
+canonical: false
 dependency: [SRT-NEURO-AXIOMS-001, SRT-NEURO-MECH-001]
 ---
 
 # SRT Neural Mechanisms — Compact Core
 
+> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
 > **定位**：本文件是 `SRT_Neural_Mechanisms.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把神经机制重写为选择动力学，而不是单纯信息处理。  
 > **关系**：不替代原文；原文保留病理参数化、免疫接口、量子基质与工作记忆振荡等展开层。  

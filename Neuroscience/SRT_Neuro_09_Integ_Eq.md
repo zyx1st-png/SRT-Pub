@@ -2,15 +2,17 @@
 id: SRT-NEURO-09
 type: reference
 tags: [Integration, Equations, IIT, GNWT, Hybrid]
-status: axiomatic_hybrid_v1
+status: bridge_realign_v1
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: bridge
+canonical: false
 dependency: [SRT-NEURO-08, SRT-CORE-000, SRT-NEURO-MECH-001]
 ---
 
 # SRT Neuroscience Extension IV: Integration & Equations (Hybrid Edition)
 
+> **Claim-status note（2026-05）**：This neuroscience file is bridge / lab / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, consciousness, pathology, diagnosis, treatment, NDE, or AI subjecthood. Read with `SRT_Neuroscience_Claim_Status.md` and, where relevant, `SRT_Neuro_Axioms_Claim_Status.md`.
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Integration Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
