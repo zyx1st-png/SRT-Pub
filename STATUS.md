@@ -14,7 +14,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 > **Connector-safe reading path**: This dashboard is moderately long. For connector reads, start with [`STATUS_Split/README.md`](STATUS_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new status authority.
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-05-17
+> **最后更新**：2026-05-19
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -51,6 +51,8 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`
 
 ## 最近关键推进
+
+- `2026-05-19`：序章叙事骨架重构（`draft_v13`）。按"旧图景→旧图景的问题→内部补不好→新图景条件→SRT 生成图景"五步重组。新增§1"旧图景的三幅面孔"（现代科学/哲学/社会三层），§2 单独承认旧图景成功，§3"世界过早完成"为核心诊断，§4 明确起点顺序问题（内部补丁失效机制），§5 现代 AI/平台收缩为显影剂段落，§6"新图景必须做什么"五条件，§7 生成链作为 SRT 的正式出场。文件：`01_Source_Intuition/BOOK/00_序_为什么要从存在走向秩序.md`，branch `claude/restructure-preface-narrative-sJ1CY`。
 
 - `2026-05-17`：Pipeline 1 审查 Royal Society / *Philosophical Transactions A* theme issue `World models in natural and artificial intelligence`（issue DOI:`10.1098/rsta/384/2320`；volume 384 issue 2320；published `2026-05-14`；Royal Society issue page 被 Cloudflare 阻断，Crossref metadata + abstracts read）；裁决为 **B 类高优先观察 / 拆分候选**。已新增 SourceCard（`Materials/2026/SRC_2026_05_14_AI_WorldModels_RSTA_Issue.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：issue-level 输入过宽且未 full close-read article PDF，不能写成 AI consciousness、life-mind continuity、world-model competence、self-modelling 或 LLM emergence 已支持 SRT；后续应按单篇 DOI 重审，优先 `10.1098/rsta.2025.0082`、`10.1098/rsta.2025.0011`、`10.1098/rsta.2024.0528`、`10.1098/rsta.2024.0531`、`10.1098/rsta.2025.0004`、`10.1098/rsta.2025.0014`。
 - `2026-05-15`：书稿第 14、16 章优化回写——branch `claude/review-book-optimization-Cgy1G`。(1) **Ch16 v9/v11**（上一轮遗留）：v9（`16_d-value…v9_philosophy_crossdomain_hardening.md`）在 v8 基础上补入形式化种子、五路跨域压力线与悖论 Ch17 桥接；v11（`16_d-value…v11_temporal_structure_refinement.md`）在用户压缩版 v10 基础上做六处定点修订，含§5 承诺时间结构、§6 名称替换窄化、§7 d_mobile 指针、§10 结构缺口重构。(2) **Ch14 v18**（`14_在乎是什么_v18_epsilon_necessity_chain_hardening.md`）在 v17 基础上六处定点强化：①§1 末尾新增 ε_pg→选择→路径→承重位置→攸关→在乎六步推导链总表，标注每步必然性来源；②§2 开头新增细菌层级最小情形段落，说明承重位置是 ε_pg 内置要求而非进化附加功能；③§3 中部新增必然性论证——"承重位置不是生命的馈赠，不是意识的产物，也不是道德发明，它是 ε_pg 的内置后果"；④§15 中部新增理论对比段，指出 Frankfurt（意志主体）/ Heidegger（此在）/ 进化生物学（有机体）都从链条中段切入，SRT 从 ε_pg 推导上行；⑤§1 加强了卷三入口三判据承重基础定位；⑥§18 第五判断末尾固定"攸关是逻辑必然，不是经验观察"。v18 同步提升为 maintext（`01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/14_在乎是什么.md`，`maintext_status: maintext_lock`）。
