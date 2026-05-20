@@ -9,7 +9,7 @@ updated: 2026-05-18
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: phi_defense_chain_bridge_pass_2026-05-18
+last_pass: part01_ch02_ch06b_style_philosophy_hardening_2026-05-20
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -81,12 +81,12 @@ last_pass: phi_defense_chain_bridge_pass_2026-05-18
 |---:|---|---|---|
 | 0 | 序：为什么要从存在走向秩序 | `draft_v12`，已完成第三类方向多轮加压 | 暂作当前基准版；后续只做小幅出版级精修 |
 | 1 | 现实不是先给定的 | `stable_candidate / part01_maintext_sync`，来源 `draft_v17_third_tier_polish` | 只随全书一致性微调 |
-| 2 | L0 不是虚无 | `stable_candidate / part01_maintext_sync`，来源 `draft_v14_third_tier_precision` | 只随术语校准微调 |
-| 3 | ε_pg：L0 的最小非中立性 | `stable_candidate / part01_maintext_sync`，来源 `draft_v13_argument_sharpening` | 只随术语校准微调 |
-| 4 | 选择不是挑选 | `stable_candidate / part01_maintext_sync`，来源 `draft_v12_third_tier_argument` | 只随全书一致性微调 |
-| 5 | 锚定让一留下 | `stable_candidate / part01_maintext_sync`，来源 `draft_v16_third_tier_final` | 只随全书一致性微调 |
-| 6 | 秩序如何成为背景 | `stable_candidate / part01_maintext_sync`，来源 `draft_v10_third_tier_final` | 只随卷二入口微调 |
-| 6b | 卷一命题组：第一条生成链 | `stable_candidate / part01_maintext_sync`，来源 `draft_v2_proposition_bridge` | 只随第 7 章入口微调 |
+| 2 | L0 不是虚无 | `stable_candidate / part01_maintext_sync`，来源 `draft_v16_style_philosophy_hardening` | 只随术语校准微调 |
+| 3 | ε_pg：L0 的最小非中立性 | `stable_candidate / part01_maintext_sync`，来源 `draft_v14_style_philosophy_hardening` | 只随术语校准微调 |
+| 4 | 选择不是挑选 | `stable_candidate / part01_maintext_sync`，来源 `draft_v13_style_philosophy_hardening` | 只随全书一致性微调 |
+| 5 | 锚定让一留下 | `stable_candidate / part01_maintext_sync`，来源 `draft_v17_style_philosophy_hardening` | 只随全书一致性微调 |
+| 6 | 秩序如何成为背景 | `stable_candidate / part01_maintext_sync`，来源 `draft_v11_style_philosophy_hardening` | 只随卷二入口微调 |
+| 6b | 卷一命题组：第一条生成链 | `stable_candidate / part01_maintext_sync`，来源 `draft_v3_style_philosophy_hardening` | 只随第 7 章入口微调 |
 | 7 | 地形如何反过来选择人 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v18_final_literary_philosophical_polish` | 只随全书微调 |
 | 8 | 选择算子：从可成为性到显现 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v5r_terrain_embodiment_focus_pass` | 只做术语校准 |
 | 9 | 排除：选择的阴影 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v6_philosophical_depth_pass` | 只做与 10/11 的桥句校准 |
