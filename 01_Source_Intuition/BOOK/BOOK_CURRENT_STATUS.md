@@ -5,11 +5,11 @@ status: active_draft
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-05-18
+updated: 2026-05-20
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: part01_ch02_ch06b_style_philosophy_hardening_2026-05-20
+last_pass: part02_ch07_ch13b_style_philosophy_hardening_2026-05-20
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -87,14 +87,14 @@ last_pass: part01_ch02_ch06b_style_philosophy_hardening_2026-05-20
 | 5 | 锚定让一留下 | `stable_candidate / part01_maintext_sync`，来源 `draft_v17_style_philosophy_hardening` | 只随全书一致性微调 |
 | 6 | 秩序如何成为背景 | `stable_candidate / part01_maintext_sync`，来源 `draft_v11_style_philosophy_hardening` | 只随卷二入口微调 |
 | 6b | 卷一命题组：第一条生成链 | `stable_candidate / part01_maintext_sync`，来源 `draft_v3_style_philosophy_hardening` | 只随第 7 章入口微调 |
-| 7 | 地形如何反过来选择人 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v18_final_literary_philosophical_polish` | 只随全书微调 |
-| 8 | 选择算子：从可成为性到显现 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v5r_terrain_embodiment_focus_pass` | 只做术语校准 |
-| 9 | 排除：选择的阴影 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v6_philosophical_depth_pass` | 只做与 10/11 的桥句校准 |
-| 10 | 不可逆性：撤回不是逆操作 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v15_third_tier_final` | 保持 A′ 模型 |
-| 11 | 本体论摩擦：为什么现实不会免费成形 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v13_literary_final_pass` | 保持四种支付 |
-| 12 | 可支付性：为什么路径越走越像路 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v17_final_literary_polish` | 保持可支付性三条件 |
-| 13 | 三判据：可延续、可协调、可再选择 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v9_necessity_hardening` | 强化主体/价值桥 |
-| 13b | 卷二小结：选择如何在地形中发生 | `stable_candidate / draft_v1_part02_bridge` | 作为卷二命题组 / 短桥，后续只随卷三入口微调 |
+| 7 | 地形如何反过来选择人 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v19_style_philosophy_hardening` | 只随全书微调 |
+| 8 | 选择算子：从可成为性到显现 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v6_style_philosophy_hardening` | 只做术语校准 |
+| 9 | 排除：选择的阴影 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v7_style_philosophy_hardening` | 只做与 10/11 的桥句校准 |
+| 10 | 不可逆性：撤回不是逆操作 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v16_style_philosophy_hardening` | 保持 A′ 模型 |
+| 11 | 本体论摩擦：为什么现实不会免费成形 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v14_style_philosophy_hardening` | 保持四种支付 |
+| 12 | 可支付性：为什么路径越走越像路 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v18_style_philosophy_hardening` | 保持可支付性三条件 |
+| 13 | 三判据：可延续、可协调、可再选择 | `stable_candidate / post_part02_consistency_weld`，来源 `draft_v10_style_philosophy_hardening` | 强化主体/价值桥 |
+| 13b | 卷二小结：选择如何在地形中发生 | `stable_candidate / draft_v2_style_philosophy_hardening` | 作为卷二命题组 / 短桥，后续只随卷三入口微调 |
 | 14 | 后果攸关谁 | current mainline：`Part_03_从选择到主体与价值/14_后果攸关谁.md`，`draft_v3_stable_candidate` | 升级完成：三处精修（标题答案前置、承重→攸关桥段扩展、三判据×两层映射表）；下一步只随卷三一致性微调 |
 | 15 | 在乎是什么 | current mainline：`Part_03_从选择到主体与价值/15_在乎是什么.md`，`draft_v3_stable_candidate` | 升级完成：两处精修（主体经验层入口加厚、d-value三深度直觉扩展）；下一步只随d-value canonical微调 |
 | 16 | 价值不是偏好 | current mainline：`Part_03_从选择到主体与价值/16_价值不是偏好.md`，`stable_candidate` | 只随 d-value canonical 微调 |
