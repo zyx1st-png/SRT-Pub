@@ -22,6 +22,8 @@ related:
   - AI/Consciousness_Framework_Split/00_Formal_Core.md
   - Philosophy/SRT_Ethics_Agency.md
   - 01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md
+optimization_axis:
+  - reader_context_ladder_2026_05_21
 layer: L1
 epistemic_layer: bridge
 claim_mode: companion_exposition
@@ -135,6 +137,8 @@ SRT 要问：后果有多能回来？
 d-value 不是在 ε_pg 之外额外发明的一套价值尺度。它是同一条生成链在主体与价值层的刻度化表达：ε_pg 建立最低非中立性与最低落点；选择让一成形；锚定让一留下；一的扩张让更多后果进入该位置的后续条件；后果回流让这些后果开始改写该位置之后还能怎样选择。d-value 衡量的，正是这种回流后果对承重位置的改写带宽。
 
 **本章命题**：d-value 不是偏好强度、情绪音量或智能容量，而是某类后果回到一个选择位置后，能够改写其后续选择地形的深度。若后果只被观察、计算或表达，d 仍可能很低；若后果会改变这个位置之后还能怎样选择、必须承担什么、不能无损切断什么，d 才真正升高。
+
+第十六章已经说明价值不能还原为偏好；本章才尝试给“在乎有多深”一个最小刻度。d-value 在这里不是把价值数学化成分数，也不是把智能、偏好或情绪强度换名。它只承担一个有限任务：标记某类后果回到选择位置后，能够改写其后续选择地形的深度。
 
 ---
 

@@ -484,3 +484,19 @@ L2 / 地形作为过去选择沉积后的摩擦分配
 - 已在相关 frontmatter `optimization_axis` 标注 `reader_context_ladder_2026_05_21`。
 
 正文文件顺序不变；canonical 文件未修改。
+
+## 2026-05-21 第二至第四卷读者上下文阶梯 pass（卷五 outline 护栏）
+
+本次继续使用 `srt-book-reader-context-ladder` 对卷二、卷三、卷四稳定主稿执行入口级读者扶手回写。性质为书稿表达 / P5 companion exposition pass；不修改 canonical 文件，不新增 canonical 定义，不改变章节顺序。
+
+**正文修订**：
+- 卷二 Ch07–Ch13 / 13b：补入从“地形先于菜单”到选择算子、排除、不可逆、Ψ_f、可支付性、三判据的逐章一步桥，降低机制链传送带感。
+- 卷三 Ch14–Ch22：补入从后果回流到攸关、在乎、价值、d-value、d 扩张、选择者位置、σ_sr、自我意识、d_mobile 的局部扶手，避免完整主体/价值链过早上桌。
+- 卷四 Ch23–Ch30：补入从卷三能动性缺口到 L2 双面性、硬化、致命 L2、遮蔽、冻结态、疼痛/苦难、苦难现象学、反最小化原则的入口桥，避免卷四被读成病理学或社会批评而脱离主链。
+- 卷五：当前仓库只有 `Outline_Parts/05_卷五_从个体秩序到共同秩序.md`，尚无 `Part_05_*` 正文主稿；本轮只在 outline 标注写作护栏，不伪造正文优化完成状态。
+
+**版本说明**：
+- 已在被改章节 frontmatter `optimization_axis` 标注 `reader_context_ladder_2026_05_21`。
+- 版本历史由 Git branch / PR diff 承接，未额外生成 `Versioned_Drafts` 备份。
+
+正文文件顺序不变；canonical 文件未修改。
