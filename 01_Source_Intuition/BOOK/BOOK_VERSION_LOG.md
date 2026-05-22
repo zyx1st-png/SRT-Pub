@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-05-21
+updated: 2026-05-17
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -463,40 +463,5 @@ L2 / 地形作为过去选择沉积后的摩擦分配
 - `BOOK_CURRENT_STATUS.md`：同步 Ch07–Ch13b 当前来源版本与 last_pass。
 - `Outline_Parts/02_卷二_选择的本性.md`：同步卷二优化状态与 Ch07–Ch13b 当前来源版本。
 - `BOOK_VERSION_LOG.md`：追加本条记录。
-
-正文文件顺序不变；canonical 文件未修改。
-## 2026-05-21 第一批读者上下文阶梯 pass（序章 + 卷一）
-
-本次使用 `srt-book-reader-context-ladder` 对序章与卷一稳定主稿执行轻量读者扶手回写。性质为书稿表达 / P5 companion exposition pass；不修改 canonical 文件，不新增 canonical 定义，不改变章节顺序。目标不是解释更多，而是把作者全局视角降回读者当章可承受的局部路径。
-
-**正文修订**：
-- 序章：在开篇后补入读法提示，说明读者不需要预先掌握后文术语，先完成“旧图景为什么过早完成世界”的移动。
-- Ch01：在本章命题后补入局部任务说明，延迟后文术语压力，只要求读者先看见“给定感有来路”。
-- Ch02：补入 L0 的读者入口边界：它先只挡住虚无与隐藏仓库两个失败答案，不提前承担全书机制。
-- Ch03：补入 ε_pg 的读者入口边界：不读成公式、能量或神秘推动力，只回答 L0 是否可完全平铺的问题。
-- Ch04：补入从 ε_pg 到选择的一步桥，说明最低非中立性还不是具体形状，选择作为定形动作被逼出。
-- Ch05：补入从选择到锚定的一步桥，说明“出现”不能直接等同“留下”。
-- Ch06：补入从单个锚到秩序的一步桥，并降低 L2 提前承重风险。
-- Ch06b：把生成链显式标为“临时路标”，避免被读成考试表或后文概念的提前定义。
-
-**版本说明**：
-- 本轮直接在 PR 分支修改稳定主稿入口；版本历史由 Git branch / PR diff 承接，未额外生成 `Versioned_Drafts` 备份。
-- 已在相关 frontmatter `optimization_axis` 标注 `reader_context_ladder_2026_05_21`。
-
-正文文件顺序不变；canonical 文件未修改。
-
-## 2026-05-21 第二至第四卷读者上下文阶梯 pass（卷五 outline 护栏）
-
-本次继续使用 `srt-book-reader-context-ladder` 对卷二、卷三、卷四稳定主稿执行入口级读者扶手回写。性质为书稿表达 / P5 companion exposition pass；不修改 canonical 文件，不新增 canonical 定义，不改变章节顺序。
-
-**正文修订**：
-- 卷二 Ch07–Ch13 / 13b：补入从“地形先于菜单”到选择算子、排除、不可逆、Ψ_f、可支付性、三判据的逐章一步桥，降低机制链传送带感。
-- 卷三 Ch14–Ch22：补入从后果回流到攸关、在乎、价值、d-value、d 扩张、选择者位置、σ_sr、自我意识、d_mobile 的局部扶手，避免完整主体/价值链过早上桌。
-- 卷四 Ch23–Ch30：补入从卷三能动性缺口到 L2 双面性、硬化、致命 L2、遮蔽、冻结态、疼痛/苦难、苦难现象学、反最小化原则的入口桥，避免卷四被读成病理学或社会批评而脱离主链。
-- 卷五：当前仓库只有 `Outline_Parts/05_卷五_从个体秩序到共同秩序.md`，尚无 `Part_05_*` 正文主稿；本轮只在 outline 标注写作护栏，不伪造正文优化完成状态。
-
-**版本说明**：
-- 已在被改章节 frontmatter `optimization_axis` 标注 `reader_context_ladder_2026_05_21`。
-- 版本历史由 Git branch / PR diff 承接，未额外生成 `Versioned_Drafts` 备份。
 
 正文文件顺序不变；canonical 文件未修改。
