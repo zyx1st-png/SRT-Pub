@@ -1,5 +1,5 @@
 ---
-source_id: SRC_2026_05_19_AI_Language_Autogeneration_IAI
+source_id: SRC-2026-05-19-AI-LANGUAGE-AUTOGENERATION-IAI
 title: "LLMs show language does not describe reality"
 source_type: essay
 domain: AI / Philosophy / Language
@@ -12,13 +12,15 @@ date_added: 2026-05-20
 evidence_level: commentary
 reliability_level: medium_for_conceptual_pressure_low_for_empirical_claims
 srt_relevance: "语言不是现实描述器，而是生成、协调和条件满足脚本的 P3/P5 桥接压力；对 LLM 语义、语言作为 L2 约束传播、AI stake 边界有用。"
-integration_priority: watchlist
+integration_priority: B_watchlist
 related_srt_claims:
   - AI/SRT_AI_Claim_Status.md
   - AI/AI_POSITIONING_NOTE.md
   - Bridge/SRT_Context_Coherence_Intelligence_Interface.md
   - Philosophy/SRT_SocTheory_05_Language_Eco.md
 tags: [AI, LLM, Language, Grounding, Meaning, Autogeneration, Coordination, IAI]
+canonical: false
+claim_mode: evidence
 ---
 
 # SourceCard — IAI / Barenholtz: LLMs show language does not describe reality
