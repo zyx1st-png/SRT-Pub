@@ -17,7 +17,7 @@ ai_priority: 1
 
 ## Last updated
 
-- 2026-05-17
+- 2026-05-23
 
 ## Current repo state
 
@@ -47,9 +47,9 @@ ai_priority: 1
 
 ## Recent critical updates
 
-1. `2026-05-17` — Pipeline 1 triaged Royal Society / *Philosophical Transactions A* theme issue `World models in natural and artificial intelligence` as **B / high-priority watchlist**. SourceCard created. Do not write issue-level claims as AI consciousness, life–mind continuity, world-model competence, self-modelling, or LLM emergence support for SRT until individual DOIs are close-read.
-2. `2026-05-15` — Book Ch14 / Ch16 hardening and Ch14 v18 maintext lock; see `STATUS.md` for details.
-3. `2026-05-12` — Nature HGA/spike dissociation material entered as peer-reviewed measurement guardrail, not as a direct SRT variable readout.
+1. `2026-05-23` — Pipeline 1 B-class granularity hardened: `B1` = A-convertible high-priority close-read/adjudication candidate; `B2` = guardrail-only; `B3` = public-prose-only / expression-only. Recent May B-class watchlist items have been subtyped in `Operations/_SRT_MATERIAL_LOG.md`.
+2. `2026-05-23` — Pipeline 1 triaged Neuroscience News / Newcastle University `Using Physics Equations to Map Memory Distortions` / `Quantum Emotions` as **B / order-sensitive emotional-memory modeling watchlist**. SourceCard created. Do not use it as proof that emotions are quantum, that the brain is a quantum computer, that quantum cognition proves SRT, or that memory-order distortion directly measures `Ψ_f`, `d`, `T_dir`, trauma, salience, or suffering.
+3. `2026-05-23` — Pipeline 1 triaged Essentia Foundation / Stephen Jarosek `Association as causation: The fabric of meaning and existence itself` as **B / association-vs-selection watchlist**. SourceCard created. Do not use it as proof that SRT equals association ontology, that association is SRT's first principle, or that RQM/quantum contextuality/Kastrup idealism supports SRT ontology.
 
 ## Current high-priority work
 
