@@ -1,10 +1,10 @@
 ---
-id: SRT-BOOK-Q23-AI-DRAFT
+id: SRT-BOOK-Q24-AI-DRAFT
 type: book_chapter_draft
 status: draft_v1
-question: Q23
+question: Q24
 act: 第四幕
-front_title: 第二十三章　AI 问题：为什么 AI 的问题不是它有没有心？
+front_title: 第二十四章　AI 问题：为什么 AI 的问题不是它有没有心？
 based_on:
   - 01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md
   - 01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md
@@ -13,7 +13,7 @@ claim_mode: companion_exposition
 created: 2026-05-24
 ---
 
-# 第二十三章　AI 问题：为什么 AI 的问题不是它有没有心？
+# 第二十四章　AI 问题：为什么 AI 的问题不是它有没有心？
 
 > 你不需要知道推荐算法有没有"意识"，才能发现它系统性地收窄了你的信息视野。算法的问题不是它"像不像人"——而是它如何改变了你能遭遇什么、什么代价最低、什么是默认路径。
 
