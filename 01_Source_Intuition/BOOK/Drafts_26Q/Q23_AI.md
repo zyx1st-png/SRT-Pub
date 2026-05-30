@@ -2,9 +2,9 @@
 id: SRT-BOOK-Q24-AI-DRAFT
 type: book_chapter_draft
 status: draft_v1
-question: Q24
+question: Q23
 act: 第四幕
-front_title: 第二十四章　AI 问题：为什么 AI 的问题不是它有没有心？
+front_title: 第二十三章　AI 问题：为什么 AI 的问题不是它有没有心？
 based_on:
   - 01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md
   - 01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md
