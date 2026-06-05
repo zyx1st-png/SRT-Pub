@@ -3,7 +3,8 @@ id: SRT-BOOK-TERMINOLOGY-DVALUE-GOVERNANCE-2026-06-03
 type: editorial_guide_patch
 status: active
 affects:
-  - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md
+  - 01_Source_Intuition/BOOK/Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md
+  - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q14_价值不是偏好.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q15_关切维度.md
 created: 2026-06-03
@@ -15,7 +16,7 @@ purpose:
 
 # d-value 术语治理补丁
 
-本文件是 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 的临时覆盖说明，用于修复 Q14/Q15 之间的 d-value 定义冲突。
+本文件最初是 `Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 的临时覆盖说明，用于修复 Q14/Q15 之间的 d-value 定义冲突；当前规则已并入 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md`。
 
 ## 1. 最终约定
 
@@ -81,7 +82,7 @@ d-value = 关切宽度 / 赌注化关切轴线展开
 
 ## 4. 对术语指南 v3 的覆盖
 
-若 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 中仍出现：
+若 `Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 中仍出现：
 
 ```text
 d-value → 关切深度 / 不可替代性重量

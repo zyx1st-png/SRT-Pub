@@ -9,7 +9,7 @@ position_in_seven_stages: 第四幕第七站——应用枢纽二：三问与共
 based_on:
   - 01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md
   - 01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md
-  - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md
+  - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md
   - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q22_方向.md

@@ -559,3 +559,26 @@ L2 / 地形作为过去选择沉积后的摩擦分配
 **未改动**：Core/、Core_Law/、_SRT_SYMBOL_TABLE.md、CANONICAL_REGISTRY.md、Operations/、Governance/、Q00、Q09、Archive_52Chapter 旧章节（除术语表）。
 
 Canonical 文件未修改。
+
+## 2026-06-05 书稿元文件同步：Q00-Q28 当前入口收束
+
+本次清理解决根目录书稿结构文件与当前 `Drafts_26Q/Q00-Q28` 正文脱节的问题。
+
+**归档到 `Archive_Meta/`**：
+
+- `BOOK_ARCHITECTURE_MAP_2026-05-30.md`：已被 2026-06-03 Q28 闭合版建筑图取代。
+- `BOOK_TRADITION_BOUNDARY_MAP_2026-05-30.md`：只覆盖早期 Q00-Q20 阶段；当前边界框架由专业阅读简报、Q25-Q28 与当前建筑图承担。
+- `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md`：已被 2026-06-03 v4 术语指南取代。
+- `BOOK_RENUMBERING_DECISION_2026-05-30.md`：Route B 已废止，仅保留决策历史。
+
+**同步内容**：
+
+- `BOOK_CURRENT_STATUS.md` 重写为当前唯一施工入口：明确当前主线是 `Drafts_26Q/Q00-Q28`，旧 `Part_*` / `Outline_Parts` 路线只作为 `Archive_52Chapter/` 历史材料。
+- `BOOK_ARCHITECTURE_MAP_2026-06-03.md` 标为当前 Q00-Q28 建筑图，并指向归档的 05-30 旧图。
+- `BOOK_CORE_PROPOSITIONS_2026-05-30.md` 同步到 Q21-Q28，原“后续章节应展开”改为闭合版命题。
+- `BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` 取消“下一步创建章节卡”旧指令，改为当前问题链参考。
+- `BOOK_CHAPTER_CARDS_2026-05-22.md` 标为当前参考。
+- `Drafts_26Q/` 中仍指向 06-02 术语指南的章节 frontmatter 改为指向 06-03 v4。
+- `_SRT_AGENT_RETRIEVAL_PROFILE.md`、`_SRT_CONTEXT_ROUTER.md` 与本地 `srt-book-editor` 技能同步为 current route。
+
+Canonical 文件未修改。

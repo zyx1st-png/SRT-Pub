@@ -1,12 +1,12 @@
 ---
 id: SRT-BOOK-CHAPTER-CARDS-2026-05-22
 type: book_project_chapter_cards
-status: active_draft
+status: active_current_reference
 canonical: false
 scope: 01_source_intuition_book
 layer: meta
 created: 2026-05-22
-updated: 2026-05-31
+updated: 2026-06-05
 based_on: 01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md
 authority_note: 本文件是写作操作层。每张卡片以 REWRITE 文件的九字段为基础，补充写作入口、旧稿来源和操作提示。当与 REWRITE 文件内容冲突时，以 REWRITE 为准。
 ---

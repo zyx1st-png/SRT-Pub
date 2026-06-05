@@ -8,7 +8,7 @@ layer: meta
 epistemic_layer: os
 claim_mode: navigation
 created: 2026-05-21
-updated: 2026-05-31
+updated: 2026-06-05
 based_on:
   - 01_Source_Intuition/BOOK/BOOK_NEW_DIRECTION_FOUNDATION_2026-05-21.md
   - user_direction_statement_2026_05_21
@@ -2915,19 +2915,19 @@ SRT 的六个失败条件可以成为读者检验 SRT 本身的工具，
 
 ---
 
-## 4. 下一步
+## 4. 当前使用规则
 
-下一步唯一任务：创建 **28 张章节卡片**。
-
-```text
-文件：BOOK_PROBLEM_CHAIN_CHAPTER_CARDS_2026-05-21.md
-```
-
-每张卡片以本文件对应问题的七字段为基础，补充：
+章节卡片已经存在并覆盖 Q01-Q28：
 
 ```text
-本章写作的第一句（读者入口场景，不是 SRT 概念）：
-旧稿可回收的主要来源章节：（参照本文件 §3 对应行）
+01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md
 ```
 
-卡片完成后，再决定哪些章节优先试写。
+因此，本文件当前不再承担“下一步创建章节卡”的任务，而是作为问题链与旧稿回收关系的结构参考。
+
+当前施工顺序：
+
+1. 先读 `BOOK_CURRENT_STATUS.md`，确认当前主线是 `Drafts_26Q/Q00-Q28`。
+2. 再读 `BOOK_ARCHITECTURE_MAP_2026-06-03.md`，确认该章在六根主梁与缺口链中的位置。
+3. 写具体章节时，读本文件对应问、章节卡对应卡、目标章节及前后章节。
+4. 若本文件与当前正文或 06-03 建筑图冲突，以当前正文、`BOOK_CURRENT_STATUS.md` 和 06-03 建筑图为准。

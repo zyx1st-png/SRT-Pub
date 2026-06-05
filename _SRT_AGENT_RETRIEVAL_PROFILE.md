@@ -113,11 +113,17 @@ Read:
 3. `01_Source_Intuition/README.md`
 4. `01_Source_Intuition/INDEX.md`
 5. `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md` if present
-6. `01_Source_Intuition/BOOK/Outline_Parts/README.md` if present
-7. `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md`
-8. the current chapter or target chapter file
-9. the relevant formal anchors only as guardrails, not as prose style
-10. the relevant backstage pass notes when the task mentions consistency, style, or chapter sequence
+6. `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md` if present
+7. `01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` if present
+8. `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` and `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` when chapter sequence or problem-chain context matters
+9. the current chapter or target chapter file under `01_Source_Intuition/BOOK/Drafts_26Q/`
+10. `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md`
+11. the relevant formal anchors only as guardrails, not as prose style
+12. the relevant backstage pass notes when the task mentions consistency, style, or chapter sequence
+
+Legacy note:
+
+- Root-level `Outline_Parts/` belonged to the old 52-chapter route and has been archived under `01_Source_Intuition/BOOK/Archive_52Chapter/`; do not use it as the current construction path.
 
 Writing rule:
 
