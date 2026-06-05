@@ -5,11 +5,11 @@ status: active_current
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-06-05
+updated: 2026-06-06
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: book_meta_sync_q00_q28_2026-06-05
+last_pass: boundary_guardrail_recheck_micro_edits_2026-06-06
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -75,24 +75,24 @@ last_pass: book_meta_sync_q00_q28_2026-06-05
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v9` |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v10` |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v10` |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v9` |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v10` |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v7` |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v8` |
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v6` |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v6` |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v8` |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v9` |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v8` |
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v10` |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v11` |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v9` |
 | Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v9` |
-| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v9` |
+| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v14` |
 | Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v12` |
 | Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v8_terminology_simplification` |
 | Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v9` |
 | Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v10` |
 | Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v8` |
-| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v10` |
+| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v11` |
 | Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v7` |
 | Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v8` |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v9` |
