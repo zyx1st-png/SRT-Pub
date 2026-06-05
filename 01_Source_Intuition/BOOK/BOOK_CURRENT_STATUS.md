@@ -80,7 +80,7 @@ last_pass: book_meta_sync_q00_q28_2026-06-05
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v8` |
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v6` |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v6` |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v6` |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v8` |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v8` |
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v10` |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v11` |
@@ -89,13 +89,13 @@ last_pass: book_meta_sync_q00_q28_2026-06-05
 | Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v9` |
 | Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v12` |
 | Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v8_terminology_simplification` |
-| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v7_terminology_simplified` |
-| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v9` |
-| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v7` |
+| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v9` |
+| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v10` |
+| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v8` |
 | Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v10` |
 | Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v7` |
 | Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v8` |
-| Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v8` |
+| Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v9` |
 | Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v6` |
 | Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v5` |
 | Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v2` |
