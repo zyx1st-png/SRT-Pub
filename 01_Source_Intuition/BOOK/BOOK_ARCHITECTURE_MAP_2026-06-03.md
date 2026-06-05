@@ -1,13 +1,13 @@
 ---
 id: SRT-BOOK-ARCHITECTURE-MAP-2026-06-03
 type: book_meta_architecture
-status: working_meta_current
-scope: 01_source_intuition_book_drafts_28q
+status: active_current
+scope: 01_source_intuition_book_drafts_q00_q28
 canonical: false
 claim_mode: architecture_navigation
 created: 2026-06-03
 supersedes_for_current_main:
-  - 01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-05-30.md
+  - 01_Source_Intuition/BOOK/Archive_Meta/BOOK_ARCHITECTURE_MAP_2026-05-30.md
 based_on:
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md
@@ -40,9 +40,11 @@ based_on:
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md
 ---
 
-# 《从存在到秩序》全书建筑图（Q28 闭合版）
+# 《从存在到秩序》全书建筑图（Q00–Q28 闭合版）
 
-> 本文件用于当前 main 的全书导航。它不是正文，不替代 canonical，也不替代旧版建筑图；它更新的是 Q21–Q28 完成术语降噪与终章闭合之后的全书结构视图。
+> 本文件用于当前 main 的全书导航。它不是正文，不替代 canonical，也不替代章节稿。它更新的是 Q00–Q28 完成术语降噪与终章闭合之后的全书结构视图。
+>
+> 旧 `2026-05-30` 建筑图已移入 `Archive_Meta/`，只作为 Q00–Q20 阶段的历史记录。
 
 ---
 

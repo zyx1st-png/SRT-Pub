@@ -533,7 +533,10 @@ When answering or editing a non-simple SRT question:
 - `01_Source_Intuition/README.md`
 - `01_Source_Intuition/INDEX.md`
 - `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
-- `01_Source_Intuition/BOOK/Outline_Parts/README.md`
+- `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md`
+- `01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md`
+- `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md`
+- `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md`
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md`
 
 ### Secondary
@@ -542,7 +545,7 @@ When answering or editing a non-simple SRT question:
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/philosophical_style_rules.md`
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md`
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_precision_pass_2026-05-10.md`
-- relevant current chapter files under `01_Source_Intuition/BOOK/`
+- relevant current chapter files under `01_Source_Intuition/BOOK/Drafts_26Q/`
 - relevant formal anchors only as accuracy guardrails
 
 ### Boundary
@@ -550,6 +553,7 @@ When answering or editing a non-simple SRT question:
 - Book files are high retrieval value but not canonical definition sources.
 - Use formal anchors to keep terms accurate, but do not write the book in registry style.
 - Backstage notes preserve continuity and editorial decisions; they do not create new theory authority.
+- Root-level `Outline_Parts/` belonged to the old 52-chapter route and now lives under `01_Source_Intuition/BOOK/Archive_52Chapter/`; do not use it as the current construction path.
 
 ---
 

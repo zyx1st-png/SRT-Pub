@@ -4,7 +4,7 @@ type: editorial_guide
 status: active_current_v4_after_q28_closure
 created: 2026-06-03
 supersedes_for_current_main:
-  - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md
+  - 01_Source_Intuition/BOOK/Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md
 incorporates:
   - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md
 scope:
@@ -27,7 +27,7 @@ purpose:
 
 ## 0. v4 更新说明
 
-v4 相比 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 增加三项：
+v4 相比 `Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 增加三项：
 
 1. 正式并入 `BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md`。
 2. 补入 Q18–Q28 术语降噪后的核心记忆点。
