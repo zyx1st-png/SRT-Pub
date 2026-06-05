@@ -49,7 +49,7 @@ last_pass: book_meta_sync_q00_q28_2026-06-05
 |---|---|---|
 | 唯一施工入口 | `BOOK_CURRENT_STATUS.md` | 本文件；确认当前正文主线、状态和读取顺序 |
 | 当前建筑图 | `BOOK_ARCHITECTURE_MAP_2026-06-03.md` | Q00-Q28 闭合后的六根主梁、缺口链、总修顺序 |
-| 当前术语规则 | `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` | Q00-Q28 总修阶段术语降噪和核心记忆点 |
+| 当前术语规则 | `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` | Q00-Q28 总修阶段术语降噪、核心记忆点与经验材料纪律 |
 | d-value 补丁 | `BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md` | Q14/Q15 深度/宽度分工；已并入 06-03 术语指南 |
 | 问题链 | `BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | Q01-Q28 的问题推进与旧稿回收关系 |
 | 章节卡 | `BOOK_CHAPTER_CARDS_2026-05-22.md` | 每章写作卡片；已覆盖 Q28 |
@@ -130,11 +130,11 @@ last_pass: book_meta_sync_q00_q28_2026-06-05
 
 1. 不把书稿句子升级为 canonical 定义；书稿是 `canonical: false` 的源头哲学主文本。
 2. 不再把 `Archive_52Chapter/Outline_Parts/` 当作当前章节状态入口。
-3. 不再使用 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 指导当前正文；当前术语规则以 06-03 v4 为准。
+3. 不再使用 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md` 指导当前正文；当前术语规则以 06-03 v4.1 为准。
 4. Q14 讲价值深度，不使用 d-value；Q15 讲关切宽度，d-value 只在这里后置命名。
 5. Q25 负责“选择广于意识但不是泛心论”的边界；不要把早期选择结构误写成意识泛化。
 6. Q26/Q27/Q28 是理论自限与回到生成，不是把 SRT 包装成封闭体系。
-7. AI、科学、跨领域材料只作显影、压力点和边界，不作证明 SRT 的捷径。
+7. AI、科学、跨领域与实证材料可以承担局部经验支持、结构锚点和最小证明压力，但不能承担整套 SRT 的证明任务，也不能展开成学科综述。
 
 ---
 
