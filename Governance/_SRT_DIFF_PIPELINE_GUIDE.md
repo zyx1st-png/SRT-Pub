@@ -2,11 +2,13 @@
 id: SRT-DIFF-PIPELINE-GUIDE
 type: framework
 tags: [Pipeline, Diff, Collaboration]
-status: axiomatic_hybrid_v1
+status: legacy_reference_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_DOMAIN_TEMPLATE, SRT-REF-SCALING]
+updated: 2026-06-05
 ---
 
 # SRT Diff Pipeline Guide
@@ -14,6 +16,7 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_DOMAIN_TEMPLATE, SRT-REF-SCALING]
 > 目标：将“外部材料 → SRT 文件级补丁提案”流程标准化，确保可追溯、可审计、可持续追加。
 >
 > **状态更新（2026-02-28）：** 计划 1 与计划 3 已切换为“审核通过后直接修改正文”。本文件保留用于需要补丁提案模式的场景（如审稿前评审、风险材料缓冲）。
+> **状态更新（2026-06-05）：** 当前材料主流程以 `Operations/_SRT_MATERIAL_PIPELINE.md` 为准；本文件仅保留为 legacy patch-proposal reference。
 
 ---
 

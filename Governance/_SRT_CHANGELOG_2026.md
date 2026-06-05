@@ -2,24 +2,26 @@
 id: SRT-CHANGELOG-2026
 type: framework
 tags: [Changelog, Registry, History]
-status: rolling_v1
+status: historical_appendable_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: historical_record
+canonical: false
 dependency: [_SRT_INDEX]
+updated: 2026-06-05
 ---
 
 # SRT 变更日志（2026）
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`_SRT_CHANGELOG_2026_Split/README.md`](_SRT_CHANGELOG_2026_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new governance authority.
 
-> 本文件承载从 `_SRT_INDEX.md` 迁移出的历史增量记录与版本事件，避免主索引过载。
+> 本文件承载从 `_SRT_INDEX.md` 迁移出的历史增量记录与版本事件，避免主索引过载。它是 historical record，不是当前理论状态面板，也不是 canonical definition source。
 
 ## 🆕 最新理论增量（2026-03-31 第五批 - 因果四层结构与赋权机制）
 
 **来源：** 对抗性压力测试对话（GPT 反对者角色，SRT 创造者 vs. 结构化挑战）
 
-**归档文件：** `Governance/SRT_DISCUSSION_LOG_20260331_Causation.md`
+**归档文件：** `Governance/Archive_2026-06-05/SRT_DISCUSSION_LOG_20260331_Causation.md`
 
 ### Glossary 模块新增条目：
 

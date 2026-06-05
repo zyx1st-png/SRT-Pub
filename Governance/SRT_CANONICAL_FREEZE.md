@@ -2,14 +2,18 @@
 id: SRT-CANONICAL-FREEZE
 type: framework
 tags: [Governance, Canonical, Freeze, EditSafety]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
+updated: 2026-06-05
 ---
 
 # SRT Canonical Freeze
+
+> 2026-06-05 scope note: this file is an edit-safety policy. It does not define SRT terms and does not replace `CANONICAL_REGISTRY.md`, `_SRT_SYMBOL_TABLE.md`, or current manuscript files.
 
 本文件用于明确：
 
@@ -27,6 +31,9 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
 - `_SRT_T_DIR_CANONICAL.md`
 - `_SRT_SYMBOL_TABLE.md`
 - `Core/SRT_Core_21_Formal_Axioms.md`
+- `Core/SRT_Core_21_Minimal_Axioms.md`
+- `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - `Core/SRT_Core_22_Equations.md`
 
 默认规则：
@@ -64,8 +71,12 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
 - `AGENTS.md`
 - `CLAUDE.md`
 - `SRT_AI_START.md`
+- `STATUS_FAST.md`
 - `STATUS.md`
+- `STATUS_Split/README.md`
 - `_SRT_INDEX.md`
+- `_SRT_AGENT_RETRIEVAL_PROFILE.md`
+- `_SRT_SYMBOL_QUICK_GUARD.md`
 - `SRT_Navigation_Map.md`
 - `_SRT_MANIFEST.yaml`
 - `Operations/README.md`

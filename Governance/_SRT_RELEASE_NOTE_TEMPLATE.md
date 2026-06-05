@@ -5,8 +5,10 @@ tags: [Release, Template, Governance]
 status: rolling_v1
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [_SRT_QUALITY_SCORECARD, _SRT_INDEX]
+updated: 2026-06-05
 ---
 
 # SRT Release Note Template

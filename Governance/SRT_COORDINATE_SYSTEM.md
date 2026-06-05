@@ -2,11 +2,13 @@
 id: SRT-COORDINATE-SYSTEM
 type: governance
 tags: [Governance, Layering, CoordinateSystem, Frontmatter]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [SRT-POSITIONING, SRT-LAYER-GUARD, SRT-DOC-ENGINEERING]
+updated: 2026-06-05
 ---
 
 # SRT Coordinate System

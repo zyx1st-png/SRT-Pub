@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Validate the split book-outline layout.
+"""Validate the current book manuscript layout.
 
-The master outline intentionally stays small so GitHub-style connectors can
-read it without truncation. Chapter briefs live in volume-level part files.
+The old 52-chapter outline split was archived. The current mainline lives in
+01_Source_Intuition/BOOK/Drafts_26Q/ as Q00 through Q28 plus the appendix.
 """
 
 from pathlib import Path
@@ -11,24 +11,43 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK_DIR = ROOT / "01_Source_Intuition" / "BOOK"
-MASTER = BOOK_DIR / "00_全书章节写作概要.md"
-PARTS_DIR = BOOK_DIR / "Outline_Parts"
-README = PARTS_DIR / "README.md"
+STATUS = BOOK_DIR / "BOOK_CURRENT_STATUS.md"
+DRAFTS_DIR = BOOK_DIR / "Drafts_26Q"
 
-EXPECTED_PARTS = [
-    "00_总览与序章.md",
-    "01_卷一_从存在到成为.md",
-    "02_卷二_选择的本性.md",
-    "03_卷三_从选择到主体与价值.md",
-    "04_卷四_秩序的双面性.md",
-    "05_卷五_从个体秩序到共同秩序.md",
-    "06_卷六_意识_AI_修行.md",
-    "07_卷七_边界与张力.md",
-    "08_收尾与维护规则.md",
+EXPECTED_DRAFTS = [
+    "Q00_序章.md",
+    "Q01_给定性.md",
+    "Q02_对象化.md",
+    "Q03_前对象场.md",
+    "Q04_最低非中立性.md",
+    "Q05_选择不是挑选.md",
+    "Q06_排除与阴影.md",
+    "Q07_锚定.md",
+    "Q08_不可逆性.md",
+    "Q09_现实厚度.md",
+    "Q10_秩序背景化.md",
+    "Q11_被选择.md",
+    "Q12_攸关.md",
+    "Q13_在乎.md",
+    "Q14_价值不是偏好.md",
+    "Q15_关切维度.md",
+    "Q16_主体沉积.md",
+    "Q17_意识.md",
+    "Q18_秩序与自由.md",
+    "Q19_脚手架与牢笼.md",
+    "Q20_遮蔽.md",
+    "Q21_苦难.md",
+    "Q22_方向.md",
+    "Q23_共同体.md",
+    "Q24_AI.md",
+    "Q25_选择广于意识.md",
+    "Q26_可证伪性.md",
+    "Q27_理论自反.md",
+    "Q28_回到生成.md",
+    "附录_三问使用指南.md",
 ]
 
-MAX_MASTER_BYTES = 12_000
-MAX_PART_BYTES = 25_000
+MAX_DRAFT_BYTES = 45_000
 
 
 def fail(message: str) -> None:
@@ -50,51 +69,31 @@ def require_frontmatter(path: Path, text: str) -> None:
 
 
 def main() -> None:
-    master_text = read(MASTER)
-    readme_text = read(README)
-    require_frontmatter(MASTER, master_text)
-    require_frontmatter(README, readme_text)
+    status_text = read(STATUS)
+    require_frontmatter(STATUS, status_text)
+    if "Drafts_26Q/" not in status_text:
+        fail("BOOK_CURRENT_STATUS must point to Drafts_26Q/")
 
-    if len(master_text.encode("utf-8")) > MAX_MASTER_BYTES:
-        fail(
-            "master outline is too large; keep chapter briefs in Outline_Parts/"
-        )
+    missing = []
+    oversized = []
+    for filename in EXPECTED_DRAFTS:
+        path = DRAFTS_DIR / filename
+        text = read(path)
+        require_frontmatter(path, text)
+        if "canonical: false" not in text:
+            fail(f"book draft must remain non-canonical: {path.relative_to(ROOT)}")
+        if len(text.encode("utf-8")) > MAX_DRAFT_BYTES:
+            oversized.append(filename)
+        if filename.startswith("Q") and filename not in status_text:
+            missing.append(filename)
 
-    if "role: split_master_index" not in master_text:
-        fail("master outline must keep role: split_master_index")
+    if missing:
+        fail("BOOK_CURRENT_STATUS missing draft reference(s): " + ", ".join(missing))
+    if oversized:
+        fail("book draft(s) exceed connector-safe size: " + ", ".join(oversized))
 
-    forbidden_master_markers = ["## 第 1 章", "## 第 52 章", "# 卷二：选择的本性"]
-    for marker in forbidden_master_markers:
-        if marker in master_text:
-            fail(f"master outline appears to contain split body marker: {marker}")
-
-    missing_links = []
-    oversized_parts = []
-    for filename in EXPECTED_PARTS:
-        part = PARTS_DIR / filename
-        part_text = read(part)
-        require_frontmatter(part, part_text)
-        if "type: book_project_outline_part" not in part_text:
-            fail(f"wrong type for part: {part.relative_to(ROOT)}")
-        if "canonical: false" not in part_text:
-            fail(f"part must remain non-canonical: {part.relative_to(ROOT)}")
-        if len(part_text.encode("utf-8")) > MAX_PART_BYTES:
-            oversized_parts.append(filename)
-
-        master_link = f"Outline_Parts/{filename}"
-        if master_link not in master_text:
-            missing_links.append(f"master:{filename}")
-        if filename not in readme_text:
-            missing_links.append(f"readme:{filename}")
-
-    if missing_links:
-        fail("missing part links: " + ", ".join(missing_links))
-    if oversized_parts:
-        fail("part file(s) exceed connector-safe size: " + ", ".join(oversized_parts))
-
-    print("OK: book outline split layout is connector-safe")
-    print(f"master_bytes={len(master_text.encode('utf-8'))}")
-    print(f"parts={len(EXPECTED_PARTS)}")
+    print("OK: current book manuscript layout is connector-safe")
+    print(f"drafts={len(EXPECTED_DRAFTS)}")
 
 
 if __name__ == "__main__":

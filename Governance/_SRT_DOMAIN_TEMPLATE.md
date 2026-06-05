@@ -2,11 +2,13 @@
 id: SRT-DOMAIN-TEMPLATE
 type: framework
 tags: [Template, Domain, Documentation]
-status: axiomatic_hybrid_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [_SRT_DOC_ENGINEERING_GUIDE, _SRT_EXPLANATION_PROTOCOL, SRT-GLOSSARY]
+updated: 2026-06-05
 ---
 
 # SRT Domain Document Template
@@ -24,6 +26,10 @@ id: SRT-<DOMAIN>-<KEY>
 type: <theory|definition|axiom_set|equation|framework|experiment|architecture>
 tags: [<Domain>, <Theme>, Hybrid]
 status: axiomatic_hybrid_v1
+layer: <L0|L1|L2|meta>
+epistemic_layer: <os|bridge|lab>
+claim_mode: <canonical|translation|hypothesis|evidence|navigation|governance>
+canonical: false
 dependency: [SRT-..., Core_Law/...]
 ---
 ```
@@ -31,7 +37,8 @@ dependency: [SRT-..., Core_Law/...]
 规则：
 - `id` 唯一、全大写、连字符风格。
 - `dependency` 只写 canonical id 或 `Core_Law/...`。
-- 不得省略 `tags/status/dependency`。
+- 不得省略 `tags/status/layer/epistemic_layer/claim_mode/dependency`。
+- `canonical: true` 只用于明确的 definition authority；bridge、annex、split、operations、materials 和 public/book prose 默认 `canonical: false`。
 
 ---
 

@@ -2,14 +2,18 @@
 id: SRT-HARNESS-TESTS
 type: framework
 tags: [Governance, Harness, Tests, AI-Readability]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [SRT-AI-START, SRT-INDEX, SRT-NAVIGATION-MAP, SRT-CANONICAL-REGISTRY]
+updated: 2026-06-05
 ---
 
 # SRT Harness Tests
+
+> These tests verify agent entry behavior. They are not theory definitions and should not override `AGENTS.md`.
 
 本文件用于验证入口层优化是否真的降低了 AI 漂移与误读。
 

@@ -2,11 +2,13 @@
 id: SRT-CORE-LAW-CORE-SYNC
 type: governance
 tags: [Governance, CrossCheck, CoreLaw, Core, Consistency]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 created: 2026-04-01
+updated: 2026-06-05
 ---
 
 # Core_Law/ ↔ Core/ 双向交叉检查协议

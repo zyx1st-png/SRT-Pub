@@ -2,10 +2,12 @@
 id: SRT-LAYER-GUARD
 type: governance
 tags: [Governance, LayerGuard, QualityControl]
-status: canonical_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
+updated: 2026-06-05
 ---
 
 # SRT Layer Guard：层级守卫文档

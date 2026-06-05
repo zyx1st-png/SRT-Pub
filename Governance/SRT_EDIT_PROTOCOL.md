@@ -2,14 +2,18 @@
 id: SRT-EDIT-PROTOCOL
 type: framework
 tags: [Governance, Editing, Safety, Protocol]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [SRT-CANONICAL-FREEZE, SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
+updated: 2026-06-05
 ---
 
 # SRT Edit Protocol
+
+> 2026-06-05 scope note: this is an editing workflow. It protects authority boundaries but does not create theory definitions or current book-status facts.
 
 本文件定义 SRT 仓库的三类编辑与最小交叉检查规则。
 
@@ -21,7 +25,8 @@ dependency: [SRT-CANONICAL-FREEZE, SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
 - 补导航回链
 - 修 typo / 断链 / 标题格式
 - 补 frontmatter 辅助字段
-- 更新 `README.md` / `STATUS.md` / `_SRT_INDEX.md`
+- 更新 `README.md` / `AGENTS.md` / `SRT_AI_START.md` / `STATUS_FAST.md` / `_SRT_INDEX.md`
+- 更新治理入口、归档索引、工具 baseline
 
 默认要求：
 
@@ -78,9 +83,12 @@ dependency: [SRT-CANONICAL-FREEZE, SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
 
 ### 3. 最后决定留痕位置
 
-- 当前状态变化 → `STATUS.md`
-- 运行流水线变化 → `Operations/`
-- 治理与规则变化 → `Governance/`
+- fresh-session / agent read order → `AGENTS.md`
+- compact status → `STATUS_FAST.md`
+- full status or historical status → `STATUS.md` / `STATUS_Split/README.md`
+- 运行流水线、材料、信号、队列 → `Operations/`
+- 治理规则、质量 baseline、归档说明 → `Governance/`
+- 当前书稿事实 → `01_Source_Intuition/BOOK/` 当前正文与当前 book meta 文件
 
 ## 明确禁止
 
@@ -98,3 +106,7 @@ dependency: [SRT-CANONICAL-FREEZE, SRT-CANONICAL-REGISTRY, SRT-SYMBOL-TABLE]
 3. 是否会让 AI 把非权威文件误读成权威文件？
 
 只要第三问答案可能是“会”，就不能按 A 类处理。
+
+## Book and Governance Boundary
+
+Book drafts and book meta files are writing context unless they explicitly declare otherwise. Governance files may guide editing workflow, but they must not be used as the primary basis for judging the current book's literary or argumentative quality.

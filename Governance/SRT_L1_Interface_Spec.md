@@ -3,9 +3,11 @@ id: SRT-L1-INTERFACE-SPEC
 type: governance
 tags: [Governance, L1, Template, InterfaceSpec]
 layer: meta
-status: canonical_v1
+status: active_v2
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
+updated: 2026-06-05
 ---
 
 # SRT L1 接口规范
