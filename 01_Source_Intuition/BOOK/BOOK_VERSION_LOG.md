@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-05-17
+updated: 2026-06-06
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -629,3 +629,23 @@ Canonical 文件未修改。正文文件顺序不变。
 - `BOOK_VERSION_LOG.md`：追加本条记录。
 
 Canonical 文件未修改。正文文件顺序不变。
+
+## 2026-06-06 边界审计复核 + 四章微修
+
+本次执行 boundary guardrail post-audit recheck + micro edits to Q05/Q10/Q16/Q22。06-04 边界审计报告保留为历史诊断；当前问题从系统性免责声明墙降为少数局部读感问题，不启动新一轮全书性降噪。
+
+**新增后台复核报告**：
+- `90_Backstage/Restructure_2026/BOOK_PROJECT/audits/BOUNDARY_GUARDRAIL_RECHECK_Drafts_26Q_2026-06-06.md`
+
+**正文微修**：
+
+| 章 | 版本变化 | 修改内容 |
+|---|---|---|
+| Q05 选择不是挑选 | v9→v10 | 工具箱最后防泛化段压缩为一句，避免与 §7 重复。 |
+| Q10 秩序背景化 | v8→v9 | §7 收束改为推进句，避免重复“背景化不等于正当化”。 |
+| Q16 主体沉积 | v13→v14 | §10 第一段拆成本体、伦理、理论三组边界，保留道德地位护栏。 |
+| Q22 方向 | v10→v11 | §6 开头边界墙改为三段式收束，保留三判据非完整伦理学、非最大化目标、非审判尺子的边界。 |
+
+明确未改：Q03、Q04、Q07、Q15、Q20、Q21、Q24、Q25、Q26、Q28。原因是这些章节当前边界主要承担功能性护栏，继续压缩会提高误读风险。
+
+Canonical 文件未修改。正文文件顺序不变。不新增术语，不改变核心命题，不把章末注搬回正文。
