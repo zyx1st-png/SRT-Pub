@@ -2,11 +2,13 @@
 id: SRT-GOVERNANCE-PIPELINE
 type: framework
 tags: [Governance, Maintenance, Readability, TheoryReview]
-status: active_v2
+status: active_v3
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [SRT-QUALITY-SCORECARD, SRT-WEEKLY-THEORY-REVIEW, SRT-REVIEW-QUEUE, SRT-EQ-HYP-MAP]
+updated: 2026-06-05
 ---
 
 # SRT 内部治理流水线（Pipeline 4）
@@ -35,18 +37,18 @@ dependency: [SRT-QUALITY-SCORECARD, SRT-WEEKLY-THEORY-REVIEW, SRT-REVIEW-QUEUE, 
 
 ## Part A：文档质量审查（每周固定动作）
 
-1. 在 workspace 根目录运行检查：`./scripts/run_srt_checks.sh`
-2. 在 `SRT/` 目录生成质量快照：`uv run python ../scripts/srt_quality_metrics.py`
-3. 在 `SRT/` 目录生成解释审计：`uv run python ../scripts/srt_explainability_audit.py`
-4. 审阅根目录自动快照 `_SRT_QUALITY_METRICS.md` 与 `_SRT_EXPLAINABILITY_AUDIT.md`；若 split / compact / governance / operations 扫描扩容导致口径漂移，需在评分卡中显式标注
-5. 去冗余：重复段落 / 重复边界声明 / 重复标题清理
-6. **跨层一致性扫描**：执行 `Governance/_SRT_CORE_LAW_CORE_SYNC.md §三` 完整检查步骤（定位映射 → 一致性判断 → 处理结论）；若发现张力，在本步骤内触发 `/srt-harden` 或标注「暂定锚 + 接口预留」，不推迟到下周
-7. 更新 `Governance/_SRT_QUALITY_SCORECARD.md` 与 release 注记
+1. 从 workspace 根目录运行治理预检：`uv run python scripts/governance_preflight.py`
+2. 若只需要审查、不想刷新大文件报告，可使用：`uv run python scripts/governance_preflight.py --skip-write-report`
+3. 审阅四类结果：large-file audit、split freshness、registry consistency、frontmatter baseline。
+4. 若 baseline 只是旧债漂移，更新 baseline 或 archive 旧报告；若是新真实错误，修真实文件。
+5. 去冗余：重复段落 / 重复边界声明 / 重复标题 / 旧计划入口清理。
+6. **跨层一致性扫描**：只在本周实际编辑 Core / Core_Law / canonical-facing bridge 时执行 `Governance/_SRT_CORE_LAW_CORE_SYNC.md`。普通治理整理不触发理论推进。
+7. 更新 `Governance/_SRT_QUALITY_SCORECARD.md`，必要时追加 release note 或 weekly review。
 
 **约束（不变）**：
 - `Core_Law/` 目录仅做谨慎结构优化，避免语义漂移
 - 重大语义变更需单独 commit + release 标注
-- 每轮动作后 git commit
+- 是否提交由当前任务决定；不要把自动脚本副产物和理论编辑混在一个提交里
 
 ---
 
@@ -97,9 +99,9 @@ P2（本月内）：...（附理由）
 
 ## 输出产物
 
-- `_SRT_QUALITY_METRICS.md`（root-level 自动快照）
-- `_SRT_EXPLAINABILITY_AUDIT.md`（root-level 自动快照）
+- `Operations/Large_File_Audit_2026-05-09.md`（当 preflight 写入大文件报告时）
+- `Governance/Frontmatter_Warning_Baseline.txt`（当 baseline 需要承认当前已知债务时）
 - `Governance/_SRT_QUALITY_SCORECARD.md`（更新）
 - `Governance/_SRT_WEEKLY_THEORY_REVIEW.md`（追加本周区块）
 - `Governance/_SRT_CORE_LAW_CORE_SYNC.md §五`（暂定锚登记表更新，如有消解或新增）
-- git commit：`docs(governance): weekly review YYYY-WXX`
+- 建议提交草案：`docs(governance): weekly review YYYY-WXX`

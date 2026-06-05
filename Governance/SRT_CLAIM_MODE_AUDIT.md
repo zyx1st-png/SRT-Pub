@@ -2,16 +2,19 @@
 id: SRT-CLAIM-MODE-AUDIT
 type: governance
 tags: [Governance, ClaimMode, Audit, Demotion, Hardening]
-status: active_v0
+status: active_ledger_v1
 layer: meta
 epistemic_layer: os
 claim_mode: governance
+canonical: false
 dependency: [SRT-CLAIM-LADDER, SRT-EDIT-PROTOCOL, SRT-CANONICAL-REGISTRY, SRT-CROSS-DOMAIN-MATRIX]
+updated: 2026-06-05
 ---
 
 # SRT Claim-Mode Audit
 
 > **Role**: first-pass governance ledger for claim-mode hardening. This file records downgrades and exposure controls; it does not create new theory or promote any claim.
+> **2026-06-05 note**: this is a dated ledger, not a full current repository state. Use it as historical claim-mode evidence and pair it with current canonical anchors when exact authority matters.
 
 ## 1. Scan Scope
 

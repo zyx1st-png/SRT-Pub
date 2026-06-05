@@ -2,11 +2,13 @@
 id: SRT-DOC-ENGINEERING
 type: framework
 tags: [Documentation, Engineering, Standards]
-status: axiomatic_hybrid_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [_SRT_MANIFEST, _SRT_SYMBOL_TABLE]
+updated: 2026-06-05
 ---
 
 # SRT Documentation Engineering Guide
@@ -27,7 +29,7 @@ type: <theory|definition|axiom_set|equation|framework|experiment|architecture>
 tags: [TagA, TagB, Hybrid]
 layer: <meta|L0|L1|L2>
 epistemic_layer: <os|bridge|lab>
-claim_mode: <canonical|translation|hypothesis|evidence>
+claim_mode: <canonical|governance|navigation|translation|hypothesis|evidence|historical_record|manifesto>
 status: axiomatic_hybrid_vN
 dependency: [SRT-..., Core_Law/...]
 ---
@@ -38,6 +40,18 @@ Rules:
 2. `dependency` stores canonical IDs (or `Core_Law/...` paths), not ambiguous aliases.
 3. Frontmatter must appear before any heading text.
 4. `status` is versioned and monotonic (`v1`, `v2`, ...).
+5. `claim_mode` describes the file's dominant speech act; it is not the same thing as definition authority.
+
+## Current Claim-Mode Notes
+
+- `canonical`: definition-bearing or canonical-facing theory anchor.
+- `governance`: edit policy, claim discipline, quality protocol, or workflow rule.
+- `navigation`: index, router, reading path, registry, or bootstrap aid.
+- `translation`: bridge/interface mapping to another domain or theory.
+- `hypothesis`: lab, proxy, prediction, or testable candidate.
+- `evidence`: source card, material record, empirical summary, or support note.
+- `historical_record`: archive, dated log, old audit, release note, or provenance record.
+- `manifesto`: public/worldview statement; not a theory definition source unless separately anchored.
 5. `layer` is the vertical axis; `epistemic_layer` is the horizontal axis.
 6. Never fuse the two axes into one value such as `L1-bridge`.
 7. `claim_mode` describes assertion posture, not theory depth.

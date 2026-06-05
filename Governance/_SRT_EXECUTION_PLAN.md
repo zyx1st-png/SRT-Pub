@@ -2,14 +2,18 @@
 id: SRT-EXECUTION-PLAN
 type: framework
 tags: [Operations, Workflow, Governance]
-status: active_v2
+status: legacy_compat_v3
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: navigation
+canonical: false
 dependency: [SRT-INDEX, SRT-QUALITY-SCORECARD, SRT-OPERATIONS-SCHEDULE]
+updated: 2026-06-05
 ---
 
-# SRT 执行总计划（Active）
+# SRT 执行总计划（Legacy Compatibility Bridge）
+
+> 2026-06-05 scope note: this file is retained because older Operations files still reference `SRT-EXECUTION-PLAN`. It is not the current cadence authority. For current runtime cadence, use `Operations/README.md` and `Operations/_SRT_OPERATIONS_SCHEDULE.md`.
 
 ## 关键变更记录
 - **2026-02-28**：Pipeline 1/3 不再走 `diff.md`，改为"先审核→直接修改正文"

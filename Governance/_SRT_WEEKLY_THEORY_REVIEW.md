@@ -2,11 +2,13 @@
 id: SRT-WEEKLY-THEORY-REVIEW
 type: log
 tags: [WeeklyReview, TheoryDirection, Governance]
-status: active_v1
+status: active_log_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: historical_record
+canonical: false
 dependency: [SRT-GOVERNANCE-PIPELINE, SRT-REVIEW-QUEUE, SRT-EQ-HYP-MAP, SRT-SIGNAL-LOG]
+updated: 2026-06-05
 ---
 
 # SRT 每周理论方向评审档案

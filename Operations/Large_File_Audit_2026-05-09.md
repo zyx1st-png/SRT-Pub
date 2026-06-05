@@ -23,6 +23,8 @@ canonical: false
 
 | Risk | Size | File | Split / handling |
 |---|---:|---|---|
+| urgent | 216.4 KiB | `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` | missing_or_not_needed |
+| urgent | 124.7 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
 | urgent | 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | urgent | 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | action | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
@@ -30,7 +32,7 @@ canonical: false
 | action | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | action | 82.5 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
 | action | 82.2 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
-| action | 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
+| action | 80.1 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
 | action | 79.5 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
 | action | 76.0 KiB | `Core/SRT_Core_12b_Ontology_L2.md` | Core/Ontology_L2_Split |
 | action | 74.8 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
@@ -123,9 +125,15 @@ canonical: false
 | warning | 57.6 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx` | artifact/generated; do not use as primary connector read path |
 | warning | 55.1 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.pre_sync_backup_2026-03-24.docx` | artifact/generated; do not use as primary connector read path |
 
+## binary_or_media
+
+| Risk | Size | File | Split / handling |
+|---|---:|---|---|
+| warning | 54.1 KiB | `.agents/run/srt-webui.log` | binary/media artifact |
+
 ## Recommended Queue
 
-- Action-threshold active markdown without split route: `0`
+- Action-threshold active markdown without split route: `2`
 
 1. Use the split route shown in the table before reading any action-threshold owner file through a connector.
 2. Treat `Operations/_SRT_MATERIAL_LOG.md` and `Operations/_SRT_STATUS_HISTORY.md` as split master indexes; read dated parts through `Operations/Material_Log/README.md` and `Operations/Status_History/README.md`.
@@ -135,6 +143,8 @@ canonical: false
 
 | Size | File | Split status |
 |---:|---|---|
+| 216.4 KiB | `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` | missing_or_not_needed |
+| 124.7 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
 | 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
@@ -142,7 +152,7 @@ canonical: false
 | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | 82.5 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
 | 82.2 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
-| 80.0 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
+| 80.1 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
 | 79.5 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
 | 76.0 KiB | `Core/SRT_Core_12b_Ontology_L2.md` | Core/Ontology_L2_Split |
 | 74.8 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |

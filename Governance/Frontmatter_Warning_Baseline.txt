@@ -6,34 +6,62 @@
 # Existing warnings are treated as known debt by governance_preflight.py.
 # Remove lines when the corresponding files are fixed.
 
-.agents/skills/srt-harden/SKILL.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, status, type
-01_Source_Intuition/BOOK/00_全书章节写作概要.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/00_全书章节写作概要_卷二机制补充.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/00_全书章节写作概要_存在共成体补充.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/00_全书章节写作概要_第三档哲学厚重补充.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/00_序_为什么要从存在走向秩序.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/00_序章路线图补丁.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/00_总览与序章.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/01_卷一_从存在到成为.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/02_卷二_选择的本性.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/03_卷三_从选择到主体与价值.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/04_卷四_秩序的双面性.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/05_卷五_从个体秩序到共同秩序.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/06_卷六_意识_AI_修行.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/07_卷七_边界与张力.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/08_收尾与维护规则.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Outline_Parts/README.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/01_现实不是先给定的.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/02_L0不是虚无.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/04_选择不是挑选.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/05_锚定让一留下.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/06_秩序如何成为背景.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_02_选择的本性/07_地形如何反过来选择人.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_02_选择的本性/08_选择算子_从可成为性到显现.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_02_选择的本性/09_排除_选择的阴影.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-01_Source_Intuition/BOOK/Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_52Chapter/README.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_ARCHITECTURE_MAP_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_RENUMBERING_DECISION_2026-05-30.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_TRADITION_BOUNDARY_MAP_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_ACADEMIC_EVIDENCE_RESERVE_2026-05-26.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_CHAPTER_CARD_SPEC.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_CHAPTER_OPENING_DRAFTS_2026-05-23.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_CORE_PROPOSITIONS_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_CROSSDOMAIN_MATERIALS_INDEX_2026-05-23.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_EXAMPLE_DISCIPLINE.md: missing frontmatter
+01_Source_Intuition/BOOK/BOOK_STRONGEST_OPPONENTS_MANUAL_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/DEEP_RESEARCH_PROMPT_2026-06-05.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/DEEP_RESEARCH_SOURCE_PACK_2026-06-05.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q04_最低非中立性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q06_排除与阴影.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q07_锚定.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q08_不可逆性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q09_现实厚度.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q11_被选择.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q12_攸关.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q13_在乎.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q14_价值不是偏好.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q15_关切维度.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q16_主体沉积.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q17_意识.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q18_秩序与自由.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q21_苦难.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q22_方向.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q24_AI.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q25_选择广于意识.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论自反.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/附录_三问使用指南.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/PROFESSIONAL_READING_BRIEF.md: missing frontmatter
+01_Source_Intuition/BOOK/PROFESSIONAL_READING_BRIEF_CN.md: missing frontmatter
+01_Source_Intuition/BOOK/PUBLIC_MINIMAL_READING_PACK.md: missing frontmatter
+01_Source_Intuition/BOOK/compass_artifact_wf-f0bd9f89-97ad-43f9-99ba-0bae805cfa58_text_markdown.md: missing frontmatter
+01_Source_Intuition/BOOK/compass_artifact_wf-f0bd9f89-97ad-43f9-99ba-0bae805cfa58_text_markdown_zh-CN.md: missing frontmatter
+01_Source_Intuition/BOOK/deep-research-report (0605).md: missing frontmatter
+01_Source_Intuition/BOOK/deep-research-report (1).md: missing frontmatter
+01_Source_Intuition/BOOK/从存在到秩序_全书诊断报告.md: missing frontmatter
 01_Source_Intuition/README.md: missing frontmatter
 02_Formal_Anchors/README.md: missing frontmatter
 03_Bridges/README.md: missing frontmatter
@@ -46,42 +74,10 @@
 05_Public_Release/README.md: missing frontmatter
 05_Public_Release/SRT_IN_ONE_PAGE.md: missing recommended frontmatter keys: epistemic_layer
 05_Public_Release/SRT_IN_ONE_PAGE_CN.md: missing recommended frontmatter keys: epistemic_layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/book_glossary_core_terms_ch00_08.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/ch00_08_crosslink_insertion_patch.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/ch04_v2_recovered_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v1_recovered_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v2_recovered_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/ch06_order_recovered_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/ch06_v3_refinement_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/chapter_outline_recovered_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/dehomogenization_pass_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/existence_cobecoming_recovered_materials.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/philosophical_style_rules.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/precision_guardrail_pass_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/recovered_materials.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/source_map_ch08_choice_operator.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/style_guide_addendum_part02_mechanism_depth.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-90_Backstage/Restructure_2026/BOOK_PROJECT/third_tier_philosophical_weight_notes.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+90_Backstage/Restructure_2026/BOOK_PROJECT/audits/BOUNDARY_GUARDRAIL_AUDIT_Drafts_26Q_2026-06-04.md: missing frontmatter
+90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-05-29_choice_agency_emergence_backup.md: missing recommended frontmatter keys: epistemic_layer, layer
+90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-06-02_ontology_epistemology_generation_bridge.md: missing recommended frontmatter keys: epistemic_layer, layer
 AGENTS.md: missing frontmatter
-AI/Architecture_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
-AI/Architecture_Split/01_Transformer_and_Judgment.md: helper-layer file uses claim_mode: canonical
-AI/Architecture_Split/02_Defects_and_CategoryView.md: helper-layer file uses claim_mode: canonical
-AI/Architecture_Split/03_AGI_Limits_and_Assistant_Vision.md: helper-layer file uses claim_mode: canonical
-AI/Architecture_Split/04_Roadmap_and_Appendix.md: helper-layer file uses claim_mode: canonical
-AI/Architecture_Split/README.md: helper-layer file uses claim_mode: canonical
-AI/Consciousness_Framework_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
-AI/Consciousness_Framework_Split/01_Diagnosis_and_Necessity.md: helper-layer file uses claim_mode: canonical
-AI/Consciousness_Framework_Split/02_Architecture_and_Paths.md: helper-layer file uses claim_mode: canonical
-AI/Consciousness_Framework_Split/03_Ethics_Uncertainty_and_Appendix.md: helper-layer file uses claim_mode: canonical
-AI/Consciousness_Framework_Split/README.md: helper-layer file uses claim_mode: canonical
-AI/Ontology_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
-AI/Ontology_Split/01_dValue_and_Decoupling.md: helper-layer file uses claim_mode: canonical
-AI/Ontology_Split/02_PseudoSelection_and_Barrier.md: helper-layer file uses claim_mode: canonical
-AI/Ontology_Split/03_HumanReadable_Argument.md: helper-layer file uses claim_mode: canonical
-AI/Ontology_Split/04_Ethics_and_Falsification.md: helper-layer file uses claim_mode: canonical
-AI/Ontology_Split/README.md: helper-layer file uses claim_mode: canonical
 CLAUDE.md: missing frontmatter
 Core/Dynamics_Scaling_Annex/14_ST_Rhythm_Spatial_Draft.md: missing recommended frontmatter keys: epistemic_layer
 Core/Dynamics_Scaling_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
@@ -92,12 +88,13 @@ Core/Dynamics_Scaling_Split/README.md: helper-layer file uses claim_mode: canoni
 Core_Law/SRT_Core_Text_EN.md: missing frontmatter
 FRONTSTAGE_RESTRUCTURE_PLAN.md: missing frontmatter
 HEARTBEAT.md: missing frontmatter
-Materials/2026/SRC_2025_07_10_Phys_Spontaneous_Collapse_Universe_BrighterSide.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Materials/2026/SRC_2026_04_27_Philosophy_Agency_Pacherie_Cambridge.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Materials/2026/SRC_2026_04_27_Phys_Cosmological_Principle_NewScientist.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Materials/2026/SRC_2026_04_27_Phys_Quantum_Proper_Time_PopularMechanics.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Materials/2026/SRC_2026_05_08_Neuro_Propofol_Traveling_Waves_bioRxiv.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Materials/2026/SRC_2026_05_08_Philosophy_ActiveInference_DiscriminatoryCognition_BioSystems.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Materials/2026/SRC_2025_12_23_Philosophy_Disunity_of_Science_IAI.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_01_28_AI_Unplugging_Paradox_Biological_Idealism_arXiv.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_05_18_Philosophy_Godel_Incompleteness_Quanta.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_05_19_AI_Language_Autogeneration_IAI.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_05_20_NEUROSCIENCE_Quantum_Emotions_Memory_Newcastle_NeuroscienceNews.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_05_20_Physics_RaQM_Discrete_Hilbert_Palmer_IAI_PNAS.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_05_22_PHILOSOPHY_Association_As_Causation_Essentia.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
 Neuroscience/README.md: missing frontmatter
 Neuroscience/SRT_Neuroscience_Hardening_N10_BTSP_v0_1.md: missing frontmatter
 Neuroscience/SRT_Neuroscience_Hardening_N11_Transition_Field_Subjective_Time_v0_1.md: missing frontmatter
@@ -105,8 +102,6 @@ Neuroscience/SRT_Neuroscience_Hardening_N12_Astrocyte_Plastic_Networks_v0_1.md: 
 Neuroscience/SRT_Neuroscience_Hardening_N1_N9_Integration_Hooks_for_N10_N12.md: missing frontmatter
 Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md: missing frontmatter
 Neuroscience/_SRT_Neuroscience_Hardening_Index.md: missing frontmatter
-Neuroscience/hooks/CONSC14_Propofol_Traveling_Wave_Reorganization_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Neuroscience/patches/SRT_Neuro_CONSC14_Propofol_Traveling_Wave_Reorganization_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 Operations/Frontstage_Navigation_Consistency_Audit_2026-05-05.md: missing recommended frontmatter keys: epistemic_layer
 Operations/_SRT_AUTOMATION_SETUP.md: helper-layer file uses claim_mode: canonical
 Operations/_SRT_DAILY_REVIEW_LOG.md: helper-layer file uses claim_mode: canonical
@@ -132,30 +127,8 @@ Operations/material_log_entries/2026-04-28_SRC_2025_07_10_Phys_Spontaneous_Colla
 Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Philosophy_Agency_Pacherie_Cambridge.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Phys_Cosmological_Principle_NewScientist.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Phys_Quantum_Proper_Time_PopularMechanics.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Philosophy/Foundations_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
-Philosophy/Foundations_Split/04_Mind_Philosophy_and_Predictions.md: helper-layer file uses claim_mode: canonical
-Philosophy/Foundations_Split/README.md: helper-layer file uses claim_mode: canonical
-Philosophy/Political_Philosophy_Split/README.md: helper-layer file uses claim_mode: canonical
 Philosophy/SRT_L0_Ontological_Status.md: missing frontmatter
-Philosophy/Social_Economics_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
-Philosophy/Social_Economics_Split/01_Foundations_and_Mechanisms.md: helper-layer file uses claim_mode: canonical
-Philosophy/Social_Economics_Split/02_HumanReadable_Framework.md: helper-layer file uses claim_mode: canonical
-Philosophy/Social_Economics_Split/03_Classics_and_Summary.md: helper-layer file uses claim_mode: canonical
-Philosophy/Social_Economics_Split/README.md: helper-layer file uses claim_mode: canonical
 Philosophy/_SRT_Philosophy_Hardening_Index.md: missing frontmatter
-Philosophy/hooks/PH_AG01_Agency_Ladder_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Philosophy/hooks/SOC_COG01_ZBS_Discriminatory_Cognition_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Philosophy/patches/SRT_Philosophy_SOC_COG01_ZBS_Discriminatory_Cognition_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Physics/Cosmology_Split/01_Thermo_Time_Gravity_Cosmology.md: helper-layer file uses claim_mode: canonical
-Physics/Cosmology_Split/02_Cosmology_Extensions.md: helper-layer file uses claim_mode: canonical
-Physics/Cosmology_Split/03_Microgravity_and_Advanced_Claims.md: helper-layer file uses claim_mode: canonical
-Physics/Cosmology_Split/README.md: helper-layer file uses claim_mode: canonical
-Physics/Formalism_Ext_Split/00_Foundational_Formalism.md: helper-layer file uses claim_mode: canonical
-Physics/Formalism_Ext_Split/01_Math_and_Category_Stack.md: helper-layer file uses claim_mode: canonical
-Physics/Formalism_Ext_Split/02_Information_Geometry_and_Dynamics.md: helper-layer file uses claim_mode: canonical
-Physics/Formalism_Ext_Split/03_Quantum_and_Advanced_Extensions.md: helper-layer file uses claim_mode: canonical
-Physics/Formalism_Ext_Split/README.md: helper-layer file uses claim_mode: canonical
 Physics/hooks/P03_Cosmological_Principle_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 Physics/hooks/P04_Spontaneous_Collapse_Classicality_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 Physics/hooks/P05_Quantum_Proper_Time_Optical_Clocks_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
@@ -163,23 +136,19 @@ Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md: 
 Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 Physics/patches/SRT_Phys_P05_Quantum_Proper_Time_Optical_Clocks_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 README.md: missing frontmatter
+README_如何给Pro模型上传书稿.md: missing frontmatter
 SRT 金句.md: missing frontmatter
 SRT/未命名 1.md: missing frontmatter
 SRT/未命名.md: missing frontmatter
 SRT_PRACTICE_COMMUNITY_PLAN.md: missing frontmatter
+SRT_PRO_DEEP_RESEARCH_BOOT_FILE_2026-06-05.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer, status
 SRT_Quick_Start.md: missing frontmatter
 Selection-Reality Theory (SRT).md: missing frontmatter
-Spirituality/Praxis_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
 Spirituality/Praxis_Split/00_Formal_Core.md: missing recommended frontmatter keys: layer
-Spirituality/Praxis_Split/01_30Days_to_6Months.md: helper-layer file uses claim_mode: canonical
 Spirituality/Praxis_Split/01_30Days_to_6Months.md: missing recommended frontmatter keys: layer
-Spirituality/Praxis_Split/02_1to3Years_and_LifeIntegration.md: helper-layer file uses claim_mode: canonical
 Spirituality/Praxis_Split/02_1to3Years_and_LifeIntegration.md: missing recommended frontmatter keys: layer
-Spirituality/Praxis_Split/03_Contexts_Community_Measures.md: helper-layer file uses claim_mode: canonical
 Spirituality/Praxis_Split/03_Contexts_Community_Measures.md: missing recommended frontmatter keys: layer
-Spirituality/Praxis_Split/04_Goal_Resources_Appendix.md: helper-layer file uses claim_mode: canonical
 Spirituality/Praxis_Split/04_Goal_Resources_Appendix.md: missing recommended frontmatter keys: layer
-Spirituality/Praxis_Split/README.md: helper-layer file uses claim_mode: canonical
 Spirituality/Praxis_Split/README.md: missing recommended frontmatter keys: layer
 TOOLS.md: missing frontmatter
 _SRT_EXPLAINABILITY_AUDIT.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
@@ -209,6 +178,23 @@ duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/02_Defects_and_Cat
 duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/03_AGI_Limits_and_Assistant_Vision.md / AI/Architecture_Split/04_Roadmap_and_Appendix.md
 duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/04_Roadmap_and_Appendix.md / AI/Architecture_Split/05_Interface_Additions.md
 duplicate frontmatter id `SRT-AI-ARCH`: AI/Architecture_Split/05_Interface_Additions.md / AI/SRT_AI_Architecture.md
+duplicate frontmatter id `SRT-BOOK-CH01-REALITY-NOT-GIVEN`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/01_现实不是先给定的.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v19_remove_ai_style_trial.md
+duplicate frontmatter id `SRT-BOOK-CH01-REALITY-NOT-GIVEN`: 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v19_remove_ai_style_trial.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v20_before_v21_style_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH01-REALITY-NOT-GIVEN`: 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v20_before_v21_style_hardening.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v22_objectification_pass.md
+duplicate frontmatter id `SRT-BOOK-CH02-L0-NOT-NOTHING`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/02_L0不是虚无.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/02_L0不是虚无_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH03-EPSILON-PG`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH04-SELECTION-NOT-PICKING`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/04_选择不是挑选.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/04_选择不是挑选_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH05-ANCHORING`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/05_锚定让一留下.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/05_锚定让一留下_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH06-ORDER-AS-BACKGROUND`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/06_秩序如何成为背景.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06_秩序如何成为背景_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH07-TERRAIN-SELECTS`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/07_地形如何反过来选择人.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/07_地形如何反过来选择人_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH08-CHOICE-OPERATOR`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/08_选择算子_从可成为性到显现.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH09-EXCLUSION-SHADOW-OF-SELECTION`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/09_排除_选择的阴影.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH10-IRREVERSIBILITY-NO-RETURN-TO-ORIGIN`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是回到原点_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH11-ONTOLOGICAL-FRICTION`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH12-PAYABILITY-PATH`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/12_可支付性_为什么路径越走越像路.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH13-THREE-CRITERIA`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-CH13B-PART02-BRIDGE`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/13b_卷二小结_选择如何在地形中发生.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13b_卷二小结_选择如何在地形中发生_pre_2026-05-20_style_philosophy_hardening.md
+duplicate frontmatter id `SRT-BOOK-PART01-INTERLUDE-FIRST-GENERATIVE-CHAIN`: 01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md / 01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06b_卷一小结_第一条生成链_pre_2026-05-20_style_philosophy_hardening.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/00_General_Boundary_Block.md / Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md / Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md / Core/Dynamics_Scaling_Annex/03_Constructive_Fracture_Interface.md
@@ -221,7 +207,6 @@ duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Split/01_Master_Eq
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Split/02_Friction_Time_Awakening.md / Core/Dynamics_Scaling_Split/03_RecursiveDepth_and_Appendix.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Split/03_RecursiveDepth_and_Appendix.md / Core/Dynamics_Scaling_Split/04_Interface_Additions.md
 duplicate frontmatter id `SRT-CORE-14`: Core/Dynamics_Scaling_Split/04_Interface_Additions.md / Core/SRT_Core_14_Dynamics_Scaling.md
-duplicate frontmatter id `SRT-EXPLAINABILITY-AUDIT`: Governance/_SRT_EXPLAINABILITY_AUDIT.md / _SRT_EXPLAINABILITY_AUDIT.md
 duplicate frontmatter id `SRT-GLOSSARY`: Glossary/SRT_Glossary_00_Governance_and_Prelude.md / Glossary/SRT_Glossary_01_Core_Symbols.md
 duplicate frontmatter id `SRT-GLOSSARY`: Glossary/SRT_Glossary_01_Core_Symbols.md / Glossary/SRT_Glossary_02_Notation.md
 duplicate frontmatter id `SRT-GLOSSARY`: Glossary/SRT_Glossary_02_Notation.md / Glossary/SRT_Glossary_03_Domain_Parameters.md
@@ -235,17 +220,11 @@ duplicate frontmatter id `SRT-PHIL-FOUNDATIONS`: Philosophy/Foundations_Split/02
 duplicate frontmatter id `SRT-PHIL-FOUNDATIONS`: Philosophy/Foundations_Split/03_Paradox_and_Metaphysics.md / Philosophy/Foundations_Split/04_Mind_Philosophy_and_Predictions.md
 duplicate frontmatter id `SRT-PHIL-FOUNDATIONS`: Philosophy/Foundations_Split/04_Mind_Philosophy_and_Predictions.md / Philosophy/Foundations_Split/05_Interface_Batch_2026_03.md
 duplicate frontmatter id `SRT-PHIL-FOUNDATIONS`: Philosophy/Foundations_Split/05_Interface_Batch_2026_03.md / Philosophy/SRT_Philosophy_Foundations.md
-duplicate frontmatter id `SRT-PHYS-09`: Physics/Formalism_Ext_Split/00_Foundational_Formalism.md / Physics/Formalism_Ext_Split/01_Math_and_Category_Stack.md
-duplicate frontmatter id `SRT-PHYS-09`: Physics/Formalism_Ext_Split/01_Math_and_Category_Stack.md / Physics/Formalism_Ext_Split/02_Information_Geometry_and_Dynamics.md
-duplicate frontmatter id `SRT-PHYS-09`: Physics/Formalism_Ext_Split/02_Information_Geometry_and_Dynamics.md / Physics/Formalism_Ext_Split/03_Quantum_and_Advanced_Extensions.md
-duplicate frontmatter id `SRT-PHYS-09`: Physics/Formalism_Ext_Split/03_Quantum_and_Advanced_Extensions.md / Physics/Formalism_Ext_Split/04_Symbols_and_Interfaces.md
-duplicate frontmatter id `SRT-PHYS-09`: Physics/Formalism_Ext_Split/04_Symbols_and_Interfaces.md / Physics/SRT_Phys_09_Formalism_Ext.md
 duplicate frontmatter id `SRT-PHYS-COSMO`: Physics/Cosmology_Split/00_Foundations_and_Axioms.md / Physics/Cosmology_Split/01_Thermo_Time_Gravity_Cosmology.md
 duplicate frontmatter id `SRT-PHYS-COSMO`: Physics/Cosmology_Split/01_Thermo_Time_Gravity_Cosmology.md / Physics/Cosmology_Split/02_Cosmology_Extensions.md
 duplicate frontmatter id `SRT-PHYS-COSMO`: Physics/Cosmology_Split/02_Cosmology_Extensions.md / Physics/Cosmology_Split/03_Microgravity_and_Advanced_Claims.md
 duplicate frontmatter id `SRT-PHYS-COSMO`: Physics/Cosmology_Split/03_Microgravity_and_Advanced_Claims.md / Physics/Cosmology_Split/04_Symbols_and_Interfaces.md
 duplicate frontmatter id `SRT-PHYS-COSMO`: Physics/Cosmology_Split/04_Symbols_and_Interfaces.md / Physics/SRT_Physics_Cosmology.md
-duplicate frontmatter id `SRT-QUALITY-METRICS-AUTO`: Governance/_SRT_QUALITY_METRICS.md / _SRT_QUALITY_METRICS.md
 duplicate frontmatter id `SRT-SOC-ECONOMICS`: Philosophy/SRT_Social_Economics.md / Philosophy/Social_Economics_Split/00_Formal_Core.md
 duplicate frontmatter id `SRT-SOC-ECONOMICS`: Philosophy/Social_Economics_Split/00_Formal_Core.md / Philosophy/Social_Economics_Split/01_Foundations_and_Mechanisms.md
 duplicate frontmatter id `SRT-SOC-ECONOMICS`: Philosophy/Social_Economics_Split/01_Foundations_and_Mechanisms.md / Philosophy/Social_Economics_Split/02_HumanReadable_Framework.md

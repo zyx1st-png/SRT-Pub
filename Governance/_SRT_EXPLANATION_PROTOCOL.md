@@ -2,14 +2,18 @@
 id: SRT-EXPLANATION-PROTOCOL
 type: framework
 tags: [Documentation, Explainability, WritingProtocol]
-status: axiomatic_hybrid_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [_SRT_DOC_ENGINEERING_GUIDE, SRT-GLOSSARY, SRT-REF-AXIOMS]
+updated: 2026-06-05
 ---
 
 # SRT 解释协议（Definition → Mechanism → Falsification）
+
+> 2026-06-05 scope note: this protocol is for theory-facing explanatory documents. It should not be forced onto book prose, public essays, archives, split shards, or operations logs.
 
 ## 目的
 
