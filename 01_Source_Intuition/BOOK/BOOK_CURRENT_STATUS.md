@@ -9,7 +9,7 @@ updated: 2026-06-06
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: boundary_guardrail_recheck_micro_edits_2026-06-06
+last_pass: meta_sync_proactivization_2026-06-06
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -70,35 +70,35 @@ last_pass: boundary_guardrail_recheck_micro_edits_2026-06-06
 
 | 编号 | 文件 | 当前状态 |
 |---|---|---|
-| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v16` |
+| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v18`（v18 主动化重写 §一至§三） |
 | Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v11` |
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v9` |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v10` |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v10` |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v10` |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v11`（v11 问题秩序改变 + 现实切口） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v7` |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v8` |
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v6` |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v6` |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v9` |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v10`（v10 问题秩序改变段落） |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v8` |
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v10` |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v11` |
-| Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v9` |
+| Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v10`（v10 问题秩序改变段落） |
 | Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v9` |
 | Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v14` |
-| Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v12` |
-| Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v8_terminology_simplification` |
+| Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v15`（v15 问题秩序改变段落） |
+| Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v9`（v9 自由理论提问入口改变） |
 | Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v9` |
 | Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v10` |
 | Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v8` |
-| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v11` |
-| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v7` |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v8` |
+| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v12`（v12 is-ought 正面判断） |
+| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v10`（v10 政治哲学提问入口改变） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v9`（v9 AI 伦理提问顺序改变） |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v9` |
-| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v6` |
+| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v7`（v7 死亡条件即力量） |
 | Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v5` |
-| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v2` |
+| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v5`（v5 §7 十领域雄心显影 + §8-§9 结尾重写） |
 
 ---
 
