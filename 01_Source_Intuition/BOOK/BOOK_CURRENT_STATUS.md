@@ -70,7 +70,7 @@ last_pass: meta_sync_proactivization_2026-06-06
 
 | 编号 | 文件 | 当前状态 |
 |---|---|---|
-| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v18`（v18 主动化重写 §一至§三） |
+| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v19`（v19 §四压缩 + 传统对话移至章末注） |
 | Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v11` |
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v9` |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v10` |
