@@ -96,7 +96,7 @@ last_pass: positioning_brief_registered_2026-06-07
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v9`（v9 行级打磨：§6 修复重述压缩） |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v9`（v9 问题秩序改变段落） |
 | Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v11`（v11 行级打磨：§3 河道重复删除 + 总结合并） |
-| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v9`（v9 问题秩序改变段落 + 对手入口直接化） |
+| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v10`（v10 行级打磨：§3 视觉重复删除 + 菜单句重复删除 + §5 重述段删除） |
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v12`（v12 问题秩序改变段落 + 跨领域折叠入机制节） |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v13`（v13 问题秩序改变段落 + 旧地板开法变化） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v10`（v10 问题秩序改变段落） |
