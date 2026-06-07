@@ -1,7 +1,7 @@
 ---
 id: Q24
 type: book_chapter_draft
-status: draft_v9
+status: draft_v10
 question: Q24
 act: 第四幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
@@ -47,10 +47,11 @@ optimization_axis:
   - v8_s5_agentic_ai_turn_tool_thesis_pressure
   - v8_chapter_note_seven_governance_anchors_eu_ai_act_mckinsey
   - v9_extended_mind_scaffolding_ai_chapter_note
+  - v10_s1_opening_variation_remove_template_fatigue
 canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
-revised: 2026-06-05
+revised: 2026-06-07
 ---
 
 # 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
@@ -61,9 +62,9 @@ revised: 2026-06-05
 
 ## §1　他不再自己想了
 
-上一章钉住了三件事。共同体不是一群人的相加，而是多个具身位之间的后果回流结构。共同体健康取决于：后果是否能回流，承受者是否能回应，共同地形是否还能被改写。上一章结尾指出：AI 不一定是具身位，也不一定有意识，但它正在成为共同地形中强大的改写者。
+共同体的健康取决于三件事：后果是否能回流，承受者是否能回应，共同地形是否还能被改写。但有一类系统正在大规模改写这些通道——它不是具身位，不一定有意识，却已经在重新安排谁看见什么、谁承担什么、谁能说不。
 
-这一章不急着问 AI 有没有意识。先看两个场景。
+这一章不急着问 AI 有没有意识。
 
 一个大学生写毕业论文。他最初用 AI 来帮自己打开思路——不知道怎么起头时，AI 给出几个框架选项；不确定哪个例子合适时，AI 列出候选。这是脚手架：他自己判断哪个方向对，AI 帮他降低启动成本。几个月后，情况变了。他遇到问题时第一反应不再是翻资料、问老师、自己试错，而是“问 AI”。他写得更快了，但一个不确定开始在他心里积累：自己到底还能不能独立判断一篇论文的好坏？如果把 AI 关掉，他是比半年前更能判断，还是更不能？
 

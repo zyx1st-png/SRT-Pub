@@ -44,11 +44,24 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 
 ---
 
+## 0.1 当前定位
+
+当前书稿定位为：**非学院化的 SRT 奠基书**。
+
+这本书不是论文、社交媒体长文、学术综述或纯思想随笔。它存在的理由是：SRT 要移动的不是某个局部观点，而是读者理解现实时默认站立的第一块地板。一般读者不容易接受 SRT，不只是因为术语陌生，而是因为 SRT 追问的是对象、主体、稳定世界、选择、价值、意识和秩序这些“已经在那里”的东西如何生成、如何稳定、如何退入背景。
+
+因此，本书必须系统性讲解 SRT，但不能主要依赖传统学院术语来推进。传统术语可以承担边界、对照和压力测试功能，却不能成为正文主语言；否则读者会被重新带回旧地板。本书的读者入口可以更白话、更有经验抓手，但作者端骨架必须保持体系性：Q00-Q28 需要成为后续意识、AI、价值、自由、共同体和理论方法延伸的母书接口。
+
+详细定位以 `BOOK_POSITIONING_BRIEF_2026-06-07.md` 为准。
+
+---
+
 ## 1. 当前可用元文件
 
 | 层级 | 当前文件 | 用途 |
 |---|---|---|
 | 唯一施工入口 | `BOOK_CURRENT_STATUS.md` | 本文件；确认当前正文主线、状态和读取顺序 |
+| 当前定位 | `BOOK_POSITIONING_BRIEF_2026-06-07.md` | 非学院化 SRT 奠基书定位；说明本书为何不是论文/社媒/学术综述/纯叙事 |
 | 当前建筑图 | `BOOK_ARCHITECTURE_MAP_2026-06-03.md` | Q00-Q28 闭合后的六根主梁、缺口链、总修顺序 |
 | 当前术语规则 | `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` | Q00-Q28 总修阶段术语降噪、核心记忆点与经验材料纪律 |
 | d-value 补丁 | `BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md` | Q14/Q15 深度/宽度分工；已并入 06-03 术语指南 |
@@ -95,8 +108,8 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 | Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v11`（v11 问题秩序改变段落） |
 | Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v8` |
 | Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v12`（v12 is-ought 正面判断） |
-| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v10`（v10 政治哲学提问入口改变） |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v9`（v9 AI 伦理提问顺序改变） |
+| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v11`（v11 §1 开头变奏，消除模板疲劳） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v10`（v10 §1 开头变奏，消除模板疲劳） |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v9` |
 | Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v7`（v7 死亡条件即力量） |
 | Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v5` |
@@ -106,7 +119,7 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 
 ## 3. 当前写作顺序
 
-当前全书已经从旧 52 章路线收束到 Q00-Q28 闭合版。近期施工优先级按 `BOOK_ARCHITECTURE_MAP_2026-06-03.md` 与 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` 执行：
+当前全书已经从旧 52 章路线收束到 Q00-Q28 闭合版。近期施工优先级按 `BOOK_ARCHITECTURE_MAP_2026-06-03.md`、`BOOK_POSITIONING_BRIEF_2026-06-07.md` 与 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` 执行：
 
 1. ~~元文件同步~~（2026-06-06 完成：建筑图、核心命题与状态表同步）
 2. ~~Q06-Q10 机制段专项审计~~（2026-06-06 完成：Q06-Q09 问题秩序改变段落 + Q00 §四压缩）
@@ -114,20 +127,23 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 4. ~~模板疲劳微修~~（2026-06-07 完成：Q11 对手入口直接化、Q12 跨领域折叠、Q13 旧地板开法变化）
 5. ~~普通读者入口~~（2026-06-07 完成：新增 `致读者.md`，四幕地图 + 阅读建议）
 6. ~~Q16-Q20 问题秩序改变段落检查~~（2026-06-07 完成：Q16/Q19/Q20 三章补齐；致读者→Q00 衔接验证通过）
-7. 第四幕（Q21-Q28）质量审计：检查经验入口具体化、对手力度、跨领域折叠效率、理论自限边界。
-8. 全书语言润色：避免在结构未完全锁定前过度平滑。
+7. ~~全书定位补丁~~（2026-06-07 完成：新增 `BOOK_POSITIONING_BRIEF_2026-06-07.md` 并挂入当前入口）
+8. ~~第四幕（Q21-Q28）质量审计~~（2026-06-07 完成：经验入口、对手力度、跨领域折叠、理论自限四维通过；无需结构性修改）
+9. 全书语言润色第一轮：跨章节过渡衔接 + 重复句式消除 + 模板疲劳微调。
+10. 全书语言润色第二轮：逐章行级打磨。
 
 ---
 
 ## 4. 每次开工的读取顺序
 
 1. 读本文件，确认当前正文主线和历史归档边界。
-2. 读目标章节、前一章、后一章。
-3. 读 `BOOK_ARCHITECTURE_MAP_2026-06-03.md`，确认该章在六根主梁和缺口链中的位置。
-4. 读 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md`；若涉及 Q14/Q15 或 d-value，再核 `BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md`。
-5. 需要深结构时读 `BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` 和 `BOOK_CHAPTER_CARDS_2026-05-22.md`。
-6. 需要命题压缩或专业入口时读 `BOOK_CORE_PROPOSITIONS_2026-05-30.md` 和 `PROFESSIONAL_READING_BRIEF*.md`。
-7. 只在追溯旧 52 章材料、旧 Part 主稿、旧 Outline_Parts 时进入 `Archive_52Chapter/`。
+2. 读 `BOOK_POSITIONING_BRIEF_2026-06-07.md`，确认“非学院化 SRT 奠基书”的定位红线。
+3. 读目标章节、前一章、后一章。
+4. 读 `BOOK_ARCHITECTURE_MAP_2026-06-03.md`，确认该章在六根主梁和缺口链中的位置。
+5. 读 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md`；若涉及 Q14/Q15 或 d-value，再核 `BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md`。
+6. 需要深结构时读 `BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` 和 `BOOK_CHAPTER_CARDS_2026-05-22.md`。
+7. 需要命题压缩或专业入口时读 `BOOK_CORE_PROPOSITIONS_2026-05-30.md` 和 `PROFESSIONAL_READING_BRIEF*.md`。
+8. 只在追溯旧 52 章材料、旧 Part 主稿、旧 Outline_Parts 时进入 `Archive_52Chapter/`。
 
 ---
 
@@ -140,6 +156,8 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 5. Q25 负责“选择广于意识但不是泛心论”的边界；不要把早期选择结构误写成意识泛化。
 6. Q26/Q27/Q28 是理论自限与回到生成，不是把 SRT 包装成封闭体系。
 7. AI、科学、跨领域与实证材料可以承担局部经验支持、结构锚点和最小证明压力，但不能承担整套 SRT 的证明任务，也不能展开成学科综述。
+8. 本书当前定位是“非学院化 SRT 奠基书”：读者入口可以白话化、经验化，但不能牺牲 Q00-Q28 作为后续意识、AI、价值、自由、共同体与理论方法延伸母书的体系功能。
+9. 传统哲学和学科术语可以作为边界、对照和压力测试进入，但不能成为正文主语言；否则会把 SRT 重新拉回旧地板。
 
 ---
 
@@ -147,6 +165,7 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 
 - 章节正文更新：同步目标章节 frontmatter、必要时同步 `BOOK_VERSION_LOG.md`。
 - 全书结构更新：同步本文件、`BOOK_ARCHITECTURE_MAP_2026-06-03.md` 或新建筑图、`BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md`、`BOOK_CHAPTER_CARDS_2026-05-22.md`。
+- 定位更新：同步 `BOOK_POSITIONING_BRIEF_2026-06-07.md`；若改变“非学院化 SRT 奠基书”定位，必须同步本文件、`致读者.md` 和公共入口材料。
 - 术语规则更新：同步 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md`；若改变 d-value 用法，必须同步 d-value 治理补丁并核 `_SRT_D_VALUE_CANONICAL.md`。
 - 历史材料归档：不删除有 provenance 价值的旧文件；从根目录移入 `Archive_Meta/` 或 `Archive_52Chapter/` 并在当前入口说明。
 - 不把 `Archive_*` 文件、backstage notes、operations logs 写成新的定义权威。
