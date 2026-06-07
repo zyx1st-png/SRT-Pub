@@ -5,11 +5,11 @@ status: active_current
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-06-06
+updated: 2026-06-07
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: meta_sync_proactivization_2026-06-06
+last_pass: q11_q15_audit_template_reader_2026-06-07
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -25,6 +25,7 @@ last_pass: meta_sync_proactivization_2026-06-06
 当前正文主线是：
 
 ```text
+01_Source_Intuition/BOOK/Drafts_26Q/致读者.md
 01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md
 01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md
 ...
@@ -70,6 +71,7 @@ last_pass: meta_sync_proactivization_2026-06-06
 
 | 编号 | 文件 | 当前状态 |
 |---|---|---|
+| 致读者 | `Drafts_26Q/致读者.md` | `draft_v1`（普通读者入口，四幕地图 + 阅读建议） |
 | Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v19`（v19 §四压缩 + 传统对话移至章末注） |
 | Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v11` |
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v9` |
@@ -81,11 +83,11 @@ last_pass: meta_sync_proactivization_2026-06-06
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v8`（v8 问题秩序改变段落） |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v9`（v9 问题秩序改变段落） |
 | Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v10`（v10 问题秩序改变段落） |
-| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v8` |
-| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v10` |
-| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v11` |
+| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v9`（v9 问题秩序改变段落 + 对手入口直接化） |
+| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v12`（v12 问题秩序改变段落 + 跨领域折叠入机制节） |
+| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v13`（v13 问题秩序改变段落 + 旧地板开法变化） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v10`（v10 问题秩序改变段落） |
-| Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v9` |
+| Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v11`（v11 问题秩序改变段落） |
 | Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v14` |
 | Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v15`（v15 问题秩序改变段落） |
 | Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v9`（v9 自由理论提问入口改变） |
@@ -106,11 +108,13 @@ last_pass: meta_sync_proactivization_2026-06-06
 
 当前全书已经从旧 52 章路线收束到 Q00-Q28 闭合版。近期施工优先级按 `BOOK_ARCHITECTURE_MAP_2026-06-03.md` 与 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` 执行：
 
-1. 元文件同步：确保 current status、建筑图、核心命题、问题链、章节卡、术语指南不互相打架。
-2. 模板疲劳微修：处理旧地板、最强反对者、章末注、工具箱形式的重复感。
-3. Q06-Q10 机制段专项审计：保持机制厚度，同时增强经验抓手。
-4. 引言与阅读说明策略：优先考虑普通读者入口，而不是继续大改中后段。
-5. 最后才做语言润色：避免在结构未完全锁定前过度平滑。
+1. ~~元文件同步~~（2026-06-06 完成：建筑图、核心命题与状态表同步）
+2. ~~Q06-Q10 机制段专项审计~~（2026-06-06 完成：Q06-Q09 问题秩序改变段落 + Q00 §四压缩）
+3. ~~Q11-Q15 问题秩序改变段落审计~~（2026-06-07 完成：Q11/Q12/Q13/Q15 四章补齐）
+4. ~~模板疲劳微修~~（2026-06-07 完成：Q11 对手入口直接化、Q12 跨领域折叠、Q13 旧地板开法变化）
+5. ~~普通读者入口~~（2026-06-07 完成：新增 `致读者.md`，四幕地图 + 阅读建议）
+6. Q16-Q20 问题秩序改变段落检查：检查 Q16（主体沉积）、Q19（脚手架与牢笼）、Q20（遮蔽）是否需要补齐。
+7. 全书语言润色：避免在结构未完全锁定前过度平滑。
 
 ---
 
