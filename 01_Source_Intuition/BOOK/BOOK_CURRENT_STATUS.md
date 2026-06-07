@@ -86,10 +86,10 @@ last_pass: positioning_brief_registered_2026-06-07
 |---|---|---|
 | 致读者 | `Drafts_26Q/致读者.md` | `draft_v1`（普通读者入口，四幕地图 + 阅读建议） |
 | Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v19`（v19 §四压缩 + 传统对话移至章末注） |
-| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v11` |
-| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v9` |
-| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v10` |
-| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v10` |
+| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v12`（v12 行级打磨：§3/§4 冗余压缩） |
+| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v10`（v10 行级打磨：§2 科学双段合并 + §6 句法整理） |
+| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v12`（v12 行级打磨：§1/§4/§5 冗余压缩） |
+| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v11`（v11 行级打磨：§4 冗余压缩） |
 | Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v11`（v11 问题秩序改变 + 现实切口） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v10`（v10 问题秩序改变段落） |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v11`（v11 问题秩序改变段落） |
