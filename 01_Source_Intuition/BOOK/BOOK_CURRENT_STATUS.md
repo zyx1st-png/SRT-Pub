@@ -9,7 +9,7 @@ updated: 2026-06-07
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: q11_q15_audit_template_reader_2026-06-07
+last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -88,11 +88,11 @@ last_pass: q11_q15_audit_template_reader_2026-06-07
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v13`（v13 问题秩序改变段落 + 旧地板开法变化） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v10`（v10 问题秩序改变段落） |
 | Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v11`（v11 问题秩序改变段落） |
-| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v14` |
+| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v15`（v15 问题秩序改变段落） |
 | Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v15`（v15 问题秩序改变段落） |
 | Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v9`（v9 自由理论提问入口改变） |
-| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v9` |
-| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v10` |
+| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v10`（v10 问题秩序改变段落） |
+| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v11`（v11 问题秩序改变段落） |
 | Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v8` |
 | Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v12`（v12 is-ought 正面判断） |
 | Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v10`（v10 政治哲学提问入口改变） |
@@ -113,8 +113,9 @@ last_pass: q11_q15_audit_template_reader_2026-06-07
 3. ~~Q11-Q15 问题秩序改变段落审计~~（2026-06-07 完成：Q11/Q12/Q13/Q15 四章补齐）
 4. ~~模板疲劳微修~~（2026-06-07 完成：Q11 对手入口直接化、Q12 跨领域折叠、Q13 旧地板开法变化）
 5. ~~普通读者入口~~（2026-06-07 完成：新增 `致读者.md`，四幕地图 + 阅读建议）
-6. Q16-Q20 问题秩序改变段落检查：检查 Q16（主体沉积）、Q19（脚手架与牢笼）、Q20（遮蔽）是否需要补齐。
-7. 全书语言润色：避免在结构未完全锁定前过度平滑。
+6. ~~Q16-Q20 问题秩序改变段落检查~~（2026-06-07 完成：Q16/Q19/Q20 三章补齐；致读者→Q00 衔接验证通过）
+7. 第四幕（Q21-Q28）质量审计：检查经验入口具体化、对手力度、跨领域折叠效率、理论自限边界。
+8. 全书语言润色：避免在结构未完全锁定前过度平滑。
 
 ---
 
