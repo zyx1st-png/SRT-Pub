@@ -90,12 +90,12 @@ last_pass: positioning_brief_registered_2026-06-07
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v10`（v10 行级打磨：§2 科学双段合并 + §6 句法整理） |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v12`（v12 行级打磨：§1/§4/§5 冗余压缩） |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v11`（v11 行级打磨：§4 冗余压缩） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v11`（v11 问题秩序改变 + 现实切口） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v12`（v12 行级打磨：§5 因果区分双段合并） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v10`（v10 问题秩序改变段落） |
-| Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v11`（v11 问题秩序改变段落） |
-| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v8`（v8 问题秩序改变段落） |
+| Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v12`（v12 行级打磨：§4/§6 冗余压缩） |
+| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v9`（v9 行级打磨：§6 修复重述压缩） |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v9`（v9 问题秩序改变段落） |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v10`（v10 问题秩序改变段落） |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v11`（v11 行级打磨：§3 河道重复删除 + 总结合并） |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v9`（v9 问题秩序改变段落 + 对手入口直接化） |
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v12`（v12 问题秩序改变段落 + 跨领域折叠入机制节） |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v13`（v13 问题秩序改变段落 + 旧地板开法变化） |
