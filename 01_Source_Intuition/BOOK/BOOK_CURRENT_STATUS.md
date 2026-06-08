@@ -100,7 +100,7 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v12`（v12 问题秩序改变段落 + 跨领域折叠入机制节） |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v13`（v13 问题秩序改变段落 + 旧地板开法变化） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v10`（v10 问题秩序改变段落） |
-| Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v12`（v12 d-value 三维升级 + 四案例矩阵 + 梯度在乎 + 复杂性反驳 + 过载展开 + 照护者扩写 + 条件性规范命题） |
+| Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v13`（v13 三把尺书语言 + 质量=承重非低摩擦 + AI边界案例 + 自私→自我维持型狭窄关切 + 梯度在乎回收 + 工具箱/章末注对齐 + Q14桥接 + canonical书稿层注） |
 | Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v15`（v15 问题秩序改变段落） |
 | Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v15`（v15 问题秩序改变段落） |
 | Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v9`（v9 自由理论提问入口改变） |
