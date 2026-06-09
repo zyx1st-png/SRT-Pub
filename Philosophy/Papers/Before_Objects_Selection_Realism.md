@@ -2,13 +2,13 @@
 id: SRT-PAPER-BEFORE-OBJECTS-SELECTION-REALISM
 title: "对象之前：选择实在论与确定性的奠基"
 title_en: "Before Objects: Selection Realism and the Grounding of Determinacy"
-status: working_draft_v0_5
+status: working_draft_v0_6
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: bridge
 claim_mode: paper_draft
 date: 2026-06-09
-revision: v0_5
+revision: v0_6
 dependency:
   - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
@@ -37,6 +37,16 @@ machine_summary: >
   profiles, guardrailed so C is not a determinate domain), a D5-vs-reality-strength
   disambiguation, and stage-B abduction gating on "misplaces foundation" claims.
   Not canonical; does not modify canonical files.
+changelog_v0_6: >
+  vs v0.5 (fourth-round review, verdict "minor-to-moderate then submittable"): pushed three
+  literature engagements from author-date to pinpoint argument — Sider primitive-ideology /
+  Lewis reference-magnetism hinge in §2.4, the §2.5->§4.4 four-step anchoring-cost skeleton in
+  §2.5; added a metaphysical-indeterminacy/vagueness positioning paragraph (§2.0); reinforced
+  the L0 truthmaker reply against the circularity charge (failure of operation-equivalence,
+  §3.6); added two anti-oversimplification caveats to the disease micro-cases (§6.2). These are
+  content-hardening items needing no editorial decision. The blind-submission five-section
+  version, neighbor compression, and symbol policy remain pending user decisions (language /
+  target-journal).
 changelog_v0_5: >
   vs v0.4 (literature pass, third-review priority 5): added author-date citations for the
   positions actually engaged — Sider 2011 and Lewis 1983 (§2.4), Hirsch 2011 and Carnap 1950
@@ -87,7 +97,7 @@ changelog_v0_2: >
 
 **Before Objects: Selection Realism and the Grounding of Determinacy**
 
-> **状态**：working draft v0.5。SRT 的第一篇学院入口论文草稿，非定稿、非 canonical，不替代 Core / Core_Law / Philosophy 护栏文件的定义。核心术语（`L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`d-value`）的权威定义仍在 canonical 文件中；本文以散文方式使用其哲学读法。投稿版（去 frontmatter、压成五节、统一语言）将另出，见文末 TODO。
+> **状态**：working draft v0.6。SRT 的第一篇学院入口论文草稿，非定稿、非 canonical，不替代 Core / Core_Law / Philosophy 护栏文件的定义。核心术语（`L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`d-value`）的权威定义仍在 canonical 文件中；本文以散文方式使用其哲学读法。投稿版（去 frontmatter、压成五节、统一语言）将另出，见文末 TODO。
 
 ---
 
@@ -152,6 +162,8 @@ This paper proposes a self-limiting alternative to object-first ontology: *selec
 
 **D3（适用确定性）的地位**：D3 也不进入主论证的奠基前提，但它在案例中频繁出现（语言标签、诊断谓词的适用与修订）。原因是 **D3 是 D1+D2+D4 稳定后的常见表达层，并作为 `L_2` 继承的反馈机制回流**——谓词的稳定适用既是对象式确定性稳定的结果，又反过来预裁剪后续切割。故 §6.2 案例依赖 D3 不与"主靶心是 D1+D2+D4"冲突：D3 在此是表达与反馈层，不是奠基前提。
 
+**与 vagueness / indeterminacy 文献的关系**：本文的 determinacy **不是** vagueness 文献中"谓词边界不清"或"对象是否模糊"的问题（semantic vagueness、ontic vagueness、epistemicism），而是更前层的**对象式确定性条件**问题：某项如何获得边界、同一性与实践承重性，从而成为可被模糊或精确谓述的对象。语义模糊与本体模糊可被视为某些 cut 未充分稳定、或多重锚定相互冲突的**后继现象**，但本文不试图还原 vagueness 文献，亦不承诺 vague objects 或 ontic indeterminacy 的任一立场。
+
 ### §2.1　对象优先本体论的定义
 
 **对象优先本体论（Object-First Ontology）** =df 主张实在的基本家具是确定个体（对象）之论域、且满足：(O1) 对象基础性——确定对象本体论上基本，事件／过程／事实／视角都用对象作 relata 分析；(O2) 个体化的给定性——对象预先地、独立于任何选择／视角／操作，就已带有边界与同一性条件；(O3) 主体后入——主体、知觉、价值、语言、框架在对象之后进入，作用于已被个体化的论域。
@@ -178,6 +190,8 @@ SRT 的自有增量：即便让步承认对象，(O1) 也无法解释**给定感
 
 因此本文主打**较弱批评**：自然性实在论可以承认高层／普通／社会／功能对象的尺度相对性，把它们交给派生结构、reference magnetism、语义或实践——但这恰恰意味着关于对象式确定性的解释被**分散到物理、语义、心理、实践多层**；SRT 提供的是**统一的 selection-stabilization 账目**。这是一个理论选择标准上的比较（统一性、原始负担、解释范围），而非独断的反驳：SRT does not refute naturalness realism by demanding an explanation it refuses to give; rather, it offers an alternative with a lower primitive burden and greater explanatory reach regarding scale-relative individuation, givenness, stabilization, and inheritance.
 
+**交手点（pinpoint）**：Sider 把 structure 设为原始 ideology（primitive ideology）。SRT **接受**"基础结构可以是 primitive"这一让步，但指出：primitive structure 本身**不预测**对象式确定性（D1+D2+D4）形成时的**具体模式**——给定感强度随沉积史的变化、修订时的继承滞后、跨 operator 分歧随 R3 强弱的分层（§3.3）。Lewis 的 naturalness 可经 reference magnetism 解释指称为何"吸附"到较自然的性质，但 reference magnetism **不解释** cut 被锚定、修复、放弃时的**代价结构**（§4.4）。故分歧不在"是否有 primitive 基础"，而在"D1+D2+D4 的**形成模式**由什么解释"。
+
 **较强批评**（自然性即便加派生层也无法解释 determinacy 作为 determinacy 的生成，因为总要在某处预设已确定 joints）更有锋芒但更难证，**留作未来工作**，不作本文承重。
 
 **本文采用的理论选择准则（供 §3.3 的 IBE 使用）**。为使"统一优于分散"不沦为审美偏好，本文预先固定六条比较准则，并在 §3.3 逐项落地：(C1) **原始负担**——预设多少未经解释的基础项；(C2) **解释统一性**——是否用同一机制覆盖多现象，且统一带来新的可检验后承；(C3) **解释范围**——覆盖给定感、尺度相对性、稳定、继承多少；(C4) **反事实/差分预测**——是否预测可观察的差异（而非事后追认）；(C5) **路径依赖处理**——能否解释滞后与历史沉积；(C6) **跨 operator 校正处理**——能否解释多 operator 间的对齐与分歧模式。关键原则：**统一性只有在它产生差分预测（C2→C4）时才算理论德性，而非仅凭简洁**——§3.3 据此论证 SRT 的统一不是省事，而是因为这些现象共享同一结构（cut–anchor–stabilize–inherit–pre-trim）并因此被同一组反事实绑定。
@@ -186,7 +200,7 @@ SRT 的自有增量：即便让步承认对象，(O1) 也无法解释**给定感
 
 相反方向的反吸收来自紧缩论。Hirsch（2011，*Quantifier Variance and Realism*）的 quantifier variance 与 Carnap（1950，"Empiricism, Semantics, and Ontology"，*Revue Internationale de Philosophie* 4: 20–40）的内/外问题区分会说：没有关于"the 切分"的深层事实，选定语言框架、框架内成立即可，于是"确定性如何被奠基"是伪问题。
 
-SRT 的回应须避免把紧缩论读成"否认一切事实差异"。SRT does not deny that deflationary frameworks can state internal truths. Its objection is that the cost of adopting, maintaining, shifting, repairing, or abandoning a cut is not itself exhausted by framework-internal truth conditions.（SRT 不否认紧缩框架能陈述其内部真值；它反对的是：一个切分被**采用、维持、转移、修复或放弃的代价**，不能被框架内部真值条件穷尽。）这一回应的关键预设——锚定代价不只是外在 pragmatic cost，而是确定项成立的构成条件——将在 §4.4 专门论证。
+SRT 的回应须避免把紧缩论读成"否认一切事实差异"。SRT does not deny that deflationary frameworks can state internal truths. Its objection is that the cost of adopting, maintaining, shifting, repairing, or abandoning a cut is not itself exhausted by framework-internal truth conditions.（SRT 不否认紧缩框架能陈述其内部真值；它反对的是：一个切分被**采用、维持、转移、修复或放弃的代价**，不能被框架内部真值条件穷尽。）这一回应的关键预设——锚定代价不只是外在 pragmatic cost，而是确定项成立的构成条件——将在 §4.4 专门论证。其论证骨架（§2.5→§4.4 打通）：(i) 框架内真值条件解释**命题何时为真**；(ii) 但它不解释一个 cut 如何获得**可承重性**（成为确定项）；(iii) 可承重性表现为干预、修复、继承与跨 operator 校正中的**代价结构**；(iv) 故锚定代价不是采用框架的外在实用成本，而是对象式确定性成立的**构成条件**——这正是 Carnap 的 linguistic framework 与 Hirsch 的 quantifier variance 所未触及的层面。
 
 ### §2.6　三角定位
 
@@ -279,7 +293,7 @@ SRT 是二者之间**有纪律的中道**：对紧缩论而言它是实质的（
 
 `L_0` 是全文最深的哲学风险，集中处理三类反对。
 
-**(O-a) 确定化反对**：比较序若能排序，岂非已是确定结构，后退重启？回应：须区分**对象式确定性**（个体化边界 + 同一性条件）与**反事实差分客观性**（counterfactual-differential objectivity）。`L_0` 不具前者：它不含任何可被追踪、可被再识别为同一项的个体。它只具后者：存在反事实差别——若切割 *c* 而非 *c′*，则后续稳定/继承代价不同。排序不预设被排序项已被个体化，正如一片坡度场的"更陡/更缓"不预设流域已被划出。故 `L_0` **不是结构，而是结构化可能性的非均匀性**；它的客观性是反事实差分的，不是对象式的——这正是它不重启后退的原因。**形式化一句**：一个亚确定条件具有**反事实差分客观性**，当且仅当不同的可允许操作会生成不等价的稳定与继承剖面，即便在基底层尚无确定 relata 被个体化（*a sub-determinate condition has counterfactual-differential objectivity iff different admissible operations would generate non-equivalent stabilization and inheritance profiles, even though no determinate relata are yet individuated at the base level*）。**relata 与 truthmaker 反对**：在 cut 被确定前，"若切割 *c* 而非 *c′*"的 relata 如何指定？回应：*c*、*c′* **不是对象式项**，而是**操作性差分路径**（operational differential paths）；该反事实不是关于两个已确定对象的比较，而是关于两种操作剖面的稳定代价比较。其 truthmaker 不是一对已个体化的 relata，而是 `L_0` 的非中立性本身——它使两条操作路径的稳定/继承代价不等。若坚持反事实必须有对象式 relata 作 truthmaker，则 `L_0` 退为解释工具而非本体条件、SRT 收窄为 interface 读法（§6.1）；本文主张操作剖面足以充当 truthmaker，故不必收窄。
+**(O-a) 确定化反对**：比较序若能排序，岂非已是确定结构，后退重启？回应：须区分**对象式确定性**（个体化边界 + 同一性条件）与**反事实差分客观性**（counterfactual-differential objectivity）。`L_0` 不具前者：它不含任何可被追踪、可被再识别为同一项的个体。它只具后者：存在反事实差别——若切割 *c* 而非 *c′*，则后续稳定/继承代价不同。排序不预设被排序项已被个体化，正如一片坡度场的"更陡/更缓"不预设流域已被划出。故 `L_0` **不是结构，而是结构化可能性的非均匀性**；它的客观性是反事实差分的，不是对象式的——这正是它不重启后退的原因。**形式化一句**：一个亚确定条件具有**反事实差分客观性**，当且仅当不同的可允许操作会生成不等价的稳定与继承剖面，即便在基底层尚无确定 relata 被个体化（*a sub-determinate condition has counterfactual-differential objectivity iff different admissible operations would generate non-equivalent stabilization and inheritance profiles, even though no determinate relata are yet individuated at the base level*）。**relata 与 truthmaker 反对**：在 cut 被确定前，"若切割 *c* 而非 *c′*"的 relata 如何指定？回应：*c*、*c′* **不是对象式项**，而是**操作性差分路径**（operational differential paths）；该反事实不是关于两个已确定对象的比较，而是关于两种操作剖面的稳定代价比较。其 truthmaker 不是一对已个体化的 relata，而是 `L_0` 的非中立性本身——它使两条操作路径的稳定/继承代价不等。若坚持反事实必须有对象式 relata 作 truthmaker，则 `L_0` 退为解释工具而非本体条件、SRT 收窄为 interface 读法（§6.1）；本文主张操作剖面足以充当 truthmaker，故不必收窄。**再压一句以防循环指控**：`L_0` 的非中立性并非由已确定 relata 的差异**推出**，而是由可准入操作之间无法被抹平的**稳定化历史差异**显示；其使真者不是隐藏对象，而是"操作等价性失败（failure of operation-equivalence across possible stabilization histories）"这一反事实约束。
 
 **(O-b) 空洞性反对**：若比较序不是确定结构，它如何能**约束**任何东西？回应：约束不需要约束者是确定对象。`L_0` 通过使某些切割的锚定/继承代价系统性更低来约束——这种约束在"某些 cut 在干预下崩解、某些持存"的可显现差别中兑现（§4.4）。一个无任何非均匀性的 cut-space 将使一切切割等代价，于是不会有差异稳定、不会有给定感、不会有现实强度分级；我们恰恰观察到这些，故 `L_0` 非空洞。空洞性反对与确定化反对形成钳形：本文立场恰在二者之间——足以约束（非空洞），不足以个体化（非确定）。
 
@@ -399,6 +413,8 @@ SRT 通过 proxy 操作化、结构性收敛与差分预测承担风险；三者
 - **低 R3 / 高 R2·R4：Asperger 综合征 → 并入孤独症谱系障碍（APA 2013，DSM-5）。** 该修订把一个独立标签并入谱系。SRT 读法：此切分 **R3 较弱**（无单一干预—稳健的自然关节），而 **R2/R4 高**（制度与继承承重）。预测的代价重分配以**制度资格变动、身份叙事（"Aspie"认同）、服务/教育资格、研究队列重定义、标签与治疗路径滞后**为主导，而非由干预证据驱动的病例重判。对手对照：医学实用主义会说这只是目标驱动的实践调整，但 SRT 预测重分配呈 **R1–R4 依赖的结构化形态**（身份与制度滞后签名），而非自由的目标设定。
 
 两案对照即 §3.3 共变预测的落地：**同为"分类修订"，高 R3 与低 R3 的代价重分配形态系统不同**——这是 SRT 相对 HPC、Khalidi、Haslanger、医学实用主义的**差分收益**，也给出可证伪点（若两案重分配形态无 R3 依赖差异，则四维模型对该域失效）。
+
+**两点防过度简化**：其一，H. pylori 案例**不是**"发现细菌→分类完全由自然事实决定"的素朴实在论故事——即便 R3 高，自然阻力仍须通过诊断实践、治疗路径、病例重判与 operator 校正才稳定为对象式确定性；R3 高意味着这一稳定**更受干预证据约束**，而非绕过稳定过程。其二，Asperger→ASD 的"低 R3"**不**等于"无自然阻力"或"纯社会建构"：其自然、行为、临床、制度、身份诸维度高度交叠，修订的锚定代价更多落在分类边界、身份标签、服务资格、临床沟通与历史继承的重分配上；这不表示该分类不真实，而表示其现实强度在 R2/R4 与 D3 反馈上更显著。
 
 **与自然种类/社会种类立场的差别**（立场层对照，具体文本引用见 TODO）：
 
