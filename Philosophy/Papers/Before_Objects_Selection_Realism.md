@@ -8,7 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: bridge
 claim_mode: paper_draft
 date: 2026-06-09
-revision: v0_2
+revision: v0_2_1
 dependency:
   - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
@@ -33,7 +33,10 @@ machine_summary: >
   recast as four dimensions with E1-E4 as typical combinations, handling unobserved facts,
   stable ideology, scientific revolution, and mathematics; (8) the worked example adds
   disease classification alongside the cup. Every strong claim carries a withdrawal
-  condition. Not canonical; does not modify canonical files.
+  condition. v0.2.1 refinement pass adds a semi-formal L0 model (cut-space C with R/S/H
+  profiles, guardrailed so C is not a determinate domain), a D5-vs-reality-strength
+  disambiguation, and stage-B abduction gating on "misplaces foundation" claims.
+  Not canonical; does not modify canonical files.
 changelog_v0_2: >
   vs v0.1: added determinacy levels (D1-D5) and target lock; rewrote §3.1 as explanatory
   debt; selected comparative-topological model for L0 + terrain analogy + complex-plane foil;
@@ -109,6 +112,8 @@ This paper proposes a self-limiting alternative to object-first ontology: *selec
 
 **本文核心论证针对"对象式确定性"，即 D1+D2+D4 的结合**——边界、同一性与实践承重性的合取。这是对象优先本体论无解释地设为地板的东西。更强的"一切确定性（含 D3/D5）皆非基础"的版本不作为主论证前提，只在阶段 B 的溯因结论与 §6.3 中作为受支撑的延伸出现。如此可显著降低论证负担：本文不必一开始就击败一切关于基础确定项的立场，只需表明对象式确定性需要解释，且 SRT 的解释更好。
 
+须特别强调以防一个混淆：**D5（本体确定性）不是本文主靶心，只是后续扩展层（§6.4）；本文主论证只处理 D1+D2+D4**。因此本文是**用现实强度（§4.3 的 R1–R4）解释对象式确定性，而非用确定性定义现实强度**——reality-strength 刻画的是 determinate anchoring 的强度，D5 的本体确定性留作扩展、不参与主论证。两者不在同一解释方向上循环。
+
 ### §2.1　对象优先本体论的定义
 
 **对象优先本体论（Object-First Ontology）** =df 主张实在的基本家具是确定个体（对象）之论域、且满足：(O1) 对象基础性——确定对象本体论上基本，事件／过程／事实／视角都用对象作 relata 分析；(O2) 个体化的给定性——对象预先地、独立于任何选择／视角／操作，就已带有边界与同一性条件；(O3) 主体后入——主体、知觉、价值、语言、框架在对象之后进入，作用于已被个体化的论域。
@@ -180,6 +185,16 @@ SRT 是二者之间**有纪律的中道**：对紧缩论而言它是实质的（
 
 **类比与其限度**。一个会**误导**的类比是复平面：虚轴上的量不在实轴上，却影响后续变换与投影。它的误导恰在于——复平面是一个**完全确定的结构**（`i` 有精确同一性条件），而 `L_0` 不是；按此类比，`L_0` 会被读成"现象背后的第二条确定维度"，即 §5.4 拒绝的隐藏世界/noumenon。更贴切（同样仅启发性）的类比来自本文的**地形**语汇：一片尚未被分出流域的**坡度场**——坡度使某些分水方式更稳定、代价更低，但坡度本身不是一组已划定的流域；流域（确定对象）不是被给定的，是坡度（非中立性）使某些划分成为低阻力的成就。地形类比的限度在于：真实地形已是确定的物理结构，而 `L_0` 不是——它只是"使切割非等价"的比较不均匀性本身。
 
+**一个半形式的展示（representational device, not a determinate-domain claim）**。为使 `L_0` 更可审查，给出一个最小半形式模型（仅作展示，不主张 C 是已确定集合）：
+
+- cut-space **C**：可能差异化的空间（the space of possible differentiations），不预设为已个体化的对象集；
+- 候选切割 *c₁, c₂, c₃, … ∈ C*；
+- 阻力剖面 **R(c)**：切割 *c* 在干预/重复/跨 operator 对齐下遭遇的抵抗；
+- 稳定倾向 **S(c)**：*c* 被锚定并退入背景的倾向；
+- 继承倾向 **H(c)**：*c* 沉积为后续约束、预裁剪未来切割的倾向。
+
+则 **`L_0` 不是 C 中的某个子集（不是对象集合），而是 R、S、H 在 C 上的非均匀性/比较剖面**——即 R/S/H 并非跨切割恒定，而这种不恒定使某些切割并非等价。两点护栏须随形式**一起**声明，否则记号会偷偷预设确定性：**(i)** C 不被主张为已确定的论域——它是可能差异化的空间，其元素 *c* 的确定性是锚定—稳定的成就，而非给定；半形式记号只是把"非均匀性"显示出来的表征手段，不是对一个预先确定域施加度量。**(ii)** R/S/H 是功能性差分而非已确定结构——它们只在"某些切割更易稳定"这一可显现差别中存在；把它们读成 C 上的确定函数是一种表征理想化，其本体承诺仅为"比较序非平凡（the comparative order is non-trivial）"。
+
 **撤回条件**：若"非中立的比较序而不含确定项"被证不自洽，则 SRT 退至 operator-relative-all-the-way 的较弱（较 Kant 的）立场。
 
 ### §3.3　阶段 B：溯因到受约束的可选择性
@@ -203,7 +218,7 @@ SRT 是二者之间**有纪律的中道**：对紧缩论而言它是实质的（
 
 ### §3.5　输出命题与显现优先性的安置
 
-> **(A 解释债)** 对象式确定性需要解释：它不能仅由同型确定项偿付。**(B 溯因)** 偿付它的最佳方式是受约束的可选择性。合起来：**选择条件相对于确定存在具有显现优先性**（*Selection conditions are manifestationally prior to determinate existence*）。对象/确定性优先本体论把一个被奠基的成果错置为基础。
+> **(A 解释债)** 对象式确定性需要解释：它不能仅由同型确定项偿付。**(B 溯因)** 偿付它的最佳方式是受约束的可选择性。合起来：**选择条件相对于确定存在具有显现优先性**（*Selection conditions are manifestationally prior to determinate existence*）。**若阶段 B 溯因成立（if the stage-B abduction succeeds）**，对象/确定性优先本体论就把一个被奠基的成果错置为基础；若溯因被废止，则本主张收窄为 §6.3 的防御版（对象式确定性至少欠一笔解释债）。这是有意的语气纪律：凡"错置基础"一类强句皆挂在溯因前件之下，不作无条件断言。
 
 **显现优先性的安置**：本文把 manifestational priority 的**主读法定为构成性依赖（constitutive dependence）**，而非标准 full grounding——确定项之所以能作为确定项出现并承重，依赖于选择条件的切割、锚定与稳定。若 grounding 被理解为严格的、非循环的、世界内事实之间的形而上学决定关系，本文不承诺该强读法，尤其因为 `L_2` 稳定、历史沉积与自举模型含反馈与滞后结构，可能与 grounding 的非循环/非对称要求张力。**grounding 作为可选的强化读法保留**，其完整安置（Fine / Schaffer / Rosen / Audi / Correia）列为投稿前工作。
 
