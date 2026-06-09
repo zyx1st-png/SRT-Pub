@@ -2,13 +2,13 @@
 id: SRT-PAPER-BEFORE-OBJECTS-SELECTION-REALISM
 title: "对象之前：选择实在论与确定性的奠基"
 title_en: "Before Objects: Selection Realism and the Grounding of Determinacy"
-status: working_draft_v0_4
+status: working_draft_v0_5
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: bridge
 claim_mode: paper_draft
 date: 2026-06-09
-revision: v0_4
+revision: v0_5
 dependency:
   - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
@@ -37,6 +37,14 @@ machine_summary: >
   profiles, guardrailed so C is not a determinate domain), a D5-vs-reality-strength
   disambiguation, and stage-B abduction gating on "misplaces foundation" claims.
   Not canonical; does not modify canonical files.
+changelog_v0_5: >
+  vs v0.4 (literature pass, third-review priority 5): added author-date citations for the
+  positions actually engaged — Sider 2011 and Lewis 1983 (§2.4), Hirsch 2011 and Carnap 1950
+  (§2.5), Barad 2007 with page anchors for phenomena (33, 139), apparatus (140-148), agential
+  cut (140) and agential separability (175) (§5.1), Boyd 1991/1999, Khalidi 2013, Haslanger
+  2012 (§6.2), and the two micro-case sources Marshall & Warren 1984 / Nobel 2005 and APA 2013
+  (DSM-5) (§6.2); added a selected References section. Citations were web-verified, not
+  fabricated; final pinpoint page-proofing of Barad remains a copy-edit task.
 changelog_v0_4: >
   vs v0.3 (third-round review, verdict "moderate revision then submittable"): fixed the
   same-type-determinate definition to use role-applicability, explicitly disambiguated from
@@ -79,7 +87,7 @@ changelog_v0_2: >
 
 **Before Objects: Selection Realism and the Grounding of Determinacy**
 
-> **状态**：working draft v0.4。SRT 的第一篇学院入口论文草稿，非定稿、非 canonical，不替代 Core / Core_Law / Philosophy 护栏文件的定义。核心术语（`L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`d-value`）的权威定义仍在 canonical 文件中；本文以散文方式使用其哲学读法。投稿版（去 frontmatter、压成五节、统一语言）将另出，见文末 TODO。
+> **状态**：working draft v0.5。SRT 的第一篇学院入口论文草稿，非定稿、非 canonical，不替代 Core / Core_Law / Philosophy 护栏文件的定义。核心术语（`L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`d-value`）的权威定义仍在 canonical 文件中；本文以散文方式使用其哲学读法。投稿版（去 frontmatter、压成五节、统一语言）将另出，见文末 TODO。
 
 ---
 
@@ -166,7 +174,7 @@ SRT 的自有增量：即便让步承认对象，(O1) 也无法解释**给定感
 
 ### §2.4　自然性反吸收（Sider / Lewis）
 
-最强的反吸收来自自然性实在论。Sider（*Writing the Book of the World*）主张实在具有一个被特别标举的结构（privileged structure）；Lewis 主张 perfectly natural properties 在关节处切分世界。须先做一处区分：**自然性关于基础结构的唯一性，不直接等于普通对象切分的唯一性**——Sider 的 privileged structure 不直接给出唯一的普通对象论域，Lewis 的 perfectly natural properties 也不必推出唯一的日常对象切分。
+最强的反吸收来自自然性实在论。Sider（2011，*Writing the Book of the World*）主张实在具有一个被特别标举的**结构**（structure），并把它设为一个原始的、跨范畴的概念——是 Lewis（1983，"New Work for a Theory of Universals"，*AJP* 61: 343–377）"perfectly natural properties"在关节处切分世界（carving at the joints）之观念的跨范畴推广。须先做一处区分：**自然性关于基础结构的唯一性，不直接等于普通对象切分的唯一性**——Sider 的 privileged structure 不直接给出唯一的普通对象论域，Lewis 的 perfectly natural properties 也不必推出唯一的日常对象切分。
 
 因此本文主打**较弱批评**：自然性实在论可以承认高层／普通／社会／功能对象的尺度相对性，把它们交给派生结构、reference magnetism、语义或实践——但这恰恰意味着关于对象式确定性的解释被**分散到物理、语义、心理、实践多层**；SRT 提供的是**统一的 selection-stabilization 账目**。这是一个理论选择标准上的比较（统一性、原始负担、解释范围），而非独断的反驳：SRT does not refute naturalness realism by demanding an explanation it refuses to give; rather, it offers an alternative with a lower primitive burden and greater explanatory reach regarding scale-relative individuation, givenness, stabilization, and inheritance.
 
@@ -176,7 +184,7 @@ SRT 的自有增量：即便让步承认对象，(O1) 也无法解释**给定感
 
 ### §2.5　紧缩论反吸收（Hirsch / Carnap）
 
-相反方向的反吸收来自紧缩论。Hirsch 的 quantifier variance 与 Carnap 的内/外问题区分会说：没有关于"the 切分"的深层事实，选定语言框架、框架内成立即可，于是"确定性如何被奠基"是伪问题。
+相反方向的反吸收来自紧缩论。Hirsch（2011，*Quantifier Variance and Realism*）的 quantifier variance 与 Carnap（1950，"Empiricism, Semantics, and Ontology"，*Revue Internationale de Philosophie* 4: 20–40）的内/外问题区分会说：没有关于"the 切分"的深层事实，选定语言框架、框架内成立即可，于是"确定性如何被奠基"是伪问题。
 
 SRT 的回应须避免把紧缩论读成"否认一切事实差异"。SRT does not deny that deflationary frameworks can state internal truths. Its objection is that the cost of adopting, maintaining, shifting, repairing, or abandoning a cut is not itself exhausted by framework-internal truth conditions.（SRT 不否认紧缩框架能陈述其内部真值；它反对的是：一个切分被**采用、维持、转移、修复或放弃的代价**，不能被框架内部真值条件穷尽。）这一回应的关键预设——锚定代价不只是外在 pragmatic cost，而是确定项成立的构成条件——将在 §4.4 专门论证。
 
@@ -349,9 +357,9 @@ Barad（*Meeting the Universe Halfway*）主张确定性由 **agential cut** 在
 
 为避免不公并保持锋利，本文只保留**一条最强差异**：*Barad gives an ontology of cut-dependent phenomena; SRT adds a general account of how cuts acquire comparative resistance, cross-operator rankability, and inheritable reality-thickness.* Barad 的 cut 由具体物质装置（apparatus）施行，本已受约束；SRT 所加的不是"约束"本身，而是一个**跨装置、可排序的一般阻力度量 `Psi_f`** 及其沉积为可继承现实厚度（`L_2` 硬化）与多维现实强度的机制。方法路径亦不同：Barad 从量子物理诠释、测量实践与 onto-epistemology 出发；SRT 在不绑定任何特定物理诠释的前提下，把"确定性依赖切割"重构为一般性的构成性解释。
 
-**三点正面交手**（具体页码引用见 TODO）：**(1) 核心定义**——Barad 的 *phenomena* 是 intra-action 中物质—话语装置（apparatus）与被观察者不可分的关系整体，*agential cut* 在特定装置内产生主体/客体的局部确定性与 agential separability。**(2) 客观性的差别**——Barad 的客观性是**装置相对的**（apparatus-specific）：确定性对给定物质装置成立；SRT 增加的是**跨 operator 可排序性**（cross-operator rankability）与**可继承现实厚度**，即不同装置/operator 之间，切割的阻力可被比较与排序、并沉积为 `L_2` 硬化。Barad 给出"切割在装置内产生确定性"，SRT 给出"切割如何跨装置获得可比较的阻力与历史厚度"。**(3) `Psi_f` 是否可被 Barad 吸收**——本文判断不能无损吸收：`Psi_f` 要求一个跨装置、可排序的一般阻力度量，而 Barad 刻意把客观性绑定在具体装置内（这是其 onto-epistemology 的核心承诺）；引入跨装置可排序的 `Psi_f` 会改变其本体论结构（从装置相对客观性转向比较—继承客观性）。故 SRT 不是 agential realism 的换名，而是对其"装置相对"承诺的一处实质修改。
+**三点正面交手**（页码依 Barad 2007，Duke 版）：**(1) 核心定义**——*phenomena* 是 intra-action 中诸 intra-acting agencies 的本体不可分性，为基本本体单位（Barad 2007: 33, 139）；*apparatus* 是物质—话语的边界生成实践（boundary-making practices，2007: 140–148）；*agential cut* 在现象内施行对固有本体不确定性的**偶然/局部消解**（a contingent resolution of the ontological indeterminacy within the phenomenon，2007: 140）；客观性则系于 *agential separability*——"现象内被施行的本体可分性 / exteriority-within-phenomena"（2007: 175）。**(2) 客观性的差别**——Barad 的客观性是**装置相对的**（apparatus-specific）：确定性对给定物质装置成立；SRT 增加的是**跨 operator 可排序性**（cross-operator rankability）与**可继承现实厚度**，即不同装置/operator 之间，切割的阻力可被比较与排序、并沉积为 `L_2` 硬化。Barad 给出"切割在装置内产生确定性"，SRT 给出"切割如何跨装置获得可比较的阻力与历史厚度"。**(3) `Psi_f` 是否可被 Barad 吸收**——本文判断不能无损吸收：`Psi_f` 要求一个跨装置、可排序的一般阻力度量，而 Barad 刻意把客观性绑定在具体装置内（这是其 onto-epistemology 的核心承诺）；引入跨装置可排序的 `Psi_f` 会改变其本体论结构（从装置相对客观性转向比较—继承客观性）。故 SRT 不是 agential realism 的换名，而是对其"装置相对"承诺的一处实质修改。
 
-> 投稿前仍须落到 Barad 具体文本页码（intra-action、agential separability、phenomena 客观性与边界生成），见 TODO。
+> 页码依 Barad 2007（Duke 版）；终稿校样时再核对 agential cut（140）与 phenomena（33, 139）的确切页位。
 
 ### §5.2　Ontic Structural Realism（Ladyman & Ross）
 
@@ -387,16 +395,16 @@ SRT 通过 proxy 操作化、结构性收敛与差分预测承担风险；三者
 
 **两个具体微型案例（R3 高 vs R3 低）**。为使"疾病分类"不流于泛谈，给出两个方向相反的真实分类修订（具体史实与文献引用见 TODO，此处作结构示例）：
 
-- **高 R3：消化性溃疡 → 幽门螺杆菌（H. pylori）感染性重分类。** 在 Marshall & Warren 之后，消化性溃疡从"应激/胃酸"框架重切为以细菌感染为主因的类别。SRT 读法：此切分有**强 R3**——抗生素根除疗法在干预下稳健有效，治愈模式**框架无关**。预测的锚定代价重分配以**边界重绘 + 病例重判 + 治疗路径切换**（抑酸→根除）为主导，而非主要由制度资格驱动；R2 对齐随干预证据快速趋同。对手对照：HPC 可诉诸因果稳态机制，但 SRT 额外预测**修订时代价重分配的具体形态由 R3 主导**（治疗反应先行，而非制度协商先行）。
-- **低 R3 / 高 R2·R4：Asperger 综合征 → 并入孤独症谱系障碍（DSM-5）。** 该修订把一个独立标签并入谱系。SRT 读法：此切分 **R3 较弱**（无单一干预—稳健的自然关节），而 **R2/R4 高**（制度与继承承重）。预测的代价重分配以**制度资格变动、身份叙事（"Aspie"认同）、服务/教育资格、研究队列重定义、标签与治疗路径滞后**为主导，而非由干预证据驱动的病例重判。对手对照：医学实用主义会说这只是目标驱动的实践调整，但 SRT 预测重分配呈 **R1–R4 依赖的结构化形态**（身份与制度滞后签名），而非自由的目标设定。
+- **高 R3：消化性溃疡 → 幽门螺杆菌（H. pylori）感染性重分类。** 在 Marshall & Warren（1984，*The Lancet*；2005 年诺贝尔生理学或医学奖）之后，消化性溃疡从"应激/胃酸"框架重切为以细菌感染为主因的类别。SRT 读法：此切分有**强 R3**——抗生素根除疗法在干预下稳健有效，治愈模式**框架无关**。预测的锚定代价重分配以**边界重绘 + 病例重判 + 治疗路径切换**（抑酸→根除）为主导，而非主要由制度资格驱动；R2 对齐随干预证据快速趋同。对手对照：HPC 可诉诸因果稳态机制，但 SRT 额外预测**修订时代价重分配的具体形态由 R3 主导**（治疗反应先行，而非制度协商先行）。
+- **低 R3 / 高 R2·R4：Asperger 综合征 → 并入孤独症谱系障碍（APA 2013，DSM-5）。** 该修订把一个独立标签并入谱系。SRT 读法：此切分 **R3 较弱**（无单一干预—稳健的自然关节），而 **R2/R4 高**（制度与继承承重）。预测的代价重分配以**制度资格变动、身份叙事（"Aspie"认同）、服务/教育资格、研究队列重定义、标签与治疗路径滞后**为主导，而非由干预证据驱动的病例重判。对手对照：医学实用主义会说这只是目标驱动的实践调整，但 SRT 预测重分配呈 **R1–R4 依赖的结构化形态**（身份与制度滞后签名），而非自由的目标设定。
 
 两案对照即 §3.3 共变预测的落地：**同为"分类修订"，高 R3 与低 R3 的代价重分配形态系统不同**——这是 SRT 相对 HPC、Khalidi、Haslanger、医学实用主义的**差分收益**，也给出可证伪点（若两案重分配形态无 R3 依赖差异，则四维模型对该域失效）。
 
 **与自然种类/社会种类立场的差别**（立场层对照，具体文本引用见 TODO）：
 
-- **Homeostatic Property Cluster（Boyd 式）**：HPC 用因果稳态机制解释类别投射性。SRT 不否认稳态机制，但追问它为何在**多个不等价切分**中使**这一**聚类被锚定承重；差分在于 SRT 预测分类修订时的**代价重分配模式**，而纯 HPC 只预测聚类的存废。
-- **Khalidi 式分级/关系自然种类**：二者都接受种类分级与相对性，但 Khalidi 仍把节点当作世界给定；SRT 把"哪些关系节点被切出并稳定"也纳入选择—继承账目。
-- **Haslanger 式社会建构实在论**：二者都承认制度性分类真实，但 Haslanger 不分社会现实强度与物理 R3；SRT 用 R1–R4 分维明确区分。
+- **Homeostatic Property Cluster（Boyd 1991, 1999）**：HPC 用因果稳态机制解释类别投射性。SRT 不否认稳态机制，但追问它为何在**多个不等价切分**中使**这一**聚类被锚定承重；差分在于 SRT 预测分类修订时的**代价重分配模式**，而纯 HPC 只预测聚类的存废。
+- **Khalidi（2013）式分级/关系自然种类**：二者都接受种类分级与相对性，但 Khalidi 仍把节点当作世界给定；SRT 把"哪些关系节点被切出并稳定"也纳入选择—继承账目。
+- **Haslanger（2012）式社会建构实在论**：二者都承认制度性分类真实，但 Haslanger 不分社会现实强度与物理 R3；SRT 用 R1–R4 分维明确区分。
 - **医学实用主义/工具主义**：诊断修订不只是治疗目标驱动的实践调整——SRT 预测修订带来**有结构的**锚定代价重分配，其模式由 R1–R4 组合决定，而非自由目标设定。
 
 **失败条件（使经验风险真正可测）**：
@@ -422,14 +430,34 @@ SRT 通过 proxy 操作化、结构性收敛与差分预测承担风险；三者
 
 ---
 
+## 参考文献（选）· References (selected)
+
+> 本草稿阶段直接交手的核心文献；投稿版将补全并统一 author–date 格式。Barad 页码依 2007 Duke 版，终稿校样复核。
+
+- American Psychiatric Association (2013). *Diagnostic and Statistical Manual of Mental Disorders* (5th ed., DSM-5). Arlington, VA: APA.
+- Barad, K. (2007). *Meeting the Universe Halfway: Quantum Physics and the Entanglement of Matter and Meaning*. Durham, NC: Duke University Press.
+- Boyd, R. (1991). "Realism, Anti-Foundationalism and the Enthusiasm for Natural Kinds." *Philosophical Studies* 61: 127–148.
+- Boyd, R. (1999). "Homeostasis, Species, and Higher Taxa." In R. A. Wilson (ed.), *Species: New Interdisciplinary Essays*, 141–185. Cambridge, MA: MIT Press.
+- Carnap, R. (1950). "Empiricism, Semantics, and Ontology." *Revue Internationale de Philosophie* 4: 20–40.
+- Haslanger, S. (2012). *Resisting Reality: Social Construction and Social Critique*. Oxford: Oxford University Press.
+- Hirsch, E. (2011). *Quantifier Variance and Realism: Essays in Metaontology*. Oxford: Oxford University Press.
+- Khalidi, M. A. (2013). *Natural Categories and Human Kinds: Classification in the Natural and Social Sciences*. Cambridge: Cambridge University Press.
+- Ladyman, J., & Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford: Oxford University Press.
+- Lewis, D. (1983). "New Work for a Theory of Universals." *Australasian Journal of Philosophy* 61: 343–377.
+- Marshall, B. J., & Warren, J. R. (1984). "Unidentified Curved Bacilli in the Stomach of Patients with Gastritis and Peptic Ulceration." *The Lancet* 323(8390): 1311–1315.
+- Sider, T. (2011). *Writing the Book of the World*. Oxford: Oxford University Press.
+- Unger, P. (1980). "The Problem of the Many." *Midwest Studies in Philosophy* 5: 411–467.
+- van Inwagen, P. (1990). *Material Beings*. Ithaca, NY: Cornell University Press.
+
+---
+
 ## TODO before submission
 
 > 投稿前必须完成的硬化与编辑任务，不影响当前 working draft 的论证主脊。
 
-**文献实质交手（最高优先；v0.4 后剩页码级与文本层）**
-- **Grounding / fundamentality**：v0.4 已定**弱化路线**（§3.5 主张构成性解释、不承诺 grounding 形式特征）；若改走强化路线再接 Fine / Schaffer / Rosen / Audi / Correia。当前作为可选项，不阻塞投稿。
-- **Sider / Lewis**：把 §2.4、§6.2 的较弱批评落到 *Writing the Book of the World* 与 natural-properties 文本（已给立场层与准则 C1–C6；**缺页码**）。
-- **疾病微型案例史实与引用**（§6.2 新增）：消化性溃疡/H. pylori（Marshall & Warren）、Asperger→ASD（DSM-5）须落到一手史料与文献页码；目前为结构示例。
+**文献交手（v0.5 已加核心引用；剩终稿校样级）**
+- v0.5 已为 Sider/Lewis、Hirsch/Carnap、Barad、HPC（Boyd）/Khalidi/Haslanger、两个疾病微案例（Marshall & Warren 1984；APA 2013 DSM-5）加入 author–date 引用，并新增"参考文献（选）"。剩余为**终稿校样**：核对 Barad 2007 的 agential cut（140）/ phenomena（33, 139）确切页位；为每条交手补 pinpoint 页码。
+- **Grounding / fundamentality**：v0.4 已定**弱化路线**（§3.5 主张构成性解释、不承诺 grounding 形式特征）；若改走强化路线再接 Fine / Schaffer / Rosen / Audi / Correia。当前为可选项，不阻塞投稿。
 - **Hirsch / Carnap**：把 §2.5、§4.4 接到 quantifier variance 与内/外问题具体文本。
 - **Barad**：§5.1 已做立场层三点交手（phenomena/apparatus 定义、装置相对客观性 vs 跨 operator 可排序性、`Psi_f` 不可无损吸收）；仍须落到 intra-action、agential separability、phenomena 客观性的**具体段落页码**。
 - **Metaphysical indeterminacy / vagueness**：说明本文 determinacy 问题与 ontic vagueness、semantic vagueness、epistemicism 的关系。
