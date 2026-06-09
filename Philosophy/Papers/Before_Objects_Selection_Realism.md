@@ -2,12 +2,13 @@
 id: SRT-PAPER-BEFORE-OBJECTS-SELECTION-REALISM
 title: "对象之前：选择实在论与确定性的奠基"
 title_en: "Before Objects: Selection Realism and the Grounding of Determinacy"
-status: working_draft_v0_1
+status: working_draft_v0_2
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: bridge
 claim_mode: paper_draft
 date: 2026-06-09
+revision: v0_2_1
 dependency:
   - Philosophy/SRT_Philosophy_Foundations_CompactCore.md
   - Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md
@@ -16,40 +17,57 @@ dependency:
   - 01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md
   - 01_Source_Intuition/BOOK/BOOK_CORE_PROPOSITIONS_2026-05-30.md
 machine_summary: >
-  Working draft of the first academic-entry philosophy paper for SRT. It defends selection
-  realism as a self-limiting alternative to object-first ontology: determinacy is not the
-  ontological floor but a grounded result of conditions of constrained selection (cutting,
-  anchoring, stabilization). The argument is two-stage: (A) a weak transcendental regress
-  showing determinacy is not fundamental, neutral between SRT and naturalness realism; and
-  (B) an inference to the best explanation that the grounding conditions are best understood
-  as constrained selectability rather than unique natural joints (Sider/Lewis) or
-  framework-internal convention (Hirsch/Carnap). It positions SRT as the disciplined middle
-  of a Sider / deflationism / SRT triangle, introduces layered reality-strength (E1-E4) with
-  a dispositional reading of E4, distinguishes SRT from Barad, OSR, process philosophy and
-  Kant, and pairs every strong claim with a withdrawal condition.
+  Working draft (v0.2) of the first academic-entry philosophy paper for SRT. It defends
+  selection realism as a self-limiting alternative to object-first ontology. v0.2 responds
+  to an R&R-level review: (1) determinacy is split into levels D1-D5 and the target is
+  locked to object-style determinacy (D1+D2+D4); (2) the regress (stage A) is downgraded
+  from a deductive defeat of naturalness realism to an explanatory-debt argument, while the
+  bold thesis "determinacy is not fundamental" is retained as the defeasible output of the
+  stage-B abduction; (3) L0 is given a single primary model (comparative-topological:
+  non-uniformity over cut-space), with a terrain-gradient analogy and a contrastive
+  complex-plane foil; (4) selection is given minimal conditions S1-S4 and a unified
+  definition; (5) manifestational priority is anchored as constitutive dependence (primary)
+  with grounding as optional strengthening; (6) Sider/Lewis engaged via the weaker critique
+  (dispersed vs unified explanation), Hirsch/Carnap via a dedicated "anchoring cost is not
+  merely pragmatic" subsection, Barad via one strongest difference; (7) reality-strength is
+  recast as four dimensions with E1-E4 as typical combinations, handling unobserved facts,
+  stable ideology, scientific revolution, and mathematics; (8) the worked example adds
+  disease classification alongside the cup. Every strong claim carries a withdrawal
+  condition. v0.2.1 refinement pass adds a semi-formal L0 model (cut-space C with R/S/H
+  profiles, guardrailed so C is not a determinate domain), a D5-vs-reality-strength
+  disambiguation, and stage-B abduction gating on "misplaces foundation" claims.
+  Not canonical; does not modify canonical files.
+changelog_v0_2: >
+  vs v0.1: added determinacy levels (D1-D5) and target lock; rewrote §3.1 as explanatory
+  debt; selected comparative-topological model for L0 + terrain analogy + complex-plane foil;
+  added selection minimal conditions S1-S4; swapped manifestational priority to
+  constitutive-dependence-primary; weaker-critique-primary for Sider; new §4.4 (anchoring
+  cost not merely pragmatic); multidimensional reality-strength + 4 boundary cases; disease
+  classification worked example; softened "mainstream default", restricted the truth claim,
+  reality-strength != degrees of being; expanded TODO.
 ---
 
 # 对象之前：选择实在论与确定性的奠基
 
 **Before Objects: Selection Realism and the Grounding of Determinacy**
 
-> **状态**：working draft v0.1。本文是 SRT 的第一篇学院入口论文草稿，非定稿、非 canonical，不替代 Core / Core_Law / Philosophy 护栏文件的定义。核心术语（`L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`d-value`）的权威定义仍在 canonical 文件中；本文以散文方式使用其哲学读法。
+> **状态**：working draft v0.2。SRT 的第一篇学院入口论文草稿，非定稿、非 canonical，不替代 Core / Core_Law / Philosophy 护栏文件的定义。核心术语（`L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`d-value`）的权威定义仍在 canonical 文件中；本文以散文方式使用其哲学读法。投稿版（去 frontmatter、压成五节、统一语言）将另出，见文末 TODO。
 
 ---
 
 ## 摘要
 
-本文为对象优先本体论（object-first ontology）提出一个自限的替代入口：**选择实在论（selection realism）**。其核心主张是，确定性（determinacy）不是本体论地板，而是受约束选择——切割（cutting）、锚定（anchoring）、稳定（stabilization）——之条件的被奠基结果；选择条件相对于确定存在具有**显现优先性（manifestational priority）**，此优先性被刻画为构成/奠基意义上的在先，而非时间或认识在先。
+本文为对象优先本体论（object-first ontology）提出一个自限的替代入口：**选择实在论（selection realism）**。其核心主张是，确定性（determinacy）不是本体论地板，而是受约束选择——切割（cutting）、锚定（anchoring）、稳定（stabilization）——之条件的被奠基结果；选择条件相对于确定存在具有**显现优先性（manifestational priority）**，本文将其主读法安置为**构成性依赖（constitutive dependence）**，grounding 作为可选的强化读法。
 
-本文先与当代反对象基础性的立场并肩批判对象基础性，继而指出最深预设在于"确定性的给定性"。论证分两阶段：阶段 A 是一个弱超验后退论证，演绎地得到"确定性不是基础的"，对 SRT 与自然性实在论保持中立；阶段 B 是一个最佳解释推断，论证奠基条件最好被理解为受约束的可选择性，而非 Sider/Lewis 式唯一自然关节，也非 Hirsch/Carnap 式框架内约定。由此 SRT 被定位为唯一关节实在论与紧缩论之间**有纪律的中道**。为避免唯心论与相对主义，本文引入过滤—阻力二象与层级实在强度（E1–E4），其中 E4 取倾向性判据而非当前共识。本文将 SRT 与 Barad 的 agential realism、结构实在论、过程哲学与康德区分，并为每个强主张附以撤回条件与经验风险刻画。结论不主张 SRT 整体成立，而主张它标识出一个先于对象优先本体论的真问题，并提供了一个有纪律的 selection-first 解答。
+为降低论证负担，本文先把"确定性"分层（边界 D1、同一性 D2、适用 D3、实践承重 D4、本体强度 D5），并把核心靶心锁定为**对象式确定性（D1+D2+D4 的结合）**。论证分两阶段：阶段 A 是一个弱超验后退论证，得到的是较弱但稳固的结论——对象优先本体论欠一笔关于确定性条件的**解释债**；阶段 B 是一个最佳解释推断（可废止），论证奠基条件最好被理解为受约束的可选择性，而非 Sider/Lewis 式唯一自然关节，也非 Hirsch/Carnap 式框架内约定。由此 SRT 被定位为唯一关节实在论与紧缩论之间**有纪律的中道**。为避免唯心论与相对主义，本文把现实强度刻画为四个维度（显现稳定、跨 operator 对齐、干预抵抗、继承硬化），E1–E4 作为典型组合而非线性阶梯，其中干预抵抗取倾向性判据。本文将 SRT 与 Barad 的 agential realism、结构实在论、过程哲学与康德区分，并为每个强主张附以撤回条件与经验风险刻画（杯子与疾病分类两个 worked example）。结论不主张 SRT 整体成立，而主张它标识出一个先于对象优先本体论的真问题，并提供了一个有纪律的 selection-first 解答。
 
-**关键词**：选择实在论；层级实在论；对象优先本体论；显现优先性；奠基；确定性；现实强度；非还原验证；反相对主义
+**关键词**：选择实在论；层级实在论；对象优先本体论；显现优先性；构成性依赖；确定性；现实强度；非还原验证；反相对主义
 
 ## Abstract
 
-This paper proposes a self-limiting alternative to object-first ontology: *selection realism*. Its core claim is that determinacy is not the ontological floor but a grounded result of conditions of constrained selection—cutting, anchoring, stabilization. Selection conditions are *manifestationally prior* to determinate existence, where this priority is constitutive/grounding rather than temporal or merely epistemic. After joining existing critiques of object-fundamentality, the paper locates the deepest assumption in the *givenness of determinacy* and argues in two stages: (A) a weak transcendental regress establishing, neutrally between SRT and naturalness realism, that determinacy is not fundamental; and (B) an inference to the best explanation that the grounding conditions are best understood as constrained selectability rather than unique natural joints (Sider/Lewis) or framework-internal convention (Hirsch/Carnap). SRT is thereby located as the disciplined middle of a Sider / deflationism / SRT triangle. To avoid idealism and relativism, the paper introduces a filter–resistance duality and layered reality-strength (E1–E4), with E4 read as *dispositional robustness under possible intervention* rather than current consensus. Selection realism is distinguished from Barad's agential realism, ontic structural realism, process philosophy, and Kant. Every strong claim is paired with a withdrawal condition and an account of empirical risk. The paper does not claim that the framework is established; it claims to identify a genuine problem prior to object-first ontology and to offer a disciplined selection-first answer.
+This paper proposes a self-limiting alternative to object-first ontology: *selection realism*. Its core claim is that determinacy is not the ontological floor but a grounded result of conditions of constrained selection—cutting, anchoring, stabilization. Selection conditions are *manifestationally prior* to determinate existence; this paper anchors that priority primarily as *constitutive dependence*, with metaphysical grounding retained as an optional strengthening. To lower the argumentative burden, determinacy is split into levels (boundary D1, identity D2, applicability D3, practical load-bearing D4, ontological strength D5), and the target is locked to *object-style determinacy* (the combination D1+D2+D4). The argument has two stages: (A) a weak transcendental regress that yields the modest but secure conclusion that object-first ontology owes an *explanatory debt* concerning the conditions of determinacy; and (B) a defeasible inference to the best explanation that these conditions are best understood as constrained selectability rather than unique natural joints (Sider/Lewis) or framework-internal convention (Hirsch/Carnap). SRT is thereby located as the disciplined middle of a Sider / deflationism / SRT triangle. To avoid idealism and relativism, reality-strength is recast as four dimensions (manifestational stability, cross-operator alignment, intervention-resistance, inheritance/hardening), with E1–E4 as typical combinations rather than a linear ladder, and intervention-resistance read dispositionally. Selection realism is distinguished from Barad's agential realism, ontic structural realism, process philosophy, and Kant. Every strong claim is paired with a withdrawal condition and an account of empirical risk (the cup and disease-classification worked examples). The paper does not claim that the framework is established; it claims to identify a genuine problem prior to object-first ontology and to offer a disciplined selection-first answer.
 
-**Keywords**: selection realism; layered realism; object-first ontology; manifestational priority; grounding; determinacy; reality-strength; non-reductive validation; anti-relativism
+**Keywords**: selection realism; layered realism; object-first ontology; manifestational priority; constitutive dependence; determinacy; reality-strength; non-reductive validation; anti-relativism
 
 ---
 
@@ -59,68 +77,82 @@ This paper proposes a self-limiting alternative to object-first ontology: *selec
 
 但这些问题都来得**太晚**。它们各自预设：对象、主体、价值、秩序已经稳定地在那里，剩下的只是判定其性质。一个更早的、被默认跳过的问题是：**某物究竟如何成为确定的、对象般的、有边界的，从而可供随后的感知与选择去把握？** 在追问"对象是什么"之前，应先追问"个体化（individuation）如何被奠基"。
 
-本文只论证一件事，并刻意把它收窄到可被独立评估的尺度：
+本文围绕一个主张展开，并刻意把它收窄到可被独立评估的尺度。为避免承重词含混，本文先把"确定性"分层（§2.0），再把靶心锁定为**对象式确定性**。在此前提下，本文的主张是：
 
-> **确定性（determinacy）不是本体论的地板。确定存在是受约束选择——切割、锚定、稳定——之条件的被奠基结果。对象优先本体论把一个被奠基的成果错置为基础。**
+> **对象式确定性不应被对象优先本体论无解释地预设为本体论起点；它更适合被理解为受约束选择——切割、锚定、稳定——之条件的被奠基结果。**
 
-这一主张，我们称之为**选择实在论（selection realism）**。它的承重词是一句必须被精确理解的话：**选择条件相对于确定存在具有显现优先性（manifestational priority）**。这里的"优先"不是时间在先——没有任何选择者先于世界把世界选出来；也不仅是认识在先——不只是"我们得借选择来解释对象"。它是**构成/奠基意义上的在先**：一个对象之为确定，是凭借选择条件而成立的（§3 给出完整的奠基论证，并在脚注保留退至构成性解释的软退路）。
+这一主张，我们称之为**选择实在论（selection realism）**。它的承重词是：**选择条件相对于确定存在具有显现优先性（manifestational priority）**——不是时间在先（没有任何选择者先于世界把世界选出来），也不仅是认识在先（不只是"我们得借选择来解释对象"），而是**构成性依赖意义上的在先**（§3.5 给出安置，并保留 grounding 作为可选强化）。
+
+本文也保留一个更强的版本——**确定性一般地不是本体论地板**——但明确把它作为阶段 B 溯因推断的**可废止输出**，而非阶段 A 的演绎定理（§3）。
 
 需要立刻划清四条边界，因为本主张极易被误读：
 
 - 其一，**这不是主观唯心论**。SRT 不说"心灵创造世界"。可被建构的只是解释性的切分；不可被免除的是锚定的代价——一个无法在干预、重复与跨 operator 对齐下存活的切分，至多是局部显现。Construction has cost。
-- 其二，**这不是相对主义**。现实有**层级强度**（§4.3）：梦与幻觉、习惯与记忆、公共制度、物理律，并不同样真实。真理是阻力与跨 operator 校正下的稳定对齐，不是"谁选谁真"。
-- 其三，**这不预设隐藏世界**。承担奠基功能的前对象条件域（本文记作 `L_0`）不是躲在现象背后的对象库，也不是康德式不可知的 noumenon，而只是可选择性的条件场。
-- 其四，**这不声称解释一切**。本文不处理价值、主体、意识、AI、政治；它们只在结论作为该地板**打开**的方向出现。本文也为自身的每个强主张附上撤回条件（§6）。
+- 其二，**这不是相对主义**。现实有**层级强度**（§4.3）：梦与幻觉、习惯与记忆、公共制度、物理律，并不同样真实。就确定对象性而言，客观性表现为阻力与跨 operator 校正下的稳定对齐。
+- 其三，**这不预设隐藏世界**。承担奠基功能的前对象条件域（本文记作 `L_0`）不是躲在现象背后的对象库，也不是康德式不可知的 noumenon，而只是 cut-space 上的非中立性（§3.2）。
+- 其四，**这不声称解释一切**。本文不处理价值、主体、意识、AI、政治；它们只在结论作为该地板**打开**的方向出现。本文为自身的每个强主张附上撤回条件（§6）。
 
-本文的对手不是稻草人。对象基础性至今是主流默认，本文将先与已有的反对象基础性火力线（组合问题、OSR、概念相对性）并肩批判它（§2），再指出真正最深的预设并不在"对象是否基础"，而在"确定性是否被给定"——这是连许多反对象立场都未充分交代的地方。
+对象优先仍是许多理论与日常本体论的默认入口（尽管当代形而上学内部已有事件本体论、事实本体论、结构实在论、过程哲学、trope 理论、bundle theory 等反对象基础性路线）。本文将先与已有的反对象基础性火力线并肩（§2），再指出真正最深的预设并不在"对象是否基础"，而在"确定性是否被给定"。
 
-**全文结构**。§2 精确界定对象优先本体论及其真正靶心，并处理来自自然性实在论与紧缩论的两个相反方向的反吸收，形成三角定位。§3 给出核心的两段式奠基论证（阶段 A 演绎 + 阶段 B 溯因），并回应"选择需要选择者"这一最强反对。§4 正面刻画奠基层——受约束选择的三重动作、反唯心论的过滤—阻力二象、实在论内核、以及层级实在论。§5 把 SRT 与最近邻——Barad、OSR、过程哲学、康德——逐一切割，回应"你只是换名复述"。§6 把撤回条件确立为方法论纪律，给出本框架的经验风险与收窄条件，并收束于"对象之前的问题"。
+**全文结构**。§2 分层界定确定性、精确界定对象优先本体论及其真正靶心，并处理来自自然性实在论与紧缩论的两个相反方向的反吸收，形成三角定位。§3 给出两段式奠基论证（阶段 A 解释债 + 阶段 B 溯因），固定 `L_0` 的主模型，并回应"选择需要选择者"。§4 正面刻画奠基层——选择的最小条件与三相位、反唯心论的过滤—阻力二象与实在论内核、多维现实强度、以及"锚定代价为何不只是 pragmatic cost"。§5 把 SRT 与最近邻——Barad、OSR、过程哲学、康德——逐一切割。§6 把撤回条件确立为方法论纪律，给出经验风险与两个 worked example，并收束于"对象之前的问题"。
 
 ---
 
-## §2　对象优先本体论及其真正靶心
+## §2　确定性、对象优先本体论及其真正靶心
 
-### §2.1　定义
+### §2.0　确定性的分层与本文靶心
 
-**对象优先本体论（Object-First Ontology）** =df 主张实在的基本家具是确定个体（对象）之论域、且满足：
+"确定性"在不同语境承担多种含义，混用会让读者不清楚论文到底针对 metaphysical determinacy、individuation、objecthood、semantic determinacy、phenomenological givenness 还是 practical stability。本文先分层：
 
-- **(O1) 对象基础性**：确定对象本体论上基本，事件／过程／事实／视角都用对象作 relata 分析；
-- **(O2) 个体化的给定性**：对象预先地、独立于任何选择／视角／操作，就已带有边界与同一性条件；
-- **(O3) 主体后入**：主体、知觉、价值、语言、框架在对象之后进入，作用于已被个体化的论域。
+- **D1 边界确定性**：某物与非某物之间有可操作区分。
+- **D2 同一性确定性**：某物可在变化中被追踪为同一项。
+- **D3 适用确定性**：某概念、谓词或分类可稳定适用。
+- **D4 实践确定性**：某项能在行动、干预、修复、预测中稳定承重。
+- **D5 本体确定性**：某项具有足够现实强度，可作为后续选择的条件。
 
-### §2.2　对 (O1) 的批判：对象基础性仍是主流，但已被三条独立压力线围攻
+**本文核心论证针对"对象式确定性"，即 D1+D2+D4 的结合**——边界、同一性与实践承重性的合取。这是对象优先本体论无解释地设为地板的东西。更强的"一切确定性（含 D3/D5）皆非基础"的版本不作为主论证前提，只在阶段 B 的溯因结论与 §6.3 中作为受支撑的延伸出现。如此可显著降低论证负担：本文不必一开始就击败一切关于基础确定项的立场，只需表明对象式确定性需要解释，且 SRT 的解释更好。
 
-(O1) 至今是默认本体论——量化逻辑把论域设为对象集，新亚里士多德实体论（Lowe 四范畴）以实体为先。SRT 不孤军作战，而是接入三条已有的、可敬的批判：
+须特别强调以防一个混淆：**D5（本体确定性）不是本文主靶心，只是后续扩展层（§6.4）；本文主论证只处理 D1+D2+D4**。因此本文是**用现实强度（§4.3 的 R1–R4）解释对象式确定性，而非用确定性定义现实强度**——reality-strength 刻画的是 determinate anchoring 的强度，D5 的本体确定性留作扩展、不参与主论证。两者不在同一解释方向上循环。
 
-1. **组合与个体化的不确定性**。特殊组合问题（van Inwagen, *Material Beings*）与"多的问题"（Unger）显示：哪些对象存在、一个对象到哪为止，无法被非任意地固定。若"有哪些对象"本身不确定或带约定成分，对象就不能是无须奠基的基岩。
-2. **无关系之 relata 的可疑性**（OSR）。Ladyman & French 指出：物理学交付的是结构，"承载内在本性的对象"在认识上闲置、在形而上学上可疑。
-3. **个体化的尺度／概念相对性**。Putnam 的概念相对性（同一世界数出 3 个还是 7 个对象，取决于是否计入 mereological sums）与 Hirsch 的 quantifier variance 表明：算作"一个对象"依赖于所采的切分方案，而非被给定。
+### §2.1　对象优先本体论的定义
 
-SRT 对 (O1) 的**自有增量**：即便让步承认对象，(O1) 也无法解释**给定感的产生**（世界为何总像"已经对象化"地到来）——除了 reification（把切分实体化）或 reduction（把高层对象消解为低层对象，但低层对象的确定性又被给定），它没有第三条路。这条增量正是从 (O1)-批判通向 (O2)-批判的桥。
+**对象优先本体论（Object-First Ontology）** =df 主张实在的基本家具是确定个体（对象）之论域、且满足：(O1) 对象基础性——确定对象本体论上基本，事件／过程／事实／视角都用对象作 relata 分析；(O2) 个体化的给定性——对象预先地、独立于任何选择／视角／操作，就已带有边界与同一性条件；(O3) 主体后入——主体、知觉、价值、语言、框架在对象之后进入，作用于已被个体化的论域。
+
+### §2.2　对 (O1) 的批判：与已有火力线并肩
+
+(O1) 至今是许多理论与日常本体论的默认入口（量化逻辑把论域设为对象集，新亚里士多德实体论以实体为先），但已被三条独立压力线围攻，SRT 接入之：
+
+1. **组合与个体化的不确定性**。特殊组合问题（van Inwagen, *Material Beings*）与"多的问题"（Unger）显示：哪些对象存在、一个对象到哪为止，无法被非任意地固定。
+2. **无关系之 relata 的可疑性**（OSR）。Ladyman & French：物理学交付的是结构，"承载内在本性的对象"在认识上闲置、在形而上学上可疑。
+3. **个体化的尺度／概念相对性**。Putnam 的概念相对性与 Hirsch 的 quantifier variance：算作"一个对象"依赖于所采的切分方案。
+
+SRT 的自有增量：即便让步承认对象，(O1) 也无法解释**给定感的产生**——除了 reification 或 reduction，它没有第三条路。这是从 (O1)-批判通向 (O2)-批判的桥。
 
 ### §2.3　反 (O1) 阵营的两组与真正的靶心
 
-反对 (O1) 的当代立场分两组。**第一组**（OSR、trope 理论、Putnam/Hirsch 式概念相对性）削弱对象基础性，却仍让某个确定项在新层级承担地板功能——结构事实、trope、或框架内对象被当作预先确定的，故实际保留 (O2)。**第二组**（Barad、部分过程哲学）更进一步，也否认确定性是给定的。SRT 与第一组的分歧在 (O2)；与第二组并肩否认 given determinacy，但分歧在于后者未充分说明切割如何受约束、被排序与纠错、并沉积为可继承的现实厚度。
+反对 (O1) 的当代立场分两组。**第一组**（OSR、trope 理论、Putnam/Hirsch 式概念相对性）削弱对象基础性，却仍让某个确定项在新层级承担地板功能——结构事实、trope、或框架内对象被当作预先确定的，故实际保留 (O2)。**第二组**（Barad、部分过程哲学）更进一步，也否认确定性是给定的，但未充分说明切割如何受约束、被排序与纠错、并沉积为可继承的现实厚度。
 
-> **战略定位**：SRT 的真正靶心由此从"什么是基础"推进到"**确定性如何被奠基**"。"对象优先"作入口标签，"Before Objects" 在正文兑现为 "before determinate individuation"。但这一推进立刻面对两个相反方向的强力反吸收，必须正面处理。
+> **战略定位**：SRT 的真正靶心由此从"什么是基础"推进到"**对象式确定性如何被奠基**"。"对象优先"作入口标签，"Before Objects" 在正文兑现为 "before determinate individuation"。但这一推进面对两个相反方向的反吸收，必须正面处理。
 
 ### §2.4　自然性反吸收（Sider / Lewis）
 
-最强的反吸收来自自然性实在论。Sider（*Writing the Book of the World*）主张实在具有一个被特别标举的结构（privileged structure）；Lewis 主张 perfectly natural properties 在关节处切分世界。二者皆操作者无关，似乎无须 selection 即可奠基确定性；若如此，§3 阶段 A 的后退可被自然性满足，SRT 关于"奠基者是选择条件"的实质主张被整体收回。
+最强的反吸收来自自然性实在论。Sider（*Writing the Book of the World*）主张实在具有一个被特别标举的结构（privileged structure）；Lewis 主张 perfectly natural properties 在关节处切分世界。须先做一处区分：**自然性关于基础结构的唯一性，不直接等于普通对象切分的唯一性**——Sider 的 privileged structure 不直接给出唯一的普通对象论域，Lewis 的 perfectly natural properties 也不必推出唯一的日常对象切分。
 
-SRT 的回应**不是**否认自然性的实在内核，也**不是**通过强迫自然性去解释它有权设为原始的东西来驳倒它。SRT does not refute naturalness realism by demanding an explanation it refuses to give; rather, it offers an alternative with a lower primitive burden and greater explanatory reach regarding scale-relative individuation, givenness, stabilization, and inheritance.（SRT 不靠"逼自然性解释它愿设为原始之物"来取胜，而是提供一个**原始负担更低、解释范围更宽**的替代——在尺度相对的个体化、给定感、稳定与继承上更能说明。）SRT 不否认非中立性与阻力真实且操作者无关——这是它自己的实在论内核（§4.2）；它否认的是这些已**以唯一确定的对象/性质/结构方式被给定**。差异由此是**比较性的**（哪一方原始设定更少、解释更广），而非**反驳性的**：自然性设定切分，可选择性解释切分的成为确定（详见 §3.3 与 §6.2）。
+因此本文主打**较弱批评**：自然性实在论可以承认高层／普通／社会／功能对象的尺度相对性，把它们交给派生结构、reference magnetism、语义或实践——但这恰恰意味着关于对象式确定性的解释被**分散到物理、语义、心理、实践多层**；SRT 提供的是**统一的 selection-stabilization 账目**。这是一个理论选择标准上的比较（统一性、原始负担、解释范围），而非独断的反驳：SRT does not refute naturalness realism by demanding an explanation it refuses to give; rather, it offers an alternative with a lower primitive burden and greater explanatory reach regarding scale-relative individuation, givenness, stabilization, and inheritance.
+
+**较强批评**（自然性即便加派生层也无法解释 determinacy 作为 determinacy 的生成，因为总要在某处预设已确定 joints）更有锋芒但更难证，**留作未来工作**，不作本文承重。
 
 ### §2.5　紧缩论反吸收（Hirsch / Carnap）
 
 相反方向的反吸收来自紧缩论。Hirsch 的 quantifier variance 与 Carnap 的内/外问题区分会说：没有关于"the 切分"的深层事实，选定语言框架、框架内成立即可，于是"确定性如何被奠基"是伪问题。
 
-SRT 的回应须避免把紧缩论读成"否认一切事实差异"。SRT does not deny that deflationary frameworks can state internal truths. Its objection is that the cost of adopting, maintaining, shifting, repairing, or abandoning a cut is not itself exhausted by framework-internal truth conditions.（SRT 不否认紧缩框架能陈述其内部真值；SRT 反对的是：一个切分被**采用、维持、转移、修复或放弃的代价**，并不能被框架内部真值条件所穷尽。）一个框架可以内部为真地说"破杯不再是可用之杯"；但*转入*该说法所伴随的锚定代价重分配——犹豫、修复实践的出现、同一性判断的分歧、可供性的崩解——不是框架内规则应用就能耗尽的。问题没有被语言取消，只是被重置为：**哪些切分能在阻力与代价下稳定。**
+SRT 的回应须避免把紧缩论读成"否认一切事实差异"。SRT does not deny that deflationary frameworks can state internal truths. Its objection is that the cost of adopting, maintaining, shifting, repairing, or abandoning a cut is not itself exhausted by framework-internal truth conditions.（SRT 不否认紧缩框架能陈述其内部真值；它反对的是：一个切分被**采用、维持、转移、修复或放弃的代价**，不能被框架内部真值条件穷尽。）这一回应的关键预设——锚定代价不只是外在 pragmatic cost，而是确定项成立的构成条件——将在 §4.4 专门论证。
 
 ### §2.6　三角定位
 
-由此 SRT 在形而上学地图上占据一个确定坐标，而非"又一个框架"：
+由此 SRT 在形而上学地图上占据一个确定坐标：
 
-- **Sider / Lewis**：存在唯一的、操作者无关的自然切分。
+- **Sider / Lewis**：存在唯一的、操作者无关的自然切分（关于基础结构）。
 - **Hirsch / Carnap**：切分之争是框架/语言问题，无深层事实。
 - **SRT**：无唯一预给的真切分，但切分的**阻力、稳定性与现实强度有事实**。
 
@@ -128,161 +160,179 @@ SRT 是二者之间**有纪律的中道**：对紧缩论而言它是实质的（
 
 ---
 
-## §3　确定性的奠基：两段式论证
+## §3　对象式确定性的奠基：两段式论证
 
-### §3.0　论证的两个阶段及其不同力度
+### §3.0　两个阶段及其不同力度
 
-本节的论证分两阶段，力度不同，刻意分开。**阶段 A** 是一个（弱）超验/后退论证，具演绎抱负，但只得到否定性的结构结论：**确定性不是基础的**。**阶段 B** 是一个最佳解释推断（inference to the best explanation），论证这些奠基条件**最好被理解为**受约束的可选择性，而非唯一自然关节、也非框架内约定。把二者分开本身就是一种纪律：阶段 A 不冒充能推出 selection，SRT 的本体论锋芒由阶段 B 的解释力挣得，而非伪装成定理。
+论证分两阶段，力度不同，刻意分开。**阶段 A**（弱超验/后退）只得到一个较弱但稳固的结论：对象优先本体论欠一笔关于确定性条件的**解释债（explanatory debt）**。**阶段 B**（最佳解释推断，可废止）论证这些条件最好被理解为受约束的可选择性。SRT 的本体论锋芒由阶段 B 挣得，而非伪装成阶段 A 的定理——这正是"付费而非降调"：大胆主张保留，但其支撑明确标为溯因且可废止。
 
-### §3.1　阶段 A：后退论证（演绎，得到"确定性非基础"）
+### §3.1　阶段 A：后退论证（得到"解释债"，不演绎击败自然性）
 
-- **(1)** 任一确定项 *x*（对象，亦包括关系、结构、性质、trope）之为确定，需要个体化条件：可分辨的边界、同一性条件，以及一个使"这一个/非这一个"被固定的尺度—视角。
-- **(2)** 这些个体化条件不能只是又一批**已确定的项**。否则以 *y* 的确定性解释 *x* 的确定性，又预设 *y* 的条件，递归不止；该后退是恶性的，因为它从不偿付被解释项——确定性——而只是不断转移它。
-- **(2′)** 后退是**范畴不变的**：把条件改述为关系、结构、性质或 trope 并不能中止它，因为这些项同样只有具备可区分性与适用边界才是确定的。故后退针对的是**确定性本身**，而非对象性。
-- **(3)** 因此，任一确定项的确定性被奠基于**并非（在完全个体化意义上）确定**的条件。这就是**否定性结果：确定性不是基础的。**
+- **(1)** 任一对象式确定项 *x* 之为确定（具 D1 边界 + D2 同一性 + D4 实践承重），需要个体化条件：可分辨边界、同一性条件、以及一个使"这一个/非这一个"被固定的尺度—视角。
+- **(2)** 对于任何**非原始、非自明**的确定项 *x*，其确定性不能仅由另一个**同型的**已确定项 *y* 来解释；否则解释只是把确定性从 *x* 转移到 *y*，而未偿付被解释项本身。
+- **(2′)** 这一点是**范畴不变的**：把 *y* 改述为关系、结构、性质或 trope 并不改变情形，因为这些项同样只有具备可区分性与适用边界才是确定的。故压力针对的是**确定性本身**，而非对象性。
+- **(3)** 因此，对象优先本体论若把对象式确定性设为无须解释的起点，就**欠缺一个关于确定性条件的解释**。这就是**解释债**。
 
-> 脚注（grounding 主用，留软退路）：本段以 metaphysical grounding 陈述（〔*x* 是确定的〕这一事实被奠基于关于其确定性条件的事实）；若读者拒绝 grounding 实在论，可整体退至 *constitutive explanation* 而不损 (1)–(3) 有效性。此退路本身即一条 withdrawal condition。
+> 重要限定：阶段 A **不**演绎地推出"确定性不是基础的"。一个自然性实在论者可以主张存在**基础的、原始的、自带个体化条件的**确定项（自然关节、基础实体或本质、确定结构事实），从而声称在某处偿清解释债。阶段 A 不以"否则后退"直接驳倒此立场——那会乞题。阶段 A 只确立：**要么承认基础原始确定项（并承担其代价），要么解释债悬空。** 哪一条更可取，交给阶段 B 的解释力比较。
 >
-> 注意：阶段 A 对 SRT 与 Sider **中立**——Sider 完全可以接受"确定性被更基础者奠基"。奠基者*是什么*，留给阶段 B。
+> 脚注（读法）：本段的依赖关系主读为**构成性依赖**；grounding 作为可选强化（见 §3.5）。
 
-### §3.2　后退的终止：sub-determinate but not null
+### §3.2　后退的终止与 `L_0` 的主模型：比较拓扑（comparative-topological）
 
-后退不终止于第一个确定项，而终止于**亚确定但非空无（sub-determinate but not null）**的条件。须区分两个谓词：**"确定的"** = 具个体化边界 + 同一性条件；**"非中立的"** = 具足以使差异可被切出的不对称/倾向。终点（记作 `L_0`）非中立而未被个体化。
+若不诉诸基础原始确定项，后退终止于何处？本文为 `L_0` 选定一个**主解释模型并不再滑动**：**比较拓扑模型**。`L_0` 不包含任何确定项（对象/性质/结构/关系），只包含 **cut-space 中的非均匀性**——某些切割比另一些更可稳定、更低阻力、更可继承。非中立性因此不是一个被个体化的性质，而是**可能切割之上的一个比较序（a comparative order over possible cuts）**：它使不同切割并非等价，却不预先划定任何确定区域。须区分两个谓词：**"确定的"** = 具个体化边界 + 同一性条件；**"非中立的"** = 具足以使切割非等价的比较不均匀性。`L_0` 非中立而未被个体化（sub-determinate but not null）。
 
-关键澄清：**"非中立性"不是一个已经被个体化的性质，而是一个功能性约束（a functional constraint, not an already-individuated property）**——它说的是**不同切割并非等价：有些切割更可显现、更能稳定、更能在干预中保持**。如此刻画即拆解一个两难：`L_0` 既非完全确定（否则它是确定项，后退重启），亦非完全空无（否则无物可供奠基与约束）；它以"使切分非等价"的功能方式约束，而不以"拥有确定边界"的对象方式存在。
+两难的拆解：`L_0` 既非完全确定（不含确定项，后退不重启），亦非完全空无（含非平凡比较序，有物可供约束）。"比较序本身是否已经确定？"——被排序的是可能切割，而排序所依赖的不均匀性是**功能性的**：它只在"使某些切割更易稳定"这一可显现的差别中存在，而不作为独立确定结构存在；它的确定化恰恰是切割—锚定—稳定的成就（§4）。
 
-**撤回条件**：若"非中立而不确定"被证不自洽，则 SRT 退至 operator-relative-all-the-way 的较弱（较 Kant 的）立场。
+**类比与其限度**。一个会**误导**的类比是复平面：虚轴上的量不在实轴上，却影响后续变换与投影。它的误导恰在于——复平面是一个**完全确定的结构**（`i` 有精确同一性条件），而 `L_0` 不是；按此类比，`L_0` 会被读成"现象背后的第二条确定维度"，即 §5.4 拒绝的隐藏世界/noumenon。更贴切（同样仅启发性）的类比来自本文的**地形**语汇：一片尚未被分出流域的**坡度场**——坡度使某些分水方式更稳定、代价更低，但坡度本身不是一组已划定的流域；流域（确定对象）不是被给定的，是坡度（非中立性）使某些划分成为低阻力的成就。地形类比的限度在于：真实地形已是确定的物理结构，而 `L_0` 不是——它只是"使切割非等价"的比较不均匀性本身。
+
+**一个半形式的展示（representational device, not a determinate-domain claim）**。为使 `L_0` 更可审查，给出一个最小半形式模型（仅作展示，不主张 C 是已确定集合）：
+
+- cut-space **C**：可能差异化的空间（the space of possible differentiations），不预设为已个体化的对象集；
+- 候选切割 *c₁, c₂, c₃, … ∈ C*；
+- 阻力剖面 **R(c)**：切割 *c* 在干预/重复/跨 operator 对齐下遭遇的抵抗；
+- 稳定倾向 **S(c)**：*c* 被锚定并退入背景的倾向；
+- 继承倾向 **H(c)**：*c* 沉积为后续约束、预裁剪未来切割的倾向。
+
+则 **`L_0` 不是 C 中的某个子集（不是对象集合），而是 R、S、H 在 C 上的非均匀性/比较剖面**——即 R/S/H 并非跨切割恒定，而这种不恒定使某些切割并非等价。两点护栏须随形式**一起**声明，否则记号会偷偷预设确定性：**(i)** C 不被主张为已确定的论域——它是可能差异化的空间，其元素 *c* 的确定性是锚定—稳定的成就，而非给定；半形式记号只是把"非均匀性"显示出来的表征手段，不是对一个预先确定域施加度量。**(ii)** R/S/H 是功能性差分而非已确定结构——它们只在"某些切割更易稳定"这一可显现差别中存在；把它们读成 C 上的确定函数是一种表征理想化，其本体承诺仅为"比较序非平凡（the comparative order is non-trivial）"。
+
+**撤回条件**：若"非中立的比较序而不含确定项"被证不自洽，则 SRT 退至 operator-relative-all-the-way 的较弱（较 Kant 的）立场。
 
 ### §3.3　阶段 B：溯因到受约束的可选择性
 
-阶段 A 未定亚确定奠基条件*是什么*。有三个在场候选：(i) Sider/Lewis 的唯一操作者无关自然关节；(ii) Hirsch/Carnap 的框架内约定；(iii) SRT 的受约束可选择性——operator 相对的、支付阻力、被稳定与继承的切割。
+阶段 A 留下解释债与一个开放问题：偿付确定性条件的最佳方式是什么？三个在场候选：(i) Sider/Lewis 的唯一操作者无关自然关节；(ii) Hirsch/Carnap 的框架内约定；(iii) SRT 的受约束可选择性——operator 相对的、支付阻力、被稳定与继承的切割。
 
-主张 (iii) 是**最佳解释**，**并非**阶段 A 的演绎推论。其溯因依据是 (i)、(ii) 无法无余地承担的解释工作：
+主张 (iii) 是**最佳解释**，**可废止**，依据是 (i)、(ii) 无法无余地承担的解释工作：
 
-1. **给定感**：世界为何总像"已经对象化"地到来。唯一关节不解释显现与通达；约定论消解之，却又无法解释为何某些切分昂贵、不稳。
-2. **个体化的尺度/视角相对性**（杯/分子/餐具组合）：单一自然关节须判其余为非基础并为其余另欠说明；可选择性原生地容纳这一相对性。
+1. **给定感**：世界为何总像"已经对象化"地到来。唯一关节不解释显现与通达（把它分散给认知/语义）；约定论消解之，却无法解释为何某些切分昂贵、不稳。
+2. **个体化的尺度/视角相对性**（杯/分子/餐具组合）：单一自然关节须判其余为派生并为其余另欠说明（解释分散）；可选择性原生地容纳这一相对性（统一解释）。
 3. **切割—锚定—稳定的不对称**：为何某些切分持存、另一些消散。差异性稳定是**事实**（反约定论），却无须唯一真切分（反唯一关节）。
-4. **E1–E4 现实强度 + L2 继承**：分级的、路径依赖的稳定可被观察；唯一关节与约定论都不预测这种**梯度 + 滞后**。
+4. **现实强度的多维分级 + 继承**（§4.3）：分级的、路径依赖的稳定可被观察；唯一关节与约定论都不预测这种**多维组合 + 滞后**。
 
-故奠基条件最好被理解为受约束的可选择性。**明确标注**：此为溯因、可废止；**撤回条件**——若自然性或约定能无余地复原给定感、尺度相对性、差异性稳定与继承，则 SRT 收窄。
+故奠基条件最好被理解为受约束的可选择性。**撤回条件**：若自然性或约定能以同等或更低的原始负担、无余地复原给定感、尺度相对性、差异性稳定与继承，则 SRT 收窄。由此，更强版本"对象式确定性不是基础的（乃至确定性一般非基础）"作为本阶段的**可废止输出**成立，而非阶段 A 的演绎定理。
 
-### §3.4　"选择需要选择者"反对与非施事澄清
+### §3.4　"选择需要选择者"反对
 
-> 反对：若 *x* 的确定性奠基于"选择"，而选择需要一个进行切割的 operator，且 operator 是确定对象，则后退被偷偷重启，object-first 反胜。
+> 反对：若 *x* 的确定性奠基于"选择"，而选择需要一个进行切割的 operator，且 operator 是确定对象，则后退被偷偷重启。
 
-回应三步：
+回应三步：**(R1)** operator 不必是基础确定对象，而是一个约束剖面（constraint profile）；切割之"被操作"不蕴含预先给定的"切割者"。**(R2)** operators 本身被奠基：任何稳定 operator（主体、仪器）都是沉积的选择历史（`L_2`），故以 operator 解释 determinacy 非恶性循环，而是**自举（bootstrapping）**。**(R3)** 后退终止于 §3.2 的 cut-space 非中立性，而非第一对象，亦非隐藏世界（护栏 O-Phil-11）。"选择"在此为术语，其非施事刻画与最小条件见 §4.1。
 
-- **(R1)** operator 不必是基础确定对象，而是一个**约束剖面（constraint profile）**；切割之"被操作"不蕴含预先给定的"切割者"。
-- **(R2)** operators 本身被奠基：任何稳定 operator（主体、仪器）都是沉积的选择历史（`L_2`），故以 operator 解释 determinacy 非恶性循环，而是**自举（bootstrapping）**。
-- **(R3)** 后退终止于 §3.2 的最低非中立性，而非第一对象，亦非隐藏世界（护栏 O-Phil-11）。
+### §3.5　输出命题与显现优先性的安置
 
-并须解除术语的施事读法：**本文所谓"选择"，指约束下的差异实现（differential actualization under constraint），而非一个已被个体化的主体的意向性挑选**（Selection here means differential actualization under constraint, not intentional choosing by an already individuated agent）。本文坦承"选择实在论"之名有招致施事误读的风险，仍予保留，因其与差分实现传统及书稿 Q05 的"选择不是挑选"一致。
+> **(A 解释债)** 对象式确定性需要解释：它不能仅由同型确定项偿付。**(B 溯因)** 偿付它的最佳方式是受约束的可选择性。合起来：**选择条件相对于确定存在具有显现优先性**（*Selection conditions are manifestationally prior to determinate existence*）。**若阶段 B 溯因成立（if the stage-B abduction succeeds）**，对象/确定性优先本体论就把一个被奠基的成果错置为基础；若溯因被废止，则本主张收窄为 §6.3 的防御版（对象式确定性至少欠一笔解释债）。这是有意的语气纪律：凡"错置基础"一类强句皆挂在溯因前件之下，不作无条件断言。
 
-### §3.5　§3 输出命题
-
-> **(A 演绎)** 确定性不是本体论地板：任一确定项的确定性都被奠基于非确定条件。**(B 溯因)** 这些条件最好被理解为受约束的可选择性。合起来：**选择条件相对于确定存在具有显现优先性**（*Selection conditions are manifestationally prior to determinate existence*；等价地，*determinate existence is manifestationally posterior to constrained selectability*）。对象/确定性优先本体论把一个被奠基的成果错置为基础。
+**显现优先性的安置**：本文把 manifestational priority 的**主读法定为构成性依赖（constitutive dependence）**，而非标准 full grounding——确定项之所以能作为确定项出现并承重，依赖于选择条件的切割、锚定与稳定。若 grounding 被理解为严格的、非循环的、世界内事实之间的形而上学决定关系，本文不承诺该强读法，尤其因为 `L_2` 稳定、历史沉积与自举模型含反馈与滞后结构，可能与 grounding 的非循环/非对称要求张力。**grounding 作为可选的强化读法保留**，其完整安置（Fine / Schaffer / Rosen / Audi / Correia）列为投稿前工作。
 
 ---
 
 ## §4　选择实在论：奠基层的最小刻画
 
-§3 留下一个否定结果与一个方向：确定性被奠基，而奠基者最好被理解为受约束的可选择性。本节只把正面刻画补足到三件事所需的程度——命名奠基层、堵住唯心论、堵住相对主义。这里有一个必须正视的负担：既然 §2.3 已公平承认某些对手也否认确定性的给定性，那么 SRT 的全部差异就压在"切割如何被约束、稳定与继承"这套机制上。因此本节的任务不是宣告该机制，而是让它**做工**——并且始终把机制系于奠基主张：以下过程是确定性*据以成立*的构成性条件，而非已确定之物的因果史。
+§3 留下解释债与一个方向：对象式确定性最好被理解为受约束可选择性的成果。本节把正面刻画补足到四件事所需的程度——给"选择"以最小条件与定义、堵住唯心论、给现实强度以多维刻画、并论证锚定代价的构成性。机制始终系于奠基主张：以下过程是确定性*据以成立*的构成性条件，而非已确定之物的因果史。
 
-### §4.1　三重选择动作与三层结构
+### §4.1　选择的定义、最小条件与三相位
 
-选择在此不指主体面对菜单的挑选；那只是选择的最后一帧。选择是现实成形的最低结构，包含三个动作。**切割（cut）**使"这一个"与"非这一个"分开，并赋予一个可辨识的操作格式——它同时是排除：每一次成形都让另一些方向未以正面形式发生，但被排除者并不因此失效，而是作为后续摩擦改变未来选择的代价分配。**锚定（anchor）**使一次显现获得地形位置：出现不等于留下，一个显现可以闪过而不进入后续地形；唯当它成为后续选择**必须面对的条件**时，它才开始获得现实重量。**稳定（stabilize）**使反复锚定的结果退入背景，沉积为习惯、语言、规范、制度与模型。
+选择在此不指主体面对菜单的挑选。**本文所谓"选择"指约束下的差异实现（differential actualization under constraint），而非一个已被个体化的主体的意向性挑选**（Selection here means differential actualization under constraint, not intentional choosing by an already individuated agent）。统一定义：
 
-这三者之间有一个使机制非琐碎的环节：锚定带来**不可逆性**——撤回可以取消表面结果，却不能取消选择已经改变过的地形；每一次锚定都把"之前"与"之后"切成不同的地形。不可逆的累积形成**现实厚度**，厚度退入背景成为**秩序**，而秩序又反过来**预裁剪**后续选择——它决定什么可见、什么顺滑、什么代价高昂，从而在主体到达"菜单"之前就已处理过选择空间。正是这条"切割→锚定→不可逆→厚度→背景化→预裁剪"的链条，使 selection-first 不止于"确定性不是给定的"这一抽象主张，而能说明确定现实如何实际地生成并自我约束。
+> **Selection = constrained differential actualization whose phases are cut, anchor, and stabilize.**（选择 = 受约束的差异实现，其相位为切割、锚定、稳定。）
 
-对应地，本文以三层为记号（散文使用，不引形式系统）：**`L_0`** 是可选择性的模态场，其本性已在 §3.2 锁定——**sub-determinate but not null**：不是确定对象或确定结构，也不是空无，而是未个体化却非中立的条件域，无确定项的边界与同一性，却具足以使差异可被切出的不对称性。**`L_1`** 是选择后的显现/锚定事件（非附加于物理之上的第二实体）；**`L_2`** 是稳定下来的选择历史（非自动正当）。再次强调：此处"选择"是术语，指约束下的差异实现，非意向性挑选。
+为防止"选择"过宽（否则任何因果筛选、信息压缩、演化、分类、制度沉积都成为选择，解释力反而下降），本文给出 SRT 意义上 selection 的**最小条件**。一个过程要算作 selection，至少需：
+
+- **(S1)** 存在多个可实现但不等价的显现路径；
+- **(S2)** 某些路径因阻力、代价、约束而更易稳定；
+- **(S3)** 被实现的路径产生**可继承的**后续条件；
+- **(S4)** 该后续条件反过来**预裁剪**未来的选择空间。
+
+仅当 S1–S4 同时成立，过程才是"差异实现—锚定—继承—预裁剪"的结构，而非"仅仅发生了某种差异"。由此 selection 在 SRT 中是广布的，但**不是普遍的**——这避免了把一切发生都称为选择的泛化（与反泛心论一致）。
+
+三相位：**切割（cut）**使"这一个"与"非这一个"分开并赋予可辨识的操作格式，同时是排除——被排除者作为后续摩擦改变未来代价分配。**锚定（anchor）**使一次显现获得地形位置：出现不等于留下，唯当它成为后续选择必须面对的条件时才获得现实重量。**稳定（stabilize）**使反复锚定退入背景，沉积为习惯、语言、规范、制度与模型。三者之间的非琐碎环节：锚定带来**不可逆性**（撤回可取消表面结果，不能取消已改变的地形），不可逆累积成**现实厚度**，厚度退入背景成为**秩序**，秩序又**预裁剪**后续选择。正是这条链使 selection-first 能说明对象式确定性如何实际生成并自我约束。
+
+三层记号（散文使用）：**`L_0`** 是 cut-space 上的非中立比较序（§3.2）；**`L_1`** 是选择后的显现/锚定事件（非第二实体）；**`L_2`** 是稳定下来的选择历史（非自动正当）。
 
 ### §4.2　过滤—阻力二象与实在论内核
 
-"确定性被奠基于选择"最危险的滑坡，是被读成"心灵投射世界"。堵住它的不是声明，而是代价。operator（记作 `theta`，一个约束剖面而非论域中的又一件家具）**过滤**：经验被某个操作侧的约束所格式化。但显现要**支付阻力**（记作 `Psi_f`）：可被建构的只是解释性的切分，不可被免除的是锚定的代价。在本文中 `Psi_f` 只取一种含义并标明层级——候选选择在预测、干预、重复与跨 operator 对齐下持续遭遇的抵抗（即本体/信息几何层，不展开四层全表）。一个无法在干预与重复下存活的切分，至多是局部显现。
+"确定性被奠基于选择"最危险的滑坡是被读成"心灵投射世界"。堵住它的是代价。operator（记作 `theta`，约束剖面）**过滤**；显现要**支付阻力**（记作 `Psi_f`）：可被建构的只是解释性切分，不可被免除的是锚定代价。`Psi_f` 在本文只取一种含义并标明层级——候选选择在预测、干预、重复与跨 operator 对齐下持续遭遇的抵抗（本体/信息几何层，不展开四层全表）。
 
-须精确声明 SRT 的实在论内核，以免"选择实在论"之名被读成关于确定性的纯建构论。**SRT is realist about minimal non-neutrality and resistance in the sense that they are not created by, nor exhausted by, any given operator's projection. What is operator-relative is the determinate cut.**（SRT 对最低非中立性与阻力持实在论立场——意指它们**既非由某个 operator 创造，亦不被某个 operator 的投射所穷尽**；operator 相对的，是确定切分。）这一措辞比"operator-independent"更稳：它不声称非中立性/阻力是一个完全脱离一切 operator 的现成结构（那会滑回 object-first），只声称没有任何单个 operator 能创造或耗尽它们。
+实在论内核须精确声明：**SRT is realist about minimal non-neutrality and resistance in the sense that they are not created by, nor exhausted by, any given operator's projection. What is operator-relative is the determinate cut.**（SRT 对最低非中立性与阻力持实在论立场——它们既非由某个 operator 创造，亦不被某个 operator 的投射穷尽；operator 相对的是确定切分。）这比"operator-independent"更稳：不声称非中立性/阻力是脱离一切 operator 的现成结构（那会滑回 object-first），只声称无任何单个 operator 能创造或耗尽它们。
 
-因此 SRT 不是主观唯心论，其根据不是单一证据，而是一族护栏：**construction has cost; stabilization requires resistance; alignment is not optional.**——建构有代价，稳定要经受阻力，对齐不能被任意豁免。`Psi_f` 是反主观唯心论的核心护栏之一（其余还包括跨 operator 对齐、干预抵抗、`L_2` 稳定）。
+故一族护栏：**construction has cost; stabilization requires resistance; alignment is not optional.** `Psi_f` 是反主观唯心论的核心护栏之一。
 
-### §4.3　层级实在论：选择不扁平化现实
+### §4.3　现实强度：四维刻画，E1–E4 作为典型组合
 
-紧接的反对是：若被选择者皆为真实，梦、幻觉、制度与物理律岂非同样真实？回应是：**稳定程度的差异就是现实强度的差异**。可压缩为四级：
+若被选择者皆真实，梦、幻觉、制度与物理律岂非同样真实？回应：**稳定程度的差异就是现实强度的差异**——但须把现实强度刻画为**四个维度**，而非单一线性等级：
 
-- **E1 局部显现**：单 operator 单 `theta`，如梦与幻觉。
-- **E2 稳定现实**：经重复、记忆、修正而持存的习惯。
-- **E3 跨 operator 现实**：可在多 operator、仪器与干预间对齐的公共事实与制度。
-- **E4 典范物理现实**：多尺度抵抗、可重复、科学稳定的物理律。
+- **(R1) 显现稳定（manifestational stability）**：显现是否反复出现。
+- **(R2) 跨 operator 对齐（operator alignment）**：是否可在多 operator、仪器、语境间对齐。
+- **(R3) 干预抵抗（intervention-resistance）**：是否在干预下保持。
+- **(R4) 继承硬化（inheritance/hardening）**：是否沉积为后续约束（路径依赖、滞后）。
 
-这里必须处理一个本可致命的反对：E1–E4 的判据（对齐、抵抗）似乎在量度"我们多确信某物为真"，而非"某物多真实"，从而把本体论强度偷换成认识论确信度。回应分两步。其一，在 SRT 中并不存在一个与稳定脱钩的"裸真实"——确定性本就是稳定的成果，故稳定程度即确定性强度，二者不分裂。其二，E4 的判据是**倾向性的（dispositional）**：它指向一个结构在**可能的**干预、重复、测量与跨 operator 校正下表现出的抵抗与稳定倾向，而非当前共同体已达成的确信量；科学发现并不创造这种阻力，而是把它带入我们的 E3/E4 描述体系。
+E1–E4 是这些维度的**典型组合**，而非严格阶梯：E1 局部显现（仅 R1 低度，如梦/幻觉）；E2 稳定现实（R1 + 部分 R4，如习惯）；E3 跨 operator 现实（R1+R2+R4，如制度/公共事实）；E4 典范物理现实（四维皆高，且 R3 在可能干预下稳健，如物理律）。
 
-此处须回答"倾向需要范畴基底，岂非偷运一个确定的操作者无关结构"这一反对：**E4 倾向的基底不是已确定的范畴结构，而是 `L_0` 的 sub-determinate 非中立性**——阻力根植于可选择性场的不对称，这些不对称只有在被切割后才成为确定。故**阻力本身真实而非建构**（这正是反唯心论锚），而**把阻力切成"某个确定的 E4 结构"仍是选择—稳定的成就**。E4 由此既不滑回 object-first 的"裸对象早已满格地等待被发现"，也不滑向相对主义的"谁承认谁真"。一言以蔽之：**E4 = dispositional robustness under possible intervention, not current consensus.**
+须强调：**现实强度不是 being 的程度，而是 determinate anchoring 的强度**——避免触发"存在有程度"的争议。其中 R3 取**倾向性判据**：指结构在**可能的**干预、重复、测量与跨 operator 校正下的抵抗倾向，而非当前共识量；阻力本身真实而非建构（反唯心论锚），而把阻力切成某个确定结构仍是选择—稳定的成就；其倾向基底不是确定范畴结构，而是 `L_0` 的非中立性（这与 §3.2 一致）。E4 = dispositional robustness under possible intervention, not current consensus。
 
-于是真理在 SRT 中被重构为**在阻力与跨 operator 校正下的稳定对齐**（stable alignment under resistance），而非任意投射。不同 operator 可有不同切分，但并非所有切分同等有效；一个分类要获得更强客观性，须提升其预测、干预、迁移、重复与跨 operator 稳定。这给出多元而不取消标准。
+**四个边界案例**：(a) **无人观测的事实**——可有高 R3（可能干预下稳健），即便当前 R2 为零；"可能干预"不由当前 operator 的实际能力定义。(b) **稳定意识形态/神话**——可有高 R1/R2/R4（社会现实强度），但其"关于物理世界的真值声称"不因此为真：须区分社会现实强度与物理真值（§4.4、§6.2）。(c) **科学革命**——旧理论曾有高 R1/R2/R4 的**描述地位**（E3/E4 描述），但其试图切中的阻力结构（R3）可能并未真正达到；区分"理论稳定性"与"被切中的阻力稳定性"。(d) **数学/逻辑对象**——R2/R4 高而 R3（物理干预抵抗）不直接适用；E1–E4 的物理读法不直接套用于数学，其现实强度须另作刻画，列为范围限制。
+
+于是，**就确定对象性而言**，客观性表现为在阻力与跨 operator 校正下的稳定对齐——本文不在此重定义真理一般，只主张确定对象性的客观性如此表现。不同 operator 可有不同切分，但并非同等有效；一个分类要获得更强客观性，须提升其 R1–R4。
+
+### §4.4　锚定代价为何不只是 pragmatic cost
+
+紧缩论者会承认锚定代价是事实，却把它归为心理/社会/实践/语义事实，与框架内真值并存而无须 selection realism。SRT 的反驳须证明：一个 cut 的稳定、继承与阻力，不只是"我们采用某语言框架时的外部代价"，而是"该 cut 能否成为确定现实项的**构成条件**"。
+
+论证：若把锚定代价完全外部化为 pragmatic cost，则无法解释三件事——其一，为何某些 cut 在干预下崩解（破杯不能再饮），而这与我们如何称呼它无关；其二，为何代价分配呈现**路径依赖**（修补史改变后续同一性判断），而非随框架自由重置；其三，为何 R3 抵抗**独立于任何单个框架的选择**。这些不是"选用框架的不便"，而是"该 cut 作为确定项能否持续承重"的条件——即对象式确定性的构成条件，而非其外在伴随。故锚定代价进入本体论账目，而非仅 pragmatics。这正是 SRT 对 Carnap/Hirsch 的真正分歧所在。
 
 ---
 
 ## §5　定位：与最近邻的切割
 
-本节不做传统综述，只切最近邻，回应"SRT 只是换名复述"。须重申 §2.3 抬高的负担：差异化不能再靠"对手保留 (O2)"，只能靠 SRT 为切割提供的约束、稳定与继承账目。因此以下每一处对比都把这套机制放到前台。
+本节不做综述，只切最近邻，回应"SRT 只是换名复述"。差异化压在 SRT 为切割提供的约束、稳定与继承账目上。
 
 ### §5.1　Barad 的 agential realism
 
-四家中 Barad 对本文威胁最大。她主张确定性由 **agential cut** 在 intra-action 中产生、现象（phenomena）是基本本体单位——这在表面上几乎是选择实在论的同义改写，熟悉 new materialism 与量子本体论的读者会立即提出归并。本文**接受**其核心方向：确定性经切割而成立，边界并非预先给定，这与 §3 完全同向。本文**重写**之处在于把 agential cut 重述为支付 `Psi_f` 的受约束选择。
+Barad（*Meeting the Universe Halfway*）主张确定性由 **agential cut** 在 intra-action 中产生、现象（phenomena）是基本本体单位——表面上几乎是选择实在论的同义改写。本文**接受**其核心方向：确定性经切割而成立，边界并非预先给定。本文**重写**：把 agential cut 重述为支付 `Psi_f` 的受约束选择。
 
-SRT 相对 Barad 有三个不可删的增量，必须明列：
+为避免不公并保持锋利，本文只保留**一条最强差异**：*Barad gives an ontology of cut-dependent phenomena; SRT adds a general account of how cuts acquire comparative resistance, cross-operator rankability, and inheritable reality-thickness.* Barad 的 cut 由具体物质装置（apparatus）施行，本已受约束；SRT 所加的不是"约束"本身，而是一个**跨装置、可排序的一般阻力度量 `Psi_f`** 及其沉积为可继承现实厚度（`L_2` 硬化）与多维现实强度的机制。方法路径亦不同：Barad 从量子物理诠释、测量实践与 onto-epistemology 出发；SRT 在不绑定任何特定物理诠释的前提下，把"确定性依赖切割"重构为一般性的构成性解释。
 
-(a) **一般阻力度量（cost / resistance）**。Barad 的 cut 由具体物质装置（apparatus）施行，本已受约束；SRT 所加的不是"约束"本身，而是一个**跨装置、可排序的一般阻力度量 `Psi_f`**，使不同 cut 能按稳定性被排序，并支撑一种独立于所选装置的纠错标准。没有这一度量，"哪一种切割更稳"就无法被一般地回答。
-
-(b) **`L_2` 硬化与继承（hardening / inheritance）**。SRT 给出 cut 如何沉积为**可继承的约束**：经由不可逆、路径依赖与滞后（hysteresis），锚定退入背景成为后续选择的默认地形。这把"切割产生确定性"延伸为"切割如何被历史地承载下去"——这是四家比较中最无争议、也最能与 Barad 拉开的增量。
-
-(c) **现实强度层级（reality-strength levels）**。E1–E4 让不同 cut 的稳定强度可被分级；Barad 有现象相对于装置的客观性，但没有一个分级的厚度阶梯。
-
-压缩为一句：*Barad shows that determinacy is cut-dependent; SRT asks what constrains, ranks, stabilizes, and—above all—lets those cuts be inherited as reality-thickness.* 最后，本文与 Barad 的方法路径不同：Barad 的论证主要从量子物理诠释、测量实践与 onto-epistemology 出发；SRT 则在不绑定任何特定物理诠释的前提下，把"确定性依赖切割"重构为一般性的 grounding / constitutive explanation 论证。
+> 投稿前须落到 Barad 具体文本（intra-action、agential separability、phenomena 的客观性与边界生成），见 TODO。
 
 ### §5.2　Ontic Structural Realism（Ladyman & Ross）
 
-本文**接受** OSR 对对象基础性的削弱：实在的基本层不是承载内在本性的对象，而是结构。本文**重写**之处在于：结构本身是稳定下来的选择成果（`L_2`），而非无须奠基的地板。OSR 仍保留 (O2)——它把结构事实当作预先确定的；而 §3 的前提 (2′) 恰恰表明，即便把基础换成关系或结构，确定性问题也未消失，只是从对象的确定性转移为结构的确定性。SRT 由此**增加**了一个 OSR 未提出的问题：结构如何变得确定、如何被个体化。结论上的分歧很清晰：OSR 让结构在新层级承担地板功能，SRT 则连结构的确定性也奠基于受约束的可选择性。
+本文**接受** OSR 对对象基础性的削弱（结构优先）。**重写**：结构本身是稳定下来的选择成果（`L_2`），而非无须奠基的地板。OSR 仍保留 (O2)——把结构事实当作预先确定的；而 §3.1 的 (2′) 表明，即便把基础换成关系或结构，确定性问题也未消失。**增加**：结构如何变得确定、如何被个体化。分歧清晰：OSR 让结构在新层级承担地板功能，SRT 则连结构的确定性也奠基于受约束的可选择性。
 
 ### §5.3　过程哲学（Whitehead / Seibt）
 
-本文**接受**过程哲学的基本判断：生成先于实体，实在是 becoming 而非静态的 being。本文**重写**之处是把 concrescence 式的生成重述为带阈值与代价的受约束选择。本文**增加**的是 operator 形式、`Psi_f` 阻力、撤回条件与可操作的代理逻辑——它把过程形而上学从容易流于模糊的 becoming，约束为可问责的结构。与 §2.3 的分组一致：部分过程哲学也否认 given determinacy，故 SRT 与其分歧不在 (O2)，而在其常缺的阻力—代价纪律与奠基论证形式。
+**接受**：生成先于实体。**重写**：把 concrescence 式生成重述为带阈值与代价的受约束选择。**增加**：operator、`Psi_f`、撤回条件与可操作代理逻辑，把过程形而上学约束为可问责结构。与 §2.3 一致：部分过程哲学也否认 given determinacy，故分歧不在 (O2)，而在其常缺的阻力—代价纪律与解释形式。
 
 ### §5.4　康德
 
-本文**接受**康德的核心洞见：经验有条件，而非对一个心灵无关的对象清单的被动复制。本文**重写**之处在于，把固定的先验范畴替换为动态的 `theta` 约束，而这些约束本身是可修正、具身、历史地沉积的选择历史，而非先天固定的形式。本文**增加**的是 `Psi_f` 阻力，使依赖成为构成性的而非仅认识论的；并且 operator 自身也被奠基（§3 之 R2），不像康德的条件那样落在一个固定的主体侧。
+**接受**：经验有条件。**重写**：把固定先验范畴替换为动态 `theta` 约束，且 `theta` 本身是可修正、具身、历史地沉积的选择历史。**增加**：`Psi_f` 阻力使依赖成为构成性的；operator 自身也被奠基（R2）。最关键切割：`L_0` 与 noumenon 的区别——康德的物自体是被否定性刻画的现象背后之物或域（仍是某种对象/领域），而 `L_0` 不是对象，是 cut-space 的非中立性。SRT 没有不可知的 X 躲在现象之后，只有需支付代价的可选择性条件（护栏 O-Phil-11）。
 
-最关键的切割在于 `L_0` 与 noumenon 的区别。康德的物自体是被否定性刻画的、现象背后之物或域，仍是某种对象或领域；而 `L_0` 不是对象，而是可选择性的条件场。SRT 没有一个不可知的 X 躲在现象之后，只有需要支付代价的可选择性条件。这一区别使本文免于继承隐藏世界形而上学的负担（护栏 O-Phil-11）。
-
-> **脚注 H**：海德格尔对上手状态（Zuhandenheit）的分析已挑战"孤立、现成对象优先"的图景；但本文不分析此在的世界性或用具结构，而是追问确定性本身如何由受约束可选择性与稳定化奠基。
+> **脚注 H**：海德格尔的上手状态（Zuhandenheit）已挑战"孤立、现成对象优先"；但本文不分析此在的世界性或用具结构，而是追问确定性本身如何由受约束可选择性与稳定化奠基。
 >
-> **脚注 E**：Enactivism 与 Gibson 的 affordance 理论是重要近邻，同样拒绝被动的对象接收；但本文把问题从知觉—行动一般化到本体、社会与科学领域中的选择、锚定、稳定与现实强度。
+> **脚注 E**：Enactivism 与 Gibson 的 affordance 理论是重要近邻，同样拒绝被动的对象接收；但本文把问题从知觉—行动一般化到本体、社会与科学领域中的选择、锚定、稳定与现实强度。（若杯子案例留在正文，此两者须从脚注升入正文交手，见 TODO。）
 
 ---
 
-## §6　自限的纪律 · 结论 · 后续研究
+## §6　自限的纪律 · 经验风险 · 结论
 
 ### §6.1　撤回条件作为方法论美德（self-limiting metaphysics）
 
-SRT 区别于多数思辨形而上学的，不是更大胆，而是**为每个大胆句附上其层级、代价、阈值、失败模式与撤回条件**。这不是免责声明，而是论证纪律：一个无法说出"什么会让它收窄"的形而上学主张，不值得被当作主张对待。
+SRT 为每个大胆句附上层级、代价、阈值、失败模式与撤回条件。这是论证纪律：一个无法说出"什么会让它收窄"的形而上学主张，不值得被当作主张对待。**主撤回条件**：若某种物理主义或自然性账目能**无余地**解释 manifestation、anchoring、first-person access、update-cost、给定感与差异性稳定，则 SRT 应从 meta-ontology 收窄为 interface / compression 框架。两点限定：其一，**This would be a narrowing of scope rather than a total refutation**（这构成适用范围的收窄，而非整体失败）；其二，"无余地"是理想极限，实践上以**可检验的中间里程碑**逼近（自然性账目能否在不引入 operator 相对性下复原个体化的尺度相对性？能否预测 `L_2` 硬化的滞后签名？），而非一次性二元判决。
 
-本文的**主撤回条件**：若某种物理主义或自然性账目能**无余地**解释 manifestation、anchoring、first-person access、update-cost、给定感与差异性稳定，则 SRT 应从 meta-ontology **收窄为 interface / compression 框架**——即一种关于"确定性如何被压缩、被锚定、被传递"的建模理论，而非关于地板的本体论。须补两点：其一，**This would be a narrowing of scope rather than a total refutation**（这构成适用范围的收窄，而不必然是整体失败）；其二，"无余地"是理想极限，实践上以**可检验的中间里程碑**逼近（例如：自然性账目能否在不引入 operator 相对性的前提下复原个体化的尺度相对性？能否预测 `L_2` 硬化的滞后签名？），而非一次性二元判决。§3 的奠基论证本身也带一条软退路（脚注：可退至 constitutive explanation）。本文不因这些退路而变弱；它因这些退路而可被检验。
+### §6.2　非空洞性与两个 worked example
 
-### §6.2　非空洞性：本框架如何承担经验风险
+SRT 通过 proxy 操作化、结构性收敛与差分预测承担风险；三者皆缺则某主张被归为形而上学纲领或桥接假设，而非经验理论。
 
-SRT 不需要给 `L_0` 拍照，而通过 proxy 操作化、结构性收敛与差分预测承担风险；若三者皆缺，则某主张被归为形而上学纲领或桥接假设，而非经验理论。给一个不涉及 AI/伦理/政治的 worked example。
+**案例一：杯子（操作化为四条预测）**。同一区域可被切为杯（功能）、陶瓷分子集合（微结构）、碎片堆（破损后）、餐具组合（社会—实践）。
+- **预测一**：破损后，语言标签"杯子"的保留会慢于实践可供性的崩解（标签滞后于可供性）。
+- **预测二**：修补后的杯与微观结构近似的新制复制品，会在 `L_2` 历史上产生不同的同一性判断。
+- **预测三**：不同 operator 群体在"是否仍是同一个杯"上出现可测分歧，分歧模式依使用史、修复史、情感锚定与制度背景而变。
+- **预测四**：当实践可供性、语言标签、物理连续性、社会承认相互脱钩时，SRT 预测**锚定代价的重新分配**，而自然性实在论与紧缩论只能分别将其还原或语义化。
 
-同一区域可被切为 (1) **杯**（人工—功能）、(2) **陶瓷分子集合**（物理—微结构）、(3) **碎片堆**（破损后）、(4) **餐具组合的一部分**（社会—实践）。三立场预期不同：
+**案例二：疾病分类（更强的差分案例）**。同一组体征/病理可被切为不同诊断类别。Sider/Lewis 倾向寻找一个自然种类的真关节，把分类争议归为派生或语义；Hirsch/Carnap 倾向把分类视为框架内约定。SRT 预测：诊断类别在 R1–R4 上有可追踪差异——某些切分有强 R3（在治疗/干预下稳健，如有明确病原与药物反应），某些 R3 弱而 R1/R2/R4 强（社会—制度稳定但干预不稳，如部分症候群式诊断）。**关键差分**：当一个诊断类别被修订（某综合征被拆分或合并），SRT 预测不是纯词汇更替，而是**有模式的锚定代价重分配**（诊断实践迟疑、既往病例重判、治疗路径改变、患者身份与制度资格变动），且重分配模式依 R1–R4 的具体组合而异。自然性实在论须说明为何同一"真关节"下分类仍随干预史与制度史漂移；紧缩论须说明为何重分配不是自由的框架选择。疾病分类比杯子更有说服力，因为它同时涉及自然阻力（R3）、分类实践、跨 operator 稳定、历史继承与干预效果。
 
-- **Sider/Lewis**：自然性实在论**可以**把杯**派生地（derivatively）**奠基于微物理结构。SRT 的主张不是它不能，而是：*Naturalness realism can ground the cup derivatively in microphysical structure, but SRT claims that derivative grounding does not by itself capture the operator-relative stability profile of the cup: its usability, repair history, social recognition, and action-guiding persistence.*（派生奠基本身并不捕获杯的 operator 相对稳定剖面——可用性、修复史、社会承认、引导行动的持存。）没有单一关节穷尽该剖面。
-- **Hirsch/Carnap**：四者框架内皆可陈述，无事实为其排序。SRT 的主张同样不是它们说不出"破杯不再可用"：*The point is not that Carnapian frameworks cannot say that a broken cup is no longer a usable cup. They can. The SRT claim is that the transition from cup to shards is not merely a change in vocabulary or internal rule application. It produces a patterned redistribution of anchoring costs: agents hesitate, repair practices appear, identity judgments diverge, practical affordances collapse faster than linguistic labels, and the repaired cup carries a different `L_2` history from a newly manufactured duplicate.*（从杯到碎片的转变不只是词汇更替或框架内规则应用，而是产生一种**有模式的锚定代价重分配**：行动者迟疑、修复实践出现、同一性判断分歧、实践可供性比语言标签更快崩解，且修补过的杯承载着与新制复制品不同的 `L_2` 历史。）
-
-由此 SRT 的差分预测落在**可追踪的** proxy：重复识别可靠性、跨主体一致、干预抵抗、破损后的修复/恢复行为、路径依赖（修补史 vs 重制）、实践滞后——方向是 **operator-constrained anchoring 与 path-dependent `L_2` hardening**，而不引入 `d-value` 或 concern。
+差分预测的方向落在 **operator-constrained anchoring 与 path-dependent `L_2` hardening**，不引入 `d-value` 或 concern。
 
 ### §6.3　结论：对象之前的问题
 
-本文未证明 SRT 整体成立，也未声称它解释一切。它只主张一件可被独立评估的事：
-
-> 在"对象是什么"之前，有一个被默认跳过的、更早的问题——确定性如何被奠基。对象优先本体论把一个被奠基的成果错置为基础。一旦把靶心从"什么是基础"移到"确定性如何被奠基"，selection-first 框架就成为 object-first 的一个严肃、自限、可检验的替代入口。
+本文未证明 SRT 整体成立，也未声称它解释一切。它主张两件可被独立评估的事：**(防御版)** 对象式确定性不应被对象优先本体论无解释地预设；SRT 提供了一个更统一的构成性解释。**(延伸版，受阶段 B 溯因支撑、可废止)** 若该解释成立，它支持更强的 selection-first 形而上学——对象式确定性乃至确定性一般，不是本体论地板。
 
 收束句：
 
@@ -290,24 +340,31 @@ SRT 不需要给 `L_0` 拍照，而通过 proxy 操作化、结构性收敛与�
 
 ### §6.4　后续研究（仅方向，不在本文论证）
 
-本框架一旦确立，可向以下方向延伸，每一项都需各自的层级、代价与失败条件，本文均不展开：价值作为关切宽度（`d-value`，仅书稿 Q15 意义）；主体与意识作为**阈值化选择**而非地板；社会事实作为 collective `L_2`；AI 作为共同地形的改写者。这些是 selection-first 地板**打开**的问题，不是它在此处**已回答**的问题。
+价值作为关切宽度（`d-value`，仅书稿 Q15 意义）；主体与意识作为阈值化选择而非地板；社会事实作为 collective `L_2`；AI 作为共同地形的改写者。这些是 selection-first 地板**打开**的问题，不是它在此处**已回答**的问题。
 
 ---
 
 ## TODO before submission
 
-> 以下为投稿前必须完成的硬化与编辑任务（P2 及编辑层），不影响当前 working draft 的论证主脊。
+> 投稿前必须完成的硬化与编辑任务，不影响当前 working draft 的论证主脊。
 
-- **文献实质交手（P2，最高优先）**：
-  - **Fine / Schaffer**：把 §3 的 grounding 语法接到实际的 grounding 文献（grounding 作为 metaphysical explanation、partial/full ground、grounding 与 fundamentality 的关系），明确本文用的是哪一种 grounding 概念。
-  - **Sider**（*Writing the Book of the World*）/ **Lewis**（perfectly natural properties）：把 §2.4、§6.2 的"自然性反吸收"扩成对其实际论证的回应，而非概述。
-  - **Hirsch / Carnap**：把 §2.5 的紧缩论回应接到 quantifier variance 与内/外问题的具体文本。
-  - **Barad**（*Meeting the Universe Halfway*）：把 §5.1 的 agential cut 对比落到具体段落与术语（intra-action、phenomena、agential separability）。
-  - **van Inwagen / Unger / Putnam / Ladyman & Ross**：§2.2 的三条压力线补精确引用。
-- **参考文献（References）**：建立完整 bibliography；统一引用格式（建议 author–date）。
-- **投稿长度压缩**：当前为完整骨架，按目标期刊压到约 8000–12000 词；候选删减区为 §5.3/§5.4 的展开与部分重复护栏。
-- **英文版整理**：产出与中文版对应的完整英文稿（目前仅摘要、关键词与若干承重句为英文）；统一术语对照表（selection realism / manifestational priority / reality-strength / sub-determinate 等）。
-- **符号与记号**：决定正文是否保留 `L_0/L_1/L_2`、`G_hat_theta`、`Psi_f` 记号，抑或全部散文化 + 附一张记号表脚注。
-- **§6.2 经验 proxy**：把 worked example 的 proxy（重复识别可靠性、干预抵抗、修复/恢复、路径依赖、滞后）细化为至少一个可设计的操作化测度与通过/失败判据。
-- **标题与术语终审**：确认中英文标题、"selection realism / layered realism" 标签在正文与摘要中的一致使用。
-- **护栏回链核对**：确认与 `SRT_Philosophy_Foundations_CompactCore.md`、`SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md`、`SRT_Philosophy_Tradition_Comparison_PH_SS.md` 的术语一致，无 canonical 漂移。
+**文献实质交手（最高优先）**
+- **Grounding / fundamentality**：Fine、Schaffer、Rosen、Audi、Correia——安置 §3.5 的构成性依赖主读法与 grounding 强化读法，明确是否接受非对称/非循环/传递等形式特征。
+- **Sider / Lewis**：把 §2.4、§6.2 的较弱批评落到 *Writing the Book of the World* 与 natural-properties 文本。
+- **Hirsch / Carnap**：把 §2.5、§4.4 接到 quantifier variance 与内/外问题具体文本。
+- **Barad**：§5.1 落到 intra-action、agential separability、phenomena 客观性的具体段落。
+- **Metaphysical indeterminacy / vagueness**：说明本文 determinacy 问题与 ontic vagueness、semantic vagueness、epistemicism 的关系。
+- **Objecthood / composition**：van Inwagen、Unger 之外补 ordinary objects、mereology、composition as identity。
+- **Natural kinds / classification**（疾病分类案例所需）：HPC、Khalidi、Haslanger、social kinds。
+- **Affordance / enactivism / pragmatism**：若杯子案例留正文，Gibson/enactivism 须从脚注升入正文交手。
+
+**结构与编辑**
+- **投稿版另出**：去 frontmatter 与内部标记（"护栏 O-Phil-11"、本 TODO 等），按 GPT 建议压成五节（问题与靶心 / 确定性为何需解释 / SRT 正面模型 / 三角对抗 / 现实强度与经验风险）。
+- **语言策略**：本草稿暂维持中英双语；投稿版按目标期刊决定全英文化或中文主体 + 术语表；统一术语对照（selection realism / manifestational priority / reality-strength / sub-determinate 等）。
+- **符号**：决定正文是否保留 `L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`theta`，抑或散文化 + 术语表脚注。
+- **参考文献**：建立完整 bibliography，统一 author–date 引用格式。
+- **长度**：压到目标期刊约 8000–12000 词。
+
+**论证细化**
+- §6.2 至少一个 proxy 细化为可设计的操作化测度与通过/失败判据（建议优先疾病分类的 R3/R4 分离测度）。
+- 复核与 `SRT_Philosophy_Foundations_CompactCore.md`、`SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md`、`SRT_Philosophy_Tradition_Comparison_PH_SS.md` 的术语一致，无 canonical 漂移。
