@@ -482,7 +482,7 @@ SRT 通过 proxy 操作化、结构性收敛与差分预测承担风险；三者
 - **Affordance / enactivism / pragmatism**：若杯子案例留正文，Gibson/enactivism 须从脚注升入正文交手。
 
 **结构与编辑**
-- **投稿版另出**：去 frontmatter 与内部标记（"护栏 O-Phil-11"、本 TODO 等），按 GPT 建议压成五节（问题与靶心 / 确定性为何需解释 / SRT 正面模型 / 三角对抗 / 现实强度与经验风险）。
+- **投稿版**：v0.7 已产出独立盲审稿 `Before_Objects_Selection_Realism_Submission_EN.md`（全英文、五节、保留符号+定义框、去 frontmatter/TODO/changelog、完整 References，约 6.6k 词）。本双语 working draft 继续作为 canonical 源与迭代记录；投稿稿后续随评审同步更新（可扩写至 8–12k、补 Barad 页位终校）。
 - **语言策略**：本草稿暂维持中英双语；投稿版按目标期刊决定全英文化或中文主体 + 术语表；统一术语对照（selection realism / manifestational priority / reality-strength / sub-determinate 等）。
 - **符号**：决定正文是否保留 `L_0/L_1/L_2`、`G_hat_theta`、`Psi_f`、`theta`，抑或散文化 + 术语表脚注。
 - **参考文献**：建立完整 bibliography，统一 author–date 引用格式。
