@@ -9,7 +9,7 @@ updated: 2026-06-11
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: simondon_expression_maintext_polish_2026-06-11
+last_pass: prigogine_stengers_expression_maintext_polish_2026-06-11
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -90,12 +90,12 @@ last_pass: simondon_expression_maintext_polish_2026-06-11
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v16`（v16 Simondon 正文表达：对象身份同时分出边界、环境、接口与背面） |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v15`（v15 Simondon 正文表达：前对象场不是未成形对象仓库） |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v12`（v12 回头轮：frontmatter 标准化 + Q28 引文核验） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v17`（v17 Simondon 正文表达：菜单不是选择之前印好的） |
-| Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v11`（v11 回头轮：接住 Q05 命名，"排除"为概念名） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v18`（v18 Prigogine/Stengers 正文表达：分叉不是从既有菜单挑选） |
+| Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v12`（v12 Prigogine/Stengers 正文表达：被排开者以涨落/放大通道改变后续坡度） |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v13`（v13 回头轮：三联同步 + Q01 三测试兑现） |
-| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v10`（v10 回头轮：承诺价值补入 + Q22 引用兑付） |
+| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v11`（v11 Prigogine/Stengers 正文表达：时间是写入后的不可清零结构差异） |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v15`（v15 Simondon 正文表达：厚度是跨场景继承、校准、抵抗与调用） |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v14`（v14 Simondon 正文表达：好秩序保留可再选择张力） |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v15`（v15 Prigogine/Stengers 正文表达：秩序靠流、代价与维护站住） |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v13`（v13 章末注7：预裁剪与装置（apparatus）） |
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v15`（v15 Simondon 正文表达：信号进入承重位置才成为自身信息） |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v15`（v15 章末注2：物质与意义不可分离（与巴拉德的距离）） |
@@ -107,13 +107,13 @@ last_pass: simondon_expression_maintext_polish_2026-06-11
 | Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v11`（v11b 评审轮：镜像错绑/代理轴补入） |
 | Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v13`（v13 章末注8：遮蔽的物质—话语维度） |
 | Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v11`（v11 Simondon 正文表达：个体痛苦的结构错配与共同地形） |
-| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v17`（v17 Simondon 正文表达：方向不预设目的或先验主体） |
-| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v15`（v15 Simondon 正文表达：共同体是多个未完成位置的可回应结构） |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v16`（v16 Simondon 正文表达：模型处理信号不等于具身信息） |
+| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v18`（v18 Prigogine/Stengers 正文表达：好方向不是死平衡，而是保留可再选择张力） |
+| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v16`（v16 Prigogine/Stengers 正文表达：开放共同地形不能按封闭机器治理） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v17`（v17 Prigogine/Stengers 正文表达：推荐系统作为非平衡放大器） |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v11`（v11b 评审轮：§7 冰川/绒泡菌区分） |
 | Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v9`（v9 章末注7：最近邻对照作为失败条件 + 反校准） |
-| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v7`（v7 章末注7：理论也是装置） |
-| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v9`（v9 Simondon 正文表达：坏秩序追求死稳定，好秩序保留再选择张力） |
+| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v9`（v9 Prigogine/Stengers 正文表达：理论不是旁观者，而会进入后续选择地形） |
+| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v10`（v10 Prigogine/Stengers 正文表达：回到生成不是拒绝秩序，而是拒绝遗忘时间、流量与代价） |
 
 ---
 
