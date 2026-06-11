@@ -85,7 +85,7 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 | 编号 | 文件 | 当前状态 |
 |---|---|---|
 | 致读者 | `Drafts_26Q/致读者.md` | `draft_v1`（普通读者入口，四幕地图 + 阅读建议） |
-| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v20`（v20 章末注5：与巴拉德的距离（Barad 写入图落地）） |
+| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v20`（v20 章末注5：与巴拉德的距离 + §八跨领域显影纪律正文段） |
 | Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v12`（v12 行级打磨：§3/§4 冗余压缩） |
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v12`（v12 章末注7：属性归属与测量装置（玻尔—巴拉德线）） |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v12`（v12 行级打磨：§1/§4/§5 冗余压缩） |
