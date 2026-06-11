@@ -5,11 +5,11 @@ status: active_current
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-06-07
+updated: 2026-06-11
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
+last_pass: traces_other_expression_maintext_polish_2026-06-11
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -86,34 +86,34 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 |---|---|---|
 | 致读者 | `Drafts_26Q/致读者.md` | `draft_v3`（普通读者入口，四幕地图 + 阅读建议） |
 | Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v20`（v20 章末注5：与巴拉德的距离 + §八跨领域显影纪律正文段） |
-| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v13`（v13b 评审轮：河流推进自然化） |
-| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v12`（v12 章末注7：属性归属与测量装置（玻尔—巴拉德线）） |
-| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v13`（v13 回头轮：frontmatter 标准化 + Q25 预告核验） |
+| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v15`（v15 Traces of the Other 正文表达：把真假争论改写为世界如何以特定格式抵达） |
+| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v17`（v17 Traces of the Other 正文表达：对象化如接口渲染，把差异压成可操作格式） |
+| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v16`（v16 Embodied Development 正文表达：新组织从已有条件的新耦合中长出） |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v12`（v12 回头轮：frontmatter 标准化 + Q28 引文核验） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v13`（v13 接口标签） |
-| Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v11`（v11 回头轮：接住 Q05 命名，"排除"为概念名） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v20`（v20 Embodied Development 正文表达：动作是身体、环境、历史和回应的临时协同站稳） |
+| Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v13`（v13 Traces of the Other 正文表达：被排除者以痕迹改变当前路径，而非完整返回） |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v13`（v13 回头轮：三联同步 + Q01 三测试兑现） |
-| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v10`（v10 回头轮：承诺价值补入 + Q22 引用兑付） |
-| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v11`（v11 章末注8：厚度与玻尔的客观性（兼与巴拉德分界）） |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v13`（v13 章末注7：与实践生成性（performativity）的关系） |
-| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v13`（v13 章末注7：预裁剪与装置（apparatus）） |
-| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v13`（v13 反馈区分加硬） |
-| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v15`（v15 章末注2：物质与意义不可分离（与巴拉德的距离）） |
+| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v12`（v12 Embodied Development 正文表达：波动有时是新稳定出现前的松动） |
+| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v17`（v17 Embodied Development 正文表达：稳定是反复成功并被默认的装配史） |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v15`（v15 Prigogine/Stengers 正文表达：秩序靠流、代价与维护站住） |
+| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v16`（v16 Traces of the Other 正文表达：可见性是接口结果，不是世界边界） |
+| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v16`（v16 Maturana/Varela 正文表达：外部不是输入意义，而是扰动并按结构承受、整合或改写） |
+| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v17`（v17 Embodied Development 正文表达：在乎会改写走路、回避、等待和日常安排） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v12`（v12b 回头轮：接口标签 + Q28 测试回指核验） |
 | Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v13`（v13 三把尺书语言 + 质量=承重非低摩擦 + AI边界案例 + 自私→自我维持型狭窄关切 + 梯度在乎回收 + 工具箱/章末注对齐 + Q14桥接 + canonical书稿层注） |
-| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v17`（v17 章末注5：与巴拉德的主体去中心化的关系 + 责任护栏） |
-| Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v18`（v18 章末注F：反表征主义近邻） |
-| Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v10`（v10c2 评审轮：给定感地形清扫） |
-| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v11`（v11b 评审轮：镜像错绑/代理轴补入） |
-| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v13`（v13 章末注8：遮蔽的物质—话语维度） |
-| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v9`（v9b 评审轮：五条缝隙软化为非穷尽） |
-| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v14`（v14 章末注8：与巴拉德的伦理—本体—认识论合一的关系） |
-| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v13`（v13 章末注9：共同地形与多重装置） |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v12`（v12 章末注9：AI 作为装置（与 apparatus 的距离）） |
+| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v20`（v20 Embodied Development 正文表达：共同调节沉积成自我调节） |
+| Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v21`（v21 Traces of the Other 正文表达：稳定连贯经验不是本体论担保，需要外部约束和校准） |
+| Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v11`（v11 Embodied Development 正文表达：限制也可以成为可承受的学习脚手架） |
+| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v12`（v12 Embodied Development 正文表达：好脚手架留下能力，坏脚手架留下依赖） |
+| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v14`（v14 Traces of the Other 正文表达：遮蔽不是藏起事实，而是把事实改译成当前秩序可吸收格式） |
+| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v11`（v11 Simondon 正文表达：个体痛苦的结构错配与共同地形） |
+| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v18`（v18 Prigogine/Stengers 正文表达：好方向不是死平衡，而是保留可再选择张力） |
+| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v16`（v16 Prigogine/Stengers 正文表达：开放共同地形不能按封闭机器治理） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v19`（v19 Embodied Development 正文表达：AI 会重装配任务在使用者身上的能力结构） |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v11`（v11b 评审轮：§7 冰川/绒泡菌区分） |
-| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v9`（v9 章末注7：最近邻对照作为失败条件 + 反校准） |
-| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v7`（v7 章末注7：理论也是装置） |
-| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v7`（v7 章末注9：与能动实在论的最后分界） |
+| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v10`（v10 Traces of the Other 正文表达：高风险材料先问可检验差异与退场条件） |
+| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v11`（v11 Traces of the Other 正文表达：异常材料须保留竞争解释、失败结果与非 SRT 复核） |
+| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v10`（v10 Prigogine/Stengers 正文表达：回到生成不是拒绝秩序，而是拒绝遗忘时间、流量与代价） |
 
 ---
 
