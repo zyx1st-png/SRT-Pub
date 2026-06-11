@@ -1,7 +1,7 @@
 ---
 id: Q24
 type: book_chapter_draft
-status: draft_v15
+status: draft_v16
 question: Q24
 act: 第四幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
@@ -66,6 +66,7 @@ optimization_axis:
   - v13_simondon_signal_form_information_endnote10
   - v14_activeinference_agent_embodied_position_condition_endnote11
   - v15_barad_maintext_apparatus_menu_line
+  - v16_simondon_maintext_signal_not_embodied_information
 canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
@@ -173,6 +174,8 @@ AI 训练数据由谁标注？标注劳动者能不能影响模型的设计？�
 特殊之处不是 AI 第一次改变地形，而是三个特征的叠加。第一，**它以极低摩擦进入判断、排序、生成、反馈这些关键环节**——文字帮你记录，但不替你判断；搜索引擎已经开始替你排序信息；AI 更进一步，把排序、生成、总结、建议和反馈都低摩擦地卷进判断链条。第二，**它规模化地改变共同地形**——一个推荐算法同时改写几十亿人的信息菜单，这是文字和印刷术从未达到的规模和速度。第三，**它让改变变得难以感知**——你知道自己在用搜索引擎，你未必知道推荐算法已经替你决定了你看见什么；替代发生在你不知道的地方。
 
 AI 不是因为有意识才重要，而是因为它能在没有意识的情况下改写选择条件——改写什么东西变得可见，什么变得容易，什么变成默认路径，后果由谁承担。
+
+模型处理信号，不等于它拥有具身攸关。只有后果能回到一个可承重、可整合、可自我改写的位置，信号才可能成为它自己的信息；在此之前，AI 处理的是信号，地形承受者却往往是人和制度。
 
 换句话说，AI 不只是替人做选择；它正在替世界重新印菜单。被重新印出来的，不只是选项名称，还有默认排序、可见边界、反馈通道和退出代价。
 

@@ -9,7 +9,7 @@ updated: 2026-06-11
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: barad_expression_maintext_polish_2026-06-11
+last_pass: simondon_expression_maintext_polish_2026-06-11
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -87,33 +87,33 @@ last_pass: barad_expression_maintext_polish_2026-06-11
 | 致读者 | `Drafts_26Q/致读者.md` | `draft_v3`（普通读者入口，四幕地图 + 阅读建议） |
 | Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v20`（v20 章末注5：与巴拉德的距离 + §八跨领域显影纪律正文段） |
 | Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v13`（v13b 评审轮：河流推进自然化） |
-| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v12`（v12 章末注7：属性归属与测量装置（玻尔—巴拉德线）） |
-| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v13`（v13 回头轮：frontmatter 标准化 + Q25 预告核验） |
+| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v16`（v16 Simondon 正文表达：对象身份同时分出边界、环境、接口与背面） |
+| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v15`（v15 Simondon 正文表达：前对象场不是未成形对象仓库） |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v12`（v12 回头轮：frontmatter 标准化 + Q28 引文核验） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v16`（v16 Barad 正文级补全：人的挑选非原型 + 切割必须写入地形） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v17`（v17 Simondon 正文表达：菜单不是选择之前印好的） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v11`（v11 回头轮：接住 Q05 命名，"排除"为概念名） |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v13`（v13 回头轮：三联同步 + Q01 三测试兑现） |
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v10`（v10 回头轮：承诺价值补入 + Q22 引用兑付） |
-| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v14`（v14 Barad 正文级补全：生成不是主观投射，厚度解释现实硬度） |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v13`（v13 章末注7：与实践生成性（performativity）的关系） |
+| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v15`（v15 Simondon 正文表达：厚度是跨场景继承、校准、抵抗与调用） |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v14`（v14 Simondon 正文表达：好秩序保留可再选择张力） |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v13`（v13 章末注7：预裁剪与装置（apparatus）） |
-| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v13`（v13 反馈区分加硬） |
+| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v15`（v15 Simondon 正文表达：信号进入承重位置才成为自身信息） |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v15`（v15 章末注2：物质与意义不可分离（与巴拉德的距离）） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v12`（v12b 回头轮：接口标签 + Q28 测试回指核验） |
 | Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v13`（v13 三把尺书语言 + 质量=承重非低摩擦 + AI边界案例 + 自私→自我维持型狭窄关切 + 梯度在乎回收 + 工具箱/章末注对齐 + Q14桥接 + canonical书稿层注） |
-| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v17`（v17 章末注5：与巴拉德的主体去中心化的关系 + 责任护栏） |
+| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v19`（v19 Simondon 正文表达：主体是带未完成历史继续承重的位置） |
 | Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v18`（v18 章末注F：反表征主义近邻） |
 | Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v10`（v10c2 评审轮：给定感地形清扫） |
 | Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v11`（v11b 评审轮：镜像错绑/代理轴补入） |
 | Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v13`（v13 章末注8：遮蔽的物质—话语维度） |
-| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v9`（v9b 评审轮：五条缝隙软化为非穷尽） |
-| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v16`（v16 Barad 正文级补全：三问是结构诊断，不审判动机） |
-| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v13`（v13 章末注9：共同地形与多重装置） |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v15`（v15 Barad 正文级补全：AI 重新印菜单 + 装置性地形改写） |
+| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v11`（v11 Simondon 正文表达：个体痛苦的结构错配与共同地形） |
+| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v17`（v17 Simondon 正文表达：方向不预设目的或先验主体） |
+| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v15`（v15 Simondon 正文表达：共同体是多个未完成位置的可回应结构） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v16`（v16 Simondon 正文表达：模型处理信号不等于具身信息） |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v11`（v11b 评审轮：§7 冰川/绒泡菌区分） |
 | Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v9`（v9 章末注7：最近邻对照作为失败条件 + 反校准） |
 | Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v7`（v7 章末注7：理论也是装置） |
-| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v7`（v7 章末注9：与能动实在论的最后分界） |
+| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v9`（v9 Simondon 正文表达：坏秩序追求死稳定，好秩序保留再选择张力） |
 
 ---
 
