@@ -1,7 +1,7 @@
 ---
 id: Q24
 type: book_chapter_draft
-status: draft_v17
+status: draft_v18
 question: Q24
 act: 第四幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
@@ -68,6 +68,7 @@ optimization_axis:
   - v15_barad_maintext_apparatus_menu_line
   - v16_simondon_maintext_signal_not_embodied_information
   - v17_prigogine_stengers_maintext_recommendation_as_non_equilibrium_amplifier
+  - v18_maturana_varela_maintext_ai_medium_not_subject
 canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
@@ -113,6 +114,8 @@ AI 是否有意识，在伦理上仍是开放问题——本章不否认它的�
 AI 可以不是具身位——它不承受后果，不拥有自我意识——但它仍然可以改写具身位之间的后果回流结构。一条河没有意识，但它改变了所有在它周围生活的人的选择条件——怎么种地，怎么建房，哪条路走得通。你不会问河流“你有没有心”，你会问“你怎么改变了我的生活条件”。（完整跨层对照见第五章 §6 表，横向对齐六层选择结构。）
 
 AI 就是这样一条河。先问它做了什么，再问它是什么。
+
+这也意味着，AI 不必先成为自我维持的生命系统，也不必先成为主体，才会改变人类之间的耦合条件。它可以只是介质、接口和默认通道的重排者，却已经足以改变哪些差异能被看见、哪些回应能回来、哪些能力会在长期使用中增长或萎缩。
 
 ---
 
