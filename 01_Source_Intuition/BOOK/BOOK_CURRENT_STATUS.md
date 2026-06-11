@@ -9,7 +9,7 @@ updated: 2026-06-11
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: prigogine_stengers_expression_maintext_polish_2026-06-11
+last_pass: maturana_varela_expression_maintext_polish_2026-06-11
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -90,15 +90,15 @@ last_pass: prigogine_stengers_expression_maintext_polish_2026-06-11
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v16`（v16 Simondon 正文表达：对象身份同时分出边界、环境、接口与背面） |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v15`（v15 Simondon 正文表达：前对象场不是未成形对象仓库） |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v12`（v12 回头轮：frontmatter 标准化 + Q28 引文核验） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v18`（v18 Prigogine/Stengers 正文表达：分叉不是从既有菜单挑选） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v19`（v19 Maturana/Varela 正文表达：选择结构是最低组织而非具体机制） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v12`（v12 Prigogine/Stengers 正文表达：被排开者以涨落/放大通道改变后续坡度） |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v13`（v13 回头轮：三联同步 + Q01 三测试兑现） |
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v11`（v11 Prigogine/Stengers 正文表达：时间是写入后的不可清零结构差异） |
-| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v15`（v15 Simondon 正文表达：厚度是跨场景继承、校准、抵抗与调用） |
+| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v16`（v16 Maturana/Varela 正文表达：历史不是记忆故事，而是当前可变化范围） |
 | Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v15`（v15 Prigogine/Stengers 正文表达：秩序靠流、代价与维护站住） |
-| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v13`（v13 章末注7：预裁剪与装置（apparatus）） |
-| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v15`（v15 Simondon 正文表达：信号进入承重位置才成为自身信息） |
-| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v15`（v15 章末注2：物质与意义不可分离（与巴拉德的距离）） |
+| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v14`（v14 Maturana/Varela 正文表达：语义问题换成生成条件问题） |
+| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v16`（v16 Maturana/Varela 正文表达：外部不是输入意义，而是扰动并按结构承受、整合或改写） |
+| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v16`（v16 Maturana/Varela 正文表达：在乎是扰动后的结构性重组） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v12`（v12b 回头轮：接口标签 + Q28 测试回指核验） |
 | Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v13`（v13 三把尺书语言 + 质量=承重非低摩擦 + AI边界案例 + 自私→自我维持型狭窄关切 + 梯度在乎回收 + 工具箱/章末注对齐 + Q14桥接 + canonical书稿层注） |
 | Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v19`（v19 Simondon 正文表达：主体是带未完成历史继续承重的位置） |
@@ -109,10 +109,10 @@ last_pass: prigogine_stengers_expression_maintext_polish_2026-06-11
 | Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v11`（v11 Simondon 正文表达：个体痛苦的结构错配与共同地形） |
 | Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v18`（v18 Prigogine/Stengers 正文表达：好方向不是死平衡，而是保留可再选择张力） |
 | Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v16`（v16 Prigogine/Stengers 正文表达：开放共同地形不能按封闭机器治理） |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v17`（v17 Prigogine/Stengers 正文表达：推荐系统作为非平衡放大器） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v18`（v18 Maturana/Varela 正文表达：AI 不必成为主体也能重排耦合条件） |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v11`（v11b 评审轮：§7 冰川/绒泡菌区分） |
 | Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v9`（v9 章末注7：最近邻对照作为失败条件 + 反校准） |
-| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v9`（v9 Prigogine/Stengers 正文表达：理论不是旁观者，而会进入后续选择地形） |
+| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v10`（v10 Maturana/Varela 正文表达：新词是护栏且也需被反向检查） |
 | Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v10`（v10 Prigogine/Stengers 正文表达：回到生成不是拒绝秩序，而是拒绝遗忘时间、流量与代价） |
 
 ---
