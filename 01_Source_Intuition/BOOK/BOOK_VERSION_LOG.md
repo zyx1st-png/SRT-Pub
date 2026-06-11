@@ -771,3 +771,29 @@ Canonical 文件未修改。`_PRIGOGINE_STENGERS_EXPRESSION_WRITEBACK_2026-06-11
 - `BOOK_VERSION_LOG.md`：追加本条记录。
 
 Canonical 文件未修改。用户粘贴方案未入仓；本轮仅作表达回写参考。
+
+## 2026-06-11 Embodied Development 表达回写正文级补全
+
+依据用户提供的 De Jonge-Hoekstra & Cox 2026 preprint *Embodied and Embedded Cognitive Development* 表达优化方案，并对照既有材料台账 `Materials/2026/SRC_2026_05_01_Philosophy_Embodied_Embedded_Cognitive_Development_Preprint.md` 与 `Philosophy/SRT_Social_Cognition.md` 中的 `T-Cog-7 Developmental Coordination Scaffold`，对全书主梁执行正文级表达微修。此次补全不把该预印本写成 SRT 证明，不引入 affordance / soft assembly / degeneracy 等术语作为正文主词；只吸收其“新组织从已有条件中长出”“临时协同装配”“互动关系主导”“发展级联”“波动不只是噪声”“共同调节沉积成自我调节”“限制也可成为课程”的表达资源。
+
+**正文微修**：
+
+| 章 | 版本变化 | 修改内容 |
+|---|---|---|
+| Q03 前对象场 | v15→v16 | §1 增加新对象不是从无中冒出，也不是预藏成品，而是在已有差异、能力、操作和环境节奏的新配合中长出。 |
+| Q05 选择不是挑选 | v19→v20 | §1 增加动作作为身体、环境、历史和他人期待临时协同站稳的表达。 |
+| Q08 不可逆性 | v11→v12 | §3 增加波动不总是失败，有时是旧稳定松动、新稳定未成形的过渡信号。 |
+| Q09 现实厚度 | v16→v17 | §3 增加现实变厚来自反复成功、被保留、被默认的装配史。 |
+| Q11 被选择 | v14→v15 | §1 增加选项必须先与身体能力、环境入口、社会回应和代价结构匹配。 |
+| Q13 在乎 | v16→v17 | §1 增加在乎会改写走路、回避、等待和日常安排，避免只听内心描述。 |
+| Q16 主体沉积 | v19→v20 | §1 增加共同调节到自我调节：他人、节律、环境、语言、工具反复进入身体，沉积出“自己会”的我。 |
+| Q17 意识 | v19→v20 | §2 增加“内部表征”作为概念胶水的护栏：不能因中间过程复杂就立刻塞进内部副本。 |
+| Q18 秩序与自由 | v10→v11 | §3 增加限制也可把世界缩小到可承受、可重复、可回应的学习范围。 |
+| Q19 脚手架与牢笼 | v11→v12 | §2 增加好脚手架留下协同能力，坏脚手架留下依赖。 |
+| Q24 AI | v18→v19 | §1 增加 AI 会改写任务在使用者身上的装配方式，影响下一次选择能否自己组织。 |
+
+**元文件同步**：
+- `BOOK_CURRENT_STATUS.md`：更新上述 11 章版本号与 `last_pass`；同时把已触及的 Q17 状态从旧表滞后项同步到当前 `draft_v20`。
+- `BOOK_VERSION_LOG.md`：追加本条记录。
+
+Canonical 文件未修改。材料仍按既有 Pipeline 1 裁决处理为 preprint review bridge；本轮只做书稿表达回写，不新增材料台账或定义权威。
