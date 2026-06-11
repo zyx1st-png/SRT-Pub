@@ -13,7 +13,7 @@ note: "Standalone log entry; SourceCard 自带 Pipeline 裁决（第 7 节）。
 
 | 日期 | 来源标题 / 出处 | 类型 | 审核结论 | 落点（文件 + 节位） | 融入状态 | 备注 |
 |-----|--------------|------|---------|-----------------|---------|------|
-| 2026-06-11 | *The Blind Spot: Why Science Cannot Ignore Human Experience*, Adam Frank / Marcelo Gleiser / Evan Thompson, MIT Press 2024 (ISBN 9780262048804) | 专著 / 一手英文文本（SHA-256 `3e0a5090…02156`） | A | `01_Source_Intuition/BOOK/Drafts_26Q/Q17_意识.md` 章末注 G | 已写入 Q17 注 G | 近邻定位 + 干净示例来源；红线=不把 primacy of consciousness 立为 SRT 同盟立场；IIT/泛心论/错觉论/预测加工细节留在 SourceCard 不进正文/章注 |
+| 2026-06-11 | *The Blind Spot: Why Science Cannot Ignore Human Experience*, Adam Frank / Marcelo Gleiser / Evan Thompson, MIT Press 2024 (ISBN 9780262048804) | 专著 / 一手英文文本（SHA-256 `3e0a5090…02156`） | A | Q17 注 G、Q01 注七、Q02 注九、Q09 注十、Q25 注七 | 已写入 5 章载重注 | 近邻定位 + 干净示例来源；红线=不把 primacy of consciousness 立为 SRT 同盟立场，统一表述为"有滑向新地板的风险"；IIT/泛心论/错觉论/预测加工细节留在 SourceCard 不进正文/章注 |
 
 ## Pipeline 裁决
 
