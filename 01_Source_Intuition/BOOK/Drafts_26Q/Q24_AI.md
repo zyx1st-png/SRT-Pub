@@ -66,7 +66,7 @@ optimization_axis:
 canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
-revised: 2026-06-10
+revised: 2026-06-11
 ---
 
 # 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
