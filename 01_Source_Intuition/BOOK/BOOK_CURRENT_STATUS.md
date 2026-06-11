@@ -84,36 +84,36 @@ last_pass: q16_q19_q20_question_order_reader_alignment_2026-06-07
 
 | 编号 | 文件 | 当前状态 |
 |---|---|---|
-| 致读者 | `Drafts_26Q/致读者.md` | `draft_v1`（普通读者入口，四幕地图 + 阅读建议） |
-| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v19`（v19 §四压缩 + 传统对话移至章末注） |
-| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v12`（v12 行级打磨：§3/§4 冗余压缩） |
-| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v10`（v10 行级打磨：§2 科学双段合并 + §6 句法整理） |
-| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v12`（v12 行级打磨：§1/§4/§5 冗余压缩） |
-| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v11`（v11 行级打磨：§4 冗余压缩） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v12`（v12 行级打磨：§5 因果区分双段合并） |
-| Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v10`（v10 问题秩序改变段落） |
-| Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v12`（v12 行级打磨：§4/§6 冗余压缩） |
-| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v9`（v9 行级打磨：§6 修复重述压缩） |
-| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v9`（v9 问题秩序改变段落） |
-| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v11`（v11 行级打磨：§3 河道重复删除 + 总结合并） |
-| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v10`（v10 行级打磨：§3 视觉重复删除 + 菜单句重复删除 + §5 重述段删除） |
-| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v12`（v12 问题秩序改变段落 + 跨领域折叠入机制节） |
-| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v13`（v13 问题秩序改变段落 + 旧地板开法变化） |
-| Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v10`（v10 问题秩序改变段落） |
+| 致读者 | `Drafts_26Q/致读者.md` | `draft_v3`（普通读者入口，四幕地图 + 阅读建议） |
+| Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v20`（v20 章末注5：与巴拉德的距离 + §八跨领域显影纪律正文段） |
+| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v13`（v13b 评审轮：河流推进自然化） |
+| Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v12`（v12 章末注7：属性归属与测量装置（玻尔—巴拉德线）） |
+| Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v13`（v13 回头轮：frontmatter 标准化 + Q25 预告核验） |
+| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v12`（v12 回头轮：frontmatter 标准化 + Q28 引文核验） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v13`（v13 接口标签） |
+| Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v11`（v11 回头轮：接住 Q05 命名，"排除"为概念名） |
+| Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v13`（v13 回头轮：三联同步 + Q01 三测试兑现） |
+| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v10`（v10 回头轮：承诺价值补入 + Q22 引用兑付） |
+| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v11`（v11 章末注8：厚度与玻尔的客观性（兼与巴拉德分界）） |
+| Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v13`（v13 章末注7：与实践生成性（performativity）的关系） |
+| Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v13`（v13 章末注7：预裁剪与装置（apparatus）） |
+| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v13`（v13 反馈区分加硬） |
+| Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v15`（v15 章末注2：物质与意义不可分离（与巴拉德的距离）） |
+| Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v12`（v12b 回头轮：接口标签 + Q28 测试回指核验） |
 | Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v13`（v13 三把尺书语言 + 质量=承重非低摩擦 + AI边界案例 + 自私→自我维持型狭窄关切 + 梯度在乎回收 + 工具箱/章末注对齐 + Q14桥接 + canonical书稿层注） |
-| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v15`（v15 问题秩序改变段落） |
-| Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v15`（v15 问题秩序改变段落） |
-| Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v9`（v9 自由理论提问入口改变） |
-| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v10`（v10 问题秩序改变段落） |
-| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v11`（v11 问题秩序改变段落） |
-| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v8` |
-| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v12`（v12 is-ought 正面判断） |
-| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v11`（v11 §1 开头变奏，消除模板疲劳） |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v10`（v10 §1 开头变奏，消除模板疲劳） |
-| Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v9` |
-| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v7`（v7 死亡条件即力量） |
-| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v5` |
-| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v5`（v5 §7 十领域雄心显影 + §8-§9 结尾重写） |
+| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v17`（v17 章末注5：与巴拉德的主体去中心化的关系 + 责任护栏） |
+| Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v18`（v18 章末注F：反表征主义近邻） |
+| Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v10`（v10c2 评审轮：给定感地形清扫） |
+| Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v11`（v11b 评审轮：镜像错绑/代理轴补入） |
+| Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v13`（v13 章末注8：遮蔽的物质—话语维度） |
+| Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v9`（v9b 评审轮：五条缝隙软化为非穷尽） |
+| Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v14`（v14 章末注8：与巴拉德的伦理—本体—认识论合一的关系） |
+| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v13`（v13 章末注9：共同地形与多重装置） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v12`（v12 章末注9：AI 作为装置（与 apparatus 的距离）） |
+| Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v11`（v11b 评审轮：§7 冰川/绒泡菌区分） |
+| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v9`（v9 章末注7：最近邻对照作为失败条件 + 反校准） |
+| Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v7`（v7 章末注7：理论也是装置） |
+| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v7`（v7 章末注9：与能动实在论的最后分界） |
 
 ---
 
