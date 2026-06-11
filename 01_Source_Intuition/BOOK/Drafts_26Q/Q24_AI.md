@@ -1,7 +1,7 @@
 ---
 id: Q24
 type: book_chapter_draft
-status: draft_v18
+status: draft_v19
 question: Q24
 act: 第四幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
@@ -69,6 +69,7 @@ optimization_axis:
   - v16_simondon_maintext_signal_not_embodied_information
   - v17_prigogine_stengers_maintext_recommendation_as_non_equilibrium_amplifier
   - v18_maturana_varela_maintext_ai_medium_not_subject
+  - v19_embodied_development_maintext_ai_reassembles_task_capacity
 canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
@@ -96,6 +97,8 @@ revised: 2026-06-11
 第一个场景：AI 改变的不是这个学生做了什么事，而是他下一次还会不会自己做。第二个场景：AI 改变的不是某条路的红绿灯，而是谁的通勤变好了、谁的变差了、以及变差的人还能不能说不。
 
 **AI 最重要的变化不是它替你做了一件事，而是它改变了你下一次会不会自己做、怎么做、还能不能看见其他路。**
+
+AI 的危险不只是它替你完成任务，而是它可能改变任务在你身上的装配方式。它让某些入口更亮，某些路径更低摩擦，某些判断不再被练习。久而久之，改变的不是一次选择，而是下一次选择还能不能由你自己组织起来。
 
 ---
 
