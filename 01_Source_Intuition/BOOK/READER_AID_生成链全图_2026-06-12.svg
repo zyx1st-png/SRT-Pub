@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="760" viewBox="0 0 1040 760" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+  <rect x="0" y="0" width="1040" height="760" fill="#ffffff"/>
+  <text x="520" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#1a1a1a">《从存在到秩序》生成链全图</text>
+  <text x="520" y="66" text-anchor="middle" font-size="14" fill="#666">稳定不是起点，而是选择留下来的历史；秩序不是终点，而是后果回得来的地面。</text>
+
+  <!-- arrowhead defs -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#444"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#b07a2e"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Band 1: Act 1-2 留下的运动 ===== -->
+  <rect x="20" y="90" width="1000" height="130" rx="10" fill="#eef4fb" stroke="#cdddf0"/>
+  <text x="36" y="114" font-size="15" font-weight="700" fill="#2b5f9e">第一·二幕　留下的运动（第1–10章）</text>
+  <g font-size="14" fill="#1a1a1a" text-anchor="middle">
+    <rect x="40"  y="130" width="150" height="60" rx="8" fill="#fff" stroke="#9cc0e8"/>
+    <text x="115" y="156">可成为性</text><text x="115" y="176" font-size="11" fill="#777">前对象场 · 不完全平</text>
+    <rect x="232" y="130" width="150" height="60" rx="8" fill="#fff" stroke="#9cc0e8"/>
+    <text x="307" y="156">选择</text><text x="307" y="176" font-size="11" fill="#777">排开 · 有形 · 留痕</text>
+    <rect x="424" y="130" width="150" height="60" rx="8" fill="#fff" stroke="#9cc0e8"/>
+    <text x="499" y="156">锚定</text><text x="499" y="176" font-size="11" fill="#777">获得位置 · 不可逆</text>
+    <rect x="616" y="130" width="150" height="60" rx="8" fill="#fff" stroke="#9cc0e8"/>
+    <text x="691" y="156">现实厚度</text><text x="691" y="176" font-size="11" fill="#777">承重 · 支付 · 再入场</text>
+    <rect x="808" y="130" width="172" height="60" rx="8" fill="#fff" stroke="#9cc0e8"/>
+    <text x="894" y="156">秩序</text><text x="894" y="176" font-size="11" fill="#777">厚度退入背景的地面</text>
+  </g>
+  <g stroke="#444" stroke-width="1.6" marker-end="url(#arrow)">
+    <line x1="190" y1="160" x2="228" y2="160"/>
+    <line x1="382" y1="160" x2="420" y2="160"/>
+    <line x1="574" y1="160" x2="612" y2="160"/>
+    <line x1="766" y1="160" x2="804" y2="160"/>
+  </g>
+
+  <!-- down connector 1->2 -->
+  <line x1="894" y1="190" x2="894" y2="248" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="910" y="224" font-size="12" fill="#666">你也在地形之中</text>
+
+  <!-- ===== Band 2: Act 3 回来的运动 ===== -->
+  <rect x="20" y="250" width="1000" height="130" rx="10" fill="#eefaf1" stroke="#cdeed9"/>
+  <text x="36" y="274" font-size="15" font-weight="700" fill="#2e8b57">第三幕　回来的运动（第11–17章）</text>
+  <g font-size="14" fill="#1a1a1a" text-anchor="middle">
+    <rect x="808" y="290" width="172" height="60" rx="8" fill="#fff" stroke="#9bd8b4"/>
+    <text x="894" y="316">被选择</text><text x="894" y="336" font-size="11" fill="#777">地形预裁剪你的菜单</text>
+    <rect x="616" y="290" width="150" height="60" rx="8" fill="#fff" stroke="#9bd8b4"/>
+    <text x="691" y="316">攸关 · 在乎</text><text x="691" y="336" font-size="11" fill="#777">后果找上你</text>
+    <rect x="424" y="290" width="150" height="60" rx="8" fill="#fff" stroke="#9bd8b4"/>
+    <text x="499" y="316">价值 · 关切</text><text x="499" y="336" font-size="11" fill="#777">深度 + 宽度</text>
+    <rect x="232" y="290" width="150" height="60" rx="8" fill="#fff" stroke="#9bd8b4"/>
+    <text x="307" y="316">主体沉积</text><text x="307" y="336" font-size="11" fill="#777">选择的化石</text>
+    <rect x="40"  y="290" width="150" height="60" rx="8" fill="#fff" stroke="#9bd8b4"/>
+    <text x="115" y="316">意识</text><text x="115" y="336" font-size="11" fill="#777">晚来的凝结物</text>
+  </g>
+  <g stroke="#444" stroke-width="1.6" marker-end="url(#arrow)">
+    <line x1="808" y1="320" x2="770" y2="320"/>
+    <line x1="616" y1="320" x2="578" y2="320"/>
+    <line x1="424" y1="320" x2="386" y2="320"/>
+    <line x1="232" y1="320" x2="194" y2="320"/>
+  </g>
+
+  <!-- down connector 2->3 -->
+  <line x1="115" y1="350" x2="115" y2="408" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- ===== Band 3: Act 4 秩序与边界 ===== -->
+  <rect x="20" y="410" width="1000" height="130" rx="10" fill="#fdf3ec" stroke="#f4ddc9"/>
+  <text x="36" y="434" font-size="15" font-weight="700" fill="#c0702a">第四幕　秩序与边界（第18–28章）</text>
+  <g font-size="14" fill="#1a1a1a" text-anchor="middle">
+    <rect x="40"  y="450" width="150" height="60" rx="8" fill="#fff" stroke="#eec199"/>
+    <text x="115" y="476">自由的地面</text><text x="115" y="496" font-size="11" fill="#777">秩序是地面，非反面</text>
+    <rect x="232" y="450" width="150" height="60" rx="8" fill="#fff" stroke="#eec199"/>
+    <text x="307" y="476">脚手架·遮蔽·苦难</text><text x="307" y="496" font-size="11" fill="#777">秩序的双面性</text>
+    <rect x="424" y="450" width="150" height="60" rx="8" fill="#fff" stroke="#eec199"/>
+    <text x="499" y="476">方向 · 三问</text><text x="499" y="496" font-size="11" fill="#777">自耗 · 外包 · 锁死</text>
+    <rect x="616" y="450" width="150" height="60" rx="8" fill="#fff" stroke="#eec199"/>
+    <text x="691" y="476">共同体 · AI</text><text x="691" y="496" font-size="11" fill="#777">后果回流 · 地形改写</text>
+    <rect x="808" y="450" width="172" height="60" rx="8" fill="#fff" stroke="#eec199"/>
+    <text x="894" y="476">回到生成</text><text x="894" y="496" font-size="11" fill="#777">给下一次生成留位置</text>
+  </g>
+  <g stroke="#444" stroke-width="1.6" marker-end="url(#arrow)">
+    <line x1="190" y1="480" x2="228" y2="480"/>
+    <line x1="382" y1="480" x2="420" y2="480"/>
+    <line x1="574" y1="480" x2="612" y2="480"/>
+    <line x1="766" y1="480" x2="804" y2="480"/>
+  </g>
+
+  <!-- ===== return arrow: 回到生成 -> 可成为性 (暗线/回程) ===== -->
+  <path d="M894,510 L894,560 L20,560 L20,160 L36,160"
+        fill="none" stroke="#b07a2e" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#arrowBack)"/>
+  <text x="470" y="582" text-anchor="middle" font-size="13" fill="#b07a2e">暗线 / 回程：成熟的秩序不替生成说完最后一句话，而是把开放重新交还给下一次可成为性</text>
+
+  <!-- ===== legend ===== -->
+  <g font-size="12.5" fill="#444">
+    <text x="36" y="630" font-weight="700" fill="#1a1a1a">读法</text>
+    <line x1="36" y1="650" x2="70" y2="650" stroke="#444" stroke-width="1.6" marker-end="url(#arrow)"/>
+    <text x="80" y="654">实线：正向生成推进（每一步逼出下一步）</text>
+    <line x1="36" y1="676" x2="70" y2="676" stroke="#b07a2e" stroke-width="1.8" stroke-dasharray="7,5" marker-end="url(#arrowBack)"/>
+    <text x="80" y="680">虚线：秩序回到生成的回程暗线（Q28）</text>
+    <text x="36" y="708" fill="#666">蓝＝留下的运动　绿＝回来的运动　橙＝秩序与边界。三问（自耗·外包·锁死）是全书最实用的随身工具。</text>
+    <text x="36" y="734" fill="#999" font-size="11">读者辅助图，canonical: false　·　精确含义以各章正文为准　·　2026-06-12</text>
+  </g>
+</svg>
