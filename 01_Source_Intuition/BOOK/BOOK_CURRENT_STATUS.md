@@ -115,7 +115,7 @@ last_pass: polish_round1_batch1_act1_act2_2026-06-12
 | Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v18`（v18 Prigogine/Stengers 正文表达：好方向不是死平衡，而是保留可再选择张力） |
 | Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v18`（v17 §4 秩序级关切宽度安装；v18 去环化七处，记忆点改“后果还回不回得来”） |
 | Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v22`（v20-v21 融合轮；v22 ε/真实摩擦归因校正 Y-R2，两处章末注） |
-| Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v11`（v11b 评审轮：§7 冰川/绒泡菌区分） |
+| Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v14`（v12 Active Inference 盟友＋防泛化注七；v13 Blind Spot 意识优先分界注八；v14 Damasio 非显性智能注九；断言密度专项随轮复核零改动） |
 | Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v12`（v11 迪肯 autogen 注八；v12 章末注九：主梁三条失败条件记账并映射正文五条件） |
 | Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v11`（v11 Traces of the Other 正文表达：异常材料须保留竞争解释、失败结果与非 SRT 复核） |
 | Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v13`（v11 合梁三焊：暗线补回程、薄 ε 违例修复、§9 双地板句收口；v12 注四一致性；v13 §5 回流落点消歧） |
