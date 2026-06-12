@@ -147,17 +147,19 @@ Thick structures recede into background, becoming **order**: an uneven distribut
 
 ## 7. Five Failure Conditions
 
-The theory explicitly states what would refute it (Q26):
+The theory explicitly states what would refute it (Q26 §3; faithful condensation — the full statements in Q26 are authoritative):
 
-1. If a stable, load-bearing object can be demonstrated to require no selection–anchoring process whatsoever — pure givenness with no generative history — the selection-first axiom (P0-01) falls.
+1. **Selection-structure threshold fails.** If "exclusion–formation–inscription" cannot be independently identified, or adds no discriminating power over ordinary causal description; or conversely, if many processes satisfying all three steps leave no detectable difference in subsequent terrain — the concept is either unnecessary or defined too widely (if everything is selection, nothing is).
 
-2. If value can be fully captured by preference satisfaction without remainder — if irreplaceability, direction, and concern-breadth add nothing that preference functions cannot absorb — the value-depth claim is redundant.
+2. **Consequence return fails.** If, in operational comparison, consequence return adds no explanatory or predictive power over preference, memory, or social learning for the formation of subjects, caring, value, and responsibility — Act III's main chain (stake → caring → value → subject sedimentation) fails.
 
-3. If consciousness is demonstrated to be the necessary first mover of all selection (not just conscious choice), the "consciousness as late condensate" claim is wrong.
+3. **Consciousness boundary fails.** If the consciousness boundary can be fully explained by a single information-integration metric (no consequence return, no self-referential sedimentation, no bearing position), or if public information can losslessly replace embodied first-person bearing — the layered conditions are redundant. Deep branch: if some basic property is shown to be neither a product of selection structure nor a result of differentiation but an irreducible, ungenerable primitive given (e.g. proto-experience proven irreducible and ungenerable), the generative placement of the matter/consciousness differentiation must be revised.
 
-4. If order can never become a cage — if no sedimented structure ever substitutes for, rather than supports, selection capacity — the scaffold/cage distinction is empty.
+4. **Structural criteria fail.** If concealment fully reduces to information absence, suffering to pain accumulation, and direction to efficiency optimization — Act IV's structural diagnostics are no better than common-sense diagnostics.
 
-5. If the theory's own concepts cannot be applied reflexively — if SRT itself begins to substitute for the reader's own seeing rather than supporting it — it has become its own cage, violating its own criterion.
+5. **Terrain analysis fails.** If community and AI problems can be fully explained by aggregated individual preferences, tool-use intentions, or the standard principal–agent framework (incentives, monitoring, information asymmetry) — consequence return and terrain rewriting add nothing in this region.
+
+Three further beam-level failure conditions (operational return/feedback distinction; "staying" producing no operational difference from causal history; the suture test) are registered in Q26 endnote 9. The three falsifiable positions handed over by Q25 endnote 6 fold into conditions 1 and 3. The book-level reflexive test (SRT becoming its own cage) is Q27 — an identity condition, layered separately from the empirical failure conditions above.
 
 ---
 
