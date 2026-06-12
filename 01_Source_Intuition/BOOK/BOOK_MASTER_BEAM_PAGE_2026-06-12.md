@@ -1,7 +1,7 @@
 ---
 id: SRT-BOOK-MASTER-BEAM-PAGE
 type: book_construction_doc
-status: signed_v2.5
+status: signed_v2.6
 position: construction_blueprint_front_page
 canonical: false
 claim_mode: editorial_governance
@@ -75,3 +75,5 @@ revised: 2026-06-12
 ## 防降格条款
 
 生活问题只许开门，不许收尾：凡使用入口问句的章节或桥，最后一拍必须是本体论断言或转场。Q28 §7 十个领域入口维持"标记而非应用"的自我定位，不得扩写。
+
+解释性裁决（v2.6，G-R1）："最后一拍"指**正文声部的收束段**；装框边栏——操作接口、微型示范、工具箱——与章末注不计拍点。按字面将版面末位元素当作拍点，会误判沿用既定排版惯例的十八章。
