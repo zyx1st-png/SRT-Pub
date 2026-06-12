@@ -9,7 +9,7 @@ updated: 2026-06-12
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: rc0_dispatch_protocol_created_2026-06-12
+last_pass: rc0_public_content_strategy_and_drafts_2026-06-12
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -76,6 +76,7 @@ last_pass: rc0_dispatch_protocol_created_2026-06-12
 | 校验读报告 | `BOOK_VERIFICATION_READ_REPORT_2026-06-12.md` | 第一轮全书校验读：合章议题关闭、违例登记、动土许可 |
 | RC0 评审入口 | `BOOK_RC0_REVIEW_PACKET_2026-06-12.md` | RC0 外部评审准备：总判断、一页式定位、四幕摘要、三组评审问题、保护区清单、开放风险登记；**正文冻结协议自其合并起生效** |
 | RC0 派发协议 | `BOOK_RC0_REVIEW_DISPATCH_2026-06-12.md` | 评审包的配套操作件：小样本派发策略、三类评审人分层与阅读路径、两阶段反馈设计（读者组不预发问题清单）、三封邀请信、反馈记录模板、硬伤/登记/升级三出口判定管线 |
+| RC0 公共内容策略 | `BOOK_PUBLIC_CONTENT_STRATEGY_2026-06-12.md` | 公共渠道（X/Substack/Medium）发布策略：三目标（转化率测试/读者招募/时间戳）、内容三层与禁发清单、平台矩阵、四周计划、与评审管线的隔离纪律、发布台账；成稿走 `/srt-public-content` 技能，存 `Public_Content/` |
 | 专业/公共入口 | `PROFESSIONAL_READING_BRIEF*.md`, `PUBLIC_MINIMAL_READING_PACK.md` | 外部读者压缩入口 |
 
 历史文件：
