@@ -14,7 +14,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 > **Connector-safe reading path**: This dashboard is moderately long. For connector reads, start with [`STATUS_Split/README.md`](STATUS_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new status authority.
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-05-23
+> **最后更新**：2026-06-12
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -24,6 +24,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 远端已收口为单一 `main` 分支。
 - 仓库已执行一轮"理论硬化优先、去命题混层"回写：`Core_21` 已拆成 P0/P1/P2-P4 分层，AI 首读入口已降密度为 runtime/bootstrap。
 - 当前后续重点是让 domain 文件持续回链 canonical，避免 bridge / companion / lab 命题反向冒充 core。
+- 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮（句系解耦＋行级打磨），施工队列清零，进入 **RC0 外部评审阶段**：正文默认冻结，评审入口 `01_Source_Intuition/BOOK/BOOK_RC0_REVIEW_PACKET_2026-06-12.md`，派发协议 `BOOK_RC0_REVIEW_DISPATCH_2026-06-12.md`。
 
 ## 当前建议首读顺序
 
