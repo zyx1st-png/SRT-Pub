@@ -5,11 +5,11 @@ status: active_current
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-06-11
+updated: 2026-06-12
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: traces_other_expression_maintext_polish_2026-06-11
+last_pass: master_beam_assembly_and_registration_2026-06-12
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -35,12 +35,15 @@ last_pass: traces_other_expression_maintext_polish_2026-06-11
 说明：
 
 - `Drafts_26Q/` 是历史目录名；当前实际内容已经闭合到 `Q00-Q28`，即“序章 + 二十八章”。
+- 三座幕间桥属正文阅读顺序：`幕间桥_二三幕.md`（Q10/Q11 之间）、`幕间桥_三四幕.md`（Q17/Q18 之间）、`幕间桥_Q24_Q25.md`（Q24/Q25 之间）。构建脚本与 `scripts/check_book_outline_split.py` 已登记（2026-06-12）。
 - 旧 `Part_*` 主稿、旧 `Outline_Parts/`、旧 52 章结构已经下沉到 `01_Source_Intuition/BOOK/Archive_52Chapter/`，不再作为当前施工入口。
 - 当前根目录只应保留能继续指导 Q00-Q28 主线的元文件；被新版取代的元文件放入 `01_Source_Intuition/BOOK/Archive_Meta/`。
 
 当前全书一句话：
 
-> 稳定不是起点，而是选择留下来的历史；秩序不是终点，而是必须不断回到生成的地面。
+> 稳定不是起点，而是选择留下来的历史；秩序不是终点，而是后果回得来的地面。
+>
+> （主梁全句与施工纪律见 `BOOK_MASTER_BEAM_PAGE_2026-06-12.md`，signed_v2.6。）
 
 ---
 
@@ -69,6 +72,8 @@ last_pass: traces_other_expression_maintext_polish_2026-06-11
 | 章节卡 | `BOOK_CHAPTER_CARDS_2026-05-22.md` | 每章写作卡片；已覆盖 Q28 |
 | 核心命题 | `BOOK_CORE_PROPOSITIONS_2026-05-30.md` | 全书命题压缩版；2026-06-05 已同步 Q21-Q28 |
 | 版本日志 | `BOOK_VERSION_LOG.md` | 重要书稿/元文件变更记录 |
+| 定梁页 | `BOOK_MASTER_BEAM_PAGE_2026-06-12.md` | 全书主梁“留下与回来”施工图首页（signed_v2.6）；总装阶段一切修改的验收依据 |
+| 校验读报告 | `BOOK_VERIFICATION_READ_REPORT_2026-06-12.md` | 第一轮全书校验读：合章议题关闭、违例登记、动土许可 |
 | 专业/公共入口 | `PROFESSIONAL_READING_BRIEF*.md`, `PUBLIC_MINIMAL_READING_PACK.md` | 外部读者压缩入口 |
 
 历史文件：
@@ -84,36 +89,37 @@ last_pass: traces_other_expression_maintext_polish_2026-06-11
 
 | 编号 | 文件 | 当前状态 |
 |---|---|---|
-| 致读者 | `Drafts_26Q/致读者.md` | `draft_v3`（普通读者入口，四幕地图 + 阅读建议） |
+| 致读者 | `Drafts_26Q/致读者.md` | `draft_v4`（v4 口径对齐：地板句后半改“后果回得来的地面”；二三幕改留下/回来运动口径） |
 | Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v20`（v20 章末注5：与巴拉德的距离 + §八跨领域显影纪律正文段） |
 | Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v15`（v15 Traces of the Other 正文表达：把真假争论改写为世界如何以特定格式抵达） |
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v17`（v17 Traces of the Other 正文表达：对象化如接口渲染，把差异压成可操作格式） |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v16`（v16 Embodied Development 正文表达：新组织从已有条件的新耦合中长出） |
-| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v12`（v12 回头轮：frontmatter 标准化 + Q28 引文核验） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v20`（v20 Embodied Development 正文表达：动作是身体、环境、历史和回应的临时协同站稳） |
+| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v15b`（v13-v15b：西蒙东亚稳态注、主动推断引文升级、独立路径佐证、新地板计数） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v21`（v21 主梁试焊：§3“写入的两种命运”段，预埋 Q12） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v13`（v13 Traces of the Other 正文表达：被排除者以痕迹改变当前路径，而非完整返回） |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v13`（v13 回头轮：三联同步 + Q01 三测试兑现） |
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v12`（v12 Embodied Development 正文表达：波动有时是新稳定出现前的松动） |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v17`（v17 Embodied Development 正文表达：稳定是反复成功并被默认的装配史） |
 | Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v15`（v15 Prigogine/Stengers 正文表达：秩序靠流、代价与维护站住） |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v16`（v16 Traces of the Other 正文表达：可见性是接口结果，不是世界边界） |
-| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v16`（v16 Maturana/Varela 正文表达：外部不是输入意义，而是扰动并按结构承受、整合或改写） |
+| Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v17`（v17 主梁试焊：§4“承重的两个方向”定理段，Q09/Q05 交叉引用） |
 | Q13 | `Drafts_26Q/Q13_在乎.md` | `draft_v17`（v17 Embodied Development 正文表达：在乎会改写走路、回避、等待和日常安排） |
 | Q14 | `Drafts_26Q/Q14_价值不是偏好.md` | `draft_v12`（v12b 回头轮：接口标签 + Q28 测试回指核验） |
-| Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v13`（v13 三把尺书语言 + 质量=承重非低摩擦 + AI边界案例 + 自私→自我维持型狭窄关切 + 梯度在乎回收 + 工具箱/章末注对齐 + Q14桥接 + canonical书稿层注） |
-| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v20`（v20 Embodied Development 正文表达：共同调节沉积成自我调节） |
+| Q15 | `Drafts_26Q/Q15_关切维度.md` | `draft_v15`（v14 §7 去环；v15 薄 ε 红线修复 V-R1：删“和最低非中立性”） |
+| Q16 | `Drafts_26Q/Q16_主体沉积.md` | `draft_v21`（v21 ε 归因校正 Y-R1：选择先于主体记账到第四＋五章） |
 | Q17 | `Drafts_26Q/Q17_意识.md` | `draft_v21`（v21 Traces of the Other 正文表达：稳定连贯经验不是本体论担保，需要外部约束和校准） |
 | Q18 | `Drafts_26Q/Q18_秩序与自由.md` | `draft_v11`（v11 Embodied Development 正文表达：限制也可以成为可承受的学习脚手架） |
 | Q19 | `Drafts_26Q/Q19_脚手架与牢笼.md` | `draft_v12`（v12 Embodied Development 正文表达：好脚手架留下能力，坏脚手架留下依赖） |
 | Q20 | `Drafts_26Q/Q20_遮蔽.md` | `draft_v14`（v14 Traces of the Other 正文表达：遮蔽不是藏起事实，而是把事实改译成当前秩序可吸收格式） |
 | Q21 | `Drafts_26Q/Q21_苦难.md` | `draft_v11`（v11 Simondon 正文表达：个体痛苦的结构错配与共同地形） |
 | Q22 | `Drafts_26Q/Q22_方向.md` | `draft_v18`（v18 Prigogine/Stengers 正文表达：好方向不是死平衡，而是保留可再选择张力） |
-| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v16`（v16 Prigogine/Stengers 正文表达：开放共同地形不能按封闭机器治理） |
-| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v19`（v19 Embodied Development 正文表达：AI 会重装配任务在使用者身上的能力结构） |
+| Q23 | `Drafts_26Q/Q23_共同体.md` | `draft_v18`（v17 §4 秩序级关切宽度安装；v18 去环化七处，记忆点改“后果还回不回得来”） |
+| Q24 | `Drafts_26Q/Q24_AI.md` | `draft_v22`（v20-v21 融合轮；v22 ε/真实摩擦归因校正 Y-R2，两处章末注） |
 | Q25 | `Drafts_26Q/Q25_选择广于意识.md` | `draft_v11`（v11b 评审轮：§7 冰川/绒泡菌区分） |
-| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v10`（v10 Traces of the Other 正文表达：高风险材料先问可检验差异与退场条件） |
+| Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v12`（v11 迪肯 autogen 注八；v12 章末注九：主梁三条失败条件记账并映射正文五条件） |
 | Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v11`（v11 Traces of the Other 正文表达：异常材料须保留竞争解释、失败结果与非 SRT 复核） |
-| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v10`（v10 Prigogine/Stengers 正文表达：回到生成不是拒绝秩序，而是拒绝遗忘时间、流量与代价） |
+| Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v13`（v11 合梁三焊：暗线补回程、薄 ε 违例修复、§9 双地板句收口；v12 注四一致性；v13 §5 回流落点消歧） |
+| 幕间桥 | `Drafts_26Q/幕间桥_二三幕.md` ／ `幕间桥_三四幕.md` ／ `幕间桥_Q24_Q25.md` | `draft_v1`×3（梁级路标：留下运动收束／回来运动收束＋第四幕三种断法读法／诊断收束＋刀转向自己） |
 
 ---
 

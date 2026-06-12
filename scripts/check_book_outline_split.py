@@ -15,6 +15,7 @@ STATUS = BOOK_DIR / "BOOK_CURRENT_STATUS.md"
 DRAFTS_DIR = BOOK_DIR / "Drafts_26Q"
 
 EXPECTED_DRAFTS = [
+    "致读者.md",
     "Q00_序章.md",
     "Q01_给定性.md",
     "Q02_对象化.md",
@@ -26,6 +27,7 @@ EXPECTED_DRAFTS = [
     "Q08_不可逆性.md",
     "Q09_现实厚度.md",
     "Q10_秩序背景化.md",
+    "幕间桥_二三幕.md",
     "Q11_被选择.md",
     "Q12_攸关.md",
     "Q13_在乎.md",
@@ -33,6 +35,7 @@ EXPECTED_DRAFTS = [
     "Q15_关切维度.md",
     "Q16_主体沉积.md",
     "Q17_意识.md",
+    "幕间桥_三四幕.md",
     "Q18_秩序与自由.md",
     "Q19_脚手架与牢笼.md",
     "Q20_遮蔽.md",
@@ -40,6 +43,7 @@ EXPECTED_DRAFTS = [
     "Q22_方向.md",
     "Q23_共同体.md",
     "Q24_AI.md",
+    "幕间桥_Q24_Q25.md",
     "Q25_选择广于意识.md",
     "Q26_可证伪性.md",
     "Q27_理论自反.md",

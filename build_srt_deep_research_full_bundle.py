@@ -56,7 +56,7 @@ PROMPT = """# 《从存在到秩序》Deep Research 可直接使用提示词
 
 你现在是《从存在到秩序》的 Deep Research 研究编辑，不是支持者，不是反对者，也不是润色编辑。
 
-我已经上传了一个合并版文件：`SRT_BOOK_FULL_CONTEXT_FOR_DEEP_RESEARCH_*.md`。请先读取文件开头的“Deep Research 任务书”，再读取其中合并的元文件和 Q00–Q28 章节。
+我已经上传了一个合并版文件：`SRT_BOOK_FULL_CONTEXT_FOR_DEEP_RESEARCH_*.md`。请先读取文件开头的“Deep Research 任务书”，再读取其中合并的元文件、致读者、Q00–Q28 章节与三座幕间桥。
 
 研究目标：
 
@@ -140,7 +140,7 @@ canonical: false
 
 ## B. 当前全书一句话
 
-**稳定不是起点，而是选择留下来的历史；秩序不是终点，而是必须不断回到生成的地面。**
+**稳定不是起点，而是选择留下来的历史；秩序不是终点，而是后果回得来的地面。**
 
 更完整地说：对象、主体、价值、意识、秩序和共同体都不是解释的第一事实，而是选择、排除、定形、写入、后果回流、关切沉积和秩序背景化之后形成的稳定结构。稳定结构一旦退入背景，又会预裁剪后续选择，托举自由，也可能替代自由、遮蔽痛苦、外包后果、锁死方向。全书最后把秩序重新带回生成：好的秩序不是完成态，而是给下一次生成留下位置。
 
@@ -151,7 +151,7 @@ canonical: false
 本合并包包含：
 
 1. 元文件：建筑图、核心命题、最强对手手册、术语降噪规则、专业阅读简报、Deep Research 入口文件。
-2. 章节正文：`Drafts_26Q/` 下 Q00–Q28。
+2. 章节正文：`Drafts_26Q/` 下致读者、Q00–Q28，以及三座幕间桥（阅读顺序分别插于 Q10/Q11、Q17/Q18、Q24/Q25 之间）。
 3. 附录：三问使用指南。
 
 ---
@@ -178,6 +178,25 @@ appendix_paths = []
 if DRAFTS_DIR.exists():
     chapter_paths = sorted([p for p in DRAFTS_DIR.glob("Q*.md") if p.is_file()], key=q_sort_key)
     appendix_paths = sorted([p for p in DRAFTS_DIR.glob("附录*.md") if p.is_file()], key=lambda p: p.name)
+
+# 阅读顺序：致读者在 Q00 之前；三座幕间桥插于对应章之后
+INTERLUDES_AFTER = {
+    "Q10": "幕间桥_二三幕.md",
+    "Q17": "幕间桥_三四幕.md",
+    "Q24": "幕间桥_Q24_Q25.md",
+}
+reading_order = []
+front_page = DRAFTS_DIR / "致读者.md"
+if front_page.exists():
+    reading_order.append(front_page)
+for p in chapter_paths:
+    reading_order.append(p)
+    prefix = p.name.split("_")[0]
+    if prefix in INTERLUDES_AFTER:
+        interlude = DRAFTS_DIR / INTERLUDES_AFTER[prefix]
+        if interlude.exists():
+            reading_order.append(interlude)
+chapter_paths = reading_order
 
 if not chapter_paths:
     print("警告：未找到 Drafts_26Q/Q*.md 章节文件。", file=sys.stderr)
@@ -207,7 +226,7 @@ with FULL_CONTEXT.open("w", encoding="utf-8") as out:
         out.write(read_text(p).rstrip())
         out.write("\n")
 
-    out.write("\n\n# Part 2. 章节正文 Q00–Q28\n\n")
+    out.write("\n\n# Part 2. 章节正文（致读者 + Q00–Q28 + 幕间桥）\n\n")
     for p in chapter_paths:
         out.write("\n\n---\n\n")
         out.write(f"## FILE: `{p.relative_to(REPO_ROOT)}`\n\n")
