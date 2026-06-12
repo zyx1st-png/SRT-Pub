@@ -9,7 +9,7 @@ updated: 2026-06-12
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: master_beam_assembly_and_registration_2026-06-12
+last_pass: q07_deloop_special_complete_2026-06-12
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -97,7 +97,7 @@ last_pass: master_beam_assembly_and_registration_2026-06-12
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v15b`（v13-v15b：西蒙东亚稳态注、主动推断引文升级、独立路径佐证、新地板计数） |
 | Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v21`（v21 主梁试焊：§3“写入的两种命运”段，预埋 Q12） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v13`（v13 Traces of the Other 正文表达：被排除者以痕迹改变当前路径，而非完整返回） |
-| Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v13`（v13 回头轮：三联同步 + Q01 三测试兑现） |
+| Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v15`（v14 章末注重编号同步；v15 去环专项：§4“结构闭环”改“锚定阶梯”章内语汇） |
 | Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v12`（v12 Embodied Development 正文表达：波动有时是新稳定出现前的松动） |
 | Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v17`（v17 Embodied Development 正文表达：稳定是反复成功并被默认的装配史） |
 | Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v15`（v15 Prigogine/Stengers 正文表达：秩序靠流、代价与维护站住） |
@@ -137,7 +137,7 @@ last_pass: master_beam_assembly_and_registration_2026-06-12
 8. ~~第四幕（Q21-Q28）质量审计~~（2026-06-07 完成：经验入口、对手力度、跨领域折叠、理论自限四维通过；无需结构性修改）
 9. 全书语言润色第一轮：跨章节过渡衔接 + 重复句式消除 + 模板疲劳微调。
 10. 全书语言润色第二轮：逐章行级打磨。
-11. **Q07 去环专项**：§4“结构闭环”词级处理——全书唯一一处己方语态“闭环”残留（2026-06-12 校验读登记，见 `BOOK_VERIFICATION_READ_REPORT_2026-06-12.md`）。
+11. ~~Q07 去环专项~~（2026-06-12 完成：§4“结构闭环”改“走完留痕、承重、再入场的阶梯”，取 §2 既有“锚定阶梯”语汇；全量扫描确认其余“回路/循环”均有正当职务——神经/技术义、对手语态隔离墙、Q14 偏好图景贬抑装置、Q16 反馈对照论证——两处低优先候选 Q12 §4“构成一个循环”与 Q20 §4“社会回路”留作者裁决，未动）。
 12. **Q17/Q25 断言密度专项（硬触发已到，作者裁定 2026-06-12）**：`Q17_意识.md` 47,001 字节超过 connector-safe 上限 45,000——main 既有 CI 红灯（`scripts/check_book_outline_split.py`），先于总装各轮存在。本专项一次处理三件事：① 尺寸超限（CI 转绿）；② 断言密度（§4–§5 收敛）；③ 感受质安置强度（“候选模型”定位明确化）。Q25 随轮复核分化命题表达强度。在本专项完成前，Q17 尺寸红灯不阻断其他批次合并。
 
 ---
