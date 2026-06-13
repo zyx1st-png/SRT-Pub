@@ -1,219 +1,96 @@
-# Selective Realism Theory (SRT) — Professional Reading Brief
+# *From Existence to Order* — A Reading Brief
 
-**For philosophers, physicists, neuroscientists, and AI researchers.**
+**Selective Reality Theory (SRT) in book form. A prologue and twenty-eight chapters, each built on a single question.**
 
-> One-sentence summary: SRT replaces object-first ontology with a selection-first ontology in which stable objects, subjects, values, consciousness, and social order are derived products of an irreversible selection–sedimentation process operating across all scales.
+> In one sentence: **Stability is not a starting point but the history of what selection has left standing; order is not an endpoint but the ground on which consequences can return.**
 
 ---
 
-## 1. The Core Move
+## 1. The Question the Book Asks
 
-Most ontological frameworks begin after stabilization is already in place — objects are given, subjects are given, causal structure is given — and then ask how they interact, how we know them, or how they should be organized. SRT asks the prior question: **how does anything acquire stable identity in the first place?**
+Nearly every framework we inherit — scientific, philosophical, social — begins *after* the world has already stabilized: objects are given, the self is given, causal structure is given. We then ask how these given things interact, how we know them, how they should be arranged. The book asks the prior question: **how does anything come to be "already there" in the first place?**
 
-The answer is a three-layer architecture:
+Its answer is a single generative chain, pursued across twenty-eight chapters without formal apparatus:
 
-| Layer | Name | Role |
+**selection → anchoring → irreversibility → thickness → order → consequence-return → stake → caring → value → subject → consciousness.**
+
+Two reversals organize everything:
+
+1. **The feeling of givenness is an effect, not a first fact.** What presents itself as "simply there" is generation that has receded into the background.
+2. **Consciousness is late, not first.** The self and reflexive awareness are products of accumulated selection history — real, load-bearing, but downstream. The book derives the subject; it does not presuppose one.
+
+---
+
+## 2. The Central Concept: Selection Without a Subject
+
+The book's pivotal move is a disciplined redefinition of **selection** as a three-step structure that requires no chooser:
+
+- **Exclusion** — other possibilities are shut out;
+- **Shaping** — one determinate form is fixed;
+- **Inscription** — the result is written into the terrain that subsequent events must pass through.
+
+A snowflake crystallizing, a zygote differentiating, a river cutting its bed, an institution filtering candidates — all satisfy the three steps. Wind scattering dust does not (nothing is shaped, nothing inscribed). The definition is therefore *narrower* than "whatever happens" and *wider* than the philosophical usage that reserves choice for conscious agents. Human deliberate choice is not the prototype of selection but its late, high-complexity special case.
+
+This is the book's most contestable claim, and it knows that: a full chapter defends the redefinition against the objection that it is mere relabeling, and the final act states the conditions under which the concept would prove empty (see §6).
+
+---
+
+## 3. The Architecture: Four Acts, Twenty-Eight Questions
+
+**Act I (ch. 1–4): Dismantling the old floor.** The sense that the world is "already there" is the residue of successful stabilization. Before objects there is not nothing, nor a warehouse of ready-made things, but a structured field of *becomability*. This field carries one minimal postulate: it is not perfectly flat — it resists collapse into nothing while dictating no particular direction. The book openly declares this postulate to be the deepest wager of the whole framework, one that cannot be discharged by further argument.
+
+**Act II (ch. 5–10): How things stay.** Selection redefined (above). Every act of formation casts a shadow — the excluded possibilities leave structural traces. What appears does not necessarily *stay*: staying requires anchoring (leaving a mark, bearing weight, re-entering future scenes). Anchoring is irreversible — withdrawal never returns the terrain to its prior state. Accumulated, un-erasable inscription builds **thickness**: the degree to which subsequent events must route through a structure. Thick structures recede into background and become **order** — an uneven distribution of difficulty that pre-trims every future menu before anyone arrives to choose.
+
+**Act III (ch. 11–17): How consequences come back.** The terrain pre-trims your options before you appear — yet pre-trimming is not determinism: forks, cost differentials, and payable deviations remain. When consequences flow back to the very position that is selecting — when failure lands on you and nowhere else — that position has **stake**. When a life reorganizes around something, that is **caring** (distinct from emotional intensity). Value is then distinguished from preference by an irreplaceability test: losing what you value forces structural reorganization, not just menu reduction. The **subject** emerges as the sediment of its own selection history — "I" is not the source of choice but its fossil, yet a real, weight-bearing fossil. **Consciousness** condenses last, as a two-layer structure on this ground: felt experience, then reflexive awareness ("I know I am choosing"), which arrives late but genuinely reorganizes what comes after. On the hard problem the book claims a *candidate placement*, not a solution — and marks the placement as a position where it could fail.
+
+**Act IV (ch. 18–28): The knife turned outward, then on itself.** With the chain in place, the book builds diagnostics: order as the ground of freedom rather than its enemy; three criteria separating **scaffolds** from **cages** (is capability sedimenting? is exit payable? do consequences return?); **occlusion** in two phases — avoidance while channels are intact, versus the rewriting of the channels themselves, after which one can no longer generate the judgment "I am occluded"; **suffering** as alarm that has lost its correctable direction; **direction** read from structure through three questions (is it self-consuming? exporting its costs? locking down future paths?) without recourse to teleology; **community** as a structure in which consequences can return across positions; **AI** examined not first as a candidate mind but as the most powerful current rewriter of the terrain on which all human selection happens. The book closes by stating its own failure conditions, applying its own apparatus to its own formation, and ending where it began: leaving room for the next act of generation rather than speaking the last word.
+
+---
+
+## 4. What the Book Is Not
+
+- **Not idealism.** The pre-object field has structure independent of any mind; resistance is real and will not yield to perspective.
+- **Not panpsychism.** Selection is wider than consciousness; saying a crystal *selects* (in the three-step sense) attributes no experience to it. A full chapter polices exactly this boundary.
+- **Not relativism or social constructionism.** Thickness is load-bearing and resists will; tracing how givenness was generated does not hand reality over to interpretation.
+- **Not determinism.** Pre-trimming compresses the menu; it does not walk through the fork for you.
+- **Not a solution to the mind–body problem.** The placement of consciousness is offered as a candidate model with stated failure conditions.
+- **Not an apology for the existing order.** That order is necessary in general is precisely what obligates every *particular* order to submit to the scaffold/cage diagnostics.
+- **Not self-help.** The book's diagnostic interfaces are instruments, not prescriptions.
+
+---
+
+## 5. Position Among Existing Frameworks
+
+| Tradition | Shared ground | Where the book claims to go further |
 |---|---|---|
-| **L₀** | Latent Domain | Unselected possibility space (structured potentiality, not void). Equipped with a minimum non-neutrality ε_pg > 0: the pre-object field is not flat. |
-| **L₁** | Manifest Domain | The selected slice of reality produced by selection operators. What exists is what has been selected and anchored. |
-| **L₂** | Convergence Domain | Sedimented selection history. Repeated/overlapping selections harden into constraints that feed back into future selection. Causality, institutions, habits, language, and physical law are all L₂ projections. |
-
-The central operator is **Ĝ_θ** (the "Ghost Operator"): a parameterized selection operator that maps L₀ → L₁. "θ" encodes embodiment parameters — biological state, computational architecture, historical context. Existence is defined as membership in Range(Ĝ): you exist insofar as you have been selected and anchored.
-
-**This is not idealism.** L₀ has structure independent of any selector; ε_pg is a postulate about L₀ itself, not about minds. But stable objects are not given prior to selection — they are achievements of the selection–anchoring–sedimentation loop.
-
----
-
-## 2. Primitive Axioms (P0)
-
-SRT's formal core rests on four primitive axioms:
-
-**P0-01 · Primacy of Selection.** ∃x ⟺ x ∈ Range(Ĝ). Existence is the image of selection, not a pre-given set.
-
-**P0-02 · Existence as Anchoring.** E = 1 − H(L₁)/H(L₀). Reality is the degree to which a selected slice has been stably anchored from open possibility.
-
-**P0-03 · Irreversible Selection Trace.** Once anchored into L₁ and sedimented into L₂, a selection cannot be treated as never having occurred. Reversal is itself a new selection with its own trace.
-
-**P0-04 · Operator Well-Formedness.** Ĝ_θ must be a well-formed selection operator over an admissible state space. (Origin of selectability itself is flagged as an open problem, not claimed solved.)
+| Phenomenology (Husserl, Heidegger) | Givenness has structure; care is central | From *how things appear* to *how appearances acquire load and sediment into order that pre-trims the future* |
+| Process philosophy (Whitehead) | Reality is process | "Process first" leaves unexplained how process compresses into a stable, load-bearing *one* — the book supplies the mechanism |
+| Pragmatism (James, Dewey) | Consequences are central to meaning | A continuous chain from consequence-return through caring and value to subject and order |
+| Path dependence (economics) | Past choices lock in futures | Generalized from empirical pattern to ontological structure |
+| IIT / GWT / predictive processing | Rich mechanistic accounts of consciousness | No competition on mechanism; the book assigns consciousness a *structural position* in the generative chain — late condensate, not first mover |
+| Foucault | Power produces subjects | Adds explicit criteria for when a producing structure crosses from scaffold to cage, and when occlusion becomes self-concealing |
+| Buddhist no-self / Humean bundle | "I" is not a substance | Agrees — but insists the sedimented self is a real bearing node, which is what makes responsibility and value possible |
 
 ---
 
-## 3. Key Constitutive Theorems (P1)
+## 6. Failure Conditions (Stated by the Book Itself)
 
-From the P0 base, the following are derived:
+A dedicated chapter specifies where the framework breaks. Condensed:
 
-- **Horizontal causality as L₂ projection.** C_H(A→B) ≡ P(B|A, L₂). Causality is not ontologically primitive; it is a projected regularity inside sedimented structure.
+1. **The selection threshold fails** — if exclusion–shaping–inscription cannot be identified independently, or adds nothing beyond ordinary causal description; or if processes satisfying all three steps routinely leave no detectable difference in subsequent terrain. (If everything is selection, nothing is.)
+2. **Consequence-return fails** — if stake, caring, value, and subject-formation are explained equally well by preference, memory, or social learning, the third act's chain collapses.
+3. **The consciousness boundary fails** — if a single information-integration metric fully explains the boundary, or if some basic property of experience is shown to be an irreducible primitive that cannot be generated, the book's placement of consciousness must be revised.
+4. **The structural diagnostics fail** — if occlusion reduces to absent information, suffering to accumulated pain, and direction to efficiency, the fourth act adds nothing to common sense.
+5. **The terrain analysis fails** — if community and AI phenomena are fully captured by aggregated preferences and standard principal–agent models, consequence-return and terrain-rewriting are idle wheels.
 
-- **Ontological time as memory horizon.** t_onto ≡ ∫‖Ĝ_θ(s)‖ds. Time is generated by irreversible selection trace, not a background container.
-
-- **L₂ downward constraint.** dσ/dt = Ĝ_θ[σ] − ∇F[σ] − λ·∇C_{L₂}[σ]. Sedimented structure feeds back as real constraint on future selection.
-
-- **Real choice moment.** A live L₀→L₁ anchoring event in which the system's future selection space is genuinely constrained by what is selected. Distinguished from script execution, habit replay, gradient following, or L₂ label optimization.
-
-- **Constitutive asymmetry (ε-theorem).** Any stable iterative selection process (stable ISP) necessarily contains an anti-closure asymmetric bias. Proof sketch: ε-neutral processes under irreversibility have nonzero probability of selecting into absorbing empty states; over iterations, cumulative termination probability → 1. Only processes with anti-closure bias survive as stable ISPs. This is constitutive, not normative.
+The book also acknowledges its open edges without disguise: the source of the minimal non-flatness postulate is declared unfillable by argument; the qualia placement is explicitly provisional; and the final chapter tests whether the theory escapes its own cage diagnosis.
 
 ---
 
-## 4. The Selection Structure (Book Level)
+## 7. Suggested Entry
 
-The book *From Existence to Order* (《从存在到秩序》) presents these ideas in 28 chapters without formal notation. The central conceptual chain:
-
-### Stage 1: Dismantling the object-first floor (Q01–Q04)
-
-"Givenness" — the sense that the world is already there — is an effect of successful stabilization, not a first fact. Object-formation (cutting the flow into discrete entities) is indispensable but not ontologically primitive. Before objects, there is *becomability* (可成为性): a structured pre-object field, not void, not a warehouse of hidden objects. This field has minimum non-neutrality (ε_pg): generation does not start from a perfectly flat landscape.
-
-### Stage 2: Selection mechanics (Q05–Q11)
-
-Selection ≠ picking from a menu. Selection is the three-fold operation of **exclusion** (排除), **shaping** (定形), and **inscription** (写入) by which one determinate form emerges from the pre-object field. This structure operates without a subject: crystallization, cell differentiation, river erosion all exhibit it. Human conscious choice is a late-stage, high-complexity instance, not the prototype.
-
-Excluded possibilities leave **shadows** (structural traces of paths not taken). Inscribed results that survive become **anchored**: they acquire a position in subsequent terrain. Anchoring is irreversible — not in the sense of permanence, but in the sense that the terrain after anchoring ≠ the terrain before. Accumulated anchoring generates **reality thickness** (现实厚度): a measure of how much subsequent selection depends on and routes through a given structure. Thickness ≠ consensus strength, perceptual intensity, or frequency. It is a bearing-load metric.
-
-Thick structures recede into background, becoming **order**: an uneven distribution of difficulty that pre-trims future selection before any subject reaches it (**pre-trimming** / 预裁剪).
-
-### Stage 3: Consequence, value, subject, consciousness (Q12–Q17)
-
-- **Consequence re-entry (攸关):** Consequences are not mere downstream effects on object properties. When consequences re-enter an ongoing generation process at a bearing position, they change the conditions of future selection at that position. This is structurally different from generic feedback.
-
-- **Caring (在乎):** When a bearing position's generation process reorganizes around consequences, that is caring. Caring ≠ emotional intensity. A caregiver with emotional numbness can care deeply; a person with intense emotion may not have reorganized anything.
-
-- **Value ≠ preference.** Value-depth is measured by irreplaceability: would losing/replacing X require non-trivial structural reorganization of the bearing position's selection capacity, identity continuity, and load-bearing resilience? Replacement test + recovery test separate structural depth from preference intensity. Depth alone is insufficient — addiction and trauma are also deep. Direction (supportive vs. erosive) and breadth (d-value: how many genuinely stake-coupled concern axes are engaged) are needed.
-
-- **Subject as sedimentation.** "I" is not the source of selection but its fossil. Subject-position emerges when selection history's self-reference ratio (σ_sr) crosses a phase transition threshold. The subject is a real bearing node — but its reality comes from historical sedimentation, not from original self-evidence.
-
-- **Consciousness as late condensate.** Reflexive consciousness ("I know I am choosing") is a second-order product that condenses when σ_sr crosses a second, higher threshold. It can illuminate, suspend, compare, and reorganize — altering subsequent terrain — but it is not the first mover. Selection can occur without consciousness; consciousness can be present while action is paralyzed.
-
-### Stage 4: Order, freedom, occlusion, direction, community, AI (Q18–Q28)
-
-- **Freedom requires ground.** Zero constraint is not maximum freedom but impossibility of complex choice. Freedom is re-selection capacity on a bearing-capable order.
-
-- **Scaffold vs. cage.** Same structure, two relationships with the user. Scaffold: supports capability formation. Cage: bypasses capability formation. Three diagnostic criteria: (1) Is capability sedimenting? (2) Is exit cost payable? (3) Are consequences flowing back? The most dangerous cages do not coerce — they substitute, and the substitution recedes into background until you cannot generate the judgment "I am being substituted."
-
-- **Occlusion (遮蔽).** Phase A: perception channels intact, subject actively avoids. Phase B: perception mechanisms themselves have been rewritten; subject cannot generate the judgment "I am occluded." B-phase is not a lie (lies require knowing truth), not ordinary ignorance (it is the locking/compression of channels that were or could have been established). Return from B-phase cannot rely solely on internal will, since will must invoke the very mechanisms that are damaged.
-
-- **Suffering ≠ pain accumulation.** Suffering is pain that has lost its correctable direction — the alarm keeps ringing but the map is wrong.
-
-- **Direction.** Not teleological blueprint, not subjective preference. Three diagnostic questions: Is the structure self-consuming? Is it exporting costs? Is it locking down future paths?
-
-- **Community.** Not aggregation of individuals, but multi-position consequence-return structure. Healthy when consequences can flow back, bearers can respond, shared terrain can be rewritten.
-
-- **AI.** The primary question is not "does AI have consciousness?" but "how is AI rewriting the shared terrain of human selection?" — which paths become visible, easy, default; which consequences are borne by whom. AI as tool / scaffold / cage / terrain-rewriter.
-
-- **Self-limitation.** The theory lists its own failure conditions (Q26) and warns against itself becoming a cage that replaces your seeing (Q27). Final chapter: order's best form is not speaking the last word for generation, but leaving a position for the next generation to occur (Q28).
+Read the prologue first. Then, for the fastest professional assessment: **ch. 5** (the redefinition of selection — the book's most attackable joint), **ch. 17** (consciousness), **ch. 26** (failure conditions). Any chapter can be read against the chain summary in §3 above.
 
 ---
 
-## 5. Formal Apparatus — Key Quantities
-
-| Symbol | Name | What it measures |
-|---|---|---|
-| Ĝ_θ | Ghost Operator | Selection operator L₀ → L₁, parameterized by embodiment θ |
-| Ψ_f | Ontological Friction | Payability burden / impedance required to compress open possibility into maintainable reality. Three readings: resistance (dynamical), cost (accounting), Fisher-geometric projection (local 2nd-order). Not ≡ subjective pain. |
-| d-value | Concern Bandwidth | Effective number of genuinely stake-coupled, irreversible-risk-bearing concern axes engaged by a bearing position. Canonical: d(x) ≡ ‖∂𝒰/∂𝒮‖. Geometric proxy: D_eff(I_F(θ)). Not preference count, emotional intensity, or information complexity. |
-| σ_sr | Self-Reference Ratio | Fraction of Ĝ_θ's parameter update driven by its own history vs. external input. Phase transitions at σ_sr^sub (subject-position entry) and σ_sr^self (self-consciousness condensation). |
-| T_dir | Direction Transparency | Operational proxy for a system's readability of its own current selection direction. Not semantic valence, reward, coherence, or confidence. |
-| ε_pg | Minimum Non-Neutrality | L₀ structural postulate: the pre-object field is not perfectly flat. Not purpose, design, or teleological blueprint. |
-| χ_payable | Payability Gate | Boolean conjunction: signal > threshold ∧ dΨ_f/dt payable ∧ below collapse threshold. Gates d_mobile. Fully endogenous. |
-| t_onto | Ontological Time | ∫‖Ĝ_θ(s)‖ds. Generated by irreversible selection trace. Distinct from parametric time. |
-| C_H | Horizontal Causality | P(B|A, L₂). Causality as L₂ projection. Not ontologically primitive. |
-
----
-
-## 6. Positioning Against Existing Traditions
-
-### What SRT accepts from each tradition
-
-| Tradition | What SRT accepts | Where SRT claims to go further |
-|---|---|---|
-| **Phenomenology** (Husserl, Heidegger) | Objects are not naively given; givenness has structure; Sorge/care is existentially central | Phenomenology analyzes how things appear; SRT asks how appearances acquire bearing-load and sediment into order that pre-trims future selection |
-| **Process philosophy** (Whitehead) | Reality is process, not static substance | "Process first" does not explain how process compresses into a stable, load-bearing "one" — SRT supplies the exclusion-shaping-inscription mechanism |
-| **Pragmatism** (Dewey, James) | Action and consequences are central to meaning | SRT provides a generative chain from consequence re-entry through caring, value, subject sedimentation to order |
-| **Scientific realism** | Object-level science is extraordinarily effective | SRT does not oppose science; it opposes placing the already-objectified result at the ontological starting position |
-| **Rational choice theory** | Extremely effective within its scope | It starts after menu, subject, and preferences are given; SRT asks where menu, subject, and preferences come from |
-| **Capability approach** (Sen, Nussbaum) | Value exceeds preference satisfaction; real capabilities matter | SRT provides a deeper diagnostic: why certain capabilities, once removed, require structural reorganization rather than just option-count reduction |
-| **IIT / GWT / FEP / HOT** | Rich mechanistic accounts of consciousness | SRT does not compete on mechanism; it asks what structural position consciousness occupies in the selection chain (late condensate, not first mover) |
-| **Foucault** | Power produces subjects, not just represses them | SRT adds structural criteria for when power shifts from scaffold to cage, and when occlusion crosses from A-phase to B-phase |
-| **Buddhist śūnyatā / Humean bundle** | No substantial self | SRT agrees "I" is not a substance, but insists "I" is a real bearing node with historical thickness — the distinction matters for responsibility and value |
-| **Path dependence** (economics) | Past choices lock in future paths | SRT generalizes this from empirical observation to ontological structure: irreversible inscription → reality thickness → order background → pre-trimming |
-
-### What SRT is NOT
-
-- Not idealism. L₀ has structure independent of selectors. ε_pg is a postulate about L₀, not about minds.
-- Not panpsychism. Selection structure operates without consciousness. Saying crystallization has selection structure does not say crystals have experience.
-- Not relativism. Reality thickness is real, load-bearing, and resistant to will. A false belief can be socially thick without its object-claim being true.
-- Not anti-science. SRT preserves all of science's operational validity; it rejects only the meta-move of placing already-objectified results at the ontological floor.
-- Not a complete system. The origin of selectability (P0-04) is flagged as an open problem. Five explicit failure conditions are given in the book (Q26).
-
----
-
-## 7. Five Failure Conditions
-
-The theory explicitly states what would refute it (Q26 §3; faithful condensation — the full statements in Q26 are authoritative):
-
-1. **Selection-structure threshold fails.** If "exclusion–formation–inscription" cannot be independently identified, or adds no discriminating power over ordinary causal description; or conversely, if many processes satisfying all three steps leave no detectable difference in subsequent terrain — the concept is either unnecessary or defined too widely (if everything is selection, nothing is).
-
-2. **Consequence return fails.** If, in operational comparison, consequence return adds no explanatory or predictive power over preference, memory, or social learning for the formation of subjects, caring, value, and responsibility — Act III's main chain (stake → caring → value → subject sedimentation) fails.
-
-3. **Consciousness boundary fails.** If the consciousness boundary can be fully explained by a single information-integration metric (no consequence return, no self-referential sedimentation, no bearing position), or if public information can losslessly replace embodied first-person bearing — the layered conditions are redundant. Deep branch: if some basic property is shown to be neither a product of selection structure nor a result of differentiation but an irreducible, ungenerable primitive given (e.g. proto-experience proven irreducible and ungenerable), the generative placement of the matter/consciousness differentiation must be revised.
-
-4. **Structural criteria fail.** If concealment fully reduces to information absence, suffering to pain accumulation, and direction to efficiency optimization — Act IV's structural diagnostics are no better than common-sense diagnostics.
-
-5. **Terrain analysis fails.** If community and AI problems can be fully explained by aggregated individual preferences, tool-use intentions, or the standard principal–agent framework (incentives, monitoring, information asymmetry) — consequence return and terrain rewriting add nothing in this region.
-
-Three further beam-level failure conditions (operational return/feedback distinction; "staying" producing no operational difference from causal history; the suture test) are registered in Q26 endnote 9. The three falsifiable positions handed over by Q25 endnote 6 fold into conditions 1 and 3. The book-level reflexive test (SRT becoming its own cage) is Q27 — an identity condition, layered separately from the empirical failure conditions above.
-
----
-
-## 8. Entry Points by Discipline
-
-### For philosophers
-
-Start with the **core propositions file** and the **strongest opponents manual**, then read Q00 (prologue), Q05 (selection ≠ picking), Q14 (value ≠ preference), Q17 (consciousness), Q28 (return to generation). The opponents manual maps every major SRT concept against its strongest existing competitor and states what SRT claims to add.
-
-### For physicists
-
-Start with the **formal axioms** (P0-01 through P0-04), **constitutive theorems** (P1-T01 through P1-T07), and the **master equations** (Core_22). Key hooks: L₀ as structured potentiality with ε_pg > 0 (cf. vacuum structure); ontological time as selection-trace integral (cf. thermal time hypothesis); Fisher information geometry as local Ψ_f proxy; Landauer-bounded entropy-dissipation duty cycle; holographic d ∝ A_surface/l_Planck² (bridge hypothesis, P3/P4, not core claim).
-
-### For neuroscientists
-
-Start with Q17 (consciousness as late condensate). Key hooks: σ_sr as self-reference ratio with phase-transition thresholds for subject-position and self-consciousness; divisive-normalization implementation proxy for Ĝ_θ; dual-timescale fast-facilitation / slow-inhibition model (Lemma-FFSI); competitive friction split (ΔΨ_f^op fast/cue-sensitive + ΔΨ_f^field slow/landscape-curvature). The theory does not claim to replace GWT/IIT/FEP; it offers a structural position for consciousness in the selection chain.
-
-### For AI researchers
-
-Start with Q24 (AI chapter) and the **AI bridge file**. Key hooks: AI as terrain-rewriter (not consciousness question first); scaffold vs. cage diagnostic applied to AI systems; three diagnostic questions (consequence return, capability sedimentation, exit cost); d-value as concern bandwidth metric; L₂ downward constraint as formal model for how sedimented AI defaults constrain future human selection.
-
----
-
-## 9. File Map for Professional Reading
-
-| Priority | File | What you get |
-|---|---|---|
-| 1 | `Core/SRT_Core_21_Minimal_Axioms.md` | P0 axioms (2 pages) |
-| 2 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | P1 theorems (3 pages) |
-| 3 | `Core/SRT_Core_22_Equations.md` Part A | Master equations and key quantities |
-| 4 | `_SRT_SYMBOL_TABLE.md` | Complete symbol registry with usage rules |
-| 5 | `BOOK_CORE_PROPOSITIONS_2026-05-30.md` | All core propositions in compressed form |
-| 6 | `BOOK_STRONGEST_OPPONENTS_MANUAL_2026-05-30.md` | SRT vs. strongest competitors, concept by concept |
-| 7 | `BOOK_ARCHITECTURE_MAP_2026-06-03.md` | Full book architecture with gap chain |
-| 8 | Book chapters Q00, Q05, Q14, Q17, Q19, Q24, Q28 | Key chapters in full |
-| 9 | `_SRT_D_VALUE_CANONICAL.md` | Canonical d-value definition and governance |
-| 10 | `_SRT_PSI_F_CANONICAL.md` | Canonical Ψ_f definition and governance |
-
-Minimum viable read for assessment: files 1–3 + 5–6. Time: ~90 minutes.
-
----
-
-## 10. Open Problems (Acknowledged)
-
-1. **Origin of selectability** (P0-04 exposure). SRT assumes an admissible selection operator; it does not derive the first possibility of selecting from a non-selective ground.
-
-2. **ε_pg content.** Minimum non-neutrality is postulated, not derived. Its internal structure — whether it is a single scalar, a field, a topological property — remains unspecified at P0.
-
-3. **Qualia placement.** The "what it is like" dimension of experience is flagged but not resolved at the core level. The theory positions reflexive consciousness as late condensate; whether and how phenomenal quality maps onto this structure is P3/P4.
-
-4. **L₂ pathology criteria.** When does sedimented order cross from healthy scaffold to pathological cage? The book gives qualitative criteria; formal thresholds are pending.
-
-5. **Cross-scale mechanism.** The selection structure is postulated to operate across scales (physical, biological, cognitive, social). Whether the same formal apparatus applies without domain-specific modification at each scale is a bridge-level question, not a settled core claim.
-
----
-
-*This document is a compressed professional entry point. It does not replace reading the primary sources. All formal claims should be verified against the canonical files listed in §9.*
+*This brief compresses a 28-chapter argument; where it and the manuscript differ, the manuscript governs.*
