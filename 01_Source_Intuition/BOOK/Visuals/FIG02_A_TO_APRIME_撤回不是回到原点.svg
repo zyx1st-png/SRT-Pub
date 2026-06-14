@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">图 2：A 与 A′——撤回不是回到原点</title>
+  <desc id="desc">选择之前的地形 A 经过选择、结果留下、撤回或修复之后，成为经历过选择与撤回的新地形 A′。A 与 A′ 不是同一状态。</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#333333"/>
+    </marker>
+    <marker id="arrowDashed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#777777"/>
+    </marker>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; font-size: 32px; font-weight: 700; fill: #111111; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; font-size: 20px; fill: #444444; }
+      .box { fill: #ffffff; stroke: #333333; stroke-width: 2.2; rx: 18; ry: 18; }
+      .box-emph { fill: #f7f7f7; stroke: #111111; stroke-width: 2.8; rx: 18; ry: 18; }
+      .node-title { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; font-size: 24px; font-weight: 700; fill: #111111; }
+      .node-body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; font-size: 17px; fill: #333333; }
+      .arrow { stroke: #333333; stroke-width: 2.6; fill: none; marker-end: url(#arrow); }
+      .dashed { stroke: #777777; stroke-width: 2.4; stroke-dasharray: 8 8; fill: none; marker-end: url(#arrowDashed); }
+      .label { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; font-size: 18px; fill: #555555; }
+      .note { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; font-size: 19px; font-weight: 600; fill: #222222; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1280" height="520" fill="#ffffff"/>
+
+  <text x="60" y="58" class="title">图 2：A 与 A′——撤回不是回到原点</text>
+  <text x="60" y="92" class="subtitle">撤回不是倒带，是在已经写过的地形上再写一笔。</text>
+
+  <!-- Node A -->
+  <rect x="70" y="175" width="190" height="110" class="box"/>
+  <text x="165" y="218" text-anchor="middle" class="node-title">A</text>
+  <text x="165" y="248" text-anchor="middle" class="node-body">选择之前的地形</text>
+
+  <!-- Node B -->
+  <rect x="330" y="175" width="190" height="110" class="box"/>
+  <text x="425" y="223" text-anchor="middle" class="node-title">选择发生</text>
+  <text x="425" y="252" text-anchor="middle" class="node-body">某个方向被定形</text>
+
+  <!-- Node C -->
+  <rect x="590" y="175" width="190" height="110" class="box"/>
+  <text x="685" y="223" text-anchor="middle" class="node-title">结果留下</text>
+  <text x="685" y="252" text-anchor="middle" class="node-body">痕迹进入地形</text>
+
+  <!-- Node D -->
+  <rect x="850" y="175" width="190" height="110" class="box"/>
+  <text x="945" y="216" text-anchor="middle" class="node-title">撤回 / 修复</text>
+  <text x="945" y="246" text-anchor="middle" class="node-body">恢复表面结果</text>
+  <text x="945" y="270" text-anchor="middle" class="node-body">但不清零历史</text>
+
+  <!-- Node E -->
+  <rect x="1090" y="160" width="150" height="140" class="box-emph"/>
+  <text x="1165" y="210" text-anchor="middle" class="node-title">A′</text>
+  <text x="1165" y="240" text-anchor="middle" class="node-body">经历过之后</text>
+  <text x="1165" y="264" text-anchor="middle" class="node-body">的新地形</text>
+
+  <!-- Arrows -->
+  <path d="M 260 230 L 325 230" class="arrow"/>
+  <path d="M 520 230 L 585 230" class="arrow"/>
+  <path d="M 780 230 L 845 230" class="arrow"/>
+  <path d="M 1040 230 L 1085 230" class="arrow"/>
+
+  <!-- Dashed non-identity relation -->
+  <path d="M 168 292 C 270 400, 1000 405, 1160 306" class="dashed"/>
+  <text x="650" y="413" text-anchor="middle" class="label">A 与 A′ 可以很像，甚至功能上几乎等价，但不是同一状态</text>
+
+  <!-- Footer note -->
+  <text x="640" y="470" text-anchor="middle" class="note">核心判据：撤回恢复的是表面结果；不可清零的是“经历过”这一段写入史。</text>
+</svg>
