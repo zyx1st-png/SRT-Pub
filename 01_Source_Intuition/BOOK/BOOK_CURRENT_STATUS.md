@@ -9,7 +9,7 @@ updated: 2026-06-15
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: q17_v26_consciousness_structure_pass_2026-06-15
+last_pass: q04_q09_remote_main_conflict_absorb_micro_polish_2026-06-15
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -97,12 +97,12 @@ last_pass: q17_v26_consciousness_structure_pass_2026-06-15
 | Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v18`（v18 多模型 skill 小步优化：开场护栏语气软化、神经科学显影段拆句、章末边界段拆长句；评审复核：删§3 重复换气段、格言句移至命名后、守边界动词统一“守住”） |
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v19`（v19 行级打磨：“有效≠本体论”五现收敛、§6 三重问压缩、§7 逐段道歉删除） |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v18`（v18 行级打磨：§5 缺口命名去重、代价论证归 §6 单点、边界双段合并、虚轴护栏去重） |
-| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v16`（v16 行级打磨：双“普通读者记住”去重、“只做一件事”去重、§9 边界重申段删除） |
-| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v23`（v23 行级打磨：“再钉一遍边界”重复护栏段删除、§3 参与句尾去重、§5 换句话说重述删除） |
+| Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v21`（v21 远端 main 底稿微吸纳：硬币段补“非对象/非蓝图”边界，修正引号） |
+| Q05 | `Drafts_26Q/Q05_选择不是挑选.md` | `draft_v28`（v28 远端 main 底稿微吸纳：行动理论段补“选项/行动者稳定之前”的边界句） |
 | Q06 | `Drafts_26Q/Q06_排除与阴影.md` | `draft_v15`（v14 Deacon 缺席因果注八漏记补正；v15 行级打磨：§3“本章不重复”元话语删、“换句话说”重述压缩） |
 | Q07 | `Drafts_26Q/Q07_锚定.md` | `draft_v17`（v17 行级打磨：§2 双搭桥合并、§6 量子段三重道歉收为指针） |
-| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v16`（v16 行级打磨：§3 修复重量段与章末收口近逐字重复去重） |
-| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v21`（v21 行级打磨：§7 边界清单回收例删除、§4 操作抓手段压缩） |
+| Q08 | `Drafts_26Q/Q08_不可逆性.md` | `draft_v24`（v24 远端 main 底稿微吸纳：修复护栏转正面表达并统一引号） |
+| Q09 | `Drafts_26Q/Q09_现实厚度.md` | `draft_v25`（v25 远端 main 底稿微吸纳：峡谷转场、厚度/响度句、厚≠真/正当护栏加强） |
 | Q10 | `Drafts_26Q/Q10_秩序背景化.md` | `draft_v17`（v17 行级打磨：§5 中性边界尾句收为指针、物理显影双重道歉压缩） |
 | Q11 | `Drafts_26Q/Q11_被选择.md` | `draft_v16`（v16 Traces of the Other 正文表达：可见性是接口结果，不是世界边界） |
 | Q12 | `Drafts_26Q/Q12_攸关.md` | `draft_v19`（v19 行级打磨：§4 具身位判据重述删，留反向警示） |
