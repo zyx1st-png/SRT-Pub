@@ -9,7 +9,7 @@ updated: 2026-06-15
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: q00_v28_external_editor_proxy_endnote_pass_2026-06-15
+last_pass: q01_v18_multimodel_skill_reader_breathing_pass_2026-06-15
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -94,7 +94,7 @@ last_pass: q00_v28_external_editor_proxy_endnote_pass_2026-06-15
 |---|---|---|
 | 致读者 | `Drafts_26Q/致读者.md` | `draft_v4`（v4 口径对齐：地板句后半改“后果回得来的地面”；二三幕改留下/回来运动口径） |
 | Q00 | `Drafts_26Q/Q00_序章.md` | `draft_v28`（v28 外部编辑建议执行：第五节改为代理/写入加速的理论连续段，第四节强判断独立，章末注瘦身） |
-| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v17`（v16 craft 开拍漏记补正；v17 行级打磨：梦例前置道歉删除、双护栏合并、§4 接受句去重） |
+| Q01 | `Drafts_26Q/Q01_给定性.md` | `draft_v18`（v18 多模型 skill 小步优化：开场护栏语气软化、§3 三例后增加换气收束、神经科学显影段拆句、章末边界段拆长句） |
 | Q02 | `Drafts_26Q/Q02_对象化.md` | `draft_v19`（v19 行级打磨：“有效≠本体论”五现收敛、§6 三重问压缩、§7 逐段道歉删除） |
 | Q03 | `Drafts_26Q/Q03_前对象场.md` | `draft_v18`（v18 行级打磨：§5 缺口命名去重、代价论证归 §6 单点、边界双段合并、虚轴护栏去重） |
 | Q04 | `Drafts_26Q/Q04_最低非中立性.md` | `draft_v16`（v16 行级打磨：双“普通读者记住”去重、“只做一件事”去重、§9 边界重申段删除） |
