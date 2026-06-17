@@ -47,6 +47,12 @@ Public release is controlled outward expression. It is not canonical and not a s
 
 Follow-up note: The repository currently contains both `Papers/` and `papers/`; this index uses `Papers/` as the public-facing path. Directory deduplication is a later link-audit task.
 
+## Projects / Product Planning
+
+| File | Public role |
+|---|---|
+| [`Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_BUSINESS_PLAN_2026-06-17.md`](Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_BUSINESS_PLAN_2026-06-17.md) | Draft business plan for the Independent Researcher Platform; SRT-inspired but frontstage product-planning, non-canonical. |
+
 ## Future Public Buckets
 
 - `One_Pagers/`
@@ -56,6 +62,7 @@ Follow-up note: The repository currently contains both `Papers/` and `papers/`; 
 - `Substack_Zhihu_Wechat/`
 - `FAQ/`
 - `Visual_Maps/`
+- `Projects/`
 
 ## Use Rule
 
