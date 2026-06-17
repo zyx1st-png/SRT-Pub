@@ -1,7 +1,7 @@
 ---
 id: SRT-PAPER-NT1-DECOUPLED-TCI-2026-06-17
 type: philosophy_paper_draft
-status: assembly_v3
+status: assembly_v4
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: bridge
@@ -124,205 +124,96 @@ No stream determines another.
 
 ## §4. NT1 as a Decoupling Case
 
-NT1 exhibits a structured temporal separation between evidential anchoring and therapeutic recoupling.
+The argument of this section is that NT1 instantiates a structured temporal separation between evidential anchoring and therapeutic recoupling, and that this separation is visible only if the three upstream legs are read independently of the downstream domains they later influence. The reconstruction proceeds leg by leg—biomarker, mechanism, alignment—and then traces the downstream domains—diagnostic workflow, research-cohort formation, treatment—without allowing any downstream movement to retro-score an upstream leg. The order matters: each subsection is built so that the strength of one component is established on its own evidential basis before its relation to the others is described, which is what keeps the decoupling claim from collapsing into a single narrative of progress.
 
 ### 4.1 Biomarker leg: emergence and classification-operativity
 
-The hypocretin/orexin system was identified at the end of the 1990s, with converging evidence from genetic, neurobiological, and neurophysiological studies linking orexin signaling to narcolepsy phenotypes. CSF hypocretin-1 deficiency emerged as a robust and reproducible biomarker around 1999–2000.
+The biomarker leg begins with the identification of the hypocretin (orexin) system at the close of the 1990s. Convergent work across animal genetics, neurobiology, and human neurophysiology linked disrupted orexin signaling to the narcolepsy–cataplexy phenotype, and by 1999–2000 cerebrospinal-fluid hypocretin-1 deficiency had emerged as a reproducible, assay-anchored marker of the disorder [cite: hcrt-discovery]. It is important to date this carefully. What appears around 1999–2000 is a *biomarker*: a measurable, thresholdable quantity that reliably separates the cataplexy-bearing population from controls. Classification-operativity—the marker's authority to assign or reassign a case to a diagnostic category—does not arrive at the same moment. That authority is conferred later, when the marker is written into nosology.
 
-This biomarker is not merely correlational. Its significance lies in its **operational role in classification**. In ICSD-3 and DSM-5-aligned diagnostic frameworks, CSF hypocretin-1 is used to assign or reassign cases to NT1. This shifts it from biological indicator to classificatory criterion.
+The distinction between a marker's emergence and its classification-operativity is the first place where the decoupled reading does real work, so it should not be elided. Through the early 2000s, CSF hypocretin-1 functioned chiefly as a validating instrument: it confirmed, in research and specialist settings, that the cataplexy-defined population had a distinct biological signature [cite: mignot-2002]. Its promotion to a *criterion* came with the third edition of the International Classification of Sleep Disorders, which fixed a low CSF hypocretin-1 value (operationalized against a standardized reference) as a route to the diagnosis of narcolepsy type 1, on a par with the presence of cataplexy [cite: icsd3]. DSM-5, published in the same period, likewise incorporated CSF hypocretin deficiency as a diagnostic specifier within its narcolepsy criteria, so that low hypocretin became sufficient, in the presence of the core phenotype, to place a case [cite: dsm5]. The accurate statement is therefore not that the marker became classification-operative in the early 2000s, but that it *emerged as a biomarker around 1999–2000 and became classification-operative in the ICSD-3 / DSM-5 period*.
 
-Importantly, biomarker strength is coded independently of treatment outcome. The fact that no orexin-targeted therapy existed during most of this period does not affect its classification-operativity.
+Two features of this leg must be coded into the TCI and one must be kept out. The two that count are the assay—reproducibility, thresholding, reference standardization—and the nosology—the marker's written authority to assign cases. On both, NT1 sits at the top of the rubric: the marker is reproducible and it is classification-operative. The feature that must be kept out is treatment outcome. Throughout the period in which the biomarker became classification-operative, no orexin-replacing or orexin-targeted therapy existed; treatment was symptomatic. The biomarker leg scores high anyway, because its strength is read off the assay and the nosology and not off the therapeutic situation. This is precisely the firewall of §2.3 operating on live data: were treatment success allowed to weight the biomarker leg, NT1 would be mis-scored downward during exactly the years in which its marker was doing the most classificatory work.
 
 ### 4.2 Mechanism leg: partial closure structure
 
-NT1 is anchored by hypocretin-neuron loss in the lateral hypothalamus. This provides a proximate lesion linking biomarker to phenotype.
+The mechanism leg is anchored by a proximate lesion. Post-mortem and related studies established that NT1 is associated with a severe, selective loss of the hypocretin-producing neurons of the lateral hypothalamus, providing a concrete causal link between the absent marker and the phenotype [cite: peyron-thannickal]. This proximate account is strong enough that NT1 is often presented as a model neurological disorder with a known lesion, and it is what distinguishes the mechanism leg here from the merely correlational. But proximate lesion is not full mechanistic closure, and the gap between the two is where this leg earns its intermediate score.
 
-However, mechanistic closure is incomplete:
+Distal etiology—what destroys the neurons, and why—remains substantially open. The strongest distal signal is immunological. NT1 carries an unusually tight association with the HLA-DQB1\*06:02 allele, among the strongest HLA–disease associations known, and further genetic work has implicated the T-cell receptor locus and other immune-related variants, supporting an autoimmune model in which an antigen-specific T-cell response targets hypocretin neurons [cite: hla-tcell]. Environmental triggering has its own evidence stream: the rise in NT1 incidence following the 2009 H1N1 pandemic, associated both with infection in some populations and with a specific adjuvanted vaccine in others, is consistent with an immune precipitant acting on a susceptible genetic background [cite: h1n1]. Yet none of these strands closes the distal pathway. The putative autoantigen and the precise effector mechanism have not been pinned down with the certainty that the proximate lesion enjoys, and the autoimmune hypothesis, though well supported, is not settled at the level of a demonstrated causal chain.
 
-- strong HLA-DQB1*06:02 association
-- T-cell and immune involvement evidence
-- H1N1-related incidence changes in some populations
-- unresolved distal etiological pathway
+The correct coding of this leg is therefore *partial, not maximal*. NT1 is neither mechanistically empty nor mechanistically closed; it is a partially stabilized causal structure with a clear proximate lesion and an unresolved distal etiology. The two halves of the mechanism should not be collapsed into a single score precisely because they differ in maturity: the proximate account is closed enough to explain why the marker tracks the phenotype, while the distal account is open enough that one cannot yet say, with the confidence the lesion enjoys, what initiates the neuronal loss or how to interrupt it. That asymmetry is not a defect in the reconstruction; it is part of what is being reconstructed, because a mechanism that is closed proximally and open distally is exactly the kind of mechanism that can support classification while withholding a therapeutic target. Resisting the temptation to write NT1 up as a fully closed mechanistic kind is not modesty for its own sake—it is load-bearing for the decoupling claim. A fully closed mechanism would predict that mechanism, biomarker, and alignment had all matured together, and would make the therapeutic lag look like an anomaly rather than a structural feature. The partial-closure reading is what allows the legs to be genuinely out of phase: a marker strong enough to assign cases sits beside a mechanism rich enough to ground a lesion but too open to specify a target, which is itself part of why mechanism-targeted therapy arrived late.
 
-Thus NT1 is not a fully closed mechanistic system but a partially stabilized causal structure: proximate lesion is clear, distal causation remains open.
+### 4.3 Alignment leg: high but incomplete
 
-### 4.3 Cross-framework alignment leg
+Cross-framework alignment refers to the convergence of distinct evidential operators on the hypocretin-deficient category, and it must be distinguished at the outset from expert consensus. Consensus is agreement among people; alignment is convergence among evidential systems that answer to different methods and could, in principle, have failed to agree. NT1 displays alignment in this stronger sense. Sleep-medicine nosology (ICSD-3), psychiatric nosology (DSM-5), clinical neurology, neuropathology, immunology, and genetics, together with the design of intervention trials, all organize themselves around the same hypocretin-deficient entity [cite: icsd3; dsm5; hla-tcell; peyron-thannickal]. A neuropathologist counting surviving hypocretin neurons, an immunologist typing HLA alleles, a sleep physician reading a CSF assay against a threshold, and a trialist recruiting a stratified cohort are using independent operators that nonetheless pick out the same population. That mutual reinforcement across heterogeneous methods is what the alignment leg measures.
 
-NT1 exhibits convergence across heterogeneous evidential operators:
-
-- ICSD sleep medicine classification
-- DSM psychiatric classification
-- neurology and neuropathology lesion mapping
-- immunology and genetics, including HLA and T-cell signals
-- research trial design using hypocretin-defined cohorts
-
-This is not expert consensus. It is structural convergence across different evidential systems.
-
-However, alignment is incomplete:
-
-- NT2 instability
-- borderline hypocretin cases
-- cataplexy with normal hypocretin
-- residual classification ambiguity
-
-Thus alignment is high but not maximal.
+Alignment is high, but it is not maximal, and the residual instability is concentrated at the category's boundaries. Narcolepsy type 2—the cataplexy-absent, hypocretin-variable category—is notoriously unstable on retest and is the part of the nosology least secured by the marker [cite: nt2-instability]. Borderline CSF hypocretin values fall near the operative threshold and resist clean assignment; some patients with clear cataplexy present with hypocretin levels in the normal range; and a residue of cases sits in classificatory ambiguity that the marker does not dissolve [cite: borderline-hcrt]. These are not failures of the NT1 core, which is exactly why the leg scores high rather than low; they are limits at the margin that keep it from scoring at the ceiling. It matters for the decoupling argument that the incompleteness is located where it is. The fraying is at the boundary—NT2, borderline values, hypocretin-normal cataplexy—and not in the cataplexy-plus-low-hypocretin center, so the alignment that the downstream domains actually build on is the robust central convergence rather than the contested margin. The honest coding is therefore convergence that is robust at the center and frayed at the edge—high but incomplete alignment.
 
 ### 4.4 Diagnostic workflow impact
 
-CSF hypocretin testing becomes part of diagnostic reasoning. It enables:
+With the three upstream legs established, the reconstruction turns to the downstream domains, beginning with diagnostic workflow. Here the marker does visible practical work: CSF hypocretin testing enters the diagnostic pathway, a low value can assign a case directly to NT1, and ambiguous or atypical presentations can be reassigned in light of the assay, all within the ICSD-3 and DSM-5 frameworks that made the marker operative [cite: icsd3; dsm5]. The change is concrete at the level of clinical reasoning. Where the pre-marker pathway leaned on the elicitation and interpretation of cataplexy—a clinically subtle, history-dependent judgment—the marker offers a lumbar-puncture-based assay that can confirm or overturn that judgment, including in patients whose cataplexy is equivocal or absent on presentation. This both raises diagnostic confidence in the core cases and redraws the handling of the difficult ones. The methodological point is that all of this is a *downstream impact* of the biomarker leg, not an input to it. The TCI codes the biomarker on assay reproducibility and nosological authority; the workflow uptake is a consequence of that strength. Feeding it back into the score would double-count the same fact and blur the firewall that keeps evidential constraint separate from its institutional effects—and it would also obscure the temporal point that the workflow change followed the marker's promotion to a criterion rather than coinciding with its first emergence.
 
-- direct assignment of NT1
-- reclassification of ambiguous cases
-- integration into ICSD-3 and DSM-5 workflows
+### 4.5 Research-cohort formation impact
 
-This is downstream impact, not TCI input.
+The second downstream domain is the formation of research cohorts. As the marker stabilized, hypocretin-defined NT1 became an increasingly important basis for assembling study populations: immunological investigations, neuroimaging studies, genetic stratification, and trial recruitment have progressively organized themselves around hypocretin-deficient or cataplexy-plus-hypocretin status [cite: cohort-stratification]. The direction of travel is clear—biomarker anchoring supplies a stable cohort definition that downstream research can build on—but the strength of the claim should be calibrated to the available evidence. It would overstate the case to assert that all contemporary narcolepsy research now studies only hypocretin-deficient NT1; mixed and phenotype-defined cohorts persist, and the degree of stratification varies by subfield. The precise share of the literature that now stratifies on hypocretin status is a bibliometric question this paper does not resolve, and the claim is flagged accordingly [needs bibliometric support]. What can be asserted without that measurement is the qualitative point that suffices for the decoupling argument: a biomarker-anchored cohort definition exists and is increasingly load-bearing, and this is downstream impact rather than TCI input.
 
-### 4.5 Research-cohort formation
+The shifting basis of category assignment across periods can be summarized as follows; the table records *operative cohort terminology and the basis of assignment*, not changes in the underlying biology.
 
-Hypocretin-defined NT1 becomes a stable research population:
+| Period | Operative cohort terminology | Primary basis of category assignment |
+| --- | --- | --- |
+| before 2000 | narcolepsy / narcolepsy with cataplexy | clinical phenotype; cataplexy as anchor [cite: pre2000-nosology] |
+| 2000–2013 | narcolepsy with cataplexy; hypocretin-deficient narcolepsy (research) | clinical phenotype, with CSF hypocretin-1 as research validator [cite: mignot-2002] |
+| 2014–2025 | narcolepsy type 1 (NT1) | cataplexy and/or classification-operative low CSF hypocretin-1 (ICSD-3 / DSM-5) [cite: icsd3; dsm5] |
+| 2025–26 | NT1, increasingly in orexin-agonist trial framing | hypocretin-defined status as recruitment and stratification basis [cite: verify-current-status] |
 
-- immunology studies
-- neuroimaging studies
-- genetic stratification
-- clinical trial recruitment
+### 4.6 Treatment expansion but not orexin-targeted therapy
 
-This creates a stable cohort definition based on biomarker anchoring.
+The treatment domain is the crux of the decoupling claim, and it must be stated with care to avoid a false dichotomy. It is *not* true that treatment failed to change between 2000 and the mid-2020s. Over this period the therapeutic armamentarium expanded materially: sodium oxybate for cataplexy and disrupted nocturnal sleep, the histamine H3 inverse agonist pitolisant, the dopamine–norepinephrine reuptake inhibitor solriamfetol, and a range of traditional wake-promoting stimulants and other agents all entered or consolidated their place in care [cite: aasm-guideline; therapeutics-labels]. Patients in 2025 had more, and more differentiated, symptomatic options than patients in 2000.
 
-### 4.6 Treatment expansion: non-targeted phase
+What did not change is the *kind* of treatment on offer. Each of these agents is symptom-directed—wake-promoting, anti-cataplectic, or sleep-consolidating—and none replaces or directly targets the deficient orexin signal that the biomarker measures and the lesion explains. Treatment over this period therefore expanded symptomatically without becoming biomarker-driven or orexin-mechanism-targeted. This conclusion is drawn from the therapeutics and guideline literature on the agents themselves, not inferred from the biomarker's strength [cite: aasm-guideline; therapeutics-labels]; the firewall runs in this direction too, since reading the treatment situation off the biomarker would manufacture exactly the coupling the paper denies. The result is the signature of decoupling: a classification-operative marker and a partially closed mechanism on one side, and on the other a growing but mechanistically untargeted therapeutic repertoire, sustained side by side for roughly two decades.
 
-Between approximately 2000 and the mid-2020s, available treatment remained predominantly symptomatic. Treatments included:
+### 4.7 Emerging therapeutic recoupling
 
-- sodium oxybate
-- pitolisant
-- solriamfetol
-- stimulants
+The mid-2020s mark the first plausible move toward therapeutic recoupling, as orexin receptor agonist programs began to target the deficient signal directly rather than its symptomatic sequelae. The reporting here must be held to current, verifiable status and hedged accordingly. As reported at the time of writing, Takeda's oveporexton (TAK-861), an orexin receptor 2 agonist, had reported positive Phase 3 results, with a New Drug Application accepted and granted FDA Priority Review and a PDUFA target date in the third quarter of 2026; it is not approved unless a later official update establishes otherwise [cite: verify-current-status]. Alkermes' alixorexton (ALKS-2680), a further orexin receptor 2 agonist, had received Breakthrough Therapy designation and was advancing through a Phase 3 program on the same mechanistic rationale [cite: verify-current-status]. Both data points should be re-verified against regulatory and trial-registry sources before submission, since their status is time-sensitive.
 
-These improve symptoms but are not orexin-targeted.
+The philosophical reading of this phase is deliberately restrained. These programs mark *possible*, *emerging* therapeutic recoupling, not its completion: at the time of writing the recoupling is a transition in progress, not an accomplished fact. What would make it recoupling, rather than merely another effective drug, is that the intervention engages the very signal the biomarker measures and the lesion explains—an orexin receptor agonist substitutes for the missing orexin tone, closing the loop between marker, mechanism, and therapy that the symptomatic agents of the previous two decades left open. That is a structurally different event from adding another wake-promoting compound, and it is why it can be described as recoupling at all.
 
-Crucially:
+Even so, whatever their regulatory fate, these programs do not rewrite the preceding history. Future approval of an orexin agonist would update the description of the *current* phase—from delayed recoupling to achieved recoupling—but it would not retroactively erase the roughly two-decade lag during which a classification-operative marker coexisted with purely symptomatic treatment. The lag is a historical fact about the relation between the legs over time; later therapeutic success changes what comes next in the trajectory, not what already occurred within it. It is worth being explicit about the temptation the TCI is built to resist here. Once a mechanism-targeted therapy exists, there is a strong retrospective pull to narrate the whole history as a march toward that therapy, and to treat the prior decades as a period of mere incompleteness. The decoupled reading refuses that foreshortening: the biomarker era was not a deficient rehearsal for the therapeutic era but a phase with its own settled structure, in which classification and research were reorganized around a marker whose mechanism was not yet a drug target.
 
-- treatment is **not biomarker-driven**
-- treatment is **not mechanism-targeted**
+### 4.8 Decoupling structure
 
-### 4.7 Therapeutic recoupling: emergent phase
+Assembled across its legs and downstream domains, NT1 shows the structure the decoupled TCI is built to represent: early and ultimately classification-operative biomarker anchoring, partial mechanistic closure, high but incomplete cross-framework alignment, and delayed—now possibly emerging—therapeutic recoupling. The counterfactual makes the point sharpest. If therapeutic response were admitted into the TCI, NT1 would have been scored low through precisely the biomarker era in which its marker was reorganizing diagnosis and research, because no targeted therapy then existed; the index would have mistaken a therapeutic lag for a weakness of classification. By keeping treatment in the downstream domains, the TCI registers what was actually the case: a strong marker, a partially open mechanism, and high alignment, holding together while therapy lagged behind.
 
-In the mid-2020s, orexin receptor agonists begin to target the underlying system.
-
-This marks **possible therapeutic recoupling**, not completion.
-
-Recoupling:
-
-- does not erase prior lag
-- re-describes phase transition
-
-### 4.8 Decoupling structure summary
-
-NT1 exhibits:
-
-- early biomarker anchoring
-- partial mechanistic closure
-- high cross-framework alignment
-- delayed therapeutic recoupling
-
-This is the structure TCI is designed to represent.
+This is the limited claim the case will bear. NT1 is an existence proof that classificatory anchoring, mechanistic closure, evidential alignment, and therapeutic recoupling can come apart in time, and that an index designed to keep those components separate can represent the resulting structure without distortion. It is not a demonstration that the TCI is a generally valid instrument, nor that NT1 is representative of classification at large. The work of the next section is to fix the specificity of the case by contrast, and to locate the index's modest contribution among rival accounts that capture other dimensions of the same history.
 
 ---
 
 ## §5. Calibration Contrasts and Rival Accounts
 
+This section does two things. It first uses three historical contrasts to fix the specificity of NT1 by showing what it is *not*, and then situates the decoupled TCI among rival accounts of classification, treating those accounts as additive rather than as targets to be defeated. The contrasts are calibration devices and nothing more: none is scored on the TCI rubric, none is a point on a gradient, and none is offered as proof of any structural law. Their function is to keep the NT1 reading from over-generalizing, by marking three nearby kinds of classification change that NT1 conspicuously is not. The risk a single-case study most needs to guard against is the slide from "this case has structure X" to "structure X is general," and a disciplined use of contrasts is one way to hold that line: each contrast names a familiar pattern of category change, and each is chosen because NT1 resembles it closely enough to be confused with it yet differs from it in the one respect that the decoupling claim turns on.
+
 ### 5.1 Calibration contrasts
 
-#### GPI → neurosyphilis: tight coupling contrast
+**General paresis of the insane (GPI) → neurosyphilis.** GPI is the asylum-era and early biological-psychiatry case in which a florid psychiatric syndrome was eventually tied to a specific pathogen and a serological test, and ultimately to an etiologically targeted treatment path. It belongs to the history of laboratory medicine rather than to the DSM tradition, and over its long arc, etiological identification and therapeutic recoupling became comparatively tightly linked: the spirochaete, the serology, and the antimicrobial response eventually lined up so that identifying the cause and treating the cause came to belong to nearly the same act. The contrast with NT1 is in the *coupling structure over time*. GPI is, in the limit, an infection-style case in which mechanism and cure converge, and in which the etiological agent is also the therapeutic target; NT1 is not. NT1's marker became classification-operative while its distal mechanism stayed open and its treatment stayed symptomatic—a marker-first, cure-late configuration in which anchoring and recoupling are pulled decades apart, which is precisely the configuration GPI does not share. Two cautions keep this contrast honest. GPI is not a point on any gradient and does not prove a high-constraint "R3" structure; and GPI is itself embedded in the broader twentieth-century transformation of laboratory medicine and antimicrobial therapy, so it functions as a contrast, not as a clean control against which NT1 can be precisely measured [cite: gpi-history].
 
-GPI shows a case where etiological identification and therapeutic recoupling eventually become tightly linked.
+**Asperger syndrome → autism spectrum disorder (ASD).** The merger of Asperger syndrome into a single autism spectrum in DSM-5 is a contrast of a different type, and one clarification must precede everything else: the case concerns the *Asperger/ASD boundary*, the warrant for a particular subcategorical division, and not the biological or ontological reality of autism, which is not at issue here [cite: asd-boundary]. At that boundary, biomarker- and mechanism-specific constraint was low—there was no test or lesion that fixed where Asperger ended and the rest of the spectrum began—while the institutional, identity, and service-eligibility consequences of the boundary were high. The revision turned substantially on the questionable test–retest reliability of the old subcategorical distinction and on doubts about its clinical utility, as much as on any new biology; clinicians could not reliably reproduce the Asperger/autistic-disorder split, and the split did not earn its keep in prediction or treatment selection. That is almost the mirror image of NT1, whose boundary work is anchored by a classification-operative marker that *can* be reproduced across sites and that *does* carry assignment authority. NT1 is therefore not an identity- or service-driven boundary revision; its category movement was driven by an evidential operator rather than by the reorganization of eligibility and identity. Placing ASD beside NT1 shows, by contrast, what NT1 is not.
 
-Role:
+**Homosexuality declassification.** The removal of homosexuality from psychiatric nosology is the depathologization contrast. The pathological classification had lacked sufficient empirical-clinical warrant, and its removal redistributed institutional legitimacy, reorganized identity, and cleaned up a mistaken label [cite: homosexuality-declassification]. It would be a mistake to read this as "purely political": it was a multi-factor history in which evidential, professional, and social currents all bore on the outcome. The contrast with NT1 is straightforward, and it runs in the opposite direction from the other two. NT1 is not a depathologization case; it is the addition and biomarker-anchoring of a category, not the retraction of an unwarranted one. Where homosexuality's declassification removed a category that medicine had failed to warrant, NT1's trajectory installed a category that an evidential operator increasingly secured. The two histories move in contrary directions across the medical/non-medical boundary, and that is exactly why the homosexuality case is useful here: it marks, once more by difference, what NT1 is not.
 
-- shows NT1 is not infection-style recoupling case
-- highlights difference in temporal coupling structure
-
-Not:
-
-- a point in gradient
-- a proof of R3 structure
-
-#### Asperger → ASD: low boundary-specific constraint contrast
-
-This case exhibits:
-
-- low boundary-specific biomarker constraint
-- high institutional and identity consequences
-- cohort restructuring and label transition
-
-Important clarification: this concerns the Asperger/ASD boundary, not the biological or ontological reality of autism.
-
-Role:
-
-- shows NT1 is not identity-driven classification change
-
-#### Homosexuality declassification: pathological removal contrast
-
-This case involves:
-
-- removal of pathological category
-- institutional legitimacy restructuring
-- identity and label cleanup
-
-It is not “purely political”; it is a multi-factor depathologization history.
-
-Role:
-
-- shows NT1 is not depathologization case
+Taken together, the three contrasts bound NT1 from three sides: it is not an infection-style tight-recoupling case (GPI), not an identity- or service-driven boundary revision (ASD), and not a depathologization (homosexuality). The point of bounding it this way is to earn the specificity of the decoupling claim without inflating NT1 into a general type.
 
 ### 5.2 Rival accounts: additive framing
 
-#### Hacking
+The decoupled TCI does not compete with the major philosophical accounts of psychiatric and biomedical kinds; it is offered as an addition to them, and the additive framing is meant literally. In each case below the rival explains something real about NT1, the TCI is not held to refute it, and what the TCI contributes is a temporal decomposition the rival typically leaves implicit.
 
-Explains:
+**Hacking.** Hacking's account of looping effects and interactive kinds explains how classified people respond to their classification and how categories and self-understandings co-evolve. NT1 plausibly has interactive dimensions, especially in contexts of diagnosis, advocacy, recognition, and the social organization of compensation and accommodation. One can see candidate loops without much strain: a biomarker-anchored diagnosis reshapes how patients narrate their fatigue and cataplexy, patient organizations form around the secured category, and that mobilization in turn feeds recruitment, funding, and the recognition of NT1 as a discrete target for drug development. The TCI does not refute Hacking, and nothing here implies that looping fails to apply to NT1. What the TCI adds is an ordinal temporal separation of biomarker anchoring, mechanistic closure, cross-framework alignment, and therapeutic recoupling—a structuring of the evidential and therapeutic timelines that Hacking's framework, focused on the interactive dynamics of classified human kinds, does not itself supply. Looping tells us that the category and its bearers co-evolve; it does not, on its own, tell us that the marker became classification-operative two decades before its mechanism became a drug target. The two analyses are complementary: the looping account supplies the social dynamics, the TCI supplies the phase structure.
 
-- looping effects
-- interactive classification dynamics
+**Khalidi.** Khalidi's account of intervention-supporting kinds and causal manipulability explains how a category earns its standing by underwriting interventions and supporting causal inference. NT1 is intervention-supporting in this broad sense: the hypocretin-deficient category supports diagnosis, prediction, and research manipulation. The TCI does not charge Khalidi with confusing intervention with cure; that would be a misreading, since manipulability in Khalidi's sense is not the same as therapeutic targeting. What the TCI adds is a separation that Khalidi's category, taken on its own, does not foreground: the distinction between epistemic manipulability, diagnostic uptake, and therapeutic recoupling, which in NT1 matured at different times. The NT1 case makes the gap concrete. Long before any orexin agonist existed, the hypocretin-deficient kind was already intervention-supporting in Khalidi's sense—it licensed inferences, stratified cohorts, and predicted experimental outcomes—even though no intervention *on the marker's own causal target* was available. A kind can thus be intervention-supporting in the epistemic and diagnostic registers while remaining therapeutically untargeted, and a single notion of intervention support cannot register that internal split. Tracking it is the TCI's contribution.
 
-TCI adds:
+**Boyd HPC and the Kendler–Zachar–Craver MPC tradition.** Boyd's homeostatic property cluster account and the mechanistic property cluster refinement associated with Kendler, Zachar, and Craver both explain causal and mechanistic anchoring: how a kind can be real and projectible in virtue of an underlying cluster of properties sustained by causal or mechanistic structure rather than by a classical essence. NT1 is fully compatible with both; its hypocretin lesion and associated immune-genetic structure are just the sort of causal core these accounts describe. The TCI is additive here as well, not a replacement. What it adds is a diachronic mapping—when the different components of the cluster mature, and which downstream domains change as they do—so that the cluster's coming-into-being is itself rendered as a temporal structure rather than a static fact. In NT1 the cluster's strands did not arrive together: the proximate lesion and the assay-anchored marker stabilized early, the HLA and T-cell strands accumulated over a longer period, and the therapeutic strand is only now being added. A static cluster account, asked whether NT1 is an HPC or MPC kind, returns a single verdict; it is not built to say that the cluster was strong enough to assign cases while still too open at the distal end to specify a drug target. HPC and MPC say what holds the kind together; the TCI says when each strand of that holding-together arrived and what it moved downstream.
 
-- temporal separation of evidential legs
-- structured sequencing of impact domains
+The additive framing should not be mistaken for an absence of positive claim. The active contribution of the decoupled TCI is not a new account of kindhood that competes with Hacking, Khalidi, Boyd, or the MPC tradition; it is the assignment of an independent failure condition to each evidential leg (§6). Looping effects, intervention-supporting kinds, homeostatic clustering, and mechanistic property clusters each tend to bundle the evidential dimensions into a single verdict about a category's standing, and so cannot be defeated leg by leg. The TCI's decomposition makes the reconstruction defeasible at four separable points—biomarker anchoring, mechanistic closure, evidential independence, and therapeutic recoupling—any one of which can fail without the others. That separable defeasibility, not a re-description of NT1's timeline, is what the rival accounts do not already encode.
 
-#### Khalidi
-
-Explains:
-
-- intervention-supporting kinds
-- causal manipulability
-
-TCI adds:
-
-- separation of epistemic, diagnostic, and therapeutic timelines
-
-#### Boyd HPC
-
-Explains:
-
-- homeostatic clustering
-
-TCI adds:
-
-- diachronic sequencing of constraint and impact
-
-#### Kendler / Zachar / Craver (MPC)
-
-Explains:
-
-- mechanistic property clusters
-
-TCI adds:
-
-- temporal decomposition of classification change
-
-No rival is rejected; each is partial relative to a different dimension of NT1.
-
-The additive framing should not be mistaken for an absence of positive claim. The active contribution of the decoupled TCI is **not** a new account of kindhood that competes with Hacking, Khalidi, Boyd, or the MPC tradition; it is the assignment of an **independent failure condition to each evidential leg** (§6). Looping effects, intervention-supporting kinds, homeostatic clustering, and mechanistic property clusters each bundle the evidential dimensions into a single verdict about a category's standing, and so cannot be falsified leg by leg. The TCI's decomposition makes the reconstruction defeasible at four separable points—biomarker anchoring, mechanistic closure, evidential independence, and therapeutic recoupling—any one of which can fail without the others. That separable defeasibility, not a re-description of NT1's timeline, is what the rival accounts do not already encode.
+The summary claim is correspondingly modest. The point is not that the TCI explains more than every rival in every respect; it is that the TCI keeps apart variables these frameworks often treat together or leave implicit: evidential anchoring, diagnostic uptake, institutional response, and therapeutic recoupling. Each rival, asked about NT1, tends to return a single integrated verdict—NT1 loops, NT1 is intervention-supporting, NT1 is an HPC/MPC kind—and each verdict is defensible. What none of them is built to display is the internal staggering of those variables across two and a half decades: a marker that assigned cases before its mechanism specified a target, an institutional uptake that followed the marker's promotion rather than its discovery, and a therapeutic response that is arriving last of all. NT1 is the case that makes the value of keeping these variables apart visible, because in NT1 they demonstrably came apart in time; and a framework that holds them apart by construction is the natural instrument for recording that fact without flattening it.
 
 ---
 
@@ -380,24 +271,37 @@ The contribution is therefore limited but precise:
 
 ---
 
-## Appendix A. Citation gaps
+## Appendix A. Citation-lock plan
 
-### Critical
+Citation markers `[cite: tag]` are embedded at the point of use in §4–§5. The table below locks each marker to a claim, a required source type, candidate sources, and the reviewer risk if the claim ships unsourced. `[cite: verify-current-status]` is time-sensitive and must be re-checked against regulatory and registry sources immediately before submission.
 
-- ICSD-3 formal hypocretin criteria text
-- DSM-5 narcolepsy criteria
-- Mignot et al. 2002 CSF hypocretin validation
-- Peyron / Thannickal neuron loss studies
-- HLA / T-cell autoimmune evidence, including Hallmayer 2009
-- AASM treatment guideline for narcolepsy
-- sodium oxybate / pitolisant / solriamfetol clinical reviews
-- orexin agonist trial status: Takeda / Alkermes / ClinicalTrials.gov
+| Section | Tag | Claim | Required source type | Candidate sources | Risk if unsourced |
+| --- | --- | --- | --- | --- | --- |
+| §4.1 | hcrt-discovery | Hypocretin/orexin system identified late 1990s; CSF hcrt-1 deficiency a reproducible marker by 1999–2000 | Primary neuroscience + clinical validation | Nishino et al. 2000 (Lancet); de Lecea et al. 1998; Sakurai et al. 1998; Lin et al. 1999 (canine narcolepsy gene) | Misdated biomarker emergence undercuts the entire decoupling timeline |
+| §4.1 | mignot-2002 | CSF hcrt-1 diagnostic performance / validation as marker before becoming criterion | Diagnostic-accuracy study | Mignot et al. 2002 (Arch Neurol) | Biomarker leg looks asserted rather than measured |
+| §4.1, §4.3, §4.4, §4.5 | icsd3 | ICSD-3 fixes low CSF hcrt-1 as classification-operative route to NT1 | Nosology primary text | ICSD-3 (AASM, 2014); ICSD-3-TR (2023) | "Classification-operative" claim unsupported; threshold value unverified |
+| §4.1, §4.3, §4.4 | dsm5 | DSM-5 incorporates CSF hypocretin deficiency in narcolepsy criteria | Nosology primary text | DSM-5 (APA, 2013); DSM-5-TR (2022) | Cross-framework alignment claim weakened |
+| §4.2, §4.3 | peyron-thannickal | Selective loss of lateral-hypothalamic hypocretin neurons = proximate lesion | Neuropathology primary | Peyron et al. 2000 (Nat Med); Thannickal et al. 2000 (Neuron) | Mechanism leg loses its proximate anchor |
+| §4.2, §4.3 | hla-tcell | HLA-DQB1\*06:02 association + T-cell/autoimmune evidence; distal etiology open | Genetics/immunology primary | Hallmayer et al. 2009 (Nat Genet, TCR-α); Tafti et al. HLA studies; Latorre et al. 2018 (autoreactive T cells) | Partial-closure coding looks like hand-waving |
+| §4.2 | h1n1 | Post-2009 H1N1 infection/Pandemrix-associated NT1 incidence rise | Epidemiology | Nohynek et al. 2012; Partinen et al. 2012; Han et al. 2011 (China) | Environmental-trigger strand unsupported |
+| §4.3, §4.5 | nt2-instability | NT2 retest instability as boundary limit on alignment | Clinical/longitudinal | Trotti et al.; Lopez et al. test–retest studies | "High but incomplete" alignment claim asserted only |
+| §4.3 | borderline-hcrt | Borderline hcrt values; hypocretin-normal cataplexy; residual ambiguity | Clinical | Andlauer et al. 2013; Bassetti/Baumann reviews | Boundary-incompleteness claim unsupported |
+| §4.5 | cohort-stratification | Hypocretin-defined NT1 increasingly used as cohort/recruitment basis | Bibliometric / review | Trial registry surveys; recent NT1 cohort reviews | Over-/under-claim on cohort dominance |
+| §4.5 | (flag) needs bibliometric support | Share of literature stratifying on hcrt status | Original bibliometric analysis | To be generated or cited | Reviewer reads as unquantified speculation |
+| §4.5 | pre2000-nosology | Pre-2000 assignment rested on clinical phenotype/cataplexy | Historical nosology | ICSD-1/ICSD-2; DSM-IV narcolepsy text | Period table row unsupported |
+| §4.6 | aasm-guideline | Standard-of-care pathway was symptomatic across 2000–2025 | Practice guideline | AASM treatment guideline for narcolepsy (Maski et al. 2021) | "Symptomatic-only" conclusion looks inferred from biomarker, breaking the firewall |
+| §4.6 | therapeutics-labels | Sodium oxybate, pitolisant, solriamfetol, stimulants are symptom-directed, not orexin-targeted | FDA labels / clinical reviews | FDA labels; pivotal-trial publications for each agent | Core treatment-leg claim unsupported |
+| §4.7, §4.5 | verify-current-status | Oveporexton (TAK-861): Phase 3 positive, NDA accepted, Priority Review, PDUFA Q3 2026, not approved; alixorexton (ALKS-2680): Breakthrough Therapy, Phase 3 | Regulatory / registry, time-sensitive | Takeda & Alkermes press releases; FDA communications; ClinicalTrials.gov | Stale or wrong regulatory status; most reputationally damaging error |
+| §5.1 | gpi-history | GPI → neurosyphilis tight-coupling history; embedded in lab-medicine transformation | History of medicine | Hurn; Brown; standard GPI/neurosyphilis histories | Calibration contrast looks anecdotal |
+| §5.1 | asd-boundary | Asperger→ASD merger concerns subcategory boundary, low biomarker constraint, high institutional stakes | Psychiatry / DSM history | DSM-5 rationale; Lord/Happé commentaries; reliability field-trial data | Risk of being read as a claim about autism's reality |
+| §5.1 | homosexuality-declassification | Multi-factor depathologization lacking empirical-clinical warrant | History of psychiatry | Bayer 1981; APA historical record | "Purely political" misreading; contrast looks editorializing |
+| §5.2 | (philosophy) | Hacking / Khalidi / Boyd / MPC source positions | Philosophy primary | Hacking 1995/1999; Khalidi 2013; Boyd 1991; Kendler–Zachar–Craver 2011 | Rival-accounts section unsourced; additive claim unanchored |
 
-### Medium priority
+### Medium priority (supporting, non-blocking)
 
-- NT2 boundary instability literature
-- borderline hypocretin cases
-- cohort bibliometric evidence for NT1 stratification
+- NT2 boundary instability longitudinal literature beyond the anchor cites
+- expanded borderline-hypocretin and hypocretin-normal-cataplexy case series
+- bibliometric evidence quantifying NT1 / hypocretin-defined stratification (resolves the §4.5 flag)
 
 ## Appendix B. Revision notes
 
@@ -409,13 +313,23 @@ This draft preserves:
 - no five-case R3-gradient claim
 - GPI / ASD / homosexuality as calibration contrasts only
 
-Assembly v3 review pass adds:
+Assembly v3 review pass added:
 
 - explicit statement that the 0–3 rubric is a single-case qualitative profile, not a cross-case ordinal gradient (§2.2)
 - explicit articulation of the active contribution as per-leg separable defeasibility, distinct from the additive rival framing (§5.2)
 - front-matter `epistemic_layer` / `layer` / `machine_summary` for repository index consistency
 
-Still open (unchanged): citation placeholders unresolved; §4 / §5 remain skeleton prose pending prose expansion for a full-article target.
+Assembly v4 prose-expansion pass adds:
+
+- §4 rewritten as continuous submission-oriented prose across all eight modules (4.1–4.8), replacing bullet skeletons; biomarker emergence vs. classification-operativity dated explicitly; mechanism kept at partial closure; alignment kept high-but-incomplete; treatment written as symptomatic expansion (not "no change"); orexin-agonist recoupling hedged and marked time-sensitive
+- period table added in §4.5 (operative cohort terminology and basis of assignment, before-2000 / 2000–2013 / 2014–2025 / 2025–26)
+- §5 rewritten as continuous prose with additive framing preserved; required closing paragraph on keeping evidential anchoring, diagnostic uptake, institutional response, and therapeutic recoupling apart
+- inline `[cite: tag]` markers embedded throughout §4–§5
+- Appendix A converted from a flat gap list to a section-by-section citation-lock plan table
+
+Guardrails preserved unchanged: NT1 as limited existence case only; TCI as single-case qualitative profile; no scoring of GPI/ASD/homosexuality on the TCI table; no leg aggregation; treatment response outside TCI; future orexin approval updates the recoupling phase description without erasing historical lag.
+
+Still open: `[cite: …]` markers to be resolved to verified sources per Appendix A; `[cite: verify-current-status]` to be re-checked immediately before submission; §4.5 bibliometric flag to be resolved or softened.
 
 ## Appendix C. Later shortening candidates
 
