@@ -24,7 +24,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 远端已收口为单一 `main` 分支。
 - 仓库已执行一轮"理论硬化优先、去命题混层"回写：`Core_21` 已拆成 P0/P1/P2-P4 分层，AI 首读入口已降密度为 runtime/bootstrap。
 - 当前后续重点是让 domain 文件持续回链 canonical，避免 bridge / companion / lab 命题反向冒充 core。
-- 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。）
+- 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。**`2026-06-17`：P0 接缝翻转第一遍全书过完**——序章 + Q01–Q28 五幕全部章节接缝已翻（删每章 briefing 式粗体题记、把"几条边界必须钉住/先钉住"清单起手翻成自信收束、保留意象题记与体验入口与诚实纪律），机制正文/对手反驳论证/章末注未动，已推 PR #488（`claude/book-posture-revision`）。下一步：幕间章嵌入 + 正文更深层体验化（待授权）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。）
 
 ## 当前建议首读顺序
 
@@ -94,7 +94,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 ## 当前高优先事项
 
-- **【P0·2026-06-16 起】《从存在到秩序》全书「姿态修订」**：把正文从证明姿态翻成"拆地板/换镜片/重新看"的体验-邀请姿态。只改**接缝**（序章、章节开头结尾、最强反对者段、语气），不动机制正文与严密——让严密像理论自己说的那样退成背景里承重的地面。单段判准：把读者摆成"陪审员（评判我的证明）"还是"探索者（跟我重新看）"。纲领 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；序章为试点起点。
+- **【P0·2026-06-16 起】《从存在到秩序》全书「姿态修订」**：把正文从证明姿态翻成"拆地板/换镜片/重新看"的体验-邀请姿态。只改**接缝**（序章、章节开头结尾、最强反对者段、语气），不动机制正文与严密——让严密像理论自己说的那样退成背景里承重的地面。单段判准：把读者摆成"陪审员（评判我的证明）"还是"探索者（跟我重新看）"。纲领 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`。**进度：接缝翻转第一遍全书过完（`2026-06-17`，序章 + Q01–Q28，PR #488）。** 下一车道（待授权）：幕间章嵌入（PR #487 台账/样章为底）+ 正文更深层体验化。
 - 继续同步入口层去重：`README / AGENTS / CLAUDE / STATUS / _SRT_INDEX / Navigation / manifest`
 - 保持 canonical 主链不被入口优化反向污染
 - 按 `Governance/SRT_CLAIM_LADDER.md` 持续标注 domain 文件中的 P-level
