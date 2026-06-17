@@ -12,14 +12,15 @@ related:
   - Philosophy/Papers/Before_Objects_Selection_Realism.md
   - Philosophy/Papers/Before_Objects_Selection_Realism_Submission_EN.md
 machine_summary: >
-  NT1-centered decoupled TCI manuscript draft (assembly v3, canonical=false). Develops a
-  decoupled triangulated constraint index that codes three upstream evidential legs
-  (biomarker strength, mechanistic closure, cross-framework alignment) while excluding
-  treatment response as downstream impact. NT1 is reconstructed as a limited existence
-  case for temporal decoupling between classification and therapeutic recoupling. The TCI
-  rubric is used as a single-case qualitative profile, not a cross-case ordinal gradient;
-  GPI / ASD / homosexuality enter as calibration contrasts only. Method is analytic-historical
-  reconstruction; the active contribution is per-leg falsifiability (§6), not a theory of kinds.
+  NT1-centered decoupled TCI manuscript draft (assembly v4, canonical=false). Develops a
+  decoupled triangulated constraint decomposition (abbreviated TCI; explicitly not an index)
+  that pulls apart three upstream evidential legs (biomarker strength, mechanistic closure,
+  cross-framework alignment) while excluding treatment response as downstream impact. NT1 is
+  reconstructed as a limited existence case for temporal decoupling between classification and
+  therapeutic recoupling. The legs are coded qualitatively, not aggregated or ranked across
+  cases; a coarse 0–3 reading aid is kept in an appendix only. GPI / ASD / homosexuality enter
+  as calibration contrasts only. Method is analytic-historical reconstruction; the active
+  contribution is per-leg falsifiability (§6), not a theory of kinds.
 scope_note: >
   NT1-centered decoupled TCI paper. This is not a five-case R3-gradient paper.
   TCI codes only upstream evidential legs: biomarker strength, mechanistic closure,
@@ -31,7 +32,7 @@ scope_note: >
 
 ## Abstract
 
-This paper develops a decoupled triangulated constraint index (TCI) and applies it to Narcolepsy Type 1 (NT1) as a case of biomarker–treatment lag. The TCI codes three upstream evidential legs—biomarker strength, mechanistic closure, and cross-framework evidential alignment—while explicitly separating these from downstream impact domains such as diagnostic workflow and therapeutic change. NT1 is reconstructed as a limited existence case in which CSF hypocretin-1 emerged as a powerful biomarker around 1999–2000 and became classification-operative in the ICSD-3 / DSM-5 period, while mechanistic accounts remained partially open and therapeutic development remained largely symptomatic until emerging orexin-targeted interventions in the mid-2020s. The analysis is conducted as an analytic-historical reconstruction rather than a predictive model or a theory of natural kinds. Calibration contrasts from general paresis of the insane, Asperger syndrome to autism spectrum disorder, and homosexuality declassification are used to delimit the specificity of the NT1 case. Rival accounts in philosophy of psychiatry are treated as additive frameworks that illuminate different dimensions of classification change. The paper concludes with explicit failure conditions governing biomarker validity, mechanistic characterization, evidential independence, and therapeutic recoupling.
+This paper develops a decoupled *triangulated constraint decomposition*—retained as "TCI" for brevity, but emphatically not an index in the measurement sense—and applies it to Narcolepsy Type 1 (NT1) as a case of biomarker–treatment lag. The decomposition pulls apart three upstream evidential legs—biomarker strength, mechanistic closure, and cross-framework evidential alignment—while explicitly separating these from downstream impact domains such as diagnostic workflow and therapeutic change. It assigns no aggregate and ranks no cases against one another. NT1 is reconstructed as a limited existence case in which CSF hypocretin-1 emerged as a powerful biomarker around 1999–2000 and became classification-operative in the ICSD-3 / DSM-5 period, while mechanistic accounts remained partially open and therapeutic development remained largely symptomatic until emerging orexin-targeted interventions in the mid-2020s. The analysis is conducted as an analytic-historical reconstruction rather than a predictive model or a theory of natural kinds. Calibration contrasts from general paresis of the insane, Asperger syndrome to autism spectrum disorder, and homosexuality declassification are used to delimit the specificity of the NT1 case. Rival accounts in philosophy of psychiatry are treated as additive frameworks that illuminate different dimensions of classification change. Read as separately-maturing legs rather than scored as a single index, NT1's trajectory exposes the diagnostic cost of aggregating evidential and therapeutic standing into one verdict on the category's kind-status. The paper concludes with explicit failure conditions governing biomarker validity, mechanistic characterization, evidential independence, and therapeutic recoupling.
 
 ---
 
@@ -45,7 +46,7 @@ This paper develops that issue through Narcolepsy Type 1 (NT1). NT1 is not treat
 
 CSF hypocretin-1 emerged as a powerful biomarker around 1999–2000 following the identification of the orexin/hypocretin system. It became classification-operative in the ICSD-3 / DSM-5 period, when it was integrated into diagnostic criteria and used in case assignment. Yet therapeutic development remained largely symptomatic for a prolonged period, with orexin-targeted interventions emerging only in the mid-2020s.
 
-The central claim is limited and structural: NT1 provides a **limited existence case for decoupling**, in which biomarker anchoring, mechanistic closure, cross-framework alignment, and therapeutic recoupling unfold on different timescales. This motivates the decoupled triangulated constraint index (TCI), which separates these components rather than collapsing them into a single notion of kindhood or intervention support.
+The central claim is limited and structural: NT1 provides a **limited existence case for decoupling**, in which biomarker anchoring, mechanistic closure, cross-framework alignment, and therapeutic recoupling unfold on different timescales. This motivates the decoupled triangulated constraint decomposition (TCI), which separates these components rather than collapsing them into a single notion of kindhood or intervention support.
 
 The TCI codes only upstream evidential legs:
 
@@ -57,9 +58,9 @@ Treatment response and therapeutic change are explicitly excluded and treated as
 
 ---
 
-## §2. The Decoupled Triangulated Constraint Index (TCI)
+## §2. The Decoupled Triangulated Constraint Decomposition (TCI)
 
-The TCI is an ordinal reconstruction device designed to separate upstream evidential constraint from downstream impact structure. It is not a theory of natural kinds, nor a metric of ontological reality. Its purpose is more limited: to represent how different evidential components of classification systems develop at different rates.
+The device proposed here is a *triangulated constraint decomposition* (retained as "TCI" for brevity): a way of pulling apart three upstream evidential legs—biomarker strength, mechanistic closure, and cross-framework alignment—that accounts of kindhood typically integrate into a single verdict. It is emphatically *not* an index in the measurement sense. It assigns no aggregate, ranks no cases against one another, and the coarse leg-coding retained in Appendix D is a reading aid for one trajectory, not a scale on which NT1 is scored against anything. What the decomposition tracks is *qualitative and diachronic*: which leg matured, when, and with what downstream effect. It is not a theory of natural kinds, nor a metric of ontological reality.
 
 ### 2.1 Three upstream legs
 
@@ -69,18 +70,11 @@ The TCI is an ordinal reconstruction device designed to separate upstream eviden
 
 **Cross-framework evidential alignment** refers to convergence among distinct evidential operators, including diagnostic manuals, laboratory assays, clinical protocols, neuropathology, genetics, immunology, and trial design. Alignment is not consensus; it is convergence across heterogeneous evidential systems.
 
-### 2.2 0–3 ordinal rubric
+### 2.2 Coding the legs, qualitatively
 
-| Score | Biomarker strength | Mechanistic closure | Cross-framework alignment |
-| --- | --- | --- | --- |
-| 0 | absent or non-reproducible | no stable causal structure | no convergence |
-| 1 | weak / non-operative | speculative mechanism | isolated framework use |
-| 2 | reproducible but partial | partial mechanism | multi-framework but unstable |
-| 3 | classification-operative | substantially closed mechanism | robust convergence |
+Each leg is described, not scored. For NT1 the reading is a **strong biomarker leg** (a reproducible, classification-operative marker), a **partially closed mechanism** (a clear proximate lesion over an open distal etiology), and a **high-but-incomplete alignment** (robust convergence at the category's center, frayed at its margins). These are qualitative descriptors of within-leg strength, fixing the internal shape of one trajectory rather than NT1's position relative to any other case.
 
-NT1 is coded approximately **3 / 2 / 2–3**.
-
-The rubric is used here as a **single-case qualitative profile, not a cross-case ordinal gradient**. Because this paper codes only NT1 and deliberately declines to score the calibration contrasts of §5 on the same scale, the three values carry no comparative ranking claim; they fix the internal shape of one trajectory—strong biomarker leg, partially open mechanism, high-but-incomplete alignment—rather than NT1's position relative to other cases. The 0–3 levels function as anchored descriptors of within-leg strength, and the analytic work is done by the **divergence between the legs**, not by any aggregate or by comparison across rows. No legs are summed: the profile is intentionally non-aggregative so that a strong biomarker cannot inflate a partial mechanism score, and vice versa.
+The analytic work is done by the **divergence between the legs**, never by an aggregate. The legs are not summed and not reduced to a figure: the decomposition is deliberately non-aggregative, so that a strong biomarker cannot inflate a partial mechanism and vice versa, and the calibration contrasts of §5 are *not* placed on the same scale. A coarse 0–3 leg-coding rubric is retained in Appendix D as an optional reading aid; it is a way of summarizing the qualitative descriptors at a glance, not a measurement, and nothing in the argument depends on the numerals.
 
 ### 2.3 Anti-circularity firewall
 
@@ -132,7 +126,7 @@ The biomarker leg begins with the identification of the hypocretin (orexin) syst
 
 The distinction between a marker's emergence and its classification-operativity is the first place where the decoupled reading does real work, so it should not be elided. Through the early 2000s, CSF hypocretin-1 functioned chiefly as a validating instrument: it confirmed, in research and specialist settings, that the cataplexy-defined population had a distinct biological signature (Mignot et al. 2002). Its promotion to a *criterion* came with the third edition of the International Classification of Sleep Disorders, which fixed a low CSF hypocretin-1 value (≤110 pg/mL, or less than one third of normal mean values on a standardized assay) as a route to the diagnosis of narcolepsy type 1, on a par with the presence of cataplexy (American Academy of Sleep Medicine 2014). DSM-5, published in the same period, likewise incorporated CSF hypocretin deficiency as a diagnostic route within its narcolepsy criteria, so that low hypocretin became sufficient, in the presence of the core phenotype, to place a case (American Psychiatric Association 2013). The accurate statement is therefore not that the marker became classification-operative in the early 2000s, but that it *emerged as a biomarker around 1999–2000 and became classification-operative in the ICSD-3 / DSM-5 period*.
 
-Two features of this leg must be coded into the TCI and one must be kept out. The two that count are the assay—reproducibility, thresholding, reference standardization—and the nosology—the marker's written authority to assign cases. On both, NT1 sits at the top of the rubric: the marker is reproducible and it is classification-operative. The feature that must be kept out is treatment outcome. Throughout the period in which the biomarker became classification-operative, no orexin-replacing or orexin-targeted therapy existed; treatment was symptomatic. The biomarker leg scores high anyway, because its strength is read off the assay and the nosology and not off the therapeutic situation. This is precisely the firewall of §2.3 operating on live data: were treatment success allowed to weight the biomarker leg, NT1 would be mis-scored downward during exactly the years in which its marker was doing the most classificatory work.
+Two features of this leg must be coded into the TCI and one must be kept out. The two that count are the assay—reproducibility, thresholding, reference standardization—and the nosology—the marker's written authority to assign cases. On both, NT1 sits at the strong end: the marker is reproducible and it is classification-operative. The feature that must be kept out is treatment outcome. Throughout the period in which the biomarker became classification-operative, no orexin-replacing or orexin-targeted therapy existed; treatment was symptomatic. The biomarker leg reads as strong anyway, because its strength is taken from the assay and the nosology and not from the therapeutic situation. This is precisely the firewall of §2.3 operating on live data: were treatment success allowed to weight the biomarker leg, NT1 would be mis-read as weak during exactly the years in which its marker was doing the most classificatory work.
 
 ### 4.2 Mechanism leg: partial closure structure
 
@@ -150,7 +144,7 @@ Alignment is high, but it is not maximal, and the residual instability is concen
 
 ### 4.4 Diagnostic workflow impact
 
-With the three upstream legs established, the reconstruction turns to the downstream domains, beginning with diagnostic workflow. Here the marker does visible practical work: CSF hypocretin testing enters the diagnostic pathway, a low value can assign a case directly to NT1, and ambiguous or atypical presentations can be reassigned in light of the assay, all within the ICSD-3 and DSM-5 frameworks that made the marker operative (American Academy of Sleep Medicine 2014; American Psychiatric Association 2013). The change is concrete at the level of clinical reasoning. Where the pre-marker pathway leaned on the elicitation and interpretation of cataplexy—a clinically subtle, history-dependent judgment—the marker offers a lumbar-puncture-based assay that can confirm or overturn that judgment, including in patients whose cataplexy is equivocal or absent on presentation. This both raises diagnostic confidence in the core cases and redraws the handling of the difficult ones. The methodological point is that all of this is a *downstream impact* of the biomarker leg, not an input to it. The TCI codes the biomarker on assay reproducibility and nosological authority; the workflow uptake is a consequence of that strength. Feeding it back into the score would double-count the same fact and blur the firewall that keeps evidential constraint separate from its institutional effects—and it would also obscure the temporal point that the workflow change followed the marker's promotion to a criterion rather than coinciding with its first emergence.
+With the three upstream legs established, the reconstruction turns to the downstream domains, beginning with diagnostic workflow. Here the marker does visible practical work: CSF hypocretin testing enters the diagnostic pathway, a low value can assign a case directly to NT1, and ambiguous or atypical presentations can be reassigned in light of the assay, all within the ICSD-3 and DSM-5 frameworks that made the marker operative (American Academy of Sleep Medicine 2014; American Psychiatric Association 2013). The change is concrete at the level of clinical reasoning. Where the pre-marker pathway leaned on the elicitation and interpretation of cataplexy—a clinically subtle, history-dependent judgment—the marker offers a lumbar-puncture-based assay that can confirm or overturn that judgment, including in patients whose cataplexy is equivocal or absent on presentation. This both raises diagnostic confidence in the core cases and redraws the handling of the difficult ones. The methodological point is that all of this is a *downstream impact* of the biomarker leg, not an input to it. The TCI reads the biomarker leg off assay reproducibility and nosological authority; the workflow uptake is a consequence of that strength. Feeding it back into the biomarker leg would double-count the same fact and blur the firewall that keeps evidential constraint separate from its institutional effects—and it would also obscure the temporal point that the workflow change followed the marker's promotion to a criterion rather than coinciding with its first emergence.
 
 ### 4.5 Research-cohort formation impact
 
@@ -181,9 +175,9 @@ Even so, whatever their regulatory fate, these programs do not rewrite the prece
 
 ### 4.8 Decoupling structure
 
-Assembled across its legs and downstream domains, NT1 shows the structure the decoupled TCI is built to represent: early and ultimately classification-operative biomarker anchoring, partial mechanistic closure, high but incomplete cross-framework alignment, and delayed—now possibly emerging—therapeutic recoupling. The counterfactual makes the point sharpest. If therapeutic response were admitted into the TCI, NT1 would have been scored low through precisely the biomarker era in which its marker was reorganizing diagnosis and research, because no targeted therapy then existed; the index would have mistaken a therapeutic lag for a weakness of classification. By keeping treatment in the downstream domains, the TCI registers what was actually the case: a strong marker, a partially open mechanism, and high alignment, holding together while therapy lagged behind.
+Assembled across its legs and downstream domains, NT1 shows the structure the decoupled decomposition is built to represent: early and ultimately classification-operative biomarker anchoring, partial mechanistic closure, high but incomplete cross-framework alignment, and delayed—now possibly emerging—therapeutic recoupling. The counterfactual makes the point sharpest. If therapeutic response were admitted into the decomposition, NT1 would read as weak through precisely the biomarker era in which its marker was reorganizing diagnosis and research, because no targeted therapy then existed; the decomposition would have mistaken a therapeutic lag for a weakness of classification. By keeping treatment in the downstream domains, the decomposition registers what was actually the case: a strong marker, a partially open mechanism, and high alignment, holding together while therapy lagged behind.
 
-This is the limited claim the case will bear. NT1 is an existence proof that classificatory anchoring, mechanistic closure, evidential alignment, and therapeutic recoupling can come apart in time, and that an index designed to keep those components separate can represent the resulting structure without distortion. It is not a demonstration that the TCI is a generally valid instrument, nor that NT1 is representative of classification at large. The work of the next section is to fix the specificity of the case by contrast, and to locate the index's modest contribution among rival accounts that capture other dimensions of the same history.
+This is the limited claim the case will bear. NT1 is an existence proof that classificatory anchoring, mechanistic closure, evidential alignment, and therapeutic recoupling can come apart in time, and that a decomposition designed to keep those components separate can represent the resulting structure without distortion. It is not a demonstration that the decomposition is a generally valid instrument, nor that NT1 is representative of classification at large. The work of the next section is to fix the specificity of the case by contrast, and to locate the decomposition's modest contribution among rival accounts that capture other dimensions of the same history.
 
 ---
 
@@ -363,12 +357,33 @@ Assembly v4 citation-lock pass (this revision) adds:
 - §4.5: removed the in-body bibliometric placeholder flag and downgraded the cohort claim to an explicitly qualitative one
 - §4.1: added the ICSD-3 operative hypocretin threshold (≤110 pg/mL) inline
 
-Guardrails preserved unchanged: NT1 as limited existence case only; TCI as single-case qualitative profile; no scoring of GPI/ASD/homosexuality on the TCI table; no leg aggregation; treatment response outside TCI; future orexin approval updates the recoupling phase description without erasing historical lag.
+Assembly v4 reframe pass (this revision) adds:
 
-Still open (next passes): §5 philosophical-rival and calibration-contrast `[cite: …]` markers (P2); time-sensitive orexin-agonist regulatory status (verify at submission); final bibliographic details for the §4 reference list; the separately planned index→schema reframe (merge §2+§3, footnote the 0–3 table, add Tsou/Woodward, compress contrasts, add Figure 1).
+- renamed the device a *triangulated constraint decomposition* (TCI kept only as an abbreviation); §2 now states explicitly that it is not an index, assigns no aggregate, and ranks no cases
+- §2.2 rewritten as qualitative leg-coding; the 0–3 numeric rubric and the "3 / 2 / 2–3" scoring sentence removed from the body and relocated to Appendix D as an optional reading aid with an explicit not-a-measurement caveat
+- residual "index / scored / score" wording in the abstract, §4.2, §4.4, and §4.8 replaced with "decomposition / read as / leg" phrasing
+- one abstract sentence added on the diagnostic cost of aggregating evidential and therapeutic standing
+- front-matter `machine_summary` synced to assembly v4 and the decomposition framing
+
+Guardrails preserved unchanged: NT1 as limited existence case only; TCI as single-case qualitative profile; no scoring of GPI/ASD/homosexuality; no leg aggregation; treatment response outside TCI; future orexin approval updates the recoupling phase description without erasing historical lag.
+
+Still open (next passes): §5 philosophical-rival and calibration-contrast `[cite: …]` markers and the addition of Tsou and Woodward (P0/P1); compression of the GPI/ASD/homosexuality contrasts (ASD and homosexuality to footnotes); time-sensitive orexin-agonist regulatory status (verify at submission); final bibliographic details for the §4 reference list; Figure 1 (leg-maturation timeline) in a later journal-target pass.
 
 ## Appendix C. Later shortening candidates
 
 - §4 cohort formation and diagnostic workflow may be merged.
 - §5 rival accounts may be shortened depending on target journal.
 - §6 failure conditions may be compressed into paragraph form for HPLS submission.
+
+## Appendix D. Coarse leg-coding rubric (optional reading aid)
+
+The table below is a reading aid only: a way of summarizing the qualitative leg descriptions of §2.2 and §4 at a glance. It is **not** an index, **not** a measurement, and **not** a scale on which NT1 is ranked against other cases. The legs are never summed, the calibration contrasts of §5 are deliberately not placed on this rubric, and nothing in the argument depends on the numerals; a reader who prefers the prose descriptions can ignore the table entirely.
+
+| Level | Biomarker strength | Mechanistic closure | Cross-framework alignment |
+| --- | --- | --- | --- |
+| 0 | absent or non-reproducible | no stable causal structure | no convergence |
+| 1 | weak / non-operative | speculative mechanism | isolated framework use |
+| 2 | reproducible but partial | partial mechanism | multi-framework but unstable |
+| 3 | classification-operative | substantially closed mechanism | robust convergence |
+
+On these descriptors NT1 reads as a strong biomarker leg, a partially closed mechanism, and a high-but-incomplete alignment (informally, 3 / 2 / 2–3)—but, again, as a single-case qualitative profile, not a comparative ranking.
