@@ -3,12 +3,23 @@ id: SRT-PAPER-NT1-DECOUPLED-TCI-2026-06-17
 type: philosophy_paper_draft
 status: assembly_v3
 canonical: false
+layer: philosophy_bridge
+epistemic_layer: bridge
 claim_mode: analytic_historical_reconstruction
 created: 2026-06-17
 title: "Biomarkers Before Treatments: Narcolepsy Type 1 and the Decoupling of Classification from Therapeutic Recoupling"
 related:
   - Philosophy/Papers/Before_Objects_Selection_Realism.md
   - Philosophy/Papers/Before_Objects_Selection_Realism_Submission_EN.md
+machine_summary: >
+  NT1-centered decoupled TCI manuscript draft (assembly v3, canonical=false). Develops a
+  decoupled triangulated constraint index that codes three upstream evidential legs
+  (biomarker strength, mechanistic closure, cross-framework alignment) while excluding
+  treatment response as downstream impact. NT1 is reconstructed as a limited existence
+  case for temporal decoupling between classification and therapeutic recoupling. The TCI
+  rubric is used as a single-case qualitative profile, not a cross-case ordinal gradient;
+  GPI / ASD / homosexuality enter as calibration contrasts only. Method is analytic-historical
+  reconstruction; the active contribution is per-leg falsifiability (§6), not a theory of kinds.
 scope_note: >
   NT1-centered decoupled TCI paper. This is not a five-case R3-gradient paper.
   TCI codes only upstream evidential legs: biomarker strength, mechanistic closure,
@@ -68,6 +79,8 @@ The TCI is an ordinal reconstruction device designed to separate upstream eviden
 | 3 | classification-operative | substantially closed mechanism | robust convergence |
 
 NT1 is coded approximately **3 / 2 / 2–3**.
+
+The rubric is used here as a **single-case qualitative profile, not a cross-case ordinal gradient**. Because this paper codes only NT1 and deliberately declines to score the calibration contrasts of §5 on the same scale, the three values carry no comparative ranking claim; they fix the internal shape of one trajectory—strong biomarker leg, partially open mechanism, high-but-incomplete alignment—rather than NT1's position relative to other cases. The 0–3 levels function as anchored descriptors of within-leg strength, and the analytic work is done by the **divergence between the legs**, not by any aggregate or by comparison across rows. No legs are summed: the profile is intentionally non-aggregative so that a strong biomarker cannot inflate a partial mechanism score, and vice versa.
 
 ### 2.3 Anti-circularity firewall
 
@@ -309,6 +322,8 @@ TCI adds:
 
 No rival is rejected; each is partial relative to a different dimension of NT1.
 
+The additive framing should not be mistaken for an absence of positive claim. The active contribution of the decoupled TCI is **not** a new account of kindhood that competes with Hacking, Khalidi, Boyd, or the MPC tradition; it is the assignment of an **independent failure condition to each evidential leg** (§6). Looping effects, intervention-supporting kinds, homeostatic clustering, and mechanistic property clusters each bundle the evidential dimensions into a single verdict about a category's standing, and so cannot be falsified leg by leg. The TCI's decomposition makes the reconstruction defeasible at four separable points—biomarker anchoring, mechanistic closure, evidential independence, and therapeutic recoupling—any one of which can fail without the others. That separable defeasibility, not a re-description of NT1's timeline, is what the rival accounts do not already encode.
+
 ---
 
 ## §6. Failure Conditions and Conclusion
@@ -393,6 +408,14 @@ This draft preserves:
 - no treatment response inside TCI
 - no five-case R3-gradient claim
 - GPI / ASD / homosexuality as calibration contrasts only
+
+Assembly v3 review pass adds:
+
+- explicit statement that the 0–3 rubric is a single-case qualitative profile, not a cross-case ordinal gradient (§2.2)
+- explicit articulation of the active contribution as per-leg separable defeasibility, distinct from the additive rival framing (§5.2)
+- front-matter `epistemic_layer` / `layer` / `machine_summary` for repository index consistency
+
+Still open (unchanged): citation placeholders unresolved; §4 / §5 remain skeleton prose pending prose expansion for a full-article target.
 
 ## Appendix C. Later shortening candidates
 
