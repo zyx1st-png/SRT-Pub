@@ -52,6 +52,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-04_Part01 | [Material_Log/2026-04_Part01.md](Material_Log/2026-04_Part01.md) | 33 |
 | 2026-04_Part02 | [Material_Log/2026-04_Part02.md](Material_Log/2026-04_Part02.md) | 10 |
 | 2026-05_Part01 | [Material_Log/2026-05_Part01.md](Material_Log/2026-05_Part01.md) | 21 |
+| 2026-06_Part01 | [Material_Log/2026-06_Part01.md](Material_Log/2026-06_Part01.md) | 1 |
 
 ---
 
@@ -76,13 +77,14 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-05-23 | 2026-08-23 | arXiv / Erik J. Bekkers & Anna Ciaunica: *Unplugging a Seemingly Sentient Machine Is the Rational Choice -- A Metaphysical Perspective*（arXiv:`2601.21016v1`） | `B1/B2`：`B1` for AI welfare vs alignment / functional mimicry vs stake-bearing 接口；`B2` for Biological Idealism / Analytic Idealism 整包；不能写成 SRT=Biological Idealism/Analytic Idealism、AI 永不可能有意识、生物/碳基是 canonical 必要条件、autopoiesis 单独证明意识，或 Social Zombie / Vital Leakage / ontological gaslighting 已成为 SRT 术语 |
 | 2026-05-23 | 2026-08-23 | Essentia Foundation / Stephen Jarosek: *Association as causation: The fabric of meaning and existence itself* | `B2/B3`：公共 metaphysics / systems-theory essay，适合作为 association-vs-selection guardrail 候选；表达素材可入 public prose，但不能写成 SRT=association ontology、association 是 SRT 第一原则、association 直接等于 causation/meaning/existence、physicalism provides no answers、Kastrup idealism 背书，或 quantum contextuality / RQM 支持 SRT ontology |
 | 2026-05-23 | 2026-08-23 | Neuroscience News / Newcastle University: *Using Physics Equations to Map Memory Distortions* / `Quantum Emotions` | `B1/B2`：`B1` for order-sensitive emotional-memory modeling if future paper/model/data appears；`B2` until then as quantum-cognition guardrail；当前无 peer-reviewed 结果/模型方程/数据，不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `Ψ_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure |
+| 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`Ψ_f`、`T_dir`、`Ĝ_theta` |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：182 条
+- 总提交：183 条
 - A（融入）：117 条
-- B（观察）：15 条
+- B（观察）：16 条
 - C（拒绝）：50 条
-- 融入率：64.3%
+- 融入率：63.9%
