@@ -32,17 +32,28 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 3. `Core_Law/SRT_Core_Text_CN.md`
 4. `Core_Law/SRT_Selection_Argument.md`
 
-## 我想读书稿版（BOOK）
+## 我想读书稿版（BOOK）/ I want to read the book
+
+当前书稿是《从存在到秩序》/ *From Existence to Order*：一篇序章 + 二十八章，分四幕（Q00–Q28），幕间有过渡桥。旧 `Part_*` / `Outline_Parts/` / 52 章结构已归档到 `01_Source_Intuition/BOOK/Archive_52Chapter/`，不再是入口。
 
 推荐路线：
 
-1. `01_Source_Intuition/BOOK/00_术语表.md` —— 第一章前必读；先固定核心词的名词性定义。
-2. `01_Source_Intuition/BOOK/00b_论证地图.md` —— 第一章前快速浏览；之后可在进入每章前回看该章 P→C 骨架。
-3. `01_Source_Intuition/BOOK/Part_01_从存在到成为/` —— 进入正文卷一。
-4. `01_Source_Intuition/BOOK/00c_批判对象.md` —— 建议读完卷一后再读；用于明确本书隐含批判的对象。
-5. `01_Source_Intuition/BOOK/00d_理论定位.md` —— 建议读完卷一后或评审时阅读；用于定位 SRT 与相邻哲学传统的关系。
+1. `01_Source_Intuition/BOOK/Drafts_26Q/致读者.md` —— To the Reader：四幕地图 + 阅读建议，正文前必读。
+2. `01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md` —— Prologue：全书入口。
+3. 顺序读 `Q01`–`Q28`（章节相互依赖，跳读会在中后段跟不上；时间有限至少读完 `Q00`–`Q10`）。
+4. 幕间桥按阅读顺序穿插：`幕间桥_一二幕.md`（Q04→Q05）、`幕间桥_二三幕.md`（Q10→Q11）、`幕间桥_三四幕.md`（Q17→Q18）、`幕间桥_Q23_Q24.md`、`幕间桥_Q24_Q25.md`。
+5. 附录：`附录_三问使用指南.md`、`附录_术语表.md`、`附录_跨域难题_重述而非解决.md`。
 
-阅读提醒：前两个文件是正文入口支架，后两个文件是学术定位 / 防误读支架，不必全部压在第一章之前读完。
+四幕 / Four acts：
+
+- 第一幕 Q01–Q04 拆掉"对象先在"的地板 / Dismantling the object-first floor
+- 第二幕 Q05–Q10 留下的运动 / The movement of staying
+- 第三幕 Q11–Q17 回来的运动 / The movement of return
+- 第四幕 Q18–Q28 秩序与边界 / Order and boundary
+
+施工 / 元状态以 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md` 为唯一入口（章节进度、定位、护栏、导出规则）。GitHub 首页 `README.md` 有中英双语四幕目录与全章节表。
+
+阅读提醒：书稿是 `canonical: false` 的源头哲学主文本，不替代 Core/Core_Law 的 canonical 定义。源文件带 YAML front matter（供仓库工具使用），读者导出时剥离。
 
 ## 我想看 formal core
 

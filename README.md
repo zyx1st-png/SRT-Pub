@@ -34,6 +34,72 @@ flowchart LR
   L2 --> G
 ```
 
+## The book: *From Existence to Order* / 《从存在到秩序》
+
+The most actively developed, reader-facing form of SRT is a book in progress:
+
+> **《从存在到秩序》/ *From Existence to Order*** — a non-academic foundations book for SRT.
+>
+> One sentence: *Stability is not the starting point but the history of what selection left behind; order is not the endpoint but the ground to which consequences can return.*
+>
+> 一句话：稳定不是起点，而是选择留下来的历史；秩序不是终点，而是后果回得来的地面。
+
+It is not a paper, not a thread, and not a memoir. It does one thing: **it moves where you ask the question from.** You will not learn new facts; you will change the entry point of your questions — from "is this true or false?" to "how far has this appearance been load-bearing for later selection?"
+
+**Structure: a prologue + 28 chapters in four acts (Q00–Q28), with interludes between acts.** The chapters are the current main line; the source files are Chinese (English titles below are reading aids).
+
+- **Start here / 入口:** [`致读者` — To the Reader](01_Source_Intuition/BOOK/Drafts_26Q/致读者.md) · [`Q00` — Prologue / 序章](01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md)
+
+| Act / 幕 | Chapters | Move / 运动 |
+|---|---|---|
+| **Act I** — Dismantling the object-first floor / 拆掉"对象先在"的地板 | Q01–Q04 | What is there before objects? |
+| *Interlude* | [没有现成的起点 — No ready-made starting point](01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_一二幕.md) | |
+| **Act II** — The movement of staying / 留下的运动 | Q05–Q10 | How selection anchors, inscribes, and sediments into order |
+| *Interlude* | [写下去，就收不回 — Once written, it cannot be taken back](01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_二三幕.md) | |
+| **Act III** — The movement of return / 回来的运动 | Q11–Q17 | How stakes, caring, value, subject, and consciousness grow back from consequence |
+| *Interlude* | [谁在承受 — Who bears it](01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_三四幕.md) | |
+| **Act IV** — Order and boundary / 秩序与边界 | Q18–Q28 | Freedom, occlusion, suffering, direction, community, AI, the limits of the theory |
+
+<details>
+<summary>Full chapter list / 全部章节</summary>
+
+| # | 中文 | English (reading aid) |
+|---|---|---|
+| Q01 | [给定性](01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md) | Givenness |
+| Q02 | [对象化](01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md) | Objectification |
+| Q03 | [前对象场](01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md) | The Pre-Object Field |
+| Q04 | [最低非中立性](01_Source_Intuition/BOOK/Drafts_26Q/Q04_最低非中立性.md) | Minimal Non-Neutrality |
+| Q05 | [选择不是挑选](01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md) | Selection Is Not Picking |
+| Q06 | [排除与阴影](01_Source_Intuition/BOOK/Drafts_26Q/Q06_排除与阴影.md) | Exclusion and Shadow |
+| Q07 | [锚定](01_Source_Intuition/BOOK/Drafts_26Q/Q07_锚定.md) | Anchoring |
+| Q08 | [不可逆性](01_Source_Intuition/BOOK/Drafts_26Q/Q08_不可逆性.md) | Irreversibility |
+| Q09 | [现实厚度](01_Source_Intuition/BOOK/Drafts_26Q/Q09_现实厚度.md) | The Thickness of Reality |
+| Q10 | [秩序背景化](01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md) | Order Becoming Background |
+| Q11 | [被选择](01_Source_Intuition/BOOK/Drafts_26Q/Q11_被选择.md) | Being Selected |
+| Q12 | [攸关](01_Source_Intuition/BOOK/Drafts_26Q/Q12_攸关.md) | What Is at Stake |
+| Q13 | [在乎](01_Source_Intuition/BOOK/Drafts_26Q/Q13_在乎.md) | Caring |
+| Q14 | [价值不是偏好](01_Source_Intuition/BOOK/Drafts_26Q/Q14_价值不是偏好.md) | Value Is Not Preference |
+| Q15 | [关切维度](01_Source_Intuition/BOOK/Drafts_26Q/Q15_关切维度.md) | Dimensions of Concern |
+| Q16 | [主体沉积](01_Source_Intuition/BOOK/Drafts_26Q/Q16_主体沉积.md) | The Sedimentation of the Subject |
+| Q17 | [意识](01_Source_Intuition/BOOK/Drafts_26Q/Q17_意识.md) | Consciousness |
+| Q18 | [秩序与自由](01_Source_Intuition/BOOK/Drafts_26Q/Q18_秩序与自由.md) | Order and Freedom |
+| Q19 | [脚手架与牢笼](01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md) | Scaffold and Cage |
+| Q20 | [遮蔽](01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md) | Occlusion |
+| Q21 | [苦难](01_Source_Intuition/BOOK/Drafts_26Q/Q21_苦难.md) | Suffering |
+| Q22 | [方向](01_Source_Intuition/BOOK/Drafts_26Q/Q22_方向.md) | Direction |
+| Q23 | [共同体](01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md) | Community |
+| Q24 | [AI](01_Source_Intuition/BOOK/Drafts_26Q/Q24_AI.md) | AI |
+| Q25 | [选择广于意识](01_Source_Intuition/BOOK/Drafts_26Q/Q25_选择广于意识.md) | Selection Is Broader Than Consciousness |
+| Q26 | [可证伪性](01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md) | Falsifiability |
+| Q27 | [理论自反](01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论自反.md) | Theory's Self-Reflexivity |
+| Q28 | [回到生成](01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md) | Return to Becoming |
+
+Appendices / 附录: [三问使用指南 — Three-Question Guide](01_Source_Intuition/BOOK/Drafts_26Q/附录_三问使用指南.md) · [术语表 — Glossary](01_Source_Intuition/BOOK/Drafts_26Q/附录_术语表.md) · [跨域难题：重述而非解决 — Cross-Domain Hard Problems: Restated, Not Solved](01_Source_Intuition/BOOK/Drafts_26Q/附录_跨域难题_重述而非解决.md)
+
+</details>
+
+> Reading note / 阅读提醒: chapters build on each other — if time is short, read at least Q00–Q10 before deciding whether to continue. End-of-chapter notes marked "专业读者，可跳过 / professional readers, skippable" are optional. The source files carry YAML front matter for repo tooling; reader exports strip it.
+
 ## Frontstage structure / 前台结构
 
 This repository is now organized around five frontstage reading layers:
@@ -56,10 +122,10 @@ Guiding rule:
 
 ### If you are new
 
-1. [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md)
-2. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md)
-3. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
-4. [`START_HERE.md`](START_HERE.md)
+1. [`05_Public_Release/SRT_IN_ONE_PAGE.md`](05_Public_Release/SRT_IN_ONE_PAGE.md) — the shortest English overview
+2. [`致读者` — To the Reader](01_Source_Intuition/BOOK/Drafts_26Q/致读者.md) and [`Q00` — Prologue](01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md) — the book's entry (see the book section above)
+3. [`01_Source_Intuition/README.md`](01_Source_Intuition/README.md)
+4. [`01_Source_Intuition/CORE_REVERSALS.md`](01_Source_Intuition/CORE_REVERSALS.md)
 5. [`SRT_Quick_Start.md`](SRT_Quick_Start.md)
 
 ### If you are a philosophy reader

@@ -135,6 +135,17 @@ Important retrieval note: "not final definition authority" is not the same as "l
 
 ## Domain Entrypoints
 
+### Source Intuition / Book (《从存在到秩序》 / From Existence to Order)
+
+- `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`（single construction entry; current main line, per-chapter status, positioning, guardrails, export rules — read this before any book read/edit）
+- `01_Source_Intuition/BOOK/Drafts_26Q/致读者.md`（To the Reader; four-act map + reading guide）
+- `01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md` … `Q28_回到生成.md`（prologue + 28 chapters, four acts; current reader-facing main text, `canonical: false`）
+- interludes: `Drafts_26Q/幕间桥_一二幕.md`（Q04→Q05）, `幕间桥_二三幕.md`（Q10→Q11）, `幕间桥_三四幕.md`（Q17→Q18）, `幕间桥_Q23_Q24.md`, `幕间桥_Q24_Q25.md`
+- appendices: `Drafts_26Q/附录_三问使用指南.md`, `附录_术语表.md`, `附录_跨域难题_重述而非解决.md`
+- positioning / architecture meta: `BOOK_POSITIONING_BRIEF_2026-06-07.md`, `BOOK_ARCHITECTURE_MAP_2026-06-03.md`, `BOOK_CORE_PROPOSITIONS_2026-05-30.md`
+- four acts: I `Q01–Q04` dismantling the object-first floor · II `Q05–Q10` the movement of staying · III `Q11–Q17` the movement of return · IV `Q18–Q28` order and boundary
+- archived prior structure (not an entry): `01_Source_Intuition/BOOK/Archive_52Chapter/`, `Archive_Meta/`
+
 ### Core
 
 - `Core/_SRT_Core_Bridge.md`
@@ -257,6 +268,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 ## Machine Notes
 
 - `_SRT_MANIFEST.yaml` 是机器清单，不是 canonical 理论主文
+- `01_Source_Intuition/BOOK/Drafts_26Q/` 是当前书稿《从存在到秩序》主线（Q00–Q28 + 致读者 + 幕间桥 + 附录），`canonical: false` 的源头哲学主文本；它不替代 Core/Core_Law canonical 定义，但在 book/source-intuition、理论奠基与公共表达任务中是高价值检索源。施工/元状态以 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md` 为唯一入口；旧 52 章 / `Part_*` 结构已归档至 `Archive_52Chapter/`，不是入口
 - `SRT_Navigation_Map.md` 是人类阅读地图，不是 registry 摘要
 - `STATUS.md` 现在只保留当前状态，不再承载长历史
 - `Core/SRT_Core_21_Formal_Axioms.md` 现在是 Core_21 claim-layer index，不再是混层公理正文
