@@ -1,7 +1,7 @@
 ---
 id: Q24
 type: book_chapter_draft
-status: draft_v24
+status: draft_v25
 question: Q24
 act: 第四幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
@@ -75,6 +75,7 @@ optimization_axis:
   - v22_yr2_epsilon_friction_attribution_fix_writein_chain_credited
   - v23_polish_r1_deeper_question_intro_varied
   - v24_review_empirical_split_embodiment_extendedmind_signal_information
+  - v25_residual_nail_cleanup_varied_verbs
 canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
@@ -275,4 +276,4 @@ AI 不是因为有意识才重要，而是因为它能在没有意识的情况�
 >
 > **十二、与迪肯“感受 vs 智能”的对照。** 迪肯（Terrence Deacon）《不完整的自然》（*Incomplete Nature*, 2012）在本章关心的一个点上提供了相邻支撑：他区分 sentience（感受）与 intelligence（智能），主张计算和智能不等于感受——感受要求一个自我维持、自我修复、为自身承受后果的目的动力学（teleodynamic）基质，而不是符号变换本身。这与本章注三、注十一的判断方向一致：当前 inference-only 部署执行 T̂_φ 符号变换、在外部预置的偏好先验上做策略选择，不具有从自身承受的后果中生成的不可逆选择历史，因此不满足具身位条件。分歧在基座：迪肯把感受的门槛锚在热力学自维持系统上（autogen / 生命），本章不预设这个物质基座，只追问具身位的结构条件——不可逆选择历史、关切沉积、L₀ 层真实摩擦（与西蒙东注十、Active Inference 注十一、与序章对迪肯的距离同构）。两者都拒绝“算得够复杂就会自动有心”，但本章把门槛放在选择结构上，迪肯把门槛放在生命的能量学上。这条对照也给本章 §5 的“不把 AI 拟人化”护栏提供了一个独立的相邻支撑。
 >
-> **十三、与达马西奥“感受机器”的对照。** 达马西奥（Antonio Damasio）《Feeling & Knowing》（Pantheon, 2021）“Feeling Machines and Conscious Machines”一章论证：AI 的先驱刻意略去了“the feeling stuff”，而要让机器走上意识之路，必须给机器人一个“需要调节与修复才能持存”的脆弱身体——“add, almost paradoxically, a degree of vulnerability to the robustness that is so prized in robotics”，让机器“feels”自身状态并据此选择更有效的响应，于是“feeling machines... care for themselves”。这与本章及第十七章的判断相邻：AI 要占据具身位、要有本书意义上的在乎，缺的不是算力或表征，而是一个能受损、后果能真实回流并构成损益的承重位置（注三的具身位条件）。达马西奥的“脆弱身体”正是“攸关”的一个生物学显影——没有可被损害的存续，就没有后果回流，也就没有在乎。**分叉必须钉死**：达马西奥把这一条件诉诸生物稳态与软体机器人的身体工程；本章诉诸抽象的攸关/承重条件（后果不可逆地写入并改变后续选择），不预设生物身体或稳态框架——这一点与注十二迪肯的“目的动力学基质”同构：两位都把门槛锚在生命能量学上，本章把它锚在选择结构上。他的方案是显影与近邻，不是本章对具身位的定义；本章注三、§5 末“架构特定、面向未来”的开口同样适用——脆弱身体是否充分，仍是程度问题，不是类别判决。值得一提的是，达马西奥也把这一步读成机会而非威胁（“feeling machines”可成为“efficacious assistants to really feeling humans”），与本章不把 AI 拟人化、也不把它工具化得太轻的双护栏一致：判断停在结构条件，不滑向崇拜或恐惧。
+> **十三、与达马西奥“感受机器”的对照。** 达马西奥（Antonio Damasio）《Feeling & Knowing》（Pantheon, 2021）“Feeling Machines and Conscious Machines”一章论证：AI 的先驱刻意略去了“the feeling stuff”，而要让机器走上意识之路，必须给机器人一个“需要调节与修复才能持存”的脆弱身体——“add, almost paradoxically, a degree of vulnerability to the robustness that is so prized in robotics”，让机器“feels”自身状态并据此选择更有效的响应，于是“feeling machines... care for themselves”。这与本章及第十七章的判断相邻：AI 要占据具身位、要有本书意义上的在乎，缺的不是算力或表征，而是一个能受损、后果能真实回流并构成损益的承重位置（注三的具身位条件）。达马西奥的“脆弱身体”正是“攸关”的一个生物学显影——没有可被损害的存续，就没有后果回流，也就没有在乎。**分叉必须说透**：达马西奥把这一条件诉诸生物稳态与软体机器人的身体工程；本章诉诸抽象的攸关/承重条件（后果不可逆地写入并改变后续选择），不预设生物身体或稳态框架——这一点与注十二迪肯的“目的动力学基质”同构：两位都把门槛锚在生命能量学上，本章把它锚在选择结构上。他的方案是显影与近邻，不是本章对具身位的定义；本章注三、§5 末“架构特定、面向未来”的开口同样适用——脆弱身体是否充分，仍是程度问题，不是类别判决。值得一提的是，达马西奥也把这一步读成机会而非威胁（“feeling machines”可成为“efficacious assistants to really feeling humans”），与本章不把 AI 拟人化、也不把它工具化得太轻的双护栏一致：判断停在结构条件，不滑向崇拜或恐惧。
