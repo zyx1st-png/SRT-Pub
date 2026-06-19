@@ -1,7 +1,7 @@
 ---
 id: Q24
 type: book_chapter_draft
-status: draft_v25
+status: draft_v26
 question: Q24
 act: 第四幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
@@ -76,6 +76,7 @@ optimization_axis:
   - v23_polish_r1_deeper_question_intro_varied
   - v24_review_empirical_split_embodiment_extendedmind_signal_information
   - v25_residual_nail_cleanup_varied_verbs
+  - v26_body_dedup_trim_signal_not_info_repeat
 canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
@@ -204,7 +205,7 @@ AI 训练数据由谁标注？标注劳动者能不能影响模型的设计？�
 
 AI 不是因为有意识才重要，而是因为它能在没有意识的情况下改写选择条件——改写什么东西变得可见，什么变得容易，什么变成默认路径，后果由谁承担。
 
-模型处理信号，不等于它拥有具身攸关。只有后果能回到一个可承重、可整合、可自我改写的位置，信号才可能成为它自己的信息；在此之前，AI 处理的是信号，地形承受者却往往是人和制度。
+模型处理信号，不等于它拥有具身攸关。
 
 当前主流对话式系统还不满足具身位条件，原因不是“它不够聪明”，而是结构条件没有到位：它没有从自身承受后果中积累不可逆的选择历史，没有从自身损益中沉积自主关切范围，也没有从选择写入和路径沉积中产生真实摩擦。它能重组符号、模拟理由、执行任务，但这些后果并不以“我在承受”的方式回到它自身并改变它下一步的在乎。
 
