@@ -3,6 +3,7 @@
 **/.DS_Store
 __pycache__/
 *.pyc
+01_Source_Intuition/BOOK/Exports/
 .agents/
 .claude/worktrees/
 .openclaw/
