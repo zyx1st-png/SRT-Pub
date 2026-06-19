@@ -37,6 +37,7 @@ Bridge translates. It does not prove SRT.
 | Ruliad / Observer Theory | [`../Bridge/SRT_Adjacent_Theory_Interface_Index.md`](../Bridge/SRT_Adjacent_Theory_Interface_Index.md) | Treat as adjacent-theory translation unless a specific file is later added. |
 | Assembly Theory | [`../Bridge/SRT_Adjacent_Theory_Interface_Index.md`](../Bridge/SRT_Adjacent_Theory_Interface_Index.md) | Treat as adjacent-theory translation unless a specific file is later added. |
 | Social theory | [`../Philosophy/_SRT_Soc_Bridge.md`](../Philosophy/_SRT_Soc_Bridge.md), [`../Philosophy/SRT_Soc_03_Institutions.md`](../Philosophy/SRT_Soc_03_Institutions.md) | Institutions, `L2` hardening, hidden friction, and social reality formation. |
+| Selection dynamics (MSD) | [`SRT_Selection_Dynamics_MSD_Bridge.md`](SRT_Selection_Dynamics_MSD_Bridge.md) | Maps the minimal selection-dynamics chain (exclude→form→inscribe→anchor→backflow) onto existing canonical machinery (`Ĝθ`, `L0/L1/L2`, `Ψ_f`, `d`, bearing position, Eq-Bridge-Loop-01); flags notation collisions. Reading layer, not a definition source. |
 
 ## Use Rule
 
