@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-06-17
+updated: 2026-06-19
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -14,6 +14,12 @@ claim_mode: navigation
 # 《从存在到秩序》书稿版本管理日志
 
 > 本文件只管理书稿施工版本，不替代理论 canonical，不替代正文。
+
+## 2026-06-19 RC1-candidate 冻结 + 框架层落地
+
+框架层施工（PR #506）在已冻结主梁上加 5 段（Q00/Q05/Q25/Q26/Q28 各一段，纯插入，未改既有句子）：引入「选择性收束」作为过程词（与「选择结构」成过程/结果对偶，不替换）、Q00 选择发生学方向、Q25 晚期界面谱系（规律性上护栏：不推导物理定律，只作收束界面之回读）、Q28 宇宙地平线主张、Q26 同步吸收宇宙级失败条件；载荷朝上（Q01–Q24 不依赖宇宙主张）。随后收紧三处措辞（路径依赖不说窄、规律性加「在给定尺度和框架中」、删 Q28「第一次」）。
+
+导出校验通过：全书合并稿 37 项 / 1,039,615 bytes，八章主干 10 项 / 268,510 bytes，frontmatter 仅 baseline 告警。导出脚本版本标签 RC0→RC1。书稿冻结为 RC1-candidate，记录见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`。Canonical 未修改。
 
 ## 2026-06-17 LLM、公共对象与生活场书稿备注
 

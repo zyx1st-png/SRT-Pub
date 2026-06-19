@@ -14,7 +14,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 > **Connector-safe reading path**: This dashboard is moderately long. For connector reads, start with [`STATUS_Split/README.md`](STATUS_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new status authority.
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-06-16
+> **最后更新**：2026-06-19
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -24,7 +24,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 远端已收口为单一 `main` 分支。
 - 仓库已执行一轮"理论硬化优先、去命题混层"回写：`Core_21` 已拆成 P0/P1/P2-P4 分层，AI 首读入口已降密度为 runtime/bootstrap。
 - 当前后续重点是让 domain 文件持续回链 canonical，避免 bridge / companion / lab 命题反向冒充 core。
-- 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。）
+- 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。） **`2026-06-19`：P0 姿态修订完成，框架层落地（PR #506：引入「选择性收束」过程词、宇宙地平线读法、Q26 同步失败条件），书稿冻结为 RC1-candidate；导出校验通过（全书 37 项 / 八章主干 10 项）。见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`。**
 
 ## 当前建议首读顺序
 
@@ -96,7 +96,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 ## 当前高优先事项
 
-- **【P0·2026-06-16 起】《从存在到秩序》全书「姿态修订」**：把正文从证明姿态翻成"拆地板/换镜片/重新看"的体验-邀请姿态。只改**接缝**（序章、章节开头结尾、最强反对者段、语气），不动机制正文与严密——让严密像理论自己说的那样退成背景里承重的地面。单段判准：把读者摆成"陪审员（评判我的证明）"还是"探索者（跟我重新看）"。纲领 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；序章为试点起点。
+- **【P0·已完成 2026-06-19｜书稿已冻结 RC1-candidate】《从存在到秩序》全书「姿态修订」+ 框架层**：把正文从证明姿态翻成"拆地板/换镜片/重新看"的体验-邀请姿态。只改**接缝**（序章、章节开头结尾、最强反对者段、语气），不动机制正文与严密——让严密像理论自己说的那样退成背景里承重的地面。单段判准：把读者摆成"陪审员（评判我的证明）"还是"探索者（跟我重新看）"。纲领 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；序章为试点起点。
 - 继续同步入口层去重：`README / AGENTS / CLAUDE / STATUS / _SRT_INDEX / Navigation / manifest`
 - 保持 canonical 主链不被入口优化反向污染
 - 按 `Governance/SRT_CLAIM_LADDER.md` 持续标注 domain 文件中的 P-level
@@ -112,6 +112,6 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 ## 当前工作边界
 
-- 书稿正文 **已解冻**（`2026-06-16`），P0 为全书姿态修订过；RC0"正文默认冻结"不再适用，但仍走 `Governance/SRT_EDIT_PROTOCOL.md`
+- 书稿正文 **曾解冻**（`2026-06-16` 做 P0 姿态修订），**现已重新冻结**（`2026-06-19`，RC1-candidate；框架层 PR #506 + 导出校验通过）；正文默认冻结恢复生效，仍走 `Governance/SRT_EDIT_PROTOCOL.md`，详见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`
 - 姿态修订边界：改接缝、不动机制正文与严密；不许借姿态过偷改 canonical 理论或降低硬度标注
 - 理论文件（canonical）编辑仍先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`——理论冻结不受书稿解冻影响
