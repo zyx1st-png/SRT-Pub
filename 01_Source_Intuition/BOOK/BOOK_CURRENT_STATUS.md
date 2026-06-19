@@ -5,11 +5,11 @@ status: active_current
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-06-15
+updated: 2026-06-19
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: q04_q09_remote_main_conflict_absorb_micro_polish_2026-06-15
+last_pass: rc1_candidate_freeze_framing_layer_2026-06-19
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -17,6 +17,8 @@ last_pass: q04_q09_remote_main_conflict_absorb_micro_polish_2026-06-15
 > 当前规则：每次写作、修订、AI 协作、founder pass，先读本文件。
 >
 > 本文件不替代理论 canonical，不替代正文。它只负责说明当前书稿实际主线、当前可用元文件、下一步施工优先级和历史结构的归档边界。
+>
+> **`2026-06-19` 冻结状态：书稿已冻结为 RC1-candidate（姿态修订完成 + 框架层 PR #506 + 导出校验通过）。正文默认冻结，改动须经治理批准。详见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`。**
 
 ---
 

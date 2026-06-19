@@ -132,7 +132,7 @@ def main() -> None:
     EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     manuscript, manifest = build_spine(args.date)
 
-    stem = f"从存在到秩序_RC0_八章主干试读版_可复制_{args.date}"
+    stem = f"从存在到秩序_RC1_八章主干试读版_可复制_{args.date}"
     manuscript_path = EXPORT_DIR / f"{stem}.md"
     manifest_path = EXPORT_DIR / f"{stem}_来源清单.md"
     manuscript_path.write_text(manuscript, encoding="utf-8")

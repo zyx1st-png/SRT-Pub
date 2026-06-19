@@ -102,7 +102,7 @@ def build_publication(export_date: str) -> tuple[str, str]:
         "",
         "作者：张宇鑫",
         "",
-        "RC0 出版合并稿",
+        "RC1 出版合并稿",
         "",
         export_date,
         "",
@@ -142,7 +142,7 @@ def main() -> None:
     EXPORT_DIR.mkdir(parents=True, exist_ok=True)
     manuscript, manifest = build_publication(args.date)
 
-    stem = f"从存在到秩序_RC0_出版合并稿_{args.date}"
+    stem = f"从存在到秩序_RC1_出版合并稿_{args.date}"
     manuscript_path = EXPORT_DIR / f"{stem}.md"
     manifest_path = EXPORT_DIR / f"{stem}_来源清单.md"
     manuscript_path.write_text(manuscript, encoding="utf-8")
