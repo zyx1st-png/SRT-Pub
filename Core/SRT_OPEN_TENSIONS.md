@@ -35,6 +35,7 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | exact status of `d` proxies | bare `d` is a scalar summary of stake-coupled concern; `D_eff`, Fisher rank, `d-vector`, and `d-gate` are separated | a final theorem identifying capacity directions with stake-coupled concern directions | capacity, competence, or distinguishability cannot be treated as concern |
 | incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, and reward | a complete formal object with validated sufficiency conditions | high meaning, high reward, or high confidence cannot be cited as `T_dir` by itself |
 | Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
+| selection vs. rich dynamical systems | the exclude/form/inscribe gate separates selection from mere change (`Q05`/`Q25`); the criterion-not-mechanism move + technical-word discipline (`Q05 §4/§7`) close the agency equivocation | an operationalized non-trivial difference between selection structure and a sufficiently rich path-dependence + causal-modeling + adjacent-possible account (differences ① excluded-as-operative and ② successor-space rewriting) | the equivocation is closed (③ + discipline), but that does not operationalize ①②; do not cite Q05 §4 as proof that selection is distinct from path dependence / attractors |
 
 These are pressure points, not new axioms. They route later work and block overclaiming.
 
@@ -386,6 +387,40 @@ Core 24 should be hardened in three directions:
 3. **comparative prediction**: define at least one domain where SRT predicts a pattern not predicted by FEP, predictive processing, RL, IIT/GNW, social constructionism, or ordinary habit theory.
 
 Until these are done, Core 24 should be cited as a bridge-hardening supplement and canonical framing layer, not as a completed theorem package.
+
+---
+
+## 9. Selection Structure vs. Rich Dynamical Systems (path dependence / attractors / adjacent possible)
+
+### Current State
+
+The three-step definition (exclude / form / inscribe; 排开/定形/写入; `Drafts_26Q/Q05`, `Q25`) separates selection from mere change. The book chapter `Q05 §4` now meets the strongest redescription objection head-on — that exclude/form/inscribe is merely "reachable-space contraction + attractor + path dependence" renamed — with three claimed differences plus one framing move:
+
+1. **excluded-as-operative** (difference ①): the not-taken path keeps acting via shadow, opportunity cost, tension, downstream friction (`Q06`), not only the actual trajectory;
+2. **successor-space rewriting** (difference ②): inscription changes the possibility space itself (what can next be seen, borne, re-selected), not just trajectory memory inside a fixed state space;
+3. **criterion, not mechanism** (difference ③): "selection" is a cross-layer criterion, not another physical mechanism competing with dissipative structures / attractors / active inference — those are its mechanism-displays;
+4. **technical-word discipline** (`Q05 §7`): "selection" is a technical term (= exclude/form/inscribe, with no preference/intent/judgment); downstream chapters may not re-import agency into the word and must re-earn each loaded notion from consequence-return / mattering / non-substitutability.
+
+Difference ③ plus the technical-word discipline together close the motte-and-bailey raised in adversarial review (defining "selection" deflationarily at the base while drawing on its agency connotations downstream).
+
+### Problem Point
+
+Differences ① and ② are **not yet independently operationalized**, so the claim "selection structure is more than a sufficiently rich dynamical-systems account" is, at the operational level, currently underdetermined:
+
+- **① excluded-as-operative** rests on `Q06` doing work that counterfactual causal modeling (Pearl), shadow prices, and attractor-basin geometry do **not** already do. The residue is an ontological claim (the excluded continues to *act*, not merely to be counterfactually *evaluated*) — exactly the hard-to-operationalize part.
+- **② successor-space rewriting** overlaps Kauffman's *adjacent possible* and non-autonomous / open-ended dynamics. Its "more radical" residue rests on `L0` / 可成为性, whose own origin is the unresolved tension in §7 (P0-04). ② therefore discharges its debt one layer down, onto an already-open account.
+
+### Must Not Be Overstated
+
+The equivocation is closed (③ + discipline); this does **not** mean ①② are operationalized. Do not cite `Q05 §4` as proof that selection is non-trivially distinct from path dependence / attractors. Until ①② are hardened, "selection adds more than rich dynamical systems" is an open exposure point, not a derived result.
+
+### Future Hardening Direction
+
+1. **Q06 criterion**: give an operational criterion under which "the excluded keeps acting" produces a signature counterfactual bookkeeping / basin geometry cannot reproduce (e.g. a path-asymmetric return cost no counterfactual ledger predicts).
+2. **L0 / 可成为性**: routes into §7 (origin of selectability); ②'s residue cannot be closed independently of it.
+3. **comparative prediction**: shares §8's future-hardening #3 — name at least one domain where exclude/form/inscribe predicts a pattern FEP / dynamical systems / adjacent-possible do not.
+
+Until these are done, register this tension as open (P1-candidate at most); do not add prose to `Q05` to make ①② look closed.
 
 ---
 
