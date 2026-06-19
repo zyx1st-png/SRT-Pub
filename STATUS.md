@@ -112,6 +112,6 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 ## 当前工作边界
 
-- 书稿正文 **已解冻**（`2026-06-16`），P0 为全书姿态修订过；RC0"正文默认冻结"不再适用，但仍走 `Governance/SRT_EDIT_PROTOCOL.md`；**`2026-06-19` 起已重新冻结为 RC1-candidate（框架层 PR #506 + 导出校验通过），正文默认冻结恢复生效，见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`**
+- 书稿正文 **曾解冻**（`2026-06-16` 做 P0 姿态修订），**现已重新冻结**（`2026-06-19`，RC1-candidate；框架层 PR #506 + 导出校验通过）；正文默认冻结恢复生效，仍走 `Governance/SRT_EDIT_PROTOCOL.md`，详见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`
 - 姿态修订边界：改接缝、不动机制正文与严密；不许借姿态过偷改 canonical 理论或降低硬度标注
 - 理论文件（canonical）编辑仍先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`——理论冻结不受书稿解冻影响
