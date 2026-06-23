@@ -50,6 +50,7 @@ MANUSCRIPT_ORDER = [
     ManuscriptItem("Q21_苦难.md", "chapter"),
     ManuscriptItem("Q22_方向.md", "chapter"),
     ManuscriptItem("Q23_共同体.md", "chapter"),
+    ManuscriptItem("幕间桥_Q23_Q24.md", "interlude"),
     ManuscriptItem("Q24_AI.md", "chapter"),
     ManuscriptItem("幕间桥_Q24_Q25.md", "interlude"),
     ManuscriptItem("Q25_选择广于意识.md", "chapter"),

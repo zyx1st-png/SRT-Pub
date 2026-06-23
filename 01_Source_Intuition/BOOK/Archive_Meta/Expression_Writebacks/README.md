@@ -25,4 +25,11 @@ Archived here on 2026-06-12:
 | `_MATURANA_VARELA_EXPRESSION_WRITEBACK_2026-06-11.md` | `Drafts_26Q/` | Maturana/Varela expression writeback absorbed or superseded by RC0 freeze; retained for provenance and future reference only. |
 | `_PRIGOGINE_STENGERS_EXPRESSION_WRITEBACK_2026-06-11.md` | `Drafts_26Q/` | Prigogine/Stengers expression writeback absorbed or superseded by RC0 freeze; retained for provenance and future reference only. |
 
+Archived here on 2026-06-23:
+
+| File | Source | Reason |
+|---|---|---|
+| `_SIMONDON_EXPRESSION_WRITEBACK_2026-06-11.md` | `Drafts_26Q/` | Simondon expression writeback absorbed into book draft layer; moved out of active manuscript directory before publication export. |
+| `_TRACES_OTHER_EXPRESSION_WRITEBACK_2026-06-11.md` | `Drafts_26Q/` | Traces of the Other expression writeback absorbed into book draft layer; moved out of active manuscript directory before publication export. |
+
 Current construction entry remains `../../BOOK_CURRENT_STATUS.md`. RC0 review entry remains `../../BOOK_RC0_REVIEW_PACKET_2026-06-12.md`. RC0 dispatch protocol remains `../../BOOK_RC0_REVIEW_DISPATCH_2026-06-12.md`.

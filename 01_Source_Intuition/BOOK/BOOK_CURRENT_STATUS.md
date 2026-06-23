@@ -37,7 +37,7 @@ last_pass: rc1_candidate_freeze_framing_layer_2026-06-19
 说明：
 
 - `Drafts_26Q/` 是历史目录名；当前实际内容已经闭合到 `Q00-Q28`，即“序章 + 二十八章”。
-- 三座幕间桥属正文阅读顺序：`幕间桥_二三幕.md`（Q10/Q11 之间）、`幕间桥_三四幕.md`（Q17/Q18 之间）、`幕间桥_Q24_Q25.md`（Q24/Q25 之间）。构建脚本与 `scripts/check_book_outline_split.py` 已登记（2026-06-12）。
+- 五座幕间桥属正文阅读顺序：`幕间桥_一二幕.md`（Q04/Q05 之间）、`幕间桥_二三幕.md`（Q10/Q11 之间）、`幕间桥_三四幕.md`（Q17/Q18 之间）、`幕间桥_Q23_Q24.md`（Q23/Q24 之间）、`幕间桥_Q24_Q25.md`（Q24/Q25 之间）。构建脚本与 `scripts/check_book_outline_split.py` 已登记；2026-06-23 已同步当前五幕间导出顺序。
 - 旧 `Part_*` 主稿、旧 `Outline_Parts/`、旧 52 章结构已经下沉到 `01_Source_Intuition/BOOK/Archive_52Chapter/`，不再作为当前施工入口。
 - 当前根目录只应保留能继续指导 Q00-Q28 主线的元文件；被新版取代的元文件放入 `01_Source_Intuition/BOOK/Archive_Meta/`。
 
@@ -124,7 +124,7 @@ last_pass: rc1_candidate_freeze_framing_layer_2026-06-19
 | Q26 | `Drafts_26Q/Q26_可证伪性.md` | `draft_v13`（v13 润色一轮：“到这里，一个更深的问题”三章同型解耦） |
 | Q27 | `Drafts_26Q/Q27_理论自反.md` | `draft_v11`（v11 Traces of the Other 正文表达：异常材料须保留竞争解释、失败结果与非 SRT 复核） |
 | Q28 | `Drafts_26Q/Q28_回到生成.md` | `draft_v13`（v11 合梁三焊：暗线补回程、薄 ε 违例修复、§9 双地板句收口；v12 注四一致性；v13 §5 回流落点消歧） |
-| 幕间桥 | `Drafts_26Q/幕间桥_二三幕.md` ／ `幕间桥_三四幕.md` ／ `幕间桥_Q24_Q25.md` | `draft_v1`×3（梁级路标：留下运动收束／回来运动收束＋第四幕三种断法读法／诊断收束＋刀转向自己） |
+| 幕间桥 | `Drafts_26Q/幕间桥_一二幕.md` ／ `幕间桥_二三幕.md` ／ `幕间桥_三四幕.md` ／ `幕间桥_Q23_Q24.md` ／ `幕间桥_Q24_Q25.md` | 当前五幕间阅读顺序（Q04/Q05、Q10/Q11、Q17/Q18、Q23/Q24、Q24/Q25）；用于“换镜片”式转场与第四幕社会/理论边界收束。 |
 
 ---
 
