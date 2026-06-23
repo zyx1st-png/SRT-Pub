@@ -20,7 +20,7 @@ claim_mode: navigation
 把全书结构从「四幕题材分组」升级为「五幕生成运动」（拆地板 → 选材 → 成地板 → 长出世界 → 搭脚手架 → 交还生成）。**本批仅产出骨架与元文件，正文（`Drafts_26Q/` Q00–Q28）未改。**
 
 - 新增 `BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md`：五幕章目、重构缺口链、五张新节点卡（选材 / 新地板全景 / 主动性 / 本体论摩擦 / 权力）、幕前幕终分工、Stage 0–5。
-- 净结构变化：新章 5；意义并入价值章；世界图景靠各章内容优化、不立结构；旧 Q11 预裁剪并入 Q10；旧 Q26 可证伪性下沉 Q27 + 附录。
+- 净结构变化：新章 5；意义并入价值章；世界图景靠各章内容优化、不立结构；旧 Q10 与旧 Q11 合并为新第 11 章《秩序背景化》；旧 Q26 可证伪性下沉 Q27 + 附录。
 - `BOOK_ARCHITECTURE_MAP_2026-06-03.md` 加结构视图被取代横幅（六根主梁/各章内容卡仍有效）；`BOOK_CURRENT_STATUS.md` 加 §0.2 结构重构段、元文件表新行、§3 Stage 顺序。
 - 待逐 Stage 同步：`BOOK_PROBLEM_CHAIN_REWRITE`、`BOOK_CHAPTER_CARDS`、`BOOK_CORE_PROPOSITIONS`、`致读者`、5 座幕间桥。
 - canonical 理论冻结不受影响；本体论摩擦回链 `_SRT_PSI_F_CANONICAL.md`，不造平行术语。
