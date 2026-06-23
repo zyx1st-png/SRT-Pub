@@ -6,94 +6,6 @@ question: Q24
 act: 第四幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
 position_in_seven_stages: 第四幕第七站——应用枢纽二：共同体三问与委托四要件在AI领域的直接落地，地形改写先于意识归属
-based_on:
-  - 01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md
-  - 01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md
-  - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md
-  - 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md
-  - 01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md
-  - 01_Source_Intuition/BOOK/Drafts_26Q/Q22_方向.md
-  - 01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md
-  - 01_Source_Intuition/BOOK/Drafts_26Q/Q17_意识.md
-  - 01_Source_Intuition/BOOK/Drafts_26Q/Q11_被选择.md
-  - AI/_SRT_AI_Bridge.md
-  - _SRT_T_DIR_CANONICAL.md
-  - _SRT_D_VALUE_CANONICAL.md
-  - _SRT_PSI_F_CANONICAL.md
-  - Core_Law/SRT_L0_Metaphysics.md
-  - Core_Law/SRT_Suffering.md
-  - Core_Law/SRT_Occlusion_Dynamics.md
-  - Core_Law/SRT_Collective_Selection.md
-optimization_axis:
-  - v7_terminology_simplification_guide_v3_applied
-  - v7_dvalue_governance_patch_applied
-  - v7_s1_experiential_entry_student_ai_scaffold_to_default
-  - v7_s1_smart_city_second_scene_consequence_invisibility
-  - v7_s2_old_floor_consciousness_first_reframed_as_terrain_first
-  - v7_s3_tool_scaffold_cage_terrain_distinction_white_spoken
-  - v7_s3_core_memory_point_ai_changes_terrain_not_consciousness_question
-  - v7_s4_three_questions_from_q23_applied_to_ai
-  - v7_s5_strongest_opponent_ai_is_just_a_tool_plus_two_guardrails
-  - v7_s6_boundary_guards_six_points
-  - v7_s7_bridge_q25_selection_broader_than_consciousness
-  - v7_section_count_compressed_from_11_to_7
-  - v7_all_formal_symbols_demoted_to_chapter_end_notes
-  - v7_originality_defense_moved_to_chapter_end_notes
-  - v7_crossdomain_section_moved_to_chapter_end_notes
-  - v7_chain_position_compressed_to_chapter_end_notes
-  - v7_four_role_table_moved_to_chapter_end_notes
-  - v7_core_memory_point_ai_changes_terrain_of_human_choice
-  - v8_s3_empirical_deskilling_evidence_budzyn_bastani
-  - v8_s5_agentic_ai_turn_tool_thesis_pressure
-  - v8_chapter_note_seven_governance_anchors_eu_ai_act_mckinsey
-  - v9_extended_mind_scaffolding_ai_chapter_note
-  - v10_s1_opening_variation_remove_template_fatigue
-  - v11_author_alignment_10q
-  - v11_proxy_interface_ai_as_unmandated_agent_four_requirements
-  - v11_q25_bridge_rewritten_act2_anchor_selection_needs_no_subject
-  - v11_hammer_line_dedup_s3_removed_s5_kept
-  - v11_s2_s6_repetition_tightened
-  - v11_naming_community_three_questions_synced
-  - v11_deskilling_evidence_early_caution_added
-  - v11_terrain_evidence_homogenization_sciadv_2024_added
-  - v11_q11_precut_wired_in_s3
-  - v11_endnote8_timestamp_guard
-  - v11_title_negative_kept_functional
-  - v11b_review_deskilling_opening_softened
-  - v11b_review_sciadv_task_domain_qualifier
-  - v11b_review_four_requirements_not_absolute
-  - v11b_review_q25_bridge_not_yet_selecting_clause
-  - v13_simondon_signal_form_information_endnote10
-  - v14_activeinference_agent_embodied_position_condition_endnote11
-  - v15_barad_maintext_apparatus_menu_line
-  - v16_simondon_maintext_signal_not_embodied_information
-  - v17_prigogine_stengers_maintext_recommendation_as_non_equilibrium_amplifier
-  - v18_maturana_varela_maintext_ai_medium_not_subject
-  - v19_embodied_development_maintext_ai_reassembles_task_capacity
-  - v20_deacon_sentience_vs_intelligence_endnote12
-  - v21_damasio_feeling_machines_endnote13
-  - v22_yr2_epsilon_friction_attribution_fix_writein_chain_credited
-  - v23_polish_r1_deeper_question_intro_varied
-  - v24_review_empirical_split_embodiment_extendedmind_signal_information
-  - v25_residual_nail_cleanup_varied_verbs
-  - v26_body_dedup_trim_signal_not_info_repeat
-  - v27_offensive_reframe_active_exposure_over_defense
-  - v27_s1_smooth_amputation_deskilling_pain_point
-  - v27_s2_consciousness_smokescreen_signal_not_information_fairness_clause
-  - v27_s3_scaffold_cage_terrain_evidence_figures_and_caveat_retained
-  - v27_s4_community_three_questions_drawn_on_ai_occlusion_anchor_governance_guard
-  - v27_s5_toolism_smashed_unmandated_super_agent_responsibility_chain_future_boundary
-  - v27_s6_boundary_selection_without_consciousness_precision_guard
-  - v27_endnotes_kept_full_rigor_undeleted
-  - v27_quotes_unified_to_chinese_curly
-  - v28_review_tone_density_reduced_overstrong_words_softened
-  - v28_review_s2_title_ordering_not_consciousness_itself_smokescreen
-  - v28_review_s3_empirical_overclaim_softened_observational_early_warning
-  - v28_review_s5_search_engine_accuracy_personhood_future_legal_guard
-  - v28_review_responsibility_chain_output_link_strengthened
-  - v28_review_s6_selection_no_subject_act2_scoped
-  - v28_review_demo_assumed_15pct_idiom_fixed
-canonical: false
 claim_mode: companion_exposition
 created: 2026-05-24
 revised: 2026-06-22
@@ -210,30 +122,26 @@ AI 的核心问题，不是它会不会失控产生邪恶意识，而是它在�
 
 > **章末注（专业读者，可跳过）**
 >
-> 本注把正文里有意保持白话化的几处，与 SRT 形式层的精确对应和与已有传统的关系补齐；不影响正文阅读。
+> 本注补充正文里有意保持白话化的几处专业背景，以及与已有传统的关系；不影响正文阅读。
 >
 > **一、本章在全书链条中的位置。** 第十一章给出了预裁剪——AI 的推荐算法是预裁剪的工程化放大。第十九章给出了辅助式与替代式——脚手架与牢笼的区分在 AI 领域直接适用。第二十章给出了遮蔽——AI 可以让能力萎缩变得不可感知。第二十一章给出了苦难的外部化——AI 可以把代价推向不可见的位置。第二十二章给出了方向三问。第二十三章给出了共同体结构与委托四要件——AI 的影响不能还原为个体使用的加总。本章把这些工具在 AI 领域落地，下一章（Q25）把“选择广于意识”这个边界问题正面打开。
 >
-> **二、正文“AI 改写地形”的形式对应。** 正文的四种改写——改变可见性、改变摩擦分布、替代选择能力、改变后果回流方向——在 canonical 层综合了多个构件。“改变可见性”对应 L₂ 对可见性的收束（`Core_Law/SRT_L0_Metaphysics.md`）；“改变摩擦分布”对应秩序背景化与遮蔽 B 相机制（`Core_Law/SRT_Occlusion_Dynamics.md`）；“替代选择能力”对应辅助式/替代式 L₂ 区分（`Core_Law/SRT_Core_Text_CN.md`）；“改变后果回流方向”对应多位置后果回流结构（`Core_Law/SRT_Collective_Selection.md`）。正文有意不引入“地形参与者身份”这个技术术语作为正文主词，而用白话展开其四个条件。四项条件的合取不等于“有意识”或“有具身位”——只等于“对他人选择条件产生了结构性影响”。旧版本中 §3 的四种身份表（工具/地形参与者/意识主体/责任位置）作为专业参考保留于此：工具——被动执行指令，不主动重排地形；地形参与者——改变可见性、摩擦分布、默认路径、后果回流方向（当前主流 AI 的实际位置）；意识主体——有第一人称承受、内部注册、稳定自指（第十七章条件，当前系统不满足）；责任位置——能承接后果回流、被追责、参与修正（AI 系统本身不占据，设计者和部署者占据）。四种身份不是递进阶梯，而是独立的结构维度。
+> **二、AI 的具身位条件检查。** 当前主流对话式部署主要是在已有符号材料之间变换和重组，而不是从自身承受的后果中生成不可逆选择历史。换成白话说，当前对话式系统主要是在已有符号材料之间变换和重组，而不是从前对象场中承担一次会写入自身历史的选择。当前系统不满足具身位的结构条件：不具有不可逆的选择历史积累（第八章的厚度要求）、不具有自主的关切范围沉积（第十五章的关切宽度要求）、不具有从选择写入和路径沉积中产生的真实摩擦（第四、五、八章的链条：起点不归零，写入留痕，痕迹不可清零）。这个判断是架构特定的——对 inference-only 部署成立，不自动外推到训练回路、持久记忆系统或未来的具身系统。
 >
-> **三、AI 的具身位条件检查。** 当前主流对话式部署主要是在已有符号材料之间变换和重组，而不是从自身承受的后果中生成不可逆选择历史。在形式层，这对应 inference-only 的 LLM 部署主要执行符号变换 T̂_φ: L₁ → L₁，而非本体论选择 Ĝ_θ: L₀ → L₁（`AI/_SRT_AI_Bridge.md` Ax-BRIDGE-3）。当前系统不满足具身位的结构条件：不具有不可逆的选择历史积累（第八章的厚度要求）、不具有自主的关切范围沉积（第十五章的关切宽度要求）、不具有从选择写入和路径沉积中产生的真实摩擦（第四、五、八章的链条：起点不归零，写入留痕，痕迹不可清零）。这个判断是架构特定的——对 inference-only 部署成立，不自动外推到训练回路、持久记忆系统或未来的具身系统。
+> **三、与已有传统的关系。** 弗洛里迪的信息伦理学把道德关切扩展到整个信息环境，与本章共享“不以意识为中心”的起点，但其框架锚定在“信息对象的繁荣”上——SRT 不做这个预设，只追问 AI 对选择地形的结构影响。博斯特罗姆的存在风险框架把 AI 核心问题定位在超级智能的威胁——SRT 认为在超级智能出现之前 AI 已经在系统性改写地形，地形参与比存在风险更紧迫、更可检验、更可治理。祖波夫的“监控资本主义”和克劳福德的 AI Atlas 各自从政治经济学和物质基础设施角度分析 AI 权力结构——SRT 在追踪“谁承担了什么代价”上与它们高度一致，独立贡献在于提供共同体三问作为统一检验工具。卡尔的认知退化论最接近本章的能力萎缩分析——SRT 把它从经验心理学命题升级为结构命题：萎缩不是“大脑被重新布线”的副作用，而是替代式结构对再选择能力的系统性消耗（第十九章）；卡尔的论证依赖神经可塑性的经验证据，因此可以被“新一代人适应得很好”之类的反例软化，而共同体三问只追问一个结构事实：撤掉 AI 之后，再选择能力是强了还是弱了。本章与这些传统共享“AI 不只是工具”的核心方向，但把分析判据统一移到了选择地形的结构改写上。
 >
-> **四、共同体三问 AI 应用的 canonical 锚点。** “后果是否能回流”对应可协调判据和 `Core_Law/SRT_Suffering.md §6` T-SUFF-5 集体外部化在 AI 领域的投影。“承受者是否能回应”是可协调判据在操作层的展开——回流通道是否被权力差、信息差或结构差切断。“共同地形是否还能被改写”对应可再选择判据在技术依赖场景下的实例化。共同体三问在 AI 领域的具体操作（撤掉 AI 后判断力的前后比较等）是本书层面的操作化翻译，不是 canonical 层的定理。
+> **四、河流比喻的边界。** 正文用“AI 像河流”说明“无需意识即可改变选择条件”。但河流不学习、不适应、不根据反馈改变行为。现代 AI 系统有适应性和涌现行为——它是动态的地形参与者，改变选择条件的方式本身在变化。这使得共同体三问的应用更复杂，但不使其失效。在本书框架中，河流主要通过物理过程改变地形，AI 主要通过符号和交互环境改变地形，两者位于不同层级——“地形参与”是跨层级的结构类比，不是同层等同。比喻共享的是“无需意识即可改变选择条件”这一层，不共享操作机制。
 >
-> **五、与已有传统的关系。** 弗洛里迪的信息伦理学把道德关切扩展到整个信息环境，与本章共享“不以意识为中心”的起点，但其框架锚定在“信息对象的繁荣”上——SRT 不做这个预设，只追问 AI 对选择地形的结构影响。博斯特罗姆的存在风险框架把 AI 核心问题定位在超级智能的威胁——SRT 认为在超级智能出现之前 AI 已经在系统性改写地形，地形参与比存在风险更紧迫、更可检验、更可治理。祖波夫的“监控资本主义”和克劳福德的 AI Atlas 各自从政治经济学和物质基础设施角度分析 AI 权力结构——SRT 在追踪“谁承担了什么代价”上与它们高度一致，独立贡献在于提供共同体三问作为统一检验工具。卡尔的认知退化论最接近本章的能力萎缩分析——SRT 把它从经验心理学命题升级为结构命题：萎缩不是“大脑被重新布线”的副作用，而是替代式结构对再选择能力的系统性消耗（第十九章）；卡尔的论证依赖神经可塑性的经验证据，因此可以被“新一代人适应得很好”之类的反例软化，而共同体三问只追问一个结构事实：撤掉 AI 之后，再选择能力是强了还是弱了。本章与这些传统共享“AI 不只是工具”的核心方向，但把分析判据统一移到了选择地形的结构改写上。
+> **五、与延展心智传统的关系。** Clark & Chalmers（1998）的延展心智论证指出，笔记本、计算器、语言等外部结构在功能上可以成为认知过程的组成部分——心智的边界不止于颅腔。这个方向与本章正文高度相关：AI 正是当下最有力的“外部认知结构”候选者。但本章不停在“心智边界是否外扩”这个问题上，而是进一步追问延展之后的结构后果。延展心智传统主要关心的是“外部结构算不算认知的一部分”——这是一个关于认知边界的本体论问题。本章关心的是：外部结构接入之后，具身位的判断能力是被扩展了还是被替代了？正文的脚手架/牢笼/地形三分法可以读作延展心智论的后果分析版本：脚手架型延展增强了具身位的再选择能力（你借助工具站得更高，但腿还在用力）；牢笼型延展替代了判断能力并导致能力萎缩（你借助工具不再需要用力，肌肉因此退化）；地形型延展改变了多个具身位共同选择的默认环境（不再只关乎你一个人的认知边界）。延展心智问“心智到哪里为止”；本章问“延展之后，谁还能承重、谁的能力在增长、谁的能力在萎缩”。§3 的经验证据——医生撤掉 AI 后检出率低于基线、学生撤掉 AI 后考试表现低于对照——正是延展心智框架难以仅靠“认知边界是否外扩”来处理的结构后果。
 >
-> **六、河流比喻的边界。** 正文用“AI 像河流”说明“无需意识即可改变选择条件”。但河流不学习、不适应、不根据反馈改变行为。现代 AI 系统有适应性和涌现行为——它是动态的地形参与者，改变选择条件的方式本身在变化。这使得共同体三问的应用更复杂，但不使其失效。在 SRT 框架中，河流的操作在 L₀ → L₀ 层（物理过程），AI 的操作在 L₁ → L₁ 层（符号变换），两者位于不同的本体论层级——“地形参与”是跨层级的结构类比，不是同层等同。比喻共享的是“无需意识即可改变选择条件”这一层，不共享操作机制。
+> **六、治理锚点：能动型转向与监管回应。** 正文提到 AI 从对话工具转向自主智能体。这个转向已在监管与产业两端被标记。在监管端，欧盟 AI 法案（Regulation (EU) 2024/1689）第 51(2) 条将累计训练计算量超过 10²⁵ FLOP 的通用 AI 模型推定为具有“系统性风险”（systemic risk），第 55 条规定的对应义务自 2025 年 8 月起适用——截至本书写作（2026 年中），这是最具操作性的“地形改写能力→治理义务”的制度翻译。这组数据说明：地形改写已从“一次输出影响一个人”升级到“一个智能体自主执行多步决策影响多方”——共同体三问的每一问在智能体场景下都面临更高的诊断压力。回流通道更长（决策链条更深），回应机制更弱（中间步骤对受影响者不可见），锁死风险更强（智能体生态的迁移成本远高于单个工具）。
 >
-> **七、与延展心智传统的关系。** Clark & Chalmers（1998）的延展心智论证指出，笔记本、计算器、语言等外部结构在功能上可以成为认知过程的组成部分——心智的边界不止于颅腔。这个方向与本章正文高度相关：AI 正是当下最有力的“外部认知结构”候选者。但本章不停在“心智边界是否外扩”这个问题上，而是进一步追问延展之后的结构后果。延展心智传统主要关心的是“外部结构算不算认知的一部分”——这是一个关于认知边界的本体论问题。本章关心的是：外部结构接入之后，具身位的判断能力是被扩展了还是被替代了？正文的脚手架/牢笼/地形三分法可以读作延展心智论的后果分析版本：脚手架型延展增强了具身位的再选择能力（你借助工具站得更高，但腿还在用力）；牢笼型延展替代了判断能力并导致能力萎缩（你借助工具不再需要用力，肌肉因此退化）；地形型延展改变了多个具身位共同选择的默认环境（不再只关乎你一个人的认知边界）。延展心智问“心智到哪里为止”；本章问“延展之后，谁还能承重、谁的能力在增长、谁的能力在萎缩”。§3 的经验证据——医生撤掉 AI 后检出率低于基线、学生撤掉 AI 后考试表现低于对照——正是延展心智框架难以仅靠“认知边界是否外扩”来处理的结构后果。
+> **七、AI 作为装置（与巴拉德的 apparatus 的距离）。** 如果借用巴拉德的装置（apparatus）语言（与本书的总对照见第五章章末注），本章的判断可以压成一句：AI 不只是被人使用的工具，而是参与切分可见性、可选项和后果回流的现实装置。它的危险不在于像人一样有意图或有神秘能动性，而在于它以极具体、可工程化、可规模化、可默认化的方式改变可见性、摩擦、默认路径和反馈回流——细小默认值、排序摩擦、接口提示、指标权重和反馈延迟被规模化放大，并写入共同地形；它把某些人切成被评分者、被预测者、被优化者，把另一些位置压成背景、数据源或代价容器。一项技术真正改写现实，不是因为它有新概念，而是因为概念被资本、制度、接口、指标、基础设施和使用习惯接走，变成可重复、可扩散、可投资、可治理的装置。但本书不停在“装置参与切割”：本章的工作是继续问这种切割是否正在把共同地形导向自耗、外包或锁死——共同体三问正是把“AI 是装置”翻译成可检验诊断的工具。
 >
-> **八、治理锚点：能动型转向与监管回应。** 正文提到 AI 从对话工具转向自主智能体。这个转向已在监管与产业两端被标记。在监管端，欧盟 AI 法案（Regulation (EU) 2024/1689）第 51(2) 条将累计训练计算量超过 10²⁵ FLOP 的通用 AI 模型推定为具有“系统性风险”（systemic risk），第 55 条规定的对应义务自 2025 年 8 月起适用——截至本书写作（2026 年中），这是最具操作性的“地形改写能力→治理义务”的制度翻译。这组数据说明：地形改写已从“一次输出影响一个人”升级到“一个智能体自主执行多步决策影响多方”——共同体三问的每一问在智能体场景下都面临更高的诊断压力。回流通道更长（决策链条更深），回应机制更弱（中间步骤对受影响者不可见），锁死风险更强（智能体生态的迁移成本远高于单个工具）。
+> **八、与西蒙东“信号/形式/信息”区分的对照。** 西蒙东《依据形式与信息概念的个体化》“从信息到意义”一节（英译本 pp. 244–250）给出一组对本章直接可用的区分：**信号**是被传输的东西；**形式**是接收者内部已有的、信号要与之相遇的结构；**信息**严格说只是“经过视差（disparation）经验之后，被有效整合进接收者自身运作的东西”。由此他得出两个结论：其一，“录音带记录的是信号的集合，不是信息的真正记录”——磁带和胶片只保存局部状态，没有视差经验；其二，“信号不构成关系”——信息要发生，接收端必须是一个有自身运作和初始形式的系统，信号与它的差异既不能为零（完全重合则信息为零），也不能过大（无法整合则只是扰动）。这组 1958 年的区分恰好落在注二的判断旁边：对无自维持目标、无承受后果历史、无持续自改写结构的工具型系统而言，它处理的是信号而非西蒙东意义上的信息——“AI 是否理解”的问题在这里与具身位条件汇合。他对控制论的批评同样相邻：机器靠修改与环境的关系来适应，生物靠**修改自身**、发明新的内部结构来解决问题（英译本 p. 7）——这与注二“不具有不可逆的选择历史积累”是同一判断的两种表述。分叉与开口：西蒙东面对的是 1950 年代的传输技术，他的框架没有处理学习系统；对带长期记忆、在线学习、持续目标的系统，“接收者是否已有自身运作和初始形式”会从类别问题变成程度问题——这与 §5 末“面向未来的边界”一致：判断是架构特定的，不是永久判决。另：本书第三章拒绝把 前对象场 说成“信息仓库”，西蒙东是这个拒绝最早的盟友之一——“信息从来不是一个可被给定的东西”（英译导论 pp. 11–12），见第三章章末注。
 >
-> **九、AI 作为装置（与巴拉德的 apparatus 的距离）。** 如果借用巴拉德的装置（apparatus）语言（与本书的总对照见第五章章末注），本章的判断可以压成一句：AI 不只是被人使用的工具，而是参与切分可见性、可选项和后果回流的现实装置。它的危险不在于像人一样有意图或有神秘能动性，而在于它以极具体、可工程化、可规模化、可默认化的方式改变可见性、摩擦、默认路径和反馈回流——细小默认值、排序摩擦、接口提示、指标权重和反馈延迟被规模化放大，并写入共同地形；它把某些人切成被评分者、被预测者、被优化者，把另一些位置压成背景、数据源或代价容器。一项技术真正改写现实，不是因为它有新概念，而是因为概念被资本、制度、接口、指标、基础设施和使用习惯接走，变成可重复、可扩散、可投资、可治理的装置。但本书不停在“装置参与切割”：本章的工作是继续问这种切割是否正在把共同地形导向自耗、外包或锁死——共同体三问正是把“AI 是装置”翻译成可检验诊断的工具。
+> **九、Active Inference agent 与具身位条件（强化注二与 §5 的“未来边界”）。** §5 提到 AI 正从对话工具转向自主智能体，并预留了一条面向未来的边界。当代有一个把“智能体”形式化得最干净的框架：Parr、Pezzulo 与 Friston 的《Active Inference》（MIT Press, 2022）。在它那里，“规划即推断”——行动从一个**被偏好的结果**出发，该结果被编码为一条先验预测（控制论意义上的 set-point），智能体通过推断出能实现这条预测的策略序列来行动（pp. 10–11、38–39）。这恰好从两侧夹住本章的判断。一侧：它是注二所说“inference-only 部署在已有符号材料之间变换，而不是承担会写入自身历史的选择”的一个精确范例——active inference agent 再“主动”，其目标与价值也是预置进生成模型的 prior preferences，它在固定先验上做信念更新与策略选择，并不从自身承受的后果中生成不可逆的选择历史。换言之，把“agent”形式化到这个程度，仍然不自动跨过具身位门槛（第八章厚度、第十五章关切宽度、从选择写入中产生的真实摩擦都未被满足）。另一侧：它也是第二十四章核心命题的工程显影——一个把目标、判断、价值都编码成 set-point 的系统，正是序章所说“代理结构”在技术上的最清晰形态；它把价值＝偏好先验工程化（与第十四章章末注同一个对象）。两条纪律照旧：其一显影不是证明；其二这个判断**架构特定**，与注二的开口一致——对带持久记忆、在线学习或持续目标的系统，“先验是否仍是外部预置、后果是否开始回写”会从类别问题变成程度问题，判断须随之复核。
 >
-> **十、与西蒙东“信号/形式/信息”区分的对照。** 西蒙东《依据形式与信息概念的个体化》“从信息到意义”一节（英译本 pp. 244–250）给出一组对本章直接可用的区分：**信号**是被传输的东西；**形式**是接收者内部已有的、信号要与之相遇的结构；**信息**严格说只是“经过视差（disparation）经验之后，被有效整合进接收者自身运作的东西”。由此他得出两个结论：其一，“录音带记录的是信号的集合，不是信息的真正记录”——磁带和胶片只保存局部状态，没有视差经验；其二，“信号不构成关系”——信息要发生，接收端必须是一个有自身运作和初始形式的系统，信号与它的差异既不能为零（完全重合则信息为零），也不能过大（无法整合则只是扰动）。这组 1958 年的区分恰好落在注三的判断旁边：对无自维持目标、无承受后果历史、无持续自改写结构的工具型系统而言，它处理的是信号而非西蒙东意义上的信息——“AI 是否理解”的问题在这里与具身位条件汇合。他对控制论的批评同样相邻：机器靠修改与环境的关系来适应，生物靠**修改自身**、发明新的内部结构来解决问题（英译本 p. 7）——这与注三“不具有不可逆的选择历史积累”是同一判断的两种表述。分叉与开口：西蒙东面对的是 1950 年代的传输技术，他的框架没有处理学习系统；对带长期记忆、在线学习、持续目标的系统，“接收者是否已有自身运作和初始形式”会从类别问题变成程度问题——这与 §5 末“面向未来的边界”一致：判断是架构特定的，不是永久判决。另：本书第三章拒绝把 L0 说成“信息仓库”，西蒙东是这个拒绝最早的盟友之一——“信息从来不是一个可被给定的东西”（英译导论 pp. 11–12），见第三章章末注。
+> **十、与迪肯“感受 vs 智能”的对照。** 迪肯（Terrence Deacon）《不完整的自然》（*Incomplete Nature*, 2012）在本章关心的一个点上提供了相邻支撑：他区分 sentience（感受）与 intelligence（智能），主张计算和智能不等于感受——感受要求一个自我维持、自我修复、为自身承受后果的目的动力学（teleodynamic）基质，而不是符号变换本身。这与本章注二、注九的判断方向一致：当前 inference-only 部署执行符号变换、在外部预置的偏好先验上做策略选择，不具有从自身承受的后果中生成的不可逆选择历史，因此不满足具身位条件。分歧在基座：迪肯把感受的门槛锚在热力学自维持系统上（autogen / 生命），本章不预设这个物质基座，只追问具身位的结构条件——不可逆选择历史、关切沉积、真实生成摩擦（与西蒙东注八、Active Inference 注九、与序章对迪肯的距离同构）。两者都拒绝“算得够复杂就会自动有心”，但本章把门槛放在选择结构上，迪肯把门槛放在生命的能量学上。这条对照也给本章 §5 的“不把 AI 拟人化”护栏提供了一个独立的相邻支撑。
 >
-> **十一、Active Inference agent 与具身位条件（强化注三与 §5 的“未来边界”）。** §5 提到 AI 正从对话工具转向自主智能体，并预留了一条面向未来的边界。当代有一个把“智能体”形式化得最干净的框架：Parr、Pezzulo 与 Friston 的《Active Inference》（MIT Press, 2022）。在它那里，“规划即推断”——行动从一个**被偏好的结果**出发，该结果被编码为一条先验预测（控制论意义上的 set-point），智能体通过推断出能实现这条预测的策略序列来行动（pp. 10–11、38–39）。这恰好从两侧夹住本章的判断。一侧：它是注三所说“inference-only 部署执行符号变换（T̂: L₁ → L₁）而非本体论选择（Ĝ: L₀ → L₁）”的一个精确范例——active inference agent 再“主动”，其目标与价值也是预置进生成模型的 prior preferences，它在固定先验上做信念更新与策略选择，并不从自身承受的后果中生成不可逆的选择历史。换言之，把“agent”形式化到这个程度，仍然不自动跨过具身位门槛（第八章厚度、第十五章关切宽度、从选择写入中产生的真实摩擦都未被满足）。另一侧：它也是第二十四章核心命题的工程显影——一个把目标、判断、价值都编码成 set-point 的系统，正是序章所说“代理结构”在技术上的最清晰形态；它把价值＝偏好先验工程化（与第十四章章末注同一个对象）。两条纪律照旧：其一显影不是证明；其二这个判断**架构特定**，与注三的开口一致——对带持久记忆、在线学习或持续目标的系统，“先验是否仍是外部预置、后果是否开始回写”会从类别问题变成程度问题，判断须随之复核。（材料卡见 `Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md`。）
->
-> **十二、与迪肯“感受 vs 智能”的对照。** 迪肯（Terrence Deacon）《不完整的自然》（*Incomplete Nature*, 2012）在本章关心的一个点上提供了相邻支撑：他区分 sentience（感受）与 intelligence（智能），主张计算和智能不等于感受——感受要求一个自我维持、自我修复、为自身承受后果的目的动力学（teleodynamic）基质，而不是符号变换本身。这与本章注三、注十一的判断方向一致：当前 inference-only 部署执行 T̂_φ 符号变换、在外部预置的偏好先验上做策略选择，不具有从自身承受的后果中生成的不可逆选择历史，因此不满足具身位条件。分歧在基座：迪肯把感受的门槛锚在热力学自维持系统上（autogen / 生命），本章不预设这个物质基座，只追问具身位的结构条件——不可逆选择历史、关切沉积、L₀ 层真实摩擦（与西蒙东注十、Active Inference 注十一、与序章对迪肯的距离同构）。两者都拒绝“算得够复杂就会自动有心”，但本章把门槛放在选择结构上，迪肯把门槛放在生命的能量学上。这条对照也给本章 §5 的“不把 AI 拟人化”护栏提供了一个独立的相邻支撑。
->
-> **十三、与达马西奥“感受机器”的对照。** 达马西奥（Antonio Damasio）《Feeling & Knowing》（Pantheon, 2021）“Feeling Machines and Conscious Machines”一章论证：AI 的先驱刻意略去了“the feeling stuff”，而要让机器走上意识之路，必须给机器人一个“需要调节与修复才能持存”的脆弱身体——“add, almost paradoxically, a degree of vulnerability to the robustness that is so prized in robotics”，让机器“feels”自身状态并据此选择更有效的响应，于是“feeling machines... care for themselves”。这与本章及第十七章的判断相邻：AI 要占据具身位、要有本书意义上的在乎，缺的不是算力或表征，而是一个能受损、后果能真实回流并构成损益的承重位置（注三的具身位条件）。达马西奥的“脆弱身体”正是“攸关”的一个生物学显影——没有可被损害的存续，就没有后果回流，也就没有在乎。**分叉必须说透**：达马西奥把这一条件诉诸生物稳态与软体机器人的身体工程；本章诉诸抽象的攸关/承重条件（后果不可逆地写入并改变后续选择），不预设生物身体或稳态框架——这一点与注十二迪肯的“目的动力学基质”同构：两位都把门槛锚在生命能量学上，本章把它锚在选择结构上。他的方案是显影与近邻，不是本章对具身位的定义；本章注三、§5 末“架构特定、面向未来”的开口同样适用——脆弱身体是否充分，仍是程度问题，不是类别判决。值得一提的是，达马西奥也把这一步读成机会而非威胁（“feeling machines”可成为“efficacious assistants to really feeling humans”），与本章不把 AI 拟人化、也不把它工具化得太轻的双护栏一致：判断停在结构条件，不滑向崇拜或恐惧。
+> **十一、与达马西奥“感受机器”的对照。** 达马西奥（Antonio Damasio）《Feeling & Knowing》（Pantheon, 2021）“Feeling Machines and Conscious Machines”一章论证：AI 的先驱刻意略去了“the feeling stuff”，而要让机器走上意识之路，必须给机器人一个“需要调节与修复才能持存”的脆弱身体——“add, almost paradoxically, a degree of vulnerability to the robustness that is so prized in robotics”，让机器“feels”自身状态并据此选择更有效的响应，于是“feeling machines... care for themselves”。这与本章及第十七章的判断相邻：AI 要占据具身位、要有本书意义上的在乎，缺的不是算力或表征，而是一个能受损、后果能真实回流并构成损益的承重位置（注二的具身位条件）。达马西奥的“脆弱身体”正是“攸关”的一个生物学显影——没有可被损害的存续，就没有后果回流，也就没有在乎。**分叉必须说透**：达马西奥把这一条件诉诸生物稳态与软体机器人的身体工程；本章诉诸抽象的攸关/承重条件（后果不可逆地写入并改变后续选择），不预设生物身体或稳态框架——这一点与注十迪肯的“目的动力学基质”同构：两位都把门槛锚在生命能量学上，本章把它锚在选择结构上。他的方案是显影与近邻，不是本章对具身位的定义；本章注二、§5 末“架构特定、面向未来”的开口同样适用——脆弱身体是否充分，仍是程度问题，不是类别判决。值得一提的是，达马西奥也把这一步读成机会而非威胁（“feeling machines”可成为“efficacious assistants to really feeling humans”），与本章不把 AI 拟人化、也不把它工具化得太轻的双护栏一致：判断停在结构条件，不滑向崇拜或恐惧。
