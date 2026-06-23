@@ -5,11 +5,11 @@ status: active_current
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-06-19
+updated: 2026-06-24
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: rc1_candidate_freeze_framing_layer_2026-06-19
+last_pass: 5act_generative_movement_skeleton_2026-06-24
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -61,13 +61,24 @@ last_pass: rc1_candidate_freeze_framing_layer_2026-06-19
 
 ---
 
+## 0.2 当前结构重构：五幕生成运动（2026-06-24，骨架已定 / 正文未改）
+
+全书结构从「四幕题材分组」升级为「五幕生成运动」：拆地板 → 选材 → 成地板 → 长出世界 → 搭脚手架 → 交还生成。骨架见 `BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md`，它替代 06-03 建筑图的**结构视图**（六根主梁/各章内容卡仍为有效引用）。
+
+净变化：新章 5（选材 / 新地板全景 / 主动性 / 本体论摩擦 / 权力）；意义并入价值章；世界图景靠各章内容优化、不立结构；旧 Q11 预裁剪并入 Q10；旧 Q26 可证伪性下沉 Q27 + 附录。
+
+**当前正文仍是 `Drafts_26Q/` 的 Q00–Q28（四幕）**；按 Stage 0–5 逐幕落地后才与骨架对齐。导出脚本与 `check_book_outline_split.py` 在正文未改前照常工作。Stage 表见 §3。
+
+---
+
 ## 1. 当前可用元文件
 
 | 层级 | 当前文件 | 用途 |
 |---|---|---|
 | 唯一施工入口 | `BOOK_CURRENT_STATUS.md` | 本文件；确认当前正文主线、状态和读取顺序 |
 | 当前定位 | `BOOK_POSITIONING_BRIEF_2026-06-07.md` | 非学院化 SRT 奠基书定位；说明本书为何不是论文/社媒/学术综述/纯叙事 |
-| 当前建筑图 | `BOOK_ARCHITECTURE_MAP_2026-06-03.md` | Q00-Q28 闭合后的六根主梁、缺口链、总修顺序 |
+| 当前结构骨架 | `BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md` | 五幕生成运动重构骨架；章目、缺口链、五张新节点卡、Stage 0–5（结构视图以此为准） |
+| 章节内容建筑图 | `BOOK_ARCHITECTURE_MAP_2026-06-03.md` | 六根主梁与各章不可删概念、记忆点（内容引用仍有效；结构视图已被五幕骨架取代） |
 | 当前术语规则 | `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` | Q00-Q28 总修阶段术语降噪、核心记忆点与经验材料纪律 |
 | d-value 补丁 | `BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md` | Q14/Q15 深度/宽度分工；已并入 06-03 术语指南 |
 | 问题链 | `BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | Q01-Q28 的问题推进与旧稿回收关系 |
@@ -129,6 +140,17 @@ last_pass: rc1_candidate_freeze_framing_layer_2026-06-19
 ---
 
 ## 3. 当前写作顺序
+
+**结构重构（2026-06-24 起，五幕生成运动）的执行顺序，见 `BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md` §7：**
+
+- Stage 0 重画建筑图 + 元文件同步（本批，设计件）
+- Stage 1 ✦选材章 + 幕前·二（正文 linchpin）
+- Stage 2 三幕重心：✦全景 + ✦主动性 + 各章世界图景深化 + 幕前/幕终·三
+- Stage 3 四幕：✦本体论摩擦 + ✦权力 + 重构 21–26 + 幕前/幕终·四
+- Stage 4 五幕：多主体/交还重构 + Q26 折入 30 + 终章 + 幕前·五
+- Stage 5 首尾与贯通：幕前/幕终·一 + Q10 吸收旧 Q11 + 致读者改五幕 + 全书顺读
+
+下方「正面建设轮」队列为重构前的逐章正面化记录，其 prose 收益留用、四幕章节边界由五幕骨架取代：
 
 当前全书已经从旧 52 章路线收束到 Q00-Q28 闭合版。近期施工优先级按 `BOOK_ARCHITECTURE_MAP_2026-06-03.md`、`BOOK_POSITIONING_BRIEF_2026-06-07.md` 与 `BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` 执行：
 
