@@ -47,6 +47,7 @@ EXPECTED_DRAFTS = [
     "Q20_遮蔽.md",
     "Q21_苦难.md",
     "Q22_方向.md",
+    "幕前_五幕.md",
     "Q23_共同体.md",
     "幕间桥_Q23_Q24.md",
     "Q24_AI.md",
