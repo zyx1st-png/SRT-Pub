@@ -38,6 +38,7 @@ MANUSCRIPT_ORDER = [
     ManuscriptItem("Q09_现实厚度.md", "chapter"),
     ManuscriptItem("Q10_秩序背景化.md", "chapter"),
     ManuscriptItem("幕间桥_二三幕.md", "interlude"),
+    ManuscriptItem("幕前_三幕.md", "interlude"),
     ManuscriptItem("Q11_被选择.md", "chapter"),
     ManuscriptItem("Q12_攸关.md", "chapter"),
     ManuscriptItem("Q13_在乎.md", "chapter"),
