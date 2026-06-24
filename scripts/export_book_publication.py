@@ -44,6 +44,7 @@ MANUSCRIPT_ORDER = [
     ManuscriptItem("Q13_在乎.md", "chapter"),
     ManuscriptItem("Q14_价值不是偏好.md", "chapter"),
     ManuscriptItem("Q15_关切维度.md", "chapter"),
+    ManuscriptItem("Q15b_能动性.md", "chapter"),
     ManuscriptItem("Q16_主体沉积.md", "chapter"),
     ManuscriptItem("Q17_意识.md", "chapter"),
     ManuscriptItem("幕间桥_三四幕.md", "interlude"),
