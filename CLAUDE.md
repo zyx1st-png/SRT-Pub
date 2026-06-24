@@ -27,6 +27,12 @@
 10. `memory/YYYY-MM-DD.md`（today + yesterday）
 11. [HEARTBEAT.md](HEARTBEAT.md)（仅 heartbeat / automation 风格工作）
 
+如处理 `01_Source_Intuition/BOOK/` 下的书籍写作、修订、翻译、评审、结构调整或章节判断任务，必须额外读取：
+
+12. [01_Source_Intuition/BOOK/TASTE.md](01_Source_Intuition/BOOK/TASTE.md)
+
+`TASTE.md` 是书籍层面的气质、审美、语言禁忌与写作判断覆盖层，不替代理论 canonical 定义源。
+
 理论推进、书籍写作、领域深挖、材料融合、public release 或仓库治理任务，必须先用 [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md) 判定检索 profile。`canonical: false` 只表示不能替代定义源，不表示不值得读取。
 
 ## 权威层级
@@ -48,6 +54,7 @@
 - split / annex 导航文件
 - `Operations/` 运行日志
 - `memory/` 短时上下文
+- `01_Source_Intuition/BOOK/TASTE.md`
 
 但这些文件可作为高价值检索上下文；是否读取由 [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md) 与 [_SRT_CONTEXT_ROUTER.md](_SRT_CONTEXT_ROUTER.md) 决定。
 
@@ -79,3 +86,4 @@
 - 机器入口 → [_SRT_INDEX.md](_SRT_INDEX.md)
 - AI 最小首读入口 → [SRT_AI_START.md](SRT_AI_START.md)
 - Agent 检索扩展 → [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md)
+- 书籍写作口味校准 → [01_Source_Intuition/BOOK/TASTE.md](01_Source_Intuition/BOOK/TASTE.md)
