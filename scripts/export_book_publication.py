@@ -48,6 +48,7 @@ MANUSCRIPT_ORDER = [
     ManuscriptItem("Q16_主体沉积.md", "chapter"),
     ManuscriptItem("Q17_意识.md", "chapter"),
     ManuscriptItem("幕间桥_三四幕.md", "interlude"),
+    ManuscriptItem("幕前_四幕.md", "interlude"),
     ManuscriptItem("Q18_秩序与自由.md", "chapter"),
     ManuscriptItem("Q19_脚手架与牢笼.md", "chapter"),
     ManuscriptItem("Q20_遮蔽.md", "chapter"),
