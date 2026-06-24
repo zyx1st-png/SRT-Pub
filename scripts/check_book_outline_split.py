@@ -22,6 +22,7 @@ EXPECTED_DRAFTS = [
     "Q03_前对象场.md",
     "Q04_最低非中立性.md",
     "幕间桥_一二幕.md",
+    "Q04b_选材.md",
     "Q05_选择不是挑选.md",
     "Q06_排除与阴影.md",
     "Q07_锚定.md",
@@ -88,7 +89,11 @@ def main() -> None:
         path = DRAFTS_DIR / filename
         text = read(path)
         require_frontmatter(path, text)
-        if "canonical: false" not in text:
+        # Book drafts must remain non-canonical source text. The real convention
+        # is claim_mode: companion_exposition (致读者 uses navigation; the glossary
+        # appendix omits the field), and no draft carries canonical: false. So we
+        # enforce the rule negatively: a draft must not promote itself to canonical.
+        if "canonical: true" in text:
             fail(f"book draft must remain non-canonical: {path.relative_to(ROOT)}")
         if len(text.encode("utf-8")) > MAX_DRAFT_BYTES:
             oversized.append(filename)

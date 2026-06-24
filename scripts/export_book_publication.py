@@ -29,6 +29,7 @@ MANUSCRIPT_ORDER = [
     ManuscriptItem("Q03_前对象场.md", "chapter"),
     ManuscriptItem("Q04_最低非中立性.md", "chapter"),
     ManuscriptItem("幕间桥_一二幕.md", "interlude"),
+    ManuscriptItem("Q04b_选材.md", "chapter"),
     ManuscriptItem("Q05_选择不是挑选.md", "chapter"),
     ManuscriptItem("Q06_排除与阴影.md", "chapter"),
     ManuscriptItem("Q07_锚定.md", "chapter"),
