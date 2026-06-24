@@ -25,6 +25,7 @@ claim_mode: navigation
 - **Q04（v26→v27）配套**：§7 第一幕大结局把“选择”的命名预告让给选材章（先看清动作、再给名字），其余不动。
 - **脚本注册**：`compile_book.py`（全本 + 节选两处）、`export_book_publication.py`、`check_book_outline_split.py` 均在 `幕间桥_一二幕` 之后、`Q05` 之前插入 `Q04b_选材.md`；`BOOK_CURRENT_STATUS` §2 加 Q04b 行、§3 标 Stage 1 进行中。
 - **本轮范围与边界**：① **幕前·二 待写**（Stage 1 的另一半）。② **试读版 spine 未加选材章**：`export_book_spine.py` 是手选 8 章非连续样本（Q00/Q05/Q09…），其章间引用本就松散，故暂不纳入，待 spine 策展时统一决定。③ **选材章 §4 与 Q05 §5 跨尺度网格**有主题相邻（前者强调“留痕形态”与命名必要性，后者是 Q06/Q07 的母网格，用例不同），列为后续润色差异化项，本轮不强并。④ `check_book_outline_split.py` 的 `canonical: false` 检查在 main 上本就对全部章节红（无章含该串，约定实为 `claim_mode: companion_exposition`）；选材章与兄弟章一致，未引入 `canonical: false`，不新增红项。
+- **评审小修（PR #574，2026-06-24）**：① `check_book_outline_split.py` 不再检查 `canonical: false`（全章本就无此串、致读者=navigation、术语表无 claim_mode）；改为“声明 `canonical: true` 才报红”，gate 转绿（drafts=39）。② `export_book_spine.py` 八章主干试读版在 Q05 前补入 `Q04b_选材.md`（Q05 开头依赖“上一章”=选材章），items 8→9。③ 软化两处过硬表达——选材章 §4“凡是某种现实显得已经在那里都走过这三步”、Q05 工具箱“是一切现实生成的通用引擎”——改为“最小解释结构／可继续追问的三步骨架／多层级反复显影”，不把解释链必要性写成本体论定理。
 - canonical 理论冻结不受影响；本体论摩擦等后续节点回链各自 canonical 的纪律不变。
 
 ## 2026-06-24 全书结构重构骨架：五幕生成运动（Stage 0，仅元文件）

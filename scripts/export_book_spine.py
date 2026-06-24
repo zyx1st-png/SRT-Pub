@@ -27,6 +27,7 @@ class SpineItem:
 SPINE_ORDER = [
     SpineItem(DRAFTS_DIR / "致读者.md", "front"),
     SpineItem(DRAFTS_DIR / "Q00_序章.md", "spine_chapter"),
+    SpineItem(DRAFTS_DIR / "Q04b_选材.md", "spine_chapter"),
     SpineItem(DRAFTS_DIR / "Q05_选择不是挑选.md", "spine_chapter"),
     SpineItem(DRAFTS_DIR / "Q09_现实厚度.md", "spine_chapter"),
     SpineItem(DRAFTS_DIR / "Q10_秩序背景化.md", "spine_chapter"),
