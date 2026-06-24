@@ -70,6 +70,7 @@ FULL_BOOK_PARTS = [
     ("Q13_在乎.md",        None),
     ("Q14_价值不是偏好.md", None),
     ("Q15_关切维度.md",    None),
+    ("Q15b_能动性.md",     None),
     ("Q16_主体沉积.md",    None),
     ("Q17_意识.md",        None),
     # 幕间三
