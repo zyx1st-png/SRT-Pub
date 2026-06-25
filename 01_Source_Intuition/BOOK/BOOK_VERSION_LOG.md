@@ -15,6 +15,16 @@ claim_mode: navigation
 
 > 本文件只管理书稿施工版本，不替代理论 canonical，不替代正文。
 
+## 2026-06-25 Stage 5：两座幕内幕间桥 frontmatter 归位
+
+五幕重构 Stage 5 第六笔（收尾）。把第五幕内部的两座幕间桥（围绕 AI 章）的 frontmatter 标识对齐五幕——它们不是幕终，是幕内转场。**纯 frontmatter，零正文改动**（先读两篇全文确认 id 无他处引用、正文 H1 标题正确）。
+
+- **幕间桥_Q23_Q24（权力镜片，正文 H1「谁在改写你脚下的地形？」）**：`id: ...INTERLUDE-ACT4-POWER` → `...INTERLUDE-ACT5-INNER-POWER`（「ACT4」是旧四幕残留，实为第五幕内部）；`role:` 加【五幕定位】行——第五幕幕内幕间（Q23↔Q24）、非幕终、注明读者面向标题＝正文 H1。
+- **幕间桥_Q24_Q25（自我奠基镜片，正文 H1「没有一块地板能撑住自己」）**：`id: ...INTERLUDE-Q24-Q25` → `...INTERLUDE-ACT5-INNER-Q24-Q25`（加 ACT5-INNER 与上者配对）；`role:` 加【五幕定位】行——第五幕幕内幕间（Q24↔Q25）、非幕终、全书幕间镜片系列收口（视角五）。
+- 勘察留痕：两 id **全仓无他处引用**（改名安全）；`compile_book.py` 的 sep_title 因正文以 `#` 开头而**不渲染**（compile 跳过 `## sep_title`），属内部死标签、非 reader-facing，本批不动（避免对一致模式的局部改动）。两正文 H1 标题本就正确，未动。
+- gate 绿（drafts=45，无文件增减）；Output/ 未重生。
+- **至此五幕「幕前/幕终/幕内」全部 frontmatter 标识到位**。Stage 5 剩余仅：顺读余批（非 act 引用的接缝微调，预期收益小）、Q10/Q11 独立关系复核（建筑图早确认独立，预期零改动）、章号 renumber（已决策留排版期）。
+
 ## 2026-06-25 Stage 5：Q23–Q28 frontmatter 改标五幕 + 章号 renumber 决策（暂不做）
 
 五幕重构 Stage 5 第五笔。两件事：① 把 Q23–Q28 的内部元数据对齐五幕；② 勘察「章号 renumber」后作者拍板暂不做，留痕。
