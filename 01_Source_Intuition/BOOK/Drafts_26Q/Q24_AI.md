@@ -3,9 +3,9 @@ id: Q24
 type: book_chapter_draft
 status: draft_v28
 question: Q24
-act: 第四幕
+act: 第五幕
 front_title: 第二十四章 AI 问题：为什么 AI 的问题不是它有没有心？
-position_in_seven_stages: 第四幕第七站——应用枢纽二：共同体三问与委托四要件在AI领域的直接落地，地形改写先于意识归属
+position_in_seven_stages: 第五幕第二站——应用枢纽二：共同体三问与委托四要件在AI领域的直接落地，地形改写先于意识归属
 claim_mode: companion_exposition
 created: 2026-05-24
 revised: 2026-06-22
