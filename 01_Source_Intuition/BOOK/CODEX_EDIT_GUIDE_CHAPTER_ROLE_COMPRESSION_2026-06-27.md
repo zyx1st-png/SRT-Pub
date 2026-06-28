@@ -1,8 +1,13 @@
 ---
 id: SRT-BOOK-CODEX-EDIT-GUIDE-CHAPTER-ROLE-COMPRESSION-2026-06-27
 type: codex_edit_guide
-status: ready_for_codex
+status: completed
 created: 2026-06-27
+completed: 2026-06-28
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
+canonical: false
 scope: BOOK/Drafts_26Q
 purpose: 指导 Codex 继续执行第二轮“章节职责压实、重复回顾压缩”专项优化
 ---
