@@ -24,6 +24,7 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-IG-FISHER-GENERIC-DIFFICULTY | mathematics / information geometry | `Psi_f` projection; selection cost | downgrade pressure | active_v1 | Fisher-geometric quantities may collapse into generic statistical distance, optimization stiffness, model identifiability, or analyst-chosen parameterization rather than SRT-specific `Psi_f` / payability. | [`EC-IG-FISHER-PSIF`](Mathematics_Information/EC-IG-Fisher-PsiF.md) |
 | CL-THERMO-LANDAUER-OVEREXTENSION | physics / thermodynamics | selection cost; `Psi_f` projection | downgrade pressure | active_v1 | Landauer-style thermodynamic cost may be overextended from physical erasure / reset / durable record formation to all forms of selection, including reversible computation, purely formal selection, ordinary choice, or metaphorical constraint. | [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md) |
 | CL-AI-FUNCTIONALIST-STAKE-CHALLENGE | AI / ML | `d-value`; consequence return; capacity-stake distinction | downgrade pressure | active_v1 | Functionalist accounts, long-horizon agent architectures, persistent memory, self-maintenance, embodiment, resource constraints, reward loops, or consequence-bearing deployment conditions may weaken the high-capacity / low-stake contrast if they create genuine stake-coupled consequence return to the AI system itself. | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) |
+| CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE | AI / ML | `L2` hardening; relational convergence; objectification boundary | downgrade / scope pressure | active_v1 | Calibrated local-neighborhood convergence may reflect generic dataset semantics, paired multimodal training, task utility, or metric properties rather than SRT-specific selection history or `L2` hardening. | [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md) |
 
 ## Pressure Details
 
@@ -62,6 +63,18 @@ Functionalist explanations may hold that sufficiently organized information proc
 RL reward / preference modeling should still not be treated automatically as `d-value`. However, if reward becomes tied to system-level self-maintenance or irreversible consequence, that becomes a pressure case for the interface.
 
 Deployment stakes for users, firms, or institutions are not automatically stakes for the model itself, but future architectures may blur this boundary. Current AI systems must not be classified as a single category that uniformly has or lacks subjecthood.
+
+### CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE
+
+This is not a refutation of SRT. It is a downgrade and scoping pressure on the local-neighborhood calibration interface proposed in [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md).
+
+The pressure is that calibrated local-neighborhood convergence in learned representations may be fully explainable by generic properties of the data and task: semantic clustering, paired image-text datasets, contrastive objectives, population structure, or the fact that rank-based neighborhood metrics are less dimension-confounded than global spectral metrics.
+
+If local-neighborhood alignment cannot predict transfer, generalization, cross-modal behavior, or any other independently meaningful downstream structure, the related evidence card should be downgraded toward E1 or retained only as a methodological caution.
+
+If restricted-permutation nulls, dataset-structure-aware controls, or broader multimodal replications remove the effect, the card should no longer be treated as an E3 operational proxy.
+
+This pressure also prevents overclaiming: local neighborhood convergence must not be used to infer AI subjecthood, consciousness, `d-value`, or a shared global world model.
 
 ## Required Practice
 
