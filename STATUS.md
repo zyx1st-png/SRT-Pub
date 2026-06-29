@@ -51,15 +51,19 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - master equations → `Core/SRT_Core_22_Equations.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`
 
-## 方向三研究种子（非 canonical · seed_v0）
+## 方向三研究种子与产品感留痕（非 canonical · 非 validation）
 
-> 以下三份为「方向三：L0 的开发与应用」对话衍生的研究种子，均 `canonical: false`，不定义/不改写任何 SRT 术语，不进入奠基书正文，也不享有任何 canonical 权威。仅作后台研究纲领与原型设计入口。
+> 以下文件均为「方向三：L0 的开发与应用」对话衍生，`canonical: false`，不定义/不改写任何 SRT 术语，不进入奠基书正文，也不享有任何 canonical 权威。仅作后台研究纲领、原型设计与产品感测试留痕。
 
+**研究种子**
 - 研究种子（research seed） → `_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md`（理论骨架：吸引子预测 / 局部吸引子·全局方向·遮蔽缺口 / 自修正动力学 + 三性质保护核 / 不可约闭包边界原子 / E1 仿真）
 - 原型种子（prototype seed） → `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md`（ChoiceMap 无代码原型 + 系统提示词 + T1–T7 用例 + 跨 LLM 评分协议）
 - 校准参照集（calibration reference set） → `_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md`（T1–T7 单模型样例输出 + 自评锚点）
 
-> **校准参照集地位声明**：`_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md` 是**示例性 / 参照性**的评分锚点，**不是 ground truth，也不构成任何实证验证**。它只统一评分尺度；ChoiceMap 的有效性须由原型种子 §5 的真实跨模型实验 + 人机 A/B 决定。
+**产品感测试留痕**
+- 产品感备忘录（product-feel pilot memo） → `_SRT_DIRECTION3_CHOICEMAP_PRODUCTFEEL_MEMO.md`（GLM 5.2 / Gemini 3.1 Pro / Claude 跨模型跨域产品感测试；V0→V0.2 演化、四结构检查全过、S-5 不可逆设计极限、护栏压力下的 dangerous-rigidity 发现、V0.3 两条待补规则）
+
+> **地位声明**：校准参照集与产品感备忘录均为**示例性 / 参照性 / pilot**，**不是 ground truth，也不构成任何实证验证**。它们只统一评分尺度、记录探索过程；ChoiceMap 的有效性须由原型种子 §5 的真实跨模型实验 + 盲评 + 人机 A/B 决定。方向三论文仍 **parked**（见 `_SRT_DIRECTION3_PAPER_PARKING_NOTE.md`）。
 
 ## 最近关键推进
 
