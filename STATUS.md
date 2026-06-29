@@ -14,7 +14,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 > **Connector-safe reading path**: This dashboard is moderately long. For connector reads, start with [`STATUS_Split/README.md`](STATUS_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new status authority.
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-06-19
+> **最后更新**：2026-06-29
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -50,6 +50,16 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - P2/P3/P4 bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - master equations → `Core/SRT_Core_22_Equations.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`
+
+## 方向三研究种子（非 canonical · seed_v0）
+
+> 以下三份为「方向三：L0 的开发与应用」对话衍生的研究种子，均 `canonical: false`，不定义/不改写任何 SRT 术语，不进入奠基书正文，也不享有任何 canonical 权威。仅作后台研究纲领与原型设计入口。
+
+- 研究种子（research seed） → `_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md`（理论骨架：吸引子预测 / 局部吸引子·全局方向·遮蔽缺口 / 自修正动力学 + 三性质保护核 / 不可约闭包边界原子 / E1 仿真）
+- 原型种子（prototype seed） → `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md`（ChoiceMap 无代码原型 + 系统提示词 + T1–T7 用例 + 跨 LLM 评分协议）
+- 校准参照集（calibration reference set） → `_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md`（T1–T7 单模型样例输出 + 自评锚点）
+
+> **校准参照集地位声明**：`_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md` 是**示例性 / 参照性**的评分锚点，**不是 ground truth，也不构成任何实证验证**。它只统一评分尺度；ChoiceMap 的有效性须由原型种子 §5 的真实跨模型实验 + 人机 A/B 决定。
 
 ## 最近关键推进
 
