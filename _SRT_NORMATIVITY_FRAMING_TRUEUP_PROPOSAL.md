@@ -1,0 +1,106 @@
+---
+id: SRT-NORMATIVITY-FRAMING-TRUEUP-PROPOSAL
+type: canonical_edit_proposal
+tags: [epsilon, Normativity, Canonical, EditProposal, ClosureBoundary, Seed]
+status: proposal_v0_not_applied
+layer: meta
+epistemic_layer: research_program
+claim_mode: proposal
+canonical: false
+ai_do_not_use_for_definition: true
+created: 2026-06-29
+provenance: 把 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md` 的结论落成对 canonical 的_提议_修订
+dependency: [SRT-EPSILON-NORMATIVITY-OPEN-TENSION, SRT-L0-METAPHYSICS, SRT-D-VALUE-CANONICAL]
+---
+
+# 规范性 framing 收口 —— canonical 提议修订(仅 proposal,未应用)
+
+> **硬声明(先读)**
+> - 本文件**只提议,不修改**任何 canonical。L0 / d-value 正文**未被触碰**。
+> - 它要动的是 SRT 的 **keystone framing**。`Core_Law/SRT_L0_Metaphysics.md` 的 freeze 明写:ε 的负担结构、唯一锚角色,**"不得在无显式高风险交叉核对下更改"**。因此本提议**必须**由作者按 `Governance/SRT_CANONICAL_FREEZE.md` + `Governance/SRT_EDIT_PROTOCOL.md` 走高风险流程。
+> - 依据是**一次**对抗性压力测试(`_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`),不是已结的定论。**建议分阶段(见 §4),不要一步改 L0。**
+
+---
+
+## 1. 收口的原则(一句话)
+
+> **把 ε 从"承载_全部_规范性的宇宙级实在论方向赌注",降为"规范性的_最小条件_ + 选择者的_构成性姿态_";把规范性的_来源_迁到"可重组判据(反遮蔽/反锁死/反外部化/保留再选择)"及其所依赖的_闭包边界_原初。** ε 标记的是每个选择都已满足、因而不作好坏区分的最小非自我抹除;做规范区分的是可重组判据;而它追到底落在闭包边界这一不可约原初上(地基与方向三两端收敛于此)。
+
+**只修剪_过载_,不动已经写得很硬的部分。** L0 文档本身已相当诚实(已标"ε 是公设不可升格定理""可提问性先验只证局部有效 ε、不能推广全局")。过载集中在两处措辞:(a)"**L0 偏向非自我抹除**"作为 L0 实在论属性;(b)"**全部规范性力量锚定于 ε**"。
+
+---
+
+## 2. Level A(外科式,低风险,高保真)—— 只修剪两处过载措辞
+
+### 编辑 A1 — `Core_Law/SRT_L0_Metaphysics.md` §六 ε 词条(行 202 句末)
+
+**现状(逐字)**:
+> …SRT 的全部规范性力量锚定于 ε 的符号。L1 将 ε 驱动的选择积累模式回读命名为「秩序」;L0 本身不承载「秩序」作为内容性属性。
+
+**提议改为**:
+> …ε 是规范性的**最小条件**,不是规范性的**全部来源**:SRT 的方向性规范实际锚定于「保留再选择能力 / 反 foreclosure」的**可重组判据**,及其所依赖的**闭包边界**原初(谁的再选择、什么尺度);ε 标记的是任何选择都已满足的最小非自我抹除,本身不作好坏区分。(详见 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`。)L1 将 ε 驱动的选择积累模式回读命名为「秩序」;L0 本身不承载「秩序」作为内容性属性。
+
+**理由**:shmagency 关闭把非自我抹除守成了"普遍即空"(每个选择都满足),故它不能是"全部规范性"的来源;做规范区分的是可重组判据。
+
+### 编辑 A2 — `Core_Law/SRT_L0_Metaphysics.md` 正骨架总结(行 266 末尾标签)
+
+**现状(逐字)**:
+> **ε 的符号（方向公设）**：L0 偏向非自我抹除（B≥2 承受更低本体论摩擦），而非偏向自我抹除。…——*SRT 最终不可约的方向赌注，全部规范性力量的锚点。*
+
+**提议改为**(只动尾部标签,负担正文不动):
+> **ε 的符号（方向公设）**：…(中段不变)…——*SRT 最终不可约的方向赌注;规范性的**最小条件**,非全部来源(方向性规范锚定于可重组判据 + 闭包边界原初,见 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`)。*
+
+**注**:本编辑**暂不**触"L0 偏向非自我抹除"那句实在论措辞——那属 Level B。
+
+### 编辑 A3 — `_SRT_D_VALUE_CANONICAL.md` §5b.1(d 扩张的本体论意义)
+
+**现状(逐字)**:
+> d-value 的扩张不应被读作道德命令或利他主义要求。d 的扩张是选择过程趋向全局自由能最小值的内在动力学。
+
+**提议改为**:
+> d-value 的扩张不应被读作道德命令或利他主义要求。d 的扩张是选择过程朝向**保留与扩展再选择能力(反 foreclosure)**的内在动力学;其「全局最优」读法**依赖闭包边界的选定**(谁的再选择、什么尺度),不是一个位置无关的宇宙级最小值。
+
+**理由**:"全局自由能最小值"是宇宙级实在论读法,与 ought-原初(生成-姿态本体论)不相容;且"全局最优"的位置无关性正是闭包边界原初所否定的。
+
+---
+
+## 3. Level B(更深,更高风险,可选)—— 实在论 → 构成性姿态的整体改写
+
+Level A 只剪过载措辞。**Level B 动的是文档的_stance_**:把 ε 从"L0 的原生方向性内容 / L0 客观偏向"改写为"**选择者的构成性姿态**——没有中性 L0 实在去'偏向',ε 是任何选择者在选择这一行动里已承诺的最小结构"。
+
+这一步更忠实于决斗里**你自己**的 ought-原初 move,但它:
+- 改动 L0"ε 作为 L0 原生内容"的实在论 stance,牵连 §六多处、正骨架"高负担承诺"段;
+- **直接撞 freeze 的"L0 burden structure / 唯一锚角色不得无高风险交叉核对更改"**;
+- 还要同步处理一个张力:放弃符合论真之后,方向三"从 L0 更准预测"的卖点须明确**改挂到 L1 仪器(d/Ψ_f),而非 ε**(见 open-tension §7.3)。
+
+**建议:Level B 不在本轮动**。先让 Level A + open-tension 记录沉淀,Level B 留作作者的一个独立、慎重决定。
+
+---
+
+## 4. 分阶段建议(强烈推荐)
+
+| 阶段 | 动作 | 风险 | 状态 |
+|---|---|---|---|
+| 0 | open-tension 记录入库(`_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`) | 低 | **已完成** |
+| 1 | 把该记录**提升为** `Core/SRT_OPEN_TENSIONS.md` 的正式条目(承认张力,先不改 L0) | 低 | 待作者 |
+| 2 | **Level A**(A1/A2/A3,外科式剪过载措辞) | 中(碰 keystone framing,但只剪不重构) | 待作者高风险流程 |
+| 3 | **Level B**(实在论→构成性姿态整体改写)+ 同步书名/方向三预测口径 | 高 | 远期,独立决定 |
+
+---
+
+## 5. 明确保留(不要顺手改)
+
+- ε 作为**公设 + 负担标注**(不可升格定理)——保留。
+- 三重收窄(经验充分性 / 可提问性先验 / 场感知)+ "可提问性只证局部有效 ε"的诚实——保留(它本就对)。
+- κ₀ > 0 / Ax-L0-Bootstrap 的结构前提角色——保留。
+- L1 回读命名(「秩序」「初心」)——保留。
+- 非自我抹除作为**最小条件**——保留(它真,只是空于区分)。
+- 自我相关的反 foreclosure 近乎构成性——这是新增的**硬的那半**,Level B 才正式写入。
+
+---
+
+## 6. 防误用
+
+- 本文件是 proposal,**未应用**;在作者按 EDIT_PROTOCOL 采纳前,**L0 / d-value 的现行 framing 仍然有效**,不得引用本文件的"after"文本当 canonical。
+- "收口"使 SRT 规范性**更小但更立得住**;它**不**削弱方向二的道德系谱——只是把系谱的地基从"宇宙级 ε"换成"可重组判据 + 闭包边界",后者经决斗检验更硬。
+- 与 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`、`_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md §4` 收敛,互为印证。
