@@ -396,7 +396,7 @@ Until these are done, Core 24 should be cited as a bridge-hardening supplement a
 
 An adversarial stress-test of `ε` (the L0 directional postulate) and a build-and-attack construction on the closure-boundary atom are recorded in three non-canonical files: `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`, `_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md`, and `_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`.
 
-Hardened working position:
+Working position under review (non-canonical; tracked, not promoted):
 
 - `ε` is securable as a **minimum condition (domain floor) + constitutive stance** of any selector: the shmagency-style counterexamples close because a selector either selects → minimally presupposes a concern-structure, or does not select → exits the domain. `ε` is therefore true of every in-domain selection but does not by itself make normative distinctions.
 - The **normative distinction work** is carried by the **reorganizability criterion** (anti-occlusion / anti-lock-in / anti-externalization / re-selectable — "可重组、可承担、可恢复、可再选择"), which genuinely discriminates (foreclosing selections fail it).
