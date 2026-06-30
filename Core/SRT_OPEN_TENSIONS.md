@@ -35,6 +35,7 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | exact status of `d` proxies | bare `d` is a scalar summary of stake-coupled concern; `D_eff`, Fisher rank, `d-vector`, and `d-gate` are separated | a final theorem identifying capacity directions with stake-coupled concern directions | capacity, competence, or distinguishability cannot be treated as concern |
 | incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, and reward | a complete formal object with validated sufficiency conditions | high meaning, high reward, or high confidence cannot be cited as `T_dir` by itself |
 | Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
+| ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the framing de-overload is still only proposed | not "all normativity = anti-foreclosure"; not "boundary problem solved"; current ε framing overload not yet trued up |
 
 These are pressure points, not new axioms. They route later work and block overclaiming.
 
@@ -386,6 +387,39 @@ Core 24 should be hardened in three directions:
 3. **comparative prediction**: define at least one domain where SRT predicts a pattern not predicted by FEP, predictive processing, RL, IIT/GNW, social constructionism, or ordinary habit theory.
 
 Until these are done, Core 24 should be cited as a bridge-hardening supplement and canonical framing layer, not as a completed theorem package.
+
+---
+
+## 9. ε Normativity Scope and the Closure-Boundary (fallibilist foundation)
+
+### Current State
+
+An adversarial stress-test of `ε` (the L0 directional postulate) and a build-and-attack construction on the closure-boundary atom are recorded in three non-canonical files: `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`, `_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md`, and `_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`.
+
+Hardened working position:
+
+- `ε` is securable as a **minimum condition (domain floor) + constitutive stance** of any selector: the shmagency-style counterexamples close because a selector either selects → minimally presupposes a concern-structure, or does not select → exits the domain. `ε` is therefore true of every in-domain selection but does not by itself make normative distinctions.
+- The **normative distinction work** is carried by the **reorganizability criterion** (anti-occlusion / anti-lock-in / anti-externalization / re-selectable — "可重组、可承担、可恢复、可再选择"), which genuinely discriminates (foreclosing selections fail it).
+- Self-regarding re-selectability is near-constitutive; the **other-regarding** part requires aggregating positionally-partitioned, scope-extended option-fields, and the whose-counts / what-scope weighting is the irreducible **closure-boundary atom** — which this foundation line and Direction 3 (`_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md §4`) independently converge on.
+
+### Problem Point
+
+Two distinct unresolved points:
+
+1. **Framing overload.** Current canonical wording — "全部规范性力量锚定于 ε" (L0 §六 and 正骨架总结), "L0 偏向非自我抹除" as a realist L0 property, and "趋向全局自由能最小值" (d-value §5b.1) — overclaims relative to the defensible base. A staged de-overload is **proposed, not applied** in `_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md`.
+2. **The closure-boundary is not closed.** It cannot be set by single-position reading: `T_dir` is d-gated and occlusion is self-reinforcing, so an occluded externalizer self-certifies a narrow boundary. The best available form is **multi-position convergence under anti-shared-occlusion perturbation** (per L0 §三 objectivity), but the three conditions for a valid anti-occlusion perturbation are a **regulative ideal, not an operational verdict** (judging "valid perturbation" presupposes seeing the occlusion it is meant to surface), and the result is **fallibilist** (objective-so-far, permanently open to a not-yet-present perturbation).
+
+### Future Hardening Direction
+
+1. Adopt the staged framing true-up (de-overload): `ε` → minimum condition + constitutive stance; relocate the distinction work to the reorganizability criterion; mark the closure-boundary as still-open. (See the true-up proposal; high-risk per the L0 freeze.)
+2. Harden the closure-boundary **as a fallibilist foundation, not as a solved boundary**: harden the three anti-occlusion perturbation conditions (different position / scale / time / interest; restores excluded standing + shifts burden to incumbents; power to overturn, not only confirm) toward operationalizability, plus the two residues — representing voiceless-but-foreclosed positions (future / ecological / unable), and fixing the horizon of "irreversible re-selection loss."
+3. This converges (a third time) with Direction 3's perturbation mechanism and protect-condition P3 (anti-shared-occlusion perturbation not suppressed by incumbents).
+
+### Must Not Be Overstated
+
+- This does **not** establish "SRT's *whole* normativity = a reflexive anti-foreclosure commitment." The scoped claim is only: **on the closure-boundary problem**, SRT's normative base **presents as** a reflexive anti-foreclosure commitment.
+- This does **not** "solve" the boundary problem. It **changes its form** — from "find a final correct boundary" to "maintain a boundary continually correctable by anti-occlusion perturbation": a fallibilist foundation, not a closed answer.
+- The framing true-up is **proposed, not applied**; current L0 / d-value framing remains in force until adopted under `Governance/SRT_EDIT_PROTOCOL.md` plus the L0 freeze high-risk cross-check.
 
 ---
 
