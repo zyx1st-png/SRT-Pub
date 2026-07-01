@@ -9,6 +9,8 @@ created: 2026-07-01
 based_on:
   - _SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md
   - _SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md
+  - _SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md
+  - _SRT_D3_OPTION_SPACE_READOUT_NOTE.md
 ---
 
 # AI Reselectability Audit Frame
@@ -183,6 +185,12 @@ SRT 追加一个更底层的问题：
 
 > 系统指标变好，是因为摩擦被转嫁给无法回推的位置。
 
+**与候选理论的交叉引用(2026-07-01 补充,proposal,非 canonical)**：
+
+- 2.8 的第3问("是否存在系统收益与某些位置再选择能力下降同时发生")对应 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §2` 的候选判据："整体可支付 + 某位置局部越阈"；该 seed 的补充条件进一步要求两者之间存在**支撑/转嫁关系**，而不只是巧合并存——单纯"同时发生"不足以判定外部化，还需证明前者靠后者撑住。
+- 2.1（真实可选空间）、2.2（申诉与重进入）、2.4（后果回流）三项，在 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md §3` 里被重新表述为判断外部化的**主证据**（真实路径是否减少、被关闭路径能否可支付恢复、能否申诉再进入），并把自我报告/满意度类信号明确降级为**辅助证据**——本框架 §3 评分表目前偏重可观察的流程/规则事实，符合这个降级方向。
+- **未解决，不得跳过**：谁来给这张表打分、评分者是否独立于被审计系统的受益方，仍是闭包边界记录的 D-3 问题（受益位置的自我评估最可能已经退化）——本框架**不提供**审计者独立性机制，见 §6。
+
 ---
 
 ## 3. 简易评分表 v0
@@ -271,6 +279,10 @@ Boundary:
 
 > Wedge 1 说明 current performance 和 future reselectability 可以分离；本框架把这个分离转成 AI / 自动化治理审计问题。
 
+与 distributional payability / D-3 笔记的关系：
+
+> `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` 给 §2.8 的"外部化"一个更精确的候选判据；`_SRT_D3_OPTION_SPACE_READOUT_NOTE.md` 给 §2.1/2.2/2.4 的证据收集方式一个理论落点（可选空间轨迹为主证据，自我报告/满意度为辅助证据）。两者都是 non-canonical proposal，均**不提供**"谁来做这次评估、评估者独立性如何保障"的解法——这仍是本框架和它们共同的开放残余。
+
 ---
 
 ## 6. 防火墙
@@ -283,7 +295,8 @@ Boundary:
 - 所有人工判断都更好；
 - 申诉越多越好；
 - 所有用户意见都应推翻系统；
-- SRT 已经解决外部化/X 的度量问题。
+- SRT 已经解决外部化/X 的度量问题；
+- 由系统运营方/受益方自行完成的评分，等同于独立审计结论（这正是闭包边界记录 D-3 指出的自我背书风险——评分者与受益方重合时，评分本身最可能已经退化）。
 
 安全说法：
 
