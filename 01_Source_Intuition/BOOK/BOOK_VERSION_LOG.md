@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-06-25
+updated: 2026-06-28
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -14,6 +14,15 @@ claim_mode: navigation
 # 《从存在到秩序》书稿版本管理日志
 
 > 本文件只管理书稿施工版本，不替代理论 canonical，不替代正文。
+
+## 2026-06-28 两轮 Codex 去重与推进节奏专项
+
+执行 `CODEX_EDIT_GUIDE_REPETITION_PACING_2026-06-27.md` 与 `CODEX_EDIT_GUIDE_CHAPTER_ROLE_COMPRESSION_2026-06-27.md` 的全部剩余必做项，并完成 Q24 可选轻修。范围严格限定为跨章功能去重、章节职责压实和局部喘息，不改 canonical、不新增核心术语、不改变编译顺序。
+
+- 第一轮：Q01 压缩与序章重复的杯子入口；Q09 §2 用“爆款概念／底层协议”替换重复货币例；幕前·四由四节压成三节；Q17 在钢琴家／冻结态之后加入喘息段。
+- 第二轮：Q15 让关切宽度更快成为主角；Q18 §2 回指 Q10、压缩秩序重定义；Q21 加强遮蔽／苦难差分；Q25 明示只画选择下界；Q27 压实“命题失败／使用病变”分工。
+- 可选轻修：Q24 §3 直接调用 Q19 的脚手架／牢笼判据，只补共同地形改写。
+- Q26、Q28、附录、旧归档与 canonical 文件均未修改。
 
 ## 2026-06-25 Stage 5：两座幕内幕间桥 frontmatter 归位
 
