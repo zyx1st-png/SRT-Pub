@@ -78,7 +78,7 @@ Direction 2 seed §8 把 AI 申诉/自动化治理列为**第二颗楔子**,承�
 
 **观察**:在**每一个**测试的 `g_platform` 上,`agg_net(uniform) > agg_net(protected)`——即"不保护 B、任其压过 GB_CAP"确实**因果地**(通过反事实移除验证,不是巧合并存)提升了聚合净效率。在平台自身的聚合最优点(g=16),这个差值是 +0.0746,相对"受保护"基线约 **+9.2%**——即平台在自己最优操作点上取得的聚合效率,有一部分**可归因于**压过 B 自身可恢复地板,而不只是整体质量提升。
 
-**这是 distributional payability §2 支撑/转嫁加固条件,第一次在一个 toy 里被给出反事实检验方法(而不只是文字判据)。**
+**这是本研究线 / 本仓库中,distributional payability §2 支撑/转嫁加固条件第一次在 toy-level 上被给出反事实检验方法的记录(而不只是文字判据)——不代表这是该判据在任何更广泛意义上的首次操作化。**
 
 ---
 
@@ -232,6 +232,15 @@ for g_platform in [8, 11, 16, 22, 32, 64]:
     agg_prot = WEIGHT_A*net_A + WEIGHT_B*(avgB_prot[0]-COST_B*avgB_prot[1])
     print(f"g={g_platform:>3} agg_uniform={agg_uni:.4f} agg_protected={agg_prot:.4f} "
           f"delta={agg_uni-agg_prot:.4f}")
+
+# Result C: post-shift robustness cost, uniform vs protected, for Class B
+for g_platform in [8, 16, 22, 32]:
+    gB_uni = g_platform * UNDER_RESOURCE_MULT
+    avgB_uni = avg_class(gB_uni, TRIALS, 2)
+    gB_prot = min(gB_uni, GB_CAP)
+    avgB_prot = avg_class(gB_prot, TRIALS, 3)
+    print(f"g={g_platform:>3} B_pre_div_uni={avgB_uni[1]:.2f} B_post_rew_uni={avgB_uni[2]:.3f} "
+          f"B_pre_div_prot={avgB_prot[1]:.2f} B_post_rew_prot={avgB_prot[2]:.3f}")
 ```
 
 > 随机种子/trial 数不同会有数值波动;报告的是**结构**(B 先于 A 越阈、反事实移除后聚合效率下降、post-shift 代价不均等落在 B 身上),不是精确数值。
