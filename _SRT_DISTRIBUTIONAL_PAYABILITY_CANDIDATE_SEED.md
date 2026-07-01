@@ -11,7 +11,7 @@ ai_do_not_use_for_definition: true
 created: 2026-07-01
 provenance: 从 `_SRT_DIRECTION2_PHASE_TRANSITION_DUEL.md` §8.3(第4轮,Ψ_f 多主体校正后的缺口重定位)提炼出的独立候选原则
 candidate_promotion_target: none (残余可喂 Core/SRT_OPEN_TENSIONS.md §2/§5;定义不可)
-dependency: [SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-DIRECTION2-PHASE-TRANSITION-DUEL, SRT-CLOSURE-BOUNDARY-CONVERGENCE-RECORD, SRT-OPEN-TENSIONS, SRT-DIRECTION2-MORAL-GENEALOGY-SEED]
+dependency: [SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SRT-DIRECTION2-PHASE-TRANSITION-DUEL, SRT-CLOSURE-BOUNDARY-CONVERGENCE-RECORD, SRT-OPEN-TENSIONS, SRT-DIRECTION2-MORAL-GENEALOGY-SEED, SRT-D3-OPTION-SPACE-READOUT-NOTE]
 ---
 
 # Distributional Payability —— 聚合可支付性之下的子位置外部化候选判据
@@ -52,6 +52,12 @@ dependency: [SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SR
 
 直觉版:**"整体没事"不能免除"局部有没有事"这个追问;外部化正是靠聚合读数把这个追问挡住的那种分布。**
 
+### 补充条件(候选,2026-07-01)
+
+> 仅满足上述条件1、2(聚合可支付 + 某 `P_i` 局部越阈)尚**不足够**判定为外部化;还应要求两者之间存在**可证明的支撑/转嫁关系**——即 `P_i` 的局部压缩**正在支撑** `S` 的整体稳定或某受益位置的稳定,而不只是两个事实巧合并存。
+>
+> 此条件由 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md §5` 提出,**尚未形式化**(何时算"支撑"而非"巧合并存"没有给出可核查标准),暂列为候选补充,不改变上述条件1、2 的既有地位,不升级本文件的 canonical 状态。
+
 ---
 
 ## 3. 前提条件(本原则不解决的东西,建立在其上而非替代)
@@ -85,6 +91,8 @@ dependency: [SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SR
 
 **本文件不提供检测机制**,也不得被引用为"检测问题已解决"。检测仍然是 `_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md` route-C(跨位置、经反遮蔽扰动检验的收敛)的适用范围,且 route-C 本身可错论、不终结(该记录 E-1/E-2)。
 
+**2026-07-01 更新**:检测对象的进一步重定位(从主观/生理信号,重定位为 `P_i` 的可选空间轨迹)已被记录于独立文件 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md`。该文件把检测问题精确到"反事实基线构造 + 归因"这两个具体动作,但**同样未解除 D-3**——本节原有结论(检测仍是 route-C 的可错论适用范围)保持不变。
+
 ---
 
 ## 5. 与 d-value / RCI 的关系(防混淆)
@@ -99,6 +107,7 @@ dependency: [SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SR
 - 候选来源:`_SRT_DIRECTION2_PHASE_TRANSITION_DUEL.md §8.3`(第4轮)。
 - 前提未解残余:`_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`(闭包边界、D-3、route-C)、`Core/SRT_OPEN_TENSIONS.md §1`(d-proxy)、`§5`(ISP 入场阈值,反事实基线问题的镜像)、`§7`(P0-04,债1)。
 - 与 `_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md §5/§6`(X-防火墙、RCI-X 无对应)一致,不得混说。
+- `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md`:D-3 检测对象重定位的独立后续笔记(§2 补充条件、§4.3 更新均来自该文件),两者互为印证,该文件不改写本 seed 的主判据。
 - **不改写** `_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`。
 
 ---
@@ -110,7 +119,8 @@ dependency: [SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SR
 - ❌ "本原则适用于薄 ε 地板位置"(§3.2——适用域从一开始排除零关切位置);
 - ❌ "本原则提供了检测外部化的可靠机制"(§4.3——检测问题原样开放,D-3 未解除);
 - ❌ "distributional payability = canonical `Ψ_f` 的一部分"(它是本文件提出的新结构,proposal);
-- ❌ "本原则关闭了 `_SRT_DIRECTION2_PHASE_TRANSITION_DUEL.md` 的残余"(它把残余精确化,没有关闭)。
+- ❌ "本原则关闭了 `_SRT_DIRECTION2_PHASE_TRANSITION_DUEL.md` 的残余"(它把残余精确化,没有关闭);
+- ❌ "支撑/转嫁关系(§2 补充条件)已被形式化或验证"(它目前只是文字描述,可核查标准未给出,见 §8.5)。
 
 ---
 
@@ -118,8 +128,9 @@ dependency: [SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D-VALUE-CANONICAL, SR
 
 1. **可分解性假设**:`Ψ_f` 按子位置的分解规则(可加性?边际结构?)完全未给出,是本原则能否成立的前提性技术缺口。
 2. **反事实基线**:角色性/制度性子位置"独立评估阈值"是否总是良定义,未知;与 ISP 入场阈值(σ_sub)结构同构但未合并处理。
-3. **检测机制**:如何在不依赖既得利益位置自身 `T_dir` 读数的情况下,读出局部越阈——未解,继承 route-C 的可错论、不终结性质。
+3. **检测机制**:如何在不依赖既得利益位置自身 `T_dir` 读数的情况下,读出局部越阈——未解,继承 route-C 的可错论、不终结性质;检测对象已被重定位(见 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md`),但反事实基线构造、归因、第三方独立性仍开放。
 4. **与 RCI-X 的关系**:本原则是否能成为 RCI-X 分量的操作化入口,还是应保持独立——未决定,留待下一轮。
+5. **支撑/转嫁关系的形式化**:§2 补充条件目前只是文字描述,"何时算支撑而非巧合并存"没有可核查标准(见 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md §6.5`)。
 
 ---
 
