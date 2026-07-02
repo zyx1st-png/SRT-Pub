@@ -38,6 +38,7 @@ Bridge translates. It does not prove SRT.
 | Assembly Theory | [`../Bridge/SRT_Adjacent_Theory_Interface_Index.md`](../Bridge/SRT_Adjacent_Theory_Interface_Index.md) | Treat as adjacent-theory translation unless a specific file is later added. |
 | Social theory | [`../Philosophy/_SRT_Soc_Bridge.md`](../Philosophy/_SRT_Soc_Bridge.md), [`../Philosophy/SRT_Soc_03_Institutions.md`](../Philosophy/SRT_Soc_03_Institutions.md) | Institutions, `L2` hardening, hidden friction, and social reality formation. |
 | Selection dynamics (MSD) | [`SRT_Selection_Dynamics_MSD_Bridge.md`](SRT_Selection_Dynamics_MSD_Bridge.md) | Maps the minimal selection-dynamics chain (exclude→form→inscribe→anchor→backflow) onto existing canonical machinery (`Ĝθ`, `L0/L1/L2`, `Ψ_f`, `d`, bearing position, Eq-Bridge-Loop-01); flags notation collisions. Reading layer, not a definition source. |
+| Horizontal causality (book usage) | [`SRT_Horizontal_Causality_Book_Usage_Bridge_2026-07-02.md`](SRT_Horizontal_Causality_Book_Usage_Bridge_2026-07-02.md) | Registers the book/public usage of 水平因果 (a default questioning habit over already-objectified slices) against theory-layer `C_H` (Ax-F-03); forbids 垂直因果 as the public pairing word; pairs with 生成之问. Registration layer, not a definition source. |
 
 ## Use Rule
 
