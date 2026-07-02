@@ -45,7 +45,7 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 | `seed_fragment` | 作者投喂的原始碎片想法（**逐字**，不润色） | 条件的输入端；润色过就污染了 |
 | `diverged_pool` | LLM 发散池里出现过的角度（至少列全 D1 + 点名 D2 众数陷阱） | 没有"可选项全集"，就无法定义"作者的选择" |
 | `chosen` | 作者**选了**哪个角度（含是否杂交、杂交了哪两个） | 选择的正例 |
-| `skipped_mode` | 作者**主动跳过**的众数选项（D2 陷阱 + D1 里的显然角度） | **与 chosen 同等重要**：收敛函数的形状由"选了什么"和"避开了什么"共同定义 |
+| `skipped_mode` | 作者**主动跳过**的众数选项（D2 陷阱 + D1 里的显然角度）；确无可跳过时填 `none_detected` **并附一句原因** | **与 chosen 同等重要**：收敛函数的形状由"选了什么"和"避开了什么"共同定义 |
 | `reason` | 收敛理由，**一句话，作者亲写** | 条件的标签；LLM 代拟的理由是众数理由，直接毁掉这条轨迹的价值 |
 | `closure_boundary` | 作者设定的"谁承受后果 / 看多远" | 作者的边界偏好是收敛函数的核心维度之一 |
 | `attack_target` | 这篇文章要拆的"世界本来如此"的哪一块 | 攻击面选择也是品味 |
@@ -54,6 +54,8 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 
 | 字段 | 含义 |
 |---|---|
+| `reason_note` | `reason` 之外的补充说明（几句展开、动机、背景）；`reason` 仍保持一句话，富信息放这里 |
+| `late_entry` | `true` 表示非当场记录、事后补记；缺省视为当场记录。补记的 `reason` 是重构，回看时按此降权 |
 | `article_ref` | 成文后的文章链接 / 归档路径 |
 | `platform` | 发布平台 |
 | `reader_resistance` | 读者实际的抵抗点 / 反驳（发布后回填） |
@@ -62,10 +64,10 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 
 ### 记录纪律（防污染，等同于数据质量）
 
-1. **`seed_fragment` 与 `reason` 必须是作者原话**，不许 LLM 润色或代拟——它们是条件的输入端和标签端，一旦众数化，整条轨迹作废。
-2. **`skipped_mode` 不许留空**。"这次没跳过什么"本身可疑：说明 D 段发散不够，或作者其实选了众数。
+1. **`seed_fragment` 与 `reason` 必须是作者原话**，不许 LLM 润色或代拟——它们是条件的输入端和标签端，一旦众数化，整条轨迹作废。富信息可放可选字段 `reason_note`，但 `reason` 本身保持一句话。
+2. **`skipped_mode` 不许留空**。"这次没跳过什么"本身可疑：说明 D 段发散不够，或作者其实选了众数。确实无可跳过时填 `none_detected` **并附一句原因**，不要强填伪数据。
 3. LLM 可以帮忙**填 `diverged_pool`**（它本来就是发散池的产出），但**不许填 `chosen / skipped_mode / reason / closure_boundary / attack_target`**——这些是收敛动作，只能作者填。
-4. 不追溯补记。当场记，隔天记的 `reason` 已经是重构，不是当时的收敛。
+4. **优先当场记录。** 当场记的 `reason` 才是当时的收敛；隔天记的是重构。允许事后补记，但必须标 `late_entry: true`，回看时（§3）对补记条目降权，而不是完全禁止追溯。
 
 ---
 
@@ -80,10 +82,12 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
   - D1 角度：① … ② … ③ …（列全）
   - D2 众数陷阱（LLM 点名的"最容易被写成的那篇"）: …
 - **chosen**（作者选的角度）: …
-- **skipped_mode**（主动跳过的众数选项）: …
+- **skipped_mode**（主动跳过的众数选项；确无则填 none_detected + 原因）: …
 - **reason**（作者亲写，一句话）: …
+- **reason_note**（可选，几句展开）: …
 - **closure_boundary**（谁承受后果 / 看多远）: …
 - **attack_target**（拆哪块"本来如此"）: …
+- **late_entry**（事后补记则填 true，缺省视为当场记录）: …
 - **article_ref**: （成文后回填）
 - **platform**: （发布后回填）
 - **reader_resistance**: （发布后回填）
