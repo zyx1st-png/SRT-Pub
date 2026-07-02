@@ -111,7 +111,7 @@ ax2.text(0.73, 585, 'Falsification: $R^2_{\\mathrm{linear}} \\geq R^2_{\\mathrm{
          bbox=dict(boxstyle='round,pad=0.3', facecolor='#FFF9C4', edgecolor='#F9A825'))
 
 plt.subplots_adjust(left=0.08, right=0.97, top=0.95, bottom=0.08, hspace=0.2)
-plt.savefig('fig4_experimental_design.png',
+plt.savefig('fig5_protocol.png',
             dpi=300, bbox_inches='tight', pad_inches=0.16, facecolor='white')
 plt.close()
 print("Figure 4 saved.")

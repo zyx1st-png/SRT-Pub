@@ -1,7 +1,12 @@
 # A Translational Cross-Modal Control-Cost Framework for Executive Breakdown
 
-Yuxin Zhang  
-Independent Researcher
+Yuxin Zhang^1^\*
+
+^1^ Independent Researcher, Kaili, Guizhou, China
+
+\* **Correspondence:** Yuxin Zhang, zyx1st@gmail.com
+
+**ORCID:** Yuxin Zhang, https://orcid.org/0009-0007-6659-8518
 
 **Article type**: Hypothesis and Theory
 **Target journal**: Frontiers in Neuroscience
@@ -43,7 +48,7 @@ Several theoretical frameworks each name a real piece of the knowing–doing gap
 
 **Classical ego depletion models** conceptualize self-control as a limited resource (Baumeister et al., 1998), but glucose-specific substrate interpretations have received substantial methodological criticism, weak meta-analytic support, and replication concerns (Hagger et al., 2016; Vadillo et al., 2016). This motivates treating metabolic readouts as testable correlates rather than fixed assumptions.
 
-The critical gap is this: none of these frameworks provides a *single formally defined quantity* that (a) is grounded in both information-theoretic and thermodynamic principles, (b) generates measurable predictions across behavioral, physiological, neural, and linguistic domains simultaneously, (c) explains the knowing–doing gap as a specific failure mode, and (d) produces disorder-specific clinical predictions. The construct proposed below is designed to fill exactly this gap, and it is meant to *subsume* rather than replace the frameworks above: it treats cognitive load as its behavioral special case, allostatic load as its physiological special case, and variational complexity as its information-theoretic special case, while adding the cross-modal and dissociation predictions that none of them makes (developed in Section 6.2).
+The critical gap is this: none of these frameworks provides a *single formally defined quantity* that (a) is grounded in information-theoretic and energetically interpretable resource-budget terms, (b) generates measurable predictions across behavioral, physiological, neural, and linguistic domains simultaneously, (c) explains the knowing–doing gap as a specific failure mode, and (d) produces disorder-specific clinical predictions. The construct proposed below is designed to fill exactly this gap. It connects aspects of, and extends selected cost-related aspects of, the frameworks above rather than competing with or replacing them: it relates to cognitive load on the behavioral side, to allostatic load on the physiological side, and to variational complexity on the information-theoretic side, while adding the cross-modal and dissociation predictions that none of them makes (developed in Section 6.2).
 
 ### 1.3 Contribution and Scope
 
@@ -419,7 +424,7 @@ We now present five pre-registration-ready hypotheses derived from the $\Psi_f$ 
 
 **Statistical analysis.** Multilevel models with random intercepts and slopes are used for within-subject association tests. Primary fixed effects are context (decision vs factual), $\Delta\mu_{\text{sem}}^{\text{adj}}$, block-wise appraisal, and their links to behavioral/HRV outcomes. Incremental validity is tested via $\Delta R^2$ after adding PHQ-9 and GAD-7 (Kroenke et al., 2001; Spitzer et al., 2006) or equivalent symptom scales, plus affective-word ratio. If multilingual cohorts are used, configural/metric invariance is tested before pooled confirmatory inference. Test-retest reliability is assessed via ICC for both raw $\mu_{\text{sem}}$ and adjusted $\mu_{\text{sem}}^{\text{adj}}$.
 
-**Falsification criterion.** If (a) no decision-vs-factual context effect is observed for $\mu_{\text{sem}}^{\text{adj}}$, and (b) adjusted $\mu_{\text{sem}}^{\text{adj}}$ provides no meaningful incremental variance beyond symptom and affect controls, H72 is rejected and the linguistic proxy class is removed from the core model. The conjunction is intentional: either context sensitivity (supporting within-subject construct validity) or incremental predictive validity (supporting cross-construct utility) is considered sufficient to retain the linguistic probe for further testing, whereas removal is reserved for the case in which both forms of support fail.
+**Falsification criterion.** We specify a primary and a secondary test. The *primary* test is construct validity: whether a decision-vs-factual context effect is observed for $\mu_{\text{sem}}^{\text{adj}}$, which is the within-subject signature the framework predicts. The *secondary* test is incremental utility: whether adjusted $\mu_{\text{sem}}^{\text{adj}}$ adds meaningful predictive variance beyond symptom and affect controls. Full support for the linguistic probe requires both. If *either* test fails, the probe is downgraded and retained only as an exploratory, secondary indicator rather than a core-chain marker. If *both* tests fail, $\mu_{\text{sem}}$ is removed from the core model entirely. This graded rule ties the primary decision to construct validity while still crediting incremental utility as secondary evidence.
 
 **Planning note.** The initial planning value is $N = 120$ across three time points, sized for stable estimation of small-to-moderate within-subject associations under plausible repeated-measures reliability assumptions. Sample sizes were informed by effect-size benchmarks from the task-switching, executive-function, and clinical psychophysiology literatures, while exact power tolerances are intended to be fixed in the public preregistration and accompanying scripts before data collection.
 
@@ -495,7 +500,7 @@ Table 4 compares $\Psi_f$ with five existing frameworks across seven evaluation 
 *Insert Table 4 near here.*
 
 
-This comparison is not intended to argue that $\Psi_f$ replaces existing frameworks. Rather, $\Psi_f$ can be understood as a generalization that subsumes aspects of each: it includes cognitive load as a behavioral special case, allostatic load as a physiological special case, and variational complexity as an information-theoretic special case, while adding explicit cross-modal latent modeling and dissociation predictions.
+This comparison is not intended to argue that $\Psi_f$ replaces or absorbs existing frameworks. Rather, $\Psi_f$ connects aspects of each and extends selected cost-related aspects of them: it relates to cognitive load on the behavioral side, to allostatic load on the physiological side, and to variational complexity on the information-theoretic side, while adding explicit cross-modal latent modeling and dissociation predictions that these frameworks do not individually provide.
 
 Relative to the Expected Value of Control (EVC) framework (Shenhav et al., 2013; Shenhav et al., 2017), $\Psi_f$ is closest to a transmodal control-cost extension. Both treat control as a cost-constrained process, and EVC's effort-cost term and $\Psi_f$'s control-energy integral (Eq. 3c) share formal structure. However, the two frameworks diverge on three points that generate distinguishable predictions:
 
@@ -535,7 +540,7 @@ The framework is designed to be partially rejectable rather than all-or-none. Ke
 
 - If linear models consistently outperform changepoint models, reject the saturation component (Eq. 7b) while retaining additive control-cost formulations.
 - If cross-modal convergence fails (between-domain correlations uniformly $<0.15$), reject the single latent-factor claim and move to domain-specific modules.
-- If $\mu_{\text{sem}}$ lacks context sensitivity or incremental validity, remove the linguistic probe from the core chain and retain behavioral-physiological modeling.
+- If $\mu_{\text{sem}}$ lacks either context sensitivity (primary construct-validity test) or incremental validity (secondary utility test), downgrade the linguistic probe to an exploratory indicator; if it lacks both, remove it from the core chain and retain behavioral-physiological modeling.
 - If optional expansion markers (ROS/PCI/Fisher) do not add predictive value, retain the core chain and demote expansion markers to exploratory status.
 
 These outcomes define explicit model-pruning pathways and prevent post hoc theory protection.
@@ -614,11 +619,11 @@ This work received no external funding.
 
 ## Acknowledgments
 
-The author thanks colleagues and reviewers for critical discussion and manuscript feedback. The author used generative AI systems (Anthropic Claude) for language refinement and structural editing. All AI-assisted content was critically reviewed, revised, and verified by the author, who retains full responsibility for the manuscript.
+The author thanks the reviewers for their critical and constructive feedback on the manuscript. (Use of generative AI is disclosed separately in the Generative AI Statement below.)
 
 ## Generative AI Statement
 
-The intellectual content of this manuscript, including the theoretical framework, the formal model, every hypothesis, and the falsification logic, was conceived and is owned by the author. Generative AI (Anthropic Claude) was used only as a writing aid for language editing and structural organization of prose the author had already specified. It was not used to generate data, perform or design statistical analyses, produce results, or insert citations, and no claim in this paper originates from an AI system. The author independently verified every reference against its primary source, checked all equations and factual statements, and revised all AI-assisted text. The author takes full and sole responsibility for the accuracy, integrity, and scientific content of the manuscript. This disclosure is provided in the interest of transparency and in accordance with the journal's policy on AI-assisted authorship.
+The author used generative AI (Anthropic Claude) during manuscript preparation. AI assistance was limited to language editing and structural clarity; the author developed and verified the framework, equations, hypotheses, references, and final content. Generative AI was not used for data generation or statistical analysis. The author takes full responsibility for the accuracy, integrity, and scientific content of the manuscript. This disclosure is provided in the interest of transparency and in accordance with the journal's policy on AI-assisted authorship.
 
 ## Data Availability Statement
 
@@ -787,7 +792,7 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 
 | Hypothesis | Tier | Core Prediction | Falsification Criterion | Required $N$ | Key Measures |
 |---|---|---|---|---|---|
-| H72 | Core | Context-sensitive $\mu_{\text{sem}}^{\text{adj}}$ + incremental validity | No context effect and no meaningful incremental variance over symptom/affect controls | 120 | Adjusted modal ratio, RT, HRV/SCR, symptom scales |
+| H72 | Core | Context-sensitive $\mu_{\text{sem}}^{\text{adj}}$ (primary) + incremental validity (secondary) | Either test fails → downgrade to exploratory; both fail (no context effect and no meaningful incremental variance over symptom/affect controls) → remove from core | 120 | Adjusted modal ratio, RT, HRV/SCR, symptom scales |
 | H-NEURO-EXEC-01 | Core | Nonlinear cost increase with identifiable $\rho_c^*$ (primary) | Linear fit dominates or no $\rho_c^*$ | 80 | Task-switch $\times$ load, HRV/SCR, baseline latent score |
 | H-MET-01 | Core-extension bridge | Counter-habitual choice increases SCR (glucose exploratory) | No SCR difference or no reliable SCR-$\Psi_f$ link | 60 | SCR (primary), glucose (secondary), compatibility task |
 | H-CLIN-OCD-01 | Core clinical | Highest $\mu_{\text{sem}}$ in OCD | No reliable OCD elevation on $\mu_{\text{sem}}$ | 90 (30$\times$3) | Modal ratio, clinical interview |
@@ -811,5 +816,5 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 |---|---|---|---|---|
 | Additive resource model | Switch cost rises approximately linearly with load | Changepoint/nonlinear acceleration near $\rho_c^*$ | Compare linear vs changepoint models in H-NEURO-EXEC-01 | If linear fit $\ge$ changepoint in primary $\rho^*$ analysis, reject saturation component |
 | Generic symptom-severity model | Clinical groups differ mainly by global severity | Disorder-specific dissociations (Table 2) | Phase-2 contrasts in §4.5 | If dissociation contrasts fail, downgrade to transdiagnostic severity interpretation |
-| Language-style/trait model | $\mu_{\text{sem}}$ mostly stable stylistic variance | Context-sensitive shifts + incremental validity | H72 context contrast + incremental validity over PHQ-9/GAD-7/affect controls | If no context effect and no meaningful incremental variance, remove linguistic probe from core model |
+| Language-style/trait model | $\mu_{\text{sem}}$ mostly stable stylistic variance | Context-sensitive shifts + incremental validity | H72 context contrast (primary) + incremental validity over PHQ-9/GAD-7/affect controls (secondary) | If either fails, downgrade to exploratory; if both fail, remove linguistic probe from core model |
 | Global-deficit account | Expansion markers add little structure beyond symptoms | Optional expansion markers may add mechanistic precision | Compare core vs expansion model fit in phase-3 | If no incremental value, retain core chain and demote expansion markers to exploratory |

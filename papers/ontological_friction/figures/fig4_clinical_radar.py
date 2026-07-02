@@ -59,7 +59,7 @@ fig.text(0.5, 0.02, 'Higher values indicate greater impairment / higher executiv
          'Predictions are derived from the $\\Psi_f$ framework and constitute falsifiable claims.',
          ha='center', fontsize=9, fontstyle='italic', color='#1a1a1a')
 
-plt.savefig('fig3_clinical_radar.png',
+plt.savefig('fig4_clinical_radar.png',
             dpi=300, bbox_inches='tight', facecolor='white')
 plt.close()
 print("Figure 3 saved.")

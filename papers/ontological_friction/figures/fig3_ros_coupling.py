@@ -80,7 +80,7 @@ for x in [9.2, 5.7, 2.2]:
 # (bottom equation box removed per reviewer: disconnected from the flow; Eq. 9 appears in text)
 
 plt.subplots_adjust(left=0.04, right=0.99, top=0.9, bottom=0.08)
-plt.savefig('fig5_ros_dag.png',
+plt.savefig('fig3_ros_coupling.png',
             dpi=300, bbox_inches='tight', pad_inches=0.16, facecolor='white')
 plt.close()
 print("Figure 5 saved.")

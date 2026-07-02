@@ -119,7 +119,7 @@ ax2.text(5.4, 0.15, '$dq/dt \\leq \\alpha \\cdot P_{\\mathrm{sel}} - \\beta \\cd
          bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#333333'))
 
 plt.subplots_adjust(left=0.06, right=0.97, top=0.95, bottom=0.06, hspace=0.18)
-plt.savefig('fig1_srt_architecture.png',
+plt.savefig('fig1_control_architecture.png',
             dpi=300, bbox_inches='tight', pad_inches=0.16, facecolor='white')
 plt.close()
 print("Figure 1 saved.")

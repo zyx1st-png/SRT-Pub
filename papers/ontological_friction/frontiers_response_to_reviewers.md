@@ -14,6 +14,7 @@ We thank both reviewers for their careful and constructive reading. The comments
 4. **Clinical section.** The newly introduced variables (switching viscosity, anchoring index) are now tied back to previously defined quantities, and the overlap between disorders (e.g., switching deficits in both OCD and MDD) is discussed openly and added to the Limitations.
 5. **Prose quality and AI-assistance concerns.** The manuscript was reflowed to reduce fragmentation and markedly reduce em-dash usage (from 40 spaced em-dashes to a handful, all in citations or table cells). The Conflict-of-Interest and Generative-AI statements were expanded for transparency.
 6. **Figures.** Figure source was corrected: numbering, accessible titles, larger fonts, black (not grey) text, removal of a disconnected equation, and removal of legacy labels. See the Figures section below.
+7. **Statistical review.** Because both reviewers indicated that a statistician may be needed, the statistical modeling plan and sensitivity analyses have been clarified, and statistical consultation will be sought before preregistration and empirical implementation.
 
 ---
 
@@ -96,13 +97,13 @@ Response: The study-design box font was enlarged; the architecture panel layout 
 Response: The manuscript was thoroughly reflowed. Em-dash usage was cut from 40 spaced em-dashes to a small number confined to citation titles and "not applicable" table cells; short fragmented passages were merged into connected paragraphs with topic sentences and transitions. We have re-checked formatting against the *Frontiers* author guidelines. We note that AI assistance was limited to language editing of author-specified content and is disclosed transparently (see below); the intellectual content, model, hypotheses, and every claim are the author's own and were independently verified.
 
 **2. Affiliation / conflict of interest — author is "independent researcher" with no further information, preventing COI assessment.**
-Response: The Conflict-of-Interest statement was expanded to make the independent status transparent and assessable: it states that the author has no employment, consultancy, patent, equity, grant, or other financial relationship with any organization that could benefit from the framework, and clarifies that the single self-citation (Appendix A) is non-commercial, confers no financial interest, and is not required for any claim in the paper.
+Response: The author information was completed to support this assessment. The affiliation now reads "Independent Researcher, Kaili, Guizhou, China," with a correspondence email and an ORCID identifier (0009-0007-6659-8518). The Conflict-of-Interest statement was expanded to make the independent status transparent and assessable: it states that the author has no employment, consultancy, patent, equity, grant, or other financial relationship with any organization that could benefit from the framework, and clarifies that the single self-citation (Appendix A) is non-commercial, confers no financial interest, and is not required for any claim in the paper.
 
 **3. Writing — short paragraphs, poor flow, reads like disorganized bullet points; needs substantial rewriting.**
 Response: Addressed as part of the reflow described above and the section-level rewrites requested by Reviewer 1 (Abstract, §1.3, all of Section 2). Run-in emphasis and choppy passages were consolidated into flowing prose.
 
 **4. Rewrite absent of AI use.**
-Response: We have revised the manuscript ourselves and take full responsibility for it. Per journal policy and in the interest of transparency, we retain an honest disclosure of AI-assisted language editing rather than removing it; the disclosure now states explicitly that no claim originated from an AI system and that the author verified every reference, equation, and factual statement. The strengthened prose (in particular the corrected em-dash usage and paragraph structure) reflects author revision throughout.
+Response: We have revised the manuscript ourselves and take full responsibility for it. Per journal policy and in the interest of transparency, we retain an honest disclosure of AI-assisted language editing rather than removing it. The disclosure now states that AI assistance was limited to language editing and structural clarity, and that the author developed and verified the framework, equations, hypotheses, references, and final content. The strengthened prose (in particular the corrected em-dash usage and paragraph structure) reflects author revision throughout.
 
 **5. Figures — grey text in color-box charts should be black.**
 Response: Done. Text in the box/flow figures was changed from grey to near-black across the figure sources.

@@ -14,10 +14,10 @@
 ## Author fields
 
 - Author name: `Yuxin Zhang`
-- Affiliation / institution: `Independent Researcher`
-- If the portal requires city/country/address, use your real correspondence location; keep the institution field as `Independent Researcher`.
+- Affiliation / institution: `Independent Researcher, Kaili, Guizhou, China`
 - Corresponding author: `Yuxin Zhang`
-- Correspondence email: use the submission account email you actively monitor.
+- Correspondence email: `zyx1st@gmail.com` (confirm/replace if a different monitored address is preferred)
+- ORCID: `0009-0007-6659-8518` (https://orcid.org/0009-0007-6659-8518)
 
 ## Keywords
 

@@ -1,46 +1,51 @@
-# Frontiers Submission Checklist (Near-submission)
+# Frontiers Submission Checklist — Revision Round (manuscript 1837760)
 
-Preferred upload manuscript:
-- `paper_ontological_friction_frontiers_submission.docx`
-- `paper_ontological_friction_frontiers_submission.pdf`（preview only; refreshed on 2026-03-24）
+Rebuilt from the finalized `executive friction` draft after the first peer-review round.
+Build artifacts refreshed (not stale): DOCX/PDF/HTML regenerated with Word equation objects,
+figures regenerated, upload files re-numbered.
 
-## Manuscript core
+## Final submission package (what to upload)
 
-- [x] Article type set to Hypothesis and Theory.
-- [x] Running title added.
-- [x] Word, figure, and table statistics added on first page.
-- [x] Upload DOCX synchronized to the current journal-facing `executive friction` draft.
-- [x] Contribution to the Field Statement moved to a separate submission-form file.
-- [x] Abstract rewritten for hypothesis-theory framing.
-- [x] Falsifiability criteria explicitly defined.
-- [x] Scope statement drafted under 200 words.
-- [x] Contribution to the Field Statement rewritten in plain language for non-expert readers.
+| # | Item | File(s) | Status |
+|---|---|---|---|
+| 1 | **Manuscript** (primary upload) | `paper_ontological_friction_frontiers_submission.docx` | ✅ rebuilt, QA-passed |
+| 1b | Manuscript PDF (review preview) | `paper_ontological_friction_frontiers_submission.pdf` | ✅ rebuilt (Word equations; math renders) |
+| 1c | Manuscript HTML (optional preview) | `paper_ontological_friction_frontiers_submission.html` | ✅ rebuilt (MathJax) |
+| 2 | **Response to reviewers** | `frontiers_response_to_reviewers.md` | ✅ point-by-point, both reviewers |
+| 3 | **Figures** (separate high-res upload) | `figures/frontiers_upload/Figure{1..5}.tif` (+ `.jpg`) | ✅ re-numbered 1:1, 300 dpi |
+| 3b | Figure zips | `figures/frontiers_upload/frontiers_figures_{tif,jpg}.zip` | ✅ rebuilt |
+| 4 | **Supplementary** (at preregistration) | modal dictionaries, tokenization + model-spec + simulation scripts (see §5.6) | ⏳ released at preregistration, not at submission |
+| 5 | **Conflict of Interest** | in manuscript (expanded, independent-researcher transparency) | ✅ |
+| 6 | **Generative AI disclosure** | in manuscript (single occurrence; author-ownership wording) | ✅ |
+| — | Scope / Contribution-to-Field statements | `frontiers_scope_statement.md`, `frontiers_contribution_to_field_statement.md` | ✅ paste into portal form |
 
-## Integrity and compliance statements
+## Post-review QA on rebuilt PDF (all verified)
 
-- [x] Conflict of Interest Statement included.
-- [x] Author Contributions included.
-- [x] Funding statement included.
-- [x] Acknowledgments included.
-- [x] Data Availability Statement included.
-- [x] Ethics Statement included.
-- [x] Generative AI Statement included.
-- [x] Abbreviations list included.
+- [x] Title appears once (no duplication).
+- [x] Generative AI disclosure appears once (removed the duplicate mention from Acknowledgments).
+- [x] No space-gluing artifacts (abstract and body clean).
+- [x] `Ψ_f` renders correctly as a subscript everywhere (not `Ψ!` or `(4p)`); figure titles fixed too.
+- [x] Figure captions in order 1→5; upload files map 1:1 to source scripts (see `figures/FIGURE_MAP.md`).
+- [x] Page and line numbering present (Frontiers requirement).
 
-## Figures and tables
+## Author / correspondence
 
-- [x] Strict submission manuscript uses figure callouts in body and moves all figure captions to the end.
-- [x] Strict submission manuscript uses table callouts in body and moves all editable tables to the end.
-- [x] Export each figure as separate high-resolution file matching Frontiers requirements at upload.
-- [x] Verify figure resolution and format in final upload package (local check completed for Figure 1–5 JPG/TIFF assets at 300 dpi).
+- [x] Corresponding author details: Yuxin Zhang, zyx1st@gmail.com. *(Confirm/replace email in portal if a different address is preferred.)*
+- [x] Affiliation: Independent Researcher, Kaili, Guizhou, China.
+- [x] ORCID: 0009-0007-6659-8518.
 
-## Pre-submission manual checks
+## Still manual in the portal
 
-- [ ] Confirm corresponding author details.
-- [ ] Confirm final institutional affiliations.
-- [ ] Confirm all reference metadata in submission portal (DOI completion where possible).
-- [x] Verify page and line numbering in uploaded manuscript file.
-- [x] Refresh local PDF preview from the synchronized DOCX (portal-generated review PDF still preferred for final visual QA).
-- [x] Regenerate DOCX/PDF with Word equation objects instead of raw `$...$` math.
-- [ ] Paste scope statement in the journal submission form.
-- [x] Note that Frontiers submission does not use a traditional cover letter in the portal; keep cover letter only for off-portal/editorial-request use.
+- [ ] Paste scope statement into the submission form.
+- [ ] Confirm all reference metadata (DOI completion where possible) in the portal.
+- [ ] Upload the 5 figures as separate files in the correct numbered slots (use `frontiers_upload/Figure{1..5}`).
+- [ ] Seek statistical consultation before preregistration/empirical implementation (noted in response letter).
+
+## Reproducing the build
+
+```
+# from papers/ontological_friction, with pandoc + a venv (pypandoc, docx2pdf on macOS w/ Word):
+python -c "import render_frontiers_submission_package as r; t=r.extract_title(r.SRC.read_text()); r.render_html(t); r.render_docx(t)"
+python -c "from docx2pdf import convert; convert('paper_ontological_friction_frontiers_submission.docx','paper_ontological_friction_frontiers_submission.pdf')"
+# figures: see figures/FIGURE_MAP.md
+```

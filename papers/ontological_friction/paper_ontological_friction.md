@@ -207,7 +207,7 @@ which avoids instability of ratio estimators in low-denominator regions. Inferen
 
 **Figure 1.** *Hierarchical control architecture and selection power budget.* (A) Three-part control scaffold: candidate policy space, active state, and slow constraints, linked by a resource-bounded selection/gating mechanism. The dashed feedback arrow indicates how slow constraints shape future selection. (B) Selection-budget diagram illustrating how the "knowing–doing gap" emerges when the red bar ($\beta \cdot \Psi_f$) plus orange bar ($\gamma \cdot S_{\text{noise}}$) exceeds the green bar ($\alpha \cdot P_{\text{sel}}$), progressing from healthy function through stressed operation to clinical breakdown. Final artwork should keep these exact symbol labels for one-to-one correspondence with Equation (5).
 
-![Figure 1](figures/fig1_srt_architecture.png){ width=6.5in }
+![Figure 1](figures/fig1_control_architecture.png){ width=6.5in }
 
 ---
 
@@ -352,7 +352,7 @@ The ROS coupling equation (Equation 9) generates a specific pathophysiological c
 
 **Figure 3.** *ROS–$\Psi_f$ coupling mechanism: from ontological friction to clinical expression.* Directed acyclic graph showing the pathophysiological chain from sustained high $\Psi_f$ through elevated metabolic demand, increased ROS production, oxidative damage, inflammatory signaling, reduced selection power ($P_{\text{sel}}$), and deepened knowing–doing gap, forming a positive feedback loop (dashed red arrow). Dashed boxes at bottom indicate three intervention targets: pharmacological ($\downarrow \Psi_f$), behavioral ($\uparrow P_{\text{sel}}$), and antioxidant ($\uparrow$ clearance).
 
-![Figure 3](figures/fig5_ros_dag.png){ width=6.5in }
+![Figure 3](figures/fig3_ros_coupling.png){ width=6.5in }
 
 ### 4.2 Obsessive-Compulsive Disorder: Switching Viscosity
 
@@ -411,7 +411,7 @@ These predictions are falsifiable: if, for example, OCD patients do not show the
 
 **Figure 4.** *Predicted $\Psi_f$ proxy signatures across clinical conditions.* Radar chart showing disorder-specific friction profiles for healthy controls (green), major depressive disorder (red), obsessive-compulsive disorder (purple), and Parkinson's disease (orange) across ten proxy measures. Higher values indicate greater impairment or higher ontological friction. These predictions constitute falsifiable claims derived from the $\Psi_f$ framework.
 
-![Figure 4](figures/fig3_clinical_radar.png){ width=6.5in }
+![Figure 4](figures/fig4_clinical_radar.png){ width=6.5in }
 
 ### 4.5 Competing Explanations and Decisive Phase-2 Tests
 
@@ -501,7 +501,7 @@ The one-sided choice is justified by preregistered directional monotonic predict
 
 **Figure 5.** *Core-chain protocol and critical-load prediction.* (A) Low-cost protocol for H72 and H-NEURO-EXEC-01, integrating two prompt contexts (neutral factual retell vs self-decision narrative), behavioral battery, HRV/SCR recording, appraisal ratings, and NLP extraction for latent-factor estimation. Baseline load is estimated as $\rho^*=z(\Psi_f^{\text{baseline, latent}})-z(P_{\text{sel}}^{\text{proxy}})$ (Eq. 7c) in primary analyses; ratio-based $\rho$ is sensitivity-only. (B) Predicted task-switch cost as a function of normalized load $\rho$: the saturation model (solid red) includes a critical point $\rho_c$ and nonlinear escalation into a "know but can't do" zone, while the additive model (dashed gray) predicts linear increase.
 
-![Figure 5](figures/fig4_experimental_design.png){ width=6.5in }
+![Figure 5](figures/fig5_protocol.png){ width=6.5in }
 
 ---
 
