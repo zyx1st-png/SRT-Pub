@@ -1,0 +1,114 @@
+---
+id: SRT-CHOICE-TRACE-LOG
+type: ledger
+tags: [Article, Writing, ChoiceMap, Trace, Convergence, RevealedStake, dValue]
+status: active_v1
+layer: meta
+epistemic_layer: os
+claim_mode: proposal
+canonical: false
+ai_do_not_use_for_definition: true
+created: 2026-07-02
+provenance: 文章工作流 R 段落地（发散→收敛配对轨迹，作者收敛函数的 revealed-stake 台账）
+dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SRT_TOPIC_ARTICLE_INDEX]
+---
+
+# SRT 收敛轨迹台账：作者收敛函数的显影
+
+> **性质与边界（先读）**
+> - 本文件是 `_SRT_ARTICLE_WORKFLOW.md` R 段的落地物：记录每次"发散→收敛"的配对轨迹。
+> - 记录的**不是文章内容**，而是**作者的收敛函数**——在一个由 LLM 发散出的更大选择空间里，作者选了什么、跳过了什么众数选项、为什么。
+> - **非 canonical，不定义术语。** 这是运行层的行为留痕，不是理论证据，也不构成对 d-value 的任何形式化测量。它只是作者品味与判断的经验轨迹。
+
+---
+
+## 0. 为什么记这个（一段话）
+
+扩散模型学的是"加噪→去噪"的轨迹配对，不是图片。本台账记的是"发散→收敛"的轨迹配对，目的是让作者的**收敛偏置**可积累、可回看、将来可作为条件。
+
+- 单条轨迹几乎没信息。
+- 几十条轨迹开始显影出一个稳定的形状：作者反复选哪类角度、每次都跳过哪类众数选项、闭包边界习惯设在哪。
+- 那个形状 = 用 AI 又不丢锋芒的锋芒本身。将来生成/诊断可以 condition 在它上面，而不是 condition 在互联网平均品味上。
+
+> 理论自指：d-value 在攸关下由选择揭示。本台账是对作者自身 d-value 的 revealed-stake 提取（ChoiceMap 种子文档 §3–§5 的"编码层"）。**但它只是 proxy，不是 ground truth。**
+
+---
+
+## 1. 字段定义（这几个字段决定它将来能不能当条件用）
+
+每条轨迹 = 一次 D→C。**必填字段**如下，缺一条这条轨迹就不可用于回看/条件：
+
+| 字段 | 含义 | 为什么必须记 |
+|---|---|---|
+| `trace_id` | `CT-YYYYMMDD-NN` | 唯一定位 |
+| `date` | 收敛发生日期 | 时间序，看偏置漂移 |
+| `seed_fragment` | 作者投喂的原始碎片想法（**逐字**，不润色） | 条件的输入端；润色过就污染了 |
+| `diverged_pool` | LLM 发散池里出现过的角度（至少列全 D1 + 点名 D2 众数陷阱） | 没有"可选项全集"，就无法定义"作者的选择" |
+| `chosen` | 作者**选了**哪个角度（含是否杂交、杂交了哪两个） | 选择的正例 |
+| `skipped_mode` | 作者**主动跳过**的众数选项（D2 陷阱 + D1 里的显然角度） | **与 chosen 同等重要**：收敛函数的形状由"选了什么"和"避开了什么"共同定义 |
+| `reason` | 收敛理由，**一句话，作者亲写** | 条件的标签；LLM 代拟的理由是众数理由，直接毁掉这条轨迹的价值 |
+| `closure_boundary` | 作者设定的"谁承受后果 / 看多远" | 作者的边界偏好是收敛函数的核心维度之一 |
+| `attack_target` | 这篇文章要拆的"世界本来如此"的哪一块 | 攻击面选择也是品味 |
+
+**可选字段**（有则记，用于后续回流分析）：
+
+| 字段 | 含义 |
+|---|---|
+| `article_ref` | 成文后的文章链接 / 归档路径 |
+| `platform` | 发布平台 |
+| `reader_resistance` | 读者实际的抵抗点 / 反驳（发布后回填） |
+| `topic_index_id` | 若命中 `SRT_TOPIC_ARTICLE_INDEX.md` 的某行，记其 ID |
+| `note` | 其他 |
+
+### 记录纪律（防污染，等同于数据质量）
+
+1. **`seed_fragment` 与 `reason` 必须是作者原话**，不许 LLM 润色或代拟——它们是条件的输入端和标签端，一旦众数化，整条轨迹作废。
+2. **`skipped_mode` 不许留空**。"这次没跳过什么"本身可疑：说明 D 段发散不够，或作者其实选了众数。
+3. LLM 可以帮忙**填 `diverged_pool`**（它本来就是发散池的产出），但**不许填 `chosen / skipped_mode / reason / closure_boundary / attack_target`**——这些是收敛动作，只能作者填。
+4. 不追溯补记。当场记，隔天记的 `reason` 已经是重构，不是当时的收敛。
+
+---
+
+## 2. 条目模板（复制这段）
+
+```markdown
+### CT-YYYYMMDD-NN
+
+- **date**: YYYY-MM-DD
+- **seed_fragment**（作者原话，逐字）: …
+- **diverged_pool**:
+  - D1 角度：① … ② … ③ …（列全）
+  - D2 众数陷阱（LLM 点名的"最容易被写成的那篇"）: …
+- **chosen**（作者选的角度）: …
+- **skipped_mode**（主动跳过的众数选项）: …
+- **reason**（作者亲写，一句话）: …
+- **closure_boundary**（谁承受后果 / 看多远）: …
+- **attack_target**（拆哪块"本来如此"）: …
+- **article_ref**: （成文后回填）
+- **platform**: （发布后回填）
+- **reader_resistance**: （发布后回填）
+- **topic_index_id**: （若命中）
+- **note**: 
+```
+
+---
+
+## 3. 周期性回看（每积累约 20 条做一次）
+
+不解读单条，解读**分布**：
+
+- **偏置显影**：`chosen` 里反复出现的角度类型 / 借用的领域 —— 作者的稳定切入面。
+- **反众数指纹**：`skipped_mode` 里反复被跳过的众数类型 —— 这是"锋芒"最直接的负空间刻画。
+- **边界偏好**：`closure_boundary` 的分布 —— 作者习惯把后果看多远、算谁进来。
+- **塌缩预警**：若近 N 条的 `chosen` 开始向少数母题集中（对齐 `SRT_TOPIC_ARTICLE_INDEX.md` 的塌缩警告），说明发散池老化，需要换素材源。
+- **回流校准**：把 `reader_resistance` 与当初的 `attack_target` 对照 —— 真实读者在哪里顶住了，这是将来若重开书稿修订时最有价值的弹道数据（比内部自洽性优化更有证据价值）。
+
+> 回看产出写入 `Operations/` 的周期留痕，不改写本台账已有条目（append-only）。
+
+---
+
+## 4. 轨迹记录区（append-only，最新在下）
+
+<!-- 从这里开始按时间顺序追加轨迹条目。不修改历史条目。 -->
+
+_（暂无条目。第一条轨迹将在首次走完 D→C 工作流后写入。）_
