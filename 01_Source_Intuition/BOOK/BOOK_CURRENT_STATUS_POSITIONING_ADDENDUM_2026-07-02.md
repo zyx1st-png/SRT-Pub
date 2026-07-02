@@ -111,6 +111,7 @@ SRT 说明书
 
 未同步对象：
 
+- `Drafts_26Q/致读者.md`：正文读者入口仍含“非学院化的理论奠基书”旧口径；登记为下一轮正文同步小 PR，本 addendum PR 不直接改动正文。
 - 历史导出稿、旧 archive、旧 output 中的旧口径保留为历史版本，不代表当前定位。
 - `BOOK_CURRENT_STATUS.md` 正文较长，本 addendum 先作为覆盖件；如后续需要，可单独做一次 status 正文行级同步。
 
