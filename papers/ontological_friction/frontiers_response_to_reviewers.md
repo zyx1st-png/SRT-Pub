@@ -33,7 +33,7 @@ Response: A new paragraph in §1.1 situates the phenomenon in the intention–be
 Response: Recent references added, including Friedman and Robbins (2022), Snyder et al. (2015), McTeague et al. (2017), and Gillan et al. (2016).
 
 **5. Introduction — clarify which aspects of the gap existing frameworks address and how the proposal relates.**
-Response: §1.2 now opens by stating that each framework "names a real piece" of the gap but lacks a cross-modal cost quantity, and reviews each "noting… what it captures and what it leaves out." The closing paragraph states explicitly that the proposal is designed to *subsume rather than replace* these frameworks (cognitive load as a behavioral special case, allostatic load as physiological, variational complexity as information-theoretic), forward-referencing §6.2.
+Response: §1.2 now opens by stating that each framework "names a real piece" of the gap but lacks a cross-modal cost quantity, and reviews each "noting… what it captures and what it leaves out." The revised paragraph now states that the framework connects selected cost-related aspects of these accounts rather than competing with or replacing them, forward-referencing §6.2.
 
 **6. Contribution and Scope (§1.3) — rewrite; introduce intuition before terminology.**
 Response: §1.3 now opens with a plain-language paragraph closely following the reviewer's suggested framing ("this work proposes… that turning knowledge into action has a cost, which we call executive friction, and that when this cost grows too high, three things follow…"), before the formal paragraph.
