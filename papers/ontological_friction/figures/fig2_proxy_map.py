@@ -18,7 +18,7 @@ ax.set_title('Operationalization Map: Four Proxy Classes for $\\Psi_f$',
 circle = plt.Circle((0, 0), 1.2, facecolor='#FFF3E0', edgecolor='#E65100', linewidth=3)
 ax.add_patch(circle)
 ax.text(0, 0.15, '$\\Psi_f$', ha='center', va='center', fontsize=24, fontweight='bold', color='#BF360C')
-ax.text(0, -0.5, 'Ontological\nFriction', ha='center', va='center', fontsize=9, color='#BF360C')
+ax.text(0, -0.5, 'Executive\nFriction', ha='center', va='center', fontsize=9, color='#BF360C')
 
 # Branch definitions
 branches = [
@@ -100,7 +100,7 @@ ax.text(0, -5.5, 'Expected convergent validity: between-domain $r$ = 0.3–0.6\n
         ha='center', va='center', fontsize=9, fontstyle='italic',
         bbox=dict(boxstyle='round,pad=0.4', facecolor='#F5F5F5', edgecolor='#999999'))
 
-plt.savefig('/Users/zhangyuxin/.openclaw/workspace/SRT/papers/ontological_friction/figures/fig2_proxy_map.png',
+plt.savefig('fig2_proxy_map.png',
             dpi=300, bbox_inches='tight', facecolor='white')
 plt.close()
 print("Figure 2 saved.")

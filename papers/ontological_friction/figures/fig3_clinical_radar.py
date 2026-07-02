@@ -46,7 +46,7 @@ ax.set_xticks(angles[:-1])
 ax.set_xticklabels(categories, fontsize=8)
 ax.set_ylim(0, 1.0)
 ax.set_yticks([0.2, 0.4, 0.6, 0.8])
-ax.set_yticklabels(['0.2', '0.4', '0.6', '0.8'], fontsize=7, color='#666666')
+ax.set_yticklabels(['0.2', '0.4', '0.6', '0.8'], fontsize=7, color='#1a1a1a')
 ax.set_rlabel_position(30)
 
 ax.set_title('Predicted $\\Psi_f$ Proxy Signatures Across Clinical Conditions',
@@ -55,11 +55,11 @@ ax.set_title('Predicted $\\Psi_f$ Proxy Signatures Across Clinical Conditions',
 ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1), fontsize=10, framealpha=0.9)
 
 # Note
-fig.text(0.5, 0.02, 'Higher values indicate greater impairment / higher ontological friction.\n'
+fig.text(0.5, 0.02, 'Higher values indicate greater impairment / higher executive friction.\n'
          'Predictions are derived from the $\\Psi_f$ framework and constitute falsifiable claims.',
-         ha='center', fontsize=9, fontstyle='italic', color='#666666')
+         ha='center', fontsize=9, fontstyle='italic', color='#1a1a1a')
 
-plt.savefig('/Users/zhangyuxin/.openclaw/workspace/SRT/papers/ontological_friction/figures/fig3_clinical_radar.png',
+plt.savefig('fig3_clinical_radar.png',
             dpi=300, bbox_inches='tight', facecolor='white')
 plt.close()
 print("Figure 3 saved.")
