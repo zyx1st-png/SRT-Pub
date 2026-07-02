@@ -56,6 +56,8 @@ raw session / dialogue compilation / residual archives 已下沉到：
 7. `_SRT_MATERIAL_PIPELINE.md`（Pipeline 1：材料融合 v2 结构化写入版）
 8. `_SRT_MATERIAL_LOG.md`（Pipeline 1 正式材料融入台账；长记录读取从 `Material_Log/README.md` 进入）
 9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线）
+10. `_SRT_ARTICLE_WORKFLOW.md`（文章写作工作流：LLM 发散 / 作者收敛 / 记录轨迹；`2026-07-02` 战略重心转向社媒文章后新增，Pipeline 5 主模式改由此文件定义）
+11. `_SRT_CHOICE_TRACE_LOG.md`（收敛轨迹台账：发散→收敛配对留痕，作者收敛函数的 revealed-stake 记录；append-only）
 
 ### Connector / large-file safety
 

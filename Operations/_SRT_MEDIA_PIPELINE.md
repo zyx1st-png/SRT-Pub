@@ -12,6 +12,10 @@ dependency: [SRT-EXECUTION-PLAN, SRT-MEDIA-QUEUE, SRT-MEDIA-TOPIC-TEMPLATE]
 # SRT 自媒体选题与发布准备流水线（Pipeline 5）
 
 > **变更（2026-03-02）**：每日产出从 1 条升级为 **2 条**（大众路线 + 精英路线各 1 条），并规范了输出格式。
+>
+> **变更（2026-07-02）· 重要**：战略重心转向社媒文章后，本流水线由"**LLM 每日出 2 条成品选题**"改为"**LLM 维护发散池、作者收割**"。原模式让 LLM 替作者收敛了两次（既选题又填框架），产出高度模板化——`_SRT_MEDIA_QUEUE.md` 历史条目里反复出现的 `SRT视角：把 X 解释为 Y` 句式就是众数塌缩的证据。新模式遵守 `_SRT_ARTICLE_WORKFLOW.md` 的第一设计律：**发散给 LLM，收敛只由作者做**。旧的成品选题队列 `_SRT_MEDIA_QUEUE.md` 降级为归档，不再作为主产出。
+>
+> **失效引用提示**：本文件 §触发方式 曾引用的自动脚本 `scripts/srt_media_topic_daily.py` **在仓库中不存在**（`2026-07-02` 核实），所谓"每日 08:00 自动生成"实为 `选题` 命令临时让 LLM 生成。该自动触发条目已标记为失效，见下。
 
 ---
 
@@ -43,18 +47,35 @@ dependency: [SRT-EXECUTION-PLAN, SRT-MEDIA-QUEUE, SRT-MEDIA-TOPIC-TEMPLATE]
 
 ## 触发方式
 
-**自动触发（HEARTBEAT/Cron）**：
-- 每日 08:00（Asia/Shanghai）通过 `../scripts/srt_media_topic_daily.py` 生成（若从 `SRT/` 目录执行；若从 workspace 根执行则用 `scripts/srt_media_topic_daily.py`）
+> **模式已切换（2026-07-02）**：以下"自动生成 2 条成品选题"为**旧模式，已停用**。当前主模式见下一节「新主模式：发散池 + 收割」。
+
+**~~自动触发（HEARTBEAT/Cron）~~**（失效）：
+- ~~每日 08:00（Asia/Shanghai）通过 `../scripts/srt_media_topic_daily.py` 生成~~ —— **该脚本在仓库中不存在**（`2026-07-02` 核实），此自动触发从未真正生效。
 - 防重复：检查 `Operations/_SRT_MEDIA_QUEUE.md` 当日是否已有记录
 
-**手动触发**：
-- 用户发送 `选题` → 立即生成当日大众+精英各 1 条
+**~~手动触发（旧）~~**：
+- ~~用户发送 `选题` → 立即生成当日大众+精英各 1 条~~ —— 旧模式让 LLM 替作者收敛，已停用。
 
 ---
 
-## 输出格式（更新后）
+## 新主模式：发散池 + 收割（2026-07-02 起）
 
-每日生成 2 条记录，写入 `Operations/_SRT_MEDIA_QUEUE.md`（参考 `Operations/_SRT_MEDIA_TOPIC_TEMPLATE.md`）：
+遵守 `_SRT_ARTICLE_WORKFLOW.md`。责任切分：
+
+- **发散（LLM）**：不产成品选题，只维护一个大而粗的**发散池**——碎片、张力、反共识角度、跨域钩子，量大、互不冗余、**不排序不推荐**。素材源见下节「选题来源优先级」。
+- **收割（作者）**：作者从池子里自选、自定论点、自定攻击对象。这三个收敛动作 LLM 一律不代做。
+- **记录（留痕）**：每次收割写一条轨迹到 `Operations/_SRT_CHOICE_TRACE_LOG.md`（选了什么、跳过了哪些众数选项、为什么）。
+
+**手动触发（新）**：
+- 用户发送 `发散 {{碎片想法}}` → LLM 按 `_SRT_ARTICLE_WORKFLOW.md` §2 发散提示词产出 D1–D4 选择空间，**不收敛、不入队成品**。
+
+---
+
+## 旧输出格式（归档参考，不再作为主产出）
+
+> 以下成品选题格式**保留为归档模板**，用于读旧的 `_SRT_MEDIA_QUEUE.md` 条目；新流程不再生成此格式。
+
+每条记录写入 `Operations/_SRT_MEDIA_QUEUE.md`（参考 `Operations/_SRT_MEDIA_TOPIC_TEMPLATE.md`）：
 
 ```markdown
 ## [YYYY-MM-DD] 选题 #N — 大众路线
