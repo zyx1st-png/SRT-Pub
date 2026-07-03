@@ -29,7 +29,7 @@ for x, y, label, color, sub in domains:
                           edgecolor='#333333', linewidth=1.5)
     ax1.add_patch(box)
     ax1.text(x+0.3, y+0.2, label, ha='center', va='center', fontsize=15, fontweight='bold')
-    ax1.text(x+0.3, y-0.8, sub, ha='center', va='center', fontsize=13, fontstyle='italic', color='#666666')
+    ax1.text(x+0.3, y-0.8, sub, ha='center', va='center', fontsize=13, fontstyle='italic', color='#1a1a1a')
 
 # Arrows
 arrow_style = dict(arrowstyle='->', color='#333333', lw=2.6, mutation_scale=18)
@@ -47,7 +47,7 @@ ax1.annotate('', xy=(1.1, 2.2), xytext=(7.8, 2.2),
              arrowprops=dict(arrowstyle='->', color='#999999', lw=2.0,
                            connectionstyle='arc3,rad=0.0', linestyle='--'))
 ax1.text(4.45, 1.7, 'Shapes future selection', ha='center', va='center',
-         fontsize=13, fontstyle='italic', color='#666666')
+         fontsize=13, fontstyle='italic', color='#1a1a1a')
 
 # Friction annotation
 ax1.text(4.7, 7.2, '$\\Psi_f^{\\mathrm{ctrl}} \\approx \\int u^\\top R u\\,dt$',
@@ -119,7 +119,7 @@ ax2.text(5.4, 0.15, '$dq/dt \\leq \\alpha \\cdot P_{\\mathrm{sel}} - \\beta \\cd
          bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#333333'))
 
 plt.subplots_adjust(left=0.06, right=0.97, top=0.95, bottom=0.06, hspace=0.18)
-plt.savefig('/Users/zhangyuxin/.openclaw/workspace/SRT/papers/ontological_friction/figures/fig1_srt_architecture.png',
+plt.savefig('fig1_control_architecture.png',
             dpi=300, bbox_inches='tight', pad_inches=0.16, facecolor='white')
 plt.close()
 print("Figure 1 saved.")

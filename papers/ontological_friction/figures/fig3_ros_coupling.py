@@ -10,14 +10,14 @@ fig.patch.set_facecolor("white")
 ax.set_xlim(0, 15.2)
 ax.set_ylim(0, 9.2)
 ax.axis('off')
-ax.set_title('ROS–$\\Psi_f$ Coupling Mechanism: From Ontological Friction to Clinical Expression',
+ax.set_title('Proposed Oxidative Feedback Loop: How Sustained Executive Friction May Drive Clinical Decline',
              fontsize=20, fontweight='bold', pad=18)
 
 # Node definitions: (x, y, label, sublabel, color, edgecolor)
 nodes = [
-    (2.2, 6.35, 'Sustained High\n$\\Psi_f$', 'Chronic deviation from\n$L_0^{\\mathrm{natural}}$', '#FFF3E0', '#E65100'),
+    (2.2, 6.35, 'Sustained High\n$\\Psi_f$', 'Chronic control-cost\nelevation', '#FFF3E0', '#E65100'),
     (5.7, 6.35, 'Elevated\nMetabolic\nDemand', 'Mitochondrial\noveractivation', '#FFECB3', '#FF8F00'),
-    (9.2, 6.35, 'Increased\nROS\nProduction', '$\\alpha \\cdot \\Psi_f(\\hat{G}_\\theta)$', '#FFCDD2', '#C62828'),
+    (9.2, 6.35, 'Increased\nROS\nProduction', '$\\alpha \\cdot \\Psi_f$', '#FFCDD2', '#C62828'),
     (12.45, 6.35, 'Oxidative\nDamage', 'DNA, lipid,\nprotein damage', '#F8BBD0', '#AD1457'),
     (12.45, 3.75, 'Inflammatory\nSignaling', 'IL-6, TNF-α,\nNF-κB pathway', '#E1BEE7', '#6A1B9A'),
     (9.2, 3.75, 'Reduced\n$P_{\\mathrm{sel}}$', 'Neuromodulatory\nimpairment', '#BBDEFB', '#1565C0'),
@@ -32,7 +32,7 @@ for x, y, label, sublabel, color, ec in nodes:
                           edgecolor=ec, linewidth=2)
     ax.add_patch(box)
     ax.text(x, y+0.2, label, ha='center', va='center', fontsize=20, fontweight='bold')
-    ax.text(x, y-0.6, sublabel, ha='center', va='center', fontsize=13, color='#666', fontstyle='italic')
+    ax.text(x, y-0.6, sublabel, ha='center', va='center', fontsize=15, color='#1a1a1a', fontstyle='italic')
 
 # Forward arrows (main causal chain)
 arrow_pairs = [
@@ -69,7 +69,7 @@ for x, y, label, sublabel, color, ec in interventions:
                           edgecolor=ec, linewidth=1.5, linestyle='--')
     ax.add_patch(box)
     ax.text(x, y+0.15, label, ha='center', va='center', fontsize=15, fontweight='bold', color=ec)
-    ax.text(x, y-0.35, sublabel, ha='center', va='center', fontsize=12, color='#666')
+    ax.text(x, y-0.35, sublabel, ha='center', va='center', fontsize=12, color='#1a1a1a')
 
 # Intervention arrows (dashed, pointing up)
 for x in [9.2, 5.7, 2.2]:
@@ -77,13 +77,10 @@ for x in [9.2, 5.7, 2.2]:
                 arrowprops=dict(arrowstyle='->', color='#4CAF50', lw=2.0,
                               linestyle='--', mutation_scale=14))
 
-# Equation box
-ax.text(7.6, 0.55, '$d[\\mathrm{ROS}]/dt = \\alpha \\cdot \\Psi_f(\\hat{G}_\\theta) - \\beta \\cdot \\mathrm{Clearance}(\\theta_{\\mathrm{body}})$',
-        ha='center', va='center', fontsize=18,
-        bbox=dict(boxstyle='round,pad=0.4', facecolor='white', edgecolor='#333', linewidth=1.5))
+# (bottom equation box removed per reviewer: disconnected from the flow; Eq. 9 appears in text)
 
 plt.subplots_adjust(left=0.04, right=0.99, top=0.9, bottom=0.08)
-plt.savefig('/Users/zhangyuxin/.openclaw/workspace/SRT/papers/ontological_friction/figures/fig5_ros_dag.png',
+plt.savefig('fig3_ros_coupling.png',
             dpi=300, bbox_inches='tight', pad_inches=0.16, facecolor='white')
 plt.close()
 print("Figure 5 saved.")

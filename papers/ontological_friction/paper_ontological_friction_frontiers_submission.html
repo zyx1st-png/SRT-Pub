@@ -83,72 +83,96 @@
 id="a-translational-cross-modal-control-cost-framework-for-executive-breakdown">A
 Translational Cross-Modal Control-Cost Framework for Executive
 Breakdown</h1>
-<p>Yuxin Zhang<br />
-Independent Researcher</p>
+<p>Yuxin Zhang<sup>1</sup>*</p>
+<p><sup>1</sup> Independent Researcher, Kaili, Guizhou, China</p>
+<p>* <strong>Correspondence:</strong> Yuxin Zhang, zyx1st@gmail.com</p>
+<p><strong>ORCID:</strong> Yuxin Zhang,
+https://orcid.org/0009-0007-6659-8518</p>
 <p><strong>Article type</strong>: Hypothesis and Theory <strong>Target
 journal</strong>: Frontiers in Neuroscience <strong>Running
 title</strong>: Control-Cost in Executive Breakdown <strong>Word
 count</strong>: ~10,000 words (main text, excluding abstract, figures,
-tables, captions, and references) <strong>Abstract</strong>: 185 words
+tables, captions, and references) <strong>Abstract</strong>: 208 words
 <strong>Figures/Tables</strong>: 5 figures; 5 tables
 <strong>Keywords</strong>: executive friction, executive dysfunction,
 translational neuroscience, task-switching, psychophysiology, biomarker,
 clinical neuroscience, computational psychiatry</p>
 <hr />
 <h2 id="abstract">Abstract</h2>
-<p>Executive breakdown often reflects a dissociation between intact
-action knowledge and failed action implementation across neurological
-and neuropsychiatric conditions. We propose a latent cross-modal
-control-cost factor, termed <em>executive friction</em> (<span
-class="math inline">\(\Psi_f\)</span>), to formalize this gap. The
-framework is specified at two levels: an empirical latent variable and a
-mechanistic family of control-cost models (integrated control effort and
-information-geometric deviation under baseline drift). Distress is
-modeled as a hazard-family function of smoothed friction change under
-appraisal constraints, and executive collapse is formulated as a
-bandwidth-saturation event when friction and noise costs exceed
-available selection power. The primary contribution is translational: a
-low-cost validation chain combining behavioral control tasks, adjusted
-modal-language scoring, and autonomic physiology (HRV/SCR), with neural
-and biochemical markers positioned as optional adjudication layers.
-Major depressive disorder, obsessive-compulsive disorder, and
-Parkinson’s disease are treated as boundary use cases for testing
-disorder-specific predictions rather than as replacements for existing
-nosology. We present five preregistration-ready hypotheses, explicit
-falsification thresholds, and a critical-load parameter for the
-knowing-doing transition. No new data are reported. The manuscript
-offers a theory-to-experiment framework for translational neuroscience
-studies of executive dysfunction and biomarker development.</p>
+<p>Across neurological and neuropsychiatric conditions, patients often
+know what they should do yet cannot bring themselves to do it. This
+dissociation between intact knowledge and failed implementation, which
+we call the knowing-doing gap, is clinically important but lacks a
+unified, measurable account. We propose that converting knowledge into
+action carries a cost, termed <em>executive friction</em> (<span
+class="math inline">\(\Psi_f\)</span>), and that behavior breaks down
+when this cost exceeds the control resources available to pay it. The
+proposal is specified at two levels: a measurable factor estimated from
+observable indicators, and a family of candidate mechanisms in which
+friction is read either as accumulated control effort or as departure
+from a habitual default. We model distress as depending on how rapidly
+friction is rising and on how the person appraises the situation, and we
+treat executive collapse as the point at which control demands outstrip
+available capacity. The central contribution is practical: a low-cost
+testing chain combining behavioral control tasks, shifts in the language
+of ability (for example, “can” versus “cannot”), and autonomic
+physiology (heart-rate variability and skin conductance), with neural
+and biochemical measures kept as optional add-ons. Depression,
+obsessive-compulsive disorder, and Parkinson’s disease serve as
+contrasting test cases with distinct predicted signatures rather than as
+replacements for existing diagnostic categories. We present five
+preregistration-ready hypotheses with explicit rejection criteria. No
+new data are reported.</p>
 <hr />
 <h2 id="introduction">1. Introduction</h2>
 <h3 id="the-knowingdoing-gap">1.1 The Knowing–Doing Gap</h3>
 <p>Consider three clinical scenarios. A patient with Parkinson’s disease
 can describe, in precise detail, the sequence of movements required to
-stand from a chair — yet remains seated, unable to initiate the motor
+stand from a chair, yet remains seated, unable to initiate the motor
 program. A patient with obsessive-compulsive disorder recognizes that
-her hand-washing compulsion is irrational and disproportionate — yet
+her hand-washing compulsion is irrational and disproportionate, yet
 cannot resist executing it. A patient with major depressive disorder
-articulates what steps would improve his situation — exercise, social
-contact, medication adherence — yet lies immobile, unable to translate
+articulates what steps would improve his situation (exercise, social
+contact, medication adherence), yet lies immobile, unable to translate
 knowledge into action.</p>
 <p>These scenarios share a striking structural similarity: the agent’s
 representational model of the world and of appropriate action remains
 intact, while the capacity to <em>implement</em> that knowledge is
-compromised. This dissociation between knowing and doing — what we term
-the <em>knowing–doing gap</em> — is among the most clinically
+compromised. We refer to this dissociation between knowing and doing as
+the <em>knowing–doing gap</em>. It is among the most clinically
 significant yet theoretically underspecified phenomena in cognitive
-neuroscience. While executive function research has catalogued the
-behavioral signatures of this gap extensively (Miyake et al., 2000;
-Diamond, 2013), and neuroimaging studies have identified associated
-neural substrates (Stuss and Alexander, 2007; Miller and Cohen, 2001),
-no existing framework provides a <em>unified quantitative account</em>
-that explains why knowledge and action can decouple, predicts when they
-will, and specifies how to measure the decoupling across behavioral,
-physiological, neural, and linguistic domains.</p>
+neuroscience. Executive function research has catalogued the behavioral
+signatures of the gap extensively (Miyake et al., 2000; Diamond, 2013;
+Friedman and Robbins, 2022), and neuroimaging studies have identified
+associated neural substrates (Stuss and Alexander, 2007; Miller and
+Cohen, 2001). Yet no existing framework provides a <em>unified
+quantitative account</em> that explains why knowledge and action can
+decouple, predicts when they will, and specifies how to measure the
+decoupling across behavioral, physiological, neural, and linguistic
+domains.</p>
+<p>The gap itself is not a new observation. Social and health psychology
+have long studied the “intention–behavior gap,” and the
+implementation-intention literature shows that specifying when, where,
+and how one will act measurably improves the translation of goals into
+behavior, with identifiable physiological correlates (Gollwitzer, 1999;
+Wieber et al., 2015). In clinical science, the same decoupling recurs
+across disorders: goal-directed control gives way to habit in
+obsessive-compulsive disorder (Gillan et al., 2016), initiation fails
+despite preserved motor knowledge in Parkinson’s disease, and intended
+action stalls in major depressive disorder, motivating transdiagnostic
+accounts of executive dysfunction (Snyder et al., 2015; McTeague et al.,
+2017). What remains underrepresented is not the phenomenon but a single,
+formally defined, measurable <em>quantity</em> that ties these scattered
+descriptions together, explains the gap as one specific failure mode,
+and yields disorder-differentiating predictions. That quantity is what
+the present framework proposes.</p>
 <h3 id="limitations-of-current-frameworks">1.2 Limitations of Current
 Frameworks</h3>
-<p>Several theoretical frameworks address aspects of the knowing–doing
-gap, but each captures only a partial picture.</p>
+<p>Several theoretical frameworks each name a real piece of the
+knowing–doing gap, but none supplies the missing element: a single cost
+quantity that is measurable across behavior, physiology, and language at
+once. We review five, noting for each what it captures and what it
+leaves out.</p>
 <p><strong>Cognitive load theory</strong> (Sweller, 1988; Sweller et
 al., 2019) quantifies the demands placed on working memory during
 learning and task execution. While influential in educational
@@ -159,14 +183,14 @@ against competing defaults.</p>
 <p><strong>The Free Energy Principle</strong> (FEP; Friston, 2010)
 provides an elegant variational framework in which organisms minimize
 prediction error. The complexity term in variational free energy (<span
-class="math inline">\(D_{KL}[Q \| P]\)</span>) captures some of what we
-mean by “friction” — the cost of maintaining a model that deviates from
+class="math inline">\(D_{KL}[Q \| P]\)</span>) captures part of what we
+mean by friction: the cost of maintaining a model that deviates from
 priors. However, FEP treats this cost as something to be
 <em>minimized</em>, and does not provide a framework for situations in
-which sustained high deviation cost is adaptive (e.g., creative
-problem-solving, ethical resistance to default heuristics) or for the
-<em>failure mode</em> in which deviation cost overwhelms the system’s
-capacity.</p>
+which sustained high deviation cost is adaptive (creative
+problem-solving, or ethical resistance to default heuristics), or for
+the <em>failure mode</em> in which deviation cost overwhelms the
+system’s capacity.</p>
 <p><strong>Integrated Information Theory</strong> (IIT; Tononi et al.,
 2016) offers a scalar measure of consciousness (<span
 class="math inline">\(\Phi\)</span>) based on the irreducibility of
@@ -187,19 +211,39 @@ concerns (Hagger et al., 2016; Vadillo et al., 2016). This motivates
 treating metabolic readouts as testable correlates rather than fixed
 assumptions.</p>
 <p>The critical gap is this: none of these frameworks provides a
-<em>single formally defined quantity</em> that (a) is grounded in both
-information-theoretic and thermodynamic principles, (b) generates
-measurable predictions across behavioral, physiological, neural, and
-linguistic domains simultaneously, (c) explains the knowing–doing gap as
-a specific failure mode, and (d) produces disorder-specific clinical
-predictions.</p>
+<em>single formally defined quantity</em> that (a) is grounded in
+information-theoretic and energetically interpretable resource-budget
+terms, (b) generates measurable predictions across behavioral,
+physiological, neural, and linguistic domains simultaneously, (c)
+explains the knowing–doing gap as a specific failure mode, and (d)
+produces disorder-specific clinical predictions. The construct proposed
+below is designed to fill exactly this gap. It connects aspects of, and
+extends selected cost-related aspects of, the frameworks above rather
+than competing with or replacing them: it relates to cognitive load on
+the behavioral side, to allostatic load on the physiological side, and
+to variational complexity on the information-theoretic side, while
+adding the cross-modal and dissociation predictions that none of them
+makes (developed in Section 6.2).</p>
 <h3 id="contribution-and-scope">1.3 Contribution and Scope</h3>
-<p>This manuscript is positioned as a translational neuroscience
-hypothesis paper on executive breakdown under resource-bounded action
-selection. We introduce <em>executive friction</em> (<span
-class="math inline">\(\Psi_f\)</span>) as a latent cross-modal
-control-cost factor and evaluate it as a candidate bridge between
-computational theory, clinically accessible biomarkers, and
+<p>In plain terms, this work proposes a single idea and then builds it
+out. The idea is that turning knowledge into action has a cost, which we
+call <em>executive friction</em>, and that when this cost grows too
+high, three things follow. Behavior can break down abruptly rather than
+gradually. The language people use about action can shift in a
+measurable way, tilting from “can” toward “cannot.” And behavioral,
+physiological, and linguistic measures should move together, because
+they reflect one underlying cost rather than three unrelated problems.
+The framework is deliberately designed to be tested with low-cost,
+widely available methods, using depression, obsessive-compulsive
+disorder, and Parkinson’s disease as contrasting clinical test cases.
+Everything that follows, including the formal notation, is in service of
+making that one idea measurable and falsifiable.</p>
+<p>More formally, this manuscript is positioned as a translational
+neuroscience hypothesis paper on executive breakdown under
+resource-bounded action selection. We introduce <em>executive
+friction</em> (<span class="math inline">\(\Psi_f\)</span>) as a latent
+cross-modal control-cost factor and evaluate it as a candidate bridge
+between computational theory, clinically accessible biomarkers, and
 disorder-differentiating predictions. The <span
 class="math inline">\(\Psi_f\)</span> framework makes three specific
 predictions that are jointly stronger than prior accounts: a nonlinear
@@ -223,7 +267,7 @@ philosophical system.</p>
 empirical translation. No new data are reported. Consistent with the
 <em>Frontiers in Neuroscience</em> Hypothesis and Theory format, the
 paper advances a testable model within a specific area of investigation
-— the knowing-doing gap in executive dysfunction — and provides
+(the knowing-doing gap in executive dysfunction), and provides
 measurement strategy, falsification rules, and clinically tractable
 protocols for future adjudication.</p>
 <h3 id="standard-control-terms-used-in-this-manuscript">1.4 Standard
@@ -294,8 +338,18 @@ function.</p>
 <h3 id="executive-friction-psi_f-formal-definition">2.2 Executive
 Friction (<span class="math inline">\(\Psi_f\)</span>): Formal
 Definition</h3>
-<p>We define executive friction through a two-level specification
-designed for direct estimation and mechanistic testing. The term
+<p>We define executive friction through a two-level specification, and
+the distinction between the two levels is important, so we state it up
+front. <strong>Definition 1A specifies how <span
+class="math inline">\(\Psi_f\)</span> is estimated from observable
+data</strong>: it is the operational, measurement-level definition, and
+it is what the empirical program actually fits. <strong>Definition 1B
+offers candidate mechanistic interpretations</strong> of what could
+generate that estimated quantity: these are competing theoretical
+models, tested against each other, and none of them is required in order
+to estimate <span class="math inline">\(\Psi_f\)</span> in the first
+place. A reader who accepts only Definition 1A can still use the entire
+measurement and clinical program that follows. Throughout, the term
 “executive friction” denotes the cross-layer maintenance and switching
 cost that an agent incurs when sustaining or reconfiguring an active
 control state against baseline defaults.</p>
@@ -303,15 +357,20 @@ control state against baseline defaults.</p>
 At the measurement level, <span class="math inline">\(\Psi_f\)</span> is
 a latent factor jointly loaded by behavioral, linguistic, and
 physiological indicators (with neural and biochemical indicators used as
-expansion modalities):</p>
+expansion modalities). This is the definition the analysis estimates
+directly:</p>
 <p><span class="math display">\[y_k = \lambda_k \Psi_f +
 \varepsilon_k,\quad k=1,\dots,K \qquad \text{(3a)}\]</span></p>
 <p>where <span class="math inline">\(y_k\)</span> are standardized
 observed indicators, <span class="math inline">\(\lambda_k\)</span> are
 factor loadings, and <span class="math inline">\(\varepsilon_k\)</span>
-are residuals. This is the estimand used in SEM/CFA analyses.</p>
-<p><strong>Definition 1B (Level-1 mechanistic control cost).</strong> At
-the mechanism level, let state dynamics be</p>
+are residuals. This is the estimand used in structural equation modeling
+(SEM) and confirmatory factor analysis (CFA).</p>
+<p><strong>Definition 1B (Level-1 mechanistic control cost).</strong>
+Definition 1B proposes what could physically generate the latent factor
+of 1A. We give two candidate mechanisms and treat them as rival models
+to be compared on data, not as established facts. Let the state dynamics
+be</p>
 <p><span class="math display">\[
 \begin{aligned}
 \dot{x}(t)&amp;=f_\theta(x,t)+B_\theta(x,t)\,u(t)+\xi(t),\\
@@ -319,19 +378,41 @@ the mechanism level, let state dynamics be</p>
 \end{aligned}
 \qquad \text{(3b)}
 \]</span></p>
-<p>where <span class="math inline">\(u(t)\)</span> is control input and
-<span class="math inline">\(\dot{x}_0\)</span> is the no-control
-(baseline drift) trajectory. Executive friction is instantiated as
-integrated control effort:</p>
+<p>where <span class="math inline">\(x(t)\)</span> is the system state,
+<span class="math inline">\(f_\theta\)</span> is the uncontrolled
+(drift) dynamics, <span class="math inline">\(u(t)\)</span> is the
+control input, <span class="math inline">\(B_\theta\)</span> maps
+control input onto the state, and <span
+class="math inline">\(\xi(t)\)</span> is a zero-mean stochastic noise
+term representing intrinsic neural and measurement variability (e.g., a
+Wiener increment). Setting <span class="math inline">\(u(t)=0\)</span>
+gives <span class="math inline">\(\dot{x}_0\)</span>, the no-control
+<em>baseline drift</em> trajectory, i.e., what the system would do if no
+control effort were spent.</p>
+<p>The <em>first</em> candidate reads friction as <strong>accumulated
+control effort</strong>: the running total of how hard the controller
+has to push to keep the state on course rather than letting it
+drift,</p>
 <p><span class="math display">\[\Psi_f^{\text{ctrl}}(T)=\int_0^T
 u(t)^\top R\,u(t)\,dt,\quad R\succ 0 \tag{3c}\]</span></p>
-<p>with an information-geometric comparator model:</p>
+<p>where <span class="math inline">\(R\succ 0\)</span> is a
+positive-definite cost matrix weighting the effort. The <em>second</em>
+candidate reads friction instead as <strong>departure from the habitual
+default policy</strong>, measured as the information-geometric distance
+between the current control distribution <span
+class="math inline">\(q_t\)</span> and the baseline-policy distribution
+<span class="math inline">\(q_t^0\)</span>, accumulated over time,</p>
 <p><span class="math display">\[\Psi_f^{\text{info}}(T)=\int_0^T
 D_{KL}\!\left(q_t\parallel q_t^0\right)dt \qquad
 \text{(3d)}\]</span></p>
-<p>where <span class="math inline">\(q_t^0\)</span> denotes the
-baseline-policy distribution. Under regularity conditions (e.g., locally
-smooth trajectories and second-order KL expansion in exponential-family
+<p>where <span class="math inline">\(D_{KL}\)</span> is the
+Kullback–Leibler divergence and <span
+class="math inline">\(q_t^0\)</span> denotes the baseline-policy
+distribution. Intuitively, (3c) charges for <em>how much force</em> the
+controller applies, whereas (3d) charges for <em>how far</em> the chosen
+policy strays from habit; the two can diverge, which is what makes them
+empirically separable. Under regularity conditions (e.g., locally smooth
+trajectories and second-order KL expansion in exponential-family
 neighborhoods), the KL form admits a Fisher-metric approximation:</p>
 <p><span class="math display">\[\Psi_f^{\text{KL-2nd}}(T)\approx
 \int_0^T \dot{\vartheta}(t)^\top g_F(\vartheta)\dot{\vartheta}(t)\,dt
@@ -347,12 +428,22 @@ manipulations (e.g., switch/inhibition load), whereas Equations
 (3d)/(3d’) are treated as distributional-deviation models for
 belief-drift or habit-override regimes. In empirical programs, matched
 hierarchical models will be fit to the same outcomes and compared with
-out-of-sample criteria (LOO/WAIC, with Bayes factors where model
-regularity allows). Pre-registered interpretation is: if the 3c-family
-wins, friction is operationally summarized as control effort; if 3d/3d’
-wins, friction is better summarized as information-geometric deviation;
-if no mechanism family dominates, Equation (3a) remains the estimand and
-mechanism equations are treated as context-specific modules.</p>
+out-of-sample criteria (leave-one-out cross-validation, LOO, and the
+Widely Applicable Information Criterion, WAIC, with Bayes factors where
+model regularity allows). Pre-registered interpretation is: if the
+3c-family wins, friction is operationally summarized as control effort;
+if 3d/3d’ wins, friction is better summarized as information-geometric
+deviation; if no mechanism family dominates, Equation (3a) remains the
+estimand and mechanism equations are treated as context-specific
+modules.</p>
+<p>Definitions 1A and 1B specify executive friction itself. We now turn
+to the <em>distress</em> that accompanies it, which is a separate
+quantity: an agent can carry high friction quietly, and what hurts is
+friction that is rising quickly and is appraised as threatening.
+Definition 2 captures this. We write it as a “hazard function,” meaning
+the momentary risk that distress crosses into a felt state, and this
+risk rises with the rate of change of friction and with the person’s
+appraisal of the situation.</p>
 <p><strong>Definition 2 (Distress Hazard Family).</strong> Subjective
 distress is modeled as a hazard-family function of <em>smoothed</em>
 friction change and appraisal state:</p>
@@ -375,11 +466,17 @@ treated as a sensitivity parameter (default grid: 10 s, 30 s, 60 s, or
 trial-window analogs), and Appraisal is measured block-wise on a 0-100
 challenge/threat scale immediately after each block to reduce
 retrospective distortion.</p>
+<p>Having defined friction (Definition 1) and the distress that tracks
+it (Definition 2), we now state the budget that decides whether the
+system holds together at all. The intuition is an accounting one: an
+agent has a finite control budget, friction and noise draw on it, and
+whatever remains determines whether the current task-state can be kept
+orderly or begins to fall apart.</p>
 <p><strong>Definition 3 (Selection Budget Inequality;
 Thermodynamic-Inspired).</strong> The rate of change of macroscopic
-task-state order <span class="math inline">\(q(x_{\text{act}})\)</span>
-— operationalizable as mutual information density, topological
-invariants, or compression ratio — is bounded by:</p>
+task-state order <span class="math inline">\(q(x_{\text{act}})\)</span>,
+operationalizable as mutual information density, topological invariants,
+or compression ratio, is bounded by:</p>
 <p><span class="math display">\[\frac{dq}{dt} \leq \alpha \cdot
 P_{\text{sel}}(t) - \beta \cdot \Psi_f(x_{\text{act}};\theta) - \gamma
 \cdot S_{\text{noise}} \tag{5}\]</span></p>
@@ -410,7 +507,7 @@ hypotheses directly test these slow dynamics (which operate over weeks
 to months rather than within-session timescales), the formal equation is
 presented in Appendix B. For present purposes, the key implication is
 that therapeutic interventions can be modeled as modifying either the
-learning rate, the friction landscape, or the homeostatic set point —
+learning rate, the friction landscape, or the homeostatic set point,
 distinctions that become empirically testable only in longitudinal
 treatment designs beyond the scope of the current validation
 roadmap.</p>
@@ -418,9 +515,9 @@ roadmap.</p>
 Knowing–Doing Gap as Bandwidth Saturation</h3>
 <p>The knowing–doing gap emerges naturally from the selection-budget
 inequality (Equation 5). Consider an agent whose slow constraints and
-learned model correctly specify the appropriate action — the patient who
-knows she should exercise, the surgeon who knows the next step of the
-procedure. The knowledge representation is intact.</p>
+learned model correctly specify the appropriate action, such as the
+patient who knows she should exercise or the surgeon who knows the next
+step of the procedure. The knowledge representation is intact.</p>
 <p>Throughout this manuscript, <strong>selection power</strong> (<span
 class="math inline">\(P_{\text{sel}}\)</span>) is the primary term;
 “bandwidth” is used only as an informal synonym for residual selection
@@ -430,8 +527,8 @@ into an active action state through a resource-bounded selection or
 gating process. This conversion consumes selection power <span
 class="math inline">\(P_{\text{sel}}\)</span> and incurs executive
 friction <span class="math inline">\(\Psi_f\)</span>. When the agent is
-already operating under high baseline friction — due to chronic stress,
-neurodegeneration, or pathological parameter configurations — the
+already operating under high baseline friction (due to chronic stress,
+neurodegeneration, or pathological parameter configurations), the
 remaining selection power may be insufficient to execute the known
 action.</p>
 <p>Formally, the agent enters the knowing–doing gap when:</p>
@@ -473,15 +570,22 @@ inference.</p>
 <h3
 id="relationship-to-predictive-processing-and-free-energy-minimization">2.4
 Relationship to Predictive Processing and Free Energy Minimization</h3>
-<p><span class="math inline">\(\Psi_f\)</span> bears a formal
-relationship to the complexity term in variational free energy. In the
-FEP framework, the variational free energy <span
+<p>Why relate the proposal to the Free Energy Principle at all? Two
+reasons. First, FEP is currently the most influential formal account of
+neural cost, so showing that executive friction connects to it
+demonstrates that <span class="math inline">\(\Psi_f\)</span> is not an
+ad hoc quantity but a recognizable generalization of an established one.
+Second, the connection sharpens exactly where our claim departs from
+FEP, and that departure is the clinically load-bearing part of the
+argument. Concretely, <span class="math inline">\(\Psi_f\)</span> bears
+a formal relationship to the complexity term in variational free energy.
+In the FEP framework, the variational free energy <span
 class="math inline">\(F\)</span> decomposes as:</p>
 <p><span class="math display">\[F = \underbrace{D_{KL}[Q(\theta) \|
 P(\theta)]}_{\text{Complexity}} - \underbrace{\mathbb{E}_{Q}[\ln
 P(\text{data} | \theta)]}_{\text{Accuracy}} \tag{8}\]</span></p>
 <p>The complexity term <span class="math inline">\(D_{KL}[Q \|
-P]\)</span> penalizes posteriors that deviate from priors — formally
+P]\)</span> penalizes posteriors that deviate from priors, formally
 analogous to the information-geometric friction form in Equation (3d).
 In this reading, <span class="math inline">\(\Psi_f\)</span> generalizes
 complexity cost by (a) accumulating over time, (b) applying to executed
@@ -492,14 +596,14 @@ FEP is in the normative implication. FEP implies that systems
 <em>should</em> minimize free energy and, by extension, minimize the
 complexity cost. The present framework allows that some states
 <em>require</em> sustained high <span
-class="math inline">\(\Psi_f\)</span> — creative insight that resists
-premature closure, ethical choices that resist default heuristics, grief
-that maintains connection to the departed. In these cases, high <span
-class="math inline">\(\Psi_f\)</span> is not pathological but
+class="math inline">\(\Psi_f\)</span>: creative insight that resists
+premature closure, ethical choices that resist default heuristics, or
+grief that maintains connection to the departed. In these cases, high
+<span class="math inline">\(\Psi_f\)</span> is not pathological but
 constitutive of the valued state. Pathology arises not from high <span
 class="math inline">\(\Psi_f\)</span> per se, but from
-<em>unsustainable</em> <span class="math inline">\(\Psi_f\)</span> —
-when the cost chronically exceeds the agent’s selection power
+<em>unsustainable</em> <span class="math inline">\(\Psi_f\)</span>, that
+is, when the cost chronically exceeds the agent’s selection power
 budget.</p>
 <p>This distinction has immediate clinical relevance: the therapeutic
 goal is not to eliminate <span class="math inline">\(\Psi_f\)</span>
@@ -539,9 +643,21 @@ class="math display">\[q^*(t)=\frac{1}{2}z\!\left(-H_{\text{error},w}(t)\right)+
 <p>where <span class="math inline">\(H_{\text{error},w}\)</span> is
 windowed response-error entropy and <span
 class="math inline">\(CV_{\text{RT},w}\)</span> is windowed
-reaction-time coefficient of variation. Higher <span
-class="math inline">\(q^*\)</span> indicates greater local task-state
-stability.</p>
+reaction-time coefficient of variation. Response-error entropy is
+computed as follows: within a sliding window of <span
+class="math inline">\(w\)</span> consecutive trials, each response is
+assigned to an outcome category (for example correct, commission error,
+omission error), the empirical probabilities <span
+class="math inline">\(p_c\)</span> of these categories are estimated,
+and their Shannon entropy <span
+class="math inline">\(H_{\text{error},w}=-\sum_c p_c \log p_c\)</span>
+is taken. Low entropy means responding is consistent and predictable (a
+stable control state); high entropy means outcomes are scattered across
+categories (a disorganized one). Because both terms in <span
+class="math inline">\(q^*\)</span> are sign-flipped and z-scored, higher
+<span class="math inline">\(q^*\)</span> indicates greater local
+task-state stability, i.e., both more predictable errors and less
+variable reaction times.</p>
 <p>Interpretively, <span class="math inline">\(q^*\)</span> captures a
 minimal “order/stability” surrogate: stable control states should show
 lower local error unpredictability and lower RT dispersion. To separate
@@ -564,9 +680,17 @@ class="math display">\[\rho^{*}(t)=z\!\left(\Psi_f^{\text{baseline,
 latent}}(t)\right)-z\!\left(P_{\text{sel}}^{\text{proxy}}(t)\right)
 \tag{7c}\]</span></p>
 <p>which avoids instability of ratio estimators in low-denominator
-regions. Inference targets are therefore statistical critical points
-(<span class="math inline">\(\rho_c\)</span> or <span
-class="math inline">\(\rho_c^*\)</span>) rather than claims of a
+regions. Both forms express the same thing: how close friction has come
+to exhausting control capacity. In the ratio form (Eq. 7a) this is
+friction divided by capacity; in the difference form (Eq. 7c) it is
+standardized friction minus standardized capacity. The <em>critical
+point</em> <span class="math inline">\(\rho_c\)</span> (or <span
+class="math inline">\(\rho_c^*\)</span>) is the value of this quantity
+at which the system’s behavior changes character, marking the boundary
+between the regime where added demand raises switch cost gently and
+roughly linearly, and the regime where the residual budget is nearly
+spent and small additional demands trigger steep collapse. It is a
+statistical changepoint estimated from data, not a claim about a
 universal thermodynamic constant.</p>
 <p><em>Insert Figure 1 near here.</em></p>
 <hr />
@@ -602,8 +726,8 @@ proxies:</p>
 the active control state to serve a new task rule, the reconfiguration
 incurs executive friction proportional to the distance between the
 current and target control configurations. The classical task-switching
-cost — the increase in reaction time and error rate on switch trials
-relative to repeat trials (Monsell, 2003; Kiesel et al., 2010) —
+cost, namely the increase in reaction time and error rate on switch
+trials relative to repeat trials (Monsell, 2003; Kiesel et al., 2010),
 directly indexes this reconfiguration friction. Computational accounts
 further decompose this cost into reconfiguration and
 interference-control components (Yeung and Monsell, 2003; Brown et al.,
@@ -613,7 +737,7 @@ class="math inline">\(\Psi_f\)</span> across individuals and within
 individuals across conditions.</p>
 <p><strong>Perseverative errors.</strong> In the Wisconsin Card Sorting
 Test (WCST; Berg, 1948) and related paradigms, perseverative errors
-reflect the agent’s failure to abandon a high-friction configuration —
+reflect the agent’s failure to abandon a high-friction configuration:
 the previous sorting rule has become deeply anchored (high <span
 class="math inline">\(\Psi_f^{\text{switch}}\)</span>) and the system
 cannot pay the switching cost. The number of perseverative errors
@@ -626,8 +750,8 @@ of the parameter space: <span class="math inline">\(\eta \propto
 Stroop interference ratio (incongruent RT / congruent RT) provides a
 normalized behavioral index of the friction differential between default
 and non-default selections.</p>
-<p><strong>Temporal discounting.</strong> Steep temporal discounting —
-the preference for smaller-sooner over larger-later rewards — reflects
+<p><strong>Temporal discounting.</strong> Steep temporal discounting
+(the preference for smaller-sooner over larger-later rewards) reflects
 the high friction cost of maintaining a non-default, future-oriented
 active control state (Bickel et al., 2012). The temporal discounting
 rate <span class="math inline">\(k\)</span> in the hyperbolic model
@@ -645,32 +769,31 @@ interference ratio, and (d) temporal discounting rate.</p>
 Proxies (Core and Expansion)</h3>
 <p><strong>Heart rate variability (HRV) recovery.</strong>
 Vagal-mediated HRV reflects the capacity of the autonomic nervous system
-to regulate arousal — a physiological substrate of selection power <span
+to regulate arousal, a physiological substrate of selection power <span
 class="math inline">\(P_{\text{sel}}\)</span>. The neurovisceral
 integration model (Thayer and Lane, 2009) establishes that high resting
 HRV indexes flexible autonomic control, while reduced HRV indexes
-rigidity. We predict that <em>HRV recovery slope</em> — the rate at
-which HRV returns to baseline following a stressor — indexes the
-system’s capacity to dissipate <span
-class="math inline">\(\Psi_f\)</span>. Slow recovery indicates sustained
-high friction; rapid recovery indicates efficient friction
-resolution.</p>
+rigidity. We predict that <em>HRV recovery slope</em> (the rate at which
+HRV returns to baseline following a stressor) indexes the system’s
+capacity to dissipate <span class="math inline">\(\Psi_f\)</span>. Slow
+recovery indicates sustained high friction; rapid recovery indicates
+efficient friction resolution.</p>
 <p><strong>Cortisol circadian rhythm.</strong> The diurnal cortisol
 curve (cortisol awakening response and diurnal slope) reflects the
 integrity of the hypothalamic-pituitary-adrenal axis. Chronic high <span
 class="math inline">\(\Psi_f\)</span> is predicted to flatten the
-cortisol curve — reducing the morning peak and elevating the evening
-nadir — reflecting exhaustion of the neuroendocrine substrate that
+cortisol curve (reducing the morning peak and elevating the evening
+nadir), reflecting exhaustion of the neuroendocrine substrate that
 supports selection power (Adam et al., 2017). We propose the cortisol
 awakening response (CAR) magnitude and the diurnal cortisol slope (DCS)
 as complementary physiological proxies.</p>
 <p><strong>Skin conductance response (SCR).</strong> Phasic SCR
 amplitude during decision-making tasks reflects momentary spikes in
-autonomic arousal associated with conflict and uncertainty — acute
-increases in <span class="math inline">\(d\Psi_f/dt\)</span>. SCR peak
-amplitude during high-conflict choices (e.g., the Iowa Gambling Task;
-Bechara et al., 1994) provides a real-time physiological index of the
-hazard function (Equation 4). Importantly, SCR is treated here as an
+autonomic arousal associated with conflict and uncertainty, that is,
+acute increases in <span class="math inline">\(d\Psi_f/dt\)</span>. SCR
+peak amplitude during high-conflict choices (e.g., the Iowa Gambling
+Task; Bechara et al., 1994) provides a real-time physiological index of
+the hazard function (Equation 4). Importantly, SCR is treated here as an
 <em>acute-state</em> readout, most appropriate for within-task or
 cue-locked friction peaks. It is not assumed to track slow, chronic
 friction accumulation on its own; for chronic-load interpretations (for
@@ -699,10 +822,11 @@ superoxide production). In empirical use, <span
 class="math inline">\(\alpha\)</span> is a regression coefficient
 estimated from data, not a fixed biophysical constant; future
 mechanistic elaboration may replace the linear term with a saturating or
-threshold function. Measurable ROS biomarkers include GSH/GSSG,
-malondialdehyde (MDA), 8-OHdG, and superoxide dismutase (SOD) activity.
-This is deliberately positioned as a phase-3 extension after core
-low-cost validation succeeds.</p>
+threshold function. Measurable ROS biomarkers include the
+reduced-to-oxidized glutathione ratio (GSH/GSSG), malondialdehyde (MDA),
+8-hydroxy-2’-deoxyguanosine (8-OHdG), and superoxide dismutase (SOD)
+activity. This is deliberately positioned as a phase-3 extension after
+core low-cost validation succeeds.</p>
 <p><strong>Falsification condition for ROS coupling.</strong> If
 experimentally induced high-<span class="math inline">\(\Psi_f\)</span>
 tasks (e.g., sustained task-switching under time pressure) do not
@@ -728,16 +852,17 @@ class="math inline">\(\Psi_f\)</span> load and correlate negatively with
 behavioral <span class="math inline">\(\Psi_f\)</span> proxies.</p>
 <p><strong>Fisher information metric.</strong> The Fisher information
 matrix <span class="math inline">\(g_F\)</span> captures the curvature
-of the neural state-space manifold — how sharply the system’s responses
-change as parameters vary. We propose that the empirical Fisher
-condition number <span class="math inline">\(\log \kappa(g_F)\)</span>,
-the Fisher volume term <span class="math inline">\(\log
-\det(g_F)\)</span>, and the maximum eigenvalue drift <span
+of the neural state-space manifold, that is, how sharply the system’s
+responses change as parameters vary. We propose that the empirical
+Fisher condition number <span class="math inline">\(\log
+\kappa(g_F)\)</span>, the Fisher volume term <span
+class="math inline">\(\log \det(g_F)\)</span>, and the maximum
+eigenvalue drift <span
 class="math inline">\(\lambda_{\max}(g_F)\)</span> serve as neural
 proxies for <span class="math inline">\(\Psi_f\)</span> during state
 transitions (Amari, 2016). Specifically, transitions between cognitive
 states (e.g., task switches) should produce Fisher metric peaks
-<em>preceding</em> behavioral performance degradation — a “structural
+<em>preceding</em> behavioral performance degradation, a “structural
 reconfiguration signal” that indexes friction before it manifests
 behaviorally.</p>
 <p><strong>Theta-gamma coupling in prefrontal cortex.</strong>
@@ -757,9 +882,9 @@ determines which candidate action trajectories are projected into overt
 execution. Gate integrity can be indexed through reinforcement-learning
 model parameters (learning rate, exploration-exploitation balance)
 derived from probabilistic reversal-learning tasks (Frank et al., 2004).
-Degraded gating — as in Parkinson’s disease — should produce
-specifically elevated <span class="math inline">\(\Psi_f\)</span> for
-action initiation while leaving cognitive <span
+Degraded gating (as in Parkinson’s disease) should produce specifically
+elevated <span class="math inline">\(\Psi_f\)</span> for action
+initiation while leaving cognitive <span
 class="math inline">\(\Psi_f\)</span> relatively preserved.</p>
 <h3 id="linguistic-proxy-the-modal-mechanics-probe">3.4 Linguistic
 Proxy: The Modal Mechanics Probe</h3>
@@ -782,10 +907,10 @@ development. We hypothesize that the balance between
 <em>constraint-oriented</em> modals (must, should, have to, cannot) and
 <em>possibility-oriented</em> modals (can, might, could, want to)
 reflects the speaker’s experienced level of executive friction. High
-<span class="math inline">\(\Psi_f\)</span> — experienced as constraint,
-obligation, and restriction — should bias language production toward
-constraint modals. Low <span class="math inline">\(\Psi_f\)</span> —
-experienced as agency, possibility, and flow — should bias toward
+<span class="math inline">\(\Psi_f\)</span> (experienced as constraint,
+obligation, and restriction) should bias language production toward
+constraint modals. Low <span class="math inline">\(\Psi_f\)</span>
+(experienced as agency, possibility, and flow) should bias toward
 possibility modals.</p>
 <p>This directionality is consistent with broader evidence that
 clinically relevant affective-control states leave measurable signatures
@@ -838,9 +963,10 @@ b_0+b_1\text{Education}+b_2\text{PromptType}+b_3\text{Interviewer}\\
 level, interview context, prompt wording, interviewer style, global
 affective-word prevalence, and lexical diversity. Recommended
 reliability checks are split-half agreement, inter-rater agreement for
-modal tagging (if manual annotation is used), and longitudinal ICC in
-repeated sessions. To reduce floor/ceiling instability, analyses should
-exclude samples with fewer than 10 total modal tokens.</p>
+modal tagging (if manual annotation is used), and longitudinal
+intraclass correlation coefficient (ICC) in repeated sessions. To reduce
+floor/ceiling instability, analyses should exclude samples with fewer
+than 10 total modal tokens.</p>
 <p><strong>Cross-language mapping protocol (Mandarin example).</strong>
 Cross-linguistic adaptation should preserve <em>semantic role
 classes</em> (constraint vs possibility), not literal word matching. For
@@ -866,8 +992,8 @@ marker in the core validation chain.</p>
 <h3 id="convergent-validity-architecture">3.5 Convergent Validity
 Architecture</h3>
 <p>The central operationalization claim is that the four proxy classes
-converge on a single latent variable — <span
-class="math inline">\(\Psi_f\)</span> — rather than measuring four
+converge on a single latent variable, <span
+class="math inline">\(\Psi_f\)</span>, rather than measuring four
 independent constructs. This claim is testable through structural
 equation modeling (SEM).</p>
 <p><strong>Proposed model.</strong> The behavioral indicators draw on
@@ -884,8 +1010,9 @@ therefore:</p>
 <li><strong>Within-behavioral CFA</strong>: fit a correlated
 three-factor Miyake-style model (shifting, inhibition, flexibility) and
 test whether a second-order general factor provides acceptable fit
-(<span class="math inline">\(\text{CFI} &gt; 0.90\)</span>, <span
-class="math inline">\(\text{RMSEA} &lt; 0.08\)</span>).</li>
+(comparative fit index, CFI, <span class="math inline">\(&gt;
+0.90\)</span>; root mean square error of approximation, RMSEA, <span
+class="math inline">\(&lt; 0.08\)</span>).</li>
 <li><strong>Cross-modal single-factor CFA</strong> with four indicator
 classes:
 <ul>
@@ -964,7 +1091,7 @@ remains positive over extended periods, leading to progressive
 exhaustion of selection power and oxidative stress accumulation.</p>
 <p><strong>Mechanism.</strong> The depressed agent’s learned model may
 be accurate or even hyperaccurate (“depressive realism”; Alloy and
-Abramson, 1979) — the agent correctly identifies what actions would be
+Abramson, 1979): the agent correctly identifies what actions would be
 beneficial. However, the friction cost of <em>initiating</em> state
 transitions (<span
 class="math inline">\(\Psi_f^{\text{action}}\)</span>) chronically
@@ -1002,11 +1129,17 @@ GSH/GSSG ratio, elevated MDA).</p>
 <h3 id="obsessive-compulsive-disorder-switching-viscosity">4.2
 Obsessive-Compulsive Disorder: Switching Viscosity</h3>
 <p>OCD is modeled as a pathological elevation of <em>switching
-viscosity</em> <span class="math inline">\(\eta\)</span> — the
-resistance of the parameter space to state transitions. The compulsive
-behavior occupies a local minimum in the friction landscape with
-extremely steep walls, making it energetically prohibitive to transition
-to alternative states.</p>
+viscosity</em> <span class="math inline">\(\eta\)</span>, the resistance
+of the parameter space to state transitions. This is not a new parameter
+but the same viscosity introduced behaviorally in Section 3.1, where
+perseverative errors were said to index <span class="math inline">\(\eta
+\propto \partial\Psi_f/\partial\theta\)</span>: the sensitivity of
+friction to changes in the control parameters. High viscosity means that
+moving the parameters even slightly incurs a large friction increment,
+so the system resists transitions. The compulsive behavior occupies a
+local minimum in the friction landscape with extremely steep walls,
+making it energetically prohibitive to transition to alternative
+states.</p>
 <p><strong>Mechanism.</strong> We model OCD switching viscosity using a
 network-modulated gradient flow:</p>
 <p><span class="math display">\[\frac{d\theta_i}{dt}= -\frac{\nabla_i
@@ -1033,12 +1166,23 @@ class="math inline">\(d\Psi_f/dt\)</span> spikes); and (c) the highest
 <span class="math inline">\(\mu_{\text{sem}}\)</span> values, dominated
 by “must/have to” constructions. Expansion prediction is relatively
 preserved PCI (system not globally bandwidth-depleted but dynamically
-stuck). The discriminator from depression is elevated <em>switching</em>
-friction with comparatively preserved maintenance capacity.</p>
+stuck). The proposed discriminator from depression is elevated
+<em>switching</em> friction with comparatively preserved maintenance
+capacity. We stress that this is a claim about relative profile, not a
+clean dividing line: depression also impairs task-switching, so the two
+conditions overlap on any single switching measure. The framework’s
+differentiating bet is therefore on the <em>pattern</em> across proxies
+(in OCD, cue-specific switching cost and the highest constraint-modal
+<span class="math inline">\(\mu_{\text{sem}}\)</span> against
+comparatively preserved maintenance and global PCI; in MDD, broader
+maintenance-side involvement with cortisol flattening and oxidative
+coupling) rather than on switching cost alone. Because this overlap is a
+genuine boundary risk for the account, we return to it explicitly in the
+Limitations (Section 6.3).</p>
 <h3 id="parkinsons-disease-selection-gate-degradation">4.3 Parkinson’s
 Disease: Selection Gate Degradation</h3>
 <p>Parkinson’s disease (PD) is modeled as a degradation of the
-thalamo-basal ganglia selection gate — the circuit that converts motor
+thalamo-basal ganglia selection gate, the circuit that converts motor
 plans stored in slower control variables into initiated actions in the
 active motor state.</p>
 <p><strong>Mechanism.</strong> The dopaminergic signal-to-noise ratio in
@@ -1053,10 +1197,21 @@ class="math display">\[\tilde{\kappa}_{\text{body}}(t)=\frac{\text{GripForce}(t)
 <p>where <span class="math inline">\(F_0\)</span> and <span
 class="math inline">\(\Psi_0\)</span> are participant-specific
 normalization constants (e.g., baseline grip force and baseline
-initiation friction estimate). As dopaminergic availability decreases,
-<span class="math inline">\(\tilde{\kappa}_{\text{body}} \rightarrow
+initiation friction estimate). The anchoring index is not an independent
+construct: its denominator, <span
+class="math inline">\(\Psi_f^{\text{initiation}}\)</span>, is simply the
+action-initiation friction <span
+class="math inline">\(\Psi_f^{\text{action}}\)</span> from the
+knowing–doing inequality (Eq. 7) applied to the motor domain, and the
+ratio expresses how much realized bodily output (grip force) a unit of
+initiation friction actually yields. As dopaminergic availability
+decreases, initiation friction rises, and <span
+class="math inline">\(\tilde{\kappa}_{\text{body}} \rightarrow
 0\)</span>: the agent can generate a motor plan but fails to anchor
-execution in embodied output.</p>
+execution in embodied output. This is the motor-domain instance of the
+general knowing–doing gap, where “knowing” is the intact motor plan and
+“can’t do” is the failure to pay <span
+class="math inline">\(\Psi_f^{\text{action}}\)</span>.</p>
 <p><strong>Predicted friction signature.</strong> PD is characterized
 by: (a) elevated task-switching cost for motor tasks with relatively
 preserved cognitive switching (early stages); (b) elevated SCR during
@@ -1130,8 +1285,8 @@ the <span class="math inline">\(\Psi_f\)</span> framework. Each
 hypothesis specifies the prediction, the falsification criterion, the
 required sample size, and the core measurement protocol. We emphasize
 that these hypotheses are designed to be <em>individually
-falsifiable</em> — rejection of any single hypothesis does not
-invalidate the entire framework but constrains its scope.</p>
+falsifiable</em>: rejection of any single hypothesis does not invalidate
+the entire framework but constrains its scope.</p>
 <h3
 id="hypothesis-h72-modal-verb-patterns-reflect-executive-friction">5.1
 Hypothesis H72: Modal Verb Patterns Reflect Executive Friction</h3>
@@ -1178,18 +1333,21 @@ before pooled confirmatory inference. Test-retest reliability is
 assessed via ICC for both raw <span
 class="math inline">\(\mu_{\text{sem}}\)</span> and adjusted <span
 class="math inline">\(\mu_{\text{sem}}^{\text{adj}}\)</span>.</p>
-<p><strong>Falsification criterion.</strong> If (a) no
-decision-vs-factual context effect is observed for <span
-class="math inline">\(\mu_{\text{sem}}^{\text{adj}}\)</span>, and (b)
-adjusted <span
-class="math inline">\(\mu_{\text{sem}}^{\text{adj}}\)</span> provides no
-meaningful incremental variance beyond symptom and affect controls, H72
-is rejected and the linguistic proxy class is removed from the core
-model. The conjunction is intentional: either context sensitivity
-(supporting within-subject construct validity) or incremental predictive
-validity (supporting cross-construct utility) is considered sufficient
-to retain the linguistic probe for further testing, whereas removal is
-reserved for the case in which both forms of support fail.</p>
+<p><strong>Falsification criterion.</strong> We specify a primary and a
+secondary test. The <em>primary</em> test is construct validity: whether
+a decision-vs-factual context effect is observed for <span
+class="math inline">\(\mu_{\text{sem}}^{\text{adj}}\)</span>, which is
+the within-subject signature the framework predicts. The
+<em>secondary</em> test is incremental utility: whether adjusted <span
+class="math inline">\(\mu_{\text{sem}}^{\text{adj}}\)</span> adds
+meaningful predictive variance beyond symptom and affect controls. Full
+support for the linguistic probe requires both. If <em>either</em> test
+fails, the probe is downgraded and retained only as an exploratory,
+secondary indicator rather than a core-chain marker. If <em>both</em>
+tests fail, <span class="math inline">\(\mu_{\text{sem}}\)</span> is
+removed from the core model entirely. This graded rule ties the primary
+decision to construct validity while still crediting incremental utility
+as secondary evidence.</p>
 <p><strong>Planning note.</strong> The initial planning value is <span
 class="math inline">\(N = 120\)</span> across three time points, sized
 for stable estimation of small-to-moderate within-subject associations
@@ -1237,9 +1395,9 @@ results are reported as sensitivity checks.</p>
 <h3 id="hypothesis-h-met-01-free-choice-metabolic-premium">5.3
 Hypothesis H-MET-01: Free Choice Metabolic Premium</h3>
 <p><strong>Prediction.</strong> Decisions that require overriding
-default or habitual responses — operationalized as choosing the
+default or habitual responses (operationalized as choosing the
 counter-habitual option in a trained stimulus-response compatibility
-task — produce higher <em>autonomic control cost</em> (primary endpoint:
+task) produce higher <em>autonomic control cost</em> (primary endpoint:
 SCR amplitude) than decisions aligned with trained responses, and this
 cost differential is predicted by the individual’s behavioral <span
 class="math inline">\(\Psi_f\)</span> composite score. Blood glucose
@@ -1276,11 +1434,13 @@ interpreted as causal directionality.</p>
 <p><strong>Protocol.</strong> Cross-sectional comparison. Each
 participant completes the full behavioral task battery (§3.1), provides
 salivary cortisol and blood samples for ROS assays, and undergoes HRV
-recording. MDD diagnosis is confirmed via structured clinical interview
-(SCID-5). Predefined exclusion/covariate set includes acute inflammatory
-disease, systemic steroid or high-dose antioxidant use, unstable medical
-illness, substance dependence, antidepressant class/dose (e.g.,
-SSRI/SNRI), illness duration, episode severity, anxiety comorbidity, and
+recording. MDD diagnosis is confirmed via the Structured Clinical
+Interview for DSM-5 (SCID-5). Predefined exclusion/covariate set
+includes acute inflammatory disease, systemic steroid or high-dose
+antioxidant use, unstable medical illness, substance dependence,
+antidepressant class/dose (e.g., selective serotonin reuptake
+inhibitors, SSRIs, or serotonin–norepinephrine reuptake inhibitors,
+SNRIs), illness duration, episode severity, anxiety comorbidity, and
 sleep-quality index.</p>
 <p><strong>Falsification criterion.</strong> If the <span
 class="math inline">\(\Psi_f\)</span> composite–GSH/GSSG association is
@@ -1293,10 +1453,23 @@ class="math inline">\(\mu_{\text{sem}}\)</span> in OCD</h3>
 <p><strong>Prediction.</strong> In a three-group comparison (OCD, <span
 class="math inline">\(n = 30\)</span>; MDD, <span
 class="math inline">\(n = 30\)</span>; healthy controls, <span
-class="math inline">\(n = 30\)</span>), the OCD group shows meaningfully
-higher <span class="math inline">\(\mu_{\text{sem}}\)</span> than both
-MDD and control groups, driven specifically by elevated frequency of
-constraint modals.</p>
+class="math inline">\(n = 30\)</span>), we predict <span
+class="math inline">\(\mu_{\text{sem}}^{\text{OCD}} &gt;
+\mu_{\text{sem}}^{\text{MDD}} &gt;
+\mu_{\text{sem}}^{\text{controls}}\)</span>, driven specifically by
+elevated frequency of constraint modals. These two inequalities are not
+equivalent, and it is worth stating what each one buys. The contrast
+<strong>OCD &gt; controls</strong> would establish only the weaker, more
+general claim that friction leaves a constraint-modal signature in
+language at all; both OCD and MDD are elevated-friction states, so an
+elevation over healthy controls is expected under the framework but does
+not by itself distinguish disorders. The contrast <strong>OCD &gt;
+MDD</strong> is the stronger and genuinely disorder-differentiating
+claim: it is what the switching-viscosity account specifically predicts
+(constraint-dominant modal output should peak where switching is most
+rigidly trapped), and it is the result that would separate <span
+class="math inline">\(\Psi_f\)</span> from a generic “any distress
+raises constraint language” account.</p>
 <p><strong>Protocol.</strong> Each participant completes a 20-minute
 semi-structured clinical interview (using the Yale-Brown Obsessive
 Compulsive Scale for OCD group, Hamilton Depression Rating Scale for MDD
@@ -1306,10 +1479,19 @@ routine and the challenges you face”). Transcripts are analyzed for
 adjustment set includes SSRI/antipsychotic augmentation status,
 benzodiazepine use, illness duration, anxiety and sleep comorbidity
 indices, and interviewer random effects.</p>
-<p><strong>Falsification criterion.</strong> If OCD <span
+<p><strong>Falsification criterion.</strong> The two claims are rejected
+at different levels. If OCD <span
 class="math inline">\(\mu_{\text{sem}}\)</span> does not reliably exceed
-healthy control <span class="math inline">\(\mu_{\text{sem}}\)</span>,
-the disorder-specific linguistic signature model is rejected.</p>
+<em>healthy control</em> <span
+class="math inline">\(\mu_{\text{sem}}\)</span>, the linguistic proxy
+fails even its weak form, and the modal signature is abandoned as a
+friction marker. If OCD exceeds controls but does <em>not</em> reliably
+exceed <em>MDD</em>, the weak form survives but the
+disorder-differentiating claim is rejected: <span
+class="math inline">\(\mu_{\text{sem}}\)</span> is then retained as a
+transdiagnostic friction index rather than as an OCD-specific signature.
+Only the joint result OCD &gt; MDD &gt; controls supports the full
+switching-viscosity prediction.</p>
 <h3 id="proposed-validation-roadmap">5.6 Proposed Validation
 Roadmap</h3>
 <p>We propose a three-phase validation program:</p>
@@ -1368,7 +1550,7 @@ linguistic signatures of executive breakdown under a formal
 selection-budget constraint. By deriving the knowing–doing gap as
 bandwidth saturation (Equation 7) rather than as a domain-specific
 failure, the framework generates testable predictions that current
-models — cognitive load theory, FEP, IIT, allostatic load — do not
+models (cognitive load theory, FEP, IIT, allostatic load) do not
 individually produce.</p>
 <p>The key theoretical advance is the <em>decoupling of knowledge from
 capacity</em>. In existing frameworks, executive failure is typically
@@ -1379,7 +1561,7 @@ framework introduces a fourth possibility: the agent knows, can focus,
 and wants to act, but the <em>cost of converting knowledge into
 action</em> exceeds available resources. This bandwidth saturation
 account explains why patients often report the phenomenology of “knowing
-exactly what to do but being unable to do it” — a subjective experience
+exactly what to do but being unable to do it,” a subjective experience
 that is puzzling under representational, attentional, or motivational
 accounts.</p>
 <h3 id="comparison-with-existing-frameworks">6.2 Comparison with
@@ -1388,13 +1570,14 @@ Existing Frameworks</h3>
 five existing frameworks across seven evaluation criteria.</p>
 <p><em>Insert Table 4 near here.</em></p>
 <p>This comparison is not intended to argue that <span
-class="math inline">\(\Psi_f\)</span> replaces existing frameworks.
-Rather, <span class="math inline">\(\Psi_f\)</span> can be understood as
-a generalization that subsumes aspects of each: it includes cognitive
-load as a behavioral special case, allostatic load as a physiological
-special case, and variational complexity as an information-theoretic
-special case, while adding explicit cross-modal latent modeling and
-dissociation predictions.</p>
+class="math inline">\(\Psi_f\)</span> replaces or absorbs existing
+frameworks. Rather, <span class="math inline">\(\Psi_f\)</span> connects
+aspects of each and extends selected cost-related aspects of them: it
+relates to cognitive load on the behavioral side, to allostatic load on
+the physiological side, and to variational complexity on the
+information-theoretic side, while adding explicit cross-modal latent
+modeling and dissociation predictions that these frameworks do not
+individually provide.</p>
 <p>Relative to the Expected Value of Control (EVC) framework (Shenhav et
 al., 2013; Shenhav et al., 2017), <span
 class="math inline">\(\Psi_f\)</span> is closest to a transmodal
@@ -1432,14 +1615,13 @@ structure.</p>
 not formally incorporate <em>slow-constraint dynamics</em> (Eq. B1,
 Appendix B) governing habit formation, belief revision, and therapeutic
 change over weeks to months.</p>
-<p>These distinctions do not make EVC wrong — they mark scope
-boundaries. If future EVC extensions incorporate cross-modal indicators,
-nonlinear saturation, and slow dynamics, the two frameworks may
-converge. The present contribution is that <span
-class="math inline">\(\Psi_f\)</span> provides this integration now in a
-testable form. This positioning is consistent with computational
-psychiatry goals of mechanistic yet clinically testable bridges (Huys et
-al., 2016).</p>
+<p>These distinctions do not make EVC wrong; they mark scope boundaries.
+If future EVC extensions incorporate cross-modal indicators, nonlinear
+saturation, and slow dynamics, the two frameworks may converge. The
+present contribution is that <span class="math inline">\(\Psi_f\)</span>
+provides this integration now in a testable form. This positioning is
+consistent with computational psychiatry goals of mechanistic yet
+clinically testable bridges (Huys et al., 2016).</p>
 <h3 id="limitations-and-boundary-conditions">6.3 Limitations and
 Boundary Conditions</h3>
 <p>Several important limitations must be acknowledged.</p>
@@ -1485,7 +1667,39 @@ the cost of maintaining conscious states, but it does not explain
 <em>why</em> subjective experience accompanies high-friction processing.
 We view this as an appropriate scope limitation rather than a
 deficiency.</p>
-<p>Seventh, this paper reports <em>no empirical data</em>. While we have
+<p>Seventh, every proxy proposed here is <em>indirect</em>. None of the
+behavioral, physiological, neural, or linguistic measures observes
+executive friction directly; each is a downstream correlate standing at
+some remove from the latent quantity, and each carries its own
+non-friction variance (task-switch cost reflects general processing
+speed, HRV reflects fitness and respiration, modal usage reflects
+register and education). This has two consequences for interpretation.
+It means construct validity cannot be settled by any single indicator
+and rests entirely on convergence, so the framework is only as strong as
+the cross-modal correlation structure in Section 3.5 turns out to be; if
+that structure is weak, the “friction” label may be over-interpreting a
+loose bundle of partially related measures. It also means effect sizes
+at the indicator level will understate the latent association, and that
+inferences about <span class="math inline">\(\Psi_f\)</span> are
+conditional on the measurement model rather than read straight off the
+data. We regard demonstrating that these indirect proxies actually
+cohere, and discriminate <span class="math inline">\(\Psi_f\)</span>
+from adjacent constructs, as the central empirical burden of the program
+rather than a settled premise.</p>
+<p>Eighth, the disorder mappings overlap, and the boundaries between
+them are provisional. The clearest case is switching: OCD is framed as
+elevated switching viscosity with preserved maintenance, yet depression
+also impairs switching, and anxiety, rumination, and generalized
+psychomotor slowing can each mimic parts of the predicted signatures.
+The framework’s disorder-specific claims therefore rest on multivariate
+<em>profiles</em> (Table 2) and on the paired dissociation contrasts of
+Section 4.5, not on any single proxy, and they are correspondingly
+vulnerable: if those contrasts fail to separate the conditions, the
+clinical mapping should be read as a transdiagnostic severity gradient
+rather than as a set of distinct disorder signatures. We consider this
+boundary ambiguity a real risk to the account, not a peripheral
+caveat.</p>
+<p>Ninth, this paper reports <em>no empirical data</em>. While we have
 specified protocols with sufficient detail for pre-registration and
 replication, the entire framework remains at the stage of theoretical
 proposal until the validation program (§5.6) is executed.</p>
@@ -1501,8 +1715,10 @@ formulations.</li>
 uniformly <span class="math inline">\(&lt;0.15\)</span>), reject the
 single latent-factor claim and move to domain-specific modules.</li>
 <li>If <span class="math inline">\(\mu_{\text{sem}}\)</span> lacks
-context sensitivity or incremental validity, remove the linguistic probe
-from the core chain and retain behavioral-physiological modeling.</li>
+either context sensitivity (primary construct-validity test) or
+incremental validity (secondary utility test), downgrade the linguistic
+probe to an exploratory indicator; if it lacks both, remove it from the
+core chain and retain behavioral-physiological modeling.</li>
 <li>If optional expansion markers (ROS/PCI/Fisher) do not add predictive
 value, retain the core chain and demote expansion markers to exploratory
 status.</li>
@@ -1520,8 +1736,8 @@ classification of executive dysfunction that cuts across traditional
 categorical diagnoses.</p>
 <p><strong>Passive linguistic monitoring.</strong> <span
 class="math inline">\(\mu_{\text{sem}}\)</span> can be extracted from
-clinical interview transcripts, therapy session recordings, or — with
-appropriate consent and ethical oversight — naturalistic text data. This
+clinical interview transcripts, therapy session recordings, or, with
+appropriate consent and ethical oversight, naturalistic text data. This
 enables longitudinal <span class="math inline">\(\Psi_f\)</span>
 tracking without additional testing burden.</p>
 <p><strong>Treatment response prediction.</strong> Therapeutic
@@ -1536,9 +1752,9 @@ outperforming symptom-based monitoring.</p>
 <p><strong>Intervention design.</strong> The distinction between <span
 class="math inline">\(\Psi_f\)</span> reduction and <span
 class="math inline">\(P_{\text{sel}}\)</span> expansion suggests that
-combination therapies — pairing pharmacological <span
+combination therapies (pairing pharmacological <span
 class="math inline">\(\Psi_f\)</span> reduction with behavioral <span
-class="math inline">\(P_{\text{sel}}\)</span> training — should show
+class="math inline">\(P_{\text{sel}}\)</span> training) should show
 synergistic effects quantifiable as:</p>
 <p><span class="math display">\[\Delta S_{\text{sync}} = \Delta d \cdot
 (-\Delta\Psi_f) &gt; 0 \tag{13}\]</span></p>
@@ -1556,7 +1772,7 @@ accumulation (Eqs. 3a–3d’), the hazard function for subjective distress
 (Eq. 4), the selection-budget inequality (Eq. 5), and the dynamics of
 parameter evolution (Eq. B1). We have operationalized <span
 class="math inline">\(\Psi_f\)</span> through four convergent proxy
-classes — behavioral, physiological, neural, and linguistic — and
+classes (behavioral, physiological, neural, and linguistic), and
 demonstrated how the knowing–doing gap emerges as bandwidth saturation
 when friction cost exceeds available selection power.</p>
 <p>The clinical mapping onto major depressive disorder,
@@ -1568,9 +1784,9 @@ hypotheses with explicit falsification criteria and a three-phase
 validation roadmap provide the experimental architecture for systematic
 testing.</p>
 <p>The knowing–doing gap is not merely a clinical curiosity but a window
-into the control-cost structure of agency. Every act of will — from
+into the control-cost structure of agency. Every act of will, from
 suppressing a craving to overriding a prejudice to initiating a motor
-sequence — incurs executive friction. Understanding this cost, measuring
+sequence, incurs executive friction. Understanding this cost, measuring
 it, and learning to modulate it may prove to be consequential for
 cognitive neuroscience, clinical science, and biomarker-driven
 translational work.</p>
@@ -1636,9 +1852,20 @@ parameter-level interventions.</p>
 <hr />
 <h2 id="conflict-of-interest-statement">Conflict of Interest
 Statement</h2>
-<p>The author declares that the research was conducted in the absence of
-any commercial or financial relationships that could be construed as a
-potential conflict of interest.</p>
+<p>The author is an independent researcher with no institutional,
+commercial, or governmental affiliation, and the work received no
+funding from any source. To make this transparent for
+conflict-of-interest assessment: the author has no employment,
+consultancy, patent, equity, grant, or other financial relationship with
+any organization that could benefit from the framework proposed here,
+and no competing academic interest beyond ordinary scholarly authorship.
+The manuscript cites one item of the author’s own prior work (Zhang,
+2025, listed in Appendix A) solely as an optional background pointer;
+that reference is non-commercial, confers no financial interest, and is
+not required for any claim, equation, or hypothesis in this paper. The
+author therefore declares that the research was conducted in the absence
+of any commercial or financial relationships that could be construed as
+a potential conflict of interest.</p>
 <h2 id="author-contributions">Author Contributions</h2>
 <p>The author conceived the theoretical framework, developed the formal
 model, designed the proposed experimental program, prepared the figures
@@ -1646,18 +1873,19 @@ and tables, and wrote the manuscript.</p>
 <h2 id="funding">Funding</h2>
 <p>This work received no external funding.</p>
 <h2 id="acknowledgments">Acknowledgments</h2>
-<p>The author thanks colleagues and reviewers for critical discussion
-and manuscript feedback. The author used generative AI systems
-(Anthropic Claude) for language refinement and structural editing. All
-AI-assisted content was critically reviewed, revised, and verified by
-the author, who retains full responsibility for the manuscript.</p>
+<p>The author thanks the reviewers for their critical and constructive
+feedback on the manuscript. (Use of generative AI is disclosed
+separately in the Generative AI Statement below.)</p>
 <h2 id="generative-ai-statement">Generative AI Statement</h2>
-<p>The author declares that generative AI was used only for drafting and
-language-structure optimization during manuscript preparation (Anthropic
-Claude). Generative AI was not used for data generation, statistical
-analysis, or unverified citation insertion. Final factual accuracy,
-citation integrity, and scientific claims were checked by the
-author.</p>
+<p>The author used generative AI (Anthropic Claude) during manuscript
+preparation. AI assistance was limited to language editing and
+structural clarity; the author developed and verified the framework,
+equations, hypotheses, references, and final content. Generative AI was
+not used for data generation or statistical analysis. The author takes
+full responsibility for the accuracy, integrity, and scientific content
+of the manuscript. This disclosure is provided in the interest of
+transparency and in accordance with the journal’s policy on AI-assisted
+authorship.</p>
 <h2 id="data-availability-statement">Data Availability Statement</h2>
 <p>No empirical datasets were generated or analyzed for this theoretical
 manuscript. All equations, hypotheses, and analysis plans are fully
@@ -1670,12 +1898,24 @@ support reproducibility.</p>
 work; ethics approval and informed consent were therefore not
 required.</p>
 <h2 id="abbreviations">Abbreviations</h2>
-<p>FEP, Free Energy Principle; IIT, Integrated Information Theory; MDD,
-major depressive disorder; OCD, obsessive-compulsive disorder; PD,
-Parkinson’s disease; HRV, heart rate variability; SCR, skin conductance
-response; ROS, reactive oxygen species; PCI, perturbational complexity
-index; WCST, Wisconsin Card Sorting Test; SEM, structural equation
-modeling; CFA, confirmatory factor analysis.</p>
+<p>8-OHdG, 8-hydroxy-2’-deoxyguanosine; CAR, cortisol awakening
+response; CFA, confirmatory factor analysis; CFI, comparative fit index;
+DCS, diurnal cortisol slope; EVC, expected value of control; FEP, Free
+Energy Principle; GAD-7, Generalized Anxiety Disorder 7-item scale;
+GSH/GSSG, reduced-to-oxidized glutathione ratio; HRV, heart rate
+variability; ICC, intraclass correlation coefficient; IIT, Integrated
+Information Theory; KL, Kullback–Leibler (divergence); LOO,
+leave-one-out cross-validation; MDA, malondialdehyde; MDD, major
+depressive disorder; OCD, obsessive-compulsive disorder; PCI,
+perturbational complexity index; PD, Parkinson’s disease; PHQ-9, Patient
+Health Questionnaire 9-item scale; RMSEA, root mean square error of
+approximation; ROS, reactive oxygen species; SCID-5, Structured Clinical
+Interview for DSM-5; SCR, skin conductance response; SEM, structural
+equation modeling; SNRI, serotonin–norepinephrine reuptake inhibitor;
+SOD, superoxide dismutase; SSRI, selective serotonin reuptake inhibitor;
+TGC, theta-gamma coupling; TMS, transcranial magnetic stimulation;
+UPDRS, Unified Parkinson’s Disease Rating Scale; WAIC, Widely Applicable
+Information Criterion; WCST, Wisconsin Card Sorting Test.</p>
 <hr />
 <h2 id="references">References</h2>
 <p>Adam, E. K., Quinn, M. E., Tavernier, R., McQuillan, M. T., Dahlke,
@@ -1720,12 +1960,20 @@ Academy of Sciences</em>, 115(44), 11203–11208.</p>
 <p>Frank, M. J., Seeberger, L. C., and O’Reilly, R. C. (2004). By carrot
 or by stick: Cognitive reinforcement learning in parkinsonism.
 <em>Science</em>, 306(5703), 1940–1943.</p>
+<p>Friedman, N. P., and Robbins, T. W. (2022). The role of prefrontal
+cortex in cognitive control and executive function.
+<em>Neuropsychopharmacology</em>, 47(1), 72–89.</p>
 <p>Friston, K. (2010). The free-energy principle: A unified brain
 theory? <em>Nature Reviews Neuroscience</em>, 11(2), 127–138.</p>
 <p>Gaab, J., Rohleder, N., Nater, U. M., and Ehlert, U. (2005).
 Psychological determinants of the cortisol stress response: The role of
 anticipatory cognitive appraisal. <em>Psychoneuroendocrinology</em>,
 30(6), 599–610.</p>
+<p>Gillan, C. M., Robbins, T. W., Sahakian, B. J., van den Heuvel, O.
+A., and van Wingen, G. (2016). The role of habit in compulsivity.
+<em>European Neuropsychopharmacology</em>, 26(5), 828–840.</p>
+<p>Gollwitzer, P. M. (1999). Implementation intentions: Strong effects
+of simple plans. <em>American Psychologist</em>, 54(7), 493–503.</p>
 <p>Hagger, M. S., Chatzisarantis, N. L. D., Alberts, H., Anggono, C. O.,
 Batailler, C., Birt, A. R., et al. (2016). A multilab preregistered
 replication of the ego-depletion effect. <em>Perspectives on
@@ -1758,6 +2006,10 @@ allostatic load. <em>Annals of the New York Academy of Sciences</em>,
 <p>McEwen, B. S., and Stellar, E. (1993). Stress and the individual:
 Mechanisms leading to disease. <em>Archives of Internal Medicine</em>,
 153(18), 2093–2101.</p>
+<p>McTeague, L. M., Huemer, J., Carreon, D. M., Jiang, Y., Eickhoff, S.
+B., and Etkin, A. (2017). Identification of common neural circuit
+disruptions in cognitive control across psychiatric disorders.
+<em>American Journal of Psychiatry</em>, 174(7), 676–685.</p>
 <p>Miller, A. H., and Raison, C. L. (2016). The role of inflammation in
 depression: From evolutionary imperative to modern treatment target.
 <em>Nature Reviews Immunology</em>, 16(1), 22–34.</p>
@@ -1792,6 +2044,10 @@ function. <em>Neuron</em>, 79(2), 217–240.</p>
 Cohen, J. D., and Botvinick, M. M. (2017). Toward a rational and
 mechanistic account of mental effort. <em>Annual Review of
 Neuroscience</em>, 40, 99–124.</p>
+<p>Snyder, H. R., Miyake, A., and Hankin, B. L. (2015). Advancing
+understanding of executive function impairments and psychopathology:
+Bridging the gap between clinical and cognitive approaches.
+<em>Frontiers in Psychology</em>, 6, 328.</p>
 <p>Spitzer, R. L., Kroenke, K., Williams, J. B. W., and Loewe, B.
 (2006). A brief measure for assessing generalized anxiety disorder: The
 GAD-7. <em>Archives of Internal Medicine</em>, 166(10), 1092–1097.</p>
@@ -1826,6 +2082,10 @@ map. <em>Linguistic Typology</em>, 2(1), 79–124.</p>
 <p>Westbrook, A., and Braver, T. S. (2015). Cognitive effort: A
 neuroeconomic approach. <em>Cognitive, Affective, &amp; Behavioral
 Neuroscience</em>, 15(2), 395–415.</p>
+<p>Wieber, F., Thürmer, J. L., and Gollwitzer, P. M. (2015). Promoting
+the translation of intentions into action by implementation intentions:
+Behavioral effects and physiological correlates. <em>Frontiers in Human
+Neuroscience</em>, 9, 395.</p>
 <p>Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal
 familiarity: The role of stimulus-attribute and response-set selection.
 <em>Journal of Experimental Psychology: Human Perception and
@@ -2100,10 +2360,11 @@ linguistic prediction fails</td>
 <td>H72</td>
 <td>Core</td>
 <td>Context-sensitive <span
-class="math inline">\(\mu_{\text{sem}}^{\text{adj}}\)</span> +
-incremental validity</td>
-<td>No context effect and no meaningful incremental variance over
-symptom/affect controls</td>
+class="math inline">\(\mu_{\text{sem}}^{\text{adj}}\)</span> (primary) +
+incremental validity (secondary)</td>
+<td>Either test fails → downgrade to exploratory; both fail (no context
+effect and no meaningful incremental variance over symptom/affect
+controls) → remove from core</td>
 <td>120</td>
 <td>Adjusted modal ratio, RT, HRV/SCR, symptom scales</td>
 </tr>
@@ -2280,9 +2541,9 @@ severity interpretation</td>
 <td><span class="math inline">\(\mu_{\text{sem}}\)</span> mostly stable
 stylistic variance</td>
 <td>Context-sensitive shifts + incremental validity</td>
-<td>H72 context contrast + incremental validity over PHQ-9/GAD-7/affect
-controls</td>
-<td>If no context effect and no meaningful incremental variance, remove
+<td>H72 context contrast (primary) + incremental validity over
+PHQ-9/GAD-7/affect controls (secondary)</td>
+<td>If either fails, downgrade to exploratory; if both fail, remove
 linguistic probe from core model</td>
 </tr>
 <tr>
