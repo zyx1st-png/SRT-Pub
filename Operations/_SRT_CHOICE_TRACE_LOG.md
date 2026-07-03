@@ -36,15 +36,15 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 
 ## 1. 字段定义（这几个字段决定它将来能不能当条件用）
 
-每条轨迹 = 一次 D→C。**必填字段**如下，缺一条这条轨迹就不可用于回看/条件：
+每条轨迹 = 一次 **命题锻造 → 分层递归发散 → 作者收敛**（对齐 `_SRT_ARTICLE_WORKFLOW.md` v2）。**必填字段**如下，缺一条这条轨迹就不可用于回看/条件：
 
 | 字段 | 含义 | 为什么必须记 |
 |---|---|---|
 | `trace_id` | `CT-YYYYMMDD-NN` | 唯一定位 |
 | `date` | 收敛发生日期 | 时间序，看偏置漂移 |
 | `seed_fragment` | 作者投喂的原始碎片想法（**逐字**，不润色） | 条件的输入端；润色过就污染了 |
-| `diverged_pool` | LLM 发散池里出现过的角度（至少列全 D1 + 点名 D2 众数陷阱） | 没有"可选项全集"，就无法定义"作者的选择" |
-| `chosen` | 作者**选了**哪个角度（含是否杂交、杂交了哪两个） | 选择的正例 |
+| `layered_options` | 逐层的**选项全集**（LLM 产出）：命题锻造命中项 → 层1 思路结构 → 层2 理论内容（含 canonical 核对状态）→ 层3 写作手法 → 被划掉的不相容分支。结构见 §2 模板 | 没有"每层可选项全集 + 被划掉的分支"，就无法定义"作者在每层的选择" |
+| `chosen` | 作者在**每层选了**哪个（含是否杂交、杂交了哪两个） | 选择的正例；逐层记录 |
 | `skipped_mode` | 作者**主动跳过**的众数选项（D2 陷阱 + D1 里的显然角度）；确无可跳过时填 `none_detected` **并附一句原因** | **与 chosen 同等重要**：收敛函数的形状由"选了什么"和"避开了什么"共同定义 |
 | `reason` | 收敛理由，**一句话，作者亲写** | 条件的标签；LLM 代拟的理由是众数理由，直接毁掉这条轨迹的价值 |
 | `closure_boundary` | 作者设定的"谁承受后果 / 看多远" | 作者的边界偏好是收敛函数的核心维度之一 |
@@ -68,7 +68,7 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 
 1. **`seed_fragment` 与 `reason` 必须是作者原话**，不许 LLM 润色或代拟——它们是条件的输入端和标签端，一旦众数化，整条轨迹作废。富信息可放可选字段 `reason_note`，但 `reason` 本身保持一句话。
 2. **`skipped_mode` 不许留空**。"这次没跳过什么"本身可疑：说明 D 段发散不够，或作者其实选了众数。确实无可跳过时填 `none_detected` **并附一句原因**，不要强填伪数据。
-3. LLM 可以帮忙**填 `diverged_pool`**（它本来就是发散池的产出），但**不许填 `chosen / skipped_mode / reason / closure_boundary / attack_target`**——这些是收敛动作，只能作者填。
+3. LLM 可以帮忙**填 `layered_options`**（它本来就是逐层发散的产出），但**不许填 `chosen / skipped_mode / reason / closure_boundary / attack_target`**——这些是收敛动作，只能作者填。
 4. **优先当场记录。** 当场记的 `reason` 才是当时的收敛；隔天记的是重构。允许事后补记，但必须标 `late_entry: true`，回看时（§3）对补记条目降权，而不是完全禁止追溯。
 
 ---
@@ -80,15 +80,22 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 
 - **date**: YYYY-MM-DD
 - **seed_fragment**（作者原话，逐字）: …
-- **diverged_pool**:
-  - D1 角度：① … ② … ③ …（列全）
-  - D2 众数陷阱（LLM 点名的"最容易被写成的那篇"）: …
-- **chosen**（作者选的角度）: …
+- **layered_options**（LLM 逐层产出的选项全集）:
+  - 命题锻造命中项（压力测试点名的、作者必须拍板的决定）: …
+  - 层1 · 思路结构选项全集: ① … ② … ③ …（列全）
+  - 层2 · 理论内容选项全集 + canonical 核对状态（每件标 已核 / NEEDS_RETRIEVAL）: …
+  - 层3 · 写作手法选项全集: … （提醒：手法必须最后一层）
+  - 被划掉的不相容分支（因某层选择而死掉的下游分支）: …
+- **chosen**（作者在每层选了哪个；逐层写）:
+  - 命题: …
+  - 层1: …　层2: …　层3: …
 - **skipped_mode**（主动跳过的众数选项；确无则填 none_detected + 原因）: …
 - **reason**（作者亲写，一句话）: …
 - **reason_note**（可选，几句展开）: …
 - **closure_boundary**（谁承受后果 / 看多远）: …
 - **attack_target**（拆哪块"本来如此"）: …
+- **pruned**（为"一文一刀"主动 park 掉的真东西，非众数）: …
+- **reclaimed**（某个 pruned 分支被事后讨还：折入本篇 / 另开新篇）: …
 - **late_entry**（事后补记则填 true，缺省视为当场记录）: …
 - **article_ref**: （成文后回填）
 - **platform**: （发布后回填）
@@ -117,4 +124,4 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 
 <!-- 从这里开始按时间顺序追加轨迹条目。不修改历史条目。 -->
 
-_（暂无条目。第一条轨迹将在首次走完 D→C 工作流后写入。）_
+_（暂无条目。第一条轨迹将在首次走完 命题锻造 → 分层递归发散 → 收敛 工作流后写入。）_
