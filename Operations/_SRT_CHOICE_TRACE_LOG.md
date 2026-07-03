@@ -56,6 +56,8 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 |---|---|
 | `reason_note` | `reason` 之外的补充说明（几句展开、动机、背景）；`reason` 仍保持一句话，富信息放这里 |
 | `late_entry` | `true` 表示非当场记录、事后补记；缺省视为当场记录。补记的 `reason` 是重构，回看时按此降权 |
+| `pruned` | 为"一文一刀"而主动 park 掉的、本可展开的分支（区别于 `skipped_mode` 里的众数选项——`pruned` 是被砍掉的**真东西**） |
+| `reclaimed` | 若某个 `pruned` 分支被作者的判断力事后讨还（折入本篇或另开新篇），记在此。"先砍到一把刀、再讨还完整性"是收敛函数最强的信号之一 |
 | `article_ref` | 成文后的文章链接 / 归档路径 |
 | `platform` | 发布平台 |
 | `reader_resistance` | 读者实际的抵抗点 / 反驳（发布后回填） |
