@@ -25,6 +25,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 仓库已执行一轮"理论硬化优先、去命题混层"回写：`Core_21` 已拆成 P0/P1/P2-P4 分层，AI 首读入口已降密度为 runtime/bootstrap。
 - 当前后续重点是让 domain 文件持续回链 canonical，避免 bridge / companion / lab 命题反向冒充 core。
 - 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。） **`2026-06-19`：P0 姿态修订完成，框架层落地（PR #506：引入「选择性收束」过程词、宇宙地平线读法、Q26 同步失败条件），书稿冻结为 RC1-candidate；导出校验通过（全书 37 项 / 八章主干 10 项）。见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`。**
+- **`2026-07-04`：外部评审（知微《完整稿审读报告》）完成开卷过堂**：三条 P0 中两条、四条 P1 中两条核查为「已实现」，结构手术（章合并/删注/删回到杯子）驳回，品味级条目收编为一轮施工（显影免责去重、术语表完整化、后半书语域收敛、三幕节奏诊断、专业读者简报补「分界与独立贡献」节）。裁决与证据见 `01_Source_Intuition/BOOK/BOOK_EXTERNAL_REVIEW_DISPOSITION_知微_2026-07-04.md`；已核查 `scripts/compile_book.py` 导出无漏章（Q04b/Q15b 在编制表内）。
 
 ## 当前建议首读顺序
 

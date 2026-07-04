@@ -70,6 +70,12 @@ This is the book's most contestable claim, and it knows that: a full chapter def
 | IIT / GWT / predictive processing | Rich mechanistic accounts of consciousness | No competition on mechanism; the book assigns consciousness a *structural position* in the generative chain — late condensate, not first mover |
 | Foucault | Power produces subjects | Adds explicit criteria for when a producing structure crosses from scaffold to cage, and when occlusion becomes self-concealing |
 | Buddhist no-self / Humean bundle | "I" is not a substance | Agrees — but insists the sedimented self is a real bearing node, which is what makes responsibility and value possible |
+| Marx | History is made under inherited conditions | No class ontology at the base; power re-read as the capacity to rewrite others' choice terrain and allocate friction |
+| Barad (agential realism) | Subject/object boundaries are cut within apparatuses and practices, not pre-given | Follows the cut further — how cut differences persist, anchor, become irreversible and thick; compresses "mattering" into three operable diagnostics (self-consumption, outsourcing, lock-in) |
+| Deacon | Absence and constraint do real work; suffering is rooted in a self-maintaining teleodynamic locus | Anchors the bearing position in externally checkable conditions (consequence-return, bearing, re-selection) rather than thermodynamic self-maintenance |
+| Simondon | Individuation precedes individuals; metastability; the transindividual | Replaces the pre-individual reserve with consequence-return as the connective mechanism — structurally checkable, and the collective itself is allowed to sicken and be diagnosed |
+
+**Where the originality lies.** Every core move has a near neighbor somewhere in this table, and the book's endnotes mark each adjacency explicitly. The originality claim is therefore double: (1) the *single continuous chain* — from givenness-as-effect through selection structure, consequence-return, subject/value sedimentation, and order pathology, to self-specified failure conditions — adjacency at individual joints does not add up to this chain; and (2) the *operable interfaces* handed to readers who accept none of the ontology: the three direction questions, the scaffold/cage tests, the four conditions of legitimate delegation, the five failure conditions with their anomalous-combination signatures. Without the chain the tools are a checklist; without the tools the chain cannot be externally examined.
 
 ---
 
