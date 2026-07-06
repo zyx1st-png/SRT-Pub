@@ -43,9 +43,28 @@ figures regenerated, upload files re-numbered.
 
 ## Reproducing the build
 
+The manuscript now embeds the 5 figures at the end (after Table 5) so the DOCX/PDF are
+self-contained for review; the separate `frontiers_upload/Figure{1..5}` files remain the
+production-quality upload.
+
 ```
-# from papers/ontological_friction, with pandoc + a venv (pypandoc, docx2pdf on macOS w/ Word):
+# from papers/ontological_friction, with pandoc + a venv (pypandoc):
 python -c "import render_frontiers_submission_package as r; t=r.extract_title(r.SRC.read_text()); r.render_html(t); r.render_docx(t)"
-python -c "from docx2pdf import convert; convert('paper_ontological_friction_frontiers_submission.docx','paper_ontological_friction_frontiers_submission.pdf')"
 # figures: see figures/FIGURE_MAP.md
 ```
+
+**PDF note.** `docx2pdf` drives Microsoft Word via AppleScript and, on this machine, exported
+whatever document Word had frontmost (it once produced an unrelated document). The committed
+PDF is therefore rendered Word-free from the HTML via headless Chrome:
+
+```
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu \
+  --no-pdf-header-footer --virtual-time-budget=25000 --run-all-compositor-stages-before-draw \
+  --print-to-pdf="paper_ontological_friction_frontiers_submission.pdf" \
+  "file://$PWD/paper_ontological_friction_frontiers_submission.html"
+```
+
+The Chrome preview has figures and rendered math but no Frontiers line numbers (those are a
+DOCX feature). The **DOCX is the authoritative upload** (native Word equations + line numbers,
+figures embedded and verified pixel-identical to source). If a line-numbered PDF is needed,
+convert the DOCX with Word after closing all other open Word documents.

@@ -56,7 +56,7 @@ ax1.text(4.7, 7.2, '$\\Psi_f^{\\mathrm{ctrl}} \\approx \\int u^\\top R u\\,dt$',
 
 # ── Panel B: Thermodynamic Budget Diagram ──
 ax2.set_xlim(0, 11.4)
-ax2.set_ylim(0, 8.4)
+ax2.set_ylim(-1.05, 8.4)
 ax2.axis('off')
 ax2.set_title('B. Selection Power Budget and the Knowing–Doing Gap', fontsize=18, fontweight='bold', pad=16)
 
@@ -113,8 +113,8 @@ legend_elements = [
 ax2.legend(handles=legend_elements, loc='upper left', bbox_to_anchor=(0.02, 0.98),
            fontsize=15, framealpha=0.9)
 
-# Equation
-ax2.text(5.4, 0.15, '$dq/dt \\leq \\alpha \\cdot P_{\\mathrm{sel}} - \\beta \\cdot \\Psi_f - \\gamma \\cdot S_{\\mathrm{noise}}$',
+# Equation (placed below the bar labels to avoid overlap)
+ax2.text(5.7, -0.55, '$dq/dt \\leq \\alpha \\cdot P_{\\mathrm{sel}} - \\beta \\cdot \\Psi_f - \\gamma \\cdot S_{\\mathrm{noise}}$',
          ha='center', va='center', fontsize=16,
          bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#333333'))
 

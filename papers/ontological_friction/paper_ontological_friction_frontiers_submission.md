@@ -818,3 +818,29 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 | Generic symptom-severity model | Clinical groups differ mainly by global severity | Disorder-specific dissociations (Table 2) | Phase-2 contrasts in §4.5 | If dissociation contrasts fail, downgrade to transdiagnostic severity interpretation |
 | Language-style/trait model | $\mu_{\text{sem}}$ mostly stable stylistic variance | Context-sensitive shifts + incremental validity | H72 context contrast (primary) + incremental validity over PHQ-9/GAD-7/affect controls (secondary) | If either fails, downgrade to exploratory; if both fail, remove linguistic probe from core model |
 | Global-deficit account | Expansion markers add little structure beyond symptoms | Optional expansion markers may add mechanistic precision | Compare core vs expansion model fit in phase-3 | If no incremental value, retain core chain and demote expansion markers to exploratory |
+
+---
+
+## Figures
+
+*Figures are embedded here for review and are also provided as separate high-resolution files (Figure1–Figure5).*
+
+**Figure 1.** *Hierarchical control architecture and selection power budget.*
+
+![](figures/fig1_control_architecture.png){ width=6.5in }
+
+**Figure 2.** *Cross-modal operationalization map for executive friction ($\Psi_f$).*
+
+![](figures/fig2_proxy_map.png){ width=6.5in }
+
+**Figure 3.** *ROS–$\Psi_f$ coupling mechanism: from executive friction to clinical expression.*
+
+![](figures/fig3_ros_coupling.png){ width=6.5in }
+
+**Figure 4.** *Predicted $\Psi_f$ proxy signatures across clinical conditions.*
+
+![](figures/fig4_clinical_radar.png){ width=6.5in }
+
+**Figure 5.** *Core-chain protocol and critical-load prediction.*
+
+![](figures/fig5_protocol.png){ width=6.5in }
