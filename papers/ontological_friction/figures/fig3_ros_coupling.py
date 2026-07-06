@@ -53,14 +53,15 @@ for (x1, y1), (x2, y2) in arrow_pairs:
 ax.annotate('', xy=(2.2, 5.4), xytext=(2.2, 4.7),
             arrowprops=dict(arrowstyle='->', color='#C62828', lw=2.6,
                           connectionstyle='arc3,rad=0', linestyle='--'))
-ax.text(1.1, 4.9, 'Positive\nfeedback\nloop', ha='center', va='center',
-        fontsize=16, fontweight='bold', color='#C62828')
+ax.text(1.25, 5.05, 'Positive feedback loop', ha='center', va='center',
+        fontsize=12, fontweight='bold', color='#C62828',
+        bbox=dict(boxstyle='round,pad=0.12', facecolor='white', edgecolor='none', alpha=0.95))
 
 # Possible modulation points
 interventions = [
-    (9.2, 1.6, 'Potential Antioxidant\nTarget', 'Possible ↑ β · Clearance(θ_body)', '#E8F5E9', '#2E7D32'),
-    (5.7, 1.6, 'Potential Behavioral\nTarget', 'Possible ↑ P_sel via training', '#E3F2FD', '#1565C0'),
-    (2.2, 1.6, 'Potential Pharmacological\nTarget', 'Possible ↓ Ψ_f via neuromod.', '#FFF3E0', '#E65100'),
+    (9.2, 1.6, 'Possible Antioxidant\nModulation', 'Possible ↑ β · Clearance(θ_body)', '#E8F5E9', '#2E7D32'),
+    (5.7, 1.6, 'Possible Behavioral\nModulation', 'Possible ↑ P_sel via training', '#E3F2FD', '#1565C0'),
+    (2.2, 1.6, 'Possible Pharmacological\nModulation', 'Possible ↓ Ψ_f via neuromod.', '#FFF3E0', '#E65100'),
 ]
 
 for x, y, label, sublabel, color, ec in interventions:

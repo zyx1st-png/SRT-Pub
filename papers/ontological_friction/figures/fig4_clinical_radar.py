@@ -52,7 +52,7 @@ ax.set_rlabel_position(30)
 ax.set_title('Schematic Predicted $\\Psi_f$ Proxy Signatures Across Clinical Conditions',
              fontsize=13, fontweight='bold', pad=25)
 
-ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1), fontsize=10, framealpha=0.9)
+ax.legend(loc='upper right', bbox_to_anchor=(1.22, 1.08), fontsize=10, framealpha=0.9)
 
 # Note
 fig.text(0.5, 0.02, 'Higher values indicate greater impairment / higher executive friction.\n'

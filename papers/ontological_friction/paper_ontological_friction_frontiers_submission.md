@@ -825,22 +825,32 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 
 *Figures are embedded here for review and are also provided as separate high-resolution files (Figure1–Figure5).*
 
-**Figure 1.** *Hierarchical control architecture and selection power budget.*
-
+::: {.figure-page}
 ![](figures/fig1_control_architecture.png){ width=6.5in }
 
-**Figure 2.** *Cross-modal operationalization map for executive friction ($\Psi_f$).*
+**Figure 1.** *Hierarchical control architecture and selection power budget.*
+:::
 
+::: {.figure-page}
 ![](figures/fig2_proxy_map.png){ width=6.5in }
 
-**Figure 3.** *Proposed oxidative feedback loop linking sustained executive friction to clinical features.*
+**Figure 2.** *Cross-modal operationalization map for executive friction ($\Psi_f$).*
+:::
 
+::: {.figure-page}
 ![](figures/fig3_ros_coupling.png){ width=6.5in }
 
-**Figure 4.** *Schematic predicted $\Psi_f$ proxy signatures across clinical conditions.*
+**Figure 3.** *Proposed oxidative feedback loop linking sustained executive friction to clinical features.*
+:::
 
+::: {.figure-page}
 ![](figures/fig4_clinical_radar.png){ width=6.5in }
 
-**Figure 5.** *Core-chain protocol and critical-load prediction.*
+**Figure 4.** *Schematic predicted $\Psi_f$ proxy signatures across clinical conditions.*
+:::
 
+::: {.figure-page}
 ![](figures/fig5_protocol.png){ width=6.5in }
+
+**Figure 5.** *Core-chain protocol and critical-load prediction.*
+:::

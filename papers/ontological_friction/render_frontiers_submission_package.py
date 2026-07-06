@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import subprocess
+import shutil
 import sys
 from pathlib import Path
 
@@ -13,7 +14,6 @@ HTML_OUT = ROOT / "paper_ontological_friction_frontiers_submission.html"
 DOCX_OUT = ROOT / "paper_ontological_friction_frontiers_submission.docx"
 PDF_OUT = ROOT / "paper_ontological_friction_frontiers_submission.pdf"
 POSTPROCESS = ROOT / "postprocess_frontiers_docx.py"
-DOCX2PDF = ROOT.parent.parent / ".venv" / "bin" / "docx2pdf"
 
 def extract_title(text: str) -> str:
     for line in text.splitlines():
@@ -81,6 +81,24 @@ def build_html(title: str, body_html: str) -> str:
       background: #f7f7f7;
       text-align: left;
     }
+    .figure-page {
+      margin: 1.5em 0;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .figure-page p {
+      text-align: left;
+    }
+    .figure-page p:first-child {
+      margin: 0;
+      text-align: center;
+    }
+    .figure-page img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 0.55em;
+    }
     @media print {
       body {
         max-width: none;
@@ -91,6 +109,16 @@ def build_html(title: str, body_html: str) -> str:
         page-break-after: avoid;
       }
       table, pre, blockquote {
+        page-break-inside: avoid;
+      }
+      .figure-page {
+        break-before: page;
+        page-break-before: always;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .figure-page p {
+        break-inside: avoid;
         page-break-inside: avoid;
       }
     }
@@ -153,10 +181,37 @@ def render_docx(title: str) -> None:
     subprocess.run([sys.executable, str(POSTPROCESS), str(DOCX_OUT)], check=True)
 
 
+def find_chrome() -> Path:
+    candidates = [
+        Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"),
+        Path("/Applications/Chromium.app/Contents/MacOS/Chromium"),
+    ]
+    for executable in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser"):
+        resolved = shutil.which(executable)
+        if resolved:
+            candidates.append(Path(resolved))
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    raise FileNotFoundError("Chrome/Chromium is required to render the submission PDF.")
+
+
 def render_pdf() -> None:
-    if not DOCX2PDF.exists():
-        return
-    subprocess.run([str(DOCX2PDF), str(DOCX_OUT), str(PDF_OUT)], check=True)
+    chrome = find_chrome()
+    subprocess.run(
+        [
+            str(chrome),
+            "--headless=new",
+            "--disable-gpu",
+            "--no-pdf-header-footer",
+            "--virtual-time-budget=25000",
+            "--run-all-compositor-stages-before-draw",
+            f"--print-to-pdf={PDF_OUT}",
+            HTML_OUT.resolve().as_uri(),
+        ],
+        check=True,
+        timeout=120,
+    )
 
 
 def render() -> None:
