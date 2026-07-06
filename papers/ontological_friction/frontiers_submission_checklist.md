@@ -28,6 +28,16 @@ figures regenerated, upload files re-numbered.
 - [x] Figure captions in order 1→5; upload files map 1:1 to source scripts (see `figures/FIGURE_MAP.md`).
 - [x] Page and line numbering present (Frontiers requirement).
 
+## Academic figure QA refresh
+
+- [x] Figure scripts' old numbering comments and print messages corrected.
+- [x] Figure 2 readability improved.
+- [x] Figure 3 causal wording softened.
+- [x] Figure 4 marked as schematic predictions, not empirical estimates.
+- [x] Figure 5 abbreviations reduced.
+- [x] PNG/TIF/JPG regenerated.
+- [x] DOCX/PDF/HTML regenerated.
+
 ## Author / correspondence
 
 - [x] Corresponding author details: Yuxin Zhang, zyx1st@gmail.com. *(Confirm/replace email in portal if a different address is preferred.)*

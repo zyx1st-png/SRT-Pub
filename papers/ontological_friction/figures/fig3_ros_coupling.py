@@ -1,6 +1,6 @@
 """
-Figure 5: ROS-Ψ_f Coupling Directed Acyclic Graph
-Causal chain from sustained Ψ_f → ROS → chronic stress → symptoms
+Figure 3: Proposed ROS-Ψ_f coupling feedback loop
+Schematic pathway from sustained Ψ_f through ROS-related processes to clinical features
 """
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
@@ -10,7 +10,7 @@ fig.patch.set_facecolor("white")
 ax.set_xlim(0, 15.2)
 ax.set_ylim(0, 9.2)
 ax.axis('off')
-ax.set_title('Proposed Oxidative Feedback Loop: How Sustained Executive Friction May Drive Clinical Decline',
+ax.set_title('Proposed Oxidative Feedback Loop Linking Sustained Executive Friction to Clinical Features',
              fontsize=20, fontweight='bold', pad=18)
 
 # Node definitions: (x, y, label, sublabel, color, edgecolor)
@@ -56,11 +56,11 @@ ax.annotate('', xy=(2.2, 5.4), xytext=(2.2, 4.7),
 ax.text(1.1, 4.9, 'Positive\nfeedback\nloop', ha='center', va='center',
         fontsize=16, fontweight='bold', color='#C62828')
 
-# Intervention targets
+# Possible modulation points
 interventions = [
-    (9.2, 1.6, 'Antioxidant\nIntervention', '↑ β · Clearance(θ_body)', '#E8F5E9', '#2E7D32'),
-    (5.7, 1.6, 'Behavioral\nIntervention', '↑ P_sel via training', '#E3F2FD', '#1565C0'),
-    (2.2, 1.6, 'Pharmacological\nIntervention', '↓ Ψ_f via neuromod.', '#FFF3E0', '#E65100'),
+    (9.2, 1.6, 'Potential Antioxidant\nTarget', 'Possible ↑ β · Clearance(θ_body)', '#E8F5E9', '#2E7D32'),
+    (5.7, 1.6, 'Potential Behavioral\nTarget', 'Possible ↑ P_sel via training', '#E3F2FD', '#1565C0'),
+    (2.2, 1.6, 'Potential Pharmacological\nTarget', 'Possible ↓ Ψ_f via neuromod.', '#FFF3E0', '#E65100'),
 ]
 
 for x, y, label, sublabel, color, ec in interventions:
@@ -71,7 +71,7 @@ for x, y, label, sublabel, color, ec in interventions:
     ax.text(x, y+0.15, label, ha='center', va='center', fontsize=15, fontweight='bold', color=ec)
     ax.text(x, y-0.35, sublabel, ha='center', va='center', fontsize=12, color='#1a1a1a')
 
-# Intervention arrows (dashed, pointing up)
+# Possible modulation arrows (dashed, pointing up)
 for x in [9.2, 5.7, 2.2]:
     ax.annotate('', xy=(x, 2.85), xytext=(x, 2.3),
                 arrowprops=dict(arrowstyle='->', color='#4CAF50', lw=2.0,
@@ -83,4 +83,4 @@ plt.subplots_adjust(left=0.04, right=0.99, top=0.9, bottom=0.08)
 plt.savefig('fig3_ros_coupling.png',
             dpi=300, bbox_inches='tight', pad_inches=0.16, facecolor='white')
 plt.close()
-print("Figure 5 saved.")
+print("Figure 3 saved.")

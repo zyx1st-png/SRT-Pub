@@ -753,9 +753,9 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 
 **Figure 2.** *Cross-modal operationalization map for executive friction ($\Psi_f$).* Central latent construct with four proxy classes. Core validation chain: behavioral, linguistic, and low-cost physiology (HRV/SCR/cortisol). Expansion chain: ROS biomarkers and neural proxies (PCI, Fisher information, theta-gamma coupling, basal ganglia gating). Arrows indicate predicted direction of association; "(inv)" denotes inverse coding.
 
-**Figure 3.** *ROS-$\Psi_f$ coupling mechanism: from executive friction to clinical expression.* Directed acyclic graph showing the pathophysiological chain from sustained high $\Psi_f$ through elevated metabolic demand, increased ROS production, oxidative damage, inflammatory signaling, reduced selection power ($P_{\text{sel}}$), and deepened knowing-doing gap, forming a positive feedback loop (dashed red arrow). Dashed boxes at bottom indicate three intervention targets: pharmacological ($\downarrow \Psi_f$), behavioral ($\uparrow P_{\text{sel}}$), and antioxidant ($\uparrow$ clearance).
+**Figure 3.** *Proposed oxidative feedback loop linking sustained executive friction to clinical features.* Schematic diagram showing a proposed loop from sustained high $\Psi_f$ through elevated metabolic demand, increased ROS production, oxidative damage, inflammatory signaling, reduced selection power ($P_{\text{sel}}$), and a deepened knowing-doing gap (dashed red feedback arrow). Dashed boxes at bottom indicate three possible modulation points: pharmacological ($\downarrow \Psi_f$), behavioral ($\uparrow P_{\text{sel}}$), and antioxidant ($\uparrow$ clearance).
 
-**Figure 4.** *Predicted $\Psi_f$ proxy signatures across clinical conditions.* Radar chart showing disorder-specific friction profiles for healthy controls (green), major depressive disorder (red), obsessive-compulsive disorder (purple), and Parkinson's disease (orange) across ten proxy measures. Higher values indicate greater impairment or higher executive friction. These predictions constitute falsifiable claims derived from the $\Psi_f$ framework.
+**Figure 4.** *Schematic predicted $\Psi_f$ proxy signatures across clinical conditions.* Radar chart showing schematic relative profiles for healthy controls (green), major depressive disorder (red), obsessive-compulsive disorder (purple), and Parkinson's disease (orange) across ten proxy measures. Higher values indicate greater impairment or higher executive friction. Values are schematic relative predictions, not empirical estimates.
 
 **Figure 5.** *Core-chain protocol and critical-load prediction.* (A) Low-cost protocol for H72 and H-NEURO-EXEC-01, integrating two prompt contexts (neutral factual retell vs self-decision narrative), behavioral battery, HRV/SCR recording, appraisal ratings, and NLP extraction for latent-factor estimation. Baseline load is estimated as $\rho^*=z(\Psi_f^{\text{baseline, latent}})-z(P_{\text{sel}}^{\text{proxy}})$ (Eq. 7c) in primary analyses; ratio-based $\rho$ is sensitivity-only. (B) Predicted task-switch cost as a function of normalized load $\rho$: the saturation model (solid red) includes a critical point $\rho_c$ and nonlinear escalation into a "know but can't do" zone, while the additive model (dashed gray) predicts linear increase.
 
@@ -833,11 +833,11 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 
 ![](figures/fig2_proxy_map.png){ width=6.5in }
 
-**Figure 3.** *ROS–$\Psi_f$ coupling mechanism: from executive friction to clinical expression.*
+**Figure 3.** *Proposed oxidative feedback loop linking sustained executive friction to clinical features.*
 
 ![](figures/fig3_ros_coupling.png){ width=6.5in }
 
-**Figure 4.** *Predicted $\Psi_f$ proxy signatures across clinical conditions.*
+**Figure 4.** *Schematic predicted $\Psi_f$ proxy signatures across clinical conditions.*
 
 ![](figures/fig4_clinical_radar.png){ width=6.5in }
 

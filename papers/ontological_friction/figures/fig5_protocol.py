@@ -1,5 +1,5 @@
 """
-Figure 4: Experimental Protocol + Predicted Nonlinear Cost Curve
+Figure 5: Experimental Protocol + Predicted Nonlinear Cost Curve
 Panel A: Protocol timeline for H72 + H-NEURO-EXEC-01
 Panel B: Predicted nonlinear cost curve vs linear alternative
 """
@@ -19,7 +19,7 @@ ax1.set_title('A. Experimental Protocol (Single Session)', fontsize=18, fontweig
 # Timeline blocks
 blocks = [
     (0.5, 8.0, 2.5, 1.2, 'Semi-structured\nInterview', '#E3F2FD', '15 min', '#1565C0'),
-    (3.5, 8.0, 2.5, 1.2, 'Behavioral Battery\n(TSC, Stroop, WCST)', '#FFF3E0', '20 min', '#E65100'),
+    (3.5, 8.0, 2.5, 1.2, 'Behavioral Battery\n(Task switching, Stroop,\nWCST)', '#FFF3E0', '20 min', '#E65100'),
     (6.5, 8.0, 2.0, 1.2, 'Resting HRV\n+ SCR', '#E8F5E9', '5 min', '#2E7D32'),
     (9.0, 8.0, 2.0, 1.2, 'Cortisol\n(optional)', '#F3E5F5', '2 min', '#6A1B9A'),
 ]
@@ -28,7 +28,9 @@ for x, y, w, h, label, color, dur, ec in blocks:
     box = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.1",
                           facecolor=color, edgecolor=ec, linewidth=1.5)
     ax1.add_patch(box)
-    ax1.text(x + w/2, y + h/2 + 0.1, label, ha='center', va='center', fontsize=15, fontweight='bold')
+    label_size = 12 if label.startswith('Behavioral Battery') else 15
+    ax1.text(x + w/2, y + h/2 + 0.1, label, ha='center', va='center',
+             fontsize=label_size, fontweight='bold')
     ax1.text(x + w/2, y - 0.3, dur, ha='center', va='center', fontsize=12, color='#1a1a1a')
 
 # Arrows between blocks
@@ -41,10 +43,10 @@ ax1.text(6.0, 6.0, 'Analysis Pipeline', ha='center', va='center',
          fontsize=18, fontweight='bold', color='#333')
 
 analysis = [
-    (1.5, 4.5, 'NLP\nExtraction', '#E3F2FD', '#1565C0'),
+    (1.5, 4.5, 'Language-feature\nExtraction', '#E3F2FD', '#1565C0'),
     (4.0, 4.5, 'Composite\nZ-score', '#FFF3E0', '#E65100'),
     (6.5, 4.5, 'Multilevel\nCorrelation', '#E8F5E9', '#2E7D32'),
-    (9.0, 4.5, 'SEM\n(CFA)', '#F3E5F5', '#6A1B9A'),
+    (9.0, 4.5, 'Latent Factor\nModel', '#F3E5F5', '#6A1B9A'),
 ]
 
 for x, y, label, color, ec in analysis:
@@ -67,7 +69,7 @@ for i, (x, _, _, _, _) in enumerate(analysis):
 design_text = ('Study Design\n'
                'N = 120 healthy adults\n'
                '3 sessions × 6 weeks\n'
-               'ICC for test-retest')
+               'test-retest reliability')
 ax1.text(6.0, 1.5, design_text, ha='center', va='center', fontsize=13,
          bbox=dict(boxstyle='round,pad=0.5', facecolor='#FAFAFA', edgecolor='#999'))
 
@@ -114,4 +116,4 @@ plt.subplots_adjust(left=0.08, right=0.97, top=0.95, bottom=0.08, hspace=0.2)
 plt.savefig('fig5_protocol.png',
             dpi=300, bbox_inches='tight', pad_inches=0.16, facecolor='white')
 plt.close()
-print("Figure 4 saved.")
+print("Figure 5 saved.")
