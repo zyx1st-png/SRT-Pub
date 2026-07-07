@@ -25,6 +25,7 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-THERMO-LANDAUER-OVEREXTENSION | physics / thermodynamics | selection cost; `Psi_f` projection | downgrade pressure | active_v1 | Landauer-style thermodynamic cost may be overextended from physical erasure / reset / durable record formation to all forms of selection, including reversible computation, purely formal selection, ordinary choice, or metaphorical constraint. | [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md) |
 | CL-AI-FUNCTIONALIST-STAKE-CHALLENGE | AI / ML | `d-value`; consequence return; capacity-stake distinction | downgrade pressure | active_v1 | Functionalist accounts, long-horizon agent architectures, persistent memory, self-maintenance, embodiment, resource constraints, reward loops, or consequence-bearing deployment conditions may weaken the high-capacity / low-stake contrast if they create genuine stake-coupled consequence return to the AI system itself. | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) |
 | CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE | AI / ML | `L2` hardening; relational convergence; objectification boundary | downgrade / scope pressure | active_v1 | Calibrated local-neighborhood convergence may reflect generic dataset semantics, paired multimodal training, task utility, or metric properties rather than SRT-specific selection history or `L2` hardening. | [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md) |
+| CL-AI-JSPACE-ACCESS-OVERCLAIM | AI / ML / cognitive science | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; subjecthood boundary | downgrade / scope pressure | active_v1 | J-space may establish language-poised cognitive access or output-influence geometry without establishing stake-coupled concern, embodied subjecthood, or SRT-specific friction. | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) |
 
 ## Pressure Details
 
@@ -58,7 +59,7 @@ The pressure is that functionalist accounts, long-horizon agent architectures, p
 
 If future systems possess persistent identity, self-maintenance, embodiment, resource constraints, irreversible loss, stable memory, or outcome loops returning to the system's own continuity, the related evidence card should be downgraded, rewritten, or split into architecture-specific cards.
 
-Functionalist explanations may hold that sufficiently organized information processing or behavioral capacity is already enough to support some mental-status attribution. This does not settle the SRT question, but it is a pressure case against treating high capability / low stake as a stable class-wide contrast.
+Functionalist explanations may hold that sufficiently organized information processing or behavioral capacity is already enough for relevant mental-status attribution. This does not settle the SRT question, but it is a pressure case against treating high capability / low stake as a stable class-wide contrast.
 
 RL reward / preference modeling should still not be treated automatically as `d-value`. However, if reward becomes tied to system-level self-maintenance or irreversible consequence, that becomes a pressure case for the interface.
 
@@ -68,13 +69,25 @@ Deployment stakes for users, firms, or institutions are not automatically stakes
 
 This is not a refutation of SRT. It is a downgrade and scoping pressure on the local-neighborhood calibration interface proposed in [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md).
 
-The pressure is that calibrated local-neighborhood convergence in learned representations may be fully explainable by generic properties of the data and task: semantic clustering, paired image-text datasets, contrastive objectives, population structure, or the fact that rank-based neighborhood metrics are less dimension-confounded than global spectral metrics.
+The pressure is that calibrated local-neighborhood convergence in learned representations may be fully explainable by generic properties of the data and task: semantic clustering, paired multimodal training, task utility, or the fact that rank-based neighborhood metrics are less dimension-confounded than global spectral metrics.
 
 If local-neighborhood alignment cannot predict transfer, generalization, cross-modal behavior, or any other independently meaningful downstream structure, the related evidence card should be downgraded toward E1 or retained only as a methodological caution.
 
 If restricted-permutation nulls, dataset-structure-aware controls, or broader multimodal replications remove the effect, the card should no longer be treated as an E3 operational proxy.
 
 This pressure also prevents overclaiming: local neighborhood convergence must not be used to infer AI subjecthood, consciousness, `d-value`, or a shared global world model.
+
+### CL-AI-JSPACE-ACCESS-OVERCLAIM
+
+This is not a refutation of SRT. It is a downgrade and scope pressure on the J-space / global-workspace interface proposed in [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md).
+
+The pressure is that a language-model `J-space` may show cognitive access, reportability, output influence, working-memory-like storage, or global-workspace-like behavior without establishing SRT's stronger requirements for stake-coupled concern or subjecthood.
+
+A second pressure is method-specific: `J-lens` is tied to verbalizable future-token influence. It may miss nonverbal, embodied, affective, low-level, or socially distributed forms of value and concern. It may also confuse a stable access layer with token geometry, lexical decoding, or ordinary working-memory representations.
+
+A third pressure is theory-specific: Global Workspace Theory and ordinary mechanistic interpretability may explain the external finding without SRT. If SRT cannot distinguish `T_dir` / reselectability from generic output influence, or `Psi_f` from ordinary conflict / uncertainty tokens, the evidence card should remain E2 or be downgraded toward E1.
+
+Any future upgrade requires architecture-level evidence for persistent consequence return, non-substitutable future burden, self-maintenance, embodiment, or a validated SRT-specific readout that does more than recover reportable tokens.
 
 ## Required Practice
 

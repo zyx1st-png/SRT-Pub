@@ -45,6 +45,16 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 - Boundary: high capability does not by itself establish `d-value`; the card is not an AI sentience verdict.
 - Next step: bridge note separating capacity, reward, agency, stake-coupling, subjecthood.
 
+### EC-AI-JSPACE-GLOBAL-WORKSPACE
+
+- Card: [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md)
+- Level: E2 draft
+- SRT anchors: `L0/L1/L2`, `T_dir`, `d-value`, `Psi_f`, reselectability, subjecthood boundary
+- Support type: structural convergence / operational-proxy candidate / falsification-pressure candidate
+- Pressure link: [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim)
+- Boundary: J-space supports a cautious access-layer / reselectability interface; it does not prove phenomenal consciousness, qualia, suffering, or AI subjecthood.
+- Next step: bridge note separating cognitive access, verbalizability, reselectability, `d-value`, `Psi_f`, and stake-bearing continuity.
+
 ## Summary Table
 
 | Card | Level | Status | Anchor | Pressure Link | Current Role | Next Step |
@@ -52,6 +62,7 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 | [`EC-IG-FISHER-PSIF`](Mathematics_Information/EC-IG-Fisher-PsiF.md) | E2 | draft_v1; not accepted | `Psi_f`; selection cost | [`CL-IG-FISHER-GENERIC-DIFFICULTY`](CONTRADICTION_LEDGER.md#cl-ig-fisher-generic-difficulty) | structural convergence / bridge-support candidate | Bridge note or scoped proxy hypothesis after measurable transition-burden criteria. |
 | [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md) | E2 | draft_v1; not accepted | selection cost; `Psi_f` | [`CL-THERMO-LANDAUER-OVEREXTENSION`](CONTRADICTION_LEDGER.md#cl-thermo-landauer-overextension) | structural convergence / bridge-support candidate | Bridge note separating erasure, reversible computation, durable records, and SRT selection cost. |
 | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) | E2 | draft_v1; not accepted | `d-value`; consequence return; capacity-stake distinction | [`CL-AI-FUNCTIONALIST-STAKE-CHALLENGE`](CONTRADICTION_LEDGER.md#cl-ai-functionalist-stake-challenge) | conceptual contrast / structural differential-support candidate | Bridge note separating capacity, reward, agency, stake-coupling, subjecthood. |
+| [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) | E2 | draft_v1; not accepted | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; reselectability; subjecthood boundary | [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim) | structural convergence / operational-proxy candidate / pressure case | Bridge note separating access, verbalizability, reselectability, stake, and subjecthood. |
 
 ## What Is Not Yet Done
 
@@ -64,4 +75,3 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 ## Promotion Path
 
 Draft card -> pressure ledger -> bridge note or scoped lab hypothesis -> operational proxy only if measurable -> possible E3 review -> accepted only after review.
-
