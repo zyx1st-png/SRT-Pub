@@ -63,7 +63,7 @@ created: 2026-06-19
 | **锚定** | A | `L_2` 硬度 + `Ψ_f` 可支付性 + 秩序增益四判据（可延续/可协调/不外包/可再选择；2026-07-05 由三升四） | `_SRT_PSI_F_CANONICAL.md`；`SRT_Selection_Argument §7b`；`SRT_Core_22` Eq-Select-Thermo |
 | **回流** | R / B | 承担 → 后果不可外部化地压回**承重位**（路径依赖泛函导数 δθ/δσ ≠ 0） | `SRT_Selection_Argument §2b.3`；`SRT_Core_22` Eq-Evo-03b |
 | 整环路 | — | Eq-Bridge-Loop-01：`L_0 →[Ĝθ] L_1 →[writeback] L_2 →[constraint] Ĝθ′ → L_1′` | `Core/SRT_Core_22` Eq-Bridge-Loop-01 |
-| 现实强度 | S+X+R+H−修复 | 与既有 **秩序增益三判据** + Eq-Select-Thermo 可支付不等式重叠，应回链而非另立 | `SRT_Selection_Argument §7b`；`SRT_Core_22` Eq-Select-Thermo-C2 |
+| 现实强度 | S+X+R+H−修复 | 与既有 **秩序增益四判据**（可延续/可协调/不外包/可再选择；2026-07-05 由三升四）+ Eq-Select-Thermo 可支付不等式重叠，应回链而非另立 | `SRT_Selection_Argument §7b`；`SRT_Core_22` Eq-Select-Thermo-C2 |
 | 承受位 Bₜ | Bₜ | 承重位 / 具身位（关切 `d` 的稳定写入位置） | `_SRT_D_VALUE_CANONICAL.md`；Q14 / Q16 |
 
 **结论**：MSD 不是新理论，而是既有机器在「单次成形」与「跨时间环路」两个尺度上的重新串联。
@@ -114,11 +114,11 @@ created: 2026-06-19
 - 不证明 SRT 已被形式化或经验验证；本桥只澄清既有对象间的串联关系。
 - 不升格为 canonical：MSD 不是新公理、新算子或新方程层。
 - 不改动 Q05 等冻结正文，也不改 `Core_22` / canonical 定义；正文/canonical 的任何改动须另走治理流程。
-- 「现实强度」四维仍需与秩序增益三判据 + Eq-Select-Thermo 正式对账后才可定稿，本桥仅标记重叠。
+- 「现实强度」四维仍需与秩序增益四判据 + Eq-Select-Thermo 正式对账后才可定稿，本桥仅标记重叠。
 
 ## 6. Related Anchors
 
-- 哲学正面论证：`Core_Law/SRT_Selection_Argument.md`（§2b 认知链、§7b 秩序增益三判据）
+- 哲学正面论证：`Core_Law/SRT_Selection_Argument.md`（§2b 认知链、§7b 秩序增益四判据）
 - 形式层：`Core/SRT_Core_22_Equations.md`（Eq-Bridge-Loop-01 / Eq-Bridge-L2-01 / Eq-Evo-03b / Eq-Select-Thermo）、`Core_Law/SRT_L1_Formalism.md`
 - canonical 锚点：`_SRT_PSI_F_CANONICAL.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_SYMBOL_TABLE.md`
 - 书稿：`01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md`、冻结记录 `BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`
