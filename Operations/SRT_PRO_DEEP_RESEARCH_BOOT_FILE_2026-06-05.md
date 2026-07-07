@@ -1,6 +1,11 @@
 ---
 id: SRT-PRO-DEEP-RESEARCH-BOOT-FILE-2026-06-05
 type: upload_boot_file_for_pro_model
+status: active_v1
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
 created: 2026-06-05
 scope: 从存在到秩序 / SRT / Deep Research
 authoring_note: 这是给 Pro / Deep Research 读取的入口文件，不依赖 GitHub 调用。

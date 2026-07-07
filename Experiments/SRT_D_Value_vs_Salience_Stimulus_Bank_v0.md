@@ -23,7 +23,7 @@ dependency:
   - Experiments/SRT_Pilot_Cards_v1.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
   - Core/SRT_Validation_Template.md
-  - Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+  - papers/SRT_D_Value_Ontology_of_Concern_Outline.md
 machine_summary: >
   Draft stimulus bank for the first SRT pilot: d-value vs salience. It provides low-risk, short scenario
   candidates designed for online pre-rating. Items are organized into high-salience/low-d, matched-salience/high-d,

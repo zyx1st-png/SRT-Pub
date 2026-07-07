@@ -1,3 +1,14 @@
+---
+id: SRT-PRO-UPLOAD-HOWTO
+type: operations_howto
+tags: [Operations, Book, DeepResearch]
+status: active_v1
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+---
+
 # 如何给 Pro / Deep Research 上传《从存在到秩序》书稿
 
 你现在遇到的问题是：Pro 模型或 Deep Research 对 GitHub 仓库调用不稳定，所以不要让它临时访问仓库，而是给它一个本地合并后的 Markdown 文件。

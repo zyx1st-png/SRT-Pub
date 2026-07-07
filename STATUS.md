@@ -14,7 +14,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 > **Connector-safe reading path**: This dashboard is moderately long. For connector reads, start with [`STATUS_Split/README.md`](STATUS_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new status authority.
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-06-29
+> **最后更新**：2026-07-07
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -26,6 +26,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 当前后续重点是让 domain 文件持续回链 canonical，避免 bridge / companion / lab 命题反向冒充 core。
 - 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。） **`2026-06-19`：P0 姿态修订完成，框架层落地（PR #506：引入「选择性收束」过程词、宇宙地平线读法、Q26 同步失败条件），书稿冻结为 RC1-candidate；导出校验通过（全书 37 项 / 八章主干 10 项）。见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`。**
 - **`2026-07-04`：外部评审（知微《完整稿审读报告》）完成开卷过堂**：三条 P0 中两条、四条 P1 中两条核查为「已实现」，结构手术（章合并/删注/删回到杯子）驳回，品味级条目收编为一轮施工（显影免责去重、术语表完整化、后半书语域收敛、三幕节奏诊断、专业读者简报补「分界与独立贡献」节）。裁决与证据见 `01_Source_Intuition/BOOK/BOOK_EXTERNAL_REVIEW_DISPOSITION_知微_2026-07-04.md`；已核查 `scripts/compile_book.py` 导出无漏章（Q04b/Q15b 在编制表内）。
+- **`2026-07-07`：工程结构清理一轮完成**：`Papers/`→`papers/` 大小写合并、governance preflight 接入 GitHub Actions（frontmatter 警告基线已重置，棘轮生效）、前台重构裁决为永久指针覆盖层（`FRONTSTAGE_RESTRUCTURE_PLAN.md` adjudicated_v2）、根目录一次性文件归档入 `Operations/`、生成二进制与 `graphify-out/` 移出 git 追踪。全记录见 `Operations/Engineering_Structure_Pass_2026-07-07.md`。
 
 ## 当前建议首读顺序
 
@@ -35,7 +36,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 - `Operations/README.md`
 - `Governance/README.md`
-- `memory/YYYY-MM-DD.md`（today + yesterday）
+- `memory/YYYY-MM-DD.md`（today + yesterday；仅当存在时读，该层可能长期休眠）
 
 ## 当前权威锚点
 

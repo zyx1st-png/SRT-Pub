@@ -1,7 +1,23 @@
 # SRT Frontstage Restructure Plan
 
 Date: 2026-05-04
-Status: proposed_v1
+Status: adjudicated_v2_pointer_overlay (2026-07-07)
+
+## 2026-07-07 Adjudication
+
+The numbered layers (`01_`–`05_`) are now **permanently a frontstage pointer overlay**, not a migration target. Phase 1–2 are complete and final; Phase 3 (selective migration) and Phase 4 (Operations/Governance downstage migration) are **closed** and will not run unless a future decision explicitly reopens them.
+
+Rationale:
+
+1. Real content lives in the legacy domain directories with hundreds of inbound links; `CANONICAL_REGISTRY.md`, symbol tables, and coverage indexes all reference legacy paths. Bulk migration is high breakage risk with zero theory payoff.
+2. The frontstage goal — a first-time reader encountering SRT in the right order — is already achieved by the layer READMEs, `START_HERE.md`, and the root README reading frame.
+3. `01_Source_Intuition/BOOK/` is the only numbered layer with substantial native content and is an active work line; it stays.
+
+Standing rule going forward:
+
+- Existing files do not move into numbered layers.
+- New public-facing or source-intuition material **may land directly** in a numbered layer (BOOK is the precedent).
+- `03_Bridges/` remains a pointer index to bridge content wherever it lives; `Bridge/` and in-domain bridge files stay put.
 
 ## Purpose
 

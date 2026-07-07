@@ -14,7 +14,7 @@ canonical: false
 date: 2026-04-28
 reference_pr: "PR #43 (Philosophy Foundations_Annex extraction)"
 dependency:
-  - SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
+  - Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
   - Philosophy/PH_SS_Hardening_Audit_2026-04-27.md
 machine_summary: >
   Audit-only report examining all non-Philosophy domains for refactoring opportunities
@@ -49,7 +49,7 @@ machine_summary: >
 
 ## 1. Method
 
-Scan basis: directory listings and file contents observed during this session, git log, commit history, frontmatter fields, and cross-references visible in files read during PR #43 work. Key files examined include: `SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md`, `PH_SS_Hardening_Audit_2026-04-27.md`, `_SRT_INDEX.md`, `AGENTS.md`, and all Annex/Split files touched in this session.
+Scan basis: directory listings and file contents observed during this session, git log, commit history, frontmatter fields, and cross-references visible in files read during PR #43 work. Key files examined include: `Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md`, `PH_SS_Hardening_Audit_2026-04-27.md`, `_SRT_INDEX.md`, `AGENTS.md`, and all Annex/Split files touched in this session.
 
 **Judgment criteria applied:**
 - Line count relative to 800-line threshold

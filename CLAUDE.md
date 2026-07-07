@@ -24,7 +24,7 @@
 
 8. [Operations/README.md](Operations/README.md)
 9. [Governance/README.md](Governance/README.md)
-10. `memory/YYYY-MM-DD.md`（today + yesterday）
+10. `memory/YYYY-MM-DD.md`（today + yesterday；仅当存在时读，该层可能长期休眠，缺席属正常）
 11. [HEARTBEAT.md](HEARTBEAT.md)（仅 heartbeat / automation 风格工作）
 
 如处理 `01_Source_Intuition/BOOK/` 下的书籍写作、修订、翻译、评审、结构调整或章节判断任务，必须额外读取：

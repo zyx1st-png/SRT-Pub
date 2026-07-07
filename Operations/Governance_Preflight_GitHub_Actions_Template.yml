@@ -1,3 +1,10 @@
+# INSTALL (one manual step; pushing .github/workflows/ needs a credential with
+# `workflow` scope, e.g. after `gh auth refresh -s workflow`):
+#   mkdir -p .github/workflows
+#   cp Operations/Governance_Preflight_GitHub_Actions_Template.yml .github/workflows/governance-preflight.yml
+#   then strip this INSTALL comment block, commit, push.
+# 2026-07-07: push trigger narrowed to main only; agent branches (codex/**,
+# claude/**) are covered by pull_request, avoiding double runs.
 name: Governance Preflight
 
 on:
@@ -5,7 +12,6 @@ on:
   push:
     branches:
       - main
-      - "codex/**"
 
 permissions:
   contents: read

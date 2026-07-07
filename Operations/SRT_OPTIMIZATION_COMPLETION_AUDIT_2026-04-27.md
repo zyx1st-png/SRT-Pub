@@ -34,9 +34,9 @@ dependency:
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
   - Philosophy/SRT_Political_Casebook.md
-  - Papers/SRT_Selection_Realism_Paper_Outline.md
-  - Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
-  - Papers/SRT_NonReductive_Verification_Outline.md
+  - papers/SRT_Selection_Realism_Paper_Outline.md
+  - papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+  - papers/SRT_NonReductive_Verification_Outline.md
 machine_summary: >
   Stage-completion audit for the 2026-04-27 SRT optimization chain after PH-SS philosophy hardening.
   Records completed artifacts across registry discovery, validation template, AI consciousness and responsibility,
@@ -107,7 +107,7 @@ This means SRT is no longer mainly in a “soft points need emergency patching�
 | `Philosophy/README.md` | PH-SS route already current | complete |
 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | machine route active_v6 | complete |
 | `Neuroscience/README.md` | subjecthood cross-link added | complete |
-| `CODEX_PROMPT_Update_Registry_For_PH_SS_Files.md` | safe registry update prompt | complete |
+| `Operations/Codex_Prompts/CODEX_PROMPT_Update_Registry_For_PH_SS_Files.md` | safe registry update prompt | complete |
 
 ### 1.3 Validation / experiment layer
 
@@ -196,9 +196,9 @@ workplace hierarchy.
 
 | Artifact | Role | Status |
 |---|---|---|
-| `Papers/SRT_Selection_Realism_Paper_Outline.md` | selection realism / layered realism paper route | active_v1 |
-| `Papers/SRT_D_Value_Ontology_of_Concern_Outline.md` | d-value / ontology of concern paper route | active_v1 |
-| `Papers/SRT_NonReductive_Verification_Outline.md` | testing without flattening / validation paper route | active_v1 |
+| `papers/SRT_Selection_Realism_Paper_Outline.md` | selection realism / layered realism paper route | active_v1 |
+| `papers/SRT_D_Value_Ontology_of_Concern_Outline.md` | d-value / ontology of concern paper route | active_v1 |
+| `papers/SRT_NonReductive_Verification_Outline.md` | testing without flattening / validation paper route | active_v1 |
 
 Paper routes now available:
 
@@ -212,8 +212,8 @@ Paper routes now available:
 
 | Artifact | Role | Status |
 |---|---|---|
-| `CODEX_PROMPT_Second_Formula_Role_Pass.md` | safe second formula-label prompt | executed by Claude Code |
-| `CODEX_PROMPT_Long_Foundations_Axioms_Deeper_Reorganization.md` | safe long-file reorg prompt | executed by Claude Code |
+| `Operations/Codex_Prompts/CODEX_PROMPT_Second_Formula_Role_Pass.md` | safe second formula-label prompt | executed by Claude Code |
+| `Operations/Codex_Prompts/CODEX_PROMPT_Long_Foundations_Axioms_Deeper_Reorganization.md` | safe long-file reorg prompt | executed by Claude Code |
 | `Philosophy/Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md` | reorganization plan / map | plan_v1 |
 
 Second formula-role pass completed:
@@ -316,7 +316,7 @@ responsibility = normatively constrained answerability, not causation alone.
 | Turn validation roadmap into pilot cards | moves toward research | `Experiments/SRT_Pilot_Cards_v1.md` |
 | Draft first public essay | outreach | `Public/SRT_Selection_Realism_Public_Essay_CN.md` |
 | Draft first manuscript section | publication | choose one of three paper outlines |
-| Create reviewer FAQ | peer-review readiness | `Papers/SRT_Reviewer_FAQ.md` |
+| Create reviewer FAQ | peer-review readiness | `papers/SRT_Reviewer_FAQ.md` |
 | Create visual diagram pack | communication | `Figures/SRT_Core_Diagrams_Brief.md` |
 
 ---
@@ -367,15 +367,15 @@ L2 hardening vs memory / habit.
 Choose one:
 
 ```text
-Papers/SRT_Selection_Realism_Paper_Outline.md
-Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
-Papers/SRT_NonReductive_Verification_Outline.md
+papers/SRT_Selection_Realism_Paper_Outline.md
+papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+papers/SRT_NonReductive_Verification_Outline.md
 ```
 
 Then draft:
 
 ```text
-Papers/<chosen>_Manuscript_v0.md
+papers/<chosen>_Manuscript_v0.md
 ```
 
 ### Direction C — Repository cleanup
