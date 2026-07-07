@@ -26,6 +26,7 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-AI-FUNCTIONALIST-STAKE-CHALLENGE | AI / ML | `d-value`; consequence return; capacity-stake distinction | downgrade pressure | active_v1 | Functionalist accounts, long-horizon agent architectures, persistent memory, self-maintenance, embodiment, resource constraints, reward loops, or consequence-bearing deployment conditions may weaken the high-capacity / low-stake contrast if they create genuine stake-coupled consequence return to the AI system itself. | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) |
 | CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE | AI / ML | `L2` hardening; relational convergence; objectification boundary | downgrade / scope pressure | active_v1 | Calibrated local-neighborhood convergence may reflect generic dataset semantics, paired multimodal training, task utility, or metric properties rather than SRT-specific selection history or `L2` hardening. | [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md) |
 | CL-AI-JSPACE-ACCESS-OVERCLAIM | AI / ML / cognitive science | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; subjecthood boundary | downgrade / scope pressure | active_v1 | J-space may establish language-poised cognitive access or output-influence geometry without establishing stake-coupled concern, embodied subjecthood, or SRT-specific friction. | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) |
+| CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION | diverse intelligence / biology / social systems | `L2`; `Psi_f`; `d-value`; `T_dir`; consequence return | downgrade / scope pressure | active_v1 | Virtual governor theory may explain multiscale coordination through signaling architecture, feedback, stress translation, and attractor dynamics without requiring SRT-specific ontology or constructs. | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) |
 
 ## Pressure Details
 
@@ -88,6 +89,18 @@ A second pressure is method-specific: `J-lens` is tied to verbalizable future-to
 A third pressure is theory-specific: Global Workspace Theory and ordinary mechanistic interpretability may explain the external finding without SRT. If SRT cannot distinguish `T_dir` / reselectability from generic output influence, or `Psi_f` from ordinary conflict / uncertainty tokens, the evidence card should remain E2 or be downgraded toward E1.
 
 Any future upgrade requires architecture-level evidence for persistent consequence return, non-substitutable future burden, self-maintenance, embodiment, or a validated SRT-specific readout that does more than recover reportable tokens.
+
+### CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION
+
+This is not a refutation of SRT. It is a downgrade and scope pressure on the virtual-governor interface proposed in [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md).
+
+The pressure is that virtual governor theory may already explain many multiscale coordination phenomena through cybernetics, signaling architecture, control theory, stress translation, incentives, attractors, and causal emergence. If these mechanisms are sufficient, SRT should not overclaim that virtual governors independently support SRT's stronger ontology.
+
+A second pressure is construct-specific. `Psi_f` must not be collapsed into ordinary stress, error, cost, or difficulty. `d-value` must not be collapsed into incentive, utility, or price. `L2` must not be collapsed into generic feedback governance. `T_dir` must not be collapsed into any directional signal.
+
+A third pressure is normative: a virtual governor can coordinate components while also exploiting, excluding, or sacrificing some positions. SRT must preserve the distinction between effective alignment and justified alignment, especially when foreclosure, exit, or competing governors are present.
+
+The card should remain E2 unless SRT defines measurable criteria that distinguish SRT-specific friction, concern, reselectability, and subjecthood boundaries from generic cybernetic coordination.
 
 ## Required Practice
 
