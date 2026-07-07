@@ -32,6 +32,7 @@ For a summary of current draft cards and pressure links, see [`REVIEW_MAP.md`](R
 | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) | diverse intelligence / biology / social systems | `L2` hardening; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; consequence return; multiscale subjecthood; foreclosure / exit | E2 | draft_v1; not accepted | Virtual governor alignment as a candidate model of relational high-level governance: system-level stress is translated into local pressures, incentives, and constraints that reshape component option-spaces. | [`CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION`](CONTRADICTION_LEDGER.md#cl-di-virtual-governor-cybernetic-reduction) |
 | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) | cognitive science / philosophy / neuroscience | `\hat{G}_θ`; `L0/L1/L2`; sensory grounding; qualia boundary; misrepresentation; embodiment | E2 | draft_v1; not accepted | Grounded Functionalism as a candidate sensory-grounding bridge: qualia contents are treated as world/body properties detected by embodied sensory systems rather than as purely intrinsic brain states. | [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction) |
 | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) | neuroscience / network neuroscience / systems neuroscience | `T_dir`; `L0/L1/L2`; `d-value`; `Λ`; relational selection; reselectability; context-sensitive closure; behavior-output interface | E3 | draft_v1; not accepted | Edge time series as interaction terms: pairwise neural co-fluctuations explain time-varying behavior above and beyond node activations across species, modalities, and scales. | [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction) |
+| [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) | synthetic biology / origin of life / minimal cell | `L0/L1`; `Psi_f`; `d-value`; `\hat{G}_θ`; biological closure; reselectability; consequence return; boundary formation; minimal life threshold | E2 | draft_v1; not accepted | Synthetic protocell cell-cycle closure as a boundary case: a membrane-bounded system can grow, replicate DNA, and divide, while remaining externally scaffolded and not fully alive. | [`CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-bio-synthetic-cell-life-overclaim) |
 
 Draft rows are not accepted evidence.
 
@@ -40,14 +41,15 @@ Draft rows are not accepted evidence.
 | SRT Construct | Future evidence-card route |
 |---|---|
 | `d-value` | stake, irreversible-risk sensitivity, non-substitutability, and decision burden proxies. |
-| `Ψ_f` | payability, friction, transition cost, Fisher / thermodynamic / metabolic projections. |
+| `Ψ_f` | payability, friction, transition cost, Fisher / thermodynamic / metabolic projections, and internally paid biological maintenance burden. |
 | `L2` hardening | institutional, social, memory, scaffold, and convergence-history proxies. |
 | subjecthood threshold | self-reference, consequence return, integration, and recovery-cost proxies. |
 | selection cost | thermodynamic, cognitive, biological, and social cost interfaces. |
 | `T_dir` | direction readability, value hiddenness, self-reorientation proxies, and behavior-relevant relational interaction terms. |
-| `\hat{G}_θ` | embodied selection, anchoring, and operator-state interfaces. |
+| `\hat{G}_θ` | embodied selection, anchoring, operator-state interfaces, and minimal biological boundary conditions. |
 | sensory grounding | detector-grounded qualia, embodiment, misrepresentation, and L0-to-L1 interfaces. |
 | relational selection | edge dynamics, interaction terms, context-sensitive closure, and cross-scale behavior-output interfaces. |
+| biological closure | protocell boundaries, genome replication, metabolism, division, self-maintenance, and evolution precursors. |
 
 ## Priority Domains For Future Cards
 
@@ -59,5 +61,6 @@ Draft rows are not accepted evidence.
 - AI / J-space / cognitive access / workspace-like internal representations
 - cognitive science / grounded functionalism / sensory qualia / detector interfaces
 - diverse intelligence / virtual governor / multiscale alignment / bioelectric coordination
+- synthetic biology / protocells / minimal life / biological closure
 - social science / institution as `L2` / hidden friction
 - biology / embodiment / consequence return / adaptation
