@@ -2,7 +2,7 @@
 id: SRT-NORMATIVITY-FRAMING-TRUEUP-PROPOSAL
 type: canonical_edit_proposal
 tags: [epsilon, Normativity, Canonical, EditProposal, ClosureBoundary, Seed]
-status: proposal_v0_not_applied
+status: level_a_applied_2026-07-05
 layer: meta
 epistemic_layer: research_program
 claim_mode: proposal
@@ -13,9 +13,11 @@ provenance: 把 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md` 的结论落成对 ca
 dependency: [SRT-EPSILON-NORMATIVITY-OPEN-TENSION, SRT-L0-METAPHYSICS, SRT-D-VALUE-CANONICAL]
 ---
 
-# 规范性 framing 收口 —— canonical 提议修订(仅 proposal,未应用)
+# 规范性 framing 收口 —— canonical 提议修订(Level A 已应用)
 
-> **硬声明(先读)**
+> **应用状态更新(2026-07-05)**：作者已授权并执行 **Stage 2 / Level A**(A1+A2+A3)：`Core_Law/SRT_L0_Metaphysics.md` §六 ε 词条与正骨架总结标签、`_SRT_D_VALUE_CANONICAL.md §5b.1` 三处过载措辞已按本文件 §2 收口(含高风险编辑日期标注)；A3 另加一句节首声明,使 §5b 下文的「全局最优/全局收敛」回声统一在收口下读取；`Core/SRT_Core_NormativeGradient.md §6` 的下游回声已同步。**Level B(实在论→构成性姿态整体改写)仍未应用**,保持远期独立决定。
+>
+> **硬声明(原文保留,作用域现仅指 Level B)**
 > - 本文件**只提议,不修改**任何 canonical。L0 / d-value 正文**未被触碰**。
 > - 它要动的是 SRT 的 **keystone framing**。`Core_Law/SRT_L0_Metaphysics.md` 的 freeze 明写:ε 的负担结构、唯一锚角色,**"不得在无显式高风险交叉核对下更改"**。因此本提议**必须**由作者按 `Governance/SRT_CANONICAL_FREEZE.md` + `Governance/SRT_EDIT_PROTOCOL.md` 走高风险流程。
 > - 依据是**一次**对抗性压力测试(`_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`),不是已结的定论。**建议分阶段(见 §4),不要一步改 L0。**
@@ -82,8 +84,8 @@ Level A 只剪过载措辞。**Level B 动的是文档的_stance_**:把 ε 从"L
 | 阶段 | 动作 | 风险 | 状态 |
 |---|---|---|---|
 | 0 | open-tension 记录入库(`_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`) | 低 | **已完成** |
-| 1 | 把该记录**提升为** `Core/SRT_OPEN_TENSIONS.md` 的正式条目(承认张力,先不改 L0) | 低 | 待作者 |
-| 2 | **Level A**(A1/A2/A3,外科式剪过载措辞) | 中(碰 keystone framing,但只剪不重构) | 待作者高风险流程 |
+| 1 | 把该记录**提升为** `Core/SRT_OPEN_TENSIONS.md` 的正式条目(承认张力,先不改 L0) | 低 | **已完成**(§9) |
+| 2 | **Level A**(A1/A2/A3,外科式剪过载措辞) | 中(碰 keystone framing,但只剪不重构) | **已执行 2026-07-05**(作者授权高风险流程) |
 | 3 | **Level B**(实在论→构成性姿态整体改写)+ 同步书名/方向三预测口径 | 高 | 远期,独立决定 |
 
 ---
@@ -101,6 +103,6 @@ Level A 只剪过载措辞。**Level B 动的是文档的_stance_**:把 ε 从"L
 
 ## 6. 防误用
 
-- 本文件是 proposal,**未应用**;在作者按 EDIT_PROTOCOL 采纳前,**L0 / d-value 的现行 framing 仍然有效**,不得引用本文件的"after"文本当 canonical。
+- **Level A 已于 2026-07-05 按作者授权应用**;canonical 现行文本以 `Core_Law/SRT_L0_Metaphysics.md` 与 `_SRT_D_VALUE_CANONICAL.md` 落地版为准,本文件的"after"文本仅为提案存档。**Level B 仍是 proposal,未应用**,在作者按 EDIT_PROTOCOL 采纳前不得引用其构想当 canonical。
 - "收口"使 SRT 规范性**更小但更立得住**;它**不**削弱方向二的道德系谱——只是把系谱的**规范区分工作**从"宇宙级 ε"转向"可重组判据 + 尚待硬化的闭包边界问题";后者经本轮对抗显示为**更值得继续硬化的承重位置**。
 - 与 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`、`_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md §4` 收敛,互为印证。

@@ -31,6 +31,23 @@ Core 24 predictions should not be defended by saying “SRT explains this too.�
 
 ---
 
+## 0b. Modification Discipline（修正/压力/失败；2026-07-05 Q26 backflow）
+
+When a prediction in this file fails or is challenged, the response must be classified **before** any rewrite:
+
+1. **Repair（修正）**: a local expression was imprecise; correcting it leaves the load-bearing claim untouched.
+2. **Pressure（压力）**: an edge case demands higher resolution; the claim survives but gains explicit scope conditions.
+3. **Failure（失败）**: the load-bearing criterion itself is systematically broken; the bridge claim must be withdrawn, not patched.
+
+Two standing gates:
+
+- **Progressive-vs-degenerative gate**: a modification made in response to a counterexample is admissible only if it adds independently testable content (new predictions, sharper proxies). A modification that only makes the old prediction vaguer or harder to refute is degenerative and must be recorded as such, not presented as refinement.
+- **External-judge gate**: every prediction and failure condition in this file must remain operationalizable by researchers who do not use SRT vocabulary. "You don't understand the theory" is not an admissible defense against an operationalized counter-result.
+
+**Provenance / level**: governance-grade validation rule, registered from book chapter Q26 §2/§5 (Lakatos-style progressive/degenerative distinction) so the theory layer carries the discipline independently of the book. The book is provenance, not authority.
+
+---
+
 ## 1. Prediction P24-1 — Non-Monotonic Selection Friction During New Reality Formation
 
 ### SRT prediction
@@ -346,6 +363,32 @@ If systems with no consequence return or non-transferable payability burden exhi
 
 ---
 
+## 6b. Prediction Set P24-7 — Cross-Construct Combination Signatures（组合签名，Q26 backflow）
+
+> **Provenance / level**: backflow from book chapter `01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md §4` (draft_v18; registered 2026-07-05). The book is provenance, not authority: each combination is registered here as a **P4/P5 observation-level hypothesis**, and each maps to already-registered theory constructs. Combination signatures complement P24-1..6: a single-construct prediction tests one construct against neighboring theories; a combination signature tests a **co-occurrence structure** that neighboring frameworks treat as anomalous but SRT treats as expected.
+
+### SRT prediction
+
+If SRT's felt-vs-structural decoupling machinery is right, the following anomalous combinations should be stably observable — repeatedly, cross-scenario, direction-consistent:
+
+| # | Combination (both at once) | Neighbor-theory reaction | SRT construct instantiated |
+|---|---|---|---|
+| C1 | real selection space shrinking + felt freedom rising | "unfree but not suffering?" | substitutive / lethal `L_2` signature: `T_dir` ↔ `T_dir^{alg}` convergence with hidden `ΔΨ_f^{gap}` accumulation（`Core_Law/SRT_L1_Formalism.md §3.5`） |
+| C2 | pain reports eliminated + structural self-consumption accelerating | "the intervention worked" | `Ψ_{f,felt}` suppressed while `Ψ_{f,actual}` accumulates（`_SRT_PSI_F_CANONICAL.md §10`） |
+| C3 | no malicious agents + injustice deepening on a group that cannot appeal | "find the hidden villain" | consequence-return one-way channel: member `C_i` absorbed by structure（`_SRT_D_VALUE_CANONICAL.md §2b / §2b.1`；`Core_Law/SRT_Collective_Selection.md`） |
+| C4 | task efficiency up + independent judgment below baseline after tool removal | "adaptation-period pains" | consequence-return dilution + d-exercise atrophy（`_SRT_D_VALUE_CANONICAL.md §9`） |
+| C5 | satisfaction at maximum + exit / reselection cost welded shut | "great user experience" | reselection-capacity loss as lethal-`L_2` diagnostic（`Core/SRT_OPEN_TENSIONS.md §4`；`Core_Law/SRT_Occlusion_Dynamics.md`） |
+
+### Systemic reversal condition (negative version)
+
+If cross-domain data stably show the **opposite** couplings — capacity shrinkage usually accompanied by rising felt unfreedom, pain reduction usually tracking structural improvement, efficiency gains usually strengthening independent judgment, stable injustice usually requiring malicious agents — then the core SRT distinction "felt state can decouple from structural consequence" loses its empirical base and must be withdrawn. This is a **systemic** failure condition over and above each combination's local failure, and it cannot be absorbed by re-labeling.
+
+### Test discipline
+
+"Stably observable" means: repeated, cross-scenario, direction-consistent, and costly for competing frameworks to absorb without ad-hoc patches (see §0b). A single vivid case is display material（显影）, not test material. C4 has early display-level observations (medicine / education de-skilling studies cited in the book's Q24) but no systematic test yet.
+
+---
+
 ## 7. Summary Matrix
 
 | Prediction | Core construct | Distinguishes SRT from | Key signature | Main failure condition |
@@ -356,6 +399,7 @@ If systems with no consequence return or non-transferable payability burden exhi
 | P24-4 | framework / `Ĝθ` | belief models / social construction / PP | visibility + admissibility + friction shift before belief | only explicit interpretation changes |
 | P24-5 | morality as `L_2` boundary | preference / convention / RL | costly enforcement + repair + hysteresis | moral norms equal preference/convention |
 | P24-6 | AI stake / `Ψ_f` | behaviorism / RL / FEP / IIT/GNW | performance without binding stake fails consequence-return tests | simulated stakes behave like real stakes |
+| P24-7 | felt / structural decoupling (multi-construct) | all single-indicator frameworks | anomalous co-occurrence combinations C1-C5 | opposite couplings stably observed cross-domain |
 
 ---
 

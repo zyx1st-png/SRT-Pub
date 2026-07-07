@@ -450,7 +450,7 @@ $$\text{Subject-level selection}_{cand} \Rightarrow \mathcal{M}_{meta}\!\left(\m
 
 ### Eq-Evo-03c: D-Value Forward Criterion (d 值前向判据)
 
-**动机**：关切词条（`Core_Law/SRT_L0_Metaphysics.md`）中的三判据（可延续/可协调/可再选择）是对 d 扩张是否**完成**的事后确认，依赖 θ 跨事件稳定改写的长期结算。前向判据针对更早的检测窗口：在选择事件内部、于 θ 写入完成之前，识别真实 d 扩张的早期结构信号。该判据是对 Core_Law 三判据的**前向补充**，不是替代。
+**动机**：关切词条（`Core_Law/SRT_L0_Metaphysics.md`）中的四判据（可延续/可协调/不外包/可再选择；2026-07-05 由三判据升为四判据）是对 d 扩张是否**完成**的事后确认，依赖 θ 跨事件稳定改写的长期结算。前向判据针对更早的检测窗口：在选择事件内部、于 θ 写入完成之前，识别真实 d 扩张的早期结构信号。该判据是对 Core_Law 四判据的**前向补充**，不是替代。
 
 **三层架构**：真实 d 扩张须经历三个阶段，不可跳层：
 
@@ -458,7 +458,7 @@ $$\text{Subject-level selection}_{cand} \Rightarrow \mathcal{M}_{meta}\!\left(\m
 |-----|---------|---------|---------|
 | **Stage-1**：$\sigma$ 对象切换 | Eq-Evo-03 快方程 $\dot\sigma$ | 秒-分 | 必要，但不足以判断真实扩张 |
 | **Stage-2**：$\theta$ 选择内暂态重加权 | Eq-Evo-03b $\left.\frac{d\theta}{dt}\right|_{\text{intra}}$ | 选择事件内 | **前向判据锁定此层** |
-| **Stage-3**：$\theta$ 跨事件稳定改写 | Eq-Evo-02 / Eq-Evo-03 的慢项 + Eq-Evo-02b（θ 张量惯性） | 周-月 | 三判据事后确认此层 |
+| **Stage-3**：$\theta$ 跨事件稳定改写 | Eq-Evo-02 / Eq-Evo-03 的慢项 + Eq-Evo-02b（θ 张量惯性） | 周-月 | 四判据事后确认此层 |
 
 **前向判据（FC-Layer2）**：在选择事件窗口内（$t \in [t_0,\, t_{conv}]$，即 $\|\dot\sigma(t)\| > \varepsilon_{conv}$）：
 
@@ -484,14 +484,14 @@ $$\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}} \approx 0
 
 - **FC-Layer2 为假**：无论 $\sigma$ 如何移动，都无充足理由把该事件读作真实 d 扩张起点。
 - **FC-Layer2 为真但 Stage-3 未完成**：事件内启动了真实调制，但未能稳定写入；这是"启动了但未完成"，不等同于 L₂ 劫持。
-- **FC-Layer2 为真且三判据长期成立**：可将该路径回判为真实 d 增长的完成态。
+- **FC-Layer2 为真且四判据长期成立**：可将该路径回判为真实 d 增长的完成态。
 
 **逻辑状态**：
 - [S] 三阶段分工与 Eq-Evo-03 / 03b / 02b 的方程分层一致，是对现有快-慢结构的整理，不额外引入新本体层。
-- [H] FC-Layer2 作为前向判据是候选推论，不替代 Core_Law 的三判据事后结算。
+- [H] FC-Layer2 作为前向判据是候选推论，不替代 Core_Law 的四判据事后结算。
 - [H] $\nabla_\theta d \cdot \left.\frac{d\theta}{dt}\right|_{\text{intra}}$ 的实验代理仍待校准；当前可候选地映射为冲突场景下的事件内偏好翻转、EEG/readiness-potential 时窗、以及跨试次的选择带宽变化。
 
-* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（$\Psi_f$ 代价签名的基础定义）；`Core_Law/SRT_L0_Metaphysics.md 关切词条`（三判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
+* **Cross-ref**: Eq-Evo-03b（选择内再入通道，FC-Layer2 依赖其激活条件）；Eq-Evo-02b（θ 张量惯性，决定 Stage-2→Stage-3 是否写入）；Eq-Force-01（$\Psi_f$ 代价签名的基础定义）；`Core_Law/SRT_L0_Metaphysics.md 关切词条`（四判据/事后确认）；`Core_Law/SRT_Core_Text_CN.md 步骤⑨-⑩`（稳定写入 vs 长时程结算）；`Core/SRT_Core_13a_Operator_Basics.md §2.1.3`（$d(\theta)$ 的演化动力学）。
 
 ## II. Thermodynamics of Agency (能动性热力学)
 
