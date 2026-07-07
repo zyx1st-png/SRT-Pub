@@ -42,11 +42,11 @@ dependency:
   - Neuroscience/SRT_Neuro_Predictions_Table.md
   - Philosophy/SRT_Ethics_Casebook.md
   - Philosophy/SRT_Political_Casebook.md
-  - Papers/SRT_Selection_Realism_Paper_Outline.md
-  - Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
-  - Papers/SRT_NonReductive_Verification_Outline.md
+  - papers/SRT_Selection_Realism_Paper_Outline.md
+  - papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+  - papers/SRT_NonReductive_Verification_Outline.md
   - Philosophy/Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md
-  - SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
+  - Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   Main optimization chain is complete enough for review, and the experiment branch now has a complete
@@ -159,7 +159,7 @@ Proceed from files to implementation:
 Main checkpoint file:
 
 ```text
-SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
+Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 ```
 
 Experiment branch files:
@@ -226,21 +226,21 @@ Do not create main-pilot files until pre-rating results are collected and review
 Choose one manuscript route:
 
 ```text
-Papers/SRT_Selection_Realism_Paper_Outline.md
-Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
-Papers/SRT_NonReductive_Verification_Outline.md
+papers/SRT_Selection_Realism_Paper_Outline.md
+papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+papers/SRT_NonReductive_Verification_Outline.md
 ```
 
 Then create:
 
 ```text
-Papers/<chosen>_Manuscript_v0.md
+papers/<chosen>_Manuscript_v0.md
 ```
 
 Recommended first manuscript if switching to publication:
 
 ```text
-Papers/SRT_NonReductive_Verification_Manuscript_v0.md
+papers/SRT_NonReductive_Verification_Manuscript_v0.md
 ```
 
 ### Direction C — Narrow cleanup

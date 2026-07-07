@@ -37,7 +37,7 @@ Before doing substantial pipeline / governance / theory work:
 
 1. Read `Operations/README.md`
 2. Read `Governance/README.md`
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) if present
+3. Read `memory/YYYY-MM-DD.md` (today + yesterday) if present — the memory layer may be dormant for long stretches; absence is normal, do not go looking for substitutes
 4. Read `HEARTBEAT.md` before heartbeat-style or automation-style work
 
 Before editing theory files, also read:

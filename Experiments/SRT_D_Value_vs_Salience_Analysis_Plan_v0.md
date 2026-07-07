@@ -24,7 +24,7 @@ dependency:
   - Experiments/SRT_Pilot_Cards_v1.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
   - Core/SRT_Validation_Template.md
-  - Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+  - papers/SRT_D_Value_Ontology_of_Concern_Outline.md
 machine_summary: >
   Draft analysis plan for the first SRT pilot: d-value vs salience. It defines pre-rating, item selection,
   main task structure, primary and secondary outcomes, mixed-effects models, exclusion criteria, robustness

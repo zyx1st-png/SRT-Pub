@@ -135,8 +135,8 @@ not all selection is consciousness.
 | `SRT_Philosophy_Tradition_Comparison_PH_SS.md` | tradition comparison / novelty defense | active_v1 |
 | `SRT_Subjecthood_Threshold_Interface.md` | S0-S6 subjecthood / agency / responsibility interface | active_v1 |
 | `SRT_Philosophy_Public_OnePager.md` | public-facing explanation | active_v1 |
-| `CODEX_PROMPT_Philosophy_Long_File_PH_SS_Direct_Pointers.md` | root fallback prompt for long-file direct pointers | complete |
-| `CODEX_PROMPT_Philosophy_Long_Foundations_Axioms_Refactor.md` | root prompt for safe Foundations / Axioms refactor | complete |
+| `Operations/Codex_Prompts/CODEX_PROMPT_Philosophy_Long_File_PH_SS_Direct_Pointers.md` | root fallback prompt for long-file direct pointers | complete |
+| `Operations/Codex_Prompts/CODEX_PROMPT_Philosophy_Long_Foundations_Axioms_Refactor.md` | root prompt for safe Foundations / Axioms refactor | complete |
 | `Operations/Codex_Prompts/2026-04-27_Philosophy_Long_File_PH_SS_Direct_Pointers.md` | operations copy of long-file pointer prompt | complete, but some external tools may not index new subdir immediately |
 
 ### Main files linked / touched

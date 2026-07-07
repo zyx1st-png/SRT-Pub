@@ -4,6 +4,22 @@
 __pycache__/
 *.pyc
 01_Source_Intuition/BOOK/Exports/
+
+# Generated outputs stay out of git (2026-07-07 engineering pass).
+# Sources remain tracked: paper .md + figures/*.py + render scripts.
+# Force-add with `git add -f` only for a deliberate exception.
+/graphify-out/
+papers/**/*.pdf
+papers/**/*.docx
+papers/**/*.zip
+papers/**/*.tif
+papers/**/*.jpg
+papers/**/*.png
+video/out/
+
+# Obsidian per-machine state
+.obsidian/workspace.json
+**/.obsidian/workspace.json
 .agents/
 .claude/worktrees/
 .openclaw/
@@ -11,3 +27,6 @@ Operations/Hermes_Agents_Config_2026-05-16.md
 IDENTITY.md
 SOUL.md
 USER.md
+
+# Nested accidental Obsidian vault config (content files in SRT/ remain tracked)
+SRT/.obsidian/

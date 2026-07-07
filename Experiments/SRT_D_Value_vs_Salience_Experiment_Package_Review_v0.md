@@ -55,7 +55,7 @@ Supporting files:
 Experiments/SRT_Pilot_Cards_v1.md
 Experiments/SRT_Experimental_Roadmap_v1.md
 Core/SRT_Validation_Template.md
-Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+papers/SRT_D_Value_Ontology_of_Concern_Outline.md
 ```
 
 ---

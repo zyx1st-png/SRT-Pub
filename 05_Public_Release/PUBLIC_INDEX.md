@@ -43,9 +43,9 @@ Public release is controlled outward expression. It is not canonical and not a s
 |---|---|
 | [`../Philosophy/SRT_Philosophy_Public_OnePager.md`](../Philosophy/SRT_Philosophy_Public_OnePager.md) | Existing one-page philosophy-facing public summary. |
 | [`../video/`](../video/) | Video scripts, sources, and outputs for public release workflows. |
-| [`../Papers/`](../Papers/) | Publicly readable or publication-facing paper materials, where scoped by file status. |
+| [`../papers/`](../papers/) | Publicly readable or publication-facing paper materials, where scoped by file status. |
 
-Follow-up note: The repository currently contains both `Papers/` and `papers/`; this index uses `Papers/` as the public-facing path. Directory deduplication is a later link-audit task.
+Follow-up note: `Papers/` and `papers/` were merged into `papers/` on 2026-07-07 (case-collision fix); `papers/` is the single canonical path.
 
 ## Projects / Product Planning
 

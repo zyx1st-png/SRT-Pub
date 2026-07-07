@@ -24,9 +24,9 @@ date: 2026-04-27
 dependency:
   - Core/SRT_Validation_Template.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
-  - SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
-  - Papers/SRT_NonReductive_Verification_Outline.md
-  - Papers/SRT_D_Value_Ontology_of_Concern_Outline.md
+  - Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
+  - papers/SRT_NonReductive_Verification_Outline.md
+  - papers/SRT_D_Value_Ontology_of_Concern_Outline.md
 machine_summary: >
   First set of low-cost SRT pilot cards. It converts the experimental roadmap into three P0 pilot-ready
   designs: d-value vs salience, Psi_f vs prediction error, and L2 hardening vs memory/habit. Each card
