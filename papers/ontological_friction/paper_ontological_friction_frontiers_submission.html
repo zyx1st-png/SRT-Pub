@@ -62,6 +62,24 @@
       background: #f7f7f7;
       text-align: left;
     }
+    .figure-page {
+      margin: 1.5em 0;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .figure-page p {
+      text-align: left;
+    }
+    .figure-page p:first-child {
+      margin: 0;
+      text-align: center;
+    }
+    .figure-page img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 0.55em;
+    }
     @media print {
       body {
         max-width: none;
@@ -72,6 +90,16 @@
         page-break-after: avoid;
       }
       table, pre, blockquote {
+        page-break-inside: avoid;
+      }
+      .figure-page {
+        break-before: page;
+        page-break-before: always;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .figure-page p {
+        break-inside: avoid;
         page-break-inside: avoid;
       }
     }
@@ -2112,29 +2140,26 @@ Expansion chain: ROS biomarkers and neural proxies (PCI, Fisher
 information, theta-gamma coupling, basal ganglia gating). Arrows
 indicate predicted direction of association; “(inv)” denotes inverse
 coding.</p>
-<p><strong>Figure 3.</strong> <em>ROS-<span
-class="math inline">\(\Psi_f\)</span> coupling mechanism: from executive
-friction to clinical expression.</em> Directed acyclic graph showing the
-pathophysiological chain from sustained high <span
+<p><strong>Figure 3.</strong> <em>Proposed oxidative feedback loop
+linking sustained executive friction to clinical features.</em>
+Schematic diagram showing a proposed loop from sustained high <span
 class="math inline">\(\Psi_f\)</span> through elevated metabolic demand,
 increased ROS production, oxidative damage, inflammatory signaling,
 reduced selection power (<span
-class="math inline">\(P_{\text{sel}}\)</span>), and deepened
-knowing-doing gap, forming a positive feedback loop (dashed red arrow).
-Dashed boxes at bottom indicate three intervention targets:
-pharmacological (<span class="math inline">\(\downarrow
-\Psi_f\)</span>), behavioral (<span class="math inline">\(\uparrow
-P_{\text{sel}}\)</span>), and antioxidant (<span
-class="math inline">\(\uparrow\)</span> clearance).</p>
-<p><strong>Figure 4.</strong> <em>Predicted <span
+class="math inline">\(P_{\text{sel}}\)</span>), and a deepened
+knowing-doing gap (dashed red feedback arrow). Dashed boxes at bottom
+indicate three possible modulation points: pharmacological (<span
+class="math inline">\(\downarrow \Psi_f\)</span>), behavioral (<span
+class="math inline">\(\uparrow P_{\text{sel}}\)</span>), and antioxidant
+(<span class="math inline">\(\uparrow\)</span> clearance).</p>
+<p><strong>Figure 4.</strong> <em>Schematic predicted <span
 class="math inline">\(\Psi_f\)</span> proxy signatures across clinical
-conditions.</em> Radar chart showing disorder-specific friction profiles
-for healthy controls (green), major depressive disorder (red),
+conditions.</em> Radar chart showing schematic relative profiles for
+healthy controls (green), major depressive disorder (red),
 obsessive-compulsive disorder (purple), and Parkinson’s disease (orange)
 across ten proxy measures. Higher values indicate greater impairment or
-higher executive friction. These predictions constitute falsifiable
-claims derived from the <span class="math inline">\(\Psi_f\)</span>
-framework.</p>
+higher executive friction. Values are schematic relative predictions,
+not empirical estimates.</p>
 <p><strong>Figure 5.</strong> <em>Core-chain protocol and critical-load
 prediction.</em> (A) Low-cost protocol for H72 and H-NEURO-EXEC-01,
 integrating two prompt contexts (neutral factual retell vs self-decision
@@ -2560,25 +2585,34 @@ markers to exploratory</td>
 <h2 id="figures">Figures</h2>
 <p><em>Figures are embedded here for review and are also provided as
 separate high-resolution files (Figure1–Figure5).</em></p>
-<p><strong>Figure 1.</strong> <em>Hierarchical control architecture and
-selection power budget.</em></p>
+<div class="figure-page">
 <p><img src="figures/fig1_control_architecture.png"
 style="width:6.5in" /></p>
+<p><strong>Figure 1.</strong> <em>Hierarchical control architecture and
+selection power budget.</em></p>
+</div>
+<div class="figure-page">
+<p><img src="figures/fig2_proxy_map.png" style="width:6.5in" /></p>
 <p><strong>Figure 2.</strong> <em>Cross-modal operationalization map for
 executive friction (<span
 class="math inline">\(\Psi_f\)</span>).</em></p>
-<p><img src="figures/fig2_proxy_map.png" style="width:6.5in" /></p>
-<p><strong>Figure 3.</strong> <em>ROS–<span
-class="math inline">\(\Psi_f\)</span> coupling mechanism: from executive
-friction to clinical expression.</em></p>
+</div>
+<div class="figure-page">
 <p><img src="figures/fig3_ros_coupling.png" style="width:6.5in" /></p>
-<p><strong>Figure 4.</strong> <em>Predicted <span
+<p><strong>Figure 3.</strong> <em>Proposed oxidative feedback loop
+linking sustained executive friction to clinical features.</em></p>
+</div>
+<div class="figure-page">
+<p><img src="figures/fig4_clinical_radar.png" style="width:6.5in" /></p>
+<p><strong>Figure 4.</strong> <em>Schematic predicted <span
 class="math inline">\(\Psi_f\)</span> proxy signatures across clinical
 conditions.</em></p>
-<p><img src="figures/fig4_clinical_radar.png" style="width:6.5in" /></p>
+</div>
+<div class="figure-page">
+<p><img src="figures/fig5_protocol.png" style="width:6.5in" /></p>
 <p><strong>Figure 5.</strong> <em>Core-chain protocol and critical-load
 prediction.</em></p>
-<p><img src="figures/fig5_protocol.png" style="width:6.5in" /></p>
+</div>
 
 </body>
 </html>

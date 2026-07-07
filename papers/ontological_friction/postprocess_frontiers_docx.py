@@ -64,6 +64,36 @@ def patch_docx(docx_path: Path) -> None:
             node.set("cx", str(FIGURE_WIDTH_EMU))
             node.set("cy", str(new_cy))
 
+    paragraphs = document_root.findall(f".//{{{NS_W}}}p")
+    figure_paragraphs = [
+        index
+        for index, paragraph in enumerate(paragraphs)
+        if paragraph.find(f".//{{{NS_W}}}drawing") is not None
+    ]
+    if len(figure_paragraphs) != 5:
+        raise RuntimeError(
+            f"Expected 5 figure paragraphs, found {len(figure_paragraphs)}."
+        )
+
+    for index in figure_paragraphs:
+        image_paragraph = paragraphs[index]
+        caption_paragraph = paragraphs[index + 1]
+
+        image_properties = image_paragraph.find(f"{{{NS_W}}}pPr")
+        if image_properties is None:
+            image_properties = ET.Element(f"{{{NS_W}}}pPr")
+            image_paragraph.insert(0, image_properties)
+        for tag in ("pageBreakBefore", "keepNext", "keepLines"):
+            if image_properties.find(f"{{{NS_W}}}{tag}") is None:
+                image_properties.append(ET.Element(f"{{{NS_W}}}{tag}"))
+
+        caption_properties = caption_paragraph.find(f"{{{NS_W}}}pPr")
+        if caption_properties is None:
+            caption_properties = ET.Element(f"{{{NS_W}}}pPr")
+            caption_paragraph.insert(0, caption_properties)
+        if caption_properties.find(f"{{{NS_W}}}keepLines") is None:
+            caption_properties.append(ET.Element(f"{{{NS_W}}}keepLines"))
+
     files["word/document.xml"] = ET.tostring(
         document_root, encoding="UTF-8", xml_declaration=True
     )
@@ -115,6 +145,7 @@ def patch_docx(docx_path: Path) -> None:
         "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml",
     )
     content_root.append(footer_override)
+    ET.register_namespace("", NS_CT)
     files["[Content_Types].xml"] = ET.tostring(
         content_root, encoding="UTF-8", xml_declaration=True
     )

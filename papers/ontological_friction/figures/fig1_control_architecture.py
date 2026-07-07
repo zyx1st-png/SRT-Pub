@@ -37,8 +37,8 @@ ax1.annotate('', xy=(3.4, 4.0), xytext=(2.6, 4.0), arrowprops=arrow_style)
 ax1.annotate('', xy=(6.6, 4.0), xytext=(5.8, 4.0), arrowprops=arrow_style)
 
 # Operator label
-ax1.text(3.0, 5.05, 'Selection /\ngating', ha='center', va='center', fontsize=15, fontweight='bold', color='#8B0000')
-ax1.text(3.0, 5.75, 'resource-bounded', ha='center', va='center', fontsize=11, color='#8B0000')
+ax1.text(3.05, 5.72, 'Selection /\ngating', ha='center', va='center', fontsize=15, fontweight='bold', color='#8B0000')
+ax1.text(3.05, 6.48, 'resource-bounded', ha='center', va='center', fontsize=11, color='#8B0000')
 
 ax1.text(6.2, 4.8, 'Stabilize', ha='center', va='center', fontsize=13, color='#006400')
 
@@ -94,14 +94,14 @@ for i, (x, label) in enumerate(zip(bar_x, bar_labels)):
 
 # Threshold line
 ax2.axhline(y=6.95, xmin=0.08, xmax=0.87, color='#333333', linestyle='--', linewidth=1.3)
-ax2.text(9.65, 6.95, '$\\alpha \\cdot P_{\\mathrm{sel}}$', ha='left', va='center', fontsize=17, fontweight='bold')
+ax2.text(9.25, 6.67, '$\\alpha \\cdot P_{\\mathrm{sel}}$', ha='left', va='center', fontsize=17, fontweight='bold')
 
 # "Know but can't do" zone
-zone = FancyBboxPatch((6.25, 6.65), 2.95, 1.3,
+zone = FancyBboxPatch((6.25, 7.35), 2.95, 0.85,
                        boxstyle="round,pad=0.1", facecolor='#FFEBEE',
                        edgecolor='#C62828', linewidth=1.5, linestyle='--', alpha=0.7)
 ax2.add_patch(zone)
-ax2.text(7.72, 7.35, '"Know but\ncan\'t do"', ha='center', va='center',
+ax2.text(7.72, 7.78, '"Know but\ncan\'t do"', ha='center', va='center',
          fontsize=16, fontweight='bold', color='#C62828')
 
 # Legend
