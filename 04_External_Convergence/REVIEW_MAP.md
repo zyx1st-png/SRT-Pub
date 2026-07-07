@@ -75,6 +75,16 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 - Boundary: Grounded Functionalism supports a sensory-grounding bridge; it does not prove subjecthood, affective qualia, or that mere detectors have experience.
 - Next step: bridge note separating L0 property, detector vehicle, L1 phenomenal slice, L2 report, `d-value`, and subjecthood.
 
+### EC-NEURO-EDGE-TIME-SERIES-INTERACTION
+
+- Card: [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md)
+- Level: E3 draft
+- SRT anchors: `T_dir`, `L0/L1/L2`, `d-value`, `Λ`, relational selection, reselectability, context-sensitive closure, behavior-output interface
+- Support type: operational-proxy candidate / structural convergence / bridge-support candidate / pressure case
+- Pressure link: [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction)
+- Boundary: Edge time series support a relational-selection and behavior-output bridge; they do not prove causality, consciousness, subjecthood, or SRT ontology.
+- Next step: bridge note separating edge interaction, dynamic connectivity, `T_dir`, `d-value`, context-sensitive closure, and causal intervention.
+
 ## Summary Table
 
 | Card | Level | Status | Anchor | Pressure Link | Current Role | Next Step |
@@ -85,11 +95,12 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) | E2 | draft_v1; not accepted | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; reselectability; subjecthood boundary | [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim) | structural convergence / operational-proxy candidate / pressure case | Bridge note separating access, verbalizability, reselectability, stake, and subjecthood. |
 | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) | E2 | draft_v1; not accepted | `L2`; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; consequence return; multiscale subjecthood; foreclosure / exit | [`CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION`](CONTRADICTION_LEDGER.md#cl-di-virtual-governor-cybernetic-reduction) | structural convergence / bridge-support candidate / pressure case | Bridge note separating virtual governor, `L2`, stress translation, `Psi_f`, incentive, `d-value`, and consequence return. |
 | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) | E2 | draft_v1; not accepted | `\hat{G}_θ`; `L0/L1/L2`; sensory grounding; qualia boundary; misrepresentation; embodiment | [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction) | sensory-grounding bridge / pressure case | Bridge note separating property, detector, phenomenal slice, report, concern, and subjecthood. |
+| [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) | E3 | draft_v1; not accepted | `T_dir`; `L0/L1/L2`; `d-value`; `Λ`; relational selection; reselectability; context-sensitive closure; behavior-output interface | [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction) | operational proxy for relational selection / pressure case | Bridge note separating edge interaction, dynamic connectivity, behavioral explanation, and causal intervention. |
 
 ## What Is Not Yet Done
 
 - No evidence card is accepted yet.
-- No E3 operational proxy is established yet.
+- No E3 operational proxy has been accepted yet.
 - No lab hypothesis has been validated yet.
 - No public-facing claim should say these cards prove SRT.
 - Pressure ledger links are mandatory before any future acceptance.
