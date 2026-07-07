@@ -31,6 +31,7 @@ For a summary of current draft cards and pressure links, see [`REVIEW_MAP.md`](R
 | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) | AI / ML / cognitive science | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; reselectability; subjecthood boundary | E2 | draft_v1; not accepted | J-space as a candidate artificial access layer: selected, verbalizable, manipulable representations that support flexible reasoning and report, while preserving the boundary between access and phenomenal consciousness. | [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim) |
 | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) | diverse intelligence / biology / social systems | `L2` hardening; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; consequence return; multiscale subjecthood; foreclosure / exit | E2 | draft_v1; not accepted | Virtual governor alignment as a candidate model of relational high-level governance: system-level stress is translated into local pressures, incentives, and constraints that reshape component option-spaces. | [`CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION`](CONTRADICTION_LEDGER.md#cl-di-virtual-governor-cybernetic-reduction) |
 | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) | cognitive science / philosophy / neuroscience | `\hat{G}_θ`; `L0/L1/L2`; sensory grounding; qualia boundary; misrepresentation; embodiment | E2 | draft_v1; not accepted | Grounded Functionalism as a candidate sensory-grounding bridge: qualia contents are treated as world/body properties detected by embodied sensory systems rather than as purely intrinsic brain states. | [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction) |
+| [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) | neuroscience / network neuroscience / systems neuroscience | `T_dir`; `L0/L1/L2`; `d-value`; `Λ`; relational selection; reselectability; context-sensitive closure; behavior-output interface | E3 | draft_v1; not accepted | Edge time series as interaction terms: pairwise neural co-fluctuations explain time-varying behavior above and beyond node activations across species, modalities, and scales. | [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction) |
 
 Draft rows are not accepted evidence.
 
@@ -43,14 +44,16 @@ Draft rows are not accepted evidence.
 | `L2` hardening | institutional, social, memory, scaffold, and convergence-history proxies. |
 | subjecthood threshold | self-reference, consequence return, integration, and recovery-cost proxies. |
 | selection cost | thermodynamic, cognitive, biological, and social cost interfaces. |
-| `T_dir` | direction readability, value hiddenness, and self-reorientation proxies. |
+| `T_dir` | direction readability, value hiddenness, self-reorientation proxies, and behavior-relevant relational interaction terms. |
 | `\hat{G}_θ` | embodied selection, anchoring, and operator-state interfaces. |
 | sensory grounding | detector-grounded qualia, embodiment, misrepresentation, and L0-to-L1 interfaces. |
+| relational selection | edge dynamics, interaction terms, context-sensitive closure, and cross-scale behavior-output interfaces. |
 
 ## Priority Domains For Future Cards
 
 - information geometry / Fisher metric
 - thermodynamics / Landauer / selection cost
+- neuroscience / edge time series / dynamic connectivity / behavior-relevant interaction terms
 - neuroscience / PCI / Lempel-Ziv / task switching / recovery cost
 - AI / high capacity low stake / inference-only systems
 - AI / J-space / cognitive access / workspace-like internal representations
