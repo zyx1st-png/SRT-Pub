@@ -29,6 +29,7 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION | diverse intelligence / biology / social systems | `L2`; `Psi_f`; `d-value`; `T_dir`; consequence return | downgrade / scope pressure | active_v1 | Virtual governor theory may explain multiscale coordination through signaling architecture, feedback, stress translation, and attractor dynamics without requiring SRT-specific ontology or constructs. | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) |
 | CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION | cognitive science / philosophy / neuroscience | `G_hat_theta`; `L0/L1/L2`; sensory grounding; qualia boundary; `d-value`; subjecthood | downgrade / scope pressure | active_v1 | Grounded Functionalism may reduce sensory qualia to externally detected physical properties and underexplain internal generation, affective qualia, and the difference between mere detection and subject-involving concern. | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) |
 | CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION | neuroscience / network neuroscience / systems neuroscience | `T_dir`; relational selection; `d-value`; `Λ`; reselectability; context-sensitive closure | downgrade / scope pressure | active_v1 | Edge time series may be ordinary statistical interaction terms with explanatory but non-causal value, and therefore should not be overread as direct evidence for SRT ontology, consciousness, or subjecthood. | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) |
+| CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM | synthetic biology / origin of life / minimal cell | `L0/L1`; `Psi_f`; `d-value`; biological closure; reselectability; minimal life threshold; subjecthood boundary | downgrade / scope pressure | active_v1 | Synthetic protocell growth and division may demonstrate engineered cell-cycle-like behavior without establishing autonomous life, intrinsic `d-value`, subjecthood, or natural selection. | [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) |
 
 ## Pressure Details
 
@@ -131,6 +132,20 @@ A third pressure is interpretive. Dynamic functional connectivity, graph dynamic
 A fourth pressure concerns scope. Edge time series do not establish consciousness, subjecthood, qualia, concern, or moral status. The card should remain an operational-proxy candidate for relational behavior modeling, not a consciousness card.
 
 The card should remain E3 draft unless SRT defines measurable criteria that distinguish relational selection from ordinary statistical interaction and then validates those criteria in prediction and intervention settings.
+
+### CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM
+
+This is not a refutation of SRT. It is a downgrade and scope pressure on the synthetic-protocell cell-cycle-closure interface proposed in [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md).
+
+The pressure is that synthetic protocell growth and division may demonstrate engineered cell-cycle-like behavior without establishing autonomous life. A membrane-bound system may grow, replicate DNA, and divide while still depending on external supplies, engineered modules, and manually introduced variation.
+
+A second pressure is `Psi_f`-specific. The system's maintenance burden is heavily externalized through supplied ribosomes, nutrients, enzymes, tRNA, lipids, and other complex molecules. SRT must not treat external scaffolded operation as internally paid biological friction.
+
+A third pressure is evolutionary. Selection-like population changes created by artificial genetic variation are not the same as natural selection driven by endogenous mutation, heredity, and environmental pressure.
+
+A fourth pressure concerns subjecthood. Growth, replication, division, and even future population persistence do not establish consciousness, qualia, moral status, or intrinsic `d-value`. Biological closure, if later achieved, must still be separated from subjecthood.
+
+The card should remain E2 unless the underlying work is peer-reviewed, replicated, and extended toward autonomous metabolism, ribosome production, waste handling, self-maintenance, and endogenous evolvability.
 
 ## Required Practice
 
