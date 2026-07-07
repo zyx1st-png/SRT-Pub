@@ -28,6 +28,7 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-AI-JSPACE-ACCESS-OVERCLAIM | AI / ML / cognitive science | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; subjecthood boundary | downgrade / scope pressure | active_v1 | J-space may establish language-poised cognitive access or output-influence geometry without establishing stake-coupled concern, embodied subjecthood, or SRT-specific friction. | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) |
 | CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION | diverse intelligence / biology / social systems | `L2`; `Psi_f`; `d-value`; `T_dir`; consequence return | downgrade / scope pressure | active_v1 | Virtual governor theory may explain multiscale coordination through signaling architecture, feedback, stress translation, and attractor dynamics without requiring SRT-specific ontology or constructs. | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) |
 | CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION | cognitive science / philosophy / neuroscience | `G_hat_theta`; `L0/L1/L2`; sensory grounding; qualia boundary; `d-value`; subjecthood | downgrade / scope pressure | active_v1 | Grounded Functionalism may reduce sensory qualia to externally detected physical properties and underexplain internal generation, affective qualia, and the difference between mere detection and subject-involving concern. | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) |
+| CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION | neuroscience / network neuroscience / systems neuroscience | `T_dir`; relational selection; `d-value`; `Λ`; reselectability; context-sensitive closure | downgrade / scope pressure | active_v1 | Edge time series may be ordinary statistical interaction terms with explanatory but non-causal value, and therefore should not be overread as direct evidence for SRT ontology, consciousness, or subjecthood. | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) |
 
 ## Pressure Details
 
@@ -116,6 +117,20 @@ A third pressure concerns internal generation. Dreams, hallucinations, imagery, 
 A fourth pressure concerns affect. The source article explicitly focuses on sensory qualia and does not settle affective qualia, mood, suffering, or concern-laden experience. SRT must not generalize detector-grounding directly to `d-value`, `Psi_f`, or subjecthood.
 
 The card should remain E2 unless SRT defines measurable criteria that distinguish external detection, internal representation, reselectability, concern bandwidth, and subjecthood.
+
+### CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION
+
+This is not a refutation of SRT. It is a downgrade and scope pressure on the edge time series / interaction-term interface proposed in [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md).
+
+The pressure is that edge time series are mathematically equivalent to ordinary statistical interaction terms in a multilinear model. Their explanatory power may reflect standard nonlinear modeling, shared variance structure, preprocessing choices, autocorrelation, or statistical association rather than SRT-specific relational selection.
+
+A second pressure is causal. The source article links time-varying connectivity to behavior, but it explicitly treats the relationship as explanatory and non-causal. SRT must not upgrade explanatory association into causal selection without intervention, perturbation, or validated directional tests.
+
+A third pressure is interpretive. Dynamic functional connectivity, graph dynamics, and network neuroscience may already explain the results without SRT. SRT must specify what distinguishes `T_dir`, reselectability, context-sensitive closure, or `d-value` from generic edge-wise statistical interactions.
+
+A fourth pressure concerns scope. Edge time series do not establish consciousness, subjecthood, qualia, concern, or moral status. The card should remain an operational-proxy candidate for relational behavior modeling, not a consciousness card.
+
+The card should remain E3 draft unless SRT defines measurable criteria that distinguish relational selection from ordinary statistical interaction and then validates those criteria in prediction and intervention settings.
 
 ## Required Practice
 
