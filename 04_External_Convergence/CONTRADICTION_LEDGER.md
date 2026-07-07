@@ -27,6 +27,7 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE | AI / ML | `L2` hardening; relational convergence; objectification boundary | downgrade / scope pressure | active_v1 | Calibrated local-neighborhood convergence may reflect generic dataset semantics, paired multimodal training, task utility, or metric properties rather than SRT-specific selection history or `L2` hardening. | [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md) |
 | CL-AI-JSPACE-ACCESS-OVERCLAIM | AI / ML / cognitive science | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; subjecthood boundary | downgrade / scope pressure | active_v1 | J-space may establish language-poised cognitive access or output-influence geometry without establishing stake-coupled concern, embodied subjecthood, or SRT-specific friction. | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) |
 | CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION | diverse intelligence / biology / social systems | `L2`; `Psi_f`; `d-value`; `T_dir`; consequence return | downgrade / scope pressure | active_v1 | Virtual governor theory may explain multiscale coordination through signaling architecture, feedback, stress translation, and attractor dynamics without requiring SRT-specific ontology or constructs. | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) |
+| CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION | cognitive science / philosophy / neuroscience | `G_hat_theta`; `L0/L1/L2`; sensory grounding; qualia boundary; `d-value`; subjecthood | downgrade / scope pressure | active_v1 | Grounded Functionalism may reduce sensory qualia to externally detected physical properties and underexplain internal generation, affective qualia, and the difference between mere detection and subject-involving concern. | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) |
 
 ## Pressure Details
 
@@ -101,6 +102,20 @@ A second pressure is construct-specific. `Psi_f` must not be collapsed into ordi
 A third pressure is normative: a virtual governor can coordinate components while also exploiting, excluding, or sacrificing some positions. SRT must preserve the distinction between effective alignment and justified alignment, especially when foreclosure, exit, or competing governors are present.
 
 The card should remain E2 unless SRT defines measurable criteria that distinguish SRT-specific friction, concern, reselectability, and subjecthood boundaries from generic cybernetic coordination.
+
+### CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION
+
+This is not a refutation of SRT. It is a downgrade and scope pressure on the sensory-grounding interface proposed in [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md).
+
+The pressure is that Grounded Functionalism may already explain sensory qualia as externally or bodily grounded physical properties detected by sensory systems. If this account is sufficient, SRT should not overclaim that sensory grounding independently supports SRT's stronger reselectability or subjecthood claims.
+
+A second pressure is detector-specific. Mere detection is not the same as phenomenal concern. Thermometers, barometers, cameras, and other physical detectors register properties without thereby becoming subjects. SRT must specify what additional structures make detection part of a subject-involving L1 slice.
+
+A third pressure concerns internal generation. Dreams, hallucinations, imagery, afterimages, and other internally generated phenomenal contents may not be well explained by simple external-property detection. SRT should preserve the possibility that L1 slices can be generated, replayed, or reanchored when external objects are absent.
+
+A fourth pressure concerns affect. The source article explicitly focuses on sensory qualia and does not settle affective qualia, mood, suffering, or concern-laden experience. SRT must not generalize detector-grounding directly to `d-value`, `Psi_f`, or subjecthood.
+
+The card should remain E2 unless SRT defines measurable criteria that distinguish external detection, internal representation, reselectability, concern bandwidth, and subjecthood.
 
 ## Required Practice
 

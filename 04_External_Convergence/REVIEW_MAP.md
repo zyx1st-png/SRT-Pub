@@ -65,6 +65,16 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 - Boundary: Virtual governor theory supports a cautious multiscale governance and stress-translation bridge; it does not prove SRT, subjecthood, or that all stress signals are `Psi_f`.
 - Next step: bridge note separating virtual governor, `L2`, stress translation, `Psi_f`, incentive, `d-value`, and consequence return.
 
+### EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM
+
+- Card: [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md)
+- Level: E2 draft
+- SRT anchors: `\hat{G}_θ`, `L0/L1/L2`, sensory grounding, qualia boundary, misrepresentation, embodiment, `d-value`, `T_dir`
+- Support type: structural convergence / bridge-support candidate / operational-proxy candidate / pressure case
+- Pressure link: [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction)
+- Boundary: Grounded Functionalism supports a sensory-grounding bridge; it does not prove subjecthood, affective qualia, or that mere detectors have experience.
+- Next step: bridge note separating L0 property, detector vehicle, L1 phenomenal slice, L2 report, `d-value`, and subjecthood.
+
 ## Summary Table
 
 | Card | Level | Status | Anchor | Pressure Link | Current Role | Next Step |
@@ -74,6 +84,7 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) | E2 | draft_v1; not accepted | `d-value`; consequence return; capacity-stake distinction | [`CL-AI-FUNCTIONALIST-STAKE-CHALLENGE`](CONTRADICTION_LEDGER.md#cl-ai-functionalist-stake-challenge) | conceptual contrast / structural differential-support candidate | Bridge note separating capacity, reward, agency, stake-coupling, subjecthood. |
 | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) | E2 | draft_v1; not accepted | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; reselectability; subjecthood boundary | [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim) | structural convergence / operational-proxy candidate / pressure case | Bridge note separating access, verbalizability, reselectability, stake, and subjecthood. |
 | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) | E2 | draft_v1; not accepted | `L2`; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; consequence return; multiscale subjecthood; foreclosure / exit | [`CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION`](CONTRADICTION_LEDGER.md#cl-di-virtual-governor-cybernetic-reduction) | structural convergence / bridge-support candidate / pressure case | Bridge note separating virtual governor, `L2`, stress translation, `Psi_f`, incentive, `d-value`, and consequence return. |
+| [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) | E2 | draft_v1; not accepted | `\hat{G}_θ`; `L0/L1/L2`; sensory grounding; qualia boundary; misrepresentation; embodiment | [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction) | sensory-grounding bridge / pressure case | Bridge note separating property, detector, phenomenal slice, report, concern, and subjecthood. |
 
 ## What Is Not Yet Done
 

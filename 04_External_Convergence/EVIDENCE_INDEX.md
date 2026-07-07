@@ -30,6 +30,7 @@ For a summary of current draft cards and pressure links, see [`REVIEW_MAP.md`](R
 | [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md) | AI / ML | `L2` hardening; `\hat{G}_θ`; relational convergence; objectification boundary | E3 | draft_v1; not accepted | Null-calibrated representational similarity removes width/depth confounds; calibrated convergence persists mainly in local neighborhoods rather than global geometry, making it a scoped proxy and constraint for relational stabilization. | [`CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE`](CONTRADICTION_LEDGER.md#cl-ai-local-neighborhood-generic-structure) |
 | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) | AI / ML / cognitive science | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; reselectability; subjecthood boundary | E2 | draft_v1; not accepted | J-space as a candidate artificial access layer: selected, verbalizable, manipulable representations that support flexible reasoning and report, while preserving the boundary between access and phenomenal consciousness. | [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim) |
 | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) | diverse intelligence / biology / social systems | `L2` hardening; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; consequence return; multiscale subjecthood; foreclosure / exit | E2 | draft_v1; not accepted | Virtual governor alignment as a candidate model of relational high-level governance: system-level stress is translated into local pressures, incentives, and constraints that reshape component option-spaces. | [`CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION`](CONTRADICTION_LEDGER.md#cl-di-virtual-governor-cybernetic-reduction) |
+| [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) | cognitive science / philosophy / neuroscience | `\hat{G}_θ`; `L0/L1/L2`; sensory grounding; qualia boundary; misrepresentation; embodiment | E2 | draft_v1; not accepted | Grounded Functionalism as a candidate sensory-grounding bridge: qualia contents are treated as world/body properties detected by embodied sensory systems rather than as purely intrinsic brain states. | [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction) |
 
 Draft rows are not accepted evidence.
 
@@ -44,6 +45,7 @@ Draft rows are not accepted evidence.
 | selection cost | thermodynamic, cognitive, biological, and social cost interfaces. |
 | `T_dir` | direction readability, value hiddenness, and self-reorientation proxies. |
 | `\hat{G}_θ` | embodied selection, anchoring, and operator-state interfaces. |
+| sensory grounding | detector-grounded qualia, embodiment, misrepresentation, and L0-to-L1 interfaces. |
 
 ## Priority Domains For Future Cards
 
@@ -52,6 +54,7 @@ Draft rows are not accepted evidence.
 - neuroscience / PCI / Lempel-Ziv / task switching / recovery cost
 - AI / high capacity low stake / inference-only systems
 - AI / J-space / cognitive access / workspace-like internal representations
+- cognitive science / grounded functionalism / sensory qualia / detector interfaces
 - diverse intelligence / virtual governor / multiscale alignment / bioelectric coordination
 - social science / institution as `L2` / hidden friction
 - biology / embodiment / consequence return / adaptation
