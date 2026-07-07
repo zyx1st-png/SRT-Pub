@@ -28,6 +28,7 @@ For a summary of current draft cards and pressure links, see [`REVIEW_MAP.md`](R
 | [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md) | physics / thermodynamics | selection cost; `Psi_f` | E2 | draft_v1; not accepted | Landauer principle and irreversible record formation as candidate interfaces for physical erasure, reset, durable records, and selection-cost projection. | [`CL-THERMO-LANDAUER-OVEREXTENSION`](CONTRADICTION_LEDGER.md#cl-thermo-landauer-overextension) |
 | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) | AI / ML | `d-value`; consequence return; capacity-stake distinction | E2 | draft_v1; not accepted | High inference / task capacity as a candidate contrast with stake-coupled consequence return and subjecthood threshold. | [`CL-AI-FUNCTIONALIST-STAKE-CHALLENGE`](CONTRADICTION_LEDGER.md#cl-ai-functionalist-stake-challenge) |
 | [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md) | AI / ML | `L2` hardening; `\hat{G}_θ`; relational convergence; objectification boundary | E3 | draft_v1; not accepted | Null-calibrated representational similarity removes width/depth confounds; calibrated convergence persists mainly in local neighborhoods rather than global geometry, making it a scoped proxy and constraint for relational stabilization. | [`CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE`](CONTRADICTION_LEDGER.md#cl-ai-local-neighborhood-generic-structure) |
+| [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) | AI / ML / cognitive science | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; reselectability; subjecthood boundary | E2 | draft_v1; not accepted | J-space as a candidate artificial access layer: selected, verbalizable, manipulable representations that support flexible reasoning and report, while preserving the boundary between access and phenomenal consciousness. | [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim) |
 
 Draft rows are not accepted evidence.
 
@@ -49,5 +50,6 @@ Draft rows are not accepted evidence.
 - thermodynamics / Landauer / selection cost
 - neuroscience / PCI / Lempel-Ziv / task switching / recovery cost
 - AI / high capacity low stake / inference-only systems
+- AI / J-space / cognitive access / workspace-like internal representations
 - social science / institution as `L2` / hidden friction
 - biology / embodiment / consequence return / adaptation
