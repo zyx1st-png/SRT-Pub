@@ -35,7 +35,7 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | exact status of `d` proxies | bare `d` is a scalar summary of stake-coupled concern; `D_eff`, Fisher rank, `d-vector`, and `d-gate` are separated | a final theorem identifying capacity directions with stake-coupled concern directions | capacity, competence, or distinguishability cannot be treated as concern |
 | incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, and reward | a complete formal object with validated sufficiency conditions | high meaning, high reward, or high confidence cannot be cited as `T_dir` by itself |
 | Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
-| ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the framing de-overload is still only proposed | not "all normativity = anti-foreclosure"; not "boundary problem solved"; current ε framing overload not yet trued up |
+| ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction; **Level A framing de-overload applied 2026-07-05** (L0 §六 / 正骨架 label / d-value §5b.1) | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the Level B stance rewrite (realist → constitutive stance) remains proposal-only | not "all normativity = anti-foreclosure"; not "boundary problem solved"; Level A trims wording only — it does not close the boundary problem |
 
 These are pressure points, not new axioms. They route later work and block overclaiming.
 
@@ -78,6 +78,10 @@ Harden the stake gate by specifying:
 
 Until this is done, domain files should say "`D_eff` proxy" and should not call it the definition of `d`.
 
+### Status Update (2026-07-05)
+
+`_SRT_D_VALUE_CANONICAL.md §2b.1` now fixes three of the open points: (a) the citation level of the `w_i = R_i·A_i·C_i` gate — the qualitative AND-gate structure is P2 canonical interpretation; any numerical weighting, proxy, or `ε_s` thresholding is P3/P4 and must be marked as such; (b) the domain validity of `D_eff ≥ d_canonical` — it holds only inside a declared proxy regime (same parameterization, declared normalization, no redundancy-inflated spectrum), never as a cross-domain theorem; (c) a unified gate table separating AI (fails on R/C), frozen trauma (passes the gate, fails on `d_mobile`), and institutions (member `C_i` absorbed by the structure) under the same three factors, with the rule that gate diagnostics must be reported per-factor, not as one scalar. Still open here: a necessary-and-sufficient stake-coupling theorem; `ε_s` calibration; independent measurable proxies for R / A / C.
+
 ---
 
 ## 2. `\Psi_f`: Geometry, Cost, and Generative Principle
@@ -113,6 +117,10 @@ Build a small typology:
 | geometry | path length / curvature | formal lower bound | universal proof of all dynamics |
 
 Then specify where `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08` stops and `_SRT_PSI_F_CANONICAL.md` begins.
+
+### Status Update (2026-07-05)
+
+Two of the three problem points are now fixed in `_SRT_PSI_F_CANONICAL.md §3.2`: (a) the generative-principle boundary — "friction as generative principle" is owned by `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`; the canonical file owns only the payability main read, conditional projections, and the payability criterion; any derivation that stands only if "friction generates dynamics" holds inherits P2/P3 and cannot cite the canonical file for promotion; (b) directional / asymmetric friction — asymmetry is carried by the payment structure (`Ψ_f^{erase} > Ψ_f^{write}`, `Core_Law/SRT_Irreversibility.md Def-IRR-3`) and by `L_0` irreversibility (P1-T02), not by modifying the symmetric metric; the metric layer staying symmetric is a division of labor, not a defect. The lower-bound-vs-paid-cost question was already fixed in §3.1 (`Ψ_f^{geom} ≲ Ψ_f^{paid}` under stated conditions). Still open here: full necessary-and-sufficient conditions for all projection relations. The stale `Ax-F-11/12` axiom-style citation in that file's §8 was also updated to post-split `P3-B07` / `P2/P3-B08` references.
 
 ---
 
@@ -377,6 +385,7 @@ Core 24 must remain accountable to the following failure conditions:
 3. **`L_2` hardening failure**: If `L_2` hardening cannot be distinguished from ordinary memory, learned habit, convention, or environmental stability, its bridge role weakens.
 4. **Cross-scale loop failure**: If the selection-manifestation-hardening loop cannot generate domain-specific discriminating predictions, SRT's cross-scale explanatory claim collapses into analogy.
 5. **Normativity failure**: If purpose, value, morality, and frameworks cannot be modeled as selection constraints with identifiable consequences, the dynamic normativity claim remains philosophical interpretation rather than an operational bridge.
+6. **Consequence-return distinctness failure**（2026-07-05 registered from book Q26 章末注四·一）: If "consequences returning to the bearing position and entering the next round's selection conditions" cannot be operationally distinguished from ordinary feedback, memory trace, or reinforcement-learning update, then the `C_i` stake-gate factor, the subject/value derivation chain, and the second half of the selection-manifestation-hardening loop lose their bridge role.
 
 ### Future Hardening Direction
 
@@ -387,6 +396,10 @@ Core 24 should be hardened in three directions:
 3. **comparative prediction**: define at least one domain where SRT predicts a pattern not predicted by FEP, predictive processing, RL, IIT/GNW, social constructionism, or ordinary habit theory.
 
 Until these are done, Core 24 should be cited as a bridge-hardening supplement and canonical framing layer, not as a completed theorem package.
+
+### Status Update (2026-07-05, Q26 backflow)
+
+Future Hardening Direction 3 (comparative prediction) now has a registered candidate set: `Core/SRT_Core_24_Discriminating_Predictions.md` P24-1..6 (single-construct discriminating predictions) plus **P24-7** (five cross-construct combination signatures, backflow from book Q26 §4, P4/P5 level, with a systemic reversal condition that cannot be absorbed by re-labeling). The same file now carries a **modification-discipline rule** (§0b: repair / pressure / failure classification + progressive-vs-degenerative gate + external-judge gate). Failure condition 6 (consequence-return distinctness) was added to the list above. Registration is not verification: none of these has been empirically run.
 
 ---
 
@@ -406,12 +419,12 @@ Working position under review (non-canonical; tracked, not promoted):
 
 Two distinct unresolved points:
 
-1. **Framing overload.** Current canonical wording — "全部规范性力量锚定于 ε" (L0 §六 and 正骨架总结), "L0 偏向非自我抹除" as a realist L0 property, and "趋向全局自由能最小值" (d-value §5b.1) — overclaims relative to the defensible base. A staged de-overload is **proposed, not applied** in `_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md`.
+1. **Framing overload.** Former canonical wording — "全部规范性力量锚定于 ε" (L0 §六 and 正骨架总结), "L0 偏向非自我抹除" as a realist L0 property, and "趋向全局自由能最小值" (d-value §5b.1) — overclaimed relative to the defensible base. **Status update (2026-07-05): Level A of the staged de-overload was applied** under author-authorized high-risk protocol (see `_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md`): the "全部规范性" wording in L0 §六 and the 正骨架 label, and the "全局自由能最小值" sentence in d-value §5b.1, are now narrowed to "minimum condition (domain floor) + reorganizability criterion + open closure-boundary". The realist wording "L0 偏向非自我抹除" is untouched (Level B territory). Level B remains **proposed, not applied**.
 2. **The closure-boundary is not closed.** It cannot be set by single-position reading: `T_dir` is d-gated and occlusion is self-reinforcing, so an occluded externalizer self-certifies a narrow boundary. The best available form is **multi-position convergence under anti-shared-occlusion perturbation** (per L0 §三 objectivity), but the three conditions for a valid anti-occlusion perturbation are a **regulative ideal, not an operational verdict** (judging "valid perturbation" presupposes seeing the occlusion it is meant to surface), and the result is **fallibilist** (objective-so-far, permanently open to a not-yet-present perturbation).
 
 ### Future Hardening Direction
 
-1. Adopt the staged framing true-up (de-overload): `ε` → minimum condition + constitutive stance; relocate the distinction work to the reorganizability criterion; mark the closure-boundary as still-open. (See the true-up proposal; high-risk per the L0 freeze.)
+1. ~~Adopt the staged framing true-up (de-overload)~~ **Done at Level A (2026-07-05)**: `ε` → minimum condition (domain floor); distinction work relocated to the reorganizability criterion; closure-boundary marked still-open in the canonical wording itself. The Level B stance rewrite (realist → constitutive stance) remains a separate future decision.
 2. Harden the closure-boundary **as a fallibilist foundation, not as a solved boundary**: harden the three anti-occlusion perturbation conditions (different position / scale / time / interest; restores excluded standing + shifts burden to incumbents; power to overturn, not only confirm) toward operationalizability, plus the two residues — representing voiceless-but-foreclosed positions (future / ecological / unable), and fixing the horizon of "irreversible re-selection loss."
 3. This converges (a third time) with Direction 3's perturbation mechanism and protect-condition P3 (anti-shared-occlusion perturbation not suppressed by incumbents).
 
@@ -419,7 +432,7 @@ Two distinct unresolved points:
 
 - This does **not** establish "SRT's *whole* normativity = a reflexive anti-foreclosure commitment." The scoped claim is only: **on the closure-boundary problem**, SRT's normative base **presents as** a reflexive anti-foreclosure commitment.
 - This does **not** "solve" the boundary problem. It **changes its form** — from "find a final correct boundary" to "maintain a boundary continually correctable by anti-occlusion perturbation": a fallibilist foundation, not a closed answer.
-- The framing true-up is **proposed, not applied**; current L0 / d-value framing remains in force until adopted under `Governance/SRT_EDIT_PROTOCOL.md` plus the L0 freeze high-risk cross-check.
+- The framing true-up **Level A was applied 2026-07-05** under `Governance/SRT_EDIT_PROTOCOL.md` plus the L0 freeze high-risk cross-check (author-authorized); **Level B remains proposed, not applied** — the realist stance wording and its rewrite stay a separate future decision.
 
 ---
 
@@ -434,7 +447,7 @@ If a domain file uses one of these tensions, it should mark the claim level:
 
 ---
 
-## 7. Closure / Compatibility Hardening Note (2026-04-21)
+## 10. Closure / Compatibility Hardening Note (2026-04-21)
 
 A hardened working position has now been written into:
 
@@ -455,3 +468,32 @@ These results should be treated as hardened working conclusions, not yet as auto
 - exact `κ` thresholding;
 - bridge relation between `κ`, `\rho(p,t)`, and payability windows;
 - domain-specific operationalization of compatibility and future-choice compression.
+
+---
+
+## 11. Order-Gain Criterion: three → four (RESOLVED 2026-07-05, option 3)
+
+> **Resolution (2026-07-05, author decision)**: adopted **option 3** — order-gain (`秩序增益`) expands from three criteria to **four**: 可延续 / 可协调 / **不外包** / 可再选择. The new criterion 不外包 (consequence-return-channel integrity) is now a distinct load-bearing pillar, sourced in `Core_Law/SRT_Core_Text_CN.md`'s ε+F+M+U minimal closure as "ε on the consequence-return axis" (the second face of F: consequences displaced to other positions, parallel to F's time-face carrying 可延续). Landed across the theory layer: `Core_Law/SRT_Selection_Argument.md §7b.2` (canonical source), `Core_Law/SRT_Core_Text_CN.md`, `_SRT_D_VALUE_CANONICAL.md §5b.1a` (aligned with the `C_i` consequence-return factor), `Core_Law/SRT_L0_Metaphysics.md` 秩序增益词条, `Core_Law/SRT_Constitution_Seven_Theses.md`, `Philosophy/SRT_Ethics_Agency.md`, `Core/SRT_Core_22_Equations.md` Eq-Evo-03c, `Core/Dynamics_Scaling_Annex/13`, both glossaries, and the two bridges. The analysis below is retained as the adjudication record.
+
+### Current State
+
+`Core_Law/SRT_Selection_Argument.md §7b` fixes the order-gain (`秩序增益`) test as three criteria: **可延续 / 可协调 / 可再选择** (sustainable / coordinable / re-selectable), presented as the operational projection of 初心 ("能维持更多存在持续存在的动态平衡").
+
+### Problem Point
+
+A whole-book vocabulary reconciliation (`03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md`) found that the book's crystallized direction test (`附录_术语表` Q22 方向三问; Q26 §3) uses a **different middle criterion**: **自耗 / 外包 / 锁死** (self-consumption / outsourcing / lock-in). The outer axes align (自耗↔¬可延续, 锁死↔¬可再选择), but the middle axis does not coincide:
+
+- theory 可协调 = whether difference can be organized into coexistence;
+- book 外包 = whether consequence falls on positions with no feedback channel.
+
+These can come apart: a system can coordinate difference well yet still outsource cost to voiceless positions (future generations, ecology, the unable-to-appeal); or return all consequences yet suppress difference. The book moved the second load-bearing pillar of "direction" toward **consequence-return-channel integrity** — consistent with the book's 后果回流 spine and with the `C_i` consequence-return factor in `_SRT_D_VALUE_CANONICAL.md §2b`. The theory canonical still reads it as **coordination of difference**. This is not a wording difference; it is a difference in the content of the criterion.
+
+### Resolution (adopted 2026-07-05)
+
+Three candidate resolutions were on the table:
+
+1. **Two faces of one axis**: outsourcing is the operationalization of ¬可协调; add one sentence to `§7b` — low risk.
+2. **Book is sharper; theory follows**: replace 可协调 with 不外包 — C-class edit, middle criterion swapped.
+3. **【ADOPTED】 Two independent criteria; direction is four**: 可延续 / 可协调 / 不外包 / 可再选择.
+
+**Author chose option 3.** Rationale: 可协调 (differences coexist) and 不外包 (consequences return to bearers) genuinely come apart, so each earns a distinct pillar; 不外包 unifies with the whole-book 后果回流 spine and the `C_i` factor. It fits the ε+F+M+U minimal closure cleanly — F ("no position sees all consequences") has two faces, consequences displaced in time (→可延续) and consequences displaced to other positions (→不外包), so adding 不外包 gives F its own criterion rather than bundling it into 可延续. The change is now landed (see the Resolution note at the top of this section for the full file list). What remains open is only the empirical/threshold layer shared with §4 (operational tests for when a consequence counts as genuinely "outsourced to a no-feedback position" vs. legitimately borne elsewhere).

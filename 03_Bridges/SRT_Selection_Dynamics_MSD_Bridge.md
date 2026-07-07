@@ -60,7 +60,7 @@ created: 2026-06-19
 | **排除 / 排开** | Mθ | **选择性收束 / `\hat{G}_θ`** 把 `L_0` 收窄为 `L_1`（支撑集收缩，非主观划掉） | Q05 §3；`SRT_Core_22` Def-Protocol-1 |
 | **定形** | Φθ | `L_1` 显现界面的成形（边界 / 可辨识格式 / 不可预先列举） | Q05 §3；`Core_Law/SRT_L1_Formalism.md` |
 | **写入** | I | `L_1 → L_2` 路径痕迹写回（`ρ_k` 沉积） | `SRT_Core_22` Eq-Bridge-L2-01 |
-| **锚定** | A | `L_2` 硬度 + `Ψ_f` 可支付性 + 秩序增益三判据（可延续/可协调/可再选择） | `_SRT_PSI_F_CANONICAL.md`；`SRT_Selection_Argument §7b`；`SRT_Core_22` Eq-Select-Thermo |
+| **锚定** | A | `L_2` 硬度 + `Ψ_f` 可支付性 + 秩序增益四判据（可延续/可协调/不外包/可再选择；2026-07-05 由三升四） | `_SRT_PSI_F_CANONICAL.md`；`SRT_Selection_Argument §7b`；`SRT_Core_22` Eq-Select-Thermo |
 | **回流** | R / B | 承担 → 后果不可外部化地压回**承重位**（路径依赖泛函导数 δθ/δσ ≠ 0） | `SRT_Selection_Argument §2b.3`；`SRT_Core_22` Eq-Evo-03b |
 | 整环路 | — | Eq-Bridge-Loop-01：`L_0 →[Ĝθ] L_1 →[writeback] L_2 →[constraint] Ĝθ′ → L_1′` | `Core/SRT_Core_22` Eq-Bridge-Loop-01 |
 | 现实强度 | S+X+R+H−修复 | 与既有 **秩序增益三判据** + Eq-Select-Thermo 可支付不等式重叠，应回链而非另立 | `SRT_Selection_Argument §7b`；`SRT_Core_22` Eq-Select-Thermo-C2 |

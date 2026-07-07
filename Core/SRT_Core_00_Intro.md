@@ -491,7 +491,7 @@ L_2(t+1) = \text{Stabilize}(L_2(t), L_1(t+1)) \\
 
 | 层级 | 代表文件（参考） | 建议前置 |
 |:-----|:----------------|:---------|
-| ⭐ 入门 | `SRT_Core_00_Intro.md`, `SRT_Core_00b_Bridge.md` | 无 |
+| ⭐ 入门 | `SRT_Core_00_Intro.md`, `_SRT_Core_Bridge.md` | 无 |
 | ⭐⭐ 中级 | `SRT_Core_01_Axioms.md`, `SRT_Core_12a/b_Ontology.md` | 了解 $\hat{G}_\theta$、L₀/L₁/L₂ 基础 |
 | ⭐⭐⭐ 高级 | `SRT_Reference_Scaling.md`, `SRT_Core_13a/b_Operator.md` | 自由能原理、$\Psi_f$ 概念、贝叶斯基础 |
 | ⭐⭐⭐⭐ 专家 | `Physics/`, `Neuroscience/`, `Philosophy/` 各领域 | 高级核心 + 对应领域专业知识 |

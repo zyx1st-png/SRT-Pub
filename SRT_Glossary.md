@@ -1525,7 +1525,7 @@ $$d_{mobile}\downarrow,\ \text{correction window}\downarrow \Rightarrow \text{se
 **定义（降级为 experience/proxy bridge）**：
 $$\text{Meaning}^{proxy}(t) \sim -\frac{d\Psi_f^{proxy}(t)}{dt}$$
 
-意义不是 canonical 上的“预测误差下降率”。当一个负担被重新组织为可支付、可延续、可协调、可再选择的路径时，体验上可能表现为意义增强；预测误差下降只是可能的局部 readout。
+意义不是 canonical 上的“预测误差下降率”。当一个负担被重新组织为可支付、可延续、可协调、不外包、可再选择的路径时，体验上可能表现为意义增强；预测误差下降只是可能的局部 readout。
 
 **首次出现**：Philosophy/SRT_Philosophy_Ethics.md §1.8
 

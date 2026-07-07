@@ -247,6 +247,29 @@ Fisher 投影只在以下条件下作为 formal working form 使用：
 3. 代谢或能耗指标升高主要来自旁路活动、噪声、热损耗或测量负担，而不是维持现实切片的 payability burden。
 4. 主观痛苦、压力报告或行为停顿与实际承担负担脱钩，只反映报警读数、遮蔽或 L₂ 吸收。
 
+### §3.2 生成性原理边界与非对称摩擦表示（hardening addendum，2026-07-05）
+
+> **层级**：boundary note / governance-canonical usage。本节不修改 Def-Ψ-1/2/3，只固定本文件与桥接层的两条分界，对应 `Core/SRT_OPEN_TENSIONS.md §2` 的未封口点。
+
+**（一）本文件止于何处、`P2/P3-B08` 从何处开始。**
+
+本文件的 canonical 管辖范围是：`Ψ_f` 的 payability 主读（Def-Ψ-1 / §1.1）、条件投影（Def-Ψ-2 / §3.1）与可支付性判据（Def-Ψ-3）。**「摩擦是所有动力学的生成性来源」（friction as generative principle）不在本文件管辖范围内**：该更强主张是 P2/P3 混合命题，canonical 落点是 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`。分界规则：
+
+- 引用「选择有摩擦、摩擦必须可支付」→ 引用本文件（canonical）。
+- 引用「演化 / 学习 / 文化变迁 / 免疫应答可建模为算子间摩擦」或「Fisher 型算子间摩擦生成动力学」→ 必须引用 `P2/P3-B08` 并按 P2/P3 标注，不得回引本文件为其升格背书。
+- 若某个域内推导只有在「摩擦即生成」成立时才成立，该推导继承 P2/P3 等级，不因引用本文件而获得 P0/P1 地位。
+
+**（二）对称度量下的方向性来源。**
+
+`Def-Ψ-2` 的 Fisher–Rao 度量是对称张量，`Ψ_f` 本身是无方向的标量代价 / 路径泛函。SRT 中的方向性 / 非对称摩擦**不由修改度量引入**，而由两个已有层承载：
+
+1. **支付结构非对称**：`Core_Law/SRT_Irreversibility.md Def-IRR-3 / T-IRR-1` 固定 `Ψ_f^{erase} > Ψ_f^{write}`——同一几何路径上，抹除方向的支付高于写入方向；非对称在支付账本上，不在度量张量上。
+2. **`L_0` 不可逆性**：时间方向由 P1-T02（`Core/SRT_Core_21b_Constitutive_Theorems.md`）与 T-IRR-2 决定；`Ψ_f` 只承载代价，不承载方向（见 §8 与 `SRT_Irreversibility.md` 的关系条目）。
+
+因此「如何在对称度量下表示方向性摩擦」的回答是：不在度量层表示；方向性属于支付结构与 `L_0` 不可逆层。度量层保持对称是分工，不是缺陷。
+
+**仍未封口**（保留在 `Core/SRT_OPEN_TENSIONS.md §2`）：全部投影关系的充要条件——几何投影何时构成真下界的完整定理化。
+
 ---
 
 ## §4 引力关系的规范立场
@@ -417,9 +440,9 @@ Preferred wording: Ψ_f can be inferred from structured transition difficulty wh
   - `Ψ_f` 给出系统为维持该现实所需承担的阻抗
   - 二者通过可支付性条件耦合
 
-- 与 `Core/SRT_Core_21_Formal_Axioms.md` 的关系：
-  - `Ax-F-11` 给出跨尺度统一
-  - `Ax-F-12` 给出摩擦即生成
+- 与 `Core/SRT_Core_21_Formal_Axioms.md`（现为拆分索引）的关系：
+  - 原 `Ax-F-11`（跨尺度统一）现为 `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07`，按 P3 引用
+  - 原 `Ax-F-12`（摩擦即生成）现为 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B08`，按 P2/P3 引用；分界规则见 §3.2
 
 - 与 `Core/SRT_Core_22_Equations.md` 的关系：
   - `Eq-Select-Thermo` 给出选择热力学主关系

@@ -175,6 +175,8 @@ Legacy scale table:
 
 **Boundary**: The phrase "same structure" is a high-ambition bridge, not a P0 identity statement.
 
+**One-way load note (2026-07-05, Q26 backflow)**: The failure of this bridge is one-directional. If cross-scale selection universality — including any pre-life / pre-consciousness "cosmic horizon" reading that pushes selection-condensation below the biological scale — cannot show explanatory gain over path dependence, attractors, dissipative structures, active inference, or ordinary causal history, then the retraction target is **this P3 bridge and its dependents**, not the P0/P1 core. The minimal axioms (`Core/SRT_Core_21_Minimal_Axioms.md`) and constitutive theorems (`Core/SRT_Core_21b_Constitutive_Theorems.md`) do not depend on this universality claim and survive its withdrawal. Provenance: book chapter `01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md §3` (the cosmic-horizon reading "必须自带死法，是最高读法不是地基"); the book is provenance, not authority.
+
 **Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §8.1`; `Core/SRT_Core_14_Dynamics_Scaling.md Ax-Scale-01`.
 
 ---
