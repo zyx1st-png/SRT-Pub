@@ -129,6 +129,7 @@ def build_publication(export_date: str) -> tuple[str, str]:
         f"- 导出脚本：`{Path(__file__).relative_to(ROOT)}`",
         f"- 源目录：`{DRAFTS_DIR.relative_to(ROOT)}`",
         f"- 合并文件数：{len(chapters)}",
+        "- 结构口径：保留 `Q00–Q28` 源稿线索，`Q04b` / `Q15b` 作为主题章嵌入阅读顺序，未做连续章号重编号。",
         "- 导出规则：剥离每个源文件开头的 YAML 元数据，保留正文 Markdown 与正文分隔线。",
         "",
         "## 合并顺序",

@@ -2,7 +2,8 @@
 """Validate the current book manuscript layout.
 
 The old 52-chapter outline split was archived. The current mainline lives in
-01_Source_Intuition/BOOK/Drafts_26Q/ as Q00 through Q28 plus the appendix.
+01_Source_Intuition/BOOK/Drafts_26Q/ as Q00-Q28 plus the Q04b/Q15b topic
+chapters, act prefaces/interludes, and appendices.
 """
 
 from pathlib import Path
