@@ -3,6 +3,7 @@ id: SRT-EXTCONV-REVIEW-MAP
 type: review_map
 status: draft_v1
 layer: external_convergence
+epistemic_layer: lab
 claim_mode: navigation
 canonical: false
 ---
@@ -85,6 +86,16 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 - Boundary: Edge time series support a relational-selection and behavior-output bridge; they do not prove causality, consciousness, subjecthood, or SRT ontology.
 - Next step: bridge note separating edge interaction, dynamic connectivity, `T_dir`, `d-value`, context-sensitive closure, and causal intervention.
 
+### EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY
+
+- Card: [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md)
+- Level: E2 draft
+- SRT anchors: `L1` field anchoring, `L0/L1/L2`, `Psi_f`, `d-value`, `T_dir`, `\hat{G}_θ`, relational selection, subjecthood boundary, AI consciousness boundary
+- Support type: structural convergence / bridge-support candidate / operational-proxy candidate / pressure case
+- Pressure link: [`CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP`](CONTRADICTION_LEDGER.md#cl-neuro-em-field-phenomenology-gap)
+- Boundary: EM field resonance supports a cautious bridge for binding, criticality, and body-supported field integration; it does not prove that fields are consciousness, that coherence is `L1`, or that field energy is `Psi_f`.
+- Next step: bridge note separating EM field coherence, L1 field anchoring, `Psi_f`, `d-value`, subjecthood, and AI field-infrastructure claims.
+
 ### EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE
 
 - Card: [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md)
@@ -106,6 +117,7 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) | E2 | draft_v1; not accepted | `L2`; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; consequence return; multiscale subjecthood; foreclosure / exit | [`CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION`](CONTRADICTION_LEDGER.md#cl-di-virtual-governor-cybernetic-reduction) | structural convergence / bridge-support candidate / pressure case | Bridge note separating virtual governor, `L2`, stress translation, `Psi_f`, incentive, `d-value`, and consequence return. |
 | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) | E2 | draft_v1; not accepted | `\hat{G}_θ`; `L0/L1/L2`; sensory grounding; qualia boundary; misrepresentation; embodiment | [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction) | sensory-grounding bridge / pressure case | Bridge note separating property, detector, phenomenal slice, report, concern, and subjecthood. |
 | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) | E3 | draft_v1; not accepted | `T_dir`; `L0/L1/L2`; `d-value`; `Λ`; relational selection; reselectability; context-sensitive closure; behavior-output interface | [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction) | operational proxy for relational selection / pressure case | Bridge note separating edge interaction, dynamic connectivity, behavioral explanation, and causal intervention. |
+| [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md) | E2 | draft_v1; not accepted | `L1`; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; subjecthood boundary | [`CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP`](CONTRADICTION_LEDGER.md#cl-neuro-em-field-phenomenology-gap) | field-anchoring bridge / pressure case | Bridge note separating field coherence, phenomenal anchoring, concern, and AI field-infrastructure claims. |
 | [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) | E2 | draft_v1; not accepted | `L0/L1`; `Psi_f`; `d-value`; `\hat{G}_θ`; biological closure; reselectability; minimal life threshold | [`CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-bio-synthetic-cell-life-overclaim) | minimal-life boundary case / pressure case | Bridge note separating partial cell-cycle closure, self-maintenance, natural selection, and subjecthood. |
 
 ## What Is Not Yet Done
