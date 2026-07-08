@@ -32,6 +32,7 @@ For a summary of current draft cards and pressure links, see [`REVIEW_MAP.md`](R
 | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) | diverse intelligence / biology / social systems | `L2` hardening; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; consequence return; multiscale subjecthood; foreclosure / exit | E2 | draft_v1; not accepted | Virtual governor alignment as a candidate model of relational high-level governance: system-level stress is translated into local pressures, incentives, and constraints that reshape component option-spaces. | [`CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION`](CONTRADICTION_LEDGER.md#cl-di-virtual-governor-cybernetic-reduction) |
 | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) | cognitive science / philosophy / neuroscience | `\hat{G}_θ`; `L0/L1/L2`; sensory grounding; qualia boundary; misrepresentation; embodiment | E2 | draft_v1; not accepted | Grounded Functionalism as a candidate sensory-grounding bridge: qualia contents are treated as world/body properties detected by embodied sensory systems rather than as purely intrinsic brain states. | [`CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION`](CONTRADICTION_LEDGER.md#cl-cog-sensing-qualia-detector-reduction) |
 | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) | neuroscience / network neuroscience / systems neuroscience | `T_dir`; `L0/L1/L2`; `d-value`; `Λ`; relational selection; reselectability; context-sensitive closure; behavior-output interface | E3 | draft_v1; not accepted | Edge time series as interaction terms: pairwise neural co-fluctuations explain time-varying behavior above and beyond node activations across species, modalities, and scales. | [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction) |
+| [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md) | neuroscience / consciousness / EM field theory / criticality | `L1` field anchoring; `L0/L1/L2`; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; subjecthood boundary; AI consciousness boundary | E2 | draft_v1; not accepted | Electromagnetic field resonance as a candidate bridge for binding, criticality, cross-frequency coupling, bioelectric pattern memory, and the boundary between field-like integration and subject-involving concern. | [`CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP`](CONTRADICTION_LEDGER.md#cl-neuro-em-field-phenomenology-gap) |
 | [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) | synthetic biology / origin of life / minimal cell | `L0/L1`; `Psi_f`; `d-value`; `\hat{G}_θ`; biological closure; reselectability; consequence return; boundary formation; minimal life threshold | E2 | draft_v1; not accepted | Synthetic protocell cell-cycle closure as a boundary case: a membrane-bounded system can grow, replicate DNA, and divide, while remaining externally scaffolded and not fully alive. | [`CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-bio-synthetic-cell-life-overclaim) |
 
 Draft rows are not accepted evidence.
@@ -42,6 +43,7 @@ Draft rows are not accepted evidence.
 |---|---|
 | `d-value` | stake, irreversible-risk sensitivity, non-substitutability, and decision burden proxies. |
 | `Ψ_f` | payability, friction, transition cost, Fisher / thermodynamic / metabolic projections, and internally paid biological maintenance burden. |
+| `L1` field anchoring | field coherence, perturbational recovery, binding unity, cross-frequency coupling, and body-supported phenomenal-slice proxies. |
 | `L2` hardening | institutional, social, memory, scaffold, and convergence-history proxies. |
 | subjecthood threshold | self-reference, consequence return, integration, and recovery-cost proxies. |
 | selection cost | thermodynamic, cognitive, biological, and social cost interfaces. |
@@ -56,6 +58,7 @@ Draft rows are not accepted evidence.
 - information geometry / Fisher metric
 - thermodynamics / Landauer / selection cost
 - neuroscience / edge time series / dynamic connectivity / behavior-relevant interaction terms
+- neuroscience / EM field resonance / binding / criticality / cross-frequency coupling
 - neuroscience / PCI / Lempel-Ziv / task switching / recovery cost
 - AI / high capacity low stake / inference-only systems
 - AI / J-space / cognitive access / workspace-like internal representations
