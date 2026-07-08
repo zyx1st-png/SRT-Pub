@@ -29,7 +29,8 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-DI-VIRTUAL-GOVERNOR-CYBERNETIC-REDUCTION | diverse intelligence / biology / social systems | `L2`; `Psi_f`; `d-value`; `T_dir`; consequence return | downgrade / scope pressure | active_v1 | Virtual governor theory may explain multiscale coordination through signaling architecture, feedback, stress translation, and attractor dynamics without requiring SRT-specific ontology or constructs. | [`EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT`](Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md) |
 | CL-COG-SENSING-QUALIA-DETECTOR-REDUCTION | cognitive science / philosophy / neuroscience | `G_hat_theta`; `L0/L1/L2`; sensory grounding; qualia boundary; `d-value`; subjecthood | downgrade / scope pressure | active_v1 | Grounded Functionalism may reduce sensory qualia to externally detected physical properties and underexplain internal generation, affective qualia, and the difference between mere detection and subject-involving concern. | [`EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM`](Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md) |
 | CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION | neuroscience / network neuroscience / systems neuroscience | `T_dir`; relational selection; `d-value`; `Λ`; reselectability; context-sensitive closure | downgrade / scope pressure | active_v1 | Edge time series may be ordinary statistical interaction terms with explanatory but non-causal value, and therefore should not be overread as direct evidence for SRT ontology, consciousness, or subjecthood. | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) |
-| CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM | synthetic biology / origin of life / minimal cell | `L0/L1`; `Psi_f`; `d-value`; biological closure; reselectability; minimal life threshold; subjecthood boundary | downgrade / scope pressure | active_v1 | Synthetic protocell growth and division may demonstrate engineered cell-cycle-like behavior without establishing autonomous life, intrinsic `d-value`, subjecthood, or natural selection. | [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) |
+| CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP | neuroscience / consciousness / EM field theory | `L1` field anchoring; `Psi_f`; `d-value`; subjecthood boundary; AI consciousness boundary | downgrade / scope pressure | active_v1 | EM field coherence, weak-field entrainment, and criticality may explain biophysical integration without bridging the gap from field dynamics to subject-involving phenomenal concern or SRT-specific reselectability. | [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md) |
+| CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM | synthetic biology / origin of life / minimal cell | `L0/L1`; `Psi_f`; `d-value`; biological closure; reselectability; minimal life threshold; subjecthood boundary | downgrade / scope pressure | active_v1 | Synthetic protocell growth and division may demonstrate engineered cell-cycle-like behavior without establishing autonomous life, intrinsic `d-value`, subjecthood, or natural selection. | [`EC-BIO-SYNTHETIC-CELL-LIFE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) |
 
 ## Pressure Details
 
@@ -132,6 +133,20 @@ A third pressure is interpretive. Dynamic functional connectivity, graph dynamic
 A fourth pressure concerns scope. Edge time series do not establish consciousness, subjecthood, qualia, concern, or moral status. The card should remain an operational-proxy candidate for relational behavior modeling, not a consciousness card.
 
 The card should remain E3 draft unless SRT defines measurable criteria that distinguish relational selection from ordinary statistical interaction and then validates those criteria in prediction and intervention settings.
+
+### CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP
+
+This is not a refutation of SRT. It is a downgrade and scope pressure on the EM field resonance / binding / criticality interface proposed in [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md).
+
+The pressure is that electromagnetic field dynamics may explain fast biophysical integration, weak-field entrainment, cross-frequency coupling, and criticality without explaining why any field pattern becomes subject-involving phenomenal concern.
+
+A second pressure is construct-specific. Field coherence must not be collapsed into `L1` anchoring. Metabolic or energetic cost must not be collapsed into `Psi_f`. Salience, synchrony, or task relevance must not be collapsed into `d-value`. Phase / amplitude directionality must not be collapsed into `T_dir` without an independently validated future-option or consequence-return readout.
+
+A third pressure is causal and evidential. The source article synthesizes empirical work but remains a hypothesis-and-theory paper. Weak-field entrainment and ephaptic coupling may be real while still functioning as modulation rather than the primary substrate of consciousness.
+
+A fourth pressure concerns AI. The absence of biological EM field infrastructure in current digital systems may be an important contrast, but it does not prove that all artificial consciousness is impossible, nor that EM fields are a necessary substrate in every possible conscious architecture.
+
+The card should remain E2 unless SRT defines measurable criteria that distinguish field coherence from subject-involving L1 anchoring, ordinary energy cost from `Psi_f`, and information integration from concern-weighted reselectability.
 
 ### CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM
 
