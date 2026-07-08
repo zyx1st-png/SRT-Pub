@@ -5,6 +5,7 @@ status: active_addendum
 canonical: false
 scope: 01_source_intuition_book
 layer: meta
+epistemic_layer: os
 claim_mode: navigation
 created: 2026-07-08
 supersedes_for_closeout_reading:
