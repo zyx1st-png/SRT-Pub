@@ -20,4 +20,4 @@ dependency: [SRT-STATUS]
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT 当前状态仪表盘 | 20542 | `b6b4bc6a268b` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT 当前状态仪表盘 | 6838 | `055ae25e26c6` |
