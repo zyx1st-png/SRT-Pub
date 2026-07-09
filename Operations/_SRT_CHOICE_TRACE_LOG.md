@@ -119,7 +119,9 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **one_line**: （这条轨迹挖了什么，一句话）
 - **breakout_count**: （越界选择事件数；必须为整数）
 - **breakout_events**: [CT-.., CT-..]（逐个列出；连续自答如 CT-17/18/19 按事件分别列）
-- **pending_confirmations**: （assistant_proposal_pending 的条目；无则 none）
+- **pending_confirmations**: （assistant_proposal_pending / author_accepts_contextual_selection 的条目；无则 none）
+- **tension_count**: （张力表条目数；张力审计见 `_SRT_CHOICEMAP_TRACE_WORKFLOW.md §5.0`；0 须附一句解释）
+- **unresolved_tensions**: [T..]（处置状态为 retained_as_tension / unresolved_undeclared 的条目；无则 none）
 - **closure_pipeline_done**: true / false（`_SRT_CHOICEMAP_TRACE_WORKFLOW.md §5` 收尾管线是否走完）
 ```
 
@@ -154,3 +156,17 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **breakout_events**: [CT-05, CT-12, CT-14, CT-17, CT-18, CT-19]
 - **pending_confirmations**: CT-13（P8「选对」定义为 assistant proposal，未二次确认）；CT-23（耗散结构 C+D 排序为 assistant analysis proposal，trace 内已标注）
 - **closure_pipeline_done**: true（收尾审计见 trace 文件 §6，2026-07-09 补做）
+
+### CT2-20260709（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: retro_writeback
+- **date**: 2026-07-09
+- **trace_file**: `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`
+- **one_line**: 承接第一直觉 trace，推进出选择生成的过程模型——去同步化/随机化 → 比较接住 → 选择性再同步；含显现权/分配权、1432 解放循环与"分配先于显现先于选择"。
+- **breakout_count**: 6
+- **breakout_events**: [CT2-01, CT2-05, CT2-13, CT2-16, CT2-17, CT2-18]
+- **pending_confirmations**: P2-16（比较来源，author_accepts_contextual_selection，进入 canonical 路由前需成文二次确认）；trace §5.1 四条 assistant 整理句（选择=随机的比较性再同步等）
+- **tension_count**: 4（见 trace 文件 §7 张力表，2026-07-09 回写补审）
+- **unresolved_tensions**: [T1 痛苦最原始 vs 去同步化先行, T2 选择的操作定义 vs 过程定义, T3 痛苦用法 vs SRT_Suffering 类型学, T4 幸运开放 vs P0-04]
+- **closure_pipeline_done**: true（张力审计 + canonical 碰撞检查 + 术语检查 + 路由见 trace 文件 §7，2026-07-09 补做；选项全集未逐字回收的缺陷已在 §7 登记，待原对话补收）
