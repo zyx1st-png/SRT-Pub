@@ -88,7 +88,7 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
   - 层3 · 写作手法选项全集: … （提醒：手法必须最后一层）
   - 被划掉的不相容分支（因某层选择而死掉的下游分支）: …
 - **chosen**（作者在每层选了哪个；逐层写）:
-  - 命题: …
+  - 命题: …　
   - 层1: …　层2: …　层3: …
 - **skipped_mode**（主动跳过的众数选项；确无则填 none_detected + 原因）: …
 - **reason**（作者亲写，一句话）: …
@@ -154,3 +154,15 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **breakout_events**: [CT-05, CT-12, CT-14, CT-17, CT-18, CT-19]
 - **pending_confirmations**: CT-13（P8「选对」定义为 assistant proposal，未二次确认）；CT-23（耗散结构 C+D 排序为 assistant analysis proposal，trace 内已标注）
 - **closure_pipeline_done**: true（收尾审计见 trace 文件 §6，2026-07-09 补做）
+
+### CT-20260709-02（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: retro_writeback
+- **date**: 2026-07-09
+- **trace_file**: `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`
+- **one_line**: 续挖“选择先于存在”后半段，收敛出“去同步化/随机化 → 比较接住 → 选择性再同步”的过程模型，并把显现/分配/尺度垄断、1432 解笼循环、痛苦作为主体层动力一起留痕。
+- **breakout_count**: 6
+- **breakout_events**: [CT2-01, CT2-05, CT2-13, CT2-16, CT2-17, CT2-18]
+- **pending_confirmations**: P2-16（比较来自关切、资源压力、未来压力与最小非中立）；§5.3 六条 assistant 整理句（含“选择=随机的比较性再同步”“痛苦是主体层面的去同步化随机化”“比较是随机进入选择结构的第一道门”）待作者二次确认。
+- **closure_pipeline_done**: true（收尾审计见 trace 文件 §5；选项全集已补回，canonical 碰撞检查已补做，STATUS 未改写工作流。）
