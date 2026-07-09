@@ -14,7 +14,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 > **Connector-safe reading path**: This dashboard is moderately long. For connector reads, start with [`STATUS_Split/README.md`](STATUS_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new status authority.
 
 > **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-07-07
+> **最后更新**：2026-07-09
 > **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -65,10 +65,14 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 **产品感测试留痕**
 - 产品感备忘录（product-feel pilot memo） → `_SRT_DIRECTION3_CHOICEMAP_PRODUCTFEEL_MEMO.md`（GLM 5.2 / Gemini 3.1 Pro / Claude 跨模型跨域产品感测试；V0→V0.2 演化、四结构检查全过、S-5 不可逆设计极限、护栏压力下的 dangerous-rigidity 发现、V0.3 两条待补规则）
 
+**轨迹工作流**
+- ChoiceMap 轨迹工作流 → `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md`（三用途×两记录模式矩阵；回写模式 retro-writeback 一等化；越界选择 breakout 一等事件；委托收敛协议 + confirmation_status；收尾管线：canonical 碰撞检查→术语撞车检查→路由→落库）
+
 > **地位声明**：校准参照集与产品感备忘录均为**示例性 / 参照性 / pilot**，**不是 ground truth，也不构成任何实证验证**。它们只统一评分尺度、记录探索过程；ChoiceMap 的有效性须由原型种子 §5 的真实跨模型实验 + 盲评 + 人机 A/B 决定。方向三论文仍 **parked**（见 `_SRT_DIRECTION3_PAPER_PARKING_NOTE.md`）。
 
 ## 最近关键推进
 
+- `2026-07-09`：**ChoiceMap 轨迹工作流落地 + 第一直觉 trace 收尾补全**。新建 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md`：区分三用途（决策支持/文章/直觉挖掘）×两记录模式（live/retro_writeback），把"自由对话→事后回写"正式化为一等记录模式，新增越界选择（breakout）一等事件、委托收敛协议（assistant_proposal 不得未经二次确认进入命题簇）与收尾管线（canonical 碰撞检查→术语撞车检查→路由→落库）。`Operations/_SRT_CHOICE_TRACE_LOG.md` 增补 `trace_type` 字段与指针条目模板，并登记首条轨迹。`SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md` 补 `trace_mode: retro_writeback` 声明与 §6 回写审计：P8「选对」侧与 P14 耗散结构排序标为 `assistant_proposal_pending` 待作者二次确认；新候选命题 P6/P10/P12/P13 完成路由建议（P13 熵定位建议进 OPEN_TENSIONS + bridge；P2 挂 P0-04 护栏）；发现「选择地基」与书稿 Q17 术语撞车（进入书稿/理论/产品线前须改名或分义）。已登记入 `01_Source_Intuition/INDEX.md`。边界：工作流为运行层，非 canonical；trace 命题一律不因走完流程获得定义权威。
 - `2026-07-05`：**回流两项落地（作者裁决）**。(1) **微效价+价值发生序**落进 `_SRT_D_VALUE_CANONICAL.md §2a`（P3 book-provenance 候选：选择性收束→微效价→affordance→缺失→需求→锚定→价值深度；微效价≠ε_pg；与 §2b.1 stake-gate 上下游对账；替换/恢复两测试）。(2) **秩序增益三判据→四判据**（作者选③，新增③不外包＝后果回流通道完整性）：canonical 源 `Core_Law/SRT_Selection_Argument.md §7b.2` 全改，并全仓同步——`Core_Text_CN`（ε+F+M+U 最小闭包：不外包=ε 后果回流轴/F 第二副面孔）、`_SRT_D_VALUE_CANONICAL §5b.1a`（对齐 `C_i`）、`L0_Metaphysics 秩序增益词条`、`Constitution_Seven_Theses`、`Ethics_Agency`、`Core_22 Eq-Evo-03c`、`Annex 13`、两处 Glossary、MSD 桥、书稿词表桥 §3、`OPEN_TENSIONS §11`（标 RESOLVED）。均按作者授权高风险流程。
 
 - `2026-07-05`：**全书（26Q）→ 理论层词表回流对账**。按术语表 v4（revised 2026-07-04）逐条对账全书结晶词汇与 Core/Core_Law 锚点，新建登记桥 `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md`（已入 `BRIDGE_INDEX`）。结论：多数书稿词汇是理论既有承重对象的白话重述（选择动力学核心链已由 MSD 桥覆盖、水平因果已由 HC 桥覆盖），**真正未同步的新 articulation 登记为 book-provenance 候选**：微效价+价值发生链（选择性收束→微效价→affordance→缺失→需求→锚定→价值深度，微效价≠ε_pg，d-value canonical 确无此链）、第三态能动性（新章 Q15b）、预裁剪四机制、被排开者去向三分、AI 三型、理论自反自检三问、17 原语生成器。**发现一处实质分歧待作者裁决**：方向/秩序增益三判据的**中轴**——书稿用「外包」（后果回流通道完整性，与全书主梁及 d-value `C_i` 因子一致）、理论 `SRT_Selection_Argument §7b` 用「可协调」（差异可组织共存），二者可分开；已在 `Core/SRT_OPEN_TENSIONS.md §11` 登记三选项（同轴两面/理论跟改/扩为四判据），采纳前 §7b 现行 canonical 不变。边界：书稿=provenance 非 authority，候选未采纳前不作 canonical；不改任何定义。
