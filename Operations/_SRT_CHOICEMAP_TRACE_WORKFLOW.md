@@ -86,11 +86,11 @@ frontmatter 写入 `trace_mode: retro_writeback` 与 `late_entry: true`；proven
 
 ### R4 · 隔离委托轮次
 
-所有 `delegated` 轮次的产出物按 §4 标记，**不得进入命题簇**，除非已有作者二次确认。
+所有 `delegated` 轮次的产出物按 §4 标记：默认只能进入 **pending / quarantine 提案清单**，作为审计对象保留；**不得进入作者已确认命题簇、真实增量候选或 canonical-candidate 路由**，除非已有作者对成文命题的二次确认。
 
 ### R5 · 提取命题簇并标注确认状态
 
-每条源头命题挂 `confirmation_status`（见 §4 表）。
+提取作者已确认命题簇时，每条源头命题挂 `confirmation_status`（见 §4 表）。若为保留审计链而记录 assistant 提案，必须单列为 pending / quarantine 条目，不得与 author-confirmed cluster 混列。
 
 ### R6 · 执行收尾管线（§5）后才算回写完成
 
@@ -124,14 +124,14 @@ frontmatter 写入 `trace_mode: retro_writeback` 与 `late_entry: true`；proven
 1. **重组交还**：不给结论，把分析重组为供作者选择的结构（产品规格 S5 的兜底规则）；
 2. **标记提案**：给出分析，但产出物强制携带 `assistant_proposal` 状态，等待作者二次确认。
 
-命题簇每条命题必须挂 `confirmation_status`：
+命题 / 提案条目必须挂 `confirmation_status`，并区分 author-confirmed cluster 与 pending / quarantine proposal list：
 
-| 状态 | 含义 | 能否被下游引用为作者直觉 |
+| 状态 | 含义 | 能否进入作者已确认命题簇 / 被下游引用为作者直觉 |
 |---|---|---|
 | `author_breakout` | 来自作者越界选择 | 能（最高等级） |
 | `author_chosen` | 来自作者在选项集内的明确选择 | 能 |
 | `assistant_proposal_confirmed` | assistant 提案 + 作者事后逐条二次确认 | 能，但标注来源 |
-| `assistant_proposal_pending` | assistant 提案，未获二次确认 | **不能**；引用时必须带 pending 标记 |
+| `assistant_proposal_pending` | assistant 提案，未获二次确认 | **不能**进入作者已确认命题簇；只能保留在 pending / quarantine 清单，引用时必须带 pending 标记 |
 
 > 特别警惕："作者认同 assistant 判断"不等于二次确认。一句"认同"覆盖的是当轮语境，不构成对提炼后命题措辞的确认。二次确认必须针对**成文后的命题原文**逐条进行。
 
@@ -141,7 +141,7 @@ frontmatter 写入 `trace_mode: retro_writeback` 与 `late_entry: true`；proven
 
 ### 5.1 Canonical 碰撞检查
 
-对命题簇逐条标注三态（对照 `CANONICAL_REGISTRY.md`、相关 canonical 锚点与 `Core/SRT_OPEN_TENSIONS.md`）：
+对作者已确认命题簇逐条标注三态（对照 `CANONICAL_REGISTRY.md`、相关 canonical 锚点与 `Core/SRT_OPEN_TENSIONS.md`）；pending / quarantine 提案可记录碰撞观察，但不得进入新候选路由，除非先完成作者二次确认：
 
 - **已覆盖**：canonical 已有承接（注明锚点）。此类命题的价值是**直觉复认**，不是新增；
 - **新候选**：仓库无落点。此类命题是 trace 的真实增量，进入路由（§5.3）；
