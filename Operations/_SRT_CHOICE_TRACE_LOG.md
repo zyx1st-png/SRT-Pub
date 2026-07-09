@@ -117,7 +117,8 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **date**: YYYY-MM-DD
 - **trace_file**: （独立 trace 文件路径）
 - **one_line**: （这条轨迹挖了什么，一句话）
-- **breakout_count**: （越界选择次数；越界是 revealed-stake 最浓的样本）
+- **breakout_count**: （越界选择事件数；必须为整数）
+- **breakout_events**: [CT-.., CT-..]（逐个列出；连续自答如 CT-17/18/19 按事件分别列）
 - **pending_confirmations**: （assistant_proposal_pending 的条目；无则 none）
 - **closure_pipeline_done**: true / false（`_SRT_CHOICEMAP_TRACE_WORKFLOW.md §5` 收尾管线是否走完）
 ```
@@ -149,6 +150,7 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **date**: 2026-07-09
 - **trace_file**: `01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md`
 - **one_line**: 挖掘"选择先于存在"的第一直觉，收敛出 P1–P14 源头命题簇（非自我抹除、失败选择生成边界、熵=去选择化画像、耗散结构桥定位）。
-- **breakout_count**: 3+（CT-05 选项外给出「非自我抹除」；CT-14 上移一层；CT-17/18/19 连续以自答替代选项）
+- **breakout_count**: 6
+- **breakout_events**: [CT-05, CT-12, CT-14, CT-17, CT-18, CT-19]
 - **pending_confirmations**: CT-13（P8「选对」定义为 assistant proposal，未二次确认）；CT-23（耗散结构 C+D 排序为 assistant analysis proposal，trace 内已标注）
 - **closure_pipeline_done**: true（收尾审计见 trace 文件 §6，2026-07-09 补做）
