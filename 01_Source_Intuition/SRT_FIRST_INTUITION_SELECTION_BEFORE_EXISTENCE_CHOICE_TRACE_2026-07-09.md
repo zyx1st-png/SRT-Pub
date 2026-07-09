@@ -9,8 +9,10 @@ claim_mode: intuition_record
 canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-09
-provenance: ChatGPT 引导式对话；作者以选项收敛方式挖掘 SRT 第一直觉。本文件参考 ChoiceMap / choice-trace 写法，记录选项全集、作者选择、assistant 的下一话题选择来源与后续主题收敛。
-dependency: [01_Source_Intuition/README.md, Operations/_SRT_CHOICE_TRACE_LOG.md, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md]
+trace_mode: retro_writeback
+late_entry: true
+provenance: ChatGPT 普通引导式对话（对话本体未走任何 ChoiceMap 管线）；对话结束后，作者以选择地图格式回写成本 trace。记录选项全集、作者选择、assistant 的下一话题选择来源与后续主题收敛，全部字段为事后重构。
+dependency: [01_Source_Intuition/README.md, Operations/_SRT_CHOICE_TRACE_LOG.md, Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md]
 ---
 
 # SRT 第一直觉选择轨迹：为什么是“选择先于存在”
@@ -19,6 +21,7 @@ dependency: [01_Source_Intuition/README.md, Operations/_SRT_CHOICE_TRACE_LOG.md,
 > 1. 本文件是一次源头直觉对话的 choice-trace 留痕，**非 canonical，不定义术语**。
 > 2. 记录对象不是最终理论，而是作者在选项空间中的连续收敛：选了什么、如何改写选项、哪些判断被提升为地基。
 > 3. 本文件可用于后续书稿、源头直觉层、ChoiceMap/可再选择性产品线的素材回看；不得替代正式定义、形式化命题或外部证据。
+> 4. **记录模式：回写（retro_writeback）。** 对话本体是普通 LLM 对话，未走管线；本 trace 为事后重构，回看时按 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md §1` 降权。待确认项与收尾审计见 §6。
 
 ---
 
@@ -513,3 +516,41 @@ assistant 对此的读法：本次 trace 应优先进入“本体论源头”，
 当前 assistant 的建议收敛是：**C + D 为核心，A 弱化，B 作为边界**，即：
 
 > 耗散结构说明“存在必须被维持”，但 SRT 说明“维持必须保留后续选择”；耗散结构容易被误读为“秩序就是好”，但 SRT 要强调：没有选择的秩序也是退化。
+
+---
+
+## 6. 回写审计（2026-07-09 按 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md §2/§5` 补做）
+
+> 本节是对上述轨迹记录的事后审计，append-only，不改写 §0–§5 任何历史内容。
+
+### 6.1 事件分类补记
+
+- **越界选择（breakout）**：CT-05（选项外给出「非自我抹除」，失配类型 `dimension_miss`；越界后 assistant 做了防误读追问 CT-06，合格）；CT-14（上移一层，`level_miss`）；CT-12（把平面选项重构为"E 基础 / A–D 显化"，`format_miss`）；CT-17/18/19（连续自答替代选项，`dimension_miss`）。
+- **委托收敛（delegated）**：CT-13（"认同 assistant 判断"）；CT-23（"你帮我分析一下"，trace 内已标注 proposal 状态）。
+
+### 6.2 命题簇确认状态
+
+| 命题 | confirmation_status | 备注 |
+|---|---|---|
+| P1, P2, P5, P6, P7, P9, P10, P11, P12, P13 | `author_chosen` | 有对应轮次的作者显式选择或原话 |
+| P3, P4 | `author_breakout` | 源自 CT-05 越界 + CT-06 确认 |
+| P8 | `author_chosen`（选错）+ **`assistant_proposal_pending`（选对侧）** | "选对"的对称定义来自 CT-13 assistant 判断，未经作者对命题原文二次确认；且与仓库既有可再选择性结论重合，有众数回声嫌疑。**引用 P8 时只引"选错"半边** |
+| P14 | `assistant_proposal_pending` | CT-23 排序（C+D 核心 / A 弱化 / B 边界）待作者二次确认 |
+
+### 6.3 Canonical 碰撞检查（三态）
+
+- **已覆盖（直觉复认，非新增）**：P1/P2 →`Core_Law/SRT_L0_Metaphysics.md` 第一命题（选择是无主语的过程）与 `01_Source_Intuition/CORE_REVERSALS.md` #1/#2；P3/P4 → L0 的 ε（"偏向非自我抹除的结构倾向"）与初心词条；P5 → 书稿 Q06 三尊幽灵 + ghost operator 桥；P8（选错侧）→ 可再选择性元标准（`_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`）。
+- **新候选（真实增量）**：P6（存在=对象+边界+可能性场三元共构；"失败选择生成边界"）；P10（选择地基四条件 + 没有选择→伪选择→惩罚性选择→尊重选择分层的跨域化）；P12（退化=脆弱性提升）；P13（熵=去选择化画像）；P14（耗散结构 vs 选择结构划界，pending）。
+- **冲突/触雷**：P2 触及 `Core/SRT_OPEN_TENSIONS.md §7 P0-04`（selectability 起源未解决）——"主体只是选择结构的高级形态"应按 P0-04 护栏读作 derived process / stable pattern 选项，本 trace 是 P0-04 的直觉证词，不是解答；P13 与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md` 方向相反（Core_25 用热力学不可逆性作选择的签名，P13 把熵重定位为去选择化剩余画像），且 CT-21 的 ontological absence vs theoretical abstraction 校准未完成——引用 P13 不得写成 SRT 反熵理论。
+
+### 6.4 术语撞车检查
+
+- **「选择地基」撞车**：书稿 Q17 已将「选择地基」定义为意识三层结构的第一层（无意识层）。本 trace 的「选择地基」（可选项+脚手架+代价缓冲+尊重）是**另一个概念**。本 trace 内保留原话不改；但该概念进入书稿、理论层或 ChoiceMap 产品线前**必须改名或显式分义**。
+
+### 6.5 下游路由建议
+
+- P13 → `OPEN_TENSIONS 登记`（熵定位张力 + absence/abstraction 校准）+ `bridge 硬化候选`；
+- P6 → `bridge 硬化候选`（可形式化，触 L0 术语裁决前先走 bridge）；
+- P10 → `ChoiceMap 产品指标` + 跨域"选择条件"文件候选（伪选择目前锁在 AI 域）；
+- P12 → `04_External_Convergence` 证据卡候选（robustness–fragility tradeoff 文献）+ `书稿轻补丁 notes`；
+- P14 → `搁置`至作者二次确认 CT-23 排序后，再立"耗散结构 vs 选择结构"bridge。
