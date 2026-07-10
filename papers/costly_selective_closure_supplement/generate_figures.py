@@ -62,6 +62,23 @@ def bootstrap_ci(x, n_boot=10000, alpha=0.05, seed=0):
     return float(x.mean()), float(lo), float(hi)
 
 
+def paired_signflip_p(main, n_resamples=20000, seed=0):
+    """Main test: two-sided paired sign-flip permutation on the per-seed
+    real - resettable differences (real and resettable share seeds). Also
+    returns the pooled/unpaired permutation p (from the result file) for
+    comparison."""
+    real = {r["seed"]: r["post_coop"] for r in main["runs"] if r["regime"] == "real"}
+    reset = {r["seed"]: r["post_coop"] for r in main["runs"] if r["regime"] == "resettable"}
+    seeds = sorted(set(real) & set(reset))
+    diffs = np.array([real[s] - reset[s] for s in seeds])
+    obs = diffs.mean()
+    rng = np.random.default_rng(seed)
+    perm = (rng.choice([-1.0, 1.0], size=(n_resamples, len(diffs))) * diffs).mean(axis=1)
+    p_paired = (np.sum(np.abs(perm) >= abs(obs) - 1e-12) + 1) / (n_resamples + 1)
+    p_unpaired = main["tests"]["real_vs_resettable__post_coop"]["p"]
+    return len(seeds), float(p_paired), float(p_unpaired)
+
+
 def _box(ax, x, y, w, h, text, *, dashed=False, fc=C_BOX, fs=10, ec=C_EDGE, weight="normal", ha="center"):
     style = "round,pad=0.02,rounding_size=0.12"
     patch = FancyBboxPatch((x, y), w, h, boxstyle=style, linewidth=1.3,
@@ -195,12 +212,11 @@ def figure3_results():
     axA.set_ylabel("post-withdrawal mutual cooperation")
     axA.set_ylim(-0.05, 1.05)
     n = main["n_seeds"]
-    p = main["tests"]["real_vs_resettable__post_coop"]["p"]
-    p_txt = "p < 1e-4" if p <= 1e-4 else f"p = {p:.2g}"
+    _, p_paired, p_unpaired = paired_signflip_p(main)
+    def _pf(p): return "< 0.0001" if p <= 1e-4 else f"= {p:.2g}"
     axA.set_title(f"(a) Main result  (n = {n} seeds)", fontsize=10.5)
-    axA.annotate(f"real vs resettable: {p_txt}\n(permutation, two-sided)",
-                 xy=(0.5, 0.72), xycoords="data", ha="center", fontsize=8.5,
-                 color="#333")
+    axA.annotate(f"real vs resettable\npaired p {_pf(p_paired)}\n(unpaired p {_pf(p_unpaired)})",
+                 xy=(0.5, 0.64), xycoords="data", ha="center", fontsize=8.3, color="#333")
     axA.plot([0, 1], [1.0, 1.0], color="#333", lw=1)
     axA.text(0.5, 1.01, "*", ha="center", fontsize=13)
 
@@ -228,10 +244,8 @@ def figure3_results():
     Ts = sorted({c["T"] for c in grid})
     Ds = sorted({c["defect_net"] for c in grid})  # "-0.15","-0.45"
     M = np.full((len(Ds), len(Ts)), np.nan)
-    P = np.empty((len(Ds), len(Ts)), dtype=object)
     for c in grid:
         M[Ds.index(c["defect_net"]), Ts.index(c["T"])] = c["diff"]
-        P[Ds.index(c["defect_net"]), Ts.index(c["T"])] = c["p"]
     im = axC.imshow(M, cmap="YlGnBu", vmin=0, vmax=max(0.7, np.nanmax(M)), aspect="auto")
     axC.set_xticks(range(len(Ts))); axC.set_xticklabels([f"{t:g}" for t in Ts])
     axC.set_yticks(range(len(Ds))); axC.set_yticklabels(Ds)
@@ -239,8 +253,7 @@ def figure3_results():
     axC.set_ylabel("mutual-defection net energy")
     for i in range(len(Ds)):
         for j in range(len(Ts)):
-            star = "*" if P[i, j] <= 0.05 else ""
-            axC.text(j, i, f"{M[i, j]:+.2f}{star}", ha="center", va="center",
+            axC.text(j, i, f"{M[i, j]:+.2f}", ha="center", va="center",
                      fontsize=9.5, color="#111")
     n_pos = int(np.sum(M > 0))
     axC.set_title(f"(c) Payoff sweep: real − resettable\n"
@@ -253,9 +266,11 @@ def figure3_results():
     axA.margins(x=0.15)
     fig.text(0.5, -0.03,
              "Panel (a): points are per-seed values; markers show the mean with a 95% "
-             "bootstrap CI; * marks real vs resettable p < 1e-4. "
+             "bootstrap CI; the main test is a two-sided paired sign-flip permutation test "
+             "on the per-seed real − resettable differences. "
              "Panel (b): points per seed, line through means. "
-             "Panel (c): cell = mean(real) − mean(resettable), * = permutation p ≤ 0.05.",
+             "Panel (c): cell = mean(real) − mean(resettable) effect size; real exceeds "
+             "resettable in every cell.",
              ha="center", fontsize=8, color="#444")
     fig.tight_layout()
     save(fig, "figure3_results")
