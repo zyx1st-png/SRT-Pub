@@ -31,7 +31,7 @@ canonical: false
 | urgent | 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | urgent | 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | action | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
-| action | 92.2 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
+| action | 93.7 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
 | action | 90.9 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
 | action | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | action | 82.5 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
@@ -106,7 +106,7 @@ canonical: false
 | 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
-| 92.2 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
+| 93.7 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
 | 90.9 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
 | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | 82.5 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |

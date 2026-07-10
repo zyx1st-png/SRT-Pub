@@ -15,7 +15,9 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 # Choice-Trace 回写计划：理论层与书稿层
 
-> **Phase 1 执行记录（2026-07-10）**：Phase 1 全部无门项已执行。理论侧：T-A（`Core/SRT_OPEN_TENSIONS.md` 新增 §12 熵去选择化张力 + §7 两条 P0-04 直觉证词）、T-F（`04_External_Convergence/FIRST_EVIDENCE_CANDIDATES.md` 新增 Candidate 8 脆弱性候选方向，未编造未核实引用）、T-G（`Philosophy/SRT_Political_Philosophy.md` §6.2 新增显现权/分配权词汇对表注）均已落地。书稿侧：B-A #1/#2/#3/#4/#5-熵半边 以**候选性质章末注**形式落入 `Q06`(v22)/`Q19`(v18)/`Q22`(v29)/`Q28`(v19)，未改写任何既有正文；`Q28` 一并承接了原定位于 `Q18`/幕前·五的熵素材（理由：`Q28` 已有西蒙东亚稳态/热寂铺垫，`Q18` 未涉及熵、幕前·五页面过短不宜插入——详见 `BOOK_VERSION_LOG.md` 2026-07-10 条目）。附录术语表（#8）本轮未补词条：新增内容全部保持候选/章末注密度，未达术语表"正文核心概念"的收录门槛。**Phase 2/3 未执行**——门 G1/G2/G4/G5/G6 是作者裁决项（P8 选对定义、耗散结构排序、两种选择定义的层次关系、六条成文命题确认、三项术语裁决），按 §6 防误用红线不可由执行者代为拍板，仍待作者在下一轮对话中清点。
+> **Phase 1 执行记录（2026-07-10，2026-07-10 复审后修正）**：Phase 1 全部无门项已执行，但 T-F 只完成了两级路径中的候选登记级，不是完整证据卡。理论侧：T-A（`Core/SRT_OPEN_TENSIONS.md` 新增 §12 熵去选择化张力 + §7 两条 P0-04 直觉证词）已落地；T-F **候选登记级已落地**（`04_External_Convergence/FIRST_EVIDENCE_CANDIDATES.md` 新增 Candidate 8 脆弱性候选方向，未编造未核实引用），**正式证据卡级未开始**（需先完成至少一篇一手文献 close-read + DOI 核验，见 T-F 二级路径说明）；T-G（`Philosophy/SRT_Political_Philosophy.md` §6.2 新增显现权/分配权词汇对表注）已落地。书稿侧：B-A #1/#2/#3/#4/#5-熵半边 以**候选性质章末注**形式落入 `Q06`(v22)/`Q19`(v18)/`Q22`(v29)/`Q28`(v19)，未改写任何既有正文；`Q28` 一并承接了原定位于 `Q18`/幕前·五的熵素材（理由：`Q28` 已有西蒙东亚稳态/热寂铺垫，`Q18` 未涉及熵、幕前·五页面过短不宜插入——详见 `BOOK_VERSION_LOG.md` 2026-07-10 条目）。附录术语表（#8）本轮未补词条：新增内容全部保持候选/章末注密度，未达术语表"正文核心概念"的收录门槛。**Phase 2/3 未执行**——门 G1/G2/G4/G5/G6 是作者裁决项（P8 选对定义、耗散结构排序、两种选择定义的层次关系、六条成文命题确认、三项术语裁决），按 §6 防误用红线不可由执行者代为拍板，仍待作者在下一轮对话中清点；例外是 **T-C 边界 bridge 本身无门**，可在 Phase 2/3 之前独立推进，此前 §4 执行顺序表误将其与 T-B/T-D 并列挂在 G4/G6 下，已订正。
+>
+> **2026-07-10 复审修正记录**：作者复审在 PR #644 指出五处问题，已全部处理——(1) `Q06` 章末注九此前把"失败选择"与"未完成选择"并成一类，均产出"边界"，抹平了 trace1 P6 的对象/边界/可能性场三元区分，已恢复三分（未完成选择仍归可能性场，不产出边界）；(2) `Q28` 章末注七此前对尚未裁决的熵张力（ontological absence vs theoretical abstraction，见 `Core/SRT_OPEN_TENSIONS.md §12`）提前选边，并把"选择耗尽"与"熵增终态"作了过强的"同一件事两种语言"式等同，已改为显式并列两种读法、不作取舍，并把等同弱化为"可能存在结构类比或相邻描述，尚不能等同"；(3) 本文件 T-F 完成状态与实际产物不符（计划原文承诺正式证据卡，实际只完成候选登记），已拆分两级路径并订正本节与下方执行顺序表的完成状态措辞；(4) 执行顺序表 Phase 2 曾把无门的 T-C 与有门的 T-B/T-D 并列挂在 G4/G6 下，已拆行订正；(5) §3 的 B-B 素材池此前重复出现两次，已删除多余的一份。
 >
 > **性质与边界（先读）**
 > 1. 本文件是回写**计划**，非执行记录，非 canonical。列出的每一项在执行时仍须走各自的既有协议：canonical 冻结（`Governance/SRT_CANONICAL_FREEZE.md`）、编辑协议（`Governance/SRT_EDIT_PROTOCOL.md`）。
@@ -105,11 +107,13 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 ### T-F · External Convergence 证据卡：「脆弱性—选择空间收窄」
 
-落点：`04_External_Convergence/`（按 `EVIDENCE_CARD_TEMPLATE.md`，登记 `EVIDENCE_INDEX.md`）。无硬门。
+**两级路径，不可互相顶替**：
+
+1. **候选登记（Phase 1 已完成，无硬门）**：落点 `04_External_Convergence/FIRST_EVIDENCE_CANDIDATES.md`（Candidate 8），只登记候选方向、不声称任何引用已核实——这一级本身即为完成态，不是正式证据卡的半成品。
+2. **正式证据卡（未开始，无硬门，但需要真实工作量）**：落点 `04_External_Convergence/`（按 `EVIDENCE_CARD_TEMPLATE.md`，登记 `EVIDENCE_INDEX.md`）。要从候选登记升级到这一级，前提是至少完成一篇一手文献的 close-read + DOI 核验（Holling 1973 或 Carlson & Doyle HOT 二选一起步），按 `FIRST_EVIDENCE_CANDIDATES.md` 自身的 Promotion Rule 执行，并按 `EVIDENCE_GRADING.md` 评级、不超格引用。
 
 - 命题接口：退化 = 脆弱性提升；选择空间收窄 → 路径单一化 → 表面稳定实际脆弱（trace1 P12）；
-- 候选外部文献族：robustness–fragility tradeoff、HOT（Highly Optimized Tolerance）、反脆弱——是两份 trace 全部命题中最容易接经验证据的一条；
-- 按 `EVIDENCE_GRADING.md` 评级，不超格引用。
+- 候选外部文献族：robustness–fragility tradeoff、HOT（Highly Optimized Tolerance）、反脆弱——是两份 trace 全部命题中最容易接经验证据的一条。
 
 ### T-G · 对表 note：「显现权/分配权 ↔ 政治哲学既有词汇」
 
@@ -150,12 +154,6 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 - ChoiceMap 产品指标（含 1432 循环产品化）→ 第二卷（应用/工具卷）前哨，维持种子文件既有定位；
 - S 层未完成问题（「关切到底指什么」，候选 S1–S6 已冻结在 trace2 §1）→ 下一轮直觉挖掘对话，产出可能回流 `_SRT_D_VALUE_CANONICAL.md` 接口，但那是 trace3 的事。
 
-### B-B · 素材池（不进本书）
-
-- 显现权/分配权/选择贫困/三重垄断 → 社会本体论素材池（母书接口的后续延伸卷方向）；
-- ChoiceMap 产品指标（含 1432 循环产品化）→ 第二卷（应用/工具卷）前哨，维持种子文件既有定位；
-- S 层未完成问题（「关切到底指什么」，候选 S1–S6 已冻结在 trace2 §1）→ 下一轮直觉挖掘对话，产出可能回流 `_SRT_D_VALUE_CANONICAL.md` 接口，但那是 trace3 的事。
-
 ---
 
 ## 4. 执行顺序
@@ -163,9 +161,10 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 | 阶段 | 内容 | 前置 |
 |---|---|---|
 | **Phase 0** | 作者裁决包 G1/G2/G4/G5/G6（建议下一轮对话开场一次清完；G3/G7 已消解/完成） | — |
-| **Phase 1**（可立即，与 Phase 0 并行） | 理论侧：T-A OPEN_TENSIONS 登记、T-F 脆弱性证据卡、T-G 政治哲学对表；书稿侧：B-A #1–4 直接改章（Q06 边界收口、Q19 四分层、Q20/Q22 1432 循环、Q28+幕前·五负向链）+ #5 熵半边章末注 + #8 术语表随动 | 无门 |
-| **Phase 2** | T-B 熵—随机—再同步合并 bridge；T-C 边界 bridge；T-D 选择条件文件 | G4/G6 |
-| **Phase 3** | T-E 耗散结构 bridge；书稿 B-A #5 耗散半边、#6 Q21、#7 Q15 | G2/G5 |
+| **Phase 1**（可立即，与 Phase 0 并行） | 理论侧：T-A OPEN_TENSIONS 登记、T-F 候选登记（证据卡本身未开始，见 T-F 二级路径）、T-G 政治哲学对表；书稿侧：B-A #1–4 直接改章（Q06 边界收口、Q19 四分层、Q20/Q22 1432 循环、Q28+幕前·五负向链）+ #5 熵半边章末注 + #8 术语表随动 | 无门 |
+| **Phase 1 可并行加做** | T-C 边界 bridge——独立于 G4/G6，随时可单独推进，不必等 Phase 2 其余两项 | 无门 |
+| **Phase 2** | T-B 熵—随机—再同步合并 bridge；T-D 选择条件文件 | G4/G6 |
+| **Phase 3** | T-E 耗散结构 bridge；书稿 B-A #5 耗散半边、#6 Q21、#7 Q15；T-F 升级为正式证据卡（需先完成一手文献 close-read，不受本表其他门约束，随时可做） | G2/G5（T-F 升级除外，见上） |
 | **Phase 4**（远期，不在本计划内启动） | P6 三元共构申请 L0 术语裁决（C 类）；S 层对话（关切）→ d-value 接口回流 | T-C 桥硬化 + trace3 |
 
 ---
