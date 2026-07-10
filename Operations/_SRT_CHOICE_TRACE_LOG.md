@@ -170,3 +170,17 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **tension_count**: 4（见 trace 文件 §7 张力表，2026-07-09 回写补审）
 - **unresolved_tensions**: [T1 痛苦最原始 vs 去同步化先行, T2 选择的操作定义 vs 过程定义, T3 痛苦用法 vs SRT_Suffering 类型学, T4 幸运开放 vs P0-04]
 - **closure_pipeline_done**: true（张力审计 + canonical 碰撞检查 + 术语检查 + 路由见 trace 文件 §7，2026-07-09 补做；选项全集未逐字回收的缺陷已在 §7 登记，待原对话补收）
+
+### CT-20260711-01（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: retro_writeback
+- **date**: 2026-07-11
+- **trace_file**: `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_ECOLOGY_GOVERNANCE_TRACE_2026-07-11.md`
+- **one_line**: 从“关切是什么”推进到关切—`d` 共同演化、非自我抹除的选择生成生态、赌注剖面参与权、多模型分阶段承诺与既有选择重启条件；暂停于阈值捕获护栏 AH 层。
+- **breakout_count**: 3
+- **breakout_events**: [CT3-01/Q2, CT3-01/Q5, CT3-05]
+- **pending_confirmations**: trace §7.2 五条 assistant 综合句（当前关切/下一时刻关切、路径生成器、行动与认识关闭、历史授权、非生态抹除）
+- **tension_count**: 6（见 trace §9）
+- **unresolved_tensions**: [T3-04 选择生态生成性 vs 主体不可工具化, T3-06 重启阈值与测量可能被原决策结构捕获]
+- **closure_pipeline_done**: true（本阶段张力审计、canonical/术语检查、忠实度复核、路由与暂停选项冻结均完成；AH 层待下一会话继续）
