@@ -112,8 +112,9 @@ result runs. A pooled/unpaired permutation test
 test's resolution floor (~1/20001) and are stated as `p < 0.0001`; the
 conclusion is unchanged between them. Figure 3(a) error bars are **95% bootstrap
 confidence intervals of the mean** (10,000 resamples). The lives gradient reports
-a **tie-aware** Spearman rank correlation (with a two-sided permutation p-value)
-between the maximum number of lives and cooperation; the payoff sweep in
+a **tie-aware** Spearman rank correlation with a two-sided **blocked-by-seed**
+(within-seed, repeated-measures) permutation p-value between the maximum number
+of lives and cooperation; the payoff sweep in
 Figure 3(c) shows effect sizes (real − resettable), not per-cell significance
 stars.
 

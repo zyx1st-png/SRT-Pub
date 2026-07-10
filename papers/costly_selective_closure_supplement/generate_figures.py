@@ -238,7 +238,7 @@ def figure3_results():
     rho_p = grad.get("spearman_p")
     ann = f"tie-aware Spearman $\\rho$ = {rho:.2f}"
     if rho_p is not None:
-        ann += f"\n(perm p {'< 0.0001' if rho_p <= 1e-4 else f'= {rho_p:.2g}'})"
+        ann += f"\n(blocked perm p {'< 0.0001' if rho_p <= 1e-4 else f'= {rho_p:.2g}'})"
     axB.set_title("(b) Lives-gradient dose-response", fontsize=10.5)
     axB.annotate(ann, xy=(0.5, 0.88), xycoords="axes fraction", ha="center",
                  fontsize=8.6, color="#333")

@@ -1,4 +1,10 @@
 """
+HISTORICAL / SUPERSEDED -- do not use for analysis or reporting. The canonical,
+corrected code is in ../../costly_selective_closure_supplement/. The Spearman
+here uses ordinal argsort(argsort()) ranks with a global shuffle (ignores ties
+and the repeated-measures design); the supplement uses a tie-aware average-rank
+Spearman with a blocked-by-seed permutation p-value.
+
 Robustness pass for the Costly Selective Closure de-risking experiment.
 
 Two checks a hostile reviewer (R1 'confirmation bias', R2 'the resettable agent

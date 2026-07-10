@@ -208,20 +208,35 @@ def spearman(x, y):
     return float((rx @ ry) / (np.sqrt((rx @ rx) * (ry @ ry)) + 1e-12))
 
 
-def spearman_perm_p(x, y, n_resamples=20000, seed=0):
-    """Tie-aware Spearman rho and its two-sided permutation p-value (shuffling
-    the pairing; the rank vectors and their norms are invariant, so only the
-    cross term is recomputed)."""
-    rx = _avg_rank(x); rx = rx - rx.mean()
-    ry = _avg_rank(y); ry = ry - ry.mean()
-    den = np.sqrt((rx @ rx) * (ry @ ry)) + 1e-12
-    rho = (rx @ ry) / den
+def spearman_blocked_perm_p(x_level, M, n_resamples=20000, seed=0):
+    """Blocked-by-seed (repeated-measures) permutation p-value for the pooled
+    tie-aware Spearman rho.
+
+    The lives gradient runs each seed at every level, so the exchangeability
+    unit is the block of one seed's outcomes across levels -- not the 150
+    observations treated as independent. `M` has shape (n_seeds, n_levels): row
+    i holds seed i's post-withdrawal cooperation across the ordered levels
+    `x_level`. Each resample permutes levels WITHIN each seed only; outcomes
+    never cross seeds. The pooled tie-aware rho is recomputed each time;
+    two-sided, fixed RNG seed.
+
+    Within-row permutation leaves the global multiset of outcome ranks
+    unchanged, so the outcome-rank vector is computed once and permuted per row
+    (the normalising terms are permutation-invariant)."""
+    M = np.asarray(M, float)
+    n_seeds, n_lev = M.shape
+    x_flat = np.tile(np.asarray(x_level, float), n_seeds)
+    rx = _avg_rank(x_flat); rx = rx - rx.mean()
+    ry = _avg_rank(M.reshape(-1)); ry = ry - ry.mean()
+    denom = np.sqrt((rx @ rx) * (ry @ ry)) + 1e-12
+    rho = (rx @ ry) / denom
+    ry_mat = ry.reshape(n_seeds, n_lev)
     rng = np.random.default_rng(seed)
-    ry_perm = ry.copy()
     count = 0
     for _ in range(n_resamples):
-        rng.shuffle(ry_perm)
-        if abs((rx @ ry_perm) / den) >= abs(rho) - 1e-12:
+        perm = np.argsort(rng.random((n_seeds, n_lev)), axis=1)
+        ry_perm = np.take_along_axis(ry_mat, perm, axis=1).reshape(-1)
+        if abs((rx @ ry_perm) / denom) >= abs(rho) - 1e-12:
             count += 1
     return float(rho), float((count + 1) / (n_resamples + 1))
 
@@ -238,7 +253,6 @@ def gradient(seeds):
     out = {"seeds": seeds, "runs": runs, "summary": {}}
     print(f"\n=== LIVES GRADIENT (n_seeds={len(seeds)}) ===")
     print(f"{'level':<14}{'post_coop':>10}{'%coop':>8}{'deaths/ep':>11}{'d_eff':>7}")
-    all_lv, all_c = [], []
     for lv, name in levels:
         pc = np.array([r["post_coop"] for r in runs if r["level"] == name])
         pf = np.array([r["post_fail"] for r in runs if r["level"] == name])
@@ -247,15 +261,19 @@ def gradient(seeds):
                                 "frac_coop": float(np.mean(pc > 0.3)), "deaths": float(pf.mean()),
                                 "d_eff": float(de.mean())}
         print(f"{name:<14}{pc.mean():>10.3f}{100*np.mean(pc>0.3):>7.0f}%{pf.mean():>11.2f}{de.mean():>7.2f}")
-        lvl_num = np.log2(lv) if lv < INF_LIVES else np.log2(16)
-        all_lv += [lvl_num] * len(pc); all_c += list(pc)
-    rho, rho_p = spearman_perm_p(all_lv, all_c)
+    # Repeated-measures structure: rows = seeds, cols = levels (each seed runs
+    # at every level), permuted within seed only for the blocked p-value.
+    lvl_names = [name for _, name in levels]
+    x_level = np.array([np.log2(lv) if lv < INF_LIVES else np.log2(16) for lv, _ in levels])
+    by = {(r["seed"], r["level"]): r["post_coop"] for r in runs}
+    M = np.array([[by[(s, name)] for name in lvl_names] for s in seeds])
+    rho, rho_p = spearman_blocked_perm_p(x_level, M)
     o, p = permutation([r["post_coop"] for r in runs if r["level"] == "L1(real)"],
                        [r["post_coop"] for r in runs if r["level"] == "Linf(reset)"])
     out["spearman_lives_vs_coop"] = rho
     out["spearman_p"] = rho_p
     out["L1_vs_Linf"] = {"diff": o, "p": p}
-    print(f"\nSpearman(lives, post_coop) = {rho:+.3f}  (perm p = {rho_p:.4f}; negative = more lives -> less cooperation)")
+    print(f"\nSpearman(lives, post_coop) = {rho:+.3f}  (blocked-by-seed perm p = {rho_p:.4f}; negative = more lives -> less cooperation)")
     print(f"L1(real) vs Linf(reset): diff={o:+.3f}, p={p:.4f}")
     (ROOT / "results_gradient.json").write_text(json.dumps(out, indent=2))
 
