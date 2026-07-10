@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this reproduction package, please cite the associated paper."
+title: "Costly Selective Closure: reproduction package"
+abstract: >-
+  Code, fixed result files, and figure-generation scripts for the controlled
+  experiment isolating token-level irreversibility (the vulnerability dimension)
+  in the Costly Selective Closure comparative heuristic for life-likeness.
+authors:
+  - name: "Anonymous author(s)"
+license: MIT
+version: "1.0.0"
+date-released: "2026-07-10"
+keywords:
+  - costly selective closure
+  - life-likeness
+  - artificial life
+  - token irreversibility
+  - reinforcement learning

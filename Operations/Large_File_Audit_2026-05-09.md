@@ -23,11 +23,15 @@ canonical: false
 
 | Risk | Size | File | Split / handling |
 |---|---:|---|---|
-| urgent | 216.4 KiB | `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` | missing_or_not_needed |
-| urgent | 124.7 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
+| urgent | 829.9 KiB | `Output/从存在到秩序_完整版_2026-06-23.md` | missing_or_not_needed |
+| urgent | 326.1 KiB | `Output/从存在到秩序_哲学读者试读版_2026-06-23.md` | missing_or_not_needed |
+| urgent | 218.2 KiB | `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` | missing_or_not_needed |
+| urgent | 131.9 KiB | `01_Source_Intuition/BOOK/External_Theory_Notes/BARAD_SRT_ALIGNMENT_AND_INSERTION_MAP_2026-06-10.md` | missing_or_not_needed |
+| urgent | 125.9 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
 | urgent | 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | urgent | 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | action | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
+| action | 93.7 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
 | action | 90.9 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
 | action | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | action | 82.5 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
@@ -38,13 +42,16 @@ canonical: false
 | action | 74.8 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
 | action | 74.2 KiB | `Core/SRT_Core_01_Axioms.md` | Core/Axioms_Split |
 | action | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
+| action | 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
 | action | 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
 | warning | 66.1 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
-| warning | 65.1 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
+| warning | 65.2 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
 | warning | 64.5 KiB | `Physics/SRT_Phys_09_Formalism_Ext.md` | Physics/Formalism_Ext_Split |
-| warning | 62.6 KiB | `Philosophy/SRT_Ethics_Agency.md` | Philosophy/Ethics_Agency_Split |
+| warning | 62.8 KiB | `Philosophy/SRT_Ethics_Agency.md` | Philosophy/Ethics_Agency_Split |
+| warning | 62.4 KiB | `Philosophy/Papers/Biomarkers_Before_Treatments_NT1_Decoupled_TCI.md` | missing_or_not_needed |
 | warning | 59.5 KiB | `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | Neuroscience/Immune_Dist_Split |
 | warning | 57.5 KiB | `Core_Law/SRT_L1_Formalism.md` | Core_Law/L1_Formalism_Split |
+| warning | 57.0 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism_Submission_EN.md` | missing_or_not_needed |
 | warning | 56.9 KiB | `Philosophy/SRT_Social_Cognition.md` | Philosophy/Social_Cognition_Split |
 | warning | 56.4 KiB | `Philosophy/SRT_SocTheory_06_L2_Dynamics.md` | Philosophy/L2_Dynamics_Split |
 | warning | 54.3 KiB | `Physics/SRT_Quant_01_Selection.md` | Physics/Selection_Split |
@@ -53,87 +60,35 @@ canonical: false
 | warning | 50.8 KiB | `AI/Ontology_Annex/00_General_Boundary_Block.md` | AI/Ontology_Annex/General_Boundary_Block_Split |
 | warning | 50.7 KiB | `Physics/SRT_Quant_02_Cosmology.md` | Physics/Quant_02_Cosmology_Split |
 | warning | 50.6 KiB | `AI/SRT_AI_Architecture.md` | AI/Architecture_Split |
+| warning | 50.0 KiB | `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md` | missing_or_not_needed |
 | warning | 49.9 KiB | `Philosophy/SRT_SocTheory_05_Language_Eco.md` | Philosophy/Language_Eco_Split |
 
 ## artifact_or_generated
 
 | Risk | Size | File | Split / handling |
 |---|---:|---|---|
-| urgent | 20554.6 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure5.tif` | artifact/generated; do not use as primary connector read path |
-| urgent | 19940.1 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure1.tif` | artifact/generated; do not use as primary connector read path |
-| urgent | 15845.8 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure4.tif` | artifact/generated; do not use as primary connector read path |
-| urgent | 15488.7 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure2.tif` | artifact/generated; do not use as primary connector read path |
-| urgent | 9941.2 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure3.tif` | artifact/generated; do not use as primary connector read path |
-| urgent | 8574.4 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure5_v2.tif` | artifact/generated; do not use as primary connector read path |
-| urgent | 7627.6 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure1_v2.tif` | artifact/generated; do not use as primary connector read path |
-| urgent | 3849.4 KiB | `papers/ontological_friction/paper_ontological_friction_zh.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 3403.9 KiB | `papers/ontological_friction/paper_ontological_friction.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 2900.7 KiB | `papers/ontological_friction/paper_ontological_friction_old.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 2303.9 KiB | `papers/ontological_friction/paper_ontological_friction.docx` | artifact/generated; do not use as primary connector read path |
-| urgent | 2300.9 KiB | `papers/ontological_friction/paper_ontological_friction_zh.docx` | artifact/generated; do not use as primary connector read path |
-| urgent | 1942.0 KiB | `papers/ontological_friction/figures/frontiers_upload/frontiers_figures_tif.zip` | artifact/generated; do not use as primary connector read path |
-| urgent | 1582.9 KiB | `papers/ontological_friction/figures/frontiers_upload/frontiers_figures_jpg.zip` | artifact/generated; do not use as primary connector read path |
-| urgent | 1081.4 KiB | `video/out/outro_en.mp4` | artifact/generated; do not use as primary connector read path |
-| urgent | 1053.4 KiB | `video/out/outro.mp4` | artifact/generated; do not use as primary connector read path |
-| urgent | 868.6 KiB | `video/out/intro.mp4` | artifact/generated; do not use as primary connector read path |
-| urgent | 820.7 KiB | `video/out/intro_cn.mp4` | artifact/generated; do not use as primary connector read path |
-| urgent | 740.4 KiB | `papers/ontological_friction/figures/fig3_clinical_radar.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 556.6 KiB | `papers/ontological_friction/figures/fig5_ros_dag.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 554.6 KiB | `papers/ontological_friction/figures/fig4_experimental_design.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 549.4 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 543.4 KiB | `papers/ALIFE2026_submission_anonymous_v14.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 542.9 KiB | `papers/ALIFE2026_submission_anonymous_v15.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 526.5 KiB | `papers/ALIFE2026_submission_anonymous_v4.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 522.2 KiB | `papers/ALIFE2026_submission_anonymous_v3.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 478.4 KiB | `papers/ALIFE2026_submission_anonymous.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 477.7 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure5.jpg` | artifact/generated; do not use as primary connector read path |
-| urgent | 452.5 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure4.jpg` | artifact/generated; do not use as primary connector read path |
-| urgent | 450.4 KiB | `papers/ALIFE2026_submission_anonymous_v2.pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 428.0 KiB | `graphify-out/graph.json` | artifact/generated; do not use as primary connector read path |
-| urgent | 378.1 KiB | `graphify-out/root_snapshots/.graphify_extract.json` | artifact/generated; do not use as primary connector read path |
-| urgent | 378.1 KiB | `graphify-out/root_snapshots/.graphify_semantic.json` | artifact/generated; do not use as primary connector read path |
-| urgent | 377.2 KiB | `graphify-out/root_snapshots/.graphify_semantic_new.json` | artifact/generated; do not use as primary connector read path |
-| urgent | 377.1 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure1.jpg` | artifact/generated; do not use as primary connector read path |
-| urgent | 363.7 KiB | `graphify-out/graph.html` | artifact/generated; do not use as primary connector read path |
-| urgent | 357.9 KiB | `papers/ontological_friction/figures/fig1_srt_architecture.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 356.0 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure3.jpg` | artifact/generated; do not use as primary connector read path |
-| urgent | 338.9 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure2.jpg` | artifact/generated; do not use as primary connector read path |
-| urgent | 291.1 KiB | `papers/ontological_friction/figures/fig2_proxy_map.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 277.3 KiB | `Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 267.5 KiB | `Archive/root_misc/Pasted image 20260306100654.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 227.5 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure5_v2.jpg` | artifact/generated; do not use as primary connector read path |
-| urgent | 185.0 KiB | `papers/ontological_friction/figures/frontiers_upload/Figure1_v2.jpg` | artifact/generated; do not use as primary connector read path |
-| urgent | 118.8 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.html` | artifact/generated; do not use as primary connector read path |
+| urgent | 137.3 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.html` | artifact/generated; do not use as primary connector read path |
 | urgent | 116.5 KiB | `video/package-lock.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 114.0 KiB | `papers/ontological_friction/paper_ontological_friction.html` | artifact/generated; do not use as primary connector read path |
-| urgent | 110.9 KiB | `graphify-out/.graphify_chunk_03.json` | artifact/generated; do not use as primary connector read path |
+| urgent | 111.3 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 108.0 KiB | `Archive/raw_sessions/SRT_SESSION_RAW_TRANSCRIPT_2026-03-31.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 107.2 KiB | `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 102.7 KiB | `Archive/root_misc/Selection-Reality Theory (SRT).pdf` | artifact/generated; do not use as primary connector read path |
-| action | 95.0 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.md` | artifact/generated; do not use as primary connector read path |
 | action | 91.1 KiB | `papers/ontological_friction/paper_ontological_friction_zh.html` | artifact/generated; do not use as primary connector read path |
 | action | 87.9 KiB | `papers/ontological_friction/paper_ontological_friction.md` | artifact/generated; do not use as primary connector read path |
-| action | 86.6 KiB | `graphify-out/converted/paper_ontological_friction_frontiers_submission_3a4f7f4b.md` | artifact/generated; do not use as primary connector read path |
-| action | 78.7 KiB | `graphify-out/converted/paper_ontological_friction_frontiers_submission.pre_sync_backup_2026-03-24_02815416.md` | artifact/generated; do not use as primary connector read path |
-| action | 78.2 KiB | `graphify-out/converted/paper_ontological_friction_ecf0aa83.md` | artifact/generated; do not use as primary connector read path |
 | warning | 67.6 KiB | `papers/ontological_friction/paper_ontological_friction_zh.md` | artifact/generated; do not use as primary connector read path |
-| warning | 64.1 KiB | `graphify-out/.graphify_chunk_05.json` | artifact/generated; do not use as primary connector read path |
 | warning | 64.0 KiB | `papers/SRT_MetaOS_JCS_v2.md` | artifact/generated; do not use as primary connector read path |
 | warning | 61.5 KiB | `papers/markov_blanket/paper_markov_blanket_d_value.md` | artifact/generated; do not use as primary connector read path |
 | warning | 59.1 KiB | `papers/SRT_MetaOS_JCS_v1.md` | artifact/generated; do not use as primary connector read path |
-| warning | 58.9 KiB | `graphify-out/converted/paper_ontological_friction_zh_85046716.md` | artifact/generated; do not use as primary connector read path |
-| warning | 57.6 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx` | artifact/generated; do not use as primary connector read path |
-| warning | 55.1 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.pre_sync_backup_2026-03-24.docx` | artifact/generated; do not use as primary connector read path |
-
-## binary_or_media
-
-| Risk | Size | File | Split / handling |
-|---|---:|---|---|
-| warning | 54.1 KiB | `.agents/run/srt-webui.log` | binary/media artifact |
+| warning | 54.8 KiB | `papers/alife2026_pilot_results/v2_costly_selection/results_nopenalty.json` | artifact/generated; do not use as primary connector read path |
+| warning | 51.5 KiB | `papers/alife2026_pilot_results/v2_costly_selection/results_full.json` | artifact/generated; do not use as primary connector read path |
+| warning | 49.4 KiB | `papers/CostlySelectiveClosure_v16.md` | artifact/generated; do not use as primary connector read path |
 
 ## Recommended Queue
 
-- Action-threshold active markdown without split route: `2`
+- Action-threshold active markdown without split route: `7`
 
 1. Use the split route shown in the table before reading any action-threshold owner file through a connector.
 2. Treat `Operations/_SRT_MATERIAL_LOG.md` and `Operations/_SRT_STATUS_HISTORY.md` as split master indexes; read dated parts through `Operations/Material_Log/README.md` and `Operations/Status_History/README.md`.
@@ -143,11 +98,15 @@ canonical: false
 
 | Size | File | Split status |
 |---:|---|---|
-| 216.4 KiB | `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` | missing_or_not_needed |
-| 124.7 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
+| 829.9 KiB | `Output/从存在到秩序_完整版_2026-06-23.md` | missing_or_not_needed |
+| 326.1 KiB | `Output/从存在到秩序_哲学读者试读版_2026-06-23.md` | missing_or_not_needed |
+| 218.2 KiB | `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` | missing_or_not_needed |
+| 131.9 KiB | `01_Source_Intuition/BOOK/External_Theory_Notes/BARAD_SRT_ALIGNMENT_AND_INSERTION_MAP_2026-06-10.md` | missing_or_not_needed |
+| 125.9 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
 | 111.0 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
 | 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
 | 97.2 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
+| 93.7 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
 | 90.9 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
 | 88.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | 82.5 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
@@ -158,4 +117,5 @@ canonical: false
 | 74.8 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
 | 74.2 KiB | `Core/SRT_Core_01_Axioms.md` | Core/Axioms_Split |
 | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
+| 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
 | 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |

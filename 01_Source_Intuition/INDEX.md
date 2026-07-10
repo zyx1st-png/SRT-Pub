@@ -25,6 +25,13 @@ This index points to existing files that carry SRT's source-level force. It does
 | [`../SRT 金句.md`](<../SRT 金句.md>) | Collects compact source-level formulations and memorable public-facing sentences. |
 | [`../Selection-Reality Theory (SRT).md`](<../Selection-Reality Theory (SRT).md>) | Historical root-level theory text useful for tracing earlier public/source framing. |
 
+## Intuition Traces (choice-trace records)
+
+| File | What it holds |
+|---|---|
+| [`SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md`](SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md) | Retro-writeback choice trace of the founding intuition "selection before existence"; yields proposition cluster P1–P14 with a closure audit (§6). `trace_mode: retro_writeback`; read under `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md` rules. Not a definition source. |
+| [`SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`](SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md) | Continuation trace: process model of selection genesis (desynchronization/randomization → caught by comparison → selective resynchronization), plus manifestation/allocation rights and the 1432 liberation cycle. Cluster P2-01…P2-16 with writeback audit and tension table (§7). `trace_mode: retro_writeback`; paused at the S-layer question ("what is concern?"). Not a definition source. |
+
 ## How To Use This Index
 
 - Use this layer when you need the theory's founding reversal, philosophical force, or non-bureaucratic entrance.
