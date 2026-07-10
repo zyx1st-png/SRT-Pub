@@ -3,6 +3,7 @@ id: EC-NEURO-EDGE-TIME-SERIES-INTERACTION
 type: evidence_card
 status: draft_v1
 layer: external_convergence
+epistemic_layer: lab
 claim_mode: external_convergence
 canonical: false
 domain: neuroscience_network_neuroscience_systems_neuroscience

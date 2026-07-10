@@ -3,6 +3,7 @@ id: EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE
 type: evidence_card
 status: draft_v1
 layer: external_convergence
+epistemic_layer: lab
 claim_mode: external_convergence
 canonical: false
 domain: synthetic_biology_origin_of_life_minimal_cell
