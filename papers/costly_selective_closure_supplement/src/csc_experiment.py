@@ -1,32 +1,30 @@
 """
-Costly Selective Closure -- de-risking experiment (v2).
+Costly Selective Closure -- controlled two-agent experiment.
 
-Question under test (the one the ALIFE pilot FAILED to answer):
+Question under test:
     Does token-level irreversibility (real-stake) preserve costly cooperation
     better than a cheaply-resettable regime, AFTER an explicit cooperation
     bonus is withdrawn?
 
-Design principles that differ from the original pilot:
+Design principles:
   1. Genuine social dilemma (Prisoner's-Dilemma-style immediate reward:
      T=1.4 > R=1.0 > P=0.6 > S=0.0). Unilateral defection is tempting, so
-     withdrawing the bonus creates REAL decay pressure. In the original pilot
-     mutual cooperation was weakly reward-dominant, so nothing decayed.
+     withdrawing the bonus creates real decay pressure.
   2. Tight energy economy: only mutual cooperation thrives; mutual defection
-     slowly starves. This TIES SURVIVAL to cooperation, so death actually
-     happens and the terminate-vs-reset manipulation bites. In the original
-     pilot death was rare (0.13-0.64/ep), so real==resettable trivially.
+     slowly starves. This ties survival to cooperation, so death actually
+     happens and the terminate-vs-reset manipulation has an effect.
   3. Independent learners (two separate policies) so defection can genuinely
      emerge, rather than a single shared policy that moves in lockstep.
   4. Real and Resettable share an IDENTICAL reward function. The ONLY
      difference is what happens at energy<=0: terminate (real) vs reset
      (resettable). This is a clean single-variable manipulation of
      token-level irreversibility.
-  5. Non-saturating continuous metric: cooperation RETENTION = post-withdrawal
-     mutual-coop / baseline mutual-coop. Reported with a permutation test.
+  5. Non-saturating continuous metric: post-withdrawal mutual cooperation,
+     reported with a permutation test.
 
-The experiment is designed so the framework's prediction CAN show up, but is
-not guaranteed to: if survival pressure is too weak, real-stake will unravel
-into defection just like resettable, which would be evidence AGAINST the claim.
+The experiment is designed so the prediction CAN show up, but is not guaranteed
+to: if survival pressure is too weak, real-stake will unravel into defection
+just like resettable, which would be evidence against the claim.
 """
 from __future__ import annotations
 

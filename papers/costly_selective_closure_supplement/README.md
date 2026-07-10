@@ -103,25 +103,27 @@ and all sampling within a run.
 
 ## 10. Statistical tests
 
-The **primary test** for the clean comparison (real vs. resettable, which share
-seeds) is a two-sided **paired sign-flip permutation test** on the per-seed
-real − resettable differences (20,000 resamples, fixed seed), computed in
-`generate_figures.py` from the result runs. A pooled/unpaired permutation test
+The **primary test** for each real-vs-resettable comparison (the main experiment
+and the zero-penalty ablation, which share seeds) is a two-sided **paired
+sign-flip permutation test** on the per-seed real − resettable differences
+(20,000 resamples, fixed seed), computed in `generate_figures.py` from the
+result runs. A pooled/unpaired permutation test
 (also 20,000 resamples) is reported as a **robustness** check. Both sit at the
 test's resolution floor (~1/20001) and are stated as `p < 0.0001`; the
 conclusion is unchanged between them. Figure 3(a) error bars are **95% bootstrap
 confidence intervals of the mean** (10,000 resamples). The lives gradient reports
-a Spearman rank correlation between allowed respawns and cooperation; the payoff
-sweep in Figure 3(c) shows effect sizes (real − resettable), not per-cell
-significance stars.
+a **tie-aware** Spearman rank correlation (with a two-sided permutation p-value)
+between the maximum number of lives and cooperation; the payoff sweep in
+Figure 3(c) shows effect sizes (real − resettable), not per-cell significance
+stars.
 
 ## 11. Where results appear in the paper
 
 | paper location | file |
 |---|---|
 | §4.5 main result (real 0.55 / resettable 0.04 / simulated 0.07, paired p<0.0001) | `results/main_results.json` |
-| §4.5 zero-penalty ablation (0.50 vs 0.05) | `results/zero_penalty_results.json` |
-| §4.5 lives-gradient dose-response (Spearman -0.41) | `results/lives_gradient_results.json` |
+| §4.5 zero-penalty ablation (0.50 vs 0.05, paired p<0.0001) | `results/zero_penalty_results.json` |
+| §4.5 lives-gradient dose-response (tie-aware Spearman -0.44, p<0.0001) | `results/lives_gradient_results.json` |
 | §4.5 payoff sweep (real > resettable in 6/6 cells) | `results/payoff_sweep_results.json` |
 | Figure 3 | all four result files, via `generate_figures.py` |
 | Appendix (environment, reward matrix, network, schedule) | `src/csc_experiment.py`, `src/csc_robustness.py` |

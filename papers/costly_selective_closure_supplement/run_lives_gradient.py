@@ -1,5 +1,5 @@
 """Regenerate results/lives_gradient_results.json: lives-gradient dose-response
-over allowed respawns {1, 2, 4, 8, unbounded}, 30 seeds. Thin wrapper around
+over a maximum life budget of {1, 2, 4, 8, unbounded}, 30 seeds. Thin wrapper around
 src/csc_robustness.py.
 
     python run_lives_gradient.py

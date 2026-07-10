@@ -231,13 +231,17 @@ def figure3_results():
         means.append(vals.mean())
     axB.plot(xpos, means, "-o", color=C_REAL, lw=1.8, ms=6, zorder=3)
     axB.set_xticks(xpos); axB.set_xticklabels(["1", "2", "4", "8", "∞"], fontsize=10)
-    axB.set_xlabel("allowed respawns (lives)")
+    axB.set_xlabel("maximum lives")
     axB.set_ylabel("post-withdrawal mutual cooperation")
     axB.set_ylim(-0.05, 1.05)
     rho = grad["spearman_lives_vs_coop"]
+    rho_p = grad.get("spearman_p")
+    ann = f"tie-aware Spearman $\\rho$ = {rho:.2f}"
+    if rho_p is not None:
+        ann += f"\n(perm p {'< 0.0001' if rho_p <= 1e-4 else f'= {rho_p:.2g}'})"
     axB.set_title("(b) Lives-gradient dose-response", fontsize=10.5)
-    axB.annotate(f"Spearman $\\rho$ = {rho:.2f}", xy=(0.5, 0.9),
-                 xycoords="axes fraction", ha="center", fontsize=9, color="#333")
+    axB.annotate(ann, xy=(0.5, 0.88), xycoords="axes fraction", ha="center",
+                 fontsize=8.6, color="#333")
 
     # --- Panel C: payoff sweep heatmap (real - resettable) ---
     grid = sweep["grid"]

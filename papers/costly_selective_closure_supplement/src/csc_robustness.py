@@ -1,18 +1,15 @@
 """
-Robustness pass for the Costly Selective Closure de-risking experiment.
+Robustness pass for the Costly Selective Closure experiment.
 
-Two checks a hostile reviewer (R1 'confirmation bias', R2 'the resettable agent
-just found a pathological exploit') will demand:
-
-  (1) LIVES GRADIENT. Generalise 'terminate vs reset' to a number of allowed
-      respawns: 1 (real) -> 2 -> 4 -> 8 -> inf (resettable). This (a) caps the
-      death-farming exploit -- with few lives, dying repeatedly self-terminates
-      -- and (b) turns a binary contrast into a DOSE-RESPONSE curve. Prediction:
-      post-withdrawal cooperation falls monotonically as lives increase.
+  (1) LIVES GRADIENT. Generalise 'terminate vs reset' to a maximum number of
+      lives before termination: 1 (real) -> 2 -> 4 -> 8 -> unbounded
+      (resettable). This turns the binary contrast into a dose-response curve;
+      the prediction is that post-withdrawal cooperation falls monotonically as
+      the life budget increases.
 
   (2) PAYOFF SWEEP. Vary the temptation payoff T and the mutual-defection
-      starvation rate. If real > resettable only at one hand-picked cell it is
-      knife-edge; if it holds across the grid it is robust.
+      starvation rate to check that real > resettable holds across the grid
+      rather than at a single cell.
 
 Reuses the exact policy / REINFORCE / reward structure of csc_experiment.py.
 The single manipulated variable remains token-level irreversibility (max_lives);
@@ -184,11 +181,49 @@ def permutation(a, b, n=20000, seed=0):
     return float(obs), float((c + 1) / (n + 1))
 
 
+def _avg_rank(a):
+    """Average (tie-aware) ranks, 1..n, with ties sharing their mean rank."""
+    a = np.asarray(a, float)
+    order = np.argsort(a, kind="mergesort")
+    ranks = np.empty(len(a), float)
+    ranks[order] = np.arange(1, len(a) + 1)
+    sa = a[order]
+    i = 0
+    while i < len(a):
+        j = i
+        while j + 1 < len(a) and sa[j + 1] == sa[i]:
+            j += 1
+        if j > i:
+            ranks[order[i:j + 1]] = (i + j) / 2.0 + 1
+        i = j + 1
+    return ranks
+
+
 def spearman(x, y):
-    x = np.asarray(x, float); y = np.asarray(y, float)
-    rx = np.argsort(np.argsort(x)); ry = np.argsort(np.argsort(y))
-    rx = rx - rx.mean(); ry = ry - ry.mean()
+    """Tie-aware Spearman rank correlation (Pearson correlation of average
+    ranks). Correct for the lives gradient, where both the level and the
+    cooperation values contain many ties."""
+    rx = _avg_rank(x); rx = rx - rx.mean()
+    ry = _avg_rank(y); ry = ry - ry.mean()
     return float((rx @ ry) / (np.sqrt((rx @ rx) * (ry @ ry)) + 1e-12))
+
+
+def spearman_perm_p(x, y, n_resamples=20000, seed=0):
+    """Tie-aware Spearman rho and its two-sided permutation p-value (shuffling
+    the pairing; the rank vectors and their norms are invariant, so only the
+    cross term is recomputed)."""
+    rx = _avg_rank(x); rx = rx - rx.mean()
+    ry = _avg_rank(y); ry = ry - ry.mean()
+    den = np.sqrt((rx @ rx) * (ry @ ry)) + 1e-12
+    rho = (rx @ ry) / den
+    rng = np.random.default_rng(seed)
+    ry_perm = ry.copy()
+    count = 0
+    for _ in range(n_resamples):
+        rng.shuffle(ry_perm)
+        if abs((rx @ ry_perm) / den) >= abs(rho) - 1e-12:
+            count += 1
+    return float(rho), float((count + 1) / (n_resamples + 1))
 
 
 CFG = dict(train_eps=1000, withdraw_eps=300, window=100, lr=0.04, gamma=0.97)
@@ -214,12 +249,13 @@ def gradient(seeds):
         print(f"{name:<14}{pc.mean():>10.3f}{100*np.mean(pc>0.3):>7.0f}%{pf.mean():>11.2f}{de.mean():>7.2f}")
         lvl_num = np.log2(lv) if lv < INF_LIVES else np.log2(16)
         all_lv += [lvl_num] * len(pc); all_c += list(pc)
-    rho = spearman(all_lv, all_c)
+    rho, rho_p = spearman_perm_p(all_lv, all_c)
     o, p = permutation([r["post_coop"] for r in runs if r["level"] == "L1(real)"],
                        [r["post_coop"] for r in runs if r["level"] == "Linf(reset)"])
     out["spearman_lives_vs_coop"] = rho
+    out["spearman_p"] = rho_p
     out["L1_vs_Linf"] = {"diff": o, "p": p}
-    print(f"\nSpearman(lives, post_coop) = {rho:+.3f}  (negative = monotone: more lives -> less cooperation)")
+    print(f"\nSpearman(lives, post_coop) = {rho:+.3f}  (perm p = {rho_p:.4f}; negative = more lives -> less cooperation)")
     print(f"L1(real) vs Linf(reset): diff={o:+.3f}, p={p:.4f}")
     (ROOT / "results_gradient.json").write_text(json.dumps(out, indent=2))
 
