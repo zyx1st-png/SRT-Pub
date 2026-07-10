@@ -344,6 +344,15 @@ Any bridge that uses a selector-like term must mark which layer it is using:
 
 Until the origin question is actually hardened, P0-04 should be cited as an open exposure point. Do not add a formula here to make the gap look closed.
 
+### Source-Intuition Testimony (non-resolving, added 2026-07-10)
+
+Two source-intuition choice-traces register direct intuitive testimony on this exposure point. Testimony is not derivation; it does not move P0-04 toward resolution. It is logged here only so the exposure point's intuitive-pressure record does not stay empty.
+
+- `01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md` P2: "selection is prior to the subject; the subject is only a later-stage form the selection structure develops into." This restates the P0-04 exposure rather than closing it — it says the chooser is downstream, not where the first selecting capacity itself comes from.
+- `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md` P2-01: "selection as the minimal non-neutral maintenance of a lucky openness" (the author's own words: "选择是对于幸运产生的最小非中立的维持"). "Lucky" is an intuitive name for the non-selective ground P0-04 asks about; it does not derive selectability from it.
+
+Neither testimony should be read as narrowing the three-way guardrail above (derived process / stable pattern / assumed interface); both remain compatible with all three and do not by themselves pick one.
+
 ---
 
 ## 8. Core 24: Floor Replacement, Dynamic Normativity, and Non-Reductive Verification
@@ -497,3 +506,28 @@ Three candidate resolutions were on the table:
 3. **【ADOPTED】 Two independent criteria; direction is four**: 可延续 / 可协调 / 不外包 / 可再选择.
 
 **Author chose option 3.** Rationale: 可协调 (differences coexist) and 不外包 (consequences return to bearers) genuinely come apart, so each earns a distinct pillar; 不外包 unifies with the whole-book 后果回流 spine and the `C_i` factor. It fits the ε+F+M+U minimal closure cleanly — F ("no position sees all consequences") has two faces, consequences displaced in time (→可延续) and consequences displaced to other positions (→不外包), so adding 不外包 gives F its own criterion rather than bundling it into 可延续. The change is now landed (see the Resolution note at the top of this section for the full file list). What remains open is only the empirical/threshold layer shared with §4 (operational tests for when a consequence counts as genuinely "outsourced to a no-feedback position" vs. legitimately borne elsewhere).
+
+---
+
+## 12. Entropy as a De-Selection Reading (open, registered 2026-07-10)
+
+### Current State
+
+`Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md` treats thermodynamic irreversibility and entropy production as an **empirical signature** of selection: `H_P` (production entropy) is a possible readout of selection asymmetry, not identical to `\Psi_f`. This is a bridge-level, measurement-facing reading — entropy production is evidence *that* a selection-like asymmetry occurred.
+
+### Problem Point
+
+A source-intuition choice-trace (`01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md`, P13) proposes a different-altitude reading: entropy is not a signature *of* selection but a **statistical portrait of what remains after selection, boundary-maintenance, and scaffolding are abstracted away** — "熵是对'将世界的选择剔除后'的运转规律总结" (CT-20260709-20/21). This is not a restatement of the Core_25 bridge; it is a claim about where entropy sits relative to selection *in principle* (de-selection reading), not merely how entropy can be measured.
+
+The trace's own follow-up question (CT-21) is unresolved and must travel with the tension: is this an **ontological absence** claim (selection is genuinely not present in what entropy tracks) or a **theoretical abstraction** claim (statistical mechanics, as a modeling choice, abstracts selection out even though it is present)? These have different physical commitments — the first risks colliding with standard statistical mechanics; the second does not. The trace does not adjudicate between them.
+
+A companion trace (`01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`, P2-14) independently proposes the dual/complementary formulation: "selection is a generative resynchronization of randomness" (a construction reading, additive) against P13's "entropy is the de-selection portrait" (a subtraction reading). The two are registered together because they describe the same boundary from opposite directions and should not be hardened as two separate concepts.
+
+### Minimal Guardrail
+
+> **Level**: source-intuition pressure, not a resolved theorem.
+
+- Do not cite P13 or P2-14 as showing SRT is an anti-entropy or entropy-reversing theory.
+- Do not treat P13 as superseding or correcting `Core/SRT_Core_25`'s measurement-facing reading — the two operate at different altitudes (ontological positioning vs. empirical projection) until a bridge explicitly reconciles them.
+- Do not present the ontological-absence / theoretical-abstraction distinction as resolved in either direction.
+- If hardened into a bridge, the bridge must state which of the two readings (or a scoped combination) it adopts, and must cross-check against `Core_Law/SRT_L0_Metaphysics.md`'s existing randomness argument ("pure randomness would not produce stable structure; a constrained determinization process is what SRT calls selection") to avoid introducing an uncredited new primitive.

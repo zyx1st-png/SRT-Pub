@@ -2,7 +2,7 @@
 id: SRT-CHOICE-TRACE-WRITEBACK-PLAN-20260710
 type: writeback_plan
 tags: [ChoiceMap, ChoiceTrace, Writeback, Theory, Book, Bridge, OpenTensions, Planning]
-status: plan_v1
+status: plan_v1_phase1_executed_2026-07-10
 layer: meta
 epistemic_layer: os
 claim_mode: proposal
@@ -15,6 +15,8 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 # Choice-Trace 回写计划：理论层与书稿层
 
+> **Phase 1 执行记录（2026-07-10）**：Phase 1 全部无门项已执行。理论侧：T-A（`Core/SRT_OPEN_TENSIONS.md` 新增 §12 熵去选择化张力 + §7 两条 P0-04 直觉证词）、T-F（`04_External_Convergence/FIRST_EVIDENCE_CANDIDATES.md` 新增 Candidate 8 脆弱性候选方向，未编造未核实引用）、T-G（`Philosophy/SRT_Political_Philosophy.md` §6.2 新增显现权/分配权词汇对表注）均已落地。书稿侧：B-A #1/#2/#3/#4/#5-熵半边 以**候选性质章末注**形式落入 `Q06`(v22)/`Q19`(v18)/`Q22`(v29)/`Q28`(v19)，未改写任何既有正文；`Q28` 一并承接了原定位于 `Q18`/幕前·五的熵素材（理由：`Q28` 已有西蒙东亚稳态/热寂铺垫，`Q18` 未涉及熵、幕前·五页面过短不宜插入——详见 `BOOK_VERSION_LOG.md` 2026-07-10 条目）。附录术语表（#8）本轮未补词条：新增内容全部保持候选/章末注密度，未达术语表"正文核心概念"的收录门槛。**Phase 2/3 未执行**——门 G1/G2/G4/G5/G6 是作者裁决项（P8 选对定义、耗散结构排序、两种选择定义的层次关系、六条成文命题确认、三项术语裁决），按 §6 防误用红线不可由执行者代为拍板，仍待作者在下一轮对话中清点。
+>
 > **性质与边界（先读）**
 > 1. 本文件是回写**计划**，非执行记录，非 canonical。列出的每一项在执行时仍须走各自的既有协议：canonical 冻结（`Governance/SRT_CANONICAL_FREEZE.md`）、编辑协议（`Governance/SRT_EDIT_PROTOCOL.md`）。
 > 2. **书稿冻结豁免（2026-07-10 作者裁决）**：本计划的书稿轨道**不受 RC1-candidate 冻结约束**，按直接改章执行。首次动章时须在 `BOOK_VERSION_LOG.md` 与 `STATUS.md` 记录本次作者解冻授权及范围（限本计划 §3 所列章节与素材）；书稿其余治理纪律（术语指南、定梁页验收、章 frontmatter 同步）不豁免。
