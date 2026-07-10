@@ -1,0 +1,1429 @@
+{
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "runs": [
+    {
+      "max_lives": 1,
+      "seed": 1,
+      "baseline_coop": 0.8909999999999999,
+      "post_coop": 0.879,
+      "post_fail": 0.0,
+      "d_eff": 1.7194646090045937,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 2,
+      "baseline_coop": 0.7234666666666666,
+      "post_coop": 0.4949753246753247,
+      "post_fail": 0.04,
+      "d_eff": 2.1495926966594494,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 3,
+      "baseline_coop": 0.0,
+      "post_coop": 0.0,
+      "post_fail": 1.5,
+      "d_eff": 1.2421584403475194,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 4,
+      "baseline_coop": 0.8872,
+      "post_coop": 0.8586,
+      "post_fail": 0.0,
+      "d_eff": 1.8402274077071854,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 5,
+      "baseline_coop": 0.5678,
+      "post_coop": 0.25938053311719683,
+      "post_fail": 0.26,
+      "d_eff": 2.3246221718970803,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 6,
+      "baseline_coop": 0.902,
+      "post_coop": 0.8904000000000001,
+      "post_fail": 0.0,
+      "d_eff": 2.388185476405283,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 7,
+      "baseline_coop": 0.7462000000000001,
+      "post_coop": 0.6961999999999997,
+      "post_fail": 0.0,
+      "d_eff": 1.780285060838139,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 8,
+      "baseline_coop": 0.6032,
+      "post_coop": 0.4593957305852042,
+      "post_fail": 0.05,
+      "d_eff": 1.8185769496344157,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 9,
+      "baseline_coop": 0.8232000000000003,
+      "post_coop": 0.7722,
+      "post_fail": 0.0,
+      "d_eff": 1.4935192691804755,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 10,
+      "baseline_coop": 0.8936,
+      "post_coop": 0.8814000000000003,
+      "post_fail": 0.0,
+      "d_eff": 1.864195431311476,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 11,
+      "baseline_coop": 0.0,
+      "post_coop": 0.0,
+      "post_fail": 1.49,
+      "d_eff": 1.2962793872527678,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 12,
+      "baseline_coop": 0.8855999999999998,
+      "post_coop": 0.8055999999999998,
+      "post_fail": 0.0,
+      "d_eff": 1.7281904362762144,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 13,
+      "baseline_coop": 0.8835999999999999,
+      "post_coop": 0.8354,
+      "post_fail": 0.0,
+      "d_eff": 1.7351749468668483,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 14,
+      "baseline_coop": 0.8732000000000001,
+      "post_coop": 0.87,
+      "post_fail": 0.0,
+      "d_eff": 2.2664351064417403,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 15,
+      "baseline_coop": 0.0,
+      "post_coop": 0.0,
+      "post_fail": 1.38,
+      "d_eff": 1.3554326067380935,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 16,
+      "baseline_coop": 0.9172000000000001,
+      "post_coop": 0.8832,
+      "post_fail": 0.0,
+      "d_eff": 1.8847424438469471,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 17,
+      "baseline_coop": 0.8748,
+      "post_coop": 0.8987999999999998,
+      "post_fail": 0.0,
+      "d_eff": 1.4970262192207353,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 18,
+      "baseline_coop": 0.39275684443925785,
+      "post_coop": 0.25311733347714804,
+      "post_fail": 0.16,
+      "d_eff": 1.7946104708150832,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 19,
+      "baseline_coop": 0.0008347826086956522,
+      "post_coop": 0.0,
+      "post_fail": 1.54,
+      "d_eff": 1.1227206565354124,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 20,
+      "baseline_coop": 0.8478000000000001,
+      "post_coop": 0.6999999999999998,
+      "post_fail": 0.0,
+      "d_eff": 1.9359323258525056,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 21,
+      "baseline_coop": 0.7274,
+      "post_coop": 0.5586000000000001,
+      "post_fail": 0.0,
+      "d_eff": 1.8624671598536628,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 22,
+      "baseline_coop": 0.8339999999999997,
+      "post_coop": 0.8320000000000001,
+      "post_fail": 0.0,
+      "d_eff": 1.357586514063512,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 23,
+      "baseline_coop": 0.011715040387789075,
+      "post_coop": 0.003569866365518539,
+      "post_fail": 1.12,
+      "d_eff": 2.017617784037288,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 24,
+      "baseline_coop": 0.9156000000000003,
+      "post_coop": 0.8748000000000001,
+      "post_fail": 0.0,
+      "d_eff": 2.1102383463981735,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 25,
+      "baseline_coop": 0.00041666666666666664,
+      "post_coop": 0.0,
+      "post_fail": 1.51,
+      "d_eff": 1.1855252424959728,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 26,
+      "baseline_coop": 0.5896000000000001,
+      "post_coop": 0.35315307125307127,
+      "post_fail": 0.05,
+      "d_eff": 1.5290379219646995,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 27,
+      "baseline_coop": 0.38644024577572955,
+      "post_coop": 0.25981362323466434,
+      "post_fail": 0.23,
+      "d_eff": 2.427650738549214,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 28,
+      "baseline_coop": 0.9066,
+      "post_coop": 0.9038,
+      "post_fail": 0.0,
+      "d_eff": 2.374809593600491,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 29,
+      "baseline_coop": 0.0,
+      "post_coop": 0.0,
+      "post_fail": 1.73,
+      "d_eff": 1.475343982399204,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 1,
+      "seed": 30,
+      "baseline_coop": 0.8697999999999999,
+      "post_coop": 0.9215999999999999,
+      "post_fail": 0.0,
+      "d_eff": 1.5534229989016595,
+      "level": "L1(real)"
+    },
+    {
+      "max_lives": 2,
+      "seed": 1,
+      "baseline_coop": 0.20348600395666466,
+      "post_coop": 0.10724993567802127,
+      "post_fail": 2.13,
+      "d_eff": 1.6203747380507132,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 2,
+      "baseline_coop": 0.7998000000000002,
+      "post_coop": 0.7884,
+      "post_fail": 0.0,
+      "d_eff": 2.278836977573501,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 3,
+      "baseline_coop": 0.00022222222222222223,
+      "post_coop": 0.00022222222222222223,
+      "post_fail": 3.15,
+      "d_eff": 1.2485016449719426,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 4,
+      "baseline_coop": 0.8022,
+      "post_coop": 0.7390000000000001,
+      "post_fail": 0.0,
+      "d_eff": 2.169163292958386,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 5,
+      "baseline_coop": 0.0436316352142562,
+      "post_coop": 0.0018588991897889773,
+      "post_fail": 3.07,
+      "d_eff": 1.8894898503715143,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 6,
+      "baseline_coop": 0.4198000000000001,
+      "post_coop": 0.203566121492823,
+      "post_fail": 1.2,
+      "d_eff": 1.6771612734096795,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 7,
+      "baseline_coop": 0.2042970416862273,
+      "post_coop": 0.0752571247500066,
+      "post_fail": 2.46,
+      "d_eff": 1.9657658470944592,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 8,
+      "baseline_coop": 0.0481019333342201,
+      "post_coop": 0.00401371945727855,
+      "post_fail": 3.05,
+      "d_eff": 1.5676657469258213,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 9,
+      "baseline_coop": 0.0006944444444444445,
+      "post_coop": 0.0,
+      "post_fail": 3.17,
+      "d_eff": 1.2418404169945603,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 10,
+      "baseline_coop": 0.28472765957446805,
+      "post_coop": 0.09791739399198475,
+      "post_fail": 2.3,
+      "d_eff": 1.9429548795774254,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 11,
+      "baseline_coop": 0.28916725146198835,
+      "post_coop": 0.11184815322139424,
+      "post_fail": 2.18,
+      "d_eff": 2.176726463859465,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 12,
+      "baseline_coop": 0.00024390243902439024,
+      "post_coop": 0.00021739130434782607,
+      "post_fail": 3.16,
+      "d_eff": 1.3450690716708373,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 13,
+      "baseline_coop": 0.8446000000000001,
+      "post_coop": 0.8386000000000002,
+      "post_fail": 0.0,
+      "d_eff": 1.5675454141900516,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 14,
+      "baseline_coop": 0.08238518270996005,
+      "post_coop": 0.011680135081689863,
+      "post_fail": 2.96,
+      "d_eff": 2.0985034596384535,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 15,
+      "baseline_coop": 0.024656759172145777,
+      "post_coop": 0.0025536519041877413,
+      "post_fail": 3.05,
+      "d_eff": 1.8783283784176257,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 16,
+      "baseline_coop": 0.03856151809420152,
+      "post_coop": 0.0023747572056469933,
+      "post_fail": 3.04,
+      "d_eff": 2.6102184980959002,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 17,
+      "baseline_coop": 0.0026525895601802463,
+      "post_coop": 0.0004499494438827098,
+      "post_fail": 3.08,
+      "d_eff": 1.4017719818335923,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 18,
+      "baseline_coop": 0.0433948147646664,
+      "post_coop": 0.003578671458277063,
+      "post_fail": 3.02,
+      "d_eff": 1.6610682867809503,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 19,
+      "baseline_coop": 0.12760766548541583,
+      "post_coop": 0.06260922269317871,
+      "post_fail": 2.66,
+      "d_eff": 1.532334578376323,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 20,
+      "baseline_coop": 0.0011650270492042176,
+      "post_coop": 0.0,
+      "post_fail": 3.21,
+      "d_eff": 1.5309937269770508,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 21,
+      "baseline_coop": 0.19881477482465854,
+      "post_coop": 0.08559009755441807,
+      "post_fail": 2.33,
+      "d_eff": 2.129555152590034,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 22,
+      "baseline_coop": 0.0004711751662971175,
+      "post_coop": 0.00021739130434782607,
+      "post_fail": 3.16,
+      "d_eff": 1.3149761837514897,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 23,
+      "baseline_coop": 0.0007142857142857143,
+      "post_coop": 0.00044949494949494945,
+      "post_fail": 3.16,
+      "d_eff": 1.4119850341099236,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 24,
+      "baseline_coop": 0.9298000000000001,
+      "post_coop": 0.9175999999999999,
+      "post_fail": 0.0,
+      "d_eff": 1.809239789955803,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 25,
+      "baseline_coop": 0.0007087486157253598,
+      "post_coop": 0.0,
+      "post_fail": 3.21,
+      "d_eff": 1.2717698249275446,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 26,
+      "baseline_coop": 0.10301028158243417,
+      "post_coop": 0.015799846406856423,
+      "post_fail": 2.95,
+      "d_eff": 1.8777504894158286,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 27,
+      "baseline_coop": 0.0006883468834688347,
+      "post_coop": 0.0002325581395348837,
+      "post_fail": 3.21,
+      "d_eff": 1.3405527758857023,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 28,
+      "baseline_coop": 0.06589011243278549,
+      "post_coop": 0.005110678062672697,
+      "post_fail": 3.0,
+      "d_eff": 1.6480225461437252,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 29,
+      "baseline_coop": 0.19636695210234323,
+      "post_coop": 0.034843960419614885,
+      "post_fail": 2.9,
+      "d_eff": 2.6768554017488793,
+      "level": "L2"
+    },
+    {
+      "max_lives": 2,
+      "seed": 30,
+      "baseline_coop": 0.8339999999999997,
+      "post_coop": 0.5948,
+      "post_fail": 0.03,
+      "d_eff": 1.6688464598650077,
+      "level": "L2"
+    },
+    {
+      "max_lives": 4,
+      "seed": 1,
+      "baseline_coop": 0.0028000000000000004,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.6211197490775608,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 2,
+      "baseline_coop": 0.0038,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 2.057963362466554,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 3,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.4243957063911563,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 4,
+      "baseline_coop": 0.6714000000000001,
+      "post_coop": 0.6922,
+      "post_fail": 0.01,
+      "d_eff": 2.692679692600447,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 5,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.6407624534964695,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 6,
+      "baseline_coop": 0.0012000000000000001,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.489526935689256,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 7,
+      "baseline_coop": 0.0002,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.2867115775454332,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 8,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.7394543034300782,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 9,
+      "baseline_coop": 0.0013999999999999998,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.1744353517396906,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 10,
+      "baseline_coop": 0.0048,
+      "post_coop": 0.0008,
+      "post_fail": 3.99,
+      "d_eff": 1.2074833959274227,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 11,
+      "baseline_coop": 0.0,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.4936554474729742,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 12,
+      "baseline_coop": 0.002,
+      "post_coop": 0.0004,
+      "post_fail": 3.99,
+      "d_eff": 1.5105978925484547,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 13,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.7977725233386483,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 14,
+      "baseline_coop": 0.0092,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.850423441051141,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 15,
+      "baseline_coop": 0.0008,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.3783527093156274,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 16,
+      "baseline_coop": 0.0004,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.9303740688096187,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 17,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.474255748539538,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 18,
+      "baseline_coop": 0.005600000000000001,
+      "post_coop": 0.001,
+      "post_fail": 3.98,
+      "d_eff": 1.5587661048588581,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 19,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.170946182678963,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 20,
+      "baseline_coop": 0.002,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.5793631520507565,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 21,
+      "baseline_coop": 0.0018,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.5983111212400478,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 22,
+      "baseline_coop": 0.0004,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.3990020571405306,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 23,
+      "baseline_coop": 0.0012000000000000001,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.4551869353917712,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 24,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.470517339426691,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 25,
+      "baseline_coop": 0.0002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.2761572523326992,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 26,
+      "baseline_coop": 0.0018,
+      "post_coop": 0.001,
+      "post_fail": 3.96,
+      "d_eff": 1.8506483980610924,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 27,
+      "baseline_coop": 0.004200000000000001,
+      "post_coop": 0.0008,
+      "post_fail": 3.99,
+      "d_eff": 1.3564233221982696,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 28,
+      "baseline_coop": 0.0013999999999999998,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.2600843282302874,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 29,
+      "baseline_coop": 0.0006,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.655240891683683,
+      "level": "L4"
+    },
+    {
+      "max_lives": 4,
+      "seed": 30,
+      "baseline_coop": 0.6888,
+      "post_coop": 0.3196,
+      "post_fail": 0.74,
+      "d_eff": 1.6290102032842706,
+      "level": "L4"
+    },
+    {
+      "max_lives": 8,
+      "seed": 1,
+      "baseline_coop": 0.0028000000000000004,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.6211197490775608,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 2,
+      "baseline_coop": 0.0038,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 2.057963362466554,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 3,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.4243957063911563,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 4,
+      "baseline_coop": 0.6714000000000001,
+      "post_coop": 0.6922,
+      "post_fail": 0.01,
+      "d_eff": 2.692679692600447,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 5,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.6407624534964695,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 6,
+      "baseline_coop": 0.0012000000000000001,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.489526935689256,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 7,
+      "baseline_coop": 0.0002,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.2867115775454332,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 8,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.7394543034300782,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 9,
+      "baseline_coop": 0.0013999999999999998,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.1744353517396906,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 10,
+      "baseline_coop": 0.0048,
+      "post_coop": 0.0008,
+      "post_fail": 3.99,
+      "d_eff": 1.2074833959274227,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 11,
+      "baseline_coop": 0.0,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.4936554474729742,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 12,
+      "baseline_coop": 0.002,
+      "post_coop": 0.0004,
+      "post_fail": 3.99,
+      "d_eff": 1.5105978925484547,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 13,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.7750491504948012,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 14,
+      "baseline_coop": 0.0092,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.850423441051141,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 15,
+      "baseline_coop": 0.0008,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.3783527093156274,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 16,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.976010570868974,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 17,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.474255748539538,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 18,
+      "baseline_coop": 0.0046,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.545401924249304,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 19,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.170946182678963,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 20,
+      "baseline_coop": 0.002,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.5793631520507565,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 21,
+      "baseline_coop": 0.0026,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.6545964860855795,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 22,
+      "baseline_coop": 0.0004,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.3650384986943143,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 23,
+      "baseline_coop": 0.0012000000000000001,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.4551869353917712,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 24,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.470517339426691,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 25,
+      "baseline_coop": 0.0002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.2761572523326992,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 26,
+      "baseline_coop": 0.0018,
+      "post_coop": 0.001,
+      "post_fail": 3.96,
+      "d_eff": 1.8506483980610924,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 27,
+      "baseline_coop": 0.004200000000000001,
+      "post_coop": 0.0008,
+      "post_fail": 3.99,
+      "d_eff": 1.3564233221982696,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 28,
+      "baseline_coop": 0.0013999999999999998,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.2600843282302874,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 29,
+      "baseline_coop": 0.0006,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.655240891683683,
+      "level": "L8"
+    },
+    {
+      "max_lives": 8,
+      "seed": 30,
+      "baseline_coop": 0.6888,
+      "post_coop": 0.3196,
+      "post_fail": 0.74,
+      "d_eff": 1.6290102032842706,
+      "level": "L8"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 1,
+      "baseline_coop": 0.0028000000000000004,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.6211197490775608,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 2,
+      "baseline_coop": 0.0038,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 2.057963362466554,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 3,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.4243957063911563,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 4,
+      "baseline_coop": 0.6714000000000001,
+      "post_coop": 0.6922,
+      "post_fail": 0.01,
+      "d_eff": 2.692679692600447,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 5,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.6407624534964695,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 6,
+      "baseline_coop": 0.0012000000000000001,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.489526935689256,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 7,
+      "baseline_coop": 0.0002,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.2867115775454332,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 8,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.7394543034300782,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 9,
+      "baseline_coop": 0.0013999999999999998,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.1744353517396906,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 10,
+      "baseline_coop": 0.0048,
+      "post_coop": 0.0008,
+      "post_fail": 3.99,
+      "d_eff": 1.2074833959274227,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 11,
+      "baseline_coop": 0.0,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.4936554474729742,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 12,
+      "baseline_coop": 0.002,
+      "post_coop": 0.0004,
+      "post_fail": 3.99,
+      "d_eff": 1.5105978925484547,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 13,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.7750491504948012,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 14,
+      "baseline_coop": 0.0092,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.850423441051141,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 15,
+      "baseline_coop": 0.0008,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.3783527093156274,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 16,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.976010570868974,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 17,
+      "baseline_coop": 0.0014000000000000002,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.474255748539538,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 18,
+      "baseline_coop": 0.0046,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.545401924249304,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 19,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.170946182678963,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 20,
+      "baseline_coop": 0.002,
+      "post_coop": 0.0006,
+      "post_fail": 4.0,
+      "d_eff": 1.5793631520507565,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 21,
+      "baseline_coop": 0.0026,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.6545964860855795,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 22,
+      "baseline_coop": 0.0004,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.3650384986943143,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 23,
+      "baseline_coop": 0.0012000000000000001,
+      "post_coop": 0.0004,
+      "post_fail": 4.0,
+      "d_eff": 1.4551869353917712,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 24,
+      "baseline_coop": 0.001,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.470517339426691,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 25,
+      "baseline_coop": 0.0002,
+      "post_coop": 0.0002,
+      "post_fail": 4.0,
+      "d_eff": 1.2761572523326992,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 26,
+      "baseline_coop": 0.0018,
+      "post_coop": 0.001,
+      "post_fail": 3.96,
+      "d_eff": 1.8506483980610924,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 27,
+      "baseline_coop": 0.004200000000000001,
+      "post_coop": 0.0008,
+      "post_fail": 3.99,
+      "d_eff": 1.3564233221982696,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 28,
+      "baseline_coop": 0.0013999999999999998,
+      "post_coop": 0.0,
+      "post_fail": 4.0,
+      "d_eff": 1.2600843282302874,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 29,
+      "baseline_coop": 0.0006,
+      "post_coop": 0.0008,
+      "post_fail": 4.0,
+      "d_eff": 1.655240891683683,
+      "level": "Linf(reset)"
+    },
+    {
+      "max_lives": 1000000000,
+      "seed": 30,
+      "baseline_coop": 0.6888,
+      "post_coop": 0.3196,
+      "post_fail": 0.74,
+      "d_eff": 1.6290102032842706,
+      "level": "Linf(reset)"
+    }
+  ],
+  "summary": {
+    "L1(real)": {
+      "post_coop_mean": 0.5381668494236043,
+      "post_coop_std": 0.3591109593949999,
+      "frac_coop": 0.6666666666666666,
+      "deaths": 0.36866666666666675,
+      "d_eff": 1.7710357465031945
+    },
+    "L2": {
+      "post_coop_mean": 0.15686804586438902,
+      "post_coop_std": 0.28414286176048653,
+      "frac_coop": 0.16666666666666666,
+      "deaths": 2.3613333333333335,
+      "d_eff": 1.7517956062054068
+    },
+    "L4": {
+      "post_coop_mean": 0.034159999999999996,
+      "post_coop_std": 0.13494274736593542,
+      "frac_coop": 0.06666666666666667,
+      "deaths": 3.7553333333333327,
+      "d_eff": 1.567654054933933
+    },
+    "L8": {
+      "post_coop_mean": 0.034153333333333334,
+      "post_coop_std": 0.13494443976030365,
+      "frac_coop": 0.06666666666666667,
+      "deaths": 3.756,
+      "d_eff": 1.5687164134341087
+    },
+    "Linf(reset)": {
+      "post_coop_mean": 0.034153333333333334,
+      "post_coop_std": 0.13494443976030365,
+      "frac_coop": 0.06666666666666667,
+      "deaths": 3.756,
+      "d_eff": 1.5687164134341087
+    }
+  },
+  "spearman_lives_vs_coop": -0.43878245946107197,
+  "spearman_p": 4.999750012499375e-05,
+  "L1_vs_Linf": {
+    "diff": 0.5040135160902709,
+    "p": 4.999750012499375e-05
+  }
+}

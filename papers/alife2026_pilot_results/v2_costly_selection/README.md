@@ -1,5 +1,14 @@
 # Costly Selective Closure — experiment v2
 
+> **Historical / superseded — do not use for analysis.** This is the internal
+> development copy. The submission analysis and the canonical, corrected code
+> live in [`../../costly_selective_closure_supplement/`](../../costly_selective_closure_supplement/).
+> In particular, the Spearman permutation test in this directory is an early
+> implementation (ordinal `argsort(argsort())` ranks with a global shuffle that
+> ignores ties and the repeated-measures design). The supplement uses a
+> tie-aware average-rank Spearman with a blocked-by-seed permutation p-value.
+> Use the supplement, not this directory, for any reproduction or reporting.
+
 Controlled successor to the original ALIFE-2026 pilot
 (`../minimal_costly_selection_pilot.py`), built after the ALIFE-2026 rejection.
 The original pilot's headline result was degenerate: `real` and `resettable`
