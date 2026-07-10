@@ -13,8 +13,8 @@ dependency: [SRT-STATUS]
 # SRT Current Status Split Index
 
 - 原始总文（保留，不删内容）：[`../STATUS.md`](../STATUS.md)
-- Source owner bytes: `42564`
-- Source owner SHA-256: `a636fd1e4343dad7128d53b8a0d26a527c052449dbc8502623791628067d5ab6`
+- Source owner bytes: `42645`
+- Source owner SHA-256: `3a4beb5b0b1555441e4792988a0a452f19cf7da29fcd2bac826159633ae5784d`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

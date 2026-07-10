@@ -708,15 +708,17 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 ## 7. 回写补审（2026-07-09 按 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md` v2 §4a.4/§5 补做）
 
 > 本节为事后审计，append-only，不改写 §0–§6 任何历史内容。对话现场未运行一致性压测（当时协议尚不存在），本节按 §4a.4 回写补做全量对表。
+>
+> **对账说明（2026-07-10）**：本节成文早于 §0a 升级轮。升级轮已消解/吸收本节部分条目：§7.4 的选项回收缺陷已由 §5.5 修复（仅 CT2-01 为 `options_not_applicable`）；T1 的 `layered` 建议已按 §0a.3 应用（P2-11 改写为"主体层最原始动力"，改写措辞待 §5.3-5 确认）；§7.2/§7.3 的碰撞与术语发现已并入 §5.1/§5.2；§7.5 的路由修正已并入 §5.4。本节保留的独立价值：张力表的 §5.0 标准格式（T2/T4 仍待处置）与 §7.2 的补充锚点（Occlusion_Dynamics、可再选择性元标准）。
 
 ### 7.1 张力表（§5.0）
 
 | 编号 | 类型 | 两侧 | 处置状态 | 备注 |
 |---|---|---|---|---|
-| T1 | `intra_trace` | P2-11「痛苦是最原始动力」 vs P2-13「去同步化随机化先于痛苦，痛苦是其主体高级形式」 | **待作者裁决**；建议 `layered`（P2-11 限定为**主体层**最原始，结构层原初是去同步化随机化；P2-11 措辞需补层级限定词） | 对话现场 assistant 未揭示此矛盾，两条并排进入命题簇——本轮工作流 v2 §4a 的直接触发案例 |
-| T2 | `inter_trace` | P2-14「选择=对随机进行同步化」（过程定义） vs 第一直觉 trace P7「选择=硬化+排除+维持+代价承担+开辟」（操作定义） | **待作者裁决**；建议 `layered`（过程面与操作面互补，需作者确认层次关系而非默认兼容） | 另记一处**正向收敛**（非张力）：第一 trace P13「熵=去选择化画像」与 P2-14「选择=对随机再同步」构成减法/加法对偶，互相加强，建议合并立一个 bridge 而非各立 |
-| T3 | `vs_canonical` | P2-11/P2-13 的「痛苦」用法 vs `Core_Law/SRT_Suffering.md`（L1 canonical）已固定的 pain（躯体信号）/ suffering 类型学（信号型/结构型） | **待对齐**；trace 的"痛苦"跨用了 pain 与 suffering 两层，进入任何下游前须按该 canonical 分义 | §5.2 只提示了"心理化"风险，漏挂了这个真正的定义源 |
-| T4 | `vs_canonical` | P2-01「幸运开放」 vs `Core/SRT_OPEN_TENSIONS.md §7 P0-04`（selectability 起源未解决） | `retained_as_tension`；"幸运"实质是给无来源开放性起的直觉名，是 P0-04 的又一条直觉证词，不是解答 | 建议在 P0-04 条目下登记本 trace 为直觉证词来源 |
+| T1 | `intra_trace` | P2-11「痛苦是最原始动力」 vs P2-13「去同步化随机化先于痛苦，痛苦是其主体高级形式」 | **`layered` 已应用**（§0a.3：P2-11 改写为主体层最原始；改写措辞在 §5.3-5 待作者成文确认） | 对话现场 assistant 未揭示此矛盾，两条并排进入命题簇——本轮工作流 v2 §4a 的直接触发案例 |
+| T2 | `inter_trace` | P2-14「选择=对随机进行同步化」（过程定义） vs 第一直觉 trace P7「选择=硬化+排除+维持+代价承担+开辟」（操作定义） | **待作者裁决**；建议 `layered`（过程面与操作面互补，需作者确认层次关系而非默认兼容） | 另记一处**正向收敛**（非张力）：第一 trace P13「熵=去选择化画像」与 P2-14「选择=对随机再同步」构成减法/加法对偶，互相加强，已按 §5.4 合并立 bridge 候选 |
+| T3 | `vs_canonical` | P2-11/P2-13 的「痛苦」用法 vs `Core_Law/SRT_Suffering.md`（L1 canonical）已固定的 pain / suffering 类型学 | **已登记待裁决**（§5.1 已挂该锚点：source-level 直觉词，进理论层前需裁决映射到 pain / suffering / distress / 结构失配登记之一） | — |
+| T4 | `vs_canonical` | P2-01「幸运开放」 vs `Core/SRT_OPEN_TENSIONS.md §7 P0-04`（selectability 起源未解决） | `retained_as_tension`；"幸运"实质是给无来源开放性起的直觉名，是 P0-04 的又一条直觉证词，不是解答 | 建议在 P0-04 条目下登记本 trace 为直觉证词来源（回写计划 T-A 轨道） |
 
 ### 7.2 Canonical 碰撞检查（三态，作者已确认命题簇）
 

@@ -30,7 +30,7 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 |---|---|---|
 | **真实增量**（作者已确认，仓库无落点） | trace1: P6 边界作为存在成分、P10 选择地基四条件+四分层、P12 退化=脆弱性提升、P13 熵=去选择化画像；trace2: 机制链（去同步化/随机化→比较接住→选择性再同步）、1432 循环、P2-06 分配先于显现先于选择、P2-01 幸运开放 | 理论层 bridge / OPEN_TENSIONS / 证据卡 + 书稿轻补丁 |
 | **直觉复认**（canonical 已覆盖） | trace1: P1–P5、P8 选错侧、P9；trace2: P2-02/03、P2-14 与 L0 随机性论证的兼容 | 不新增理论；仅在相关 bridge 中作为"直觉证词"引注 |
-| **Pending**（未获作者成文确认） | trace1: P8 选对侧（CT-13）、P14 耗散结构排序（CT-23）；trace2: P2-16 比较来源、§5.1 四条成文命题、张力 T1/T2 裁决 | 全部进 §1 裁决包，确认前不回写 |
+| **Pending**（未获作者成文确认） | trace1: P8 选对侧（CT-13）、P14 耗散结构排序（CT-23）；trace2: §5.3 六条成文命题（含 P2-16 比较来源、P2-11 分层改写措辞）、张力 T2 裁决 | 全部进 §1 裁决包，确认前不回写 |
 
 一个**正向收敛**单独立项：trace1 P13（熵 = 去选择化后的统计画像，减法定义）与 trace2 P2-14（选择 = 对随机的生成性再同步，加法定义）构成同一边界的对偶表述——两者合并立一个 bridge，不各立。
 
@@ -38,17 +38,19 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 ## 1. 门：作者裁决包（Phase 0，阻塞项，建议一次清完）
 
-| 门 | 内容 | 解锁 |
-|---|---|---|
-| G1 | CT-13 二次确认：P8「选对 = 维持/扩展后续选择空间」是否按 assistant 提案原文确认或改写 | trace1 命题簇完整性 |
-| G2 | CT-23 二次确认：耗散结构 C+D 核心 / A 弱化 / B 边界的排序 | T-E 耗散结构 bridge + 书稿熵/耗散素材 |
-| G3 | 张力 T1 裁决：建议 `layered`——「痛苦最原始」限定主体层，结构层原初是去同步化随机化；P2-11 措辞补层级限定词 | T-B 机制链 bridge 的痛苦接口 + 书稿 Q21 素材 |
-| G4 | 张力 T2 裁决：P2-14 过程定义与 trace1 P7 操作定义的层次关系（建议互补分层） | T-B bridge 的框架 |
-| G5 | P2-16 + trace2 §5.1 四条成文命题逐条确认（比较来源、选择=随机的比较性再同步等） | 比较—关切接口（d-value 方向）+ S 层对话恢复 |
-| G6 | 术语三项：①「选择地基」改名或分义（撞书稿 Q17 意识第一层）；②「同步化」与神经域 synchrony 显式分义；③「最小非中立」统一为「最低非中立性」既有词形 | T-B / T-D 全部动工前置 |
-| G7 | **时效项**：趁 ChatGPT 原对话仍在，补收 trace2 各轮选项全集（violates R2 的缺陷修复） | trace2 负空间数据 |
+| 门 | 内容 | 解锁 | 状态 |
+|---|---|---|---|
+| G1 | CT-13 二次确认：P8「选对 = 维持/扩展后续选择空间」是否按 assistant 提案原文确认或改写 | trace1 命题簇完整性 | 待裁决 |
+| G2 | CT-23 二次确认：耗散结构 C+D 核心 / A 弱化 / B 边界的排序 | T-E 耗散结构 bridge + 书稿熵/耗散素材 | 待裁决 |
+| G3 | 张力 T1 裁决：「痛苦最原始」限定主体层 | T-B 机制链 bridge 的痛苦接口 + 书稿 Q21 素材 | **已消解**（trace2 §0a.3 已应用 `layered` 改写；剩余的改写措辞确认并入 G5） |
+| G4 | 张力 T2 裁决：P2-14 过程定义与 trace1 P7 操作定义的层次关系（建议互补分层） | T-B bridge 的框架 | 待裁决 |
+| G5 | trace2 §5.3 六条成文命题逐条确认（含 P2-16 比较来源【现按 `assistant_proposal_pending` 记】、P2-11 分层改写措辞） | 比较—关切接口（d-value 方向）+ S 层对话恢复 | 待裁决 |
+| G6 | 术语三项：①「选择地基」改名或分义（撞书稿 Q17 意识第一层）；②「同步化」与神经域 synchrony 显式分义（trace2 §5.1 已登记风险，进 bridge 时执行）；③「最小非中立」统一为「最低非中立性」既有词形 | T-B / T-D 全部动工前置 | 待裁决 |
+| G7 | 补收 trace2 各轮选项全集 | trace2 负空间数据 | **已完成**（trace2 §0a.1/§5.5：CT2-02–20 已补回，CT2-01 为 `options_not_applicable`） |
 
-> 建议在下一轮直觉挖掘对话（S 层：「关切到底指什么」）**开场**清 G1–G6——这正是工作流 §2a.4 的恢复纪律。
+> 建议在下一轮直觉挖掘对话（S 层：「关切到底指什么」）**开场**清 G1/G2/G4/G5/G6——这正是工作流 §2a.4 的恢复纪律。
+>
+> 另注：trace2 §5.1 已自带 canonical 碰撞三态表（L0 随机性论证、SRT_Suffering、Political_Philosophy、P0-04、神经域 synchrony、跨 trace 对偶均已挂锚）；T-A/T-B 动工时直接引用该表，不重做。
 
 ---
 
@@ -61,7 +63,7 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 1. 新登记一条张力：**熵的去选择化读法**——P13 的主张与 `Core/SRT_Core_25` 的方向差（Core_25 以热力学不可逆性为选择的签名；P13 把熵重定位为"抽掉选择后的剩余画像"），以及 trace1 CT-21 未完成的校准（ontological absence vs theoretical abstraction）。护栏：不得读成 SRT 反熵理论。
 2. 在 §7 P0-04 条目下登记两条**直觉证词**：trace1 P2（选择先于主体）、trace2 P2-01（幸运开放）。证词≠解答，仅丰富该未解决点的直觉材料面。
 
-### T-B · 合并 bridge：「熵—随机—再同步」（核心新建）[门 G3/G4/G6]
+### T-B · 合并 bridge：「熵—随机—再同步」（核心新建）[门 G4/G6]
 
 落点：`03_Bridges/`（按 `BRIDGE_TEMPLATE.md`），登记入 `BRIDGE_INDEX.md`。claim level：P2/P3。
 
@@ -130,7 +132,7 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 | Q10 / Q18 / 幕间桥 | 熵的位置——正面回答读者必问的"这本书和热力学第二定律什么关系"（熵=去选择化画像；耗散结构=秩序维持 vs SRT=秩序不牢笼化） | trace1 P13/P14 | G2（耗散半边） |
 | Q19 脚手架与牢笼 | 四分层显影线：没有选择→伪选择→惩罚性选择→尊重选择 | trace1 P10 | G6① |
 | Q20 遮蔽 / Q22 方向 | 1432 循环的**操作顺序**主张（去遮蔽→解笼→重建尺度→重分配）——书稿现有 Q20-Q22 只有要素没有顺序 | trace2 P2-10 | 无 |
-| Q21 苦难 | 痛苦作为被遮蔽现实最早、最强迫性的显现形式；主体层最原始动力（层级限定措辞） | trace2 P2-11/P2-13 | G3 |
+| Q21 苦难 | 痛苦作为被遮蔽现实最早、最强迫性的显现形式；主体层最原始动力（分层措辞已应用，待 G5 确认；并按 `SRT_Suffering.md` 类型学分义） | trace2 P2-11/P2-13 | G5 |
 | Q15 关切维度 | 「比较来自关切」——关切作为比较空间生成器的接口预留 | trace2 P2-16 | G5 |
 
 写作纪律沿用该模式既有三条：主梁不替换、不新增大章、不过载（不得写成"再选择能力是一切判断的唯一标准"式的全称句）。
@@ -147,10 +149,10 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 | 阶段 | 内容 | 前置 |
 |---|---|---|
-| **Phase 0** | 作者裁决包 G1–G7（建议下一轮对话开场一次清完；G7 有时效，最优先） | — |
+| **Phase 0** | 作者裁决包 G1/G2/G4/G5/G6（建议下一轮对话开场一次清完；G3/G7 已消解/完成） | — |
 | **Phase 1**（可立即，与 Phase 0 并行） | T-A OPEN_TENSIONS 登记；T-F 脆弱性证据卡；T-G 政治哲学对表；B-A 书稿 notes 文件骨架（gated 行标注待解锁） | 无门 |
-| **Phase 2** | T-B 熵—随机—再同步合并 bridge；T-C 边界 bridge；T-D 选择条件文件 | G3/G4/G6 |
-| **Phase 3** | T-E 耗散结构 bridge；B-A 中 gated 行补全（Q10/Q18 熵素材、Q21、Q15） | G2/G3/G5 |
+| **Phase 2** | T-B 熵—随机—再同步合并 bridge；T-C 边界 bridge；T-D 选择条件文件 | G4/G6 |
+| **Phase 3** | T-E 耗散结构 bridge；B-A 中 gated 行补全（Q10/Q18 熵素材、Q21、Q15） | G2/G5 |
 | **Phase 4**（远期，不在本计划内启动） | P6 三元共构申请 L0 术语裁决（C 类）；S 层对话（关切）→ d-value 接口回流 | T-C 桥硬化 + trace3 |
 
 ---

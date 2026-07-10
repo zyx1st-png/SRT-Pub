@@ -60,6 +60,7 @@ canonical: false
 | warning | 50.8 KiB | `AI/Ontology_Annex/00_General_Boundary_Block.md` | AI/Ontology_Annex/General_Boundary_Block_Split |
 | warning | 50.7 KiB | `Physics/SRT_Quant_02_Cosmology.md` | Physics/Quant_02_Cosmology_Split |
 | warning | 50.6 KiB | `AI/SRT_AI_Architecture.md` | AI/Architecture_Split |
+| warning | 50.0 KiB | `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md` | missing_or_not_needed |
 | warning | 49.9 KiB | `Philosophy/SRT_SocTheory_05_Language_Eco.md` | Philosophy/Language_Eco_Split |
 
 ## artifact_or_generated
