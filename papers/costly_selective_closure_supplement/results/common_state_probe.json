@@ -2,8 +2,10 @@
   "meta": {
     "python": "3.14.0",
     "numpy": "2.5.1",
+    "matplotlib": "3.11.0",
     "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
-    "git_commit": "2fbac0d16b52c3f86e63165e07cab1d58a0e8128",
+    "source_commit": "3e191f67d48e16aaf5e7ca77263231c6801403e2",
+    "worktree_dirty": false,
     "eval_seeds": [
       1,
       2,

@@ -25,6 +25,7 @@ MATH = {
  'A(sigma)':r'A(\sigma)','w_A':'w_A','w_V':'w_V','w_tau':r'w_\tau',
  'Ψ_f ~ 0':r'\Psi_f \sim 0','V > 0':'V > 0','η = 0':r'\eta = 0','η > 0':r'\eta > 0','η ∈ [0,1]':r'\eta \in [0,1]',
  'd ~ 0':r'd \sim 0','d ~ 1-3':r'd \sim 1\text{--}3','d ~ 5-20':r'd \sim 5\text{--}20','d ~ 10^2-10^4':r'd \sim 10^{2}\text{--}10^{4}',
+ '10^2-10^4':r'10^{2}\text{--}10^{4}',  # Table 1 cell (bare, tilde is plain text beside it)
  'E_0 = 6':'E_0 = 6','E_max = 10':r'E_{\max} = 10','T = 50':'T = 50','γ = 0.97':r'\gamma = 0.97',
  'd_eff = (Σλ_i)² / Σλ_i²':r'd_{\mathrm{eff}} = (\sum_i \lambda_i)^2 / \sum_i \lambda_i^2',
  'p < 0.0001':'p < 0.0001',
@@ -53,6 +54,37 @@ def convert(t):
     for i, b in enumerate(blocks):
         t = t.replace(f"@@B{i}@@", b)
     return t
+
+
+def longtable_to_twocolumn(t):
+    """The sagej class (Afour) sets a two-column body, where pandoc's default
+    `longtable` is illegal ("longtable not in 1-column mode"). Convert each
+    longtable into a full-width `table*` float wrapping a plain `tabular`; the
+    column spec and body rows are preserved verbatim. Our tables carry no
+    caption, so only the fixed longtable header/footer scaffolding is rewritten."""
+    t = t.replace(r"\begin{longtable}[]{@{}",
+                  "\\begin{table*}[t]\n\\centering\n\\begin{tabular}{@{}")
+    t = t.replace("\\toprule\\noalign{}", "\\toprule")
+    t = re.sub(r"\\midrule\\noalign\{\}\s*\n\s*\\endhead\s*\n\s*"
+               r"\\bottomrule\\noalign\{\}\s*\n\s*\\endlastfoot",
+               "\\\\midrule", t)
+    t = t.replace("\\end{longtable}",
+                  "\\bottomrule\n\\end{tabular}\n\\end{table*}")
+    return t
+
+
+def widen_multipanel_figures(t):
+    """Figures 3 and 4 are wide three-panel figures. In the two-column sagej
+    layout a single-column `figure` renders them illegibly small, so promote
+    only those two to full-width `figure*` floats. Figures 1 and 2 are
+    single-panel and stay one-column."""
+    def star(m):
+        block = m.group(0)
+        if "figure3_results" in block or "figure4_common_state_probe" in block:
+            block = block.replace(r"\begin{figure}", r"\begin{figure*}", 1)
+            block = block.replace(r"\end{figure}", r"\end{figure*}", 1)
+        return block
+    return re.sub(r"\\begin\{figure\}.*?\\end\{figure\}", star, t, flags=re.S)
 
 
 # ---------- split ----------
@@ -145,6 +177,8 @@ tex = (preamble + frag.strip()
        + "\n\n\\section*{References}\n\n" + refs_tex.strip()
        + "\n\n" + appendix_tex.strip()
        + "\n\n\\end{document}\n")
+tex = longtable_to_twocolumn(tex)
+tex = widen_multipanel_figures(tex)
 (PAPERS / "CostlySelectiveClosure_AdaptiveBehavior_submission.tex").write_text(tex, encoding="utf-8")
 print("wrote .tex  (%d bytes)" % len(tex))
 

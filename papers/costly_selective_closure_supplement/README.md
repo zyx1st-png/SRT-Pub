@@ -11,8 +11,13 @@ paper, and the figure-generation script. Everything runs in pure NumPy with
 Matplotlib for plotting; no external reinforcement-learning framework is used.
 
 > The result files in `results/` are the exact ones used in the paper and in the
-> figures. Re-running the experiments reproduces them up to platform- and
-> NumPy-version floating-point differences; the qualitative findings are robust.
+> figures. Two levels of reproduction: **(1) exact** (bit-for-bit) reproduction
+> requires the locked environment in `requirements-probe-lock.txt` (Python
+> 3.14.0, NumPy 2.5.1, arm64 macOS); **(2) qualitative** reproduction under the
+> broad minimum requirements (`requirements.txt`). A different Python/NumPy
+> version or CPU architecture (e.g. x86_64) may cause trajectory-level
+> divergence even with identical seeds, so under (2) expect qualitative — not
+> bit-identical — outputs. The qualitative findings are robust either way.
 
 ## 1. Research question
 
@@ -40,6 +45,9 @@ Costly Selective Closure heuristic (selective bandwidth `d`, maintenance cost
 
 - Requires Python **3.9+**; tested here on Python 3.14.
 - `numpy` and `matplotlib` only (see `requirements.txt`). No GPU.
+- For **bit-for-bit** reproduction of the committed common-state probe, use the
+  pinned `requirements-probe-lock.txt` (Python 3.14.0, NumPy 2.5.1,
+  Matplotlib 3.11.0, arm64 macOS) rather than the broad `requirements.txt`.
 
 ## 4. Installation
 
@@ -169,17 +177,24 @@ and end-of-withdrawal.
 
 *Reproduce.* `python run_common_state_probe.py` → `results/common_state_probe.json`.
 It **retrains** the conditions, because policy weights are not stored in the
-original result files; it is deterministic under fixed seeds (~8–12 min). The
-JSON metadata records Python/NumPy versions, platform, git commit, and all
-seeds. `main_results.json` is left untouched, and **Figure 4 is regenerated only
-from `results/common_state_probe.json`**.
+original result files (~8–12 min). It is **deterministic within a fixed recorded
+software environment. Different Python or NumPy versions may cause
+trajectory-level divergence even with the same seeds.** The committed JSON was
+produced under the exact locked environment in `requirements-probe-lock.txt`
+(Python 3.14.0, NumPy 2.5.1, Matplotlib 3.11.0, arm64 macOS); re-running in that
+environment reproduces every committed value bit-for-bit. The JSON metadata
+records `source_commit` (the code commit checked out for the run),
+`worktree_dirty`, Python / NumPy / Matplotlib versions, platform, and all seeds.
+`main_results.json` is left untouched, and **Figure 4 is regenerated only from
+`results/common_state_probe.json`**.
 
 ## Files
 
 ```
 costly_selective_closure_supplement/
 ├── README.md
-├── requirements.txt
+├── requirements.txt              # broad minimum (qualitative reproduction)
+├── requirements-probe-lock.txt   # exact locked env (bit-for-bit probe)
 ├── CITATION.cff
 ├── LICENSE
 ├── run_main.py
