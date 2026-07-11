@@ -280,8 +280,74 @@ def figure3_results():
     save(fig, "figure3_results")
 
 
+def figure4_probe():
+    """Common-state frozen-policy probe. Built only from common_state_probe.json."""
+    probe = load("common_state_probe.json")
+    cs = probe["raw"]["common_state"]
+    summ = probe["summary"]
+    seeds = probe["meta"]["eval_seeds"]
+
+    def vals(ck, reg):
+        return np.array([cs[ck][reg][str(s)]["pcc"] for s in seeds])
+
+    fig, (axA, axB, axC) = plt.subplots(1, 3, figsize=(13.0, 4.4))
+
+    # --- Panel A: end-of-withdrawal paired real vs resettable ---
+    r_eow, re_eow = vals("end_of_withdrawal", "real"), vals("end_of_withdrawal", "resettable")
+    for a, b in zip(r_eow, re_eow):
+        axA.plot([0, 1], [a, b], color="#999", lw=0.7, alpha=0.45, zorder=1)
+    axA.scatter([0] * len(r_eow), r_eow, s=22, color=C_REAL, zorder=3, label="real-stake")
+    axA.scatter([1] * len(re_eow), re_eow, s=22, color=C_RESET, zorder=3, label="resettable")
+    axA.plot([-0.15, 0.15], [r_eow.mean()] * 2, color=C_REAL, lw=2.5, zorder=4)
+    axA.plot([0.85, 1.15], [re_eow.mean()] * 2, color=C_RESET, lw=2.5, zorder=4)
+    axA.set_xticks([0, 1]); axA.set_xticklabels(["real-stake", "resettable"])
+    axA.set_xlim(-0.4, 1.4); axA.set_ylim(-0.05, 1.0)
+    axA.set_ylabel("common-state $P(CC\\mid s)$")
+    axA.set_title("(a) End-of-withdrawal, paired by seed", fontsize=10.5)
+
+    # --- Panel B: per-seed real - resettable difference + bootstrap CI ---
+    d = np.array(summ["end_of_withdrawal"]["real_minus_resettable"]["per_seed_diff"])
+    md = summ["end_of_withdrawal"]["real_minus_resettable"]["mean_diff"]
+    lo, hi = summ["end_of_withdrawal"]["real_minus_resettable"]["boot95"]
+    axB.axhline(0, color="#888", lw=1, ls="--")
+    axB.scatter(_jitter(len(d), 0.12, 7), d, s=22, color="#555", alpha=0.6, zorder=2)
+    axB.errorbar(0, md, yerr=[[md - lo], [hi - md]], fmt="o", color=C_REAL, ms=9,
+                 capsize=6, lw=2, zorder=3, markeredgecolor="white")
+    axB.set_xticks([]); axB.set_xlim(-0.6, 0.6); axB.set_ylim(-0.2, 1.0)
+    axB.set_ylabel("real $-$ resettable  $P(CC\\mid s)$")
+    axB.set_title("(b) Per-seed difference (mean, 95% CI)", fontsize=10.5)
+    axB.annotate(f"mean {md:+.2f}\n95% CI [{lo:.2f}, {hi:.2f}]\npaired p < 0.0001",
+                 xy=(0.62, 0.86), xycoords="axes fraction", ha="right", fontsize=8.5, color="#333")
+
+    # --- Panel C: end-of-training vs end-of-withdrawal ---
+    for reg, col, faded in [("real", C_REAL, False), ("resettable", C_RESET, False),
+                            ("simulated", C_SIM, True)]:
+        eot, eow = vals("end_of_training", reg), vals("end_of_withdrawal", reg)
+        alpha = 0.15 if faded else 0.3
+        for a, b in zip(eot, eow):
+            axC.plot([0, 1], [a, b], color=col, lw=0.6, alpha=alpha, zorder=1)
+        lw = 1.6 if faded else 2.6
+        axC.plot([0, 1], [eot.mean(), eow.mean()], "-o", color=col, lw=lw, ms=6,
+                 alpha=0.6 if faded else 1.0, zorder=3,
+                 label=("simulated (exploratory)" if faded else reg))
+    axC.set_xticks([0, 1]); axC.set_xticklabels(["end of\ntraining", "end of\nwithdrawal"])
+    axC.set_xlim(-0.3, 1.3); axC.set_ylim(-0.05, 1.0)
+    axC.set_ylabel("common-state $P(CC\\mid s)$")
+    axC.set_title("(c) Training vs withdrawal checkpoint", fontsize=10.5)
+    axC.legend(fontsize=8, loc="upper right", frameon=False)
+
+    fig.text(0.5, -0.02,
+             f"Frozen policies scored on one global bank of {probe['bank']['bank_size']} "
+             "mortality-free paired observations in the real-resettable common support; "
+             "per-seed points, no density smoothing. Simulated-stake is a faded secondary reference.",
+             ha="center", fontsize=8, color="#444")
+    fig.tight_layout()
+    save(fig, "figure4_common_state_probe")
+
+
 if __name__ == "__main__":
     figure1_framework()
     figure2_design()
     figure3_results()
+    figure4_probe()
     print("done.")

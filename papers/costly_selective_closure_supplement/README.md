@@ -58,7 +58,8 @@ python run_main.py            # -> results/main_results.json
 python run_zero_penalty.py    # -> results/zero_penalty_results.json
 python run_lives_gradient.py  # -> results/lives_gradient_results.json
 python run_payoff_sweep.py    # -> results/payoff_sweep_results.json
-python generate_figures.py    # -> figures/figure{1,2,3}.{svg,pdf,png}
+python run_common_state_probe.py  # -> results/common_state_probe.json  (retrains; ~8-12 min)
+python generate_figures.py    # -> figures/figure{1,2,3,4}.{svg,pdf,png}
 ```
 
 ## 6. Approximate runtimes (single modern CPU core)
@@ -69,6 +70,7 @@ python generate_figures.py    # -> figures/figure{1,2,3}.{svg,pdf,png}
 | `run_zero_penalty.py` | 3 regimes x 30 seeds | ~3-6 min |
 | `run_lives_gradient.py` | 5 levels x 30 seeds | ~6-12 min |
 | `run_payoff_sweep.py` | 6 cells x 2 regimes x 15 seeds | ~8-15 min |
+| `run_common_state_probe.py` | retrains eval + bank-generation conditions | ~8-12 min |
 | `generate_figures.py` | reads JSON only | a few seconds |
 
 ## 7. Output files
@@ -126,8 +128,9 @@ stars.
 | §4.5 zero-penalty ablation (0.50 vs 0.05, paired p<0.0001) | `results/zero_penalty_results.json` |
 | §4.5 lives-gradient dose-response (tie-aware Spearman -0.44, p<0.0001) | `results/lives_gradient_results.json` |
 | §4.5 payoff sweep (real > resettable in 6/6 cells) | `results/payoff_sweep_results.json` |
-| Figure 3 | all four result files, via `generate_figures.py` |
-| Appendix (environment, reward matrix, network, schedule) | `src/csc_experiment.py`, `src/csc_robustness.py` |
+| §4.5 common-state probe (0.485 vs 0.030 on matched states, paired p<0.0001) | `results/common_state_probe.json` |
+| Figures 3–4 | result files + `results/common_state_probe.json`, via `generate_figures.py` |
+| Appendix (environment, reward matrix, network, schedule, probe) | `src/csc_experiment.py`, `src/csc_robustness.py`, `src/csc_probe.py` |
 
 ## 12. Honest scope
 
@@ -144,6 +147,32 @@ stars.
   paper's conceptual argument.
 - **simulated-stake is auxiliary**, not part of the single-variable matched
   contrast.
+- The **common-state probe** shows the frozen policies differ on identical
+  mortality-free common-support states; it rules out that the gap is *only* a
+  measurement-window / unequal-episode-length artifact, but it does **not**
+  remove training-time occupancy and return-structure differences (the
+  mechanism of the intervention), and does not validate the four-dimensional
+  heuristic or any cross-substrate claim.
+
+## 13. Common-state probe
+
+*Research question.* Is the real–resettable cooperation gap a genuine
+difference in the learned policies, or merely an effect of unequal episode
+lengths and computing cooperation only over surviving steps?
+
+*Method (Appendix A.6).* Frozen policies from all regimes are scored on one
+global bank of 2,292 mortality-free paired observations in the real–resettable
+common support. The bank is built from **bank-generation seeds 1001–1010**,
+disjoint from the **evaluation seeds 1–30**, so evaluated policies never
+contribute their own test states. Two checkpoints are reported: end-of-training
+and end-of-withdrawal.
+
+*Reproduce.* `python run_common_state_probe.py` → `results/common_state_probe.json`.
+It **retrains** the conditions, because policy weights are not stored in the
+original result files; it is deterministic under fixed seeds (~8–12 min). The
+JSON metadata records Python/NumPy versions, platform, git commit, and all
+seeds. `main_results.json` is left untouched, and **Figure 4 is regenerated only
+from `results/common_state_probe.json`**.
 
 ## Files
 
@@ -157,14 +186,17 @@ costly_selective_closure_supplement/
 ├── run_zero_penalty.py
 ├── run_lives_gradient.py
 ├── run_payoff_sweep.py
+├── run_common_state_probe.py
 ├── generate_figures.py
 ├── src/                # verified experiment code (unchanged algorithms)
 │   ├── csc_experiment.py
-│   └── csc_robustness.py
+│   ├── csc_robustness.py
+│   └── csc_probe.py
 ├── results/            # fixed result files used in the paper
 │   ├── main_results.json
 │   ├── zero_penalty_results.json
 │   ├── lives_gradient_results.json
-│   └── payoff_sweep_results.json
+│   ├── payoff_sweep_results.json
+│   └── common_state_probe.json
 └── figures/            # generated from results/
 ```
