@@ -1,0 +1,58 @@
+{
+  "leave_one_condition": {
+    "constrained": -0.08468459565546504,
+    "high_update": -0.11251209200604517,
+    "replay": -0.3218515150306537,
+    "standard": -0.37861925307013466
+  },
+  "leave_one_seed": {
+    "2001": -0.21875944145018295,
+    "2002": -0.09599050763147507,
+    "2003": -0.3272884331646265,
+    "2004": -0.27518444990797586,
+    "2005": -0.31223135042773603,
+    "2006": -0.2496067549624389,
+    "2007": -0.27293537143310387,
+    "2008": -0.20560626356375633,
+    "2009": -0.26092133782077764,
+    "2010": -0.2647395554164977
+  },
+  "matching": {
+    "analysis_valid": false,
+    "balance_absolute_smd": {},
+    "balance_valid": false,
+    "caliper": 2.677457512199618,
+    "mean_Q_C_difference": null,
+    "minimum_pairs": 8,
+    "paired_bootstrap_interval": null,
+    "pairs": 0
+  },
+  "score": {
+    "directionally_consistent": false,
+    "leave_one_component_out_coefficients": {
+      "adaptation_dimension": -0.17449845465816471,
+      "incorporation_dimension": -0.2523599527159286,
+      "nonrollback_dimension": -0.29021186104564467,
+      "opening_dimension": -0.34288534049033864,
+      "stabilization_dimension": -0.13865914204180216
+    },
+    "leave_one_component_out_spearman": {
+      "adaptation_dimension": 0.9926829268292684,
+      "incorporation_dimension": 0.9559099437148219,
+      "nonrollback_dimension": 0.7626641651031896,
+      "opening_dimension": 0.9684803001876174,
+      "stabilization_dimension": 0.1834896810506567
+    },
+    "median_spearman": 0.9559099437148219,
+    "positive_coefficients": 0
+  },
+  "states": {
+    "counts": {
+      "candidate_selective_resynchronization": 14,
+      "disorganization_or_unresolved_opening": 26
+    },
+    "figure_valid": false,
+    "leave_one_seed_label_agreement": 0.625,
+    "reason": "leave-one-seed modal-label agreement below 0.70"
+  }
+}

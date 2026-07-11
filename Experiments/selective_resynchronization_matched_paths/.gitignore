@@ -1,0 +1,9 @@
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+
+manifests/dataset_splits.json
+outputs/feasibility/A/
+outputs/feasibility/B/
+outputs/feasibility/A_checkpoint_manifest.csv
+outputs/feasibility/B_trajectory_metrics.parquet

@@ -1,0 +1,14 @@
+.venv/
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+
+data/
+outputs/raw/
+outputs/pilot/
+outputs/smoke/
+outputs/no_shift_calibration/
+
+manifests/dataset_splits.json
+manifests/formal_lock_manifest.json
+manifests/pilot_standardization.json
