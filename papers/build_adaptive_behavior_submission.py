@@ -77,10 +77,23 @@ def longtable_to_twocolumn(t):
         block = block.replace("\\midrule\\noalign{}", "\\midrule")
         block = block.replace("\\endhead\n", "")                                 # uncaptioned case
         block = re.sub(r"\\bottomrule\\noalign\{\}\n\\endlastfoot\n", "", block)
-        block = block.replace(r"\begin{longtable}[]{",
-                              "\\begin{table*}[t]\n\\centering\n" + cap + "\\begin{tabular}{", 1)
-        block = block.replace(r"\end{longtable}",
-                              "\\bottomrule\n\\end{tabular}\n\\end{table*}")
+        if r"\real{" in block:
+            # Wide 6-column tables (canonical + borderline cases) genuinely need
+            # the full text width, so span both columns as a table* float.
+            block = block.replace(r"\begin{longtable}[]{",
+                                  "\\begin{table*}[t]\n\\centering\n" + cap + "\\begin{tabular}{", 1)
+            block = block.replace(r"\end{longtable}",
+                                  "\\bottomrule\n\\end{tabular}\n\\end{table*}")
+        else:
+            # Narrow tables (appendix reward-matrix and probe results) stay
+            # single-column so they flow inline with the appendix text instead of
+            # deferring to a near-empty full-width float page. `adjustbox`
+            # shrinks a table to the column width only if it would overflow.
+            block = block.replace(r"\begin{longtable}[]{",
+                                  "\\begin{table}[!ht]\n\\centering\n" + cap +
+                                  "\\small\n\\begin{adjustbox}{max width=\\columnwidth}\n\\begin{tabular}{", 1)
+            block = block.replace(r"\end{longtable}",
+                                  "\\bottomrule\n\\end{tabular}\n\\end{adjustbox}\n\\end{table}")
         return block
     return re.sub(r"\\begin\{longtable\}.*?\\end\{longtable\}", convert_block, t, flags=re.S)
 
@@ -94,16 +107,21 @@ def crossref_tables(t):
     return t
 
 
-def widen_multipanel_figures(t):
-    """Figures 3 and 4 are wide three-panel figures. In the two-column sagej
-    layout a single-column `figure` renders them illegibly small, so promote
-    only those two to full-width `figure*` floats. Figures 1 and 2 are
-    single-panel and stay one-column."""
+def fullwidth_figures(t):
+    """Figures 2, 3 and 4 are designed at full text width; in the two-column
+    sagej layout a single-column `figure` renders them too small. Promote them to
+    full-width `figure*` floats spanning both columns, and size them to the full
+    `\\linewidth` (not 0.9) with no fixed height cap so they are not needlessly
+    shrunk. Figure 1 is a single-panel schematic and stays one column."""
+    targets = ("figure2_design", "figure3_results", "figure4_common_state_probe")
     def star(m):
         block = m.group(0)
-        if "figure3_results" in block or "figure4_common_state_probe" in block:
+        if any(name in block for name in targets):
             block = block.replace(r"\begin{figure}", r"\begin{figure*}", 1)
             block = block.replace(r"\end{figure}", r"\end{figure*}", 1)
+            block = block.replace(
+                "width=0.9\\linewidth,height=\\textheight,keepaspectratio",
+                "width=\\linewidth,keepaspectratio")
         return block
     return re.sub(r"\\begin\{figure\}.*?\\end\{figure\}", star, t, flags=re.S)
 
@@ -161,6 +179,7 @@ preamble = rf"""\documentclass[Afour,sageh,times,doublespace]{{sagej}}
 \usepackage{{graphicx}}
 \usepackage{{amsmath,amssymb}}
 \usepackage{{booktabs,longtable,array,calc}}
+\usepackage{{adjustbox}}
 \usepackage{{newunicodechar}}
 {uni_lines}
 \newunicodechar{{–}}{{--}}
@@ -169,6 +188,20 @@ preamble = rf"""\documentclass[Afour,sageh,times,doublespace]{{sagej}}
 \providecommand{{\real}}[1]{{#1}}
 \providecommand{{\pandocbounded}}[1]{{#1}}
 \usepackage[colorlinks,bookmarksopen,bookmarksnumbered,citecolor=red,urlcolor=red]{{hyperref}}
+
+% Float placement: this paper has several full-width (double-column) figure* and
+% table* floats. Let them share text-page tops and raise the float-page fill
+% threshold so single floats are not banished to near-empty float pages.
+\setcounter{{topnumber}}{{3}}
+\setcounter{{dbltopnumber}}{{3}}
+\setcounter{{bottomnumber}}{{2}}
+\setcounter{{totalnumber}}{{5}}
+\renewcommand{{\topfraction}}{{0.92}}
+\renewcommand{{\dbltopfraction}}{{0.92}}
+\renewcommand{{\bottomfraction}}{{0.5}}
+\renewcommand{{\textfraction}}{{0.06}}
+\renewcommand{{\floatpagefraction}}{{0.82}}
+\renewcommand{{\dblfloatpagefraction}}{{0.82}}
 
 \graphicspath{{{{costly_selective_closure_supplement/figures/}}}}
 
@@ -200,7 +233,7 @@ tex = (preamble + frag.strip()
        + "\n\n" + appendix_tex.strip()
        + "\n\n\\end{document}\n")
 tex = longtable_to_twocolumn(tex)
-tex = widen_multipanel_figures(tex)
+tex = fullwidth_figures(tex)
 (PAPERS / "CostlySelectiveClosure_AdaptiveBehavior_submission.tex").write_text(tex, encoding="utf-8")
 print("wrote .tex  (%d bytes)" % len(tex))
 

@@ -1,0 +1,12 @@
+torch==2.7.1
+torchvision==0.22.1
+numpy==2.2.6
+pandas==2.3.0
+scipy==1.15.3
+scikit-learn==1.7.0
+statsmodels==0.14.4
+matplotlib==3.10.3
+seaborn==0.13.2
+pyarrow==20.0.0
+PyYAML==6.0.2
+pytest==8.4.1

@@ -1,0 +1,35 @@
+{
+  "B_adequacy_end_accuracy": 0.7,
+  "B_adequacy_gain": 0.05,
+  "condition_thresholds": {
+    "constrained": {
+      "abs_loss_slope": 0.03708142847494169,
+      "d_grad_peak": 1.14151984055837,
+      "d_repr_peak": 0.12404437558509575,
+      "v_late": 0.004128628361136266
+    },
+    "high_update": {
+      "abs_loss_slope": 0.02074762923149239,
+      "d_grad_peak": 0.9472656104092796,
+      "d_repr_peak": 0.09732284678309278,
+      "v_late": 0.02910873747103724
+    },
+    "replay": {
+      "abs_loss_slope": 0.024744055099252822,
+      "d_grad_peak": 0.9587514140022297,
+      "d_repr_peak": 0.011204655097765803,
+      "v_late": 0.00756408045388196
+    },
+    "standard": {
+      "abs_loss_slope": 0.019810637149512842,
+      "d_grad_peak": 0.9747782506048679,
+      "d_repr_peak": 0.01018435212227633,
+      "v_late": 0.0036609527657869177
+    }
+  },
+  "created_utc": "2026-07-10T12:42:50.603088+00:00",
+  "selective_incorporation_permutation_p95": 0.6196591360658373,
+  "sha256": "2fcbc75495dc7d23e67201bf72ffcebce0549d8f3bd6507f73ef23039e14ffda",
+  "source": "20 no-shift A/B calibration trajectories",
+  "uses_c_data": false
+}
