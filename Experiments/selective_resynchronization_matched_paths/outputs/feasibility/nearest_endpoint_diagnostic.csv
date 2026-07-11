@@ -1,0 +1,6 @@
+seed,nearest_accuracy_range,nearest_NLL_range,nearest_ECE_range,standard_epoch,head_only_epoch,replay_epoch,head_reset_epoch,normalized_range_score
+3001,0.038750,0.148937,0.032978,3,20,3,7,6.164881
+3002,0.062875,0.207778,0.007336,4,16,4,2,7.899161
+3003,0.035125,0.142893,0.033424,2,18,2,2,5.837344
+3004,0.038750,0.143137,0.034588,2,17,2,2,6.121883
+3005,0.069125,0.207911,0.029148,2,18,2,3,9.045101

@@ -1,0 +1,43 @@
+mode: locked
+device: auto
+data_root: data
+output_root: outputs/raw
+split_seed: 20260710
+seeds: [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010]
+reserve_seeds: [2101, 2102, 2103, 2104]
+conditions: [constrained, standard, high_update, replay]
+num_workers: 0
+batch_size: 128
+probe_size: 256
+fisher_probe_size: 20
+subspace_k: 8
+epochs: {A: 15, B: 10, C: 8}
+windows:
+  A: [13, 14, 15]
+  B_open: [1, 2, 3]
+  B_stable: [8, 9, 10]
+  C_early: [1, 2, 3, 4, 5, 6, 7, 8]
+limits: {train: 50000, validation: 8000, probe: 2000, test: 10000}
+shift:
+  generator_version: hashed_lcg_v1
+  lowres: 7
+  amplitude: 0.35
+  mask_threshold: 0.20
+  texture_seeds: {train: 1101, validation: 2201, probe: 3301, test: 4401}
+  label_map: {0: 6, 6: 0, 2: 4, 4: 2}
+training:
+  A: {lr: 0.02, weight_decay: 0.0001, momentum: 0.9, replay_fraction: 0.0}
+  conditions:
+    constrained: {lr: 0.003, weight_decay: 0.02, momentum: 0.9, replay_fraction: 0.0}
+    standard: {lr: 0.02, weight_decay: 0.0001, momentum: 0.9, replay_fraction: 0.0}
+    high_update: {lr: 0.12, weight_decay: 0.0, momentum: 0.9, replay_fraction: 0.0}
+    replay: {lr: 0.02, weight_decay: 0.0001, momentum: 0.9, replay_fraction: 0.10}
+standardization_constants: manifests/pilot_standardization.json
+state_thresholds: manifests/state_thresholds.json
+spec_lock: ../../papers/selective_resynchronization/06_mvp_spec_lock.md
+bootstrap_resamples: 2000
+matching:
+  caliper_sd: 0.25
+  min_pairs: 8
+  max_smd_continuous: 0.10
+  max_smd_condition: 0.20

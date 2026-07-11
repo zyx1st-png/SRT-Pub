@@ -1,0 +1,36 @@
+mode: feasibility_ab_only
+device: auto
+source_data_root: ../selective_resynchronization_mvp/data
+source_split_manifest: ../selective_resynchronization_mvp/manifests/dataset_splits.json
+source_probe_manifest: ../selective_resynchronization_mvp/manifests/probe_ids.json
+output_root: outputs/feasibility
+split_seed: 20260710
+seeds: [3001, 3002, 3003, 3004, 3005]
+paths: [standard_full, head_only, replay_full, head_reset_full]
+batch_size: 128
+num_workers: 0
+probe_size: 256
+fisher_probe_size: 20
+epochs: {A: 15, B_max: 20}
+training:
+  A: {lr: 0.02, momentum: 0.9, weight_decay: 0.0001}
+  B: {lr: 0.02, momentum: 0.9, weight_decay: 0.0001}
+  replay_fraction: 0.10
+shift:
+  generator_version: hashed_lcg_v1
+  lowres: 7
+  amplitude: 0.35
+  mask_threshold: 0.20
+  texture_seeds: {train: 1101, validation: 2201, probe: 3301, test: 4401}
+matching:
+  candidate_epoch_min: 2
+  candidate_epoch_max: 20
+  adequacy: {accuracy_min: 0.75, nll_max: 0.80, ece_max: 0.15}
+  consecutive_stability: {accuracy_delta_max: 0.020, nll_delta_max: 0.080, ece_delta_max: 0.030}
+  group_tolerance: {accuracy_range_max: 0.015, nll_range_max: 0.060, ece_range_max: 0.030}
+  feasibility_min_groups: 3
+  feasibility_total_seeds: 5
+  diversity_epoch_range_min: 2
+  diversity_representation_range_min: 0.05
+  diversity_group_fraction_min: 0.60
+spec_lock: ../../papers/selective_resynchronization/11_matched_endpoint_multifuture_spec.md
