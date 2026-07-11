@@ -1,0 +1,29 @@
+stage: smoke
+seeds: [1101, 1102]
+episodes_per_seed_family_system: 5
+environment:
+  families: [Stable-Reversible, Hidden-Reversible, Hidden-Irreversible, Hidden-Irreversible-Shift]
+  regime_count: 3
+  node_count: 16
+  resource_count: 3
+  probe_reliability: 0.78
+interaction:
+  max_episode_steps: 6
+compute:
+  planning_horizon: 2
+  node_expansions_per_decision: 24
+choicemap:
+  entropy_threshold: 0.55
+  top_gap_threshold: 0.55
+  downside_threshold: 0.08
+  min_probe_value: 1.0
+baselines:
+  option_scalar_weight: 0.01
+ablations:
+  scalar_weights: {expected: 1.0, worst: 0.15, info: 0.10, cost: 0.05, irreversibility: 0.01, option_loss: 0.01}
+statistics:
+  noninferiority_margin: -0.03
+  practical_future_advantage: 0.05
+  irreversible_relative_reduction: 0.20
+  bootstrap_samples: 2000
+

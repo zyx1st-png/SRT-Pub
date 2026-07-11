@@ -1,0 +1,10 @@
+{
+  "candidate_logs": "parquet_parquetjs_gzip",
+  "candidate_rows": 1587580,
+  "commitment_logs": "parquet_parquetjs_gzip",
+  "commitment_rows": 82112,
+  "episode_logs": "parquet_parquetjs_gzip",
+  "episode_rows": 216000,
+  "repacked_from_frozen_csv_after_run": true,
+  "statistics_changed": false
+}
