@@ -118,6 +118,12 @@ class Policy:
         sech2 = 1.0 - np.tanh(z1) ** 2
         return self.W2 @ (sech2[:, None] * self.W1)
 
+    def copy(self):
+        p = Policy.__new__(Policy)
+        p.W1 = self.W1.copy(); p.b1 = self.b1.copy()
+        p.W2 = self.W2.copy(); p.b2 = self.b2.copy()
+        return p
+
 
 @dataclass
 class Env:
@@ -232,7 +238,7 @@ def effective_rank(policy, states):
     return float((s * s) / np.square(eig).sum())
 
 
-def train_condition(regime, seed, cfg):
+def train_condition(regime, seed, cfg, return_ckpts=False):
     rng = np.random.default_rng(seed)
     policies = [Policy(rng), Policy(rng)]
     env = Env(regime, rng,
@@ -246,6 +252,8 @@ def train_condition(regime, seed, cfg):
             policies[i].update(trajs[i], lr=cfg["lr"], gamma=cfg["gamma"])
         coop_hist.append(coop)
     baseline_coop = float(np.mean(coop_hist[-cfg["window"]:]))
+    # end-of-training checkpoint (episode train_eps, before reward withdrawal)
+    ckpt_train = (policies[0].copy(), policies[1].copy()) if return_ckpts else None
 
     # d_eff on end-of-training policy (agent 0)
     states = []
@@ -268,7 +276,9 @@ def train_condition(regime, seed, cfg):
     tail = cfg["window"]
     post_coop = float(np.mean(w_coop[-tail:]))
     retention = post_coop / baseline_coop if baseline_coop > 1e-6 else 0.0
-    return {
+    # end-of-withdrawal checkpoint (episode train_eps + withdraw_eps)
+    ckpt_withdraw = (policies[0].copy(), policies[1].copy()) if return_ckpts else None
+    result = {
         "regime": regime, "seed": seed,
         "baseline_coop": baseline_coop,
         "frozen_coop": frozen_coop,
@@ -279,6 +289,9 @@ def train_condition(regime, seed, cfg):
         "d_eff": d_eff,
         "coop_curve": [float(np.mean(w_coop[k:k + 20])) for k in range(0, len(w_coop), 20)],
     }
+    if return_ckpts:
+        return result, ckpt_train, ckpt_withdraw
+    return result
 
 
 def permutation_test(a, b, n=20000, seed=0):

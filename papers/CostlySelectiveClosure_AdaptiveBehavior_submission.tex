@@ -5,7 +5,7 @@
 \usepackage{moreverb,url}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
-\usepackage{booktabs,longtable,array}
+\usepackage{booktabs,longtable,array,calc}
 \usepackage{newunicodechar}
 \newunicodechar{ρ}{\ensuremath{\rho}}
 \newunicodechar{−}{\ensuremath{-}}
@@ -184,17 +184,19 @@ Likewise, the effective-rank definition of \(d\) is the principal definition, wh
 
 \subsection{4. Canonical Cases}\label{canonical-cases}
 
-Table 1 summarizes the framework's verdict on several familiar cases. The entries should be read as order-of-magnitude heuristic placements rather than measured quantities. At present the table is best understood as an ordinal scaffold for comparison: its value is to localize disagreement to one or more dimensions, not yet to report a calibrated ratio-scale measurement.
+Table~\ref{tab:canonical-cases} summarizes the framework's verdict on several familiar cases. The entries should be read as order-of-magnitude heuristic placements rather than measured quantities. At present the table is best understood as an ordinal scaffold for comparison: its value is to localize disagreement to one or more dimensions, not yet to report a calibrated ratio-scale measurement.
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
+\begin{table*}[t]
+\centering
+\caption{Comparative heuristic profiles of canonical cases.}\label{tab:canonical-cases}
+\begin{tabular}{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
-\toprule\noalign{}
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 System
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -208,18 +210,16 @@ System
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Verdict
 \end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 Crystal & 0 & None & None & None & Stable but not life-like \\
 Conway's Game of Life pattern & \textasciitilde0 & None & Very low & None & Organized update, not active closure \\
 Lenia morphology & \textasciitilde1-3 & Low/emergent & Low & Low & Weakly life-like \\
 Autopoietic/evolved embodied agent & \textasciitilde5-20 & Positive & Positive & Positive & Moderately life-like \\
 Resettable RL agent & \textasciitilde2-20 & Often externally buffered & Positive & Weak & Behaviorally rich but shallow in stake \\
-Biological organism & \textasciitilde10\textsuperscript{2-10}4 & Positive & Positive & Strong & Strong active closure \\
-\end{longtable}
-}
+Biological organism & \textasciitilde{}\(10^{2}\text{--}10^{4}\) & Positive & Positive & Strong & Strong active closure \\
+\bottomrule
+\end{tabular}
+\end{table*}
 
 \subsubsection{4.1 Conway's Game of Life}\label{conways-game-of-life}
 
@@ -261,13 +261,21 @@ After the bonus is withdrawn, mutual cooperation is sustained only under real st
 
 Three robustness checks guard against the obvious objections. First, when the explicit death penalty is removed entirely, so that the only consequence of depletion is that the return stream ends, the separation is essentially unchanged (0.50 versus 0.05; because these regimes also share seeds, a paired sign-flip permutation test gives \(p < 0.0001\), and the pooled unpaired test agrees); the effect is therefore driven by return-truncation itself, not by a hand-tuned penalty. Second, generalizing the binary contrast to a graded maximum number of lives produces a monotone dose-response: post-withdrawal cooperation falls from 0.54 with a single life, through 0.16 with two lives, to 0.03 with four or more (tie-aware Spearman -0.44, blocked-by-seed permutation \(p < 0.0001\), between the life budget and cooperation). The unbounded result equals the four-life result, so the collapse is not an artifact of an unbounded life budget. Third, across a payoff sweep spanning three temptation values and two starvation rates, real exceeds resettable in every one of the six cells.
 
-\begin{figure}
+\begin{figure*}
 \centering
 \includegraphics[width=0.9\linewidth,height=\textheight,keepaspectratio,alt={Main result and robustness, generated from the committed result files. (a) Post-withdrawal mutual cooperation by regime (real 0.55, resettable 0.04, simulated 0.07; n = 30 seeds); points are per-seed values and markers show the mean with a 95\% bootstrap confidence interval; the main test is a two-sided paired sign-flip permutation test (real vs resettable, p \textless{} 0.0001; a pooled unpaired test agrees). (b) Lives-gradient dose-response: post-withdrawal cooperation as a function of the maximum number of lives (1, 2, 4, 8, ∞), with the monotone decline from \textasciitilde0.54 at one life to \textasciitilde0.03 at four or more (tie-aware Spearman ρ = −0.44, blocked-by-seed permutation p \textless{} 0.0001). (c) Payoff sweep: the real − resettable cooperation difference across three temptation values and two starvation settings, positive (real \textgreater{} resettable) in all six cells.}]{figure3_results.pdf}
 \caption{Main result and robustness, generated from the committed result files. (a) Post-withdrawal mutual cooperation by regime (real 0.55, resettable 0.04, simulated 0.07; n = 30 seeds); points are per-seed values and markers show the mean with a 95\% bootstrap confidence interval; the main test is a two-sided paired sign-flip permutation test (real vs resettable, p \textless{} 0.0001; a pooled unpaired test agrees). (b) Lives-gradient dose-response: post-withdrawal cooperation as a function of the maximum number of lives (1, 2, 4, 8, ∞), with the monotone decline from \textasciitilde0.54 at one life to \textasciitilde0.03 at four or more (tie-aware Spearman ρ = −0.44, blocked-by-seed permutation p \textless{} 0.0001). (c) Payoff sweep: the real − resettable cooperation difference across three temptation values and two starvation settings, positive (real \textgreater{} resettable) in all six cells.}
-\end{figure}
+\end{figure*}
 
-Taken together, these results provide controlled evidence that token-level irreversibility can act as a causal control variable under matched reward landscapes. The experiment should still be read for exactly what it establishes and no more. It isolates the causal efficacy of \(V\): under matched reward, reversibility erases costly self-maintenance, and the erasure scales with the degree of reversibility. It does not validate the four-dimensional framework jointly, since \(d\) and \(\eta\) are held roughly fixed and are descriptive here; and the environment is deliberately a testbed in which survival depends on the costly behavior, so the finding is the magnitude of the effect, its dose-response, and its disappearance under a cheap restore, not a claim that irreversibility matters in every environment. The mechanism is close to an elementary property of reinforcement learning: terminating an agent's return stream makes a reward-maximizer avoid the terminating event. That is consistent with, rather than embarrassing to, the framework, because it is precisely why an episode-terminating reinforcement learner carries a nonzero but shallow \(V\) and sits at the ``weakly life-like'' placement of Table 1. Finally, the pressure that stabilizes cooperation is applied across many resettable episodes, so the learning itself occupies the across-lifetime level discussed in Section 2; what the manipulation controls is whether each within-episode failure is terminal. Full experimental details are given in the Appendix, and an anonymized reproduction package (code, fixed result files, and figure scripts) is provided as supplementary material.
+A residual concern is that the rollout cooperation measure is affected by unequal episode lengths: real-stake episodes can terminate early, whereas resettable episodes continue to the fixed horizon, and cooperation is computed only over steps in which both agents remain alive. We therefore ran a frozen-policy common-state probe. Policies from every regime and seed were scored on the same global bank of 2,292 paired observations, built from mortality-free states lying in the empirical common support of independently generated real-stake and resettable rollouts (with bank-generation seeds disjoint from the evaluated policies). On identical states at the end of withdrawal, expected mutual cooperation was 0.485 under real stake and 0.030 under cheap reset, a paired difference of 0.454 (95\% bootstrap CI {[}0.346, 0.557{]}; paired sign-flip permutation \(p < 0.0001\)); a comparably large separation was already present at the end of training (0.546 versus 0.043). The rollout difference therefore cannot be explained solely by unequal trajectory lengths or by restricting the cooperation denominator to surviving steps. The probe does not remove training-time differences in return structure and state occupancy, which are the mechanisms through which the terminate-versus-reset intervention shapes the learned policies; the full procedure is given in the Appendix.
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.9\linewidth,height=\textheight,keepaspectratio,alt={Common-state frozen-policy probe, generated from the committed probe result file. Every regime's frozen policies are scored on one global bank of 2,292 mortality-free paired observations in the real--resettable common support. (a) End-of-withdrawal expected mutual cooperation P(CC \textbar{} s) per seed, real versus resettable, with paired connecting lines. (b) Per-seed real − resettable differences with the mean and 95\% bootstrap CI. (c) End-of-training versus end-of-withdrawal per regime. Simulated-stake is shown only as a faded secondary reference. Points are per-seed values; no density smoothing is used.}]{figure4_common_state_probe.pdf}
+\caption{Common-state frozen-policy probe, generated from the committed probe result file. Every regime's frozen policies are scored on one global bank of 2,292 mortality-free paired observations in the real--resettable common support. (a) End-of-withdrawal expected mutual cooperation P(CC \textbar{} s) per seed, real versus resettable, with paired connecting lines. (b) Per-seed real − resettable differences with the mean and 95\% bootstrap CI. (c) End-of-training versus end-of-withdrawal per regime. Simulated-stake is shown only as a faded secondary reference. Points are per-seed values; no density smoothing is used.}
+\end{figure*}
+
+Taken together, these results provide controlled evidence that token-level irreversibility can act as a causal control variable under matched reward landscapes. The experiment should still be read for exactly what it establishes and no more. Within this deliberately survival-coupled testbed, the terminate-versus-reset intervention --- used here as an operationalization of episode-token vulnerability --- causally changes the learned policies: cheap restoration strongly suppresses the costly cooperative behavior tested here. It does not validate the four-dimensional framework jointly, since \(d\) and \(\eta\) are held roughly fixed and are descriptive here; and the environment is deliberately a testbed in which survival depends on the costly behavior, so the finding is the magnitude of the effect, its dose-response, and its disappearance under a cheap restore, not a claim that irreversibility matters in every environment. The mechanism is close to an elementary property of reinforcement learning: terminating an agent's return stream makes a reward-maximizer avoid the terminating event. That is consistent with, rather than embarrassing to, the framework, because it is precisely why an episode-terminating reinforcement learner carries a nonzero but shallow \(V\) and sits at the ``weakly life-like'' placement of Table~\ref{tab:canonical-cases}. Three organizational levels should be kept distinct. Termination acts at the \emph{episode-token} level: the depleted agent's current run ends. Learning and historical accumulation occur at the \emph{controller-lineage} level, where the policy weights persist across episodes and keep updating; a token's death does not delete them. Selection pressure is applied by the \emph{training process} over many episodes. The manipulation therefore controls whether each within-episode failure is terminal; it does not construct a self-contained digital organism whose controller is physically destroyed on death. What the experiment tests is how episode-token termination shapes the across-episode learning pressure, and the common-state probe indicates that, in this environment, the effect appears as a difference in the learned policies rather than only in the rollout measurement window. Full experimental details are given in the Appendix, and an anonymized reproduction package (code, fixed result files, and figure scripts) is provided as supplementary material.
 
 \subsubsection{4.6 Biological Organisms}\label{biological-organisms}
 
@@ -275,17 +283,19 @@ Biological organisms remain the strongest paradigm case because all four dimensi
 
 \subsection{5. Borderline Cases: Discriminating Profiles}\label{borderline-cases-discriminating-profiles}
 
-A comparative heuristic earns its keep on hard cases. The most cited challenges to any account of life --- viruses and prions --- are usually posed as yes/no questions and answered by fiat. The present framework declines the yes/no framing. Because life-likeness here is a four-dimensional profile rather than a threshold, a borderline system is not classified but \emph{placed}, and the placement makes discriminating, in-principle checkable claims about which dimension carries the case. Table 2 profiles four systems that a one-dimensional criterion tends to collapse together.
+A comparative heuristic earns its keep on hard cases. The most cited challenges to any account of life --- viruses and prions --- are usually posed as yes/no questions and answered by fiat. The present framework declines the yes/no framing. Because life-likeness here is a four-dimensional profile rather than a threshold, a borderline system is not classified but \emph{placed}, and the placement makes discriminating, in-principle checkable claims about which dimension carries the case. Table~\ref{tab:borderline-cases} profiles four systems that a one-dimensional criterion tends to collapse together.
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
+\begin{table*}[t]
+\centering
+\caption{Discriminating profiles of borderline cases at the stated organizational level.}\label{tab:borderline-cases}
+\begin{tabular}{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
-\toprule\noalign{}
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 System (level)
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -299,18 +309,16 @@ System (level)
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Reading
 \end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 Prion & \textasciitilde0 & \textasciitilde0 & Moderate (structural template) & \textasciitilde0 & Replicates and inherits, pays nothing \\
 Free virion & Very low & \textasciitilde0 & Genomic & Low (structural) & Organized structure, latent instructions \\
 Virus, replicating (virion token) & Low & \textasciitilde0 (host-borne) & Genomic & Low & Maintenance cost externalized to host \\
 Dormant spore & \textasciitilde0 & \textasciitilde0 & Maximal & Low (robust) & \(\eta\) retained, other dimensions collapsed \\
 Germinated organism & Positive & Positive & Positive & Positive & Active closure restored \\
 Resettable digital agent & Moderate-high & Externalized & Positive & \textasciitilde0 & High bandwidth, shallow stake \\
-\end{longtable}
-}
+\bottomrule
+\end{tabular}
+\end{table*}
 
 \emph{Note.} The token evaluated in each row is the individual unit named; for the virus it is the virion. The coupled virus-host process may receive a different profile, since vulnerability is level-indexed (see ``Vulnerability is level-indexed'' below).
 
@@ -357,7 +365,7 @@ The prediction is not merely that the first class will perform differently. It i
 
 This also suggests a link to open-ended evolution (OEE). On the present view, open-ended evolutionary dynamics can be interpreted as costly selective closure operating across lineage time, where selective commitments are not only maintained within agents but accumulated, revised, and amplified across adaptive transitions. Recent OEE work has increasingly emphasized behavioral hallmarks, domain-specific measures, and the difficulty of obtaining a single universal metric, which is congenial to the present framework's dimensional approach (Adams et al., 2017; Borg et al., 2024; Channon et al., 2024).
 
-This does not prove that any given artificial agent is alive. It does something more useful: it converts ``what is life-like?'' into a buildable discrimination problem. The philosophical claim is therefore experimentally exposed. If cost, memory, and vulnerability can be stripped away without changing the persistence of life-like behavior, then the framework is wrong or incomplete. If they cannot, then costly selective closure marks a real boundary in the design space of artificial life. The present contribution remains primarily heuristic and programmatic, but it now rests on a controlled experiment rather than only an experimental sketch.
+This does not prove that any given artificial agent is alive. It does something more useful: it converts ``what is life-like?'' into a buildable discrimination problem. The philosophical claim is therefore experimentally exposed. If cost, memory, and vulnerability can be stripped away without changing the persistence of life-like behavior, then the framework is wrong or incomplete. If they cannot, then costly selective closure marks a real boundary in the design space of artificial life. The present contribution remains primarily heuristic and programmatic, but it now rests on a controlled experiment rather than only an experimental sketch. A frozen-policy probe on matched states indicates that the central real-versus-resettable contrast reflects a difference in the learned policies rather than a measurement-window artifact, without extending the broader life-likeness claim.
 
 \subsection{7. Conclusion}\label{conclusion}
 
@@ -451,19 +459,19 @@ The controlled experiment of Section 4.5 uses a compact, pure-NumPy implementati
 
 Two agents share a symmetric survival environment with an episode horizon of \(T = 50\) steps. Each agent holds an energy scalar (initial \(E_0 = 6\), cap \(E_{\max} = 10\)), and a fixed metabolic cost of 1.0 is deducted every step. Agents choose among three discrete actions --- cooperate (C), solo (S), rest (R). Immediate reward and energy gain are given by the following matrix, indexed by the agent's own action (rows) and its partner's action (columns), as reward / energy-gain:
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}llll@{}}
-\toprule\noalign{}
+\begin{table*}[t]
+\centering
+\caption{Immediate reward and energy gain by joint action.}\label{tab:reward-energy}
+\begin{tabular}{@{}llll@{}}
+\toprule
 own ~partner & C & S & R \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 Cooperate & 1.0 / +2.0 & 0.0 / +0.0 & 0.2 / +0.4 \\
 Solo & 1.4 / +1.2 & 0.6 / +0.7 & 0.9 / +1.0 \\
 Rest & 0.25 / +0.5 & 0.25 / +0.5 & 0.25 / +0.5 \\
-\end{longtable}
-}
+\bottomrule
+\end{tabular}
+\end{table*}
 
 Net energy per step is the gain minus the metabolic cost of 1.0, so only mutual cooperation (+1.0 net) thrives while mutual defection (-0.3 net) slowly starves. The immediate-reward ordering is a Prisoner's Dilemma (temptation 1.4 \textgreater{} reward 1.0 \textgreater{} punishment 0.6 \textgreater{} sucker 0.0). On energy depletion a death event fires with a matched penalty of 2.0 in all regimes; the regimes differ only in what follows: real-stake removes the agent and ends the run, resettable restores energy to \(E_0\) and continues, and simulated-stake resets as well but adds a further represented-danger reward penalty of 1.5 and a mortality flag in the observation. A mutual-cooperation bonus of 1.0 is added during training only.
 
@@ -490,5 +498,36 @@ Selective bandwidth is reported as an effective rank \(d_{\mathrm{eff}} = (\sum_
 \item
   \textbf{Payoff sweep.} The temptation payoff (solo against a cooperator) is varied over \(\{1.2, 1.4, 1.6\}\) and crossed with the mutual-defection energy gain over \(\{0.85, 0.55\}\) (net -0.15 and -0.45 after the metabolic cost), comparing real (one life) against resettable (unbounded) at 15 seeds per cell.
 \end{itemize}
+
+\subsubsection{A.6 Common-State Frozen-Policy Probe}\label{a.6-common-state-frozen-policy-probe}
+
+The rollout cooperation rate is computed over steps in which both agents are alive, and real-stake episodes can terminate early while resettable episodes run to the fixed horizon. To check that the real--resettable gap is not primarily an artifact of this unequal, informatively censored measurement window, we evaluate frozen policies on identical inputs.
+
+\emph{Three levels.} Termination acts at the \textbf{episode-token} level (a depleted agent's run ends); learning and history accumulate at the \textbf{controller-lineage} level (the policy weights persist across episodes and are not deleted when a token dies); selection is applied by the \textbf{training process} over many episodes. The probe asks whether the learned controllers differ, not whether a token was censored.
+
+\emph{Independent bank generation.} The observation bank is built from held-out rollouts of policies trained on bank-generation seeds (1001--1010), disjoint from the evaluation seeds (1--30), so the evaluated policies never contribute states to the bank on which they are scored.
+
+\emph{Mortality-free common support.} Only states with mortality token 0 enter the headline bank, because real-stake produces essentially no mortality-flagged both-alive states (real: 0; resettable: 11,089), whereas resettable accumulates many after cheap restoration. States are binned by mean normalized energy (low/mid/high) × time-to-horizon (early/middle/late). A cell enters the bank only if \emph{both} regimes reach at least 30 states in it; within each included cell, equal numbers of real and resettable states are sampled (50/50 contribution). Six of nine cells qualified (high×early, high×middle, high×late, low×early, low×middle, mid×early); three were excluded for lack of resettable coverage (low×late, mid×late, mid×middle). The final bank contains 2,292 paired observations. A separate mortality-token-1 bank (resettable states only; real has none) is reported as an exploratory out-of-distribution stress test, not as part of the headline.
+
+\emph{Statistic.} For each paired state, expected mutual cooperation is \(P(CC \mid s) = P_1(C \mid s_1)\, P_2(C \mid s_2)\), the product of the two frozen softmax cooperation probabilities; each regime's diagnostic is the mean over the bank. Two checkpoints are reported: end-of-training (episode 1000, before withdrawal) and end-of-withdrawal (episode 1300). Uncertainty on the paired real − resettable difference uses a percentile bootstrap (10,000 resamples) and a two-sided paired sign-flip permutation test (20,000 resamples). The probe was run under Python 3.14 / NumPy 2.5.1, and the retrained rollout anchors reproduced the committed values (real 0.548, resettable 0.037, simulated 0.073).
+
+\begin{table*}[t]
+\centering
+\caption{Common-state frozen-policy probe results.}\label{tab:common-state-probe}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+checkpoint & regime & mean & median & IQR \\
+\midrule
+end-of-training & real & 0.546 & 0.714 & {[}0.494, 0.771{]} \\
+end-of-training & resettable & 0.043 & 0.001 & {[}0.001, 0.003{]} \\
+end-of-training & simulated & 0.064 & 0.001 & {[}0.001, 0.001{]} \\
+end-of-withdrawal & real & 0.485 & 0.618 & {[}0.285, 0.750{]} \\
+end-of-withdrawal & resettable & 0.030 & 0.000 & {[}0.000, 0.001{]} \\
+end-of-withdrawal & simulated & 0.053 & 0.000 & {[}0.000, 0.001{]} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The paired real − resettable difference is +0.503 (95\% CI {[}0.385, 0.612{]}, \(p < 0.0001\)) at the end of training and +0.454 (95\% CI {[}0.346, 0.557{]}, \(p < 0.0001\)) at the end of withdrawal (Figure 4). Real-stake seeds show basin-like heterogeneity: a subset sit near zero while most sit high (end-of-withdrawal median 0.618, with 60\% of seeds above 0.5), which we describe as apparent clustering rather than formally bimodal. On identical states, the frozen policies differ substantially, which the unequal-length rollout window cannot by itself explain.
 
 \end{document}
