@@ -59,17 +59,38 @@ def convert(t):
 def longtable_to_twocolumn(t):
     """The sagej class (Afour) sets a two-column body, where pandoc's default
     `longtable` is illegal ("longtable not in 1-column mode"). Convert each
-    longtable into a full-width `table*` float wrapping a plain `tabular`; the
-    column spec and body rows are preserved verbatim. Our tables carry no
-    caption, so only the fixed longtable header/footer scaffolding is rewritten."""
-    t = t.replace(r"\begin{longtable}[]{@{}",
-                  "\\begin{table*}[t]\n\\centering\n\\begin{tabular}{@{}")
-    t = t.replace("\\toprule\\noalign{}", "\\toprule")
-    t = re.sub(r"\\midrule\\noalign\{\}\s*\n\s*\\endhead\s*\n\s*"
-               r"\\bottomrule\\noalign\{\}\s*\n\s*\\endlastfoot",
-               "\\\\midrule", t)
-    t = t.replace("\\end{longtable}",
-                  "\\bottomrule\n\\end{tabular}\n\\end{table*}")
+    longtable into a full-width `table*` float wrapping a plain `tabular`. The
+    column spec and body rows are preserved verbatim; a pandoc table caption and
+    label (from `: caption {#tab:id}` in the Markdown) are hoisted above the
+    tabular so the float is numbered, and all longtable header/footer scaffolding
+    — including the `\\endfirsthead` duplicate header pandoc emits for captioned
+    tables — is dropped."""
+    def convert_block(m):
+        block = m.group(0)
+        cap = ""
+        cm = re.search(r"\\caption\{.*?\}\\label\{[^}]*\}\\tabularnewline\n", block, re.S)
+        if cm:                                   # hoist caption+label above the tabular
+            cap = cm.group(0).replace("\\tabularnewline\n", "\n")
+            block = block.replace(cm.group(0), "", 1)
+        block = re.sub(r"\\endfirsthead\n.*?\\endhead\n", "", block, flags=re.S)  # drop dup header
+        block = block.replace("\\toprule\\noalign{}", "\\toprule")
+        block = block.replace("\\midrule\\noalign{}", "\\midrule")
+        block = block.replace("\\endhead\n", "")                                 # uncaptioned case
+        block = re.sub(r"\\bottomrule\\noalign\{\}\n\\endlastfoot\n", "", block)
+        block = block.replace(r"\begin{longtable}[]{",
+                              "\\begin{table*}[t]\n\\centering\n" + cap + "\\begin{tabular}{", 1)
+        block = block.replace(r"\end{longtable}",
+                              "\\bottomrule\n\\end{tabular}\n\\end{table*}")
+        return block
+    return re.sub(r"\\begin\{longtable\}.*?\\end\{longtable\}", convert_block, t, flags=re.S)
+
+
+def crossref_tables(t):
+    """Replace the hard-coded prose "Table 1"/"Table 2" with LaTeX cross-refs to
+    the captioned floats (the Markdown keeps the readable literals). Only the two
+    canonical-case and borderline-case tables are cited by number in the text."""
+    t = t.replace("Table 1", "Table~\\ref{tab:canonical-cases}")
+    t = t.replace("Table 2", "Table~\\ref{tab:borderline-cases}")
     return t
 
 
@@ -122,6 +143,7 @@ def pandoc(md, args):
 body_latex_md = re.sub(r"!\[([^\]]*)\]\(([^)]+)\)(\{[^}]*\})",
                        lambda m: f"![{m.group(1)}]({Path(m.group(2)).stem}.pdf){m.group(3)}", body_c)
 frag = pandoc(body_latex_md, ["-t", "latex"])
+frag = crossref_tables(frag)
 abstract_tex = pandoc(abstract_c, ["-t", "latex"])
 refs_tex = pandoc(refs_paras, ["-t", "latex"])
 appendix_tex = pandoc(appendix_c, ["-t", "latex"])

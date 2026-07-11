@@ -142,6 +142,8 @@ Table 1 summarizes the framework's verdict on several familiar cases. The entrie
 | Resettable RL agent | ~2-20 | Often externally buffered | Positive | Weak | Behaviorally rich but shallow in stake |
 | Biological organism | ~`10^2-10^4` | Positive | Positive | Strong | Strong active closure |
 
+: Comparative heuristic profiles of canonical cases. {#tab:canonical-cases}
+
 ### 4.1 Conway's Game of Life
 
 Game of Life (Gardner, 1970), heir to von Neumann's self-reproducing automata (von Neumann, 1966), remains a foundational example because it demonstrates how surprising pattern formation can emerge from simple rules. Yet, under the present framework, it ranks low in life-likeness. Patterns localize and persist, but they do not bear non-trivial cost, retain history in a robust sense, or face consequential failure. The most sustained attempt to read a Game of Life pattern as an autopoietic individual (Beer, 2004) is instructive here: it recovers organizational closure and structural coupling, but the pattern's self-production remains a feature of the observer's descriptive stance rather than a cost borne by the token to remain what it is. The system updates according to fixed rules; it does not actively maintain a selected mode of existence under burden.
@@ -209,6 +211,8 @@ A comparative heuristic earns its keep on hard cases. The most cited challenges 
 | Dormant spore | ~0 | ~0 | Maximal | Low (robust) | `η` retained, other dimensions collapsed |
 | Germinated organism | Positive | Positive | Positive | Positive | Active closure restored |
 | Resettable digital agent | Moderate-high | Externalized | Positive | ~0 | High bandwidth, shallow stake |
+
+: Discriminating profiles of borderline cases at the stated organizational level. {#tab:borderline-cases}
 
 *Note.* The token evaluated in each row is the individual unit named; for the virus it is the virion. The coupled virus-host process may receive a different profile, since vulnerability is level-indexed (see "Vulnerability is level-indexed" below).
 
@@ -319,6 +323,8 @@ Two agents share a symmetric survival environment with an episode horizon of `T 
 | Solo | 1.4 / +1.2 | 0.6 / +0.7 | 0.9 / +1.0 |
 | Rest | 0.25 / +0.5 | 0.25 / +0.5 | 0.25 / +0.5 |
 
+: Immediate reward and energy gain by joint action. {#tab:reward-energy}
+
 Net energy per step is the gain minus the metabolic cost of `1.0`, so only mutual cooperation (`+1.0` net) thrives while mutual defection (`-0.3` net) slowly starves. The immediate-reward ordering is a Prisoner's Dilemma (temptation `1.4` > reward `1.0` > punishment `0.6` > sucker `0.0`). On energy depletion a death event fires with a matched penalty of `2.0` in all regimes; the regimes differ only in what follows: real-stake removes the agent and ends the run, resettable restores energy to `E_0` and continues, and simulated-stake resets as well but adds a further represented-danger reward penalty of `1.5` and a mortality flag in the observation. A mutual-cooperation bonus of `1.0` is added during training only.
 
 ### A.2 Policy and observation
@@ -359,5 +365,7 @@ The rollout cooperation rate is computed over steps in which both agents are ali
 | end-of-withdrawal | real | 0.485 | 0.618 | [0.285, 0.750] |
 | end-of-withdrawal | resettable | 0.030 | 0.000 | [0.000, 0.001] |
 | end-of-withdrawal | simulated | 0.053 | 0.000 | [0.000, 0.001] |
+
+: Common-state frozen-policy probe results. {#tab:common-state-probe}
 
 The paired real − resettable difference is `+0.503` (95% CI `[0.385, 0.612]`, `p < 0.0001`) at the end of training and `+0.454` (95% CI `[0.346, 0.557]`, `p < 0.0001`) at the end of withdrawal (Figure 4). Real-stake seeds show basin-like heterogeneity: a subset sit near zero while most sit high (end-of-withdrawal median 0.618, with 60% of seeds above 0.5), which we describe as apparent clustering rather than formally bimodal. On identical states, the frozen policies differ substantially, which the unequal-length rollout window cannot by itself explain.
