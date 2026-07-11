@@ -315,8 +315,10 @@ def figure4_probe():
                  capsize=6, lw=2, zorder=3, markeredgecolor="white")
     axB.set_xticks([]); axB.set_xlim(-0.6, 0.6); axB.set_ylim(-0.2, 1.0)
     axB.set_ylabel("real $-$ resettable  $P(CC\\mid s)$")
+    pp = summ["end_of_withdrawal"]["real_minus_resettable"]["paired_signflip_p"]
+    ptxt = "< 0.0001" if pp <= 1e-4 else f"= {pp:.2g}"
     axB.set_title("(b) Per-seed difference (mean, 95% CI)", fontsize=10.5)
-    axB.annotate(f"mean {md:+.2f}\n95% CI [{lo:.2f}, {hi:.2f}]\npaired p < 0.0001",
+    axB.annotate(f"mean {md:+.2f}\n95% CI [{lo:.2f}, {hi:.2f}]\npaired p {ptxt}",
                  xy=(0.62, 0.86), xycoords="axes fraction", ha="right", fontsize=8.5, color="#333")
 
     # --- Panel C: end-of-training vs end-of-withdrawal ---
