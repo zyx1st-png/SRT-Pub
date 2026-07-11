@@ -1,0 +1,7 @@
+{
+  "confirmatory_locked.yaml": "42fe6572b2d45e82c5b7bc8ef2f06a72722075c82eb7181f19cffe24bf74c549",
+  "experiment_source_tree": "a899dc35d655420eae39f6c361ab801830ac4058a853700fc678ee121ae04fd8",
+  "future_task_split": "6b4d5f5db111a21e7757724a93c4c05aa8797bc343cce94911aa3201a896a7f6",
+  "locked_utc_note": "Generated after pilot; any subsequent change is a protocol deviation.",
+  "protocol_lock.md": "86e53de8806a6451d6f31405584f9cc5ddac4e54e67f008eee317230076e298b"
+}

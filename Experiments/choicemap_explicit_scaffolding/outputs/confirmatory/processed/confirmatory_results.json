@@ -1,0 +1,20 @@
+{
+  "ablations_weakened_ge_3pp": 3,
+  "budget_audit_pass": true,
+  "current_task_mean_difference": 0.03283333333333331,
+  "diagnostic_gate_projection": "GO",
+  "final_decision": "GO",
+  "future_task_bootstrap_95": [
+    0.31533333333333335,
+    0.34833541666666673
+  ],
+  "future_task_mean_difference_hidden_irreversible": 0.33208333333333334,
+  "future_task_median_difference": 0.33124999999999993,
+  "irreversible_failure_mean_difference": -0.35066666666666657,
+  "leakage_audit_pass": true,
+  "paired_permutation_p": 4.999750012499375e-05,
+  "rfs_auc_mean_difference": 0.21291180555555556,
+  "stable_reversible_future_difference": -0.0005000000000000004,
+  "standardized_effect": 7.066152077701786,
+  "strongest_baseline": "OptionScalar"
+}

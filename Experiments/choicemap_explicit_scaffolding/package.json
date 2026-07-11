@@ -1,0 +1,10 @@
+{
+  "name": "choicemap-explicit-scaffolding-parquet-writer",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Dependency-limited fallback for writing required raw Parquet logs",
+  "dependencies": {
+    "parquetjs-lite": "^0.8.7"
+  }
+}
+
