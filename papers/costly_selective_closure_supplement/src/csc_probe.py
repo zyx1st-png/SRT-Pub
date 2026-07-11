@@ -191,15 +191,29 @@ def summarize(out):
     return summ
 
 
-def _git_commit():
+def _git(*args, default="unknown"):
     try:
-        return subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
+        return subprocess.run(["git", *args], cwd=ROOT,
                               capture_output=True, text=True).stdout.strip()
     except Exception:
-        return "unknown"
+        return default
+
+
+def _mpl_version():
+    try:
+        import matplotlib
+        return matplotlib.__version__
+    except Exception:
+        return "not-installed"
 
 
 def run():
+    # Provenance captured before any output is written, so a clean checkout of
+    # `source_commit` reports worktree_dirty=false. `source_commit` is the code
+    # commit actually checked out for this run (unlike a bare `git rev-parse HEAD`
+    # taken while the probe code sat uncommitted on top of an older base commit).
+    source_commit = _git("rev-parse", "HEAD")
+    worktree_dirty = bool(_git("status", "--porcelain", default="dirty"))
     bank, ood, bank_meta = build_bank()
     out, ood_out, anchors = evaluate(bank, ood)
     summ = summarize(out)
@@ -214,7 +228,8 @@ def run():
     report = {
         "meta": {
             "python": platform.python_version(), "numpy": np.__version__,
-            "platform": platform.platform(), "git_commit": _git_commit(),
+            "matplotlib": _mpl_version(), "platform": platform.platform(),
+            "source_commit": source_commit, "worktree_dirty": worktree_dirty,
             "eval_seeds": EVAL_SEEDS, "bank_gen_seeds": BANK_SEEDS,
             "bank_rng_seed": BANK_RNG_SEED, "n_boot": N_BOOT, "n_perm": N_PERM,
             "cfg": CFG,
