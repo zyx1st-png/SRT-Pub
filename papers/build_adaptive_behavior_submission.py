@@ -94,16 +94,21 @@ def crossref_tables(t):
     return t
 
 
-def widen_multipanel_figures(t):
-    """Figures 3 and 4 are wide three-panel figures. In the two-column sagej
-    layout a single-column `figure` renders them illegibly small, so promote
-    only those two to full-width `figure*` floats. Figures 1 and 2 are
-    single-panel and stay one-column."""
+def fullwidth_figures(t):
+    """Figures 2, 3 and 4 are designed at full text width; in the two-column
+    sagej layout a single-column `figure` renders them too small. Promote them to
+    full-width `figure*` floats spanning both columns, and size them to the full
+    `\\linewidth` (not 0.9) with no fixed height cap so they are not needlessly
+    shrunk. Figure 1 is a single-panel schematic and stays one column."""
+    targets = ("figure2_design", "figure3_results", "figure4_common_state_probe")
     def star(m):
         block = m.group(0)
-        if "figure3_results" in block or "figure4_common_state_probe" in block:
+        if any(name in block for name in targets):
             block = block.replace(r"\begin{figure}", r"\begin{figure*}", 1)
             block = block.replace(r"\end{figure}", r"\end{figure*}", 1)
+            block = block.replace(
+                "width=0.9\\linewidth,height=\\textheight,keepaspectratio",
+                "width=\\linewidth,keepaspectratio")
         return block
     return re.sub(r"\\begin\{figure\}.*?\\end\{figure\}", star, t, flags=re.S)
 
@@ -200,7 +205,7 @@ tex = (preamble + frag.strip()
        + "\n\n" + appendix_tex.strip()
        + "\n\n\\end{document}\n")
 tex = longtable_to_twocolumn(tex)
-tex = widen_multipanel_figures(tex)
+tex = fullwidth_figures(tex)
 (PAPERS / "CostlySelectiveClosure_AdaptiveBehavior_submission.tex").write_text(tex, encoding="utf-8")
 print("wrote .tex  (%d bytes)" % len(tex))
 

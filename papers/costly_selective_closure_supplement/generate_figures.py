@@ -135,52 +135,60 @@ def figure1_framework():
 
 
 # ---------------------------------------------------------------- Figure 2
+def _flowbox(ax, cx, cy, w, h, title, subtitle="", *, fc=C_BOX, ec=C_EDGE,
+             dashed=False, title_fs=13, sub_fs=11, title_color="#1a1a1a",
+             sub_color="#333", title_weight="bold", zorder=2):
+    """Rounded box centred at (cx, cy) with a bold title and optional subtitle."""
+    ax.add_patch(FancyBboxPatch((cx - w / 2, cy - h / 2), w, h,
+                                boxstyle="round,pad=0.02,rounding_size=0.09",
+                                linewidth=1.5, edgecolor=ec, facecolor=fc,
+                                linestyle="--" if dashed else "-", zorder=zorder))
+    if subtitle:
+        ax.text(cx, cy + h * 0.21, title, ha="center", va="center", fontsize=title_fs,
+                weight=title_weight, color=title_color, zorder=zorder + 1)
+        ax.text(cx, cy - h * 0.20, subtitle, ha="center", va="center", fontsize=sub_fs,
+                color=sub_color, zorder=zorder + 1)
+    else:
+        ax.text(cx, cy, title, ha="center", va="center", fontsize=title_fs,
+                weight=title_weight, color=title_color, zorder=zorder + 1)
+
+
 def figure2_design():
-    fig, ax = plt.subplots(figsize=(9.2, 5.4))
-    ax.set_xlim(0, 14); ax.set_ylim(0, 8.4); ax.axis("off")
+    """Compact, near-square experimental-design schematic. The single-variable
+    real-vs-resettable contrast is the visual centre; simulated-stake is a
+    de-emphasised auxiliary condition derived from resettable. No calibrated
+    numbers; the long matched-comparison sentence lives in the paper caption."""
+    fig, ax = plt.subplots(figsize=(7.2, 5.6))
+    ax.set_xlim(0, 10); ax.set_ylim(0, 7.8); ax.axis("off")
 
-    _box(ax, 0.3, 3.1, 3.4, 2.2,
-         "Shared setup\nsame observations,\nbase reward, energy dynamics,\nnetwork, training, seeds",
-         fc="#e8eef4", fs=9)
+    # shared setup (top, short)
+    _flowbox(ax, 5.0, 7.02, 7.7, 1.12, "Shared setup",
+             "same observations, reward, energy dynamics,\nnetwork, and seeds",
+             fc="#eef2f7", title_fs=12.5, sub_fs=10.5)
 
-    # clean contrast
-    _box(ax, 5.0, 5.2, 3.8, 1.7,
-         "Real-stake\ndepletion terminates\nthe token run", fc="#e8eef4", fs=10, ec=C_REAL)
-    _box(ax, 5.0, 1.5, 3.8, 1.7,
-         "Resettable\ndepletion triggers a\ncheap reset to $E_0$", fc="#fbecea", fs=10, ec=C_RESET)
-    _arrow(ax, (3.7, 4.5), (5.0, 6.05), color=C_REAL)
-    _arrow(ax, (3.7, 3.9), (5.0, 2.35), color=C_RESET)
+    # clean causal comparison: two equal, side-by-side main boxes inside a bracket
+    ax.add_patch(FancyBboxPatch((0.5, 4.0), 9.0, 2.35,
+                                boxstyle="round,pad=0.02,rounding_size=0.07",
+                                linewidth=1.2, edgecolor="#555", facecolor="none",
+                                linestyle=(0, (5, 3)), zorder=1))
+    _flowbox(ax, 2.75, 5.20, 3.7, 1.45, "Real-stake", "depletion terminates\nthe token run",
+             fc="#e7eff6", ec=C_REAL, title_fs=13, sub_fs=11, title_color=C_REAL)
+    _flowbox(ax, 7.25, 5.20, 3.7, 1.45, "Resettable", "depletion → cheap\nreset to $E_0$",
+             fc="#fceeeb", ec=C_RESET, title_fs=13, sub_fs=11, title_color="#b3402f")
+    _arrow(ax, (5.0, 6.46), (2.75, 5.95), color="#666")
+    _arrow(ax, (5.0, 6.46), (7.25, 5.95), color="#666")
+    ax.text(5.0, 4.22, "Clean causal comparison:  real-stake  vs  resettable",
+            ha="center", va="center", fontsize=11.5, weight="bold", color="#333", zorder=3)
 
-    # bracket around clean contrast
-    ax.add_patch(FancyBboxPatch((4.75, 1.2), 4.35, 6.0,
-                                boxstyle="round,pad=0.02,rounding_size=0.1",
-                                linewidth=1.1, edgecolor="#555", facecolor="none",
-                                linestyle=(0, (4, 3))))
-    ax.text(6.92, 7.55, "Clean causal comparison:\nreal-stake vs resettable",
-            ha="center", va="bottom", fontsize=9.5, weight="bold", color="#333")
-
-    # auxiliary condition
-    ax.add_patch(FancyBboxPatch((9.55, 3.15), 4.35, 2.7,
-                                boxstyle="round,pad=0.02,rounding_size=0.12",
-                                linewidth=1.3, edgecolor="#666", facecolor="#f3f3f3",
-                                linestyle="--"))
-    ax.text(9.78, 5.5, "Simulated-stake (auxiliary)", ha="left", va="top",
-            fontsize=9.3, weight="bold")
-    ax.text(9.82, 4.85,
-            "•  cheap reset (as resettable)\n•  + mortality observation cue\n"
-            "•  + danger reward penalty = 1.5",
-            ha="left", va="top", fontsize=8.6)
-    _arrow(ax, (8.8, 2.75), (9.55, 3.7), dashed=True, color="#999")
-    ax.text(8.95, 3.5, "adds two\nchanges", ha="center", va="bottom", fontsize=7.6,
-            style="italic", color="#888")
-    ax.text(11.72, 2.75,
-            "Auxiliary condition — not part of the\nsingle-variable matched contrast",
-            ha="center", va="top", fontsize=8.6, style="italic", color="#444")
-
-    ax.text(7.0, 0.35,
-            "Only real-stake vs resettable is the single-variable matched comparison "
-            "(the manipulated variable is terminate-versus-reset).",
-            ha="center", fontsize=8.7, color="#333")
+    # simulated-stake: secondary, derived from resettable
+    _arrow(ax, (5.0, 4.0), (5.0, 2.47), dashed=True, color="#999")
+    ax.text(5.6, 3.25, "adds two changes\nto resettable", ha="left", va="center",
+            fontsize=10, style="italic", color="#777")
+    _flowbox(ax, 5.0, 1.60, 7.4, 1.70, "Simulated-stake (auxiliary)",
+             "resettable + two representational changes:\n"
+             "+ mortality cue      + danger reward penalty 1.5",
+             fc="#f0f0f0", ec="#8a8a8a", dashed=True, title_fs=11, sub_fs=10.5,
+             title_color="#555", sub_color="#555")
     save(fig, "figure2_design")
 
 
@@ -189,99 +197,111 @@ def _jitter(n, width, seed):
     return np.random.default_rng(seed).uniform(-width, width, size=n)
 
 
+def _cell_text_color(value, vmin, vmax, cmap):
+    """Black or white cell text depending on the background luminance."""
+    frac = (value - vmin) / (vmax - vmin) if vmax > vmin else 0.5
+    r, g, b, _ = cmap(min(max(frac, 0.0), 1.0))
+    lum = 0.299 * r + 0.587 * g + 0.114 * b
+    return "white" if lum < 0.55 else "#111"
+
+
 def figure3_results():
+    """Two-row layout: (a) full-width primary main result, then (b) lives-gradient
+    dose-response and (c) payoff-sweep heatmap on the bottom row. Every number is
+    read from the committed result files."""
     main = load("main_results.json")
     grad = load("lives_gradient_results.json")
     sweep = load("payoff_sweep_results.json")
 
-    fig, axes = plt.subplots(1, 3, figsize=(13.2, 4.4))
-    axA, axB, axC = axes
+    fig = plt.figure(figsize=(7.3, 6.5))
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.15], hspace=0.48, wspace=0.32,
+                          left=0.115, right=0.955, top=0.945, bottom=0.085)
+    axA = fig.add_subplot(gs[0, :])
+    axB = fig.add_subplot(gs[1, 0])
+    axC = fig.add_subplot(gs[1, 1])
 
-    # --- Panel A: main result ---
-    regimes = [("real", C_REAL, "real-stake"),
-               ("resettable", C_RESET, "resettable"),
-               ("simulated", C_SIM, "simulated\n(auxiliary)")]
-    for i, (reg, col, lab) in enumerate(regimes):
+    # ---- Panel (a): main result, full width ----
+    regimes = [("real", C_REAL, "real-stake", 0.55),
+               ("resettable", C_RESET, "resettable", 0.55),
+               ("simulated", C_SIM, "simulated\n(auxiliary)", 0.30)]
+    for i, (reg, col, lab, al) in enumerate(regimes):
         vals = np.array([r["post_coop"] for r in main["runs"] if r["regime"] == reg])
-        axA.scatter(i + _jitter(len(vals), 0.10, i), vals, s=16, color=col,
-                    alpha=0.45, edgecolor="none", zorder=2)
+        axA.scatter(i + _jitter(len(vals), 0.11, i), vals, s=34, color=col,
+                    alpha=al, edgecolor="none", zorder=2)
         m, lo, hi = bootstrap_ci(vals)
-        axA.errorbar(i, m, yerr=[[m - lo], [hi - m]], fmt="o", color=col,
-                     ms=8, capsize=5, lw=1.8, zorder=3, markeredgecolor="white")
-    axA.set_xticks(range(3)); axA.set_xticklabels([r[2] for r in regimes], fontsize=9)
-    axA.set_ylabel("post-withdrawal mutual cooperation")
-    axA.set_ylim(-0.05, 1.05)
+        axA.errorbar(i, m, yerr=[[m - lo], [hi - m]], fmt="o", color=col, ms=11,
+                     capsize=6, lw=2.4, zorder=3, markeredgecolor="white")
+    axA.set_xticks(range(3)); axA.set_xticklabels([r[2] for r in regimes], fontsize=11)
+    axA.set_ylabel("post-withdrawal\nmutual cooperation", fontsize=12)
+    axA.set_xlim(-0.5, 2.5); axA.set_ylim(-0.05, 1.10)
+    axA.tick_params(axis="y", labelsize=10.5)
     n = main["n_seeds"]
     _, p_paired, p_unpaired = paired_signflip_p(main)
     def _pf(p): return "< 0.0001" if p <= 1e-4 else f"= {p:.2g}"
-    axA.set_title(f"(a) Main result  (n = {n} seeds)", fontsize=10.5)
-    axA.annotate(f"real vs resettable\npaired p {_pf(p_paired)}\n(unpaired p {_pf(p_unpaired)})",
-                 xy=(0.5, 0.64), xycoords="data", ha="center", fontsize=8.3, color="#333")
-    axA.plot([0, 1], [1.0, 1.0], color="#333", lw=1)
-    axA.text(0.5, 1.01, "*", ha="center", fontsize=13)
+    axA.set_title(f"(a) Main result  (n = {n} seeds)", fontsize=13)
+    axA.annotate(f"real vs resettable\npaired sign-flip permutation p {_pf(p_paired)}",
+                 xy=(0.95, 0.95), xycoords="data", ha="center", va="top",
+                 fontsize=10.5, color="#222")
+    axA.annotate(f"pooled unpaired permutation p {_pf(p_unpaired)}",
+                 xy=(0.95, 0.70), xycoords="data", ha="center", va="top",
+                 fontsize=9.3, color="#666")
 
-    # --- Panel B: lives gradient ---
+    # ---- Panel (b): lives-gradient dose-response ----
     order = [(1, "L1(real)"), (2, "L2"), (4, "L4"), (8, "L8"), (10**9, "Linf(reset)")]
     xpos = list(range(len(order)))
     means = []
     for xi, (lv, name) in zip(xpos, order):
         vals = np.array([r["post_coop"] for r in grad["runs"] if r["level"] == name])
-        axB.scatter(xi + _jitter(len(vals), 0.09, xi + 10), vals, s=15,
+        axB.scatter(xi + _jitter(len(vals), 0.10, xi + 10), vals, s=26,
                     color="#4a4a4a", alpha=0.35, edgecolor="none", zorder=2)
         means.append(vals.mean())
-    axB.plot(xpos, means, "-o", color=C_REAL, lw=1.8, ms=6, zorder=3)
-    axB.set_xticks(xpos); axB.set_xticklabels(["1", "2", "4", "8", "∞"], fontsize=10)
-    axB.set_xlabel("maximum lives")
-    axB.set_ylabel("post-withdrawal mutual cooperation")
-    axB.set_ylim(-0.05, 1.05)
+    axB.plot(xpos, means, "-o", color=C_REAL, lw=2.4, ms=8, zorder=3)
+    axB.set_xticks(xpos)
+    axB.set_xticklabels(["1\n(real)", "2", "4", "8", "∞\n(reset)"], fontsize=11)
+    axB.set_xlabel("maximum lives", fontsize=12)
+    axB.set_ylabel("post-withdrawal\nmutual cooperation", fontsize=11.5)
+    axB.set_ylim(-0.05, 1.05); axB.tick_params(axis="y", labelsize=10.5)
     rho = grad["spearman_lives_vs_coop"]
     rho_p = grad.get("spearman_p")
     ann = f"tie-aware Spearman $\\rho$ = {rho:.2f}"
     if rho_p is not None:
-        ann += f"\n(blocked perm p {'< 0.0001' if rho_p <= 1e-4 else f'= {rho_p:.2g}'})"
-    axB.set_title("(b) Lives-gradient dose-response", fontsize=10.5)
-    axB.annotate(ann, xy=(0.5, 0.88), xycoords="axes fraction", ha="center",
-                 fontsize=8.6, color="#333")
+        ann += f"\nblocked perm p {'< 0.0001' if rho_p <= 1e-4 else f'= {rho_p:.2g}'}"
+    axB.set_title("(b) Lives-gradient dose-response", fontsize=13)
+    axB.annotate(ann, xy=(0.97, 0.96), xycoords="axes fraction", ha="right", va="top",
+                 fontsize=10, color="#222")
 
-    # --- Panel C: payoff sweep heatmap (real - resettable) ---
+    # ---- Panel (c): payoff-sweep heatmap (real - resettable) ----
     grid = sweep["grid"]
     Ts = sorted({c["T"] for c in grid})
     Ds = sorted({c["defect_net"] for c in grid})  # "-0.15","-0.45"
     M = np.full((len(Ds), len(Ts)), np.nan)
     for c in grid:
         M[Ds.index(c["defect_net"]), Ts.index(c["T"])] = c["diff"]
-    im = axC.imshow(M, cmap="YlGnBu", vmin=0, vmax=max(0.7, np.nanmax(M)), aspect="auto")
-    axC.set_xticks(range(len(Ts))); axC.set_xticklabels([f"{t:g}" for t in Ts])
-    axC.set_yticks(range(len(Ds))); axC.set_yticklabels(Ds)
-    axC.set_xlabel("temptation payoff $T$")
-    axC.set_ylabel("mutual-defection net energy")
+    vmax = max(0.7, float(np.nanmax(M)))
+    cmap = plt.cm.YlGnBu
+    im = axC.imshow(M, cmap=cmap, vmin=0, vmax=vmax, aspect="auto")
+    axC.set_xticks(range(len(Ts))); axC.set_xticklabels([f"{t:g}" for t in Ts], fontsize=10.5)
+    axC.set_yticks(range(len(Ds))); axC.set_yticklabels([f"{d}" for d in Ds], fontsize=10.5)
+    axC.set_xlabel("temptation payoff $T$", fontsize=11.5)
+    axC.set_ylabel("mutual-defection\nnet energy", fontsize=10.5)
     for i in range(len(Ds)):
         for j in range(len(Ts)):
-            axC.text(j, i, f"{M[i, j]:+.2f}", ha="center", va="center",
-                     fontsize=9.5, color="#111")
+            axC.text(j, i, f"{M[i, j]:+.2f}", ha="center", va="center", fontsize=12.5,
+                     color=_cell_text_color(M[i, j], 0, vmax, cmap))
     n_pos = int(np.sum(M > 0))
     axC.set_title(f"(c) Payoff sweep: real − resettable\n"
-                  f"real > resettable in {n_pos}/{M.size} cells", fontsize=10.5)
-    cbar = fig.colorbar(im, ax=axC, fraction=0.046, pad=0.04)
-    cbar.set_label("cooperation difference", fontsize=8.5)
+                  f"real > resettable in {n_pos}/{M.size} cells", fontsize=12)
+    cbar = fig.colorbar(im, ax=axC, fraction=0.05, pad=0.05)
+    cbar.set_label("cooperation difference\n(real − resettable)", fontsize=9.5)
+    cbar.ax.tick_params(labelsize=9)
 
-    for a in axes:
-        a.spines[["top", "right"]].set_visible(True)
-    axA.margins(x=0.15)
-    fig.text(0.5, -0.03,
-             "Panel (a): points are per-seed values; markers show the mean with a 95% "
-             "bootstrap CI; the main test is a two-sided paired sign-flip permutation test "
-             "on the per-seed real − resettable differences. "
-             "Panel (b): points per seed, line through means. "
-             "Panel (c): cell = mean(real) − mean(resettable) effect size; real exceeds "
-             "resettable in every cell.",
-             ha="center", fontsize=8, color="#444")
-    fig.tight_layout()
     save(fig, "figure3_results")
 
 
 def figure4_probe():
-    """Common-state frozen-policy probe. Built only from common_state_probe.json."""
+    """Common-state frozen-policy probe. Built only from common_state_probe.json.
+    Two-row layout: (a) full-width paired end-of-withdrawal comparison, then
+    (b) per-seed differences and (c) training-vs-withdrawal checkpoints."""
     probe = load("common_state_probe.json")
     cs = probe["raw"]["common_state"]
     summ = probe["summary"]
@@ -290,60 +310,76 @@ def figure4_probe():
     def vals(ck, reg):
         return np.array([cs[ck][reg][str(s)]["pcc"] for s in seeds])
 
-    fig, (axA, axB, axC) = plt.subplots(1, 3, figsize=(13.0, 4.4))
+    fig = plt.figure(figsize=(7.3, 6.5))
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.05], hspace=0.44, wspace=0.30,
+                          left=0.115, right=0.955, top=0.945, bottom=0.10)
+    axA = fig.add_subplot(gs[0, :])
+    axB = fig.add_subplot(gs[1, 0])
+    axC = fig.add_subplot(gs[1, 1])
 
-    # --- Panel A: end-of-withdrawal paired real vs resettable ---
+    # ---- Panel (a): end-of-withdrawal, paired by seed (full width) ----
     r_eow, re_eow = vals("end_of_withdrawal", "real"), vals("end_of_withdrawal", "resettable")
+    xr, xs = 0.0, 1.0
     for a, b in zip(r_eow, re_eow):
-        axA.plot([0, 1], [a, b], color="#999", lw=0.7, alpha=0.45, zorder=1)
-    axA.scatter([0] * len(r_eow), r_eow, s=22, color=C_REAL, zorder=3, label="real-stake")
-    axA.scatter([1] * len(re_eow), re_eow, s=22, color=C_RESET, zorder=3, label="resettable")
-    axA.plot([-0.15, 0.15], [r_eow.mean()] * 2, color=C_REAL, lw=2.5, zorder=4)
-    axA.plot([0.85, 1.15], [re_eow.mean()] * 2, color=C_RESET, lw=2.5, zorder=4)
-    axA.set_xticks([0, 1]); axA.set_xticklabels(["real-stake", "resettable"])
-    axA.set_xlim(-0.4, 1.4); axA.set_ylim(-0.05, 1.0)
-    axA.set_ylabel("common-state $P(CC\\mid s)$")
-    axA.set_title("(a) End-of-withdrawal, paired by seed", fontsize=10.5)
+        axA.plot([xr, xs], [a, b], color="#aaa", lw=0.9, alpha=0.40, zorder=1)
+    axA.scatter([xr] * len(r_eow), r_eow, s=38, color=C_REAL, zorder=3,
+                edgecolor="white", linewidth=0.4)
+    axA.scatter([xs] * len(re_eow), re_eow, s=38, color=C_RESET, zorder=3,
+                edgecolor="white", linewidth=0.4)
+    mr, mre = r_eow.mean(), re_eow.mean()
+    axA.plot([xr - 0.22, xr + 0.22], [mr, mr], color=C_REAL, lw=3.4, zorder=4,
+             solid_capstyle="round")
+    axA.plot([xs - 0.22, xs + 0.22], [mre, mre], color=C_RESET, lw=3.4, zorder=4,
+             solid_capstyle="round")
+    axA.text(xr - 0.30, mr, f"mean = {mr:.3f}", ha="right", va="center",
+             fontsize=11, weight="bold", color=C_REAL)
+    axA.text(xs + 0.30, mre, f"mean = {mre:.3f}", ha="left", va="center",
+             fontsize=11, weight="bold", color="#b3402f")
+    axA.set_xticks([xr, xs]); axA.set_xticklabels(["real-stake", "resettable"], fontsize=11.5)
+    axA.set_xlim(-1.0, 2.0); axA.set_ylim(-0.05, 1.02)
+    axA.set_ylabel("common-state $P(CC\\mid s)$", fontsize=12)
+    axA.tick_params(axis="y", labelsize=10.5)
+    axA.set_title("(a) End-of-withdrawal, paired by seed", fontsize=13)
 
-    # --- Panel B: per-seed real - resettable difference + bootstrap CI ---
+    # ---- Panel (b): per-seed real - resettable difference + 95% CI ----
     d = np.array(summ["end_of_withdrawal"]["real_minus_resettable"]["per_seed_diff"])
     md = summ["end_of_withdrawal"]["real_minus_resettable"]["mean_diff"]
     lo, hi = summ["end_of_withdrawal"]["real_minus_resettable"]["boot95"]
     axB.axhline(0, color="#888", lw=1, ls="--")
-    axB.scatter(_jitter(len(d), 0.12, 7), d, s=22, color="#555", alpha=0.6, zorder=2)
-    axB.errorbar(0, md, yerr=[[md - lo], [hi - md]], fmt="o", color=C_REAL, ms=9,
-                 capsize=6, lw=2, zorder=3, markeredgecolor="white")
-    axB.set_xticks([]); axB.set_xlim(-0.6, 0.6); axB.set_ylim(-0.2, 1.0)
-    axB.set_ylabel("real $-$ resettable  $P(CC\\mid s)$")
+    axB.scatter(_jitter(len(d), 0.13, 7), d, s=28, color="#555", alpha=0.6, zorder=2)
+    axB.errorbar(0, md, yerr=[[md - lo], [hi - md]], fmt="o", color=C_REAL, ms=11,
+                 capsize=7, lw=2.4, zorder=3, markeredgecolor="white")
+    axB.set_xticks([0]); axB.set_xticklabels(["real − resettable"], fontsize=11)
+    axB.set_xlim(-0.6, 0.6); axB.set_ylim(-0.2, 1.22)
+    axB.set_ylabel("difference in $P(CC\\mid s)$", fontsize=11.5)
+    axB.tick_params(axis="y", labelsize=10.5)
     pp = summ["end_of_withdrawal"]["real_minus_resettable"]["paired_signflip_p"]
     ptxt = "< 0.0001" if pp <= 1e-4 else f"= {pp:.2g}"
-    axB.set_title("(b) Per-seed difference (mean, 95% CI)", fontsize=10.5)
-    axB.annotate(f"mean {md:+.2f}\n95% CI [{lo:.2f}, {hi:.2f}]\npaired p {ptxt}",
-                 xy=(0.62, 0.86), xycoords="axes fraction", ha="right", fontsize=8.5, color="#333")
+    axB.set_title("(b) Per-seed difference", fontsize=13)
+    axB.annotate(f"mean {md:+.3f}\n95% CI [{lo:.2f}, {hi:.2f}]\npaired p {ptxt}",
+                 xy=(0.97, 0.99), xycoords="axes fraction", ha="right", va="top",
+                 fontsize=10.5, color="#222")
 
-    # --- Panel C: end-of-training vs end-of-withdrawal ---
-    for reg, col, faded in [("real", C_REAL, False), ("resettable", C_RESET, False),
-                            ("simulated", C_SIM, True)]:
+    # ---- Panel (c): end-of-training vs end-of-withdrawal ----
+    for reg, col, faded, lab in [("real", C_REAL, False, "real"),
+                                 ("resettable", C_RESET, False, "resettable"),
+                                 ("simulated", C_SIM, True, "simulated (exploratory)")]:
         eot, eow = vals("end_of_training", reg), vals("end_of_withdrawal", reg)
-        alpha = 0.15 if faded else 0.3
+        alpha = 0.12 if faded else 0.28
         for a, b in zip(eot, eow):
-            axC.plot([0, 1], [a, b], color=col, lw=0.6, alpha=alpha, zorder=1)
-        lw = 1.6 if faded else 2.6
-        axC.plot([0, 1], [eot.mean(), eow.mean()], "-o", color=col, lw=lw, ms=6,
-                 alpha=0.6 if faded else 1.0, zorder=3,
-                 label=("simulated (exploratory)" if faded else reg))
-    axC.set_xticks([0, 1]); axC.set_xticklabels(["end of\ntraining", "end of\nwithdrawal"])
+            axC.plot([0, 1], [a, b], color=col, lw=0.7, alpha=alpha, zorder=1)
+        axC.plot([0, 1], [eot.mean(), eow.mean()], "-o", color=col,
+                 lw=1.6 if faded else 2.8, ms=6 if faded else 7,
+                 alpha=0.6 if faded else 1.0, zorder=3, label=lab)
+    axC.set_xticks([0, 1]); axC.set_xticklabels(["end of\ntraining", "end of\nwithdrawal"], fontsize=11)
     axC.set_xlim(-0.3, 1.3); axC.set_ylim(-0.05, 1.0)
-    axC.set_ylabel("common-state $P(CC\\mid s)$")
-    axC.set_title("(c) Training vs withdrawal checkpoint", fontsize=10.5)
-    axC.legend(fontsize=8, loc="upper right", frameon=False)
+    axC.set_ylabel("common-state $P(CC\\mid s)$", fontsize=11.5)
+    axC.tick_params(axis="y", labelsize=10.5)
+    axC.set_title("(c) Training vs withdrawal", fontsize=13)
+    axC.legend(fontsize=10, loc="upper right", frameon=False)
 
-    fig.text(0.5, -0.02,
-             f"Frozen policies scored on one global bank of {probe['bank']['bank_size']} "
-             "mortality-free paired observations in the real-resettable common support; "
-             "per-seed points, no density smoothing. Simulated-stake is a faded secondary reference.",
-             ha="center", fontsize=8, color="#444")
-    fig.tight_layout()
+    fig.text(0.5, 0.012, f"Global common-state bank: n = {probe['bank']['bank_size']:,} observations",
+             ha="center", fontsize=9.5, color="#555")
     save(fig, "figure4_common_state_probe")
 
 
