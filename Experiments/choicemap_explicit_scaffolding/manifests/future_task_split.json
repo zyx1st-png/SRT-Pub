@@ -1,0 +1,28 @@
+{
+  "development_templates": [
+    "future_0",
+    "future_1",
+    "future_2",
+    "future_3"
+  ],
+  "held_out_templates": [
+    "future_4",
+    "future_5",
+    "future_6",
+    "future_7"
+  ],
+  "held_out_regime_combinations": [
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      1
+    ]
+  ]
+}

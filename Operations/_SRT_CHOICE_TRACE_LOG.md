@@ -184,3 +184,17 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **tension_count**: 6（见 trace §9）
 - **unresolved_tensions**: [T3-04 选择生态生成性 vs 主体不可工具化, T3-06 重启阈值与测量可能被原决策结构捕获]
 - **closure_pipeline_done**: true（本阶段张力审计、canonical/术语检查、忠实度复核、路由与暂停选项冻结均完成；AH 层待下一会话继续）
+
+### CT-20260711-02（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: live
+- **date**: 2026-07-11
+- **trace_file**: `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_EMERGENCE_AND_CONVERGENCE_TRACE_2026-07-11.md`
+- **one_line**: 第四轮先确认关切—选择递归、路径生成器、认识重开与历史授权四条 pending；随后冻结“个体／局部／全局收敛—程序性自愿／强迫” sibling，并回根推进“差异如何进入关切”：后果回流前提、吸收失败触发、原初承重位递归共生及不可外部化后果四维。
+- **breakout_count**: 4
+- **breakout_events**: [CT4-02, CT4-03, CT4-07, CT4-08]
+- **pending_confirmations**: [AP4-01, AP4-02, AP4-03, AP4-04, AP4-05, AP4-06, AP4-07, AP4-08]
+- **tension_count**: 9
+- **unresolved_tensions**: [T4-01, T4-02, T4-04, T4-05, T4-07, T4-08, T4-09]
+- **closure_pipeline_done**: true（逐轮记录、提案隔离、张力表、根问题台账、分支树、回返与垂直漂移审计、canonical/术语检查、INDEX 与当日 memory 留痕均完成；Q 层冻结待恢复）

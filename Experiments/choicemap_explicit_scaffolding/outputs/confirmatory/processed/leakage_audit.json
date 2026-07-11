@@ -1,0 +1,16 @@
+{
+  "agent_view_fields": [
+    "family",
+    "step",
+    "max_steps",
+    "resources",
+    "closed_nodes",
+    "observations",
+    "legal_actions",
+    "current_task_complete"
+  ],
+  "future_task_exposed_pre_turn": false,
+  "hidden_regime_exposed": false,
+  "oracle_exposed": false,
+  "pass": true
+}
