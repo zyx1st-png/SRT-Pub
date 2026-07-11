@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs,longtable,array,calc}
+\usepackage{adjustbox}
 \usepackage{newunicodechar}
 \newunicodechar{ρ}{\ensuremath{\rho}}
 \newunicodechar{−}{\ensuremath{-}}
@@ -34,6 +35,20 @@
 \providecommand{\real}[1]{#1}
 \providecommand{\pandocbounded}[1]{#1}
 \usepackage[colorlinks,bookmarksopen,bookmarksnumbered,citecolor=red,urlcolor=red]{hyperref}
+
+% Float placement: this paper has several full-width (double-column) figure* and
+% table* floats. Let them share text-page tops and raise the float-page fill
+% threshold so single floats are not banished to near-empty float pages.
+\setcounter{topnumber}{3}
+\setcounter{dbltopnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\dbltopfraction}{0.92}
+\renewcommand{\bottomfraction}{0.5}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.82}
+\renewcommand{\dblfloatpagefraction}{0.82}
 
 \graphicspath{{costly_selective_closure_supplement/figures/}}
 
@@ -459,9 +474,11 @@ The controlled experiment of Section 4.5 uses a compact, pure-NumPy implementati
 
 Two agents share a symmetric survival environment with an episode horizon of \(T = 50\) steps. Each agent holds an energy scalar (initial \(E_0 = 6\), cap \(E_{\max} = 10\)), and a fixed metabolic cost of 1.0 is deducted every step. Agents choose among three discrete actions --- cooperate (C), solo (S), rest (R). Immediate reward and energy gain are given by the following matrix, indexed by the agent's own action (rows) and its partner's action (columns), as reward / energy-gain:
 
-\begin{table*}[t]
+\begin{table}[!ht]
 \centering
 \caption{Immediate reward and energy gain by joint action.}\label{tab:reward-energy}
+\small
+\begin{adjustbox}{max width=\columnwidth}
 \begin{tabular}{@{}llll@{}}
 \toprule
 own ~partner & C & S & R \\
@@ -471,7 +488,8 @@ Solo & 1.4 / +1.2 & 0.6 / +0.7 & 0.9 / +1.0 \\
 Rest & 0.25 / +0.5 & 0.25 / +0.5 & 0.25 / +0.5 \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\end{adjustbox}
+\end{table}
 
 Net energy per step is the gain minus the metabolic cost of 1.0, so only mutual cooperation (+1.0 net) thrives while mutual defection (-0.3 net) slowly starves. The immediate-reward ordering is a Prisoner's Dilemma (temptation 1.4 \textgreater{} reward 1.0 \textgreater{} punishment 0.6 \textgreater{} sucker 0.0). On energy depletion a death event fires with a matched penalty of 2.0 in all regimes; the regimes differ only in what follows: real-stake removes the agent and ends the run, resettable restores energy to \(E_0\) and continues, and simulated-stake resets as well but adds a further represented-danger reward penalty of 1.5 and a mortality flag in the observation. A mutual-cooperation bonus of 1.0 is added during training only.
 
@@ -511,9 +529,11 @@ The rollout cooperation rate is computed over steps in which both agents are ali
 
 \emph{Statistic.} For each paired state, expected mutual cooperation is \(P(CC \mid s) = P_1(C \mid s_1)\, P_2(C \mid s_2)\), the product of the two frozen softmax cooperation probabilities; each regime's diagnostic is the mean over the bank. Two checkpoints are reported: end-of-training (episode 1000, before withdrawal) and end-of-withdrawal (episode 1300). Uncertainty on the paired real − resettable difference uses a percentile bootstrap (10,000 resamples) and a two-sided paired sign-flip permutation test (20,000 resamples). The probe was run under Python 3.14 / NumPy 2.5.1, and the retrained rollout anchors reproduced the committed values (real 0.548, resettable 0.037, simulated 0.073).
 
-\begin{table*}[t]
+\begin{table}[!ht]
 \centering
 \caption{Common-state frozen-policy probe results.}\label{tab:common-state-probe}
+\small
+\begin{adjustbox}{max width=\columnwidth}
 \begin{tabular}{@{}llrrr@{}}
 \toprule
 checkpoint & regime & mean & median & IQR \\
@@ -526,7 +546,8 @@ end-of-withdrawal & resettable & 0.030 & 0.000 & {[}0.000, 0.001{]} \\
 end-of-withdrawal & simulated & 0.053 & 0.000 & {[}0.000, 0.001{]} \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\end{adjustbox}
+\end{table}
 
 The paired real − resettable difference is +0.503 (95\% CI {[}0.385, 0.612{]}, \(p < 0.0001\)) at the end of training and +0.454 (95\% CI {[}0.346, 0.557{]}, \(p < 0.0001\)) at the end of withdrawal (Figure 4). Real-stake seeds show basin-like heterogeneity: a subset sit near zero while most sit high (end-of-withdrawal median 0.618, with 60\% of seeds above 0.5), which we describe as apparent clustering rather than formally bimodal. On identical states, the frozen policies differ substantially, which the unequal-length rollout window cannot by itself explain.
 

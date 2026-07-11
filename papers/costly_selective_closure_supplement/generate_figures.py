@@ -158,33 +158,33 @@ def figure2_design():
     real-vs-resettable contrast is the visual centre; simulated-stake is a
     de-emphasised auxiliary condition derived from resettable. No calibrated
     numbers; the long matched-comparison sentence lives in the paper caption."""
-    fig, ax = plt.subplots(figsize=(7.2, 5.6))
-    ax.set_xlim(0, 10); ax.set_ylim(0, 7.8); ax.axis("off")
+    fig, ax = plt.subplots(figsize=(7.2, 4.7))
+    ax.set_xlim(0, 10); ax.set_ylim(0, 6.55); ax.axis("off")
 
     # shared setup (top, short)
-    _flowbox(ax, 5.0, 7.02, 7.7, 1.12, "Shared setup",
+    _flowbox(ax, 5.0, 5.95, 7.7, 1.02, "Shared setup",
              "same observations, reward, energy dynamics,\nnetwork, and seeds",
              fc="#eef2f7", title_fs=12.5, sub_fs=10.5)
 
     # clean causal comparison: two equal, side-by-side main boxes inside a bracket
-    ax.add_patch(FancyBboxPatch((0.5, 4.0), 9.0, 2.35,
+    ax.add_patch(FancyBboxPatch((0.5, 3.35), 9.0, 2.25,
                                 boxstyle="round,pad=0.02,rounding_size=0.07",
                                 linewidth=1.2, edgecolor="#555", facecolor="none",
                                 linestyle=(0, (5, 3)), zorder=1))
-    _flowbox(ax, 2.75, 5.20, 3.7, 1.45, "Real-stake", "depletion terminates\nthe token run",
+    _flowbox(ax, 2.75, 4.55, 3.7, 1.4, "Real-stake", "depletion terminates\nthe token run",
              fc="#e7eff6", ec=C_REAL, title_fs=13, sub_fs=11, title_color=C_REAL)
-    _flowbox(ax, 7.25, 5.20, 3.7, 1.45, "Resettable", "depletion → cheap\nreset to $E_0$",
+    _flowbox(ax, 7.25, 4.55, 3.7, 1.4, "Resettable", "depletion → cheap\nreset to $E_0$",
              fc="#fceeeb", ec=C_RESET, title_fs=13, sub_fs=11, title_color="#b3402f")
-    _arrow(ax, (5.0, 6.46), (2.75, 5.95), color="#666")
-    _arrow(ax, (5.0, 6.46), (7.25, 5.95), color="#666")
-    ax.text(5.0, 4.22, "Clean causal comparison:  real-stake  vs  resettable",
+    _arrow(ax, (5.0, 5.44), (2.75, 5.28), color="#666")
+    _arrow(ax, (5.0, 5.44), (7.25, 5.28), color="#666")
+    ax.text(5.0, 3.58, "Clean causal comparison:  real-stake  vs  resettable",
             ha="center", va="center", fontsize=11.5, weight="bold", color="#333", zorder=3)
 
     # simulated-stake: secondary, derived from resettable
-    _arrow(ax, (5.0, 4.0), (5.0, 2.47), dashed=True, color="#999")
-    ax.text(5.6, 3.25, "adds two changes\nto resettable", ha="left", va="center",
+    _arrow(ax, (5.0, 3.35), (5.0, 2.13), dashed=True, color="#999")
+    ax.text(5.6, 2.72, "adds two changes\nto resettable", ha="left", va="center",
             fontsize=10, style="italic", color="#777")
-    _flowbox(ax, 5.0, 1.60, 7.4, 1.70, "Simulated-stake (auxiliary)",
+    _flowbox(ax, 5.0, 1.28, 7.4, 1.6, "Simulated-stake (auxiliary)",
              "resettable + two representational changes:\n"
              "+ mortality cue      + danger reward penalty 1.5",
              fc="#f0f0f0", ec="#8a8a8a", dashed=True, title_fs=11, sub_fs=10.5,
@@ -213,9 +213,9 @@ def figure3_results():
     grad = load("lives_gradient_results.json")
     sweep = load("payoff_sweep_results.json")
 
-    fig = plt.figure(figsize=(7.3, 6.5))
-    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.15], hspace=0.48, wspace=0.32,
-                          left=0.115, right=0.955, top=0.945, bottom=0.085)
+    fig = plt.figure(figsize=(7.3, 5.95))
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.15], hspace=0.42, wspace=0.32,
+                          left=0.115, right=0.955, top=0.95, bottom=0.092)
     axA = fig.add_subplot(gs[0, :])
     axB = fig.add_subplot(gs[1, 0])
     axC = fig.add_subplot(gs[1, 1])
@@ -310,9 +310,9 @@ def figure4_probe():
     def vals(ck, reg):
         return np.array([cs[ck][reg][str(s)]["pcc"] for s in seeds])
 
-    fig = plt.figure(figsize=(7.3, 6.5))
-    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.05], hspace=0.44, wspace=0.30,
-                          left=0.115, right=0.955, top=0.945, bottom=0.10)
+    fig = plt.figure(figsize=(7.3, 5.95))
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.0, 1.05], hspace=0.40, wspace=0.30,
+                          left=0.115, right=0.955, top=0.95, bottom=0.105)
     axA = fig.add_subplot(gs[0, :])
     axB = fig.add_subplot(gs[1, 0])
     axC = fig.add_subplot(gs[1, 1])
