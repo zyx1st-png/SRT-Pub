@@ -25,7 +25,10 @@ ARTIFACT_PREFIXES = (
     "video/",
 )
 
-MARKDOWN_SUFFIXES = {".md", ".markdown", ".txt"}
+# Frontmatter and Markdown-link governance applies only to Markdown documents.
+# Plain-text files such as requirements.txt are operational inputs and must not
+# be forced to carry YAML frontmatter.
+MARKDOWN_SUFFIXES = {".md", ".markdown"}
 
 
 @dataclass(frozen=True)

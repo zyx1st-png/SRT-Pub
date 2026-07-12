@@ -1,3 +1,13 @@
+---
+id: SRT-EXP-SELECTIVE-RESYNCHRONIZATION-MVP-README
+type: experiment_readme
+status: locked_mvp
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+---
+
 # Selective Resynchronization Fashion-MNIST MVP
 
 This directory implements the locked `A -> B -> C` experiment specified in

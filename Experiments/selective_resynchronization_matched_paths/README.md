@@ -1,3 +1,13 @@
+---
+id: SRT-EXP-SELECTIVE-RESYNCHRONIZATION-MATCHED-PATHS-README
+type: experiment_readme
+status: feasibility_closed
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+---
+
 # Matched-Endpoint, Multi-Future Diagnostic
 
 This experiment tests whether different B-stage adaptation paths retain an

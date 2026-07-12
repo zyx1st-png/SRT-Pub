@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "updated": "2026-07-12",
+  "status": "active",
+  "role": "machine-readable routing guard for current book construction",
+  "construction_entry": "01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md",
+  "active_root": "01_Source_Intuition/BOOK/Drafts_26Q",
+  "structure_map": "01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md",
+  "content_architecture_reference": "01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md",
+  "version_log": "01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md",
+  "archive_roots": [
+    "01_Source_Intuition/BOOK/Archive_52Chapter",
+    "01_Source_Intuition/BOOK/Archive_Meta"
+  ],
+  "hard_rules": {
+    "load_current_status_first": true,
+    "load_active_primary_before_archive": true,
+    "archive_may_seed_current_draft": false,
+    "archive_use_requires_historical_label": true,
+    "archive_use_mode": "comparison_or_provenance_only",
+    "canonical_anchors_are_accuracy_guardrails_not_book_prose_templates": true
+  },
+  "concept_routes": [
+    {
+      "keywords": ["选材", "选项生成", "选择之前"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q04b_选材.md",
+      "secondary": ["01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md"]
+    },
+    {
+      "keywords": ["选择", "排开", "定形", "写入"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md",
+      "secondary": ["01_Source_Intuition/BOOK/Drafts_26Q/Q04b_选材.md"]
+    },
+    {
+      "keywords": ["排除", "阴影", "张力", "后续摩擦", "侧抑制"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q06_排除与阴影.md",
+      "secondary": ["01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md"]
+    },
+    {
+      "keywords": ["锚定", "显现稳定"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q07_锚定.md",
+      "secondary": []
+    },
+    {
+      "keywords": ["不可逆", "撤回", "路径写入"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q08_不可逆性.md",
+      "secondary": []
+    },
+    {
+      "keywords": ["现实厚度", "沉积"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q09_现实厚度.md",
+      "secondary": ["01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md"]
+    },
+    {
+      "keywords": ["秩序", "背景化", "默认地形", "选择代理层", "跨尺度生成"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md",
+      "secondary": [
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md"
+      ]
+    },
+    {
+      "keywords": ["脚手架", "牢笼", "支撑", "替代", "代理", "能力萎缩"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md",
+      "secondary": ["01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md"]
+    },
+    {
+      "keywords": ["共同体", "集体", "代理结构", "委托", "后果回流"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md",
+      "secondary": ["01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md"]
+    },
+    {
+      "keywords": ["生成", "涌现", "回到生成"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md",
+      "secondary": [
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md"
+      ]
+    }
+  ]
+}

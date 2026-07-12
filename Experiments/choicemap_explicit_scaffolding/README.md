@@ -1,3 +1,13 @@
+---
+id: SRT-EXP-CHOICEMAP-EXPLICIT-SCAFFOLDING-README
+type: experiment_readme
+status: active_locked
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+---
+
 # Explicit ChoiceMap Scaffolding Experiment
 
 This directory is a self-contained, falsifiable P4/lab experiment. It tests an explicit
@@ -25,4 +35,3 @@ The existing human-facing ChoiceMap prototype delegates convergence to the human
 experiment is a different construct: an autonomous, explicit engineering scaffold with
 candidate records, probes, reversibility metadata, and a commitment gate. Neither one
 silently redefines the other.
-

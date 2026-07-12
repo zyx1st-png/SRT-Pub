@@ -45,6 +45,22 @@ Before editing theory files, also read:
 1. `Governance/SRT_CANONICAL_FREEZE.md`
 2. `Governance/SRT_EDIT_PROTOCOL.md`
 
+## Book-Writing Hard Guard
+
+Any task that reads, revises, continues, audits, or writes back to 《从存在到秩序》 must follow this order before keyword search results are treated as source text:
+
+1. Read `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`.
+2. Read `01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`.
+3. Load the manifest's active primary file under `01_Source_Intuition/BOOK/Drafts_26Q/`.
+4. Only after the active primary is loaded may `Archive_52Chapter/` or `Archive_Meta/` be opened for historical comparison.
+
+Hard prohibitions:
+
+- Do not use a file under `Archive_52Chapter/` or `Archive_Meta/` as the first or sole source for current book status, current chapter wording, or a current draft patch.
+- Do not infer currentness from keyword density, a larger version suffix, an old chapter number, or search rank.
+- When archived material is used, label it explicitly as historical and state the current active file it is being compared with.
+- Do not copy archived prose into the current manuscript without re-deriving it against the current chapter, current five-act architecture, and current terminology rules.
+
 ## SRT Trigger Words
 
 When the user sends the following trigger words, use the current `SRT/` structure rather than any retired `SRT_openclaw/` paths:
@@ -88,6 +104,8 @@ When the user sends the following trigger words, use the current `SRT/` structur
 - Pipeline 1 主流程：`Operations/_SRT_MATERIAL_PIPELINE.md`
 - Pipeline 1 正式台账：`Operations/_SRT_MATERIAL_LOG.md`
 - 对话留痕：`Operations/_SRT_DIALOGUE_LOG.md`
+- 书稿当前状态入口：`01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
+- 书稿机器路由：`01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`
 
 ## Migration Note
 
