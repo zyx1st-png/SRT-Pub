@@ -1,0 +1,106 @@
+name: One-off PR 660 finalizer
+
+on:
+  push:
+    branches:
+      - claude/friendly-robinson-1d76ab
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/friendly-robinson-1d76ab
+          fetch-depth: 0
+
+      - name: Apply reviewed text corrections
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+              Path('01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md'): [
+                  (
+                      '## 2026-07-12 PR #660 跨尺度生成回写（`Q10` v28、`Q23` v24；作者复审后修订）',
+                      '## 2026-07-12 PR #660 跨尺度生成回写（`Q10` v28、`Q23` v24；经 PR #660 两轮评审修订）',
+                  ),
+                  (
+                      '**授权状态**：“收缩执行·用既有语汇 + 六候选术语不进正文”为**会话级实施决定，待作者本人署名确认**（PR #660 两轮评审反馈由 AI reviewer 经 OWNER 账户提交，非作者署名裁决）。',
+                      '**授权状态**：“收缩执行·用既有语汇 + 六候选术语不进正文”已由作者在 2026-07-12 当前对话中以“直接帮我调整后合并”明确授权作为本 PR 的实施与合并方案；该授权仅覆盖本轮施工和合并，**不等于 canonical 理论裁决或术语冻结**。PR #660 两轮评审反馈仍由 AI reviewer 经 OWNER 账户提交，不冒充作者署名理论意见。',
+                  ),
+              ],
+              Path('Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md'): [
+                  (
+                      '## 1. 最关键的发现：理论层已经写好了',
+                      '## 1. 构件已有锚点，但核心生成步仍是缺口',
+                  ),
+                  (
+                      '全轮唯一需要作者裁决的门，是那 6 个新造术语要不要进正文（见 §5）。',
+                      '本轮术语实施门已由作者以“调整后合并”指令确认：六个候选术语不进入正文；这只确认当前 PR 的施工选择，不构成 canonical 术语冻结（见 §5）。',
+                  ),
+              ],
+              Path('01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md'): [
+                  (
+                      '**评审反馈与实施决定（待作者确认）**',
+                      '**评审反馈与实施决定（本轮实施与合并授权已确认）**',
+                  ),
+                  (
+                      '## 3. 评审反馈与实施决定（provenance，待作者确认）',
+                      '## 3. 评审反馈与实施决定（provenance；本轮实施与合并授权已确认）',
+                  ),
+                  (
+                      '> **重要区分**：本节内容来自 **PR 评审反馈（由 AI reviewer 经 OWNER 账户提交）** 与 **会话级实施决定**，**不等于作者本人已署名的理论裁决或授权**。除非补入作者本人的原话 / decision note 及其来源，本节须按 "reviewer feedback / implementation decision pending author confirmation" 读，不得升级为作者授权或作者理论立场。全文中**唯一可署名为作者本人**的，只有第 1 节的原始直觉（作者在 2026-07-12 对话中亲自输入的三句）。',
+                      '> **重要区分**：本节的理论约束来自 **PR 评审反馈（由 AI reviewer 经 OWNER 账户提交）**，不等于作者本人署名的理论意见；但作者已在 2026-07-12 当前对话中以“直接帮我调整后合并”明确授权采用当前收缩版作为本 PR 的实施与合并方案。该授权只确认本轮施工和合并，**不升级为 canonical 理论裁决、术语冻结或对 AI 评审内容的逐条作者署名**。全文中可直接署名为作者理论直觉的，仍只有第 1 节作者亲自输入的三句。',
+                  ),
+                  (
+                      '- **实施决定（会话级，待作者确认）**：本轮四选项中选取「**收缩执行·用既有语汇**」——六个候选术语**不进正文**，仅作 bridge/operations 层候选标签；书稿用既有语汇（沉积地形 / 相互作用受内生约束 / 代理结构）承载缺口；canonical 走 H-A（不直接改定义）。此为实施层决定，仓库内**尚缺**作者本人署名的 decision note。',
+                      '- **实施决定（本轮已获合并授权）**：本轮采用「**收缩执行·用既有语汇**」——六个候选术语**不进正文**，仅作 bridge/operations 层候选标签；书稿用既有语汇（沉积地形 / 相互作用受内生约束 / 代理结构）承载缺口；canonical 走 H-A（不直接改定义）。作者于 2026-07-12 当前对话明确要求“直接帮我调整后合并”，因此该方案获得本轮施工与合并授权；该授权不等于把候选关系提升为作者署名理论或 canonical。',
+                  ),
+              ],
+              Path('01_Source_Intuition/INDEX.md'): [
+                  (
+                      'PR #660 reviewer feedback / implementation decisions (marked pending author confirmation, not author-signed).',
+                      'PR #660 reviewer feedback / implementation decisions (current PR implementation and merge authorized by the author; reviewer theory feedback remains not author-signed).',
+                  ),
+              ],
+              Path('Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md'): [
+                  (
+                      '**授权状态**：收缩执行·用既有语汇 + 六候选术语不进正文，属**会话级实施决定，待作者本人署名确认**（PR #660 评审反馈由 AI reviewer 经 OWNER 账户提交，非作者署名理论裁决）；决定与反馈 provenance 见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`。',
+                      '**授权状态**：作者已在 2026-07-12 当前对话中以“直接帮我调整后合并”明确授权本 PR 采用“收缩执行·用既有语汇 + 六候选术语不进正文”的实施方案；该授权仅覆盖本轮施工与合并，不等于 canonical 理论裁决或术语冻结。PR #660 评审反馈由 AI reviewer 经 OWNER 账户提交，仍非作者署名理论意见；决定与反馈 provenance 见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`。',
+                  ),
+              ],
+          }
+
+          for path, pairs in replacements.items():
+              text = path.read_text(encoding='utf-8')
+              for old, new in pairs:
+                  count = text.count(old)
+                  if count != 1:
+                      raise SystemExit(f'{path}: expected exactly one match, found {count}: {old[:80]!r}')
+                  text = text.replace(old, new, 1)
+              path.write_text(text, encoding='utf-8')
+
+          workflow = Path('.github/workflows/oneoff-pr660-finalize.yml')
+          workflow.unlink()
+          PY
+
+      - name: Commit final review cleanup
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md \
+            Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md \
+            01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md \
+            01_Source_Intuition/INDEX.md \
+            Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md \
+            .github/workflows/oneoff-pr660-finalize.yml
+          git diff --cached --check
+          git commit -m "Finalize PR #660 review cleanup"
+          git push origin HEAD:claude/friendly-robinson-1d76ab
