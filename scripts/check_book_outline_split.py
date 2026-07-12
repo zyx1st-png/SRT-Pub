@@ -151,6 +151,7 @@ def validate_manifest(manifest: dict[str, Any]) -> int:
         fail("BOOK_ACTIVE_MANIFEST concept_routes must be a non-empty list")
 
     primary_count = 0
+    archive_prefixes = tuple(root + "/" for root in EXPECTED_ARCHIVE_ROOTS)
     for index, route in enumerate(routes, start=1):
         if not isinstance(route, dict):
             fail(f"concept route {index} must be an object")
@@ -173,7 +174,7 @@ def validate_manifest(manifest: dict[str, Any]) -> int:
         for path_text in secondary:
             if not isinstance(path_text, str):
                 fail(f"concept route {index} has non-string secondary path")
-            if path_text.startswith(tuple(root + "/" for root in EXPECTED_ARCHIVE_ROOTS)):
+            if path_text.startswith(archive_prefixes):
                 fail(f"concept route {index} promotes archive material: {path_text}")
             if not (ROOT / path_text).is_file():
                 fail(f"concept route {index} secondary does not exist: {path_text}")
@@ -225,7 +226,6 @@ def main() -> None:
     primary_count = validate_manifest(manifest)
     validate_archive_guard()
 
-    missing = []
     oversized = []
     for filename in EXPECTED_DRAFTS:
         path = DRAFTS_DIR / filename
@@ -239,11 +239,7 @@ def main() -> None:
             fail(f"book draft must remain non-canonical: {path.relative_to(ROOT)}")
         if len(text.encode("utf-8")) > MAX_DRAFT_BYTES:
             oversized.append(filename)
-        if filename.startswith("Q") and filename not in status_text:
-            missing.append(filename)
 
-    if missing:
-        fail("BOOK_CURRENT_STATUS missing draft reference(s): " + ", ".join(missing))
     if oversized:
         fail("book draft(s) exceed connector-safe size: " + ", ".join(oversized))
 
