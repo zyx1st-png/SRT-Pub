@@ -410,6 +410,16 @@ Until these are done, Core 24 should be cited as a bridge-hardening supplement a
 
 Future Hardening Direction 3 (comparative prediction) now has a registered candidate set: `Core/SRT_Core_24_Discriminating_Predictions.md` P24-1..6 (single-construct discriminating predictions) plus **P24-7** (five cross-construct combination signatures, backflow from book Q26 §4, P4/P5 level, with a systemic reversal condition that cannot be absorbed by re-labeling). The same file now carries a **modification-discipline rule** (§0b: repair / pressure / failure classification + progressive-vs-degenerative gate + external-judge gate). Failure condition 6 (consequence-return distinctness) was added to the list above. Registration is not verification: none of these has been empirically run.
 
+### Status Note (2026-07-12, cross-scale generative-emergence writeback)
+
+The 2026-07-12 book writeback round (`Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md`, Phase-A audit `Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`) introduced three book-side exposition-candidate names: **协调性关闭 / coordinated closure**, **参与式退让 / participatory yielding**, **选择代理层 / selection proxy layer**. These are **aliases for existing theory objects, not new theory objects**:
+
+- *coordinated closure* ≈ `Core_Law/SRT_Reference_Scaling.md` **Def-Scale-PCC-1 (Primordial Constraint Closure)** plus the minimal-closure / `L_2`-grade-closure ladder recorded in §5 above.
+- *participatory yielding* ≈ the per-unit reduction of independent optionality inside shared-`L_2`-field formation (`Core_Law/SRT_Collective_Selection.md` Def-C-1); it is the local cost side of that formation, not a new mechanism.
+- *selection proxy layer* ≈ 制度/背景 作为集体 ISP 的**器官**而非主体 (`Core_Law/SRT_Collective_Selection.md` T-COLL-1 note, "制度可以是集体 ISP 的器官，但不是集体 ISP 本身") composed with `L_2` scaffold.
+
+Consequently the Phase-A canonical verdict is **H-A (no amendment)**: these names carry no new symbols, must not enter the symbol table, and must not be promoted to canonical. The cross-scale generative chain they describe is already covered by Reference Scaling (cross-scale isomorphism, PCC, anti-teleology §11), Collective Selection (collective-ISP conditions, three degeneration types), Collective Tower Hardening (`r^{(n→n+1)}` no-lock-in / no-capture), and the `Core/SRT_Core_21c_Bridge_Hypotheses.md` emergence-hygiene guardrail. The residual open item remains **Failure Condition 4 above (cross-scale loop → analogy)**; this round adds no new tension beyond it.
+
 ---
 
 ## 9. ε Normativity Scope and the Closure-Boundary (fallibilist foundation)
