@@ -5,7 +5,7 @@ status: active
 canonical: false
 scope: 01_source_intuition_book
 created: 2026-05-10
-updated: 2026-07-04
+updated: 2026-07-12
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
@@ -14,6 +14,15 @@ claim_mode: navigation
 # 《从存在到秩序》书稿版本管理日志
 
 > 本文件只管理书稿施工版本，不替代理论 canonical，不替代正文。
+
+## 2026-07-12 PR #660 跨尺度生成回写（`Q10` v28、`Q23` v24；经 PR #660 两轮评审修订）
+
+**授权与冻结**：RC1-candidate 正文冻结已于 `2026-07-02` 解除（`BOOK_CURRENT_STATUS_UNFREEZE_ADDENDUM_2026-07-02.md`），当前为生成哲学战略总装轮；本轮改动按解冻后书稿治理纪律执行（术语指南、frontmatter、版本日志同步不豁免）。来源直觉与决定 provenance 见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`。**授权状态**：“收缩执行·用既有语汇 + 六候选术语不进正文”已由作者在 2026-07-12 当前对话中以“直接帮我调整后合并”明确授权作为本 PR 的实施与合并方案；该授权仅覆盖本轮施工和合并，**不等于 canonical 理论裁决或术语冻结**。PR #660 两轮评审反馈仍由 AI reviewer 经 OWNER 账户提交，不冒充作者署名理论意见。
+
+- **`Q10` v28**（新增章末注九）：候选读法——把本章“单主体地形”推广到“多单元相互作用中局部可达性受内生约束→沉积为共同背景→承接重复选择的代理结构”。经 PR #660 评审反馈修订：去拟人化/去目的论（改“主动让路/让掉”为“局部可达性受内生约束”，细胞例改为增殖与分化可达性受组织约束）；与既有理论对象（原初约束闭包、共享 L2 场、集体 ISP 器官）的关系标为**候选映射、尚待验证，非等同**；§7 第二幕收束主链未动。
+- **`Q23` v24**（注七回链）：加一句候选跨尺度回链，把社会代理结构接回第十章生成语法。经复审修订：由“是同一台机制”降为“可沿同一条生成语法理解”的候选回链，并显式声明该回链**不直接推出社会规范**——“交出选择不等于交出回流”作为底线仍由本章后果回流论证支撑，不从一般机制下推。
+
+**理论层留痕（不改 canonical，H-A）**：`Core/SRT_OPEN_TENSIONS.md` 新增“Open Tension (2026-07-12)”——三个候选词与既有对象是候选映射非别名，并登记一条新未决项（局部 optionality↓→协调性关闭→宏观有效选择↑ 的可区分形式化）。Phase A 覆盖矩阵见 `Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`。Q06/Q19/Q28 判为已覆盖不改。
 
 ## 2026-07-10 PR #644 复审修正（`Q06` v23、`Q28` v20）
 
