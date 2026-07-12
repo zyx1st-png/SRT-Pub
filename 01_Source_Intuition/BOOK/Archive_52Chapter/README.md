@@ -6,6 +6,9 @@ canonical: false
 active_construction: false
 authority_level: historical_material
 scope: book_project
+layer: meta
+epistemic_layer: os
+claim_mode: navigation
 archived_on: 2026-05-22
 updated: 2026-07-12
 reason: book direction changed from the old 52-chapter route to the current Q00-Q28 plus topic-chapter five-act route
