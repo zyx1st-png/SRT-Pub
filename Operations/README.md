@@ -2,12 +2,13 @@
 id: SRT-OPERATIONS-README
 type: index
 tags: [Operations, Pipeline, Workflow]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-STATUS]
+updated: 2026-07-12
 ---
 
 # SRT Operations Hub
@@ -36,6 +37,12 @@ raw session / dialogue compilation / residual archives 已下沉到：
 - `Archive/raw_sessions/`
 
 ## Recommended Read Order
+
+### Active execution plans
+
+1. [`SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md`](SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md) — “还原主义生成缺口—协调性关闭—侧抑制—阴影—选择代理层”理论、书稿与仓库回写的唯一任务入口；执行 Issue #657 时先读本文件。
+
+Active execution plan 只负责施工范围、顺序、门控与验收，不定义 canonical 理论。计划完成或被新裁决取代后，应更新其 `status`，不得让多个 active plan 同时宣称同一任务的唯一入口。
 
 ### Current structure governance
 
