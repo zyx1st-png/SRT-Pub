@@ -31,7 +31,7 @@ dependency: [SRT-AGENTS, SRT-AGENT-RETRIEVAL-PROFILE, SRT-BOOK-CURRENT-STATUS, S
 ### 0.1 当前施工状态
 
 - 计划状态：`active_execution_plan`（Phase A 已完成，实体施工已按收缩版执行；见下）
-- 理论与书稿正文施工：**已按 Phase A 审计收缩版执行，并经 PR #660 两轮评审反馈修订**。Phase A 覆盖矩阵见 `Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`，结论：多数构件已在 canonical/bridge 有对应，但"局部 optionality↓→协调性关闭→宏观有效选择↑"这一生成步与既有对象（PCC / Def-C-1 / 集体 ISP 器官）是**相邻·不可等同**、待验证的候选映射，非别名；canonical 裁决 **H-A（不改，理由=候选未成熟非已覆盖）**。实体工作收缩为 source trace + Q10 章末注九 + Q23 一句回链 + OPEN_TENSIONS 一条 Open Tension + 版本治理同步。**授权状态**：收缩执行·用既有语汇 + 六候选术语不进正文，属**会话级实施决定，待作者本人署名确认**（PR #660 评审反馈由 AI reviewer 经 OWNER 账户提交，非作者署名理论裁决）；决定与反馈 provenance 见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`。
+- 理论与书稿正文施工：**已按 Phase A 审计收缩版执行，并经 PR #660 两轮评审反馈修订**。Phase A 覆盖矩阵见 `Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`，结论：多数构件已在 canonical/bridge 有对应，但"局部 optionality↓→协调性关闭→宏观有效选择↑"这一生成步与既有对象（PCC / Def-C-1 / 集体 ISP 器官）是**相邻·不可等同**、待验证的候选映射，非别名；canonical 裁决 **H-A（不改，理由=候选未成熟非已覆盖）**。实体工作收缩为 source trace + Q10 章末注九 + Q23 一句回链 + OPEN_TENSIONS 一条 Open Tension + 版本治理同步。**授权状态**：作者已在 2026-07-12 当前对话中以“直接帮我调整后合并”明确授权本 PR 采用“收缩执行·用既有语汇 + 六候选术语不进正文”的实施方案；该授权仅覆盖本轮施工与合并，不等于 canonical 理论裁决或术语冻结。PR #660 评审反馈由 AI reviewer 经 OWNER 账户提交，仍非作者署名理论意见；决定与反馈 provenance 见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`。
 - 已完成前置治理：PR #658 已合并，当前书稿优先、归档降权与 CI 守门已经生效
 - Issue #657：保留为 provenance；本文件整合其正文与后续补充
 - initial consolidation baseline：`690adaa4f36efbf8399bc2db06aa8124036f3b62`
