@@ -4,6 +4,8 @@ type: governance_closure_report
 status: implemented_in_pr
 canonical: false
 scope: book_retrieval_and_version_routing
+layer: meta
+epistemic_layer: os
 created: 2026-07-12
 claim_mode: operations_provenance
 ---
