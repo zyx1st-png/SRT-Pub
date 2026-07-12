@@ -61,14 +61,14 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 
 ## 2. 真正的缺口（窄）
 
-只有两处是既有 canonical 和书稿都没有正面承载的，且都是**书稿表达缺口，不是理论缺口**：
+有两处是既有 canonical 和书稿都没有正面承载的。**更正（PR #660 复审）**：GAP-1 不只是书稿表达缺口——既然"局部 optionality↓→协调性关闭→宏观有效选择↑"这一生成步尚未被任何 canonical 定义、且已在 `OPEN_TENSIONS` 登记为待形式化的未决张力，它同时是一个 **bridge / theory-hardening 缺口**。因此本轮不宣称"无理论缺口"；它是"理论层未定义 + 书稿层未表达"的双重缺口，本轮只补书稿层的候选表达，理论层的形式化留作 open tension。
 
 - **GAP-1（承重）：多单元→集体代理的"生成接缝"。** Q10 的"秩序=选择沉积成的地形"目前是**单主体/无人称**的：地形预处理"你"的行动。它没有写"许多低尺度单元反复相互作用 → 一部分局部可达性受内生约束 → 沉积为共同背景 → 该背景开始替后来者预处理选择 → 承接重复选择的代理结构"这一步。这一步是本轮真正新的**书稿**观念。
-  - 但注意其理论地位：它与既有理论对象是**结构相邻、尚待验证的候选映射，不是等同**。`Reference_Scaling.md` 的 PCC 是生命起源代谢闭包，不覆盖"多单元局部可达性下降→宏观自由度"这一步；`Collective_Selection.md` Def-C-1 只定义共享 L2 痕迹可见性，不含"每单元降低独立 optionality"。所以这既不是"发现全新机制"，也不是"把已有理论翻译成书稿"，而是**提出一条待验证的跨尺度回链**（源与授权见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`）。
+  - 但注意其理论地位：它与既有理论对象是**结构相邻、尚待验证的候选映射，不是等同**。`Reference_Scaling.md` 的 PCC 是生命起源代谢闭包，不覆盖"多单元局部可达性下降→宏观自由度"这一步；`Collective_Selection.md` Def-C-1 只定义共享 L2 痕迹可见性，不含"每单元降低独立 optionality"。所以这既不是"发现全新机制"，也不是"把已有理论翻译成书稿"，而是**提出一条待验证的跨尺度回链**（源与决定 provenance 见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`）。
 
 - **GAP-2（低价值、可选）：关闭≠删除 → 残余场参与跨尺度生成的显式回链。** Q06 已有"关闭≠删除"（阴影/张力/后续摩擦，单尺度，line 86–88、142、246）。把它显式接到"残余场参与更高尺度生成"是新 framing，但收益低、且容易把非人系统心理化——风险大于收益。
 
-除这两处外，计划所列其余"缺口"经核对**均已被现有文件覆盖**（见 §1 表）。
+除这两处外，计划所列其余项经核对：多数**已被现有文件覆盖**，另有三处（协调性关闭、局部 optionality 下降、代理层生成对象）为**相邻·不可等同**（见 §1 表），同属上述双重缺口，不得读成"已覆盖"。
 
 ---
 
@@ -172,7 +172,7 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 原计划：8 阶段 / ≥3 PR / Codex+Claude 交叉。基于本审计，建议收缩为：
 
 - **PR（本轮，PR #660）**：`OPEN_TENSIONS` 加 1 条 Open Tension（候选映射 + 新未决项）+ source trace `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md` + 本审计入库。不新建平行 bridge。
-- **书稿（本轮，待术语门/作者裁决后）**：
+- **书稿（本轮已改；术语门与收缩决定待作者本人确认）**：
   - Q10：新增章末注九承载 **GAP-1**（多单元→代理结构生成接缝），措辞用既有语汇、去拟人化，标 source-intuition 候选级、标"候选映射待验证"；不动 §7 主链。
   - Q23：注七加 **一句** 候选跨尺度回链，并声明不从一般机制下推社会规范。
   - 附录：line 58 涌现条内加半句（可选，本轮未做）。
@@ -202,12 +202,12 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 - [x] 外部文献核验判定：无强需求（§7）
 - [x] 作者门标出：术语（§5）
 
-**Gate A 状态：通过。** 下一步不是径直进 Phase E，而是**先过 §5 术语门**（作者裁决），再按 §6 收缩版执行。作者 2026-07-12 已裁决"收缩执行·用既有语汇"（provenance 见 source trace）；本轮实体工作相对原八阶段计划显著收缩，但三处"相邻·不可等同"生成步作为未决张力保留，不视为已解决。
+**Gate A 状态：通过。** 下一步不是径直进 Phase E，而是**先过 §5 术语门**，再按 §6 收缩版执行。本轮采用的"收缩执行·用既有语汇"是**会话级实施决定，待作者本人署名确认**（PR #660 评审反馈由 AI reviewer 经 OWNER 账户提交，不等于作者署名裁决；provenance 见 source trace §3）；本轮实体工作相对原八阶段计划显著收缩，但三处"相邻·不可等同"生成步作为未决张力保留，不视为已解决。
 
 ---
 
 ## 9. Provenance
 
 - 主计划：`Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md`
-- 来源直觉与授权：`01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`（Phase B source trace）——严格分栏记录作者原始直觉（"个体降低独立可选择性 → 集体新表现"）、LLM 推演（五步链/形式候选/术语）、作者 PR #660 复审立场（PCC/Def-C-1 不覆盖该生成步，故为候选映射非别名；去拟人化；跨尺度只允许近似结构映射）。
+- 来源直觉与决定 provenance：`01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`（Phase B source trace）——严格分栏记录：作者原始直觉（"个体降低独立可选择性 → 集体新表现"，作者亲输，可署名）、LLM 推演（五步链/形式候选/术语，不可署名作者）、PR #660 评审反馈与实施决定（AI reviewer 经 OWNER 账户；候选映射非别名、去拟人化、跨尺度只近似映射——**待作者本人署名确认**）。
 - 审计基线：`c47d6b35989f9af09daa132dc9ce64c9b21c0679`，各目标文件 blob SHA 见 §3。
