@@ -2,7 +2,7 @@
 id: SRT-AGENT-RETRIEVAL-PROFILE
 type: retrieval_profile
 tags: [AI, Agent, Retrieval, Context, Codex, ChatGPT, ClaudeCode, BookWriting]
-status: active_v1
+status: active_v2
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
@@ -10,36 +10,35 @@ canonical: false
 dependency: [SRT-AI-START, SRT-INDEX, SRT-CONTEXT-ROUTER, SRT-LONGFORM-SPLITS]
 ai_role: context_expansion_contract
 ai_priority: 2
+updated: 2026-07-12
 ---
 
 # SRT Agent Retrieval Profile
 
-> Purpose: prevent valuable non-canonical material from sleeping when this GitHub repository is used by Codex, ChatGPT, Claude Code, or another agent for theory advancement and book writing.
+> Purpose: prevent two opposite retrieval failures when this repository is used by Codex, ChatGPT, Claude Code, or another agent:
 >
-> This file does not define SRT. It tells agents how to retrieve enough context without confusing retrieval value with canonical authority.
+> 1. valuable non-canonical material being ignored merely because it lacks definition authority;
+> 2. archived or historical material being mistaken for the current construction source merely because it ranks highly in keyword search.
+>
+> This file does not define SRT. It tells agents how to retrieve enough context while keeping authority, currentness, and historical value separate.
 
 ---
 
-## 0. Core Distinction
+## 0. Three Distinct Axes
 
-SRT uses two different axes:
+SRT retrieval must distinguish three questions:
 
 | Axis | Question | Examples |
 |---|---|---|
 | Authority | Can this file define or override SRT terms? | canonical anchors, claim ladder, symbol table |
-| Retrieval value | Should this file be read for the current task? | source intuition, bridge files, split shards, book notes, evidence cards |
+| Retrieval value | Should this file be read for the current task? | source intuition, bridge files, evidence cards, book notes |
+| Currentness | Is this the active construction source for the task? | current `Drafts_26Q/` chapter vs `Archive_52Chapter/` historical draft |
 
-`canonical: false` means **not a definition authority**.
+`canonical: false` means **not a definition authority**. It does not mean low value, irrelevant, or safe to ignore.
 
-It does **not** mean:
+`status: archived` or an archive path means **not current construction authority**. It may still have high historical or comparative value, but it must not displace the active source.
 
-- low value;
-- do not retrieve;
-- irrelevant;
-- safe to ignore;
-- only historical noise.
-
-Many `canonical: false` files are high retrieval value for writing, theory development, bridge comparison, public framing, and context recovery.
+Search rank, keyword density, file version suffixes, and old chapter numbering do not establish authority or currentness.
 
 ---
 
@@ -49,14 +48,16 @@ After the minimal bootstrap, an agent must classify the task before deciding con
 
 Fresh-session read order is owned by `AGENTS.md §Session Start`. Do not maintain a competing bootstrap list here.
 
-This file's role in bootstrap is to define what happens **after** the minimal guard files are loaded:
+After the minimal guard files are loaded:
 
 1. Identify the task profile below.
-2. Load the authority anchors needed for definitions.
-3. Load the retrieval context needed for the actual work.
-4. If the route touches a long file, use `LONGFORM_SPLITS.md` and the relevant split README first.
-5. If the task is conceptual, cross-domain, or non-trivial, use `_SRT_CONTEXT_ROUTER.md`.
-6. If the task is book writing, also use the book writing profile below.
+2. Load authority anchors needed for definitions.
+3. Load current-status or active-construction routing needed for the task.
+4. Load retrieval context needed for depth.
+5. If the route touches a long file, use `LONGFORM_SPLITS.md` and the relevant split README first.
+6. If the task is conceptual, cross-domain, or non-trivial, use `_SRT_CONTEXT_ROUTER.md`.
+7. Check open tensions or claim-status boundaries before making strong claims.
+8. State whether each important file is being used as canonical, current manuscript, bridge, support, evidence, backstage context, historical material, or operations provenance.
 
 Do not answer a substantial theory, book, or domain question from only the minimal bootstrap files.
 
@@ -92,7 +93,7 @@ Read:
 4. `_SRT_CONTEXT_ROUTER.md`
 5. `_SRT_DEEP_THEORY_MAP.md`
 6. the route's Primary files
-7. the route's Secondary files when the question needs domain depth
+7. the route's Secondary files when domain depth is needed
 8. `Core/SRT_OPEN_TENSIONS.md`
 9. the relevant coverage index when the route may miss support files
 
@@ -101,37 +102,59 @@ Important:
 - Use canonical anchors to prevent overclaiming.
 - Use route, bridge, domain, and hardening files to avoid shallow answers.
 - If a support file is `canonical: false`, mark it as support rather than skipping it.
+- If a new intuition may alter canonical content, first route it through source-intuition / bridge / open-tension hardening, then apply `Governance/SRT_EDIT_PROTOCOL.md` before a C-class edit.
 
 ### 2.3 Book Writing
 
-Use when the user asks to write, revise, structure, polish, continue, audit, or style the SRT book.
+Use when the user asks to read, write, revise, structure, polish, continue, compare, audit, or write back to 《从存在到秩序》.
 
-Read:
+#### Mandatory currentness route
+
+Read in this order:
 
 1. `README.md`
 2. `START_HERE.md`
 3. `01_Source_Intuition/README.md`
 4. `01_Source_Intuition/INDEX.md`
-5. `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md` if present
-6. `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md` if present
-7. `01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` if present
-8. `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` and `01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md` when chapter sequence or problem-chain context matters
-9. the current chapter or target chapter file under `01_Source_Intuition/BOOK/Drafts_26Q/`
-10. `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md`
-11. the relevant formal anchors only as guardrails, not as prose style
-12. the relevant backstage pass notes when the task mentions consistency, style, or chapter sequence
+5. `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
+6. `01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`
+7. `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md`
+8. the current primary chapter under `01_Source_Intuition/BOOK/Drafts_26Q/` selected by the manifest
+9. `01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md` when wording or terminology matters
+10. `01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md` only for its retained content cards and six-beam references, not as the current structural view
+11. `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` and `BOOK_CHAPTER_CARDS_2026-05-22.md` when chapter-sequence or problem-chain history matters
+12. `90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md`
+13. relevant formal anchors only as accuracy guardrails, not prose style
+14. relevant backstage pass notes when the task mentions consistency, style, or chapter sequence
 
-Legacy note:
+#### Archive hard guard
 
-- Root-level `Outline_Parts/` belonged to the old 52-chapter route and has been archived under `01_Source_Intuition/BOOK/Archive_52Chapter/`; do not use it as the current construction path.
+`01_Source_Intuition/BOOK/Archive_52Chapter/` and `Archive_Meta/` are historical routes.
 
-Writing rule:
+An agent must not:
+
+- open an archived file before loading the active primary when the task concerns current book content;
+- use an archived file as the first or sole source for a current chapter answer;
+- infer currentness from search rank, terminology density, old version suffixes, or old chapter numbers;
+- copy archived prose directly into a current draft patch.
+
+An archived file may be used only after the current primary is loaded, and only for:
+
+- historical comparison;
+- provenance tracing;
+- controlled recovery of examples or formulations;
+- omission audits against the current chapter.
+
+When archive material is used, label it explicitly as historical and name the current file it is being compared with.
+
+Writing rules:
 
 - Do not turn the book into canonical documentation.
 - Use source-intuition files for force.
 - Use formal anchors for accuracy.
 - Use backstage notes for continuity.
-- Use bridge and evidence files as shadow support, not as proof-dumps.
+- Use bridge and evidence files as shadow support, not proof-dumps.
+- Current book prose must be re-derived against the current five-act architecture rather than restored wholesale from the old 52-chapter route.
 
 ### 2.4 Source-Intuition / Philosophical Prose
 
@@ -205,7 +228,7 @@ Read:
 3. `05_Public_Release/PUBLIC_INDEX.md`
 4. `05_Public_Release/PUBLIC_GUARDRAILS.md`
 5. `SRT_Public_Reading_Guide.md`
-6. `video/SRT_Video_Claim_Status.md` when scripts / talks / cinematic drafts are involved
+6. `video/SRT_Video_Claim_Status.md` when scripts, talks, or cinematic drafts are involved
 7. `01_Source_Intuition/CORE_REVERSALS.md`
 8. `Manifesto/SRT_MANIFESTO.md` when worldview tone is needed
 9. formal anchors only as guardrails
@@ -234,17 +257,21 @@ Rule:
 
 - Improve retrieval without smuggling new theory.
 - Add governance or operations records when the change affects agent behavior.
+- Prefer machine-checkable routing and CI checks over another prose-only policy layer.
 
 ---
 
-## 3. Connector-Safe Reading Rule
+## 3. Connector-Safe Reading Rules
 
-When using GitHub, ChatGPT repo connectors, Claude Code context tools, or any tool that may truncate large files:
+When using GitHub, ChatGPT repo connectors, Claude Code context tools, or any tool that may truncate or rank files:
 
 1. Check `Operations/Large_File_Audit_2026-05-09.md`.
 2. Check `LONGFORM_SPLITS.md`.
 3. Prefer the split README for long owner files.
-4. Read the owner file only when exact wording or local line context is needed.
+4. Read the owner file when exact wording or local line context is needed.
+5. Treat search as discovery, not authority resolution.
+6. For book tasks, resolve each search hit through `BOOK_ACTIVE_MANIFEST.json` before treating it as current.
+7. If a book search hit is under `Archive_52Chapter/` or `Archive_Meta/`, load the active primary first and use the hit only as historical comparison.
 
 Split shards are not independent authorities. They are high-value connector-safe copies.
 
@@ -252,20 +279,22 @@ Split shards are not independent authorities. They are high-value connector-safe
 
 ## 4. Future Frontmatter Guidance
 
-When adding or normalizing files, separate authority from retrieval:
+When adding or normalizing files, separate authority, retrieval value, and currentness:
 
 ```yaml
 canonical: false
-authority_level: bridge_support        # examples: canonical_anchor, canonical_support, domain_primary, bridge_support, split_copy, operations_record, backstage_writing_asset
+authority_level: bridge_support
 retrieval_priority:
   theory_advancement: high
   book_writing: medium
-  public_release: low
+active_construction: false
+superseded_by:
+  - path/to/current/file.md
 ```
 
 Do not use `canonical: true/false` as a retrieval filter.
 
-For existing files without these fields, infer retrieval priority from indexes, router entries, split registries, and task profile.
+For existing files without these fields, infer retrieval priority from indexes, router entries, split registries, task profile, current-status files, and active manifests.
 
 ---
 
@@ -274,12 +303,13 @@ For existing files without these fields, infer retrieval priority from indexes, 
 Do not ignore these merely because they are not canonical:
 
 - `01_Source_Intuition/` for founding force and book style.
-- `01_Source_Intuition/BOOK/` for current manuscript state.
+- `01_Source_Intuition/BOOK/Drafts_26Q/` for current manuscript prose.
+- `01_Source_Intuition/BOOK/Archive_52Chapter/` for explicitly labelled historical comparison only.
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/` for book continuity, style, and inclusion decisions.
 - `03_Bridges/` and `Bridge/` for adjacent theory translation.
 - `04_External_Convergence/` for evidence, proxy, contradiction, and pressure.
 - `LONGFORM_SPLITS.md` and split directories for connector-safe full-text retrieval.
-- `_SRT_*_COVERAGE_INDEX.md` files for files that are valuable but easy to miss.
+- `_SRT_*_COVERAGE_INDEX.md` files for valuable but easy-to-miss files.
 - `Operations/Material_Log/` for material provenance and integration history.
 - domain claim-status files for anti-overclaiming boundaries.
 
@@ -291,9 +321,11 @@ For any non-trivial request:
 
 1. Classify the task profile.
 2. Load authority anchors.
-3. Load retrieval context.
-4. Use split routes for large files.
-5. Check open tensions or claim status before making strong claims.
-6. State whether a file is being used as canonical, bridge, support, evidence, backstage writing context, or operations provenance.
+3. Load current-status / active-construction routing.
+4. Load retrieval context.
+5. Use split routes for large files.
+6. Check open tensions or claim status before making strong claims.
+7. State the role of important sources.
+8. For book work, verify that no archived file has silently displaced the current primary.
 
-This is the intended fix for the main retrieval failure mode: agents were correctly avoiding non-canonical files as definition sources, but incorrectly letting that caution suppress valuable context.
+This is the intended fix for both major retrieval failure modes: over-suppressing valuable non-canonical context and over-promoting highly searchable historical material.
