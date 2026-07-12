@@ -28,7 +28,9 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 
 ## 0. 一句话结论
 
-**本轮计划要"补足"的那条跨尺度生成链，其理论骨架已经在 canonical / Core_Law / bridge 层存在约 85%，书稿也已承载其机制。真正缺的东西很窄，而且主要是一个命名与落点的决策问题，不是新理论。** 因此计划当前的八阶段 / 三 PR 规模严重超配；建议大幅收缩（见 §6）。全轮唯一真正需要作者裁决的门，是那 6 个新造术语要不要进正文（见 §5）——它直接顶着当前 v4.1 术语简化总修纪律。
+**本轮计划要"补足"的那条跨尺度生成链，其大部分构件在 canonical / Core_Law / bridge 层已有对应锚点，书稿也已承载相关机制；但"局部独立可选择性下降 → 协调性关闭 → 宏观有效选择上升"这一生成步本身，尚未在任何 canonical 文件中被定义——它与既有对象（原初约束闭包 PCC、共享 L2 场 Def-C-1、集体 ISP 器官）是结构相邻关系，不是等同。** 因此逐项结论必须区分三态：**已有**（同一对象已在库）、**相邻·不可等同**（既有对象结构相邻但不覆盖该生成步）、**真缺口**（无对应）。总体判断：计划的八阶段 / 三 PR 规模相对实际缺口偏大，可收缩（见 §6），但**不能把"相邻"读成"已覆盖"**。全轮唯一需要作者裁决的门，是那 6 个新造术语要不要进正文（见 §5）。
+
+> **权威层级注**：本审计中 `Core/SRT_OPEN_TENSIONS.md`（`claim_mode: open`）是**未决张力登记处，不是 canonical 权威**；凡引用它，均只表示"某决定/张力已在此登记"，其 canonical 效力以它所指向的 canonical 源文件为准（如秩序增益四判据的 canonical 源是 `Core_Law/SRT_Selection_Argument.md §7b.2`，非 OPEN_TENSIONS 本身）。
 
 ---
 
@@ -36,22 +38,24 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 
 计划的 §1–§3 把"还原主义生成缺口 → 协调性关闭 → 侧抑制原型 → 残余场 → 背景化 → 选择代理层 → 向下约束 → 生成性/替代性/支配性分叉 → 高阶 ISP 附加闭包"当成本轮要新建的东西。逐条核对既有 canonical / bridge，实际状态如下：
 
-| 计划意图的"新增" | 既有锚点（已在仓库） | 层级 | 结论 |
+| 计划意图的"新增" | 既有锚点（已在仓库） | 权威层级 | 结论（三态） |
 |---|---|---|---|
 | 跨尺度同构、算子 $\hat{G}$ 尺度不变 | `Core_Law/SRT_Reference_Scaling.md` §1–§2、line 135 | canonical scaling | **已有** |
-| 协调性关闭 / coordinated closure | `Reference_Scaling.md` Def-Scale-PCC-1 原初约束闭包（line 606）；`OPEN_TENSIONS` minimal closure / L2-grade closure 阶梯（line 236） | canonical + hardening | **已有**（换名） |
+| **协调性关闭 / coordinated closure** | `Reference_Scaling.md` Def-Scale-PCC-1 原初约束闭包（line 606，**生命起源代谢闭包语境**：stable flow + payability） | canonical scaling | **相邻·不可等同**——PCC 不定义"多单元关闭局部可能性→生成宏观自由度" |
+| **参与式退让 / 局部 optionality 下降** | `Collective_Selection.md` Def-C-1 共享 L2 场（line 52，只定义痕迹 `ρ` 对多 ISP 可见） | L1 canonical | **相邻·不可等同**——Def-C-1 不含"每单元降低独立 optionality"作为形成成本 |
 | 侧抑制作为跨尺度选择原型 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` line 169：`Neural | lateral inhibition | competitive selection and sparse L_2 maintenance` | P3 bridge | **已有** |
-| 向下约束 / downward constraint | `Core_21c` line 306、318：`L_2` downward constraint 在 P1 = stabilized history constrains future selection | P1/bridge | **已有** |
-| 选择代理层 ≠ 高阶 ISP | `Core_Law/SRT_Collective_Selection.md` T-COLL-1（四条件）+ line 112「制度可以是集体 ISP 的器官，但不是集体 ISP 本身」 | L1 canonical | **已有，且更精确** |
+| 向下约束 / downward constraint | `Core_21c` line 306、318：`L_2` downward constraint 在 P1 = stabilized history constrains future selection | P1 / bridge | **已有** |
+| "代理层 ≠ 高阶 ISP"这条**判据** | `Collective_Selection.md` T-COLL-1（四条件）+ line 112「制度是集体 ISP 的器官，但不是集体 ISP 本身」 | L1 canonical | **已有**（判据已定义） |
+| "选择代理层"作为**生成对象**（背景开始替后来者选择） | 同上 T-COLL-1，但该文件未定义"共同背景如何长成代理层"这一生成过程 | L1 canonical | **相邻·不可等同** |
 | 生成性/替代性/支配性代理三分 | Q19 辅助式/替代式秩序 + 压迫；`Collective_Selection.md` §3 三退化型（聚合/主从/收编） | 书稿 + L1 | **已有**（换名重组） |
 | 代理自主化 / proxy inversion（支配性） | `Collective_Selection.md` 收编型：`σ_sr^coll → 1`，L2 成封闭 scaffold 反写 `d_c^i`（line 141、184） | L1 | **已有** |
 | 反目的论护栏 | `Reference_Scaling.md` §11 line 716「涌现是被环境逼出的局部负熵代价，而非目的论进步」 | canonical | **已有** |
-| C1–C8 最低生成判据 / 涌现卫生 | `Core_21c` line 304 **Emergence hygiene guardrail**：涌现必须指明下层部件、组织耦合、转变参数、稳定宏观模式/L2 约束、实现通道 | bridge（canonical-adjacent） | **已有，且就是这套判据** |
-| 健康代理判据 | `OPEN_TENSIONS` line 485 秩序增益四判据：可延续/可协调/**不外包**/可再选择（2026-07-05 作者裁决） | canonical | **已有** |
+| C1–C8 最低生成判据 / 涌现卫生 | `Core_21c` line 304 **Emergence hygiene guardrail**：涌现必须指明下层部件、组织耦合、转变参数、稳定宏观模式/L2 约束、实现通道 | P3 bridge（canonical-adjacent） | **已有**（判据模板已在） |
+| 健康代理判据 | 秩序增益四判据 可延续/可协调/**不外包**/可再选择，canonical 源 `Core_Law/SRT_Selection_Argument.md §7b.2`（决定登记于 `OPEN_TENSIONS` line 485，2026-07-05 作者裁决） | canonical（源为 Selection_Argument） | **已有** |
 | 上层不锁死下层 / 下层不捕获上层 | `Collective_Tower_Hardening_Notes.md` line 133：跨尺度真实重选率 `r^{(n→n+1)}` | P1-candidate hardening | **已有** |
-| 中心风险：跨尺度沦为类比 | `OPEN_TENSIONS` line 395 Cross-scale loop failure；附录 line 92 | 已登记 | **已登记** |
+| 中心风险：跨尺度沦为类比 | `OPEN_TENSIONS` line 395 Cross-scale loop failure（登记处）；附录 line 92 | 未决登记（非 canonical） | **已登记** |
 
-**含义**：计划的 Phase C（新建 bridge）、Phase D（登记 OPEN_TENSIONS）、Phase G/H（canonical 裁决）在很大程度上是在重新推导已经落地的东西。真正没有的，见 §2。
+**含义**：计划的多数构件属"已有"，Phase C/F/G 就这些构件而言无需新建；但表中三行 **相邻·不可等同**（协调性关闭、局部 optionality 下降、代理层生成对象）是真正未被 canonical 覆盖的生成步，见 §2 与 §4——它们不能被读成"已覆盖"，也不能被静默升级为 canonical 别名。
 
 ---
 
@@ -59,8 +63,8 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 
 只有两处是既有 canonical 和书稿都没有正面承载的，且都是**书稿表达缺口，不是理论缺口**：
 
-- **GAP-1（承重）：多单元→集体代理的"生成接缝"。** Q10 的"秩序=选择沉积成的地形"目前是**单主体/无人称**的：地形预处理"你"的行动。它没有写"多个低尺度单元在反复协调中彼此让路 → 把一类不必每次重算的选择沉进共同背景 → 该背景开始替后来者处理选择 → 于是成为一个代理层"这一步。这一步是本轮唯一真正新的**书稿**观念。
-  - 但注意：它在**理论层已经存在**——`Collective_Selection.md` 的共享 `L_2` 场形成 + `Reference_Scaling.md` PCC 就是它的形式版。所以这是"把已有理论翻译成书稿经验语言"，不是"发现新机制"。
+- **GAP-1（承重）：多单元→集体代理的"生成接缝"。** Q10 的"秩序=选择沉积成的地形"目前是**单主体/无人称**的：地形预处理"你"的行动。它没有写"许多低尺度单元反复相互作用 → 一部分局部可达性受内生约束 → 沉积为共同背景 → 该背景开始替后来者预处理选择 → 承接重复选择的代理结构"这一步。这一步是本轮真正新的**书稿**观念。
+  - 但注意其理论地位：它与既有理论对象是**结构相邻、尚待验证的候选映射，不是等同**。`Reference_Scaling.md` 的 PCC 是生命起源代谢闭包，不覆盖"多单元局部可达性下降→宏观自由度"这一步；`Collective_Selection.md` Def-C-1 只定义共享 L2 痕迹可见性，不含"每单元降低独立 optionality"。所以这既不是"发现全新机制"，也不是"把已有理论翻译成书稿"，而是**提出一条待验证的跨尺度回链**（源与授权见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`）。
 
 - **GAP-2（低价值、可选）：关闭≠删除 → 残余场参与跨尺度生成的显式回链。** Q06 已有"关闭≠删除"（阴影/张力/后续摩擦，单尺度，line 86–88、142、246）。把它显式接到"残余场参与更高尺度生成"是新 framing，但收益低、且容易把非人系统心理化——风险大于收益。
 
@@ -128,35 +132,35 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 
 ### 3.2 理论/边界目标
 
-- **`Reference_Scaling.md`**（blob `a23319321842`，canonical scaling）：已含跨尺度同构、PCC 原初约束闭包、反目的论。**无需修改**；协调性关闭只是 PCC 的书稿别名，不新增公理。至多 late-stage hardening note 回链（Phase G1 → 无操作）。
-- **`Collective_Selection.md`**（blob `df0682ea1181`，L1 canonical）：已含 T-COLL-1 集体 ISP 四条件、制度=器官非主体、三退化型。**无需修改**；它已经是"选择代理层 ≠ 高阶 ISP"的定义源（Phase G2 → 无操作）。§561 已自列"制度能否自身成为集体 ISP"为待硬化——本轮不碰。
-- **`Collective_Tower_Hardening_Notes.md`**（blob `d544080b5789`，P1-candidate hardening）：已含"上层不锁死下层/下层不绑架上层"（`r^{(n→n+1)}`）。**无需修改**（Phase G3 → 无操作）。
-- **`Core_21c_Bridge_Hypotheses.md`**（blob `fb0a32ea5d28`，P3 bridge）：已含侧抑制映射、涌现卫生护栏、L2 向下约束、cross-scale 单向回撤原则。**这就是计划想新建的 bridge**。建议：不新建平行 bridge；若需留痕，在此文件加一条指回本审计的注即可（可选）。
-- **`OPEN_TENSIONS.md`**（blob `453f04491e6b`）：已登记 cross-scale loop failure（line 395）、秩序增益四判据（line 485）。真正**可新增 1 条**：明确"参与式退让/协调性关闭/选择代理层"是既有 PCC / 共享 L2 形成 / 集体 ISP 器官 的**书稿别名，不是新理论对象**——防止后续 agent 误当新术语（见 §4）。
+- **`Reference_Scaling.md`**（blob `a23319321842`，canonical scaling）：已含跨尺度同构、PCC 原初约束闭包（生命起源语境）、反目的论。**本轮不修改**；协调性关闭与 PCC 是**相邻·不可等同**（PCC 不覆盖多单元局部可能性关闭→宏观自由度），故不写"别名"，也不新增公理（Phase G1 → 不改）。
+- **`Collective_Selection.md`**（blob `df0682ea1181`，L1 canonical）：已含 T-COLL-1 集体 ISP 四条件、制度=器官非主体、三退化型。**本轮不修改**——"代理层≠高阶ISP"这条**判据**已在此定义；但"共同背景如何长成代理层"这一**生成过程**未被定义，属相邻未覆盖（Phase G2 → 不改，仅登记为未决）。§561 已自列"制度能否自身成为集体 ISP"为待硬化——本轮不碰。
+- **`Collective_Tower_Hardening_Notes.md`**（blob `d544080b5789`，P1-candidate hardening）：已含"上层不锁死下层/下层不绑架上层"（`r^{(n→n+1)}`）。**本轮不修改**（Phase G3 → 不改）。
+- **`Core_21c_Bridge_Hypotheses.md`**（blob `fb0a32ea5d28`，P3 bridge）：已含侧抑制映射、涌现卫生护栏、L2 向下约束、cross-scale 单向回撤原则。它与计划想新建的 bridge **高度重叠**；本轮不新建平行 bridge。
+- **`OPEN_TENSIONS.md`**（blob `453f04491e6b`，`claim_mode: open`，**登记处非 canonical**）：已登记 cross-scale loop failure（line 395）、秩序增益四判据决定（line 485）。本轮**新增 1 条 Open Tension**：把"参与式退让/协调性关闭/选择代理层"与既有 PCC / 共享 L2 形成 / 集体 ISP 器官 的关系登记为**候选映射、尚待验证（非别名）**，并登记一条新未决项（局部 optionality↓→协调性关闭→宏观有效选择↑ 的可区分形式化）——防止后续 agent 既误当新术语、也误当已覆盖（见 §4）。
 
 ---
 
 ## 4. Canonical 裁决：H-A（不改 canonical）
 
-依计划 Phase H 出口判定：**H-A 不改 canonical**。理由：
+依计划 Phase H 出口判定：**H-A 不改 canonical**。但理由不是"已覆盖"，而是"候选未成熟"：
 
-- 计划可能想动的每一处（协调性关闭、向下约束、代理层≠集体ISP、健康判据、反目的论、涌现卫生）都**已在** canonical / hardening / bridge，无定义缺口、无内部冲突。
-- 未触发 Phase H 进入条件第 5 条（"现有 canonical 确有缺口"）。
-- 因此**不进入** Phase H 的 amendment，不给候选命题编号，不把"协调性关闭"写入 symbol table，不把侧抑制升级为普适定律。
+- 多数构件（侧抑制、向下约束、"代理层≠集体ISP"判据、健康判据、反目的论、涌现卫生）确**已在** canonical / hardening / bridge，无需改动。
+- 三处"相邻·不可等同"（协调性关闭、局部 optionality 下降、代理层生成对象）是真正未被 canonical 覆盖的生成步；但它们目前只是**待验证的候选映射**，未过反例压力测试，**尚不成熟到进入 canonical**——故本轮登记为 open tension，而非升级为定义。这既不触发 Phase H amendment，也**不得**把它们静默写成"已覆盖"或 canonical 别名。
+- 不给候选命题编号，不把"协调性关闭"写入 symbol table，不把侧抑制升级为普适定律。
 
-**留痕义务（计划 §9.4）**：本审计即为 no-amendment decision note。唯一可选的低风险 canonical-adjacent 动作，是在 `OPEN_TENSIONS` 加 1 条"别名澄清"（§3.2），把三个书稿候选词绑定到既有理论对象——这属 H-C clarification 边界，**建议但非必须**，且应单独小 PR。
+**留痕义务（计划 §9.4）**：本审计 + `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`（source trace）+ `OPEN_TENSIONS` 新增 Open Tension 共同构成 no-amendment decision note。OPEN_TENSIONS 的新增属 open-tension 登记（非 H-C clarification，不宣布问题已解），保留必要未决张力。
 
 ---
 
 ## 5. 唯一的作者门：术语
 
-6 个候选术语在全仓库的现状（基线核对）：**参与式退让 / 阴影承载的生成性 / 代理自主化 / 代理反转 = 0 处；协调性关闭 / 选择代理层 = 仅出现在本计划与 Operations/README 指针，理论文件与章节中 0 处**。即全部是新造词，且其所指概念**已在理论层以别名存在**。
+6 个候选术语在全仓库的现状（基线核对）：**参与式退让 / 阴影承载的生成性 / 代理自主化 / 代理反转 = 0 处；协调性关闭 / 选择代理层 = 仅出现在本计划与 Operations/README 指针，理论文件与章节中 0 处**。即全部是新造词；它们所指的概念在理论层有**相邻对象**（PCC / 共享 L2 / 集体 ISP 器官），但如 §1、§4 所述，是相邻而非等同，不能当作"已有别名"。
 
 与此同时，书稿正处在 **v4.1 术语降噪总修**（`BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md`），硬规则：**"一章只能让一个新术语或一句核心记忆点承担读者记忆压力"；"术语只作为后来命名"**。往 Q06/Q10/Q19/Q23 铺 6 个抽象新词，方向上与总修纪律相反，且与既往裁决一致的历史先例（"副本"新词 + 全书铺开被否）同形。
 
 **这是全轮唯一真正需要作者拍板、且不该由 agent 默认的决策**：
 
-- **默认建议**：三个核心词（协调性关闭 / 参与式退让 / 选择代理层）**只作 bridge/operations 层候选标签**，不进正文；正文用既有语汇（沉积地形 / 彼此让路 / 代理结构）承载 GAP-1。其余三个（阴影承载的生成性 / 代理自主化 / 代理反转）**淘汰或仅留 bridge**。
+- **默认建议**：三个核心词（协调性关闭 / 参与式退让 / 选择代理层）**只作 bridge/operations 层候选标签**，不进正文；正文用既有语汇（沉积地形 / 局部可达性受内生约束 / 代理结构）承载 GAP-1。其余三个（阴影承载的生成性 / 代理自主化 / 代理反转）**淘汰或仅留 bridge**。
 - 若作者明确要它们进正文，则须接受：至少占用 Q10 的"单章单术语"配额，且需同步更新术语表与降噪指南的例外清单。
 
 此门**必须先于任何 Phase E 书稿 patch**回答。
@@ -167,17 +171,17 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 
 原计划：8 阶段 / ≥3 PR / Codex+Claude 交叉。基于本审计，建议收缩为：
 
-- **PR 1（可选，极小）**：`OPEN_TENSIONS` 加 1 条别名澄清 + 本审计入库。不新建 bridge、不新建 source trace（source 已在本对话，可另存但非阻塞）。
-- **PR 2（书稿，唯一实体工作，且待术语门通过后）**：
-  - Q10：新增一条章末注承载 **GAP-1**（多单元→集体代理生成接缝），措辞用既有语汇，标 source-intuition 候选级；不动 §7 主链。
-  - Q23：§3/注七加 **一句** 跨尺度前史回链。
-  - 附录：line 58 涌现条内加半句（可选）。
-  - Q06 / Q19 / Q28：**不改**（或仅各加半句回链）。E2/E3/E4-列表 按 §3 判定为重复，**不执行**。
-- **PR 3（canonical）**：**取消**——裁决为 H-A，无 canonical 改动。
-- **Phase F（Neuroscience）**：出口 **F-A 不回写**——侧抑制映射已在 `Core_21c` line 169，只需只读确认，不动神经 canonical 文件。
-- **Phase G**：G1/G2/G3 **均无操作**（对应文件已覆盖）。
+- **PR（本轮，PR #660）**：`OPEN_TENSIONS` 加 1 条 Open Tension（候选映射 + 新未决项）+ source trace `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md` + 本审计入库。不新建平行 bridge。
+- **书稿（本轮，待术语门/作者裁决后）**：
+  - Q10：新增章末注九承载 **GAP-1**（多单元→代理结构生成接缝），措辞用既有语汇、去拟人化，标 source-intuition 候选级、标"候选映射待验证"；不动 §7 主链。
+  - Q23：注七加 **一句** 候选跨尺度回链，并声明不从一般机制下推社会规范。
+  - 附录：line 58 涌现条内加半句（可选，本轮未做）。
+  - Q06 / Q19 / Q28：**不改**。E2/E3/E4-列表 按 §3 判定为重复，**不执行**。
+- **canonical**：裁决 **H-A**，无 canonical 改动（理由见 §4：候选未成熟，非已覆盖）。
+- **Phase F（Neuroscience）**：**F-A 不回写**——侧抑制映射已在 `Core_21c` line 169，只读确认，不动神经 canonical 文件。
+- **Phase G**：G1/G2/G3 **均不改动对应文件**（已有构件无需动；相邻未覆盖项登记为 open tension，不在本轮升 canonical）。
 
-即：全轮实体产出 ≈ **Q10 一条章末注 + Q23 一句回链 + OPEN_TENSIONS 一条澄清**。其余为"确认已覆盖"的 no-op 留痕。计划的机器（gate/PR 切分/交叉审查）远重于货。
+即：本轮实体产出 = **source trace + Q10 章末注九 + Q23 一句回链 + OPEN_TENSIONS 一条 Open Tension + 版本治理同步**。三处"相邻·不可等同"作为未决张力留在 OPEN_TENSIONS，不宣告已解。
 
 ---
 
@@ -198,12 +202,12 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 - [x] 外部文献核验判定：无强需求（§7）
 - [x] 作者门标出：术语（§5）
 
-**Gate A 状态：通过。** 但下一步不是径直进 Phase E，而是**先过 §5 术语门**（作者裁决），再按 §6 收缩版执行。若作者认可收缩，则本轮实体工作量约为原计划的 15%。
+**Gate A 状态：通过。** 下一步不是径直进 Phase E，而是**先过 §5 术语门**（作者裁决），再按 §6 收缩版执行。作者 2026-07-12 已裁决"收缩执行·用既有语汇"（provenance 见 source trace）；本轮实体工作相对原八阶段计划显著收缩，但三处"相邻·不可等同"生成步作为未决张力保留，不视为已解决。
 
 ---
 
 ## 9. Provenance
 
 - 主计划：`Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md`
-- 来源直觉：2026-07-12 对话（作者关于"个体降低独立可选择性 → 集体新表现"的跨尺度涌现直觉，及 ChatGPT 五步推演）——原文可另存为 `01_Source_Intuition/` source trace，但按本审计，它是 GAP-1 的**书稿翻译**素材，其理论内核已在 `Collective_Selection` / `Reference_Scaling`。
+- 来源直觉与授权：`01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`（Phase B source trace）——严格分栏记录作者原始直觉（"个体降低独立可选择性 → 集体新表现"）、LLM 推演（五步链/形式候选/术语）、作者 PR #660 复审立场（PCC/Def-C-1 不覆盖该生成步，故为候选映射非别名；去拟人化；跨尺度只允许近似结构映射）。
 - 审计基线：`c47d6b35989f9af09daa132dc9ce64c9b21c0679`，各目标文件 blob SHA 见 §3。

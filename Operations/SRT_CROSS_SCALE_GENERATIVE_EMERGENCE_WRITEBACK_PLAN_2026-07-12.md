@@ -31,7 +31,7 @@ dependency: [SRT-AGENTS, SRT-AGENT-RETRIEVAL-PROFILE, SRT-BOOK-CURRENT-STATUS, S
 ### 0.1 当前施工状态
 
 - 计划状态：`active_execution_plan`（Phase A 已完成，实体施工已按收缩版执行；见下）
-- 理论与书稿正文施工：**已按 Phase A 审计收缩版执行**。Phase A 覆盖矩阵见 `Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`，结论：理论层已覆盖约 85%，canonical 裁决为 **H-A（不改 canonical）**，实体工作收缩为 Q10 一条章末注 + Q23 一句回链 + OPEN_TENSIONS 一条别名澄清（作者 2026-07-12 选定“收缩执行·用既有语汇”，六个候选术语不进正文）。
+- 理论与书稿正文施工：**已按 Phase A 审计收缩版执行，并经作者 PR #660 复审后修订**。Phase A 覆盖矩阵见 `Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`，结论：多数构件已在 canonical/bridge 有对应，但"局部 optionality↓→协调性关闭→宏观有效选择↑"这一生成步与既有对象（PCC / Def-C-1 / 集体 ISP 器官）是**相邻·不可等同**、待验证的候选映射，非别名；canonical 裁决 **H-A（不改，理由=候选未成熟非已覆盖）**。实体工作收缩为 source trace + Q10 章末注九 + Q23 一句回链 + OPEN_TENSIONS 一条 Open Tension + 版本治理同步（作者 2026-07-12 选定“收缩执行·用既有语汇”，六个候选术语不进正文；源与授权见 `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`）。
 - 已完成前置治理：PR #658 已合并，当前书稿优先、归档降权与 CI 守门已经生效
 - Issue #657：保留为 provenance；本文件整合其正文与后续补充
 - initial consolidation baseline：`690adaa4f36efbf8399bc2db06aa8124036f3b62`
@@ -861,14 +861,14 @@ canonical 不是永久不可修改，但本任务不得自动进入 canonical �
 
 - [x] 前置治理：最新版优先与归档降权（PR #658）
 - [x] 将 Issue #657 正文与补充整合成本文件
-- [x] Phase A：最新版差异审计 → `SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`（Gate A 通过）
-- [~] Phase B：source-intuition trace — 未单独建文件；来源直觉（2026-07-12 对话）作为 Q10 章末注九的翻译素材，理论内核已在 Collective Selection / Reference Scaling
-- [x] Phase C：cross-scale bridge — 裁决为**不新建**；既有 `Core_21c` emergence-hygiene + `Reference_Scaling` PCC 已充当该 bridge（无操作，仅 OPEN_TENSIONS 别名澄清留痕）
-- [x] Phase D：OPEN_TENSIONS — 加“Status Note (2026-07-12)”别名澄清；中心风险沿用既有 Failure Condition 4（无新张力）
-- [x] Phase E：书稿回写 — 收缩版：Q10 章末注九（多单元→集体代理接缝）+ Q23 注七跨尺度前史回链；Q06/Q19/Q28 判为已覆盖，不改
+- [x] Phase A：最新版差异审计 → `SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md`（Gate A 通过；PR #660 复审后三态化修订）
+- [x] Phase B：source-intuition trace → `01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md`（作者原始直觉 / LLM 推演 / 作者复审立场 严格分栏 + 授权 provenance）
+- [x] Phase C：cross-scale bridge — 裁决**不新建平行 bridge**；既有 `Core_21c` emergence-hygiene + `Reference_Scaling` PCC 高度重叠。注意：候选机制与既有对象是**相邻·不可等同**，非别名
+- [x] Phase D：OPEN_TENSIONS — 加“Open Tension (2026-07-12)”：登记候选映射（非别名）+ **一条新未决项**（局部 optionality↓→协调性关闭→宏观有效选择↑ 的可区分形式化）；不宣告无新张力
+- [x] Phase E：书稿回写 — 收缩版：Q10 章末注九（去拟人化的多单元→代理结构接缝，v28）+ Q23 注七候选跨尺度回链（v24，声明不下推社会规范）；Q06/Q19/Q28 不改；BOOK_VERSION_LOG 已同步
 - [x] Phase F：Neuroscience 接口裁决 → **F-A 不回写**（侧抑制映射已在 `Core_21c` line 169）
-- [x] Phase G：Core/Core_Law 集成裁决 → G1/G2/G3 **均无操作**（既有文件已覆盖）
-- [x] Phase H：canonical amendment decision → **H-A 不改 canonical**（本审计即 no-amendment decision note）
+- [x] Phase G：Core/Core_Law 集成裁决 → G1/G2/G3 **不改动对应文件**（已有构件无需动；相邻未覆盖项登记为 open tension）
+- [x] Phase H：canonical amendment decision → **H-A 不改 canonical**（理由=候选未成熟非已覆盖；本审计+source trace+Open Tension 即 no-amendment decision note）
 - [x] CI 验收：book outline / split freshness / registry / large-file 全 PASS；frontmatter 唯一 FAIL 属既有 `Papers/selective_resynchronization/` baseline 漂移，与本轮无关
 
 ---
