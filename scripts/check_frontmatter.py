@@ -24,6 +24,21 @@ RECOMMENDED_KEYS = {
     "claim_mode",
 }
 
+# Raw and edited conversation transcripts are source records rather than claim-bearing
+# theory documents. For these explicitly noncanonical transcript statuses, `kind`
+# may stand in for `type`, while layer / epistemic_layer / claim_mode are not
+# meaningful requirements. Canonical and theory-bearing documents remain unchanged.
+NONCANONICAL_TRANSCRIPT_STATUSES = {
+    "raw_source_noncanonical",
+    "source_material_noncanonical",
+    "edited_noncanonical",
+}
+TRANSCRIPT_EXEMPT_KEYS = {
+    "layer",
+    "epistemic_layer",
+    "claim_mode",
+}
+
 AUTHORITY_HELPER_MARKERS = (
     "_Split/",
     "_Annex/",
@@ -40,6 +55,24 @@ BASELINE_FILES = {
 
 def is_helper_path(rel: str) -> bool:
     return any(marker in rel for marker in AUTHORITY_HELPER_MARKERS)
+
+
+def is_noncanonical_transcript(data: dict[str, str]) -> bool:
+    status = data.get("status", "")
+    transcript_type = data.get("type", "") or data.get("kind", "")
+    return (
+        status in NONCANONICAL_TRANSCRIPT_STATUSES
+        and "transcript" in transcript_type
+    )
+
+
+def missing_recommended_keys(data: dict[str, str]) -> list[str]:
+    present = set(data)
+    if is_noncanonical_transcript(data):
+        if data.get("kind"):
+            present.add("type")
+        return sorted((RECOMMENDED_KEYS - TRANSCRIPT_EXEMPT_KEYS) - present)
+    return sorted(RECOMMENDED_KEYS - present)
 
 
 def load_baseline(path_arg: str) -> set[str]:
@@ -109,7 +142,7 @@ def main() -> None:
             errors.append(f"{rel}: malformed frontmatter fence")
             continue
 
-        missing = sorted(RECOMMENDED_KEYS - set(fm.data))
+        missing = missing_recommended_keys(fm.data)
         if missing:
             message = f"{rel}: missing recommended frontmatter keys: {', '.join(missing)}"
             if args.strict:
