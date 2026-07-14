@@ -82,15 +82,6 @@ def main() -> None:
     for label, command in steps:
         failures += 1 if run_step(label, command) else 0
 
-    trigger = ROOT / "papers" / "ontological_friction" / ".agent_frontiers_reviewer1_trigger"
-    helper = ROOT / "scripts" / "agent_frontiers_build_fast.py"
-    if failures == 0 and trigger.is_file():
-        if not helper.is_file():
-            print(f"FAIL: missing helper {helper}")
-            failures += 1
-        else:
-            failures += 1 if run_step("Frontiers Reviewer 1 artifact build", [python, str(helper)]) else 0
-
     print(f"\npreflight: failures={failures}")
     raise SystemExit(1 if failures else 0)
 

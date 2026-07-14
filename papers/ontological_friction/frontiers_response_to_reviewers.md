@@ -108,6 +108,17 @@ Response: We have revised the manuscript ourselves and take full responsibility 
 **5. Figures — grey text in color-box charts should be black.**
 Response: Done. Text in the box/flow figures was changed from grey to near-black across the figure sources.
 
+
+---
+
+## Reviewer 1 — Follow-up Minor Comments
+
+**1. Table 2 caption — clarify the meaning of bold entries marked with †.**
+Response: Thank you for pointing this out. The caption of Table 2 now states that the bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.
+
+**2. Table 3 — correct the group-size notation.**
+Response: Thank you for identifying the rendering problem. The affected entry has been corrected to “90 (three groups of 30 participants),” which preserves the intended sample-size meaning while avoiding ambiguous mathematical formatting.
+
 ---
 
 We believe these revisions address the reviewers' concerns and materially strengthen the manuscript, and we thank the reviewers again for their time.

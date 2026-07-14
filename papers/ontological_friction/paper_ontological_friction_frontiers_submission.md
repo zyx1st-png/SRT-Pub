@@ -773,7 +773,7 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 | $u(t)$ in Eq. (3c) | Momentary control input effort | Trial-wise inhibitory/control demand (e.g., incongruent Stroop, switch trials, rule override trials) | Neural control-energy surrogates from EEG/TMS paradigms |
 | $\rho$ and $\rho^*$ in Eqs. (7a, 7c) | Normalized friction load | Primary: $\rho^*$ (score-based); sensitivity: ratio-based $\rho$ | Cross-modal validation with neural/biochemical layers |
 
-**Table 2. Predicted $\Psi_f$ proxy signatures across clinical conditions.**
+**Table 2. Predicted $\Psi_f$ proxy signatures across clinical conditions. Bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.**
 
 | Proxy | HC (reference) | MDD (predicted deviation) | OCD (predicted deviation) | PD (predicted deviation) | If wrong, implication |
 |---|---|---|---|---|---|
@@ -795,7 +795,7 @@ Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarit
 | H72 | Core | Context-sensitive $\mu_{\text{sem}}^{\text{adj}}$ (primary) + incremental validity (secondary) | Either test fails → downgrade to exploratory; both fail (no context effect and no meaningful incremental variance over symptom/affect controls) → remove from core | 120 | Adjusted modal ratio, RT, HRV/SCR, symptom scales |
 | H-NEURO-EXEC-01 | Core | Nonlinear cost increase with identifiable $\rho_c^*$ (primary) | Linear fit dominates or no $\rho_c^*$ | 80 | Task-switch $\times$ load, HRV/SCR, baseline latent score |
 | H-MET-01 | Core-extension bridge | Counter-habitual choice increases SCR (glucose exploratory) | No SCR difference or no reliable SCR-$\Psi_f$ link | 60 | SCR (primary), glucose (secondary), compatibility task |
-| H-CLIN-OCD-01 | Core clinical | Highest $\mu_{\text{sem}}$ in OCD | No reliable OCD elevation on $\mu_{\text{sem}}$ | 90 (30$\times$3) | Modal ratio, clinical interview |
+| H-CLIN-OCD-01 | Core clinical | Highest $\mu_{\text{sem}}$ in OCD | No reliable OCD elevation on $\mu_{\text{sem}}$ | 90 (three groups of 30 participants) | Modal ratio, clinical interview |
 | H-CLIN-DEP-01 | Expansion | ROS predicted by $\Psi_f$ in MDD | Negligible $\Psi_f$-ROS association | 80 (40+40) | GSH/GSSG, task battery, HRV |
 
 **Table 4. Framework comparison.**
