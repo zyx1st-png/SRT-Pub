@@ -142,16 +142,24 @@ def render_submission() -> None:
 
 
 def verify_text() -> None:
+    required_text = (
+        "Bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.",
+        TABLE3_NEW,
+    )
     for path in (MANUSCRIPT, HTML):
-        text = path.read_text(encoding="utf-8")
-        for required in (
-            "Bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.",
-            TABLE3_NEW,
-        ):
-            if required not in text:
+        raw_text = path.read_text(encoding="utf-8")
+        if path == HTML:
+            from lxml import html as lxml_html
+
+            visible_text = lxml_html.fromstring(raw_text).text_content()
+        else:
+            visible_text = raw_text
+        normalized_text = " ".join(visible_text.split())
+        for required in required_text:
+            if required not in normalized_text:
                 raise RuntimeError(f"Missing required text in {path.name}: {required}")
         for forbidden in ("30$3", TABLE3_OLD):
-            if forbidden in text:
+            if forbidden in raw_text:
                 raise RuntimeError(f"Forbidden notation remains in {path.name}: {forbidden}")
 
     from docx import Document
@@ -161,16 +169,14 @@ def verify_text() -> None:
         [paragraph.text for paragraph in doc.paragraphs]
         + [cell.text for table in doc.tables for row in table.rows for cell in row.cells]
     )
-    for required in (
-        "Bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.",
-        TABLE3_NEW,
-    ):
-        if required not in docx_text:
+    normalized_docx_text = " ".join(docx_text.split())
+    for required in required_text:
+        if required not in normalized_docx_text:
             raise RuntimeError(f"Missing required text in DOCX: {required}")
 
     pdf_text = BUILD_DIR / "submission_pdf.txt"
     run(["pdftotext", str(PDF), str(pdf_text)])
-    extracted = pdf_text.read_text(encoding="utf-8", errors="replace")
+    extracted = " ".join(pdf_text.read_text(encoding="utf-8", errors="replace").split())
     if "three groups of 30 participants" not in extracted:
         raise RuntimeError("Corrected Table 3 text is missing from the PDF text extraction.")
 
