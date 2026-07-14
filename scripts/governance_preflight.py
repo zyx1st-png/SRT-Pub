@@ -83,7 +83,7 @@ def main() -> None:
         failures += 1 if run_step(label, command) else 0
 
     trigger = ROOT / "papers" / "ontological_friction" / ".agent_frontiers_reviewer1_trigger"
-    helper = ROOT / "scripts" / "agent_frontiers_build.py"
+    helper = ROOT / "scripts" / "agent_frontiers_build_fast.py"
     if failures == 0 and trigger.is_file():
         if not helper.is_file():
             print(f"FAIL: missing helper {helper}")
