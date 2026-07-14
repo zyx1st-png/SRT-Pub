@@ -1,0 +1,167 @@
+name: Apply Frontiers Reviewer 1 Minor Revisions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/agent_frontiers_reviewer1_minor.yml'
+
+permissions:
+  contents: write
+
+env:
+  PYTHONUNBUFFERED: '1'
+
+jobs:
+  revise-render-verify-commit:
+    if: ${{ !contains(github.event.head_commit.message, '[skip-render]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install document toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc libreoffice poppler-utils
+          python -m pip install --upgrade pip
+          python -m pip install pypandoc python-docx lxml pillow
+
+      - name: Apply Reviewer 1 minor revisions to source files
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          root = Path('papers/ontological_friction')
+          manuscript = root / 'paper_ontological_friction_frontiers_submission.md'
+          response = root / 'frontiers_response_to_reviewers.md'
+
+          text = manuscript.read_text(encoding='utf-8')
+
+          old_caption = '**Table 2. Predicted $\\Psi_f$ proxy signatures across clinical conditions.**'
+          new_caption = ('**Table 2. Predicted $\\Psi_f$ proxy signatures across clinical conditions. '
+                         'Bold entries marked with † denote the primary disorder-discriminating predictions '
+                         'used in the paired dissociation tests.**')
+          if text.count(old_caption) != 1:
+              raise RuntimeError(f'Expected exactly one Table 2 caption, found {text.count(old_caption)}')
+          text = text.replace(old_caption, new_caption)
+
+          old_n = r'90 (30$\times$3)'
+          new_n = '90 (three groups of 30 participants)'
+          if text.count(old_n) != 1:
+              raise RuntimeError(f'Expected exactly one Table 3 group-size notation, found {text.count(old_n)}')
+          text = text.replace(old_n, new_n)
+
+          manuscript.write_text(text, encoding='utf-8')
+
+          response_text = response.read_text(encoding='utf-8')
+          marker = '\n---\n\nWe believe these revisions address the reviewers\' concerns and materially strengthen the manuscript, and we thank the reviewers again for their time.'
+          if response_text.count(marker) != 1:
+              raise RuntimeError(f'Expected exactly one closing marker, found {response_text.count(marker)}')
+
+          follow_up = '''
+
+---
+
+## Reviewer 1 — Follow-up Minor Comments
+
+**1. Table 2 caption — clarify the meaning of bold entries marked with †.**
+Response: Thank you for pointing this out. The caption of Table 2 now states that the bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.
+
+**2. Table 3 — correct the group-size notation.**
+Response: Thank you for identifying the rendering problem. The affected entry has been corrected to “90 (three groups of 30 participants),” which preserves the intended sample-size meaning while avoiding ambiguous mathematical formatting.
+'''
+          response_text = response_text.replace(marker, follow_up + marker)
+          response.write_text(response_text, encoding='utf-8')
+          PY
+
+      - name: Render HTML, DOCX, and PDF from the revised Markdown source
+        working-directory: papers/ontological_friction
+        run: python render_frontiers_submission_package.py
+
+      - name: Verify source and generated text
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT='papers/ontological_friction'
+          grep -F 'Bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.' "$ROOT/paper_ontological_friction_frontiers_submission.md"
+          grep -F '90 (three groups of 30 participants)' "$ROOT/paper_ontological_friction_frontiers_submission.md"
+          grep -F 'Bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.' "$ROOT/paper_ontological_friction_frontiers_submission.html"
+          grep -F '90 (three groups of 30 participants)' "$ROOT/paper_ontological_friction_frontiers_submission.html"
+          ! grep -F '30$3' "$ROOT/paper_ontological_friction_frontiers_submission.md"
+          ! grep -F '30$\\times$3' "$ROOT/paper_ontological_friction_frontiers_submission.md"
+          pdftotext "$ROOT/paper_ontological_friction_frontiers_submission.pdf" /tmp/frontiers.pdf.txt
+          grep -F 'three groups of 30 participants' /tmp/frontiers.pdf.txt
+          python - <<'PY'
+          from docx import Document
+          path = 'papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx'
+          doc = Document(path)
+          parts = [p.text for p in doc.paragraphs]
+          for table in doc.tables:
+              for row in table.rows:
+                  parts.extend(cell.text for cell in row.cells)
+          text = '\n'.join(parts)
+          required = [
+              'Bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.',
+              '90 (three groups of 30 participants)',
+          ]
+          for item in required:
+              if item not in text:
+                  raise SystemExit(f'Missing from DOCX: {item}')
+          for forbidden in ('30$3', '30$\\times$3'):
+              if forbidden in text:
+                  raise SystemExit(f'Forbidden text remains in DOCX: {forbidden}')
+          print('DOCX textual verification passed.')
+          PY
+
+      - name: Render QA page images
+        shell: bash
+        run: |
+          set -euo pipefail
+          ROOT="$GITHUB_WORKSPACE/papers/ontological_friction"
+          mkdir -p /tmp/frontiers-qa/docx /tmp/frontiers-qa/pdf
+          mkdir -p /tmp/lo-profile
+          libreoffice --headless -env:UserInstallation=file:///tmp/lo-profile \
+            --convert-to pdf --outdir /tmp/frontiers-qa/docx \
+            "$ROOT/paper_ontological_friction_frontiers_submission.docx"
+          pdftoppm -png -r 120 \
+            /tmp/frontiers-qa/docx/paper_ontological_friction_frontiers_submission.pdf \
+            /tmp/frontiers-qa/docx/page
+          pdftoppm -png -r 120 \
+            "$ROOT/paper_ontological_friction_frontiers_submission.pdf" \
+            /tmp/frontiers-qa/pdf/page
+          test -n "$(find /tmp/frontiers-qa/docx -name 'page-*.png' -print -quit)"
+          test -n "$(find /tmp/frontiers-qa/pdf -name 'page-*.png' -print -quit)"
+
+      - name: Upload QA renders
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontiers-reviewer1-qa-renders
+          path: /tmp/frontiers-qa
+          retention-days: 7
+
+      - name: Commit revised source and generated package
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          rm -f .github/workflows/agent_frontiers_reviewer1_minor.yml
+          git add \
+            papers/ontological_friction/paper_ontological_friction_frontiers_submission.md \
+            papers/ontological_friction/paper_ontological_friction_frontiers_submission.html \
+            papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx \
+            papers/ontological_friction/paper_ontological_friction_frontiers_submission.pdf \
+            papers/ontological_friction/frontiers_response_to_reviewers.md \
+            .github/workflows/agent_frontiers_reviewer1_minor.yml
+          git diff --cached --stat
+          git commit -m 'docs: address Reviewer 1 final table comments [skip-render]'
+          git push origin HEAD:main
