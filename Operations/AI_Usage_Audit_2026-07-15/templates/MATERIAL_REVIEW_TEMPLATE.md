@@ -44,5 +44,5 @@ usage: 复制本块，逐格填写。精确门槛以 Operations/_SRT_MATERIAL_PI
 ## 红线自查
 - [ ] 媒体解释未被当作者结论
 - [ ] 证据等级已标注、未混淆
-- [ ] 未把 P2/P3 桥接写成已证定律
+- [ ] 未把 P3 桥接映射 / P4 实验假说写成已证定律（P 级判读以 `Governance/SRT_CLAIM_LADDER.md` 为准）
 - [ ] 回写命题已对照 canonical 与符号表

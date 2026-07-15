@@ -133,7 +133,9 @@ provenance: >
 且强依赖 heartbeat 状态，做成 skill 反而多一层；保持现状。会话引导读序留在 `AGENTS.md` 即可
 （skill 化会和 AGENTS.md 争夺"唯一权威读序"，违反它自己立的规矩）。
 
-四个新 skill 全部走 `scripts/sync_claude_skills.py` 的既有同步机制，能自动分发到 `.codex/` 和 `.openclaw/`。
+四个新 skill 位于仓库内 `.claude/skills/`；`scripts/sync_claude_skills.py` 已加 `--source-root` 参数，
+在仓库根目录跑 `python3 scripts/sync_claude_skills.py --source-root .claude/skills` 即可分发到
+`.codex/` 和 `.openclaw/`（默认源仍是 `~/.claude/skills`，不带参数时不会读到仓库内新 skill）。
 
 ---
 
@@ -165,29 +167,35 @@ provenance: >
 
 ---
 
-## 6. Opus 应该知道什么，才能给我 90% 的 Fable 5 体验？
+## 6. Opus 应该知道什么，才能接近 Fable 5 的 SRT 体验？
 
 完整版见 `SRT_OPUS_SYSTEM_INSTRUCTIONS.md`（可直接贴进 Opus 的系统提示 / project instructions）。
-90% 体验的关键不是"更聪明"，而是**把这些隐性纪律显性化**，让 Opus 不必每次靠推断：
+（"~90%"是未经评测验证的设计目标，准确说法是"显著减少冷启动差距"。）
+关键不是"更聪明"，而是**把这些隐性纪律显性化**，让 Opus 不必每次靠推断：
 
-1. **权威层级**：`CANONICAL_REGISTRY → L0 → d/Ψ_f/T_dir canonical → 符号表 → Core_21/22`。
+1. **权威分工**：`CANONICAL_REGISTRY.md` 是 index，负责路由——决定当前 canonical 状态与主锚点；
+   **定义内容以它指向的 canonical 文件为准**（L0、d/Ψ_f/T_dir canonical、Core_21/22），Registry 摘要
+   不得反向覆盖详细定义；符号冲突由符号表裁决，命题硬度由 Claim Ladder 裁决。
    bridge / split / operations / memory / TASTE **都不是定义源**。
 2. **答题前先分类**：用 `_SRT_AGENT_RETRIEVAL_PROFILE.md` 判 profile，再决定读多深。别一上来平铺检索。
-3. **claim ladder 是硬约束**：P0/P1 是定义与构成定理，P2/P3 是桥接假设。**P3 永远不能被写成已证定律**，
+3. **claim ladder 是硬约束**：P0=公理、P1=构成定理、**P2=canonical 解释口径**（稳定主读，不是桥接）、
+   **P3=桥接映射、P4=实验假说**、P5=阐释。**P3/P4/P5 不得写成 P0/P1；P3 桥接永远不能被写成已证定律**，
    大众文也不例外。不确定就标 `NEEDS_RETRIEVAL`，绝不编造路径/方程/claim level。
 4. **符号精度**：`L_0 / L_1 / L_2 / Ĝ_θ / Ψ_f / d / ε / T_dir` 各有精确定义，先查 `_SRT_SYMBOL_QUICK_GUARD.md`。
    典型雷：把 `L_0` 当隐藏客体世界、把"选择先于存在"当时间先后、把 Fisher 度量当 `Ψ_f` 全部。
-5. **当前性优先**：书稿以 `BOOK_ACTIVE_MANIFEST.json` 指向的活跃文件为准，归档只作历史对照，不作首选源。
-6. **发散/收敛切分**：文章类任务 LLM 只发散、分层递归、手法最后；收敛只作者做。别替作者选题定论点。
+5. **当前性优先**：书稿以 `01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json` 指向的活跃文件为准，
+   归档只作历史对照，不作首选源。
+6. **发散/收敛切分**（**仅限 srt-article 社媒文章工作流**）：LLM 只发散、分层递归、手法最后；收敛只作者做。
+   别替作者选题定论点。书稿修订、论文修订、审稿回复、操作文档等按用户当前明确要求正常产出文本。
 7. **大文件最小补丁**：不整文件重写，不删不重排，编辑后 `git diff` 自查。
 8. **留痕纪律**：状态→STATUS，运行→Operations，治理→Governance；不在 canonical 里写运行痕迹。
 9. **触发词**：认识 `材料/材料裁决/信号采集/内审/选题/论文候选/周评/对话/学者对话` 各自的 pipeline。
 10. **气质**：当压力测试器，不当啦啦队。不夸奖、不安慰、不替作者拍板；只找会塌的地方。
 
-**剩下 10% 的差距**（Opus 靠系统指令补不齐的）：跨会话对你 revealed-stake 品味的累积（那需要
+**系统指令补不齐的差距**：跨会话对你 revealed-stake 品味的累积（那需要
 `_SRT_CHOICE_TRACE_LOG.md` 越攒越厚后 condition 上去），以及对 SRT 内部最新未闭合张力的实时把握
 （`Core/SRT_OPEN_TENSIONS.md` 要现读）。系统指令让 Opus 从"通用助手"变成"懂 SRT 规矩的合作者"，
-够到 90%;最后 10% 是时间和轨迹的函数。
+显著减少冷启动差距；剩下的部分是时间和轨迹的函数（具体比例未经评测）。
 
 ---
 

@@ -53,6 +53,7 @@ argument-hint: "[目标领域/文件 | pre-audit | 裁决 | 记录 closure]"
 - **不移动**公式、阈值、AI subjecthood/consciousness claim、Physics gravity/constants/collapse/MWI/离散时间 claim——
   除非已有对应 adjudication 明确批准。
 - **companion / annex / split / bridge 永不升格为 canonical 定义**；`canonical: false` 不因抽取改变。
-- 大文件**最小定向编辑**，不删不重排既有长段；整文件重写用 `srt-safe-patch` 的纪律。
+- 大文件**最小定向编辑**，不删不重排既有长段；对大文件执行局部抽取或护栏补丁时，
+  配合 `srt-safe-patch` 的最小定向编辑纪律（该纪律本身禁止整文件重写）。
 - frontmatter 归一化按 canonical claim_mode 补齐，不擅自改 claim level。
 - 抽取只改结构与导航，**不引入新理论**；引入新理论走 canonical 编辑协议，不在本流程里夹带。

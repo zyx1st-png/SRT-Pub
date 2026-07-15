@@ -76,5 +76,9 @@ dependency: [SRT-AI-USAGE-AUDIT-2026-07-15]
 
 ## 六、维护
 
-- 新 skill 改动后跑 `python3 scripts/sync_claude_skills.py`（可先 `--dry-run`）同步到 `.codex/` 与 `.openclaw/`。
+- 仓库内 skill 改动后，在仓库根目录跑
+  `python3 scripts/sync_claude_skills.py --source-root .claude/skills`（可先加 `--dry-run`）
+  同步到 `.codex/` 与 `.openclaw/`。注意：不带 `--source-root` 时默认源是 `~/.claude/skills`，
+  **不会**读到仓库内的新 skill；若想让默认源也生效，把仓库 `.claude/skills/` 下的目录复制/链接到
+  `~/.claude/skills/` 后再跑。
 - skill 只装"怎么起 + 红线"，精确规则永远指向 `Operations/` / `Governance/` 主文档，防止双份漂移。
