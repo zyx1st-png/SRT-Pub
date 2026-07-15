@@ -2,12 +2,13 @@
 id: SRT-CONSCIOUSNESS-BEFORE-PUBLIC-LONGREAD-CN-2026-07-15
 type: public_content_draft
 tags: [SRT, Consciousness, UnconsciousIntelligence, SelectionDynamics, Feeling, Reflexivity, PublicWriting]
-status: draft_v2
+status: draft_v3
 layer: meta
 epistemic_layer: public
 canonical: false
 claim_mode: public_explanation
 created: 2026-07-15
+revised: 2026-07-15
 publication_status: unapproved_internal_draft
 based_on:
   - "意识之前_SRT意识理论长文.md（研究/ 根目录母稿，非 repo）"
@@ -61,7 +62,7 @@ based_on:
 
 > **反身意识不是智能的起点。**
 > **无意识智能不是选择的起点。**
-> **智能、生命与意识，是同一套选择动力学，在不同组织层级上的不同展开。**
+> **智能、生命与意识，是同一选择动力学骨架在不同组织层级上的不同展开。**
 
 第三句是本文最大的理论抱负，也最需要小心。它有一个类比对象：热力学不要求气体、发动机和生物体拥有相同的材料，却能用能量、熵、耗散、不可逆这一组语言把它们统一描述。SRT 想做类似的事，但核心变量不同——它关心的不是能量如何流动，而是**可能性如何在差异、摩擦、竞争与历史写入中发生不对称的收束**。第二部分会把这个类比的力度界定清楚：相似的是理论角色，不是说选择就是熵，也不是说 SRT 已经拥有热力学那样成熟的状态量和变换关系。
 
@@ -184,7 +185,7 @@ SRT 把它关心的过程，写成一条开放的链条——不是严格的公�
 
 这条链在不同层级上反复出现，只是"候选""竞争""写入"的具体载体不同：在一条河那里，候选是不同的漫流方向，写入是被冲刷出的河床；在一次学习那里，候选是不同的反应倾向，写入是被强化的突触权重；在一个社会那里，候选是不同的做法，写入是逐渐固化的制度与习俗。
 
-要立刻说清一条纪律：**横读看形式统一，竖读看机制差异。** 河、突触、制度共享的只是这条链的**形式骨架**；至于靠什么实现，各层完全不同——河的排开靠水力与地形，突触的排开靠神经可塑性，制度的排开靠规则与话语权。把"形式统一"误读成"机制抹平"，整个论证就塌成了粗糙的还原论。所以本文说这些现象是"同一种动力学的实例化"时，指的严格是第二层意义上的骨架共享，而不是它们背后是同一台机器。这一点，正是许多跨层理论翻车的地方，也是 SRT 必须比"看起来都很像"更进一步的地方。
+要立刻说清一条纪律：**横读看形式统一，竖读看机制差异。** 河、突触、制度共享的只是这条链的**形式骨架**；至于靠什么实现，各层完全不同——河的排开靠水力与地形，突触的排开靠神经可塑性，制度的排开靠规则与话语权。把"形式统一"误读成"机制抹平"，整个论证就塌成了粗糙的还原论。因此，更准确的说法是：这些现象是**同一选择动力学骨架在不同材料与尺度中的不同实现**，而不是由同一套具体机制驱动。这一点，正是许多跨层理论翻车的地方，也是 SRT 必须比"看起来都很像"更进一步的地方。
 
 ## 三、选择结构比什么多了什么：一个尽量严格的最低判准
 
@@ -205,7 +206,7 @@ SRT 把它关心的过程，写成一条开放的链条——不是严格的公�
 
 不是。区别在于 SRT 把分析重点，扩展到了路径依赖研究通常不作为主线处理的两处：
 
-- **SRT 把"被排开者留下的残余结构"提到与"被走通的路径"同等重要的位置。** 路径依赖研究通常聚焦于已形成的路径如何靠锁定和正反馈约束后来；SRT 则把重点也放到那些没有被走的可能——它们并没有变成纯粹的无，而是以残余应力、张力、后续摩擦的方式继续参与系统演化（一道未愈的裂纹周围的应力场、一个被压抑的选项在下一次扰动时重新冒头）。这不是说路径依赖原则上处理不了残余结构，而是说 SRT 把它从边角提到了主线。
+- **SRT 把"被排开者留下的残余结构"提到与"被走通的路径"同等重要的位置。** 路径依赖研究通常聚焦于已形成的路径如何靠锁定和正反馈约束后来；SRT 则把重点也放到那些没有被走的可能所留下的残余结构——例如残余应力、后续摩擦与重新开放的潜在通道。真正继续产生因果作用的不是抽象的反事实选项本身，而是排除过程留下的现实结构。这不是说路径依赖原则上处理不了残余结构，而是说 SRT 把它从边角提到了主线。
 - **SRT 把"候选空间本身如何被内生生成"纳入解释范围。** 路径依赖分析通常从一组已给定的路径出发，解释为何锁定其一；SRT 追问得更早一步——这些路径本身、乃至那个在路径间选择的系统，是怎么被更早的排开与写入生成出来的。菜单的来路，正是 SRT 把准星前移到的地方。
 
 因此，一个自检判据是：**如果把"选择结构"整个换成"路径依赖"而全文无损，那这套理论就只是重命名。** SRT 的独立性不在于宣称路径依赖研究无能，而在于它系统地把分析重点放在三件事上——排除留下的残余结构、剩余的可达性、以及候选空间的内生生成——这三件事正是选择动力学的主战场。顺带说清一件相关的事：随机化、去同步化并不天然就是"没有选择"。一次把系统推离旧稳态的随机涨落，若随后被某个方向捕获、维持并写入，它就成了选择的种子；选择常常正是**对一次偶然差异的维持**，而不是对差异的抹平。差异被放大并锚住，才有选择；差异被热噪声拉平，就只是涨落。
@@ -247,7 +248,7 @@ SRT 不该声称取代这些理论。更恰当、也更谦逊的表述是：
 用第二部分那把判据去筛，满足条件的非生命例子并不罕见：
 
 - **河流切出河道**：一开始水可以漫向很多方向，一旦某处被冲得稍深，水就更倾向走那里，把它冲得更深——微小差异被放大（不对称），一条路径被稳定（维持），河床被写入地形（不可忽略的写入），此后的水流被这条河床约束（可达性改变）。这几乎是判据的教科书演示。
-- **裂纹扩展**：材料里一道细微裂纹造成局部应力集中，使后续断裂更倾向沿它走；裂纹改写了自己未来的走向，而且被它排开的完整材料并未"消失"，而是以周围的应力场继续参与。
+- **裂纹扩展**：材料里一道细微裂纹造成局部应力集中，使后续断裂更倾向沿它走；裂纹改写了自己未来的走向，周围的残余应力场则继续约束后续演化。
 - **晶体成核**与**相变中的对称性破缺**（当收束被维持、且写入不可逆时）：一个对称的过冷液体"选择"了某个取向结晶下来，并以已成形的结构约束后续生长；
 - **磁滞**：磁性材料"记得"自己被磁化的历史，当前状态依赖它走过的路径；
 - **吸引子的形成**、**耗散结构**、**反应扩散生成的图样**（如 Turing 斑图）：系统自发落入并**维持**某些模式——前提是这个模式被稳定维持、并改变了后续可达性，而不是一掠而过。
@@ -262,9 +263,15 @@ SRT 不该声称取代这些理论。更恰当、也更谦逊的表述是：
 
 选择结构是地基，不是意识。地基上还要盖很多层，才谈得上智能、感受和自我。
 
-这里可以顺手安置 SRT 一个更强、也更独特的正面本体论主张，同时把它的力度标清楚。既然"选择结构"这套语言在冰川、雪花和考试制度身上都成立，一个自然的推论是：我们习惯截然对立的"物质"与"意识"，也许不是两种预先存在的原料，而是**同一条选择生成链，在不同条件下形成的不同生成形态**。要紧的是把分野钉在正确的变量上：区分二者的**不是复杂度的高低**，而是这条链上的**组织方式、闭合方式、是否长出相对于系统自身的内生规范性、以及后果是否被一个位置从内部承担**。被我们回读为"物质"的，是那些尚未长出内生规范性与承担、其后果不落回任何位置的收束形态；被我们回读为"意识"的，是这条链在具备了自我维持的组织、后果回流的闭合与内部承担之后所呈现的生成形态。复杂度或许与此相关，但它不是判据——一个极复杂却不承担任何后果的系统，仍在"物质"一侧；把分野挂到复杂度上，就会滑回"复杂到一定程度自然涌现意识"那种复杂涌现论，而这恰恰是本文要避免的。这个立场（可称为"生成分化"）刻意区别于四种邻居：它不是**泛心论**（不把感受赋予基本物质层），不是**物理主义**（不把意识还原或取消为物理过程），不是**性质二元论**（不承认两种并列的不可还原基本性质），也不是**中立一元论**（它不预设一种既非物质也非意识、却携带隐藏属性的"共同基质"；它主张的只是生成链在先，二分是分化的结果，而不是有一块静态底料在被反复塑形）。
+这里可以提出 SRT 一个更强、也更独特的本体论主张：物质与意识不是两种预先存在的原料，而是**同一条选择生成链在不同组织条件下形成的不同显现方式**。
 
-这个主张有真实的解释收益：它给出了"为什么反泛心论成立"的正面理由——不是"意识稀薄地散布在万物里"，而是"意识是这条链在具备了自我维持组织、后果回流闭合与内部承担这些条件之后才出现的生成形态，绝大多数选择结构永远不会满足这些条件"。但它的认识论地位必须写清楚：**这是 SRT 的一项本体论赌注，不是已证定律。** 它是否比现有各家心物立场更能减少系统性误判，要由它组织经验的效果来检验，而不是由它自己宣称。本文把它作为 SRT 的独立声音正面提出，同时不把它写成结论。
+这里不能把二者简单分成"低复杂度的物质"和"高复杂度的意识"，也不能把物质理解成"尚未产生内生规范性的系统"。生命和意识出现以后，系统并不会失去物质性。更准确地说，**物质性**表现为选择结果被写入可公共读取、可测量并持续约束后续过程的结构与关系；**生命性**是在这种物质性组织中进一步形成自我维持，以及相对于系统自身的内生规范性；**意识性**则要求选择动力学继续形成全局利害整合、持续的承担位置和第一人称展开。
+
+因此，物质性、生命性与意识性不是三种并列原料，也不是三个互相排斥的箱子，而是同一生成链逐步增加组织闭合、内生规范性和内部承担后形成的不同维度。一个生命系统可以具有物质性和内生规范性，却尚未形成感受；一个意识系统也不会因为具有第一人称经验，就脱离其物质性组织。SRT 所拒绝的，不是物质世界的真实性，而是把"物质"当成生成发生以前已经定义完毕的唯一终极原料，再把意识视为后来附加上去的第二性质。
+
+这个立场可以称为**生成分化**或**生成一元论**。它刻意区别于四种邻近立场：它不是**泛心论**，因为非生命选择结构并不因此具有微型感受；它不是还原式**物理主义**，因为意识性不能被取消为一组已经完结的外部描述；它不是**性质二元论**，因为第一人称性不是附加在完整物质实体上的第二组基本性质；它也不是**中立一元论**，因为它不预设一种既非物质也非意识、却携带两类潜在属性的静态共同基质。共同性在于生成链，而不是某种隐藏原料。
+
+这一主张有真实的解释收益：它说明了为什么反泛心论与反二元论可以同时成立——意识不是稀薄地散布在万物中的性质，而是选择生成链在形成自我维持、内生规范性、全局利害整合和内部承担后才出现的生成维度。绝大多数选择结构不会满足这些条件。但其认识论地位也必须写清楚：**这是 SRT 的一项本体论赌注，不是已证定律。** "相态"如果被使用，目前也只是结构动力学意义上的类比；SRT 尚未建立秩序参数、相边界和相变方程。
 
 ## 二、生命：不是选择第一次有方向，而是选择第一次有了"对系统自身的好坏"
 
@@ -285,7 +292,7 @@ SRT 不该声称取代这些理论。更恰当、也更谦逊的表述是：
 
 这一图景与几个传统有对话空间，但都不能把 SRT 完全还原进去：与 Schrödinger"以负熵为生"的直觉相邻，但 SRT 谈的是可能空间的收束而非仅仅熵账；与 Maturana 和 Varela 的自创生（autopoiesis）相邻，都强调自我维持的组织，但 SRT 把自我维持放进更广的选择动力学，而不止于生命封闭的自我生产；与内稳态、异稳态（allostasis）、控制论相邻，都谈维持与调节，但 SRT 追问的是"维持之所以对某个位置要紧"这一维，而不只是维持的机制；与 Friston 的自由能原理和主动推理相邻——生命正是通过预测和行动维持可存活状态——但误差最小化本身不解释"这个误差对谁构成不可外包的利害"。这最后一点，是第四步要正面接手的。
 
-到这里为止，我们谈的仍然是"内生好坏"，还不是"感受"。一个系统可以有维持自身的内生规范性，而这个好坏对它自己还什么都"不像"——恒温器有它要维持的设定点，我们并不认为它在受苦。方向、好坏、感受，是三件要分开的事。
+到这里为止，我们谈的仍然是"内生好坏"，还不是"感受"。一个系统可以有维持自身的内生规范性，而这个好坏对它自己还什么都"不像"。方向、好坏、感受，是三件要分开的事。恒温器虽有外部设定的目标值，却没有生命式的内生规范性；而即便一个生命系统已具有内生规范性，也仍需进一步论证它是否具有感受。
 
 ## 三、无意识智能：选择动力学的主动化，以及它的分层
 
@@ -410,11 +417,11 @@ SRT 不该声称取代这些理论。更恰当、也更谦逊的表述是：
 
 ## 环节五　利害赋权与身体内化
 
-**需要什么机制。** 第三部分第四节说，感受的候选机制在于某个差异获得全系统价值权重、把内感受与行动准备一起重排。这一环最需要神经证据。**证据落点。** 内感受（interoception）与情绪的身体根基：心率、呼吸、内脏、疼痛、饥饿这些"来自身体内部"的信号被大脑持续读取和预测（Damasio 的躯体标记假说，Seth 的内感受推断）；显著性网络参与把某些信号标记为"要紧的"；疼痛与情绪把局部事件转成全身动员。**桥接。** 这几乎就是"感受＝利害在内部被承担的形式"的生理版本：SRT 可以把情绪描述为系统对自身状态与未来风险的一次整体性利害读数。内感受之所以在感受问题上如此关键，正因为它读的是"我这具身体现在处境如何"——最难外包、最贴身的利害。**差异。** SRT 会补一句：不是任何身体状态表征都构成感受，关键仍在于这份读数是否落进一个不可重置的持续位置。**独有 vs 相容，失败条件。** 这一环是 SRT 最有可能给出**差异化预测**的地方（见第七部分预测 1、2）：如果"与个体真实得失相关"的内容，并不比同等显著但中性的内容更强地改变内感受网络、记忆巩固与行为泛化，那么"利害是一个独立于全局可用的维度"这一主张就失去经验支撑。
+**需要什么机制。** 第三部分第四节说，感受的候选机制在于某个差异获得全系统价值权重、把内感受与行动准备一起重排。这一环最需要神经证据。**证据落点。** 内感受（interoception）与情绪的身体根基：心率、呼吸、内脏、疼痛、饥饿这些"来自身体内部"的信号被大脑持续读取和预测（Damasio 的躯体标记假说，Seth 的内感受推断）；显著性网络参与把某些信号标记为"要紧的"；疼痛与情绪把局部事件转成全身动员。**桥接。** 这几乎就是"感受＝利害在内部被承担的形式"的生理版本：SRT 可以把情绪描述为系统对自身状态与未来风险的一次整体性利害读数。内感受之所以在感受问题上如此关键，正因为它读的是"我这具身体现在处境如何"——最难外包、最贴身的利害。**差异。** SRT 会补一句：不是任何身体状态表征都构成感受，关键仍在于这份读数是否落进一个持续位置并进入其因果历史，而不是它是否能被外部技术复制或重置。**独有 vs 相容，失败条件。** 这一环是 SRT 最有可能给出**差异化预测**的地方（见第七部分预测 1、2）：如果"与个体真实得失相关"的内容，并不比同等显著但中性的内容更强地改变内感受网络、记忆巩固与行为泛化，那么"利害是一个独立于全局可用的维度"这一主张就失去经验支撑。
 
 ## 环节六　历史闭合与自我
 
-**需要什么机制。** 第三部分第六节的第三层（跨时间历史闭合）需要一套把过去、现在、未来的自己缝成一条线的机制。**证据落点。** 海马记忆系统、默认模式网络（DMN，Raichle、Menon 等）在自传体记忆、未来模拟、自我参照加工和内部叙事中的高度活跃；迷幻状态、深度冥想、心流中自我边界的松动。**桥接。** DMN 是"历史闭合与反身自我"的一个极佳候选接口——它做的很多事（把过去、现在、未来的自己缝成叙事线）正是"历史闭合"。迷幻／冥想／心流则是天然的**分离实验**：反身自我可以被削弱，而基础感受与行动能力并不随之消失——这正好印证第三部分的分层，反身意识是可以被单独调低的那一层。**警告。** 两处必须克制：其一，DMN **不是**自我本身，也不是唯一的意识网络，把"自我"直接等同于一张脑网络，会重蹈"把 gamma 等同于意识"的覆辙——DMN 更适合被看作反身自我的支撑设施之一，而非自我的所在地。其二，不要把迷幻状态草率说成"只是关闭了 DMN"；更准确的图景是网络整合与分离的重构、动态谱的改变——是选择动力学在更大范围内被重新配置，而不是某一个开关被关掉。**失败条件。** 如果反身自我的削弱总是伴随基础感受的同步消失（无法分离），第三部分"感受层与反身层可分层"的主张就会受压。
+**需要什么机制。** 第三部分第六节的第三层（跨时间历史闭合）需要一套把过去、现在、未来的自己缝成一条线的机制。**证据落点。** 海马记忆系统、默认模式网络（DMN，Raichle、Menon 等）在自传体记忆、未来模拟、自我参照加工和内部叙事中的高度活跃；迷幻状态、深度冥想、心流中自我边界的松动。**桥接。** DMN 是"历史闭合与反身自我"的一个重要候选接口——它参与的许多过程（把过去、现在、未来的自己缝成叙事线）与"历史闭合"相呼应。迷幻／冥想／心流则可以被视为潜在的**分离窗口**：反身自我可能被削弱，而基础感受与行动能力不必同步消失。**警告。** 两处必须克制：其一，DMN **不是**自我本身，也不是唯一的意识网络，把"自我"直接等同于一张脑网络，会重蹈"把 gamma 等同于意识"的覆辙——DMN 更适合被看作反身自我的支撑设施之一，而非自我的所在地。其二，不要把迷幻状态草率说成"只是关闭了 DMN"；更准确的图景是网络整合与分离的重构、动态谱的改变，而不是某一个开关被关掉。**失败条件。** 如果反身自我的削弱总是伴随基础感受的同步消失（无法分离），第三部分"感受层与反身层可分层"的主张就会受压。
 
 ## 环节七　门控回写与再选择
 
@@ -422,17 +429,17 @@ SRT 不该声称取代这些理论。更恰当、也更谦逊的表述是：
 
 ## 意识障碍与认知—运动解离：一个把整条链压到临床的判例
 
-有些严重脑损伤患者，在床边行为上完全无反应（被诊断为昏迷或植物状态），却能在功能磁共振或脑电任务中按指令想象打网球、或在房子里走动——他们的大脑在"服从命令"，身体却动不了。这叫认知—运动解离（cognitive motor dissociation, CMD），或"隐匿意识"。继 Owen、Monti 等早期的开创性个案之后，Bodien 等 2024 年发表于《新英格兰医学杂志》的大样本研究给出了迄今最清晰的比例：在 241 名对指令无可观察反应的患者中，60 人（约 25%）在 fMRI 或 EEG 上表现出认知—运动解离——这个比例高于此前普遍认为的水平。
+有些严重脑损伤患者，在床边行为上完全无反应，却能在功能磁共振或脑电任务中按指令想象打网球、或在房子里走动——他们的大脑在"服从命令"，身体却动不了。这叫认知—运动解离（cognitive motor dissociation, CMD），或"隐匿意识"。继 Owen、Monti 等早期的开创性个案之后，Bodien 等 2024 年发表于《新英格兰医学杂志》的大样本研究显示：在 241 名对指令无可观察反应的患者中，60 人（约 25%）在 fMRI 或 EEG 上表现出认知—运动解离。
 
-这对 SRT 有双重意义，两面都要说。一方面，它把"照见不等于移动"推到最沉重的临床对应上：理解、内部状态与运动输出可以彻底分离，**行为上的无反应不等于主体的缺席**，外部行为不是判定主体在场的充分标准。另一方面，它也给 SRT 自己提了个醒：既然行为不可靠，那么判定"利害是否落到一个持续位置头上"，就必须诉诸更内在的动力学证据，而不能偷懒地看输出——这正是第七部分预测 4 要处理的。
+这对 SRT 有双重意义。第一，它把"照见不等于移动"推到临床对应上：理解、内部状态与运动输出可以分离，**行为上的无反应不等于主体的缺席**，外部行为不是判定主体在场的充分标准。第二，它也给 SRT 自己提了个醒：既然行为不可靠，那么判定"利害是否落到一个持续位置头上"，就必须诉诸更内在的动力学证据，而不能只看输出——这正是第七部分预测 4 要处理的。
 
 ## COGITATE：对抗性协作给整条链的教训
 
 COGITATE 是一次"对抗性协作"：让 GNWT 和 IIT 两派的支持者，与一个中立的第三方团队一起，**事先登记**好两个理论的分歧预测与判定标准，再用同一批共享数据（256 名被试；fMRI、MEG、颅内 EEG；观看不同时长的阈上刺激）去检验。结果发表于《自然》（2025）。
 
-结果必须读准，既不能夸大也不能缩小。它**同时**符合两个理论的一些预测，又对两者的关键主张构成实质挑战：与 IIT 的预测相左，研究没有在后部皮层发现持续的同步，这与"网络连接性决定意识"的说法不符；与 GNWT 的预测相左，在刺激消失时并没有出现清晰的、标志性的前额叶"点燃"，且前额叶对意识内容的表征比预期有限。这**不是**"某个理论被彻底证伪"——它是三条具体预测（意识内容在脑中何处表征、如何随时间维持、脑区如何通信）上的、对双方都不完全有利的结果。
+结果必须读准，既不能夸大也不能缩小。它**同时**符合两个理论的一些预测，又对两者的关键主张构成实质挑战：与 IIT 的预测相左，研究没有在后部皮层发现预期的持续同步；与 GNWT 的预测相左，在刺激消失时没有出现预期的清晰前额叶点燃，且前额叶对意识内容的表征比预期有限。这**不是**"某个理论被彻底证伪"——它是在意识内容的空间表征、时间维持和脑区通信等具体预测上，对双方都不完全有利的结果。
 
-恰当的教训是：当前意识研究可能需要越过"单一机制＝意识"的期待，转向**多层结构**的解释——不同机制各自负责选择动力学的不同环节（候选生成、稳定、全局可用、历史绑定……），而没有哪一个环节可以独占"意识"这个名号。这，正是本部分那条机制链试图提供的视角。SRT 不与 GNWT 或 IIT 争夺同一块地盘；它想说的是，这些机制描述的是**同一套选择动力学的不同刻面**，把它们摆在一条"从排开到承担"的链条上，比让它们互相否证更有出路。需要诚实的是：COGITATE 只是让"单一机制＝意识"这种期待变得可疑，它本身并不构成对 SRT 分层图景的正面确证——SRT 的分层能否比现有理论多解释、多预测，仍要由第七部分那些具体预测来兑现。
+恰当的教训是：当前意识研究可能需要越过"单一机制＝意识"的期待，转向**多层结构**的解释——不同机制各自负责选择动力学的不同环节（候选生成、稳定、全局可用、历史绑定……），而没有哪一个环节可以独占"意识"这个名号。这正是本部分机制链试图提供的视角。SRT 不与 GNWT 或 IIT 争夺同一块地盘；它提出，这些机制可以被安放为**共同选择动力学骨架中的不同机制环节**。需要诚实的是：COGITATE 只是让"单一机制＝意识"这种期待变得可疑，它本身并不构成对 SRT 分层图景的正面确证——SRT 的分层能否比现有理论多解释、多预测，仍要由第七部分那些具体预测来兑现。
 
 ---
 
@@ -457,7 +464,7 @@ COGITATE 是一次"对抗性协作"：让 GNWT 和 IIT 两派的支持者，与�
 
 > 当前的 AI 能够处理和生成选择，却通常没有形成一个**必须以自身未来、持续偿付这些选择之后果的个体位置**。它做选择，但没有谁在为这些选择的后果买单。
 
-必须避免第三部分第五节警告过的那串错误推理。这个判断**不是**说"AI 可被复制所以没有感受"——可复制性是外部性质，与某个运行实例内部是否形成连续因果历史、是否承受内生代价，是两码事。这个判断是关于**当前架构**是否让后果真正回流到一个持续位置的，它针对的是 inference-only、非历史承载的部署，而不是硅基系统的形而上禁令。
+必须避免第三部分第五节警告过的错误推理。这个判断**不是**说"AI 可被复制所以没有感受"——可复制性是外部性质，与某个运行实例内部是否形成连续因果历史、是否承受内生代价，是两码事。这个判断是关于**当前架构**是否让后果真正回流到一个持续位置的，它针对的是 inference-only、非历史承载的部署，而不是硅基系统的形而上禁令。
 
 ## 三、未来的人工意识仍然开放
 
@@ -481,7 +488,7 @@ COGITATE 是一次"对抗性协作"：让 GNWT 和 IIT 两派的支持者，与�
 
 - **全局工作空间理论**主要解释：内容何时获得全局可用性。SRT 继续问：这种全局可用性，何时成为某个**持续位置自身**的经验？
 - **整合信息理论**主要解释：系统的内在因果结构如何整合、并具有内在不可约性。SRT 继续问：这个整合结构，何时形成了**自身的利害、历史与后果承担**？
-- **高阶理论**（Rosenthal、Lau）主要解释：一个状态如何被更高阶地再表征，从而形成高阶意识或报告能力。SRT 继续问：在高阶表征出现**之前**，基础感受为何已经存在？（SRT 明确站在"感受先于反身、反身不制造感受"这一边。）
+- **高阶理论**（Rosenthal、Lau）主要解释：一个状态如何被更高阶地再表征，从而形成高阶意识或报告能力。SRT 继续问：在高阶表征出现**之前**，基础感受为何已经存在？SRT 明确站在"感受先于反身、反身不制造感受"这一边。
 - **预测加工与自由能原理**主要解释：系统如何通过预测、更新和行动来维持自身。SRT 继续问：误差何时不只是一个计算差值，而成为对**某个位置有感觉的**后果？
 - **自创生与具身认知**（Maturana、Varela）主要解释：认知如何植根于自我维持的生命组织与身体—环境耦合。SRT 进一步把"自我维持"放进更广的选择动力学里，并说明它如何继续生成智能、感受与反身意识。
 
@@ -505,7 +512,7 @@ COGITATE 是一次"对抗性协作"：让 GNWT 和 IIT 两派的支持者，与�
 
 **4. 隐匿意识是否对切身刺激更敏感（对准 CMD）。** 意识障碍患者对自己的名字、家人的声音、个人记忆、威胁或奖励线索，是否表现出比对中性刺激更复杂、更持续的动态响应？如果"利害绑定"是主体在场的标志，这类刺激应当更能"点得着"一个隐匿的主体。
 
-**5. 人工系统的"个体连续性"可操作化。** 设计实验，把这些通常被混在一起的东西干净地区分开：模型参数更新 vs. 持久的个体记忆；自身损伤 vs. 任务奖励；可复制的类型 vs. 某个运行实例不可替代的因果历史。目标是让"是否存在一个不可替代的持续位置"成为一个**可操作、可测量**的性质，而不是一个哲学口号——注意这里检验的是运行实例的连续因果历史与内生代价，不是"能不能被外部复制"。
+**5. 人工系统的"个体连续性"可操作化。** 设计实验，把这些通常被混在一起的东西干净地区分开：模型参数更新 vs. 持久的个体记忆；自身损伤 vs. 任务奖励；可复制的类型 vs. 某个运行实例不可替代的因果历史。目标是让"是否存在一个持续的承担位置"成为一个**可操作、可测量**的性质，而不是一个哲学口号——注意这里检验的是运行实例的连续因果历史与内生代价，不是"能不能被外部复制"。
 
 **6. 选择动力学的跨层指标。** 最有野心、也最不确定的一项：能否建立一组横跨物理、生物、认知层级的指标，来刻画候选空间的大小、路径的不对称性、历史写入的深度、吸引子的深度、路径重新打开的能力。这一项若做不出来，会是对 SRT"统一动力学"抱负的最直接压力，也正对应下一部分的第三类开放问题。
 
@@ -533,13 +540,13 @@ COGITATE 是一次"对抗性协作"：让 GNWT 和 IIT 两派的支持者，与�
 
 > 传统心理学发现，在意识之下，仍然有智能。
 > SRT 接着提出，在智能之下，仍然有选择动力学。
-> 非生命的选择形成了路径；生命把选择的结果与"能否维持自身"绑在一起，于是选择第一次有了相对于系统自身的内生好坏；无意识智能开始主动利用历史，去调整下一轮选择的条件；感受，是一个后果获得全局利害权重、被写进一个持续位置的历史、并从内部改变它还能如何行动时，这个后果从该位置自身呈现出来的样子；而反身意识，使这整套选择动力学第一次能够回读、并重新选择它自己运行的方式。
+> 非生命的选择形成了路径；生命在物质性组织中形成自我维持与内生规范性；无意识智能开始主动利用历史，去调整下一轮选择的条件；而按照 SRT 的核心构成假说，感受是一个后果获得全局利害权重、被写进持续位置的历史，并从该位置自身展开时的第一人称形态；反身意识则使这套选择动力学第一次能够回读、并重新选择它自身的运行方式。
 
 于是可以给出一句总结性的判断——它是 SRT 押上的核心假说，也是它愿意为之被检验的那个点：
 
 > **SRT 的核心构成假说认为：意识，不是宇宙中选择第一次发生的地方；意识，是选择第一次能够承担自己的后果、并把"自己如何运行"重新变成一个选择对象的地方。**
 
-这句话有明确的立场，也有明确的软肋——第八部分已经把软肋标好了。这正是本文想要的姿态：SRT 尝试把非生命结构、生命适应、智能、感受和自我回读放在同一条选择动力学的生成链上；这条链的某些环节已有概念与经验支撑，某些环节仍是尚待形式化和检验的研究纲领。有主张，有野心，但不把尚未完成的工作写成已经完成的定律。
+这句话有明确的立场，也有明确的软肋——第八部分已经把软肋标好了。这正是本文想要的姿态：SRT 尝试把非生命结构、生命适应、智能、感受和自我回读放在同一条选择生成链上；这条链的某些环节已有概念与经验支撑，某些环节仍是尚待形式化和检验的研究纲领。有主张，有野心，但不把尚未完成的工作写成已经完成的定律。
 
 ---
 
@@ -551,46 +558,64 @@ COGITATE 是一次"对抗性协作"：让 GNWT 和 IIT 两派的支持者，与�
 - James, W. (1890). *The Principles of Psychology*. Henry Holt.（习惯、本能、注意、意志、意识流。）
 - Weiskrantz, L. (1986). *Blindsight: A Case Study and Implications*. Oxford University Press.（盲视。）
 - Libet, B. (1985). "Unconscious cerebral initiative and the role of conscious will in voluntary action." *Behavioral and Brain Sciences*, 8(4), 529–539.（准备电位与意志。）
-- Schurger, A., Sitt, J. D., & Dehaene, S. (2012). "An accumulator model for spontaneous neural activity prior to self-initiated movement." *PNAS*, 109(42), E2904–E2913.（对准备电位的累积器式再解释。）
+- Schurger, A., Sitt, J. D., & Dehaene, S. (2012). "An accumulator model for spontaneous neural activity prior to self-initiated movement." *Proceedings of the National Academy of Sciences*, 109(42), E2904–E2913.（对准备电位的累积器式再解释。）
 - Reber, A. S. (1967). "Implicit learning of artificial grammars." *Journal of Verbal Learning and Verbal Behavior*, 6(6), 855–863.（内隐学习经典。）
-- Nakagaki, T., Yamada, H., & Tóth, Á. (2000). "Maze-solving by an amoeboid organism." *Nature*, 407, 470.（粘菌迷宫求解。）
-- Tero, A., et al. (2010). "Rules for biologically inspired adaptive network design." *Science*, 327(5964), 439–442.（粘菌与东京铁路网。）
+- Nakagaki, T., Yamada, H., & Tóth, Á. (2000). "Maze-solving by an amoeboid organism." *Nature*, 407, 470.（黏菌迷宫求解。）
+- Tero, A., et al. (2010). "Rules for biologically inspired adaptive network design." *Science*, 327(5964), 439–442.（黏菌与东京铁路网。）
 
 ## 意识理论（综述与理论著作）
 - Mashour, G. A., Roelfsema, P., Changeux, J.-P., & Dehaene, S. (2020). "Conscious processing and the global neuronal workspace hypothesis." *Neuron*, 105(5), 776–798.（全局神经工作空间，综述。）
 - Lamme, V. A. F. (2006). "Towards a true neural stance on consciousness." *Trends in Cognitive Sciences*, 10(11), 494–501.（再入／循环加工。）
-- Tononi, G., Boly, M., Massimini, M., & Koch, C. (2016). "Integrated information theory: from consciousness to its physical substrate." *Nature Reviews Neuroscience*, 17(7), 450–461.（IIT，综述）；Albantakis, L., et al. (2023). "Integrated information theory (IIT) 4.0." *PLOS Computational Biology*, 19(10), e1011465.
+- Tononi, G., Boly, M., Massimini, M., & Koch, C. (2016). "Integrated information theory: from consciousness to its physical substrate." *Nature Reviews Neuroscience*, 17(7), 450–461.（IIT，综述。）
+- Albantakis, L., et al. (2023). "Integrated information theory (IIT) 4.0: Formulating the properties of phenomenal existence in physical terms." *PLOS Computational Biology*, 19(10), e1011465.
 - Lau, H., & Rosenthal, D. (2011). "Empirical support for higher-order theories of conscious awareness." *Trends in Cognitive Sciences*, 15(8), 365–373.（高阶理论。）
 - Seth, A. K., & Bayne, T. (2022). "Theories of consciousness." *Nature Reviews Neuroscience*, 23(7), 439–452.（意识理论综述。）
-- Cogitate Consortium (Ferrante, O., Gorska-Klimowska, U., et al.) (2025). "Adversarial testing of global neuronal workspace and integrated information theories of consciousness." *Nature*, 642(8066), 133–142.（GNWT 与 IIT 的对抗性协作；256 名被试，fMRI／MEG／iEEG；预注册对抗设计；对双方关键预测均有支持也有挑战——不是任一理论被证伪。）
+- Cogitate Consortium (Ferrante, O., Gorska-Klimowska, U., et al.) (2025). "Adversarial testing of global neuronal workspace and integrated information theories of consciousness." *Nature*, 642(8066), 133–142.（GNWT 与 IIT 的对抗性协作；256 名被试，fMRI／MEG／iEEG。）
+
+## 神经协调、自我与门控机制
+- Singer, W. (1999). "Neuronal synchrony: A versatile code for the definition of relations?" *Neuron*, 24(1), 49–65.（神经同步与特征关系。）
+- Fries, P. (2015). "Rhythms for cognition: Communication through coherence." *Neuron*, 88(1), 220–235.（通信相干。）
+- Muller, L., Chavane, F., Reynolds, J., & Sejnowski, T. J. (2018). "Cortical travelling waves: Mechanisms and computational principles." *Nature Reviews Neuroscience*, 19(5), 255–268.（皮层行波。）
+- Seeley, W. W., et al. (2007). "Dissociable intrinsic connectivity networks for salience processing and executive control." *Journal of Neuroscience*, 27(9), 2349–2356.（显著性网络与执行控制。）
+- Menon, V., & Uddin, L. Q. (2010). "Saliency, switching, attention and control: A network model of insula function." *Brain Structure and Function*, 214, 655–667.（显著性网络的切换作用。）
+- Raichle, M. E., et al. (2001). "A default mode of brain function." *Proceedings of the National Academy of Sciences*, 98(2), 676–682.（默认模式网络。）
+- Menon, V. (2023). "20 years of the default mode network: A review and synthesis." *Neuron*, 111(16), 2469–2487.（DMN综述。）
+- Carhart-Harris, R. L., et al. (2012). "Neural correlates of the psychedelic state as determined by fMRI studies with psilocybin." *Proceedings of the National Academy of Sciences*, 109(6), 2138–2143.（迷幻状态与网络改变。）
+- Tagliazucchi, E., Carhart-Harris, R., Leech, R., Nutt, D., & Chialvo, D. R. (2014). "Enhanced repertoire of brain dynamical states during the psychedelic experience." *Human Brain Mapping*, 35(11), 5442–5456.（迷幻状态中的动态状态谱。）
+- Botvinick, M. M., Braver, T. S., Barch, D. M., Carter, C. S., & Cohen, J. D. (2001). "Conflict monitoring and cognitive control." *Psychological Review*, 108(3), 624–652.（冲突监控。）
+- O'Reilly, R. C., & Frank, M. J. (2006). "Making working memory work: A computational model of learning in the prefrontal cortex and basal ganglia." *Neural Computation*, 18(2), 283–328.（前额叶—基底节门控。）
+- Fleming, S. M., & Lau, H. C. (2014). "How to measure metacognition." *Frontiers in Human Neuroscience*, 8, 443.（元认知测量。）
 
 ## 预测加工、内感受与情绪
-- Friston, K. (2010). "The free-energy principle: a unified brain theory?" *Nature Reviews Neuroscience*, 11(2), 127–138.
+- Friston, K. (2010). "The free-energy principle: A unified brain theory?" *Nature Reviews Neuroscience*, 11(2), 127–138.
 - Seth, A. K., & Friston, K. J. (2016). "Active interoceptive inference and the emotional brain." *Philosophical Transactions of the Royal Society B*, 371(1708), 20160007.
-- Damasio, A. (1994). *Descartes' Error*. Putnam；Damasio, A. (1999). *The Feeling of What Happens*. Harcourt.（躯体标记与意识。）
+- Damasio, A. (1994). *Descartes' Error*. Putnam.
+- Damasio, A. (1999). *The Feeling of What Happens*. Harcourt.（躯体标记与意识。）
 - Parr, T., Pezzulo, G., & Friston, K. (2022). *Active Inference: The Free Energy Principle in Mind, Brain, and Behavior*. MIT Press.
 
 ## 临床意识研究
-- Casali, A. G., et al. (2013). "A theoretically based index of consciousness independent of sensory processing and behavior." *Science Translational Medicine*, 5(198), 198ra105.（PCI 提出。）
-- Casarotto, S., et al. (2016). "Stratification of unresponsive patients by an independently validated index of brain complexity." *Annals of Neurology*, 80(5), 718–729.（PCI 的分层验证；阈值来自特定样本与协议，非宇宙普适相变点。）
-- Owen, A. M., et al. (2006). "Detecting awareness in the vegetative state." *Science*, 313(5792), 1402.；Monti, M. M., et al. (2010). "Willful modulation of brain activity in disorders of consciousness." *New England Journal of Medicine*, 362(7), 579–589.（隐匿意识早期个案。）
-- Bodien, Y. G., et al. (2024). "Cognitive motor dissociation in disorders of consciousness." *New England Journal of Medicine*, 391(7), 598–608.（认知—运动解离；在 241 名对指令无可观察反应的患者中，60 人／约 25% 检出 CMD。）
+- Casali, A. G., et al. (2013). "A theoretically based index of consciousness independent of sensory processing and behavior." *Science Translational Medicine*, 5(198), 198ra105.（PCI提出。）
+- Casarotto, S., et al. (2016). "Stratification of unresponsive patients by an independently validated index of brain complexity." *Annals of Neurology*, 80(5), 718–729.（PCI的分层验证；阈值来自特定样本与协议。）
+- Owen, A. M., et al. (2006). "Detecting awareness in the vegetative state." *Science*, 313(5792), 1402.（隐匿意识早期个案。）
+- Monti, M. M., et al. (2010). "Willful modulation of brain activity in disorders of consciousness." *New England Journal of Medicine*, 362(7), 579–589.
+- Bodien, Y. G., et al. (2024). "Cognitive motor dissociation in disorders of consciousness." *New England Journal of Medicine*, 391(7), 598–608.（241名无行为指令反应患者中60名检出CMD。）
 
 ## 生命、自组织与统一动力学
 - Schrödinger, E. (1944). *What Is Life?* Cambridge University Press.
-- Nicolis, G., & Prigogine, I. (1977). *Self-Organization in Nonequilibrium Systems*. Wiley；Prigogine, I., & Stengers, I. (1984). *Order Out of Chaos*. Bantam.（耗散结构与非平衡热力学。）
+- Nicolis, G., & Prigogine, I. (1977). *Self-Organization in Nonequilibrium Systems*. Wiley.
+- Prigogine, I., & Stengers, I. (1984). *Order Out of Chaos*. Bantam.（耗散结构与非平衡热力学。）
 - Maturana, H., & Varela, F. (1980). *Autopoiesis and Cognition*. Reidel.（自创生。）
 - Haken, H. (1983). *Synergetics: An Introduction* (3rd ed.). Springer.（协同学。）
 - Kauffman, S. (1993). *The Origins of Order*. Oxford University Press.（自组织与生命。）
-- England, J. L. (2013). "Statistical physics of self-replication." *Journal of Chemical Physics*, 139(12), 121923.（耗散适应。）
+- England, J. L. (2013). "Statistical physics of self-replication." *Journal of Chemical Physics*, 139(12), 121923.（自复制的统计物理。）
 - Deacon, T. (2011). *Incomplete Nature: How Mind Emerged from Matter*. Norton.（目的动力学、约束与"缺席"。）
 
 ## 最小认知与非神经智能
-- Levin, M. (2022). "Technological approach to mind everywhere." *Frontiers in Systems Neuroscience*, 16, 768201.（生物电、形态发生与"问题空间"。）
-- Lyon, P., Keijzer, F., Arendt, D., & Levin, M. (eds.) (2021). Theme issue "Basal cognition." *Philosophical Transactions of the Royal Society B*, 376(1820).（最小／基础认知专辑。）
+- Levin, M. (2022). "Technological approach to mind everywhere." *Frontiers in Systems Neuroscience*, 16, 768201.（生物电、形态发生与问题空间。）
+- Lyon, P., Keijzer, F., Arendt, D., & Levin, M. (Eds.). (2021). Theme issue "Basal cognition." *Philosophical Transactions of the Royal Society B*, 376(1820).（最小／基础认知专辑。）
 
 ## 人工意识
-- Butlin, P., Long, R., et al. (2023). "Consciousness in artificial intelligence: insights from the science of consciousness." arXiv:2308.08708.（AI 意识指标清单。）
+- Butlin, P., Long, R., et al. (2023). "Consciousness in artificial intelligence: Insights from the science of consciousness." arXiv:2308.08708.（AI意识指标清单。）
 - Chalmers, D. J. (2023). "Could a large language model be conscious?" arXiv:2303.07103 / *Boston Review*.（大型语言模型与意识问题。）
 
-*文献核查说明：以上 2024–2025 年的两项关键文献（COGITATE, *Nature* 642:133–142；Bodien 等, *NEJM* 391:598–608）的期卷页码与核心数据已经核对。其余为各领域公认的原始研究、综述或理论著作，读者可据作者、刊名、年份检索。若个别卷期号在不同版本间有出入，以出版方正式页面为准。*
+*文献核查说明：COGITATE（2025）与 Bodien 等（2024）的期卷页码和本文使用的核心数据已经核对。其余条目已按作者、题名、刊名与年份列出；正式对外发布前，仍应逐项对照出版方页面复核卷期、页码、作者顺序及正文引注。*
