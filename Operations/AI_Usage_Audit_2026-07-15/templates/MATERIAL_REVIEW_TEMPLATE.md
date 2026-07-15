@@ -3,6 +3,8 @@ id: SRT-TEMPLATE-MATERIAL-REVIEW
 type: template
 tags: [Template, Material, Pipeline1]
 status: active_v1
+layer: operations
+epistemic_layer: workflow
 claim_mode: prompt
 canonical: false
 date: 2026-07-15

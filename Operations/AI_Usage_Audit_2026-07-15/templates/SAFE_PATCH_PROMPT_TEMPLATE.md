@@ -3,6 +3,8 @@ id: SRT-TEMPLATE-SAFE-PATCH-PROMPT
 type: template
 tags: [Template, SafePatch, Codex, LongFile]
 status: active_v1
+layer: operations
+epistemic_layer: workflow
 claim_mode: prompt
 canonical: false
 date: 2026-07-15

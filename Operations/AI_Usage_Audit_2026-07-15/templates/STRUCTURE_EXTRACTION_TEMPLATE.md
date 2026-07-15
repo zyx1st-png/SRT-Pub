@@ -3,6 +3,8 @@ id: SRT-TEMPLATE-STRUCTURE-EXTRACTION
 type: template
 tags: [Template, Structure, Extraction, Governance]
 status: active_v1
+layer: operations
+epistemic_layer: workflow
 claim_mode: prompt
 canonical: false
 date: 2026-07-15
