@@ -348,6 +348,8 @@ A synchronously driven third-person avatar remains compatible with an external-a
 
 Source trail: [PH-AG04 patch](patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md), [PH-AG04 Integration Hook](hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md), and [Imaizumi et al. SourceCard](../Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md).
 
+The S0-S6 ladder and bearer-unit gate remain governed by this interface. For the detailed S5 mechanism and the S5-to-S6 responsibility-position route, see the non-canonical [Agency–Subjecthood Synthesis v0.2](SRT_Philosophy_Agency_Subjecthood_v0_2.md).
+
 ---
 
 ## 8. S6 — Responsibility-bearing subject

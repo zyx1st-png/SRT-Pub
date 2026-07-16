@@ -80,15 +80,17 @@ minimal predictive individuation
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
+| PH-AG01 agency ladder | `Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md` | selection-control ladder from causal activity through shared agency; prevents both agency overextension and reflective-intention overrestriction | High |
 | PH-AG02 knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | triggering versus structuring cause; bias efficacy versus `T_dir` readability and stake ownership | High |
 | PH-AG03 constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | evidence support, final guarantee, commitment and responsibility-position separation; delay cost | High |
+| PH-AG04 sensorimotor time / agency | `Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md` | control, authorship, bodily ownership and reflective integration dissociation; external-effector and shared-agency boundary | High |
 | PH-SEM01 bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | assertion, denial and open remainder; typed clashes; context repair and false-dilemma diagnostics | High |
 | PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents emergence from functioning as an unexplained primitive | Medium-high |
 | PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | distinguishes situated access differences from immediate metaphysical gaps | Medium-high |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
 | SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
 
-PH-AG02, PH-AG03 and PH-SEM01 should later be folded into:
+PH-AG01 through PH-AG04 and PH-SEM01 are synthesized in the following non-canonical draft:
 
 ```text
 Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
@@ -122,7 +124,7 @@ strict incompatibility
 != script-generated false dilemma
 ```
 
-PH-CONSC01 later joins the agency/subjecthood synthesis as the consciousness-side ownership gate. PH-CONSC02 remains tied to `Philosophy/SRT_HardProblem_Epistemology.md`. SOC-COG02 remains tied to `Philosophy/SRT_Social_Cognition.md`. PH-METH01 remains tied to `Core/SRT_Core_21c_Bridge_Hypotheses.md` and `Governance/SRT_CLAIM_LADDER.md`.
+PH-CONSC01 joins the agency/subjecthood synthesis as the consciousness-side ownership gate without canonical promotion. PH-CONSC02 remains tied to `Philosophy/SRT_HardProblem_Epistemology.md`. SOC-COG02 remains tied to `Philosophy/SRT_Social_Cognition.md`. PH-METH01 remains tied to `Core/SRT_Core_21c_Bridge_Hypotheses.md` and `Governance/SRT_CLAIM_LADDER.md`.
 
 All philosophy patches preserve:
 
