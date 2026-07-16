@@ -1,7 +1,7 @@
 ---
 id: SRT-2026-07-16-FIRST-PRIORITY-READING-INDEX
 type: material_packet_index
-status: active_v2
+status: active_v3
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
@@ -18,31 +18,33 @@ tags: [PhilPapers, priority-reading, source-cards, SRT, AI, logic, subjectivity,
 
 - 用户清单中的第一优先级材料：**7 项**（6 篇论文/章节 + 1 本专著）。
 - SourceCard：**7/7 已建立**。
-- 目标全文成功取得：**1/7**。
-- 全文精读完成：Kristina Šekrst, *To Train a Mockingbird*。
-- 该文已从 `B1/B2` 升级为 **A**，并创建 AI evidence-provenance Patch；其余 6 项仍为 `B1`、`B2` 或 `B1/B2`。
+- 目标全文成功取得：**2/7**。
+- 全文精读完成：
+  1. Kristina Šekrst, *To Train a Mockingbird*；
+  2. Wayne Wu, *Being Biased and Knowing How to Reason*。
+- 两篇均已升级为 **A** 并建立非 canonical Patch；其余 5 项仍为 `B1`、`B2` 或 `B1/B2`。
 - 未修改 canonical `d-value`、`Psi_f`、`T_dir` 或意识定义。
 - 其余材料重评日期：2026-10-16，或任一目标全文先行取得时立即重评。
 
-> 当前只有 Šekrst 卡可以作为全文精读引用；其余卡仍是摘要约束论证重建，不得伪装为逐段精读。
+> 当前只有 Šekrst 与 Wu 两张卡可以作为全文精读引用；其余卡仍是摘要约束论证重建。
 
 ## 2. 卡片导航
 
 | 排序 | 材料 | 卡片 | 当前裁决 | 最强 SRT 接口 |
 |---:|---|---|---|---|
-| 1 | Kristina Šekrst, *To Train a Mockingbird* | [SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md](SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md)；[AIEVID01 Patch](../../AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md) | **A / full-text close-read** | target-overlap provenance discount；stake evidence / stake / consciousness evidence 三分 |
-| 2 | Wayne Wu, *Being Biased and Knowing How to Reason* | [SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md](SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md) | B1 | 推理作为选择性行动；bias efficacy / readability / revisability |
-| 3 | Amir Sulic, *Logical time, (un)certainty, and the structure of the subject* | [SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md](SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md) | B1 | 行动先于完整确定性；主体位置由结论行动形成 |
-| 4 | Konstantinos Georgatos, *Conditional Logics of Nondeterministic Change* | [SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md](SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md) | B1 | 分叉未来、实际转换、历史写入、更新算子 |
-| 5 | Ryan Simonelli, *Implication Space Semantics as Bilateral Incompatibility Semantics* | [SRC_2026_07_16_Semantics_Simonelli_Implication_Space.md](SRC_2026_07_16_Semantics_Simonelli_Implication_Space.md) | B1 | 选择的正向承诺与负向排除；假两难与排除规则 |
-| 6 | Raja Rosenhagen, *Explanatory Articulation and Metaphysical Identity* | [SRC_2026_07_16_Philosophy_Rosenhagen_Explanatory_Identity.md](SRC_2026_07_16_Philosophy_Rosenhagen_Explanatory_Identity.md) | B2/B1 | explanation / projection / identity 的 claim-ladder 守门 |
-| 7 | Chris Sawyer, *Subtraction* | [SRC_2026_07_16_Method_Sawyer_Subtraction.md](SRC_2026_07_16_Method_Sawyer_Subtraction.md) | B1/B2 | SRT 最小核心与变量不可删除性审计 |
+| 1 | Kristina Šekrst, *To Train a Mockingbird* | [SourceCard](SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md)；[AIEVID01 Patch](../../AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md) | **A / full-text close-read** | target-overlap provenance discount；stake evidence / stake / consciousness evidence 三分 |
+| 2 | Wayne Wu, *Being Biased and Knowing How to Reason* | [SourceCard](SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md)；[PH-AG02 Patch](../../Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md) | **A / full-text close-read** | triggering vs structuring cause；bias efficacy / readability / ownership 三分；ChoiceMap bias scaffold |
+| 3 | Amir Sulic, *Logical time, (un)certainty, and the structure of the subject* | [SourceCard](SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md) | B1 | 行动先于完整确定性；主体位置由结论行动形成 |
+| 4 | Konstantinos Georgatos, *Conditional Logics of Nondeterministic Change* | [SourceCard](SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md) | B1 | 分叉未来、实际转换、历史写入、更新算子 |
+| 5 | Ryan Simonelli, *Implication Space Semantics as Bilateral Incompatibility Semantics* | [SourceCard](SRC_2026_07_16_Semantics_Simonelli_Implication_Space.md) | B1 | 选择的正向承诺与负向排除；假两难与排除规则 |
+| 6 | Raja Rosenhagen, *Explanatory Articulation and Metaphysical Identity* | [SourceCard](SRC_2026_07_16_Philosophy_Rosenhagen_Explanatory_Identity.md) | B2/B1 | explanation / projection / identity 的 claim-ladder 守门 |
+| 7 | Chris Sawyer, *Subtraction* | [SourceCard](SRC_2026_07_16_Method_Sawyer_Subtraction.md) | B1/B2 | SRT 最小核心与变量不可删除性审计 |
 
-## 3. 跨文献综合：四条真正值得推进的线
+## 3. 已稳定的跨文献增量
 
 ### 3.1 Stake evidence provenance
 
-Šekrst 全文精读后，SRT 的 AI stake 证据门可稳定扩展为：
+Šekrst 全文支持：
 
 ```text
 observable sign / indicator
@@ -55,28 +57,56 @@ observable sign / indicator
 -> candidate stake evidence
 ```
 
-全文还迫使 SRT 明确：
+并要求保留：
 
 ```text
-优化来源折损 ≠ 结构不存在
-reward-invariance ≠ stake
-stake evidence ≠ stake
-stake ≠ phenomenal consciousness
+优化来源折损 != 结构不存在
+reward-invariance != stake
+stake evidence != stake
+stake != phenomenal consciousness
 ```
 
-### 3.2 Selection before settled certainty
+### 3.2 Selection before a determinate cognitive trajectory
 
-Wu 与 Sulic 从不同传统指向同一压力：
+Wu 全文将认知行动的结构压为：
 
-- 有限推理必须在多条可继续路径中形成 bias；
-- 行动有时必须先于完整认识论确定性；
-- 主体并非总是完整先在，而可能在承担一个方向后形成可归责位置。
+```text
+many-many available continuations
+-> knowledge / intention as structural bias
+-> attention selects an input to guide response
+-> an enacted reasoning trajectory
+```
 
-安全结论是认知/主体层的 P3 bridge，不是 P0 起源证明。
+安全结论是：
 
-### 3.3 Branch, exclusion, and inscription
+- 可靠因果转换不充分等于主体推理；
+- bias 可作为 structuring cause，而非新增 premise；
+- 自动、无意识的 bias 可以有效；
+- `bias efficacy != T_dir readability != stake ownership`；
+- 该模型是 P3 认知行动桥，不是 P0 选择起源证明。
 
-Georgatos 与 Simonelli 分别提供动态和语义接口：
+### 3.3 ChoiceMap 的双重硬化
+
+两篇全文共同要求 ChoiceMap：
+
+1. 不把模型训练出来的“关切感、确信感、建议感”当作 stake；
+2. 不把增加选项、理由和规则本身当作改善选择。
+
+稳定管线：
+
+```text
+expand options
+-> reveal default / installed biases
+-> identify which knowledge actually organizes attention
+-> declare bearer and horizon
+-> state revision conditions
+-> preserve reselection
+-> return convergence to user
+```
+
+### 3.4 Branch, exclusion, and inscription（待全文）
+
+Georgatos 与 Simonelli 仍提供候选结构：
 
 ```text
 choice
@@ -87,49 +117,52 @@ choice
 + history inscription
 ```
 
-这比“从集合中取一个值”更接近 SRT，但仍缺 `Psi_f`、stake、bearer 与真实后果。
+但在取得全文前不得进入形式 Patch。
 
-### 3.4 Methodological hardening
+### 3.5 Methodological hardening（待全文）
 
-Rosenhagen 与 Sawyer 共同施压：
+Rosenhagen 与 Sawyer 继续提供：
 
-- 解释越来越好，不等于无条件本体同一；
-- 变量越来越多，不等于理论越来越强；
-- 每个 SRT 变量需要说明投影条件和不可删除工作；
-- 不能被竞争理论减掉而不损失解释力。
+- 解释成功不等于本体同一；
+- 变量增加不等于理论增强；
+- 每个变量必须说明投影条件和删除后损失。
 
-## 4. 已完成产物与下一顺序
+## 4. 已完成产物
 
-### 4.1 已完成
+### 4.1 Šekrst
 
-**Šekrst / To Train a Mockingbird**
+- 全文 SourceCard 升级；
+- `AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md`；
+- `AI/AI_POSITIONING_NOTE.md` evidence-provenance bridge note；
+- A 类，只融入 AI 证据治理层。
 
-- 全文 SourceCard 已升级；
-- 已创建 `AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md`；
-- 已在 `AI/AI_POSITIONING_NOTE.md` 增加 evidence-provenance bridge note；
-- 裁决为 A，但只融入 AI 证据治理层。
+### 4.2 Wu
 
-### 4.2 下一批全文精读顺序
+- 全文 SourceCard 升级；
+- `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md`；
+- `Philosophy/hooks/PH_AG02_Reasoning_Bias_Integration_Hook.md`；
+- A 类，融入 agency / reasoning bridge，不改 `T_dir` 定义。
 
-1. **Georgatos**：核验完整公理、语义和完备性，判断能否建立 branch/update/history formal Patch。
-2. **Wu**：核验演绎推理的 action-underdetermination，建立 reasoning-as-selective-action Patch。
-3. **Simonelli**：核验 bilateral position 与 incompatibility entailment，推进 ChoiceMap 排除结构。
-4. **Sulic**：核验“无正当化”与主体化结构，形成 certainty-after-selection 哲学桥。
-5. **Rosenhagen**：与 Hill 原文成对精读后，决定是否升级 claim-hygiene。
-6. **Sawyer**：取得目录与核心章节后，决定是否建立 subtractive audit workflow。
+## 5. 下一批全文精读顺序
 
-## 5. 不应立即做的事
+1. **Georgatos**：完整公理、语义和完备性，判断能否建立 branch/update/history formal Patch。
+2. **Simonelli**：bilateral position 与 incompatibility entailment，推进 ChoiceMap 排除结构。
+3. **Sulic**：“无正当化”、逻辑时间与主体化结构。
+4. **Rosenhagen**：与 Hill 原文成对精读，决定是否升级 claim-hygiene。
+5. **Sawyer**：目录和核心章节，判断是否建立 subtractive audit workflow。
+
+## 6. 不应立即做的事
 
 - 不把 Šekrst 论文写成“当前 LLM 无意识”的证明。
-- 不把 reward-invariance、anti-reward persistence 或 shutdown resistance 写成 stake 充分条件。
-- 不把 stake 等同于现象意识或 canonical `d-value`。
+- 不把 reward-invariance 或 shutdown resistance 写成 stake 充分条件。
+- 不把 Wu 的 bias 等同于 `ε_pg`、`G_hat_theta`、`T_dir` 或自由意志。
+- 不把空间线索研究写成逻辑推理机制的直接验证。
+- 不把 action underdetermination 写成逻辑或本体不确定。
 - 不把 branching tree 直接等同于 `L0/L1/L2`。
 - 不把 semantic incompatibility 等同于物理不可能。
-- 不把 bias 等同于 `ε_pg`、`Ĝ_θ` 或自由意志。
 - 不把“解释成功”升级为 `Psi_f`、`d` 或 `T_dir` 的无条件 identity。
-- 不因 “Subtraction” 与 SRT 最小公理契合就视为理论背书。
 
-## 6. 统一重评门
+## 7. 统一重评门
 
 任一剩余材料转 A 前至少满足：
 
