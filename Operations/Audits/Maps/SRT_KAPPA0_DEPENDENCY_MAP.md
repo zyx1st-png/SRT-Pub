@@ -49,6 +49,7 @@ tags: [Governance, SubtractiveAudit, DependencyMap, Kappa0]
 | K11 | `Core/SRT_Core_12b_Ontology_L2.md` · Co-Evolution / κ_c1 | [C] | canonical | κ₀ in co-evolution & κ_c1 context | interpretive continuity | mirror of K3/K4 |
 | K12 | `Philosophy/SRT_Causality_Time.md`; `Core_Law/SRT_Individuation.md`; `Philosophy/SRT_Consciousness_Conditions.md` | [A] | interpretive | cite κ₀ for bootstrap / time / κ_c1 | none load-bearing (cited, not constitutive) | — |
 | K13 | `_SRT_SYMBOL_TABLE.md` · κ₀, κ(t) rows | [C] | canonical registry | Registry definition + κ namespace guard (Usage Rule 15) | registry entry | — |
+| K14 | `Core_Law/SRT_L0_Metaphysics.md` · §六 (ε / κ₀) | [C] | canonical | **Primary L₀ node.** κ₀ **supplies L₀ non-flatness**; κ₀ is the **structural prerequisite for bootstrap** (Ax-L0-Bootstrap); κ₀ is **NOT an independent normative postulate** (`结构性承诺，不承载方向` — carries no direction); **explicit κ₀/ε relation**: ε is L₀'s sole *directional* postulate, κ₀ is the *non-flatness* prerequisite (the two are distinguished here) | the L₀ bootstrap prerequisite | ε (directional) is a distinct postulate; **read-only / FORBIDDEN to edit** this pass |
 | — | `Manifesto/SRT_MANIFESTO.md`; `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | [A]/[B] | narrative / bridge | slogan / domain echo | none | — |
 
 **Split mirrors [S] (duplicated, not independent):** `Core/Ontology_L0L1_Split/00_Part01.md`, `Core/Equations_Split/00_Part01.md`, `Core/Axioms_Split/00_Part01.md`, `Core/Ontology_L2_Split/00_Part01.md`.
@@ -77,5 +78,5 @@ tags: [Governance, SubtractiveAudit, DependencyMap, Kappa0]
 
 1. **κ₀ has a spread of roles, not one.** Equation divisor (K5/K6) · Ψ_f floor (K2) · κ_c1 source (K3) · κ(t) IC+floor (K4) · d-alignment base (K8/K9) · L₀ accessibility (K10) · fixed-point existence (K1/K7). A single residue label would be false; classification must be per-role (see main report §7).
 2. **The divisor role (K5) is the most substitutable**; the accessibility role (K10) is the least.
-3. **κ₀ co-refers with ε_pg.** T-L0-Kappa0 is self-described as the geometric refinement of T-Core-A1C2 (ε_pg). They are not fully independent primitives (see joint tests, main report §5–§8).
+3. **κ₀ / ε_pg relation is corpus-contested.** `T-L0-Kappa0` self-describes as the geometric refinement of T-Core-A1C2 (ε_pg) and treats κ₀ as directional; but `Core_Law/SRT_L0_Metaphysics.md §六` (K14) calls κ₀ **non-directional** and "not an independent normative postulate," with ε the sole directional postulate. The two canonical files are *related* but **disagree on how** (main report §11.5) — not fully independent primitives, not cleanly identical either.
 4. **κ₀'s own origin is admitted-open** by its own authority file (`L0_Ontological_Status §二`, §"open questions"), consistent with `Core/SRT_OPEN_TENSIONS.md §7 / P0-04`.
