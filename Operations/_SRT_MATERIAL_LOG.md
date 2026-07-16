@@ -79,14 +79,14 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-05-23 | 2026-08-23 | Essentia Foundation / Stephen Jarosek: *Association as causation: The fabric of meaning and existence itself* | `B2/B3`：公共 metaphysics / systems-theory essay，适合作为 association-vs-selection guardrail 候选；表达素材可入 public prose，但不能写成 SRT=association ontology、association 是 SRT 第一原则、association 直接等于 causation/meaning/existence、physicalism provides no answers、Kastrup idealism 背书，或 quantum contextuality / RQM 支持 SRT ontology |
 | 2026-05-23 | 2026-08-23 | Neuroscience News / Newcastle University: *Using Physics Equations to Map Memory Distortions* / `Quantum Emotions` | `B1/B2`：`B1` for order-sensitive emotional-memory modeling if future paper/model/data appears；`B2` until then as quantum-cognition guardrail；当前无 peer-reviewed 结果/模型方程/数据，不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `Ψ_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure |
 | 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`Ψ_f`、`T_dir`、`Ĝ_theta` |
-| 2026-07-16 | 2026-10-16 | PhilPapers first-priority packet: Šekrst, Wu, Sulic, Georgatos, Simonelli, Rosenhagen, Sawyer（[packet index](../Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md)） | Mixed packet：7/7 SourceCards complete；Šekrst、Wu、Sulic 全文已取得并分别以 `AIEVID01`、`PH-AG02`、`PH-AG03` patch 升级为 A；4/7 仍为 B 等待全文。下一优先为 Georgatos formal system、Simonelli bilateral semantics、Rosenhagen/Sawyer methodology。不得把剩余摘要卡写成全文精读、外部验证或 canonical 支撑 |
+| 2026-07-16 | 2026-10-16 | PhilPapers first-priority packet: Šekrst, Wu, Sulic, Georgatos, Simonelli, Rosenhagen, Sawyer（[packet index](../Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md)） | Mixed packet：7/7 SourceCards complete；Šekrst、Wu、Sulic、Simonelli 全文已取得并分别以 `AIEVID01`、`PH-AG02`、`PH-AG03`、`PH-SEM01` patch 升级为 A；3/7 仍为 B 等待全文。下一优先为 Georgatos formal system、Rosenhagen/Sawyer methodology。不得把剩余摘要卡写成全文精读、外部验证或 canonical 支撑 |
 
 ---
 
 ## 统计摘要（自动更新）
 
 - 总提交：190 条
-- A（融入）：120 条
-- B（观察）：20 条
+- A（融入）：121 条
+- B（观察）：19 条
 - C（拒绝）：50 条
-- 融入率：63.2%
+- 融入率：63.7%
