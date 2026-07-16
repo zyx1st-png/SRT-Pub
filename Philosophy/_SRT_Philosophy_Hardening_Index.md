@@ -11,6 +11,7 @@
 | Agency ladder / selection-control architecture | `Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md` | agency is not all selection and not only reflective intention; SRT should distinguish causal activity, selection, controlled selection, minimal agency, intentional agency, conscious agency, and shared agency | High-priority agency/subjecthood bridge; full-text close reading pending |
 | PH-AG02 Knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | reliable reason-to-response transition is not yet agentive reasoning; learned knowledge may organize attention and input-output coupling as a structural bias, while bias efficacy remains distinct from `T_dir` readability and stake ownership | A / full-text close-read bridge; integration hook added |
 | PH-AG03 Constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | reasons may constrain action without supplying a final guarantee; a time-sensitive commitment can establish a responsibility-bearing position, while commitment, retroactive certainty and `T_dir` remain distinct | A / author-version full-text close-read bridge; integration hook added |
+| PH-SEM01 Bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | practical positions should distinguish assertion, denial and open remainder; defeasible clashes may be repaired by added context, while incompatibility remains irreducible to positive consequence, agency or stake | A / penultimate-draft full-text close-read bridge; integration hook added |
 | PH-METH01 Emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | emergence is not an explanatory primitive; SRT bridge claims must specify mechanism, transition condition, macro-pattern, and implementation channel before using emergence/downward-causation language | Integrated guardrail in `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
 | PH-CONSC02 Perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | hard-problem arguments should not smuggle in a disembodied outside view of science; first-person and third-person descriptions are routed as situated access differences before metaphysical gaps | Integrated guardrail in `Philosophy/SRT_HardProblem_Epistemology.md` |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
@@ -101,6 +102,37 @@ anticipated certainty = T_dir
 Sulic solves P0-04
 ```
 
+### PH-SEM01 bilateral position / context-repair bridge
+
+Use Simonelli to distinguish positive commitment, explicit denial and open remainder, and to test whether an apparent clash is strict or defeasible:
+
+```text
+assertions
++ denials
++ left-open positions
++ typed incompatibilities
++ repair conditions
+```
+
+Safe uses:
+
+- a selected option need not deny every unselected alternative;
+- material incompatibility may fail persistence when exception information is added;
+- context enrichment can reopen options without simply reversing the prior choice;
+- incompatibility and committive consequence should remain separate dimensions;
+- pathological closure may involve promoting defeasible clashes into unrevisable strict impossibilities.
+
+Do not claim:
+
+```text
+semantic incompatibility = physical impossibility
+incompatibility profile = d-value or option quality
+non-persistence applies to strict contradiction
+position = subject or stake-bearer
+incompatibility alone defines selection
+Simonelli proves selection-first ontology
+```
+
 ---
 
 ## 2. Recommended future synthesis
@@ -121,11 +153,15 @@ Proposed additions:
 6. Constitutive commitment and delay cost
 7. Responsibility-bearing position vs complete subjecthood
 8. Retroactive stabilization vs retrocausation
-9. Conscious agency as self-coupled L1 action ownership
-10. Shared agency as intersubjective L2 coordination
-11. d-value as concern-bearing relevance, not mere salience
-12. Psi_f as action-transition friction
-13. Boundary cautions: avoid overextension and overrestriction
+9. Bilateral position: assertion / denial / open remainder
+10. Strict versus defeasible incompatibility
+11. Context repair and recomposition
+12. Positive consequence versus negative exclusion
+13. Conscious agency as self-coupled L1 action ownership
+14. Shared agency as intersubjective L2 coordination
+15. d-value as concern-bearing relevance, not mere salience
+16. Psi_f as action-transition friction
+17. Boundary cautions: avoid overextension and overrestriction
 
 ---
 
@@ -143,6 +179,10 @@ PH-AG03 SourceCard = author-version full-text upgraded
 PH-AG03 patch = added
 PH-AG03 integration hook = added
 PH-AG03 canonical merge = deferred
+PH-SEM01 SourceCard = penultimate-draft full-text upgraded
+PH-SEM01 patch = added
+PH-SEM01 integration hook = added
+PH-SEM01 canonical merge = deferred
 PH-METH01 SourceCard = added
 PH-METH01 patch = added
 PH-METH01 hook = added
