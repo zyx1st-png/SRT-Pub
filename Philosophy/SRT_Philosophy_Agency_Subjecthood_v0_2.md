@@ -28,10 +28,11 @@ tags:
   - Commitment
   - Shared-Agency
 machine_summary: >
-  Non-canonical synthesis of the SRT agency ladder, controlled transition-readiness,
-  knowledge-shaped bias, constitutive commitment, bilateral position, sensorimotor
-  control/authorship dissociations, and the return route to subjecthood and responsibility
-  gates. The S0-S6 ladder remains governed by the Subjecthood Threshold Interface.
+  Non-canonical synthesis of the SRT agency trunk and partially orthogonal thickening
+  dimensions, controlled transition-readiness, knowledge-shaped bias, constitutive
+  commitment, bilateral position, responsibility-position traces, sensorimotor
+  control/authorship dissociations, and the return route to the S4 subjecthood and S6
+  responsibility gates. The S0-S6 ladder remains governed by the Subjecthood Threshold Interface.
 ---
 
 # SRT Agency–Subjecthood Synthesis v0.2
@@ -45,7 +46,7 @@ It does **not** define selection, `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, or
 The [Subjecthood Threshold Interface](SRT_Subjecthood_Threshold_Interface.md) continues to govern bearer-unit binding and the S0-S6 ladder. This file mainly expands:
 
 - the mechanisms relevant to S5 agency;
-- the formation of a responsibility-bearing position on the S5-to-S6 route;
+- the formation of a responsibility-position trace before the S6 gate;
 - the distinctions needed to prevent control, authorship, commitment, consciousness, subjecthood, and responsibility from collapsing into one another.
 
 AI and neuroscience files may use this synthesis as a boundary and hypothesis source, but domain evidence must retain its own proxy limits. Ethics files continue to govern normative legitimacy and responsibility attribution.
@@ -56,27 +57,40 @@ The consciousness-side entry gate is [PH-CONSC01](patches/SRT_Philosophy_PH_CONS
 
 ## 1. Selection is broader than agency
 
-The agency ladder is:
+The agency trunk is:
 
 ```text
 causal activity
 -> selection
 -> controlled selection
 -> minimal agency
--> intentional agency
--> conscious agency
--> shared agency
 ```
 
-The ladder separates increasingly demanding organizational properties. It does not imply that every case must traverse the sequence as a developmental program.
+Possible thickening dimensions are:
+
+```text
+- intentional organization
+- conscious / authorial access
+- reflective self-integration
+- shared / intersubjective coordination
+- responsibility-bearing capacity
+```
+
+The trunk separates the transition from broad selection to bearer-qualified control. The thickening dimensions ask how a minimally agentive organization is intentional, consciously accessible, reflectively integrated, socially coordinated, or capable of passing a responsibility gate.
 
 - **Causal activity**: a transition occurs.
 - **Selection**: some continuation is realized, filtered, or stabilized over alternatives.
 - **Controlled selection**: the system can differentially influence reachable transitions.
 - **Minimal agency**: control is organized around maintained action-readiness and correction.
-- **Intentional agency**: goals, reasons, plans, or policies organize the action.
-- **Conscious agency**: authorial/control ownership is integrated into a self-model with access and revision.
+- **Intentional organization**: goals, reasons, plans, or policies organize the action.
+- **Conscious agency**: action is available through self-related authorial or control access, with at least some capacity for integration or revision.
+- **Reflective self-integration**: the action can enter endorsement, extended self-interpretation, policy revision, and cross-time self-model update.
 - **Shared agency**: multiple agents reciprocally organize a durable joint action structure.
+- **Responsibility-bearing capacity**: the bearer may be able to understand norms and consequences, access alternatives, and answer or repair, subject to the S6 gate.
+
+Intentional agency, conscious agency, and shared agency are partially orthogonal thickening dimensions, not a strict total order. A shared action can be skilled and minimally reflective; a conscious action can be weakly intentional or blocked from shared coordination; an intentional action need not be consciously accessible in all of its organization.
+
+The older linear ladder may still be used as simplified navigation, but it must not be read as a strict developmental stage sequence, necessary order, or single scalar ranking. Shared agency is not by default a higher level that comes after conscious agency.
 
 Two symmetrical reductions must be refused:
 
@@ -166,7 +180,7 @@ PH-AG03 distinguishes the rational support for acting from a final guarantee tha
 - **Practical closure** occurs when a continuation is enacted despite incomplete guarantee.
 - **Delay cost** appears when waiting removes, degrades, or redistributes reachable options.
 - **Constitutive commitment** is an act that helps establish the position from which the continuing bearer becomes answerable.
-- A **responsibility-bearing position** is the traceable relation among bearer, act, consequence, reasons, and available repair.
+- A **responsibility-position trace** is the historically traceable relation among bearer, act, consequence, reasons, and available repair before full normative responsibility is established.
 
 A diagnostic sequence is:
 
@@ -175,7 +189,7 @@ reasons constrain the field
 + no final guarantee
 + delay changes reachability
 -> enacted commitment
--> responsibility trace
+-> responsibility-position trace
 -> possible retrospective stabilization
 ```
 
@@ -186,9 +200,11 @@ absence of final guarantee != absence of reasons
 commitment != truth
 retroactive stabilization != retrocausation
 subject-position formation != complete subjecthood
+responsibility-position trace != S6 responsibility
+harm caused != culpability
 ```
 
-A single commitment may make a responsibility position visible without creating the bearer, continuity, stake, or subjecthood conditions required by S4-S6.
+A single commitment may leave a responsibility-position trace without creating the bearer, continuity, stake, or subjecthood conditions required by S4-S6. Being historically answerable for an act is not the same as meeting the full conditions for normative responsibility.
 
 Source trail: [PH-AG03 patch](patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md) and [integration hook](hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md).
 
@@ -260,15 +276,18 @@ control efficacy
 | Control efficacy | Can the candidate bearer counterfactually change the outcome? | control alone is not authorship |
 | Authorial attribution | Is the outcome attributed to the bearer's action? | attribution report is not stake evidence |
 | Body ownership | Is the carrier experienced as part of the body? | bodily attribution can dissociate from control |
-| Reflective self-integration | Can the act enter report, endorsement, revision, and cross-time self-update? | reflection alone does not prove subjecthood |
+| Reflective self-integration | Can the act enter endorsement, extended revision, and cross-time self-update? | full reflection is not required for every conscious action and does not prove subjecthood |
 
 Tools, cursors, prostheses, remote effectors, and third-person avatars can enter an effective control loop without becoming bodily ownership objects. Body ownership may support some embodied forms of agency, but it is not necessary for all conscious agency.
 
-The preferred phrase is:
+For conscious agency, the preferred minimum bridge wording is:
 
 ```text
-authorial / control ownership integrated into the self-model
+action is available through self-related authorial or control access,
+with at least some capacity for integration or revision
 ```
+
+Conscious access, authorial attribution, reportability, and reflective endorsement may partially dissociate. Full reflective self-integration is therefore a possible thickening of conscious agency, not a necessary condition for every conscious action. Conscious agency does not by itself establish subjecthood or responsibility.
 
 Sensorimotor congruence provides a bounded implementation window for online control and authorship. Feedback delay, replay, or spatial mismatch may perturb control and correction, but none is a direct measure of `Psi_f`. Subjective duration may covary with some coupling manipulations, but it is not a direct meter of agency, selection, or friction.
 
@@ -285,6 +304,8 @@ The relevant separations are:
 - an agency report is not sufficient evidence of subjecthood;
 - control is not sufficient evidence of responsibility;
 - commitment does not create a complete subject;
+- a responsibility-position trace does not establish S6 responsibility;
+- causing harm does not by itself establish culpability;
 - reflective self-description does not replace bearer-unit binding;
 - fluent performance does not replace stake and consequence return.
 
@@ -307,6 +328,8 @@ S6 responsibility requires further conditions, including:
 - attention to coercion, incapacity, asymmetry, and structural constraint.
 
 PH-CONSC01 supplies the consciousness-side guard: first-person feel is usable here only when it is integrated into a thresholded bearer and has discriminable psychological or structural roles. Psychological function is not by itself sufficient, but a functionless, boundaryless remainder cannot bear the agency or responsibility load.
+
+Historical answerability can arise before the full normative verdict: an act may be attributable to a bearer and leave a consequence trace while coercion, incapacity, unavailable alternatives, ignorance, or structural asymmetry still blocks culpability or full S6 responsibility.
 
 ---
 
@@ -335,6 +358,8 @@ These conditions identify a candidate shared-agency structure; they do not settl
 
 Responsibility may remain distributed, asymmetric, or contested even when shared agency is present.
 
+Shared agency is an intersubjective thickening dimension, not the top rung of a single agency scale. It may coexist with uneven conscious access, reflection, control, and responsibility across participants.
+
 ---
 
 ## 9. Integrated diagnostic chain
@@ -347,10 +372,12 @@ available continuations
 -> knowledge-shaped structuring bias
 -> enacted commitment
 -> bilateral position
--> consequence return
--> responsibility-bearing position
+-> bearer-specific consequence return
+-> responsibility-position trace
 -> self-readable and revisable agency
--> subjecthood / responsibility gates
+-> S4 subjecthood gate
+-> S6 responsibility gate
+-> responsibility-bearing subject
 ```
 
 This is a **diagnostic structure**, not a theorem, sufficient-condition formula, or necessary one-way developmental sequence.
@@ -363,6 +390,7 @@ Real cases may:
 - contain consciousness with blocked action;
 - contain commitment without adequate subjecthood evidence;
 - contain shared coordination without a collective bearer;
+- thicken along intentional, conscious, reflective, shared, and responsibility-related dimensions in different orders;
 - lose agency temporarily while subject continuity persists.
 
 The chain is useful because it asks where a claim gains and loses support rather than forcing every system into a single scalar agency score.
@@ -411,11 +439,17 @@ Proxy variables must remain labeled as proxies. No single report, delay, mismatc
 | `control != authorship` | changing an outcome does not settle who owns the act |
 | `authorship != body ownership` | external effectors can be authorially controlled |
 | `body ownership != conscious agency` | bodily attribution is neither necessary nor sufficient |
+| `intentional agency != conscious agency` | goal or reason organization need not be consciously accessible |
+| `conscious agency != shared agency` | conscious access does not require intersubjective coordination |
+| `shared agency != higher level of one scalar ladder` | shared coordination is a partially orthogonal thickening dimension |
+| `reflective integration != necessary condition for every conscious action` | conscious authorial access may be present with only partial integration or revision |
 | `agency report != subjecthood` | self-report does not establish bearer, stake, memory, or continuity |
 | `bias efficacy != T_dir` | effective structuring need not be self-readable |
 | `bias efficacy != stake ownership` | reliable behavior need not matter to the system itself |
 | `commitment != truth` | practical closure does not manufacture facts |
 | `commitment != complete subjecthood` | an act can establish a position without establishing a subject |
+| `responsibility-position trace != responsibility-bearing subject` | historical attribution remains below the S4 and S6 gates |
+| `historical answerability != normative culpability` | harm and attribution do not settle capacity, alternatives, coercion, or excuse |
 | `position != subject` | a structured semantic record need not have a continuing bearer |
 | `not selected != denied` | unchosen alternatives may remain open |
 | `semantic clash != physical impossibility` | discursive conflict cannot be projected directly onto reality |
@@ -432,13 +466,13 @@ Proxy variables must remain labeled as proxies. No single report, delay, mismatc
 
 1. What is the lowest stake condition compatible with minimal agency, and can minimal agency exist with no bearer-owned stake?
 2. Which counterfactual or historical criteria distinguish controlled transition-readiness from ordinary feedback control?
-3. Which agency conditions are necessary for subjecthood, and which are consequences of already-established subjecthood?
-4. How can authorial ownership be measured independently of report demand, objective control, and body ownership?
+3. Which agency conditions are necessary for subjecthood, which are partially orthogonal thickenings, and which are consequences of already-established subjecthood?
+4. How can conscious authorial access be measured independently of report demand, objective control, body ownership, and full reflective endorsement?
 5. When, if ever, does a dyad or collective satisfy a defensible bearer-unit gate rather than merely coordinating individual agents?
 6. How should coercion, addiction, compulsion, dissociation, and structurally unavailable alternatives alter responsibility attribution?
 7. When does context repair reopen real options, and when does it merely redescribe the same closure?
 8. How can `d-value`, `Psi_f`, and `T_dir` enter agency experiments without being replaced by salience, error, effort, confidence, or reportability?
-9. Can conscious agency persist when action is blocked, and which forms of self-readable reorientation remain available?
+9. Can conscious agency persist when action is blocked or reflective integration is incomplete, and which forms of self-related access and reorientation remain available?
 10. What evidence would justify moving any part of this P2-P4 synthesis toward a stronger claim level?
 
 Until these questions are resolved, this document remains `draft_v0_2`, `canonical: false`, and subordinate to its canonical and threshold owners.

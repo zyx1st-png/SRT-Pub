@@ -80,9 +80,9 @@ minimal predictive individuation
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
-| PH-AG01 agency ladder | `Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md` | selection-control ladder from causal activity through shared agency; prevents both agency overextension and reflective-intention overrestriction | High |
+| PH-AG01 agency architecture | `Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md` | selection-control trunk through minimal agency plus partially orthogonal intentional, conscious, reflective, shared and responsibility-related thickening dimensions | High |
 | PH-AG02 knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | triggering versus structuring cause; bias efficacy versus `T_dir` readability and stake ownership | High |
-| PH-AG03 constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | evidence support, final guarantee, commitment and responsibility-position separation; delay cost | High |
+| PH-AG03 constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | evidence support, final guarantee, commitment and responsibility-position-trace versus S6 responsibility separation; delay cost | High |
 | PH-AG04 sensorimotor time / agency | `Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md` | control, authorship, bodily ownership and reflective integration dissociation; external-effector and shared-agency boundary | High |
 | PH-SEM01 bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | assertion, denial and open remainder; typed clashes; context repair and false-dilemma diagnostics | High |
 | PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents emergence from functioning as an unexplained primitive | Medium-high |
@@ -103,7 +103,7 @@ triggering cause
 != structuring bias
 != binding commitment
 != bilateral discursive position
-!= responsibility-bearing position
+!= responsibility-position trace
 != self-readable direction
 != complete subjecthood
 ```

@@ -336,7 +336,7 @@ Agency reports should be decomposed before they are used near the subjecthood th
 | Objective control efficacy | Can the candidate bearer counterfactually change the outcome? | control alone is not authorship or subjecthood |
 | Authorial attribution | Is the outcome attributed to the bearer's own action? | authorship report is not `d-value` evidence |
 | Bodily carrier ownership | Is the controlled carrier experienced as part of the body? | body ownership can dissociate from agency |
-| Reflective self-integration | Can the action enter report, endorsement, revision, and cross-time self-model update? | reflection supports conscious agency but does not independently prove S4 |
+| Reflective self-integration | Can the action enter endorsement, extended revision, and cross-time self-model update? | full reflection may thicken conscious agency but is not required for every conscious action and does not prove S4 |
 
 Tools, cursors, avatars, prostheses, and remote effectors can be controllable without being experienced as bodily parts. Conversely, bodily ownership does not by itself establish counterfactual control, action authorship, responsibility, or subjecthood. The governing separation is:
 
@@ -348,7 +348,7 @@ A synchronously driven third-person avatar remains compatible with an external-a
 
 Source trail: [PH-AG04 patch](patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md), [PH-AG04 Integration Hook](hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md), and [Imaizumi et al. SourceCard](../Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md).
 
-The S0-S6 ladder and bearer-unit gate remain governed by this interface. For the detailed S5 mechanism and the S5-to-S6 responsibility-position route, see the non-canonical [Agency–Subjecthood Synthesis v0.2](SRT_Philosophy_Agency_Subjecthood_v0_2.md).
+The S0-S6 ladder and bearer-unit gate remain governed by this interface. For the detailed S5 mechanism and the pre-S6 responsibility-position-trace route, see the non-canonical [Agency–Subjecthood Synthesis v0.2](SRT_Philosophy_Agency_Subjecthood_v0_2.md).
 
 ---
 
