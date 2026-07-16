@@ -1,0 +1,18 @@
+{
+  "model": {
+    "N": 400, "p_hi": 0.8, "p_lo": 0.2,
+    "temp_form": 0.20, "temp_fut": 0.40,
+    "beta_Q": 0.15, "beta_q": 0.10, "beta_fut": 0.20,
+    "alpha_z": 0.05, "lambda_z": 0.01, "alpha_pe": 0.05, "lambda_pe": 0.01, "alpha_m": 0.05,
+    "form_episodes": 400, "kappa_m": 0.10, "budget": 2, "fut_episodes": 60, "fut_measure_last": 20
+  },
+  "yoked_act_offset": 777,
+  "calibration_seeds": [1, 2, 3, 4, 5],
+  "holdout_seeds_start": 40000, "holdout_seeds_n": 50,
+  "locked_thresholds": {
+    "Delta_min": 0.15,
+    "eps_TV": 0.05,
+    "ci_level": 0.95,
+    "bootstrap_resamples": 10000
+  }
+}
