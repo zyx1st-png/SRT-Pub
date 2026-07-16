@@ -1,0 +1,126 @@
+{
+  "frozen_params": {
+    "zc": 3.170728965999513,
+    "kk": 3.882185474049716,
+    "lr_lo": 0.02,
+    "lr_hi": 0.4,
+    "alpha_z": 0.02,
+    "lambda_z": 0.002,
+    "form_steps": 800,
+    "vol_period": 10,
+    "wash_steps": 200,
+    "fut_steps": 300,
+    "fut_reversal": 150,
+    "recov_window": 40,
+    "N": 200
+  },
+  "feasibility_commit": "8d703838f794e192938abcada34d7ddbe0da39c5",
+  "holdout_seeds": [
+    20000,
+    20001,
+    20002,
+    20003,
+    20004,
+    20005,
+    20006,
+    20007,
+    20008,
+    20009,
+    20010,
+    20011,
+    20012,
+    20013,
+    20014,
+    20015,
+    20016,
+    20017,
+    20018,
+    20019,
+    20020,
+    20021,
+    20022,
+    20023,
+    20024,
+    20025,
+    20026,
+    20027,
+    20028,
+    20029,
+    20030,
+    20031,
+    20032,
+    20033,
+    20034,
+    20035,
+    20036,
+    20037,
+    20038,
+    20039
+  ],
+  "holdout": {
+    "n_seeds": 40,
+    "retained_mean": 0.6700516137378225,
+    "retained_min": 0.670051613737822,
+    "fut_diff_mean": 0.2406625,
+    "fut_diff_sd": 0.010087128245937986,
+    "fut_diff_positive_frac": 1.0,
+    "null_abs_mean": 0.009906249999999983,
+    "swap_negative_frac": 1.0,
+    "swap_diff_mean": -0.23819062500000002
+  },
+  "washout_curves": {
+    "wash_steps": [
+      0,
+      50,
+      100,
+      200,
+      400,
+      800
+    ],
+    "retained": [
+      1.0,
+      0.9047468180040358,
+      0.8185668046884278,
+      0.6700516137378225,
+      0.4489691650726601,
+      0.20157331118604155
+    ],
+    "fut_diff": [
+      0.3116,
+      0.4474875,
+      0.48553749999999996,
+      0.2387625,
+      0.009137499999999998,
+      0.0016874999999999946
+    ]
+  },
+  "active_vs_yoked": {
+    "gap_active_mean": 1.237376664574932,
+    "gap_yoked_mean": 1.0307035058800027,
+    "gap_ratio": 1.2005165962043314,
+    "gap_cohen_d_active_vs_yoked": 17.821284703696755,
+    "fut_active_mean": 0.23864999999999995,
+    "fut_yoked_mean": 0.23813125000000004,
+    "fut_cohen_d_active_vs_yoked": 0.05150568746657043,
+    "stable_z_active_mean": 2.6610406767036374,
+    "stable_z_yoked_mean": 2.8963454908816506,
+    "selection_lowers_stable_z": true
+  },
+  "permutation": {
+    "corr_true_recovery_vs_z": 0.749201522116903,
+    "corr_true_recovery_vs_label": 0.7452726727778213,
+    "corr_perm_recovery_vs_permz": 0.7606553155887593,
+    "corr_perm_recovery_vs_label": 0.0073738881001331365
+  },
+  "gate": {
+    "checks": {
+      "H_durable_z": true,
+      "H_future_diff_sign_stable": true,
+      "H_null_abolishes": true,
+      "H_swap_reverses": true,
+      "B_active_gt_yoked": false,
+      "C_effect_follows_z_not_label": true
+    },
+    "GO": false
+  }
+}

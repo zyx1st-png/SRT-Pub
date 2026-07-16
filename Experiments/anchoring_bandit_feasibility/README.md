@@ -39,9 +39,14 @@ The most critical GO condition is met: the inscription **persists while unexpres
    (tiny MDP, not started) must reproduce the future-reachable-set divergence.
 2. **`zc` is calibrated post-formation** (centered between the two regimes' `z`) so the
    learning-rate gate is not saturated. This is legitimate for feasibility but is a
-   readout calibration; the confirmatory run must fix `zc`/`kk` **a priori**. The
-   random-slow-variable control (G5) passing under the *same* calibration is the evidence
-   the effect is not manufactured by calibration.
+   readout calibration; the confirmatory run must fix `zc`/`kk` **a priori**.
+   **null / swap / dose-response are MECHANISM-CHANNEL checks** (they verify `z` is the
+   causal channel). **The random-slow-variable control only shows that a random `z`
+   produces no history-label effect; it does NOT rule out calibration artifactuality.**
+   Ruling out calibration artifactuality requires an a-priori `zc` (the confirmatory
+   tiny-MDP), not this gate. See `../anchoring_bandit_holdout/` for the locked holdout
+   that tests generalization and selection-specificity (result: **NO-GO** on
+   selection-specificity).
 3. **Washout = behavior exercised with no reinforcement contingency**, so the
    reinforcement-driven `z` receives no input and leaks slowly (both regimes by the same
    factor, so the *separation* is retained, not created). A stronger durability test
