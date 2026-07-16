@@ -1,16 +1,14 @@
 # SRT Recent Material Patches Index
 
-> Status: navigation index for recently added external-material patches.  
-> Purpose: prevent scattered material notes from becoming disconnected fragments.  
-> Rule: these files are bridge notes, not canonical axiom changes, unless later integrated into a versioned core document.
+> Status: navigation index for recently added external-material patches and governance protocols.  
+> Purpose: prevent external-material notes from becoming disconnected fragments.  
+> Rule: these files are bridge/governance notes, not canonical axiom changes, unless later promoted through a separate hardening cycle.
 
 ## 0. Integration policy
 
-Recent material patches should be handled in three layers:
-
-1. **Index first**: every external-material patch must be discoverable from this file and the relevant domain index.
-2. **Hook second**: existing domain bridge documents may add short references to new patches.
-3. **Merge later**: full正文 integration should happen only after a coherent versioned synthesis is prepared.
+1. **Index first**: every external-material patch must be discoverable here and from the relevant domain index.
+2. **Hook second**: existing domain or governance documents may add a bounded reference.
+3. **Merge later**: full integration requires a coherent versioned synthesis or governance review.
 
 Recommended synthesis targets:
 
@@ -23,15 +21,42 @@ Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
 
 ---
 
+## 0A. Governance / method protocols
+
+| Protocol | File | Main SRT use | Priority |
+|---|---|---|---|
+| GOV-SUB01 subtractive audit | `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md` | tests primitive, symbol, layer and bridge indispensability through target-, context-, horizon-, perturbation- and refit-bounded deletion | High |
+
+GOV-SUB01 remains linked to:
+
+```text
+Governance/SRT_CLAIM_LADDER.md
+Governance/SRT_EDIT_PROTOCOL.md
+Core/SRT_Core_21_Minimal_Axioms.md
+Core/SRT_OPEN_TENSIONS.md
+```
+
+Central guardrail:
+
+```text
+removable under one audit
+!= false / nonexistent / universally dispensable
+
+survives one audit
+!= true / primitive / ontologically fundamental
+```
+
+The Sawyer source is integrated only at the method-governance level. Its alternative physics, chemistry, physiology, anomalous-perception and cosmology claims remain quarantined and are not SRT evidence.
+
+---
+
 ## 1. Core-law / collective-selection patches
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
-| COLL08 NTIC situated individuation | `Core_Law/patches/SRT_CoreLaw_COLL08_NTIC_Situated_Individuation_v0_1.md` | treats component-level individuation in collectives as coupling-qualified embedded non-redundancy; prevents raw positive NTIC from being used as a monotone agency scalar | High |
+| COLL08 NTIC situated individuation | `Core_Law/patches/SRT_CoreLaw_COLL08_NTIC_Situated_Individuation_v0_1.md` | treats component-level individuation in collectives as coupling-qualified embedded non-redundancy; prevents raw positive NTIC from becoming a monotone agency scalar | High |
 
-### Core-law synthesis direction
-
-COLL08 should remain tied to the collective-selection / agency-relocation interface:
+COLL08 should remain tied to:
 
 ```text
 Core_Law/SRT_Collective_Selection.md
@@ -39,10 +64,14 @@ Core_Law/SRT_Reference_Scaling.md
 Core_Law/SRT_L1_Hardening_Notes.md
 ```
 
-It should preserve the distinction:
+and preserve:
 
 ```text
-minimal predictive individuation != subjecthood != consciousness != moral agency != responsibility
+minimal predictive individuation
+!= subjecthood
+!= consciousness
+!= moral agency
+!= responsibility
 ```
 
 ---
@@ -51,23 +80,21 @@ minimal predictive individuation != subjecthood != consciousness != moral agency
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
-| PH-AG02 knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | distinguishes triggering from structuring causes in reasoning; uses learned knowledge as an action-organizing bias while separating bias efficacy from `T_dir` readability and stake ownership | High |
-| PH-AG03 constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | separates epistemic support, final guarantee, binding commitment and retroactive responsibility; adds delay-cost and subject-position formation guardrails | High |
-| PH-SEM01 bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | separates assertion, denial and open remainder; types strict versus defeasible clashes; adds context-repair and false-dilemma diagnostics while keeping incompatibility distinct from positive consequence, stake and ontology | High |
-| PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents "emergence" from functioning as an explanatory primitive; forces bridge claims to specify mechanism, order parameter, macro-pattern, and implementation channel | Medium-high |
-| PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | prevents hard-problem arguments from smuggling in a view-from-nowhere picture of science; treats first/third-person difference as access route and description-grain difference before metaphysical gap | Medium-high |
-| PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | prevents depsychologized pure feel from being overread as SRT subjecthood; binds consciousness claims to bearer unit, access, stake, `Psi_f`, boundary, memory, and continuity | Medium-high |
-| SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | treats cognitive development as child-body-caregiver-environment coordination; uses variability, cascades, degeneracy, and rhythmic support as developmental bridge probes | Medium-high |
+| PH-AG02 knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | triggering versus structuring cause; bias efficacy versus `T_dir` readability and stake ownership | High |
+| PH-AG03 constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | evidence support, final guarantee, commitment and responsibility-position separation; delay cost | High |
+| PH-SEM01 bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | assertion, denial and open remainder; typed clashes; context repair and false-dilemma diagnostics | High |
+| PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents emergence from functioning as an unexplained primitive | Medium-high |
+| PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | distinguishes situated access differences from immediate metaphysical gaps | Medium-high |
+| PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
+| SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
 
-### Philosophy synthesis direction
-
-PH-AG02, PH-AG03 and PH-SEM01 should be folded into a versioned agency / subjecthood / commitment synthesis:
+PH-AG02, PH-AG03 and PH-SEM01 should later be folded into:
 
 ```text
 Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
 ```
 
-They should preserve:
+They must preserve:
 
 ```text
 triggering cause
@@ -79,7 +106,7 @@ triggering cause
 != complete subjecthood
 ```
 
-PH-SEM01 should additionally remain linked to ChoiceMap, occlusion and reselectability:
+PH-SEM01 also remains linked to:
 
 ```text
 _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md
@@ -87,7 +114,7 @@ Core_Law/SRT_Occlusion_Dynamics.md
 _SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md
 ```
 
-Its central guardrail is:
+with the guardrail:
 
 ```text
 strict incompatibility
@@ -95,34 +122,16 @@ strict incompatibility
 != script-generated false dilemma
 ```
 
-PH-CONSC01 should later be folded into the same synthesis as the consciousness-side ownership gate.
+PH-CONSC01 later joins the agency/subjecthood synthesis as the consciousness-side ownership gate. PH-CONSC02 remains tied to `Philosophy/SRT_HardProblem_Epistemology.md`. SOC-COG02 remains tied to `Philosophy/SRT_Social_Cognition.md`. PH-METH01 remains tied to `Core/SRT_Core_21c_Bridge_Hypotheses.md` and `Governance/SRT_CLAIM_LADDER.md`.
 
-PH-CONSC02 should remain tied to the hard-problem / explanatory-gap route:
-
-```text
-Philosophy/SRT_HardProblem_Epistemology.md
-Philosophy/SRT_Philosophy_Foundations_CompactCore.md
-Philosophy/SRT_Subjecthood_Threshold_Interface.md
-```
-
-SOC-COG02 should also be folded into a social cognition / language ecology synthesis:
+All philosophy patches preserve:
 
 ```text
-Philosophy/SRT_Social_Cognition.md
-Philosophy/SRT_SocTheory_05_Language_Eco.md
-```
-
-PH-METH01 should remain tied to the core bridge / claim-hygiene layer:
-
-```text
-Core/SRT_Core_21c_Bridge_Hypotheses.md
-Governance/SRT_CLAIM_LADDER.md
-```
-
-All philosophy patches should preserve the distinction:
-
-```text
-selection event != conscious content != subjecthood != agency != responsibility-bearing subject
+selection event
+!= conscious content
+!= subjecthood
+!= agency
+!= responsibility-bearing subject
 ```
 
 ---
@@ -132,28 +141,22 @@ selection event != conscious content != subjecthood != agency != responsibility-
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
 | N10 BTSP | `Neuroscience/SRT_Neuroscience_Hardening_N10_BTSP_v0_1.md` | single-experience L1-to-L2 micro-hardening; eligibility trace; plateau trigger | High |
-| N11 Transition field | `Neuroscience/SRT_Neuroscience_Hardening_N11_Transition_Field_Subjective_Time_v0_1.md` | mind as historically shaped transition field; subjective time as transition accessibility; attractor capture | Very high |
-| N12 Astrocyte plastic networks | `Neuroscience/SRT_Neuroscience_Hardening_N12_Astrocyte_Plastic_Networks_v0_1.md` | non-neuronal L2 topology; astrocyte support networks; multi-substrate transition field | Medium-high |
-| NEURAL16 BOLD-CMRO2 uncertainty gate | `Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md` | uncertainty-gated admission rule for hemodynamic-metabolic proxies; indeterminate CMRO2 direction must not be used as sign-reversal evidence | Medium-high |
-| NEURAL17 HGA-spike dissociation gate | `Neuroscience/patches/SRT_Neuro_NEURAL17_HGA_Spike_Dissociation_Gate_v0_1.md` | source-scope admission rule for high-gamma proxies; HGA must not default to local output spiking when mesoscale synchrony/input integration is the better-supported reading | Medium-high |
+| N11 Transition field | `Neuroscience/SRT_Neuroscience_Hardening_N11_Transition_Field_Subjective_Time_v0_1.md` | historically shaped transition field; subjective time as transition accessibility | Very high |
+| N12 Astrocyte plastic networks | `Neuroscience/SRT_Neuroscience_Hardening_N12_Astrocyte_Plastic_Networks_v0_1.md` | non-neuronal L2 topology and multi-substrate transition field | Medium-high |
+| NEURAL16 BOLD-CMRO2 uncertainty gate | `Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md` | uncertainty-gated admission for hemodynamic-metabolic proxies | Medium-high |
+| NEURAL17 HGA-spike dissociation gate | `Neuroscience/patches/SRT_Neuro_NEURAL17_HGA_Spike_Dissociation_Gate_v0_1.md` | prevents high-gamma from defaulting to local output spiking | Medium-high |
 
-### Neuroscience synthesis direction
-
-The three patches should later be integrated as follows:
+Recommended synthesis:
 
 ```text
-N10 -> mechanism of rapid L1-to-L2 hardening
+N10 -> rapid L1-to-L2 hardening mechanism
 N11 -> field-level ontology and measurement architecture
-N12 -> non-neuronal biological infrastructure of the transition field
-```
+N12 -> non-neuronal biological infrastructure
 
-Recommended future target:
-
-```text
 Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
 ```
 
-NEURAL16 and NEURAL17 should also remain linked to `SRT_EXP_MEASURE_MAP.md` because their primary value is measurement admission, not new neuroscience ontology.
+NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates.
 
 ---
 
@@ -161,12 +164,10 @@ NEURAL16 and NEURAL17 should also remain linked to `SRT_EXP_MEASURE_MAP.md` beca
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
-| QBox / hyper-decoherence | `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md` | access-limited reality layer; post-quantum depth; do not project L1 causal assumptions into L0 | Medium |
-| Earth inner Solar System accretion | `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` | `L0_total != L0_accessible`; reservoir partition; barrier-shaped selection; physical L2 sedimentation | Medium-low |
+| QBox / hyper-decoherence | `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md` | access-limited reality layer; avoid projecting L1 causal assumptions into L0 | Medium |
+| Earth inner Solar System accretion | `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` | total versus accessible possibility space; barrier-shaped selection; physical sedimentation | Medium-low |
 
-### Physics synthesis direction
-
-These patches should not be treated as direct evidence for SRT. They are disciplined analogues for two key SRT moves:
+These are disciplined analogues, not direct SRT evidence:
 
 ```text
 QBox: latent structure -> access-limited effective reality layer
@@ -183,12 +184,14 @@ Physics/SRT_Physics_Bridge_v0_2.md
 
 ## 5. Canonical caution
 
-These recent patches should not be merged into SRT primitive axioms without a separate hardening cycle.
-
-Current status:
+Current route:
 
 ```text
-external material -> bridge note -> index -> hook -> later synthesis
+external material
+-> bridge / governance note
+-> index
+-> bounded hook
+-> later synthesis or promotion review
 ```
 
 Not:
@@ -197,4 +200,4 @@ Not:
 external material -> immediate canonical proof
 ```
 
-The correct use is comparative, operational, and structural.
+The correct use is comparative, operational, structural and explicitly scoped.
