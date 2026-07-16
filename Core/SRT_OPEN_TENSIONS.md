@@ -36,7 +36,7 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, and reward | a complete formal object with validated sufficiency conditions | high meaning, high reward, or high confidence cannot be cited as `T_dir` by itself |
 | Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
 | ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction; **Level A framing de-overload applied 2026-07-05** (L0 §六 / 正骨架 label / d-value §5b.1) | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the Level B stance rewrite (realist → constitutive stance) remains proposal-only | not "all normativity = anti-foreclosure"; not "boundary problem solved"; Level A trims wording only — it does not close the boundary problem |
-| selection irreducibility / competitor-vocabulary deletion (§13) | P0-01 fixes selection as primitive; GOV-SUB01 §8.1 defines the deletion test | whether asymmetric constraint + reachable-set change + irreversible writeback + payability + bearer-specific consequence return can replace the `selection` primitive with no lost difference | `selection` is currently N1 + primitive admission, **not** a proven-irreducible ontological ultimate; representational substitutability under broad refit ≠ role absence |
+| selection irreducibility / competitor-vocabulary deletion (§13) | Claim Ladder: `selection` is a P0 primitive axiom (P0-01); GOV-SUB01 §8.1 defines the (not-yet-run) deletion test | whether asymmetric constraint + reachable-set change + irreversible writeback + payability + bearer-specific consequence return can replace the `selection` primitive with no lost difference | GOV-SUB01 residue status **unassigned** (no deletion test run); must not be presented as a proven-irreducible ontological ultimate; representational substitutability under broad refit ≠ role absence |
 
 These are pressure points, not new axioms. They route later work and block overclaiming.
 
@@ -551,7 +551,9 @@ A companion trace (`01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_T
 
 - `Core/SRT_Core_21_Minimal_Axioms.md P0-01` fixes selection as primitive: existence is the image of selection (`∃x ⟺ x ∈ Range(Ĝ)`). `P0-04` separately exposes the origin of selectability as open (see §7 above).
 - `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1` defines the subtractive test for this primitive: remove the word and primitive role of `selection`, retaining only asymmetric constraint, reachable-set restriction, history dependence, cost, and consequence return.
-- Honest current status of `selection`: it is **N1** (target-relative indispensable as SRT's unifying grammar across `L_0/L_1/L_2`, `d`, `Ψ_f`, `T_dir`) **plus P** (primitive admission). It is **not** established as **N2** (survives deletion across contexts, horizons, and perturbations against every competitor vocabulary).
+- Two registers must be kept separate, and neither may borrow the other's authority:
+  - **Claim Ladder register**: `selection` is currently a **P0 primitive axiom** (`P0-01`). That is its epistemic-rank registration and is unchanged by this pass.
+  - **GOV-SUB01 residue register**: **unassigned.** No actual deletion test (`M^{-selection}`) has been executed, so no residue label (`R2` / `R4` / `N1` / `N2`) may be attached. A residue label is earned only by running the K=0 / limited-K / broad-K tests below — it is never asserted in advance.
 
 ### Problem Point
 
@@ -559,7 +561,7 @@ The unresolved question (GOV-SUB01 §8.1 required form):
 
 > Using only asymmetric constraint, reachable-set change, irreversible writeback, payability, and bearer-specific consequence return — and deleting the `selection` primitive — what explanatory, counterfactual, experimental, or interventional difference does SRT actually lose?
 
-Until this produces a concrete difference the competitor vocabulary cannot reconstruct, `selection` must be read as an **indispensable-for-now unifying primitive**, not a **proven-irreducible ontological ultimate**. Treating the latter as established is exactly the overreach GOV-SUB01 §0 and §10 warn against ("survives removal testing ≠ primitive ≠ ontologically fundamental").
+Until this produces a concrete difference the competitor vocabulary cannot reconstruct, `selection` must **not** be presented as a **proven-irreducible ontological ultimate**. Its `P0` axiom status records that SRT *treats* selection as primitive; it does not certify that no competitor vocabulary could reconstruct selection's role. Asserting that it cannot is exactly the overreach GOV-SUB01 §0 and §10 warn against ("survives removal testing ≠ primitive ≠ ontologically fundamental") — and, symmetrically, attaching a residue label (`N1`/`N2`/`R*`) before the deletion test is run is the same error in reverse.
 
 Two guardrails on how the test may be run:
 
@@ -568,11 +570,11 @@ Two guardrails on how the test may be run:
 
 ### Future Hardening Direction
 
-`selection` moves from `N1 + P` toward `N2` only if a pass exhibits at least one of the following against the reduced vocabulary (GOV-SUB01 §4 evaluation vector):
+A future deletion pass may attach a residue label to `selection` only if it exhibits at least one of the following against the reduced vocabulary (GOV-SUB01 §4 evaluation vector):
 
 1. a counterfactual SRT discriminates that the reduced vocabulary cannot (`E_cf`);
 2. an intervention whose predicted effect differs under a selection framing vs. a pure asymmetric-constraint framing (`E_int`);
 3. an experiment where a real choice moment (`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T05`) and script execution / gradient following diverge in a way the reduced vocabulary cannot label;
 4. a phenomenological or normative distinction (`E_phen` / `E_norm`) — bearer-specific consequence return, directional self-readability — the reduced vocabulary demonstrably fails to carry.
 
-Absent such a result, domain, book, and public files must cite `selection` as "unifying primitive (`N1` + primitive admission)", not as "proven irreducible". This tension introduces no new symbol and does not change `P0-01` or `P0-04`. Its resolution, if reached, is routed through `Governance/SRT_CLAIM_LADDER.md`, never asserted directly from a deletion result.
+Absent such a result, domain, book, and public files must **not** present `selection` as "proven irreducible." They may cite its current **P0 primitive-axiom** status (per `Governance/SRT_CLAIM_LADDER.md`) but must not attach any GOV-SUB01 residue label to it. This tension introduces no new symbol and does not change `P0-01` or `P0-04`. Any residue classification, if reached, comes only from an executed deletion test — never asserted in advance and never read off the axiom status.

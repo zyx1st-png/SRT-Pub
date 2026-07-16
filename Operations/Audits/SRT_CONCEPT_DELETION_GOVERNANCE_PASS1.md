@@ -20,6 +20,8 @@ tags: [Governance, SubtractiveAudit, AuditRecord, SymbolTable, ClaimDiscipline]
 # Concept Deletion Governance Pass 1 — Audit Record
 
 > **Status**: non-canonical Operations record. This file logs a low-risk governance pass under `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md`. It does **not** define SRT ontology, does not assign residue labels (`R*/N*/P`) to any core symbol, and does not promote any deletion result to a theorem.
+>
+> **Pass 1.5 revision (2026-07-16)**: (1) removed the premature `N1 + P` residue verdict on `selection` — Claim-Ladder P0 status and GOV-SUB01 residue status (**unassigned**, no deletion test run) are now kept separate; (2) tightened the tier names (Repo-wide anchors / Internal structural quantities, admitted postulates and derived constructs / Domain projections, operational proxies and threshold-bearing hypotheses) and stated that tier placement assigns neither a residue label nor a claim level; (3) narrow Scope truth-up on five threshold rows (see §5); (4) corrected the K framing (below) so it no longer claims `K = 0` over the `selection` tension, which ran no deletion test.
 
 ## 0. Scope of this pass
 
@@ -39,14 +41,14 @@ The pass was scoped to preserve the following targets (`Y`, per GOV-SUB01 §2 / 
 
 ## 2. Per-modification refit-budget classification (K = 0 / limited K / broad K)
 
-Per GOV-SUB01 §3, refit budget `K` is declared for each change so representational replaceability is not confused with role absence. **Every edit in this pass is `K = 0` (governance annotation; literal dependencies and equations unchanged).** No `limited K` or `broad K` deletion test was performed; those are deferred (see §6).
+Per GOV-SUB01 §3, refit budget `K` is declared for each change so representational replaceability is not confused with role absence. **The implemented symbol-table edits (A, B, C) are `K = 0`** (governance annotation; literal dependencies and equations unchanged). **Edit D executed no deletion test at all** — the `selection` deletion test was only *registered* as open; **no K-budget deletion test (K=0 / limited K / broad K) was executed for `selection`.** All deferred tests are in §6.
 
 | Edit | What changed | Refit budget | What was NOT tested this pass |
 |---|---|---|---|
-| **A. Symbol-table tier layering** | Added a 3-tier classification (Core semantic roles / Derived structural quantities / Bridge-Lab proxies & thresholds) as an overlay; no row removed or edited | `K = 0` | The `limited K` / `broad K` deletion tests that would justify actually *removing* any symbol from the table |
+| **A. Symbol-table tier layering** | Added a 3-tier classification (repo-wide anchors / internal structural quantities & postulates / domain projections, proxies & thresholds) as an overlay; no row removed or edited | `K = 0` | The `limited K` / `broad K` deletion tests that would justify actually *removing* any symbol from the table |
 | **B. L0/L1 thin universal definitions** | Moved `∞-dim Hilbert space` (L₀) and `4D spacetime + qualia` (L₁) from the universal `Dimensions` cell to marked **domain projections** with backlinks; universal cell thinned | `K = 0` | Whether L₀/L₁ can dispense with the Hilbert / spacetime realizations under any refit — a domain-projection question, not run here |
 | **C. κ namespace guard** | Added Usage Rule 15 distinguishing `κ_0`/`κ(t)` (L₀ curvature) from `κ_{c1}`/`κ_{c1.5}` (consciousness thresholds), with claim-level annotation | `K = 0` | No rename (a rename would be a `limited K` representational change); no equation over any `κ` touched |
-| **D. §13 selection-irreducibility tension** | Registered the competitor-vocabulary deletion test for `selection` as **open**; classified `selection` as `N1 + P` | none executed — registers the `limited K` and `broad K` questions as future work | The deletion test itself: no `selection` removal was performed; `N1 → N2` remains undischarged |
+| **D. §13 selection-irreducibility tension** | Registered the competitor-vocabulary deletion test for `selection` as **open**; assigned **no** residue label (Claim-Ladder P0 status noted; GOV-SUB01 residue status unassigned) | none executed — only registered; no K-budget test run | The deletion test itself: no `selection` removal was performed under any K budget; residue status remains unassigned |
 
 ## 3. Modified files
 
@@ -73,7 +75,7 @@ Surfaced during the pass; deliberately **not** acted on (out of this pass's low-
 
 - **`κ_0` is load-bearing in the d-value equation layer.** `Core/SRT_Core_22_Equations.md` Eq-DValue-Max-1 uses `Ψ_f^{budget}/κ_0` as the stability-bottleneck denominator, and `κ(t) = κ_0 + ∫F[…]` (T-L0-NonStatic) couples it to operator dynamics. Any future `κ_0` change ripples into `d_max` and `κ(t)`. Not touched.
 - **`ε_pg` is load-bearing in the L1 operator layer.** `Core_Law/SRT_Irreversibility.md` binds `ε_pg` into `ν_block` and into the lethal-`L_2` diagnostic `ε_pg^{visible}`; `Core/SRT_Core_21b P1-T07` bridges `ε_pg` → ISP-level `ε`. Deleting or downgrading `ε_pg` is therefore **not** a free `K = 0` move; it requires the Pass-2 dependency graph. Not touched.
-- **Scope-column vs claim-level mismatch.** `κ_{c1}`, `κ_{c1.5}`, and the `σ_{sr}^{sub/self/health}` thresholds carry Scope `"Core"` in the table while their canonical sources mark them P3/P4. This pass annotated the mismatch (tier + Usage Rule 15) but did **not** rewrite those rows' Scope cells (row edits on equation-referenced rows are out of scope). A Scope truth-up is a Pass-2 candidate.
+- **Scope-column vs claim-level mismatch (narrow truth-up done in Pass 1.5).** `κ_{c1}`, `κ_{c1.5}`, `σ_{sr}^{sub}`, `σ_{sr}^{self}`, and `σ_{sr}^{health}` previously carried Scope `"Core"` (the two `κ`) or bare `"L1"` (the three `σ`) while their sources mark them P3/P4 threshold-bearing. Pass 1.5 rewrote **only the Scope/Notes cell** of these five rows to source-consistent wording (`L1 structural hypothesis` / `Bridge-Lab threshold` / `specific numerical threshold P3/P4`); no symbol, LaTeX, definition, formula, variable name, or reference was changed. No other rows were touched.
 - **Borderline tier assignments.** `F_SRT`, `S_c`, `μ`, `ε_reg`, and `σ_{sr}^{coll}` are provisional Tier-2/Tier-3 calls; flagged in the table as revisited in Pass 2.
 
 ## 6. Pass 2 plan — `κ_0` / `ε_pg` dependency-graph audit
