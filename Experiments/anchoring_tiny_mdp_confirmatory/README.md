@@ -40,6 +40,32 @@ Calibration (seeds 1-5) tuned only env/mechanism params to avoid saturation.
 
 Manipulation check: yoked ctrl-corr = −0.001 (yoke breaks A→O).
 
+## Evidence weighting (post-audit, 2026-07-17)
+
+An independent audit (see repo-root `AUDIT.md`) re-classified the evidence in this GO:
+
+- **LOAD-BEARING (genuine, non-mechanical):**
+  1. **Selection-specificity is data-driven.** Active memory peaks on the history corridor
+     (z_ctrl high) while yoked stays diffuse (z_ctrl ≈ 0) — and this arises from the data,
+     not the definition: the yoke decouples action from outcome, giving ctrl-corr = −0.001
+     (A ⊥ O verified). The |PE| baseline (Phase 2b) reproduces active ≈ yoked, so this is
+     not generic volatility learning.
+  2. **Directional behavioral prediction.** The m difference yields aligned **advantage**
+     (+0.221) and blocked/novel **stickiness cost** (+0.582 P(∅); −0.278 P(Gnovel)) — a
+     non-trivial, bidirectional behavioral signature, not merely a divergence magnitude.
+     The primary macro-TV (0.374) and these three direction gates carry the result.
+- **PIPELINE VALIDATION ONLY (not independent causal evidence):**
+  - **memory-swap = 0 is mechanical/vacuous** — as implemented it compares `battery(yoked_m)`
+    with `battery(yoked_m)` (the same m to itself); the alternative framing equals the main
+    effect. Because the future is a deterministic function of m, swap carries no independent
+    information.
+  - **same-m/different-z = 0** is tautological (the future takes no z argument). It validly
+    confirms the plumbing — *only m is read at test* — but is not a causal discovery.
+  - **memory-null = 0.044** is a weak, architecture-bound confirmation (uniform-m vs
+    near-zero-m futures), not independent causal proof.
+  These three are retained as **pipeline validation** (they verify the identification
+  plumbing) and must not be cited as independent causal isolation.
+
 ## Honest caveats
 
 1. **Designed model, not empirical data.** This is a constructive confirmatory: it shows

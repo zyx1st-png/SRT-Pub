@@ -1,0 +1,17 @@
+{
+  "stage": "phase2_bandit_feasibility_GO",
+  "supersedes": "freeze_manifest.json",
+  "supersede_reason": "README updated in audit-repair commit (evidence weighting / null-swap downgrade). Code, parameters, and results JSON unchanged.",
+  "audit_date": "2026-07-17",
+  "changed_vs_v1": [
+    "README.md"
+  ],
+  "added_vs_v1": [],
+  "gate": "GO",
+  "files_sha256": {
+    "README.md": "c4bbee0efb3fff77",
+    "feasibility.py": "4eb7daa3c07e554d",
+    "results_feasibility.json": "07d07986da7630a0",
+    "tests/test_bandit.py": "e447c4ecb495ac10"
+  }
+}

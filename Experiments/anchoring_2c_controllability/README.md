@@ -54,6 +54,16 @@ than duplicating a hidden yoked).
 
 Structural `C_mu`: active 0.121 > yoked 0.022.
 
+## Evidence weighting (post-audit, 2026-07-17)
+
+Per repo-root `AUDIT.md`: the **load-bearing evidence** here is the **selection-specificity**
+of the write-back — active ≫ yoked on controllability-z (data-driven: yoked ctrl-corr ≈ 0),
+with the |PE| baseline within the equivalence bound (not selection-specific). The
+**null-z / swap-m checks are PIPELINE VALIDATION only**: because the future readout is a
+deterministic function of m, swap-m following the memory donor is largely mechanical, and
+null-z collapsing commitment confirms the z→m plumbing rather than providing independent
+causal isolation. Do not cite null-z/swap-m as independent causal proof.
+
 ## Scope and caveats
 
 1. **Bandit-level feasibility, not confirmatory.** The future reachable set is a
