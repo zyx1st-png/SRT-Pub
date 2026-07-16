@@ -1,0 +1,25 @@
+{
+  "stage": "phase2c_controllability_holdout",
+  "gate": "GO",
+  "holdout_seeds": [
+    30000,
+    30039
+  ],
+  "calibration_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "primary": "paired active-yoked commitment (ctrl) 0.570, 90%CI[0.559,0.581]",
+  "files_sha256": {
+    "README.md": "ee5644a2aa0e4c3c",
+    "calibrate.py": "eb519195b20b7e5b",
+    "config2c_frozen.json": "38b60da8d0f4b955",
+    "holdout2c.py": "5568bf500ca0adc0",
+    "model2c.py": "37572155f47f17cf",
+    "results_2c_holdout.json": "daf06bfd2fe6b436",
+    "tests/test_2c.py": "328703bc9d41c7a2"
+  }
+}
