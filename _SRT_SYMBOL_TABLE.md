@@ -26,8 +26,8 @@ dependency:
 
 | Symbol | LaTeX | Name | Atomic Definition | Dimensions/Units | Scope / Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **L₀** | `L_0` | Latent Domain | Set of all unselected possibilities (plenoma-like potential manifold). | $\infty$-dim Hilbert space | Core, universal |
-| **L₁** | `L_1` | Manifest Domain | Selected slice of reality produced by operator dynamics. | 4D spacetime + qualia | Core, universal |
+| **L₀** | `L_0` | Latent Domain | Set of all unselected possibilities (structured potentiality, not nothingness). | Thin: structural potentiality space (measure/cardinality unfixed at core level) | Core, universal. **Domain projection**: the `∞-dim Hilbert space` reading is a physics / statistics bridge realization, **not** the universal atomic definition — see `Physics/_SRT_Phys_Bridge.md`, `Physics/SRT_Quant_00_Intro.md`; thin structural home `Core_Law/SRT_L0_Metaphysics.md`. |
+| **L₁** | `L_1` | Manifest Domain | Selected slice of reality produced by operator dynamics. | Thin: manifest reality slice (domain-dependent realization) | Core, universal. **Domain projection**: the `4D spacetime + qualia` reading is a physics (spacetime) + phenomenology (qualia) bridge realization, **not** the universal atomic definition — see `Core/SRT_Core_12a_Ontology_L0L1.md` (spacetime emergence), `Philosophy/SRT_HardProblem_Epistemology.md` (qualia); thin structural home `Core_Law/SRT_L0_Metaphysics.md`. |
 | **L₂** | `L_2` | Convergence Domain | Stable consensus constraints from repeated/overlapping selections. | Topological manifold | Core, universal |
 | **Ĝ** | `\hat{G}` | Ghost Operator | Selection operator mapping $L_0 \to L_1$. | Operator | Never use plain `G` for this |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
@@ -97,6 +97,30 @@ dependency:
 | **σ_{sr}^{health}** | `\sigma_{sr}^{health}` | Healthy Operating-Point Center | Healthy working region center `σ_{sr}^{health} ∈ (σ_{sr}^{sub}, σ_{sr}^{self})` — balanced self-reference without pathological closure toward `σ_{sr} \to 1`. Typically close to the informal `σ_{sub}^\dagger` in `T_{dir}^{alg}` (`SRT_L1_Formalism.md §3.4`). | Scalar | L1; canonical source `SRT_L1_Formalism.md §2.4, §5.3` |
 | **σ_{sr}^{coll}** | `\sigma_{sr}^{coll}` | Collective Self-Reference Ratio | Multi-ISP extension over shared `L_2` field `\mathcal{P}`. Defined in `Core_Law/SRT_Collective_Selection.md §4.1` and its dynamic extension in §4.4.1-§4.4.2. `σ_{sr}^{coll} \to 1` is the collapsed-into-higher-`L_2` pathological limit. | Scalar [0,1] | L1; canonical source `SRT_Collective_Selection.md §4.1, §4.4` |
 
+## Governance Tier Layering (GOV-SUB01 Pass 1, 2026-07-16)
+
+> **Purpose**: Registration in this table has been read as "equally indispensable." It is not. This layering separates the small set of core semantic roles from derived quantities and from bridge/lab proxies and thresholds, so that *appearing in the canonical symbol table* stops implying *equal theoretical load*. See `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md` §0.
+>
+> **Boundary — this is a parsing/proxy-discipline aid, NOT a claim-level ranking.** Tiers do not set, raise, or lower any symbol's claim level; claim levels remain governed by `Governance/SRT_CLAIM_LADDER.md` and each symbol's own canonical source. No symbol is deleted, renamed, or redefined by this layering. Borderline assignments are provisional and are revisited in GOV-SUB01 Pass 2.
+
+**Tier 1 — Core semantic roles** (the roles whose removal collapses SRT's grammar; canonical / core-facing):
+
+`L_0`, `L_1`, `L_2`, `\hat{G}`, `θ`, `d`, `Ψ_f`, `T_dir`.
+
+**Tier 2 — Derived structural quantities** (internal to the theory, induced from or built on Tier 1; includes structural postulates/candidates carried at their own claim level):
+
+`κ_0`, `κ(t)`, `ε_pg`, `ρ(p,t)`, `t_onto`, `C_H`, `σ_{sr}`, `σ_{sr}^{coll}`, `d_mobile`, `d_max`, `χ_payable`, `ΔΨ_f^{op}`, `ΔΨ_f^{field}`, `Ω`, `Ω_mis`, `μ`, `S_strength`.
+
+*Note*: `κ_0` and `ε_pg` are placed here as structural postulate / primitive-admission candidates. Their claim status is **unchanged** by this pass (see Usage Rule 15 and the deferred Pass-2 dependency-graph audit); tiering them does not downgrade them.
+
+**Tier 3 — Bridge / Lab proxies and thresholds** (domain projections, capacity proxies, measurement readouts, and threshold-bearing points; claim level is P3/P4 per their sources):
+
+`D_eff` (d proxy), `ε_reg`, `ε_s`, `σ_{sr}^{sub}`, `σ_{sr}^{self}`, `σ_{sr}^{health}`, `κ_{c1}`, `κ_{c1.5}`, `δ`, `ν`, `λ_pred`, `Ṡ_{int}^{on}`, `J_S^{max}`, `δ_{max}^{entropy}`, `B_θ`, `h[A]`, `τ_off^{*}`, `c_B`, `ρ_I`, `k_n`, `τ_switch^{min}`, `τ_fast`, `τ_slow`, `ω_sub`, `η`, `Γ_{\hat{G}}`, `S_crit`, `R_fidelity`, `I_total`, `F_semantic`, `F_base`, `F_SRT`, `Φ_IIT`, `D_max`, `γ_gain`, `δ_D`, `I_rec`, `η_compress`, `θ_semantic`, `D_dev`, `I_int`, `S_c`, `F_Bio`, `ΔR`, `C_int`, `T_immune`, `M`.
+
+*Reading rule*: a Tier 3 proxy or threshold must never be cited as if it were the Tier 1 role it approximates (e.g. `D_eff` is not `d`; `κ_{c1}` is not `κ_0`). Cross-domain ranking of subjecthood, concern, or consciousness from a Tier 3 readout is out of scope for this table.
+
+---
+
 ## Usage Rules
 1. Never use `G` (gravity constant) to refer to `\hat{G}` (Ghost Operator).
 2. `L_0` is not "nothingness"; it is structured potentiality.
@@ -112,6 +136,7 @@ dependency:
 12. **σ namespace split** (2026-04-24 L1 round, governance-canonical per `Core_Law/SRT_L1_Hardening_Notes.md §1`): bare `σ` defaults to the **main-equation state field** (`Core/SRT_Core_22_Equations.md`); `σ_{sr}` is the self-reference ratio (with subscripts `sub / self / health / coll`); `σ_j` is an anchoring sub-target (`SRT_Core_14 T-Scale-Rhythm-5`). These are three different objects. Any file using σ in a sense other than the main-equation state field must either (a) use the `σ_{sr}` / `σ_j` form explicitly, or (b) carry a file-level symbol namespace note binding bare `σ` to the intended meaning per this rule. Historical files predating 2026-04-24 where bare `σ` means self-reference ratio are being progressively rewritten; in the meantime, read them as `σ_{sr}` when the context is Individuation / Occlusion Dynamics / Suffering / L1 Formalism §2 / Collective Selection §4.
 13. **Governance terms are not theory symbols**: `interface_annex`, `copy-to-annex`, `owner-bound`, `claim_mode`, `canonical:false`, and related structural-governance vocabulary (defined in `SRT_Glossary_Structural_Governance_Terms.md`) are repository-organisation terms, not canonical mathematical or phenomenological symbols. Do not add them as rows to this table or treat them as carrying theory-canonical status.
 14. **Annex and Operations reference scope**: Non-canonical annex files (`AI/Architecture_Annex/`, `AI/Consciousness_Annex/`, `Physics/QBox_Annex/`, `Physics/Earth_Accretion_Annex/`, etc.) and Operations records (e.g. `Operations/Closure_Index_2026-04-29.md`, `Operations/Structural_Governance_Rollup_2026-04-29.md`) may cite and use symbols defined in this table. They must not introduce new symbol definitions, override existing usage rules, or alter the scope of canonical symbols established here.
+15. **κ namespace split** (GOV-SUB01 Pass 1, 2026-07-16): the glyph `κ` spans two unrelated object families that must not be read as one continuous quantity. (a) `κ_0` (primordial curvature) and `κ(t)` (dynamic L₀ curvature) are **L₀-curvature** objects — canonical source `Core/SRT_Core_12a T-L0-Kappa0 / T-L0-NonStatic`. `κ_0` is carried as a **primordial-curvature candidate**: its in-table structural-prerequisite role is retained, while its ontological status is explicitly open (`Philosophy/SRT_L0_Ontological_Status.md`); the "candidate" label describes this existing status and does **not** downgrade `κ_0` in this pass. (b) `κ_{c1}` and `κ_{c1.5}` are **consciousness-stage phase-transition thresholds** — canonical source `Philosophy/SRT_Consciousness_Conditions.md §三`. As threshold-bearing points their specific values are lab-level (P4) per `Governance/SRT_CLAIM_LADDER.md`, even where a Scope column reads "Core". The two families share no derivation path: an equation over `κ_0` says nothing about `κ_{c1}`, and vice versa. This rule adds the namespace guard and claim-level annotation **only**; it does not rename any symbol and does not modify any equation referencing `κ_0`, `κ(t)`, `κ_{c1}`, or `κ_{c1.5}`. A full `κ_0` / `ε_pg` dependency-graph audit is deferred to GOV-SUB01 Pass 2.
 
 ## D-Value Alignment (d 值专题规范)
 
