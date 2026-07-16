@@ -567,6 +567,25 @@ SRT 预测：长期睡眠剥夺将导致 $L_2$ 的拓扑解体。
 
 # 4 能动性与算子短路
 
+## 4.0 Agency-report decomposition gate（P3/P4 bridge · non-canonical）
+
+Sense-of-agency report 是一个意识相关的报告窗口，但不应被压成单一的 consciousness 或 subjecthood 指标。在线行动至少要区分：
+
+```text
+objective control efficacy
+!= authorial attribution
+!= bodily carrier ownership
+!= reflective self-integration
+```
+
+工具、光标、第三人称 avatar、义肢或远程执行器可以被体验为“由我控制”，而不被体验为“我的身体”。反过来，body ownership、authorship、control 或 reflective integration 中任何单项，也不能独立证明 consciousness、`d-value`、subjecthood 或 responsibility。阈值守门保持：
+
+```text
+agency report != d-value evidence != subjecthood evidence
+```
+
+因此，下节的 `A_sub` 只能读作任务内 authorial/control report 的 schematic proxy，不能读作身体所有权、意识强度或主体性标量。Source trail: [Imaizumi et al. SourceCard](../Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md), [PH-AG04 patch](../Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md), and [PH-AG04 Integration Hook](../Philosophy/hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md).
+
 ## 4.1 主观能动性的量化
 
 "我是行为作者"这一感觉可以通过 $A_{sub}$ 量化：

@@ -89,7 +89,7 @@ causal process < selection process < controlled selection < minimal agency < con
 | Controlled selection | system modulates transition probabilities through internal organization | proto-agential control |
 | Minimal agency | system maintains action-readiness and can regulate behavior toward viable transitions | low-level d/Psi_f-sensitive agency |
 | Intentional agency | action is structured by goals, intentions, plans, or practical reasons | L1 action commitment under goal-model constraints |
-| Conscious agency | action is accessible as one's own, reportable, or reflectively integrated | thick L1 self-coupled agency |
+| Conscious agency | action is accessible as one's own, reportable, or reflectively integrated | thick L1 authorial / control ownership integrated into the self-model |
 | Shared agency | multiple agents coordinate intentions, norms, roles, and commitments | intersubjective L2 / collective selection architecture |
 
 This ladder prevents two errors:
@@ -108,9 +108,27 @@ Overrestriction: only reflective human intention is agency.
 | Intentional action | paradigm case of agency in classical philosophy | high-level L1 action commitment under intention/plan constraints |
 | Minimal agency | agency below full human reflective action | controlled selection with viability/action-readiness structure |
 | Action control | mechanisms by which action is initiated, guided, and monitored | G_hat_theta action-selection architecture |
-| Sense of agency | experience of being author/controller of action | self-coupled L1 ownership of selection |
+| Sense of agency | experience of being author/controller of action | authorial / control ownership integrated into the self-model |
 | Conscious agency | agency available to awareness/report/reflection | thick L1 agency with self-model integration |
 | Shared agency | coordinated action among agents | L2-social coupling and joint selection field |
+
+The mapping keeps five dimensions separate:
+
+| Dimension | Question |
+|---|---|
+| Control efficacy | Can the system counterfactually modulate the outcome? |
+| Action authorship | Is the outcome attributed to the system's own action? |
+| Bodily carrier ownership | Is the controlled carrier experienced as part of the body? |
+| Reflective integration | Can the action enter report, endorsement, revision, or self-model update? |
+| Consequence responsibility | Can the bearer understand, answer for, and repair the action's effects? |
+
+Body ownership is a separable empirical dimension and a possible embodied scaffold, not a necessary condition for every conscious agency episode. Control of a tool, cursor, avatar, prosthesis, or remote effector may support agency without ownership of that carrier as part of the body. Conscious agency instead requires self-related authorship integration, readable or counterfactual control, and availability for report or revision. See the bounded P3/P4 bridge in [PH-AG04](SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md), its [Integration Hook](../hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md), and the underlying [SourceCard](../../Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md).
+
+```text
+sense of agency > 0
+does not imply
+body ownership > 0
+```
 
 ---
 
@@ -131,7 +149,7 @@ where:
 | `Action_Readiness` | available transition density toward viable action |
 | `d` | degree to which outcomes matter to the system |
 | `Psi_f` | cost/friction of anchoring or transitioning |
-| `Self_Coupling` | integration into self-model / ownership / report |
+| `Self_Coupling` | authorial / control ownership integrated into self-model, report, and revision |
 | `Social_Coupling` | coordination with other agents, norms, and shared commitments |
 
 This is not a final equation. It is a bridge scaffold for distinguishing agency levels.
@@ -205,8 +223,10 @@ minimal agency = controlled transition-readiness
 Conscious agency arises when action selection is not only controlled but available as self-related, reportable, or reflectively integrated.
 
 ```text
-conscious agency = controlled L1 action + self-coupled ownership
+conscious agency = controlled L1 action + authorial / control ownership integrated into the self-model
 ```
+
+This does not require body ownership of every controlled carrier. It does require that control or authorship be available to the system as self-related and counterfactually readable; responsibility remains a further gate tied to consequences, alternatives, and repair.
 
 ### Claim PH-AG01d: Shared agency is intersubjective L2 coordination
 
@@ -214,6 +234,14 @@ Shared agency requires more than simultaneous behavior. It depends on L2-like co
 
 ```text
 shared agency = coordinated selection field across agents
+```
+
+A third-person avatar synchronously driven by one participant may still be only an external actuator. Coupling alone does not establish an independently organized other or shared agency. The stronger case requires independently or partially independently organized policy and goals, reciprocal counterfactual influence, mutual prediction, role structure, joint commitment, norm repair, and durable intersubjective `L2` coordination.
+
+```text
+externally controlled avatar
+!= autonomous other
+!= shared agency
 ```
 
 ---
@@ -264,7 +292,7 @@ Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
 Suggested insertion after the section defining d-value or subjecthood:
 
 ```text
-SRT should distinguish selection from agency. A physical or computational process may select among possible trajectories without thereby becoming an agent. Agency begins when selection is organized by control, counterfactual sensitivity, action-readiness, and concern-bearing relevance. Minimal agency refers to controlled transition-readiness below reflective intention; conscious agency adds self-coupled ownership and reportability; shared agency adds intersubjective L2 coordination through roles, norms, joint commitments, and mutual expectation.
+SRT should distinguish selection from agency. A physical or computational process may select among possible trajectories without thereby becoming an agent. Agency begins when selection is organized by control, counterfactual sensitivity, action-readiness, and concern-bearing relevance. Minimal agency refers to controlled transition-readiness below reflective intention; conscious agency adds authorial / control ownership integrated into the self-model and reportability; shared agency adds intersubjective L2 coordination through roles, norms, joint commitments, and mutual expectation.
 ```
 
 Do not include:
@@ -279,4 +307,4 @@ Pacherie's framework proves SRT.
 
 ## 11. One-paragraph abstract
 
-Pacherie's *Agency* gives SRT a high-value philosophy-of-mind bridge for sharpening the distinction between selection, minimal agency, conscious agency, and shared agency. SRT should not call every selection agency, but it also should not restrict agency to reflective human intention. A graded agency ladder is more stable: causal activity, selection, controlled selection, minimal agency, intentional agency, conscious agency, and shared agency. In SRT terms, agency begins when a system can regulate reachable transitions in relation to viability, concern, control, and future action. Conscious agency adds self-coupled L1 ownership, while shared agency depends on intersubjective L2 structures such as norms, roles, joint commitments, and mutual expectations. This patch is non-canonical and should be strengthened through full-text close reading before any canonical merge.
+Pacherie's *Agency* gives SRT a high-value philosophy-of-mind bridge for sharpening the distinction between selection, minimal agency, conscious agency, and shared agency. SRT should not call every selection agency, but it also should not restrict agency to reflective human intention. A graded agency ladder is more stable: causal activity, selection, controlled selection, minimal agency, intentional agency, conscious agency, and shared agency. In SRT terms, agency begins when a system can regulate reachable transitions in relation to viability, concern, control, and future action. Conscious agency adds authorial / control ownership integrated into the self-model, not necessary ownership of every bodily or external carrier; shared agency depends on intersubjective L2 structures such as norms, roles, joint commitments, and mutual expectations. This patch is non-canonical and should be strengthened through full-text close reading before any canonical merge.
