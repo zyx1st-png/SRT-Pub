@@ -1,0 +1,77 @@
+# FIGURE PLAN — History-Dependent Reachability
+
+Five main figures. All numeric content is read from the frozen JSONs (no re-simulation
+for figures; extraction scripts live in this directory and are read-only over
+`Experiments/`). null/swap appear ONLY in supplementary (or a small panel explicitly
+labeled "pipeline validation"), never as a main causal figure.
+
+## Figure 1 — The identification problem and formal framework
+
+Panel A: pipeline schematic
+  history → r_t (mu-mixture LLR) → z (write strength) → m (path content) → Γ'_H
+  (future reachable outcomes). Annotate: z gates HOW STRONGLY, m stores WHAT.
+Panel B: the core statement
+  x_A = x_B (matched present), m_A ≠ m_B  ⇒  P_A(future) ≠ P_B(future).
+Panel C: the identification battery at a glance — active / master-yoked /
+  external-action sham; matched state, Q, initial action distribution.
+Source: schematic (no data), plus matched-future numbers from Phase 1
+(present gap 0.0000; future KL 20.7 / JS 0.693 / TV 1.000) as an inset.
+
+## Figure 2 — Constructive dissociation (Phase 1)
+
+The P × W_sel plane with all six conditions:
+  transient (P−W−), pre-existing well (P+W−), nonspecific roughening (neg control:
+  W_global KL 7.98, W_sel≈0), latent inscription (P−W_sel+ at episode scale),
+  anchoring (P+W_sel+), **and external clamp as a small panel** (occupancy rented:
+  P=1.00 while clamped → 0.00 after withdrawal; J_ext 86.4 vs 17.3; W_sel=0).
+Headline annotations: P ⇏ W_sel and W_sel ⇏ P (bidirectional dissociation, NOT
+independence). Include the phase-diagram insets (cells are regions: anchor 49 /
+latent 56), and J_ext/J_write bars showing neither tracks W_sel.
+Source: anchoring_double_well/results_dissociation.json, results_sweep.json.
+
+## Figure 3 — The failed mechanism and its revision (THE pivot figure)
+
+Left (Phase 2b, NO-GO): |PE| → z. Active vs yoked future effect 0.239 vs 0.238 —
+  **within the pre-registered ±equivalence bound** (paired diff 0.087 in 2c re-test,
+  CI [0.082, 0.091] ⊂ ±0.15; in 2b itself yoked reproduces the effect, d=0.05).
+  Label: "history-dependent, but not selection-specific."
+Right (Phase 2c, GO): r_t^{action} → z. Active ≫ yoked: paired diff 0.570,
+  90% CI [0.559, 0.581] > Δ_min=0.20. Yoked decoupling data-verified
+  (ctrl-corr −0.000 vs active +0.270).
+Shared caption point: the negative result was retained frozen and forced the
+mechanism revision — this is the paper's theoretical turn.
+Source: anchoring_bandit_holdout/results_phase2b.json,
+anchoring_2c_controllability/results_2c_holdout.json.
+
+## Figure 4 — tiny-MDP and the matching protocol
+
+Panel A: environment schematic — 3 corridors → 3 goals; blocked edge with fixed-cost
+  return to S0; timeout → ∅ component.
+Panel B: protocol timeline — formation (active/yoked/sham) → reset & match
+  (state, Q, action distribution; ONLY m carried; q/z/counters never read) →
+  frozen-parameter battery (aligned / blocked / novel, roles counterbalanced).
+Panel C: sham mechanism gate — self-attribution −0.015 (≈0) vs external-attribution
+  +0.143 (>0): controllable structure present but not self-attributed.
+Source: anchoring_tiny_mdp_confirmatory/config_mdp_frozen.json, results JSON.
+
+## Figure 5 — Directional behavioral reachability (MAIN RESULT)
+
+Four-bar arrival distributions [P(G0), P(G1), P(G2), P(∅)] for active vs yoked in each
+battery class:
+  aligned  — advantage: ΔP(G_h) = +0.221, CI [0.219, 0.223]
+  blocked  — stickiness: ΔP(∅) = +0.582, CI [0.580, 0.583] (timeout component visible)
+  novel    — restriction: ΔP(G_novel) = −0.278, CI [−0.280, −0.276]
+Plus the primary: macro-TV 0.374, 95% CI [0.374, 0.375] vs Δ_min = 0.15.
+Caption MUST include the CI interpretation: cross-seed reproducibility of a frozen
+model, not construct-level confidence.
+Source: anchoring_tiny_mdp_confirmatory/results_mdp_holdout.json.
+
+## Supplementary figures
+
+S1: washout-length curves (2b): z-gap retention 1.00/0.90/0.82/0.67/0.45/0.20;
+    future diff decay.
+S2: pipeline validation panel (labeled as such): memory-null 0.044, memory-swap 0.000,
+    same-m/diff-z 0.000 — with the audit's mechanical/weak caveats in the caption.
+S3: permutation control (2b): recovery~z 0.76 vs recovery~label 0.007.
+S4: Phase 1 latent-inscription erosion (z_episode +0.74 → z_final −5.53) motivating
+    the two-timescale agent.
