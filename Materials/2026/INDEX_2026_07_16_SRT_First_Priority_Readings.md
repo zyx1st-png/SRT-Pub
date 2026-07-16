@@ -3,7 +3,7 @@ id: SRT-2026-07-16-FIRST-PRIORITY-READING-INDEX
 type: material_packet_index
 status: active_v4
 layer: operations
-epistem_layer: os
+epistemic_layer: os
 claim_mode: evidence
 canonical: false
 date_added: 2026-07-16
