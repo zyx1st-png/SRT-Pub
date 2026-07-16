@@ -1,0 +1,31 @@
+{
+  "stage": "tiny_mdp_confirmatory_holdout",
+  "gate": "GO",
+  "holdout_seeds": [
+    40000,
+    40049
+  ],
+  "calibration_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "bootstrap": 10000,
+  "locked_thresholds": {
+    "Delta_min": 0.15,
+    "eps_TV": 0.05
+  },
+  "primary": "macro-TV 0.374, 95%CI[0.374,0.375] > Delta_min",
+  "failures": "NONE",
+  "files_sha256": {
+    "README.md": "2551891869e0c525",
+    "calibrate_mdp.py": "830758ea0ee17858",
+    "config_mdp_frozen.json": "0ad999f96397fa0c",
+    "holdout_mdp.py": "fa09a336e224c7eb",
+    "model_mdp.py": "2d0465c85070481c",
+    "results_mdp_holdout.json": "b761269926555b50",
+    "tests/test_mdp.py": "4af0768fa90f7019"
+  }
+}
