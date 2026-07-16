@@ -1,0 +1,109 @@
+{
+  "config": {
+    "p_hi": 0.8,
+    "p_lo": 0.2,
+    "temp": 0.15,
+    "lr_lo": 0.02,
+    "lr_hi": 0.4,
+    "kk": 6.0,
+    "zc": 0.3,
+    "z0": 0.2,
+    "alpha_z": 0.02,
+    "lambda_z": 0.002,
+    "N": 400,
+    "form_steps": 800,
+    "vol_period": 10,
+    "wash_steps": 200,
+    "fut_steps": 300,
+    "fut_reversal": 150,
+    "recov_window": 40,
+    "seed": 101
+  },
+  "calibrated_gate": {
+    "zc": 3.170728965999513,
+    "kk": 3.882185474049716
+  },
+  "G1_z_separation": {
+    "z_vol_mean": 3.73670516472146,
+    "z_vol_sd": 0.08376995330611617,
+    "z_stable_mean": 2.6047527672775654,
+    "z_stable_sd": 0.16031612151754848,
+    "gap": 1.1319523974438948,
+    "non_overlap": true,
+    "cohen_d": 8.838973532085769
+  },
+  "G2_match": {
+    "action_kl_after_reset": 0.0,
+    "z_unchanged_by_reset": true
+  },
+  "G3_durability": {
+    "gap_after_formation": 1.1319523974438948,
+    "gap_after_washout": 0.7584665305816787,
+    "retained_fraction": 0.6700516137378225,
+    "still_separated_d": 8.838973532085767
+  },
+  "G4_future_divergence": {
+    "early_recovery_vol": 0.39581249999999996,
+    "early_recovery_stable": 0.215375,
+    "cohen_d": 1.8094494026783206,
+    "bern_divs_on_early_recovery": {
+      "KL": 0.08298855024861315,
+      "JS": 0.019395227005053202,
+      "TV": 0.18043749999999992
+    },
+    "future_reward_vol": 0.7033166666666666,
+    "future_reward_stable": 0.6372916666666667,
+    "sign_stable_across_5_subseeds": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "G5_causal": {
+    "null_diff": 0.008437499999999987,
+    "swap_diff": -0.17575,
+    "dose_z": [
+      0.0,
+      0.5231387230610044,
+      1.0462774461220088,
+      1.5694161691830133,
+      2.0925548922440176,
+      2.615693615305022,
+      3.1388323383660266,
+      3.661971061427031,
+      4.185109784488035,
+      4.7082485075490395,
+      5.231387230610044
+    ],
+    "dose_early_recovery": [
+      0.21450000000000002,
+      0.210625,
+      0.21143749999999997,
+      0.2181875,
+      0.242875,
+      0.47618750000000004,
+      0.741,
+      0.7908124999999999,
+      0.8016249999999999,
+      0.8004375,
+      0.8108125000000002
+    ],
+    "dose_spearman": 0.9636363636363637,
+    "random_control_diff": 0.005500000000000005
+  },
+  "gate": {
+    "checks": {
+      "G1_z_separable": true,
+      "G2_exact_match": true,
+      "G3_durable": true,
+      "G4_future_diverges": true,
+      "G5_null_abolishes": true,
+      "G5_swap_flips": 1.0,
+      "G5_dose_monotone": true,
+      "G5_random_null": true
+    },
+    "GO": true
+  }
+}
