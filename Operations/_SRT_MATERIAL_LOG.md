@@ -77,16 +77,16 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-05-23 | 2026-08-23 | IAI / Ragner Fjelland: *The disunity of science is a feature, not a bug* | `B2`：公共 philosophy-of-science essay，适合作为 anti-ToE / domain-plurality guardrail 候选；但不是一手科学或哲学论文，不能证明所有 reductionism 为假、不能把 emergence 当解释、不能把 scientific disunity 写成反科学、反数学、反 formalization 或逃避 empirical/formal constraints 的许可证 |
 | 2026-05-23 | 2026-08-23 | arXiv / Erik J. Bekkers & Anna Ciaunica: *Unplugging a Seemingly Sentient Machine Is the Rational Choice -- A Metaphysical Perspective*（arXiv:`2601.21016v1`） | `B1/B2`：`B1` for AI welfare vs alignment / functional mimicry vs stake-bearing 接口；`B2` for Biological Idealism / Analytic Idealism 整包；不能写成 SRT=Biological Idealism/Analytic Idealism、AI 永不可能有意识、生物/碳基是 canonical 必要条件、autopoiesis 单独证明意识，或 Social Zombie / Vital Leakage / ontological gaslighting 已成为 SRT 术语 |
 | 2026-05-23 | 2026-08-23 | Essentia Foundation / Stephen Jarosek: *Association as causation: The fabric of meaning and existence itself* | `B2/B3`：公共 metaphysics / systems-theory essay，适合作为 association-vs-selection guardrail 候选；表达素材可入 public prose，但不能写成 SRT=association ontology、association 是 SRT 第一原则、association 直接等于 causation/meaning/existence、physicalism provides no answers、Kastrup idealism 背书，或 quantum contextuality / RQM 支持 SRT ontology |
-| 2026-05-23 | 2026-08-23 | Neuroscience News / Newcastle University: *Using Physics Equations to Map Memory Distortions* / `Quantum Emotions` | `B1/B2`：`B1` for order-sensitive emotional-memory modeling if future paper/model/data appears；`B2` until then as quantum-cognition guardrail；当前无 peer-reviewed 结果/模型方程/数据，不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `Ψ_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure |
-| 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`Ψ_f`、`T_dir`、`Ĝ_theta` |
-| 2026-07-16 | 2026-10-16 | PhilPapers first-priority packet: Šekrst, Wu, Sulic, Georgatos, Simonelli, Rosenhagen, Sawyer（[packet index](../Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md)） | Mixed packet：7/7 SourceCards complete；Šekrst、Wu、Sulic、Simonelli 全文已取得并分别以 `AIEVID01`、`PH-AG02`、`PH-AG03`、`PH-SEM01` patch 升级为 A；3/7 仍为 B 等待全文。下一优先为 Georgatos formal system、Rosenhagen/Sawyer methodology。不得把剩余摘要卡写成全文精读、外部验证或 canonical 支撑 |
+| 2026-05-23 | 2026-08-23 | Neuroscience News / Newcastle University: *Using Physics Equations to Map Memory Distortions* / `Quantum Emotions` | `B1/B2`：`B1` for order-sensitive emotional-memory modeling if future paper/model/data appears；`B2` until then as quantum-cognition guardrail；当前无 peer-reviewed 结果/模型方程/数据，不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `\Psi_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure |
+| 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`\Psi_f`、`T_dir`、`\hat G_\theta` |
+| 2026-07-16 | 2026-10-16 | PhilPapers first-priority packet: Šekrst, Wu, Sulic, Georgatos, Simonelli, Rosenhagen, Sawyer（[packet index](../Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md)） | Mixed packet：7/7 SourceCards complete；Šekrst、Wu、Sulic、Simonelli 与 Sawyer 全文已取得。前四篇以 `AIEVID01`、`PH-AG02`、`PH-AG03`、`PH-SEM01` 升为 A；Sawyer 仅以 `GOV-SUB01` 在方法治理层升 A，其替代自然哲学与超常机制为 C quarantine；2/7 仍为 B 等待全文。下一优先为 Georgatos 与 Rosenhagen。不得把摘要卡、非同行评审自然哲学或方法残余写成 canonical 支撑 |
 
 ---
 
 ## 统计摘要（自动更新）
 
 - 总提交：190 条
-- A（融入）：121 条
-- B（观察）：19 条
+- A（融入）：122 条
+- B（观察）：18 条
 - C（拒绝）：50 条
-- 融入率：63.7%
+- 融入率：64.2%
