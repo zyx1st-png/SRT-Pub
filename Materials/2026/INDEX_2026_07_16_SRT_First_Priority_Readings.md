@@ -1,7 +1,7 @@
 ---
 id: SRT-2026-07-16-FIRST-PRIORITY-READING-INDEX
 type: material_packet_index
-status: active_v5
+status: active_v6
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
@@ -18,10 +18,11 @@ tags: [PhilPapers, priority-reading, source-cards, SRT, logic, subjectivity, met
 
 - 第一优先级材料：7 项。
 - SourceCard：7/7。
-- 全文取得并精读：4/7。
-- A 类：Šekrst、Wu、Sulic、Simonelli。
-- 等待全文：Georgatos、Rosenhagen、Sawyer。
-- 本轮未修改 canonical `d-value`、`Psi_f`、`T_dir`、选择或意识定义。
+- 全文取得并精读：5/7。
+- A 类：Šekrst、Wu、Sulic、Simonelli、Sawyer（仅方法治理层）。
+- 等待全文：Georgatos、Rosenhagen。
+- Sawyer 的替代自然哲学、超常感知和宇宙论内容为 C quarantine，不进入 SRT 科学或 canonical 层。
+- 本轮未修改 canonical `d-value`、`Psi_f`、`T_dir`、选择、生命或意识定义。
 
 ## 2. 卡片导航
 
@@ -31,9 +32,9 @@ tags: [PhilPapers, priority-reading, source-cards, SRT, logic, subjectivity, met
 | Wayne Wu, *Being Biased and Knowing How to Reason* | [SourceCard](SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md)；[PH-AG02](../../Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md) | A / full text | structuring bias；reasoning as action |
 | Amir Sulic, *Logical Time, (Un)Certainty, and the Structure of the Subject* | [SourceCard](SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md)；[PH-AG03](../../Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md) | A / author version | commitment；responsibility position；delay cost |
 | Ryan Simonelli, *Implication Space Semantics as Bilateral Incompatibility Semantics* | [SourceCard](SRC_2026_07_16_Semantics_Simonelli_Implication_Space.md)；[PH-SEM01](../../Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md) | A / penultimate draft | assertion / denial / open remainder；context repair |
+| Chris Sawyer, *Subtraction* | [SourceCard](SRC_2026_07_16_Method_Sawyer_Subtraction.md)；[GOV-SUB01](../../Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md) | A / full text / method-only；C quarantine for substantive natural philosophy | target-relative deletion audit；primitive/symbol/layer indispensability |
 | Konstantinos Georgatos, *Conditional Logics of Nondeterministic Change* | [SourceCard](SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md) | B1 | branch / update / history formalism |
 | Raja Rosenhagen, *Explanatory Articulation and Metaphysical Identity* | [SourceCard](SRC_2026_07_16_Philosophy_Rosenhagen_Explanatory_Identity.md) | B2/B1 | explanation / projection / identity guardrail |
-| Chris Sawyer, *Subtraction* | [SourceCard](SRC_2026_07_16_Method_Sawyer_Subtraction.md) | B1/B2 | variable indispensability audit |
 
 ## 3. 已稳定的跨文献增量
 
@@ -70,29 +71,42 @@ retroactive stabilization != retrocausation
 
 ### 3.3 Bilateral position and context repair
 
-Simonelli 全文支持：
-
 ```text
 position = assertions + denials + open remainder
 ```
 
-并要求区分：
+并要求：
 
 ```text
 strict incompatibility
 != defeasible material clash
 != script-generated false dilemma
+
+negative incompatibility
+!= positive committive consequence
 ```
 
-材料冲突可能通过例外、角色、时间或边界信息得到 repair；但作者同时明确指出：
+### 3.4 Subtractive audit and scientific quarantine
+
+Sawyer 全文经重写后只支持：
 
 ```text
-negative incompatibility != positive committive consequence
+component necessity
+must be tested relative to
+ target + context + bearer + scale + horizon
+ + perturbation set + metrics + refit budget
 ```
 
-所以 exclusion 不能单独定义选择。
+统一守门：
 
-### 3.4 ChoiceMap 综合管线
+```text
+removable in one audit != false / nonexistent
+survives one audit != true / primitive / fundamental
+```
+
+其压力、空间介质、原子/氧气/燃烧/心脏/视觉机制、第六感和行星宇宙论不作为 SRT 外部证据。
+
+### 3.5 ChoiceMap 综合管线
 
 ```text
 expand options
@@ -113,12 +127,12 @@ expand options
 - Wu：SourceCard + `PH-AG02` + integration hook。
 - Sulic：SourceCard + `PH-AG03` + integration hook。
 - Simonelli：SourceCard + `PH-SEM01` + integration hook。
+- Sawyer：全文 SourceCard + `GOV-SUB01` + Governance README hook；方法进入 A，自然哲学内容隔离为 C。
 
 ## 5. 下一顺序
 
 1. Georgatos：公理、语义、完备性与 update operators。
-2. Rosenhagen：解释清晰度与形而上同一性守门。
-3. Sawyer：subtractive audit workflow。
+2. Rosenhagen：解释清晰度、条件同一与无条件形而上同一的守门。
 
 ## 6. 统一守门
 
@@ -126,4 +140,6 @@ expand options
 - defeasible non-persistence 不适用于严格矛盾。
 - incompatibility profile 不是价值、主体性或 `d-value` 标量。
 - position 不等于主体、stake 或 choice event。
-- external material 只能先进入 bridge / patch，不直接证明 canonical SRT。
+- removability 不等于虚假；residue 不等于基础。
+- 非同行评审自然哲学不能因与 SRT 词汇相似而成为科学支撑。
+- external material 只能先进入 bridge / governance patch，不直接证明 canonical SRT。
