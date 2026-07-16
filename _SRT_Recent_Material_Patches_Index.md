@@ -51,6 +51,8 @@ minimal predictive individuation != subjecthood != consciousness != moral agency
 
 | Patch | File | Main SRT use | Integration priority |
 |---|---|---|---|
+| PH-AG02 knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | distinguishes triggering from structuring causes in reasoning; uses learned knowledge as an action-organizing bias while separating bias efficacy from `T_dir` readability and stake ownership | High |
+| PH-AG03 constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | separates epistemic support, final guarantee, binding commitment and retroactive responsibility; adds delay-cost and subject-position formation guardrails | High |
 | PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents "emergence" from functioning as an explanatory primitive; forces bridge claims to specify mechanism, order parameter, macro-pattern, and implementation channel | Medium-high |
 | PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | prevents hard-problem arguments from smuggling in a view-from-nowhere picture of science; treats first/third-person difference as access route and description-grain difference before metaphysical gap | Medium-high |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | prevents depsychologized pure feel from being overread as SRT subjecthood; binds consciousness claims to bearer unit, access, stake, `Psi_f`, boundary, memory, and continuity | Medium-high |
@@ -58,11 +60,24 @@ minimal predictive individuation != subjecthood != consciousness != moral agency
 
 ### Philosophy synthesis direction
 
-PH-CONSC01 should later be folded into a versioned agency / subjecthood synthesis:
+PH-AG02 and PH-AG03 should be folded together into a versioned agency / subjecthood synthesis:
 
 ```text
 Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
 ```
+
+They should preserve:
+
+```text
+triggering cause
+!= structuring bias
+!= binding commitment
+!= responsibility-bearing position
+!= self-readable direction
+!= complete subjecthood
+```
+
+PH-CONSC01 should later be folded into the same synthesis as the consciousness-side ownership gate.
 
 PH-CONSC02 should remain tied to the hard-problem / explanatory-gap route:
 
@@ -86,7 +101,7 @@ Core/SRT_Core_21c_Bridge_Hypotheses.md
 Governance/SRT_CLAIM_LADDER.md
 ```
 
-It should preserve the distinction:
+All philosophy patches should preserve the distinction:
 
 ```text
 selection event != conscious content != subjecthood != agency != responsibility-bearing subject
