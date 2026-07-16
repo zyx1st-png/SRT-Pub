@@ -53,6 +53,7 @@ minimal predictive individuation != subjecthood != consciousness != moral agency
 |---|---|---|---|
 | PH-AG02 knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | distinguishes triggering from structuring causes in reasoning; uses learned knowledge as an action-organizing bias while separating bias efficacy from `T_dir` readability and stake ownership | High |
 | PH-AG03 constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | separates epistemic support, final guarantee, binding commitment and retroactive responsibility; adds delay-cost and subject-position formation guardrails | High |
+| PH-SEM01 bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | separates assertion, denial and open remainder; types strict versus defeasible clashes; adds context-repair and false-dilemma diagnostics while keeping incompatibility distinct from positive consequence, stake and ontology | High |
 | PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents "emergence" from functioning as an explanatory primitive; forces bridge claims to specify mechanism, order parameter, macro-pattern, and implementation channel | Medium-high |
 | PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | prevents hard-problem arguments from smuggling in a view-from-nowhere picture of science; treats first/third-person difference as access route and description-grain difference before metaphysical gap | Medium-high |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | prevents depsychologized pure feel from being overread as SRT subjecthood; binds consciousness claims to bearer unit, access, stake, `Psi_f`, boundary, memory, and continuity | Medium-high |
@@ -60,7 +61,7 @@ minimal predictive individuation != subjecthood != consciousness != moral agency
 
 ### Philosophy synthesis direction
 
-PH-AG02 and PH-AG03 should be folded together into a versioned agency / subjecthood synthesis:
+PH-AG02, PH-AG03 and PH-SEM01 should be folded into a versioned agency / subjecthood / commitment synthesis:
 
 ```text
 Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
@@ -72,9 +73,26 @@ They should preserve:
 triggering cause
 != structuring bias
 != binding commitment
+!= bilateral discursive position
 != responsibility-bearing position
 != self-readable direction
 != complete subjecthood
+```
+
+PH-SEM01 should additionally remain linked to ChoiceMap, occlusion and reselectability:
+
+```text
+_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md
+Core_Law/SRT_Occlusion_Dynamics.md
+_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md
+```
+
+Its central guardrail is:
+
+```text
+strict incompatibility
+!= defeasible material clash
+!= script-generated false dilemma
 ```
 
 PH-CONSC01 should later be folded into the same synthesis as the consciousness-side ownership gate.
