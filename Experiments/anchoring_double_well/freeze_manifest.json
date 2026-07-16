@@ -1,0 +1,25 @@
+{
+  "stage": "phase1_toy_frozen",
+  "seeds_dissociation": [
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "seed_sweep": 21,
+  "seed_matched_future": 99,
+  "n_traj_dissociation": 4000,
+  "files_sha256": {
+    "README.md": "8a6e99aac42402a3",
+    "config.json": "3585efcad19435fa",
+    "matched_future.py": "46c91d54171e1656",
+    "model.py": "3a5c13ccf9116453",
+    "results_dissociation.json": "b9b215d5453c8b66",
+    "results_matched_future.json": "bca93e5e394c3217",
+    "results_sweep.json": "33f355ab31c9fcd3",
+    "run_dissociation.py": "46e8667379d4d79a",
+    "sweep.py": "2143be429e42398f",
+    "tests/test_toy.py": "43c6f15f5928453f"
+  }
+}
