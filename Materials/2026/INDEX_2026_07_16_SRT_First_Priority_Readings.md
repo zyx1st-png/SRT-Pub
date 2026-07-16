@@ -1,9 +1,9 @@
 ---
 id: SRT-2026-07-16-FIRST-PRIORITY-READING-INDEX
 type: material_packet_index
-status: active_v3
+status: active_v4
 layer: operations
-epistemic_layer: os
+epistem_layer: os
 claim_mode: evidence
 canonical: false
 date_added: 2026-07-16
@@ -18,15 +18,16 @@ tags: [PhilPapers, priority-reading, source-cards, SRT, AI, logic, subjectivity,
 
 - 用户清单中的第一优先级材料：**7 项**（6 篇论文/章节 + 1 本专著）。
 - SourceCard：**7/7 已建立**。
-- 目标全文成功取得：**2/7**。
+- 目标全文成功取得：**3/7**。
 - 全文精读完成：
   1. Kristina Šekrst, *To Train a Mockingbird*；
-  2. Wayne Wu, *Being Biased and Knowing How to Reason*。
-- 两篇均已升级为 **A** 并建立非 canonical Patch；其余 5 项仍为 `B1`、`B2` 或 `B1/B2`。
+  2. Wayne Wu, *Being Biased and Knowing How to Reason*；
+  3. Amir Sulic, *Logical Time, (Un)Certainty, and the Structure of the Subject*。
+- 三篇均已升级为 **A** 并建立非 canonical Patch；其余 4 项仍为 `B1`、`B2` 或 `B1/B2`。
 - 未修改 canonical `d-value`、`Psi_f`、`T_dir` 或意识定义。
 - 其余材料重评日期：2026-10-16，或任一目标全文先行取得时立即重评。
 
-> 当前只有 Šekrst 与 Wu 两张卡可以作为全文精读引用；其余卡仍是摘要约束论证重建。
+> 当前 Šekrst、Wu 与 Sulic 三张卡可以作为全文精读引用；其余卡仍是摘要约束论证重建。
 
 ## 2. 卡片导航
 
@@ -34,7 +35,7 @@ tags: [PhilPapers, priority-reading, source-cards, SRT, AI, logic, subjectivity,
 |---:|---|---|---|---|
 | 1 | Kristina Šekrst, *To Train a Mockingbird* | [SourceCard](SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md)；[AIEVID01 Patch](../../AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md) | **A / full-text close-read** | target-overlap provenance discount；stake evidence / stake / consciousness evidence 三分 |
 | 2 | Wayne Wu, *Being Biased and Knowing How to Reason* | [SourceCard](SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md)；[PH-AG02 Patch](../../Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md) | **A / full-text close-read** | triggering vs structuring cause；bias efficacy / readability / ownership 三分；ChoiceMap bias scaffold |
-| 3 | Amir Sulic, *Logical time, (un)certainty, and the structure of the subject* | [SourceCard](SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md) | B1 | 行动先于完整确定性；主体位置由结论行动形成 |
+| 3 | Amir Sulic, *Logical Time, (Un)Certainty, and the Structure of the Subject* | [SourceCard](SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md)；[PH-AG03 Patch](../../Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md) | **A / author-version full-text close-read** | evidence support / final guarantee / enacted commitment / retroactive responsibility；delay cost |
 | 4 | Konstantinos Georgatos, *Conditional Logics of Nondeterministic Change* | [SourceCard](SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md) | B1 | 分叉未来、实际转换、历史写入、更新算子 |
 | 5 | Ryan Simonelli, *Implication Space Semantics as Bilateral Incompatibility Semantics* | [SourceCard](SRC_2026_07_16_Semantics_Simonelli_Implication_Space.md) | B1 | 选择的正向承诺与负向排除；假两难与排除规则 |
 | 6 | Raja Rosenhagen, *Explanatory Articulation and Metaphysical Identity* | [SourceCard](SRC_2026_07_16_Philosophy_Rosenhagen_Explanatory_Identity.md) | B2/B1 | explanation / projection / identity 的 claim-ladder 守门 |
@@ -85,12 +86,38 @@ many-many available continuations
 - `bias efficacy != T_dir readability != stake ownership`；
 - 该模型是 P3 认知行动桥，不是 P0 选择起源证明。
 
-### 3.3 ChoiceMap 的双重硬化
+### 3.3 Constitutive commitment before final guarantee
 
-两篇全文共同要求 ChoiceMap：
+Sulic 全文经收紧后支持：
+
+```text
+reasons constrain the field
++ no final guarantee
++ delay changes reachability
+-> constitutive commitment
+-> public / historical attribution
+-> responsibility-bearing position
+```
+
+必须保留：
+
+```text
+no final guarantee != no reasons
+binding commitment != truth
+retroactive stabilization != retrocausation
+subject-position formation != complete subjecthood
+enacted certainty != T_dir
+```
+
+该文能支持“主体的具体责任位置可在行动后稳定”，不能证明行动者在行动前完全不存在，也不能解决 P0-04。
+
+### 3.4 ChoiceMap 的三重硬化
+
+三篇全文共同要求 ChoiceMap：
 
 1. 不把模型训练出来的“关切感、确信感、建议感”当作 stake；
-2. 不把增加选项、理由和规则本身当作改善选择。
+2. 不把增加选项、理由和规则本身当作改善选择；
+3. 不把所有残余不确定性都视为尚未收集足够信息。
 
 稳定管线：
 
@@ -98,13 +125,14 @@ many-many available continuations
 expand options
 -> reveal default / installed biases
 -> identify which knowledge actually organizes attention
--> declare bearer and horizon
--> state revision conditions
+-> distinguish reducible uncertainty from irreducible guarantee gap
+-> declare bearer, horizon and delay cost
+-> state revision / appeal conditions
 -> preserve reselection
--> return convergence to user
+-> return constitutive commitment to user
 ```
 
-### 3.4 Branch, exclusion, and inscription（待全文）
+### 3.5 Branch, exclusion, and inscription（待全文）
 
 Georgatos 与 Simonelli 仍提供候选结构：
 
@@ -119,7 +147,7 @@ choice
 
 但在取得全文前不得进入形式 Patch。
 
-### 3.5 Methodological hardening（待全文）
+### 3.6 Methodological hardening（待全文）
 
 Rosenhagen 与 Sawyer 继续提供：
 
@@ -143,21 +171,32 @@ Rosenhagen 与 Sawyer 继续提供：
 - `Philosophy/hooks/PH_AG02_Reasoning_Bias_Integration_Hook.md`；
 - A 类，融入 agency / reasoning bridge，不改 `T_dir` 定义。
 
+### 4.3 Sulic
+
+- 作者版本 SourceCard 全文升级；
+- `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md`；
+- `Philosophy/hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md`；
+- A 类，融入 agency / responsibility / subject-position bridge；
+- 仅建立未来 `T_dir` 与 ChoiceMap hook，不改 canonical 定义。
+
 ## 5. 下一批全文精读顺序
 
 1. **Georgatos**：完整公理、语义和完备性，判断能否建立 branch/update/history formal Patch。
 2. **Simonelli**：bilateral position 与 incompatibility entailment，推进 ChoiceMap 排除结构。
-3. **Sulic**：“无正当化”、逻辑时间与主体化结构。
-4. **Rosenhagen**：与 Hill 原文成对精读，决定是否升级 claim-hygiene。
-5. **Sawyer**：目录和核心章节，判断是否建立 subtractive audit workflow。
+3. **Rosenhagen**：与 Hill 原文成对精读，决定是否升级 claim-hygiene。
+4. **Sawyer**：目录和核心章节，判断是否建立 subtractive audit workflow。
 
 ## 6. 不应立即做的事
 
 - 不把 Šekrst 论文写成“当前 LLM 无意识”的证明。
 - 不把 reward-invariance 或 shutdown resistance 写成 stake 充分条件。
-- 不把 Wu 的 bias 等同于 `ε_pg`、`G_hat_theta`、`T_dir` 或自由意志。
+- 不把 Wu 的 bias 等同于 `epsilon_pg`、`G_hat_theta`、`T_dir` 或自由意志。
 - 不把空间线索研究写成逻辑推理机制的直接验证。
 - 不把 action underdetermination 写成逻辑或本体不确定。
+- 不把 Sulic 的“无最终保证”写成“毫无理由”。
+- 不把行动后的确定位置写成行动创造外部事实或使错误命题变真。
+- 不把 retroaction 写成物理逆因果或撤销历史后果。
+- 不把一次 constitutive commitment 写成完整主体或意识诞生。
 - 不把 branching tree 直接等同于 `L0/L1/L2`。
 - 不把 semantic incompatibility 等同于物理不可能。
 - 不把“解释成功”升级为 `Psi_f`、`d` 或 `T_dir` 的无条件 identity。
