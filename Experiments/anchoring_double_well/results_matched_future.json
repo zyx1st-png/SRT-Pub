@@ -1,0 +1,28 @@
+{
+  "present_state_gap": 0.0,
+  "x0": 1.0,
+  "zC": 1.5336971270932254,
+  "cC": 0.4202182762559352,
+  "c_naive": -0.5,
+  "raw_future_Pplus": {
+    "anchor": 1.0,
+    "naive": 0.0
+  },
+  "raw_future_Pminus": {
+    "anchor": 0.0,
+    "naive": 1.0
+  },
+  "reachable": {
+    "anchor": [
+      "M+"
+    ],
+    "naive": [
+      "M-"
+    ]
+  },
+  "divergences": {
+    "KL": 20.723265794499877,
+    "JS": 0.6931471588366798,
+    "TV": 0.9999999980000001
+  }
+}

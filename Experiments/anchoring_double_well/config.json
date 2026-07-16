@@ -1,0 +1,24 @@
+{
+  "dt": 0.01,
+  "D0": 0.06,
+  "kappa": 0.6,
+  "rho": 6.0,
+  "u_push": 1.2,
+  "H": 48.0,
+  "H_withdraw": 24.0,
+  "n_traj": 4000,
+  "seeds": [11, 12, 13, 14, 15],
+  "conditions": {
+    "A_transient":      {"c0": -0.5, "eta": 0.00, "lam": 0.05, "channel": "deepen",  "tau": 12.0},
+    "PreExistingWell":  {"c0":  0.30,"eta": 0.00, "lam": 0.05, "channel": "deepen",  "tau": 12.0},
+    "RoughenWrite":     {"c0": -0.5, "eta": 0.35, "lam": 0.05, "channel": "roughen", "tau": 12.0},
+    "LatentInscription":{"c0":  0.00,"eta": 0.30, "lam": 0.05, "channel": "deepen",  "tau": 12.0, "latent": true},
+    "C_anchor":         {"c0": -0.5, "eta": 0.17, "lam": 0.05, "channel": "deepen",  "tau": 12.0},
+    "B_clamp":          {"c0": -0.5, "eta": 0.00, "lam": 0.05, "channel": "deepen",  "tau": 12.0, "clamp": true}
+  },
+  "cells": {
+    "A_transient": "P- Wsel-", "PreExistingWell": "P+ Wsel-",
+    "RoughenWrite": "neg-control (Wglobal>>Wsel)", "LatentInscription": "P- Wsel+",
+    "C_anchor": "P+ Wsel+", "B_clamp": "clamp control"
+  }
+}
