@@ -1,14 +1,14 @@
 ---
 id: SRT-2026-07-16-FIRST-PRIORITY-READING-INDEX
 type: material_packet_index
-status: active_v1
+status: active_v2
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
 date_added: 2026-07-16
 source_packet: PhilPapers topics-of-interest alert 2026-07-16
-pipeline_decision: B_packet
+pipeline_decision: mixed_A_B_packet
 tags: [PhilPapers, priority-reading, source-cards, SRT, AI, logic, subjectivity, methodology]
 ---
 
@@ -18,18 +18,19 @@ tags: [PhilPapers, priority-reading, source-cards, SRT, AI, logic, subjectivity,
 
 - 用户清单中的第一优先级材料：**7 项**（6 篇论文/章节 + 1 本专著）。
 - SourceCard：**7/7 已建立**。
-- 目标全文成功取得：**0/7**。
-- 当前可核验证据：PhilPapers 书目记录、作者/出版方摘要及少量相关一手背景材料。
-- Pipeline 1 裁决：全部进入 `B1`、`B2` 或 `B1/B2`；**未创建 PatchNote，未修改 canonical 定义，未直接回写理论正文**。
-- 重评日期：2026-10-16，或任一目标全文先行取得时立即重评。
+- 目标全文成功取得：**1/7**。
+- 全文精读完成：Kristina Šekrst, *To Train a Mockingbird*。
+- 该文已从 `B1/B2` 升级为 **A**，并创建 AI evidence-provenance Patch；其余 6 项仍为 `B1`、`B2` 或 `B1/B2`。
+- 未修改 canonical `d-value`、`Psi_f`、`T_dir` 或意识定义。
+- 其余材料重评日期：2026-10-16，或任一目标全文先行取得时立即重评。
 
-> “0/7 全文”不等于“0/7 有价值”。它意味着本轮输出是严格的摘要约束论证重建与 SRT 压力测试，而不是伪装成逐段全文精读。
+> 当前只有 Šekrst 卡可以作为全文精读引用；其余卡仍是摘要约束论证重建，不得伪装为逐段精读。
 
 ## 2. 卡片导航
 
 | 排序 | 材料 | 卡片 | 当前裁决 | 最强 SRT 接口 |
 |---:|---|---|---|---|
-| 1 | Kristina Šekrst, *To Train a Mockingbird* | [SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md](SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md) | B1/B2 | AI 行为证据的因果来源门；stake / bearer / consequence-return |
+| 1 | Kristina Šekrst, *To Train a Mockingbird* | [SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md](SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md)；[AIEVID01 Patch](../../AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md) | **A / full-text close-read** | target-overlap provenance discount；stake evidence / stake / consciousness evidence 三分 |
 | 2 | Wayne Wu, *Being Biased and Knowing How to Reason* | [SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md](SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md) | B1 | 推理作为选择性行动；bias efficacy / readability / revisability |
 | 3 | Amir Sulic, *Logical time, (un)certainty, and the structure of the subject* | [SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md](SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md) | B1 | 行动先于完整确定性；主体位置由结论行动形成 |
 | 4 | Konstantinos Georgatos, *Conditional Logics of Nondeterministic Change* | [SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md](SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md) | B1 | 分叉未来、实际转换、历史写入、更新算子 |
@@ -41,14 +42,26 @@ tags: [PhilPapers, priority-reading, source-cards, SRT, AI, logic, subjectivity,
 
 ### 3.1 Stake evidence provenance
 
-Šekrst 提醒：被训练管线直接制造的意识样行为不是独立证据。SRT 可把 AI stake 证据门扩展为：
+Šekrst 全文精读后，SRT 的 AI stake 证据门可稳定扩展为：
 
 ```text
-observable sign
--> causal-origin audit
+observable sign / indicator
+-> target-overlap provenance audit
+-> causal-state grounding
+-> architecture-state declaration
 -> bearer-unit audit
--> consequence-return audit
--> payability / history / reselection audit
+-> R / A / C consequence-return gate
+-> non-substitutability / payability / reselection
+-> candidate stake evidence
+```
+
+全文还迫使 SRT 明确：
+
+```text
+优化来源折损 ≠ 结构不存在
+reward-invariance ≠ stake
+stake evidence ≠ stake
+stake ≠ phenomenal consciousness
 ```
 
 ### 3.2 Selection before settled certainty
@@ -74,42 +87,51 @@ choice
 + history inscription
 ```
 
-这比“从集合中取一个值”更接近 SRT，但仍缺 `Ψ_f`、stake、bearer 与真实后果。
+这比“从集合中取一个值”更接近 SRT，但仍缺 `Psi_f`、stake、bearer 与真实后果。
 
 ### 3.4 Methodological hardening
 
-Rosenhagen 与 Sawyer共同施压：
+Rosenhagen 与 Sawyer 共同施压：
 
 - 解释越来越好，不等于无条件本体同一；
 - 变量越来越多，不等于理论越来越强；
 - 每个 SRT 变量需要说明投影条件和不可删除工作；
 - 不能被竞争理论减掉而不损失解释力。
 
-## 4. 当前最有价值的候选产物
+## 4. 已完成产物与下一顺序
 
-取得全文后按以下顺序启动二轮裁决：
+### 4.1 已完成
+
+**Šekrst / To Train a Mockingbird**
+
+- 全文 SourceCard 已升级；
+- 已创建 `AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md`；
+- 已在 `AI/AI_POSITIONING_NOTE.md` 增加 evidence-provenance bridge note；
+- 裁决为 A，但只融入 AI 证据治理层。
+
+### 4.2 下一批全文精读顺序
 
 1. **Georgatos**：核验完整公理、语义和完备性，判断能否建立 branch/update/history formal Patch。
-2. **Šekrst**：核验 stake 的必要/充分地位及对持久 agent 的处理，建立 AI evidence provenance Patch。
-3. **Wu**：核验演绎推理的 action-underdetermination，建立 reasoning-as-selective-action Patch。
-4. **Simonelli**：核验 bilateral position 与 incompatibility entailment，推进 ChoiceMap 排除结构。
-5. **Sulic**：核验“无正当化”与主体化结构，形成 certainty-after-selection 哲学桥。
-6. **Rosenhagen**：与 Hill 原文成对精读后，决定是否升级 claim-hygiene。
-7. **Sawyer**：取得目录与核心章节后，决定是否建立 subtractive audit workflow。
+2. **Wu**：核验演绎推理的 action-underdetermination，建立 reasoning-as-selective-action Patch。
+3. **Simonelli**：核验 bilateral position 与 incompatibility entailment，推进 ChoiceMap 排除结构。
+4. **Sulic**：核验“无正当化”与主体化结构，形成 certainty-after-selection 哲学桥。
+5. **Rosenhagen**：与 Hill 原文成对精读后，决定是否升级 claim-hygiene。
+6. **Sawyer**：取得目录与核心章节后，决定是否建立 subtractive audit workflow。
 
 ## 5. 不应立即做的事
 
-- 不把任何一篇摘要写成 SRT 的外部验证。
+- 不把 Šekrst 论文写成“当前 LLM 无意识”的证明。
+- 不把 reward-invariance、anti-reward persistence 或 shutdown resistance 写成 stake 充分条件。
+- 不把 stake 等同于现象意识或 canonical `d-value`。
 - 不把 branching tree 直接等同于 `L0/L1/L2`。
 - 不把 semantic incompatibility 等同于物理不可能。
 - 不把 bias 等同于 `ε_pg`、`Ĝ_θ` 或自由意志。
-- 不把 stake 等同于现象意识或 canonical `d-value`。
-- 不把“解释成功”升级为 `Ψ_f`、`d` 或 `T_dir` 的无条件 identity。
+- 不把“解释成功”升级为 `Psi_f`、`d` 或 `T_dir` 的无条件 identity。
 - 不因 “Subtraction” 与 SRT 最小公理契合就视为理论背书。
 
 ## 6. 统一重评门
 
-任一材料转 A 前至少满足：
+任一剩余材料转 A 前至少满足：
 
 1. 目标全文已取得并 close-read；
 2. 核心概念、论证步骤与反对意见已核验；
