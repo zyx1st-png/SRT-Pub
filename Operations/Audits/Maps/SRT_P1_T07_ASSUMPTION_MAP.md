@@ -23,22 +23,22 @@ tags: [Governance, ProofAudit, AssumptionMap, P1-T07]
 | # | Premise | Source in corpus | Explicit? | Necessary? | Sufficient (alone)? | ε_pg co-reference | Countermodel if missing |
 |---|---|---|---|---|---|---|---|
 | P1 | `∅` (`A_t=∅`) is **absorbing** | `SRT_Irreversibility.md` Def-IRR / T-IRR-2; P1-T07 step 2 | **yes** | yes (frames the terminal) | no (says nothing about *reaching* `∅`) | none (pure irreversibility) | — (this one holds) |
-| P2 | `∅` is **reachable** under neutral dynamics | — | **no** | yes | no | **C** — "neutrality can always reach self-erasure" negates ε_pg's `B≥2` favouring | D2 (closed 2-cycle, `∅` unreachable); D5 (deterministic non-`∅` orbit) |
-| P3 | per-step death hazard **positive** (`h_t>0`) | P1-T07 step 3 (asserted) | asserted, not justified | yes | no | weak **C** — positive drift toward self-erasure | D5 (`h_t=0` deterministic survival) |
-| P4 | **cumulative hazard diverges** (`Σ h_t=∞` a.s.) | — (identified only in this audit) | **no** | yes (for a.s. termination, via Lévy) | **yes**, with P1 (closes Version B) | **C** — = "neutrality cannot sustain non-self-erasure", contrapositive of ε_pg | D1 (`h_t=2^{-t}`, `Σh_t<∞`, survives); D6 (`h_t↓0`) |
+| P2 | `∅` is **reachable** under neutral dynamics | — | **no** | yes | no | **E — pending source**: could be an independent state-space geometry / neutral kernel, or a projection of ε_pg's `B≥2` favouring | D2 (closed 2-cycle, `∅` unreachable); D5 (deterministic non-`∅` orbit) |
+| P3 | per-step death hazard **positive** (`h_t>0`) | P1-T07 step 3 (asserted) | asserted, not justified | yes | no | **E — pending kernel**: a property of the transition kernel, not intrinsically ε | D5 (`h_t=0` deterministic survival) |
+| P4 | **cumulative hazard diverges** (`Σ h_t=∞` along surviving histories) | — (identified only in this audit) | **no** | yes (sufficient, predictable-hazard) | **yes**, alone (closes Version B) | **E — pending neutral-kernel definition**: may restate ε_pg's non-self-erasure, or may follow from an independent kernel | D1 (`h_t=2^{-t}`, `Σh_t<∞`, survives); D6 (`h_t↓0`) |
 | P5 | **uniform hazard lower bound** (`h_t≥δ>0`) | — | **no** | no (stronger than needed) | **yes** (closes Version A: a.s. + finite `E[τ]`) | **D/E** — a *pro-closure* drift; not a model of neutrality | — (over-strong; wrong direction) |
-| P6 | **no neutral closed communicating class avoiding `∅`** | — | **no** | yes | **yes**, with P1 & recurrence (closes Version C) | **C/D** — = ε_pg's non-self-erasure necessity restated | D2; D4 (reflecting non-terminating walk) |
-| P7 | **recurrence / irreducibility to `∅`** | — | **no** | yes (for Version C) | no (needs P6 too) | **C** | D3 (transient toward a safe region) |
-| P8 | **formal definition of "ε-neutral"** distinct from the closure condition | — (undefined in `Core/`, `Core_Law/`) | **no** | yes (else proof is vacuous or circular) | n/a | **decides the whole question**: if defined = "no hazard suppression" → theorem false; if defined = "non-summable hazard" → circular | D1–D6 all ambiguous without it |
-| P9 | **stochastic transition model** on `A_t` | P1-T07 step 3 only (not in P1-T06) | proof-only | yes (the argument is probabilistic) | no | none directly | — (modeling gap: P1-T06 is non-probabilistic) |
-| P10 | **askability / persistence prior** ("any accumulating/remembering position locally satisfies non-self-erasure") | `SRT_L0_Metaphysics.md:202` | **yes**, but scoped **local only** | it is the honest engine of the argument | closes a **local, conditional** version | **C** — the file says this **is** local ε, and only proves *local* ε | (this is the defensible core, see Proposals Option B) |
+| P6 | **no neutral closed communicating class avoiding `∅`** | — | **no** | yes | **yes**, with recurrence (closes Version C) | **E — pending topology/model**: could be supplied by an independent kernel geometry rather than ε_pg | D2; D4 (reflecting non-terminating walk) |
+| P7 | **recurrence / irreducibility to `∅`** | — | **no** | yes (for Version C) | no (needs P6 too) | **E — pending model**: structural chain property, not intrinsically ε | D3 (transient toward a safe region) |
+| P8 | **formal definition of "ε-neutral"** distinct from the closure condition | — (undefined in `Core/`, `Core_Law/`) | **no** | yes (else proof is vacuous or circular) | n/a | **decides the whole question**: if defined = "no hazard suppression" → theorem false; if defined = "non-summable hazard" → circular (**D**) | D1–D6 all ambiguous without it |
+| P9 | **stochastic transition model + stability semantics** (S1/S2/S3) on `A_t` | P1-T07 step 3 only (not in P1-T06) | proof-only; semantics unfixed | yes (the argument is probabilistic; the theorem needs a chosen semantics) | no | none directly | — (modeling gap: P1-T06 is non-probabilistic and semantics-undetermined) |
+| P10 | **askability / persistence prior** ("any accumulating/remembering position locally satisfies non-self-erasure") | `SRT_L0_Metaphysics.md:202` | **yes**, but scoped **local only** | it is the honest engine of the argument | closes a **local, conditional** version | **C** — the file says this **is** local ε, and only proves *local* ε | (the defensible core, see Proposals Option B) |
 
 ## Reading
 
-- **P1** is the only premise that both holds and is ε-independent — and it is insufficient alone.
-- The proof's validity turns on **P8** (undefined) and one of **P4 / P5 / P6+P7** (all unstated, all ε-co-referential except the illegitimate P5).
-- **P10** is the corpus's own honest form of the argument, and it is explicitly **local** and **postulate-grade** — matching Proposals Option B.
-- No combination closes the *strong, unconditional, ε-independent* theorem. Every closing set imports an ε-co-referential premise (P2/P4/P6/P7/P10) or an illegitimate one (P5).
+- **P1** is the only premise that both holds and is settled ε-independent — and it is insufficient alone.
+- The proof's validity turns on **P8** (undefined) + a chosen **P9** semantics + one sufficient package (**P4** alone, or **P5**, or **P6+P7**).
+- **Only P10 is settled ε-co-referential (C); P8's circular horn is D.** The structural premises **P2/P3/P4/P6/P7 are E — undecided pending an independently specified neutral kernel/geometry**; they are **not** automatically ε_pg in disguise (revised from Proof-Audit-1.0, which over-classified them as C/D).
+- No combination **currently** closes the *strong, unconditional, ε-independent* theorem — but ε-independence is **not disproven**; it turns on whether an independent neutral kernel can be shown to absorb a.s. (Proposals Option B-lite).
 
 ## Cross-refs
 

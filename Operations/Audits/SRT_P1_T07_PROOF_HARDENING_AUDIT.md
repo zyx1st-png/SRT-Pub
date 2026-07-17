@@ -19,15 +19,17 @@ tags: [Governance, ProofAudit, P1-T07, EpsilonPG, Reachability, Hazard]
 # P1-T07 Proof Hardening Audit — Reachability, Cumulative Hazard, and ε_pg Independence
 
 > **Status**: non-canonical Operations record. **Proof audit only.** It modifies no theorem, no axiom, no definition, no equation. It does not resolve the proof; it maps exactly where the current proof does and does not close, and hands options to a later controlled amendment PR. Prior Claude/ChatGPT statements about P1-T07 were treated as hypotheses; the only source of truth is `origin/main @ 14c0d7f8`. Archive/book files were read for context but are **not** used to establish anything about the canonical theorem.
+>
+> **Proof Audit 1.1 revision (2026-07-17)**: tightened the probability. (a) Replaced the unconditional "a.s. termination **iff** `Σh_t=∞`" with the deterministic product identity `P(τ>n)=∏(1-h_k)` and divergence as a **sufficient** condition (exact N&S flagged pending). (b) Added the stable-ISP **stochastic-semantics gap** S1/S2/S3 — P1-T07 is not a formal stochastic theorem until one is chosen. (c) Countermodels split by role: D1/D3/D6 refute the *inference* (not automatically S2 stable-ISP countermodels); D2/D4/D5 are *candidate* theorem countermodels pending perspective/history-bearing + an ε-neutral definition; removed "each satisfies the stated stable-ISP conditions." (d) **Withdrew** the unconditional ε-co-reference verdict: reachability / hazard-divergence / no-safe-class / recurrence are now **E — pending an independent neutral kernel**; only the askability prior is **C** and the define-neutral-by-survival move is **D/circular**. "clean R2 unreachable" → "not established, but possible in principle". (e) The strongest *unconditional* claim is only "if `τ<∞` then not a stable ISP." (f) Contradiction §6 narrowed to the ε_pg input/output circularity (the L₀/ISP level distinction is legitimate).
 
 ## 0. The six core questions (answers up front)
 
 1. **Does "nonzero probability at each step" imply almost-sure entry into `∅`?** **No.** It does not even imply positive *eventual* termination without a reachability premise, and it never implies *almost-sure* termination. (§3, §4)
-2. **What minimal mathematical conditions are additionally required?** Empty-state reachability **plus** one of: a uniform hazard lower bound (`h_t ≥ δ>0`), or divergence of the conditional cumulative hazard (`Σ h_t = ∞` a.s., via Lévy's conditional Borel–Cantelli), or an irreducible-to-absorbing recurrence structure with no neutral closed class avoiding `∅`. (§4)
-3. **Do these already exist in SRT definitions?** **No.** `A_t`, "ε-neutral", "continued selectability", and the stochastic transition itself are not formally defined at the level these premises need; the stable-ISP definition (P1-T06) is stated non-probabilistically. (§2)
-4. **Do these premises smuggle ε_pg back in?** **Yes, or plausibly yes, for the load-bearing ones.** The reachability / no-safe-neutral-class / hazard-divergence premises are co-referential with ε_pg's branching bias (`B≥2 ≻ B≤1`); the uniform-δ premise is a mis-directed pro-closure drift. (§5)
-5. **What can P1-T07 prove at most?** At most **positive termination probability** (given reachability at some step). **Not** almost-sure termination, **not** finite expected termination time, **not**, therefore, "P terminates ⇒ not a stable ISP". (§4)
-6. **Can ISP-level ε be derived independently of ε_pg?** **Not established.** Every route that closes the proof imports an ε-like premise or is analytic; the corpus itself scopes the honest version as *local, postulate-grade* (`L0_Metaphysics §六`). (§5, §9)
+2. **What minimal mathematical conditions are additionally required?** **Three *alternative* sufficient packages** (§4): **(A)** a uniform conditional hazard lower bound `h_t ≥ δ>0`; **(B)** divergent cumulative conditional hazard along every surviving history; **(C)** a Markov absorption package (all nonempty states transient / no other closed recurrent class). Each package internally implies reachability. The *exact* necessary-and-sufficient hazard theorem is flagged as **pending a stochastic-semantics choice** (S1/S2/S3, §2), not asserted here.
+3. **Do these already exist in SRT definitions?** **No.** `A_t`, "ε-neutral", "continued selectability", and the stochastic transition itself are not formally defined at the level these premises need; the stable-ISP definition (P1-T06) is stated non-probabilistically and does not even fix which stability semantics (S1/S2/S3) is meant. (§2)
+4. **Do these premises smuggle ε_pg back in?** **Undecided per premise (§5).** Only the *askability prior* is clearly ε-co-referential (C); *defining "neutral" directly by non-summable death hazard* is circular (D). Reachability / hazard-divergence / no-safe-class / recurrence are **E — pending an independently specified state-space geometry or neutral transition kernel**; they are *not* automatically ε_pg in disguise. The uniform-δ premise is an illegitimate pro-closure drift.
+5. **What can P1-T07 prove at most?** **Unconditionally, only this**: *if* `τ<∞`, then `∅` is absorbing and `P` is no longer a stable ISP. "Positive termination probability" is **not** unconditional (it needs reachability). Almost-sure termination, finite expected time, and therefore "P terminates ⇒ not a stable ISP" are **not** derivable as written. (§4, §8)
+6. **Can ISP-level ε be derived independently of ε_pg?** **Not established — but not disproven.** Under the current corpus the anti-closure residue is **R4**. A clean **R2** (ε_pg dispensable) is **not established**, yet **remains possible in principle** if an independently defined neutral baseline kernel can be shown to absorb almost surely. (§5, §9)
 
 ## 1. Object
 
@@ -41,7 +43,12 @@ To test Step 3 we must make the implicit stochastic model explicit. The theorem 
 - **Absorbing terminal** `∅`: by `L_0` irreversibility (`SRT_Irreversibility.md` Def-IRR / T-IRR-2), `A_{t*}=∅ ⇒ ∀t>t*` no `Ĝ_θ` yields a new selection. **Absorbing is well-defined and canonical.**
 - **History filtration** `H_t` = σ-algebra of the process up to `t`.
 - **Conditional death hazard**: `h_t := P(A_{t+1}=∅ \mid H_t,\ A_t ≠ ∅)`.
-- **Stable ISP** (P1-T06 result-state criterion): iterative (`A_t≠∅` each `t`), perspective-bearing, history-bearing (writeback `A_t → A_{t+1}`), **re-selectable (continues selecting across steps)**.
+- **Stable ISP** (P1-T06 result-state criterion): iterative (`A_t≠∅` each `t`), perspective-bearing, history-bearing (writeback `A_t → A_{t+1}`), **re-selectable (continues selecting across steps)** — all stated **non-probabilistically**.
+- **Stochastic semantics of "stable" — undetermined by P1-T06.** With `τ := inf{t : A_t = ∅}`, P1-T06 does not decide which of these "stable ISP" requires:
+  - **S1 — pathwise stability**: `A_t ≠ ∅` for all `t` on a *realized* history (`τ = ∞` on that path);
+  - **S2 — almost-sure stability**: `P(τ = ∞) = 1`;
+  - **S3 — positive-survival stability**: `P(τ = ∞) > 0`.
+  These are genuinely different objects, and **P1-T07 cannot be a formal stochastic theorem until one is chosen** — both the theorem's truth and the status of every countermodel depend on the choice.
 - **ε-neutral**: **not formally defined anywhere in the corpus** (grep across `Core/`, `Core_Law/`: used in P1-T07 proof and `Irreversibility.md §3/§4/§4.5`, never defined). The only quasi-definition is by contrast (`Irreversibility.md:167`): ε-anti-closure ISPs are "those with nonzero long-run probability of not entering the absorbing state"; so ε-neutral reads as its negation.
 - **Irreversibility**: `∅` is absorbing (above). This governs *what happens after* `∅`, not *whether* `∅` is reached.
 
@@ -58,26 +65,35 @@ Step 3 asserts (5) [and flirts with (6)] from (3). That inference is invalid.
 
 ## 3. The gap, precisely
 
-Even granting `h_t > 0` for **all** `t` (proposition 3, itself unstated), a.s. termination does **not** follow. By **Lévy's conditional Borel–Cantelli lemma**, for events adapted to `H_t`, `{A_{t+1}=∅ \text{ i.o.}} = {Σ_t P(A_{t+1}=∅\mid H_t) = ∞}` a.s. Termination is a.s. **iff** the conditional cumulative hazard diverges. If `Σ_t h_t < ∞` — which is fully compatible with every `h_t > 0` — the survival probability `∏_t (1-h_t) > 0`, so `P(P` never terminates`) > 0`. On those paths `P` keeps selecting forever and **is** a stable ISP. Hence "neutral ⇒ terminates ⇒ not stable ISP" fails on a positive-probability set.
+Even granting `h_t > 0` for **all** `t` (proposition 3, itself unstated), a.s. termination does **not** follow.
 
-Moreover neutrality does not even give proposition (3): a neutral process may have `h_t = 0` (it simply never drifts toward `∅`). "No anti-closure bias" ≠ "positive closure bias."
+**Deterministic (pre-given) hazard.** Survival is exactly `P(τ > n) = ∏_{k≤n}(1 - h_k)`. Since for `h_k ∈ [0,1)` one has `∏_k (1-h_k) > 0 ⟺ Σ_k h_k < ∞`, a strictly positive per-step hazard is **compatible with positive survival forever**. Concretely, `h_t = 2^{-t}` (`t ≥ 1`, every `h_t > 0`) gives `∏_{t≥1}(1 - 2^{-t}) ≈ 0.2888 > 0`, so `P(τ = ∞) > 0` despite `h_t > 0` at every step.
 
-## 4. Four proof versions
+**General (predictable) hazard.** Divergence of the cumulative conditional hazard **along every surviving history** is a *sufficient* condition for a.s. termination, under the appropriate predictable-hazard / compensator formulation (`Σ_t h_t = ∞` a.s. ⇒ `∏_t(1-h_t) = 0` a.s. ⇒ `τ < ∞` a.s.). This pass does **not** assert an unconditional "iff": the exact necessary-and-sufficient characterization — random hazards, the compensator of `𝟙[τ ≤ t]`, and the measure-theoretic meaning of "along surviving histories" — requires fuller probabilistic formalization and is **flagged as pending**.
 
-### Version A — Uniform hazard lower bound (`h_t ≥ δ > 0`)
+The upshot for Step 3 is unchanged: "nonzero per-step hazard" does not yield a.s. termination. Moreover neutrality does not even give proposition (3): a neutral process may have `h_t = 0` (it simply never drifts toward `∅`). "No anti-closure bias" ≠ "positive closure bias."
+
+## 4. Proof versions: three *alternative* sufficient packages (A/B/C) + countermodels (D)
+
+Versions A, B, C are **not** a single conjunction; each is an **independent sufficient package** for a.s. termination, and each **internally implies reachability** (so reachability need not be added separately). They differ in strength and in what they presuppose.
+
+### Version A — Uniform conditional hazard lower bound (`h_t ≥ δ > 0`)
+*Implies reachability (positive per-step hazard toward `∅`).*
 - **Yields**: a.s. termination *and* finite expected time (`P(survive to t) ≤ (1-δ)^t → 0`, `E[τ] ≤ 1/δ`). **Sufficient.**
 - **Where does δ come from?** Nowhere in the corpus. Worse, it is a **uniform positive drift *toward* `∅`** — a *pro-closure* assumption. Neutrality (absence of anti-closure bias) does not supply a positive death drift. So Version A does not model "ε-neutral"; it models "actively dying," which begs the result in the wrong direction.
 - **ε-status**: not ε (it is anti-ε); but illegitimate as a model of neutrality → **category D/E** (mis-assumption).
 
-### Version B — Divergent cumulative hazard (`Σ h_t = ∞`)
-- **Yields**: a.s. termination (via Lévy), **no** finite-expected-time guarantee. **Sufficient for the theorem's needs.**
-- **Requires**: a conditional/martingale structure (Lévy applies to conditional probabilities, so it is available), plus the substantive claim that a neutral `P` has non-summable death hazard.
-- **Is this weaker than ε_pg?** The divergence claim is precisely "neutrality cannot keep `Σ h_t < ∞`", i.e. "neutral dynamics cannot sustain non-self-erasure indefinitely." That is the **contrapositive of ε_pg's `B≥2 ≻ B≤1` branching bias**. So it is **not** obviously weaker — it restates ε_pg's content as a hazard-divergence premise. **Category C** (local projection of ε_pg).
+### Version B — Divergent cumulative hazard along surviving histories (`Σ h_t = ∞`)
+*Implies reachability (a summable-to-∞ hazard cannot be identically zero).*
+- **Yields**: a.s. termination (predictable-hazard / compensator argument), **no** finite-expected-time guarantee. **Sufficient.**
+- **Requires**: a predictable/martingale structure (available), plus the substantive claim that a neutral `P` has non-summable death hazard.
+- **Is this ε_pg in disguise?** **Undecided — E pending a neutral-kernel definition.** The divergence premise *could* be read as "neutrality cannot sustain non-self-erasure" (the contrapositive of ε_pg's `B≥2 ≻ B≤1` bias), **or** it could follow from an *independently specified* neutral transition kernel / state-space geometry. Whether it collapses into ε_pg depends on how "neutral" is defined (still open). Not auto-classified as ε.
 
-### Version C — Finite/countable recurrent system, `∅` reachable & absorbing
+### Version C — Markov absorption package (`∅` reachable & absorbing; no other closed recurrent class)
+*Bundles reachability and "no safe neutral class."*
 - Model neutral `P` as a Markov chain on reachable-set configurations, `∅` absorbing.
-- **Yields**: a.s. absorption **iff** every recurrent class either is `{∅}` or communicates with `∅` — i.e. **there is no neutral closed communicating class avoiding `∅`**.
-- **The load-bearing premise is exactly "no safe neutral class."** Nothing in P1-T06/T07 forbids one (Countermodel D2/D5). Asserting its absence is asserting that neutrality cannot form a self-sustaining non-`∅` cycle — again **ε_pg's non-self-erasure claim**. **Category C/D.**
+- **Yields**: a.s. absorption when every nonempty state is transient / there is **no closed recurrent class avoiding `∅`**.
+- **Is the "no safe neutral class" premise ε_pg?** **Undecided — E pending the topology/model.** Nothing in P1-T06/T07 forbids a safe class (Countermodels D2/D5), so the premise is *load-bearing and unstated*; but it *could* be supplied by an independently defined kernel geometry rather than by ε_pg. Not auto-classified as ε.
 
 ### Version D — Countermodels (each a valid stochastic/transition system)
 | # | Countermodel | Terminates a.s.? | Blocked by which formal condition? |
@@ -89,11 +105,16 @@ Moreover neutrality does not even give proposition (3): a neutral process may ha
 | D5 | Deterministic period-2 orbit, `h_t=0` ∀t | **No** | none — determinism is "neutral" (no *bias*) yet survives |
 | D6 | Hazard decays to 0 (`h_t ↓ 0`, `Σh_t<∞`): long-run survival stays positive | **No** | none |
 
-**For each countermodel**: it satisfies irreversibility (`∅` absorbing is respected — it is simply never reached), and it satisfies the *stated* stable-ISP conditions (it keeps selecting). Whether it counts as **"ε-neutral"** cannot be decided, because ε-neutral is undefined. Two exhaustive readings:
-- If ε-neutral = "no active anti-closure maintenance / no hazard lower bound", then **D1–D6 are ε-neutral and survive ⇒ P1-T07 is false as stated.**
-- If ε-neutral is defined so as to exclude D1–D6 (e.g. "has non-summable death hazard"), then that exclusion **is** the ε-bias ⇒ **P1-T07 is analytic/circular** (it assumes the hazard structure it concludes).
+All six respect irreversibility (`∅` is absorbing — simply never reached). They play **two distinct roles** (not interchangeable):
 
-Either horn blocks an unconditional proof.
+- **Refuting the Step-3 *inference*** — **D1, D3, D6** have `h_t > 0` at every step yet `P(τ=∞) > 0` (survival positive but *not* a.s.). They **refute "nonzero per-step hazard ⇒ a.s. termination."** They do **not** automatically constitute stable-ISP *countermodels* under **S2** (a.s. stability), since under S2 a process with `P(τ<∞) > 0` is not stable; under **S3** (positive-survival) they would be.
+- **Candidate *theorem* countermodels** — **D2, D4, D5** have `P(τ=∞) = 1` (deterministic / closed non-`∅` class), so they are **S2-stable (survive a.s.)**. They are candidate countermodels to the theorem **only if** (i) the perspective-bearing / history-bearing conditions of P1-T06 (conds. 2–3) are supplied and satisfied, **and** (ii) "ε-neutrality" is independently defined so they qualify as neutral. Neither is pinned down, so they remain **candidates**, not confirmed countermodels.
+
+Whether any `D_i` counts as **"ε-neutral"** cannot be decided, because ε-neutral is undefined. Two exhaustive readings of a future definition:
+- If ε-neutral = "no active anti-closure maintenance / no hazard lower bound", the surviving models qualify ⇒ **P1-T07 is false as stated** (for the chosen semantics).
+- If ε-neutral is defined so as to exclude them (e.g. "has non-summable death hazard"), that exclusion **is** the ε-bias ⇒ **P1-T07 is analytic/circular**.
+
+Either horn blocks an *unconditional* proof.
 
 ## 5. Is ε_pg hidden in the premises?
 
@@ -102,21 +123,24 @@ Classify each candidate closing premise (A=truly independent, B=weaker than ε_p
 | Premise | Classification | Reason |
 |---|---|---|
 | `∅` absorbing | **A (independent)** | pure irreversibility; but insufficient alone |
-| `∅` reachable (proposition 2) | **C** | "neutral dynamics can always reach self-erasure" is the negation of ε_pg's `B≥2` favouring; co-referential |
+| `∅` reachable (proposition 2) | **E — pending source** | could be an independently specified state-space geometry / neutral kernel, **or** a projection of ε_pg's `B≥2` favouring; not decidable without the neutral-kernel definition |
 | `h_t ≥ δ > 0` (Version A) | **D/E** | a *pro-closure* drift; not a model of neutrality — mis-assumption |
-| `Σ h_t = ∞` (Version B) | **C** | = "neutrality cannot sustain non-self-erasure", contrapositive of ε_pg branching bias |
-| "no safe neutral closed class" (Version C) | **C/D** | = ε_pg's non-self-erasure necessity, restated as a topology-of-chain premise |
-| persistence / askability prior | **C** | `L0_Metaphysics §六`: "any position that can accumulate/remember/ask must **locally** satisfy non-self-erasure" — this **is** local ε, and the file says it proves only *local* ε, not global |
+| `Σ h_t = ∞` (Version B) | **E — pending neutral-kernel definition** | may restate ε_pg's non-self-erasure, **or** may follow from an independent kernel; depends on the (still open) definition of "neutral" |
+| "no safe neutral closed class" (Version C) | **E — pending topology/model** | load-bearing and unstated, but **could** be supplied by an independent kernel geometry rather than by ε_pg |
+| recurrence / irreducibility | **E — pending model** | a structural chain property; not intrinsically ε |
+| persistence / askability prior | **C** | `L0_Metaphysics §六`: "any position that can accumulate/remember/ask must **locally** satisfy non-self-erasure" — this **is** local ε; the file scopes it to *local* ε only |
+| defining "neutral" directly by non-summable death hazard | **D / circular** | assumes the very hazard structure the theorem concludes |
 
-**Verdict**: the premises that would make Step 3 valid are, for the load-bearing ones, **co-referential with ε_pg** (branching / non-self-erasure), or illegitimate (Version A). The proof cannot be closed by a premise that is demonstrably ε-independent. Therefore **ε_pg-independence at the ISP level is not established**, and the strong reading in which P1-T07 *derives* ε from irreversibility alone is unsupported.
+**Verdict**: only the askability prior (**C**) and the define-neutral-by-survival move (**D/circular**) are settled as ε-entangled. The load-bearing *structural* premises — reachability, hazard divergence, no-safe-class, recurrence — are **E: not decidable without an independently specified neutral baseline kernel / state-space geometry**. Therefore **ε_pg-independence at the ISP level is not established — but it is not disproven either.** A **clean R2 is not established in the current corpus; it remains possible in principle if an independently defined neutral baseline kernel can be shown to absorb almost surely** (see Proposals Option B-lite).
 
 ## 6. Corpus contradictions found (recorded, not resolved)
 
-1. **Postulate vs theorem-consequence.** `Core_Law/SRT_L0_Metaphysics.md:202`: "ε 是公设，不可被升格为定理" (ε is a **postulate**, must **not** be upgraded to a theorem). `Core_Law/SRT_Irreversibility.md:240`: "ε_pg > 0：由 P1-T07 反证法保证" (ε_pg>0 is **guaranteed by** P1-T07's proof-by-contradiction). These are contradictory on whether ε_pg is an input postulate or a derived consequence.
-2. **Circular dependency.** P1-T07 bridge relation step 1 uses ε_pg ("existence of asymmetry") as an **input**; `Irreversibility.md:240` uses P1-T07 as the **source** of `ε_pg>0`. ε_pg is both premise and conclusion of the same argument.
-3. **Local vs global.** `L0_Metaphysics:202` explicitly scopes the askability argument as proving only **locally-valid ε**, "不能推广到全局 L0" — yet P1-T07/T-IRR-3 state the necessity without that locality qualifier.
-4. **Undefined primitive.** "ε-neutral" is load-bearing in the proof but has **no formal definition** in the canonical corpus.
-5. **Non-probabilistic definition, probabilistic proof.** P1-T06 defines stable ISP without any transition-probability structure; P1-T07 Step 3 silently introduces one (`h_t`), so the proof's object is not the definition's object.
+> **Not a contradiction (legitimate design):** the two-level distinction — `ε_pg` (L₀) as a **structural postulate** vs ISP-level `ε` as a **proposed structural corollary** — is a coherent layering, not an inconsistency. The finding below is narrower.
+
+1. **Circular dependency on ε_pg (the precise contradiction).** `Core_Law/SRT_Irreversibility.md:240` states `ε_pg > 0` is **guaranteed by P1-T07**'s proof-by-contradiction, while P1-T07's own bridge relation (step 1) already takes **`ε_pg` existence as an input**. So the L₀ postulate is made a *consequence* of a theorem that *assumes* it — ε_pg is both premise and conclusion of one argument. (`L0_Metaphysics:202` independently insists ε "不可被升格为定理" / must not be upgraded to a theorem, siding against the Irreversibility:240 reading.)
+2. **Local vs global.** `L0_Metaphysics:202` explicitly scopes the askability argument as proving only **locally-valid ε**, "不能推广到全局 L0" — yet P1-T07 / T-IRR-3 state the necessity without that locality qualifier.
+3. **Undefined primitive.** "ε-neutral" is load-bearing in the proof but has **no formal definition** in the canonical corpus.
+4. **Non-probabilistic definition, probabilistic proof, undetermined semantics.** P1-T06 defines stable ISP without any transition-probability structure and without fixing S1/S2/S3 (§2); P1-T07 Step 3 silently introduces a stochastic model (`h_t`). The proof's object is not (yet) the definition's object.
 
 ## 7. Collective version — T-COLL-3
 
@@ -126,42 +150,43 @@ Classify each candidate closing premise (A=truly independent, B=weaker than ε_p
 - **No independent collective reachability/hazard premise** is supplied.
 - It defines `σ_sr^coll → 1 ⇔ ε^coll → 0` (line 504) — again defining neutrality by the closure condition (same circularity, lifted).
 - **Individual vs collective termination** are structurally distinguished (T-IRR-2 "集体终止") but the *proof* does not use that distinction to add a premise.
+- **Inherits the S1/S2/S3 ambiguity too** (§2): "stable collective ISP" is likewise not fixed to a stochastic-stability semantics, so the collective statement is no more formally closed than the single-ISP one.
 - **Cannot** serve as independent support for P1-T07: an isomorphic copy of the same invalid inference is not corroboration.
 
 ## 8. What the theorem CAN stand on (unconditionally)
 
-- The **absorbing** character of `∅` under irreversibility — solid.
-- **Positive termination probability** given reachability at some step — solid but weak (compatible with positive survival probability, so it does **not** yield "not a stable ISP").
-- The **local, conditional** statement: *a process that maintains a non-summable death hazard under neutral dynamics terminates a.s.* — solid, but this is Version B with its premise made explicit, and the premise is ε-co-referential.
+- The **absorbing** character of `∅` under irreversibility — solid, unconditional.
+- **The only unconditional consequence about stability**: *if* `τ < ∞`, then `∅` is absorbing and `P` is no longer a stable ISP (S1 and S2 both fail on that path). This is a conditional on termination *occurring*; it says nothing about *whether* it occurs.
+- **"Positive termination probability" is NOT unconditional** — it requires reachability (an unstated premise), so it is not part of the unconditional base.
+- **Conditional statements** (each with an explicit, currently-unjustified premise): Versions A / B / C each yield a.s. termination; whether their premises are ε-co-referential is **open** (§5), not settled.
 
-Everything stronger (a.s. termination for *all* neutral stable-ISP candidates; ε-independence) is **not** currently proven.
+Everything stronger (a.s. termination for *all* neutral stable-ISP candidates; ε-independence) is **not** currently proven, and cannot be stated as a stochastic theorem until S1/S2/S3 is chosen.
 
 ## 9. Decision gates
 
 ### P1-T07 Proof Gate
-- **Is the stated theorem valid?** **Not as proved.** The statement may be *true under an added premise*, but the current Proof Sketch does not establish it.
-- **Is the current Proof Sketch valid?** **No** — Step 3 is a non-sequitur (§3); it conflates six distinct propositions (§2).
-- **Strongest unconditionally supported conclusion**: `∅` is absorbing; neutral `P` has *positive* termination probability given reachability. **Not** a.s. termination.
-- **Minimal sufficient assumption set**: reachability of `∅` **and** (uniform `h_t≥δ` **or** `Σh_t=∞` a.s.) **and** no neutral closed class avoiding `∅`.
-- **Uniform hazard needed?** Sufficient but illegitimate as a neutrality model (Version A).
-- **Cumulative-hazard divergence enough?** Yes (with Lévy), and it is the honest minimal premise — but it is ε-co-referential.
-- **Valid countermodels exist?** **Yes** (D1–D6), each blocking the unconditional claim.
-- **Confidence**: **high** that the current proof is invalid as written (this is standard probability); **medium** on the exact minimal premise set; **medium** on the ε-co-reference classification (interpretive).
-- **GO / NO-GO for a theorem-amendment proposal**: **GO** — the evidence supports a controlled amendment PR (options in `Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`). **NO-GO** for editing P1-T07 in this pass.
+- **Is the current Proof Sketch valid?** **No — high confidence.** Step 3 is a non-sequitur (§3, standard probability); it conflates six distinct propositions (§2).
+- **Is the *theorem* (statement) true?** **Unresolved.** It may be true under an added premise and a chosen semantics; the current text neither proves nor refutes it.
+- **Exact necessary/sufficient hazard theorem?** **Pending a stochastic-semantics choice (S1/S2/S3, §2).** Not stated this pass.
+- **Strongest unconditional conclusion**: `∅` is absorbing; and *if* `τ<∞` then `P` is no longer a stable ISP. **Not** a.s. termination; **not** even unconditional positive termination probability.
+- **Sufficient packages** (alternatives, §4): **A** uniform `h_t≥δ`; **B** divergent cumulative hazard on surviving histories; **C** Markov absorption (no other closed recurrent class). Uniform-δ is illegitimate as a neutrality model; B and C are legitimate but rest on currently-unstated premises.
+- **Valid countermodels?** **Yes** to the *inference* (D1/D3/D6 refute Step 3); **candidate** countermodels to the *theorem* (D2/D4/D5) pending semantics + an ε-neutral definition.
+- **Confidence**: **high** the proof is invalid as written; **medium** on the sufficient-package set; **low-to-medium** on whether those premises are ε-entangled.
+- **GO / NO-GO for a theorem-amendment proposal**: **GO** (options in `Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`). **NO-GO** for editing P1-T07 this pass.
 
 ### ε_pg Independence Gate
-- **Can P1-T07 stand independent of ε_pg?** **Not established.** Every closing premise is ε-co-referential (§5) or illegitimate.
-- **Which premises may be hidden ε?** reachability, `Σh_t=∞`, "no safe neutral class", askability-persistence — all category C/D.
-- **GOV-SUB01 residue for the anti-closure role (conditional)**:
-  - under the current (invalid) proof: **R4** (removal masked by an unstated, ε-co-referential premise);
-  - if hardened via Version B/C: **P** (the closing premise is an ε-grade postulate, not an ε-independent derivation) — *not* R2;
-  - a clean **R2** (ε_pg dispensable, role carried by an ε-independent structure) is **not** currently reachable on the evidence.
-- **What is still missing**: a formal definition of ε-neutral that is **not** the closure condition itself, plus a reachability/recurrence premise with an **ε-independent** justification. Absent both, the R2 reading is unsupported.
+- **Can P1-T07 stand independent of ε_pg?** **Not established — and not disproven.**
+- **Which premises *may* be hidden ε?** Only the askability prior is settled ε (**C**); defining "neutral" by non-summable hazard is circular (**D**). Reachability / hazard-divergence / no-safe-class / recurrence are **E — pending an independently specified neutral kernel / geometry** (§5), not automatically ε.
+- **GOV-SUB01 residue for the anti-closure role**:
+  - under the current (invalid) proof: **R4**;
+  - **R2 is not established in the current corpus**, but **remains possible in principle** if an independently defined neutral baseline kernel can be shown to absorb almost surely (Proposals Option B-lite);
+  - a **P** reading applies only if the closing premise turns out to be an ε-grade postulate — which is one of the open branches, not a settled verdict.
+- **What is still missing**: (i) a choice of S1/S2/S3; (ii) a formal ε-neutral definition that is **not** the survival/closure outcome; (iii) an ε-independent justification (or refutation) of the reachability/absorption premise.
 
 ### Collective Gate
 - **Does T-COLL-3 close independently?** **No.**
-- **Does it inherit the same gap?** **Yes** (isomorphic proof, no independent premise).
-- **Can it corroborate P1-T07?** **No** — same invalid inference cannot support itself.
+- **Does it inherit the same gap?** **Yes** (isomorphic proof, no independent premise) — **plus** the same S1/S2/S3 semantic ambiguity.
+- **Can it corroborate P1-T07?** **No** — an isomorphic copy of the same invalid inference cannot support itself.
 
 ## 10. Recommendation (not executed)
 
