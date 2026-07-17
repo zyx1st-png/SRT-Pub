@@ -1,0 +1,12 @@
+{
+  "stage": "phase2_bandit_feasibility_GO",
+  "gate": "GO",
+  "seed": 101,
+  "N_per_regime": 400,
+  "files_sha256": {
+    "README.md": "6987ff21224bedc8",
+    "feasibility.py": "4eb7daa3c07e554d",
+    "results_feasibility.json": "07d07986da7630a0",
+    "tests/test_bandit.py": "e447c4ecb495ac10"
+  }
+}

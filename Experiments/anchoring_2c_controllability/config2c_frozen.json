@@ -1,0 +1,19 @@
+{
+  "model": {
+    "N": 300, "temp": 0.15,
+    "phi_low": 0.85, "plo_low": 0.15, "phi_high": 0.65, "plo_high": 0.35,
+    "beta_Q": 0.15, "beta_q": 0.10,
+    "alpha_z": 0.05, "lambda_z": 0.01, "alpha_pe": 0.05, "lambda_pe": 0.01,
+    "form_steps": 400, "alpha_m": 0.05, "null_z_value": 0.0, "rho_future": 1.5
+  },
+  "yoked_action_rng_offset": 777,
+  "calibration_seeds": [1, 2, 3, 4, 5],
+  "holdout_seeds_start": 30000, "holdout_seeds_n": 40,
+  "preregistered": {
+    "Delta_min": 0.20,
+    "eps_equiv_commit": 0.15,
+    "eps_equiv_ctrlcorr": 0.05,
+    "ci_level": 0.90,
+    "bootstrap_resamples": 2000
+  }
+}

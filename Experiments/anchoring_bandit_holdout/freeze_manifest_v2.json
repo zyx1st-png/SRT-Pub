@@ -1,0 +1,16 @@
+{
+  "stage": "phase2b_locked_holdout",
+  "supersedes": "freeze_manifest.json",
+  "supersede_reason": "YAML frontmatter added to README for governance-preflight CI. Code, parameters, and results JSON unchanged.",
+  "audit_date": "2026-07-17",
+  "changed_vs_v1": [
+    "README.md"
+  ],
+  "gate": "NO-GO",
+  "files_sha256": {
+    "README.md": "9feb696392b62288",
+    "phase2b.py": "d9916ec47bdc1de2",
+    "results_phase2b.json": "623d3a16220e5a7d",
+    "tests/test_phase2b.py": "b6035a8d83dbe474"
+  }
+}
