@@ -67,19 +67,22 @@ The manuscript currently has **no bibliography**. Citation-needed points:
 4. §5.2 possibly IIT if named at review (currently not named in body — decide
    whether to keep it unnamed).
 
-## 5. TODO — pre-submission statistical extraction (no new experiments; frozen-JSON
-reads plus at most one authorized deterministic re-run)
+## 5. TODO — pre-submission statistical extraction — **COMPLETED 2026-07-17**
+(single authorized deterministic extraction round; see `STATISTICAL_RECHECK.md`)
 
-1. Per-class four-bar arrival vectors [P(G0),P(G1),P(G2),P(∅)] for the planned
-   Fig 5 panel (raw vectors not stored in frozen JSON).
-2. S4 latent-erosion trace (episode-end z is in the aggregate; end-of-observation
-   z is not).
-3. Per-seed summary tables for all primary metrics (supplementary).
-4. Unified statistics script reading only frozen JSONs, emitting every CI in the
-   paper from one source.
-5. Decision item: optional per-seed (volatility-averaged) re-bootstrap of Phase 2c
-   as a robustness footnote — would require an authorized analysis run; currently
-   disclosed as limitation instead.
+1. ~~Per-class four-bar arrival vectors~~ → extracted (role-aligned; Fig 5 A–C).
+2. ~~S4 latent-erosion~~ → realized as a two-point comparison (full per-step trace
+   not extractable without editing frozen code; documented).
+3. ~~Per-seed summary tables~~ → `STATS_TABLES.md` T3a (2c, 40 seeds) and T4b
+   (tiny-MDP, 50 seeds). Phase 2b per-seed values not stored in its frozen JSON
+   and not re-derived (outside the authorized round).
+4. ~~Unified statistics script~~ → `build_stats_tables.py` → `STATS_TABLES.md`.
+5. ~~2c re-bootstrap decision~~ → resolved: seed-clustered robustness re-bootstrap
+   run (ctrl 0.570, 90% CI [0.566, 0.574]; |PE| 0.087 [0.084, 0.089]); direction
+   unchanged; frozen pooled result stands, re-check cited as robustness support.
+
+Reproduction check: all 10 frozen primaries reproduced bit-identically; STOP rule
+not triggered; manuscript body numbers unchanged.
 
 ## 6. TODO — formatting / venue (not content)
 

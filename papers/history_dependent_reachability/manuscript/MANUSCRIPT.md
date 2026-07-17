@@ -522,10 +522,10 @@ before calibration (Delta_min = 0.15, eps_TV = 0.05); 50 fresh seeds (40000–40
 
 With state, fast values Q, and the initial action distribution matched exactly and
 **only m** carried from formation, the equal-weight macro-TV between active and
-yoked goal-arrival distributions was **0.374, 95% CI [0.374, 0.375]** (Figure 5B) — the CI lower
+yoked goal-arrival distributions was **0.374, 95% CI [0.374, 0.375]** (Figure 5E) — the CI lower
 bound directly exceeds the pre-registered Delta_min = 0.15.
 
-The difference is directional, in all three pre-registered senses (Figure 5A):
+The difference is directional, in all three pre-registered senses (Figure 5A–D):
 
 - **Aligned (advantage):** active reaches the history goal more, ΔP(G_h) = +0.221,
   CI [+0.219, +0.223];
@@ -931,19 +931,25 @@ that is not attributable to the agent's own actions does not gate consolidation.
 
 ## Figure 5 — Directional behavioral reachability under a matched present (main result)
 
-**(A)** Paired active−yoked differences with 95% CIs, all three pre-registered
-direction gates passing: aligned advantage ΔP(G_h) = +0.221 [+0.219, +0.223];
-blocked stickiness ΔP(∅) = +0.582 [+0.580, +0.583]; novel restriction
-ΔP(G_novel) = −0.278 [−0.280, −0.276]. Consolidation buys history-aligned advantage
-at the price of perseverative stickiness. **(B)** Primary endpoint: equal-weight
-macro-TV between active and yoked arrival distributions = 0.374, 95% CI
-[0.374, 0.375], with the CI lower bound directly above the pre-registered
-Δ_min = 0.15 (50 fresh seeds; 10,000 paired bootstrap resamples). The narrow CIs
-reflect cross-seed reproducibility of a frozen deterministic model (each per-seed
-statistic averages N = 400 agents); they are not construct-level confidence
-intervals. Per-class four-bar arrival distributions are deferred to the
-pre-submission extraction re-check (raw vectors are not stored in the frozen JSON).
-*Source: results_mdp_holdout.json.*
+**(A–C)** Role-aligned mean arrival distributions [P(G_hist), P(G_other),
+P(G_novel), P(∅)] for active vs yoked in each battery class (50-seed means from the
+authorized extraction round). Aligned: active concentrates on the history goal
+(0.86 vs 0.64). Blocked: active perseverates into non-arrival (P(∅) = 0.61 vs 0.03)
+while yoked reaches the alternative goal (0.77). Novel: active is drawn back to the
+history goal (0.50) and reaches the novel goal less (0.36 vs 0.64). **(D)** Paired
+active−yoked differences with 95% CIs, all three pre-registered direction gates
+passing: aligned advantage ΔP(G_h) = +0.221 [+0.219, +0.223]; blocked stickiness
+ΔP(∅) = +0.582 [+0.580, +0.583]; novel restriction ΔP(G_novel) = −0.278
+[−0.280, −0.276]. Consolidation buys history-aligned advantage at the price of
+perseverative stickiness. **(E)** Primary endpoint: equal-weight macro-TV between
+active and yoked arrival distributions = 0.374, 95% CI [0.374, 0.375], with the CI
+lower bound directly above the pre-registered Δ_min = 0.15 (50 fresh seeds; 10,000
+paired bootstrap resamples). **(F)** Per-seed macro-TV distribution (extraction
+round; axis zoomed to the data range — all 50 seeds lie far above Δ_min). The
+narrow CIs reflect cross-seed reproducibility of a frozen deterministic model (each
+per-seed statistic averages N = 400 agents); they are not construct-level
+confidence intervals. *Sources: results_mdp_holdout.json (D, E);
+extraction_round.json (A–C, F).*
 
 ## Supplementary figures
 
@@ -964,6 +970,12 @@ structural. *Source: results_mdp_holdout.json.*
 carried z, future recovery follows the carried value (r = 0.761), not the history
 label (r = 0.007). *Source: results_phase2b.json.*
 
-**S4 — deferred.** The latent-inscription erosion trace (episode-end z vs
-end-of-observation z) is not stored in the frozen aggregate JSON; the panel is
-deferred to the pre-submission extraction re-check.
+**S4 — State-tracking erosion of an off-target write (two-point).** Ensemble-mean
+slow variable z at the end of the selection episode vs the end of the observation
+window, frozen seeds 11–15, from the authorized extraction round:
+LatentInscription +0.742 ± 0.000 → −5.543 ± 0.033 (the off-target write erodes as
+the state-tracking z follows the fast state back to the home basin), while
+C_anchor +1.534 ± 0.000 → +3.322 ± 0.000 (the expressed write self-consolidates).
+A full per-step erosion *trace* is not extractable without editing frozen code and
+is therefore not produced; the two-point comparison carries the finding.
+*Source: extraction_round.json.*

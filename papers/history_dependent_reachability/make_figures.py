@@ -1,12 +1,13 @@
-"""Generate manuscript figures. READ-ONLY over Experiments/ frozen JSONs.
+"""Generate manuscript figures. READ-ONLY over Experiments/ frozen JSONs plus
+extraction_round.json (the single authorized deterministic extraction round).
 
-Rules: every plotted number comes from a frozen results JSON (schematic panels carry
-no data). Panels whose raw data are not in the frozen JSONs (Fig 5 four-bar arrival
-vectors; S4 latent-erosion trace) are DEFERRED to the pre-submission extraction
-re-check and are not synthesized here.
+Rules: every plotted number comes from a frozen results JSON or from
+extraction_round.json (schematic panels carry no data). The previously deferred
+panels (Fig 5 A–C four-vector arrivals, panel F per-seed distribution; S4 two-point
+latent erosion) are now sourced from the extraction round.
 
 Run from this directory:  python3 make_figures.py
-Outputs: figures/fig{1..5}.{png,pdf}, figures/s{1..3}.{png,pdf}
+Outputs: figures/fig{1..5}.{png,pdf}, figures/s{1..4}.{png,pdf}
 """
 from __future__ import annotations
 import json
@@ -224,35 +225,79 @@ def fig4():
 # ---------------------------------------------------------------- Figure 5
 def fig5():
     m = load("anchoring_tiny_mdp_confirmatory/results_mdp_holdout.json")
+    ex = json.load(open(HERE / "extraction_round.json"))
     dr = m["direction"]; pm = m["primary_macro_TV"]
-    fig, (axA, axB) = plt.subplots(1, 2, figsize=(10.5, 3.9), gridspec_kw={"width_ratios": [1.6, 1]})
-
+    fv = ex["tiny_mdp"]["fourvec_rolealigned"]
+    fig, axs = plt.subplots(2, 3, figsize=(11.5, 7.2),
+                            gridspec_kw={"height_ratios": [1, 1.1]})
+    # --- top row A-C: role-aligned arrival four-vectors per battery class ---
+    cats = ["$G_{hist}$", "$G_{other}$", "$G_{novel}$", "$\\varnothing$"]
+    for ax, (cls, letter) in zip(axs[0], [("aligned", "A"), ("blocked", "B"), ("novel", "C")]):
+        x = np.arange(4)
+        ax.bar(x - 0.19, fv[cls]["active"], 0.38, color=C_ACT, label="active")
+        ax.bar(x + 0.19, fv[cls]["yoked"], 0.38, color=C_YOK, label="yoked")
+        ax.set_xticks(x); ax.set_xticklabels(cats, fontsize=9)
+        ax.set_ylim(0, 1.0); ax.set_ylabel("arrival probability" if cls == "aligned" else "")
+        ax.set_title(f"{letter}  {cls}", loc="left", fontsize=10)
+        if cls == "aligned":
+            ax.legend(fontsize=8)
+    # --- bottom left/middle (merged look): direction diffs ---
+    axD, axE, axF = axs[1]
     labels = ["aligned\n$\\Delta P(G_h)$", "blocked\n$\\Delta P(\\varnothing)$",
               "novel\n$\\Delta P(G_{novel})$"]
     keys = ["aligned_active_adv", "blocked_active_stickiness", "novel_active_stickiness"]
     means = [dr[k][0] for k in keys]
     err = np.array([[dr[k][0] - dr[k][1] for k in keys], [dr[k][2] - dr[k][0] for k in keys]])
     cols = [C_OK, "#dd6b20", "#dd6b20"]
-    axA.bar(range(3), means, 0.55, color=cols, yerr=err, capsize=5)
-    axA.axhline(0, color="k", lw=0.9)
-    axA.set_xticks(range(3)); axA.set_xticklabels(labels, fontsize=9)
-    axA.set_ylabel("active − yoked (paired)")
-    axA.set_title("A  Directional reachability: advantage (aligned)\nvs stickiness cost (blocked / novel)",
-                  loc="left", fontsize=10)
-    axA.text(0.02, 0.04, "95% CIs; direction gates pre-registered",
-             transform=axA.transAxes, fontsize=8, style="italic")
+    axD.bar(range(3), means, 0.55, color=cols, yerr=err, capsize=5)
+    axD.axhline(0, color="k", lw=0.9)
+    axD.set_xticks(range(3)); axD.set_xticklabels(labels, fontsize=8.5)
+    axD.set_ylabel("active − yoked (paired)")
+    axD.set_title("D  Direction gates (95% CIs,\npre-registered sides)", loc="left", fontsize=10)
 
-    axB.errorbar([0], [pm["mean"]], yerr=[[pm["mean"] - pm["ci"][0]], [pm["ci"][1] - pm["mean"]]],
+    axE.errorbar([0], [pm["mean"]], yerr=[[pm["mean"] - pm["ci"][0]], [pm["ci"][1] - pm["mean"]]],
                  fmt="o", color=C_ACT, capsize=6, ms=9)
-    axB.axhline(pm["Delta_min"], color=C_NEG, ls="--", lw=1.2,
+    axE.axhline(pm["Delta_min"], color=C_NEG, ls="--", lw=1.2,
                 label="$\\Delta_{min}$ = %.2f" % pm["Delta_min"])
-    axB.set_xlim(-0.7, 0.7); axB.set_ylim(0, 0.45); axB.set_xticks([])
-    axB.set_ylabel("macro-TV (equal-weight, 3 classes)")
-    axB.legend(fontsize=8, loc="lower right")
-    axB.set_title("B  Primary: macro-TV 0.374\n95% CI [0.374, 0.375] (50 seeds, 10k bootstrap)",
-                  loc="left", fontsize=10)
+    axE.set_xlim(-0.7, 0.7); axE.set_ylim(0, 0.45); axE.set_xticks([])
+    axE.set_ylabel("macro-TV (equal-weight)")
+    axE.legend(fontsize=8, loc="lower right")
+    axE.set_title("E  Primary: macro-TV 0.374\n95% CI [0.374, 0.375]", loc="left", fontsize=10)
+
+    # per-seed macro-TV distribution (extraction round); zoomed to data range —
+    # Delta_min = 0.15 lies far below the axis (stated in annotation instead).
+    mseeds = [r["macro_tv"] for r in ex["tiny_mdp"]["per_seed"]]
+    axF.hist(mseeds, bins=12, color=C_GRAY, edgecolor="white")
+    axF.set_xlabel("per-seed macro-TV (50 seeds)"); axF.set_ylabel("count")
+    axF.text(0.03, 0.92, "all 50 seeds $\\gg$ $\\Delta_{min}$ = 0.15\n(axis zoomed to data)",
+             transform=axF.transAxes, fontsize=8, style="italic")
+    axF.set_title("F  Per-seed distribution\n(extraction round)", loc="left", fontsize=10)
     fig.tight_layout()
     save(fig, "fig5")
+
+# ------------------------------------------------- Supplementary S4 (erosion, two-point)
+def s4():
+    ex = json.load(open(HERE / "extraction_round.json"))
+    er = ex["phase1_erosion"]
+    fig, ax = plt.subplots(figsize=(6.2, 3.8))
+    conds = ["LatentInscription", "C_anchor"]
+    cols = {"LatentInscription": "#dd6b20", "C_anchor": C_OK}
+    for i, cnd in enumerate(conds):
+        v = er[cnd]
+        ax.plot([0, 1], [v["z_episode_mean"], v["z_final_mean"]], "o-",
+                color=cols[cnd], label=cnd, ms=8)
+        ax.errorbar([0, 1], [v["z_episode_mean"], v["z_final_mean"]],
+                    yerr=[v["z_episode_sd"], v["z_final_sd"]], fmt="none",
+                    ecolor=cols[cnd], capsize=4)
+    ax.axhline(0, color=C_GRAY, lw=0.8)
+    ax.set_xlim(-0.3, 1.3); ax.set_xticks([0, 1])
+    ax.set_xticklabels(["episode end\n($z_{episode}$)", "end of observation\n($z_{final}$)"])
+    ax.set_ylabel("slow variable $z$ (ensemble mean)")
+    ax.legend(fontsize=9)
+    ax.set_title("S4  State-tracking erosion of an off-target write (two-point,\n"
+                 "frozen seeds 11–15): latent write erodes; anchored write consolidates",
+                 loc="left", fontsize=9.5)
+    fig.tight_layout(); save(fig, "s4")
 
 # ---------------------------------------------------------------- Supplementary
 def s1():
@@ -296,5 +341,5 @@ def s3():
     fig.tight_layout(); save(fig, "s3")
 
 if __name__ == "__main__":
-    fig1(); fig2(); fig3(); fig4(); fig5(); s1(); s2(); s3()
+    fig1(); fig2(); fig3(); fig4(); fig5(); s1(); s2(); s3(); s4()
     print("done")
