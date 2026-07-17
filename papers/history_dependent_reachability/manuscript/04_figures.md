@@ -16,9 +16,10 @@ future reachable outcome set Γ'_H is a function of m alone. Core statement: wit
 present state matched (x_A = x_B) but histories differing (m_A ≠ m_B), future
 outcome distributions differ. **(B)** Constructive instance from the double-well
 system (S1): two ensembles at the identical present state (present-state gap
-0.0000), one carrying an anchoring history and one naive, end in disjoint reachable
-sets — raw future P(M+) = 1.000 (anchored) vs 0.000 (naive); TV = 1.000, JS = 0.693.
-*Source: results_matched_future.json.*
+0.0000), one carrying an anchoring history and one naive, end in maximally
+separated, non-overlapping finite-horizon outcome distributions under the specified
+adverse probe — raw future P(M+) = 1.000 (anchored) vs 0.000 (naive); TV = 1.000,
+JS = 0.693. *Source: results_matched_future.json.*
 
 ## Figure 2 — Constructive dissociation of P, W_global, and W_sel (S1)
 
@@ -64,7 +65,9 @@ distribution; **only the path memory m is carried** into a frozen-parameter task
 battery (aligned / blocked / novel; goal and blocked roles counterbalanced across
 seeds). Terminal outcomes are four-vectors [P(G0), P(G1), P(G2), P(∅)] including a
 timeout/non-arrival component. Formation q, z, counters, and traces are never read
-at test (code-verified; same-m/different-z = 0). **(B)** Sham mechanism gate:
+at test (code-verified; the structural zero same-m/different-z = 0 is an
+implementation-level pipeline check confirming only-m carry — it is not independent
+causal evidence). **(B)** Sham mechanism gate:
 outcomes driven by an observable external action produce near-zero self-attribution
 (−0.015) but clearly positive external-attribution (+0.143) — controllable structure
 that is not attributable to the agent's own actions does not gate consolidation.

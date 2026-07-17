@@ -205,7 +205,8 @@ def fig4():
         ax.add_patch(FancyArrowPatch((x0, 0.51), (x1, 0.51), arrowstyle="-|>",
                                      mutation_scale=14, color=C_GRAY))
     ax.text(0.42, 0.12, "formation $q, z$, counters, traces are never read at test\n"
-            "(code-verified; same-$m$/diff-$z$ = 0)", ha="center", fontsize=8, style="italic")
+            "(code-verified; same-$m$/diff-$z$ = 0 — implementation-level pipeline check,\n"
+            "not independent causal evidence)", ha="center", fontsize=8, style="italic")
     ax.text(0.42, 0.88, "terminal distribution: $[P(G_0), P(G_1), P(G_2), P(\\varnothing)]$"
             "  ($\\varnothing$ = timeout / non-arrival)", ha="center", fontsize=9)
     ax.set_xlim(0, 1); ax.set_ylim(0, 1)
