@@ -1,3 +1,14 @@
+---
+id: SRT-EXP-ANCHORING-DOUBLE-WELL-README
+type: experiment_readme
+status: phase1_frozen
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+created: 2026-07-16
+---
+
 # Anchoring double-well toy (Phase 1, frozen)
 
 Identification-clean toy for **selective anchoring**. Fast state `x`, slow (plastic)

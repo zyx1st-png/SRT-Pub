@@ -1,3 +1,14 @@
+---
+id: SRT-EXP-ANCHORING-TINY-MDP-CONFIRMATORY-README
+type: experiment_readme
+status: confirmatory_locked_holdout_go
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+created: 2026-07-16
+---
+
 # tiny-MDP confirmatory — controllability write-back (result: GO)
 
 Confirmatory for the Phase 2c controllability write-back. Unlike 2c (content-neutral

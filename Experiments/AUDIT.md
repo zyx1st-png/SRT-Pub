@@ -1,3 +1,14 @@
+---
+id: SRT-EXP-ANCHORING-CHAIN-AUDIT-2026-07-17
+type: audit_report
+status: final_audit_v1
+layer: lab
+epistemic_layer: p4
+claim_mode: audit
+canonical: false
+created: 2026-07-17
+---
+
 # Selective-anchoring computational chain — independent audit
 
 **Date:** 2026-07-17. **Scope:** the five frozen experiment directories under

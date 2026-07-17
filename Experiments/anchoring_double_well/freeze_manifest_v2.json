@@ -1,0 +1,22 @@
+{
+  "stage": "phase1_toy_frozen",
+  "supersedes": "freeze_manifest.json",
+  "supersede_reason": "YAML frontmatter added to README for governance-preflight CI. Code, parameters, and results JSON unchanged.",
+  "audit_date": "2026-07-17",
+  "changed_vs_v1": [
+    "README.md"
+  ],
+  "gate": null,
+  "files_sha256": {
+    "README.md": "dd4ab2a79618f139",
+    "config.json": "3585efcad19435fa",
+    "matched_future.py": "46c91d54171e1656",
+    "model.py": "3a5c13ccf9116453",
+    "results_dissociation.json": "b9b215d5453c8b66",
+    "results_matched_future.json": "bca93e5e394c3217",
+    "results_sweep.json": "33f355ab31c9fcd3",
+    "run_dissociation.py": "46e8667379d4d79a",
+    "sweep.py": "2143be429e42398f",
+    "tests/test_toy.py": "43c6f15f5928453f"
+  }
+}

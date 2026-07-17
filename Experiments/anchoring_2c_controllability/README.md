@@ -1,3 +1,14 @@
+---
+id: SRT-EXP-ANCHORING-2C-CONTROLLABILITY-README
+type: experiment_readme
+status: phase2c_locked_holdout_go
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+created: 2026-07-16
+---
+
 # Phase 2c — action-attributable controllability write-back (result: GO)
 
 Reverses the Phase 2b NO-GO. The write-back signal is no longer accumulated

@@ -1,3 +1,14 @@
+---
+id: SRT-EXP-ANCHORING-BANDIT-HOLDOUT-README
+type: experiment_readme
+status: phase2b_locked_holdout_no_go
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+created: 2026-07-16
+---
+
 # Phase 2b locked holdout — result: NO-GO (selection-specificity fails)
 
 Locked replication of the Phase-2 bandit gate with **all parameters frozen** from the

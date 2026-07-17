@@ -1,3 +1,14 @@
+---
+id: SRT-EXP-ANCHORING-BANDIT-FEASIBILITY-README
+type: experiment_readme
+status: phase2_feasibility_go_superseded_by_2b_2c
+layer: lab
+epistemic_layer: p4
+claim_mode: experiment
+canonical: false
+created: 2026-07-16
+---
+
 # Phase 2 contextual-bandit feasibility gate (durable selective anchoring)
 
 Tests whether a **two-timescale agent** can exhibit what the potential toy could not:
