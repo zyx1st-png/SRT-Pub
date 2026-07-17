@@ -20,8 +20,12 @@ test: a yoked agent receiving the identical reward stream but stripped of the
 action→outcome coupling reproduces the effect. Third, replacing that signal with
 action-attributable predictive information — how much the agent's own chosen action
 improves outcome prediction over a reference measure — restores selection
-specificity, and does so from the data rather than from the definition, since the
-same scoring rule applied to the yoked and sham arms returns near zero. Fourth,
+specificity, and does so from the data rather than from the definition: the same
+scoring rule returns near zero for the yoked arm, and in the sham arm — where
+outcomes are driven by an observable external action — self-attribution is near
+zero while external-attribution is positive, showing that controllable structure
+alone does not gate consolidation unless it is attributable to the agent's own
+actions. Fourth,
 the resulting memory redirects future behavior in a directional way: it buys
 history-aligned advantage and pays a perseverative cost when the world blocks the
 old path or poses a novel goal.
@@ -51,8 +55,8 @@ a boundary. Each of these covers part of the target. What they do not, **to our
 knowledge**, package together is the specific identification test at the center of
 this paper: hold the present state, fast values, and initial action distribution
 fixed; vary only the history-formed slow memory; and ask whether the future
-behavioral arrival distribution changes, with yoked and sham controls that isolate
-selection-specific from generic history dependence. We make no claim that these
+behavioral arrival distribution changes, with yoked and sham controls that
+differentiate selection-specific from generic history dependence. We make no claim that these
 frameworks are wrong or superseded — several of our own constructs are standard
 instances of them — only that the identification question and its control battery
 appear not to have been assembled in this form. Prediction-error metaplasticity in
