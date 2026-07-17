@@ -26,18 +26,24 @@ Whichever option is later chosen, two items must land first (they are not option
 1. **Define "ε-neutral" formally**, in a way that is **not** identical to "has non-summable death hazard" (else the theorem is circular). Candidate: ε-neutral = *the writeback `A_t → A_{t+1}` applies no bias between `B≥2` and `B≤1` branches* (a condition on the transition kernel, not on the survival outcome).
 2. **State the stochastic model** on `A_t` explicitly (P1-T06 is currently non-probabilistic; the proof is probabilistic — assumption-map P9).
 
-## Option A — Keep the strong theorem, add explicit reachability + cumulative-hazard conditions
+## Option A — Keep the strong theorem, grounded in an independent neutral baseline `K₀`
 
-Amend the Proof Sketch so the conclusion "a.s. termination" is derived from stated premises: `∅` reachable (P2) **and** `Σ h_t = ∞` a.s. (P4), via Lévy's conditional Borel–Cantelli, **and** no neutral closed class avoiding `∅` (P6).
+Amend the Proof Sketch so "a.s. termination of neutral `P`" is derived from an **independently specified neutral baseline kernel `K₀`** with `P_{K₀}(τ<∞)=1`, rather than from a simultaneous conjunction of premises. The absorption `P_{K₀}(τ<∞)=1` may be established by **any one** of three alternative sufficient packages (do **not** require them all together):
 
-- **Pros**: preserves the strong statement "stable ISP ⇒ ε≠0"; makes the proof valid.
-- **Cost**: the added premises are **not** currently justified from irreversibility alone; they must be independently argued. The theorem's headline strength is retained only by importing them.
-- **Introduces ε-like premise?** **Yes** — P2/P4/P6 are ε-co-referential (audit §5). So this option makes P1-T07 valid **at the price of admitting it depends on an ε-grade premise**, i.e. it converts the hidden dependence into an explicit one. Honest, but it forfeits the "derived from irreversibility alone" claim.
+- **A1** — uniform conditional hazard lower bound `h_t ≥ δ > 0`;
+- **A2** — divergent cumulative conditional hazard along surviving histories (`Σ h_t = ∞`);
+- **A3** — Markov absorption (all nonempty states transient / no other closed recurrent class).
+
+Each package internally supplies reachability, so reachability is not a separate premise.
+
+- **Pros**: preserves the strong statement "stable ISP ⇒ ε≠0" *once* `K₀`-absorption is proved; makes the proof valid.
+- **Cost**: `P_{K₀}(τ<∞)=1` is **not** currently established from irreversibility alone; it must be proved from `K₀`'s geometry via A1/A2/A3.
+- **Introduces ε-like premise?** **Undecided — `E` pending the `K₀` definition (revised from Proof-Audit-1.0/1.1).** The earlier claim that "P2/P4/P6 are ε-co-referential" is **withdrawn**: A1/A2/A3 could each follow from an independently specified unbiased kernel/geometry, or could collapse into ε_pg's `B≥2 ≻ B≤1` bias — that is exactly what a `K₀` definition would settle. Not asserted as ε here.
 - **Impact**:
-  - *P1-T07*: proof rewritten; statement unchanged; loses the strong ε-independence reading.
-  - *T-COLL-3*: needs the collective analogues of P2/P4/P6 stated independently, else it still does not close.
-  - *ν_block*: its "positivity guaranteed by P1-T07" (`Irreversibility.md:240`) becomes "positivity guaranteed **given** the added premises" — must be re-scoped.
-- **Minimal edit scope**: P1-T07 Proof Sketch + a premises block; `Irreversibility.md §4/§4.5` positivity clause; T-COLL-3 proof; `Irreversibility.md:240` postulate-vs-theorem line.
+  - *P1-T07*: proof rewritten around `K₀`; statement unchanged; ε-status of the baseline is the open question.
+  - *T-COLL-3*: needs a collective baseline `K₀^{coll}` with `P_{K₀^{coll}}(τ<∞)=1`, else it still does not close.
+  - *ν_block*: its "positivity guaranteed by P1-T07" (`Irreversibility.md:240`) becomes "positivity guaranteed **given** `K₀`-absorption" — must be re-scoped.
+- **Minimal edit scope**: P1-T07 Proof Sketch + a `K₀` premises block; `Irreversibility.md §4/§4.5` positivity clause; T-COLL-3 proof; `Irreversibility.md:240` line.
 
 ## Option B — Demote to a conditional theorem (leading minimal candidate, pending definitions)
 
@@ -48,10 +54,12 @@ Restate as: *under `L_0` irreversibility, **for a process whose neutral dynamics
 2. **Define "ε-neutral" as a property of an independently specified transition kernel** (e.g. no bias between `B≥2` and `B≤1` branches in the writeback), **not** as a survival outcome — otherwise the conditional is circular.
 3. **Prove absorption under that neutral kernel** — i.e. that the declared-neutral baseline actually terminates a.s. (else the premise is vacuous or smuggles ε).
 
-**B-lite formal candidate (relative form that could reach a clean R2):**
-> Let `K₀` be an independently specified **neutral baseline kernel**. *If* `P_{K₀}(τ<∞)=1`, then any kernel `K` with positive (or almost-sure) long-run survival must **deviate from `K₀` by suppressing closure risk**; name that deviation **ISP-level anti-closure asymmetry**.
+**B-lite formal candidate (relative comparative proposal — NOT a completed constitutive theorem):**
+> Let `K₀` be an independently specified **neutral baseline kernel**. *If* `P_{K₀}(τ<∞)=1`, then any kernel `K` with positive (or almost-sure) long-run survival must **deviate from `K₀` by suppressing closure risk**. Name that deviation **ISP-level anti-closure asymmetry**, and identify it by a **comparative** condition (at least one required):
+> - `P_K(τ>t) > P_{K₀}(τ>t)` for some `t` (strictly higher survival than the neutral baseline), **or**
+> - `h_t^K < h_t^{K₀}` on a **non-null** set of histories (strictly lower death hazard than baseline somewhere).
 >
-> This makes anti-closure a **relative** property (deviation from an a.s.-absorbing neutral baseline). It is the one route on which ε_pg could be shown *dispensable* (R2): the work is done by `K₀`'s absorption, not by an ε postulate — **provided** `P_{K₀}(τ<∞)=1` is established from `K₀`'s geometry alone.
+> This makes anti-closure a **relative** property (a measured deviation from an a.s.-absorbing neutral baseline), not an intrinsic postulate. It is the one route on which ε_pg could be shown *dispensable* (R2): the work is done by `K₀`'s absorption plus the comparative gap, not by an ε postulate — **provided** `P_{K₀}(τ<∞)=1` is established from `K₀`'s geometry alone. **Current status: a comparative *proposal*, pending (i) a construction of `K₀`, (ii) a proof of `K₀`-absorption, (iii) the S1/S2/S3 semantics.** It is not yet a theorem.
 
 - **Pros**: matches what the mathematics actually supports (audit §8); matches the corpus's own scoping of ε as **local** and **postulate-grade**; removes the overclaim without weakening downstream *diagnostic* use (healthy-vs-lethal `L_2` uses the anti-closure *direction*, which survives as a conditional).
 - **Cost**: P1-T07 is no longer an unconditional constitutive theorem; requires touching the Three-Layer Source Hierarchy framing; and the three preconditions are real mathematical work, not wording.
@@ -66,8 +74,8 @@ Restate as: *under `L_0` irreversibility, **for a process whose neutral dynamics
 
 Decompose the current single theorem into:
 1. **Absorbing-risk lemma**: under irreversibility, `∅` is absorbing (already canonical; P1).
-2. **Stable-ISP survival lemma**: a stable ISP has positive long-run survival probability (from P1-T06 cond. 4, definitional).
-3. **ε bridge**: positive long-run survival under neutral dynamics **requires** non-summable-hazard suppression, named ε anti-closure (this is where the postulate enters, explicitly).
+2. **Persistence lemma (semantics-dependent)**: fix a stability semantics — S1 (`τ=∞` pathwise) / S2 (`P(τ=∞)=1`) / S3 (`P(τ=∞)>0`); "stable ISP" is then the chosen persistence condition. **P1-T06 by itself yields *no* probabilistic survival statement** — the survival content is entirely whatever the chosen semantics fixes (this corrects the earlier "positive long-run survival from the definition", which the definition does not deliver).
+3. **ε bridge**: the chosen persistence, under neutral dynamics, **requires** a closure-risk-suppressing deviation from an absorbing neutral baseline, named ε anti-closure (this is where the postulate — or, via B-lite, a relative comparative condition — enters, explicitly).
 
 - **Pros**: maximal transparency — isolates exactly which step is definitional (lemma 2), which is irreversibility (lemma 1), and which is the ε postulate (bridge). Makes the circularity impossible to hide.
 - **Cost**: most structural churn; touches the most files; risks fragmenting a claim readers currently treat as unitary.
@@ -82,7 +90,7 @@ Decompose the current single theorem into:
 
 | | Statement strength | ε honesty | Files touched | Resolves §6 contradictions | Effort |
 |---|---|---|---|---|---|
-| **A** | strong (unchanged) | explicit dependence | medium | partial (still theorem-flavored) | medium |
+| **A** | strong (unchanged) | ε-status of `K₀` is **E — pending** | medium | partial (needs `K₀`-absorption proof) | medium |
 | **B** | conditional | explicit; postulate-grade *or* (via B-lite) a candidate R2 | **smallest** | **yes (1)** once preconditions met | **low edit / real proof work in preconditions** |
 | **C** | decomposed | explicit + localized | largest | yes (1) | high |
 
