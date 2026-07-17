@@ -94,7 +94,7 @@ Breaks: `ν_block = η·ε_pg·κ_Ψf` (E3) loses its factor → Y4 term undefin
 |---|---|---|---|
 | J1 | κ₀ + d_max stability bottleneck | **sub-linear / downstream** | d_max is downstream of κ₀; Δ_{κ₀,d_max} ≈ Δ_κ₀. d_max does not independently carry κ₀. |
 | J2 | κ₀ + κ(t) | **downstream, no compensation** | κ(t) ≡ κ₀ + ∫F is *defined through* κ₀; it cannot compensate for κ₀'s loss. κ(t) is **not** a redundant carrier of κ₀. |
-| J3 | ε_pg + ν_block | **downstream** | ν_block is defined via ε_pg; deleting ε_pg alone already voids it. But the anti-closure **necessity** (P1-T07) is upstream and untouched → operator expression lost, theorem-level necessity retained. |
+| J3 | ε_pg + ν_block | **downstream** | ν_block is defined via ε_pg; deleting ε_pg voids the current operator expression. P1-T07's anti-closure claim **remains registered in the corpus**, but its proof — and its independence from ε_pg — **is not independently secured** (Step 3 lacks a reachability/recurrence/hazard premise, §11.4). So: operator expression lost; the upstream anti-closure claim **remains registered but not independently secured** — **not** "theorem-level necessity retained." |
 | J4 | ε_pg + ε_pg^{visible} | **concentrated in one modal** | Δ concentrated in the "occluded-not-absent" counterfactual; the L1 indicators still diagnose occlusion operationally. |
 | J5 | **ε_pg + P1-T07 ISP-level ε** | **conditional separation candidate (NOT decisive)** | ISP-level ε is *attributed* to irreversibility, not ε_pg — but that attribution rests on P1-T07's **unproven Step-3 reachability/recurrence premise**. **If** the premise hardens without importing an ε-like hazard, ISP-level ε would be robust to ε_pg deletion and ISP-level ε would be a backup-path relabel (GOV-SUB01 §7.3); **until then** the separation is a candidate, not established. |
 | J6 | **κ₀ + ε_pg** | **partial redundancy (ontological), independence (equation)** | Both encode "L₀ non-neutrality" (κ₀ = geometric refinement of ε_pg). Ontologically Δ_{κ₀,ε_pg} < Δ_κ₀ + Δ_ε_pg (**sub-additive**, partial redundancy). Equation-level they are independent (different equations). |
@@ -119,7 +119,7 @@ Breaks: `ν_block = η·ε_pg·κ_Ψf` (E3) loses its factor → Y4 term undefin
 - **Short-horizon masking** — FLAG both: κ₀'s anti-total-closure floor (K4) and ε_pg-linked anti-closure are **long-horizon / rare-event / absorbing-state** properties; a deletion can pass short-horizon tests while removing them.
 - **Hidden reparameterization** — the central Y7 risk: κ₀→"unit cost `c`", ε_pg→"positive factor in ν_block" are hidden reparameterizations if done naively. Role preserved ≠ primitive removed.
 - **Redundancy/degeneracy** — J5 (ISP-level ε masks ε_pg non-necessity) and J6 (κ₀/ε_pg co-encode L₀ non-neutrality).
-- **Target / scale / bearer drift** — none introduced; collective versions (T-COLL-3, ν_block^coll) are irreversibility-sourced too (no scale drift); ε_pg^{visible}'s bearer-specificity is carried by the L1 indicators.
+- **Target / scale / bearer drift** — none introduced; collective versions (T-COLL-3, ν_block^coll) share the **same proof shape** as the single-ISP case and so **may inherit the same unresolved Step-3 premise** (not independently audited this pass), so they are not treated as an established backup; ε_pg^{visible}'s bearer-specificity is carried by the L1 indicators.
 
 ## 7. Conditional residue matrix
 
