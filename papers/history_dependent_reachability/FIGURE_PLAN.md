@@ -31,17 +31,23 @@ Source: anchoring_double_well/results_dissociation.json, results_sweep.json.
 
 ## Figure 3 — The failed mechanism and its revision (THE pivot figure)
 
-Left (Phase 2b, NO-GO): |PE| → z. Active vs yoked future effect 0.239 vs 0.238 —
-  **within the pre-registered ±equivalence bound** (paired diff 0.087 in 2c re-test,
-  CI [0.082, 0.091] ⊂ ±0.15; in 2b itself yoked reproduces the effect, d=0.05).
-  Label: "history-dependent, but not selection-specific."
-Right (Phase 2c, GO): r_t^{action} → z. Active ≫ yoked: paired diff 0.570,
-  90% CI [0.559, 0.581] > Δ_min=0.20. Yoked decoupling data-verified
-  (ctrl-corr −0.000 vs active +0.270).
-Shared caption point: the negative result was retained frozen and forced the
-mechanism revision — this is the paper's theoretical turn.
-Source: anchoring_bandit_holdout/results_phase2b.json,
-anchoring_2c_controllability/results_2c_holdout.json.
+STRICT DATA SEPARATION (two different experiments, two different statistics — never
+merge them in one sentence or one panel):
+Panel A (Phase 2b, NO-GO — source: anchoring_bandit_holdout/results_phase2b.json):
+  |PE| → z. The yoked group reproduces the future effect of the active group:
+  future effect 0.239 (active) vs 0.238 (yoked), d = 0.05, on 40 fresh seeds under
+  frozen parameters. Label: "history-dependent, but not selection-specific."
+Panel B (Phase 2c |PE| negative baseline — source:
+  anchoring_2c_controllability/results_2c_holdout.json): within the 2c framework,
+  the |PE| mechanism's paired active-yoked commitment difference is 0.087,
+  90% CI [0.082, 0.091], INSIDE the pre-registered ±0.15 equivalence bound — a
+  pre-registered equivalence test, not the 2b comparison.
+Panel C (Phase 2c controllability mechanism, GO — same 2c source): r_t^{action} → z.
+  Active ≫ yoked: paired diff 0.570, 90% CI [0.559, 0.581] > Δ_min = 0.20. Yoked
+  decoupling data-verified (ctrl-corr −0.000 vs active +0.270).
+Shared caption point: the negative result (Panel A) was retained frozen and forced
+the mechanism revision (Panel C); Panel B shows the failed mechanism failing again
+inside the revised framework, under a pre-registered equivalence bound.
 
 ## Figure 4 — tiny-MDP and the matching protocol
 

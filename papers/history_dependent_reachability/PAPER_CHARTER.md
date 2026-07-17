@@ -55,8 +55,10 @@ first attack a reviewer familiar with the program will make:
   anchoring friction as a load-bearing construct; cost appears only as J_ext/J_write
   side-measurements in Phase 1, with the explicit finding that neither tracks W_sel.
 - Also position against: path dependence, metaplasticity, RL habit formation, control
-  theory, FEP/active inference. The claim is not that these are wrong, but that none
-  of them provides the S/P/W_sel identification battery under matched present states.
+  theory, FEP/active inference. The claim is not that these are wrong, but that — **to
+  our knowledge** — none of them provides the S/P/W_sel identification battery under
+  matched present states. All exclusivity claims in Related Work MUST carry the
+  "to our knowledge" qualifier; no bare universal negatives.
 
 ## Section structure (locked)
 
