@@ -1,8 +1,9 @@
 # References
 
-> Only VERIFIED entries (REFERENCE_LEDGER.md) appear here. Author-to-confirm items:
-> the two self-citations' live publication status, and any candidate references still
-> marked NEEDS-CONFIRM in the ledger (not included below).
+> Only VERIFIED entries (REFERENCE_LEDGER.md) appear here. The two self-citations are
+> listed at their current confirmed status; any live-status update before submission is
+> tracked as an author-review item in ASSEMBLY_REVIEW.md, not inline here. Candidate
+> references still marked NEEDS-CONFIRM in the ledger are not included below.
 
 Ay, N., & Polani, D. (2008). Information flows in causal networks. *Advances in
 Complex Systems*, 11(1), 17–41. https://doi.org/10.1142/S0219525908001465
@@ -64,9 +65,7 @@ Whitehead, S. D., & Ballard, D. H. (1991). Learning to perceive and act by trial
 error. *Machine Learning*, 7, 45–83. https://doi.org/10.1007/BF00058926
 
 Zhang, Y. Costly selective closure: A comparative heuristic for life-likeness in
-artificial systems. *Unpublished manuscript.* [author to confirm current submission
-status; do not cite as "submitted" without confirmation]
+artificial systems. *Unpublished manuscript.*
 
 Zhang, Y. Ontological friction: A latent cross-modal control-cost factor for
-executive breakdown. *Unpublished manuscript* (Frontiers ms 1837760, in revision).
-[author to confirm current decision status; do not cite as "published"/"in press"]
+executive breakdown. *Manuscript in revision at Frontiers, ms 1837760.*

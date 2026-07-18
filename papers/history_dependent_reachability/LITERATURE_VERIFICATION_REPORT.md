@@ -1,5 +1,15 @@
 # Literature verification report — round 1 (N3, N4)
 
+> **CURRENT STATUS (2026-07-19).** All **three** verification rounds are complete
+> (Round 1 = N3/N4 below; Round 2 = five-layer overlap map + perceptual-aliasing
+> neighbor; Round 3 = measure/perseveration/methodology/self-cite). The proposed
+> downgrade wording and the VERIFIED citations **have since been applied to the
+> manuscript** in commit `33e97207` (Methods 2.4, Intro §1, Discussion §5.2, Results
+> §3.4; `manuscript/08_references.md`). Any statement below that a change is "NOT
+> applied to the manuscript this round" or that "PR #675 remains Draft" is the
+> **historical record of Round 1 only** and is superseded by that commit. The live
+> paper PR is now #682 (Draft); PR #675 is merged and closed.
+
 Date: 2026-07-17. Method: web verification of primary sources (DOI + venue + read of
 methods/formulas for the closest N3/N4 works). **No citation inserted into
 MANUSCRIPT this round; PR #675 remains Draft.** DOIs below were confirmed against

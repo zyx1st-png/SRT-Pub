@@ -1,5 +1,15 @@
 # Assembly & global review report — MANUSCRIPT.md
 
+> **CURRENT STATUS (2026-07-19).** Sections 1–3 below are the *original* 2026-07-17
+> assembly report and are retained as history. Superseding updates since then:
+> **(a)** the manuscript now carries a full bibliography — `manuscript/08_references.md`
+> (16 VERIFIED references + 2 self-citations), inserted and novelty-downgraded in
+> commit `33e97207`; §4 "TODO — references" below is therefore **DONE** (see the
+> resolution note in §4). **(b)** The assembled `MANUSCRIPT.md` is now **1124 lines,
+> ~10.1k words** (was 969 / ~8.7k); the "969 lines" figure in §1 is historical.
+> **(c)** The Figure 5 four-vector panels and the S4 two-point extraction are complete
+> (§5, already marked COMPLETED). Open author-review items are listed in §8.
+
 Date: 2026-07-17. Scope: mechanical assembly of manuscript/00–07 into
 `manuscript/MANUSCRIPT.md` (by `assemble_manuscript.py`) plus a global consistency
 review. **No new experiments, no theory extension, no large-scale language polish,
@@ -51,7 +61,16 @@ impossible, consciousness, subjecthood, independence-claims):
   RESULTS_NUMBERS; deferred panels (Fig 5 four-bar vectors; S4 erosion trace)
   are declared in captions and FIGURE_PLAN, not silently absent.
 
-## 4. TODO — references (none fabricated; to be added and verified pre-submission)
+## 4. TODO — references — **DONE (commit `33e97207`, 2026-07-19)**
+
+**Resolution:** `manuscript/08_references.md` now supplies the bibliography — 16
+VERIFIED references (author-year, full metadata + DOI/URL) plus the two self-citations.
+Citations were inserted with an integrated novelty-downgrade so the information measure,
+its use as a signal, and gated consolidation are each attributed to prior art
+(Methods 2.4 / Intro §1 / Discussion §5.2); the residual novelty is scoped to the
+combination only. Three rounds of literature verification are complete (see
+`LITERATURE_VERIFICATION_REPORT.md`). The original citation-needed checklist below is
+retained as history; every item is now covered:
 
 The manuscript currently has **no bibliography**. Citation-needed points:
 
@@ -101,3 +120,20 @@ not triggered; manuscript body numbers unchanged.
 - Fig 1B "1.000" bar label grazes the axis top; Fig 4A formation-box text is
   tight. Cosmetic; deferred to figure polish.
 - The Abstract is 323 words — may need trimming to venue limits.
+
+## 8. Open author-review items (pre-submission; not blocking the Draft)
+
+- **Self-citation live status (author to confirm).** `manuscript/08_references.md`
+  currently lists the two self-citations at their confirmed status: **Costly Selective
+  Closure** as "Unpublished manuscript"; **Ontological friction (Ψ_f)** as "Manuscript
+  in revision at Frontiers, ms 1837760." These strings were moved out of the formal
+  bibliography as inline editorial brackets and recorded here instead. Before
+  submission, confirm each live status and update the reference strings if it has
+  changed — do **not** upgrade CSC to "submitted"/"under review" or Ψ_f to
+  "published"/"in press" without a confirmed record.
+- **Methods 2.6 wording (minor, optional).** The "Two reported intervals" passage
+  states "seed × volatility cells as separate resampling units" twice in adjacent
+  sentences (a residue of the dual-CI reporting round, not the novelty downgrade). A
+  one-sentence dedup would tighten it; left unchanged in this hygiene pass to stay
+  within the authorized read-through scope.
+- **Symbol/format unification and venue** remain as in §6–§7 (deferred, not content).

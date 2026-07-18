@@ -995,12 +995,10 @@ Whitehead, S. D., & Ballard, D. H. (1991). Learning to perceive and act by trial
 error. *Machine Learning*, 7, 45–83. https://doi.org/10.1007/BF00058926
 
 Zhang, Y. Costly selective closure: A comparative heuristic for life-likeness in
-artificial systems. *Unpublished manuscript.* [author to confirm current submission
-status; do not cite as "submitted" without confirmation]
+artificial systems. *Unpublished manuscript.*
 
 Zhang, Y. Ontological friction: A latent cross-modal control-cost factor for
-executive breakdown. *Unpublished manuscript* (Frontiers ms 1837760, in revision).
-[author to confirm current decision status; do not cite as "published"/"in press"]
+executive breakdown. *Manuscript in revision at Frontiers, ms 1837760.*
 
 ---
 
