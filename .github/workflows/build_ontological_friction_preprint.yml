@@ -43,8 +43,26 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc
           python -m pip install --upgrade pip
-          python -m pip install pypandoc pypdf reportlab
+          python -m pip install pypandoc pypdf reportlab matplotlib numpy pillow
           google-chrome --version || google-chrome-stable --version
+
+      - name: Rebuild manuscript figures
+        working-directory: papers/ontological_friction/figures
+        run: |
+          for script in \
+            fig1_control_architecture.py \
+            fig2_proxy_map.py \
+            fig3_ros_coupling.py \
+            fig4_clinical_radar.py \
+            fig5_protocol.py
+          do
+            python "$script"
+          done
+          test -s fig1_control_architecture.png
+          test -s fig2_proxy_map.png
+          test -s fig3_ros_coupling.png
+          test -s fig4_clinical_radar.png
+          test -s fig5_protocol.png
 
       - name: Generate journal-neutral preprint source
         run: python papers/ontological_friction/make_preprint_variant.py
