@@ -5,8 +5,8 @@
 > **(a)** the manuscript now carries a full bibliography — `manuscript/08_references.md`
 > (16 VERIFIED references + 2 self-citations), inserted and novelty-downgraded in
 > commit `33e97207`; §4 "TODO — references" below is therefore **DONE** (see the
-> resolution note in §4). **(b)** The assembled `MANUSCRIPT.md` is now **1124 lines,
-> ~10.1k words** (was 969 / ~8.7k); the "969 lines" figure in §1 is historical.
+> resolution note in §4). **(b)** The assembled `MANUSCRIPT.md` is now **1121 lines,
+> ~10.0k words** (was 969 / ~8.7k); the "969 lines" figure in §1 is historical.
 > **(c)** The Figure 5 four-vector panels and the S4 two-point extraction are complete
 > (§5, already marked COMPLETED). Open author-review items are listed in §8.
 
@@ -131,9 +131,10 @@ not triggered; manuscript body numbers unchanged.
   submission, confirm each live status and update the reference strings if it has
   changed — do **not** upgrade CSC to "submitted"/"under review" or Ψ_f to
   "published"/"in press" without a confirmed record.
-- **Methods 2.6 wording (minor, optional).** The "Two reported intervals" passage
-  states "seed × volatility cells as separate resampling units" twice in adjacent
-  sentences (a residue of the dual-CI reporting round, not the novelty downgrade). A
-  one-sentence dedup would tighten it; left unchanged in this hygiene pass to stay
-  within the authorized read-through scope.
+- **Methods 2.6 wording — RESOLVED (branch-sync pass, 2026-07-19).** The "Two
+  reported intervals" passage previously stated "seed × volatility cells as separate
+  resampling units" twice in adjacent sentences; the second occurrence was deduped
+  (now: pooled = provenance; the seed-clustered bootstrap is preferred "because those
+  two within-seed cells are not independent"). Both interval roles preserved. The
+  Audit §4.3 mention of the same phrase is the audit's own finding and is intentional.
 - **Symbol/format unification and venue** remain as in §6–§7 (deferred, not content).
