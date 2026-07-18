@@ -55,12 +55,24 @@ knowledge."
 - **Residual novelty:** not the information measure itself, but (a) its use as a
   *consolidation gate* for a path memory, and (b) the yoked+sham demonstration that
   the gate is selection-specific where |PE| is not.
-- **Risk / defense:** MEDIUM–HIGH. A reviewer may cite empowerment/transfer-entropy
-  or intrinsic-control work. **Defense (mandatory):** cite the closest measures
-  (once VERIFIED), state the relationship explicitly, and scope novelty to the
-  gating role + selection-specificity contrast — never claim the measure is new.
-  This is the row most likely to need softening; the charter's "to our knowledge"
-  and "does not use CMI-of-policy" hedges already sit here.
+- **Risk / defense:** MEDIUM–HIGH. **RESOLVED BY VERIFICATION (2026-07-17):** the
+  measure is **NOT novel.** Empowerment (Klyubin et al. 2005, DOI
+  10.1109/CEC.2005.1554676) is the action→outcome channel capacity; transfer entropy
+  (Schreiber 2000, DOI 10.1103/PhysRevLett.85.461) is the directed-information version
+  that conditions out shared history; variational empowerment (Mohamed & Rezende 2015)
+  uses I(a;s′) as an RL signal. Our C_μ is a **fixed-reference instance** of this
+  family. No complete precedent exists (none gates a *path memory* rather than action,
+  none runs a yoked/sham selection-specificity test, none reads out directional
+  behavioral reachability under a matched present).
+- **Residual novelty (restated, narrowed):** **only** (a) the *consolidation-gating*
+  role of the signal (it gates memory, not action) + (b) the *yoked/sham
+  selection-specificity identification* + (c) the *directional reachability endpoint*.
+  The measure carries **zero** novelty weight.
+- **Required action (mandatory before any strengthening):** cite empowerment +
+  transfer entropy + variational empowerment at the definition of r_t; state
+  explicitly "not a novel measure"; keep "to our knowledge" only for the *packaging*
+  (battery + endpoint), never for the measure. Proposed wording in
+  `LITERATURE_VERIFICATION_REPORT.md §3` — NOT yet applied to the manuscript.
 
 ## N4 — Matched-present → different future reachability carried by memory alone (A4)
 
@@ -73,9 +85,13 @@ knowledge."
   code-verify only-m carry) is the novel part.
 - **Residual novelty:** the exact matched-present identification protocol with the
   only-m guarantee, applied to a behavioral reachability readout.
-- **Risk / defense:** MEDIUM. Reviewer may say "this is just path dependence."
-  Defense = the matching protocol and only-m verification are what distinguish
-  identification from mere history dependence; this is stated in §1 and §2.8.
+- **Risk / defense:** MEDIUM. **VERIFICATION (2026-07-17):** successor representation
+  (Dayan 1993, DOI 10.1162/neco.1993.5.4.613) is the reachability/adjacency vocabulary
+  (background); **no tight precedent found** for the matched-present / only-slow-memory
+  identification protocol. Reviewer may say "this is just path dependence." Defense =
+  the matching protocol and only-m verification distinguish identification from mere
+  history dependence (§1, §2.8); cite SR as reachability background, not as precedent
+  for the protocol. N4 novelty survives.
 
 ## N5 — Directional signature: aligned advantage vs blocked/novel stickiness (A5)
 
@@ -106,8 +122,8 @@ knowledge."
 |---|---|---|---|
 | N1 | counterfactual W_sel + 4-cell dissociation | LOW–MED | verify R-01/R-06; keep "instrument" framing |
 | N2 | pre-registered negative (yoked) result | LOW | verify R-03/R-09; keep as falsification |
-| N3 | info-measure as *gate* + selection-specificity | **MED–HIGH** | verify R-08/R-10; cite closest measures; never claim measure is new |
-| N4 | matched-present only-m identification | MED | verify R-13; keep identification vs path-dependence distinction |
+| N3 | info-measure as *gate* + selection-specificity | **MED–HIGH → resolved** | **VERIFIED: measure not novel (empowerment/transfer-entropy/variational-empowerment).** Cite them; scope novelty to gating+yoked/sham+endpoint only. No complete precedent. |
+| N4 | matched-present only-m identification | MED | **VERIFIED: SR is reachability background; no protocol precedent found.** Keep identification vs path-dependence distinction. |
 | N5 | joint advantage+cost signature | LOW–MED | verify R-05; within-model framing |
 | N6 | demarcation from CSC / Ψ_f | MED | verify R-14/R-15 status; keep §5.2 demarcation |
 
