@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 # Reproducible A4 renderer used for the PsyArXiv upload package.
+# Figures are rebuilt by CI before this renderer is invoked.
 
 import io
 import re
