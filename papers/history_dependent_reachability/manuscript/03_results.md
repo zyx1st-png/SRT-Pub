@@ -133,7 +133,9 @@ The difference is directional, in all three pre-registered senses:
 
 Consolidation therefore buys history-aligned advantage at the price of perseverative
 stickiness — a bidirectional behavioral signature that a mere divergence magnitude
-would not establish. The external-action sham behaved as the mechanism predicts
+would not establish. This joint advantage-plus-cost pattern is a within-model
+directional prediction consistent with known habit / perseveration phenomena [Daw et
+al. 2005], not a claim of a newly discovered behavioral effect. The external-action sham behaved as the mechanism predicts
 (self-attribution −0.015 ≈ 0; external-attribution +0.143 > 0): controllable
 structure present in the stream but not attributable to the agent's own actions does
 not gate consolidation. Yoked decoupling held (ctrl-corr −0.001).

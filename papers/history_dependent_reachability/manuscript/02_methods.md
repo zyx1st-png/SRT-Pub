@@ -53,7 +53,8 @@ consequences for M+* of what each episode wrote:
     W_sel = Phi_{M+}( written by h+ ) − Phi_{M+}( written by h− ),
 
 with directional functionals Phi in {stationary occupancy of M+, escape barrier of
-M+, committor at the midpoint}; basin-localized JS/TV are auxiliary. W_sel is
+M+, committor at the midpoint [E and Vanden-Eijnden 2010]}; basin-localized JS/TV are
+auxiliary. W_sel is
 positive only if the write favors the selected macrostate specifically; a
 nonspecific write (e.g., raising diffusion everywhere) yields large W_global but
 W_sel ≈ 0.
@@ -148,9 +149,28 @@ information (an A→O edge exists in the data). The slow variable is
 We also report the structural controllability index C_mu(s) = Σ_a mu(a|s) ·
 KL[ q(·|s,a) || q̄_mu ], a property of the outcome model rather than of the
 trajectory. We do not refer to either quantity as the conditional mutual information
-of the acting policy. The estimator is identical for every experimental group and
-never receives the group label; active-versus-yoked differences in z can therefore
-arise only from each agent's own data.
+of the acting policy.
+
+**Relation to existing information measures (the measure is not novel).** C_mu(s) =
+I_mu(A;O|s) is a non-capacitated action–outcome mutual information under a fixed
+reference distribution mu. It belongs to the established action→outcome information
+family: empowerment (the action–outcome channel *capacity*, i.e. the maximization over
+action distributions) [Klyubin et al. 2005]; the closely related per-state *causal
+action influence* I(A;S'|s) [Seitzer et al. 2021]; directed information [Massey 1990];
+and transfer entropy, an observational directed measure [Schreiber 2000], with the
+interventional causal information flow of [Ay and Polani 2008] the closer neighbor to
+the yoked manipulation defined below. **We do not claim the information quantity itself
+is new.** Such action→outcome information has, moreover, already been used as a signal
+for action, exploration, or skill learning [Mohamed and Rezende 2015; Gregor et al.
+2016; Seitzer et al. 2021], and gated long-term consolidation is itself an established
+mechanism (there gated by recall-consistency rather than controllability) [Lindsey and
+Litwin-Kumar 2024]. The contribution here is therefore neither the measure nor the
+generic use of such a measure as a signal, but the specific combination: an
+action-attributable signal used to gate *path-memory consolidation* (not action),
+isolated by *yoked and sham differentiation*, with a *matched-present directional-
+reachability* endpoint (Sections 2.5–2.7). The estimator is identical for every
+experimental group and never receives the group label; active-versus-yoked differences
+in z can therefore arise only from each agent's own data.
 
 ## M5. System S2: two-armed bandit (Phases 2 and 2b)
 
@@ -170,9 +190,10 @@ parameters (zc, kk) calibrated post-formation — a disclosed limitation. **Phas
 is the locked holdout: all parameters frozen at the Phase 2 values (zc = 3.1707,
 kk = 3.8822), 40 fresh seeds (20000–20039, disjoint from all calibration), N = 200,
 no retuning. Phase 2b adds (i) washout-length curves (0–800 steps); (ii) an
-**active vs master-yoked** contrast — each yoked agent receives the recorded reward
-sequence of its active master, decoupled from its own actions, with an independent
-action RNG; the decoupling is verified by the correlation between "chose the good
+**active vs master-yoked** contrast (the master-yoked design, decoupling reinforcement
+from the subject's own responses, follows the learned-helplessness tradition [Seligman
+and Maier 1967]) — each yoked agent receives the recorded reward sequence of its active
+master, decoupled from its own actions, with an independent action RNG; the decoupling is verified by the correlation between "chose the good
 arm" and "received reward" (≈ 0 under yoking); and (iii) a cross-individual
 permutation control testing whether the future effect follows the carried z value or
 the history label. Pre-registered pass criteria included a substantive
@@ -229,9 +250,10 @@ S3 (temp_form = 0.20; p_hi = 0.8 / p_lo = 0.2), with three groups — active,
 master-yoked (reward replayed, independent action RNG), and **external-action sham**:
 the outcome is determined by an observable external action e_t drawn uniformly,
 not by the agent's own action; separate outcome models q_self(o|a) and q_ext(o|e)
-yield separate self-attribution and external-attribution scores. The self score
-gates consolidation. The sham is a mechanism gate (predicted: self ≈ 0, ext > 0),
-not GO-deciding.
+yield separate self-attribution and external-attribution scores (the self- vs
+external-attribution distinction follows the sense-of-agency literature [Haggard
+2017]). The self score gates consolidation. The sham is a mechanism gate (predicted:
+self ≈ 0, ext > 0), not GO-deciding.
 
 Future battery (frozen parameters; temp_fut = 0.40, beta_fut = 0.20, 60 episodes,
 measured over the last 20): three task classes with goal/blocked roles
@@ -276,11 +298,12 @@ controls (memory-null, same-m/different-z) with 95% CIs entirely within
 ## M9. Statistics
 
 Primary statistics are paired seed-level differences with percentile bootstrap CIs
-(S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min directly;
+[Efron 1979] (S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min
+directly;
 S3: two intervals — the frozen pre-holdout pooled analysis, unit = seed ×
 volatility, n = 80, B = 2,000, 90% CI (provenance); and a post-audit seed-clustered
 bootstrap, unit = seed, n = 40, B = 10,000, 90% CI (preferred inferential summary).
-Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.
+Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds (two one-sided tests) [Lakens 2017], not point nulls.
 Direction gates are one-sided CI position checks fixed in advance. The very narrow
 CIs reported for S4 reflect cross-seed reproducibility of a frozen deterministic
 model (each per-seed statistic already averages N = 400 agents); they are not

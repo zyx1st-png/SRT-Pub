@@ -74,12 +74,19 @@ systems theory quantifies stability and hysteresis; control theory quantifies th
 cost of reaching and holding states; reinforcement learning and metaplasticity
 describe how experience reshapes future updates; predictive-processing accounts
 describe regulation under changing statistics. Each supplies constructs we use
-freely in what follows. But **to our knowledge**, no existing framework packages
-the specific test that the question requires: match the present completely at the
-level of observables, vary only the history-formed slow memory, and determine
-whether — and in which direction — the future behavioral arrival distribution
-changes, under controls that differentiate selection-specific history from
-generic exposure history.
+freely in what follows. Individually, the ingredients are familiar — the
+action→outcome information family [Klyubin et al. 2005; Seitzer et al. 2021], its use
+as a learning signal [Mohamed and Rezende 2015; Gregor et al. 2016], gated
+consolidation [Lindsey and Litwin-Kumar 2024], and future-occupancy representations
+[Dayan 1993] — and the intuition that indistinguishable observations can hide
+different consequences is the classic problem of perceptual aliasing [Whitehead and
+Ballard 1991]. What we assemble from these is a specific identification test: match
+the present completely at the level of observables, vary only the history-formed slow
+memory, and determine whether — and in which direction — the future behavioral
+arrival distribution changes, under yoked and sham controls that differentiate
+selection-specific history from generic exposure history. **To our knowledge, no
+close protocol-level precedent combining these elements was identified in our
+search.**
 
 This paper builds that test and runs it end to end in designed systems. The
 battery has three components. *Matched present*: at test time the environment
@@ -171,7 +178,8 @@ consequences for M+* of what each episode wrote:
     W_sel = Phi_{M+}( written by h+ ) − Phi_{M+}( written by h− ),
 
 with directional functionals Phi in {stationary occupancy of M+, escape barrier of
-M+, committor at the midpoint}; basin-localized JS/TV are auxiliary. W_sel is
+M+, committor at the midpoint [E and Vanden-Eijnden 2010]}; basin-localized JS/TV are
+auxiliary. W_sel is
 positive only if the write favors the selected macrostate specifically; a
 nonspecific write (e.g., raising diffusion everywhere) yields large W_global but
 W_sel ≈ 0.
@@ -266,9 +274,28 @@ information (an A→O edge exists in the data). The slow variable is
 We also report the structural controllability index C_mu(s) = Σ_a mu(a|s) ·
 KL[ q(·|s,a) || q̄_mu ], a property of the outcome model rather than of the
 trajectory. We do not refer to either quantity as the conditional mutual information
-of the acting policy. The estimator is identical for every experimental group and
-never receives the group label; active-versus-yoked differences in z can therefore
-arise only from each agent's own data.
+of the acting policy.
+
+**Relation to existing information measures (the measure is not novel).** C_mu(s) =
+I_mu(A;O|s) is a non-capacitated action–outcome mutual information under a fixed
+reference distribution mu. It belongs to the established action→outcome information
+family: empowerment (the action–outcome channel *capacity*, i.e. the maximization over
+action distributions) [Klyubin et al. 2005]; the closely related per-state *causal
+action influence* I(A;S'|s) [Seitzer et al. 2021]; directed information [Massey 1990];
+and transfer entropy, an observational directed measure [Schreiber 2000], with the
+interventional causal information flow of [Ay and Polani 2008] the closer neighbor to
+the yoked manipulation defined below. **We do not claim the information quantity itself
+is new.** Such action→outcome information has, moreover, already been used as a signal
+for action, exploration, or skill learning [Mohamed and Rezende 2015; Gregor et al.
+2016; Seitzer et al. 2021], and gated long-term consolidation is itself an established
+mechanism (there gated by recall-consistency rather than controllability) [Lindsey and
+Litwin-Kumar 2024]. The contribution here is therefore neither the measure nor the
+generic use of such a measure as a signal, but the specific combination: an
+action-attributable signal used to gate *path-memory consolidation* (not action),
+isolated by *yoked and sham differentiation*, with a *matched-present directional-
+reachability* endpoint (Sections 2.5–2.7). The estimator is identical for every
+experimental group and never receives the group label; active-versus-yoked differences
+in z can therefore arise only from each agent's own data.
 
 ## 2.5 System S2: two-armed bandit (Phases 2 and 2b)
 
@@ -288,9 +315,10 @@ parameters (zc, kk) calibrated post-formation — a disclosed limitation. **Phas
 is the locked holdout: all parameters frozen at the Phase 2 values (zc = 3.1707,
 kk = 3.8822), 40 fresh seeds (20000–20039, disjoint from all calibration), N = 200,
 no retuning. Phase 2b adds (i) washout-length curves (0–800 steps); (ii) an
-**active vs master-yoked** contrast — each yoked agent receives the recorded reward
-sequence of its active master, decoupled from its own actions, with an independent
-action RNG; the decoupling is verified by the correlation between "chose the good
+**active vs master-yoked** contrast (the master-yoked design, decoupling reinforcement
+from the subject's own responses, follows the learned-helplessness tradition [Seligman
+and Maier 1967]) — each yoked agent receives the recorded reward sequence of its active
+master, decoupled from its own actions, with an independent action RNG; the decoupling is verified by the correlation between "chose the good
 arm" and "received reward" (≈ 0 under yoking); and (iii) a cross-individual
 permutation control testing whether the future effect follows the carried z value or
 the history label. Pre-registered pass criteria included a substantive
@@ -347,9 +375,10 @@ S3 (temp_form = 0.20; p_hi = 0.8 / p_lo = 0.2), with three groups — active,
 master-yoked (reward replayed, independent action RNG), and **external-action sham**:
 the outcome is determined by an observable external action e_t drawn uniformly,
 not by the agent's own action; separate outcome models q_self(o|a) and q_ext(o|e)
-yield separate self-attribution and external-attribution scores. The self score
-gates consolidation. The sham is a mechanism gate (predicted: self ≈ 0, ext > 0),
-not GO-deciding.
+yield separate self-attribution and external-attribution scores (the self- vs
+external-attribution distinction follows the sense-of-agency literature [Haggard
+2017]). The self score gates consolidation. The sham is a mechanism gate (predicted:
+self ≈ 0, ext > 0), not GO-deciding.
 
 Future battery (Figure 4A; frozen parameters; temp_fut = 0.40, beta_fut = 0.20, 60 episodes,
 measured over the last 20): three task classes with goal/blocked roles
@@ -394,11 +423,12 @@ controls (memory-null, same-m/different-z) with 95% CIs entirely within
 ## 2.9 Statistics
 
 Primary statistics are paired seed-level differences with percentile bootstrap CIs
-(S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min directly;
+[Efron 1979] (S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min
+directly;
 S3: two intervals — the frozen pre-holdout pooled analysis, unit = seed ×
 volatility, n = 80, B = 2,000, 90% CI (provenance); and a post-audit seed-clustered
 bootstrap, unit = seed, n = 40, B = 10,000, 90% CI (preferred inferential summary).
-Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.
+Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds (two one-sided tests) [Lakens 2017], not point nulls.
 Direction gates are one-sided CI position checks fixed in advance. The very narrow
 CIs reported for S4 reflect cross-seed reproducibility of a frozen deterministic
 model (each per-seed statistic already averages N = 400 agents); they are not
@@ -551,7 +581,9 @@ The difference is directional, in all three pre-registered senses (Figure 5A–D
 
 Consolidation therefore buys history-aligned advantage at the price of perseverative
 stickiness — a bidirectional behavioral signature that a mere divergence magnitude
-would not establish. The external-action sham behaved as the mechanism predicts (Figure 4B)
+would not establish. This joint advantage-plus-cost pattern is a within-model
+directional prediction consistent with known habit / perseveration phenomena [Daw et
+al. 2005], not a claim of a newly discovered behavioral effect. The external-action sham behaved as the mechanism predicts (Figure 4B)
 (self-attribution −0.015 ≈ 0; external-attribution +0.143 > 0): controllable
 structure present in the stream but not attributable to the agent's own actions does
 not gate consolidation. Yoked decoupling held (ctrl-corr −0.001).
@@ -738,31 +770,52 @@ The question here is deliberately narrow, and this narrowness is what separates 
 from adjacent accounts. Dynamical-systems theory characterizes stability,
 attractors, hysteresis, and bifurcation; control theory characterizes the cost of
 reaching or holding a target; reinforcement-learning accounts of habit and
-metaplasticity characterize how experience reshapes future updates; the
-free-energy principle and active inference characterize adaptive regulation under
-a boundary. Each of these covers part of the target. What they do not, **to our
-knowledge**, package together is the specific identification test at the center of
-this paper: hold the present state, fast values, and initial action distribution
-fixed; vary only the history-formed slow memory; and ask whether the future
-behavioral arrival distribution changes, with yoked and sham controls that
-differentiate selection-specific from generic history dependence. We make no claim that these
+metaplasticity characterize how experience reshapes future updates [Daw et al.
+2005]; the free-energy principle and active inference characterize adaptive
+regulation under a boundary. Several elements of our construction are, individually,
+standard: the information quantity is of the empowerment / causal-action-influence /
+directed-information family [Klyubin et al. 2005; Seitzer et al. 2021; Massey 1990;
+Schreiber 2000; Ay and Polani 2008]; such information has been used as a signal for
+action, exploration, or skill acquisition [Mohamed and Rezende 2015; Gregor et al.
+2016]; gated long-term consolidation is an established mechanism [Lindsey and
+Litwin-Kumar 2024]; and future-occupancy / reachability representations are familiar
+[Dayan 1993]. What we combine from these — an action-attributable gate on
+*path-memory consolidation* (not action), a *yoked/sham* differentiation of
+selection-specific from generic history dependence, and a *matched-present
+directional-reachability* endpoint — is the identification test at the center of this
+paper: hold the present state, fast values, and initial action distribution fixed;
+vary only the history-formed slow memory; and ask whether the future behavioral
+arrival distribution changes. **To our knowledge, no close protocol-level precedent
+combining these elements was identified in our search.** We make no claim that these
 frameworks are wrong or superseded — several of our own constructs are standard
-instances of them — only that the identification question and its control battery
-appear not to have been assembled in this form. Prediction-error metaplasticity in
+instances of them — nor that the information quantity, the use of such a quantity as
+a signal, or gated consolidation is itself new. Prediction-error metaplasticity in
 particular is real in our models (Phase 2b); our point is precisely that it is not,
 by itself, selection-specific, which is a statement about what that mechanism does
 not distinguish, not a refutation of it.
 
-Two of the closest neighbors are our own. **Costly selective closure** asks what
-makes an artificial system life-like and isolates token-level irreversibility
-through post-withdrawal cooperation; its central operation is persistence after
-support is withdrawn. The present paper asks an orthogonal question —
+The closest neighbor to our *identification setup* is perceptual aliasing [Whitehead
+and Ballard 1991]: distinct hidden states that produce the same immediate observation
+require different responses. That, however, is the *agent's* inference problem —
+disambiguating aliased states in order to act well, typically by building internal
+memory. Ours is the complementary *experimenter's* problem: we match the observable
+present (state, fast values, action distribution) and vary only the slow,
+history-formed memory, then measure whether future behavioral reachability changes,
+with yoked and sham controls. We do not claim that hidden-state dependence, or
+history dependence, is itself new; the contribution is the matched-present
+identification protocol and its controls.
+
+Two of the closest neighbors are our own. **Costly selective closure** [Zhang,
+unpublished manuscript] asks what makes an artificial system life-like and isolates
+token-level irreversibility through post-withdrawal cooperation; its central
+operation is persistence after support is withdrawn. The present paper asks an orthogonal question —
 identification under a matched present — and treats persistence-after-withdrawal
 not as the target but as one dissociable component (P) that we show is neither
 necessary nor sufficient for selection-specific write-back. The two papers share a
 vocabulary of selection and history but answer different questions with different
-endpoints. **Ontological friction (Ψ_f)** models a latent cross-modal control-cost
-factor for executive breakdown. This paper does not use anchoring friction or any
+endpoints. **Ontological friction (Ψ_f)** [Zhang, unpublished manuscript] models a
+latent cross-modal control-cost factor for executive breakdown. This paper does not
+use anchoring friction or any
 Ψ_A as a load-bearing construct; cost enters only as the two side-measurements
 J_ext and J_write in Phase 1, with the explicit finding that neither tracks
 selection-specific write-back — the highest write dissipation belongs to the
@@ -877,6 +930,77 @@ claim of superiority over the free-energy principle, integrated information
 theory, or reinforcement-learning accounts of habit — the relation to these
 frameworks is complementarity of question, addressed in Section 5; and no
 reading of the reported intervals as construct-level confidence.
+
+---
+
+# References
+
+Ay, N., & Polani, D. (2008). Information flows in causal networks. *Advances in
+Complex Systems*, 11(1), 17–41. https://doi.org/10.1142/S0219525908001465
+
+Daw, N. D., Niv, Y., & Dayan, P. (2005). Uncertainty-based competition between
+prefrontal and dorsolateral striatal systems for behavioral control. *Nature
+Neuroscience*, 8(12), 1704–1711. https://doi.org/10.1038/nn1560
+
+Dayan, P. (1993). Improving generalization for temporal difference learning: The
+successor representation. *Neural Computation*, 5(4), 613–624.
+https://doi.org/10.1162/neco.1993.5.4.613
+
+E, W., & Vanden-Eijnden, E. (2010). Transition-path theory and path-finding
+algorithms for the study of rare events. *Annual Review of Physical Chemistry*, 61,
+391–420. https://doi.org/10.1146/annurev.physchem.040808.090412
+
+Efron, B. (1979). Bootstrap methods: Another look at the jackknife. *The Annals of
+Statistics*, 7(1), 1–26. https://doi.org/10.1214/aos/1176344552
+
+Gregor, K., Rezende, D. J., & Wierstra, D. (2016). Variational intrinsic control.
+*arXiv:1611.07507*. https://arxiv.org/abs/1611.07507
+
+Haggard, P. (2017). Sense of agency in the human brain. *Nature Reviews
+Neuroscience*, 18(4), 196–207. https://doi.org/10.1038/nrn.2017.14
+
+Klyubin, A. S., Polani, D., & Nehaniv, C. L. (2005). Empowerment: A universal
+agent-centric measure of control. In *Proceedings of the 2005 IEEE Congress on
+Evolutionary Computation (CEC)* (pp. 128–135).
+https://doi.org/10.1109/CEC.2005.1554676
+
+Lakens, D. (2017). Equivalence tests: A practical primer for t tests, correlations,
+and meta-analyses. *Social Psychological and Personality Science*, 8(4), 355–362.
+https://doi.org/10.1177/1948550617697177
+
+Lindsey, J. W., & Litwin-Kumar, A. (2024). Selective consolidation of learning and
+memory via recall-gated plasticity. *eLife*, 12, RP90793.
+https://doi.org/10.7554/eLife.90793
+
+Massey, J. L. (1990). Causality, feedback and directed information. In *Proceedings
+of the International Symposium on Information Theory and Its Applications (ISITA-90)*
+(pp. 303–305).
+
+Mohamed, S., & Rezende, D. J. (2015). Variational information maximisation for
+intrinsically motivated reinforcement learning. In *Advances in Neural Information
+Processing Systems 28 (NeurIPS)*.
+
+Schreiber, T. (2000). Measuring information transfer. *Physical Review Letters*,
+85(2), 461–464. https://doi.org/10.1103/PhysRevLett.85.461
+
+Seitzer, M., Schölkopf, B., & Martius, G. (2021). Causal influence detection for
+improving efficiency in reinforcement learning. In *Advances in Neural Information
+Processing Systems 34 (NeurIPS)*. *arXiv:2106.03443*.
+https://arxiv.org/abs/2106.03443
+
+Seligman, M. E. P., & Maier, S. F. (1967). Failure to escape traumatic shock.
+*Journal of Experimental Psychology*, 74(1), 1–9. https://doi.org/10.1037/h0024514
+
+Whitehead, S. D., & Ballard, D. H. (1991). Learning to perceive and act by trial and
+error. *Machine Learning*, 7, 45–83. https://doi.org/10.1007/BF00058926
+
+Zhang, Y. Costly selective closure: A comparative heuristic for life-likeness in
+artificial systems. *Unpublished manuscript.* [author to confirm current submission
+status; do not cite as "submitted" without confirmation]
+
+Zhang, Y. Ontological friction: A latent cross-modal control-cost factor for
+executive breakdown. *Unpublished manuscript* (Frontiers ms 1837760, in revision).
+[author to confirm current decision status; do not cite as "published"/"in press"]
 
 ---
 

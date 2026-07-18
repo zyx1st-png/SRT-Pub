@@ -34,12 +34,19 @@ systems theory quantifies stability and hysteresis; control theory quantifies th
 cost of reaching and holding states; reinforcement learning and metaplasticity
 describe how experience reshapes future updates; predictive-processing accounts
 describe regulation under changing statistics. Each supplies constructs we use
-freely in what follows. But **to our knowledge**, no existing framework packages
-the specific test that the question requires: match the present completely at the
-level of observables, vary only the history-formed slow memory, and determine
-whether — and in which direction — the future behavioral arrival distribution
-changes, under controls that differentiate selection-specific history from
-generic exposure history.
+freely in what follows. Individually, the ingredients are familiar — the
+action→outcome information family [Klyubin et al. 2005; Seitzer et al. 2021], its use
+as a learning signal [Mohamed and Rezende 2015; Gregor et al. 2016], gated
+consolidation [Lindsey and Litwin-Kumar 2024], and future-occupancy representations
+[Dayan 1993] — and the intuition that indistinguishable observations can hide
+different consequences is the classic problem of perceptual aliasing [Whitehead and
+Ballard 1991]. What we assemble from these is a specific identification test: match
+the present completely at the level of observables, vary only the history-formed slow
+memory, and determine whether — and in which direction — the future behavioral
+arrival distribution changes, under yoked and sham controls that differentiate
+selection-specific history from generic exposure history. **To our knowledge, no
+close protocol-level precedent combining these elements was identified in our
+search.**
 
 This paper builds that test and runs it end to end in designed systems. The
 battery has three components. *Matched present*: at test time the environment

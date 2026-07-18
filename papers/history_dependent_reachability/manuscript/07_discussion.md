@@ -49,31 +49,52 @@ The question here is deliberately narrow, and this narrowness is what separates 
 from adjacent accounts. Dynamical-systems theory characterizes stability,
 attractors, hysteresis, and bifurcation; control theory characterizes the cost of
 reaching or holding a target; reinforcement-learning accounts of habit and
-metaplasticity characterize how experience reshapes future updates; the
-free-energy principle and active inference characterize adaptive regulation under
-a boundary. Each of these covers part of the target. What they do not, **to our
-knowledge**, package together is the specific identification test at the center of
-this paper: hold the present state, fast values, and initial action distribution
-fixed; vary only the history-formed slow memory; and ask whether the future
-behavioral arrival distribution changes, with yoked and sham controls that
-differentiate selection-specific from generic history dependence. We make no claim that these
+metaplasticity characterize how experience reshapes future updates [Daw et al.
+2005]; the free-energy principle and active inference characterize adaptive
+regulation under a boundary. Several elements of our construction are, individually,
+standard: the information quantity is of the empowerment / causal-action-influence /
+directed-information family [Klyubin et al. 2005; Seitzer et al. 2021; Massey 1990;
+Schreiber 2000; Ay and Polani 2008]; such information has been used as a signal for
+action, exploration, or skill acquisition [Mohamed and Rezende 2015; Gregor et al.
+2016]; gated long-term consolidation is an established mechanism [Lindsey and
+Litwin-Kumar 2024]; and future-occupancy / reachability representations are familiar
+[Dayan 1993]. What we combine from these — an action-attributable gate on
+*path-memory consolidation* (not action), a *yoked/sham* differentiation of
+selection-specific from generic history dependence, and a *matched-present
+directional-reachability* endpoint — is the identification test at the center of this
+paper: hold the present state, fast values, and initial action distribution fixed;
+vary only the history-formed slow memory; and ask whether the future behavioral
+arrival distribution changes. **To our knowledge, no close protocol-level precedent
+combining these elements was identified in our search.** We make no claim that these
 frameworks are wrong or superseded — several of our own constructs are standard
-instances of them — only that the identification question and its control battery
-appear not to have been assembled in this form. Prediction-error metaplasticity in
+instances of them — nor that the information quantity, the use of such a quantity as
+a signal, or gated consolidation is itself new. Prediction-error metaplasticity in
 particular is real in our models (Phase 2b); our point is precisely that it is not,
 by itself, selection-specific, which is a statement about what that mechanism does
 not distinguish, not a refutation of it.
 
-Two of the closest neighbors are our own. **Costly selective closure** asks what
-makes an artificial system life-like and isolates token-level irreversibility
-through post-withdrawal cooperation; its central operation is persistence after
-support is withdrawn. The present paper asks an orthogonal question —
+The closest neighbor to our *identification setup* is perceptual aliasing [Whitehead
+and Ballard 1991]: distinct hidden states that produce the same immediate observation
+require different responses. That, however, is the *agent's* inference problem —
+disambiguating aliased states in order to act well, typically by building internal
+memory. Ours is the complementary *experimenter's* problem: we match the observable
+present (state, fast values, action distribution) and vary only the slow,
+history-formed memory, then measure whether future behavioral reachability changes,
+with yoked and sham controls. We do not claim that hidden-state dependence, or
+history dependence, is itself new; the contribution is the matched-present
+identification protocol and its controls.
+
+Two of the closest neighbors are our own. **Costly selective closure** [Zhang,
+unpublished manuscript] asks what makes an artificial system life-like and isolates
+token-level irreversibility through post-withdrawal cooperation; its central
+operation is persistence after support is withdrawn. The present paper asks an orthogonal question —
 identification under a matched present — and treats persistence-after-withdrawal
 not as the target but as one dissociable component (P) that we show is neither
 necessary nor sufficient for selection-specific write-back. The two papers share a
 vocabulary of selection and history but answer different questions with different
-endpoints. **Ontological friction (Ψ_f)** models a latent cross-modal control-cost
-factor for executive breakdown. This paper does not use anchoring friction or any
+endpoints. **Ontological friction (Ψ_f)** [Zhang, unpublished manuscript] models a
+latent cross-modal control-cost factor for executive breakdown. This paper does not
+use anchoring friction or any
 Ψ_A as a load-bearing construct; cost enters only as the two side-measurements
 J_ext and J_write in Phase 1, with the explicit finding that neither tracks
 selection-specific write-back — the highest write dissipation belongs to the

@@ -80,8 +80,11 @@ knowledge."
 - **Required action (mandatory before any strengthening):** cite empowerment +
   transfer entropy + variational empowerment at the definition of r_t; state
   explicitly "not a novel measure"; keep "to our knowledge" only for the *packaging*
-  (battery + endpoint), never for the measure. Proposed wording in
-  `LITERATURE_VERIFICATION_REPORT.md §3` — NOT yet applied to the manuscript.
+  (battery + endpoint), never for the measure. **APPLIED — citation-insertion round
+  (2026-07):** Methods 2.4 now carries the "the measure is not novel" paragraph with
+  Klyubin/Seitzer/Massey/Schreiber/Ay-Polani + Mohamed-Rezende/Gregor (signal use) +
+  Lindsey-Litwin-Kumar (gated consolidation); Intro §1 and Discussion §5.2 list the
+  same ingredients before the unified exclusivity sentence.
 
 ## N4 — Matched-present → different future reachability carried by memory alone (A4)
 
@@ -149,3 +152,13 @@ novelty is the controllability score; the reference ledger must resolve the clos
 prior information measures before any strengthening of the N3 wording, and the
 current hedges ("to our knowledge"; "not the conditional mutual information of the
 acting policy") must remain until then.
+
+**Status (citation-insertion round, 2026-07):** N3 resolution APPLIED to the
+manuscript (measure explicitly disavowed as novel; ingredient citations inserted at
+Methods 2.4 / Intro §1 / Discussion §5.2). N4 perceptual-aliasing demarcation and N5
+habit/goal-directed framing APPLIED (Discussion §5.2, Results §3.4). All exclusivity
+sentences unified to "to our knowledge, no close protocol-level precedent combining
+these elements was identified in our search." Residual novelty for every N-row is
+unchanged — narrowed to the *combination*, not strengthened. Self-cites (N6) carry
+"unpublished manuscript" + author-to-confirm status notes; CSC not marked
+"submitted," Ψ_f not marked "published/in press."

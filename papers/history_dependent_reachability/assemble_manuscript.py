@@ -118,6 +118,8 @@ limitations = sub_all(limitations, [
     (r"\(Sections 8 and 10\)", "(Sections 4 and 6)"),
 ])
 
+references = strip_note(load("08_references.md"))
+
 figures = strip_note(load("04_figures.md"))
 figures = figures.replace("# Figures and captions", "# Figures and captions (back matter)")
 
@@ -128,7 +130,8 @@ parts = [
     "> Numeric provenance: `RESULTS_NUMBERS.md` (read-only from frozen JSONs).\n"
     "> Governed by `PAPER_CHARTER.md` and `CLAIM_LEDGER.md`.\n",
     abstract, "\n---\n", intro, "\n---\n", methods, "\n---\n", results, "\n---\n",
-    audit, "\n---\n", discussion, "\n---\n", limitations, "\n---\n", figures,
+    audit, "\n---\n", discussion, "\n---\n", limitations, "\n---\n", references,
+    "\n---\n", figures,
 ]
 out = "\n".join(p.strip("\n") + "\n" for p in parts)
 (MS / "MANUSCRIPT.md").write_text(out, encoding="utf-8")
