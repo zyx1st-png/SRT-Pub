@@ -208,10 +208,10 @@ must fall within a ±0.15 equivalence bound; yoked decoupling within ±0.05;
 consolidation-null (z replaced by 0 during formation) must collapse the active
 commitment; memory-swap must follow the memory donor. Calibration used seeds 1–5;
 the locked holdout used 40 fresh seeds (30000–30039) with 2000 bootstrap resamples.
-**Two reported intervals (identical conclusions).** The pre-registered, frozen
-bootstrap unit is seed × volatility (80 values, two per seed) — retained as
-provenance. Because that analysis treats the within-seed volatility cells as separate
-resampling units, a post-audit
+**Two reported intervals (identical conclusions).** The frozen pre-holdout pooled
+analysis treated seed × volatility cells as separate resampling units (80 values, two
+per seed) — retained as provenance. Because that analysis treats the within-seed
+volatility cells as separate resampling units, a post-audit
 seed-clustered bootstrap (average the two volatility cells within each seed, then
 resample the 40 seeds) is reported alongside as the preferred inferential summary;
 both are given in Results (3.3). Phase 2c is treated as mechanism feasibility, with

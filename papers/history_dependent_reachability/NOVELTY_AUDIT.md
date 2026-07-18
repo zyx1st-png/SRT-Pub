@@ -60,8 +60,9 @@ knowledge."
   10.1109/CEC.2005.1554676) is the action→outcome channel capacity; transfer entropy
   (Schreiber 2000, DOI 10.1103/PhysRevLett.85.461) is the directed-information version
   that conditions out shared history; variational empowerment (Mohamed & Rezende 2015)
-  uses I(a;s′) as an RL signal. Our C_μ is a **fixed-reference instance** of this
-  family. No complete precedent exists (none gates a *path memory* rather than action,
+  uses I(a;s′) as an RL signal. Our C_μ = I_μ(A;O|s) is a **non-capacitated action–outcome mutual information under a
+  fixed reference distribution** — the same established family, but NOT an "instance of
+  empowerment" (which is the capacity) and NOT a claimed exact-measure precedent. No complete precedent exists (none gates a *path memory* rather than action,
   none runs a yoked/sham selection-specificity test, none reads out directional
   behavioral reachability under a matched present).
 - **Residual novelty (restated, narrowed):** **only** (a) the *consolidation-gating*
@@ -87,7 +88,8 @@ knowledge."
   only-m guarantee, applied to a behavioral reachability readout.
 - **Risk / defense:** MEDIUM. **VERIFICATION (2026-07-17):** successor representation
   (Dayan 1993, DOI 10.1162/neco.1993.5.4.613) is the reachability/adjacency vocabulary
-  (background); **no tight precedent found** for the matched-present / only-slow-memory
+  (background); **no close protocol-level precedent identified in Round 1** (Round-2
+  pending; not a proof of non-existence) for the matched-present / only-slow-memory
   identification protocol. Reviewer may say "this is just path dependence." Defense =
   the matching protocol and only-m verification distinguish identification from mere
   history dependence (§1, §2.8); cite SR as reachability background, not as precedent
@@ -123,7 +125,7 @@ knowledge."
 | N1 | counterfactual W_sel + 4-cell dissociation | LOW–MED | verify R-01/R-06; keep "instrument" framing |
 | N2 | pre-registered negative (yoked) result | LOW | verify R-03/R-09; keep as falsification |
 | N3 | info-measure as *gate* + selection-specificity | **MED–HIGH → resolved** | **VERIFIED: measure not novel (empowerment/transfer-entropy/variational-empowerment).** Cite them; scope novelty to gating+yoked/sham+endpoint only. No complete precedent. |
-| N4 | matched-present only-m identification | MED | **VERIFIED: SR is reachability background; no protocol precedent found.** Keep identification vs path-dependence distinction. |
+| N4 | matched-present only-m identification | MED | **ROUND1: SR is policy-conditioned future-occupancy background; no close protocol-level precedent identified (Round-2 pending).** Keep identification vs path-dependence distinction. |
 | N5 | joint advantage+cost signature | LOW–MED | verify R-05; within-model framing |
 | N6 | demarcation from CSC / Ψ_f | MED | verify R-14/R-15 status; keep §5.2 demarcation |
 
