@@ -126,3 +126,81 @@ To be applied in a later, author-approved editing turn (Methods 2.4 and Discussi
 - `candidate_bibliography.bib`: verified entries + clearly separated unverified
   candidates.
 - MANUSCRIPT unchanged.
+
+---
+
+# Round 2 (N3 breadth, N4/N5 systematic) — 2026-07-17
+
+Verified this round (DOI/venue confirmed; formula/concept read for the closest):
+
+- **Ay & Polani (2008)**, *Adv. Complex Syst.* 11(1):17–41, DOI
+  10.1142/S0219525908001465. Read: **interventional** information flow — conditional
+  mutual information under the do-operator, explicitly contrasted with (observational)
+  transfer entropy. **Layers: MEASURE (interventional) + CONTROL-rationale.** This is
+  the closer information-theoretic neighbor to the yoked *manipulation* (an
+  intervention cutting the action→outcome edge). Still a measure, not a memory-gating
+  mechanism or an identification protocol.
+- **Variational Intrinsic Control** — Gregor, Rezende, Wierstra (2016), arXiv:1611.07507.
+  Read: maximizes I(options; termination states) = "number of states an agent can
+  reliably reach." **Layers: MEASURE + MECHANISM-as-signal + partial ENDPOINT
+  (reachability-of-states).** Closest single work on combining action→outcome
+  information with reachability — but it drives **option/skill learning** (action), not
+  a gated path memory, and has no matched-present identification or yoked/sham control.
+- **Perceptual aliasing** — Whitehead & Ballard (1991), *Machine Learning* 7:45–83,
+  DOI 10.1007/BF00058926. Read (concept): situations "indistinguishable from immediate
+  perceptual input require different responses." **Layer: MATCHING (conceptual
+  neighbor).** This is the closest neighbor to N4's intuition (same observation,
+  different underlying/hidden state → different appropriate future). **Crucial
+  distinction:** perceptual aliasing is the *agent's* inference/memory problem (it must
+  disambiguate aliased states to act optimally); ours is an *experimenter's*
+  identification protocol (match the observable present + fast state + action
+  distribution, vary only the slow history-formed memory, with yoked/sham controls and
+  a reachability-distribution endpoint). Not a protocol precedent, but N4 must now cite
+  and demarcate it. (Companion: Chrisman 1992, AAAI-92, perceptual distinctions —
+  candidate, DOI n/a.)
+- **Sense of agency** — Haggard (2017), *Nat. Rev. Neurosci.* 18(4):196–207, DOI
+  10.1038/nrn.2017.14 (review). Read: self-attribution of control over action and its
+  effects. **Layer: CONTROL/self-attribution (background for the sham).**
+
+Candidates identified but NOT individually web-verified this round (DOI NEEDS-CONFIRM;
+no DOI guessed): Massey (1990) directed information; Lizier & Prokopenko (local
+information transfer); Seitzer et al. (2021) causal-influence detection intrinsic
+reward (NeurIPS); Daw et al. (2005) / Dickinson (1985) habit vs goal-directed
+(perseveration, N5); learned-helplessness yoked (Seligman & Maier 1967, R-09);
+equivalence testing (R-11), bootstrap (R-12), committor/TPT (R-06), Euler–Maruyama
+(R-07).
+
+## Five-layer overlap map (measure / mechanism / control / matching / endpoint)
+
+| reference | measure | mechanism | control | matching | endpoint |
+|---|---|---|---|---|---|
+| Empowerment (Klyubin 2005) | ✔ capacity | — | — | — | — |
+| Transfer entropy (Schreiber 2000) | ✔ observational directed | — | rationale only | — | — |
+| Ay & Polani (2008) | ✔ interventional | — | ✔ rationale (intervention≈yoke) | — | — |
+| Mohamed & Rezende (2015) | ✔ | ✔ as signal (drives action) | — | — | — |
+| VIC (Gregor 2016) | ✔ | ✔ as signal (drives options) | — | — | partial (reach states) |
+| Perceptual aliasing (Whitehead 1991) | — | — | — | ✔ conceptual (agent inference) | — |
+| Sense of agency (Haggard 2017) | — | — | ✔ self-attribution (background) | — | — |
+| Successor representation (Dayan 1993) | — | — | — | — | ✔ future occupancy (background) |
+| **This paper** | family (not novel) | **gate a path memory (not action)** | **yoked + sham selection-specificity** | **matched present, only slow memory varied** | **directional reachability distribution** |
+
+**No single prior work occupies the mechanism+control+matching+endpoint combination.**
+Each layer has a neighbor; the **identification protocol assembling all four** has no
+precedent found in Rounds 1–2. STOP rule: **not triggered.**
+
+## Effect on the novelty audit
+
+- **N3:** unchanged from Round 1 — measure not claimed novel; interventional (Ay–Polani)
+  and mechanism-as-signal (VIC, Mohamed–Rezende) neighbors now documented; residual
+  novelty = gating-a-path-memory + yoked/sham + endpoint (the *combination*).
+- **N4:** **risk raised MEDIUM → MEDIUM-HIGH.** Perceptual aliasing is a genuine
+  conceptual neighbor and MUST be cited + demarcated (agent-inference vs
+  experimenter-identification). N4 novelty survives as the *protocol*, not the intuition.
+- **N5 (perseveration):** habit/goal-directed and set-shifting literature confirmed as
+  the background home for the stickiness cost; N5 stays LOW–MEDIUM, framed as a
+  within-model directional prediction consistent with known perseveration.
+
+## Deliverables this round
+Updated REFERENCE_LEDGER (Round-2 rows VERIFIED), NOVELTY_AUDIT (N4 demarcation
+strengthened, five-layer map), candidate_bibliography.bib (4 new VERIFIED entries).
+MANUSCRIPT unchanged; PR #675 Draft.

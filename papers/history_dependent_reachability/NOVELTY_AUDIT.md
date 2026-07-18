@@ -86,14 +86,19 @@ knowledge."
   code-verify only-m carry) is the novel part.
 - **Residual novelty:** the exact matched-present identification protocol with the
   only-m guarantee, applied to a behavioral reachability readout.
-- **Risk / defense:** MEDIUM. **VERIFICATION (2026-07-17):** successor representation
-  (Dayan 1993, DOI 10.1162/neco.1993.5.4.613) is the reachability/adjacency vocabulary
-  (background); **no close protocol-level precedent identified in Round 1** (Round-2
-  pending; not a proof of non-existence) for the matched-present / only-slow-memory
-  identification protocol. Reviewer may say "this is just path dependence." Defense =
-  the matching protocol and only-m verification distinguish identification from mere
-  history dependence (§1, §2.8); cite SR as reachability background, not as precedent
-  for the protocol. N4 novelty survives.
+- **Risk / defense:** **MEDIUM → MEDIUM-HIGH (Round 2).** **VERIFICATION:** successor
+  representation (Dayan 1993, DOI 10.1162/neco.1993.5.4.613) is policy-conditioned
+  future-occupancy background. **Round 2 found the close conceptual neighbor:
+  perceptual aliasing** (Whitehead & Ballard 1991, DOI 10.1007/BF00058926; companion
+  Chrisman 1992) — "indistinguishable percepts require different responses," i.e.
+  same-observation / different-hidden-state → different appropriate future. **Mandatory
+  defense:** cite and demarcate — perceptual aliasing is the *agent's* inference/memory
+  problem (disambiguate aliased states to act optimally); ours is an *experimenter's*
+  identification protocol (match observable present + fast state + action distribution,
+  vary only the slow history-formed memory, with yoked/sham controls and a reachability-
+  distribution endpoint). **No complete protocol precedent found (Rounds 1–2).** N4
+  novelty survives as the *protocol*, not the intuition; the reviewer's most likely
+  counter is now anticipated.
 
 ## N5 — Directional signature: aligned advantage vs blocked/novel stickiness (A5)
 
@@ -125,7 +130,7 @@ knowledge."
 | N1 | counterfactual W_sel + 4-cell dissociation | LOW–MED | verify R-01/R-06; keep "instrument" framing |
 | N2 | pre-registered negative (yoked) result | LOW | verify R-03/R-09; keep as falsification |
 | N3 | info-measure as *gate* + selection-specificity | **MED–HIGH → resolved** | **VERIFIED: measure not novel (empowerment/transfer-entropy/variational-empowerment).** Cite them; scope novelty to gating+yoked/sham+endpoint only. No complete precedent. |
-| N4 | matched-present only-m identification | MED | **ROUND1: SR is policy-conditioned future-occupancy background; no close protocol-level precedent identified (Round-2 pending).** Keep identification vs path-dependence distinction. |
+| N4 | matched-present only-m identification | **MED-HIGH (R2)** | **Perceptual aliasing (Whitehead & Ballard 1991) is the close conceptual neighbor — cite + demarcate (agent-inference vs experimenter-identification).** SR = future-occupancy background. No complete protocol precedent (R1–R2). |
 | N5 | joint advantage+cost signature | LOW–MED | verify R-05; within-model framing |
 | N6 | demarcation from CSC / Ψ_f | MED | verify R-14/R-15 status; keep §5.2 demarcation |
 
