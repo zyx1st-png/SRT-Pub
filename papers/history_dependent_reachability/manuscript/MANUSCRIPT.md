@@ -29,8 +29,9 @@ future-effective history dependence that a yoked agent reproduced entirely
 accumulated surprise with action-attributable predictive information — the
 log-likelihood advantage of the agent's chosen action over a fixed reference
 mixture — restored it: active agents form peaked path memories while yoked
-agents do not (paired difference 0.570 against a ±0.15 equivalence-bounded
-prediction-error baseline). In a minimal MDP where only the consolidated memory
+agents do not (paired difference 0.570, seed-clustered 90% CI [0.566, 0.574],
+consistent with the frozen pre-registered pooled interval [0.559, 0.581], against a
+±0.15 equivalence-bounded prediction-error baseline). In a minimal MDP where only the consolidated memory
 crosses the matching boundary, that memory redirected future arrival
 distributions directionally — history-aligned advantage bought at the price of
 perseverative cost under blocked paths and novel goals (macro total variation
@@ -325,9 +326,13 @@ must fall within a ±0.15 equivalence bound; yoked decoupling within ±0.05;
 consolidation-null (z replaced by 0 during formation) must collapse the active
 commitment; memory-swap must follow the memory donor. Calibration used seeds 1–5;
 the locked holdout used 40 fresh seeds (30000–30039) with 2000 bootstrap resamples.
-**Disclosed limitation:** the 2c bootstrap unit is seed × volatility (80 values, two
-per seed); Phase 2c is therefore treated as mechanism feasibility, with confirmatory
-statistics carried by S4.
+**Two reported intervals (identical conclusions).** The pre-registered, frozen
+bootstrap unit is seed × volatility (80 values, two per seed) — retained as
+provenance. Because that unit overstates the effective sample, a post-audit
+seed-clustered bootstrap (average the two volatility cells within each seed, then
+resample the 40 seeds) is reported alongside as the preferred inferential summary;
+both are given in Results (3.3). Phase 2c is treated as mechanism feasibility, with
+confirmatory statistics carried by S4; neither interval changes the frozen GO.
 
 ## 2.7 System S4: tiny-MDP with behavioral reach battery (confirmatory)
 
@@ -389,8 +394,10 @@ controls (memory-null, same-m/different-z) with 95% CIs entirely within
 
 Primary statistics are paired seed-level differences with percentile bootstrap CIs
 (S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min directly;
-S3: unit = seed × volatility, n = 80, B = 2,000, 90% CI — disclosed and treated as
-feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.
+S3: two intervals — the frozen pre-registered pooled bootstrap, unit = seed ×
+volatility, n = 80, B = 2,000, 90% CI (provenance); and a post-audit seed-clustered
+bootstrap, unit = seed, n = 40, B = 10,000, 90% CI (preferred inferential summary).
+Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.
 Direction gates are one-sided CI position checks fixed in advance. The very narrow
 CIs reported for S4 reflect cross-seed reproducibility of a frozen deterministic
 model (each per-seed statistic already averages N = 400 agents); they are not
@@ -494,16 +501,23 @@ by Section 3.4.*
 
 With the gating signal replaced by the mu-mixture log-likelihood-ratio score r_t
 (Methods 2.4), the paired active−yoked difference in content-neutral future
-commitment was **0.570, 90% CI [0.559, 0.581]** (Figure 3C) — above the pre-registered
-Delta_min = 0.20 with the CI lower bound far from zero, and consistent across both
-volatility levels (d_ctrl = 0.627 high, 0.513 low).
+commitment was **0.570** — above the pre-registered Delta_min = 0.20 and consistent
+across both volatility levels (d_ctrl = 0.627 high, 0.513 low). We report two
+intervals for this estimate, with identical conclusions. The **frozen pre-registered
+pooled bootstrap** (unit = seed × volatility, 80 values; provenance) gives 90% CI
+**[0.559, 0.581]**. The **post-audit seed-clustered bootstrap** — averaging the two
+volatility cells within each seed and resampling the 40 seeds (10,000 resamples), the
+audit-preferred inferential summary — gives 90% CI **[0.566, 0.574]** (tighter
+because the within-seed between-cell variance is removed). Both lie well above zero;
+the frozen GO is not modified.
 
 Within the same framework and on the same data, the **|PE| baseline fell inside the
-pre-registered ±0.15 equivalence bound: 0.087, 90% CI [0.082, 0.091]** (Figure 3B) (d_pe = 0.067
-high, 0.106 low). This is a pre-registered equivalence test conducted within Phase
-2c, distinct from the Phase 2b comparison reported in Section 3.2; together they show the
-failed mechanism failing again inside the revised framework while the
-controllability mechanism succeeds on identical data.
+pre-registered ±0.15 equivalence bound: 0.087** — pooled 90% CI **[0.082, 0.091]**
+(provenance) and seed-clustered 90% CI **[0.084, 0.089]** (preferred), again with
+identical conclusions (d_pe = 0.067 high, 0.106 low). This is a pre-registered
+equivalence test conducted within Phase 2c, distinct from the Phase 2b comparison
+reported in Section 3.2; together they show the failed mechanism failing again inside the
+revised framework while the controllability mechanism succeeds on identical data.
 
 The z-formation coupling effect was sign-stable (ctrl active−yoked: +0.264 high,
 +0.931 low; |PE| active−yoked: −0.070, −0.078 — the |PE| signal is, if anything,
@@ -799,12 +813,15 @@ demonstrated to be buildable, not discovered in any target system. The same
 holds for the double-well system, where the plasticity channel z was likewise
 defined into the dynamics.
 
-**3. Phase 2c's bootstrap unit overstates its effective sample.** The Phase 2c
-holdout pooled seed × volatility cells (80 values from 40 seeds) rather than
-resampling seeds. Phase 2c is therefore positioned as mechanism feasibility
-only; the confirmatory statistics of this paper come exclusively from the
-tiny-MDP holdout, whose bootstrap unit is the seed (50 units, 10,000 paired
-resamples). No conclusion of the paper rests on Phase 2c's interval estimates.
+**3. Phase 2c's pre-registered bootstrap unit overstates its effective sample.**
+The frozen Phase 2c holdout pooled seed × volatility cells (80 values from 40 seeds)
+rather than resampling seeds. We retain that pre-registered interval as provenance
+and additionally report a post-audit seed-clustered bootstrap (average the two
+volatility cells per seed, then resample the 40 seeds) as the preferred inferential
+summary; the two agree in direction and conclusion (Results 3.3), and the frozen GO
+is unchanged. Regardless, Phase 2c is positioned as mechanism feasibility only; the
+confirmatory statistics of this paper come exclusively from the tiny-MDP holdout,
+whose bootstrap unit is the seed (50 units, 10,000 paired resamples).
 
 **4. The narrow confidence intervals measure model reproducibility, not
 construct confidence.** Intervals such as macro-TV [0.374, 0.375] arise because
@@ -845,10 +862,11 @@ model-relative conventions, not theoretically derived quantities.
 tiny-MDP stage (Phase 2c v1 omitted it rather than duplicate a hidden yoked
 control); the latent-inscription condition is established at selection-episode
 scale only, and its durable form was obtained only after replacing the
-state-tracking slow variable with the two-timescale architecture; per-class
-four-bar arrival distributions and the latent-erosion trace await the
-pre-submission extraction pass, as their raw values are not stored in the
-frozen results files.
+state-tracking slow variable with the two-timescale architecture. The per-class
+four-bar arrival distributions and the latent erosion were completed by the
+authorized extraction round; the latter is reported only as a **two-point erosion
+comparison** (episode-end vs end-of-observation z), because a per-step record is not
+extractable without editing frozen code.
 
 **9. What this paper does not claim.** Per the claim ledger fixed before
 drafting: no claim that natural systems exhibit historicity write-back; no claim
@@ -976,6 +994,6 @@ window, frozen seeds 11–15, from the authorized extraction round:
 LatentInscription +0.742 ± 0.000 → −5.543 ± 0.033 (the off-target write erodes as
 the state-tracking z follows the fast state back to the home basin), while
 C_anchor +1.534 ± 0.000 → +3.322 ± 0.000 (the expressed write self-consolidates).
-A full per-step erosion *trace* is not extractable without editing frozen code and
-is therefore not produced; the two-point comparison carries the finding.
-*Source: extraction_round.json.*
+This is a **two-point erosion comparison**, not a trajectory or time course: a
+per-step record is not extractable without editing frozen code, so only the two
+endpoints are reported. *Source: extraction_round.json.*

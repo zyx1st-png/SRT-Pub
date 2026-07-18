@@ -84,16 +84,23 @@ by R4.*
 
 With the gating signal replaced by the mu-mixture log-likelihood-ratio score r_t
 (Methods M4), the paired active−yoked difference in content-neutral future
-commitment was **0.570, 90% CI [0.559, 0.581]** — above the pre-registered
-Delta_min = 0.20 with the CI lower bound far from zero, and consistent across both
-volatility levels (d_ctrl = 0.627 high, 0.513 low).
+commitment was **0.570** — above the pre-registered Delta_min = 0.20 and consistent
+across both volatility levels (d_ctrl = 0.627 high, 0.513 low). We report two
+intervals for this estimate, with identical conclusions. The **frozen pre-registered
+pooled bootstrap** (unit = seed × volatility, 80 values; provenance) gives 90% CI
+**[0.559, 0.581]**. The **post-audit seed-clustered bootstrap** — averaging the two
+volatility cells within each seed and resampling the 40 seeds (10,000 resamples), the
+audit-preferred inferential summary — gives 90% CI **[0.566, 0.574]** (tighter
+because the within-seed between-cell variance is removed). Both lie well above zero;
+the frozen GO is not modified.
 
 Within the same framework and on the same data, the **|PE| baseline fell inside the
-pre-registered ±0.15 equivalence bound: 0.087, 90% CI [0.082, 0.091]** (d_pe = 0.067
-high, 0.106 low). This is a pre-registered equivalence test conducted within Phase
-2c, distinct from the Phase 2b comparison reported in R2; together they show the
-failed mechanism failing again inside the revised framework while the
-controllability mechanism succeeds on identical data.
+pre-registered ±0.15 equivalence bound: 0.087** — pooled 90% CI **[0.082, 0.091]**
+(provenance) and seed-clustered 90% CI **[0.084, 0.089]** (preferred), again with
+identical conclusions (d_pe = 0.067 high, 0.106 low). This is a pre-registered
+equivalence test conducted within Phase 2c, distinct from the Phase 2b comparison
+reported in R2; together they show the failed mechanism failing again inside the
+revised framework while the controllability mechanism succeeds on identical data.
 
 The z-formation coupling effect was sign-stable (ctrl active−yoked: +0.264 high,
 +0.931 low; |PE| active−yoked: −0.070, −0.078 — the |PE| signal is, if anything,

@@ -26,8 +26,9 @@ future-effective history dependence that a yoked agent reproduced entirely
 accumulated surprise with action-attributable predictive information — the
 log-likelihood advantage of the agent's chosen action over a fixed reference
 mixture — restored it: active agents form peaked path memories while yoked
-agents do not (paired difference 0.570 against a ±0.15 equivalence-bounded
-prediction-error baseline). In a minimal MDP where only the consolidated memory
+agents do not (paired difference 0.570, seed-clustered 90% CI [0.566, 0.574],
+consistent with the frozen pre-registered pooled interval [0.559, 0.581], against a
+±0.15 equivalence-bounded prediction-error baseline). In a minimal MDP where only the consolidated memory
 crosses the matching boundary, that memory redirected future arrival
 distributions directionally — history-aligned advantage bought at the price of
 perseverative cost under blocked paths and novel goals (macro total variation

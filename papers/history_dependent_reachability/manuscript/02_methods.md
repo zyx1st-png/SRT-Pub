@@ -208,9 +208,13 @@ must fall within a ±0.15 equivalence bound; yoked decoupling within ±0.05;
 consolidation-null (z replaced by 0 during formation) must collapse the active
 commitment; memory-swap must follow the memory donor. Calibration used seeds 1–5;
 the locked holdout used 40 fresh seeds (30000–30039) with 2000 bootstrap resamples.
-**Disclosed limitation:** the 2c bootstrap unit is seed × volatility (80 values, two
-per seed); Phase 2c is therefore treated as mechanism feasibility, with confirmatory
-statistics carried by S4.
+**Two reported intervals (identical conclusions).** The pre-registered, frozen
+bootstrap unit is seed × volatility (80 values, two per seed) — retained as
+provenance. Because that unit overstates the effective sample, a post-audit
+seed-clustered bootstrap (average the two volatility cells within each seed, then
+resample the 40 seeds) is reported alongside as the preferred inferential summary;
+both are given in Results (3.3). Phase 2c is treated as mechanism feasibility, with
+confirmatory statistics carried by S4; neither interval changes the frozen GO.
 
 ## M7. System S4: tiny-MDP with behavioral reach battery (confirmatory)
 
@@ -272,8 +276,10 @@ controls (memory-null, same-m/different-z) with 95% CIs entirely within
 
 Primary statistics are paired seed-level differences with percentile bootstrap CIs
 (S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min directly;
-S3: unit = seed × volatility, n = 80, B = 2,000, 90% CI — disclosed and treated as
-feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.
+S3: two intervals — the frozen pre-registered pooled bootstrap, unit = seed ×
+volatility, n = 80, B = 2,000, 90% CI (provenance); and a post-audit seed-clustered
+bootstrap, unit = seed, n = 40, B = 10,000, 90% CI (preferred inferential summary).
+Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.
 Direction gates are one-sided CI position checks fixed in advance. The very narrow
 CIs reported for S4 reflect cross-seed reproducibility of a frozen deterministic
 model (each per-seed statistic already averages N = 400 agents); they are not

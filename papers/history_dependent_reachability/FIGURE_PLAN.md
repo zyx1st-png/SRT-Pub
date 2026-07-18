@@ -5,8 +5,9 @@
 > `manuscript/04_figures.md`. The two previously deferred items are **completed**
 > from the authorized deterministic extraction round (`extraction_round.json`):
 > Fig. 5 now carries the per-class four-vector arrival panels (A–C) + per-seed
-> distribution (F); S4 is realized as a two-point erosion comparison (a full
-> per-step trace is not extractable without editing frozen code).
+> distribution (F); S4 is realized as a two-point erosion comparison (episode-end vs
+> end-of-observation z; not a trajectory/time course — a per-step record is not
+> extractable without editing frozen code).
 
 Five main figures. All numeric content is read from the frozen JSONs (no re-simulation
 for figures; extraction scripts live in this directory and are read-only over

@@ -269,8 +269,9 @@ def fig5():
     mseeds = [r["macro_tv"] for r in ex["tiny_mdp"]["per_seed"]]
     axF.hist(mseeds, bins=12, color=C_GRAY, edgecolor="white")
     axF.set_xlabel("per-seed macro-TV (50 seeds)"); axF.set_ylabel("count")
-    axF.text(0.03, 0.92, "all 50 seeds $\\gg$ $\\Delta_{min}$ = 0.15\n(axis zoomed to data)",
-             transform=axF.transAxes, fontsize=8, style="italic")
+    axF.text(0.03, 0.86, "all 50 per-seed point estimates\nexceeded 0.15 (axis zoomed to data);\n"
+             "formal GO is on the seed-averaged\nmacro-TV paired-bootstrap CI",
+             transform=axF.transAxes, fontsize=7, style="italic")
     axF.set_title("F  Per-seed distribution\n(extraction round)", loc="left", fontsize=10)
     fig.tight_layout()
     save(fig, "fig5")
@@ -294,8 +295,8 @@ def s4():
     ax.set_xticklabels(["episode end\n($z_{episode}$)", "end of observation\n($z_{final}$)"])
     ax.set_ylabel("slow variable $z$ (ensemble mean)")
     ax.legend(fontsize=9)
-    ax.set_title("S4  State-tracking erosion of an off-target write (two-point,\n"
-                 "frozen seeds 11–15): latent write erodes; anchored write consolidates",
+    ax.set_title("S4  Two-point erosion comparison of an off-target write\n"
+                 "(frozen seeds 11–15): latent write erodes; anchored write consolidates",
                  loc="left", fontsize=9.5)
     fig.tight_layout(); save(fig, "s4")
 

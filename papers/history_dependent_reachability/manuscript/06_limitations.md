@@ -24,12 +24,15 @@ demonstrated to be buildable, not discovered in any target system. The same
 holds for the double-well system, where the plasticity channel z was likewise
 defined into the dynamics.
 
-**3. Phase 2c's bootstrap unit overstates its effective sample.** The Phase 2c
-holdout pooled seed × volatility cells (80 values from 40 seeds) rather than
-resampling seeds. Phase 2c is therefore positioned as mechanism feasibility
-only; the confirmatory statistics of this paper come exclusively from the
-tiny-MDP holdout, whose bootstrap unit is the seed (50 units, 10,000 paired
-resamples). No conclusion of the paper rests on Phase 2c's interval estimates.
+**3. Phase 2c's pre-registered bootstrap unit overstates its effective sample.**
+The frozen Phase 2c holdout pooled seed × volatility cells (80 values from 40 seeds)
+rather than resampling seeds. We retain that pre-registered interval as provenance
+and additionally report a post-audit seed-clustered bootstrap (average the two
+volatility cells per seed, then resample the 40 seeds) as the preferred inferential
+summary; the two agree in direction and conclusion (Results 3.3), and the frozen GO
+is unchanged. Regardless, Phase 2c is positioned as mechanism feasibility only; the
+confirmatory statistics of this paper come exclusively from the tiny-MDP holdout,
+whose bootstrap unit is the seed (50 units, 10,000 paired resamples).
 
 **4. The narrow confidence intervals measure model reproducibility, not
 construct confidence.** Intervals such as macro-TV [0.374, 0.375] arise because
@@ -70,10 +73,11 @@ model-relative conventions, not theoretically derived quantities.
 tiny-MDP stage (Phase 2c v1 omitted it rather than duplicate a hidden yoked
 control); the latent-inscription condition is established at selection-episode
 scale only, and its durable form was obtained only after replacing the
-state-tracking slow variable with the two-timescale architecture; per-class
-four-bar arrival distributions and the latent-erosion trace await the
-pre-submission extraction pass, as their raw values are not stored in the
-frozen results files.
+state-tracking slow variable with the two-timescale architecture. The per-class
+four-bar arrival distributions and the latent erosion were completed by the
+authorized extraction round; the latter is reported only as a **two-point erosion
+comparison** (episode-end vs end-of-observation z), because a per-step record is not
+extractable without editing frozen code.
 
 **9. What this paper does not claim.** Per the claim ledger fixed before
 drafting: no claim that natural systems exhibit historicity write-back; no claim

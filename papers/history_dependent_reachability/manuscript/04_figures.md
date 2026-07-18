@@ -119,6 +119,6 @@ window, frozen seeds 11–15, from the authorized extraction round:
 LatentInscription +0.742 ± 0.000 → −5.543 ± 0.033 (the off-target write erodes as
 the state-tracking z follows the fast state back to the home basin), while
 C_anchor +1.534 ± 0.000 → +3.322 ± 0.000 (the expressed write self-consolidates).
-A full per-step erosion *trace* is not extractable without editing frozen code and
-is therefore not produced; the two-point comparison carries the finding.
-*Source: extraction_round.json.*
+This is a **two-point erosion comparison**, not a trajectory or time course: a
+per-step record is not extractable without editing frozen code, so only the two
+endpoints are reported. *Source: extraction_round.json.*
