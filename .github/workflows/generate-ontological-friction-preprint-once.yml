@@ -1,0 +1,33 @@
+name: Generate ontological friction preprint once
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/generate-ontological-friction-preprint-once.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Generate journal-neutral preprint manuscript
+        run: python papers/ontological_friction/make_preprint_variant.py
+
+      - name: Commit generated manuscript and remove one-off workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add papers/ontological_friction/paper_ontological_friction_preprint.md
+          git rm .github/workflows/generate-ontological-friction-preprint-once.yml
+          git commit -m "Add journal-neutral preprint manuscript"
+          git push origin HEAD:main
