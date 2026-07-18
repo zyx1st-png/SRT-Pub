@@ -210,7 +210,8 @@ commitment; memory-swap must follow the memory donor. Calibration used seeds 1�
 the locked holdout used 40 fresh seeds (30000–30039) with 2000 bootstrap resamples.
 **Two reported intervals (identical conclusions).** The pre-registered, frozen
 bootstrap unit is seed × volatility (80 values, two per seed) — retained as
-provenance. Because that unit overstates the effective sample, a post-audit
+provenance. Because that analysis treats the within-seed volatility cells as separate
+resampling units, a post-audit
 seed-clustered bootstrap (average the two volatility cells within each seed, then
 resample the 40 seeds) is reported alongside as the preferred inferential summary;
 both are given in Results (3.3). Phase 2c is treated as mechanism feasibility, with
@@ -276,7 +277,7 @@ controls (memory-null, same-m/different-z) with 95% CIs entirely within
 
 Primary statistics are paired seed-level differences with percentile bootstrap CIs
 (S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min directly;
-S3: two intervals — the frozen pre-registered pooled bootstrap, unit = seed ×
+S3: two intervals — the frozen pre-holdout pooled analysis, unit = seed ×
 volatility, n = 80, B = 2,000, 90% CI (provenance); and a post-audit seed-clustered
 bootstrap, unit = seed, n = 40, B = 10,000, 90% CI (preferred inferential summary).
 Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.

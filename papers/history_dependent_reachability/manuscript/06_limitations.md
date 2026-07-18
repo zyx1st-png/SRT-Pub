@@ -24,9 +24,9 @@ demonstrated to be buildable, not discovered in any target system. The same
 holds for the double-well system, where the plasticity channel z was likewise
 defined into the dynamics.
 
-**3. Phase 2c's pre-registered bootstrap unit overstates its effective sample.**
+**3. Phase 2c's frozen pre-holdout analysis treats within-seed volatility cells as separate resampling units.**
 The frozen Phase 2c holdout pooled seed × volatility cells (80 values from 40 seeds)
-rather than resampling seeds. We retain that pre-registered interval as provenance
+rather than resampling seeds. We retain that frozen pre-holdout interval as provenance
 and additionally report a post-audit seed-clustered bootstrap (average the two
 volatility cells per seed, then resample the 40 seeds) as the preferred inferential
 summary; the two agree in direction and conclusion (Results 3.3), and the frozen GO

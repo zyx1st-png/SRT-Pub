@@ -86,8 +86,8 @@ With the gating signal replaced by the mu-mixture log-likelihood-ratio score r_t
 (Methods M4), the paired active−yoked difference in content-neutral future
 commitment was **0.570** — above the pre-registered Delta_min = 0.20 and consistent
 across both volatility levels (d_ctrl = 0.627 high, 0.513 low). We report two
-intervals for this estimate, with identical conclusions. The **frozen pre-registered
-pooled bootstrap** (unit = seed × volatility, 80 values; provenance) gives 90% CI
+intervals for this estimate, with identical conclusions. The **frozen pre-holdout pooled analysis** (unit = seed × volatility, 80 values;
+provenance) gives 90% CI
 **[0.559, 0.581]**. The **post-audit seed-clustered bootstrap** — averaging the two
 volatility cells within each seed and resampling the 40 seeds (10,000 resamples), the
 audit-preferred inferential summary — gives 90% CI **[0.566, 0.574]** (tighter

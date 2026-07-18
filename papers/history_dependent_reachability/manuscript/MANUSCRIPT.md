@@ -30,7 +30,7 @@ accumulated surprise with action-attributable predictive information — the
 log-likelihood advantage of the agent's chosen action over a fixed reference
 mixture — restored it: active agents form peaked path memories while yoked
 agents do not (paired difference 0.570, seed-clustered 90% CI [0.566, 0.574],
-consistent with the frozen pre-registered pooled interval [0.559, 0.581], against a
+consistent with the frozen pre-holdout pooled interval [0.559, 0.581], against a
 ±0.15 equivalence-bounded prediction-error baseline). In a minimal MDP where only the consolidated memory
 crosses the matching boundary, that memory redirected future arrival
 distributions directionally — history-aligned advantage bought at the price of
@@ -328,7 +328,8 @@ commitment; memory-swap must follow the memory donor. Calibration used seeds 1�
 the locked holdout used 40 fresh seeds (30000–30039) with 2000 bootstrap resamples.
 **Two reported intervals (identical conclusions).** The pre-registered, frozen
 bootstrap unit is seed × volatility (80 values, two per seed) — retained as
-provenance. Because that unit overstates the effective sample, a post-audit
+provenance. Because that analysis treats the within-seed volatility cells as separate
+resampling units, a post-audit
 seed-clustered bootstrap (average the two volatility cells within each seed, then
 resample the 40 seeds) is reported alongside as the preferred inferential summary;
 both are given in Results (3.3). Phase 2c is treated as mechanism feasibility, with
@@ -394,7 +395,7 @@ controls (memory-null, same-m/different-z) with 95% CIs entirely within
 
 Primary statistics are paired seed-level differences with percentile bootstrap CIs
 (S4: unit = seed, n = 50, B = 10,000, 95% CI compared against Delta_min directly;
-S3: two intervals — the frozen pre-registered pooled bootstrap, unit = seed ×
+S3: two intervals — the frozen pre-holdout pooled analysis, unit = seed ×
 volatility, n = 80, B = 2,000, 90% CI (provenance); and a post-audit seed-clustered
 bootstrap, unit = seed, n = 40, B = 10,000, 90% CI (preferred inferential summary).
 Both give the same conclusion; S3 is treated as feasibility). Absence claims use pre-registered equivalence bounds, not point nulls.
@@ -503,8 +504,8 @@ With the gating signal replaced by the mu-mixture log-likelihood-ratio score r_t
 (Methods 2.4), the paired active−yoked difference in content-neutral future
 commitment was **0.570** — above the pre-registered Delta_min = 0.20 and consistent
 across both volatility levels (d_ctrl = 0.627 high, 0.513 low). We report two
-intervals for this estimate, with identical conclusions. The **frozen pre-registered
-pooled bootstrap** (unit = seed × volatility, 80 values; provenance) gives 90% CI
+intervals for this estimate, with identical conclusions. The **frozen pre-holdout pooled analysis** (unit = seed × volatility, 80 values;
+provenance) gives 90% CI
 **[0.559, 0.581]**. The **post-audit seed-clustered bootstrap** — averaging the two
 volatility cells within each seed and resampling the 40 seeds (10,000 resamples), the
 audit-preferred inferential summary — gives 90% CI **[0.566, 0.574]** (tighter
@@ -671,7 +672,7 @@ on post-hoc ablations inside an architecture that already fixes the answer.
 **Bootstrap units.** The tiny-MDP holdout resamples seeds (50 units; 10,000
 paired resamples), and is the paper's confirmatory statistic. The Phase 2c
 holdout pooled seed × volatility cells (80 values, two per seed), which
-overstates the effective sample; Phase 2c is accordingly positioned as mechanism
+treats the within-seed volatility cells as separate resampling units; Phase 2c is accordingly positioned as mechanism
 feasibility, its statistics are not re-used for confirmation, and the unit is
 disclosed as a known limitation (Section 6).
 
@@ -813,9 +814,9 @@ demonstrated to be buildable, not discovered in any target system. The same
 holds for the double-well system, where the plasticity channel z was likewise
 defined into the dynamics.
 
-**3. Phase 2c's pre-registered bootstrap unit overstates its effective sample.**
+**3. Phase 2c's frozen pre-holdout analysis treats within-seed volatility cells as separate resampling units.**
 The frozen Phase 2c holdout pooled seed × volatility cells (80 values from 40 seeds)
-rather than resampling seeds. We retain that pre-registered interval as provenance
+rather than resampling seeds. We retain that frozen pre-holdout interval as provenance
 and additionally report a post-audit seed-clustered bootstrap (average the two
 volatility cells per seed, then resample the 40 seeds) as the preferred inferential
 summary; the two agree in direction and conclusion (Results 3.3), and the frozen GO

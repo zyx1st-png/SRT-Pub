@@ -93,7 +93,7 @@ on post-hoc ablations inside an architecture that already fixes the answer.
 **Bootstrap units.** The tiny-MDP holdout resamples seeds (50 units; 10,000
 paired resamples), and is the paper's confirmatory statistic. The Phase 2c
 holdout pooled seed × volatility cells (80 values, two per seed), which
-overstates the effective sample; Phase 2c is accordingly positioned as mechanism
+treats the within-seed volatility cells as separate resampling units; Phase 2c is accordingly positioned as mechanism
 feasibility, its statistics are not re-used for confirmation, and the unit is
 disclosed as a known limitation (Section 10).
 
