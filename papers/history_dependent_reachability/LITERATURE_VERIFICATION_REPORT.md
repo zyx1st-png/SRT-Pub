@@ -204,3 +204,104 @@ precedent found in Rounds 1–2. STOP rule: **not triggered.**
 Updated REFERENCE_LEDGER (Round-2 rows VERIFIED), NOVELTY_AUDIT (N4 demarcation
 strengthened, five-layer map), candidate_bibliography.bib (4 new VERIFIED entries).
 MANUSCRIPT unchanged; PR #675 Draft.
+
+---
+
+# Round 3 (bounded: measure breadth, perseveration, methodology, self-cite status) — 2026-07-17
+
+Scope-limited per instruction; citation set deliberately kept small. All "no precedent"
+statements are phrased **"no close protocol-level precedent was identified in our
+search"** (search result, not exclusionary proof).
+
+## Group 1 — measure breadth + the "info-as-memory-write-gate" STOP check
+
+- **Causal Action Influence (CAI)** — Seitzer, Schölkopf, Martius (2021), *NeurIPS 2021*,
+  arXiv:2106.03443. VERIFIED. Read: a situation-dependent **per-state conditional mutual
+  information** of the agent's action on the next state, I(A;S′|s), used as an intrinsic
+  signal to improve exploration/off-policy learning. **This is the closest measure
+  neighbor to C_μ** (both are per-state action→outcome conditional MI). **Layers:
+  MEASURE + MECHANISM-as-signal.** Difference: CAI modulates **exploration/action**;
+  ours gates **memory consolidation** and does not drive action; CAI uses the transition
+  dynamics, ours a fixed reference μ. Consequence: the measure **and** the
+  "use-as-a-learning-signal" mechanism are both precedented → N3 residual novelty is
+  further tightened (see below).
+- **Directed information** — Massey (1990), *Proc. ISITA-90*, pp. 303–305 (no DOI);
+  precursor Marko (1973, directed transinformation). VERIFIED (venue). Read: directed
+  information = the feedback-aware action→outcome information; upper bound on feedback
+  capacity. **Layer: MEASURE (background completeness).**
+- **Recall-gated plasticity** — Lindsey & Litwin-Kumar (2024), *eLife* 12:RP90793, DOI
+  10.7554/eLife.90793. VERIFIED. Read: synaptic updates are consolidated into long-term
+  memory **gated** by consistency with existing (recalled) memory. **Layer: MECHANISM
+  (gated consolidation).** Establishes that *gated long-term consolidation* is not novel;
+  the **gate signal differs** (recall-consistency vs action-attributable controllability).
+- **Controllability→consolidation (neuroscience, background):** evidence that behavioral
+  controllability modulates what is consolidated (escapable vs inescapable outcomes;
+  learned-helplessness lineage — see Group 3, Seligman & Maier). This is exactly the kind
+  of natural-system phenomenon our framework provides an *identification test* for; it is
+  **supportive context, not a defeater** (our claims are designed-model only). Cite as
+  motivation, not as precedent for the framework.
+- **Candidate (NEEDS-CONFIRM):** Lizier & Prokopenko (local/pointwise transfer entropy).
+
+## Group 2 — perseveration / habit (N5 framing)
+
+- **Daw, Niv, Dayan (2005)**, *Nat. Neurosci.* 8(12):1704–1711, DOI 10.1038/nn1560.
+  VERIFIED. Read: uncertainty-based arbitration between model-free (habitual, inflexible)
+  and model-based (goal-directed, flexible) control. **Layer: ENDPOINT/background.**
+  Grounds the "stickiness / perseverative cost" as a known behavioral phenomenon (habit
+  inflexibility). **Effect on N5:** the aligned-advantage-plus-change-cost pattern is a
+  **within-model joint directional prediction consistent with known perseveration**, not
+  a new behavioral discovery. N5 stays LOW–MEDIUM.
+- **Candidates (NEEDS-CONFIRM):** Dickinson (1985) actions vs habits; set-shifting /
+  cognitive-flexibility (WCST perseveration).
+
+## Group 3 — methodology primary sources
+
+- **Equivalence testing (TOST):** Lakens (2017), *Soc. Psychol. Personal. Sci.*
+  8(4):355–362, DOI 10.1177/1948550617697177 (accessible primer). VERIFIED. Original:
+  Schuirmann (1987), *J. Pharmacokinet. Biopharm.* (candidate DOI NEEDS-CONFIRM). Supports
+  the pre-registered ±ε equivalence bounds.
+- **Committor / transition-path theory:** E & Vanden-Eijnden (2010), *Annu. Rev. Phys.
+  Chem.* 61:391–420. VERIFIED (venue); DOI NEEDS-CONFIRM. Supports the committor W_sel
+  functional.
+- **Canonical primaries (well-known; DOIs NEEDS-CONFIRM, not fetched this round; no DOI
+  guessed):** master-yoked / learned helplessness — Seligman & Maier (1967), *J. Exp.
+  Psychol.*; bootstrap — Efron (1979), *Ann. Statist.* 7(1):1–26; Kramers escape rate —
+  Kramers (1940), *Physica* 7:284; Euler–Maruyama — Kloeden & Platen (1992), *Numerical
+  Solution of Stochastic Differential Equations* (Springer).
+
+## Group 4 — self-citation status (repo records; live status = author to confirm)
+
+Verified against **repository records** only (external submission portals not accessible):
+
+- **Ontological friction (Ψ_f):** Frontiers **manuscript ID 1837760**, in a **revision
+  round** (repo contains `frontiers_response_to_reviewers.md` and a revision-round
+  submission checklist). Honest status: **"in revision at Frontiers (ms 1837760)."** Do
+  not write "in press" or "published." Author to confirm current live decision.
+- **Costly Selective Closure (CSC):** repo shows **v16** following an **ALIFE-2026
+  rejection**, targeting **Adaptive Behavior** (per project records/memory). No confirmed
+  Adaptive Behavior submission record in the repo. Honest status: **"revised (v16) after
+  ALIFE-2026 rejection; targeting Adaptive Behavior; submission status to be confirmed."**
+  Do not upgrade to "submitted/under review at Adaptive Behavior" without author
+  confirmation.
+
+## Updated N3 residual (after Round 3)
+
+The information **quantity** (CAI, empowerment, transfer entropy, directed information,
+Ay–Polani) and its **use as a learning signal** (CAI, VIC, Mohamed–Rezende) are both
+established; **gated long-term consolidation** is established (recall-gated plasticity);
+**controllability-modulated consolidation** is a known neuroscience idea. **Residual N3
+novelty is therefore only the specific combination:** an action-attributable-information
+score used as a *path-memory consolidation gate*, isolated by *yoked + sham
+selection-specificity*, with a *matched-present directional-reachability* endpoint, as a
+**designed-model identification framework**. The measure and the generic
+mechanism-as-signal carry **zero** novelty weight.
+
+## STOP determination (Round 3)
+**No close protocol-level precedent was identified in our search** for the full
+identification protocol (matched present + only-slow-memory + yoked/sham + reachability
+distribution with a controllability memory-gate). STOP **not** triggered.
+
+## Deliverables (Round 3)
+Updated REFERENCE_LEDGER (Round-3 VERIFIED rows + self-cite status), NOVELTY_AUDIT (N3
+residual tightened; N5 grounded), candidate_bibliography.bib (verified additions).
+MANUSCRIPT unchanged; PR #675 Draft. Citation set kept bounded (not a review).

@@ -65,10 +65,18 @@ knowledge."
   empowerment" (which is the capacity) and NOT a claimed exact-measure precedent. No complete precedent exists (none gates a *path memory* rather than action,
   none runs a yoked/sham selection-specificity test, none reads out directional
   behavioral reachability under a matched present).
-- **Residual novelty (restated, narrowed):** **only** (a) the *consolidation-gating*
-  role of the signal (it gates memory, not action) + (b) the *yoked/sham
-  selection-specificity identification* + (c) the *directional reachability endpoint*.
-  The measure carries **zero** novelty weight.
+- **Round 3 further tightening:** the "use as a *learning signal*" is ALSO precedented —
+  Causal Action Influence (Seitzer et al. 2021, arXiv:2106.03443) is essentially the same
+  per-state action→outcome conditional MI used as an intrinsic signal (for exploration);
+  and **gated long-term consolidation** is precedented (recall-gated plasticity, Lindsey &
+  Litwin-Kumar 2024, DOI 10.7554/eLife.90793), as is the neuroscience idea that
+  controllability modulates consolidation. So the measure AND the generic mechanism-as-
+  signal AND gated-consolidation each carry **zero** novelty weight.
+- **Residual novelty (restated, narrowest):** **only the specific combination** — an
+  action-attributable-information score used as a *path-memory consolidation gate* (not an
+  exploration/action signal), isolated by *yoked + sham selection-specificity*, with a
+  *matched-present directional-reachability* endpoint, as a **designed-model identification
+  framework**. No close protocol-level precedent was identified in our search.
 - **Required action (mandatory before any strengthening):** cite empowerment +
   transfer entropy + variational empowerment at the definition of r_t; state
   explicitly "not a novel measure"; keep "to our knowledge" only for the *packaging*
@@ -110,9 +118,11 @@ knowledge."
   memory that yields the aligned advantage, under matched present.
 - **Residual novelty:** the joint advantage+cost signature as a discriminating
   prediction of the write-back account within this identification design.
-- **Risk / defense:** LOW–MEDIUM. Defense = frame as a *within-model* directional
-  prediction consistent with known perseveration phenomena, not as a new behavioral
-  discovery.
+- **Risk / defense:** LOW–MEDIUM. **VERIFIED (Round 3):** habit/goal-directed arbitration
+  (Daw, Niv, Dayan 2005, DOI 10.1038/nn1560) is the background home for perseverative
+  (habitual, inflexible) cost. Defense = frame the aligned-advantage-plus-change-cost as a
+  *within-model joint directional prediction consistent with known perseveration*, not a
+  new behavioral discovery.
 
 ## N6 — Self-demarcation (own prior work)
 
@@ -129,7 +139,7 @@ knowledge."
 |---|---|---|---|
 | N1 | counterfactual W_sel + 4-cell dissociation | LOW–MED | verify R-01/R-06; keep "instrument" framing |
 | N2 | pre-registered negative (yoked) result | LOW | verify R-03/R-09; keep as falsification |
-| N3 | info-measure as *gate* + selection-specificity | **MED–HIGH → resolved** | **VERIFIED: measure not novel (empowerment/transfer-entropy/variational-empowerment).** Cite them; scope novelty to gating+yoked/sham+endpoint only. No complete precedent. |
+| N3 | info-measure as *gate* + selection-specificity | **MED–HIGH → resolved (tightened R3)** | **VERIFIED: measure not novel (CAI is the direct neighbor; empowerment/TE/VIC); mechanism-as-signal not novel (CAI/VIC); gated consolidation not novel (recall-gated plasticity).** Residual = the *combination* (path-memory gate + yoked/sham + reachability endpoint). Cite; no complete precedent found. |
 | N4 | matched-present only-m identification | **MED-HIGH (R2)** | **Perceptual aliasing (Whitehead & Ballard 1991) is the close conceptual neighbor — cite + demarcate (agent-inference vs experimenter-identification).** SR = future-occupancy background. No complete protocol precedent (R1–R2). |
 | N5 | joint advantage+cost signature | LOW–MED | verify R-05; within-model framing |
 | N6 | demarcation from CSC / Ψ_f | MED | verify R-14/R-15 status; keep §5.2 demarcation |
