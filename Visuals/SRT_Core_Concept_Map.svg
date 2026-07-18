@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">SRT 核心机制图</title>
+<desc id="desc">开放潜在域经过选择算子形成现实切片，历史锁存为收敛结构并反馈重塑下一轮景观；图中同时展示 d-value、Psi_f、遮蔽、未来再选择空间与本体论时间。</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#F8FAFF"/><stop offset="1" stop-color="#EEF2F8"/>
+  </linearGradient>
+  <radialGradient id="potential" cx="45%" cy="45%" r="60%">
+    <stop offset="0" stop-color="#DDF8FA" stop-opacity=".95"/><stop offset=".55" stop-color="#DCE7FF" stop-opacity=".75"/><stop offset="1" stop-color="#CBBEFF" stop-opacity=".12"/>
+  </radialGradient>
+  <linearGradient id="manifest" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#10BFC7"/><stop offset="1" stop-color="#5377F2"/>
+  </linearGradient>
+  <linearGradient id="history" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#6657D9"/><stop offset="1" stop-color="#8F5FD7"/>
+  </linearGradient>
+  <linearGradient id="futureGood" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0BBF9A"/><stop offset="1" stop-color="#10BFC7"/>
+  </linearGradient>
+  <linearGradient id="futureBad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#D77B75"/><stop offset="1" stop-color="#9D6675"/>
+  </linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#14213D" flood-opacity=".12"/>
+  </filter>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 z" fill="#31415F"/>
+  </marker>
+  <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 z" fill="#0D9FA9"/>
+  </marker>
+  <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 z" fill="#6A58CF"/>
+  </marker>
+  <style>
+    .title{font:400 38px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;fill:#15213A;letter-spacing:.5px}
+    .subtitle{font:500 16px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;fill:#65718A;letter-spacing:1.8px}
+    .section{font:400 24px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;fill:#17233B}
+    .label{font:400 19px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;fill:#1E2A43}
+    .small{font:500 14px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;fill:#53617A}
+    .tiny{font:500 12px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif;fill:#68758B}
+    .math{font:700 18px 'STIX Two Math','Times New Roman',serif;fill:#25324D}
+    .white{fill:white}
+  </style>
+</defs>
+
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<path d="M0 118 H1600" stroke="#DDE3ED" stroke-width="1"/>
+<text x="76" y="64" class="title">SRT 核心机制图</text>
+<text x="78" y="94" class="subtitle">SELECTIVE REALITY THEORY · FROM OPEN POSSIBILITY TO RE-SELECTABLE ORDER</text>
+<g transform="translate(1220,43)">
+  <rect width="300" height="48" rx="24" fill="#FFFFFF" stroke="#DCE3EE"/>
+  <circle cx="24" cy="24" r="6" fill="#0BBF9A"/><text x="40" y="29" class="small">选择不是发生在存在之中，而是产生稳定存在</text>
+</g>
+
+<g id="feedback-layer">
+  <path d="M1292 300 C1120 126, 485 132, 268 300" fill="none" stroke="#6657D9" stroke-width="6" stroke-linecap="round" marker-end="url(#arrowPurple)" opacity=".9"/>
+  <path d="M1288 314 C1110 165, 510 166, 286 314" fill="none" stroke="#B5A9EE" stroke-width="2" stroke-dasharray="7 10"/>
+  <rect x="640" y="145" width="345" height="54" rx="27" fill="#FFFFFF" stroke="#CFC7F4" filter="url(#shadow)"/>
+  <text x="812" y="168" text-anchor="middle" class="label">历史写回</text>
+  <text x="812" y="189" text-anchor="middle" class="small">重塑 kappa(t)、可及性与下一轮选择条件</text>
+</g>
+
+<g id="potential-layer" transform="translate(80,245)">
+  <ellipse cx="205" cy="250" rx="180" ry="205" fill="url(#potential)" stroke="#8E9CE0" stroke-width="2" stroke-dasharray="8 9"/>
+  <ellipse cx="205" cy="250" rx="128" ry="150" fill="none" stroke="#8ECFD4" stroke-width="1.5" opacity=".65"/>
+  <path d="M86 310 C130 270 150 205 205 250 C250 288 275 190 330 160" fill="none" stroke="#6D7CCB" stroke-width="2.2" opacity=".55"/>
+  <path d="M72 208 C124 235 145 155 202 190 C245 215 276 120 338 126" fill="none" stroke="#1AAAB5" stroke-width="2" opacity=".48"/>
+  <path d="M92 365 C145 350 174 400 214 347 C260 287 286 360 333 327" fill="none" stroke="#8E63D8" stroke-width="2" opacity=".42"/>
+  <g fill="#FFFFFF" stroke="#7387CD" stroke-width="1.5">
+    <circle cx="86" cy="310" r="8"/><circle cx="130" cy="270" r="7"/><circle cx="150" cy="205" r="8"/><circle cx="205" cy="250" r="11"/>
+    <circle cx="250" cy="288" r="8"/><circle cx="275" cy="190" r="7"/><circle cx="330" cy="160" r="9"/>
+    <circle cx="72" cy="208" r="7"/><circle cx="124" cy="235" r="6"/><circle cx="202" cy="190" r="8"/><circle cx="245" cy="215" r="6"/><circle cx="276" cy="120" r="8"/><circle cx="338" cy="126" r="6"/>
+    <circle cx="92" cy="365" r="7"/><circle cx="174" cy="400" r="8"/><circle cx="214" cy="347" r="7"/><circle cx="286" cy="360" r="9"/><circle cx="333" cy="327" r="7"/>
+  </g>
+  <g fill="#4F66C8" opacity=".48">
+    <circle cx="136" cy="132" r="4"/><circle cx="178" cy="104" r="5"/><circle cx="229" cy="126" r="4"/><circle cx="306" cy="240" r="5"/>
+    <circle cx="118" cy="420" r="4"/><circle cx="250" cy="429" r="5"/><circle cx="354" cy="250" r="4"/><circle cx="53" cy="271" r="5"/>
+  </g>
+  <text x="205" y="237" text-anchor="middle" class="section">L0</text>
+  <text x="205" y="266" text-anchor="middle" class="label">潜在域</text>
+  <text x="205" y="292" text-anchor="middle" class="small">开放 · 未分化 · 可选择</text>
+  <g transform="translate(53,40)">
+    <path d="M0 60 C42 52 58 31 91 15" fill="none" stroke="#0D9FA9" stroke-width="4" marker-end="url(#arrowTeal)"/>
+    <text x="0" y="15" class="math">epsilon_pg &gt; 0</text><text x="0" y="36" class="tiny">对自我封闭的最小非中性</text>
+  </g>
+</g>
+
+<path d="M438 493 H535" fill="none" stroke="#31415F" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="485" y="474" text-anchor="middle" class="small">确定化候选</text>
+
+<g id="operator-layer" transform="translate(535,278)">
+  <rect x="0" y="0" width="260" height="430" rx="42" fill="#FFFFFF" stroke="#D5DDE9" filter="url(#shadow)"/>
+  <text x="130" y="42" text-anchor="middle" class="section">G<tspan baseline-shift="sub" font-size="14">θ</tspan></text>
+  <text x="130" y="70" text-anchor="middle" class="small">参数化选择算子</text>
+  <path d="M48 117 C112 154 112 276 48 313" fill="none" stroke="#32425F" stroke-width="9" stroke-linecap="round"/>
+  <path d="M212 117 C148 154 148 276 212 313" fill="none" stroke="#32425F" stroke-width="9" stroke-linecap="round"/>
+  <path d="M69 132 C121 163 121 267 69 298" fill="none" stroke="#10BFC7" stroke-width="3" opacity=".65"/>
+  <path d="M191 132 C139 163 139 267 191 298" fill="none" stroke="#5377F2" stroke-width="3" opacity=".65"/>
+  <circle cx="130" cy="215" r="38" fill="#F0FBFC" stroke="#10BFC7" stroke-width="3" filter="url(#glow)"/>
+  <path d="M105 215 H155" stroke="#0D9FA9" stroke-width="4" marker-end="url(#arrowTeal)"/>
+  <text x="130" y="222" text-anchor="middle" class="math">S</text>
+  <path d="M84 95 H176" stroke="#0D9FA9" stroke-width="2.5" marker-start="url(#arrowTeal)" marker-end="url(#arrowTeal)"/>
+  <text x="130" y="88" text-anchor="middle" class="math">d</text>
+  <text x="130" y="337" text-anchor="middle" class="small">关切带宽：纳入哪些差异</text>
+  <g transform="translate(45,356)">
+    <text x="85" y="13" text-anchor="middle" class="math">Psi_f</text>
+    <rect x="0" y="26" width="170" height="10" rx="5" fill="#E8EDF5"/><rect x="17" y="46" width="136" height="10" rx="5" fill="#D9E1EF"/><rect x="35" y="66" width="100" height="10" rx="5" fill="#C7D2E5"/>
+    <text x="85" y="98" text-anchor="middle" class="tiny">把开放可能性压成现实的可支付阻抗</text>
+  </g>
+</g>
+
+<path d="M795 493 H885" fill="none" stroke="#31415F" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="840" y="474" text-anchor="middle" class="small">选择 / 锚定</text>
+
+<g id="manifest-layer" transform="translate(875,315)">
+  <polygon points="70,25 235,68 256,218 145,330 12,262 8,105" fill="#FFFFFF" stroke="#C4D0E3" stroke-width="2" filter="url(#shadow)"/>
+  <polygon points="83,57 210,90 226,202 140,287 40,235 35,122" fill="url(#manifest)" opacity=".93"/>
+  <polygon points="111,102 183,122 192,187 139,241 82,211 77,145" fill="#FFFFFF" opacity=".92"/>
+  <circle cx="138" cy="172" r="29" fill="#10BFC7" opacity=".18"/>
+  <circle cx="138" cy="172" r="12" fill="#FFFFFF"/>
+  <path d="M67 104 L199 236 M57 226 L211 102" stroke="#FFFFFF" stroke-width="1.3" opacity=".45"/>
+  <text x="135" y="378" text-anchor="middle" class="section">L1 现实切片</text>
+  <text x="135" y="405" text-anchor="middle" class="small">可维持 · 可行动 · 可协调</text>
+</g>
+
+<path d="M1145 493 H1210" fill="none" stroke="#31415F" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="1177" y="474" text-anchor="middle" class="small">保留 / 锁存</text>
+
+<g id="history-layer" transform="translate(1185,245)">
+  <circle cx="175" cy="198" r="160" fill="#FFFFFF" stroke="#D6DCE8" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="175" cy="198" r="127" fill="none" stroke="#BEB5E9" stroke-width="20" opacity=".65"/>
+  <circle cx="175" cy="198" r="92" fill="none" stroke="#7D68D8" stroke-width="17" opacity=".82"/>
+  <circle cx="175" cy="198" r="57" fill="url(#history)"/>
+  <g stroke="#FFFFFF" stroke-width="2" opacity=".85">
+    <path d="M175 141 L133 174 L153 229 L205 238 L224 188 Z" fill="none"/>
+    <path d="M133 174 L103 132 M205 238 L246 265 M224 188 L263 151 M153 229 L115 269"/>
+  </g>
+  <g fill="#FFFFFF">
+    <circle cx="175" cy="141" r="6"/><circle cx="133" cy="174" r="6"/><circle cx="153" cy="229" r="6"/><circle cx="205" cy="238" r="6"/><circle cx="224" cy="188" r="6"/>
+  </g>
+  <text x="175" y="191" text-anchor="middle" class="white" style="font:400 23px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif">L2</text>
+  <text x="175" y="218" text-anchor="middle" class="white" style="font:400 16px 'Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif">历史锁存</text>
+  <text x="175" y="393" text-anchor="middle" class="section">收敛域</text>
+  <text x="175" y="420" text-anchor="middle" class="small">习惯 · 规则 · 语言 · 制度 · 代理</text>
+</g>
+
+<g id="occlusion-layer">
+  <path d="M1322 405 C1190 345 1062 347 925 401 L930 526 C1065 492 1189 505 1317 562 Z" fill="#2A3150" opacity=".13"/>
+  <path d="M1304 408 C1182 368 1065 374 948 414" fill="none" stroke="#37415E" stroke-width="2.5" stroke-dasharray="8 8" opacity=".7"/>
+  <rect x="1010" y="335" width="286" height="50" rx="25" fill="#FFFFFF" stroke="#CAD2E0"/>
+  <text x="1153" y="356" text-anchor="middle" class="label">遮蔽</text>
+  <text x="1153" y="376" text-anchor="middle" class="tiny">局部最优 / L2 自洽替代上行校准</text>
+</g>
+
+<g id="future-layer" transform="translate(1060,690)">
+  <text x="205" y="10" text-anchor="middle" class="section">闭包之后，未来发生什么？</text>
+  <path d="M205 45 C165 73 118 91 70 112" fill="none" stroke="#0BAF97" stroke-width="5" marker-end="url(#arrowTeal)"/>
+  <path d="M205 45 C250 73 296 91 340 112" fill="none" stroke="#9D6675" stroke-width="5" marker-end="url(#arrow)"/>
+  <g transform="translate(0,75)">
+    <circle cx="68" cy="43" r="42" fill="url(#futureGood)" opacity=".12" stroke="#0BAF97" stroke-width="2"/>
+    <circle cx="68" cy="43" r="27" fill="none" stroke="#0BAF97" stroke-width="2"/>
+    <path d="M68 60 V26 M51 43 H85" stroke="#0BAF97" stroke-width="4" stroke-linecap="round"/>
+    <text x="68" y="108" text-anchor="middle" class="math">Delta R_future &gt; 0</text>
+    <text x="68" y="130" text-anchor="middle" class="small">未来再选择空间扩张</text>
+  </g>
+  <g transform="translate(272,75)">
+    <circle cx="68" cy="43" r="42" fill="url(#futureBad)" opacity=".12" stroke="#9D6675" stroke-width="2"/>
+    <rect x="48" y="28" width="40" height="32" rx="7" fill="none" stroke="#9D6675" stroke-width="3"/>
+    <path d="M56 28 V20 C56 4 80 4 80 20 V28" fill="none" stroke="#9D6675" stroke-width="3"/>
+    <text x="68" y="108" text-anchor="middle" class="math">Delta R_future ≤ 0</text>
+    <text x="68" y="130" text-anchor="middle" class="small">封闭、劫持或路径固化</text>
+  </g>
+  <g transform="translate(-115,222)">
+    <rect width="640" height="54" rx="27" fill="#FFFFFF" stroke="#D6DEE9"/>
+    <g transform="translate(18,10)">
+      <rect width="135" height="34" rx="17" fill="#E8FAF6"/><text x="67" y="23" text-anchor="middle" class="small">可延续</text>
+      <rect x="151" width="135" height="34" rx="17" fill="#EAF8FA"/><text x="218" y="23" text-anchor="middle" class="small">可协调</text>
+      <rect x="302" width="135" height="34" rx="17" fill="#EEF0FC"/><text x="369" y="23" text-anchor="middle" class="small">不外包</text>
+      <rect x="453" width="169" height="34" rx="17" fill="#F1ECFC"/><text x="537" y="23" text-anchor="middle" class="small">可再选择</text>
+    </g>
+  </g>
+</g>
+
+<g id="time-layer" transform="translate(70,840)">
+  <text x="0" y="0" class="section">不可撤回的累积生成时间</text>
+  <path d="M0 58 H880" stroke="#31415F" stroke-width="4" marker-end="url(#arrow)"/>
+  <g transform="translate(45,58)"><circle r="9" fill="#10BFC7"/><text x="0" y="34" text-anchor="middle" class="small">确定化</text></g>
+  <g transform="translate(205,58)"><circle r="9" fill="#3E91E5"/><text x="0" y="34" text-anchor="middle" class="small">信息产生</text></g>
+  <g transform="translate(365,58)"><circle r="9" fill="#6170D7"/><text x="0" y="34" text-anchor="middle" class="small">景观改变</text></g>
+  <g transform="translate(525,58)"><circle r="9" fill="#7C61D4"/><text x="0" y="34" text-anchor="middle" class="small">不可撤回</text></g>
+  <g transform="translate(685,58)"><circle r="9" fill="#8F5FD7"/><text x="0" y="34" text-anchor="middle" class="small">时间序</text></g>
+  <text x="880" y="-16" text-anchor="end" class="math">t_onto = integral |G(theta)(s)| ds</text>
+  <text x="880" y="35" text-anchor="end" class="tiny">时间不是背景容器，而是选择历史的派生度量</text>
+</g>
+
+<text x="78" y="977" class="tiny">Selective Reality Theory · canonical concepts visual synthesis · 2026-07</text>
+</svg>
