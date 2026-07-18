@@ -1,0 +1,6 @@
+interface:
+  display_name: "Stop Slop"
+  short_description: "终审填充语、公式化结构、假戏剧与机械节奏"
+  default_prompt: "Use $stop-slop to perform a final audit for predictable AI writing patterns in this prose."
+policy:
+  allow_implicit_invocation: true
