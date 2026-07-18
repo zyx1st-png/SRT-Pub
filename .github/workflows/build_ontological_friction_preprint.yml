@@ -11,6 +11,15 @@ on:
       - "papers/ontological_friction/render_preprint_pdf.py"
       - "papers/ontological_friction/figures/**"
       - ".github/workflows/build_ontological_friction_preprint.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "papers/ontological_friction/paper_ontological_friction.md"
+      - "papers/ontological_friction/make_preprint_variant.py"
+      - "papers/ontological_friction/render_preprint_pdf.py"
+      - "papers/ontological_friction/figures/**"
+      - ".github/workflows/build_ontological_friction_preprint.yml"
 
 permissions:
   contents: write
@@ -51,6 +60,7 @@ jobs:
           if-no-files-found: error
 
       - name: Commit generated preprint files
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
