@@ -20,7 +20,11 @@ video/out/
 # Obsidian per-machine state
 .obsidian/workspace.json
 **/.obsidian/workspace.json
-.agents/
+.agents/*
+!.agents/skills/
+!.agents/skills/**
+**/__pycache__/
+*.pyc
 .claude/worktrees/
 .openclaw/
 Operations/Hermes_Agents_Config_2026-05-16.md
