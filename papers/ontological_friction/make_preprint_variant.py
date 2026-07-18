@@ -21,7 +21,11 @@ text = replace_once(
     "**Target journal**: Frontiers in Neuroscience  \n",
     "**Manuscript status**: Preprint; not a peer-reviewed version of record  \n"
     "**Article type**: Theoretical Article  \n"
-    "**Version**: 1.0 (19 July 2026)  \n",
+    "**Version**: 1.0 (19 July 2026)  \n"
+    "**Author**: Yuxin Zhang  \n"
+    "**Affiliation**: Independent Researcher, Kaili, Guizhou, China  \n"
+    "**Correspondence**: zyx1st@gmail.com  \n"
+    "**ORCID**: https://orcid.org/0009-0007-6659-8518  \n",
     "journal-specific front matter",
 )
 
