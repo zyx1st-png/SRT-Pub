@@ -31,8 +31,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 | `AGENTS.md` | 运行协议主入口 |
 | `CLAUDE.md` | Claude 兼容包装层 |
 | `SRT_AI_START.md` | AI 最小首读入口 |
-| `STATUS.md` | 当前状态面板；full dashboard，fast bootstrap 用 `STATUS_FAST.md` |
-| `STATUS_FAST.md` | 快速状态入口；fresh-session compact status，不替代 `STATUS.md` |
+| `STATUS.md` | 当前状态面板；§Fast Status 兼任 fresh-session compact 入口（原 `STATUS_FAST.md` 已并入，2026-07-20） |
 | `SRT_Navigation_Map.md` | 人类阅读地图 |
 | `_SRT_INDEX.md` | 机器索引 |
 | `_SRT_SYMBOL_TABLE.md` | 符号规范锚点；full definition registry |
@@ -254,7 +253,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - 2026 changelog split index → `Governance/_SRT_CHANGELOG_2026_Split/README.md`
 - material log split index → `Operations/Material_Log/README.md`
 - status history split index → `Operations/Status_History/README.md`
-- current status split index → `STATUS_Split/README.md`
+- historical status → `Operations/Status_History/README.md`
 - large-file connector audit → `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`
 - AI split / annex pre-audit → `Operations/Archive_Records/AI_Split_Annex_PreAudit_2026-04-29.md`
 - operations closure index → `Operations/Archive_Records/Closure_Index_2026-04-29.md`
@@ -288,7 +287,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `Operations/_SRT_DEEP_NAV_TODO.md` 是持续维护计划，不是理论主文
 - `AI/README.md` 是 AI 目录入口，不定义 AI 意识、d-value 或 `Psi_f`
 - `AI/SRT_AI_Claim_Status.md` 是 AI 领域 claim-status 审计与 guardrail；它不替代 `_SRT_AI_Bridge.md` 或 canonical anchors，但用于防止整类 AI claim 被过度读成 P0/P1 定义
-- `AI/*_Split/`、`AI/Ontology_Annex/*_Split/`、`Core/*_Split/`、`Core_Law/*_Split/`、`Philosophy/*_Split/`、`Neuroscience/*_Split/`、`Physics/*_Split/`、`STATUS_Split/` 是 longform reading aids，不新增权威层；总表见 `LONGFORM_SPLITS.md`
+- `AI/*_Split/`、`AI/Ontology_Annex/*_Split/`、`Core/*_Split/`、`Core_Law/*_Split/`、`Philosophy/*_Split/`、`Neuroscience/*_Split/`、`Physics/*_Split/` 是 longform reading aids，不新增权威层；总表见 `LONGFORM_SPLITS.md`
 - `AI/Ontology_Annex/` 与未来可能的 `AI_Annex/` 是 interface / comparison 层，默认 `canonical: false`
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md` 是 Neuroscience 文件夹级 proxy/clinical guardrail；它不替代 canonical anchors，但必须在 public / clinical / FEP / NDE / AI-comparison 使用前读取
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md` 是 `_SRT_Neuro_Axioms.md` 的 claim-status 审计与 guardrail；它不替代 axiom file，但用于防止整文件 canonical 误读

@@ -71,9 +71,7 @@ updated: 2026-06-05
 - `AGENTS.md`
 - `CLAUDE.md`
 - `SRT_AI_START.md`
-- `STATUS_FAST.md`
 - `STATUS.md`
-- `STATUS_Split/README.md`
 - `_SRT_INDEX.md`
 - `_SRT_AGENT_RETRIEVAL_PROFILE.md`
 - `_SRT_SYMBOL_QUICK_GUARD.md`

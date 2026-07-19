@@ -72,7 +72,6 @@ Active execution plan 只负责施工范围、顺序、门控与验收，不定�
 3. `Archive_Records/Large_File_Audit_2026-05-09.md`
 4. `Material_Log/README.md`
 5. `Status_History/README.md`
-6. `../STATUS_Split/README.md`
 
 ### Automation / preflight
 
