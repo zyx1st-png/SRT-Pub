@@ -59,7 +59,7 @@ dependency: [SRT-CORE-000, SRT-NEURO-AXIOMS-001, Core_Law/SRT_Reference_Axioms, 
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`](SRT_Neural_Mechanisms_CompactCore.md) — compact navigation entry
 - [`Neuroscience/SRT_Neuro_Predictions_Table.md`](SRT_Neuro_Predictions_Table.md) — empirical prediction register
 - [`Neuroscience/SRT_Consciousness_Mechanisms.md`](SRT_Consciousness_Mechanisms.md) — consciousness mechanisms owner file

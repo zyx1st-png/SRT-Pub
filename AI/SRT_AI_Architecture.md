@@ -45,7 +45,7 @@ dependency: [SRT-AI-01]
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/SRT_AI_Architecture_CompactCore.md`](SRT_AI_Architecture_CompactCore.md) — compact navigation entry
 - [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) — upstream AI ontology
 

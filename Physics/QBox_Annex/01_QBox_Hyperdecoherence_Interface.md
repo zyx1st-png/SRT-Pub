@@ -13,7 +13,7 @@ dependency:
   - Physics/README.md
   - Physics/SRT_Physics_Claim_Status.md
   - Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md
-  - Operations/Physics_P2a_QBox_Interface_Adjudication.md
+  - Operations/Archive_Records/Physics_P2a_QBox_Interface_Adjudication.md
 machine_summary: >
   QBox / hyperdecoherence interface annex. Contains source anchors, external concept overview,
   proxy mapping table, hidden-classical-substrate guardrail, layered analogy, research questions,
@@ -22,7 +22,7 @@ machine_summary: >
 
 # QBox / Hyperdecoherence Interface
 
-> **Extraction note**: This file contains low-risk external-interface material copied from `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md` under the boundaries fixed by `Operations/Physics_P2a_QBox_Interface_Adjudication.md`.
+> **Extraction note**: This file contains low-risk external-interface material copied from `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md` under the boundaries fixed by `Operations/Archive_Records/Physics_P2a_QBox_Interface_Adjudication.md`.
 >
 > **Boundary**: QBox does not prove SRT. L0 is not literally QBox. Hyperdecoherence is used as a structural analogy for access-limited effective layering unless independently established as physical reality.
 

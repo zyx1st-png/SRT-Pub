@@ -46,7 +46,7 @@ dependency:
   - papers/SRT_D_Value_Ontology_of_Concern_Outline.md
   - papers/SRT_NonReductive_Verification_Outline.md
   - Philosophy/Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md
-  - Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
+  - Operations/Archive_Records/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 machine_summary: >
   Root-level next optimization TODO for SRT after the PH-SS philosophy hardening pass.
   Main optimization chain is complete enough for review, and the experiment branch now has a complete
@@ -159,7 +159,7 @@ Proceed from files to implementation:
 Main checkpoint file:
 
 ```text
-Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
+Operations/Archive_Records/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
 ```
 
 Experiment branch files:

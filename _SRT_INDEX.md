@@ -255,10 +255,10 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - material log split index → `Operations/Material_Log/README.md`
 - status history split index → `Operations/Status_History/README.md`
 - current status split index → `STATUS_Split/README.md`
-- large-file connector audit → `Operations/Large_File_Audit_2026-05-09.md`
-- AI split / annex pre-audit → `Operations/AI_Split_Annex_PreAudit_2026-04-29.md`
-- operations closure index → `Operations/Closure_Index_2026-04-29.md`
-- structural governance rollup → `Operations/Structural_Governance_Rollup_2026-04-29.md`
+- large-file connector audit → `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`
+- AI split / annex pre-audit → `Operations/Archive_Records/AI_Split_Annex_PreAudit_2026-04-29.md`
+- operations closure index → `Operations/Archive_Records/Closure_Index_2026-04-29.md`
+- structural governance rollup → `Operations/Archive_Records/Structural_Governance_Rollup_2026-04-29.md`
 
 ## Archives
 
@@ -296,8 +296,8 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - Spirituality 板块现采用”旧主轴 + 新双线 + community companion”并行：旧主轴负责 axioms / praxis compact core；新双线负责主体位丢失、现代生活反思与回返路径；community companion 负责共同体如何托住回返而不重新变成地板；涉及 God / Ω / d-infinity / suffering / Ψ_f / practice 的语言先读 `Spirituality/SRT_Spirituality_Claim_Status.md`
 - `ANNEX_REGISTRY.md` 是各 annex 批次的注册总表，不定义 canonical 术语，不提升 annex 内容权限
 - `SRT_Glossary_Structural_Governance_Terms.md` 是治理/结构操作层术语补充词汇表；`canonical: false`，不替代 `SRT_Glossary.md` 主体
-- `Operations/Closure_Index_2026-04-29.md` 是 2026-04-29 各 annex / Physics / AI 批次的 closure 汇总索引；`canonical: false`，仅运行层留痕
-- `Operations/Structural_Governance_Rollup_2026-04-29.md` 是结构治理 rollup 报告；`canonical: false`，仅运行层留痕
+- `Operations/Archive_Records/Closure_Index_2026-04-29.md` 是 2026-04-29 各 annex / Physics / AI 批次的 closure 汇总索引；`canonical: false`，仅运行层留痕
+- `Operations/Archive_Records/Structural_Governance_Rollup_2026-04-29.md` 是结构治理 rollup 报告；`canonical: false`，仅运行层留痕
 - `AI/Architecture_Annex/README.md` 是 AI 架构接口/对比 annex 的批次索引；`canonical: false`，claim status 受 `AI/SRT_AI_Claim_Status.md` 和 `AI/AI_POSITIONING_NOTE.md` 管控
 - `AI/Consciousness_Annex/README.md` 是 AI 意识接口/对比 annex 的批次索引；`canonical: false`，claim status 受 `AI/SRT_AI_Claim_Status.md` 和 `AI/AI_POSITIONING_NOTE.md` 管控
 - `Physics/README.md` 是 Physics 目录入口，分离 canonical-facing 材料、bridge、compact summaries、claim-status audit 和 annex 层，不定义 P0/P1 物理命题

@@ -23,7 +23,7 @@ machine_summary: >
 
 # AI Architecture Engineering Interfaces
 
-> **Extraction note**: This file contains selected low-risk engineering-interface material extracted from `AI/Architecture_Split/05_Interface_Additions.md` after `Operations/PR_C2_AI_Interface_Extraction_Adjudication.md`.
+> **Extraction note**: This file contains selected low-risk engineering-interface material extracted from `AI/Architecture_Split/05_Interface_Additions.md` after `Operations/Archive_Records/PR_C2_AI_Interface_Extraction_Adjudication.md`.
 >
 > **Boundary**: The material below is an interface / translation layer. It does not prove AI subjecthood, does not define SRT `d-value`, and does not modify the owner architecture file.
 

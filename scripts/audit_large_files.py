@@ -11,7 +11,7 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_REPORT = ROOT / "Operations" / "Large_File_Audit_2026-05-09.md"
+DEFAULT_REPORT = ROOT / "Operations" / "Archive_Records" / "Large_File_Audit_2026-05-09.md"
 
 SKIP_DIRS = {
     ".git",

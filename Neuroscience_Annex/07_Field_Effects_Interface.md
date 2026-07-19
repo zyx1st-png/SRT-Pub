@@ -17,7 +17,7 @@ canonical: false
 owner: Neuroscience/SRT_Neuro_06_Field_Effects.md
 dependency:
   - SRT-NEURO-06
-  - Operations/PR_D_Batch2_GRT_Deduplication_Adjudication.md
+  - Operations/Archive_Records/PR_D_Batch2_GRT_Deduplication_Adjudication.md
 ---
 
 # Neuro 06 Annex: Field Effects Interface
@@ -40,7 +40,7 @@ dependency:
 
 **Extracted in**: PR-D Batch 2a (2026-04-28)
 
-**Extraction record**: [`../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md`](../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md)
+**Extraction record**: [`../Operations/Archive_Records/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md`](../Operations/Archive_Records/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md)
 
 ---
 

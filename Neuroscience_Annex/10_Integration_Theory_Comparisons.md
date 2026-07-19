@@ -18,8 +18,8 @@ canonical: false
 owner: Neuroscience/SRT_Neuro_09_Integ_Eq.md
 dependency:
   - SRT-NEURO-09
-  - Operations/PR_D0_Neuro_09_PreExtraction_Audit.md
-  - Operations/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md
+  - Operations/Archive_Records/PR_D0_Neuro_09_PreExtraction_Audit.md
+  - Operations/Archive_Records/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md
 ---
 
 # Neuro 09 Annex: Integration Theory Comparisons

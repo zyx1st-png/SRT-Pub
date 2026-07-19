@@ -44,7 +44,7 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ## Companion Links
 
-- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`Operations/Archive_Records/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/Archive_Records/PR_A2_Neuroscience_06_10_Audit.md)
 - [`SRT_Neuro_07_Evo_Devo.md`](SRT_Neuro_07_Evo_Devo.md)
 - [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)
 

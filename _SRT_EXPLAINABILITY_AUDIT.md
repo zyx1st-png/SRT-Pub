@@ -39,7 +39,7 @@ dependency: [_SRT_EXPLANATION_PROTOCOL, _SRT_QUALITY_SCORECARD]
 - `Governance/_SRT_WEEKLY_THEORY_REVIEW.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
 - `Archive/raw_sessions/SRT_RESIDUAL_CONFLICT_LIST_2026-03-31.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
 - `Operations/_SRT_DAILY_REVIEW_PIPELINE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
-- `Operations/_SRT_MEDIA_PACK_2026-02-28_TOPIC1.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
+- `Operations/Archive_Records/_SRT_MEDIA_PACK_2026-02-28_TOPIC1.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
 - `Operations/_SRT_PAPER_DRAFT_ACTIVE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
 - `Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary
 - `Operations/_SRT_REVIEW_QUEUE.md`: 0/5, missing=definition, formalization, mechanism, falsification, boundary

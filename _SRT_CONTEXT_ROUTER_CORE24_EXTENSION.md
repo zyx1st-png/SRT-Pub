@@ -66,7 +66,7 @@ Some long-file insertions were reported from external code-agent runs and may re
 - `SRT_EXP_Non_Reductive_Validation_Addendum.md`
 - `_SRT_D_VALUE_Value_Non_Substitutability_Addendum.md`
 - `_SRT_PSI_F_Inferred_Selection_Friction_Addendum.md`
-- `Operations/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`
+- `Operations/Archive_Records/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`
 
 ### Boundary
 

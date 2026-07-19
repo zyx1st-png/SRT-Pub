@@ -45,7 +45,7 @@ dependency: [SRT-NEURO-06, SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ## Companion Links
 
-- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`Operations/Archive_Records/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/Archive_Records/PR_A2_Neuroscience_06_10_Audit.md)
 - [`SRT_Neuro_06_Field_Effects.md`](SRT_Neuro_06_Field_Effects.md)
 - [`SRT_Neuro_08_Immune_Dist.md`](SRT_Neuro_08_Immune_Dist.md)
 - [`_SRT_Neuro_Axioms.md`](_SRT_Neuro_Axioms.md)

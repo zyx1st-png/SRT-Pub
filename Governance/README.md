@@ -66,7 +66,7 @@ updated: 2026-06-05
 ### Tooling Baselines
 
 1. `Frontmatter_Warning_Baseline.txt`
-2. `../Operations/Large_File_Audit_2026-05-09.md`
+2. `../Operations/Archive_Records/Large_File_Audit_2026-05-09.md`
 3. `../LONGFORM_SPLITS.md`
 
 Baselines record known debt. They are not quality scores.

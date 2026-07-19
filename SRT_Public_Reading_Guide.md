@@ -176,6 +176,6 @@ If you need the full governance structure, then use:
 3. `_SRT_SYMBOL_TABLE.md`
 4. `_SRT_CONTEXT_ROUTER.md`
 5. `Governance/SRT_CLAIM_LADDER.md`
-6. `Operations/Closure_Index_2026-04-29.md`
+6. `Operations/Archive_Records/Closure_Index_2026-04-29.md`
 
 But public readers should not begin there.

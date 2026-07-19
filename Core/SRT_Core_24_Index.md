@@ -37,7 +37,7 @@ updated: 2026-04-30
 - `Core/SRT_Core_24_Discriminating_Predictions.md`
 - `Core/SRT_Core_24_Index.md`
 - `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md`
-- `Operations/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`
+- `Operations/Archive_Records/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`
 
 ### Addenda created during integration
 
@@ -91,7 +91,7 @@ Retrieve Core 24 when the query mentions any of the following:
 - [x] Core 24 lightweight index created: `Core/SRT_Core_24_Index.md`.
 - [x] Core 24 canonical merge draft created: `Core/SRT_Core_24_Canonical_Merge_Draft.md`.
 - [x] Core 24 context-router extension created: `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md`.
-- [x] Core 24 navigation integration patch created: `Operations/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`.
+- [x] Core 24 navigation integration patch created: `Operations/Archive_Records/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`.
 - [x] Core 24 added to `_SRT_INDEX.md` as secondary hardening note and Core entrypoint.
 
 ### Phase 1 — Safe Integration

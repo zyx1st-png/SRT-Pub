@@ -26,7 +26,7 @@ This file defines the quality review shape for governance work. It is not a live
    - Split README source-owner metadata should match the current owner hash.
 
 3. **Large-file connector safety**
-   - Current report: `Operations/Large_File_Audit_2026-05-09.md`.
+   - Current report: `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`.
    - Action-threshold active markdown should have a split route or an explicit "missing_or_not_needed" judgment.
 
 4. **Registry consistency**
