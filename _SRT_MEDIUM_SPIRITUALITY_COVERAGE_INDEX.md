@@ -2,7 +2,7 @@
 id: SRT-MEDIUM-SPIRITUALITY-COVERAGE-INDEX
 type: coverage_index
 tags: [Navigation, Coverage Audit, Spirituality, Subject Position, Praxis, Medium Priority]
-status: active_v1
+status: archived_snapshot
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
@@ -10,6 +10,9 @@ dependency: [_SRT_CONTEXT_ROUTER, _SRT_DEEP_THEORY_MAP, Operations/_SRT_DEEP_NAV
 ---
 
 # SRT Medium Coverage Index: Spirituality
+
+> **[2026-07-20 冻结快照]** 本覆盖索引自本日起为存档快照，停止维护义务；条目反映生成时点的仓库结构，路径如与当前结构不符以 `_SRT_INDEX.md` 与当前目录为准。冻结依据：`Governance/Governance_Load_Reduction_2026-07-20.md`。
+
 
 > **Purpose**: This file processes Spirituality medium-priority unreferenced candidates from the deep-navigation coverage audit. It is a navigation / coverage file, not a canonical theory source.
 

@@ -24,6 +24,9 @@ machine_summary: >
 
 # AI
 
+> **[休眠层声明 · 2026-07-20]** 本层（`AI/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+
 This directory contains SRT's AI-facing bridge, consciousness, agency, architecture, and operational evaluation materials.
 
 AI is a **pressure-test / boundary-test field** for SRT, not the theory's definition engine. AI-domain files must not redefine `L_0/L_1/L_2`, `d-value`, `Psi_f`, `T_dir`, or `G_hat_theta`; they route those terms back to canonical anchors.

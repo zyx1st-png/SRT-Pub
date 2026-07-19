@@ -14,6 +14,9 @@ canonical: false
 
 # Neuroscience Annex
 
+> **[休眠层声明 · 2026-07-20]** 本层（`Neuroscience_Annex/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+
 This directory contains Neuroscience bridge/interface Annex files.
 
 Annex files do not define SRT Core primitives, do not replace owner-file formal anchors, and do not serve as canonical sources for `L_0/L_1/L_2`, `Psi_f`, `d-value`, `Phi`, or `\hat{G}_\theta`.
