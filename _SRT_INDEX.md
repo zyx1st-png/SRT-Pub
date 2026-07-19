@@ -35,7 +35,7 @@ dependency: [_SRT_MANIFEST, SRT-GLOSSARY]
 | `SRT_Navigation_Map.md` | 人类阅读地图 |
 | `_SRT_INDEX.md` | 机器索引 |
 | `_SRT_SYMBOL_TABLE.md` | 符号规范锚点；full definition registry |
-| `_SRT_SYMBOL_QUICK_GUARD.md` | 高风险符号/proxy 快速守门；不替代 full symbol table |
+| `SRT_AI_START.md §3` | 高风险符号/proxy 快速守门（原 `_SRT_SYMBOL_QUICK_GUARD.md` 已并入，2026-07-20）；不替代 full symbol table |
 | `_SRT_AGENT_RETRIEVAL_PROFILE.md` | Agent 检索扩展协议：区分 authority 与 retrieval value |
 | `_SRT_CONTEXT_ROUTER.md` | 深层问题上下文抓取路由 |
 | `_SRT_DEEP_THEORY_MAP.md` | 深层理论节点地图 |

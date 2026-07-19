@@ -74,7 +74,6 @@ updated: 2026-06-05
 - `STATUS.md`
 - `_SRT_INDEX.md`
 - `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- `_SRT_SYMBOL_QUICK_GUARD.md`
 - `SRT_Navigation_Map.md`
 - `_SRT_MANIFEST.yaml`
 - `Operations/README.md`
