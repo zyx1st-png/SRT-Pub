@@ -39,7 +39,8 @@ This index points to existing files that carry SRT's source-level force. It does
 
 | File | What it holds |
 |---|---|
-| [`SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md`](SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md) | Author-confirmed source card on objectification as local relief/binding of reality-change pressure, ghost as the readable/objectified form of pressure that objectification cannot stabilize, and consciousness/value/soul/purpose as four candidate projections of nonclosure. Separates verbatim claims, accepted bridges, unresolved tensions, traditional-theory neighbors, canonical crosswalk, book return routes, and meta audit. High-priority retrieval card; not a definition source. |
+| [`SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md`](SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md) | Parent source card: objectification as local relief/binding of reality-change pressure; ghost as the readable/objectified form of pressure that objectification cannot stabilize; consciousness/value/soul/purpose as four candidate projections of nonclosure. Separates verbatim claims, accepted bridges, unresolved tensions, traditional-theory neighbors, canonical crosswalk, book return routes, and meta audit. High-priority retrieval card; not a definition source. |
+| [`SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md`](SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md) | Live ChoiceMap continuation from the parent card. Preserves the author's yin–yang/ridge metaphor, “阴扩散，阳收敛,” L0/minimal-non-neutrality/初心/reselectability linkage, choice-absolutization analysis, rejection of the close–reopen model, and the object–friction co-writing account. Includes selected assistant explanations at the author's request, superseded models, crosswalk routes, formal hints, meta audit, and the pending Y-layer identity question. Not a definition source. |
 
 ## How To Use This Index
 
