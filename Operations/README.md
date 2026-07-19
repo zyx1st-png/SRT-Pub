@@ -64,6 +64,7 @@ Active execution plan 只负责施工范围、顺序、门控与验收，不定�
 9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线）
 10. `_SRT_ARTICLE_WORKFLOW.md`（文章写作工作流：LLM 发散 / 作者收敛 / 记录轨迹；`2026-07-02` 战略重心转向社媒文章后新增，Pipeline 5 主模式改由此文件定义）
 11. `_SRT_CHOICE_TRACE_LOG.md`（收敛轨迹台账：发散→收敛配对留痕，作者收敛函数的 revealed-stake 记录；append-only）
+12. `.agents/skills/srt-humanization-pipeline/SKILL.md`（公共文本三阶段真人化执行层：`shuorenhua → humanizer-zh → stop-slop → protected-spans 核验`；语言通过不等于发布批准）
 
 ### Connector / large-file safety
 

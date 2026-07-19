@@ -198,3 +198,17 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **tension_count**: 9
 - **unresolved_tensions**: [T4-01, T4-02, T4-04, T4-05, T4-07, T4-08, T4-09]
 - **closure_pipeline_done**: true（逐轮记录、提案隔离、张力表、根问题台账、分支树、回返与垂直漂移审计、canonical/术语检查、INDEX 与当日 memory 留痕均完成；Q 层冻结待恢复）
+
+### CT-20260719-01（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: live
+- **date**: 2026-07-19
+- **trace_file**: `01_Source_Intuition/SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md`
+- **one_line**: 续接幽灵—对象化压力讨论，以阴阳山脊比喻把幽灵从事后残余推进为显性存在的构成性背面；收敛出“阴扩散、阳收敛”、L0／最小非中立性／初心／可再选择桥、选择绝对化、持续动态平衡以及对象—摩擦互写模型。
+- **breakout_count**: 7
+- **breakout_events**: [N-breakout, P-breakout, Q-addition, R-breakout, T-addition, V-reversal, W-breakout]
+- **pending_confirmations**: assistant 解释已按作者“很多解释都很棒，请写入卡片中”的要求保存，但不视为逐句签署；Y 层同一性问题尚未选择
+- **tension_count**: 8
+- **unresolved_tensions**: [T-YY-01 幽灵与阴的类比/同一, T-YY-02 动态平衡术语, T-YY-03 摩擦层级, T-YY-04 阴的非无差别扩散, T-YY-05 选择绝对化层级, T-YY-06 同一性, T-YY-07 意识接口, T-YY-08 规范性]
+- **closure_pipeline_done**: false（已完成源直觉冻结、解释提案隔离、张力表、crosswalk 与暂停点记录；canonical 术语审计和 Y 层继续待后续）

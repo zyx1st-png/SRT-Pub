@@ -1,0 +1,17 @@
+{
+  "stage": "phase2b_locked_holdout",
+  "gate": "NO-GO",
+  "fail": "selection_specificity",
+  "feasibility_commit": "8d703838f794e192938abcada34d7ddbe0da39c5",
+  "holdout_seeds": [
+    20000,
+    20039
+  ],
+  "N_per_regime": 200,
+  "files_sha256": {
+    "README.md": "f1be8136f81cfcc5",
+    "phase2b.py": "d9916ec47bdc1de2",
+    "results_phase2b.json": "623d3a16220e5a7d",
+    "tests/test_phase2b.py": "b6035a8d83dbe474"
+  }
+}

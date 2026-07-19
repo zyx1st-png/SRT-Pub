@@ -1,0 +1,101 @@
+{
+  "seeds": [
+    30000,
+    30001,
+    30002,
+    30003,
+    30004,
+    30005,
+    30006,
+    30007,
+    30008,
+    30009,
+    30010,
+    30011,
+    30012,
+    30013,
+    30014,
+    30015,
+    30016,
+    30017,
+    30018,
+    30019,
+    30020,
+    30021,
+    30022,
+    30023,
+    30024,
+    30025,
+    30026,
+    30027,
+    30028,
+    30029,
+    30030,
+    30031,
+    30032,
+    30033,
+    30034,
+    30035,
+    30036,
+    30037,
+    30038,
+    30039
+  ],
+  "primary_ctrl": {
+    "mean": 0.5700703097685957,
+    "ci_lo": 0.5588828079077731,
+    "ci_hi": 0.5814059421537342,
+    "Delta_min": 0.2
+  },
+  "negative_pe": {
+    "mean": 0.08680599180900767,
+    "ci_lo": 0.08244437808577205,
+    "ci_hi": 0.09115774515344148,
+    "eps": 0.15
+  },
+  "per_vol": {
+    "high": {
+      "d_ctrl": 0.6267452453055842,
+      "d_pe": 0.06732307221596641
+    },
+    "low": {
+      "d_ctrl": 0.5133953742316074,
+      "d_pe": 0.10628891140204892
+    }
+  },
+  "z_formation": {
+    "high": {
+      "ctrl_active_minus_yoked": 0.2644477978066364,
+      "pe_active_minus_yoked": -0.06976981246654382
+    },
+    "low": {
+      "ctrl_active_minus_yoked": 0.9308849983485412,
+      "pe_active_minus_yoked": -0.07803780946727422
+    }
+  },
+  "manip": {
+    "ctrl_corr_yoked": -4.910101890721133e-05,
+    "ctrl_corr_active": 0.2704315282504174
+  },
+  "Cmu": {
+    "active": 0.12082278788970373,
+    "yoked": 0.021986463551023218
+  },
+  "causal": {
+    "active_normal_commit": 0.9973920329394765,
+    "null_active_commit": 0.0,
+    "yoked_commit": 0.4273217231708807,
+    "swap_active_to_yoked_commit": 0.4273217231708807,
+    "null_drop": 0.9973920329394765,
+    "swap_gap": 0.0
+  },
+  "checks": {
+    "P2_ctrl_gt_Deltamin": true,
+    "N1_pe_within_equiv": true,
+    "P1_zctrl_sign_stable": true,
+    "manip_yoked_ctrlcorr_equiv": true,
+    "causal_null_collapses": true,
+    "causal_swap_follows_m": true
+  },
+  "GO": true
+}

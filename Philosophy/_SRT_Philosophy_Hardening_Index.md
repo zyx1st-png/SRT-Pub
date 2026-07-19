@@ -8,7 +8,11 @@
 
 | Patch | File | Core thesis | Status |
 |---|---|---|---|
-| Agency ladder / selection-control architecture | `Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md` | agency is not all selection and not only reflective intention; SRT should distinguish causal activity, selection, controlled selection, minimal agency, intentional agency, conscious agency, and shared agency | High-priority agency/subjecthood bridge; full-text close reading pending |
+| Agency trunk / thickening architecture | `Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md` | agency is not all selection and not only reflective intention; causal activity through minimal agency forms a control trunk, while intentional, conscious, reflective and shared capacities are partially orthogonal thickenings | High-priority agency/subjecthood bridge; full-text close reading pending |
+| PH-AG02 Knowledge-biased selection | `Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md` | reliable reason-to-response transition is not yet agentive reasoning; learned knowledge may organize attention and input-output coupling as a structural bias, while bias efficacy remains distinct from `T_dir` readability and stake ownership | A / full-text close-read bridge; integration hook added |
+| PH-AG03 Constitutive commitment | `Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md` | reasons may constrain action without supplying a final guarantee; a time-sensitive commitment can leave a responsibility-position trace, while S6 responsibility, commitment, retroactive certainty and `T_dir` remain distinct | A / author-version full-text close-read bridge; integration hook added |
+| PH-AG04 Sensorimotor time / agency dissociation | `Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md` | control efficacy, authorial attribution, body ownership and reflective self-integration are partially independent; external effectors can enter control loops without becoming bodily or shared-agency bearers | A / four-experiment full-text close-read bridge; bounded interface integrated |
+| PH-SEM01 Bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | practical positions should distinguish assertion, denial and open remainder; defeasible clashes may be repaired by added context, while incompatibility remains irreducible to positive consequence, agency or stake | A / penultimate-draft full-text close-read bridge; integration hook added |
 | PH-METH01 Emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | emergence is not an explanatory primitive; SRT bridge claims must specify mechanism, transition condition, macro-pattern, and implementation channel before using emergence/downward-causation language | Integrated guardrail in `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
 | PH-CONSC02 Perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | hard-problem arguments should not smuggle in a disembodied outside view of science; first-person and third-person descriptions are routed as situated access differences before metaphysical gaps | Integrated guardrail in `Philosophy/SRT_HardProblem_Epistemology.md` |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
@@ -18,15 +22,15 @@
 
 ## 1. How this should be used
 
-### Agency ladder
+### Agency trunk and thickening dimensions
 
 Use Pacherie's *Agency* as a disciplined philosophy-of-mind bridge:
 
 ```text
 selection is broader than agency
 agency requires controlled transition-readiness plus concern/control structure
-conscious agency adds self-coupled ownership
-shared agency adds intersubjective L2 coordination
+intentional / conscious / reflective / shared / responsibility-related capacities
+are partially orthogonal thickening dimensions, not a strict total order
 ```
 
 Do not claim:
@@ -37,11 +41,104 @@ only human reflective intention is agency
 Pacherie proves SRT
 ```
 
+### PH-AG02 reasoning bridge
+
+Use Wu to sharpen the transition from causal activity to controlled selection:
+
+```text
+triggering cause
+!=
+structuring bias
+!=
+self-readable direction
+!=
+stake-bearing ownership
+```
+
+Safe uses:
+
+- a many-many response space can require a structural bias;
+- knowledge can change from represented input to action-organizing constraint through learning;
+- automatic bias efficacy does not imply high `T_dir`;
+- option expansion can worsen underdetermination when no user-owned selection structure is formed.
+
+Do not claim:
+
+```text
+bias = epsilon_pg
+bias = G_hat_theta
+bias = T_dir
+attention = d-value
+Wu solves P0-04
+```
+
+### PH-AG03 commitment / subject-position bridge
+
+Use Sulic to separate evidence support from final guarantee and to identify a responsibility-bearing commitment window:
+
+```text
+reasons constrain the field
++ no final guarantee
++ delay changes reachability
+-> constitutive commitment
+-> retrospective responsibility position
+```
+
+Safe uses:
+
+- epistemic non-closure can coexist with action closure;
+- waiting can enter the consequence structure when it removes or degrades options;
+- an act can establish the position from which a continuing bearer is answerable;
+- commitment strength and post-hoc certainty do not establish `T_dir`;
+- retroaction can reorganize meaning and responsibility without changing the physical past.
+
+Do not claim:
+
+```text
+no final guarantee = no reasons
+a decisive act creates external facts
+one commitment creates a complete subject
+retroaction = retrocausation
+anticipated certainty = T_dir
+Sulic solves P0-04
+```
+
+### PH-SEM01 bilateral position / context-repair bridge
+
+Use Simonelli to distinguish positive commitment, explicit denial and open remainder, and to test whether an apparent clash is strict or defeasible:
+
+```text
+assertions
++ denials
++ left-open positions
++ typed incompatibilities
++ repair conditions
+```
+
+Safe uses:
+
+- a selected option need not deny every unselected alternative;
+- material incompatibility may fail persistence when exception information is added;
+- context enrichment can reopen options without simply reversing the prior choice;
+- incompatibility and committive consequence should remain separate dimensions;
+- pathological closure may involve promoting defeasible clashes into unrevisable strict impossibilities.
+
+Do not claim:
+
+```text
+semantic incompatibility = physical impossibility
+incompatibility profile = d-value or option quality
+non-persistence applies to strict contradiction
+position = subject or stake-bearer
+incompatibility alone defines selection
+Simonelli proves selection-first ontology
+```
+
 ---
 
-## 2. Recommended future synthesis
+## 2. Agency / subjecthood synthesis
 
-Create or update a versioned agency/subjecthood synthesis:
+The versioned agency/subjecthood synthesis is now available as a non-canonical draft:
 
 ```text
 Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
@@ -51,11 +148,22 @@ Proposed additions:
 
 1. Selection vs agency distinction
 2. Minimal agency as controlled transition-readiness
-3. Conscious agency as self-coupled L1 action ownership
-4. Shared agency as intersubjective L2 coordination
-5. d-value as concern-bearing relevance, not mere salience
-6. Psi_f as action-transition friction
-7. Boundary cautions: avoid overextension and overrestriction
+3. Triggering causes vs structuring biases
+4. Bias efficacy / readability / revisability
+5. Evidence support vs final guarantee
+6. Constitutive commitment and delay cost
+7. Responsibility-position trace vs S6 responsibility
+8. Retroactive stabilization vs retrocausation
+9. Bilateral position: assertion / denial / open remainder
+10. Strict versus defeasible incompatibility
+11. Context repair and recomposition
+12. Positive consequence versus negative exclusion
+13. Control, authorship, bodily ownership, and reflective integration
+14. Conscious agency as self-related authorial / control access with partial integration or revision
+15. Shared agency as reciprocal intersubjective L2 coordination, not a higher scalar rung
+16. d-value as concern-bearing relevance, not mere salience
+17. Psi_f as canonical friction, not feedback mismatch
+18. Boundary cautions: avoid overextension and overrestriction
 
 ---
 
@@ -65,6 +173,23 @@ Proposed additions:
 Agency SourceCard = added
 Agency patch = added
 Agency hook = added
+PH-AG02 SourceCard = full-text upgraded
+PH-AG02 patch = added
+PH-AG02 integration hook = added
+PH-AG02 canonical merge = deferred
+PH-AG03 SourceCard = author-version full-text upgraded
+PH-AG03 patch = added
+PH-AG03 integration hook = added
+PH-AG03 canonical merge = deferred
+PH-AG04 SourceCard = four-experiment full-text close-read
+PH-AG04 patch = added
+PH-AG04 integration hook = added
+PH-AG04 subjecthood bounded interface = integrated
+PH-AG04 canonical merge = deferred
+PH-SEM01 SourceCard = penultimate-draft full-text upgraded
+PH-SEM01 patch = added
+PH-SEM01 integration hook = added
+PH-SEM01 canonical merge = deferred
 PH-METH01 SourceCard = added
 PH-METH01 patch = added
 PH-METH01 hook = added
@@ -81,5 +206,5 @@ SOC-COG02 SourceCard = added
 SOC-COG02 patch = added
 SOC-COG02 hook = added
 SOC-COG02 social-cognition bridge = integrated
-Full synthesis = pending
+Full synthesis = Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md (draft_v0_2; canonical: false)
 ```

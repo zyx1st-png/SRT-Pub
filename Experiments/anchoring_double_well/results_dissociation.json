@@ -1,0 +1,323 @@
+{
+  "config_sha256": "3585efcad19435fa",
+  "results": {
+    "A_transient": {
+      "P_survival": 0.0,
+      "P_survival_sd": 0.0,
+      "P_escape_time": 5.449340000000001,
+      "P_after_withdraw": 0.0,
+      "S_occ_tau": 1.0,
+      "J_ext": 17.280000000000037,
+      "J_write": 0.0,
+      "z_after_int_hp": 0.0,
+      "z_after_int_hm": 0.0,
+      "Wsel": {
+        "occupancy": 0.0,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_sd": {
+        "occupancy": 0.0,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_local": {
+        "KL": 0.0,
+        "JS": 0.0,
+        "TV": 0.0
+      },
+      "Wglobal": {
+        "uniform": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        },
+        "pre_occupancy": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        },
+        "mixture": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        }
+      },
+      "phi_hp": {
+        "occupancy": 8.091045345640231e-07,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "phi_hm": {
+        "occupancy": 8.091045345640231e-07,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      }
+    },
+    "PreExistingWell": {
+      "P_survival": 0.9996,
+      "P_survival_sd": 0.0002549509756796416,
+      "P_escape_time": 47.991269,
+      "P_after_withdraw": 1.0,
+      "S_occ_tau": 1.0,
+      "J_ext": 17.280000000000037,
+      "J_write": 0.0,
+      "z_after_int_hp": 0.0,
+      "z_after_int_hm": 0.0,
+      "Wsel": {
+        "occupancy": 0.0,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_sd": {
+        "occupancy": 0.0,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_local": {
+        "KL": 0.0,
+        "JS": 0.0,
+        "TV": 0.0
+      },
+      "Wglobal": {
+        "uniform": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        },
+        "pre_occupancy": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        },
+        "mixture": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        }
+      },
+      "phi_hp": {
+        "occupancy": 0.9998729133489418,
+        "escape_barrier": 10.290038260927698,
+        "committor0": 0.9067331858982021
+      },
+      "phi_hm": {
+        "occupancy": 0.9998729133489418,
+        "escape_barrier": 10.290038260927698,
+        "committor0": 0.9067331858982021
+      }
+    },
+    "RoughenWrite": {
+      "P_survival": 0.0,
+      "P_survival_sd": 0.0,
+      "P_escape_time": 1.8234715000000001,
+      "P_after_withdraw": 0.30870000000000003,
+      "S_occ_tau": 1.0,
+      "J_ext": 17.280000000000037,
+      "J_write": 6.697285128063031,
+      "z_after_int_hp": 3.157628436800108,
+      "z_after_int_hm": -3.158894241628908,
+      "Wsel": {
+        "occupancy": -5.464465578584043e-05,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_sd": {
+        "occupancy": 1.1016840741586765e-07,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_local": {
+        "KL": 3.6228944177985056e-08,
+        "JS": 9.058385162840322e-09,
+        "TV": 9.212513336112892e-05
+      },
+      "Wglobal": {
+        "uniform": {
+          "KL": 7.97637674944869,
+          "JS": 0.2782042288766683,
+          "TV": 0.6151014481467427
+        },
+        "pre_occupancy": {
+          "KL": 7.976376749448693,
+          "JS": 0.27820422887666835,
+          "TV": 0.6152063807195706
+        },
+        "mixture": {
+          "KL": 7.976376749448693,
+          "JS": 0.2782042288766683,
+          "TV": 0.6151539144331565
+        }
+      },
+      "phi_hp": {
+        "occupancy": 0.31872367480152286,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "phi_hm": {
+        "occupancy": 0.3187783194573088,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      }
+    },
+    "LatentInscription": {
+      "P_survival": 0.0,
+      "P_survival_sd": 0.0,
+      "P_escape_time": 0.0,
+      "P_after_withdraw": 0.02195,
+      "S_occ_tau": 0.0,
+      "J_ext": 17.280000000000037,
+      "J_write": 2.100109463671971,
+      "z_after_int_hp": 0.7423115309283812,
+      "z_after_int_hm": -0.7433817684057793,
+      "Wsel": {
+        "occupancy": 0.9999940139989185,
+        "escape_barrier": 5.0,
+        "committor0": 1.0
+      },
+      "Wsel_sd": {
+        "occupancy": 2.438916004707552e-10,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_local": {
+        "KL": 0.03310926869575952,
+        "JS": 0.00820954421069524,
+        "TV": 0.10244794461774767
+      },
+      "Wglobal": {
+        "uniform": {
+          "KL": 0.008265396134578704,
+          "JS": 0.002062090938918934,
+          "TV": 0.05125848552243447
+        },
+        "pre_occupancy": {
+          "KL": 0.008265396134578754,
+          "JS": 0.0020620909389189443,
+          "TV": 0.051249265052973295
+        },
+        "mixture": {
+          "KL": 0.008265396134578728,
+          "JS": 0.002062090938918939,
+          "TV": 0.05125387528770388
+        }
+      },
+      "phi_hp": {
+        "occupancy": 0.9999969576269262,
+        "escape_barrier": 5.0,
+        "committor0": 1.0
+      },
+      "phi_hm": {
+        "occupancy": 2.943628007731013e-06,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      }
+    },
+    "C_anchor": {
+      "P_survival": 1.0,
+      "P_survival_sd": 0.0,
+      "P_escape_time": 48.0,
+      "P_after_withdraw": 1.0,
+      "S_occ_tau": 1.0,
+      "J_ext": 17.280000000000037,
+      "J_write": 0.28498734620888816,
+      "z_after_int_hp": 1.5337052423898976,
+      "z_after_int_hm": -1.5343200612703898,
+      "Wsel": {
+        "occupancy": 0.999994372015302,
+        "escape_barrier": 5.0,
+        "committor0": 1.0
+      },
+      "Wsel_sd": {
+        "occupancy": 1.030743493693164e-10,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_local": {
+        "KL": 0.1411916889585198,
+        "JS": 0.0341060784016728,
+        "TV": 0.20950791940911104
+      },
+      "Wglobal": {
+        "uniform": {
+          "KL": 0.03528377655803676,
+          "JS": 0.008744030740440336,
+          "TV": 0.10568625234156079
+        },
+        "pre_occupancy": {
+          "KL": 0.03528377655803675,
+          "JS": 0.00874403074044033,
+          "TV": 0.10566808708830218
+        },
+        "mixture": {
+          "KL": 0.03528377655803675,
+          "JS": 0.00874403074044033,
+          "TV": 0.1056771697149315
+        }
+      },
+      "phi_hp": {
+        "occupancy": 0.9999943720153024,
+        "escape_barrier": 5.0,
+        "committor0": 1.0
+      },
+      "phi_hm": {
+        "occupancy": 4.3377888737483965e-16,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      }
+    },
+    "B_clamp": {
+      "P_survival": 1.0,
+      "P_survival_sd": 0.0,
+      "P_escape_time": 48.0,
+      "P_after_withdraw": 0.00025,
+      "S_occ_tau": 1.0,
+      "J_ext": 86.39999999999479,
+      "J_write": 0.0,
+      "z_after_int_hp": 0.0,
+      "z_after_int_hm": 0.0,
+      "Wsel": {
+        "occupancy": 0.0,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_sd": {
+        "occupancy": 0.0,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "Wsel_local": {
+        "KL": 0.0,
+        "JS": 0.0,
+        "TV": 0.0
+      },
+      "Wglobal": {
+        "uniform": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        },
+        "pre_occupancy": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        },
+        "mixture": {
+          "KL": 0.0,
+          "JS": 0.0,
+          "TV": 0.0
+        }
+      },
+      "phi_hp": {
+        "occupancy": 8.091045345640231e-07,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      },
+      "phi_hm": {
+        "occupancy": 8.091045345640231e-07,
+        "escape_barrier": 0.0,
+        "committor0": 0.0
+      }
+    }
+  }
+}

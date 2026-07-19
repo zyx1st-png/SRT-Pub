@@ -86,6 +86,30 @@ subjective time compresses when adaptive transition becomes coordinated and reac
 
 This gives SRT a useful bridge between phenomenology and measurable dynamics.
 
+The inverse relation is one transition-field model, not a general law of duration judgment. Action-conditioned timing adds a separate empirical window:
+
+```text
+observed subjective duration
+=
+action-compression pressure
++ coupling compensation
++ expectation / attention / event-change contributions
+```
+
+In four preregistered VR experiments, voluntary action produced compression pressure on perceived duration. Congruent live feedback in Experiments 1-2 may have partially compensated that compression relative to replayed or delayed feedback, but the kinematics-related duration effect did not replicate reliably in Experiments 3-4. The schematic above is therefore P3/P4 and non-canonical; it is not a fitted empirical law.
+
+This result blocks five overreadings:
+
+```text
+sensorimotor coupling does not create time;
+longer perceived duration does not always mean stronger agency;
+subjective duration is not a direct selection counter;
+subjective duration is not a direct Psi_f meter;
+duration judgment does not validate SRT physical-time ontology.
+```
+
+Source trail: [Imaizumi et al. SourceCard](../Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md), [PH-AG04 patch](../Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md), and [PH-AG04 Integration Hook](../Philosophy/hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md).
+
 ### SRT-compatible reading
 
 In SRT, a subject does not experience time as a neutral container. Time is experienced through the current accessibility of transition:
@@ -298,7 +322,7 @@ L2 = historical deformation of the future selection field
 
 ### Claim N11b: Subjective time tracks transition accessibility
 
-Subjective time dilation and compression are not merely reporting effects. They may index the current reachability of adaptive transition.
+Subjective time dilation and compression may index the current reachability of adaptive transition in some regimes, but they are multi-process reports rather than a monotonic transition-accessibility meter.
 
 ```text
 tau(t) = 1 / r(t)
@@ -333,7 +357,7 @@ SRT variable = latent structure inferred from coupled transition dynamics
 
 ### N11-P1: subjective time dilation should covary with reduced transition accessibility
 
-When adaptive transition becomes harder to initiate or complete, subjective time should dilate.
+When adaptive transition becomes harder to initiate or complete, subjective time may dilate after action, expectation, attention, and perceptual-change contributions are controlled.
 
 Possible measures:
 
@@ -348,8 +372,10 @@ HRV / respiration / EDA / movement patterns
 SRT prediction:
 
 ```text
-lower r(t) -> higher tau(t) -> higher Psi_f for adaptive transition
+lower r(t) -> candidate pressure toward higher tau(t)
 ```
+
+This prediction is weakened if action-conditioned duration fails to covary with transition accessibility across preregistered replications; no duration result alone licenses a `Psi_f` inference.
 
 ### N11-P2: recovery from attractor capture should be nonlinear
 
@@ -398,6 +424,7 @@ high-friction threat basin -> time dilation / freezing / looping
 3. SRT should not collapse `r(t)` directly into `Psi_f^{-1}`. The relation is approximate and context-dependent.
 4. The transition-field model is useful for SRT, but SRT remains broader because it includes the L0-L1-L2 ontology, Ghost Operator, d-value, selection friction, and cross-scale hardening.
 5. The framework must remain falsifiable: if subjective time distortion does not covary with transition accessibility across repeated measures, the bridge model is weakened.
+6. Action-conditioned duration is multi-process: the Experiments 1-2 coupling effect was not stably reproduced in Experiments 3-4.
 
 ---
 

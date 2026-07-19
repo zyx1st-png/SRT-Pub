@@ -53,6 +53,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-04_Part02 | [Material_Log/2026-04_Part02.md](Material_Log/2026-04_Part02.md) | 10 |
 | 2026-05_Part01 | [Material_Log/2026-05_Part01.md](Material_Log/2026-05_Part01.md) | 21 |
 | 2026-06_Part01 | [Material_Log/2026-06_Part01.md](Material_Log/2026-06_Part01.md) | 1 |
+| 2026-07_Part01 | [Material_Log/2026-07_Part01.md](Material_Log/2026-07_Part01.md) | 8 |
 
 ---
 
@@ -65,7 +66,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-03-13 | 2026-06-13 | Popular Mechanics + MDPI Universe: *Transfer of Quantum Information and Genesis of Superfluid Vacuum in the Pre-Inflationary Universe* | 与既有动态真空窗口高度邻近，但当前主张涉及 pre-inflationary multiverse / measurement-like collapse / superfluid vacuum genesis，证据与可证伪性不足以支撑正文回写 |
 | 2026-03-13 | 2026-06-13 | New Scientist: *Why cosmology seems to be caught in a vibe shift* | 属于暗能量张力的共同体叙事评论；待更直接的一手结果、参数更新或替代理论落地后重评是否需要写入方法论/治理层 |
 | 2026-03-15 | 2026-06-15 | Zenodo: *The Natural Criticality Hypothesis of Subjective Time — A Neurodynamic Formalization via Action Readiness Density r(t) —* | 相关性通过，但当前属于 Zenodo-only hypothesis preprint；待更完整正文可检、外部讨论或独立实验锚点出现后，再判断 `r(t)` 及“多时间轴收敛=自我稳定”窗口是否值得写入神经机制层 |
-| 2026-03-16 | 2026-06-16 | arXiv: *Spacetime Quasicrystals*（arXiv:2601.07769） | 相关性通过，但当前仅为 1+1 维 Lorentzian quasicrystal 预印本窗口；待 3+1 维推广、更明确动力学/物质耦合与可检验后果出现后，再判断是否值得写入时空本体层 |
+| 2026-03-16 | 2026-06-16 | arXiv: *Spacetime Quasicrystals*（arXiv:`2601.07769v1`） | 相关性通过，但当前仅为 1+1 维 Lorentzian quasicrystal 预印本窗口；待 3+1 维推广、更明确动力学/物质耦合与可检验后果出现后，再判断是否值得写入时空本体层 |
 | 2026-03-26 | 2026-06-26 | Popular Mechanics + DESI / SPT: *The Universe Got Its Shape From This Elusive Particle’s Gravity* | 相关性通过，但当前核心是 cosmological neutrino-mass / hierarchy inference 的模型敏感张力；待 `DESI + CMB` 多探针结果在先验、扩展模型与同行评审层面更稳定后，再判断是否值得写入物理整合层 |
 | 2026-04-02 | 2026-07-02 | Quanta: *In Expanding de Sitter Space, Quantum Mechanics Gets Even More Elusive* | 当前主要是 de Sitter 可观测量 / 全息重建困难的高质量新闻解释与第一轮扩建输出；待更直接的一手 dS observables / holography / S-matrix 替代表述结果收敛后，再判断是否值得写入 `Physics/_SRT_Phys_Bridge.md` 或 `Physics/SRT_Quant_02_Cosmology.md` |
 | 2026-04-14 | 2026-07-14 | arXiv: *All elementary functions from a single operator*（arXiv:`2603.21852v2`） | 当前增量更稳地落在 `AI-for-Science / low-operator symbolic regression / formula search basis` 工具桥，而不是 `\hat G_\theta` 或 `\Psi_f` 的正文级形式化；待同行评审、补充更深树深/更复杂目标的恢复结果，或真正把 EML 搜索基底接入 SRT 方程发现任务后，再重评是否值得写入 `AI/_SRT_AI_Bridge.md`、`Core/SRT_Core_13a_Operator_Basics.md` 或相关方法附录 |
@@ -76,15 +77,16 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-05-23 | 2026-08-23 | IAI / Ragner Fjelland: *The disunity of science is a feature, not a bug* | `B2`：公共 philosophy-of-science essay，适合作为 anti-ToE / domain-plurality guardrail 候选；但不是一手科学或哲学论文，不能证明所有 reductionism 为假、不能把 emergence 当解释、不能把 scientific disunity 写成反科学、反数学、反 formalization 或逃避 empirical/formal constraints 的许可证 |
 | 2026-05-23 | 2026-08-23 | arXiv / Erik J. Bekkers & Anna Ciaunica: *Unplugging a Seemingly Sentient Machine Is the Rational Choice -- A Metaphysical Perspective*（arXiv:`2601.21016v1`） | `B1/B2`：`B1` for AI welfare vs alignment / functional mimicry vs stake-bearing 接口；`B2` for Biological Idealism / Analytic Idealism 整包；不能写成 SRT=Biological Idealism/Analytic Idealism、AI 永不可能有意识、生物/碳基是 canonical 必要条件、autopoiesis 单独证明意识，或 Social Zombie / Vital Leakage / ontological gaslighting 已成为 SRT 术语 |
 | 2026-05-23 | 2026-08-23 | Essentia Foundation / Stephen Jarosek: *Association as causation: The fabric of meaning and existence itself* | `B2/B3`：公共 metaphysics / systems-theory essay，适合作为 association-vs-selection guardrail 候选；表达素材可入 public prose，但不能写成 SRT=association ontology、association 是 SRT 第一原则、association 直接等于 causation/meaning/existence、physicalism provides no answers、Kastrup idealism 背书，或 quantum contextuality / RQM 支持 SRT ontology |
-| 2026-05-23 | 2026-08-23 | Neuroscience News / Newcastle University: *Using Physics Equations to Map Memory Distortions* / `Quantum Emotions` | `B1/B2`：`B1` for order-sensitive emotional-memory modeling if future paper/model/data appears；`B2` until then as quantum-cognition guardrail；当前无 peer-reviewed 结果/模型方程/数据，不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `Ψ_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure |
-| 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`Ψ_f`、`T_dir`、`Ĝ_theta` |
+| 2026-05-23 | 2026-08-23 | Neuroscience News / Newcastle University: *Using Physics Equations to Map Memory Distortions* / `Quantum Emotions` | `B1/B2`：`B1` for order-sensitive emotional-memory modeling if future paper/model/data appears；`B2` until then as quantum-cognition guardrail；当前无 peer-reviewed 结果/模型方程/数据，不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `\Psi_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure |
+| 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`\Psi_f`、`T_dir`、`\hat G_\theta` |
+| 2026-07-16 | 2026-10-16 | PhilPapers first-priority packet: Šekrst, Wu, Sulic, Georgatos, Simonelli, Rosenhagen, Sawyer（[packet index](../Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md)） | Mixed packet：7/7 SourceCards complete；Šekrst、Wu、Sulic、Simonelli 与 Sawyer 全文已取得。前四篇以 `AIEVID01`、`PH-AG02`、`PH-AG03`、`PH-SEM01` 升为 A；Sawyer 仅以 `GOV-SUB01` 在方法治理层升 A，其替代自然哲学与超常机制为 C quarantine；2/7 仍为 B 等待全文。下一优先为 Georgatos 与 Rosenhagen。不得把摘要卡、非同行评审自然哲学或方法残余写成 canonical 支撑 |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：183 条
-- A（融入）：117 条
-- B（观察）：16 条
+- 总提交：191 条
+- A（融入）：123 条
+- B（观察）：18 条
 - C（拒绝）：50 条
-- 融入率：63.9%
+- 融入率：64.4%

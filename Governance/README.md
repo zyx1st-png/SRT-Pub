@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-INDEX, SRT-AGENTS]
-updated: 2026-06-05
+updated: 2026-07-16
 ---
 
 # SRT Governance Hub
@@ -49,8 +49,11 @@ updated: 2026-06-05
 
 1. `SRT_CLAIM_LADDER.md`
 2. `SRT_CLAIM_MODE_AUDIT.md`
+3. `SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md`
 
 `SRT_CLAIM_MODE_AUDIT.md` 是 claim-mode 降级台账，不是完整当前状态表；引用时应说明它的历史批次边界。
+
+`SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md` 用于 primitive、symbol、layer、bridge 与竞争理论的受控删除审计。其输出始终是目标/尺度/时间窗相对的可删除性或当前不可删除性，不把“删除无损”写成不存在，也不把“暂不可删除”写成本体基础。
 
 ### Layer / Metadata
 

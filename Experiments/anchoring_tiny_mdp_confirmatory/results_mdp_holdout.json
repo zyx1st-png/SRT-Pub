@@ -1,0 +1,117 @@
+{
+  "seeds": [
+    40000,
+    40001,
+    40002,
+    40003,
+    40004,
+    40005,
+    40006,
+    40007,
+    40008,
+    40009,
+    40010,
+    40011,
+    40012,
+    40013,
+    40014,
+    40015,
+    40016,
+    40017,
+    40018,
+    40019,
+    40020,
+    40021,
+    40022,
+    40023,
+    40024,
+    40025,
+    40026,
+    40027,
+    40028,
+    40029,
+    40030,
+    40031,
+    40032,
+    40033,
+    40034,
+    40035,
+    40036,
+    40037,
+    40038,
+    40039,
+    40040,
+    40041,
+    40042,
+    40043,
+    40044,
+    40045,
+    40046,
+    40047,
+    40048,
+    40049
+  ],
+  "locked_thresholds": {
+    "Delta_min": 0.15,
+    "eps_TV": 0.05,
+    "ci_level": 0.95,
+    "bootstrap_resamples": 10000
+  },
+  "primary_macro_TV": {
+    "mean": 0.37441500000000005,
+    "ci": [
+      0.37356497916666664,
+      0.3752425416666667
+    ],
+    "Delta_min": 0.15
+  },
+  "direction": {
+    "aligned_active_adv": [
+      0.22090750000000003,
+      0.21921987499999998,
+      0.22259
+    ],
+    "blocked_active_stickiness": [
+      0.5815649999999999,
+      0.5798725,
+      0.5832400624999999
+    ],
+    "novel_active_stickiness": [
+      -0.27820000000000006,
+      -0.2803476250000001,
+      -0.2760524375
+    ]
+  },
+  "memory_null_macroTV": [
+    0.044003333333333325,
+    0.043324999999999995,
+    0.04466583333333332
+  ],
+  "memory_swap_macroTV": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "same_m_diff_z_macroTV": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "sham": {
+    "self_attr": -0.01506213998140237,
+    "ext_attr": 0.1429576294573625,
+    "ok": true
+  },
+  "yoked_ctrl_corr": -0.0005943630590161375,
+  "checks": {
+    "P1_macro_TV_lower_gt_Delta": true,
+    "DIR_aligned_advantage": true,
+    "DIR_blocked_stickiness": true,
+    "DIR_novel_stickiness": true,
+    "NULL_memory_null_within_eps": true,
+    "NULL_same_m_diff_z_within_eps": true,
+    "SWAP_follows_donor_within_eps": true
+  },
+  "failures": [],
+  "GO": true
+}

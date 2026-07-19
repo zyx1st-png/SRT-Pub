@@ -52,9 +52,21 @@ BASELINE_FILES = {
     "Governance/Frontmatter_Warning_Baseline.txt",
 }
 
+# Codex skills use their own frontmatter contract (`name` and `description`),
+# while skill references may intentionally have no frontmatter. They are runtime
+# packages, not SRT claim-bearing documents, so the repository document schema
+# does not apply to this subtree.
+FRONTMATTER_EXEMPT_PREFIXES = (
+    ".agents/skills/",
+)
+
 
 def is_helper_path(rel: str) -> bool:
     return any(marker in rel for marker in AUTHORITY_HELPER_MARKERS)
+
+
+def is_frontmatter_exempt(rel: str) -> bool:
+    return rel.startswith(FRONTMATTER_EXEMPT_PREFIXES)
 
 
 def is_noncanonical_transcript(data: dict[str, str]) -> bool:
@@ -128,7 +140,7 @@ def main() -> None:
 
     for path in iter_markdown(include_artifacts=args.include_artifacts):
         rel = relpath(path)
-        if rel in baseline_paths:
+        if rel in baseline_paths or is_frontmatter_exempt(rel):
             continue
         fm = frontmatter_for(path)
         if fm is None:

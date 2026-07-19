@@ -203,6 +203,37 @@ Narrowing condition:
 Separate Psi_f^inf from broader Psi_f^emb and Psi_f^norm; keep Fisher-like cost only in information-geometric slices.
 ```
 
+### Candidate extension — Sensorimotor agency, stake, and writeback
+
+> **Status**: P4 experimental candidate · non-canonical.
+
+Cross:
+
+```text
+coupling integrity
+x stake / d-value
+x reversibility
+x consequence bearer
+x L2 writeback
+```
+
+Primary outcomes:
+
+- objective control and residual control error;
+- correction latency and recalibration rate;
+- authorship and body ownership as separate reports;
+- subjective duration;
+- exploration and strategy switching;
+- preservation or loss of future options;
+- aftereffect and next-day retention;
+- self-versus-other consequence sensitivity.
+
+The shared-agency arm should progress from prerecorded avatar, through mechanically yoked live avatar and adaptive artificial agent, to a human partner with independent goals and a joint task requiring communication, role repair, and mutual commitment. A synchronously controlled avatar remains compatible with an external-actuator interpretation.
+
+**SRT-specific gain**: only when equal sensory mismatch produces systematic changes in adaptation, strategy reorganization, and future reachable options as a function of stake, irreversibility, and consequence bearer does the paradigm begin to distinguish SRT from a generic prediction-error account. Agency, body ownership, duration, or mismatch alone do not measure `d-value`, `Psi_f`, subjecthood, or shared agency.
+
+Source trail: [Imaizumi et al. SourceCard](../Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md), [PH-AG04 patch](../Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md), and [PH-AG04 Integration Hook](../Philosophy/hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md).
+
 ---
 
 ## 4. Experiment family C — `L2` hardening vs memory / habit

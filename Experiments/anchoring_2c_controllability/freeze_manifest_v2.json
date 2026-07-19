@@ -1,0 +1,19 @@
+{
+  "stage": "phase2c_controllability_holdout",
+  "supersedes": "freeze_manifest.json",
+  "supersede_reason": "README updated in audit-repair (evidence weighting) and YAML frontmatter added for governance-preflight CI. Code, parameters, and results JSON unchanged.",
+  "audit_date": "2026-07-17",
+  "changed_vs_v1": [
+    "README.md"
+  ],
+  "gate": "GO",
+  "files_sha256": {
+    "README.md": "d4e5f58386521228",
+    "calibrate.py": "eb519195b20b7e5b",
+    "config2c_frozen.json": "38b60da8d0f4b955",
+    "holdout2c.py": "5568bf500ca0adc0",
+    "model2c.py": "37572155f47f17cf",
+    "results_2c_holdout.json": "daf06bfd2fe6b436",
+    "tests/test_2c.py": "328703bc9d41c7a2"
+  }
+}

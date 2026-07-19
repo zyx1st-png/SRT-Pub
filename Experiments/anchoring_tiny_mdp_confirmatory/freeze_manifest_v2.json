@@ -1,0 +1,19 @@
+{
+  "stage": "tiny_mdp_confirmatory_holdout",
+  "supersedes": "freeze_manifest.json",
+  "supersede_reason": "README updated in audit-repair (evidence weighting) and YAML frontmatter added for governance-preflight CI. Code, parameters, and results JSON unchanged.",
+  "audit_date": "2026-07-17",
+  "changed_vs_v1": [
+    "README.md"
+  ],
+  "gate": "GO",
+  "files_sha256": {
+    "README.md": "29bd1b78a48c2c3f",
+    "calibrate_mdp.py": "830758ea0ee17858",
+    "config_mdp_frozen.json": "0ad999f96397fa0c",
+    "holdout_mdp.py": "fa09a336e224c7eb",
+    "model_mdp.py": "2d0465c85070481c",
+    "results_mdp_holdout.json": "b761269926555b50",
+    "tests/test_mdp.py": "4af0768fa90f7019"
+  }
+}
