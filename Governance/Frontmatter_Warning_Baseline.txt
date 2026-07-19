@@ -6,112 +6,413 @@
 # Existing warnings are treated as known debt by governance_preflight.py.
 # Remove lines when the corresponding files are fixed.
 
-01_Source_Intuition/BOOK/Archive_52Chapter/README.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_52Chapter/00_全书概念地图.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_全书章节写作概要.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_全书章节写作概要_卷二机制补充.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_全书章节写作概要_卷二调整指导.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_全书章节写作概要_存在共成体补充.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_全书章节写作概要_第三档哲学厚重补充.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_序_为什么要从存在走向秩序.md: status `draft_v14_philosophical_tension_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_序章路线图补丁.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00_术语表.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00b_论证地图.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00c_批判对象.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/00d_理论定位.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Future_Materials/16_d-value_跨域压力线_后续使用素材.md: status `candidate_material_pending_verification` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/00_总览与序章.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/01_卷一_从存在到成为.md: status `stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/02_卷二_选择的本性.md: status `stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/03_卷三_从选择到主体与价值.md: status `stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/04_卷四_秩序的双面性.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/05_卷五_从个体秩序到共同秩序.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/06_卷六_意识_AI_修行.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/07_卷七_边界与张力.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/08_收尾与维护规则.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Outline_Parts/README.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/01_现实不是先给定的.md: status `draft_v22_objectification_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/02_L0不是虚无.md: status `draft_v16_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性.md: status `draft_v14_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/04_选择不是挑选.md: status `draft_v13_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/05_锚定让一留下.md: status `draft_v17_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/06_秩序如何成为背景.md: status `draft_v11_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_01_从存在到成为/06b_卷一小结_第一条生成链.md: status `draft_v3_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/07_地形如何反过来选择人.md: status `draft_v19_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/08_选择算子_从可成为性到显现.md: status `draft_v6_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/09_排除_选择的阴影.md: status `draft_v7_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/10_不可逆性_撤回不是回到原点.md: status `draft_v16_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形.md: status `draft_v14_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/12_可支付性_为什么路径越走越像路.md: status `draft_v18_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择.md: status `draft_v10_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_02_选择的本性/13b_卷二小结_选择如何在地形中发生.md: status `draft_v2_style_philosophy_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/14_后果攸关谁.md: status `draft_v3_stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/15_在乎是什么.md: status `draft_v3_stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/16_价值不是偏好.md: status `draft_v4` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/17_d-value_在乎的最小形式化尝试.md: status `draft_v5` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/18_d的扩张不是博爱.md: status `draft_v6_final` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/19_选择者作为位置而非实体.md: status `draft_v4_stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/20_自指率_主体如何越积越厚.md: status `draft_v3_stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/21_自我意识作为凝结物.md: status `draft_v3_stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_03_从选择到主体与价值/22_感到不等于能动.md: status `draft_v3_stable_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/23_L2的两面_脚手架与牢笼.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/24_L2如何硬化.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/25_致命L2_看不见的牢笼.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/26_遮蔽的两阶段_还能看见与无法转身.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/27_冻结态_意识活着但不能动.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/28_疼痛与苦难.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/29_苦难的四类现象学.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Part_04_秩序的双面性/30_反最小化_压制痛苦不能消除痛苦.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/00_卷一二文学风格润滑与卷二最终copyedit策略_v1.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_pre_part01_consolidation_2026-05-14.md: status `draft_v16` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v17_third_tier_polish.md: status `draft_v17_third_tier_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v19_remove_ai_style_trial.md: status `draft_v19_remove_ai_style_trial` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v20_before_v21_style_hardening.md: status `draft_v20_flow_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/01_现实不是先给定的_v22_objectification_pass.md: status `draft_v22_objectification_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/02_L0不是虚无_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v15_information_ruliad_boundary` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/02_L0不是虚无_pre_part01_consolidation_2026-05-14.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/02_L0不是虚无_v14_third_tier_precision.md: status `draft_v14_third_tier_precision` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v13_argument_sharpening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性_pre_part01_consolidation_2026-05-14.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/03_ε_pg_L0的最小非中立性_v13_argument_sharpening.md: status `draft_v13_argument_sharpening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/04_选择不是挑选_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v12_third_tier_argument` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/04_选择不是挑选_pre_part01_consolidation_2026-05-14.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/04_选择不是挑选_v12_third_tier_argument.md: status `draft_v12_third_tier_argument` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/05_锚定让一留下_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v16_third_tier_final` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/05_锚定让一留下_pre_part01_consolidation_2026-05-14.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/05_锚定让一留下_v16_third_tier_final.md: status `draft_v16_third_tier_final` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06_秩序如何成为背景_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v10_third_tier_final` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06_秩序如何成为背景_pre_part01_consolidation_2026-05-14.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06_秩序如何成为背景_v10_third_tier_final.md: status `draft_v10_third_tier_final` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06b_卷一小结_第一条生成链_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v2_proposition_bridge` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06b_卷一小结_第一条生成链_pre_part01_consolidation_2026-05-14.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_01_从存在到成为/06b_卷一小结_第一条生成链_v2_proposition_bridge.md: status `draft_v2_proposition_bridge` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/00_卷二_08_09_11稳定主稿替换补丁说明_v1_codex_ready.md: status `draft_v1_codex_ready` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/00_卷二冻结执行清单_v1.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/00_卷二冻结执行状态审计_v2.md: status `audit_v2` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/00_卷二命题组_选择如何在地形中发生_v1_bridge.md: status `draft_v1_bridge` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/00_卷二稳定稿替换策略_v1_freeze_plan.md: status `draft_v1_freeze_plan` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/07_地形如何反过来选择人_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v18_final_literary_philosophical_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/07_地形如何反过来选择人_pre_consistency_weld_2026-05-14.md: status `draft_v18_final_literary_philosophical_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/07_地形如何反过来选择人_v17_completion_pass.md: status `draft_v17_completion_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/07_地形如何反过来选择人_v17_mechanism_refinement.md: status `draft_v17_mechanism_refinement` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/07_地形如何反过来选择人_v18_final_literary_philosophical_polish.md: status `draft_v18_final_literary_philosophical_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/07_地形如何反过来选择人_v18_final_literary_philosophical_polish_remote_main_2026-05-14.md: status `draft_v18_final_literary_philosophical_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v5r_terrain_embodiment_focus_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_pre_consistency_weld_2026-05-14.md: status `draft_v5r_terrain_embodiment_focus_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5_third_tier_polished.md: status `draft_v5b_polishing_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5c_operator_theory_integrated.md: status `draft_v5c_operator_theory_integrated` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5d_no_new_symbols.md: status `draft_v5d_no_new_symbols` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5e_review_fixes.md: status `draft_v5e_review_fixes` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5f_channel_example.md: status `draft_v5f_channel_example` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5g_glue_logic.md: status `draft_v5g_glue_logic` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5h_theseus_glue_integrated.md: status `draft_v5h_theseus_glue_integrated` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5i_metaphor_partition_compressed.md: status `draft_v5i_metaphor_partition_compressed` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5j_operator_legitimacy.md: status `draft_v5j_operator_legitimacy` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5k_affordance_maintenance.md: status `draft_v5k_affordance_maintenance` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5l_cross_scale_operator.md: status `draft_v5l_cross_scale_operator` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5m_mechanism_core.md: status `draft_v5m_mechanism_core` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5n_future_affordance.md: status `draft_v5n_future_affordance` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5o_thick_reality.md: status `draft_v5o_thick_reality` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5p_mechanism_deepening.md: status `draft_v5p_mechanism_deepening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5q_final_compression_pass.md: status `draft_v5q_final_compression_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5r_terrain_embodiment_focus_pass.md: status `draft_v5r_terrain_embodiment_focus_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/08_选择算子_从可成为性到显现_v5r_terrain_embodiment_focus_pass_remote_main_2026-05-14.md: status `draft_v5r_terrain_embodiment_focus_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v6_philosophical_depth_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_pre_consistency_weld_2026-05-14.md: status `draft_v5w_shadow_return_alignment_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_v5s_third_tier_tightening_pass.md: status `draft_v5s_third_tier_tightening_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_v5t_cross_scale_deanthropocentric_pass.md: status `draft_v5t_cross_scale_deanthropocentric_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_v5u_cross_scale_third_tier_compression.md: status `draft_v5u_cross_scale_third_tier_compression` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_v5v_cross_scale_tempered_pass.md: status `draft_v5v_cross_scale_tempered_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_v5w_shadow_return_alignment_pass.md: status `draft_v5w_shadow_return_alignment_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/09_排除_选择的阴影_v6_philosophical_depth_pass.md: status `draft_v6_philosophical_depth_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是回到原点_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v15_third_tier_final` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是回到原点_pre_consistency_weld_2026-05-14.md: status `draft_v14_review_polish_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是回到原点_v15_third_tier_final.md: status `draft_v15_third_tier_final` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是逆操作_v10_info_competitive_inhibition_pass.md: status `draft_v10_info_competitive_inhibition_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是逆操作_v11_review_response_pass.md: status `draft_v11_review_response_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是逆操作_v12_deep_polish_pass.md: status `draft_v12_deep_polish_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是逆操作_v13_integrated_chain_pass.md: status `draft_v13_integrated_chain_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是逆操作_v14_review_polish_pass.md: status `draft_v14_review_polish_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是逆操作_v8_third_tier_precision_pass.md: status `draft_v8_third_tier_precision_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/10_不可逆性_撤回不是逆操作_v9_landauer_context_chain_pass.md: status `draft_v9_landauer_context_chain_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v13_literary_final_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_pre_consistency_weld_2026-05-14.md: status `draft_v13_bridge_boundary_shadow_alignment_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v10_system_chain_hardening_pass.md: status `draft_v10_system_chain_hardening_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v11_chain_role_prediction_pass.md: status `draft_v11_chain_role_prediction_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v12_philosophical_synthesis_pass.md: status `draft_v12_philosophical_synthesis_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v13_bridge_boundary_shadow_alignment_pass.md: status `draft_v13_bridge_boundary_shadow_alignment_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v13_literary_final_pass.md: status `draft_v13_literary_final_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v4_alignment_payability_pass.md: status `draft_v4_alignment_payability_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v5_theoretical_compression_pass.md: status `draft_v5_theoretical_compression_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v6_structural_review_integration_pass.md: status `draft_v6_structural_review_integration_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v7_micro_polish_signature_pass.md: status `draft_v7_micro_polish_signature_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v8_hardening_necessity_pass.md: status `draft_v8_hardening_necessity_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/11_本体论摩擦_为什么现实不会免费成形_v9_formal_bridge_opponents_pass.md: status `draft_v9_formal_bridge_opponents_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v17_final_literary_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_pre_consistency_weld_2026-05-14.md: status `draft_v16_final_prose_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v10_integrated_final_candidate.md: status `draft_v10_integrated_final_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v11_non_anthropocentric_cross_scale_pass.md: status `draft_v11_non_anthropocentric_cross_scale_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v12_integrated_nonanthropic_core_derivation_pass.md: status `draft_v12_integrated_nonanthropic_core_derivation_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v13_core_direct_desymbolized_pass.md: status `draft_v13_core_direct_desymbolized_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v14_review_polish_hardening_pass.md: status `draft_v14_review_polish_hardening_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v15_forward_compression_pass.md: status `draft_v15_forward_compression_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v16_final_prose_pass.md: status `draft_v16_final_prose_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v17_final_literary_polish.md: status `draft_v17_final_literary_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v5_alignment_hardening_pass.md: status `draft_v5_alignment_hardening_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v6_mechanism_compression_pass.md: status `draft_v6_mechanism_compression_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v7_philosophical_cross_scale_pass.md: status `draft_v7_philosophical_cross_scale_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v8_review_hardening_pass.md: status `draft_v8_review_hardening_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/12_可支付性_为什么路径越走越像路_v9_formal_mechanism_prediction_pass.md: status `draft_v9_formal_mechanism_prediction_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v9_necessity_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_pre_consistency_weld_2026-05-14.md: status `draft_v8_final_prose_tension_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_v5_alignment_hardening_pass.md: status `draft_v5_alignment_hardening_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_v6_necessity_compression_pass.md: status `draft_v6_necessity_compression_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_v7_three_axis_hardening_pass.md: status `draft_v7_three_axis_hardening_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_v8_final_prose_tension_pass.md: status `draft_v8_final_prose_tension_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13_三判据_可延续_可协调_可再选择_v9_necessity_hardening.md: status `draft_v9_necessity_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_02_选择的本性/13b_卷二小结_选择如何在地形中发生_pre_2026-05-20_style_philosophy_hardening.md: status `draft_v1_part02_bridge` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v10_youguan_lineage_hardening.md: status `draft_v10_youguan_lineage_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v11_path_to_bearing_youguan.md: status `draft_v11_path_to_bearing_youguan` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v12_position_specific_cross_domain.md: status `draft_v12_position_specific_cross_domain` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v13_youguan_lineage_complete.md: status `draft_v13_youguan_lineage_complete` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v14_maintext_candidate.md: status `draft_v14_maintext_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v15_feedback_homeostasis_hardening.md: status `draft_v15_feedback_homeostasis_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v16_prose_polish_lock_candidate.md: status `draft_v16_prose_polish_lock_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v17_externality_subjectivity_hardening.md: status `draft_v17_externality_subjectivity_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v18_epsilon_necessity_chain_hardening.md: status `draft_v18_epsilon_necessity_chain_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v5_third_tier_argument.md: status `draft_v5_third_tier_argument` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v5_third_tier_subject_entry.md: status `draft_v5_third_tier_subject_entry` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v6_third_tier_maintext_candidate.md: status `draft_v6_third_tier_maintext_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v7_choice_consequence_bridge.md: status `draft_v7_choice_consequence_bridge` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v8_concern_emergence_from_selection_chain.md: status `draft_v8_concern_emergence_from_selection_chain` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/14_在乎是什么_v9_youguan_caring_externality.md: status `draft_v9_youguan_caring_externality` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v10_third_tier_mechanism_restored.md: status `draft_v10_third_tier_mechanism_restored` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v11_necessity_bridge_from_youguan.md: status `draft_v11_necessity_bridge_from_youguan` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v12_bridge_and_depth_completion.md: status `draft_v12_bridge_and_depth_completion` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v13_maintext_candidate_compression.md: status `draft_v13_maintext_candidate_compression` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v14_1_maintext_lock_polish.md: status `draft_v14_1_maintext_lock_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v14_2_maintext_lock_polish.md: status `draft_v14_2_maintext_lock_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v14_maintext_lock_candidate.md: status `draft_v14_maintext_lock_candidate` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v5_four_false_caring_pass.md: status `draft_v5_four_false_caring_pass` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v5_third_tier_value_not_preference.md: status `draft_v5_third_tier_value_not_preference` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v6_third_tier_hardening.md: status `draft_v6_third_tier_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v7_third_tier_externality_bridge.md: status `draft_v7_third_tier_externality_bridge` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v8_cross_domain_pressure_hardening.md: status `draft_v8_cross_domain_pressure_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/15_价值不是偏好_v9_third_tier_cross_pressure_compressed.md: status `draft_v9_third_tier_cross_pressure_compressed` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v10_ch15_bridge_formula_lite.md: status `draft_v10_ch15_bridge_formula_lite` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v11_temporal_structure_refinement.md: status `draft_v11_temporal_structure_refinement` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v12_temporal_lock_polish.md: status `draft_v12_temporal_lock_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v13_opening_clarity_polish.md: status `draft_v13_opening_clarity_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v14_reader_entry_polish.md: status `draft_v14_reader_entry_polish` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v6_compression_precision.md: status `draft_v6_compression_precision` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v7_third_tier_hardening.md: status `draft_v7_third_tier_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v8_ch15_bridge_third_tier.md: status `draft_v8_ch15_bridge_third_tier` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/16_d-value_在乎的最小形式化尝试_v9_philosophy_crossdomain_hardening.md: status `draft_v9_philosophy_crossdomain_hardening` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/Part_03_从选择到主体与价值/_SRT_D_VALUE_CANONICAL_5b1b_rewrite_note.md: status `proposed_patch` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Archive_52Chapter/Versioned_Drafts/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/BOOK_ARCHITECTURE_MAP_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_ARCHITECTURE_MAP_2026-05-30.md: status `working_meta` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/BOOK_RENUMBERING_DECISION_2026-05-30.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_RENUMBERING_DECISION_2026-05-30.md: status `superseded` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-02.md: status `active_draft_v3_sample_validated` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/BOOK_TRADITION_BOUNDARY_MAP_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/BOOK_TRADITION_BOUNDARY_MAP_2026-05-30.md: status `working_meta` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_BARAD_EXPRESSION_WRITEBACK_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_BARAD_EXPRESSION_WRITEBACK_2026-06-11.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_DEACON_EXPRESSION_WRITEBACK_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_DEACON_EXPRESSION_WRITEBACK_2026-06-11.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_MATURANA_VARELA_EXPRESSION_WRITEBACK_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_MATURANA_VARELA_EXPRESSION_WRITEBACK_2026-06-11.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_PRIGOGINE_STENGERS_EXPRESSION_WRITEBACK_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_PRIGOGINE_STENGERS_EXPRESSION_WRITEBACK_2026-06-11.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_SIMONDON_EXPRESSION_WRITEBACK_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_SIMONDON_EXPRESSION_WRITEBACK_2026-06-11.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_TRACES_OTHER_EXPRESSION_WRITEBACK_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Archive_Meta/Expression_Writebacks/_TRACES_OTHER_EXPRESSION_WRITEBACK_2026-06-11.md: status `completed` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_26Q_FORMAL_LAYER_CLEANUP_CHANGELOG_2026-06-23.md: missing frontmatter
 01_Source_Intuition/BOOK/BOOK_26Q_FORMAL_LAYER_CLEANUP_MANUAL_DECISIONS_2026-06-23.md: missing frontmatter
 01_Source_Intuition/BOOK/BOOK_ACADEMIC_EVIDENCE_RESERVE_2026-05-26.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_ACADEMIC_EVIDENCE_RESERVE_2026-05-26.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_ACT3_PACING_DIAGNOSIS_2026-07-04.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_ACT3_PACING_DIAGNOSIS_2026-07-04.md: status `diagnosis_v1_awaiting_founder_readthrough` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md: status `active_current_skeleton` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_CANDIDATE_ENDNOTE_DRAFTS_2026-07-04.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_CANDIDATE_ENDNOTE_DRAFTS_2026-07-04.md: status `pending_author_review` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_CHAPTER_CARDS_2026-05-22.md: status `active_current_reference` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_CHAPTER_CARD_SPEC.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
 01_Source_Intuition/BOOK/BOOK_CHAPTER_OPENING_DRAFTS_2026-05-23.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_CHAPTER_OPENING_DRAFTS_2026-05-23.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_COMBO_EVIDENCE_SCOUT_2026-07-04.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_COMBO_EVIDENCE_SCOUT_2026-07-04.md: status `pending_author_review` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_CORE_PROPOSITIONS_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_CORE_PROPOSITIONS_2026-05-30.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_CRAFT_HARVEST_ActiveInference_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer, status
 01_Source_Intuition/BOOK/BOOK_CRAFT_HARVEST_Damasio_FeelingKnowing_2026-06-11.md: missing recommended frontmatter keys: epistemic_layer, layer, status
 01_Source_Intuition/BOOK/BOOK_CROSSDOMAIN_MATERIALS_INDEX_2026-05-23.md: missing recommended frontmatter keys: claim_mode, epistemic_layer
+01_Source_Intuition/BOOK/BOOK_CROSSDOMAIN_MATERIALS_INDEX_2026-05-23.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS_POSITIONING_ADDENDUM_2026-07-02.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS_POSITIONING_ADDENDUM_2026-07-02.md: status `addendum_v0` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS_UNFREEZE_ADDENDUM_2026-07-02.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS_UNFREEZE_ADDENDUM_2026-07-02.md: status `active_override` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_ENDNOTE_TAGGING_SCHEME_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_ENDNOTE_TAGGING_SCHEME_2026-06-12.md: status `proposal_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_EXAMPLE_DISCIPLINE.md: missing frontmatter
 01_Source_Intuition/BOOK/BOOK_EXTERNAL_REVIEW_DISPOSITION_知微_2026-07-04.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_EXTERNAL_REVIEW_DISPOSITION_知微_2026-07-04.md: status `adjudicated_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/BOOK_FRONT_TITLES_TRADITIONAL_2026-05-23.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_INTERLUDE_BIG_QUESTIONS_INVENTORY_2026-06-16.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_INTERLUDE_BIG_QUESTIONS_INVENTORY_2026-06-16.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_INTERLUDE_POSTURE_CALIBRATION_2026-06-16.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_INTERLUDE_POSTURE_CALIBRATION_2026-06-16.md: status `active_p0` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_INTERLUDE_SAMPLE_镜片_2026-06-16.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_INTERLUDE_SAMPLE_镜片_2026-06-16.md: status `paradigm_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_MASTER_BEAM_PAGE_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_MASTER_BEAM_PAGE_2026-06-12.md: status `signed_v2.6` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/BOOK_NEW_DIRECTION_FOUNDATION_2026-05-21.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_NOTE_OBJECT_BEHIND_OBJECT_LLM_PUBLIC_REASON_2026-06-17.md: missing recommended frontmatter keys: epistemic_layer
+01_Source_Intuition/BOOK/BOOK_NOTE_OBJECT_BEHIND_OBJECT_LLM_PUBLIC_REASON_2026-06-17.md: status `active_note` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_POSITIONING_BRIEF_2026-06-07.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_POSITIONING_BRIEF_2026-06-07.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md: status `active_p0` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_PUBLIC_CONTENT_STRATEGY_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_PUBLIC_CONTENT_STRATEGY_2026-06-12.md: status `strategy_v2` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_Q01_Q14_BACKWARD_ALIGNMENT_PLAN_2026-06-11.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_Q01_Q14_BACKWARD_ALIGNMENT_PLAN_2026-06-11.md: status `completed_2026-06-11` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_Q15_Q26_CONSTRUCTION_NOTES_2026-06-15.md: missing frontmatter
 01_Source_Intuition/BOOK/BOOK_QUALIA_NECESSITY_EMBEDDING_AUDIT_2026-06-06.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_QUALIA_NECESSITY_EMBEDDING_AUDIT_2026-06-06.md: status `proposal` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_RC0_DISPATCH_KUHN_2026-06-13.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_RC0_DISPATCH_KUHN_2026-06-13.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_RC0_DISPATCH_KUHN_REPLY_2026-06-14.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_RC0_DISPATCH_KUHN_REPLY_2026-06-14.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_RC0_REVIEW_DISPATCH_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_RC0_REVIEW_DISPATCH_2026-06-12.md: status `rc0_dispatch_v1_1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_RC0_REVIEW_PACKET_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_RC0_REVIEW_PACKET_2026-06-12.md: status `rc0_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/BOOK_RC1_CLOSEOUT_ADDENDUM_2026-07-08.md: status `active_addendum` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_READABILITY_REVIEW_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_READABILITY_REVIEW_2026-06-12.md: status `diagnostic_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_RESELECTABILITY_META_STANDARD_REVISION_NOTES_2026-07-01.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_RESELECTABILITY_META_STANDARD_REVISION_NOTES_2026-07-01.md: status `notes_v0` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_RESELECTABILITY_RC1_CANDIDATE_STATUS_ADDENDUM_2026-07-01.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_RESELECTABILITY_RC1_CANDIDATE_STATUS_ADDENDUM_2026-07-01.md: status `addendum_v0` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_STRONGEST_OPPONENTS_MANUAL_2026-05-30.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_STRONGEST_OPPONENTS_MANUAL_2026-05-30.md: status `working_meta` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_DVALUE_GOVERNANCE_2026-06-03.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
 01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_TERMINOLOGY_SIMPLIFICATION_GUIDE_2026-06-03.md: status `active_current_v4_1_evidence_rule` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_VERIFICATION_READ_REPORT_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_VERIFICATION_READ_REPORT_2026-06-12.md: status `round1_complete` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/BOOK_VISUAL_SKELETON_EXECUTION_PLAN_2026-06-14.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/BOOK_VISUAL_SKELETON_EXECUTION_PLAN_2026-06-14.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/CODEX_EDIT_GUIDE_CHAPTER_ROLE_COMPRESSION_2026-06-27.md: status `completed` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/CODEX_EDIT_GUIDE_REPETITION_PACING_2026-06-27.md: status `completed` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/DEEP_RESEARCH_PROMPT_2026-06-05.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/DEEP_RESEARCH_PROMPT_2026-06-05.md: status `active_reusable_prompt` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/DEEP_RESEARCH_SOURCE_PACK_2026-06-05.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/DEEP_RESEARCH_SOURCE_PACK_2026-06-05.md: status `active_working_entry` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md: status `draft_v38` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md: status `draft_v27` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md: status `draft_v27` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md: status `draft_v24` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q04_最低非中立性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q04_最低非中立性.md: status `draft_v27` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q04b_选材.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q04b_选材.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q05_选择不是挑选.md: status `draft_v39` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q06_排除与阴影.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q06_排除与阴影.md: status `draft_v23` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q07_锚定.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q07_锚定.md: status `draft_v22` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q08_不可逆性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q08_不可逆性.md: status `draft_v29` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q09_现实厚度.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q09_现实厚度.md: status `draft_v32` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q10_秩序背景化.md: status `draft_v28` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q11_被选择.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q11_被选择.md: status `draft_v23` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q12_攸关.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q12_攸关.md: status `draft_v26` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q13_在乎.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q13_在乎.md: status `draft_v28` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q14_价值不是偏好.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q14_价值不是偏好.md: status `draft_v24` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q15_关切维度.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q15_关切维度.md: status `draft_v25` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q15b_能动性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q15b_能动性.md: status `draft_v3` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q16_主体沉积.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q16_主体沉积.md: status `draft_v29` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q17_意识.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q17_意识.md: status `draft_v32` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q18_秩序与自由.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q18_秩序与自由.md: status `draft_v18` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md: status `draft_v18` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md: status `draft_v20` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q21_苦难.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q21_苦难.md: status `draft_v20` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q22_方向.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q22_方向.md: status `draft_v29` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q23_共同体.md: status `draft_v24` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q24_AI.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q24_AI.md: status `draft_v31` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q25_选择广于意识.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q25_选择广于意识.md: status `draft_v20` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md: status `draft_v18` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论自反.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论自反.md: status `draft_v17` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/Q28_回到生成.md: status `draft_v20` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/_梳理26q_削减死气/01_CHANGELOG_第一部分_章末注下沉.md: missing frontmatter
 01_Source_Intuition/BOOK/Drafts_26Q/_梳理26q_削减死气/02_需人工决定_清单.md: missing frontmatter
 01_Source_Intuition/BOOK/Drafts_26Q/_梳理26q_削减死气/03_模板单调_清单与破格建议.md: missing frontmatter
 01_Source_Intuition/BOOK/Drafts_26Q/_梳理26q_削减死气/04_CHANGELOG_followup_去重与降姿态.md: missing frontmatter
 01_Source_Intuition/BOOK/Drafts_26Q/_梳理26q_削减死气/README.md: missing frontmatter
 01_Source_Intuition/BOOK/Drafts_26Q/幕前_三幕.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕前_三幕.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕前_二幕.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕前_二幕.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕前_五幕.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕前_五幕.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/BOOK/Drafts_26Q/幕前_四幕.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_Q23_Q24.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_Q23_Q24.md: status `draft_v3_lens_paradigm_solving_register` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_Q24_Q25.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_Q24_Q25.md: status `draft_v4_lens_paradigm_solving_register` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_一二幕.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_一二幕.md: status `draft_v4_reconstruction_absorbed_slot_disciplined` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_三四幕.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_三四幕.md: status `draft_v4_lens_paradigm_aggressive` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_二三幕.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_二三幕.md: status `draft_v4_reconstruction_absorbed` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_四五幕.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/幕间桥_四五幕.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/致读者.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/致读者.md: status `draft_v7` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/附录_三问使用指南.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/附录_三问使用指南.md: status `draft_v3` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/附录_术语表.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, status
 01_Source_Intuition/BOOK/Drafts_26Q/附录_跨域难题_重述而非解决.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Drafts_26Q/附录_跨域难题_重述而非解决.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/External_Theory_Notes/BARAD_SRT_ALIGNMENT_AND_INSERTION_MAP_2026-06-10.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/External_Theory_Notes/BARAD_SRT_ALIGNMENT_AND_INSERTION_MAP_2026-06-10.md: status `active_current` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/External_Theory_Notes/JAMES_SRT_ALIGNMENT_AND_INSERTION_MAP_2026-07-04.md: missing recommended frontmatter keys: epistemic_layer, layer, status
 01_Source_Intuition/BOOK/PROFESSIONAL_READING_BRIEF.md: missing frontmatter
 01_Source_Intuition/BOOK/PROFESSIONAL_READING_BRIEF_CN.md: missing frontmatter
@@ -122,179 +423,944 @@
 01_Source_Intuition/BOOK/Public_Content/SUBSTACK_EN_002_hands_in_the_concert_hall.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 01_Source_Intuition/BOOK/Public_Content/X_CN_001_三步检验法.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 01_Source_Intuition/BOOK/Public_Content/X_EN_001_three_step_test.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+01_Source_Intuition/BOOK/Public_Content/ZHIHU_CN_003_八章主干试读版配文.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/READER_AID_生成链全图_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/READER_AID_生成链全图_2026-06-12.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/READER_AID_速查与采样路径_2026-06-12.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/READER_AID_速查与采样路径_2026-06-12.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/STYLE_PATCHES/STYLE_PATCH_2026-06-14_正面接住句式替换.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+01_Source_Intuition/BOOK/STYLE_PATCHES/STYLE_PATCH_2026-06-14_正面接住句式替换.md: status `pending_manual_apply` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/TASTE.md: missing frontmatter
 01_Source_Intuition/BOOK/Visuals/FIG02_A_TO_APRIME_撤回不是回到原点.md: missing recommended frontmatter keys: epistemic_layer, layer
+01_Source_Intuition/BOOK/Visuals/FIG02_A_TO_APRIME_撤回不是回到原点.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/compass_artifact_wf-f0bd9f89-97ad-43f9-99ba-0bae805cfa58_text_markdown.md: missing frontmatter
 01_Source_Intuition/BOOK/compass_artifact_wf-f0bd9f89-97ad-43f9-99ba-0bae805cfa58_text_markdown_zh-CN.md: missing frontmatter
 01_Source_Intuition/BOOK/deep-research-report (0605).md: missing frontmatter
 01_Source_Intuition/BOOK/deep-research-report (1).md: missing frontmatter
 01_Source_Intuition/BOOK/从存在到秩序_全书诊断报告.md: missing frontmatter
+01_Source_Intuition/CORE_REVERSALS.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/Conversations/2026-07-12_SRT_Theory_Discussion_Transcript_CN.md: status `raw_source_noncanonical` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/Conversations/2026-07-12_SRT_本体论_意识_AI_交流原始转录.md: status `source_material_noncanonical` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/Conversations/2026-07-12_张宇鑫与十三维_SRT对话_校订整理版.md: status `edited_noncanonical` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/Conversations/2026-07-13_SRT_意识解释力_补充说明.md: status `draft_v3` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/INDEX.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/README.md: missing frontmatter
+01_Source_Intuition/SRT_CHOICEMAP_CONCERN_ECOLOGY_GOVERNANCE_TRACE_2026-07-11.md: status `source_trace_v0` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/SRT_CHOICEMAP_CONCERN_EMERGENCE_AND_CONVERGENCE_TRACE_2026-07-11.md: status `paused_v1` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md: status `source_trace_v0` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/SRT_CROSS_SCALE_SELECTION_PROXY_TRACE_2026-07-12.md: status `source_trace` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md: status `source_trace_v0` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md: status `author_confirmed_source_card_v0` outside ratchet enum (draft|active|frozen|archived)
+01_Source_Intuition/SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md: status `author_confirmed_continuation_card_v0` outside ratchet enum (draft|active|frozen|archived)
+02_Formal_Anchors/CLAIM_LEVEL_GUIDE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+02_Formal_Anchors/INDEX.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 02_Formal_Anchors/README.md: missing frontmatter
+03_Bridges/BRIDGE_INDEX.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+03_Bridges/BRIDGE_TEMPLATE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 03_Bridges/README.md: missing frontmatter
+03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+03_Bridges/SRT_Horizontal_Causality_Book_Usage_Bridge_2026-07-02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+03_Bridges/SRT_Selection_Dynamics_MSD_Bridge.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+04_External_Convergence/Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/Biology_Evolution/EC-DI-VIRTUAL-GOVERNOR-ALIGNMENT.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+04_External_Convergence/CONTRADICTION_LEDGER.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/Cognitive_Science/EC-COG-SENSING-QUALIA-GROUNDED-FUNCTIONALISM.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+04_External_Convergence/EVIDENCE_CARD_TEMPLATE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+04_External_Convergence/EVIDENCE_GRADING.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+04_External_Convergence/EVIDENCE_INDEX.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/FIRST_EVIDENCE_CANDIDATES.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/FIRST_EVIDENCE_CANDIDATES.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/Mathematics_Information/EC-IG-Fisher-PsiF.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/Mathematics_Information/EC-IG-Fisher-PsiF.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+04_External_Convergence/Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+04_External_Convergence/Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/README.md: missing frontmatter
-04_External_Convergence/REVIEW_MAP.md: missing recommended frontmatter keys: epistemic_layer
+04_External_Convergence/REVIEW_MAP.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+05_Public_Release/PUBLIC_GUARDRAILS.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+05_Public_Release/PUBLIC_INDEX.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_BUSINESS_PLAN_2026-06-17.md: missing recommended frontmatter keys: epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_BUSINESS_PLAN_2026-06-17.md: status `draft_v0_1` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_GATE0_VALIDATION_KIT_2026-06-17.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_GATE0_VALIDATION_KIT_2026-06-17.md: status `ready_to_run_v0_1` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_GATE1_BUILD_PLAN_2026-06-17.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_GATE1_BUILD_PLAN_2026-06-17.md: status `draft_v0_1_preparatory` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_MATURITY_STATE_MACHINE.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_MATURITY_STATE_MACHINE.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_PRD_2026-06-17.md: missing recommended frontmatter keys: epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/INDEPENDENT_RESEARCHER_PLATFORM_PRD_2026-06-17.md: status `draft_v0_1` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/Theory_Packets/THEORY_PACKET_SAMPLE_SRT.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/Theory_Packets/THEORY_PACKET_SAMPLE_SRT.md: status `dogfood_sample_v0` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/Theory_Packets/THEORY_PACKET_SAMPLE_joy-suspension-of-optimization.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/Theory_Packets/THEORY_PACKET_SAMPLE_joy-suspension-of-optimization.md: status `landing_example_v0` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/Projects/Independent_Researcher_Platform/Theory_Packets/THEORY_PACKET_TEMPLATE_v0.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+05_Public_Release/Projects/Independent_Researcher_Platform/Theory_Packets/THEORY_PACKET_TEMPLATE_v0.md: status `ready_to_use_v0` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/README.md: missing frontmatter
 05_Public_Release/SRT_IN_ONE_PAGE.md: missing recommended frontmatter keys: epistemic_layer
+05_Public_Release/SRT_IN_ONE_PAGE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 05_Public_Release/SRT_IN_ONE_PAGE_CN.md: missing recommended frontmatter keys: epistemic_layer
+05_Public_Release/SRT_IN_ONE_PAGE_CN.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/README.md: missing recommended frontmatter keys: epistemic_layer, layer
+90_Backstage/Incubation/_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md: status `note_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_D3_OPTION_SPACE_READOUT_NOTE.md: status `note_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md: status `seed_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION2_PHASE_TRANSITION_DUEL.md: status `duel_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md: status `pilot_result_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE2_ATTACK_LOG_2026-07-01.md: status `attack_log_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md: status `pilot_result_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md: status `seed_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PRODUCTFEEL_MEMO.md: status `pilot_memo_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md: status `seed_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_RUN_RESULTS.md: status `seed_v0_partial` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md: status `seed_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DIRECTION3_PAPER_PARKING_NOTE.md: status `parked` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md: status `seed_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md: status `level_a_applied_2026-07-05` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md: status `seed_v0` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Plans_Archive/README.md: missing recommended frontmatter keys: epistemic_layer, layer
+90_Backstage/Plans_Archive/SRT_NEXT_OPTIMIZATION_TODO.md: status `active_v23` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Plans_Archive/SRT_OPTIMIZATION_BACKLOG.md: status `v1` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Plans_Archive/SRT_PRACTICE_COMMUNITY_PLAN.md: missing frontmatter
+90_Backstage/Restructure_2026/BOOK_PROJECT/Q03_L0_imaginary_axis_followup_todo_2026-06-01.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/Q27_conversation_coverage_addendum_2026-05-31.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/Q27_followup_todo_memo_2026-05-31.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
 90_Backstage/Restructure_2026/BOOK_PROJECT/audits/BOUNDARY_GUARDRAIL_AUDIT_Drafts_26Q_2026-06-04.md: missing frontmatter
 90_Backstage/Restructure_2026/BOOK_PROJECT/audits/BOUNDARY_GUARDRAIL_RECHECK_Drafts_26Q_2026-06-06.md: missing frontmatter
+90_Backstage/Restructure_2026/BOOK_PROJECT/book_glossary_core_terms_ch00_08.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/book_writing_style_guide.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch00_08_crosslink_insertion_patch.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch04_v2_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v1_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v2_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v6_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v7_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v8_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch05_v9_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch06_order_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/ch06_v3_refinement_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/chapter_outline_recovered_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/dehomogenization_pass_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/existence_cobecoming_recovered_materials.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_closure_2026-05-10.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/part01_consistency_precision_pass_2026-05-10.md: status `active_audit` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/philosophical_style_rules.md: status `active_draft_v1` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/precision_guardrail_pass_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/recovered_materials.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/repository_material_inclusion_matrix.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/source_map_ch08_choice_operator.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/style_guide_addendum_part02_mechanism_depth.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/third_tier_philosophical_weight_notes.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-05-10_ch08_v5_third_tier_polished_regenerated_update_queue.md: status `ready_for_local_merge` outside ratchet enum (draft|active|frozen|archived)
 90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-05-29_choice_agency_emergence_backup.md: missing recommended frontmatter keys: epistemic_layer, layer
+90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-05-29_choice_agency_emergence_backup.md: status `backup_for_later_chapters` outside ratchet enum (draft|active|frozen|archived)
 90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-06-02_ontology_epistemology_generation_bridge.md: missing recommended frontmatter keys: epistemic_layer, layer
+90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/2026-06-02_ontology_epistemology_generation_bridge.md: status `ready_for_direct_merge` outside ratchet enum (draft|active|frozen|archived)
+90_Backstage/Restructure_2026/BOOK_PROJECT/update_queue/ch14_v6_maintext_candidate_merge_note_2026-05-14.md: status `pending_maintext_sync` outside ratchet enum (draft|active|frozen|archived)
 AGENTS.md: missing frontmatter
+AI/AI_POSITIONING_NOTE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Annex/01_Engineering_Interfaces.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Annex/02_AGI_Program_Themes_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Annex/03_Reservoir_Computing_Interface.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Split/01_Transformer_and_Judgment.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Split/02_Defects_and_CategoryView.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Split/03_AGI_Limits_and_Assistant_Vision.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Split/04_Roadmap_and_Appendix.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Split/05_Interface_Additions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Architecture_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Annex/01_Controlled_Hallucination_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Annex/02_Report_Reality_Moral_Status_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Annex/03_System_Derivation_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Framework_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Framework_Split/01_Diagnosis_and_Necessity.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Framework_Split/02_Architecture_and_Paths.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Framework_Split/03_Ethics_Uncertainty_and_Appendix.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Framework_Split/04_Interface_Additions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Consciousness_Framework_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/00_General_Boundary_Block.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/01_ActiveInference_Override.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/02_Passive_Recording_Fallacy.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/03_RTC_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/04_Suffering_Condition_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/General_Boundary_Block_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/General_Boundary_Block_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/General_Boundary_Block_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Split/01_dValue_and_Decoupling.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Split/02_PseudoSelection_and_Barrier.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Split/03_HumanReadable_Argument.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Split/04_Ethics_and_Falsification.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Split/05_Appendix_and_Interfaces.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/Ontology_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_00_Crisis.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_01_Ontology.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_01_Ontology_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_02_Mortality_Wisdom.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_03_Consciousness_Framework.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_03_Consciousness_Framework_CompactCore.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_Agency_Responsibility_Note.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_Architecture.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_Architecture_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_Claim_Status.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/SRT_AI_Consciousness_Evaluation_Rubric.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/_SRT_AI_Bridge.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md: status `patch_v0_1` outside ratchet enum (draft|active|frozen|archived)
+ANNEX_REGISTRY.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Bridge/SRT_Adjacent_Theory_Interface_Index.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
+Bridge/SRT_Beautiful_Loop_Active_Inference_Interface.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Bridge/SRT_Context_Coherence_Intelligence_Interface.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+CANONICAL_REGISTRY.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 CLAUDE.md: missing frontmatter
+Core/Axioms_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Axioms_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Axioms_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Axioms_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/00_General_Boundary_Block.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/01_AT_SRT_Interface_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/02_Minimal_Embodiment_Threshold.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/03_Constructive_Fracture_Interface.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/04_InVitro_LowD_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/05_Type_to_Individual_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/06_Cognitive_Capitalization_Batch.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/07_SelectionBarrier_L0L1_PriorSystem.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/08_MoralPredictionError_MultiG_System.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/09_ErrorAccumulation_L2Reconstruction.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/10_ROS_Apoptosis_ErrorDose.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/12_ProxyModel_OcclusionPhases_Intervention.md: status `hardened_v2.1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/13_SocialDelegation_DJudgment_Coordination.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Annex/14_ST_Rhythm_Spatial_Draft.md: missing recommended frontmatter keys: epistemic_layer
+Core/Dynamics_Scaling_Annex/14_ST_Rhythm_Spatial_Draft.md: status `annex_candidate` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Split/00_Formal_Core.md: helper-layer file uses claim_mode: canonical
+Core/Dynamics_Scaling_Split/00_Formal_Core.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Split/01_Master_Equation_and_ScaleCoupling.md: helper-layer file uses claim_mode: canonical
+Core/Dynamics_Scaling_Split/01_Master_Equation_and_ScaleCoupling.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Split/02_Friction_Time_Awakening.md: helper-layer file uses claim_mode: canonical
+Core/Dynamics_Scaling_Split/02_Friction_Time_Awakening.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Split/03_RecursiveDepth_and_Appendix.md: helper-layer file uses claim_mode: canonical
+Core/Dynamics_Scaling_Split/03_RecursiveDepth_and_Appendix.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Dynamics_Scaling_Split/04_Interface_Additions.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Core/Dynamics_Scaling_Split/README.md: helper-layer file uses claim_mode: canonical
+Core/Dynamics_Scaling_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Equations_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Equations_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Equations_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Equations_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Ontology_L0L1_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Ontology_L0L1_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Ontology_L0L1_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Ontology_L2_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Ontology_L2_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Ontology_L2_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Ontology_L2_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Operator_Basics_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Operator_Basics_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Operator_Basics_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/Operator_Basics_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Closure_Compatibility_Hardening.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_00_Intro.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_01_Axioms.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_12a_Ontology_L0L1.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_12a_SPLIT_PLAN.md: status `planning_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_12b_Closure_Compatibility_Annex.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_12b_L2_Hardening_Operational_Signature_Addendum.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_12b_Merge_Targets_2026_04_21.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_12b_Ontology_L2.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_13a_Operator_Basics.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_13b_Operator_Advanced.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_14_Dynamics_Scaling.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_21_Formal_Axioms.md: status `active_v3` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_21_Minimal_Axioms.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_21b_Constitutive_Theorems.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_21c_Bridge_Hypotheses.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_22_Equations.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_24_Canonical_Merge_Draft.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_24_Discriminating_Predictions.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_24_Floor_Normativity_Verification.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_24_Index.md: status `active_v4` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_25_26_Interface_Index.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_25_Canonical_Insert_Patch.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_26_MISA_Attractor_Interface.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_NormativeGradient.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Core_PhaseState_TripleCondition.md: status `hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Experimental_Applications.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Experimental_Core.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_OPEN_TENSIONS.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/SRT_Validation_Template.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core/_SRT_Core_Bridge.md: status `axiomatic_hybrid_v2` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/Collective_Tower_Hardening_Notes_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/Collective_Tower_Hardening_Notes_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/Collective_Tower_Hardening_Notes_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/Collective_Tower_Hardening_Notes_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/L1_Formalism_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/L1_Formalism_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/L1_Formalism_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/Reference_Dynamics_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/Reference_Dynamics_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/Reference_Dynamics_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Collective_Selection.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Collective_Tower_Hardening_Notes.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Constitution_One_Page_CN.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Constitution_Seven_Theses.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Core_Text_CN.md: status `legacy_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Core_Text_CN_Euclid.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 Core_Law/SRT_Core_Text_EN.md: missing frontmatter
-FRONTSTAGE_RESTRUCTURE_PLAN.md: missing frontmatter
+Core_Law/SRT_Individuation.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Irreversibility.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_L0_Metaphysics.md: status `canonical_v2` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_L0_Philosophy_Bridge.md: status `canonical_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_L1_Formalism.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_L1_Hardening_Notes.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Occlusion_Dynamics.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Reference_Axioms.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Reference_Dynamics.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Reference_Ontology.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Reference_Scaling.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Selection_Argument.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_Suffering.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/SRT_System_Derivation_Alignment.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/_SRT_Core_Law_Hardening_Index.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/hooks/COLL08_NTIC_Situated_Individuation_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Core_Law/patches/SRT_CoreLaw_COLL08_NTIC_Situated_Individuation_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+D_VALUE_ALIGNMENT.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Experiments/AUDIT.md: status `final_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_D_Value_vs_Salience_Analysis_Plan_v0.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_D_Value_vs_Salience_Data_Dictionary_v0.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_D_Value_vs_Salience_Experiment_Package_Review_v0.md: status `review_v0` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_D_Value_vs_Salience_PreRating_Form_v0.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_D_Value_vs_Salience_PreRating_Implementation_Checklist_v0.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_D_Value_vs_Salience_Stimulus_Bank_v0.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_Experimental_Roadmap_v1.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_Pilot_Cards_v1.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Experiments/SRT_Pilot_Ethics_Note_v0.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Experiments/anchoring_2c_controllability/README.md: status `phase2c_locked_holdout_go` outside ratchet enum (draft|active|frozen|archived)
+Experiments/anchoring_bandit_feasibility/README.md: status `phase2_feasibility_go_superseded_by_2b_2c` outside ratchet enum (draft|active|frozen|archived)
+Experiments/anchoring_bandit_holdout/README.md: status `phase2b_locked_holdout_no_go` outside ratchet enum (draft|active|frozen|archived)
+Experiments/anchoring_double_well/README.md: status `phase1_frozen` outside ratchet enum (draft|active|frozen|archived)
+Experiments/anchoring_tiny_mdp_confirmatory/README.md: status `confirmatory_locked_holdout_go` outside ratchet enum (draft|active|frozen|archived)
+Experiments/choicemap_explicit_scaffolding/README.md: status `active_locked` outside ratchet enum (draft|active|frozen|archived)
+Experiments/choicemap_explicit_scaffolding/outputs/README.md: status `active_locked` outside ratchet enum (draft|active|frozen|archived)
+Experiments/selective_resynchronization_matched_paths/README.md: status `feasibility_closed` outside ratchet enum (draft|active|frozen|archived)
+Experiments/selective_resynchronization_mvp/README.md: status `locked_mvp` outside ratchet enum (draft|active|frozen|archived)
+Glossary/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_00_Governance_and_Prelude.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_01_Core_Symbols.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_02_Notation.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_03_Domain_Parameters.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_04_Key_Concepts.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_05_Expectation_and_Selection.md: status `merged_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_05_Hypothesis_Index.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_06_Locations_and_Usage.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+Glossary/SRT_Glossary_Core25_Core26_Bridge_Terms.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Governance/AI_RESELECTABILITY_AUDIT_FRAME_2026-07-01.md: missing recommended frontmatter keys: epistemic_layer, layer
+Governance/AI_RESELECTABILITY_AUDIT_FRAME_2026-07-01.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/BOOK_THIRD_TIER_DIRECTION.md: status `active_draft` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/README.md: status `archived_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/SRT_CANONICAL_SOURCE_AUDIT_2026-04.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/SRT_CORE_TEXT_ADJUDICATION_2026-04.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/SRT_INTERNAL_OPTIMIZATION_PLAN_2026Q1.md: status `planning_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/SRT_MATERIAL_RERUN_AUDIT_2026-04.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/SRT_REPO_OPTIMIZATION_EXECUTION_PLAN_2026-04.md: status `planning_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/_SRT_EXPLAINABILITY_AUDIT.md: status `archived_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/_SRT_FRONTMATTER_AUDIT.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/_SRT_QUALITY_METRICS.md: status `archived_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/_SRT_RELEASE_2026-02.md: status `published_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/Archive_2026-06-05/_SRT_SLIMMING_CHANGELOG_2026-02.md: status `published_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/FRONTSTAGE_RESTRUCTURE_PLAN.md: missing frontmatter
+Governance/Governance_Load_Reduction_2026-07-20.md: missing recommended frontmatter keys: epistemic_layer, layer
+Governance/README.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_BOOK_TO_CANONICAL_INCREMENT_SHIM.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_CANONICAL_FREEZE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_CLAIM_LADDER.md: status `active_v1_1` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_CLAIM_MODE_AUDIT.md: status `active_ledger_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_COORDINATE_SYSTEM.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_EDIT_PROTOCOL.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md: status `protocol_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_HARNESS_TESTS.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_L1_Interface_Spec.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_LAB_HYPOTHESES.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_Layer_Guard.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/SRT_POSITIONING.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_CHANGELOG_2026.md: status `historical_appendable_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_CHANGELOG_2026_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_CHANGELOG_2026_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_CHANGELOG_2026_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_CHANGELOG_2026_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_CORE_LAW_CORE_SYNC.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_DIFF_PIPELINE_GUIDE.md: status `legacy_reference_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_DOC_ENGINEERING_GUIDE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_DOMAIN_TEMPLATE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_EXECUTION_PLAN.md: status `legacy_compat_v3` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_EXPLANATION_PROTOCOL.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_GOVERNANCE_PIPELINE.md: status `active_v3` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_QUALITY_SCORECARD.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_RELEASE_NOTE_TEMPLATE.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
+Governance/_SRT_WEEKLY_THEORY_REVIEW.md: status `active_log_v2` outside ratchet enum (draft|active|frozen|archived)
 HEARTBEAT.md: missing frontmatter
+LONGFORM_SPLITS.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Manifesto/SRT_MANIFESTO.md: status `manifesto_v1` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md: status `active_v6` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2021_07_02_Philosophy_Frankish_Depsychologization_Panpsychism_OUP.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2024_06_10_Philosophy_ComplexSystems_Hierarchical_Emergence_Quanta_arXiv.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2025_07_10_Phys_Spontaneous_Collapse_Universe_BrighterSide.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2025_10_03_Neuro_Creative_Experience_Brain_Clocks_NatCommun.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2025_10_13_Philosophy_Heil_Emergence_Bad_Science_IAI.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
 Materials/2026/SRC_2025_12_23_Philosophy_Disunity_of_Science_IAI.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
 Materials/2026/SRC_2026_01_28_AI_Unplugging_Paradox_Biological_Idealism_arXiv.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_04_01_Neuro_HGA_Spike_Dissociation_Nature.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_04_26_Neuro_BOLD_CMRO2_Uncertainty_bioRxiv.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_04_27_Philosophy_Agency_Pacherie_Cambridge.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_04_27_Phys_Cosmological_Principle_NewScientist.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_04_27_Phys_Quantum_Proper_Time_PopularMechanics.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_05_01_Philosophy_Embodied_Embedded_Cognitive_Development_Preprint.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_05_05_CoreLaw_NTIC_CommunityFirst_Entropy.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_05_07_Philosophy_Rovelli_No_Hard_Problem_Noema.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_05_08_Neuro_Propofol_Traveling_Waves_bioRxiv.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_05_08_Philosophy_ActiveInference_DiscriminatoryCognition_BioSystems.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_05_14_AI_WorldModels_RSTA_Issue.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Materials/2026/SRC_2026_05_18_Philosophy_Godel_Incompleteness_Quanta.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
 Materials/2026/SRC_2026_05_19_AI_Language_Autogeneration_IAI.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
 Materials/2026/SRC_2026_05_20_NEUROSCIENCE_Quantum_Emotions_Memory_Newcastle_NeuroscienceNews.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
 Materials/2026/SRC_2026_05_20_Physics_RaQM_Discrete_Hilbert_Palmer_IAI_PNAS.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
 Materials/2026/SRC_2026_05_22_PHILOSOPHY_Association_As_Causation_Essentia.md: missing recommended frontmatter keys: epistemic_layer, id, layer, status, type
+Materials/2026/SRC_2026_06_11_Neuro_Damasio_FeelingKnowing_Pantheon.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_06_11_Philosophy_BlindSpot_Frank_Gleiser_Thompson_MITPress.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_06_11_Philosophy_Deacon_IncompleteNature_Norton.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_06_11_Philosophy_Simondon_Individuation_UMinnesota.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_04_Philosophy_James_PrinciplesOfPsychology_Holt.md: status `source_card` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_AI_Sekrst_Train_Mockingbird.md: status `active_v2_fulltext` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_Cognitive_Imaizumi_Sensorimotor_Time_Agency.md: status `active_v1_fulltext` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_Logic_Georgatos_Nondeterministic_Change.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_Method_Sawyer_Subtraction.md: status `active_v2_fulltext` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_Philosophy_Rosenhagen_Explanatory_Identity.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_Philosophy_Sulic_Logical_Time_Subject.md: status `active_v2_fulltext` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_Philosophy_Wu_Biased_Reasoning.md: status `active_v2_fulltext` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_16_Semantics_Simonelli_Implication_Space.md: status `active_v2_fulltext` outside ratchet enum (draft|active|frozen|archived)
+Materials/2026/SRC_2026_07_17_Consciousness_Ventura_Hard_Problem_Not_Real.md: status `active_v1_fulltext_user_supplied` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/External_Readings/2026-05-07_Kazazian_fNIRS_DoC_SRT_Writeback.md: status `active_note_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/External_Readings/2026-05-07_LuoHuan_Consciousness_Finitude_SRT_Writeback.md: status `active_note_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/External_Readings/2026-05-07_Pantis_MidThalamus_SubjectiveStates_SRT_Writeback.md: status `active_note_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Immune_Dist_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Immune_Dist_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Immune_Dist_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Neural_Mechanisms_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Neural_Mechanisms_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Neural_Mechanisms_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Neural_Mechanisms_Split/03_Part04.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/Neural_Mechanisms_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/README.md: missing frontmatter
+Neuroscience/SRT_Clin_00_IIT_PCI.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Clin_01_Pathology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Clin_02_FEP.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Clin_03_DMN_Networks.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Consciousness_Mechanisms.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_FEP_MetaAwareness_AffectiveSelf_Bridge.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neural_Mechanisms.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neural_Mechanisms_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_06_Field_Effects.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_07_Evo_Devo.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_08_Immune_Dist.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_09_BioQuantum_CISS_Amendment.md: status `hypothesis_boundary_v2` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_09_Integ_Eq.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_10_Advanced_Models.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_Axioms_Claim_Status.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_Experiments.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuro_Predictions_Table.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/SRT_Neuroscience_Claim_Status.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/SRT_Neuroscience_Hardening_N10_BTSP_v0_1.md: missing frontmatter
 Neuroscience/SRT_Neuroscience_Hardening_N11_Transition_Field_Subjective_Time_v0_1.md: missing frontmatter
 Neuroscience/SRT_Neuroscience_Hardening_N12_Astrocyte_Plastic_Networks_v0_1.md: missing frontmatter
 Neuroscience/SRT_Neuroscience_Hardening_N1_N9_Integration_Hooks_for_N10_N12.md: missing frontmatter
 Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md: missing frontmatter
+Neuroscience/_SRT_Neuro_Axioms.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/_SRT_Neuroscience_Hardening_Index.md: missing frontmatter
-Operations/Book_Defensive_Tone_Audit_2026-06-14.md: missing recommended frontmatter keys: epistemic_layer
-Operations/Frontstage_Navigation_Consistency_Audit_2026-05-05.md: missing recommended frontmatter keys: epistemic_layer
+Neuroscience/hooks/CONSC14_Propofol_Traveling_Wave_Reorganization_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/hooks/NEURAL15_Creative_Experience_Brain_Clock_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/hooks/NEURAL16_BOLD_CMRO2_Uncertainty_Gate_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/hooks/NEURAL17_HGA_Spike_Dissociation_Gate_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/patches/SRT_Neuro_CONSC14_Propofol_Traveling_Wave_Reorganization_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/patches/SRT_Neuro_NEURAL15_Creative_Experience_Brain_Clock_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience/patches/SRT_Neuro_NEURAL17_HGA_Spike_Dissociation_Gate_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience_Annex/07_Field_Effects_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience_Annex/08_Evo_Devo_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience_Annex/09_Geometric_Regularity_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience_Annex/10_Integration_Theory_Comparisons.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Neuroscience_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/AI_Usage_Audit_2026-07-15/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/AI_Usage_Audit_2026-07-15/SRT_AI_USAGE_GUIDE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/AI_Usage_Audit_2026-07-15/SRT_OPUS_SYSTEM_INSTRUCTIONS.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/AI_Usage_Audit_2026-07-15/templates/MATERIAL_REVIEW_TEMPLATE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/AI_Usage_Audit_2026-07-15/templates/SAFE_PATCH_PROMPT_TEMPLATE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/AI_Usage_Audit_2026-07-15/templates/STRUCTURE_EXTRACTION_TEMPLATE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md: status `closed_round1_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/AI_Split_Annex_PreAudit_2026-04-29.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Agent_Context_Retrieval_Audit_2026-05-10.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Book_Defensive_Tone_Audit_2026-06-14.md: missing recommended frontmatter keys: epistemic_layer
+Operations/Archive_Records/Book_Defensive_Tone_Audit_2026-06-14.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Book_Retrieval_Governance_Pass_2026-07-12.md: status `implemented_in_pr` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Closure_Index_2026-04-29.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Core25_Core26_Navigation_Cleanup_Record_2026-04-29.md: status `completed_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Engineering_Structure_Pass_2026-07-07.md: status `closed_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Frontstage_Navigation_Consistency_Audit_2026-05-05.md: missing recommended frontmatter keys: epistemic_layer
+Operations/Archive_Records/Frontstage_Navigation_Consistency_Audit_2026-05-05.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/H1_Index_Readme_Glossary_Sync_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/H3_Symbol_Table_Governance_Patch_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Large_File_Audit_2026-05-09.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Neuroscience_Annex_Round1_Closure_Report.md: status `active_report_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_A2_Neuroscience_06_10_Audit.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_A_Neuroscience_AI_Navigation_Audit.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_B_Neuro_06_10_Navigation_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_C0_C1_AI_Split_Annex_PreAudit_Record.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_C2_AI_Interface_Extraction_Adjudication.md: status `active_adjudication_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_C3a_AI_Controlled_Hallucination_Interface_Extraction_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_C3b_AI_Report_Reality_Moral_Status_Interface_Extraction_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_C4a_AI_Architecture_Engineering_Interface_Extraction_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_C4b_AI_AGI_Program_Themes_Interface_Extraction_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md: status `active_adjudication_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md: status `adjudication_complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D0_Neuro_09_PreExtraction_Audit.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D_Batch1_Neuro_09_Extraction_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D_Batch2_GRT_Deduplication_Adjudication.md: status `adjudication_complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D_Batch2b_Neuro_07_PreExtraction_Audit.md: status `audit_complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P0_Inventory_Frontmatter_Audit.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P0b_Exact_Inventory_Handoff.md: status `active_handoff_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P0b_Exact_Inventory_Report.md: status `complete_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P1_Frontmatter_Normalization_Closure_Report.md: status `closed_p1_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P1a_Minimal_Frontmatter_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P1b_Frontmatter_Canonical_ClaimMode_Handoff.md: status `active_handoff_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P1b_Frontmatter_Canonical_ClaimMode_Record.md: status `complete_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P2_High_Risk_Category_Adjudication.md: status `active_adjudication_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P2_Interface_Closure_Report.md: status `closed_p2_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P2a_QBox_Interface_Adjudication.md: status `active_adjudication_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P2a_QBox_Interface_Extraction_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P2b_Earth_Accretion_Interface_Adjudication.md: status `active_adjudication_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_P2b_Earth_Accretion_Interface_Extraction_Record.md: status `active_record_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Physics_Split_Annex_PreAudit_2026-04-29.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/README.md: missing recommended frontmatter keys: epistemic_layer, layer
+Operations/Archive_Records/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/SRT_Terminology_Consistency_Audit.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Structural_Governance_Rollup_2026-04-29.md: status `active_rollup_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/_SRT_CORE24_NAV_INTEGRATION_PATCH.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/_SRT_EXPLAINABILITY_AUDIT.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+Operations/Archive_Records/_SRT_EXPLAINABILITY_AUDIT.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/_SRT_MEDIA_PACK_2026-02-28_TOPIC1.md: helper-layer file uses claim_mode: canonical
+Operations/Archive_Records/_SRT_MEDIA_PACK_2026-02-28_TOPIC1.md: status `draft_v2` outside ratchet enum (draft|active|frozen|archived)
+Operations/Audits/Maps/SRT_EPSILON_PG_DEPENDENCY_MAP.md: status `record_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Audits/Maps/SRT_KAPPA0_DEPENDENCY_MAP.md: status `record_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Audits/SRT_CONCEPT_DELETION_GOVERNANCE_PASS1.md: status `record_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Audits/SRT_CONCEPT_DELETION_PASS2_KAPPA_EPSILON.md: status `record_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Codex_Prompts/2026-04-27_Philosophy_Long_File_PH_SS_Direct_Pointers.md: status `ready_for_codex` outside ratchet enum (draft|active|frozen|archived)
+Operations/Codex_Prompts/CODEX_PROMPT_Long_Foundations_Axioms_Deeper_Reorganization.md: status `ready_for_codex` outside ratchet enum (draft|active|frozen|archived)
+Operations/Codex_Prompts/CODEX_PROMPT_Philosophy_Long_File_PH_SS_Direct_Pointers.md: status `ready_for_codex` outside ratchet enum (draft|active|frozen|archived)
+Operations/Codex_Prompts/CODEX_PROMPT_Philosophy_Long_Foundations_Axioms_Refactor.md: status `ready_for_codex` outside ratchet enum (draft|active|frozen|archived)
+Operations/Codex_Prompts/CODEX_PROMPT_Second_Formula_Role_Pass.md: status `ready_for_codex` outside ratchet enum (draft|active|frozen|archived)
+Operations/Codex_Prompts/CODEX_PROMPT_Update_Registry_For_PH_SS_Files.md: status `ready_for_codex` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-03_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-03_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-03_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-04_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-04_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-05_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-06_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/2026-07_Part01.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Operations/Material_Log/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/README.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Operations/README_如何给Pro模型上传书稿.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md: status `phase_a_complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_WRITEBACK_PLAN_2026-07-12.md: status `active_execution_plan` outside ratchet enum (draft|active|frozen|archived)
+Operations/SRT_PRO_DEEP_RESEARCH_BOOT_FILE_2026-06-05.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/SRT_RESEARCH_MEMO_2026-07.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Status_History/2026-03_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Status_History/2026-03_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Status_History/2026-03_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Status_History/2026-04_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Status_History/2026-04_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Status_History/2026-04_to_2026-07_Dashboard_Part.md: missing recommended frontmatter keys: epistemic_layer, layer
+Operations/Status_History/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/Status_History/undated_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_ARTICLE_WORKFLOW.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_AUTOMATION_SETUP.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_AUTOMATION_SETUP.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md: status `active_v4` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_CHOICE_TRACE_LOG.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_CHOICE_TRACE_WRITEBACK_PLAN_2026-07-10.md: status `plan_v1_phase1_executed_2026-07-10` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_DAILY_REVIEW_LOG.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_DAILY_REVIEW_LOG.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_DAILY_REVIEW_PIPELINE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_DAILY_REVIEW_PIPELINE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md: status `completed_initial_audit` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.md: status `generated` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md: status `generated` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_DEEP_NAV_TODO.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_DIALOGUE_LOG.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_DIALOGUE_LOG.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_KNOWLEDGE_REVIEW_PIPELINE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_KNOWLEDGE_REVIEW_PIPELINE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_MATERIAL_LOG.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_MATERIAL_LOG.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_MATERIAL_PIPELINE.md: helper-layer file uses claim_mode: canonical
-Operations/_SRT_MEDIA_PACK_2026-02-28_TOPIC1.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_MATERIAL_PIPELINE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_MEDIA_PIPELINE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_MEDIA_PIPELINE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_MEDIA_QUEUE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_MEDIA_QUEUE.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_MEDIA_TOPIC_TEMPLATE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_MEDIA_TOPIC_TEMPLATE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_OPERATIONS_SCHEDULE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_OPERATIONS_SCHEDULE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_PAPER_CANDIDATES.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_PAPER_CANDIDATES.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_PAPER_DRAFT_ACTIVE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_PAPER_DRAFT_ACTIVE.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_PAPER_PIPELINE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_PAPER_PIPELINE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_REVIEW_QUEUE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_REVIEW_QUEUE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_SIGNAL_LOG.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_SIGNAL_LOG.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_SIGNAL_PIPELINE.md: helper-layer file uses claim_mode: canonical
+Operations/_SRT_SIGNAL_PIPELINE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Operations/_SRT_STATUS_HISTORY.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/material_log_entries/2026-04-28_SRC_2025_07_10_Phys_Spontaneous_Collapse_Universe_BrighterSide.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Operations/material_log_entries/2026-04-28_SRC_2025_07_10_Phys_Spontaneous_Collapse_Universe_BrighterSide.md: status `processed_A` outside ratchet enum (draft|active|frozen|archived)
 Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Philosophy_Agency_Pacherie_Cambridge.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Philosophy_Agency_Pacherie_Cambridge.md: status `processed_A_minus` outside ratchet enum (draft|active|frozen|archived)
 Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Phys_Cosmological_Principle_NewScientist.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Phys_Cosmological_Principle_NewScientist.md: status `processed_A` outside ratchet enum (draft|active|frozen|archived)
 Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Phys_Quantum_Proper_Time_PopularMechanics.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Operations/material_log_entries/2026-04-28_SRC_2026_04_27_Phys_Quantum_Proper_Time_PopularMechanics.md: status `processed_A` outside ratchet enum (draft|active|frozen|archived)
 Operations/material_log_entries/2026-06-11_SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Operations/material_log_entries/2026-06-11_SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md: status `processed_A` outside ratchet enum (draft|active|frozen|archived)
 Operations/material_log_entries/2026-06-11_SRC_2026_06_11_Philosophy_BlindSpot_Frank_Gleiser_Thompson_MITPress.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Operations/material_log_entries/2026-06-11_SRC_2026_06_11_Philosophy_BlindSpot_Frank_Gleiser_Thompson_MITPress.md: status `processed_A` outside ratchet enum (draft|active|frozen|archived)
+Output/pdf/从存在到秩序_哲学读者试读版_2026-07-04.md: missing frontmatter
+Output/pdf/从存在到秩序_哲学读者试读版_2026-07-04_来源清单.md: missing frontmatter
+Output/pdf/从存在到秩序_完整稿_2026-07-04.md: missing frontmatter
+Output/pdf/从存在到秩序_完整稿_2026-07-04_来源清单.md: missing frontmatter
 Output/从存在到秩序_哲学读者试读版_2026-06-23.md: missing frontmatter
 Output/从存在到秩序_完整版_2026-06-23.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_new.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v10_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v11_anonymous_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v12_anonymous_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v12_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v13_anonymous_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v13_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v14_anonymous_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v14_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v15_anonymous_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v15_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v15_zh_archive.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v3.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v4.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v5_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v6_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v7_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v8_compact_submission.md: missing frontmatter
-Papers/ALIFE2026_SelectiveRealityConstruction_v9_submission.md: missing frontmatter
-Papers/ALIFE2026_linklings_fill_guide.md: missing frontmatter
-Papers/ALIFE2026_submission_checklist.md: missing frontmatter
-Papers/SRT_Article_BorrowedDirection_v1_2026-04.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Papers/SRT_Article_BorrowedDirection_v2_2026-04.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Papers/SRT_Article_GoodTeacher_v1_2026-04.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Papers/SRT_Article_SelectionSubject_v1_2026-04.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Papers/SRT_Article_ValueHiddenness_2026-04.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Papers/SRT_Article_ValueHiddenness_v3_2026-04.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Papers/SRT_PhilPapers_Review_v2.md: missing frontmatter
-Papers/SRT_PhilPapers_Review_v2_CN.md: missing frontmatter
-Papers/alife2026_pilot_results/pilot_results_summary.md: missing frontmatter
-Papers/markov_blanket/paper_markov_blanket_d_value.md: missing frontmatter
-Papers/ontological_friction/figures/FIGURE_MAP.md: missing frontmatter
-Papers/ontological_friction/frontiers_contribution_to_field_statement.md: missing frontmatter
-Papers/ontological_friction/frontiers_cover_letter.md: missing frontmatter
-Papers/ontological_friction/frontiers_figure_captions.md: missing frontmatter
-Papers/ontological_friction/frontiers_response_to_reviewers.md: missing frontmatter
-Papers/ontological_friction/frontiers_scope_statement.md: missing frontmatter
-Papers/ontological_friction/frontiers_submission_checklist.md: missing frontmatter
-Papers/ontological_friction/frontiers_submission_fields.md: missing frontmatter
-Papers/ontological_friction/frontiers_submission_fields_zh.md: missing frontmatter
-Papers/ontological_friction/frontiers_submission_qc.md: missing frontmatter
-Papers/ontological_friction/paper_ontological_friction.md: missing frontmatter
-Papers/ontological_friction/paper_ontological_friction_frontiers_submission.md: missing frontmatter
-Papers/ontological_friction/paper_ontological_friction_zh.md: missing frontmatter
-Papers/working_notes/README.md: missing frontmatter
+Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md: status `active_bridge_hardening` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/01_PH_SS_Objection_Crosswalk.md: status `active_bridge_hardening` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/02_PH_SS_Hardening_Execution_Plan.md: status `active_bridge_hardening` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/03_Selection_Realism_Layered_Realism_CompactPatch.md: status `active_bridge_patch` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Agency_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Agency_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Agency_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Split/03_Part04.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Ethics_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/00_General_Boundary_Block.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/01_Synchronicity_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/02_FreeWill_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/03_Consciousness_Taxonomy_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/04_Truth_Theory_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/05_Wittgenstein_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/06_Qualia_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/07_Daoism_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/08_QuantumConsciousness_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/09_Epistemic_Delegation_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/09b_FrictionProbing_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/09c_Lahav_Relativistic_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/10_MentalRepresentation_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/11_Concepts_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/12_SelfConsciousness_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/13_MindBody_Interface_Batch.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Split/01_Axiom_Bridge_and_Derivations.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Split/02_Explanatory_Gap_and_Saturation.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Split/03_Paradox_and_Metaphysics.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Split/04_Mind_Philosophy_and_Predictions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Split/05_Interface_Batch_2026_03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Foundations_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/L2_Dynamics_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/L2_Dynamics_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/L2_Dynamics_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Language_Eco_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Language_Eco_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Language_Eco_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Long_Foundations_Axioms_Reorganization_Plan_2026-04-27.md: status `plan_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/PH_SS_Hardening_Audit_2026-04-27.md: status `active_audit_v3` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/Papers/Before_Objects_Cover_Letter.md: missing frontmatter
 Philosophy/Papers/Before_Objects_Selection_Realism.md: missing recommended frontmatter keys: type
+Philosophy/Papers/Before_Objects_Selection_Realism.md: status `working_draft_v0_6` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/Papers/Before_Objects_Selection_Realism_Submission_EN.md: missing frontmatter
+Philosophy/Papers/Biomarkers_Before_Treatments_NT1_Decoupled_TCI.md: status `assembly_v4` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/Papers/SRT_Selection_Realism_PhilPapers_Update_2026.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Philosophy/Papers/SRT_Selection_Realism_PhilPapers_Update_2026.md: status `public_submission_draft` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/Papers/SRT_Selection_Realism_PhilPapers_Update_v2.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, status, type
+Philosophy/Political_Philosophy_Split/00_Political_Ontology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Political_Philosophy_Split/01_Legitimacy_Freedom_Rights.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Political_Philosophy_Split/02_Justice_Institutions_Democracy.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Political_Philosophy_Split/03_Emergency_and_Pathology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Political_Philosophy_Split/04_Comparative_Positioning_and_Minimum_Program.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Political_Philosophy_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/README.md: status `active_v3` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Agency_Selection_Freedom_Supplement.md: status `merged_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Causality_Time.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Consciousness_Conditions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Ethics_Agency.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Ethics_Casebook.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Ethics_PH_SS_Guardrails.md: status `active_bridge_guardrail` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_FEP_Comparison.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_HardProblem_Epistemology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_IIT_Comparison.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/SRT_L0_Ontological_Status.md: missing frontmatter
+Philosophy/SRT_Merged_Provenance_Index.md: status `active_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_MetaTheory_Framework_Comparison.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Phenomenal_Structure_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md: status `draft_v0_2` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Claim_Status.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Ethics.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Ethics_Integration_2026_04_19.md: status `merged_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Expectation_L2_Pathology.md: status `merged_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Foundations.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Foundations_CompactCore.md: status `active_v4` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Hardening_TODO.md: status `active_v10` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Objection_Ledger.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Objection_Ledger_PH_SS_Extension.md: status `active_bridge_hardening` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Public_OnePager.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Political_Casebook.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Political_Philosophy.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Political_Philosophy_CompactCore.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Political_Rights.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Process_Logic_and_NPI_Comparison.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Rights_Calibration_Hardening.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Rights_Interface_Completion.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_SocTheory_04_Luhmann_ANT.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_SocTheory_05_Language_Eco.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_SocTheory_06_L2_Dynamics.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Soc_01_Construction.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Soc_02_Behavioral.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Soc_03_Institutions.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Social_Cognition.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Social_Economics.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Social_Economics_CompactCore.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Social_MacroDynamics.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Social_Political_PH_SS_Guardrails.md: status `active_bridge_guardrail` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Subject_Position_d_Expansion_Realignment_Bridge.md: status `bridge_hardened_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Subjecthood_Threshold_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md: status `merged_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/SRT_dValue_Not_PreferredPriors.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Cognition_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Cognition_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Cognition_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Economics_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Economics_Split/01_Foundations_and_Mechanisms.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Economics_Split/02_HumanReadable_Framework.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Economics_Split/03_Classics_and_Summary.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/Social_Economics_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/_PHILOSOPHY_MACHINE_INDEX.md: status `active_v7` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/_SRT_Phil_Axioms.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md: status `active_bridge_guardrail` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/_SRT_Philosophy_Hardening_Index.md: missing frontmatter
+Philosophy/_SRT_Soc_Axioms.md: status `domain_constitutional_v2` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/_SRT_Soc_Bridge.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_AG01_Agency_Ladder_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_AG02_Reasoning_Bias_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_CONSC01_Depsychologization_Trap_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_CONSC02_Perspectival_Gap_Gate_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_METH01_Emergence_Hygiene_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/PH_SEM01_Bilateral_Incompatibility_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/SOC_COG01_ZBS_Discriminatory_Cognition_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/hooks/SOC_COG02_Developmental_Coordination_Scaffold_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md: status `patch_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md: status `patch_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md: status `patch_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md: status `patch_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_SOC_COG01_ZBS_Discriminatory_Cognition_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Physics/Cosmology_Split/00_Foundations_and_Axioms.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Cosmology_Split/01_Thermo_Time_Gravity_Cosmology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Cosmology_Split/02_Cosmology_Extensions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Cosmology_Split/03_Microgravity_and_Advanced_Claims.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Cosmology_Split/04_Symbols_and_Interfaces.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Cosmology_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Earth_Accretion_Annex/01_Reservoir_Selection_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Earth_Accretion_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Extensions/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Extensions/SRT_Phys_E01_Quantum_Instrument_Bridge.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Extensions/SRT_Phys_E02_Quantum_Reference_Frames_Bridge.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Extensions/SRT_Phys_E03_Information_Thermodynamics_Bridge.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Extensions/SRT_Phys_E04_Relational_Time_Bridge.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Extensions/SRT_Phys_E05_Falsifiability_Program.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Formalism_Ext_Split/00_Foundational_Formalism.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Formalism_Ext_Split/01_Math_and_Category_Stack.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Formalism_Ext_Split/02_Information_Geometry_and_Dynamics.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Formalism_Ext_Split/03_Quantum_and_Advanced_Extensions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Formalism_Ext_Split/04_Symbols_and_Interfaces.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Formalism_Ext_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/PHYSICS_COMPACT_REGISTRY.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/QBox_Annex/01_QBox_Hyperdecoherence_Interface.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/QBox_Annex/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Quant_02_Cosmology_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Quant_02_Cosmology_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Quant_02_Cosmology_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_AT_Physics_of_Causation_Processing_2026-03-02.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_07_Complex_Systems.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_07_Complex_Systems_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_08_Ontology_Ext.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_09_Formalism_Ext.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_10_Integration.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Phys_10_Integration_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Physics_Bridge_Integration_Hooks_for_QBox_EarthAccretion.md: status `active_hook_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Physics_Claim_Status.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Physics_Cosmology.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Physics_Cosmology_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md: status `draft_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md: status `draft_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Quant_00_Intro.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Quant_00_Intro_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Quant_01_Selection.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Quant_01_Selection_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Quant_02_Cosmology.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/SRT_Quant_02_Cosmology_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Selection_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Selection_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/Selection_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/_SRT_Phys_Bridge.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
+Physics/_SRT_Physics_Hardening_Index.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/hooks/P03_Cosmological_Principle_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Physics/hooks/P03_Cosmological_Principle_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
 Physics/hooks/P04_Spontaneous_Collapse_Classicality_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Physics/hooks/P04_Spontaneous_Collapse_Classicality_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
 Physics/hooks/P05_Quantum_Proper_Time_Optical_Clocks_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Physics/hooks/P05_Quantum_Proper_Time_Optical_Clocks_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
 Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
 Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
 Physics/patches/SRT_Phys_P05_Quantum_Proper_Time_Optical_Clocks_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
+Physics/patches/SRT_Phys_P05_Quantum_Proper_Time_Optical_Clocks_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
+Physics/patches/SRT_Phys_P06_Accessible_Counterfactual_Closure_v0_1.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Physics/patches/SRT_Phys_P07_Closure_Ontology_of_Physical_Objects_v0_1.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
+Physics/patches/SRT_Phys_P08_Closure_Dynamics_and_Physical_Law_v0_1.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
 Product/ChoiceMap/CHOICEMAP_RESELECTABILITY_PRODUCT_EXPLANATION_2026-07-01.md: missing recommended frontmatter keys: epistemic_layer, layer
+Product/ChoiceMap/CHOICEMAP_RESELECTABILITY_PRODUCT_EXPLANATION_2026-07-01.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
+Public_Content/SRT_Consciousness_Before_PUBLIC_LONGREAD_CN_2026-07-15.md: status `release_candidate_v4` outside ratchet enum (draft|active|frozen|archived)
 Public_Content/SRT_RESELECTABILITY_PUBLIC_SHORT_2026-07-01.md: missing recommended frontmatter keys: epistemic_layer, layer
+Public_Content/SRT_RESELECTABILITY_PUBLIC_SHORT_2026-07-01.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
 README.md: missing frontmatter
 SRT 金句.md: missing frontmatter
 SRT/未命名 1.md: missing frontmatter
+SRT/未命名 1_Split/00_Part01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT/未命名 1_Split/01_Part02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT/未命名 1_Split/02_Part03.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT/未命名 1_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 SRT/未命名.md: missing frontmatter
-SRT_PRACTICE_COMMUNITY_PLAN.md: missing frontmatter
+SRT_1H_Onboarding.md: status `v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_AI_START.md: status `active_v3` outside ratchet enum (draft|active|frozen|archived)
+SRT_EXP_MEASURE_MAP.md: status `v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_EXP_Non_Reductive_Validation_Addendum.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_EXP_PRIORITY_MATRIX.md: status `v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_EXP_TEMPLATE.md: status `v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_FAQ_CRITICAL.md: status `v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_Fisher_FEP_Landscape_Interface.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_Glossary.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_Glossary_Structural_Governance_Terms.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_Navigation_Map.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+SRT_PP_ALIGNMENT_GUIDE.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 SRT_Quick_Start.md: missing frontmatter
+SRT_TOPIC_ARTICLE_INDEX.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_TOPIC_CONSCIOUSNESS_AGENCY_INDEX.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+SRT_TOPIC_FREE_WILL_INDEX.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+START_HERE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+STATUS.md: missing recommended frontmatter keys: epistemic_layer, layer
 Selection-Reality Theory (SRT).md: missing frontmatter
 Spirituality/Praxis_Split/00_Formal_Core.md: missing recommended frontmatter keys: layer
+Spirituality/Praxis_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Spirituality/Praxis_Split/01_30Days_to_6Months.md: missing recommended frontmatter keys: layer
+Spirituality/Praxis_Split/01_30Days_to_6Months.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Spirituality/Praxis_Split/02_1to3Years_and_LifeIntegration.md: missing recommended frontmatter keys: layer
+Spirituality/Praxis_Split/02_1to3Years_and_LifeIntegration.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Spirituality/Praxis_Split/03_Contexts_Community_Measures.md: missing recommended frontmatter keys: layer
+Spirituality/Praxis_Split/03_Contexts_Community_Measures.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Spirituality/Praxis_Split/04_Goal_Resources_Appendix.md: missing recommended frontmatter keys: layer
+Spirituality/Praxis_Split/04_Goal_Resources_Appendix.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Spirituality/Praxis_Split/README.md: missing recommended frontmatter keys: layer
+Spirituality/Praxis_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_01_Religion_Ontology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_02_Traditions.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_03_Zhensong_NDE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_04_Synthesis.md: status `bridge_hybrid_v2` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_05_Shoshin.md: status `bridge_hybrid_v2` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_06_Love_Ontology.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_07_Meditation_Neuro.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_08_Music.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_09_Praxis.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirit_09_Praxis_CompactCore.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirituality_Claim_Status.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirituality_Community_and_Sangha.md: status `active_companion_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirituality_How_We_Lose_Ourselves_and_Return.md: status `active_companion_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirituality_Return_Expansion_Bridge.md: status `merged_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirituality_Second_Expansion_Bridge.md: status `merged_index_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/SRT_Spirituality_Selection_Pathology_and_Return.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+Spirituality/_SRT_Spirit_Axioms.md: status `axiomatic_hybrid_v2` outside ratchet enum (draft|active|frozen|archived)
 TOOLS.md: missing frontmatter
-_SRT_EXPLAINABILITY_AUDIT.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
-_SRT_QUALITY_METRICS.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, layer
+_SRT_AGENT_RETRIEVAL_PROFILE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md: status `convergence_v0` outside ratchet enum (draft|active|frozen|archived)
+_SRT_CONTEXT_ROUTER.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_CROSS_DOMAIN_MATRIX.md: status `active_v0` outside ratchet enum (draft|active|frozen|archived)
+_SRT_DEEP_THEORY_MAP.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_D_VALUE_CANONICAL.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_D_VALUE_Value_Non_Substitutability_Addendum.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md: status `open_tension_v0` outside ratchet enum (draft|active|frozen|archived)
+_SRT_EQ_HYP_MAP.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_INDEX.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
+_SRT_PARKED_INDEX.md: missing recommended frontmatter keys: epistemic_layer, layer
+_SRT_PSI_F_CANONICAL.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_PSI_F_Inferred_Selection_Friction_Addendum.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_QUALITY_METRICS.md: missing recommended frontmatter keys: epistemic_layer, layer
+_SRT_QUALITY_METRICS.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 _SRT_Recent_Material_Patches_Index.md: missing frontmatter
-_tmp.txt: missing frontmatter
+_SRT_SYMBOL_TABLE.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_T_DIR_CANONICAL.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
+_SRT_VERTICAL_INTEGRATION.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 data/g2_open_data/sample_run/README.md: missing frontmatter
 docs/physics/post_quantum_qbox_and_srt.md: missing frontmatter
 duplicate frontmatter id `SRT-AI-01`: AI/Ontology_Annex/00_General_Boundary_Block.md / AI/Ontology_Annex/01_ActiveInference_Override.md
@@ -376,24 +1442,43 @@ duplicate frontmatter id `SRT-SPIRIT-09`: Spirituality/Praxis_Split/02_1to3Years
 duplicate frontmatter id `SRT-SPIRIT-09`: Spirituality/Praxis_Split/03_Contexts_Community_Measures.md / Spirituality/Praxis_Split/04_Goal_Resources_Appendix.md
 duplicate frontmatter id `SRT-SPIRIT-09`: Spirituality/Praxis_Split/04_Goal_Resources_Appendix.md / Spirituality/SRT_Spirit_09_Praxis.md
 memory/2026-03-12.md: missing recommended frontmatter keys: layer
+memory/2026-03-12.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-13.md: missing recommended frontmatter keys: layer
+memory/2026-03-13.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-14.md: missing recommended frontmatter keys: layer
+memory/2026-03-14.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-15.md: missing recommended frontmatter keys: layer
+memory/2026-03-15.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-16.md: missing recommended frontmatter keys: layer
+memory/2026-03-16.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-17.md: missing recommended frontmatter keys: layer
+memory/2026-03-17.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
+memory/2026-03-18.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-19.md: missing frontmatter
 memory/2026-03-21.md: missing recommended frontmatter keys: layer
+memory/2026-03-21.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-22.md: missing recommended frontmatter keys: layer
+memory/2026-03-22.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-23.md: missing recommended frontmatter keys: layer
+memory/2026-03-23.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-24.md: missing recommended frontmatter keys: layer
+memory/2026-03-24.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-25.md: missing recommended frontmatter keys: layer
+memory/2026-03-25.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-26.md: missing recommended frontmatter keys: layer
+memory/2026-03-26.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-27.md: missing recommended frontmatter keys: layer
+memory/2026-03-27.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-30.md: missing recommended frontmatter keys: layer
+memory/2026-03-30.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-03-31.md: missing recommended frontmatter keys: layer
+memory/2026-03-31.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-04-01.md: missing recommended frontmatter keys: layer
+memory/2026-04-01.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-04-02.md: missing recommended frontmatter keys: layer
+memory/2026-04-02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-04-05.md: missing recommended frontmatter keys: layer
+memory/2026-04-05.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 memory/2026-04-08.md: missing frontmatter
 memory/2026-04-10.md: missing frontmatter
 memory/2026-04-12.md: missing frontmatter
@@ -401,3 +1486,4 @@ memory/2026-04-13.md: missing frontmatter
 memory/2026-04-14.md: missing frontmatter
 memory/2026-04-15.md: missing frontmatter
 memory/2026-04-18.md: missing frontmatter
+memory/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)

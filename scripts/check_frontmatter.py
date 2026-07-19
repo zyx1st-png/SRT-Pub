@@ -24,6 +24,19 @@ RECOMMENDED_KEYS = {
     "claim_mode",
 }
 
+# Ratchet enum (2026-07-20 governance load-reduction round, see
+# Governance/_SRT_DOC_ENGINEERING_GUIDE.md §Frontmatter Minimal Schema Ratchet):
+# newly written or substantially edited files must use one of these status
+# values. Legacy values remain as baselined known debt; a status outside this
+# enum surfaces as a warning, so any NEW occurrence fails the preflight
+# baseline comparison without requiring a repo-wide rewrite.
+STATUS_RATCHET_ENUM = {
+    "draft",
+    "active",
+    "frozen",
+    "archived",
+}
+
 # Raw and edited conversation transcripts are source records rather than claim-bearing
 # theory documents. For these explicitly noncanonical transcript statuses, `kind`
 # may stand in for `type`, while layer / epistemic_layer / claim_mode are not
@@ -161,6 +174,13 @@ def main() -> None:
                 errors.append(message)
             else:
                 warnings.append(message)
+
+        status_value = fm.data.get("status", "")
+        if status_value and status_value not in STATUS_RATCHET_ENUM:
+            warnings.append(
+                f"{rel}: status `{status_value}` outside ratchet enum "
+                "(draft|active|frozen|archived)"
+            )
 
         file_id = fm.data.get("id")
         if file_id:

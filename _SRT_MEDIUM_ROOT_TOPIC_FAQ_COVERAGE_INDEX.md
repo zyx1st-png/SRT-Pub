@@ -2,7 +2,8 @@
 id: SRT-MEDIUM-ROOT-TOPIC-FAQ-COVERAGE-INDEX
 type: coverage_index
 tags: [Navigation, Coverage Audit, FAQ, Topic Index, Root Files, Medium Priority]
-status: archived_snapshot
+status: archived
+snapshot_as_of: 2026-07-20
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation

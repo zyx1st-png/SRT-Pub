@@ -27,12 +27,12 @@ updated: 2026-07-20
 | [规范性 framing true-up 提案](90_Backstage/Incubation/_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md) | ε normativity 张力升级为正式修订、或 L0 修订获授权时 |
 | [对象性=可再选择性元标准](90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md) | 对象暗线扩展（Q02 试点 PR #593 之后）或 `papers/selective_resynchronization/` 推进时 |
 
-## 2. 材料管线 B 类停驻（`Materials/`）
+## 2. 材料管线 B 类停驻（`Materials/`）——入口指针
 
-B 类裁决的语义自 2026-07-20 起为：**停驻 + 具名触发条件**，不再默认排队等待第二轮审计。
+**逐卡复活触发条件的唯一权威源是 `Operations/_SRT_MATERIAL_LOG.md`**（分月记录见 `Operations/Material_Log/`），本索引不逐卡登记、不做第二份台账。恢复任务从台账按域/主题检索 B 卡，读其备注列的触发条件。
 
-- 台账权威：`Operations/_SRT_MATERIAL_LOG.md`（分月记录见 `Operations/Material_Log/`）。
-- 默认触发条件：对应域的活跃工作线（书稿章节、论文、公共内容）点名该主题时做 close-read；无人点名则作为档案永久停驻，不产生义务。
+- B 类语义自 2026-07-20 起为：**停驻 + 具名触发条件**（写在 Material Log 备注里），不再默认排队等待第二轮审计；规则详见 `Operations/_SRT_MATERIAL_PIPELINE.md §B 类语义修订`。
+- 默认策略：对应域的活跃工作线（书稿章节、论文、公共内容）点名该主题时做 close-read；无人点名则作为档案永久停驻，不产生义务。
 - 台账中已写明"候选后续落点"的条目，落点文件被实质修订时应顺带评估该卡。
 
 ## 3. 分支 / PR 层停驻（不在 main 上的已完成工作）
@@ -53,4 +53,4 @@ B 类裁决的语义自 2026-07-20 起为：**停驻 + 具名触发条件**，�
 
 - 条目被捞起并完成 → 从本索引删除该行，在触发它的工作线 PR 里说明。
 - 条目被判定永久废弃 → 从本索引删除该行，文件留在原archive位置即可，无需另行留痕。
-- 新的下沉动作（降级、B 类裁决、种子停驻）→ 必须同步在本索引加一行，否则不得下沉。
+- 新的下沉动作（降级、种子停驻、分支/PR 停驻、计划存档）→ 必须同步在本索引加一行，否则不得下沉。**例外：材料管线 B 卡**——其触发条件唯一登记在 Material Log（见 §2），不在本索引逐卡加行。

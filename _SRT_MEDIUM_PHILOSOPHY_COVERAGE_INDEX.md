@@ -2,7 +2,8 @@
 id: SRT-MEDIUM-PHILOSOPHY-COVERAGE-INDEX
 type: coverage_index
 tags: [Navigation, Coverage Audit, Philosophy, Social Theory, Ethics, Medium Priority]
-status: archived_snapshot
+status: archived
+snapshot_as_of: 2026-07-20
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation

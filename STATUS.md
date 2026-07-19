@@ -23,7 +23,7 @@ updated: 2026-07-20
 
 ## 当前仓库状态
 
-- 单一 `main` 分支；根目录 2026-04-15 平铺，2026-07-20 治理减负轮后根目录 md 收缩至约 55 个。
+- 单一 `main` 分支；根目录 2026-04-15 平铺，2026-07-20 治理减负轮后根目录 md 80 → 54（口径：`find . -maxdepth 1 -type f -name '*.md' | wc -l`）。
 - `Core_21` 已拆 P0/P1/P2-P4 分层；持续要求 domain 文件回链 canonical，防 bridge / companion / lab 命题冒充 core。
 - 书稿：2026-06-19 冻结为 RC1-candidate（PR #506，导出校验通过）；2026-07-04 外部评审（知微）开卷过堂完成，品味级条目收编为一轮施工；2026-07-10 choice-trace 回写 Phase 1 按作者冻结豁免完成四章章末注。详见 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`。
 - 工程结构：2026-07-07 清理轮（papers 合并 / preflight 接入 / 前台指针覆盖层定案）；2026-07-20 治理减负轮（本轮，见下）。

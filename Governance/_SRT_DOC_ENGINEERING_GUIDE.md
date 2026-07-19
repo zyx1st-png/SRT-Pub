@@ -47,7 +47,7 @@ Rules:
 治理减负轮起，frontmatter 规范改为**棘轮制**，不做全仓回改（1289 个文件的 churn 不值得）：
 
 1. **只对新建或本次实质修改的文件**要求最小 4 字段：`id`、`status`、`claim_mode`、`updated`。其余字段（`type`、`tags`、`layer`、`epistemic_layer`、`dependency`）推荐但不强制；理论承重文件仍应补全上面 Canonical Metadata Contract 的完整字段。
-2. **`status` 收敛为小枚举**：`draft` / `active` / `frozen` / `archived`（历史文件保留旧的 `active_vN` 等值，不强制回改；新写只用这四个）。版本细节写在正文，不再进 `status`。
+2. **`status` 收敛为小枚举**：`draft` / `active` / `frozen` / `archived`（历史文件保留旧的 `active_vN` 等值，不强制回改；新写只用这四个）。版本细节写在正文，不再进 `status`；更细语义用**非 status 字段**表达（如 `snapshot_as_of: YYYY-MM-DD` 标快照时点），不扩展枚举。`scripts/check_frontmatter.py` 已对枚举做棘轮验证：存量旧值锁在 `Governance/Frontmatter_Warning_Baseline.txt` 为已知债，新出现的非枚举值会作为 new warning 使 preflight 失败。
 3. **废除逐文件 `canonical:` 字段**。是否 canonical 只看 `CANONICAL_REGISTRY.md`——逐文件写 `canonical: false` 是冗余噪音（全仓 702 处都在说"我不是权威"），新文件不再写该字段；碰到旧文件时可顺手删除，但不为此专门开轮。
 4. 存量文件的旧字段值不算违规；preflight 警告基线继续记录已知债，不作为质量分。
 
