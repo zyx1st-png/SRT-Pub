@@ -15,6 +15,17 @@ updated: 2026-06-05
 
 本目录保存 SRT 仓库的治理、编辑边界、claim 分级、文档工程与质量检查材料。
 
+## Proportionality Principles（治理比例原则 · 2026-07-20）
+
+治理减负轮确立的四条元原则，优先于逐条堆积的具体规则。目的：让治理强度随工作面收缩，而不是单向增长。
+
+1. **治理强度跟着活跃度走**。活跃工作线（书稿、papers、canonical 锚点）保持硬护栏；休眠层（域层、coverage 快照、archive）降为"带冻结戳的图书馆"——只读、可检索、零维护义务，按 `_SRT_DOC_ENGINEERING_GUIDE.md` 的 touch-based repair 处理。
+2. **任何过滤器必须自带回流路径**。下沉（降级、B 类裁决、种子停驻、annex 化）必须在 `_SRT_PARKED_INDEX.md` 登记一条**具名复活触发条件**（绑工作线事件，不绑日历）。没有回流路径的下沉等于删除，不允许。
+3. **状态只有一个面**。描述"当前状态"的文件唯一（`STATUS.md`，§Fast Status 兼任 compact 入口）；镜像要么自动生成，要么删除。历史进 `Operations/Status_History/`。
+4. **导航一进一出**。新增任何 index / router / coverage 文件，必须同时合并或废除一个旧的。router 路由折进主 router，不再生 `_*_EXTENSION.md` 侧车文件。
+
+可观测指标看板见 `_SRT_QUALITY_METRICS.md §Governance Load Indicators`；本轮执行记录见 `Governance/Governance_Load_Reduction_2026-07-20.md`。
+
 ## Authority Boundary
 
 `Governance/` 是治理层，不是书稿正文、理论主文或当前状态本身。
