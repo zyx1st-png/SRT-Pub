@@ -19,7 +19,7 @@ dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED, SRT-DIRECTION3-CHOICEMAP-C
 > **这是什么 / 不是什么(先读)**
 > - 这是 ChoiceMap **产品感 pilot 的留痕**,把一段跨模型、跨决策域的轻量测试收口成可追溯的工作记录。
 > - **不是 empirical validation,不是 benchmark,不是 paper 证据。** n 小、单评分者(Claude)、无盲评、无人机 A/B、温度 0.7。结论只限"结构层 + 产品感",不得外推。
-> - 非 canonical,不定义/不改写 SRT 术语。方向三论文仍 **parked**(见 `_SRT_DIRECTION3_PAPER_PARKING_NOTE.md`)。
+> - 非 canonical,不定义/不改写 SRT 术语。方向三论文仍 **parked**(见 `90_Backstage/Incubation/_SRT_DIRECTION3_PAPER_PARKING_NOTE.md`)。
 
 ---
 

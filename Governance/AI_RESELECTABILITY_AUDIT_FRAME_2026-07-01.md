@@ -282,9 +282,9 @@ Boundary:
 
 与 distributional payability / D-3 笔记的关系：
 
-> `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` 给 §2.8 的"外部化"一个更精确的候选判据；`_SRT_D3_OPTION_SPACE_READOUT_NOTE.md` 给 §2.1/2.2/2.4 的证据收集方式一个理论落点（可选空间轨迹为主证据，自我报告/满意度为辅助证据）。两者都是 non-canonical proposal，均**不提供**"谁来做这次评估、评估者独立性如何保障"的解法。
+> `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` 给 §2.8 的"外部化"一个更精确的候选判据；`90_Backstage/Incubation/_SRT_D3_OPTION_SPACE_READOUT_NOTE.md` 给 §2.1/2.2/2.4 的证据收集方式一个理论落点（可选空间轨迹为主证据，自我报告/满意度为辅助证据）。两者都是 non-canonical proposal，均**不提供**"谁来做这次评估、评估者独立性如何保障"的解法。
 
-`_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 把这个缺口精确到一条可检验的候选判据：评分者 R 的续存不能被受审计实体单方面 foreclose（断经费、除名、法律报复）。它**只筛掉廉价俘获**（经费、准入、法律报复），**筛不掉深层结构性俘获**（共享阶层/意识形态盲区）——仍是本框架和它共同的开放残余。
+`90_Backstage/Incubation/_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 把这个缺口精确到一条可检验的候选判据：评分者 R 的续存不能被受审计实体单方面 foreclose（断经费、除名、法律报复）。它**只筛掉廉价俘获**（经费、准入、法律报复），**筛不掉深层结构性俘获**（共享阶层/意识形态盲区）——仍是本框架和它共同的开放残余。
 
 ---
 
@@ -299,7 +299,7 @@ Boundary:
 - 申诉越多越好；
 - 所有用户意见都应推翻系统；
 - SRT 已经解决外部化/X 的度量问题；
-- 由系统运营方/受益方自行完成的评分，等同于独立审计结论（这正是闭包边界记录 D-3 指出的自我背书风险——评分者与受益方重合时，评分本身最可能已经退化）。参见 `_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 的候选独立性判据（评分者续存不能被受审计方单方面 foreclose），该判据本身只筛掉廉价俘获，不筛掉深层结构性俘获，不得引用为"独立性问题已解决"。
+- 由系统运营方/受益方自行完成的评分，等同于独立审计结论（这正是闭包边界记录 D-3 指出的自我背书风险——评分者与受益方重合时，评分本身最可能已经退化）。参见 `90_Backstage/Incubation/_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 的候选独立性判据（评分者续存不能被受审计方单方面 foreclose），该判据本身只筛掉廉价俘获，不筛掉深层结构性俘获，不得引用为"独立性问题已解决"。
 
 安全说法：
 

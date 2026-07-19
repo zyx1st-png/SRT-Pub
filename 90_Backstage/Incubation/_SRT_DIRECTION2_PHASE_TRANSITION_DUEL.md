@@ -17,7 +17,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D
 # Direction 2 相位边界决斗 —— "道德开相"判据的建构-攻击-硬化记录
 
 > **这是什么 / 不是什么(先读)**
-> - 这是对 `_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md` §1/§2(层2)"道德开相"判据的一次 route-(b)(建构-攻击-硬化)决斗轨迹的收口。
+> - 这是对 `90_Backstage/Incubation/_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md` §1/§2(层2)"道德开相"判据的一次 route-(b)(建构-攻击-硬化)决斗轨迹的收口。
 > - **两点降承诺(本记录的硬边界)**:
 >   1. **不**写"Direction 2 的强读法(道德是动力学的一个被展示的相变,由此自然化 is-ought)已被证实"。这条**已被本记录攻破**;存活的是弱得多的形态 T′(见 §6)。
 >   2. **不**写"SRT 已经解决道德执行 / 外部化检测问题"。本记录只把缺口从模糊的"道德没有自动回流"精确到一条**具名的、尚未挂钩的候选原则**(distributional payability,见 §7)+ 一个**已在别处记录过的检测器病理**(T_dir 的 D-3,见 §8)。
@@ -29,7 +29,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D
 
 > 道德/非道德是**同一条动力学原初**(再选择/可重组)的**相变边界**,不是范畴鸿沟;道德相位在"一个位置的选择不可逆 foreclose 另一位置的再选择能力"时**开相**。强承诺附加值 = 这把 is-ought 鸿沟**自然化**成一条相位边界。
 
-来源:`_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md` §0/§1/§2(层2)。
+来源:`90_Backstage/Incubation/_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md` §0/§1/§2(层2)。
 
 ---
 
@@ -223,7 +223,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-PSI-F-CANONICAL, SRT-T-DIR-CANONICAL, SRT-D
 
 - 本记录是 `Core/SRT_OPEN_TENSIONS.md` 的候选条目,未自动提升;提升须走 `Governance/SRT_EDIT_PROTOCOL.md`。
 - **不改写** L0 / Ψ_f / T_dir / d-value canonical;所有"候选定义""候选公理"均为 proposal。
-- 与 `_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md`(靶子来源)、`_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`(D-3、route-C、三条件、E-1/E-2 的原始出处)、`_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`(再选择作为元标准,与 §8.3 的候选 X 定义相印证)、`Core/SRT_OPEN_TENSIONS.md §1`(d-proxy)、`§7`(P0-04)、`§9`(闭包边界)收敛,互为印证。
+- 与 `90_Backstage/Incubation/_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md`(靶子来源)、`_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`(D-3、route-C、三条件、E-1/E-2 的原始出处)、`90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`(再选择作为元标准,与 §8.3 的候选 X 定义相印证)、`Core/SRT_OPEN_TENSIONS.md §1`(d-proxy)、`§7`(P0-04)、`§9`(闭包边界)收敛,互为印证。
 - 本记录**不**回答 OPEN_TENSIONS §2(Ψ_f 几何/代价)是否需要新增按位置分解的正式判据——那是若要推进候选公理时的下一步,超出本决斗范围。
 
 ---

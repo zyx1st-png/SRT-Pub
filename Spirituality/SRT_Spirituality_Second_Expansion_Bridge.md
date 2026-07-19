@@ -39,7 +39,7 @@ possible_new_targets:
 1. `Spirituality/SRT_Spirit_05_Shoshin.md`
 2. `Core/SRT_Core_12b_Ontology_L2.md`
 3. `AI/SRT_AI_00_Crisis.md`
-4. `SRT_PRACTICE_COMMUNITY_PLAN.md`
+4. `90_Backstage/Plans_Archive/SRT_PRACTICE_COMMUNITY_PLAN.md`
 5. `Spirituality/SRT_Spirit_04_Synthesis.md`（仅少量 cross-ref 价值）
 
 本 bridge 原本承担的是第二轮筛选与回写地图；现已完成其主要功能，保留为 provenance / merge index。
@@ -270,7 +270,7 @@ B 线可转成更贴近日常的表达：
 
 ## 5. Community-plan cluster: not for the current dual-track, but for a new spirituality branch
 
-`SRT_PRACTICE_COMMUNITY_PLAN.md` 的成熟度很高，但其最适合的归宿**不是**继续塞进现有 A/B 双线。
+`90_Backstage/Plans_Archive/SRT_PRACTICE_COMMUNITY_PLAN.md` 的成熟度很高，但其最适合的归宿**不是**继续塞进现有 A/B 双线。
 
 ### 5.1 Why it should not be merged directly into current A/B lines
 
@@ -344,7 +344,7 @@ B 线可转成更贴近日常的表达：
 
 ### Priority 2 — separate spirituality branch
 
-4. `SRT_PRACTICE_COMMUNITY_PLAN.md`
+4. `90_Backstage/Plans_Archive/SRT_PRACTICE_COMMUNITY_PLAN.md`
    - community / sangha / practice architecture / risk-control structure
 
 ### Priority 3 — background cross-reference only

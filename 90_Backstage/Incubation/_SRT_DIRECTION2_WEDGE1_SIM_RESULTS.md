@@ -138,8 +138,8 @@ reward-峰 g=22(post 0.764,div 1.01)= 脆;robustness-峰 g=8(post 0.822,div 2.05
 ## 9. 回链 + 复跑
 
 **回链**:
-- `_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md`(§7 预测候选 / §8 第一楔子 / §5 X-防火墙);
-- `_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`(再选择能力作为对象性元标准——本楔子是它的"再选择 > 表现"主张的一个动力学侧探针);
+- `90_Backstage/Incubation/_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md`(§7 预测候选 / §8 第一楔子 / §5 X-防火墙);
+- `90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`(再选择能力作为对象性元标准——本楔子是它的"再选择 > 表现"主张的一个动力学侧探针);
 - `Core/SRT_OPEN_TENSIONS.md §1`(d / d_stakes / D_eff proxy gate,卡住序参量操作化)、`§3`(T_dir v0 proxy)、`§8`(cross-scale loop failure,未兑现前为类比)、`§9`(closure-boundary fallibilist foundation,道德半边界承担)。
 
 **复跑(核心仿真,pure stdlib Python,无依赖)**:

@@ -146,7 +146,7 @@ S4 subjecthood / S6 responsibility-bearing status not established.
 
 | Artifact | Role | Status |
 |---|---|---|
-| `SRT_Terminology_Consistency_Audit.md` | canonical terms / aliases / forbidden overreadings | active_v1 |
+| `Operations/Archive_Records/SRT_Terminology_Consistency_Audit.md` | canonical terms / aliases / forbidden overreadings | active_v1 |
 | `Neuroscience/SRT_Neuro_Predictions_Table.md` | differential predictions vs PP/FEP/GNW/IIT/RL | active_v1 |
 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | PH-SS-10 subjecthood link | updated earlier |
 

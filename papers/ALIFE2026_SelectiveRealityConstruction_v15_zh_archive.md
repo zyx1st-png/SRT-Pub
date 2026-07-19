@@ -8,7 +8,7 @@
 
 专题分会场：作为实验哲学的人工生命
 
-> 中文留档版。依据 [ALIFE2026_SelectiveRealityConstruction_v15_submission.md](/Users/zhangyuxin/.openclaw/workspace/SRT/papers/ALIFE2026_SelectiveRealityConstruction_v15_submission.md) 翻译整理；参考文献保留原文条目以便核对。
+> 中文留档版。依据 [ALIFE2026_SelectiveRealityConstruction_v15_submission.md](../../../../../../../.openclaw/workspace/SRT/papers/ALIFE2026_SelectiveRealityConstruction_v15_submission.md) 翻译整理；参考文献保留原文条目以便核对。
 
 ## 摘要
 

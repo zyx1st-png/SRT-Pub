@@ -17,7 +17,7 @@ dependency: [SRT-DISTRIBUTIONAL-PAYABILITY-CANDIDATE-SEED, SRT-D3-OPTION-SPACE-R
 # 审计者独立性候选判据 —— Distributional Payability 的自指应用
 
 > **文件地位(先读)**
-> - **non-canonical research note**。不修改任何 canonical 文件,不改写 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`、`_SRT_D3_OPTION_SPACE_READOUT_NOTE.md` 或 `Governance/AI_RESELECTABILITY_AUDIT_FRAME_2026-07-01.md`。
+> - **non-canonical research note**。不修改任何 canonical 文件,不改写 `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`、`90_Backstage/Incubation/_SRT_D3_OPTION_SPACE_READOUT_NOTE.md` 或 `Governance/AI_RESELECTABILITY_AUDIT_FRAME_2026-07-01.md`。
 > - 目标**不是**解决"谁来审计"这个递归问题,是把它从抽象的"第三方独立性未处理"精确到一条**可检验的候选筛选判据**,并诚实标出它只筛掉什么、筛不掉什么。
 > - **禁句表见 §6,起草前请先读。**
 

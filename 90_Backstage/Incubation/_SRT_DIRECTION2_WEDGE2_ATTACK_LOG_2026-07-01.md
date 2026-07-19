@@ -9,7 +9,7 @@ claim_mode: proposal
 canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-01
-provenance: 对已合并的 `_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md` 的自我攻击(route-b 建构-攻击式复审),产出下一步实验方向设计(2a/2b),不运行新仿真、不改写 Wedge 2
+provenance: 对已合并的 `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md` 的自我攻击(route-b 建构-攻击式复审),产出下一步实验方向设计(2a/2b),不运行新仿真、不改写 Wedge 2
 candidate_promotion_target: none(残余仅供未来 2a/2b 实验设计参考;不喂入 Core/SRT_OPEN_TENSIONS.md)
 dependency: [SRT-DIRECTION2-WEDGE2-SIM-RESULTS, SRT-DIRECTION2-WEDGE1-SIM-RESULTS, SRT-DISTRIBUTIONAL-PAYABILITY-CANDIDATE-SEED, SRT-D3-OPTION-SPACE-READOUT-NOTE, SRT-AUDITOR-INDEPENDENCE-CANDIDATE-NOTE, SRT-DIRECTION2-MORAL-GENEALOGY-SEED]
 ---
@@ -18,7 +18,7 @@ dependency: [SRT-DIRECTION2-WEDGE2-SIM-RESULTS, SRT-DIRECTION2-WEDGE1-SIM-RESULT
 
 > **文件地位(先读)**
 > - **non-canonical / attack_log / research_note / pilot / proposal / not validation**。
-> - **不改写** `_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md`(或任何其他已合并文件),**不运行任何新仿真**,**不新增任何 canonical 定义**。
+> - **不改写** `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md`(或任何其他已合并文件),**不运行任何新仿真**,**不新增任何 canonical 定义**。
 > - 本文件只做一件事:对已合并的 Wedge 2 做一次自我攻击(route-b 的攻击段),并给出下一步实验方向(2a 参数稳健性扫描、2b 去人为化路线)的**设计**,不产出新结果。
 > - **防火墙见 §8,起草前请先读**:本日志不证明 Wedge 2 错,只限定它当前能撑起什么、撑不起什么。
 
@@ -117,11 +117,11 @@ Result B(反事实支撑关系)因为要经过实际的 bandit 学习动态(非�
 
 ## 9. 回链
 
-- `_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md`(被攻击对象,本文件不改写它);
-- `_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`(Wedge 2 直接扩展的模型与方法论基准,攻击1 的参数扫描纪律即来自它);
+- `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md`(被攻击对象,本文件不改写它);
+- `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`(Wedge 2 直接扩展的模型与方法论基准,攻击1 的参数扫描纪律即来自它);
 - `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §2`(支撑/转嫁加固条件,Result B 试图操作化的对象);
-- `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md`(可选空间轨迹作为主证据,攻击4 讨论的"增量诊断力"即针对这个框架本身);
-- `_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md`(反事实基线构造者的独立性问题,Wedge 2 §4 已承认未处理,本文件不重复展开)。
+- `90_Backstage/Incubation/_SRT_D3_OPTION_SPACE_READOUT_NOTE.md`(可选空间轨迹作为主证据,攻击4 讨论的"增量诊断力"即针对这个框架本身);
+- `90_Backstage/Incubation/_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md`(反事实基线构造者的独立性问题,Wedge 2 §4 已承认未处理,本文件不重复展开)。
 
 ---
 

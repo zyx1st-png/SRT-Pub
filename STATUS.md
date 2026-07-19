@@ -26,7 +26,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - 当前后续重点是让 domain 文件持续回链 canonical，避免 bridge / companion / lab 命题反向冒充 core。
 - 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。） **`2026-06-19`：P0 姿态修订完成，框架层落地（PR #506：引入「选择性收束」过程词、宇宙地平线读法、Q26 同步失败条件），书稿冻结为 RC1-candidate；导出校验通过（全书 37 项 / 八章主干 10 项）。见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`。**
 - **`2026-07-04`：外部评审（知微《完整稿审读报告》）完成开卷过堂**：三条 P0 中两条、四条 P1 中两条核查为「已实现」，结构手术（章合并/删注/删回到杯子）驳回，品味级条目收编为一轮施工（显影免责去重、术语表完整化、后半书语域收敛、三幕节奏诊断、专业读者简报补「分界与独立贡献」节）。裁决与证据见 `01_Source_Intuition/BOOK/BOOK_EXTERNAL_REVIEW_DISPOSITION_知微_2026-07-04.md`；已核查 `scripts/compile_book.py` 导出无漏章（Q04b/Q15b 在编制表内）。
-- **`2026-07-07`：工程结构清理一轮完成**：`Papers/`→`papers/` 大小写合并、governance preflight 接入 GitHub Actions（frontmatter 警告基线已重置，棘轮生效）、前台重构裁决为永久指针覆盖层（`FRONTSTAGE_RESTRUCTURE_PLAN.md` adjudicated_v2）、根目录一次性文件归档入 `Operations/`、生成二进制与 `graphify-out/` 移出 git 追踪。全记录见 `Operations/Archive_Records/Engineering_Structure_Pass_2026-07-07.md`。
+- **`2026-07-07`：工程结构清理一轮完成**：`Papers/`→`papers/` 大小写合并、governance preflight 接入 GitHub Actions（frontmatter 警告基线已重置，棘轮生效）、前台重构裁决为永久指针覆盖层（`Governance/FRONTSTAGE_RESTRUCTURE_PLAN.md` adjudicated_v2）、根目录一次性文件归档入 `Operations/`、生成二进制与 `graphify-out/` 移出 git 追踪。全记录见 `Operations/Archive_Records/Engineering_Structure_Pass_2026-07-07.md`。
 
 ## 当前建议首读顺序
 
@@ -58,17 +58,17 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 > 以下文件均为「方向三：L0 的开发与应用」对话衍生，`canonical: false`，不定义/不改写任何 SRT 术语，不进入奠基书正文，也不享有任何 canonical 权威。仅作后台研究纲领、原型设计与产品感测试留痕。
 
 **研究种子**
-- 研究种子（research seed） → `_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md`（理论骨架：吸引子预测 / 局部吸引子·全局方向·遮蔽缺口 / 自修正动力学 + 三性质保护核 / 不可约闭包边界原子 / E1 仿真）
-- 原型种子（prototype seed） → `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md`（ChoiceMap 无代码原型 + 系统提示词 + T1–T7 用例 + 跨 LLM 评分协议）
-- 校准参照集（calibration reference set） → `_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md`（T1–T7 单模型样例输出 + 自评锚点）
+- 研究种子（research seed） → `90_Backstage/Incubation/_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md`（理论骨架：吸引子预测 / 局部吸引子·全局方向·遮蔽缺口 / 自修正动力学 + 三性质保护核 / 不可约闭包边界原子 / E1 仿真）
+- 原型种子（prototype seed） → `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md`（ChoiceMap 无代码原型 + 系统提示词 + T1–T7 用例 + 跨 LLM 评分协议）
+- 校准参照集（calibration reference set） → `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md`（T1–T7 单模型样例输出 + 自评锚点）
 
 **产品感测试留痕**
-- 产品感备忘录（product-feel pilot memo） → `_SRT_DIRECTION3_CHOICEMAP_PRODUCTFEEL_MEMO.md`（GLM 5.2 / Gemini 3.1 Pro / Claude 跨模型跨域产品感测试；V0→V0.2 演化、四结构检查全过、S-5 不可逆设计极限、护栏压力下的 dangerous-rigidity 发现、V0.3 两条待补规则）
+- 产品感备忘录（product-feel pilot memo） → `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PRODUCTFEEL_MEMO.md`（GLM 5.2 / Gemini 3.1 Pro / Claude 跨模型跨域产品感测试；V0→V0.2 演化、四结构检查全过、S-5 不可逆设计极限、护栏压力下的 dangerous-rigidity 发现、V0.3 两条待补规则）
 
 **轨迹工作流**
 - ChoiceMap 轨迹工作流 → `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md`（三用途×两记录模式矩阵；回写模式 retro-writeback 一等化；越界选择 breakout 一等事件；委托收敛协议 + confirmation_status；收尾管线：canonical 碰撞检查→术语撞车检查→路由→落库）
 
-> **地位声明**：校准参照集与产品感备忘录均为**示例性 / 参照性 / pilot**，**不是 ground truth，也不构成任何实证验证**。它们只统一评分尺度、记录探索过程；ChoiceMap 的有效性须由原型种子 §5 的真实跨模型实验 + 盲评 + 人机 A/B 决定。方向三论文仍 **parked**（见 `_SRT_DIRECTION3_PAPER_PARKING_NOTE.md`）。
+> **地位声明**：校准参照集与产品感备忘录均为**示例性 / 参照性 / pilot**，**不是 ground truth，也不构成任何实证验证**。它们只统一评分尺度、记录探索过程；ChoiceMap 的有效性须由原型种子 §5 的真实跨模型实验 + 盲评 + 人机 A/B 决定。方向三论文仍 **parked**（见 `90_Backstage/Incubation/_SRT_DIRECTION3_PAPER_PARKING_NOTE.md`）。
 
 ## 最近关键推进
 
@@ -80,7 +80,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 - `2026-07-05`：**全书（26Q）→ 理论层词表回流对账**。按术语表 v4（revised 2026-07-04）逐条对账全书结晶词汇与 Core/Core_Law 锚点，新建登记桥 `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md`（已入 `BRIDGE_INDEX`）。结论：多数书稿词汇是理论既有承重对象的白话重述（选择动力学核心链已由 MSD 桥覆盖、水平因果已由 HC 桥覆盖），**真正未同步的新 articulation 登记为 book-provenance 候选**：微效价+价值发生链（选择性收束→微效价→affordance→缺失→需求→锚定→价值深度，微效价≠ε_pg，d-value canonical 确无此链）、第三态能动性（新章 Q15b）、预裁剪四机制、被排开者去向三分、AI 三型、理论自反自检三问、17 原语生成器。**发现一处实质分歧待作者裁决**：方向/秩序增益三判据的**中轴**——书稿用「外包」（后果回流通道完整性，与全书主梁及 d-value `C_i` 因子一致）、理论 `SRT_Selection_Argument §7b` 用「可协调」（差异可组织共存），二者可分开；已在 `Core/SRT_OPEN_TENSIONS.md §11` 登记三选项（同轴两面/理论跟改/扩为四判据），采纳前 §7b 现行 canonical 不变。边界：书稿=provenance 非 authority，候选未采纳前不作 canonical；不改任何定义。
 
-- `2026-07-05`：**Core / Core_Law 审计 + 规范性 framing 收口（作者授权高风险编辑）**。(1) **Level A ε 去过载**（`_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md` Stage 2）：把 `Core_Law/SRT_L0_Metaphysics.md` §六 ε 词条与正骨架总结标签的「全部规范性力量锚定于 ε」、`_SRT_D_VALUE_CANONICAL.md §5b.1` 的「趋向全局自由能最小值」收窄为「ε = 最小条件（论域地板）+ 规范区分工作转向可重组判据 + 闭包边界尚待硬化」；下游回声 `Core/SRT_Core_NormativeGradient.md §6` 同步；`Core/SRT_OPEN_TENSIONS.md §9` 与 true-up 提案状态改标已应用。**Level B（实在论→构成性姿态整体改写）仍未应用**，「L0 偏向非自我抹除」实在论措辞未动。(2) **Ψ_f 类型学收口**：`_SRT_PSI_F_CANONICAL.md` 新增 §3.2，划清本文件 payability 主读与 `Core_21c P2/P3-B08`「摩擦即生成」的管辖分界、方向性摩擦归入支付结构（`Ψ_f^{erase} > Ψ_f^{write}`）与 `L_0` 不可逆层而非度量层；§8 陈旧 `Ax-F-11/12` 标签更新为拆分后 `P3-B07`/`P2/P3-B08`。(3) **d_stakes 门收口**：`_SRT_D_VALUE_CANONICAL.md` 新增 §2b.1，固定 `w_i=R_i·A_i·C_i` 定性结构为 P2、数值化为 P3/P4，`D_eff ≥ d_canonical` 限于已声明 proxy regime，并给 AI/冻结态/机构统一门表（按因子报告，不压成单标量）。(4) **Q26 书稿→理论层回流**：`Core/SRT_Core_24_Discriminating_Predictions.md` 新增 §0b 修正/压力/失败纪律（Lakatos 进步-退化门 + 外部裁判门）与 P24-7 五组组合签名（P4/P5，含系统级反转失败条件）；`SRT_OPEN_TENSIONS.md §8` 加失败条件 6（后果回流可区分性）。(5) **安全修复**：`Core/SRT_Core_00_Intro.md:494` 断链 `SRT_Core_00b_Bridge.md`→`_SRT_Core_Bridge.md`；`SRT_OPEN_TENSIONS.md` 重复章节号 `## 7.`→`## 10.`。边界：理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响；Level A 只剪过载措辞不重构负担；书稿是 provenance 不是 authority，回流命题一律注册为待验证、非「已通过检验」。校验：`check_registry_consistency` = 0 error。
+- `2026-07-05`：**Core / Core_Law 审计 + 规范性 framing 收口（作者授权高风险编辑）**。(1) **Level A ε 去过载**（`90_Backstage/Incubation/_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md` Stage 2）：把 `Core_Law/SRT_L0_Metaphysics.md` §六 ε 词条与正骨架总结标签的「全部规范性力量锚定于 ε」、`_SRT_D_VALUE_CANONICAL.md §5b.1` 的「趋向全局自由能最小值」收窄为「ε = 最小条件（论域地板）+ 规范区分工作转向可重组判据 + 闭包边界尚待硬化」；下游回声 `Core/SRT_Core_NormativeGradient.md §6` 同步；`Core/SRT_OPEN_TENSIONS.md §9` 与 true-up 提案状态改标已应用。**Level B（实在论→构成性姿态整体改写）仍未应用**，「L0 偏向非自我抹除」实在论措辞未动。(2) **Ψ_f 类型学收口**：`_SRT_PSI_F_CANONICAL.md` 新增 §3.2，划清本文件 payability 主读与 `Core_21c P2/P3-B08`「摩擦即生成」的管辖分界、方向性摩擦归入支付结构（`Ψ_f^{erase} > Ψ_f^{write}`）与 `L_0` 不可逆层而非度量层；§8 陈旧 `Ax-F-11/12` 标签更新为拆分后 `P3-B07`/`P2/P3-B08`。(3) **d_stakes 门收口**：`_SRT_D_VALUE_CANONICAL.md` 新增 §2b.1，固定 `w_i=R_i·A_i·C_i` 定性结构为 P2、数值化为 P3/P4，`D_eff ≥ d_canonical` 限于已声明 proxy regime，并给 AI/冻结态/机构统一门表（按因子报告，不压成单标量）。(4) **Q26 书稿→理论层回流**：`Core/SRT_Core_24_Discriminating_Predictions.md` 新增 §0b 修正/压力/失败纪律（Lakatos 进步-退化门 + 外部裁判门）与 P24-7 五组组合签名（P4/P5，含系统级反转失败条件）；`SRT_OPEN_TENSIONS.md §8` 加失败条件 6（后果回流可区分性）。(5) **安全修复**：`Core/SRT_Core_00_Intro.md:494` 断链 `SRT_Core_00b_Bridge.md`→`_SRT_Core_Bridge.md`；`SRT_OPEN_TENSIONS.md` 重复章节号 `## 7.`→`## 10.`。边界：理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响；Level A 只剪过载措辞不重构负担；书稿是 provenance 不是 authority，回流命题一律注册为待验证、非「已通过检验」。校验：`check_registry_consistency` = 0 error。
 
 - `2026-06-16`：Pipeline 1 审查 Quanta Magazine / Philip Ball `The New Math of How Large-Scale Order Emerges`（published `2024-06-10`；official Quanta article read）及一手锚点 Rosas et al. arXiv preprint `Software in the natural world: A computational approach to hierarchical emergence`（arXiv:`2402.09090v2`；doi:`10.48550/arXiv.2402.09090`；metadata / abstract / HTML sample read）；裁决为 **B 类延后观察 / B1 computational-mechanics close-read candidate + B2 emergence-hygiene guardrail**。已新增 SourceCard（`Materials/2026/SRC_2024_06_10_Philosophy_ComplexSystems_Hierarchical_Emergence_Quanta_arXiv.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-06_Part01.md`。边界：Quanta 是二手 feature，primary anchor 仍是 arXiv preprint；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`Ψ_f`、`T_dir`、`Ĝ_theta`；当前只保留为 computational closure / strong-lumpability / emergence-hygiene watchlist。
 

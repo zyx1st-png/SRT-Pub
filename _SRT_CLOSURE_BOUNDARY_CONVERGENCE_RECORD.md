@@ -99,5 +99,5 @@ dependency: [SRT-EPSILON-NORMATIVITY-OPEN-TENSION, SRT-DIRECTION3-L0-PROBE-RESEA
 
 - 本记录是 `Core/SRT_OPEN_TENSIONS.md` 的**候选条目**,未自动提升;提升须走 `Governance/SRT_EDIT_PROTOCOL.md`。
 - **不改写** L0 / d-value / T_dir canonical;§3 三条件、§4 终点形态均为 proposal。
-- 与 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`、`_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md §3-§4`、`_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md` 收敛,互为印证。
+- 与 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`、`_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md §3-§4`、`90_Backstage/Incubation/_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md` 收敛,互为印证。
 - **两点降承诺即防误用红线**:(1)不得引用为"SRT 全部规范性 = 反 foreclosure";(2)不得引用为"边界问题已解决"。准确读法只到"在闭包边界问题上的可错论式奠基 / 改变了问题形态"。

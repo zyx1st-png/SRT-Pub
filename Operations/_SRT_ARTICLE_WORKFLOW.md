@@ -37,7 +37,7 @@ dependency: [_SRT_MEDIA_PIPELINE, SRT_TOPIC_ARTICLE_INDEX, _SRT_CHOICE_TRACE_LOG
   - **丢锋芒** = 作者想法里最反共识的部分被 LLM 当噪声修剪掉。
 - **记录（发散→收敛的配对轨迹）→ LLM 负责留痕，作者负责判断。** 见 §7、`_SRT_CHOICE_TRACE_LOG.md`。
 
-> 这条律和 `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` 的第一设计律同源。丢了它，本工作流就退化成"AI 帮我写文章"，锋芒和识别问题原样回来。
+> 这条律和 `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` 的第一设计律同源。丢了它，本工作流就退化成"AI 帮我写文章"，锋芒和识别问题原样回来。
 
 ---
 

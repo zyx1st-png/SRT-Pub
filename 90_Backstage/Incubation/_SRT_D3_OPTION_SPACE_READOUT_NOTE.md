@@ -10,14 +10,14 @@ canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-01
 provenance: 从 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §4.3`(D-3 检测问题)的一轮建构-攻击-修正对话中提炼;作者将读出对象从"主观/生理信号"重定位为"可选空间轨迹"
-candidate_promotion_target: none (稳定后拟并入 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` §2/§4.2-§4.3;本文件当前独立,不改写该 seed)
+candidate_promotion_target: none (稳定后拟并入 `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` §2/§4.2-§4.3;本文件当前独立,不改写该 seed)
 dependency: [SRT-DISTRIBUTIONAL-PAYABILITY-CANDIDATE-SEED, SRT-CLOSURE-BOUNDARY-CONVERGENCE-RECORD, SRT-DIRECTION2-PHASE-TRANSITION-DUEL, SRT-DIRECTION2-MORAL-GENEALOGY-SEED, SRT-OBJECTHOOD-AS-RESELECTABILITY-META-STANDARD, SRT-T-DIR-CANONICAL, SRT-PSI-F-CANONICAL]
 ---
 
 # D-3 读出对象重定位 —— 从主观/生理信号到可选空间轨迹
 
 > **文件地位(先读)**
-> - **non-canonical research note**。不修改任何 canonical 文件,不改写 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`。
+> - **non-canonical research note**。不修改任何 canonical 文件,不改写 `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`。
 > - 目标**不是**解决 D-3(闭包边界记录里"T_dir 是 d-门控的、遮蔽自我强化"那个 killer 攻击),是把它的检测对象重新定位到一个更精确、更接近可操作化的位置,并诚实标出重定位后剩下什么没解决。
 > - 待本文件稳定后,拟回头把 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §2` 加一条"支撑/转嫁关系"条件,并把该 seed §4.2-§4.3 改为指向本文件——**当前尚未做**,本文件是独立单元。
 
@@ -61,7 +61,7 @@ dependency: [SRT-DISTRIBUTIONAL-PAYABILITY-CANDIDATE-SEED, SRT-CLOSURE-BOUNDARY-
 
 - 第1-3条直接对应 `_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md §5` 的审计问题(真实选项场、可恢复性、再准入),以及 `_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md §6` RCI 的 V(真实可生成替代路径)、R(可恢复性)、A(申诉/再准入)三个分量。
 - 第4条是本文件对 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §2` 的一次**加固提案**(见 §5)。
-- Wedge 1(`_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`)的"sudden swap"实验设计——同一系统在 regime shift 前后追踪 option-diversity 轨迹——是这条主证据在 toy landscape 上**已经建成并跑通**的原型;本文件把它从"动力学半的 toy 验证"推广为"X 检测的真实世界证据来源",尚未在真实场景实现。
+- Wedge 1(`90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`)的"sudden swap"实验设计——同一系统在 regime shift 前后追踪 option-diversity 轨迹——是这条主证据在 toy landscape 上**已经建成并跑通**的原型;本文件把它从"动力学半的 toy 验证"推广为"X 检测的真实世界证据来源",尚未在真实场景实现。
 
 ---
 
@@ -115,12 +115,12 @@ D-3 的原始表述("如何在不依赖受益方 `T_dir` 的情况下,检测遮�
 ## 8. 与既有文件关系
 
 - 待检测问题来源:`_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §4.3`。
-- 主证据取材:`_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md §5`、`_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md §6`(RCI V/R/A)、`_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`(前后对照设计原型)。
+- 主证据取材:`_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md §5`、`_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md §6`(RCI V/R/A)、`90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`(前后对照设计原型)。
 - D-3 出处:`_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`。
-- **不改写** `_SRT_T_DIR_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`。
+- **不改写** `_SRT_T_DIR_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md`。
 
 ---
 
 ## 9. 文件目标(防误用)
 
-本文件把 D-3 检测问题的证据对象,从"主观感受/生理代理指标"重定位为"可选空间轨迹(真实路径数、可恢复性、申诉/再准入、与受益方稳定的支撑关系)",并诚实标出这个重定位没有解决什么(反事实基线构造、归因、第三方独立性)。它是一份独立的、可被攻击的候选笔记,不是对 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` 的修订——修订留待本文件稳定后再做。任何"候选/proposal"措辞在被作者按 `Governance/SRT_EDIT_PROTOCOL.md` 采纳前,不得当 SRT 定论引用。
+本文件把 D-3 检测问题的证据对象,从"主观感受/生理代理指标"重定位为"可选空间轨迹(真实路径数、可恢复性、申诉/再准入、与受益方稳定的支撑关系)",并诚实标出这个重定位没有解决什么(反事实基线构造、归因、第三方独立性)。它是一份独立的、可被攻击的候选笔记,不是对 `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` 的修订——修订留待本文件稳定后再做。任何"候选/proposal"措辞在被作者按 `Governance/SRT_EDIT_PROTOCOL.md` 采纳前,不得当 SRT 定论引用。

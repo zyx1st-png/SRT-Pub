@@ -19,7 +19,7 @@ dependency: [SRT-DIRECTION2-WEDGE1-SIM-RESULTS, SRT-DISTRIBUTIONAL-PAYABILITY-CA
 
 > **文件地位(先读)**
 > - **non-canonical / pilot_result / moral-half-illustration-only / not validation**。
-> - 不修改 L0 / d-value / T_dir / `Ψ_f`;不创建定义、不升级 theorem;不改写 `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` 或 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md`。
+> - 不修改 L0 / d-value / T_dir / `Ψ_f`;不创建定义、不升级 theorem;不改写 `90_Backstage/Incubation/_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md` 或 `90_Backstage/Incubation/_SRT_D3_OPTION_SPACE_READOUT_NOTE.md`。
 > - 它**只**演示:distributional payability §2 判据 + 支撑/转嫁加固条件 + D-3 笔记的可选空间轨迹证据,**可以在一个受控 toy 里被构造出来并被检测到**。**它不证明真实 AI 治理/申诉系统存在这个模式,也不证明该模式常见或严重。**
 > - 主张已**压窄**(见 §5);禁句表见 §7。
 
@@ -97,7 +97,7 @@ Direction 2 seed §8 把 AI 申诉/自动化治理列为**第二颗楔子**,承�
 
 ## 4. 与 D-3 / 审计者独立性的关系(诚实标注,不得跳过)
 
-结果 B 的反事实("受保护"基线)是**本文件作者构造的**——在真实世界里,这正是 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md §4`"谁来构造反事实基线"那一步,以及 `_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 要求的独立审计位置。平台自身的聚合指标(结果A"agg_net"列)**单独看不出**结果 B 揭示的支撑关系——需要一个能构造反事实、且不受平台单方面 foreclose 的位置才能看见。**本仿真没有回答"谁有资格充当这个位置",只演示了"一旦有人构造了这个反事实,支撑关系是可检测的"。**
+结果 B 的反事实("受保护"基线)是**本文件作者构造的**——在真实世界里,这正是 `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md §4`"谁来构造反事实基线"那一步,以及 `90_Backstage/Incubation/_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 要求的独立审计位置。平台自身的聚合指标(结果A"agg_net"列)**单独看不出**结果 B 揭示的支撑关系——需要一个能构造反事实、且不受平台单方面 foreclose 的位置才能看见。**本仿真没有回答"谁有资格充当这个位置",只演示了"一旦有人构造了这个反事实,支撑关系是可检测的"。**
 
 ---
 
@@ -129,8 +129,8 @@ Direction 2 seed §8 把 AI 申诉/自动化治理列为**第二颗楔子**,承�
 - ❌ "distributional payability / 支撑-转嫁判据已被验证"(一次 toy 演示 ≠ validation);
 - ❌ "1.8× / 5× 成本比是有真实依据的参数"(纯为让模式可见而选定,非拟合任何真实数据);
 - ❌ "本仿真建模了真实申诉/治理系统"(仍是 Wedge 1 的抽象 K 模式选项场,只是复制成两个子群体加两个标注的不对称);
-- ❌ "本仿真解决了审计者独立性/第三方读出问题"(§4——反事实基线由作者构造,现实中谁来做这件事仍是 `_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 的开放残余);
-- ❌ "结构性不对称 = 蓄意歧视"(模型的不对称是形式中立、结构性的,不建模任何主观恶意,呼应 `_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md` 对外部化"未必需要恶意"的定位);
+- ❌ "本仿真解决了审计者独立性/第三方读出问题"(§4——反事实基线由作者构造,现实中谁来做这件事仍是 `90_Backstage/Incubation/_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md` 的开放残余);
+- ❌ "结构性不对称 = 蓄意歧视"(模型的不对称是形式中立、结构性的,不建模任何主观恶意,呼应 `90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md` 对外部化"未必需要恶意"的定位);
 - ❌ "本楔子触及了 Direction 2 的道德命题证明"(它仍只是道德半的**illustration**,不是命题的证实——动力学结果不等于道德命题被证实,Wedge 1 §8 的红线原样适用)。
 
 ---
@@ -138,10 +138,10 @@ Direction 2 seed §8 把 AI 申诉/自动化治理列为**第二颗楔子**,承�
 ## 8. 回链 + 复跑
 
 **回链**:
-- `_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`(本楔子直接扩展的模型与序参量);
+- `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`(本楔子直接扩展的模型与序参量);
 - `_SRT_DISTRIBUTIONAL_PAYABILITY_CANDIDATE_SEED.md §2`(本楔子操作化的判据 + 支撑/转嫁补充条件);
 - `_SRT_D3_OPTION_SPACE_READOUT_NOTE.md §3-§4`(可选空间轨迹为主证据;反事实基线构造问题);
-- `_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md`(§4 点出的"谁来构造反事实"仍是它的开放残余);
+- `90_Backstage/Incubation/_SRT_AUDITOR_INDEPENDENCE_CANDIDATE_NOTE.md`(§4 点出的"谁来构造反事实"仍是它的开放残余);
 - `_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md §5/§8`(X-防火墙;第二楔子的原始定位);
 - `Governance/AI_RESELECTABILITY_AUDIT_FRAME_2026-07-01.md`(§2.8 外部化诊断;本楔子是该诊断问题的一个受控 toy illustration,不是该框架的验证)。
 

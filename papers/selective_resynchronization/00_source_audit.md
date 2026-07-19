@@ -168,10 +168,10 @@ The new paper must keep the following distinctions explicit:
 
 | File | Status | Useful content | Boundary |
 |---|---|---|---|
-| `_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md` | non-canonical research seed | current performance can be purchased by loss of future reopening; reselectability is not option count | cannot define the paper's variable by ontology or morality |
+| `90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md` | non-canonical research seed | current performance can be purchased by loss of future reopening; reselectability is not option count | cannot define the paper's variable by ontology or morality |
 | `_SRT_CONTEXT_ROUTER_RESELECTABILITY_ADDENDUM.md` | navigation | separates ontology, dynamics and governance; says current performance and future reselectability can diverge | toy evidence is dynamics-half only |
-| `_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md` | pilot, not validation | in one toy landscape, reward-optimal and future-robust operating points diverge | no neural-learning validation; no moral or ontological inference |
-| `_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md` | toy illustration, not validation | shows a constructed distributional-payability pattern | peripheral to the new neural-learning paper; should not enter the core argument |
+| `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md` | pilot, not validation | in one toy landscape, reward-optimal and future-robust operating points diverge | no neural-learning validation; no moral or ontological inference |
+| `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md` | toy illustration, not validation | shows a constructed distributional-payability pattern | peripheral to the new neural-learning paper; should not enter the core argument |
 | `_SRT_D_VALUE_CANONICAL.md` §11 | canonical index with bridge formulas | distinguishes current alignment from `d_mobile`, a proposed dynamic realignment capacity | new ML outcome should be called retained adaptability / residual plasticity, not canonical d-value |
 | `_SRT_PSI_F_CANONICAL.md` Def-Ψ-3 and §6 | canonical boundary | payability explicitly includes preservation of closure, continuity and future selection capacity | inspires the question but does not supply an ML measurement identity |
 | `Neuroscience/SRT_Neuroscience_Claim_Status.md` §2.4 | domain audit | permits “cross-system desynchronization” as a pathology-modeling bridge | no operational definition of productive or selective resynchronization |

@@ -539,7 +539,7 @@ assistant 对此的读法：本次 trace 应优先进入“本体论源头”，
 
 ### 6.3 Canonical 碰撞检查（三态）
 
-- **已覆盖（直觉复认，非新增）**：P1/P2 →`Core_Law/SRT_L0_Metaphysics.md` 第一命题（选择是无主语的过程）与 `01_Source_Intuition/CORE_REVERSALS.md` #1/#2；P3/P4 → L0 的 ε（"偏向非自我抹除的结构倾向"）与初心词条；P5 → 书稿 Q06 三尊幽灵 + ghost operator 桥；P8（选错侧）→ 可再选择性元标准（`_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`）。
+- **已覆盖（直觉复认，非新增）**：P1/P2 →`Core_Law/SRT_L0_Metaphysics.md` 第一命题（选择是无主语的过程）与 `01_Source_Intuition/CORE_REVERSALS.md` #1/#2；P3/P4 → L0 的 ε（"偏向非自我抹除的结构倾向"）与初心词条；P5 → 书稿 Q06 三尊幽灵 + ghost operator 桥；P8（选错侧）→ 可再选择性元标准（`90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`）。
 - **新候选（真实增量）**：P6（存在=对象+边界+可能性场三元共构；"失败选择生成边界"）；P10（选择地基四条件 + 没有选择→伪选择→惩罚性选择→尊重选择分层的跨域化）；P12（退化=脆弱性提升）；P13（熵=去选择化画像）；P14（耗散结构 vs 选择结构划界，pending）。
 - **冲突/触雷**：P2 触及 `Core/SRT_OPEN_TENSIONS.md §7 P0-04`（selectability 起源未解决）——"主体只是选择结构的高级形态"应按 P0-04 护栏读作 derived process / stable pattern 选项，本 trace 是 P0-04 的直觉证词，不是解答；P13 与 `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md` 方向相反（Core_25 用热力学不可逆性作选择的签名，P13 把熵重定位为去选择化剩余画像），且 CT-21 的 ontological absence vs theoretical abstraction 校准未完成——引用 P13 不得写成 SRT 反熵理论。
 

@@ -19,7 +19,7 @@ dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED, SRT-DIRECTION3-CHOICEMAP-C
 > **三条硬声明(先读)**
 > 1. **这只是 Claude 一个家族的臂,且 baseline 与 ChoiceMap 两侧都由 Claude 自跑、自评** —— 双重自指,**证据强度极低**,只用于(a)打通评分流水线、(b)给一个对照样例。真实结论须由**盲评的人类评分者** + **≥3 个不同家族模型**得出。
 > 2. **跨家族臂(GPT / Gemini / 开源权重等)本文件不填** —— 本环境无 LLM 调用能力,且**绝不伪造其它模型输出**(伪造会直接污染这个"比较真实模型"的实验)。那几臂须由作者用 prototype seed §3 的提示词外部运行后回填。
-> 3. ChoiceMap 臂的样例输出见 `_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md`(本文件不重复),此处只放 **baseline 臂输出** + **A/B 评分**。
+> 3. ChoiceMap 臂的样例输出见 `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md`(本文件不重复),此处只放 **baseline 臂输出** + **A/B 评分**。
 
 ---
 

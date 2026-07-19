@@ -17,7 +17,7 @@ dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED]
 # ChoiceMap 校准参照集(T1–T7 样例输出 + 自评锚点)
 
 > **这份文件干什么**
-> - 它是 `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` 的**评分校准参照**:一个模型(此处为 Claude)严格按 ChoiceMap 系统提示词跑完 T1–T7 的**样例输出**,加上**逐项自评(M1–M5)与打分理由**。
+> - 它是 `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` 的**评分校准参照**:一个模型(此处为 Claude)严格按 ChoiceMap 系统提示词跑完 T1–T7 的**样例输出**,加上**逐项自评(M1–M5)与打分理由**。
 > - 用途:给后续跑多 LLM 的**人类评分者一组锚点**——"长成什么样算 M3=2""护栏怎样算守住(M5=2)、怎样算违规(M5=0)"。
 > - **它不是 ground truth**。这是单一模型的一次参照输出,可能本身有偏(尤其 M1 的"反共识选项"可能仍带 Claude 的脾气)。评分者应把它当**对照锚**,不是标准答案。
 > - 非 canonical,不定义术语;SRT 概念以 canonical 为准。

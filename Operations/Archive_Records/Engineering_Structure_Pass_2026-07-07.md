@@ -24,7 +24,7 @@ machine_summary: >
 
 - `Papers/` 下 4 个文件 `git mv` 入 `papers/`；`papers/` 为唯一规范路径。
 - 动机：macOS 大小写不敏感掩盖冲突；Linux（CI / cloud agent）checkout 会分裂成两个目录。
-- 引用更新：`SRT_NEXT_OPTIMIZATION_TODO.md`、`Operations/Archive_Records/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md`、`Experiments/` 下 4 文件、`05_Public_Release/PUBLIC_INDEX.md`、`scripts/governance_common.py`（移除 `Papers/` artifact 前缀）。
+- 引用更新：`90_Backstage/Plans_Archive/SRT_NEXT_OPTIMIZATION_TODO.md`、`Operations/Archive_Records/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md`、`Experiments/` 下 4 文件、`05_Public_Release/PUBLIC_INDEX.md`、`scripts/governance_common.py`（移除 `Papers/` artifact 前缀）。
 - 历史 Operations 审计记录中的 `Papers/` 字样按史料保留，不回改。
 
 ## 2. Governance preflight 接入 CI
@@ -38,7 +38,7 @@ machine_summary: >
 
 ## 3. 前台重构裁决（pointer overlay 定案）
 
-- `FRONTSTAGE_RESTRUCTURE_PLAN.md` 状态 `proposed_v1` → `adjudicated_v2_pointer_overlay`。
+- `Governance/FRONTSTAGE_RESTRUCTURE_PLAN.md` 状态 `proposed_v1` → `adjudicated_v2_pointer_overlay`。
 - 编号层（01–05）永久作为前台指针覆盖层；Phase 3/4 批量迁移关闭；旧文件不动，新对外材料可直接落编号层（BOOK 为先例）。
 
 ## 4. 根目录一次性文件归档

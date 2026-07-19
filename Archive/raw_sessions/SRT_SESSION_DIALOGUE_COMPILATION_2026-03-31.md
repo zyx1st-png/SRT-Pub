@@ -749,7 +749,7 @@ dependency: [SRT-DIALOGUE-LOG, SRT-STATUS]
 6. `Core_Law/SRT_Core_Text_EN.md`
 7. `Core_Law/SRT_Core_Text_CN_Euclid.md`
 8. `video/NLM_意义危机_为什么你找不到意义.md`
-9. `SRT_PRACTICE_COMMUNITY_PLAN.md`
+9. `90_Backstage/Plans_Archive/SRT_PRACTICE_COMMUNITY_PLAN.md`
 
 此外，也形成了若干阶段性判断和战略导向，被写入或反映到：
 

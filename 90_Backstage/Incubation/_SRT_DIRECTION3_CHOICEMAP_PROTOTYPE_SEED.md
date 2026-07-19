@@ -17,7 +17,7 @@ dependency: [SRT-DIRECTION3-L0-PROBE-RESEARCH-SEED, SRT-D-VALUE-CANONICAL, SRT-L
 # ChoiceMap 无代码原型规格 + 跨 LLM 测试设计
 
 > **性质与边界（先读）**
-> - 本文件是 `_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md` 的**姊妹件**:把方向三的工具落到一个**可立即用多个 LLM 跑的无代码原型**(ChoiceMap),并给出**可证伪的测试用例与评分协议**。
+> - 本文件是 `90_Backstage/Incubation/_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md` 的**姊妹件**:把方向三的工具落到一个**可立即用多个 LLM 跑的无代码原型**(ChoiceMap),并给出**可证伪的测试用例与评分协议**。
 > - **非 canonical**,不定义术语,不替代 L0 / d-value / T_dir。所有 SRT 概念以 canonical 为准。
 > - 原型只覆盖**单用户、单会话、定性**层。**自修正动力学、revealed-stake 提取、d 轨迹、P1–P3 结构性强制 = 编码层,不在本原型范围**(见种子文档 §3–§5)。
 

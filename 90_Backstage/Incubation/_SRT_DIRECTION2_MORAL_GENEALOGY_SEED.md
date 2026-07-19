@@ -57,7 +57,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-D-VALUE-CANONICAL, SRT-T-DIR-CANONICAL, SRT
 
 1. **构成性,不是对象属性**:proto-normativity 是"**选择-之为-选择**"已带的最低方向性,**不是** 0 层的物所**拥有**的属性。氢原子不是道德 patient;**是选择动力学有地板**。
 2. **明确否定**:proto-normativity **不是** proto-道德、**不是** proto-体验、**不是**宇宙道德方向。它只是"可继续确定、可继续差异化、不自我抹除"的最低条件,**零道德地位、零现象内容**。
-3. **姿态相对,非实在论**:它是"选择-之为-选择"的构成性条件,不是"L0 客观偏向"(承 ε 去过载,见 `_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md`)。
+3. **姿态相对,非实在论**:它是"选择-之为-选择"的构成性条件,不是"L0 客观偏向"(承 ε 去过载,见 `90_Backstage/Incubation/_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md`)。
 
 > 0 层是**道德能够出现的前主体地板**,本身**还不是道德**。
 
@@ -195,4 +195,4 @@ d→∞ **不是宇宙事实**,而是**规约理想**:不断扩大反遮蔽扰�
 - 本文件目标**不是证明 Direction 2**,是给它一个**清晰、可攻击、可实验化的起点**。
 - 它是 **non-canonical research seed**;**不创建定义、不升级 theorem、不自动写入 canonical**。其**残余**(§9 所列)可作 `OPEN_TENSIONS` 的候选喂料;其**定义**不可。
 - 任何"after / 候选"措辞在被作者按 `Governance/SRT_EDIT_PROTOCOL.md` 采纳前,**不得当 SRT 定论引用**。
-- 与 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`、`_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`、`_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md` 收敛,互为印证。
+- 与 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`、`_SRT_CLOSURE_BOUNDARY_CONVERGENCE_RECORD.md`、`90_Backstage/Incubation/_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md` 收敛,互为印证。
