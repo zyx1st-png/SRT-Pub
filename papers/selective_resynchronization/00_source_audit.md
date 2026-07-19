@@ -169,7 +169,7 @@ The new paper must keep the following distinctions explicit:
 | File | Status | Useful content | Boundary |
 |---|---|---|---|
 | `90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md` | non-canonical research seed | current performance can be purchased by loss of future reopening; reselectability is not option count | cannot define the paper's variable by ontology or morality |
-| `_SRT_CONTEXT_ROUTER_RESELECTABILITY_ADDENDUM.md` | navigation | separates ontology, dynamics and governance; says current performance and future reselectability can diverge | toy evidence is dynamics-half only |
+| `_SRT_CONTEXT_ROUTER.md §23` (reselectability route) | navigation | separates ontology, dynamics and governance; says current performance and future reselectability can diverge | toy evidence is dynamics-half only |
 | `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md` | pilot, not validation | in one toy landscape, reward-optimal and future-robust operating points diverge | no neural-learning validation; no moral or ontological inference |
 | `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE2_SIM_RESULTS.md` | toy illustration, not validation | shows a constructed distributional-payability pattern | peripheral to the new neural-learning paper; should not enter the core argument |
 | `_SRT_D_VALUE_CANONICAL.md` §11 | canonical index with bridge formulas | distinguishes current alignment from `d_mobile`, a proposed dynamic realignment capacity | new ML outcome should be called retained adaptability / residual plasticity, not canonical d-value |

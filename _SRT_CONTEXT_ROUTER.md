@@ -557,7 +557,92 @@ When answering or editing a non-simple SRT question:
 
 ---
 
-## 20. Maintenance Rule
+## 21. Route: Core 24 — Floor Replacement / Dynamic Normativity / Non-Reductive Verification
+
+> Merged from `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md` (2026-07-20).
+
+**Use when the query mentions**: explanatory power, object-first ontology, wrong floor, floor replacement, selection-first ontology, purpose, value, morality, framework, normativity, moral constraint, non-reductive verification, indirect measurement, structural validation, core concepts hard to measure, SRT as 万能解释, SRT as 玄学, reviewer-risk guardrails.
+
+### Primary
+
+- `Core/SRT_Core_24_Index.md`
+- `Core/SRT_Core_24_Floor_Normativity_Verification.md`
+- `Core/SRT_Core_24_Canonical_Merge_Draft.md`
+- `Core/SRT_Core_21_Minimal_Axioms.md`
+- `_SRT_D_VALUE_CANONICAL.md`
+- `_SRT_PSI_F_CANONICAL.md`
+
+### Secondary
+
+- `Core/SRT_Core_12b_Ontology_L2.md`
+- `Core/SRT_OPEN_TENSIONS.md`
+- `SRT_EXP_MEASURE_MAP.md`
+- `Governance/SRT_CLAIM_LADDER.md`
+- `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
+- `Philosophy/SRT_Political_Philosophy.md`
+
+### Boundary
+
+- Core 24 is a partially integrated bridge-hardening and canonical-framing layer, not a completed P0/P1 theorem package.
+- Do not frame SRT as "explaining everything"; frame it as replacing object-first ontology with selection-first ontology.
+- Do not treat "not directly measurable" as "beyond verification."
+- Do not treat "morality as L2 constraint" as automatic moral endorsement.
+- Do not treat value as reward / preference / salience; use concern-weighted non-substitutability under consequence return.
+- Do not treat `Ψ_f` as task difficulty, pain, effort, energy, Fisher metric, prediction error, or stress marker.
+- Any further canonical promotion must go through the claim ladder.
+
+---
+
+## 22. Route: Core 25 / Core 26 — Thermodynamic Signatures & MISA Attractor
+
+> Merged from `_SRT_CONTEXT_ROUTER_CORE25_CORE26_EXTENSION.md` (2026-07-20).
+
+**Route A — Thermodynamic Signatures / Irreversibility / Arrow of Time.** Use when the query mentions: Thermodynamics of Mind, irreversibility, arrow of time, entropy production, broken detailed balance, neural hierarchy, turbulence, hierarchy flattening, thermodynamic signatures of consciousness, empirical proxies for `Ψ_f` / `d-value` / `Ĝθ`.
+
+- **Primary**: `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`, `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`, `SRT_EXP_MEASURE_MAP.md`
+- **Secondary**: `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`, `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`, `Core/SRT_Core_22_Equations.md`, `SRT_Fisher_FEP_Landscape_Interface.md`
+- **Boundary**: irreversibility is a selection signature, not consciousness itself; entropy production is a domain proxy, not literal identity with `Ψ_f`; turbulence is a candidate implementation mechanism, not the Ghost Operator; consciousness-relevant use must include `d-value`, payability, anchoring, and global availability / loop closure.
+
+**Route B — MISA Attractor / Mutual Inhibition / Self Activation / L2 Hardening.** Use when the query mentions: MISA, mutual inhibition, self activation, attractor basin, bistability, tristability, hybrid attractor, cell fate, Evo-Devo, neural category formation, habit hardening, identity attractor, social institutional lock-in, AI role attractor.
+
+- **Primary**: `Core/SRT_Core_26_MISA_Attractor_Interface.md`, `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`, `Core_Law/SRT_Reference_Dynamics.md`, `_SRT_PSI_F_CANONICAL.md`, `_SRT_D_VALUE_CANONICAL.md`
+- **Secondary**: `Core/SRT_Core_12b_Ontology_L2.md`, `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`, `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`, `AI/SRT_AI_Claim_Status.md`, `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+- **Boundary**: MISA is an implementation-level bridge, not a new SRT axiom; attractor stability does not imply high `d-value`; AI role attractors do not imply moral patienthood or subjecthood; hybrid attractors are possible stable basins, not automatic normative improvements; use `Ψ_f` and payability to distinguish adaptive hardening from brittle or pathological hardening.
+
+---
+
+## 23. Route: Reselectability / Objecthood / Reward–Reselectability Dissociation
+
+> Merged from `_SRT_CONTEXT_ROUTER_RESELECTABILITY_ADDENDUM.md` (2026-07-20). Primary sources are now parked under `90_Backstage/Incubation/`; see `_SRT_PARKED_INDEX.md`.
+
+**Use when the query mentions**: reselectability, re-sampling capacity, option-diversity, objecthood, object-health, reward-health / re-sampling-death, reward–reselectability dissociation, future reopening, foreclosure, ChoiceMap, AI governance audit, performance purchased by hidden loss of future choice, system health beyond performance.
+
+### Primary
+
+- `90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md`
+- `90_Backstage/Incubation/_SRT_DIRECTION2_WEDGE1_SIM_RESULTS.md`
+- `90_Backstage/Incubation/_SRT_DIRECTION2_MORAL_GENEALOGY_SEED.md`
+- `_SRT_D_VALUE_CANONICAL.md`
+- `_SRT_T_DIR_CANONICAL.md`
+- `Core/SRT_OPEN_TENSIONS.md`
+
+### Secondary
+
+- `Product/ChoiceMap/CHOICEMAP_RESELECTABILITY_PRODUCT_EXPLANATION_2026-07-01.md`
+- `Governance/AI_RESELECTABILITY_AUDIT_FRAME_2026-07-01.md`
+- `Public_Content/SRT_RESELECTABILITY_PUBLIC_SHORT_2026-07-01.md`
+
+### Boundary
+
+- Do **not** reduce reselectability to current reward, long-term reward, entropy, option count, or generic robustness.
+- Do **not** identify toy `pre_div` with canonical d-value, or re-sampling capacity with canonical T_dir.
+- Do **not** claim the toy wedge validates SRT ontology or morality, or infer equal moral status for all objects.
+- Do **not** use this route to solve P0-04, closure-boundary, or externalization/X.
+- Keep three layers separate: ontology (objecthood as maintained consequence-bearing reselectable closure), dynamics (reward/performance can diverge from future reselectability), morality/governance (moral pressure opens when one position's selection compresses another's reselectability, but X/externalization remains under-defined).
+
+---
+
+## 24. Maintenance Rule
 
 Whenever a new deep file is created:
 
@@ -565,3 +650,5 @@ Whenever a new deep file is created:
 2. Add it to `_SRT_CONTEXT_ROUTER.md` if it should be retrieved for a recurring question type.
 3. Add it to `_SRT_DEEP_THEORY_MAP.md` if it represents a major theory node.
 4. Add a task to `Operations/_SRT_DEEP_NAV_TODO.md` if its route, boundary, or cross-references are incomplete.
+
+When a Core-NN extension route matures, fold it directly into this router (as done for the Core 24 / 25 / 26 / reselectability routes on 2026-07-20) rather than creating a new standalone `_SRT_CONTEXT_ROUTER_*_EXTENSION.md` file. New router routes must not spawn new sidecar files.
