@@ -18,12 +18,14 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 
 ## 我第一次来
 
-推荐路线：
+本文件是**人类阅读的唯一总入口**（single hub）。按你想要的深度选一条：
 
-1. `README.md`
-2. `SRT_Quick_Start.md`
-3. `SRT_1H_Onboarding.md`
-4. `Core_Law/SRT_L0_Metaphysics.md`
+- **想用 8–10 分钟先抓住概念（中英双语）** → `SRT_Quick_Start.md`（选择优先、L0/L1/L2、`Ĝθ`/`d`/`Ψf`/`T_dir`、"SRT 不是什么"）
+- **想用一小时走完概念骨架（研究者/协作者）** → `SRT_1H_Onboarding.md`（五公理、结构图、三案例、自测题）
+- **想直接进最根本的形而上学核心** → `Core_Law/SRT_L0_Metaphysics.md`（四命题，无公式，10 分钟）
+- **想按兴趣分轨进入** → 见下方「按兴趣分轨阅读」
+
+`README.md` 是 GitHub 公开门面；上面三个是不同深度的阅读体验，按需选一个即可，不必都读。
 
 ## 我想读中文主论证
 
@@ -54,6 +56,52 @@ dependency: [_SRT_INDEX, _SRT_MANIFEST]
 施工 / 元状态以 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md` 为唯一入口（章节进度、定位、护栏、导出规则）。GitHub 首页 `README.md` 有中英双语四幕目录与全章节表。
 
 阅读提醒：书稿是 `canonical: false` 的源头哲学主文本，不替代 Core/Core_Law 的 canonical 定义。源文件带 YAML front matter（供仓库工具使用），读者导出时剥离。
+
+## 按兴趣分轨阅读
+
+> 合并自 `SRT_Public_Reading_Guide.md`（2026-07-20）。四条按读者关切分的最短轨道。
+
+**轨 A — 一般哲学读者**（本体论、意识、意义、形而上学）
+1. `SRT_Quick_Start.md`
+2. `Core_Law/SRT_L0_Metaphysics.md`
+3. `Core_Law/SRT_Core_Text_CN_Euclid.md`
+4. `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`
+5. `Philosophy/SRT_Philosophy_Foundations_CompactCore.md`
+
+**轨 B — 意识/神经读者**（意识、大脑、不可逆性、注意、主观时间）
+1. `SRT_Quick_Start.md`
+2. `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
+3. `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`
+4. `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
+5. `SRT_EXP_MEASURE_MAP.md`
+
+**轨 C — AI/能动性读者**（AI 意识、AI 能动性、道德地位、合成算子）
+1. `AI/README.md`
+2. `AI/SRT_AI_Claim_Status.md`
+3. `AI/SRT_AI_01_Ontology_CompactCore.md`
+4. `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`
+5. `Core/SRT_Core_26_MISA_Attractor_Interface.md`
+
+**轨 D — 社会/制度读者**（规范、制度、语言、角色、政治秩序、文化硬化）
+1. `SRT_Quick_Start.md`
+2. `Core/SRT_Core_26_MISA_Attractor_Interface.md`
+3. `Philosophy/SRT_SocTheory_06_L2_Dynamics.md`
+4. `Philosophy/SRT_Social_Economics_CompactCore.md`
+5. `Philosophy/SRT_Political_Philosophy_CompactCore.md`
+
+### 不要过度阅读的东西
+
+| 文件类型 | 读法 |
+|---|---|
+| `Core_Law/` | 最接近 canonical 基础 |
+| `Core/` | core / 形式化 / bridge-hardening，按文件而定 |
+| `AI/`、`Physics/`、`Neuroscience/` | 领域接口（休眠层，带冻结戳） |
+| `Annex/` 目录 | 非 canonical 比较 / 接口材料 |
+| `Operations/` | 工作流记录，不是理论 |
+| `_SRT_INDEX.md` | 机器索引，不是公共文章 |
+| `_SRT_SYMBOL_TABLE.md` | 符号注册表，不是入门 |
+
+> bridge 文件解释 SRT 如何连接另一个领域；它不会自动变成 SRT 的基础。公共读者不应从 `_SRT_INDEX.md`、`_SRT_SYMBOL_TABLE.md`、`Operations/`、annex 目录或 claim-status 审计开始。
 
 ## 我想看 formal core
 

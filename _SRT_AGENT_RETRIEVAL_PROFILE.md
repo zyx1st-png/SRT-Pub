@@ -227,7 +227,7 @@ Read:
 2. `05_Public_Release/README.md`
 3. `05_Public_Release/PUBLIC_INDEX.md`
 4. `05_Public_Release/PUBLIC_GUARDRAILS.md`
-5. `SRT_Public_Reading_Guide.md`
+5. `SRT_Navigation_Map.md`（人类阅读总入口；原 `SRT_Public_Reading_Guide.md` 的分轨阅读已并入，2026-07-20）
 6. `video/SRT_Video_Claim_Status.md` when scripts, talks, or cinematic drafts are involved
 7. `01_Source_Intuition/CORE_REVERSALS.md`
 8. `Manifesto/SRT_MANIFESTO.md` when worldview tone is needed
