@@ -18,7 +18,7 @@ dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED, SRT-CHOICE-TRACE-LOG, SRT-
 
 > **性质与边界（先读）**
 > 1. 本文件是运行层工作流，**非 canonical，不定义 SRT 术语**；完成流程不等于命题被证明。
-> 2. 本文件不替代 `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md`、`Operations/_SRT_CHOICE_TRACE_LOG.md` 或文章工作流；它提供 ChoiceMap 直觉挖掘、回写和跨会话恢复的公共协议。
+> 2. 本文件不替代 `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md`、`Operations/_SRT_CHOICE_TRACE_LOG.md` 或文章工作流；它提供 ChoiceMap 直觉挖掘、回写和跨会话恢复的公共协议。
 > 3. 作者负责答案、分支取舍和张力裁决；assistant 负责发散、追问、揭示张力、维护问题树和提醒回根。
 > 4. ChoiceMap 的基本形态不是无限向下的选择链，而是：**下钻 → 对表 → 回根 → 重画问题树 → 再选择分支**。
 
@@ -48,7 +48,7 @@ v4 因此增加**反垂直化协议**：任何长对话都必须维护根问题�
 
 | 用途 | 主要规格 | assistant 可收敛什么 | assistant 不得收敛什么 |
 |---|---|---|---|
-| 决策支持（产品） | `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` | 不收敛，只显现结构 | 排序、推荐、替用户决定 |
+| 决策支持（产品） | `90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` | 不收敛，只显现结构 | 排序、推荐、替用户决定 |
 | 文章工作流 | `_SRT_ARTICLE_WORKFLOW.md` + `_SRT_CHOICE_TRACE_LOG.md` | 不收敛，只发散和记录 | 选题、论点、成文结论 |
 | 直觉挖掘 | 本文件 | 可选择“下一步应呈现哪些问题分支” | 不得替作者回答，也不得静默决定持续下钻 |
 

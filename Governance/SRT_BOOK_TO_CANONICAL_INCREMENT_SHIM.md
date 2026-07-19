@@ -55,7 +55,7 @@ This file exists because the current book line has become theoretically producti
 | direction three questions: self-consumption / externalization / lock-in | `Drafts_26Q/Q22_方向.md` | fallibilist structural diagnostic; P2/P3, with P4 thresholds | `Core/SRT_OPEN_TENSIONS.md §9`, occlusion dynamics, reselectability route, possible normativity true-up | Do not treat as complete ethics, final normativity foundation, or solved closure-boundary. |
 | community as multi-position consequence-return network | `Drafts_26Q/Q23_共同体.md` | P2/P3 collective diagnostic | `Core_Law/SRT_Collective_Selection.md`, closure-boundary open tension, social/political bridge files | Do not treat as a collective big subject, unified will, or final multi-subject aggregation theorem. |
 | falsifiability / death-condition discipline | `Drafts_26Q/Q26_可证伪性.md` | book-level methodological guard; lab/bridge candidate | experiment map, claim ladder, domain failure-condition files | Do not treat book failure lists as completed empirical validation or as canonical refutation protocol without operationalization. |
-| reselectability as meta-standard | `BOOK_RESELECTABILITY_*`, `_SRT_CONTEXT_ROUTER_RESELECTABILITY_ADDENDUM.md` | route addendum + P2/P3 meta-standard | closure-boundary, occlusion, AI governance, ChoiceMap, objecthood hardening | Do not equate with option count, reward, entropy, generic robustness, or solved morality. |
+| reselectability as meta-standard | `BOOK_RESELECTABILITY_*`, `_SRT_CONTEXT_ROUTER.md §23` | route addendum + P2/P3 meta-standard | closure-boundary, occlusion, AI governance, ChoiceMap, objecthood hardening | Do not equate with option count, reward, entropy, generic robustness, or solved morality. |
 
 ---
 

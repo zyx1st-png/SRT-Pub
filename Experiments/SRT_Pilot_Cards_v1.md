@@ -24,7 +24,7 @@ date: 2026-04-27
 dependency:
   - Core/SRT_Validation_Template.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
-  - Operations/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
+  - Operations/Archive_Records/SRT_OPTIMIZATION_COMPLETION_AUDIT_2026-04-27.md
   - papers/SRT_NonReductive_Verification_Outline.md
   - papers/SRT_D_Value_Ontology_of_Concern_Outline.md
 machine_summary: >

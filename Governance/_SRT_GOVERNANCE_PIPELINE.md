@@ -99,7 +99,7 @@ P2（本月内）：...（附理由）
 
 ## 输出产物
 
-- `Operations/Large_File_Audit_2026-05-09.md`（当 preflight 写入大文件报告时）
+- `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`（当 preflight 写入大文件报告时）
 - `Governance/Frontmatter_Warning_Baseline.txt`（当 baseline 需要承认当前已知债务时）
 - `Governance/_SRT_QUALITY_SCORECARD.md`（更新）
 - `Governance/_SRT_WEEKLY_THEORY_REVIEW.md`（追加本周区块）

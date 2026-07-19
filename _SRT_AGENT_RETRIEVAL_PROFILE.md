@@ -227,7 +227,7 @@ Read:
 2. `05_Public_Release/README.md`
 3. `05_Public_Release/PUBLIC_INDEX.md`
 4. `05_Public_Release/PUBLIC_GUARDRAILS.md`
-5. `SRT_Public_Reading_Guide.md`
+5. `SRT_Navigation_Map.md`（人类阅读总入口；原 `SRT_Public_Reading_Guide.md` 的分轨阅读已并入，2026-07-20）
 6. `video/SRT_Video_Claim_Status.md` when scripts, talks, or cinematic drafts are involved
 7. `01_Source_Intuition/CORE_REVERSALS.md`
 8. `Manifesto/SRT_MANIFESTO.md` when worldview tone is needed
@@ -248,7 +248,7 @@ Read:
 2. `Governance/README.md`
 3. `Governance/SRT_CANONICAL_FREEZE.md`
 4. `Governance/SRT_EDIT_PROTOCOL.md`
-5. `Operations/Large_File_Audit_2026-05-09.md`
+5. `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`
 6. `LONGFORM_SPLITS.md`
 7. `_SRT_INDEX.md`
 8. `_SRT_CONTEXT_ROUTER.md`
@@ -265,7 +265,7 @@ Rule:
 
 When using GitHub, ChatGPT repo connectors, Claude Code context tools, or any tool that may truncate or rank files:
 
-1. Check `Operations/Large_File_Audit_2026-05-09.md`.
+1. Check `Operations/Archive_Records/Large_File_Audit_2026-05-09.md`.
 2. Check `LONGFORM_SPLITS.md`.
 3. Prefer the split README for long owner files.
 4. Read the owner file when exact wording or local line context is needed.

@@ -222,7 +222,7 @@ AI owner files and split shards may preserve historical `Axiom`, `Theorem`, `Cor
 2. Add explicit claim-status pointers from split / annex README files to this document.
 3. Decide whether to consolidate AI interface material into a unified `AI_Annex/` directory or retain topic-specific annex directories.
 4. Extract only external comparison and current-model capability sections; do not move formal thresholds or canonical imports.
-5. Add an `Operations/AI_Annex_Round1_Closure_Report.md` after the first safe extraction cycle.
+5. Add an `Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md` after the first safe extraction cycle.
 
 ---
 

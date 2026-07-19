@@ -25,7 +25,7 @@ dependency: [SRT-DIALOGUE-LOG]
 ::code-comment{title="[P2] 量子段落超额外推了 Bell 结果" body="从“局域隐变量被排除”直接跳到“测量参与事实产生、粒子在测量前确实没有确定属性”，这一步并不被 Bell 实验强制推出。非定域隐变量、Everett、关系论等解释都还能活着，因此这段不能充当‘选择先于存在’的稳固首个支撑例。把它写成 opening strike，只会让最强反对者在第一段就拒稿。" file="/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Selection_Argument.md" start=48 end=54 priority=2 confidence=0.92}
 ::code-comment{title="[P2] 客观性定义缺少反共错条件" body="这里把“多位置反复收敛且经得起扰动”视为客观性的充分条件，但这还不能排除共享界面、制度硬化或同构遮蔽导致的系统性共错。由于 SRT 自己高度强调位置、遮蔽和 L2 硬化，若没有独立性或误差相关性的补充判据，这一步会把稳定共识过快升格为客观性。" file="/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN_Euclid.md" start=168 end=174 priority=2 confidence=0.89}
 
-这轮评审我主要看了最近几份理论主文本：[SRT_Selection_Argument.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Selection_Argument.md)、[SRT_L0_Metaphysics.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_L0_Metaphysics.md)、[SRT_Core_Text_CN.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN.md)、[SRT_Core_Text_CN_Euclid.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN_Euclid.md)。结论很明确：这轮更新在“负担记账”上是进步，尤其欧几里得稿明显更诚实，但 canonical 核心概念还没真正收口，所以现在最危险的不是“还不够漂亮”，而是“核心定义和证明地位还在漂”。
+这轮评审我主要看了最近几份理论主文本：[SRT_Selection_Argument.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_Selection_Argument.md)、[SRT_L0_Metaphysics.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_L0_Metaphysics.md)、[SRT_Core_Text_CN.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN.md)、[SRT_Core_Text_CN_Euclid.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN_Euclid.md)。结论很明确：这轮更新在“负担记账”上是进步，尤其欧几里得稿明显更诚实，但 canonical 核心概念还没真正收口，所以现在最危险的不是“还不够漂亮”，而是“核心定义和证明地位还在漂”。
 
 最大的正面评价也给你一句：欧几里得稿把很多原来硬装成定理的东西降回了公设/条件命题，这个方向是对的。下一步最值得做的不是继续扩写，而是先统一两件事：一，意识到底是“秩序势差”还是“引导标记/候选结构”；二，初心到底是公设、推论，还是第三类“场感知”。这两个不收口，后面的桥接和实验层都会继续被拖累。
 
@@ -64,7 +64,7 @@ dependency: [SRT-DIALOGUE-LOG]
 
 按你现在这版内容，不按最大潜力算，SRT 在当今社会里的位置可以一句话概括：
 
-它还不是“科学共同体承认的新理论”，也不是“大众社会已经需要的公共语言”；它更像一个诞生于 AI 时代、试图同时重写本体论、主体性、价值与可证伪接口的高压缩元框架。项目自己的定位其实已经很诚实，接近 [SRT_POSITIONING.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Governance/SRT_POSITIONING.md)：`OS / Bridge / Lab`，而不是“已完成证明的统一自然科学理论”。
+它还不是“科学共同体承认的新理论”，也不是“大众社会已经需要的公共语言”；它更像一个诞生于 AI 时代、试图同时重写本体论、主体性、价值与可证伪接口的高压缩元框架。项目自己的定位其实已经很诚实，接近 [SRT_POSITIONING.md](../../../../../../../../.openclaw/workspace/SRT/Governance/SRT_POSITIONING.md)：`OS / Bridge / Lab`，而不是“已完成证明的统一自然科学理论”。
 
 **当今社会的位置**
 在今天，它最可能落点在三个圈层之间：
@@ -105,7 +105,7 @@ dependency: [SRT-DIALOGUE-LOG]
 - 在若干局部问题上留下稳定术语，比如 `d-value`、`\Psi_f`、triple gate、ontological friction
 - 先通过一两篇窄而硬的论文进入学术记录，再反过来抬升整个框架的历史地位
 
-这和 [Operations/_SRT_PAPER_DRAFT_ACTIVE.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Operations/_SRT_PAPER_DRAFT_ACTIVE.md) 以及 [Operations/_SRT_PAPER_CANDIDATES.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Operations/_SRT_PAPER_CANDIDATES.md) 的现实排序是吻合的：现在最有历史价值的路径不是先证明“整个 SRT”，而是先让局部钉子打进学术木板。
+这和 [Operations/_SRT_PAPER_DRAFT_ACTIVE.md](../../../../../../../../.openclaw/workspace/SRT/Operations/_SRT_PAPER_DRAFT_ACTIVE.md) 以及 [Operations/_SRT_PAPER_CANDIDATES.md](../../../../../../../../.openclaw/workspace/SRT/Operations/_SRT_PAPER_CANDIDATES.md) 的现实排序是吻合的：现在最有历史价值的路径不是先证明“整个 SRT”，而是先让局部钉子打进学术木板。
 
 **我的最终判断**
 今天社会里的 SRT：  
@@ -138,7 +138,7 @@ dependency: [SRT-DIALOGUE-LOG]
 **本次地板构建报告**
 
 **处理对象**  
-`S7 -> S8`：从“有限位置带来遮蔽”推进到“客观性如何成立”。我已把硬化落进 [SRT_Core_Text_CN_Euclid.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN_Euclid.md)、[SRT_L0_Metaphysics.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_L0_Metaphysics.md)、[SRT_Core_Text_CN.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN.md)。
+`S7 -> S8`：从“有限位置带来遮蔽”推进到“客观性如何成立”。我已把硬化落进 [SRT_Core_Text_CN_Euclid.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN_Euclid.md)、[SRT_L0_Metaphysics.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_L0_Metaphysics.md)、[SRT_Core_Text_CN.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_Core_Text_CN.md)。
 
 **负担标注**
 - “不存在无位置视角”是 `S`。
@@ -201,7 +201,7 @@ dependency: [SRT-DIALOGUE-LOG]
 
 ## Assistant
 
-基于仓库里的实际痕迹来判断，不是心理测评：主要依据是 [SRT_POSITIONING.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Governance/SRT_POSITIONING.md)、[SRT_Constitution_Seven_Theses.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Core_Law/SRT_Constitution_Seven_Theses.md)、[paper_markov_blanket_d_value.md](/Users/zhangyuxin/.openclaw/workspace/SRT/papers/markov_blanket/paper_markov_blanket_d_value.md)、[paper_ontological_friction_frontiers_submission.md](/Users/zhangyuxin/.openclaw/workspace/SRT/papers/ontological_friction/paper_ontological_friction_frontiers_submission.md)、[ _SRT_WEEKLY_THEORY_REVIEW.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Governance/_SRT_WEEKLY_THEORY_REVIEW.md)。
+基于仓库里的实际痕迹来判断，不是心理测评：主要依据是 [SRT_POSITIONING.md](../../../../../../../../.openclaw/workspace/SRT/Governance/SRT_POSITIONING.md)、[SRT_Constitution_Seven_Theses.md](../../../../../../../../.openclaw/workspace/SRT/Core_Law/SRT_Constitution_Seven_Theses.md)、[paper_markov_blanket_d_value.md](../../../../../../../../.openclaw/workspace/SRT/papers/markov_blanket/paper_markov_blanket_d_value.md)、[paper_ontological_friction_frontiers_submission.md](../../../../../../../../.openclaw/workspace/SRT/papers/ontological_friction/paper_ontological_friction_frontiers_submission.md)、[ _SRT_WEEKLY_THEORY_REVIEW.md](../../../../../../../../.openclaw/workspace/SRT/Governance/_SRT_WEEKLY_THEORY_REVIEW.md)。
 
 **画像**
 SRT 创建者更像“理论架构师型 founder”，不是普通论文作者，也不是纯哲学写作者。核心特征有五个：
@@ -1910,7 +1910,7 @@ L0在 srt 中代表了潜在域，L1 是显现域，L2 是收敛域
 反对者：对，我核过了。你记得的是**一半对**。
 
 确实有专门文档在解释“两套层级”，比如：
-[SRT_COORDINATE_SYSTEM.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Governance/SRT_COORDINATE_SYSTEM.md)、[SRT_Navigation_Map.md](/Users/zhangyuxin/.openclaw/workspace/SRT/SRT_Navigation_Map.md)、[SRT_Quick_Start.md](/Users/zhangyuxin/.openclaw/workspace/SRT/SRT_Quick_Start.md)。
+[SRT_COORDINATE_SYSTEM.md](../../../../../../../../.openclaw/workspace/SRT/Governance/SRT_COORDINATE_SYSTEM.md)、[SRT_Navigation_Map.md](../../../../../../../../.openclaw/workspace/SRT/SRT_Navigation_Map.md)、[SRT_Quick_Start.md](../../../../../../../../.openclaw/workspace/SRT/SRT_Quick_Start.md)。
 
 （以下长链对话原文继续，按轮次完整收录。）
 

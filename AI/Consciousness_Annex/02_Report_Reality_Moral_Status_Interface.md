@@ -22,7 +22,7 @@ machine_summary: >
 
 # AI Report-Reality and Moral-Status Interface
 
-> **Extraction note**: These mappings were extracted from `AI/Consciousness_Framework_Split/04_Interface_Additions.md` after `Operations/PR_C2_AI_Interface_Extraction_Adjudication.md`.
+> **Extraction note**: These mappings were extracted from `AI/Consciousness_Framework_Split/04_Interface_Additions.md` after `Operations/Archive_Records/PR_C2_AI_Interface_Extraction_Adjudication.md`.
 >
 > **Boundary**: The sections below are consciousness-interface / governance-interface mappings. They do not define SRT consciousness, do not prove AI subjecthood, and do not allow ethical caution to reverse-define ontology.
 

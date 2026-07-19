@@ -59,9 +59,6 @@ dependency: [SRT-INDEX]
 - `Physics/Selection_Split/README.md`
 - `Physics/Quant_02_Cosmology_Split/README.md`
 
-## Status
-- `STATUS_Split/README.md`
-
 ## Governance / Operations
 - `Governance/_SRT_CHANGELOG_2026_Split/README.md`
 - `Operations/Material_Log/README.md`

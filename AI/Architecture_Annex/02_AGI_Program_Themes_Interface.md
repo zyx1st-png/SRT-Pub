@@ -22,7 +22,7 @@ machine_summary: >
 
 # AGI Program Themes Interface
 
-> **Extraction note**: This taxonomy was extracted from `AI/Architecture_Split/05_Interface_Additions.md` after `Operations/PR_C2_AI_Interface_Extraction_Adjudication.md` and the PR-C4a architecture-annex pass.
+> **Extraction note**: This taxonomy was extracted from `AI/Architecture_Split/05_Interface_Additions.md` after `Operations/Archive_Records/PR_C2_AI_Interface_Extraction_Adjudication.md` and the PR-C4a architecture-annex pass.
 >
 > **Boundary**: The table below is an architecture interface / translation proxy. It does not imply that any listed AGI program theme is sufficient for SRT subjecthood, consciousness, or genuine `L_0 -> L_1` anchoring.
 

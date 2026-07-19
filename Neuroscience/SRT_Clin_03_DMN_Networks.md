@@ -47,7 +47,7 @@ dependency: [SRT-CORE-000, SRT-NEURO-MECH-001]
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`Neuroscience/SRT_Neural_Mechanisms.md`](SRT_Neural_Mechanisms.md) — upstream neural mechanisms
 - [`Neuroscience/SRT_Clin_01_Pathology.md`](SRT_Clin_01_Pathology.md) — related clinical pathology interface
 

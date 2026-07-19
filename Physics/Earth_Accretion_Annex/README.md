@@ -12,7 +12,7 @@ dependency:
   - Physics/README.md
   - Physics/SRT_Physics_Claim_Status.md
   - Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md
-  - Operations/Physics_P2b_Earth_Accretion_Interface_Adjudication.md
+  - Operations/Archive_Records/Physics_P2b_Earth_Accretion_Interface_Adjudication.md
 machine_summary: >
   Index for Earth accretion / reservoir-selection interface material. This annex is non-canonical and treats
   Earth accretion as a physical analogy for accessibility-limited selection, not as proof of SRT or as agency.
@@ -33,7 +33,7 @@ machine_summary: >
 
 - Earth accretion hardening owner: [`../SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md`](../SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md)
 - Claim-status guardrail: [`../SRT_Physics_Claim_Status.md`](../SRT_Physics_Claim_Status.md)
-- P2-B adjudication: [`../../Operations/Physics_P2b_Earth_Accretion_Interface_Adjudication.md`](../../Operations/Physics_P2b_Earth_Accretion_Interface_Adjudication.md)
+- P2-B adjudication: [`../../Operations/Archive_Records/Physics_P2b_Earth_Accretion_Interface_Adjudication.md`](../../Operations/Archive_Records/Physics_P2b_Earth_Accretion_Interface_Adjudication.md)
 
 ## Guardrails
 

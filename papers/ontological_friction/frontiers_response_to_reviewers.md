@@ -113,11 +113,11 @@ Response: Done. Text in the box/flow figures was changed from grey to near-black
 
 ## Reviewer 1 — Follow-up Minor Comments
 
-**1. Table 2 caption — clarify the meaning of bold entries marked with †.**
-Response: Thank you for pointing this out. The caption of Table 2 now states that the bold entries marked with † denote the primary disorder-discriminating predictions used in the paired dissociation tests.
+**1. Reviewer comment:** *In Table 2, please indicate in the caption what the bold font with a cross denotes.*
+Response: Thank you for pointing this out. The caption of Table 2 now clarifies that bold entries marked with the dagger symbol (†) denote the primary disorder-discriminating predictions used in the paired dissociation tests.
 
-**2. Table 3 — correct the group-size notation.**
-Response: Thank you for identifying the rendering problem. The affected entry has been corrected to “90 (three groups of 30 participants),” which preserves the intended sample-size meaning while avoiding ambiguous mathematical formatting.
+**2. Reviewer comment:** *In Table 3, please correct "30$3" (it should be "30³", i.e., 30 raised to the power of 3).*
+Response: Thank you for identifying this rendering error. The intended notation referred to three groups of 30 participants, for a total sample size of 90, rather than a mathematical exponent. To eliminate ambiguity and prevent further rendering problems, Table 3 now states “90 (three groups of 30 participants).”
 
 ---
 

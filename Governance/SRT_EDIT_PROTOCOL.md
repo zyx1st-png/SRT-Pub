@@ -25,7 +25,7 @@ updated: 2026-06-05
 - 补导航回链
 - 修 typo / 断链 / 标题格式
 - 补 frontmatter 辅助字段
-- 更新 `README.md` / `AGENTS.md` / `SRT_AI_START.md` / `STATUS_FAST.md` / `_SRT_INDEX.md`
+- 更新 `README.md` / `AGENTS.md` / `SRT_AI_START.md` / `_SRT_INDEX.md`
 - 更新治理入口、归档索引、工具 baseline
 
 默认要求：
@@ -84,8 +84,8 @@ updated: 2026-06-05
 ### 3. 最后决定留痕位置
 
 - fresh-session / agent read order → `AGENTS.md`
-- compact status → `STATUS_FAST.md`
-- full status or historical status → `STATUS.md` / `STATUS_Split/README.md`
+- current status → `STATUS.md`（§Fast Status 兼任 compact 入口）
+- historical status → `Operations/Status_History/`
 - 运行流水线、材料、信号、队列 → `Operations/`
 - 治理规则、质量 baseline、归档说明 → `Governance/`
 - 当前书稿事实 → `01_Source_Intuition/BOOK/` 当前正文与当前 book meta 文件

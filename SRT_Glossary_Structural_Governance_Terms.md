@@ -11,8 +11,8 @@ date: 2026-04-29
 dependency:
   - SRT_Glossary.md
   - ANNEX_REGISTRY.md
-  - Operations/Closure_Index_2026-04-29.md
-  - Operations/Structural_Governance_Rollup_2026-04-29.md
+  - Operations/Archive_Records/Closure_Index_2026-04-29.md
+  - Operations/Archive_Records/Structural_Governance_Rollup_2026-04-29.md
 machine_summary: >
   Structural governance glossary addendum for recent repository organization work. Defines terms such as
   copy-to-annex, owner-bound, interface annex, claim_mode, canonical false, closure report, and frozen high-risk topic.

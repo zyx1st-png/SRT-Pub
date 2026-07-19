@@ -12,7 +12,7 @@ dependency:
   - Physics/README.md
   - Physics/SRT_Physics_Claim_Status.md
   - Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md
-  - Operations/Physics_P2a_QBox_Interface_Adjudication.md
+  - Operations/Archive_Records/Physics_P2a_QBox_Interface_Adjudication.md
 machine_summary: >
   Index for QBox / hyperdecoherence physics interface material. This annex is non-canonical and
   treats QBox as an external interface / pressure-test, not as proof of SRT or a literal identity for L0.
@@ -33,7 +33,7 @@ machine_summary: >
 
 - QBox hardening owner: [`../SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md`](../SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md)
 - Claim-status guardrail: [`../SRT_Physics_Claim_Status.md`](../SRT_Physics_Claim_Status.md)
-- P2-A adjudication: [`../../Operations/Physics_P2a_QBox_Interface_Adjudication.md`](../../Operations/Physics_P2a_QBox_Interface_Adjudication.md)
+- P2-A adjudication: [`../../Operations/Archive_Records/Physics_P2a_QBox_Interface_Adjudication.md`](../../Operations/Archive_Records/Physics_P2a_QBox_Interface_Adjudication.md)
 
 ## Guardrails
 

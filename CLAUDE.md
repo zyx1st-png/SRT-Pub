@@ -7,33 +7,15 @@
 
 ## 必读顺序
 
-最小运行读法：
+**Fresh-session read order 唯一以 [AGENTS.md](AGENTS.md) §Session Start 为准，本文件不复制或扩展必读列表。**（当前为 3 个 bootstrap 必读文件；`_SRT_INDEX.md`、`_SRT_SYMBOL_TABLE.md` 等均为按任务条件加载，条件同样由 AGENTS.md 定义。）
 
-1. [AGENTS.md](AGENTS.md)
-2. [SRT_AI_START.md](SRT_AI_START.md)
-3. [STATUS.md](STATUS.md)
-4. [_SRT_INDEX.md](_SRT_INDEX.md)
-5. [_SRT_SYMBOL_TABLE.md](_SRT_SYMBOL_TABLE.md)
-6. [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md)
+以下为**任务触发后的条件加载**，不属于基础 bootstrap：
 
-如需公开/对外 framing，再读：
+- 公开/对外 framing → [README.md](README.md)
+- 具体 pipeline、治理或运行留痕 → [Operations/README.md](Operations/README.md)、[Governance/README.md](Governance/README.md)、`memory/YYYY-MM-DD.md`（仅当存在时读，缺席属正常）、[HEARTBEAT.md](HEARTBEAT.md)（仅 heartbeat / automation 工作）
+- `01_Source_Intuition/BOOK/` 下的书籍写作、修订、翻译、评审、结构调整或章节判断 → 必须额外读 [01_Source_Intuition/BOOK/TASTE.md](01_Source_Intuition/BOOK/TASTE.md)（书籍层面的气质、审美、语言禁忌与写作判断覆盖层，不替代理论 canonical 定义源）
 
-7. [README.md](README.md)
-
-如进入具体 pipeline、治理或运行留痕，再补读：
-
-8. [Operations/README.md](Operations/README.md)
-9. [Governance/README.md](Governance/README.md)
-10. `memory/YYYY-MM-DD.md`（today + yesterday；仅当存在时读，该层可能长期休眠，缺席属正常）
-11. [HEARTBEAT.md](HEARTBEAT.md)（仅 heartbeat / automation 风格工作）
-
-如处理 `01_Source_Intuition/BOOK/` 下的书籍写作、修订、翻译、评审、结构调整或章节判断任务，必须额外读取：
-
-12. [01_Source_Intuition/BOOK/TASTE.md](01_Source_Intuition/BOOK/TASTE.md)
-
-`TASTE.md` 是书籍层面的气质、审美、语言禁忌与写作判断覆盖层，不替代理论 canonical 定义源。
-
-理论推进、书籍写作、领域深挖、材料融合、public release 或仓库治理任务，必须先用 [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md) 判定检索 profile。`canonical: false` 只表示不能替代定义源，不表示不值得读取。
+理论推进、书籍写作、领域深挖、材料融合、public release 或仓库治理任务，先用 [_SRT_AGENT_RETRIEVAL_PROFILE.md](_SRT_AGENT_RETRIEVAL_PROFILE.md) 判定检索 profile。`canonical: false` 只表示不能替代定义源，不表示不值得读取。
 
 ## 权威层级
 

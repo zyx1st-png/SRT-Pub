@@ -15,23 +15,23 @@ dependency: [SRT-MATERIAL-LOG, SRT-EXECUTION-PLAN]
 
 本审计文件用于把既有 `Pipeline 1` 材料台账，整体迁移到“材料-SRT 双向增益版”的工作语法下。
 
-- 审计基线：[Operations/_SRT_MATERIAL_LOG.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md)
+- 审计基线：[Operations/_SRT_MATERIAL_LOG.md](../../../../../../../../.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md)
 - 统计口径：只计算带正式 `A / B / C` 审核结论的材料记录
 - 当前快照：`122` 条
   - `A = 84`
   - `B = 5`
   - `C = 33`
-- 截至 `2026-04-02` 第二轮推进：`122 / 122` 条已完成 rerun 审计层处置，完整状态见 [Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md)
+- 截至 `2026-04-02` 第二轮推进：`122 / 122` 条已完成 rerun 审计层处置，完整状态见 [Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md](../../../../../../../../.openclaw/workspace/SRT/Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md)
   - `RR5 = 3`
   - `RR4 = 22`
   - `RR3 = 59`
   - `RR2 = 27`
   - `RR1 = 11`
 - 已按新五问回填台账备注：`4` 条
-  - [Operations/_SRT_MATERIAL_LOG.md#L163](/Users/zhangyuxin/.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L163)
-  - [Operations/_SRT_MATERIAL_LOG.md#L164](/Users/zhangyuxin/.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L164)
-  - [Operations/_SRT_MATERIAL_LOG.md#L165](/Users/zhangyuxin/.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L165)
-  - [Operations/_SRT_MATERIAL_LOG.md#L166](/Users/zhangyuxin/.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L166)
+  - [Operations/_SRT_MATERIAL_LOG.md#L163](../../../../../../../../.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L163)
+  - [Operations/_SRT_MATERIAL_LOG.md#L164](../../../../../../../../.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L164)
+  - [Operations/_SRT_MATERIAL_LOG.md#L165](../../../../../../../../.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L165)
+  - [Operations/_SRT_MATERIAL_LOG.md#L166](../../../../../../../../.openclaw/workspace/SRT/Operations/_SRT_MATERIAL_LOG.md#L166)
 
 ## 1. Rerun States
 
@@ -46,44 +46,44 @@ dependency: [SRT-MATERIAL-LOG, SRT-EXECUTION-PLAN]
 ### 已完成 `RR5` 的原型条目
 
 - `Phenomenal Binding Interface`
-  - [AI/SRT_AI_03_Consciousness_Framework.md#L1189](/Users/zhangyuxin/.openclaw/workspace/SRT/AI/SRT_AI_03_Consciousness_Framework.md#L1189)
+  - [AI/SRT_AI_03_Consciousness_Framework.md#L1189](../../../../../../../../.openclaw/workspace/SRT/AI/SRT_AI_03_Consciousness_Framework.md#L1189)
 - `Acute Breath-Watching EEG Window`
-  - [Spirituality/SRT_Spirit_07_Meditation_Neuro.md#L107](/Users/zhangyuxin/.openclaw/workspace/SRT/Spirituality/SRT_Spirit_07_Meditation_Neuro.md#L107)
+  - [Spirituality/SRT_Spirit_07_Meditation_Neuro.md#L107](../../../../../../../../.openclaw/workspace/SRT/Spirituality/SRT_Spirit_07_Meditation_Neuro.md#L107)
 - `Artifact-Controlled Neural Near-Criticality`
-  - [Physics/SRT_Phys_07_Complex_Systems.md#L197](/Users/zhangyuxin/.openclaw/workspace/SRT/Physics/SRT_Phys_07_Complex_Systems.md#L197)
+  - [Physics/SRT_Phys_07_Complex_Systems.md#L197](../../../../../../../../.openclaw/workspace/SRT/Physics/SRT_Phys_07_Complex_Systems.md#L197)
 
 ### 已完成 `RR4` 的较早条目
 
 - `Bootstrap / String-Uniqueness 收缩窗口`
-  - [Physics/SRT_Phys_10_Integration.md#L235](/Users/zhangyuxin/.openclaw/workspace/SRT/Physics/SRT_Phys_10_Integration.md#L235)
+  - [Physics/SRT_Phys_10_Integration.md#L235](../../../../../../../../.openclaw/workspace/SRT/Physics/SRT_Phys_10_Integration.md#L235)
 - `Comparative Language–ToM Neuroanatomy patch`
-  - [Philosophy/SRT_Social_Cognition.md#L294](/Users/zhangyuxin/.openclaw/workspace/SRT/Philosophy/SRT_Social_Cognition.md#L294)
+  - [Philosophy/SRT_Social_Cognition.md#L294](../../../../../../../../.openclaw/workspace/SRT/Philosophy/SRT_Social_Cognition.md#L294)
 - `Subcritical Ionic-Memory Window patch`
-  - [Core/SRT_Core_14_Dynamics_Scaling.md#L1099](/Users/zhangyuxin/.openclaw/workspace/SRT/Core/SRT_Core_14_Dynamics_Scaling.md#L1099)
+  - [Core/SRT_Core_14_Dynamics_Scaling.md#L1099](../../../../../../../../.openclaw/workspace/SRT/Core/SRT_Core_14_Dynamics_Scaling.md#L1099)
 - `Astrocytic Associative-Memory Capacity patch`
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L378](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L378)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L378](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L378)
 - `Mental Representation / Concepts / Self-Consciousness / Mind–Body Problem` 接口簇
-  - [Philosophy/SRT_Philosophy_Foundations.md#L1550](/Users/zhangyuxin/.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1550)
-  - [Philosophy/SRT_Philosophy_Foundations.md#L1642](/Users/zhangyuxin/.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1642)
-  - [Philosophy/SRT_Philosophy_Foundations.md#L1724](/Users/zhangyuxin/.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1724)
-  - [Philosophy/SRT_Philosophy_Foundations.md#L1769](/Users/zhangyuxin/.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1769)
+  - [Philosophy/SRT_Philosophy_Foundations.md#L1550](../../../../../../../../.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1550)
+  - [Philosophy/SRT_Philosophy_Foundations.md#L1642](../../../../../../../../.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1642)
+  - [Philosophy/SRT_Philosophy_Foundations.md#L1724](../../../../../../../../.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1724)
+  - [Philosophy/SRT_Philosophy_Foundations.md#L1769](../../../../../../../../.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md#L1769)
 - `Alzheimer's Peripheral-Inflammation / Tanycyte Tau-Clearance` 接口簇
-  - [Neuroscience/SRT_Neuro_08_Immune_Dist.md#L629](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md#L629)
-  - [Neuroscience/SRT_Neuro_08_Immune_Dist.md#L712](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md#L712)
+  - [Neuroscience/SRT_Neuro_08_Immune_Dist.md#L629](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md#L629)
+  - [Neuroscience/SRT_Neuro_08_Immune_Dist.md#L712](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md#L712)
 - `Working Memory / Hippocampal Statistical Structure / Top-Down Astrocyte Gate / Astroglial Supervisor / Human Olfactory Identity / CellTransformer Spatial Domain / Inter-Reward Interval / Hierarchical Cortical Flow` 接口簇
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L232](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L232)
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L266](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L266)
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L314](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L314)
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L351](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L351)
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L435](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L435)
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L487](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L487)
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L50](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L50)
-  - [Neuroscience/SRT_Neural_Mechanisms.md#L108](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L108)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L232](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L232)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L266](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L266)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L314](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L314)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L351](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L351)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L435](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L435)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L487](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L487)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L50](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L50)
+  - [Neuroscience/SRT_Neural_Mechanisms.md#L108](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md#L108)
 - `Shape-Dynamics Janus / Entropic-Gravity Fluctuation / Neutrino Messenger / Asymptotic Safety` 接口簇
-  - [Physics/SRT_Physics_Cosmology.md#L285](/Users/zhangyuxin/.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L285)
-  - [Physics/SRT_Physics_Cosmology.md#L346](/Users/zhangyuxin/.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L346)
-  - [Physics/SRT_Physics_Cosmology.md#L437](/Users/zhangyuxin/.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L437)
-  - [Physics/SRT_Physics_Cosmology.md#L1234](/Users/zhangyuxin/.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L1234)
+  - [Physics/SRT_Physics_Cosmology.md#L285](../../../../../../../../.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L285)
+  - [Physics/SRT_Physics_Cosmology.md#L346](../../../../../../../../.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L346)
+  - [Physics/SRT_Physics_Cosmology.md#L437](../../../../../../../../.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L437)
+  - [Physics/SRT_Physics_Cosmology.md#L1234](../../../../../../../../.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md#L1234)
 
 ## 3. Batch Inventory
 
@@ -140,16 +140,16 @@ dependency: [SRT-MATERIAL-LOG, SRT-EXECUTION-PLAN]
 
 以下正文最值得继续按台账回推优化，因为它们承载主链或传播面较大：
 
-- [Philosophy/SRT_Philosophy_Foundations.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md)
+- [Philosophy/SRT_Philosophy_Foundations.md](../../../../../../../../.openclaw/workspace/SRT/Philosophy/SRT_Philosophy_Foundations.md)
   - 集中承载 `Mental Representation`、`Cognitive Ontology`、`Mind-Body Problem`、`Self-Consciousness` 等早期 interface
-- [Philosophy/SRT_Social_Cognition.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Philosophy/SRT_Social_Cognition.md)
+- [Philosophy/SRT_Social_Cognition.md](../../../../../../../../.openclaw/workspace/SRT/Philosophy/SRT_Social_Cognition.md)
   - 已有多条 patch，但仍保留明显的早期“补丁簇”写法
-- [Neuroscience/SRT_Neural_Mechanisms.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md)
+- [Neuroscience/SRT_Neural_Mechanisms.md](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neural_Mechanisms.md)
   - 已完成 `hierarchical cortical flow / inter-reward interval / working memory / hippocampus / astrocyte / olfaction / cell-domain` 八簇的人类可读回推
   - 剩余主要是旧总论段与非材料原生段的整体语气统一
-- [Neuroscience/SRT_Neuro_08_Immune_Dist.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md)
+- [Neuroscience/SRT_Neuro_08_Immune_Dist.md](../../../../../../../../.openclaw/workspace/SRT/Neuroscience/SRT_Neuro_08_Immune_Dist.md)
   - `Alzheimer / gut / vagus / interoception` 等窗口需要更一致的人类可读入口句
-- [Physics/SRT_Physics_Cosmology.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md)
+- [Physics/SRT_Physics_Cosmology.md](../../../../../../../../.openclaw/workspace/SRT/Physics/SRT_Physics_Cosmology.md)
   - 已完成 `Shape-Dynamics / Entropic-Gravity / Neutrino Messenger / Asymptotic Safety` 四簇的人类可读回推
   - 剩余 `ringdown / microgravity / 旧宇宙学总论` 仍有继续去 patch 化空间
 
@@ -164,7 +164,7 @@ dependency: [SRT-MATERIAL-LOG, SRT-EXECUTION-PLAN]
 
 当前状态：
 
-- 第 1 层已通过 [Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md](/Users/zhangyuxin/.openclaw/workspace/SRT/Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md) 完成全覆盖处置
+- 第 1 层已通过 [Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md](../../../../../../../../.openclaw/workspace/SRT/Governance/SRT_MATERIAL_RERUN_DISPOSITION_2026-04.md) 完成全覆盖处置
 - 后续剩余工作已纯化为第 2 层：把高价值 `RR3` 条目继续升格为 `RR4 / RR5`
 
 若跳过第一层，后续正文优化会失去统一索引；若停在第一层，工作流又会停留在“台账懂了，正文还没懂”的状态。

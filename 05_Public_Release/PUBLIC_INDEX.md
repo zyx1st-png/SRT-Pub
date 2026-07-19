@@ -28,7 +28,7 @@ Public release is controlled outward expression. It is not canonical and not a s
 |---|---|
 | [`../SRT_Quick_Start.md`](../SRT_Quick_Start.md) | Frontstage new-reader guide; public-friendly orientation before formal anchors. |
 | [`../SRT_1H_Onboarding.md`](../SRT_1H_Onboarding.md) | One-hour onboarding route for readers who want more than a brief intro. |
-| [`../SRT_Public_Reading_Guide.md`](../SRT_Public_Reading_Guide.md) | Public reading guide when available as a reader-facing path. |
+| [`../SRT_Navigation_Map.md`](../SRT_Navigation_Map.md) | Human reading hub (interest-based tracks merged in from the retired public reading guide, 2026-07-20). |
 
 ## FAQ / Guardrails
 

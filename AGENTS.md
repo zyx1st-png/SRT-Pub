@@ -12,20 +12,20 @@ Use this file as the canonical runtime overlay when the current work is inside t
 
 `AGENTS.md` is the **single authority for fresh-session read order**. Other entry files should point here rather than maintaining competing bootstrap lists.
 
-For a fresh AI session inside this repo, read in this order:
+For a fresh AI session inside this repo, read in this order (3 files):
 
-1. `SRT_AI_START.md` — minimal theory/runtime guard; not a definition authority.
+1. `SRT_AI_START.md` — minimal theory/runtime guard, including the symbol quick guard (§3); not a definition authority.
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md` — classify the task before choosing context depth.
-3. `STATUS_FAST.md` — compact current status for bootstrap.
-4. `_SRT_SYMBOL_QUICK_GUARD.md` — high-risk symbol/proxy guard.
+3. `STATUS.md §Fast Status` — compact current status for bootstrap (full dashboard in the same file).
 
 Then load conditionally:
 
-5. `STATUS.md` or `STATUS_Split/README.md` when full status history or recent material detail matters.
-6. `_SRT_INDEX.md` when file routing, domain entrypoints, registry relations, or edit landing zones matter.
-7. `_SRT_SYMBOL_TABLE.md` when exact symbol definitions, notation conflicts, or canonical term precision matters.
-8. `_SRT_CONTEXT_ROUTER.md` for non-simple conceptual, cross-domain, or deep theory questions.
-9. `_SRT_DEEP_THEORY_MAP.md` for cross-domain theory synthesis.
+4. `_SRT_INDEX.md` when file routing, domain entrypoints, registry relations, or edit landing zones matter.
+5. `_SRT_SYMBOL_TABLE.md` when exact symbol definitions, notation conflicts, or canonical term precision matters.
+6. `_SRT_CONTEXT_ROUTER.md` for non-simple conceptual, cross-domain, or deep theory questions.
+7. `_SRT_DEEP_THEORY_MAP.md` for cross-domain theory synthesis.
+8. `_SRT_PARKED_INDEX.md` when a task touches parked seeds, B-verdict materials, or unmerged proposal work.
+9. `Operations/Status_History/` when historical status detail matters.
 
 Read `README.md` when public-facing framing or external onboarding context is useful.
 
@@ -95,9 +95,9 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 - AI 最小首读入口：`SRT_AI_START.md`
 - Agent 检索扩展协议：`_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- 快速状态入口：`STATUS_FAST.md`
-- 快速符号守门：`_SRT_SYMBOL_QUICK_GUARD.md`
-- Full 当前状态面板：`STATUS.md`
+- 当前状态面板（含 §Fast Status 快速入口）：`STATUS.md`
+- 快速符号守门：`SRT_AI_START.md §3`（原 `_SRT_SYMBOL_QUICK_GUARD.md` 已并入）
+- 停驻内容总索引：`_SRT_PARKED_INDEX.md`
 - 运行层入口：`Operations/README.md`
 - 治理层入口：`Governance/README.md`
 - 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`

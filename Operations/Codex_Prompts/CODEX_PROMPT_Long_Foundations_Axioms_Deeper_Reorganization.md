@@ -291,7 +291,7 @@ If a similar note already exists, do not duplicate it.
 
 ## 7. TODO update rules
 
-If you only create an audit plan and do not edit long files, update `SRT_NEXT_OPTIMIZATION_TODO.md` minimally:
+If you only create an audit plan and do not edit long files, update `90_Backstage/Plans_Archive/SRT_NEXT_OPTIMIZATION_TODO.md` minimally:
 
 ```text
 Long Foundations / Axioms deeper reorganization -> audit plan created; structural patch not yet executed

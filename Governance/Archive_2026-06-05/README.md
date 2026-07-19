@@ -38,7 +38,7 @@ These are dated audits. Treat their findings as historical batch records unless 
 
 - `_SRT_FRONTMATTER_AUDIT.md`
 - `_SRT_QUALITY_METRICS.md`
-- `_SRT_EXPLAINABILITY_AUDIT.md`
+- `Operations/Archive_Records/_SRT_EXPLAINABILITY_AUDIT.md`
 
 These snapshots reflected older scan scopes. Use current preflight output and baselines instead.
 

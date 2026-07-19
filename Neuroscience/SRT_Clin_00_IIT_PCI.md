@@ -46,7 +46,7 @@ dependency: [SRT-NEURO-AXIOMS-001]
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`Neuroscience/SRT_Consciousness_Mechanisms.md`](SRT_Consciousness_Mechanisms.md) — formal SRT consciousness claims
 - [`Neuroscience/SRT_Neuro_Predictions_Table.md`](SRT_Neuro_Predictions_Table.md) — empirical prediction register
 

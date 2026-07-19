@@ -66,7 +66,7 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/SRT_AI_01_Ontology_CompactCore.md`](SRT_AI_01_Ontology_CompactCore.md) — compact navigation entry
 - [`AI/_SRT_AI_Bridge.md`](_SRT_AI_Bridge.md) — upstream bridge foundation
 - [`AI/SRT_AI_03_Consciousness_Framework.md`](SRT_AI_03_Consciousness_Framework.md) — downstream consciousness framework

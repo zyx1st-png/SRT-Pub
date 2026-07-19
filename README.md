@@ -228,8 +228,8 @@ Governance and Operations are necessary maintenance layers, not the first face o
 - `ANNEX_REGISTRY.md`：annex / interface 层注册表
 - `Governance/README.md`：治理层入口
 - `Operations/README.md`：运行层入口
-- `Operations/Closure_Index_2026-04-29.md`：最近结构治理闭环入口
-- `FRONTSTAGE_RESTRUCTURE_PLAN.md`：本轮前台结构重构计划
+- `Operations/Archive_Records/Closure_Index_2026-04-29.md`：最近结构治理闭环入口
+- `Governance/FRONTSTAGE_RESTRUCTURE_PLAN.md`：本轮前台结构重构计划
 
 If you plan to modify theory-facing content, read:
 

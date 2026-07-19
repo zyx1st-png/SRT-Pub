@@ -24,6 +24,9 @@ machine_summary: >
 
 # AI
 
+> **[休眠层声明 · 2026-07-20]** 本层（`AI/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+
 This directory contains SRT's AI-facing bridge, consciousness, agency, architecture, and operational evaluation materials.
 
 AI is a **pressure-test / boundary-test field** for SRT, not the theory's definition engine. AI-domain files must not redefine `L_0/L_1/L_2`, `d-value`, `Psi_f`, `T_dir`, or `G_hat_theta`; they route those terms back to canonical anchors.
@@ -61,7 +64,7 @@ AI is a **pressure-test / boundary-test field** for SRT, not the theory's defini
    - [`Consciousness_Annex/`](Consciousness_Annex/) — consciousness / external-theory / governance interfaces extracted in Round 1.
 
 8. Round 1 closure:
-   - [`../Operations/AI_Annex_Round1_Closure_Report.md`](../Operations/AI_Annex_Round1_Closure_Report.md)
+   - [`../Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md`](../Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md)
 
 ## Status distinction
 
@@ -111,7 +114,7 @@ Any sentence about AI `d-value`, AI burden, AI subjectivity, AI suffering, or AI
 
 ## Current restructuring status
 
-AI Annex Round 1 is closed. See [`../Operations/AI_Annex_Round1_Closure_Report.md`](../Operations/AI_Annex_Round1_Closure_Report.md).
+AI Annex Round 1 is closed. See [`../Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md`](../Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md).
 
 Completed in Round 1:
 
@@ -135,6 +138,6 @@ Paused for future adjudication:
 - d-value canonical: [`../_SRT_D_VALUE_CANONICAL.md`](../_SRT_D_VALUE_CANONICAL.md)
 - `Psi_f` canonical: [`../_SRT_PSI_F_CANONICAL.md`](../_SRT_PSI_F_CANONICAL.md)
 - Claim ladder: [`../Governance/SRT_CLAIM_LADDER.md`](../Governance/SRT_CLAIM_LADDER.md)
-- Round-0 pre-audit: [`../Operations/AI_Split_Annex_PreAudit_2026-04-29.md`](../Operations/AI_Split_Annex_PreAudit_2026-04-29.md)
-- PR-C0/C1 audit record: [`../Operations/PR_C0_C1_AI_Split_Annex_PreAudit_Record.md`](../Operations/PR_C0_C1_AI_Split_Annex_PreAudit_Record.md)
-- Round 1 closure: [`../Operations/AI_Annex_Round1_Closure_Report.md`](../Operations/AI_Annex_Round1_Closure_Report.md)
+- Round-0 pre-audit: [`../Operations/Archive_Records/AI_Split_Annex_PreAudit_2026-04-29.md`](../Operations/Archive_Records/AI_Split_Annex_PreAudit_2026-04-29.md)
+- PR-C0/C1 audit record: [`../Operations/Archive_Records/PR_C0_C1_AI_Split_Annex_PreAudit_Record.md`](../Operations/Archive_Records/PR_C0_C1_AI_Split_Annex_PreAudit_Record.md)
+- Round 1 closure: [`../Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md`](../Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md)

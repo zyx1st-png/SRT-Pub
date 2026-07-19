@@ -42,6 +42,25 @@ Rules:
 4. `status` is versioned and monotonic (`v1`, `v2`, ...).
 5. `claim_mode` describes the file's dominant speech act; it is not the same thing as definition authority.
 
+## Frontmatter Minimal Schema Ratchet (2026-07-20)
+
+治理减负轮起，frontmatter 规范改为**棘轮制**，不做全仓回改（1289 个文件的 churn 不值得）：
+
+1. **只对新建或本次实质修改的文件**要求最小 4 字段：`id`、`status`、`claim_mode`、`updated`。其余字段（`type`、`tags`、`layer`、`epistemic_layer`、`dependency`）推荐但不强制；理论承重文件仍应补全上面 Canonical Metadata Contract 的完整字段。
+2. **`status` 收敛为小枚举**：`draft` / `active` / `frozen` / `archived`（历史文件保留旧的 `active_vN` 等值，不强制回改；新写只用这四个）。版本细节写在正文，不再进 `status`；更细语义用**非 status 字段**表达（如 `snapshot_as_of: YYYY-MM-DD` 标快照时点），不扩展枚举。`scripts/check_frontmatter.py` 已对枚举做棘轮验证：存量旧值锁在 `Governance/Frontmatter_Warning_Baseline.txt` 为已知债，新出现的非枚举值会作为 new warning 使 preflight 失败。
+3. **废除逐文件 `canonical:` 字段**。是否 canonical 只看 `CANONICAL_REGISTRY.md`——逐文件写 `canonical: false` 是冗余噪音（全仓 702 处都在说"我不是权威"），新文件不再写该字段；碰到旧文件时可顺手删除，但不为此专门开轮。
+4. 存量文件的旧字段值不算违规；preflight 警告基线继续记录已知债，不作为质量分。
+
+## Touch-Based Repair Rule (2026-07-20)
+
+休眠层与存档层文件（域层、coverage 快照、archive 记录、停驻种子）按**触碰即修**治理：
+
+- 只在被活跃任务实际读取、且发现错误、断链或过时符号用法时修复；
+- 修复走普通 A 类编辑 PR，**不开专项治理轮，不产生新台账**；
+- 不预防性地扫描或同步休眠层 frontmatter；"让它保持最新"不是修复理由，"活跃任务被它绊到"才是。
+
+这与书稿的 hard guard 同构：不预防性维护档案，只在使用时校验。
+
 ## Current Claim-Mode Notes
 
 - `canonical`: definition-bearing or canonical-facing theory anchor.

@@ -14,8 +14,8 @@ dependency: [SRT-NEUROSCIENCE-CLAIM-STATUS, SRT-NEURO-MECH-001]
 
 > **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/clinical 句式必须回读 `../SRT_Neuroscience_Claim_Status.md` 与 `../SRT_Neuro_Axioms_Claim_Status.md`。
 - 原始总文（保留，不删内容）：[`../SRT_Neural_Mechanisms.md`](../SRT_Neural_Mechanisms.md)
-- Source owner bytes: `115365`
-- Source owner SHA-256: `d987b8c52bdb799fa35c5233a7ac5e90d9502fc28963ef1a13a9030066d360cb`
+- Source owner bytes: `115397`
+- Source owner SHA-256: `0f6b223b888ecb850665e472cf20745c3cc35d6aca1186a3b97c9e185a30fc1c`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
