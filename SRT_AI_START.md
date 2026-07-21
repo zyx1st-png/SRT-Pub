@@ -106,6 +106,27 @@ If a statement says `proxy X = SRT variable Y`, rewrite it unless the canonical 
 
 ## 4. Core Boundary Reminders
 
+### Pre-objectification guard
+
+Do not demand that SRT begin by defining `L_0`, selection, experience, or reality as mathematical objects. Object specification is already an `L_1/L_2` operation: it selects boundaries, variables, relations, and admissible transformations after some manifestation has occurred. Formal models may describe selected structures and test bridge consequences, but they do not replace the pre-objectifying question SRT is designed to ask.
+
+Preferred reading:
+
+```text
+pre-object field / selection condition
+-> manifestation and objectification
+-> mathematical or scientific description
+```
+
+Forbidden reversal:
+
+```text
+first define a complete object space
+-> then claim to have explained how objects become possible
+```
+
+Route: `01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md`, `Philosophy/SRT_L0_Ontological_Status.md`, `Core_Law/SRT_Selection_Argument.md`.
+
 ### `L_2`
 
 For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and `Core/SRT_OPEN_TENSIONS.md`.
@@ -121,6 +142,14 @@ In SRT usage, freedom concerns preservation of real choice moments, not mere opt
 ### Origin of Selectability
 
 `Core/SRT_OPEN_TENSIONS.md §7 P0-04` remains unresolved. When a file speaks of a selector, chooser, subject, agency, or system-position, do not treat that language as an answer to where selectability comes from; mark whether it is a derived process, stable pattern, or assumed domain interface.
+
+### d-value explanatory-coordinate guard
+
+Do not require canonical `d` to be empirically disjoint from salience, reward, homeostatic error, pain, arousal, or memory strength. These may be local realizations or proxies. Overlap is not reduction. A proxy may be identified with canonical `d` only if it also tracks irreversible stake, consequence return, non-substitutability, and changes in future selection capacity. Route: `_SRT_CROSS_DOMAIN_MATRIX.md §1.1`, `_SRT_D_VALUE_CANONICAL.md`.
+
+### Hard-problem / internal-external guard
+
+Do not treat first-person experience as a hidden object that must be derived from a complete view-from-nowhere description. External description is itself a second situated selection and objectification of an internally borne event. The gap therefore involves selection-position difference and re-objectification, not only bandwidth compression. SRT provides orientation and anchoring for this relation; it does not claim that external language can exhaust or numerically reproduce qualia. Route: `Philosophy/SRT_HardProblem_Epistemology.md §3.1a-§3.4`.
 
 ### Value Hiddenness
 
