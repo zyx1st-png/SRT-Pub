@@ -16,7 +16,7 @@ dependency: [SRT-EXECUTION-PLAN]
 >
 > **审查结论**：
 > - **A（直接融入）**：已修改 SRT 目标文档
-> - **B（延后观察）**：放入观察列表，3 个月后重评
+> - **B（停驻观察）**：材料保留，但不形成自动处理义务；必须写明具名复活触发条件
 >   - `B1`：可转 A 候选，高优先 close-read / 二轮裁决 / 单篇 DOI 拆分
 >   - `B2`：guardrail-only，主要用于边界、降级、防误读、claim-ladder hygiene
 >   - `B3`：public-prose-only / expression-only，只可作为公共表达素材
@@ -53,13 +53,13 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-04_Part02 | [Material_Log/2026-04_Part02.md](Material_Log/2026-04_Part02.md) | 10 |
 | 2026-05_Part01 | [Material_Log/2026-05_Part01.md](Material_Log/2026-05_Part01.md) | 21 |
 | 2026-06_Part01 | [Material_Log/2026-06_Part01.md](Material_Log/2026-06_Part01.md) | 1 |
-| 2026-07_Part01 | [Material_Log/2026-07_Part01.md](Material_Log/2026-07_Part01.md) | 8 |
+| 2026-07_Part01 | [Material_Log/2026-07_Part01.md](Material_Log/2026-07_Part01.md) | 10 |
 
 ---
 
 ## 延后观察列表（B 类）
 
-> 自 `2026-05-23` 起，B 类尽量补标子类：`B1` = 可转 A 候选；`B2` = guardrail-only；`B3` = public-prose-only / expression-only。子类不改变 A/B/C 正式裁决，只决定重评优先级。
+> 自 `2026-05-23` 起，B 类尽量补标子类：`B1` = 可转 A 候选；`B2` = guardrail-only；`B3` = public-prose-only / expression-only。自 `2026-07-20` 起，B 类不是默认排队，而是“停驻 + 具名触发条件”；子类不改变 A/B/C 正式裁决，只决定被触发后的处理优先级。
 
 | 加入日期 | 重评日期 | 来源 | 等待原因 |
 |---------|---------|------|---------|
@@ -80,13 +80,14 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-05-23 | 2026-08-23 | Neuroscience News / Newcastle University: *Using Physics Equations to Map Memory Distortions* / `Quantum Emotions` | `B1/B2`：`B1` for order-sensitive emotional-memory modeling if future paper/model/data appears；`B2` until then as quantum-cognition guardrail；当前无 peer-reviewed 结果/模型方程/数据，不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `\Psi_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure |
 | 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`\Psi_f`、`T_dir`、`\hat G_\theta` |
 | 2026-07-16 | 2026-10-16 | PhilPapers first-priority packet: Šekrst, Wu, Sulic, Georgatos, Simonelli, Rosenhagen, Sawyer（[packet index](../Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md)） | Mixed packet：7/7 SourceCards complete；Šekrst、Wu、Sulic、Simonelli 与 Sawyer 全文已取得。前四篇以 `AIEVID01`、`PH-AG02`、`PH-AG03`、`PH-SEM01` 升为 A；Sawyer 仅以 `GOV-SUB01` 在方法治理层升 A，其替代自然哲学与超常机制为 C quarantine；2/7 仍为 B 等待全文。下一优先为 Georgatos 与 Rosenhagen。不得把摘要卡、非同行评审自然哲学或方法残余写成 canonical 支撑 |
+| 2026-07-21 | trigger-based | Quanta / Elise Cutts: *The Enduring Mystery of How Water Freezes* + Dhabal, Kumar & Molinero, PNAS `10.1073/pnas.2322853121`（[SourceCard](../Materials/2026/SRC_2024_06_17_Physics_Cutts_Water_Freezing_Quanta.md)） | `B1/B2`：`B1` for stability-reachability split、physical anchoring threshold、scaffold-as-cost-redistributor 与 history-dependent reachability natural negative-boundary；`B2` for preventing phase transition / metastability / generic history dependence from being upgraded into `L_0`、canonical `Psi_f`、`W_sel`、subjectivity or consequence-return。复活触发：HDR 论文增加 natural comparison；`Psi_f` physical-proxy taxonomy 修订；Physics 域点名 nucleation/metastability；公共文章需要“稳定不等于可达”案例 |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：191 条
-- A（融入）：123 条
-- B（观察）：18 条
+- 总提交：193 条
+- A（融入）：124 条
+- B（观察）：19 条
 - C（拒绝）：50 条
-- 融入率：64.4%
+- 融入率：64.2%
