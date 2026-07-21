@@ -16,7 +16,7 @@ tags: [Governance, ProofAudit, AssumptionMap, P1-T07]
 
 # P1-T07 Assumption Map
 
-> **Status**: non-canonical audit map. One row per premise the P1-T07 proof needs or invokes. Columns: source (where it appears, if at all) · **explicit?** (is it stated) · **necessary?** (does the conclusion fail without it) · **sufficient?** (does it, with the stated context, close the proof) · **ε_pg co-reference** (does it restate ε_pg / non-self-erasure) · **countermodel if missing** (from audit §4 Version D).
+> **Status**: non-canonical audit map. One row per premise the P1-T07 proof needs or invokes. Columns: source (where it appears, if at all) · **explicit?** (is it stated) · **global necessity / package role** (whether it is globally required, or only plays a role inside one sufficient package) · **sufficient?** (does it, with the stated context, close the proof) · **ε_pg co-reference** (does it restate ε_pg / non-self-erasure) · **countermodel if missing** (from audit §4 Version D).
 
 ## Premise ledger
 

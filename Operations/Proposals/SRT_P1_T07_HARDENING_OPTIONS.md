@@ -79,7 +79,7 @@ Decompose the current single theorem into:
 
 - **Pros**: maximal transparency — isolates exactly which step is definitional (lemma 2), which is irreversibility (lemma 1), and which is the ε postulate (bridge). Makes the circularity impossible to hide.
 - **Cost**: most structural churn; touches the most files; risks fragmenting a claim readers currently treat as unitary.
-- **Introduces ε-like premise?** **Yes, and localizes it** to the bridge — arguably the cleanest epistemic outcome, but the heaviest edit.
+- **Introduces ε-like premise?** **E — pending, decided at the bridge**: **yes** if the bridge is discharged by the ε postulate; **not necessarily** if the bridge is discharged by an independently constructed B-lite baseline (`K₀`-absorption + comparative deviation). Either way the decomposition *localizes* the question to the bridge — the cleanest epistemic outcome, but the heaviest edit.
 - **Impact**:
   - *P1-T07*: replaced by lemma-set + bridge; the "necessity" becomes bridge-conditional.
   - *T-COLL-3*: mirror decomposition at collective scale.
@@ -96,6 +96,6 @@ Decompose the current single theorem into:
 
 ## Recommendation (evaluation only — not a decision)
 
-**Option B is the leading minimal candidate, pending semantic and kernel definition** — *not* an already-adjudicated best. It is the smallest *edit*, and its B-lite form is the only route on which `ε_pg` might be shown genuinely dispensable (R2); but it cannot be stated as a theorem until its three preconditions (choose S1/S2/S3; define ε-neutral on an independent kernel; prove that kernel absorbs a.s.) are discharged — which is real probability work, not wording. **Option C** is the most transparent long-term but the most invasive. **Option A** keeps the headline only by making the ε-dependence explicit, which undercuts the "derived from irreversibility" reading it tries to preserve.
+**Option B is the leading minimal candidate, pending semantic and kernel definition** — *not* an already-adjudicated best. It is the smallest *edit*, and its B-lite form is the only route on which `ε_pg` might be shown genuinely dispensable (R2); but it cannot be stated as a theorem until its three preconditions (choose S1/S2/S3; define ε-neutral on an independent kernel; prove that kernel absorbs a.s.) are discharged — which is real probability work, not wording. **Option C** is the most transparent long-term but the most invasive. **Option A** preserves the strong headline but requires the strongest neutral-baseline construction and absorption proof; whether it preserves ε-independence remains **E — pending on `K₀`**.
 
 **None of A/B/C is applied here.** A later PR, separately authorized, would pick one, discharge the preconditions, and edit canonical text under the edit protocol. This pass stops at the proposal.
