@@ -53,7 +53,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-04_Part02 | [Material_Log/2026-04_Part02.md](Material_Log/2026-04_Part02.md) | 10 |
 | 2026-05_Part01 | [Material_Log/2026-05_Part01.md](Material_Log/2026-05_Part01.md) | 21 |
 | 2026-06_Part01 | [Material_Log/2026-06_Part01.md](Material_Log/2026-06_Part01.md) | 1 |
-| 2026-07_Part01 | [Material_Log/2026-07_Part01.md](Material_Log/2026-07_Part01.md) | 10 |
+| 2026-07_Part01 | [Material_Log/2026-07_Part01.md](Material_Log/2026-07_Part01.md) | 11 |
 
 ---
 
@@ -81,13 +81,14 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-06-16 | 2026-09-16 | Quanta Magazine / Philip Ball: *The New Math of How Large-Scale Order Emerges* + Rosas et al. arXiv:`2402.09090v2` *Software in the natural world* | `B1/B2`：`B1` for computational-mechanics / hierarchical-emergence close-read candidate；`B2` for emergence-hygiene guardrail；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`\Psi_f`、`T_dir`、`\hat G_\theta` |
 | 2026-07-16 | 2026-10-16 | PhilPapers first-priority packet: Šekrst, Wu, Sulic, Georgatos, Simonelli, Rosenhagen, Sawyer（[packet index](../Materials/2026/INDEX_2026_07_16_SRT_First_Priority_Readings.md)） | Mixed packet：7/7 SourceCards complete；Šekrst、Wu、Sulic、Simonelli 与 Sawyer 全文已取得。前四篇以 `AIEVID01`、`PH-AG02`、`PH-AG03`、`PH-SEM01` 升为 A；Sawyer 仅以 `GOV-SUB01` 在方法治理层升 A，其替代自然哲学与超常机制为 C quarantine；2/7 仍为 B 等待全文。下一优先为 Georgatos 与 Rosenhagen。不得把摘要卡、非同行评审自然哲学或方法残余写成 canonical 支撑 |
 | 2026-07-21 | trigger-based | Quanta / Elise Cutts: *The Enduring Mystery of How Water Freezes* + Dhabal, Kumar & Molinero, PNAS `10.1073/pnas.2322853121`（[SourceCard](../Materials/2026/SRC_2024_06_17_Physics_Cutts_Water_Freezing_Quanta.md)） | `B1/B2`：`B1` for stability-reachability split、physical anchoring threshold、scaffold-as-cost-redistributor 与 history-dependent reachability natural negative-boundary；`B2` for preventing phase transition / metastability / generic history dependence from being upgraded into `L_0`、canonical `Psi_f`、`W_sel`、subjectivity or consequence-return。复活触发：HDR 论文增加 natural comparison；`Psi_f` physical-proxy taxonomy 修订；Physics 域点名 nucleation/metastability；公共文章需要“稳定不等于可达”案例 |
+| 2026-07-21 | trigger-based | Quanta / Philip Ball: *Thermodynamic Computers Go With the (Energy) Flow* + Melanson et al. `10.1038/s41467-025-59011-x`、Whitelam & Casert `10.1038/s41467-025-67958-0`、Whitelam `10.1103/kwyy-1xln`、Jelinčič et al. `10.1038/s44335-026-00075-3`（[SourceCard](../Materials/2026/SRC_2026_07_15_Computing_Ball_Thermodynamic_Computers_Quanta.md)） | `B1/B2` high-priority：`B1` for entropy–randomization–resynchronization bridge、trajectory computation、trained stochastic scaffold、selective-resynchronization related work and HDR external-programming negative control；`B2` for preventing `noise + constraint + readout` from being upgraded into `W_sel + bearer`、canonical `Psi_f`、stake or consciousness。复活触发：selective-resynchronization related work；bridge 获作者成文确认；HDR 增 stochastic control；AI 点名 thermodynamic/probabilistic hardware；`Psi_f` 完整能耗账本；公共文章需要“随机可被利用但噪声本身不选择”案例 |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：193 条
+- 总提交：194 条
 - A（融入）：124 条
-- B（观察）：19 条
+- B（观察）：20 条
 - C（拒绝）：50 条
-- 融入率：64.2%
+- 融入率：63.9%
