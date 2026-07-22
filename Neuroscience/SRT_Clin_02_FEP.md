@@ -101,7 +101,7 @@ Outside that window, PE and FEP remain comparison terms rather than definitions 
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`Neuroscience/SRT_Neural_Mechanisms.md`](SRT_Neural_Mechanisms.md) — upstream neural mechanisms
 - [`Core_Law/SRT_Suffering.md`](../Core_Law/SRT_Suffering.md) — canonical suffering theory
 

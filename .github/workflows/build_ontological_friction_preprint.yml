@@ -1,0 +1,93 @@
+name: Build ontological friction preprint PDF
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "papers/ontological_friction/paper_ontological_friction.md"
+      - "papers/ontological_friction/make_preprint_variant.py"
+      - "papers/ontological_friction/render_preprint_pdf.py"
+      - "papers/ontological_friction/figures/**"
+      - ".github/workflows/build_ontological_friction_preprint.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "papers/ontological_friction/paper_ontological_friction.md"
+      - "papers/ontological_friction/make_preprint_variant.py"
+      - "papers/ontological_friction/render_preprint_pdf.py"
+      - "papers/ontological_friction/figures/**"
+      - ".github/workflows/build_ontological_friction_preprint.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-preprint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install renderer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+          python -m pip install --upgrade pip
+          python -m pip install pypandoc pypdf reportlab matplotlib numpy pillow
+          google-chrome --version || google-chrome-stable --version
+
+      - name: Rebuild manuscript figures
+        working-directory: papers/ontological_friction/figures
+        run: |
+          for script in \
+            fig1_control_architecture.py \
+            fig2_proxy_map.py \
+            fig3_ros_coupling.py \
+            fig4_clinical_radar.py \
+            fig5_protocol.py
+          do
+            python "$script"
+          done
+          test -s fig1_control_architecture.png
+          test -s fig2_proxy_map.png
+          test -s fig3_ros_coupling.png
+          test -s fig4_clinical_radar.png
+          test -s fig5_protocol.png
+
+      - name: Generate journal-neutral preprint source
+        run: python papers/ontological_friction/make_preprint_variant.py
+
+      - name: Render and verify PDF
+        run: python papers/ontological_friction/render_preprint_pdf.py
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ontological-friction-preprint-pdf
+          path: papers/ontological_friction/paper_ontological_friction_preprint.pdf
+          if-no-files-found: error
+
+      - name: Commit generated preprint files
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            papers/ontological_friction/paper_ontological_friction_preprint.md \
+            papers/ontological_friction/paper_ontological_friction_preprint.pdf
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Build PsyArXiv preprint PDF [skip ci]"
+            git push
+          fi

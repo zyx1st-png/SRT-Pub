@@ -444,4 +444,4 @@ Avoid:
 1. Convert P24-3 into a concrete lab protocol.
 2. Convert P24-1 into a machine-learning regime-shift toy model.
 3. Convert P24-2 into a behavioral task distinguishing reward from non-substitutability.
-4. Add these prediction routes to `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md` and `Core/SRT_Core_24_Index.md`.
+4. Add these prediction routes to `_SRT_CONTEXT_ROUTER.md §21` (Core 24 route) and `Core/SRT_Core_24_Index.md`.

@@ -15,6 +15,10 @@ updated: 2026-06-05
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`_SRT_CHANGELOG_2026_Split/README.md`](_SRT_CHANGELOG_2026_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new governance authority.
 
+## 2026-07-20 治理减负轮（Governance Load Reduction）
+
+确立四条治理比例原则（强度跟活跃度走 / 过滤器自带回流路径 / 状态唯一面 / 导航一进一出）。执行：Operations 51 记录归档、根目录 22 停驻文件迁出、新建 `_SRT_PARKED_INDEX.md` 停机坪索引、7 coverage index 冻结、5 休眠域加冻结戳、STATUS 收口单面（删 `STATUS_FAST.md`/`STATUS_Split/`）、boot 读单 4→3（symbol quick guard 并入 AI_START）、router 3 侧车合并、人类入口收编进 Navigation_Map、frontmatter 棘轮 + B 类停驻语义。完整记录：`Governance/Governance_Load_Reduction_2026-07-20.md`。不动 canonical 冻结 / claim ladder / edit protocol / 书稿 hard guard / 领域层内容。
+
 > 本文件承载从 `_SRT_INDEX.md` 迁移出的历史增量记录与版本事件，避免主索引过载。它是 historical record，不是当前理论状态面板，也不是 canonical definition source。
 
 ## 🆕 最新理论增量（2026-03-31 第五批 - 因果四层结构与赋权机制）

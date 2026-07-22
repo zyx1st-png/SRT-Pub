@@ -1,0 +1,6 @@
+interface:
+  display_name: "说人话"
+  short_description: "按场景清理中英文 AI 套路并保护事实与术语"
+  default_prompt: "Use $shuorenhua to review this text and make it sound natural without changing facts, terms, or responsibility."
+policy:
+  allow_implicit_invocation: true

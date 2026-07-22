@@ -1,0 +1,6 @@
+interface:
+  display_name: "SRT 真人化 Pipeline"
+  short_description: "三阶段去 AI 味、保真核验与 SRT 发布边界检查"
+  default_prompt: "Use $srt-humanization-pipeline to run the three-stage humanization workflow and verify protected facts and SRT claim boundaries."
+policy:
+  allow_implicit_invocation: true

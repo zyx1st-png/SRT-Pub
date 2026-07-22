@@ -37,7 +37,7 @@ under uncertainty and irreversible action.
 
 ## Relationship to the existing ChoiceMap seed
 
-`_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` is a human-facing decision-support proposal
+`90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md` is a human-facing decision-support proposal
 whose first design law gives final convergence back to the user. This experiment instead
 tests an autonomous synthetic agent. The shared name marks family resemblance—option
 expansion, closure visibility, and reselectability—not identity. The autonomous algorithm

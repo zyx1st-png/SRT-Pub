@@ -29,6 +29,9 @@ machine_summary: >
 
 # Physics
 
+> **[休眠层声明 · 2026-07-20]** 本层（`Physics/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+
 > **Metadata cleanup note（2026-05）**：This README is a Physics section guide, not a definition source. Historical file names and theorem/axiom labels in Physics must be read through `SRT_Physics_Claim_Status.md`; Fisher, Landauer, D_eff, gravity, quantum measurement, cosmology, and Psi_f language are bridge/proxy unless explicitly supported elsewhere.
 This directory contains SRT's physics-facing bridge, quantum, cosmology,
 formalism, complexity / ontology, interface-annex, hardening, and extension
@@ -107,7 +110,7 @@ back to canonical anchors.
 
 ## Current restructuring status
 
-Physics P2 interface work is closed. See [`../Operations/Physics_P2_Interface_Closure_Report.md`](../Operations/Physics_P2_Interface_Closure_Report.md).
+Physics P2 interface work is closed. See [`../Operations/Archive_Records/Physics_P2_Interface_Closure_Report.md`](../Operations/Archive_Records/Physics_P2_Interface_Closure_Report.md).
 
 Current safe state:
 
@@ -161,10 +164,10 @@ When in doubt, cross-check:
 
 ## Operations
 
-- Pre-audit: [`../Operations/Physics_Split_Annex_PreAudit_2026-04-29.md`](../Operations/Physics_Split_Annex_PreAudit_2026-04-29.md)
-- P1 closure: [`../Operations/Physics_P1_Frontmatter_Normalization_Closure_Report.md`](../Operations/Physics_P1_Frontmatter_Normalization_Closure_Report.md)
-- P2 high-risk adjudication: [`../Operations/Physics_P2_High_Risk_Category_Adjudication.md`](../Operations/Physics_P2_High_Risk_Category_Adjudication.md)
-- P2 closure: [`../Operations/Physics_P2_Interface_Closure_Report.md`](../Operations/Physics_P2_Interface_Closure_Report.md)
+- Pre-audit: [`../Operations/Archive_Records/Physics_Split_Annex_PreAudit_2026-04-29.md`](../Operations/Archive_Records/Physics_Split_Annex_PreAudit_2026-04-29.md)
+- P1 closure: [`../Operations/Archive_Records/Physics_P1_Frontmatter_Normalization_Closure_Report.md`](../Operations/Archive_Records/Physics_P1_Frontmatter_Normalization_Closure_Report.md)
+- P2 high-risk adjudication: [`../Operations/Archive_Records/Physics_P2_High_Risk_Category_Adjudication.md`](../Operations/Archive_Records/Physics_P2_High_Risk_Category_Adjudication.md)
+- P2 closure: [`../Operations/Archive_Records/Physics_P2_Interface_Closure_Report.md`](../Operations/Archive_Records/Physics_P2_Interface_Closure_Report.md)
 
 ## Cross-domain links
 

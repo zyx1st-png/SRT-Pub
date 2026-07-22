@@ -2,7 +2,8 @@
 id: SRT-MEDIUM-ROOT-TOPIC-FAQ-COVERAGE-INDEX
 type: coverage_index
 tags: [Navigation, Coverage Audit, FAQ, Topic Index, Root Files, Medium Priority]
-status: active_v1
+status: archived
+snapshot_as_of: 2026-07-20
 layer: meta
 epistemic_layer: meta
 claim_mode: navigation
@@ -10,6 +11,9 @@ dependency: [_SRT_CONTEXT_ROUTER, _SRT_DEEP_THEORY_MAP, Operations/_SRT_DEEP_NAV
 ---
 
 # SRT Medium Coverage Index: Root Topic / FAQ / Alignment Files
+
+> **[2026-07-20 冻结快照]** 本覆盖索引自本日起为存档快照，停止维护义务；条目反映生成时点的仓库结构，路径如与当前结构不符以 `_SRT_INDEX.md` 与当前目录为准。冻结依据：`Governance/Governance_Load_Reduction_2026-07-20.md`。
+
 
 > **Purpose**: This file processes root-level topic indexes, FAQ, backlog, alignment, and public-facing support files from the deep-navigation coverage audit. It is a navigation / coverage file, not a canonical theory source.
 
@@ -32,7 +36,7 @@ These files support critique handling, improvement planning, and practical harde
 | File | Navigation role | Boundary |
 |---|---|---|
 | `SRT_FAQ_CRITICAL.md` | Critical FAQ / objection handling | FAQ support; not a replacement for `Core/SRT_OPEN_TENSIONS.md` or the claim ladder. |
-| `SRT_OPTIMIZATION_BACKLOG.md` | Optimization backlog support | Operations / improvement support; not theory authority. |
+| `90_Backstage/Plans_Archive/SRT_OPTIMIZATION_BACKLOG.md` | Optimization backlog support | Operations / improvement support; not theory authority. |
 
 Suggested routes:
 
@@ -68,7 +72,7 @@ These files may appear as low or medium coverage candidates depending on audit c
 |---|---|---|
 | `D_VALUE_ALIGNMENT.md` | d-value alignment support | Alignment support; canonical d-value remains `_SRT_D_VALUE_CANONICAL.md`. |
 | `SRT_PP_ALIGNMENT_GUIDE.md` | Predictive-processing / alignment guide support | Guide support; does not replace FEP / PP comparison routes. |
-| `SRT_PRACTICE_COMMUNITY_PLAN.md` | Practice / community plan support | Praxis planning; not a spirituality or political canonical source. |
+| `90_Backstage/Plans_Archive/SRT_PRACTICE_COMMUNITY_PLAN.md` | Practice / community plan support | Praxis planning; not a spirituality or political canonical source. |
 | `SRT 金句.md` | Public quote / slogan support | Public communication material; not canonical. |
 | `Selection-Reality Theory (SRT).md` | Root-level public / legacy overview support | Public / legacy overview; use current canonical anchors for definitions. |
 
@@ -109,13 +113,13 @@ Suggested routes:
 The following root-level / topic / FAQ / alignment candidates are now explicitly routed by this index:
 
 - `SRT_FAQ_CRITICAL.md`
-- `SRT_OPTIMIZATION_BACKLOG.md`
+- `90_Backstage/Plans_Archive/SRT_OPTIMIZATION_BACKLOG.md`
 - `SRT_TOPIC_ARTICLE_INDEX.md`
 - `SRT_TOPIC_CONSCIOUSNESS_AGENCY_INDEX.md`
 - `SRT_TOPIC_FREE_WILL_INDEX.md`
 - `D_VALUE_ALIGNMENT.md`
 - `SRT_PP_ALIGNMENT_GUIDE.md`
-- `SRT_PRACTICE_COMMUNITY_PLAN.md`
+- `90_Backstage/Plans_Archive/SRT_PRACTICE_COMMUNITY_PLAN.md`
 - `SRT 金句.md`
 - `Selection-Reality Theory (SRT).md`
 - `Glossary/SRT_Glossary_00_Governance_and_Prelude.md`

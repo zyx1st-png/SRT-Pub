@@ -17,7 +17,7 @@ canonical: false
 owner: Neuroscience/SRT_Neuro_07_Evo_Devo.md
 dependency:
   - SRT-NEURO-07
-  - Operations/PR_D_Batch2b_Neuro_07_PreExtraction_Audit.md
+  - Operations/Archive_Records/PR_D_Batch2b_Neuro_07_PreExtraction_Audit.md
 ---
 
 # Neuro 07 Annex: Evo-Devo Interface
@@ -40,7 +40,7 @@ dependency:
 
 **Extracted in**: PR-D Batch 2b (2026-04-28)
 
-**Extraction record**: [`../Operations/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md`](../Operations/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md)
+**Extraction record**: [`../Operations/Archive_Records/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md`](../Operations/Archive_Records/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md)
 
 ---
 

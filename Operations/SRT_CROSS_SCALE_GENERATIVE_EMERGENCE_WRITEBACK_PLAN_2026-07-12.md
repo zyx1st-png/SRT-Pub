@@ -261,7 +261,7 @@ Codex、Claude 或其他 Agent 开始本任务时，必须按以下顺序读取�
 1. `AGENTS.md`
 2. 本文件
 3. `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-4. `STATUS_FAST.md`
+4. `STATUS.md §Fast Status`
 5. `Operations/README.md`
 6. `Governance/README.md`
 

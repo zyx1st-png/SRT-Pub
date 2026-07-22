@@ -46,7 +46,7 @@ dependency: [SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`Neuroscience/SRT_Neural_Mechanisms.md`](SRT_Neural_Mechanisms.md) — main neural mechanisms owner
 - [`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`](NEUROSCIENCE_COMPACT_REGISTRY.md) — compact registry
 

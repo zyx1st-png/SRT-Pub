@@ -44,13 +44,12 @@ raw session / dialogue compilation / residual archives 已下沉到：
 
 Active execution plan 只负责施工范围、顺序、门控与验收，不定义 canonical 理论。计划完成或被新裁决取代后，应更新其 `status`，不得让多个 active plan 同时宣称同一任务的唯一入口。
 
-### Current structure governance
+### Historical structure governance records
 
-1. `Closure_Index_2026-04-29.md`
-2. `Structural_Governance_Rollup_2026-04-29.md`
-3. `AI_Annex_Round1_Closure_Report.md`
-4. `Physics_P1_Frontmatter_Normalization_Closure_Report.md`
-5. `Physics_P2_Interface_Closure_Report.md`
+已完成的一次性审计 / adjudication / extraction / closure 记录统一存放于 [`Archive_Records/`](Archive_Records/README.md)（2026-07-20 治理减负轮迁入），从其 README 进入。这些记录是历史留痕，不产生维护义务。总入口：
+
+1. `Archive_Records/Closure_Index_2026-04-29.md`
+2. `Archive_Records/Structural_Governance_Rollup_2026-04-29.md`
 
 ### Runtime pipelines
 
@@ -65,15 +64,15 @@ Active execution plan 只负责施工范围、顺序、门控与验收，不定�
 9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线）
 10. `_SRT_ARTICLE_WORKFLOW.md`（文章写作工作流：LLM 发散 / 作者收敛 / 记录轨迹；`2026-07-02` 战略重心转向社媒文章后新增，Pipeline 5 主模式改由此文件定义）
 11. `_SRT_CHOICE_TRACE_LOG.md`（收敛轨迹台账：发散→收敛配对留痕，作者收敛函数的 revealed-stake 记录；append-only）
+12. `.agents/skills/srt-humanization-pipeline/SKILL.md`（公共文本三阶段真人化执行层：`shuorenhua → humanizer-zh → stop-slop → protected-spans 核验`；语言通过不等于发布批准）
 
 ### Connector / large-file safety
 
 1. `../_SRT_AGENT_RETRIEVAL_PROFILE.md`
-2. `Agent_Context_Retrieval_Audit_2026-05-10.md`
-3. `Large_File_Audit_2026-05-09.md`
+2. `Archive_Records/Agent_Context_Retrieval_Audit_2026-05-10.md`
+3. `Archive_Records/Large_File_Audit_2026-05-09.md`
 4. `Material_Log/README.md`
 5. `Status_History/README.md`
-6. `../STATUS_Split/README.md`
 
 ### Automation / preflight
 

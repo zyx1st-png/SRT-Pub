@@ -24,6 +24,19 @@ RECOMMENDED_KEYS = {
     "claim_mode",
 }
 
+# Ratchet enum (2026-07-20 governance load-reduction round, see
+# Governance/_SRT_DOC_ENGINEERING_GUIDE.md §Frontmatter Minimal Schema Ratchet):
+# newly written or substantially edited files must use one of these status
+# values. Legacy values remain as baselined known debt; a status outside this
+# enum surfaces as a warning, so any NEW occurrence fails the preflight
+# baseline comparison without requiring a repo-wide rewrite.
+STATUS_RATCHET_ENUM = {
+    "draft",
+    "active",
+    "frozen",
+    "archived",
+}
+
 # Raw and edited conversation transcripts are source records rather than claim-bearing
 # theory documents. For these explicitly noncanonical transcript statuses, `kind`
 # may stand in for `type`, while layer / epistemic_layer / claim_mode are not
@@ -52,9 +65,21 @@ BASELINE_FILES = {
     "Governance/Frontmatter_Warning_Baseline.txt",
 }
 
+# Codex skills use their own frontmatter contract (`name` and `description`),
+# while skill references may intentionally have no frontmatter. They are runtime
+# packages, not SRT claim-bearing documents, so the repository document schema
+# does not apply to this subtree.
+FRONTMATTER_EXEMPT_PREFIXES = (
+    ".agents/skills/",
+)
+
 
 def is_helper_path(rel: str) -> bool:
     return any(marker in rel for marker in AUTHORITY_HELPER_MARKERS)
+
+
+def is_frontmatter_exempt(rel: str) -> bool:
+    return rel.startswith(FRONTMATTER_EXEMPT_PREFIXES)
 
 
 def is_noncanonical_transcript(data: dict[str, str]) -> bool:
@@ -128,7 +153,7 @@ def main() -> None:
 
     for path in iter_markdown(include_artifacts=args.include_artifacts):
         rel = relpath(path)
-        if rel in baseline_paths:
+        if rel in baseline_paths or is_frontmatter_exempt(rel):
             continue
         fm = frontmatter_for(path)
         if fm is None:
@@ -149,6 +174,13 @@ def main() -> None:
                 errors.append(message)
             else:
                 warnings.append(message)
+
+        status_value = fm.data.get("status", "")
+        if status_value and status_value not in STATUS_RATCHET_ENUM:
+            warnings.append(
+                f"{rel}: status `{status_value}` outside ratchet enum "
+                "(draft|active|frozen|archived)"
+            )
 
         file_id = fm.data.get("id")
         if file_id:

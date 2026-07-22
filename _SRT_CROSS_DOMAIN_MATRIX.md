@@ -35,6 +35,17 @@ Historical labels and filenames do not override this table. If an older file sti
 | Spirituality | direction of care expansion under payability constraints | gradual `d` expansion, subjectively reported but externally checked | `d↑` from experience report alone |
 | AI | use S0-S4 stake-bearing spectrum; inference-only / non-history-bearing systems normally read as `d \approx 0` | `D_eff` / unstaked capacity; S2 pipeline feedback; S3/S4 candidate stake only when explicitly marked | performance, self-report, persistence, or training loss directly implies `d>0` |
 
+### 1.1 Explanatory-coordinate guard
+
+`d` need not be treated as a newly discovered empirical variable that must be mutually exclusive with salience, reward, homeostatic error, pain, arousal, or memory strength. It is first a unifying explanatory coordinate for how minimum non-neutrality unfolds into concern, stake, consequence return, and changes in future selectability within a finite operator.
+
+Existing observables may overlap with, partially realize, or serve as local proxies for `d` in a stated system and scale. Such overlap is not by itself a reduction or refutation of `d`. The burden of additional validation arises only when a local observable is claimed to exhaust or directly measure canonical `d`; then it must cover irreversible stake, consequence return, non-substitutability, and effects on future selection capacity.
+
+```text
+observable overlap with d != reduction or cancellation of d
+local proxy explains a phenomenon != local proxy exhausts d's ontological role
+```
+
 ## 2. `Ψ_f`
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |

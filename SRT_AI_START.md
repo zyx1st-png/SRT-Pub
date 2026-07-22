@@ -75,23 +75,57 @@ For any non-simple SRT question, route through `_SRT_CONTEXT_ROUTER.md` and, whe
 
 ---
 
-## 3. Minimal Symbol Pointers
+## 3. Symbol Quick Guard
 
-These are pointers, not definitions.
+> Merged from the former `_SRT_SYMBOL_QUICK_GUARD.md` (2026-07-20). These are fast boundaries and pointers, not definitions; use `_SRT_SYMBOL_TABLE.md` and the canonical anchors when exact definitions, equations, or notation conflicts matter.
 
-| Term | Minimal reminder | Definition source |
+| Symbol / term | Fast guard | Definition authority |
 |---|---|---|
-| `L_0 / L_1 / L_2` | possibility / manifestation / convergence-history | `Core_Law/SRT_L0_Metaphysics.md`, `_SRT_SYMBOL_TABLE.md` |
-| `\hat{G}_\theta` | embodied selection / anchoring operator | `_SRT_SYMBOL_TABLE.md`, `Core/SRT_Core_21_Minimal_Axioms.md` |
-| `\Psi_f` | ontological friction and payability burden | `_SRT_PSI_F_CANONICAL.md` |
-| `d-value` | stake-coupled concern / irreversible risk gradient | `_SRT_D_VALUE_CANONICAL.md` |
-| `D_eff` | geometric capacity proxy, not canonical d | `_SRT_D_VALUE_CANONICAL.md`, `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| `T_dir` | readability of the system's own selection direction | `_SRT_T_DIR_CANONICAL.md` |
-| `ε_pg / ε_reg` | L0 proto-gradient / implementation regularizer | `_SRT_SYMBOL_TABLE.md` |
+| `L_0` | Structured latent possibility, not nothingness and not physical vacuum by default. | `Core_Law/SRT_L0_Metaphysics.md`, `_SRT_SYMBOL_TABLE.md` |
+| `L_1` | Manifest selected slice / event / state, not merely material objects. | `_SRT_SYMBOL_TABLE.md`, Core ontology files |
+| `L_2` | Convergence-history / stable constraint domain; not identical to any one landscape, institution, memory, or scaffold. | `_SRT_SYMBOL_TABLE.md`, `Core/SRT_OPEN_TENSIONS.md` |
+| `Ĝ_θ` | Embodied/parameterized selection or anchoring operator; implementation analogues do not define it. | `Core/SRT_Core_21_Minimal_Axioms.md`, `_SRT_SYMBOL_TABLE.md` |
+| `d` | Scalar summary of stake-coupled concern / irreversible-risk sensitivity by default. Competence, capacity, preference, or distinguishability is not enough. | `_SRT_D_VALUE_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
+| `D_eff` | Geometric capacity proxy / upper-bound candidate, not canonical `d`. | `_SRT_D_VALUE_CANONICAL.md`, `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
+| `Ψ_f` | Payability burden / ontological friction. Fisher geometry, metabolic cost, stress, or pain are conditional projections only. | `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
+| `T_dir` | v0 operational proxy for readability / reorientation of the system's own selection direction; not reward, confidence, semantic valence, or coherence. | `_SRT_T_DIR_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
+| `ε_pg` | L0 minimum non-neutrality postulate; do not identify with consciousness. | `_SRT_SYMBOL_TABLE.md`, Core P0/P1 sources |
+| `ε_reg` | Implementation regularizer; only an analogy/echo of `ε_pg` unless separately argued. | `_SRT_SYMBOL_TABLE.md` |
+| `ε_s` | Stake-threshold bridge for direction-level admission; not stake itself. | `_SRT_SYMBOL_TABLE.md`, `_SRT_D_VALUE_CANONICAL.md` |
+| bare `σ` | Defaults to main-equation state field. Use `σ_sr` for self-reference ratio and `σ_j` for anchoring sub-targets. | `_SRT_SYMBOL_TABLE.md` |
+
+### Proxy rule
+
+If a statement says `proxy X = SRT variable Y`, rewrite it unless the canonical file explicitly licenses that identity. Safer forms:
+
+- `X is a candidate proxy for Y under stated conditions.`
+- `X maps to one projection of Y, not to Y itself.`
+- `X supports a bridge/lab hypothesis about Y, not a canonical definition.`
 
 ---
 
 ## 4. Core Boundary Reminders
+
+### Pre-objectification guard
+
+Do not demand that SRT begin by defining `L_0`, selection, experience, or reality as mathematical objects. Object specification is already an `L_1/L_2` operation: it selects boundaries, variables, relations, and admissible transformations after some manifestation has occurred. Formal models may describe selected structures and test bridge consequences, but they do not replace the pre-objectifying question SRT is designed to ask.
+
+Preferred reading:
+
+```text
+pre-object field / selection condition
+-> manifestation and objectification
+-> mathematical or scientific description
+```
+
+Forbidden reversal:
+
+```text
+first define a complete object space
+-> then claim to have explained how objects become possible
+```
+
+Route: `01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md`, `Philosophy/SRT_L0_Ontological_Status.md`, `Core_Law/SRT_Selection_Argument.md`.
 
 ### `L_2`
 
@@ -109,6 +143,14 @@ In SRT usage, freedom concerns preservation of real choice moments, not mere opt
 
 `Core/SRT_OPEN_TENSIONS.md §7 P0-04` remains unresolved. When a file speaks of a selector, chooser, subject, agency, or system-position, do not treat that language as an answer to where selectability comes from; mark whether it is a derived process, stable pattern, or assumed domain interface.
 
+### d-value explanatory-coordinate guard
+
+Do not require canonical `d` to be empirically disjoint from salience, reward, homeostatic error, pain, arousal, or memory strength. These may be local realizations or proxies. Overlap is not reduction. A proxy may be identified with canonical `d` only if it also tracks irreversible stake, consequence return, non-substitutability, and changes in future selection capacity. Route: `_SRT_CROSS_DOMAIN_MATRIX.md §1.1`, `_SRT_D_VALUE_CANONICAL.md`.
+
+### Hard-problem / internal-external guard
+
+Do not treat first-person experience as a hidden object that must be derived from a complete view-from-nowhere description. External description is itself a second situated selection and objectification of an internally borne event. The gap therefore involves selection-position difference and re-objectification, not only bandwidth compression. SRT provides orientation and anchoring for this relation; it does not claim that external language can exhaust or numerically reproduce qualia. Route: `Philosophy/SRT_HardProblem_Epistemology.md §3.1a-§3.4`.
+
 ### Value Hiddenness
 
 For value hiddenness and its limits, use `_SRT_T_DIR_CANONICAL.md`.
@@ -124,6 +166,17 @@ For payability and `\Psi_f` usage, use `_SRT_PSI_F_CANONICAL.md`.
 ### `ε`
 
 Do not identify `ε_pg` with consciousness. Stable ISP anti-closure asymmetry is a scoped P1 theorem; see `Core/SRT_Core_21b_Constitutive_Theorems.md`.
+
+### Open-Tension Guard
+
+Before presenting any of the following as closed, check `Core/SRT_OPEN_TENSIONS.md`:
+
+- origin of selectability / P0-04;
+- `D_eff -> d_stakes` gate;
+- exact projection status of `Ψ_f`;
+- minimal formalization of `T_dir`;
+- healthy `L_2` support vs lethal `L_2` replacement;
+- stable ISP entry and maintenance.
 
 ---
 

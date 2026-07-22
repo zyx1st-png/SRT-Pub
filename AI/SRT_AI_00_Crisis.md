@@ -44,7 +44,7 @@ dependency: [SRT-CORE-001, SRT-AI-BRIDGE-001]
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/_SRT_AI_Bridge.md`](_SRT_AI_Bridge.md) — bridge layer upstream
 - [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) — AI ontology downstream owner
 

@@ -141,7 +141,7 @@ None.
 | `Spirituality/Praxis_Split/03_Contexts_Community_Measures.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Spirituality/Praxis_Split/04_Goal_Resources_Appendix.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `Spirituality/Praxis_Split/README.md` | support/split/annex/operations artifact; review only if repeatedly useful |
-| `_SRT_EXPLAINABILITY_AUDIT.md` | support/split/annex/operations artifact; review only if repeatedly useful |
+| `Operations/Archive_Records/_SRT_EXPLAINABILITY_AUDIT.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `_SRT_QUALITY_METRICS.md` | support/split/annex/operations artifact; review only if repeatedly useful |
 | `graphify-out/converted/paper_ontological_friction_ecf0aa83.md` | unreferenced theory-like file |
 | `graphify-out/converted/paper_ontological_friction_frontiers_submission.pre_sync_backup_2026-03-24_02815416.md` | unreferenced theory-like file |

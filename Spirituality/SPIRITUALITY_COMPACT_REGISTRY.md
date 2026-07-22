@@ -11,6 +11,9 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 # SRT Spirituality Compact Registry
 
+> **[休眠层声明 · 2026-07-20]** 本层（`Spirituality/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+
 > **回链头部**：本页是 Spirituality navigation / domain registry，不是 core definition source。Spirituality 文件可作为 bridge、praxis、companion、domain exposition，但不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。
 > **P-level**：本板块主文主要为 P3/P5；实践、现象学与生活化解释默认 P5；阈值、路径或可测代理默认 P4，除非回链到 core/canonical 文件。
 

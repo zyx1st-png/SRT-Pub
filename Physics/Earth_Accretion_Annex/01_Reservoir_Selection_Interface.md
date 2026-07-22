@@ -13,7 +13,7 @@ dependency:
   - Physics/README.md
   - Physics/SRT_Physics_Claim_Status.md
   - Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md
-  - Operations/Physics_P2b_Earth_Accretion_Interface_Adjudication.md
+  - Operations/Archive_Records/Physics_P2b_Earth_Accretion_Interface_Adjudication.md
 machine_summary: >
   Earth accretion / reservoir-selection interface annex. Contains source anchors, external cosmochemistry summary,
   reservoir-selection analogy, proxy mapping table, volatile-boundary problem, boundary cautions, and public-facing paragraph.
@@ -22,7 +22,7 @@ machine_summary: >
 
 # Earth Accretion / Reservoir-Selection Interface
 
-> **Extraction note**: This file contains low-risk external-interface material copied from `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` under the boundaries fixed by `Operations/Physics_P2b_Earth_Accretion_Interface_Adjudication.md`.
+> **Extraction note**: This file contains low-risk external-interface material copied from `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` under the boundaries fixed by `Operations/Archive_Records/Physics_P2b_Earth_Accretion_Interface_Adjudication.md`.
 >
 > **Boundary**: Earth accretion does not prove SRT. Planetary accretion is not agency, intention, concern, or choice. Reservoir selection is used here as a physical analogy for accessibility-limited selection.
 

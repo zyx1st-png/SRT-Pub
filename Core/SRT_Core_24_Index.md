@@ -36,8 +36,8 @@ updated: 2026-04-30
 - `Core/SRT_Core_24_Canonical_Merge_Draft.md`
 - `Core/SRT_Core_24_Discriminating_Predictions.md`
 - `Core/SRT_Core_24_Index.md`
-- `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md`
-- `Operations/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`
+- `_SRT_CONTEXT_ROUTER.md §21`（原 `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md`，2026-07-20 已并入主 router）
+- `Operations/Archive_Records/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`
 
 ### Addenda created during integration
 
@@ -90,8 +90,8 @@ Retrieve Core 24 when the query mentions any of the following:
 - [x] Core 24 supplement created: `Core/SRT_Core_24_Floor_Normativity_Verification.md`.
 - [x] Core 24 lightweight index created: `Core/SRT_Core_24_Index.md`.
 - [x] Core 24 canonical merge draft created: `Core/SRT_Core_24_Canonical_Merge_Draft.md`.
-- [x] Core 24 context-router extension created: `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md`.
-- [x] Core 24 navigation integration patch created: `Operations/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`.
+- [x] Core 24 context-router route merged into main router: `_SRT_CONTEXT_ROUTER.md §21` (2026-07-20; extension file retired).
+- [x] Core 24 navigation integration patch created: `Operations/Archive_Records/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`.
 - [x] Core 24 added to `_SRT_INDEX.md` as secondary hardening note and Core entrypoint.
 
 ### Phase 1 — Safe Integration

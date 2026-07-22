@@ -11,7 +11,7 @@ dependency:
   - Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md
   - Core/SRT_Core_26_MISA_Attractor_Interface.md
   - Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md
-  - _SRT_CONTEXT_ROUTER_CORE25_CORE26_EXTENSION.md
+  - _SRT_CONTEXT_ROUTER.md  # §22 (merged 2026-07-20; was _SRT_CONTEXT_ROUTER_CORE25_CORE26_EXTENSION.md)
   - Glossary/SRT_Glossary_Core25_Core26_Bridge_Terms.md
 created: 2026-04-29
 ---

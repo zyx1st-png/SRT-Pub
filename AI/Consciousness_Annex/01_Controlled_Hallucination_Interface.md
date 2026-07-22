@@ -22,7 +22,7 @@ machine_summary: >
 
 # Controlled Hallucination Interface
 
-> **Extraction note**: This taxonomy was extracted from `AI/Consciousness_Framework_Split/04_Interface_Additions.md` after `Operations/PR_C2_AI_Interface_Extraction_Adjudication.md`.
+> **Extraction note**: This taxonomy was extracted from `AI/Consciousness_Framework_Split/04_Interface_Additions.md` after `Operations/Archive_Records/PR_C2_AI_Interface_Extraction_Adjudication.md`.
 >
 > **Boundary**: The table below is a consciousness-interface / perceptual-regime proxy. It does not imply that controlled hallucination theory is identical to SRT consciousness theory, nor that any perceptual-regime mapping proves AI subjecthood.
 

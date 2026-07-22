@@ -13,8 +13,8 @@ dependency: [SRT-CHANGELOG-2026]
 # SRT 2026 Changelog Split Index
 
 - 原始总文（保留，不删内容）：[`../_SRT_CHANGELOG_2026.md`](../_SRT_CHANGELOG_2026.md)
-- Source owner bytes: `82059`
-- Source owner SHA-256: `74ce8d5b67944fe41a0044613414f75d97c04e8f32b74830fb09f2dc52bea00b`
+- Source owner bytes: `82817`
+- Source owner SHA-256: `fc18426f7fc82c276b6c189f12143a8af65a90c502e694dda67b504e1244a393`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

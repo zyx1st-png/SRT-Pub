@@ -18,8 +18,8 @@ canonical: false
 owner: Neuroscience/SRT_Neuro_07_Evo_Devo.md
 dependency:
   - SRT-NEURO-07
-  - Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md
-  - Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md
+  - Operations/Archive_Records/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md
+  - Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md
 ---
 
 # Neuro 07 Annex: Geometric Regularity Interface
@@ -44,11 +44,11 @@ dependency:
 
 **Extracted in**: PR-D Batch 2c-2 (2026-04-29)
 
-**Adjudication record**: [`../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md`](../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md)
+**Adjudication record**: [`../Operations/Archive_Records/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md`](../Operations/Archive_Records/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md)
 
-**Annotation conversion record**: [`../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md`](../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md)
+**Annotation conversion record**: [`../Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md`](../Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md)
 
-**Extraction record**: [`../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md`](../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md)
+**Extraction record**: [`../Operations/Archive_Records/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md`](../Operations/Archive_Records/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md)
 
 ---
 

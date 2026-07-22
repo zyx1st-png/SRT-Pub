@@ -57,7 +57,7 @@ dependency: [SRT-AI-02]
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/SRT_AI_03_Consciousness_Framework_CompactCore.md`](SRT_AI_03_Consciousness_Framework_CompactCore.md) — compact navigation entry (PH-SS hardened)
 - [`AI/SRT_AI_Consciousness_Evaluation_Rubric.md`](SRT_AI_Consciousness_Evaluation_Rubric.md) — operational S0-S6 rubric
 - [`Philosophy/SRT_Subjecthood_Threshold_Interface.md`](../Philosophy/SRT_Subjecthood_Threshold_Interface.md) — subjecthood threshold interface

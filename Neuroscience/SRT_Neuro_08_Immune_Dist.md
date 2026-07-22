@@ -52,7 +52,7 @@ dependency: [SRT-NEURO-07, SRT-CORE-000]
 
 ## Companion Links
 
-- [`Operations/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/PR_A2_Neuroscience_06_10_Audit.md)
+- [`Operations/Archive_Records/PR_A2_Neuroscience_06_10_Audit.md`](../Operations/Archive_Records/PR_A2_Neuroscience_06_10_Audit.md)
 - [`SRT_Neuro_07_Evo_Devo.md`](SRT_Neuro_07_Evo_Devo.md)
 - [`SRT_Neuro_09_Integ_Eq.md`](SRT_Neuro_09_Integ_Eq.md)
 - [`../Core_Law/SRT_Suffering.md`](../Core_Law/SRT_Suffering.md)

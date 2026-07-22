@@ -14,6 +14,9 @@ canonical: false
 
 # Neuroscience Annex
 
+> **[休眠层声明 · 2026-07-20]** 本层（`Neuroscience_Annex/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+
 This directory contains Neuroscience bridge/interface Annex files.
 
 Annex files do not define SRT Core primitives, do not replace owner-file formal anchors, and do not serve as canonical sources for `L_0/L_1/L_2`, `Psi_f`, `d-value`, `Phi`, or `\hat{G}_\theta`.
@@ -37,13 +40,13 @@ Round 1 is closed as of `2026-04-29`. The active Annex inventory is 07/08/09/10 
 
 ## Operations Records
 
-- [`../Operations/PR_B_Neuro_06_10_Navigation_Record.md`](../Operations/PR_B_Neuro_06_10_Navigation_Record.md)
-- [`../Operations/PR_D0_Neuro_09_PreExtraction_Audit.md`](../Operations/PR_D0_Neuro_09_PreExtraction_Audit.md)
-- [`../Operations/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md`](../Operations/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md)
-- [`../Operations/PR_D_Batch2_GRT_Deduplication_Adjudication.md`](../Operations/PR_D_Batch2_GRT_Deduplication_Adjudication.md)
-- [`../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md`](../Operations/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md)
-- [`../Operations/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md`](../Operations/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md)
-- [`../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md`](../Operations/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md)
-- [`../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md`](../Operations/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md)
-- [`../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md`](../Operations/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md)
-- [`../Operations/Neuroscience_Annex_Round1_Closure_Report.md`](../Operations/Neuroscience_Annex_Round1_Closure_Report.md)
+- [`../Operations/Archive_Records/PR_B_Neuro_06_10_Navigation_Record.md`](../Operations/Archive_Records/PR_B_Neuro_06_10_Navigation_Record.md)
+- [`../Operations/Archive_Records/PR_D0_Neuro_09_PreExtraction_Audit.md`](../Operations/Archive_Records/PR_D0_Neuro_09_PreExtraction_Audit.md)
+- [`../Operations/Archive_Records/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md`](../Operations/Archive_Records/PR_D0_5_Neuro_09_Absorption_Table_Adjudication.md)
+- [`../Operations/Archive_Records/PR_D_Batch2_GRT_Deduplication_Adjudication.md`](../Operations/Archive_Records/PR_D_Batch2_GRT_Deduplication_Adjudication.md)
+- [`../Operations/Archive_Records/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md`](../Operations/Archive_Records/PR_D_Batch2a_Neuro_06_Field_Effects_Extraction_Record.md)
+- [`../Operations/Archive_Records/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md`](../Operations/Archive_Records/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md)
+- [`../Operations/Archive_Records/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md`](../Operations/Archive_Records/PR_D0_6_Neuro_07_Geometric_Regularity_Adjudication.md)
+- [`../Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md`](../Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md)
+- [`../Operations/Archive_Records/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md`](../Operations/Archive_Records/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md)
+- [`../Operations/Archive_Records/Neuroscience_Annex_Round1_Closure_Report.md`](../Operations/Archive_Records/Neuroscience_Annex_Round1_Closure_Report.md)

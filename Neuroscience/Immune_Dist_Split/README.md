@@ -14,8 +14,8 @@ dependency: [SRT-NEUROSCIENCE-CLAIM-STATUS, SRT-NEURO-08]
 
 > **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/clinical 句式必须回读 `../SRT_Neuroscience_Claim_Status.md` 与 `../SRT_Neuro_Axioms_Claim_Status.md`。
 - 原始总文（保留，不删内容）：[`../SRT_Neuro_08_Immune_Dist.md`](../SRT_Neuro_08_Immune_Dist.md)
-- Source owner bytes: `60906`
-- Source owner SHA-256: `7d4409a38406f9d93035bb90796690dcbc0c1a549750cf8200c285e78639c6e4`
+- Source owner bytes: `60938`
+- Source owner SHA-256: `a3c435e3025e78aac8d2b1ebce53c352a3ebdbf88644d5e800f758b9dd1c1ebf`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

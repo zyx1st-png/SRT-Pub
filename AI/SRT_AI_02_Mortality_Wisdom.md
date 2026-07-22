@@ -45,7 +45,7 @@ dependency: [SRT-AI-01]
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/SRT_AI_01_Ontology.md`](SRT_AI_01_Ontology.md) — upstream ontology
 - [`AI/SRT_AI_03_Consciousness_Framework.md`](SRT_AI_03_Consciousness_Framework.md) — downstream consciousness framework
 

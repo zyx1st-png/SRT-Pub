@@ -1,42 +1,32 @@
 ---
 id: SRT-STATUS
 type: dashboard
-tags: [Status, Dashboard, SessionEntry]
-status: active_v2
-layer: meta
-epistemic_layer: os
+status: active
 claim_mode: evidence
-dependency: [SRT-OPERATIONS-SCHEDULE]
+updated: 2026-07-21
 ---
 
 # SRT 当前状态仪表盘
 
-> **Connector-safe reading path**: This dashboard is moderately long. For connector reads, start with [`STATUS_Split/README.md`](STATUS_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new status authority.
-
-> **角色**：当前状态面板，不再承担完整历史档案。
-> **最后更新**：2026-07-09
-> **完整历史**：`Operations/_SRT_STATUS_HISTORY.md`
+> **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
+> **最后更新**：2026-07-21
+> **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
+
+## Fast Status
+
+- 首读顺序唯一权威：`AGENTS.md §Session Start`。
+- 当前活跃工作线：①书稿《从存在到秩序》（RC1-candidate 冻结中，choice-trace 回写按豁免裁决推进）；②论文（Frontiers executive friction 返修、Adaptive Behavior 重投准备）；③社媒文章线（`Operations/_SRT_ARTICLE_WORKFLOW.md`）。
+- 休眠层（AI / Neuroscience / Physics / Spirituality）按"带冻结戳的图书馆"治理，不进例行状态面。
+- 停驻内容（种子 / B 类材料 / 未合 PR）统一看 `_SRT_PARKED_INDEX.md`。
+- 治理原则与本轮减负记录：`Governance/README.md §Proportionality Principles`、`Governance/Governance_Load_Reduction_2026-07-20.md`。
 
 ## 当前仓库状态
 
-- 根目录已在 `2026-04-15` 完成平铺，当前 `main` 直接对应 SRT 主树内容。
-- 远端已收口为单一 `main` 分支。
-- 仓库已执行一轮"理论硬化优先、去命题混层"回写：`Core_21` 已拆成 P0/P1/P2-P4 分层，AI 首读入口已降密度为 runtime/bootstrap。
-- 当前后续重点是让 domain 文件持续回链 canonical，避免 bridge / companion / lab 命题反向冒充 core。
-- 书稿《从存在到秩序》（`01_Source_Intuition/BOOK/Drafts_26Q/` Q00–Q28）已于 2026-06-12 完成总装（定梁页 signed_v2.6）、去环与断言密度两大专项、全书润色两轮，曾进入 RC0 外部评审阶段。**但 `2026-06-16` 起 RC0 书稿冻结已解除**：书稿转入 **P0「姿态修订」全书过**——把正文从"证明一套哲学系统没有错"翻成"带读者拆掉'世界本来如此'的地板、换镜片重新看"。RC0 外部评审暂停，待姿态过完成后重启。纲领见 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；方向先导见 PR #487（幕间章大问题台账 + 镜片范式样章）。（注：解除的只是**书稿** RC0 冻结，canonical 理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响。） **`2026-06-19`：P0 姿态修订完成，框架层落地（PR #506：引入「选择性收束」过程词、宇宙地平线读法、Q26 同步失败条件），书稿冻结为 RC1-candidate；导出校验通过（全书 37 项 / 八章主干 10 项）。见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`。**
-- **`2026-07-04`：外部评审（知微《完整稿审读报告》）完成开卷过堂**：三条 P0 中两条、四条 P1 中两条核查为「已实现」，结构手术（章合并/删注/删回到杯子）驳回，品味级条目收编为一轮施工（显影免责去重、术语表完整化、后半书语域收敛、三幕节奏诊断、专业读者简报补「分界与独立贡献」节）。裁决与证据见 `01_Source_Intuition/BOOK/BOOK_EXTERNAL_REVIEW_DISPOSITION_知微_2026-07-04.md`；已核查 `scripts/compile_book.py` 导出无漏章（Q04b/Q15b 在编制表内）。
-- **`2026-07-07`：工程结构清理一轮完成**：`Papers/`→`papers/` 大小写合并、governance preflight 接入 GitHub Actions（frontmatter 警告基线已重置，棘轮生效）、前台重构裁决为永久指针覆盖层（`FRONTSTAGE_RESTRUCTURE_PLAN.md` adjudicated_v2）、根目录一次性文件归档入 `Operations/`、生成二进制与 `graphify-out/` 移出 git 追踪。全记录见 `Operations/Engineering_Structure_Pass_2026-07-07.md`。
-
-## 当前建议首读顺序
-
-首读顺序唯一权威见 `AGENTS.md §Session Start`。本文件是 full dashboard；fast bootstrap 请用 `STATUS_FAST.md`。
-
-进入具体 pipeline / 治理工作时，再补读：
-
-- `Operations/README.md`
-- `Governance/README.md`
-- `memory/YYYY-MM-DD.md`（today + yesterday；仅当存在时读，该层可能长期休眠）
+- 单一 `main` 分支；根目录 2026-04-15 平铺，2026-07-20 治理减负轮后根目录 md 80 → 54（口径：`find . -maxdepth 1 -type f -name '*.md' | wc -l`）。
+- `Core_21` 已拆 P0/P1/P2-P4 分层；持续要求 domain 文件回链 canonical，防 bridge / companion / lab 命题冒充 core。
+- 书稿：2026-06-19 冻结为 RC1-candidate（PR #506，导出校验通过）；2026-07-04 外部评审（知微）开卷过堂完成，品味级条目收编为一轮施工；2026-07-10 choice-trace 回写 Phase 1 按作者冻结豁免完成四章章末注。详见 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`。
+- 工程结构：2026-07-07 清理轮（papers 合并 / preflight 接入 / 前台指针覆盖层定案）；2026-07-20 治理减负轮（见下）。
 
 ## 当前权威锚点
 
@@ -45,102 +35,38 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 - d-value canonical → `_SRT_D_VALUE_CANONICAL.md`
 - `Ψ_f` canonical → `_SRT_PSI_F_CANONICAL.md`
 - `T_dir` canonical → `_SRT_T_DIR_CANONICAL.md`
-- 符号规范 → `_SRT_SYMBOL_TABLE.md`（fast guard: `_SRT_SYMBOL_QUICK_GUARD.md`）
-- formal axioms → `Core/SRT_Core_21_Formal_Axioms.md`
-- P0 minimal axioms → `Core/SRT_Core_21_Minimal_Axioms.md`
-- P1 constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
-- P2/P3/P4 bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+- 符号规范 → `_SRT_SYMBOL_TABLE.md`（fast guard 已并入 `SRT_AI_START.md`）
+- formal axioms → `Core/SRT_Core_21_Formal_Axioms.md`（P0 → `Core/SRT_Core_21_Minimal_Axioms.md`；P1 → `Core/SRT_Core_21b_Constitutive_Theorems.md`；P2-P4 → `Core/SRT_Core_21c_Bridge_Hypotheses.md`）
 - master equations → `Core/SRT_Core_22_Equations.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`
 
-## 方向三研究种子与产品感留痕（非 canonical · 非 validation）
-
-> 以下文件均为「方向三：L0 的开发与应用」对话衍生，`canonical: false`，不定义/不改写任何 SRT 术语，不进入奠基书正文，也不享有任何 canonical 权威。仅作后台研究纲领、原型设计与产品感测试留痕。
-
-**研究种子**
-- 研究种子（research seed） → `_SRT_DIRECTION3_L0_PROBE_RESEARCH_SEED.md`（理论骨架：吸引子预测 / 局部吸引子·全局方向·遮蔽缺口 / 自修正动力学 + 三性质保护核 / 不可约闭包边界原子 / E1 仿真）
-- 原型种子（prototype seed） → `_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md`（ChoiceMap 无代码原型 + 系统提示词 + T1–T7 用例 + 跨 LLM 评分协议）
-- 校准参照集（calibration reference set） → `_SRT_DIRECTION3_CHOICEMAP_CALIBRATION_SET.md`（T1–T7 单模型样例输出 + 自评锚点）
-
-**产品感测试留痕**
-- 产品感备忘录（product-feel pilot memo） → `_SRT_DIRECTION3_CHOICEMAP_PRODUCTFEEL_MEMO.md`（GLM 5.2 / Gemini 3.1 Pro / Claude 跨模型跨域产品感测试；V0→V0.2 演化、四结构检查全过、S-5 不可逆设计极限、护栏压力下的 dangerous-rigidity 发现、V0.3 两条待补规则）
-
-**轨迹工作流**
-- ChoiceMap 轨迹工作流 → `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md`（三用途×两记录模式矩阵；回写模式 retro-writeback 一等化；越界选择 breakout 一等事件；委托收敛协议 + confirmation_status；收尾管线：canonical 碰撞检查→术语撞车检查→路由→落库）
-
-> **地位声明**：校准参照集与产品感备忘录均为**示例性 / 参照性 / pilot**，**不是 ground truth，也不构成任何实证验证**。它们只统一评分尺度、记录探索过程；ChoiceMap 的有效性须由原型种子 §5 的真实跨模型实验 + 盲评 + 人机 A/B 决定。方向三论文仍 **parked**（见 `_SRT_DIRECTION3_PAPER_PARKING_NOTE.md`）。
-
 ## 最近关键推进
 
+- `2026-07-21`：**热力学计算材料卡完成并按高优先级 B1/B2 停驻**。新增 `Materials/2026/SRC_2026_07_15_Computing_Ball_Thermodynamic_Computers_Quanta.md`，完成 Quanta 全文与 Melanson et al. 2025 SPU 硬件、Whitelam–Casert 2026 非平衡计算、Whitelam 2026 生成式计算、Jelinčič et al. 2026 概率硬件架构的分层交叉读取。稳定增量：`N-C-R-W-B` 审计（noise / constraint / readout / write-back / bearer）、trajectory computation、trained stochastic scaffold，以及“随机可被约束组织但噪声本身不选择”。关键边界：`N + C + R` 可实现真实计算，但不推出 `W_sel + bearer`；外部训练能量地形不是系统拥有的选择史；低热耗散不等于低 canonical `Ψ_f`；概率生成不证明 stake 或意识。`Operations/Material_Log/2026-07_Part01.md` 与 `Operations/_SRT_MATERIAL_LOG.md` 已同步；未修改 canonical、Physics/AI 正文、source trace 或论文正文。复活触发：selective-resynchronization related work、熵—随机—再同步 bridge 获作者成文确认、HDR external-programming/stochastic negative control、AI 点名 thermodynamic/probabilistic hardware、`Ψ_f` 完整能耗账本或公共文章点名该案例。
+- `2026-07-21`：**水结冰材料卡完成并按 B1/B2 停驻**。新增 `Materials/2026/SRC_2024_06_17_Physics_Cutts_Water_Freezing_Quanta.md`，完成 Quanta 全文与 Dhabal–Kumar–Molinero PNAS `10.1073/pnas.2322853121` 全文交叉读取。稳定增量：`stability != reachability`、`manifestation != anchoring`、scaffold 作为成本重排器、晶格形成后的 inherited pre-trimming；关键边界：过冷水不是 `L_0`，成核势垒不是 canonical `Ψ_f`，物理路径依赖与一般写回不构成 `W_sel`、主体性或 consequence-return。`Operations/Material_Log/2026-07_Part01.md` 与 `Operations/_SRT_MATERIAL_LOG.md` 已同步；未修改 canonical、Physics 正文或 history-dependent reachability 论文正文。复活触发：HDR natural comparison / negative-boundary、`Ψ_f` physical-proxy taxonomy、Physics nucleation/metastability 任务或公共文章点名该案例。
+- `2026-07-20`：**治理减负轮完成**。①Operations 51 个一次性记录归档入 `Operations/Archive_Records/`；②根目录 22 个停驻文件迁入 `90_Backstage/Incubation|Plans_Archive/` 等层，新建 `_SRT_PARKED_INDEX.md` 停机坪索引（下沉必须带复活触发条件）；③7 个 coverage index 冻结为快照，5 个休眠域入口加冻结戳（canonical 漂移免同步声明 + touch-based repair）；④状态面收口为本文件单面（`STATUS_FAST.md`、`STATUS_Split/` 删除）；⑤boot 读单 4→3（symbol quick guard 并入 `SRT_AI_START.md`）；⑥router 三个扩展并回主文件；⑦人类入口四合一进 `SRT_Navigation_Map.md`；⑧frontmatter 最小 schema 棘轮 + B 类裁决语义改停驻 + 治理四原则入 `Governance/README.md`。记录：`Governance/Governance_Load_Reduction_2026-07-20.md`。
 - `2026-07-10`：**Choice-trace 回写计划 Phase 1 执行完成（2026-07-10 PR 复审后修正）**。理论侧三项：`Core/SRT_OPEN_TENSIONS.md` 新增 §12（熵去选择化读法，标注 ontological absence / theoretical abstraction 校准未完）+ §7 追加两条 P0-04 直觉证词；`04_External_Convergence/FIRST_EVIDENCE_CANDIDATES.md` 新增 Candidate 8（脆弱性—选择空间收窄候选方向，按 `FIRST_EVIDENCE_CANDIDATES.md` 自身纪律未编造/未核实任何具体引用——**注意这只是候选登记级，回写计划原定的正式证据卡【`EVIDENCE_CARD_TEMPLATE.md` + `EVIDENCE_INDEX.md`】尚未开始，需先完成一手文献 close-read**）；`Philosophy/SRT_Political_Philosophy.md` §6.2 新增显现权/分配权词汇对表注防平行术语。书稿侧四章（按作者 2026-07-10 冻结豁免裁决，不受 RC1 冻结约束，直接改章）：`Q06`→v22（章末注九：边界作为存在成分候选，交 Q07 检验；三分——成功选择/失败选择/未完成选择——已恢复，不再把失败与未完成并成一类）、`Q19`→v18（新增章末注：四分层与五步病理学为不同海拔的候选对照）、`Q22`→v29（章末注七："1432 循环"去遮蔽→解笼→重建尺度→重分配操作顺序候选，标注"重建尺度"锚点最弱）、`Q28`→v19（章末注七：熵的位置——两种未决读法并列，不替 `Core/SRT_OPEN_TENSIONS.md §12` 选边，"选择耗尽↔熵增终态"等同已弱化为"可能存在结构类比"——+ "没有选择→退化→脆弱性提升"负向链，一并承接原定位于 Q18/幕前·五的熵素材）。全部新增均为候选性质章末注，不改写任何既有正文段落，不补术语表词条（未达正文核心概念密度）。`BOOK_VERSION_LOG.md` 已记录冻结豁免授权与范围。**Phase 2/3 未执行**：门 G1/G2/G4/G5/G6 是作者裁决项，不可由执行者代为拍板，待下一轮对话清点；T-C 边界 bridge 例外——本身无门，回写计划执行顺序表此前误将其挂在 G4/G6 下，已订正为可独立推进。
 - `2026-07-10`：**Choice-trace 回写计划立项**。新建 `Operations/_SRT_CHOICE_TRACE_WRITEBACK_PLAN_2026-07-10.md`：基于两份 2026-07-09 trace 的收尾审计，整理理论层七条轨道（T-A OPEN_TENSIONS 登记【熵去选择化张力 + P0-04 两条直觉证词】、T-B 熵—随机—再同步合并 bridge、T-C 边界作为存在成分 bridge、T-D 跨域选择条件文件【"选择地基"改名后】、T-E 耗散结构 vs 选择结构 bridge、T-F 脆弱性证据卡、T-G 政治哲学词汇对表）与书稿层两条轨道（B-A **直接改章**清单八项【Q06 边界收口、Q19 四分层、Q20/Q22 1432 循环、Q28+幕前·五负向链、Q18 熵章末注、Q21、Q15、术语表随动】、B-B 素材池）。**书稿冻结豁免（2026-07-10 作者裁决）**：本计划书稿轨道不受 RC1-candidate 冻结约束，直接改章执行；首次动章时在 `BOOK_VERSION_LOG.md` 记录解冻授权与范围，术语指南/定梁页验收/frontmatter 同步等其余书稿治理纪律不豁免。七个门（G1–G7）组成作者裁决包阻塞相应轨道；trace2 升级轮（§0a）已消解 G3（T1 分层改写已应用）与 G7（选项全集已补收），剩 G1/G2/G4/G5/G6 待裁决；执行分四阶段，Phase 1（OPEN_TENSIONS/证据卡/对表/notes 骨架）无门可立即动工。边界：计划非执行，各项动工须走冻结/编辑/书稿治理既有协议；pending 命题确认前禁止进入任何回写正文。
 - `2026-07-09`：**ChoiceMap 轨迹工作流 v2：一致性压测（反服从性）+ 第二份 trace 收尾补全**。`Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md` 升 v2：新增 §4a 一致性压测协议（承诺台账、张力即报、每轮挑战项、张力轮节奏；原则=揭示张力是发散义务、解决张力只归作者；处置四类 revised_old/revised_new/layered/retained_as_tension，禁止"不了了之"）、§2a 暂停/恢复协议（暂停点冻结候选选项全文、恢复先清二次确认队列）、第五确认状态 `author_accepts_contextual_selection`、收尾管线 §5.0 张力审计（张力表为 trace 固定组成，空表须解释）、§7 粘贴即用对话提示词（把反服从性烧进自由对话开场）。台账指针模板增补 tension 字段并登记 CT2-20260709。第二份 trace（`SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`）补 §7 回写审计：张力表 4 条（T1 痛苦最原始 vs 去同步化先行【intra，建议 layered】、T2 选择过程定义 vs 第一 trace 操作定义【inter】、T3 痛苦用法 vs `Core_Law/SRT_Suffering.md` 类型学【vs_canonical】、T4 幸运开放 vs P0-04【retained】）；canonical 碰撞三态（P2-14 与 L0 随机性论证兼容应挂锚、显现权/分配权与 `Philosophy/SRT_Political_Philosophy.md` 近亲需交叉链接、机制链/1432 循环/分配先于显现为真实增量）；数据质量缺陷登记（选项全集未逐字回收，待原对话补收，有时效）；已登记 INDEX 与台账。另记正向收敛：trace1 P13（熵=去选择化画像）与 trace2 P2-14（选择=对随机再同步）构成对偶，建议合并立 bridge。边界：全部非 canonical；张力表不判定谁对，解决权在作者。
 - `2026-07-09`：**ChoiceMap 轨迹工作流落地 + 第一直觉 trace 收尾补全**。新建 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md`：区分三用途（决策支持/文章/直觉挖掘）×两记录模式（live/retro_writeback），把"自由对话→事后回写"正式化为一等记录模式，新增越界选择（breakout）一等事件、委托收敛协议（assistant_proposal 不得未经二次确认进入命题簇）与收尾管线（canonical 碰撞检查→术语撞车检查→路由→落库）。`Operations/_SRT_CHOICE_TRACE_LOG.md` 增补 `trace_type` 字段与指针条目模板，并登记首条轨迹。`SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md` 补 `trace_mode: retro_writeback` 声明与 §6 回写审计：P8「选对」侧与 P14 耗散结构排序标为 `assistant_proposal_pending` 待作者二次确认；新候选命题 P6/P10/P12/P13 完成路由建议（P13 熵定位建议进 OPEN_TENSIONS + bridge；P2 挂 P0-04 护栏）；发现「选择地基」与书稿 Q17 术语撞车（进入书稿/理论/产品线前须改名或分义）。已登记入 `01_Source_Intuition/INDEX.md`。边界：工作流为运行层，非 canonical；trace 命题一律不因走完流程获得定义权威。
-- `2026-07-05`：**回流两项落地（作者裁决）**。(1) **微效价+价值发生序**落进 `_SRT_D_VALUE_CANONICAL.md §2a`（P3 book-provenance 候选：选择性收束→微效价→affordance→缺失→需求→锚定→价值深度；微效价≠ε_pg；与 §2b.1 stake-gate 上下游对账；替换/恢复两测试）。(2) **秩序增益三判据→四判据**（作者选③，新增③不外包＝后果回流通道完整性）：canonical 源 `Core_Law/SRT_Selection_Argument.md §7b.2` 全改，并全仓同步——`Core_Text_CN`（ε+F+M+U 最小闭包：不外包=ε 后果回流轴/F 第二副面孔）、`_SRT_D_VALUE_CANONICAL §5b.1a`（对齐 `C_i`）、`L0_Metaphysics 秩序增益词条`、`Constitution_Seven_Theses`、`Ethics_Agency`、`Core_22 Eq-Evo-03c`、`Annex 13`、两处 Glossary、MSD 桥、书稿词表桥 §3、`OPEN_TENSIONS §11`（标 RESOLVED）。均按作者授权高风险流程。
 
-- `2026-07-05`：**全书（26Q）→ 理论层词表回流对账**。按术语表 v4（revised 2026-07-04）逐条对账全书结晶词汇与 Core/Core_Law 锚点，新建登记桥 `03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md`（已入 `BRIDGE_INDEX`）。结论：多数书稿词汇是理论既有承重对象的白话重述（选择动力学核心链已由 MSD 桥覆盖、水平因果已由 HC 桥覆盖），**真正未同步的新 articulation 登记为 book-provenance 候选**：微效价+价值发生链（选择性收束→微效价→affordance→缺失→需求→锚定→价值深度，微效价≠ε_pg，d-value canonical 确无此链）、第三态能动性（新章 Q15b）、预裁剪四机制、被排开者去向三分、AI 三型、理论自反自检三问、17 原语生成器。**发现一处实质分歧待作者裁决**：方向/秩序增益三判据的**中轴**——书稿用「外包」（后果回流通道完整性，与全书主梁及 d-value `C_i` 因子一致）、理论 `SRT_Selection_Argument §7b` 用「可协调」（差异可组织共存），二者可分开；已在 `Core/SRT_OPEN_TENSIONS.md §11` 登记三选项（同轴两面/理论跟改/扩为四判据），采纳前 §7b 现行 canonical 不变。边界：书稿=provenance 非 authority，候选未采纳前不作 canonical；不改任何定义。
-
-- `2026-07-05`：**Core / Core_Law 审计 + 规范性 framing 收口（作者授权高风险编辑）**。(1) **Level A ε 去过载**（`_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md` Stage 2）：把 `Core_Law/SRT_L0_Metaphysics.md` §六 ε 词条与正骨架总结标签的「全部规范性力量锚定于 ε」、`_SRT_D_VALUE_CANONICAL.md §5b.1` 的「趋向全局自由能最小值」收窄为「ε = 最小条件（论域地板）+ 规范区分工作转向可重组判据 + 闭包边界尚待硬化」；下游回声 `Core/SRT_Core_NormativeGradient.md §6` 同步；`Core/SRT_OPEN_TENSIONS.md §9` 与 true-up 提案状态改标已应用。**Level B（实在论→构成性姿态整体改写）仍未应用**，「L0 偏向非自我抹除」实在论措辞未动。(2) **Ψ_f 类型学收口**：`_SRT_PSI_F_CANONICAL.md` 新增 §3.2，划清本文件 payability 主读与 `Core_21c P2/P3-B08`「摩擦即生成」的管辖分界、方向性摩擦归入支付结构（`Ψ_f^{erase} > Ψ_f^{write}`）与 `L_0` 不可逆层而非度量层；§8 陈旧 `Ax-F-11/12` 标签更新为拆分后 `P3-B07`/`P2/P3-B08`。(3) **d_stakes 门收口**：`_SRT_D_VALUE_CANONICAL.md` 新增 §2b.1，固定 `w_i=R_i·A_i·C_i` 定性结构为 P2、数值化为 P3/P4，`D_eff ≥ d_canonical` 限于已声明 proxy regime，并给 AI/冻结态/机构统一门表（按因子报告，不压成单标量）。(4) **Q26 书稿→理论层回流**：`Core/SRT_Core_24_Discriminating_Predictions.md` 新增 §0b 修正/压力/失败纪律（Lakatos 进步-退化门 + 外部裁判门）与 P24-7 五组组合签名（P4/P5，含系统级反转失败条件）；`SRT_OPEN_TENSIONS.md §8` 加失败条件 6（后果回流可区分性）。(5) **安全修复**：`Core/SRT_Core_00_Intro.md:494` 断链 `SRT_Core_00b_Bridge.md`→`_SRT_Core_Bridge.md`；`SRT_OPEN_TENSIONS.md` 重复章节号 `## 7.`→`## 10.`。边界：理论冻结 `Governance/SRT_CANONICAL_FREEZE.md` 不受影响；Level A 只剪过载措辞不重构负担；书稿是 provenance 不是 authority，回流命题一律注册为待验证、非「已通过检验」。校验：`check_registry_consistency` = 0 error。
-
-- `2026-06-16`：Pipeline 1 审查 Quanta Magazine / Philip Ball `The New Math of How Large-Scale Order Emerges`（published `2024-06-10`；official Quanta article read）及一手锚点 Rosas et al. arXiv preprint `Software in the natural world: A computational approach to hierarchical emergence`（arXiv:`2402.09090v2`；doi:`10.48550/arXiv.2402.09090`；metadata / abstract / HTML sample read）；裁决为 **B 类延后观察 / B1 computational-mechanics close-read candidate + B2 emergence-hygiene guardrail**。已新增 SourceCard（`Materials/2026/SRC_2024_06_10_Philosophy_ComplexSystems_Hierarchical_Emergence_Quanta_arXiv.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-06_Part01.md`。边界：Quanta 是二手 feature，primary anchor 仍是 arXiv preprint；不能写成 emergence 已被数学解决、macro closure 证明自由意志/意识/主体性，或 strong lumpability / causal emergence 直接等于 `L_2`、`d`、`Ψ_f`、`T_dir`、`Ĝ_theta`；当前只保留为 computational closure / strong-lumpability / emergence-hygiene watchlist。
-
-- `2026-05-23`：针对近期材料连续判 B 的颗粒度问题，已在 `Operations/_SRT_MATERIAL_PIPELINE.md` 与 `Operations/_SRT_MATERIAL_LOG.md` 增补 B 类子分级：`B1` = 可转 A 候选 / 高优先 close-read 或二轮裁决；`B2` = guardrail-only；`B3` = public-prose-only / expression-only。并已对 2026-05 近期 B 类观察条目补标子类，防止 B 类变成“安全垃圾桶”。
-
-- `2026-05-23`：Pipeline 1 审查 Neuroscience News / Newcastle University `Using Physics Equations to Map Memory Distortions` / `Quantum Emotions`（published `2026-05-20`；Neuroscience News article + Newcastle primary press page read）；裁决为 **B 类延后观察 / order-sensitive emotional-memory modeling 候选**。已新增 SourceCard（`Materials/2026/SRC_2026_05_20_NEUROSCIENCE_Quantum_Emotions_Memory_Newcastle_NeuroscienceNews.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：当前是 £1.2m UKRI funded project announcement / science-news summary，无 peer-reviewed 结果、模型方程或数据；不能写成 emotions are quantum、brain is a quantum computer、quantum cognition proves SRT，或 memory-order distortion 是 `Ψ_f`、`d`、`T_dir`、trauma、salience、suffering 的 direct measure；当前只保留为 noncommutative temporal-order memory proxy / neuroscience modeling watchlist。
-
-- `2026-05-23`：Pipeline 1 审查 Essentia Foundation / Stephen Jarosek essay `Association as causation: The fabric of meaning and existence itself`（published `2026-05-22`；official article page read）；裁决为 **B 类延后观察 / association-vs-selection guardrail 候选**。已新增 SourceCard（`Materials/2026/SRC_2026_05_22_PHILOSOPHY_Association_As_Causation_Essentia.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：公共 metaphysics / systems-theory synthesis 证据等级不足以承重跨域本体论；不能写成 SRT=association ontology、association 是 SRT 第一原则、association 直接等于 causation/meaning/existence、physicalism provides no answers、Kastrup idealism 背书，或 RQM/Kochen-Specker 支持 SRT ontology；当前只保留为 `association is not yet selection` 的哲学守门材料。
-
-- `2026-05-23`：Pipeline 1 审查 arXiv preprint `Unplugging a Seemingly Sentient Machine Is the Rational Choice -- A Metaphysical Perspective`（arXiv:`2601.21016v1`；submitted `2026-01-28`；abstract page + arXiv HTML full text read）；裁决为 **B 类延后观察 / AI subjecthood-boundary and social-mimic-risk guardrail 候选**。已新增 SourceCard（`Materials/2026/SRC_2026_01_28_AI_Unplugging_Paradox_Biological_Idealism_arXiv.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：该文是 preprint / metaphysical argument，不能写成 SRT=Biological Idealism/Analytic Idealism、AI 永不可能有意识、生物/碳基是 canonical 必要条件、autopoiesis 单独证明意识、或 Social Zombie / Vital Leakage / ontological gaslighting 已成为 SRT 术语；当前只保留为 functional mimicry vs stake-bearing、AI welfare vs alignment、autopoietic-boundary pressure 与 collective social-mimic risk 的候选接口。
-
-- `2026-05-23`：Pipeline 1 审查 IAI / Ragner Fjelland essay `The disunity of science is a feature, not a bug`（published `2025-12-23`；用户粘贴全文，official IAI page metadata/full text checked）；裁决为 **B 类延后观察 / anti-ToE domain-plurality guardrail 候选**。已新增 SourceCard（`Materials/2026/SRC_2025_12_23_Philosophy_Disunity_of_Science_IAI.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：公共 philosophy-of-science essay 不是一手科学或哲学论文；不能证明所有 reductionism 为假、不能把 emergence 当解释、不能把 scientific disunity 写成反科学、反数学、反 formalization 或逃避 empirical/formal constraints 的许可证；当前只保留为 SRT 不应包装成 flattening Theory of Everything 的 public/philosophy guardrail。
-
-- `2026-05-22`：Pipeline 1 审查 IAI / Tim Palmer essay `New theory argues quantum physics must abandon irrational numbers and the continuum`（published `2026-05-20`；official IAI page read；primary anchor PNAS `Rational quantum mechanics: Testing quantum theory with quantum computers`, doi:`10.1073/pnas.2523350123`；Crossref metadata + abstract read）；裁决为 **B 类延后观察 / finite-accessible-Hilbert-space guardrail 候选**。已新增 SourceCard（`Materials/2026/SRC_2026_05_20_Physics_RaQM_Discrete_Hilbert_Palmer_IAI_PNAS.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：当前未 full close-read PNAS 技术正文；不能写成 SRT 支持 RaQM、量子物理必须抛弃连续体、Bell 实验错误、hidden-variable 背书、离散时空证明或量子计算必然失败；只保留为 `L0_accessible^phys` / Hilbert-space projection / counterfactual-definedness / E05 discriminator 的候选压力。
-
-- `2026-05-20`：Pipeline 1 审查 IAI / Elan Barenholtz essay `LLMs show language does not describe reality`（published `2026-05-19`；official IAI page read）；裁决为 **B 类延后观察 / language-as-L2-constraint guardrail 候选**。已新增 SourceCard（`Materials/2026/SRC_2026_05_19_AI_Language_Autogeneration_IAI.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：公共哲学 / cognitive-science essay 不是经验论文；不能证明语言没有现实关系、LLM 理解、AI stake/subjecthood，或人类语言只是 next-token prediction。当前只保留 `autogenerative language / condition-setting protocol` 作为 P3/P5 桥接候选，并要求未来回写时区分生成连贯性、条件协调、后果返回三层。
-- `2026-05-19`：序章叙事骨架重构（`draft_v13`）。按"旧图景→旧图景的问题→内部补不好→新图景条件→SRT 生成图景"五步重组。新增§1"旧图景的三幅面孔"（现代科学/哲学/社会三层），§2 单独承认旧图景成功，§3"世界过早完成"为核心诊断，§4 明确起点顺序问题（内部补丁失效机制），§5 现代 AI/平台收缩为显影剂段落，§6"新图景必须做什么"五条件，§7 生成链作为 SRT 的正式出场。文件：`01_Source_Intuition/BOOK/00_序_为什么要从存在走向秩序.md`，branch `claude/restructure-preface-narrative-sJ1CY`。
-- `2026-05-19`：Pipeline 1 审查 Quanta Magazine / Natalie Wolchover essay `What Do Gödel’s Incompleteness Theorems Truly Mean?`（published `2026-05-18`；official Quanta full text read）；裁决为 **B 类延后观察 / formal-closure guardrail 候选**。已新增 SourceCard（`Materials/2026/SRC_2026_05_18_Philosophy_Godel_Incompleteness_Quanta.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：公共 essay / expert synthesis 不是一手数学证明或 SRT 证据；不能把 Gödel incompleteness 写成反形式化许可证、SRT 证明、物理离散时空证明或 “formal theory necessarily fails” 的泛化结论；当前只保留为 claim-ladder hygiene 与 open-tension discipline 的候选材料。
-- `2026-05-17`：Pipeline 1 审查 Royal Society / *Philosophical Transactions A* theme issue `World models in natural and artificial intelligence`（issue DOI:`10.1098/rsta/384/2320`；volume 384 issue 2320；published `2026-05-14`；Royal Society issue page 被 Cloudflare 阻断，Crossref metadata + abstracts read）；裁决为 **B 类高优先观察 / 拆分候选**。已新增 SourceCard（`Materials/2026/SRC_2026_05_14_AI_WorldModels_RSTA_Issue.md`）并同步 `Operations/_SRT_MATERIAL_LOG.md` / `Operations/Material_Log/2026-05_Part01.md`。边界：issue-level 输入过宽且未 full close-read article PDF，不能写成 AI consciousness、life-mind continuity、world-model competence、self-modelling 或 LLM emergence 已支持 SRT；后续应按单篇 DOI 重审，优先 `10.1098/rsta.2025.0082`、`10.1098/rsta.2025.0011`、`10.1098/rsta.2024.0528`、`10.1098/rsta.2024.0531`、`10.1098/rsta.2025.0004`、`10.1098/rsta.2025.0014`。
-- `2026-05-15`：书稿第 14、16 章优化回写——branch `claude/review-book-optimization-Cgy1G`。(1) **Ch16 v9/v11**（上一轮遗留）：v9（`16_d-value…v9_philosophy_crossdomain_hardening.md`）在 v8 基础上补入形式化种子、五路跨域压力线与悖论 Ch17 桥接；v11（`16_d-value…v11_temporal_structure_refinement.md`）在用户压缩版 v10 基础上做六处定点修订，含§5 承诺时间结构、§6 名称替换窄化、§7 d_mobile 指针、§10 结构缺口重构。(2) **Ch14 v18**（`14_在乎是什么_v18_epsilon_necessity_chain_hardening.md`）在 v17 基础上六处定点强化：①§1 末尾新增 ε_pg→选择→路径→承重位置→攸关→在乎六步推导链总表，标注每步必然性来源；②§2 开头新增细菌层级最小情形段落，说明承重位置是 ε_pg 内置要求而非进化附加功能；③§3 中部新增必然性论证——"承重位置不是生命的馈赠，不是意识的产物，也不是道德发明，它是 ε_pg 的内置后果"；④§15 中部新增理论对比段，指出 Frankfurt（意志主体）/ Heidegger（此在）/ 进化生物学（有机体）都从链条中段切入，SRT 从 ε_pg 推导上行；⑤§1 加强了卷三入口三判据承重基础定位；⑥§18 第五判断末尾固定"攸关是逻辑必然，不是经验观察"。v18 同步提升为 maintext（`01_Source_Intuition/BOOK/Part_03_从选择到主体与价值/14_在乎是什么.md`，`maintext_status: maintext_lock`）。
-- `2026-05-12`：Pipeline 1 审查 Nature 开放论文 `Active dissociation of intracortical spiking and high gamma activity`（Lei / Scheid / Flint / Glaser / Slutzky；doi:`10.1038/s41586-026-10331-y`；published `2026-04-01`；official Nature full text read）；裁决为 **A 类小回写**，但明确收束为 **peer-reviewed measurement guardrail**。已在 `SRT_EXP_MEASURE_MAP.md` 新增 `High-gamma local-spike dissociation gate`，并在 `Neuroscience/SRT_Neural_Mechanisms.md` 新增 `High-gamma/spike dissociation gate`，把 HGA / broadband gamma 从"默认同电极附近 spike output"收紧为必须先声明 proxy target 的神经测量窗口：local output spiking、local input / postsynaptic integration、distributed synchrony 不能混写。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`、`_SRT_Recent_Material_Patches_Index.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：材料支持 HGA-source-scope guardrail，不证明 HGA 无效；实验集中在 macaque M1 intracortical arrays、ONF/BMI 任务与 200-300 Hz HGA 窗口，不能自动外推为所有皮层、所有 modality 或所有 gamma 定义；HGA 不是 `\Psi_f`、`d-value`、`T_dir`、意识水平、`C_wave`、`D_align` 或 `L_2` 的直接读数。
-- `2026-05-11`：Pipeline 1 审查 MDPI / *Entropy* 论文 `Community First Theory: How Collective Organization Generates Individual Diversity`（Ikegami / Kojima / Kashiwagi；doi:`10.3390/e28050523`；published `2026-05-05`；本地 PDF full close reading + official MDPI/Entropy listing checked）；裁决为 **A 类小回写**，但明确降级为 **peer-reviewed empirical bridge / operational proxy guardrail**。已在 `Core_Law/SRT_Collective_Selection.md` 新增 `§4.8a Situated individuation diagnostic`，把集体系统中的个体化压成"集体耦合仍为正、但 self-prediction 不再与 collective-context prediction 冗余"的嵌入式非冗余窗口；并在 `Core_Law/SRT_Reference_Scaling.md §6.4` 收紧旧有 `NTIC > 0 = active agency` 速记，改为 `R_NTIC` coupling-qualified regime。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Core_Law/_SRT_Core_Law_Hardening_Index.md`、`_SRT_Recent_Material_Patches_Index.md`、`CANONICAL_REGISTRY.md`、`_SRT_INDEX.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：该文只给 *Tetrahymena* 单模型、有限 community 与 kinetic-energy observable 下的初始实证支持；不能推成意识、主体性、道德责任、`d` / `\Psi_f` / `T_dir` 定义，或全部社会/AI 集体的一般定律。
-- `2026-05-11`：Pipeline 1 审查 Noema Magazine / Carlo Rovelli essay `There Is No 'Hard Problem Of Consciousness'`（published `2026-05-07`；official Noema full text and metadata read）；裁决为 **A 类小回写**，但明确降级为 **public philosophy essay / epistemic guardrail**。已在 `Philosophy/SRT_HardProblem_Epistemology.md` 新增 `外部视角陷阱 / view-from-nowhere trap`，把意识硬问题中"先把科学误读成世界外部第三人称全景图，再要求从其中推出第一人称体验"的错误起点压成可审查守门：first-person / third-person 差异先按 access route、description grain、embodied position、`L_2` compression 与 `\Psi_f` cost 处理，不自动升级为 metaphysical gap。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Philosophy/README.md`、`Philosophy/_PHILOSOPHY_MACHINE_INDEX.md`、`Philosophy/_SRT_Philosophy_Hardening_Index.md`、`_SRT_Recent_Material_Patches_Index.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：该文是公共哲学 essay，不是经验科学证据；不能写成"Rovelli/physics 已经解决意识"，不能抹除现象学与第一人称证据，也不能绕过 `Subjecthood_Threshold_Interface` 推出 AI、动物或集体意识结论。
-- `2026-05-11`：Pipeline 1 审查 Institute of Art and Ideas / John Heil 评论文 `Emergence explains nothing and is bad science`（published `2025-10-13`；用户粘贴全文，官方 IAI 元数据核验）；裁决为 **A 类小回写**，但明确降级为 **public philosophy claim-hygiene guardrail**。已在 `Core/SRT_Core_21c_Bridge_Hypotheses.md` 的 `P2/P3-B12` 新增 `Emergence hygiene guardrail`，把"涌现"固定为机制占位词而非解释原语：有效的 emergence-style claim 必须说明 lower-level parts/states、coupling、transition/order parameter、macro-pattern/`L_2` constraint 与 implementation channel。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Philosophy/_SRT_Philosophy_Hardening_Index.md`、`_SRT_Recent_Material_Patches_Index.md`、`CANONICAL_REGISTRY.md`、`_SRT_INDEX.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：该文是哲学评论，不是经验科学证据；不能用来否定宏观模式实在性，也不能删除 SRT 的 P1 `L_2` downward constraint；SRT 的 downward constraint 应读作稳定历史通过边界条件、selection space、update cost 与耦合通道约束未来轨迹，而非额外配置力。
-- `2026-05-11`：Pipeline 1 审查本地预印本章节 `Embodied and Embedded Cognitive Development`（Lisette de Jonge-Hoekstra / Ralf F. A. Cox；preprint date `2026-05-01`；本地 PDF full close reading；未识别正式 DOI/URL）；裁决为 **A 类小回写**，但明确降级为 **preprint review bridge**。已在 `Philosophy/SRT_Social_Cognition.md` 新增 `T-Cog-7 Developmental Coordination Scaffold`，把 embodied / embedded cognitive development 压成 child-body-caregiver-environment-history 的软装配协调结构稳定与重组：co-regulation、motor access、developmental cascades、degeneracy、rhythmic scaffold、temporal variability 与 `L_2` trace 共同改变儿童未来可选行动/注意/语言场。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Philosophy/_SRT_Philosophy_Hardening_Index.md`、`_SRT_Recent_Material_Patches_Index.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：该材料是预印本综述章节，不是新原始实验；不能写成"representation 不存在"、不能把脑约束降权为背景，也不能把节律/环境支持升级为普遍干预定律。
-- `2026-05-11`：Pipeline 1 审查 Oxford Academic / *Aristotelian Society Supplementary Volume* 论文 `Panpsychism and the Depsychologization of Consciousness`（Keith Frankish；doi:`10.1093/arisup/akab012`；本地 PDF full close reading）；裁决为 **A 类小回写**。已在 `Philosophy/SRT_Subjecthood_Threshold_Interface.md` 新增 `Depsychologization trap`，把 depsychologized pure feel 压成主体性阈值的防漂移守门：意识论断不能通过剥离 psychological function、access、memory、action coupling、consequence return 与 ethical stake 后，把剩余的"纯 feel"直接升级为 SRT subjecthood。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Philosophy/_SRT_Philosophy_Hardening_Index.md`、`_SRT_Recent_Material_Patches_Index.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：该文是哲学论证，不是经验判别器；不能写成"Frankish/illusionism 证明 SRT"，不能取消 phenomenology，也不能把 psychological function 单独当作 S4 subjecthood 充分条件。
-- `2026-05-11`：Pipeline 1 审查 bioRxiv 预印本 `Opposing BOLD signals and oxygen metabolism largely arise from statistical uncertainty in metabolic estimates`（Goltermann / Huth / Büchel；doi:`10.64898/2026.04.21.719913`；本地 PDF full close reading）；裁决为 **A 类小回写**，但明确降级为 **preprint measurement guardrail**。已在 `SRT_EXP_MEASURE_MAP.md` 新增 `Hemodynamic-metabolic proxy uncertainty gate`，并在 `Neuroscience/SRT_Neural_Mechanisms.md` 新增 `BOLD-CMRO₂ uncertainty gate`，把 BOLD-CMRO₂ sign relation 压成"必须先过 `ΔCMRO₂` 方向不确定性门"的代谢 proxy 准入规则，而非生理 sign reversal 结论。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Neuroscience/_SRT_Neuroscience_Hardening_Index.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：BOLD、CMRO₂、CBF、CBV 都不是 `\Psi_f`、`d-value`、意识水平或 `L_2` 的直接读数；预印本未同行评审，negative BOLD 仍需独立机制处理；若 PET 或更高 SNR 代谢测量在 uncertainty gate 后仍支持广泛 sign reversal，应改写为真实 neurovascular-metabolic dissociation window。
-- `2026-05-09`：Pipeline 1 审查 *Nature Communications* 开放论文 `Creative experiences and brain clocks`（Coronel-Oliveros / Migeot / Lehue et al.；doi:`10.1038/s41467-025-64173-9`）；裁决为 **A 类小回写**。已在 `Neuroscience/SRT_Neural_Mechanisms.md` 新增 `Creative-Experience Brain-Clock patch`，将创意专长与短期创意学习中的较低 M/EEG functional-connectivity brain-age gap 压成 `theta / L2` 可塑性的功能代理窗口，而非"创造力逆转生物年龄"。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `Neuroscience/_SRT_Neuroscience_Hardening_Index.md` 与 `Operations/_SRT_MATERIAL_LOG.md`。边界：`BAG_FC` 不是 `d`、`\Psi_f`、`T_dir`、意识水平或生物年龄本身；专家横断面不能单独证明终身因果；短期 StarCraft II 学习窗口更接近因果但样本小且任务特异。
-- `2026-05-08`：Pipeline 1 审查 bioRxiv 预印本 `Propofol-induced loss of responsiveness reorganizes cortical traveling waves in the human brain`（Zarr et al.；doi:`10.64898/2026.04.30.721975`；official API metadata and abstract used；全文/PDF 本地读取被 Cloudflare 阻断）；裁决为 **A 类小回写**，但明确降级为 **preprint abstract-level bridge**。已在 `Neuroscience/SRT_Consciousness_Mechanisms.md` 新增 `2.8a 丙泊酚行进波重组窗口` 与 `H-C14 丙泊酚行进波重组`，将 propofol loss-of-responsiveness 写成可能的行进波方向、频谱结构与 spike-wave coupling 重调，而非简单 wave shutdown。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `_SRT_INDEX.md`、`CANONICAL_REGISTRY.md`、`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`、`Neuroscience/_SRT_Neuroscience_Hardening_Index.md`、`Operations/_SRT_MATERIAL_LOG.md`。边界：`N=2`、两名男性、颞叶局部记录、预印本且未 close-read 全文；不证明 consciousness = traveling waves，不升级为临床麻醉监测金标准。
-- `2026-05-08`：Pipeline 1 审查 ScienceDirect / *BioSystems* 论文 `An active inference explanation of discriminatory cognition with regard to social attitudes and harmful behaviour`（Manrique / Friston / Walker；doi:`10.1016/j.biosystems.2026.105793`；OSF matching preprint full text 辅助 close reading）；裁决为 **A 类小回写**。已在 `Philosophy/SRT_Social_Cognition.md` 新增 `T-Cog-6 Bounded-Surprisal Discrimination Gate`，把 active inference / ZBS 压成"跨群体更新带宽代理"，用于解释歧视性认知、旁观者沉默与非人化认知的 self-evidencing 稳定机制。已新增 SourceCard / PatchNote / IntegrationHook，并同步 `_SRT_INDEX.md`、`Philosophy/_PHILOSOPHY_MACHINE_INDEX.md`、`CANONICAL_REGISTRY.md`、`Operations/_SRT_MATERIAL_LOG.md`。边界：ZBS 不是 `d`、`\Psi_f`、`T_dir` 或 recognition operator 的定义；机制解释不构成责任豁免；材料是理论论文，不是直接实验。
-- `2026-05-08`：Pipeline 1 复核 Peter Godfrey-Smith PDF `Biology, Brain Rhythms, and Consciousness`（preprint PDF；标注为 IAI News 2026-03 文章 `Studies on animal minds suggest consciousness is not computation: Mapping the rhythms of mind and matter` 的 preprint version）；裁决为 **C 类不融入正文**。理由：这是 `2026-04-01` 与 `2026-04-05` 已审查 IAI biological-naturalism 条目的作者预印本版本，未形成超出既有 `Biological Naturalism Interface`、生命-认知连续谱边界和振荡/波场接口的新稳定接口。已在 `Operations/_SRT_MATERIAL_LOG.md` 追加复核记录；不创建 SourceCard / PatchNote / Hook。
-- `2026-05-08`：Pipeline 1 审查 New Scientist `An unorthodox version of quantum theory could reveal what reality is`（2026-05-01，Karmela Padavic-Callaghan，`Comment`，subscriber article）；裁决为 **C 类不融入正文**。理由：材料相关性高，但当前可核内容仍是二手评论元数据与摘要，未给出新的同行评审实验、明确 DOI 或可独立承重的 Bohmian discriminator；仓库现有 `Physics/SRT_Physics_Claim_Status.md` 与 `Physics/SRT_Quant_00_Intro.md` 已覆盖 pilot-wave / Bohmian mechanics 的 P3/P4 解释边界。已在 `Operations/_SRT_MATERIAL_LOG.md` 追加 C 类记录；不创建 SourceCard / PatchNote / Hook。
-- `2026-05-08`：Pipeline 1 审查 New Scientist `Is consciousness more fundamental to reality than quantum physics?`（2026-04-28，Karmela Padavic-Callaghan，`Features`；用户粘贴全文）；裁决为 **C 类不融入正文**。理由：材料是物理主义、现象学、强涌现、mutualism 与 agency physics 的高质量大众综述，但没有形成超出仓库现有 `Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md`、`Philosophy/README.md`、`Philosophy/SRT_Philosophy_Foundations.md` 的新稳定接口。已在 `Operations/_SRT_MATERIAL_LOG.md` 追加 C 类记录；不创建 SourceCard / PatchNote / Hook。
-- `2026-04-26`：Extracted H10-H16 collective tower/nested hardening material into a separate hardening notes file to preserve the minimal L1 canonical surface.
-- `2026-04-26`：H16 塔的全局非线性 Lyapunov 稳定性收口（详见 Operations 历史）。
-- `2026-04-26`：H15-H10 族普适性、layer-skip、塔级递归系列硬化完成（详见 Operations 历史）。
-- `2026-04-25`：H9-H4 L1 formalism 一轮主要硬化完成（详见 Operations 历史）。
-- `2026-04-24`：L1 六大 canonical 主文新增完成：Individuation / Occlusion_Dynamics / Suffering / L1_Formalism / Collective_Selection / Irreversibility（详见 Operations 历史）。
-- `2026-04-20`：Core_21 命题硬度分层回写、spirituality 双线扩展、philosophy bridge 并入等（详见 Operations 历史）。
-- `2026-04-18`：新增治理层文件 README / CLAUDE / CANONICAL_FREEZE / EDIT_PROTOCOL / HARNESS_TESTS。
-- `2026-04-15`：d-value canonical 锚点收口到 `_SRT_D_VALUE_CANONICAL.md`。
+（更早条目见 `Operations/Status_History/2026-04_to_2026-07_Dashboard_Part.md`）
 
 ## 当前高优先事项
 
-- **【P0·已完成 2026-06-19｜书稿已冻结 RC1-candidate】《从存在到秩序》全书「姿态修订」+ 框架层**：把正文从证明姿态翻成"拆地板/换镜片/重新看"的体验-邀请姿态。只改**接缝**（序章、章节开头结尾、最强反对者段、语气），不动机制正文与严密——让严密像理论自己说的那样退成背景里承重的地面。单段判准：把读者摆成"陪审员（评判我的证明）"还是"探索者（跟我重新看）"。纲领 `01_Source_Intuition/BOOK/BOOK_POSTURE_REVISION_PLAN_2026-06-16.md`；序章为试点起点。
-- 继续同步入口层去重：`README / AGENTS / CLAUDE / STATUS / _SRT_INDEX / Navigation / manifest`
+- 书稿 RC1-candidate：choice-trace 回写 Phase 2/3 待作者裁决包（G1/G2/G4/G5/G6）
+- 论文线：Frontiers 稿 1837760 major revision 施工；Adaptive Behavior 重投（common-state probe 分支停驻，见 `_SRT_PARKED_INDEX.md §3`）
 - 保持 canonical 主链不被入口优化反向污染
-- 按 `Governance/SRT_CLAIM_LADDER.md` 持续标注 domain 文件中的 P-level
-- 继续把运行留痕与理论检索层分开
-- 将 spirituality 三支结构（旧主轴 / 新双线 / community companion）与后续导航/入口层建立更清晰索引关系
-- ~~将 `SRT_Uncertainty_Payment_Raw_L0_Selection_Bridge.md` 反向合并进 `Philosophy/SRT_Philosophy_Ethics.md` 与 `Philosophy/SRT_Ethics_Agency.md`~~（已完成 2026-04-20）
+- 治理可观测指标看板：boot 必读 3 文件 / 根目录 md ≤ 60 / navigation 占比下降 / 状态镜像唯一（详见 `_SRT_QUALITY_METRICS.md`）
 
 ## Pipeline 快照
 
-- `Pipeline 1`：材料融合主流程继续有效；二轮结构裁决走 `Operations/_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`
-- `Pipeline 3`：信号采集按 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 执行
-- `Pipeline 6`：内审按 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 执行
+- `Pipeline 1`：材料融合继续有效；B 类语义自 2026-07-20 起为"停驻 + 具名触发条件"（见 `Operations/_SRT_MATERIAL_PIPELINE.md`）。最新高优先级 B1/B2 卡为热力学计算材料：`noise + constraint + readout` 可构成真实计算，但不推出 `W_sel + bearer`；水结冰卡继续承担 `P / W_global` 不推出 `W_sel` 的自然边界。
+- `Pipeline 3` / `Pipeline 6`：按 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 执行
+- Pipeline 5 主模式：`Operations/_SRT_ARTICLE_WORKFLOW.md`
 
 ## 当前工作边界
 
-- 书稿正文 **曾解冻**（`2026-06-16` 做 P0 姿态修订），**现已重新冻结**（`2026-06-19`，RC1-candidate；框架层 PR #506 + 导出校验通过）；正文默认冻结恢复生效，仍走 `Governance/SRT_EDIT_PROTOCOL.md`，详见 `01_Source_Intuition/BOOK/BOOK_RC1_CANDIDATE_FREEZE_2026-06-19.md`
-- 姿态修订边界：改接缝、不动机制正文与严密；不许借姿态过偷改 canonical 理论或降低硬度标注
-- 理论文件（canonical）编辑仍先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`——理论冻结不受书稿解冻影响
+- 书稿正文默认冻结（RC1-candidate，2026-06-19；choice-trace 轨道按 2026-07-10 作者豁免裁决直接改章，其余纪律不豁免），走 `Governance/SRT_EDIT_PROTOCOL.md`
+- 理论文件（canonical）编辑先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`——理论冻结不受书稿豁免影响
+- 休眠层只做 touch-based repair，不开专项治理轮

@@ -61,7 +61,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-000, Core_Law/SRT_Reference_Axioms, Co
 
 ## Companion Links
 
-- [`Operations/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
+- [`Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md`](../Operations/Archive_Records/Non_Philosophy_Refactor_Audit_Report.md) — domain-level refactor plan
 - [`AI/AI_POSITIONING_NOTE.md`](AI_POSITIONING_NOTE.md) — architecture-state discrimination reference
 - [`AI/SRT_AI_00_Crisis.md`](SRT_AI_00_Crisis.md) — entry file depending on this bridge
 
