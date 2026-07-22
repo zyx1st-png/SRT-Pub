@@ -1,7 +1,7 @@
 ---
 id: SRT-OPS-AUDIT-P1-T07-PROOF-HARDENING
 type: audit_record
-status: record_v0_1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: governance

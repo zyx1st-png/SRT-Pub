@@ -1,7 +1,7 @@
 ---
 id: SRT-OPS-AUDIT-MAP-P1-T07-ASSUMPTIONS
 type: audit_map
-status: record_v0_1
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: governance

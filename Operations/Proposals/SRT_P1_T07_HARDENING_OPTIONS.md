@@ -1,7 +1,7 @@
 ---
 id: SRT-OPS-PROPOSAL-P1-T07-HARDENING-OPTIONS
 type: proposal
-status: proposal_v0_1
+status: draft
 layer: meta
 epistemic_layer: os
 claim_mode: governance
