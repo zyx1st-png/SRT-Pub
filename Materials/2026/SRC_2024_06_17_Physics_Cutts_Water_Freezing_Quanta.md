@@ -1,7 +1,7 @@
 ---
 id: SRC-2024-06-17-PHYSICS-CUTTS-WATER-FREEZING-QUANTA
 type: material_source_card
-status: active_v1
+status: active
 layer: operations
 epistemic_layer: os
 claim_mode: evidence

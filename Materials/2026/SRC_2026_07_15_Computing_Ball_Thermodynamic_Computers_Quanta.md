@@ -1,7 +1,7 @@
 ---
 id: SRC-2026-07-15-COMPUTING-BALL-THERMODYNAMIC-COMPUTERS-QUANTA
 type: material_source_card
-status: active_v1
+status: active
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
