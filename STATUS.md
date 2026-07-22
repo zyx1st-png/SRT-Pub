@@ -3,13 +3,13 @@ id: SRT-STATUS
 type: dashboard
 status: active
 claim_mode: evidence
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-07-21
+> **最后更新**：2026-07-22
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -42,6 +42,7 @@ updated: 2026-07-21
 
 ## 最近关键推进
 
+- `2026-07-22`：**Learnable Novelty 材料卡完成并按高优先级 B1 停驻**。新增 `Materials/2026/SRC_2026_07_20_AI_Zhang_Levin_Learnable_Novelty.md`，完成 Zhang–Levin arXiv `2607.18433v1` 24 页全文精读；代码已声明但本轮未复现。稳定增量：observer-relative learnable-structure yield、`W_sel x S^phi_future` 二维分解、future learnability endpoint、structured novelty 与 residual noise 分离，以及 observer-ensemble / observer-swap 防目标利用门。关键边界：`S^phi != Ψ_f != d != W_sel`；可学习结构不等于价值、stake 或主体性；Rule 110、soliton、MNIST 聚类和 RL exploration 不构成统一智能证明；论文对 FEP 和 universal computation 的强叙述需降级。`Operations/Material_Log/2026-07_Part01.md` 与 `Operations/_SRT_MATERIAL_LOG.md` 已同步；未修改 canonical、HDR/selective-resynchronization 正文或正式 PatchNote。复活触发：HDR 增 future-structure endpoint、selective-resynchronization 需要区分噪声与结构重组、完成代码复现或 cross-observer / observer-swap 测试、论文新版本或同行评审回应 fixed-observer exploitation 与外推风险。
 - `2026-07-21`：**热力学计算材料卡完成并按高优先级 B1/B2 停驻**。新增 `Materials/2026/SRC_2026_07_15_Computing_Ball_Thermodynamic_Computers_Quanta.md`，完成 Quanta 全文与 Melanson et al. 2025 SPU 硬件、Whitelam–Casert 2026 非平衡计算、Whitelam 2026 生成式计算、Jelinčič et al. 2026 概率硬件架构的分层交叉读取。稳定增量：`N-C-R-W-B` 审计（noise / constraint / readout / write-back / bearer）、trajectory computation、trained stochastic scaffold，以及“随机可被约束组织但噪声本身不选择”。关键边界：`N + C + R` 可实现真实计算，但不推出 `W_sel + bearer`；外部训练能量地形不是系统拥有的选择史；低热耗散不等于低 canonical `Ψ_f`；概率生成不证明 stake 或意识。`Operations/Material_Log/2026-07_Part01.md` 与 `Operations/_SRT_MATERIAL_LOG.md` 已同步；未修改 canonical、Physics/AI 正文、source trace 或论文正文。复活触发：selective-resynchronization related work、熵—随机—再同步 bridge 获作者成文确认、HDR external-programming/stochastic negative control、AI 点名 thermodynamic/probabilistic hardware、`Ψ_f` 完整能耗账本或公共文章点名该案例。
 - `2026-07-21`：**水结冰材料卡完成并按 B1/B2 停驻**。新增 `Materials/2026/SRC_2024_06_17_Physics_Cutts_Water_Freezing_Quanta.md`，完成 Quanta 全文与 Dhabal–Kumar–Molinero PNAS `10.1073/pnas.2322853121` 全文交叉读取。稳定增量：`stability != reachability`、`manifestation != anchoring`、scaffold 作为成本重排器、晶格形成后的 inherited pre-trimming；关键边界：过冷水不是 `L_0`，成核势垒不是 canonical `Ψ_f`，物理路径依赖与一般写回不构成 `W_sel`、主体性或 consequence-return。`Operations/Material_Log/2026-07_Part01.md` 与 `Operations/_SRT_MATERIAL_LOG.md` 已同步；未修改 canonical、Physics 正文或 history-dependent reachability 论文正文。复活触发：HDR natural comparison / negative-boundary、`Ψ_f` physical-proxy taxonomy、Physics nucleation/metastability 任务或公共文章点名该案例。
 - `2026-07-20`：**治理减负轮完成**。①Operations 51 个一次性记录归档入 `Operations/Archive_Records/`；②根目录 22 个停驻文件迁入 `90_Backstage/Incubation|Plans_Archive/` 等层，新建 `_SRT_PARKED_INDEX.md` 停机坪索引（下沉必须带复活触发条件）；③7 个 coverage index 冻结为快照，5 个休眠域入口加冻结戳（canonical 漂移免同步声明 + touch-based repair）；④状态面收口为本文件单面（`STATUS_FAST.md`、`STATUS_Split/` 删除）；⑤boot 读单 4→3（symbol quick guard 并入 `SRT_AI_START.md`）；⑥router 三个扩展并回主文件；⑦人类入口四合一进 `SRT_Navigation_Map.md`；⑧frontmatter 最小 schema 棘轮 + B 类裁决语义改停驻 + 治理四原则入 `Governance/README.md`。记录：`Governance/Governance_Load_Reduction_2026-07-20.md`。
@@ -61,7 +62,7 @@ updated: 2026-07-21
 
 ## Pipeline 快照
 
-- `Pipeline 1`：材料融合继续有效；B 类语义自 2026-07-20 起为"停驻 + 具名触发条件"（见 `Operations/_SRT_MATERIAL_PIPELINE.md`）。最新高优先级 B1/B2 卡为热力学计算材料：`noise + constraint + readout` 可构成真实计算，但不推出 `W_sel + bearer`；水结冰卡继续承担 `P / W_global` 不推出 `W_sel` 的自然边界。
+- `Pipeline 1`：材料融合继续有效；B 类语义自 2026-07-20 起为"停驻 + 具名触发条件"（见 `Operations/_SRT_MATERIAL_PIPELINE.md`）。最新高优先级 B1 卡为 Learnable Novelty：可作为 observer-relative future-structure proxy，但严格保留 `S^phi != Ψ_f != d != W_sel`，待代码复现和 cross-observer 防利用测试；热力学计算卡继续承担 `noise + constraint + readout` 不推出 `W_sel + bearer` 的边界；水结冰卡继续承担 `P / W_global` 不推出 `W_sel` 的自然边界。
 - `Pipeline 3` / `Pipeline 6`：按 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 执行
 - Pipeline 5 主模式：`Operations/_SRT_ARTICLE_WORKFLOW.md`
 
