@@ -31,6 +31,7 @@ Pressure does not automatically mean SRT has failed. It can mean the relevant cl
 | CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION | neuroscience / network neuroscience / systems neuroscience | `T_dir`; relational selection; `d-value`; `Λ`; reselectability; context-sensitive closure | downgrade / scope pressure | active_v1 | Edge time series may be ordinary statistical interaction terms with explanatory but non-causal value, and therefore should not be overread as direct evidence for SRT ontology, consciousness, or subjecthood. | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) |
 | CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP | neuroscience / consciousness / EM field theory | `L1` field anchoring; `Psi_f`; `d-value`; subjecthood boundary; AI consciousness boundary | downgrade / scope pressure | active_v1 | EM field coherence, weak-field entrainment, and criticality may explain biophysical integration without bridging the gap from field dynamics to subject-involving phenomenal concern or SRT-specific reselectability. | [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md) |
 | CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM | synthetic biology / origin of life / minimal cell | `L0/L1`; `Psi_f`; `d-value`; biological closure; reselectability; minimal life threshold; subjecthood boundary | downgrade / scope pressure | active_v1 | Synthetic protocell growth and division may demonstrate engineered cell-cycle-like behavior without establishing autonomous life, intrinsic `d-value`, subjecthood, or natural selection. | [`EC-BIO-SYNTHETIC-CELL-LIFE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) |
+| CL-PHIL-COMPRESSION-SELECTION-CONFLATION | philosophy / cognitive science / AI reasoning | `G_hat_theta`; `L0/L1/L2`; stable ISP; reselectability; ChoiceMap | downgrade / decomposition pressure | active_v1 | Compression may explain resolution within an already selected frame while leaving world selection open; compactness, continuity, and internal coherence must not be overread as selection correctness, healthy `L2`, subjecthood, or preserved reselection. | [`EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION`](Philosophy/EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION.md) |
 
 ## Pressure Details
 
@@ -161,6 +162,22 @@ A third pressure is evolutionary. Selection-like population changes created by a
 A fourth pressure concerns subjecthood. Growth, replication, division, and even future population persistence do not establish consciousness, qualia, moral status, or intrinsic `d-value`. Biological closure, if later achieved, must still be separated from subjecthood.
 
 The card should remain E2 unless the underlying work is peer-reviewed, replicated, and extended toward autonomous metabolism, ribosome production, waste handling, self-maintenance, and endogenous evolvability.
+
+### CL-PHIL-COMPRESSION-SELECTION-CONFLATION
+
+This is not a refutation of SRT. It is a decomposition and downgrade pressure on the compression / world-resolution interface proposed in [`EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION`](Philosophy/EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION.md).
+
+The first pressure is that compression depth may explain why an already selected world is resolved sharply while leaving untouched the prior question of why that world was selected. SRT must not use history-sensitive compression, `L2` support, or activation compactness to imply that `P0-04`, frame selection, or selection correctness has been solved.
+
+The second pressure is operator overload. Candidate admission, world selection, resolution depth, within-world inference, diachronic continuity, and writeback are different explanatory roles. If all are placed inside `G_hat_theta` without explicit separation, evidence for one role can be misused as evidence for the others.
+
+The third pressure concerns pathological hardening. Strong internal coherence, low local friction, high performance, and correct within-frame inference can coexist with a shrinking alternative-world set. SRT must therefore distinguish current resolution support from future reselection loss rather than treating stronger `L2` stabilization as automatically healthy.
+
+The fourth pressure concerns subjecthood. A persistent compression or stable workspace does not automatically establish a lived vantage, non-transferable consequence, stake-coupled concern, or stable ISP. Any move from compression to occupation requires an independent consequence-return and stake bridge.
+
+The fifth pressure is measurement-specific. Activation compactness, workspace coherence, surprisal, and attractor stability may reflect repetition, topic similarity, ordinary working memory, confidence, or mode collapse. They should remain candidate proxies unless they distinguish frame selection, resolution, corridor-like foreclosure, and healthy expertise under controlled tests.
+
+The card should remain E2 unless SRT defines measurable separations among frame selection, resolution depth, within-frame inference, diachronic weld, and writeback, and then shows a differential prediction that survives strong predictive-processing, attention, working-memory, attractor, and risk-sensitive-search baselines.
 
 ## Required Practice
 
