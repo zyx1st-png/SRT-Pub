@@ -106,6 +106,16 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 - Boundary: Synthetic protocell growth and division support a minimal-life boundary case; they do not prove autonomous life, subjecthood, consciousness, or internally paid `Psi_f`.
 - Next step: bridge note separating boundary, replication, metabolism, division, self-maintenance, artificial variation, natural selection, and subjecthood.
 
+### EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION
+
+- Card: [`EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION`](Philosophy/EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION.md)
+- Level: E2 draft
+- SRT anchors: `L0/L1/L2`, `G_hat_theta`, `L2` hardening, stable ISP, reselectability, `T_dir`, ChoiceMap
+- Support type: structural convergence / conceptual decomposition / pressure case / bridge-hypothesis candidate
+- Pressure link: [`CL-PHIL-COMPRESSION-SELECTION-CONFLATION`](CONTRADICTION_LEDGER.md#cl-phil-compression-selection-conflation)
+- Boundary: compression may support resolution within a selected world, but it does not solve world selection, establish subjecthood, or make activation compactness an SRT construct.
+- Next step: scoped bridge note separating candidate availability, world selection, resolution depth, within-world inference, diachronic weld, and writeback.
+
 ## Summary Table
 
 | Card | Level | Status | Anchor | Pressure Link | Current Role | Next Step |
@@ -119,6 +129,7 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) | E3 | draft_v1; not accepted | `T_dir`; `L0/L1/L2`; `d-value`; `Λ`; relational selection; reselectability; context-sensitive closure; behavior-output interface | [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction) | operational proxy for relational selection / pressure case | Bridge note separating edge interaction, dynamic connectivity, behavioral explanation, and causal intervention. |
 | [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md) | E2 | draft_v1; not accepted | `L1`; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; subjecthood boundary | [`CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP`](CONTRADICTION_LEDGER.md#cl-neuro-em-field-phenomenology-gap) | field-anchoring bridge / pressure case | Bridge note separating field coherence, phenomenal anchoring, concern, and AI field-infrastructure claims. |
 | [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) | E2 | draft_v1; not accepted | `L0/L1`; `Psi_f`; `d-value`; `\hat{G}_θ`; biological closure; reselectability; minimal life threshold | [`CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-bio-synthetic-cell-life-overclaim) | minimal-life boundary case / pressure case | Bridge note separating partial cell-cycle closure, self-maintenance, natural selection, and subjecthood. |
+| [`EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION`](Philosophy/EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION.md) | E2 | draft_v1; not accepted | `L0/L1/L2`; `G_hat_theta`; `L2` hardening; stable ISP; reselectability; ChoiceMap | [`CL-PHIL-COMPRESSION-SELECTION-CONFLATION`](CONTRADICTION_LEDGER.md#cl-phil-compression-selection-conflation) | conceptual decomposition / bridge-pressure case | Bridge note separating frame selection, resolution, inference, weld, and writeback. |
 
 ## What Is Not Yet Done
 
