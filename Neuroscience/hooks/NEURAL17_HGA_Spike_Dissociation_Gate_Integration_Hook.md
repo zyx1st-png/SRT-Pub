@@ -1,10 +1,6 @@
 ---
 hook_id: HOOK-NEURO-NEURAL17-HGA-SPIKE-DISSOCIATION-GATE
 patch_id: PATCH-NEURO-NEURAL17-HGA-SPIKE-DISSOCIATION-GATE
-target_documents:
-  - "SRT_EXP_MEASURE_MAP.md"
-  - "Neuroscience/SRT_Neural_Mechanisms.md"
-status: integrated
 domain: neuroscience_measurement
 layer: operations
 epistemic_layer: os
@@ -12,6 +8,16 @@ claim_mode: evidence
 canonical: false
 type: integration_hook
 id: HOOK-NEURO-NEURAL17-HGA-SPIKE-DISSOCIATION-GATE
+status: active
+integration_status: landed
+landing_ledger:
+  - target: "SRT_EXP_MEASURE_MAP.md"
+    state: landed
+    anchor: "High-gamma local-spike dissociation gate"
+  - target: "Neuroscience/SRT_Neural_Mechanisms.md"
+    state: landed
+    anchor: "High-gamma/spike dissociation gate"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # Integration Hook: NEURAL17 HGA-Spike Dissociation Gate

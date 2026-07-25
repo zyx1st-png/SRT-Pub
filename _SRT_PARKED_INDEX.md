@@ -39,8 +39,9 @@ updated: 2026-07-20
 
 | 条目 | 位置 | 复活触发条件 |
 |---|---|---|
-| P1-T07 证明审计（含 Options A/B/C，推荐 B=降为条件定理） | PR #676（未合并） | 用户授权 P1-T07 修复方案时先合审计，再开受权 amendment PR |
 | Costly Selection common-state probe + Adaptive Behavior build | branch `claude/common-state-probe`（9fde3ff0 / e483a5c6） | Adaptive Behavior 重投轮启动时 |
+
+> P1-T07 证明审计已于 2026-07-25 随 PR #676 合入 main（`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`、`Operations/Audits/Maps/SRT_P1_T07_ASSUMPTION_MAP.md`、`Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`），本行已销账。Options A/B/C 仍为 proposal-only：Option B 是**最小编辑候选**，但须先清三项前置（选定 S1/S2/S3 稳定性语义；把 "ε-neutral" 定义在独立转移核上；证明该中性基线 a.s. 吸收），未清前不得写成定理。
 
 ## 4. 计划存档（`90_Backstage/Plans_Archive/`）
 

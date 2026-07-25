@@ -1,10 +1,6 @@
 ---
 hook_id: HOOK-CORELAW-COLL08-NTIC-SITUATED-INDIVIDUATION
 patch_id: PATCH-CORELAW-COLL08-NTIC-SITUATED-INDIVIDUATION
-target_documents:
-  - "Core_Law/SRT_Collective_Selection.md"
-  - "Core_Law/SRT_Reference_Scaling.md"
-status: integrated
 domain: core_law_collective_selection
 layer: operations
 epistemic_layer: os
@@ -12,6 +8,16 @@ claim_mode: evidence
 canonical: false
 type: integration_hook
 id: HOOK-CORELAW-COLL08-NTIC-SITUATED-INDIVIDUATION
+status: active
+integration_status: landed
+landing_ledger:
+  - target: "Core_Law/SRT_Collective_Selection.md"
+    state: landed
+    anchor: "### §4.8a Situated individuation diagnostic"
+  - target: "Core_Law/SRT_Reference_Scaling.md"
+    state: landed
+    anchor: "NTIC = Non-Trivial Information Closure"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # Integration Hook: COLL08 NTIC Situated Individuation

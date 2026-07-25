@@ -1,16 +1,24 @@
 ---
 id: SRT-PH-AG02-INTEGRATION-HOOK
 type: integration_hook
-status: active_v0_1
 layer: bridge
 epistemic_layer: bridge
 claim_mode: integration
 canonical: false
 source_patch: SRT-PH-AG02-KNOWLEDGE-BIASED-SELECTION
-targets:
-  - Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
-  - _SRT_T_DIR_CANONICAL.md
-  - _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md
+status: active
+integration_status: partial
+landing_ledger:
+  - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
+    state: landed
+    anchor: "## 3. Triggering causes and structuring biases"
+  - target: "_SRT_T_DIR_CANONICAL.md"
+    state: pending
+    blocked_by: "canonical freeze：改 `T_dir` 主定义属 SRT_EDIT_PROTOCOL C 类高风险编辑，需作者授权"
+  - target: "90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md"
+    state: pending
+    blocked_by: "目标已停驻（ChoiceMap / IRP 产品线未重启），见 _SRT_PARKED_INDEX.md §1"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # PH-AG02 Reasoning-Bias Integration Hook

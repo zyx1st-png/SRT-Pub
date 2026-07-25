@@ -1,18 +1,30 @@
 ---
 id: SRT-PH-AG04-INTEGRATION-HOOK
 type: integration_hook
-status: active_v0_1
 layer: bridge
 epistemic_layer: bridge
 claim_mode: integration
 canonical: false
 source_patch: SRT-PH-AG04-SENSORIMOTOR-TIME-AGENCY
-targets:
-  - Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
-  - Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md
-  - Neuroscience/SRT_Neural_Mechanisms.md
-  - Neuroscience/SRT_Consciousness_Mechanisms.md
-  - future subjective-time bridge document
+status: active
+integration_status: landed
+landing_ledger:
+  - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
+    state: landed
+    anchor: "## 6. Control, authorship, and bodily ownership"
+  - target: "Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md"
+    state: landed
+    anchor: "SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md"
+  - target: "Neuroscience/SRT_Neural_Mechanisms.md"
+    state: landed
+    anchor: "PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md"
+  - target: "Neuroscience/SRT_Consciousness_Mechanisms.md"
+    state: landed
+    anchor: "PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md"
+  - target: "future subjective-time bridge document"
+    state: withdrawn
+    withdrawn_reason: "该目标从未是真实文件路径，只是设想中的未来文档；不再作为待办追踪，若日后真建 subjective-time bridge 主文，另立新 hook 条目"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # PH-AG04 Sensorimotor Time–Agency Integration Hook
