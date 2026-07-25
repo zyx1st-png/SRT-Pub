@@ -1,8 +1,9 @@
 ---
 id: EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION
 type: evidence_card
-status: draft_v1
+status: draft
 layer: external_convergence
+epistemic_layer: bridge
 claim_mode: external_convergence
 canonical: false
 domain: philosophy_cognitive_science
