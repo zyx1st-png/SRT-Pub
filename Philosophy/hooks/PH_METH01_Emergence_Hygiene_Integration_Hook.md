@@ -1,8 +1,6 @@
 ---
 hook_id: HOOK-PHIL-PH-METH01-EMERGENCE-HYGIENE
 patch_id: PATCH-PHIL-PH-METH01-EMERGENCE-HYGIENE
-target_document: "Core/SRT_Core_21c_Bridge_Hypotheses.md"
-status: integrated
 domain: philosophy_of_science
 layer: operations
 epistemic_layer: os
@@ -10,6 +8,13 @@ claim_mode: evidence
 canonical: false
 type: integration_hook
 id: HOOK-PHIL-PH-METH01-EMERGENCE-HYGIENE
+status: active
+integration_status: landed
+landing_ledger:
+  - target: "Core/SRT_Core_21c_Bridge_Hypotheses.md"
+    state: landed
+    anchor: "P3-B12"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # Integration Hook: PH-METH01 Emergence Hygiene

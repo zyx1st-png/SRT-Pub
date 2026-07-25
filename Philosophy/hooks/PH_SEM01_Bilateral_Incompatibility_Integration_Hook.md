@@ -1,17 +1,27 @@
 ---
 id: SRT-PH-SEM01-INTEGRATION-HOOK
 type: integration_hook
-status: active_v0_1
 layer: bridge
 epistemic_layer: bridge
 claim_mode: integration
 canonical: false
 source_patch: SRT-PH-SEM01-BILATERAL-INCOMPATIBILITY-CONTEXT-REPAIR
-targets:
-  - _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md
-  - Core_Law/SRT_Occlusion_Dynamics.md
-  - _SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md
-  - Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
+status: active
+integration_status: partial
+landing_ledger:
+  - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
+    state: landed
+    anchor: "Bilateral position and context repair"
+  - target: "Core_Law/SRT_Occlusion_Dynamics.md"
+    state: pending
+    blocked_by: "尚未回写；Occlusion_Dynamics 为 draft_v0 canonical-adjacent 主文，须走 SRT_EDIT_PROTOCOL"
+  - target: "90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md"
+    state: pending
+    blocked_by: "目标已停驻（ChoiceMap / IRP 产品线未重启），见 _SRT_PARKED_INDEX.md §1"
+  - target: "90_Backstage/Incubation/_SRT_OBJECTHOOD_AS_RESELECTABILITY_META_STANDARD.md"
+    state: pending
+    blocked_by: "目标已停驻（ChoiceMap / IRP 产品线未重启），见 _SRT_PARKED_INDEX.md §1"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # PH-SEM01 Bilateral Incompatibility Integration Hook

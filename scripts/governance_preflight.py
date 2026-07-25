@@ -73,6 +73,11 @@ def main() -> None:
         )
     steps.append(("frontmatter", frontmatter_cmd))
 
+    hooks_cmd = [python, "scripts/check_hooks.py"]
+    if args.strict:
+        hooks_cmd.append("--strict")
+    steps.append(("integration hook closure", hooks_cmd))
+
     noise_cmd = [python, "scripts/check_forbidden_noise.py"]
     if args.strict:
         noise_cmd.append("--strict-worktree")

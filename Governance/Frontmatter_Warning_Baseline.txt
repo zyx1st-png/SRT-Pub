@@ -738,7 +738,6 @@ Core_Law/SRT_Selection_Argument.md: status `active_v1` outside ratchet enum (dra
 Core_Law/SRT_Suffering.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
 Core_Law/SRT_System_Derivation_Alignment.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Core_Law/_SRT_Core_Law_Hardening_Index.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Core_Law/hooks/COLL08_NTIC_Situated_Individuation_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
 Core_Law/patches/SRT_CoreLaw_COLL08_NTIC_Situated_Individuation_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
 D_VALUE_ALIGNMENT.md: status `axiomatic_hybrid_v1` outside ratchet enum (draft|active|frozen|archived)
 Experiments/AUDIT.md: status `final_audit_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -896,10 +895,6 @@ Neuroscience/SRT_Neuroscience_Hardening_N1_N9_Integration_Hooks_for_N10_N12.md: 
 Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md: missing frontmatter
 Neuroscience/_SRT_Neuro_Axioms.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/_SRT_Neuroscience_Hardening_Index.md: missing frontmatter
-Neuroscience/hooks/CONSC14_Propofol_Traveling_Wave_Reorganization_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/hooks/NEURAL15_Creative_Experience_Brain_Clock_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/hooks/NEURAL16_BOLD_CMRO2_Uncertainty_Gate_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
-Neuroscience/hooks/NEURAL17_HGA_Spike_Dissociation_Gate_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/patches/SRT_Neuro_CONSC14_Propofol_Traveling_Wave_Reorganization_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/patches/SRT_Neuro_NEURAL15_Creative_Experience_Brain_Clock_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
 Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
@@ -1191,16 +1186,6 @@ Philosophy/_SRT_Phil_Axioms_PH_SS_Guardrails.md: status `active_bridge_guardrail
 Philosophy/_SRT_Philosophy_Hardening_Index.md: missing frontmatter
 Philosophy/_SRT_Soc_Axioms.md: status `domain_constitutional_v2` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/_SRT_Soc_Bridge.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_AG01_Agency_Ladder_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_AG02_Reasoning_Bias_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_AG04_Sensorimotor_Time_Agency_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_CONSC01_Depsychologization_Trap_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_CONSC02_Perspectival_Gap_Gate_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_METH01_Emergence_Hygiene_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/PH_SEM01_Bilateral_Incompatibility_Integration_Hook.md: status `active_v0_1` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/SOC_COG01_ZBS_Discriminatory_Cognition_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
-Philosophy/hooks/SOC_COG02_Developmental_Coordination_Scaffold_Integration_Hook.md: status `integrated` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/patches/SRT_Philosophy_PH_AG01_Agency_Ladder_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/patches/SRT_Philosophy_PH_AG02_Knowledge_Biased_Selection_v0_1.md: status `patch_v0_1` outside ratchet enum (draft|active|frozen|archived)
 Philosophy/patches/SRT_Philosophy_PH_AG03_Constitutive_Commitment_Retroactive_Certainty_v0_1.md: status `patch_v0_1` outside ratchet enum (draft|active|frozen|archived)
@@ -1264,12 +1249,6 @@ Physics/Selection_Split/01_Part02.md: status `active_v1` outside ratchet enum (d
 Physics/Selection_Split/README.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/_SRT_Phys_Bridge.md: status `bridge_realign_v1` outside ratchet enum (draft|active|frozen|archived)
 Physics/_SRT_Physics_Hardening_Index.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Physics/hooks/P03_Cosmological_Principle_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Physics/hooks/P03_Cosmological_Principle_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
-Physics/hooks/P04_Spontaneous_Collapse_Classicality_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Physics/hooks/P04_Spontaneous_Collapse_Classicality_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
-Physics/hooks/P05_Quantum_Proper_Time_Optical_Clocks_Integration_Hook.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
-Physics/hooks/P05_Quantum_Proper_Time_Optical_Clocks_Integration_Hook.md: status `pending` outside ratchet enum (draft|active|frozen|archived)
 Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type
 Physics/patches/SRT_Phys_P03_Cosmological_Principle_Effective_Symmetry_v0_1.md: status `patch` outside ratchet enum (draft|active|frozen|archived)
 Physics/patches/SRT_Phys_P04_Spontaneous_Collapse_Classicality_v0_1.md: missing recommended frontmatter keys: claim_mode, epistemic_layer, id, layer, type

@@ -1,9 +1,20 @@
 ---
-hook_id: HOOK-PHYS-P05-QUANTUM-PROPER-TIME-OPTICAL-CLOCKS
+id: HOOK-PHYS-P05-QUANTUM-PROPER-TIME-OPTICAL-CLOCKS
 patch_id: PATCH-PHYS-P05-QUANTUM-PROPER-TIME-OPTICAL-CLOCKS
-target_document: "Physics/SRT_Physics_Bridge_v0_2.md"
-status: pending
+type: integration_hook
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
 domain: physics_quantum_time
+status: active
+integration_status: pending
+landing_ledger:
+  - target: "Physics/SRT_Physics_Bridge_v0_2.md"
+    state: pending
+    target_status: planned
+    blocked_by: "目标 `Physics/SRT_Physics_Bridge_v0_2.md` 是计划中的 Physics bridge 综合文，从未创建（三份 patch 与三张 SourceCard 均以 `target_future_doc` 引用它）。落点二选一——新建该综合文，或改并入现有 `Physics/_SRT_Phys_Bridge.md`——属作者裁决，2026-07-25 闭环审计不代拍板"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # Integration Hook: P05 Quantum Proper Time and Optical Ion Clocks

@@ -1,8 +1,6 @@
 ---
 hook_id: HOOK-PHIL-SOC-COG02-DEVELOPMENTAL-COORDINATION-SCAFFOLD
 patch_id: PATCH-PHIL-SOC-COG02-DEVELOPMENTAL-COORDINATION-SCAFFOLD
-target_document: "Philosophy/SRT_Social_Cognition.md"
-status: integrated
 domain: philosophy_social_cognition
 layer: operations
 epistemic_layer: os
@@ -10,6 +8,13 @@ claim_mode: evidence
 canonical: false
 type: integration_hook
 id: HOOK-PHIL-SOC-COG02-DEVELOPMENTAL-COORDINATION-SCAFFOLD
+status: active
+integration_status: landed
+landing_ledger:
+  - target: "Philosophy/SRT_Social_Cognition.md"
+    state: landed
+    anchor: "T-Cog-7"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # Integration Hook: SOC-COG02 Developmental Coordination Scaffold

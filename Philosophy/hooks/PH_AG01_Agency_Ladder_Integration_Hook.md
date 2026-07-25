@@ -1,8 +1,6 @@
 ---
 hook_id: HOOK-PHIL-PH-AG01-AGENCY-LADDER
 patch_id: PATCH-PHIL-PH-AG01-AGENCY-LADDER
-target_document: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
-status: pending
 domain: philosophy_of_mind
 layer: operations
 epistemic_layer: os
@@ -10,6 +8,13 @@ claim_mode: evidence
 canonical: false
 type: integration_hook
 id: HOOK-PHIL-PH-AG01-AGENCY-LADDER
+status: active
+integration_status: landed
+landing_ledger:
+  - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
+    state: landed
+    anchor: "controlled transition-readiness"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # Integration Hook: PH-AG01 Agency Ladder
