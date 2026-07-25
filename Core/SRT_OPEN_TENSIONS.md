@@ -38,6 +38,8 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction; **Level A framing de-overload applied 2026-07-05** (L0 §六 / 正骨架 label / d-value §5b.1) | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the Level B stance rewrite (realist → constitutive stance) remains proposal-only | not "all normativity = anti-foreclosure"; not "boundary problem solved"; Level A trims wording only — it does not close the boundary problem |
 | selection irreducibility / competitor-vocabulary deletion (§13) | Claim Ladder: `selection` is a P0 primitive axiom (P0-01); GOV-SUB01 §8.1 defines the (not-yet-run) deletion test | whether asymmetric constraint + reachable-set change + irreversible writeback + payability + bearer-specific consequence return can replace the `selection` primitive with no lost difference | GOV-SUB01 residue status **unassigned** (no deletion test run); must not be presented as a proven-irreducible ontological ultimate; representational substitutability under broad refit ≠ role absence |
 
+| P1-T07 proof gap / stability semantics / κ₀–ε_pg overlap (§14) | `∅` is absorbing under irreversibility; the anti-closure claim is registered across P1-T07, T-IRR-3, and T-COLL-3 | a valid Step-3 inference (nonzero per-step hazard ⇏ a.s. termination), a formal `ε-neutral` definition, a chosen S1/S2/S3 stability semantics, and an ε-independent absorption result | P1-T07 must not be cited as deriving `ε` from irreversibility alone; T-COLL-3 is not independent corroboration; ε_pg-independence is **neither established nor disproven**; audit residue labels are not canonical status changes |
+
 These are pressure points, not new axioms. They route later work and block overclaiming.
 
 ---
@@ -578,3 +580,42 @@ A future deletion pass may attach a residue label to `selection` only if it exhi
 4. a phenomenological or normative distinction (`E_phen` / `E_norm`) — bearer-specific consequence return, directional self-readability — the reduced vocabulary demonstrably fails to carry.
 
 Absent such a result, domain, book, and public files must **not** present `selection` as "proven irreducible." They may cite its current **P0 primitive-axiom** status (per `Governance/SRT_CLAIM_LADDER.md`) but must not attach any GOV-SUB01 residue label to it. This tension introduces no new symbol and does not change `P0-01` or `P0-04`. Any residue classification, if reached, comes only from an executed deletion test — never asserted in advance and never read off the axiom status.
+
+---
+
+## 14. P1-T07 Proof Gap, Stability Semantics, and the κ₀ / ε_pg Origin Overlap (open, registered 2026-07-22)
+
+> **Level**: registration of an audited proof gap. This section **records** findings from `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`; it does **not** amend `P1-T07`, `T-COLL-3`, `ν_block`, `ε_pg`, or `κ₀`, and does not by itself change any claim level.
+
+### Current State
+
+`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T07` (canonical, P1) states that any stable ISP under `L_0` irreversibility necessarily contains an `ε`-type anti-closure bias, via a five-step Proof Sketch. `Core_Law/SRT_Collective_Selection.md T-COLL-3` lifts the same argument to collective ISPs. `Core_Law/SRT_Irreversibility.md §4.5` builds `ν_block := η·ε_pg·κ_Ψf` on that basis.
+
+### Problem Point
+
+An audit of the proof (`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`, with `Operations/Audits/Maps/SRT_P1_T07_ASSUMPTION_MAP.md`) found four open items:
+
+1. **Step 3 is a non-sequitur as written.** "Nonzero probability of selecting into `A_{t*}=∅` at each step ⇒ cumulative probability tends toward 1" does not follow. With death hazard `h_t := P(A_{t+1}=∅ | H_t, A_t≠∅)`, survival is `P(τ>n)=∏_{k≤n}(1-h_k)`, and `∏(1-h_k)>0 ⟺ Σh_k<∞` — so every `h_t>0` is compatible with permanent survival (e.g. `h_t=2^{-t}` gives `∏(1-2^{-t})≈0.2888>0`). Divergence of the cumulative conditional hazard along surviving histories is a **sufficient** condition for a.s. termination; the exact necessary-and-sufficient characterization remains to be formalized.
+2. **"ε-neutral" has no formal definition** in `Core/` or `Core_Law/`, yet it is load-bearing in the proof. Three **diagnostic** branches (not a proven-exhaustive classification): an independent neutral definition that admits a surviving countermodel ⇒ the theorem fails under that semantics; neutrality defined by the survival/hazard *outcome* ⇒ circular; an independently defined neutral baseline kernel shown to absorb a.s. ⇒ the result may be recoverable.
+3. **Stability semantics are unfixed.** `P1-T06` states stable-ISP conditions non-probabilistically and does not select among **S1** pathwise (`τ=∞` on a realized history), **S2** almost-sure (`P(τ=∞)=1`), and **S3** positive-survival (`P(τ=∞)>0`). On a realized history with `τ<∞`, only **S1 fails on that history**; **S2** fails only if `P(τ<∞)>0` and **S3** only if `P(τ=∞)=0`. No unconditional *process-level* stable-ISP verdict follows from `τ<∞` before that choice.
+4. **A source-direction circularity.** `Core_Law/SRT_Irreversibility.md §4.5` treats `ε_pg>0` as *guaranteed by* P1-T07, while P1-T07's own bridge relation takes `ε_pg`'s existence as an *input*; `Core_Law/SRT_L0_Metaphysics.md §六` independently states that `ε` is a postulate and must not be upgraded to a theorem. The `L_0` `ε_pg`-postulate vs ISP-level-`ε`-corollary **level distinction is legitimate**; the circularity is specifically in the source direction.
+
+**Related (from `Operations/Audits/SRT_CONCEPT_DELETION_PASS2_KAPPA_EPSILON.md`)**: `κ₀` and `ε_pg` partially co-refer (`T-L0-Kappa0` describes itself as the geometric refinement of `T-Core-A1C2`), while `L0_Metaphysics §六` treats `κ₀` as non-directional and `ε` as `L_0`'s sole directional postulate — the corpus is not internally settled on their relation. Both also occupy the `P0-04` selectability-origin gap (§7 above) without closing it.
+
+### Must Not Be Overstated
+
+- Do **not** cite P1-T07 as an established derivation of `ε` from irreversibility alone; the anti-closure claim is **registered but not independently secured**.
+- Do **not** cite `T-COLL-3` as independent corroboration: its proof is explicitly isomorphic to P1-T07 and inherits the same gap and the same semantic ambiguity.
+- Do **not** read this section as showing `ε_pg` is dispensable. ε_pg-independence is **not established and not disproven**; the load-bearing structural premises are undecided pending an independently specified neutral kernel / state-space geometry.
+- Do **not** treat the audit's residue labels as canonical status changes. `P1-T07`, `T-COLL-3`, `ν_block`, `ε_pg^{visible}`, `ε_pg`, and `κ₀` are unchanged.
+
+### Future Hardening Direction
+
+Any amendment is routed through `Governance/SRT_CLAIM_LADDER.md` and `Governance/SRT_EDIT_PROTOCOL.md`, and requires discharging in order:
+
+1. **Choose a stability semantics** (S1 / S2 / S3) and state it in `P1-T06`;
+2. **Define "ε-neutral"** as a property of an independently specified transition kernel — not as a survival outcome;
+3. **Establish absorption** for that neutral baseline (candidate sufficient packages: uniform hazard lower bound; divergent cumulative hazard; Markov absorption with no closed recurrent class avoiding `∅`);
+4. Only then restate P1-T07 (the drafted routes are recorded in `Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`, none applied), and correct the `ν_block` positivity sourcing accordingly.
+
+Until at least (1)–(3) are discharged, P1-T07 should be cited as a **scoped constitutive claim whose proof is under hardening**, not as a closed theorem.
