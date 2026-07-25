@@ -224,6 +224,6 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **breakout_count**: 未标（整理稿不含逐轮事件分类）
 - **pending_confirmations**: 全部内容均为整理稿，未经逐句作者签署；`q` 是否与 `d` 正交、`o` 是否设符号两项**待作者裁决**
 - **tension_count**: 5
-- **unresolved_tensions**: [TQ-01 q 是否正交（有实质重叠但未判定）, TQ-02 d 取范数还是参与率, TQ-03 o 是否可操作化, TQ-04 本体论→认识论未过桥接门, TQ-05 锤子句的空间化风险]
+- **unresolved_tensions**: [TQ-01 q 是否正交（有实质重叠但未判定）, TQ-02 d 取范数还是参与率, TQ-03 o 封闭单标量不成立、弱操作化未决, TQ-04 本体论→认识论未过桥接门, TQ-05 锤子句的空间化风险]
 - **closure_pipeline_done**: partial（张力表、根问题与分支摘要、忠实度复核、canonical 碰撞、术语撞车、路由、INDEX 与 STATUS 留痕已完成；**根问题回返审计为事后重构、逐轮选项无法回收**，这两项不可补）
-- **downstream_guard**: 符号层七项中五项硬撞车；`d/q/o` 在符号重命名与 `q` 的形式选择做出前，不得进入书稿、公共内容、bridge 文件或论文
+- **downstream_guard**: 九个候选记号中三个重命名既有对象、三个违反记号约定、一个有撞车风险；`d/q/o` 在符号重命名与 `q`（是否独立轴）/ `o`（可否弱操作化）两项裁决做出前，不得进入书稿、公共内容、bridge 文件或论文
