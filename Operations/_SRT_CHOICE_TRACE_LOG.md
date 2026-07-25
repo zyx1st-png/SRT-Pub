@@ -212,3 +212,18 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **tension_count**: 8
 - **unresolved_tensions**: [T-YY-01 幽灵与阴的类比/同一, T-YY-02 动态平衡术语, T-YY-03 摩擦层级, T-YY-04 阴的非无差别扩散, T-YY-05 选择绝对化层级, T-YY-06 同一性, T-YY-07 意识接口, T-YY-08 规范性]
 - **closure_pipeline_done**: false（已完成源直觉冻结、解释提案隔离、张力表、crosswalk 与暂停点记录；canonical 术语审计和 Y 层继续待后续）
+
+### CT-20260725-01（pointer · conversation material，非逐轮 trace）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: retro_writeback（整理稿；原始逐轮对话未保存，选项全集与作者原话**不可逐字回收**）
+- **date**: 2026-07-23 / 2026-07-24（材料）；2026-07-25（收尾审计）
+- **trace_file**: `01_Source_Intuition/Conversations/2026-07-23_SRT_具身位_d与三层关切架构_对话材料.md` + `01_Source_Intuition/Conversations/2026-07-24_SRT_客体性客观性与d_q_o三轴_对话补充.md`
+- **closure_audit_file**: `01_Source_Intuition/Conversations/2026-07-25_具身位_d_q_o_收尾审计.md`
+- **one_line**: 具身位从「稳定结构」改写为「后果回流所持续个体化出来的承重极」，d 由此成为位置与世界之间的赌注耦合剖面而非主体属性；续轮提出三层关切架构与 `d`／`q`／`o` 三轴，并把客体性（攸关但非我）与客观性（跨具身位不变量）分开。
+- **breakout_count**: 未标（整理稿不含逐轮事件分类）
+- **pending_confirmations**: 全部内容均为整理稿，未经逐句作者签署；`q` 是否与 `d` 正交、`o` 是否设符号两项**待作者裁决**
+- **tension_count**: 5
+- **unresolved_tensions**: [TQ-01 q 是否正交, TQ-02 d 取范数还是参与率, TQ-03 o 是否可操作化, TQ-04 本体论→认识论未过桥接门, TQ-05 锤子句的空间化风险]
+- **closure_pipeline_done**: partial（张力表、根问题与分支摘要、忠实度复核、canonical 碰撞、术语撞车、路由、INDEX 与 STATUS 留痕已完成；**根问题回返审计为事后重构、逐轮选项无法回收**，这两项不可补）
+- **downstream_guard**: 符号层七项中五项硬撞车；`d/q/o` 在符号重命名与 `q` 的形式选择做出前，不得进入书稿、公共内容、bridge 文件或论文

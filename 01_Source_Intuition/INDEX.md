@@ -42,6 +42,16 @@ This index points to existing files that carry SRT's source-level force. It does
 | [`SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md`](SRT_GHOST_NONCLOSURE_PRESSURE_SOURCE_CARD_2026-07-19.md) | Parent source card: objectification as local relief/binding of reality-change pressure; ghost as the readable/objectified form of pressure that objectification cannot stabilize; consciousness/value/soul/purpose as four candidate projections of nonclosure. Separates verbatim claims, accepted bridges, unresolved tensions, traditional-theory neighbors, canonical crosswalk, book return routes, and meta audit. High-priority retrieval card; not a definition source. |
 | [`SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md`](SRT_GHOST_YIN_YANG_OBJECT_FRICTION_CONTINUATION_CARD_2026-07-19.md) | Live ChoiceMap continuation from the parent card. Preserves the author's yin–yang/ridge metaphor, “阴扩散，阳收敛,” L0/minimal-non-neutrality/初心/reselectability linkage, choice-absolutization analysis, rejection of the close–reopen model, and the object–friction co-writing account. Includes selected assistant explanations at the author's request, superseded models, crosswalk routes, formal hints, meta audit, and the pending Y-layer identity question. Not a definition source. |
 
+## Conversation Research Materials (整理稿，非逐轮 trace)
+
+> **证据等级低于上面的 choice-trace**：这些是**整理后的研究材料**，原始逐轮对话未保存，选项全集与作者原话不可逐字回收。引用时按此降权，不得当作可回溯的选择轨迹。全部 `canonical: false`，非定义源。
+
+| File | What it holds |
+|---|---|
+| [`Conversations/2026-07-23_SRT_具身位_d与三层关切架构_对话材料.md`](Conversations/2026-07-23_SRT_具身位_d与三层关切架构_对话材料.md) | 具身位重定义为「后果回流所持续个体化出来的承重极」而非稳定结构；跨学科近邻排序（西蒙东/杜威/Barad/布迪厄/怀特海）；内外边界共同生成的递归式；d 作为具身位的关切几何与 d-profile；强度/宽度分叉；三层关切架构（零回流域 / 非构成性关切域 / 自体承重核）。**先读 [收尾审计](Conversations/2026-07-25_具身位_d_q_o_收尾审计.md)**。 |
+| [`Conversations/2026-07-24_SRT_客体性客观性与d_q_o三轴_对话补充.md`](Conversations/2026-07-24_SRT_客体性客观性与d_q_o三轴_对话补充.md) | 07-23 的续轮：第二关切层首先产生**客体性**（攸关但非我）而非完整客观性；客观性作为跨具身位不变量；提出 `d`（关切宽度）/ `q`（构成深度）/ `o`（客观稳定度）三轴，并主张内外是构成切分、主客是位置依赖切分。**先读 [收尾审计](Conversations/2026-07-25_具身位_d_q_o_收尾审计.md)**。 |
+| [`Conversations/2026-07-25_具身位_d_q_o_收尾审计.md`](Conversations/2026-07-25_具身位_d_q_o_收尾审计.md) | 上两份材料补做的 `_SRT_CHOICEMAP_TRACE_WORKFLOW.md §9` 收尾管线：符号撞车检查（七项中五项硬撞车，`ρ`/`Ω`/`τ_self`/`g` 均已被 canonical 占用；`w_i`、`D_stake`、`d_canonical` 各被重新发明一次）、canonical 碰撞三分类、四条真增量（d/q 解耦、客体性≠客观性、内外边界共生成、构成深度可逆下降）、三条触雷（`q` 与 canonical d 准入要件重叠触 refit-budget；`o` 继承 OPEN_TENSIONS §9 未封口；`d` 取宽度与 `Def-d-canonical` 冲突）、张力表与路由建议。**全部路由为候选，无一落地。** |
+
 ## How To Use This Index
 
 - Use this layer when you need the theory's founding reversal, philosophical force, or non-bureaucratic entrance.
