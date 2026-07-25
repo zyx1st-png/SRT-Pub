@@ -13,7 +13,7 @@ integration_status: landed
 landing_ledger:
   - target: "Neuroscience/SRT_Consciousness_Mechanisms.md"
     state: landed
-    anchor: "propofol"
+    anchor: "cross-anesthetic destabilization window"
 closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 

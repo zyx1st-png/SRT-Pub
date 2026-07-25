@@ -11,7 +11,7 @@ integration_status: partial
 landing_ledger:
   - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
     state: landed
-    anchor: "many-many"
+    anchor: "## 3. Triggering causes and structuring biases"
   - target: "_SRT_T_DIR_CANONICAL.md"
     state: pending
     blocked_by: "canonical freeze：改 `T_dir` 主定义属 SRT_EDIT_PROTOCOL C 类高风险编辑，需作者授权"

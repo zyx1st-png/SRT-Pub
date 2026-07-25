@@ -13,7 +13,7 @@ integration_status: landed
 landing_ledger:
   - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
     state: landed
-    anchor: "controlled transition-readiness"
+    anchor: "## 2. Controlled transition-readiness"
 closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 

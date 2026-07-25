@@ -13,10 +13,10 @@ integration_status: landed
 landing_ledger:
   - target: "SRT_EXP_MEASURE_MAP.md"
     state: landed
-    anchor: "High-gamma"
+    anchor: "High-gamma local-spike dissociation gate"
   - target: "Neuroscience/SRT_Neural_Mechanisms.md"
     state: landed
-    anchor: "High-gamma"
+    anchor: "High-gamma/spike dissociation gate"
 closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 

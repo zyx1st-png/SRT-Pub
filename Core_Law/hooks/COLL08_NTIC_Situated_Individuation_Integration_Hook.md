@@ -13,10 +13,10 @@ integration_status: landed
 landing_ledger:
   - target: "Core_Law/SRT_Collective_Selection.md"
     state: landed
-    anchor: "NTIC"
+    anchor: "### §4.8a Situated individuation diagnostic"
   - target: "Core_Law/SRT_Reference_Scaling.md"
     state: landed
-    anchor: "NTIC"
+    anchor: "NTIC = Non-Trivial Information Closure"
 closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 

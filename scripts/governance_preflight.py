@@ -73,6 +73,11 @@ def main() -> None:
         )
     steps.append(("frontmatter", frontmatter_cmd))
 
+    if (ROOT / "scripts" / "test_check_hooks.py").is_file():
+        steps.append(
+            ("integration hook checker tests", [python, "scripts/test_check_hooks.py"])
+        )
+
     hooks_cmd = [python, "scripts/check_hooks.py"]
     if args.strict:
         hooks_cmd.append("--strict")

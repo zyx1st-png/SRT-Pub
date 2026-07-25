@@ -106,11 +106,24 @@ landing_ledger:
 新增 `scripts/check_hooks.py`，已接入 `scripts/governance_preflight.py`（因而进 CI）。它强制：
 
 1. 每张 hook 必须有 `integration_status` 与非空 `landing_ledger`；
-2. 每个 target 必须存在——除非显式声明 `withdrawn` + 理由，或 `pending` + `target_status: planned` + 理由；
-3. 每条 `landed` 必须带 anchor，且该 anchor 字面出现在 target 中；
-4. `integration_status` 必须与 ledger 自洽（全 landed → landed；无 landed → pending；混合 → partial）。
+2. target 必须是**仓库相对的 Markdown 路径且不越界**（禁绝对路径、禁 `..`、resolve 后须在 ROOT 内）；
+3. 每个 target 必须存在——除非显式声明 `withdrawn` + `withdrawn_reason`，或 `pending` + `target_status: planned` + `blocked_by`；
+4. 每条 `landed` 必须带 anchor，且该 anchor 在 target 中**恰好出现一次**；
+5. `integration_status` 必须与 ledger 自洽（全 landed → landed；无 landed → pending；混合 → partial；全 withdrawn → withdrawn，withdrawn 条目不参与聚合）。
 
-第 3 条是本轮的核心：**「已融入」从自述变成可验证**。第 2 条的两个逃逸口都要求把缺席写出来，因此死 target 无法再隐形。
+第 4 条是本轮的核心：**「已融入」从自述变成可验证**。唯一命中不是形式讲究——通用子串（`many-many`、`authorial`、`CMRO`）会在无关段落误命中，让陈旧的 `landed` 声明蒙混过关。本轮据此替换了 9 个非唯一 anchor，改用章节标题、claim ID 或指向该 hook 自身的 source-trail 链接。
+
+第 3 条的两个逃逸口都要求把缺席写出来，因此死 target 无法再隐形。
+
+### 4.3 契约必须住在权威流程里
+
+检查器强制的规则已**同步回写** `Operations/_SRT_MATERIAL_PIPELINE.md §5.6.1`（完整 frontmatter 示例、字段职责、四态聚合规则、planned / withdrawn 边界、anchor 质量要求）。
+
+理由：CI 已强制而权威流程未写，会形成**隐藏契约**——日后按 Pipeline 文件建 hook 的人会拿到合规失败，却无法从权威文档知道正确格式。这与本轮要消除的失效模式是同一类。脚本负责执行，§5.6.1 负责定义，两者必须同步。
+
+### 4.4 检查器自身的测试
+
+`scripts/test_check_hooks.py` 用临时目录 fixture 覆盖 15 条：四种状态各一条合法用例，以及路径越界（`..` / 绝对路径）、非 Markdown target、withdrawn 缺理由、target 不存在、anchor 缺失 / 非唯一、planned 但目标已存在、状态与 ledger 不符、ledger 缺失、状态枚举越界，外加五条聚合语义。已接入 preflight，在 `check_hooks` 之前运行。
 
 ## 5. 顺带清理
 

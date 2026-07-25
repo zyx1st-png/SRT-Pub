@@ -5,31 +5,40 @@ Pipeline 1 (`Operations/_SRT_MATERIAL_PIPELINE.md` §5.6) ends at the
 IntegrationHook: the record of how a material patch is meant to reach body
 text. Before the 2026-07-25 closure audit there was no machine check that a
 hook's declared target existed, or that a hook claiming to be integrated had
-actually landed. Three Physics hooks pointed at a file that never existed and
-four Philosophy hooks silently carried unlanded canonical targets.
+actually landed. Three Physics hooks pointed at a document that was never
+created and four Philosophy hooks silently carried unlanded targets.
 
-This checker enforces the closure ledger:
+The authoritative contract for the ledger lives in
+`Operations/_SRT_MATERIAL_PIPELINE.md` §5.6. This module enforces it; it does
+not define it. Keep the two in sync — a rule enforced here but absent there is
+a hidden contract, which is the failure mode this whole check exists to remove.
 
     integration_status: landed | partial | pending | withdrawn
     landing_ledger:
       - target: <repo-relative .md path>
         state: landed | pending | withdrawn
-        anchor: "<literal substring that must occur in target>"   # landed only
-        blocked_by: "<reason>"                                    # pending only
+        anchor: "<literal string occurring EXACTLY ONCE in target>"  # landed
+        blocked_by: "<reason>"                                       # pending
+        withdrawn_reason: "<reason>"                                 # withdrawn
         target_status: planned      # target document does not exist yet
 
 Rules:
 1. Every hook under `*/hooks/*_Integration_Hook.md` must declare
    `integration_status` and a non-empty `landing_ledger`.
-2. Every ledger target must exist, whatever its state. Two escapes, both of
-   which force the absence to be stated rather than hidden: a `withdrawn` entry
-   carrying `withdrawn_reason`, and a `pending` entry carrying
-   `target_status: planned` (a synthesis document that is planned but has never
-   been created — a real category here, e.g. the Physics bridge v0.2 doc that
-   three 2026-04 hooks were written against).
-3. Every `landed` entry must carry an `anchor` that literally occurs in the
-   target file. This is what makes "已融入" checkable rather than self-reported.
-4. `integration_status` must agree with the ledger: all landed -> `landed`;
+2. Targets must be repo-relative Markdown paths that stay inside the repo: no
+   absolute paths, no `..` escapes, `.md` suffix required. Two relaxations,
+   neither of which weakens containment: a `target_status: planned` target
+   names a document that does not exist yet, and a `withdrawn` target is a
+   historical record that may never have been a real path at all.
+3. Every target must exist. Two escapes, both of which force the absence to be
+   stated rather than hidden: a `withdrawn` entry carrying `withdrawn_reason`,
+   and a `pending` entry carrying `target_status: planned` plus `blocked_by`.
+4. Every `landed` entry must carry an anchor that occurs **exactly once** in
+   the target. Uniqueness is the point: a generic substring can match text
+   that has nothing to do with the hook, which would let a stale `landed`
+   claim survive the check. Prefer a section heading, a claim ID, or a source
+   trail link to the hook file itself.
+5. `integration_status` must agree with the ledger: all landed -> `landed`;
    none landed -> `pending`; mixed -> `partial`; all withdrawn -> `withdrawn`.
 
 The frontmatter parser in `governance_common` is line-oriented and does not
@@ -40,19 +49,18 @@ from __future__ import annotations
 
 from pathlib import Path
 import argparse
-import re
-import sys
 
 from governance_common import ROOT, read_text, relpath, should_skip
 
 HOOK_GLOB = "*_Integration_Hook.md"
 LEDGER_STATES = {"landed", "pending", "withdrawn"}
 HOOK_STATUSES = {"landed", "partial", "pending", "withdrawn"}
+MARKDOWN_SUFFIXES = {".md", ".markdown"}
 
 
-def iter_hooks() -> list[Path]:
+def iter_hooks(root: Path = ROOT) -> list[Path]:
     hooks: list[Path] = []
-    for path in ROOT.rglob(HOOK_GLOB):
+    for path in root.rglob(HOOK_GLOB):
         if should_skip(path) or not path.is_file():
             continue
         if path.parent.name != "hooks":
@@ -127,8 +135,31 @@ def expected_status(entries: list[dict[str, str]]) -> str:
     return "partial"
 
 
-def check_hook(path: Path) -> list[str]:
-    rel = relpath(path)
+def target_path_problem(
+    target: str, root: Path, require_markdown: bool = True
+) -> str | None:
+    """Reject targets that are not repo-relative Markdown paths inside root.
+
+    `require_markdown` is relaxed for withdrawn entries: those are historical
+    records, and some name a target that was never a real path (an aspirational
+    "future bridge document"). They are never opened, so only the containment
+    rules apply — but they still owe a `withdrawn_reason`.
+    """
+    candidate = Path(target)
+    if candidate.is_absolute():
+        return f"target must be repo-relative, got absolute path: {target}"
+    if ".." in candidate.parts:
+        return f"target must not escape the repo with '..': {target}"
+    if require_markdown and candidate.suffix not in MARKDOWN_SUFFIXES:
+        return f"target must be a Markdown file: {target}"
+    resolved = (root / candidate).resolve()
+    if not resolved.is_relative_to(root.resolve()):
+        return f"target resolves outside the repository: {target}"
+    return None
+
+
+def check_hook(path: Path, root: Path = ROOT) -> list[str]:
+    rel = relpath(path, root)
     problems: list[str] = []
     block = frontmatter_block(read_text(path))
     if block is None:
@@ -148,6 +179,8 @@ def check_hook(path: Path) -> list[str]:
         label = f"{rel}: landing_ledger[{index}]"
         target = entry.get("target", "")
         state = entry.get("state", "")
+        planned = entry.get("target_status", "") == "planned"
+
         if state not in LEDGER_STATES:
             problems.append(
                 f"{label}: state `{state or '<absent>'}` not in "
@@ -157,8 +190,19 @@ def check_hook(path: Path) -> list[str]:
             problems.append(f"{label}: missing target")
             continue
 
-        planned = entry.get("target_status", "") == "planned"
-        target_path = ROOT / target
+        path_problem = target_path_problem(
+            target, root, require_markdown=(state != "withdrawn")
+        )
+        if path_problem:
+            problems.append(f"{label}: {path_problem}")
+            continue
+
+        # A withdrawn entry always owes a reason, whether or not the target
+        # still exists — otherwise "withdrawn" becomes a silent delete.
+        if state == "withdrawn" and not entry.get("withdrawn_reason"):
+            problems.append(f"{label}: withdrawn entry has no withdrawn_reason")
+
+        target_path = root / target
         if not target_path.is_file():
             if state == "withdrawn" and entry.get("withdrawn_reason"):
                 continue
@@ -176,10 +220,18 @@ def check_hook(path: Path) -> list[str]:
             anchor = entry.get("anchor", "")
             if not anchor:
                 problems.append(f"{label}: landed entry has no anchor")
-            elif anchor not in read_text(target_path):
-                problems.append(
-                    f"{label}: anchor not found in {target}: {anchor!r}"
-                )
+            else:
+                hits = read_text(target_path).count(anchor)
+                if hits == 0:
+                    problems.append(
+                        f"{label}: anchor not found in {target}: {anchor!r}"
+                    )
+                elif hits > 1:
+                    problems.append(
+                        f"{label}: anchor occurs {hits}x in {target} — use a "
+                        f"unique heading, claim ID or source-trail link: "
+                        f"{anchor!r}"
+                    )
         elif state == "pending" and not entry.get("blocked_by"):
             problems.append(f"{label}: pending entry has no blocked_by reason")
 

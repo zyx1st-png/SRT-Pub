@@ -292,6 +292,78 @@ Registries/claim_registry.jsonl
 5. Do not include
 6. Future synthesis target
 
+### 5.6.1 落地账（landing ledger）——自 2026-07-25 起强制
+
+> **本节是 hook 落地状态的权威契约**，由 `scripts/check_hooks.py` 在 `governance_preflight` 中机器强制（因而进 CI）。脚本负责执行，本节负责定义；两者必须同步——**只在脚本里存在、本节没写的规则属于隐藏契约，正是本机制要消除的失效模式**。
+
+背景：2026-07-25 闭环审计发现，管线前五段都有台账，唯独 hook → 正文这一段无法回答"这张 hook 到底落地没有"。当时 18 张 hook 里，1 张已落地却标 pending，4 张状态写法不可判读，3 张指向从未创建的文档。根因是 `status` 一个字段同时承担了两件不同的事。
+
+**字段职责必须分开：**
+
+| 字段 | 回答什么 | 取值 |
+|---|---|---|
+| `status` | 这个**文件**是否在用 | frontmatter ratchet enum：`draft` / `active` / `frozen` / `archived` |
+| `integration_status` | 这张 **hook** 是否落到正文 | `landed` / `partial` / `pending` / `withdrawn` |
+
+**完整 frontmatter 示例：**
+
+```yaml
+---
+id: HOOK-<DOMAIN>-<CLAIMID>-<SHORT-TOPIC>
+patch_id: PATCH-<DOMAIN>-<CLAIMID>-<SHORT-TOPIC>
+type: integration_hook
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+domain: <domain_topic>
+status: active
+integration_status: partial
+landing_ledger:
+  - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
+    state: landed
+    anchor: "## 3. Triggering causes and structuring biases"
+  - target: "_SRT_T_DIR_CANONICAL.md"
+    state: pending
+    blocked_by: "canonical freeze：改 `T_dir` 主定义属 C 类高风险编辑，需作者授权"
+  - target: "Physics/SRT_Physics_Bridge_v0_2.md"
+    state: pending
+    target_status: planned
+    blocked_by: "计划中的综合文，从未创建；落点属作者裁决"
+  - target: "future subjective-time bridge document"
+    state: withdrawn
+    withdrawn_reason: "从未是真实文件路径；不再作为待办追踪"
+closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
+---
+```
+
+**聚合规则**（`integration_status` 必须与 ledger 自洽，否则 CI 失败）：
+
+| ledger 情况 | `integration_status` |
+|---|---|
+| 非 withdrawn 条目全部 `landed` | `landed` |
+| 非 withdrawn 条目无一 `landed` | `pending` |
+| 非 withdrawn 条目部分 `landed` | `partial` |
+| 全部条目 `withdrawn` | `withdrawn` |
+
+`withdrawn` 条目不参与聚合——它是被移出待办的历史记录，不应把一张已全部落地的 hook 拖成 `partial`。
+
+**target 规则：**
+
+- 必须是**仓库相对路径**的 Markdown 文件；禁止绝对路径、禁止 `..` 越界；
+- 必须存在。只有两个逃逸口，且**都要求把"不存在"这件事写出来**：
+  - `state: withdrawn` + `withdrawn_reason`——该落点已被移出待办；
+  - `state: pending` + `target_status: planned` + `blocked_by`——目标是**计划中但从未创建**的文档（例如一份尚未动工的领域综合文）。这不是笔误的挡箭牌：只有当多份 patch / SourceCard / 索引一致把它当作 `target_future_doc` 引用时才成立，且必须写明落点二选一由谁裁决。
+- `target_status: planned` 的目标一旦真的创建，CI 会报错，强制把该条目改为 landed 或 pending。
+
+**anchor 规则（`landed` 专用）：**
+
+- 必须是在 target 文件中**恰好出现一次**的字面串；
+- 应优先取**稳定且可诊断**的东西：完整章节标题（`## 3. Triggering causes...`）、claim ID（`T-Cog-6`、`P3-B12`、`### §4.8a ...`）、或指向该 hook 文件本身的 source-trail 链接（`PH_AG04_..._Integration_Hook.md`）；
+- **不得**使用普通关键词或通用短语（`many-many`、`authorial`、`CMRO`）。它们会在无关段落误命中，从而让一条陈旧的 `landed` 声明蒙混过关——唯一命中要求正是为堵这个口。
+
+**边界**：`landed` 只断言"该锚串出现在该文件中"。它**不断言**回写质量、去材料化程度或 claim-level 正确性——那属于内容评审，不属于闭环检查。
+
 ---
 
 ## 6. 正文回写规则
