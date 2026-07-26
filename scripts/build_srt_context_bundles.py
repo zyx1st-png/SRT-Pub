@@ -208,14 +208,26 @@ class Provenance:
     dirty: bool
 
 
+def porcelain_path(line: str) -> str:
+    """从 `git status --porcelain` 的一行里取出路径。
+
+    不能用定宽切片：`git()` 会 strip 整个 stdout，第一行的前导空格因此消失，
+    ` M path` 变成 `M path`，定宽切法会多切掉一个字符。改为按空白切分。
+    """
+    rest = line.strip().split(None, 1)
+    if len(rest) < 2:
+        return ""
+    path = rest[1].strip()
+    if " -> " in path:  # 重命名：以目的路径为准
+        path = path.split(" -> ", 1)[1]
+    return path.strip().strip('"')
+
+
 def working_tree_dirty() -> bool:
     """判断来源工作树是否有未提交改动；生成物目录本身不计入。"""
-    out = git("status", "--porcelain")
-    for line in out.splitlines():
-        path = line[3:].strip().strip('"')
-        if path.startswith(BUNDLE_DIR_REL):
-            continue
-        if path:
+    for line in git("status", "--porcelain").splitlines():
+        path = porcelain_path(line)
+        if path and not path.startswith(BUNDLE_DIR_REL):
             return True
     return False
 

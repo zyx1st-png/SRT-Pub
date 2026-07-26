@@ -184,29 +184,57 @@ def test_determinism() -> None:
                   f"got {fm.get('source_dirty')}")
 
 
+def test_porcelain_path() -> None:
+    """`git()` strips stdout, so the first porcelain line loses its leading
+    space and fixed-width slicing eats a character off the path. That bug hid
+    behind a fake whose payload was never strip()ed."""
+    cases = [
+        ("M Operations/Context_Bundles/README.md",  # first line, already stripped
+         "Operations/Context_Bundles/README.md"),
+        (" M Operations/Context_Bundles/SPINE.md",
+         "Operations/Context_Bundles/SPINE.md"),
+        ("?? scripts/new_file.py", "scripts/new_file.py"),
+        ("MM Core/SRT_Core_22_Equations.md", "Core/SRT_Core_22_Equations.md"),
+        ("R  Core/old.md -> Core/new.md", "Core/new.md"),
+        ("", ""),
+    ]
+    for line, want in cases:
+        got = B.porcelain_path(line)
+        check(f"porcelain_path({line!r})", got == want, f"got {got!r}, want {want!r}")
+
+
 def test_dirty_excludes_bundle_dir() -> None:
     """The bundles' own churn must not count as a dirty source tree."""
     real = B.git
 
-    def fake(*args: str) -> str:
-        if args[:2] == ("status", "--porcelain"):
-            return " M Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md"
-        return real(*args)
+    def with_status(payload: str):
+        def fake(*args: str) -> str:
+            # Mirror git(): the real helper strips the whole stdout, which is
+            # exactly what removed the first line's leading space.
+            return payload.strip() if args[:2] == ("status", "--porcelain") else real(*args)
+        return fake
 
-    B.git = fake
+    bundle_only = (
+        " M Operations/Context_Bundles/README.md\n"
+        " M Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md"
+    )
+    B.git = with_status(bundle_only)
     try:
         check("dirty check ignores the bundle dir", B.working_tree_dirty() is False)
     finally:
         B.git = real
 
-    def fake_src(*args: str) -> str:
-        if args[:2] == ("status", "--porcelain"):
-            return " M Core/SRT_Core_22_Equations.md"
-        return real(*args)
-
-    B.git = fake_src
+    B.git = with_status(" M Core/SRT_Core_22_Equations.md")
     try:
         check("dirty check still catches source edits", B.working_tree_dirty() is True)
+    finally:
+        B.git = real
+
+    # A source edit listed after bundle churn must still register.
+    B.git = with_status(bundle_only + "\n M STATUS.md")
+    try:
+        check("dirty check catches a source edit among bundle churn",
+              B.working_tree_dirty() is True)
     finally:
         B.git = real
 
@@ -217,6 +245,7 @@ def run() -> None:
     test_guardrail_sections()
     test_fail_loud()
     test_determinism()
+    test_porcelain_path()
     test_dirty_excludes_bundle_dir()
 
     if FAILURES:
