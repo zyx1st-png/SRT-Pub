@@ -8,36 +8,41 @@
 1. **只拼装，不改写。** 每个来源文件的正文逐字保留；脚本只剥离 YAML frontmatter，
    并把其中承载权威信号的字段（claim_mode / status / canonical / dependency）
    重新渲染成显式的 provenance 头。不做摘要、不做润色、不合并同类项。
-2. **§0 护栏层全部自动抽取。** 未闭合命题、下游禁令、被冻结的回写，一律从
-   Operations/ 台账与 STATUS.md 里按锚点抽取原话。任一锚点找不到 → 脚本以非零
-   退出码失败，绝不静默产出一个没有护栏的包。
-3. **claim level 不得被拼装抹平。** P0-P5 阶梯与最小回答协议从 `SRT_AI_START.md`
-   原样注入每个包，使不含该文件的 CompactCore / 领域包也带着同一套边界。
+2. **护栏三段分离。** §0.2 每条护栏拆成 SOURCE EXTRACT（逐字来源）、
+   GENERATED INTERPRETATION（生成器归纳）、USAGE POLICY（规则及其授权依据）。
+   不把生成器的判断混进"来源原文"里冒充权威。
+3. **锚点失效即失败。** 抽取锚点找不到 → 非零退出码，绝不静默产出缺护栏的包。
+4. **可复现。** provenance 在任何写入之前一次性捕获；`--source-ref` /
+   `--generated-date` 可固定；`--check` 在临时目录重新生成并逐字比对。
 
 用法：
     uv run python scripts/build_srt_context_bundles.py
+    uv run python scripts/build_srt_context_bundles.py --check
 产出：
     Operations/Context_Bundles/
 """
 
 from __future__ import annotations
 
+import argparse
 import re
 import subprocess
 import sys
+import tempfile
+from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-OUT_DIR = REPO_ROOT / "Operations" / "Context_Bundles"
-TODAY = date.today().isoformat()
+DEFAULT_OUT_DIR = REPO_ROOT / "Operations" / "Context_Bundles"
+BUNDLE_DIR_REL = "Operations/Context_Bundles/"
+SPINE_BUNDLE_NAME = "SRT_CONTEXT_BUNDLE_SPINE.md"
 
 
 # --------------------------------------------------------------------------
 # 包定义
 # --------------------------------------------------------------------------
 
-# 骨架：承载定义权的 canonical 主干。顺序即建议阅读顺序。
 SPINE = [
     "SRT_AI_START.md",
     "CANONICAL_REGISTRY.md",
@@ -57,14 +62,10 @@ SPINE = [
     "Core/SRT_OPEN_TENSIONS.md",
 ]
 
-# 领域包：每个领域先放 claim-status（反过度声称护栏），再放导航，最后放 CompactCore。
 DOMAINS = {
     "AI": {
         "title": "AI 领域",
-        "guards": [
-            "AI/SRT_AI_Claim_Status.md",
-            "AI/AI_POSITIONING_NOTE.md",
-        ],
+        "guards": ["AI/SRT_AI_Claim_Status.md", "AI/AI_POSITIONING_NOTE.md"],
         "nav": ["AI/README.md"],
         "cores": [
             "AI/SRT_AI_01_Ontology_CompactCore.md",
@@ -123,8 +124,6 @@ DOMAINS = {
     },
 }
 
-# 已知的行文简写 → 真实路径。骨架正文里这些是人读简写，机器按字面找会落空。
-# 不改原文，只在 §0 给出对照表。
 PATH_SHORTHANDS = {
     "Core_21_Formal_Axioms.md": "Core/SRT_Core_21_Formal_Axioms.md",
     "_SRT_SYMBOL_QUICK_GUARD.md": "SRT_AI_START.md §3（已于 2026-07-20 并入，原文件不再存在）",
@@ -184,12 +183,10 @@ def split_frontmatter(text: str) -> tuple[dict[str, str], str]:
 
 
 def blockquote(text: str) -> str:
-    """把多行文本整体转成 markdown 引用块（每行都加 `>`）。"""
     return "\n".join(("> " + ln) if ln.strip() else ">" for ln in text.splitlines())
 
 
 def extract_section(text: str, heading_pattern: str, source: str) -> str:
-    """抽取 `## <heading>` 到下一个同级标题之间的内容。找不到即失败。"""
     m = re.search(rf"^(##\s+{heading_pattern}.*?)$", text, re.M)
     if not m:
         fail(f"锚点缺失：在 {source} 中找不到标题 /{heading_pattern}/")
@@ -200,28 +197,107 @@ def extract_section(text: str, heading_pattern: str, source: str) -> str:
 
 
 # --------------------------------------------------------------------------
-# §0 护栏层：全部自动抽取，锚点缺失即失败
+# Provenance：任何写入之前一次性捕获
 # --------------------------------------------------------------------------
 
-def guard_p1_t07() -> str:
+@dataclass(frozen=True)
+class Provenance:
+    sha: str
+    branch: str
+    generated: str
+    dirty: bool
+
+
+def working_tree_dirty() -> bool:
+    """判断来源工作树是否有未提交改动；生成物目录本身不计入。"""
+    out = git("status", "--porcelain")
+    for line in out.splitlines():
+        path = line[3:].strip().strip('"')
+        if path.startswith(BUNDLE_DIR_REL):
+            continue
+        if path:
+            return True
+    return False
+
+
+def capture_provenance(source_ref: str | None, generated_date: str | None) -> Provenance:
+    return Provenance(
+        sha=(source_ref or git("rev-parse", "--short", "HEAD") or "unknown"),
+        branch=git("rev-parse", "--abbrev-ref", "HEAD") or "unknown",
+        generated=(generated_date or date.today().isoformat()),
+        dirty=working_tree_dirty(),
+    )
+
+
+def read_provenance(path: Path) -> Provenance:
+    """从既有包的 frontmatter 回读 provenance，供 --check 复现同一份输出。"""
+    if not path.exists():
+        fail(f"--check 需要既有产出，但找不到 {path}")
+    fm, _ = split_frontmatter(path.read_text(encoding="utf-8"))
+    missing = [k for k in ("generated", "source_commit", "source_branch", "source_dirty") if k not in fm]
+    if missing:
+        fail(f"{path.name} frontmatter 缺少 provenance 字段：{', '.join(missing)}")
+    return Provenance(
+        sha=fm["source_commit"],
+        branch=fm["source_branch"],
+        generated=fm["generated"],
+        dirty=fm["source_dirty"].strip().lower() == "true",
+    )
+
+
+# --------------------------------------------------------------------------
+# §0.2 护栏：三段分离（来源原文 / 生成器归纳 / 使用规则）
+# --------------------------------------------------------------------------
+
+@dataclass(frozen=True)
+class Guardrail:
+    gid: str
+    title: str
+    severity: str
+    affected: str
+    extracts: list[tuple[str, str]]  # (来源路径说明, 逐字原文)
+    interpretation: str
+    policy: str
+    policy_source: str
+
+
+def render_guardrail(g: Guardrail) -> str:
+    parts = [f"### {g.gid} — {g.title}（严重度：{g.severity}）\n", f"**受影响**：{g.affected}\n"]
+    parts.append("#### SOURCE EXTRACT — 来源原文（逐字抽取）\n")
+    for label, text in g.extracts:
+        parts.append(f"**{label}**：\n\n{blockquote(text)}\n")
+    parts.append("#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）\n")
+    parts.append(g.interpretation.strip() + "\n")
+    parts.append("#### USAGE POLICY — 使用规则\n")
+    parts.append(f"*授权依据：{g.policy_source}*\n")
+    parts.append(g.policy.strip() + "\n")
+    return "\n".join(parts)
+
+
+def guard_p1_t07() -> Guardrail:
     src = "Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md"
     text = read_text(src)
 
-    # 审计自述的 Status 区块（首个 blockquote 段），说明它改动了什么、没改什么。
-    # 只取首段：其后的 1.1/1.2/1.3 修订史属版本噪音，不进护栏。
     m = re.search(r"^>\s+\*\*Status\*\*:.*?(?=\n\s*\n)", text, re.M | re.S)
     if not m:
         fail(f"锚点缺失：{src} 中找不到 `> **Status**:` 区块")
     status_para = re.sub(r"^>\s?", "", m.group(0), flags=re.M).strip()
     status_para = status_para.split("\n**Proof Audit")[0].strip()
 
-    # §0 第 5 问：这条定理最多能证到什么。
+    # 1.3 修订的语义分层条款。**必须保留**：它限定了 `τ<∞` 只能推出 S1/pathwise
+    # 层面的结论；缺了它，读者会把结论提升成无条件的 process-level 判断。
+    m13 = re.search(
+        r"\(a\)\s*`τ<∞`\s*verdicts stratified by semantics.*?(?=\(b\))", text, re.S
+    )
+    if not m13:
+        fail(f"锚点缺失：{src} 中找不到 1.3 修订的 `τ<∞` 语义分层条款")
+    stratification = m13.group(0).strip().rstrip(".")
+
     m5 = re.search(r"^5\.\s+\*\*What can P1-T07 prove at most\?\*\*.*?$", text, re.M)
     if not m5:
         fail(f"锚点缺失：{src} 中找不到 §0 第 5 问")
     q5 = m5.group(0).strip()
 
-    # 定理原文所在位置，确认 Proof Sketch Step 3 仍是原样。
     thm_src = "Core/SRT_Core_21b_Constitutive_Theorems.md"
     thm = read_text(thm_src)
     if "cumulative probability tends toward 1" not in thm:
@@ -230,111 +306,178 @@ def guard_p1_t07() -> str:
             "定理可能已被修订——请复核本护栏是否仍然适用，再重新生成。"
         )
 
-    return f"""### G1 — P1-T07 证明未闭合（严重度：高）
+    return Guardrail(
+        gid="G1",
+        title="P1-T07 证明未闭合",
+        severity="高",
+        affected=f"`{thm_src}` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）",
+        extracts=[
+            (f"审计自述，来自 `{src}`", status_para),
+            (f"审计 1.3 修订的语义分层条款，来自 `{src}`", stratification),
+            (f"审计 §0 第 5 问，来自 `{src}`", q5),
+        ],
+        interpretation=(
+            f"该定理 Proof Sketch 第 3 步（"
+            f"*neutral `P` ... cumulative probability tends toward 1*）以肯定句写成，"
+            f"正文未标注任何保留。上述审计判定恰恰是这一步不闭合：语料并未*确立*每步正 hazard，"
+            f"而且即使每步 hazard 为正也不蕴含 almost-sure 终止；`ε-neutral` 在语料中从未被形式定义；"
+            f"P1-T06 的 stable ISP 定义是非概率的，S1/S2/S3 随机语义尚未选定。\n\n"
+            f"另需注意：`Core/SRT_OPEN_TENSIONS.md` 目前**未登记**本缺口。"
+        ),
+        policy=(
+            "- 不得把 P1-T07 当作已证 P1 定理引用。\n"
+            "- 关于 `τ<∞` 只能作**语义分层**的陈述：若某条 realized history 满足 `τ<∞`，"
+            "可无条件断言的仅是**该历史上的 S1 / pathwise stability 失败**；"
+            "process-level 的 S2 需 `P(τ<∞)>0`，S3 需 `P(τ=∞)=0`。"
+            "**在 S1/S2/S3 语义未选定之前，不得据此推出无条件的 process-level "
+            "「not a stable ISP」。**\n"
+            "- 不要假装 `ε-neutral` 有形式定义。\n"
+            "- 「查过 `OPEN_TENSIONS` 没找到」**不**足以证明本命题已封口——该缺口尚未登记在那里。"
+        ),
+        policy_source="`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8",
+    )
 
-**受影响**：`{thm_src}` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）。
 
-**问题**：该定理 Proof Sketch 第 3 步以肯定句写成，正文并未标注任何保留。
-但 `{src}`（已合入 main）判定恰恰是这一步不闭合。
-
-**审计自述（原文）**：
-
-{blockquote(status_para)}
-
-**审计 §0 第 5 问（原文）**：
-
-{blockquote(q5)}
-
-**使用规则**：
-- 不得把 P1-T07 当作已证 P1 定理引用；
-- 唯一可无条件陈述的是 "if `τ<∞` then not a stable ISP"；
-- `ε-neutral` 在语料中**从未被形式定义**，不要假装它有定义；
-- 注意：`Core/SRT_OPEN_TENSIONS.md` **尚未登记**本缺口，所以"查过 OPEN_TENSIONS"
-  不足以证明这条命题已封口。
-"""
-
-
-def guard_dqo() -> str:
+def guard_dqo() -> Guardrail:
     src = "STATUS.md"
     text = read_text(src)
     m = re.search(r"已加下游护栏[：:][^。]*。", text)
     if not m:
         fail(f"锚点缺失：{src} 中找不到 d/q/o 下游护栏原句")
-    embargo = m.group(0).strip()
 
-    return f"""### G2 — `d`/`q`/`o` 三轴处于禁运状态（严重度：中）
+    return Guardrail(
+        gid="G2",
+        title="`d`/`q`/`o` 三轴处于禁运状态",
+        severity="中",
+        affected="`_SRT_D_VALUE_CANONICAL.md` 的 `d` 定义，以及任何涉及 `q` / `o` 的表述",
+        extracts=[(f"来自 `{src}`（2026-07-25 条目）", m.group(0).strip())],
+        interpretation=(
+            "2026-07-23 至 07-25 的三份对话材料提出具身位重写与 `d`/`q`/`o` 三轴，"
+            "台账记录为**全部路由为候选，无一落地**。已知触雷点包括：`d` 取参与率与 "
+            "`Def-d-canonical` 的范数定义冲突；`q` 的五个成分中两项落在 `Def-w_i` 的 "
+            "`C_i` 定义文字内。\n\n"
+            "本包所含 canonical 正文**不含** `d/q/o` 内容——这是正确状态，不是遗漏。"
+        ),
+        policy=(
+            "- 不要从外部对话材料把三轴引入回答。\n"
+            "- 不要据此改写 `d` 的定义。\n"
+            "- 禁运范围按上述原句：书稿、公共内容、bridge、论文。"
+        ),
+        policy_source="`STATUS.md` 2026-07-25 条目所记的下游护栏裁决",
+    )
 
-**来源**：`{src}`（2026-07-25 条目）
 
-**原话**：
+def parse_open_hooks() -> tuple[list[dict[str, str]], dict[str, list[str]]]:
+    """解析 hook 闭环审计表，按**阻塞目标**分组。
 
-> {embargo}
-
-**背景**：2026-07-23 至 07-25 的三份对话材料提出具身位重写与 `d`/`q`/`o` 三轴。
-台账记录为**全部路由为候选，无一落地**。已知触雷点包括：`d` 取参与率与
-`Def-d-canonical` 的范数定义冲突；`q` 的五个成分中两项落在 `Def-w_i` 的 `C_i`
-定义文字内。
-
-**使用规则**：本包所含 canonical 正文**不含** `d/q/o` 内容，这是正确状态。
-不要从外部对话材料把三轴引入回答，也不要据此改写 `d` 的定义。
-"""
-
-
-def guard_hooks() -> str:
+    评审指出的事实错误就出在这里：三张 partial 并非共同受阻于 `T_dir`——两张是
+    `T_dir`，第三张是 `Occlusion_Dynamics`。因此分组必须从表格解析得出，
+    不能手写成一句摘要。
+    """
     src = "Operations/Audits/Hook_Closure_Audit_2026-07-25.md"
     text = read_text(src)
 
-    rows = []
+    rows: list[dict[str, str]] = []
     for line in text.splitlines():
         if not line.startswith("|") or line.count("|") < 4:
             continue
         cells = [c.strip() for c in line.strip("|").split("|")]
         verdict = cells[-1].replace("*", "").strip()
-        if verdict.startswith(("partial", "pending")):
-            rows.append(cells)
+        if not verdict.startswith(("partial", "pending")):
+            continue
+        rows.append(
+            {
+                "hook": cells[0].strip("`"),
+                "declared": cells[1],
+                "actual": cells[2],
+                "verdict": verdict,
+            }
+        )
     if not rows:
         fail(f"锚点缺失：{src} 中解析不到任何 partial/pending 的 hook 行")
 
-    table = "\n".join("| " + " | ".join(c for c in r) + " |" for r in rows)
-    return f"""### G3 — 存在已裁决但未落地的回写（严重度：中）
-
-**来源**：`{src}`（18 张 hook 实证体检）
-
-以下 hook 的目标内容**尚未写入**对应主文，因此本包的相关正文是不完整的：
-
-| Hook | 声明状态 | 实际 | 判定 |
-|---|---|---|---|
-{table}
-
-**要点**：其中三张 partial 的共同阻塞点是 **`_SRT_T_DIR_CANONICAL.md` 未落地**——
-改 `T_dir` 主定义属 `Governance/SRT_EDIT_PROTOCOL.md` C 类高风险编辑，须作者授权，
-ledger 记 `blocked_by: canonical freeze`。三张 pending 的 target 文档
-`Physics/SRT_Physics_Bridge_v0_2.md` **从未创建**。
-
-**使用规则**：回答涉及 `T_dir` 时，注意本包中的 `T_dir` canonical 尚未吸收
-agency 侧的三笔回写；不要把它当作已完整的 `T_dir` 论述。
-"""
+    groups: dict[str, list[str]] = {}
+    for r in rows:
+        if r["verdict"].startswith("partial"):
+            m = re.search(r"`([^`]+)`\s*(?:canonical\s*)?\*\*未落地\*\*", r["actual"])
+            if not m:
+                fail(f"锚点失效：{src} 中 partial 行 `{r['hook']}` 解析不出阻塞目标")
+            key = f"`{m.group(1)}` 回写未落地"
+        else:
+            key = "planned target 从未创建"
+        groups.setdefault(key, []).append(r["hook"])
+    return rows, groups
 
 
-def guard_shorthands() -> str:
+def guard_hooks() -> Guardrail:
+    src = "Operations/Audits/Hook_Closure_Audit_2026-07-25.md"
+    rows, groups = parse_open_hooks()
+
+    planned = re.search(
+        r"`(Physics/SRT_Physics_Bridge_v0_2\.md)`", read_text(src)
+    )
+    if not planned:
+        fail(f"锚点缺失：{src} 中找不到 planned target 路径")
+
+    table = "\n".join(
+        f"| `{r['hook']}` | {r['declared']} | {r['actual']} | {r['verdict']} |" for r in rows
+    )
+    grouped = "\n".join(
+        f"| {key} | {len(hooks)} | " + ", ".join(f"`{h}`" for h in hooks) + " |"
+        for key, hooks in groups.items()
+    )
+
+    return Guardrail(
+        gid="G3",
+        title="存在已裁决但未落地的回写",
+        severity="中",
+        affected="下表所列各阻塞目标对应的主文；相关正文在本包中是不完整的",
+        extracts=[
+            (
+                f"来自 `{src}` 的 partial / pending 行（逐字）",
+                "| Hook | 声明状态 | 实际 | 判定 |\n|---|---|---|---|\n" + table,
+            )
+        ],
+        interpretation=(
+            "按**阻塞目标**分组如下（分组由脚本从上表解析得出，非手写摘要）：\n\n"
+            "| 阻塞目标 | hook 数 | hooks |\n|---|---:|---|\n" + grouped + "\n\n"
+            f"三张 pending 的 target 文档 `{planned.group(1)}` 从未创建。"
+            "改 canonical 主定义属 `Governance/SRT_EDIT_PROTOCOL.md` C 类高风险编辑，"
+            "须作者授权，ledger 记 `blocked_by: canonical freeze`。"
+        ),
+        policy=(
+            "- 回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写。\n"
+            "- 各阻塞目标彼此独立：不要把某一目标的缺口范围套用到另一个上。\n"
+            "- 不要把 planned-but-never-created 的 target 当作已存在的文件引用。"
+        ),
+        policy_source="`Governance/SRT_EDIT_PROTOCOL.md`（C 类编辑）与 `Operations/_SRT_MATERIAL_PIPELINE.md` §5.6.1（ledger 契约）",
+    )
+
+
+def guard_shorthands() -> Guardrail:
     rows = "\n".join(f"| `{k}` | {v} |" for k, v in PATH_SHORTHANDS.items())
-    return f"""### G4 — 行文简写路径对照（严重度：低）
-
-正文中以下写法是人读简写，按字面当作路径会落空。原文未改，对照如下：
-
-| 正文写法 | 实际所指 |
-|---|---|
-{rows}
-"""
+    return Guardrail(
+        gid="G4",
+        title="行文简写路径对照",
+        severity="低",
+        affected="骨架正文中若干人读简写",
+        extracts=[],
+        interpretation=(
+            "正文中以下写法是人读简写，按字面当作路径解析会落空。原文未改，对照如下：\n\n"
+            "| 正文写法 | 实际所指 |\n|---|---|\n" + rows
+        ),
+        policy="- 遇到上表左列写法时按右列解析，不要报告「文件不存在」。",
+        policy_source="生成器维护的对照表（`PATH_SHORTHANDS`）",
+    )
 
 
 def build_guardrails() -> str:
-    parts = [guard_p1_t07(), guard_dqo(), guard_hooks(), guard_shorthands()]
-    return "\n\n".join(parts)
+    return "\n\n".join(
+        render_guardrail(g) for g in (guard_p1_t07(), guard_dqo(), guard_hooks(), guard_shorthands())
+    )
 
 
 def build_claim_discipline() -> str:
-    """从 SRT_AI_START 原样注入 claim 阶梯与最小回答协议。"""
     text = read_text("SRT_AI_START.md")
     ladder = extract_section(text, r"5\.\s+Claim-Level Guard", "SRT_AI_START.md")
     protocol = extract_section(text, r"8\.\s+Minimal Answer Protocol", "SRT_AI_START.md")
@@ -358,25 +501,24 @@ AUTHORITY_NOTE = {
 
 
 def render_file_block(rel: str) -> str:
-    raw = read_text(rel)
-    fm, body = split_frontmatter(raw)
-
+    fm, body = split_frontmatter(read_text(rel))
     claim_mode = fm.get("claim_mode", "(未标注)")
     authority = AUTHORITY_NOTE.get(
         claim_mode, "**非定义源**——可作检索与支持上下文，不得用于确定术语定义。"
     )
-
-    meta_rows = [
-        ("path", f"`{rel}`"),
-        ("id", fm.get("id", "-")),
-        ("claim_mode", claim_mode),
-        ("status", fm.get("status", "-")),
-        ("epistemic_layer", fm.get("epistemic_layer", "-")),
-        ("layer", fm.get("layer", "-")),
-        ("canonical(字段)", fm.get("canonical", "-")),
-        ("last_commit", last_commit_date(rel)),
-    ]
-    meta = "\n".join(f"| {k} | {v} |" for k, v in meta_rows)
+    meta = "\n".join(
+        f"| {k} | {v} |"
+        for k, v in [
+            ("path", f"`{rel}`"),
+            ("id", fm.get("id", "-")),
+            ("claim_mode", claim_mode),
+            ("status", fm.get("status", "-")),
+            ("epistemic_layer", fm.get("epistemic_layer", "-")),
+            ("layer", fm.get("layer", "-")),
+            ("canonical(字段)", fm.get("canonical", "-")),
+            ("last_commit", last_commit_date(rel)),
+        ]
+    )
     dep = fm.get("dependency", "").strip()
     dep_line = f"\n**dependency**：{dep}\n" if dep else ""
 
@@ -398,15 +540,11 @@ def render_file_block(rel: str) -> str:
 """
 
 
-def bundle_header(bundle_id: str, title: str, purpose: str, files: list[str]) -> str:
-    sha = git("rev-parse", "--short", "HEAD") or "unknown"
-    branch = git("rev-parse", "--abbrev-ref", "HEAD") or "unknown"
-    dirty = "是（工作树有未提交改动）" if git("status", "--porcelain") else "否"
-
+def bundle_header(prov: Provenance, bundle_id: str, title: str,
+                  purpose: str, files: list[str]) -> str:
     manifest = "\n".join(
         f"| {i} | `{f}` | {last_commit_date(f)} |" for i, f in enumerate(files, 1)
     )
-
     return f"""---
 id: {bundle_id}
 type: context_bundle
@@ -415,9 +553,10 @@ layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: {TODAY}
-source_commit: {sha}
-source_branch: {branch}
+generated: {prov.generated}
+source_commit: {prov.sha}
+source_branch: {prov.branch}
+source_dirty: {str(prov.dirty).lower()}
 ---
 
 # {title}
@@ -433,11 +572,16 @@ source_branch: {branch}
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | {TODAY} |
-| 来源 commit | `{sha}` |
-| 来源分支 | `{branch}` |
-| 生成时工作树有改动 | {dirty} |
+| 生成日期 | {prov.generated} |
+| 来源 commit | `{prov.sha}` |
+| 来源分支 | `{prov.branch}` |
+| 生成时来源工作树有改动 | {"是" if prov.dirty else "否"} |
 | 包含文件数 | {len(files)} |
+
+> **source_commit 契约**：该值是**生成本包时 HEAD 所指的来源快照**。把本包纳入版本库的
+> 那个 commit 必然晚于它，因此 `source_commit` 与本文件所在 commit 不相等是正常的，
+> 不是漂移。要复核一致性，用 `--check`：它按本 frontmatter 记录的 provenance 重新生成
+> 并逐字比对。
 
 ### 0.1 文件清单与各自最后改动日期
 
@@ -445,13 +589,18 @@ source_branch: {branch}
 |---|---|---|
 {manifest}
 
-## §0.2 状态护栏（自动抽取自仓库台账）
+## §0.2 状态护栏
 
-> 本节内容不是拼装者的判断，全部按锚点抽取自 `Operations/` 审计台账与 `STATUS.md`。
-> 抽取锚点若失效，生成脚本会直接失败而不会产出缺护栏的包。
->
 > **这些是本包正文里读不出来的信息。** 正文中相关命题写得像已经成立，
 > 而仓库自己知道它们没有。回答前先读本节。
+>
+> **每条护栏分三段，权威等级不同，请分别对待**：
+>
+> - **SOURCE EXTRACT** — 从 `Operations/` 审计台账与 `STATUS.md` 按锚点逐字抽取的原文。
+>   锚点若失效，生成脚本直接失败而不会产出缺护栏的包。
+> - **GENERATED INTERPRETATION** — **生成器的归纳，不是来源原文**。它压缩了上面的抽取内容，
+>   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
+> - **USAGE POLICY** — 由标注的治理文件授权的使用规则。
 
 {build_guardrails()}
 
@@ -463,19 +612,6 @@ source_branch: {branch}
 """
 
 
-def write_bundle(filename: str, bundle_id: str, title: str, purpose: str,
-                 files: list[str], extra_note: str = "") -> Path:
-    parts = [bundle_header(bundle_id, title, purpose, files)]
-    if extra_note:
-        parts.append(extra_note)
-    for rel in files:
-        parts.append(render_file_block(rel))
-
-    out = OUT_DIR / filename
-    out.write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
-    return out
-
-
 SPINE_POINTER = """
 > **注意**：本包**不含** canonical 骨架（`d` / `Ψ_f` / `T_dir` 定义、核心公理、
 > 主方程、符号表）。领域内容依赖那些定义。若需确定术语含义，请同时加载
@@ -483,75 +619,65 @@ SPINE_POINTER = """
 """
 
 
-def main() -> None:
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    results: list[tuple[str, Path, int]] = []
-
-    # 1) 骨架包
-    p = write_bundle(
-        "SRT_CONTEXT_BUNDLE_SPINE.md",
-        f"SRT-CONTEXT-BUNDLE-SPINE-{TODAY}",
-        "SRT Canonical 骨架上下文包",
-        "收录承载定义权的 canonical 主干，供大模型确定 SRT 术语、公理、方程与符号的含义。",
-        SPINE,
-    )
-    results.append(("骨架 spine", p, len(SPINE)))
-
-    # 2) CompactCore 全集
-    all_cores: list[str] = []
-    for cfg in DOMAINS.values():
-        all_cores.extend(cfg["cores"])
-    p = write_bundle(
-        "SRT_CONTEXT_BUNDLE_COMPACTCORE.md",
-        f"SRT-CONTEXT-BUNDLE-COMPACTCORE-{TODAY}",
-        "SRT CompactCore 全集上下文包",
-        "收录全部 18 个 CompactCore 文件，覆盖 AI / 物理 / 哲学 / 神经 / 灵性 / 核心动力学的领域主线。",
-        all_cores,
-        extra_note=SPINE_POINTER,
-    )
-    results.append(("CompactCore 全集", p, len(all_cores)))
-
-    # 3) 分领域包
+def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
+    """生成全部包，返回 [(label, filename, n_files)]。"""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    plan: list[tuple[str, str, str, str, list[str], str]] = [
+        (
+            "骨架 spine", SPINE_BUNDLE_NAME, f"SRT-CONTEXT-BUNDLE-SPINE-{prov.generated}",
+            "SRT Canonical 骨架上下文包",
+            SPINE,
+            "",
+        ),
+        (
+            "CompactCore 全集", "SRT_CONTEXT_BUNDLE_COMPACTCORE.md",
+            f"SRT-CONTEXT-BUNDLE-COMPACTCORE-{prov.generated}",
+            "SRT CompactCore 全集上下文包",
+            [f for cfg in DOMAINS.values() for f in cfg["cores"]],
+            SPINE_POINTER,
+        ),
+    ]
+    purposes = {
+        SPINE_BUNDLE_NAME: "收录承载定义权的 canonical 主干，供大模型确定 SRT 术语、公理、方程与符号的含义。",
+        "SRT_CONTEXT_BUNDLE_COMPACTCORE.md": "收录全部 18 个 CompactCore 文件，覆盖 AI / 物理 / 哲学 / 神经 / 灵性 / 核心动力学的领域主线。",
+    }
     for key, cfg in DOMAINS.items():
-        files = [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
-        p = write_bundle(
-            f"SRT_CONTEXT_BUNDLE_DOMAIN_{key.upper()}.md",
-            f"SRT-CONTEXT-BUNDLE-DOMAIN-{key.upper()}-{TODAY}",
-            f"SRT {cfg['title']}上下文包",
-            f"收录{cfg['title']}的 claim-status 护栏、领域导航与 CompactCore 主线。",
-            files,
-            extra_note=SPINE_POINTER,
+        name = f"SRT_CONTEXT_BUNDLE_DOMAIN_{key.upper()}.md"
+        plan.append(
+            (
+                f"领域 {key}", name,
+                f"SRT-CONTEXT-BUNDLE-DOMAIN-{key.upper()}-{prov.generated}",
+                f"SRT {cfg['title']}上下文包",
+                [*cfg["guards"], *cfg["nav"], *cfg["cores"]],
+                SPINE_POINTER,
+            )
         )
-        results.append((f"领域 {key}", p, len(files)))
+        purposes[name] = f"收录{cfg['title']}的 claim-status 护栏、领域导航与 CompactCore 主线。"
 
-    # 统计
-    stats = []
-    total = 0
-    for label, path, n in results:
-        text = path.read_text(encoding="utf-8")
+    results = []
+    for label, name, bid, title, files, note in plan:
+        parts = [bundle_header(prov, bid, title, purposes[name], files)]
+        if note:
+            parts.append(note)
+        parts.extend(render_file_block(rel) for rel in files)
+        (out_dir / name).write_text("\n".join(parts).rstrip() + "\n", encoding="utf-8")
+        results.append((label, name, len(files)))
+
+    write_readme(prov, out_dir, results)
+    return results
+
+
+def write_readme(prov: Provenance, out_dir: Path,
+                 results: list[tuple[str, str, int]]) -> None:
+    rows = []
+    for label, name, n in results:
+        text = (out_dir / name).read_text(encoding="utf-8")
         chars = len(text)
         cjk = len(re.findall(r"[一-鿿]", text))
         est = int(cjk * 1.2 + (chars - cjk) * 0.29)
-        total += chars
-        stats.append((label, path, n, chars, est))
+        rows.append(f"| `{name}` | {label} | {n} | {chars:,} | ~{est:,} |")
 
-    write_readme(stats)
-
-    print(f"已生成 {len(results)} 个上下文包 + README → {OUT_DIR.relative_to(REPO_ROOT)}/\n")
-    print(f"{'包':<22}{'文件数':>6}{'字符数':>10}{'≈token':>10}  文件名")
-    print("-" * 88)
-    for label, path, n, chars, est in stats:
-        print(f"{label:<22}{n:>6}{chars:>10,}{est:>10,}  {path.name}")
-    print("-" * 88)
-    print(f"{'合计':<22}{'':>6}{total:>10,}")
-
-
-def write_readme(stats: list[tuple[str, Path, int, int, int]]) -> None:
-    sha = git("rev-parse", "--short", "HEAD") or "unknown"
-    rows = "\n".join(
-        f"| `{p.name}` | {label} | {n} | {c:,} | ~{e:,} |" for label, p, n, c, e in stats
-    )
-    (OUT_DIR / "README.md").write_text(
+    (out_dir / "README.md").write_text(
         f"""---
 id: SRT-CONTEXT-BUNDLES-README
 type: index
@@ -560,8 +686,10 @@ layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: {TODAY}
-source_commit: {sha}
+generated: {prov.generated}
+source_commit: {prov.sha}
+source_branch: {prov.branch}
+source_dirty: {str(prov.dirty).lower()}
 ---
 
 # SRT 上下文包
@@ -574,7 +702,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-{rows}
+{chr(10).join(rows)}
 
 ## 该用哪个
 
@@ -588,22 +716,90 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 ## 三条使用纪律
 
 1. **本目录不是 canonical。** 与仓库来源文件冲突时以仓库为准。包是快照。
-2. **§0.2 状态护栏必读。** 那里记录了正文读不出来的东西——未闭合的证明、
-   处于禁运的概念、被冻结挡住的回写。正文里这些命题写得像已经成立。
+2. **§0.2 状态护栏必读**，并注意其三段的权威等级不同：SOURCE EXTRACT 是逐字原文，
+   GENERATED INTERPRETATION 是生成器归纳（可能丢失限定条件），USAGE POLICY 是
+   由治理文件授权的规则。有疑问以 SOURCE EXTRACT 为准。
 3. **仓库内部工作不要读本目录。** 直接读来源文件。本目录是给外部对话用的。
 
-## 重新生成
+## 重新生成与校验
 
 ```bash
 uv run python scripts/build_srt_context_bundles.py
+uv run python scripts/build_srt_context_bundles.py --check     # 确定性校验
 ```
+
+`--check` 按既有产出 frontmatter 记录的 provenance 重新生成到临时目录并逐字比对，
+因此可在 CI 中确定性运行。`--source-ref` / `--generated-date` 可固定 provenance。
 
 护栏层按锚点抽取自 `Operations/` 审计台账与 `STATUS.md`。**任一锚点失效，脚本会
 直接以非零码退出**，而不会产出一个缺护栏的包。P1-T07 若日后被修订，脚本同样会
 失败，强制复核该护栏是否仍适用——这是刻意的防漂移设计。
+
+`source_commit` 记录生成时 HEAD 的来源快照；引入本目录的 commit 必然晚于它，
+两者不相等属正常。
 """,
         encoding="utf-8",
     )
+
+
+# --------------------------------------------------------------------------
+# 入口
+# --------------------------------------------------------------------------
+
+def run_check(out_dir: Path) -> None:
+    prov = read_provenance(out_dir / SPINE_BUNDLE_NAME)
+    with tempfile.TemporaryDirectory() as td:
+        tmp = Path(td)
+        generate(prov, tmp)
+        expected = sorted(p.name for p in tmp.glob("*.md"))
+        actual = sorted(p.name for p in out_dir.glob("*.md"))
+        if expected != actual:
+            fail(f"文件集合不一致：\n  重新生成 {expected}\n  既有产出 {actual}")
+        diffs = [
+            name
+            for name in expected
+            if (tmp / name).read_text(encoding="utf-8")
+            != (out_dir / name).read_text(encoding="utf-8")
+        ]
+        if diffs:
+            fail(
+                "以下产出与来源不一致（请重新运行生成脚本并提交）：\n  "
+                + "\n  ".join(diffs)
+            )
+    print(f"check: {len(expected)} 个文件逐字一致（provenance: {prov.sha} @ {prov.generated}）")
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description="生成 SRT 上下文包")
+    ap.add_argument("--check", action="store_true",
+                    help="按既有产出的 provenance 重新生成到临时目录并逐字比对，不写入")
+    ap.add_argument("--source-ref", help="固定记录的来源 commit（默认取当前 HEAD 短 SHA）")
+    ap.add_argument("--generated-date", help="固定记录的生成日期 YYYY-MM-DD（默认今天）")
+    ap.add_argument("--out-dir", default=str(DEFAULT_OUT_DIR), help="产出目录")
+    args = ap.parse_args()
+
+    out_dir = Path(args.out_dir)
+    if args.check:
+        run_check(out_dir)
+        return
+
+    # provenance 在任何写入之前一次性捕获，保证同一次生成的所有包记录一致。
+    prov = capture_provenance(args.source_ref, args.generated_date)
+    results = generate(prov, out_dir)
+
+    print(f"已生成 {len(results)} 个上下文包 + README → {out_dir}/")
+    print(f"provenance: commit={prov.sha} date={prov.generated} dirty={prov.dirty}\n")
+    print(f"{'包':<22}{'文件数':>6}{'字符数':>10}{'≈token':>10}  文件名")
+    print("-" * 88)
+    total = 0
+    for label, name, n in results:
+        text = (out_dir / name).read_text(encoding="utf-8")
+        chars = len(text)
+        cjk = len(re.findall(r"[一-鿿]", text))
+        total += chars
+        print(f"{label:<22}{n:>6}{chars:>10,}{int(cjk*1.2+(chars-cjk)*0.29):>10,}  {name}")
+    print("-" * 88)
+    print(f"{'合计':<22}{'':>6}{total:>10,}")
 
 
 if __name__ == "__main__":
