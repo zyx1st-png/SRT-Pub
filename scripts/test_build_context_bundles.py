@@ -239,6 +239,49 @@ def test_dirty_excludes_bundle_dir() -> None:
         B.git = real
 
 
+def test_shallow_repo_guard() -> None:
+    """A shallow clone makes `git log -1 -- <file>` return the graft commit's
+    date for every file, so the bundles would report the entire canonical spine
+    as changed today. That is silently plausible and completely wrong, so the
+    builder must abort rather than emit it."""
+    real = B.git
+
+    def shallow(*args: str) -> str:
+        if args[:2] == ("rev-parse", "--is-shallow-repository"):
+            return "true"
+        return real(*args)
+
+    B.git = shallow
+    stderr, sys.stderr = sys.stderr, open(os.devnull, "w")
+    try:
+        B.require_full_history()
+        FAILURES.append("shallow guard: did not abort on a shallow clone")
+    except SystemExit as exc:
+        if not exc.code:
+            FAILURES.append("shallow guard: exited 0")
+    finally:
+        sys.stderr.close()
+        sys.stderr = stderr
+        B.git = real
+
+    # generate() must be gated by the same guard, not just the helper.
+    B.git = shallow
+    stderr, sys.stderr = sys.stderr, open(os.devnull, "w")
+    try:
+        with tempfile.TemporaryDirectory() as td:
+            B.generate(B.Provenance("x", "y", "2026-01-01", False), Path(td))
+        FAILURES.append("shallow guard: generate() ran on a shallow clone")
+    except SystemExit as exc:
+        if not exc.code:
+            FAILURES.append("shallow guard: generate() exited 0")
+    finally:
+        sys.stderr.close()
+        sys.stderr = stderr
+        B.git = real
+
+    check("shallow guard: real repo is not shallow", B.is_shallow_repo() is False)
+
+
 def run() -> None:
     test_hook_grouping()
     test_p1_t07_semantics()
@@ -246,6 +289,7 @@ def run() -> None:
     test_fail_loud()
     test_determinism()
     test_porcelain_path()
+    test_shallow_repo_guard()
     test_dirty_excludes_bundle_dir()
 
     if FAILURES:

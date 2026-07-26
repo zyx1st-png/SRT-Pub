@@ -155,6 +155,23 @@ def git(*args: str) -> str:
         return ""
 
 
+def is_shallow_repo() -> bool:
+    return git("rev-parse", "--is-shallow-repository").strip() == "true"
+
+
+def require_full_history() -> None:
+    """浅克隆下 `git log -1 -- <file>` 不返回空，而是返回 graft commit 的日期，
+    于是每个文件的"最后改动日期"都变成克隆当天——看似合理，实则全错，恰好摧毁
+    本包用来反映陈旧度的那一列。宁可失败也不产出这种数据。"""
+    if is_shallow_repo():
+        fail(
+            "当前是浅克隆（shallow clone），无法取得各文件真实的最后改动日期。\n"
+            "  浅克隆下 git 会把所有文件报成 graft commit 的日期，生成的包会声称\n"
+            "  每个 canonical 文件都是今天改的——这正好抹掉本包要传达的陈旧度信号。\n"
+            "  修复：`git fetch --unshallow`，CI 中设置 actions/checkout 的 fetch-depth: 0。"
+        )
+
+
 def last_commit_date(rel: str) -> str:
     return git("log", "-1", "--format=%ad", "--date=short", "--", rel) or "unknown"
 
@@ -633,6 +650,7 @@ SPINE_POINTER = """
 
 def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
     """生成全部包，返回 [(label, filename, n_files)]。"""
+    require_full_history()
     out_dir.mkdir(parents=True, exist_ok=True)
     plan: list[tuple[str, str, str, str, list[str], str]] = [
         (
