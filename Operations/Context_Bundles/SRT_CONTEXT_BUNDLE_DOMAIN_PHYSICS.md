@@ -7,8 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-26
-source_commit: 058c82d
+source_commit: 2531aea
 source_branch: claude/srt-theory-consolidation-le4fwa
+source_dirty: false
 ---
 
 # SRT 物理领域上下文包
@@ -25,10 +26,15 @@ source_branch: claude/srt-theory-consolidation-le4fwa
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-26 |
-| 来源 commit | `058c82d` |
+| 来源 commit | `2531aea` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
-| 生成时工作树有改动 | 是（工作树有未提交改动） |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
+
+> **source_commit 契约**：该值是**生成本包时 HEAD 所指的来源快照**。把本包纳入版本库的
+> 那个 commit 必然晚于它，因此 `source_commit` 与本文件所在 commit 不相等是正常的，
+> 不是漂移。要复核一致性，用 `--check`：它按本 frontmatter 记录的 provenance 重新生成
+> 并逐字比对。
 
 ### 0.1 文件清单与各自最后改动日期
 
@@ -46,86 +52,136 @@ source_branch: claude/srt-theory-consolidation-le4fwa
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-07-16 |
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-07-16 |
 
-## §0.2 状态护栏（自动抽取自仓库台账）
+## §0.2 状态护栏
 
-> 本节内容不是拼装者的判断，全部按锚点抽取自 `Operations/` 审计台账与 `STATUS.md`。
-> 抽取锚点若失效，生成脚本会直接失败而不会产出缺护栏的包。
->
 > **这些是本包正文里读不出来的信息。** 正文中相关命题写得像已经成立，
 > 而仓库自己知道它们没有。回答前先读本节。
+>
+> **每条护栏分三段，权威等级不同，请分别对待**：
+>
+> - **SOURCE EXTRACT** — 从 `Operations/` 审计台账与 `STATUS.md` 按锚点逐字抽取的原文。
+>   锚点若失效，生成脚本直接失败而不会产出缺护栏的包。
+> - **GENERATED INTERPRETATION** — **生成器的归纳，不是来源原文**。它压缩了上面的抽取内容，
+>   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
+> - **USAGE POLICY** — 由标注的治理文件授权的使用规则。
 
 ### G1 — P1-T07 证明未闭合（严重度：高）
 
-**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）。
+**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）
 
-**问题**：该定理 Proof Sketch 第 3 步以肯定句写成，正文并未标注任何保留。
-但 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`（已合入 main）判定恰恰是这一步不闭合。
+#### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-**审计自述（原文）**：
+**审计自述，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
 
 > **Status**: non-canonical Operations record. **Proof audit only.** It modifies no theorem, no axiom, no definition, no equation. It does not resolve the proof; it maps exactly where the current proof does and does not close, and hands options to a later controlled amendment PR. Prior Claude/ChatGPT statements about P1-T07 were treated as hypotheses; the only source of truth is `origin/main @ 14c0d7f8`. Archive/book files were read for context but are **not** used to establish anything about the canonical theorem.
 
-**审计 §0 第 5 问（原文）**：
+**审计 1.3 修订的语义分层条款，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
+
+> (a) `τ<∞` verdicts stratified by semantics — on a realized terminating history only **S1 pathwise** stability fails; **S2** fails only if `P(τ<∞)>0`, **S3** only if `P(τ=∞)=0`; no unconditional *process-level* stable-ISP verdict before the S1/S2/S3 choice (fixed in §0 Q5, §8, Proof Gate)
+
+**审计 §0 第 5 问，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
 
 > 5. **What can P1-T07 prove at most?** Two things must be separated, and the first is **semantics-relative**, not process-unconditional. **(i) True and derivable, per level**: on any realized history with `τ<∞`, that history enters the absorbing `∅` and no further selection is possible — so **S1 (pathwise) stability fails on that history**. At the *process* level, **S2** stability fails only when `P(τ<∞)>0`, and **S3** stability fails only when `P(τ=∞)=0`. Before S1/S2/S3 is chosen, **no unconditional process-level stable-ISP verdict may be issued** from `τ<∞`. **(ii) NOT derivable as written**: *neutral `P` terminates a.s., therefore neutral `P` is not stable* — because a.s. termination of a neutral process is exactly what Step 3 fails to establish. "Positive termination probability" is also **not** unconditional (it needs positive hazard at a surviving step). (§4, §8)
 
-**使用规则**：
-- 不得把 P1-T07 当作已证 P1 定理引用；
-- 唯一可无条件陈述的是 "if `τ<∞` then not a stable ISP"；
-- `ε-neutral` 在语料中**从未被形式定义**，不要假装它有定义；
-- 注意：`Core/SRT_OPEN_TENSIONS.md` **尚未登记**本缺口，所以"查过 OPEN_TENSIONS"
-  不足以证明这条命题已封口。
+#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
+
+该定理 Proof Sketch 第 3 步（*neutral `P` ... cumulative probability tends toward 1*）以肯定句写成，正文未标注任何保留。上述审计判定恰恰是这一步不闭合：语料并未*确立*每步正 hazard，而且即使每步 hazard 为正也不蕴含 almost-sure 终止；`ε-neutral` 在语料中从未被形式定义；P1-T06 的 stable ISP 定义是非概率的，S1/S2/S3 随机语义尚未选定。
+
+另需注意：`Core/SRT_OPEN_TENSIONS.md` 目前**未登记**本缺口。
+
+#### USAGE POLICY — 使用规则
+
+*授权依据：`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8*
+
+- 不得把 P1-T07 当作已证 P1 定理引用。
+- 关于 `τ<∞` 只能作**语义分层**的陈述：若某条 realized history 满足 `τ<∞`，可无条件断言的仅是**该历史上的 S1 / pathwise stability 失败**；process-level 的 S2 需 `P(τ<∞)>0`，S3 需 `P(τ=∞)=0`。**在 S1/S2/S3 语义未选定之前，不得据此推出无条件的 process-level 「not a stable ISP」。**
+- 不要假装 `ε-neutral` 有形式定义。
+- 「查过 `OPEN_TENSIONS` 没找到」**不**足以证明本命题已封口——该缺口尚未登记在那里。
 
 
 ### G2 — `d`/`q`/`o` 三轴处于禁运状态（严重度：中）
 
-**来源**：`STATUS.md`（2026-07-25 条目）
+**受影响**：`_SRT_D_VALUE_CANONICAL.md` 的 `d` 定义，以及任何涉及 `q` / `o` 的表述
 
-**原话**：
+#### SOURCE EXTRACT — 来源原文（逐字抽取）
+
+**来自 `STATUS.md`（2026-07-25 条目）**：
 
 > 已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
 
-**背景**：2026-07-23 至 07-25 的三份对话材料提出具身位重写与 `d`/`q`/`o` 三轴。
-台账记录为**全部路由为候选，无一落地**。已知触雷点包括：`d` 取参与率与
-`Def-d-canonical` 的范数定义冲突；`q` 的五个成分中两项落在 `Def-w_i` 的 `C_i`
-定义文字内。
+#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
-**使用规则**：本包所含 canonical 正文**不含** `d/q/o` 内容，这是正确状态。
-不要从外部对话材料把三轴引入回答，也不要据此改写 `d` 的定义。
+2026-07-23 至 07-25 的三份对话材料提出具身位重写与 `d`/`q`/`o` 三轴，台账记录为**全部路由为候选，无一落地**。已知触雷点包括：`d` 取参与率与 `Def-d-canonical` 的范数定义冲突；`q` 的五个成分中两项落在 `Def-w_i` 的 `C_i` 定义文字内。
+
+本包所含 canonical 正文**不含** `d/q/o` 内容——这是正确状态，不是遗漏。
+
+#### USAGE POLICY — 使用规则
+
+*授权依据：`STATUS.md` 2026-07-25 条目所记的下游护栏裁决*
+
+- 不要从外部对话材料把三轴引入回答。
+- 不要据此改写 `d` 的定义。
+- 禁运范围按上述原句：书稿、公共内容、bridge、论文。
 
 
 ### G3 — 存在已裁决但未落地的回写（严重度：中）
 
-**来源**：`Operations/Audits/Hook_Closure_Audit_2026-07-25.md`（18 张 hook 实证体检）
+**受影响**：下表所列各阻塞目标对应的主文；相关正文在本包中是不完整的
 
-以下 hook 的目标内容**尚未写入**对应主文，因此本包的相关正文是不完整的：
+#### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-| Hook | 声明状态 | 实际 | 判定 |
-|---|---|---|---|
-| `PH_AG02_Reasoning_Bias` | active_v0_1 | agency 主文已落地；`T_dir` canonical **未落地** | **partial** |
-| `PH_AG03_Constitutive_Commitment` | active_v0_1 | agency 主文已落地；`T_dir` canonical **未落地** | **partial** |
-| `PH_SEM01_Bilateral_Incompatibility` | active_v0_1 | agency 主文已落地；`Occlusion_Dynamics` **未落地** | **partial** |
-| `P03_Cosmological_Principle` | pending | target 文档**从未创建** | pending（planned target） |
-| `P04_Spontaneous_Collapse_Classicality` | pending | target 文档**从未创建** | pending（planned target） |
-| `P05_Quantum_Proper_Time_Optical_Clocks` | pending | target 文档**从未创建** | pending（planned target） |
+**来自 `Operations/Audits/Hook_Closure_Audit_2026-07-25.md` 的 partial / pending 行（逐字）**：
 
-**要点**：其中三张 partial 的共同阻塞点是 **`_SRT_T_DIR_CANONICAL.md` 未落地**——
-改 `T_dir` 主定义属 `Governance/SRT_EDIT_PROTOCOL.md` C 类高风险编辑，须作者授权，
-ledger 记 `blocked_by: canonical freeze`。三张 pending 的 target 文档
-`Physics/SRT_Physics_Bridge_v0_2.md` **从未创建**。
+> | Hook | 声明状态 | 实际 | 判定 |
+> |---|---|---|---|
+> | `PH_AG02_Reasoning_Bias` | active_v0_1 | agency 主文已落地；`T_dir` canonical **未落地** | partial |
+> | `PH_AG03_Constitutive_Commitment` | active_v0_1 | agency 主文已落地；`T_dir` canonical **未落地** | partial |
+> | `PH_SEM01_Bilateral_Incompatibility` | active_v0_1 | agency 主文已落地；`Occlusion_Dynamics` **未落地** | partial |
+> | `P03_Cosmological_Principle` | pending | target 文档**从未创建** | pending（planned target） |
+> | `P04_Spontaneous_Collapse_Classicality` | pending | target 文档**从未创建** | pending（planned target） |
+> | `P05_Quantum_Proper_Time_Optical_Clocks` | pending | target 文档**从未创建** | pending（planned target） |
 
-**使用规则**：回答涉及 `T_dir` 时，注意本包中的 `T_dir` canonical 尚未吸收
-agency 侧的三笔回写；不要把它当作已完整的 `T_dir` 论述。
+#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
+
+按**阻塞目标**分组如下（分组由脚本从上表解析得出，非手写摘要）：
+
+| 阻塞目标 | hook 数 | hooks |
+|---|---:|---|
+| `T_dir` 回写未落地 | 2 | `PH_AG02_Reasoning_Bias`, `PH_AG03_Constitutive_Commitment` |
+| `Occlusion_Dynamics` 回写未落地 | 1 | `PH_SEM01_Bilateral_Incompatibility` |
+| planned target 从未创建 | 3 | `P03_Cosmological_Principle`, `P04_Spontaneous_Collapse_Classicality`, `P05_Quantum_Proper_Time_Optical_Clocks` |
+
+三张 pending 的 target 文档 `Physics/SRT_Physics_Bridge_v0_2.md` 从未创建。改 canonical 主定义属 `Governance/SRT_EDIT_PROTOCOL.md` C 类高风险编辑，须作者授权，ledger 记 `blocked_by: canonical freeze`。
+
+#### USAGE POLICY — 使用规则
+
+*授权依据：`Governance/SRT_EDIT_PROTOCOL.md`（C 类编辑）与 `Operations/_SRT_MATERIAL_PIPELINE.md` §5.6.1（ledger 契约）*
+
+- 回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写。
+- 各阻塞目标彼此独立：不要把某一目标的缺口范围套用到另一个上。
+- 不要把 planned-but-never-created 的 target 当作已存在的文件引用。
 
 
 ### G4 — 行文简写路径对照（严重度：低）
 
-正文中以下写法是人读简写，按字面当作路径会落空。原文未改，对照如下：
+**受影响**：骨架正文中若干人读简写
+
+#### SOURCE EXTRACT — 来源原文（逐字抽取）
+
+#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
+
+正文中以下写法是人读简写，按字面当作路径解析会落空。原文未改，对照如下：
 
 | 正文写法 | 实际所指 |
 |---|---|
 | `Core_21_Formal_Axioms.md` | Core/SRT_Core_21_Formal_Axioms.md |
 | `_SRT_SYMBOL_QUICK_GUARD.md` | SRT_AI_START.md §3（已于 2026-07-20 并入，原文件不再存在） |
+
+#### USAGE POLICY — 使用规则
+
+*授权依据：生成器维护的对照表（`PATH_SHORTHANDS`）*
+
+- 遇到上表左列写法时按右列解析，不要报告「文件不存在」。
 
 
 ## §0.3 claim 阶梯与回答纪律
