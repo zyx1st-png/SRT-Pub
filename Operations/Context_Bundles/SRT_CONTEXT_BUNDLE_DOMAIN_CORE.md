@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-26
-source_commit: 2531aea
+source_commit: 5cd5cee6
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-26 |
-| 来源 commit | `2531aea` |
+| 来源 commit | `5cd5cee6` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
@@ -40,7 +40,7 @@ source_dirty: false
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-07-16 |
+| 1 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-04-20 |
 
 ## §0.2 状态护栏
 
@@ -232,7 +232,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-20 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 

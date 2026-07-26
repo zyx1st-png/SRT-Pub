@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-26
-source_commit: 2531aea
+source_commit: 5cd5cee6
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-26 |
-| 来源 commit | `2531aea` |
+| 来源 commit | `5cd5cee6` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
@@ -40,17 +40,17 @@ source_dirty: false
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Physics/SRT_Physics_Claim_Status.md` | 2026-07-16 |
-| 2 | `Physics/PHYSICS_COMPACT_REGISTRY.md` | 2026-07-16 |
+| 1 | `Physics/SRT_Physics_Claim_Status.md` | 2026-05-17 |
+| 2 | `Physics/PHYSICS_COMPACT_REGISTRY.md` | 2026-05-19 |
 | 3 | `Physics/README.md` | 2026-07-20 |
-| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-07-16 |
-| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-07-16 |
-| 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-07-16 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-07-16 |
-| 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-07-16 |
-| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-07-16 |
-| 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-07-16 |
-| 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-07-16 |
+| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-04-29 |
+| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-04-29 |
+| 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-04-29 |
+| 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
+| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-04-29 |
+| 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
+| 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
 
 ## §0.2 状态护栏
 
@@ -242,7 +242,7 @@ When answering about SRT:
 | epistemic_layer | bridge |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-17 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -479,7 +479,7 @@ srt_physics_claim_status:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -740,7 +740,7 @@ When in doubt, cross-check:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -931,7 +931,7 @@ SRT 的压缩优势在于：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1159,7 +1159,7 @@ SRT 试图统一：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1420,7 +1420,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1674,7 +1674,7 @@ SRT 的边界非常明确：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1929,7 +1929,7 @@ SRT 的回答是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2159,7 +2159,7 @@ SRT 同时强调：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-17 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2367,7 +2367,7 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

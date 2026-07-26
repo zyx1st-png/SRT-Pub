@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-26
-source_commit: 2531aea
+source_commit: 5cd5cee6
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-26 |
-| 来源 commit | `2531aea` |
+| 来源 commit | `5cd5cee6` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 18 |
@@ -40,24 +40,24 @@ source_dirty: false
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-07-16 |
-| 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-07-16 |
-| 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-07-16 |
-| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-07-16 |
-| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-07-16 |
-| 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-07-16 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-07-16 |
-| 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-07-16 |
-| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-07-16 |
-| 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-07-16 |
-| 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-07-16 |
-| 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-07-16 |
-| 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-07-16 |
-| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-07-16 |
-| 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-07-16 |
-| 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-07-16 |
-| 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-07-16 |
-| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-07-16 |
+| 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-05-18 |
+| 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
+| 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
+| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-04-29 |
+| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-04-29 |
+| 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-04-29 |
+| 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
+| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-04-29 |
+| 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
+| 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
+| 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
+| 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-04-27 |
+| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-04-27 |
+| 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-04-23 |
+| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-04-20 |
 
 ## §0.2 状态护栏
 
@@ -249,7 +249,7 @@ When answering about SRT:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -528,7 +528,7 @@ SRT 真正声称的是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -761,7 +761,7 @@ SRT 的压缩立场：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1011,7 +1011,7 @@ Addendum:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1202,7 +1202,7 @@ SRT 的压缩优势在于：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1430,7 +1430,7 @@ SRT 试图统一：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1691,7 +1691,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1945,7 +1945,7 @@ SRT 的边界非常明确：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2200,7 +2200,7 @@ SRT 的回答是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2430,7 +2430,7 @@ SRT 同时强调：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-17 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2638,7 +2638,7 @@ SRT 把 `L_2` 理解为吸引子地景，而不是单纯规则仓库。
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-29 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2833,7 +2833,7 @@ Integration 文还承担了一个接口作用：
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-27 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -3320,7 +3320,7 @@ Minimal statement:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-27 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -3627,7 +3627,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-27 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -3938,7 +3938,7 @@ Addendum:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -4352,7 +4352,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-19 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -4689,7 +4689,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-23 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -4924,7 +4924,7 @@ The stop rule should be applied at every phase. A practice should pause or narro
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-20 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 

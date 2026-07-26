@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-26
-source_commit: 2531aea
+source_commit: 5cd5cee6
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-26 |
-| 来源 commit | `2531aea` |
+| 来源 commit | `5cd5cee6` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
@@ -43,9 +43,9 @@ source_dirty: false
 | 1 | `AI/SRT_AI_Claim_Status.md` | 2026-07-20 |
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-07-16 |
 | 3 | `AI/README.md` | 2026-07-20 |
-| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-07-16 |
-| 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-07-16 |
-| 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-07-16 |
+| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-05-18 |
+| 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
+| 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
 
 ## §0.2 状态护栏
 
@@ -693,7 +693,7 @@ Paused for future adjudication:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -972,7 +972,7 @@ SRT 真正声称的是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1205,7 +1205,7 @@ SRT 的压缩立场：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

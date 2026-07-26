@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-26
-source_commit: 2531aea
+source_commit: 5cd5cee6
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-26 |
-| 来源 commit | `2531aea` |
+| 来源 commit | `5cd5cee6` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
@@ -40,9 +40,9 @@ source_dirty: false
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Spirituality/SRT_Spirituality_Claim_Status.md` | 2026-07-16 |
+| 1 | `Spirituality/SRT_Spirituality_Claim_Status.md` | 2026-05-17 |
 | 2 | `Spirituality/SPIRITUALITY_COMPACT_REGISTRY.md` | 2026-07-20 |
-| 3 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-07-16 |
+| 3 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-04-23 |
 
 ## §0.2 状态护栏
 
@@ -234,7 +234,7 @@ When answering about SRT:
 | epistemic_layer | governance |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-17 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -487,7 +487,7 @@ They do not create SRT primitive axioms, definitions, moral authority, spiritual
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-23 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 

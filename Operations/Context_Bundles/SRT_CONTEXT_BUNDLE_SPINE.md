@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-26
-source_commit: 2531aea
+source_commit: 5cd5cee6
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-26 |
-| 来源 commit | `2531aea` |
+| 来源 commit | `5cd5cee6` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
@@ -41,19 +41,19 @@ source_dirty: false
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-07-21 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-07-16 |
-| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-07-16 |
-| 4 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-07-16 |
-| 5 | `Core_Law/SRT_Constitution_Seven_Theses.md` | 2026-07-16 |
-| 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-07-16 |
-| 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-07-16 |
-| 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-07-16 |
-| 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-07-16 |
-| 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-07-16 |
-| 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-16 |
-| 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-07-16 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-05-18 |
+| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-05-01 |
+| 4 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-07-07 |
+| 5 | `Core_Law/SRT_Constitution_Seven_Theses.md` | 2026-07-07 |
+| 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-04-22 |
+| 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-04-27 |
+| 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-04-26 |
+| 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-07-07 |
+| 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-07-07 |
+| 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
+| 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-04-26 |
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-07-21 |
-| 14 | `Core/SRT_Core_22_Equations.md` | 2026-07-16 |
+| 14 | `Core/SRT_Core_22_Equations.md` | 2026-07-07 |
 | 15 | `_SRT_SYMBOL_TABLE.md` | 2026-07-20 |
 | 16 | `Core/SRT_OPEN_TENSIONS.md` | 2026-07-20 |
 
@@ -495,7 +495,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -817,7 +817,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-05-01 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1110,7 +1110,7 @@ This split changes epistemic placement, not the underlying intended theory.
 | epistemic_layer | os |
 | layer | L0 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-07-07 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1457,7 +1457,7 @@ L0 不负责给出方程和实验，但它必须约束上层该怎么展开。
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-07-07 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1750,7 +1750,7 @@ For those, defer to the canonical and Core_Law files listed above.
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-22 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1875,7 +1875,7 @@ For claim governance, read:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-27 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -2056,7 +2056,7 @@ This demotion changes epistemic rank, not the intended theoretical meaning of th
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -2267,7 +2267,7 @@ The following former `Core_21` claims remain valuable but are not treated here a
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-07-07 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -2599,7 +2599,7 @@ This summary is a reading guide, not an additional axiom.
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-07-07 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3367,7 +3367,7 @@ $$d_{\text{mobile}} \propto \frac{d \cdot \operatorname{rank}_{\text{eff}}(I_F(\
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-07-07 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3869,7 +3869,7 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-04-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -4709,7 +4709,7 @@ If a local projection conflicts with the canonical usage, mark the local project
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-16 |
+| last_commit | 2026-07-07 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
