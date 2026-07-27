@@ -38,7 +38,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
   - 主问题 B 引用的价值发生序仍是 `_SRT_D_VALUE_CANONICAL.md §2a` 的 P3 book-provenance 候选；外部学者认可**不构成** §2a.3 stake-gate 对账。
 - backlog：
   - 回信已定稿（记录文档 §五），待发出；接受对方提供的 *Foundations of Relational Realism* PDF。
-  - 一页 SRT 最小设定英文 note **已成稿** → `01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md`（逐条标注 P0–P4，含"SRT 不主张什么"暴露节；发送前须删两个仓库内部块）。
+  - 一页 SRT 最小设定英文 note **已成稿** → `01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md`（对承重陈述标注 P0–P4；未标注句为说明性文字；含"SRT 不主张什么"暴露节；发送前须删两个仓库内部块）。
   - 该书若确实表示次级问题的区分，走材料融合流程，不直接回写 bridge 文件。
 
 ## 2026-03-31 CST（会话整理）
