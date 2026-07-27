@@ -10,9 +10,11 @@ claim_mode: exploratory_bridge
 canonical: false
 created: 2026-07-27
 revised: 2026-07-27
-downstream_guard: "本文记录一位外部学者的立场与两条未闭合追问，不构成 SRT 已闭合结论。Epperson 的层论/范畴义务论述属外部框架陈述，不得作为 SRT canonical 依据；§四的两条追问在对方回复前不得写入 bridge 文件、书稿或公共内容。"
+downstream_guard: "本文记录一位外部学者的立场与四项未闭合追问，不构成 SRT 已闭合结论。Epperson 的层论/范畴义务论述属外部框架陈述，不得作为 SRT canonical 依据；§四各问在对方回复前不得写入 bridge 文件、书稿或公共内容。§4.2 引用的价值发生序仍是 _SRT_D_VALUE_CANONICAL.md §2a 的 P3 候选，外部学者的认可不构成 §2a.3 对账。§4.1 涉及 Core/SRT_OPEN_TENSIONS.md §13 的未执行减法测试：selection 只可表述为 SRT treats as primitive，不得写成已证不可还原，且不得据本轮通信为其附加 residue label。"
+companion_note: 01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md
 dependency:
   - Core_Law/SRT_L0_Philosophy_Bridge.md
+  - Core/SRT_OPEN_TENSIONS.md
   - Physics/SRT_Quant_01_Selection.md
   - Physics/SRT_Physics_Claim_Status.md
   - _SRT_D_VALUE_CANONICAL.md
@@ -20,7 +22,7 @@ dependency:
 
 # Epperson 通信记录：concrescence 与选择、"aim" 是否施加物理约束
 
-> **性质声明**：本文归档 2026-02-26 去信与 2026-07-27 回信的往来内容、对回信的结构化解读、与 SRT 的对齐与分叉，以及下一封回信草稿。
+> **性质声明**：本文归档 2026-02-26 去信与 2026-07-27 回信的往来内容、对回信的结构化解读、与 SRT 的对齐与分叉、下一封回信定稿，以及配套一页 note 的指针。
 >
 > 本文**不是 canonical 定义源**。Michael Epperson 的立场表述属于**外部框架陈述**（relational realism / 层论进路），与 SRT 的一致处只能用作收敛性上下文，不得回写为 SRT 已证条款。
 >
@@ -116,111 +118,188 @@ L0 哲学桥接文件已记录 SRT 相对过程哲学的三条分叉，本轮回
 
 ---
 
-## 四、两条未闭合追问（下一封回信的实质内容）
+## 四、追问结构（2026-07-27 修订）
 
-### Q1：哪一个布尔子代数？
+> **修订说明**：本节初稿把"哪一个布尔子代数"与"增补是否免费"并列为两条主追问。经理论侧复核后重排：主问题上移为**实现化的地位**与**aim 的层位**，原 Q1 降为次级形式问题，原 Q2 推迟到读完 Zafiris/Epperson 之后。理由见 §4.0。
 
-他的规则约束局部语境**必须是**布尔的，并约束布尔局部如何关联非布尔全局；但似乎**未固定**在给定测量中被实例化的**是哪一个**布尔子代数（基、cut 落点、相互作用哈密顿量）。SRT 侧把这一项作为测量情境的显式参数 $θ$ 承担，并取较强立场（Ax-Sel-1）：统计不可分辨但 $θ$ 不同的两个安排，是本体论上不同的实现，而非同一实现的两种描述。
+### 4.0 为什么重排
 
-追问：在层论设定中，这个区分**是否被表示**——两个概率赋值相同但 gluing data / 嵌入全局对象方式不同的局部布尔语境，在形式上是否有差别？
+三条：
 
-若有，则 "subjective aim" 的残余**已经在他的框架中做形式工作**而不构成动力学原理，SRT 可据此引用；若无，则该区分仍是 SRT 单方面承担的额外承诺。
+1. **原去信的 disanalogy 已被对方判定为不成立**（§3.2），继续追问"固定参数规则是否够用"没有裁决空间。
+2. **"实现化是否是一步"是可被外部检验的**。`Core/SRT_OPEN_TENSIONS.md §13` 登记了一项**从未执行**的减法测试（`Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1`，residue status unassigned）：仅用不对称约束、可达集变化、不可逆写回、可支付性、承载者特定后果回流，删去 `selection` 原语后 SRT 损失什么。**Epperson 的关系—拓扑框架正是这套竞争语汇的一个活实例**，向他提问等于跑一次非正式的外部减法测试。
+3. **"aim 在哪一层不可缺少"比"aim 是否可还原"可裁决**。后者可被一篇哲学散文回避；前者是关于怀特海文本的是非问题，而他是权威。
 
-### Q2：增补是免费的吗？
+### 4.1 主问题 A：结构预设是否构成实现化
 
-他把局部结果描述为"客观地增补全局态"。SRT 与 Whitehead 的唯一实质departure（就目前判读）是把这个增补做成**有代价且不对称**的：既成事实不只是被加入，而是以不同硬度固化，推翻已固化结构有价格，且该价格应由形式化承担而非仅由叙述承担。
+他写：actuality is **presupposed by** the Boolean structure of the reduced matrix。这似乎把实现化化解为**描述的前提条件**，而非一个步骤。SRT 则把它保留为**原始转换**（P0-01，`∃x ⟺ x ∈ Range(Ĝ)`）。
 
-追问：层论的 gluing 是否携带任何区分"难以推翻的既成事实"与"廉价可修订的既成事实"的东西——任何随全局态所需修订量而变的阻碍类 / 上同调型度量？还是说延伸纯粹是保结构的，可修订性留在形式化之外？
+需要分开的两个命题：
 
-若是后者，则 SRT 的代价约束恰好属于他自己所说的"再多一条参数选择规则"，而不是竞争性机制。**此判读需对方确认后才可使用。**
+- **determinacy presupposed**：概率性测量描述已预设结果必须确定；
+- **actualization occurs**：这一个确定结果实际发生、而非另一个。
 
-### Q3（暂缓）：拓扑相位的预测力主张
+追问：这是真实分歧，还是词汇/侧重差异？
 
-Aharonov–Bohm / Berry phase 由该形式化"预言"而 Hilbert 空间形式化"完全不预言"——这是他给出的最尖锐的经验差别。**读书之后再问**，不在本轮转述或倚重。
+> **纪律**：按 §13，在减法测试出结果前，`selection` 只能被表述为 SRT **treats as** primitive（P0 原语地位），**不得**写成"已证不可还原"。回信措辞 "SRT retains actualization as a primitive transition" 合规。反向同样成立：若他答"只是词汇差异"，那是**证据**，须按 §13 登记，不得当作对方未理解。
+
+### 4.2 主问题 B：subjective aim 的层位
+
+不再问 aim 能否被还原为约束，改问它在**哪一层**不可缺少：完整 subjective aim 是否已构成于每一个最低层 actual occasion？还是其物理相关内容可以分层——基础实现化只需语境与范畴性决定，价值与自我决定只在更复杂、具身、承载历史的过程中出现？
+
+SRT 侧的对照结构是**两段式**，不是"价值整体更晚"：
+
+| 层 | 内容 | 仓库地位 |
+|:---|:---|:---|
+| 前赌注 | 微效价 → affordance → 缺失 → 需求 → 锚定 → 价值深度 | `_SRT_D_VALUE_CANONICAL.md §2a`，**P3 book-provenance 候选**，采纳前须完成 §2a.3 对账，§2a.5 载撤回条件 |
+| 赌注门 | `R_i`（不可逆风险）/ `A_i`（效用梯度对准）/ `C_i`（后果回流至主体闭包） | 同文件 §2b.1 `Def-w_i`，**P2** |
+
+§2a.3 明言：**有微效价 ≠ 有 stake-coupled `d`**，绕过门是类型错误。因此对怀特海的提问应落在"门"上：最小倾斜 SRT 愿意放得很低，可能对应 aim 的最薄形态；但**要求后果真实回流的那一层**，怀特海放在哪里？
+
+### 4.3 次级形式问题：具体局部语境如何被固定
+
+要求局部语境**必须是**布尔的，未固定其**具体实现**：可对易观测量的选取、系统—装置划界、结果被登记所经的耦合、以及该局部语境嵌入全局结构的方式。
+
+追问：层论设定是否形式上区分两个概率赋值相同、但嵌入 / gluing 关系不同的局部语境？
+
+若区分，则具体语境身份已由形式主义承载；但**这不等于 subjective aim 已被完全形式化**，不得据此推断后者。
+
+> **措辞纠正**：初稿把 basis / cut / coupling 统称为"which Boolean subalgebra"不严谨。`θ_basis` 大致对应极大对易集，`θ_cut` 与 `θ_H_int` 不在布尔子代数内部（`Physics/SRT_Quant_01_Selection.md` §88）。定稿已改为"full concrete realization of that context"。
+
+### 4.4 推迟到读书后：全局增补的历史不对称性
+
+SRT 已有不可逆写回（P0-03）、`L2` 下向约束（P1-T03）、路径痕迹 `ρ(p,t)`、重选代价，比第一封去信时深入。但在未读该书前**不指定**对方形式系统中的对应物——尤其不点名 obstruction class / cohomological measure：上同调阻碍度量的是**局部数据能否黏成全局截面**，与"推翻一个既成事实有多贵"是不同问题，提前指定会把回复引向术语纠正。回信中只预告读后再比较。
+
+### 4.5 推迟：拓扑相位的预测力主张
+
+Aharonov–Bohm / Berry phase 由该形式化"预言"而 Hilbert 空间形式化"完全不预言"——他给出的最尖锐经验差别。读书后再问，本轮不转述、不倚重。
 
 ---
 
-## 五、回信草稿（英文，待作者定稿）
+## 五、回信定稿（英文，待发送）
 
-> 以下为草稿，**未发送**。作者可自行删改；两条追问的顺序与措辞保留了"先接受其框架、再指出未覆盖处"的结构。
+> 本节为 2026-07-27 修订后的定稿版，**尚未发送**。结构对应 §四：先接受其框架 → 主问题 A（实现化地位）→ 主问题 B（aim 层位，含两段式对照）→ 次级形式问题 → 两项推迟 → note 邀约。
+>
+> 措辞纪律：`retains ... as a primitive`（不写 proven irreducible）、`on the account I am currently working out`（分层结构标为在建）、不点名 cohomological measure。三项均对应 §四的登记理由。
 
 ```text
 Subject: Re: Concrescence vs selection in quantum measurement: does 'aim' add anything physically?
 
 Dear Mike,
 
-Thank you — and please don't apologize for the delay; the answer was well
-worth waiting for, and it lands more precisely than I had hoped.
+Thank you for such a substantial reply — and please do not worry about the
+delay; it was well worth waiting for.
 
-Yes, I would be very grateful for the PDF of Foundations of Relational
+I would be very grateful to receive the PDF of Foundations of Relational
 Realism. This address is fine.
 
-If I have understood you correctly, the "aim" question dissolves not by
-dropping the constraint but by relocating it: the Categoreal Obligations
-appear in QM as algebraic rather than dynamical constraints — the local
-context must be Boolean, the global state must not be (Kochen-Specker) —
-together with the further rules by which the non-Boolean global restricts
-without determining the local, and by which the local outcome augments the
-global. Novelty is then carried by local contextualization itself rather
-than by an additional principle. That is very close to where my own
-framework has been pushed, and it also tells me which of my commitments are
-doing real work and which are only decoration. I take it as settled between
-us that no new dynamical mechanism is needed.
+Let me first check that I have understood the central point of your answer.
+A globally fixed architecture of rules need not eliminate genuine novelty in
+a locally contextualized measurement, because those rules enter not as an
+additional collapse dynamics but as the algebraic and relational conditions
+governing the connection between a locally Boolean measurement context and a
+globally non-Boolean state. The global restricts and conditions the local
+without fully determining it, while the realized local outcome objectively
+augments the global totality of settled facts. My provisional reconstruction
+is therefore:
 
-Two things I still cannot settle, and I suspect the real disanalogy lives in
-one of them.
+    global constraint → local contextualization → actualization
+    → global augmentation
 
-First: which Boolean subalgebra? Your rules constrain the local context to
-be Boolean, and constrain how a Boolean local relates to a non-Boolean
-global. But they seem to leave open which Boolean subalgebra is actually
-instantiated in a given measurement — the basis, where the cut falls, what
-the interaction Hamiltonian is. In SRT I carry that as an explicit parameter
-of the concrete measuring situation (basis / cut / coupling) and take a
-fairly strong line: two arrangements that are statistically indistinguishable
-but differ in that parameter are ontologically distinct actualizations, not
-two descriptions of one. My question is whether that distinction is
-represented in the sheaf-theoretic setting — do two local Boolean contexts
-with identical probability assignments but different gluing data, or
-different embeddings into the global object, differ formally? If they do,
-then what remains of "subjective aim" is already doing formal work in your
-framework without being a dynamical principle, and I would want to cite it
-that way rather than as metaphysical enrichment.
+Since I wrote my original message the framework has moved on, and that
+changes the form of what I want to ask rather than the direction.
 
-Second: is the augmentation free? You describe the local outcome as
-objectively augmenting the global state. The one place where I think SRT
-genuinely departs from Whitehead is that it makes this augmentation costly
-and asymmetric: settled facts are not merely added to the totality, they
-consolidate with differing hardness, and overturning a consolidated
-structure has a price that the formalism is meant to carry rather than
-merely narrate. Whitehead's "satisfaction," as far as I can tell, has no
-dimensioned constraint of this kind. So: does the sheaf-theoretic gluing
-carry anything that distinguishes a settled fact that is expensive to
-overturn from one that is cheaply revisable — any obstruction or
-cohomological measure scaling with how much revision the global state would
-require? Or is the extension purely structure-preserving, with revisability
-left outside the formalism? If it is the latter, I suspect my cost
-constraint is exactly the sort of additional parameter-selection rule you
-describe rather than a rival mechanism — but I would rather hear whether you
-consider that reading legitimate before building on it.
+The first thing it changes concerns the status of actualization itself. You
+write that actuality is presupposed by the Boolean structure of the reduced
+density matrix. I am unsure whether this means only that a probabilistic
+measurement description already presupposes determinate possible outcomes,
+or whether the Boolean structure is also meant to account for the occurrence
+of this particular determinate actuality. SRT now treats these as distinct
+claims: a formal description may presuppose that actuality must be
+determinate without thereby constituting the event by which one actuality
+becomes manifest rather than another. It therefore retains actualization as
+a primitive transition from latent possibility to determinate manifestation,
+while denying that this requires any additional mechanical collapse force.
+Would you regard that as a genuine difference between our approaches, or
+only a difference of vocabulary and emphasis? I ask in earnest — if the
+distinction does no work that your framework cannot already do, I would
+rather find that out from you than defend it out of habit.
 
-I will hold my questions about the topological phase predictions
-(Aharonov-Bohm, Berry) until I have read the book properly; that is the
-sharpest empirical difference you name and I do not want to paraphrase it
-badly.
+The second concerns the level at which subjective aim is indispensable, and
+it is the question I would most value your judgment on. On the account I am
+currently working out — and I should say it is still consolidating — SRT
+separates basal actualization from valuation in two stages rather than one.
+At the basal level, selection is not a subject choosing from a pre-given
+menu of already formed possibilities; it is the prior process by which
+alternatives are displaced, a determinate form is produced, and the result
+is written back into the conditions of what can happen next. The chooser,
+the menu, valuation and reflective agency are later structures produced
+through repeated actualization and historical stabilization, not
+presuppositions of every basal selection event.
 
-The one-page note with the minimal SRT setup still stands if it would be
-useful — say the word and I will send it, otherwise I will not add to your
-inbox.
+But "later" resolves into two distinct steps. A minimal tilt appears very
+early: once an interface is contextualized at all, it is no longer neutral
+for the position it meets — approachable, to be avoided, steadying,
+alarming. What that tilt does not yet have is stake. Valuation in the
+weight-bearing sense arises only where a direction carries genuine
+irreversible risk for a concrete embodied position, where consequences
+actually return to that position, and where the return begins to constrain
+its subsequent selection. Agency arises later still, when such a position
+can bring returned consequences into the modification of its own next
+selection.
 
-With thanks and respect,
+I mention the two stages because they may bear directly on your answer. If
+Whitehead's subjective aim must already be fully present in every actual
+occasion, that would locate a genuine ontological departure between the two
+frameworks. But if aim admits of internal levels, I would want to know which
+level you take it to occupy: the minimal tilt, which SRT is willing to place
+very low, or the stake-bearing valuation, which SRT places only where
+consequence actually returns to a bearer. Where does Whitehead put the
+threshold, if he puts one at all?
+
+One secondary formal question follows from this, and it is genuinely
+secondary. The requirement that a local measurement context be Boolean does
+not by itself seem to specify its full concrete realization: the compatible
+observables selected, the system-apparatus division, the coupling through
+which an outcome is registered, and the way the local context is embedded
+into the global structure. Does the sheaf-theoretic framework formally
+distinguish two local contexts that yield identical probability assignments
+but differ in their embedding into, or gluing relations with, the global
+state? I do not assume such a distinction is equivalent to subjective aim,
+but it seems important for understanding how much of concrete contextual
+actualization the formalism itself already carries.
+
+I will postpone my questions about the historical asymmetry of global
+augmentation — whether settled facts merely extend the global state or also
+acquire differing persistence and resistance to revision — until I have read
+the book carefully. SRT has developed a more explicit account of irreversible
+writeback, stabilization, and the way settled structures constrain future
+selection, but I do not yet know whether your topological formalism contains
+an analogous structure, and I would rather not guess at its shape in
+advance. I will likewise hold my questions about the Aharonov-Bohm effect,
+Berry phase, and the predictive role of the topological formalism until I
+understand the precise contrast you are drawing with the conventional
+Hilbert-space treatment.
+
+The offer of a one-page note presenting the minimal SRT setup still stands.
+Say the word and I will send it; otherwise I will not add unnecessarily to
+your inbox.
+
+With respect,
 Yuxin Zhang
 ```
+
+> **配套件**：一页 note 已成稿，见
+> [`2026-07-27_SRT_Minimal_Setup_Note_EN.md`](2026-07-27_SRT_Minimal_Setup_Note_EN.md)。
+> 发送前须删除该文件的两个仓库内部块（顶部说明与"依据对照"表）。
 
 ---
 
 ## 六、待办
 
-- [ ] 定稿并发出回信（回一句要 PDF 是最低动作，勿再拖）。
-- [ ] 收到 PDF 后建立阅读笔记；`Foundations of Relational Realism` 的层论进路若确实表示了 §四 Q1 的区分，走材料融合流程（`Operations/_SRT_MATERIAL_PIPELINE.md`），不直接回写 bridge。
-- [ ] 若对方确认 Q2（层论 gluing 不携带代价/可修订性度量），可在 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一"代价约束"分叉处补一条外部确认注记——**须等实际回复，不得据本文推定**。
-- [ ] 一页 SRT 最小设定 note 的英文版尚未成稿，若对方索取需先写。
+- [ ] 发出回信（§五 定稿）。回一句要 PDF 是最低动作，勿再拖。
+- [x] 一页 SRT 最小设定英文 note 成稿 → `2026-07-27_SRT_Minimal_Setup_Note_EN.md`（发送前删两个内部块）。
+- [ ] 收到 PDF 后建立阅读笔记；若层论进路确实表示了 §4.3 的区分，走材料融合流程（`Operations/_SRT_MATERIAL_PIPELINE.md`），不直接回写 bridge。
+- [ ] **对主问题 A 的回复须按 `Core/SRT_OPEN_TENSIONS.md §13` 登记**：他若答"只是词汇差异"，那是外部减法测试的一次非正式结果，应作为证据记入 §13，不得当作对方未理解；他若给出竞争语汇重构不了的具体差别，同样记入。任一方向都**不得**据此单独判定 residue label——§13 明言 residue 只能来自已执行的正式删除测试。
+- [ ] 若对方确认 §4.4（层论 gluing 不携带代价/可修订性度量），可在 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一"代价约束"分叉处补一条外部确认注记——**须等实际回复，不得据本文推定**。
+- [ ] 若对方对 §4.2 的两段式给出实质回应，回流点是 `_SRT_D_VALUE_CANONICAL.md §2a`（该节仍为 P3 候选，采纳前须完成 §2a.3 对账）——外部学者的认可**不构成** §2a.3 对账，不得替代内部流程。
