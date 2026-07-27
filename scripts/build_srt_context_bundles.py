@@ -150,8 +150,11 @@ MAX_RECOMMENDED_LOAD = CONTEXT_WINDOW - HEADROOM_RESERVE  # 170_000
 RECOMMENDED_LOADOUTS: list[tuple[str, list[str], str]] = [
     ("骨架路线（裁定定义时用）", ["SPINE"], "需要确定 SRT 术语、公理、方程、符号含义时，只装这一个。"),
     ("轻量跨域", ["COMPACTCORE"], "只需领域主线、不需裁定定义时用。"),
-    ("轻量单域", ["COMPACTCORE", "DOMAIN_PHILOSOPHY"], "跨域主线 + 单个领域（此处以最大的 Philosophy 为例）。"),
-    ("最小单域", ["DOMAIN_AI"], "只做单领域问答的最省装法。"),
+    # 不推荐 COMPACTCORE + DOMAIN_X：COMPACTCORE 已含全部领域的 CompactCore，
+    # 领域包会把同一批文件再装一遍（Philosophy 情形下重复 3 个文件）。领域包自带
+    # claim-status 护栏与导航，单独使用即可。
+    ("单域（最大）", ["DOMAIN_PHILOSOPHY"], "单领域问答；领域包自带 claim-status 护栏与导航。"),
+    ("单域（最小）", ["DOMAIN_AI"], "只做单领域问答的最省装法。"),
 ]
 
 # 明确禁止的组合，附禁止理由。它们会被 check_budgets() 验证为确实超预算——
@@ -289,13 +292,61 @@ def working_tree_dirty() -> bool:
     return False
 
 
-def capture_provenance(source_ref: str | None, generated_date: str | None) -> Provenance:
+def capture_provenance(generated_date: str | None) -> Provenance:
+    """`source_commit` 只能是**实际的 HEAD**。
+
+    此前有个 `--source-ref` 可以把任意字符串写进 provenance，而内容始终读自工作树——
+    等于允许声明一个与内容无关的来源 commit，且 `--check` 也验证不出来。既然内容读自
+    工作树，唯一诚实的记法就是记工作树所在的 commit。
+    """
+    sha = git("rev-parse", "--short", "HEAD")
+    if not sha:
+        fail("取不到 HEAD——本工具要求在 git 仓库内运行，provenance 不接受占位值。")
     return Provenance(
-        sha=(source_ref or git("rev-parse", "--short", "HEAD") or "unknown"),
+        sha=sha,
         branch=git("rev-parse", "--abbrev-ref", "HEAD") or "unknown",
         generated=(generated_date or date.today().isoformat()),
         dirty=working_tree_dirty(),
     )
+
+
+def git_ok(*args: str) -> bool:
+    """跑一条只看退出码的 git 命令。"""
+    try:
+        return subprocess.run(
+            ["git", *args], cwd=REPO_ROOT, capture_output=True, text=True
+        ).returncode == 0
+    except FileNotFoundError:
+        return False
+
+
+def verify_provenance(prov: Provenance, source_files: list[str]) -> None:
+    """校验记录的 `source_commit` 确实能对应上当前工作树的内容。
+
+    只做逐字比对是不够的——比对用的是当前工作树，所以一个伪造或过期的 SHA 照样能
+    "通过"。这里补上三件事：该 commit 存在、它是 HEAD 的祖先、并且此后没有任何来源
+    文件发生过改动。
+    """
+    if prov.dirty:
+        fail(
+            f"记录的 provenance 声明生成时工作树是脏的（source_dirty: true），"
+            f"因此 `source_commit: {prov.sha}` 并不能代表包的内容来源。\n"
+            "  请在干净的工作树上重新生成后再提交。"
+        )
+    if git("cat-file", "-t", prov.sha) != "commit":
+        fail(f"`source_commit: {prov.sha}` 在本仓库历史中不存在——provenance 不可信。")
+    if not git_ok("merge-base", "--is-ancestor", prov.sha, "HEAD"):
+        fail(
+            f"`source_commit: {prov.sha}` 不是当前 HEAD 的祖先。\n"
+            "  包声称的来源快照不在当前历史里，provenance 不可信。"
+        )
+    changed = git("diff", "--name-only", prov.sha, "HEAD", "--", *source_files)
+    if changed:
+        listed = "\n  ".join(changed.splitlines()[:20])
+        fail(
+            f"以下来源文件在 `{prov.sha}` 之后发生过改动，包已过期：\n  {listed}\n"
+            "  请重新运行生成脚本并提交。"
+        )
 
 
 def read_provenance(path: Path) -> Provenance:
@@ -579,20 +630,19 @@ SPINE_BUCKETS: dict[str, tuple[str, str]] = {
 }
 
 
-def registry_mentions() -> set[str]:
-    """registry 中提及的、且确实存在的全部 .md 路径。
+def registry_mentions() -> tuple[set[str], set[str]]:
+    """registry 提及的全部 .md 路径，拆成 (文件存在, 文件不存在)。
 
-    只做成员判定，不做逐条归属——归属见 `SPINE_BUCKETS`。成员判定对这份来源是可靠的，
-    也正是"完备性差异"唯一需要的信息。
+    **不能把不存在的路径静默丢掉。** 早先的写法用 `is_file()` 过滤，结果是 registry 指向
+    已删除 / 拼错 / 尚未创建的条目会从差异报告里彻底消失——而报告的存在理由恰恰是
+    "把差异讲清楚"。失效路径本身就是一种差异，必须单列出来。
     """
     text = read_text("CANONICAL_REGISTRY.md")
-    found = {
-        p for p in re.findall(r"`([A-Za-z0-9_][A-Za-z0-9_/.-]*\.md)`", text)
-        if (REPO_ROOT / p).is_file()
-    }
+    found = set(re.findall(r"`([A-Za-z0-9_][A-Za-z0-9_/.-]*\.md)`", text))
     if not found:
-        fail("锚点缺失：CANONICAL_REGISTRY.md 中解析不到任何存在的 .md 路径")
-    return found
+        fail("锚点缺失：CANONICAL_REGISTRY.md 中解析不到任何 .md 路径")
+    exists = {p for p in found if (REPO_ROOT / p).is_file()}
+    return exists, found - exists
 
 
 def parse_first_sources() -> list[str]:
@@ -627,7 +677,7 @@ def bucket_for(path: str) -> tuple[str, str]:
 
 
 def build_manifest_report(bundled: list[str]) -> str:
-    mentioned = registry_mentions()
+    mentioned, broken = registry_mentions()
     first_sources = parse_first_sources()
 
     rows: dict[str, list[str]] = {}
@@ -659,27 +709,56 @@ def build_manifest_report(bundled: list[str]) -> str:
             "",
         ]
 
-    missing_fs = [p for p in first_sources if p not in bundled and (REPO_ROOT / p).is_file()]
+    # First Sources 拆成三态：已收录 / 存在但未收 / 路径失效。
+    fs_missing = [p for p in first_sources
+                  if p not in bundled and (REPO_ROOT / p).is_file()]
+    fs_broken = [p for p in first_sources if not (REPO_ROOT / p).is_file()]
     missing_reg = sorted(p for p in mentioned if p not in bundled)
 
     parts += ["### 未收录支持文件", ""]
-    if missing_fs:
+    if fs_broken:
         parts += [
-            f"**`SRT_AI_START.md` §2 First Sources 点名但本包未收（{len(missing_fs)} 个）**"
-            "——这是最需要注意的一类，回答涉及它们时本包不足以裁定：",
+            f"**⚠ 高严重度：`SRT_AI_START.md` §2 First Sources 中有 {len(fs_broken)} 条路径"
+            "指向不存在的文件**——这类条目既收不进来，也不该被算作「已覆盖」：",
             "",
-            *[f"- `{p}`" for p in missing_fs],
+            *[f"- `{p}`" for p in fs_broken],
             "",
         ]
-    else:
+    if fs_missing:
         parts += [
-            "`SRT_AI_START.md` §2 First Sources **已全部收录**"
-            f"（{len(first_sources)} 个）。",
+            f"**First Sources 点名、文件存在、但本包未收（{len(fs_missing)} 个）**"
+            "——回答涉及它们时本包不足以裁定：",
+            "",
+            *[f"- `{p}`" for p in fs_missing],
+            "",
+        ]
+    if not fs_broken and not fs_missing:
+        parts += [
+            f"`SRT_AI_START.md` §2 First Sources **已全部收录**（{len(first_sources)} 条，"
+            "且全部指向存在的文件）。",
+            "",
+        ]
+
+    if broken:
+        parts += [
+            f"**⚠ 高严重度：registry 提及但文件不存在（{len(broken)} 个）**——"
+            "指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，"
+            "因为它本身就是一种 manifest 差异：",
+            "",
+            "| 失效路径 | 说明 |",
+            "|---|---|",
+            *[
+                f"| `{p}` | "
+                + (f"见 §0.2 G4：这是 `{PATH_SHORTHANDS[p]}` 的行文简写，非真实路径"
+                   if p in PATH_SHORTHANDS else "registry 指向的文件在仓库中不存在")
+                + " |"
+                for p in sorted(broken)
+            ],
             "",
         ]
 
     parts += [
-        f"**registry 提及但本包未收（{len(missing_reg)} 个）**——多为领域主轴、",
+        f"**registry 提及、文件存在、但本包未收（{len(missing_reg)} 个）**——多为领域主轴、",
         "展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：",
         "",
         "<details><summary>展开完整清单</summary>",
@@ -876,8 +955,11 @@ source_dirty: {str(prov.dirty).lower()}
 
 SPINE_POINTER = """
 > **注意**：本包**不含** canonical 骨架（`d` / `Ψ_f` / `T_dir` 定义、核心公理、
-> 主方程、符号表）。领域内容依赖那些定义。若需确定术语含义，请同时加载
-> `SRT_CONTEXT_BUNDLE_SPINE.md`；仅凭本包不得裁定任何 SRT 术语的定义。
+> 主方程、符号表），因此**仅凭本包不得裁定任何 SRT 术语的定义**。
+>
+> 需要裁定定义时，请**改用骨架路线**——新开一次对话，只装
+> `SRT_CONTEXT_BUNDLE_SPINE.md`。**不要在本包之上再叠加骨架包**：两者合计会超出
+> 上下文预算（见 `README.md` 的预算表）。两条路线互斥，是切换关系，不是叠加关系。
 """
 
 
@@ -1046,8 +1128,17 @@ uv run python scripts/build_srt_context_bundles.py --check     # 确定性校验
 # 入口
 # --------------------------------------------------------------------------
 
+def all_source_files() -> list[str]:
+    """全部包用到的来源文件（去重）。"""
+    files = list(SPINE)
+    for cfg in DOMAINS.values():
+        files += [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
+    return sorted(set(files))
+
+
 def run_check(out_dir: Path) -> None:
     prov = read_provenance(out_dir / SPINE_BUNDLE_NAME)
+    verify_provenance(prov, all_source_files())
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
         generate(prov, tmp)
@@ -1073,8 +1164,9 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="生成 SRT 上下文包")
     ap.add_argument("--check", action="store_true",
                     help="按既有产出的 provenance 重新生成到临时目录并逐字比对，不写入")
-    ap.add_argument("--source-ref", help="固定记录的来源 commit（默认取当前 HEAD 短 SHA）")
-    ap.add_argument("--generated-date", help="固定记录的生成日期 YYYY-MM-DD（默认今天）")
+    # 刻意不提供 `--source-ref`：内容读自工作树，能诚实记录的只有工作树所在的 commit。
+    ap.add_argument("--generated-date",
+                    help="固定记录的生成日期 YYYY-MM-DD（默认今天）；仅为标签，不声称内容来源")
     ap.add_argument("--out-dir", default=str(DEFAULT_OUT_DIR), help="产出目录")
     args = ap.parse_args()
 
@@ -1084,7 +1176,7 @@ def main() -> None:
         return
 
     # provenance 在任何写入之前一次性捕获，保证同一次生成的所有包记录一致。
-    prov = capture_provenance(args.source_ref, args.generated_date)
+    prov = capture_provenance(args.generated_date)
     results = generate(prov, out_dir)
 
     print(f"已生成 {len(results)} 个上下文包 + README → {out_dir}/")

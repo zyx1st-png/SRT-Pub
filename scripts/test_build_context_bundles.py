@@ -327,7 +327,7 @@ def test_context_budget() -> None:
 def test_manifest_completeness() -> None:
     """manifest 差异报告必须把「未收录」讲清楚，且不得声称自己是完备闭包。"""
     first_sources = B.parse_first_sources()
-    mentioned = B.registry_mentions()
+    mentioned, _broken = B.registry_mentions()
     check("First Sources 解析非空", len(first_sources) >= 10, f"got {len(first_sources)}")
     check("registry 提及解析非空", len(mentioned) >= 50, f"got {len(mentioned)}")
 
@@ -350,7 +350,117 @@ def test_manifest_completeness() -> None:
           "完备闭包" in report and "人工选择的高优先级 spine" in report)
     check("报告标明分类是生成器判断", "生成器的判断" in report)
     check("报告含未收录小节", "### 未收录支持文件" in report)
-    check("报告列出 registry 未收数量", "registry 提及但本包未收" in report)
+    check("报告列出 registry 未收数量", "文件存在、但本包未收" in report)
+
+
+# --------------------------------------------------------------------------
+# 装载协议自洽：领域包不得把用户引回被禁止的叠加方案
+# --------------------------------------------------------------------------
+
+def test_no_conflicting_load_instructions() -> None:
+    """领域包曾写"请同时加载 SPINE"，而 README 同时禁止叠加——用户照领域包做就会
+    掉回本 PR 要禁止的高负载组合。两处必须口径一致：切换，不是叠加。"""
+    prov = B.Provenance("loadout", "test", "2026-01-01", False)
+    with tempfile.TemporaryDirectory() as td:
+        out = Path(td)
+        B.generate(prov, out)
+        for path in sorted(out.glob("*.md")):
+            text = path.read_text(encoding="utf-8")
+            check(f"{path.name} 不含「同时加载」表述", "同时加载" not in text)
+            check(f"{path.name} 不含「一并加载」表述", "一并加载" not in text)
+        pointer = (out / "SRT_CONTEXT_BUNDLE_DOMAIN_AI.md").read_text(encoding="utf-8")
+        check("领域包指示改用骨架路线", "改用骨架路线" in pointer)
+        check("领域包明确禁止叠加骨架", "不要在本包之上再叠加骨架包" in pointer)
+
+
+def test_loadouts_have_no_duplicate_sources() -> None:
+    """推荐组合不得把同一来源文件装两遍。
+
+    `COMPACTCORE + DOMAIN_X` 就是这种情况：COMPACTCORE 已含全部领域的 CompactCore，
+    领域包又装一遍同样的 cores。即便仍在预算内，也是白费上下文。"""
+    contents = {"SPINE": list(B.SPINE),
+                "COMPACTCORE": [f for c in B.DOMAINS.values() for f in c["cores"]]}
+    for key, cfg in B.DOMAINS.items():
+        contents[f"DOMAIN_{key.upper()}"] = [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
+
+    for label, keys, _ in B.RECOMMENDED_LOADOUTS:
+        seen: dict[str, int] = {}
+        for k in keys:
+            for f in contents[k]:
+                seen[f] = seen.get(f, 0) + 1
+        dupes = sorted(f for f, n in seen.items() if n > 1)
+        check(f"推荐组合「{label}」无重复来源文件", not dupes, f"重复 {dupes}")
+
+
+# --------------------------------------------------------------------------
+# provenance 真实性：source_commit 必须能对应上内容
+# --------------------------------------------------------------------------
+
+def test_provenance_cannot_be_forged() -> None:
+    """伪造 / 过期的 source_commit 必须被拒。
+
+    此前 `--check` 只做逐字比对，而比对用的是当前工作树，所以任意 SHA 都能"通过"。
+    现在还要求：该 commit 存在、是 HEAD 的祖先、且此后来源文件未变。"""
+    sources = B.all_source_files()
+    real_head = B.git("rev-parse", "--short", "HEAD")
+    check("all_source_files 非空", len(sources) > 20, f"got {len(sources)}")
+
+    cases = [
+        ("不存在的 SHA", B.Provenance("deadbee", "b", "2026-01-01", False)),
+        ("占位值", B.Provenance("unknown", "b", "2026-01-01", False)),
+        ("生成时工作树是脏的", B.Provenance(real_head, "b", "2026-01-01", True)),
+    ]
+    for label, prov in cases:
+        stderr, sys.stderr = sys.stderr, open(os.devnull, "w")
+        try:
+            B.verify_provenance(prov, sources)
+            FAILURES.append(f"provenance 伪造未被拒：{label}")
+        except SystemExit as exc:
+            if not exc.code:
+                FAILURES.append(f"provenance 伪造检查 exit=0：{label}")
+        finally:
+            sys.stderr.close()
+            sys.stderr = stderr
+
+    # 真实 HEAD + 干净树必须通过。
+    try:
+        B.verify_provenance(B.Provenance(real_head, "b", "2026-01-01", False), sources)
+    except SystemExit:
+        FAILURES.append("真实 HEAD 的 provenance 被误拒")
+
+    # 不能再有一个可以把任意字符串写进 provenance 的开关（注释里提到它是可以的）。
+    src = (B.REPO_ROOT / "scripts" / "build_srt_context_bundles.py").read_text(encoding="utf-8")
+    check("已移除 --source-ref 开关", 'add_argument("--source-ref"' not in src)
+    check("capture_provenance 不再接受来源 SHA 参数",
+          "def capture_provenance(generated_date" in src)
+
+
+# --------------------------------------------------------------------------
+# manifest 不得静默隐藏 registry 的失效路径
+# --------------------------------------------------------------------------
+
+def test_broken_registry_paths_surface() -> None:
+    """registry 指向不存在文件的条目，必须出现在报告里而不是被 is_file() 过滤掉。"""
+    exists, broken = B.registry_mentions()
+    check("registry 存在路径集非空", len(exists) >= 50, f"got {len(exists)}")
+    check("registry_mentions 返回失效集合", isinstance(broken, set))
+
+    report = B.build_manifest_report(B.SPINE)
+    if broken:
+        check("报告含失效路径小节", "registry 提及但文件不存在" in report)
+        for p in broken:
+            check(f"报告点名失效路径 {p}", f"`{p}`" in report)
+    check("报告区分「文件存在但未收」", "文件存在、但本包未收" in report)
+
+    # 失效的 First Source 不得被算作「已全部收录」。
+    real = B.parse_first_sources
+    B.parse_first_sources = lambda: real() + ["Core_Law/__does_not_exist__.md"]
+    try:
+        r2 = B.build_manifest_report(B.SPINE)
+        check("失效 First Source 不被算作已全部收录", "已全部收录" not in r2)
+        check("失效 First Source 被点名", "__does_not_exist__" in r2)
+    finally:
+        B.parse_first_sources = real
 
 
 def run() -> None:
@@ -363,6 +473,10 @@ def run() -> None:
     test_shallow_repo_guard()
     test_context_budget()
     test_manifest_completeness()
+    test_no_conflicting_load_instructions()
+    test_loadouts_have_no_duplicate_sources()
+    test_provenance_cannot_be_forged()
+    test_broken_registry_paths_surface()
     test_dirty_excludes_bundle_dir()
 
     if FAILURES:
