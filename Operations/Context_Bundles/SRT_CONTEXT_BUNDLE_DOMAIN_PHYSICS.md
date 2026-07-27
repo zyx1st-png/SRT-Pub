@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-27
-source_commit: 23a480e8
+source_commit: 74edebb9
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-27 |
-| 来源 commit | `23a480e8` |
+| 来源 commit | `74edebb9` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
@@ -258,7 +258,7 @@ When answering about SRT:
 
 ### 未收录支持文件
 
-**`SRT_AI_START.md` §2 First Sources 点名但本包未收（15 个）**——这是最需要注意的一类，回答涉及它们时本包不足以裁定：
+**First Sources 点名、文件存在、但本包未收（15 个）**——回答涉及它们时本包不足以裁定：
 
 - `CANONICAL_REGISTRY.md`
 - `Governance/SRT_CLAIM_LADDER.md`
@@ -276,7 +276,13 @@ When answering about SRT:
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - `Core/SRT_OPEN_TENSIONS.md`
 
-**registry 提及但本包未收（83 个）**——多为领域主轴、
+**⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
+
+| 失效路径 | 说明 |
+|---|---|
+| `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
+
+**registry 提及、文件存在、但本包未收（83 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -372,8 +378,11 @@ When answering about SRT:
 
 
 > **注意**：本包**不含** canonical 骨架（`d` / `Ψ_f` / `T_dir` 定义、核心公理、
-> 主方程、符号表）。领域内容依赖那些定义。若需确定术语含义，请同时加载
-> `SRT_CONTEXT_BUNDLE_SPINE.md`；仅凭本包不得裁定任何 SRT 术语的定义。
+> 主方程、符号表），因此**仅凭本包不得裁定任何 SRT 术语的定义**。
+>
+> 需要裁定定义时，请**改用骨架路线**——新开一次对话，只装
+> `SRT_CONTEXT_BUNDLE_SPINE.md`。**不要在本包之上再叠加骨架包**：两者合计会超出
+> 上下文预算（见 `README.md` 的预算表）。两条路线互斥，是切换关系，不是叠加关系。
 
 
 

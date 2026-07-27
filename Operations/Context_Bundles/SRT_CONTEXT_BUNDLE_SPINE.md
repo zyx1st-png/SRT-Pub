@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-27
-source_commit: 23a480e8
+source_commit: 74edebb9
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
 ---
@@ -26,7 +26,7 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-27 |
-| 来源 commit | `23a480e8` |
+| 来源 commit | `74edebb9` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
@@ -279,9 +279,15 @@ When answering about SRT:
 
 ### 未收录支持文件
 
-`SRT_AI_START.md` §2 First Sources **已全部收录**（15 个）。
+`SRT_AI_START.md` §2 First Sources **已全部收录**（15 条，且全部指向存在的文件）。
 
-**registry 提及但本包未收（75 个）**——多为领域主轴、
+**⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
+
+| 失效路径 | 说明 |
+|---|---|
+| `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
+
+**registry 提及、文件存在、但本包未收（75 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
