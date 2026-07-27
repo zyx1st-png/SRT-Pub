@@ -335,11 +335,16 @@ def test_manifest_completeness() -> None:
     for path in B.SPINE:
         check(f"SPINE_BUCKETS 覆盖 {path}", path in B.SPINE_BUCKETS)
 
-    # 旧版的实质缺口：收了七命题摘要，却漏掉它自己声明不能替代的两个文件。
+    check("SPINE 含 CLAIM_MODE_AUDIT（First Sources 第 3 位）",
+          "Governance/SRT_CLAIM_MODE_AUDIT.md" in B.SPINE)
+
+    # 七命题摘要与两个 Reference 文件为预算原因移出，但必须在未收录清单里可见——
+    # 移出可以，静默消失不行。
+    report_now = B.build_manifest_report(B.SPINE)
     for path in ("Core_Law/SRT_Reference_Axioms.md",
                  "Core_Law/SRT_Reference_Ontology.md",
-                 "Governance/SRT_CLAIM_MODE_AUDIT.md"):
-        check(f"SPINE 已补入 {path}", path in B.SPINE)
+                 "Core_Law/SRT_Constitution_Seven_Theses.md"):
+        check(f"{path} 未收录但在报告中列名", path not in B.SPINE and path in report_now)
 
     missing_fs = [p for p in first_sources
                   if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]
@@ -347,7 +352,7 @@ def test_manifest_completeness() -> None:
 
     report = B.build_manifest_report(B.SPINE)
     check("报告声明本包不是完备闭包",
-          "完备闭包" in report and "人工选择的高优先级 spine" in report)
+          "完备闭包" in report and "人工选择的高优先级 canonical 骨架" in report)
     check("报告标明分类是生成器判断", "生成器的判断" in report)
     check("报告含未收录小节", "### 未收录支持文件" in report)
     check("报告列出 registry 未收数量", "文件存在、但本包未收" in report)
@@ -396,43 +401,53 @@ def test_loadouts_have_no_duplicate_sources() -> None:
 # provenance 真实性：source_commit 必须能对应上内容
 # --------------------------------------------------------------------------
 
-def test_provenance_cannot_be_forged() -> None:
-    """伪造 / 过期的 source_commit 必须被拒。
+def test_provenance_is_content_digest() -> None:
+    """真实性判据必须是输入闭包的内容摘要，且不得依赖 commit 祖先关系。
 
-    此前 `--check` 只做逐字比对，而比对用的是当前工作树，所以任意 SHA 都能"通过"。
-    现在还要求：该 commit 存在、是 HEAD 的祖先、且此后来源文件未变。"""
-    sources = B.all_source_files()
-    real_head = B.git("rev-parse", "--short", "HEAD")
-    check("all_source_files 非空", len(sources) > 20, f"got {len(sources)}")
+    祖先校验在 squash / rebase 合并下必然失效（那个 commit 会被重写或丢弃），
+    属于"PR 内绿、合入即红"。而且它只覆盖显式正文列表，改 STATUS.md、审计文件或
+    生成脚本都绕得过去。"""
+    inputs = B.all_inputs()
+    check("输入闭包非空", len(inputs) > 20, f"got {len(inputs)}")
 
-    cases = [
-        ("不存在的 SHA", B.Provenance("deadbee", "b", "2026-01-01", False)),
-        ("占位值", B.Provenance("unknown", "b", "2026-01-01", False)),
-        ("生成时工作树是脏的", B.Provenance(real_head, "b", "2026-01-01", True)),
-    ]
-    for label, prov in cases:
+    # 隐式输入必须在闭包内——这些是旧版漏掉的。
+    for path in (B.GENERATOR_SELF, "STATUS.md",
+                 "Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md",
+                 "Operations/Audits/Hook_Closure_Audit_2026-07-25.md",
+                 "CANONICAL_REGISTRY.md", "SRT_AI_START.md"):
+        check(f"输入闭包含 {path}", path in inputs)
+    for path in B.SPINE:
+        check(f"输入闭包含正文 {path}", path in inputs)
+
+    digest = B.inputs_digest()
+    check("摘要稳定", digest == B.inputs_digest())
+    check("摘要非空", len(digest) >= 16, f"got {digest!r}")
+
+    # 伪造 / 过期 / 缺失的摘要都必须被拒。
+    for label, prov in [
+        ("伪造摘要", B.Provenance("abc1234", "b", "2026-01-01", False, "0" * 16)),
+        ("缺少摘要（旧版格式）", B.Provenance("abc1234", "b", "2026-01-01", False, "")),
+    ]:
         stderr, sys.stderr = sys.stderr, open(os.devnull, "w")
         try:
-            B.verify_provenance(prov, sources)
-            FAILURES.append(f"provenance 伪造未被拒：{label}")
+            B.verify_provenance(prov)
+            FAILURES.append(f"provenance 未被拒：{label}")
         except SystemExit as exc:
             if not exc.code:
-                FAILURES.append(f"provenance 伪造检查 exit=0：{label}")
+                FAILURES.append(f"provenance 检查 exit=0：{label}")
         finally:
             sys.stderr.close()
             sys.stderr = stderr
 
-    # 真实 HEAD + 干净树必须通过。
+    # 真实摘要必须通过，且与 commit 无关（SHA 传个任意值也应通过）。
     try:
-        B.verify_provenance(B.Provenance(real_head, "b", "2026-01-01", False), sources)
+        B.verify_provenance(B.Provenance("whatever", "b", "2026-01-01", False, digest))
     except SystemExit:
-        FAILURES.append("真实 HEAD 的 provenance 被误拒")
+        FAILURES.append("真实摘要被误拒（或仍在做 commit 祖先校验）")
 
-    # 不能再有一个可以把任意字符串写进 provenance 的开关（注释里提到它是可以的）。
     src = (B.REPO_ROOT / "scripts" / "build_srt_context_bundles.py").read_text(encoding="utf-8")
     check("已移除 --source-ref 开关", 'add_argument("--source-ref"' not in src)
-    check("capture_provenance 不再接受来源 SHA 参数",
-          "def capture_provenance(generated_date" in src)
+    check("不再做 commit 祖先校验", "--is-ancestor" not in src)
 
 
 # --------------------------------------------------------------------------
@@ -475,7 +490,7 @@ def run() -> None:
     test_manifest_completeness()
     test_no_conflicting_load_instructions()
     test_loadouts_have_no_duplicate_sources()
-    test_provenance_cannot_be_forged()
+    test_provenance_is_content_digest()
     test_broken_registry_paths_surface()
     test_dirty_excludes_bundle_dir()
 

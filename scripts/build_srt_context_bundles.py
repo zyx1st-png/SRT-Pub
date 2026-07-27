@@ -12,8 +12,9 @@
    GENERATED INTERPRETATION（生成器归纳）、USAGE POLICY（规则及其授权依据）。
    不把生成器的判断混进"来源原文"里冒充权威。
 3. **锚点失效即失败。** 抽取锚点找不到 → 非零退出码，绝不静默产出缺护栏的包。
-4. **可复现。** provenance 在任何写入之前一次性捕获；`--source-ref` /
-   `--generated-date` 可固定；`--check` 在临时目录重新生成并逐字比对。
+4. **可复现且可验真。** provenance 在任何写入之前一次性捕获；`inputs_digest` 覆盖
+   生成脚本、护栏来源与全部正文，`--check` 重算摘要并在临时目录重新生成逐字比对。
+   刻意不做 commit 祖先校验——那会让 squash / rebase 合并后的 main 必红。
 
 用法：
     uv run python scripts/build_srt_context_bundles.py
@@ -25,6 +26,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import re
 import subprocess
 import sys
@@ -55,10 +57,13 @@ SPINE = [
     "Governance/SRT_CLAIM_LADDER.md",
     "Governance/SRT_CLAIM_MODE_AUDIT.md",
     "Core_Law/SRT_L0_Metaphysics.md",
-    "Core_Law/SRT_Constitution_Seven_Theses.md",
-    # registry §B.5 明写七命题摘要"不替代"以下两个文件。旧版收了摘要却漏了它们。
-    "Core_Law/SRT_Reference_Axioms.md",
-    "Core_Law/SRT_Reference_Ontology.md",
+    # 七命题摘要 + Reference_Axioms / Reference_Ontology 三者一并移出（2026-07-27）。
+    # 起因是预算：估算是字符启发式而非真实 tokenizer，必须留够误差余量。取舍逻辑是
+    # 连带的——registry §B.5 说七命题摘要"不替代"那两个 Reference 文件，所以先前
+    # 「收摘要、漏 Reference」是不自洽的；把摘要一并移出后，骨架只留真正的 canonical
+    # 定义锚点（d / Ψ_f / T_dir / Core_21* / Core_22 / 符号表）与治理护栏，自洽且更瘦。
+    # 三者都在 §0.4「未收录支持文件」里逐条列名并说明关系，不是被悄悄丢掉。
+    # 三者均不在 AI_START §2 First Sources 内，故 First Sources 覆盖率不受影响。
     "Core/SRT_Core_21_Formal_Axioms.md",
     "Core/SRT_Core_21_Minimal_Axioms.md",
     "Core/SRT_Core_21b_Constitutive_Theorems.md",
@@ -141,10 +146,14 @@ DOMAINS = {
 # 等于不给系统提示、用户问题和模型输出留任何余量。现在预算是显式常量，推荐组合必须
 # 通过 check_budgets()，超预算的组合无法作为推荐出现。
 
+# token 数是**字符启发式估算**，不是任何目标模型的真实 tokenizer。系数刻意取在偏高
+# 一侧（CJK 实际约 1.0–1.1 tok/字，此处按 1.2；拉丁实际约 0.25，此处按 0.29），所以
+# 估算值倾向于高估——对预算而言这是安全方向。但"偏保守"不等于"精确"，因此额外留
+# 出误差余量，且不把预算校验称作保证。
 CONTEXT_WINDOW = 200_000
-# 系统提示 + 用户问题 + 一次较长回答所需的余量。
-HEADROOM_RESERVE = 30_000
-MAX_RECOMMENDED_LOAD = CONTEXT_WINDOW - HEADROOM_RESERVE  # 170_000
+# 系统提示 + 用户问题 + 一次较长回答，再加上估算误差的缓冲。
+HEADROOM_RESERVE = 45_000
+MAX_RECOMMENDED_LOAD = CONTEXT_WINDOW - HEADROOM_RESERVE  # 155_000
 
 # 推荐装载路线。两条路线互斥：骨架路线用于裁定定义，轻量路线用于领域问答。
 RECOMMENDED_LOADOUTS: list[tuple[str, list[str], str]] = [
@@ -153,17 +162,20 @@ RECOMMENDED_LOADOUTS: list[tuple[str, list[str], str]] = [
     # 不推荐 COMPACTCORE + DOMAIN_X：COMPACTCORE 已含全部领域的 CompactCore，
     # 领域包会把同一批文件再装一遍（Philosophy 情形下重复 3 个文件）。领域包自带
     # claim-status 护栏与导航，单独使用即可。
-    ("单域（最大）", ["DOMAIN_PHILOSOPHY"], "单领域问答；领域包自带 claim-status 护栏与导航。"),
-    ("单域（最小）", ["DOMAIN_AI"], "只做单领域问答的最省装法。"),
+    ("单域（体量最大者：Philosophy）", ["DOMAIN_PHILOSOPHY"],
+     "单领域问答；领域包自带 claim-status 护栏与导航。"),
+    ("单域（体量最小者：Core 动力学）", ["DOMAIN_CORE"], "最省的一种装法。"),
 ]
 
-# 明确禁止的组合，附禁止理由。它们会被 check_budgets() 验证为确实超预算——
+# 明确禁止的组合，附禁止理由。它们会被 check_budgets() 验证为**确实超预算**——
 # 禁令必须由数字支撑，不能只是一句话。
+#
+# 注意这里只列 SPINE + COMPACTCORE。此前还写过一条"SPINE + 任一领域包"，但它只拿最大的
+# Philosophy 做校验，而骨架瘦身后 `SPINE + DOMAIN_CORE` 实际落在预算内——那条禁令的
+# 措辞覆盖不了它验证过的范围。逐个领域的实际数字改由 README 的对照表给出。
 FORBIDDEN_LOADOUTS: list[tuple[str, list[str], str]] = [
     ("SPINE + COMPACTCORE", ["SPINE", "COMPACTCORE"],
      "旧版曾把它推荐为跨域方案；两包合计已**超出**整个窗口，装不下。"),
-    ("SPINE + 任一领域包", ["SPINE", "DOMAIN_PHILOSOPHY"],
-     "骨架已占大部分预算，叠加后余量不足以容纳系统提示与一次完整回答。"),
 ]
 
 
@@ -266,6 +278,7 @@ class Provenance:
     branch: str
     generated: str
     dirty: bool
+    digest: str = ""   # 输入闭包的内容摘要；这是真实性判据，sha 仅供参考
 
 
 def porcelain_path(line: str) -> str:
@@ -292,6 +305,48 @@ def working_tree_dirty() -> bool:
     return False
 
 
+# --------------------------------------------------------------------------
+# 输入闭包与内容摘要
+# --------------------------------------------------------------------------
+# 生成结果不只依赖正文文件：§0.2 护栏读 STATUS.md 与两份审计，§0.4 读 registry 与
+# AI_START，输出形态还取决于生成脚本本身。只对正文列表做校验，会漏掉这些隐式输入。
+GENERATOR_SELF = "scripts/build_srt_context_bundles.py"
+GUARDRAIL_SOURCES = [
+    "STATUS.md",
+    "CANONICAL_REGISTRY.md",
+    "SRT_AI_START.md",
+    "Core/SRT_Core_21b_Constitutive_Theorems.md",
+    "Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md",
+    "Operations/Audits/Hook_Closure_Audit_2026-07-25.md",
+]
+
+
+def all_inputs() -> list[str]:
+    """生成结果依赖的**全部**输入：生成脚本 + 护栏来源 + 各包正文。"""
+    files = [GENERATOR_SELF, *GUARDRAIL_SOURCES, *SPINE]
+    for cfg in DOMAINS.values():
+        files += [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
+    return sorted(set(files))
+
+
+def inputs_digest() -> str:
+    """输入闭包的联合内容摘要。
+
+    这才是"包是否与来源一致"的判据。此前用的是 commit 祖先关系，有两个毛病：
+    squash / rebase 合并会重写或丢弃该 commit，导致合并后 main 上 `--check` 必红；
+    而且祖先关系只覆盖显式正文列表，改 STATUS.md、审计文件或生成脚本都绕得过去。
+    内容摘要与合并策略无关，且覆盖全部输入。
+    """
+    h = hashlib.sha256()
+    for rel in all_inputs():
+        path = REPO_ROOT / rel
+        if not path.is_file():
+            fail(f"输入闭包中的文件不存在：{rel}")
+        h.update(rel.encode("utf-8") + b"\0")
+        h.update(hashlib.sha256(path.read_bytes()).hexdigest().encode() + b"\n")
+    return h.hexdigest()[:16]
+
+
 def capture_provenance(generated_date: str | None) -> Provenance:
     """`source_commit` 只能是**实际的 HEAD**。
 
@@ -299,53 +354,33 @@ def capture_provenance(generated_date: str | None) -> Provenance:
     等于允许声明一个与内容无关的来源 commit，且 `--check` 也验证不出来。既然内容读自
     工作树，唯一诚实的记法就是记工作树所在的 commit。
     """
-    sha = git("rev-parse", "--short", "HEAD")
-    if not sha:
-        fail("取不到 HEAD——本工具要求在 git 仓库内运行，provenance 不接受占位值。")
     return Provenance(
-        sha=sha,
+        sha=git("rev-parse", "--short", "HEAD") or "unknown",
         branch=git("rev-parse", "--abbrev-ref", "HEAD") or "unknown",
         generated=(generated_date or date.today().isoformat()),
         dirty=working_tree_dirty(),
+        digest=inputs_digest(),
     )
 
 
-def git_ok(*args: str) -> bool:
-    """跑一条只看退出码的 git 命令。"""
-    try:
-        return subprocess.run(
-            ["git", *args], cwd=REPO_ROOT, capture_output=True, text=True
-        ).returncode == 0
-    except FileNotFoundError:
-        return False
+def verify_provenance(prov: Provenance) -> None:
+    """校验包所声明的输入摘要与当前输入闭包一致。
 
-
-def verify_provenance(prov: Provenance, source_files: list[str]) -> None:
-    """校验记录的 `source_commit` 确实能对应上当前工作树的内容。
-
-    只做逐字比对是不够的——比对用的是当前工作树，所以一个伪造或过期的 SHA 照样能
-    "通过"。这里补上三件事：该 commit 存在、它是 HEAD 的祖先、并且此后没有任何来源
-    文件发生过改动。
+    刻意**不**校验 commit 祖先关系：squash / rebase 合并会重写或丢弃生成时的 commit，
+    那样合并到 main 之后本检查必然失败，属于"PR 内绿、合入即红"。内容摘要不受合并
+    策略影响，且覆盖生成脚本与护栏来源等隐式输入。
     """
-    if prov.dirty:
+    if not prov.digest:
         fail(
-            f"记录的 provenance 声明生成时工作树是脏的（source_dirty: true），"
-            f"因此 `source_commit: {prov.sha}` 并不能代表包的内容来源。\n"
-            "  请在干净的工作树上重新生成后再提交。"
+            "包的 frontmatter 缺少 `inputs_digest`——无法验证它与来源一致。\n"
+            "  这是旧版格式，请重新运行生成脚本并提交。"
         )
-    if git("cat-file", "-t", prov.sha) != "commit":
-        fail(f"`source_commit: {prov.sha}` 在本仓库历史中不存在——provenance 不可信。")
-    if not git_ok("merge-base", "--is-ancestor", prov.sha, "HEAD"):
+    current = inputs_digest()
+    if prov.digest != current:
         fail(
-            f"`source_commit: {prov.sha}` 不是当前 HEAD 的祖先。\n"
-            "  包声称的来源快照不在当前历史里，provenance 不可信。"
-        )
-    changed = git("diff", "--name-only", prov.sha, "HEAD", "--", *source_files)
-    if changed:
-        listed = "\n  ".join(changed.splitlines()[:20])
-        fail(
-            f"以下来源文件在 `{prov.sha}` 之后发生过改动，包已过期：\n  {listed}\n"
-            "  请重新运行生成脚本并提交。"
+            f"输入闭包摘要不一致：包记录 `{prov.digest}`，当前为 `{current}`。\n"
+            "  说明生成脚本、护栏来源（STATUS.md / 审计文件）或某个正文文件在生成之后\n"
+            "  发生过改动，包已过期。请重新运行生成脚本并提交。"
         )
 
 
@@ -354,7 +389,8 @@ def read_provenance(path: Path) -> Provenance:
     if not path.exists():
         fail(f"--check 需要既有产出，但找不到 {path}")
     fm, _ = split_frontmatter(path.read_text(encoding="utf-8"))
-    missing = [k for k in ("generated", "source_commit", "source_branch", "source_dirty") if k not in fm]
+    missing = [k for k in ("generated", "source_commit", "source_branch",
+                           "source_dirty", "inputs_digest") if k not in fm]
     if missing:
         fail(f"{path.name} frontmatter 缺少 provenance 字段：{', '.join(missing)}")
     return Provenance(
@@ -362,6 +398,7 @@ def read_provenance(path: Path) -> Provenance:
         branch=fm["source_branch"],
         generated=fm["generated"],
         dirty=fm["source_dirty"].strip().lower() == "true",
+        digest=fm["inputs_digest"].strip(),
     )
 
 
@@ -617,14 +654,11 @@ SPINE_BUCKETS: dict[str, tuple[str, str]] = {
     "Core/SRT_Core_21c_Bridge_Hypotheses.md": ("定义源", "registry §A.4 分层正文 P2/P3/P4"),
     "Core/SRT_Core_22_Equations.md": ("定义源", "registry §A.4b 主锚点"),
     "Core_Law/SRT_L0_Metaphysics.md": ("定义源", "AI_START §2 First Sources 第 4 位"),
-    "Core_Law/SRT_Reference_Axioms.md": ("定义源", "registry §B.5 注：七命题摘要不替代本文件"),
-    "Core_Law/SRT_Reference_Ontology.md": ("定义源", "registry §B.5 注：七命题摘要不替代本文件"),
     "_SRT_SYMBOL_TABLE.md": ("定义源", "AI_START §2 First Sources；符号与记号的定义权"),
     "Core/SRT_OPEN_TENSIONS.md": ("治理护栏", "registry §A.4c；未闭合登记，claim_mode: open"),
     "_SRT_CROSS_DOMAIN_MATRIX.md": ("治理护栏", "registry §A.4d 自称 governance-canonical usage layer"),
     "Governance/SRT_CLAIM_LADDER.md": ("治理护栏", "registry §B.5b；P0–P5 硬度阶梯"),
     "Governance/SRT_CLAIM_MODE_AUDIT.md": ("治理护栏", "registry §B.5c；降级台账"),
-    "Core_Law/SRT_Constitution_Seven_Theses.md": ("展开层", "registry §B.5；顶层摘要，明写不替代定义源"),
     "CANONICAL_REGISTRY.md": ("导航", "权威层级注册表本身"),
     "SRT_AI_START.md": ("导航", "AI 最小首读入口，frontmatter 自标 ai_do_not_use_for_definition"),
 }
@@ -676,7 +710,14 @@ def bucket_for(path: str) -> tuple[str, str]:
     return "展开层", f"frontmatter claim_mode={mode}"
 
 
-def build_manifest_report(bundled: list[str]) -> str:
+BUNDLE_KIND_BLURB = {
+    "spine": "**人工选择的高优先级 canonical 骨架**，不是定义权的完备闭包",
+    "compactcore": "**轻量跨域包**（各领域 CompactCore 主线），**不含定义源**",
+    "domain": "**单领域支持包**（claim-status 护栏 + 导航 + CompactCore），**不含定义源**",
+}
+
+
+def build_manifest_report(bundled: list[str], kind: str = "spine") -> str:
     mentioned, broken = registry_mentions()
     first_sources = parse_first_sources()
 
@@ -690,7 +731,7 @@ def build_manifest_report(bundled: list[str]) -> str:
     parts = [
         "> **这份报告回答一个问题：本包相对 `CANONICAL_REGISTRY.md` 到底缺了什么。**",
         ">",
-        "> 本包**不是**定义权的完备闭包，而是**人工选择的高优先级 spine**。",
+        f"> 本包是 {BUNDLE_KIND_BLURB[kind]}。",
         "> 下面的分类是**生成器的判断**，不是 registry 的原话；每行都附依据供复核。",
         "> 「registry 提及」「AI_START §2」两列是机械判定的事实。",
         "",
@@ -878,7 +919,7 @@ def render_file_block(rel: str) -> str:
 
 
 def bundle_header(prov: Provenance, bundle_id: str, title: str,
-                  purpose: str, files: list[str]) -> str:
+                  purpose: str, files: list[str], kind: str = "spine") -> str:
     manifest = "\n".join(
         f"| {i} | `{f}` | {last_commit_date(f)} |" for i, f in enumerate(files, 1)
     )
@@ -894,6 +935,7 @@ generated: {prov.generated}
 source_commit: {prov.sha}
 source_branch: {prov.branch}
 source_dirty: {str(prov.dirty).lower()}
+inputs_digest: {prov.digest}
 ---
 
 # {title}
@@ -915,10 +957,12 @@ source_dirty: {str(prov.dirty).lower()}
 | 生成时来源工作树有改动 | {"是" if prov.dirty else "否"} |
 | 包含文件数 | {len(files)} |
 
-> **source_commit 契约**：该值是**生成本包时 HEAD 所指的来源快照**。把本包纳入版本库的
-> 那个 commit 必然晚于它，因此 `source_commit` 与本文件所在 commit 不相等是正常的，
-> 不是漂移。要复核一致性，用 `--check`：它按本 frontmatter 记录的 provenance 重新生成
-> 并逐字比对。
+> **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
+> （`STATUS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
+> 因此改动其中任何一项都会被发现。
+>
+> `source_commit` 仅供参考，**不作为校验条件**：squash / rebase 合并会重写或丢弃该
+> commit，若拿它做祖先校验，合并进 main 之后检查必然失败。内容摘要与合并策略无关。
 
 ### 0.1 文件清单与各自最后改动日期
 
@@ -947,7 +991,7 @@ source_dirty: {str(prov.dirty).lower()}
 
 ## §0.4 Manifest 差异报告（本包 vs `CANONICAL_REGISTRY.md`）
 
-{build_manifest_report(files)}
+{build_manifest_report(files, kind)}
 
 ---
 """
@@ -967,12 +1011,13 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
     """生成全部包，返回 [(label, filename, n_files)]。"""
     require_full_history()
     out_dir.mkdir(parents=True, exist_ok=True)
-    plan: list[tuple[str, str, str, str, list[str], str]] = [
+    plan: list[tuple[str, str, str, str, list[str], str, str]] = [
         (
             "骨架 spine", SPINE_BUNDLE_NAME, f"SRT-CONTEXT-BUNDLE-SPINE-{prov.generated}",
             "SRT Canonical 骨架上下文包",
             SPINE,
             "",
+            "spine",
         ),
         (
             "CompactCore 全集", "SRT_CONTEXT_BUNDLE_COMPACTCORE.md",
@@ -980,6 +1025,7 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
             "SRT CompactCore 全集上下文包",
             [f for cfg in DOMAINS.values() for f in cfg["cores"]],
             SPINE_POINTER,
+            "compactcore",
         ),
     ]
     purposes = {
@@ -995,13 +1041,14 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
                 f"SRT {cfg['title']}上下文包",
                 [*cfg["guards"], *cfg["nav"], *cfg["cores"]],
                 SPINE_POINTER,
+                "domain",
             )
         )
         purposes[name] = f"收录{cfg['title']}的 claim-status 护栏、领域导航与 CompactCore 主线。"
 
     results = []
-    for label, name, bid, title, files, note in plan:
-        parts = [bundle_header(prov, bid, title, purposes[name], files)]
+    for label, name, bid, title, files, note, kind in plan:
+        parts = [bundle_header(prov, bid, title, purposes[name], files, kind)]
         if note:
             parts.append(note)
         parts.extend(render_file_block(rel) for rel in files)
@@ -1046,6 +1093,18 @@ def write_readme(prov: Provenance, out_dir: Path,
             for label, keys, note in FORBIDDEN_LOADOUTS
         ]
     )
+    # 逐个领域列出，而不是拿最大的一个代表"任一领域包"。
+    spine_plus_rows = "\n".join(
+        ["| 组合 | 合计 ≈token | 是否在预算内 |", "|---|---:|:---:|"]
+        + [
+            f"| `SPINE` + `DOMAIN_{k.upper()}` | {total(['SPINE', f'DOMAIN_{k.upper()}']):,} | "
+            + ("在预算内（但仍不推荐，见下）"
+               if total(["SPINE", f"DOMAIN_{k.upper()}"]) <= MAX_RECOMMENDED_LOAD
+               else "**超预算**")
+            + " |"
+            for k in DOMAINS
+        ]
+    )
 
     (out_dir / "README.md").write_text(
         f"""---
@@ -1060,6 +1119,7 @@ generated: {prov.generated}
 source_commit: {prov.sha}
 source_branch: {prov.branch}
 source_dirty: {str(prov.dirty).lower()}
+inputs_digest: {prov.digest}
 ---
 
 # SRT 上下文包
@@ -1076,10 +1136,15 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 ## 上下文预算
 
-窗口按 **{CONTEXT_WINDOW:,} token** 计，预留 **{HEADROOM_RESERVE:,}** 给系统提示、
-用户问题与模型输出，因此单次装载上限 **{MAX_RECOMMENDED_LOAD:,} token**。
+> **这里的 token 数是字符启发式估算，不是任何目标模型的真实 tokenizer 计数。**
+> 系数刻意取在偏高一侧（CJK 按 1.2 tok/字，实际约 1.0–1.1；拉丁按 0.29，实际约 0.25），
+> 所以估算值倾向于**高估**——对预算而言这是安全方向。但偏保守不等于精确，因此预留量
+> 里额外含一段误差缓冲，且本节不把校验结果称作"保证"。
 
-下表由生成脚本计算并校验；**超预算的组合无法作为推荐存在**——`check_budgets()`
+窗口按 **{CONTEXT_WINDOW:,} token** 计，预留 **{HEADROOM_RESERVE:,}** 给系统提示、
+用户问题、模型输出**与估算误差**，因此单次装载上限 **{MAX_RECOMMENDED_LOAD:,} token**。
+
+下表由生成脚本计算并校验：**超出上限的组合不能作为推荐出现**——`check_budgets()`
 会让构建直接失败。
 
 ### 推荐装载路线
@@ -1090,8 +1155,15 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 {forbidden_rows}
 
-**两条路线互斥。** 骨架路线用于裁定定义；轻量路线用于领域问答。不要把 `SPINE`
-和其他包叠加——骨架本身已占去大部分预算。
+### `SPINE` + 各领域包（逐个列出，均不推荐）
+
+{spine_plus_rows}
+
+**两条路线互斥。** 骨架路线用于裁定定义；轻量路线用于领域问答。
+
+上表中部分组合虽在预算内，仍不推荐叠加：领域包已自带 claim-status 护栏与导航，
+叠加骨架会把大量与该领域无关的定义正文压进上下文，稀释注意力，收益远低于成本。
+需要裁定定义时，**换一次对话只装 `SPINE`**。
 
 ## 三条使用纪律
 
@@ -1110,15 +1182,16 @@ uv run python scripts/build_srt_context_bundles.py
 uv run python scripts/build_srt_context_bundles.py --check     # 确定性校验
 ```
 
-`--check` 按既有产出 frontmatter 记录的 provenance 重新生成到临时目录并逐字比对，
-因此可在 CI 中确定性运行。`--source-ref` / `--generated-date` 可固定 provenance。
+`--check` 先核对 `inputs_digest`（输入闭包的联合内容摘要，覆盖生成脚本、护栏来源与
+全部正文），再按既有产出 frontmatter 记录的 provenance 重新生成到临时目录逐字比对。
+唯一的固定参数是 `--generated-date`，且它只是日期标签，不声称内容来源。
 
 护栏层按锚点抽取自 `Operations/` 审计台账与 `STATUS.md`。**任一锚点失效，脚本会
 直接以非零码退出**，而不会产出一个缺护栏的包。P1-T07 若日后被修订，脚本同样会
 失败，强制复核该护栏是否仍适用——这是刻意的防漂移设计。
 
-`source_commit` 记录生成时 HEAD 的来源快照；引入本目录的 commit 必然晚于它，
-两者不相等属正常。
+真实性判据是 `inputs_digest`（输入闭包的联合内容摘要），不是 `source_commit`。
+后者仅供参考——squash / rebase 合并会重写它，拿它做祖先校验会让合并后的 main 必红。
 """,
         encoding="utf-8",
     )
@@ -1128,17 +1201,9 @@ uv run python scripts/build_srt_context_bundles.py --check     # 确定性校验
 # 入口
 # --------------------------------------------------------------------------
 
-def all_source_files() -> list[str]:
-    """全部包用到的来源文件（去重）。"""
-    files = list(SPINE)
-    for cfg in DOMAINS.values():
-        files += [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
-    return sorted(set(files))
-
-
 def run_check(out_dir: Path) -> None:
     prov = read_provenance(out_dir / SPINE_BUNDLE_NAME)
-    verify_provenance(prov, all_source_files())
+    verify_provenance(prov)
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
         generate(prov, tmp)
