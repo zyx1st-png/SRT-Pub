@@ -25,16 +25,16 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
   4) 全局态定义为既成事实的拓扑重叠（sheaf），对应 Category of Transmutation，用层论显式形式化
   5) 明确同意"不需要新的动力学物理机制"
 - 当前判决：
-  - 去信原本想抓的 disanalogy（固定参数规则是否漏掉本质）被对方判为"不漏"，该争点消解，不构成 SRT 分叉。
+  - 对方**明确否定**的只是"固定约束必然消灭新颖性"这一推论；他**未裁决**"这些约束是否穷尽 subjective aim"。因此原 disanalogy 只有一条分支缩小，**争点未整体消解**——aim 是否仍有不可约层位仍开放，见主问题 B。不得把前者转述为后者。
   - 真正分叉仍在 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一 已记录的三条（三域结构 / 代价约束 / L₂ 独立性），本轮回信未触及。
   - 对方关于层论形式化预言拓扑相位现象（Aharonov–Bohm / Berry）的主张，SRT 侧未核验，暂缓引用。
 - 追问结构（记录文档 §四，同日修订重排）：
   - **主问题 A**：结构预设是否构成实现化——他的"actuality is presupposed by the Boolean structure"是否只说"描述预设结果必确定"，还是也解释"这一个结果实际发生"。SRT 保留实现化为原始转换（P0-01）。
-  - **主问题 B**：subjective aim 的层位——完整 aim 是否已构成于每个最低层 actual occasion，还是允许分层。SRT 侧对照为两段式（前赌注生成链 / R·A·C 赌注门），不是"价值整体更晚"。
+  - **主问题 B**：subjective aim 的层位——完整 aim 是否已构成于每个最低层 actual occasion，还是允许分层。SRT 侧对照为两段式（前赌注生成链 / R·A·C 赌注门），不是"价值整体更晚"。定稿信已显式留**第三出口**：aim 可能两者都不是，而是每个 occasion 的独立构成原则；不得用 SRT 的两格分类预裁剪怀特海。
   - **次级**：层论是否形式区分"概率赋值相同但嵌入 / gluing 不同"的局部语境。
   - **推迟两项**：全局增补的历史不对称性（读书后再问；不提前点名 obstruction / cohomological measure——其度量的是可黏合性而非修订代价）；拓扑相位预测力主张。
 - 治理挂钩：
-  - 主问题 A 直接对应 `Core/SRT_OPEN_TENSIONS.md §13` 的**未执行**减法测试（GOV-SUB01 §8.1，residue status unassigned）。对方框架是该竞争语汇的一个活实例，其回复无论正反都应作为证据记入 §13；但 residue label 只能来自正式删除测试，不得据本轮通信附加。
+  - 主问题 A 与 `Core/SRT_OPEN_TENSIONS.md §13` 的**未执行**减法测试（GOV-SUB01 §8.1，residue status unassigned）相关。对方框架提供了一套相关竞争语汇，本轮询问是**外部竞争语汇压力探针**（帮助识别正式测试该查哪些差异），**不是**减法测试本身——真正的测试需删除原语并重构其全部角色。其回复无论正反都只登记为未来正式测试的**外部比较材料 / 压力输入**，不是测试结果；residue label 只能来自已执行的正式删除测试。
   - 主问题 B 引用的价值发生序仍是 `_SRT_D_VALUE_CANONICAL.md §2a` 的 P3 book-provenance 候选；外部学者认可**不构成** §2a.3 stake-gate 对账。
 - backlog：
   - 回信已定稿（记录文档 §五），待发出；接受对方提供的 *Foundations of Relational Realism* PDF。

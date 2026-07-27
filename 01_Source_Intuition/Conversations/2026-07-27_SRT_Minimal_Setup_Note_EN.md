@@ -12,7 +12,7 @@ created: 2026-07-27
 revised: 2026-07-27
 language: en
 companion_record: 01_Source_Intuition/Conversations/2026-07-27_Epperson_Whitehead_QM_通信记录.md
-downstream_guard: "对外发送用的一页技术 note，非定义源。每条陈述已按 Governance/SRT_CLAIM_LADDER.md 标注 claim level；§6 为 book-provenance 候选、§5 为 P3 bridge、§7 为必须保留的暴露声明。修改任何一条前先核对对应 canonical 文件；不得删去 §7。"
+downstream_guard: "对外发送用的一页技术 note，非定义源。承重陈述已按 Governance/SRT_CLAIM_LADDER.md 标注 claim level（未标注句为对已标注陈述的说明，不是新增主张）；§6 为 book-provenance 候选、§5 为 P3 bridge、§7 为必须保留的暴露声明。§3 的零摩擦陈述带范围限定，不得去掉限定改写为普遍律（_SRT_PSI_F_CANONICAL.md §5 要求区分现实主体 / 纯形式极限 / AI-纯 L2 三种语境）。修改任何一条前先核对对应 canonical 文件；不得删去 §7。"
 dependency:
   - Governance/SRT_CLAIM_LADDER.md
   - Core/SRT_Core_21_Minimal_Axioms.md
@@ -26,7 +26,7 @@ dependency:
 
 > **仓库内部说明（发送时删除本块）**
 >
-> 本文件是为 Epperson 通信准备的**对外一页 note**，与 `05_Public_Release/SRT_IN_ONE_PAGE.md` 是不同体裁：后者面向一般读者、无形式机件、无 claim level；本文件面向一位量子测量哲学专业读者，保留最小形式机件并逐条标注承诺等级。
+> 本文件是为 Epperson 通信准备的**对外一页 note**，与 `05_Public_Release/SRT_IN_ONE_PAGE.md` 是不同体裁：后者面向一般读者、无形式机件、无 claim level；本文件面向一位量子测量哲学专业读者，保留最小形式机件并对**承重陈述**标注承诺等级（未标注句为说明性文字，不承担新增主张）。
 >
 > 每条陈述的来源已在 §依据对照 中列出。§7 是暴露声明，**不得删去**——它是本 note 能对外发送的前提。
 
@@ -36,7 +36,7 @@ dependency:
 
 *A one-page technical note — Yuxin Zhang, July 2026*
 
-**On the annotations.** SRT grades its own claims by hardness, and I have kept the grades visible rather than presenting everything in one voice. `[P0]` primitive axiom — assumed, not derived. `[P1]` constitutive theorem — follows once the P0 layer is granted. `[P2]` canonical interpretation. `[P3]` bridge mapping to another theory or domain — depends on an interface. `[P4]` empirical hypothesis. Where something is a candidate not yet adopted, it says so.
+**On the annotations.** SRT grades its own claims by hardness, and I have annotated the load-bearing commitments rather than presenting everything in one voice. `[P0]` primitive axiom — assumed, not derived. `[P1]` constitutive theorem — follows once the P0 layer is granted. `[P2]` canonical interpretation. `[P3]` bridge mapping to another theory or domain — depends on an interface. `[P4]` empirical hypothesis. Unannotated sentences are exposition of the annotated claims, not further claims. Where something is a candidate not yet adopted, it says so.
 
 ## 1. Three domains
 
@@ -62,11 +62,11 @@ The `L1`/`L2` distinction does real work: manifestation and historical consolida
 
 ## 3. Cost
 
-`Ψ_f` — *ontological friction*: the impedance that must be borne when $\hat{G}_\theta$ compresses open possibility into a maintainable, actionable, coordinable `L1` slice. It is not subjective effort, not identical with energy expenditure, and not identical with suffering; those are readings of it. `[P2, canonical anchor]`
+`Ψ_f` — *ontological friction*: the impedance that must be borne when $\hat{G}_\theta$ compresses open possibility into a maintainable, actionable, coordinable `L1` slice. It is not subjective effort, and it is not identical with either energy expenditure or suffering. Energy and suffering may serve as domain-specific projections, proxies or readouts of the underlying burden; they do not define it. `[P2, canonical anchor]`
 
 Payability: $\mathrm{Payable}(X,\Delta t) \iff \alpha P_{sel} \ge \beta \Psi_f + \gamma S_{noise}$. `[P2]`
 
-Zero friction is not the ideal. Nothing becomes durable for free, and too little resistance is as pathological as too much.
+Zero friction is not the ideal: the optimum is $\Psi_f > 0$ and payable. Nothing becomes durable for free. In embodied, history-bearing systems both unpayable friction and frictionless substitution can become pathological, in different ways — but this is a claim about such systems, not a general law of every actualization; in purely formal or limiting contexts a zero-friction path is a legitimate idealization. `[P2, scoped]`
 
 ## 4. Downward constraint
 
@@ -104,7 +104,7 @@ The chain carries an explicit failure condition: if micro-valence bears no weigh
 
 - **Selection is not proven irreducible.** Its `P0` status records that SRT *treats* selection as primitive. A subtractive test — whether asymmetric constraint, reachable-set change, irreversible writeback, payability and bearer-specific consequence return can reconstruct its role with no lost difference — is defined internally but **has not been run**. Until it is, selection must not be presented as a proven-irreducible ontological ultimate.
 - **The origin of selectability is open.** The well-formedness axiom supplies an admissible operator; it does not derive the first possibility of selecting from a prior non-selective ground.
-- **The cut/concern coupling is a high-commitment conjecture.** The proposal that the placement of the Heisenberg cut is parameterized by the observer's concern bandwidth together with free-energy minimization is marked internally as high metaphysical commitment with no direct experimental test path. `[P4, untested]`
+- **The cut/concern coupling is a high-commitment conjecture.** The proposal that the placement of the Heisenberg cut is parameterized by the observer's concern bandwidth together with free-energy minimization is marked internally as a high-commitment bridge conjecture with no direct experimental test path; operational proxies have been proposed but its claim-ladder placement is not settled. `[high-commitment bridge conjecture; empirical status unresolved]`
 - **Consciousness is thresholded, not distributed.** Broad selection does not entail experience; SRT is selection-first, not mind-first.
 
 ---
@@ -116,12 +116,13 @@ The chain carries an explicit failure condition: if micro-valence bears no weigh
 | §1 三域 | `Core_Law/SRT_L0_Metaphysics.md`；`05_Public_Release/SRT_IN_ONE_PAGE.md` | P2 |
 | §2 四原语 | `Core/SRT_Core_21_Minimal_Axioms.md` P0-01 / P0-02 / P0-03 / P0-04 | P0 |
 | §3 Ψ_f | `_SRT_PSI_F_CANONICAL.md` Def-Ψ-1（PRIMARY CANONICAL ANCHOR）、Def-Ψ-3（可支付性） | P2 |
+| §3 零摩擦边界 | 同文件 §5：最优为 `Ψ_f > 0 and payable`；**须区分现实主体语境 / 纯形式极限语境 / AI-纯 L2 语境**，不得无条件泛化 | P2 有范围 |
 | §4 下向约束 | `Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T03 | P1 |
 | §5 量子读法 | `Physics/SRT_Quant_01_Selection.md` Ax-P1、Ax-Sel-1（该文件 `canonical: false`，bridge/translation） | P3 |
 | §6 价值发生序 | `_SRT_D_VALUE_CANONICAL.md` §2a（book-provenance 候选，采纳前须完成 §2a.3 stake-gate 对账；§2a.5 载撤回条件）；赌注门 §2b.1 `Def-w_i` | P3-candidate / P2 |
 | §7 第一条 | `Core/SRT_OPEN_TENSIONS.md` §13（GOV-SUB01 §8.1 减法测试未执行，residue status unassigned） | 暴露声明 |
 | §7 第二条 | `Core/SRT_Core_21_Minimal_Axioms.md` P0-04 Exposure Note；`Core/SRT_OPEN_TENSIONS.md` §7 | 暴露声明 |
-| §7 第三条 | `Physics/SRT_Quant_01_Selection.md` Ax-Sel-2，自标 [H-高承诺]、无直接实验检验路径 | P4 未检验 |
+| §7 第三条 | `Physics/SRT_Quant_01_Selection.md` Ax-Sel-2，自标 [H-高承诺]、无直接实验检验路径（有 FC-Sel2-1/2 可证伪预测与操作化候选，但未做 claim-ladder 正式映射） | 高承诺 bridge 猜想，经验地位未决 |
 | §7 第四条 | `_SRT_D_VALUE_CANONICAL.md` §3.1 反泛心论精确声明 | P2 |
 
 **未写入本 note 的内容及原因**：`d/q/o` 三轴与三层关切架构（`2026-07-23` / `07-24` 对话材料）——收尾审计登记为候选缺口，且 downstream_guard 明令符号重命名前不得进入公共内容；`ε` 方向性规范（`_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`）——开放张力，与本轮通信主题无关。

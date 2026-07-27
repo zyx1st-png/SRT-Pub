@@ -10,7 +10,7 @@ claim_mode: exploratory_bridge
 canonical: false
 created: 2026-07-27
 revised: 2026-07-27
-downstream_guard: "本文记录一位外部学者的立场与四项未闭合追问，不构成 SRT 已闭合结论。Epperson 的层论/范畴义务论述属外部框架陈述，不得作为 SRT canonical 依据；§四各问在对方回复前不得写入 bridge 文件、书稿或公共内容。§4.2 引用的价值发生序仍是 _SRT_D_VALUE_CANONICAL.md §2a 的 P3 候选，外部学者的认可不构成 §2a.3 对账。§4.1 涉及 Core/SRT_OPEN_TENSIONS.md §13 的未执行减法测试：selection 只可表述为 SRT treats as primitive，不得写成已证不可还原，且不得据本轮通信为其附加 residue label。"
+downstream_guard: "本文记录一位外部学者的立场与四项未闭合追问，不构成 SRT 已闭合结论。Epperson 的层论/范畴义务论述属外部框架陈述，不得作为 SRT canonical 依据；§四各问在对方回复前不得写入 bridge 文件、书稿或公共内容。他明确否定的只是『固定约束必然消灭新颖性』，并未裁决『约束是否穷尽 subjective aim』——不得把前者转述为后者。§4.2 引用的价值发生序仍是 _SRT_D_VALUE_CANONICAL.md §2a 的 P3 候选，外部学者的认可不构成 §2a.3 对账。§4.1 与 Core/SRT_OPEN_TENSIONS.md §13 的未执行减法测试相关：本轮通信是外部竞争语汇压力探针，不是减法测试；selection 只可表述为 SRT treats as primitive，不得写成已证不可还原，且不得据本轮通信为其附加 residue label。"
 companion_note: 01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md
 dependency:
   - Core_Law/SRT_L0_Philosophy_Bridge.md
@@ -87,13 +87,17 @@ QM 测量被定义为**从潜能到概率的、根本上非酉的演化**。而"
 
 ### 3.1 他实际回答了什么
 
-原问题问的是"aim 是否额外施加**物理**约束"。他的回答是：**是，但不是动力学约束，而是代数/范畴结构约束**。aim 被整体转译为"布尔（局部）与非布尔（全局）之间的关联规则"，并且这些规则可形式化为层结构。
+原问题问的是"aim 是否额外施加**物理**约束"。他的回答表明：**全局固定约束可以具有物理相关性而不表现为新增动力学，并且可以与局部结果的真实新颖性并存**。他把这些约束主要表述为局部布尔语境与全局非布尔态之间的**代数与关系条件**，并可形式化为层结构。
 
-### 3.2 他没有直接辩护什么
+> **不可外推**：他给出的是这些约束**存在且可形式化**，**不等于**他已说明这些条件**穷尽**了 subjective aim 的全部内容。后一命题他未表态。
 
-他**没有**为 subjective aim 的"自我构成的评价"这一主观面单独辩护。去信里"固定参数规则会不会漏掉本质"的那条 disanalogy，他实际判定为**不漏**：新颖性由局部语境化本身承担，而非由额外原理承担。
+### 3.2 他明确否定的与未裁决的
 
-这对 SRT 是有利的转向——它把"要不要额外动力学原理"从争点变成共识——但同时**消化掉了**去信原本想抓的那个差异点。真正的分叉必须往别处找（见 §四）。
+他明确否定的是"**固定约束必然消灭新颖性**"这一推论——新颖性由局部语境化本身承担，无须额外原理。
+
+他**未裁决**的是：这些结构约束是否已穷尽 subjective aim；aim 是否仍含独立的估值或自我决定内容。他也没有为"自我构成的评价"这一主观面单独辩护——既未主张也未放弃。
+
+因此去信的核心问题**只有一条分支缩小了**：固定规则与新颖性不矛盾。另一条分支（aim 是否有不可约层位）仍然开放，并在 §4.2 被重新提出。
 
 ### 3.3 与 SRT 的对齐处
 
@@ -126,8 +130,8 @@ L0 哲学桥接文件已记录 SRT 相对过程哲学的三条分叉，本轮回
 
 三条：
 
-1. **原去信的 disanalogy 已被对方判定为不成立**（§3.2），继续追问"固定参数规则是否够用"没有裁决空间。
-2. **"实现化是否是一步"是可被外部检验的**。`Core/SRT_OPEN_TENSIONS.md §13` 登记了一项**从未执行**的减法测试（`Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1`，residue status unassigned）：仅用不对称约束、可达集变化、不可逆写回、可支付性、承载者特定后果回流，删去 `selection` 原语后 SRT 损失什么。**Epperson 的关系—拓扑框架正是这套竞争语汇的一个活实例**，向他提问等于跑一次非正式的外部减法测试。
+1. **原 disanalogy 只有一条分支消解**（§3.2）：固定约束并不必然消灭新颖性，这条已答。但这些约束**是否穷尽 subjective aim** 尚未被回答——这正是 §4.2 的主问题，不是旧问题的重复。
+2. **"实现化是否是一步"与 §13 的未执行减法测试直接相关**。`Core/SRT_OPEN_TENSIONS.md §13` 登记了一项**从未执行**的减法测试（`Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1`，residue status unassigned）：仅用不对称约束、可达集变化、不可逆写回、可支付性、承载者特定后果回流，删去 `selection` 原语后 SRT 损失什么。Epperson 的关系—拓扑框架提供了一套相关的**竞争语汇**，因此本轮询问可作为**外部竞争语汇压力探针**（external competitor-vocabulary pressure probe），帮助识别正式减法测试应当检查哪些差异——**但不等于执行了该测试**。真正的减法测试需要删除原语、用竞争语汇重构其全部角色、逐项核对实现化 / 不可逆写回 / 代价 / 后果回流 / 主体承载是否保留、并记录剩余差异；一位学者对一个聚焦问题的回答完成不了这套重构。
 3. **"aim 在哪一层不可缺少"比"aim 是否可还原"可裁决**。后者可被一篇哲学散文回避；前者是关于怀特海文本的是非问题，而他是权威。
 
 ### 4.1 主问题 A：结构预设是否构成实现化
@@ -141,7 +145,9 @@ L0 哲学桥接文件已记录 SRT 相对过程哲学的三条分叉，本轮回
 
 追问：这是真实分歧，还是词汇/侧重差异？
 
-> **纪律**：按 §13，在减法测试出结果前，`selection` 只能被表述为 SRT **treats as** primitive（P0 原语地位），**不得**写成"已证不可还原"。回信措辞 "SRT retains actualization as a primitive transition" 合规。反向同样成立：若他答"只是词汇差异"，那是**证据**，须按 §13 登记，不得当作对方未理解。
+> **纪律**：按 §13，在减法测试出结果前，`selection` 只能被表述为 SRT **treats as** primitive（P0 原语地位），**不得**写成"已证不可还原"。回信措辞 "SRT retains actualization as a primitive transition" 合规。
+>
+> 反向同样受约束：若他答"只是词汇差异"，那是一项**外部比较材料 / 压力输入**，应登记为未来正式减法测试的输入项，**不得**当作对方未理解，**也不得**单独构成 residue 判决的证据。residue label 只能来自已执行的正式删除测试。
 
 ### 4.2 主问题 B：subjective aim 的层位
 
@@ -155,6 +161,8 @@ SRT 侧的对照结构是**两段式**，不是"价值整体更晚"：
 | 赌注门 | `R_i`（不可逆风险）/ `A_i`（效用梯度对准）/ `C_i`（后果回流至主体闭包） | 同文件 §2b.1 `Def-w_i`，**P2** |
 
 §2a.3 明言：**有微效价 ≠ 有 stake-coupled `d`**，绕过门是类型错误。因此对怀特海的提问应落在"门"上：最小倾斜 SRT 愿意放得很低，可能对应 aim 的最薄形态；但**要求后果真实回流的那一层**，怀特海放在哪里？
+
+> **必须留第三出口**：只给"微效价 / stake-bearing valuation"两格，等于用 SRT 的分类预裁剪怀特海。他完全可能认为 aim 两者都不是——而是每个 actual occasion 的**独立构成原则**（例如趋向 satisfaction 的形式统一性）。定稿信已补一句显式邀请他走这条路，否则问题会读成"请在我的两格表里选"。
 
 ### 4.3 次级形式问题：具体局部语境如何被固定
 
@@ -237,10 +245,11 @@ the menu, valuation and reflective agency are later structures produced
 through repeated actualization and historical stabilization, not
 presuppositions of every basal selection event.
 
-But "later" resolves into two distinct steps. A minimal tilt appears very
-early: once an interface is contextualized at all, it is no longer neutral
-for the position it meets — approachable, to be avoided, steadying,
-alarming. What that tilt does not yet have is stake. Valuation in the
+But "later" resolves into two distinct steps. A minimal tilt appears early:
+when an already-manifest interface meets a concrete embodied position, it is
+no longer neutral for that position — it may become approachable, to be
+avoided, steadying, or alarming. What that tilt does not yet have is stake.
+Valuation in the
 weight-bearing sense arises only where a direction carries genuine
 irreversible risk for a concrete embodied position, where consequences
 actually return to that position, and where the return begins to constrain
@@ -256,6 +265,14 @@ level you take it to occupy: the minimal tilt, which SRT is willing to place
 very low, or the stake-bearing valuation, which SRT places only where
 consequence actually returns to a bearer. Where does Whitehead put the
 threshold, if he puts one at all?
+
+And if neither category captures what he means, that would interest me most
+of all. I am aware that asking you to locate aim on my scale may already
+prejudge it. If you regard subjective aim as a distinct constitutive feature
+of every occasion — the formal unity of an occasion's movement toward
+satisfaction, say — that should not be identified with either minimal
+valence or stake-bearing valuation, I would rather hear that than have you
+fit it to my categories.
 
 One secondary formal question follows from this, and it is genuinely
 secondary. The requirement that a local measurement context be Boolean does
@@ -300,6 +317,7 @@ Yuxin Zhang
 - [ ] 发出回信（§五 定稿）。回一句要 PDF 是最低动作，勿再拖。
 - [x] 一页 SRT 最小设定英文 note 成稿 → `2026-07-27_SRT_Minimal_Setup_Note_EN.md`（发送前删两个内部块）。
 - [ ] 收到 PDF 后建立阅读笔记；若层论进路确实表示了 §4.3 的区分，走材料融合流程（`Operations/_SRT_MATERIAL_PIPELINE.md`），不直接回写 bridge。
-- [ ] **对主问题 A 的回复须按 `Core/SRT_OPEN_TENSIONS.md §13` 登记**：他若答"只是词汇差异"，那是外部减法测试的一次非正式结果，应作为证据记入 §13，不得当作对方未理解；他若给出竞争语汇重构不了的具体差别，同样记入。任一方向都**不得**据此单独判定 residue label——§13 明言 residue 只能来自已执行的正式删除测试。
+- [ ] **对主问题 A 的回复按 `Core/SRT_OPEN_TENSIONS.md §13` 登记为外部压力输入**：无论他答"只是词汇差异"还是给出竞争语汇重构不了的具体差别，都记为**未来正式减法测试的外部比较材料**，不是测试结果。不得当作对方未理解，也**不得**据此单独判定 residue label——§13 明言 residue 只能来自已执行的正式删除测试。
+- [ ] **回复中若出现"aim 两者都不是"的第三种答案**（独立构成原则），那是对 §4.2 两段式对照最有价值的输出，应单独记录，不得强行归入前赌注 / 赌注门任一格。
 - [ ] 若对方确认 §4.4（层论 gluing 不携带代价/可修订性度量），可在 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一"代价约束"分叉处补一条外部确认注记——**须等实际回复，不得据本文推定**。
 - [ ] 若对方对 §4.2 的两段式给出实质回应，回流点是 `_SRT_D_VALUE_CANONICAL.md §2a`（该节仍为 P3 候选，采纳前须完成 §2a.3 对账）——外部学者的认可**不构成** §2a.3 对账，不得替代内部流程。
