@@ -25,6 +25,7 @@ For a summary of current draft cards and pressure links, see [`REVIEW_MAP.md`](R
 | ID | Domain | SRT Anchor | Level | Status | Summary | Pressure Link |
 |---|---|---|---|---|---|---|
 | [`EC-IG-FISHER-PSIF`](Mathematics_Information/EC-IG-Fisher-PsiF.md) | mathematics / information geometry | `Psi_f`; selection cost | E2 | draft_v1; not accepted | Fisher information geometry as a candidate structural interface for local distinguishability, transition burden, and parameter-space friction. | [`CL-IG-FISHER-GENERIC-DIFFICULTY`](CONTRADICTION_LEDGER.md#cl-ig-fisher-generic-difficulty) |
+| [`EC-MATH-KAKEYA-DIRECTION-NONCOLLAPSE`](Mathematics_Information/EC-KAKEYA-DIRECTION-NONCOLLAPSE.md) | mathematics / geometric measure theory / harmonic analysis | `D_eff`; `d-value` capacity boundary; `L2` concentration; cross-scale consistency; `T_dir` boundary | E2 | draft_v1; not accepted | Wang-Zahl three-dimensional Kakeya geometry as a candidate interface for directional non-collapse, multi-scale structure, and the distinction between full dimension and measure / stake / payability. | `CL-MATH-KAKEYA-METAPHOR-TRANSFER` pending ledger entry |
 | [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md) | physics / thermodynamics | selection cost; `Psi_f` | E2 | draft_v1; not accepted | Landauer principle and irreversible record formation as candidate interfaces for physical erasure, reset, durable records, and selection-cost projection. | [`CL-THERMO-LANDAUER-OVEREXTENSION`](CONTRADICTION_LEDGER.md#cl-thermo-landauer-overextension) |
 | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) | AI / ML | `d-value`; consequence return; capacity-stake distinction | E2 | draft_v1; not accepted | High inference / task capacity as a candidate contrast with stake-coupled consequence return and subjecthood threshold. | [`CL-AI-FUNCTIONALIST-STAKE-CHALLENGE`](CONTRADICTION_LEDGER.md#cl-ai-functionalist-stake-challenge) |
 | [`EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION`](AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md) | AI / ML | `L2` hardening; `\hat{G}_θ`; relational convergence; objectification boundary | E3 | draft_v1; not accepted | Null-calibrated representational similarity removes width/depth confounds; calibrated convergence persists mainly in local neighborhoods rather than global geometry, making it a scoped proxy and constraint for relational stabilization. | [`CL-AI-LOCAL-NEIGHBORHOOD-GENERIC-STRUCTURE`](CONTRADICTION_LEDGER.md#cl-ai-local-neighborhood-generic-structure) |
@@ -42,9 +43,10 @@ Draft rows are not accepted evidence.
 | SRT Construct | Future evidence-card route |
 |---|---|
 | `d-value` | stake, irreversible-risk sensitivity, non-substitutability, and decision burden proxies. |
+| `D_eff` / directional capacity | distinguishable-direction count, executable trajectory support, geometric non-collapse, redundancy controls, and separation from stake-gated `d`. |
 | `Ψ_f` | payability, friction, transition cost, Fisher / thermodynamic / metabolic projections, and internally paid biological maintenance burden. |
 | `L1` field anchoring | field coherence, perturbational recovery, binding unity, cross-frequency coupling, and body-supported phenomenal-slice proxies. |
-| `L2` hardening | institutional, social, memory, scaffold, and convergence-history proxies. |
+| `L2` hardening | institutional, social, memory, scaffold, convergence-history, attractor-concentration, and trajectory-absorption proxies. |
 | subjecthood threshold | self-reference, consequence return, integration, and recovery-cost proxies. |
 | selection cost | thermodynamic, cognitive, biological, and social cost interfaces. |
 | `T_dir` | direction readability, value hiddenness, self-reorientation proxies, and behavior-relevant relational interaction terms. |
@@ -56,6 +58,7 @@ Draft rows are not accepted evidence.
 ## Priority Domains For Future Cards
 
 - information geometry / Fisher metric
+- geometric measure theory / Kakeya / directional non-collapse / multi-scale tube geometry
 - thermodynamics / Landauer / selection cost
 - neuroscience / edge time series / dynamic connectivity / behavior-relevant interaction terms
 - neuroscience / EM field resonance / binding / criticality / cross-frequency coupling
