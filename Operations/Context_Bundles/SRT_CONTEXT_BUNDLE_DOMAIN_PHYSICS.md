@@ -7,9 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-07-27
-source_commit: 74edebb9
+source_commit: 5ffd499c
 source_branch: claude/srt-theory-consolidation-le4fwa
 source_dirty: false
+inputs_digest: b30c81ca825e9eae
 ---
 
 # SRT 物理领域上下文包
@@ -26,15 +27,17 @@ source_dirty: false
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-07-27 |
-| 来源 commit | `74edebb9` |
+| 来源 commit | `5ffd499c` |
 | 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
-> **source_commit 契约**：该值是**生成本包时 HEAD 所指的来源快照**。把本包纳入版本库的
-> 那个 commit 必然晚于它，因此 `source_commit` 与本文件所在 commit 不相等是正常的，
-> 不是漂移。要复核一致性，用 `--check`：它按本 frontmatter 记录的 provenance 重新生成
-> 并逐字比对。
+> **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
+> （`STATUS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
+> 因此改动其中任何一项都会被发现。
+>
+> `source_commit` 仅供参考，**不作为校验条件**：squash / rebase 合并会重写或丢弃该
+> commit，若拿它做祖先校验，合并进 main 之后检查必然失败。内容摘要与合并策略无关。
 
 ### 0.1 文件清单与各自最后改动日期
 
@@ -224,7 +227,7 @@ When answering about SRT:
 
 > **这份报告回答一个问题：本包相对 `CANONICAL_REGISTRY.md` 到底缺了什么。**
 >
-> 本包**不是**定义权的完备闭包，而是**人工选择的高优先级 spine**。
+> 本包是 **单领域支持包**（claim-status 护栏 + 导航 + CompactCore），**不含定义源**。
 > 下面的分类是**生成器的判断**，不是 registry 的原话；每行都附依据供复核。
 > 「registry 提及」「AI_START §2」两列是机械判定的事实。
 
