@@ -83,6 +83,19 @@ def main() -> None:
         hooks_cmd.append("--strict")
     steps.append(("integration hook closure", hooks_cmd))
 
+    if (ROOT / "scripts" / "test_build_context_bundles.py").is_file():
+        steps.append(
+            ("context bundle builder tests", [python, "scripts/test_build_context_bundles.py"])
+        )
+
+    # Verifies the committed bundles still match their sources byte-for-byte,
+    # replaying the provenance recorded in their own frontmatter.
+    if (ROOT / "Operations" / "Context_Bundles" / "SRT_CONTEXT_BUNDLE_SPINE.md").is_file():
+        steps.append(
+            ("context bundle freshness",
+             [python, "scripts/build_srt_context_bundles.py", "--check"])
+        )
+
     noise_cmd = [python, "scripts/check_forbidden_noise.py"]
     if args.strict:
         noise_cmd.append("--strict-worktree")
