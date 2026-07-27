@@ -30,7 +30,7 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
   - 对方关于层论形式化预言拓扑相位现象（Aharonov–Bohm / Berry）的主张，SRT 侧未核验，暂缓引用。
 - 追问结构（记录文档 §四，同日修订重排）：
   - **主问题 A**：结构预设是否构成实现化——他的"actuality is presupposed by the Boolean structure"是否只说"描述预设结果必确定"，还是也解释"这一个结果实际发生"。SRT 保留实现化为原始转换（P0-01）。
-  - **主问题 B**：subjective aim 的层位——完整 aim 是否已构成于每个最低层 actual occasion，还是允许分层。SRT 侧对照为两段式（前赌注生成链 / R·A·C 赌注门），不是"价值整体更晚"。定稿信已显式留**第三出口**：aim 可能两者都不是，而是每个 occasion 的独立构成原则；不得用 SRT 的两格分类预裁剪怀特海。
+  - **主问题 B**：subjective aim 的层位——完整 aim 是否已构成于每个最低层 actual occasion，还是允许分层。SRT 侧对照为**嵌套两层**：外层是价值与能动性相对基础实现化后起，内层才是前赌注生成链 / R·A·C 赌注门两段；两层不可压平，否则丢掉"基础实现化本身不需要估值"这个与怀特海对峙的命题。定稿信已显式留**第三出口**：aim 可能两者都不是，而是每个 occasion 的独立构成原则；不得用 SRT 的分类预裁剪怀特海。
   - **次级**：层论是否形式区分"概率赋值相同但嵌入 / gluing 不同"的局部语境。
   - **推迟两项**：全局增补的历史不对称性（读书后再问；不提前点名 obstruction / cohomological measure——其度量的是可黏合性而非修订代价）；拓扑相位预测力主张。
 - 治理挂钩：
