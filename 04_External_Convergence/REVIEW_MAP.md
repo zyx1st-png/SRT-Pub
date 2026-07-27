@@ -26,6 +26,16 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 - Boundary: Fisher geometry does not define `Psi_f` or `d-value`; distinguishability alone is not stake.
 - Next step: bridge note or scoped proxy hypothesis only after measurable transition-burden criteria.
 
+### EC-MATH-KAKEYA-DIRECTION-NONCOLLAPSE
+
+- Card: [`EC-MATH-KAKEYA-DIRECTION-NONCOLLAPSE`](Mathematics_Information/EC-KAKEYA-DIRECTION-NONCOLLAPSE.md)
+- Level: E2 draft
+- SRT anchors: `D_eff`, `d-value` capacity boundary, `L2` concentration, cross-scale consistency, `T_dir` boundary
+- Support type: structural convergence / mathematical bridge-hypothesis candidate / methodological hardening / pressure case
+- Pressure link: [`CL-MATH-KAKEYA-METAPHOR-TRANSFER`](Pressure/CL-MATH-KAKEYA-METAPHOR-TRANSFER.md)
+- Boundary: the Wang-Zahl theorem concerns Euclidean line segments and tubes; it does not prove SRT, define SRT directions, or convert geometric dimension into stake, payability, `T_dir`, or subjecthood.
+- Next step: specify one metric selection model, executable trajectory family, scale map, and `L2` concentration functional; compare against controllability and intrinsic-dimension baselines.
+
 ### EC-THERMO-LANDAUER-SELECTION-COST
 
 - Card: [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md)
@@ -121,6 +131,7 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 | Card | Level | Status | Anchor | Pressure Link | Current Role | Next Step |
 |---|---|---|---|---|---|---|
 | [`EC-IG-FISHER-PSIF`](Mathematics_Information/EC-IG-Fisher-PsiF.md) | E2 | draft_v1; not accepted | `Psi_f`; selection cost | [`CL-IG-FISHER-GENERIC-DIFFICULTY`](CONTRADICTION_LEDGER.md#cl-ig-fisher-generic-difficulty) | structural convergence / bridge-support candidate | Bridge note or scoped proxy hypothesis after measurable transition-burden criteria. |
+| [`EC-MATH-KAKEYA-DIRECTION-NONCOLLAPSE`](Mathematics_Information/EC-KAKEYA-DIRECTION-NONCOLLAPSE.md) | E2 | draft_v1; not accepted | `D_eff`; `d-value` capacity boundary; `L2` concentration; cross-scale consistency; `T_dir` boundary | [`CL-MATH-KAKEYA-METAPHOR-TRANSFER`](Pressure/CL-MATH-KAKEYA-METAPHOR-TRANSFER.md) | mathematical directional non-collapse bridge / pressure case | Explicit metric model, trajectory family, concentration functional, and baseline comparison before any operational upgrade. |
 | [`EC-THERMO-LANDAUER-SELECTION-COST`](Physics_Thermodynamics/EC-THERMO-LANDAUER-SELECTION-COST.md) | E2 | draft_v1; not accepted | selection cost; `Psi_f` | [`CL-THERMO-LANDAUER-OVEREXTENSION`](CONTRADICTION_LEDGER.md#cl-thermo-landauer-overextension) | structural convergence / bridge-support candidate | Bridge note separating erasure, reversible computation, durable records, and SRT selection cost. |
 | [`EC-AI-HIGH-CAPACITY-LOW-STAKE`](AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md) | E2 | draft_v1; not accepted | `d-value`; consequence return; capacity-stake distinction | [`CL-AI-FUNCTIONALIST-STAKE-CHALLENGE`](CONTRADICTION_LEDGER.md#cl-ai-functionalist-stake-challenge) | conceptual contrast / structural differential-support candidate | Bridge note separating capacity, reward, agency, stake-coupling, subjecthood. |
 | [`EC-AI-JSPACE-GLOBAL-WORKSPACE`](AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md) | E2 | draft_v1; not accepted | `L0/L1/L2`; `T_dir`; `d-value`; `Psi_f`; reselectability; subjecthood boundary | [`CL-AI-JSPACE-ACCESS-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-ai-jspace-access-overclaim) | structural convergence / operational-proxy candidate / pressure case | Bridge note separating access, verbalizability, reselectability, stake, and subjecthood. |
@@ -129,7 +140,7 @@ No card listed here is accepted evidence unless [`EVIDENCE_INDEX.md`](EVIDENCE_I
 | [`EC-NEURO-EDGE-TIME-SERIES-INTERACTION`](Neuroscience/EC-NEURO-EDGE-TIME-SERIES-INTERACTION.md) | E3 | draft_v1; not accepted | `T_dir`; `L0/L1/L2`; `d-value`; `Λ`; relational selection; reselectability; context-sensitive closure; behavior-output interface | [`CL-NEURO-EDGE-INTERACTION-STATISTICAL-REDUCTION`](CONTRADICTION_LEDGER.md#cl-neuro-edge-interaction-statistical-reduction) | operational proxy for relational selection / pressure case | Bridge note separating edge interaction, dynamic connectivity, behavioral explanation, and causal intervention. |
 | [`EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY`](Neuroscience/EC-NEURO-EM-FIELD-RESONANCE-BINDING-CRITICALITY.md) | E2 | draft_v1; not accepted | `L1`; `Psi_f`; `d-value`; `T_dir`; `\hat{G}_θ`; subjecthood boundary | [`CL-NEURO-EM-FIELD-PHENOMENOLOGY-GAP`](CONTRADICTION_LEDGER.md#cl-neuro-em-field-phenomenology-gap) | field-anchoring bridge / pressure case | Bridge note separating field coherence, phenomenal anchoring, concern, and AI field-infrastructure claims. |
 | [`EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE`](Biology_Evolution/EC-BIO-SYNTHETIC-PROTOCELL-CELL-CYCLE-CLOSURE.md) | E2 | draft_v1; not accepted | `L0/L1`; `Psi_f`; `d-value`; `\hat{G}_θ`; biological closure; reselectability; minimal life threshold | [`CL-BIO-SYNTHETIC-CELL-LIFE-OVERCLAIM`](CONTRADICTION_LEDGER.md#cl-bio-synthetic-cell-life-overclaim) | minimal-life boundary case / pressure case | Bridge note separating partial cell-cycle closure, self-maintenance, natural selection, and subjecthood. |
-| [`EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION`](Philosophy/EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION.md) | E2 | draft_v1; not accepted | `L0/L1/L2`; `G_hat_theta`; `L2` hardening; stable ISP; reselectability; ChoiceMap | [`CL-PHIL-COMPRESSION-SELECTION-CONFLATION`](CONTRADICTION_LEDGER.md#cl-phil-compression-selection-conflation) | conceptual decomposition / bridge-pressure case | Bridge note separating frame selection, resolution, inference, weld, and writeback. |
+| [`EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION`](Philosophy/EC-PHIL-INDEX-COMPRESSION-WORLD-RESOLUTION.md) | E2 | draft_v1; not accepted | `L0/L1/L2`; `G_hat_theta`; `L2` hardening; stable ISP; reselectability; `T_dir`; ChoiceMap | [`CL-PHIL-COMPRESSION-SELECTION-CONFLATION`](CONTRADICTION_LEDGER.md#cl-phil-compression-selection-conflation) | conceptual decomposition / bridge-pressure case | Bridge note separating frame selection, resolution, inference, weld, and writeback. |
 
 ## What Is Not Yet Done
 
