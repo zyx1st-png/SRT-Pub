@@ -11,6 +11,27 @@ dependency: [SRT-OPERATIONS-SCHEDULE]
 
 # SRT 对话日志
 
+## 2026-07-27 CST（外部学者通信）
+- 会话模式：外部学者往来邮件归档 + 回信起草
+- 对象：Michael Epperson（CSU Sacramento，Consortium for Philosophy and the Natural Sciences）
+- 往来：2026-02-26 去信问 concrescence 的 "subjective aim" 是否施加对物理有意义的约束；2026-07-27 收到回复（隔约五个月）
+- 已新增记录文档：`01_Source_Intuition/Conversations/2026-07-27_Epperson_Whitehead_QM_通信记录.md`
+- 对方核心立场：
+  1) 可定义全局固定参数选择规则而不抹掉局部新颖性；这些规则即怀特海的 Categoreal Obligations
+  2) QM 中表现为代数约束——局部语境必须布尔化，全局态禁止布尔化（Kochen–Specker）
+  3) 测量 = 潜能→概率的非酉演化；概率→现实不需机制，因现实性已被约化密度矩阵的布尔结构预设
+  4) 全局态定义为既成事实的拓扑重叠（sheaf），对应 Category of Transmutation，用层论显式形式化
+  5) 明确同意"不需要新的动力学物理机制"
+- 当前判决：
+  - 去信原本想抓的 disanalogy（固定参数规则是否漏掉本质）被对方判为"不漏"，该争点消解，不构成 SRT 分叉。
+  - 真正分叉仍在 `Core_Law/SRT_L0_Philosophy_Bridge.md` §一 已记录的三条（三域结构 / 代价约束 / L₂ 独立性），本轮回信未触及。
+  - 未闭合追问两条已写入记录文档 §四：①层论是否表示"概率赋值相同但 gluing data 不同"的局部语境区分；②层论 gluing 是否携带代价/可修订性度量。
+  - 对方关于层论形式化预言拓扑相位现象（Aharonov–Bohm / Berry）的主张，SRT 侧未核验，暂缓引用。
+- backlog：
+  - 回信定稿并发出（草稿见记录文档 §五）；接受对方提供的 *Foundations of Relational Realism* PDF。
+  - 该书若确实表示 Q1 的区分，走材料融合流程，不直接回写 bridge 文件。
+  - 一页 SRT 最小设定英文 note 尚未成稿。
+
 ## 2026-03-31 CST（会话整理）
 - 会话模式：长链对话整理 / 根基论证回收
 - 已新增会话汇总文档：
