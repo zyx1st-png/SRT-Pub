@@ -214,65 +214,65 @@ is therefore:
     global constraint → local contextualization → actualization
     → global augmentation
 
-Since I wrote my original message the framework has moved on, and that
-changes the form of what I want to ask rather than the direction.
+Since I wrote my original message, SRT has developed further. This changes
+the form of my question, though not its underlying direction.
 
-The first thing it changes concerns the status of actualization itself. You
-write that actuality is presupposed by the Boolean structure of the reduced
-density matrix. I am unsure whether this means only that a probabilistic
-measurement description already presupposes determinate possible outcomes,
-or whether the Boolean structure is also meant to account for the occurrence
-of this particular determinate actuality. SRT now treats these as distinct
-claims: a formal description may presuppose that actuality must be
-determinate without thereby constituting the event by which one actuality
-becomes manifest rather than another. It therefore retains actualization as
-a primitive transition from latent possibility to determinate manifestation,
-while denying that this requires any additional mechanical collapse force.
-Would you regard that as a genuine difference between our approaches, or
-only a difference of vocabulary and emphasis? I ask in earnest — if the
-distinction does no work that your framework cannot already do, I would
-rather find that out from you than defend it out of habit.
+The first issue concerns the status of actualization itself. You write that
+actuality is presupposed by the Boolean structure of the reduced density
+matrix. I am unsure whether this means only that a probabilistic measurement
+description already presupposes determinate possible outcomes, or whether the
+Boolean structure is also meant to account for the occurrence of this
+particular determinate actuality. SRT now treats these as distinct claims: a
+formal description may presuppose that actuality must be determinate without
+thereby constituting the event by which one actuality becomes manifest rather
+than another. It therefore retains actualization as a primitive transition
+from latent possibility to determinate manifestation, while denying that this
+requires any additional mechanical collapse force.
 
-The second concerns the level at which subjective aim is indispensable, and
-it is the question I would most value your judgment on. On the account I am
-currently working out — and I should say it is still consolidating — SRT
-separates basal actualization from valuation in two stages rather than one.
-At the basal level, selection is not a subject choosing from a pre-given
-menu of already formed possibilities; it is the prior process by which
-alternatives are displaced, a determinate form is produced, and the result
-is written back into the conditions of what can happen next. The chooser,
-the menu, valuation and reflective agency are later structures produced
-through repeated actualization and historical stabilization, not
+Would you regard that as a genuine difference between our approaches, or only
+a difference of vocabulary and emphasis? I ask in earnest — if the distinction
+does no work that your framework cannot already do, I would rather find that
+out from you than defend it out of habit.
+
+The second issue concerns the level at which subjective aim is indispensable,
+and it is the question on which I would most value your judgment. In the
+account I am currently working out — and I should stress that it is still
+consolidating — SRT separates basal actualization from later-emerging valuation
+and agency. At the basal level, selection is not a subject choosing from a
+pre-given menu of already formed possibilities; it is the prior process by
+which alternatives are displaced, a determinate form is produced, and the
+result is written back into the conditions of what can happen next. The
+chooser, the menu, valuation, and reflective agency are later structures
+produced through repeated actualization and historical stabilization, not
 presuppositions of every basal selection event.
 
-But "later" resolves into two distinct steps. A minimal tilt appears early:
-when an already-manifest interface meets a concrete embodied position, it is
-no longer neutral for that position — it may become approachable, to be
-avoided, steadying, or alarming. What that tilt does not yet have is stake.
-Valuation in the
-weight-bearing sense arises only where a direction carries genuine
-irreversible risk for a concrete embodied position, where consequences
-actually return to that position, and where the return begins to constrain
-its subsequent selection. Agency arises later still, when such a position
-can bring returned consequences into the modification of its own next
-selection.
+Within that later emergence, I currently distinguish two stages. A minimal
+tilt appears early: when an already-manifest interface meets a concrete
+embodied position, it is no longer neutral for that position — it may become
+approachable, avoidable, steadying, or alarming. What that tilt does not yet
+have is stake. Valuation in the weight-bearing sense arises only where a
+direction carries genuine irreversible risk for a concrete embodied position,
+where consequences actually return to that position, and where the return
+begins to constrain its subsequent selection. Agency arises later still, when
+such a position can bring returned consequences into the modification of its
+own next selection.
 
-I mention the two stages because they may bear directly on your answer. If
+I mention these stages because they may bear directly on your answer. If
 Whitehead's subjective aim must already be fully present in every actual
 occasion, that would locate a genuine ontological departure between the two
 frameworks. But if aim admits of internal levels, I would want to know which
-level you take it to occupy: the minimal tilt, which SRT is willing to place
-very low, or the stake-bearing valuation, which SRT places only where
-consequence actually returns to a bearer. Where does Whitehead put the
-threshold, if he puts one at all?
+level you take it to occupy: the minimal tilt, which SRT places very early, or
+the stake-bearing valuation, which SRT places only where consequences return
+to a bearer. Where does Whitehead place the threshold, if he places one at
+all?
 
-And if neither category captures what he means, that would interest me most
-of all. I am aware that asking you to locate aim on my scale may already
-prejudge it. If you regard subjective aim as a distinct constitutive feature
-of every occasion — the formal unity of an occasion's movement toward
-satisfaction, say — that should not be identified with either minimal
-valence or stake-bearing valuation, I would rather hear that than have you
-fit it to my categories.
+If neither category captures what Whitehead means by subjective aim, that
+would be especially important for me to understand. I recognize that asking
+you to locate aim on an SRT scale may already prejudge the issue. If you regard
+subjective aim instead as a distinct constitutive feature of every occasion —
+for example, the formal unity of its movement toward satisfaction — rather
+than as either minimal valence or stake-bearing valuation, I would especially
+value that correction.
 
 One secondary formal question follows from this, and it is genuinely
 secondary. The requirement that a local measurement context be Boolean does
@@ -292,11 +292,11 @@ acquire differing persistence and resistance to revision — until I have read
 the book carefully. SRT has developed a more explicit account of irreversible
 writeback, stabilization, and the way settled structures constrain future
 selection, but I do not yet know whether your topological formalism contains
-an analogous structure, and I would rather not guess at its shape in
-advance. I will likewise hold my questions about the Aharonov-Bohm effect,
-Berry phase, and the predictive role of the topological formalism until I
-understand the precise contrast you are drawing with the conventional
-Hilbert-space treatment.
+an analogous structure, and I would rather not guess at its shape in advance.
+I will likewise hold my questions about the Aharonov–Bohm effect, Berry phase,
+and the predictive role of the topological formalism until I understand the
+precise contrast you are drawing with the conventional Hilbert-space
+treatment.
 
 The offer of a one-page note presenting the minimal SRT setup still stands.
 Say the word and I will send it; otherwise I will not add unnecessarily to
