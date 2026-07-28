@@ -227,3 +227,17 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **unresolved_tensions**: [TQ-01 q 是否正交（有实质重叠但未判定）, TQ-02 d 取范数还是参与率, TQ-03 o 封闭单标量不成立、弱操作化未决, TQ-04 本体论→认识论未过桥接门, TQ-05 锤子句的空间化风险]
 - **closure_pipeline_done**: partial（张力表、根问题与分支摘要、忠实度复核、canonical 碰撞、术语撞车、路由、INDEX 与 STATUS 留痕已完成；**根问题回返审计为事后重构、逐轮选项无法回收**，这两项不可补）
 - **downstream_guard**: 九个候选记号中三个重命名既有对象、三个违反记号约定、一个有撞车风险；`d/q/o` 在符号重命名与 `q`（是否独立轴）/ `o`（可否弱操作化）两项裁决做出前，不得进入书稿、公共内容、bridge 文件或论文
+
+### CT-20260728-01（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: live
+- **date**: 2026-07-28
+- **trace_file**: `01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md`
+- **one_line**: 从 Y 层存在连续性问题推进到“摩擦协调稳定性”：作者提出粗粒化、归一化、范畴化候选操作簇，并在发现“委托人—代理”过度拟人化后要求形式化；续接卡据此分离未穷尽差异、有限处理族、锚定代理性对象、残余失配与候选残余摩擦。
+- **breakout_count**: 3
+- **breakout_events**: [A1-correction, A2-breakout, A3-breakout]
+- **pending_confirmations**: [PRF-P05 残余失配进入残余摩擦的准入门为 assistant hardening proposal, PRF-P07 三参数化选择绝对化为 U5-derived assistant synthesis, §3 全部记号为 local-only formal placeholders]
+- **tension_count**: 8
+- **unresolved_tensions**: [T-PRF-01 差异结构层级类型, T-PRF-02 三操作必要性/独立性/完备性/顺序性, T-PRF-03 有效切片与锚定分层, T-PRF-04 残余失配进入 Ψ_f 的准入门, T-PRF-05 协调容量的变量类型, T-PRF-06 普通对象与 stable ISP 判据分流, T-PRF-07 选择绝对化的病理统摄范围, T-PRF-08 残余摩擦判别性预测]
+- **closure_pipeline_done**: true（作者原话冻结、拟人化术语撤回、local notation 隔离、canonical/bridge crosswalk、八项张力、禁止写法、路由建议、SOURCE INDEX 与总台账登记均完成；暂停于 residual mismatch → `Ψ_f` 的三门准入问题）
