@@ -105,6 +105,7 @@ Proposed structure:
 | NEURAL16 | `Materials/2026/SRC_2026_04_26_Neuro_BOLD_CMRO2_Uncertainty_bioRxiv.md` / `Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md` | `SRT_EXP_MEASURE_MAP.md §4c` + `Neuroscience/SRT_Neural_Mechanisms.md` Energy-Optimal Selection Dynamics | BOLD-CMRO2 sign relations require an uncertainty gate before they can support metabolic-friction or selection-budget proxy claims; indeterminate CMRO2 direction is not physiological sign reversal | Integrated as lab/bridge guardrail; preprint full-PDF reanalysis evidence |
 | NEURAL17 | `Materials/2026/SRC_2026_04_01_Neuro_HGA_Spike_Dissociation_Nature.md` / `Neuroscience/patches/SRT_Neuro_NEURAL17_HGA_Spike_Dissociation_Gate_v0_1.md` | `SRT_EXP_MEASURE_MAP.md §4c` + `Neuroscience/SRT_Neural_Mechanisms.md` Energy-Optimal Selection Dynamics | HGA requires a source-scope gate: same-electrode HGA must not be treated as local output spiking by default; safer default is mesoscale synchrony / input-integration proxy | Integrated as measurement guardrail; peer-reviewed Nature evidence, scoped to macaque M1 intracortical BMI window |
 | NEURAL18 | `Materials/2026/SRC_2026_07_27_Neuro_Posani_Rarely_Categorical_Highly_Separable_Nature.md` / `Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + claim-status guardrail | High-dimensional mixed selectivity is selection-ready capacity, not selection or anchoring itself; decodability, causal access, behavioral use, conscious anchoring, and L2 write-back must be separated, and `L0 -> L1` does not require neural dimensional collapse | Standalone bridge/guardrail patch added; peer-reviewed Nature evidence; compact-core synthesis pending |
+| NEURAL19 | `Materials/2026/SRC_2026_07_30_Neuro_Wentzell_Preattentive_Vision_Format_Philosophical_Quarterly.md` / `Neuroscience/patches/SRT_Neuro_NEURAL19_Preattentive_Gist_Binding_Report_Interface_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + future N1-N12 synthesis | Pre-attentive is not pre-selection: rapid gist supports coarse scene-level anchoring before focal object confirmation, while illusory-conjunction evidence must be localized across perception, VSTM, and report; picture-like, map-like, and object-bound formats may be task- and resolution-conditioned | Standalone bridge/guardrail patch and pending integration hook added; forthcoming philosophy article / penultimate manuscript; no new experiment |
 
 ---
 
@@ -120,8 +121,9 @@ NEURAL15 = Pipeline 1 bridge patch integrated into Neural_Mechanisms longform
 NEURAL16 = Pipeline 1 measurement guardrail integrated into Measure Map and Neural_Mechanisms longform
 NEURAL17 = Pipeline 1 HGA/source-scope guardrail integrated into Measure Map and Neural_Mechanisms longform
 NEURAL18 = Pipeline 1 population-geometry / decodability-anchoring bridge patch added; compact-core and prediction-table merge pending
+NEURAL19 = Pipeline 1 pre-attentive gist / binding / report-interface bridge patch added; integration hook pending
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, or NEURAL18 as primitive axioms yet. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, or NEURAL19 as primitive axioms yet. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
