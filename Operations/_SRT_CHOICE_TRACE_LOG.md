@@ -255,3 +255,17 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **tension_count**: 10
 - **unresolved_tensions**: [T-CIF-02 身份完整度的跨域类型, T-CIF-03 D+A 必要性/充分性, T-CIF-04 双向因果识别, T-CIF-05 协调容量变量类型, T-CIF-06 迟滞来源, T-CIF-07 外部支持与内在容量, T-CIF-08 重组后同一对象或新对象, T-CIF-09 普通对象与 stable ISP 阈值分流, T-CIF-10 摩擦债务的记账层级]
 - **closure_pipeline_done**: true（作者原话与确认链冻结、DA2/DA4/DA5 分层、准入/失稳边界、local notation 隔离、canonical/bridge crosswalk、十项张力、禁止压缩、路由建议、SOURCE INDEX 与总台账登记均完成；暂停于成功重组后的对象同一性问题）
+
+### CT-20260731-02（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: live
+- **date**: 2026-07-31
+- **trace_file**: `01_Source_Intuition/SRT_CHOICEMAP_CONCERN_RESELECTABILITY_PROXY_LANGUAGE_EMBODIED_POSITION_CONTINUATION_2026-07-31.md`
+- **one_line**: 从 D+A 与 `d`／`Ψ_f` 的关系追问执行根问题回返：作者确认关切超出自我闭包、自我关切是窄化版本并选择跨尺度闭包，提出“存在和秩序、可选择与可再选择”，选择 O4 非对称双门、R6 分层可再选择及 E1+代理出现，并修订代理为底层摩擦多算子协调封闭的稳定结果；语言／思维与具身位／代理的深化均隔离为待确认分析。
+- **breakout_count**: 6
+- **breakout_events**: [CT5-01 d/Psi crosswalk, CT5-02 concern-beyond-self, CT5-03 narrowed-self-concern, CT5-04 existence-order-selectability-reselectability, CT5-07 proxy-emergence addition, CT5-08 multi-operator-closure correction]
+- **pending_confirmations**: [CRP-P01, CRP-P02, CRP-P03, CRP-P04, CRP-P05, CRP-P06, CRP-P07, CRP-P08, CRP-P09, CRP-P10, CRP-P11, CRP-P12, CRP-P13, M1-M6 unselected, LT1-LT6 unselected, B1-B6 unselected]
+- **tension_count**: 15
+- **unresolved_tensions**: [T-CRP-01, T-CRP-02, T-CRP-03, T-CRP-04, T-CRP-05, T-CRP-06, T-CRP-07, T-CRP-08, T-CRP-09, T-CRP-10, T-CRP-11, T-CRP-12, T-CRP-13, T-CRP-14, T-CRP-15]
+- **closure_pipeline_done**: true（作者原话、选项选择、breakout、根问题回返、分支树、assistant 提案隔离、canonical／禁运护栏、15 项张力、禁止压缩、INDEX 与总台账登记均完成；原对象同一性分支冻结，当前暂停于具身位 B1–B6／代理现实性 M1–M6／返回 ROOT-A 三向选择）
