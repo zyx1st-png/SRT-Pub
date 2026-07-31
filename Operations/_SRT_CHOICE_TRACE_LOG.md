@@ -241,3 +241,17 @@ dependency: [_SRT_ARTICLE_WORKFLOW, _SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED, SR
 - **tension_count**: 8
 - **unresolved_tensions**: [T-PRF-01 差异结构层级类型, T-PRF-02 三操作必要性/独立性/完备性/顺序性, T-PRF-03 有效切片与锚定分层, T-PRF-04 残余失配进入 Ψ_f 的准入门, T-PRF-05 协调容量的变量类型, T-PRF-06 普通对象与 stable ISP 判据分流, T-PRF-07 选择绝对化的病理统摄范围, T-PRF-08 残余摩擦判别性预测]
 - **closure_pipeline_done**: true（作者原话冻结、拟人化术语撤回、local notation 隔离、canonical/bridge crosswalk、八项张力、禁止写法、路由建议、SOURCE INDEX 与总台账登记均完成；暂停于 residual mismatch → `Ψ_f` 的三门准入问题）
+
+### CT-20260731-01（pointer）
+
+- **trace_type**: intuition_mining
+- **trace_mode**: live
+- **date**: 2026-07-31
+- **trace_file**: `01_Source_Intuition/SRT_CHOICEMAP_COORDINATION_IDENTITY_FEEDBACK_THRESHOLD_CONTINUATION_2026-07-31.md`
+- **one_line**: 作者选择残余摩擦准入的 `D+A` 双门，并确认 DA2／DA4／DA5 的分层分析：DA2是协调负担生成身份耦合的一条非唯一路径，DA4区分健康负反馈与病理正反馈并引出迟滞，DA5只判定原有存在形式的动态转变而不定义摩擦准入。
+- **breakout_count**: 0（作者在已呈现的 D+A 与 DA2／DA4／DA5 选项结构内选择、指定分析并确认，没有新增选项外概念）
+- **breakout_events**: none
+- **pending_confirmations**: D+A 的必要性／充分性、DA4 的可识别双向因果、DA5 多轴阈值公式与全部 local notation 仍待反例、分域和实验化审计；作者确认的是分析层结构，不是 canonical 或公式级晋升
+- **tension_count**: 10
+- **unresolved_tensions**: [T-CIF-02 身份完整度的跨域类型, T-CIF-03 D+A 必要性/充分性, T-CIF-04 双向因果识别, T-CIF-05 协调容量变量类型, T-CIF-06 迟滞来源, T-CIF-07 外部支持与内在容量, T-CIF-08 重组后同一对象或新对象, T-CIF-09 普通对象与 stable ISP 阈值分流, T-CIF-10 摩擦债务的记账层级]
+- **closure_pipeline_done**: true（作者原话与确认链冻结、DA2/DA4/DA5 分层、准入/失稳边界、local notation 隔离、canonical/bridge crosswalk、十项张力、禁止压缩、路由建议、SOURCE INDEX 与总台账登记均完成；暂停于成功重组后的对象同一性问题）
