@@ -299,7 +299,8 @@ $$
 &+b_4\text{AffectLexiconRatio}+b_5\text{TokenCount}+b_6\text{TypeTokenRatio}+\varepsilon,\\
 \mu_{\text{sem}}^{\text{adj}} ={}& \operatorname{Residual}\!\left(\log\mu_{\text{sem}}\right)
 \end{aligned}
-\qquad \text{(10a)}$$
+\qquad \text{(10a)}
+$$
 
 This controls for major non-theoretical variance sources: education level, interview context, prompt wording, interviewer style, global affective-word prevalence, and lexical diversity. Recommended reliability checks are split-half agreement, inter-rater agreement for modal tagging (if manual annotation is used), and longitudinal intraclass correlation coefficient (ICC) in repeated sessions. To reduce floor/ceiling instability, analyses should exclude samples with fewer than 10 total modal tokens.
 
@@ -722,7 +723,7 @@ Shenhav, A., Musslick, S., Lieder, F., Kool, W., Griffiths, T. L., Cohen, J. D.,
 
 Snyder, H. R., Miyake, A., and Hankin, B. L. (2015). Advancing understanding of executive function impairments and psychopathology: Bridging the gap between clinical and cognitive approaches. *Frontiers in Psychology*, 6, 328.
 
-Spitzer, R. L., Kroenke, K., Williams, J. B. W., and Loewe, B. (2006). A brief measure for assessing generalized anxiety disorder: The GAD-7. *Archives of Internal Medicine*, 166(10), 1092–1097.
+Spitzer, R. L., Kroenke, K., Williams, J. B. W., and Lowe, B. (2006). A brief measure for assessing generalized anxiety disorder: The GAD-7. *Archives of Internal Medicine*, 166(10), 1092–1097.
 
 Stroop, J. R. (1935). Studies of interference in serial verbal reactions. *Journal of Experimental Psychology*, 18(6), 643–662.
 
@@ -746,7 +747,7 @@ Westbrook, A., and Braver, T. S. (2015). Cognitive effort: A neuroeconomic appro
 
 Wieber, F., Thürmer, J. L., and Gollwitzer, P. M. (2015). Promoting the translation of intentions into action by implementation intentions: Behavioral effects and physiological correlates. *Frontiers in Human Neuroscience*, 9, 395.
 
-Yeung, N., and Monsell, S. (2003). Switching between tasks of unequal familiarity: The role of stimulus-attribute and response-set selection. *Journal of Experimental Psychology: Human Perception and Performance*, 29(2), 455–469.
+Yeung, N., and Monsell, D. H. (2003). Switching between tasks of unequal familiarity: The role of stimulus-attribute and response-set selection. *Journal of Experimental Psychology: Human Perception and Performance*, 29(2), 455–469.
 
 ## Figure Captions
 
