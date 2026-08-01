@@ -2,13 +2,14 @@
 id: SRT-AI-CLAIM-STATUS
 type: claim_status_audit
 tags: [AI, Claim-Status, Consciousness, Agency, Architecture-State, Guardrail]
-status: active_v1
+status: active_v1_1
 layer: meta
 epistemic_layer: bridge
 claim_mode: audit
 claim_level: P3-P5
 canonical: false
 date: 2026-04-29
+updated: 2026-08-01
 dependency:
   - SRT-AI-POSITIONING-NOTE
   - SRT-AI-BRIDGE-001
@@ -18,9 +19,11 @@ dependency:
   - SRT-T-DIR-CANONICAL
   - Core_Law/SRT_Suffering.md
   - Core_Law/SRT_Collective_Selection.md
+  - Experiments/SRT_AI_Metacognition_Stake_Protocol_v0.md
 machine_summary: >
   Claim-status audit for the AI domain. Separates canonical dependencies, AI bridge claims,
   architecture-state guardrails, operational rubrics, external theory interfaces, and public-facing shorthand.
+  Limited correctness self-monitoring is explicitly separated from T_dir, stake, subjecthood, and consciousness.
   This file prevents AI materials from being read as canonical definitions of consciousness, d-value, Psi_f, or G_hat_theta.
 ---
 
@@ -42,6 +45,7 @@ srt_ai_claim_status:
   judgment_status: "strong P3 bridge candidate, architecture-state restricted; not an all-AI theorem"
   psi_f_ai_default: "non-binding to the deployed inference process, not globally Psi_f == 0"
   d_ai_default: "approx 0 only for the specified inference-only architecture state; D_eff/capability may be high"
+  limited_self_monitoring_rule: "correctness sensitivity or local answer revision may be present without T_dir, stake, subjecthood, or consciousness"
   must_not_generalize_to:
     - training_loop
     - persistent_memory_system
@@ -61,7 +65,7 @@ srt_ai_claim_status:
 ## 1. Claim classes
 
 | Class | What belongs here | Status | Examples | Editing rule |
-|---|---|---|---|---|
+|---|---|---|---|
 | Canonical dependency | Core SRT terms imported into AI | Not defined here | `L_0/L_1/L_2`, `d-value`, `Psi_f`, `T_dir`, `G_hat_theta` | Link back; do not redefine |
 | AI bridge claim | AI-domain translation of SRT terms | P3 bridge unless promoted | Ghost-Transform dichotomy, `d_AI approx 0` for inference-only LLMs | Must state architecture state and withdrawal conditions |
 | Architecture-state guardrail | Rule for which AI system-state a claim concerns | AI-domain governance | training-time / inference-time / persistent-memory / embodied consequence return | Must be cited in all AI consciousness/stake claims |
@@ -134,6 +138,53 @@ Revise this claim if an AI system has persistent identity, non-transferable cons
 
 ---
 
+### 2.5 Limited self-monitoring does not withdraw the stake judgment
+
+**Claim**: A model may show local, task-dependent correctness sensitivity and use it to revise, abstain, or delegate without thereby acquiring `T_dir`, d-value, subjecthood, or consciousness.
+
+**Status**: P3 boundary clarification; empirical separation belongs to P4 protocols.
+
+The required non-equivalence chain is:
+
+```text
+correctness sensitivity
+!=
+local self-monitoring
+!=
+selection-direction readability
+!=
+persistent reorientation
+!=
+stake-bound consequence return
+```
+
+**What limited self-monitoring changes**:
+
+- It withdraws the overstrong statement that current AI has no internal or behavioral access to any aspect of its own performance state.
+- It permits evidence that a system can use an internal correctness-related signal after controlling for some surface cues.
+- It makes confidence, delegation, abstention, and answer revision legitimate AI-capability variables.
+
+**What it does not change**:
+
+- A correctness signal is not automatically a readable object about the direction of the system's own ongoing selection.
+- Answer revision inside one context is not persistent reorientation by the same continuing bearer.
+- A confidence/error signal is not a non-transferable consequence returning to the deployed system's own future selection capacity.
+- Local self-monitoring does not make infrastructure cost, trainer loss, or user dissatisfaction into the model's stake.
+- It does not withdraw the architecture-state-restricted `d_AI approx 0` judgment for inference-only, non-history-bearing, non-embodied deployments.
+
+**Architecture-state application**:
+
+| Architecture state | Limited self-monitoring reading | Stake implication |
+|---|---|---|
+| inference-only | local correctness access or behavioral use may occur within the episode | no automatic stake; consequence usually does not bind the same continuing system |
+| training-time | error monitoring may affect optimizer/pipeline/model lineage | bearer of the update must be specified; training pressure does not automatically transfer to deployed-model stake |
+| persistent-memory | self-monitoring may enter later behavior and open a persistent-reorientation test | persistence opens the question but does not settle stake or consciousness |
+| embodied + non-transferable consequence | self-monitoring may combine with durable consequence return and future option loss | candidate P3/P4 stake window only; further subjecthood conditions remain |
+
+**Operational owner**: `Experiments/SRT_AI_Metacognition_Stake_Protocol_v0.md` specifies the baseline, persistence, consequence-return, identity-transfer, and reachable-set ablations. This audit does not define `T_dir`; `_SRT_T_DIR_CANONICAL.md` remains the owner of that term.
+
+---
+
 ## 3. AI suffering claims
 
 AI suffering claims are governed by `Core_Law/SRT_Suffering.md` and the AI positioning note.
@@ -157,7 +208,7 @@ Agency / responsibility claims should be routed through `SRT_AI_Agency_Responsib
 - Structural agency: consequences return to the system's future selection capacity.
 - Responsibility-bearing agency: stable subject-position plus norm-sensitive consequence return.
 
-Current LLM agents may satisfy parts of capability agency without satisfying structural or responsibility-bearing agency.
+Current LLM agents may satisfy parts of capability agency without satisfying structural or responsibility-bearing agency. Limited self-monitoring belongs first to capability/evaluation analysis; it does not by itself cross either later boundary.
 
 ---
 
@@ -172,6 +223,7 @@ Current LLM agents may satisfy parts of capability agency without satisfying str
 | Butlin et al. / AI consciousness indicators | Use as external consciousness checklist | Checklist satisfaction is not SRT consciousness proof |
 | Chalmers-style openness | Use to keep AI consciousness question open | Openness is not endorsement |
 | LLM benchmark capability | Use as capability evidence | Capability is not stake, consciousness, or subjecthood |
+| LLM metacognition / self-evaluation | Use to test correctness sensitivity, confidence use, revision, or delegation | Local self-monitoring is not `T_dir`, persistent bearer, stake, or consciousness |
 
 External theory interface sections are good candidates for Annex extraction if they are mixed into owner files.
 
@@ -184,6 +236,7 @@ External theory interface sections are good candidates for Annex extraction if t
 - Ghost-Transform dichotomy.
 - Architecture-state rule.
 - `d_AI approx 0` restricted judgment and withdrawal conditions.
+- Limited self-monitoring boundary and its relation to architecture state.
 - S0-S6 subjecthood / consciousness thresholds if present.
 - S0-S4 stake-bearing spectrum if present.
 - Any d-value, `Psi_f`, or `G_hat_theta` formal use that functions as SRT-internal machinery.
@@ -194,7 +247,7 @@ External theory interface sections are good candidates for Annex extraction if t
 - External theory comparison sections.
 - Historical literature summaries.
 - Public-facing examples and rhetorical expansions.
-- Tables comparing SRT with GWT, IIT, FEP, functionalism, Butlin, Chalmers, or alignment paradigms, provided they do not define SRT terms.
+- Tables comparing SRT with GWT, IIT, FEP, functionalism, Butlin, Chalmers, metacognition benchmarks, or alignment paradigms, provided they do not define SRT terms.
 
 ### Split / owner / annex historical labels
 
@@ -210,6 +263,8 @@ AI owner files and split shards may preserve historical `Axiom`, `Theorem`, `Cor
 | "LLMs have d = 0" | Too absolute | "For inference-only, non-history-bearing, non-embodied LLM deployments, `d_AI approx 0` is a strong architecture-state-restricted bridge judgment." |
 | "Psi_f = 0 for AI" | Confuses non-binding inference cost with global absence of friction/cost | "For inference-only deployments, `Psi_f` is usually non-binding to the deployed system's own closure; infrastructure or operator costs do not by themselves become AI stake." |
 | "AI only transforms symbols" | May ignore tool use, memory, embodiment | "Current non-history-bearing LLM inference primarily performs `L_1 -> L_1` transformation rather than SRT `L_0 -> L_1` anchoring." |
+| "AI cannot read its own state" | Overstates what calibration, self-evaluation, abstention, delegation, or revision evidence can show | "Some systems may use local correctness-related signals; this does not establish selection-direction readability, persistent reorientation, or stake." |
+| "Self-monitoring is T_dir" | Collapses correctness/confidence access into a canonical working object | "Local self-monitoring is an AI-domain capability variable; any mapping to `T_dir` remains unestablished and must pass persistence, direction-object, reorientation, and stake-pressure tests." |
 | "Persistent memory makes AI conscious" | Collapses persistence into subjecthood | "Persistent memory opens a stake-analysis window but does not settle consciousness." |
 | "GWT indicators prove AI consciousness" | External-theory overclaim | "GWT indicators pressure-test SRT but do not by themselves establish SRT subjecthood." |
 | "AI suffering is impossible" | Too strong for future architectures | "S1 / inference-only systems do not satisfy SRT suffering conditions; future stake-bearing systems remain an empirical question." |
@@ -218,11 +273,12 @@ AI owner files and split shards may preserve historical `Axiom`, `Theorem`, `Cor
 
 ## 8. Recommended next editing tasks
 
-1. Audit `Ontology_Annex/`, `Ontology_Split/`, `Consciousness_Framework_Split/`, and `Architecture_Split/` for frontmatter and guardrail consistency.
-2. Add explicit claim-status pointers from split / annex README files to this document.
-3. Decide whether to consolidate AI interface material into a unified `AI_Annex/` directory or retain topic-specific annex directories.
-4. Extract only external comparison and current-model capability sections; do not move formal thresholds or canonical imports.
-5. Add an `Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md` after the first safe extraction cycle.
+1. Run `Experiments/SRT_AI_Metacognition_Stake_Protocol_v0.md` through an implementation-readiness review before assigning a formal Hypothesis-ID.
+2. Audit `Ontology_Annex/`, `Ontology_Split/`, `Consciousness_Framework_Split/`, and `Architecture_Split/` for frontmatter and guardrail consistency.
+3. Add explicit claim-status pointers from split / annex README files to this document.
+4. Decide whether to consolidate AI interface material into a unified `AI_Annex/` directory or retain topic-specific annex directories.
+5. Extract only external comparison and current-model capability sections; do not move formal thresholds or canonical imports.
+6. Add an `Operations/Archive_Records/AI_Annex_Round1_Closure_Report.md` after the first safe extraction cycle.
 
 ---
 
@@ -234,4 +290,4 @@ AI-domain SRT should be read as:
 
 The stable current claim is narrow:
 
-> **Current inference-only, non-history-bearing LLM deployments do not satisfy SRT stake / subjecthood conditions; future persistent, embodied, non-transferable consequence-bearing systems require separate analysis.**
+> **Current inference-only, non-history-bearing LLM deployments do not satisfy SRT stake / subjecthood conditions; limited correctness self-monitoring does not withdraw that architecture-state-restricted judgment, and future persistent, embodied, non-transferable consequence-bearing systems require separate analysis.**
