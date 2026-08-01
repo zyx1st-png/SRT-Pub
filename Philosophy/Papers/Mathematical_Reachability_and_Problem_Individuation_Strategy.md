@@ -1,8 +1,8 @@
 ---
 id: SRT-STRATEGY-MATHEMATICAL-REACHABILITY-PROBLEM-INDIVIDUATION
 title: "数学可达结构、解决制度与问题重新个体化：论文写作大纲与策略"
-title_en: "Mathematical Reachability, Resolution Regimes, and Problem Re-Individuation: Paper Outline and Writing Strategy"
-status: strategy_note_v0_4
+title_en: "Mathematical Reachability, Resolution Regimes, and Problem Re-Individuation"
+status: strategy_note_v0_5
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: bridge
@@ -10,69 +10,34 @@ claim_mode: mixed
 primary_claim_level: P3
 date: 2026-08-01
 supersedes:
-  - strategy_note_v0_3 @ cc09a1cff5c0e82a151e563135a5d507e98dca39
+  - strategy_note_v0_4 @ cf23c696e319bbd6671bde1bf61049fc0c402ed2
 proposed_paper_title: "When Mathematical Problems Change: Forcing and the Historical Reconstitution of Resolution"
 target_journals:
   - Philosophia Mathematica
   - Synthese
   - Foundations of Science
-keywords:
-  - mathematical practice
-  - philosophy of mathematics
-  - forcing
-  - continuum hypothesis
-  - question semantics
-  - problem individuation
-  - mathematical reachability
-  - resolution regime
-  - mathematical potentialism
-  - forcing potentialism
-  - width potentialism
-  - modal accessibility
-  - representation neutrality
-  - Selective Reality Theory
-  - SRT
 claim_governance:
   framework_claims: P2/P3 philosophical proposals
   srt_domain_mapping: P3 bridge
-  curvature_kappa0_godel: interpretive extensions only
   mathematical_history_claims: externally sourced evidence required
-dependencies:
-  - Core/SRT_Core_12a_Ontology_L0L1.md
-  - Core/SRT_Core_12b_Ontology_L2.md
-  - Core/Ontology_L2_Split/01_Part02.md
-  - Core/SRT_Core_01_Axioms.md
-  - Governance/SRT_CLAIM_LADDER.md
-  - Core/SRT_OPEN_TENSIONS.md
-  - Philosophy/SRT_L0_Ontological_Status.md
-  - _SRT_SYMBOL_TABLE.md
+  curvature_kappa0_godel: interpretive extensions only
 machine_summary: >
-  Version 0.4 preserves the v0.3 distinction between a stable propositional question core
-  and a historically variable resolution regime, while repositioning forcing potentialism
-  as the paper's nearest technical neighbour. It distinguishes object-level modal accessibility
-  among models or worlds from historical-practical reachability among mathematical problems,
-  methods, and update regimes. Forcing is treated in a double role: it structures model-extension
-  accessibility and, as a historical innovation, transforms the inheritable update regime through
-  which that accessibility can be systematically used. The paper is representation-neutral: its
-  argument does not depend on potentialism being essentially modal and remains intact under suitable
-  non-modal formulations. The main case is restricted to width/forcing potentialism; height, class,
-  arithmetic, strict, and divergent potentialisms are comparative neighbours rather than domains
-  already unified by the paper. Modal noncommutativity is kept distinct from historical update-order
-  noncommutativity. The SRT-specific P3 increment remains selective second-order writeback and local
-  directional cost asymmetry, explicitly compatible with multiple attractors, branching research
-  programmes, and failure of global convergence.
+  Version 0.5 hardens the interfaces of v0.4. Conservative equivalence between resolution
+  regimes now requires preservation of direct answers, response roles, progress ordering,
+  inferential function, operation-output relations, and round-trip structure. R_t is a
+  response-role system and E_t is an evaluation map, eliminating double counting.
+  Representation neutrality is demonstrated through a non-modal forcing relation R_F(M,N).
+  Most literature-review space is reserved for forcing/width potentialism. Modal and
+  historical noncommutativity receive parallel typed examples. The SRT contribution remains
+  a P3 hypothesis of selective second-order writeback and local directional cost asymmetry.
 ---
 
 # 数学可达结构、解决制度与问题重新个体化
-## 论文写作大纲与策略 v0.4
+## 论文写作大纲与策略 v0.5
 
-> **文件性质**：内部写作策略，不是投稿正文。  
-> **本版改动**：在 v0.3 的“问题核—解决制度—更新制度”结构上，完成一次潜在主义定位升级：  
-> 1. 区分模型／世界之间的模态可及关系与数学实践中的历史可达结构；  
-> 2. 将 forcing potentialism 提升为最近邻理论；  
-> 3. 明确 forcing 同时具有对象层可及结构与实践层制度创新的双重角色；  
-> 4. 将第一篇范围限定于宽度／forcing 潜在主义，并保持模态表示中立。  
-> **治理纪律**：数学史、集合论和潜在主义事实必须由外部文献支持；SRT 文件只支持 SRT 如何解释与桥接。
+> **文件性质**：内部策略文件，不是投稿正文。  
+> **本版任务**：不再扩张宏观框架，只修复四个接口：\(\equiv_c\) 的判据、\(R_t/E_t\) 的类型、表示中立性的示范、两种非交换性的类型区分。  
+> **治理纪律**：forcing、CH、潜在主义与数学史事实必须使用外部原始或权威文献；SRT 文件只支持 P3 桥接。
 
 ---
 
@@ -80,18 +45,17 @@ machine_summary: >
 
 \[
 \boxed{
-\text{本文不主张 forcing 创造了 CH 问题或改变其真值核；}
+\text{forcing 没有创造 CH 问题或改变其直接答案核；}
 \atop
-\text{本文主张 forcing 非保守地改变了什么构成对 CH 的充分回应、何谓进展，以及集合论能够怎样继续更新。}
+\text{它可能非保守地重构了何谓回应、进展，以及集合论能够怎样继续更新。}
 }
 \]
 
-凡不能服务于以下四项任务的内容，删除或移至后续论文：
+全文只承担三项任务：
 
 1. 区分命题问题核与解决制度；
-2. 区分对象层 accessibility 与实践层 reachability；
-3. 证明 forcing 改写了可继承的数学更新制度；
-4. 说明这种历史改写受形式约束而非共同体任意决定。
+2. 证明 forcing 改写了可继承的数学更新制度；
+3. 说明该改写历史生成但受形式约束。
 
 ---
 
@@ -101,550 +65,502 @@ machine_summary: >
 
 **When Mathematical Problems Change: Forcing and the Historical Reconstitution of Resolution**
 
-中文：
+中文：**当数学问题发生改变：Forcing 与解决制度的历史重构**
 
-**当数学问题发生改变：Forcing 与解决制度的历史重构**
+## 1.2 目标期刊
 
-## 1.2 备选题目
-
-**Forcing, Problem Identity, and the Reachability of Mathematics**  
-**Forcing、问题同一性与数学可达结构**
-
-**From Forcing Accessibility to Mathematical Reachability**  
-**从 Forcing 可及关系到数学可达结构**
+1. **Philosophia Mathematica**
+2. **Synthese**
+3. **Foundations of Science**
 
 ## 1.3 暂不使用
 
 - *Mathematics Deforms Its Own Possibility Space*
 - *Selection, Curvature, and Mathematical Necessity*
-- *Mathematical Accessibility as an SRT Ontology*
 
-原因：第一篇应先证明问题与更新制度的历史构成性，不能让高承诺本体论、曲率或模态空间修辞替代案例论证。
-
-## 1.4 目标期刊
-
-首选：**Philosophia Mathematica**。  
-备选：**Synthese**。  
-进一步后备：**Foundations of Science**。
+第一篇不承担数学真理随历史变化、统一数学曲率或终局基础不存在等强主张。
 
 ---
 
-# 2. 最近邻理论与核心解释缺口
+# 2. 最近邻理论与解释缺口
 
-## 2.1 潜在主义不是单一理论
+## 2.1 范围表
 
-第一篇至少区分：
+| 路线 | 潜在对象／扩展 | 本文处理 |
+|---|---|---|
+| forcing／width potentialism | 泛型扩展、新子集 | 直接最近邻，详细讨论 |
+| height potentialism | 更高秩／层级 | 比较对象 |
+| class potentialism | 类、谓词、真理资源 | 提醒汇聚公理可失败 |
+| arithmetic potentialism | 算术模型扩展 | 后续推广 |
+| strict／loose | 真理承担者条件 | 不在第一篇裁决 |
+| convergent／divergent | 是否有共同上界 | 限制全局汇聚叙述 |
 
-- **高度潜在主义**：通过更高秩或更大层级扩展；
-- **宽度／forcing 潜在主义**：加入新子集、泛型对象或 forcing 扩展；
-- **类潜在主义**：固定集合宇宙而增加类、谓词或真理资源；
-- **算术潜在主义**：通过端扩展、初等扩展等模型关系推进；
-- **严格／宽松潜在主义**：真理是否必须在某阶段获得稳定承担者；
-- **汇聚／分叉潜在主义**：不同扩展是否具有共同上界。
+## 2.2 篇幅纪律
 
-本文的直接技术邻居是**宽度／forcing 潜在主义**，而不是“潜在主义整体”。
+第二节共约 1,100 词：
 
-## 2.2 forcing potentialism 的解释对象
+- forcing／width potentialism：650—700词；
+- 数学实践哲学：150—180词；
+- 固定背景发现论：150—180词；
+- 其他潜在主义：100—150词＋上表。
 
-forcing potentialism 研究类似：
+不能写成潜在主义分类巡礼。
+
+## 2.3 正面差异
+
+forcing potentialism 研究：
 
 \[
 M\preceq_F M[G]
 \]
 
-的模型／世界访问关系，并分析相关模态有效式、汇聚性、最大性原则和不同模型系统。
+即哪些模型或集合论世界可由 forcing 到达。
 
-本文不得声称：
+本文研究：
 
-> 潜在主义没有处理动态可达性。
+> 使该访问结构成为可公开重构、复用、传授和继承的方法创新，如何重构 CH 的解决制度与集合论的未来更新制度。
 
-更准确的定位是：
-
-> forcing potentialism 研究哪些模型或集合论世界可由 forcing 到达；本文研究使这种访问关系成为系统数学方法的历史创新，如何改变研究问题的解决制度与未来数学更新制度。
-
-## 2.3 数学实践哲学
-
-Lakatos、Kitcher、Maddy、Corfield、Ferreirós 等已经说明问题、证明、反例、概念和方法具有历史性。本文的增量不能只是再次宣布数学有历史，而必须提供：
-
-- 命题问题核／解决制度区分；
-- 保守／非保守解决制度变化；
-- 对象层 accessibility／实践层 reachability 区分；
-- 更新制度 \(\mathfrak U_t\)；
-- forcing 作为双层事件的具体案例。
-
-## 2.4 固定背景发现论
-
-固定背景实在论可以承认 forcing 揭示了先在模型事实，也可以承认方法和训练发生变化。因此本文只主张一个有限但不可删去的构成性结论：
-
-> 一个命题问题核可以保持不变，而围绕它的充分回应、合法进展和可实施更新操作发生非保守重构；这种制度变化是后来数学实践的组成条件，而不只是便利度变化。
-
-## 2.5 缺失的历史—实践层
-
-真正的解释缺口是：
-
-> **一个模型扩展关系如何在数学史中成为可公开重构、复用、传授和继承的数学操作，并进一步改变一个既存问题如何构成研究问题？**
+若两者差异只能靠更换术语表达，论文失败。
 
 ---
 
-# 3. 双层问题身份：问题核与解决制度
+# 3. 双层问题身份与解决制度
 
 ## 3.1 命题问题核
 
-令：
-
 \[
-Q_{\varphi}
+Q_{CH}=\text{“CH 是否成立？”},
+\qquad
+D(Q_{CH})=\{CH,\neg CH\}.
 \]
 
-表示由疑问内容 \(\varphi\) 确定的命题问题核。对于连续统假设：
-
-\[
-Q_{CH}=\text{“CH 是否成立？”}
-\]
-
-其直接答案核：
-
-\[
-D(Q_{CH})=\{CH,\neg CH\}
-\]
-
-第一篇明确承认：
+明确承认：
 
 - \(Q_{CH}\) 在 Cohen 之前已经存在；
 - forcing 没有改变直接答案核；
-- 独立性说明不是对“CH 在唯一宇宙中真或假”的直接 yes/no 回答。
+- 独立性不是对唯一宇宙中 CH 真假的直接 yes/no 回答。
 
-## 3.2 解决制度
+## 3.2 类型化的解决制度
 
-定义时刻 \(t\) 围绕问题核 \(Q_{\varphi}\) 的解决制度：
+令 \(\mathcal O_t(Q_\varphi)\) 为围绕问题核产生的候选研究输出，包括证明、反驳、相对一致性、独立性、模型分析、公理比较与问题分化。
 
 \[
-\Sigma_t(Q_{\varphi})=
-\langle D,R_t,E_t,M_t,B_t\rangle
+\Sigma_t(Q_\varphi)
+=
+\langle D,R_t,M_t,B_t,E_t\rangle
 \]
 
 其中：
 
 - \(D\)：直接答案核；
-- \(R_t\)：完整回答、部分回答、问题消解和问题分化的分类；
-- \(E_t\)：何种结果算作证据、进展或失败；
-- \(M_t\)：允许和可实施的证明、构造、模型与解释方法；
-- \(B_t\)：默认背景理论及可竞争扩展。
-
-## 3.3 保守变化与非保守变化
-
-若新旧制度之间存在保持以下分类的双向翻译：
-
-- 直接回答；
-- 完整解决；
-- 部分解决；
-- 合法进展；
-- 问题消解；
-
-则记为：
+- \(R_t\)：响应角色系统，如 direct answer、partial answer、metamathematical diagnosis、dissolution、problem splitting；
+- \(M_t\)：允许和可实施的方法；
+- \(B_t\)：背景理论与可竞争扩展；
+- \(E_t\)：评价映射，而非独立内容坐标：
 
 \[
-\Sigma_t\equiv_c\Sigma_{t+1}
+E_t:\mathcal O_t(Q_\varphi)\to R_t\times V_t,
 \]
 
-若不存在这样的保持性翻译：
+\(V_t\) 为充分性、证据强度或进展地位的预序／偏序。
+
+因此：
 
 \[
-\Sigma_t\not\equiv_c\Sigma_{t+1}
+R_t=\text{响应分类的陪域},
+\qquad
+E_t=\text{归类并赋予进展地位的规则}.
 \]
 
-则称问题核 \(Q_{\varphi}\) 在研究层面发生重新个体化：
+## 3.3 保守等价 \(\equiv_c\)
+
+\(\Sigma_t\equiv_c\Sigma_{t+1}\) 至少要求存在候选输出与方法的双向翻译：
 
 \[
-\operatorname{ReIndiv}_t(Q_{\varphi})
+\tau_{\mathcal O},\rho_{\mathcal O},
+\qquad
+\tau_M,\rho_M,
 \]
 
-## 3.4 中心身份主张
+并满足：
+
+### C1 直接答案保持
 
 \[
-Q_{CH}^{pre}=Q_{CH}^{post}
-\quad\text{at the propositional-core level}
+\tau_{\mathcal O}[D]=D,
+\qquad
+\rho_{\mathcal O}[D]=D.
 \]
 
-但：
+### C2 响应角色保持
 
 \[
-\Sigma_{pre}(Q_{CH})\not\equiv_c\Sigma_{post}(Q_{CH})
+\pi_R E_{t+1}(\tau_{\mathcal O}(o))
+=
+\pi_R E_t(o),
 \]
 
-“CH 问题改变”严格指第二层，不指命题字符串或直接答案核改变。
+反向亦然。
 
-## 3.5 提问逻辑锚点
+### C3 评价次序保持
 
-必须与以下传统对话：
+\[
+o_1\preceq_{V_t}o_2
+\iff
+\tau_{\mathcal O}(o_1)\preceq_{V_{t+1}}\tau_{\mathcal O}(o_2),
+\]
 
-- Hamblin 的问题—答案关系；
-- Belnap 与 Steel 的 questions and answers；
-- Wiśniewski 的 inferential erotetic logic；
-- 当代 question semantics 中 direct answer、partial answer、resolution 与 dissolution 的区分。
+反向亦然。
 
-本文不声称提问逻辑已经给出完整跨历史同一性理论，只借用其基本约束：不知道什么算回答、充分回答和问题消解，就没有完整说明研究者在处理什么问题。
+### C4 推论功能保持
 
----
+输出在旧制度中的支持、阻断、生成和问题分化功能必须由翻译保存。
 
-# 4. 数学实践状态、派生个体化与双层可达性
+### C5 操作生成保持
 
-## 4.1 实践状态
+若：
+
+\[
+m\leadsto_t o,
+\]
+
+则：
+
+\[
+\tau_M(m)\leadsto_{t+1}\tau_{\mathcal O}(o),
+\]
+
+反向亦然。
+
+### C6 往返保持
+
+\[
+\rho_{\mathcal O}\circ\tau_{\mathcal O},
+\qquad
+\tau_{\mathcal O}\circ\rho_{\mathcal O}
+\]
+
+须在角色、评价、推论与操作生成关系上等价于恒等。
+
+若不存在满足 C1—C6 的翻译：
+
+\[
+\Sigma_t\not\equiv_c\Sigma_{t+1}.
+\]
+
+这是一组哲学上的最小充分条件，不宣称提供一般可判定算法。
+
+## 3.4 forcing 案例中的非保守性
+
+独立性、模型相对分析和公理比较不是 CH 的新直接答案。它们可能见证非保守性，是因为：
+
+- 独立性阻断旧背景内单纯证明／反驳的期待；
+- 模型相对分析获得稳定响应角色；
+- 新输出生成公理选择、generic absoluteness 等问题；
+- forcing 建立旧 \(M_t\) 中没有对应物的系统生成操作；
+- 这些输出获得稳定进展地位，而非只被记为失败。
+
+正文必须用历史与技术材料证明 C2—C5 中至少一项无法保守保持。
+
+## 3.5 中心身份主张
+
+\[
+Q_{CH}^{pre}=Q_{CH}^{post},
+\qquad
+D(Q_{CH})=\{CH,\neg CH\},
+\]
+
+但论文试图证明：
 
 \[
 \boxed{
-\mathfrak S_t=(\mathcal P_t,\mathfrak U_t)
+\Sigma_{pre}(Q_{CH})\not\equiv_c\Sigma_{post}(Q_{CH})
 }
 \]
 
-其中：
+“问题改变”只指研究解决制度不可保守翻译。
 
-- \(\mathcal P_t\)：理论、模型、问题、概念、证明和方法构成的数学可达景观；
-- \(\mathfrak U_t\)：可公开重构、复用、传授和继承的数学更新制度。
+## 3.6 问题语义学锚点
 
-## 4.2 更新制度
+必须直接处理 Hamblin、Belnap & Steel、Wiśniewski 及当代 question semantics。既有提问逻辑不自动给出 C1—C6；需明确哪些条件来自问题语义，哪些是本文加入的数学实践条件。
 
-\(\mathfrak U_t\)包括：
+---
 
-- 证明转换；
-- 模型构造操作；
-- 理论扩展方式；
-- 解释、翻译和归约操作；
-- 可复用的方法脚手架；
-- 合法证据与进展的生成方式；
-- 方法进入教材、证明库和研究训练的机制。
+# 4. 实践状态与双层可达性
 
-## 4.3 个体化是派生映射
+## 4.1 状态
 
 \[
-\mathcal I_t=\operatorname{Individuate}(\mathcal P_t,\mathfrak U_t)
+\mathfrak S_t=(\mathcal P_t,\mathfrak U_t)
+\]
+
+- \(\mathcal P_t\)：理论、模型、问题、概念和方法构成的可达景观；
+- \(\mathfrak U_t\)：可公开重构、复用、传授和继承的更新制度。
+
+问题个体化为派生映射：
+
+\[
+\mathcal I_t=\operatorname{Individuate}(\mathcal P_t,\mathfrak U_t),
 \]
 
 \[
-q_t=\mathcal I_t(Q_{\varphi})=\langle Q_{\varphi},\Sigma_t(Q_{\varphi})\rangle
+q_t=\mathcal I_t(Q_\varphi)
+=
+\langle Q_\varphi,\Sigma_t(Q_\varphi)\rangle.
 \]
 
 典型传导：
 
 \[
-\Delta\mathfrak U_t\longrightarrow\Delta\Sigma_t\longrightarrow\Delta\mathcal I_t
+\Delta\mathfrak U_t
+\to
+\Delta\Sigma_t
+\to
+\Delta\mathcal I_t.
 \]
 
-## 4.4 对象层模态可及关系
-
-例如：
-
-\[
-M\preceq_FM[G]
-\]
-
-它回答：哪些模型、世界或阶段可由哪些扩展到达？高度、宽度、类和算术潜在主义可以拥有不同访问关系。
-
-## 4.5 历史—实践层数学可达结构
-
-例如：
-
-\[
-\mathfrak U_t\longrightarrow\mathfrak U_{t+1}
-\]
-
-它回答：某种模型构造、证明或扩展方式何时成为数学共同体可系统使用和继承的制度？
+## 4.2 两种可达性
 
 | 层次 | 核心问题 | 典型对象 |
 |---|---|---|
-| 对象层 accessibility | 哪些模型／世界可由哪些扩展到达？ | \(M,M[G]\)、高度／宽度访问关系 |
-| 实践层 reachability | 哪些操作、问题和解决路径在历史阶段中可实施和继承？ | \(\mathcal P_t,\mathfrak U_t,\Sigma_t\) |
-
-## 4.6 forcing 的双重角色
+| object-level accessibility | 哪些模型／世界可由扩展到达？ | \(M,M[G]\)、访问关系 |
+| historical-practical reachability | 哪些操作与解决路径在某阶段可实施、继承？ | \(\mathcal P_t,\mathfrak U_t,\Sigma_t\) |
 
 forcing 同时是：
 
-1. **对象层结构**：刻画模型／世界之间的扩展与可及关系；
-2. **实践层创新**：改变数学家系统制造、比较和解释这些扩展的方式。
-
-\[
-\boxed{
-\text{forcing as an accessibility structure}
-\neq
-\text{forcing as a transformation of the update regime}
-}
-\]
+1. 模型／世界之间的访问结构；
+2. 改变数学家制造、比较和解释这些扩展方式的制度创新。
 
 ---
 
-# 5. 结果型创新与制度型创新
+# 5. 结果型创新、制度型创新与非交换性
 
-## 5.1 结果型创新
+## 5.1 判据
 
-结果型创新主要增加数学内容：
-
-\[
-\Delta\mathcal P_t\neq0
-\]
-
-但没有产生可继承、非局部的新更新操作：
+结果型创新主要满足：
 
 \[
-\Delta\mathfrak U_t\approx0
+\Delta\mathcal P_t\neq0,
+\qquad
+\Delta\mathfrak U_t\approx0.
 \]
 
-## 5.2 制度型创新
+制度型创新满足：
 
 \[
 \boxed{
-h_t\text{ is regime-innovative}\iff\Delta\mathfrak U_t\neq0
+h_t\text{ is regime-innovative}
+\iff
+\Delta\mathfrak U_t\neq0
 }
 \]
 
-并要求：
+并要求可继承性、非局部性与背景化潜力。
 
-1. **可继承性**：能被其他主体学习和复用；
-2. **非局部性**：改变一类问题或方法；
-3. **背景化潜力**：能够进入证明库、教材、训练或理论结构。
+## 5.2 两种非交换性
 
-## 5.3 两种非交换性
+| 类型 | 问题 | 作用对象 |
+|---|---|---|
+| 模态非交换性 | \(\Diamond_h\Diamond_w\varphi\) 与 \(\Diamond_w\Diamond_h\varphi\) 是否等价？ | 模型、世界、公式 |
+| 历史非交换性 | forcing 尚未形成标准操作时，forcing iteration 是否已可实施？ | 方法定义域、训练、实践状态 |
 
-历史更新次序可能满足：
-
-\[
-F_b(F_a(\mathfrak S))\neq F_a(F_b(\mathfrak S))
-\]
-
-这讨论数学创新出现顺序对后续实践状态的影响。
-
-潜在主义中的模态非交换性则讨论例如：
+历史上可能出现：
 
 \[
-\Diamond_h\Diamond_w\varphi
-\quad\text{与}\quad
-\Diamond_w\Diamond_h\varphi
+F_{\mathrm{iteration}}
+(F_{\mathrm{forcing}}(\mathfrak S))
 \]
 
-是否等价。
-
-两种非交换性可能相关，但不能直接相互推出。历史非交换性也不是制度型创新的定义，只是强诊断签名。
-
-## 5.4 操作性证据
-
-证明 \(\Delta\mathfrak U_t\neq0\) 可使用：
-
-- 新操作类型出现；
-- 操作可重复制造模型、证明或理论扩展；
-- 一类问题的解决制度非保守变化；
-- 大量后续结果依赖该脚手架；
-- 方法进入标准训练、教材或形式化工具；
-- 方法退出后不能以零成本恢复旧状态。
-
-不设置“满足若干项即成立”的任意阈值。
+有定义，而反向组合在 forcing 尚未制度化时无定义。二者类型不同，不能相互推出；历史非交换性只是强签名，不是制度创新的定义。
 
 ---
 
-# 6. 数学可达景观、表示中立性与成本
+# 6. 表示中立性、景观与成本
 
-## 6.1 术语纪律
+## 6.1 非模态示范
 
-主术语：**mathematical reachability / 数学可达结构**。
-
-“accessibility relation”保留给模态逻辑与潜在主义的技术语境。
-
-## 6.2 表示中立性
-
-本文论证不依赖潜在主义必须使用模态语言。对象层扩展可以通过：
-
-- Kripke accessibility；
-- 模型扩展偏序；
-- 关系、代数或范畴结构；
-- 适当的非模态复数或阶段语言；
-
-来表达。
-
-即使某种模态潜在主义可以被定义等价地非模态化，本文的问题仍然存在：
-
-> 一种扩展结构如何成为历史可用、可继承并改变解决制度的数学操作？
-
-## 6.3 可达景观
+模态记法：
 
 \[
-\mathcal P_t=(\mathcal T_t,\mathcal R_t,c_t)
+M\preceq_F N.
 \]
 
-其中：
+非模态地定义普通二元关系：
+
+\[
+R_F(M,N)
+\iff
+\exists\mathbb P\in M\,
+\exists G\subseteq\mathbb P\,
+\big(
+G\text{ is }M\text{-generic for }\mathbb P
+\land
+N=M[G]
+\big).
+\]
+
+需要时再定义：
+
+\[
+M\models\Diamond_F\varphi
+\iff
+\exists N(R_F(M,N)\land N\models\varphi).
+\]
+
+中心论证只要求：
+
+1. \(R_F\) 或等价结构严格定义；
+2. forcing 成为可继承操作；
+3. 该操作改变 \(\mathfrak U_t\) 与 \(\Sigma_t\)。
+
+所以模态装置可被替换时，历史制度问题仍存在。第一篇无须引入额外 forcing-poset 范畴。
+
+## 6.2 可达景观
+
+\[
+\mathcal P_t=(\mathcal T_t,\mathcal R_t,c_t).
+\]
 
 - \(\mathcal T_t\)：当前可表达、调用和继承的理论、模型、问题、概念与方法；
 - \(\mathcal R_t\)：扩展、解释、翻译、模型构造和证明依赖关系；
-- \(c_t\)：路径成本的多维结构。
-
-对象层访问关系可进入 \(\mathcal R_t\)，但 \(\mathcal R_t\) 还包含历史可用的方法、翻译和继承关系。
-
-## 6.4 多维成本
+- \(c_t\)：多维路径成本。
 
 \[
 c_t(p)=
-(c_{formal},c_{constructive},c_{proof},c_{translation},c_{training},c_{inheritance})
+(c_{formal},c_{constructive},c_{proof},c_{translation},c_{training},c_{inheritance}).
 \]
 
-候选代理：形式前提与一致性负担、构造步骤、证明依赖图长度、跨理论翻译、训练先修和知识基础设施改写负担。第一篇不得假定这些维度可通约。
+不假定这些成本可通约。
 
 ---
 
-# 7. 主案例：forcing 如何重构 CH 的解决制度
+# 7. 主案例：forcing 与 CH
 
-## 7.1 范围声明
+## 7.1 范围
 
-本文直接讨论：
+只直接讨论 forcing／width potentialism，不统一高度、类、算术、严格或分叉潜在主义。
 
-- forcing 所代表的宽度扩展；
-- forcing potentialism 的模型／世界访问结构；
-- forcing 作为历史方法对集合论解决制度的改变。
+## 7.2 forcing 前
 
-本文不在第一篇统一高度、类、算术、严格、分叉潜在主义或全部数学开放性。
+必须由历史材料重建：
 
-## 7.2 forcing 前的解决制度
+- 在公认基础中证明或反驳 CH 的目标；
+- Gödel 的构造宇宙与相对一致性工作；
+- Cohen forcing 尚未成为系统可复用的模型扩展制度。
 
-必须用历史材料重建。候选结构：
+不得把 forcing 前回应简化成只有“证明／反驳”。
 
-- 目标主要被理解为在公认基础中证明或反驳 CH；
-- 相对一致性、构造宇宙和基础分析已构成重要进展；
-- 尚不存在 Cohen forcing 这一可系统复用的模型扩展制度。
+## 7.3 forcing 后
 
-不得把 forcing 前的回应类型简化成只有“证明／反驳”。
+分析：
 
-## 7.3 forcing 后的非保守改变
-
-forcing 之后，CH 研究稳定包含：
-
-- 相对于背景理论的独立性；
-- ground model 与 generic extension；
-- 不同模型中 CH 的真值分布；
-- forcing axioms 与新公理；
+- 独立性；
+- ground model／generic extension；
+- 不同模型中的 CH；
+- forcing axioms；
 - generic absoluteness；
-- universe／multiverse 争论；
-- 哪种新原则可算进一步裁决。
+- 新公理纲领；
+- universe／multiverse 争论。
 
-这些不是新的直接 yes/no 答案，而是改变完整回应、合法进展、可实施方法和后续问题分化。
+重点不是增加直接答案，而是 C2—C5 所涉及的角色、评价、推论与操作关系是否改变。
 
-## 7.4 forcing 作为对象层结构
+## 7.4 双重角色
 
-正文必须明确模型域、访问关系、元理论条件和适用模态逻辑。不同潜在系统不能被压缩成同一种 accessibility。
-
-## 7.5 forcing 作为更新制度创新
+对象层：
 
 \[
-\Delta\mathfrak U_t\neq0
+M\preceq_FM[G]
+\quad\text{或}\quad
+R_F(M,M[G]).
 \]
 
-forcing 提供可重复模型扩展操作，并改变：
+实践层：
 
-- 独立性证明如何系统产生；
-- 模型关系如何探索；
-- 新公理如何测试；
-- 后续问题如何组织。
+\[
+\Delta\mathfrak U_t\neq0.
+\]
 
-这不能由对象层访问关系自动推出，必须通过技术史、教材史、证明实践和研究结构论证。
+后者必须通过技术史、教材史、证明实践及后续研究结构论证，不能由对象层访问关系自动推出。
 
-## 7.6 技术准确性清单
+## 7.5 技术准确性
 
 正文必须：
 
-1. 区分句法独立性 \(T\nvdash\varphi\) 与 \(T\nvdash\neg\varphi\)；
-2. 区分相对一致性与模型存在；
-3. 不从 \(\operatorname{Con}(ZFC)\) 无条件推出可数传递模型存在；
-4. 明确 ground model、generic extension 和外部元理论；
-5. 正确处理 Boolean-valued models；
-6. 区分模型真值与相对于 ZFC 的不可判定性；
-7. 不把方法论多样性直接推成多宇宙本体论；
-8. 不将 forcing 模态逻辑推广到全部潜在主义。
+1. 区分句法独立性、相对一致性与模型存在；
+2. 不从 \(\operatorname{Con}(ZFC)\) 无条件推出可数传递模型存在；
+3. 明确 ground model、generic extension 和外部元理论；
+4. 正确处理 Boolean-valued models；
+5. 区分模型真值与 ZFC 不可判定性；
+6. 不把方法多样性直接推成多宇宙本体论；
+7. 不把某一 forcing 模态逻辑推广到全部潜在主义。
 
-## 7.7 universe／multiverse 中立策略
+## 7.6 宇宙观／多宇宙观中立
 
-多宇宙论者将 forcing 扩展视为集合论模态结构的一部分；宇宙论者也在 forcing 之后采用 generic absoluteness、\(\Omega\)-logic、内模型和新公理分析。两方真值观不同，但都体现：
+多宇宙论者重视 forcing extensions；宇宙论者也使用 generic absoluteness、\(\Omega\)-logic、内模型和新公理分析。两方真值观不同，但其实际实践均可用于检验：
 
 \[
-\Sigma_{pre}(Q_{CH})\not\equiv_c\Sigma_{post}(Q_{CH})
+\Sigma_{pre}(Q_{CH})
+\not\equiv_c
+\Sigma_{post}(Q_{CH}).
 \]
 
-这只支持解决制度变化，不声称两方共享同一本体论。
-
-## 7.8 实践语言与操作证据
-
-案例档案应分析：
-
-| 实践表达／操作 | 对象层含义 | 可继承操作？ | 改变解决制度？ | 证据 |
-|---|---|---:|---:|---|
-| pass to a forcing extension | 模型扩展 |  |  |  |
-| force \(\varphi\) | forcing relation／构造目标 |  |  |  |
-| generic absoluteness | 跨扩展稳定性 |  |  |  |
-| forcing axiom | 新公理／扩展原则 |  |  |  |
+该结论只涉及解决制度，不裁决最终本体论。
 
 ---
 
-# 8. 形式约束：历史生成不等于自由建构
+# 8. 形式约束
 
-## 8.1 固定协议内后承只是背景
+“协议固定时后果不能投票改变”只作背景。
 
-“协议固定后，后果不能由投票改变”保留为背景前提，不再作为原创中心。
+正面约束包括：
 
-## 8.2 正面约束来源
+- 独立性；
+- 模型满足；
+- 相对一致性；
+- 可解释性；
+- 保守扩展；
+- 证明论强度；
+- 构造可行性。
 
-景观更新受到：独立性、模型满足、相对一致性、可解释性、保守扩展、证明论强度与构造可行性的限制。
-
-## 8.3 一致性强度
-
-自然理论的一致性强度表现出重要的经验结构，但一般理论并不必然线性、良基或可比，“自然理论”也需要进一步说明。
+自然理论的一致性强度结构只提供：
 
 \[
 \boxed{
-\text{一致性强度提供约束性证据，不提供约束来源的归属性证据。}
+\text{约束性证据，而非约束来源的归属性证据。}
 }
 \]
-
-它反对任意建构，但不单独裁决柏拉图主义、SRT 或其他本体论。
-
-## 8.4 禁止单轴价格表
 
 不得写：
 
 \[
-\text{一致性强度}=\text{完整数学成本}=\kappa
+\text{一致性强度}
+=
+\text{完整数学成本}
+=
+\kappa.
 \]
-
-一致性强度只可作为 \(c_{formal}\) 的候选坐标之一。
 
 ---
 
-# 9. SRT 的必要增量
+# 9. SRT 桥接
 
-## 9.1 通用框架与 SRT 分离
+## 9.1 非独有部分
 
-以下不是 SRT 独有：数学有历史、更新有路径依赖、方法形成迟滞、\(\Delta\mathfrak U_t\neq0\)。
+数学有历史、路径依赖、迟滞和 \(\Delta\mathfrak U_t\neq0\) 均非 SRT 独有。
 
-SRT 的 P3 增量必须集中在：
+## 9.2 P3 增量
 
-> **选择性二阶写回：某些成功显现不仅被记录，还以方向不对称的方式降低兼容后续路径成本，并成为未来更新的背景脚手架。**
+SRT 的可区别增量是：
 
-## 9.2 最小映射
+> **选择性二阶写回：某些成功显现不仅被记录，还以方向不对称的方式降低兼容路径成本，并成为未来更新的背景脚手架。**
 
-### \(L_0^{math}\)
+最小映射：
 
-相对于当前实践尚未稳定显现，但具有非均匀可表达性、可构造性和可达性的候选路径空间。不得等同柏拉图对象仓库、层拓扑斯或完成的全部数学。
+- \(L_0^{math}\)：尚未稳定显现、非均匀可达的候选路径；
+- \(L_1^{math}\)：证明、模型、反例、独立性结果或方法创新；
+- \(L_2^{math}\)：被继承和背景化的方法、证明库、训练和制度。
 
-### \(L_1^{math}\)
-
-一次明确完成的证明、模型、反例、独立性结果或方法创新。
-
-### \(L_2^{math}\)
-
-被继承和背景化的方法脚手架、证明库、训练、更新制度和解决制度。
-
-## 9.3 避免循环
-
-必须区分：
-
-1. \(\Delta\mathfrak U_t\neq0\)：通用哲学判据；
-2. L₂ 映射：对背景化和继承的解释；
-3. 方向性成本分化：SRT 可受反驳的额外假设。
-
-## 9.4 局部语义引力预测
+## 9.3 局部比较预测
 
 \[
 \boxed{
@@ -654,292 +570,166 @@ SRT 的 P3 增量必须集中在：
 }
 \]
 
-其中 \(\Delta c_t(p)=c_{t+1}(p)-c_t(p)\)。该式表示：相对于一个已形成的局部脚手架 \(L_2^k\)，兼容路径的成本改善系统性地快于不兼容路径。
+允许多个局部脚手架、分叉及不可合并路径，不预设全局汇聚。
 
-该预测不要求：
+兼容性必须事前定义，可依据方法复用、证明工具、背景公理、翻译接口、中间结果与训练库。若匹配案例无系统差异，删除预测并缩减 SRT 部分。
 
-- 全部数学实践汇聚到单一吸引子；
-- 高度与宽度潜在性共享同一模态；
-- 不同研究纲领最终可合并；
-- 竞争性解决制度必然消失。
+## 9.4 后置内容
 
-允许存在多个局部脚手架：
-
-\[
-L_2^1,L_2^2,\ldots,L_2^n
-\]
-
-以及分叉、部分不可通约或无法汇聚的研究路径。
-
-兼容性必须事前定义，可依据方法复用、证明工具、背景公理、翻译接口、中间结果和训练库；成本代理可包括前置定义、证明依赖图、形式化代码量、学习负担、标准化时间、可复用引理比例和跨框架转换步骤。
-
-若匹配案例中不存在系统性差异，删除该预测，SRT 部分缩减为解释性映射。
-
-## 9.5 \(\kappa_0\)、曲率、\(\Psi_f\) 与开放性
-
-继续放在结尾展望，不进入主论证。不得写 \(\kappa_0>0\) 推出 Gödel 不完备性、forcing 测量 \(\kappa\)、数学曲率单调增加或耦合方程证明不存在终极基础。\(\Psi_f\) 只作为多维成本的候选领域投影族。
+\(\kappa_0\)、曲率、\(\Psi_f\) 与 Gödel 式开放性只作展望，不进入主论证。
 
 ---
 
-# 10. 完整论文大纲与字数预算
+# 10. 完整大纲与字数
 
-目标总长度：约 **9,350 词**；上限不超过 **10,000 词**。
+目标约 9,350 词，上限 10,000：
 
-## 1. Introduction — 750词
+| 节 | 词数 |
+|---|---:|
+| 1. Introduction | 750 |
+| 2. Forcing Potentialism and the Missing Historical-Practical Level | 1,100 |
+| 3. Problem Cores, Resolution Regimes, and Update Regimes | 1,450 |
+| 4. Forcing and the Reconstitution of the CH Resolution Regime | 2,500 |
+| 5. Formal Constraint Across Theories | 650 |
+| 6. The SRT Bridge | 800 |
+| 7. Objections and Failure Conditions | 1,450 |
+| 8. Implications | 400 |
+| 9. Conclusion | 250 |
 
-问题核／解决制度；forcing 双重角色；两种可达性；贡献与范围。
+第二节必须遵守 700／150／150／100 的近邻篇幅分配。第三节必须用于 C1—C6，而非增加新术语。
 
-## 2. Forcing Potentialism and the Missing Historical-Practical Level — 1,100词
+---
 
-forcing／width potentialism、实践哲学、固定背景论；简述高度、类、算术和分叉潜在主义。建立缺口：潜在主义研究世界如何可达，本文研究可达结构如何成为历史可用的更新制度。
+# 11. 必须处理的反对意见
 
-## 3. Problem Cores, Resolution Regimes, and Update Regimes — 1,450词
-
-\(Q_{\varphi}\)、\(D(Q)\)、\(\Sigma_t(Q)\)、\(\equiv_c\)、\(\mathfrak S_t\)、派生个体化、两种可达性、两种非交换性和制度型创新。
-
-## 4. Forcing and the Reconstitution of the CH Resolution Regime — 2,500词
-
-历史背景、Gödel 与 Cohen、对象层访问关系、forcing 作为更新制度、CH 解决制度变化、跨立场证据、实践语言与技术护栏。
-
-## 5. Formal Constraint Across Theories — 650词
-
-独立性、模型、相对一致性、可解释性和一致性强度的约束性／归属性区分。
-
-## 6. The SRT Bridge — 800词
-
-最小映射、多局部吸引子、方向性比较预测、P3 与撤回条件。
-
-## 7. Objections and Failure Conditions — 1,450词
-
-必须处理：
-
-1. 固定背景发现论可接受全部变化；
-2. 只是 Lakatos／数学实践哲学；
+1. 固定背景发现论可以接受全部变化；
+2. 这只是数学实践哲学；
 3. 直接答案没变，所以问题没变；
 4. 解决制度只是研究语境；
-5. 任何方法都改变制度；
-6. 宇宙论者不会接受重新个体化；
+5. 任何方法都改变更新制度；
+6. 宇宙论者不接受重新个体化；
 7. 一致性层级更支持柏拉图主义；
-8. 只是 forcing potentialism 的实践注释；
-9. 模态装置可被非模态化；
+8. 这只是 forcing potentialism 的实践注释；
+9. 模态装置可非模态化；
 10. 两种非交换性被混淆；
 11. 语义引力预设全局汇聚；
 12. SRT 只是后加标签。
 
-## 8. Implications — 400词
-
-开放性不等于任意性；表示中立；其他潜在主义留待后续；高承诺 SRT 主张后置。
-
-## 9. Conclusion — 250词
-
-CH 问题核持续；forcing 的双层作用；历史生成且形式受限。
+Objection 3 的回答必须依赖 C2—C5 的不可保持性，而不是扩大 \(D(Q_{CH})\)。  
+Objection 9 必须展示 \(R_F(M,N)\) 重写。  
+Objection 10 必须使用作用对象不同的并排示例。
 
 ---
 
-# 11. 写作顺序
+# 12. 写作顺序
 
-## 第一步：潜在主义最近邻矩阵
+1. 建立 forcing／width potentialism 最近邻矩阵；
+2. 核查 question semantics 与 inferential erotetics；
+3. 为 C1—C6 建立来源与案例表；
+4. 建立 forcing 技术—历史档案；
+5. 分别建立对象层访问表与实践层制度变化表；
+6. 先写理论节、forcing 案例与 objections；
+7. 最后写形式约束、SRT、摘要与引言。
 
-| 路线 | 潜在对象 | 访问关系 | 与本文关系 |
-|---|---|---|---|
-| forcing／width potentialism | 新子集、泛型扩展 | forcing extension | 直接最近邻 |
-| height potentialism | 更高秩／层级 | rank extension | 比较对象 |
-| class potentialism | 更多类／真理资源 | 类扩展 | 分叉与多制度提醒 |
-| arithmetic potentialism | 算术模型扩展 | 端扩展等 | 后续推广 |
+核心审计表：
 
-## 第二步：提问逻辑档案
-
-澄清 direct answer、partial answer、complete answer、resolution、dissolution 和问题同一性。
-
-## 第三步：forcing 技术—历史档案
-
-区分 forcing 前研究回应、Gödel 与 Cohen、对象层访问关系、forcing 方法形成、forcing axioms、generic absoluteness 与 universe／multiverse。
-
-## 第四步：双层证据表
-
-### 对象层访问结构
-
-| 关系 | 模型域 | 条件 | 模态／结构结论 | 来源 |
+| 条件 | forcing 前 | forcing 后 | 可保守翻译？ | 证据 |
 |---|---|---|---|---|
-| \(M\preceq_FM[G]\) |  |  |  |  |
-| 高度扩展 |  |  |  |  |
-
-### 实践层制度变化
-
-| 操作／表达 | forcing 前可用？ | 后续可继承？ | 改变解决制度？ | 来源 |
-|---|---:|---:|---:|---|
-| generic extension |  |  |  |  |
-| forcing iteration |  |  |  |  |
-| forcing axiom testing |  |  |  |  |
-| generic absoluteness |  |  |  |  |
-
-## 第五步：先写定位、框架、案例和反对意见
-
-若无法回答“只是 forcing potentialism 的实践注释”，暂停全文，不先写 SRT。
-
-## 第六步：最后写形式约束、SRT、引言与摘要
+| C1 直接答案 | \(CH,\neg CH\) | \(CH,\neg CH\) | 应保持 |  |
+| C2 响应角色 |  |  |  |  |
+| C3 评价次序 |  |  |  |  |
+| C4 推论功能 |  |  |  |  |
+| C5 操作生成 |  |  |  |  |
+| C6 往返保持 |  |  |  |  |
 
 ---
 
-# 12. 主张—证据—撤回条件
+# 13. 主张、证据与撤回
 
-| 主张 | 状态 | 所需证据 | 撤回／缩减条件 |
-|---|---|---|---|
-| 问题核与解决制度可区分 | 哲学框架 | question semantics | 无法区分 direct answer 与 resolution 则重构 |
-| 对象层 accessibility 与实践层 reachability 可区分 | 中心定位 | forcing potentialism 与历史材料 | 两层可完全互定义且无剩余问题则缩减 |
-| forcing 后 CH 解决制度非保守变化 | 中心主张 | 技术史、实践和问题语义 | 可完整翻译为旧制度内知识增加则放弃 |
-| forcing 改变集合论更新制度 | 中心主张 | 可复用操作、继承和背景化 | 仅增加结果节点则降级 |
-| 第一篇限于 width／forcing potentialism | 范围约束 | 文献分类 | 不得推广到全部潜在主义 |
-| 论证对模态／非模态表示中立 | 方法主张 | 模态化与非模态化文献 | 若依赖特定模态语义则公开限定 |
-| 一致性强度提供非任意约束 | 支撑主张 | 逻辑文献 | 不得用于裁决本体论来源 |
-| SRT 局部方向性预测 | P3候选 | 兼容／不兼容路径数据 | 无差异或依赖全局汇聚则删除 |
-| \(\kappa_0\) 解释开放性 | P3展望 | 后续独立论证 | 第一篇不成立不影响主论证 |
+| 主张 | 所需证据 | 撤回条件 |
+|---|---|---|
+| 问题核／解决制度区分 | question semantics | 无法区分 direct answer 与 resolution |
+| forcing 后制度非保守变化 | C1—C6、技术史与实践 | 存在保持角色、评价、推论和操作的双向翻译 |
+| forcing 改变更新制度 | 可复用、继承、背景化证据 | 仅增加结果节点 |
+| 双层可达性可区分 | 潜在主义与历史材料 | 两层可完全互定义 |
+| 表示中立 | \(R_F(M,N)\) 重写 | 核心推论依赖特定模态语义 |
+| 一致性强度提供非任意约束 | 逻辑文献 | 不得据此裁决本体论 |
+| SRT 局部方向性预测 | 匹配历史／形式数据 | 无差异或依赖全局汇聚 |
 
 ---
 
-# 13. 新颖性压力测试
+# 14. 禁止裸用
 
-1. **固定背景测试**：是否仅说明便利度变化？
-2. **实践哲学测试**：是否只是“数学有历史”？
-3. **forcing potentialism 吸收测试**：是否只是在重述模型访问关系？
-4. **非模态化测试**：去掉模态语言后中心论证是否仍成立？
-5. **非交换性测试**：是否混淆模态算子与历史更新次序？
-6. **制度膨胀测试**：是否把任何方法都称为制度创新？
-7. **社会建构论测试**：删掉形式约束后论证是否不变？
-8. **SRT 删除测试**：删掉 SRT 后论文应成立；保留 SRT 时必须有局部可撤回增量。
-9. **隐喻测试**：景观、制度、成本、写回与吸引子是否有明确代理？
+不得写：
 
----
-
-# 14. 禁止裸用清单
-
-第一篇不得写：
-
-- 潜在主义是单一理论；
-- 潜在主义没有研究可达关系；
-- forcing potentialism 已经解释 forcing 如何成为历史更新制度；
-- 对象层 accessibility 等同实践层 reachability；
-- 高度／宽度模态不交换等同历史更新不交换；
-- forcing 案例代表全部潜在主义；
-- 潜在主义必须以模态语言表达；
-- 模态可消除意味着历史—实践问题消失；
 - Cohen 前 CH 问题不存在；
-- forcing 改变 CH 直接答案核；
+- forcing 改变 CH 的直接答案核；
 - 独立性是 CH 真值的直接回答；
-- 所有创新都不可交换；
-- 任何新定理都是制度创新；
-- 语义引力要求全局汇聚；
+- \(\equiv_c\) 仅靠“存在双向翻译”即可成立；
+- \(R_t\) 与 \(E_t\) 是两个独立内容坐标；
+- 潜在主义没有研究可达关系；
+- accessibility 等同 reachability；
+- 两种非交换性相互推出；
+- 模态可消除意味着制度问题消失；
+- forcing 案例代表全部潜在主义；
 - 一致性强度证明 SRT；
 - \(L_0\) 等同层拓扑斯；
-- 数学真理是 \(\hat G\) 源代码；
 - \(c_t=\kappa(t)\)；
-- \(\Psi_f\) 等同证明复杂度；
 - \(\kappa_0>0\) 推出 Gödel 不完备性；
-- forcing 后 V=L 必然成为失效路径。
+- 语义引力要求数学史全局汇聚。
 
 ---
 
 # 15. 文献策略
 
-至少建立十组文献：
+优先建立：
 
-1. 提问逻辑与问题语义学；
-2. forcing 与 CH 技术史；
-3. forcing／width potentialism；
-4. 潜在主义分类学；
-5. 高度、类与分叉潜在主义；
-6. 模态机制与非模态化；
-7. universe／multiverse、generic absoluteness 与新公理；
-8. 数学实践哲学；
-9. 一致性强度与自然理论层级；
-10. 路径依赖、方法脚手架和知识基础设施。
+1. Hamblin、Belnap & Steel、Wiśniewski及当代 question semantics；
+2. Gödel、Cohen及 forcing 技术史；
+3. Hamkins–Linnebo、Brauer 等 forcing／width potentialism；
+4. 2026年 *Philosophia Mathematica* 潜在主义专刊；
+5. Sutto 分类学；
+6. Berry、Linnebo 的模态机制与非模态化；
+7. height／class／divergent potentialism；
+8. universe／multiverse、generic absoluteness、新公理；
+9. 数学实践哲学；
+10. 一致性强度与自然理论层级。
 
-必须优先处理：
-
-- 2026 年 *Philosophia Mathematica* 潜在主义专刊；
-- Sutto 的分类学；
-- Berry 的模态机制比较；
-- Cook 的潜无穷逻辑分析；
-- Linnebo–Shapiro 的严格潜在主义；
-- Hamkins 的算术潜在主义；
-- Linnebo 的 *Potentialism Demodalized*；
-- 2025 年 *Palgrave Companion to the Philosophy of Set Theory* 中 forcing potentialism 与高度／宽度章节；
-- Barton–Williams 的类潜在主义；
-- Soysal 对高度潜在主义解释力的批评。
-
-引用纪律：不以“潜在主义”统称不同访问关系；技术事实优先原始论文和标准专著；数学史因果判断必须有历史材料；SRT 文件不作为 forcing、CH、potentialism 或 question semantics 的外部证据。
+技术事实优先原始论文和标准专著；SRT 文档不得代替外部数学或哲学证据。
 
 ---
 
-# 16. 工作摘要骨架 v0.4
+# 16. 工作摘要骨架
 
-> The continuity of a mathematical sentence does not guarantee the continuity of the research problem organized around it. This paper distinguishes a propositional question core from its historically variable resolution regime and, in dialogue with forcing potentialism, separates two levels of reachability. At the object level, forcing structures accessibility relations among models or set-theoretic worlds. At the historical-practical level, forcing became an inheritable mathematical operation that transformed how such extensions could be constructed, compared, and used to assess progress on the continuum hypothesis. The CH question existed before Cohen, and forcing did not alter its direct yes-or-no answer core. It did, however, non-conservatively reconstitute the resolution regime of CH and the update regime of set-theoretic practice. The argument is representation-neutral: it does not depend on potentialism being essentially modal and survives suitable non-modal formulations of model extension. Mathematical practice is modelled as a time-indexed reachability landscape together with an update regime, from which research-problem individuation is derived. Independence, model theory, relative consistency, and interpretability constrain these historical changes. A final P3 bridge to Selective Reality Theory interprets method sedimentation as selective second-order writeback and formulates a local, defeasible prediction of asymmetric cost reduction for paths compatible with an established mathematical scaffold, without assuming global convergence or a unique attractor.
+> The continuity of a mathematical sentence does not guarantee the continuity of the research problem organized around it. This paper distinguishes the direct-answer core of a question from its historically variable resolution regime and separates object-level forcing accessibility from historical-practical mathematical reachability. The continuum-hypothesis question existed before Cohen, and forcing did not alter its direct yes-or-no answer core. Non-conservative change is instead tested by whether translations between pre- and post-forcing regimes preserve response roles, progress orderings, inferential functions, and operation-output relations. Forcing is analysed both as a model-extension relation and as an inheritable mathematical operation that transformed how extensions could be constructed, compared, and used to assess progress. The argument is representation-neutral: forcing accessibility can be stated modally or through an ordinary binary relation among models, while the institutionalization problem remains. A final P3 bridge to Selective Reality Theory interprets method sedimentation as selective second-order writeback and proposes a local, defeasible asymmetry between paths compatible and incompatible with an established mathematical scaffold.
 
 ---
 
-# 17. 投稿前完成标准
+# 17. 投稿前检查
 
-- [ ] 已区分 direct answer、partial answer、resolution 与 dissolution；
-- [ ] 已给出 \(\equiv_c\) 的最小含义；
-- [ ] 已建立 forcing／width、height、class、arithmetic potentialism 的分类矩阵；
-- [ ] 已区分对象层 accessibility 与实践层 reachability；
-- [ ] 已区分两种非交换性；
-- [ ] 已明确第一篇不统一全部潜在主义；
-- [ ] 已说明论证在适当非模态表述下仍成立；
-- [ ] 已证明 forcing 超出单纯新增知识节点；
-- [ ] 已证明 forcing 既是对象层结构也是制度创新；
+- [ ] \(R_t\) 与 \(E_t\) 已类型化；
+- [ ] C1—C6 已逐项案例化；
+- [ ] 没有扩大 CH 的直接答案核；
+- [ ] 已用 \(R_F(M,N)\) 完成非模态重述；
+- [ ] 最近邻节大部分篇幅用于 forcing potentialism；
+- [ ] 已给出两种非交换性的并排示例；
+- [ ] 已证明 forcing 不只是新增知识节点；
 - [ ] universe／multiverse 中立性有跨立场证据；
-- [ ] 一致性强度被标为约束性而非归属性证据；
-- [ ] 语义引力使用局部比较式；
-- [ ] 明确允许多个局部吸引子与分叉路径；
-- [ ] 总字数不超过10,000词；
-- [ ] Objections 至少保留1,300词；
-- [ ] SRT 映射标为P3；
+- [ ] 一致性强度只作约束性证据；
+- [ ] SRT 映射标为 P3；
+- [ ] 总字数不超过 10,000；
 - [ ] 删除 SRT 后论文仍成立；
-- [ ] 保留 SRT 时有不依赖全局汇聚的可撤回增量。
+- [ ] 保留 SRT 时存在可撤回的局部方向性增量。
 
 ---
 
-# 18. 后续研究路线
-
-## A. 问题同一性理论
-
-研究问题核、疑问语义、保守制度变化、问题分裂和问题消解。
-
-## B. accessibility／reachability 接口
-
-研究模型访问关系如何转化为可用方法，以及历史实践如何选择哪些访问结构具有数学重要性。
-
-## C. 高度与宽度的双层动力学
-
-区分 \(\Diamond_h,\Diamond_w\) 的对象层相互作用与高度／宽度方法进入实践制度的历史次序。
-
-## D. 模态化与非模态化
-
-检验动态制度框架在 Kripke、模型偏序、复数逻辑和范畴化表示中的不变量。
-
-## E. SRT 语义引力经验检验
-
-使用形式化证明库、教材史和引用依赖图，检验多个局部脚手架中兼容路径成本是否系统性下降更快。
-
-## F. 一致性强度与景观几何
-
-只有获得局部度量、连接或序结构后才讨论曲率。
-
-## G. 不可约开放性
-
-独立讨论 \(\kappa_0\)、不完备性和有限形式闭合，不从第一篇案例直接推出。
-
----
-
-# 19. 最终执行指令
-
-全文始终保持以下五句话：
+# 18. 最终执行指令
 
 1. **CH 问题在 Cohen 之前已经存在。**
-2. **forcing potentialism 研究模型／世界如何通过 forcing 可达；本文研究这种可达结构如何历史性地成为可继承更新制度。**
-3. **forcing 没有改变 CH 的直接答案核，但重构了其解决制度与集合论更新制度。**
-4. **该论证不依赖潜在主义必须采用模态语言，也不由 forcing 案例推广到全部潜在主义。**
-5. **SRT 只增加局部、方向性的二阶写回假设，不预设数学史全局汇聚。**
+2. **forcing potentialism 研究模型如何可达；本文研究该结构如何成为可继承的更新制度。**
+3. **非保守性必须由 C1—C6 的保持失败证明，不能靠增加直接答案。**
+4. **\(R_t\) 是响应角色系统，\(E_t\) 是评价映射。**
+5. **中心论证可用普通关系 \(R_F(M,N)\) 表达。**
+6. **SRT 只增加局部、方向性的 P3 写回假设。**
 
-若正文不能同时证明第2和第3句，或无法回答“这只是 forcing potentialism 的实践注释”，则不要进入投稿稿阶段。
+若不能证明第2、3、5句，或无法回答“这只是 forcing potentialism 的实践注释”，不要进入投稿稿阶段。
