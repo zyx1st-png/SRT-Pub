@@ -49,7 +49,17 @@ Date: 2026-03-24
 - [x] Data availability statement includes reproducibility commitment (`mu_sem` dictionary + analysis scripts upon empirical execution)
 - [x] Conflict of interest statement included
 
-## 5) Remaining pre-submission actions (manual)
+## 5) Limited mechanism-boundary patch (2026-08)
+
+- [x] Added a narrow limitation that scalar latent-cost estimation does not uniquely identify the generating dynamical organization
+- [x] Preserved the Level-0 estimand / Level-1 candidate-mechanism distinction
+- [x] Added no formula, figure, table, primary hypothesis, or new mechanism definition
+- [x] Added no external reference; source verification for the motivating force-organization preprint remains outside the submission manuscript
+- [x] Expected word-count change is small and does not alter the approximate first-page count (`~10,000`)
+- [x] No equation, figure, table, section, or bibliography cross-reference changes
+- [x] No portal metadata update is required beyond regenerating the final upload artifact from the revised source
+
+## 6) Remaining pre-submission actions (manual)
 
 - [ ] Confirm corresponding-author email and any required correspondence line in manuscript / portal metadata
 - [ ] Verify reference style exactly matches Frontiers bib requirements in final submission format

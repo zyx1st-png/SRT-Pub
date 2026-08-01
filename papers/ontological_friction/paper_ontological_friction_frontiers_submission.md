@@ -56,7 +56,7 @@ In plain terms, this work proposes a single idea and then builds it out. The ide
 
 More formally, this manuscript is positioned as a translational neuroscience hypothesis paper on executive breakdown under resource-bounded action selection. We introduce *executive friction* ($\Psi_f$) as a latent cross-modal control-cost factor and evaluate it as a candidate bridge between computational theory, clinically accessible biomarkers, and disorder-differentiating predictions. The $\Psi_f$ framework makes three specific predictions that are jointly stronger than prior accounts: a nonlinear critical-load transition ($\rho_c$), context-sensitive modal-language shifts ($\mu_{\text{sem}}$), and convergence of behavioral-linguistic-physiological indicators onto a single latent factor. The core validation chain is intentionally low-cost and scalable: behavioral control tasks, adjusted modal-language scores, and autonomic physiology (HRV/SCR, with cortisol optional). Higher-cost neural and biochemical measures are treated as optional adjudication layers rather than prerequisites. Major depressive disorder, obsessive-compulsive disorder, and Parkinson's disease are included as boundary use cases for stress-testing parameter drift and dissociation patterns, not as attempts to replace disease-specific pathophysiology. The main text is written in standard hierarchical-control and predictive-processing language, and Appendix A is kept strictly as optional notation support rather than as an entry point to any larger philosophical system.
 
-This is a theoretical and computational contribution aimed at empirical translation. No new data are reported. Consistent with the *Frontiers in Neuroscience* Hypothesis and Theory format, the paper advances a testable model within a specific area of investigation (the knowing-doing gap in executive dysfunction), and provides measurement strategy, falsification rules, and clinically tractable protocols for future adjudication.
+This is a theoretical and computational contribution aimed at empirical translation. No new data are reported. Consistent with the *Frontiers in Neuroscience* Hypothesis and Theory format, the paper advances a testable model within a specific area of investigation (the knowing–doing gap in executive dysfunction), and provides measurement strategy, falsification rules, and clinically tractable protocols for future adjudication.
 
 ### 1.4 Standard Control Terms Used in This Manuscript
 
@@ -299,8 +299,7 @@ $$
 &+b_4\text{AffectLexiconRatio}+b_5\text{TokenCount}+b_6\text{TypeTokenRatio}+\varepsilon,\\
 \mu_{\text{sem}}^{\text{adj}} ={}& \operatorname{Residual}\!\left(\log\mu_{\text{sem}}\right)
 \end{aligned}
-\qquad \text{(10a)}
-$$
+\qquad \text{(10a)}$$
 
 This controls for major non-theoretical variance sources: education level, interview context, prompt wording, interviewer style, global affective-word prevalence, and lexical diversity. Recommended reliability checks are split-half agreement, inter-rater agreement for modal tagging (if manual annotation is used), and longitudinal intraclass correlation coefficient (ICC) in repeated sessions. To reduce floor/ceiling instability, analyses should exclude samples with fewer than 10 total modal tokens.
 
@@ -525,6 +524,8 @@ Third, distress and pain are *not* assumed to be generated solely by control cos
 Fourth, the ROS coupling hypothesis (Equation 9) requires *longitudinal data* to establish temporal precedence. A cross-sectional correlation between $\Psi_f$ and ROS markers, while consistent with the model, does not establish directionality. Prospective designs and intervention studies (manipulating $\Psi_f$ and measuring ROS change) are essential.
 
 Fifth, the equations presented (Equations 3a–5, plus Eq. B1 in Appendix B) use simplified functional forms. In particular, the control-cost quadratic form in Equation (3c), the KL form in Equation (3d), and its local Fisher approximation in Equation (3d') are modeling choices, not identifiability guarantees. The precise friction-cost shape (quadratic, piecewise, exponential, or sigmoidal) remains an empirical question.
+
+Relatedly, even a reliably estimated scalar Level-0 latent factor does not uniquely identify the dynamical organization that generated it. The same scalar burden can arise from different temporal arrangements, control allocations, or interaction structures. A good fit to Equation (3a) therefore does not by itself adjudicate among the control-effort model (Equation 3c), the KL/default-departure model (Equation 3d), its local Fisher approximation (Equation 3d'), or other organization-sensitive mechanisms. Those accounts remain candidates for prospective model comparison and intervention-based adjudication; the present manuscript does not define force or interaction organization as executive friction.
 
 Sixth, the framework is *silent on the hard problem of consciousness* in the Chalmersian sense (Chalmers, 1995). $\Psi_f$ provides a measurable correlate of the cost of maintaining conscious states, but it does not explain *why* subjective experience accompanies high-friction processing. We view this as an appropriate scope limitation rather than a deficiency.
 
