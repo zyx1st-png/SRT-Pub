@@ -169,6 +169,20 @@ Then separate:
 
 Only the first belongs near core. The others should remain P2/P3/P5 unless separately hardened.
 
+### Status Update (2026-08-01, limited self-monitoring pressure)
+
+AI-domain evidence can make **local correctness self-monitoring** positive while leaving `T_dir` unestablished. A system may estimate whether an answer is likely correct, use that estimate to revise or delegate, and still lack one or more of the following: (a) a genuine selection-direction object rather than a correctness/confidence signal; (b) a persistent bearer to whom the signal and its consequences return; (c) non-transferable consequence return into the same system's future selection capacity; (d) across-time reorientation rather than within-episode answer correction; and (e) stake-coupled pressure. Therefore:
+
+```text
+local correctness self-monitoring > 0
+
+not imply
+
+T_dir > 0
+```
+
+This is a P3/P4 boundary pressure, not a modification of `_SRT_T_DIR_CANONICAL.md`. The corresponding architecture-state audit remains in `AI/SRT_AI_Claim_Status.md`; the proposed empirical separation is recorded in `Experiments/SRT_AI_Metacognition_Stake_Protocol_v0.md`.
+
 ---
 
 ## 4. Healthy `L_2` Support vs Lethal `L_2` Replacement
@@ -353,6 +367,24 @@ Two source-intuition choice-traces register direct intuitive testimony on this e
 - `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md` P2-01: "selection as the minimal non-neutral maintenance of a lucky openness" (the author's own words: "选择是对于幸运产生的最小非中立的维持"). "Lucky" is an intuitive name for the non-selective ground P0-04 asks about; it does not derive selectability from it.
 
 Neither testimony should be read as narrowing the three-way guardrail above (derived process / stable pattern / assumed interface); both remain compatible with all three and do not by themselves pick one.
+
+### Status Update (2026-08-01, coordination / agency layer split)
+
+The 2026-07-31 ChoiceMap source-intuition records and the second-round literature increment audit require a strict three-layer distinction:
+
+```text
+ontological origin of selectability
+!=
+coordination infrastructure of selectable systems
+!=
+stake-bearing agency admission
+```
+
+- **Ontological origin of selectability** remains the P0-04 exposure: how the first selectable/selector-like capacity is possible at all.
+- **Coordination infrastructure** concerns how already-active components transmit, preserve, integrate, and route consequences across a system.
+- **Stake-bearing agency admission** asks whether consequences bind to a persistent bearer, modify its future reachable set, and enter gate revision or reselection rather than ordinary parameter adaptation.
+
+Coordination may be a necessary organizational prehistory candidate for some agency domains, but integrated coordination is not a unified subject, viability is not d-value, and coordination complexity is not an agency threshold. Neither the ChoiceMap source-intuition nor an external biology bridge may be cited as solving P0-04.
 
 ---
 
@@ -567,6 +599,20 @@ Two guardrails on how the test may be run:
 
 1. **Refit-budget relativity (GOV-SUB01 §3, §7.4).** A `broad K` replacement that reconstructs SRT behavior in non-selection vocabulary shows *representational substitutability*, not *absence of the underlying role*. Do not count a variable as removed when its function was merely moved into initialization, a loss term, a prior, preprocessing, or a renamed construct.
 2. **Distinctness from §7.** §7 (P0-04) asks where selectability *comes from*; this tension asks whether the selection *primitive can be dissolved* into non-selection vocabulary without loss. These are distinct exposures and must not be conflated or cited as one closing the other.
+
+### Downstream Agency Deletion Burden (2026-08-01)
+
+A separate P4 test now applies the same subtractive discipline to the downstream `agency/能动性` vocabulary:
+
+```text
+P0 selection primitive deletion test
+!=
+downstream agency vocabulary deletion test
+```
+
+The agency test deletes only agency terms while retaining mechanism, control, adaptation, memory, constraint, coordination, and the existing SRT core background. It asks whether persistent bearer, bearer-specific consequence return, future reachable-set modification, gate revisability, intervention difference, and counterfactual difference survive without an agency-labelled role. If ordinary mechanism language preserves every registered difference under a declared refit budget, the tested **agency bridge** should be demoted. That result would not delete, refute, or demote P0-01.
+
+The complete experimental deletion test has not yet been run. `Experiments/SRT_Agency_Vocabulary_Deletion_Protocol_v0.md` is a proposed P4 protocol with `formal_hypothesis_id: pending`; it does not establish that agency is irreducible.
 
 ### Future Hardening Direction
 
