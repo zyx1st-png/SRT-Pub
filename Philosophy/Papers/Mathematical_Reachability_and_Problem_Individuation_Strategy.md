@@ -2,7 +2,7 @@
 id: SRT-STRATEGY-MATHEMATICAL-REACHABILITY-PROBLEM-INDIVIDUATION
 title: "数学可达结构、研究问题制度与条件性重新个体化：论文写作大纲与策略"
 title_en: "Mathematical Reachability, Research-Problem Regimes, and Conditional Re-Individuation"
-status: strategy_note_v0_6
+status: strategy_note_v0_7
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: bridge
@@ -10,8 +10,9 @@ claim_mode: mixed
 primary_claim_level: P3
 date: 2026-08-02
 supersedes:
-  - strategy_note_v0_5 @ 1f1f9b4fd214e3293bfd7dc30287c8844f4598c8
-proposed_paper_title: "When Mathematical Problems Change: Forcing and the Historical Reconstitution of Resolution"
+  - strategy_note_v0_6 @ ca5b056dba95253937f8d34accc5ee7d6e8ea8a3
+proposed_paper_title_strong: "When Mathematical Problems Change: Forcing and the Historical Reconstitution of Resolution"
+proposed_paper_title_weak: "Forcing and the Reconstitution of the Continuum-Hypothesis Research Regime"
 target_journals:
   - Philosophia Mathematica
   - Synthese
@@ -19,31 +20,35 @@ target_journals:
 claim_governance:
   framework_claims: P2/P3 philosophical proposals
   strong_semantic_reindividuation: conditional on C2 evidence
-  research_regime_reconstruction: primary paper claim
-  srt_domain_mapping: P3 bridge
+  ch_research_regime_reconstruction: primary paper claim
+  global_set_theoretic_update_regime: requires cross-problem institutionalization evidence
+  srt_domain_mapping: P3 bridge with preregistered fallback
   mathematical_history_claims: externally sourced evidence required
   curvature_kappa0_godel: interpretive extensions only
+strategy_state: freeze_after_v0_7
 machine_summary: >
-  Version 0.6 separates semantic question identity from the broader research-problem regime.
-  The semantic layer is Q_sem=<D,R_t>; the research layer adds background theories, local
-  methods and an evaluation map. Forcing is claimed to reconstruct the CH research regime
-  and the set-theoretic update regime. Strong semantic re-individuation is conditional on
-  evidence that no conservative role translation exists. Conservative translation is now
-  typed by explicit role and value maps. C2 and C5 are load-bearing; C3 and C4 are only
-  corroborative. A calibrated result-innovation control case is mandatory. M_t is defined as
-  the restriction of the global update regime U_t to a question. C6 is recast as a structural
-  quasi-inverse relative to an explicit output-equivalence relation. The SRT section has a
-  preregistered three-level fallback from directional prediction to explanatory mapping to
-  deletion from the submitted paper.
+  Version 0.7 completes the calibration architecture and freezes the conceptual strategy.
+  It distinguishes operation novelty from institutionalization: failure of operation-level C5
+  is not sufficient for regime innovation unless the new operation is inheritable, non-local,
+  and scaffold-forming. Two controls are mandatory: a result innovation with no new operation,
+  and a local technical innovation that has no conservative predecessor but fails to become
+  infrastructure. Background theories receive explicit translation maps, and C5 is reformulated
+  as a background-operation-output relation. The historical audit is divided into pre-Goedel,
+  Goedel, Cohen, and institutionalized-forcing stages, preventing the paper from treating all
+  pre-forcing mathematics as a single regime. The local claim about the CH research regime is
+  separated from the global claim about the update regime of set theory. Objections are grouped
+  into four argumentative clusters. Strong and weak submission abstracts are prepared under a
+  100-word limit. After this version, work must shift from framework revision to evidence dossiers.
 ---
 
 # 数学可达结构、研究问题制度与条件性重新个体化
-## 论文写作大纲与策略 v0.6
+## 论文写作大纲与策略 v0.7
 
 > **文件性质**：内部策略文件，不是投稿正文。  
-> **本版任务**：完成最后一轮形式硬化，不再增加新的宏观概念。  
-> **核心修订**：区分“语义问题身份”与“研究问题制度”；修复 C2/C3 的类型；将 C2 与 C5 设为不同层次的承重条件；增加保守标定案例；预注册 SRT 三级回退。  
-> **治理纪律**：forcing、CH、潜在主义、问题语义学与数学史事实必须由外部原始或权威文献支持；SRT 文档只支持 P3 桥接。
+> **本版性质**：冻结前最终校准版。  
+> **本版不再新增宏观概念**，只完成以下闭环：新操作／制度化区分、背景翻译、四阶段历史审计、双控制标定、局部／全局主张分离、反对意见合并、强弱摘要预注册。  
+> **治理纪律**：forcing、CH、潜在主义、问题语义学与数学史事实必须由外部原始或权威文献支持；SRT 文档只支持 P3 桥接。  
+> **冻结规则**：v0.7 之后不再因一般性评审增加新符号；除非证据档案发现类型错误或中心历史事实不成立，否则转入正文与证据建设。
 
 ---
 
@@ -51,39 +56,45 @@ machine_summary: >
 
 \[
 \boxed{
-\text{forcing 没有创造 CH 的命题问题核或改变其直接答案核；}
+\text{forcing 没有创造 CH 的命题问题核，也没有改变其直接答案核；}
 \atop
-\text{它确定地重构了 CH 的研究问题制度与集合论更新制度，}
+\text{论文拟证明它重构了 CH 的研究问题制度；}
 \atop
-\text{并可能在更强意义上重构其响应角色结构。}
+\text{只有跨问题制度化证据充分时，才进一步主张它重构了集合论的全局更新制度；}
+\atop
+\text{只有 C2 角色结构证据充分时，才主张强语义重新个体化。}
 }
 \]
 
-全文只承担四项任务：
+全文承担五项任务：
 
 1. 区分语义问题身份与研究问题制度；
-2. 证明 forcing 改写了可继承的集合论更新制度；
-3. 用 C2 判断是否发生强语义重新个体化，用 C5 判断是否发生制度重构；
-4. 说明该改写历史生成但受形式约束。
+2. 区分新操作出现与新操作制度化；
+3. 通过四阶段历史审计说明 Cohen 相对 Gödel 的具体增量；
+4. 分别检验 CH 局部研究制度与集合论全局更新制度；
+5. 用两个控制案例证明判据既不过宽也不过窄。
 
-若正文只能证明“方法变得更方便”，论文失败。
+若正文只能证明“出现了一种新技巧”或“方法更方便”，论文失败。
 
 ---
 
-# 1. 论文定位
+# 1. 论文定位与强弱版本
 
-## 1.1 首选题目
+## 1.1 强版本题目
 
 **When Mathematical Problems Change: Forcing and the Historical Reconstitution of Resolution**
 
 中文：**当数学问题发生改变：Forcing 与解决制度的历史重构**
 
-## 1.2 可选的更精确题目
+仅当 C2 的角色结构审计支持强语义重新个体化时使用。
 
-**Forcing and the Reconstitution of the Continuum-Hypothesis Research Problem**  
-**Forcing 与连续统假设研究问题的重构**
+## 1.2 弱版本题目
 
-若历史材料不足以支持强语义重新个体化，投稿题目应优先采用第二个版本。
+**Forcing and the Reconstitution of the Continuum-Hypothesis Research Regime**
+
+中文：**Forcing 与连续统假设研究问题制度的重构**
+
+只要 CH 局部研究制度重构得到证明，即可使用；不要求证明语义问题身份改变。
 
 ## 1.3 目标期刊
 
@@ -95,7 +106,8 @@ machine_summary: >
 
 - 数学真理由历史创造；
 - forcing 改变 CH 的直接真值核；
-- 统一数学曲率；
+- 所有潜在主义共享同一访问关系；
+- 数学实践具有统一标量曲率；
 - \(\kappa_0>0\) 推出 Gödel 不完备性；
 - 数学不存在终极基础。
 
@@ -109,10 +121,10 @@ machine_summary: >
 |---|---|---|
 | forcing／width potentialism | 泛型扩展、新子集 | 直接最近邻，详细讨论 |
 | height potentialism | 更高秩／层级 | 比较对象 |
-| class potentialism | 类、谓词、真理资源 | 提醒汇聚公理可失败 |
+| class potentialism | 类、谓词、真理资源 | 提醒汇聚公理可能失败 |
 | arithmetic potentialism | 算术模型扩展 | 后续推广 |
 | strict／loose | 真理承担者条件 | 第一篇不裁决 |
-| convergent／divergent | 是否有共同上界 | 限制全局汇聚叙述 |
+| convergent／divergent | 是否存在共同上界 | 限制全局汇聚叙述 |
 
 ## 2.2 篇幅纪律
 
@@ -135,7 +147,7 @@ M\preceq_F M[G].
 
 本文研究历史—实践层问题：
 
-> 这种模型访问结构如何成为可公开重构、复用、传授和继承的数学操作，并进一步改变围绕 CH 的响应角色、进展标准与后续研究操作？
+> 一种模型访问结构如何成为可公开重构、复用、传授和继承的数学操作，并进一步改变围绕 CH 的响应角色、研究评价和后续操作？
 
 核心区分：
 
@@ -147,7 +159,7 @@ M\preceq_F M[G].
 }
 \]
 
-若该差异只能靠更换术语表达，论文失败。
+若该差异只能靠术语替换表达，论文失败。
 
 ---
 
@@ -175,8 +187,6 @@ D(Q_{CH})=\{CH,\neg CH\}.
 
 ## 3.2 语义问题身份层
 
-定义：
-
 \[
 \boxed{
 Q_t^{sem}(Q_\varphi)=\langle D(Q_\varphi),R_t(Q_\varphi)\rangle
@@ -188,7 +198,7 @@ Q_t^{sem}(Q_\varphi)=\langle D(Q_\varphi),R_t(Q_\varphi)\rangle
 - \(D\)：直接答案核；
 - \(R_t\)：响应角色结构，例如 direct answer、partial answer、metamathematical diagnosis、dissolution、problem splitting。
 
-这一层承担“问题在语义—响应意义上是否被重新个体化”的主张，并直接与 Hamblin、Belnap & Steel、Wiśniewski 及当代 question semantics 对话。
+这一层承担“问题是否在语义—响应意义上被重新个体化”的主张，并与 Hamblin、Belnap & Steel、Wiśniewski 及当代 question semantics 对话。
 
 ## 3.3 研究问题制度层
 
@@ -224,27 +234,37 @@ R_t=\text{响应角色结构},
 E_t=\text{把候选输出归入角色并赋予进展地位的规则}.
 \]
 
-因此 \(R_t\) 与 \(E_t\) 不是两个同类内容坐标。
+## 3.4 三种结论强度
 
-## 3.4 两种结论强度
+### A. 强语义重新个体化
 
-### 强语义重新个体化
-
-若 \(R_t\) 发生不可保守翻译的结构变化，则：
+若 \(R_t\) 发生不可保守翻译的结构变化：
 
 \[
 Q_t^{sem}\not\equiv_c Q_{t+1}^{sem}.
 \]
 
-### 研究问题制度重构
+### B. CH 局部研究制度重构
 
-若背景、方法、评价和操作生成关系发生可继承、非局部的非保守变化，则：
+若围绕 CH 的背景、方法、评价和输出生成关系发生非保守变化：
 
 \[
-Q_t^{research}\not\equiv_c Q_{t+1}^{research}.
+Q_t^{research}(Q_{CH})
+\not\equiv_c
+Q_{t+1}^{research}(Q_{CH}).
 \]
 
-第一篇的**最低必须证明结论**是第二项。第一项是条件性加强，不得在历史证据完成前预先宣布。
+这是第一篇的最低中心结论。
+
+### C. 集合论全局更新制度重构
+
+若新操作跨问题复用、可继承并形成基础设施：
+
+\[
+\Delta\mathfrak U_t\neq0.
+\]
+
+该结论比 B 更强，不能由 CH 局部材料自动推出。
 
 ---
 
@@ -258,6 +278,12 @@ Q_t^{research}\not\equiv_c Q_{t+1}^{research}.
 \tau_{\mathcal O}:\mathcal O_t\to\mathcal O_{t+1},
 \qquad
 \rho_{\mathcal O}:\mathcal O_{t+1}\to\mathcal O_t,
+\]
+
+\[
+\tau_B:B_t\to B_{t+1},
+\qquad
+\rho_B:B_{t+1}\to B_t,
 \]
 
 \[
@@ -286,7 +312,7 @@ Q_t^{research}\not\equiv_c Q_{t+1}^{research}.
 \rho_{\mathcal O}[D]=D.
 \]
 
-C1 的作用是确认问题核连续，不用于证明问题改变。
+C1 确认问题核连续，不用于证明问题改变。
 
 ## 4.3 C2：响应角色保守可译性——语义承重条件
 
@@ -300,7 +326,7 @@ C1 的作用是确认问题核连续，不用于证明问题改变。
 
 反向亦然。
 
-C2 失败的最强见证之一是：
+C2 失败的强见证之一：
 
 \[
 \exists r^*\in R_{t+1}
@@ -310,9 +336,9 @@ C2 失败的最强见证之一是：
 \sigma_R(r)\neq r^*.
 \]
 
-即新制度存在无保守原像的响应角色。
+即存在无保守原像的新响应角色或稳定子类型。
 
-但“\(\sigma_R\) 不满射”只是强充分条件，不是全部非保守性的定义。即使集合论上存在满射，角色内部结构、推论作用或生成关系也可能无法保持。
+但 \(\sigma_R\) 不满射只是强充分条件，不是全部非保守性的唯一定义。
 
 ## 4.4 C3：评价序保持——佐证条件
 
@@ -326,33 +352,45 @@ v_1\preceq_{V_t}v_2
 
 反向亦然。
 
-C3 单独失败不足以证明制度重构，因为普通新结果也可能改变局部证据排序。
+C3 单独失败不足以证明制度重构。
 
 ## 4.5 C4：推论功能保持——佐证条件
 
 候选输出的支持、阻断、问题生成、问题分化和方法迁移功能应由翻译保持。
 
-C4 单独失败不足以证明制度型创新，必须与 C2 或 C5 的结构性变化共同出现。
+C4 单独失败不足以证明制度型创新。
 
-## 4.6 C5：操作—输出生成保持——制度承重条件
+## 4.6 C5-op：背景—操作—输出生成保持
 
-若：
+将生成关系写为：
 
 \[
-m\leadsto_t o,
+(b,m)\leadsto_t o,
+\qquad
+b\in B_t,
+\quad
+m\in M_t,
+\quad
+o\in\mathcal O_t.
 \]
 
-则保守翻译要求：
+保守翻译要求：
 
 \[
 \boxed{
-\tau_M(m)\leadsto_{t+1}\tau_{\mathcal O}(o)
+(b,m)\leadsto_t o
+\Longrightarrow
+\bigl(\tau_B(b),\tau_M(m)\bigr)
+\leadsto_{t+1}
+\tau_{\mathcal O}(o)
 }
 \]
 
 反向亦然。
 
-C5 失败是 forcing 超出“新增一个结果节点”的核心证据：新制度中出现可继承、非局部、可背景化的操作，而旧制度没有保守对应物。
+C5-op 失败只证明：新制度中出现旧背景—方法系统无法保守复制的操作—输出关系。
+
+**C5-op 失败本身不等于制度创新。** 局部技巧、一次性构造和未被继承的方法也可能使 C5-op 失败。
 
 ## 4.7 C6：结构准逆
 
@@ -367,7 +405,7 @@ o\approx_t o'
 - 响应角色；
 - 评价地位；
 - 推论功能；
-- 操作生成轮廓。
+- 背景—操作生成轮廓。
 
 要求：
 
@@ -383,23 +421,23 @@ o\approx_t o'
 \operatorname{id}_{\mathcal O_{t+1}}.
 \]
 
-投稿正文只需写“存在结构准逆”；完整定义可放脚注或附录。
+投稿正文只需写“存在结构准逆”；完整定义放形式附注。
 
 ## 4.8 判据分级
 
 \[
 \boxed{
-\text{C2 承载强语义重新个体化；C5 承载研究制度重构；}
+\text{C2 承载强语义重新个体化；}
+\atop
+\text{C5-op 识别操作新颖性；制度化过滤器决定其是否上升为制度创新；}
 \atop
 \text{C3、C4 只作佐证；C1 确认连续性；C6 控制翻译强度。}
 }
 \]
 
-不得再写“C2—C5 中任意一项失败均同等证明非保守性”。
-
 ---
 
-# 5. 实践状态、局部方法与制度创新
+# 5. 实践状态、制度化过滤器与两种非交换性
 
 ## 5.1 实践状态
 
@@ -412,17 +450,11 @@ o\approx_t o'
 
 ## 5.2 局部方法与全局制度
 
-明确：
-
 \[
 \boxed{
-M_t(Q_\varphi)
-=
-\mathfrak U_t\!\restriction_{Q_\varphi}
+M_t(Q_\varphi)=\mathfrak U_t\!\restriction_{Q_\varphi}
 }
 \]
-
-即 \(M_t\) 是全局更新制度在特定问题上的局部限制。
 
 因此：
 
@@ -432,36 +464,49 @@ M_t(Q_\varphi)
 \Delta\mathfrak U_t\neq0.
 \]
 
-只有当方法变化满足：
+CH 局部方法变化和集合论全局制度变化必须分别证明。
 
-1. 可继承性；
-2. 非局部性；
-3. 背景化潜力；
+## 5.3 制度化过滤器
 
-才上升为制度型创新。
-
-## 5.3 结果型与制度型创新
-
-结果型创新：
+对新操作 \(m^*\)，定义工作判据：
 
 \[
-\Delta\mathcal P_t\neq0,
-\qquad
-\Delta\mathfrak U_t\approx0.
+\operatorname{Inst}(m^*)
+:=
+H(m^*)\land N(m^*)\land S(m^*),
 \]
 
-制度型创新：
+其中：
+
+- \(H\) — **Heritable／可继承**：可由其他研究者公开重构、学习和复用；
+- \(N\) — **Non-local／非局部**：影响多个问题、模型族或证明任务，而非单一步骤；
+- \(S\) — **Scaffold-forming／脚手架形成**：进入后续方法链、教材训练、标准语言、工具库或研究基础设施。
+
+不使用任意打分或“满足若干项即成立”的门槛；三项均需独立证据。
+
+操作成为制度型创新的工作判据：
 
 \[
 \boxed{
-h_t\text{ is regime-innovative}
-\iff
-\Delta\mathfrak U_t\neq0}
+\operatorname{RegimeInnovation}(m^*)
+:=
+\neg C5_{op}(m^*)
+\land
+\operatorname{Inst}(m^*)
+}
 \]
 
-并满足上述三项范围约束。
+若证据只支持 \(\neg C5_{op}\) 而不支持 \(\operatorname{Inst}\)，只能称为局部技术创新。
 
-## 5.4 两种非交换性
+## 5.4 结果型、技术型与制度型创新
+
+| 类型 | 新结果 | 新操作 | 制度化过滤器 | 结论 |
+|---|---:|---:|---:|---|
+| 结果型创新 | 是 | 否 | 不适用 | 景观增加结果节点，制度保持 |
+| 局部技术创新 | 可有 | 是 | 失败 | 方法变化，但不形成全局制度 |
+| 制度型创新 | 是／可有 | 是 | 通过 | 支持 \(\Delta\mathfrak U_t\neq0\) |
+
+## 5.5 两种非交换性
 
 | 类型 | 形式 | 作用对象 |
 |---|---|---|
@@ -471,9 +516,9 @@ h_t\text{ is regime-innovative}
 最小示例：
 
 - 模态问题：先作高度扩展再作宽度扩展，是否到达与反向操作同类的世界？
-- 历史问题：forcing 尚未制度化时，forcing iteration 这一更新操作可能尚无定义；forcing 形成后才进入 \(\mathfrak U_t\)。
+- 历史问题：forcing 尚未制度化时，forcing iteration 可能尚不属于可用更新操作；forcing 形成后才进入 \(\mathfrak U_t\)。
 
-二者类型不同，不能相互推出。历史非交换性只是强签名，不是制度创新的定义。
+正文保留一段最小区分；完整公式与例子放形式附注。
 
 ---
 
@@ -513,9 +558,7 @@ M\models\Diamond_F\varphi
 
 1. \(R_F\) 或等价扩展关系严格定义；
 2. forcing 成为可继承操作；
-3. 该操作改变 \(\mathfrak U_t\) 与 \(Q_t^{research}\)。
-
-第一篇无须引入额外 forcing-poset 范畴。
+3. 该操作改变 CH 局部研究制度，且在更强版本中改变 \(\mathfrak U_t\)。
 
 ## 6.2 可达景观
 
@@ -536,83 +579,141 @@ c_t(p)=
 
 ---
 
-# 7. 主案例与标定案例
+# 7. 四阶段主案例与双控制标定
 
-## 7.1 forcing 主案例的最低结论
+## 7.1 历史审计不能再采用简单“forcing 前／后”二分
 
-论文必须证明：
+必须分成四个阶段：
+
+1. **前 Gödel 阶段**：CH 的既有目标、背景与响应角色；
+2. **Gödel 阶段**：构造宇宙、相对一致性及其进展地位；
+3. **Cohen 事件阶段**：forcing 操作与反向独立性结果出现；
+4. **forcing 制度化阶段**：迭代、保持技术、forcing axioms、generic absoluteness、跨问题应用、教材与训练基础设施。
+
+论文真正需要证明的不是“Cohen 前没有独立性”，而是：
 
 \[
 \boxed{
-Q_{pre}^{research}(Q_{CH})
-\not\equiv_c
-Q_{post}^{research}(Q_{CH})
+\text{Cohen 及其后的 forcing 实践，相对于 Gödel 阶段，}
+\atop
+\text{增加了哪些不可保守还原、可继承并跨问题背景化的更新能力？}
 }
 \]
 
-主要承重于 C5：forcing 建立旧制度中没有保守对应物的可继承模型扩展操作，并改变后续独立性证明、公理评估、模型比较和问题生成。
+## 7.2 CH 局部研究制度主张
 
-## 7.2 强语义重新个体化的条件性结论
-
-只有当历史材料支持 C2 失败，才写：
+最低中心结论：
 
 \[
-Q_{pre}^{sem}(Q_{CH})\not\equiv_c Q_{post}^{sem}(Q_{CH}).
+\boxed{
+Q_{Gödel}^{research}(Q_{CH})
+\not\equiv_c
+Q_{institutionalized\ forcing}^{research}(Q_{CH})
+}
 \]
 
-可接受的证据包括：
+主要证据：背景—操作—输出关系变化，以及 forcing 对 CH 的模型比较、公理评估、问题分化和进展标准的持续影响。
 
-- forcing 后形成旧角色结构中无保守原像的新响应角色或稳定子类型；
-- 原有角色虽可集合映射，但其推论功能与问题生成结构不能保守保持。
+## 7.3 集合论全局更新制度主张
 
-不得简单写“独立性角色在 forcing 前不存在”。Gödel 的相对一致性工作与更早逻辑史必须被纳入比较。
+更强结论：
 
-## 7.3 forcing 前后审计
+\[
+\boxed{
+\Delta\mathfrak U_t\neq0
+}
+\]
 
-| 条件 | forcing 前 | forcing 后 | 预期 | 证据 |
-|---|---|---|---|---|
-| C1 直接答案 | \(CH,\neg CH\) | \(CH,\neg CH\) | 保持 |  |
-| C2 响应角色结构 |  |  | 待历史审计 |  |
-| C3 评价次序 |  |  | 佐证 |  |
-| C4 推论功能 |  |  | 佐证 |  |
-| C5 操作生成 | 无 Cohen forcing 对应操作 | 可继承 forcing 操作 | 预期失败 |  |
-| C6 结构准逆 |  |  | 由 C2/C5 结果决定 |  |
+必须使用超出 CH 的证据：
 
-## 7.4 保守标定案例——强制要求
+- forcing 在多个独立性问题中的复用；
+- forcing iteration 与 preservation techniques；
+- forcing axioms；
+- generic absoluteness；
+- 标准教材、训练、术语和工具基础设施；
+- 新操作进一步生成后续操作。
 
-必须选择一个**结果型创新对照案例**，证明判据并非对所有历史变化都报阳性。
+若证据仅限 CH，不得声称已证明全局 \(\mathfrak U_t\) 重构。
 
-对照案例要求：
+## 7.4 强语义重新个体化的条件性结论
 
-1. 位于成熟且稳定的方法制度内；
-2. 是重要新结果，但没有新操作类型；
-3. 没有明显改变响应角色结构；
-4. 没有形成新的可继承、非局部脚手架；
-5. 有足够历史与技术材料支持保守翻译。
+只有当 Cohen／制度化阶段相对于 Gödel 阶段支持 C2 失败，才写：
+
+\[
+Q_{Gödel}^{sem}(Q_{CH})
+\not\equiv_c
+Q_{institutionalized\ forcing}^{sem}(Q_{CH}).
+\]
+
+不得简单写“独立性角色在 forcing 前不存在”。候选增量应具体到：
+
+- 双侧独立性作为稳定响应角色或子类型；
+- 泛型扩展分析对响应角色推论功能的改变；
+- 从独立性结果到公理选择、模型生态和新原则评估的稳定问题生成结构。
+
+若这些都可保守还原到 Gödel 阶段，强语义主张撤回。
+
+## 7.5 控制组 A：结果型创新
+
+要求：
+
+1. 位于成熟稳定的方法制度内；
+2. 是重要新结果；
+3. 没有新操作类型；
+4. 不改变响应角色结构；
+5. 不改变更新制度。
+
+预期：C1、C2、C5-op 均保持。
+
+## 7.6 控制组 B：局部技术创新
+
+要求：
+
+1. 确有旧方法库中无保守原像的新技术；
+2. C5-op 名义上失败；
+3. 技术只服务局部问题或短期任务；
+4. 没有跨问题继承；
+5. 没有形成训练、教材或后续方法脚手架。
 
 预期：
 
 \[
-Q_t^{sem}\equiv_c Q_{t+1}^{sem},
-\qquad
-Q_t^{research}\equiv_c Q_{t+1}^{research}
+\neg C5_{op}(m^*)
+\quad\text{但}\quad
+\neg\operatorname{Inst}(m^*),
 \]
 
-至少在 C1、C2、C5 上保持。
+因此不判为制度创新。
 
-策略阶段不凭印象指定具体定理。应在 forcing 技术史档案完成后，从成熟 forcing 实践或相近集合论领域中筛选一个公认的结果型创新。
+策略阶段不凭印象指定两个控制案例。必须在技术史档案完成后筛选。
 
-## 7.5 标定矩阵
+## 7.7 三案例标定矩阵
 
-| 案例 | C2 | C5 | 结论 |
-|---|---:|---:|---|
-| forcing 制度形成 | 待审计 | 预期失败 | 至少研究制度重构 |
-| 结果型对照案例 | 预期保持 | 预期保持 | 保守变化 |
-| 可选边界案例 | 部分变化 | 部分变化 | 检验阈值与解释范围 |
+| 案例 | 新操作 | C5-op | \(H\) | \(N\) | \(S\) | C2 | 结论 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| 控制 A：结果型创新 | 否 | 保持 | — | — | — | 保持 | 保守变化 |
+| 控制 B：局部技术创新 | 是 | 失败 | 低／否 | 否 | 否 | 通常保持 | 技术变化，非制度创新 |
+| forcing 制度化 | 是 | 失败 | 是 | 是 | 是 | 待审计 | 至少候选制度创新 |
 
-没有保守标定案例，不进入投稿稿阶段。
+没有两个控制案例，不进入投稿稿阶段。
 
-## 7.6 技术准确性
+## 7.8 四阶段审计表
+
+| 条件 | 前 Gödel | Gödel 阶段 | Cohen 阶段 | 制度化阶段 | 证据 |
+|---|---|---|---|---|---|
+| C1 直接答案 | \(CH,\neg CH\) | 同 | 同 | 同 |  |
+| C2 响应角色 |  | 相对一致性等 |  |  |  |
+| \(B_t\) 背景理论 |  |  |  |  |  |
+| C3 评价次序 |  |  |  |  |  |
+| C4 推论功能 |  |  |  |  |  |
+| C5-op 生成关系 |  | inner-model 等 | forcing 出现 | 迭代与跨问题复用 |  |
+| \(H\) 可继承性 |  |  | 初始 | 稳定 |  |
+| \(N\) 非局部性 |  |  | 候选 | 跨问题证据 |  |
+| \(S\) 脚手架形成 |  |  | 尚待观察 | 教材、训练、工具 |  |
+| CH 局部制度 |  |  |  |  |  |
+| 全局 \(\mathfrak U_t\) |  |  |  |  |  |
+
+## 7.9 技术准确性
 
 正文必须：
 
@@ -624,11 +725,11 @@ Q_t^{research}\equiv_c Q_{t+1}^{research}
 6. 不把方法多样性直接推成多宇宙本体论；
 7. 不把某一 forcing 模态逻辑推广到全部潜在主义。
 
-## 7.7 宇宙观／多宇宙观中立
+## 7.10 宇宙观／多宇宙观中立
 
-多宇宙论者重视 forcing extensions；宇宙论者也使用 generic absoluteness、\(\Omega\)-logic、内模型和新公理分析。两方真值观不同，但均可支持研究制度层的变化。
+多宇宙论者重视 forcing extensions；宇宙论者也使用 generic absoluteness、\(\Omega\)-logic、内模型和新公理分析。两方真值观不同，但均可能支持研究制度层变化。
 
-强语义重新个体化是否成立，不由宇宙观／多宇宙观立场预先决定，而由 C2 的角色结构审计决定。
+强语义重新个体化只由 C2 审计决定；全局更新制度只由制度化与跨问题证据决定。
 
 ---
 
@@ -666,11 +767,9 @@ Q_t^{research}\equiv_c Q_{t+1}^{research}
 
 ## 9.1 非独有部分
 
-数学有历史、路径依赖、迟滞、问题制度变化和 \(\Delta\mathfrak U_t\neq0\) 均非 SRT 独有。
+数学有历史、路径依赖、迟滞、研究制度变化和 \(\Delta\mathfrak U_t\neq0\) 均非 SRT 独有。
 
 ## 9.2 P3 候选增量
-
-SRT 的可区别候选增量：
 
 > **选择性二阶写回：某些成功显现不仅被记录，还以方向不对称的方式降低兼容路径成本，并成为未来更新的背景脚手架。**
 
@@ -698,11 +797,11 @@ SRT 的可区别候选增量：
 
 ### Level A：预测获得支持
 
-保留约 650—750词 SRT 节，主张局部方向性二阶写回具有可区别的 P3 解释力。
+保留约 550—650词 SRT 节，主张局部方向性二阶写回具有可区别的 P3 解释力。
 
 ### Level B：预测无显著差异
 
-删除方向性预测，将 SRT 节缩至 300—400词，仅保留：
+删除方向性预测，将 SRT 节缩至 250—350词，仅保留：
 
 \[
 L_1^{math}\to L_2^{math}
@@ -712,9 +811,9 @@ L_1^{math}\to L_2^{math}
 
 ### Level C：解释映射也无额外内容
 
-从投稿正文删除 SRT 独立章节，只在结尾或后续研究中注明该领域映射尚未成熟。
+从投稿正文删除 SRT 独立章节，只在结尾或后续研究中注明领域映射尚未成熟。
 
-回退不能影响第3—8节的独立成立。
+回退不能影响第3—8节独立成立。
 
 ## 9.5 后置内容
 
@@ -724,93 +823,159 @@ L_1^{math}\to L_2^{math}
 
 # 10. 完整论文大纲与字数
 
-目标正文约 **9,150词**；含形式附注上限 **9,800词**。
+目标正文约 **9,200词**；含形式附注上限 **9,850词**。
 
 | 节 | 词数 | 任务 |
 |---|---:|---|
-| 1. Introduction | 700 | 两层问题结构、forcing 主结论、条件性强结论 |
+| 1. Introduction | 700 | 三层结论强度、四阶段案例、强弱版本 |
 | 2. Forcing Potentialism and the Missing Historical-Practical Level | 1,050 | 最近邻理论，重点 forcing potentialism |
-| 3. Semantic Question Identity and Research-Problem Regimes | 1,250 | \(D,R_t\) 身份层；\(B,M,E\) 生成层；C2/C5 |
-| 4. Forcing and the Reconstitution of the CH Research Regime | 2,600 | 主案例、技术史、C5、条件性 C2 |
-| 5. Calibration and Formal Constraint | 800 | 保守对照、形式约束、一致性强度 |
-| 6. The SRT Bridge | 650 | P3预测与三级回退 |
-| 7. Objections and Failure Conditions | 1,450 | 最强反对意见 |
-| 8. Implications | 400 | 开放性、表示中立、后续研究 |
-| 9. Conclusion | 250 | 最低结论与条件性加强 |
-| **正文合计** | **9,150** |  |
+| 3. Semantic Question Identity and Research-Problem Regimes | 1,200 | \(D,R_t\) 身份层；\(B,M,E\) 研究制度；C2 与 C5-op |
+| 4. From Gödel to Institutionalized Forcing | 2,750 | 四阶段历史、CH 局部制度、全局 \(\mathfrak U_t\)、制度化过滤器 |
+| 5. Calibration and Formal Constraint | 900 | 控制 A、控制 B、形式约束、一致性强度 |
+| 6. The SRT Bridge | 600 | P3 预测与三级回退 |
+| 7. Objections and Failure Conditions | 1,450 | 四组反对意见 |
+| 8. Implications | 350 | 开放性、表示中立、后续研究 |
+| 9. Conclusion | 200 | 最低结论、全局结论与条件性加强 |
+| **正文合计** | **9,200** |  |
 
-形式附注或附录最多 500—650词，用于完整 C1—C6 与 \(\approx_t\) 定义。
+形式附注或附录最多 500—650词，用于：
 
-正文第三节只详细呈现 C1、C2、C5；C3/C4/C6 简述并指向形式附注。
+- 完整 C1—C6；
+- \(\approx_t\) 定义；
+- 两种非交换性的完整并排示例。
 
----
+正文第三节只详细呈现 C1、C2、C5-op；C3、C4、C6 指向形式附注。
 
-# 11. 必须处理的反对意见
+## 10.1 第4节内部结构
 
-1. 固定背景发现论可接受全部变化；
-2. 这只是数学实践哲学；
-3. 直接答案没变，所以问题没变；
-4. 研究问题制度只是语境，不属于问题身份；
-5. 任何方法都改变制度；
-6. C2 角色变化没有历史证据；
-7. 判据对所有历史变化都报阳性；
-8. 宇宙论者不接受重新个体化；
-9. 一致性层级更支持柏拉图主义；
-10. 这只是 forcing potentialism 的实践注释；
-11. 模态装置可被非模态化；
-12. 两种非交换性被混淆；
-13. 语义引力预设全局汇聚；
-14. SRT 只是后加标签。
-
-关键回答纪律：
-
-- Objection 3：承认 \(D\) 连续；强语义变化只由 C2 支撑；
-- Objection 4：区分语义身份层与研究制度层，不用被争议的实践变量循环证明语义身份；
-- Objection 5：要求 C5 具有可继承性、非局部性、背景化潜力；
-- Objection 7：必须使用保守标定案例；
-- Objection 10：对象层 accessibility 与实践层 reachability 分开；
-- Objection 14：执行三级回退。
+1. Pre-Gödel CH regime；
+2. Gödel's relative-consistency and inner-model intervention；
+3. Cohen's forcing event；
+4. Institutionalization: iteration, preservation, axioms, absoluteness, training；
+5. Local reconstruction of the CH research regime；
+6. Global reconstruction of the set-theoretic update regime；
+7. Conditional C2 verdict。
 
 ---
 
-# 12. 写作顺序
+# 11. 四组反对意见
+
+总预算 1,450词，不再按十四个短答平均分配。
+
+## A. 问题身份与历史构成
+
+合并处理：
+
+- 直接答案没变，所以问题没变；
+- 研究问题制度只是语境；
+- C2 没有历史证据；
+- 宇宙论者不接受重新个体化。
+
+回答纪律：承认 \(D\) 连续；只以 C2 支持强语义变化；以 CH 局部制度材料支持较弱但独立的研究制度主张。
+
+## B. 制度创新与判据校准
+
+合并处理：
+
+- 任何新方法都改变制度；
+- C5-op 对所有新技术报阳性；
+- 判据是否对所有历史变化报阳性。
+
+回答纪律：用 \(\operatorname{Inst}=H\land N\land S\) 和两个控制案例区分结果、局部技术与制度创新。
+
+## C. 潜在主义、模态与本体论
+
+合并处理：
+
+- 固定背景发现论可接受全部变化；
+- 这只是数学实践哲学；
+- 这只是 forcing potentialism 的实践注释；
+- 模态装置可被非模态化；
+- 两种非交换性被混淆；
+- 一致性层级更支持柏拉图主义。
+
+回答纪律：区分对象层 accessibility 与历史制度化；保持表示中立；承认形式约束不裁决约束来源。
+
+## D. SRT 增量
+
+合并处理：
+
+- 语义引力预设全局汇聚；
+- SRT 只是后加标签。
+
+回答纪律：只保留局部多吸引子预测；严格执行 Level A／B／C 回退。
+
+---
+
+# 12. 写作与证据建设顺序
 
 1. 建立 forcing／width potentialism 最近邻矩阵；
 2. 核查 question semantics 与 inferential erotetics，仅确认 \(D,R_t\) 的外部锚点；
-3. 建立 C2 角色结构审计；
-4. 建立 C5 操作—输出与制度写回审计；
-5. 筛选并核查保守结果型标定案例；
-6. 建立 forcing 技术—历史档案；
-7. 先写第3、4、5、7节；
-8. 最后写 SRT、摘要、引言和题目。
+3. 建立前 Gödel／Gödel／Cohen／制度化四阶段技术—历史档案；
+4. 建立 \(B_t\) 背景理论变化档案；
+5. 建立 C5-op 背景—操作—输出审计；
+6. 建立 \(H,N,S\) 制度化证据档案，尤其是跨问题复用、教材、训练和后续方法链；
+7. 筛选并核查控制 A；
+8. 筛选并核查控制 B；
+9. 最后进行 C2 响应角色结构审计；
+10. 先写第3、4、5、7节；
+11. 最后选择强／弱题目和摘要，再写 SRT、引言与结论。
 
-若 C5 无法证明，立即停止论文。  
-若 C5 可证明但 C2 不可证明，保留“研究制度重构”，删除或弱化标题中的“problem change”。
+## 停止与降级规则
+
+- C5-op 无法证明：停止论文；
+- C5-op 可证明但 \(H,N,S\) 不成立：不得称制度创新；
+- CH 局部制度可证明、全局 \(\mathfrak U_t\) 不可证明：删除全局主张，保留局部论文；
+- C2 不可证明：使用弱题目与弱摘要；
+- 两个控制案例无法区分：停止并重构判据；
+- SRT 预测失败：执行 Level B 或 C。
 
 ---
 
 # 13. 核心审计表
 
-## 13.1 forcing 主案例
+## 13.1 四阶段主案例
 
-| 条件 | forcing 前 | forcing 后 | 预期 | 证据 |
-|---|---|---|---|---|
-| C1 直接答案 | \(CH,\neg CH\) | \(CH,\neg CH\) | 保持 |  |
-| C2 响应角色 |  |  | 条件性失败 |  |
-| C3 评价次序 |  |  | 佐证 |  |
-| C4 推论功能 |  |  | 佐证 |  |
-| C5 操作生成 | 无 Cohen forcing 对应操作 | 可继承 forcing 操作 | 预期失败 |  |
-| C6 结构准逆 |  |  | 由 C2/C5 决定 |  |
+| 条件 | 前 Gödel | Gödel | Cohen | 制度化 forcing | 证据 |
+|---|---|---|---|---|---|
+| C1 直接答案 |  |  |  |  |  |
+| C2 响应角色 |  |  |  |  |  |
+| \(B_t\) 背景理论 |  |  |  |  |  |
+| C3 评价次序 |  |  |  |  |  |
+| C4 推论功能 |  |  |  |  |  |
+| C5-op |  |  |  |  |  |
+| \(H\) |  |  |  |  |  |
+| \(N\) |  |  |  |  |  |
+| \(S\) |  |  |  |  |  |
+| CH 局部制度 |  |  |  |  |  |
+| 全局 \(\mathfrak U_t\) |  |  |  |  |  |
 
-## 13.2 保守标定案例
+## 13.2 控制 A：结果型创新
 
 | 条件 | 变化前 | 变化后 | 预期 | 证据 |
 |---|---|---|---|---|
 | C1 |  |  | 保持 |  |
 | C2 |  |  | 保持 |  |
-| C5 |  |  | 保持 |  |
+| C5-op |  |  | 保持 |  |
 | 结果节点 | 无 | 新结果 | 改变 |  |
 | 更新制度 | 稳定 | 稳定 | 保持 |  |
+
+## 13.3 控制 B：局部技术创新
+
+| 条件 | 变化前 | 变化后 | 预期 | 证据 |
+|---|---|---|---|---|
+| C5-op | 旧技术库 | 新局部技术 | 失败 |  |
+| \(H\) |  |  | 不足 |  |
+| \(N\) |  |  | 不足 |  |
+| \(S\) |  |  | 不足 |  |
+| 全局 \(\mathfrak U_t\) | 稳定 | 稳定 | 保持 |  |
+
+## 13.4 局部／全局证据分离
+
+| 主张 | CH 内证据 | 跨问题证据 | 基础设施证据 | 结论 |
+|---|---:|---:|---:|---|
+| CH 研究制度重构 | 必须 | 可选 | 可选 | 局部中心主张 |
+| 集合论更新制度重构 | 不足 | 必须 | 必须 | 全局加强主张 |
 
 ---
 
@@ -819,9 +984,10 @@ L_1^{math}\to L_2^{math}
 | 主张 | 级别 | 所需证据 | 撤回／缩减条件 |
 |---|---|---|---|
 | 问题核／研究制度可区分 | 哲学框架 | question semantics＋实践分析 | 无法保持类型区分 |
-| forcing 重构 CH 研究制度 | 中心主张 | C5＋技术史＋继承证据 | 仅增加结果节点 |
-| forcing 强语义重新个体化 CH | 条件性主张 | C2 无保守角色翻译 | C2 可保持或证据不足 |
-| 判据具有区分力 | 方法主张 | 保守标定案例 | 所有历史变化均报阳性 |
+| forcing 重构 CH 局部研究制度 | 中心主张 | C5-op＋CH 技术史＋研究评价变化 | 仅增加结果节点或短期技巧 |
+| forcing 重构集合论全局更新制度 | 加强主张 | \(H,N,S\)＋跨问题复用＋基础设施 | 证据仅限 CH 或局部技术 |
+| forcing 强语义重新个体化 CH | 条件性主张 | C2 相对 Gödel 阶段无保守翻译 | C2 可保持或证据不足 |
+| 判据具有区分力 | 方法主张 | 控制 A＋控制 B | 不能区分三类创新 |
 | 双层可达性可区分 | 定位主张 | 潜在主义与历史材料 | 两层可完全互定义 |
 | 表示中立 | 方法主张 | \(R_F(M,N)\) 重写 | 核心推论依赖特定模态语义 |
 | 一致性强度提供非任意约束 | 支撑主张 | 逻辑文献 | 不得据此裁决本体论 |
@@ -837,12 +1003,15 @@ L_1^{math}\to L_2^{math}
 - forcing 改变 CH 的直接答案核；
 - 独立性是 CH 真值的直接回答；
 - “独立性”作为响应角色在 forcing 前完全不存在；
+- 把前 Gödel、Gödel 与 Cohen 之前全部压成一个“forcing 前”栏；
 - \(\sigma_R\) 非满射是所有非保守变化的唯一定义；
 - C3 或 C4 单独失败足以证明制度创新；
 - C2、C3 在不同集合上直接用等号或同一预序比较；
-- \(M_t\) 与 \(\mathfrak U_t\) 无类型关系；
-- 任何新定理都是制度创新；
-- 判据无需保守标定案例；
+- 定义 \(B_t\) 却不提供背景翻译；
+- 新操作出现自动等于制度创新；
+- C5-op 失败自动推出 \(\Delta\mathfrak U_t\neq0\)；
+- \(\Delta M_t(Q)\neq0\) 自动推出全局 \(\Delta\mathfrak U_t\neq0\)；
+- 只用一个“无新操作”的控制案例证明判据有区分力；
 - C6 的“等价于恒等”无需定义 \(\approx_t\)；
 - 潜在主义没有研究可达关系；
 - accessibility 等同 reachability；
@@ -856,31 +1025,52 @@ L_1^{math}\to L_2^{math}
 
 ---
 
-# 16. 文献策略
+# 16. 文献与证据策略
 
 优先建立：
 
 1. Hamblin、Belnap & Steel、Wiśniewski及当代 question semantics；
-2. Gödel、Cohen及 forcing 技术史；
-3. Hamkins–Linnebo、Brauer 等 forcing／width potentialism；
-4. 2026年 *Philosophia Mathematica* 潜在主义专刊；
-5. Sutto 分类学；
-6. Berry、Linnebo 的模态机制与非模态化；
-7. height／class／divergent potentialism；
-8. universe／multiverse、generic absoluteness、新公理；
-9. 数学实践哲学；
-10. 一致性强度与自然理论层级；
-11. 数学方法创新、教材史、证明库和知识基础设施；
-12. 用于保守标定案例的技术史材料。
+2. 前 Gödel CH 研究史；
+3. Gödel 的构造宇宙、相对一致性及其当时评价；
+4. Cohen 的 forcing 与独立性工作；
+5. forcing iteration、preservation、forcing axioms、generic absoluteness；
+6. forcing 的教材化、训练、标准术语和跨问题应用；
+7. Hamkins–Linnebo、Brauer 等 forcing／width potentialism；
+8. 2026年 *Philosophia Mathematica* 潜在主义专刊；
+9. Sutto 分类学；
+10. Berry、Linnebo 的模态机制与非模态化；
+11. height／class／divergent potentialism；
+12. universe／multiverse 与新公理；
+13. 数学实践哲学；
+14. 一致性强度与自然理论层级；
+15. 控制 A 的技术史材料；
+16. 控制 B 的技术史材料。
 
 问题语义学只直接背书 \(D,R_t\) 层。  
-\(B_t,M_t,E_t\) 的构成作用必须由数学实践与历史材料独立论证。
+\(B_t,M_t,E_t\) 的构成作用必须由数学实践与历史材料独立论证。  
+\(\mathfrak U_t\) 的全局变化必须有跨问题和基础设施证据。
 
 ---
 
-# 17. 工作摘要骨架 v0.6
+# 17. 摘要策略
 
-> The continuity of a mathematical sentence does not guarantee the continuity of the research regime organized around it. This paper distinguishes a semantic question layer, consisting of a direct-answer core and a structure of response roles, from a broader research-problem regime containing background theories, available methods, and evaluative practices. The continuum-hypothesis question existed before Cohen, and forcing did not alter its direct yes-or-no answer core. The paper's primary claim is that forcing non-conservatively reconstructed the CH research regime and the update regime of set-theoretic practice by introducing an inheritable, non-local model-extension operation with no conservative predecessor in the earlier methodological repertoire. A stronger claim—that the semantic response-role structure of the CH problem was itself re-individuated—is treated conditionally and tested by whether a structure-preserving role translation exists between pre- and post-forcing regimes. The framework is calibrated against a result innovation expected to preserve both response roles and the update regime. Forcing accessibility is formulated both modally and through an ordinary binary relation among models, leaving the historical-institutional argument representation-neutral. A final P3 bridge to Selective Reality Theory is retained only to the extent that a local, defeasible prediction of asymmetric cost reduction for scaffold-compatible paths survives empirical and historical comparison.
+## 17.1 内部论证摘要
+
+当前长摘要只用于写作导航，不作为投稿摘要。投稿前依据 C2 和全局 \(\mathfrak U_t\) 的审计结果，从下列版本中选择。
+
+## 17.2 弱版投稿摘要（100词以内）
+
+> This paper distinguishes the semantic identity of a mathematical question from the broader research regime organized around it. The continuum-hypothesis question and its direct answers predated forcing. Comparing pre-Gödel, Gödel, Cohen, and institutionalized-forcing stages, I argue that forcing introduced a reusable model-extension operation that non-conservatively transformed the CH research regime and, if cross-problem inheritance is established, the update regime of set theory. The analysis separates object-level forcing accessibility from its historical institutionalization and calibrates the criterion against both result innovations and local techniques that failed to become mathematical infrastructure.
+
+适用条件：CH 局部制度成立；C2 不足或保持。全局 \(\mathfrak U_t\) 若证据不足，删除摘要中相关分句。
+
+## 17.3 强版投稿摘要（100词以内）
+
+> The continuity of the continuum-hypothesis sentence does not entail continuity of the research problem organized around it. I distinguish a stable direct-answer core from a historically variable structure of response roles and research operations. A four-stage comparison—pre-Gödel, Gödel, Cohen, and institutionalized forcing—argues that forcing introduced a reusable model-extension operation and a response structure not conservatively recoverable from the earlier regime. The transformation affected CH research and, subject to cross-problem institutionalization evidence, the wider update regime of set theory. The analysis is representation-neutral and calibrated against result and local-technical innovations.
+
+适用条件：C2 与 CH 局部制度均成立。全局 \(\mathfrak U_t\) 仍按证据决定是否保留。
+
+摘要中不加入 \(\kappa_0\)、曲率或未经支持的 SRT 强主张。
 
 ---
 
@@ -888,33 +1078,43 @@ L_1^{math}\to L_2^{math}
 
 - [ ] 已建立 \(Q^{sem}=\langle D,R_t\rangle\) 与 \(Q^{research}\) 的双层结构；
 - [ ] C2 使用 \(\sigma_R\)，C3 使用 \(\sigma_V\)；
-- [ ] C2 与 C5 被明确设为不同层次的承重条件；
-- [ ] C3、C4 仅作佐证；
+- [ ] \(B_t\) 使用 \(\tau_B,\rho_B\)；
+- [ ] C5-op 使用背景—操作—输出关系；
+- [ ] 已明确 C5-op 失败不等于制度创新；
+- [ ] \(H,N,S\) 均有独立证据；
 - [ ] C6 使用明确的 \(\approx_t\)；
 - [ ] \(M_t=\mathfrak U_t|_{Q_\varphi}\) 已声明；
 - [ ] 没有扩大 CH 的直接答案核；
 - [ ] 没有声称 forcing 前完全没有独立性响应；
-- [ ] 已完成 forcing 主案例的 C2/C5 审计；
-- [ ] 已选择并验证保守标定案例；
+- [ ] 已完成四阶段主案例审计；
+- [ ] 已选择并验证控制 A；
+- [ ] 已选择并验证控制 B；
+- [ ] 已分开证明 CH 局部制度与全局 \(\mathfrak U_t\)；
 - [ ] 已用 \(R_F(M,N)\) 完成非模态重述；
 - [ ] 最近邻节主要讨论 forcing potentialism；
-- [ ] 已证明 forcing 不只是新增知识节点；
+- [ ] 已证明 forcing 不只是新增知识节点或局部技巧；
 - [ ] universe／multiverse 中立性有跨立场证据；
 - [ ] 一致性强度只作约束性证据；
 - [ ] SRT 已预注册三级回退；
-- [ ] 正文不超过 9,800词；
+- [ ] 已选择强版或弱版题目与摘要；
+- [ ] 投稿摘要不超过100词；
+- [ ] 正文不超过9,850词；
 - [ ] 删除 SRT 后论文仍成立。
 
 ---
 
-# 19. 最终执行指令
+# 19. 最终执行指令与冻结
 
 1. **CH 问题在 Cohen 之前已经存在，其直接答案核保持不变。**
-2. **forcing 至少重构了 CH 的研究问题制度与集合论更新制度。**
-3. **强语义重新个体化只能由 C2 的角色结构证据支持，不能由方法或评价变化循环证明。**
-4. **C5 是 forcing 作为制度型创新的主要承重条件。**
-5. **判据必须同时通过 forcing 主案例与一个保守结果型标定案例。**
-6. **SRT 预测失败时必须降级或从正文删除。**
+2. **历史比较必须分为前 Gödel、Gödel、Cohen 与 forcing 制度化四阶段。**
+3. **C5-op 只证明新操作；只有 \(H,N,S\) 同时成立，才支持制度创新。**
+4. **CH 局部研究制度与集合论全局更新制度必须分别证明。**
+5. **强语义重新个体化只能由 C2 相对 Gödel 阶段的角色结构证据支持。**
+6. **判据必须通过控制 A、控制 B 与 forcing 主案例三重标定。**
+7. **SRT 预测失败时必须降级或从正文删除。**
+8. **v0.7 后冻结策略，不再用新符号替代历史证据。**
 
-若不能证明第2、4、5句，不进入投稿稿阶段。  
-若第2、4、5句成立但第3句证据不足，则使用较弱题目并删除“CH 问题本身发生强改变”的表述。
+若不能证明第3、4、6句，不进入投稿稿阶段。  
+若 CH 局部制度成立但全局 \(\mathfrak U_t\) 不成立，删除全局主张。  
+若 C2 证据不足，使用弱题目与弱摘要。  
+若两个控制案例无法区分三类创新，停止并重构判据。
