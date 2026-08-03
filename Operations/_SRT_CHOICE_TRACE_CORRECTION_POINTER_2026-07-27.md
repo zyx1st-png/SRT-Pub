@@ -2,7 +2,8 @@
 id: SRT-CHOICE-TRACE-CORRECTION-POINTER-20260727
 type: trace_ledger_correction_pointer
 tags: [ChoiceMap, Trace, Correction, Ghost, YinYang, ChoiceAbsolutization, MetaChoice, Operations]
-status: active_correction_pointer_v0
+status: active
+pointer_version: v0
 layer: meta
 epistemic_layer: os
 claim_mode: navigation

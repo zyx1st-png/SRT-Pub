@@ -2,7 +2,8 @@
 id: SRT-CHOICEMAP-PROXY-OBJECT-RESIDUAL-FRICTION-20260728
 type: choice_trace_continuation_card
 tags: [SourceIntuition, ChoiceMap, Object, Friction, Coordination, CoarseGraining, Normalization, Categorization, Anchoring, Reselectability, ChoiceAbsolutization]
-status: author_confirmed_source_intuition_v0
+status: active
+record_stage: author_confirmed_source_intuition_v0
 layer: source_intuition
 epistemic_layer: os
 claim_mode: intuition_record

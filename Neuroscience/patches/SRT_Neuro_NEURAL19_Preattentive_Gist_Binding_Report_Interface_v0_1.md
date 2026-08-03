@@ -5,7 +5,7 @@ source_ids:
 domain: philosophy_of_cognitive_science_visual_attention
 claim_level: bridge
 canonical_status: domain_bridge_patch_added
-status: patch
+status: active
 target_documents:
   - "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md"
   - "Neuroscience/SRT_Neuro_Predictions_Table.md"

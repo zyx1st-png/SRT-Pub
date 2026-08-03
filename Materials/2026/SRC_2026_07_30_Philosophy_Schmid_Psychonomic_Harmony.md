@@ -1,7 +1,8 @@
 ---
 id: SRC-2026-07-30-PHILOSOPHY-SCHMID-PSYCHONOMIC-HARMONY
 type: material_source_card
-status: active_v1_fulltext_author_draft
+status: active
+source_stage: active_v1_fulltext_author_draft
 layer: operations
 epistemic_layer: os
 claim_mode: evidence

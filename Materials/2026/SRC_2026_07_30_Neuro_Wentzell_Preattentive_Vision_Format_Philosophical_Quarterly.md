@@ -41,7 +41,7 @@ tags:
   - attention
   - philosophy_of_perception
   - Philosophical_Quarterly
-status: source_card
+status: active
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
