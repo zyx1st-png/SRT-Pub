@@ -2,7 +2,8 @@
 id: SRT-PHYS-REP01-REPRESENTATION-COVARIANCE-COMPOSITION
 type: hardening_patch
 tags: [Physics, Quantum Foundations, Representation Covariance, Complex Numbers, Real Quantum Mechanics, Composite Systems, Tensor Product, Empirical Equivalence, Bridge]
-status: active_v0_1
+status: active
+version: v0_1
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge

@@ -1,5 +1,10 @@
 ---
 source_id: SRC-2026-08-03-PHYSICS-REAL-QUANTUM-REPRESENTATION-COMPOSITION
+id: SRC-2026-08-03-PHYSICS-REAL-QUANTUM-REPRESENTATION-COMPOSITION
+type: material_source_card
+status: active
+layer: operations
+epistemic_layer: os
 title: "Physicists Take the Imaginary Numbers Out of Quantum Mechanics"
 source_type: science_journalism_with_primary_paper_pair_and_peer_reviewed_update
 domain: Physics / Quantum foundations / Mathematical representation / Composite systems
@@ -17,7 +22,7 @@ primary_sources:
   - title: "Quantum theory does not need complex numbers"
     authors: [Timothee Hoffreumon, Mischa P. Woods]
     arxiv: 2504.02808
-    status: preprint_v2
+    source_stage: preprint_v2
   - title: "Quantum theory based on real numbers can be experimentally falsified"
     publication: Nature 600, 625-629
     doi: 10.1038/s41586-021-04160-4
