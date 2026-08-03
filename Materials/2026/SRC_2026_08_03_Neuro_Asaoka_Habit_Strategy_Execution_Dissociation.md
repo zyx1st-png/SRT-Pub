@@ -31,7 +31,7 @@ tags:
   - striatum
   - synaptic_plasticity
   - Nature_Communications
-status: source_card
+status: active
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
