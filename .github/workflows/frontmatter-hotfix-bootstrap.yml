@@ -3,7 +3,7 @@ name: Frontmatter Hotfix Bootstrap
 on:
   push:
     branches:
-      - agent/frontmatter-ratchet-hotfix-2026-08-03
+      - main
 
 permissions:
   contents: write
@@ -12,7 +12,7 @@ jobs:
   apply-hotfix:
     runs-on: ubuntu-24.04
     steps:
-      - name: Check out branch
+      - name: Check out main
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -40,7 +40,19 @@ jobs:
                   "status: author_confirmed_source_intuition_v0",
                   "status: active\nrecord_stage: author_confirmed_source_intuition_v0",
               ),
+              "04_External_Convergence/AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md": (
+                  "status: draft_v2",
+                  "status: draft\nversion: v2",
+              ),
+              "AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md": (
+                  "status: patch_v0_1",
+                  "status: active\nversion: v0_1",
+              ),
               "Materials/2026/SRC_2026_07_27_Neuro_Posani_Rarely_Categorical_Highly_Separable_Nature.md": (
+                  "status: source_card",
+                  "status: active",
+              ),
+              "Materials/2026/SRC_2026_07_30_Neuro_Wentzell_Preattentive_Vision_Format_Philosophical_Quarterly.md": (
                   "status: source_card",
                   "status: active",
               ),
@@ -48,7 +60,15 @@ jobs:
                   "status: active_v1_fulltext_author_draft",
                   "status: active\nsource_stage: active_v1_fulltext_author_draft",
               ),
+              "Materials/2026/SRC_2026_08_03_AI_Quanta_Reasoning_Wrong_Reasons.md": (
+                  "source_id: SRC-2026-08-03-AI-QUANTA-REASONING-WRONG-REASONS",
+                  "source_id: SRC-2026-08-03-AI-QUANTA-REASONING-WRONG-REASONS\nid: SRC-2026-08-03-AI-QUANTA-REASONING-WRONG-REASONS\ntype: material_source_card\nstatus: active\nlayer: operations\nepistemic_layer: os\nclaim_mode: evidence\ncanonical: false",
+              ),
               "Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md": (
+                  "status: patch",
+                  "status: active",
+              ),
+              "Neuroscience/patches/SRT_Neuro_NEURAL19_Preattentive_Gist_Binding_Report_Interface_v0_1.md": (
                   "status: patch",
                   "status: active",
               ),
@@ -70,6 +90,7 @@ jobs:
               path = Path(name)
               text = path.read_text(encoding="utf-8")
               if new in text:
+                  print(f"already normalized {name}")
                   continue
               count = text.count(old)
               if count != 1:
@@ -78,10 +99,13 @@ jobs:
               print(f"updated {name}")
           PY
 
-      - name: Run governance preflight
+      - name: Verify split metadata
+        run: uv run python scripts/refresh_split_metadata.py --check
+
+      - name: Run complete governance preflight
         run: uv run python scripts/governance_preflight.py --skip-write-report --strict-split-metadata
 
-      - name: Commit normalized frontmatter
+      - name: Commit normalized frontmatter and remove bootstrap
         shell: bash
         run: |
           rm .github/workflows/frontmatter-hotfix-bootstrap.yml
@@ -90,12 +114,17 @@ jobs:
           git add \
             01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md \
             01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md \
+            04_External_Convergence/AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md \
+            AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md \
             Materials/2026/SRC_2026_07_27_Neuro_Posani_Rarely_Categorical_Highly_Separable_Nature.md \
+            Materials/2026/SRC_2026_07_30_Neuro_Wentzell_Preattentive_Vision_Format_Philosophical_Quarterly.md \
             Materials/2026/SRC_2026_07_30_Philosophy_Schmid_Psychonomic_Harmony.md \
+            Materials/2026/SRC_2026_08_03_AI_Quanta_Reasoning_Wrong_Reasons.md \
             Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md \
+            Neuroscience/patches/SRT_Neuro_NEURAL19_Preattentive_Gist_Binding_Report_Interface_v0_1.md \
             Operations/Material_Log/2026-07_Part02.md \
             Operations/_SRT_CHOICE_TRACE_CORRECTION_POINTER_2026-07-27.md \
             Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md \
             .github/workflows/frontmatter-hotfix-bootstrap.yml
           git commit -m "governance: normalize frontmatter lifecycle fields"
-          git push origin HEAD
+          git push origin HEAD:main
