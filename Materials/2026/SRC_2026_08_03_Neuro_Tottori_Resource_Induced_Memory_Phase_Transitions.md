@@ -33,7 +33,7 @@ tags:
   - sensory_uncertainty
   - intrinsic_noise
   - Physical_Review_Letters
-status: source_card
+status: active
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
