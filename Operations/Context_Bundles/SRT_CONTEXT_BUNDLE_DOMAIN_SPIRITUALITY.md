@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-07-27
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-08-03
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-07-27
-source_commit: 5ffd499c
-source_branch: claude/srt-theory-consolidation-le4fwa
-source_dirty: false
-inputs_digest: b30c81ca825e9eae
+generated: 2026-08-03
+source_commit: c5c5315e
+source_branch: codex/goedel-stage-d03-evidence
+source_dirty: true
+inputs_digest: 0729b04ae70f4e5b
 ---
 
 # SRT 灵性领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: b30c81ca825e9eae
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-07-27 |
-| 来源 commit | `5ffd499c` |
-| 来源分支 | `claude/srt-theory-consolidation-le4fwa` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-03 |
+| 来源 commit | `c5c5315e` |
+| 来源分支 | `codex/goedel-stage-d03-evidence` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 3 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
