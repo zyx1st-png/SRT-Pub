@@ -13,6 +13,8 @@ doi:
   - 10.1103/4k13-sdjh
   - 10.48550/arXiv.2504.02808
   - 10.1038/s41586-021-04160-4
+  - 10.1103/PhysRevLett.128.040402
+  - 10.1103/PhysRevLett.129.140401
 primary_sources:
   - title: "Quantum mechanics based on real numbers: A consistent description"
     authors: [Pedro Barrios Hita, Anton Trushechkin, Hermann Kampermann, Michael Epping, Dagmar Bruß]
@@ -26,12 +28,20 @@ primary_sources:
   - title: "Quantum theory based on real numbers can be experimentally falsified"
     publication: Nature 600, 625-629
     doi: 10.1038/s41586-021-04160-4
+  - title: "Testing Real Quantum Theory in an Optical Quantum Network"
+    publication: Physical Review Letters 128, 040402
+    date_published: 2022-01-28
+    doi: 10.1103/PhysRevLett.128.040402
+  - title: "Experimental Refutation of Real-Valued Quantum Mechanics under Strict Locality Conditions"
+    publication: Physical Review Letters 129, 140401
+    date_published: 2022-09-26
+    doi: 10.1103/PhysRevLett.129.140401
 authors:
   - Daniel Garisto
 publication: Quanta Magazine
 date_published: 2025-11-07
 date_added: 2026-08-03
-evidence_level: high_quality_secondary_synthesis_plus_one_peer_reviewed_primary_paper_one_primary_preprint_and_2021_peer_reviewed_comparator
+evidence_level: high_quality_secondary_synthesis_plus_one_peer_reviewed_primary_paper_one_primary_preprint_one_2021_peer_reviewed_no_go_comparator_and_two_2022_peer_reviewed_experimental_tests
 reliability_level: high_for_the_narrow_representation_and_composition_claim; medium_for_ontological_interpretation
 srt_relevance: representation-covariance guard; composition-rule dependence; mathematical-scaffold humility; quantum-bridge hardening
 integration_priority: A_bounded_bridge_high
@@ -59,12 +69,13 @@ claim_mode: evidence
 
 ## 1. One-line summary
 
-Recent real-valued formulations reproduce the observable predictions and locality structure of standard complex quantum mechanics by changing how composite systems are represented, showing that the 2021 network experiments excluded a restricted real-theory package rather than every theory written without explicit complex numbers.
+Recent real-valued formulations reproduce the observable predictions and stated locality structure of standard complex quantum mechanics by changing how composite systems are represented, showing that the 2021 no-go proposal and subsequent 2022 network experiments constrained a restricted real-theory package rather than every theory written without explicit complex numbers.
 
 ## 2. Core claims of source
 
 - Standard quantum mechanics uses complex Hilbert spaces, and multiplication by `i` compactly represents phase and rotation structure.
 - The 2021 *Nature* result compared complex quantum theory with a real-number theory that retained a particular package of postulates, including a standard composition rule for independent systems; within that package, the theories make different predictions in network experiments.
+- Two 2022 optical-network experiments then violated the bounds of that restricted real-valued package, including a stricter test enforcing independent sources and locality conditions.
 - Barrios Hita et al. replace the overly restrictive real composite-system construction with a real quotient-space formulation. Local operators still act trivially on other subsystems, and the model reproduces all multipartite quantum predictions.
 - Hoffreumon and Woods distinguish the abstract tensor product from a chosen matrix representation of it. Their alternative real representation preserves representation locality and yields a real-number quantum theory experimentally indistinguishable from standard quantum theory.
 - The explicit symbol `i` can therefore be removed from the formulation, but the real theory retains structures equivalent to complex phase arithmetic, including an `SO(2)` rotation/flag structure and nontrivial equivalence or combination rules.
@@ -75,7 +86,8 @@ Recent real-valued formulations reproduce the observable predictions and localit
 - The Quanta article was close-read as a high-quality secondary synthesis and used to identify the relevant historical and primary-source chain.
 - Barrios Hita et al., arXiv:`2503.17307`, was checked in its current v2 form. The paper was published in *Physical Review Letters* 136, 240202 on 2026-06-18. It constructs composite real systems as quotient spaces and replaces a fixed tensor-product postulate with a physical locality requirement.
 - Hoffreumon and Woods, arXiv:`2504.02808v2`, was checked through its abstract and HTML text. It constructs an alternative real matrix representation of the tensor product, retains representation locality, and states that real- and complex-number quantum theories are experimentally indistinguishable within the construction.
-- The 2021 *Nature* paper, DOI `10.1038/s41586-021-04160-4`, was checked as the comparator. Its own scope explicitly fixes the standard Hilbert-space postulates and notes that alternative real formulations can recover complex predictions only by violating at least one of those postulates.
+- The 2021 *Nature* paper, DOI `10.1038/s41586-021-04160-4`, was checked as the no-go comparator. Its own scope explicitly fixes the standard Hilbert-space postulates and notes that alternative real formulations can recover complex predictions only by violating at least one of those postulates.
+- The two 2022 experimental follow-ups, DOI `10.1103/PhysRevLett.128.040402` and `10.1103/PhysRevLett.129.140401`, were checked as tests of that restricted package; they do not independently rule out later real-valued formulations that alter the composition or representation assumptions.
 - This SourceCard records the representation/composition result. It is not a full adjudication of every mathematical detail or of whether one formulation is more natural, explanatory, or fundamental.
 
 ## 4. Limits
@@ -140,7 +152,7 @@ No canonical edit is authorized by this material.
 
 - Do not write: quantum mechanics has shown that imaginary numbers are unreal or meaningless.
 - Do not write: real quantum mechanics is experimentally confirmed over complex quantum mechanics.
-- Do not write: the 2021 experiments were invalid; they validly tested a restricted postulate package.
+- Do not write: the 2021 no-go proposal or the 2022 experiments were invalid; they validly targeted a restricted postulate package.
 - Do not write: complex Hilbert space is `L_0`.
 - Do not write: the alternative tensor-product representation proves that selection precedes existence.
 - Do not identify the real flag, quotient-space equivalence class, global phase, `G_hat_theta`, or an SRT selector with one another.

@@ -36,7 +36,7 @@ machine_summary: >
 # SRT Physics REP01: Representation Covariance and Composition Guard
 
 > **Status**: non-canonical P3 physics bridge / hardening guard.  
-> **Source anchor**: Quanta Magazine's 2025 synthesis, Barrios Hita et al. (`arXiv:2503.17307`; *Physical Review Letters* 136, 240202), Hoffreumon and Woods (`arXiv:2504.02808v2`), and the 2021 *Nature* comparator (`10.1038/s41586-021-04160-4`).  
+> **Source anchor**: Quanta Magazine's 2025 synthesis, Barrios Hita et al. (`arXiv:2503.17307`; *Physical Review Letters* 136, 240202), Hoffreumon and Woods (`arXiv:2504.02808v2`), the 2021 *Nature* no-go comparator (`10.1038/s41586-021-04160-4`), and the 2022 optical-network tests (`10.1103/PhysRevLett.128.040402`; `10.1103/PhysRevLett.129.140401`).  
 > **Boundary**: this patch does not prove real-number ontology, refute complex quantum mechanics, solve measurement, or confirm SRT.
 
 ## 0. Adjudication
@@ -67,7 +67,7 @@ real Hilbert spaces
 + independent-source assumptions
 ```
 
-Within that package, real and complex formulations produce different network correlations, and experiments rejected the restricted real package.
+Within that package, real and complex formulations produce different network correlations. Two 2022 optical-network experiments subsequently violated the restricted real-package bounds, including a stricter test under independent-source and locality conditions.
 
 The later constructions modify the representation of composite systems while retaining physically motivated locality or representation-locality conditions. They reproduce the statistics of standard complex quantum mechanics using only real numbers.
 
@@ -124,10 +124,10 @@ Bridge-level schema:
 ```text
 R1 ~emp+comp R2
   ->
-B_SRT(R1) = B_SRT(R2)
+Inv(B_SRT(R1)) = Inv(B_SRT(R2))
 ```
 
-where `B_SRT` is the SRT bridge interpretation, not a canonical mathematical function.
+where `B_SRT` is the SRT bridge interpretation and `Inv` extracts only the representation-invariant bridge content; neither is a canonical mathematical function. This does not require equal simplicity, naturalness, or explanatory value across formulations.
 
 Meaning:
 
@@ -284,7 +284,7 @@ Do not claim:
 
 - quantum mechanics has eliminated imaginary numbers in every meaningful sense;
 - the real formulation is ontologically preferred;
-- the 2021 experiment was erroneous rather than scope-limited;
+- the 2021 no-go proposal or the 2022 experiments were erroneous rather than scope-limited;
 - empirical equivalence implies explanatory equivalence;
 - every mathematical structure is merely conventional;
 - complex phase structure has disappeared;

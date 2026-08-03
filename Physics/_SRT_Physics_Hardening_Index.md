@@ -217,7 +217,7 @@ Do not claim:
 ```text
 real quantum mechanics is ontologically preferred
 imaginary numbers have been physically disproved
-the 2021 network experiments were invalid
+the 2021 no-go proposal or the 2022 network experiments were invalid
 representation equivalence proves SRT
 ```
 
