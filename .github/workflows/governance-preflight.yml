@@ -28,8 +28,8 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Check base main frontmatter health
-        id: base_frontmatter
+      - name: Check base main governance health
+        id: base_governance
         if: github.event_name == 'pull_request'
         continue-on-error: true
         shell: bash
@@ -41,10 +41,11 @@ jobs:
           git worktree add --detach /tmp/srt-governance-base "$base_ref"
           (
             cd /tmp/srt-governance-base
-            uv run python scripts/check_frontmatter.py \
-              --baseline Governance/Frontmatter_Warning_Baseline.txt \
-              --fail-on-new-warnings
-          ) 2>&1 | tee base-frontmatter.log
+            uv run python scripts/refresh_split_metadata.py --check
+            uv run python scripts/governance_preflight.py \
+              --skip-write-report \
+              --strict-split-metadata
+          ) 2>&1 | tee base-governance-preflight.log
 
       - name: Check PR-local frontmatter
         id: pr_frontmatter
@@ -93,48 +94,95 @@ jobs:
         shell: bash
         env:
           EVENT_NAME: ${{ github.event_name }}
-          BASE_OUTCOME: ${{ steps.base_frontmatter.outcome }}
+          BASE_OUTCOME: ${{ steps.base_governance.outcome }}
           LOCAL_OUTCOME: ${{ steps.pr_frontmatter.outcome }}
           BASELINE_OUTCOME: ${{ steps.baseline_monotonic.outcome }}
           FULL_OUTCOME: ${{ steps.full_preflight.outcome }}
         run: |
-          {
-            echo "## Governance failure attribution"
-            echo
-            echo "| Scope | Outcome |"
-            echo "|---|---|"
-            echo "| base_main_frontmatter | ${BASE_OUTCOME:-not-run} |"
-            echo "| pr_local_frontmatter | ${LOCAL_OUTCOME:-not-run} |"
-            echo "| baseline_monotonicity | ${BASELINE_OUTCOME:-not-run} |"
-            echo "| merged_repository_preflight | ${FULL_OUTCOME:-not-run} |"
-            echo
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
 
-            if [[ "$EVENT_NAME" != "pull_request" ]]; then
-              echo "**Verdict:** MAIN PUSH CHECK — inspect the full preflight result."
-            elif [[ "$LOCAL_OUTCOME" == "failure" ]]; then
-              echo "**Verdict:** PR_LOCAL / LOCAL DIRTY / DO NOT MERGE."
-            elif [[ "$BASELINE_OUTCOME" == "failure" ]]; then
-              echo "**Verdict:** PR_LOCAL BASELINE DEBT EXPANSION / DO NOT MERGE."
-            elif [[ "$BASE_OUTCOME" == "failure" && "$FULL_OUTCOME" == "success" ]]; then
-              echo "**Verdict:** BASE_MAIN WAS BLOCKED; THIS PR REPAIRS IT / HOTFIX PATH."
-            elif [[ "$BASE_OUTCOME" == "failure" ]]; then
-              echo "**Verdict:** BASE_MAIN BLOCKED / HOTFIX ONLY."
-            elif [[ "$FULL_OUTCOME" == "failure" ]]; then
-              echo "**Verdict:** LOCAL FRONTMATTER CLEAN; FULL REPOSITORY OR INFRA FAILURE / DO NOT MERGE."
-            else
-              echo "**Verdict:** LOCAL CLEAN / MAIN HEALTHY / NORMAL MERGE."
-            fi
-          } >> "$GITHUB_STEP_SUMMARY"
+          def outcome(name: str) -> str:
+              value = os.environ.get(name, "").strip()
+              return value or "not-run"
+
+          event_name = outcome("EVENT_NAME")
+          base = outcome("BASE_OUTCOME")
+          local = outcome("LOCAL_OUTCOME")
+          baseline = outcome("BASELINE_OUTCOME")
+          full = outcome("FULL_OUTCOME")
+
+          if event_name != "pull_request":
+              scope = "main_push"
+              disposition = "inspect_full_preflight"
+              verdict = "MAIN PUSH CHECK — inspect the full preflight result."
+          elif local == "failure":
+              scope = "pr_local"
+              disposition = "do_not_merge"
+              verdict = "PR_LOCAL / LOCAL DIRTY / DO NOT MERGE."
+          elif baseline == "failure":
+              scope = "baseline_expansion"
+              disposition = "do_not_merge"
+              verdict = "PR_LOCAL BASELINE DEBT EXPANSION / DO NOT MERGE."
+          elif base == "failure" and full == "success":
+              scope = "base_main_repaired"
+              disposition = "governance_hotfix_only"
+              verdict = "BASE_MAIN WAS BLOCKED; THIS PR REPAIRS IT / HOTFIX PATH."
+          elif base == "failure":
+              scope = "base_main"
+              disposition = "governance_hotfix_only"
+              verdict = "BASE_MAIN BLOCKED / HOTFIX ONLY."
+          elif full == "failure":
+              scope = "merged_repository_or_infrastructure"
+              disposition = "do_not_merge"
+              verdict = "LOCAL FRONTMATTER CLEAN; FULL REPOSITORY OR INFRA FAILURE / DO NOT MERGE."
+          else:
+              scope = "none"
+              disposition = "normal_merge"
+              verdict = "LOCAL CLEAN / MAIN HEALTHY / NORMAL MERGE."
+
+          payload = {
+              "schema_version": 1,
+              "event_name": event_name,
+              "failure_scope": scope,
+              "merge_disposition": disposition,
+              "base_main_health": base,
+              "pr_local_frontmatter": local,
+              "baseline_monotonicity": baseline,
+              "merged_repository_preflight": full,
+              "verdict": verdict,
+          }
+          Path("governance-attribution.json").write_text(
+              json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          summary = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          with summary.open("a", encoding="utf-8") as handle:
+              handle.write("## Governance failure attribution\n\n")
+              handle.write("| Scope | Outcome |\n")
+              handle.write("|---|---|\n")
+              handle.write(f"| base_main_governance | {base} |\n")
+              handle.write(f"| pr_local_frontmatter | {local} |\n")
+              handle.write(f"| baseline_monotonicity | {baseline} |\n")
+              handle.write(f"| merged_repository_preflight | {full} |\n\n")
+              handle.write(f"**Verdict:** {verdict}\n")
+
+          print(json.dumps(payload, ensure_ascii=False, indent=2))
+          PY
 
       - name: Upload governance preflight diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: governance-preflight-log
+          name: governance-preflight-diagnostics
           path: |
             governance-preflight.log
-            base-frontmatter.log
+            base-governance-preflight.log
             pr-frontmatter.log
             baseline-monotonic.log
+            governance-attribution.json
           if-no-files-found: warn
           retention-days: 14
