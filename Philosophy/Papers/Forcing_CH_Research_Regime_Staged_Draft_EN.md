@@ -28,7 +28,7 @@ binding_strategy: Philosophy/Papers/Mathematical_Reachability_and_Problem_Indivi
 
 ## Provisional Abstract — Weak Version
 
-This paper distinguishes the semantic identity of a mathematical question from the broader research regime organized around it. The CH question and its direct answers predated forcing [EVD-D03-0001]. Comparing pre-Gödel, Gödel, Cohen, and institutionalized-forcing stages, the paper argues that forcing introduced a reusable model-extension operation that reconstructed the CH research regime [EVD-D03-0002; EVD-D05-0001; EVD-D06-0001]. A global set-theoretic conclusion remains conditional on cross-problem inheritance and infrastructure evidence [EVD-D06-0002]. Strong semantic re-individuation is not claimed without a completed C2 audit relative to the Gödel stage [EVD-D09-0001].
+This paper distinguishes the semantic identity of a mathematical question from the broader research regime organized around it. The CH question and its direct answers predated forcing [EVD-D03-0001]. Comparing pre-Gödel, Gödel, Cohen, and institutionalized-forcing stages, the paper develops and tests the claim that forcing reconstructed the CH research regime through a reusable model-extension operation [EVD-D03-0002; EVD-D05-0001; EVD-D06-0001]. A global set-theoretic conclusion remains conditional on cross-problem inheritance and infrastructure evidence [EVD-D06-0002]. Strong semantic re-individuation is not claimed without a completed C2 audit relative to the Gödel stage [EVD-D09-0001].
 
 **Keywords:** forcing; continuum hypothesis; mathematical practice; problem identity; potentialism; institutionalization
 
@@ -50,7 +50,7 @@ Framework definitions and argumentative distinctions introduced by the paper are
 
 The continuity of a sentence does not settle the continuity of the research problem organized around it. The continuum-hypothesis question existed before forcing, and its direct-answer core remained `CH` or `not-CH` across the four stages examined here [EVD-D03-0001]. Forcing did not create that sentence-level question and did not enlarge its direct-answer core. Nor should an independence result be treated as a direct yes-or-no answer to CH in a unique universe [EVD-D03-0003]. The starting point of this paper is therefore continuity, not rupture.
 
-The proposed rupture lies elsewhere. This paper argues, in its weak and default form, that forcing reconstructed the research regime organized around CH [EVD-D03-0002; EVD-D05-0001; EVD-D06-0001]. A research regime includes not only the sentence under investigation but also the backgrounds from which work proceeds, the operations regarded as available, the outputs those operations can generate, and the rules by which those outputs are classified as answers, diagnoses, divisions of a problem, or forms of progress. The thesis is not that mathematical truth was historically created. It is that the historically available organization of inquiry can change even while the direct-answer core remains fixed.
+The proposed rupture lies elsewhere. This paper aims to establish, in its weak and default form, that forcing reconstructed the research regime organized around CH [EVD-D03-0002; EVD-D05-0001; EVD-D06-0001]. A research regime includes not only the sentence under investigation but also the backgrounds from which work proceeds, the operations regarded as available, the outputs those operations can generate, and the rules by which those outputs are classified as answers, diagnoses, divisions of a problem, or forms of progress. The thesis is not that mathematical truth was historically created. It is that the historically available organization of inquiry can change even while the direct-answer core remains fixed.
 
 That thesis requires a four-stage comparison. The pre-Gödel stage must be reconstructed on its own terms; the Gödel stage must be treated as a distinct intervention rather than folded into an undifferentiated “before forcing”; the Cohen event must be separated from the later institutionalization of forcing; and the mature forcing tradition must be evaluated for inheritance, non-local reuse, and scaffold formation [EVD-D03-0004]. These stages cannot be reduced to a simple before-and-after story without prejudging the central question.
 
@@ -194,6 +194,8 @@ Failure of C5-op establishes only operation-level novelty. It does not establish
 
 For the historical audit, a conservative reproduction counts only if the translation maps the later relation into a Gödel-stage `B_t`, `M_t`, and `\mathcal O_t` profile documented in Dossiers D03 and D04. The mere retrospective availability of component mathematics or later notation does not itself supply a conservative reproduction. This is a filling discipline for the existing C5-op test, not a new modal criterion and not a substitute for the separate institutionalization filter.
 
+C5-op is a property of a comparison between two stage-indexed regimes together with the translation data registered for that comparison. A later operation `m*` may witness failure of C5-op when no historically admissible, type-correct translation registered in Dossier D05 preserves its background–operation–output relation. C5-op is not treated as an unexplained unary predicate of `m*`.
+
 ### 3.5 Institutionalization and scope
 
 The institutionalization filter is fixed as
@@ -212,11 +214,11 @@ Local and global scope also remain separate:
 M_t(Q_\varphi)=\mathfrak U_t\!\restriction_{Q_\varphi}.
 \]
 
-Thus a change in the CH-local method set does not entail a change in the global update regime. The default thesis requires the local comparison only. A global conclusion becomes eligible only after Dossier D06 verifies cross-problem inheritance and scaffold formation.
+Thus a change in the CH-local method set does not entail a change in the global update regime. The CH-local thesis has three distinct burdens: failure of C5-op relative to the documented Gödel-stage profile; stable uptake within the CH research regime, including inheritance and scaffold effects at that scope; and documented changes in CH-specific methods, output generation, evaluation, model comparison, axiom assessment, problem division, or problem generation. `H`, `N`, and `S` records used for this thesis must be coded as CH-local where appropriate; satisfying the institutionalization labels at that scope does not by itself supply evidence beyond CH. A global conclusion additionally requires reuse beyond CH, cross-problem inheritance, and infrastructure whose scope extends across set-theoretic practice.
 
 > **TODO — Dossiers D02, D04, D05, and D06**  
-> **Missing evidence:** External anchors for `D` and `R_t`; practice evidence for `B_t`, `M_t`, and `E_t`; attempted conservative translations; independent `H`, `N`, and `S` records.  
-> **Exact claims blocked:** The historical applicability of the framework and any verdict under C2 or C5-op.  
+> **Missing evidence:** External anchors for `D` and `R_t`; practice evidence for `B_t`, `M_t`, and `E_t`; attempted conservative translations; independent `H`, `N`, and `S` records with CH-local and beyond-CH scope coded separately.  
+> **Exact claims blocked:** The historical applicability of the framework, any verdict under C2 or C5-op, the CH-local stable-uptake verdict, and every global update-regime claim.  
 > **Mandatory fallback:** If the type distinction between semantic identity and research regime cannot be maintained, withdraw the framework claim. If C5-op cannot be established, stop the paper.
 
 ---
@@ -250,7 +252,7 @@ Historically, the dossier must determine how this intervention was evaluated: wh
 
 The Cohen event must be analyzed at the level of operation novelty before institutionalization. The technical dossier must specify the ground model, forcing notion, generic extension, external metatheory, and exact output under discussion [EVD-D03-0009]. It must also verify the relation among forcing, Boolean-valued presentations, generic extensions, and the reverse-independence result without treating those formulations as interchangeable by assertion [EVD-D03-0010].
 
-The C5-op question is narrow: does a type-correct conservative reproduction of the relevant later background–operation–output relation exist within the documented Gödel-stage background, method set, and output profile [EVD-D05-0001]? Dossier D05 must record the strongest attempted reconstruction without assembling the earlier repertoire through post-Cohen packaging. A negative answer would support operation novelty. It would not yet show that forcing became a shared research institution, altered CH evaluation rules, or reconstructed the global update regime.
+The C5-op question is narrow: does any conservative translation satisfying the preregistered D05 admissibility conditions succeed [EVD-D05-0001]? An admissible attempt must be historically admissible, type-correct, compatible with the documented Gödel-stage `B_t`, `M_t`, and output profile, explicitly registered in Dossier D05, and free from post-Cohen retrojection or repackaging. Failure across those registered attempts would support operation novelty. It would not yet show that forcing became a shared research institution, altered CH evaluation rules, or reconstructed the global update regime.
 
 > **TODO — EVD-D03-0009, EVD-D03-0010, EVD-D05-0001**  
 > **Needed:** A technically explicit operation–output record and the strongest attempted Gödel-stage conservative reconstruction.  
@@ -270,7 +272,7 @@ The three conditions cannot substitute for one another. Textbook presence might 
 
 ### 4.5 Provisional CH-local verdict
 
-The default thesis compares the Gödel stage with institutionalized forcing at the CH-local level. The dossier must test whether the later regime altered the available backgrounds, methods, candidate outputs, evaluation practices, model comparisons, axiom assessments, problem divisions, and problem-generating relations around CH [EVD-D04-0003; EVD-D05-0002; EVD-D03-0011]. The intended conclusion is:
+The default thesis compares the Gödel stage with institutionalized forcing at the CH-local level. It requires a failed D05-admissible C5-op comparison relative to the Gödel-stage profile, stable uptake within the CH research regime, and documented changes in the available backgrounds, methods, candidate outputs, evaluation practices, model comparisons, axiom assessments, problem divisions, or problem-generating relations around CH [EVD-D04-0003; EVD-D05-0002; EVD-D03-0011; EVD-D06-0001; EVD-D06-0003; EVD-D06-0004; EVD-D06-0005]. Stable uptake here concerns inheritance and scaffold effects within CH-facing practice; it does not yet establish reuse or infrastructure beyond CH. The intended conclusion is:
 
 \[
 Q_{Gödel}^{research}(Q_{CH})
@@ -281,14 +283,19 @@ Q_{institutionalized\ forcing}^{research}(Q_{CH}).
 At the present evidence stage, this formula states the paper's target verdict, not a completed historical result. The argument becomes eligible only if C5-op and the CH-local practice evidence are verified and the controls discriminate the proposed categories.
 
 > **TODO — EVD-D04-0003, EVD-D05-0002, EVD-D03-0011**  
-> **Completion test:** A row-by-row four-stage audit with verified evidence and attempted conservative translations.  
-> **Fallback:** If the evidence shows only a new result node or a short-lived technique, withdraw the CH-regime reconstruction thesis.
+> **Completion test:** A row-by-row four-stage audit verifies a failed D05-admissible C5-op comparison, stable CH-local uptake, and documented changes in CH-specific methods, output generation, evaluation, model comparison, axiom assessment, problem division, or problem generation.  
+> **Fallback:** If any of those three burdens remains unsupported, do not state the CH-local target verdict. If the evidence shows only a new result node or a short-lived technique, withdraw the CH-regime reconstruction thesis.
 
 ### 4.6 Global update regime: a separate conditional question
 
-The stronger possibility is that forcing reconstructed the update regime of set theory as a whole. This does not follow from the CH-local verdict. It requires verified cross-problem reuse, inheritance, and infrastructure that cannot be reduced to work on CH [EVD-D06-0002]. The staged draft therefore states only the following conditional: if Dossier D06 independently verifies non-locality and scaffold formation beyond CH, the analysis may support a global conclusion.
+The stronger possibility is that forcing reconstructed the update regime of set theory as a whole. This does not follow from the CH-local verdict or from CH-local institutional effects. It requires verified reuse beyond CH, cross-problem inheritance, and infrastructure whose scope extends across set-theoretic practice [EVD-D06-0002; EVD-D06-0003; EVD-D06-0004; EVD-D06-0005]. The staged draft therefore states only the following conditional: if Dossier D06 independently verifies those beyond-CH burdens, the analysis may support a global conclusion.
 
 The current permitted wording is: **the argument aims to establish reconstruction of the CH research regime; it does not yet establish reconstruction of the set-theoretic update regime as a whole.** If the global evidence remains incomplete, the global sentence must be deleted from the submission abstract, introduction, implications, and conclusion rather than left as an insinuation.
+
+> **TODO — EVD-D06-0002 to EVD-D06-0005**  
+> **Completion test:** Verified reuse beyond CH, cross-problem inheritance, and infrastructure extending across set-theoretic practice, each distinguished from CH-local uptake.  
+> **Blocked:** Every achieved global update-regime verdict.  
+> **Mandatory fallback:** If the evidence remains CH-local or any beyond-CH burden is unsupported, delete the global claim everywhere and retain only the CH-local paper.
 
 ### 4.7 Strong semantic re-individuation: conditional C2 verdict
 
@@ -316,10 +323,10 @@ Control A must be an important mathematical result produced within a mature and 
 
 ### 5.2 Control B: local technical innovation without institutionalization
 
-Control B must involve a genuinely new technique with no conservative predecessor, so that C5-op fails, while the technique remains local and fails the institutionalization filter [EVD-D08-0001]. The dossier must search for later reuse and infrastructure rather than presuming their absence. A technique qualifies only if its locality and failure of `H`, `N`, or `S` are documented.
+Control B must involve a genuinely new technique with no conservative predecessor, so that C5-op fails, while the technique remains local and fails the institutionalization filter [EVD-D08-0001]. The dossier must search for later reuse and infrastructure rather than presuming their absence. Silence is not negative evidence. The search must be registered by time window and terminology, trace citation descendants and later reformulations or absorptions, inspect monographs, textbooks, courses, lecture notes, training materials, and cross-problem applications, and state its limits. A technique qualifies only if its locality and failure of `H`, `N`, or `S` are documented. The strongest permitted negative conclusion is: “No institutionalization trace was found within the registered search scope.”
 
 > **TODO — EVD-D08-0001**  
-> **Needed:** A technically verified candidate, an attempted predecessor reconstruction, and negative institutionalization evidence.  
+> **Needed:** A technically verified candidate, an attempted predecessor reconstruction, and a structured negative-trace audit that distinguishes the absence of a trace within the registered scope from an absolute absence of reuse or institutionalization.  
 > **Blocked:** The claim that C5-op distinguishes operation novelty from regime innovation.  
 > **Stop rule:** If no valid Control B can be documented, the criterion is not calibrated and must be reconstructed before submission.
 
@@ -449,7 +456,7 @@ No global reconstruction of the set-theoretic update regime follows from CH-loca
 
 ## Formal Note: C1–C6 and the Two Non-Commutativities
 
-The comparison uses the translations `tau` and `rho` specified in v0.7 for outputs, backgrounds, methods, response roles, and evaluation structures. C1 preserves the direct-answer core in both directions. C2 requires response-role classification to commute with output translation, again in both directions. C3 requires evaluation order to be preserved on the translation image. C4 requires preservation of support, blocking, problem generation, problem differentiation, and method-transfer functions. C5-op requires preservation of the background–operation–output generation relation. C6 requires structural quasi-inverses.
+The comparison uses the translations `tau` and `rho` specified in v0.7 for outputs, backgrounds, methods, response roles, and evaluation structures. C1 preserves the direct-answer core in both directions. C2 requires response-role classification to commute with output translation, again in both directions. C3 requires evaluation order to be preserved on the translation image. C4 requires preservation of support, blocking, problem generation, problem differentiation, and method-transfer functions. C5-op requires preservation of the background–operation–output generation relation. It is a property of a comparison between regimes and the associated translation data. A later operation `m*` may witness failure of that comparison, but C5-op is not an unexplained unary predicate of `m*`. C6 requires structural quasi-inverses.
 
 For C6, outputs satisfy
 
@@ -487,12 +494,12 @@ The claim IDs and evidence IDs below are permanent editorial identifiers. Moving
 |---|---|---|---|---|---|---|---|
 | CL-001 | Sentence-level question, semantic identity, and research regime are distinguishable | framework | general | EVD-D02-0001, EVD-D04-0001 | unresolved | framework proposal only | withdraw if the type distinction cannot be maintained |
 | CL-002 | The CH question and direct-answer core predate forcing and remain continuous | continuity | four stages | EVD-D03-0001, EVD-D03-0003 | unresolved | staged assertion with IDs | correct or withdraw any unsupported historical formulation |
-| CL-003 | Forcing introduced an operation-output relation not conservatively reproducible at the Gödel stage | central prerequisite | Gödel to Cohen / mature forcing | EVD-D05-0001, EVD-D05-0002 | unresolved | conditional only | if unproved, stop the paper |
-| CL-004 | Forcing reconstructed the CH research regime | central weak claim | CH-local; Gödel to institutionalized forcing | EVD-D03-0002, EVD-D04-0003, EVD-D05-0002, EVD-D06-0001 | unresolved | target verdict, not achieved finding | withdraw if evidence shows only a result or local technique |
-| CL-005 | Forcing reconstructed the global update regime of set theory | strengthened claim | global | EVD-D06-0002, EVD-D06-0004, EVD-D06-0005 | unresolved | conditional only | delete if evidence is CH-local or lacks infrastructure |
+| CL-003 | No conservative translation satisfying the registered D05 admissibility conditions preserves the forcing operation-output relation at the Gödel stage | central prerequisite | Gödel to Cohen / mature forcing | EVD-D05-0001, EVD-D05-0002 | unresolved | conditional only | if unproved, stop the paper |
+| CL-004 | Forcing reconstructed the CH research regime | central weak claim | CH-local; Gödel to institutionalized forcing | EVD-D03-0002, EVD-D04-0003, EVD-D05-0002, EVD-D06-0001, EVD-D06-0003 to EVD-D06-0005, coded at CH scope | unresolved | target verdict, not achieved finding | do not state if C5-op, stable CH-local uptake, or documented CH-specific changes remain unsupported; withdraw if evidence shows only a result or local technique |
+| CL-005 | Forcing reconstructed the global update regime of set theory | strengthened claim | global; evidence must extend beyond CH | EVD-D06-0002, EVD-D06-0003 to EVD-D06-0005, verified beyond CH | unresolved | conditional only | delete if reuse, inheritance, or infrastructure remains CH-local or unsupported |
 | CL-006 | Forcing strongly re-individuated CH semantically | conditional claim | Gödel to institutionalized forcing | EVD-D09-0001 to EVD-D09-0003 | unresolved | no affirmative claim | weak title and abstract if C2 is incomplete or preserved |
 | CL-007 | C5-op failure alone does not establish regime innovation | method claim | all cases | EVD-D05-0001, EVD-D06-0003, EVD-D06-0004, EVD-D06-0005, EVD-D08-0001 | unresolved | framework statement | reconstruct criterion if controls fail |
-| CL-008 | `H`, `N`, and `S` jointly distinguish institutionalization from operation novelty | method claim | all cases | EVD-D06-0003 to EVD-D06-0005 | unresolved | preregistered criterion | do not use scores or partial passes |
+| CL-008 | `H`, `N`, and `S` jointly distinguish institutionalization from operation novelty | method claim | all cases; local/global scope recorded separately | EVD-D06-0003 to EVD-D06-0005 | unresolved | preregistered criterion | do not use scores, partial passes, or CH-local records as automatic global evidence |
 | CL-009 | The criterion distinguishes result, local-technical, and regime innovation | calibration claim | three cases | EVD-D07-0001, EVD-D08-0001, EVD-D05-0002, EVD-D06-0003, EVD-D06-0004, EVD-D06-0005 | unresolved | preregistered matrix only | stop submission if the controls fail |
 | CL-010 | Model accessibility and historical institutionalization are distinct | positioning claim | forcing potentialism / practice | EVD-D01-0001, EVD-D06-0001 | unresolved | proposed distinction | stop the paper if the difference is merely terminological; this claim is load-bearing |
 | CL-011 | The central argument permits a non-modal forcing relation | representation claim | methodological | EVD-D01-0001, EVD-D01-0005 | unresolved | conditional | withdraw neutrality if an inference depends on specific modal semantics |
@@ -531,14 +538,14 @@ The claim IDs and evidence IDs below are permanent editorial identifiers. Moving
 | EVD-D05-0001 | C5-op comparison from the Gödel stage to the Cohen operation-output relation | unresolved |
 | EVD-D05-0002 | C5-op comparison from the Gödel stage to the CH-local mature forcing regime | unresolved |
 | EVD-D06-0001 | Evidence that forcing became an inherited operation rather than remaining an event-level technique | unresolved |
-| EVD-D06-0002 | Cross-problem and infrastructure evidence required for any global update-regime claim | unresolved |
-| EVD-D06-0003 | Independent heritability evidence | unresolved |
-| EVD-D06-0004 | Independent non-locality evidence | unresolved |
-| EVD-D06-0005 | Independent scaffold-formation evidence | unresolved |
+| EVD-D06-0002 | Reuse beyond CH, cross-problem inheritance, and infrastructure required for any global update-regime claim | unresolved |
+| EVD-D06-0003 | Independent heritability evidence, with CH-local and beyond-CH scope coded separately | unresolved |
+| EVD-D06-0004 | Independent non-locality evidence, with CH-local and beyond-CH scope coded separately | unresolved |
+| EVD-D06-0005 | Independent scaffold-formation evidence, with CH-local and beyond-CH scope coded separately | unresolved |
 | EVD-D06-0006 | Historical evidence relevant to historical non-commutativity | unresolved |
 | EVD-D06-0007 | Preregistered compatibility coding and evidence for the SRT directional comparison | unresolved |
 | EVD-D07-0001 | Technically and historically verified result-innovation control | unresolved |
-| EVD-D08-0001 | Technically and historically verified local-technical control | unresolved |
+| EVD-D08-0001 | Technically verified local-technical control with a registered negative-institutionalization-trace audit | unresolved |
 | EVD-D09-0001 | Completed C2 audit relative to the Gödel stage | unresolved |
 | EVD-D09-0002 | Candidate later response roles and their stable inferential functions | unresolved |
 | EVD-D09-0003 | Best conservative translation plus evidence against total pre-forcing absence | unresolved |
@@ -547,12 +554,12 @@ The claim IDs and evidence IDs below are permanent editorial identifiers. Moving
 
 # Unresolved Decisive Questions
 
-1. Relative to the Gödel stage, is the forcing background–operation–output relation genuinely unavailable under any conservative reconstruction?
-2. Does forcing independently satisfy heritability, non-locality, and scaffold formation?
+1. Does any historically admissible, type-correct conservative translation registered under D05 preserve the forcing background–operation–output relation within the documented Gödel-stage profile?
+2. At CH scope, do independent heritability, non-locality, and scaffold-formation records establish stable uptake without being treated as evidence beyond CH?
 3. Does the CH-local evidence establish changes in backgrounds, methods, output generation, evaluation, and problem generation rather than influence or convenience alone?
 4. Is there evidence beyond CH for cross-problem inheritance and durable infrastructure sufficient for a global update-regime claim?
 5. Can Control A be verified as an important result with no new operation type and preserved C5-op?
-6. Can Control B be verified as a new operation with failed C5-op but failed institutionalization?
+6. Can Control B be verified as a new operation with failed C5-op and no institutionalization trace within a registered, qualified search scope?
 7. Do the two controls and forcing distinguish the three preregistered kinds of innovation?
 8. Relative to Gödel, does the later response-role structure contain a role or stable subtype that resists conservative translation?
 9. Is the object-level accessibility / historical institutionalization distinction substantive rather than terminological?
@@ -678,17 +685,21 @@ Dossier: D05
 Evidence ID: EVD-D05-____
 Obligation verdict: unresolved / supported / qualified / defeated / withdrawn
 Comparator: Gödel stage to Cohen event / institutionalized forcing
+Regime-comparison and translation data registered:
 Earlier background documented for the Gödel-stage profile:
 Earlier operation documented for the Gödel-stage profile:
 Earlier output documented for the Gödel-stage profile:
 Later background:
 Candidate new operation:
 Later output:
-Attempted conservative reproduction in the earlier system:
+Admissibility check: historically admissible / type-correct / compatible with documented Gödel-stage B_t, M_t, and output profile
+Attempted conservative translations explicitly registered:
+Post-Cohen retrojection or repackaging exclusion check:
 Why reproduction succeeds or fails:
 Technical verification:
 Alternative earlier-method reconstruction, excluding post-Cohen packaging:
 C5-op verdict: unresolved / preserved / failed
+Later operation as a possible witness to failure of the registered regime comparison:
 Explicit warning: C5-op failure does not establish institutionalization
 Claims linked:
 Stop-rule consequence:
@@ -703,6 +714,7 @@ Evidence ID: EVD-D06-____
 Obligation verdict: unresolved / supported / qualified / defeated / withdrawn
 Operation examined:
 Criterion: H / N / S (one record per criterion)
+Scope registered: CH-local / beyond CH / both, with evidence separated
 H evidence: public reconstruction, learning, reuse:
 N evidence: distinct problems, model families, or proof tasks:
 S evidence: later method chain, textbook, training, standard language, tool, or infrastructure:
@@ -757,12 +769,23 @@ Task or problem locality:
 H evidence or failure:
 N evidence or failure:
 S evidence or failure:
-Search protocol for later reuse or infrastructure:
+Registered search time window:
+Technical aliases and terminology variants:
+Citation descendants checked:
+Later generalizations, absorptions, or reformulations checked:
+Monographs and textbooks checked:
+Courses, lecture notes, and training materials checked:
+Later cross-problem applications checked:
+Evidence that the technique was replaced by a standard formulation:
+Positive institutionalization traces found and their disposition:
+Limits of the search:
 Primary technical source metadata:
 Historical/practice source metadata:
 Exact locations:
 Counterevidence:
 Eligibility verdict:
+Qualified negative conclusion: "No institutionalization trace was found within the registered search scope."
+Explicit prohibition: do not infer that no reuse or institutionalization ever occurred from an unsuccessful search
 Calibration consequence:
 Stop rule if no valid case is found:
 ```
