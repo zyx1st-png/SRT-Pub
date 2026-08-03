@@ -105,10 +105,21 @@ Proposed structure:
 | NEURAL16 | `Materials/2026/SRC_2026_04_26_Neuro_BOLD_CMRO2_Uncertainty_bioRxiv.md` / `Neuroscience/patches/SRT_Neuro_NEURAL16_BOLD_CMRO2_Uncertainty_Gate_v0_1.md` | `SRT_EXP_MEASURE_MAP.md §4c` + `Neuroscience/SRT_Neural_Mechanisms.md` Energy-Optimal Selection Dynamics | BOLD-CMRO2 sign relations require an uncertainty gate before they can support metabolic-friction or selection-budget proxy claims; indeterminate CMRO2 direction is not physiological sign reversal | Integrated as lab/bridge guardrail; preprint full-PDF reanalysis evidence |
 | NEURAL17 | `Materials/2026/SRC_2026_04_01_Neuro_HGA_Spike_Dissociation_Nature.md` / `Neuroscience/patches/SRT_Neuro_NEURAL17_HGA_Spike_Dissociation_Gate_v0_1.md` | `SRT_EXP_MEASURE_MAP.md §4c` + `Neuroscience/SRT_Neural_Mechanisms.md` Energy-Optimal Selection Dynamics | HGA requires a source-scope gate: same-electrode HGA must not be treated as local output spiking by default; safer default is mesoscale synchrony / input-integration proxy | Integrated as measurement guardrail; peer-reviewed Nature evidence, scoped to macaque M1 intracortical BMI window |
 | NEURAL18 | `Materials/2026/SRC_2026_07_27_Neuro_Posani_Rarely_Categorical_Highly_Separable_Nature.md` / `Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + claim-status guardrail | High-dimensional mixed selectivity is selection-ready capacity, not selection or anchoring itself; decodability, causal access, behavioral use, conscious anchoring, and L2 write-back must be separated, and `L0 -> L1` does not require neural dimensional collapse | Standalone bridge/guardrail patch added; peer-reviewed Nature evidence; compact-core synthesis pending |
+| NEURAL19 | `Materials/2026/SRC_2026_08_03_Neuro_Tottori_Resource_Induced_Memory_Phase_Transitions.md` / `Neuroscience/patches/SRT_Neuro_NEURAL19_Resource_Gated_Memory_Admission_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + conditional `Core/SRT_Core_14_Dynamics_Scaling.md` | A history-bearing strategy requires separable encoding and stabilization gates and is locally admissible only within a declared resource–uncertainty regime; repetition or uncertainty does not automatically produce stable L2-like constraint | Standalone bridge patch and pending hook added; accepted PRL with arXiv full-text close-read; canonical core untouched |
+| NEURAL20 | `Materials/2026/SRC_2026_08_03_Neuro_Asaoka_Habit_Strategy_Execution_Dissociation.md` / `Neuroscience/patches/SRT_Neuro_NEURAL20_Habit_Strategy_Execution_Dissociation_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` | Habitual strategy conversion, execution gain, and reselection capacity must be separated; behavioral repetition or intensity alone does not establish L2 replacement or absence of real choice | Standalone bridge patch and pending hook added; peer-reviewed source, with detailed methods close-read still required before fine-grained circuit claims |
 
 ---
 
-## 5. Current integration status
+## 5. Parked B1/B2 SourceCards without PatchNotes
+
+| SourceCard | Verdict | Stable use | Revival trigger |
+|---|---|---|---|
+| `Materials/2026/SRC_2026_08_03_Neuro_Bussell_Intrinsic_Information_Value_OFC.md` | B1, with narrow A-capable guardrail | Information and water reward values can be behaviorally traded and neurally distinguished; reward magnitude alone is not a sufficient local account of value representation. The source also pressures any SRT account that equates value only with immediate instrumental choice expansion. | Reopen when the `d-value` stake gate, `T_dir` operationalization, or an SRT experiment must distinguish reward value, uncertainty reduction, and future-choice benefit. |
+| `Materials/2026/SRC_2026_08_03_Neuro_Misawa_Informational_Tuning_Traveling_Waves.md` | B1 for measurement proxy; B2 for consciousness / `T_dir` claims | Directional alignment and routing reliability can dissociate from aggregate transfer volume; informational tuning is a candidate neural-routing proxy, not `T_dir` itself. | Reopen for experimental `T_dir`, selective resynchronization, or anesthesia / traveling-wave proxy synthesis. |
+
+---
+
+## 6. Current integration status
 
 ```text
 N1-N9 = existing compact core
@@ -120,8 +131,11 @@ NEURAL15 = Pipeline 1 bridge patch integrated into Neural_Mechanisms longform
 NEURAL16 = Pipeline 1 measurement guardrail integrated into Measure Map and Neural_Mechanisms longform
 NEURAL17 = Pipeline 1 HGA/source-scope guardrail integrated into Measure Map and Neural_Mechanisms longform
 NEURAL18 = Pipeline 1 population-geometry / decodability-anchoring bridge patch added; compact-core and prediction-table merge pending
+NEURAL19 = Pipeline 1 resource-gated history-admission bridge patch and hook added; all synthesis targets pending
+NEURAL20 = Pipeline 1 habit strategy / execution / reselection bridge patch and hook added; all synthesis targets pending
+B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, or NEURAL18 as primitive axioms yet. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, or NEURAL20 as primitive axioms. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
