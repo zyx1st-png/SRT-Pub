@@ -47,6 +47,7 @@ machine_summary: >
 | Accessible counterfactual closure | `Physics/patches/SRT_Phys_P06_Accessible_Counterfactual_Closure_v0_1.md` | reality as accessible counterfactual closure; defines `L0_accessible^phys(theta,t)`, `Psi_f^phys`, `d_phys`, low-marginal-readout objectivity, gravity as accessible-domain reshaping, Bell as a warning against projecting L1/L2 local-object grammar into L0, and P9-P23 as future hardening lines | Medium-high physics hardening bridge |
 | Closure ontology of physical objects | `Physics/patches/SRT_Phys_P07_Closure_Ontology_of_Physical_Objects_v0_1.md` | physical objects as stable bundles of closure records; measurement as closure participation; boundary as permeability profile; noise as unresolved finite-theta residual; vacuum as untriggered accessible excitation baseline; particles as repeatable closure modes | Medium-high physics hardening bridge |
 | Closure dynamics and physical law | `Physics/patches/SRT_Phys_P08_Closure_Dynamics_and_Physical_Law_v0_1.md` | causality as counterfactual-constraint propagation; scale as closure depth; phase transition as closure-protocol restructuring; symmetry as residual freedom after closure; locality as closure-propagation bandwidth constraint; path integrals as pre-closure counterfactual weighting; entropy increase as loss of reversible counterfactual access; physical laws as grammar of admissible closure | Medium-high physics hardening bridge |
+| REP01 representation covariance / composition | `Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md` | SRT quantum bridges should remain invariant across empirically and compositionally equivalent real/complex presentations; number field must be separated from operations, composition, equivalence, and readout structure | High-priority quantum-foundations hardening guard |
 
 ---
 
@@ -193,6 +194,33 @@ human time perception is caused by quantum clock effects
 time travel is possible
 ```
 
+### REP01 representation covariance / composition
+
+Use real-valued quantum reformulations as a hardening guard on representation-dependent SRT language:
+
+```text
+complex presentation ~emp+comp real presentation
+  ->
+SRT bridge meaning should remain invariant
+```
+
+SRT use:
+
+```text
+number field alone does not specify the theory package;
+composition, equivalence, local operations, and readout rules carry substantive content;
+complex Hilbert space and explicit i are formal scaffolds, not identities with L0.
+```
+
+Do not claim:
+
+```text
+real quantum mechanics is ontologically preferred
+imaginary numbers have been physically disproved
+the 2021 network experiments were invalid
+representation equivalence proves SRT
+```
+
 ---
 
 ## 3. Recommended future synthesis
@@ -218,6 +246,7 @@ Proposed additions:
 11. Future decomposition into P07 closure ontology of physical objects, P08 closure dynamics and physical law, and P09 gravity / causal accessibility / horizon boundaries.
 12. Closure ontology of physical objects as the first decomposition of P06, covering record bundles, object identity as re-identification stability, measurement interfaces, boundary permeability, noise, vacuum, and particles.
 13. Closure dynamics and physical law as the second decomposition of P06, covering causal constraint propagation, closure depth, phase-transition-like protocol restructuring, symmetry, locality, path-integral weighting, entropy, and lawhood as admissible closure grammar.
+14. Representation covariance and composition guard: distinguish a theory's number field and visible notation from the invariant package of probabilities, operations, composition, equivalence, and empirical structure; require quantum bridge claims to survive equivalent real/complex reformulation.
 
 ---
 
@@ -231,6 +260,7 @@ Earth accretion patch = added as separate bridge note
 Cosmological principle patch = added as Pipeline 1 v2 patch note
 Spontaneous collapse patch = added as Pipeline 1 v2 patch note
 Quantum proper time patch = added as Pipeline 1 v2 patch note
+REP01 representation covariance / composition = added as bounded P3 hardening guard
 Extensions v0.1 (E01-E05) = added under Physics/Extensions/
 Index = current file
 Full synthesis = pending
