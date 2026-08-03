@@ -1,5 +1,12 @@
 ---
 source_id: SRC-2026-08-03-AI-QUANTA-REASONING-WRONG-REASONS
+id: SRC-2026-08-03-AI-QUANTA-REASONING-WRONG-REASONS
+type: material_source_card
+status: active
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
 title: Is AI Reasoning Right for the Wrong Reasons?
 source_type: science-journalism synthesis with primary-paper anchors
 domain: AI / reasoning / interpretability / chain-of-thought

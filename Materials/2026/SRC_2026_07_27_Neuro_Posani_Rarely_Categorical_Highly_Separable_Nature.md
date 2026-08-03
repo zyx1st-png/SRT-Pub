@@ -40,7 +40,7 @@ tags:
   - IBL
   - Neuropixels
   - Nature
-status: source_card
+status: active
 layer: operations
 epistemic_layer: os
 claim_mode: evidence

@@ -5,7 +5,7 @@ source_ids:
 domain: neuroscience_population_coding
 claim_level: bridge
 canonical_status: domain_bridge_patch_added
-status: patch
+status: active
 target_documents:
   - "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md"
   - "Neuroscience/SRT_Neuro_Predictions_Table.md"

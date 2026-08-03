@@ -2,7 +2,8 @@
 id: SRT-CHOICEMAP-GHOST-U5-LIVE-CORRECTION-20260727
 type: choice_trace_correction_addendum
 tags: [SourceIntuition, ChoiceMap, Ghost, YinYang, MinimalNonNeutrality, Reselectability, ChoiceAbsolutization, MetaChoice, Correction, MetaRecord]
-status: author_confirmed_live_correction_v0
+status: active
+record_stage: author_confirmed_live_correction_v0
 layer: source_intuition
 epistemic_layer: os
 claim_mode: intuition_record

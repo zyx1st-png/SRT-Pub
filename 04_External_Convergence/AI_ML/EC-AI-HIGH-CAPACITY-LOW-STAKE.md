@@ -1,7 +1,8 @@
 ---
 id: EC-AI-HIGH-CAPACITY-LOW-STAKE
 type: evidence_card
-status: draft_v2
+status: draft
+version: v2
 layer: external_convergence
 claim_mode: external_convergence
 canonical: false

@@ -2,7 +2,9 @@
 id: SRT-STRATEGY-MATHEMATICAL-REACHABILITY-PROBLEM-INDIVIDUATION
 title: "数学可达结构、研究问题制度与条件性重新个体化：论文写作大纲与策略"
 title_en: "Mathematical Reachability, Research-Problem Regimes, and Conditional Re-Individuation"
-status: strategy_note_v0_7
+type: strategy_note
+status: frozen
+version: v0_7
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: bridge

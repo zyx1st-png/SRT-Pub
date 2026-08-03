@@ -1,7 +1,8 @@
 ---
 id: SRT-AI-AIREASON01-REASON-TRACE-SEPARATION
 type: material_patch
-status: patch_v0_1
+status: active
+version: v0_1
 layer: bridge
 epistemic_layer: bridge
 claim_mode: bridge
