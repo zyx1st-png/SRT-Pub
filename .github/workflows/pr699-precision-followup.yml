@@ -1,0 +1,138 @@
+name: PR699 Precision Follow-up
+
+on:
+  pull_request:
+    types: [reopened]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pr699-precision-followup
+  cancel-in-progress: true
+
+jobs:
+  precision-fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out follow-up branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/rep01-precision-followup
+          fetch-depth: 0
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Apply precision corrections
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace_once(path: Path, old: str, new: str) -> None:
+              text = path.read_text(encoding="utf-8")
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"{path}: expected one match, found {count}: {old!r}")
+              path.write_text(text.replace(old, new, 1), encoding="utf-8")
+
+          source = Path("Materials/2026/SRC_2025_11_07_Physics_Real_Quantum_Representation_Composition_Quanta.md")
+          replace_once(
+              source,
+              "  - 10.1038/s41586-021-04160-4\nprimary_sources:\n",
+              "  - 10.1038/s41586-021-04160-4\n  - 10.1103/PhysRevLett.128.040402\n  - 10.1103/PhysRevLett.129.140401\nprimary_sources:\n",
+          )
+          replace_once(
+              source,
+              "  - title: \"Quantum theory based on real numbers can be experimentally falsified\"\n    publication: Nature 600, 625-629\n    doi: 10.1038/s41586-021-04160-4\nauthors:\n",
+              "  - title: \"Quantum theory based on real numbers can be experimentally falsified\"\n    publication: Nature 600, 625-629\n    doi: 10.1038/s41586-021-04160-4\n  - title: \"Testing Real Quantum Theory in an Optical Quantum Network\"\n    publication: Physical Review Letters 128, 040402\n    date_published: 2022-01-28\n    doi: 10.1103/PhysRevLett.128.040402\n  - title: \"Experimental Refutation of Real-Valued Quantum Mechanics under Strict Locality Conditions\"\n    publication: Physical Review Letters 129, 140401\n    date_published: 2022-09-26\n    doi: 10.1103/PhysRevLett.129.140401\nauthors:\n",
+          )
+          replace_once(
+              source,
+              "evidence_level: high_quality_secondary_synthesis_plus_one_peer_reviewed_primary_paper_one_primary_preprint_and_2021_peer_reviewed_comparator\n",
+              "evidence_level: high_quality_secondary_synthesis_plus_one_peer_reviewed_primary_paper_one_primary_preprint_one_2021_peer_reviewed_no_go_comparator_and_two_2022_peer_reviewed_experimental_tests\n",
+          )
+          replace_once(
+              source,
+              "Recent real-valued formulations reproduce the observable predictions and locality structure of standard complex quantum mechanics by changing how composite systems are represented, showing that the 2021 network experiments excluded a restricted real-theory package rather than every theory written without explicit complex numbers.\n",
+              "Recent real-valued formulations reproduce the observable predictions and stated locality structure of standard complex quantum mechanics by changing how composite systems are represented, showing that the 2021 no-go proposal and subsequent 2022 network experiments constrained a restricted real-theory package rather than every theory written without explicit complex numbers.\n",
+          )
+          replace_once(
+              source,
+              "- The 2021 *Nature* result compared complex quantum theory with a real-number theory that retained a particular package of postulates, including a standard composition rule for independent systems; within that package, the theories make different predictions in network experiments.\n",
+              "- The 2021 *Nature* result compared complex quantum theory with a real-number theory that retained a particular package of postulates, including a standard composition rule for independent systems; within that package, the theories make different predictions in network experiments.\n- Two 2022 optical-network experiments then violated the bounds of that restricted real-valued package, including a stricter test enforcing independent sources and locality conditions.\n",
+          )
+          replace_once(
+              source,
+              "- The 2021 *Nature* paper, DOI `10.1038/s41586-021-04160-4`, was checked as the comparator. Its own scope explicitly fixes the standard Hilbert-space postulates and notes that alternative real formulations can recover complex predictions only by violating at least one of those postulates.\n",
+              "- The 2021 *Nature* paper, DOI `10.1038/s41586-021-04160-4`, was checked as the no-go comparator. Its own scope explicitly fixes the standard Hilbert-space postulates and notes that alternative real formulations can recover complex predictions only by violating at least one of those postulates.\n- The two 2022 experimental follow-ups, DOI `10.1103/PhysRevLett.128.040402` and `10.1103/PhysRevLett.129.140401`, were checked as tests of that restricted package; they do not independently rule out later real-valued formulations that alter the composition or representation assumptions.\n",
+          )
+          replace_once(
+              source,
+              "- Do not write: the 2021 experiments were invalid; they validly tested a restricted postulate package.\n",
+              "- Do not write: the 2021 no-go proposal or the 2022 experiments were invalid; they validly targeted a restricted postulate package.\n",
+          )
+
+          patch = Path("Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md")
+          replace_once(
+              patch,
+              "> **Source anchor**: Quanta Magazine's 2025 synthesis, Barrios Hita et al. (`arXiv:2503.17307`; *Physical Review Letters* 136, 240202), Hoffreumon and Woods (`arXiv:2504.02808v2`), and the 2021 *Nature* comparator (`10.1038/s41586-021-04160-4`).  \n",
+              "> **Source anchor**: Quanta Magazine's 2025 synthesis, Barrios Hita et al. (`arXiv:2503.17307`; *Physical Review Letters* 136, 240202), Hoffreumon and Woods (`arXiv:2504.02808v2`), the 2021 *Nature* no-go comparator (`10.1038/s41586-021-04160-4`), and the 2022 optical-network tests (`10.1103/PhysRevLett.128.040402`; `10.1103/PhysRevLett.129.140401`).  \n",
+          )
+          replace_once(
+              patch,
+              "Within that package, real and complex formulations produce different network correlations, and experiments rejected the restricted real package.\n",
+              "Within that package, real and complex formulations produce different network correlations. Two 2022 optical-network experiments subsequently violated the restricted real-package bounds, including a stricter test under independent-source and locality conditions.\n",
+          )
+          replace_once(
+              patch,
+              "B_SRT(R1) = B_SRT(R2)\n",
+              "Inv(B_SRT(R1)) = Inv(B_SRT(R2))\n",
+          )
+          replace_once(
+              patch,
+              "where `B_SRT` is the SRT bridge interpretation, not a canonical mathematical function.\n",
+              "where `B_SRT` is the SRT bridge interpretation and `Inv` extracts only the representation-invariant bridge content; neither is a canonical mathematical function. This does not require equal simplicity, naturalness, or explanatory value across formulations.\n",
+          )
+          replace_once(
+              patch,
+              "- the 2021 experiment was erroneous rather than scope-limited;\n",
+              "- the 2021 no-go proposal or the 2022 experiments were erroneous rather than scope-limited;\n",
+          )
+
+          physics_index = Path("Physics/_SRT_Physics_Hardening_Index.md")
+          replace_once(
+              physics_index,
+              "the 2021 network experiments were invalid\n",
+              "the 2021 no-go proposal or the 2022 network experiments were invalid\n",
+          )
+
+          material_log = Path("Operations/Material_Log/2026-08_Part01.md")
+          replace_once(
+              material_log,
+              "；2021 *Nature* comparator DOI:`10.1038/s41586-021-04160-4` | High-quality secondary synthesis + one peer-reviewed primary paper + one primary preprint + peer-reviewed comparator；quantum foundations / mathematical representation / composite systems |",
+              "；2021 *Nature* no-go comparator DOI:`10.1038/s41586-021-04160-4`；2022 experimental tests DOI:`10.1103/PhysRevLett.128.040402`, `10.1103/PhysRevLett.129.140401` | High-quality secondary synthesis + one peer-reviewed primary paper + one primary preprint + one peer-reviewed no-go comparator + two peer-reviewed experimental tests；quantum foundations / mathematical representation / composite systems |",
+          )
+          PY
+
+      - name: Check split metadata freshness
+        run: uv run python scripts/refresh_split_metadata.py --check
+
+      - name: Run governance preflight
+        run: uv run python scripts/governance_preflight.py --skip-write-report --strict-split-metadata
+
+      - name: Commit validated precision fix and remove workflow
+        shell: bash
+        run: |
+          rm .github/workflows/pr699-precision-followup.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "physics: clarify REP01 evidence and invariance scope"
+          git push origin HEAD:agent/rep01-precision-followup
