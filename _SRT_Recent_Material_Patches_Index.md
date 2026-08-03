@@ -206,12 +206,14 @@ NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-a
 |---|---|---|---|
 | QBox / hyper-decoherence | `Physics/SRT_Physics_Hardening_QBox_Hyperdecoherence_v0_1.md` | access-limited reality layer; avoid projecting L1 causal assumptions into L0 | Medium |
 | Earth inner Solar System accretion | `Physics/SRT_Physics_Hardening_Earth_Inner_Solar_System_Accretion_v0_1.md` | total versus accessible possibility space; barrier-shaped selection; physical sedimentation | Medium-low |
+| REP01 representation covariance / composition | `Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md` | requires SRT quantum bridges to survive empirically equivalent real/complex reformulations and separates number field from composition, equivalence, operations, and readout structure | High |
 
-These are disciplined analogues, not direct SRT evidence:
+These are disciplined analogues or hardening guards, not direct SRT evidence:
 
 ```text
 QBox: latent structure -> access-limited effective reality layer
 Earth accretion: total possibility space -> constrained accessible reservoir -> manifest object
+REP01: presentation change -> preserved empirical/composition structure -> representation-covariant bridge
 ```
 
 Recommended future target:
