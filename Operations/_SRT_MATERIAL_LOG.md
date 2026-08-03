@@ -5,7 +5,7 @@ tags: [MaterialLog, Pipeline1, AuditTrail]
 status: active_v1
 role: split_master_index
 layer: meta
-epistem_layer: os
+epistemic_layer: os
 claim_mode: canonical
 dependency: [SRT-EXECUTION-PLAN]
 ---
