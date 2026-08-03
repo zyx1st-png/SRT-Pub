@@ -5,7 +5,7 @@ source_ids:
 domain: neuroscience_habit_plasticity_action_control
 claim_level: bridge
 canonical_status: non_canonical
-status: patch
+status: active
 target_documents:
   - "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md"
   - "Neuroscience/SRT_Neuro_Predictions_Table.md"
