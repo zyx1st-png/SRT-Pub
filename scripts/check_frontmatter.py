@@ -4,8 +4,13 @@
 from __future__ import annotations
 
 import argparse
+import json
+import re
+import subprocess
+from pathlib import Path
 
 from governance_common import (
+    ROOT,
     frontmatter_for,
     iter_markdown,
     print_summary,
@@ -85,10 +90,7 @@ def is_frontmatter_exempt(rel: str) -> bool:
 def is_noncanonical_transcript(data: dict[str, str]) -> bool:
     status = data.get("status", "")
     transcript_type = data.get("type", "") or data.get("kind", "")
-    return (
-        status in NONCANONICAL_TRANSCRIPT_STATUSES
-        and "transcript" in transcript_type
-    )
+    return status in NONCANONICAL_TRANSCRIPT_STATUSES and "transcript" in transcript_type
 
 
 def missing_recommended_keys(data: dict[str, str]) -> list[str]:
@@ -100,15 +102,38 @@ def missing_recommended_keys(data: dict[str, str]) -> list[str]:
     return sorted(RECOMMENDED_KEYS - present)
 
 
+def parse_baseline_text(text: str) -> set[str]:
+    return {
+        line.strip()
+        for line in text.splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    }
+
+
 def load_baseline(path_arg: str) -> set[str]:
     path = repo_path(path_arg)
     if not path.is_file():
         raise FileNotFoundError(path)
-    return {
-        line.strip()
-        for line in read_text(path).splitlines()
-        if line.strip() and not line.lstrip().startswith("#")
-    }
+    return parse_baseline_text(read_text(path))
+
+
+def baseline_at_ref(base_ref: str, path_arg: str) -> set[str]:
+    rel = relpath(repo_path(path_arg))
+    result = subprocess.run(
+        ["git", "show", f"{base_ref}:{rel}"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"cannot read baseline `{rel}` at `{base_ref}`: {result.stderr.strip()}"
+        )
+    return parse_baseline_text(result.stdout)
+
+
+def baseline_additions(base: set[str], current: set[str]) -> list[str]:
+    return sorted(current - base)
 
 
 def write_baseline(path_arg: str, warnings: list[str]) -> None:
@@ -128,37 +153,97 @@ def write_baseline(path_arg: str, warnings: list[str]) -> None:
     path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--strict", action="store_true")
-    parser.add_argument("--include-artifacts", action="store_true")
-    parser.add_argument("--baseline", help="Known warning baseline file.")
-    parser.add_argument("--write-baseline", help="Write current warnings to this baseline file.")
-    parser.add_argument(
-        "--fail-on-new-warnings",
-        action="store_true",
-        help="Exit nonzero when warnings are not present in --baseline.",
-    )
-    args = parser.parse_args()
+def status_repair_suggestion(value: str) -> str:
+    versioned = re.fullmatch(r"(draft|active|frozen|archived)_v(.+)", value)
+    if versioned:
+        lifecycle, version = versioned.groups()
+        return f"status: {lifecycle}; version: v{version}"
 
+    patch = re.fullmatch(r"patch(?:_v(.+))?", value)
+    if patch:
+        version = patch.group(1)
+        suffix = f"; version: v{version}" if version else ""
+        return f"status: active; type: material_patch{suffix}"
+
+    if value == "source_card":
+        return "status: active; type: material_source_card"
+
+    if value.startswith("author_confirmed_"):
+        return f"status: active; record_stage: {value}"
+
+    return f"status: active; record_stage: {value}"
+
+
+def changed_markdown_paths(base_ref: str, include_artifacts: bool = False) -> list[Path]:
+    result = subprocess.run(
+        [
+            "git",
+            "diff",
+            "--name-only",
+            "--diff-filter=ACMR",
+            "-z",
+            f"{base_ref}...HEAD",
+            "--",
+            "*.md",
+            "*.markdown",
+        ],
+        cwd=ROOT,
+        capture_output=True,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.decode("utf-8", errors="replace").strip())
+
+    paths: list[Path] = []
+    for raw in result.stdout.split(b"\0"):
+        if not raw:
+            continue
+        rel = raw.decode("utf-8", errors="strict")
+        path = repo_path(rel)
+        if not path.is_file() or is_frontmatter_exempt(rel):
+            continue
+        if not include_artifacts and rel.startswith(
+            ("papers/", "graphify-out/", "Archive/", "video/")
+        ):
+            continue
+        paths.append(path)
+    return sorted(set(paths))
+
+
+def duplicate_id_locations() -> dict[str, list[str]]:
+    locations: dict[str, list[str]] = {}
+    for path in iter_markdown(include_artifacts=False):
+        rel = relpath(path)
+        if rel in BASELINE_FILES or is_frontmatter_exempt(rel):
+            continue
+        fm = frontmatter_for(path)
+        if fm is None or fm.malformed:
+            continue
+        file_id = fm.data.get("id")
+        if file_id:
+            locations.setdefault(file_id, []).append(rel)
+    return {key: value for key, value in locations.items() if len(value) > 1}
+
+
+def scan_paths(
+    paths: list[Path],
+    *,
+    strict: bool,
+    local_mode: bool,
+    baseline_paths: set[str],
+) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
     ids: dict[str, str] = {}
-    baseline_paths = {
-        relpath(repo_path(path_arg))
-        for path_arg in [args.baseline, args.write_baseline]
-        if path_arg
-    }
-    baseline_paths.update(BASELINE_FILES)
+    duplicate_locations = duplicate_id_locations() if local_mode else {}
 
-    for path in iter_markdown(include_artifacts=args.include_artifacts):
+    for path in paths:
         rel = relpath(path)
         if rel in baseline_paths or is_frontmatter_exempt(rel):
             continue
         fm = frontmatter_for(path)
         if fm is None:
             message = f"{rel}: missing frontmatter"
-            if args.strict:
+            if strict:
                 errors.append(message)
             else:
                 warnings.append(message)
@@ -170,24 +255,36 @@ def main() -> None:
         missing = missing_recommended_keys(fm.data)
         if missing:
             message = f"{rel}: missing recommended frontmatter keys: {', '.join(missing)}"
-            if args.strict:
+            if strict:
                 errors.append(message)
             else:
                 warnings.append(message)
 
         status_value = fm.data.get("status", "")
         if status_value and status_value not in STATUS_RATCHET_ENUM:
-            warnings.append(
+            message = (
                 f"{rel}: status `{status_value}` outside ratchet enum "
                 "(draft|active|frozen|archived)"
             )
+            if local_mode:
+                message += (
+                    f"; suggested normalization: {status_repair_suggestion(status_value)}"
+                )
+            warnings.append(message)
 
         file_id = fm.data.get("id")
         if file_id:
-            previous = ids.get(file_id)
-            if previous and previous != rel:
-                warnings.append(f"duplicate frontmatter id `{file_id}`: {previous} / {rel}")
-            ids[file_id] = rel
+            if local_mode:
+                locations = duplicate_locations.get(file_id, [])
+                if len(locations) > 1:
+                    warnings.append(
+                        f"duplicate frontmatter id `{file_id}`: {' / '.join(locations)}"
+                    )
+            else:
+                previous = ids.get(file_id)
+                if previous and previous != rel:
+                    warnings.append(f"duplicate frontmatter id `{file_id}`: {previous} / {rel}")
+                ids[file_id] = rel
 
         if is_helper_path(rel):
             claim_mode = fm.data.get("claim_mode", "")
@@ -197,11 +294,96 @@ def main() -> None:
             if claim_mode == "canonical":
                 warnings.append(f"{rel}: helper-layer file uses claim_mode: canonical")
 
+    return errors, warnings
+
+
+def write_json_report(path_arg: str, payload: dict[str, object]) -> None:
+    path = repo_path(path_arg)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--strict", action="store_true")
+    parser.add_argument("--include-artifacts", action="store_true")
+    parser.add_argument("--baseline", help="Known warning baseline file.")
+    parser.add_argument("--write-baseline", help="Write current warnings to this baseline file.")
+    parser.add_argument(
+        "--fail-on-new-warnings",
+        action="store_true",
+        help="Exit nonzero when warnings are not present in --baseline.",
+    )
+    parser.add_argument(
+        "--fail-on-warnings",
+        action="store_true",
+        help="Exit nonzero for every warning in the selected scope.",
+    )
+    parser.add_argument(
+        "--changed-only",
+        action="store_true",
+        help="Audit only Markdown files changed relative to --base-ref.",
+    )
+    parser.add_argument("--base-ref", help="Git ref/SHA used by --changed-only.")
+    parser.add_argument(
+        "--check-baseline-nonexpansion",
+        action="store_true",
+        help="Reject warning-baseline entries added relative to --base-ref.",
+    )
+    parser.add_argument(
+        "--baseline-policy-file",
+        default="Governance/Frontmatter_Warning_Baseline.txt",
+        help="Baseline file protected by --check-baseline-nonexpansion.",
+    )
+    parser.add_argument("--json-report", help="Write a machine-readable diagnostic report.")
+    args = parser.parse_args()
+
+    if args.changed_only and not args.base_ref:
+        parser.error("--changed-only requires --base-ref")
+    if args.check_baseline_nonexpansion and not args.base_ref:
+        parser.error("--check-baseline-nonexpansion requires --base-ref")
+    if args.changed_only and args.write_baseline:
+        parser.error("--write-baseline cannot be combined with --changed-only")
+
+    baseline_paths = {
+        relpath(repo_path(path_arg))
+        for path_arg in [args.baseline, args.write_baseline]
+        if path_arg
+    }
+    baseline_paths.update(BASELINE_FILES)
+
+    try:
+        paths = (
+            changed_markdown_paths(args.base_ref, args.include_artifacts)
+            if args.changed_only
+            else iter_markdown(include_artifacts=args.include_artifacts)
+        )
+    except RuntimeError as exc:
+        print_summary("frontmatter", [f"changed-file discovery failed: {exc}"], [])
+        raise SystemExit(1)
+
+    errors, warnings = scan_paths(
+        paths,
+        strict=args.strict,
+        local_mode=args.changed_only,
+        baseline_paths=baseline_paths,
+    )
+
     if args.write_baseline:
         write_baseline(args.write_baseline, warnings)
-        print(f"frontmatter_baseline: wrote={args.write_baseline} warnings={len(set(warnings))}")
+        print(
+            f"frontmatter_baseline: wrote={args.write_baseline} "
+            f"warnings={len(set(warnings))}"
+        )
 
+    known_warnings: list[str] = []
+    new_warnings: list[str] = list(warnings)
+    retired_warnings: list[str] = []
     display_warnings = warnings
+
     if args.baseline:
         try:
             baseline = load_baseline(args.baseline)
@@ -211,16 +393,61 @@ def main() -> None:
         current = set(warnings)
         new_warnings = sorted(current - baseline)
         retired_warnings = sorted(baseline - current)
-        known_count = len(current & baseline)
+        known_warnings = sorted(current & baseline)
         print(
             "frontmatter_baseline: "
-            f"known={known_count} new={len(new_warnings)} retired={len(retired_warnings)}"
+            f"known={len(known_warnings)} new={len(new_warnings)} "
+            f"retired={len(retired_warnings)}"
         )
         if args.fail_on_new_warnings:
             errors.extend(f"new frontmatter warning: {item}" for item in new_warnings)
             display_warnings = []
         else:
             display_warnings = new_warnings
+
+    baseline_growth: list[str] = []
+    if args.check_baseline_nonexpansion:
+        try:
+            current_baseline = load_baseline(args.baseline_policy_file)
+            base_baseline = baseline_at_ref(args.base_ref, args.baseline_policy_file)
+            baseline_growth = baseline_additions(base_baseline, current_baseline)
+        except (FileNotFoundError, RuntimeError) as exc:
+            errors.append(f"baseline non-expansion check failed: {exc}")
+        else:
+            errors.extend(
+                f"warning baseline expanded without authorization: {item}"
+                for item in baseline_growth
+            )
+            print(
+                "frontmatter_baseline_policy: "
+                f"added={len(baseline_growth)} current={len(current_baseline)} "
+                f"base={len(base_baseline)}"
+            )
+
+    if args.fail_on_warnings:
+        errors.extend(f"frontmatter warning: {item}" for item in warnings)
+        display_warnings = []
+
+    mode = "pr_local" if args.changed_only else "repository"
+    print(f"frontmatter_scope: mode={mode} checked_files={len(paths)}")
+
+    if args.json_report:
+        write_json_report(
+            args.json_report,
+            {
+                "schema_version": 1,
+                "mode": mode,
+                "base_ref": args.base_ref,
+                "checked_files": [relpath(path) for path in paths],
+                "errors": errors,
+                "warnings": warnings,
+                "known_warnings": known_warnings,
+                "new_warnings": new_warnings,
+                "retired_warnings": retired_warnings,
+                "baseline_additions": baseline_growth,
+                "verdict": "dirty" if errors else "clean",
+            },
+        )
 
     print_summary("frontmatter", errors, display_warnings)
     raise SystemExit(1 if errors else 0)
