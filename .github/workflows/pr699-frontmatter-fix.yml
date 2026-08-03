@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - agent/real-quantum-representation-guard-v2
+  pull_request:
+    types:
+      - reopened
 
 permissions:
   contents: write
