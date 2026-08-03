@@ -21,6 +21,14 @@ jobs:
           ref: agent/real-quantum-representation-guard-v2
           fetch-depth: 0
 
+      - name: Sync current main
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git merge --no-edit origin/main
+
       - name: Set up uv
         uses: astral-sh/setup-uv@v5
 
@@ -47,7 +55,7 @@ jobs:
               + "layer: operations\n"
               + "epistemic_layer: os\n"
           )
-          if f"id: {source_id}\n" not in text:
+          if f"id: {source_id}" not in text.splitlines():
               if anchor not in text:
                   raise SystemExit(f"missing source_id anchor in {source}")
               text = text.replace(anchor, insertion, 1)
@@ -83,12 +91,6 @@ jobs:
         shell: bash
         run: |
           rm .github/workflows/pr699-frontmatter-fix.yml
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            Materials/2026/SRC_2025_11_07_Physics_Real_Quantum_Representation_Composition_Quanta.md \
-            Operations/Material_Log/2026-08_Part01.md \
-            Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md \
-            .github/workflows/pr699-frontmatter-fix.yml
+          git add -A
           git commit -m "governance: normalize PR 699 frontmatter"
           git push origin HEAD:agent/real-quantum-representation-guard-v2
