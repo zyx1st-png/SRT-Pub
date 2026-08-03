@@ -12,14 +12,14 @@ permissions:
 jobs:
   governance-preflight:
     runs-on: ubuntu-latest
+    env:
+      GOVERNANCE_BASE_REF: ${{ github.event.pull_request.base.sha }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          # Full history: the context-bundle builder records each source file's
-          # last-commit date. A shallow clone reports the graft commit's date
-          # for every file, so the bundles would claim the whole canonical
-          # spine changed today. The builder refuses to run shallow.
+          # Full history is required both for PR-local diff attribution and for
+          # context-bundle source-date provenance.
           fetch-depth: 0
 
       - name: Set up uv
@@ -37,13 +37,25 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          uv run python scripts/governance_preflight.py --skip-write-report --strict-split-metadata 2>&1 | tee governance-preflight.log
+          args=()
+          if [[ -n "${GOVERNANCE_BASE_REF:-}" ]]; then
+            args+=(--base-ref "$GOVERNANCE_BASE_REF")
+          fi
+          uv run python scripts/governance_preflight.py \
+            --skip-write-report \
+            --strict-split-metadata \
+            --json-report governance-preflight-summary.json \
+            "${args[@]}" 2>&1 | tee governance-preflight.log
 
       - name: Upload governance preflight diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: governance-preflight-log
-          path: governance-preflight.log
-          if-no-files-found: error
+          name: governance-preflight-diagnostics
+          path: |
+            governance-preflight.log
+            governance-preflight-summary.json
+            frontmatter-pr-local.json
+            frontmatter-repository.json
+          if-no-files-found: warn
           retention-days: 14
