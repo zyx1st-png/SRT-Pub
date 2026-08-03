@@ -59,6 +59,11 @@ def main() -> None:
         registry_cmd.append("--strict")
     steps.append(("registry consistency", registry_cmd))
 
+    if (ROOT / "scripts" / "test_check_frontmatter.py").is_file():
+        steps.append(
+            ("frontmatter anti-blocking tests", [python, "scripts/test_check_frontmatter.py"])
+        )
+
     frontmatter_cmd = [python, "scripts/check_frontmatter.py"]
     if args.strict:
         frontmatter_cmd.append("--strict")
@@ -92,8 +97,10 @@ def main() -> None:
     # replaying the provenance recorded in their own frontmatter.
     if (ROOT / "Operations" / "Context_Bundles" / "SRT_CONTEXT_BUNDLE_SPINE.md").is_file():
         steps.append(
-            ("context bundle freshness",
-             [python, "scripts/build_srt_context_bundles.py", "--check"])
+            (
+                "context bundle freshness",
+                [python, "scripts/build_srt_context_bundles.py", "--check"],
+            )
         )
 
     noise_cmd = [python, "scripts/check_forbidden_noise.py"]
