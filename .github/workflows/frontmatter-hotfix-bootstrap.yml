@@ -1,0 +1,101 @@
+name: Frontmatter Hotfix Bootstrap
+
+on:
+  push:
+    branches:
+      - agent/frontmatter-ratchet-hotfix-2026-08-03
+
+permissions:
+  contents: write
+
+jobs:
+  apply-hotfix:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Normalize frontmatter lifecycle fields
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          replacements = {
+              "01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md": (
+                  "status: author_confirmed_live_correction_v0",
+                  "status: active\nrecord_stage: author_confirmed_live_correction_v0",
+              ),
+              "01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md": (
+                  "status: author_confirmed_source_intuition_v0",
+                  "status: active\nrecord_stage: author_confirmed_source_intuition_v0",
+              ),
+              "Materials/2026/SRC_2026_07_27_Neuro_Posani_Rarely_Categorical_Highly_Separable_Nature.md": (
+                  "status: source_card",
+                  "status: active",
+              ),
+              "Materials/2026/SRC_2026_07_30_Philosophy_Schmid_Psychonomic_Harmony.md": (
+                  "status: active_v1_fulltext_author_draft",
+                  "status: active\nsource_stage: active_v1_fulltext_author_draft",
+              ),
+              "Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md": (
+                  "status: patch",
+                  "status: active",
+              ),
+              "Operations/Material_Log/2026-07_Part02.md": (
+                  "status: active_v1",
+                  "status: active\nversion: v1",
+              ),
+              "Operations/_SRT_CHOICE_TRACE_CORRECTION_POINTER_2026-07-27.md": (
+                  "status: active_correction_pointer_v0",
+                  "status: active\npointer_version: v0",
+              ),
+              "Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md": (
+                  "status: strategy_note_v0_7",
+                  "type: strategy_note\nstatus: frozen\nversion: v0_7",
+              ),
+          }
+
+          for name, (old, new) in replacements.items():
+              path = Path(name)
+              text = path.read_text(encoding="utf-8")
+              if new in text:
+                  continue
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"{name}: expected exactly one `{old}`, found {count}")
+              path.write_text(text.replace(old, new, 1), encoding="utf-8")
+              print(f"updated {name}")
+          PY
+
+      - name: Run governance preflight
+        run: uv run python scripts/governance_preflight.py --skip-write-report --strict-split-metadata
+
+      - name: Commit normalized frontmatter
+        shell: bash
+        run: |
+          rm .github/workflows/frontmatter-hotfix-bootstrap.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            01_Source_Intuition/SRT_CHOICEMAP_GHOST_U5_LIVE_CORRECTION_2026-07-27.md \
+            01_Source_Intuition/SRT_CHOICEMAP_PROXY_OBJECT_RESIDUAL_FRICTION_CONTINUATION_2026-07-28.md \
+            Materials/2026/SRC_2026_07_27_Neuro_Posani_Rarely_Categorical_Highly_Separable_Nature.md \
+            Materials/2026/SRC_2026_07_30_Philosophy_Schmid_Psychonomic_Harmony.md \
+            Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md \
+            Operations/Material_Log/2026-07_Part02.md \
+            Operations/_SRT_CHOICE_TRACE_CORRECTION_POINTER_2026-07-27.md \
+            Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md \
+            .github/workflows/frontmatter-hotfix-bootstrap.yml
+          git commit -m "governance: normalize frontmatter lifecycle fields"
+          git push origin HEAD
