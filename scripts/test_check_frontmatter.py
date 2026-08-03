@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-from check_frontmatter import status_fix_suggestions
+from check_frontmatter_changed import status_fix_suggestions
 from check_frontmatter_baseline_monotonic import parse_baseline
 
 
