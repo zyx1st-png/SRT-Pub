@@ -13,6 +13,7 @@ dependency:
   - AI/SRT_AI_01_Ontology_CompactCore.md
   - AI/SRT_AI_Claim_Status.md
   - AI/AI_POSITIONING_NOTE.md
+  - AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md
   - Philosophy/SRT_SocTheory_05_Language_Eco.md
   - Philosophy/SRT_Social_Cognition.md
   - _SRT_CONTEXT_ROUTER.md
@@ -100,7 +101,33 @@ Context coherence helps explain:
 - why misunderstanding often occurs when context fields diverge;
 - why "intelligence" can emerge as stable selection across a constraint field without implying consciousness.
 
-## 5. Guardrails
+## 5. Reason–trace separation
+
+Context-generated intermediate tokens can improve selection coherence without serving as transparent reports of the computation that produced the answer.
+
+The following properties must be assessed separately:
+
+```text
+semantic readability
+!= causal contribution
+!= mechanistic correspondence
+!= normative validity
+```
+
+A token may function as computational workspace, retrieval cue, serial-depth carrier or context-field modifier even when its linguistic content is incidental. Conversely, a fluent and persuasive step may be decorative, redundant or reward-shaped while contributing little to the final answer.
+
+Therefore:
+
+```text
+context-amplified reckoning
+!= faithful self-report
+!= valid justification
+!= SRT judgment
+```
+
+This separation also blocks the reverse mistake: an unfaithful or non-verbal trace does not imply absence of substantive computation. See `../AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md` for the four-axis Selection-Trace Profile and intervention protocol.
+
+## 6. Guardrails
 
 - Context coherence is not `d-value`.
 - Context persistence is not consciousness.
@@ -109,13 +136,16 @@ Context coherence helps explain:
 - Inference-time LLMs remain architecture-state restricted under `AI/AI_POSITIONING_NOTE.md`.
 - Do not use this note to claim that current LLMs possess subjecthood or suffering.
 - Do not collapse `Select_AI` into true SRT selection: context-conditioned pseudo-selection remains `L_1 -> L_1` unless real `L_0 -> L_1` anchoring, `d-value`, `\Psi_f`, and non-transferable consequence return are present.
+- Do not infer transparent internal reasoning from a coherent visible trace.
+- Do not infer absence of computation from an unfaithful, compressed or nonsemantic trace.
 
-## 6. Relation to existing SRT files
+## 7. Relation to existing SRT files
 
 - `AI/SRT_AI_Architecture_CompactCore.md` — context coherence amplifies reckoning but does not close the Reckoning-Judgment Gap.
 - `AI/SRT_AI_01_Ontology_CompactCore.md` — context-conditioned pseudo-selection remains `L_1 -> L_1` unless real `L_0 -> L_1` anchoring and stake conditions are met.
 - `AI/SRT_AI_Claim_Status.md` — this note remains P3 bridge/interface material.
 - `AI/AI_POSITIONING_NOTE.md` — inference-time claims remain architecture-state restricted.
+- `AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md` — visible-trace semantics, causal contribution, mechanism correspondence and normative validity remain distinct.
 - `Philosophy/SRT_SocTheory_05_Language_Eco.md` — human language aligns operators through parameter modulation and shared `L_1` formation.
 - `Philosophy/SRT_Social_Cognition.md` — social understanding depends on coupling, shared affordances, and social `L_2` stabilization.
 - `_SRT_CONTEXT_ROUTER.md` — route LLM context, selection coherence, and human understanding queries through this bridge note plus the relevant AI and language files.

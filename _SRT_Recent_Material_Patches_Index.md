@@ -17,6 +17,7 @@ Core_Law/SRT_Collective_Selection.md
 Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
 Physics/SRT_Physics_Bridge_v0_2.md
 Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
+AI/SRT_AI_Architecture_CompactCore.md
 ```
 
 ---
@@ -73,6 +74,43 @@ minimal predictive individuation
 != moral agency
 != responsibility
 ```
+
+---
+
+## 1A. AI reasoning / evidence patches
+
+| Patch | File | Main SRT use | Integration priority |
+|---|---|---|---|
+| AIEVID01 evidence provenance and stake gate | `AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md` | discounts target-overlap evidence before stake admission; separates optimized signs, causal grounding and same-bearer consequence return | High |
+| AIREASON01 reason–trace separation | `AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md` | separates semantic readability, causal contribution, mechanistic correspondence and normative validity of visible reasoning traces; blocks both anthropomorphic overreading and the inference that unfaithful traces imply no computation | High |
+
+AIREASON01 is bounded into:
+
+```text
+Bridge/SRT_Context_Coherence_Intelligence_Interface.md
+```
+
+and preserves:
+
+```text
+correct answer
+!= intended abstraction
+!= causally active trace
+!= faithful mechanism report
+!= valid justification
+!= real choice moment
+!= stake or subjecthood
+```
+
+Recommended future use:
+
+```text
+AI reasoning / interpretability evaluation protocol
+future AI architecture synthesis
+architecture-state-specific benchmark design
+```
+
+Neither AIEVID01 nor AIREASON01 modifies canonical `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, Stable ISP or the P1 Real Choice Moment theorem.
 
 ---
 
