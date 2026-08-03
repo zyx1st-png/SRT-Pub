@@ -32,7 +32,7 @@ srt_relevance: representation-covariance guard; composition-rule dependence; mat
 integration_priority: A_bounded_bridge_high
 related_srt_claims:
   - SRT-PHYSICS-CLAIM-STATUS
-  - SRT-PHYS-P09-REPRESENTATION-COVARIANCE-COMPOSITION
+  - SRT-PHYS-REP01-REPRESENTATION-COVARIANCE-COMPOSITION
   - SRT-QUANT-00-COMPACT-CORE
   - SRT-QUANT-01-COMPACT-CORE
   - SRT-L0-METAPHYSICS
@@ -121,7 +121,7 @@ Likewise, a selection/measurement bridge must be invariant under complex-to-real
 
 Created with this SourceCard:
 
-- `Physics/patches/SRT_Phys_P09_Representation_Covariance_and_Composition_Guard_v0_1.md`
+- `Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md`
 
 Future synthesis targets:
 
