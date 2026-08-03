@@ -16,10 +16,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          # Full history: the context-bundle builder records each source file's
-          # last-commit date. A shallow clone reports the graft commit's date
-          # for every file, so the bundles would claim the whole canonical
-          # spine changed today. The builder refuses to run shallow.
+          # Full history is required for changed-file attribution, base-health
+          # comparison, baseline monotonicity, and context-bundle provenance.
           fetch-depth: 0
 
       - name: Set up uv
@@ -30,20 +28,113 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Check base main frontmatter health
+        id: base_frontmatter
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          base_ref="origin/${{ github.base_ref }}"
+          rm -rf /tmp/srt-governance-base
+          trap 'git worktree remove --force /tmp/srt-governance-base >/dev/null 2>&1 || true' EXIT
+          git worktree add --detach /tmp/srt-governance-base "$base_ref"
+          (
+            cd /tmp/srt-governance-base
+            uv run python scripts/check_frontmatter.py \
+              --baseline Governance/Frontmatter_Warning_Baseline.txt \
+              --fail-on-new-warnings
+          ) 2>&1 | tee base-frontmatter.log
+
+      - name: Check PR-local frontmatter
+        id: pr_frontmatter
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          set -o pipefail
+          uv run python scripts/check_frontmatter_changed.py \
+            --base-ref "origin/${{ github.base_ref }}" \
+            --baseline Governance/Frontmatter_Warning_Baseline.txt \
+            --fail-on-new-warnings \
+            --suggest-fixes 2>&1 | tee pr-frontmatter.log
+
+      - name: Enforce frontmatter baseline monotonicity
+        id: baseline_monotonic
+        if: github.event_name == 'pull_request'
+        shell: bash
+        env:
+          BASELINE_EXPANSION_APPROVED: ${{ contains(github.event.pull_request.labels.*.name, 'governance-baseline-expansion-approved') }}
+        run: |
+          set -o pipefail
+          args=(
+            --base-ref "origin/${{ github.base_ref }}"
+            --baseline Governance/Frontmatter_Warning_Baseline.txt
+          )
+          if [[ "$BASELINE_EXPANSION_APPROVED" == "true" ]]; then
+            args+=(--allow-added)
+          fi
+          uv run python scripts/check_frontmatter_baseline_monotonic.py "${args[@]}" \
+            2>&1 | tee baseline-monotonic.log
+
       - name: Check split metadata freshness
         run: uv run python scripts/refresh_split_metadata.py --check
 
       - name: Run governance preflight
+        id: full_preflight
         shell: bash
         run: |
           set -o pipefail
-          uv run python scripts/governance_preflight.py --skip-write-report --strict-split-metadata 2>&1 | tee governance-preflight.log
+          uv run python scripts/governance_preflight.py \
+            --skip-write-report \
+            --strict-split-metadata 2>&1 | tee governance-preflight.log
+
+      - name: Classify governance result
+        if: always()
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_OUTCOME: ${{ steps.base_frontmatter.outcome }}
+          LOCAL_OUTCOME: ${{ steps.pr_frontmatter.outcome }}
+          BASELINE_OUTCOME: ${{ steps.baseline_monotonic.outcome }}
+          FULL_OUTCOME: ${{ steps.full_preflight.outcome }}
+        run: |
+          {
+            echo "## Governance failure attribution"
+            echo
+            echo "| Scope | Outcome |"
+            echo "|---|---|"
+            echo "| base_main_frontmatter | ${BASE_OUTCOME:-not-run} |"
+            echo "| pr_local_frontmatter | ${LOCAL_OUTCOME:-not-run} |"
+            echo "| baseline_monotonicity | ${BASELINE_OUTCOME:-not-run} |"
+            echo "| merged_repository_preflight | ${FULL_OUTCOME:-not-run} |"
+            echo
+
+            if [[ "$EVENT_NAME" != "pull_request" ]]; then
+              echo "**Verdict:** MAIN PUSH CHECK — inspect the full preflight result."
+            elif [[ "$LOCAL_OUTCOME" == "failure" ]]; then
+              echo "**Verdict:** PR_LOCAL / LOCAL DIRTY / DO NOT MERGE."
+            elif [[ "$BASELINE_OUTCOME" == "failure" ]]; then
+              echo "**Verdict:** PR_LOCAL BASELINE DEBT EXPANSION / DO NOT MERGE."
+            elif [[ "$BASE_OUTCOME" == "failure" && "$FULL_OUTCOME" == "success" ]]; then
+              echo "**Verdict:** BASE_MAIN WAS BLOCKED; THIS PR REPAIRS IT / HOTFIX PATH."
+            elif [[ "$BASE_OUTCOME" == "failure" ]]; then
+              echo "**Verdict:** BASE_MAIN BLOCKED / HOTFIX ONLY."
+            elif [[ "$FULL_OUTCOME" == "failure" ]]; then
+              echo "**Verdict:** LOCAL FRONTMATTER CLEAN; FULL REPOSITORY OR INFRA FAILURE / DO NOT MERGE."
+            else
+              echo "**Verdict:** LOCAL CLEAN / MAIN HEALTHY / NORMAL MERGE."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload governance preflight diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: governance-preflight-log
-          path: governance-preflight.log
-          if-no-files-found: error
+          path: |
+            governance-preflight.log
+            base-frontmatter.log
+            pr-frontmatter.log
+            baseline-monotonic.log
+          if-no-files-found: warn
           retention-days: 14

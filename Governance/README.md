@@ -2,13 +2,14 @@
 id: SRT-GOVERNANCE-README
 type: index
 tags: [Governance, Documentation, Quality, Archive]
-status: active_v2
+status: active
+version: v2
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-INDEX, SRT-AGENTS]
-updated: 2026-07-16
+updated: 2026-08-03
 ---
 
 # SRT Governance Hub
@@ -70,10 +71,13 @@ updated: 2026-07-16
 1. `../Operations/README.md`
 2. `../Operations/_SRT_OPERATIONS_SCHEDULE.md`
 3. `_SRT_GOVERNANCE_PIPELINE.md`
-4. `_SRT_QUALITY_SCORECARD.md`
-5. `_SRT_WEEKLY_THEORY_REVIEW.md`
-6. `_SRT_RELEASE_NOTE_TEMPLATE.md`
-7. `_SRT_CHANGELOG_2026.md`
+4. `Governance_Anti_Blocking_Gate.md`
+5. `_SRT_QUALITY_SCORECARD.md`
+6. `_SRT_WEEKLY_THEORY_REVIEW.md`
+7. `_SRT_RELEASE_NOTE_TEMPLATE.md`
+8. `_SRT_CHANGELOG_2026.md`
+
+`Governance_Anti_Blocking_Gate.md` 定义 PR-local、base-main 与完整仓库三范围检查、失败归因、baseline 单调性和 main-health incident 模式。
 
 `_SRT_EXECUTION_PLAN.md` is retained as a legacy compatibility bridge for old dependencies. Prefer the Operations schedule for current cadence.
 
@@ -83,7 +87,7 @@ updated: 2026-07-16
 2. `../Operations/Archive_Records/Large_File_Audit_2026-05-09.md`
 3. `../LONGFORM_SPLITS.md`
 
-Baselines record known debt. They are not quality scores.
+Baselines record known debt. They are not quality scores and must not grow in ordinary PRs.
 
 ## Archive
 
