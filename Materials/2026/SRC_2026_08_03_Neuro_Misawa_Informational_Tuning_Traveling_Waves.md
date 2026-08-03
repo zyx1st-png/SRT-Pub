@@ -34,7 +34,6 @@ tags:
   - iScience
 status: source_card
 layer: operations
-epistem_layer: os
 epistemic_layer: os
 claim_mode: evidence
 canonical: false
