@@ -23,6 +23,14 @@ This directory contains source-adjudicated evidence dossiers for the staged pape
 | [D03_Cohen_Event_Baseline.md](D03_Cohen_Event_Baseline.md) | Cohen event; `EVD-D03-0009`, `0010`, `0013` | first evidence dossier | original operation/output and assumption audit supported; cross-formulation relation qualified; no C5-op or institutionalization verdict |
 | [D05_C5op_Goedel_to_Cohen_Audit.md](D05_C5op_Goedel_to_Cohen_Audit.md) | Gödel stage → Cohen event; `EVD-D05-0001`; carries `EVD-D04-0002` | first comparison dossier | `EVD-D05-0001` **qualified**: bounded C5-op failure supported against five registered translation candidates; unbounded claim blocked pending a stage-wide repertoire inventory; `EVD-D04-0002` unchanged; no institutionalization, CH-regime, global, C2, calibration or SRT verdict |
 
+## Protocol candidates
+
+Non-canonical operating rules for this evidence project. They are not strategy amendments and may not be cited as definition sources.
+
+| File | Scope | State |
+|---|---|---|
+| [METHOD_INDIVIDUATION_PROTOCOL_v0_1.md](METHOD_INDIVIDUATION_PROTOCOL_v0_1.md) | How a dossier individuates a method (`M_t`) when applying C5-op: "characteristic generative resource plus load-bearing test," with seven exclusions and six audit tests | **candidate, unfrozen**; binding only for forcing–CH dossiers authored after merge; no retroactive force; must be frozen before D06 adjudication and before Control A/B selection; `strategy_note_v0_7` remains frozen and unmodified |
+
 ## Obligations registered but not yet in the manuscript index
 
 These were registered by a dossier and require promotion into the staged manuscript's evidence index in a later PR.
