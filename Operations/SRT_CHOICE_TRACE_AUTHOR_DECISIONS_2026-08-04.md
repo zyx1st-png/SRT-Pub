@@ -2,7 +2,8 @@
 id: SRT-CHOICE-TRACE-AUTHOR-DECISIONS-20260804
 type: author_decision_record
 tags: [ChoiceMap, ChoiceTrace, AuthorDecision, Governance, Selection, Concern, Suffering, DissipativeStructure]
-status: author_confirmed_governance_record
+status: active
+record_stage: author_confirmed_governance_record
 layer: meta
 epistemic_layer: os
 claim_mode: decision_record
