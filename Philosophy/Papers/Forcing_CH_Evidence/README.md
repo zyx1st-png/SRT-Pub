@@ -30,7 +30,7 @@ These were registered by a dossier and require promotion into the staged manuscr
 | Evidence ID | Obligation | Registered by |
 |---|---|---|
 | `EVD-D05-0003` | Historically admissible inventory of the stage-wide 1938–1963 operation repertoire for consistency and independence results, beyond Gödel's own publications | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
-| `EVD-D05-0004` | Whether the documented Gödel-stage operation is provably incapable of yielding a `not-CH` model from a `V=L` ground model | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
+| `EVD-D05-0004` | Whether the documented constructible-inner-model operation, applied alone and with no outer-model or generic-extension operation added to the repertoire, is provably incapable of yielding a `not-CH` model. Scope-restricted by construction: no universal claim about operations over a `V=L` ground model is intended, since the Cohen construction is one such operation and does yield `not-CH` | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
 
 ## Evidence discipline
 
