@@ -2,14 +2,18 @@
 id: SRT-PAPER-FORCING-CH-EVIDENCE-METHOD-INDIVIDUATION-PROTOCOL
 title: "Method Individuation Protocol v0.1 — Forcing–CH Evidence Project"
 type: evidence_protocol_candidate
-status: draft
+status: frozen
 canonical: false
 layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-04
 version: v0_1
-protocol_state: candidate_unfrozen
+protocol_state: preregistered_frozen
+epistemic_status: candidate
+procedural_state: preregistered_frozen
+freeze_scope: "v0.1 rule (section 2), exclusions (section 3), six audit tests (section 4), falsification plan (section 6)"
+independent_validation: none
 binding_scope: forcing_ch_evidence_dossiers_after_merge
 strategy_amendment: false
 binding_strategy: Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md@strategy_note_v0_7
@@ -20,18 +24,23 @@ motivated_by: Philosophy/Papers/Forcing_CH_Evidence/D05_C5op_Goedel_to_Cohen_Aud
 
 **What this is.** A preregistered, non-canonical operating rule for individuating methods (`M_t`) inside the forcing–CH evidence project.
 
-**What this is not.** Not a strategy amendment. Not a v0.8. Not a canonical definition. Not a modification of any D05 verdict.
+**What this is not.** Not a strategy amendment. Not a v0.8. Not a canonical definition. Not a modification of any D05 verdict. Not an independently validated rule.
 
 ## 0. Status, scope and locks
+
+Two statuses are tracked separately and must not be conflated. Procedural freezing is what makes the falsification round a test; it confers no evidential standing whatever.
 
 | Field | Value |
 |---|---|
 | Canonical | **false** — this file may not be cited as a definition source for `M_t` |
-| Protocol state | **candidate, unfrozen** |
+| **Epistemic status** | **candidate** — motivated by the D05 case, **not independently validated**; §5.2 records why the D05 application cannot validate it |
+| **Procedural state** | **preregistered, frozen** — frozen for the falsification round upon merge |
+| **Freeze scope** | the v0.1 rule (§2), the exclusions (§3), the six audit tests (§4), and the falsification plan (§6) |
+| Strategy amendment | **false** — `strategy_note_v0_7` remains frozen and unmodified; this confers no v0.8 eligibility by itself |
 | Binding scope | forcing–CH evidence dossiers authored **after** this file is merged |
 | Retroactive force | **none** — no merged dossier's verdict is reopened by it |
-| Relation to `strategy_note_v0_7` | none; v0.7 remains **frozen** and unmodified |
-| Freeze requirement | must itself be frozen **before** D06 adjudication and **before** Control A/B selection |
+
+Frozen here means *fixed against outcome-driven revision*, not *established*. A frozen candidate is still a candidate.
 
 > **SCOPE LOCK**
 >
@@ -41,7 +50,7 @@ motivated_by: Philosophy/Papers/Forcing_CH_Evidence/D05_C5op_Goedel_to_Cohen_Aud
 
 The merged D05 audit established that C5-op, stated in frozen §4.6 as a condition on the generation relation `(b,m) ⤳ o`, is applied to an `M_t` that frozen §3.3 and §5.2 characterize only extensionally — as the set of methods implementable for the problem, and as the restriction of the global repertoire to the problem. Neither section individuates "method."
 
-That gap is not decorative. In the D05 case it decides a registered candidate: `D05-T02` preserves C5-op at one granularity and fails at another. It also propagates further than the D05 verdict. Frozen §12 and §19 both carry the rule *"两个控制案例无法区分：停止并重构判据"* — if the two controls cannot be distinguished, stop and rebuild the criterion. Whether that rule fires is itself determined by the unfixed granularity: under a proof-goal individuation, Control A and forcing fall on the same side of C5-op and the rule fires; under a generation-sensitive one, they separate and it does not.
+That gap is not decorative. In the D05 case it decides a registered candidate: `D05-T02` preserves C5-op at one granularity and fails at another. It also propagates further than the D05 verdict. Frozen §12 and §19 both carry the rule *"两个控制案例无法区分：停止并重构判据"* — if the two controls cannot be distinguished, stop and rebuild the criterion. Whether that rule can even be evaluated depends on the unfixed granularity. A proof-goal individuation cannot secure the required distinction — under it, any two relative-consistency proofs preserve C5-op with respect to each other, so there is a serious risk that a result innovation and forcing would not be separable by the criterion at all. That is a structural risk, not an adjudicated outcome: **no control case has yet been selected or adjudicated**, and this protocol asserts no control result in advance of §6.
 
 This protocol resolves the operational question — how a dossier should individuate a method when applying C5-op — **without** changing the frozen strategy, and it does so before the controls are selected, since frozen §7.6 requires those to be chosen only after the technical-history archive is complete. Fixing the individuation after control selection would invite the mirror image of the circularity the D05 correction removed: controls chosen to fit a granularity.
 
@@ -175,13 +184,18 @@ If a control falsifies the protocol, the correct response is to record the falsi
 - **Until this gate is passed, `strategy_note_v0_7` remains frozen.** No dossier may cite this protocol as if it were a strategy amendment, and no dossier may treat `M_t` as canonically individuated.
 - **No D06 institutionalization verdict may be finalized until the target operation or method family is individuated under this protocol.** `H`, `N` and `S` are predicated of an operation; without a fixed individuation, the object of those three claims is not determined, and a conjunctive verdict about it would be unstatable.
 
-## 8. Freeze requirement for this file
+## 8. Freeze status of this file
 
-This protocol must be **frozen before** either of the following begins:
+**This protocol is frozen for the falsification round upon merge.** The freeze takes effect before D06 adjudication and before Control A / Control B selection under frozen §7.6, which is what makes §6 a test rather than a fitting exercise.
 
-- D06 adjudication;
-- Control A / Control B selection under frozen §7.6.
+**Freeze scope:** the rule (§2), the exclusions (§3), the six audit tests (§4), and the falsification plan (§6).
 
-Freezing means the rule, the exclusions and the tests become fixed for the falsification round, so that §6 is a test rather than a fitting exercise. Until frozen, the file is a candidate and dossiers citing it must say so.
+Three consequences, stated as prohibitions:
+
+1. **v0.1 may not be edited in response to outcomes.** No D06 result, no Control A or Control B outcome, and no forcing-representation finding may be answered by amending this file. That includes amendments presented as clarification, tightening, or scope repair.
+2. **Failure requires a separately versioned v0.2 with a new preregistration.** If the protocol is falsified or qualified by §6, the response is a new file at a new version, carrying its own preregistration and its own freeze, with the falsifying outcome recorded. v0.1 stays on the record as falsified rather than being repaired into agreement.
+3. **Editorial corrections require an explicit non-substantive erratum record.** Typographical fixes, broken links, and formatting repairs that do not affect the rule, the exclusions, the tests or the falsification plan are permitted, but each must be recorded as a dated non-substantive erratum stating what changed and why it does not touch the frozen scope. An unrecorded edit to a frozen file is a protocol violation regardless of how small it is.
+
+Freezing is procedural only. It fixes the rule against outcome-driven revision; it does not make the rule correct, and it is not independent validation. The epistemic status remains **candidate** (§0, §5.2).
 
 Nothing in this file establishes that forcing was novel, important, inheritable, non-local, scaffold-forming, or institutionalized. It establishes only how a dossier should decide whether two operations are the same operation.

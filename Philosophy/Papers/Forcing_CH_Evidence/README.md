@@ -29,7 +29,7 @@ Non-canonical operating rules for this evidence project. They are not strategy a
 
 | File | Scope | State |
 |---|---|---|
-| [METHOD_INDIVIDUATION_PROTOCOL_v0_1.md](METHOD_INDIVIDUATION_PROTOCOL_v0_1.md) | How a dossier individuates a method (`M_t`) when applying C5-op: "characteristic generative resource plus load-bearing test," with seven exclusions and six audit tests | **candidate, unfrozen**; binding only for forcing–CH dossiers authored after merge; no retroactive force; must be frozen before D06 adjudication and before Control A/B selection; `strategy_note_v0_7` remains frozen and unmodified |
+| [METHOD_INDIVIDUATION_PROTOCOL_v0_1.md](METHOD_INDIVIDUATION_PROTOCOL_v0_1.md) | How a dossier individuates a method (`M_t`) when applying C5-op: "characteristic generative resource plus load-bearing test," with seven exclusions and six audit tests | epistemic status **candidate** (not independently validated); procedural state **preregistered, frozen** for the falsification round upon merge, covering the rule, exclusions, six tests and falsification plan; binding only for forcing–CH dossiers authored after merge; no retroactive force; outcome-driven edits prohibited — failure requires a separately versioned v0.2; `strategy_note_v0_7` remains frozen and unmodified |
 
 ## Obligations registered but not yet in the manuscript index
 
