@@ -172,6 +172,8 @@ Two interpretive points had to be fixed before candidates could be assessed. Bot
 
 | Field | Record |
 |---|---|
+| `b_G`, `m_G`, `o_G` | **unfillable on the operation side.** The candidate offers no Gödel-stage `m_G`; it offers a Gödel-stage *response form*. That the registry format cannot be completed here is the finding, not an omission |
+| `b_C`, `m_F`, `o_C` | as in `D05-T01` |
 | steelman | The metamathematical response form was already in place. Gödel in 1947 lists demonstrability, disprovability and undecidability, calls undecidability the most likely option, calls its proof a promising attack, and identifies his own result as having established non-disprovability [`GODEL1947-CH`, pp. 519–520]. On this reading the later regime is the earlier regime with one instance filled in, and no new operation type is required |
 | what would be preserved | the response form "show a statement is not refutable/not provable by exhibiting a model," and its evaluative standing |
 | type assessment | this is a claim about `R_t` and `E_t`, not about `M_t`. C5-op tests the background–operation–output generation relation. Anticipating that an output could exist is not an operation that generates it, and frozen §4.8 assigns response-role structure to C2, not to C5-op |
@@ -183,6 +185,8 @@ Two interpretive points had to be fixed before candidates could be assessed. Bot
 
 | Field | Record |
 |---|---|
+| `b_G`, `m_G`, `o_G` | as in `D05-T01`, with `m_G` read as "construct a ranked hierarchy over a base and interpret the result" |
+| `b_C`, `m_F`, `o_C` | as in `D05-T01` |
 | steelman | This is the candidate with the strongest textual support. Cohen's ground model is taken to satisfy `V=L` [`COHEN1963-CH-I`, p. 1144], so the Cohen construction literally begins from the characteristic Gödel-stage output. Both constructions use ordinal-ranked hierarchies — the constructible levels on one side, the ramified terms `F_α` on the other [`KANAMORI1996-DEVELOPMENT`, pp. 36–38; `COHEN1963-CH-I`, pp. 1144–1145, Defs. 2–4]. On this reading forcing is the existing practice carried further |
 | proposed `ρ_M` | send the forcing assembly to the Gödel-stage practice of constructing a ranked hierarchy of terms/sets over a base and interpreting the result |
 | function allegedly preserved | ordinal ranking as the organizing device; verification of base axioms inside the constructed structure; composability of the two constructions |
@@ -198,6 +202,8 @@ Two interpretive points had to be fixed before candidates could be assessed. Bot
 
 | Field | Record |
 |---|---|
+| `b_G`, `m_G`, `o_G` | `b_G` as in `D05-T01`; `m_G` here is the model-existence apparatus (completeness, Löwenheim–Skolem) rather than the constructible-class recursion; `o_G` is a set-sized model of the base theory |
+| `b_C`, `m_F`, `o_C` | as in `D05-T01`; the component under test is `b_C`'s semantic premise |
 | steelman | Completeness and Löwenheim–Skolem were available at the Gödel stage and yield a model, and a countable model, from consistency [`KENNEDY2025-GODEL-SEP`, §2.1.3; `MARKS2026-SET-THEORY-NOTES`, §18, p. 75, Th. 18.1]. Cohen's construction needs a countable model. If that apparatus supplies `b_C`'s semantic component, then at least the background side of the Cohen relation is Gödel-stage reconstructible |
 | proposed `ρ_B` | send Cohen's countable standard `V=L` ground-model premise back to a Gödel-stage model-existence argument |
 | function allegedly preserved | obtaining a set-sized model of the base theory from a consistency assumption |
