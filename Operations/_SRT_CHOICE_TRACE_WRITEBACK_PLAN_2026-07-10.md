@@ -3,7 +3,7 @@ id: SRT-CHOICE-TRACE-WRITEBACK-PLAN-20260710
 type: writeback_plan
 tags: [ChoiceMap, ChoiceTrace, Writeback, Theory, Book, Bridge, OpenTensions, Planning]
 status: active
-record_stage: plan_v4_t-d_framework_built_2026-08-04
+record_stage: plan_v5_t-e_bridge_built_2026-08-04
 layer: meta
 epistemic_layer: os
 claim_mode: proposal
@@ -11,13 +11,15 @@ canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-10
 revised: 2026-08-04
-provenance: 基于两份 2026-07-09 choice-trace 的收尾审计建立；2026-08-04 作者逐项关闭 G1/G2/G4/G5/G6，完成 T-B 首轮 bridge 并启动 T-D 选择生成条件框架。正式作者裁决见 Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md。
-dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md, 01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md, Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md, Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md, 03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md, 03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md]
+provenance: 基于两份 2026-07-09 choice-trace 的收尾审计建立；2026-08-04 作者逐项关闭 G1/G2/G4/G5/G6，完成 T-B、T-D 首轮回写并启动 T-E 耗散结构 bridge。正式作者裁决见 Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md。
+dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md, 01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md, Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md, Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md, 03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md, 03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md, 03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md]
 ---
 
 # Choice-Trace 回写计划：理论层与书稿层
 
-> **2026-08-04 T-D 施工记录**：已建立 `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` 首轮 P2/P3 跨域框架，并挂入 `03_Bridges/BRIDGE_INDEX.md`。该框架把选择生成条件拆为差异显现、非等价登记、路径效力、后果承载与历史效力；区分候选形成、过程展开和事件成立；并把生成条件、选择事件判据、实践脚手架和生成健康评价分开。仍待 PR 验收、跨域反例与领域操作化，不构成 canonical 定义或必要充分条件证明。
+> **2026-08-04 T-E 施工记录**：已建立 `03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` 首轮 P3 bridge，并挂入 `03_Bridges/BRIDGE_INDEX.md`。该桥区分物理底座依赖、组织机制依赖与解释充分性，把耗散机制逐项映射到 T-D 五项条件，并分开稳定秩序、死稳定、牢笼性秩序、主体性与生成健康。仍待 PR 验收、一手物理文献证据卡、跨域支持例／反例与领域操作化，不构成耗散—选择关系的经验确认或普遍必要性结论。
+>
+> **2026-08-04 T-D 施工记录**：`03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` 已经 PR #713 合入 main。该框架把选择生成条件拆为差异显现、非等价登记、路径效力、后果承载与历史效力；区分候选形成、过程展开和事件成立；并把生成条件、选择事件判据、实践脚手架和生成健康评价分开。仍待跨域反例、承受位置术语对表与领域操作化，不构成 canonical 定义或必要充分条件证明。
 >
 > **2026-08-04 T-B 施工记录**：`03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md` 已经 PR #712 合入 main。该桥完成减法读法、加法过程链、过程／事件／评价三层、pain/distress/suffering 类型学接口、与 Core 25 和 T-E 的分工及降级条件；仍待跨域反例与外部证据，不构成 canonical 或经验确认。
 >
@@ -45,7 +47,7 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 |---|---|---|
 | 已确认增量 | 边界三元共构、选择生成条件、退化—脆弱性链、熵去选择化读法、比较性选择再组织、1432 循环、分配—显现—选择顺序 | 可进入 P2/P3 bridge、理论候选文件与书稿施工 |
 | canonical 复认 | 选择先于主体、脚手架、可再选择性、L0 随机性论证等 | 只作回链和直觉证词，不平行造定义 |
-| 仍需验证 | 熵的本体论位置、选择性再组织与选择生成条件的跨域适用范围、痛苦与既有 pain/suffering 类型学接口、耗散桥的经验与物理边界 | 作者门已清，但仍不得越级为强结论 |
+| 仍需验证 | 熵的本体论位置、T-B/T-D/T-E 的跨域适用范围、痛苦与既有 pain/suffering 类型学接口、耗散桥的经验与物理边界 | 作者门已清，但仍不得越级为强结论 |
 
 术语以 2026-08-04 裁决为准：
 
@@ -115,7 +117,7 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 ### T-D · 跨域文件：“选择生成条件”
 
-**状态：首轮框架已建立，待 PR 验收与跨域压力测试。** claim level：P2/P3。
+**状态：首轮框架已经 PR #713 合入；待跨域压力测试。** claim level：P2/P3。
 
 首轮文件：`03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`。
 
@@ -139,15 +141,28 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 ### T-E · bridge：“耗散结构与选择结构”
 
-**状态：已解锁，未施工。** claim level：P3。
+**状态：首轮 bridge 已建立，待 PR 验收与物理／跨域压力测试。** claim level：P3。
 
-裁决后的划界：
+首轮文件：`03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md`。
 
-- 耗散结构解释局部秩序如何在流动与代价中形成和维持；
-- SRT 进一步判断是否出现非中立比较、历史写回、后果回流与可再选择性；
-- 耗散不等于选择，稳定秩序不自动等于生成健康；
-- 允许“死稳定”或牢笼性秩序；
-- 不主张所有选择结构都以经典耗散结构为必要前身。
+已完成：
+
+1. 区分三种依赖强度：物理底座依赖、组织机制依赖与解释充分性，阻止“万物都耗能”的空泛化。
+2. 把耗散／非平衡机制逐项映射到 T-D 的 CG-0 至 CG-4，并为每一项保留额外 SRT 审计。
+3. 区分耗散但未见选择、耗散作为生成条件、耗散作为机制原型和耗散实现的选择结构候选。
+4. 明确物理实现具有代价，不等于该层级选择组织由经典耗散机制解释，也不推出普遍必要性。
+5. 区分稳定秩序、活的脚手架、死稳定与牢笼性秩序；稳定、低波动或低局部成本不自动等于生成健康。
+6. 对接 L₂ 硬化，但禁止普通吸引子=L₂、高耗散=高 L₂ 和迟滞=历史写回等捷径。
+7. 明确与 Core 25、T-B、T-D 的分工，以及物理／化学、生命、神经／主体、社会／制度和 AI 的跨域边界。
+8. 写入六问审计、十二项降级条件和后续证据／形式化任务。
+
+仍待：
+
+- 经典耗散结构、随机热力学与非平衡自组织的一手文献证据卡；
+- 至少一个“高耗散但无选择”的充分性反例；
+- 至少一个生命系统案例，完整检验 CG-0 至 CG-4；
+- 高层选择结构中耗散变量是否具有组织机制解释增益，而非仅为物理底座真理；
+- “死稳定”的领域操作化和可区分指标。
 
 ### T-F · 脆弱性—选择空间收窄证据路径
 
@@ -201,18 +216,18 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 | Phase 1 | T-A、T-F 候选登记、T-G；Q06/Q19/Q22/Q28 候选章末注 | **已完成** |
 | Phase 1 可并行 | T-C 边界 bridge | 无门，未施工 |
 | Phase 2A | T-B 熵—扰动—选择性再组织 bridge | **首轮已合入，待跨域压力测试** |
-| Phase 2B | T-D 选择生成条件文件 | **首轮已建立，待 PR 验收与跨域压力测试** |
-| Phase 2C | T-E 耗散结构 bridge | 已解锁；与 T-B/T-D 分工施工 |
+| Phase 2B | T-D 选择生成条件文件 | **首轮已合入，待跨域压力测试** |
+| Phase 2C | T-E 耗散结构 bridge | **首轮已建立，待 PR 验收、物理证据与跨域压力测试** |
 | Phase 3 | Q15、Q21、耗散书稿接口 | 等对应 bridge 或理论候选文件形成稳定措辞后施工 |
 | 可并行研究 | T-F 正式证据卡 | 只受一手文献 close-read 与 DOI 核验约束 |
 | 远期 | T-C 硬化后申请 L0 裁决；S 层对话回流 d-value | 不在本轮治理闭环中启动 |
 
 推荐下一步顺序：
 
-1. 验收并压力测试 T-D，特别检查“承受位置”和 CG-4 历史效力是否足够可区分；
-2. 单独建立 T-E，避免把耗散结构内容回塞进 T-B 或 T-D；
-3. 为 T-B/T-D 补跨域支持例、反例和领域操作化；
-4. 理论措辞稳定后，再分别修改 Q15、Q21 与耗散接口。
+1. 验收并压力测试 T-E，重点检查底座依赖／机制依赖分界、死稳定与跨尺度偷换；
+2. 为 T-B/T-D/T-E 补跨域支持例、反例、领域操作化和一手证据卡；
+3. 三座桥措辞稳定后，再分别修改 Q15、Q21 与耗散书稿接口；
+4. T-C 可作为独立并行项目启动，但不与耗散书稿回写混合。
 
 ---
 
@@ -236,4 +251,6 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 - “选择生成条件”不得与实践脚手架、规范性健康条件混成一个清单；
 - 选项丰富、可逆性、退出和代价缓冲不得写成一切选择的普遍必要条件；
 - 后果承载不得自动升级为主体性、意识或道德责任；
-- 耗散结构不等于选择结构，也不自动具有主体性、stake 或可再选择性。
+- 耗散结构不等于选择结构，也不自动具有主体性、stake 或可再选择性；
+- 物理底座存在耗散，不得直接升级为目标层级的组织机制解释；
+- 稳定、低波动、低局部熵或高耗散不得自动写成生成健康。
