@@ -2,7 +2,8 @@
 id: SRT-CHOICE-TRACE-WRITEBACK-PLAN-20260710
 type: writeback_plan
 tags: [ChoiceMap, ChoiceTrace, Writeback, Theory, Book, Bridge, OpenTensions, Planning]
-status: plan_v2_author_gates_closed_2026-08-04
+status: active
+record_stage: plan_v2_author_gates_closed_2026-08-04
 layer: meta
 epistemic_layer: os
 claim_mode: proposal
