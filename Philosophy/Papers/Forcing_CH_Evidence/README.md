@@ -21,6 +21,16 @@ This directory contains source-adjudicated evidence dossiers for the staged pape
 |---|---|---|---|
 | [D03_Goedel_Stage_Baseline.md](D03_Goedel_Stage_Baseline.md) | Gödel stage; `EVD-D03-0006`–`0008`; preparation for `EVD-D04-0002` | first evidence dossier | technical baseline supported; historical response-role record qualified; background translation unresolved |
 | [D03_Cohen_Event_Baseline.md](D03_Cohen_Event_Baseline.md) | Cohen event; `EVD-D03-0009`, `0010`, `0013` | first evidence dossier | original operation/output and assumption audit supported; cross-formulation relation qualified; no C5-op or institutionalization verdict |
+| [D05_C5op_Goedel_to_Cohen_Audit.md](D05_C5op_Goedel_to_Cohen_Audit.md) | Gödel stage → Cohen event; `EVD-D05-0001`; carries `EVD-D04-0002` | first comparison dossier | `EVD-D05-0001` **qualified**: bounded C5-op failure supported against five registered translation candidates; unbounded claim blocked pending a stage-wide repertoire inventory; `EVD-D04-0002` unchanged; no institutionalization, CH-regime, global, C2, calibration or SRT verdict |
+
+## Obligations registered but not yet in the manuscript index
+
+These were registered by a dossier and require promotion into the staged manuscript's evidence index in a later PR.
+
+| Evidence ID | Obligation | Registered by |
+|---|---|---|
+| `EVD-D05-0003` | Historically admissible inventory of the stage-wide 1938–1963 operation repertoire for consistency and independence results, beyond Gödel's own publications | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
+| `EVD-D05-0004` | Whether the documented Gödel-stage operation is provably incapable of yielding a `not-CH` model from a `V=L` ground model | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
 
 ## Evidence discipline
 
