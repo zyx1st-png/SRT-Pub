@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-04
-source_commit: 5668cf6d
-source_branch: agent/choice-trace-author-decisions-2026-08-04
+source_commit: 73e65a8a
+source_branch: claude/d05-c5op-goedel-cohen-audit
 source_dirty: false
-inputs_digest: d788272bf912a138
+inputs_digest: 97479eaef7a96617
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: d788272bf912a138
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-04 |
-| 来源 commit | `5668cf6d` |
-| 来源分支 | `agent/choice-trace-author-decisions-2026-08-04` |
+| 来源 commit | `73e65a8a` |
+| 来源分支 | `claude/d05-c5op-goedel-cohen-audit` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 

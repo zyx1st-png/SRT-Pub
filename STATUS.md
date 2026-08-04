@@ -45,6 +45,7 @@ updated: 2026-08-04
 
 ## 最近关键推进
 
+- `2026-08-04`：**Forcing–CH D05 首轮 C5-op 比较完成裁决**。新增 `Philosophy/Papers/Forcing_CH_Evidence/D05_C5op_Goedel_to_Cohen_Audit.md`：Gödel 阶段与 Cohen event 两份 D03 基线均已在各自记录的裁决层级完成，D05 的 C5-op 比较现为当前活跃证据任务。`EVD-D05-0001` 判为 **qualified**——对五个已登记的保守重建候选（`D05-T01`–`D05-T05`）逐一做对抗性检验后，有界的 C5-op 失败获得支持，失败见证为 Cohen 明示不可在基模型中定义的外部完全序列；无界主张因缺少 1938–1963 阶段级操作库存而不成立，据此新登记 `EVD-D05-0003`、`EVD-D05-0004`。`EVD-D04-0002` 维持 unresolved。**尚未作出任何 institutionalization（H/N/S）、CH 局部制度、全局 update-regime、C2 或 SRT 裁决**；`strategy_note_v0_7` 维持 frozen，冻结战略与分阶段正文未改，三项欠规定项仅记录为 freeze-exception 候选。
 - `2026-08-04`：**Choice-trace 作者裁决包全部关闭**。作者逐项完成 G1/G2/G4/G5/G6 裁决；G3 已分层消解，G7 已完成选项回收。新建 `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md`，并将 `Operations/_SRT_CHOICE_TRACE_WRITEBACK_PLAN_2026-07-10.md` 升为 `plan_v2_author_gates_closed_2026-08-04`。核心治理结果：可再选择性只属于生成健康评价层；耗散结构不等于选择结构；选择分过程层／事件层／评价层；痛苦定位为“具身位上的结构性损失压力”；理论词形统一为“选择生成条件”“选择性再组织”“最低非中立性”。本轮只完成治理闭环，不修改 canonical、bridge 或书稿正文。由此解锁 T-B“熵—扰动—选择性再组织”、T-D“选择生成条件”、T-E“耗散结构与选择结构”以及 Q15/Q21/耗散书稿接口的独立施工。
 - `2026-08-04`：**Forcing–CH Cohen event 技术证据基线完成首轮裁决并经 PR #708 合入**。新增 `Philosophy/Papers/Forcing_CH_Evidence/D03_Cohen_Event_Baseline.md`：`EVD-D03-0009` 与 `EVD-D03-0013` 判为 supported，`EVD-D03-0010` 判为 qualified；严格分离 Cohen event 与 institutionalized forcing，不作 C5-op、H/N/S、C2 或全局 update-regime 裁决；冻结战略与分阶段正文未改。
 - `2026-08-03`：**Forcing–CH 论文转入证据建设**。PR #701 已合并 evidence-gated 分阶段稿；Gödel 与 Cohen 的 D03 技术基线现均已建立，下一步进入受证据门约束的比较与后续阶段。
