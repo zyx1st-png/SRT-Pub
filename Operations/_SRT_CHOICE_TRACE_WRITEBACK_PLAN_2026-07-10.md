@@ -3,7 +3,7 @@ id: SRT-CHOICE-TRACE-WRITEBACK-PLAN-20260710
 type: writeback_plan
 tags: [ChoiceMap, ChoiceTrace, Writeback, Theory, Book, Bridge, OpenTensions, Planning]
 status: active
-record_stage: plan_v2_author_gates_closed_2026-08-04
+record_stage: plan_v3_t-b_bridge_built_2026-08-04
 layer: meta
 epistemic_layer: os
 claim_mode: proposal
@@ -11,12 +11,14 @@ canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-10
 revised: 2026-08-04
-provenance: 基于两份 2026-07-09 choice-trace 的收尾审计建立；2026-08-04 作者逐项关闭 G1/G2/G4/G5/G6，正式裁决见 Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md。
-dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md, 01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md, Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md, Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md]
+provenance: 基于两份 2026-07-09 choice-trace 的收尾审计建立；2026-08-04 作者逐项关闭 G1/G2/G4/G5/G6，并启动 T-B 首轮 bridge 施工。正式作者裁决见 Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md。
+dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md, 01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md, Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md, Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md, 03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md]
 ---
 
 # Choice-Trace 回写计划：理论层与书稿层
 
+> **2026-08-04 T-B 施工记录**：已建立 `03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md` 首轮 P2/P3 bridge，并挂入 `03_Bridges/BRIDGE_INDEX.md`。该桥完成减法读法、加法过程链、过程／事件／评价三层、pain/distress/suffering 类型学接口、与 Core 25 和 T-E 的分工及降级条件；仍待 PR 验收、跨域反例与外部证据，不构成 canonical 或经验确认。
+>
 > **2026-08-04 作者门关闭记录**：作者已逐项裁决 G1、G2、G4、G5、G6；G3 早前已通过分层改写消解，G7 已完成选项回收。因此 Phase 0 作者裁决包现已全部关闭。正式措辞与适用边界以 `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md` 为权威治理来源。本轮只更新治理记录、计划和状态，不修改 canonical、bridge 或书稿正文。
 >
 > **Phase 1 执行记录（2026-07-10，复审后修正）**：全部无门项已执行。理论侧：T-A 已在 `Core/SRT_OPEN_TENSIONS.md` 登记熵去选择化张力和 P0-04 直觉证词；T-F 仅完成候选登记级，正式证据卡仍需一手文献 close-read 与 DOI 核验；T-G 已完成政治哲学词汇对表。书稿侧：Q06、Q19、Q22、Q28 已落候选性质章末注；未改写既有正文，未补术语表词条。T-C 边界 bridge 尚未施工，但始终无硬门。
@@ -80,16 +82,26 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 ### T-B · 合并 bridge：“熵—扰动—选择性再组织”
 
-**状态：已解锁，未施工。** claim level：P2/P3。
+**状态：首轮 bridge 已建立，待 PR 验收与跨域压力测试。** claim level：P2/P3。
 
-工作骨架：
+首轮文件：`03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md`。
 
-1. 减法侧：熵作为抽掉选择后的统计画像或相邻描述；不得重定义物理熵，也不得把 SRT 写成反熵理论。
-2. 加法侧：结构失配、解耦或随机扰动经分配、显现和差异比较，进入比较性选择再组织，形成方向性路径与历史写回。
+已完成：
+
+1. 减法侧：熵作为抽掉选择来源、承担关系与历史写回后的统计画像或相邻描述；不重定义物理熵，也不把 SRT 写成反熵理论。
+2. 加法侧：结构失配、解耦或随机扰动经边界过滤、分配、显现和差异比较，进入比较性选择再组织，形成方向性路径与历史写回。
 3. 三层分工：过程层、事件层与生成健康评价层分开。
-4. 痛苦接口：痛苦是具身位上的结构性损失压力，不等于任意随机化或结构失配；须与 `Core_Law/SRT_Suffering.md` 对表。
-5. 比较接口：资源条件与未来后果提供不对称，关切进行具身加权，最低非中立性构成比较门槛。
-6. 与 `Core/SRT_Core_25` 分工：后者管测量投影，本桥管本体论／过程定位。
+4. 痛苦接口：以“结构性损失压力”为上位 bridge 类别，对齐 `pain / distress / suffering` 既有类型学，不覆盖 `Core_Law/SRT_Suffering.md`。
+5. 比较接口：资源条件与未来后果提供不对称，具身关切进行关系性加权，最低非中立性构成比较门槛。
+6. 与 `Core/SRT_Core_25` 分工：后者管热力学／不可逆性测量签名，本桥管扰动进入选择过程的定位。
+7. 与 T-E 分工：不在 T-B 中裁定耗散结构的物理前身地位。
+8. 写入六项降级条件，明确无解释增益、事后贴标签、熵概念越界、层级偷换、三层混写和不可操作时须撤回或降级。
+
+仍待：
+
+- 物理、生命、主体、社会层各至少一个支持例和反例；
+- 熵、随机动力学、不可逆性与结构性损失压力的独立证据卡；
+- “选择性再组织”能否提供超出约束、吸引子与普通路径依赖的可区分增益。
 
 ### T-C · bridge：“边界作为存在成分”
 
@@ -177,7 +189,7 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 | Phase 0 | G1/G2/G4/G5/G6 作者裁决；G3/G7 消解或完成 | **已闭环** |
 | Phase 1 | T-A、T-F 候选登记、T-G；Q06/Q19/Q22/Q28 候选章末注 | **已完成** |
 | Phase 1 可并行 | T-C 边界 bridge | 无门，未施工 |
-| Phase 2A | T-B 熵—扰动—选择性再组织 bridge | 已解锁；建议优先 |
+| Phase 2A | T-B 熵—扰动—选择性再组织 bridge | **首轮已建立，待 PR 验收与跨域压力测试** |
 | Phase 2B | T-D 选择生成条件文件 | 已解锁；须先做层级拆分审计 |
 | Phase 2C | T-E 耗散结构 bridge | 已解锁；与 T-B 分工施工 |
 | Phase 3 | Q15、Q21、耗散书稿接口 | 等对应 bridge 或理论候选文件形成稳定措辞后施工 |
@@ -186,7 +198,7 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 推荐下一步顺序：
 
-1. 先建立 T-B bridge，统一过程、事件、评价三层和新术语；
+1. 验收并压力测试 T-B bridge，补跨域支持例与反例；
 2. 再建 T-D，拆分生成条件、脚手架与健康评价；
 3. 单独建立 T-E，避免把热力学内容塞入 T-B；
 4. 理论措辞稳定后，再分别修改 Q15、Q21 与耗散接口。
