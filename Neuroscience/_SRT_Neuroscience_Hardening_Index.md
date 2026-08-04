@@ -110,6 +110,8 @@ Proposed structure:
 
 ---
 
+| NEURAL21 | Materials/2026/SRC_2026_07_27_Neuro_Takahashi_REM_Energy_Paradox.md / Neuroscience/patches/SRT_Neuro_NEURAL21_REM_State_Dependent_Metabolic_Payability_v0_1.md | Core 25 + Neural/Consciousness compact core | State-dependent REM metabolic dissociation separates supply, substrate, immediate neuronal energy, payment, and recovery; non-neuronal support topology belongs in the embodied selection implementation bridge | Standalone bridge patch and pending hook added; peer-reviewed mouse evidence; compact-core synthesis pending |
+
 ## 5. Parked B1/B2 SourceCards without PatchNotes
 
 | SourceCard | Verdict | Stable use | Revival trigger |
@@ -133,6 +135,7 @@ NEURAL17 = Pipeline 1 HGA/source-scope guardrail integrated into Measure Map and
 NEURAL18 = Pipeline 1 population-geometry / decodability-anchoring bridge patch added; compact-core and prediction-table merge pending
 NEURAL19 = Pipeline 1 resource-gated history-admission bridge patch and hook added; all synthesis targets pending
 NEURAL20 = Pipeline 1 habit strategy / execution / reselection bridge patch and hook added; all synthesis targets pending
+NEURAL21 = Pipeline 1 REM state-dependent metabolic payability bridge patch and hook added; all synthesis targets pending
 B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
