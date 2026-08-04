@@ -7,7 +7,7 @@ canonical: false
 layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
-date: 2026-08-03
+date: 2026-08-04
 binding_strategy: Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md@strategy_note_v0_7
 ---
 
@@ -20,6 +20,7 @@ This directory contains source-adjudicated evidence dossiers for the staged pape
 | Dossier | Stage and obligations | State | Current outcome |
 |---|---|---|---|
 | [D03_Goedel_Stage_Baseline.md](D03_Goedel_Stage_Baseline.md) | Gödel stage; `EVD-D03-0006`–`0008`; preparation for `EVD-D04-0002` | first evidence dossier | technical baseline supported; historical response-role record qualified; background translation unresolved |
+| [D03_Cohen_Event_Baseline.md](D03_Cohen_Event_Baseline.md) | Cohen event; `EVD-D03-0009`, `0010`, `0013` | first evidence dossier | original operation/output and assumption audit supported; cross-formulation relation qualified; no C5-op or institutionalization verdict |
 
 ## Evidence discipline
 
