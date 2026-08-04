@@ -196,7 +196,7 @@ N12 -> non-neuronal biological infrastructure
 Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
 ```
 
-NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates.
+NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL21 remains a pending state-dependent metabolic bridge linked to Core 25 and the neuroscience compact cores.
 
 ---
 
