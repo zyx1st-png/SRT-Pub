@@ -2,6 +2,8 @@
 id: SRT-STATUS
 type: dashboard
 status: active
+layer: meta
+epistemic_layer: os
 claim_mode: evidence
 updated: 2026-08-04
 ---
@@ -46,7 +48,7 @@ updated: 2026-08-04
 - `2026-08-04`：**Choice-trace 作者裁决包全部关闭**。作者逐项完成 G1/G2/G4/G5/G6 裁决；G3 已分层消解，G7 已完成选项回收。新建 `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md`，并将 `Operations/_SRT_CHOICE_TRACE_WRITEBACK_PLAN_2026-07-10.md` 升为 `plan_v2_author_gates_closed_2026-08-04`。核心治理结果：可再选择性只属于生成健康评价层；耗散结构不等于选择结构；选择分过程层／事件层／评价层；痛苦定位为“具身位上的结构性损失压力”；理论词形统一为“选择生成条件”“选择性再组织”“最低非中立性”。本轮只完成治理闭环，不修改 canonical、bridge 或书稿正文。由此解锁 T-B“熵—扰动—选择性再组织”、T-D“选择生成条件”、T-E“耗散结构与选择结构”以及 Q15/Q21/耗散书稿接口的独立施工。
 - `2026-08-04`：**Forcing–CH Cohen event 技术证据基线完成首轮裁决并经 PR #708 合入**。新增 `Philosophy/Papers/Forcing_CH_Evidence/D03_Cohen_Event_Baseline.md`：`EVD-D03-0009` 与 `EVD-D03-0013` 判为 supported，`EVD-D03-0010` 判为 qualified；严格分离 Cohen event 与 institutionalized forcing，不作 C5-op、H/N/S、C2 或全局 update-regime 裁决；冻结战略与分阶段正文未改。
 - `2026-08-03`：**Forcing–CH 论文转入证据建设**。PR #701 已合并 evidence-gated 分阶段稿；Gödel 与 Cohen 的 D03 技术基线现均已建立，下一步进入受证据门约束的比较与后续阶段。
-- `2026-07-25`：**第 0 档闭账轮完成**。P1-T07 证明审计合入 main；IntegrationHook 闭环审计与 CI 检查落地；两份具身位／`d-q-o` 对话补走 trace 收尾管线。仍待作者另行裁决：Physics 三张 patch 最终落点；`q` 是否独立于／正交于 `d`；`o` 是否设符号。
+- `2026-07-25`：**第 0 档闭账轮完成**。P1-T07 证明审计合入 main；IntegrationHook 闭环审计与 CI 检查落地；两份具身位／`d-q-o` 对话补走 trace 收尾管线。**全部路由为候选，无一落地**；已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。仍待作者另行裁决：Physics 三张 patch 最终落点；`q` 是否独立于／正交于 `d`；`o` 是否设符号。
 - `2026-07-22`：**Learnable Novelty 材料卡完成并按高优先级 B1 停驻**。稳定增量包括 observer-relative learnable-structure yield、future learnability endpoint 与 structured novelty／residual noise 分离；继续保留 `S^phi != Ψ_f != d != W_sel` 护栏。
 - `2026-07-21`：**热力学计算与水结冰两张材料卡完成并停驻**。前者承担 `noise + constraint + readout` 不推出 `W_sel + bearer` 的边界；后者承担 `stability != reachability`、物理路径依赖不自动构成选择写回的自然边界。
 - `2026-07-20`：**治理减负轮完成**。Operations 一次性记录归档、根目录停驻文件下沉、coverage index 冻结、状态面收口、boot 读单缩减、router 合并、人类入口整合、frontmatter 最小 schema 棘轮与治理四原则落地。
