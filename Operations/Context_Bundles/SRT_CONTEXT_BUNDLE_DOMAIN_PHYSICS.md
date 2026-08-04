@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-03
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-04
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-03
-source_commit: c5c5315e
-source_branch: codex/goedel-stage-d03-evidence
+generated: 2026-08-04
+source_commit: 07de90d2
+source_branch: codex/cohen-event-d03-evidence
 source_dirty: true
-inputs_digest: 0729b04ae70f4e5b
+inputs_digest: 7bdb4fdab473634e
 ---
 
 # SRT 物理领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 0729b04ae70f4e5b
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-03 |
-| 来源 commit | `c5c5315e` |
-| 来源分支 | `codex/goedel-stage-d03-evidence` |
+| 生成日期 | 2026-08-04 |
+| 来源 commit | `07de90d2` |
+| 来源分支 | `codex/cohen-event-d03-evidence` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 

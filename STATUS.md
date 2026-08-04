@@ -3,13 +3,13 @@ id: SRT-STATUS
 type: dashboard
 status: active
 claim_mode: evidence
-updated: 2026-08-03
+updated: 2026-08-04
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-03
+> **最后更新**：2026-08-04
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -42,6 +42,7 @@ updated: 2026-08-03
 
 ## 最近关键推进
 
+- `2026-08-04`：**Forcing–CH Cohen event 技术证据基线完成首轮裁决**。新增 `Philosophy/Papers/Forcing_CH_Evidence/D03_Cohen_Event_Baseline.md`：`EVD-D03-0009`（原始 ground model—ramified terms—conditions—complete sequence—`N`—`¬CH` 输出）与 `EVD-D03-0013`（CTM / generic / external metatheory / finite-fragment discharge 假设审计）判为 supported；`EVD-D03-0010`（原始 forcing、偏序/generic-filter、Boolean-valued 表述关系）判为 qualified。严格分离 Cohen event 与 institutionalized forcing；不作 C5-op、H/N/S、C2、CH 局部制度或全局 set-theoretic update-regime 裁决；`strategy_note_v0_7` 与分阶段正文未改。
 - `2026-08-03`：**Forcing–CH 论文转入证据建设**。PR #701 已合并 evidence-gated 分阶段稿；当前活跃任务为 Gödel 阶段 D03 基线档案（`EVD-D03-0006`–`0008`，并仅准备 `EVD-D04-0002`）；`strategy_note_v0_7` 继续冻结，不在本轮升级正文主张。
 - `2026-07-25`：**第 0 档闭账轮完成（三项）**。①**P1-T07 证明审计合入 main**（PR #676，纯审计三文件 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`、`Operations/Audits/Maps/SRT_P1_T07_ASSUMPTION_MAP.md`、`Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`，不改任何 canonical）；Options A/B/C 仍为 proposal-only，Option B 是最小编辑候选但须先清三项前置（选定 S1/S2/S3 稳定性语义、把 "ε-neutral" 定义在独立转移核上、证明该中性基线 a.s. 吸收）；`_SRT_PARKED_INDEX.md §3` 已销账。②**IntegrationHook 闭环审计**（`Operations/Audits/Hook_Closure_Audit_2026-07-25.md`）：18 张 hook 用字面锚串实证体检 = 12 landed / 3 partial / 3 pending；发现 PH-AG01 被低报（实际已落地）、4 张状态不可判读、Physics 三张指向从未创建的计划文档 `Physics/SRT_Physics_Bridge_v0_2.md`、3 张的停驻目标路径在 2026-07-20 下沉后未更新；新增 `scripts/check_hooks.py` + `scripts/test_check_hooks.py`（15 条 fixture 覆盖四态与错误路径）并接入 CI preflight，ledger 契约同步回写 `Operations/_SRT_MATERIAL_PIPELINE.md §5.6.1`，`landed` 必须带**在 target 中唯一命中**的锚串（章节标题 / claim ID / source-trail 链接，禁用通用关键词），`status`（文件在用）与 `integration_status`（是否落地）拆开；顺带修复 main 上已红的四条 frontmatter ratchet 违规，基线净减 21 行、零新增。**待作者裁决**：Physics 三张 patch 的最终落点（新建综合文 vs 并入 `Physics/_SRT_Phys_Bridge.md`）。③**两份对话材料补走 trace 收尾管线**（`01_Source_Intuition/Conversations/2026-07-25_具身位_d_q_o_收尾审计.md`）：2026-07-23 具身位/三层关切与 2026-07-24 客体性/`d-q-o` 三轴此前是管线外影子路径；补做符号撞车（九个候选记号中三个重命名了既有对象、三个违反记号或命名空间约定、一个有撞车风险；`ρ`/`Ω`/`τ_self`/`g` 已被 canonical 占用，`w_i`、`D_stake`、`d_canonical` 各被重新发明一次）、canonical 碰撞三分类、张力表与路由。**候选增量**四条（d/q 解耦最值得优先审计，但均未确认成立）；触雷三条（`q` 五成分中两项落在 `Def-w_i` 的 `C_i` 定义文字内、一项在价值桥、两项门内无对应——有实质重叠与 GOV-SUB01 refit-budget 风险，但**准入条件成分重叠不蕴含非正交，是否独立轴未决**；`o` 若写成**封闭单标量**会与 `Core/SRT_OPEN_TENSIONS.md §9` 的 closure-boundary 冲突，但 §9 Direction 2 反而要求继续 operationalize，故分解式读数 / fallibilist proxy **未决**；`d` 取参与率与 `Def-d-canonical` 范数定义冲突）。**全部路由为候选，无一落地**；已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。**待作者裁决**：`q` 是否与 `d` 正交、`o` 是否设符号。
 - `2026-07-22`：**Learnable Novelty 材料卡完成并按高优先级 B1 停驻**。新增 `Materials/2026/SRC_2026_07_20_AI_Zhang_Levin_Learnable_Novelty.md`，完成 Zhang–Levin arXiv `2607.18433v1` 24 页全文精读；代码已声明但本轮未复现。稳定增量：observer-relative learnable-structure yield、`W_sel x S^phi_future` 二维分解、future learnability endpoint、structured novelty 与 residual noise 分离，以及 observer-ensemble / observer-swap 防目标利用门。关键边界：`S^phi != Ψ_f != d != W_sel`；可学习结构不等于价值、stake 或主体性；Rule 110、soliton、MNIST 聚类和 RL exploration 不构成统一智能证明；论文对 FEP 和 universal computation 的强叙述需降级。`Operations/Material_Log/2026-07_Part01.md` 与 `Operations/_SRT_MATERIAL_LOG.md` 已同步；未修改 canonical、HDR/selective-resynchronization 正文或正式 PatchNote。复活触发：HDR 增 future-structure endpoint、selective-resynchronization 需要区分噪声与结构重组、完成代码复现或 cross-observer / observer-swap 测试、论文新版本或同行评审回应 fixed-observer exploitation 与外推风险。
