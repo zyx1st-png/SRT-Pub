@@ -5,7 +5,6 @@ tags: [ChoiceMap, ChoiceTrace, Writeback, Theory, Book, Bridge, OpenTensions, Pl
 status: active
 record_stage: plan_v4_t-d_framework_built_2026-08-04
 layer: meta
-epistem_layer: os
 epistemic_layer: os
 claim_mode: proposal
 canonical: false
