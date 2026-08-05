@@ -1,48 +1,98 @@
 ---
 id: SRT-REVIEW-QUEUE
-type: log
-tags: [ReviewQueue, Gaps, Tensions, HumanReview]
-status: active_v1
+type: framework
+status: active
+claim_mode: governance
+updated: 2026-08-05
+version: v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
 dependency: [SRT-DAILY-REVIEW-PIPELINE, SRT-EQ-HYP-MAP]
 ---
 
 # SRT 待人工审查队列
 
-> 由 Pipeline 6（每日自动审查）写入。人工处理后将条目移至"已处理"区并标注处理方式。
->
-> **优先级定义**：
-> - **High**：影响理论完备性或跨域对齐的缺口/张力
-> - **Med**：格式不一致或局部定义偏离规范，不影响主干逻辑
-> - **Low**：文档完整性问题（占位内容、缺失章节节点），不阻塞推理
+> 本文件区分作者裁决、触发式延期、自动扫描待分类和已解决记录。自动扫描不得直接生成作者级结论；Operations 也不得替 canonical owner 宣布废止。
+
+## 优先级
+
+- **High**：需要作者决定，或会影响入口、变量、claim level 与下游引用；
+- **Med**：有效研究／工程任务，但不阻塞当前主线；
+- **Low**：触碰相关工作线时顺带修复的治理债务。
 
 ---
 
-## 待处理（Pending）
+## A. 当前需要作者裁决
 
-| 发现日期 | 来源文件 | 问题描述 | 建议处理方式 | 优先级 | 状态 |
-|---------|---------|---------|------------|--------|------|
-| 2026-04-01 | `Core_Law/SRT_Core_Text_CN.md` / `Core_Law/SRT_Core_Text_CN_Euclid.md` / `Core_Law/SRT_Selection_Argument.md` | 中文主论证入口的文本角色裁决与入口层同步已完成；当前剩余高优先级问题收缩为：Euclid 版是否正式进入 registry / canonical 入口，以及 `Selection_Argument` 在不扩枚举下是否还需进一步降负担 | 继续按 `Governance/SRT_CORE_TEXT_ADJUDICATION_2026-04.md` 执行最终裁决；若暂不扩 `claim_mode` 枚举，则重点处理 Euclid 是否正式入入口 | High | Pending |
-| 2026-03-11 | `_SRT_VERTICAL_INTEGRATION.md §4.5` | 原 d_collective 聚合框架已升级：F_collective 景观优先性定理确立后，需实证测量 $D_{eff}(F_{collective})$ 的代理指标 | 进入实验设计阶段；在 `_SRT_EQ_HYP_MAP.md` 补 Eq-Multi-03 的 proxy 测量方案 | Med | Pending |
-| 2026-03-16 | `_SRT_EQ_HYP_MAP.md` / `SRT_EXP_TEMPLATE.md` / `scripts/g2_wikimedia_open_data_mvp.py` | Eq-LDP-01 / Eq-LDP-02 已推进为 `Partial`，G2-2 开放数据 MVP、脚本骨架与首轮 sample run 已具备，但样本仍过小，尚不足以拟合稳定 surrogate `I_{SRT}^*` | 扩展 pageviews 时间窗与 mapped pages；将 recentchanges API / EventStreams 样本扩到多冲击窗口，再判断 surrogate 稳定性 | Med | Pending |
-| 2026-03-02 | `Core/SRT_Core_01_Axioms.md` | A10/A11 Part B 缺乏标准化"实验钩"节 | 参照 A7/A8 格式补充 H-ID 实验钩节 | Med | Pending |
-| 2026-03-02 | `_SRT_EQ_HYP_MAP.md` | 经济学 Bridge 和演化 Bridge 尚未建立 | 列入下一季度工作项 | Med | Pending |
-| 2026-03-09 | `Operations/_SRT_DAILY_REVIEW_PIPELINE.md` | 检测到占位模式关键词样例（`[待填写]/[TODO]/[待补充]/[占位]/TBD`） | 标注为流程说明文本，后续在规则中加入“示例白名单”避免误报 | Med | Pending |
-| 2026-03-09 | 多文件（26） | 命中 d-value 定义段落但未显式引用 `_SRT_D_VALUE_CANONICAL.md` | 作为文档治理批处理项，在周评中统一补 canonical 引用 | Med | Pending |
+| 编号 | 来源 | 决策问题 | 当前护栏 | 优先级 | 状态 |
+|---|---|---|---|---|---|
+| RQ-2026-08-A01 | `Core_Law/SRT_Core_Text_CN.md` / `SRT_Core_Text_CN_Euclid.md` / `SRT_Selection_Argument.md` | Euclid 是否正式升格为中文入口，还是维持“legacy CN reader entry + Euclid candidate”的现状 | 未裁决前不修改 registry、manifest 或三文件定义权 | High | Awaiting author |
+| RQ-2026-08-A02 | `01_Source_Intuition/Conversations/2026-07-25_具身位_d_q_o_收尾审计.md` | `q` 是 stake gate 后的构成深度剖面还是独立轴；`o` 是否操作化、是否设符号 | 形式选择完成前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文 | High | Awaiting author |
+| RQ-2026-08-A03 | `Core/SRT_Core_01_Axioms.md` / `Governance/SRT_POSITIONING.md` | `Ax-Core-A10/A11` 的 Part B 实验钩缺口是否仍存在；若存在，是在 Core_01 补、在当前 P2–P4 架构落地并 cross-reference，还是已被现有接口覆盖 | Core_01 仍是 canonical owner；未正式裁决前不得宣布 superseded 或禁止回写 | High | Awaiting re-adjudication |
+| RQ-2026-08-A04 | Physics P03/P04/P05 hooks；`Operations/Audits/Hook_Closure_Audit_2026-07-25.md §3.3` | 三张 patch 统一落到新建 `Physics/SRT_Physics_Bridge_v0_2.md`，还是并入现有 `Physics/_SRT_Phys_Bridge.md` | 只裁决 landing；不升级 Physics claim level | High | Awaiting author |
+
+统一裁决包：
+
+`Operations/SRT_AUTHOR_DECISION_PACKET_EUCLID_DQO_PHYSICS_A10A11_2026-08-05.md`
 
 ---
 
-## 已处理（Resolved）
+## B. 触发式延期任务
 
-| 发现日期 | 处理日期 | 来源文件 | 问题描述 | 处理方式 | 处理人 |
-|---------|---------|---------|---------|---------|--------|
-| 2026-03-16 | 2026-03-16 | `_SRT_EQ_HYP_MAP.md` | 主映射矩阵仍含 2 条 `Status=Gap`（Eq-LDP-01 / Eq-LDP-02） | 已通过 hydrodynamic-limit / macroscopic-fluctuation / dense-crowd 一手文献将 Eq-LDP-01 与 Eq-LDP-02 推进为 `Partial`；High 缺口清零，后续转为 Med 的数据管线执行问题 | Agent |
-| 2026-03-05 | 2026-03-16 | `_SRT_EQ_HYP_MAP.md` | 主映射矩阵含 3 条 `Status=Gap`（Eq-Select-Thermo / Eq-LDP-01 / Eq-LDP-02） | 已通过 `q(L_1)` 三代理 + 文献锚点将 Eq-Select-Thermo 推进为 `Partial`；High 缺口收缩为 Eq-LDP-01 / Eq-LDP-02 两条群体尺度桥接问题 | Agent |
-| 2026-03-02 | 2026-03-11 | `_SRT_VERTICAL_INTEGRATION.md §4` | d_collective 聚合公式未形式化（方案 A/B/C/D 待实验选择） | 框架层已解决：集体景观优先性定理（§4.5）+Eq-Multi-01/02/03 将 d_collective 定义为 $D_{eff}(F_{collective})$，旧聚合方案 A-E 降为历史近似记录；实证测量 proxy 列为新 Med 项 | Agent |
-| 2026-03-02 | 2026-03-02 | 多文件 | d-value 定义三处分裂 | 新建 `_SRT_D_VALUE_CANONICAL.md` 统一规范 | Agent |
-| 2026-03-02 | 2026-03-02 | `Neuroscience/SRT_Neuro_10_Advanced_Models.md` | 感受-摩擦循环定义 (T1) | 加入单向因果链声明 | Agent |
-| 2026-03-02 | 2026-03-02 | `Core/_SRT_Core_Bridge.md` | L₂ 语义漂移 (T2) | 添加 L₂ 热力学封闭条件 §1.3.3 | Agent |
-| 2026-03-02 | 2026-03-02 | `AI/_SRT_AI_Bridge.md` | AI 屏障"永久 vs 可突破"歧义 (T3) | 添加双层区分（工程性 vs 原则性） | Agent |
-| 2026-03-02 | 2026-03-02 | `Spirituality/_SRT_Spirit_Axioms.md` | Ω 拓扑极限与具身公理冲突 (T4) | 添加边界声明（热力学极限类比） | Agent |
+| 编号 | 原发现日期 | 来源 | 当前裁决 | 复活触发 | 优先级 | 状态 |
+|---|---|---|---|---|---|---|
+| RQ-DEF-01 | 2026-03-11 | `_SRT_VERTICAL_INTEGRATION.md §4.5` / Eq-Multi-03 | `D_eff(F_collective)` 测量代理仍是有效 P4 问题，但不属于当前材料／投稿收口 | 集体选择实验或 unified formal-core paper 正式重启 | Med | Deferred |
+| RQ-DEF-02 | 2026-03-16 | `_SRT_EQ_HYP_MAP.md` / G2 Wikimedia MVP | LDP 数据管线为 Partial 后续；小样本扩展需独立实验计划 | G2 / LDP 工作线点名，且先冻结窗口、映射和判断规则 | Med | Deferred |
+| RQ-DEF-03 | 2026-03-02 | `_SRT_EQ_HYP_MAP.md` | 经济学和演化 bridge 未建立，但休眠域不因旧季度计划自动开工 | 论文、书稿或跨域审计明确需要该 bridge | Med | Deferred |
+| RQ-DEF-04 | 2026-03-09 | `Operations/_SRT_DAILY_REVIEW_PIPELINE.md` | 占位模式示例可能产生误报 | Pipeline 6 checker 被触碰或误报再次出现 | Low | Touch-based |
+| RQ-DEF-05 | 2026-03-09 | 旧扫描中的 26 个 d-value 引用命中 | 旧计数已过期，禁止按“26 文件”盲目批处理 | 新 governance audit 重新生成当前清单 | Low | Re-audit required |
+
+这些条目不是按时间自动排队的当前欠账。
+
+---
+
+## C. 自动扫描待分类
+
+Pipeline 6 只能把原始发现追加到本区，不得直接写入 A/B，也不得自动判定 canonical 废止、作者选择或理论优先级。
+
+| 扫描日期 | 来源文件 | 原始发现 | 检查类别 | 建议严重度 | 分类状态 |
+|---|---|---|---|---|---|
+| — | — | 当前无待分类扫描项 | — | — | Empty |
+
+人工分类后：
+
+- 需要作者决定 → 移入 A；
+- 有具名触发条件但不阻塞 → 移入 B；
+- 已修复、误报或已被覆盖 → 移入 D；
+- 信息不足 → 保留本区并补核验任务。
+
+---
+
+## D. 已解决、误报或被覆盖
+
+| 原发现日期 | 处理日期 | 来源 | 原问题 | 处理方式 | 状态 |
+|---|---|---|---|---|---|
+| 2026-03-16 | 2026-03-16 | `_SRT_EQ_HYP_MAP.md` | Eq-LDP-01 / Eq-LDP-02 为 Gap | 已推进为 Partial；后续数据执行转入 RQ-DEF-02 | Resolved at mapping level |
+| 2026-03-05 | 2026-03-16 | `_SRT_EQ_HYP_MAP.md` | Eq-Select-Thermo / Eq-LDP-01 / Eq-LDP-02 三条 Gap | Eq-Select-Thermo 已推进为 Partial；不得继续写作“三条 Gap 未补” | Resolved at mapping level |
+| 2026-03-02 | 2026-03-11 | `_SRT_VERTICAL_INTEGRATION.md §4` | d_collective 聚合方案未形式化 | 框架层已形成 collective landscape 与 Eq-Multi-01/02/03；实证代理另列 RQ-DEF-01 | Resolved at framework level |
+| 2026-03-02 | 2026-03-02 | 多文件 | d-value 定义分裂 | `_SRT_D_VALUE_CANONICAL.md` 已统一定义 | Resolved |
+| 2026-03-02 | 2026-03-02 | `Neuroscience/SRT_Neuro_10_Advanced_Models.md` | 感受—摩擦循环 | 已加入单向因果链声明 | Resolved |
+| 2026-03-02 | 2026-03-02 | `Core/_SRT_Core_Bridge.md` | L2 语义漂移 | 已增加热力学封闭条件 | Resolved |
+| 2026-03-02 | 2026-03-02 | `AI/_SRT_AI_Bridge.md` | AI 屏障永久／可突破歧义 | 已加入工程性／原则性区分 | Resolved |
+| 2026-03-02 | 2026-03-02 | `Spirituality/_SRT_Spirit_Axioms.md` | Omega 拓扑极限与具身公理冲突 | 已加入边界声明 | Resolved |
+
+---
+
+## E. 入队规则
+
+人工裁决项必须写明：当前 owner、作者决策问题、不处理阻塞、当前护栏和完成定义。
+
+自动扫描项只需写明：日期、来源、原始发现、检查类别和建议严重度；不得伪装成人工裁决结果。
+
+禁止：
+
+- 用旧扫描计数代替当前审计；
+- 把 open tension 自动转成开发 TODO；
+- 把 trigger-based parked item 当作按时间排队的欠账；
+- 由 Operations 宣布 canonical owner superseded；
+- 在未经过作者门时自动修改符号、入口或 canonical claim level。
