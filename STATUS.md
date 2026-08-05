@@ -5,30 +5,40 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-04
+> **最后更新**：2026-08-05
+> **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
 ## Fast Status
 
 - 首读顺序唯一权威：`AGENTS.md §Session Start`。
-- 当前活跃工作线：①书稿《从存在到秩序》（当前以 `Drafts_26Q` 为主线，处于生成哲学战略总装轮；choice-trace 作者门已关闭，后续分项施工）；②论文（Frontiers executive friction 返修、Adaptive Behavior 重投准备、Forcing–CH 证据建设）；③社媒文章线（`Operations/_SRT_ARTICLE_WORKFLOW.md`）。
-- 休眠层（AI / Neuroscience / Physics / Spirituality）按“带冻结戳的图书馆”治理，不进例行状态面。
-- 停驻内容（种子 / B 类材料 / 未合 PR）统一看 `_SRT_PARKED_INDEX.md`。
-- 治理原则与减负记录：`Governance/README.md §Proportionality Principles`、`Governance/Governance_Load_Reduction_2026-07-20.md`。
+- 当前第一优先工作线：完成此前未融合材料的 Pipeline 1 收口，并保持 Material Log、索引、registry 与 hook 一致。
+- 论文线：
+  - Frontiers 稿 `1837760` 已接受，但因 APC 过高准备终止原出版路径并转投；在取得原期刊明确终止确认前不得新投，执行卡为 Issue #740；
+  - *Costly Selective Closure* / Adaptive Behavior 已投稿，尚未进入外部评审；
+  - forcing–CH 的硬性历史书籍与同期记录仍在收集，控制档案 Part II 与控制案例程序暂缓；
+  - history-dependent reachability 暂不启动统一优化，等待未融合材料收口。
+- 书稿《从存在到秩序》仍以 `Drafts_26Q` 为唯一主线；统一优化等待未融合材料全部处理完毕，不进行逐篇材料触发的局部重写。
+- SEA 编码手册已达到 pilot-ready，但独立编码可靠性试验暂缓；PR #738 已按 deferred 关闭。
+- 休眠层（AI / Neuroscience / Physics / Spirituality）继续按“带冻结戳的图书馆”治理；材料可进入桥、卡片和索引，但不自动触发 canonical 或正文升级。
+- 停驻内容统一看 `_SRT_PARKED_INDEX.md`；最新作者排期以 `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` 为准。
 
 ## 当前仓库状态
 
-- 单一 `main` 分支；根目录 2026-04-15 平铺，2026-07-20 治理减负轮后根目录 md 80 → 54（口径：`find . -maxdepth 1 -type f -name '*.md' | wc -l`）。
-- `Core_21` 已拆 P0/P1/P2-P4 分层；持续要求 domain 文件回链 canonical，防 bridge / companion / lab 命题冒充 core。
-- 书稿：当前状态以 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md` 为准；`Drafts_26Q/Q00–Q28` 为主线，外部评审施工与 choice-trace Phase 1 候选章末注已完成。2026-08-04 已关闭 G1/G2/G4/G5/G6 作者门，但尚未执行新一轮 bridge 或正文改写。
-- 工程结构：2026-07-07 清理轮（papers 合并 / preflight 接入 / 前台指针覆盖层定案）；2026-07-20 治理减负轮（见下）。
+- 单一 `main` 分支；根目录治理继续执行 2026-07-20 减负纪律。
+- `Core_21` 已拆为 P0/P1/P2-P4；domain、bridge、lab、SourceCard 和 Operations 文件不得反向定义 core。
+- Choice-trace 作者门已关闭；T-B、T-D、T-E 首轮 bridge 与五域联合压力测试已经完成，不再列为“待建立”。
+- SEA 已形成统一协议、AI 正负校准、生命边界案例、制度配对案例与编码手册；方法贡献仍为 candidate，可靠性 pilot 暂缓。
+- forcing–CH 已完成 D05 C5-op、方法个体化协议、控制案例选择协议、多表征方法族审计和 countable-standard-model premise 窄类型说明；控制档案 Part II 仍未签署。
+- Pipeline 1 截至本轮材料台账为 207 条：A 130、B 27、C 50；2026-08 Part01 为 9 条。
+- 本轮开放材料与证据 PR 已完成收口；后续新增工作应从最新 `main` 重新起分支。
 
 ## 当前权威锚点
 
@@ -42,40 +52,81 @@ updated: 2026-08-04
 - master equations → `Core/SRT_Core_22_Equations.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`
 - choice-trace 作者裁决 → `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md`
+- 当前工作线排期 → `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 
 ## 最近关键推进
 
-- `2026-08-04`：**Forcing–CH D05 首轮 C5-op 比较完成裁决**。新增 `Philosophy/Papers/Forcing_CH_Evidence/D05_C5op_Goedel_to_Cohen_Audit.md`：Gödel 阶段与 Cohen event 两份 D03 基线均已在各自记录的裁决层级完成，D05 的 C5-op 比较现为当前活跃证据任务。`EVD-D05-0001` 判为 **qualified**——对五个已登记的保守重建候选（`D05-T01`–`D05-T05`）逐一做对抗性检验后，有界的 C5-op 失败获得支持，失败见证为 Cohen 明示不可在基模型中定义的外部完全序列；无界主张因缺少 1938–1963 阶段级操作库存而不成立，据此新登记 `EVD-D05-0003`、`EVD-D05-0004`。`EVD-D04-0002` 维持 unresolved。**尚未作出任何 institutionalization（H/N/S）、CH 局部制度、全局 update-regime、C2 或 SRT 裁决**；`strategy_note_v0_7` 维持 frozen，冻结战略与分阶段正文未改，三项欠规定项仅记录为 freeze-exception 候选。
-- `2026-08-04`：**Choice-trace 作者裁决包全部关闭**。作者逐项完成 G1/G2/G4/G5/G6 裁决；G3 已分层消解，G7 已完成选项回收。新建 `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md`，并将 `Operations/_SRT_CHOICE_TRACE_WRITEBACK_PLAN_2026-07-10.md` 升为 `plan_v2_author_gates_closed_2026-08-04`。核心治理结果：可再选择性只属于生成健康评价层；耗散结构不等于选择结构；选择分过程层／事件层／评价层；痛苦定位为“具身位上的结构性损失压力”；理论词形统一为“选择生成条件”“选择性再组织”“最低非中立性”。本轮只完成治理闭环，不修改 canonical、bridge 或书稿正文。由此解锁 T-B“熵—扰动—选择性再组织”、T-D“选择生成条件”、T-E“耗散结构与选择结构”以及 Q15/Q21/耗散书稿接口的独立施工。
-- `2026-08-04`：**Forcing–CH Cohen event 技术证据基线完成首轮裁决并经 PR #708 合入**。新增 `Philosophy/Papers/Forcing_CH_Evidence/D03_Cohen_Event_Baseline.md`：`EVD-D03-0009` 与 `EVD-D03-0013` 判为 supported，`EVD-D03-0010` 判为 qualified；严格分离 Cohen event 与 institutionalized forcing，不作 C5-op、H/N/S、C2 或全局 update-regime 裁决；冻结战略与分阶段正文未改。
-- `2026-08-03`：**Forcing–CH 论文转入证据建设**。PR #701 已合并 evidence-gated 分阶段稿；Gödel 与 Cohen 的 D03 技术基线现均已建立，下一步进入受证据门约束的比较与后续阶段。
-- `2026-07-25`：**第 0 档闭账轮完成**。P1-T07 证明审计合入 main；IntegrationHook 闭环审计与 CI 检查落地；两份具身位／`d-q-o` 对话补走 trace 收尾管线。**全部路由为候选，无一落地**；已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。仍待作者另行裁决：Physics 三张 patch 最终落点；`q` 是否独立于／正交于 `d`；`o` 是否设符号。
-- `2026-07-22`：**Learnable Novelty 材料卡完成并按高优先级 B1 停驻**。稳定增量包括 observer-relative learnable-structure yield、future learnability endpoint 与 structured novelty／residual noise 分离；继续保留 `S^phi != Ψ_f != d != W_sel` 护栏。
-- `2026-07-21`：**热力学计算与水结冰两张材料卡完成并停驻**。前者承担 `noise + constraint + readout` 不推出 `W_sel + bearer` 的边界；后者承担 `stability != reachability`、物理路径依赖不自动构成选择写回的自然边界。
-- `2026-07-20`：**治理减负轮完成**。Operations 一次性记录归档、根目录停驻文件下沉、coverage index 冻结、状态面收口、boot 读单缩减、router 合并、人类入口整合、frontmatter 最小 schema 棘轮与治理四原则落地。
-- `2026-07-10`：**Choice-trace 回写计划 Phase 1 完成**。理论侧完成 T-A、T-F 候选登记、T-G；书稿 Q06/Q19/Q22/Q28 落候选性质章末注。T-F 正式证据卡尚未开始；T-C 边界 bridge 无门但尚未施工。
-- `2026-07-09`：**ChoiceMap 轨迹工作流 v2 与两份 source trace 收尾完成**。建立暂停／恢复、一致性压测、张力审计、委托收敛与 canonical 碰撞检查；原 pending 作者项现已由 2026-08-04 裁决记录覆盖。
+### 2026-08-05 · 工作线排期与仓库收口
+
+- 作者确定：forcing–CH 控制档案和 SEA reliability pilot 暂缓；书稿与 history-dependent reachability 的统一优化等待此前未融合材料全部收口。
+- Frontiers 稿 `1837760` 已接受，但因 APC 过高准备终止原出版路径并转投；Issue #740 负责撤回／终止确认、版权与重复投稿合规、目标期刊选择和状态同步。
+- *Costly Selective Closure* / Adaptive Behavior 已投稿，当前尚未外审；不再写作“重投准备”。
+- 旧书稿路线 Issue #152、#153、#155 已按 superseded / not planned 关闭；#657、#474 保留但延期。
+
+### 2026-08-05 · PR 与材料线收口
+
+- PR #730 合入 forcing ramified / generic-filter / Boolean-valued 多表征方法族审计；整体为 `qualified_same_method_family`，Method Individuation Protocol v0.1 为 qualified、未被证伪。
+- PR #739（替代冲突处理中自动关闭的 #733）合入 countable-standard-model premise 窄类型说明；`EVD-D04-0002` 继续 unresolved，D05 verdict 不动。
+- PR #735 合入 salience / lateral-inhibition source-intuition genealogy；保持非 canonical 与反还原护栏。
+- PR #734 合入 AIGOAL01：区分 goal completion、给定菜单中的 bounded goal selection 与 goal-space generation。
+- PR #728 合入五张意识／认知材料卡；只进入 B1/B2/B3 材料路由，不直接改书稿正文。
+- PR #710 解决 `NEURAL21` 编号冲突后以 `NEURAL22` 合入 astrocyte hierarchical information-flow bridge；保留 `NEURAL21` 为 REM metabolic-payability bridge。
+- PR #738 SEA reliability pilot 按作者排期关闭为 deferred；不解释为方法失败。
+
+### 2026-08-05 · SEA 方法建设
+
+- 新增统一选择事件方法论文策略：当前定位为非补偿式识别与审计方法 candidate，而非新因果机制。
+- 完成学术出版终止／接受后 production 的制度配对校准。
+- 完成 SEA 案例编码手册 v0.1；五门、事件、边界、时间尺度、降级点和最高类别均可进入未来独立编码试验。
+- 当前不启动正式可靠性 pilot。
+
+### 2026-08-04 · Choice-trace 理论桥与压力测试
+
+- T-B“熵—扰动—选择性再组织”、T-D“选择生成条件”、T-E“耗散结构与选择结构”均已建立首轮 bridge。
+- 五域联合压力测试结论：T-D 最稳；T-B 有条件成立，必须定位内部非等价登记；T-E 当前主要承担防止耗散／不可逆性被直接等同于选择的负向护栏。
+- CG-1 至 CG-4 已分别建立操作化测试，后续又统一进入 SEA 审计协议。
+- 这些推进不构成 canonical、经验确认或五门必要充分性证明。
+
+### 2026-08-04 至 2026-08-05 · Forcing–CH
+
+- D05 `EVD-D05-0001` 保持 **qualified**：有界 C5-op failure 获得支持，无界主张仍受阶段级操作库存缺口阻塞。
+- `EVD-D04-0002` 保持 **unresolved**。
+- `METHOD_INDIVIDUATION_PROTOCOL_v0_1`、`CONTROL_CASE_SELECTION_PROTOCOL_v0_1` 与档案边界已冻结。
+- `CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1` Part I 已固定，Part II 未签署；在硬性历史书籍和同期记录未收齐前，不枚举、评分、排名或选择 Control A/B。
+
+### 更早的重要状态
+
+- 2026-07-25：P1-T07 证明审计、IntegrationHook 闭环审计与 CI 检查完成；两份具身位／`d-q-o` 对话补走 trace 收尾管线。**全部路由为候选，无一落地**；已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。仍待作者另行裁决：Physics 三张 patch 最终落点；`q` 是否独立于／正交于 `d`；`o` 是否设符号。
+- 2026-07-20：治理减负轮完成，boot 必读缩至 3 文件，状态入口与 router 收口。
+- 2026-07-10：choice-trace Phase 1 完成，Q06/Q19/Q22/Q28 只加入候选性质章末注。
 
 （更早条目见 `Operations/Status_History/2026-04_to_2026-07_Dashboard_Part.md`）
 
 ## 当前高优先事项
 
-1. **Choice-trace 下游施工**：优先建立 T-B“熵—扰动—选择性再组织”bridge；随后拆建 T-D“选择生成条件”和 T-E“耗散结构与选择结构”。三项必须分别提交，不在治理闭环 PR 中混改。
-2. **书稿接口**：待 T-B/T-D/T-E 稳定措辞后，分别处理 Q15 关切、Q21 苦难与耗散接口；不得把可再选择性写成选择事件定义，也不得把痛苦写成一切主体动力的唯一来源。
-3. **论文线**：完成 Frontiers 稿 1837760 major revision 的门户提交；推进 Adaptive Behavior 重投；Forcing–CH 继续按 evidence gate 建设。
-4. 保持 canonical 主链不被入口优化或 source intuition 反向污染。
-5. 治理可观测指标：boot 必读 3 文件 / 根目录 md ≤ 60 / navigation 占比下降 / 状态镜像唯一（详见 `_SRT_QUALITY_METRICS.md`）。
+1. **材料收口**：继续处理此前未融合材料；每条材料按 Pipeline 1 完成 SourceCard / Patch / Hook / Material Log / Index / Registry 所需闭环，不因单篇材料立即改写全书或论文。
+2. **Frontiers 转投合规**：按 Issue #740 核验 accepted / production / proof / DOI 状态，取得原期刊明确终止确认，再选择并提交新期刊。
+3. **Adaptive Behavior 稿件维护**：当前已投稿、未外审；等待编辑处理，除非期刊提出明确要求，不增加实验或扩张 framing。
+4. **Forcing 历史材料收集**：继续收集硬性历史书籍、原始论文和同期评论；只做 corpus 与 coverage 记录，不提前形成控制候选判断。
+5. **延后统一优化**：材料收口后，再分别启动《从存在到秩序》和 history-dependent reachability 的统一 pass。
+6. **SEA reliability**：待上述工作减压后重新评估独立编码 pilot。
+7. 保持 canonical 主链不被入口优化、source intuition、材料卡或暂时排期反向污染。
 
 ## Pipeline 快照
 
-- `Pipeline 1`：材料融合继续有效；B 类语义自 2026-07-20 起为“停驻 + 具名触发条件”（见 `Operations/_SRT_MATERIAL_PIPELINE.md`）。
+- `Pipeline 1`：继续有效；B 类为“停驻 + 具名触发条件”，不是默认排队。
 - 当前理论术语以 2026-08-04 作者裁决为准：一般过程使用“选择性再组织”，不再用“再同步”作为跨层级定义；具体神经或群体同步仍按领域可测含义使用。
 - `Pipeline 3` / `Pipeline 6`：按 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 执行。
 - Pipeline 5 主模式：`Operations/_SRT_ARTICLE_WORKFLOW.md`。
+- 书稿统一优化、HDR 统一优化、forcing 控制档案 Part II、SEA reliability pilot 均受 2026-08-05 排期裁决约束。
 
 ## 当前工作边界
 
-- 书稿当前状态与施工许可先看 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`；choice-trace 轨道沿用 2026-07-10 作者豁免，其余书稿治理纪律不豁免。
-- 理论文件（canonical）编辑先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`；本轮作者裁决不构成 canonical 修改授权。
-- `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md` 是治理裁决来源，不得独立用作经验或形式证明。
+- 书稿当前状态与施工许可先看 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`；当前只允许材料融合和必要治理修复，不启动统一正文优化。
+- history-dependent reachability 的已有实验、数字、图表和 assembly 记录保持稳定；新材料先停在材料层，待统一 pass 再裁决是否进入正文。
+- Frontiers 原出版路径未明确终止前不得重复投稿；已接受但准备转投不等于 published、in press 或 rejected。
+- Adaptive Behavior “已投稿、未外审”不得写成 under review。
+- forcing 书籍收集不等于控制案例枚举；Part II 未签署前继续执行既有阻塞。
+- SEA pilot 暂缓不等于 SEA 被验证或被否定。
+- 理论文件（canonical）编辑先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`。
 - 休眠层只做 touch-based repair，不开专项治理轮。

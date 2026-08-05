@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-08-04
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-08-05
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-04
-source_commit: 73e65a8a
-source_branch: claude/d05-c5op-goedel-cohen-audit
+generated: 2026-08-05
+source_commit: 3385d618
+source_branch: agent/status-reconciliation-20260805
 source_dirty: false
-inputs_digest: 97479eaef7a96617
+inputs_digest: b624a0c1148047fb
 ---
 
 # SRT 灵性领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 97479eaef7a96617
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-04 |
-| 来源 commit | `73e65a8a` |
-| 来源分支 | `claude/d05-c5op-goedel-cohen-audit` |
+| 生成日期 | 2026-08-05 |
+| 来源 commit | `3385d618` |
+| 来源分支 | `agent/status-reconciliation-20260805` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
