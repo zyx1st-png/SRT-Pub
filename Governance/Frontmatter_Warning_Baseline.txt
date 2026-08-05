@@ -941,7 +941,6 @@ Operations/Archive_Records/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md: 
 Operations/Archive_Records/PR_D_Batch2b_Neuro_07_PreExtraction_Audit.md: status `audit_complete` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
-Operations/Archive_Records/Paper_Candidates_2026-W13_Snapshot.md: missing recommended frontmatter keys: epistemic_layer, layer
 Operations/Archive_Records/Physics_P0_Inventory_Frontmatter_Audit.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/Physics_P0b_Exact_Inventory_Handoff.md: status `active_handoff_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/Physics_P0b_Exact_Inventory_Report.md: status `complete_v1` outside ratchet enum (draft|active|frozen|archived)
