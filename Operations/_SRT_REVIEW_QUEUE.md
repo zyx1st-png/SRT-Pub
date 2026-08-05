@@ -1,7 +1,8 @@
 ---
 id: SRT-REVIEW-QUEUE
 type: review_queue
-status: active_v2
+status: active
+version: v2
 layer: meta
 epistemic_layer: os
 claim_mode: governance
