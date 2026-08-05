@@ -41,6 +41,14 @@ Execution records under the protocols above. They carry no verdict.
 |---|---|---|
 | [CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md](CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md) | Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8: the archive adequacy certificate for control-case selection | **Part I fixed, Part II unattested.** The search boundary (period 1938–1963, mathematical logic outside the CH/forcing/independence line, with forcing-adjacent recursion-theoretic constructions excluded pending explicit clearance) is committed before any reading. The three adequacy attestations remain unsigned because the archive is not assembled. **Archive-corpus assembly is permitted** — §4 separates collecting corpus material from enumerating candidates, so the archive can be built without voiding the round. **Enumeration, scoring, ranking, selection and individuation remain blocked** until Part II is signed; no candidate case appears |
 
+## Narrow notes
+
+Bounded analyses of a single registered question. They carry no obligation verdict and close nothing.
+
+| File | Question | State |
+|---|---|---|
+| [D05_Q3_Semantic_Premise_Typing_Note.md](D05_Q3_Semantic_Premise_Typing_Note.md) | `D05` §13 Q3 — does Cohen's countable-standard-model premise type into `B_C` or `M_C`? | **provisional typing.** `Z-F` + `V=L` as a `B_C` theory/ground-model condition; countability, standardness and transitivity as `B_C` semantic realization conditions; ramified terms, finite conditions, forcing relation, complete sequence and interpretation in `M_C`. `EVD-D04-0002` remains **unresolved** — the typing raises the bar on `τ_B`/`ρ_B` rather than closing anything; no D05 verdict moves; freeze-exception §14(c) stays unapplied |
+
 ## Obligations registered but not yet in the manuscript index
 
 These were registered by a dossier and require promotion into the staged manuscript's evidence index in a later PR.
