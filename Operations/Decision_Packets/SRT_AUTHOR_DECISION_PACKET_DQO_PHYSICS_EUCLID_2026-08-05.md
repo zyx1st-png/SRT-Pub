@@ -1,7 +1,8 @@
 ---
 id: SRT-AUTHOR-DECISION-PACKET-DQO-PHYSICS-EUCLID-20260805
 type: author_decision_packet
-status: awaiting_author_decision
+status: active
+record_stage: awaiting_author_decision
 layer: meta
 epistemic_layer: os
 claim_mode: governance
