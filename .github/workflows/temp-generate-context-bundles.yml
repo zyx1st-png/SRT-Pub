@@ -1,0 +1,28 @@
+name: Temporary Context Bundle Generation
+
+on:
+  push:
+    branches:
+      - agent/status-reconciliation-20260805
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate context bundles
+        run: python scripts/build_srt_context_bundles.py
+
+      - name: Upload generated bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-context-bundles
+          path: Operations/Context_Bundles
+          if-no-files-found: error
