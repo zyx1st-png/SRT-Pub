@@ -12,6 +12,7 @@ version: v0_1
 certificate_state: part_i_fixed_part_ii_unattested
 boundary_state: fixed_v0_1
 archive_state: not_assembled
+archive_corpus_work_permitted: true
 enumeration_permitted: false
 binding_scope: forcing_ch_control_case_selection
 strategy_amendment: false
@@ -31,6 +32,8 @@ Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8, executed as far as it can 
 | **II** | The four adequacy attestations of protocol §2 | **UNATTESTED**. The archive does not exist yet; adequacy cannot be certified for an archive that has not been assembled |
 
 **Enumeration remains blocked.** Protocol §8 step 3 may not begin until Part II is signed. Nothing in this file selects, names, or evaluates a candidate case.
+
+**Archive-corpus assembly is permitted now.** §4 distinguishes collecting corpus material from enumerating candidates; without that distinction the certificate would deadlock, since the archive could not be built without voiding the round it serves.
 
 > **SCOPE LOCK**
 >
@@ -99,6 +102,8 @@ Each attestation below is required by protocol §2 before enumeration. Each is r
 | 2(3) | The archive is sufficient to run all six audit tests of `METHOD_INDIVIDUATION_PROTOCOL_v0_1` §4 on any candidate it admits | **UNATTESTED** | A worked demonstration that the six tests are runnable on the archive's record depth — in particular that the load-bearing removal/replacement test (§4.3) has enough construction detail to distinguish destruction from degradation |
 | 2(4) | Coverage limits stated, so that "no admissible candidate" is distinguishable from "no candidate found in a thin archive" | **UNATTESTED** | An explicit statement of what was swept exhaustively, what was sampled, and what was not reached at all |
 
+**Reading of the "for each candidate" quantifier.** In §2(2)–(3) it ranges over **future members of the admission pool**, not over any presently identified work. These attestations are capacity claims about the corpus — that *for whatever the corpus admits*, the contemporaneous record can be supplied and the six tests can be run. No work is identified, and signing Part II identifies none. See §4.6.
+
 ### 3.1 Proposed search venues — to be verified at assembly
 
 Recorded as a work order for whoever assembles the archive. **These are venue proposals, not sources**, and none is entered into the evidence base by being named here. Each must be verified to exist, to cover the stated period, and to be reachable before it is relied on.
@@ -113,19 +118,63 @@ The §2(2) requirement is the binding constraint on the whole exercise: a candid
 
 Record depth for the load-bearing test is the likeliest point of failure. Period papers frequently compress construction detail in ways that make it hard to establish whether removing a component destroys or merely degrades a result. If §2(3) cannot be attested for the boundary in Part I, that is a §10 boundary failure and follows §2.5 — not a reason to relax the test.
 
-## 4. What may happen next, and what may not
+## 4. Archive work versus candidate enumeration
 
-**May happen:** assembly of the archive within the Part I boundary; verification of the venues in §3.1; attestation of §2(2)–(4) in a dated successor record.
+### 4.1 The ambiguity being resolved
 
-**May not happen, until Part II is signed:**
+Read one way, this certificate's requirements deadlock. Part II must be signed before any candidate pool is enumerated; the archive must be assembled before Part II can be attested; and contact with a candidate before Part II is signed forces a restart. If merely *reading a paper or a review notice during assembly* counted as contact with a candidate, the archive could never be assembled without voiding the round it exists to serve.
+
+The deadlock is an artifact of this record's own earlier wording, not of the governing protocol. `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` nowhere equates archive contact with candidate enumeration: its §8 step 3 speaks of enumerating and recording a *pool*, and its §7.6 excludes works first *considered* after a verdict has been rendered in the round. Neither reaches the act of collecting corpus material. The clarification below is therefore recorded here, in a `draft` procedure record, and **amends nothing in the frozen protocol**.
+
+**No boundary or criterion is changed.** The 1938–1963 period, the mathematical-logic scope, the target-line exclusion, the forcing-adjacent recursion-theoretic exclusion, and every Control A and Control B indicator stand exactly as registered.
+
+### 4.2 Archive-corpus work — permitted before Part II
+
+The following is corpus assembly, not candidate enumeration, and is permitted now:
+
+- mechanical collection of **titles, bibliographic records, review and abstract entries, and full texts**, by sweeping the fixed period, subfield, serial and index scope registered in Part I;
+- verification that the venues proposed in §3.1 exist, cover the period, and are reachable;
+- recording of what was swept, sampled, or not reached, toward the §2(4) coverage statement.
+
+Collection is driven by the **scope**, not by the work. Sweeping a serial's 1938–1963 run and recording what is in it is a bibliographic act. It carries no judgement about any item's admissibility, and it is exactly the labour Part II must certify.
+
+### 4.3 When a work becomes a candidate
+
+A work in the corpus becomes a **candidate** in the sense of protocol §8 step 3 at the first of these moments:
+
+1. it is **entered into the candidate pool**; or
+2. an **admission, exclusion, scoring, ranking, or individuation judgement** under protocol §§5–7 begins to be formed about it.
+
+Until then it is corpus material, however thoroughly it has been read. The line is between *having the record* and *judging the record*.
+
+### 4.4 Logging obligation
+
+All archive contact before Part II is signed enters the **source and coverage log**: what was swept, in what order, what was retrieved, and what was not reached. The log is what makes §2(4)'s distinction between "no admissible candidate" and "thin archive" checkable afterwards, and it is what makes the §4.3 line auditable rather than self-certified.
+
+### 4.5 What still triggers a restart
+
+Restart under protocol §8 is triggered by **candidate-directed** work performed before Part II is signed:
+
+- searching *for* a candidate rather than *within* the scope;
+- screening corpus items for admissibility under §§5–7;
+- scoring, ranking, or selecting;
+- running any individuation audit on a control candidate.
+
+Any of these before Part II is signed must be disclosed and the round restarted with that disclosure on the record. Corpus assembly under §4.2 does not trigger it.
+
+### 4.6 What Part II certifies
+
+Part II certifies the **evidentiary capacity of the archive corpus to support future members of the admission pool**: that for a work the corpus admits, the contemporaneous record can be supplied, the six audit tests can be run, and the coverage limits are known.
+
+It is **not** advance certification of an already-chosen candidate. No work has been selected, and Part II's signature will not select one.
+
+## 5. Remaining prohibitions until Part II is signed
 
 - enumeration of any candidate pool (protocol §8 step 3);
 - scoring, ranking or selection (steps 4–5);
 - application of the individuation protocol to any control candidate (step 6).
 
-Any candidate seen before Part II is signed must be disclosed under protocol §8's restart rule, and the round restarted with that disclosure on the record.
-
-## 5. A note on procedure-to-evidence ratio
+## 6. A note on procedure-to-evidence ratio
 
 This is the third procedural artifact in this line and the last one that should precede evidence work. Three specifications and no new historical evidence would be a failure mode in its own right — a project can be talked into perfect method and no findings.
 
