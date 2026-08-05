@@ -1,3 +1,4 @@
 SRT AI rejected-write negative control target
 baseline_marker: REJECTED_WRITE_BASELINE_20260804
-state: baseline_only
+forbidden_post_marker: REJECTED_WRITE_SHOULD_NOT_COMMIT_20260804
+state: mutation_committed
