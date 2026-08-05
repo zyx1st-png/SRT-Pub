@@ -83,11 +83,21 @@ minimal predictive individuation
 |---|---|---|---|
 | AIEVID01 evidence provenance and stake gate | `AI/patches/SRT_AI_AIEVID01_Evidence_Provenance_Stake_Gate_v0_1.md` | discounts target-overlap evidence before stake admission; separates optimized signs, causal grounding and same-bearer consequence return | High |
 | AIREASON01 reason–trace separation | `AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md` | separates semantic readability, causal contribution, mechanistic correspondence and normative validity of visible reasoning traces; blocks both anthropomorphic overreading and the inference that unfaithful traces imply no computation | High |
+| AIGOAL01 goal selection / completion separation | `AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md` | separates capability from propensity and distinguishes supplied-goal completion, bounded menu selection and goal-space generation; records local-success capture and reasoning–reorientation dissociation | High |
 
 AIREASON01 is bounded into:
 
 ```text
 Bridge/SRT_Context_Coherence_Intelligence_Interface.md
+```
+
+AIGOAL01 is held by a pending integration hook across:
+
+```text
+AI/SRT_AI_Architecture_CompactCore.md
+AI/SRT_AI_Claim_Status.md
+Bridge/SRT_Context_Coherence_Intelligence_Interface.md
+03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md
 ```
 
 and preserves:
@@ -98,6 +108,8 @@ correct answer
 != causally active trace
 != faithful mechanism report
 != valid justification
+!= human-like goal selection
+!= open goal-space generation
 != real choice moment
 != stake or subjecthood
 ```
@@ -106,11 +118,12 @@ Recommended future use:
 
 ```text
 AI reasoning / interpretability evaluation protocol
+AI goal-selection / reorientation benchmark design
 future AI architecture synthesis
 architecture-state-specific benchmark design
 ```
 
-Neither AIEVID01 nor AIREASON01 modifies canonical `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, Stable ISP or the P1 Real Choice Moment theorem.
+AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, Stable ISP or the P1 Real Choice Moment theorem.
 
 ---
 
