@@ -2,7 +2,8 @@
 id: SRT-PAPER-CANDIDATES
 type: publication_portfolio_tracker
 tags: [Paper, Candidates, Research]
-status: current_2026_w32
+status: active
+record_stage: current_2026_w32
 layer: meta
 epistemic_layer: os
 claim_mode: governance
