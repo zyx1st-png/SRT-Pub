@@ -319,7 +319,6 @@
 01_Source_Intuition/BOOK/DEEP_RESEARCH_SOURCE_PACK_2026-06-05.md: missing recommended frontmatter keys: epistemic_layer, layer
 01_Source_Intuition/BOOK/DEEP_RESEARCH_SOURCE_PACK_2026-06-05.md: status `active_working_entry` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md: missing recommended frontmatter keys: epistemic_layer, layer
-01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md: status `draft_v38` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md: missing recommended frontmatter keys: epistemic_layer, layer
 01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md: status `draft_v27` outside ratchet enum (draft|active|frozen|archived)
 01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md: missing recommended frontmatter keys: epistemic_layer, layer
@@ -462,7 +461,6 @@
 03_Bridges/SRT_Horizontal_Causality_Book_Usage_Bridge_2026-07-02.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 03_Bridges/SRT_Selection_Dynamics_MSD_Bridge.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md: missing recommended frontmatter keys: epistemic_layer
-04_External_Convergence/AI_ML/EC-AI-HIGH-CAPACITY-LOW-STAKE.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md: missing recommended frontmatter keys: epistemic_layer
 04_External_Convergence/AI_ML/EC-AI-JSPACE-GLOBAL-WORKSPACE.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 04_External_Convergence/AI_ML/EC-AI-LOCAL-NEIGHBORHOOD-CALIBRATION.md: missing recommended frontmatter keys: epistemic_layer
@@ -786,7 +784,6 @@ Governance/Archive_2026-06-05/_SRT_RELEASE_2026-02.md: status `published_v1` out
 Governance/Archive_2026-06-05/_SRT_SLIMMING_CHANGELOG_2026-02.md: status `published_v1` outside ratchet enum (draft|active|frozen|archived)
 Governance/FRONTSTAGE_RESTRUCTURE_PLAN.md: missing frontmatter
 Governance/Governance_Load_Reduction_2026-07-20.md: missing recommended frontmatter keys: epistemic_layer, layer
-Governance/README.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Governance/SRT_BOOK_TO_CANONICAL_INCREMENT_SHIM.md: status `draft_v0` outside ratchet enum (draft|active|frozen|archived)
 Governance/SRT_CANONICAL_FREEZE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Governance/SRT_CLAIM_LADDER.md: status `active_v1_1` outside ratchet enum (draft|active|frozen|archived)
@@ -810,7 +807,6 @@ Governance/_SRT_DOC_ENGINEERING_GUIDE.md: status `active_v2` outside ratchet enu
 Governance/_SRT_DOMAIN_TEMPLATE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Governance/_SRT_EXECUTION_PLAN.md: status `legacy_compat_v3` outside ratchet enum (draft|active|frozen|archived)
 Governance/_SRT_EXPLANATION_PROTOCOL.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
-Governance/_SRT_GOVERNANCE_PIPELINE.md: status `active_v3` outside ratchet enum (draft|active|frozen|archived)
 Governance/_SRT_QUALITY_SCORECARD.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
 Governance/_SRT_RELEASE_NOTE_TEMPLATE.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Governance/_SRT_WEEKLY_THEORY_REVIEW.md: status `active_log_v2` outside ratchet enum (draft|active|frozen|archived)
@@ -945,6 +941,7 @@ Operations/Archive_Records/PR_D_Batch2b_Neuro_07_Evo_Devo_Extraction_Record.md: 
 Operations/Archive_Records/PR_D_Batch2b_Neuro_07_PreExtraction_Audit.md: status `audit_complete` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/PR_D_Batch2c1_Neuro_07_Geometric_Annotation_Conversion_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/PR_D_Batch2c2_Neuro_07_Geometric_Regularity_Extraction_Record.md: status `complete` outside ratchet enum (draft|active|frozen|archived)
+Operations/Archive_Records/Paper_Candidates_2026-W13_Snapshot.md: missing recommended frontmatter keys: epistemic_layer, layer
 Operations/Archive_Records/Physics_P0_Inventory_Frontmatter_Audit.md: status `active_audit_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/Physics_P0b_Exact_Inventory_Handoff.md: status `active_handoff_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/Archive_Records/Physics_P0b_Exact_Inventory_Report.md: status `complete_v1` outside ratchet enum (draft|active|frozen|archived)
@@ -1006,11 +1003,8 @@ Operations/_SRT_AUTOMATION_SETUP.md: helper-layer file uses claim_mode: canonica
 Operations/_SRT_AUTOMATION_SETUP.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md: status `active_v4` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_CHOICE_TRACE_LOG.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Operations/_SRT_CHOICE_TRACE_WRITEBACK_PLAN_2026-07-10.md: status `plan_v1_phase1_executed_2026-07-10` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_DAILY_REVIEW_LOG.md: helper-layer file uses claim_mode: canonical
 Operations/_SRT_DAILY_REVIEW_LOG.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
-Operations/_SRT_DAILY_REVIEW_PIPELINE.md: helper-layer file uses claim_mode: canonical
-Operations/_SRT_DAILY_REVIEW_PIPELINE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md: status `completed_initial_audit` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.md: status `generated` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.md: status `generated` outside ratchet enum (draft|active|frozen|archived)
@@ -1033,16 +1027,6 @@ Operations/_SRT_MEDIA_TOPIC_TEMPLATE.md: helper-layer file uses claim_mode: cano
 Operations/_SRT_MEDIA_TOPIC_TEMPLATE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_OPERATIONS_SCHEDULE.md: helper-layer file uses claim_mode: canonical
 Operations/_SRT_OPERATIONS_SCHEDULE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
-Operations/_SRT_PAPER_CANDIDATES.md: helper-layer file uses claim_mode: canonical
-Operations/_SRT_PAPER_CANDIDATES.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
-Operations/_SRT_PAPER_DRAFT_ACTIVE.md: helper-layer file uses claim_mode: canonical
-Operations/_SRT_PAPER_DRAFT_ACTIVE.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
-Operations/_SRT_PAPER_PIPELINE.md: helper-layer file uses claim_mode: canonical
-Operations/_SRT_PAPER_PIPELINE.md: status `active_v2` outside ratchet enum (draft|active|frozen|archived)
-Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md: helper-layer file uses claim_mode: canonical
-Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-Operations/_SRT_REVIEW_QUEUE.md: helper-layer file uses claim_mode: canonical
-Operations/_SRT_REVIEW_QUEUE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_SIGNAL_LOG.md: helper-layer file uses claim_mode: canonical
 Operations/_SRT_SIGNAL_LOG.md: status `rolling_v1` outside ratchet enum (draft|active|frozen|archived)
 Operations/_SRT_SIGNAL_PIPELINE.md: helper-layer file uses claim_mode: canonical
@@ -1288,7 +1272,6 @@ SRT_TOPIC_ARTICLE_INDEX.md: status `draft_v1` outside ratchet enum (draft|active
 SRT_TOPIC_CONSCIOUSNESS_AGENCY_INDEX.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 SRT_TOPIC_FREE_WILL_INDEX.md: status `draft_v1` outside ratchet enum (draft|active|frozen|archived)
 START_HERE.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
-STATUS.md: missing recommended frontmatter keys: epistemic_layer, layer
 Selection-Reality Theory (SRT).md: missing frontmatter
 Spirituality/Praxis_Split/00_Formal_Core.md: missing recommended frontmatter keys: layer
 Spirituality/Praxis_Split/00_Formal_Core.md: status `active_v1` outside ratchet enum (draft|active|frozen|archived)
