@@ -55,6 +55,7 @@ This index points to existing files that carry SRT's source-level force. It does
 | [`Conversations/2026-07-23_SRT_具身位_d与三层关切架构_对话材料.md`](Conversations/2026-07-23_SRT_具身位_d与三层关切架构_对话材料.md) | 具身位重定义为「后果回流所持续个体化出来的承重极」而非稳定结构；跨学科近邻排序（西蒙东/杜威/Barad/布迪厄/怀特海）；内外边界共同生成的递归式；d 作为具身位的关切几何与 d-profile；强度/宽度分叉；三层关切架构（零回流域 / 非构成性关切域 / 自体承重核）。**先读 [收尾审计](Conversations/2026-07-25_具身位_d_q_o_收尾审计.md)**。 |
 | [`Conversations/2026-07-24_SRT_客体性客观性与d_q_o三轴_对话补充.md`](Conversations/2026-07-24_SRT_客体性客观性与d_q_o三轴_对话补充.md) | 07-23 的续轮：第二关切层首先产生**客体性**（攸关但非我）而非完整客观性；客观性作为跨具身位不变量；提出 `d`（关切宽度）/ `q`（构成深度）/ `o`（客观稳定度）三轴，并主张内外是构成切分、主客是位置依赖切分。**先读 [收尾审计](Conversations/2026-07-25_具身位_d_q_o_收尾审计.md)**。 |
 | [`Conversations/2026-07-25_具身位_d_q_o_收尾审计.md`](Conversations/2026-07-25_具身位_d_q_o_收尾审计.md) | 上两份材料补做的 `_SRT_CHOICEMAP_TRACE_WORKFLOW.md §9` 收尾管线：符号撞车检查（九个候选记号中三个重命名了既有对象、三个违反记号或命名空间约定、一个有撞车风险——`ρ`/`Ω`/`τ_self`/`g` 均已被 canonical 占用，`w_i`、`D_stake`、`d_canonical` 各被重新发明一次）、canonical 碰撞三分类、四条**候选增量**（d/q 解耦、客体性≠客观性、内外边界共生成、构成深度可逆下降——均为待审计分叉，非已确认增量）、三条触雷（`q` 与 canonical `d` 有实质语义重叠及 refit-budget 风险，**是否正交未决**；`o` 作为**封闭单标量**与 OPEN_TENSIONS §9 冲突、弱操作化形式未决；`d` 取宽度与 `Def-d-canonical` 冲突）、张力表与路由建议。**全部路由为候选，无一落地。** |
+| [`Conversations/2026-08-05_SRT_显著性侧抑制与核心直觉思想谱系_对话材料.md`](Conversations/2026-08-05_SRT_显著性侧抑制与核心直觉思想谱系_对话材料.md) | 回溯性重建作者早期对显著性、侧抑制、归一化、网络切换与吸引子动力学的关注，如何可能构成 SRT 的前理论母体；严格区分作者确认的个人史、助手重建的思想因果链、神经 bridge 与本体论论证。提出 SI-SL-01…09 候选命题，区分 salience / `d`、prediction error / `Ψ_f`、confidence / `T_dir`，并保留“神经实现不能证明选择本体论优先性”的硬边界。 |
 
 ## How To Use This Index
 
