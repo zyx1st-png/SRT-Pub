@@ -4,6 +4,8 @@ type: framework
 status: archived
 claim_mode: historical_record
 updated: 2026-08-05
+layer: meta
+epistemic_layer: os
 snapshot_as_of: 2026-03-24
 source_commit: 59de10f490d0af7f290b5a4eb07e1cc2ca2eac0b
 source_blob_sha: 6d10475f0b6a87aa6d6cd6670d83207033a8b3d1
