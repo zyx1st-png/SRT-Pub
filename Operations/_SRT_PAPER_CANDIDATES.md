@@ -1,123 +1,89 @@
 ---
 id: SRT-PAPER-CANDIDATES
-type: framework
+type: publication_portfolio_tracker
 tags: [Paper, Candidates, Research]
-status: rolling_v1
+status: current_2026_w32
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: governance
+canonical: false
 dependency: [_SRT_PAPER_PIPELINE]
+updated: 2026-08-05
+historical_snapshot: Operations/Paper_Candidates_Archive/2026-W13_Snapshot.md
 ---
 
-# SRT 论文候选池
+# SRT 论文组合与候选池
 
-## 2026-W13 候选更新（2026-03-24，手动触发）
+> 当前排序采用“真实流程状态优先”，不再沿用 2026-W13 的成熟度分数、影响指标或投稿 blocker。已经投稿或接受的稿件不是候选题目；等待材料收口的稿件也不应被包装成当前投稿任务。
 
-> **本周排序依据**：现成稿件完备度 > 真实投稿窗口 > 可证伪性 > 理论中心性。  
-> **本周结论**：排序维持不变。一号主稿仍是 `ontological friction`，因为它依然是唯一真正进入 near-submission 状态、且目标期刊与 submission package 已基本对齐的候选；二号维持 `markov blanket`；比较稿与统一 formal core 继续后移。与 W11 相比，本周主要变化不是改题，而是修正成熟度判断：`ontological friction` 的作者/对应作者占位问题实际上已解决，剩余 blocker 已收缩为最终样式终审与投稿顺序选择。
+## 1. 当前活跃出版流程
 
-### [P-2026-W13-01] Ontological Friction as a Testable Control-Cost Construct in Executive Breakdown
+| 工作线 | 真实状态 | 当前动作 | 禁止误写 |
+|---|---|---|---|
+| *A Translational Cross-Modal Control-Cost Framework for Executive Breakdown* | Frontiers 已接受；因 APC 过高准备终止原出版路径并转投 | 按 Issue #740 完成状态核验、终止确认、版权/重复投稿检查和新期刊筛选 | 不写作 published、in press、rejected 或可立即重复投稿 |
+| *Costly Selective Closure: A Comparative Heuristic for Life-Likeness in Artificial Systems* | 已投稿 *Adaptive Behavior*；尚未进入外部评审 | 等待编辑处理；保持稿件、匿名补充包和结果稳定 | 不写作 under review；无编辑要求时不扩实验和 framing |
 
-**成熟度评分**：96/100  
-**理论完整度**：24/25 | **证伪性**：24/25 | **证据等级**：23/25 | **引用密度**：25/25
-
-**选题原因**：
-这是当前仓库里唯一已经进入“近投稿”状态的候选：主稿、Frontiers 变体、submission fields、scope statement、QC checklist、figure captions 与 cover-letter 备份件均已存在，且问题设置足够聚焦，不会把 SRT 整体一起拖进高风险总宣言。和 W11 相比，成熟度上调的原因不是理论新增，而是现实 blocker 收缩：作者/对应作者信息已经写入 submission fields 与 cover letter，不再属于未解项。
-
-**核心论点**：
-“知道但做不到”的执行断裂可被形式化为一个跨模态控制成本潜变量 \(\Psi_f\)；该变量可通过行为、语言、生理与可选神经/生化指标形成低成本验证链，并为抑郁、OCD、Parkinson's disease 等边界病例给出可证伪预测。
-
-**关联 SRT 内容**：
-- 主要文件/章节：`papers/ontological_friction/paper_ontological_friction_frontiers_submission.md`，`papers/ontological_friction/frontiers_scope_statement.md`，`papers/ontological_friction/frontiers_submission_qc.md`
-- 关键方程：Eq-Force-01，Eq-Pain-01，Selection Budget Inequality（稿内 Definition 3）
-- 实验钩：H72，H-NEURO-EXEC-01，H-CLIN-OCD-01，H-CLIN-DEP-01
-
-**推荐期刊（按优先级）**：
-1. *Frontiers in Neuroscience*（Translational Neuroscience, Hypothesis and Theory） | IF 估算：~3.2 | 匹配原因：现成 submission package 已按该刊 scope 与 article type 对齐，问题聚焦执行障碍、低成本 biomarker 链与临床边界预测
-2. *Frontiers in Psychology*（Cognition） | IF 估算：~2.9 | 匹配原因：如果弱化临床神经标记、强化执行控制与 psychophysiology，可转为认知/行为科学 framing
-3. 预印本：arXiv（q-bio.NC） | 匹配原因：在正式投稿前建立优先权并先拿外部反馈
-
-**投稿前缺口**：
-- 缺口 1：按 Frontiers 最终参考文献样式与交叉引用再做一轮人工终审
-- 缺口 2：明确“先投 Frontiers / 先挂 arXiv”二选一顺序，并完成 portal 元数据最终核对
+当前优先级：先处理出版流程合规，再处理新的候选投稿。
 
 ---
 
-### [P-2026-W13-02] Markov Blanket, d-value, and Ontological Vulnerability: Rewriting the High Road to Active Inference
+## 2. 已成稿但统一优化延后
 
-**成熟度评分**：86/100  
-**理论完整度**：22/25 | **证伪性**：21/25 | **证据等级**：19/25 | **引用密度**：24/25
+### History-dependent reachability
 
-**选题原因**：
-这篇已经不是一个“想法”，而是一篇成型英文稿。它抓住了 SRT 对 FEP/Active Inference 最清楚也最容易被学界识别的分歧点：Markov blanket 与 free energy minimization 本身不足以推出主体性。
+- 状态：已有实验、统计、图表和 assembly 记录；
+- 当前裁决：等待此前未融合材料全部收口后，再进行一次统一优化；
+- 当前不得：逐篇材料触发局部正文补丁、重新包装投稿状态或无目标增加实验；
+- 复活触发：材料 backlog 明确收口，并建立新的 manuscript-specific synthesis pass。
 
-**核心论点**：
-自由能最小化仍是必要条件，但若没有 `d > 0`、`\Psi_f > 0` 与 `V > 0` 三重门，Markov blanket 只是在统计上收敛，而不是构成真正的能动主体边界。
+### Forcing–CH 数学哲学论文
 
-**关联 SRT 内容**：
-- 主要文件/章节：`papers/markov_blanket/paper_markov_blanket_d_value.md`，`Philosophy/SRT_dValue_Not_PreferredPriors.md`，`Neuroscience/SRT_Clin_02_FEP.md`
-- 关键方程：Eq. (6) triple gate，Eq. (8) blanket reinterpretation，Tension-Rev-ExtT4（`d-value` 不可还原地位）
-- 实验钩：thermostat / LLM / biological organism 三案例 + multi-agent RL 判别实验
+- 状态：D05 有界审计、方法个体化协议和控制案例协议已推进；硬性历史书籍与同期记录仍在收集；
+- 当前裁决：控制档案 Part II 与控制案例程序暂缓；
+- 当前不得：枚举、评分、排名或选择 Control A/B，也不得把未完成历史档案写成论文证据闭环；
+- 复活触发：硬性史料覆盖满足冻结协议并可诚实签署 archive adequacy。
 
-**推荐期刊（按优先级）**：
-1. *Synthese* | IF 估算：~1.4 | 匹配原因：科学哲学、形式化论证与跨学科方法论批判的天然落点
-2. *Frontiers in AI* | IF 估算：~4.7 | 匹配原因：若强化 LLM / artificial agent 边界案例，这篇可转为 AI agency sufficiency-criteria 论文
-3. 预印本：arXiv（q-bio.NC / cs.AI） | 匹配原因：便于先进入 Active Inference 与 AI agency 讨论场
+### SEA 方法论文
 
-**投稿前缺口**：
-- 缺口 1：补一张“standard FEP vs triple gate”系统对照表，压缩文本重复
-- 缺口 2：把判别实验写到更接近 preregistration / simulation protocol 的粒度
+- 状态：协议、跨域案例与编码手册已形成；方法贡献仍为 candidate；
+- 当前裁决：独立编码可靠性 pilot 暂缓；
+- 当前不得：把五门写成已验证的必要充分条件；
+- 复活触发：可靠性 pilot 重启并取得独立编码结果。
 
 ---
 
-### [P-2026-W13-03] SRT vs FEP: Why Free-Energy Minimization Is Not Yet Reality or Subjectivity
+## 3. 停驻论文候选
 
-**成熟度评分**：78/100  
-**理论完整度**：21/25 | **证伪性**：18/25 | **证据等级**：17/25 | **引用密度**：22/25
+下列候选继续保留，但不进入当前施工队列：
 
-**选题原因**：
-这篇长比较稿已经把 SRT 与 FEP 的五个主要分叉点梳清了，适合做“对外第一篇比较文”。它的价值不在于替代 markov-blanket 论文，而在于用更大框架解释 SRT 为什么不是“FEP 换壳”。
+| 候选 | 当前保留价值 | 主要复活条件 |
+|---|---|---|
+| *Markov Blanket, d-value, and Ontological Vulnerability* | SRT 与 FEP/Active Inference 最清楚的主体性判据分歧 | 当前投稿线稳定；重新审计 triple gate、实验协议与 `d/Ψ_f` 最新 canonical 状态 |
+| *SRT vs FEP: Why Free-Energy Minimization Is Not Yet Reality or Subjectivity* | 较完整的比较性对外入口 | 与 Markov-blanket 判据稿重新分工，补最新文献与正式引文链 |
+| *From Selection to Stability: A Unified Formal Core for SRT* | 长期总论文 | 关键 formal gaps、worked examples、差异化预测与外部实现门至少完成一轮硬化 |
+| ChoiceMap / IRP 论文线 | 产品—方法接口与多轴选择审计 | ChoiceMap 产品线或 IRP 工作线被正式重启 |
 
-**核心论点**：
-FEP 非常擅长解释更新、稳定与边界维持，但它仍不足以单独给出现实锚定、主体关切、真实赌注与公共世界形成；SRT 的新增量恰好落在这些缺口上。
-
-**关联 SRT 内容**：
-- 主要文件/章节：`Philosophy/SRT_FEP_Comparison.md`，`Philosophy/SRT_dValue_Not_PreferredPriors.md`，`SRT_PP_ALIGNMENT_GUIDE.md`
-- 关键方程：`d ≡ ||∂U/∂S||`，Payability condition，triple-gate 对照问题
-- 实验钩：第 9 节“最清楚的判别问题” + AI / active inference 边界案例
-
-**推荐期刊（按优先级）**：
-1. *Frontiers in Psychology*（Theoretical and Philosophical Psychology / Consciousness Research） | IF 估算：~2.9 | 匹配原因：适合发表带元理论比较、意识与主体边界讨论的框架稿
-2. *Synthese* | IF 估算：~1.4 | 匹配原因：若把文本进一步收束成 analytic comparison paper，期刊 fit 会更强
-3. 预印本：arXiv（q-bio.NC / cs.AI） | 匹配原因：方便先拿到 FEP / PP / AI consciousness 圈的早期回应
-
-**投稿前缺口**：
-- 缺口 1：把现在的长文骨架改写成标准 journal article 结构，并补齐正式引文链
-- 缺口 2：减少与 P-2026-W13-02 的重叠，明确“比较稿”与“判据稿”的分工
+这些项目是“trigger-based parked candidates”，不是默认待处理队列。
 
 ---
 
-### [P-2026-W13-04] From Selection to Stability: A Unified Formal Core for SRT
+## 4. 当前组合排序
 
-**成熟度评分**：72/100  
-**理论完整度**：20/25 | **证伪性**：19/25 | **证据等级**：14/25 | **引用密度**：19/25
+1. **Frontiers 转投合规与新期刊准备**；
+2. **Adaptive Behavior 编辑状态维护**；
+3. **真正未融合材料的 Pipeline 1 收口**；
+4. **材料收口后重启 history-dependent reachability 统一优化**；
+5. **forcing 硬性历史档案继续收集，但不进入控制案例选择**；
+6. **SEA reliability pilot 后续重评**；
+7. **其余候选按触发条件复活**。
 
-**选题原因**：
-这仍然是 SRT 长期最重要的总论文，但就眼下而言，它不是最该先投的那篇。原因很简单：理论骨架已经很强，但 `Eq-Select-Thermo / Eq-LDP-01 / Eq-LDP-02` 三个关键缺口还没补上，直接上总论容易把所有未闭合处暴露给审稿人。
+---
 
-**核心论点**：
-SRT 可以把存在、选择、稳定性与跨尺度收敛统一为一个共享动力学框架；但这个总论成立的前提，是把 formal core 与最小证伪接口一起压实，而不是只做形上宣言。
+## 5. 候选池维护规则
 
-**关联 SRT 内容**：
-- 主要文件/章节：`Core/SRT_Core_01_Axioms.md`，`Core/SRT_Core_22_Equations.md`，`_SRT_EQ_HYP_MAP.md`，`Core_Law/SRT_Constitution_Seven_Theses.md`
-- 关键方程：Eq-Evo-01，Eq-Select-Thermo，Eq-LDP-01，Eq-LDP-02
-- 实验钩：H6，H7 + G1/G2 gap bundle
-
-**推荐期刊（按优先级）**：
-1. *Entropy* | 影响估算：CiteScore 5.2（公开页） | 匹配原因：信息、复杂系统与广义理论框架的跨学科窗口较宽
-2. *Physical Review E* | IF 估算：~2.4 | 匹配原因：如果把论文收束为选择热力学、秩序参数与尺度约束，则更像统计物理/复杂系统论文
-3. 预印本：arXiv（nlin.AO / q-bio.NC） | 匹配原因：在 formal gaps 补齐前，预印本比正式投稿更稳妥
-
-**投稿前缺口**：
-- 缺口 1：补掉 `_SRT_EQ_HYP_MAP.md` 中 3 个 `Gap`，至少关闭一条 `Eq-Select-Thermo` 数据管线
-- 缺口 2：增加 1-2 个 worked examples，证明 formal core 不只是概念索引而是能落地的模型骨架
+- 已投稿、已接受和已出版稿件按 publication workflow 管理，不再参与候选评分；
+- 期刊、影响指标、APC、scope 和政策必须在真正复活时重新核验；
+- 候选评分只能反映某次评估，不构成永久优先级；
+- 书稿或材料卡的存在不自动产生论文义务；
+- canonical 未闭合问题不得通过论文 framing 偷渡为已解决；
+- 历史排序见 `Operations/Paper_Candidates_Archive/2026-W13_Snapshot.md`。
