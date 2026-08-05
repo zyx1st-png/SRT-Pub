@@ -1,119 +1,123 @@
 ---
 id: SRT-DAILY-REVIEW-PIPELINE
 type: framework
-tags: [DailyReview, AutoFix, QualityGate, Pipeline6]
-status: active_v1
+status: active
+claim_mode: governance
+updated: 2026-08-05
+version: v2
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
 dependency: [SRT-EXECUTION-PLAN, SRT-REVIEW-QUEUE, SRT-D-VALUE-CANONICAL, SRT-EQ-HYP-MAP]
 ---
 
 # SRT 每日自动内部审查流水线（Pipeline 6）
 
-> **目标**：每日自动扫描 SRT KB，将发现的问题按严重程度分流——小问题自动修复并提交，大问题写入待审队列等待人工决策。
+> **目标**：每日扫描 SRT KB，将格式层小问题自动修复，将语义／理论层发现写入“自动扫描待分类”，等待人工分类；自动扫描不得直接生成作者裁决或 canonical 废止结论。
 >
-> **触发方式**：HEARTBEAT 自动触发（距上次运行 ≥ 22 小时）或手动触发（用户发送 `内审`）
+> **触发方式**：HEARTBEAT 自动触发（距上次运行 ≥ 22 小时）或手动触发（用户发送 `内审`）。
 
 ---
 
-## §1 自动修复范围（直接执行，无需人工确认）
+## §1 自动修复范围
 
-以下问题由 agent 自动修复后直接 `git commit`：
+以下问题可自动修复后提交：
 
-### 1.1 Frontmatter 规范
-- 缺少 `status` 字段 → 补填 `status: draft`
-- 缺少 `tags` 字段 → 补填空数组 `tags: []`
-- `id` 字段缺失 → 根据文件名生成标准 ID（`SRT-DOMAIN-BASENAME`）
+### 1.1 Frontmatter 最小字段
 
-### 1.2 符号一致性
-基于 `_SRT_SYMBOL_TABLE.md` 的权威表，修复以下已记录的不一致：
-- `Ĝθ` → `Ĝ_θ`（缺下划线）
-- `Ψf` → `Ψ_f`（缺下划线）
-- `L0 / L1 / L2` → `L₀ / L₁ / L₂`（补下标）
-- `d-value` 的单数/复数混用 → 统一为 `d-value`
+- 新建或本次实质修改文件缺 `status` → 补 `status: draft`；
+- 缺 `id`、`claim_mode` 或 `updated` → 仅在能从当前 owner / workflow 明确判断时补；
+- 不自动扩展 `type`、`status`、`claim_mode` 枚举。
 
-### 1.3 结构冗余
-- 同一文件中完全相同的段落标题（相邻出现）→ 删除重复项
-- 连续空行超过 3 行 → 压缩为 2 行
+### 1.2 符号与格式
 
-### 1.4 引用完整性
-- `dependency:` 字段中列出的文件不存在于 `_SRT_MANIFEST.yaml` → 追加注册
+- 只修 `_SRT_SYMBOL_TABLE.md` 已明确规定、且不改变语义的拼写／格式偏差；
+- 连续空行、相邻重复标题等纯格式问题可修；
+- 不自动重写理论术语或跨文件迁移内容。
+
+### 1.3 引用与路径
+
+- 仅修可验证的断链、移动路径和明显导航错误；
+- 不因 dependency 未注册而自动修改 manifest 或 registry；该类发现进入待分类区。
 
 ---
 
-## §2 标记并写入 `Operations/_SRT_REVIEW_QUEUE.md` 的范围
+## §2 仅扫描、不自动裁决的范围
 
-以下问题**不自动修复**，仅标记记录：
+- `_SRT_EQ_HYP_MAP.md` 中 gap / partial 状态变化；
+- 占位模式与可能误报；
+- d-value 定义段是否缺 canonical 引用；
+- 跨文件语义冲突；
+- `Core/SRT_Core_01_Axioms.md` Part B 结构完整性；
+- owner、入口、claim level、canonical 状态或 supersession 问题；
+- 需要作者选择的符号、变量、理论落点和论文方向。
 
-### 2.1 实验映射缺口
-- `_SRT_EQ_HYP_MAP.md` 中 `status: gap` 的条目（每次检查是否有新增或状态变化）
-
-### 2.2 占位内容检测
-搜索以下模式，定位文件和行号：
-- `[待填写]`、`[TODO]`、`[待补充]`、`[占位]`、`TBD`
-
-### 2.3 d-value 定义偏离
-- 包含 `d ≡`、`d =`、`d-value 定义` 的段落
-- 检查是否引用了 `_SRT_D_VALUE_CANONICAL.md`
-- 未引用则标记为 Medium 优先级
-
-### 2.4 跨文件语义不一致（关键词比对）
-以下概念在不同文件中的描述如果出现方向性矛盾（一个说"A意味着B"，另一个说"A意味着非B"）：
-- `L₂` 的定义方式
-- `Ψ_f` 的方向性（摩擦/成本的正负）
-- 意识涌现的条件（三条件 vs 其他）
-
-### 2.5 Part B 完整性
-- 检查 `Core/SRT_Core_01_Axioms.md` 各公理的 Part B 段落是否包含 5 节结构（历史/数学/实验/对话/边界）
-- 缺少任一节 → 标记为 Low 优先级（已有内容但结构不完整）
+这些发现只能进入 `Operations/_SRT_REVIEW_QUEUE.md §C 自动扫描待分类`。
 
 ---
 
-## §3 执行流程
+## §3 自动扫描写入格式
 
-```
-1. 读取 heartbeat-state.json → 检查 pipeline6_last
-2. 若距上次 < 22h → 跳过，输出 "PIPELINE6_SKIP"
-3. 若距上次 ≥ 22h 或手动触发：
-   a. 运行 §1 检查项 → 收集修复列表
-   b. 运行 §2 检查项 → 收集待审列表
-   c. 执行 §1 修复（直接编辑文件）
-   d. 追加 §2 待审项到 Operations/_SRT_REVIEW_QUEUE.md
-   e. 追加本次运行摘要到 Operations/_SRT_DAILY_REVIEW_LOG.md
-   f. git commit（若有修复）
-   g. 更新 heartbeat-state.json 的 pipeline6_last
+```markdown
+| 扫描日期 | 来源文件 | 原始发现 | 检查类别 | 建议严重度 | 分类状态 |
+|---|---|---|---|---|---|
+| YYYY-MM-DD | `path` | 只描述观察到的事实，不给作者结论 | frontmatter / path / mapping / semantic / PartB / owner | Low / Med / High-suggested | Unclassified |
 ```
 
+规则：
+
+- 不直接写入作者裁决区；
+- 不使用 `Resolved`、`Superseded`、`canonical` 等结论词，除非有明确上游裁决可引用；
+- 建议严重度不是正式优先级；
+- 人工分类后才移动到作者裁决、触发式延期或已处理区。
+
 ---
 
-## §4 输出规范
+## §4 执行流程
 
-### git commit 格式
+```text
+1. 读取 heartbeat-state.json，检查 pipeline6_last；
+2. 若距上次 < 22h，输出 PIPELINE6_SKIP；
+3. 运行自动修复检查与语义扫描；
+4. 对 §1 纯格式项执行修复；
+5. 将 §2 原始发现追加到 _SRT_REVIEW_QUEUE.md §C；
+6. 将运行摘要追加到 _SRT_DAILY_REVIEW_LOG.md；
+7. 只有存在实际文件修复或新扫描记录时才提交；
+8. 更新 pipeline6_last。
 ```
+
+---
+
+## §5 输出规范
+
+### commit
+
+```text
 fix(daily-review): auto-fix YYYY-MM-DD [N items]
 ```
 
-### `Operations/_SRT_DAILY_REVIEW_LOG.md` 追加格式
-```
+### 日志
+
+```text
 ## YYYY-MM-DD HH:mm
-自动修复：N 项（frontmatter: A, 符号: B, 冗余: C, 引用: D）
-写入队列：M 项（实验映射: A, 占位: B, d-value: C, 语义: D, PartB: E）
+自动修复：N 项
+自动扫描待分类：M 项（按类别汇总）
+未执行语义裁决：K 项
 ```
 
 ---
 
-## §5 自动修复阈值（不修改的边界）
+## §6 不自动修改的边界
 
-以下情况即使检测到问题也**不自动修复**，仅记录：
-- 语义变更（任何改变命题含义的修改）
-- 删除 20 字以上的段落内容
-- 跨文件的内容迁移
-- 涉及 `Core_Law/` 目录下文件的任何修改
+- 任何命题含义变化；
+- 删除或迁移实质正文；
+- `Core_Law/`、canonical registry、symbol table 的语义修改；
+- owner 废止、入口升格、claim-level 变化；
+- 作者裁决项；
+- 论文主张、书稿正文和实验结论。
 
----
+## 边界声明
 
-## 【边界声明】
-1. Pipeline 6 的自动修复仅覆盖格式层，不修改理论内容。
-2. `Operations/_SRT_REVIEW_QUEUE.md` 中的标记是建议性的，人工处理时可以判断为误报并标注 `[FALSE_POSITIVE]`。
-3. 每日审查不替代 Pipeline 4（每周治理），二者互补：前者侧重自动化格式，后者侧重人工理论方向判断。
+1. Pipeline 6 是扫描与格式修复工具，不是理论评审者；
+2. 自动扫描发现必须经过人工分类；
+3. 每日审查不替代 Pipeline 4 周评；
+4. 误报可在人工分类时标记并转入已处理区。
