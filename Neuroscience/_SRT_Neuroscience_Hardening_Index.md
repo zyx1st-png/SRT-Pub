@@ -26,7 +26,7 @@
 
 ### N10 integration target
 
-Insert into the future N1-N12 synthesis after current N4/L2 or N8/experimental roadmap:
+Insert into the future N1-N13 synthesis after current N4/L2 or N8/experimental roadmap:
 
 ```text
 BTSP shows how eligible traces across behavioral timescales can be captured by a local trigger and written into synaptic structure after a single experience.
@@ -68,6 +68,15 @@ SRT use:
 can represent != can sustain != can transition
 ```
 
+NEURAL22 supplies the intra-astrocytic scale that should be folded into the same future section:
+
+```text
+local microdomain detection
+-> single-cell topology and threshold admission
+-> intercellular astrocyte coupling
+-> neural and vascular support
+```
+
 ---
 
 ## 3. Recommended future synthesis
@@ -75,7 +84,7 @@ can represent != can sustain != can transition
 Create a new synthesis file rather than continuously expanding the N1-N9 draft:
 
 ```text
-Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md
+Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
 ```
 
 Proposed structure:
@@ -88,11 +97,12 @@ Proposed structure:
 6. L2 as historically sedimented transition topology
 7. Consciousness as stable concern-weighted L1 anchoring
 8. Rapid hardening: BTSP and one-shot L1-to-L2 sedimentation
-9. Non-neuronal support topology: astrocyte networks
-10. Psychopathology as distorted anchoring / attractor capture
-11. Experimental roadmap and multimodal measurement
-12. Comparison with mainstream neuroscience theories
-13. Boundary cautions and falsification handles
+9. Non-neuronal support topology: intercellular astrocyte networks
+10. Nested glial support: intra-astrocytic hierarchy and dynamic hubs
+11. Psychopathology as distorted anchoring / attractor capture
+12. Experimental roadmap and multimodal measurement
+13. Comparison with mainstream neuroscience theories
+14. Boundary cautions and falsification handles
 
 ---
 
@@ -107,10 +117,10 @@ Proposed structure:
 | NEURAL18 | `Materials/2026/SRC_2026_07_27_Neuro_Posani_Rarely_Categorical_Highly_Separable_Nature.md` / `Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + claim-status guardrail | High-dimensional mixed selectivity is selection-ready capacity, not selection or anchoring itself; decodability, causal access, behavioral use, conscious anchoring, and L2 write-back must be separated, and `L0 -> L1` does not require neural dimensional collapse | Standalone bridge/guardrail patch added; peer-reviewed Nature evidence; compact-core synthesis pending |
 | NEURAL19 | `Materials/2026/SRC_2026_08_03_Neuro_Tottori_Resource_Induced_Memory_Phase_Transitions.md` / `Neuroscience/patches/SRT_Neuro_NEURAL19_Resource_Gated_Memory_Admission_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + conditional `Core/SRT_Core_14_Dynamics_Scaling.md` | A history-bearing strategy requires separable encoding and stabilization gates and is locally admissible only within a declared resource–uncertainty regime; repetition or uncertainty does not automatically produce stable L2-like constraint | Standalone bridge patch and pending hook added; accepted PRL with arXiv full-text close-read; canonical core untouched |
 | NEURAL20 | `Materials/2026/SRC_2026_08_03_Neuro_Asaoka_Habit_Strategy_Execution_Dissociation.md` / `Neuroscience/patches/SRT_Neuro_NEURAL20_Habit_Strategy_Execution_Dissociation_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` | Habitual strategy conversion, execution gain, and reselection capacity must be separated; behavioral repetition or intensity alone does not establish L2 replacement or absence of real choice | Standalone bridge patch and pending hook added; peer-reviewed source, with detailed methods close-read still required before fine-grained circuit claims |
+| NEURAL21 | `Materials/2026/SRC_2026_07_27_Neuro_Takahashi_REM_Energy_Paradox.md` / `Neuroscience/patches/SRT_Neuro_NEURAL21_REM_State_Dependent_Metabolic_Payability_v0_1.md` | Core 25 + Neural/Consciousness compact core | State-dependent REM metabolic dissociation separates supply, substrate, immediate neuronal energy, payment, and recovery; non-neuronal support topology belongs in the embodied selection implementation bridge | Standalone bridge patch and pending hook added; peer-reviewed mouse evidence; compact-core synthesis pending |
+| NEURAL22 | `Materials/2026/SRC_2026_08_04_Neuro_Perez_Astrocyte_Hierarchical_Information_Flow.md` / `Neuroscience/patches/SRT_Neuro_NEURAL22_Astrocyte_Hierarchical_Information_Flow_v0_1.md` | N12 revision + `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` | Astrocyte support topology is nested across subcellular and intercellular scales; dynamic initiator, hub, somatic, and receiving roles condition local-to-global support admission, while latency/centrality, calcium recruitment, `Psi_f`, `d`, `T_dir`, and consciousness remain separated | Standalone P3 bridge/P4 experimental patch and pending hook added; full peer-reviewed PDF close-read; causal-flow and pathology extrapolations explicitly bounded |
 
 ---
-
-| NEURAL21 | Materials/2026/SRC_2026_07_27_Neuro_Takahashi_REM_Energy_Paradox.md / Neuroscience/patches/SRT_Neuro_NEURAL21_REM_State_Dependent_Metabolic_Payability_v0_1.md | Core 25 + Neural/Consciousness compact core | State-dependent REM metabolic dissociation separates supply, substrate, immediate neuronal energy, payment, and recovery; non-neuronal support topology belongs in the embodied selection implementation bridge | Standalone bridge patch and pending hook added; peer-reviewed mouse evidence; compact-core synthesis pending |
 
 ## 5. Parked B1/B2 SourceCards without PatchNotes
 
@@ -136,9 +146,10 @@ NEURAL18 = Pipeline 1 population-geometry / decodability-anchoring bridge patch 
 NEURAL19 = Pipeline 1 resource-gated history-admission bridge patch and hook added; all synthesis targets pending
 NEURAL20 = Pipeline 1 habit strategy / execution / reselection bridge patch and hook added; all synthesis targets pending
 NEURAL21 = Pipeline 1 REM state-dependent metabolic payability bridge patch and hook added; all synthesis targets pending
+NEURAL22 = Pipeline 1 nested intra-/intercellular astrocyte-topology bridge patch and hook added; N12, compact-core and prediction-table synthesis pending
 B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, or NEURAL20 as primitive axioms. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, NEURAL20, NEURAL21, or NEURAL22 as primitive axioms. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
