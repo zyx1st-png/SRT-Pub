@@ -1,110 +1,123 @@
 ---
 id: SRT-PAPER-PIPELINE
 type: framework
-tags: [Paper, Submission, Research, JournalMatch]
-status: active_v2
+status: active
+claim_mode: governance
+updated: 2026-08-05
+version: v3
 layer: meta
 epistemic_layer: os
-claim_mode: canonical
 dependency: [SRT-EQ-HYP-MAP, SRT-QUALITY-SCORECARD, SRT-WEEKLY-THEORY-REVIEW]
 ---
 
-# SRT 论文孵化流水线（Pipeline 2）
-
-> **变更（2026-03-02）**：在成熟度评分中添加期刊匹配环节，规范候选条目输出格式（含期刊推荐）。
-
----
+# SRT 论文孵化与出版流程（Pipeline 2）
 
 ## 目标
 
-将内部理论资产持续提炼为可投稿论文，形成"候选池 → 主稿 → 预投稿包"的闭环。
+把论文工作分成四种互不混淆的状态：
+
+1. **候选孵化**：尚未进入当前施工；
+2. **活跃主稿**：作者明确授权编辑；
+3. **投稿／出版流程**：已提交、已接受或正在转投；
+4. **触发式延期**：有明确复活条件，但不自动排队。
+
+`STATUS.md` 是唯一事实状态面；Pipeline 2 的三件套只维护对象、动作和门控。
 
 ---
 
 ## 触发方式
 
-**自动提醒（HEARTBEAT，每周一）**：
-- 检查 `memory/heartbeat-state.json` 中 `paper_pipeline_week`
-- 若本周未执行 → 提醒用户并等待授权
-- 执行后更新 `paper_pipeline_week` 为本周 ISO 周号（如 `2026-W10`）
+### HEARTBEAT
 
-**手动触发**：
-- 用户发送 `论文候选` → 立即执行候选池更新与评分
+每周只检查：
 
----
+- 是否有出版状态变化尚未同步；
+- 是否有作者明确要求复活候选；
+- 是否有活跃主稿需要推进。
 
-## 周期
+没有状态变化或作者授权时，不自动重排候选、不刷新分数、不改稿。
 
-- **每周**：候选筛选 + 评分更新 + 期刊匹配
-- **每两周**：主稿迭代 + 投稿就绪评估
+### 手动触发
+
+- `论文候选`：重新审计候选对象、路径与复活条件；
+- `推进主稿`：只处理 `_SRT_PAPER_DRAFT_ACTIVE.md` 指定的工作面；
+- `投稿检查`：执行 `_SRT_PAPER_SUBMISSION_CHECKLIST.md`；
+- `更新投稿状态`：先核验事实，再同步 `STATUS.md` 与对应 Issue。
 
 ---
 
 ## 阶段
 
-1. **候选池构建**（3-5 题）
-2. **成熟度评分**（理论完整、证伪性、证据等级、引用密度）+ **期刊匹配**
-3. **主稿迭代**（单篇优先）
-4. **预投稿检查**（结构、图表、引文、边界声明）
-5. **投稿包生成**（cover letter + target journal fit）
+1. **对象定位**：稿件路径、相关实验、补充材料和当前 owner；
+2. **状态分类**：candidate / active draft / publication workflow / deferred；
+3. **复活或施工门**：作者授权、材料收口、外部回复或协议条件；
+4. **主稿迭代**：只对 active draft 执行；
+5. **预投稿检查**：结构、图表、引文、边界、匿名与数据声明；
+6. **投稿包生成**：按当时真实期刊规则生成；
+7. **状态同步**：稿号、编辑阶段、外审、接受、proof、DOI 或终止路径。
 
 ---
 
-## 候选条目标准格式
+## 候选池契约
 
-每个候选题目在 `Operations/_SRT_PAPER_CANDIDATES.md` 中使用以下格式：
+`Operations/_SRT_PAPER_CANDIDATES.md` 中每个候选至少包含：
 
 ```markdown
-### [P-ID] 论文候选标题
-
-**成熟度评分**：XX/100
-**理论完整度**：X/25 | **证伪性**：X/25 | **证据等级**：X/25 | **引用密度**：X/25
-
-**选题原因**：
-...（为什么这个题目现在适合发表？时机、空白点、SRT 独特贡献）
-
-**核心论点**：
-...（一段话概括论文的主张）
-
-**关联 SRT 内容**：
-- 主要文件/章节：`SRT/路径#章节`
-- 关键方程：Eq-XX-XX
-- 实验钩：H-ID（若已有实验数据）
-
-**推荐期刊（按优先级）**：
-1. [期刊名] | IF 估算：~X.X | 匹配原因：...
-2. [期刊名] | IF 估算：~X.X | 匹配原因：...
-3. 预印本：arXiv（分区：q-bio.NC / nlin.AO / cs.NE）
-
-**投稿前缺口**：
-- 缺口 1：...
-- 缺口 2：...
+| 候选 | 当前对象 | 复活条件 |
+|---|---|---|
+| 标题 | `repo/path/to/manuscript.md` | 具名触发条件 |
 ```
 
----
+规则：
 
-## 期刊匹配逻辑
-
-根据论文主题选择匹配期刊：
-
-| 主题方向 | 推荐期刊（第一梯队） | 推荐期刊（第二梯队） |
-|---------|-----------------|-----------------|
-| 跨学科/意识理论 | *Entropy*、*PLOS ONE* | *Frontiers in Psychology* |
-| 神经科学 | *Neural Computation*、*NeuroImage* | *Frontiers in Neuroscience* |
-| 哲学/认知科学 | *Synthese*、*Mind & Language* | *Phenomenology and the Cognitive Sciences* |
-| 物理/复杂系统 | *Physical Review E*、*Chaos* | *Journal of Statistical Physics* |
-| AI/计算 | *Neural Networks*、*Cognitive Computation* | *Frontiers in AI* |
-| 预印本先行（所有方向） | arXiv (q-bio.NC, nlin.AO) | bioRxiv |
-
-**选刊原则**：
-1. 优先匹配论文最强的一个维度（避免"跨学科导致无家可归"）
-2. 预印本先行：正式投稿前先发 arXiv，建立优先权并获得早期反馈
-3. 开放获取优先（*Entropy*、*PLOS ONE*）有利于传播
+- 已投稿、已接受或已进入出版流程的稿件不参与候选评分；
+- 不维护永久 `XX/100` 成熟度分数；
+- 不在未实际复活时预填期刊、IF 或 APC；
+- 选刊必须在真实提交前重新核验 scope、article type、费用、版权和匿名政策；
+- 每个候选必须有可定位路径和复活条件；
+- 历史评分如需保留，进入 `Operations/Archive_Records/`。
 
 ---
 
-## 交付物
+## 活跃主稿契约
 
-- `SRT/Operations/_SRT_PAPER_CANDIDATES.md`（候选池，含期刊匹配）
-- `SRT/Operations/_SRT_PAPER_DRAFT_ACTIVE.md`（当前主稿）
-- `SRT/Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md`（预投稿清单）
+`Operations/_SRT_PAPER_DRAFT_ACTIVE.md` 只回答：
+
+- 当前允许编辑哪一篇稿件或哪一个转投包；
+- 当前允许和禁止的动作；
+- 是否存在第二 drafting queue。
+
+没有作者明确授权时，不自动把候选提升为活跃主稿。
+
+---
+
+## 投稿清单契约
+
+`Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md` 只列：
+
+- 操作硬门；
+- 核验动作；
+- 完成条件；
+- 措辞与重复投稿护栏。
+
+完整状态叙述指回 `STATUS.md`，不在三件套之间复制维护。
+
+---
+
+## 期刊匹配规则
+
+1. 先确定稿件的最强学科问题和 article type；
+2. 使用当前官网、作者指南和费用政策重新核验；
+3. 同时检查订阅出版、APC、减免与机构协议；
+4. 不默认“预印本先行”，而是按目标期刊政策和作者策略决定；
+5. 原投稿流程未终止前不转投；
+6. 期刊推荐必须标注核验日期，过期后重新查证。
+
+---
+
+## 三件套输出
+
+- `Operations/_SRT_PAPER_CANDIDATES.md`：候选对象、路径、复活条件；
+- `Operations/_SRT_PAPER_DRAFT_ACTIVE.md`：当前允许编辑的主稿／出版工作面；
+- `Operations/_SRT_PAPER_SUBMISSION_CHECKLIST.md`：操作门与完成条件；
+- `STATUS.md`：唯一事实状态面。
