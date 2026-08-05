@@ -2,7 +2,8 @@
 id: SRT-PAPER-SUBMISSION-CHECKLIST
 type: publication_workflow_tracker
 tags: [Paper, Submission, Checklist]
-status: active_v2
+status: active
+version: v2
 layer: meta
 epistemic_layer: os
 claim_mode: governance
