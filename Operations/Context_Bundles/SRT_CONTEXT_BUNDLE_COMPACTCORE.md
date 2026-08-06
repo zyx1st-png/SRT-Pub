@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-06
-source_commit: a07d2a72
+source_commit: 3f92a664
 source_branch: claude/active-theory-assimilation-2026-08-06
-source_dirty: true
+source_dirty: false
 inputs_digest: 5c0be393085a11e5
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 5c0be393085a11e5
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-06 |
-| 来源 commit | `a07d2a72` |
+| 来源 commit | `3f92a664` |
 | 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -61,7 +61,7 @@ inputs_digest: 5c0be393085a11e5
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-04-23 |
 | 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-04-20 |
-| 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | unknown |
+| 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-06 |
 
 ## §0.2 状态护栏
 
@@ -5365,7 +5365,7 @@ SRT 的压缩立场是：
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | unknown |
+| last_commit | 2026-08-06 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

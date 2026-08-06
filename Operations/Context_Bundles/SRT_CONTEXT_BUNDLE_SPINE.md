@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-06
-source_commit: a07d2a72
+source_commit: 3f92a664
 source_branch: claude/active-theory-assimilation-2026-08-06
-source_dirty: true
+source_dirty: false
 inputs_digest: 5c0be393085a11e5
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 5c0be393085a11e5
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-06 |
-| 来源 commit | `a07d2a72` |
+| 来源 commit | `3f92a664` |
 | 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,7 +43,7 @@ inputs_digest: 5c0be393085a11e5
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-07-21 |
+| 1 | `SRT_AI_START.md` | 2026-08-06 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-05-18 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-05-01 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-06-05 |
@@ -58,7 +58,7 @@ inputs_digest: 5c0be393085a11e5
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-07-21 |
 | 14 | `Core/SRT_Core_22_Equations.md` | 2026-07-07 |
 | 15 | `_SRT_SYMBOL_TABLE.md` | 2026-07-20 |
-| 16 | `Core/SRT_OPEN_TENSIONS.md` | 2026-07-20 |
+| 16 | `Core/SRT_OPEN_TENSIONS.md` | 2026-08-06 |
 
 ## §0.2 状态护栏
 
@@ -429,7 +429,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-07-21 |
+| last_commit | 2026-08-06 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -5948,7 +5948,7 @@ SRT 主方程的运作机制如下：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-07-20 |
+| last_commit | 2026-08-06 |
 
 **权威判读**：**未闭合登记**——其中条目不得被陈述为已封口。
 
