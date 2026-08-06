@@ -1,0 +1,346 @@
+---
+id: SRT-OPS-AUDIT-ACTIVE-THEORY-ASSIMILATION-2026-08-06
+type: audit
+status: active
+record_stage: audit_v1
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
+date: 2026-08-06
+source_of_truth: "origin/main @ a07d2a72"
+dependency:
+  - SRT-MATERIAL-PIPELINE
+  - SRT-OPS-AUDIT-HOOK-CLOSURE-2026-07-25
+  - SRT-GOVERNANCE-ANTI-BLOCKING-GATE
+  - SRT-ACTIVE-THEORY-NODES
+tags: [Governance, Audit, Assimilation, ActiveLayer, ContextBundles, Router, DeepTheoryMap]
+machine_readable: Operations/Audits/data/srt_active_theory_assimilation_2026-08-06.csv
+manifest: Operations/Audits/data/srt_active_theory_nodes.json
+---
+
+# 全仓活跃理论吸收审计（2026-08-06）
+
+> **性质**：运行层审计。本轮**不修改** canonical 定义、公理、方程、符号、claim level 或已投稿论文。对 `Core/SRT_OPEN_TENSIONS.md` 的改动是**新增一条登记**（§14），不改动既有条目。
+>
+> **本轮改了什么定义**：审计的判据本身。此前"材料已融入"的实际判据是**保存 + 登记 + 安排落点**；本轮改为**能改变下一轮 AI 判断**。这是一次判据收紧，因此几乎所有此前记为"已融入"的项目在新判据下会降级——这是预期结果，不是新发现的失败。
+
+---
+
+## 0. 一句话结论
+
+> 仓库的**档案化**和**工程化**都相当健康；断裂全部集中在**工程化 → 理论生效**这一段。
+>
+> 具体形态：**理论增量存在，但没有任何入口指向它**。一个只按 `AGENTS.md §Session Start` 读取的新会话，读不到它，因而判断不会改变。
+
+本轮以「选择生成条件与真实选择事件」节点作端到端试点，把这段断裂在一个节点上补通，并留下可复现的检查器和可维护的节点清单，使后续节点不必重新发明通路。
+
+---
+
+## 1. 三层定义与本轮判据
+
+| 层 | 含义 | 判据 | 本轮状态 |
+|---|---|---|---|
+| **档案化** | 原始材料、对话、SourceCard、choice trace 已保存 | 文件存在且可检索 | **健康**。59 张 SourceCard、11 份 trace/ghost 卡、10 份对话材料、11 张 EC 卡，全部有 provenance |
+| **工程化** | Material Log、patch、hook、registry、未来落点齐备 | 台账有行、patch 有 ID、hook 有 target | **大体健康，有已知缺口**。31 张 patch、24 张 hook（landed 12 / partial 3 / pending 9），2 个 hook target 文件从未创建 |
+| **理论生效** | 已压缩为 SRT 原生命题，进入活跃 owner **且**进入 AI 检索路径，旧表述已处理，行为测试可证判断改变 | 见 §5 的 EA-1…EA-5 | **稀缺**。16 个理论节点中 **1 个**满足全部判据（本轮试点补通的那个） |
+
+**以下任一状态，本轮均不计为"已融入理论"**：verdict A、SourceCard 完成、Material Log 已登记、patch 已创建、hook 有 target、文件可被搜索到、内容存在于 `01_Source_Intuition/`、choice trace 已完成 closure pipeline。
+
+---
+
+## 2. AI 活跃理论表面清单
+
+必须区分五种情况，它们**不是**同一件事：
+
+| # | 情况 | 本仓实例 | 是否影响下一轮判断 |
+|---|---|---|---|
+| 1 | 文件在仓库中存在 | 全部 `.md` | 否 |
+| 2 | 文件能通过搜索找到 | 全部 | 否——除非 AI 恰好想到去搜 |
+| 3 | 文件被 router / deep map 指向 | 见下 B 层 | **是**，条件是任务被正确分类 |
+| 4 | 文件会进入 context bundle | 见下 D 层 | **是**，无条件 |
+| 5 | 文件会被默认工作流主动读取 | 见下 A 层 | **是**，无条件 |
+
+### A. 默认启动层（`AGENTS.md §Session Start` 规定的 3 个文件）
+
+```text
+SRT_AI_START.md
+_SRT_AGENT_RETRIEVAL_PROFILE.md
+STATUS.md §Fast Status
+```
+
+条件加载：`_SRT_INDEX.md`、`_SRT_SYMBOL_TABLE.md`、`_SRT_CONTEXT_ROUTER.md`、`_SRT_DEEP_THEORY_MAP.md`、`_SRT_PARKED_INDEX.md`、`Operations/Status_History/`。
+
+### B. 检索与理论地图层
+
+- `_SRT_CONTEXT_ROUTER.md`：本轮前 **24 条路由**，本轮后 25 条（新增 §23a）。
+- `_SRT_DEEP_THEORY_MAP.md`：本轮前 **19 个节点** + 维护规则，本轮后 20 个（新增 §19a）。
+- 各领域 `README.md` / `*_COMPACT_REGISTRY.md` / `_PHILOSOPHY_MACHINE_INDEX.md`。
+- `CANONICAL_REGISTRY.md`、`03_Bridges/BRIDGE_INDEX.md`、`Bridge/SRT_Adjacent_Theory_Interface_Index.md`。
+
+### C. 活跃理论 owner
+
+canonical anchors（`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md`）、`Core/SRT_Core_21*`、`Core/SRT_Core_22_Equations.md`、`Core_Law/*`、各域主文、`Core/SRT_OPEN_TENSIONS.md`。
+
+### D. 快速理解层与 context bundle
+
+- **19 个 CompactCore**（本轮前 18）。
+- **8 个 context bundle**，由 `scripts/build_srt_context_bundles.py` 生成，`--check` 验证内容摘要。
+- 装载路线互斥：`SPINE`（144,888 ≈token）用于裁定定义；`COMPACTCORE`（68,377）用于领域问答。预算上限 155,000，由 `check_budgets()` 强制。
+
+### E. 工作线入口
+
+`01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md` + `BOOK_ACTIVE_MANIFEST.json`；`Operations/_SRT_PAPER_PIPELINE.md`；`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`；`Operations/_SRT_REVIEW_QUEUE.md`。
+
+### 关键发现：`03_Bridges/` 的路由错分
+
+本轮前，`_SRT_AGENT_RETRIEVAL_PROFILE.md` 对 `03_Bridges/` 的**全部**描述是一行：
+
+> `03_Bridges/` 和 `Bridge/` for adjacent theory translation.
+
+但 `03_Bridges/` 里的 T-B、T-D、T-E、MSD 四座桥**不是**邻近理论翻译，而是 SRT 自己的跨域机件。这一行分类错误的后果是可推导的：一个 AI 在做「这算不算真的选择」的判断时，不会认为自己在做"邻近理论翻译"，因此**不会打开这个目录**。
+
+这是本轮发现的最有解释力的单点缺陷：它不是"文件缺失"，而是"入口把内容描述成了别的东西"。已在本轮修正。
+
+---
+
+## 3. 四类输入渠道的实际结构
+
+### 3.1 Pipeline 1 外部材料
+
+| 指标 | 值 | 复现命令 |
+|---|---:|---|
+| Material Log 条目（STATUS 口径） | 207（A 130 / B 27 / C 50） | `STATUS.md` |
+| SourceCard | 59 | `ls -1 Materials/2026/SRC_*.md \| wc -l` |
+| patch | 31 | `find . -path '*/patches/*.md' -not -path './.git/*' \| wc -l` |
+| hook | 24 | `find . -path '*/hooks/*.md' -not -path './.git/*' \| wc -l` |
+| hook `landed` / `partial` / `pending` | 12 / 3 / 9 | `grep -l 'integration_status: X' $(find . -path '*/hooks/*.md')` |
+
+**关键点**：全部 24 张 hook 的 `landing_ledger.target` **无一指向 CompactCore 之外的快速层、router、deep theory map 或 context bundle**。也就是说，hook 机制在设计上就止步于 owner 文件，从不负责让内容进入 AI 的默认读取路径。这不是执行不力，是**管线定义里没有这一段**。
+
+`Operations/_SRT_MATERIAL_PIPELINE.md` 把管线定义为
+`SourceCard → PatchNote → Material Log → Index → Registry → IntegrationHook → 正文`。
+末端是"正文"，而不是"活跃层"。2026-07-25 的 hook 闭环审计已经给 `hook → 正文` 装了账；本轮发现**`正文 → 活跃层`这一段从未存在**。
+
+### 3.2 书稿与专著融合材料
+
+书稿实际吸收良好：西蒙东出现在 13 章、巴拉德 16 章、迪肯 7 章、Friston 6 章、达马西奥 5 章、詹姆斯 5 章。通道是 `01_Source_Intuition/BOOK/External_Theory_Notes/` 的插入地图 → 章末注。
+
+**未回流理论层的部分**：`03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md` 把书稿术语分为已锚定 / 已在桥 / ⚑新候选 / ✅已裁决四类。⚑新候选中：
+
+- **已回流**：微效价、预裁剪（均已出现在 `_SRT_D_VALUE_CANONICAL.md`）；
+- **未回流**：第三态能动性、被排开者去向三分、自检三问——只存在于书稿、该 bridge 与 `Output/` 导出文件中，任何理论 owner 都没有它们。
+
+节点 `NODE-BOOK-BACKFLOW`，状态 `engineered_not_active`。
+
+### 3.3 External Convergence 与外部压力材料
+
+| 指标 | 值 |
+|---|---:|
+| EC 卡 | 11 |
+| `accepted` | **0** |
+
+全部为 `draft_v1; not accepted`。**这不是欠账**：`EVIDENCE_INDEX.md` 明确要求不得把候选列为已接受，`accepted = 0` 是硬度守恒纪律的正确结果。本审计不建议为提高覆盖率而批量升格。
+
+但有一个真实缺口：11 张 EC 卡**无一被任何活跃表面文件命名**。它们形成的理论压力（如 `CL-*` 矛盾台账条目）因此不会进入任何判断。
+
+### 3.4 自觉挖掘与 choice trace
+
+| 类别 | 数量 | 活跃层状态 |
+|---|---:|---|
+| choice trace / ghost card（`01_Source_Intuition/*.md`） | 11 | 无一被活跃表面文件命名 |
+| 对话材料（`Conversations/`） | 10 | 同上 |
+| 作者裁决文件 | 2（`SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md`、`SRT_AUTHOR_DECISION_PACKET_...`） | 本轮前无一进入活跃层 |
+| 已建 bridge | T-B / T-D / T-E / MSD | 仅通过 `BRIDGE_INDEX.md` 间接可达，无 router 路由 |
+
+**必须区分 provenance 与理论**：trace 本身是来路记录，不是最终理论。本轮从中提取的是**作者已确认的命题与否定项**，而不是 trace 的全部内容：
+
+- **G1**（2026-08-04）：可再选择性是生成健康度的重要判据，**不是**"选对"的唯一标准，也**不是**一次选择得以发生的必要定义 → 已进入活跃层（compact §6、回归题 T-11）。
+- **G2**：耗散结构与选择结构**分层**，耗散不等于选择，也非普遍必要前身 → 已进入活跃层（compact §6、回归题 T-12）。
+- **G4**：过程层／事件层／评价层三分 → 已进入活跃层（compact §4、§6）。
+
+**仍未进入**：`d/q/o` 三轴（`author_gate`，禁运中）、ghost/阴阳/代理对象/协调身份四张 continuation card（`archived_only`，各自停在未决问题）。
+
+---
+
+## 4. 理论节点地图与吸收状态
+
+完整机器可读表：[`data/srt_active_theory_assimilation_2026-08-06.csv`](data/srt_active_theory_assimilation_2026-08-06.csv)
+节点清单（人工维护，被生成脚本读取）：[`data/srt_active_theory_nodes.json`](data/srt_active_theory_nodes.json)
+
+| node_id | 状态 | 最主要的缺口 |
+|---|---|---|
+| `NODE-CHOICE-GENERATION` | **effectively_assimilated** | — （本轮试点） |
+| `NODE-SELECTION-ONTOLOGY` | partially_active | 无回归测试；GOV-SUB01 删除测试从未执行，残余标签 UNASSIGNED |
+| `NODE-L0-L1-L2` | partially_active | 无回归测试；P0-04 未决 |
+| `NODE-D-VALUE` | **author_gate** | `d/q/o` 形式地位未裁（RQ-2026-08-A02），禁运中 |
+| `NODE-PSI-F` | partially_active | Fisher / Landauer 证据卡 `draft_v1` 未接受 |
+| `NODE-T-DIR` | partially_active | 两张 PH_AG partial hook 卡在 `T_dir` canonical 回写（C 类，需单独授权） |
+| `NODE-GHOST-OPERATOR` | partially_active | 三张 ghost source card 从未压缩成命题 |
+| `NODE-SUBJECTHOOD` | partially_active | agency owner **不在任何 context bundle 中**；路由 §23 主要指向停驻的 incubation 文件 |
+| `NODE-CONSCIOUSNESS` | partially_active | 五张 2026-08-05 意识源卡只路由到书稿章节，无一成为命题 |
+| `NODE-AI-REASONING` | **engineered_not_active** | 三张 AI patch 中仅 AIGOAL01 有 hook 且全 pending；AIREASON01 / AIEVID01 无 hook |
+| `NODE-NEURAL-DECODABILITY` | **engineered_not_active** | 十张 patch、五张 hook 全 pending；合成落点文件从未创建；NEURAL18 无 hook |
+| `NODE-LIFE-DISSIPATIVE` | partially_active | G2 分层裁决已进活跃层；T-E 桥本身仍缺一手物理证据卡 |
+| `NODE-PHYSICS-MEASUREMENT` | **engineered_not_active** | 三张 hook 指向从未创建的 `Physics/SRT_Physics_Bridge_v0_2.md`；四张 patch 无 hook |
+| `NODE-SOCIAL-L2` | partially_active | SEA 制度配对审计与编码手册仅在 Operations 层 |
+| `NODE-ENTROPY-REORG` | partially_active | T-B 过程层与痛苦类型学接口仍只在 bridge，无快速层 |
+| `NODE-BOOK-BACKFLOW` | **engineered_not_active** | 三个书稿术语无任何理论 owner |
+
+**统计**：`effectively_assimilated` **1** / `partially_active` **10** / `engineered_not_active` **4** / `author_gate` **1**。
+
+`archived_only`、`conflict_with_active_text`、`rejected_or_parked` 三种状态本轮**未使用**：前者的实例（ghost cards、对话材料）已被吸收进相关节点的 `next_step` 描述而未单列节点；后两者本轮没有发现符合的实例——这不等于不存在，只等于本轮 16 节点范围内未发现。
+
+### 4.1 一个必须点名的普遍缺口
+
+**16 个节点中，14 个的 `partially_active` 或更低状态，是被同一项拦下的：没有行为回归测试（EA-5）。**
+
+即使 owner、router、deep map、bundle 全部齐备（如 `NODE-SELECTION-ONTOLOGY`、`NODE-PSI-F`），也无法证明它改变了判断。这说明仓库此前**从未有过**"验证理论是否生效"的手段——只有"验证理论是否存在"的手段。
+
+---
+
+## 5. 有效吸收的五项判据（EA-1…EA-5）
+
+| 判据 | 内容 | 可机检？ |
+|---|---|---|
+| **EA-1** | 形成 SRT 原生命题：新增区分／修正／降级／反例／失败条件／可检验差异／新张力，而非复述外部作者观点 | **否**（内容判断） |
+| **EA-2** | 进入活跃 owner：canonical / Core / major bridge / domain owner / CompactCore / OPEN_TENSIONS。只在 SourceCard、patch、hook、trace 或计划文件中**不算** | 是 |
+| **EA-3** | 进入 AI 检索路径：router 指向 / deep map 纳入 / registry 指向 / bundle 装载 / workline manifest 要求读取 | 是 |
+| **EA-4** | 处理旧表述：记录旧表述、新表述、修改原因、旧表述仍适用的范围、需同步的 CompactCore | 是（记录是否存在） |
+| **EA-5** | 行为回归测试通过：设计问题证明下一轮判断会改变 | 是（测试是否存在且数量达标） |
+
+`scripts/check_active_theory_assimilation.py` 检 EA-2…EA-5 的**载体**，不检 EA-1 的**实质**。绿色只意味着"结构上没有缺件"，不意味着"理论是好的"。
+
+---
+
+## 6. 陈旧与冲突
+
+### 6.1 已在本轮处理
+
+| 项 | 旧表述 | 新表述 | 原因 | 旧表述仍适用的范围 |
+|---|---|---|---|---|
+| `SRT_AI_START.md` "Real Choice Moment" | 全文只有一条指针："use `Core/SRT_Core_21b_...`" | 保留该指针并标明它**只给否定清单**，另指向 `03_Bridges/SRT_Selection_Event_CompactCore.md` 取肯定判别程序 | 旧文本不错，但**欠定**：只有否定清单没有判别程序，具体案例只能靠直觉外推 | P1-T05 仍是 real choice moment 的 canonical 承载点，任何定义级引用仍走它 |
+| `_SRT_AGENT_RETRIEVAL_PROFILE.md` 的 `03_Bridges/` 描述 | "for adjacent theory translation"（与 `Bridge/` 合并成一行） | 拆开；`03_Bridges/` 改述为 SRT 自有跨域框架，并点名 T-B/T-D/T-E/MSD 与选择事件入口 | 分类错误导致 AI 在做选择判断时不会打开该目录 | `Bridge/`（旧目录）的邻近理论翻译定位不变 |
+
+需同步的快速层：`03_Bridges/SRT_Selection_Event_CompactCore.md`（新建）、`SRT_CONTEXT_BUNDLE_COMPACTCORE.md`（已重生成）。
+
+### 6.2 已知但本轮未处理
+
+| 项 | 性质 | 为什么不处理 |
+|---|---|---|
+| 两张 PH_AG hook 的 `_SRT_T_DIR_CANONICAL.md` 回写 | C 类编辑 | 需 `SRT_EDIT_PROTOCOL` 单独授权，不随本轮一并授权 |
+| `Physics/SRT_Physics_Bridge_v0_2.md` 与 neuro 合成文件从未创建 | 作者裁决 | RQ-2026-08-A04 待裁；neuro 合成文件的存废本轮新增为待裁项 |
+| `d/q/o` 三轴 | 作者门 | RQ-2026-08-A02 待裁，禁运有效，本轮不申请豁免 |
+| `Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md` vs `..._N1_N13_v0_2.md` | 命名不一致 | 两个名字指同一个从未创建的文件；创建与否属作者裁决 |
+
+### 6.3 本轮发现的一个本地-only 工具缺陷（未修）
+
+`scripts/governance_common.py` 的 `ARTIFACT_PREFIXES` 用小写 `"papers/"` 做前缀匹配。git 跟踪的目录名是小写 `papers/`，但在大小写不敏感的文件系统（macOS）上工作树解析为 `Papers/`，前缀不匹配，导致 123 个论文文件被扫描并在本地 preflight 报 `errors=123`。**Linux CI 不受影响**，`origin/main` 的 preflight 是绿的。本轮未修，因为它与本审计主题无关且涉及全部检查器的共享模块；建议单独一个 PR 处理。
+
+---
+
+## 7. "A 类材料数量" vs "有效吸收数量"
+
+| 口径 | 数量 | 含义 |
+|---|---:|---|
+| Material Log verdict A | **130** | 已裁决可融入，并已写入某个落点 |
+| 有 patch 的材料 | 31 | 已形成域内 bounded 补丁 |
+| 有 hook 的 patch | 24 | 已有落点账 |
+| hook `landed` | 12 | 内容已进入 owner 文件正文 |
+| **节点级 `effectively_assimilated`** | **1**（16 个节点中） | 已进入活跃层且可验证改变判断 |
+
+这五个数字**不可互相替代**。此前把第一个数字当作"融合进度"的做法，会把 130 读成"130 条材料已进入 SRT 理论"——实际含义只是"130 条材料已被裁决并归档到某处"。
+
+---
+
+## 8. 不得声称已融合的项目
+
+以下项目在本轮之后**仍不得**被描述为"已融入 SRT 理论"：
+
+1. 全部 27 条 B 类材料（合规停驻，有具名触发条件，不是欠账）；
+2. 全部 11 张 EC 证据卡（`accepted = 0` 是正确状态）；
+3. 9 张 `pending` hook 与 3 张 `partial` hook 的未落地靶点；
+4. 7 张无 hook 的 patch（Physics P06/P07/P08/REP01、NEURAL18、AIREASON01、AIEVID01）；
+5. `d/q/o` 三轴（禁运中）；
+6. 四张 ghost / 阴阳 / 代理对象 / 协调身份 continuation card（各自停在未决问题）；
+7. 三个未回流的书稿术语（第三态能动性、被排开者去向三分、自检三问）；
+8. T-B / T-E 桥的跨域压力测试结论（首轮已建，压测未完成）；
+9. 本轮试点的 `CG-0..CG-4` 门槛值本身——它们是审计默认约定，不是已证定理（见 `Core/SRT_OPEN_TENSIONS.md §14`）。
+
+---
+
+## 9. 按理论收益排序的后续施工队列
+
+排序依据是**该节点被补通后，能改变多少类实际判断**，不是文件数量。
+
+| 序 | 节点 | 为什么排这里 | 前置 |
+|---:|---|---|---|
+| 1 | `NODE-SUBJECTHOOD` | agency owner 已有四张 patch 落地却**不在任何 bundle 中**——投入最少、落差最大。主体性判断是最高频的一类问题 | 无 |
+| 2 | `NODE-AI-REASONING` | 与试点节点直接相邻：`PEF-0/PEF-1` 的区分已进活跃层，但 AI 侧的 capability–propensity、reasoning trace 与 evidence provenance 三张 patch 仍在 patch 层 | AIREASON01 / AIEVID01 补 hook（作者裁决 §10.3） |
+| 3 | `NODE-CONSCIOUSNESS` | 五张 2026-08-05 源卡的**反向修正**（affective salience ≠ `d`、meta-awareness ≠ `T_dir`、模型拟合 ≠ 理论判别）都是护栏型命题，成本低、防误判收益高 | 无 |
+| 4 | `NODE-ENTROPY-REORG` | T-B 过程层是试点节点的直接上游；痛苦类型学接口目前无快速层 | 无 |
+| 5 | `NODE-BOOK-BACKFLOW` | 三个术语要么进理论 owner，要么明确判为只属书稿——当前的悬空状态会让 AI 在书稿与理论之间摇摆 | 需作者判定三者的理论地位 |
+
+`NODE-D-VALUE`（作者门）、`NODE-PHYSICS-MEASUREMENT` 与 `NODE-NEURAL-DECODABILITY`（等落点裁决）不进入此队列，因为它们的阻塞点不是工作量。
+
+---
+
+## 10. 需要作者拍板
+
+1. **Neuroscience 合成文件**：创建 `N1_N12_v0_2`（hook 写法）／ `N1_N13_v0_2`（索引写法）／ 改把 NEURAL18/21/22 的落点指向已存在的 compact core／继续停驻？
+2. **Physics 落点**：RQ-2026-08-A04 已在队列，本审计不重复提问，仅确认它挡住 3 个 hook。
+3. **7 张无 hook 的 patch**：补 hook ／ 判"有意无 hook + 写触发条件" ／ 降级停驻？
+4. **书稿三术语**（第三态能动性、被排开者去向三分、自检三问）：进理论 owner ／ 明确判为书稿专用 ／ 继续挂在 sync bridge？
+
+---
+
+## 11. 统计方法与局限
+
+### 复现方式
+
+```bash
+uv run python scripts/check_active_theory_assimilation.py --reachability \
+  --csv Operations/Audits/data/srt_active_theory_assimilation_2026-08-06.csv
+```
+
+### 搜索范围
+
+- **活跃表面**：`AGENTS.md §Session Start` 的 3 个 bootstrap 文件 + 条件加载的路由层 + 各域 README / registry / machine index + 全部 `*CompactCore*.md`（排除 `Operations/Context_Bundles/`，那是生成物）。共 49 个文件。
+- **理论承载候选**：`03_Bridges/*.md`、`Bridge/*.md`、`*/patches/*.md`、`Operations/SRT_*.md`、`01_Source_Intuition/*.md`、`01_Source_Intuition/Conversations/*.md`、`04_External_Convergence/*/*.md`。共 94 个文件。
+- **排除规则**：`README.md`、`BRIDGE_INDEX.md`、`BRIDGE_TEMPLATE.md`、`INDEX.md`——是索引不等于承载理论。
+
+### 结果
+
+| 指标 | `origin/main @ a07d2a72` | 本轮后 |
+|---|---:|---:|
+| 活跃表面文件 | 48 | 49 |
+| 理论承载候选 | 93 | 94 |
+| **无任何活跃表面文件命名** | **75（80.6%）** | **74（78.7%）** |
+
+### 局限（必须与结果一起读）
+
+1. **可达性指标偏宽松**。它只问"有没有被命名"，一次 `BRIDGE_INDEX.md` 的表格提及即算可达。但 `BRIDGE_INDEX.md` 自身此前只通过 `_SRT_AGENT_RETRIEVAL_PROFILE.md` 的一行**错误分类**可达。因此**真实可达性低于 78.7% 所暗示的水平**——T-D 桥在本轮前按此指标算"可达"，实际没有任何路由会把选择判断类问题送到它那里。
+2. **数字变化小不代表改动小**。本轮只有 1 个文件从"无人命名"变为"被命名"，但节点级的变化是：一类高频问题从**无路由**变为有路由 + 有快速层 + 有 bundle + 有 12 道回归题。指标不度量这个。
+3. **节点清单是人工的**。16 个节点由本轮判断划定，不是从仓库自动导出，可能遗漏节点或切分不当。可达性调查是它的无偏补充，但两者都不是完备普查。
+4. **EA-1 不可机检**。"是否形成 SRT 原生命题"是内容判断，检查器只验证载体。
+5. **未覆盖**：`Papers/` 内部的理论一致性、`Spirituality/` 域、`90_Backstage/` 停驻区、书稿正文自身的理论一致性。
+6. **Material Log 计数差**。STATUS 记 207（A 130 / B 27 / C 50），按表格列解析得 211（A 132 / B 29 / C 50）。差值 4 条未对账，本审计沿用 STATUS 口径并标注该差异。
+
+---
+
+## 12. 本轮对此前"材料融合计划"的处理
+
+`Operations/Proposals/SRT_MATERIAL_INTUITION_INTEGRATION_PLAN_2026-08-05.md` 中的以下工作**不作废，但降级**为 provenance、可追溯性与工程闭环辅助线：
+
+| 工作 | 改善哪一层 | 是否可作为"已进入理论"的判据 |
+|---|---|---|
+| standalone Material Log 条目合并 | 档案化 | **否** |
+| Material Log 统计纠正（207 vs 211） | 档案化 | **否** |
+| patch / hook ID 对表 | 工程化 | **否** |
+| 补齐缺失 hook | 工程化 | **否** |
+| Neuroscience `N1_N12` / `N1_N13` 路径修正 | 工程化 | **否** |
+| report-only checker（材料闭环） | 工程化 | **否** |
+| 按章材料输入包 | 工程化（书稿侧） | **否** |
+| **本轮新增：节点清单 + 活跃层检查器 + bundle 清单通道** | **理论生效** | **是**（EA-2…EA-5 的载体） |
+
+前六项仍应做——没有可追溯性，理论生效层的来源无法审计。但它们完成后，**不得**据此宣布材料已进入理论。

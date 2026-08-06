@@ -306,7 +306,8 @@ Do not ignore these merely because they are not canonical:
 - `01_Source_Intuition/BOOK/Drafts_26Q/` for current manuscript prose.
 - `01_Source_Intuition/BOOK/Archive_52Chapter/` for explicitly labelled historical comparison only.
 - `90_Backstage/Restructure_2026/BOOK_PROJECT/` for book continuity, style, and inclusion decisions.
-- `03_Bridges/` and `Bridge/` for adjacent theory translation.
+- `Bridge/` for adjacent theory translation.
+- `03_Bridges/` for **SRT's own cross-domain frameworks**, not only adjacent-theory translation. Several files there (T-B entropy/disturbance, T-D choice generation conditions, T-E dissipative structures, MSD selection dynamics) carry P2-P3 machinery that changes concrete judgments and has no equivalent in the canonical layer. Consult it for any "does this count as a selection / a real choice / an ordering event?" question, not just when comparing SRT to a neighboring theory. Entry: `03_Bridges/BRIDGE_INDEX.md`; for selection-event judgments start at `03_Bridges/SRT_Selection_Event_CompactCore.md`.
 - `04_External_Convergence/` for evidence, proxy, contradiction, and pressure.
 - `LONGFORM_SPLITS.md` and split directories for connector-safe full-text retrieval.
 - `_SRT_*_COVERAGE_INDEX.md` files for valuable but easy-to-miss files.

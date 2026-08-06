@@ -29,6 +29,7 @@ updated: 2026-08-07
 - SEA 编码手册已达到 pilot-ready，但独立编码可靠性试验暂缓；PR #738 已按 deferred 关闭。
 - 休眠层（AI / Neuroscience / Physics / Spirituality）继续按“带冻结戳的图书馆”治理；材料可进入桥、卡片和索引，但不自动触发 canonical 或正文升级。
 - 停驻内容统一看 `_SRT_PARKED_INDEX.md`；最新作者排期以 `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` 为准。
+- **"材料已融入"的判据自 2026-08-06 起收紧**：verdict A、SourceCard、Material Log 登记、patch、hook 有 target 均只证明**档案化／工程化**，不证明进入理论。理论生效需同时满足原生命题、活跃 owner、AI 检索路径、旧表述处理与行为回归测试五项。全仓状态见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`，节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`。当前 16 个理论节点中 **1 个** 达到 `effectively_assimilated`。
 
 ## 当前仓库状态
 
@@ -64,6 +65,15 @@ updated: 2026-08-07
 - 生理 synchrony 继续只按领域可测机制使用，不恢复为跨层级 SRT primitive，也不复活 selective-resynchronization 构念；一般跨层过程仍使用“选择性再组织”。
 - 形成 P4 `Phase x Stake` 差异预测，以及 matched-coupling/different-recovery、state-switch accessibility、selection-vs-plasticity eligibility dissociation 三组补充测试。
 - SourceCard、patch、landing-ledger hook、Material Log、两级索引与 registries 已同步；canonical `d` / `Psi_f` / `T_dir` / Core axioms 和休眠 owner 正文未修改。
+
+### 2026-08-06 · 活跃理论吸收审计与选择事件节点试点
+
+- 新增 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`：区分档案化／工程化／理论生效三层，给出 16 个理论节点的吸收状态与可复现统计方法。
+- 关键诊断：全部 24 张 hook 的落点**无一**指向 router、deep theory map、快速层或 context bundle——`正文 → 活跃层`这一段在管线定义里从未存在。`_SRT_AGENT_RETRIEVAL_PROFILE.md` 此前把 `03_Bridges/` 整体描述为"邻近理论翻译"，导致选择判断类任务不会打开该目录；本轮已修正。
+- 端到端试点「选择生成条件与真实选择事件」：新增 `03_Bridges/SRT_Selection_Event_CompactCore.md` 快速判别层（五门、五把梯子、三门槛、四类实践判读），登记 `Core/SRT_OPEN_TENSIONS.md §14`，接入 router §23a 与 deep theory map §19a，装入 `COMPACTCORE` 包，配 12 道行为回归题。
+- 作者裁决 G1（可再选择性为限定性健康判据）与 G2（耗散结构与选择结构分层）首次进入活跃层。
+- `scripts/check_active_theory_assimilation.py` 按 Anti-Blocking Gate 以 report-only 接入 preflight；`--strict-node` 只对本轮声称已吸收的节点严格。
+- `CG-0..CG-4` 门槛值仍是审计默认约定，不是已证定理；claim level 全程 P2-P3，不改 P1-T05。
 
 ### 2026-08-05 · 工作线排期与仓库收口
 

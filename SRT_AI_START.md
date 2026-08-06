@@ -133,7 +133,11 @@ For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and
 
 ### Real Choice Moment
 
-For real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md`.
+For the canonical statement of real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05). That statement carries a **negative list only** (script execution, habit replay, gradient following, `L_2` label optimization do not qualify); it does not supply a positive discrimination procedure, so it under-determines concrete cases.
+
+For concrete "is this a real choice?" judgments, also load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, a non-compensation rule, and the no-choice / pseudo-choice / punitive-choice / respected-choice reading. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only "bounded selection-event candidate", never subjecthood, consciousness, freedom, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
+
+Three fast negatives worth carrying without loading anything: a different output is not path efficacy; energy spent is not consequence bearing; having memory is not historical efficacy.
 
 ### Freedom
 

@@ -1,0 +1,17 @@
+node_id,title,assimilation_status,active_owners_ok,compact_layer,compact_ok,router_anchor_ok,deep_map_anchor_ok,bundle_loaded,regression_tests_count,old_text_handled,open_tension,author_gates,problems
+NODE-CHOICE-GENERATION,Choice generation conditions and real selection events,effectively_assimilated,yes,03_Bridges/SRT_Selection_Event_CompactCore.md,yes,yes,yes,yes,12,yes,Core/SRT_OPEN_TENSIONS.md#14,,
+NODE-SELECTION-ONTOLOGY,Selection precedes stabilized existence,partially_active,yes,,n/a,no,yes,yes,0,no,Core/SRT_OPEN_TENSIONS.md#13,,
+NODE-L0-L1-L2,L0 / L1 / L2 ontology and domain split,partially_active,yes,,n/a,yes,yes,yes,0,no,Core/SRT_OPEN_TENSIONS.md#4,,
+NODE-D-VALUE,"d-value, stake, concern, bearing position",author_gate,yes,,n/a,yes,yes,yes,0,no,Core/SRT_OPEN_TENSIONS.md#1,RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol,
+NODE-PSI-F,"Psi_f, payability, friction, cost",partially_active,yes,,n/a,yes,yes,yes,0,no,Core/SRT_OPEN_TENSIONS.md#2,,
+NODE-T-DIR,"T_dir, direction transparency, reorientation",partially_active,yes,,n/a,yes,no,yes,0,no,Core/SRT_OPEN_TENSIONS.md#3,Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization,
+NODE-GHOST-OPERATOR,Ghost operator / selection operator G_hat_theta,partially_active,yes,,n/a,yes,yes,yes,0,no,,,
+NODE-SUBJECTHOOD,"Subjecthood, agency, identity closure, reselectability",partially_active,yes,,n/a,yes,no,no,0,no,Core/SRT_OPEN_TENSIONS.md#5,,
+NODE-CONSCIOUSNESS,"Consciousness, integration, access, report, anchoring",partially_active,yes,Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md,yes,yes,yes,yes,0,no,,,
+NODE-AI-REASONING,"AI reckoning, judgment, reasoning trace, real mechanism",engineered_not_active,yes,AI/SRT_AI_Architecture_CompactCore.md,yes,yes,no,yes,0,yes,Core/SRT_OPEN_TENSIONS.md#6,,route _SRT_DEEP_THEORY_MAP.md#13 names none of the node's files
+NODE-NEURAL-DECODABILITY,"Neural decodability, stabilization, memory admission, energy payment",engineered_not_active,yes,Neuroscience/SRT_Neural_Mechanisms_CompactCore.md,yes,no,yes,yes,0,no,,"Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core",
+NODE-LIFE-DISSIPATIVE,"Life, self-maintenance, dissipative structures vs selection structures",partially_active,yes,03_Bridges/SRT_Selection_Event_CompactCore.md,yes,yes,yes,yes,12,yes,Core/SRT_OPEN_TENSIONS.md#14,,
+NODE-PHYSICS-MEASUREMENT,"Physical measurement, fact formation, representation covariance, composition rules",engineered_not_active,yes,,n/a,no,yes,yes,0,no,,RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md,route _SRT_CONTEXT_ROUTER.md#9 names none of the node's files
+NODE-SOCIAL-L2,"Institutions, responsibility, consequence outsourcing, L2 hardening",partially_active,yes,Philosophy/SRT_Political_Philosophy_CompactCore.md,yes,yes,yes,yes,0,yes,,,
+NODE-ENTROPY-REORG,"Entropy, disturbance, selective reorganization, generative health",partially_active,yes,03_Bridges/SRT_Selection_Event_CompactCore.md,yes,yes,yes,yes,12,yes,Core/SRT_OPEN_TENSIONS.md#12,,
+NODE-BOOK-BACKFLOW,Book concepts that have not flowed back to the theory layer,engineered_not_active,yes,,n/a,no,no,yes,0,no,,,route _SRT_CONTEXT_ROUTER.md#19 names none of the node's files
