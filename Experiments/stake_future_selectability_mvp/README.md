@@ -1,7 +1,8 @@
 ---
 id: SRT-EXP-STAKE-FUTURE-SELECTABILITY-MVP
 type: experiment_readme
-status: scientific_lock_ready
+status: frozen
+record_stage: completed_uninterpretable_protocol
 layer: lab
 epistemic_layer: p4
 claim_mode: experiment
@@ -58,3 +59,9 @@ Reward and ordinary energy formulas are identical across conditions. Integrity c
 Raw checkpoints and run-local artifacts remain under `outputs/formal/raw/` and `outputs/formal/checkpoints/`; compact processed results are written under `outputs/formal/processed/`.
 
 The optional Fisher comparator is not implemented in this MVP: per the preregistration it is non-privileged, while update norm, path length, gradient norm, policy KL, entropy, and representation drift provide the locked generic-adaptation controls. Its absence cannot be repaired or promoted after formal inspection.
+
+## Result
+
+The complete 12×6 formal cohort finished. The frozen decision is **UNINTERPRETABLE PROTOCOL** because 8/48 T/S cells failed the preregistered per-cell Reach20 reduction gate. The other structural checks passed: 24/24 T resets, 24/24 S persistence checks, 72/72 identity checks, zero replacements, and 72/72 pre-C hash verifications.
+
+The unfavorable predictive result is retained but not promoted over the failed structural gate: M4 versus M3 changed LOSO CV R² by −1.0275 and worsened NRMSE by 13.04%; standardized `dV_CF_pre` β was 0.0300 with master-seed bootstrap 95% interval [−0.2610, 0.1924]. See `../../papers/stake_future_selectability/03_mvp_decision.md` and `outputs/formal/processed/confirmatory_results.json`.

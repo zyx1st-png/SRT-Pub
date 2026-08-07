@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-07
+updated: 2026-08-08
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-07
+> **最后更新**：2026-08-08
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -28,6 +28,7 @@ updated: 2026-08-07
 - 书稿《从存在到秩序》仍以 `Drafts_26Q` 为唯一主线；统一优化等待未融合材料全部处理完毕，不进行逐篇材料触发的局部重写。
 - SEA 编码手册已达到 pilot-ready，但独立编码可靠性试验暂缓；PR #738 已按 deferred 关闭。
 - 休眠层（AI / Neuroscience / Physics / Spirituality）继续按“带冻结戳的图书馆”治理；材料可进入桥、卡片和索引，但不自动触发 canonical 或正文升级。
+- 独立 P4 `Stake–Future Selectability MVP` 已完成 12×6 formal cohort，冻结裁决为 **UNINTERPRETABLE PROTOCOL**：T/S Reach20 逐-cell 有效性门失败 8/48；M4 亦未提升分组样本外预测。旧 selective-resynchronization NO-GO 保持不变，canonical 文件未修改。
 - 停驻内容统一看 `_SRT_PARKED_INDEX.md`；最新作者排期以 `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` 为准。
 
 ## 当前仓库状态
@@ -55,6 +56,14 @@ updated: 2026-08-07
 - 当前工作线排期 → `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 
 ## 最近关键推进
+
+### 2026-08-08 · Stake–Future Selectability MVP 完成
+
+- 新建独立 P4 `PersistentChoiceGrid-v0` 实验，完成 smoke、3-seed A/B-only pilot、formal lock 与 12 master seeds × 6 branches 的 72 条 A→B→C 轨迹。
+- 72/72 pre-C 哈希、72/72 identity continuity、24/24 T reset 与 24/24 S persistence 通过；无 replacement、无 C→pre-C 泄漏。
+- 冻结 Reach20 有效性门在 T/S 中仅 40/48 通过，故裁决为 **UNINTERPRETABLE PROTOCOL**；不以 Emp5 的正向结果替换预注册 Reach20 门。
+- 锁定预测同样不利：M4 相对 M3 的 LOSO CV R² 变化为 −1.0275，NRMSE 恶化 13.04%；`dV_CF_pre` 标准化 β=0.0300，seed-cluster 95% CI [−0.2610, 0.1924]。
+- 结果只适用于本架构下的 surrogate-stake → counterfactual-sensitivity → future-selectability 桥；不验证 canonical `d`，不推断意识，不改动 Core 与休眠 owner 文件。
 
 ### 2026-08-07 · NEURAL23 具身节律准入桥
 
