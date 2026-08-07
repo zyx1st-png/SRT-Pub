@@ -21,21 +21,30 @@ Design constraints
   third-party import would fail there and pass locally -- the worst failure mode.
 * A hook, a patch, or a searchable file is **never** counted as assimilation.
 
-Two axes, and the checker may only touch one of them
----------------------------------------------------
-`assimilation_state` (Axis A) asks how far an increment travelled through the
-repository's structure. That is statically checkable and this script checks it.
+Three axes, and the checker may only touch one of them
+------------------------------------------------------
+`structural_assimilation` (Axis A) asks how far an increment travelled through
+the repository's structure. Statically checkable, and checked here.
 
-`behavior_validation` (Axis B) asks whether a fresh session was *shown* to judge
-differently. That is not statically checkable. The presence of a regression-test
-file proves a suite was written, not that it was run or that it passed, so this
-script will **refuse** to let a node claim anything but `untested` unless the
-manifest also carries a `behavior_evidence` pointer to a recorded run. It never
-sets Axis B itself. Conflating the two is the exact error this pass exists to
-correct.
+`behavioral_availability` (Axis B) asks whether a fresh session was observed
+retrieving this node and using it to judge. **Absolute** — never compared to a
+baseline. Not statically checkable: a regression-test file proves a suite was
+written, not that it was run. The checker refuses any value but `untested`
+unless the manifest carries `behavior_evidence` pointing at a recorded run, and
+never sets the axis itself.
 
-`effectively_assimilated` is therefore derived, never stored:
-`assimilation_state == "active_complete" and behavior_validation == "passed"`.
+`intervention_effect` (Axis C) asks what one specific PR added relative to its
+own baseline. It lives per-intervention, not per-node.
+
+Why B and C must not share a field: the 2026-08-07 run found a zero judgment
+delta for PR #744, but *both* conditions retrieved and used the node correctly.
+Collapsing that into one status would have recorded a working, retrieved,
+correctly-applied theory node as behaviorally ineffective. A PR adding nothing
+and a theory being unavailable are different facts.
+
+`effectively_assimilated` is derived and is a claim about THE NODE only:
+`structural_assimilation == "active_complete"` and
+`behavioral_availability in {"observed", "robustly_observed"}`.
 
 EA-1 (is there a genuine native proposition?) is a judgement about content and
 cannot be mechanized. The checker verifies the *carriers*, not the substance; a
@@ -57,17 +66,24 @@ BUNDLE_DIR = ROOT / "Operations" / "Context_Bundles"
 
 # Axis A value that means every structural carrier is present.
 STRUCTURAL_BAR = "active_complete"
-# Axis B values. `passed`/`mixed`/`failed` all require recorded evidence.
-NEEDS_EVIDENCE = {"passed", "mixed", "failed"}
-VALIDATION_VALUES = {"untested", "passed", "mixed", "failed", "not_applicable"}
+# Axis B values that assert something happened, so they require recorded evidence.
+NEEDS_EVIDENCE = {"observed", "robustly_observed", "failed"}
+AVAILABILITY_VALUES = {"untested", "observed", "robustly_observed", "failed", "not_applicable"}
+AVAILABLE = {"observed", "robustly_observed"}
+# `robustly_observed` is reserved for repeated BOUNDED runs.
+BOUNDED_REQUIRED_FOR = "robustly_observed"
+INTERVENTION_VALUES = {"untested", "none", "retrieval_efficiency_only",
+                       "judgment_positive", "judgment_negative", "mixed"}
 MIN_REGRESSION_TESTS = 8
 
 CSV_COLUMNS = [
     "node_id",
     "title",
-    "assimilation_state",
-    "behavior_validation",
+    "structural_assimilation",
+    "behavioral_availability",
+    "behavior_observation_mode",
     "effectively_assimilated",
+    "interventions",
     "active_complete_blockers",
     "active_owners_ok",
     "compact_layer",
@@ -152,18 +168,37 @@ def count_regression_tests(rels: list[str]) -> tuple[int, list[str]]:
 
 def check_node(node: dict, bundles: dict[str, str]) -> dict:
     problems: list[str] = []
-    state = node.get("assimilation_state", "")
-    validation = node.get("behavior_validation", "untested")
+    state = node.get("structural_assimilation", "")
+    validation = node.get("behavioral_availability", "untested")
     evidence = node.get("behavior_evidence") or ""
+    mode = node.get("behavior_observation_mode") or ""
 
-    if validation not in VALIDATION_VALUES:
-        problems.append(f"behavior_validation not in the allowed set: {validation!r}")
+    if validation not in AVAILABILITY_VALUES:
+        problems.append(f"behavioral_availability not in the allowed set: {validation!r}")
+
+    # `robustly_observed` is the only value that carries a reliability claim, so
+    # it is the only one gated on bounded retrieval. Without this, an
+    # unconstrained 27-file deep dive could be recorded as a fast-layer result.
+    if validation == BOUNDED_REQUIRED_FOR and mode != "bounded":
+        problems.append(
+            f"behavioral_availability={validation} requires behavior_observation_mode=bounded "
+            f"(got {mode!r}); see SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md"
+        )
+
+    for entry in node.get("interventions") or []:
+        effect = entry.get("intervention_effect")
+        if effect not in INTERVENTION_VALUES:
+            problems.append(f"intervention_effect not in the allowed set: {effect!r}")
+        if not entry.get("ref"):
+            problems.append("intervention record without a `ref` to its run record")
+        elif not (ROOT / str(entry["ref"]).split("#", 1)[0]).is_file():
+            problems.append(f"intervention ref points at a missing file: {entry['ref']}")
 
     # The load-bearing rule of this whole pass. A written suite is not a result.
     if validation in NEEDS_EVIDENCE:
         if not evidence:
             problems.append(
-                f"behavior_validation={validation} without behavior_evidence; "
+                f"behavioral_availability={validation} without behavior_evidence; "
                 "a regression-test file existing is not a recorded run"
             )
         elif not (ROOT / evidence.split("#", 1)[0]).is_file():
@@ -240,18 +275,18 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     elif not node.get("active_complete_blockers"):
         # A node below the bar must say what is holding it there, otherwise the
         # manifest degrades into unexplained pessimism and nobody can act on it.
-        problems.append(f"assimilation_state={state} with no active_complete_blockers recorded")
+        problems.append(f"structural_assimilation={state} with no active_complete_blockers recorded")
 
     # A behavior suite is required before Axis B can ever leave `untested`, but
     # its size is an Axis B concern, not an Axis A one -- so this is checked
     # against the validation claim, not against active_complete.
     if validation in NEEDS_EVIDENCE and n_tests < MIN_REGRESSION_TESTS:
         problems.append(
-            f"behavior_validation={validation} with only {n_tests} regression tests "
+            f"behavioral_availability={validation} with only {n_tests} regression tests "
             f"(minimum {MIN_REGRESSION_TESTS})"
         )
 
-    derived = state == STRUCTURAL_BAR and validation == "passed"
+    derived = state == STRUCTURAL_BAR and validation in AVAILABLE
 
     if declared_bundle and not bundle_loaded:
         problems.append("manifest says bundle: true but no generated bundle contains the node")
@@ -268,9 +303,14 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     return {
         "node_id": node.get("node_id", ""),
         "title": node.get("title", ""),
-        "assimilation_state": state,
-        "behavior_validation": validation,
+        "structural_assimilation": state,
+        "behavioral_availability": validation,
+        "behavior_observation_mode": mode,
         "effectively_assimilated": "yes" if derived else "no",
+        "interventions": "; ".join(
+            f"{e.get('intervention', '?')}={e.get('intervention_effect', '?')}"
+            for e in (node.get("interventions") or [])
+        ),
         "active_complete_blockers": " | ".join(node.get("active_complete_blockers") or []),
         "active_owners_ok": "yes" if owners_ok else "no",
         "compact_layer": compact or "",
@@ -384,16 +424,17 @@ def main() -> None:
     axis_a: dict[str, int] = {}
     axis_b: dict[str, int] = {}
     for row in rows:
-        axis_a[row["assimilation_state"]] = axis_a.get(row["assimilation_state"], 0) + 1
-        axis_b[row["behavior_validation"]] = axis_b.get(row["behavior_validation"], 0) + 1
+        axis_a[row["structural_assimilation"]] = axis_a.get(row["structural_assimilation"], 0) + 1
+        axis_b[row["behavioral_availability"]] = axis_b.get(row["behavioral_availability"], 0) + 1
 
     print("== active theory assimilation ==")
-    print("   (Axis A = structural, statically checked. Axis B = behavioral, never set here.)\n")
+    print("   (A = structural, checked here. B = behavioral availability, absolute, never set here.)")
+    print("   (C = per-PR intervention effect, recorded per node in `interventions`.)\n")
     for row in rows:
         mark = "ok  " if not row["problems"] else "WARN"
         print(
-            f"{mark} {row['node_id']:<28} A={row['assimilation_state']:<22} "
-            f"B={row['behavior_validation']:<15} tests={row['regression_tests_count']:<3} "
+            f"{mark} {row['node_id']:<28} A={row['structural_assimilation']:<22} "
+            f"B={row['behavioral_availability']:<18} tests={row['regression_tests_count']:<3} "
             f"bundle={row['bundle_loaded']}"
         )
         if row["problems"]:
@@ -401,12 +442,12 @@ def main() -> None:
                 print(f"       - {problem}")
 
     axes = manifest.get("axes", {})
-    print("\n-- Axis A: assimilation_state --")
-    for value in axes.get("assimilation_state", {}).get("values", sorted(axis_a)):
+    print("\n-- Axis A: structural_assimilation --")
+    for value in axes.get("structural_assimilation", {}).get("values", sorted(axis_a)):
         if axis_a.get(value):
             print(f"  {value}: {axis_a[value]}")
-    print("\n-- Axis B: behavior_validation --")
-    for value in axes.get("behavior_validation", {}).get("values", sorted(axis_b)):
+    print("\n-- Axis B: behavioral_availability --")
+    for value in axes.get("behavioral_availability", {}).get("values", sorted(axis_b)):
         if axis_b.get(value):
             print(f"  {value}: {axis_b[value]}")
 
@@ -414,7 +455,7 @@ def main() -> None:
     derived = sum(1 for r in rows if r["effectively_assimilated"] == "yes")
     untested_complete = sum(
         1 for r in rows
-        if r["assimilation_state"] == STRUCTURAL_BAR and r["behavior_validation"] == "untested"
+        if r["structural_assimilation"] == STRUCTURAL_BAR and r["behavioral_availability"] == "untested"
     )
     print(
         f"\nnodes: {len(rows)}  active_complete: {structural}  "
@@ -422,7 +463,7 @@ def main() -> None:
         f"effectively_assimilated (derived): {derived}"
     )
     if derived == 0 and structural:
-        print("  note: structural completeness is not validation; no node has a recorded passing run.")
+        print("  note: structural completeness is not availability; no node has a recorded run yet.")
 
     if args.reachability:
         survey = reachability_survey()

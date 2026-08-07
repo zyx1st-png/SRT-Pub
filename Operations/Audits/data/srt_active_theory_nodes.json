@@ -28,10 +28,26 @@
       "author_gates": [],
       "next_step": "Absolute performance passed (18/18 in Condition B) but the baseline scored the same, so no differential effect was shown. Do not re-run this suite against the same baseline; either design questions the baseline provably cannot answer, or accept that this node's content was already reachable via STATUS anchors and frontmatter dependency chains.",
       "notes": "Pilot node for the 2026-08-06 assimilation pass. Claim level P2-P3 throughout; passing five gates licenses only 'bounded selection-event candidate'. The 2026-08-07 two-condition run falsified the audit's premise that a fresh session could not reach this material on main.",
-      "assimilation_state": "active_complete",
       "active_complete_blockers": [],
-      "behavior_validation": "mixed",
-      "behavior_evidence": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md"
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "observed",
+      "behavior_observation_mode": "unconstrained",
+      "behavior_evidence": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md",
+      "behavioral_availability_note": "Both conditions of the 2026-08-07 run retrieved this node's material and used it to judge 17 pass + 1 partial out of 18. That is availability, observed twice. It is NOT robustly_observed because both runs were unconstrained: the baseline needed 27 files and reached the discriminating layer only at file 9. A bounded re-run is required before claiming robustly_observed.",
+      "interventions": [
+        {
+          "intervention": "PR #744 declarative fast path for the selection-event node",
+          "ref": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md",
+          "intervention_effect": "retrieval_efficiency_only",
+          "judgment_delta": "0 (A: 17 pass + 1 partial; B: 17 pass + 1 partial)",
+          "retrieval_success_delta": "0 (both conditions reached the material)",
+          "retrieval_steps_delta": "discriminating layer at file 9 -> file 5",
+          "retrieval_file_count_delta": "27 -> 23",
+          "transfer_delta": "0 (both handled 6/6 OOD cases, including the anti-gaming anchor)",
+          "runs_per_condition": 1,
+          "reliability_claim": "none permitted at n=1; the path changed from opportunistic to declarative, but stability was not measured"
+        }
+      ]
     },
     {
       "node_id": "NODE-SELECTION-ONTOLOGY",
@@ -53,10 +69,11 @@
       "author_gates": [],
       "next_step": "GOV-SUB01 deletion test for the selection primitive has never been executed; residue register stays UNASSIGNED. No regression tests exist.",
       "notes": "Well routed and bundled; capped at partially_active only by the missing EA-5 layer.",
-      "assimilation_state": "active_complete",
       "active_complete_blockers": [],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-L0-L1-L2",
@@ -76,10 +93,11 @@
       "old_text_handled": "none-required: no formulation was superseded this pass; the open exposures (OPEN_TENSIONS 4, 7) are registered rather than replacing prior text.",
       "author_gates": [],
       "next_step": "P0-04 origin of selectability remains open (OPEN_TENSIONS 7); no regression tests.",
-      "assimilation_state": "active_complete",
       "active_complete_blockers": [],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-D-VALUE",
@@ -102,12 +120,13 @@
       ],
       "next_step": "d/q/o embargo holds: the three-axis rewrite must not enter book, public content, bridge, or paper before the author decides. Bundle guardrail G2 already carries the embargo.",
       "notes": "The 2026-07-23..25 conversation materials are archived and their own closing audit records that every route is a candidate and none landed.",
-      "assimilation_state": "author_gate",
       "active_complete_blockers": [
         "RQ-2026-08-A02 undecided; d/q/o embargoed from book, public content, bridge and paper"
       ],
-      "behavior_validation": "not_applicable",
-      "behavior_evidence": null
+      "structural_assimilation": "author_gate",
+      "behavioral_availability": "not_applicable",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-PSI-F",
@@ -127,10 +146,11 @@
       "old_text_handled": "none-required: Fisher and Landauer already appear in _SRT_PSI_F_CANONICAL.md as conditional projections with their own guards; the unaccepted EC cards add pressure, not a replacement.",
       "author_gates": [],
       "next_step": "Fisher/Landauer evidence cards (EC-IG-FISHER-PSIF, EC-THERMO-LANDAUER-SELECTION-COST) remain draft_v1 and unaccepted; no regression tests.",
-      "assimilation_state": "active_complete",
       "active_complete_blockers": [],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-T-DIR",
@@ -151,12 +171,13 @@
         "Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization"
       ],
       "next_step": "PH_AG02 and PH_AG03 writebacks to _SRT_T_DIR_CANONICAL.md remain unlanded; bundle guardrail G3 already reports this.",
-      "assimilation_state": "partially_active",
       "active_complete_blockers": [
         "EA-2: PH_AG02/PH_AG03 increments adjudicated but not written into _SRT_T_DIR_CANONICAL.md (0 matches for their content)"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-GHOST-OPERATOR",
@@ -175,12 +196,13 @@
       "old_text_handled": "n/a",
       "author_gates": [],
       "next_step": "Ghost source-intuition cards (nonclosure pressure, yin-yang object friction, U5 correction) are archived only and have never been compressed into propositions for this node.",
-      "assimilation_state": "partially_active",
       "active_complete_blockers": [
         "EA-1: three ghost source cards never compressed into propositions (0 matches in Core_21_Minimal_Axioms.md or _SRT_SYMBOL_TABLE.md)"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-SUBJECTHOOD",
@@ -201,12 +223,13 @@
       "author_gates": [],
       "next_step": "Agency owner is not in any context bundle; four PH_AG patches landed there but the file is unreachable by default load. Route 23 points primarily at parked incubation files.",
       "notes": "P1-T07 stable-ISP proof gap is carried by bundle guardrail G1.",
-      "assimilation_state": "partially_active",
       "active_complete_blockers": [
         "EA-4: Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md appears in 0 of 8 context bundles"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-CONSCIOUSNESS",
@@ -226,18 +249,21 @@
       "old_text_handled": "n/a",
       "author_gates": [],
       "next_step": "Five 2026-08-05 consciousness source cards (Da Costa, van Mulukom, Houdoyer, Bryant-Whyte, Luppi) are B1/B2 and route to book chapters only; none has been compressed into a proposition for this node.",
-      "assimilation_state": "partially_active",
       "active_complete_blockers": [
         "EA-1: the five 2026-08-05 source cards' reverse corrections are in no compact layer (0 matches in SRT_Consciousness_Mechanisms_CompactCore.md)"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-AI-REASONING",
       "title": "AI reckoning, judgment, reasoning trace, real mechanism",
       "core_question": "When does an AI system's differential output amount to internal registration, path efficacy, or goal selection?",
       "active_owners": [
+        "Bridge/SRT_Context_Coherence_Intelligence_Interface.md",
+        "AI/AI_POSITIONING_NOTE.md",
         "AI/SRT_AI_Architecture_CompactCore.md",
         "AI/SRT_AI_Claim_Status.md"
       ],
@@ -249,13 +275,16 @@
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#6",
       "old_text_handled": "Partly: the selection-event compact now supplies the PEF-0/PEF-1 distinction that AI questions most often need.",
       "author_gates": [],
-      "next_step": "Three AI patches (AIGOAL01, AIREASON01, AIEVID01) exist; only AIGOAL01 has a hook and it is fully pending. AIREASON01 and AIEVID01 have no hook and no ledger row for the Quanta source. None has reached the AI compact core.",
-      "assimilation_state": "engineered_not_active",
+      "next_step": "Corrected 2026-08-08. The previous blocker ('AIREASON01 and AIEVID01 stop at the patch layer with no hook') was a FALSE NEGATIVE: hook absence was read as content absence. Both patches already reached active owners by a non-hook route. Bounded baseline probes are running to decide whether the remaining gap is real.",
       "active_complete_blockers": [
-        "EA-2: AIREASON01 and AIEVID01 stop at the patch layer with no hook; AIGOAL01's hook is fully pending"
+        "EA-3 (route coverage, not route existence): AIREASON01 landed as a full section in Bridge/SRT_Context_Coherence_Intelligence_Interface.md, which IS router 12a Primary. But 12a's trigger words are context window / long context / selection coherence / conversational memory -- none of them is reasoning trace, chain-of-thought, faithfulness or interpretability. A query about whether a trace is mechanism evidence may never fire the route that leads to the answer.",
+        "EA-4 (partial): AI/AI_POSITIONING_NOTE.md carries the AIEVID01 provenance note and is a bundled guard file, so the evidence half is on the default load path; the reason-trace half sits in a Bridge/ file that no bundle loads."
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": [],
+      "notes": "Content location verified by grep 2026-08-08: AIREASON01 -> Bridge/SRT_Context_Coherence_Intelligence_Interface.md section 5 'Reason-trace separation' plus two guardrail lines; AIEVID01 -> AI/AI_POSITIONING_NOTE.md line 30 evidence-provenance bridge note. Neither has an IntegrationHook, which is why the static audit missed them."
     },
     {
       "node_id": "NODE-NEURAL-DECODABILITY",
@@ -277,12 +306,13 @@
         "Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core"
       ],
       "next_step": "Ten neuro patches exist; five hooks are fully pending and one names a synthesis file that has never been created. NEURAL18 has no hook.",
-      "assimilation_state": "engineered_not_active",
       "active_complete_blockers": [
         "EA-2: five hooks fully pending; NEURAL18 has no hook; the named synthesis file was never created"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "engineered_not_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-LIFE-DISSIPATIVE",
@@ -304,12 +334,13 @@
       "old_text_handled": "Author decision G2 (dissipation is not equal to selection and not a universal necessary precursor) now reaches the active layer via the selection-event compact section 6 and regression test T-12.",
       "author_gates": [],
       "next_step": "T-E bridge itself still awaits first-hand physics evidence cards and cross-domain support/counterexamples; only its stratification verdict has reached the active layer.",
-      "assimilation_state": "partially_active",
       "active_complete_blockers": [
         "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches)"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-PHYSICS-MEASUREMENT",
@@ -330,12 +361,13 @@
         "RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md"
       ],
       "next_step": "Seven physics patches exist; three hooks point at a file that has never been created; four patches (P06, P07, P08, REP01) have no hook at all.",
-      "assimilation_state": "engineered_not_active",
       "active_complete_blockers": [
         "EA-2: three hooks target Physics/SRT_Physics_Bridge_v0_2.md, which does not exist; P06/P07/P08/REP01 have no hook"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "engineered_not_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-SOCIAL-L2",
@@ -355,12 +387,13 @@
       "old_text_handled": "Partly: the CBP-3/CBP-4 outsourcing-chain distinction now reaches the active layer via the selection-event compact and regression test T-08.",
       "author_gates": [],
       "next_step": "The SEA institutional paired audits and the coding manual remain Operations-only; the method-paper strategy is a candidate and the reliability pilot is deferred.",
-      "assimilation_state": "partially_active",
       "active_complete_blockers": [
         "EA-2: SEA protocol and coding manual are Operations-only; 0 matches in SRT_Soc_03_Institutions.md or SRT_Collective_Selection.md"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-ENTROPY-REORG",
@@ -383,12 +416,13 @@
       "old_text_handled": "Author decision G1 (reselectability is a limited health criterion, not a necessary condition for a selection to occur) now reaches the active layer via the compact section 6 and regression test T-11.",
       "author_gates": [],
       "next_step": "T-B process layer and the pain/distress/suffering typology interface are still only in the bridge; the suffering typology has no compact layer.",
-      "assimilation_state": "partially_active",
       "active_complete_blockers": [
         "EA-4: T-B process layer and the pain/distress/suffering typology interface appear in no CompactCore"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     },
     {
       "node_id": "NODE-BOOK-BACKFLOW",
@@ -406,17 +440,19 @@
       "old_text_handled": "n/a",
       "author_gates": [],
       "next_step": "The sync bridge classifies seven candidate term groups. Two (micro-valence, pre-trimming) have reached _SRT_D_VALUE_CANONICAL.md. Three (third-state agency, three-way fate of the displaced, three self-check questions) exist only in the book, the bridge, and exported Output files.",
-      "assimilation_state": "engineered_not_active",
       "active_complete_blockers": [
         "EA-2: 第三态能动性 / 被排开者去向三分 / 自检三问 have no theory owner at all"
       ],
-      "behavior_validation": "untested",
-      "behavior_evidence": null
+      "structural_assimilation": "engineered_not_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
     }
   ],
   "axes": {
-    "assimilation_state": {
-      "question": "How far has the theory increment actually travelled through the repository's structure?",
+    "structural_assimilation": {
+      "axis": "A",
+      "question": "How far has the theory increment travelled through the repository's structure?",
       "values": [
         "archived_only",
         "engineered_not_active",
@@ -433,19 +469,46 @@
         "EA-4 a fast layer or default load path can read it",
         "EA-5 the superseded formulation has been handled"
       ],
-      "note": "active_complete is a claim about structure only. It never implies that any AI judgment actually changed."
+      "note": "Structure only. Says nothing about whether any AI ever retrieved or used it."
     },
-    "behavior_validation": {
-      "question": "Has a fresh session been shown to judge differently because of the active content?",
+    "behavioral_availability": {
+      "axis": "B",
+      "question": "Has a fresh session been observed retrieving this node and using it to judge? ABSOLUTE, never compared to a baseline.",
       "values": [
         "untested",
-        "passed",
-        "mixed",
+        "observed",
+        "robustly_observed",
         "failed",
         "not_applicable"
       ],
-      "note": "Only a recorded, traceable run of the node's behavior suite may set this away from untested. The existence of a test file is not a result. CI cannot set this field."
+      "value_definitions": {
+        "observed": "retrieved and used in at least one recorded run, under any retrieval mode",
+        "robustly_observed": "retrieved and used in at least two independent BOUNDED runs (see SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md)",
+        "failed": "a recorded run did not retrieve it, or retrieved it and judged wrongly"
+      },
+      "note": "A zero intervention effect is NOT evidence against behavioral availability. If a baseline already retrieves and uses the node, that is availability, not ineffectiveness. Only a recorded run may set this; CI never can."
+    },
+    "intervention_effect": {
+      "axis": "C",
+      "question": "What did one specific PR or writeback add relative to its own baseline? Per-intervention, not a node property.",
+      "values": [
+        "untested",
+        "none",
+        "retrieval_efficiency_only",
+        "judgment_positive",
+        "judgment_negative",
+        "mixed"
+      ],
+      "sub_metrics": [
+        "judgment_delta",
+        "retrieval_success_delta",
+        "retrieval_steps_delta",
+        "retrieval_file_count_delta",
+        "transfer_delta",
+        "runs_per_condition"
+      ],
+      "note": "Recorded in the node's `interventions` list. A single field may never carry both 'the node works' and 'this PR helped'."
     }
   },
-  "derived_status_rule": "effectively_assimilated := assimilation_state == 'active_complete' AND behavior_validation == 'passed'. It is computed, never stored. No file may hand-write a final label that contradicts the two axes."
+  "derived_status_rule": "effectively_assimilated := structural_assimilation == 'active_complete' AND behavioral_availability in {'observed','robustly_observed'}. It is a claim about THE NODE (is this theory structurally in place and actually used?), NOT a claim about any PR. Whether a given PR added anything lives only in that PR's intervention_effect record. Computed, never stored."
 }

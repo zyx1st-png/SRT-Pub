@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-07
-source_commit: c9f521bf
+source_commit: 6161097a
 source_branch: claude/active-theory-assimilation-2026-08-06
-source_dirty: false
-inputs_digest: a0a7335dcf3b66a7
+source_dirty: true
+inputs_digest: f94f9c102610c366
 ---
 
 # SRT 物理领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: a0a7335dcf3b66a7
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-07 |
-| 来源 commit | `c9f521bf` |
+| 来源 commit | `6161097a` |
 | 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -175,29 +175,29 @@ inputs_digest: a0a7335dcf3b66a7
 
 > | node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |
 > |---|---|---|---|---|
-> | `NODE-CHOICE-GENERATION` | active_complete | mixed | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-SELECTION-ONTOLOGY` | active_complete | untested | — | — |
-> | `NODE-L0-L1-L2` | active_complete | untested | — | — |
-> | `NODE-D-VALUE` | author_gate | not_applicable | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
-> | `NODE-PSI-F` | active_complete | untested | — | — |
-> | `NODE-T-DIR` | partially_active | untested | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
-> | `NODE-GHOST-OPERATOR` | partially_active | untested | — | — |
-> | `NODE-SUBJECTHOOD` | partially_active | untested | — | — |
-> | `NODE-CONSCIOUSNESS` | partially_active | untested | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | — |
-> | `NODE-AI-REASONING` | engineered_not_active | untested | `AI/SRT_AI_Architecture_CompactCore.md` | — |
-> | `NODE-NEURAL-DECODABILITY` | engineered_not_active | untested | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
-> | `NODE-LIFE-DISSIPATIVE` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-PHYSICS-MEASUREMENT` | engineered_not_active | untested | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
-> | `NODE-SOCIAL-L2` | partially_active | untested | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
-> | `NODE-ENTROPY-REORG` | partially_active | untested | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-BOOK-BACKFLOW` | engineered_not_active | untested | — | — |
+> | `NODE-CHOICE-GENERATION` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-SELECTION-ONTOLOGY` |  |  | — | — |
+> | `NODE-L0-L1-L2` |  |  | — | — |
+> | `NODE-D-VALUE` |  |  | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
+> | `NODE-PSI-F` |  |  | — | — |
+> | `NODE-T-DIR` |  |  | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
+> | `NODE-GHOST-OPERATOR` |  |  | — | — |
+> | `NODE-SUBJECTHOOD` |  |  | — | — |
+> | `NODE-CONSCIOUSNESS` |  |  | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | — |
+> | `NODE-AI-REASONING` |  |  | `AI/SRT_AI_Architecture_CompactCore.md` | — |
+> | `NODE-NEURAL-DECODABILITY` |  |  | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
+> | `NODE-LIFE-DISSIPATIVE` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-PHYSICS-MEASUREMENT` |  |  | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
+> | `NODE-SOCIAL-L2` |  |  | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
+> | `NODE-ENTROPY-REORG` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-BOOK-BACKFLOW` |  |  | — | — |
 
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
 清单共 16 个节点。状态分**两个轴**，不可合并读：
 
-- **Axis A（结构）**：3 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
-- **Axis B（行为）**：**0 个**有已记录的通过运行。其余 3 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+- **Axis A（结构）**：0 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
+- **Axis B（行为）**：**0 个**有已记录的通过运行。其余 0 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
 
 `effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
 

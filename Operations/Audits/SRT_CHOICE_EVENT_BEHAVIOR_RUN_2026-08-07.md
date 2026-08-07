@@ -79,9 +79,27 @@ PR #744 初版把 `NODE-CHOICE-GENERATION` 标为 `effectively_assimilated`，�
 
 ### 3.0 一句话
 
-> **Condition B 绝对表现满分（18/18），但 Condition A 也是。差分效应约等于零。**
->
-> 因此 EA-5 **不通过**：本次运行**没有**证明新会话会因为 PR #744 的活跃层而作出**不同**判断。`behavior_validation = mixed`。
+> **Condition B 绝对表现满分（17 pass + 1 partial），Condition A 也是。差分效应约等于零。**
+
+**2026-08-08 结论重述（三轴拆分后）。** 初版把这个结果写成 `behavior_validation = mixed`，等于把"这个 PR 没加东西"记成了"这个理论节点没生效"。两者是不同的事实，本次运行同时给出了它们：
+
+```text
+Axis B  behavioral_availability = observed
+        两个条件都检索到了该节点的材料并用它作出判断，各 17 pass + 1 partial。
+        这是**绝对**结论，不与 baseline 比较。理论节点是可用的。
+
+Axis C  intervention_effect     = retrieval_efficiency_only
+        judgment delta            0
+        retrieval success delta   0（两边都到达了）
+        discriminating layer      第 9 个文件 → 第 5 个文件
+        total reads               27 → 23
+        transfer delta            0（6 道 OOD 两边都过，含反刷分锚点）
+        n = 1/条件 → 不得声称稳定性提升
+```
+
+**不得**再用一个 `effectively_assimilated = false` 把这些不同的事实抹平。节点本身是 `active_complete` + `observed`，推导标签为 **true**；PR #744 的贡献是 `retrieval_efficiency_only`，与前者无关。
+
+**但 `observed` 不是 `robustly_observed`。** 本次两个条件都是**无预算深搜**：基线读了 27 个文件、第 9 个才到判别层。按 2026-08-08 起生效的 `SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`，`robustly_observed` 要求**有界预算下的重复运行**。本节点尚未做过 bounded 复跑，因此停在 `observed`。
 
 ### 3.1 被证伪的前提
 
@@ -146,7 +164,7 @@ PR #744 初版把 `NODE-CHOICE-GENERATION` 标为 `effectively_assimilated`，�
 - B 的答案中出现了 `SEA-0..SEA-4` 分类，这来自 `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`，**A 也用了同一套分类**，说明它不是快速层特有的；
 - 因此 B 的表现**不是**答案泄漏所致。但这一点已无关紧要，因为 B 相对 A 没有增量可解释。
 
-### 3.5 失败模式定位
+### 3.5 失败模式定位（针对 Axis C 的零差分，不是针对节点）
 
 按预设的五个候选原因逐一判定：
 
@@ -161,15 +179,21 @@ PR #744 初版把 `NODE-CHOICE-GENERATION` 标为 `effectively_assimilated`，�
 
 **结论**：不是 retrieval failure，不是 compression failure，不是 theory ambiguity，也不是 SRT 判别力本身弱——是 **test design problem**：这套题目对「PR #744 之前 vs 之后」**没有判别力**，因为基线已经在天花板上。
 
-### 3.6 由此得出的状态
+注意这一节诊断的是 **Axis C 的零差分**，不是节点的可用性。基线在天花板上，恰恰是 Axis B `observed` 的证据。
+
+### 3.6 由此得出的状态（2026-08-08 三轴版）
 
 ```text
-assimilation_state   = active_complete     （结构齐备，静态检查通过）
-behavior_validation  = mixed               （绝对表现通过，差分效应未证实）
-effectively_assimilated = false            （推导值，两轴不同时满足）
+structural_assimilation = active_complete
+behavioral_availability = observed          （观察模式：unconstrained，非 bounded）
+effectively_assimilated = true              （推导：A=active_complete 且 B∈{observed,…}）
+
+intervention_effect (PR #744) = retrieval_efficiency_only
 ```
 
-**不得**称 `NODE-CHOICE-GENERATION` 为 effectively assimilated。
+读法：**这个理论节点是可用的，而且在 PR #744 之前就已经可用。PR #744 把到达它的路径从机会主义检索改成了声明式检索，没有增加判断能力。** 这两句话都为真，且不冲突。
+
+待办：做一次 bounded 复跑，才能判断它是否够得上 `robustly_observed`——即是否真的属于**快速**活跃层，而不只是"深搜能到"。
 
 ### 3.7 不做什么
 

@@ -188,25 +188,29 @@ canonical anchors（`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_
 完整机器可读表：[`data/srt_active_theory_assimilation_2026-08-06.csv`](data/srt_active_theory_assimilation_2026-08-06.csv)
 节点清单（人工维护，被生成脚本与检查器读取）：[`data/srt_active_theory_nodes.json`](data/srt_active_theory_nodes.json)
 
-### 4.0 两个轴，不可合并
+### 4.0 三个轴，不可合并
 
-初版用单一 `assimilation_status` 同时表达两件事，结果是"结构齐备"被当成了"已验证"。现在拆开：
+初版用单一 `assimilation_status` 表达两件事，2026-08-07 拆成两轴。**2026-08-08 再拆一次**，因为实跑暴露了第三个混淆：`behavior_validation = mixed` 这个写法，把"这个 PR 没加东西"记成了"这个理论节点没生效"。而实跑同时证明了另一件事——**两个条件都检索到并正确使用了该节点**。
 
 | 轴 | 问的问题 | 取值 | 谁能设 |
 |---|---|---|---|
-| **Axis A `assimilation_state`** | 理论增量在仓库结构上走到哪了？ | `archived_only` / `engineered_not_active` / `partially_active` / `active_complete` / `conflict_with_active_text` / `author_gate` / `rejected_or_parked` | 静态检查器可验证 |
-| **Axis B `behavior_validation`** | 新会话是否已被**证明**会因此改变判断？ | `untested` / `passed` / `mixed` / `failed` / `not_applicable` | **只能由一次有记录的实跑设定**；CI 永远设不了 |
+| **A `structural_assimilation`** | 理论增量在结构上走到哪了？ | `archived_only` / `engineered_not_active` / `partially_active` / `active_complete` / `conflict_with_active_text` / `author_gate` / `rejected_or_parked` | 静态检查器 |
+| **B `behavioral_availability`** | 新会话是否被**观察到**检索并用它作判断？**绝对状态，不与 baseline 比较** | `untested` / `observed` / `robustly_observed` / `failed` / `not_applicable` | 只能由有记录的实跑设定 |
+| **C `intervention_effect`** | 某一个 PR 相对它自己的 baseline 加了什么？**按干预记录，不是节点属性** | `untested` / `none` / `retrieval_efficiency_only` / `judgment_positive` / `judgment_negative` / `mixed` | 只能由前后对照设定 |
 
-`active_complete` 要求 EA-1…EA-5 全部满足（原生命题／活跃 owner／检索路径／快速层可读／旧表述已处理）。**它仍然不等于行为验证成功。**
+**B 与 C 必须分开的理由，来自一次真实误判**：PR #744 的 judgment delta 是 0，但两个条件都正确检索并应用了该节点。用一个字段记，会把一个**能用、被用、用对了**的理论节点写成"行为上无效"。
 
-最终标签是**推导**的，不能手写：
+- `observed` = 至少一次有记录的运行中被检索并使用（任何检索模式）；
+- `robustly_observed` = 至少两次独立的 **bounded** 运行（见 `SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`）——这一档专门用来区分"快速活跃层"和"深搜能找到"。
+
+`effectively_assimilated` 保留，但**重新定义为只描述节点**：
 
 ```text
-effectively_assimilated := assimilation_state == "active_complete"
-                       AND behavior_validation == "passed"
+effectively_assimilated := structural_assimilation == "active_complete"
+                       AND behavioral_availability ∈ {observed, robustly_observed}
 ```
 
-检查器现在会拒绝任何 `behavior_validation ∈ {passed, mixed, failed}` 而没有 `behavior_evidence` 指向真实运行记录的节点。**回归套件存在 ≠ 回归套件跑过。**
+它**不**表示"本次 PR 产生了增量"。后者只存在于该 PR 的 `intervention_effect` 记录里。两者不得共用一个字段。
 
 ### 4.1 Axis A：16 节点重新分类
 
@@ -263,14 +267,16 @@ effectively_assimilated := assimilation_state == "active_complete"
 
 | 检查类型 | 谁做 | 内容 |
 |---|---|---|
-| **structural check** | `scripts/check_active_theory_assimilation.py`，可进 CI | owner 存在；router／deep map 锚点解析且**确实点名**该节点的文件；快速层存在；bundle manifest 生效；旧表述处理有记录；回归套件存在且非空 |
-| **behavioral check** | **不可静态验证** | 检查器**不得**因回归文件存在就判 `passed`。无实跑证据时，CI 能报的最强结论是 `behavior_validation = untested` |
+| **structural check**（Axis A） | `scripts/check_active_theory_assimilation.py`，可进 CI | owner 存在；router／deep map 锚点解析且**确实点名**该节点的文件；快速层存在；bundle manifest 生效；旧表述处理有记录；回归套件存在且非空 |
+| **behavioral check**（Axis B/C） | **不可静态验证** | 检查器**不得**因回归文件存在就判 `observed`。无实跑证据时，CI 能报的最强结论是 `behavioral_availability = untested`。`robustly_observed` 额外要求 `behavior_observation_mode: bounded` |
 
 具体实现的三条硬规则：
 
-1. 检查器**从不设置** Axis B，只读取并校验它；
-2. 任何 `behavior_validation ∈ {passed, mixed, failed}` 必须同时给出 `behavior_evidence`，且该文件必须存在——否则报错；
-3. `active_complete` 与 `passed` 是两个独立断言，检查器不会由前者推出后者。
+1. 检查器**从不设置** Axis B 或 Axis C，只读取并校验它们；
+2. 任何 `behavioral_availability ∈ {observed, robustly_observed, failed}` 必须同时给出 `behavior_evidence` 且该文件存在；
+3. `robustly_observed` 还必须有 `behavior_observation_mode: bounded`——无预算深搜不得记为快速层结果；
+4. 每条 `interventions` 记录必须有合法的 `intervention_effect` 与指向真实运行记录的 `ref`；
+5. `active_complete`、`observed`、`intervention_effect` 是三个独立断言，检查器不会由任何一个推出另一个。
 
 绿色只意味着"结构上没有缺件"，不意味着"理论是好的"，更不意味着"已被验证会改变判断"。EA-1（是否形成真正的原生命题）是内容判断，不可机检。
 
