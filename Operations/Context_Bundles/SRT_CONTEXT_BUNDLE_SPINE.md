@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-07
-source_commit: 6161097a
+source_commit: 77f7db23
 source_branch: claude/active-theory-assimilation-2026-08-06
 source_dirty: true
-inputs_digest: f94f9c102610c366
+inputs_digest: d7367eb8f8ba423c
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,7 +27,7 @@ inputs_digest: f94f9c102610c366
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-07 |
-| 来源 commit | `6161097a` |
+| 来源 commit | `77f7db23` |
 | 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 16 |

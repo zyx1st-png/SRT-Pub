@@ -343,21 +343,44 @@ effectively_assimilated := structural_assimilation == "active_complete"
 
 ---
 
-## 9. 按理论收益排序的后续施工队列
+## 9. 后续队列（2026-08-08 再次重排）
 
-**2026-08-07 重排。** 上一版按"活跃层缺口大小"排序。实跑证据推翻了那个排序依据：`NODE-CHOICE-GENERATION` 的活跃层缺口很大，补通之后行为差分却是零——因为内容此前已经通过依赖链事实上可达。
+这一节已经被推翻两次，两次都是被实跑推翻的，值得把过程留着。
 
-新的排序依据是**预期行为差分**，即"基线做不到、补完之后能做到"的差距：
+| 版本 | 排序依据 | 被什么推翻 |
+|---|---|---|
+| 08-06 初版 | 活跃层**缺口大小** | 缺口最大的 `NODE-CHOICE-GENERATION` 补通后行为差分为零 |
+| 08-07 第二版 | **预期行为差分**，把 `NODE-AI-REASONING` 排第一，理由是"内容缺口，基线拿不到" | 08-08 基线探针：`main` 有界预算下 **24/24 通过**，根本没有缺口 |
+| **08-08 当前版** | **先探针，后排序**——不再预先排序 | — |
 
-| 序 | 节点 | 缺口性质 | 预期行为差分 | 理由 |
-|---:|---|---|---|---|
-| 1 | `NODE-AI-REASONING` | **内容缺口** | **较大** | AIREASON01（reasoning trace 与真实机制分离）与 AIEVID01（证据来源 stake gate）的内容**不在任何 owner 里**，只在 patch 里，且这两张 patch 连 hook 都没有。基线无论怎么走依赖链都拿不到——因为没有依赖链指向它们。这是**真的没有**，不是"没有声明式入口"。 |
-| 2 | `NODE-CONSCIOUSNESS` | 内容缺口 | 中 | 五张 2026-08-05 源卡的反向修正（affective salience ≠ `d`、meta-awareness ≠ `T_dir`、模型拟合 ≠ 理论判别）在任何快速层中 0 命中，且这些源卡不在任何依赖链上。 |
-| 3 | `NODE-BOOK-BACKFLOW` | 内容缺口 | 中 | 三个术语没有任何理论 owner。基线不可能答对"第三态能动性在理论层是什么"，因为答案不存在。 |
-| 4 | `NODE-SUBJECTHOOD` | **纯路由/装载缺口** | **可能很小** | owner 内容完整、四张 patch 已落地、Philosophy 目录可列举。按本轮教训，这**大概率**是又一个"基线已经能答对"的节点。**施工前必须先跑基线探针**。 |
-| 5 | `NODE-ENTROPY-REORG` | 混合 | 小到中 | T-B 与痛苦类型学在 bridge 里，且在依赖链上——基线很可能拿得到。 |
+### 9.1 现在的规则
 
-**强制前置协议（本轮新增）**：任何节点在立项做活跃层之前，**先跑一次基线探针**——用该节点的判别问题在 `main` 上跑一个干净会话。基线能答对的，不按"活跃层缺口"立项。本轮是建完才发现基线已达标，顺序反了，这个错误不应重复。
+**不再维护一份预测性的施工队列。** 两次预测都错了，而且错的方式相同：从静态特征（缺口大小、有没有 hook）推断行为缺口。
+
+取而代之的是一条流程：
+
+```text
+候选节点
+  → bounded 基线探针（3 次独立运行，题目取自 patch 的禁止推导清单，含反刷分正例）
+  → Case A 通过：停止，记录，换下一个
+  → Case B 只有 unconstrained 过：这是真的检索/压缩缺口，允许做活跃层
+  → Case C 都不过但 patch 能给出区分：这是真的内容缺口，允许完整写回
+  → Case D patch 也给不出稳定区分：降级为档案材料，不升格
+```
+
+### 9.2 已探针的节点
+
+| 节点 | 探针 | 结果 |
+|---|---|---|
+| `NODE-CHOICE-GENERATION` | 2026-08-07（unconstrained，两条件） | 可用，但 PR 增量为零；**未做 bounded 复跑** |
+| `NODE-AI-REASONING` | 2026-08-08（bounded，3 次） | **Case A**：24/24，零施工即 `robustly_observed` |
+
+### 9.3 下一批该探针（不是该施工）的
+
+1. **`NODE-CONSCIOUSNESS`** — 按 Case A 协议指定的下一候选；本轮已启动 bounded 探针。
+2. **`NODE-NEURAL-DECODABILITY`** 与 **`NODE-PHYSICS-MEASUREMENT`** — 这两个的 `engineered_not_active` 与 `NODE-AI-REASONING` **同源**，都是从"没有 hook"推出来的，而那条推理已被证伪两次。**必须先探针**。08-08 的一次运行里，模型自发引用了 `Neuroscience/patches/SRT_Neuro_NEURAL18_...` 这张 patch——正是 `NODE-NEURAL-DECODABILITY` 被判"未激活"的依据之一。
+3. **`NODE-CHOICE-GENERATION` 的 bounded 复跑** — 现有观察全是 unconstrained（27 文件、第 9 个才到判别层），不足以判断它是否属于**快速**活跃层。
+4. `NODE-BOOK-BACKFLOW` — 唯一一个 `engineered_not_active` 依据不是 hook 推理而是内容层核实（三个术语确实没有任何理论 owner）。它仍是最可能的真缺口，但也要先探针。
 
 ## 10. 需要作者拍板
 

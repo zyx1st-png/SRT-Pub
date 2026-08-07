@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-07
-source_commit: 6161097a
+source_commit: 77f7db23
 source_branch: claude/active-theory-assimilation-2026-08-06
 source_dirty: true
-inputs_digest: f94f9c102610c366
+inputs_digest: d7367eb8f8ba423c
 ---
 
 # SRT 上下文包

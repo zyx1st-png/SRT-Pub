@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-07
+updated: 2026-08-08
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-07
+> **最后更新**：2026-08-08
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -33,9 +33,11 @@ updated: 2026-08-07
   - **Axis A `assimilation_state`**（结构，可静态检查）：理论增量走到哪了。`active_complete` 要求原生命题／活跃 owner／检索路径／快速层可读／旧表述已处理五项齐备。
   - **Axis B `behavior_validation`**（行为，**只能由实跑设定**）：新会话是否已被证明会因此改变判断。**回归套件存在不等于回归套件通过**；CI 永远只能报 `untested`。
   - `effectively_assimilated` 是两轴的**推导值**，不得手写。
-  - 当前 16 节点：Axis A `active_complete` **4** ／ `partially_active` 7 ／ `engineered_not_active` 4 ／ `author_gate` 1；Axis B `passed` **0** ／ `mixed` 1 ／ `untested` 14 ／ `not_applicable` 1。**没有任何节点是 `effectively_assimilated`。**
-  - 唯一做过实跑的节点是 `NODE-CHOICE-GENERATION`：两条件对照下 PR 条件 18 题全对，但**基线也全对**，差分为零 → `mixed`。因此**不得**声称活跃层已被证明改变判断。
-  - **强制前置协议**：任何节点在立项做活跃层之前，先跑基线探针；基线能答对的，不按"活跃层缺口"立项。
+  - 当前 16 节点：Axis A `active_complete` **5** ／ `partially_active` 7 ／ `engineered_not_active` 3 ／ `author_gate` 1；Axis B `robustly_observed` 1 ／ `observed` 1 ／ `untested` 13 ／ `not_applicable` 1；推导出的 `effectively_assimilated` = **2**。
+  - `NODE-CHOICE-GENERATION`：`observed`（unconstrained），PR #744 的贡献是 `retrieval_efficiency_only`，判断差分为零——**节点可用**与**PR 有增量**是两件事，不得互相代替。
+  - `NODE-AI-REASONING`：`robustly_observed`（bounded ×3），零施工达成。
+  - **强制前置协议**：任何节点在立项做活跃层之前，先跑 **bounded** 基线探针（`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`）；基线能答对的，不按"活跃层缺口"立项。已按此判定 `NODE-AI-REASONING` 为 Case A，不施工。
+  - **`engineered_not_active` 这一档整体可疑**：它多数依据「patch 没有 hook」，而该推理已被 `NODE-AI-REASONING` 证伪——patch 内容可经非 hook 路径进入 owner，且 `<域>/patches/` 本身就在有界检索可达范围内。
   - 全仓状态见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`，节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`，行为实跑记录见 `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md`。
 
 ## 当前仓库状态
@@ -72,6 +74,15 @@ updated: 2026-08-07
 - 生理 synchrony 继续只按领域可测机制使用，不恢复为跨层级 SRT primitive，也不复活 selective-resynchronization 构念；一般跨层过程仍使用“选择性再组织”。
 - 形成 P4 `Phase x Stake` 差异预测，以及 matched-coupling/different-recovery、state-switch accessibility、selection-vs-plasticity eligibility dissociation 三组补充测试。
 - SourceCard、patch、landing-ledger hook、Material Log、两级索引与 registries 已同步；canonical `d` / `Psi_f` / `T_dir` / Core axioms 和休眠 owner 正文未修改。
+
+### 2026-08-08 · 三轴状态、有界检索协议与 AI-REASONING 基线探针
+
+- 状态再拆一轴。两轴仍然把两件事混在一起：`behavior_validation = mixed` 把「这个 PR 没加东西」记成了「这个节点没生效」，而实跑同时显示**两个条件都检索到并正确用了该节点**。现在是三轴：`structural_assimilation`（结构）／`behavioral_availability`（**绝对**，是否被观察到检索并使用）／`intervention_effect`（**按干预记录**，某个 PR 加了什么）。`effectively_assimilated` 重新定义为只描述节点，不描述 PR。
+- 新增 `Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`：启动文件免费，此后最多 6 个正文文件 + 2 次导航。理由是上一轮基线用 27 个文件、第 9 个才到判别层——「最终搜得到」不是「活跃理论」。`robustly_observed` 现在要求重复的 bounded 运行。
+- **`NODE-AI-REASONING` 基线探针 = Case A，不施工。** `main` 有界预算下 3 次独立运行、24/24 通过（含 4 道反刷分正例）。**零施工**即达 `robustly_observed`，是第一个到这一档的节点。
+- **更正一个假阴性**：该节点此前被记为 `engineered_not_active`，依据是「AIREASON01/AIEVID01 没有 hook」。两张 patch 其实早已进入活跃 owner（`Bridge/SRT_Context_Coherence_Intelligence_Interface.md` §5；`AI/AI_POSITIONING_NOTE.md`）。**hook 缺席不等于内容缺席**——这是本项目反对的那个无效推理的反向版本。
+- 连带：`NODE-NEURAL-DECODABILITY` 与 `NODE-PHYSICS-MEASUREMENT` 的 `engineered_not_active` 同源于「没有 hook」，**整档可疑**，必须先探针再考虑施工。
+- 施工队列取消。改为流程：候选 → bounded 探针 → Case A 停 / B 做活跃层 / C 做内容写回 / D 降级为档案。
 
 ### 2026-08-07 · 行为回归实跑与两轴状态模型
 

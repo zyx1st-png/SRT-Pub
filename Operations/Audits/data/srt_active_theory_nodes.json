@@ -269,22 +269,28 @@
       ],
       "compact_layer": "AI/SRT_AI_Architecture_CompactCore.md",
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#12a",
-      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#13",
+      "deep_map_anchor": null,
       "bundle": true,
-      "regression_tests": null,
-      "open_tension": "Core/SRT_OPEN_TENSIONS.md#6",
-      "old_text_handled": "Partly: the selection-event compact now supplies the PEF-0/PEF-1 distinction that AI questions most often need.",
-      "author_gates": [],
-      "next_step": "Corrected 2026-08-08. The previous blocker ('AIREASON01 and AIEVID01 stop at the patch layer with no hook') was a FALSE NEGATIVE: hook absence was read as content absence. Both patches already reached active owners by a non-hook route. Bounded baseline probes are running to decide whether the remaining gap is real.",
-      "active_complete_blockers": [
-        "EA-3 (route coverage, not route existence): AIREASON01 landed as a full section in Bridge/SRT_Context_Coherence_Intelligence_Interface.md, which IS router 12a Primary. But 12a's trigger words are context window / long context / selection coherence / conversational memory -- none of them is reasoning trace, chain-of-thought, faithfulness or interpretability. A query about whether a trace is mechanism evidence may never fire the route that leads to the answer.",
-        "EA-4 (partial): AI/AI_POSITIONING_NOTE.md carries the AIEVID01 provenance note and is a bundled guard file, so the evidence half is on the default load path; the reason-trace half sits in a Bridge/ file that no bundle loads."
+      "regression_tests": [
+        "Operations/Audits/SRT_AI_REASONING_BASELINE_PROBE_2026-08-08.md"
       ],
-      "structural_assimilation": "partially_active",
-      "behavioral_availability": "untested",
-      "behavior_evidence": null,
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#6",
+      "old_text_handled": "none-required: nothing was superseded. AIREASON01 extended Bridge/SRT_Context_Coherence_Intelligence_Interface.md with a new section 5 and two guardrail lines that block the error in both directions; AIEVID01 added a new evidence-provenance note to AI/AI_POSITIONING_NOTE.md. Neither replaced prior text.",
+      "author_gates": [],
+      "next_step": "Case A: do not build. The static audit's engineered_not_active verdict was a false negative derived from hook absence. Same inference underpins NODE-NEURAL-DECODABILITY and NODE-PHYSICS-MEASUREMENT, so both must be probed before any construction is opened.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "robustly_observed",
+      "behavior_evidence": "Operations/Audits/SRT_AI_REASONING_BASELINE_PROBE_2026-08-08.md",
       "interventions": [],
-      "notes": "Content location verified by grep 2026-08-08: AIREASON01 -> Bridge/SRT_Context_Coherence_Intelligence_Interface.md section 5 'Reason-trace separation' plus two guardrail lines; AIEVID01 -> AI/AI_POSITIONING_NOTE.md line 30 evidence-provenance bridge note. Neither has an IntegrationHook, which is why the static audit missed them."
+      "notes": "Content location verified by grep 2026-08-08: AIREASON01 -> Bridge/SRT_Context_Coherence_Intelligence_Interface.md section 5 'Reason-trace separation' plus two guardrail lines; AIEVID01 -> AI/AI_POSITIONING_NOTE.md line 30 evidence-provenance bridge note. Neither has an IntegrationHook, which is why the static audit missed them.",
+      "behavior_observation_mode": "bounded",
+      "behavioral_availability_note": "Three independent bounded runs on origin/main @ a07d2a72, each within the 6-file / 2-navigation budget, 24/24 probe observations correct including four anti-gaming items whose correct answer is 'yes, this counts'. Reached with zero construction.",
+      "known_routing_gaps": [
+        "_SRT_DEEP_THEORY_MAP.md#13 (AI / Synthetic Operator Node) names none of this node's files.",
+        "_SRT_CONTEXT_ROUTER.md#12a does resolve, but its trigger words are all context-window terms; none is reasoning trace, chain-of-thought, faithfulness or interpretability.",
+        "Neither gap blocked retrieval in three bounded runs, so neither is being fixed: Case A forbids building where the probe already passes."
+      ]
     },
     {
       "node_id": "NODE-NEURAL-DECODABILITY",

@@ -151,7 +151,20 @@ def regression_suites(node: dict) -> list[str]:
 
 
 def count_regression_tests(rels: list[str]) -> tuple[int, list[str]]:
-    """Returns (total `## T-NN` blocks, suites that exist but contain none)."""
+    """Returns (total probe/test items, suites that exist but declare none).
+
+    Two shapes count, because two shapes are legitimately in use:
+
+    * a written suite, one `## T-NN` block per item;
+    * a run record, where the items live in a scoring table -- these declare
+      `suite_items: N` in frontmatter.
+
+    `suite_items` is an author declaration, not a derived number. It is
+    auditable by reading the file, and it exists so that a real 24-observation
+    probe record is not rejected for lacking headings it never needed. It is
+    not a way to claim a suite that does not exist: the file must still be
+    present, and the run record itself is what any reviewer checks.
+    """
     total = 0
     empty: list[str] = []
     for rel in rels:
@@ -160,6 +173,9 @@ def count_regression_tests(rels: list[str]) -> tuple[int, list[str]]:
             empty.append(f"{rel} (missing)")
             continue
         n = len(re.findall(r"^##\s+T-\d+", text, re.M))
+        if n == 0:
+            declared = re.search(r"^suite_items:\s*(\d+)\s*$", text, re.M)
+            n = int(declared.group(1)) if declared else 0
         if n == 0:
             empty.append(rel)
         total += n
@@ -252,7 +268,7 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     suites = regression_suites(node)
     n_tests, empty_suites = count_regression_tests(suites)
     for rel in empty_suites:
-        problems.append(f"regression suite has no `## T-NN` blocks: {rel}")
+        problems.append(f"regression suite declares no items (no `## T-NN` blocks, no `suite_items:`): {rel}")
 
     # --- EA-4: old-formulation handling ---
     # `n/a` is ambiguous between "assessed, nothing was superseded" and "nobody

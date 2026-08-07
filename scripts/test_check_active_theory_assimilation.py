@@ -136,7 +136,16 @@ def run() -> None:
         # 6. A regression-test file that exists but contains no tests.
         write(root, "Tests.md", "# tests\n\nnothing here yet\n")
         row = mod.check_node(base_node(), good_bundles)
-        expect("empty test file", row["problems"], "regression suite has no `## T-NN` blocks")
+        expect("empty test file", row["problems"], "regression suite declares no items")
+        write(root, "Tests.md", "\n".join(f"## T-{i:02d} · case\n" for i in range(1, 13)))
+
+        # 6b. A run record with no headings but a declared item count is accepted;
+        #     probe records score in tables, not in `## T-NN` blocks.
+        write(root, "Tests.md", "---\nsuite_items: 16\n---\n\n| item | verdict |\n")
+        row = mod.check_node(base_node(), good_bundles)
+        expect("declared suite_items", row["problems"], None)
+        if row["regression_tests_count"] != 16:
+            FAILURES.append(f"declared suite_items should be counted, got {row['regression_tests_count']}")
         write(root, "Tests.md", "\n".join(f"## T-{i:02d} · case\n" for i in range(1, 13)))
 
         # 7. Too few tests to support a behavior verdict (an Axis B concern, so
