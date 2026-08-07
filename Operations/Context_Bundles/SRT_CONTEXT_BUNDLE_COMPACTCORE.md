@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-07
-source_commit: 77f7db23
+source_commit: 06fb67be
 source_branch: claude/active-theory-assimilation-2026-08-06
-source_dirty: true
+source_dirty: false
 inputs_digest: d7367eb8f8ba423c
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: d7367eb8f8ba423c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-07 |
-| 来源 commit | `77f7db23` |
+| 来源 commit | `06fb67be` |
 | 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
