@@ -33,7 +33,8 @@ updated: 2026-08-08
   - **Axis A `assimilation_state`**（结构，可静态检查）：理论增量走到哪了。`active_complete` 要求原生命题／活跃 owner／检索路径／快速层可读／旧表述已处理五项齐备。
   - **Axis B `behavior_validation`**（行为，**只能由实跑设定**）：新会话是否已被证明会因此改变判断。**回归套件存在不等于回归套件通过**；CI 永远只能报 `untested`。
   - `effectively_assimilated` 是两轴的**推导值**，不得手写。
-  - 当前 16 节点：Axis A `active_complete` **5** ／ `partially_active` 7 ／ `engineered_not_active` 3 ／ `author_gate` 1；Axis B `robustly_observed` 1 ／ `observed` 1 ／ `untested` 13 ／ `not_applicable` 1；推导出的 `effectively_assimilated` = **2**。
+  - 当前 16 节点：Axis A `active_complete` **8** ／ `partially_active` 6 ／ `engineered_not_active` 1 ／ `author_gate` 1；Axis B `robustly_observed` 2 ／ `observed` 3 ／ `untested` 10 ／ `not_applicable` 1；推导出的 `effectively_assimilated` = **2**（要求 bounded + robustly_observed）。
+  - **`engineered_not_active` 从 4 降到 1**，不是因为施工，而是因为探针推翻了静态判断。剩下的 1 个（`NODE-BOOK-BACKFLOW`）依据是内容层核实而非 hook 推理，仍待探针。
   - `NODE-CHOICE-GENERATION`：`observed`（unconstrained），PR #744 的贡献是 `retrieval_efficiency_only`，判断差分为零——**节点可用**与**PR 有增量**是两件事，不得互相代替。
   - `NODE-AI-REASONING`：`robustly_observed`（bounded ×3），零施工达成。
   - **强制前置协议**：任何节点在立项做活跃层之前，先跑 **bounded** 基线探针（`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`）；基线能答对的，不按"活跃层缺口"立项。已按此判定 `NODE-AI-REASONING` 为 Case A，不施工。
@@ -66,14 +67,16 @@ updated: 2026-08-08
 
 ## 最近关键推进
 
-### 2026-08-07 · NEURAL23 具身节律准入桥
+### 2026-08-08 · 命题级语义覆盖审计（审计单位改变）
 
-- 对 Young, Ericson & Schooler 2026 *Neuroscience of Consciousness* 综述完成全文材料融合，裁决为 **A（bounded non-canonical P3 implementation bridge + P4 experimental window）**。
-- 新增 `NEURAL23`：以 `momentary selection eligibility` 描述脑—身体节律对候选进入竞争／门控／稳定过程的时相调制；明确区分 selection weight、selection opportunity 与 friction。
-- 建立 selection eligibility 与 N10/BTSP plasticity eligibility 的双门分离：`eligibility to become current reality != eligibility to enter history`。
-- 生理 synchrony 继续只按领域可测机制使用，不恢复为跨层级 SRT primitive，也不复活 selective-resynchronization 构念；一般跨层过程仍使用“选择性再组织”。
-- 形成 P4 `Phase x Stake` 差异预测，以及 matched-coupling/different-recovery、state-switch accessibility、selection-vs-plasticity eligibility dissociation 三组补充测试。
-- SourceCard、patch、landing-ledger hook、Material Log、两级索引与 registries 已同步；canonical `d` / `Psi_f` / `T_dir` / Core axioms 和休眠 owner 正文未修改。
+- **审计单位从"文件工程状态"改为"已确认的理论命题"。** 理由是连续 **5 次假阴性**：静态清单判"未吸收"，行为探针 5 次全部推翻。
+- 新增 `Operations/Audits/SRT_CONFIRMED_PROPOSITION_SEMANTIC_COVERAGE_AUDIT_2026-08-08.md`：审计 **18 条已确认命题**（13 条作者裁决 + 5 条 A 类材料）。结果 explicit 11 / implicit 2 / partial 4 / conflict 1 / **archived_only 0**。
+- **本轮样本内没有找到一条"作者已确认、AI 从当前 owner 学不到"的理论命题。** 唯一 confirmed-unassimilated 项不是命题，是 `NEUROSCIENCE_COMPACT_REGISTRY.md` 陈旧（止于 N9，不指向 hardening index）——由行为探针主动报告，静态审计看不见。
+- **`NODE-NEURAL-DECODABILITY` 与 `NODE-PHYSICS-MEASUREMENT` 的 `engineered_not_active` 均不成立**：neural 0 次导航 8/8 全对，physics 1 次导航 7/7 全对。"五张 hook 全 pending""落点文件从未创建"都没有妨碍检索。
+- `NODE-CONSCIOUSNESS` 三次 bounded run 21/21 → `robustly_observed`，零施工。探针还找出 3 个静态清单从未登记的 owner。
+- 有界检索协议加入**运行前冻结的成功门槛**；一次 Choice Generation 运行因超预算被**作废**（未按有利方向重读）。
+- 三轴 `effectively_assimilated` 收紧：现在要求 `active_complete + robustly_observed + bounded`，无预算深搜的 `observed` 不再满足。
+- **本轮不施工**：未改 canonical / Core / domain owner / CompactCore / router / bundle。
 
 ### 2026-08-08 · 三轴状态、有界检索协议与 AI-REASONING 基线探针
 
@@ -83,6 +86,15 @@ updated: 2026-08-08
 - **更正一个假阴性**：该节点此前被记为 `engineered_not_active`，依据是「AIREASON01/AIEVID01 没有 hook」。两张 patch 其实早已进入活跃 owner（`Bridge/SRT_Context_Coherence_Intelligence_Interface.md` §5；`AI/AI_POSITIONING_NOTE.md`）。**hook 缺席不等于内容缺席**——这是本项目反对的那个无效推理的反向版本。
 - 连带：`NODE-NEURAL-DECODABILITY` 与 `NODE-PHYSICS-MEASUREMENT` 的 `engineered_not_active` 同源于「没有 hook」，**整档可疑**，必须先探针再考虑施工。
 - 施工队列取消。改为流程：候选 → bounded 探针 → Case A 停 / B 做活跃层 / C 做内容写回 / D 降级为档案。
+
+### 2026-08-07 · NEURAL23 具身节律准入桥
+
+- 对 Young, Ericson & Schooler 2026 *Neuroscience of Consciousness* 综述完成全文材料融合，裁决为 **A（bounded non-canonical P3 implementation bridge + P4 experimental window）**。
+- 新增 `NEURAL23`：以 `momentary selection eligibility` 描述脑—身体节律对候选进入竞争／门控／稳定过程的时相调制；明确区分 selection weight、selection opportunity 与 friction。
+- 建立 selection eligibility 与 N10/BTSP plasticity eligibility 的双门分离：`eligibility to become current reality != eligibility to enter history`。
+- 生理 synchrony 继续只按领域可测机制使用，不恢复为跨层级 SRT primitive，也不复活 selective-resynchronization 构念；一般跨层过程仍使用“选择性再组织”。
+- 形成 P4 `Phase x Stake` 差异预测，以及 matched-coupling/different-recovery、state-switch accessibility、selection-vs-plasticity eligibility dissociation 三组补充测试。
+- SourceCard、patch、landing-ledger hook、Material Log、两级索引与 registries 已同步；canonical `d` / `Psi_f` / `T_dir` / Core axioms 和休眠 owner 正文未修改。
 
 ### 2026-08-07 · 行为回归实跑与两轴状态模型
 

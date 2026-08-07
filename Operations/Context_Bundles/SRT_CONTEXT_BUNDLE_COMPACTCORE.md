@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-07
-source_commit: f0d3918e
+source_commit: fce3cdcb
 source_branch: claude/active-theory-assimilation-2026-08-06
-source_dirty: false
-inputs_digest: 8f304c4a88549d77
+source_dirty: true
+inputs_digest: e017ba16323433c5
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,9 +27,9 @@ inputs_digest: 8f304c4a88549d77
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-07 |
-| 来源 commit | `f0d3918e` |
+| 来源 commit | `fce3cdcb` |
 | 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

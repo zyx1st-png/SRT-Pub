@@ -43,8 +43,16 @@ correctly-applied theory node as behaviorally ineffective. A PR adding nothing
 and a theory being unavailable are different facts.
 
 `effectively_assimilated` is derived and is a claim about THE NODE only:
-`structural_assimilation == "active_complete"` and
-`behavioral_availability in {"observed", "robustly_observed"}`.
+
+    structural_assimilation  == "active_complete"
+    behavioral_availability  == "robustly_observed"
+    behavior_observation_mode == "bounded"
+
+Tightened 2026-08-08. `observed` alone no longer qualifies: the project's goal
+is theory an AI can reach *fast* and act on, and an unconstrained 27-file dig
+that eventually finds the answer does not demonstrate that. `observed` now
+means only "at least one real run found and used it, by any route"; the final
+label needs repeated bounded runs against a pre-frozen threshold.
 
 EA-1 (is there a genuine native proposition?) is a judgement about content and
 cannot be mechanized. The checker verifies the *carriers*, not the substance; a
@@ -69,7 +77,8 @@ STRUCTURAL_BAR = "active_complete"
 # Axis B values that assert something happened, so they require recorded evidence.
 NEEDS_EVIDENCE = {"observed", "robustly_observed", "failed"}
 AVAILABILITY_VALUES = {"untested", "observed", "robustly_observed", "failed", "not_applicable"}
-AVAILABLE = {"observed", "robustly_observed"}
+# Only `robustly_observed` (and only when bounded) satisfies the final label.
+AVAILABLE = {"robustly_observed"}
 # `robustly_observed` is reserved for repeated BOUNDED runs.
 BOUNDED_REQUIRED_FOR = "robustly_observed"
 INTERVENTION_VALUES = {"untested", "none", "retrieval_efficiency_only",
@@ -302,7 +311,11 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
             f"(minimum {MIN_REGRESSION_TESTS})"
         )
 
-    derived = state == STRUCTURAL_BAR and validation in AVAILABLE
+    derived = (
+        state == STRUCTURAL_BAR
+        and validation in AVAILABLE
+        and mode == "bounded"
+    )
 
     if declared_bundle and not bundle_loaded:
         problems.append("manifest says bundle: true but no generated bundle contains the node")

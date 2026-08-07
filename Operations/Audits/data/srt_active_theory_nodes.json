@@ -21,7 +21,8 @@
       "bundle": true,
       "regression_tests": [
         "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
-        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
+        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md",
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
       ],
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
       "old_text_handled": "SRT_AI_START.md Real Choice Moment entry: negative-list-only pointer replaced with negative list plus positive discrimination pointer and three fast negatives. _SRT_AGENT_RETRIEVAL_PROFILE.md: 03_Bridges no longer described as adjacent-theory translation only.",
@@ -30,10 +31,10 @@
       "notes": "Pilot node for the 2026-08-06 assimilation pass. Claim level P2-P3 throughout; passing five gates licenses only 'bounded selection-event candidate'. The 2026-08-07 two-condition run falsified the audit's premise that a fresh session could not reach this material on main.",
       "active_complete_blockers": [],
       "structural_assimilation": "active_complete",
-      "behavioral_availability": "observed",
-      "behavior_observation_mode": "unconstrained",
-      "behavior_evidence": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md",
-      "behavioral_availability_note": "Both conditions of the 2026-08-07 run retrieved this node's material and used it to judge 17 pass + 1 partial out of 18. That is availability, observed twice. It is NOT robustly_observed because both runs were unconstrained: the baseline needed 27 files and reached the discriminating layer only at file 9. A bounded re-run is required before claiming robustly_observed.",
+      "behavioral_availability": "robustly_observed",
+      "behavior_observation_mode": "bounded",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
+      "behavioral_availability_note": "Three valid bounded runs on origin/main @ aa56d7f2 (cg1, cg3, cg4), all within the 6-file / 2-navigation budget, 18/18 correct, anti-gaming positives all correct. A fourth run (cg2) scored 6/6 but used 3 navigation actions and was DISCARDED per the pre-frozen threshold rather than re-read favourably. The informative part is how they succeeded: none of the three opened the T-D bridge, and none opened the CompactCore PR #744 created. All three answered from the canonical spine (P1-T05, P1-T06, P0-02, P0-03, the R.A.C stake gate) plus a second independent path. The node's discriminative power lives in canonical, not in the fast layer this PR added.",
       "interventions": [
         {
           "intervention": "PR #744 declarative fast path for the selection-event node",
@@ -245,21 +246,19 @@
       "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#10",
       "bundle": true,
       "regression_tests": [
-        "Operations/Audits/SRT_CONSCIOUSNESS_BASELINE_PROBE_2026-08-08.md"
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
       ],
       "open_tension": null,
-      "old_text_handled": "n/a",
+      "old_text_handled": "none-required: nothing was superseded. The five 2026-08-05 source cards' reverse corrections are carried independently by Neuroscience/SRT_Neuroscience_Claim_Status.md (forbidden d=salience/attention/arousal/integration), _SRT_T_DIR_CANONICAL.md (T_dir is not confidence or report fluency), and Core_Law/SRT_Individuation.md (sigma_sr phases rather than fixed self modules).",
       "author_gates": [],
-      "next_step": "Two more independent bounded runs. If they hold, this is Case A: close the node at robustly_observed and do not build. Do not open construction on n=1.",
-      "active_complete_blockers": [
-        "EA-1 (literal, but no behavioral gap): the five 2026-08-05 consciousness source cards' reverse corrections still appear in no compact layer. The 2026-08-08 bounded probe nonetheless answered all seven derived questions correctly without reading any of them, using Neuroscience/SRT_FEP_MetaAwareness_AffectiveSelf_Bridge.md and Philosophy/SRT_Phenomenal_Structure_Interface.md -- two owners the static audit never registered. The blocker is real as stated and irrelevant as a gap."
-      ],
-      "structural_assimilation": "partially_active",
-      "behavioral_availability": "observed",
-      "behavior_evidence": "Operations/Audits/SRT_CONSCIOUSNESS_BASELINE_PROBE_2026-08-08.md",
+      "next_step": "Case A. Do not build. The recorded blocker (source-card corrections absent from any compact layer) is literally true and produces no behavioral gap.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "robustly_observed",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
       "interventions": [],
       "behavior_observation_mode": "bounded",
-      "behavioral_availability_note": "One bounded run on origin/main, 7/7 correct, no NO REPO BASIS needed. n=1, so directional only. Budget compliance carries one caveat (the session counted the context router as a conditional startup file; under a stricter reading it used 7 content files, one over)."
+      "behavioral_availability_note": "Three independent bounded runs, 21/21 correct, no NO REPO BASIS needed. Reached three owners the static manifest had never registered: Neuroscience/SRT_FEP_MetaAwareness_AffectiveSelf_Bridge.md, Philosophy/SRT_Phenomenal_Structure_Interface.md, Core_Law/SRT_Individuation.md."
     },
     {
       "node_id": "NODE-AI-REASONING",
@@ -301,28 +300,34 @@
       "title": "Neural decodability, stabilization, memory admission, energy payment",
       "core_question": "What can neural decodability, connectivity, and metabolic cost license, and what can they not?",
       "active_owners": [
-        "Neuroscience/SRT_Neural_Mechanisms.md",
+        "Neuroscience/_SRT_Neuroscience_Hardening_Index.md",
         "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md",
-        "Neuroscience/SRT_Neuro_Predictions_Table.md"
+        "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+        "Neuroscience/SRT_Neuroscience_Claim_Status.md"
       ],
       "compact_layer": "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md",
       "router_anchor": null,
       "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#8",
       "bundle": true,
-      "regression_tests": null,
+      "regression_tests": [
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+      ],
       "open_tension": null,
-      "old_text_handled": "n/a",
+      "old_text_handled": "none-required: NEURAL16-23 extended the hardening index rather than replacing prior text.",
       "author_gates": [
         "Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core"
       ],
-      "next_step": "Ten neuro patches exist; five hooks are fully pending and one names a synthesis file that has never been created. NEURAL18 has no hook.",
-      "active_complete_blockers": [
-        "EA-2: five hooks fully pending; NEURAL18 has no hook; the named synthesis file was never created"
+      "next_step": "The engineered_not_active verdict is FALSE. Five pending hooks and a never-created synthesis file did not block retrieval. Two more bounded runs would settle robustly_observed; no construction is warranted.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "observed",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
+      "interventions": [],
+      "behavior_observation_mode": "bounded",
+      "known_routing_gaps": [
+        "Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md is stale (active_v2, 2026-05): its maps stop at N9, it names no NEURAL15-23 patch, and it does not point at _SRT_Neuroscience_Hardening_Index.md as the current material-patch authority. Reported unprompted by the 2026-08-08 bounded probe. Registered, not fixed: the probe passed anyway and this round does not build."
       ],
-      "structural_assimilation": "engineered_not_active",
-      "behavioral_availability": "untested",
-      "behavior_evidence": null,
-      "interventions": []
+      "behavioral_availability_note": "One bounded run, ZERO navigation actions, 8/8 correct across decodability/anchoring, mixed selectivity, alpha diversity, encoding vs stabilization gates, ATP vs paid burden, centrality vs causality, and rhythmic selection eligibility. n=1 so observed, not robustly_observed."
     },
     {
       "node_id": "NODE-LIFE-DISSIPATIVE",
@@ -357,27 +362,31 @@
       "title": "Physical measurement, fact formation, representation covariance, composition rules",
       "core_question": "What in quantum representation is scaffold and what survives change of representation?",
       "active_owners": [
-        "Physics/_SRT_Phys_Bridge.md",
-        "Physics/SRT_Physics_Claim_Status.md"
+        "Physics/SRT_Physics_Claim_Status.md",
+        "Physics/SRT_Quant_01_Selection_CompactCore.md",
+        "Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md",
+        "Core_Law/SRT_L0_Metaphysics.md"
       ],
       "compact_layer": null,
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#9",
       "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#11",
       "bundle": true,
-      "regression_tests": null,
+      "regression_tests": [
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+      ],
       "open_tension": null,
-      "old_text_handled": "n/a",
+      "old_text_handled": "REP01 downgraded the shorthand 'wavefunction = L0 possibility structure' to 'a candidate physical representation of the accessible possibility structure, not identical to absolute L_0'. The bounded probe reproduced that downgrade.",
       "author_gates": [
         "RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md"
       ],
-      "next_step": "Seven physics patches exist; three hooks point at a file that has never been created; four patches (P06, P07, P08, REP01) have no hook at all.",
-      "active_complete_blockers": [
-        "EA-2: three hooks target Physics/SRT_Physics_Bridge_v0_2.md, which does not exist; P06/P07/P08/REP01 have no hook"
-      ],
-      "structural_assimilation": "engineered_not_active",
-      "behavioral_availability": "untested",
-      "behavior_evidence": null,
-      "interventions": []
+      "next_step": "The engineered_not_active verdict is FALSE. Three hooks pointing at a file that was never created did not block retrieval. RQ-2026-08-A04 remains an open bookkeeping question, not a theory gap.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "observed",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
+      "interventions": [],
+      "behavior_observation_mode": "bounded",
+      "behavioral_availability_note": "One bounded run, 1 navigation action, 7/7 correct on representation covariance, composition rules as substantive constraint, package-targeted falsification, L_0 vs Hilbert space, Psi_f vs entropy/Landauer, and measurement vs consciousness. n=1 so observed, not robustly_observed."
     },
     {
       "node_id": "NODE-SOCIAL-L2",
@@ -492,8 +501,8 @@
         "not_applicable"
       ],
       "value_definitions": {
-        "observed": "retrieved and used in at least one recorded run, under any retrieval mode",
-        "robustly_observed": "retrieved and used in at least two independent BOUNDED runs (see SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md)",
+        "observed": "at least one recorded run found and used it, by any retrieval mode. Answers 'is this reachable at all', not 'is this fast'.",
+        "robustly_observed": "repeated independent BOUNDED runs met a pre-frozen success threshold (see SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md). This is the only value that can support effectively_assimilated.",
         "failed": "a recorded run did not retrieve it, or retrieved it and judged wrongly"
       },
       "note": "A zero intervention effect is NOT evidence against behavioral availability. If a baseline already retrieves and uses the node, that is availability, not ineffectiveness. Only a recorded run may set this; CI never can."
@@ -520,5 +529,5 @@
       "note": "Recorded in the node's `interventions` list. A single field may never carry both 'the node works' and 'this PR helped'."
     }
   },
-  "derived_status_rule": "effectively_assimilated := structural_assimilation == 'active_complete' AND behavioral_availability in {'observed','robustly_observed'}. It is a claim about THE NODE (is this theory structurally in place and actually used?), NOT a claim about any PR. Whether a given PR added anything lives only in that PR's intervention_effect record. Computed, never stored."
+  "derived_status_rule": "effectively_assimilated := structural_assimilation == 'active_complete' AND behavioral_availability == 'robustly_observed' AND behavior_observation_mode == 'bounded'. Tightened 2026-08-08: `observed` alone no longer qualifies, because an unconstrained deep search that eventually succeeds does not show the theory is fast enough to act on. It is a claim about THE NODE, never about a PR; PR effects live only in `interventions`. Computed, never stored."
 }

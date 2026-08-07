@@ -125,8 +125,20 @@ def run() -> None:
             base_node(behavioral_availability="observed", behavior_evidence="Evidence.md"), good_bundles
         )
         expect("observed with evidence", row["problems"], None)
+        # Tightened 2026-08-08: `observed` alone must NOT reach the final label.
+        # An unconstrained dig that eventually succeeds is not fast-layer evidence.
+        if row["effectively_assimilated"] != "no":
+            FAILURES.append("observed alone must not derive effectively_assimilated")
+        row = mod.check_node(
+            base_node(
+                behavioral_availability="robustly_observed",
+                behavior_evidence="Evidence.md",
+                behavior_observation_mode="bounded",
+            ),
+            good_bundles,
+        )
         if row["effectively_assimilated"] != "yes":
-            FAILURES.append("derived label should be yes for active_complete + observed")
+            FAILURES.append("robustly_observed + bounded should derive yes")
 
         # 5e. active_complete alone must NOT produce the derived label.
         row = mod.check_node(base_node(), good_bundles)
@@ -250,7 +262,8 @@ def run() -> None:
         #     error this axis split exists to prevent.
         row = mod.check_node(
             base_node(
-                behavioral_availability="observed",
+                behavioral_availability="robustly_observed",
+                behavior_observation_mode="bounded",
                 behavior_evidence="Evidence.md",
                 interventions=[{"intervention": "PR", "intervention_effect": "none",
                                 "ref": "Evidence.md"}],
@@ -259,7 +272,7 @@ def run() -> None:
         )
         expect("zero-effect PR, available node", row["problems"], None)
         if row["effectively_assimilated"] != "yes":
-            FAILURES.append("a node with a zero-effect PR but observed availability must still derive yes")
+            FAILURES.append("a node with a zero-effect PR but robust availability must still derive yes")
 
         # 15. An unknown Axis B value is rejected rather than silently accepted.
         row = mod.check_node(base_node(behavioral_availability="probably_fine"), good_bundles)
