@@ -24,16 +24,32 @@ manifest: Operations/Audits/data/srt_active_theory_nodes.json
 > **性质**：运行层审计。本轮**不修改** canonical 定义、公理、方程、符号、claim level 或已投稿论文。对 `Core/SRT_OPEN_TENSIONS.md` 的改动是**新增一条登记**（§14），不改动既有条目。
 >
 > **本轮改了什么定义**：审计的判据本身。此前"材料已融入"的实际判据是**保存 + 登记 + 安排落点**；本轮改为**能改变下一轮 AI 判断**。这是一次判据收紧，因此几乎所有此前记为"已融入"的项目在新判据下会降级——这是预期结果，不是新发现的失败。
+>
+> ---
+>
+> ## 2026-08-07 修订：本文件初版自己犯了它要纠正的错
+>
+> 初版把 `NODE-CHOICE-GENERATION` 标为 `effectively_assimilated`，依据是「12 道回归题已写好、检查器绿」。**这是把 EA-5「行为回归测试通过」读成了「行为回归测试文件存在」**——与"有 hook 不等于已融入"是同一个错误，只是换了一层。
+>
+> 初版还有一处事实错误：报告称"14 个节点被同一项拦住：没有行为回归测试"。逐条复核后，**16 个节点里只有 4 个在结构上完整**；其余 12 个中的多数在 EA-5 之前就已经被 EA-1／EA-2／EA-4 拦下，加上行为测试也不会变成 `active_complete`。§4 已按证据重写。
+>
+> 修订内容：状态拆成两个轴（§4.0），16 节点重新分类（§4），`effectively_assimilated` 改为**推导值**，检查器不再允许在无实跑证据时给出行为结论（§5），并补做了真实的两条件行为回归（`SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md`）。
 
 ---
 
 ## 0. 一句话结论
 
-> 仓库的**档案化**和**工程化**都相当健康；断裂全部集中在**工程化 → 理论生效**这一段。
+> 仓库的**档案化**和**工程化**都相当健康；断裂集中在**工程化 → 理论生效**这一段。
 >
-> 具体形态：**理论增量存在，但没有任何入口指向它**。一个只按 `AGENTS.md §Session Start` 读取的新会话，读不到它，因而判断不会改变。
+> 具体形态：**理论增量存在，但没有任何声明式入口指向它**——它只能靠目录列举和 frontmatter 依赖链被碰上。
 
-本轮以「选择生成条件与真实选择事件」节点作端到端试点，把这段断裂在一个节点上补通，并留下可复现的检查器和可维护的节点清单，使后续节点不必重新发明通路。
+**2026-08-07 更正**：初版这句话原本写的是"新会话读不到它，因而判断不会改变"。两条件实跑证伪了后半句。基线会话（`origin/main`）**读到了**，路径是 `STATUS.md` 权威锚点 → `ls Operations/` → frontmatter `dependency:` 链，并且在 18 道题上与 PR #744 条件**打平**。
+
+所以准确的说法是：
+
+> 缺的不是**可达性**，是**声明式可达性**。内容碰得上，但没有任何入口保证碰得上。这个差别是真的，但本轮**没能量化**它——`n=1` 的两条件对照给出的差分是零。
+
+本轮以「选择生成条件与真实选择事件」节点作端到端试点，把声明式通路在一个节点上补通，并留下可复现的检查器、两轴状态模型和可维护的节点清单。**试点的结构部分成功，行为验证部分未通过**（见 `SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md`）。
 
 ---
 
@@ -43,7 +59,7 @@ manifest: Operations/Audits/data/srt_active_theory_nodes.json
 |---|---|---|---|
 | **档案化** | 原始材料、对话、SourceCard、choice trace 已保存 | 文件存在且可检索 | **健康**。59 张 SourceCard、11 份 trace/ghost 卡、10 份对话材料、11 张 EC 卡，全部有 provenance |
 | **工程化** | Material Log、patch、hook、registry、未来落点齐备 | 台账有行、patch 有 ID、hook 有 target | **大体健康，有已知缺口**。31 张 patch、24 张 hook（landed 12 / partial 3 / pending 9），2 个 hook target 文件从未创建 |
-| **理论生效** | 已压缩为 SRT 原生命题，进入活跃 owner **且**进入 AI 检索路径，旧表述已处理，行为测试可证判断改变 | 见 §5 的 EA-1…EA-5 | **稀缺**。16 个理论节点中 **1 个**满足全部判据（本轮试点补通的那个） |
+| **理论生效** | 已压缩为 SRT 原生命题，进入活跃 owner **且**进入 AI 检索路径，旧表述已处理，**并有实跑证据表明判断确实改变** | 见 §5 的 EA-1…EA-5 与 §4.0 的两轴 | **稀缺**。16 个节点中 **4 个**结构完整（Axis A `active_complete`）；行为验证见 §4.2 |
 
 **以下任一状态，本轮均不计为"已融入理论"**：verdict A、SourceCard 完成、Material Log 已登记、patch 已创建、hook 有 target、文件可被搜索到、内容存在于 `01_Source_Intuition/`、choice trace 已完成 closure pipeline。
 
@@ -101,6 +117,10 @@ canonical anchors（`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_
 但 `03_Bridges/` 里的 T-B、T-D、T-E、MSD 四座桥**不是**邻近理论翻译，而是 SRT 自己的跨域机件。这一行分类错误的后果是可推导的：一个 AI 在做「这算不算真的选择」的判断时，不会认为自己在做"邻近理论翻译"，因此**不会打开这个目录**。
 
 这是本轮发现的最有解释力的单点缺陷：它不是"文件缺失"，而是"入口把内容描述成了别的东西"。已在本轮修正。
+
+> **2026-08-07 更正**：上一段的**推论**（"因此不会打开这个目录"）经实跑证伪。基线会话确实没有经由检索画像打开 `03_Bridges/`——但它经由 `STATUS.md §当前权威锚点` 点名的 choice-trace 作者裁决文件，列举了 `Operations/` 目录，再沿 frontmatter 的 `dependency:` 字段拿到了 T-D 桥和全部四套操作化测试。
+>
+> 分类错误本身仍然是真的、仍然值得修。但"分类错了 ⇒ 内容不可达"这一步**不成立**：这个仓库的 frontmatter 依赖链事实上承担了相当一部分路由功能，而本审计的可达性指标完全没有计入它。
 
 ---
 
@@ -166,38 +186,68 @@ canonical anchors（`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_
 ## 4. 理论节点地图与吸收状态
 
 完整机器可读表：[`data/srt_active_theory_assimilation_2026-08-06.csv`](data/srt_active_theory_assimilation_2026-08-06.csv)
-节点清单（人工维护，被生成脚本读取）：[`data/srt_active_theory_nodes.json`](data/srt_active_theory_nodes.json)
+节点清单（人工维护，被生成脚本与检查器读取）：[`data/srt_active_theory_nodes.json`](data/srt_active_theory_nodes.json)
 
-| node_id | 状态 | 最主要的缺口 |
+### 4.0 两个轴，不可合并
+
+初版用单一 `assimilation_status` 同时表达两件事，结果是"结构齐备"被当成了"已验证"。现在拆开：
+
+| 轴 | 问的问题 | 取值 | 谁能设 |
+|---|---|---|---|
+| **Axis A `assimilation_state`** | 理论增量在仓库结构上走到哪了？ | `archived_only` / `engineered_not_active` / `partially_active` / `active_complete` / `conflict_with_active_text` / `author_gate` / `rejected_or_parked` | 静态检查器可验证 |
+| **Axis B `behavior_validation`** | 新会话是否已被**证明**会因此改变判断？ | `untested` / `passed` / `mixed` / `failed` / `not_applicable` | **只能由一次有记录的实跑设定**；CI 永远设不了 |
+
+`active_complete` 要求 EA-1…EA-5 全部满足（原生命题／活跃 owner／检索路径／快速层可读／旧表述已处理）。**它仍然不等于行为验证成功。**
+
+最终标签是**推导**的，不能手写：
+
+```text
+effectively_assimilated := assimilation_state == "active_complete"
+                       AND behavior_validation == "passed"
+```
+
+检查器现在会拒绝任何 `behavior_validation ∈ {passed, mixed, failed}` 而没有 `behavior_evidence` 指向真实运行记录的节点。**回归套件存在 ≠ 回归套件跑过。**
+
+### 4.1 Axis A：16 节点重新分类
+
+每个未达 `active_complete` 的节点必须写明**是哪一条判据拦住它**，否则清单会退化成没人能行动的悲观情绪。以下 blocker 均经实证核对（命令见 §11）。
+
+| node_id | Axis A | 拦住它的判据（实证） |
 |---|---|---|
-| `NODE-CHOICE-GENERATION` | **effectively_assimilated** | — （本轮试点） |
-| `NODE-SELECTION-ONTOLOGY` | partially_active | 无回归测试；GOV-SUB01 删除测试从未执行，残余标签 UNASSIGNED |
-| `NODE-L0-L1-L2` | partially_active | 无回归测试；P0-04 未决 |
-| `NODE-D-VALUE` | **author_gate** | `d/q/o` 形式地位未裁（RQ-2026-08-A02），禁运中 |
-| `NODE-PSI-F` | partially_active | Fisher / Landauer 证据卡 `draft_v1` 未接受 |
-| `NODE-T-DIR` | partially_active | 两张 PH_AG partial hook 卡在 `T_dir` canonical 回写（C 类，需单独授权） |
-| `NODE-GHOST-OPERATOR` | partially_active | 三张 ghost source card 从未压缩成命题 |
-| `NODE-SUBJECTHOOD` | partially_active | agency owner **不在任何 context bundle 中**；路由 §23 主要指向停驻的 incubation 文件 |
-| `NODE-CONSCIOUSNESS` | partially_active | 五张 2026-08-05 意识源卡只路由到书稿章节，无一成为命题 |
-| `NODE-AI-REASONING` | **engineered_not_active** | 三张 AI patch 中仅 AIGOAL01 有 hook 且全 pending；AIREASON01 / AIEVID01 无 hook |
-| `NODE-NEURAL-DECODABILITY` | **engineered_not_active** | 十张 patch、五张 hook 全 pending；合成落点文件从未创建；NEURAL18 无 hook |
-| `NODE-LIFE-DISSIPATIVE` | partially_active | G2 分层裁决已进活跃层；T-E 桥本身仍缺一手物理证据卡 |
-| `NODE-PHYSICS-MEASUREMENT` | **engineered_not_active** | 三张 hook 指向从未创建的 `Physics/SRT_Physics_Bridge_v0_2.md`；四张 patch 无 hook |
-| `NODE-SOCIAL-L2` | partially_active | SEA 制度配对审计与编码手册仅在 Operations 层 |
-| `NODE-ENTROPY-REORG` | partially_active | T-B 过程层与痛苦类型学接口仍只在 bridge，无快速层 |
-| `NODE-BOOK-BACKFLOW` | **engineered_not_active** | 三个书稿术语无任何理论 owner |
+| `NODE-CHOICE-GENERATION` | **active_complete** | — |
+| `NODE-SELECTION-ONTOLOGY` | **active_complete** | — |
+| `NODE-L0-L1-L2` | **active_complete** | — |
+| `NODE-PSI-F` | **active_complete** | — |
+| `NODE-T-DIR` | partially_active | **EA-2**：PH_AG02／PH_AG03 的增量已裁决但未写进 `_SRT_T_DIR_CANONICAL.md`（其内容 0 命中） |
+| `NODE-GHOST-OPERATOR` | partially_active | **EA-1**：三张 ghost source card 从未压成命题（`Core_21_Minimal_Axioms.md`、`_SRT_SYMBOL_TABLE.md` 各 0 命中） |
+| `NODE-SUBJECTHOOD` | partially_active | **EA-4**：`SRT_Philosophy_Agency_Subjecthood_v0_2.md` 在 8 个 bundle 中出现 **0** 次 |
+| `NODE-CONSCIOUSNESS` | partially_active | **EA-1**：五张 2026-08-05 源卡的反向修正在任何快速层中 0 命中 |
+| `NODE-LIFE-DISSIPATIVE` | partially_active | **EA-4**：只有 T-E 的分层裁决进了快速层；其"物理底座／组织机制／解释充分性"三分在任何 compact 中 0 命中 |
+| `NODE-SOCIAL-L2` | partially_active | **EA-2**：SEA 协议与编码手册只在 Operations 层；两个候选 owner 各 0 命中 |
+| `NODE-ENTROPY-REORG` | partially_active | **EA-4**：T-B 过程层与痛苦类型学接口在任何 CompactCore 中 0 命中 |
+| `NODE-AI-REASONING` | engineered_not_active | **EA-2**：AIREASON01／AIEVID01 停在 patch 层无 hook；AIGOAL01 的 hook 全 pending |
+| `NODE-NEURAL-DECODABILITY` | engineered_not_active | **EA-2**：五张 hook 全 pending；NEURAL18 无 hook；合成落点文件从未创建 |
+| `NODE-PHYSICS-MEASUREMENT` | engineered_not_active | **EA-2**：三张 hook 指向不存在的 `Physics/SRT_Physics_Bridge_v0_2.md`；P06/P07/P08/REP01 无 hook |
+| `NODE-BOOK-BACKFLOW` | engineered_not_active | **EA-2**：第三态能动性／被排开者去向三分／自检三问**没有任何理论 owner** |
+| `NODE-D-VALUE` | author_gate | RQ-2026-08-A02 未裁；`d/q/o` 对书稿、公共内容、bridge、论文禁运 |
 
-**统计**：`effectively_assimilated` **1** / `partially_active` **10** / `engineered_not_active` **4** / `author_gate` **1**。
+**Axis A 统计**：`active_complete` **4** ／ `partially_active` **7** ／ `engineered_not_active` **4** ／ `author_gate` **1**。
 
-`archived_only`、`conflict_with_active_text`、`rejected_or_parked` 三种状态本轮**未使用**：前者的实例（ghost cards、对话材料）已被吸收进相关节点的 `next_step` 描述而未单列节点；后两者本轮没有发现符合的实例——这不等于不存在，只等于本轮 16 节点范围内未发现。
+`archived_only`、`conflict_with_active_text`、`rejected_or_parked` 本轮未使用——不等于不存在，只等于本轮 16 节点范围内未发现符合的实例。
 
-### 4.1 一个必须点名的普遍缺口
+### 4.2 初版的错误结论与更正
 
-**16 个节点中，14 个的 `partially_active` 或更低状态，是被同一项拦下的：没有行为回归测试（EA-5）。**
+> 初版写："14 个节点被同一项拦住：没有行为回归测试。"
 
-即使 owner、router、deep map、bundle 全部齐备（如 `NODE-SELECTION-ONTOLOGY`、`NODE-PSI-F`），也无法证明它改变了判断。这说明仓库此前**从未有过**"验证理论是否生效"的手段——只有"验证理论是否存在"的手段。
+**这是错的。** 逐条核对后，只有 3 个节点（`SELECTION-ONTOLOGY`、`L0-L1-L2`、`PSI-F`）加上试点节点，是"结构已完整、只缺行为验证"。其余 12 个中：
 
----
+- **7 个** 在 EA-1／EA-2／EA-4 就被拦下——**给它们写回归测试不会改变 Axis A 状态**；
+- **4 个** 连 owner 都没进（`engineered_not_active`）；
+- **1 个** 是作者门。
+
+换句话说：初版把"没有行为测试"当成了普遍瓶颈，实际上对四分之三的节点而言，行为测试根本轮不到成为瓶颈。
+
+"仅缺 EA-5"这个说法，**只对 4 个节点成立**。
 
 ## 5. 有效吸收的五项判据（EA-1…EA-5）
 
@@ -209,7 +259,20 @@ canonical anchors（`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_
 | **EA-4** | 处理旧表述：记录旧表述、新表述、修改原因、旧表述仍适用的范围、需同步的 CompactCore | 是（记录是否存在） |
 | **EA-5** | 行为回归测试通过：设计问题证明下一轮判断会改变 | 是（测试是否存在且数量达标） |
 
-`scripts/check_active_theory_assimilation.py` 检 EA-2…EA-5 的**载体**，不检 EA-1 的**实质**。绿色只意味着"结构上没有缺件"，不意味着"理论是好的"。
+### 5.1 检查器的边界（2026-08-07 收紧）
+
+| 检查类型 | 谁做 | 内容 |
+|---|---|---|
+| **structural check** | `scripts/check_active_theory_assimilation.py`，可进 CI | owner 存在；router／deep map 锚点解析且**确实点名**该节点的文件；快速层存在；bundle manifest 生效；旧表述处理有记录；回归套件存在且非空 |
+| **behavioral check** | **不可静态验证** | 检查器**不得**因回归文件存在就判 `passed`。无实跑证据时，CI 能报的最强结论是 `behavior_validation = untested` |
+
+具体实现的三条硬规则：
+
+1. 检查器**从不设置** Axis B，只读取并校验它；
+2. 任何 `behavior_validation ∈ {passed, mixed, failed}` 必须同时给出 `behavior_evidence`，且该文件必须存在——否则报错；
+3. `active_complete` 与 `passed` 是两个独立断言，检查器不会由前者推出后者。
+
+绿色只意味着"结构上没有缺件"，不意味着"理论是好的"，更不意味着"已被验证会改变判断"。EA-1（是否形成真正的原生命题）是内容判断，不可机检。
 
 ---
 
@@ -247,9 +310,13 @@ canonical anchors（`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_
 | 有 patch 的材料 | 31 | 已形成域内 bounded 补丁 |
 | 有 hook 的 patch | 24 | 已有落点账 |
 | hook `landed` | 12 | 内容已进入 owner 文件正文 |
-| **节点级 `effectively_assimilated`** | **1**（16 个节点中） | 已进入活跃层且可验证改变判断 |
+| 节点级 Axis A `active_complete` | **4**（16 个节点中） | 结构齐备：原生命题／owner／检索路径／快速层／旧表述处理 |
+| 节点级 Axis B `passed` | **0** | 有实跑证据表明判断确实改变 |
+| **`effectively_assimilated`（推导）** | **0** | 两轴同时满足 |
 
-这五个数字**不可互相替代**。此前把第一个数字当作"融合进度"的做法，会把 130 读成"130 条材料已进入 SRT 理论"——实际含义只是"130 条材料已被裁决并归档到某处"。
+这七个数字**不可互相替代**。此前把第一个当作"融合进度"，会把 130 读成"130 条材料已进入 SRT 理论"——实际含义只是"130 条材料已被裁决并归档到某处"。
+
+而 2026-08-07 的实跑给出了第二个教训：**第五个数字也不能替代第六个**。`active_complete` 只说结构齐备，唯一一个做过实跑的节点得到的是 `mixed`，不是 `passed`。
 
 ---
 
@@ -265,25 +332,26 @@ canonical anchors（`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_
 6. 四张 ghost / 阴阳 / 代理对象 / 协调身份 continuation card（各自停在未决问题）；
 7. 三个未回流的书稿术语（第三态能动性、被排开者去向三分、自检三问）；
 8. T-B / T-E 桥的跨域压力测试结论（首轮已建，压测未完成）；
-9. 本轮试点的 `CG-0..CG-4` 门槛值本身——它们是审计默认约定，不是已证定理（见 `Core/SRT_OPEN_TENSIONS.md §14`）。
+9. 本轮试点的 `CG-0..CG-4` 门槛值本身——它们是审计默认约定，不是已证定理（见 `Core/SRT_OPEN_TENSIONS.md §14`）；
+10. **`NODE-CHOICE-GENERATION` 本身**。它的 Axis A 是 `active_complete`，Axis B 是 `mixed`，推导标签为 **false**。不得称它 effectively assimilated，也不得说 PR #744 已证明活跃层改变了判断。
 
 ---
 
 ## 9. 按理论收益排序的后续施工队列
 
-排序依据是**该节点被补通后，能改变多少类实际判断**，不是文件数量。
+**2026-08-07 重排。** 上一版按"活跃层缺口大小"排序。实跑证据推翻了那个排序依据：`NODE-CHOICE-GENERATION` 的活跃层缺口很大，补通之后行为差分却是零——因为内容此前已经通过依赖链事实上可达。
 
-| 序 | 节点 | 为什么排这里 | 前置 |
-|---:|---|---|---|
-| 1 | `NODE-SUBJECTHOOD` | agency owner 已有四张 patch 落地却**不在任何 bundle 中**——投入最少、落差最大。主体性判断是最高频的一类问题 | 无 |
-| 2 | `NODE-AI-REASONING` | 与试点节点直接相邻：`PEF-0/PEF-1` 的区分已进活跃层，但 AI 侧的 capability–propensity、reasoning trace 与 evidence provenance 三张 patch 仍在 patch 层 | AIREASON01 / AIEVID01 补 hook（作者裁决 §10.3） |
-| 3 | `NODE-CONSCIOUSNESS` | 五张 2026-08-05 源卡的**反向修正**（affective salience ≠ `d`、meta-awareness ≠ `T_dir`、模型拟合 ≠ 理论判别）都是护栏型命题，成本低、防误判收益高 | 无 |
-| 4 | `NODE-ENTROPY-REORG` | T-B 过程层是试点节点的直接上游；痛苦类型学接口目前无快速层 | 无 |
-| 5 | `NODE-BOOK-BACKFLOW` | 三个术语要么进理论 owner，要么明确判为只属书稿——当前的悬空状态会让 AI 在书稿与理论之间摇摆 | 需作者判定三者的理论地位 |
+新的排序依据是**预期行为差分**，即"基线做不到、补完之后能做到"的差距：
 
-`NODE-D-VALUE`（作者门）、`NODE-PHYSICS-MEASUREMENT` 与 `NODE-NEURAL-DECODABILITY`（等落点裁决）不进入此队列，因为它们的阻塞点不是工作量。
+| 序 | 节点 | 缺口性质 | 预期行为差分 | 理由 |
+|---:|---|---|---|---|
+| 1 | `NODE-AI-REASONING` | **内容缺口** | **较大** | AIREASON01（reasoning trace 与真实机制分离）与 AIEVID01（证据来源 stake gate）的内容**不在任何 owner 里**，只在 patch 里，且这两张 patch 连 hook 都没有。基线无论怎么走依赖链都拿不到——因为没有依赖链指向它们。这是**真的没有**，不是"没有声明式入口"。 |
+| 2 | `NODE-CONSCIOUSNESS` | 内容缺口 | 中 | 五张 2026-08-05 源卡的反向修正（affective salience ≠ `d`、meta-awareness ≠ `T_dir`、模型拟合 ≠ 理论判别）在任何快速层中 0 命中，且这些源卡不在任何依赖链上。 |
+| 3 | `NODE-BOOK-BACKFLOW` | 内容缺口 | 中 | 三个术语没有任何理论 owner。基线不可能答对"第三态能动性在理论层是什么"，因为答案不存在。 |
+| 4 | `NODE-SUBJECTHOOD` | **纯路由/装载缺口** | **可能很小** | owner 内容完整、四张 patch 已落地、Philosophy 目录可列举。按本轮教训，这**大概率**是又一个"基线已经能答对"的节点。**施工前必须先跑基线探针**。 |
+| 5 | `NODE-ENTROPY-REORG` | 混合 | 小到中 | T-B 与痛苦类型学在 bridge 里，且在依赖链上——基线很可能拿得到。 |
 
----
+**强制前置协议（本轮新增）**：任何节点在立项做活跃层之前，**先跑一次基线探针**——用该节点的判别问题在 `main` 上跑一个干净会话。基线能答对的，不按"活跃层缺口"立项。本轮是建完才发现基线已达标，顺序反了，这个错误不应重复。
 
 ## 10. 需要作者拍板
 
@@ -321,10 +389,11 @@ uv run python scripts/check_active_theory_assimilation.py --reachability \
 
 1. **可达性指标偏宽松**。它只问"有没有被命名"，一次 `BRIDGE_INDEX.md` 的表格提及即算可达。但 `BRIDGE_INDEX.md` 自身此前只通过 `_SRT_AGENT_RETRIEVAL_PROFILE.md` 的一行**错误分类**可达。因此**真实可达性低于 78.7% 所暗示的水平**——T-D 桥在本轮前按此指标算"可达"，实际没有任何路由会把选择判断类问题送到它那里。
 2. **数字变化小不代表改动小**。本轮只有 1 个文件从"无人命名"变为"被命名"，但节点级的变化是：一类高频问题从**无路由**变为有路由 + 有快速层 + 有 bundle + 有 12 道回归题。指标不度量这个。
-3. **节点清单是人工的**。16 个节点由本轮判断划定，不是从仓库自动导出，可能遗漏节点或切分不当。可达性调查是它的无偏补充，但两者都不是完备普查。
-4. **EA-1 不可机检**。"是否形成 SRT 原生命题"是内容判断，检查器只验证载体。
-5. **未覆盖**：`Papers/` 内部的理论一致性、`Spirituality/` 域、`90_Backstage/` 停驻区、书稿正文自身的理论一致性。
-6. **Material Log 计数差**。STATUS 记 207（A 130 / B 27 / C 50），按表格列解析得 211（A 132 / B 29 / C 50）。差值 4 条未对账，本审计沿用 STATUS 口径并标注该差异。
+3. **可达性指标完全没有计入 frontmatter `dependency:` 链**（2026-08-07 新增，最重要的一条）。指标只问"是否被活跃表面文件按文件名提及"。但两条件实跑显示，基线会话是靠 `STATUS.md` 权威锚点 + 目录列举 + `dependency:` 字段拿到全部关键文件的——那条路径完全不在指标视野内。因此 **75/94（80.6%）"不可达"这个数字高估了不可达程度**，不应被引用为"八成内容读不到"。它准确度量的是"没有声明式入口指向"，不是"读不到"。
+4. **节点清单是人工的**。16 个节点由本轮判断划定，不是从仓库自动导出，可能遗漏节点或切分不当。可达性调查是它的无偏补充，但两者都不是完备普查。
+5. **EA-1 不可机检**。"是否形成 SRT 原生命题"是内容判断，检查器只验证载体。
+6. **未覆盖**：`Papers/` 内部的理论一致性、`Spirituality/` 域、`90_Backstage/` 停驻区、书稿正文自身的理论一致性。
+7. **Material Log 计数差**。STATUS 记 207（A 130 / B 27 / C 50），按表格列解析得 211（A 132 / B 29 / C 50）。差值 4 条未对账，本审计沿用 STATUS 口径并标注该差异。
 
 ---
 

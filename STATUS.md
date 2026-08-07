@@ -29,7 +29,14 @@ updated: 2026-08-07
 - SEA 编码手册已达到 pilot-ready，但独立编码可靠性试验暂缓；PR #738 已按 deferred 关闭。
 - 休眠层（AI / Neuroscience / Physics / Spirituality）继续按“带冻结戳的图书馆”治理；材料可进入桥、卡片和索引，但不自动触发 canonical 或正文升级。
 - 停驻内容统一看 `_SRT_PARKED_INDEX.md`；最新作者排期以 `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` 为准。
-- **"材料已融入"的判据自 2026-08-06 起收紧**：verdict A、SourceCard、Material Log 登记、patch、hook 有 target 均只证明**档案化／工程化**，不证明进入理论。理论生效需同时满足原生命题、活跃 owner、AI 检索路径、旧表述处理与行为回归测试五项。全仓状态见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`，节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`。当前 16 个理论节点中 **1 个** 达到 `effectively_assimilated`。
+- **"材料已融入"的判据自 2026-08-06 起收紧，2026-08-07 再拆为两个轴**：verdict A、SourceCard、Material Log 登记、patch、hook 有 target 均只证明**档案化／工程化**，不证明进入理论。
+  - **Axis A `assimilation_state`**（结构，可静态检查）：理论增量走到哪了。`active_complete` 要求原生命题／活跃 owner／检索路径／快速层可读／旧表述已处理五项齐备。
+  - **Axis B `behavior_validation`**（行为，**只能由实跑设定**）：新会话是否已被证明会因此改变判断。**回归套件存在不等于回归套件通过**；CI 永远只能报 `untested`。
+  - `effectively_assimilated` 是两轴的**推导值**，不得手写。
+  - 当前 16 节点：Axis A `active_complete` **4** ／ `partially_active` 7 ／ `engineered_not_active` 4 ／ `author_gate` 1；Axis B `passed` **0** ／ `mixed` 1 ／ `untested` 14 ／ `not_applicable` 1。**没有任何节点是 `effectively_assimilated`。**
+  - 唯一做过实跑的节点是 `NODE-CHOICE-GENERATION`：两条件对照下 PR 条件 18 题全对，但**基线也全对**，差分为零 → `mixed`。因此**不得**声称活跃层已被证明改变判断。
+  - **强制前置协议**：任何节点在立项做活跃层之前，先跑基线探针；基线能答对的，不按"活跃层缺口"立项。
+  - 全仓状态见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`，节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`，行为实跑记录见 `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md`。
 
 ## 当前仓库状态
 
@@ -65,6 +72,14 @@ updated: 2026-08-07
 - 生理 synchrony 继续只按领域可测机制使用，不恢复为跨层级 SRT primitive，也不复活 selective-resynchronization 构念；一般跨层过程仍使用“选择性再组织”。
 - 形成 P4 `Phase x Stake` 差异预测，以及 matched-coupling/different-recovery、state-switch accessibility、selection-vs-plasticity eligibility dissociation 三组补充测试。
 - SourceCard、patch、landing-ledger hook、Material Log、两级索引与 registries 已同步；canonical `d` / `Psi_f` / `T_dir` / Core axioms 和休眠 owner 正文未修改。
+
+### 2026-08-07 · 行为回归实跑与两轴状态模型
+
+- 状态拆为两轴：`assimilation_state`（结构，可静态检查）与 `behavior_validation`（行为，**只能由实跑设定**）；`effectively_assimilated` 改为推导值。检查器现在拒绝任何无实跑证据的行为结论。
+- 16 节点重新分类。**更正 2026-08-06 的错误结论**："14 个节点被同一项拦住：没有行为回归测试"是错的——只有 4 个节点结构完整，其余多数在 EA-1/EA-2/EA-4 就被拦下。
+- 完成两条件行为回归（18 题：12 回归 + 6 分布外迁移）。**PR 条件 18/18，基线也 18/18，差分为零。**
+- **更正 2026-08-06 的核心诊断**：初版称新会话"读不到"选择事件材料。实跑证伪——基线经 `STATUS.md` 权威锚点 → 目录列举 → frontmatter `dependency:` 链拿到了全部关键文件。准确说法是缺**声明式**可达性，不是缺可达性；80.6% 可达性缺口这个数字因未计入依赖链而高估。
+- `NODE-CHOICE-GENERATION` 最终状态：`active_complete` + `mixed` → **不是** effectively assimilated。
 
 ### 2026-08-06 · 活跃理论吸收审计与选择事件节点试点
 

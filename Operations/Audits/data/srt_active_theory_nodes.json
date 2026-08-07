@@ -2,19 +2,9 @@
   "schema_version": 1,
   "manifest_id": "SRT-ACTIVE-THEORY-NODES",
   "generated_for": "Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md",
-  "updated": "2026-08-06",
+  "updated": "2026-08-07",
   "canonical": false,
   "role": "Hand-maintained list of SRT theory nodes and where each one actually lives on the AI-active retrieval surface. Read by scripts/check_active_theory_assimilation.py and scripts/build_srt_context_bundles.py. This file routes and records; it never defines.",
-  "status_enum": [
-    "archived_only",
-    "engineered_not_active",
-    "partially_active",
-    "effectively_assimilated",
-    "conflict_with_active_text",
-    "author_gate",
-    "rejected_or_parked"
-  ],
-  "status_rule": "effectively_assimilated requires all five EA criteria (native proposition, active owner, retrieval path, old-formulation handling, behavior regression tests). Missing regression tests alone caps a node at partially_active.",
   "nodes": [
     {
       "node_id": "NODE-CHOICE-GENERATION",
@@ -29,13 +19,19 @@
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#23a",
       "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#19a",
       "bundle": true,
-      "regression_tests": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+      "regression_tests": [
+        "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
+      ],
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
       "old_text_handled": "SRT_AI_START.md Real Choice Moment entry: negative-list-only pointer replaced with negative list plus positive discrimination pointer and three fast negatives. _SRT_AGENT_RETRIEVAL_PROFILE.md: 03_Bridges no longer described as adjacent-theory translation only.",
       "author_gates": [],
-      "assimilation_status": "effectively_assimilated",
-      "next_step": "Run the 12 regression questions against a fresh session that loads only the AGENTS.md entry order; record divergences.",
-      "notes": "Pilot node for the 2026-08-06 assimilation pass. Claim level P2-P3 throughout; passing five gates licenses only 'bounded selection-event candidate'."
+      "next_step": "Absolute performance passed (18/18 in Condition B) but the baseline scored the same, so no differential effect was shown. Do not re-run this suite against the same baseline; either design questions the baseline provably cannot answer, or accept that this node's content was already reachable via STATUS anchors and frontmatter dependency chains.",
+      "notes": "Pilot node for the 2026-08-06 assimilation pass. Claim level P2-P3 throughout; passing five gates licenses only 'bounded selection-event candidate'. The 2026-08-07 two-condition run falsified the audit's premise that a fresh session could not reach this material on main.",
+      "assimilation_state": "active_complete",
+      "active_complete_blockers": [],
+      "behavior_validation": "mixed",
+      "behavior_evidence": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md"
     },
     {
       "node_id": "NODE-SELECTION-ONTOLOGY",
@@ -53,11 +49,14 @@
       "bundle": true,
       "regression_tests": null,
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#13",
-      "old_text_handled": "n/a",
+      "old_text_handled": "none-required: the node's active content is long-standing canonical; the pending increment (GOV-SUB01 deletion test) has never been executed, so nothing has been superseded.",
       "author_gates": [],
-      "assimilation_status": "partially_active",
       "next_step": "GOV-SUB01 deletion test for the selection primitive has never been executed; residue register stays UNASSIGNED. No regression tests exist.",
-      "notes": "Well routed and bundled; capped at partially_active only by the missing EA-5 layer."
+      "notes": "Well routed and bundled; capped at partially_active only by the missing EA-5 layer.",
+      "assimilation_state": "active_complete",
+      "active_complete_blockers": [],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-L0-L1-L2",
@@ -74,10 +73,13 @@
       "bundle": true,
       "regression_tests": null,
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#4",
-      "old_text_handled": "n/a",
+      "old_text_handled": "none-required: no formulation was superseded this pass; the open exposures (OPEN_TENSIONS 4, 7) are registered rather than replacing prior text.",
       "author_gates": [],
-      "assimilation_status": "partially_active",
-      "next_step": "P0-04 origin of selectability remains open (OPEN_TENSIONS 7); no regression tests."
+      "next_step": "P0-04 origin of selectability remains open (OPEN_TENSIONS 7); no regression tests.",
+      "assimilation_state": "active_complete",
+      "active_complete_blockers": [],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-D-VALUE",
@@ -98,9 +100,14 @@
       "author_gates": [
         "RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol"
       ],
-      "assimilation_status": "author_gate",
       "next_step": "d/q/o embargo holds: the three-axis rewrite must not enter book, public content, bridge, or paper before the author decides. Bundle guardrail G2 already carries the embargo.",
-      "notes": "The 2026-07-23..25 conversation materials are archived and their own closing audit records that every route is a candidate and none landed."
+      "notes": "The 2026-07-23..25 conversation materials are archived and their own closing audit records that every route is a candidate and none landed.",
+      "assimilation_state": "author_gate",
+      "active_complete_blockers": [
+        "RQ-2026-08-A02 undecided; d/q/o embargoed from book, public content, bridge and paper"
+      ],
+      "behavior_validation": "not_applicable",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-PSI-F",
@@ -117,10 +124,13 @@
       "bundle": true,
       "regression_tests": null,
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#2",
-      "old_text_handled": "n/a",
+      "old_text_handled": "none-required: Fisher and Landauer already appear in _SRT_PSI_F_CANONICAL.md as conditional projections with their own guards; the unaccepted EC cards add pressure, not a replacement.",
       "author_gates": [],
-      "assimilation_status": "partially_active",
-      "next_step": "Fisher/Landauer evidence cards (EC-IG-FISHER-PSIF, EC-THERMO-LANDAUER-SELECTION-COST) remain draft_v1 and unaccepted; no regression tests."
+      "next_step": "Fisher/Landauer evidence cards (EC-IG-FISHER-PSIF, EC-THERMO-LANDAUER-SELECTION-COST) remain draft_v1 and unaccepted; no regression tests.",
+      "assimilation_state": "active_complete",
+      "active_complete_blockers": [],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-T-DIR",
@@ -140,8 +150,13 @@
       "author_gates": [
         "Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization"
       ],
-      "assimilation_status": "partially_active",
-      "next_step": "PH_AG02 and PH_AG03 writebacks to _SRT_T_DIR_CANONICAL.md remain unlanded; bundle guardrail G3 already reports this."
+      "next_step": "PH_AG02 and PH_AG03 writebacks to _SRT_T_DIR_CANONICAL.md remain unlanded; bundle guardrail G3 already reports this.",
+      "assimilation_state": "partially_active",
+      "active_complete_blockers": [
+        "EA-2: PH_AG02/PH_AG03 increments adjudicated but not written into _SRT_T_DIR_CANONICAL.md (0 matches for their content)"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-GHOST-OPERATOR",
@@ -159,8 +174,13 @@
       "open_tension": null,
       "old_text_handled": "n/a",
       "author_gates": [],
-      "assimilation_status": "partially_active",
-      "next_step": "Ghost source-intuition cards (nonclosure pressure, yin-yang object friction, U5 correction) are archived only and have never been compressed into propositions for this node."
+      "next_step": "Ghost source-intuition cards (nonclosure pressure, yin-yang object friction, U5 correction) are archived only and have never been compressed into propositions for this node.",
+      "assimilation_state": "partially_active",
+      "active_complete_blockers": [
+        "EA-1: three ghost source cards never compressed into propositions (0 matches in Core_21_Minimal_Axioms.md or _SRT_SYMBOL_TABLE.md)"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-SUBJECTHOOD",
@@ -179,9 +199,14 @@
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#5",
       "old_text_handled": "n/a",
       "author_gates": [],
-      "assimilation_status": "partially_active",
       "next_step": "Agency owner is not in any context bundle; four PH_AG patches landed there but the file is unreachable by default load. Route 23 points primarily at parked incubation files.",
-      "notes": "P1-T07 stable-ISP proof gap is carried by bundle guardrail G1."
+      "notes": "P1-T07 stable-ISP proof gap is carried by bundle guardrail G1.",
+      "assimilation_state": "partially_active",
+      "active_complete_blockers": [
+        "EA-4: Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md appears in 0 of 8 context bundles"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-CONSCIOUSNESS",
@@ -200,8 +225,13 @@
       "open_tension": null,
       "old_text_handled": "n/a",
       "author_gates": [],
-      "assimilation_status": "partially_active",
-      "next_step": "Five 2026-08-05 consciousness source cards (Da Costa, van Mulukom, Houdoyer, Bryant-Whyte, Luppi) are B1/B2 and route to book chapters only; none has been compressed into a proposition for this node."
+      "next_step": "Five 2026-08-05 consciousness source cards (Da Costa, van Mulukom, Houdoyer, Bryant-Whyte, Luppi) are B1/B2 and route to book chapters only; none has been compressed into a proposition for this node.",
+      "assimilation_state": "partially_active",
+      "active_complete_blockers": [
+        "EA-1: the five 2026-08-05 source cards' reverse corrections are in no compact layer (0 matches in SRT_Consciousness_Mechanisms_CompactCore.md)"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-AI-REASONING",
@@ -219,8 +249,13 @@
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#6",
       "old_text_handled": "Partly: the selection-event compact now supplies the PEF-0/PEF-1 distinction that AI questions most often need.",
       "author_gates": [],
-      "assimilation_status": "engineered_not_active",
-      "next_step": "Three AI patches (AIGOAL01, AIREASON01, AIEVID01) exist; only AIGOAL01 has a hook and it is fully pending. AIREASON01 and AIEVID01 have no hook and no ledger row for the Quanta source. None has reached the AI compact core."
+      "next_step": "Three AI patches (AIGOAL01, AIREASON01, AIEVID01) exist; only AIGOAL01 has a hook and it is fully pending. AIREASON01 and AIEVID01 have no hook and no ledger row for the Quanta source. None has reached the AI compact core.",
+      "assimilation_state": "engineered_not_active",
+      "active_complete_blockers": [
+        "EA-2: AIREASON01 and AIEVID01 stop at the patch layer with no hook; AIGOAL01's hook is fully pending"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-NEURAL-DECODABILITY",
@@ -241,8 +276,13 @@
       "author_gates": [
         "Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core"
       ],
-      "assimilation_status": "engineered_not_active",
-      "next_step": "Ten neuro patches exist; five hooks are fully pending and one names a synthesis file that has never been created. NEURAL18 has no hook."
+      "next_step": "Ten neuro patches exist; five hooks are fully pending and one names a synthesis file that has never been created. NEURAL18 has no hook.",
+      "assimilation_state": "engineered_not_active",
+      "active_complete_blockers": [
+        "EA-2: five hooks fully pending; NEURAL18 has no hook; the named synthesis file was never created"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-LIFE-DISSIPATIVE",
@@ -256,12 +296,20 @@
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#23a",
       "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#19a",
       "bundle": true,
-      "regression_tests": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+      "regression_tests": [
+        "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
+      ],
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
       "old_text_handled": "Author decision G2 (dissipation is not equal to selection and not a universal necessary precursor) now reaches the active layer via the selection-event compact section 6 and regression test T-12.",
       "author_gates": [],
-      "assimilation_status": "partially_active",
-      "next_step": "T-E bridge itself still awaits first-hand physics evidence cards and cross-domain support/counterexamples; only its stratification verdict has reached the active layer."
+      "next_step": "T-E bridge itself still awaits first-hand physics evidence cards and cross-domain support/counterexamples; only its stratification verdict has reached the active layer.",
+      "assimilation_state": "partially_active",
+      "active_complete_blockers": [
+        "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches)"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-PHYSICS-MEASUREMENT",
@@ -281,8 +329,13 @@
       "author_gates": [
         "RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md"
       ],
-      "assimilation_status": "engineered_not_active",
-      "next_step": "Seven physics patches exist; three hooks point at a file that has never been created; four patches (P06, P07, P08, REP01) have no hook at all."
+      "next_step": "Seven physics patches exist; three hooks point at a file that has never been created; four patches (P06, P07, P08, REP01) have no hook at all.",
+      "assimilation_state": "engineered_not_active",
+      "active_complete_blockers": [
+        "EA-2: three hooks target Physics/SRT_Physics_Bridge_v0_2.md, which does not exist; P06/P07/P08/REP01 have no hook"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-SOCIAL-L2",
@@ -301,8 +354,13 @@
       "open_tension": null,
       "old_text_handled": "Partly: the CBP-3/CBP-4 outsourcing-chain distinction now reaches the active layer via the selection-event compact and regression test T-08.",
       "author_gates": [],
-      "assimilation_status": "partially_active",
-      "next_step": "The SEA institutional paired audits and the coding manual remain Operations-only; the method-paper strategy is a candidate and the reliability pilot is deferred."
+      "next_step": "The SEA institutional paired audits and the coding manual remain Operations-only; the method-paper strategy is a candidate and the reliability pilot is deferred.",
+      "assimilation_state": "partially_active",
+      "active_complete_blockers": [
+        "EA-2: SEA protocol and coding manual are Operations-only; 0 matches in SRT_Soc_03_Institutions.md or SRT_Collective_Selection.md"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-ENTROPY-REORG",
@@ -317,12 +375,20 @@
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#23a",
       "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#19a",
       "bundle": true,
-      "regression_tests": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+      "regression_tests": [
+        "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
+      ],
       "open_tension": "Core/SRT_OPEN_TENSIONS.md#12",
       "old_text_handled": "Author decision G1 (reselectability is a limited health criterion, not a necessary condition for a selection to occur) now reaches the active layer via the compact section 6 and regression test T-11.",
       "author_gates": [],
-      "assimilation_status": "partially_active",
-      "next_step": "T-B process layer and the pain/distress/suffering typology interface are still only in the bridge; the suffering typology has no compact layer."
+      "next_step": "T-B process layer and the pain/distress/suffering typology interface are still only in the bridge; the suffering typology has no compact layer.",
+      "assimilation_state": "partially_active",
+      "active_complete_blockers": [
+        "EA-4: T-B process layer and the pain/distress/suffering typology interface appear in no CompactCore"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     },
     {
       "node_id": "NODE-BOOK-BACKFLOW",
@@ -339,8 +405,47 @@
       "open_tension": null,
       "old_text_handled": "n/a",
       "author_gates": [],
-      "assimilation_status": "engineered_not_active",
-      "next_step": "The sync bridge classifies seven candidate term groups. Two (micro-valence, pre-trimming) have reached _SRT_D_VALUE_CANONICAL.md. Three (third-state agency, three-way fate of the displaced, three self-check questions) exist only in the book, the bridge, and exported Output files."
+      "next_step": "The sync bridge classifies seven candidate term groups. Two (micro-valence, pre-trimming) have reached _SRT_D_VALUE_CANONICAL.md. Three (third-state agency, three-way fate of the displaced, three self-check questions) exist only in the book, the bridge, and exported Output files.",
+      "assimilation_state": "engineered_not_active",
+      "active_complete_blockers": [
+        "EA-2: 第三态能动性 / 被排开者去向三分 / 自检三问 have no theory owner at all"
+      ],
+      "behavior_validation": "untested",
+      "behavior_evidence": null
     }
-  ]
+  ],
+  "axes": {
+    "assimilation_state": {
+      "question": "How far has the theory increment actually travelled through the repository's structure?",
+      "values": [
+        "archived_only",
+        "engineered_not_active",
+        "partially_active",
+        "active_complete",
+        "conflict_with_active_text",
+        "author_gate",
+        "rejected_or_parked"
+      ],
+      "active_complete_requires": [
+        "EA-1 a SRT native proposition, guardrail or registered tension exists",
+        "EA-2 it has entered an appropriate active owner",
+        "EA-3 a real retrieval path resolves to it",
+        "EA-4 a fast layer or default load path can read it",
+        "EA-5 the superseded formulation has been handled"
+      ],
+      "note": "active_complete is a claim about structure only. It never implies that any AI judgment actually changed."
+    },
+    "behavior_validation": {
+      "question": "Has a fresh session been shown to judge differently because of the active content?",
+      "values": [
+        "untested",
+        "passed",
+        "mixed",
+        "failed",
+        "not_applicable"
+      ],
+      "note": "Only a recorded, traceable run of the node's behavior suite may set this away from untested. The existence of a test file is not a result. CI cannot set this field."
+    }
+  },
+  "derived_status_rule": "effectively_assimilated := assimilation_state == 'active_complete' AND behavior_validation == 'passed'. It is computed, never stored. No file may hand-write a final label that contradicts the two axes."
 }

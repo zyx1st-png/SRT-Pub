@@ -21,10 +21,25 @@ Design constraints
   third-party import would fail there and pass locally -- the worst failure mode.
 * A hook, a patch, or a searchable file is **never** counted as assimilation.
 
-The five checks mirror the EA-1..EA-5 criteria of the 2026-08-06 audit, minus
-EA-1, which is a judgement about content and cannot be mechanized. The checker
-therefore verifies the *carriers* of assimilation, not its substance; a green
-result means "nothing structural is missing", not "the theory is good".
+Two axes, and the checker may only touch one of them
+---------------------------------------------------
+`assimilation_state` (Axis A) asks how far an increment travelled through the
+repository's structure. That is statically checkable and this script checks it.
+
+`behavior_validation` (Axis B) asks whether a fresh session was *shown* to judge
+differently. That is not statically checkable. The presence of a regression-test
+file proves a suite was written, not that it was run or that it passed, so this
+script will **refuse** to let a node claim anything but `untested` unless the
+manifest also carries a `behavior_evidence` pointer to a recorded run. It never
+sets Axis B itself. Conflating the two is the exact error this pass exists to
+correct.
+
+`effectively_assimilated` is therefore derived, never stored:
+`assimilation_state == "active_complete" and behavior_validation == "passed"`.
+
+EA-1 (is there a genuine native proposition?) is a judgement about content and
+cannot be mechanized. The checker verifies the *carriers*, not the substance; a
+green result means "nothing structural is missing", not "the theory is good".
 """
 
 from __future__ import annotations
@@ -40,14 +55,20 @@ ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "Operations" / "Audits" / "data" / "srt_active_theory_nodes.json"
 BUNDLE_DIR = ROOT / "Operations" / "Context_Bundles"
 
-# A node may only be called effectively_assimilated when every carrier is present.
-FULL_BAR = "effectively_assimilated"
+# Axis A value that means every structural carrier is present.
+STRUCTURAL_BAR = "active_complete"
+# Axis B values. `passed`/`mixed`/`failed` all require recorded evidence.
+NEEDS_EVIDENCE = {"passed", "mixed", "failed"}
+VALIDATION_VALUES = {"untested", "passed", "mixed", "failed", "not_applicable"}
 MIN_REGRESSION_TESTS = 8
 
 CSV_COLUMNS = [
     "node_id",
     "title",
-    "assimilation_status",
+    "assimilation_state",
+    "behavior_validation",
+    "effectively_assimilated",
+    "active_complete_blockers",
     "active_owners_ok",
     "compact_layer",
     "compact_ok",
@@ -104,18 +125,49 @@ def bundle_files() -> dict[str, str]:
     return {p.name: p.read_text(encoding="utf-8", errors="ignore") for p in BUNDLE_DIR.glob("*.md")}
 
 
-def count_regression_tests(rel: str | None) -> int:
-    if not rel:
-        return 0
-    text = read(rel)
-    if not text:
-        return 0
-    return len(re.findall(r"^##\s+T-\d+", text, re.M))
+def regression_suites(node: dict) -> list[str]:
+    """A node may carry several suites (e.g. an in-distribution one plus an
+    out-of-distribution transfer set). Accept both a string and a list."""
+    value = node.get("regression_tests")
+    if not value:
+        return []
+    return [value] if isinstance(value, str) else list(value)
+
+
+def count_regression_tests(rels: list[str]) -> tuple[int, list[str]]:
+    """Returns (total `## T-NN` blocks, suites that exist but contain none)."""
+    total = 0
+    empty: list[str] = []
+    for rel in rels:
+        text = read(rel)
+        if not text:
+            empty.append(f"{rel} (missing)")
+            continue
+        n = len(re.findall(r"^##\s+T-\d+", text, re.M))
+        if n == 0:
+            empty.append(rel)
+        total += n
+    return total, empty
 
 
 def check_node(node: dict, bundles: dict[str, str]) -> dict:
     problems: list[str] = []
-    status = node.get("assimilation_status", "")
+    state = node.get("assimilation_state", "")
+    validation = node.get("behavior_validation", "untested")
+    evidence = node.get("behavior_evidence") or ""
+
+    if validation not in VALIDATION_VALUES:
+        problems.append(f"behavior_validation not in the allowed set: {validation!r}")
+
+    # The load-bearing rule of this whole pass. A written suite is not a result.
+    if validation in NEEDS_EVIDENCE:
+        if not evidence:
+            problems.append(
+                f"behavior_validation={validation} without behavior_evidence; "
+                "a regression-test file existing is not a recorded run"
+            )
+        elif not (ROOT / evidence.split("#", 1)[0]).is_file():
+            problems.append(f"behavior_evidence points at a missing file: {evidence}")
 
     # --- EA-2: does every declared active owner exist? ---
     owners = node.get("active_owners") or []
@@ -162,28 +214,44 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     bundle_loaded = bool(needle) and any(needle in text for text in bundles.values())
 
     # --- EA-5: behavior regression tests ---
-    n_tests = count_regression_tests(node.get("regression_tests"))
-    if node.get("regression_tests") and n_tests == 0:
-        problems.append(f"regression test file has no `## T-NN` blocks: {node['regression_tests']}")
+    suites = regression_suites(node)
+    n_tests, empty_suites = count_regression_tests(suites)
+    for rel in empty_suites:
+        problems.append(f"regression suite has no `## T-NN` blocks: {rel}")
 
     # --- EA-4: old-formulation handling ---
+    # `n/a` is ambiguous between "assessed, nothing was superseded" and "nobody
+    # looked", so it does not count. A node with no superseded formulation must
+    # say so explicitly with `none-required: <reason>`.
     old_handled = node.get("old_text_handled") or ""
     old_ok = bool(old_handled) and old_handled != "n/a"
 
-    if status == FULL_BAR:
+    if state == STRUCTURAL_BAR:
         if not owners_ok:
-            problems.append("claims effectively_assimilated without a resolvable active owner")
+            problems.append("claims active_complete without a resolvable active owner (EA-2)")
         if not (router_ok or deep_ok):
-            problems.append("claims effectively_assimilated without a resolvable retrieval path")
+            problems.append("claims active_complete without a resolvable retrieval path (EA-3)")
         if not bundle_loaded:
-            problems.append("claims effectively_assimilated but no context bundle loads it")
-        if n_tests < MIN_REGRESSION_TESTS:
-            problems.append(
-                f"claims effectively_assimilated with {n_tests} regression tests "
-                f"(minimum {MIN_REGRESSION_TESTS})"
-            )
+            problems.append("claims active_complete but no default load path reads it (EA-4)")
         if not old_ok:
-            problems.append("claims effectively_assimilated without recording old-text handling")
+            problems.append("claims active_complete without recording old-text handling (EA-5)")
+        if node.get("active_complete_blockers"):
+            problems.append("claims active_complete while listing active_complete_blockers")
+    elif not node.get("active_complete_blockers"):
+        # A node below the bar must say what is holding it there, otherwise the
+        # manifest degrades into unexplained pessimism and nobody can act on it.
+        problems.append(f"assimilation_state={state} with no active_complete_blockers recorded")
+
+    # A behavior suite is required before Axis B can ever leave `untested`, but
+    # its size is an Axis B concern, not an Axis A one -- so this is checked
+    # against the validation claim, not against active_complete.
+    if validation in NEEDS_EVIDENCE and n_tests < MIN_REGRESSION_TESTS:
+        problems.append(
+            f"behavior_validation={validation} with only {n_tests} regression tests "
+            f"(minimum {MIN_REGRESSION_TESTS})"
+        )
+
+    derived = state == STRUCTURAL_BAR and validation == "passed"
 
     if declared_bundle and not bundle_loaded:
         problems.append("manifest says bundle: true but no generated bundle contains the node")
@@ -200,7 +268,10 @@ def check_node(node: dict, bundles: dict[str, str]) -> dict:
     return {
         "node_id": node.get("node_id", ""),
         "title": node.get("title", ""),
-        "assimilation_status": status,
+        "assimilation_state": state,
+        "behavior_validation": validation,
+        "effectively_assimilated": "yes" if derived else "no",
+        "active_complete_blockers": " | ".join(node.get("active_complete_blockers") or []),
         "active_owners_ok": "yes" if owners_ok else "no",
         "compact_layer": compact or "",
         "compact_ok": "yes" if compact_ok else ("n/a" if not compact else "no"),
@@ -310,25 +381,48 @@ def main() -> None:
 
     rows = [check_node(node, bundles) for node in manifest.get("nodes", [])]
 
-    tally: dict[str, int] = {}
+    axis_a: dict[str, int] = {}
+    axis_b: dict[str, int] = {}
     for row in rows:
-        tally[row["assimilation_status"]] = tally.get(row["assimilation_status"], 0) + 1
+        axis_a[row["assimilation_state"]] = axis_a.get(row["assimilation_state"], 0) + 1
+        axis_b[row["behavior_validation"]] = axis_b.get(row["behavior_validation"], 0) + 1
 
     print("== active theory assimilation ==")
+    print("   (Axis A = structural, statically checked. Axis B = behavioral, never set here.)\n")
     for row in rows:
         mark = "ok  " if not row["problems"] else "WARN"
-        print(f"{mark} {row['node_id']:<28} {row['assimilation_status']:<26} tests={row['regression_tests_count']:<3} bundle={row['bundle_loaded']}")
+        print(
+            f"{mark} {row['node_id']:<28} A={row['assimilation_state']:<22} "
+            f"B={row['behavior_validation']:<15} tests={row['regression_tests_count']:<3} "
+            f"bundle={row['bundle_loaded']}"
+        )
         if row["problems"]:
             for problem in row["problems"].split(" | "):
                 print(f"       - {problem}")
 
-    print("\n-- status tally --")
-    for status in manifest.get("status_enum", []):
-        if tally.get(status):
-            print(f"  {status}: {tally[status]}")
+    axes = manifest.get("axes", {})
+    print("\n-- Axis A: assimilation_state --")
+    for value in axes.get("assimilation_state", {}).get("values", sorted(axis_a)):
+        if axis_a.get(value):
+            print(f"  {value}: {axis_a[value]}")
+    print("\n-- Axis B: behavior_validation --")
+    for value in axes.get("behavior_validation", {}).get("values", sorted(axis_b)):
+        if axis_b.get(value):
+            print(f"  {value}: {axis_b[value]}")
 
-    assimilated = tally.get(FULL_BAR, 0)
-    print(f"\nnodes: {len(rows)}  effectively_assimilated: {assimilated}")
+    structural = axis_a.get(STRUCTURAL_BAR, 0)
+    derived = sum(1 for r in rows if r["effectively_assimilated"] == "yes")
+    untested_complete = sum(
+        1 for r in rows
+        if r["assimilation_state"] == STRUCTURAL_BAR and r["behavior_validation"] == "untested"
+    )
+    print(
+        f"\nnodes: {len(rows)}  active_complete: {structural}  "
+        f"of which behavior-untested: {untested_complete}  "
+        f"effectively_assimilated (derived): {derived}"
+    )
+    if derived == 0 and structural:
+        print("  note: structural completeness is not validation; no node has a recorded passing run.")
 
     if args.reachability:
         survey = reachability_survey()

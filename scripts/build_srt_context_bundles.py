@@ -674,42 +674,61 @@ def guard_active_theory() -> Guardrail:
     nodes = load_active_theory_nodes()
     bundled = set(active_theory_compacts())
 
+    def derived(node: dict) -> bool:
+        return (
+            node.get("assimilation_state") == "active_complete"
+            and node.get("behavior_validation") == "passed"
+        )
+
     rows = []
     for node in nodes:
-        status = node.get("assimilation_status", "")
-        if status == "effectively_assimilated":
+        if derived(node):
             continue
         compact = node.get("compact_layer") or "—"
         gates = "；".join(node.get("author_gates") or []) or "—"
         rows.append(
-            f"| `{node.get('node_id')}` | {status} | "
+            f"| `{node.get('node_id')}` | {node.get('assimilation_state', '')} | "
+            f"{node.get('behavior_validation', '')} | "
             f"{'`' + compact + '`' if compact != '—' else '—'} | {gates} |"
         )
     if not rows:
-        rows.append("| — | 全部节点均为 effectively_assimilated | — | — |")
+        rows.append("| — | 全部节点均已结构激活且行为验证通过 | — | — | — |")
 
     loaded = "\n".join(f"- `{f}`" for f in sorted(bundled)) or "- （无）"
-    assimilated = [n for n in nodes if n.get("assimilation_status") == "effectively_assimilated"]
+    assimilated = [n for n in nodes if derived(n)]
+    complete_untested = [
+        n for n in nodes
+        if n.get("assimilation_state") == "active_complete"
+        and n.get("behavior_validation") == "untested"
+    ]
 
     return Guardrail(
         gid="G5",
-        title="多数理论节点尚未进入活跃层",
+        title="多数理论节点未进入活跃层；进入的也未经行为验证",
         severity="中",
         affected="下表所列节点；这些节点的理论增量在本包中**不存在**，也不在任何默认读取路径上",
         extracts=[
             (
                 f"来自 `{ACTIVE_THEORY_MANIFEST}`（逐条抽取 `assimilation_status` 非 "
                 f"`effectively_assimilated` 的节点）",
-                "| node_id | 状态 | 快速层 | 作者门 |\n|---|---|---|---|\n" + "\n".join(rows),
+                "| node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |\n"
+                "|---|---|---|---|---|\n" + "\n".join(rows),
             )
         ],
         interpretation=(
-            f"清单共 {len(nodes)} 个节点，其中 **{len(assimilated)} 个**满足全部有效吸收判据。"
-            "其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——但那只证明它被"
+            f"清单共 {len(nodes)} 个节点。状态分**两个轴**，不可合并读：\n\n"
+            f"- **Axis A（结构）**：{len(complete_untested) + len(assimilated)} 个达到 "
+            f"`active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。\n"
+            f"- **Axis B（行为）**：**{len(assimilated)} 个**有已记录的通过运行。"
+            f"其余 {len(complete_untested)} 个结构完整的节点是 `untested`：**没有任何证据表明"
+            "它们真的改变了判断**。\n\n"
+            "`effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。"
+            "回归测试文件存在**不等于**回归测试通过。\n\n"
+            "其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——那只证明它被"
             "**保存**和**安排**了，不证明它进入了任何 AI 默认会读的文件。\n\n"
             "本包按清单额外装载了以下快速层（除各领域 CompactCore 之外）：\n\n"
             f"{loaded}\n\n"
-            "状态枚举的含义见清单 `status_enum` 与 "
+            "轴的含义见清单 `axes` 与 "
             "`Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`。"
         ),
         policy=(
@@ -717,7 +736,8 @@ def guard_active_theory() -> Guardrail:
             "先按清单的 `active_owners` 去取。\n"
             "- `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。\n"
             "- 额外装载的快速层均为 **P2-P3**，不得用于裁定任何 canonical 定义。\n"
-            "- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。"
+            "- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。\n"
+            "- 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。"
         ),
         policy_source=f"`{ACTIVE_THEORY_MANIFEST}` 的 `status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`",
     )
