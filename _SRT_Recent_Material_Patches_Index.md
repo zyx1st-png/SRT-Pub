@@ -203,21 +203,23 @@ selection event
 | NEURAL20 habit strategy–execution dissociation | `Neuroscience/patches/SRT_Neuro_NEURAL20_Habit_Strategy_Execution_Dissociation_v0_1.md` | separates strategy conversion, execution gain and reselection capacity | High |
 | NEURAL21 REM state-dependent metabolic payability | `Neuroscience/patches/SRT_Neuro_NEURAL21_REM_State_Dependent_Metabolic_Payability_v0_1.md` | separates metabolic supply, substrate, immediate use, payment and recovery across state transitions | High |
 | NEURAL22 astrocyte hierarchical information flow | `Neuroscience/patches/SRT_Neuro_NEURAL22_Astrocyte_Hierarchical_Information_Flow_v0_1.md` | adds intra-astrocytic hierarchy, dynamic hubs and local-to-global support admission to N12's intercellular glial topology | High |
+| NEURAL23 embodied rhythmic eligibility | `Neuroscience/patches/SRT_Neuro_NEURAL23_Embodied_Rhythmic_Eligibility_v0_1.md` | adds momentary phase-dependent selection eligibility before anchoring; separates selection opportunity from selection weight/friction and from later plasticity eligibility | High |
 
 Recommended synthesis:
 
 ```text
-N10 -> rapid L1-to-L2 hardening mechanism
+N10 -> rapid L1-to-L2 hardening mechanism / plasticity eligibility
 N11 -> field-level ontology and measurement architecture
 N12 -> intercellular non-neuronal biological infrastructure
 NEURAL22 -> intra-astrocytic nested support topology and dynamic-center correction
+NEURAL23 -> pre-anchoring embodied rhythmic eligibility and Phase x Stake test
 NEURAL18-20 -> selection-readiness, resource admission, and script/reselection guards
 NEURAL21 -> state-dependent metabolic supply/payment separation
 
 Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
 ```
 
-NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL22 remain standalone bridge/guardrail patches with pending synthesis hooks.
+NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL23 remain standalone bridge/guardrail patches with pending synthesis hooks.
 
 NEURAL22 preserves:
 
@@ -230,6 +232,20 @@ whole-cell calcium recruitment
 != consciousness
 != d-value
 != healthy integration
+```
+
+NEURAL23 preserves:
+
+```text
+physiological synchrony
+!= cross-domain selective reorganization
+!= selection
+!= d-value / Psi_f
+!= consciousness / subjecthood
+
+eligibility to become current reality
+!=
+eligibility to enter history
 ```
 
 ---
