@@ -1,0 +1,45 @@
+{
+  "C_constructed": false,
+  "dV_by_cell": {
+    "S-high": 0.004270896315574646,
+    "S-low": 0.004350543022155762,
+    "T-high": 0.006114840507507324,
+    "T-low": 0.004539266228675842,
+    "X-high": 0.0061927735805511475,
+    "X-low": 0.006030052900314331
+  },
+  "integrity_by_cell": {
+    "S-high": 0.6499999999999997,
+    "S-low": 0.8499999999999999,
+    "T-high": 0.6499999999999997,
+    "T-low": 0.8499999999999999,
+    "X-high": 0.6499999999999997,
+    "X-low": 0.8499999999999999
+  },
+  "integrity_target_by_cell": {
+    "S-high": true,
+    "S-low": true,
+    "T-high": true,
+    "T-low": true,
+    "X-high": true,
+    "X-low": true
+  },
+  "manipulation": {
+    "TS_min_emp5_delta": 0.11194990179992348,
+    "TS_min_reach_delta": 0.0019095685816070684,
+    "TS_reach_pass": true,
+    "X_max_abs_emp5_delta": 0.0,
+    "X_max_abs_reach_delta": 0.0,
+    "X_uncoupled_pass": true,
+    "all_integrity_targets_pass": true
+  },
+  "rows": 18,
+  "success_by_cell": {
+    "S-high": 0.6666666666666666,
+    "S-low": 0.6666666666666666,
+    "T-high": 0.7083333333333334,
+    "T-low": 0.6666666666666666,
+    "X-high": 0.6041666666666666,
+    "X-low": 0.6875
+  }
+}
