@@ -244,18 +244,22 @@
       "router_anchor": "_SRT_CONTEXT_ROUTER.md#8",
       "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#10",
       "bundle": true,
-      "regression_tests": null,
+      "regression_tests": [
+        "Operations/Audits/SRT_CONSCIOUSNESS_BASELINE_PROBE_2026-08-08.md"
+      ],
       "open_tension": null,
       "old_text_handled": "n/a",
       "author_gates": [],
-      "next_step": "Five 2026-08-05 consciousness source cards (Da Costa, van Mulukom, Houdoyer, Bryant-Whyte, Luppi) are B1/B2 and route to book chapters only; none has been compressed into a proposition for this node.",
+      "next_step": "Two more independent bounded runs. If they hold, this is Case A: close the node at robustly_observed and do not build. Do not open construction on n=1.",
       "active_complete_blockers": [
-        "EA-1: the five 2026-08-05 source cards' reverse corrections are in no compact layer (0 matches in SRT_Consciousness_Mechanisms_CompactCore.md)"
+        "EA-1 (literal, but no behavioral gap): the five 2026-08-05 consciousness source cards' reverse corrections still appear in no compact layer. The 2026-08-08 bounded probe nonetheless answered all seven derived questions correctly without reading any of them, using Neuroscience/SRT_FEP_MetaAwareness_AffectiveSelf_Bridge.md and Philosophy/SRT_Phenomenal_Structure_Interface.md -- two owners the static audit never registered. The blocker is real as stated and irrelevant as a gap."
       ],
       "structural_assimilation": "partially_active",
-      "behavioral_availability": "untested",
-      "behavior_evidence": null,
-      "interventions": []
+      "behavioral_availability": "observed",
+      "behavior_evidence": "Operations/Audits/SRT_CONSCIOUSNESS_BASELINE_PROBE_2026-08-08.md",
+      "interventions": [],
+      "behavior_observation_mode": "bounded",
+      "behavioral_availability_note": "One bounded run on origin/main, 7/7 correct, no NO REPO BASIS needed. n=1, so directional only. Budget compliance carries one caveat (the session counted the context router as a conditional startup file; under a stricter reading it used 7 content files, one over)."
     },
     {
       "node_id": "NODE-AI-REASONING",

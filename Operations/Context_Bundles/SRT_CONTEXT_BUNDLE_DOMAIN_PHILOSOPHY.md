@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-07
-source_commit: 06fb67be
+source_commit: 898e6caf
 source_branch: claude/active-theory-assimilation-2026-08-06
-source_dirty: false
-inputs_digest: d7367eb8f8ba423c
+source_dirty: true
+inputs_digest: 8f304c4a88549d77
 ---
 
 # SRT 哲学领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: d7367eb8f8ba423c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-07 |
-| 来源 commit | `06fb67be` |
+| 来源 commit | `898e6caf` |
 | 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

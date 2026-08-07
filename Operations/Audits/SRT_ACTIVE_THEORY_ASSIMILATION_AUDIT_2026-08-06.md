@@ -374,10 +374,13 @@ effectively_assimilated := structural_assimilation == "active_complete"
 |---|---|---|
 | `NODE-CHOICE-GENERATION` | 2026-08-07（unconstrained，两条件） | 可用，但 PR 增量为零；**未做 bounded 复跑** |
 | `NODE-AI-REASONING` | 2026-08-08（bounded，3 次） | **Case A**：24/24，零施工即 `robustly_observed` |
+| `NODE-CONSCIOUSNESS` | 2026-08-08（bounded，1 次） | 方向性 Case A：7/7，无一题需要 `NO REPO BASIS`；**n=1，未定案** |
+
+`NODE-CONSCIOUSNESS` 的探针复现了 AI-REASONING 的模式：清单登记的 blocker（五张源卡的反向修正不在任何快速层）字面为真，但会话完全没读那些源卡，改用 router Route 2/3/8 到达 canonical，再经一次目录列举发现了两个**静态审计从未登记过**的 owner——`Neuroscience/SRT_FEP_MetaAwareness_AffectiveSelf_Bridge.md` 与 `Philosophy/SRT_Phenomenal_Structure_Interface.md`。**静态清单第三次高估缺口。**
 
 ### 9.3 下一批该探针（不是该施工）的
 
-1. **`NODE-CONSCIOUSNESS`** — 按 Case A 协议指定的下一候选；本轮已启动 bounded 探针。
+1. **`NODE-CONSCIOUSNESS`** — 本轮已跑 1 次 bounded 探针，7/7 通过。**再跑 2 次**；若维持则判 Case A 关闭，不施工。
 2. **`NODE-NEURAL-DECODABILITY`** 与 **`NODE-PHYSICS-MEASUREMENT`** — 这两个的 `engineered_not_active` 与 `NODE-AI-REASONING` **同源**，都是从"没有 hook"推出来的，而那条推理已被证伪两次。**必须先探针**。08-08 的一次运行里，模型自发引用了 `Neuroscience/patches/SRT_Neuro_NEURAL18_...` 这张 patch——正是 `NODE-NEURAL-DECODABILITY` 被判"未激活"的依据之一。
 3. **`NODE-CHOICE-GENERATION` 的 bounded 复跑** — 现有观察全是 unconstrained（27 文件、第 9 个才到判别层），不足以判断它是否属于**快速**活跃层。
 4. `NODE-BOOK-BACKFLOW` — 唯一一个 `engineered_not_active` 依据不是 hook 推理而是内容层核实（三个术语确实没有任何理论 owner）。它仍是最可能的真缺口，但也要先探针。
