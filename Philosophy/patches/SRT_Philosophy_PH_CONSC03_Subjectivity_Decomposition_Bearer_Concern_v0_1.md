@@ -6,7 +6,7 @@ source_ids:
 domain: philosophy_of_mind
 claim_level: P3-P4_bridge_hardening
 canonical_status: non_canonical
-status: patch
+status: active
 target_future_doc:
   - Philosophy/SRT_HardProblem_Epistemology.md
   - Philosophy/SRT_Subjecthood_Threshold_Interface.md
