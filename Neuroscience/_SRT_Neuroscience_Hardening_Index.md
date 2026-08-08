@@ -88,6 +88,8 @@ L0_accessible
 -> L2 write-back
 ```
 
+NEURAL24 is a different kind of bridge: it adds no new state layer. It separates stake, physiological deviation, regulatory signal, affective salience and action; treats affect as a candidate consequence-compression / bearer-indexing channel; and registers a hard-problem stopping-point audit.
+
 ---
 
 ## 3. Recommended future synthesis
@@ -116,6 +118,8 @@ Proposed structure:
 14. Comparison with mainstream neuroscience theories
 15. Boundary cautions and falsification handles
 
+When consciousness-specific hardening reopens, NEURAL24 should be routed to the consciousness owner / hard-problem interface rather than forcing it into this planned neural-mechanisms synthesis.
+
 ---
 
 ## 4. Pipeline 1 material patches
@@ -132,6 +136,7 @@ Proposed structure:
 | NEURAL21 | `Materials/2026/SRC_2026_07_27_Neuro_Takahashi_REM_Energy_Paradox.md` / `Neuroscience/patches/SRT_Neuro_NEURAL21_REM_State_Dependent_Metabolic_Payability_v0_1.md` | Core 25 + Neural/Consciousness compact core | State-dependent REM metabolic dissociation separates supply, substrate, immediate neuronal energy, payment, and recovery; non-neuronal support topology belongs in the embodied selection implementation bridge | Standalone bridge patch and pending hook added; peer-reviewed mouse evidence; compact-core synthesis pending |
 | NEURAL22 | `Materials/2026/SRC_2026_08_04_Neuro_Perez_Astrocyte_Hierarchical_Information_Flow.md` / `Neuroscience/patches/SRT_Neuro_NEURAL22_Astrocyte_Hierarchical_Information_Flow_v0_1.md` | N12 revision + `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` | Astrocyte support topology is nested across subcellular and intercellular scales; dynamic initiator, hub, somatic, and receiving roles condition local-to-global support admission, while latency/centrality, calcium recruitment, `Psi_f`, `d`, `T_dir`, and consciousness remain separated | Standalone P3 bridge/P4 experimental patch and pending hook added; full peer-reviewed PDF close-read; causal-flow and pathology extrapolations explicitly bounded |
 | NEURAL23 | `Materials/2026/SRC_2026_06_27_Neuro_Young_Brain_Body_Synchrony_Consciousness.md` / `Neuroscience/patches/SRT_Neuro_NEURAL23_Embodied_Rhythmic_Eligibility_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + future hardening synthesis | Brain-body rhythms may modulate momentary candidate eligibility before anchoring; selection weight, selection opportunity and friction are separated; physiological synchrony remains a domain mechanism and is not `d`, `Psi_f`, consciousness or subjecthood | Standalone P3 bridge/P4 experimental patch and pending hook added; full peer-reviewed review close-read; strongest differential test is `Phase x Stake` with arousal/decision/recovery controls |
+| NEURAL24 | `Materials/2026/SRC_2026_08_07_Neuro_Damasio_Natural_Intelligence_Consciousness.md` / `Neuroscience/patches/SRT_Neuro_NEURAL24_Bearer_Indexed_Affective_Readout_Gate_v0_1.md` | `Neuroscience/SRT_Consciousness_Mechanisms.md` + `Philosophy/SRT_HardProblem_Epistemology.md` + `Philosophy/SRT_Subjecthood_Threshold_Interface.md` + AI architecture future synthesis | Damasio 2026 supplies a biological bearer-indexing / affective-consequence-compression model while separating stake from affective salience; it also pressures the current `sigma_e ~ partial d / partial t` bridge and any move from same-bearer consequence return directly to phenomenal character | Standalone P3 pressure/implementation patch and pending hook added; full trade-book close-read; no owner/canonical/body rewrite in this pass |
 
 ---
 
@@ -161,9 +166,10 @@ NEURAL20 = Pipeline 1 habit strategy / execution / reselection bridge patch and 
 NEURAL21 = Pipeline 1 REM state-dependent metabolic payability bridge patch and hook added; all synthesis targets pending
 NEURAL22 = Pipeline 1 nested intra-/intercellular astrocyte-topology bridge patch and hook added; N12, compact-core and prediction-table synthesis pending
 NEURAL23 = Pipeline 1 embodied rhythmic eligibility bridge patch and landing-ledger hook added; compact-core, prediction-table and hardening-synthesis targets pending
+NEURAL24 = Pipeline 1 bearer-indexed affective-readout / phenomenal-stopping-point pressure patch and landing-ledger hook added; consciousness, hard-problem, subjecthood and AI synthesis targets pending
 B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, NEURAL20, NEURAL21, NEURAL22, or NEURAL23 as primitive axioms. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, NEURAL20, NEURAL21, NEURAL22, NEURAL23, or NEURAL24 as primitive axioms. They are high-value bridge / lab / pressure materials awaiting future synthesis or empirical hardening.

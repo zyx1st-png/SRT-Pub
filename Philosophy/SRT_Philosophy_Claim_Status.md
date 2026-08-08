@@ -9,6 +9,7 @@ claim_mode: audit
 canonical: false
 claim_level: P2-P5
 dependency: [SRT-CLAIM-LADDER, SRT-PHILOSOPHY-MACHINE-INDEX, SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
+updated: 2026-08-08
 ---
 
 # SRT Philosophy / Ethics Claim Status
@@ -29,7 +30,7 @@ Allowed:
 
 Forbidden:
 
-> Philosophy files must not silently define `d-value`, `Ψ_f`, `T_dir`, `L_0/L_1/L_2`, `Ĝ_θ`, consciousness, moral legitimacy, truth, freedom, love, grief, or institutional authority as SRT primitives.
+> Philosophy files must not silently define `d-value`, `Ψ_f`, `T_dir`, `L_0/L_1/L_2`, `Ĝ_θ`, consciousness, moral legitimacy, truth, freedom, love, grief, social ontology, political authority, or institutional legitimacy as SRT primitives.
 
 If a phrase sounds like a final metaphysical slogan, attach its layer, formula role, and failure condition.
 
@@ -140,6 +141,39 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 
 **Guardrail**: every strong selection-realism phrase needs a nearby resistance/payability qualifier: `theta` filters; `Ψ_f` resists; `L_2` stabilizes; cross-operator checks constrain.
 
+### 2.7 Language / grounding / semantics
+
+**Allowed precise claim**:
+
+> Language is not exhausted by description or fixed word-to-world reference. At P3 bridge level it may be modeled as a historically sedimented constraint resource that supports relational and inferential organization, generates candidate conditions, and can modulate future perception, interpretation, and action.
+
+> Relational or inferential semantic competence can exist without direct embodiment. Stronger claims about situated reference, lived significance, stake, or subjecthood require additional audits of world coupling, consequence bearing, history, and same-bearer writeback.
+
+**Status**: P3 language / AI bridge; P5 when expressed as a slogan.
+
+**Forbidden overclaims**:
+
+> `No Body => No Semantics` as a general SRT theorem;
+> language never describes or refers to reality;
+> LLM fluency proves grounding is unnecessary in every sense;
+> distributional competence proves stake, subjecthood, lived meaning, or consciousness;
+> language generation by itself creates external reality.
+
+**Guardrail**:
+
+Use a layered semantics distinction when the claim matters:
+
+1. **relational semantics** — position within a symbol / concept network;
+2. **inferential semantics** — what follows, composes, or can be coherently transformed;
+3. **situated / pragmatic semantics** — how language couples to perception and action in a world;
+4. **lived / stake-bearing significance** — what realization or failure costs the same continuing bearer.
+
+The first two do not require a claim of embodiment. The latter two require progressively stronger coupling and consequence-return evidence. Older Philosophy bridge prose containing `No Body => No Semantics` must therefore be read as an overstrong historical shorthand, not as the current claim-status rule.
+
+Preferred compact formulation:
+
+> **Language does not merely describe what is; it can generate and propagate conditions on what may happen next. Generated conditions become reality-relevant only insofar as they alter paths, meet resistance, land consequences, and acquire historical efficacy.**
+
 ---
 
 ## 3. Preferred phrase replacements
@@ -153,6 +187,8 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 | “morality becomes physical self-preservation” | reduction of normativity | “coupling can make harm feedback salient; legitimacy still requires ethical tests” |
 | “freedom = modifying θ” | arbitrary parameter setting | “freedom is payably reselectable constraint rewrite that preserves future selectability” |
 | “mind creates reality” | idealism | “manifestation depends on constrained selection plus resistance and stabilization” |
+| “No Body => No Semantics” | collapses all semantic competence into embodiment | “direct embodiment is not required for relational/inferential semantics; situated and stake-bearing significance require stronger coupling and consequence-return evidence” |
+| “language does not describe reality” | turns anti-referential critique into anti-realism | “language is not exhausted by description; it also generates and propagates context-sensitive conditions for interpretation and action” |
 
 ---
 

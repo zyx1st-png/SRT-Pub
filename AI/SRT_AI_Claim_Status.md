@@ -9,6 +9,7 @@ claim_mode: audit
 claim_level: P3-P5
 canonical: false
 date: 2026-04-29
+updated: 2026-08-08
 dependency:
   - SRT-AI-POSITIONING-NOTE
   - SRT-AI-BRIDGE-001
@@ -18,6 +19,7 @@ dependency:
   - SRT-T-DIR-CANONICAL
   - Core_Law/SRT_Suffering.md
   - Core_Law/SRT_Collective_Selection.md
+  - ../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md
 machine_summary: >
   Claim-status audit for the AI domain. Separates canonical dependencies, AI bridge claims,
   architecture-state guardrails, operational rubrics, external theory interfaces, and public-facing shorthand.
@@ -42,6 +44,8 @@ srt_ai_claim_status:
   judgment_status: "strong P3 bridge candidate, architecture-state restricted; not an all-AI theorem"
   psi_f_ai_default: "non-binding to the deployed inference process, not globally Psi_f == 0"
   d_ai_default: "approx 0 only for the specified inference-only architecture state; D_eff/capability may be high"
+  selection_terminology: "prefer output selection / functional path selection for L1->L1 behavior; reserve Real Choice Moment for the stronger SRT event claim"
+  novelty_guard: "novel condition or goal generation != goal ownership != stake-bearing concern"
   must_not_generalize_to:
     - training_loop
     - persistent_memory_system
@@ -147,7 +151,7 @@ AI suffering claims are governed by `Core_Law/SRT_Suffering.md` and the AI posit
 
 ---
 
-## 4. AI agency and responsibility claims
+## 4. AI agency, goal and responsibility claims
 
 Agency / responsibility claims should be routed through `SRT_AI_Agency_Responsibility_Note.md` and collective-selection files when platform mediation is involved.
 
@@ -158,6 +162,55 @@ Agency / responsibility claims should be routed through `SRT_AI_Agency_Responsib
 - Responsibility-bearing agency: stable subject-position plus norm-sensitive consequence return.
 
 Current LLM agents may satisfy parts of capability agency without satisfying structural or responsibility-bearing agency.
+
+### 4.1 Novelty / ownership / stake separation
+
+Generative novelty must not carry the burden of the AI subjecthood argument.
+
+Current and future models may generate:
+
+- linguistic continuations not present verbatim in training data;
+- novel combinations of concepts;
+- candidate conditions;
+- candidate goals;
+- revisions of an externally supplied goal set.
+
+None of these observations is sufficient to establish that the generated goal is **owned** by the model or that its realization / failure creates model-borne stake.
+
+Use the following ladder:
+
+```text
+novel condition generation
+!= goal-space generation / revision
+!= goal ownership
+!= stake-bearing concern
+!= subjecthood
+```
+
+`goal-space generation / revision` is stronger than executing or selecting among supplied goals, but it remains compatible with an externally constituted objective regime. Goal ownership requires a separate bearer audit: what continuing system preserves the concern, what consequences return to it, what cannot be costlessly substituted, and what future selection capacity is lost or reorganized if the condition fails.
+
+**Guardrail**: Do not defend `d_AI approx 0` by claiming that LLMs are incapable of genuine novelty or of generating conditions absent from their training examples. That is an unnecessary and technologically brittle premise. The stable distinction is **novelty ≠ ownership ≠ stake**.
+
+### 4.2 Selection terminology ladder
+
+Avoid using `pseudo-selection` as the default label for every AI-side discrimination or action choice. The term can obscure real functional differences and make `L_1 -> L_1` activity sound causally empty.
+
+Prefer:
+
+```text
+output selection
+-> functional path selection
+-> history-bearing selection
+-> consequence-bearing real-choice candidate
+```
+
+The first three are functional / architectural descriptions and do not themselves establish SRT `Real Choice Moment` status. When the strict contrast is needed, say:
+
+> **functional selection is not yet a SRT Real Choice Moment.**
+
+A stronger event verdict should be routed through the choice-generation audit (`CG-0` through `CG-4`) and the canonical Real Choice Moment source, with particular attention to consequence bearing and historical writeback.
+
+This terminology change does **not** redefine canonical selection. It only prevents the AI bridge from collapsing all sub-threshold selection-like organization into a single dismissive category.
 
 ---
 
@@ -213,6 +266,8 @@ AI owner files and split shards may preserve historical `Axiom`, `Theorem`, `Cor
 | "Persistent memory makes AI conscious" | Collapses persistence into subjecthood | "Persistent memory opens a stake-analysis window but does not settle consciousness." |
 | "GWT indicators prove AI consciousness" | External-theory overclaim | "GWT indicators pressure-test SRT but do not by themselves establish SRT subjecthood." |
 | "AI suffering is impossible" | Too strong for future architectures | "S1 / inference-only systems do not satisfy SRT suffering conditions; future stake-bearing systems remain an empirical question." |
+| "AI cannot generate genuinely new goals / concerns" | Makes the stake argument depend on a brittle novelty claim | "AI may generate novel conditions or revise goal spaces; novelty does not establish goal ownership, same-bearer consequence return, or `d-value`." |
+| "LLM output is only pseudo-selection" | Hides useful functional and architectural differences | "Describe output / functional / history-bearing selection explicitly; reserve Real Choice Moment for the stronger SRT event verdict." |
 
 ---
 
@@ -235,3 +290,9 @@ AI-domain SRT should be read as:
 The stable current claim is narrow:
 
 > **Current inference-only, non-history-bearing LLM deployments do not satisfy SRT stake / subjecthood conditions; future persistent, embodied, non-transferable consequence-bearing systems require separate analysis.**
+
+And two additional guards now apply:
+
+> **Novelty is not ownership, and ownership is not stake.**
+
+> **Functional selection is not yet a SRT Real Choice Moment.**

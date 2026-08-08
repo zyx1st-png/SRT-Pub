@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-07
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-08
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-07
-source_commit: ee7d1779
-source_branch: claude/active-theory-assimilation-2026-08-06
+generated: 2026-08-08
+source_commit: a989a5bf
+source_branch: hotfix/governance-preflight-20260808
 source_dirty: false
-inputs_digest: e017ba16323433c5
+inputs_digest: 9bd2031d4894c8cb
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: e017ba16323433c5
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-07 |
-| 来源 commit | `ee7d1779` |
-| 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
+| 生成日期 | 2026-08-08 |
+| 来源 commit | `a989a5bf` |
+| 来源分支 | `hotfix/governance-preflight-20260808` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
@@ -43,7 +43,7 @@ inputs_digest: e017ba16323433c5
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-08-06 |
+| 1 | `SRT_AI_START.md` | 2026-07-21 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-05-18 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-05-01 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-06-05 |
@@ -58,7 +58,7 @@ inputs_digest: e017ba16323433c5
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-07-21 |
 | 14 | `Core/SRT_Core_22_Equations.md` | 2026-07-07 |
 | 15 | `_SRT_SYMBOL_TABLE.md` | 2026-07-20 |
-| 16 | `Core/SRT_OPEN_TENSIONS.md` | 2026-08-06 |
+| 16 | `Core/SRT_OPEN_TENSIONS.md` | 2026-07-20 |
 
 ## §0.2 状态护栏
 
@@ -168,61 +168,6 @@ inputs_digest: e017ba16323433c5
 - 回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写。
 - 各阻塞目标彼此独立：不要把某一目标的缺口范围套用到另一个上。
 - 不要把 planned-but-never-created 的 target 当作已存在的文件引用。
-
-
-### G5 — 多数理论节点未进入活跃层；进入的也未经行为验证（严重度：中）
-
-**受影响**：下表所列节点；这些节点的理论增量在本包中**不存在**，也不在任何默认读取路径上
-
-#### SOURCE EXTRACT — 来源原文（逐字抽取）
-
-**来自 `Operations/Audits/data/srt_active_theory_nodes.json`（逐条抽取 `assimilation_status` 非 `effectively_assimilated` 的节点）**：
-
-> | node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |
-> |---|---|---|---|---|
-> | `NODE-CHOICE-GENERATION` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-SELECTION-ONTOLOGY` |  |  | — | — |
-> | `NODE-L0-L1-L2` |  |  | — | — |
-> | `NODE-D-VALUE` |  |  | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
-> | `NODE-PSI-F` |  |  | — | — |
-> | `NODE-T-DIR` |  |  | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
-> | `NODE-GHOST-OPERATOR` |  |  | — | — |
-> | `NODE-SUBJECTHOOD` |  |  | — | — |
-> | `NODE-CONSCIOUSNESS` |  |  | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | — |
-> | `NODE-AI-REASONING` |  |  | `AI/SRT_AI_Architecture_CompactCore.md` | — |
-> | `NODE-NEURAL-DECODABILITY` |  |  | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
-> | `NODE-LIFE-DISSIPATIVE` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-PHYSICS-MEASUREMENT` |  |  | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
-> | `NODE-SOCIAL-L2` |  |  | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
-> | `NODE-ENTROPY-REORG` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
-> | `NODE-BOOK-BACKFLOW` |  |  | — | — |
-
-#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
-
-清单共 16 个节点。状态分**两个轴**，不可合并读：
-
-- **Axis A（结构）**：0 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
-- **Axis B（行为）**：**0 个**有已记录的通过运行。其余 0 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
-
-`effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
-
-其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——那只证明它被**保存**和**安排**了，不证明它进入了任何 AI 默认会读的文件。
-
-本包按清单额外装载了以下快速层（除各领域 CompactCore 之外）：
-
-- `03_Bridges/SRT_Selection_Event_CompactCore.md`
-
-轴的含义见清单 `axes` 与 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`。
-
-#### USAGE POLICY — 使用规则
-
-*授权依据：`Operations/Audits/data/srt_active_theory_nodes.json` 的 `status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`*
-
-- 回答涉及上表任一节点时，**不要**因为本包没有相关内容就断言仓库没有；先按清单的 `active_owners` 去取。
-- `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。
-- 额外装载的快速层均为 **P2-P3**，不得用于裁定任何 canonical 定义。
-- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。
-- 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。
 
 
 ### G4 — 行文简写路径对照（严重度：低）
@@ -438,7 +383,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-06 |
+| last_commit | 2026-07-21 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -567,11 +512,7 @@ For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and
 
 ### Real Choice Moment
 
-For the canonical statement of real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05). That statement carries a **negative list only** (script execution, habit replay, gradient following, `L_2` label optimization do not qualify); it does not supply a positive discrimination procedure, so it under-determines concrete cases.
-
-For concrete "is this a real choice?" judgments, also load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, a non-compensation rule, and the no-choice / pseudo-choice / punitive-choice / respected-choice reading. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only "bounded selection-event candidate", never subjecthood, consciousness, freedom, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
-
-Three fast negatives worth carrying without loading anything: a different output is not path efficacy; energy spent is not consequence bearing; having memory is not historical efficacy.
+For real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 
 ### Freedom
 
@@ -5957,7 +5898,7 @@ SRT 主方程的运作机制如下：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-06 |
+| last_commit | 2026-07-20 |
 
 **权威判读**：**未闭合登记**——其中条目不得被陈述为已封口。
 
@@ -6534,33 +6475,3 @@ A future deletion pass may attach a residue label to `selection` only if it exhi
 4. a phenomenological or normative distinction (`E_phen` / `E_norm`) — bearer-specific consequence return, directional self-readability — the reduced vocabulary demonstrably fails to carry.
 
 Absent such a result, domain, book, and public files must **not** present `selection` as "proven irreducible." They may cite its current **P0 primitive-axiom** status (per `Governance/SRT_CLAIM_LADDER.md`) but must not attach any GOV-SUB01 residue label to it. This tension introduces no new symbol and does not change `P0-01` or `P0-04`. Any residue classification, if reached, comes only from an executed deletion test — never asserted in advance and never read off the axiom status.
-
----
-
-## 14. Selection-Event Threshold Operationalization (open, registered 2026-08-06)
-
-### Current State
-
-- `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T05` fixes **real choice moment** as a live `L_0 -> L_1` anchoring event whose result genuinely constrains the future selection space, and lists what does *not* qualify (script execution, habit replay, gradient following, `L_2` label optimization).
-- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` (T-D, P2-P3) supplies the positive side P1-T05 does not carry: five functional conditions — difference manifestation (`CG-0`), non-equivalent registration (`CG-1`), path efficacy (`CG-2`), consequence bearing (`CG-3`), historical efficacy (`CG-4`) — plus a three-tier threshold structure (candidate formation / process unfolding / event standing).
-- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` grades each condition (`DMF` 0-3, `NER` 0-4, `PEF` 0-4, `CBP` 0-4, `HEF` 0-4) and sets audit-default minima `DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` under a non-compensation rule.
-- Compact discrimination layer: `03_Bridges/SRT_Selection_Event_CompactCore.md`.
-
-### Problem Point
-
-The bridge's own conclusion states that "effective strength at the relevant scale" still requires domain operationalization, and the protocol states that its minima are **audit defaults, not a cross-domain necessary-and-sufficient theorem**. Three exposures follow:
-
-1. **Threshold status.** `DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` have no derivation from P0/P1 and no cross-domain calibration. They are currently conventions that make audits comparable, not established thresholds. They must not be cited as SRT-derived criteria.
-2. **Discriminating gain unproven.** Degradation trigger 1 of the bridge is that ordinary causal transition, constraint, and path dependence may already explain every case the `CG` conditions explain. No executed test yet shows a case where the `CG` reading yields a counterfactual or interventional difference that the reduced vocabulary cannot produce. This exposure is the same shape as, but distinct from, §13: §13 asks whether the `selection` primitive dissolves into competitor vocabulary; §14 asks whether the five-gate *event criterion* adds discriminating power over plain causal description.
-3. **Relation to P1-T05 unformalized.** Whether the five gates are necessary conditions for a real choice moment, sufficient conditions, or merely a correlated audit surface is not established. The bridge explicitly declines to reduce P1-T05 to the five conditions.
-
-### Future Hardening Direction
-
-Progress would be at least one of:
-
-1. a case where a `CG`-based verdict and a plain causal-transition verdict **diverge**, with the divergence confirmed by intervention rather than by relabeling;
-2. a domain-specific derivation or calibration of one minimum threshold from independently motivated constraints, replacing the audit-default convention;
-3. a formal statement of the P1-T05 ↔ `CG-0..CG-4` relation (necessary / sufficient / neither), with the failure conditions of that statement made explicit;
-4. an executed negative control in which a system passing all five gates is independently judged not to have made a selection, forcing a threshold or condition revision.
-
-Until then, `CG-0..CG-4`, the graded ladders, and the minima remain **P2-P3 audit apparatus**. They may not be presented as canonical criteria for selection, subjecthood, consciousness, freedom, `L_2`, or generative health, and passing all five gates licenses only the phrase "bounded selection-event candidate." This tension introduces no new symbol and does not change P1-T05.
