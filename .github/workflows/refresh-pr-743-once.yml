@@ -1,4 +1,4 @@
-# retry after PR #747 merged
+# retry after PR #745 merged
 name: Refresh PR 743 Once
 
 on:
@@ -28,10 +28,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          if git merge-base --is-ancestor origin/main HEAD; then
-            echo "latest main already contained"
-            exit 0
-          fi
+          if git merge-base --is-ancestor origin/main HEAD; then echo "latest main already contained"; exit 0; fi
           set +e
           git merge --no-ff --no-commit origin/main
           rc=$?
@@ -40,26 +37,20 @@ jobs:
             python - <<'PY'
           import subprocess
           from pathlib import Path
-          def run(*args, check=True):
-              return subprocess.run(args, text=True, capture_output=True, check=check)
-          conflicts=run('git','diff','--name-only','--diff-filter=U').stdout.splitlines()
-          print('conflicts:', conflicts)
+          def run(*args, check=True): return subprocess.run(args,text=True,capture_output=True,check=check)
+          conflicts=run('git','diff','--name-only','--diff-filter=U').stdout.splitlines(); print('conflicts:',conflicts)
           for rel in conflicts:
               p=Path(rel)
               if rel.startswith('Operations/Context_Bundles/'):
                   run('git','checkout','--theirs','--',rel); run('git','add','--',rel); continue
               if rel.startswith('Registries/') and p.suffix=='.jsonl':
-                  ours=run('git','show',f':2:{rel}').stdout.splitlines()
-                  theirs=run('git','show',f':3:{rel}').stdout.splitlines()
+                  ours=run('git','show',f':2:{rel}').stdout.splitlines(); theirs=run('git','show',f':3:{rel}').stdout.splitlines()
                   seen=set(); out=[]
                   for line in [*theirs,*ours]:
                       if line not in seen: seen.add(line); out.append(line)
                   p.write_text('\n'.join(out).rstrip()+'\n',encoding='utf-8'); run('git','add','--',rel); continue
-              base=run('git','show',f':1:{rel}',check=False).stdout
-              ours=run('git','show',f':2:{rel}',check=False).stdout
-              theirs=run('git','show',f':3:{rel}',check=False).stdout
-              a=Path('/tmp/ours'); b=Path('/tmp/base'); c=Path('/tmp/theirs')
-              a.write_text(ours,encoding='utf-8'); b.write_text(base,encoding='utf-8'); c.write_text(theirs,encoding='utf-8')
+              base=run('git','show',f':1:{rel}',check=False).stdout; ours=run('git','show',f':2:{rel}',check=False).stdout; theirs=run('git','show',f':3:{rel}',check=False).stdout
+              a=Path('/tmp/ours'); b=Path('/tmp/base'); c=Path('/tmp/theirs'); a.write_text(ours,encoding='utf-8'); b.write_text(base,encoding='utf-8'); c.write_text(theirs,encoding='utf-8')
               merged=subprocess.run(['git','merge-file','-p','--union',str(a),str(b),str(c)],text=True,capture_output=True,check=False).stdout
               p.write_text(merged,encoding='utf-8'); run('git','add','--',rel)
           left=run('git','diff','--name-only','--diff-filter=U').stdout.strip()
