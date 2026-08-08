@@ -9,10 +9,11 @@ authors: [Elan Barenholtz]
 publication: "Institute of Art and Ideas / IAI News"
 date_published: 2026-05-19
 date_added: 2026-05-20
+date_reactivated: 2026-08-08
 evidence_level: commentary
 reliability_level: medium_for_conceptual_pressure_low_for_empirical_claims
 srt_relevance: "语言不是现实描述器，而是生成、协调和条件满足脚本的 P3/P5 桥接压力；对 LLM 语义、语言作为 L2 约束传播、AI stake 边界有用。"
-integration_priority: B_watchlist
+integration_priority: B2_B3_triggered_guardrail
 related_srt_claims:
   - AI/SRT_AI_Claim_Status.md
   - AI/AI_POSITIONING_NOTE.md
@@ -77,19 +78,46 @@ Language should not be treated as a passive mirror of pre-given reality. At SRT 
 - 新增接口：`autogenerative language / condition-setting protocol`，可作为 language-as-L2-constraint 的公共哲学压力材料。
 - 反向修正：SRT 不应把“语言不描述现实”写成反实在论、任意生成论、LLM 理解证明，或固定 reference 完全不存在。
 - 加固内容：加固 AI claim-status 中“LLM coherence ≠ stake / subjecthood / anchoring”与语言文件中“词语是约束传播脚本而非对象标签”的桥接口径。
-- SRT反哺：SRT 可把 Barenholtz 的强说法拆成三层：生成连贯性、条件协调、后果返回；只有第三层接上 embodied/stake/payability 才进入主体性窗口。
-- 残余压力：若语言主要按生成条件而非 reference 运作，SRT 需更清楚地区分“共享 `L_2` 成功协调”与“现实约束下的真实锚定”。
+- SRT反哺：SRT 可把 Barenholtz 的强说法拆成生成连贯性、条件协调、后果返回三层，进一步压成 `relational/inferential semantics -> situated coupling -> stake-bearing significance` 的分层审计；只有后果返回接上 embodied/stake/payability 才进入主体性窗口。
+- 残余压力：若语言主要按生成条件而非固定 reference 运作，SRT 需更清楚地区分“共享 `L_2` 成功协调”与“现实约束下的真实锚定”。
 
-## 6. Suggested patch target
+## 6. 2026-08-08 reactivation / bridge hygiene outcome
 
-Current verdict: B / watchlist. No PatchNote or IntegrationHook created in this pass.
+The original material verdict remains **B2/B3**. The public essay has not been upgraded to empirical or canonical evidence.
 
-Candidate future targets if this cluster is later upgraded:
+The parked item was reactivated because the repository now contains two stronger internal interfaces that did not exist at the first intake pass:
 
-- `Philosophy/SRT_SocTheory_05_Language_Eco.md` — add a short guardrail around autogenerative language / condition-setting protocol.
-- `Bridge/SRT_Context_Coherence_Intelligence_Interface.md` — add as support for context coherence not implying stake.
-- `AI/SRT_AI_Claim_Status.md` — possibly add a high-risk phrase guardrail: “LLMs prove language is not grounded” → safer version.
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` (`CG-0` through `CG-4`);
+- the AI goal ladder separating goal completion, bounded goal selection, and goal-space generation / revision.
 
-## 7. Boundary statement
+The reactivation produced three **internal bridge repairs**, not an evidence upgrade:
+
+1. **Semantics-layer repair** — `No Body => No Semantics` is too strong. Current claim-status distinguishes relational, inferential, situated/pragmatic, and lived/stake-bearing semantic roles. Direct embodiment is not required for the first two; stronger consequence-bearing claims require progressively stronger coupling.
+2. **Novelty / ownership / stake repair** — AI may generate novel conditions or revise goal spaces. SRT must not defend its stake boundary by claiming AI cannot produce novelty. The stable guard is `novelty != ownership != stake`.
+3. **Selection-terminology repair** — blanket `pseudo-selection` is too coarse. Prefer `output selection -> functional path selection -> history-bearing selection -> consequence-bearing real-choice candidate`, while reserving SRT `Real Choice Moment` for the stronger event verdict.
+
+Resulting files:
+
+- `Philosophy/SRT_Philosophy_Claim_Status.md`
+- `AI/SRT_AI_Claim_Status.md`
+- `Bridge/SRT_Context_Coherence_Intelligence_Interface.md`
+
+The owner language file may preserve older bridge prose until its next touch-based synthesis pass; the current claim-status guardrail governs interpretation in the meantime.
+
+## 7. Suggested patch target
+
+Current verdict: **B2/B3, triggered guardrail use; no evidence-level upgrade**.
+
+The named future targets are now partially realized through claim-status and bridge hygiene:
+
+- `Philosophy/SRT_Philosophy_Claim_Status.md` — semantics / grounding guardrail added.
+- `Bridge/SRT_Context_Coherence_Intelligence_Interface.md` — autogenerative condition layer and selection terminology added.
+- `AI/SRT_AI_Claim_Status.md` — novelty / ownership / stake and functional-selection guardrails added.
+
+Future touch-based target:
+
+- `Philosophy/SRT_SocTheory_05_Language_Eco.md` — when the owner file is next synthesized, replace or annotate historical `No Body => No Semantics` and other overstrong anti-referential formulations in native prose rather than copying this SourceCard.
+
+## 8. Boundary statement
 
 This material may support a P3/P5 language-and-AI bridge. It must not be used as canonical evidence that language has no relation to reality, that LLMs understand, that humans are merely LLM-like next-token systems, or that subjecthood is dissolved into process coordination.
