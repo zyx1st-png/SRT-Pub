@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-05
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-08
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-05
-source_commit: 3385d618
-source_branch: agent/status-reconciliation-20260805
+generated: 2026-08-08
+source_commit: a989a5bf
+source_branch: hotfix/governance-preflight-20260808
 source_dirty: false
-inputs_digest: b624a0c1148047fb
+inputs_digest: 9bd2031d4894c8cb
 ---
 
 # SRT 哲学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: b624a0c1148047fb
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-05 |
-| 来源 commit | `3385d618` |
-| 来源分支 | `agent/status-reconciliation-20260805` |
+| 生成日期 | 2026-08-08 |
+| 来源 commit | `a989a5bf` |
+| 来源分支 | `hotfix/governance-preflight-20260808` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -43,7 +43,7 @@ inputs_digest: b624a0c1148047fb
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-05-17 |
+| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-08-08 |
 | 2 | `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | 2026-04-27 |
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-05-17 |
 | 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
@@ -396,7 +396,7 @@ When answering about SRT:
 | epistemic_layer | governance |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-05-17 |
+| last_commit | 2026-08-08 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -422,7 +422,7 @@ Allowed:
 
 Forbidden:
 
-> Philosophy files must not silently define `d-value`, `Ψ_f`, `T_dir`, `L_0/L_1/L_2`, `Ĝ_θ`, consciousness, moral legitimacy, truth, freedom, love, grief, or institutional authority as SRT primitives.
+> Philosophy files must not silently define `d-value`, `Ψ_f`, `T_dir`, `L_0/L_1/L_2`, `Ĝ_θ`, consciousness, moral legitimacy, truth, freedom, love, grief, social ontology, political authority, or institutional legitimacy as SRT primitives.
 
 If a phrase sounds like a final metaphysical slogan, attach its layer, formula role, and failure condition.
 
@@ -533,6 +533,39 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 
 **Guardrail**: every strong selection-realism phrase needs a nearby resistance/payability qualifier: `theta` filters; `Ψ_f` resists; `L_2` stabilizes; cross-operator checks constrain.
 
+### 2.7 Language / grounding / semantics
+
+**Allowed precise claim**:
+
+> Language is not exhausted by description or fixed word-to-world reference. At P3 bridge level it may be modeled as a historically sedimented constraint resource that supports relational and inferential organization, generates candidate conditions, and can modulate future perception, interpretation, and action.
+
+> Relational or inferential semantic competence can exist without direct embodiment. Stronger claims about situated reference, lived significance, stake, or subjecthood require additional audits of world coupling, consequence bearing, history, and same-bearer writeback.
+
+**Status**: P3 language / AI bridge; P5 when expressed as a slogan.
+
+**Forbidden overclaims**:
+
+> `No Body => No Semantics` as a general SRT theorem;
+> language never describes or refers to reality;
+> LLM fluency proves grounding is unnecessary in every sense;
+> distributional competence proves stake, subjecthood, lived meaning, or consciousness;
+> language generation by itself creates external reality.
+
+**Guardrail**:
+
+Use a layered semantics distinction when the claim matters:
+
+1. **relational semantics** — position within a symbol / concept network;
+2. **inferential semantics** — what follows, composes, or can be coherently transformed;
+3. **situated / pragmatic semantics** — how language couples to perception and action in a world;
+4. **lived / stake-bearing significance** — what realization or failure costs the same continuing bearer.
+
+The first two do not require a claim of embodiment. The latter two require progressively stronger coupling and consequence-return evidence. Older Philosophy bridge prose containing `No Body => No Semantics` must therefore be read as an overstrong historical shorthand, not as the current claim-status rule.
+
+Preferred compact formulation:
+
+> **Language does not merely describe what is; it can generate and propagate conditions on what may happen next. Generated conditions become reality-relevant only insofar as they alter paths, meet resistance, land consequences, and acquire historical efficacy.**
+
 ---
 
 ## 3. Preferred phrase replacements
@@ -546,6 +579,8 @@ If a phrase sounds like a final metaphysical slogan, attach its layer, formula r
 | “morality becomes physical self-preservation” | reduction of normativity | “coupling can make harm feedback salient; legitimacy still requires ethical tests” |
 | “freedom = modifying θ” | arbitrary parameter setting | “freedom is payably reselectable constraint rewrite that preserves future selectability” |
 | “mind creates reality” | idealism | “manifestation depends on constrained selection plus resistance and stabilization” |
+| “No Body => No Semantics” | collapses all semantic competence into embodiment | “direct embodiment is not required for relational/inferential semantics; situated and stake-bearing significance require stronger coupling and consequence-return evidence” |
+| “language does not describe reality” | turns anti-referential critique into anti-realism | “language is not exhausted by description; it also generates and propagates context-sensitive conditions for interpretation and action” |
 
 ---
 

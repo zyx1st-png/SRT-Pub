@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-05
+updated: 2026-08-07
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-05
+> **最后更新**：2026-08-07
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -37,7 +37,7 @@ updated: 2026-08-05
 - Choice-trace 作者门已关闭；T-B、T-D、T-E 首轮 bridge 与五域联合压力测试已经完成，不再列为“待建立”。
 - SEA 已形成统一协议、AI 正负校准、生命边界案例、制度配对案例与编码手册；方法贡献仍为 candidate，可靠性 pilot 暂缓。
 - forcing–CH 已完成 D05 C5-op、方法个体化协议、控制案例选择协议、多表征方法族审计和 countable-standard-model premise 窄类型说明；控制档案 Part II 仍未签署。
-- Pipeline 1 截至本轮材料台账为 207 条：A 130、B 27、C 50；2026-08 Part01 为 9 条。
+- Pipeline 1 截至本轮材料台账为 208 条：A 131、B 27、C 50；2026-08 Part01 为 10 条。
 - 本轮开放材料与证据 PR 已完成收口；后续新增工作应从最新 `main` 重新起分支。
 
 ## 当前权威锚点
@@ -55,6 +55,15 @@ updated: 2026-08-05
 - 当前工作线排期 → `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 
 ## 最近关键推进
+
+### 2026-08-07 · NEURAL23 具身节律准入桥
+
+- 对 Young, Ericson & Schooler 2026 *Neuroscience of Consciousness* 综述完成全文材料融合，裁决为 **A（bounded non-canonical P3 implementation bridge + P4 experimental window）**。
+- 新增 `NEURAL23`：以 `momentary selection eligibility` 描述脑—身体节律对候选进入竞争／门控／稳定过程的时相调制；明确区分 selection weight、selection opportunity 与 friction。
+- 建立 selection eligibility 与 N10/BTSP plasticity eligibility 的双门分离：`eligibility to become current reality != eligibility to enter history`。
+- 生理 synchrony 继续只按领域可测机制使用，不恢复为跨层级 SRT primitive，也不复活 selective-resynchronization 构念；一般跨层过程仍使用“选择性再组织”。
+- 形成 P4 `Phase x Stake` 差异预测，以及 matched-coupling/different-recovery、state-switch accessibility、selection-vs-plasticity eligibility dissociation 三组补充测试。
+- SourceCard、patch、landing-ledger hook、Material Log、两级索引与 registries 已同步；canonical `d` / `Psi_f` / `T_dir` / Core axioms 和休眠 owner 正文未修改。
 
 ### 2026-08-05 · 工作线排期与仓库收口
 

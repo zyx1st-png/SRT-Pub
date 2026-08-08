@@ -77,6 +77,17 @@ local microdomain detection
 -> neural and vascular support
 ```
 
+NEURAL23 supplies a distinct pre-anchoring timing layer and must not be confused with N10 plasticity eligibility:
+
+```text
+L0_accessible
+-> momentary embodied selection eligibility
+-> competition / gain / gating / stabilization
+-> L1
+-> post-event plasticity eligibility
+-> L2 write-back
+```
+
 ---
 
 ## 3. Recommended future synthesis
@@ -92,17 +103,18 @@ Proposed structure:
 1. Purpose and canonical caution
 2. Mind as embodied selection-transition field
 3. G_hat_theta as composite neural selection architecture
-4. Psi_f as operational selection friction
-5. d-value as concern-weighted selectability
-6. L2 as historically sedimented transition topology
-7. Consciousness as stable concern-weighted L1 anchoring
-8. Rapid hardening: BTSP and one-shot L1-to-L2 sedimentation
-9. Non-neuronal support topology: intercellular astrocyte networks
-10. Nested glial support: intra-astrocytic hierarchy and dynamic hubs
-11. Psychopathology as distorted anchoring / attractor capture
-12. Experimental roadmap and multimodal measurement
-13. Comparison with mainstream neuroscience theories
-14. Boundary cautions and falsification handles
+4. Momentary embodied eligibility and phase-dependent gating
+5. Psi_f as operational selection friction
+6. d-value as concern-weighted selectability
+7. L2 as historically sedimented transition topology
+8. Consciousness as stable concern-weighted L1 anchoring
+9. Rapid hardening: BTSP and one-shot L1-to-L2 sedimentation
+10. Non-neuronal support topology: intercellular astrocyte networks
+11. Nested glial support: intra-astrocytic hierarchy and dynamic hubs
+12. Psychopathology as distorted anchoring / attractor capture
+13. Experimental roadmap and multimodal measurement
+14. Comparison with mainstream neuroscience theories
+15. Boundary cautions and falsification handles
 
 ---
 
@@ -119,6 +131,7 @@ Proposed structure:
 | NEURAL20 | `Materials/2026/SRC_2026_08_03_Neuro_Asaoka_Habit_Strategy_Execution_Dissociation.md` / `Neuroscience/patches/SRT_Neuro_NEURAL20_Habit_Strategy_Execution_Dissociation_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` | Habitual strategy conversion, execution gain, and reselection capacity must be separated; behavioral repetition or intensity alone does not establish L2 replacement or absence of real choice | Standalone bridge patch and pending hook added; peer-reviewed source, with detailed methods close-read still required before fine-grained circuit claims |
 | NEURAL21 | `Materials/2026/SRC_2026_07_27_Neuro_Takahashi_REM_Energy_Paradox.md` / `Neuroscience/patches/SRT_Neuro_NEURAL21_REM_State_Dependent_Metabolic_Payability_v0_1.md` | Core 25 + Neural/Consciousness compact core | State-dependent REM metabolic dissociation separates supply, substrate, immediate neuronal energy, payment, and recovery; non-neuronal support topology belongs in the embodied selection implementation bridge | Standalone bridge patch and pending hook added; peer-reviewed mouse evidence; compact-core synthesis pending |
 | NEURAL22 | `Materials/2026/SRC_2026_08_04_Neuro_Perez_Astrocyte_Hierarchical_Information_Flow.md` / `Neuroscience/patches/SRT_Neuro_NEURAL22_Astrocyte_Hierarchical_Information_Flow_v0_1.md` | N12 revision + `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` | Astrocyte support topology is nested across subcellular and intercellular scales; dynamic initiator, hub, somatic, and receiving roles condition local-to-global support admission, while latency/centrality, calcium recruitment, `Psi_f`, `d`, `T_dir`, and consciousness remain separated | Standalone P3 bridge/P4 experimental patch and pending hook added; full peer-reviewed PDF close-read; causal-flow and pathology extrapolations explicitly bounded |
+| NEURAL23 | `Materials/2026/SRC_2026_06_27_Neuro_Young_Brain_Body_Synchrony_Consciousness.md` / `Neuroscience/patches/SRT_Neuro_NEURAL23_Embodied_Rhythmic_Eligibility_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + future hardening synthesis | Brain-body rhythms may modulate momentary candidate eligibility before anchoring; selection weight, selection opportunity and friction are separated; physiological synchrony remains a domain mechanism and is not `d`, `Psi_f`, consciousness or subjecthood | Standalone P3 bridge/P4 experimental patch and pending hook added; full peer-reviewed review close-read; strongest differential test is `Phase x Stake` with arousal/decision/recovery controls |
 
 ---
 
@@ -127,7 +140,7 @@ Proposed structure:
 | SourceCard | Verdict | Stable use | Revival trigger |
 |---|---|---|---|
 | `Materials/2026/SRC_2026_08_03_Neuro_Bussell_Intrinsic_Information_Value_OFC.md` | B1, with narrow A-capable guardrail | Information and water reward values can be behaviorally traded and neurally distinguished; reward magnitude alone is not a sufficient local account of value representation. The source also pressures any SRT account that equates value only with immediate instrumental choice expansion. | Reopen when the `d-value` stake gate, `T_dir` operationalization, or an SRT experiment must distinguish reward value, uncertainty reduction, and future-choice benefit. |
-| `Materials/2026/SRC_2026_08_03_Neuro_Misawa_Informational_Tuning_Traveling_Waves.md` | B1 for measurement proxy; B2 for consciousness / `T_dir` claims | Directional alignment and routing reliability can dissociate from aggregate transfer volume; informational tuning is a candidate neural-routing proxy, not `T_dir` itself. | Reopen for experimental `T_dir`, selective resynchronization, or anesthesia / traveling-wave proxy synthesis. |
+| `Materials/2026/SRC_2026_08_03_Neuro_Misawa_Informational_Tuning_Traveling_Waves.md` | B1 for measurement proxy; B2 for consciousness / `T_dir` claims | Directional alignment and routing reliability can dissociate from aggregate transfer volume; informational tuning is a candidate neural-routing proxy, not `T_dir` itself. | Reopen for experimental `T_dir`, selective reorganization, or anesthesia / traveling-wave proxy synthesis. |
 
 ---
 
@@ -147,9 +160,10 @@ NEURAL19 = Pipeline 1 resource-gated history-admission bridge patch and hook add
 NEURAL20 = Pipeline 1 habit strategy / execution / reselection bridge patch and hook added; all synthesis targets pending
 NEURAL21 = Pipeline 1 REM state-dependent metabolic payability bridge patch and hook added; all synthesis targets pending
 NEURAL22 = Pipeline 1 nested intra-/intercellular astrocyte-topology bridge patch and hook added; N12, compact-core and prediction-table synthesis pending
+NEURAL23 = Pipeline 1 embodied rhythmic eligibility bridge patch and landing-ledger hook added; compact-core, prediction-table and hardening-synthesis targets pending
 B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, NEURAL20, NEURAL21, or NEURAL22 as primitive axioms. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, NEURAL20, NEURAL21, NEURAL22, or NEURAL23 as primitive axioms. They are high-value bridge / lab materials awaiting future synthesis or empirical hardening.
