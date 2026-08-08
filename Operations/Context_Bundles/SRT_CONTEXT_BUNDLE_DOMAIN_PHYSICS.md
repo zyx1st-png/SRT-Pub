@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-08
-source_commit: 90766ef6
-source_branch: claude/active-theory-assimilation-2026-08-06
+source_commit: 6d8a86b4
+source_branch: codex/stake-future-selectability-mvp
 source_dirty: false
-inputs_digest: 5cc635813dad56af
+inputs_digest: cf840f253be56859
 ---
 
 # SRT 物理领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 5cc635813dad56af
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-08 |
-| 来源 commit | `90766ef6` |
-| 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
+| 来源 commit | `6d8a86b4` |
+| 来源分支 | `codex/stake-future-selectability-mvp` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 
