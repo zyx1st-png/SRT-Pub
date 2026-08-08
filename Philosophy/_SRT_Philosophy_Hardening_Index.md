@@ -16,6 +16,7 @@
 | PH-METH01 Emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | emergence is not an explanatory primitive; SRT bridge claims must specify mechanism, transition condition, macro-pattern, and implementation channel before using emergence/downward-causation language | Integrated guardrail in `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
 | PH-CONSC02 Perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | hard-problem arguments should not smuggle in a disembodied outside view of science; first-person and third-person descriptions are routed as situated access differences before metaphysical gaps | Integrated guardrail in `Philosophy/SRT_HardProblem_Epistemology.md`; residual now routed to PH-CONSC03 |
 | PH-CONSC03 Subjectivity decomposition / bearer–concern split | `Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md` | separates selector, bearer, concern domain and experiencer; distinguishes bearer boundary from concern boundary and treats same-bearer consequence return / future-selectability rewrite as candidate bearing discriminators without making bearing a phenomenality proof | New P3/P4 hardening patch; integration hook pending |
+| PH-IND01 Object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | uses Kibbe–Leslie’s source-backed `object individuation before identification` as a negative control and P3 structural analogy for SRT’s independent claim that a bearer-position may precede reflective self-identification; tracking continuity remains distinct from consequence-bearing continuity | A / rebuilt from closed PR #686; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
 
@@ -177,6 +178,38 @@ future-selectability rewrite = phenomenality
 SRT uniquely discovered vulnerability / intrinsic normativity / consequence return
 ```
 
+### PH-IND01 object / subject individuation bridge
+
+Use PH-IND01 to keep two different orders separate:
+
+```text
+OBJECT — source-backed
+this one / still this one
+-> what this one is
+
+SUBJECT — SRT P3 analogy
+this bearer / from here
+-> who I am / reflective self-model
+```
+
+Safe uses:
+
+- cite Kibbe–Leslie only for object individuation before rich identification/property binding;
+- use object tracking as a negative control for subjecthood;
+- distinguish `tracking boundary` from `consequence-return boundary`;
+- ask whether a self-model identifies an already-individuated bearer or is being asked to create the bearer;
+- preserve the possibility that subject-position entry precedes reflective self-identification under the existing `SRT_Individuation` two-transition architecture.
+
+Do not claim:
+
+```text
+Kibbe–Leslie proves SRT individuation
+object index = minimal subject
+"this one" = "I"
+infant object permanence proves Stable ISP or consciousness
+subject-before-self-model is a source-level infant-cognition result
+```
+
 ---
 
 ## 2. Agency / subjecthood synthesis
@@ -209,6 +242,7 @@ Proposed additions:
 18. Boundary cautions: avoid overextension and overrestriction
 19. Subjectivity role decomposition: selector / bearer / concern domain / experiencer
 20. Bearer boundary vs concern boundary; same-bearer consequence-return and future-selectability-writeback tests
+21. Object individuation vs identification as a negative control for bearer individuation vs self-identification
 
 ---
 
@@ -246,6 +280,10 @@ PH-CONSC02 hard-problem epistemology guardrail = integrated
 PH-CONSC03 derived hardening patch = added
 PH-CONSC03 integration hook = added / pending
 PH-CONSC03 canonical merge = not authorized / not requested
+PH-IND01 rebuilt Kibbe–Leslie SourceCard = added
+PH-IND01 patch = added
+PH-IND01 integration hook = added / pending
+PH-IND01 canonical merge = not authorized / not requested
 PH-CONSC01 SourceCard = added
 PH-CONSC01 patch = added
 PH-CONSC01 hook = added
