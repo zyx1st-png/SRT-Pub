@@ -18,6 +18,7 @@ landing_ledger:
     blocked_by: "Await the next prediction-table synthesis pass. Add only a preregisterable Phase x Stake differential prediction with arousal, decision-model, recovery, and null-outcome controls."
   - target: "Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md"
     state: pending
+    target_status: planned
     blocked_by: "Await the planned neuroscience hardening synthesis; integrate after the transition-field/selection-architecture section and before downstream L1-to-L2 plasticity eligibility."
 ---
 

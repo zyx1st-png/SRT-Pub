@@ -14,7 +14,8 @@
 | PH-AG04 Sensorimotor time / agency dissociation | `Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md` | control efficacy, authorial attribution, body ownership and reflective self-integration are partially independent; external effectors can enter control loops without becoming bodily or shared-agency bearers | A / four-experiment full-text close-read bridge; bounded interface integrated |
 | PH-SEM01 Bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | practical positions should distinguish assertion, denial and open remainder; defeasible clashes may be repaired by added context, while incompatibility remains irreducible to positive consequence, agency or stake | A / penultimate-draft full-text close-read bridge; integration hook added |
 | PH-METH01 Emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | emergence is not an explanatory primitive; SRT bridge claims must specify mechanism, transition condition, macro-pattern, and implementation channel before using emergence/downward-causation language | Integrated guardrail in `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
-| PH-CONSC02 Perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | hard-problem arguments should not smuggle in a disembodied outside view of science; first-person and third-person descriptions are routed as situated access differences before metaphysical gaps | Integrated guardrail in `Philosophy/SRT_HardProblem_Epistemology.md` |
+| PH-CONSC02 Perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | hard-problem arguments should not smuggle in a disembodied outside view of science; first-person and third-person descriptions are routed as situated access differences before metaphysical gaps | Integrated guardrail in `Philosophy/SRT_HardProblem_Epistemology.md`; residual now routed to PH-CONSC03 |
+| PH-CONSC03 Subjectivity decomposition / bearer–concern split | `Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md` | separates selector, bearer, concern domain and experiencer; distinguishes bearer boundary from concern boundary and treats same-bearer consequence return / future-selectability rewrite as candidate bearing discriminators without making bearing a phenomenality proof | New P3/P4 hardening patch; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
 
@@ -134,6 +135,48 @@ incompatibility alone defines selection
 Simonelli proves selection-first ontology
 ```
 
+### PH-CONSC03 subjectivity decomposition
+
+Use PH-CONSC03 only after PH-CONSC02 has blocked the view-from-nowhere error. The correct sequence is:
+
+```text
+perspectival difference != metaphysical gap
+but
+perspective != subjectivity
+```
+
+Then separate:
+
+```text
+Selector != Bearer != Concern Domain != Experiencer
+```
+
+with the bounded candidate distinction:
+
+```text
+B != C_B
+```
+
+where `B` is the candidate bearer closure and `C_B` is the concern domain whose irreversible changes enter stake-coupled evaluation.
+
+Safe uses:
+
+- specify the bearer before subjecthood attribution;
+- ask where consequences close and whether they alter the same bearer's future selectability;
+- allow the concern domain to extend beyond organismic self-maintenance;
+- keep phenomenality as a separate open question;
+- use enactivism/autopoiesis and Damasio as originality pressure, not as endorsements.
+
+Do not claim:
+
+```text
+bearing = consciousness
+stake = consciousness
+d = consciousness scalar
+future-selectability rewrite = phenomenality
+SRT uniquely discovered vulnerability / intrinsic normativity / consequence return
+```
+
 ---
 
 ## 2. Agency / subjecthood synthesis
@@ -164,6 +207,8 @@ Proposed additions:
 16. d-value as concern-bearing relevance, not mere salience
 17. Psi_f as canonical friction, not feedback mismatch
 18. Boundary cautions: avoid overextension and overrestriction
+19. Subjectivity role decomposition: selector / bearer / concern domain / experiencer
+20. Bearer boundary vs concern boundary; same-bearer consequence-return and future-selectability-writeback tests
 
 ---
 
@@ -198,6 +243,9 @@ PH-CONSC02 SourceCard = added
 PH-CONSC02 patch = added
 PH-CONSC02 hook = added
 PH-CONSC02 hard-problem epistemology guardrail = integrated
+PH-CONSC03 derived hardening patch = added
+PH-CONSC03 integration hook = added / pending
+PH-CONSC03 canonical merge = not authorized / not requested
 PH-CONSC01 SourceCard = added
 PH-CONSC01 patch = added
 PH-CONSC01 hook = added

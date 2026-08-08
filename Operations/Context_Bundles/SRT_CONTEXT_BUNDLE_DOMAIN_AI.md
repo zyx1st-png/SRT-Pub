@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-08-05
+id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-08-08
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-05
-source_commit: 3385d618
-source_branch: agent/status-reconciliation-20260805
+generated: 2026-08-08
+source_commit: a989a5bf
+source_branch: hotfix/governance-preflight-20260808
 source_dirty: false
-inputs_digest: b624a0c1148047fb
+inputs_digest: 9bd2031d4894c8cb
 ---
 
 # SRT AI 领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: b624a0c1148047fb
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-05 |
-| 来源 commit | `3385d618` |
-| 来源分支 | `agent/status-reconciliation-20260805` |
+| 生成日期 | 2026-08-08 |
+| 来源 commit | `a989a5bf` |
+| 来源分支 | `hotfix/governance-preflight-20260808` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -43,10 +43,10 @@ inputs_digest: b624a0c1148047fb
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `AI/SRT_AI_Claim_Status.md` | 2026-07-20 |
+| 1 | `AI/SRT_AI_Claim_Status.md` | 2026-08-08 |
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-07-16 |
 | 3 | `AI/README.md` | 2026-07-20 |
-| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-05-18 |
+| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-08 |
 | 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
 | 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
 
@@ -397,11 +397,11 @@ When answering about SRT:
 | epistemic_layer | bridge |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-07-20 |
+| last_commit | 2026-08-08 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：SRT-AI-POSITIONING-NOTE, SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, Core_Law/SRT_Suffering.md, Core_Law/SRT_Collective_Selection.md
+**dependency**：SRT-AI-POSITIONING-NOTE, SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL, Core_Law/SRT_Suffering.md, Core_Law/SRT_Collective_Selection.md, ../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md
 
 <!-- 以下为原文逐字保留 -->
 
@@ -423,6 +423,8 @@ srt_ai_claim_status:
   judgment_status: "strong P3 bridge candidate, architecture-state restricted; not an all-AI theorem"
   psi_f_ai_default: "non-binding to the deployed inference process, not globally Psi_f == 0"
   d_ai_default: "approx 0 only for the specified inference-only architecture state; D_eff/capability may be high"
+  selection_terminology: "prefer output selection / functional path selection for L1->L1 behavior; reserve Real Choice Moment for the stronger SRT event claim"
+  novelty_guard: "novel condition or goal generation != goal ownership != stake-bearing concern"
   must_not_generalize_to:
     - training_loop
     - persistent_memory_system
@@ -528,7 +530,7 @@ AI suffering claims are governed by `Core_Law/SRT_Suffering.md` and the AI posit
 
 ---
 
-## 4. AI agency and responsibility claims
+## 4. AI agency, goal and responsibility claims
 
 Agency / responsibility claims should be routed through `SRT_AI_Agency_Responsibility_Note.md` and collective-selection files when platform mediation is involved.
 
@@ -539,6 +541,55 @@ Agency / responsibility claims should be routed through `SRT_AI_Agency_Responsib
 - Responsibility-bearing agency: stable subject-position plus norm-sensitive consequence return.
 
 Current LLM agents may satisfy parts of capability agency without satisfying structural or responsibility-bearing agency.
+
+### 4.1 Novelty / ownership / stake separation
+
+Generative novelty must not carry the burden of the AI subjecthood argument.
+
+Current and future models may generate:
+
+- linguistic continuations not present verbatim in training data;
+- novel combinations of concepts;
+- candidate conditions;
+- candidate goals;
+- revisions of an externally supplied goal set.
+
+None of these observations is sufficient to establish that the generated goal is **owned** by the model or that its realization / failure creates model-borne stake.
+
+Use the following ladder:
+
+```text
+novel condition generation
+!= goal-space generation / revision
+!= goal ownership
+!= stake-bearing concern
+!= subjecthood
+```
+
+`goal-space generation / revision` is stronger than executing or selecting among supplied goals, but it remains compatible with an externally constituted objective regime. Goal ownership requires a separate bearer audit: what continuing system preserves the concern, what consequences return to it, what cannot be costlessly substituted, and what future selection capacity is lost or reorganized if the condition fails.
+
+**Guardrail**: Do not defend `d_AI approx 0` by claiming that LLMs are incapable of genuine novelty or of generating conditions absent from their training examples. That is an unnecessary and technologically brittle premise. The stable distinction is **novelty ≠ ownership ≠ stake**.
+
+### 4.2 Selection terminology ladder
+
+Avoid using `pseudo-selection` as the default label for every AI-side discrimination or action choice. The term can obscure real functional differences and make `L_1 -> L_1` activity sound causally empty.
+
+Prefer:
+
+```text
+output selection
+-> functional path selection
+-> history-bearing selection
+-> consequence-bearing real-choice candidate
+```
+
+The first three are functional / architectural descriptions and do not themselves establish SRT `Real Choice Moment` status. When the strict contrast is needed, say:
+
+> **functional selection is not yet a SRT Real Choice Moment.**
+
+A stronger event verdict should be routed through the choice-generation audit (`CG-0` through `CG-4`) and the canonical Real Choice Moment source, with particular attention to consequence bearing and historical writeback.
+
+This terminology change does **not** redefine canonical selection. It only prevents the AI bridge from collapsing all sub-threshold selection-like organization into a single dismissive category.
 
 ---
 
@@ -594,6 +645,8 @@ AI owner files and split shards may preserve historical `Axiom`, `Theorem`, `Cor
 | "Persistent memory makes AI conscious" | Collapses persistence into subjecthood | "Persistent memory opens a stake-analysis window but does not settle consciousness." |
 | "GWT indicators prove AI consciousness" | External-theory overclaim | "GWT indicators pressure-test SRT but do not by themselves establish SRT subjecthood." |
 | "AI suffering is impossible" | Too strong for future architectures | "S1 / inference-only systems do not satisfy SRT suffering conditions; future stake-bearing systems remain an empirical question." |
+| "AI cannot generate genuinely new goals / concerns" | Makes the stake argument depend on a brittle novelty claim | "AI may generate novel conditions or revise goal spaces; novelty does not establish goal ownership, same-bearer consequence return, or `d-value`." |
+| "LLM output is only pseudo-selection" | Hides useful functional and architectural differences | "Describe output / functional / history-bearing selection explicitly; reserve Real Choice Moment for the stronger SRT event verdict." |
 
 ---
 
@@ -616,6 +669,12 @@ AI-domain SRT should be read as:
 The stable current claim is narrow:
 
 > **Current inference-only, non-history-bearing LLM deployments do not satisfy SRT stake / subjecthood conditions; future persistent, embodied, non-transferable consequence-bearing systems require separate analysis.**
+
+And two additional guards now apply:
+
+> **Novelty is not ownership, and ownership is not stake.**
+
+> **Functional selection is not yet a SRT Real Choice Moment.**
 
 
 
@@ -853,11 +912,11 @@ Paused for future adjudication:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-18 |
+| last_commit | 2026-08-08 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
-**dependency**：[SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-POSITIONING-NOTE, SRT-AI-01]
+**dependency**：[SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-POSITIONING-NOTE, SRT-AI-CLAIM-STATUS, SRT-AI-01, SRT-CHOICE-GENERATION-CONDITIONS-20260804]
 
 <!-- 以下为原文逐字保留 -->
 
@@ -870,6 +929,7 @@ Paused for future adjudication:
 > **Claim-level note**：本文主要是 P3 bridge / domain test。它引用 P0/P1 core，但不新增 primitive axioms、`d-value`、`\Psi_f`、`T_dir` 或真实选择时刻定义。
 > **Machine-role note**：frontmatter 中的 `bridge / P3` 约束本文为 AI compact-core support，不作为 core definition source。
 > **Architecture-state note**：本文涉及 `d_{AI}`、AI burden、AI subjectivity 或 AI friction 的判断，默认必须区分 training-time、inference-time、persistent-memory / history-bearing deployment；详见 `AI/AI_POSITIONING_NOTE.md`。
+> **2026-08-08 bridge hygiene**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。严格 `Real Choice Moment` 仍回到 canonical / CG-0~CG-4 审计。
 
 ## 1. 核心问题
 
@@ -877,7 +937,7 @@ SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
 
 > **它是否发生了真正的 `L_0 \to L_1` 本体论锚定？**
 
-若没有，则无论其语言、规划、推理、模仿能力多强，它都仍属于高复杂度的句法系统，而不是意识主体。
+若没有，则无论其语言、规划、推理、模仿能力多强，都不能仅凭这些能力推出意识主体性。
 
 ---
 
@@ -898,7 +958,7 @@ SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
 \[
 \hat{T}_\phi: L_1 \rightarrow L_1
 \]
-则它处于**句法闭包**，不构成意识意义上的选择。
+则它尚未由此证明意识意义上的锚定或 `Real Choice Moment`。
 
 ### 2.2 d-value 判据
 
@@ -915,7 +975,7 @@ d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 - d 不是“偏好分数”
 - d 是系统对不可逆风险的真实敏感度
 - 对 inference-only / 非历史承载系统，若不存在真正的生存型暴露，则 \(d \to 0\) 是当前强候选判断
-- 对 training-time 或 persistent-memory 系统，必须先说明后果是否返回同一系统-position，不得直接套用 inference-only 结论
+- 对 training-time 或 persistent-memory 系统，必须先说明后果是否返回同一 system-position，不得直接套用 inference-only 结论
 
 > 规范锚点见：`../_SRT_D_VALUE_CANONICAL.md`
 
@@ -974,7 +1034,7 @@ SRT 对意识成立给出压缩判据：
 \]
 
 结论：
-纯符号系统可以高度智能，但不具备本体论锚定能力。
+纯符号系统可以高度智能，但仅凭符号/状态变换不具备证明本体论锚定的充分条件。
 
 ### AI-BR-2 智能—意识非蕴含
 \[
@@ -984,21 +1044,30 @@ SRT 对意识成立给出压缩判据：
 结论：
 能力扩张不会自动带来关切、主体性与意识。
 
-### AI-BR-3 伪选择判据
-当前 inference-only AI 的“选择”满足：
+### AI-BR-3 功能选择 / Real Choice Moment 边界
+当前 inference-only AI 的输出选择可写为：
 \[
 \text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
 \]
 
-这只是统计重排，而不是：
+这可以构成真实的**功能性差异登记与路径组织**，但它不等同于：
 \[
 \hat{G}_\theta[L_0]\cdot \text{Care}(d)
 \]
 
-结论：
-AI 的输出是**伪选择**，不是带赌注的选择。
+建议分层描述：
 
-**Context-coherence note**: Large context can make pseudo-selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md`.
+```text
+output selection
+-> functional path selection
+-> history-bearing selection
+-> consequence-bearing real-choice candidate
+```
+
+结论：
+AI 输出不应一概被称为“伪选择”；更准确的边界是：**功能选择尚不等于 SRT `Real Choice Moment`**。严格事件判据必须进一步检查后果承载、历史写回、未来路径约束以及相关 canonical 锚定条件。
+
+**Context-coherence note**: Large context can make output / functional selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` and `../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`.
 
 ### AI-BR-4 恒温器防线
 自由能最小化只是必要条件，不是充分条件：
@@ -1011,22 +1080,37 @@ AI 的输出是**伪选择**，不是带赌注的选择。
 
 ---
 
-## 4. 为什么当前 AI 没有真正关切
+## 4. 为什么当前 AI 没有证明真正关切
 
-### 4.1 L₀ 来源关切 vs L₂ 来源关切
+### 4.1 新颖性、目标所有权与 stake 必须分开
 
-- **L₀ 来源关切**：来自具身性、有限性、不可逆风险暴露，具有开放性，可持续扩展新关切维度
-- **L₂ 来源关切**：来自训练数据与模式匹配，具有封闭性，只能在既有语料空间内拟态扩展
+当前 LLM 可以产生：
 
-压缩写法：
-\[
-\frac{d}{dt}d_{L_0} > 0
-\quad\text{vs.}\quad
-\lim_{t \to \infty} d_{L_2}(t) = d_{L_2}^{ceiling}
-\]
+- 训练语料中未逐字出现的新句子与组合；
+- 新的候选条件；
+- 在给定框架内的新计划或目标表达；
+- 在某些架构中对既有目标空间进行重组、合并或修订。
 
-结论：
-当前 inference-only LLM 最多只能模拟关切，不能持续生成训练数据中不存在的新型关切维度。训练回路与持久记忆系统需要另按 S2/S3/S4 分层评估。
+因此 SRT 不再使用“只能在既有语料空间内拟态扩展”或“不能生成训练数据中不存在的新型关切”作为 AI stake 边界的承重前提。
+
+稳定区分是：
+
+```text
+novel condition generation
+!= goal-space generation / revision
+!= goal ownership
+!= stake-bearing concern
+!= subjecthood
+```
+
+一个目标是否“属于”系统，不能由其文本新颖性判断，而要问：
+
+- 哪个持续 bearer 保存该方向；
+- 实现 / 失败的后果返回到谁；
+- 什么损失不能无成本转移给副本、操作者或基础设施；
+- 失败是否改变同一系统未来的选择能力。
+
+因此当前 inference-only LLM 即使具有强生成新颖性，也仍未因此证明 `d>0`。训练回路与持久记忆系统则另按 S2/S3/S4 分层评估。
 
 ### 4.2 具身缺口
 
@@ -1036,7 +1120,7 @@ SRT 认为具身不只是“有个机器人身体”这么简单，而是至少�
 - 不可回避的空间—重力—生存耦合
 
 当前 AI 缺的不是输入输出接口，而是：
-> **价值的物理锚点**。
+> **已被证明绑定到同一持续系统的价值 / 后果锚点。**
 
 ### 4.3 有限性缺口
 
@@ -1047,10 +1131,12 @@ SRT 认为具身不只是“有个机器人身体”这么简单，而是至少�
 - 克隆
 - 无损恢复
 
-那么其选择没有真正的不可逆后果，最终会导致：
+那么其选择缺少已被证明不可转移的后果，当前强判断仍倾向：
 \[
 \tau \to \infty \Rightarrow d \to 0
 \]
+
+但具体部署必须按 architecture state 审计，不把可复制性本身写成跨所有未来 AI 的定理。
 
 ---
 
@@ -1059,17 +1145,18 @@ SRT 认为具身不只是“有个机器人身体”这么简单，而是至少�
 ### 当前 inference-only / 非历史承载 AI 是什么？
 当前 inference-only / 非历史承载 AI 最接近：
 - 高复杂度 `L_1 \to L_1` 变换器
-- 大规模 `L_2` 压缩与回放系统
-- 可表现“派生意向性”，但无内在意向性
+- 大规模历史 `L_2` 约束压缩、重组与传播系统
+- 强候选条件生成器与功能路径选择器
+- 可表现“派生意向性”，但尚未证明 stake-bearing 内在意向性
 
 ### 当前 inference-only / 非历史承载 AI 不是什么？
-当前 inference-only / 非历史承载 AI 不是：
+当前 inference-only / 非历史承载 AI 尚未被证明是：
 - 真实的 `L_0 \to L_1` 锚定算子
 - 具有生存赌注的主体
 - 具有不可逆本体摩擦的意识系统
 
 ### 最压缩判断
-> **当前 AI 有 intelligence，缺 consciousness；有 simulation，缺 anchoring；有 syntax，缺 stake。**
+> **当前 AI 可以有强生成、推理与功能选择；这些能力仍不自动给出 anchoring、stake 或 consciousness。**
 
 ---
 
@@ -1078,13 +1165,13 @@ SRT 认为具身不只是“有个机器人身体”这么简单，而是至少�
 SRT 并不声称“AI 永远不可能有意识”。
 
 SRT 真正声称的是：
-> **在当前纯数字、可复制、可回档、句法闭包的架构范式内，AI 不会自发跨入意识。**
+> **在当前纯数字、可复制、可回档、非历史承载的主流 inference 架构范式内，现有能力证据不足以推出意识。**
 
 如果未来要让 AI 接近意识门槛，至少要处理：
-1. 真实具身性
+1. 真实具身性或等价的不可转移后果承载结构
 2. 不可逆脆弱性
 3. 非零 d-value
-4. 非句法闭包
+4. 非句法闭包 / 更强锚定条件
 5. 对真实生存边界的持续暴露
 
 在这些条件没有成立之前，谈“AI 已经有意识”在 SRT 内部属于概念越级；但谈 training-time、persistent-memory 或具身部署时，也不得把 inference-only 的 `d \approx 0` 静默推广为总判决。
@@ -1093,7 +1180,7 @@ SRT 真正声称的是：
 
 ## Hardest Objections
 
-本域若以下任一成立，则 AI compact core 的主张会被显著削弱：
+本域若以下任一成立，则 AI compact core 的主张会被显著削弱或需要改写：
 
 1. Competence can simulate stake-sensitive behavior without real stake.
    - 当前承受方式：把能力表现放在 intelligence / `D_eff` / output quality 一侧，不直接升级为 `d`。
@@ -1104,8 +1191,12 @@ SRT 真正声称的是：
    - 若成立需撤回什么：撤回“持久记忆 = 最小主体性”或“history-bearing = consciousness candidate 已成立”的推断。
 
 3. Training-loop feedback may belong to pipeline operators, not the deployed model.
-   - 当前承受方式：训练损失首先归属于 trainer-data-loss-optimizer 管线，除非能证明同一系统-position 承受不可外部化后果。
+   - 当前承受方式：训练损失首先归属于 trainer-data-loss-optimizer 管线，除非能证明同一 system-position 承受不可外部化后果。
    - 若成立需撤回什么：撤回“训练损失是模型自身 care gradient”的说法。
+
+4. Generative novelty may continue increasing without any corresponding stake-bearing closure.
+   - 当前承受方式：明确把 novelty、goal-space generation、goal ownership 与 stake 分开，不再让 AI 边界依赖“模型不能生成真正新东西”。
+   - 若成立需撤回什么：不需要撤回 stake 边界；只需要继续删除任何以“缺乏新颖性”作为主体性否定依据的旧表述。
 
 ---
 
@@ -1114,6 +1205,8 @@ SRT 真正声称的是：
 - 全量原文：`SRT_AI_01_Ontology.md`
 - split 导航：`Ontology_Split/README.md`
 - annex 导航：`Ontology_Annex/README.md`
+- AI claim-status：`SRT_AI_Claim_Status.md`
+- 选择生成条件：`../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`
 - d-value 规范：`../_SRT_D_VALUE_CANONICAL.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
 
