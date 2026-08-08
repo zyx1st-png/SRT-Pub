@@ -521,6 +521,34 @@ Tensions should be routed and classified, not silently patched by upgrading clai
 
 ---
 
+## 19a. Choice Generation / Selection Event Node
+
+### Core question
+
+Under what structural conditions does ordinary change qualify as a selection candidate, and when has a real selection event actually occurred rather than mere output difference, advice, energy expenditure, or memory?
+
+### Primary files
+
+- `03_Bridges/SRT_Selection_Event_CompactCore.md` (compact discrimination layer; read first)
+- `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05 Real Choice Moment; canonical carrier)
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` (T-D condition matrix, P2-P3)
+- `Core/SRT_OPEN_TENSIONS.md §14` (thresholds and discriminating gain not yet closed)
+
+### Support files
+
+- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` (graded gates, boundary freezing, splicing traps)
+- `03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md` (T-B process layer)
+- `03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` (T-E dissipative/selection stratification)
+- `03_Bridges/SRT_Selection_Dynamics_MSD_Bridge.md`
+- `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md` (author decisions G1, G2)
+- `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`
+
+### Boundary
+
+This node is **P2-P3 audit apparatus**, not a definition source. Passing all five gates licenses only "bounded selection-event candidate" — never subjecthood, consciousness, freedom, moral responsibility, `L_2`, or generative health. Generation conditions, event criteria, scaffolding, and generative health are four separate questions and must not substitute for one another. The node is distinct from Node 1 (Selection Ontology): Node 1 asks what it means that selection precedes stabilized existence; this node asks how to tell, in a concrete case, whether a selection event occurred.
+
+---
+
 ## 20. Maintenance Rule
 
 When a new deep content file appears:

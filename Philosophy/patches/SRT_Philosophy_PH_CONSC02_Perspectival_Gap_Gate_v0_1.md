@@ -166,3 +166,37 @@ Future use should compress this patch into one guardrail sentence:
 ```text
 The hard problem is often inflated when third-person science is mistaken for a disembodied outside view; SRT treats first-person and third-person accounts as differently situated descriptions of processes inside the same world.
 ```
+
+---
+
+## 8. Residual after the perspectival gate — 2026-08-08 hardening
+
+The perspectival gate is necessary but not sufficient. The following inference is **not** licensed:
+
+```text
+all accounts are perspectival
+-> subjectivity is merely perspectivality
+```
+
+A later close reading found that the remaining problem must distinguish at least:
+
+```text
+Selector
+!= Bearer
+!= Concern Domain
+!= Experiencer
+```
+
+and must also preserve:
+
+```text
+bearing_candidate != phenomenality proof
+```
+
+This residual is developed in:
+
+```text
+Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md
+```
+
+PH-CONSC03 also records the main originality pressure: enactivism/autopoiesis already supplies strong accounts of precarious autonomy, adaptivity and intrinsic normativity, while Damasio supplies a major homeostatic-feeling / ownership route. SRT should therefore test whether same-bearer consequence return, non-outsourcing, concern-boundary separation and future-selectability writeback add independent discrimination rather than claiming `bearing` itself as unique.

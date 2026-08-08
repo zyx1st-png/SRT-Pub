@@ -578,3 +578,33 @@ A future deletion pass may attach a residue label to `selection` only if it exhi
 4. a phenomenological or normative distinction (`E_phen` / `E_norm`) — bearer-specific consequence return, directional self-readability — the reduced vocabulary demonstrably fails to carry.
 
 Absent such a result, domain, book, and public files must **not** present `selection` as "proven irreducible." They may cite its current **P0 primitive-axiom** status (per `Governance/SRT_CLAIM_LADDER.md`) but must not attach any GOV-SUB01 residue label to it. This tension introduces no new symbol and does not change `P0-01` or `P0-04`. Any residue classification, if reached, comes only from an executed deletion test — never asserted in advance and never read off the axiom status.
+
+---
+
+## 14. Selection-Event Threshold Operationalization (open, registered 2026-08-06)
+
+### Current State
+
+- `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T05` fixes **real choice moment** as a live `L_0 -> L_1` anchoring event whose result genuinely constrains the future selection space, and lists what does *not* qualify (script execution, habit replay, gradient following, `L_2` label optimization).
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` (T-D, P2-P3) supplies the positive side P1-T05 does not carry: five functional conditions — difference manifestation (`CG-0`), non-equivalent registration (`CG-1`), path efficacy (`CG-2`), consequence bearing (`CG-3`), historical efficacy (`CG-4`) — plus a three-tier threshold structure (candidate formation / process unfolding / event standing).
+- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` grades each condition (`DMF` 0-3, `NER` 0-4, `PEF` 0-4, `CBP` 0-4, `HEF` 0-4) and sets audit-default minima `DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` under a non-compensation rule.
+- Compact discrimination layer: `03_Bridges/SRT_Selection_Event_CompactCore.md`.
+
+### Problem Point
+
+The bridge's own conclusion states that "effective strength at the relevant scale" still requires domain operationalization, and the protocol states that its minima are **audit defaults, not a cross-domain necessary-and-sufficient theorem**. Three exposures follow:
+
+1. **Threshold status.** `DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` have no derivation from P0/P1 and no cross-domain calibration. They are currently conventions that make audits comparable, not established thresholds. They must not be cited as SRT-derived criteria.
+2. **Discriminating gain unproven.** Degradation trigger 1 of the bridge is that ordinary causal transition, constraint, and path dependence may already explain every case the `CG` conditions explain. No executed test yet shows a case where the `CG` reading yields a counterfactual or interventional difference that the reduced vocabulary cannot produce. This exposure is the same shape as, but distinct from, §13: §13 asks whether the `selection` primitive dissolves into competitor vocabulary; §14 asks whether the five-gate *event criterion* adds discriminating power over plain causal description.
+3. **Relation to P1-T05 unformalized.** Whether the five gates are necessary conditions for a real choice moment, sufficient conditions, or merely a correlated audit surface is not established. The bridge explicitly declines to reduce P1-T05 to the five conditions.
+
+### Future Hardening Direction
+
+Progress would be at least one of:
+
+1. a case where a `CG`-based verdict and a plain causal-transition verdict **diverge**, with the divergence confirmed by intervention rather than by relabeling;
+2. a domain-specific derivation or calibration of one minimum threshold from independently motivated constraints, replacing the audit-default convention;
+3. a formal statement of the P1-T05 ↔ `CG-0..CG-4` relation (necessary / sufficient / neither), with the failure conditions of that statement made explicit;
+4. an executed negative control in which a system passing all five gates is independently judged not to have made a selection, forcing a threshold or condition revision.
+
+Until then, `CG-0..CG-4`, the graded ladders, and the minima remain **P2-P3 audit apparatus**. They may not be presented as canonical criteria for selection, subjecthood, consciousness, freedom, `L_2`, or generative health, and passing all five gates licenses only the phrase "bounded selection-event candidate." This tension introduces no new symbol and does not change P1-T05.

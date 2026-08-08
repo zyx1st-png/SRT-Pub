@@ -30,6 +30,17 @@ updated: 2026-08-08
 - 休眠层（AI / Neuroscience / Physics / Spirituality）继续按“带冻结戳的图书馆”治理；材料可进入桥、卡片和索引，但不自动触发 canonical 或正文升级。
 - 独立 P4 `Stake–Future Selectability MVP` 已完成 12×6 formal cohort，冻结裁决为 **UNINTERPRETABLE PROTOCOL**：T/S Reach20 逐-cell 有效性门失败 8/48；M4 亦未提升分组样本外预测。旧 selective-resynchronization NO-GO 保持不变，canonical 文件未修改。
 - 停驻内容统一看 `_SRT_PARKED_INDEX.md`；最新作者排期以 `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` 为准。
+- **"材料已融入"的判据自 2026-08-06 起收紧，2026-08-07 再拆为两个轴**：verdict A、SourceCard、Material Log 登记、patch、hook 有 target 均只证明**档案化／工程化**，不证明进入理论。
+  - **Axis A `assimilation_state`**（结构，可静态检查）：理论增量走到哪了。`active_complete` 要求原生命题／活跃 owner／检索路径／快速层可读／旧表述已处理五项齐备。
+  - **Axis B `behavior_validation`**（行为，**只能由实跑设定**）：新会话是否已被证明会因此改变判断。**回归套件存在不等于回归套件通过**；CI 永远只能报 `untested`。
+  - `effectively_assimilated` 是两轴的**推导值**，不得手写。
+  - 当前 16 节点：Axis A `active_complete` **8** ／ `partially_active` 6 ／ `engineered_not_active` 1 ／ `author_gate` 1；Axis B `robustly_observed` 2 ／ `observed` 3 ／ `untested` 10 ／ `not_applicable` 1；推导出的 `effectively_assimilated` = **2**（要求 bounded + robustly_observed）。
+  - **`engineered_not_active` 从 4 降到 1**，不是因为施工，而是因为探针推翻了静态判断。剩下的 1 个（`NODE-BOOK-BACKFLOW`）依据是内容层核实而非 hook 推理，仍待探针。
+  - `NODE-CHOICE-GENERATION`：`observed`（unconstrained），PR #744 的贡献是 `retrieval_efficiency_only`，判断差分为零——**节点可用**与**PR 有增量**是两件事，不得互相代替。
+  - `NODE-AI-REASONING`：`robustly_observed`（bounded ×3），零施工达成。
+  - **强制前置协议**：任何节点在立项做活跃层之前，先跑 **bounded** 基线探针（`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`）；基线能答对的，不按"活跃层缺口"立项。已按此判定 `NODE-AI-REASONING` 为 Case A，不施工。
+  - **`engineered_not_active` 这一档整体可疑**：它多数依据「patch 没有 hook」，而该推理已被 `NODE-AI-REASONING` 证伪——patch 内容可经非 hook 路径进入 owner，且 `<域>/patches/` 本身就在有界检索可达范围内。
+  - 全仓状态见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`，节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`，行为实跑记录见 `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md`。
 
 ## 当前仓库状态
 
@@ -64,6 +75,25 @@ updated: 2026-08-08
 - 冻结 Reach20 有效性门在 T/S 中仅 40/48 通过，故裁决为 **UNINTERPRETABLE PROTOCOL**；不以 Emp5 的正向结果替换预注册 Reach20 门。
 - 锁定预测同样不利：M4 相对 M3 的 LOSO CV R² 变化为 −1.0275，NRMSE 恶化 13.04%；`dV_CF_pre` 标准化 β=0.0300，seed-cluster 95% CI [−0.2610, 0.1924]。
 - 结果只适用于本架构下的 surrogate-stake → counterfactual-sensitivity → future-selectability 桥；不验证 canonical `d`，不推断意识，不改动 Core 与休眠 owner 文件。
+### 2026-08-08 · 命题级语义覆盖审计（审计单位改变）
+
+- **审计单位从"文件工程状态"改为"已确认的理论命题"。** 理由是连续 **5 次假阴性**：静态清单判"未吸收"，行为探针 5 次全部推翻。
+- 新增 `Operations/Audits/SRT_CONFIRMED_PROPOSITION_SEMANTIC_COVERAGE_AUDIT_2026-08-08.md`：审计 **18 条已确认命题**（13 条作者裁决 + 5 条 A 类材料）。结果 explicit 11 / implicit 2 / partial 4 / conflict 1 / **archived_only 0**。
+- **本轮样本内没有找到一条"作者已确认、AI 从当前 owner 学不到"的理论命题。** 唯一 confirmed-unassimilated 项不是命题，是 `NEUROSCIENCE_COMPACT_REGISTRY.md` 陈旧（止于 N9，不指向 hardening index）——由行为探针主动报告，静态审计看不见。
+- **`NODE-NEURAL-DECODABILITY` 与 `NODE-PHYSICS-MEASUREMENT` 的 `engineered_not_active` 均不成立**：neural 0 次导航 8/8 全对，physics 1 次导航 7/7 全对。"五张 hook 全 pending""落点文件从未创建"都没有妨碍检索。
+- `NODE-CONSCIOUSNESS` 三次 bounded run 21/21 → `robustly_observed`，零施工。探针还找出 3 个静态清单从未登记的 owner。
+- 有界检索协议加入**运行前冻结的成功门槛**；一次 Choice Generation 运行因超预算被**作废**（未按有利方向重读）。
+- 三轴 `effectively_assimilated` 收紧：现在要求 `active_complete + robustly_observed + bounded`，无预算深搜的 `observed` 不再满足。
+- **本轮不施工**：未改 canonical / Core / domain owner / CompactCore / router / bundle。
+
+### 2026-08-08 · 三轴状态、有界检索协议与 AI-REASONING 基线探针
+
+- 状态再拆一轴。两轴仍然把两件事混在一起：`behavior_validation = mixed` 把「这个 PR 没加东西」记成了「这个节点没生效」，而实跑同时显示**两个条件都检索到并正确用了该节点**。现在是三轴：`structural_assimilation`（结构）／`behavioral_availability`（**绝对**，是否被观察到检索并使用）／`intervention_effect`（**按干预记录**，某个 PR 加了什么）。`effectively_assimilated` 重新定义为只描述节点，不描述 PR。
+- 新增 `Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`：启动文件免费，此后最多 6 个正文文件 + 2 次导航。理由是上一轮基线用 27 个文件、第 9 个才到判别层——「最终搜得到」不是「活跃理论」。`robustly_observed` 现在要求重复的 bounded 运行。
+- **`NODE-AI-REASONING` 基线探针 = Case A，不施工。** `main` 有界预算下 3 次独立运行、24/24 通过（含 4 道反刷分正例）。**零施工**即达 `robustly_observed`，是第一个到这一档的节点。
+- **更正一个假阴性**：该节点此前被记为 `engineered_not_active`，依据是「AIREASON01/AIEVID01 没有 hook」。两张 patch 其实早已进入活跃 owner（`Bridge/SRT_Context_Coherence_Intelligence_Interface.md` §5；`AI/AI_POSITIONING_NOTE.md`）。**hook 缺席不等于内容缺席**——这是本项目反对的那个无效推理的反向版本。
+- 连带：`NODE-NEURAL-DECODABILITY` 与 `NODE-PHYSICS-MEASUREMENT` 的 `engineered_not_active` 同源于「没有 hook」，**整档可疑**，必须先探针再考虑施工。
+- 施工队列取消。改为流程：候选 → bounded 探针 → Case A 停 / B 做活跃层 / C 做内容写回 / D 降级为档案。
 
 ### 2026-08-07 · NEURAL23 具身节律准入桥
 
@@ -73,6 +103,23 @@ updated: 2026-08-08
 - 生理 synchrony 继续只按领域可测机制使用，不恢复为跨层级 SRT primitive，也不复活 selective-resynchronization 构念；一般跨层过程仍使用“选择性再组织”。
 - 形成 P4 `Phase x Stake` 差异预测，以及 matched-coupling/different-recovery、state-switch accessibility、selection-vs-plasticity eligibility dissociation 三组补充测试。
 - SourceCard、patch、landing-ledger hook、Material Log、两级索引与 registries 已同步；canonical `d` / `Psi_f` / `T_dir` / Core axioms 和休眠 owner 正文未修改。
+
+### 2026-08-07 · 行为回归实跑与两轴状态模型
+
+- 状态拆为两轴：`assimilation_state`（结构，可静态检查）与 `behavior_validation`（行为，**只能由实跑设定**）；`effectively_assimilated` 改为推导值。检查器现在拒绝任何无实跑证据的行为结论。
+- 16 节点重新分类。**更正 2026-08-06 的错误结论**："14 个节点被同一项拦住：没有行为回归测试"是错的——只有 4 个节点结构完整，其余多数在 EA-1/EA-2/EA-4 就被拦下。
+- 完成两条件行为回归（18 题：12 回归 + 6 分布外迁移）。**PR 条件 18/18，基线也 18/18，差分为零。**
+- **更正 2026-08-06 的核心诊断**：初版称新会话"读不到"选择事件材料。实跑证伪——基线经 `STATUS.md` 权威锚点 → 目录列举 → frontmatter `dependency:` 链拿到了全部关键文件。准确说法是缺**声明式**可达性，不是缺可达性；80.6% 可达性缺口这个数字因未计入依赖链而高估。
+- `NODE-CHOICE-GENERATION` 最终状态：`active_complete` + `mixed` → **不是** effectively assimilated。
+
+### 2026-08-06 · 活跃理论吸收审计与选择事件节点试点
+
+- 新增 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`：区分档案化／工程化／理论生效三层，给出 16 个理论节点的吸收状态与可复现统计方法。
+- 关键诊断：全部 24 张 hook 的落点**无一**指向 router、deep theory map、快速层或 context bundle——`正文 → 活跃层`这一段在管线定义里从未存在。`_SRT_AGENT_RETRIEVAL_PROFILE.md` 此前把 `03_Bridges/` 整体描述为"邻近理论翻译"，导致选择判断类任务不会打开该目录；本轮已修正。
+- 端到端试点「选择生成条件与真实选择事件」：新增 `03_Bridges/SRT_Selection_Event_CompactCore.md` 快速判别层（五门、五把梯子、三门槛、四类实践判读），登记 `Core/SRT_OPEN_TENSIONS.md §14`，接入 router §23a 与 deep theory map §19a，装入 `COMPACTCORE` 包，配 12 道行为回归题。
+- 作者裁决 G1（可再选择性为限定性健康判据）与 G2（耗散结构与选择结构分层）首次进入活跃层。
+- `scripts/check_active_theory_assimilation.py` 按 Anti-Blocking Gate 以 report-only 接入 preflight；`--strict-node` 只对本轮声称已吸收的节点严格。
+- `CG-0..CG-4` 门槛值仍是审计默认约定，不是已证定理；claim level 全程 P2-P3，不改 P1-T05。
 
 ### 2026-08-05 · 工作线排期与仓库收口
 

@@ -642,6 +642,39 @@ When answering or editing a non-simple SRT question:
 
 ---
 
+## 23a. Route: Choice Generation Conditions / Real Selection Event / Pseudo-Choice
+
+**Use when the query mentions**: 这算不算真的选择, real choice vs script, 伪选择 / pseudo-choice, 惩罚性选择, "the AI chose", 输出不同是否等于选择, 建议是否等于决策, 后果落到谁身上, consequence-bearing position, 有记忆是否等于历史写回, 选择生成条件, 选择事件判据, CG-0..CG-4, DMF / NER / PEF / CBP / HEF, 统一选择事件审计, 耗散结构是不是选择.
+
+### Primary
+
+- `03_Bridges/SRT_Selection_Event_CompactCore.md` — 快速判别层（五门、五把梯子、三门槛、四类实践判读）；**先读这一份**
+- `Core/SRT_Core_21b_Constitutive_Theorems.md` — P1-T05 Real Choice Moment（canonical 承载点）
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` — T-D 条件矩阵全文（P2-P3）
+- `Core/SRT_OPEN_TENSIONS.md §14` — 门槛与判别增益尚未闭合
+
+### Secondary
+
+- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` — 分级门定义、边界冻结要求、六种拼接陷阱
+- `03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md` — T-B 过程层
+- `03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` — T-E 耗散／选择分层
+- `03_Bridges/SRT_Selection_Dynamics_MSD_Bridge.md` — 排除／定形／写入／锚定／回流串联
+- `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md` — G1 可再选择性、G2 耗散分层的作者裁决
+- `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md` — 12 道行为回归题
+
+### Boundary
+
+- 本路由全部内容为 **P2-P3**；`CG-0..CG-4`、五把梯子与最低门槛 **不是** canonical 判据，不得用于裁定 `d` / `Ψ_f` / `T_dir` / `Ĝ_θ` / `L_0-L_2` 的定义。
+- 五门达标只允许说“**有界选择事件候选**”，**不**等于主体性、意识、自由意志、伦理责任、`L_2` 或生成健康。
+- 不可补偿：任一门未达最低等级，不得由其他门的高等级补偿；不同事件、边界或时间尺度的证据不得拼接。
+- **不要**把输出差异（`PEF-0`）、建议接口（`PEF-1`）、一般耗能（`CBP-1`）或短期状态携带（`HEF-1`）读成对应条件已成立。
+- **不要**把惩罚性选择说成“没有选择”——这遮蔽真实承担与结构责任；也不要把“选项少”当作伪选择的判据。
+- **不要**把可再选择性写成选择发生的必要条件（作者裁决 G1 为限定性确认）。
+- **不要**把耗散结构写成选择的普遍必要前身（作者裁决 G2 为分层）。
+- 生成条件、事件判据、脚手架、生成健康四者分工固定，不得互相替代。
+
+---
+
 ## 24. Maintenance Rule
 
 Whenever a new deep file is created:

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-08
-source_commit: 515052c5
-source_branch: HEAD
+source_commit: 90766ef6
+source_branch: claude/active-theory-assimilation-2026-08-06
 source_dirty: false
-inputs_digest: a72b0c0b34c5fa8c
+inputs_digest: 5cc635813dad56af
 ---
 
 # SRT 灵性领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: a72b0c0b34c5fa8c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-08 |
-| 来源 commit | `515052c5` |
-| 来源分支 | `HEAD` |
+| 来源 commit | `90766ef6` |
+| 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
@@ -155,6 +155,61 @@ inputs_digest: a72b0c0b34c5fa8c
 - 回答涉及上表任一阻塞目标时，注意本包中对应正文**尚未吸收**该笔回写。
 - 各阻塞目标彼此独立：不要把某一目标的缺口范围套用到另一个上。
 - 不要把 planned-but-never-created 的 target 当作已存在的文件引用。
+
+
+### G5 — 多数理论节点未进入活跃层；进入的也未经行为验证（严重度：中）
+
+**受影响**：下表所列节点；这些节点的理论增量在本包中**不存在**，也不在任何默认读取路径上
+
+#### SOURCE EXTRACT — 来源原文（逐字抽取）
+
+**来自 `Operations/Audits/data/srt_active_theory_nodes.json`（逐条抽取 `assimilation_status` 非 `effectively_assimilated` 的节点）**：
+
+> | node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |
+> |---|---|---|---|---|
+> | `NODE-CHOICE-GENERATION` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-SELECTION-ONTOLOGY` |  |  | — | — |
+> | `NODE-L0-L1-L2` |  |  | — | — |
+> | `NODE-D-VALUE` |  |  | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
+> | `NODE-PSI-F` |  |  | — | — |
+> | `NODE-T-DIR` |  |  | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
+> | `NODE-GHOST-OPERATOR` |  |  | — | — |
+> | `NODE-SUBJECTHOOD` |  |  | — | — |
+> | `NODE-CONSCIOUSNESS` |  |  | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | — |
+> | `NODE-AI-REASONING` |  |  | `AI/SRT_AI_Architecture_CompactCore.md` | — |
+> | `NODE-NEURAL-DECODABILITY` |  |  | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
+> | `NODE-LIFE-DISSIPATIVE` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-PHYSICS-MEASUREMENT` |  |  | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
+> | `NODE-SOCIAL-L2` |  |  | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
+> | `NODE-ENTROPY-REORG` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-BOOK-BACKFLOW` |  |  | — | — |
+
+#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
+
+清单共 16 个节点。状态分**两个轴**，不可合并读：
+
+- **Axis A（结构）**：0 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
+- **Axis B（行为）**：**0 个**有已记录的通过运行。其余 0 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+
+`effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
+
+其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——那只证明它被**保存**和**安排**了，不证明它进入了任何 AI 默认会读的文件。
+
+本包按清单额外装载了以下快速层（除各领域 CompactCore 之外）：
+
+- `03_Bridges/SRT_Selection_Event_CompactCore.md`
+
+轴的含义见清单 `axes` 与 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`。
+
+#### USAGE POLICY — 使用规则
+
+*授权依据：`Operations/Audits/data/srt_active_theory_nodes.json` 的 `status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`*
+
+- 回答涉及上表任一节点时，**不要**因为本包没有相关内容就断言仓库没有；先按清单的 `active_owners` 去取。
+- `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。
+- 额外装载的快速层均为 **P2-P3**，不得用于裁定任何 canonical 定义。
+- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。
+- 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。
 
 
 ### G4 — 行文简写路径对照（严重度：低）

@@ -55,7 +55,9 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-06_Part01 | [Material_Log/2026-06_Part01.md](Material_Log/2026-06_Part01.md) | 1 |
 | 2026-07_Part01 | [Material_Log/2026-07_Part01.md](Material_Log/2026-07_Part01.md) | 13 |
 | 2026-07_Part02 | [Material_Log/2026-07_Part02.md](Material_Log/2026-07_Part02.md) | 3 |
+
 | 2026-08_Part01 | [Material_Log/2026-08_Part01.md](Material_Log/2026-08_Part01.md) | 10 |
+| 2026-08_Part02 | [Material_Log/2026-08_Part02.md](Material_Log/2026-08_Part02.md) | 2 |
 
 ---
 

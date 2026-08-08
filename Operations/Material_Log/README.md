@@ -25,8 +25,11 @@ canonical: false
 | [2026-06_Part01.md](2026-06_Part01.md) | 1 | historical active split |
 | [2026-07_Part01.md](2026-07_Part01.md) | 13 | historical active split |
 | [2026-07_Part02.md](2026-07_Part02.md) | 3 | historical active split |
-| [2026-08_Part01.md](2026-08_Part01.md) | 10 | current August split; NEURAL23 added 2026-08-07 |
+| [2026-08_Part01.md](2026-08_Part01.md) | 10 | August split; NEURAL23 added 2026-08-07 |
+| [2026-08_Part02.md](2026-08_Part02.md) | 1 | current August continuation; Damasio 2026 / NEURAL24 added 2026-08-07 |
 
 ## Current note
 
-The August part now contains the Young–Ericson–Schooler brain-body synchrony review as an A-class bounded neuroscience bridge (`NEURAL23`). If a count in the root routing table temporarily lags this split index, the dated part itself is the record source for row contents; reconcile the root summary count on the next root-log maintenance touch without rewriting historical rows.
+The August continuation records Antonio Damasio's 2026 *Natural Intelligence and the Logic of Consciousness* as an A-class bounded neuroscience biological-realization / pressure bridge (`NEURAL24`). The stable increment is bearer-indexed affective readout plus a five-way stake/deviation/signal/affect/action separation; the source also triggers a future audit of the current affective-signature equation and of any hard-problem move that treats bearer-relative relevance as a completed derivation of phenomenal character.
+
+`2026-08_Part01.md` retains the Young–Ericson–Schooler brain-body synchrony review as `NEURAL23`. If a count or route in the root material log temporarily lags this split index, the dated parts themselves are the record source for row contents; reconcile the root summary on the next root-log maintenance touch without rewriting historical rows.
