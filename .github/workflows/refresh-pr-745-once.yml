@@ -1,0 +1,72 @@
+name: Refresh PR 745 Once
+
+on:
+  push:
+    branches:
+      - agent/damasio-2026-affect-stake-pressure
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/damasio-2026-affect-stake-pressure
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Merge latest main and preserve both append-only sides
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          if git merge-base --is-ancestor origin/main HEAD; then echo "latest main already contained"; exit 0; fi
+          set +e
+          git merge --no-ff --no-commit origin/main
+          rc=$?
+          set -e
+          if [[ $rc -ne 0 ]]; then
+            python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          def run(*args, check=True): return subprocess.run(args,text=True,capture_output=True,check=check)
+          conflicts=run('git','diff','--name-only','--diff-filter=U').stdout.splitlines(); print('conflicts:',conflicts)
+          for rel in conflicts:
+              p=Path(rel)
+              if rel.startswith('Operations/Context_Bundles/'):
+                  run('git','checkout','--theirs','--',rel); run('git','add','--',rel); continue
+              if rel.startswith('Registries/') and p.suffix=='.jsonl':
+                  ours=run('git','show',f':2:{rel}').stdout.splitlines(); theirs=run('git','show',f':3:{rel}').stdout.splitlines()
+                  seen=set(); out=[]
+                  for line in [*theirs,*ours]:
+                      if line not in seen: seen.add(line); out.append(line)
+                  p.write_text('\n'.join(out).rstrip()+'\n',encoding='utf-8'); run('git','add','--',rel); continue
+              base=run('git','show',f':1:{rel}',check=False).stdout; ours=run('git','show',f':2:{rel}',check=False).stdout; theirs=run('git','show',f':3:{rel}',check=False).stdout
+              a=Path('/tmp/ours'); b=Path('/tmp/base'); c=Path('/tmp/theirs'); a.write_text(ours,encoding='utf-8'); b.write_text(base,encoding='utf-8'); c.write_text(theirs,encoding='utf-8')
+              merged=subprocess.run(['git','merge-file','-p','--union',str(a),str(b),str(c)],text=True,capture_output=True,check=False).stdout
+              p.write_text(merged,encoding='utf-8'); run('git','add','--',rel)
+          left=run('git','diff','--name-only','--diff-filter=U').stdout.strip()
+          if left: raise SystemExit('unresolved: '+left)
+          PY
+          fi
+          git commit -m "Merge latest main into PR 745"
+      - name: Refresh generated metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          uv run python scripts/refresh_split_metadata.py
+          if ! uv run python scripts/build_srt_context_bundles.py --check; then uv run python scripts/build_srt_context_bundles.py; fi
+          if ! git diff --quiet; then git add -A; git diff --cached --check; git commit -m "Refresh generated governance metadata"; fi
+      - name: Verify governance
+        run: |
+          uv run python scripts/refresh_split_metadata.py --check
+          uv run python scripts/governance_preflight.py --skip-write-report --strict-split-metadata
+      - name: Push refreshed branch
+        run: git push origin HEAD:agent/damasio-2026-affect-stake-pressure
