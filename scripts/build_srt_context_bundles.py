@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import re
 import subprocess
 import sys
@@ -311,6 +312,7 @@ def working_tree_dirty() -> bool:
 # 生成结果不只依赖正文文件：§0.2 护栏读 STATUS.md 与两份审计，§0.4 读 registry 与
 # AI_START，输出形态还取决于生成脚本本身。只对正文列表做校验，会漏掉这些隐式输入。
 GENERATOR_SELF = "scripts/build_srt_context_bundles.py"
+ACTIVE_THEORY_MANIFEST = "Operations/Audits/data/srt_active_theory_nodes.json"
 GUARDRAIL_SOURCES = [
     "STATUS.md",
     "CANONICAL_REGISTRY.md",
@@ -318,12 +320,46 @@ GUARDRAIL_SOURCES = [
     "Core/SRT_Core_21b_Constitutive_Theorems.md",
     "Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md",
     "Operations/Audits/Hook_Closure_Audit_2026-07-25.md",
+    ACTIVE_THEORY_MANIFEST,
 ]
+
+
+def load_active_theory_nodes() -> list[dict]:
+    """节点清单是**人工维护**的，脚本只读不写。
+
+    这条通道解决的问题是：包定义是静态人工清单，新建的 bridge / 快速层不会自动
+    进入任何包，于是"理论增量存在"和"下一轮 AI 读得到"之间没有连接。让生成器读
+    一份显式清单，比让生成器去猜哪些新文件重要要诚实——清单里写了什么，包里就有
+    什么，谁加的、什么 claim level，都能在清单里查到。
+    """
+    raw = json.loads(read_text(ACTIVE_THEORY_MANIFEST))
+    nodes = raw.get("nodes")
+    if not isinstance(nodes, list) or not nodes:
+        fail(f"{ACTIVE_THEORY_MANIFEST} 中没有可用的 `nodes` 列表")
+    return nodes
+
+
+def active_theory_compacts() -> list[str]:
+    """清单中标了 `bundle: true` 且尚未被任何领域包收录的快速层文件。
+
+    去重是必须的：某个节点的 compact 可能本来就是领域 CompactCore（例如意识节点
+    指向 `Neuroscience/..._CompactCore.md`），那种情况下不能再装一遍。
+    """
+    already = {f for cfg in DOMAINS.values() for f in cfg["cores"]}
+    extra: list[str] = []
+    for node in load_active_theory_nodes():
+        compact = node.get("compact_layer")
+        if not node.get("bundle") or not compact or compact in already or compact in extra:
+            continue
+        if not (REPO_ROOT / compact).is_file():
+            fail(f"{ACTIVE_THEORY_MANIFEST} 的 `{node.get('node_id')}` 指向不存在的快速层：{compact}")
+        extra.append(compact)
+    return extra
 
 
 def all_inputs() -> list[str]:
     """生成结果依赖的**全部**输入：生成脚本 + 护栏来源 + 各包正文。"""
-    files = [GENERATOR_SELF, *GUARDRAIL_SOURCES, *SPINE]
+    files = [GENERATOR_SELF, *GUARDRAIL_SOURCES, *SPINE, *active_theory_compacts()]
     for cfg in DOMAINS.values():
         files += [*cfg["guards"], *cfg["nav"], *cfg["cores"]]
     return sorted(set(files))
@@ -628,9 +664,89 @@ def guard_shorthands() -> Guardrail:
     )
 
 
+def guard_active_theory() -> Guardrail:
+    """G5：清单里哪些理论节点**还没有**进入活跃层。
+
+    这条护栏存在的理由，与 G3 是同一类但更根本：G3 说"某笔回写没落地"，G5 说
+    "整个节点从未进入 AI 会读到的层"。没有它，装了包的模型会以为包里没有的东西
+    就是仓库里没有的东西——而实际情况是内容在仓库深处，只是没有任何入口指过去。
+    """
+    nodes = load_active_theory_nodes()
+    bundled = set(active_theory_compacts())
+
+    def derived(node: dict) -> bool:
+        return (
+            node.get("assimilation_state") == "active_complete"
+            and node.get("behavior_validation") == "passed"
+        )
+
+    rows = []
+    for node in nodes:
+        if derived(node):
+            continue
+        compact = node.get("compact_layer") or "—"
+        gates = "；".join(node.get("author_gates") or []) or "—"
+        rows.append(
+            f"| `{node.get('node_id')}` | {node.get('assimilation_state', '')} | "
+            f"{node.get('behavior_validation', '')} | "
+            f"{'`' + compact + '`' if compact != '—' else '—'} | {gates} |"
+        )
+    if not rows:
+        rows.append("| — | 全部节点均已结构激活且行为验证通过 | — | — | — |")
+
+    loaded = "\n".join(f"- `{f}`" for f in sorted(bundled)) or "- （无）"
+    assimilated = [n for n in nodes if derived(n)]
+    complete_untested = [
+        n for n in nodes
+        if n.get("assimilation_state") == "active_complete"
+        and n.get("behavior_validation") == "untested"
+    ]
+
+    return Guardrail(
+        gid="G5",
+        title="多数理论节点未进入活跃层；进入的也未经行为验证",
+        severity="中",
+        affected="下表所列节点；这些节点的理论增量在本包中**不存在**，也不在任何默认读取路径上",
+        extracts=[
+            (
+                f"来自 `{ACTIVE_THEORY_MANIFEST}`（逐条抽取 `assimilation_status` 非 "
+                f"`effectively_assimilated` 的节点）",
+                "| node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |\n"
+                "|---|---|---|---|---|\n" + "\n".join(rows),
+            )
+        ],
+        interpretation=(
+            f"清单共 {len(nodes)} 个节点。状态分**两个轴**，不可合并读：\n\n"
+            f"- **Axis A（结构）**：{len(complete_untested) + len(assimilated)} 个达到 "
+            f"`active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。\n"
+            f"- **Axis B（行为）**：**{len(assimilated)} 个**有已记录的通过运行。"
+            f"其余 {len(complete_untested)} 个结构完整的节点是 `untested`：**没有任何证据表明"
+            "它们真的改变了判断**。\n\n"
+            "`effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。"
+            "回归测试文件存在**不等于**回归测试通过。\n\n"
+            "其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——那只证明它被"
+            "**保存**和**安排**了，不证明它进入了任何 AI 默认会读的文件。\n\n"
+            "本包按清单额外装载了以下快速层（除各领域 CompactCore 之外）：\n\n"
+            f"{loaded}\n\n"
+            "轴的含义见清单 `axes` 与 "
+            "`Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`。"
+        ),
+        policy=(
+            "- 回答涉及上表任一节点时，**不要**因为本包没有相关内容就断言仓库没有；"
+            "先按清单的 `active_owners` 去取。\n"
+            "- `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。\n"
+            "- 额外装载的快速层均为 **P2-P3**，不得用于裁定任何 canonical 定义。\n"
+            "- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。\n"
+            "- 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。"
+        ),
+        policy_source=f"`{ACTIVE_THEORY_MANIFEST}` 的 `status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`",
+    )
+
+
 def build_guardrails() -> str:
     return "\n\n".join(
-        render_guardrail(g) for g in (guard_p1_t07(), guard_dqo(), guard_hooks(), guard_shorthands())
+        render_guardrail(g)
+        for g in (guard_p1_t07(), guard_dqo(), guard_hooks(), guard_active_theory(), guard_shorthands())
     )
 
 
@@ -1023,14 +1139,19 @@ def generate(prov: Provenance, out_dir: Path) -> list[tuple[str, str, int]]:
             "CompactCore 全集", "SRT_CONTEXT_BUNDLE_COMPACTCORE.md",
             f"SRT-CONTEXT-BUNDLE-COMPACTCORE-{prov.generated}",
             "SRT CompactCore 全集上下文包",
-            [f for cfg in DOMAINS.values() for f in cfg["cores"]],
+            [*(f for cfg in DOMAINS.values() for f in cfg["cores"]), *active_theory_compacts()],
             SPINE_POINTER,
             "compactcore",
         ),
     ]
     purposes = {
         SPINE_BUNDLE_NAME: "收录承载定义权的 canonical 主干，供大模型确定 SRT 术语、公理、方程与符号的含义。",
-        "SRT_CONTEXT_BUNDLE_COMPACTCORE.md": "收录全部 18 个 CompactCore 文件，覆盖 AI / 物理 / 哲学 / 神经 / 灵性 / 核心动力学的领域主线。",
+        "SRT_CONTEXT_BUNDLE_COMPACTCORE.md": (
+            f"收录全部 {sum(len(cfg['cores']) for cfg in DOMAINS.values())} 个领域 CompactCore"
+            f"（AI / 物理 / 哲学 / 神经 / 灵性 / 核心动力学），"
+            f"外加 `{ACTIVE_THEORY_MANIFEST}` 标记为需装载的 "
+            f"{len(active_theory_compacts())} 个跨域快速层。"
+        ),
     }
     for key, cfg in DOMAINS.items():
         name = f"SRT_CONTEXT_BUNDLE_DOMAIN_{key.upper()}.md"

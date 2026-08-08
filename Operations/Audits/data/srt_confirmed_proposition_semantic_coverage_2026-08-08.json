@@ -1,0 +1,613 @@
+{
+  "schema_version": 1,
+  "audit_id": "SRT-CONFIRMED-PROPOSITION-SEMANTIC-COVERAGE-2026-08-08",
+  "date": "2026-08-08",
+  "canonical": false,
+  "unit_of_audit": "confirmed theoretical proposition / confirmed distinction -- NOT files, hooks, patches or SourceCards",
+  "scope": {
+    "covered": [
+      "All 13 author-confirmed propositions in Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md (gates G1, G2, G4, G5, G6 -- the only fully closed author gate in the repository)",
+      "3 sampled Pipeline 1 A-class material propositions (REP01, NEURAL23, NEURAL18)"
+    ],
+    "not_covered": [
+      "The other ~127 A-class Material Log rows",
+      "The 11 choice traces and ghost cards whose author gates are NOT closed (their content is provenance, not confirmed theory, and is explicitly out of scope per the round's own rule)",
+      "The 10 Conversations/ files (lower evidence grade than choice traces by their own index)",
+      "Book vocabulary sync bridge candidate terms",
+      "Spirituality domain entirely"
+    ],
+    "sampling_warning": "16 propositions is a SAMPLE. Its class distribution must not be extrapolated to the repository."
+  },
+  "coverage_classes": {
+    "explicitly_assimilated": "an active owner carries semantically equivalent content with the same boundary; wording need not match",
+    "implicitly_assimilated": "no single owner sentence, but existing theory structure entails it and loses none of its key restriction; derivation chain must be stated",
+    "partially_assimilated": "the positive proposition landed but a guardrail, boundary, counterexample or downgrade condition did not",
+    "archived_only": "exists only in SourceCard / patch / trace / conversation / Operations plan; no owner has semantic equivalent",
+    "conflict_with_active_theory": "the confirmed content substantively contradicts current active owner text",
+    "redundant": "looks new but adds no discrimination SRT did not already have",
+    "author_gate": "still cannot be written"
+  },
+  "deletion_test": "If the originating SourceCard / patch / trace were deleted, would an AI reading only theory owners still hold this proposition's substantive discriminative power?",
+  "propositions": [
+    {
+      "proposition_id": "AD-G1",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "保留或扩展可再选择性是生成健康度的重要判据，但不是「选对」的唯一标准，也不是一次选择得以发生的必要定义。",
+      "prohibited_inference": "不得把可再选择性写成选择发生的必要条件。",
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md",
+        "03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "T-D §6 与 CompactCore §6 都逐字承载了限定语。2026-08-07 与 08-08 的行为运行均正确调用。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "删掉裁决文件后，仅读 T-D/CompactCore 的 AI 仍能作出该区分。已由 T-11 回归题验证。"
+    },
+    {
+      "proposition_id": "AD-G2",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "耗散结构可构成部分域中选择结构的实现基础／生成前提／机制原型，但既非充分条件，也暂不确认为普遍必要前身。",
+      "prohibited_inference": "不得把耗散升格为选择的普遍物理来源。",
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md",
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "T-E 全文即此裁决的展开；CompactCore §6 保留分层措辞。行为运行 T-12 正确。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "可由 T-E 独立得出。"
+    },
+    {
+      "proposition_id": "AD-G4-1",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "过程层：系统面对结构失配、解耦或随机扰动时，通过最低非中立性的差异比较，将部分可能性重新组织为方向性路径（比较性选择再组织）。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md",
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "T-B 是该层的专门 bridge。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "可由 T-B 得出。"
+    },
+    {
+      "proposition_id": "AD-G4-2",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "事件层：再组织造成差异硬化、路径排除、结果维持或历史写回，并伴随真实代价／后果／承受关系时，才进入选择事件。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md",
+        "Core/SRT_Core_21b_Constitutive_Theorems.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a",
+        "_SRT_DEEP_THEORY_MAP.md#19a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "T-D §3.3 + CompactCore §4；与 P1-T05 的分工已写明。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "可由 CompactCore 三门槛表得出。"
+    },
+    {
+      "proposition_id": "AD-G4-3",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "评价层：是否在承担后果的同时保留或扩展未来可再选择性。事件层与评价层不得混写。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "CompactCore §6 与降级触发 7 直接承载。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "可由 CompactCore §6/§7 得出。"
+    },
+    {
+      "proposition_id": "AD-G5-2",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "痛苦是具身位上的结构性损失压力：产生于结构性失配、损伤威胁、维持条件破坏或可选路径收缩，与具有真实 stakes 的具身承受位置耦合；「损失」含已发生损失、损失风险、维持失败与未来选择空间被压缩。",
+      "prohibited_inference": "不得把 G5-2 的「痛苦」直接读成 owner 的 Def-PAIN。",
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": false,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md"
+      ],
+      "fast_layer_refs": [],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "partially_assimilated",
+      "notes": "只落在 T-B。canonical 苦难 owner `Core_Law/SRT_Suffering.md` 中「结构性损失」「具身位」命中数为 0，且该 owner 不反向链接 T-B（T-B 链接它 2 次，单向）。作者裁决自身写明「进入正式理论文件时仍须与 pain/distress/suffering 既有类型学逐项对表」——该对表从未执行。语义张力具体在：owner 的 Def-PAIN 限定为 θ_somatic 躯体威胁信号，而 G5-2 的「痛苦」明确含「可选路径收缩／未来选择空间被压缩」，后者在 owner 词汇里属 suffering（actual/available 落差）而非 pain。两处「痛苦」外延不同。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "只读 `Core_Law/SRT_Suffering.md` 的 AI 会得到 pain/suffering 二分，但拿不到「具身位结构性损失压力」这一表述，也不会知道两处外延不同。**候选真缺口**。"
+    },
+    {
+      "proposition_id": "AD-G5-3",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "比较不是扰动进入系统的第一道因果门，而是扰动从一般变化转化为选择候选的关键门槛；分配、显现与边界过滤可先于比较。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md",
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "T-D 的 CG-0（差异显现）先于 CG-1（非等价登记）正是这一分层；CompactCore §2 的门序承载它。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "可由 CG-0/CG-1 的次序独立得出。"
+    },
+    {
+      "proposition_id": "AD-G5-4",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "关切结构参与对扰动的非中立加权，使部分扰动获得与维持、损失、行动和未来路径相关的选择意义；关切不等于有意识欲望，也不是候选形成的唯一原因。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": false,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md",
+        "_SRT_D_VALUE_CANONICAL.md"
+      ],
+      "fast_layer_refs": [],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#2"
+      ],
+      "coverage_class": "partially_assimilated",
+      "notes": "d-value canonical 承载「关切≠偏好/奖赏/显著性」与非可替代性，语义上覆盖了「关切不等于有意识欲望」。但「关切结构对扰动作非中立加权，从而决定噪声与选择候选之边界」这一**候选形成侧**的作用，在 d-value owner 中没有对应表述——那里 d 是选择事件整合的关切范围，不是候选准入的加权器。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "只读 d-value canonical 的 AI 能答「关切≠欲望」，但不会把关切放到候选形成门上。**次级候选缺口**。"
+    },
+    {
+      "proposition_id": "AD-G5-5",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "痛苦是具身结构性损失形成的最低强制性选择压力，但不是主体选择的唯一动力，也不必在时间上最早出现；它迫使登记损失，却不保证健康重组。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": false,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md"
+      ],
+      "fast_layer_refs": [],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "partially_assimilated",
+      "notes": "同 G5-2：只在 T-B。`Core_Law/SRT_Suffering.md` 无对应表述。其中「不保证健康重组、可能导致冻结／逃避／重复／进一步封闭」与 owner 的 T-SUFF-4 反最小化原则方向相容但不同一。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "只读苦难 owner 的 AI 拿不到「最低强制性但非唯一动力、非最早」这组限定。**候选真缺口**。"
+    },
+    {
+      "proposition_id": "AD-G5-6",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "比较并非源于预先存在的中立尺度；资源条件与未来后果提供现实不对称，关切结构作具身加权，达到最低非中立门槛时比较关系形成。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md",
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "T-D CG-1 明写「不要求一个预先存在的中立尺度。比较尺度可以由边界、资源、历史约束、风险、未来后果或具身关切在过程中共同生成」。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "逐字可由 T-D CG-1 得出。"
+    },
+    {
+      "proposition_id": "AD-G6-1",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "理论层统一使用「选择生成条件」；与「选择事件判据」「选择脚手架」三者分工固定。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a",
+        "_SRT_DEEP_THEORY_MAP.md#19a"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "T-D §4/§5 与 CompactCore §6 承载三分工；行为运行 T-10 正确。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "可得出。"
+    },
+    {
+      "proposition_id": "AD-G6-2",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "跨层级统一使用「选择性再组织」；「同步／去同步」仅在两种场景保留（引用 source trace；领域内可测同步指标）。不得把选择写成恢复统一秩序。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": false,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md",
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "partially_assimilated",
+      "notes": "T-B/T-D 已统一用词。`Core/SRT_OPEN_TENSIONS.md §12`（2026-07-10 登记，早于本裁决）仍以 「selection is a generative resynchronization of randomness」呈现该读法。**这不是违规**——它是按 G6-2 允许的第一种场景引用 source trace。但 §12 没有告诉读者该词已于 2026-08-04 被裁定为不再作跨层级定义用语。属陈旧而非冲突。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "只读 OPEN_TENSIONS §12 的 AI 会以为 resynchronization 仍是活的跨层级表述。**低强度陈旧点**，一行注即可修。"
+    },
+    {
+      "proposition_id": "AD-G6-3",
+      "source_type": "author_confirmed_decision",
+      "source_refs": [
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "author_status": "author_confirmed",
+      "proposition": "理论层统一使用「最低非中立性」；它是比较发生的门槛而非选择完成的充分条件；未完成形式化前不主张跨系统统一数值常数，ε 仅表示具体模型中的阈值或下界。",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": false,
+        "implicit_owner_match": true,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "_SRT_SYMBOL_TABLE.md",
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md"
+      ],
+      "fast_layer_refs": [
+        "03_Bridges/SRT_Selection_Event_CompactCore.md"
+      ],
+      "retrieval_refs": [
+        "_SRT_CONTEXT_ROUTER.md#23a"
+      ],
+      "coverage_class": "implicitly_assimilated",
+      "notes": "符号表以英文 `L₀ Minimum Non-Neutrality` 承载该概念，并有 Usage Rule 9 的四路 ε 分裂（ε_pg / ISP-level ε / ε_reg / ε_s 不得合并为一条经验定理），以及 ε_pg 被标为「structural postulate（scalar seed, no inherent direction）」。推导链：既然四个 ε 不得合并、且 ε_pg 只是结构公设，则「跨系统统一数值常数」的主张已被排除。字面缺的是「不自动等同于普遍本体常数」这句（命中数 0），但结论可稳定推出。",
+      "confirmed_unassimilated": false,
+      "deletion_test": "只读符号表的 AI 能推出不得声称统一常数。判 implicit 而非 explicit。"
+    },
+    {
+      "proposition_id": "MAT-REP01",
+      "source_type": "pipeline1_A_material",
+      "source_refs": [
+        "Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md"
+      ],
+      "author_status": "material_adjudicated_A",
+      "proposition": "经验等价但组合规则不同的两个理论表述，其差别对 SRT 有实质意义：SRT 主张不得因为一个等价表述把信息从复系数搬到实标记／商类／旋转而改变。表示协变护栏 + theory-package 五元组（状态空间／操作／组合／等价／读出）。",
+      "prohibited_inference": "不得把复希尔伯特空间、显式 i 或张量矩阵表示直接升级为 SRT 本体；实验排除的是具名 postulate package，不是裸数域。",
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md",
+        "Materials/2026/SRC_2025_11_07_Physics_Real_Quantum_Representation_Composition_Quanta.md",
+        "Physics/SRT_Physics_Claim_Status.md"
+      ],
+      "fast_layer_refs": [],
+      "retrieval_refs": [
+        "bounded probe 2026-08-08"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "2026-08-08 bounded probe overturns the archived_only classification. A fresh session reached the SourceCard and REP01 in one navigation action, inside budget, and answered all three representation-covariance questions correctly (theory-package tuple, composition rules as substantive constraint, package-targeted falsification). Hook absence and the never-created Physics/SRT_Physics_Bridge_v0_2.md did not block retrieval.",
+      "confirmed_unassimilated": false,
+      "deletion_test": "A session reading only owners plus the reachable patch retains the discrimination. NOT a gap.",
+      "probe_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+    },
+    {
+      "proposition_id": "MAT-NEURAL23",
+      "source_type": "pipeline1_A_material",
+      "source_refs": [
+        "Neuroscience/patches/SRT_Neuro_NEURAL23_Embodied_Rhythmic_Eligibility_v0_1.md"
+      ],
+      "author_status": "material_adjudicated_A",
+      "proposition": "脑—身体节律对候选进入竞争／门控／稳定过程作时相调制＝momentary selection eligibility；须区分 selection weight / selection opportunity / friction；并与 plasticity eligibility 双门分离：eligibility to become current reality != eligibility to enter history。",
+      "prohibited_inference": "生理 synchrony 不得恢复为跨层级 SRT primitive；不得复活 selective-resynchronization 构念。",
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "Neuroscience/patches/SRT_Neuro_NEURAL23_Embodied_Rhythmic_Eligibility_v0_1.md",
+        "Neuroscience/_SRT_Neuroscience_Hardening_Index.md",
+        "STATUS.md"
+      ],
+      "fast_layer_refs": [],
+      "retrieval_refs": [
+        "bounded probe 2026-08-08"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "2026-08-08 bounded probe overturns archived_only. STATUS.md's 2026-08-07 entry alone already carried the selection weight / selection opportunity / friction split verbatim, and the hardening index §4 carried the full sequence plus the 'must not be confused with N10 plasticity eligibility' guard. Answered correctly with zero navigation actions.",
+      "confirmed_unassimilated": false,
+      "deletion_test": "Retained. NOT a gap.",
+      "probe_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+    },
+    {
+      "proposition_id": "MAT-NEURAL18",
+      "source_type": "pipeline1_A_material",
+      "source_refs": [
+        "Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md"
+      ],
+      "author_status": "material_adjudicated_A",
+      "proposition": "可解码性不等于锚定：L_1 anchoring 不得由高解码性能推出；混合选择性不是 L_0；alpha 多样性不度量自由、意识或本体可能性。",
+      "prohibited_inference": "不得写「该论文证明了选择先于表征」。",
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": true,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "Neuroscience/patches/SRT_Neuro_NEURAL18_Selection_Ready_Geometry_Decodability_Anchoring_Gate_v0_1.md",
+        "Neuroscience/_SRT_Neuroscience_Hardening_Index.md"
+      ],
+      "fast_layer_refs": [],
+      "retrieval_refs": [
+        "bounded probe 2026-08-08"
+      ],
+      "coverage_class": "explicitly_assimilated",
+      "notes": "2026-08-08 bounded probe overturns archived_only. The hardening index §4 carries the five-way split (decodability / causal access / behavioral use / conscious anchoring / L2 write-back) and the 'mixed selectivity is selection-ready capacity, not selection' verdict. Reached with zero navigation.",
+      "confirmed_unassimilated": false,
+      "deletion_test": "Retained. NOT a gap.",
+      "probe_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+    },
+    {
+      "proposition_id": "NAV-NEURO-REGISTRY",
+      "source_type": "behavioral_probe_finding",
+      "source_refs": [
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+      ],
+      "author_status": "not_an_author_proposition_navigation_defect",
+      "proposition": "Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md is stale: its §1/§4 maps stop at N9, it mentions none of N10-N12 or NEURAL15-23, and it does not name _SRT_Neuroscience_Hardening_Index.md as the current material-patch authority.",
+      "prohibited_inference": null,
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": false,
+        "implicit_owner_match": false,
+        "only_archival_match": false,
+        "conflict_match": true
+      },
+      "owner_refs": [
+        "Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md"
+      ],
+      "fast_layer_refs": [],
+      "retrieval_refs": [],
+      "coverage_class": "conflict_with_active_theory",
+      "notes": "Reported unprompted by the 2026-08-08 neural bounded probe: an agent following the registry's declared '最短主线' reading order alone would miss every file that decides the NEURAL16-23 questions. The probe succeeded only because the retrieval profile's domain starter map led it to the hardening index instead. This is a real navigation defect found by behavior, not by static audit -- and it is the opposite kind of finding from the five false negatives.",
+      "confirmed_unassimilated": true,
+      "deletion_test": "n/a -- this is a stale-pointer defect in an active navigation file, not a proposition.",
+      "probe_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+    },
+    {
+      "proposition_id": "MAT-P07",
+      "source_type": "pipeline1_A_material",
+      "source_refs": [
+        "Physics/patches/SRT_Phys_P07_Closure_Ontology_of_Physical_Objects_v0_1.md"
+      ],
+      "author_status": "material_adjudicated_A",
+      "proposition": "P10: physical objects are stable bundles of closure records; object identity is re-identification stability; P14 measurement as closure participation; P15 boundary as permeability profile.",
+      "prohibited_inference": "Do not claim fundamental particles are merely record bundles; do not imply consciousness causes collapse.",
+      "boundary": null,
+      "counterexample": null,
+      "downgrade_condition": null,
+      "semantic_coverage": {
+        "explicit_owner_match": false,
+        "implicit_owner_match": true,
+        "only_archival_match": false,
+        "conflict_match": false
+      },
+      "owner_refs": [
+        "Core_Law/SRT_L0_Metaphysics.md",
+        "Physics/SRT_Quant_01_Selection_CompactCore.md"
+      ],
+      "fast_layer_refs": [
+        "Physics/SRT_Quant_01_Selection_CompactCore.md"
+      ],
+      "retrieval_refs": [],
+      "coverage_class": "implicitly_assimilated",
+      "notes": "The 2026-08-08 physics bounded probe answered the 'are particles merely records' question correctly -- existence is the cross-section of a verb, objective = stable convergence across positions -- using Core_Law/SRT_L0_Metaphysics.md propositions 1 and 3 plus Quant_01's 'hardness comes from accumulated historical selection'. But it explicitly reported `NO REPO BASIS` for P07's actual phrase '闭合记录的稳定捆束', flagging it as external phrasing rather than repository vocabulary. So the discrimination survives without P07; P07's specific formulation does not.",
+      "confirmed_unassimilated": false,
+      "deletion_test": "Delete P07 and the correct verdict is still reachable from L0_Metaphysics. The vocabulary is lost, the discrimination is not. implicitly_assimilated, not a gap.",
+      "probe_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+    }
+  ]
+}

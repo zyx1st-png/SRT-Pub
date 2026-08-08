@@ -1,0 +1,533 @@
+{
+  "schema_version": 1,
+  "manifest_id": "SRT-ACTIVE-THEORY-NODES",
+  "generated_for": "Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md",
+  "updated": "2026-08-07",
+  "canonical": false,
+  "role": "Hand-maintained list of SRT theory nodes and where each one actually lives on the AI-active retrieval surface. Read by scripts/check_active_theory_assimilation.py and scripts/build_srt_context_bundles.py. This file routes and records; it never defines.",
+  "nodes": [
+    {
+      "node_id": "NODE-CHOICE-GENERATION",
+      "title": "Choice generation conditions and real selection events",
+      "core_question": "Under what structural conditions does ordinary change qualify as a selection candidate, and when has a real selection event occurred rather than mere output difference, advice, energy spend, or memory?",
+      "active_owners": [
+        "Core/SRT_Core_21b_Constitutive_Theorems.md",
+        "03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md",
+        "Core/SRT_OPEN_TENSIONS.md"
+      ],
+      "compact_layer": "03_Bridges/SRT_Selection_Event_CompactCore.md",
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#23a",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#19a",
+      "bundle": true,
+      "regression_tests": [
+        "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md",
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+      ],
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
+      "old_text_handled": "SRT_AI_START.md Real Choice Moment entry: negative-list-only pointer replaced with negative list plus positive discrimination pointer and three fast negatives. _SRT_AGENT_RETRIEVAL_PROFILE.md: 03_Bridges no longer described as adjacent-theory translation only.",
+      "author_gates": [],
+      "next_step": "Absolute performance passed (18/18 in Condition B) but the baseline scored the same, so no differential effect was shown. Do not re-run this suite against the same baseline; either design questions the baseline provably cannot answer, or accept that this node's content was already reachable via STATUS anchors and frontmatter dependency chains.",
+      "notes": "Pilot node for the 2026-08-06 assimilation pass. Claim level P2-P3 throughout; passing five gates licenses only 'bounded selection-event candidate'. The 2026-08-07 two-condition run falsified the audit's premise that a fresh session could not reach this material on main.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "robustly_observed",
+      "behavior_observation_mode": "bounded",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
+      "behavioral_availability_note": "Three valid bounded runs on origin/main @ aa56d7f2 (cg1, cg3, cg4), all within the 6-file / 2-navigation budget, 18/18 correct, anti-gaming positives all correct. A fourth run (cg2) scored 6/6 but used 3 navigation actions and was DISCARDED per the pre-frozen threshold rather than re-read favourably. The informative part is how they succeeded: none of the three opened the T-D bridge, and none opened the CompactCore PR #744 created. All three answered from the canonical spine (P1-T05, P1-T06, P0-02, P0-03, the R.A.C stake gate) plus a second independent path. The node's discriminative power lives in canonical, not in the fast layer this PR added.",
+      "interventions": [
+        {
+          "intervention": "PR #744 declarative fast path for the selection-event node",
+          "ref": "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md",
+          "intervention_effect": "retrieval_efficiency_only",
+          "judgment_delta": "0 (A: 17 pass + 1 partial; B: 17 pass + 1 partial)",
+          "retrieval_success_delta": "0 (both conditions reached the material)",
+          "retrieval_steps_delta": "discriminating layer at file 9 -> file 5",
+          "retrieval_file_count_delta": "27 -> 23",
+          "transfer_delta": "0 (both handled 6/6 OOD cases, including the anti-gaming anchor)",
+          "runs_per_condition": 1,
+          "reliability_claim": "none permitted at n=1; the path changed from opportunistic to declarative, but stability was not measured"
+        }
+      ]
+    },
+    {
+      "node_id": "NODE-SELECTION-ONTOLOGY",
+      "title": "Selection precedes stabilized existence",
+      "core_question": "What does it mean that selection precedes stabilized existence, and is the selection primitive dissolvable into competitor vocabulary?",
+      "active_owners": [
+        "Core/SRT_Core_21_Minimal_Axioms.md",
+        "Core/SRT_Core_21b_Constitutive_Theorems.md",
+        "Core_Law/SRT_Selection_Argument.md",
+        "Core/SRT_OPEN_TENSIONS.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": null,
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#1",
+      "bundle": true,
+      "regression_tests": null,
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#13",
+      "old_text_handled": "none-required: the node's active content is long-standing canonical; the pending increment (GOV-SUB01 deletion test) has never been executed, so nothing has been superseded.",
+      "author_gates": [],
+      "next_step": "GOV-SUB01 deletion test for the selection primitive has never been executed; residue register stays UNASSIGNED. No regression tests exist.",
+      "notes": "Well routed and bundled; capped at partially_active only by the missing EA-5 layer.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-L0-L1-L2",
+      "title": "L0 / L1 / L2 ontology and domain split",
+      "core_question": "What are the three layers, and where does the support/replacement boundary of L2 fall?",
+      "active_owners": [
+        "Core_Law/SRT_L0_Metaphysics.md",
+        "_SRT_SYMBOL_TABLE.md",
+        "Core/SRT_OPEN_TENSIONS.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#5",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#2",
+      "bundle": true,
+      "regression_tests": null,
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#4",
+      "old_text_handled": "none-required: no formulation was superseded this pass; the open exposures (OPEN_TENSIONS 4, 7) are registered rather than replacing prior text.",
+      "author_gates": [],
+      "next_step": "P0-04 origin of selectability remains open (OPEN_TENSIONS 7); no regression tests.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-D-VALUE",
+      "title": "d-value, stake, concern, bearing position",
+      "core_question": "What is stake-coupled concern, how wide is it, and where is the bearing position?",
+      "active_owners": [
+        "_SRT_D_VALUE_CANONICAL.md",
+        "_SRT_CROSS_DOMAIN_MATRIX.md",
+        "Core/SRT_OPEN_TENSIONS.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#2",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#6",
+      "bundle": true,
+      "regression_tests": null,
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#1",
+      "old_text_handled": "n/a",
+      "author_gates": [
+        "RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol"
+      ],
+      "next_step": "d/q/o embargo holds: the three-axis rewrite must not enter book, public content, bridge, or paper before the author decides. Bundle guardrail G2 already carries the embargo.",
+      "notes": "The 2026-07-23..25 conversation materials are archived and their own closing audit records that every route is a candidate and none landed.",
+      "active_complete_blockers": [
+        "RQ-2026-08-A02 undecided; d/q/o embargoed from book, public content, bridge and paper"
+      ],
+      "structural_assimilation": "author_gate",
+      "behavioral_availability": "not_applicable",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-PSI-F",
+      "title": "Psi_f, payability, friction, cost",
+      "core_question": "What is the payability burden of a transition, and which projections of it are legitimate?",
+      "active_owners": [
+        "_SRT_PSI_F_CANONICAL.md",
+        "Core/SRT_Core_22_Equations.md",
+        "Core/SRT_OPEN_TENSIONS.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#1",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#5",
+      "bundle": true,
+      "regression_tests": null,
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#2",
+      "old_text_handled": "none-required: Fisher and Landauer already appear in _SRT_PSI_F_CANONICAL.md as conditional projections with their own guards; the unaccepted EC cards add pressure, not a replacement.",
+      "author_gates": [],
+      "next_step": "Fisher/Landauer evidence cards (EC-IG-FISHER-PSIF, EC-THERMO-LANDAUER-SELECTION-COST) remain draft_v1 and unaccepted; no regression tests.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-T-DIR",
+      "title": "T_dir, direction transparency, reorientation",
+      "core_question": "How readable is a system's own selection direction, and when can it reorient?",
+      "active_owners": [
+        "_SRT_T_DIR_CANONICAL.md",
+        "Core/SRT_OPEN_TENSIONS.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#3",
+      "deep_map_anchor": null,
+      "bundle": true,
+      "regression_tests": null,
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#3",
+      "old_text_handled": "n/a",
+      "author_gates": [
+        "Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization"
+      ],
+      "next_step": "PH_AG02 and PH_AG03 writebacks to _SRT_T_DIR_CANONICAL.md remain unlanded; bundle guardrail G3 already reports this.",
+      "active_complete_blockers": [
+        "EA-2: PH_AG02/PH_AG03 increments adjudicated but not written into _SRT_T_DIR_CANONICAL.md (0 matches for their content)"
+      ],
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-GHOST-OPERATOR",
+      "title": "Ghost operator / selection operator G_hat_theta",
+      "core_question": "What is the embodied selection operator and what does not define it?",
+      "active_owners": [
+        "Core/SRT_Core_21_Minimal_Axioms.md",
+        "_SRT_SYMBOL_TABLE.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#4",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#7",
+      "bundle": true,
+      "regression_tests": null,
+      "open_tension": null,
+      "old_text_handled": "n/a",
+      "author_gates": [],
+      "next_step": "Ghost source-intuition cards (nonclosure pressure, yin-yang object friction, U5 correction) are archived only and have never been compressed into propositions for this node.",
+      "active_complete_blockers": [
+        "EA-1: three ghost source cards never compressed into propositions (0 matches in Core_21_Minimal_Axioms.md or _SRT_SYMBOL_TABLE.md)"
+      ],
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-SUBJECTHOOD",
+      "title": "Subjecthood, agency, identity closure, reselectability",
+      "core_question": "What makes a selection process a persistent subject rather than a sequence of events?",
+      "active_owners": [
+        "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md",
+        "Philosophy/SRT_Subjecthood_Threshold_Interface.md",
+        "Core/SRT_Core_21b_Constitutive_Theorems.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#23",
+      "deep_map_anchor": null,
+      "bundle": false,
+      "regression_tests": null,
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#5",
+      "old_text_handled": "n/a",
+      "author_gates": [],
+      "next_step": "Agency owner is not in any context bundle; four PH_AG patches landed there but the file is unreachable by default load. Route 23 points primarily at parked incubation files.",
+      "notes": "P1-T07 stable-ISP proof gap is carried by bundle guardrail G1.",
+      "active_complete_blockers": [
+        "EA-4: Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md appears in 0 of 8 context bundles"
+      ],
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-CONSCIOUSNESS",
+      "title": "Consciousness, integration, access, report, anchoring",
+      "core_question": "What does SRT say about consciousness without collapsing it into access, integration, or decodability?",
+      "active_owners": [
+        "Neuroscience/SRT_Consciousness_Mechanisms.md",
+        "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+        "Philosophy/SRT_HardProblem_Epistemology.md"
+      ],
+      "compact_layer": "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#8",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#10",
+      "bundle": true,
+      "regression_tests": [
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+      ],
+      "open_tension": null,
+      "old_text_handled": "none-required: nothing was superseded. The five 2026-08-05 source cards' reverse corrections are carried independently by Neuroscience/SRT_Neuroscience_Claim_Status.md (forbidden d=salience/attention/arousal/integration), _SRT_T_DIR_CANONICAL.md (T_dir is not confidence or report fluency), and Core_Law/SRT_Individuation.md (sigma_sr phases rather than fixed self modules).",
+      "author_gates": [],
+      "next_step": "Case A. Do not build. The recorded blocker (source-card corrections absent from any compact layer) is literally true and produces no behavioral gap.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "robustly_observed",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
+      "interventions": [],
+      "behavior_observation_mode": "bounded",
+      "behavioral_availability_note": "Three independent bounded runs, 21/21 correct, no NO REPO BASIS needed. Reached three owners the static manifest had never registered: Neuroscience/SRT_FEP_MetaAwareness_AffectiveSelf_Bridge.md, Philosophy/SRT_Phenomenal_Structure_Interface.md, Core_Law/SRT_Individuation.md."
+    },
+    {
+      "node_id": "NODE-AI-REASONING",
+      "title": "AI reckoning, judgment, reasoning trace, real mechanism",
+      "core_question": "When does an AI system's differential output amount to internal registration, path efficacy, or goal selection?",
+      "active_owners": [
+        "Bridge/SRT_Context_Coherence_Intelligence_Interface.md",
+        "AI/AI_POSITIONING_NOTE.md",
+        "AI/SRT_AI_Architecture_CompactCore.md",
+        "AI/SRT_AI_Claim_Status.md"
+      ],
+      "compact_layer": "AI/SRT_AI_Architecture_CompactCore.md",
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#12a",
+      "deep_map_anchor": null,
+      "bundle": true,
+      "regression_tests": [
+        "Operations/Audits/SRT_AI_REASONING_BASELINE_PROBE_2026-08-08.md"
+      ],
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#6",
+      "old_text_handled": "none-required: nothing was superseded. AIREASON01 extended Bridge/SRT_Context_Coherence_Intelligence_Interface.md with a new section 5 and two guardrail lines that block the error in both directions; AIEVID01 added a new evidence-provenance note to AI/AI_POSITIONING_NOTE.md. Neither replaced prior text.",
+      "author_gates": [],
+      "next_step": "Case A: do not build. The static audit's engineered_not_active verdict was a false negative derived from hook absence. Same inference underpins NODE-NEURAL-DECODABILITY and NODE-PHYSICS-MEASUREMENT, so both must be probed before any construction is opened.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "robustly_observed",
+      "behavior_evidence": "Operations/Audits/SRT_AI_REASONING_BASELINE_PROBE_2026-08-08.md",
+      "interventions": [],
+      "notes": "Content location verified by grep 2026-08-08: AIREASON01 -> Bridge/SRT_Context_Coherence_Intelligence_Interface.md section 5 'Reason-trace separation' plus two guardrail lines; AIEVID01 -> AI/AI_POSITIONING_NOTE.md line 30 evidence-provenance bridge note. Neither has an IntegrationHook, which is why the static audit missed them.",
+      "behavior_observation_mode": "bounded",
+      "behavioral_availability_note": "Three independent bounded runs on origin/main @ a07d2a72, each within the 6-file / 2-navigation budget, 24/24 probe observations correct including four anti-gaming items whose correct answer is 'yes, this counts'. Reached with zero construction.",
+      "known_routing_gaps": [
+        "_SRT_DEEP_THEORY_MAP.md#13 (AI / Synthetic Operator Node) names none of this node's files.",
+        "_SRT_CONTEXT_ROUTER.md#12a does resolve, but its trigger words are all context-window terms; none is reasoning trace, chain-of-thought, faithfulness or interpretability.",
+        "Neither gap blocked retrieval in three bounded runs, so neither is being fixed: Case A forbids building where the probe already passes."
+      ]
+    },
+    {
+      "node_id": "NODE-NEURAL-DECODABILITY",
+      "title": "Neural decodability, stabilization, memory admission, energy payment",
+      "core_question": "What can neural decodability, connectivity, and metabolic cost license, and what can they not?",
+      "active_owners": [
+        "Neuroscience/_SRT_Neuroscience_Hardening_Index.md",
+        "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md",
+        "Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md",
+        "Neuroscience/SRT_Neuroscience_Claim_Status.md"
+      ],
+      "compact_layer": "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md",
+      "router_anchor": null,
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#8",
+      "bundle": true,
+      "regression_tests": [
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+      ],
+      "open_tension": null,
+      "old_text_handled": "none-required: NEURAL16-23 extended the hardening index rather than replacing prior text.",
+      "author_gates": [
+        "Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core"
+      ],
+      "next_step": "The engineered_not_active verdict is FALSE. Five pending hooks and a never-created synthesis file did not block retrieval. Two more bounded runs would settle robustly_observed; no construction is warranted.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "observed",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
+      "interventions": [],
+      "behavior_observation_mode": "bounded",
+      "known_routing_gaps": [
+        "Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md is stale (active_v2, 2026-05): its maps stop at N9, it names no NEURAL15-23 patch, and it does not point at _SRT_Neuroscience_Hardening_Index.md as the current material-patch authority. Reported unprompted by the 2026-08-08 bounded probe. Registered, not fixed: the probe passed anyway and this round does not build."
+      ],
+      "behavioral_availability_note": "One bounded run, ZERO navigation actions, 8/8 correct across decodability/anchoring, mixed selectivity, alpha diversity, encoding vs stabilization gates, ATP vs paid burden, centrality vs causality, and rhythmic selection eligibility. n=1 so observed, not robustly_observed."
+    },
+    {
+      "node_id": "NODE-LIFE-DISSIPATIVE",
+      "title": "Life, self-maintenance, dissipative structures vs selection structures",
+      "core_question": "Is a dissipative structure a selection structure, and what does biological self-maintenance add?",
+      "active_owners": [
+        "03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md",
+        "Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md"
+      ],
+      "compact_layer": "03_Bridges/SRT_Selection_Event_CompactCore.md",
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#23a",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#19a",
+      "bundle": true,
+      "regression_tests": [
+        "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
+      ],
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#14",
+      "old_text_handled": "Author decision G2 (dissipation is not equal to selection and not a universal necessary precursor) now reaches the active layer via the selection-event compact section 6 and regression test T-12.",
+      "author_gates": [],
+      "next_step": "T-E bridge itself still awaits first-hand physics evidence cards and cross-domain support/counterexamples; only its stratification verdict has reached the active layer.",
+      "active_complete_blockers": [
+        "EA-4: only T-E's stratification verdict reached the fast layer; its substrate/mechanism/sufficiency three-way distinction is in no compact (0 matches)"
+      ],
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-PHYSICS-MEASUREMENT",
+      "title": "Physical measurement, fact formation, representation covariance, composition rules",
+      "core_question": "What in quantum representation is scaffold and what survives change of representation?",
+      "active_owners": [
+        "Physics/SRT_Physics_Claim_Status.md",
+        "Physics/SRT_Quant_01_Selection_CompactCore.md",
+        "Physics/patches/SRT_Phys_REP01_Representation_Covariance_and_Composition_Guard_v0_1.md",
+        "Core_Law/SRT_L0_Metaphysics.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#9",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#11",
+      "bundle": true,
+      "regression_tests": [
+        "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md"
+      ],
+      "open_tension": null,
+      "old_text_handled": "REP01 downgraded the shorthand 'wavefunction = L0 possibility structure' to 'a candidate physical representation of the accessible possibility structure, not identical to absolute L_0'. The bounded probe reproduced that downgrade.",
+      "author_gates": [
+        "RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md"
+      ],
+      "next_step": "The engineered_not_active verdict is FALSE. Three hooks pointing at a file that was never created did not block retrieval. RQ-2026-08-A04 remains an open bookkeeping question, not a theory gap.",
+      "active_complete_blockers": [],
+      "structural_assimilation": "active_complete",
+      "behavioral_availability": "observed",
+      "behavior_evidence": "Operations/Audits/SRT_SEMANTIC_COVERAGE_PROBES_2026-08-08.md",
+      "interventions": [],
+      "behavior_observation_mode": "bounded",
+      "behavioral_availability_note": "One bounded run, 1 navigation action, 7/7 correct on representation covariance, composition rules as substantive constraint, package-targeted falsification, L_0 vs Hilbert space, Psi_f vs entropy/Landauer, and measurement vs consciousness. n=1 so observed, not robustly_observed."
+    },
+    {
+      "node_id": "NODE-SOCIAL-L2",
+      "title": "Institutions, responsibility, consequence outsourcing, L2 hardening",
+      "core_question": "How do institutions harden into L2, and how is consequence outsourcing audited?",
+      "active_owners": [
+        "Philosophy/SRT_Soc_03_Institutions.md",
+        "Core_Law/SRT_Collective_Selection.md",
+        "Philosophy/SRT_Political_Philosophy_CompactCore.md"
+      ],
+      "compact_layer": "Philosophy/SRT_Political_Philosophy_CompactCore.md",
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#14",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#12",
+      "bundle": true,
+      "regression_tests": null,
+      "open_tension": null,
+      "old_text_handled": "Partly: the CBP-3/CBP-4 outsourcing-chain distinction now reaches the active layer via the selection-event compact and regression test T-08.",
+      "author_gates": [],
+      "next_step": "The SEA institutional paired audits and the coding manual remain Operations-only; the method-paper strategy is a candidate and the reliability pilot is deferred.",
+      "active_complete_blockers": [
+        "EA-2: SEA protocol and coding manual are Operations-only; 0 matches in SRT_Soc_03_Institutions.md or SRT_Collective_Selection.md"
+      ],
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-ENTROPY-REORG",
+      "title": "Entropy, disturbance, selective reorganization, generative health",
+      "core_question": "How does a disturbance become a directional path, and when is the resulting order generatively healthy?",
+      "active_owners": [
+        "03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md",
+        "Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md",
+        "Core/SRT_OPEN_TENSIONS.md"
+      ],
+      "compact_layer": "03_Bridges/SRT_Selection_Event_CompactCore.md",
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#23a",
+      "deep_map_anchor": "_SRT_DEEP_THEORY_MAP.md#19a",
+      "bundle": true,
+      "regression_tests": [
+        "Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md",
+        "Operations/Audits/SRT_CHOICE_EVENT_OOD_TRANSFER_TESTS_2026-08-07.md"
+      ],
+      "open_tension": "Core/SRT_OPEN_TENSIONS.md#12",
+      "old_text_handled": "Author decision G1 (reselectability is a limited health criterion, not a necessary condition for a selection to occur) now reaches the active layer via the compact section 6 and regression test T-11.",
+      "author_gates": [],
+      "next_step": "T-B process layer and the pain/distress/suffering typology interface are still only in the bridge; the suffering typology has no compact layer.",
+      "active_complete_blockers": [
+        "EA-4: T-B process layer and the pain/distress/suffering typology interface appear in no CompactCore"
+      ],
+      "structural_assimilation": "partially_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    },
+    {
+      "node_id": "NODE-BOOK-BACKFLOW",
+      "title": "Book concepts that have not flowed back to the theory layer",
+      "core_question": "Which vocabulary invented in the manuscript carries theoretical weight that no theory owner has absorbed?",
+      "active_owners": [
+        "03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md"
+      ],
+      "compact_layer": null,
+      "router_anchor": "_SRT_CONTEXT_ROUTER.md#19",
+      "deep_map_anchor": null,
+      "bundle": false,
+      "regression_tests": null,
+      "open_tension": null,
+      "old_text_handled": "n/a",
+      "author_gates": [],
+      "next_step": "The sync bridge classifies seven candidate term groups. Two (micro-valence, pre-trimming) have reached _SRT_D_VALUE_CANONICAL.md. Three (third-state agency, three-way fate of the displaced, three self-check questions) exist only in the book, the bridge, and exported Output files.",
+      "active_complete_blockers": [
+        "EA-2: 第三态能动性 / 被排开者去向三分 / 自检三问 have no theory owner at all"
+      ],
+      "structural_assimilation": "engineered_not_active",
+      "behavioral_availability": "untested",
+      "behavior_evidence": null,
+      "interventions": []
+    }
+  ],
+  "axes": {
+    "structural_assimilation": {
+      "axis": "A",
+      "question": "How far has the theory increment travelled through the repository's structure?",
+      "values": [
+        "archived_only",
+        "engineered_not_active",
+        "partially_active",
+        "active_complete",
+        "conflict_with_active_text",
+        "author_gate",
+        "rejected_or_parked"
+      ],
+      "active_complete_requires": [
+        "EA-1 a SRT native proposition, guardrail or registered tension exists",
+        "EA-2 it has entered an appropriate active owner",
+        "EA-3 a real retrieval path resolves to it",
+        "EA-4 a fast layer or default load path can read it",
+        "EA-5 the superseded formulation has been handled"
+      ],
+      "note": "Structure only. Says nothing about whether any AI ever retrieved or used it."
+    },
+    "behavioral_availability": {
+      "axis": "B",
+      "question": "Has a fresh session been observed retrieving this node and using it to judge? ABSOLUTE, never compared to a baseline.",
+      "values": [
+        "untested",
+        "observed",
+        "robustly_observed",
+        "failed",
+        "not_applicable"
+      ],
+      "value_definitions": {
+        "observed": "at least one recorded run found and used it, by any retrieval mode. Answers 'is this reachable at all', not 'is this fast'.",
+        "robustly_observed": "repeated independent BOUNDED runs met a pre-frozen success threshold (see SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md). This is the only value that can support effectively_assimilated.",
+        "failed": "a recorded run did not retrieve it, or retrieved it and judged wrongly"
+      },
+      "note": "A zero intervention effect is NOT evidence against behavioral availability. If a baseline already retrieves and uses the node, that is availability, not ineffectiveness. Only a recorded run may set this; CI never can."
+    },
+    "intervention_effect": {
+      "axis": "C",
+      "question": "What did one specific PR or writeback add relative to its own baseline? Per-intervention, not a node property.",
+      "values": [
+        "untested",
+        "none",
+        "retrieval_efficiency_only",
+        "judgment_positive",
+        "judgment_negative",
+        "mixed"
+      ],
+      "sub_metrics": [
+        "judgment_delta",
+        "retrieval_success_delta",
+        "retrieval_steps_delta",
+        "retrieval_file_count_delta",
+        "transfer_delta",
+        "runs_per_condition"
+      ],
+      "note": "Recorded in the node's `interventions` list. A single field may never carry both 'the node works' and 'this PR helped'."
+    }
+  },
+  "derived_status_rule": "effectively_assimilated := structural_assimilation == 'active_complete' AND behavioral_availability == 'robustly_observed' AND behavior_observation_mode == 'bounded'. Tightened 2026-08-08: `observed` alone no longer qualifies, because an unconstrained deep search that eventually succeeds does not show the theory is fast enough to act on. It is a claim about THE NODE, never about a PR; PR effects live only in `interventions`. Computed, never stored."
+}

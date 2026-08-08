@@ -7,16 +7,16 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-08
-source_commit: a989a5bf
-source_branch: hotfix/governance-preflight-20260808
+source_commit: 90766ef6
+source_branch: claude/active-theory-assimilation-2026-08-06
 source_dirty: false
-inputs_digest: 9bd2031d4894c8cb
+inputs_digest: 5cc635813dad56af
 ---
 
 # SRT CompactCore 全集上下文包
 
 > **这是什么**：由 `scripts/build_srt_context_bundles.py` 从 SRT 仓库自动拼装的上下文包。
-> 收录全部 18 个 CompactCore 文件，覆盖 AI / 物理 / 哲学 / 神经 / 灵性 / 核心动力学的领域主线。
+> 收录全部 18 个领域 CompactCore（AI / 物理 / 哲学 / 神经 / 灵性 / 核心动力学），外加 `Operations/Audits/data/srt_active_theory_nodes.json` 标记为需装载的 1 个跨域快速层。
 >
 > **这不是什么**：不是新的 canonical 文件，不是摘要，不是改写。每个来源文件的正文
 > 逐字保留；脚本只把 YAML frontmatter 转成显式 provenance 头。**若本包与仓库中的
@@ -27,10 +27,10 @@ inputs_digest: 9bd2031d4894c8cb
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-08 |
-| 来源 commit | `a989a5bf` |
-| 来源分支 | `hotfix/governance-preflight-20260808` |
+| 来源 commit | `90766ef6` |
+| 来源分支 | `claude/active-theory-assimilation-2026-08-06` |
 | 生成时来源工作树有改动 | 否 |
-| 包含文件数 | 18 |
+| 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
 > （`STATUS.md`、两份审计）与全部正文文件的联合内容摘要。`--check` 重算并比对该摘要，
@@ -61,6 +61,7 @@ inputs_digest: 9bd2031d4894c8cb
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-04-23 |
 | 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-04-20 |
+| 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-06 |
 
 ## §0.2 状态护栏
 
@@ -172,6 +173,61 @@ inputs_digest: 9bd2031d4894c8cb
 - 不要把 planned-but-never-created 的 target 当作已存在的文件引用。
 
 
+### G5 — 多数理论节点未进入活跃层；进入的也未经行为验证（严重度：中）
+
+**受影响**：下表所列节点；这些节点的理论增量在本包中**不存在**，也不在任何默认读取路径上
+
+#### SOURCE EXTRACT — 来源原文（逐字抽取）
+
+**来自 `Operations/Audits/data/srt_active_theory_nodes.json`（逐条抽取 `assimilation_status` 非 `effectively_assimilated` 的节点）**：
+
+> | node_id | Axis A 结构 | Axis B 行为 | 快速层 | 作者门 |
+> |---|---|---|---|---|
+> | `NODE-CHOICE-GENERATION` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-SELECTION-ONTOLOGY` |  |  | — | — |
+> | `NODE-L0-L1-L2` |  |  | — | — |
+> | `NODE-D-VALUE` |  |  | — | RQ-2026-08-A02: whether q is an independent axis or a post-stake-gate depth profile; whether o is operationalized and gets a symbol |
+> | `NODE-PSI-F` |  |  | — | — |
+> | `NODE-T-DIR` |  |  | — | Two PH_AG partial hooks are blocked on a T_dir canonical writeback; that edit is C-class and needs separate authorization |
+> | `NODE-GHOST-OPERATOR` |  |  | — | — |
+> | `NODE-SUBJECTHOOD` |  |  | — | — |
+> | `NODE-CONSCIOUSNESS` |  |  | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | — |
+> | `NODE-AI-REASONING` |  |  | `AI/SRT_AI_Architecture_CompactCore.md` | — |
+> | `NODE-NEURAL-DECODABILITY` |  |  | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | Whether Neuroscience/SRT_Neuroscience_Hardening_N1_N12_v0_2.md is created at all, or NEURAL18/21/22 retarget the compact core |
+> | `NODE-LIFE-DISSIPATIVE` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-PHYSICS-MEASUREMENT` |  |  | — | RQ-2026-08-A04: P03/P04/P05 land in a new SRT_Physics_Bridge_v0_2.md or merge into the existing _SRT_Phys_Bridge.md |
+> | `NODE-SOCIAL-L2` |  |  | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | — |
+> | `NODE-ENTROPY-REORG` |  |  | `03_Bridges/SRT_Selection_Event_CompactCore.md` | — |
+> | `NODE-BOOK-BACKFLOW` |  |  | — | — |
+
+#### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
+
+清单共 16 个节点。状态分**两个轴**，不可合并读：
+
+- **Axis A（结构）**：0 个达到 `active_complete`——理论增量已进入 owner、有检索路径、默认路径读得到。
+- **Axis B（行为）**：**0 个**有已记录的通过运行。其余 0 个结构完整的节点是 `untested`：**没有任何证据表明它们真的改变了判断**。
+
+`effectively_assimilated` 是这两轴的推导结果，不是可以手写的标签。回归测试文件存在**不等于**回归测试通过。
+
+其余节点的内容可能已有 SourceCard、patch、hook 或 bridge——那只证明它被**保存**和**安排**了，不证明它进入了任何 AI 默认会读的文件。
+
+本包按清单额外装载了以下快速层（除各领域 CompactCore 之外）：
+
+- `03_Bridges/SRT_Selection_Event_CompactCore.md`
+
+轴的含义见清单 `axes` 与 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`。
+
+#### USAGE POLICY — 使用规则
+
+*授权依据：`Operations/Audits/data/srt_active_theory_nodes.json` 的 `status_rule` 与 `Governance/SRT_CLAIM_LADDER.md`*
+
+- 回答涉及上表任一节点时，**不要**因为本包没有相关内容就断言仓库没有；先按清单的 `active_owners` 去取。
+- `author_gate` 状态的节点带有明确禁运（如 `d/q/o`），不得绕过。
+- 额外装载的快速层均为 **P2-P3**，不得用于裁定任何 canonical 定义。
+- 不要把「有 patch / 有 hook / 文件能被搜到」当作该节点已进入理论。
+- 更不要把「Axis A = active_complete」当作该节点已被验证会改变判断。
+
+
 ### G4 — 行文简写路径对照（严重度：低）
 
 **受影响**：骨架正文中若干人读简写
@@ -246,10 +302,11 @@ When answering about SRT:
 |---|---|:---:|:---:|
 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | frontmatter claim_mode=canonical | ✓ | — |
 
-**展开层**（17 个）
+**展开层**（18 个）
 
 | 文件 | 分类依据 | registry 提及 | AI_START §2 |
 |---|---|:---:|:---:|
+| `03_Bridges/SRT_Selection_Event_CompactCore.md` | frontmatter claim_mode=bridge | — | — |
 | `AI/SRT_AI_01_Ontology_CompactCore.md` | frontmatter claim_mode=bridge | ✓ | — |
 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | frontmatter claim_mode=bridge | ✓ | — |
 | `AI/SRT_AI_Architecture_CompactCore.md` | frontmatter claim_mode=bridge | ✓ | — |
@@ -5335,3 +5392,219 @@ SRT 的压缩立场是：
 - d-value 规范：`../_SRT_D_VALUE_CANONICAL.md`
 - Core 主方程：`SRT_Core_22_Equations.md`
 - canonical 总注册表：`../CANONICAL_REGISTRY.md`
+
+
+
+---
+
+## FILE: `03_Bridges/SRT_Selection_Event_CompactCore.md`
+
+| 字段 | 值 |
+|---|---|
+| path | `03_Bridges/SRT_Selection_Event_CompactCore.md` |
+| id | SRT-SELECTION-EVENT-COMPACTCORE |
+| claim_mode | bridge |
+| status | active |
+| epistemic_layer | bridge |
+| layer | L1 |
+| canonical(字段) | false |
+| last_commit | 2026-08-06 |
+
+**权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
+
+<!-- 以下为原文逐字保留 -->
+
+# 选择生成与选择事件 · CompactCore
+
+> **本文件是什么**：判定“这里是否发生了真实选择”的**快速判别层**。它把 T-D 选择生成条件、四套操作化测试与统一审计协议压缩成一页可执行的判别程序。
+>
+> **本文件不是什么**：不是 canonical，不是定义源，不改写 `Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T05 Real Choice Moment**，不提供跨域必要充分条件，不提供普适数值阈值。claim level 为 **P2-P3**。
+>
+> **完整正文**：`03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`（条件矩阵）与 `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`（分级门与冻结要求）。本页只保留下一轮判断真正用得上的部分。
+
+---
+
+## 1. 一句话
+
+> P1-T05 只给了**否定清单**（脚本执行、习惯重放、梯度跟随、`L_2` 标签优化本身不构成 real choice moment）。本页补上它缺的**肯定判别程序**：五道门、各自的最低等级、以及“高项不能补低项”的不可补偿规则。
+
+只有当五道门在**同一条事件链、同一组预先冻结的边界、相容的时间尺度**上同时达标，才允许说“**有界选择事件候选**”。
+
+注意“候选”二字：达标给出的是可继续检验的候选判断，不是已证事实。
+
+---
+
+## 2. 五道门与最低等级
+
+| 门 | 问题 | 最低等级 | 达标后允许说的话 |
+|---|---|---|---|
+| **CG-0** 差异显现 | 差异是否真正进入系统的有效作用通道？ | `DMF-2` | 差异有效进入系统作用范围 |
+| **CG-1** 非等价登记 | 系统内部是否对差异作出因果中介的不等价响应？ | `NER-2` | 内部非等价登记候选 |
+| **CG-2** 路径效力 | 登记结果是否通过可干预通道改变了现实路径？ | `PEF-2` | 现实路径效力候选 |
+| **CG-3** 后果承载 | 路径特异后果是否落到可识别的承受位置？ | `CBP-2` | 边界相关后果候选 |
+| **CG-4** 历史效力 | 结果是否改写了后续可达性、转换概率或返回成本？ | `HEF-3` | 未来可达性／成本重写候选 |
+
+**不可补偿规则**：任何一门未达最低等级，都不能由其他门的高等级补偿。任何一门的证据若来自不同事件、不同边界或不同时间尺度，也不能拼接成“完整选择事件”。
+
+**门槛不可事后调整**：某领域若需要更强门槛，必须在测试前声明；不得在结果出现后降低门槛。
+
+---
+
+## 3. 五把梯子（判别的实际工作面）
+
+每道门都是分级的。**大多数误判发生在把低等级读成高等级**，所以下表是本页最需要被记住的部分。
+
+### CG-0 · 差异显现 `DMF`
+
+| 等级 | 是什么 | 只能说 |
+|---|---|---|
+| `DMF-0` | 观察者能命名、区分或事后分组 | 存在描述差异 |
+| `DMF-1` | 差异物理／信息上到达输入边界 | 差异到达接口 |
+| **`DMF-2`** | **屏蔽、交换或改变差异会改变系统可用内部状态或候选通道** | **CG-0 操作候选** |
+| `DMF-3` | 差异对应多个现实可进入的继续路径或连续分岔场 | 活候选场候选 |
+
+### CG-1 · 非等价登记 `NER`
+
+| 等级 | 是什么 | 只能说 |
+|---|---|---|
+| `NER-0` | 研究者能区分输入、轨迹或输出 | 外部可区分 |
+| `NER-1` | 系统以**稳定固定映射**对 A/B 产生不同响应 | 结构上非中性／固定判别 |
+| **`NER-2`** | **内部权重、阈值、资源或状态因果中介相对响应；干预可改变不等价** | **CG-1 操作候选** |
+| `NER-3` | 对 A 的内部响应依赖 B、候选集合或竞争背景 | T-B 比较候选 |
+| `NER-4` | 登记进一步改变后续可达路径、成本、阈值或规则 | 进入 CG-2/CG-4 接口 |
+
+### CG-2 · 路径效力 `PEF`
+
+| 等级 | 是什么 | 只能说 |
+|---|---|---|
+| `PEF-0` | 标签、分数、排序、建议或轨迹不同 | 存在输出差异 |
+| `PEF-1` | 输出可被读取或传递，但现实执行依赖**未解析的外部位置** | 存在行动建议／控制信号 |
+| **`PEF-2`** | **信号通过可干预执行器、资源路由或环境接口改变实际转移、动作概率或资源配置** | **CG-2 路径效力候选** |
+| `PEF-3` | 至少一条路径被稳定，其他路径的可用性／概率／成本相对改变 | 选择性路径再组织候选 |
+| `PEF-4` | 系统在反馈与扰动下**持续**使用比较结果重配路径 | 闭环路径组织候选 |
+
+### CG-3 · 后果承载 `CBP`
+
+| 等级 | 是什么 | 只能说 |
+|---|---|---|
+| `CBP-0` | 过程与环境或测量变量有可观察变化 | 存在外部效应 |
+| `CBP-1` | 过程消耗能量、时间、算力、材料或操作资源 | 存在实现成本／背景耗散 |
+| **`CBP-2`** | **路径特异后果影响预先固定边界内的维持变量、恢复成本或未来可达路径** | **CG-3 操作候选** |
+| `CBP-3` | 后果在多个位置之间**非对称**分配；干预可改变承担位置 | 后果承受位置候选 |
+| `CBP-4` | 选择者／执行者／受益者／承受者／修复者的因果链已追踪 | 外包链已解析 |
+
+### CG-4 · 历史效力 `HEF`
+
+| 等级 | 是什么 | 只能说 |
+|---|---|---|
+| `HEF-0` | 观察者、仪器或存储介质可读取过去信息 | 存在历史记录／残留 |
+| `HEF-1` | 当前状态受过去影响，但自然恢复或状态匹配后效应消失 | 存在短期携带 |
+| `HEF-2` | 历史载体被后续过程**因果调用**，改变当前响应或资源配置 | 主动记忆／历史携带候选 |
+| **`HEF-3`** | **先前路径因果改变后续候选可达性、转换概率、返回成本、门槛或候选生成** | **CG-4 历史效力候选** |
+| `HEF-4` | 历史结果进一步改变更新规则、制度约束、系统边界或跨情境路径结构 | 规则／边界写回候选 |
+
+---
+
+## 4. 三个门槛层级（不要混用）
+
+| 层级 | 达到什么 | 可以说 | 不可以说 |
+|---|---|---|---|
+| **候选形成** | CG-0 + CG-1 | 一般变化已成为选择候选 | 已发生选择 |
+| **过程展开** | 再加 CG-2 | 进入比较性选择再组织（T-B 过程层） | 选择事件已成立 |
+| **事件成立** | 再加 CG-3 + CG-4 | **有界选择事件候选** | 已证主体性／意识／自由／生成健康 |
+
+生成条件可以长期存在而暂时休眠：**有生成条件不等于此刻在选择**；观察到一次路径变化，也不等于完整生成条件已被识别。
+
+---
+
+## 5. 四类实践判读（只适用于主体、组织与制度层）
+
+| 判读 | 结构特征 | 最容易犯的错 |
+|---|---|---|
+| **没有选择** | 无活的路径差异进入；当前输出是脚本、强制或唯一通道 | 把“有运动、有计算、有因果”当成有选择 |
+| **伪选择** | 有选项外观，但表面比较**没有获得真实路径效力**（`PEF` 停在 0/1）；或后果承担者与表面决策者被系统性切断 | 以为伪选择的标志是“选项少”——真正的标志是差异只存在于标签和界面 |
+| **惩罚性选择** | **是**真实选择（五门达标），但脚手架与代价结构严重失衡 | 因为它不健康就说“根本没有选择”——这会遮蔽真实承担与结构责任 |
+| **尊重选择** | 真实生成条件成立，且脚手架保障路径可理解、反馈充分、代价不被放大、退出与修复存在 | 把它当成自然系统的普遍属性；它是规范与制度评价 |
+
+---
+
+## 6. 分工边界（防止把评价偷渡进定义）
+
+- **生成条件** 说明选择**何以可能**；**事件判据** 说明此刻**是否发生**；**生成健康** 说明它**是否值得**。三者不可互换。
+- **脚手架**（可进入的选项、信息、时间、反馈、退出、可逆窗口）说明选择如何更可进入、更可承担——**不是**一切选择事件的必要条件。一次性、不可逆、资源贫乏的情境中仍可能发生真实选择。
+- 因此：真实选择可以是**错误的、压迫性的、导致自我封闭的**。可再选择性是生成健康度的重要判据，**不是**“选对”的唯一标准，也**不是**一次选择得以发生的必要定义（作者裁决 G1，2026-08-04）。
+- 耗散结构与选择结构**分层**：耗散可构成部分实现基础或机制原型，但不等于选择，也非普遍必要前身（作者裁决 G2）。
+
+---
+
+## 7. 九条降级触发（出现即必须收回强表述）
+
+1. 一般因果转移即可完整解释，CG 条件没有提供可区分增益；
+2. 非等价响应、路径效力或承受位置只存在于观察者的事后描述中；
+3. 任何瞬时状态改变都被算作写回，使 CG-4 失去区分力；
+4. 承受位置不可识别，或被隐藏外包却仍声称系统自身承担；
+5. 从非等价响应直接推出关切、意图、体验、自由或道德责任；
+6. 把选项丰富、可逆性、退出和资源支持当作一切选择事件的普遍必要条件；
+7. 因为结果压迫、自我封闭或不可逆，就否认真实选择已经发生；
+8. 把两个命名选项当作所有选择的必需形式，排除连续、涌现和未枚举路径；
+9. 用一套具体物理／生命／认知机制冒充全部层级的统一实现。
+
+---
+
+## 8. 六个最小审计问题
+
+面对任何“这里发生了选择”的主张，至少追问：
+
+1. 什么差异**真实显现**了？
+2. 系统在**哪个方面**不再等价响应？
+3. 哪条路径因此被**稳定、排除或提高了返回成本**？
+4. 代价、收益、风险或损失落到**什么承受位置**？
+5. 这一结果**怎样改变了**后续可达路径或结构？
+6. 当前说的是**候选形成、过程展开、事件成立，还是健康评价**？
+
+> 若只能回答“观察者看见了不同结果”，通常不足以建立选择事件。
+
+---
+
+## 9. 六种拼接陷阱（统一协议的主要贡献）
+
+即使每道门单独看都有证据，以下拼接仍会造出假的“完整选择事件”：
+
+1. **事件拼接**：各门证据来自不同实验或不同回合；
+2. **边界漂移**：比较时只算模型，执行时纳入工具，承受时纳入用户，写回时再纳入仓库；
+3. **时间尺度漂移**：瞬时登记、小时级执行、年度制度后果被直接拼接；
+4. **角色洗白**：人的授权被归给系统，系统的建议被当作执行，外部用户损失被说成系统自身 stake；
+5. **重复计数**：同一状态变化同时记为 NER、PEF、CBP 和 HEF，没有独立干预证据；
+6. **复杂性偏见**：复杂系统只要有记忆、反馈和资源消耗，就被默认判为选择。
+
+因此：任何审计开始前，**事件单元、系统边界、候选差异必须先冻结**，失败后不得扩大事件窗口来补足 CG-3 或 CG-4。
+
+---
+
+## 10. 跨域功能角色（不主张机制同构）
+
+| 层级 | CG-0 | CG-1 | CG-2 | CG-3 | CG-4 | 禁止越界 |
+|---|---|---|---|---|---|---|
+| 物理／化学 | 扰动进入有效尺度 | 势垒或约束不对称 | 路径被稳定或抑制 | 能量／结构稳定性受影响 | 滞后、结构记忆 | 不推出主体、关切或自由 |
+| 生命系统 | 信号或损伤可被接收 | 维持与风险形成差异权重 | 调控或代谢路径被改变 | 生存、修复、繁殖条件承压 | 记忆、适应、表观写回 | 不把适应等同有意识选择 |
+| 主体／行动 | 情境进入感知行动场 | 具身关切与未来后果形成比较 | 承诺与排除改变现实路径 | 后果落到行动者及他者 | 学习、身份、习惯痕迹 | 不把可再选择性塞进事件定义 |
+| 社会／制度 | 方案与受影响者能显现 | 规则和资源产生非等价权重 | 决策改变分配、权利或约束 | 后果落到具体承受位置 | 规则、惯例、权力沉积 | 不把投票、菜单或程序本身当真实选择 |
+| AI／技术系统 | 输入或内部候选产生可区分分支 | 目标、约束或训练历史产生差异响应 | 输出、工具调用或状态更新改变路径 | 后果可能落到系统、运营者或外部用户 | 参数、记忆、环境或流程被更新 | 不由分支、学习或写回推出主体性与意识 |
+
+---
+
+## 11. 与 canonical 的关系
+
+- `Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T05** 仍是 real choice moment 的 canonical 承载点。本页**不改写**它，只提供它未给出的判别程序。
+- 本页任何一格都不得被引用为 `d`、`Ψ_f`、`T_dir`、`Ĝ_θ`、`L_0/L_1/L_2` 或主体性的定义或证据。
+- 五门达标 **不等于** 主体性、意识、自由意志、伦理责任、`L_2` 或生成健康。
+
+**未闭合项**：五门的“相关尺度上的有效强度”尚未跨域操作化；`DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` 是审计默认门槛，不是已证定理。已登记为 `Core/SRT_OPEN_TENSIONS.md §14`。
+
+---
+
+## 12. 行为回归测试
+
+本节点的判别是否真的改变了下一轮判断，由
+`Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`
+的 12 道题检验。修改本页时必须同时复核该文件。

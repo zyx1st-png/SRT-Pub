@@ -103,6 +103,25 @@ def main() -> None:
             )
         )
 
+    if (ROOT / "scripts" / "test_check_active_theory_assimilation.py").is_file():
+        steps.append(
+            (
+                "active theory assimilation checker tests",
+                [python, "scripts/test_check_active_theory_assimilation.py"],
+            )
+        )
+
+    # Report-only by design (`Governance/Governance_Anti_Blocking_Gate.md`): the
+    # repository has a large historical backlog of nodes that never reached the
+    # active layer, and failing every unrelated PR on that backlog is exactly the
+    # blocking pattern the gate forbids. Per-PR strictness is opt-in via
+    # `--strict-node`, which the PR author sets for nodes that PR claims to have
+    # assimilated. `--strict` escalates the whole manifest for local audits.
+    assimilation_cmd = [python, "scripts/check_active_theory_assimilation.py"]
+    if args.strict:
+        assimilation_cmd.append("--strict-all")
+    steps.append(("active theory assimilation (report-only)", assimilation_cmd))
+
     noise_cmd = [python, "scripts/check_forbidden_noise.py"]
     if args.strict:
         noise_cmd.append("--strict-worktree")
