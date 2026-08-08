@@ -2,7 +2,7 @@
 id: SRT-RULIAD-LIMITED-RENDERING-BRIDGE-20260808
 type: bridge
 tags: [Ruliad, ObserverTheory, ComputationalIrreducibility, CoarseGraining, Rendering, Idealism, Consciousness, Entropy, Perspectivality]
-status: active_v1
+status: active
 layer: L1
 epistemic_layer: bridge
 claim_mode: translation

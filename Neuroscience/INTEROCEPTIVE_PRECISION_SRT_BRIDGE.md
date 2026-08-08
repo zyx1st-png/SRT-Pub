@@ -2,7 +2,7 @@
 id: SRT-INTEROCEPTIVE-PRECISION-BRIDGE-2026-08-08
 type: bridge_audit
 tags: [Neuroscience, ActiveInference, Interoception, Precision, Homeostasis, d-value, Psi_f, Experiment]
-status: active_v1
+status: active
 layer: L1-L2-bridge
 epistemic_layer: bridge-lab
 claim_mode: interface

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-08-05
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-08-08
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-05
-source_commit: 3385d618
-source_branch: agent/status-reconciliation-20260805
+generated: 2026-08-08
+source_commit: a989a5bf
+source_branch: hotfix/governance-preflight-20260808
 source_dirty: false
-inputs_digest: b624a0c1148047fb
+inputs_digest: 9bd2031d4894c8cb
 ---
 
 # SRT 核心动力学上下文包
@@ -26,9 +26,9 @@ inputs_digest: b624a0c1148047fb
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-05 |
-| 来源 commit | `3385d618` |
-| 来源分支 | `agent/status-reconciliation-20260805` |
+| 生成日期 | 2026-08-08 |
+| 来源 commit | `a989a5bf` |
+| 来源分支 | `hotfix/governance-preflight-20260808` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
