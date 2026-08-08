@@ -1,0 +1,31 @@
+stage: pilot_ab_only
+output_root: outputs/pilot
+master_seeds: [1201, 1202, 1203]
+conditions: [X-low, X-high, T-low, T-high, S-low, S-high]
+steps: {A: 100000, B: 60000, C: 60000}
+evaluation_interval_B: 6000
+evaluation_interval_C: 6000
+evaluation_episodes: 16
+episode_horizon: 96
+grid_size: 11
+view_size: 7
+hazard_count: 5
+damage: {low: 0.03, high: 0.07}
+movement_cost: {A: 0.010, B: 0.022, C: 0.022}
+resource_gain: 0.30
+reward: {target: 1.0, hazard: -0.05, step: -0.002}
+ppo:
+  gamma: 0.99
+  gae_lambda: 0.95
+  learning_rate: 0.00025
+  clip: 0.2
+  entropy_coefficient: 0.01
+  value_coefficient: 0.5
+  max_grad_norm: 0.5
+  rollout_steps: 2048
+  minibatch_size: 512
+  epochs: 4
+probe: {size: 128, seed: 88101, early_B_step: 6000, integrity_hi: 1.0, integrity_lo: 0.9}
+reach20: {states: 12, sequences: 128, horizon: 20, seed: 88102}
+emp5: {states: 8, sequences: 32, replicates: 4, horizon: 5, seed: 88103}
+device: cpu
