@@ -4,12 +4,16 @@ on:
   push:
     branches:
       - hotfix/governance-preflight-20260808
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
   hotfix:
+    if: github.head_ref == 'hotfix/governance-preflight-20260808' || github.ref_name == 'hotfix/governance-preflight-20260808'
     runs-on: ubuntu-latest
     steps:
       - name: Check out hotfix branch
