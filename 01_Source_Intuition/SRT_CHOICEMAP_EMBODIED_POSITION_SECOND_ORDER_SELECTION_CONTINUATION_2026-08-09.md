@@ -12,11 +12,11 @@ created: 2026-08-09
 trace_mode: live
 conversation_mode: live_choice_map
 parent_cards:
-  - 01_Source_Intuition/SRT_CHOICEMAP_CONCERN_RESELECTABILITY_PROXY_LANGUAGE_EMBODIED_POSITION_2026-07-31.md
+  - 01_Source_Intuition/SRT_CHOICEMAP_CONCERN_RESELECTABILITY_PROXY_LANGUAGE_EMBODIED_POSITION_CONTINUATION_2026-07-31.md
 continuation_scope: embodied-position, historically-conditioned-selectability, identity-continuity, concern-path-space-duality, bootstrap-loop, comparison-scale-rewrite, second-order-selection, layered-reopening
 integration_status: source_intuition_only
 symbol_policy: no_new_canonical_symbols
-user_confirmation: author_chosen_plus_author_confirmed_synthesis
+author_confirmation: author_chosen_plus_author_confirmed_synthesis
 review_trigger: Reopen before promoting embodied-position-as-historically-conditioned-selectability, identity continuity as stake/constraint/reselectability continuity, concern-path-space duality, second-order selection, or layered reopening into Core, Core_Law, OPEN_TENSIONS, bridge files, book text, papers, experiments, or public theory claims.
 ---
 
