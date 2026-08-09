@@ -1,9 +1,23 @@
 ---
 id: SRT-NEURO-NEURAL25-INTEGRATION-HOOK
 type: integration_hook
-status: pending
+status: active
 canonical: false
 claim_level: P3-P4
+claim_mode: evidence
+layer: operations
+epistemic_layer: os
+integration_status: pending
+landing_ledger:
+  - target: "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md"
+    state: pending
+    blocked_by: "Reopen only when the L2 / learning synthesis is active and the final source bibliographic status is reviewed."
+  - target: "Core/SRT_Core_24_Discriminating_Predictions.md"
+    state: pending
+    blocked_by: "Requires calibration, power simulation, comparator-model recovery, fixed perturbation implementation and preregistration before P24-3 hardening."
+  - target: "03_Bridges/SRT_Selection_Event_CompactCore.md"
+    state: pending
+    blocked_by: "Only a bounded CG-1 / CG-2 / CG-4 example may be added; do not redefine the selection-event ladder from this neuroscience case."
 source_patch: Neuroscience/patches/SRT_Neuro_NEURAL25_Memory_as_Historical_Selection_Bias_v0_1.md
 experimental_protocol: Neuroscience/SRT_NEURAL25_EXPERIMENT_PROTOCOL_v0_1.md
 protocol_status: pilot_ready_v0_1
