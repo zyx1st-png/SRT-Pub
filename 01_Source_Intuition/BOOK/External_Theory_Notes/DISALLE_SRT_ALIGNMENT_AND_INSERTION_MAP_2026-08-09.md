@@ -1,6 +1,9 @@
 ---
 id: BOOK-DISALLE-SRT-ALIGNMENT-AND-INSERTION-MAP-2026-08-09
 type: external_theory_alignment_map
+status: active
+layer: book_support
+epistemic_layer: bridge
 source: "Robert DiSalle, Understanding Space-Time: The Philosophical Development of Physics from Newton to Einstein (Cambridge University Press, 2006)"
 source_card: Materials/2026/SRC_2026_08_09_Philosophy_DiSalle_Understanding_Space_Time.md
 scope: DiSalle 的构成性框架、测量论、可修正先验、局部—全局与表述/结构区分对《从存在到秩序》的插入决策
