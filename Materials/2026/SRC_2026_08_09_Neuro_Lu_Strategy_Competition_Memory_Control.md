@@ -3,6 +3,9 @@ id: SRC-2026-08-09-NEURO-LU-STRATEGY-COMPETITION-MEMORY-CONTROL
 type: source_card
 status: active
 canonical: false
+claim_mode: evidence
+layer: materials
+epistemic_layer: evidence
 domain: Neuroscience
 date_added: 2026-08-09
 source_type: preprint + conference abstract

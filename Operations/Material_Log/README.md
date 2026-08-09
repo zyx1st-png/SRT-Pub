@@ -26,10 +26,12 @@ canonical: false
 | [2026-07_Part01.md](2026-07_Part01.md) | 13 | historical active split |
 | [2026-07_Part02.md](2026-07_Part02.md) | 3 | historical active split |
 | [2026-08_Part01.md](2026-08_Part01.md) | 10 | August split; NEURAL23 added 2026-08-07 |
-| [2026-08_Part02.md](2026-08_Part02.md) | 1 | current August continuation; Damasio 2026 / NEURAL24 added 2026-08-07 |
+| [2026-08_Part02.md](2026-08_Part02.md) | 4 | current August continuation; HCLR01 added 2026-08-09 |
 
 ## Current note
 
-The August continuation records Antonio Damasio's 2026 *Natural Intelligence and the Logic of Consciousness* as an A-class bounded neuroscience biological-realization / pressure bridge (`NEURAL24`). The stable increment is bearer-indexed affective readout plus a five-way stake/deviation/signal/affect/action separation; the source also triggers a future audit of the current affective-signature equation and of any hard-problem move that treats bearer-relative relevance as a completed derivation of phenomenal character.
+The current August continuation now includes HCLR01, a bounded non-canonical P3/P4 method bridge triggered by Quanta's Lie-group explainer and technically checked against standard geometric-control theory. The stable increment is the distinction between `HEF-3` probability/cost reachability rewrite and a stronger untested `HEF-4` generator/composition rewrite. The existing tiny-MDP is explicitly kept on the `HEF-3` side; HCLR experiment execution is parked until a novelty audit against geometric/nonholonomic control, adaptive control, path dependence and state augmentation is completed.
+
+The same part also retains Antonio Damasio's 2026 *Natural Intelligence and the Logic of Consciousness* as an A-class bounded neuroscience biological-realization / pressure bridge (`NEURAL24`), Mark Solms et al.'s affective-AI case study (`AICONSC01`), and Ippoliti & Long's PRX state-coordinate/access-algebra guard (`THERM01`).
 
 `2026-08_Part01.md` retains the Young–Ericson–Schooler brain-body synchrony review as `NEURAL23`. If a count or route in the root material log temporarily lags this split index, the dated parts themselves are the record source for row contents; reconcile the root summary on the next root-log maintenance touch without rewriting historical rows.

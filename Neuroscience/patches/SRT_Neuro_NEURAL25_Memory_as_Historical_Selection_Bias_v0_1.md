@@ -1,9 +1,13 @@
 ---
 id: SRT-NEURO-NEURAL25-MEMORY-HISTORICAL-SELECTION-BIAS
 type: bridge_patch
-status: standalone_v0_1
+status: active
+version: v0_1
 canonical: false
 claim_level: P3-P4
+claim_mode: evidence
+layer: operations
+epistemic_layer: os
 domain: Neuroscience
 source_ids: [SRC-2026-08-09-NEURO-LU-STRATEGY-COMPETITION-MEMORY-CONTROL]
 created: 2026-08-09
