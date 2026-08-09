@@ -19,9 +19,6 @@ landing_ledger:
   - target: "Core/SRT_Core_24_Discriminating_Predictions.md"
     state: pending
     blocked_by: "Requires a separately frozen HCLR experiment protocol with matched-state and matched-first-order controls before any P4 prediction row is promoted."
-  - target: "papers/history_dependent_reachability/"
-    state: blocked
-    blocked_by: "The current paper charter is frozen and forbids new experiments or theory-driven redesign. HCLR is a future workline, not a retrofit into the current manuscript."
 revival_trigger: "When the author opens a new HEF-4 / rule-level historical-write-back experiment or paper, run a novelty audit first; only if a residual discriminator survives should this hook be activated."
 ---
 
