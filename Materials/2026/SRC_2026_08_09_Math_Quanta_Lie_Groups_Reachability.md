@@ -1,4 +1,9 @@
 ---
+id: SRC-2026-08-09-MATH-QUANTA-LIE-GROUPS-REACHABILITY
+type: source_card
+status: active
+layer: materials
+epistemic_layer: evidence
 source_id: SRC-2026-08-09-MATH-QUANTA-LIE-GROUPS-REACHABILITY
 title: "What Are Lie Groups?"
 source_type: secondary_expository_trigger_with_primary_control_theory_verification
