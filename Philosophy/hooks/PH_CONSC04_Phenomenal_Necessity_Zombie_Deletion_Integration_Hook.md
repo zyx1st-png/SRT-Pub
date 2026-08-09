@@ -1,0 +1,145 @@
+---
+id: HOOK-PH-CONSC04-PHENOMENAL-NECESSITY-ZOMBIE-DELETION
+type: integration_hook
+status: active
+record_stage: pending
+canonical: false
+layer: operations
+epistemic_layer: bridge
+claim_mode: integration_plan
+source_patch: Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md
+source_ids:
+  - SRC-2026-08-08-PHIL-LEWIS-MIND-FROM-MINDLESS-MATTER
+target_documents:
+  - Philosophy/SRT_HardProblem_Epistemology.md
+  - Philosophy/SRT_Subjecthood_Threshold_Interface.md
+  - Core/SRT_OPEN_TENSIONS.md
+  - Core_Law/SRT_Individuation.md
+  - AI/AI_POSITIONING_NOTE.md
+---
+
+# PH-CONSC04 Integration Hook — Phenomenal Necessity / Zombie Deletion
+
+## Purpose
+
+Carry the PH-CONSC04 result into later hard-problem / subjecthood synthesis without turning a secondary source or a bridge thought experiment into canonical proof.
+
+## Core de-materialized payload
+
+```text
+Perspective-center individuation
+!=
+phenomenal necessity.
+
+SRT currently has substantial structure for the first problem and a strong constitutive proposal for the second, but the implication from structural bearing / Stable-ISP-compatible subject-position to phenomenal presence must remain open until it survives a non-circular zombie/deletion test.
+```
+
+## Target 1 — `Philosophy/SRT_HardProblem_Epistemology.md`
+
+Candidate future insertion:
+
+1. Split the residual burden into:
+   - HP-A: persistent perspective-center individuation;
+   - HP-B: phenomenal necessity.
+2. Preserve the view-from-nowhere / re-objectification guard.
+3. Downgrade any wording that can be read as:
+
+```text
+bearing -> phenomenality proved
+```
+
+into:
+
+```text
+bearing / first-person identity = constitutive interpretation under active hardening
+```
+
+unless a later theorem closes the Z6 pressure case.
+
+## Target 2 — `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
+
+Add a bounded distinction:
+
+```text
+subject-position admission
+!=
+phenomenal-necessity verdict
+```
+
+Use the following audit sequence:
+
+```text
+candidate unit
+-> consequence-return closure
+-> stake / concern
+-> history writeback
+-> integration / counterfactuality
+-> continuity / reselection
+-> subject-position candidate
+-> phenomenality remains separately assessed
+```
+
+## Target 3 — `Core/SRT_OPEN_TENSIONS.md`
+
+Recommended future open-pressure entry:
+
+**Phenomenal necessity / SRT-zombie**
+
+- stabilized: perspective access is not a view-from-nowhere gap; Stable ISP and individuation provide a subject-position architecture; bearing candidates can be specified without phenomenal vocabulary;
+- unresolved: whether a fully individuated, non-substitutable, stake-bearing Stable-ISP-like perspective center can coherently be phenomenally empty;
+- do not overstate: `bearing`, `d > 0`, same-bearer consequence return or Stable ISP are not currently canonical proofs of qualia.
+
+## Target 4 — `Core_Law/SRT_Individuation.md`
+
+Preserve the two-transition architecture:
+
+```text
+subject-position entry
+-> later reflective self-consciousness condensation
+```
+
+Add only a guardrail that individuation dynamics answer primarily HP-A and do not automatically close HP-B.
+
+## Target 5 — `AI/AI_POSITIONING_NOTE.md`
+
+Use two complementary controls:
+
+```text
+Z4: rich self-report / self-model / global access but externally borne or transferable consequence
+Z6: genuine non-transferable same-bearer stake + history + Stable-ISP-like continuity, with phenomenality left open
+```
+
+This prevents both:
+
+```text
+behavior/report inflation
+and
+bearing inflation
+```
+
+## UAL placement
+
+UAL should enter only as a P3/P4 bridge candidate for:
+
+```text
+history-sensitive flexible alternative evaluation
+```
+
+not as a consciousness definition.
+
+## Forbidden integration
+
+Do not use this hook to write:
+
+```text
+Lewis proves SRT
+UAL proves consciousness
+life is phenomenally subjective by boundary alone
+Stable ISP = consciousness
+structural bearing = phenomenal bearing by definition
+SRT has solved the hard problem
+```
+
+## Exit condition
+
+This hook can be marked integrated only when the target synthesis explicitly preserves the HP-A / HP-B distinction and records the Z6 phenomenal-necessity pressure rather than silently closing it.
