@@ -26,9 +26,11 @@ landing_ledger:
     state: pending
     blocked_by: "Potential use is the representational / constitutive / realized-path distinction; it must not redefine canonical selection or smuggle in a pre-existing chooser."
   - target: "01_Source_Intuition/BOOK/Drafts_26Q/Q26_理论如何失败.md"
+    target_status: planned
     state: pending
     blocked_by: "Use only in the future unified book pass to show framework failure as systematic conflict between successful practice and new facts, not as one anomalous datum mechanically falsifying a constitutive principle."
   - target: "01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论如何成为牢笼.md"
+    target_status: planned
     state: pending
     blocked_by: "Use only to illustrate local-validity overextension: a framework becomes imprisoning when a locally successful format is globalized into an unrevisable ontology."
 ---
