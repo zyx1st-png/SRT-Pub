@@ -17,6 +17,7 @@
 | PH-METH02 Constitutive measurement / revisability | `Philosophy/patches/SRT_Philosophy_PH_METH02_Constitutive_Measurement_Revisability_v0_1.md` | theory principles can partly constitute empirical identification while remaining constrained and revisable; separates redescription from path change and requires a theory of selection identification rather than post-hoc correspondence | A / full-book close-read P3 method bridge; integration hook pending |
 | PH-CONSC02 Perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | hard-problem arguments should not smuggle in a disembodied outside view of science; first-person and third-person descriptions are routed as situated access differences before metaphysical gaps | Integrated guardrail in `Philosophy/SRT_HardProblem_Epistemology.md`; residual now routed to PH-CONSC03 |
 | PH-CONSC03 Subjectivity decomposition / bearer–concern split | `Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md` | separates selector, bearer, concern domain and experiencer; distinguishes bearer boundary from concern boundary and treats same-bearer consequence return / future-selectability rewrite as candidate bearing discriminators without making bearing a phenomenality proof | New P3/P4 hardening patch; integration hook pending |
+| PH-CONSC04 Phenomenal necessity / zombie deletion | `Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md` | separates perspective-center individuation (HP-A) from phenomenal necessity (HP-B), introduces Z0–Z6 controls and a deletion test, and blocks `bearing/Stable ISP -> phenomenality` from being treated as already proved | A / secondary-source-triggered P3/P4 pressure patch; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
 
@@ -215,6 +216,44 @@ future-selectability rewrite = phenomenality
 SRT uniquely discovered vulnerability / intrinsic normativity / consequence return
 ```
 
+### PH-CONSC04 phenomenal necessity / zombie deletion
+
+Use PH-CONSC04 after PH-CONSC03 has separated selector, bearer, concern domain and experiencer. The next residual split is:
+
+```text
+HP-A = perspective-center individuation
+HP-B = phenomenal necessity
+```
+
+Use the Z0–Z6 controls to avoid both representation inflation and bearing inflation:
+
+```text
+self-model / report / global access
+!= perspective-bearing
+
+same-bearer consequence return / Stable-ISP-like continuity
+!= phenomenality proved
+```
+
+Safe uses:
+
+- treat Lewis’s evolutionary scaffold as an external pressure map, not proof;
+- use UAL only as a P3/P4 candidate bridge for history-sensitive flexible reselection;
+- distinguish structural bearing from phenomenal bearing without adding either as a canonical symbol;
+- ask what explanatory, predictive or constitutive residue is lost when phenomenal presence is deleted from an otherwise complete subject-position model;
+- preserve `SRT-zombie` as an explicit open pressure case until a non-circular necessity argument exists.
+
+Do not claim:
+
+```text
+inside/outside proves subjectivity
+UAL proves consciousness
+Stable ISP proves phenomenality
+bearing is conscious by definition
+SRT-zombies are already formally impossible
+SRT has solved the hard problem
+```
+
 ---
 
 ## 2. Agency / subjecthood synthesis
@@ -247,6 +286,7 @@ Proposed additions:
 18. Boundary cautions: avoid overextension and overrestriction
 19. Subjectivity role decomposition: selector / bearer / concern domain / experiencer
 20. Bearer boundary vs concern boundary; same-bearer consequence-return and future-selectability-writeback tests
+21. Perspective-center individuation vs phenomenal necessity; Z0–Z6 zombie/deletion pressure test
 
 ---
 
@@ -289,6 +329,10 @@ PH-CONSC02 hard-problem epistemology guardrail = integrated
 PH-CONSC03 derived hardening patch = added
 PH-CONSC03 integration hook = added / pending
 PH-CONSC03 canonical merge = not authorized / not requested
+PH-CONSC04 Lewis SourceCard = added
+PH-CONSC04 patch = added
+PH-CONSC04 integration hook = added / pending
+PH-CONSC04 canonical merge = not authorized / not requested
 PH-CONSC01 SourceCard = added
 PH-CONSC01 patch = added
 PH-CONSC01 hook = added
