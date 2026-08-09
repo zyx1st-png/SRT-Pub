@@ -1,11 +1,13 @@
 ---
 id: SRT-NEURAL25-EXPERIMENT-PROTOCOL-V0-1
 type: experimental_protocol
-status: pilot_ready_v0_1
+status: active
+version: v0_1
 canonical: false
 claim_level: P4
 claim_mode: lab_hypothesis
 layer: neuroscience_lab
+epistemic_layer: bridge
 created: 2026-08-09
 updated: 2026-08-09
 owner_patch: Neuroscience/patches/SRT_Neuro_NEURAL25_Memory_as_Historical_Selection_Bias_v0_1.md
