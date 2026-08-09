@@ -114,6 +114,17 @@ Dynamical Capacity
 
 It must not be read as `entropy = selection capacity`; entropy, connectivity, perturbational complexity and criticality-related measures remain candidate proxy families.
 
+NEURAL27 adds an event-memory / prospective-control layer:
+
+```text
+retained / reportable memory
+!= active history use
+!= prospective path bias
+!= full HEF-3 historical write-back
+```
+
+It treats event boundaries as candidate update opportunities rather than choice events, and uses anticipatory gaze under repeated naturalistic viewing as a no-report history-use readout. Its strongest role is to connect N10 rapid hardening, N11 future-reachability deformation and NEURAL25 memory-control efficacy without identifying hippocampus, prediction error, gaze or sleep with SRT primitives.
+
 ---
 
 ## 3. Recommended future synthesis
@@ -144,7 +155,7 @@ Proposed structure:
 
 When consciousness-specific hardening reopens, NEURAL24 should be routed to the consciousness owner / hard-problem interface rather than forcing it into this planned neural-mechanisms synthesis.
 
-NEURAL25 and NEURAL26 should be retrieved together when the task concerns memory, strategy competition, accessibility, control authority, anesthesia, network complexity, or candidate-state switching. They form complementary candidate-level and system-level decompositions and must not be collapsed into one scalar "selection strength."
+NEURAL25, NEURAL26 and NEURAL27 should be retrieved together when the task concerns memory, strategy competition, accessibility, control authority, anesthesia, network complexity, candidate-state switching, event segmentation or future-guiding memory. They form complementary candidate-control, system-capacity and prospective-history-use decompositions and must not be collapsed into one scalar "selection strength."
 
 ---
 
@@ -165,6 +176,7 @@ NEURAL25 and NEURAL26 should be retrieved together when the task concerns memory
 | NEURAL24 | `Materials/2026/SRC_2026_08_07_Neuro_Damasio_Natural_Intelligence_Consciousness.md` / `Neuroscience/patches/SRT_Neuro_NEURAL24_Bearer_Indexed_Affective_Readout_Gate_v0_1.md` | `Neuroscience/SRT_Consciousness_Mechanisms.md` + `Philosophy/SRT_HardProblem_Epistemology.md` + `Philosophy/SRT_Subjecthood_Threshold_Interface.md` + AI architecture future synthesis | Damasio 2026 supplies a biological bearer-indexing / affective-consequence-compression model while separating stake from affective salience; it also pressures the current `sigma_e ~ partial d / partial t` bridge and any move from same-bearer consequence return directly to phenomenal character | Standalone P3 pressure/implementation patch and pending hook added; full trade-book close-read; no owner/canonical/body rewrite in this pass |
 | NEURAL25 | `Materials/2026/SRC_2026_08_09_Neuro_Lu_Strategy_Competition_Memory_Control.md` / `Neuroscience/patches/SRT_Neuro_NEURAL25_Memory_as_Historical_Selection_Bias_v0_1.md` | `Neuroscience/SRT_NEURAL25_EXPERIMENT_PROTOCOL_v0_1.md` + future Neural CompactCore / Core24 synthesis | Representation, candidate accessibility, control authority, expression and historical write-back must be separated; memory is not exhausted by retained content, but neither is it reducible to a scalar selection weight | Standalone P3/P4 bridge plus independent pilot-ready P4 protocol; matched-current-state / different-history formal lock still pending Stage-0 recovery and calibration |
 | NEURAL26 | `Materials/2026/SRC_2026_08_09_Neuro_Qin_Esketamine_DoC_Network_Recovery.md` / `Neuroscience/patches/SRT_Neuro_NEURAL26_Selection_Capacity_Accessibility_Authority_Stack_v0_1.md` | Neural CompactCore + predictions + future NEURAL25 capacity/history crossed experiment | Adds an upstream system-level dynamical-capacity bridge: global neural regime may constrain whether differentiated candidates can form, propagate and compete, while candidate accessibility, control authority, expression and write-back remain separable; entropy/connectivity are proxy families, not selection-capacity identities | Standalone P3/P4 bridge and pending hook added; peer-reviewed prospective non-randomized DoC evidence; no causal long-term recovery claim and no consciousness/entropy identity |
+| NEURAL27 | `Materials/2026/SRC_2026_08_09_Neuro_Ranganath_Prospective_Memory_Event_Boundaries.md` / `Neuroscience/patches/SRT_Neuro_NEURAL27_Prospective_Memory_Event_Boundary_Historical_Efficacy_v0_1.md` | Neural CompactCore + future N1-N13 synthesis + NEURAL25 protocol + HEF protocol | Event boundaries are candidate history-update opportunities, not choice events; anticipatory gaze under repeated viewing provides a no-report prospective history-use / path-bias readout that separates reportable memory from future-guiding control | Standalone P3/P4 bridge and pending hook added; peer-reviewed event-boundary/MEGA anchors; strong HEF-2 and HEF-3-shaped evidence only, with full HEF-3 still gated by causal-carrier and future-organization tests |
 
 ---
 
@@ -197,9 +209,10 @@ NEURAL23 = Pipeline 1 embodied rhythmic eligibility bridge patch and landing-led
 NEURAL24 = Pipeline 1 bearer-indexed affective-readout / phenomenal-stopping-point pressure patch and landing-ledger hook added; consciousness, hard-problem, subjecthood and AI synthesis targets pending
 NEURAL25 = Pipeline 1 memory-as-historical-selection-bias bridge, hook and independent experiment protocol added; Stage-0 model recovery / formal lock pending
 NEURAL26 = Pipeline 1 system-level dynamical-capacity / candidate accessibility / control-authority bridge and hook added; cross-capacity/history experimental extension pending
+NEURAL27 = Pipeline 1 prospective-memory / event-boundary / anticipatory-gaze historical-efficacy bridge and landing-ledger hook added; compact-core, N1-N13, NEURAL25 and HEF integration targets pending
 B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, or NEURAL15-NEURAL26 as primitive axioms. They are high-value bridge / lab / pressure materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, or NEURAL15-NEURAL27 as primitive axioms. They are high-value bridge / lab / pressure materials awaiting future synthesis or empirical hardening.
