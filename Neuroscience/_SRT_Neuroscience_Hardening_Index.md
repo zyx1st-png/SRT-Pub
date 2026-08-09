@@ -90,6 +90,30 @@ L0_accessible
 
 NEURAL24 is a different kind of bridge: it adds no new state layer. It separates stake, physiological deviation, regulatory signal, affective salience and action; treats affect as a candidate consequence-compression / bearer-indexing channel; and registers a hard-problem stopping-point audit.
 
+NEURAL25 adds a candidate-control / history layer:
+
+```text
+representation
+!= candidate accessibility
+!= control authority
+!= expression
+!= historical write-back
+```
+
+It treats memory content and memory's causal role in future selection as separable and owns the matched-current-state / different-history flagship P4 protocol.
+
+NEURAL26 adds an upstream global-state layer:
+
+```text
+Dynamical Capacity
+!= Candidate Accessibility
+!= Control Authority
+!= Expression
+!= Historical Write-back
+```
+
+It must not be read as `entropy = selection capacity`; entropy, connectivity, perturbational complexity and criticality-related measures remain candidate proxy families.
+
 ---
 
 ## 3. Recommended future synthesis
@@ -120,6 +144,8 @@ Proposed structure:
 
 When consciousness-specific hardening reopens, NEURAL24 should be routed to the consciousness owner / hard-problem interface rather than forcing it into this planned neural-mechanisms synthesis.
 
+NEURAL25 and NEURAL26 should be retrieved together when the task concerns memory, strategy competition, accessibility, control authority, anesthesia, network complexity, or candidate-state switching. They form complementary candidate-level and system-level decompositions and must not be collapsed into one scalar "selection strength."
+
 ---
 
 ## 4. Pipeline 1 material patches
@@ -137,6 +163,8 @@ When consciousness-specific hardening reopens, NEURAL24 should be routed to the 
 | NEURAL22 | `Materials/2026/SRC_2026_08_04_Neuro_Perez_Astrocyte_Hierarchical_Information_Flow.md` / `Neuroscience/patches/SRT_Neuro_NEURAL22_Astrocyte_Hierarchical_Information_Flow_v0_1.md` | N12 revision + `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` | Astrocyte support topology is nested across subcellular and intercellular scales; dynamic initiator, hub, somatic, and receiving roles condition local-to-global support admission, while latency/centrality, calcium recruitment, `Psi_f`, `d`, `T_dir`, and consciousness remain separated | Standalone P3 bridge/P4 experimental patch and pending hook added; full peer-reviewed PDF close-read; causal-flow and pathology extrapolations explicitly bounded |
 | NEURAL23 | `Materials/2026/SRC_2026_06_27_Neuro_Young_Brain_Body_Synchrony_Consciousness.md` / `Neuroscience/patches/SRT_Neuro_NEURAL23_Embodied_Rhythmic_Eligibility_v0_1.md` | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` + `Neuroscience/SRT_Neuro_Predictions_Table.md` + future hardening synthesis | Brain-body rhythms may modulate momentary candidate eligibility before anchoring; selection weight, selection opportunity and friction are separated; physiological synchrony remains a domain mechanism and is not `d`, `Psi_f`, consciousness or subjecthood | Standalone P3 bridge/P4 experimental patch and pending hook added; full peer-reviewed review close-read; strongest differential test is `Phase x Stake` with arousal/decision/recovery controls |
 | NEURAL24 | `Materials/2026/SRC_2026_08_07_Neuro_Damasio_Natural_Intelligence_Consciousness.md` / `Neuroscience/patches/SRT_Neuro_NEURAL24_Bearer_Indexed_Affective_Readout_Gate_v0_1.md` | `Neuroscience/SRT_Consciousness_Mechanisms.md` + `Philosophy/SRT_HardProblem_Epistemology.md` + `Philosophy/SRT_Subjecthood_Threshold_Interface.md` + AI architecture future synthesis | Damasio 2026 supplies a biological bearer-indexing / affective-consequence-compression model while separating stake from affective salience; it also pressures the current `sigma_e ~ partial d / partial t` bridge and any move from same-bearer consequence return directly to phenomenal character | Standalone P3 pressure/implementation patch and pending hook added; full trade-book close-read; no owner/canonical/body rewrite in this pass |
+| NEURAL25 | `Materials/2026/SRC_2026_08_09_Neuro_Lu_Strategy_Competition_Memory_Control.md` / `Neuroscience/patches/SRT_Neuro_NEURAL25_Memory_as_Historical_Selection_Bias_v0_1.md` | `Neuroscience/SRT_NEURAL25_EXPERIMENT_PROTOCOL_v0_1.md` + future Neural CompactCore / Core24 synthesis | Representation, candidate accessibility, control authority, expression and historical write-back must be separated; memory is not exhausted by retained content, but neither is it reducible to a scalar selection weight | Standalone P3/P4 bridge plus independent pilot-ready P4 protocol; matched-current-state / different-history formal lock still pending Stage-0 recovery and calibration |
+| NEURAL26 | `Materials/2026/SRC_2026_08_09_Neuro_Qin_Esketamine_DoC_Network_Recovery.md` / `Neuroscience/patches/SRT_Neuro_NEURAL26_Selection_Capacity_Accessibility_Authority_Stack_v0_1.md` | Neural CompactCore + predictions + future NEURAL25 capacity/history crossed experiment | Adds an upstream system-level dynamical-capacity bridge: global neural regime may constrain whether differentiated candidates can form, propagate and compete, while candidate accessibility, control authority, expression and write-back remain separable; entropy/connectivity are proxy families, not selection-capacity identities | Standalone P3/P4 bridge and pending hook added; peer-reviewed prospective non-randomized DoC evidence; no causal long-term recovery claim and no consciousness/entropy identity |
 
 ---
 
@@ -167,9 +195,11 @@ NEURAL21 = Pipeline 1 REM state-dependent metabolic payability bridge patch and 
 NEURAL22 = Pipeline 1 nested intra-/intercellular astrocyte-topology bridge patch and hook added; N12, compact-core and prediction-table synthesis pending
 NEURAL23 = Pipeline 1 embodied rhythmic eligibility bridge patch and landing-ledger hook added; compact-core, prediction-table and hardening-synthesis targets pending
 NEURAL24 = Pipeline 1 bearer-indexed affective-readout / phenomenal-stopping-point pressure patch and landing-ledger hook added; consciousness, hard-problem, subjecthood and AI synthesis targets pending
+NEURAL25 = Pipeline 1 memory-as-historical-selection-bias bridge, hook and independent experiment protocol added; Stage-0 model recovery / formal lock pending
+NEURAL26 = Pipeline 1 system-level dynamical-capacity / candidate accessibility / control-authority bridge and hook added; cross-capacity/history experimental extension pending
 B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, NEURAL15, NEURAL16, NEURAL17, NEURAL18, NEURAL19, NEURAL20, NEURAL21, NEURAL22, NEURAL23, or NEURAL24 as primitive axioms. They are high-value bridge / lab / pressure materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, or NEURAL15-NEURAL26 as primitive axioms. They are high-value bridge / lab / pressure materials awaiting future synthesis or empirical hardening.
