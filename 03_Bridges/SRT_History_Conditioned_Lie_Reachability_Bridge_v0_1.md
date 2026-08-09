@@ -1,7 +1,8 @@
 ---
 id: SRT-HCLR01-HISTORY-CONDITIONED-LIE-REACHABILITY
 type: bridge
-status: active_v0_1
+status: active
+version: v0_1
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
