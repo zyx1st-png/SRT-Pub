@@ -229,6 +229,9 @@ selection event
 | NEURAL22 astrocyte hierarchical information flow | `Neuroscience/patches/SRT_Neuro_NEURAL22_Astrocyte_Hierarchical_Information_Flow_v0_1.md` | adds intra-astrocytic hierarchy, dynamic hubs and local-to-global support admission to N12's intercellular glial topology | High |
 | NEURAL23 embodied rhythmic eligibility | `Neuroscience/patches/SRT_Neuro_NEURAL23_Embodied_Rhythmic_Eligibility_v0_1.md` | adds momentary phase-dependent selection eligibility before anchoring; separates selection opportunity from selection weight/friction and from later plasticity eligibility | High |
 | NEURAL24 bearer-indexed affective readout | `Neuroscience/patches/SRT_Neuro_NEURAL24_Bearer_Indexed_Affective_Readout_Gate_v0_1.md` | separates stake from affective salience, treats feeling as consequence-compression / bearer-indexing candidate, and registers a hard-problem stopping-point audit | High |
+| NEURAL25 memory as historical selection bias | `Neuroscience/patches/SRT_Neuro_NEURAL25_Memory_as_Historical_Selection_Bias_v0_1.md` | separates retained representation, candidate accessibility, control authority, behavioral expression and historical write-back | High |
+| NEURAL26 capacity/accessibility/authority stack | `Neuroscience/patches/SRT_Neuro_NEURAL26_Selection_Capacity_Accessibility_Authority_Stack_v0_1.md` | separates global dynamical capacity from candidate accessibility, control authority, expression and historical write-back | High |
+| NEURAL27 prospective memory / event-boundary historical efficacy | `Neuroscience/patches/SRT_Neuro_NEURAL27_Prospective_Memory_Event_Boundary_Historical_Efficacy_v0_1.md` | treats event boundaries as update opportunities and anticipatory gaze as a no-report history-use/path-bias assay; separates reportable memory from prospective control and full HEF-3 write-back | High |
 
 Recommended synthesis:
 
@@ -239,6 +242,9 @@ N12 -> intercellular non-neuronal biological infrastructure
 NEURAL22 -> intra-astrocytic nested support topology and dynamic-center correction
 NEURAL23 -> pre-anchoring embodied rhythmic eligibility and Phase x Stake test
 NEURAL24 -> affect/stake dissociation + bearer-indexed access + phenomenal-stopping-point audit
+NEURAL25 -> memory content / accessibility / authority / expression / write-back decomposition
+NEURAL26 -> system capacity / candidate accessibility / authority stack
+NEURAL27 -> event-boundary update opportunity + prospective history-use / path-bias readout
 NEURAL18-20 -> selection-readiness, resource admission, and script/reselection guards
 NEURAL21 -> state-dependent metabolic supply/payment separation
 
@@ -246,7 +252,7 @@ Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
 + consciousness / hard-problem synthesis for NEURAL24
 ```
 
-NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL24 remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
+NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL27 remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
 
 NEURAL22 preserves:
 
@@ -286,6 +292,22 @@ stake
 bearer-relative relevance
 != integrated conscious field proved
 != phenomenal character derived
+```
+
+NEURAL25-NEURAL27 preserve:
+
+```text
+retained / decodable memory
+!= candidate accessibility
+!= control authority
+!= prospective path bias
+!= historical write-back
+
+event boundary
+!= Real Choice Moment
+
+strong active history use
+!= automatic HEF-3 / L2 admission
 ```
 
 ---
