@@ -14,6 +14,7 @@
 | PH-AG04 Sensorimotor time / agency dissociation | `Philosophy/patches/SRT_Philosophy_PH_AG04_Sensorimotor_Time_Agency_v0_1.md` | control efficacy, authorial attribution, body ownership and reflective self-integration are partially independent; external effectors can enter control loops without becoming bodily or shared-agency bearers | A / four-experiment full-text close-read bridge; bounded interface integrated |
 | PH-SEM01 Bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | practical positions should distinguish assertion, denial and open remainder; defeasible clashes may be repaired by added context, while incompatibility remains irreducible to positive consequence, agency or stake | A / penultimate-draft full-text close-read bridge; integration hook added |
 | PH-METH01 Emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | emergence is not an explanatory primitive; SRT bridge claims must specify mechanism, transition condition, macro-pattern, and implementation channel before using emergence/downward-causation language | Integrated guardrail in `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
+| PH-METH02 Constitutive measurement / revisability | `Philosophy/patches/SRT_Philosophy_PH_METH02_Constitutive_Measurement_Revisability_v0_1.md` | theory principles can partly constitute empirical identification while remaining constrained and revisable; separates redescription from path change and requires a theory of selection identification rather than post-hoc correspondence | A / full-book close-read P3 method bridge; integration hook pending |
 | PH-CONSC02 Perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | hard-problem arguments should not smuggle in a disembodied outside view of science; first-person and third-person descriptions are routed as situated access differences before metaphysical gaps | Integrated guardrail in `Philosophy/SRT_HardProblem_Epistemology.md`; residual now routed to PH-CONSC03 |
 | PH-CONSC03 Subjectivity decomposition / bearer–concern split | `Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md` | separates selector, bearer, concern domain and experiencer; distinguishes bearer boundary from concern boundary and treats same-bearer consequence return / future-selectability rewrite as candidate bearing discriminators without making bearing a phenomenality proof | New P3/P4 hardening patch; integration hook pending |
 | PH-CONSC04 Phenomenal necessity / zombie deletion | `Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md` | separates perspective-center individuation (HP-A) from phenomenal necessity (HP-B), introduces Z0–Z6 controls and a deletion test, and blocks `bearing/Stable ISP -> phenomenality` from being treated as already proved | A / secondary-source-triggered P3/P4 pressure patch; integration hook pending |
@@ -135,6 +136,43 @@ position = subject or stake-bearer
 incompatibility alone defines selection
 Simonelli proves selection-first ontology
 ```
+
+### PH-METH02 constitutive measurement / revisability
+
+Use DiSalle as a philosophy-of-science hardening bridge for interpretation and measurement discipline:
+
+```text
+constitutive role
+!= eternal necessity
+!= arbitrary convention
+
+representation change
+!= realized path change
+
+formal object + correspondence sentence
+!= empirical grounding
+```
+
+Safe uses:
+
+- require an explicit identification / measurement practice for bridge variables and events;
+- use equivalent redescription as a negative control against false path-selection claims;
+- ask whether independent procedures converge on the same event or quantity;
+- treat theory progress as enlargement of perspective when a broader framework recovers the bounded success of the older framework;
+- use objectification-under-constraint to resist both pre-given-object and arbitrary-construction extremes.
+
+Do not claim:
+
+```text
+DiSalle proves selection-first ontology
+constitutive interpretation = ontological generation
+measurement = SRT selection
+framework dependence = observer-created reality
+coordinate freedom = real-choice freedom
+invariant structure = L2 / d / Psi_f / G_hat_theta
+```
+
+PH-METH02 proposes no new SEA gate. Its representation-invariance discipline remains a meta-audit on existing evidence interpretation.
 
 ### PH-CONSC03 subjectivity decomposition
 
@@ -279,6 +317,11 @@ PH-METH01 SourceCard = added
 PH-METH01 patch = added
 PH-METH01 hook = added
 PH-METH01 Core 21C guardrail = integrated
+PH-METH02 SourceCard = full-book close-read
+PH-METH02 patch = added
+PH-METH02 integration hook = added / pending
+PH-METH02 book insertion map = added
+PH-METH02 canonical merge = not authorized / not requested
 PH-CONSC02 SourceCard = added
 PH-CONSC02 patch = added
 PH-CONSC02 hook = added
