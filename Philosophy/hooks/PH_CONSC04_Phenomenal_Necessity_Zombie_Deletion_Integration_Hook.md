@@ -1,7 +1,8 @@
 ---
 id: HOOK-PH-CONSC04-PHENOMENAL-NECESSITY-ZOMBIE-DELETION
 type: integration_hook
-status: pending
+status: active
+record_stage: pending
 canonical: false
 layer: operations
 epistemic_layer: bridge
