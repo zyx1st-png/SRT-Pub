@@ -5,7 +5,7 @@ source_ids:
 domain: philosophy_of_science_measurement_conceptual_change
 claim_level: P3
 canonical_status: non_canonical
-status: patch
+status: active
 target_future_doc:
   - Philosophy/Papers/Selection_Event_Audit_Method_Paper_Strategy.md
   - Physics/_SRT_Phys_Bridge.md
