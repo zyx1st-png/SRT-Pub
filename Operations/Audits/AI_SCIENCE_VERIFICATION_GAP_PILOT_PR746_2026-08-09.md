@@ -1,7 +1,8 @@
 ---
 id: SRT-AI-SCIENCE-VERIFICATION-GAP-PILOT-PR746-20260809
 type: audit_result
-status: completed_dry_run
+status: archived
+run_status: completed_dry_run
 layer: meta
 epistemic_layer: os
 claim_mode: audit
