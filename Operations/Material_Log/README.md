@@ -27,14 +27,16 @@ canonical: false
 | [2026-07_Part01.md](2026-07_Part01.md) | 13 | historical active split |
 | [2026-07_Part02.md](2026-07_Part02.md) | 3 | historical active split |
 | [2026-08_Part01.md](2026-08_Part01.md) | 10 | August split; NEURAL23 added 2026-08-07 |
-| [2026-08_Part02.md](2026-08_Part02.md) | 4 | August continuation; HCLR01 plus NEURAL24/AICONSC01/THERM01 |
+| [2026-08_Part02.md](2026-08_Part02.md) | 5 | August continuation; PH-METH02 added alongside HCLR01/NEURAL24/AICONSC01/THERM01 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | current August continuation; NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
 
 ## Current note
 
-`2026-08_Part02.md` includes HCLR01, a bounded non-canonical P3/P4 method bridge triggered by Quanta's Lie-group explainer and technically checked against standard geometric-control theory. Its stable increment is the distinction between `HEF-3` probability/cost reachability rewrite and a stronger untested `HEF-4` generator/composition rewrite. The existing tiny-MDP remains explicitly on the `HEF-3` side; HCLR experiment execution is parked until a novelty audit against geometric/nonholonomic control, adaptive control, path dependence and state augmentation is completed.
+`2026-08_Part02.md` now also includes **PH-METH02**, a bounded non-canonical P3 philosophy-of-science / measurement-method bridge from Robert DiSalle's *Understanding Space-Time*. The stable increment is methodological: constitutive interpretation can be empirically constrained and revisable; equivalent redescription must be separated from realized path change; a stronger theory should recover the bounded success of the older framework; and mature SRT bridges need an explicit identification/measurement discipline rather than a formal object plus a post-hoc correspondence sentence. The packet explicitly blocks any inference from DiSalle to selection-first ontology, observer-created reality, or measurement = SRT selection.
 
-The same part also retains Antonio Damasio's 2026 *Natural Intelligence and the Logic of Consciousness* as the `NEURAL24` bounded biological-realization / pressure bridge, Mark Solms et al.'s affective-AI case study (`AICONSC01`), and Ippoliti & Long's PRX state-coordinate/access-algebra guard (`THERM01`).
+The same part includes **HCLR01**, a bounded non-canonical P3/P4 method bridge triggered by Quanta's Lie-group explainer and technically checked against standard geometric-control theory. Its stable increment is the distinction between `HEF-3` probability/cost reachability rewrite and a stronger untested `HEF-4` generator/composition rewrite. The existing tiny-MDP remains explicitly on the `HEF-3` side; HCLR experiment execution is parked until a novelty audit against geometric/nonholonomic control, adaptive control, path dependence and state augmentation is completed.
+
+The part also retains Antonio Damasio's 2026 *Natural Intelligence and the Logic of Consciousness* as the `NEURAL24` bounded biological-realization / pressure bridge, Mark Solms et al.'s affective-AI case study (`AICONSC01`), and Ippoliti & Long's PRX state-coordinate/access-algebra guard (`THERM01`).
 
 `2026-08_Part03.md` records two bounded A-class neuroscience bridges:
 
