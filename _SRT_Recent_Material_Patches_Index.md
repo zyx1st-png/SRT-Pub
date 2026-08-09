@@ -138,6 +138,7 @@ AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T
 | PH-SEM01 bilateral incompatibility / context repair | `Philosophy/patches/SRT_Philosophy_PH_SEM01_Bilateral_Incompatibility_Context_Repair_v0_1.md` | assertion, denial and open remainder; typed clashes; context repair and false-dilemma diagnostics | High |
 | PH-METH01 emergence hygiene | `Philosophy/patches/SRT_Philosophy_PH_METH01_Emergence_Hygiene_v0_1.md` | prevents emergence from functioning as an unexplained primitive | Medium-high |
 | PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | distinguishes situated access differences from immediate metaphysical gaps | Medium-high |
+| PH-IND01 object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | rebuilds Kibbe–Leslie under a strict evidence boundary: object individuation-before-identification is source-backed; subject-position-before-self-identification is only an SRT P3 analogy; tracking continuity is a negative control for bearer continuity | High |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
 | SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
 
@@ -173,6 +174,29 @@ with the guardrail:
 strict incompatibility
 != defeasible material clash
 != script-generated false dilemma
+```
+
+PH-IND01 remains tied to:
+
+```text
+Core_Law/SRT_Individuation.md
+Philosophy/SRT_Subjecthood_Threshold_Interface.md
+Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
+```
+
+and preserves:
+
+```text
+object tracking
+!= object identification
+!= bearer continuity
+!= phenomenal consciousness
+
+source-backed:
+this one -> what this one is
+
+SRT P3 analogy only:
+this bearer / from here -> who I am
 ```
 
 PH-CONSC01 joins the agency/subjecthood synthesis as the consciousness-side ownership gate without canonical promotion. PH-CONSC02 remains tied to `Philosophy/SRT_HardProblem_Epistemology.md`. SOC-COG02 remains tied to `Philosophy/SRT_Social_Cognition.md`. PH-METH01 remains tied to `Core/SRT_Core_21c_Bridge_Hypotheses.md` and `Governance/SRT_CLAIM_LADDER.md`.
