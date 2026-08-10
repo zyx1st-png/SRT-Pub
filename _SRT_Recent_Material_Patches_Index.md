@@ -143,6 +143,7 @@ AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T
 | PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | uses the full-book Simondon close-read to harden `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, dynamic bearer-boundary formation and generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | Very high |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
 | SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
+| SOC-COG03 norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating and distributed script constraints; separates supportive automation from choice-replacing closure; routes broad social constraint revision into existing H3/I5/J5 reselectability rather than creating a parallel second-order-selection gate | High |
 
 PH-AG01 through PH-AG04 and PH-SEM01 are synthesized in the following non-canonical draft:
 
@@ -257,7 +258,34 @@ yang != L1
 G_hat_theta != Yang entity
 ```
 
-PH-CONSC01 joins the agency/subjecthood synthesis as the consciousness-side ownership gate without canonical promotion. PH-CONSC02 remains tied to `Philosophy/SRT_HardProblem_Epistemology.md`. SOC-COG02 remains tied to `Philosophy/SRT_Social_Cognition.md`. PH-METH01 remains tied to `Core/SRT_Core_21c_Bridge_Hypotheses.md` and `Governance/SRT_CLAIM_LADDER.md`.
+SOC-COG03 remains tied to:
+
+```text
+Philosophy/SRT_Social_Cognition.md
+01_Source_Intuition/SRT_CHOICEMAP_EMBODIED_POSITION_SECOND_ORDER_SELECTION_CONTINUATION_2026-08-09.md
+Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md
+```
+
+and preserves:
+
+```text
+I_t^{social} subseteq A_all
+for instantaneous invitation gating
+
+meta-selectability
+!= I5-qualified second-order selection
+
+Reselect(Gamma_soc)
+!= J5 R3 in every case
+
+alternative-generation rewrite
+= specifically R3-like
+
+script
+!= L2
+```
+
+PH-CONSC01 joins the agency/subjecthood synthesis as the consciousness-side ownership gate without canonical promotion. PH-CONSC02 remains tied to `Philosophy/SRT_HardProblem_Epistemology.md`. SOC-COG02 and SOC-COG03 remain tied to `Philosophy/SRT_Social_Cognition.md`. PH-METH01 remains tied to `Core/SRT_Core_21c_Bridge_Hypotheses.md` and `Governance/SRT_CLAIM_LADDER.md`.
 
 All philosophy patches preserve:
 

@@ -23,6 +23,7 @@
 | PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | full-book Simondon close-read adds `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, a relation-of-relations bearer-boundary candidate, and a strict generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | A / full-monograph P3 hardening bridge; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
+| SOC-COG03 Norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating, distributed script carriers, supportive-vs-choice-replacing automation, and a social constraint-revision pathway explicitly routed into existing H3/I5/J5 reselectability rather than a parallel second-order-selection mechanism | A / bounded P3 social-cognition hardening bridge; integration hook pending |
 
 ---
 
@@ -329,6 +330,38 @@ yang/(yang+yin) = canonical equation
 Simondon proves SRT
 ```
 
+### SOC-COG03 social script / reselectability bridge
+
+Use SOC-COG03 to sharpen social invitation gating while preserving the existing H3/I5/J5 hierarchy:
+
+```text
+role / script / interaction history
+-> current invitation gating
+-> possible constraint inspectability / contestability / revision
+-> possible historical writeback
+-> only then apply H3/I5 for second-order-selection candidacy
+-> classify reopening depth with J5 R1-R4
+```
+
+Safe uses:
+
+- treat scripts as distributed carriers of social historical constraint without identifying them with `L_2`;
+- distinguish supportive automation from choice-replacing automation by what remains live and revisable at the relevant higher level;
+- use `meta-selectability` only as a broad social-domain diagnostic inside the existing `reselectability` family;
+- preserve `I_t^{social} \subseteq A_all` for instantaneous invitation gating;
+- treat alternative-generation rewrite as specifically J5 R3-like while allowing `Reselect(Gamma_soc)` to instantiate R1, R2, R3 or R4 depending on what is revised.
+
+Do not claim:
+
+```text
+meta-selectability = I5-qualified second-order selection
+Reselect(Gamma_soc) = J5 R3 in every case
+script disruption = Real Choice Moment
+script = L2
+salience = d-value
+norm-violation discomfort = Psi_f
+```
+
 ---
 
 ## 2. Agency / subjecthood synthesis
@@ -364,6 +397,7 @@ Proposed additions:
 21. Perspective-center individuation vs phenomenal necessity; Z0–Z6 zombie/deletion pressure test
 22. Object individuation vs identification as a negative control for bearer individuation vs self-identification
 23. Operator-as-sedimented-structure / current-operation, comparison-scale rewrite, stake-space gate, and relation-of-relations bearer-boundary pressures from PH-IND03
+24. Role-indexed invitation gating and social constraint revision from SOC-COG03, explicitly subordinate to the existing H3/I5/J5 reselectability architecture
 
 ---
 
@@ -431,5 +465,9 @@ SOC-COG02 SourceCard = added
 SOC-COG02 patch = added
 SOC-COG02 hook = added
 SOC-COG02 social-cognition bridge = integrated
+SOC-COG03 SourceCard = added
+SOC-COG03 patch = added
+SOC-COG03 integration hook = added / pending
+SOC-COG03 H3/I5/J5 crosswalk = explicit; no canonical promotion
 Full synthesis = Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md (draft_v0_2; canonical: false)
 ```
