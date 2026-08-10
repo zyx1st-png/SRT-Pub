@@ -140,6 +140,7 @@ AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T
 | PH-CONSC02 perspectival gap gate | `Philosophy/patches/SRT_Philosophy_PH_CONSC02_Perspectival_Gap_Gate_v0_1.md` | distinguishes situated access differences from immediate metaphysical gaps | Medium-high |
 | PH-IND01 object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | rebuilds Kibbe–Leslie under a strict evidence boundary: object individuation-before-identification is source-backed; subject-position-before-self-identification is only an SRT P3 analogy; tracking continuity is a negative control for bearer continuity | High |
 | PH-IND02 selective closure / perspective / bearer formation | `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` | treats selective stabilization and momentary closure as precursor concepts for dynamic boundary formation, then requires consequence return/history/future-selectability tests before bearer admission; types perspective below phenomenality | High |
+| PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | uses the full-book Simondon close-read to harden `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, dynamic bearer-boundary formation and generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | Very high |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
 | SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
 
@@ -221,6 +222,39 @@ system-relative perspective
 
 bearing candidate
 != phenomenality proof
+```
+
+PH-IND03 remains tied to:
+
+```text
+03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md
+Core_Law/SRT_Individuation.md
+Core/SRT_Core_13a_Operator_Basics.md
+Core/SRT_OPEN_TENSIONS.md
+Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
+```
+
+and preserves:
+
+```text
+Operation -> Structure -> Operation
+is a P3 process bridge, not a new canonical equation
+
+transduction
+!= canonical SRT selection
+!= Real Choice Moment
+
+new generative / comparison dimension
+!= new stake dimension
+!= d increase
+
+internal/external relation-of-relations boundary candidate
+!= bearer theorem
+!= phenomenality proof
+
+yin != L0
+yang != L1
+G_hat_theta != Yang entity
 ```
 
 PH-CONSC01 joins the agency/subjecthood synthesis as the consciousness-side ownership gate without canonical promotion. PH-CONSC02 remains tied to `Philosophy/SRT_HardProblem_Epistemology.md`. SOC-COG02 remains tied to `Philosophy/SRT_Social_Cognition.md`. PH-METH01 remains tied to `Core/SRT_Core_21c_Bridge_Hypotheses.md` and `Governance/SRT_CLAIM_LADDER.md`.

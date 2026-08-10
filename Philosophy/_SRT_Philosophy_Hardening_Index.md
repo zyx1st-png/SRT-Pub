@@ -19,6 +19,8 @@
 | PH-CONSC03 Subjectivity decomposition / bearer–concern split | `Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md` | separates selector, bearer, concern domain and experiencer; distinguishes bearer boundary from concern boundary and treats same-bearer consequence return / future-selectability rewrite as candidate bearing discriminators without making bearing a phenomenality proof | New P3/P4 hardening patch; integration hook pending |
 | PH-CONSC04 Phenomenal necessity / zombie deletion | `Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md` | separates perspective-center individuation (HP-A) from phenomenal necessity (HP-B), introduces Z0–Z6 controls and a deletion test, and blocks `bearing/Stable ISP -> phenomenality` from being treated as already proved | A / secondary-source-triggered P3/P4 pressure patch; integration hook pending |
 | PH-IND01 Object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | uses Kibbe–Leslie’s source-backed `object individuation before identification` as a negative control and P3 structural analogy for SRT’s independent claim that a bearer-position may precede reflective self-identification; tracking continuity remains distinct from consequence-bearing continuity | A / rebuilt from closed PR #686; integration hook pending |
+| PH-IND02 Selective closure / perspective / bearer formation | `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` | selective stabilization / momentary closure can be a precursor to dynamic boundary formation, but bearer admission additionally requires same-unit consequence return, history-bearing writeback, future-selectability change and continuity; perspective is typed below phenomenality | A / P3 philosophy-of-mind individuation bridge; integration hook pending |
+| PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | full-book Simondon close-read adds `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, a relation-of-relations bearer-boundary candidate, and a strict generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | A / full-monograph P3 hardening bridge; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
 
@@ -34,7 +36,7 @@ Use Pacherie's *Agency* as a disciplined philosophy-of-mind bridge:
 selection is broader than agency
 agency requires controlled transition-readiness plus concern/control structure
 intentional / conscious / reflective / shared / responsibility-related capacities
-are partially orthogonal thickening dimensions, not a strict total order
+are partially orthogonal thickenings, not a strict total order
 ```
 
 Do not claim:
@@ -287,6 +289,46 @@ infant object permanence proves Stable ISP or consciousness
 subject-before-self-model is a source-level infant-cognition result
 ```
 
+### PH-IND03 Simondon operation / transduction / second-order-selection bridge
+
+Use PH-IND03 as a process-level pressure model, not as a source of new SRT primitives:
+
+```text
+past operation
+-> sedimented operator structure
+-> present operation
+-> new structure / residual mismatch / consequence
+-> writeback
+-> later operator conditions
+```
+
+Safe uses:
+
+- sharpen “selector as condensation / fossil of selection” without solving P0-04 by fiat;
+- distinguish outcome selection, modulation and transductive restructuring as local P3 working modes;
+- use Simondon's incompatibility-to-new-dimension model as an external neighbor of H3/I5 comparison-scale rewrite;
+- keep problem-space restructuring separate from canonical `d`, using a stake gate before any `d_stakes` admission;
+- investigate bearer boundaries as a maintained relation between internal historical transformation and external consequence coupling;
+- use crystal and fire as negative controls against `transduction -> subjecthood` inflation;
+- use organized heterogeneity to block `coherence = homogeneity` and `maximum stability = healthier subject` assumptions.
+
+Do not claim:
+
+```text
+preindividual = L0
+potential energy = Psi_f
+information tension = d
+transduction = canonical SRT selection
+transduction = Real Choice Moment
+allagmatics = Ghost Operator theory
+problem-space restructuring = d increase
+yin = L0
+yang = L1
+G_hat_theta = Yang
+yang/(yang+yin) = canonical equation
+Simondon proves SRT
+```
+
 ---
 
 ## 2. Agency / subjecthood synthesis
@@ -321,6 +363,7 @@ Proposed additions:
 20. Bearer boundary vs concern boundary; same-bearer consequence-return and future-selectability-writeback tests
 21. Perspective-center individuation vs phenomenal necessity; Z0–Z6 zombie/deletion pressure test
 22. Object individuation vs identification as a negative control for bearer individuation vs self-identification
+23. Operator-as-sedimented-structure / current-operation, comparison-scale rewrite, stake-space gate, and relation-of-relations bearer-boundary pressures from PH-IND03
 
 ---
 
@@ -371,6 +414,15 @@ PH-IND01 rebuilt Kibbe–Leslie SourceCard = added
 PH-IND01 patch = added
 PH-IND01 integration hook = added / pending
 PH-IND01 canonical merge = not authorized / not requested
+PH-IND02 Borges SourceCard = added
+PH-IND02 patch = added
+PH-IND02 integration hook = pending / to be created or reconciled in a later hook-maintenance pass
+PH-IND02 canonical merge = not authorized / not requested
+PH-IND03 Simondon SourceCard = full-book close-read upgraded
+PH-IND03 patch = added
+PH-IND03 integration hook = added / pending
+PH-IND03 source-intuition crosswalk = added
+PH-IND03 canonical merge = not authorized / not requested
 PH-CONSC01 SourceCard = added
 PH-CONSC01 patch = added
 PH-CONSC01 hook = added
