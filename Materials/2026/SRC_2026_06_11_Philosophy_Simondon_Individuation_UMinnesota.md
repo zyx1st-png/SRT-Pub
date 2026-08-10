@@ -57,7 +57,7 @@ tags:
 status: active
 record_stage: source_card_reopened_full_close_read
 layer: operations
-epistem_layer: os
+epistemic_layer: os
 claim_mode: evidence
 canonical: false
 type: material_source_card
