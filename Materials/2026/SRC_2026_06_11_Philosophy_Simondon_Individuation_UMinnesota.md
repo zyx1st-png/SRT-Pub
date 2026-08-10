@@ -54,7 +54,8 @@ tags:
   - organized_heterogeneity
   - hylomorphism_critique
   - philosophy_of_individuation
-status: source_card_reopened_full_close_read
+status: active
+record_stage: source_card_reopened_full_close_read
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
