@@ -21,6 +21,7 @@
 | PH-IND01 Object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | uses Kibbe–Leslie’s source-backed `object individuation before identification` as a negative control and P3 structural analogy for SRT’s independent claim that a bearer-position may precede reflective self-identification; tracking continuity remains distinct from consequence-bearing continuity | A / rebuilt from closed PR #686; integration hook pending |
 | PH-IND02 Selective closure / perspective / bearer formation | `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` | selective stabilization / momentary closure can be a precursor to dynamic boundary formation, but bearer admission additionally requires same-unit consequence return, history-bearing writeback, future-selectability change and continuity; perspective is typed below phenomenality | A / P3 philosophy-of-mind individuation bridge; integration hook pending |
 | PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | full-book Simondon close-read adds `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, a relation-of-relations bearer-boundary candidate, and a strict generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | A / full-monograph P3 hardening bridge; integration hook pending |
+| PH-MEM01 Objectification history / bearer / revisable understanding | `Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md` | treats consolidation as one mediator from prior objectification history to future objectification conditions; separates explicit object from effective historical constraint, subpersonal mechanism from bearer ownership, cognitive generativity from `d`, and adds consequence sensitivity / revisability as SRT-side understanding discriminators | A / penultimate-draft-triggered P3 hardening bridge; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
 | SOC-COG03 Norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating, distributed script carriers, supportive-vs-choice-replacing automation, and a social constraint-revision pathway explicitly routed into existing H3/I5/J5 reselectability rather than a parallel second-order-selection mechanism | A / bounded P3 social-cognition hardening bridge; integration hook pending |
@@ -330,6 +331,43 @@ yang/(yang+yin) = canonical equation
 Simondon proves SRT
 ```
 
+### PH-MEM01 objectification-history / bearer / understanding bridge
+
+Use PH-MEM01 as the philosophy-side complement to NEURAL29, not as a redefinition of memory or understanding:
+
+```text
+past objectification
+-> historical writeback
+-> non-explicit transformation
+-> altered future objectification conditions
+-> transferable new objectification
+-> consequence
+-> possible revision
+```
+
+Safe uses:
+
+- treat `A`, `B`, `C`, `A>B`, `B>C`, `A>C`, named rules, schemas and patterns as objectification-level units once they become identifiable and operable;
+- separate effective historical constraint from explicit current object or reflective report;
+- separate subpersonal mechanistic contribution from bearer ownership using same-unit consequence return / history / future-selectability tests;
+- keep new cognitive or comparison directions outside canonical `d` until a separate stake gate is satisfied;
+- use false-memory cases as a negative control against `generativity = factivity` and `historical efficacy = healthy understanding`;
+- treat consequence sensitivity and revisability as SRT-side P3 discriminators for mature understanding.
+
+Do not claim:
+
+```text
+relations are pre-objective while entities alone are objects
+all effective constraints are explicit objects
+memory = L2
+memory creates bearer or subjecthood
+understanding = object count
+understanding = schema coherence
+new cognitive dimension = d increase
+learning = Psi_f reduction
+false memory makes truth irrelevant
+```
+
 ### SOC-COG03 social script / reselectability bridge
 
 Use SOC-COG03 to sharpen social invitation gating while preserving the existing H3/I5/J5 hierarchy:
@@ -397,7 +435,8 @@ Proposed additions:
 21. Perspective-center individuation vs phenomenal necessity; Z0–Z6 zombie/deletion pressure test
 22. Object individuation vs identification as a negative control for bearer individuation vs self-identification
 23. Operator-as-sedimented-structure / current-operation, comparison-scale rewrite, stake-space gate, and relation-of-relations bearer-boundary pressures from PH-IND03
-24. Role-indexed invitation gating and social constraint revision from SOC-COG03, explicitly subordinate to the existing H3/I5/J5 reselectability architecture
+24. Objectification-history / bearer-attribution / revisable-understanding pressure from PH-MEM01, preserving explicit-object vs effective-constraint and generativity vs stake/factivity separations
+25. Role-indexed invitation gating and social constraint revision from SOC-COG03, explicitly subordinate to the existing H3/I5/J5 reselectability architecture
 
 ---
 
@@ -457,6 +496,10 @@ PH-IND03 patch = added
 PH-IND03 integration hook = added / pending
 PH-IND03 source-intuition crosswalk = added
 PH-IND03 canonical merge = not authorized / not requested
+PH-MEM01 Wang SourceCard = added
+PH-MEM01 patch = added
+PH-MEM01 integration hook = added / pending
+PH-MEM01 canonical / owner / book-body merge = not authorized / not requested
 PH-CONSC01 SourceCard = added
 PH-CONSC01 patch = added
 PH-CONSC01 hook = added
