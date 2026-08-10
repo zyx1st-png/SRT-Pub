@@ -1,7 +1,6 @@
 ---
 id: SRT-AI-AIRESEL01
--type: bridge_patch
-+type: bridge_patch
+type: bridge_patch
 tags: [AI, ReSelection, Stake, SameBearer, ReinforcementLearning, BoundaryTest]
 status: active_v0_1
 layer: L1
