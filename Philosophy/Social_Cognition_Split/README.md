@@ -23,3 +23,5 @@ dependency: [SRT-PHILOSOPHY-CLAIM-STATUS, SRT-SOC-COG]
 |---:|---|---|---:|---|
 | 00 | [`00_Part01.md`](00_Part01.md) | SRT Social Cognition: Affordance & Pathology (Hybrid Edition) | 32969 | `abfd1be10305` |
 | 01 | [`01_Part02.md`](01_Part02.md) | 4.2 Pharmaceutical Limitations in Treating Depression | 23023 | `8a43a2e7259f` |
+
+Companion social-cognition hardening patches are indexed in [`../_SRT_Philosophy_Hardening_Index.md`](../_SRT_Philosophy_Hardening_Index.md); this split README does not maintain a second patch-status table.
