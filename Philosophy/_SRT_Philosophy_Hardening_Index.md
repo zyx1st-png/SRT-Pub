@@ -22,6 +22,7 @@
 | PH-IND02 Selective closure / perspective / bearer formation | `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` | selective stabilization / momentary closure can be a precursor to dynamic boundary formation, but bearer admission additionally requires same-unit consequence return, history-bearing writeback, future-selectability change and continuity; perspective is typed below phenomenality | A / P3 philosophy-of-mind individuation bridge; integration hook pending |
 | PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | full-book Simondon close-read adds `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, a relation-of-relations bearer-boundary candidate, and a strict generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | A / full-monograph P3 hardening bridge; integration hook pending |
 | PH-MEM01 Objectification history / bearer / revisable understanding | `Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md` | treats consolidation as one mediator from prior objectification history to future objectification conditions; separates explicit object from effective historical constraint, subpersonal mechanism from bearer ownership, cognitive generativity from `d`, and adds consequence sensitivity / revisability as SRT-side understanding discriminators | A / penultimate-draft-triggered P3 hardening bridge; integration hook pending |
+| PH-MR01 Representational gradualism / adjacent-case audit | `Philosophy/patches/SRT_Philosophy_PH_MR01_Representational_Gradualism_Adjacent_Case_Audit_v0_1.md` | imports Schulte's adjacent-case pressure test for purported natural thresholds; separates epistemic representation-evidence degree from ontological representational degree; blocks `information-processing complexity = representation`; adds only a P3 history-bearing-recursion hypothesis and keeps representation / bearer / phenomenality axes distinct | A / peer-reviewed full-text P3 mental-representation hardening; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
 | SOC-COG03 Norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating, distributed script carriers, supportive-vs-choice-replacing automation, and a social constraint-revision pathway explicitly routed into existing H3/I5/J5 reselectability rather than a parallel second-order-selection mechanism | A / bounded P3 social-cognition hardening bridge; integration hook pending |
@@ -368,6 +369,43 @@ learning = Psi_f reduction
 false memory makes truth irrelevant
 ```
 
+### PH-MR01 representational gradualism / adjacent-case audit
+
+Use Schulte primarily as a threshold-audit and mental-representation hardening source:
+
+```text
+proposed threshold C
+-> nearest relevant C-negative case
+-> nearest relevant C-positive case
+-> compare explanatory / causal / behavioral discontinuity
+-> no corresponding discontinuity
+=> do not treat C as an established natural boundary.
+```
+
+Safe uses:
+
+- separate graded evidence for representation from the separate hypothesis that representationality itself is graded;
+- use perceptual constancy, path integration and cue integration as adjacent-case pressure against a privileged single representation threshold;
+- preserve the existing `Sens / Spec / Inv / Func` and producer-consumer functionality gates;
+- treat information-processing complexity as one candidate correlate, not a sufficient definition;
+- use the modified rifle as a negative control against `more causal relations -> more semantic representation`;
+- test a history-bearing recursive reusable state as a P3 refinement, not as a new definition;
+- keep `representation axis != bearer axis != phenomenality axis`;
+- treat operational cutoffs as operational unless an independent phase-transition argument exists.
+
+Do not claim:
+
+```text
+Schulte proves SRT
+information-processing complexity = representation
+home vector = L2
+memory = representation
+recursive state = bearer
+graded representation = graded consciousness
+graded bearer formation = graded choice actuality
+absence of one representation threshold = absence of all natural cognitive thresholds
+```
+
 ### SOC-COG03 social script / reselectability bridge
 
 Use SOC-COG03 to sharpen social invitation gating while preserving the existing H3/I5/J5 hierarchy:
@@ -436,7 +474,8 @@ Proposed additions:
 22. Object individuation vs identification as a negative control for bearer individuation vs self-identification
 23. Operator-as-sedimented-structure / current-operation, comparison-scale rewrite, stake-space gate, and relation-of-relations bearer-boundary pressures from PH-IND03
 24. Objectification-history / bearer-attribution / revisable-understanding pressure from PH-MEM01, preserving explicit-object vs effective-constraint and generativity vs stake/factivity separations
-25. Role-indexed invitation gating and social constraint revision from SOC-COG03, explicitly subordinate to the existing H3/I5/J5 reselectability architecture
+25. Representational adjacent-case threshold audit from PH-MR01, preserving evidence-degree vs ontological-degree and representation/bearer/phenomenality separations
+26. Role-indexed invitation gating and social constraint revision from SOC-COG03, explicitly subordinate to the existing H3/I5/J5 reselectability architecture
 
 ---
 
@@ -500,6 +539,10 @@ PH-MEM01 Wang SourceCard = added
 PH-MEM01 patch = added
 PH-MEM01 integration hook = added / pending
 PH-MEM01 canonical / owner / book-body merge = not authorized / not requested
+PH-MR01 Schulte SourceCard = added
+PH-MR01 patch = added
+PH-MR01 integration hook = added / pending
+PH-MR01 canonical merge = not authorized / not requested
 PH-CONSC01 SourceCard = added
 PH-CONSC01 patch = added
 PH-CONSC01 hook = added
