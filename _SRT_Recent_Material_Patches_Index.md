@@ -351,6 +351,7 @@ selection event
 | NEURAL27 prospective memory / event-boundary historical efficacy | `Neuroscience/patches/SRT_Neuro_NEURAL27_Prospective_Memory_Event_Boundary_Historical_Efficacy_v0_1.md` | treats event boundaries as update opportunities and anticipatory gaze as a no-report history-use/path-bias assay; separates reportable memory from prospective control and full HEF-3 write-back | High |
 | NEURAL28 re-identifiable object identity / dynamic concept index | `Neuroscience/patches/SRT_Neuro_NEURAL28_Reidentifiable_Object_Identity_Dynamic_Concept_Index_v0_1.md` | adds re-identification and relational re-entry between initial identification and later memory-control stages; object stability becomes cross-change re-addressability rather than a static-copy assumption | High |
 | NEURAL29 memory consolidation / historical transformation | `Neuroscience/patches/SRT_Neuro_NEURAL29_Memory_Consolidation_Historical_Transformation_v0_1.md` | inserts retention-vs-transformation between re-identification and later control; abstraction/decontextualization/integration change later objectification conditions, with false memory as a generativity/factivity negative control | Very high |
+| NEURAL30 temporal integration closure / object formation | `Neuroscience/patches/SRT_Neuro_NEURAL30_Temporal_Integration_Closure_Object_Formation_v0_1.md` | adds a short-timescale structured-history -> integration -> regime-transition -> unitary-percept bridge; separates event decodability, conscious accessibility, integrated percept, P300/report and phenomenal timing; connects downstream of NEURAL23 for a phase-conditioned SQM test | Very high |
 
 Recommended synthesis:
 
@@ -360,6 +361,7 @@ N11 -> field-level ontology and measurement architecture
 N12 -> intercellular non-neuronal biological infrastructure
 NEURAL22 -> intra-astrocytic nested support topology and dynamic-center correction
 NEURAL23 -> pre-anchoring embodied rhythmic eligibility and Phase x Stake test
+NEURAL30 -> short-timescale chronology-preserving integration / flexible closure / temporally thick percept bridge
 NEURAL24 -> affect/stake dissociation + bearer-indexed access + phenomenal-stopping-point audit
 NEURAL28 -> identity formation / re-identification / relational re-entry
 NEURAL29 -> retention / transformation / decontextualization / integration
@@ -370,10 +372,10 @@ NEURAL18-20 -> selection-readiness, resource admission, and script/reselection g
 NEURAL21 -> state-dependent metabolic supply/payment separation
 
 Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
-+ consciousness / hard-problem synthesis for NEURAL24
++ consciousness / hard-problem synthesis for NEURAL24 and NEURAL30
 ```
 
-NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL29 remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
+NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL30 remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
 
 NEURAL22 preserves:
 
@@ -400,6 +402,31 @@ physiological synchrony
 eligibility to become current reality
 !=
 eligibility to enter history
+```
+
+NEURAL30 preserves:
+
+```text
+event decodability
+!= separate conscious accessibility
+!= integrated percept
+!= phenomenal consciousness
+
+occipital topography
+!= L0
+
+parietal / P300-like topography
+!= L1
+!= consciousness
+
+short-term perceptual buffer
+!= L2
+
+290-450 ms SQM integration window
+!= universal consciousness frame rate
+
+respiration / cardiac phase
+!= measured result of the Menetrey et al. study
 ```
 
 NEURAL24 preserves:
