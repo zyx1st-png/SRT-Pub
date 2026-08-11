@@ -82,8 +82,8 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
-- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem
-- 注意：它是治理机制，不新增理论命题
+- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A 另载 Gate 0 — L₀ 无内容结构性边界**（2026-08-11 采纳）：以 A/B/C 三类规定何种**类型**的对象可进入裸 `L_0`，并载明 structural cost ordering ≠ semantic ranking ≠ preferred endpoint、class B 为 admission gap 而非种类禁止、以及 canonical 不得经 cross-reference 从 `canonical: false` 文件反向导入 L₀ 读法
+- 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 在本文件 §0A，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为交叉引用
 
 ### 5c. Claim-Mode Audit
 - 文件：`Governance/SRT_CLAIM_MODE_AUDIT.md`

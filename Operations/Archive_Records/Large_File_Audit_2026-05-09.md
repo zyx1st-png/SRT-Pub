@@ -52,12 +52,12 @@ canonical: false
 | action | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
 | action | 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
 | action | 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
+| action | 68.5 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |
 | warning | 67.0 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
 | warning | 66.9 KiB | `Philosophy/Papers/Forcing_CH_Research_Regime_Staged_Draft_EN.md` | missing_or_not_needed |
 | warning | 65.2 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
 | warning | 64.5 KiB | `Physics/SRT_Phys_09_Formalism_Ext.md` | Physics/Formalism_Ext_Split |
-| warning | 63.5 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |
-| warning | 62.8 KiB | `Philosophy/SRT_Ethics_Agency.md` | Philosophy/Ethics_Agency_Split |
+| warning | 63.3 KiB | `Philosophy/SRT_Ethics_Agency.md` | Philosophy/Ethics_Agency_Split |
 | warning | 62.7 KiB | `Philosophy/Papers/Forcing_CH_Evidence/D05_C5op_Goedel_to_Cohen_Audit.md` | missing_or_not_needed |
 | warning | 62.6 KiB | `01_Source_Intuition/Conversations/2026-07-12_SRT_Theory_Discussion_Transcript_CN.md` | missing_or_not_needed |
 | warning | 62.4 KiB | `Philosophy/Papers/Biomarkers_Before_Treatments_NT1_Decoupled_TCI.md` | missing_or_not_needed |
@@ -75,6 +75,7 @@ canonical: false
 | warning | 50.8 KiB | `AI/Ontology_Annex/00_General_Boundary_Block.md` | AI/Ontology_Annex/General_Boundary_Block_Split |
 | warning | 50.7 KiB | `Physics/SRT_Quant_02_Cosmology.md` | Physics/Quant_02_Cosmology_Split |
 | warning | 50.6 KiB | `AI/SRT_AI_Architecture.md` | AI/Architecture_Split |
+| warning | 50.4 KiB | `_SRT_D_VALUE_CANONICAL.md` | missing_or_not_needed |
 | warning | 50.0 KiB | `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md` | missing_or_not_needed |
 | warning | 49.9 KiB | `Philosophy/SRT_SocTheory_05_Language_Eco.md` | Philosophy/Language_Eco_Split |
 | warning | 49.3 KiB | `Neuroscience/SRT_Consciousness_Mechanisms.md` | missing_or_not_needed |
@@ -86,13 +87,14 @@ canonical: false
 | urgent | 3127.9 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.pdf` | artifact/generated; do not use as primary connector read path |
 | urgent | 2460.1 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx` | artifact/generated; do not use as primary connector read path |
 | urgent | 1070.7 KiB | `papers/CostlySelectiveClosure_AdaptiveBehavior_submission.docx` | artifact/generated; do not use as primary connector read path |
-| urgent | 463.5 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 479.5 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 363.1 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 336.4 KiB | `papers/costly_selective_closure_supplement/figures/figure3_results.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 277.3 KiB | `Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 267.5 KiB | `Archive/root_misc/Pasted image 20260306100654.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 207.8 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 181.2 KiB | `papers/costly_selective_closure_supplement/figures/figure1_framework.png` | artifact/generated; do not use as primary connector read path |
+| urgent | 160.6 KiB | `Operations/Audits/data/srt_material_assimilation_delta_2026-08-11.csv` | artifact/generated; do not use as primary connector read path |
 | urgent | 142.4 KiB | `papers/costly_selective_closure_supplement/figures/figure2_design.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 137.4 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.html` | artifact/generated; do not use as primary connector read path |
 | urgent | 121.8 KiB | `papers/costly_selective_closure_supplement/figures/figure1_framework.pdf` | artifact/generated; do not use as primary connector read path |
@@ -103,7 +105,7 @@ canonical: false
 | urgent | 107.2 KiB | `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 106.2 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 102.7 KiB | `Archive/root_misc/Selection-Reality Theory (SRT).pdf` | artifact/generated; do not use as primary connector read path |
-| action | 97.7 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | artifact/generated; do not use as primary connector read path |
+| action | 97.6 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | artifact/generated; do not use as primary connector read path |
 | action | 91.1 KiB | `papers/ontological_friction/paper_ontological_friction_zh.html` | artifact/generated; do not use as primary connector read path |
 | action | 87.9 KiB | `papers/ontological_friction/paper_ontological_friction.md` | artifact/generated; do not use as primary connector read path |
 | action | 87.9 KiB | `papers/ontological_friction/paper_ontological_friction_preprint.md` | artifact/generated; do not use as primary connector read path |
@@ -164,7 +166,7 @@ canonical: false
 
 ## Recommended Queue
 
-- Action-threshold active markdown without split route: `11`
+- Action-threshold active markdown without split route: `12`
 
 1. Use the split route shown in the table before reading any action-threshold owner file through a connector.
 2. Treat `Operations/_SRT_MATERIAL_LOG.md` and `Operations/_SRT_STATUS_HISTORY.md` as split master indexes; read dated parts through `Operations/Material_Log/README.md` and `Operations/Status_History/README.md`.
@@ -199,3 +201,4 @@ canonical: false
 | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
 | 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
 | 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
+| 68.5 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |

@@ -43,6 +43,10 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 
 These are pressure points, not new axioms. They route later work and block overclaiming. §15-§17 additionally carry **author-decision gates**: they are registered here so that no downstream file resolves them by drafting, and the options live in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`.
 
+> **Gate 0 — adopted and landed (2026-08-11).** The upstream type/boundary question shared by §15-§17 has been settled and registered as a **governance-canonical type rule**: `Governance/SRT_CLAIM_LADDER.md §0A` (single primary authority; `_SRT_SYMBOL_TABLE.md` Usage Rule 16 is a cross-reference only). It classifies what *kind* of object may sit at bare `L_0` — **class A** contentless structural invariants (`L_0` granularity, `κ_0`, `ε_pg`, irreversibility floor) admissible; **class B** reference-dependent weighting/comparative objects an *admission gap*, not a prohibition in kind; **class C** semantic/evaluative content inadmissible as a bare `L_0` primitive. It carries **no P-level**.
+>
+> **Gate 0 does not close §15, §16 or §17.** It bounds their option spaces. Each section below records what Gate 0 added and what remains open; none of the three is CLOSED.
+
 ---
 
 ## 1. `d` and `D_eff`
@@ -657,6 +661,14 @@ This is distinct from the general "L₀ is structured potentiality, not a set" c
 
 ### Status
 
+**Gate 0 constraint added (2026-08-11, adopted).** `Governance/SRT_CLAIM_LADDER.md §0A` classifies a measure or prior over `L_0` as **class B** — a reference-/regime-dependent object. Consequence for this tension, and its exact limits:
+
+- **Added**: `H(L_0)` is **not licensed as a quantitative object under current core**, because no measure / reference regime is defined for `L_0` (`_SRT_SYMBOL_TABLE.md` L₀ row: "measure/cardinality unfixed at core level"). Global notation does not supply the missing commitment.
+- **Not added**: this is an **admission gap, not a prohibition in kind**. A future, independently justified canonical natural measure is **not** ruled out. Do not cite Gate 0 as forbidding a natural measure.
+- **Still unresolved**: a natural `μ`; whether `H(L_1)` is finite; and the final form of P0-02's formula. Gate 0 selects **none** of Options A / B1 / B2 / C.
+
+**This tension remains OPEN.**
+
 **Author decision required — not adjudicated here.** Candidate resolutions (finite accessible-domain relativization / entropy-reduction reformulation / demotion of the expression to heuristic) with their respective costs are laid out in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate A**. No option has been adopted, and this tension does **not** license any file to pick one unilaterally. Until a gate verdict lands, cite P0-02's *claim* (existence = degree of stable anchoring) rather than its *formula*, and do not use `E` or `\Delta S = H(L_0) - H(L_1)` as a quantitative readout.
 
 ---
@@ -666,7 +678,7 @@ This is distinct from the general "L₀ is structured potentiality, not a set" c
 ### Current State
 
 - `Core_Law/SRT_L0_Metaphysics.md` is explicit and repeated: 「初心」is an **L1 concept**, outside L0's term-adjudication scope; L0 commits only to `ε`; §七.11 (潜在域预置论) rejects reading `ε` as a pre-set a priori goal in L₀.
-- `_SRT_D_VALUE_CANONICAL.md §5b.2` Cross-ref (theory-canonical anchor, freeze Group A) nonetheless cites `Physics/SRT_Phys_08_Ontology_Ext.md` **Def-Apeiron-1** under the gloss 「初心作为 L₀ 的倾向性结构」.
+- `_SRT_D_VALUE_CANONICAL.md §5b.2` Cross-ref (theory-canonical anchor, freeze Group A) cited `Physics/SRT_Phys_08_Ontology_Ext.md` **Def-Apeiron-1** under the gloss 「初心作为 L₀ 的倾向性结构」. **Repaired 2026-08-11** (Gate 0 landing): the approving gloss is removed, the cross-ref is now marked provenance-only with an explicit citation-direction guard, and both `Ax-Sho-1` and `Def-Apeiron-1` are labelled bridge/translation that may not back-define `L_0`. The line is retained here because it is the record of *why* Gate B exists; the leak itself is closed.
 - `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 (`claim_mode: translation`, `canonical: false`) states 初心 = `\arg\min_{\text{direction}} \int_0^\infty F[\sigma(t)]dt` and calls it 「$L_0$ 的内在属性」.
 - `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 (`claim_mode: mixed`) defines 初心 as the negative gradient of a long-horizon free-energy functional.
 
@@ -674,9 +686,15 @@ This is distinct from the general "L₀ is structured potentiality, not a set" c
 
 The defect is **not** that a translation-layer file carries a strong reading — that is what a translation layer is for, and its `canonical: false` marking already scopes it. The defect is the **direction of citation**: a freeze-Group-A canonical anchor imports the L₀-level reading, with approving gloss, from a `canonical: false` translation file — precisely the reading the other freeze-Group-A anchor forbids. That is a claim-level inversion inside the canonical layer, and it makes the L₀/L₁ boundary on 初心 unreadable from the canonical files alone.
 
-A related but separate item, **not** treated here: `Core_Law/SRT_L0_Metaphysics.md` 第一命题 itself contains 「选择内在地趋向秩序」 with a 2026-04-11 层级精确化注 declaring **both** readings valid at different layers. That is an explicitly declared dual reading, not an unrepaired residue, and it is left untouched pending the same gate.
+A related item, **since resolved**: `Core_Law/SRT_L0_Metaphysics.md` 第一命题 formerly contained 「选择内在地趋向秩序」 with a 2026-04-11 層級精確化注 declaring **both** readings valid at different layers. That dual-reading device was left untouched pending Gate 0. **Gate 0 was adopted 2026-08-11, and its class-C rule forbids exactly that permission — a precision note cannot license a main clause the rule prohibits.** 第一命题 has therefore been rewritten by **replace** (not annotation): the main clause now states that `L_0` carries `κ_0`, `ε`, and the irreversibility floor as *contentless* structural asymmetries and does **not** commit to 「秩序」「善」「初心」 or any endpoint as content. The 2026-04-11 note's substance was moved into the main clause and the note retired. This does **not** close §16 — see the Gate 0 constraint block below for what remains open.
 
 ### Status
+
+**Gate 0 constraint added (2026-08-11, adopted) — status: OPEN, partially constrained.**
+
+- **Settled by Gate 0**: a **contentful** 初心 — a global direction with semantic content — is **class C** and may not be a bare `L_0` primitive. The citation-direction leak has been closed at its site: `_SRT_D_VALUE_CANONICAL.md §5b.2`'s cross-ref no longer carries the approving gloss 「初心作为 L₀ 的倾向性结构」, and `Ax-Sho-1` / `Def-Apeiron-1` are now explicitly marked bridge/translation provenance that may not back-define `L_0`. `Core_Law/SRT_L0_Metaphysics.md` 第一命題 was rewritten so its main clause no longer licenses an `L_0`-level order/初心 reading (replace, not precision note).
+- **Not settled**: whether a **strictly contentless thin precursor** of 初心 is admissible at `L_0` at all, and if so what its relation to `ε_pg` would be. Gate 0 makes that question *decidable* — the four exclusions are now an enforceable type rule rather than a prose intention — but it does **not** decide it.
+- **Also not settled**: the `κ_0` / `ε_pg` dependency and independence relation (still deferred to GOV-SUB01 Pass 2, `_SRT_SYMBOL_TABLE.md` Usage Rule 15).
 
 **Author decision required — not adjudicated here.** Two framed options (strict layering vs. a thin L₀ formal precursor), with an analysis of whether the second reopens 潜在域预置论, are in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate B**, together with the full provenance map of every file that gives 初心 an L₀ reading. No canonical stance was changed in the 2026-08-11 consistency pass.
 
@@ -701,5 +719,12 @@ Underneath the wording sits a genuine ambiguity: at least four different objects
 The same cluster carries a second inconsistency. Core treats the `\Psi_f \to 0` limit as **degenerate**: `Core/SRT_Core_12a_Ontology_L0L1.md` states frictionless selection is 「在结构上被禁止」; `Core/SRT_Core_22_Equations.md` states 「最优区间不是 `Ψ_f→0`……零摩擦对应无真实赌注」; `Core/SRT_Core_12b_Ontology_L2.md` Def-L2-Algo uses that very limit to define the algorithm as an extreme `L_2` state with no historical embodiment. Spirituality treats the same limit as the **normative optimum** (`SRT_Spirit_01_Religion_Ontology.md` `\hat{G}_\infty = (d \to d_{max}) \wedge (\Psi_f \to 0)` as 纯觉知, 「功能同一（操作化）」; `SRT_Spirit_04_Synthesis.md` 完美态; `SRT_Spirit_09_Praxis.md` Phase 7-10). `Spirit_04` registers this locally as `IC-AllGood-1` and proposes a reading (per-manifestation cost → 0, not "no manifestation needed"), but that repair propagated to neither the other Spirituality files nor Core.
 
 ### Status
+
+**Gate 0 constraint added (2026-08-11, adopted) — status: OPEN, partially constrained.**
+
+- **Excluded by Gate 0**: a **universe-wide contentful semantic / evaluative optimum** is class C and may not be an `L_0` primitive.
+- **Explicitly still permitted**: operator-relative reachable optimum · regulative horizon · local / dynamic attractor under finite constraints. Gate 0's ordering discipline also protects `κ_0` and `ε_pg`: **structural cost ordering is neither a semantic ranking nor a preferred endpoint**, so an ordering is not by itself content.
+- **Still unresolved**: the formal canonical terminology landing for *reachable optimum* and the other senses; `_SRT_D_VALUE_CANONICAL.md §5b.2`'s **quotability** defect (its text carries no inline marking, though §5b.1's scoping clause reaches it); and the `Ψ_f → 0` valence inversion between Core (degenerate limit) and Spirituality (normative optimum), whose excess-friction reformulation `Ψ_f - Ψ_f^{min} → 0` **still requires separate author authorization**.
+- **Not done by Gate 0**: no Spirituality file was modified, and §5b.2's substantive wording was not rewritten — only its cross-ref direction was guarded.
 
 **Author decision required — not adjudicated here.** A four-sense terminology separation and a recommended (but not adopted) reformulation of the Spirituality limit as **excess friction** `\Psi_f - \Psi_f^{min} \to 0` are in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate C**. The 2026-08-11 pass changed no Spirituality framing and no §5b.2 wording.
