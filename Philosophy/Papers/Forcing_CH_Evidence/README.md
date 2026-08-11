@@ -40,7 +40,17 @@ Execution records under the protocols above. They carry no verdict.
 
 | File | Scope | State |
 |---|---|---|
-| [CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md](CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md) | Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8: the archive adequacy certificate for control-case selection | **Part I fixed, Part II unattested.** The search boundary (period 1938–1963, mathematical logic outside the CH/forcing/independence line, with forcing-adjacent recursion-theoretic constructions excluded pending explicit clearance) is committed before any reading. The three adequacy attestations remain unsigned because the archive is not assembled. **Archive-corpus assembly is permitted** — §4 separates collecting corpus material from enumerating candidates, so the archive can be built without voiding the round. **Enumeration, scoring, ranking, selection and individuation remain blocked** until Part II is signed; no candidate case appears |
+| [CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md](CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md) | Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8: the archive adequacy certificate for control-case selection | **Part I fixed, Part II unattested; archive assembly in progress.** The search boundary (period 1938–1963, mathematical logic outside the CH/forcing/independence line, with forcing-adjacent recursion-theoretic constructions excluded pending explicit clearance) remains unchanged. The first local unit demonstrates §2(2) capacity only for that unit; §2(3) remains unmet there and §2(4) remains local/opportunistic. **Enumeration, scoring, ranking, selection and individuation remain blocked** until Part II is signed; no candidate case appears |
+
+## Archive corpus records
+
+Non-canonical corpus-assembly records. They register source contact and local evidentiary capacity only; they do not enumerate candidates or sign Part II.
+
+| File | Scope | State |
+|---|---|---|
+| [CONTROL_ARCHIVE_SOURCE_MANIFEST.md](CONTROL_ARCHIVE_SOURCE_MANIFEST.md) | Stable source keys, metadata, roles, page-verification status, evidentiary functions and limitations | Four supplied JSL sources registered and fully page-verified; no PDF committed; no candidate label assigned |
+| [CONTROL_ARCHIVE_COVERAGE_LOG.md](CONTROL_ARCHIVE_COVERAGE_LOG.md) | Reached/not-reached venue and year ranges, coverage mode, access limits and next corpus actions | First unit recorded as **opportunistic**, not a systematic sweep; no global coverage claim |
+| [CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE.md](CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE.md) | Shen–Stanley–Müller–Montague corpus archive unit; technical reconstruction and Part II §2(2)–§2(4) capacity audit | `§2(2) demonstrated for this archive unit`; §2(3) not attested because load-bearing removal remains insufficient; §2(4) local JSL 1953–1955 paradox-cluster coverage only; Part II remains unsigned |
 
 ## Narrow notes
 

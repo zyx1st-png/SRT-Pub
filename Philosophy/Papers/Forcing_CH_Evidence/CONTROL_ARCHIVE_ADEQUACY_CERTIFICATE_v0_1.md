@@ -8,10 +8,11 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-05
+updated: 2026-08-11
 version: v0_1
 certificate_state: part_i_fixed_part_ii_unattested
 boundary_state: fixed_v0_1
-archive_state: not_assembled
+archive_state: assembly_in_progress
 archive_corpus_work_permitted: true
 enumeration_permitted: false
 binding_scope: forcing_ch_control_case_selection
@@ -29,7 +30,7 @@ Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8, executed as far as it can 
 | Part | Content | State |
 |---|---|---|
 | **I** | The search boundary — period, discipline, subfield, exclusions | **FIXED**. This is the half that had to be committed before any reading, and it is committed here |
-| **II** | The four adequacy attestations of protocol §2 | **UNATTESTED**. The archive does not exist yet; adequacy cannot be certified for an archive that has not been assembled |
+| **II** | The four adequacy attestations of protocol §2 | **UNATTESTED**. One local archive unit is now assembled, but corpus-wide adequacy has not been established |
 
 **Enumeration remains blocked.** Protocol §8 step 3 may not begin until Part II is signed. Nothing in this file selects, names, or evaluates a candidate case.
 
@@ -43,9 +44,9 @@ Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8, executed as far as it can 
 
 Protocol §2(1) requires the period and subfield boundary to be *"fixed in advance, not adjusted while reading."* The cleanest possible moment to fix it is before an archive exists at all — there is then nothing to adjust it toward. That is the moment this file uses.
 
-Protocol §2(2)–(4) are attestations *about an assembled archive*: that it supplies the contemporaneous record, that it can support all six audit tests, and what its coverage limits are. None of those can be asserted about an archive that has not been built. Signing them now would be fabrication, and it would defeat §2(4)'s entire purpose, which is to let a later "no admissible candidate" finding be distinguished from a thin archive.
+Protocol §2(2)–(4) are attestations *about the archive corpus as a whole*: that it supplies the contemporaneous record, that it can support all six audit tests, and what its coverage limits are. A first local unit can demonstrate some of those capacities locally without discharging the corpus-wide attestations. Signing them now would still be fabrication, and it would defeat §2(4)'s entire purpose, which is to let a later "no admissible candidate" finding be distinguished from a thin archive.
 
-So Part I is a **commitment**; Part II is a **work order**.
+So Part I is a **commitment**; Part II remains an open **work order** during corpus assembly.
 
 ## 2. PART I — the boundary, fixed
 
@@ -104,7 +105,17 @@ Each attestation below is required by protocol §2 before enumeration. Each is r
 
 **Reading of the "for each candidate" quantifier.** In §2(2)–(3) it ranges over **future members of the admission pool**, not over any presently identified work. These attestations are capacity claims about the corpus — that *for whatever the corpus admits*, the contemporaneous record can be supplied and the six tests can be run. No work is identified, and signing Part II identifies none. See §4.6.
 
-### 3.1 Proposed search venues — to be verified at assembly
+### 3.1 First-unit capacity audit — 2026-08-11, no signature
+
+The first assembled record is `CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE.md`, backed by the source manifest and coverage log indexed in the evidence README.
+
+- `§2(2) demonstrated for this archive unit`: two complete primary publications, one period joint review, and one period technical reconstruction are page-verified.
+- §2(3) remains **UNATTESTED**: the local record marks load-bearing removal/replacement **insufficient**, so the six-test capacity requirement is not discharged even locally.
+- §2(4) remains **UNATTESTED globally**: the reached material is an opportunistic JSL 1953–1955 paradox/intuitive-set-theory unit, not a systematic sweep and not full-period or full-subfield coverage.
+
+This entry records progress in archive assembly only. It signs no Part II attestation and authorizes no enumeration or later protocol step.
+
+### 3.2 Proposed search venues — to be verified at assembly
 
 Recorded as a work order for whoever assembles the archive. **These are venue proposals, not sources**, and none is entered into the evidence base by being named here. Each must be verified to exist, to cover the stated period, and to be reachable before it is relied on.
 
@@ -114,7 +125,7 @@ Recorded as a work order for whoever assembles the archive. **These are venue pr
 
 The §2(2) requirement is the binding constraint on the whole exercise: a candidate for which the *contemporaneous* characterization cannot be recovered is inadmissible under protocol §7.5, however well documented it is in later textbooks.
 
-### 3.2 Known risk to §2(3)
+### 3.3 Known risk to §2(3)
 
 Record depth for the load-bearing test is the likeliest point of failure. Period papers frequently compress construction detail in ways that make it hard to establish whether removing a component destroys or merely degrades a result. If §2(3) cannot be attested for the boundary in Part I, that is a §10 boundary failure and follows §2.5 — not a reason to relax the test.
 
@@ -133,7 +144,7 @@ The deadlock is an artifact of this record's own earlier wording, not of the gov
 The following is corpus assembly, not candidate enumeration, and is permitted now:
 
 - mechanical collection of **titles, bibliographic records, review and abstract entries, and full texts**, by sweeping the fixed period, subfield, serial and index scope registered in Part I;
-- verification that the venues proposed in §3.1 exist, cover the period, and are reachable;
+- verification that the venues proposed in §3.2 exist, cover the period, and are reachable;
 - recording of what was swept, sampled, or not reached, toward the §2(4) coverage statement.
 
 Collection is driven by the **scope**, not by the work. Sweeping a serial's 1938–1963 run and recording what is in it is a bibliographic act. It carries no judgement about any item's admissibility, and it is exactly the labour Part II must certify.
@@ -178,6 +189,6 @@ It is **not** advance certification of an already-chosen candidate. No work has 
 
 This is the third procedural artifact in this line and the last one that should precede evidence work. Three specifications and no new historical evidence would be a failure mode in its own right — a project can be talked into perfect method and no findings.
 
-Each of the three was written because a specific circularity or fitting risk was live and would have been unrecoverable if discovered later: the `M_t` granularity gap, the selection-verdict circularity, and the boundary-adjustment loophole. None of them was written to postpone the archive work. **The next artifact in this line should be an assembled archive and a signed Part II, not another protocol.**
+Each of the three was written because a specific circularity or fitting risk was live and would have been unrecoverable if discovered later: the `M_t` granularity gap, the selection-verdict circularity, and the boundary-adjustment loophole. None of them was written to postpone the archive work. **The next work in this line is continued archive assembly and, only when every attestation is discharged, a signed Part II — not another protocol.**
 
 Nothing in this file establishes any historical claim, selects any case, or licenses any verdict.
