@@ -184,6 +184,8 @@ tags:
 5. SRT relevance
 6. Suggested patch target
 
+**证据锚点规则（SourceCard owner）**：当材料是可全文核验的一手 / 学术全文，且 `integration_priority` 为 `high` / `very_high`，或其承重主张将支撑 P3 及以上 bridge / hardening 时，SourceCard 的承重 source-level claim 必须保留可回查定位。优先使用来源原生的 page / section / theorem / figure / table 等 anchor；“已完整阅读 / full close-read”不能替代文本定位。PatchNote 默认引用 SourceCard 相应节位，不要求重复维护全部页码；只有 Patch 本身直接承担新的源事实时才重复锚点。若来源没有稳定页码，应记录可用的 section / heading / paragraph / figure，或明确说明定位限制。
+
 ### 5.2 PatchNote：SRT 桥接解释层
 
 用途：记录 SRT 如何吸收、降级、约束或反向解释该材料。
