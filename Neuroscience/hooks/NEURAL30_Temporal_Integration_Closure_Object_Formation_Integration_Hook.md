@@ -120,7 +120,7 @@ Do not turn Q02 into an EEG literature section.
 | second anti-vernier remains time-specifically decodable when not separately perceived | not separately manifest != structureless | unconscious representation = canonical `L0` |
 | occipital -> centro-parietal topographic transition | candidate representational-regime transition marker | occipital = `L0`; parietal = `L1` |
 | correct-vs-incorrect reports decode later | report/percept-associated stage is later than event encoding | P300 = phenomenal consciousness |
-| transition dynamics vary with sequence | integration / closure timing is flexible | consciousness has a fixed 300–450 ms frame rate |
+| transition dynamics vary with sequence | integration / closure timing is flexible | consciousness has a fixed 290–450 ms frame rate |
 | cited prestimulus alpha predicts percept dominance | endogenous-state conditioning is a live mechanism candidate | alpha = `G_hat_theta`, `d`, or selection |
 | current paper does not measure respiration/ECG | opens a P4 NEURAL23×NEURAL30 experiment | breathing/heartbeat already shown to control SQM closure |
 
@@ -131,7 +131,7 @@ Do not turn Q02 into an EEG literature section.
 - `occipital = L0`;
 - `parietal/P300 = L1`;
 - `P300 = consciousness`;
-- `300–450 ms = the universal consciousness interval`;
+- `290–450 ms = the universal consciousness interval`;
 - a precise consciousness timestamp inferred from the decoder transition;
 - `high-capacity buffer = L2`;
 - “later stimuli physically rewrite the past”;
