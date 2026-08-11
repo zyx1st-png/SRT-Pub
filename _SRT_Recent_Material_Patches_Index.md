@@ -422,7 +422,7 @@ parietal / P300-like topography
 short-term perceptual buffer
 != L2
 
-300-450 ms SQM integration window
+290-450 ms SQM integration window
 != universal consciousness frame rate
 
 respiration / cardiac phase
