@@ -46,7 +46,7 @@ dependency:
 
 | 项 | 预算 |
 |---|---|
-| 仓库启动文件 | 正常读取，不计入预算（`AGENTS.md` §Session Start 规定的 3 个文件 + `AGENTS.md` 本身） |
+| 仓库启动文件 | 仅以下 4 个路径免费：`AGENTS.md`、`SRT_AI_START.md`、`_SRT_AGENT_RETRIEVAL_PROFILE.md`、`STATUS.md`（只需 §Fast Status） |
 | 启动后额外正文文件 | **最多 6 个** |
 | search / grep / 目录导航 | **最多 2 次**（一次 `ls`、一次 `grep`，或两次同类，合计 2） |
 | 无目标递归遍历 | **不允许** |
@@ -54,6 +54,23 @@ dependency:
 | 判定 | 预算耗尽仍未获得关键区分 → **retrieval failure** |
 
 数字依据：启动层 3 个文件已含 `_SRT_AGENT_RETRIEVAL_PROFILE.md` 与 `STATUS.md`，二者本身就是路由文件；再给 6 个正文 + 2 次导航，相当于"顺着一条声明式路径走两跳"。上一轮基线用了 27 个文件和至少 3 次导航，远超此预算。
+
+#### 1.1a 启动文件计数澄清（2026-08-11）
+
+`AGENTS.md` 在 3 个强制启动文件之后还列有条件加载项。除非一个 suite 在 baseline 开始前另行冻结了对称预算，否则这些条件项均计入 6 个正文文件：
+
+~~~text
+_SRT_INDEX.md
+_SRT_SYMBOL_TABLE.md
+_SRT_CONTEXT_ROUTER.md
+_SRT_DEEP_THEORY_MAP.md
+_SRT_PARKED_INDEX.md
+Operations/Status_History/*
+~~~
+
+不得因为某文件位于 `AGENTS.md §Session Start` 小节，就在运行后把它追溯改记为免费。
+
+`SRT_MATERIAL_CLUSTER_BASELINE_PROBE_SPEC_2026-08-11.md` 已在 baseline 前冻结了较宽的 `Session Start files are free` wrapper，且九个会话已经按该 wrapper 运行。该 suite 及其严格配对 treatment 为保持 §1.3 对称性，继续沿用原 wrapper；本澄清不追溯作废或重算已经冻结的 baseline。除此 grandfathered pair 外，后续 suite 一律使用上表明确列出的 4 个免费路径。
 
 ### 1.2 unconstrained diagnostic run
 
