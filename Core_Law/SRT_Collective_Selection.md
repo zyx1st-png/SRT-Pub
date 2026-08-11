@@ -497,6 +497,8 @@ the same pattern requires independent checks for stake, consequence return
 
 与 P1-T07 同构：`\mathcal{P}` 若集体层面中性，则 `A_{\mathcal{P}}(t)` 有非零概率塌向空集；`L_0` 不可逆 → 绝对吸收态；长期累积 → `\mathcal{P}` 不再是稳定集体 ISP。
 
+> **继承缺口标注（2026-08-11）**：上述"同构"是完整的——它同时继承了 P1-T07 的**证明缺口**。`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md` 记录：P1-T07 Proof Sketch Step 3（"每步非零概率 ⇒ 累积趋于 1"）as written 无效（每步非零风险不蕴含几乎必然终止），"ε-neutral" 在语料中无形式定义，稳定性的随机语义（S1 逐轨道 / S2 几乎必然 / S3 正生存概率）未选定。本节"有非零概率塌向空集；长期累积 → 不再稳定"这一步与 P1-T07 Step 3 是同一步，因此同样**未闭合**。T-COLL-3 当前应按**候选构成性命题**引用，不得写成已证定理；下方推论按其条件性读取。本标注不修改 T-COLL-3 的陈述，也不新增任何风险假设。
+
 ### 推论
 
 - **共同体必须对自身持续反闭合开放**：没有哪种集体可以靠"完美稳定"维持；稳定不等于健康

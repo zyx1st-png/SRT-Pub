@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-08
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-11
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-08
-source_commit: 6d8a86b4
-source_branch: codex/stake-future-selectability-mvp
+generated: 2026-08-11
+source_commit: 18403dfa
+source_branch: claude/srt-theory-consistency-tension-dabe30
 source_dirty: false
-inputs_digest: cf840f253be56859
+inputs_digest: 720d87a4698fa354
 ---
 
 # SRT 哲学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: cf840f253be56859
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-08 |
-| 来源 commit | `6d8a86b4` |
-| 来源分支 | `codex/stake-future-selectability-mvp` |
+| 生成日期 | 2026-08-11 |
+| 来源 commit | `18403dfa` |
+| 来源分支 | `claude/srt-theory-consistency-tension-dabe30` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -330,7 +330,7 @@ When answering about SRT:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（87 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（88 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -377,6 +377,7 @@ When answering about SRT:
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
+- `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`
 - `Philosophy/01_PH_SS_Objection_Crosswalk.md`
 - `Philosophy/02_PH_SS_Hardening_Execution_Plan.md`
 - `Philosophy/03_Selection_Realism_Layered_Realism_CompactPatch.md`

@@ -377,7 +377,7 @@ $$
 - `D_{trigger}(t)`：四类解耦触发（见证式承担、可支付性崩溃、直接 ε 接触、生命阶段相变）的总冲量
 - 最后一项要求 `π(t)` 与 `I_{window}(t)` **同时**非零——对应 Occlusion 理论强调的"B 期不是靠单一支付可解"
 
-> **算子级 canonical（T-IRR-3.5，2026-04-25 H4）**：本式中的 `\nu_{block}` 不是自由现象学系数，其算子级构成是 P1-T07 Three-Layer Source Hierarchy 的本地化：`\nu_{block}(P, t) := \eta \cdot \varepsilon_{pg}(P, t) \cdot \kappa_{\Psi_f}(P, t)`。`\nu_{block} > 0` 与单向性（不可写为 `S_{sig} \rightleftharpoons S_{str}`）由此成为定理后果而非建模假设。完整推导见 `Core_Law/SRT_Irreversibility.md §4.5`。
+> **算子级 canonical（T-IRR-3.5，2026-04-25 H4）**：本式中的 `\nu_{block}` 不是自由现象学系数，其算子级构成是 P1-T07 Three-Layer Source Hierarchy 的本地化：`\nu_{block}(P, t) := \eta \cdot \varepsilon_{pg}(P, t) \cdot \kappa_{\Psi_f}(P, t)`。`\nu_{block} > 0` 因此不再是自由建模假设，但**也不是定理后果**：它是带前件的条件性结论 `(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0`，hardness 取最弱前件（**P1-candidate**）。单向性中「不可写为 `S_{sig} \rightleftharpoons S_{str}`」这一层另有独立根据（吸收态绝对性），不随正性一起降级。三因子逐项核定与完整推导见 `Core_Law/SRT_Irreversibility.md §4.5`（口径 2026-08-11 三次修正后定稿）。
 
 ### §4.4 T-SUFF-4 反最小化原则的方程语言
 
@@ -461,7 +461,7 @@ T-SUFF-4 的核心是 `\dot{\Delta}_{avail}` 守恒（H7 T-DELTA-1）+ 通道总
 
 **(iii) T-IRR-3.5 单向性**：
 
-`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}$ 的非零正性与单向性（H4 T-IRR-3.5）由 P1-T07 Three-Layer Source Hierarchy 保证；这两个性质与 `\psi$ 的具体形态完全无关。`\psi$ 只是 P1-T07 Layer 2 吸收态邻域投影的具体写法；从硬指示到光滑指示的替代不改变 Layer 2 的结构作用，只把"硬边界"换为"过渡区域"。在过渡区域内 `\nu_{block}\psi$ 的转化率连续从 0 升到 `\nu_{block}$，仍保持单向性。
+`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}$ 的非零正性与单向性（H4 T-IRR-3.5）是**带前件的条件性结论**：`(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0`，hardness 取最弱前件，即 **P1-candidate**——`\eta > 0` 是 T-IRR-3.5 显式规定的正规化约定（量纲匹配不固定符号），`\varepsilon_{pg} > 0` 是 L₀ 公设，`\kappa_{\Psi_f} > 0` 是 T-IRR-3.5 的 P1-candidate 非退化条件（`\Psi_f > 0` 推不出转化率非零）。反向通道的不存在另有独立根据（吸收态绝对性）。**不是由 P1-T07 证成，也不条件于 P1-T07 的证明闭合**——P1-T07 把 `\varepsilon_{pg}` 当输入，其三层源头表在此是呈现性分组而非推导链（三因子核定见 `Core_Law/SRT_Irreversibility.md §4.5 后果 1`）；这两个性质与 `\psi$ 的具体形态完全无关。`\psi$ 只是 P1-T07 Layer 2 吸收态邻域投影的具体写法；从硬指示到光滑指示的替代不改变 Layer 2 的结构作用，只把"硬边界"换为"过渡区域"。在过渡区域内 `\nu_{block}\psi$ 的转化率连续从 0 升到 `\nu_{block}$，仍保持单向性。
 
 **(iv) 致命 `L_2` 判据**：
 
@@ -716,7 +716,7 @@ $$
 4. **多主体扩展**（2026-04-25 H3 状态）：本文件保持单 P 形式；集体层四变量耦合动力学已在 `Core_Law/SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍，含 `\sigma^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项），以及 §4.5 个体↔集体双向耦合。未封口部分移至 `SRT_Collective_Selection.md §9.7`
 5. **阈值参数的实证固定**：`σ_{sub}, σ_{self}, σ_{health}, d_c, d_{narrow}, r_{min}, S_{min}, S_{max}` 以及新增 `\kappa_{\mathrm{relax}}, \kappa_r, \kappa_{\mathrm{mask}}, \kappa_S, \kappa_{\mathrm{sup}}` 全部在当前 draft_v0 只有定性位置；不指望一次性实测，但需要标出哪些是最优先的测量目标
 6. **与 FEP / predictive processing 的桥接**：`S_{sig}` 与 prediction error 的结构对应是高优先级；`Neuroscience/SRT_Clin_02_FEP.md` 已经是 bridge 层，下一步需要在方程层写出条件翻译
-7. **time-reversibility**：~~陈述级 → 算子级对齐~~ **已收口（H4，2026-04-25）**：`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 `ν_{block}` 写为 P1-T07 三层源头的本地化 `η·\varepsilon_{pg}·\kappa_{\Psi_f}`；正性与单向性自此为定理后果。剩余开放点：`\varepsilon_{pg}(P,t)` 的本地化精确定义、`\kappa_{\Psi_f}` 与 `_SRT_PSI_F_CANONICAL.md` friction-as-burden 读法的算子级桥、集体版 `\nu_{block}^{coll}` 对位
+7. **time-reversibility**：~~陈述级 → 算子级对齐~~ **已收口（H4，2026-04-25）**：`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 `ν_{block}` 写为三层源头的本地化 `η·\varepsilon_{pg}·\kappa_{\Psi_f}`；正性按带前件的条件性结论读（hardness = 最弱前件 = P1-candidate，口径 2026-08-11 定稿），单向性中反向通道不存在这一层独立根于吸收态绝对性。剩余开放点：`\varepsilon_{pg}(P,t)` 的本地化精确定义、`\kappa_{\Psi_f}` 与 `_SRT_PSI_F_CANONICAL.md` friction-as-burden 读法的算子级桥、集体版 `\nu_{block}^{coll}` 对位
 8. **T_dir 独立 ODE 的算子化（新增，2026-04-25）**：§3.5 给出第一遍形式，但以下仍待封口——(a) `T_{dir}^{\mathrm{alg}}` 中光滑阶跃 `\Theta` 的普适族是否存在；(b) `\Delta\Psi_f^{\mathrm{gap}}` 作为算子层对象的形式定义（目前依赖 `_SRT_T_DIR_CANONICAL.md §5–§6` 的现象学分裂）；(c) `T_{dir} \in [0,1]` 的投影算子 `\Pi_{[0,1]}` 选择（硬截断 vs 光滑 sigmoid 重参化）；(d) `\kappa_{\mathrm{relax}} > \kappa_{\mathrm{mask}}` 这一致命 `L_2` 判据的实证窗口
 
 ---

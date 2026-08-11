@@ -174,7 +174,7 @@ $$
 \nu_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}
 $$
 
-是单向的——信号型在通道关闭时**转**结构型，但结构型不能自动反向转回信号型。这个不对称方程直接由 L_0 irreversibility 保证。如果该方程是双向的（对称转化），它与 L_0 irreversibility 矛盾；ε 反闭合（T-IRR-3 + P1-T07）是此非守恒方向性的结构根据。
+是单向的——信号型在通道关闭时**转**结构型，但结构型不能自动反向转回信号型。这个不对称方程直接由 L_0 irreversibility 保证。如果该方程是双向的（对称转化），它与 L_0 irreversibility 矛盾；ε 反闭合（T-IRR-3 + P1-T07）是此非守恒方向性的**候选**结构根据——注意方向性本身已由 `L_0` 不可逆性独立保证（上句），ε 反闭合是其更深的候选解释而非其必要前件；P1-T07 证明未闭合（见 §4.5 后果 1 的最短依赖链），因此这一句不得读作方向性已由 P1-T07 证成。
 
 ### ε 反闭合的三种实现
 
@@ -225,7 +225,7 @@ $$
 |---|---|---|
 | `\varepsilon_{pg}(P, t)` | Layer 1：Deepest（ISP self-maintenance condition）| L_0 标量种子在位置 `P` 的局部强度——P1-T07 行 1 的 "scalar seed only" 在 L1 的本地化 |
 | `\kappa_{\Psi_f}(P, t)` | Layer 3：Dynamical weight（`\Psi_f > 0`）| 闭合代价的转化率：`Ψ_f` 把"被阻通道里的信号失配"转写为结构性沉积的本地速率 |
-| `\eta` | 量纲归一化 | 单位转换因子（不是自由参数，由 `S_{sig}` 与 `S_{str}` 的量纲匹配固定）|
+| `\eta` | 量纲归一化（**规定 `\eta > 0`**）| 单位转换因子，量纲与量级由 `S_{sig}` 与 `S_{str}` 的量纲匹配固定。**量纲匹配不固定符号**，故 `\eta > 0` 是本节显式规定的正规化约定，并作为 T-IRR-3.5 的前件（见下文三因子核定）。本节 `\eta` 与符号表的 Operator Viscosity `η`、`Core_22` 的可塑性 `η`、`L1_Formalism §6` 的 `O(\eta)` 是不同对象 |
 
 `ν_{block}` 所携的 L_0 不可逆性方向（P1-T07 行 2 "absorbing direction filter"）由 §4.3 已有的 `\mathbb{1}[d \le d_c]` 投影承担——后者是吸收态邻域（B 期）的布尔投影，不是自由参数。
 
@@ -233,20 +233,45 @@ $$
 
 #### 三个结构性后果
 
-**后果 1（非零正性，对应 P1-T07 反证法）**
+**后果 1（非零正性；两个因子各按其自身最强来源定级）**
 
-对任何 stable ISP：
+> **口径更正（2026-08-11，含同日二次修正）**：本小节此前写作「`\varepsilon_{pg} > 0`：由 P1-T07 反证法**保证**」，并据此把 §4.3 的系数正性称为**定理**。该写法有两个问题——
+>
+> 1. **循环**：P1-T07 的桥接关系第 1 步本来就把 `\varepsilon_{pg}` 的存在当作**输入**（`Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T07 §`ε_pg` vs ISP-Level `ε`）。把 `\varepsilon_{pg} > 0` 说成该定理的**结论**，等于让同一条论证既假设它又证明它。
+> 2. **与上位口径冲突**：`Core_Law/SRT_L0_Metaphysics.md` ε 词条载明「ε 是公设，**不可被升格为定理**」；`_SRT_SYMBOL_TABLE.md` ε_pg 行同样载明「T-ε-Constitute does **NOT** change ε_pg's epistemic status」，Usage Rule 9 亦要求 `ε_pg` 与 ISP-level ε 分列。本文件是这两处的下位展开，不得反向升格。
+>
+> **二次修正**：本更正的第一版把两个因子**一起**降为「条件于 P1-T07 的证明闭合」。这是**过度降级**——走一遍最短依赖链就能看出，两个因子都不由 P1-T07 建立，因此 P1-T07 的证明缺口根本不触及本节的正性结论。P1-T07 三层源头表在这里的作用是**呈现性分组**，不是推导链。
+>
+> 本更正只调整口径与依赖标注，**不修改 P1-T07 本身**，不新增任何 hazard 假设，也不改动下面的 `\nu_{block}` 表达式。
 
-- `\varepsilon_{pg} > 0`：由 P1-T07 反证法保证（ε-中性 ISP 在 L_0 不可逆下必趋吸收态，因此 stable ISP 必含 ε ≠ 0）
-- `\kappa_{\Psi_f} > 0`：由 P1-T07 行 3（`\Psi_f > 0` 在任何非平凡选择中成立）
+**三因子逐项核定（2026-08-11，同日三次修正）**
 
-因此
+`ν_block` 是**三个因子的乘积**，正性必须逐项立住——乘积为正需要每一项都为正，缺任何一项结论不成立。
+
+| 因子 | 定级 | 来源 / 状态 | 依赖 P1-T07 证明闭合？ |
+|---|---|---|---|
+| `\eta > 0` | **T-IRR-3.5 前件**（本节显式规定） | 本节此前只把 `η` 写作「量纲归一化 / 单位转换因子」。**量纲匹配固定量纲与量级，不固定符号**——一个单位转换因子在形式上完全可以取负而仍然量纲一致。而且本节 §4.6 的开放项自己就载明「`η` 的量纲归一化是否可由 `\dot{\Delta}_{avail}` 量纲固定，或仍需独立约定」，即 `η` 的定法本身尚未收口。因此 `η > 0` 在此**显式规定为正规化约定**，并作为 T-IRR-3.5 的前件列出，而不是从量纲论证中"推出" | 否（与 P1-T07 无关） |
+| `\varepsilon_{pg} > 0` | **L₀ 公设** | `Core_Law/SRT_L0_Metaphysics.md` ε 词条（L₀ 方向公设，明载不可升格为定理）；`_SRT_SYMBOL_TABLE.md` ε_pg 行 | **否**。P1-T07 把它当输入，不是产出 |
+| `\kappa_{\Psi_f} > 0` | **P1-candidate 非退化条件**（T-IRR-3.5 的 L1 建模承诺） | `\Psi_f > 0` 本身有两条独立来源（L₀ 正骨架第 5 条**代价**；`Core/SRT_Core_12a_Ontology_L0L1.md` **T-L0-Kappa0-C1** `\Psi_f^{\min} = f(\kappa_0) > 0`，该文件通篇不引用 P1-T07）——**但 `\Psi_f > 0` 推不出 `\kappa_{\Psi_f} > 0`**：前者是代价地板的存在，后者是一个**转化率**，即"`Ψ_f` 把被阻通道里的信号失配转写为结构沉积"的本地速率。代价非零不蕴含转化速率非零。H7（`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1`）给出的是 `\kappa_{\Psi_f}` 的**几何来源**（`\partial\|\hat{R}\|_{\Psi_f}/\partial t` 的单位面积转化系数），**不是正性证明**，且 T-DELTA-1 自身为 P1-candidate 并带 A1-A3 失效边界。仓库中**没有** `\kappa_{\Psi_f} > 0` 的独立证明 | 否（与 P1-T07 无关） |
+
+因此正确的逻辑形式是**带前件的蕴含**，不是无条件结论：
 
 $$
-\text{stable ISP } \Rightarrow\; \nu_{block}(P, t) > 0
+(\eta > 0)\;\wedge\;(\varepsilon_{pg} > 0)\;\wedge\;(\kappa_{\Psi_f} > 0)
+\;\Longrightarrow\;
+\nu_{block}(P, t) > 0
 $$
 
-`ν_{block} = 0` 在算子级**结构上不可能**——这把 §4.3 的"系数为正"从假设升为定理。
+**`ν_block > 0` 的 claim hardness = 最弱前件的 hardness = `P1-candidate`。** 最弱的一项是 `\kappa_{\Psi_f} > 0`（P1-candidate 建模承诺）；`η > 0` 是本节规定的约定；只有 `\varepsilon_{pg} > 0` 是公设级。三者取最小，故 `ν_block > 0` 按**条件性结构后果 / P1-candidate** 读，**不得**称为"公设级正性"。
+
+**边界（四条分开读）**：
+
+1. **不是"定理后果"**。它不是本节自产的定理。
+2. **也不是"公设级"**。这是 2026-08-11 第二版更正引入的**新过度声明**，现予改正：正性里只有一项是公设，另两项分别是本节的约定与本节的 P1-candidate 建模承诺，乘积不会比最弱项更硬。
+3. **也不是"条件于 P1-T07"**。P1-T07 的未闭合部分是「stable ISP ⇒ ISP-level ε ≠ 0」（Proof Sketch Step 3，见 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`：Step 3 as written 无效、"ε-neutral" 无形式定义、随机语义 S1/S2/S3 未选定）。那条缺口**不进入**本节的正性论证——这一条裁决维持不变。
+4. **P1-T07 在本节的真实贡献是呈现性的**：三层源头表把已有的 L₀ 公设、不可逆性与 `Ψ_f` 相关项组织成一张便于引用的表。引用该表时不得把"被表收纳"读成"被表证成"。
+
+> **`η` 本地命名空间注（2026-08-11，按 `_SRT_SYMBOL_TABLE.md` Usage Rule 12 的同类要求补）**：本节的 `η` 是 **T-IRR-3.5 的正规化因子**，与符号表登记的 `η`（Operator Viscosity，算子状态的转移阻力）、`Core/SRT_Core_22_Equations.md` 的 `η`（可塑性 / 迟滞系数，无量纲比率 `[0,1]`）、以及 `Core_Law/SRT_L1_Formalism.md §6` 的 `O(\eta)`（闭包高阶残差）**是四个不同对象**，不得互推、不得共用取值范围。本注只做命名空间隔离与本节符号约束声明，不新增符号、不改动任何既有 `η` 的定义。
 
 **后果 2（单向性的算子读法）**
 
@@ -276,13 +301,13 @@ $$
 | `\mathbb{1}[d \le d_c]` | P1-T07 Layer 2：吸收态邻域的布尔投影 |
 | `S_{sig}` | §4.2 的可登记失配存量（不在本节论域内） |
 
-回写约定：`Core_Law/SRT_L1_Formalism.md §4.3` 在引用 `ν_{block}` 时须回链本节为算子级 canonical；`ν_{block}` 的相对大小（与 `\mu_\pi, \nu_{trigger}` 等的比值）仍是 P3 实证问题，但其**结构性正性与单向性**自此为定理后果而非建模假设。
+回写约定：`Core_Law/SRT_L1_Formalism.md §4.3` 在引用 `ν_{block}` 时须回链本节为算子级 canonical；`ν_{block}` 的相对大小（与 `\mu_\pi, \nu_{trigger}` 等的比值）仍是 P3 实证问题。其**结构性正性**不再是自由建模假设，但也**不是定理后果、不是公设级**——它是带前件的条件性结论 `(\eta>0) \wedge (\varepsilon_{pg}>0) \wedge (\kappa_{\Psi_f}>0) \Rightarrow \nu_{block}>0`，hardness 取最弱前件，即 **P1-candidate**（最弱项是 `\kappa_{\Psi_f} > 0` 这条非退化建模承诺）。**单向性**分两层：`S_{str} \to S_{sig}` 反向通道的**不存在**独立根于吸收态绝对性（`Def-IRR-1` / `T-IRR-2`，根在 P0-03 不可逆选择痕迹），这一层不随正性一起降级；而既有正向项**符号朝哪一边**与正性同前件，因此按同一 hardness 读。**以上都不依赖 P1-T07 的证明闭合**——P1-T07 未闭合的是「stable ISP ⇒ ISP-level ε ≠ 0」，那条不进入本节论证。（口径 2026-08-11 三次修正后定稿：一改"定理后果"，二撤"条件于 P1-T07"的过度降级，三改"公设级"这一新过度声明并补上 `\eta > 0` 前件；表达式与单向性方向本身始终未改。）
 
 #### 保留的开放点
 
 - `\varepsilon_{pg}(P, t)` 作为 L_0 标量种子的 P-本地化精确定义（目前依赖 P1-T07 hierarchy 行 1 的 "scalar seed only"，未给函数形式）
-- `\kappa_{\Psi_f}(P, t)` 与 `_SRT_PSI_F_CANONICAL.md` 的 friction-as-burden 读法的算子级桥——**部分收口（H7，2026-04-25）**：`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 中 `\Pi_{\Psi_f}` 投影 + `\|\hat{R}\|_{\Psi_f} := \|\Pi_{\Psi_f}\hat{R}\|_2` 给出 `\kappa_{\Psi_f}` 的几何来源：`\kappa_{\Psi_f}` 是 `\partial\|\hat{R}\|_{\Psi_f}/\partial t` 单位面积转化系数；剩余开放点是 `_SRT_PSI_F_CANONICAL.md` friction tensor `\Psi_f^{ij}` 与 `\Pi_{\Psi_f}` 投影空间的全等性证明
-- `η` 的量纲归一化是否可由 `\dot{\Delta}_{avail}` 量纲固定，或仍需独立约定
+- `\kappa_{\Psi_f}(P, t)` 与 `_SRT_PSI_F_CANONICAL.md` 的 friction-as-burden 读法的算子级桥——**部分收口（H7，2026-04-25）**：`Core_Law/SRT_L1_Hardening_Notes.md §2 T-DELTA-1` 中 `\Pi_{\Psi_f}` 投影 + `\|\hat{R}\|_{\Psi_f} := \|\Pi_{\Psi_f}\hat{R}\|_2` 给出 `\kappa_{\Psi_f}` 的几何来源：`\kappa_{\Psi_f}` 是 `\partial\|\hat{R}\|_{\Psi_f}/\partial t` 单位面积转化系数；剩余开放点有两个：(a) `_SRT_PSI_F_CANONICAL.md` friction tensor `\Psi_f^{ij}` 与 `\Pi_{\Psi_f}` 投影空间的全等性证明；(b) **`\kappa_{\Psi_f} > 0` 的正性本身仍无独立证明**——H7 给的是几何来源（转化系数是什么），不是正性（转化系数不为零）。该正性当前按 T-IRR-3.5 的 P1-candidate 非退化条件承担，见 §4.5 后果 1 三因子核定
+- `η` 的量纲归一化是否可由 `\dot{\Delta}_{avail}` 量纲固定，或仍需独立约定（**符号部分已收口 2026-08-11**：`η > 0` 已作为本节正规化约定与 T-IRR-3.5 前件显式规定；仍开放的是量纲与量级的固定方式，不是符号）
 - 集体版 `ν_{block}^{coll}`（`Core_Law/SRT_Collective_Selection.md §4.4.5`）的对应算子级表达式——预期为 `η^{coll} · \varepsilon_{pg}^{coll}(M(t), \sigma_{sr}^{coll}) · \kappa_{\Psi_f}^{coll}`，但本节不展开
 
 ---

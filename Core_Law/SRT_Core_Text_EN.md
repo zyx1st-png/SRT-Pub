@@ -11,6 +11,8 @@
 > 3. **Explanatory Power** — five problems the old framework cannot solve but this one naturally resolves
 > 4. **Boundaries** — what this framework does not claim
 
+> **Mirror status (added 2026-08-11).** This file is the **English mirror** of `Core_Law/SRT_Core_Text_CN.md`. It is a translation surface, not an independent source of adjudication: where the two diverge, the Chinese file governs, and for the order-gain criteria specifically the adjudicating source is `Core_Law/SRT_Selection_Argument.md §7b.2`. Any adjudication landed on the Chinese side must be mirrored here in the same pass. A drift of exactly this kind (three-criteria vs four-criteria order-gain, 2026-07-05 → 2026-08-11) is what prompted this note.
+
 ---
 
 ## Part I: Starting Point
@@ -115,7 +117,9 @@ Unconscious selection is happening everywhere — molecules in a rock are select
 
 The safer claim here is not "this section fully defines all consciousness," but: what follows is SRT's current **candidate reading of higher-order consciousness**. Consciousness is not selection's on/off switch. It is selection's **level-jump**.
 
-All selection points toward order. But unconscious selection points only toward **structural order** — maintaining existing structures, repeating successful patterns. Higher-order conscious selection points toward **generative order** — order that does not yet exist, that must be created. The awakening of consciousness — from autopilot driving to slamming the brakes, from mechanical operation to suddenly seeing the larger landscape — is the moment the gradient flips from structural to generative.
+Selection under the Step ④ conditions accumulates non-self-erasing configurations, and "order" is the read-back name L₁ gives that accumulation — so this section's contrast is between two *modes of that accumulation*, not between two amounts of an intrinsic order-drive. Unconscious selection accumulates only **structural order** — maintaining existing structures, repeating successful patterns. Higher-order conscious selection accumulates **generative order** — order that does not yet exist, that must be created. The awakening of consciousness — from autopilot driving to slamming the brakes, from mechanical operation to suddenly seeing the larger landscape — is the moment the mode flips from structural to generative.
+
+> **Wording note (2026-08-11).** This paragraph previously opened "All selection points toward order," which reads ε as a content-level order-drive and contradicts Step ④ of this same file (ε_pg is a scalar base with no intrinsic direction; direction arises only through recursive amplification) as well as `Core_Law/SRT_L0_Metaphysics.md` (L₀ does not carry "order" as a content property; "order" is an L₁ read-back name). The old sentence is superseded, not merely annotated.
 
 **Four discriminating conditions for higher-order consciousness (candidate) — hardened 2026-04-16:**
 
@@ -175,15 +179,29 @@ The expansion of concern scope is directionally necessary (original intention po
 
 Concern scope expands → visible landscape expands → local optima exposed as local → new, better directions become visible. But seeing a larger landscape does not equal having completed an effective expansion. Bare enlargement of scope, momentary exaltation, or high-intensity concern impulses do not automatically constitute real d-growth.
 
-But "toward order" is not an empty direction. Whether a selection truly increments order is assessed by three structural criteria: **sustainability** (not depleting future order conditions), **coordinability** (not turning differences into unorganizable friction), **re-selectability** (not prematurely locking future directions). These three criteria are not externally imposed moral rules, nor are they deduced from ε alone — they are the minimal closure derived from the conjunction of four factors:
+But "toward order" is not an empty direction. Whether a selection truly increments order is assessed by **four** structural criteria: **sustainability** (not depleting future order conditions), **coordinability** (not turning differences into unorganizable friction), **non-outsourcing** (not displacing the cost onto positions that have no feedback channel), **re-selectability** (not prematurely locking future directions). These four criteria are not externally imposed moral rules, nor are they deduced from ε alone — they are the minimal closure derived from the conjunction of four factors:
 
 > **ε** (asymmetric bias against closure of future selection space) **+ F** (finiteness: no position sees all consequences) **+ M** (multi-agent coupling: selections across positions mutually lock) **+ U** (fallibility: selection errors will occur; correction capacity must be preserved)
 
-The division of labor: **re-selectability** is the most direct operationalization of ε itself — ε is the rejection of closure; re-selectability is not prematurely closing; the two are nearly equivalent; **sustainability** is ε projected onto the time axis — F+U make temporal violations locally invisible, so it must be stated explicitly; **coordinability** is ε projected onto the multi-agent coupling axis — M makes cross-position closures invisible to oneself, so it must be stated explicitly. Removing any one of the three opens a channel through which ε can be silently violated at a position that cannot locally detect it — the three together form the minimal cover, irreducible.
+The division of labor is best read as two separate questions — *which axis does each criterion project ε onto*, and *what makes a violation on that axis go unnoticed* — because the second question does not answer one-factor-per-criterion.
 
-And whether an expansion path stands up is not judged by local relief alone, but by whether that relief is genuinely settled across longer time scales, more positions, and different interfaces. All three must be satisfied, without relying primarily on outsourcing, deferral, numbing, or single-interface self-certification, for a selection to be order-incrementing.
+**Directional source.** All four criteria are projections of ε: **re-selectability** is the most direct operationalization of ε itself (ε is the rejection of closure; re-selectability is not prematurely closing — the two are nearly equivalent); **sustainability** projects ε onto the time axis; **coordinability** onto the multi-agent coupling axis; **non-outsourcing** onto the consequence-return axis.
 
-Therefore, not every d-expansion automatically moves closer to original intention; only expansions that still stand after broader-scale settlement, while keeping the three criteria intact, move selection from local optima toward larger-scale convergence — toward the direction indicated by original intention: dynamic equilibria that, under situated constraints, sustain greater continued existence. This is not heat death (all selection ceasing), but different existences coexisting and cooperating with minimum friction — living order.
+**What each of F, M, U contributes.** These are not one-to-one with the criteria, and forcing them into a one-to-one map misstates all three:
+
+- **F** (finiteness — no position sees all consequences) supplies the *invisibility* of displaced cost, on **both** of its faces: consequence displaced onto **other positions**, and consequence displaced into the **future**.
+- **U** (fallibility — selection errors will occur) supplies the *requirement that correction capacity be preserved*. U is **not** a source of invisibility; it is why a system cannot spend down the conditions under which its errors could still be corrected.
+- **M** (multi-agent coupling) supplies the *cross-position lock-in* by which one position's local behavior forecloses another's options, and makes such closure invisible from inside the position causing it.
+
+So the criteria are supported jointly rather than singly. **Sustainability** rests on ε's time-axis projection, F's finite temporal horizon (the far future is not visible from here), and U (errors are certain, so the conditions for correcting them must not be overdrawn). **Non-outsourcing** rests on ε's consequence-return projection and F's other-positions face. **Coordinability** rests on ε's coupling-axis projection and M. **Re-selectability** rests on ε directly, with U giving it its urgency.
+
+**Coordinability and non-outsourcing are not the same criterion and cannot substitute for each other.** Coordinability asks whether difference can be organized into coexistence; non-outsourcing asks whether consequence returns to those who bear it and to those who can correct it. They come apart in both directions: a system can coordinate difference well and still push its costs onto voiceless positions (surface harmony, externalized cost), and a system can return every consequence and still suppress difference (open return channels, enforced homogeneity). Removing any one of the four opens a channel through which ε can be silently violated at a position that cannot locally detect it — the four together form the minimal cover under the current adjudication, irreducible as a set.
+
+And whether an expansion path stands up is not judged by local relief alone, but by whether that relief is genuinely settled across longer time scales, more positions, and different interfaces. All four must be satisfied, without relying primarily on outsourcing, deferral, numbing, or single-interface self-certification, for a selection to be order-incrementing.
+
+> **Criteria-set provenance.** Three → four, author-authorized 2026-07-05; adjudicating source `Core_Law/SRT_Selection_Argument.md §7b.2`, adjudication record `Core/SRT_OPEN_TENSIONS.md §11`. This English mirror was synced 2026-08-11; before that date it still carried the superseded three-criteria wording and its own minimality claim.
+
+Therefore, not every d-expansion automatically moves closer to original intention; only expansions that still stand after broader-scale settlement, while keeping the four criteria intact, move selection from local optima toward larger-scale convergence — toward the direction indicated by original intention: dynamic equilibria that, under situated constraints, sustain greater continued existence. This is not heat death (all selection ceasing), but different existences coexisting and cooperating with minimum friction — living order.
 
 Selection is not isolated — we delegate selection authority to others, institutions, and systems. Healthy delegation maintains a shared goal and preserves re-selection capacity; pathological delegation lets the agent system's self-maintenance masquerade as the shared goal. Legitimacy is not rules being followed, but rules still pointing toward the shared goal.
 
