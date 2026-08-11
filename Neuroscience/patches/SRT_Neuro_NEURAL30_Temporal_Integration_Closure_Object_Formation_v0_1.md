@@ -74,7 +74,7 @@ The SQM results add a bounded implementation pressure:
 
 > **Information can remain precisely structured in time without becoming separately manifest as conscious objects, and the current integrated percept can emerge only after that structured history has been combined and resolved.**
 
-This is neither a new canonical layer nor a claim that all consciousness requires 300–450 ms. It is a concrete temporal object-formation bridge.
+This is neither a new canonical layer nor a claim that all consciousness requires 290–450 ms. It is a concrete temporal object-formation bridge.
 
 ---
 
@@ -150,8 +150,10 @@ This supports the negative distinction:
 ```text
 not current explicit object
 !=
-not currently causally / representationally operative
+not currently represented / available to ongoing processing
 ```
+
+Any stronger claim that this residual history independently constrains later processing remains a P3 mechanism hypothesis unless separately tested.
 
 ---
 
@@ -464,7 +466,7 @@ Do not write:
 - parietal topography or P300 = `L_1`;
 - P300 = consciousness;
 - the occipital-to-parietal transition is the exact instant consciousness begins;
-- `300–450 ms` is a universal consciousness frame rate;
+- `290–450 ms` is a universal consciousness frame rate;
 - high-capacity perceptual buffer = `L_2`;
 - event decodability = conscious access;
 - reportability = phenomenality;
