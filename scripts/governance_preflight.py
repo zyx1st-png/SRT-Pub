@@ -59,6 +59,11 @@ def main() -> None:
         registry_cmd.append("--strict")
     steps.append(("registry consistency", registry_cmd))
 
+    if (ROOT / "scripts" / "check_material_log_consistency.py").is_file():
+        steps.append(
+            ("material log consistency", [python, "scripts/check_material_log_consistency.py"])
+        )
+
     if (ROOT / "scripts" / "test_check_frontmatter.py").is_file():
         steps.append(
             ("frontmatter anti-blocking tests", [python, "scripts/test_check_frontmatter.py"])
