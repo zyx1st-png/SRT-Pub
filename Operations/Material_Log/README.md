@@ -29,12 +29,11 @@ canonical: false
 | [2026-08_Part01.md](2026-08_Part01.md) | 10 | August split; NEURAL23 added 2026-08-07 |
 | [2026-08_Part02.md](2026-08_Part02.md) | 8 | August continuation through NEURAL27 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
-| [2026-08_Part04.md](2026-08_Part04.md) | 6 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 through 2026-08-11 |
-| [2026-08_Part05.md](2026-08_Part05.md) | 1 | current August continuation; Deleuze full-book close-read / PH-DIFF01 added 2026-08-11 |
+| [2026-08_Part04.md](2026-08_Part04.md) | 7 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 through 2026-08-11 |
 
 ## Current note
 
-`2026-08_Part05.md` now records one bounded A-class Deleuze full-book entry. `2026-08_Part04.md` retains the preceding six bounded A-class entries.
+`2026-08_Part04.md` now records seven bounded A-class entries through the Deleuze full-book / PH-DIFF01 integration.
 
 **Deleuze / PH-DIFF01** adds a bounded P3 generative-architecture pressure package rather than importing a Deleuzian ontology into SRT. Its stable increment is `anti-preformation + problem-space-before-menu + L0->L1 actualisation-mechanism audit + productive asymmetry != Psi_f + individuation-before-identity + metastability/reselectability pressure + deep-repetition stability + Image-of-Selection guard`. The patch explicitly blocks `virtual=L0`, `intensity=Psi_f`, `dark precursor=G_hat_theta`, `eternal return=t_onto`, Deleuzean selective test = Real Choice Moment, `pre-individual=consciousness`, and ungrounding = constraint relativism. It crosswalks individuation to PH-IND03 without duplicating Simondon's `Operation -> Structure -> Operation`, leaves P0-04 open, and records the interpretation of `Conservation of Possibilia` / latent-pattern language as a live pressure rather than modifying canonical text. No Core owner or current book-body file is changed in this material pass.
 
