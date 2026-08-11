@@ -16,6 +16,10 @@ landing_ledger:
   - target: "Neuroscience/SRT_NEURAL25_EXPERIMENT_PROTOCOL_v0_1.md"
     state: pending
     blocked_by: "Do not mutate the active NEURAL25 protocol in this material pass. Reopen only if the experiment workline adds a matched-retention/different-transformation arm with preregistered false-memory and transfer controls."
+  - target: "Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md"
+    state: pending
+    target_status: planned
+    blocked_by: "Planned neuroscience synthesis target referenced consistently by the memory hardening sequence but not yet created. Landing remains deferred until the neuroscience synthesis owner/workline creates the file and adjudicates the NEURAL28/29/25/27 ordering."
 ---
 
 # NEURAL29 Integration Hook — Memory consolidation as historical transformation
@@ -29,7 +33,7 @@ Neuroscience/SRT_Neural_Mechanisms_CompactCore.md
 Neuroscience/SRT_NEURAL25_EXPERIMENT_PROTOCOL_v0_1.md
 ```
 
-Planned future synthesis target, not a current landing-ledger target because the file does not yet exist:
+Planned future synthesis target, formally registered in the landing ledger with `target_status: planned` because the file does not yet exist:
 
 ```text
 Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
