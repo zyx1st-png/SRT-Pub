@@ -159,7 +159,7 @@ The temporal dynamics were not invariant. When a vernier appeared later in the s
 
 Safe source claim:
 
-> SQM supports a temporally extended but dynamically adjustable processing window, not a universal fixed 300–450 ms consciousness clock.
+> SQM supports a temporally extended but dynamically adjustable processing window, not a universal fixed 290–450 ms consciousness clock.
 
 ### C8. The authors favor a two-stage, temporally rich model
 
@@ -277,7 +277,7 @@ current integrated percept O
 full generating history H
 ```
 
-The history may remain causally/representationally structured even after the current percept no longer exposes its elements separately.
+The history remains representationally structured after the current percept no longer exposes its elements separately; any stronger claim that this residual history independently constrains later processing is retained as a P3 mechanism hypothesis rather than a direct result of the present decoding analysis.
 
 ### 6.3 P4 SRT extension: endogenous-state-conditioned closure
 
