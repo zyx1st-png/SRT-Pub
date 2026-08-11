@@ -5,7 +5,6 @@ from __future__ import annotations
 
 from pathlib import Path
 import re
-import sys
 
 from governance_common import ROOT
 
@@ -20,7 +19,7 @@ README_ROW_RE = re.compile(
 ROOT_ROW_RE = re.compile(
     r"^\| (?P<part>\d{4}-\d{2}_Part\d{2}) \| .* \| (?P<count>\d+) \|\s*$"
 )
-CLASS_RE = re.compile(r"^\s*\*{0,2}(?P<class>[ABC])(?:\*|\s|（|\(|$)")
+CLASS_RE = re.compile(r"^\s*\*{0,2}(?P<class>[ABC])(?:[123])?(?:\*|\s|（|\(|/|$)")
 
 
 def fail(errors: list[str], message: str) -> None:
