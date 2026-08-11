@@ -21,6 +21,7 @@
 | PH-IND01 Object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | uses Kibbe–Leslie’s source-backed `object individuation before identification` as a negative control and P3 structural analogy for SRT’s independent claim that a bearer-position may precede reflective self-identification; tracking continuity remains distinct from consequence-bearing continuity | A / rebuilt from closed PR #686; integration hook pending |
 | PH-IND02 Selective closure / perspective / bearer formation | `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` | selective stabilization / momentary closure can be a precursor to dynamic boundary formation, but bearer admission additionally requires same-unit consequence return, history-bearing writeback, future-selectability change and continuity; perspective is typed below phenomenality | A / P3 philosophy-of-mind individuation bridge; integration hook pending |
 | PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | full-book Simondon close-read adds `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, a relation-of-relations bearer-boundary candidate, and a strict generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | A / full-monograph P3 hardening bridge; integration hook pending |
+| PH-DIFF01 Difference / virtual / individuation / generative selectability | `Philosophy/patches/SRT_Philosophy_PH_DIFF01_Difference_Individuation_Generative_Selectability_v0_1.md` | full-book Deleuze close-read adds anti-preformation and problem-space guards, separates productive asymmetry from `Psi_f`, turns `L0 -> L1` actualisation into a mechanism audit, pressures static-identity models of stability through deep repetition, and explicitly blocks `virtual=L0`, `eternal return=t_onto` and Deleuzean selection = Real Choice Moment | A / full-monograph P3 hardening bridge; integration hook pending |
 | PH-MEM01 Objectification history / bearer / revisable understanding | `Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md` | treats consolidation as one mediator from prior objectification history to future objectification conditions; separates explicit object from effective historical constraint, subpersonal mechanism from bearer ownership, cognitive generativity from `d`, and adds consequence sensitivity / revisability as SRT-side understanding discriminators | A / penultimate-draft-triggered P3 hardening bridge; integration hook pending |
 | PH-MR01 Representational gradualism / adjacent-case audit | `Philosophy/patches/SRT_Philosophy_PH_MR01_Representational_Gradualism_Adjacent_Case_Audit_v0_1.md` | imports Schulte's adjacent-case pressure test for purported natural thresholds; separates epistemic representation-evidence degree from ontological representational degree; blocks `information-processing complexity = representation`; adds only a P3 history-bearing-recursion hypothesis and keeps representation / bearer / phenomenality axes distinct | A / peer-reviewed full-text P3 mental-representation hardening; integration hook pending |
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
@@ -332,6 +333,44 @@ yang/(yang+yin) = canonical equation
 Simondon proves SRT
 ```
 
+### PH-DIFF01 difference / virtual / individuation / generative-selectability bridge
+
+Use PH-DIFF01 as a generative-architecture pressure model, not as an ontology import:
+
+```text
+pre-object differential / problematic conditions
+-> productive asymmetry
+-> individuation / dynamism
+-> determinate manifestation
+-> recurrent historical reconstitution
+```
+
+Safe uses:
+
+- keep enumerated objects/options downstream of objectification rather than silently preloading them into `L0`;
+- use Deleuze's possible/virtual distinction only to audit preformation, not to rename `L0`;
+- distinguish problem-space constitution from answer/menu selection;
+- ask for a genetic mechanism between structured selectability and `L1` rather than letting `Ĝθ` function as an explanatory black box;
+- separate productive asymmetry / potential difference from canonical `Psi_f` payability burden;
+- crosswalk individuation-before-identity to PH-IND03 while keeping P0-04 open;
+- use metastability as an anti-closure pressure without defining an optimal `kappa` or modifying phase thresholds;
+- treat stable identity as recurrent historical reconstitution rather than literal microstate equality;
+- apply the Image-of-Selection audit when `selection` risks becoming a universal relabel for structured dynamics.
+
+Do not claim:
+
+```text
+virtual = L0
+intensity = Psi_f
+dark precursor = G_hat_theta
+eternal return = t_onto
+Deleuzean selection / selective test = Real Choice Moment
+pre-individual field = consciousness
+ungrounding = absence of constraint
+Conservation of Possibilia has been rewritten by this bridge
+Deleuze proves SRT
+```
+
 ### PH-MEM01 objectification-history / bearer / understanding bridge
 
 Use PH-MEM01 as the philosophy-side complement to NEURAL29, not as a redefinition of memory or understanding:
@@ -476,6 +515,7 @@ Proposed additions:
 24. Objectification-history / bearer-attribution / revisable-understanding pressure from PH-MEM01, preserving explicit-object vs effective-constraint and generativity vs stake/factivity separations
 25. Representational adjacent-case threshold audit from PH-MR01, preserving evidence-degree vs ontological-degree and representation/bearer/phenomenality separations
 26. Role-indexed invitation gating and social constraint revision from SOC-COG03, explicitly subordinate to the existing H3/I5/J5 reselectability architecture
+27. PH-DIFF01 anti-preformation / problem-space / actualisation-mechanism / productive-asymmetry / deep-repetition stability pressure, crosswalked to PH-IND03 without canonical identity
 
 ---
 
@@ -535,6 +575,10 @@ PH-IND03 patch = added
 PH-IND03 integration hook = added / pending
 PH-IND03 source-intuition crosswalk = added
 PH-IND03 canonical merge = not authorized / not requested
+PH-DIFF01 Deleuze SourceCard = full-book close-read
+PH-DIFF01 patch = added
+PH-DIFF01 integration hook = added / pending
+PH-DIFF01 canonical / owner / book-body merge = not authorized / not requested
 PH-MEM01 Wang SourceCard = added
 PH-MEM01 patch = added
 PH-MEM01 integration hook = added / pending
