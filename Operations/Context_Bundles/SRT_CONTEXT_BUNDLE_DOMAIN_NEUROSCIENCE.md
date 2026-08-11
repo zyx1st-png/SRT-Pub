@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-11
-source_commit: 43d16be1
-source_branch: HEAD
-source_dirty: true
+source_commit: 4d47fd5a
+source_branch: codex/material-assimilation-delta-audit-2026-08-11
+source_dirty: false
 inputs_digest: 5f08db5b860ab960
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 5f08db5b860ab960
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-11 |
-| 来源 commit | `43d16be1` |
-| 来源分支 | `HEAD` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `4d47fd5a` |
+| 来源分支 | `codex/material-assimilation-delta-audit-2026-08-11` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 5 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
