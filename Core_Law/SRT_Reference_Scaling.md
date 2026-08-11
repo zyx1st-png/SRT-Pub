@@ -3,7 +3,9 @@ id: SRT-REF-SCALING
 type: framework
 tags: [CoreLaw, Scaling, Canonical]
 layer: L1
-status: active_bridge_hybrid_v2
+status: active
+version: v2
+record_stage: active_bridge_hybrid
 epistemic_layer: os
 claim_mode: mixed
 dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-DYNAMICS]

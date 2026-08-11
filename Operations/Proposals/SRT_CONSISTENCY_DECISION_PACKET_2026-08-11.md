@@ -26,6 +26,8 @@ tags: [Governance, Proposal, Consistency, DecisionGate, AntiDrift]
 > The sweep's **deterministic** repairs shipped separately (Phase 1). This packet is Phase 2: options, costs, and a recommendation per gate — the verdict is the author's.
 >
 > Registered as `Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`.
+>
+> **⚠ Partial supersession (2026-08-11)**: **§4 is WITHDRAWN** — its "exactly one position-independent object at L₀" framing is factually wrong against current canonical and must not be cited as a recommendation or candidate ontology. See §4's inline supersession block and `Operations/Proposals/SRT_GATE0_L0_CONTENTLESS_STRUCTURALITY_DECISION_2026-08-11.md`. §1–§3 (Gates A/B/C) and §5 (anti-drift rule) are unaffected, **except** that Gate C's severity is revised there — `_SRT_D_VALUE_CANONICAL.md §5b.2` is guarded by reference from §5b.1, so the residual defect is quotability, not an unguarded claim.
 
 ---
 
@@ -284,6 +286,18 @@ Adopt the four-way terminology split (§C.2) and fix **`§5b.2` first and alone*
 
 ## 4. What the three gates appeared to have in common (historical analysis)
 
+> ## ⚠ SUPERSEDED — 2026-08-11
+>
+> **The framing in this section is WITHDRAWN. It must not be cited as a recommendation, as a candidate ontology, or as a live option-space description.**
+>
+> **Superseded by**: `Operations/Proposals/SRT_GATE0_L0_CONTENTLESS_STRUCTURALITY_DECISION_2026-08-11.md` §0 and §1.
+>
+> **What was wrong**: this section reduced the three gates to the question *"does SRT admit any position-independent object at L₀ — and if so, **exactly one** (a contentless scalar asymmetry), or more?"*, and sketched an "exactly one, contentless" package as coherent. That is **factually wrong against current canonical**, which already commits L₀ to at least four position-independent items: structured potentiality with intrinsic granularity (`Core_Law/SRT_L0_Metaphysics.md §二`; `_SRT_SYMBOL_TABLE.md` L₀ row), `κ₀ > 0` primordial curvature (`Core/SRT_Core_12a` T-L0-Kappa0), `ε_pg > 0` minimum non-neutrality, and the irreversibility floor (正骨架 #3 / `P0-03`). Executing the "exactly one" reading would have required deleting or demoting `κ₀`, which breaks `Ax-L0-Bootstrap` (κ₀ > 0 is its structural prerequisite) and `T-L0-Kappa0-C1` (the `Ψ_f` floor).
+>
+> **What replaces it**: the correct axis is not *how many* position-independent objects L₀ has, but **what kind**. See the Gate 0 packet's three-way classification (contentless structural invariants / reference-dependent weighting or comparative objects / semantic-evaluative content).
+>
+> **Retained below for provenance only.** The text is left unedited so the reasoning history stays auditable. Nothing in it licenses any Gate A / B / C stance, and this supersession executes none.
+
 Gates B and C leak through the **same cross-reference** (`_SRT_D_VALUE_CANONICAL.md §5b.2` → `Ax-Sho-1` / `Def-Apeiron-1`), and both concern whether SRT permits a **position-independent** object at L₀ — a global direction (B) or a global optimum (C). Before EX-A landed, Gate A appeared to be the same question in measurement clothing: `E = 1 − H(L_1)/H(L_0)` is a position-independent quantity, and its degeneracy is what happens when you try to compute one.
 
 The packet therefore originally proposed that the three gates might reduce to **one** author decision:
@@ -293,6 +307,8 @@ The packet therefore originally proposed that the three gates might reduce to **
 The historical branching was: if the answer were "exactly one, contentless", Gate A → Option A, Gate B → Option A, Gate C → the four-way split with sense 1 excluded; if the answer were "more than one", each gate would need its own enforcement mechanism. EX-A did **not** adopt this bundle: it resolved Gate A by separating actuality, persistence, and stable identity while adopting no quantitative object. Gates B and C therefore remain independent open decisions.
 
 **This section is retained as pre-verdict option-space analysis, not as current routing.**
+
+> **End of superseded section.** The observation that Gates B and C leak through the same cross-reference, and that A is the same question in measurement clothing, **survives** the supersession — only the "exactly one" reduction and its package are withdrawn.
 
 ---
 

@@ -2,7 +2,8 @@
 id: SRT-CORE-14-COMPACT-CORE
 type: dynamics
 tags: [Core, Dynamics, Scaling, Compact Core, Cross-Scale]
-status: active_v2
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: mixed

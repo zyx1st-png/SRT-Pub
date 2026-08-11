@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: 13d31338
-source_branch: main
+source_commit: 9613fbc7
+source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
 source_dirty: true
-inputs_digest: db1ef99d1ec3ccef
+inputs_digest: 7dc27dba4170a938
 ---
 
 # SRT 核心动力学上下文包
@@ -27,8 +27,8 @@ inputs_digest: db1ef99d1ec3ccef
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `13d31338` |
-| 来源分支 | `main` |
+| 来源 commit | `9613fbc7` |
+| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
 
@@ -43,7 +43,7 @@ inputs_digest: db1ef99d1ec3ccef
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-04-20 |
+| 1 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-08-12 |
 
 ## §0.2 状态护栏
 
@@ -427,11 +427,11 @@ When answering about SRT:
 | path | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` |
 | id | SRT-CORE-14-COMPACT-CORE |
 | claim_mode | mixed |
-| status | active_v2 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-04-20 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 

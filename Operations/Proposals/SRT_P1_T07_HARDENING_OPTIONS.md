@@ -1,7 +1,8 @@
 ---
 id: SRT-OPS-PROPOSAL-P1-T07-HARDENING-OPTIONS
 type: proposal
-status: superseded_by_author_decision
+status: archived
+record_stage: superseded_by_author_decision
 layer: meta
 epistemic_layer: os
 claim_mode: governance

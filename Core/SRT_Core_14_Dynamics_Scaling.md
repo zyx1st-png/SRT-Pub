@@ -2,7 +2,9 @@
 id: SRT-CORE-14
 type: dynamics
 tags: [Scaling, Isomorphism, Fractal, Hybrid]
-status: active_bridge_hybrid_v2
+status: active
+version: v2
+record_stage: active_bridge_hybrid
 layer: L1
 epistemic_layer: os
 claim_mode: mixed

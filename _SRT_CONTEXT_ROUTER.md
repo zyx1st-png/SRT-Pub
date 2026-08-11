@@ -244,6 +244,29 @@ When answering or editing a non-simple SRT question:
 
 ---
 
+## 8a. Route: Object Individuation / Identification / Subjecthood Negative Control
+
+**Use when the query mentions**: object individuation, object identification, object tracking, object index, infant object representation, `still this one`, minimal subject, bearer individuation, subjecthood negative control.
+
+### Primary
+
+- `Philosophy/_SRT_Philosophy_Hardening_Index.md`（§ PH-IND01 object / subject individuation bridge）
+
+### Secondary
+
+- `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md`
+- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
+- `Core_Law/SRT_Individuation.md`
+
+### Boundary
+
+- Object individuation can precede rich identification; this is a cognition-level distinction.
+- Object-tracking continuity is not consequence-bearing continuity.
+- An object index is not a minimal subject and does not establish consciousness.
+- Use PH-IND01 as a subjecthood negative control, not as evidence transfer from infant object cognition to SRT bearer formation.
+
+---
+
 ## 9. Route: Quantum Measurement / Decoherence / Quantum Darwinism
 
 **Use when the query mentions**: quantum measurement, collapse, decoherence, pointer states, Quantum Darwinism, measurement as selection.

@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: 13d31338
-source_branch: main
+source_commit: 9613fbc7
+source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
 source_dirty: true
-inputs_digest: db1ef99d1ec3ccef
+inputs_digest: 7dc27dba4170a938
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: db1ef99d1ec3ccef
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `13d31338` |
-| 来源分支 | `main` |
+| 来源 commit | `9613fbc7` |
+| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 5 |
 
@@ -46,7 +46,7 @@ inputs_digest: db1ef99d1ec3ccef
 | 1 | `Neuroscience/SRT_Neuroscience_Claim_Status.md` | 2026-07-16 |
 | 2 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | 2026-05-19 |
 | 3 | `Neuroscience/README.md` | 2026-07-20 |
-| 4 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 4 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 5 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 
 ## §0.2 状态护栏
@@ -812,7 +812,7 @@ The N1-N9 draft should be treated as a staging document, while the two compact c
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-19 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

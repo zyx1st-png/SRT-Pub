@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: 13d31338
-source_branch: main
+source_commit: 9613fbc7
+source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
 source_dirty: true
-inputs_digest: db1ef99d1ec3ccef
+inputs_digest: 7dc27dba4170a938
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,8 +27,8 @@ inputs_digest: db1ef99d1ec3ccef
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `13d31338` |
-| 来源分支 | `main` |
+| 来源 commit | `9613fbc7` |
+| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
 
@@ -46,8 +46,8 @@ inputs_digest: db1ef99d1ec3ccef
 | 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-08 |
 | 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
 | 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
-| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-04-29 |
-| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-04-29 |
+| 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
+| 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
 | 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-04-29 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
@@ -56,11 +56,11 @@ inputs_digest: db1ef99d1ec3ccef
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
 | 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
 | 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-04-27 |
-| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-04-27 |
-| 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-12 |
+| 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-04-23 |
-| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-04-20 |
+| 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-08-12 |
 | 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-08 |
 
 ## §0.2 状态护栏
@@ -1246,7 +1246,7 @@ Addendum:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1435,7 +1435,7 @@ SRT 的压缩增量在于：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -3854,7 +3854,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-27 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -4165,7 +4165,7 @@ Addendum:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-19 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -5148,11 +5148,11 @@ The stop rule should be applied at every phase. A practice should pause or narro
 | path | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` |
 | id | SRT-CORE-14-COMPACT-CORE |
 | claim_mode | mixed |
-| status | active_v2 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-04-20 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 

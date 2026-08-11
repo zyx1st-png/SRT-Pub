@@ -14,8 +14,8 @@ dependency: [SRT-PHILOSOPHY-CLAIM-STATUS, SRT-ETHICS-AGENCY]
 
 > **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/ethics/political/social-theory 句式必须回读 `../SRT_Philosophy_Claim_Status.md` 与相关 PH-SS guardrails。
 - 原始总文（保留，不删内容）：[`../SRT_Ethics_Agency.md`](../SRT_Ethics_Agency.md)
-- Source owner bytes: `64333`
-- Source owner SHA-256: `d3a65ebe4beb4cafc8592a926456cae97b123c49ac4b484a6c6d3d7cc66ef250`
+- Source owner bytes: `64807`
+- Source owner SHA-256: `852a92ddc76df261b18e414b2a1b4157917fe1609a967dd6b80ce3274e434c62`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

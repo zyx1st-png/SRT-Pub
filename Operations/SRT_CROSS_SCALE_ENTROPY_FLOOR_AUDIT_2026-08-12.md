@@ -1,7 +1,7 @@
 ---
 id: SRT-CROSS-SCALE-ENTROPY-FLOOR-AUDIT-20260812
 type: audit
-status: landed
+status: active
 claim_mode: governance
 updated: 2026-08-12
 record_stage: audited_and_landed
