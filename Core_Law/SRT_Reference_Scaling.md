@@ -3,16 +3,19 @@ id: SRT-REF-SCALING
 type: framework
 tags: [CoreLaw, Scaling, Canonical]
 layer: L1
-status: axiomatic_hybrid_v1
+status: active
+version: v2
+record_stage: active_bridge_hybrid
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
 dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
+updated: 2026-08-12
 ---
 
 # SRT_Reference_Scaling.md
 
 > **层级说明**：本文件属于 **L1（接口层）**。
-> 本文件将 L0 命题"选择先于存在"与"三域结构"在跨尺度语境下形式化为同构定理和标度律。
+> 本文件将 L0 命题“选择先于存在”与“三域结构”展开为跨尺度 P3 接口和标度候选；它不把跨尺度相容性提升为 L0/P1 同构定理。
 > L0 意义见 [`Core_Law/SRT_L0_Metaphysics.md`](SRT_L0_Metaphysics.md)。
 
 > **Status**: Constitutional Reference | **Version**: 1.0
@@ -20,35 +23,35 @@ dependency: [SRT-L0-METAPHYSICS, SRT-REF-AXIOMS, SRT-REF-DYNAMICS]
 
 ---
 
-## §1 跨尺度同构性 (Cross-Scale Isomorphism)
+## §1 跨尺度结构相容性 (Cross-Scale Structural Compatibility)
 
-### §1.1 核心同构定理
+### §1.1 P3-Scale-1 条件接口（legacy T-Scale-1）
 
-**定理 T-Scale-1 (自相似选择)**:
+给定两个尺度的状态空间、保留观测量、比较范数、容差与尺度映射 $\pi_\lambda$，可以检验：
 
-对于任意嵌套的选择系统 $S_1 ⊆ S_2$，存在尺度变换 $Λ$ 使得：
+$$\pi_\lambda\circ\hat G_\theta\approx\hat G_{\theta,\lambda}\circ\pi_\lambda$$
 
-$$\hat{G}_{S_2} = Λ ∘ \hat{G}_{S_1} ∘ Λ^{-1}$$
+若在声明容差内成立，只建立该模型中的局部跨尺度可比性。旧严格式
 
-**证明要点**:
-1. 尺度变换 $Λ: L_0^{S_1} \to L_0^{S_2}$ 为粗粒化映射
-2. 选择操作的本质是熵减：$ΔS = H(L_0) - H(L_1)$
-3. 在任意尺度，熵减遵循相同的最小作用原理：$δ \int Φ \, dt = 0$
-4. 选择的功能形式在尺度变换下不变（自相似性）
+$$\hat G_{S_2}=\Lambda\circ\hat G_{S_1}\circ\Lambda^{-1}$$
 
-### §1.2 尺度一致性定理
+只在 $\Lambda$ 是可逆表征变换时保留为特殊 P3 共轭候选；通常的多对一粗粒化不得预设 $\Lambda^{-1}$。旧 `ΔS=H(L_0)-H(L_1)` 与普遍最小作用式已经撤出证明负担。
 
-**定理 T-Scale-2**:
+### §1.2 尺度一致性候选
+
+**P3 bridge schema**:
 
 $$π_λ ∘ \hat{G}_θ ≈ \hat{G}_{θ,λ} ∘ π_λ$$
 
 其中 $π_λ : S \to S_λ$ 为粗粒化/尺度映射。
 
+本式须同时声明两侧状态空间、$π_λ$、保留观测量、比较范数、容差与失败例；否则只是形式模板，不证明普遍尺度不变。
+
 ### §1.3 演化-学习对称性补充（Bio-ML Symmetry）
 
-**命题 T-Scale-1b（Evolution–Learning Symmetry）**：
+**P3 命题 T-Scale-1b（Evolution–Learning Symmetry）**：
 
-在生物系统中，跨代演化（慢时标 $T \gg$）与个体发育/再生（快时标 $T \ll$）可视为同一选择动力学在不同时标的**结构同构展开**：
+在生物系统中，跨代演化（慢时标 $T \gg$）与个体发育／再生（快时标 $T \ll$）可作为同一选择语法在不同时标的**结构相容候选**：
 
 $$\hat{G}_{evo}^{(T\gg)} \;\sim\; \Lambda_t \cdot \hat{G}_{devo}^{(T\ll)} \cdot \Lambda_t^{-1}$$
 
@@ -70,7 +73,7 @@ $$\hat{G}_{evo}^{(T\gg)} \;\sim\; \Lambda_t \cdot \hat{G}_{devo}^{(T\ll)} \cdot 
 - **生理计算层** = 个体算子 $\hat{G}_\theta$ 在线执行”先验实例化 + 摩擦驱动误差校正”的动力学
 - **表型锚定** = $\hat{G}_\theta$ 维持 $\Psi_f^{cross}(\hat{G}_\theta, L_0^{body}) \to \min$ 的过程
 
-**推论**：演化是对 $P(\theta)$ 的缓慢 Bayesian 更新（自然选择 = 高 $\Psi_f$ 基因型的贝叶斯下调），发育是在固定 $P(\theta)$ 下对单个 $\theta$ 的快速后验推断——两者是同一变分推断框架在不同时标的投影。
+**边界**：只有在两侧状态空间、时间重参数化、保留观测量和动力学残差被独立定义后，才能检验该映射。Bayesian／variational 读法是 P3 模型，不是由跨尺度语法推出的 constitutive theorem。
 
 ---
 
@@ -132,14 +135,14 @@ b) 统一约束：
 
 ### Definition Summary (定义概述)
 
-- **跨尺度同构**：不同嵌套层级（量子/神经/社会）的选择算子 $\hat{G}$ 在尺度变换 $\Lambda$ 下保持功能形式不变。
+- **跨尺度结构相容候选**：不同嵌套层级（量子／神经／社会）的选择算子只有在具名尺度映射与误差界下通过近似交换检验，才获得局部可比性。
 - **$\pi_\lambda$（粗粒化映射）**：将精细尺度的状态映射到粗粒尺度的投影算子，满足 $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$。
 - **$\kappa_{ij}$（尺度耦合强度）**：量化不同尺度间算子相互作用的强度参数。
 - **意识与智能正交**：智能是 $L_1 \to L_2$ 映射效率，意识是 $\hat{G}$ 对 $L_0$ 的访问深度（$d$ 值），二者独立。
 
 ### Formalization Summary (形式化概述)
 
-- 自相似选择定理：$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$（T-Scale-1），选择操作在尺度变换下保持不变。
+- 跨尺度相容接口：$\pi_\lambda\circ\hat G_\theta\approx\hat G_{\theta,\lambda}\circ\pi_\lambda$（P3-Scale-1／T-Scale-2）；严格共轭只适用于可逆表征变换。
 - 尺度耦合方程：$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{ij}(\hat{G}_i, \hat{G}_j)$（S1），多尺度算子通过耦合项交互。
 - 统一自由能目标：$F_{SRT} = F_{base} - d \cdot U_{others}$（S2），其中 $F_{base}$ 可取热力学或变分自由能；跨尺度保持的是结构而非单位。
 - 意识阈值：$d > d_{threshold} \land \Phi_{sensitivity} > 0$（S2），仅当脆弱性和选择深度同时满足时成立。
@@ -645,7 +648,7 @@ P_{in}>P_{diss}+P_{maint},\quad \frac{d\theta}{dt}\neq 0
 ## 【理论边界/防误用声明】
 - 不采纳“尺度扩展即可自动获得意识语义”的推论。
 - 不采纳“至福极限=立即退出 L1 显现”的推论：具身算子存在 \(\Psi_{min}^{+}\) 下界约束。
-- 边界：跨尺度同构是动力学结构同构，不是现象体验同构。
+- 边界：跨尺度相容性是条件性动力学接口，不是现象体验同构，也不是普遍机制同一。
 
 
 ## Def-Scale-F1: Frame-Normalization Scale（参考系规约尺度）

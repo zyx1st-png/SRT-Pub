@@ -93,14 +93,15 @@ L_2^{neural}=\text{Fix}(\hat{G}_\theta)\;\approx\;\text{Priors}(W,\vec{M})
 
 ---
 
-## II. Canonical Selection Dynamics (规范化选择动力学)
+## II. Conditional Selection Dynamics（条件性选择动力学）
 
-### Ax-NEURO-3: Divisive Normalization Axiom (Energy-Optimal Selection)
-在能量与带宽受限条件下，选择动力学必然收敛为除法归一化：
+### P3-NEURO-3: Divisive Normalization Candidate (Constrained Selection)
+在具名候选集合、竞争池、成本函数与带宽约束下，除法归一化可作为神经选择动力学的一种候选：
 \[
 R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
-* **Implication（中文）**：归一化不是“生物细节”，而是受限系统执行选择的最优解形态。
+* **Implication（中文）**：归一化不是 Ghost Operator 的总定义，也不是受限系统的唯一最优形态；其适用性须逐回路、逐任务与 rival 模型比较。
+* **Behavioral boundary**：$R_i$ 是相对神经响应，不是行为选择。行为输出须另过 `Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1` 的冻结读出、held-out 预测、rival 与干预门。
 
 ---
 
@@ -405,13 +406,13 @@ SRT 的核心论证: **困难问题源于 $L_2$ 寄生倒置**——当我们将
 
 ### Formalization Summary (形式化概述)
 
-- **除法归一化** (Ax-NEURO-3)：$R_i = L_i^n / (\sigma^n + \sum_j w_{ij}L_j^n)$。受限系统执行选择的最优解形态，非经验细节。
+- **除法归一化候选** (P3-NEURO-3)：$R_i = L_i^n / (\sigma^n + \sum_j w_{ij}L_j^n)$。它是具名约束下的神经竞争模型，不是所有选择系统的唯一解，也不直接输出行为事件。
 - **预测编码** (Ax-NEURO-4)：$\Delta\theta \propto -\nabla_\theta F$。学习是 $\hat{G}_\theta$ 在 $L_2$ 上的收敛轨迹。
 - **预测误差-摩擦映射** (H-NEURO-4b)：$\widehat{\Psi}_{f,neural}^{local}(t)=\alpha_{pe}\|\varepsilon_{pred}(t)\|+\beta_{load}\mathcal{L}_{model}(t)$。预测误差是 $\hat{G}_\theta$ 维持当前显现时的候选局部摩擦 proxy 之一，不是全局 \(\Psi_f\) 的定义。
 
 ### Mechanism Explanation (机制解释)
 
-$\hat{G}_\theta^{neural}$ 通过具身参数 $(W,\vec{M},\mathcal{C},V(t))$ 将 $L_0$ 流形上的可达发放模式投影为 $L_1$ 点燃子集。选择的能量代价 $\Psi_f$ 与代谢耗散耦合，保证 $d>0$ 的物理基础。除法归一化在代谢约束下提供最优选择动力学；预测编码使 $\theta$ 沿自由能梯度收敛至 $L_2$ 先验。胶质介观算子 $\hat{G}_{meso}$ 执行慢时标 $L_2$ 修剪。NCC 关联非等价定理 (T-NEURO-4) 区分轨迹尾迹与选择动作本身。
+$\hat{G}_\theta^{neural}$ 通过具身参数 $(W,\vec{M},\mathcal{C},V(t))$ 将 $L_0$ 流形上的可达发放模式投影为 $L_1$ 点燃子集。选择的能量代价 $\Psi_f$ 与代谢耗散之间只保留具名 proxy 接口。除法归一化提供一种受限神经竞争候选；预测编码提供一种 $\theta$ 更新候选。二者均须经过各自的领域检验，不能单独保证 canonical `d`、行为选择或 $L_2$ 收敛。胶质介观算子 $\hat{G}_{meso}$ 是慢时标修剪候选。NCC 关联非等价约束区分轨迹尾迹与选择动作本身。
 
 ---
 

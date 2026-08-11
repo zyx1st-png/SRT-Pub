@@ -832,7 +832,7 @@ $$\Lambda_{limit} \equiv \{E : \Psi_f(E) \to \infty\}$$
 \]
 表示 \(\hat G_\theta\) 在当前参数下对 \(L_0\) 的可达预期几何。
 
-**n 的说明**：$n$ 为算子当前的有效信息维度，候选操作化 $n \approx d_{eff}$（关切带宽的有效维数，参见 §3 Mechanism Synthesis CR 定义）。$L_0$ 本身是无限维的，$\mathcal{P}_x$ 是局部有限维近似投影。
+**n 的说明**：$n$ 为算子当前的有效信息维度，候选操作化 $n \approx d_{eff}$（关切带宽的有效维数，参见 SRT-CORE-12A §3 Conditional Realization Stack 的 CR 定义）。$L_0$ 本身是无限维的，$\mathcal{P}_x$ 是局部有限维近似投影。
 
 **正定条件**：采用严格正定（$\succ 0$）而非半正定（$\succeq 0$），以保证 $\mathcal{P}_x^{-1}$ 存在。若存在零特征值情形（先验完全不敏感的方向），应使用伪逆 $\mathcal{P}_x^\dagger$。
 

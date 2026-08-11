@@ -49,7 +49,7 @@ This file exists because the current book line has become theoretically producti
 
 | Book increment | Primary book source | Current safe level | Canonical / hardening landing zone | Forbidden promotion |
 |---|---|---|---|---|
-| selection structure as `排开 / 定形 / 写入` | `01_Source_Intuition/BOOK/Drafts_26Q/Q04b_选材.md` | companion exposition + P2 explanatory structure | L0 constraints, `Core/SRT_OPEN_TENSIONS.md §7 P0-04`, possible future core-clarifying note | Do not treat it as solving the origin of selectability. Do not claim it proves P0-04. |
+| selection structure as `排开 / 定形 / 写入` | `01_Source_Intuition/BOOK/Drafts_26Q/Q04b_选材.md` | companion exposition + P2 explanatory structure | L0 constraints, `Core/SRT_OPEN_TENSIONS.md §7 P0-04`, possible future core-clarifying note | Do not treat it as deriving or replacing AM-A's P0 primitive. Do not claim a book exposition proves P0-04. |
 | agency / 能动性 as consequence-return capacity | `Drafts_26Q/Q15b_能动性.md` | P2 / P3 bridge between consequence return and agency | stable ISP entry/maintenance files, `d-value`, `T_dir`, `Core/SRT_OPEN_TENSIONS.md §5` | Do not treat it as a first-selector origin theorem or as metaphysical free will. |
 | friction allocation / externalization / power | `Drafts_26Q/Q22_方向.md`, five-act architecture node for 本体论摩擦 / 权力 | P3 social-pathology / collective bridge | `_SRT_PSI_F_CANONICAL.md` payability projection boundary, `Core_Law/SRT_Collective_Selection.md`, occlusion / suffering files | Do not read as a `Ψ_f` conservation theorem. Do not claim `Ψ_f` canonical already proves friction cannot be transferred without residue. |
 | direction three questions: self-consumption / externalization / lock-in | `Drafts_26Q/Q22_方向.md` | fallibilist structural diagnostic; P2/P3, with P4 thresholds | `Core/SRT_OPEN_TENSIONS.md §9`, occlusion dynamics, reselectability route, possible normativity true-up | Do not treat as complete ethics, final normativity foundation, or solved closure-boundary. |
@@ -77,7 +77,7 @@ This is a companion / explanatory structure for manifestation and stabilization.
 
 Guard:
 
-- Link to P0-04 as an open exposure point when using selector-like language.
+- Link to P0-04 as the AM-A primitive / no-prior-chooser boundary when using selector-like language; keep domain realization and selector individuation explicitly downstream.
 - Say "selection structure" or "selection-like convergence" when the domain does not yet support full subject/agency language.
 
 ### 2.2 Agency / 能动性

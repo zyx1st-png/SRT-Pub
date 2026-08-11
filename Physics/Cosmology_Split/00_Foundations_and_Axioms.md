@@ -82,7 +82,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, SRT
 - **A1** (选择优先性): $\text{Existence} \equiv \text{Selection}(\mathcal{P})$
 - **A2** (存在即锚定): $\text{Existence}(σ) \iff \hat{G}_θ[L_0] \to σ_{L_1}$ with $ΔF < 0$
 - **A11** (本体论脆弱性): $\text{Stability} \propto 1/\Psi_f$
-- **A13** ($L_0$ 守恒律): $L_0(t) = L_0(t + Δt) = \text{Constant}$
+- **A13**（潜在不可穷尽边界）：任何有限物理显现或形式投影都不穷尽 $L_0^{abs}$；这不是物理守恒律，也不声称 $L_0(t)$ 为常量
 
 ### Core Theorem Alignment (核心定理对齐)
 

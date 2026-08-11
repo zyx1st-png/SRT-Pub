@@ -3,7 +3,7 @@ id: SRT-REVIEW-QUEUE
 type: framework
 status: active
 claim_mode: governance
-updated: 2026-08-05
+updated: 2026-08-12
 version: v2
 layer: meta
 epistemic_layer: os
@@ -34,6 +34,10 @@ dependency: [SRT-DAILY-REVIEW-PIPELINE, SRT-EQ-HYP-MAP]
 统一裁决包：
 
 `Operations/SRT_AUTHOR_DECISION_PACKET_EUCLID_DQO_PHYSICS_A10A11_2026-08-05.md`
+
+相邻第一性主链的新裁决包：
+
+`Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md`
 
 ---
 
@@ -72,6 +76,13 @@ Pipeline 6 只能把原始发现追加到本区，不得直接写入 A/B，也�
 
 | 原发现日期 | 处理日期 | 来源 | 原问题 | 处理方式 | 状态 |
 |---|---|---|---|---|---|
+| 2026-08-11 | 2026-08-12 | `Operations/SRT_CROSS_SCALE_ENTROPY_FLOOR_AUDIT_2026-08-12.md` | `Core_14` 以未定义 `H(L_0)`、无条件粗粒化熵式、普遍最小作用与通常不可逆的 `Λ^{-1}` 支撑跨尺度共轭 | 旧证明撤回；P3-Scale-01／B07 降回条件性桥，通用接口采用 B06／T-Scale-02C1 近似交换；T-Scale-Rhythm-5 标为 P3/P4 条件模型 | Resolved at claim-mode / proof-load level |
+| 2026-08-12 | 2026-08-12 | `Operations/SRT_NEURAL_NORMALIZATION_BEHAVIORAL_SELECTION_FLOOR_AUDIT_2026-08-12.md` | 神经入口把除法归一化写成所有受限选择的本体必然／唯一极值解，并从相对响应跳到行为选择与跨尺度同构 | 广义连接判红；Core14 登记 P3-Scale-NB1 有界合同，Core13a 与神经 owner／CompactCore／claim-status 降级并补冻结读出、held-out、rival、干预与事件门 | Resolved at claim-mode; empirical P3 execution open |
+| 2026-08-11 | 2026-08-11 | `Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md` | structural stability、continued selectability、generative reselectability 与 metastability 混层；P1-T07 无条件概率证明未闭合 | 作者选择 ST-A；P1-T06 保留 continued selectability，generative reselectability 降到 P2/P3；former P1-T07 撤销无条件 P1 身份，保留 absorption remainder 与 21C B13 条件候选 | Resolved by author; landed |
+| 2026-08-11 | 2026-08-11 | `Operations/SRT_ACTUALISATION_AUTHOR_DECISION_PACKET_2026-08-11.md` | P0-01/P0-04 的 primitive/open 口径与 Ax-L0-Bootstrap 的 fixed-point “正式消解”互相冲突 | 作者选择 AM-A；actualisation 明确为既有 selection primitive 的最小内核；删除 fixed-point / 最陡下降的 universal derivation，保留 plural domain implementations | Resolved by author; landed |
+| 2026-08-11 | 2026-08-11 | `Operations/SRT_POSSIBILIA_CONSERVATION_AUTHOR_DECISION_PACKET_2026-08-11.md` | `Conservation of Possibilia` 的内容／基数守恒与创新即发现读法，和上位 L0 的真实新颖性、历史雕刻与 anti-preformation 护栏冲突 | 作者选择 PC-A；Ax-L0-02 / A13 改为潜在不可穷尽，T-L0-01 改为非预成的新颖性；actualisation mechanism 继续开放 | Resolved by author; landed |
+| 2026-08-11 | 2026-08-11 | `Operations/SRT_PHYSICAL_REALISATION_AUTHOR_DECISION_PACKET_2026-08-11.md` | AM-A 在物理域采用 interpretation-plural audit、collapse-family 优先，还是只保留 operational registration | 作者选择 PHR-A；Physics 采用共同 P3/P4 事件审计核并显式区分 collapse-family、Everett／branch-relative 与 operational／instrument 口径；不建立解释中立的普遍物理机制 | Resolved by author; landed |
+| 2026-08-11 | 2026-08-11 | `Operations/SRT_EXISTENCE_AUTHOR_DECISION_PACKET_2026-08-11.md` | P0-01 event actuality、P0-02 anchoring persistence 与 P1-T06 stable ISP 被“existence”一词压成一层；旧 `E` 式与 `H(L_0)=∞` 冲突 | 作者选择 EX-A；三层分离，旧 `E` 式降至 21C B14 历史启发式；未采用全局熵、归一化或量化 existence index | Resolved by author; landed |
 | 2026-03-16 | 2026-03-16 | `_SRT_EQ_HYP_MAP.md` | Eq-LDP-01 / Eq-LDP-02 为 Gap | 已推进为 Partial；后续数据执行转入 RQ-DEF-02 | Resolved at mapping level |
 | 2026-03-05 | 2026-03-16 | `_SRT_EQ_HYP_MAP.md` | Eq-Select-Thermo / Eq-LDP-01 / Eq-LDP-02 三条 Gap | Eq-Select-Thermo 已推进为 Partial；不得继续写作“三条 Gap 未补” | Resolved at mapping level |
 | 2026-03-02 | 2026-03-11 | `_SRT_VERTICAL_INTEGRATION.md §4` | d_collective 聚合方案未形式化 | 框架层已形成 collective landscape 与 Eq-Multi-01/02/03；实证代理另列 RQ-DEF-01 | Resolved at framework level |

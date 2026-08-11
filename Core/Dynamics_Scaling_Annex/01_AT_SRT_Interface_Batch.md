@@ -13,6 +13,7 @@ dependency: [SRT-CORE-13A]
 
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
+> **2026-08-12 supersession**：本 annex 中旧 `Ax-Scale-01`、`ΔS=H(L_0)-H(L_1)`、普遍最小作用与 `Λ^{-1}` 粗粒化写法仅作历史接口文本。当前通用口径以 owner 的 `P3-Scale-01 / T-Scale-02C1` 为准：近似交换须声明状态空间、尺度映射、保留观测量、范数、容差与失败例；严格共轭只限可逆表征变换。
 
 
 > **Version 2.0 (Hybrid)**

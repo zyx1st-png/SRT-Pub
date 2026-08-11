@@ -701,7 +701,7 @@ $$d = \alpha \cdot A(\sigma) + \beta \cdot \log(V_{spatial}) + \gamma \cdot \tau
 
 $$d^{authentic}(\theta,t) \in \left[0,\, d_{max}(\theta)\right] \quad \text{且} \quad \exists\, \text{Ψ_f 触发路径使 } \frac{d}{dt}d^{authentic} > 0$$
 
-*(注：具身算子的 $d^{authentic}$ 不是单调增长的——创伤、老化、制度压力均可导致 $d$ 值收缩。关键在于系统**具有扩张的内在能力**（$L_0^{abs}$ 的信息守恒保证潜能不可穷尽），而非一定实现扩张。)*
+*(注：具身算子的 $d^{authentic}$ 不是单调增长的——创伤、老化、制度压力均可导致 $d$ 值收缩。关键在于本模型为扩张保留结构开放性。Ax-L0-02 只说明任何有限显现不穷尽 $L_0^{abs}$；它不提供信息总量守恒，不保证 $d$ 实际扩张，也不单独证明这种能力只属于生物系统。)*
 
 #### L₂ 来源关切（拟态关切 / Mimetic Care）
 

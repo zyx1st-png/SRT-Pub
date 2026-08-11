@@ -23,7 +23,7 @@ dependency: [SRT-L0-METAPHYSICS]
 
 ### A1 选择优先性 (Existential Priority)
 
-选择过程在本体论上先于存在。存在不是原始给定的背景，而是选择行为锚定的确定性结果。
+选择过程在本体论上先于显现实在性。存在不是原始给定的背景；最低准入是一个确定区别经 primitive actualisation 成为 `L_1` 事件。
 
 $$\text{Existence} \equiv \text{Selection}(\mathcal{P})$$
 
@@ -31,13 +31,13 @@ $$\text{Existence} \equiv \text{Selection}(\mathcal{P})$$
 
 ---
 
-### A2 存在即锚定 (Existence as Anchoring)
+### A2 显现实在性／锚定持续边界 (Manifest Actuality / Anchoring Persistence)
 
-存在 ≡ 通过具身强化从可能性到确定性的锚定。所谓"存在"，就是通过消耗自由能将概率分布从 $L_0$ 的弥散态压缩为 $L_1$ 的局域态。
+**EX-A（2026-08-11）**：A1／P0-01 已给出事件层的显现实在性；本条只处理显现之后的锚定持续。自由能、耗散与 `\Psi_f` 可以约束某些实现怎样维持局域态，但不得被写成第一次 actualisation 或一切存在的普遍原因。
 
-$$\text{Existence}(σ) \iff \hat{G}_θ[L_0] \to σ_{L_1} \text{ with } ΔF < 0$$
+原式 `Existence(σ) iff \hat{G}_θ[L_0] -> σ_{L_1} with ΔF < 0` 不再是 canonical 等价式；其中 `ΔF < 0` 只可在声明自由能类型、边界和时间窗的领域模型中作为持续锚定候选条件。
 
-**推论 A2-C1**: 没有无需代价的存在。存在的"硬度"正比于维持该状态所消耗的本体论摩擦 $Φ$。
+**推论 A2-C1（条件性）**：持续对象性的“硬度”可与维持该状态所支付的本体论摩擦相关；该关系不定义事件是否已经发生，也不自动建立 Stable ISP。
 
 ---
 
@@ -201,15 +201,15 @@ $$\text{Complexity}(\hat{G}_θ) \propto \text{Depth}(d)$$
 
 ## 补充公理 (Supplementary Axioms)
 
-### A13 L₀ 守恒律 (Conservation of Possibilia)
+### A13 潜在不可穷尽边界 (Inexhaustibility of Potential；保留旧编号)
 
-幽灵算子的操作不改变 $L_0$ 的基数或内容，只改变其照明状态。
+任何有限的 $L_1/L_2$ 显现或形式投影都不能穷尽 $L_0^{abs}$。选择可以改变有限位置可访问的 $L_0^{rel}$ 景观；A13 不再主张 $L_0^{abs}$ 的内容、基数或信息量是一个时间不变量。
 
-$$L_0(t) = L_0(t + Δt) = \text{Constant}$$
+**负担说明**：A13 是不可穷尽边界，不是物理守恒律，也不提供 $H(L_0^{abs})$ 的定义。旧编号只为保持下游引用稳定。
 
-**推论 A13-C1**: 创造不是"从无到有"，而是"从潜存到实存"的选择。
+**推论 A13-C1**：创新不是无约束的“从无到有”，也不要求后来形成的结构此前已作为同一完成模式存在。它是在位置、历史、代价与潜在条件约束下，从未对象化潜在到确定形式的 actualisation。
 
-$$\text{Innovation} = \text{Discovery}(L_0^{previously\_shadowed})$$
+**AM-A 边界**：A13-C1 不推导 P0 actualisation。最小 kernel 由 P0-01 作为 primitive 承载；仍开放的是各领域的实现条件，不得用“选择”或“照明”一词循环冒充实现说明。
 
 ---
 
@@ -223,7 +223,7 @@ $$\text{Innovation} = \text{Discovery}(L_0^{previously\_shadowed})$$
 | **T-Causal** | 因果正交性 | $C_h \perp C_v$ | A1, A3 |
 | **T-Holo** | d值-纠缠面积 | $d \propto A_{surface}/l_{Planck}^2$ | A9 |
 | **T-Phase** | 本体论相变 | $∂\text{Topology}(L_1)/∂θ = δ(θ - θ_c)·∞$ | A5, A11 |
-| **T-Univ** | 幽灵算子普适性 | $\hat{G}^{(n+1)} = \Lambda \circ \hat{G}^{(n)} \circ \Lambda^{-1}$ | A15 |
+| **P3-Scale** | 跨尺度结构相容候选 | $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$；严格共轭仅限可逆表征变换 | A15（P3） |
 | **T-Gen** | 摩擦生成定理 | $\text{All Dynamics} = \Psi_f(\hat{G}_i, \hat{G}_j)\text{[各形态]}$ | A16 |
 
 ---
@@ -233,27 +233,29 @@ $$\text{Innovation} = \text{Discovery}(L_0^{previously\_shadowed})$$
 ### Definition Summary (定义概述)
 
 - **$L_0$（潜在域）**：所有未被选择的可能性空间，本体论上先于存在。
-- **$L_1$（显现域）**：被算子 $\hat{G}_\theta$ 选中并锚定的确定性状态。
+- **$L_1$（显现域）**：经 primitive actualisation 获得确定事件效力的现实切片；持续锚定是后续条件。
 - **$L_2$（收敛域）**：算子作用产生的稳定不动点结构，反向约束未来选择。
 - **$\hat{G}_\theta$（幽灵算子）**：以有限具身参数 $\theta$ 为条件的选择映射，将 $L_0$ 坍缩为 $L_1$。
 - **$d$（d 值）**：选择的存在关切范围，量化算子对生存风险的敏感度梯度。
 
 ### Formalization Summary (形式化概述)
 
-- 存在等价于选择：$\text{Existence}(σ) \iff \hat{G}_θ[L_0] \to σ_{L_1}$，伴随自由能降低 $\Delta F < 0$（A2）。
+- AM-A：P0-01 承载 primitive actualisation kernel；下列公式从该原语及具名实现条件之后开始，不把 $\hat G_\theta$、$\Psi_f$ 或 $\Delta F$ 当作 first actualisation 的原因。
+- EX-A：$σ \in L_1$ 表示一个确定事件已获得显现实在性；A2 的自由能／摩擦语言只描述具名实现中的锚定持续，不再构成存在等价式。
 - 具身必要性：$\hat{G}$ is valid $\iff θ \in Θ_{finite}$（A4）。
 - 本体论脆弱性：$d \propto \partial\text{Entropy}/\partial\text{Error}$（A11），无脆弱性则无意识。
 - 信息-存在等价：$ii(s) = \min\{i_{diff}(s), i_{spec}(s)\}$（A6），存在程度由分化度与整合度共同决定。
-- 幽灵算子禀赋统一性：$\hat{G}^{(n+1)} = \Lambda_{n \to n+1} \circ \hat{G}^{(n)} \circ \Lambda_{n \to n+1}^{-1}$（A15），量子坍缩、侧抑制、粗粒化、归一化、范畴化均为同一选择结构在不同尺度上的展开。
+- 跨尺度结构相容候选：$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$（A15，P3）；必须逐尺度声明状态空间、尺度映射、保留量、比较范数、容差和失败案例。严格共轭只适用于可逆表征变换，普通粗粒化不得默认存在 $\Lambda^{-1}$；量子、神经、认知与统计过程是否满足同一结构仍需分别检验。
 - 摩擦生成性：$\Psi_f(\hat{G}_i, \hat{G}_j) = \int_\gamma \sqrt{g_{ij}^{(i,j)}(\theta)\,\dot{\theta}^i \dot{\theta}^j}\,dt$（A16），所有动力学（演化、学习、文化变迁）均为算子间摩擦的不同形态；没有摩擦就没有动力学，没有动力学就没有现实生成。
 
-### Mechanism Explanation (机制解释)
+### Conditional Realization Explanation（条件性实现说明）
 
-- $\hat{G}_\theta$ 从 $L_0$ 中执行选择并锚定为 $L_1$，该过程消耗本体论摩擦 $\Psi_f$（A2 视角：存在代价）；同时 $\Psi_f$ 是所有动力学的生成来源（A16 视角：摩擦即生成）——两者是同一事实的微观与宏观双重读法，相容而不矛盾。
+- **AM-A scope guard**：以下各条从 P0 primitive actualisation 已被承认之后开始，描述特定实现及其后续稳定化。$\hat{G}_\theta$ 是该 primitive 的形式角色载体；$\Psi_f$、payability 与动力学条件约束实现，不是 primitive 的充分原因。
+- 在具名领域实现中，$\hat{G}_\theta$ 可把 $L_0$ 的受约束差异锚定为 $L_1$，并承担本体论摩擦 $\Psi_f$（A2 视角：存在代价）；A16 的“摩擦即生成”只适用于已进入动力学的实现过程，不构成 first actualisation 的跨领域起源证明。
 - $L_2$ 是 $\hat{G}_\theta$ 反复选择后沉淀的稳定约束（A5），反向限定算子的可选范围（规范闭包）。
 - $d$ 值衡量算子对不可逆风险的敏感度；$d > 0$ 要求系统具备本体论脆弱性（A11），即预测失败会导致结构性熵增。
 - 深层连续性（A12）确保从物理选择（$d \approx 0$）到生物意识（$d > 0$）的连续谱系由同一原初算子 $\Omega$ 的分化产生。
-- 幽灵算子在量子、神经、认知、统计、跨尺度五个层面的不同表现均为同一结构（A15）；个体算子之间的摩擦 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 累积形成集体自由能景观，个体算子是该景观的局部梯度（A16，见 Core/SRT_Core_22_Equations.md §0-C）。
+- 幽灵算子在量子、神经、认知、统计等层面是否满足共同结构，是受 A15/P3-Scale 约束的逐对尺度检验任务，不是已由熵差证明的统一结论；个体算子之间的摩擦 $\Psi_f(\hat{G}_i, \hat{G}_j)$ 累积形成集体自由能景观，个体算子是该景观的局部梯度（A16，见 Core/SRT_Core_22_Equations.md §0-C）。
 
 ## 【理论边界/防误用声明】
 
@@ -262,31 +264,29 @@ $$\text{Innovation} = \text{Discovery}(L_0^{previously\_shadowed})$$
 3. 涉及临床、社会治理、伦理与部署决策时，必须结合风险评估与人类监督机制。
 
 
-## 补充公理 Ax-L0-Bootstrap：L₀ 自举完备性 (Bootstrap Self-Reference)
+## 补充公理 Ax-L0-Bootstrap：Primitive Actualisation Boundary（保留旧编号）
 
 （对应 `Core/SRT_Core_12a_Ontology_L0L1.md` Ax-L0-Bootstrap）
 
-**L₀→L₁ 的投影不是时序事件，而是结构约束**。幽灵算子 $\hat{G}_\theta$ 与其 L₀ 定义域共生定义，无时间前后。初次算子是 L₀ 势函数最陡下降路径的必然实化。
+**AM-A 裁决（2026-08-11）**：actualisation 的最小内核由 P0-01 作为 primitive 承载。本条保留旧编号，但不再以 fixed point、`argmin`、最陡下降或最低摩擦推导 first actualisation。
 
-L₀ 的势能梯度结构（A13/Ax-L0-03）满足自参照固定点条件：
+**推论 Ax-L0-Bootstrap-C1（无先在选择者）**：不存在需要先于选择而存在的“原始选择者”。$\hat G_\theta$ 是 primitive actualisation 的形式角色；selector、subject 与 stable operator-pattern 是后成结构。该结论来自 selection-first 的层级顺序，不来自“L₀ 内已有一个算子对象”。
 
-$$\hat{G}^* = \text{fixed point of}\quad \mathcal{F}: \hat{G} \mapsto \arg\min_{\hat{G}'} \Psi_f\!\left(\hat{G}',\, \nabla_{L_0}\Psi_{potential}\right)$$
+**推论 Ax-L0-Bootstrap-C2（时间无前序性）**：时间（A14 摩擦台账）是不可撤回选择累积的后果，而非 P0 actualisation 的前提。“第一次选择在时间上何时发生”是类别错误；这不等于 SRT 已提供一个非时间生成机制。
 
-**推论 Ax-L0-Bootstrap-C1**（自参照完备性）：不存在需要先于 $\hat{G}^*$ 存在的"原始选择者"。无穷后退通过固定点条件消解——固定点的存在性是 L₀ 内禀结构的直接后果。
-
-**推论 Ax-L0-Bootstrap-C2**（时间无前序性）：时间（A14 摩擦台账）是算子运作的副产品，而非算子产生的前提。"初次选择在时间上何时发生"是类别错误。
-
-**推论 Ax-L0-Bootstrap-C3**（d=0→d>0 相变）：意识的出现（$d: 0 \to d>0$）对应 $\hat{G}^*$ 固定点稳定化、$\kappa$ 穿越 $\kappa_{c1}$ 的相变，而非需要外部触发的事件。Boltzmann 分布（$d=0$，无选择结构）是该相变前的退化态。
+**约束边界**：L₀ 非平坦性、$\kappa_0$、$\Psi_f$、payability、fixed point 与 minimum 可以在具名 realization 中约束方向、准入、代价或稳定性。它们都不能单独把数学存在、相对权重或收敛趋势升级为一个确定事件已经发生。意识相变、主体形成与稳定化不由本条推出。
 
 ---
 
-## 补充公理 A15：幽灵算子禀赋统一性 (Ghost Operator Universality)
+## P3 桥 A15：幽灵算子跨尺度相容候选（保留旧编号）
 
 （对应 `Core/SRT_Core_21_Formal_Axioms.md` Ax-F-11）
 
-在任何尺度上，选择从 $L_0$ 到 $L_1$ 的过程都是同一个幽灵算子结构 $\hat{G}_\theta$ 的禀赋展开。设 $\Lambda_{n \to n+1}$ 为粗粒化映射，则：
+本条对应当前 `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B06/P3-B07`，不是补充公理。一般尺度接口为：
 
-$$\hat{G}^{(n+1)} = \Lambda_{n \to n+1} \circ \hat{G}^{(n)} \circ \Lambda_{n \to n+1}^{-1}$$
+$$\pi_\lambda\circ\hat G^{(n)}\approx\hat G^{(n+1)}\circ\pi_\lambda$$
+
+只有在两侧状态空间、尺度映射、保留观测量、比较范数、容差和失败例均已声明时，才可检验局部结构相容。旧严格共轭式只在 $\Lambda$ 是可逆表征变换时保留为特殊 P3 候选；普通多对一粗粒化不许可 $\Lambda^{-1}$。
 
 | 尺度 | 现象 | $\hat{G}_\theta$ 操作 |
 |:-----|:-----|:----------------------|
@@ -294,11 +294,11 @@ $$\hat{G}^{(n+1)} = \Lambda_{n \to n+1} \circ \hat{G}^{(n)} \circ \Lambda_{n \to
 | 神经 | 侧抑制 | 竞争性选择，抑制弱激活，维持稀疏 $L_2$ |
 | 认知 | 范畴化 | 连续 $L_0$ → 离散 $L_2$ 标签的划分投影 |
 | 统计 | 归一化 | 维持选择测度在流形上的一致性 |
-| 跨尺度 | 粗粒化 | $\hat{G}^{(n+1)} = \Lambda \circ \hat{G}^{(n)} \circ \Lambda^{-1}$ |
+| 跨尺度 | 具名尺度映射 | 检验 $\pi_\lambda\circ\hat G^{(n)}\approx\hat G^{(n+1)}\circ\pi_\lambda$ 是否在误差界内成立 |
 
-**推论 A15-C1**: 上述现象不是形式相似的独立过程，而是同一选择结构的物理实现形式。幽灵算子是现实的普适选择结构。
+**候选 A15-C1**：上述现象可被比较为同一选择—约束—可支付性语法的不同实现；是否具有超出结构类比的共同动力学，须逐尺度对给出判别证据。
 
-**推论 A15-C2 (对 A5 的升格)**: 尺度一致性定理（T-Scale: $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$）不仅是近似一致性命题，而是禀赋统一性的直接推论——同一算子在不同层级的显现必然满足该交换律。
+**边界 A15-C2**：近似交换不是禀赋统一性的必然推论，而是 P3-B07 必须通过的模型级检验。旧熵差与普遍最小作用式均不得用来跳过该检验。
 
 ---
 

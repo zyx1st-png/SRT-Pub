@@ -10,16 +10,16 @@ canonical: false
 dependency: [SRT-COLLECTIVE-TOWER-HARDENING-NOTES]
 ---
 
-# SRT Collective Tower Hardening Notes Split Index
+# SRT Collective Tower Hardening Notes Split Index Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Collective_Tower_Hardening_Notes.md`](../SRT_Collective_Tower_Hardening_Notes.md)
-- Source owner bytes: `68630`
-- Source owner SHA-256: `97ccf2b1ddd82c57cebc12c70dc3d6b2d076506745c98eeca8af96a2fbf92e73`
+- Source owner bytes: `67804`
+- Source owner SHA-256: `dd37d7c656e8967c6f4189cf0b4f3f8e39aca6e421055ef5e6539c241f0bb709`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Collective Tower Hardening Notes | 33121 | `73f1238cd27d` |
-| 01 | [`01_Part02.md`](01_Part02.md) | §4.11.3 T-TOWER-STAB-1 谱判据 | 33197 | `69fe07efbe9e` |
-| 02 | [`02_Part03.md`](02_Part03.md) | §4.14.6 T-LYAPUNOV-1 不证明的事项 | 2492 | `7fc7fb782fb0` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Collective Tower Hardening Notes | 32807 | `f2dd44f70a59` |
+| 01 | [`01_Part02.md`](01_Part02.md) | §4.11.2 闭环传递算子 | 32472 | `4c3d315c1428` |
+| 02 | [`02_Part03.md`](02_Part03.md) | §4.14.5 与 H4 / H10-H15 的最终统一 | 3942 | `858c09ec61f8` |

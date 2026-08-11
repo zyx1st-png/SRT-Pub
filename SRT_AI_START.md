@@ -82,14 +82,14 @@ For any non-simple SRT question, route through `_SRT_CONTEXT_ROUTER.md` and, whe
 | Symbol / term | Fast guard | Definition authority |
 |---|---|---|
 | `L_0` | Structured latent possibility, not nothingness and not physical vacuum by default. | `Core_Law/SRT_L0_Metaphysics.md`, `_SRT_SYMBOL_TABLE.md` |
-| `L_1` | Manifest selected slice / event / state, not merely material objects. | `_SRT_SYMBOL_TABLE.md`, Core ontology files |
+| `L_1` | Manifest selected actuality / event / state, not merely material objects. Under EX-A, occurrence does not by itself imply persistent anchoring or stable-ISP identity. | `_SRT_SYMBOL_TABLE.md`, Core ontology files |
 | `L_2` | Convergence-history / stable constraint domain; not identical to any one landscape, institution, memory, or scaffold. | `_SRT_SYMBOL_TABLE.md`, `Core/SRT_OPEN_TENSIONS.md` |
 | `Ĝ_θ` | Embodied/parameterized selection or anchoring operator; implementation analogues do not define it. | `Core/SRT_Core_21_Minimal_Axioms.md`, `_SRT_SYMBOL_TABLE.md` |
 | `d` | Scalar summary of stake-coupled concern / irreversible-risk sensitivity by default. Competence, capacity, preference, or distinguishability is not enough. | `_SRT_D_VALUE_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
 | `D_eff` | Geometric capacity proxy / upper-bound candidate, not canonical `d`. | `_SRT_D_VALUE_CANONICAL.md`, `Core/SRT_Core_21c_Bridge_Hypotheses.md` |
 | `Ψ_f` | Payability burden / ontological friction. Fisher geometry, metabolic cost, stress, or pain are conditional projections only. | `_SRT_PSI_F_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
 | `T_dir` | v0 operational proxy for readability / reorientation of the system's own selection direction; not reward, confidence, semantic valence, or coherence. | `_SRT_T_DIR_CANONICAL.md`, `_SRT_SYMBOL_TABLE.md` |
-| `ε_pg` | L0 minimum non-neutrality postulate; do not identify with consciousness. | `_SRT_SYMBOL_TABLE.md`, Core P0/P1 sources |
+| `ε_pg` | L0 minimum non-neutrality postulate; do not identify with consciousness or derive ISP anti-closure from it alone. | `_SRT_SYMBOL_TABLE.md`, Core P0 source; 21C B13 for conditional ISP-level bridge |
 | `ε_reg` | Implementation regularizer; only an analogy/echo of `ε_pg` unless separately argued. | `_SRT_SYMBOL_TABLE.md` |
 | `ε_s` | Stake-threshold bridge for direction-level admission; not stake itself. | `_SRT_SYMBOL_TABLE.md`, `_SRT_D_VALUE_CANONICAL.md` |
 | bare `σ` | Defaults to main-equation state field. Use `σ_sr` for self-reference ratio and `σ_j` for anchoring sub-targets. | `_SRT_SYMBOL_TABLE.md` |
@@ -143,9 +143,13 @@ Three fast negatives worth carrying without loading anything: a different output
 
 In SRT usage, freedom concerns preservation of real choice moments, not mere option count. Treat this as a pointer to the P1/P2 sources, not as a standalone definition here.
 
-### Origin of Selectability
+### Primitive Actualisation / Selectability Boundary
 
-`Core/SRT_OPEN_TENSIONS.md §7 P0-04` remains unresolved. When a file speaks of a selector, chooser, subject, agency, or system-position, do not treat that language as an answer to where selectability comes from; mark whether it is a derived process, stable pattern, or assumed domain interface.
+AM-A (author decision, 2026-08-11) fixes actualisation as the irreducible kernel already carried by P0-01. P0-04 is now a declared primitive boundary, not an internal gap closed by `fixed point`, `argmin`, steepest descent, `κ_0`, friction, payability, normalization, or writeback. `\hat G_\theta` is the kernel's formal role-carrier, not a prior entity or its cause. When a file speaks of a selector, chooser, subject, agency, or system-position, still mark whether it is a derived process, stable pattern, or assumed domain interface; none may be smuggled in before primitive selection.
+
+### Existence / Persistence Boundary
+
+EX-A (author decision, 2026-08-11) separates manifest actuality, anchoring persistence, and stable-ISP identity. P0-01 admits a determinate `L_1` event as actual; P0-02 asks whether it remains anchored and constrains later transitions; P1-T06 / ST-A asks whether the same perspective- and history-bearing process is recurrently reconstituted and continued-selectable. The legacy `E = 1 - H(L_1)/H(L_0)` expression is a P2/P3 historical heuristic only: no global `H(L_0^{abs})`, normalization, or quantitative existence index is canonical.
 
 ### d-value explanatory-coordinate guard
 
@@ -169,13 +173,13 @@ For payability and `\Psi_f` usage, use `_SRT_PSI_F_CANONICAL.md`.
 
 ### `ε`
 
-Do not identify `ε_pg` with consciousness. Stable ISP anti-closure asymmetry is a scoped P1 theorem; see `Core/SRT_Core_21b_Constitutive_Theorems.md`.
+Do not identify `ε_pg` with consciousness. Under ST-A, the P1 minimum for a stable ISP is continued selectability through recurrent historical reconstitution. ISP-level anti-closure and generative reselectability are conditional P2/P3 candidates, not a P1 theorem; see `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06 / former P1-T07` and `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`.
 
 ### Open-Tension Guard
 
 Before presenting any of the following as closed, check `Core/SRT_OPEN_TENSIONS.md`:
 
-- origin of selectability / P0-04;
+- domain realization and selector individuation downstream of the AM-A / P0-04 primitive boundary;
 - `D_eff -> d_stakes` gate;
 - exact projection status of `Ψ_f`;
 - minimal formalization of `T_dir`;

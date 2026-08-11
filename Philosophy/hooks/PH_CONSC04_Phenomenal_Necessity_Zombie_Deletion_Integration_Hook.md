@@ -3,7 +3,7 @@ id: HOOK-PH-CONSC04-PHENOMENAL-NECESSITY-ZOMBIE-DELETION
 type: integration_hook
 status: active
 record_stage: pending
-integration_status: pending
+integration_status: partial
 canonical: false
 layer: operations
 epistemic_layer: bridge
@@ -25,11 +25,11 @@ landing_ledger:
     state: pending
     blocked_by: "Future subjecthood synthesis should preserve subject-position admission != phenomenal-necessity verdict and keep phenomenality separately assessed."
   - target: "Core/SRT_OPEN_TENSIONS.md"
-    state: pending
-    blocked_by: "Future open-tension update may register the Z6 SRT-zombie pressure explicitly; no canonical qualia theorem is licensed by this hook."
+    state: landed
+    anchor: "### Status Update (2026-08-11: phenomenality and adjacent-case guards)"
   - target: "Core_Law/SRT_Individuation.md"
-    state: pending
-    blocked_by: "Future individuation work should preserve subject-position entry before reflective self-consciousness while clarifying that HP-A dynamics do not by themselves close HP-B."
+    state: landed
+    anchor: "8. **主体位进入就证明了现象性**"
   - target: "AI/AI_POSITIONING_NOTE.md"
     state: pending
     blocked_by: "Future AI synthesis may use Z4/Z6 as complementary report/self-model versus non-transferable-bearing controls; no consciousness verdict follows automatically."

@@ -57,7 +57,9 @@ $$[\hat{G}_θ(x)]_i = \frac{x_i^n}{ε + \sum_j W_{ij} · x_j^n}$$
 
 其中 $θ = \{n, ε, W\}$，$n > 1$，$ε > 0$，$W ∈ \mathbb{R}_+^{N×N}$。
 
-> **神经科学起源注**：D3 为皮层除法归一化（Divisive Normalization）的标准形式（Carandini & Heeger 2012），已在初级视觉皮层、MT区、嗅觉、听觉等多模态中验证为皮层计算的"规范则"。SRT 将其提升为 $\hat{G}_θ$ 的**最小完备原型**：满足非线性放大、竞争归一化、参数具身三大要求的最简函数类。此处 $W \in \mathbb{R}_+^{N \times N}$ 为**纯竞争简化**（全非负=侧抑制）；若需兼容兴奋性连接，可扩展为 $W = W_{inh} - W_{exc}$，但当前版本仅作原型使用。
+> **神经科学起源注**：D3 取自皮层除法归一化（Divisive Normalization）的常见模型形式（Carandini & Heeger 2012），在多个感觉系统中用作响应增益与竞争压缩模型。SRT 只把它登记为 embodied $\hat{G}_θ$ 的**实现级候选原型之一**；它不穷尽 Ghost Operator，也不由能量／带宽约束唯一推出。此处 $W \in \mathbb{R}_+^{N \times N}$ 为**纯竞争简化**（全非负=侧抑制）；若需兼容兴奋性连接，可扩展为 $W = W_{inh} - W_{exc}$。
+
+> **P3-Scale-NB1 行为读出门**：D3 输出相对响应，不输出离散行为。通向认知／行为选择须另声明候选身份映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与干预跟踪；见 `Core/SRT_Core_14_Dynamics_Scaling.md §2.2.0`。
 
 **参数–SRT 量桥接**：
 
@@ -331,6 +333,8 @@ $$J = α(D\hat{G}_θ(x) - I) - λH_F(x)$$
 
 若 $\|αD\hat{G}_θ(x)\| < α$ 且 $H_F(x) \succ 0$，则 $J$ 的特征值实部为负。
 
+**ST-A stability boundary (2026-08-11)**: M1, M2, and the Jacobian criterion below establish only local dynamical stability in the declared toy model. A fixed point, negative Jacobian eigenvalues, metastability, or a large barrier ratio does not by itself establish stable-ISP identity, continued selectability, generative reselectability, or generative health. ST-A allows structural identity to persist by recurrent historical reconstitution rather than microstate identity or fixed-point convergence.
+
 ### §5.5 定理 T-DMP-2 — 本体论恢复力
 
 **[R — Lyapunov稳定性理论（1892）追溯；[H] — 将L₂社会共识结构的"强壮性"映射为Jacobian稳定性判据为SRT新增应用]**
@@ -351,12 +355,14 @@ $$\Delta L_1(t) \xrightarrow{t \to \infty} 0 \quad \text{当} \quad \text{Re}(\l
 
 ### §5.6 势垒稳定性 (Barrier Stability of L₂)
 
-**定义 Def-Barrier-1**: $L_2$ 稳定性不是静态的永久性，而是受势垒保护的亚稳态：
+**定义 Def-Barrier-1**: 在本动力学投影中，$L_2$ 稳定性可建模为受势垒保护的亚稳态：
 $$R(L_2) = \frac{\Delta B}{\Psi_f}$$
 其中 $\Delta B$ 是从当前收敛结构到任何替代结构的最小势垒。
 * **推论 (C-Barrier-1)**: 高 $\Psi_f$ 系统（文明、制度、强自我）更坚固但也更脆——它们抵抗扰动，但在势垒被突破时会发生灾难性的崩溃。
 * **推论 (C-Barrier-2)**: 势垒降低会触发“结构突变 / 范式转移”——$L_2$ 景观发生拓扑重排。
 * **推论 (C-Barrier-3)**: 这产生了直接可证伪的预测：(1) 增加维护成本 $\Psi_f$ 会使 $L_2$ 更坚固，但在失败时更具灾难性；(2) 增加选择频率 $\nu_{\hat{G}}$ 会使 $L_1$ 更“冻结/确定”，但减少了对新结构的探索（探索-锚定权衡）；(3) 扩大 $d$ 会提高可实现的宏观秩序复杂度的上限，但同时会增加错误敏感性（痛苦/脆弱性上升）。
+
+**Constitutive guard**: Def-Barrier-1 and its corollaries are implementation hypotheses/proxies. They must not replace the P1 stable-ISP criterion or the ST-A P2/P3 generative-reselectability audit in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`.
 
 ---
 

@@ -31,7 +31,7 @@ machine_summary: >
 > **用途**：用于快速把握 SRT 如何把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一到选择动力学框架中。  
 > **关系**：不替代原文；原文保留完整推导、传统对比、制度接口与病理学展开。  
 > **回链头部**：本文是 Philosophy domain exposition / bridge support，不新增 P0 primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md` 或 `Philosophy/SRT_Philosophy_Ethics.md`。本文命题主要为 P2/P3，少量制度判准与阈值为 P4。  
-> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。政治 `L_2` 的稳定、国家秩序、制度执行力或效率不能直接推出合法性。合法性必须经过 reselection capacity、friction-export、future-selectability、consequence-return、exit/correction 等检验。  
+> **Guardrail pointer (ST-A corrected 2026-08-11)**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。政治 `L_2` 的稳定、国家秩序、制度执行力或效率不能直接推出合法性。Reselection capacity、friction-export、future-selectability、consequence-return、exit/correction 是 P2/P3 规范审计条件，不是由结构稳定推出的 P1 必要充分判据；ST-A 本身不建立合法性结论。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P5` 与上述回链头部一致；本文件是 compact exposition，不是 core definition source。
 
 ## 1. 核心问题

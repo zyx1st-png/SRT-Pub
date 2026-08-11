@@ -61,6 +61,8 @@ $$L_0^{rel}(t+1) = f(L_1(t), \hat{G}_θ)$$
 
 $$L_0^{rel} \subseteq L_0^{abs}|_{physical\ constraints}$$
 
+> **A13 / PC-A 边界（2026-08-11）**：$L_0^{abs}$ 的不可穷尽性不等于其内容、基数或信息量在时间中守恒；$L_0^{rel}$ 明确受 $L_1(t)$、位置与算子条件约束，并可随历史改变。任何 $H(L_0)$ 形式化都必须声明它只作用于哪个相对投影及其测度，不能直接写成 $L_0^{abs}$ 的全局恒等式。
+
 ---
 
 ### §1.2 L₁ — 显现域 (Manifest Domain)
@@ -68,6 +70,8 @@ $$L_0^{rel} \subseteq L_0^{abs}|_{physical\ constraints}$$
 **定义 O2**: 算子选择的当前切片——当下的现实，动态维持的配置。
 
 $$L_1(t) = \hat{G}_θ[σ(t)]$$
+
+> **AM-A 形式角色边界（2026-08-11）**：O2 记录 primitive actualisation 的输入—输出角色，不把 $\hat G_\theta$ 当成先在实体或 actualisation 自身的原因。后续迟滞、门控、流形与拓扑公式是领域 realization／稳定化表达，不构成 P0 的 universal derivation。
 
 **定义 O2a (迟滞修正)**:
 
@@ -216,9 +220,11 @@ $$L_0 = \mathcal{M}_{differential} = (M, \nabla, \mathcal{S})$$
 | $\nabla$ | 联络 | 势能梯度结构 |
 | $\mathcal{S}$ | 奇异点集合 | 吸引子、鞍点、分岔点 |
 
-**定理 O-T1 (现实化即积分)**:
+**领域实现候选 O-T1（现实化的路径积分表述；保留旧编号）**:
 
 $$L_1 = \int_{path(θ)} Structure(L_0) = \oint_γ ω_{L_0}$$
+
+本式只在已给定可积结构、路径 $\gamma$、联络与测度的相对投影中成立。它可以建模某类 realization 的累积结构，不定义 primitive actualisation，不证明数学积分必然成为事件，也不是跨领域唯一机制。
 
 ---
 
@@ -274,13 +280,13 @@ $$\frac{\dim(L_1)}{\dim(L_0)} = f(θ_{cognitive})$$
 
 ---
 
-## §5 守恒律与对称性 (Conservation & Symmetry)
+## §5 不可穷尽与模态通达 (Non-Exhaustion & Modal Access)
 
-### §5.1 L₀ 守恒律
+### §5.1 $L_0^{abs}$ 不可穷尽边界
 
-**公理 A13**: 幽灵算子的操作不改变 L₀ 的基数，只改变其照明状态。
+**公理 A13（保留旧编号）**：任何有限 $L_1/L_2$ 显现或形式投影都不能穷尽 $L_0^{abs}$；选择可以历史性地改变 $L_0^{rel}$ 的可达结构。
 
-$$L_0(t) = L_0(t + Δt) = \text{Constant}$$
+本条不把 $L_0^{abs}$ 处理为时间中的内容／基数不变量，也不把创新定义为对预成完成形式的发现。AM-A 下，受约束 actualisation 的最小 kernel 由 P0-01 作为 primitive 承载；仍开放的是各领域如何实例化它，而不是等待一个 universal fixed-point 公式把 primitive 消除。
 
 ### §5.2 模态通达关系
 
@@ -435,12 +441,12 @@ L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
 \]
 * **Implication**：SRT 允许“趋近完满”，但拒绝“运行中零摩擦且仍保持个体显现”的自相矛盾写法。
 
-### 定义 O16：Non-Redundant Existence Criterion（非冗余存在判据，新增）
+### 定义 O16：Non-Redundant Persistence Criterion（非冗余持续判据；EX-A 更新）
 对任意尺度对象 \(X\) 定义：
 \[
-\text{Exist}(X\mid\theta)\iff \Psi_f^{maint}(X,\theta)>0
+\text{Persist}(X\mid\theta)\iff \Psi_f^{maint}(X,\theta)>0
 \]
-即对象是否“存在”不由是否可还原决定，而由维持其稳定显现是否需要非零摩擦支付决定。
+即对象是否需要非零摩擦才能维持其稳定显现，不由它是否可还原决定。EX-A 下，这只判别持续对象性，不判别一个确定事件是否已经实际发生。
 
 ### 定理 O-T9：Scale-Orthogonal Coexistence（尺度正交共存定理，新增）
 \[
@@ -574,16 +580,16 @@ $$\mathcal{C} \propto \frac{|\mathcal{P}(y_t)|}{P(\sigma \mid L_2)}$$
 \]
 即“看见同一对象”可由摩擦最小化收敛解释，无需预设绝对指称实体。
 
-### 定理 O-T13：Hierarchical Existence Theorem（层级存在定理，新增）
+### 定理 O-T13：Hierarchical Persistence Candidate（层级持续候选；EX-A 更新）
 对任意层级 \(\lambda\) 的模式 \(X_\lambda\)，若存在吸引盆：
 \[
 \exists\,\mathcal{A}_\lambda:\ \nabla \Psi_f(X_\lambda)=0,\quad \nabla^2\Psi_f(X_\lambda)\succ 0
 \]
-则该层级在对应分辨率下具合法存在性：
+则该层级在对应分辨率下具持续对象性候选：
 \[
-\text{Exist}(X_\lambda\mid\rho_\lambda,\theta)=1
+\text{Persist}(X_\lambda\mid\rho_\lambda,\theta)=1
 \]
-因此宏观对象与微观组成在不同 \(\rho\) 下可并行真实，不构成互斥。
+因此宏观对象与微观组成在不同 \(\rho\) 下可并行持续，不构成互斥。吸引盆只支持该层级的维持，不能反向定义第一次显现实在性。
 
 ## 【理论边界/防误用声明】
 - 不采纳“形式化失败=反科学神秘主义”推论：不完备性是层级边界，不是否定建模价值。  
@@ -592,7 +598,7 @@ $$\mathcal{C} \propto \frac{|\mathcal{P}(y_t)|}{P(\sigma \mid L_2)}$$
 - 不采纳“\(\Omega\)=宇宙内超级实体/人格化造物主”的推论：\(\Omega\) 在 SRT 中是操作逻辑，不是对象实体。  
 - 不采纳“\(L_0^{abs}\)-\(\Omega\) 极限同一假设已被证明”的推论：其当前为研究态桥接假设。  
 - 不采纳“至福=现实终止的规范性处方”推论：O-T8 仅给出具身动力学边界，不导出伦理命令。  
-- 不采纳“存在仅当可被某科学语言变量绑定”之扁平推论（蒯因式强化版本）：在 SRT 中，存在首先是 \(L_0\to L_1\) 的锚定支付过程，语言变量是后验 \(L_2\) 编码。  
+- 不采纳“存在仅当可被某科学语言变量绑定”之扁平推论（蒯因式强化版本）：在 SRT 中，显现实在性首先由 \(L_0\to L_1\) primitive actualisation 准入；锚定支付处理其持续，语言变量是后验 \(L_2\) 编码。
 - 不采纳“可还原=可消除”的推论：还原关系不取消在该尺度上的摩擦支付与显现合法性。  
 - 本文件承认描述层与体验层的不可约差异，但不允许以此逃避可证伪义务。
 

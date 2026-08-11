@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: 0714d12c
-source_branch: claude/srt-gate0-canonical-landing
-source_dirty: true
-inputs_digest: 93d22120d45f2b90
+source_commit: fc5b9e96
+source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
+source_dirty: false
+inputs_digest: 7dc27dba4170a938
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 93d22120d45f2b90
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `0714d12c` |
-| 来源分支 | `claude/srt-gate0-canonical-landing` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `fc5b9e96` |
+| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 5 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -46,7 +46,7 @@ inputs_digest: 93d22120d45f2b90
 | 1 | `Neuroscience/SRT_Neuroscience_Claim_Status.md` | 2026-07-16 |
 | 2 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | 2026-05-19 |
 | 3 | `Neuroscience/README.md` | 2026-07-20 |
-| 4 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-05-19 |
+| 4 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 5 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 
 ## §0.2 状态护栏
@@ -62,38 +62,34 @@ inputs_digest: 93d22120d45f2b90
 >   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
 > - **USAGE POLICY** — 由标注的治理文件授权的使用规则。
 
-### G1 — P1-T07 证明未闭合（严重度：高）
+### G1 — former P1-T07 已降阶；条件证明负担仍开放（严重度：高）
 
-**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）
+**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 former P1-T07 absorption remainder，及 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 的 conditional anti-closure candidate
 
 #### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-**审计自述，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
+**ST-A canonical 裁决，来自 `Core/SRT_Core_21b_Constitutive_Theorems.md`**：
 
-> **Status**: non-canonical Operations record. **Proof audit only.** It modifies no theorem, no axiom, no definition, no equation. It does not resolve the proof; it maps exactly where the current proof does and does not close, and hands options to a later controlled amendment PR. Prior Claude/ChatGPT statements about P1-T07 were treated as hypotheses; the only source of truth is `origin/main @ 14c0d7f8`. Archive/book files were read for context but are **not** used to establish anything about the canonical theorem.
+> **Decision record (ST-A, 2026-08-11)**: The former unconditional statement—"every stable ISP necessarily contains an anti-closure `ε` bias"—is no longer a P1 theorem. Its proof inferred cumulative absorption from a per-step nonzero closure probability without independently defining a neutral kernel, fixing the stability semantics, or proving that the neutral kernel reaches the absorbing state. `L_0` irreversibility alone does not supply those missing premises.
 
 **审计 1.3 修订的语义分层条款，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
 
 > (a) `τ<∞` verdicts stratified by semantics — on a realized terminating history only **S1 pathwise** stability fails; **S2** fails only if `P(τ<∞)>0`, **S3** only if `P(τ=∞)=0`; no unconditional *process-level* stable-ISP verdict before the S1/S2/S3 choice (fixed in §0 Q5, §8, Proof Gate)
 
-**审计 §0 第 5 问，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
-
-> 5. **What can P1-T07 prove at most?** Two things must be separated, and the first is **semantics-relative**, not process-unconditional. **(i) True and derivable, per level**: on any realized history with `τ<∞`, that history enters the absorbing `∅` and no further selection is possible — so **S1 (pathwise) stability fails on that history**. At the *process* level, **S2** stability fails only when `P(τ<∞)>0`, and **S3** stability fails only when `P(τ=∞)=0`. Before S1/S2/S3 is chosen, **no unconditional process-level stable-ISP verdict may be issued** from `τ<∞`. **(ii) NOT derivable as written**: *neutral `P` terminates a.s., therefore neutral `P` is not stable* — because a.s. termination of a neutral process is exactly what Step 3 fails to establish. "Positive termination probability" is also **not** unconditional (it needs positive hazard at a surviving step). (§4, §8)
-
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
-该定理 Proof Sketch 第 3 步（*neutral `P` ... cumulative probability tends toward 1*）以肯定句写成，正文未标注任何保留。上述审计判定恰恰是这一步不闭合：语料并未*确立*每步正 hazard，而且即使每步 hazard 为正也不蕴含 almost-sure 终止；`ε-neutral` 在语料中从未被形式定义；P1-T06 的 stable ISP 定义是非概率的，S1/S2/S3 随机语义尚未选定。
+ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只保留 realized history 到达吸收态后不能自行继续的 remainder，以及 P1-T06 continued selectability。neutral-kernel anti-closure 留在 P2/P3，仍须独立定义 neutral kernel、选择 S1/S2/S3 稳定语义，并声明环境、外部重置规则、终止条件与时间窗，再证明吸收或比较性 closure risk。
 
-另需注意：`Core/SRT_OPEN_TENSIONS.md` 目前**未登记**本缺口。
+该降阶与剩余证明负担已登记在 `Core/SRT_OPEN_TENSIONS.md`。
 
 #### USAGE POLICY — 使用规则
 
 *授权依据：`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8*
 
-- 不得把 P1-T07 当作已证 P1 定理引用。
+- 不得把 former P1-T07 当作已证 P1 定理引用；P1 引用仅限 absorption remainder。
+- Stable ISP 的 P1 最低条件是 continued selectability；generative reselectability 与 ISP-level anti-closure 按 P2/P3 conditional candidate 引用。
 - 关于 `τ<∞` 只能作**语义分层**的陈述：若某条 realized history 满足 `τ<∞`，可无条件断言的仅是**该历史上的 S1 / pathwise stability 失败**；process-level 的 S2 需 `P(τ<∞)>0`，S3 需 `P(τ=∞)=0`。**在 S1/S2/S3 语义未选定之前，不得据此推出无条件的 process-level 「not a stable ISP」。**
-- 不要假装 `ε-neutral` 有形式定义。
-- 「查过 `OPEN_TENSIONS` 没找到」**不**足以证明本命题已封口——该缺口尚未登记在那里。
+- 不要假装 `ε-neutral` 已有形式定义，也不要从 `ε_pg`、irreversibility、fixed point、metastability 或 `σ<1` 单独推出 anti-closure。
 
 
 ### G2 — `d`/`q`/`o` 三轴处于禁运状态（严重度：中）
@@ -304,7 +300,7 @@ When answering about SRT:
 
 ### 未收录支持文件
 
-**First Sources 点名、文件存在、但本包未收（15 个）**——回答涉及它们时本包不足以裁定：
+**First Sources 点名、文件存在、但本包未收（14 个）**——回答涉及它们时本包不足以裁定：
 
 - `CANONICAL_REGISTRY.md`
 - `Governance/SRT_CLAIM_LADDER.md`
@@ -320,7 +316,6 @@ When answering about SRT:
 - `_SRT_SYMBOL_TABLE.md`
 - `Core/SRT_Core_21_Formal_Axioms.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
-- `Core/SRT_OPEN_TENSIONS.md`
 
 **⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
@@ -328,7 +323,7 @@ When answering about SRT:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（90 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（89 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -371,7 +366,6 @@ When answering about SRT:
 - `Neuroscience/SRT_Neural_Mechanisms.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
-- `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`
 - `Philosophy/01_PH_SS_Objection_Crosswalk.md`
 - `Philosophy/02_PH_SS_Hardening_Execution_Plan.md`
@@ -818,7 +812,7 @@ The N1-N9 draft should be treated as a staging document, while the two compact c
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-05-19 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -903,15 +897,15 @@ SRT 的压缩回答是：
 
 ---
 
-## 3. 为什么归一化是本体必然
+## 3. 归一化的 P3 机制地位
 
 ### 3.1 Canonical Normalization
 \[
 R_i = \frac{L_i^n}{\sigma^n + \sum_j w_{ij}L_j^n}
 \]
 
-SRT 在这里的强主张是：
-> **除法归一化不是电路细节，而是在代谢受限条件下执行选择的必然形式。**
+SRT 在这里保留的主张是：
+> **除法归一化是具名代谢／带宽约束下的神经竞争机制候选，不是所有选择系统的必然形式。**
 
 ### 3.2 Energy–Information Extremum
 \[
@@ -920,7 +914,8 @@ SRT 在这里的强主张是：
 
 压缩结论：
 - 神经系统同时受信息收益与能量成本约束
-- 归一化是两者的交点
+- 归一化可作为两者权衡下的候选解；目标泛函若未指定成本函数、约束与动态，不能推出唯一解
+- 相对神经响应通向行为选择还需冻结读出、阈值／累积或采样规则、执行门与 held-out 检验（P3-Scale-NB1）
 
 ---
 
@@ -1172,7 +1167,7 @@ d(x)=w_bB(x)+w_aA(x)+w_rR(x)+w_sS(x)+w_mM(x)+w_fF(x)
 1. **神经系统不是单纯信息处理器，而是具身选择算子的实现。**
 2. **表征不是选择之前的原始事实，而是选择稳定后的产物。**
 3. **神经显现来自流形轨迹经竞争、增益、门控、稳定化后投影进可锚定区域。**
-4. **除法归一化是受限选择的本体必然，不只是经验电路技巧。**
+4. **除法归一化是受限神经竞争的 P3 机制候选；它不单独产生行为选择，也不是本体必然。**
 5. **学习、剪枝与工作记忆都可被统一写成多时标选择动力学。**
 6. **`\Psi_f` 是候选进入 `L_1` 的多维锚定成本；`d-value` 是候选对系统的关切后果。**
 7. **病理最深层上是现实锚定动力学的扭曲，而不是表面症状清单。**

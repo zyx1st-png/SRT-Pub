@@ -17,11 +17,13 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成”已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 >
 > **Language commitment (governance / bridge, 2026-04-22)**：正文默认使用 collapse-family / anchoring language。MWI / Everett 翻译只能作为 note、appendix 或 explicit compatibility paragraph 出现。凡依赖 collapse 的段落，后续细化时应标 `[collapse-dependent]`；禁止在同一论证段中无标注混用 collapse 与 MWI 两套语言。
+>
+> **PHR-A realisation guard（2026-08-11）**：物理层采用 interpretation-plural event audit。`\hat G_\theta` 是 AM-A primitive actualisation 的形式角色载体，不是造成结果发生的先在物理实体。共同审计核是：非等价候选、outcome-indexed physical record、可干预路径效力与未来可达性／返回成本改变。退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项都不充分。
 
 > **物理学家 3 分钟入口**
 > 如果你是量子基础、量子引力或理论物理领域的读者，直接跳到 §VI（领域压力与接口边界）。
 >
-> 本文件的核心移动：把波函数坍缩重读为有位置的选择算子 $\hat{G}_\theta$ 的作用，而不是随机过程——这是一个量子基础层面的候选再诠释，不是对已有量子力学数学的修改。
+> 本文件的核心移动：在 collapse-family 中，把结果锚定翻译为 $\hat{G}_\theta$ 所承载的选择角色；在 Everett／关系性与 operational 口径中，分别翻译为 branch／position-relative fact formation 与 instrument outcome registration。这是候选桥接，不是对量子数学的修改，也不是某一诠释已经胜出。
 >
 > **你最应该检验的两个节点**：
 > - **Ax-P1**（测量即选择）：在多世界诠释下，”选择”是否仍有意义？→ DP-PHYS-1
@@ -80,12 +82,14 @@ dependency: [SRT-L0-METAPHYSICS, Core_Law/SRT_Reference_Axioms]
 ## I. Operator Mapping (算子映射)
 
 ### Def-Phys-1 [D1.1.1]: The Quantum Selection Operator (量子选择算子)
-The Ghost Operator $\hat{G}_\theta$ in the physical domain is the ontologized generalized measurement operator (POVM).
-$$ \hat{G}_{phys} \equiv \text{POVM}^{onto} : \mathcal{H} \to \mathcal{P}(\mathcal{H}) $$
+In this bridge, the physical role of $\hat{G}_\theta$ may be represented through a quantum instrument or generalized measurement operator. This is a role mapping, not an ontological identity and not a claim that the POVM causes primitive actualisation.
+$$ \hat{G}_{phys}\ \text{is represented through an instrument on }\mathcal{H} $$
 
 **Instrument 形式（密度矩阵）**：
 $$ p_k = \text{Tr}(M_k \rho M_k^\dagger), \quad \rho_k = \frac{M_k \rho M_k^\dagger}{p_k} $$
 $$ \hat{G}_\theta(\rho) = \rho_k \quad \text{with } \sum_k M_k^\dagger M_k = I $$
+
+Here $p_k$ and $\rho_k$ define an outcome probability and a conditional state. They do not by themselves establish that outcome $k$ physically occurred. PHR-A additionally requires an outcome-indexed record with downstream path and history effects at a predeclared boundary.
 
 #### Lemma P-Inst (O-T1 取值形式) [L1.1.1]
 存在 $L_0$ 的测度区间 $R_k$，使得
@@ -123,13 +127,17 @@ The embodiment parameter $\theta$ decomposes into:
 ## III. Core Physical Axioms (核心物理公理)
 
 ### Ax-P1 [A1.3.1]: Measurement as Selection (测量即选择)
-[collapse-dependent]
-In collapse-family SRT language, wavefunction collapse is modeled not as an unconstrained stochastic primitive but as an information-theoretic selection executed by $\hat{G}_\theta$ on $L_0$.
+[PHR-A / interpretation-indexed]
+
+[collapse-dependent] In collapse-family SRT language, wavefunction collapse may be represented as an exclusive outcome-anchoring implementation of the AM-A kernel:
 $$ \text{Collapse} \equiv \hat{G}_\theta : |\Psi\rangle_{L_0} \to |\pi_k\rangle_{L_1} $$
-*   **Implication**: Within SRT, the "measurement problem" receives a candidate reinterpretation: measurement is read as an anchoring act that turns potentiality into actuality.
-*   **Stability Clause (M1/M2)**: 合法 $L_1$ 需满足固定点与稳定性：
+*   **Role boundary**: $\hat{G}_\theta$ carries the formal role of the transition; it is not a prior agent or a physical cause that explains why $k$ occurred.
+*   **Common P3/P4 audit**: freeze the model, event and boundary; identify non-equivalent candidates; require an outcome-indexed physical record; demonstrate intervention-sensitive path efficacy and a change in future accessibility, transition probability, threshold or return cost.
+*   **Stability Clause (M1/M2)**: fixed-point stability can describe downstream persistence or readout robustness:
     $$\Pi_\Delta\!\left(\alpha(\hat{G}_\theta(x^*)-x^*)-\lambda\nabla F(x^*)\right)=0,\quad \text{Re}(\lambda_J)<0$$
-*   **Everett / MWI translation note**: In no-collapse frameworks, this paragraph can only be translated as an observer-relative branch update or anchoring-readout process, not as a global physical collapse event.
+    It is not a necessary definition of the first event and does not cause actualisation.
+*   **Everett / MWI translation**: read the event as branch-relative record and fact formation, not global physical collapse or deletion of other branches.
+*   **Operational / instrument translation**: claim outcome registration, conditional state and downstream efficacy only; do not infer ontic exclusivity from formal conditioning.
 
 ### Ax-P2 [A1.3.2]: It from Bit from Select (比特源于选择 — Wheeler-SRT公理)
 Physical entities (It) emerge from the cumulative binary selections (Bit) of $\hat{G}$.
@@ -262,7 +270,7 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 
 | 主张 | 有效条件 | 退化/失效条件 |
 |:----|:--------|:------------|
-| Ax-P1：测量即选择 | 哥本哈根诠释及其变体；关系量子力学（RQM）；QBism 框架 | 多世界诠释（Everett）：无坍缩，无"选择"，所有分支共存。在 MWI 下 $\hat{G}_\theta$ 需要重新定位为分支内的观察者-相对过程，而不是全局本体论判决 |
+| Ax-P1：测量即选择 | 共同审计核适用于已声明模型、边界与解释的 P3/P4 realization candidate；collapse-family 可作排他锚定读法 | Everett 只能作 branch-relative fact formation，operational 只能作 instrument registration；任一路线都不得反向定义 P0 或把单项代理写成充分条件 |
 | Ax-P2：比特源于选择（Wheeler 修正） | 若 Wheeler 意图中确实缺乏算子概念 | Wheeler 后期的"参与性观察者"框架已接近 $\hat{G}_\theta$ 的角色；"修正"可能过于强硬——更准确的说法是"补充形式化"而非纠错 |
 | Ax-P3：全息对偶（$d \propto S_{entanglement}$） | 全息原理本身（Bekenstein-Hawking）的有效范围内 | 全息对偶的 $d \propto S_{entangle}$ 是候选类比，不是推导。边界纠缠面积对应 d-value 需要独立论证 |
 | H-Phys-2：时间离散化（普朗克尺度） | 若 QG 发展出离散时间的完整形式化 | 2009 年 FERMI/LAT 对 GRB 090510 的观测将洛伦兹不变性破坏限制到普朗克尺度以下（Abdo et al., *Nature*, 2009）。H-Phys-2 当前是桥接层的候选读法，不是已有经验支持的定理 |
@@ -277,10 +285,10 @@ J_{macro}=\Pi_{\theta_{instrument}}\big(\nabla p(x\mid \Pi_{class})\big)\neq 0
 
 **对 SRT 的直接压力**：Ax-P1 把坍缩写成 $\hat{G}_\theta: |\Psi\rangle_{L_0} \to |\pi_k\rangle_{L_1}$，这在 MWI 下没有发生的事件可以对应。如果物理学的最终正确诠释是 MWI，SRT 的 L₀→L₁ 选择机制就不是在描述物理世界中真实发生的事，而只是某个分支内的主观印象。
 
-**当前 SRT 的诚实回答**：
+**PHR-A 后的当前回答**：
 - SRT 的位置约束（第三命题）本身与 MWI 有一种结构相容性：每个分支内的观察者都处于有限位置，$\hat{G}_\theta$ 可被重读为"从这个位置的分支内看到的选择过程"，而不是全局本体论判决
 - 但这个重读会改变 L₁ 的性质：它不再是"世界唯一的当前截面"，而是"这个位置-分支对所显现的截面"
-- 当前 SRT 尚未正式处理 MWI 兼容性。这是一个真实的开放接口，不是可以被桥接注记绕过的问题
+- PHR-A 已在 bridge 层正式接受这种 interpretation-indexed translation，但没有裁决 MWI、collapse-family 或其他诠释谁在物理上正确；经验区分仍是开放接口
 
 ---
 
@@ -367,15 +375,15 @@ Modern physics faces a constellation of interrelated foundational problems:
 
 **SRT's Contribution**: By recognizing that selection is ontologically primitive, physics regains conceptual coherence without abandoning mathematical rigor.
 
-### §1.2 The Operator as Ontological Bridge
+### §1.2 The Operator as Formal Role-Carrier
 
-The Ghost Operator $\hat{G}_\theta$ is not merely an abstract formalism—it is the **bridge between potentiality and actuality**. In collapse-family physical language:
+The Ghost Operator $\hat{G}_\theta$ carries the formal role of the AM-A transition. It does not name a prior physical entity that causes primitive actualisation. In collapse-family bridge language:
 
-- **Before $\hat{G}$ acts**: The system exists as a superposition in $L_0$ (Hilbert space)
-- **During $\hat{G}$ operation**: Selection occurs based on $\theta$ parameters
-- **After $\hat{G}$ acts**: A specific $L_1$ state (eigenvalue) is anchored
+- **Before outcome registration**: the formal state carries multiple outcome amplitudes or candidates under the declared model
+- **At the $\hat{G}$ role interface**: basis, boundary, interaction and record channel specify how an outcome can be registered
+- **After event registration**: an outcome-indexed record may acquire downstream path and history effects
 
-This is a collapse-family bridge reading of "measurement," not a settled physical ontology. In Everett / MWI translation it can only be read as branch-relative anchoring or readout, not as a global collapse event.
+This is a collapse-family implementation candidate, not settled physical ontology. In Everett / MWI it becomes branch-relative record and fact formation; in an operational instrument reading it states only outcome registration and conditional update. Across all three, an event candidate requires outcome-indexed record plus downstream path and history effects; the formal arrow alone is insufficient.
 
 ### §1.3 The Embodiment Parameter $\theta$ in Physical Systems
 
@@ -387,7 +395,7 @@ The parameter $\theta$ captures the **perspectival nature of observation**:
 | $\theta_{boundary}$ | Where to place the detector | Defines system-environment partition |
 | $\theta_{H_{int}}$ | Coupling strength to apparatus | Determines measurement precision |
 
-**Key Insight**: There is no "view from nowhere" in physics. Every measurement is executed by a specific $\hat{G}_\theta$ with finite resources and particular parameters. This is not a limitation—it is the fundamental structure of reality.
+**Key Insight**: There is no operational "view from nowhere" in physics. Every measurement description fixes a basis, boundary, interaction and record channel. PHR-A treats these as the declared position of the physical audit, not as proof that a subject-like operator caused the outcome.
 
 ---
 
@@ -429,13 +437,16 @@ The Vergence Domain $L_2$ manifests as:
 
 ## §3. Key Physical Applications
 
-### §3.1 Resolving the Measurement Problem
+### §3.1 Auditing Physical Realisation Events
 
-The measurement problem asks: "When does collapse happen?" Within collapse-family language, SRT proposes: **a collapse-style anchoring event occurs when $\hat{G}_\theta$ executes selection**, with candidate information-theoretic criteria:
+The measurement problem asks how a determinate outcome is related to unitary dynamics, apparatus interaction and record formation. PHR-A does not announce an interpretation-neutral solution. It supplies a bounded audit shared across interpretation-indexed readings:
 
-$$ \text{Measurement Event} \iff \Delta S_{entanglement} > 0 \land \Delta I_{classical} > 0 $$
+1. non-equivalent candidates enter the declared physical process;
+2. one outcome acquires an outcome-indexed physical record;
+3. intervening on that record changes later physical transitions or resource routing;
+4. the result changes future accessibility, transition probabilities, thresholds or return cost.
 
-No consciousness is required in this proxy reading—any physical system satisfying these criteria is a candidate $\hat{G}_{proxy}$. In no-collapse translations, the same paragraph must be rewritten as branch-relative readout rather than global physical collapse.
+No human or conscious observer is required for this event audit. Passing it establishes only a P3/P4 physical realisation candidate, not a proxy subject, agency or consciousness. Decoherence, entanglement change, information increase, dissipation, fixed-point stability or durable records can support the audit; no single item is sufficient. Collapse-family readings must be marked `[collapse-dependent]`; no-collapse readings must use branch- or frame-relative fact formation rather than global collapse.
 
 ### §3.2 Non-Locality Without Mystery
 

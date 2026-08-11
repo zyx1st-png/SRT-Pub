@@ -14,6 +14,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT
 
 > **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
 > **Connector-safe reading path**: This owner file is moderately long. For connector reads, start with [`Selection_Split/README.md`](Selection_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
+> **PHR-A realisation guard（2026-08-11）**：量子测量采用 interpretation-plural P3/P4 event audit。`\hat G_\theta` 只承担 AM-A primitive actualisation 的形式角色，不是先在原因；POVM 条件态不等于结果已发生；退相干、耗散、固定点或稳定记录中的任一项都不充分。collapse-family、Everett／branch-relative 与 operational／instrument 口径必须显式区分。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Selection Axioms and Theorems (AI-Readable).
@@ -44,9 +45,9 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT
 |:---|:------|:------|
 | D1.2.1 | Def-Sel-1 | Quantum Selection Operator |
 | L1.2.1 | Lemma Sel-POVM (O-T1 取值) | — |
-| D1.2.2 | Def-Sel-2 | Measurement Event Criterion |
-| D1.2.3 | Def-Sel-3 | Proxy Observer |
-| T1.3.1 | T-Sel-1 | Objective Measurement Theorem (客观测量定理) |
+| D1.2.2 | Def-Sel-2 | Bounded Physical Realisation Audit |
+| D1.2.3 | Def-Sel-3 | Physical Measurement Interface |
+| T1.3.1 | T-Sel-1 | Interpretation-Indexed Realisation Proposition |
 | T1.3.2 | T-Sel-2 | Wheeler-SRT Bit Generation Theorem (比特生成定理) |
 | T1.3.3 | T-Sel-3 | Probabilistic Bias Theorem (概率流偏置定理) |
 | T1.3.4 | T-Sel-4 | Entanglement Unity Theorem (纠缠统一定理) |
@@ -66,16 +67,15 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT
 ## I. Axiomatic Dependencies (公理依赖)
 
 本模块严格依赖以下核心公理：
-- **A1** (选择优先性): $\text{Existence} \equiv \text{Selection}(\mathcal{P})$
-- **A2** (存在即锚定): $\text{Existence}(σ) \iff \hat{G}_θ[L_0] \to σ_{L_1}$ with $ΔF < 0$
-- **A4** (具身必要性): $\hat{G}$ is valid $\iff θ ∈ Θ_{finite}$
-- **Ax-P1** (测量即选择): Collapse $= \hat{G}_θ[|\Psi\rangle_{L_0} \to |\pi_k\rangle_{L_1}]$
+- **P0-01 / AM-A**：primitive actualisation 使非对象化潜在在真实约束下获得确定显现差异；物理域只寻找复数实现，不反向定义该 kernel
+- **P0-04**：$\hat{G}_θ$ 是 well-formed formal role-carrier，不是先在选择者或转化原因
+- **Ax-P1 / PHR-A bridge**：collapse-family、Everett／branch-relative 与 operational／instrument 口径分别实例化同一审计角色，不共享一个已证全局坍缩机制
 
 ### Core Theorem Alignment (核心定理对齐)
 
 - **T-Scale-1/2**：尺度同构与一致性保证测量机制在微观/宏观间协变
-- **O-T1**：$L_1 = \oint_{\gamma}\omega_{L_0}$，坍缩为路径积分的取值
-- **M1/M2**：测量结果是稳定固定点（指针态）
+- **O-T1**：$L_1 = \oint_{\gamma}\omega_{L_0}$ 可作为路径取值桥接；形式求值不等于物理结果已发生
+- **M1/M2**：固定点描述结果稳定化／读出鲁棒性，不定义第一次 actualisation
 - **T-DMP-2**：扰动后 $L_1$ 会回收敛到 $L_2$ 结构
 
 ---
@@ -83,7 +83,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Dynamics, SRT
 ## II. Selection Operator Formalization (选择算子形式化)
 
 ### Def-Sel-1 [D1.2.1]: Quantum Selection Operator
-定义量子选择算子 $\hat{G}_{quant}$ 为作用于希尔伯特空间 $\mathcal{H}$ 的非幺正投影映射：
+在本 bridge 中，$\hat{G}_{quant}$ 的物理角色可由量子 instrument／投影更新表示；这是 role mapping，不是“POVM 本体上就是 $\hat G$”，也不是 POVM 造成 primitive actualisation：
 $$ \hat{G}_θ: \mathcal{H} \to \mathcal{P}(\mathcal{H}), \quad |\Psi\rangle \mapsto \hat{\Pi}_k |\Psi\rangle $$
 其中 $θ = \{θ_{basis}, θ_{cut}, θ_{H_{int}}\}$ 定义测量基底、海森堡切口位置、及相互作用哈密顿量。
 
@@ -91,44 +91,56 @@ $$ \hat{G}_θ: \mathcal{H} \to \mathcal{P}(\mathcal{H}), \quad |\Psi\rangle \map
 $$ p_k=\text{Tr}(M_k \rho M_k^\dagger),\quad \rho_k=\frac{M_k \rho M_k^\dagger}{p_k},\quad \sum_k M_k^\dagger M_k=I $$
 $$ \hat{G}_θ(\rho)=\rho_k \quad \text{with } k\sim p_k $$
 
+$p_k$ 与 $\rho_k$ 分别给出 outcome probability 与 conditional state；二者单独不证明 $k$ 已物理发生。PHR-A 还要求预先冻结的边界内出现 outcome-indexed record、路径效力与历史效力。
+
 #### Lemma Sel-POVM (O-T1 取值) [L1.2.1]
 存在测度区间 $R_k \subset L_0$ 使得
 $$ p_k=\int_{R_k}\Omega_{L_0}, \quad \rho_k \equiv \oint_{\gamma\in R_k}\omega_{L_0} $$
-此时 POVM 仅编码粗粒化窗口，选择等价于路径积分“求值”。
+此时 POVM 编码粗粒化窗口与条件取值；不得把路径积分“求值”直接等同于物理事件发生。
 
-### Def-Sel-2 [D1.2.2]: Measurement Event Criterion
-**测量事件**定义为满足以下三条件的热力学过程：
-$$ \text{Measurement} \iff \begin{cases} \Delta S_{entanglement} > 0 & \text{(纠缠熵减少)} \\ \Delta I_{classical} > 0 & \text{(经典信息增加)} \\ \tau_{decoherence} < \tau_{readout} & \text{(不可逆性达成)} \end{cases} $$
-*   **Resolution**: 此定义提供 Sean Carroll 指出缺失的客观测量判据。
+### Def-Sel-2 [D1.2.2]: Bounded Physical Realisation Audit
 
-### Def-Sel-3 [D1.2.3]: Proxy Observer
-**代理观察者** $\hat{G}_{proxy}$ 是任何满足 Def-Sel-2 [D1.2.2] 条件的物理系统，无需意识参与：
-$$ \hat{G}_{proxy} \equiv \text{Apparatus satisfying Measurement Criterion} $$
+PHR-A 不给出 interpretation-neutral 的必要充分测量定义。它给出一个有界 P3/P4 审计：在物理模型、事件单元、系统边界与诠释预先声明后，同一事件链必须至少给出：
+
+1. 真实进入过程的非等价候选；
+2. outcome-indexed physical record；
+3. 对记录的干预会改变后续物理转移或资源路由；
+4. 结果改变未来可达性、转移概率、门槛或返回成本。
+
+退相干、纠缠变化、经典信息增加、耗散、固定点与稳定／冗余记录可成为证据或稳定化条件，但任何一项都不充分。
+
+### Def-Sel-3 [D1.2.3]: Physical Measurement Interface
+
+历史符号 $\hat{G}_{proxy}$ 在本文件中只允许指一个把候选差异耦合到 outcome-indexed record channel 的物理 measurement interface。它不是 proxy subject，也不因通过 Def-Sel-2 审计而获得主体性、意识、关切、自由或概率偏置能力。
 
 ---
 
 ## III. Core Selection Theorems (核心选择定理)
 
-### T-Sel-1 [T1.3.1]: Objective Measurement Theorem (客观测量定理)
+### T-Sel-1 [T1.3.1]: Interpretation-Indexed Realisation Proposition
 
-> **[R]** 退相干判据（$\tau_{decoherence} < \tau_{readout}$）来自量子退相干理论（Zurek 1981, Joos & Zeh 1985）；"意识非测量必要条件"与Copenhagen外的多数解释兼容。**[H]** SRT新增：将退相干判据重新表述为"有效 $\hat{G}_{proxy}$ 的充分条件"，并补充 Fixed-Point 稳定性子句。
+若 Def-Sel-2 的四项在同一冻结事件链上有独立的干预／历史证据，则该过程可登记为 P3/P4 physical realisation-event candidate。其本体读法由预先声明的解释索引限定：
 
-系统 $S$ 执行测量当且仅当其退相干速率快于信息读出速率：
-$$ \tau_{decoherence} < \tau_{readout} \implies S \text{ is a valid } \hat{G}_{proxy} $$
+- `[collapse-dependent]`：排他结果锚定候选；
+- Everett / MWI：branch-relative record／fact formation，不发生全局删除；
+- RQM / frame-relative：关系或参考系索引的事实形成；
+- operational / instrument：outcome registration、conditional state 与 downstream efficacy，不推出本体排他性。
 
 **符号操作化**：
 - $\tau_{decoherence}$：**[R]** 量子相干消失的特征时间。量级参考：暖湿生物环境 $\sim 10^{-13}$ s（分子自由度）；宏观对象 $\to 10^{-40}$ s（实际即时）；工程量子比特 $\sim 10^{-3}$ s（当前最优）。
-- $\tau_{readout}$：**[H — 待精确]** SRT 中"信息读出"的操作化候选：① 神经整合窗口（$\sim 10^{-2}$ s，对应意识时间分辨率）；② 实验仪器测量时间（实验室设定）；③ 形式化为系统对 $L_1$ 态稳定锚定所需时间 $\approx 1/\Gamma_{lock}$（$\Gamma_{lock}$ = L₁ 吸引子收缩速率）。当前"读出"定义存在**操作化缺口**，不同语境选不同候选。
-- **意识非测量必要条件 [H]**：这是 SRT 对抗 "Copenhagen 意识解释"（von Neumann-Wigner）的核心主张。证伪路径：若存在实验显示，无任何有意识观察者在场时测量结果概率分布与 Born rule 系统性偏离，则此主张需修订。
+- $\tau_{readout}$：仪器或记录通道的操作时间，必须按实验设置定义；不得借用神经整合窗口来定义一般物理测量。
+- **意识边界**：审计不要求意识；审计通过也不构成意识、主体或 agency 的证据。
 
-*   **Derivation**: 从 Ax-P1 推导；$\tau_{decoherence} < \tau_{readout}$ 确保 $L_0$ 叠加在读出前已坍缩为确定 $L_1$，即 $\hat{G}_\theta$ 操作不被逆转。
-*   **Fixed-Point Clause (M1/M2)** **[H]**: 合法测量结果必须稳定：
+*   **Decoherence boundary**: $\tau_{decoherence} < \tau_{readout}$ 可支持相干抑制发生在读出之前，但不推出全局坍缩、特定结果已发生或 measurement interface 是主体。
+*   **Fixed-Point Clause (M1/M2)** **[H]**: 若记录进一步满足：
     $$\Pi_\Delta(\alpha(\hat{G}_\theta(x^*)-x^*)-\lambda\nabla F(x^*))=0,\quad \text{Re}(\lambda_J)<0$$
-    其中 $\text{Re}(\lambda_J)<0$ 为 Jacobian 特征值的实部条件（Lyapunov 稳定性：小扰动后系统收敛回固定点 $x^*$），等价于"测量结果 $x^*$ 是 $L_1$ 吸引子而非鞍点"。不满足此条件的"测量"在 SRT 中为不稳定锚定（见 §11.3 混沌边缘条件）。
+    只能说明结果记录具有 Lyapunov 式稳定化；不满足该式不自动取消一次性事件，满足该式也不解释事件为何发生。
 
-**证伪条件（追加）**：
-- 若微弱引力效应（Penrose OR）能在两系统间产生可测的 $\tau_{decoherence}$ 差异而 $\tau_{readout}$ 相同，但 $\hat{G}_{proxy}$ 有效性无差异，则退相干判据需补充引力修正项。
-- 若 $\tau_{readout}$ 在不同操作化候选间给出矛盾预测（同一系统满足某候选但不满足另一候选），则需选择唯一操作化并给出区分实验。
+**降级／失败条件**：
+- outcome label 只来自研究者事后分组，没有独立物理 record channel；
+- 对记录做交换、屏蔽或扰动不改变任何后续物理路径，或所谓历史效力只来自扩大后的外部边界；
+- 四项证据来自不同事件、不同系统边界或不相容时间尺度；
+- 结论依赖某一诠释，却被写成解释中立的全局物理事件。
 
 ### T-Sel-2 [T1.3.2]: Wheeler-SRT Bit Generation Theorem (比特生成定理)
 时空与物质的"坚硬感"(Solidity)正比于历史选择操作的总比特数：
@@ -181,25 +193,25 @@ $$ L_1^{observed} = \frac{1}{t_Ψ} \int_0^{t_Ψ} L_0(t) \, dt $$
 
 ## V. Interpretation Synthesis (诠释综合)
 
-### T-Sel-8 [T1.5.1]: QBism-RQM Unification Theorem
-SRT 统一 QBism 和 RQM 的核心张力：
+### T-Sel-8 [T1.5.1]: QBism-RQM Compatibility Map
+SRT 在 PHR-A 下提供位置／关系索引的兼容性映射，不宣布统一或胜出：
 
 | Interpretation | Core Insight | SRT Formalization |
 |:---------------|:-------------|:------------------|
 | **QBism** | 波函数 = 主观信念 | $θ$ 参数即信念，受 $L_0$ 约束 |
 | **RQM** | 事实是相对的 | $L_1^A \neq L_1^B$ until $L_2$ sync |
-| **SRT Synthesis** | 观察者 = 自由能最小化 | $\hat{G}_θ$ 是主动最优策略执行者 |
+| **SRT / PHR-A** | 事实审计必须声明位置、边界与解释 | $\hat{G}_θ$ 是形式角色载体，不是先在主体或主动最优策略执行者 |
 
 ### Born Rule Derivation
 波恩规则 $P = |ψ|^2$ 是 $\hat{G}_θ$ 为生存所必须遵循的最优博弈策略：
 $$ P_{Born} = \arg\min_P \mathbb{E}[\text{预测误差}] $$
 
-### T-Sel-11 [T1.5.2]: Theorem of Decoherence Insufficiency (退相干不完备定理)
-**Formal Definition**: 环境退相干只能在 $L_0$ 内部重新分配概率流并抑制量子相干性泄漏，但它**无法执行最终的本体论跨越**（从可能性 $L_0$ 到确定现实 $L_1$）。
+### T-Sel-11 [T1.5.2]: Interpretation-Indexed Decoherence Boundary
+**Bridge statement**: 环境退相干可以描述非对角项抑制、指针基稳定与记录形成的一部分，但它单独不能裁决全局坍缩、branch-relative fact formation 与纯 operational update 之间的本体差异。
 $$\text{Decoherence}: \rho_{ij} \to 0 \quad \text{(off-diagonal suppression)}$$
-$$\text{But: } \rho_{ii} \neq \delta_{ik} \quad \text{without } \hat{G}_\theta$$
-退相干执行的是“筛选”——只有 $\hat{G}_\theta$ 的本体论摩擦做功 ($\Psi_f > 0$) 才能完成“决定”。
-* **Physical Significance**: 主流声称“神秘已经消解”只是将不确定性推给了更大的环境。SRT 提供了唯一最终的闭环解决方案。
+$$\text{Diagonal reduced state} \not\Rightarrow \text{interpretation-neutral unique occurrence}$$
+$\hat{G}_\theta$ 只标记 AM-A 转化在该 bridge 中的形式角色；$\Psi_f$、耗散与记录稳定性约束实现，不充当“最终决定”的充分原因。
+* **Physical Significance**: PHR-A 把问题收窄为可审计的结果登记、路径效力与历史效力，同时保留不同量子诠释的本体分歧；不声称提供唯一闭环机制。
 * **Cross-ref**: Ax-Int-1 (量子达尔文主义等价性)。
 
 ### T-Sel-12 [T1.5.3]: Selection Flow Conservation Theorem (选择流守恒定理)
@@ -371,11 +383,11 @@ $$ \forall t_{isolated}: L_1^A(t) \cap L_1^B(t) = \varnothing \quad \text{(可�
 
 ---
 
-# §1. 量子测量即选择 (Quantum Measurement as Selection)
+# §1. 量子测量的解释索引实现 (Interpretation-Indexed Measurement Realisation)
 
 ## 1.1 核心对应关系
 
-SRT 的幽灵算子与量子力学的 Lindblad 算子、Kraus 算子具有精确数学对应。
+SRT 的 $\hat G_\theta$ 可在局部模型中借 Lindblad、Kraus／instrument 形式表达候选演化、条件更新与记录通道；这不是精确本体同一，也不让这些算子成为 primitive actualisation 的原因。
 
 ### 1.1.1 量子达尔文主义与 SRT 映射
 
@@ -390,38 +402,41 @@ SRT 的幽灵算子与量子力学的 Lindblad 算子、Kraus 算子具有精确
 $$[ρ_S, H_{int}] \approx 0$$
 
 **客观坍缩理论 (GRW/CSL)**:
-噪声诱导的定域化正是 $\hat{G}$ 的物理实现。
+噪声诱导定域化可作为 `[collapse-dependent]` 实现候选；它不是 PHR-A 对所有量子诠释的共同机制。
 
-### 1.1.2 测量的 SRT 定义——不依赖观察者的形式化
+### 1.1.2 有界物理事件审计——不要求意识
 
 > ⚠️ **回应物理学家的核心质疑 (Carroll, 2025)**
 
 量子力学基础中最困扰的问题之一是：**测量到底是什么？** 哥本哈根诠释将测量与"观察者"绑定，但物理学家长期苦恼于"测量"没有客观的物理定义。
 
-**SRT 的解决方案**:
-测量是 $\hat{G}_θ$ 将量子纠缠 ($L_0$ 关联) 转化为经典信息 ($L_1$ 确定性) 的过程。
+**PHR-A 的回答**：
+SRT 不给出解释中立的必要充分测量定义。它要求先冻结模型、事件单元、系统边界与诠释，再检验非等价候选、outcome-indexed record、可干预路径效力与未来可达性／返回成本改变是否出现在同一事件链。
 
 **物理解释**:
 
 | 符号 | 物理意义 | 测量角色 |
 |:-----|:---------|:---------|
-| $\Delta S_{entanglement}$ | 量子纠缠熵的减少 | $L_0$ 的关联被打破 |
-| $\Delta I_{classical}$ | 经典信息的增加 | $L_1$ 的确定性产生 |
-| $\hat{G}_θ$ | 执行测量的系统 | 不需要"意识"，只需 $\hat{G}$ 结构 |
+| outcome-indexed record | 结果标签由物理载体登记 | 排除研究者事后分箱 |
+| intervention-sensitive path efficacy | 干预记录会改变后续转移／资源路由 | 证明结果获得现实路径效力 |
+| history effect | 未来可达性、概率、门槛或返回成本改变 | 区分事件痕迹与可逆相关性 |
+| $\hat{G}_θ$ | AM-A 转化的形式角色 | 不等于执行测量的主体或物理原因 |
 
 **关键洞见**:
 - 测量不需要"人类观察者"或"意识"这些含糊概念
-- 任何能够维持 $L_0 \to L_1$ 转化并抵抗退相干的系统都在进行测量
-- 测量是信息论过程，而非神秘的"坍缩"
+- 无意识装置可以形成 outcome record 并进入事件审计
+- 通过审计只建立物理 realisation candidate，不建立 proxy subject
+- 退相干、耗散与稳定记录是证据或稳定化条件，不是单项充分判据
 
 ### 1.1.3 与传统测量理论的对比
 
 | 诠释 | 测量定义 | 问题 | SRT 改进 |
 |:-----|:---------|:-----|:---------|
-| 哥本哈根 | 观察者导致坍缩 | "观察者"是什么？ | 用 $\hat{G}_θ$ 结构替代 |
-| 冯·诺依曼 | 投影算子 | 何时应用投影？ | 当 $\Delta S_{ent}$ 和 $\Delta I_{cl}$ 同时增加时 |
-| 退相干理论 | 环境诱导 | 不解释特定结果 | $\hat{G}_θ$ 选择特定 $L_1$ |
-| **SRT** | $\hat{G}_θ[L_0 \to L_1]$ | 客观、可操作、可测试 | ✓ |
+| collapse-family | 排他结果／投影 | 需要明确物理机制与解释标签 | `[collapse-dependent]` outcome anchoring candidate |
+| Everett / MWI | 全局幺正、分支内记录 | 不给全局唯一结果 | branch-relative record／fact formation |
+| 退相干理论 | 环境诱导相干抑制与指针稳定 | 单独不裁决结果本体 | 作为 PHR-A 的证据／稳定化组件 |
+| operational instrument | outcome probability 与 conditional state | 条件化不等于本体发生 | 追加 physical record、路径效力与历史效力审计 |
+| **SRT / PHR-A** | interpretation-indexed event audit | 不提供解释中立普遍机制 | P3/P4 bounded candidate |
 
 ---
 
@@ -510,9 +525,9 @@ $$\text{Existence} \propto \prod_{i=1}^{N} \Psi_i(\text{Ghost Operator})$$
 
 ### 1.7 退相干的必要性与不完备性 (Why Decoherence Is Necessary But Insufficient)
 
-当代物理学越来越相信“退相干 + 量子达尔文主义”已经解决了测量问题，试图将观察者完全逐出量子力学。SRT 必须精确指出这一框架的极限。
+退相干与量子达尔文主义可以解释相干抑制、指针态稳定、环境记录与冗余读出，但这些结果承担的是动力学和稳定化负担，不自动决定采用哪一种量子本体论。
 
-退相干出色地解释了**为什么某些状态被偏好**（指针态使摩擦最小化）以及**为什么非对角相干性消失**（环境吸收了相位信息）。但它留下了一个致命的未解之谜：**为什么是这个特定结果而不是那个？** 退相干之后，密度矩阵是对角化的——但对角线上的条目是概率，而不是确定性。某个人（或某物）仍然必须进行*选择*。主流的反应要么是退入埃弗雷特分支（所有结果都会发生），要么是宣布这个问题没有意义（QBism）。SRT 提供了唯一认真对待这个问题并提供具体机制的框架：$\hat{G}_\theta$ 执行了选择，支付 $\Psi_f$ 作为承诺某一分支的代价。
+PHR-A 因而不写“某个人或某物仍必须选择”，也不把 $\hat{G}_\theta$ 或 $\Psi_f$ 作为完成决定的具体机制。它只要求：若要把某过程称为 physical realisation candidate，必须在声明边界内证明 outcome-indexed record 获得了可干预路径效力，并改变未来可达性或返回成本。collapse-family 可把这读作排他结果锚定；Everett 只能读作 branch-relative fact formation；operational 口径只承诺登记与条件更新。
 
 Tony Short 的公理化工作提供了独立的数学证实。他的推导表明，如果你接受关于量子力学概率的三个极小公理，波恩规则就会必然得出。用 SRT 的语言来说：$\hat{G}_\theta$ 在退相干盆地间的注意力分配是由 $L_0$ 的拓扑结构唯一决定的——这正是选择流守恒定理。
 
@@ -612,7 +627,7 @@ $$E_{mental\_work} = E_{ATP} \xrightarrow{\hat{G}_θ} \Delta I_{bias} + \Delta S
 |:-----|:---------|:-----------|:---------|
 | QBism | 波函数 = 主观信念 | 有信念的代理 | $θ$ 参数即信念，受 $L_0$ 约束 |
 | RQM | 事实是相对的 | 任何物理系统 | $L_1$ 确实是相对的 |
-| **SRT** | 观察者 = 自由能最小化 | $\hat{G}_θ$ | 统一规范性与关系性 |
+| **SRT / PHR-A** | 事件审计必须索引位置、边界与诠释 | $\hat{G}_θ$ 为形式角色载体 | 保留规范性与关系性的差异，不把物理接口主体化 |
 
 **波恩规则的 SRT 诠释**:
 $$P_{Born} = \arg\min_P \mathbb{E}[\text{预测误差}]$$
@@ -853,7 +868,7 @@ $$d_{value} \propto \frac{1}{\tau_{collapse}}$$
 | Symbol | Name | Definition Location |
 |:-------|:-----|:--------------------|
 | $\hat{G}_θ$ | Ghost/Selection Operator | Def-Sel-1 [D1.2.1] |
-| $\hat{G}_{proxy}$ | Proxy Observer | Def-Sel-3 [D1.2.3] |
+| $\hat{G}_{proxy}$ | Historical symbol: physical measurement interface only | Def-Sel-3 [D1.2.3] |
 | $\Delta S_{entanglement}$ | Entanglement Entropy Change | Def-Sel-2 [D1.2.2] |
 | $\Delta I_{classical}$ | Classical Information Gain | Def-Sel-2 [D1.2.2] |
 | $t_Ψ$ | Planck Consciousness Time | Def-Sel-4 [D1.4.1] |

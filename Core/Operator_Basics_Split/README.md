@@ -13,13 +13,13 @@ dependency: [SRT-CORE-13A]
 # SRT Core 13A Operator Basics Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Core_13a_Operator_Basics.md`](../SRT_Core_13a_Operator_Basics.md)
-- Source owner bytes: `81361`
-- Source owner SHA-256: `2fcc92d1c2a281eeb11b980fd43e18ed85681b12e4a60d56e366de3b278ee4fc`
+- Source owner bytes: `83760`
+- Source owner SHA-256: `a1356f2983fb5fc3fe62ce25ee19e2b361d349f290d047573fa170bedeb87b9e`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
 | Part | File | Starts with | Bytes | SHA-256 prefix |
 |---:|---|---|---:|---|
-| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 13A: Ghost Operator Basics (Hybrid Edition) | 28037 | `e0dd80903653` |
-| 01 | [`01_Part02.md`](01_Part02.md) | T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理） | 33338 | `e23c4a75fef2` |
-| 02 | [`02_Part03.md`](02_Part03.md) | 4.3 规范性 (Normativity) | 21130 | `89d0265cbbe0` |
+| 00 | [`00_Part01.md`](00_Part01.md) | SRT Core Definition 13A: Ghost Operator Basics (Hybrid Edition) | 29810 | `786815ba96f0` |
+| 01 | [`01_Part02.md`](01_Part02.md) | T-Op-SIAM: Selection-Induced Accessibility Modulation Theorem（选择诱导可及性调制定理） | 32979 | `1bdb94f33651` |
+| 02 | [`02_Part03.md`](02_Part03.md) | 4.1 个体性 (Individuality) | 22469 | `27951b16e7d8` |

@@ -13,8 +13,8 @@ landing_ledger:
     state: landed
     anchor: "## 4. Commitment under incomplete guarantee"
   - target: "_SRT_T_DIR_CANONICAL.md"
-    state: pending
-    blocked_by: "canonical freeze：改 `T_dir` 主定义属 SRT_EDIT_PROTOCOL C 类高风险编辑，需作者授权"
+    state: landed
+    anchor: "| commitment strength / decisiveness |"
   - target: "90_Backstage/Incubation/_SRT_DIRECTION3_CHOICEMAP_PROTOTYPE_SEED.md"
     state: pending
     blocked_by: "目标已停驻（ChoiceMap / IRP 产品线未重启），见 _SRT_PARKED_INDEX.md §1"

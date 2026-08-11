@@ -30,18 +30,21 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 
 | Pressure point | Already stabilized | Still not derived | Must not be overstated |
 |---|---|---|---|
-| origin of selectability / P0-04 | `Core/SRT_Core_21_Minimal_Axioms.md P0-04` gives a well-formed operator admission condition | the first emergence of selectable agency from a non-selective ground | bridge accounts of biology, AI, spirituality, or agency do not solve the origin problem |
+| primitive actualisation / P0-04 | AM-A landed: P0-01 carries the irreducible actualisation kernel; P0-04 supplies its well-formed formal carrier without a prior chooser | no derivation from a non-selective predecessor is claimed; domain realization and stable selector individuation remain downstream | fixed point, `argmin`, steepest descent, `κ_0`, friction, payability, normalization, or writeback must not be cited as the universal cause of the primitive |
 | exact status of `Ψ_f` projections | payability burden is the v1 governance-canonical main read; geometry and metabolic/energetic forms are conditional projections | necessary and sufficient conditions for all projection relations, including when geometry is a true lower bound | Fisher length, energy cost, pain, or stress cannot be called `Ψ_f` without projection checks |
 | exact status of `d` proxies | bare `d` is a scalar summary of stake-coupled concern; `D_eff`, Fisher rank, `d-vector`, and `d-gate` are separated | a final theorem identifying capacity directions with stake-coupled concern directions | capacity, competence, or distinguishability cannot be treated as concern |
-| incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, and reward | a complete formal object with validated sufficiency conditions | high meaning, high reward, or high confidence cannot be cited as `T_dir` by itself |
+| incomplete formalization of `T_dir` | `T_dir` now has a v0 readability / reorientation role and is distinguished from valence, confidence, coherence, reward, directional efficacy, and commitment strength | a complete formal object with validated sufficiency conditions | high meaning, reward, confidence, behavioral bias, decisiveness, or binding commitment cannot be cited as `T_dir` by itself |
+| Stable ISP natural boundary / phenomenal necessity | P1-T06 remains the constitutive result-state criterion; individuation separates subject-position entry from later reflective self-identification | an independently evidenced natural phase boundary, and whether a fully individuated stake-bearing Stable ISP can be phenomenally empty | neither a working `\sigma_{sr}^{sub}` threshold nor Stable ISP / same-bearer stake proves phenomenality |
+| structural stabilisation / generative reselectability | ST-A fixes structural stability as recurrent historical reconstitution under a declared perturbation range; P1 minimum = continued selectability; stronger generative reselectability sits at P2/P3 | operational measures of consequence-return coverage and rule/boundary/candidate-generation revisability; any neutral-kernel absorption theorem | fixed point, metastability, `σ<1`, low friction, option diversity, or `ΔR_future>0` cannot individually prove stability, health, legitimacy, subjecthood, or consciousness |
+| potential non-exhaustion / actualisation | PC-A and AM-A are landed: non-exhaustion without preformation; actualisation is the existing P0 selection primitive's minimum kernel with plural domain implementations | sufficient and discriminating realization conditions in each domain; selector individuation remains separate | do not restore `H(L_0^{abs})` invariance or a completed-form inventory; do not turn any one implementation into the definition or cause of the P0 kernel |
 | Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
 | ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction; **Level A framing de-overload applied 2026-07-05** (L0 §六 / 正骨架 label / d-value §5b.1) | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the Level B stance rewrite (realist → constitutive stance) remains proposal-only | not "all normativity = anti-foreclosure"; not "boundary problem solved"; Level A trims wording only — it does not close the boundary problem |
 | selection irreducibility / competitor-vocabulary deletion (§13) | Claim Ladder: `selection` is a P0 primitive axiom (P0-01); GOV-SUB01 §8.1 defines the (not-yet-run) deletion test | whether asymmetric constraint + reachable-set change + irreversible writeback + payability + bearer-specific consequence return can replace the `selection` primitive with no lost difference | GOV-SUB01 residue status **unassigned** (no deletion test run); must not be presented as a proven-irreducible ontological ultimate; representational substitutability under broad refit ≠ role absence |
-| `P0-02` existence index vs `H(L_0)=∞` (§15) | P0-02's *claim* (existence = degree of stable anchoring out of open possibility) is unaffected | a well-defined quantity: with `H(L_0)=∞` declared in `Core/SRT_Core_01_Axioms.md`, `E = 1 - H(L_1)/H(L_0)` is identically 1 and `ΔS = H(L_0)-H(L_1)` identically ∞ | do not cite `E` or that `ΔS` as a quantitative readout; **no normalization has been adopted** — Decision Gate A is open, no file may pick one unilaterally |
+| EX-A existence boundary / former `H(L_0)` formula debt (§15) | EX-A separates manifest actuality, anchoring persistence, and stable ISP identity; old `E` is demoted to B14; 2026-08-12 audit withdrew `Core_14`'s entropy proof and limited strict conjugacy to invertible maps | a B14 persistence readout remains parked; P3-B07 cross-scale universality still needs model-level mappings, error bounds, failure cases, and discriminating gain | do not cite old `E`, unqualified `ΔS`, strict conjugacy under ordinary coarse-graining, or a universal minimum-action principle as canonical readouts／proofs |
 | layer assignment of 初心 (§16) | L0 anchor is explicit and repeated: 初心 is L1, L0 commits only to `ε`, §七.11 rejects pre-set goals in L₀ | whether a thin L₀ formal precursor is admissible at all | a freeze-Group-A canonical anchor currently imports an L₀-level reading from a `canonical: false` translation file; **Decision Gate B open** — do not resolve by editing either side |
 | "global optimum" four senses (§17) | Level A de-overload applied 2026-07-05 to d-value §5b.1 | one term for four objects (universe-wide / operator-relative reachable / regulative ideal / finite-constraint attractor); §5b.2 never narrowed; `Ψ_f→0` reads as degenerate in Core and as optimum in Spirituality | **Decision Gate C open**; the 2026-08-11 pass changed no §5b.2 wording and no Spirituality framing |
 
-These are pressure points, not new axioms. They route later work and block overclaiming. §15-§17 additionally carry **author-decision gates**: they are registered here so that no downstream file resolves them by drafting, and the options live in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`.
+These are pressure points, not new axioms. They route later work and block overclaiming. §15 records a closed author gate, a completed proof-load repair, and parked P3 model work; §16-§17 still carry **open author-decision gates**. Their option history lives in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`.
 
 > **Gate 0 — adopted and landed (2026-08-11).** The upstream type/boundary question shared by §15-§17 has been settled and registered as a **governance-canonical type rule**: `Governance/SRT_CLAIM_LADDER.md §0A` (single primary authority; `_SRT_SYMBOL_TABLE.md` Usage Rule 16 is a cross-reference only). It classifies what *kind* of object may sit at bare `L_0` — **class A** contentless structural invariants (`L_0` granularity, `κ_0`, `ε_pg`, irreversibility floor) admissible; **class B** reference-dependent weighting/comparative objects an *admission gap*, not a prohibition in kind; **class C** semantic/evaluative content inadmissible as a bare `L_0` primitive. It carries **no P-level**.
 >
@@ -251,7 +254,7 @@ The support/replacement line should be expressed as a structural test, not a mor
 
 ### Current State
 
-`Core/SRT_Core_21b_Constitutive_Theorems.md` treats stable ISP as the relevant P1 theory object for persistent perspective. `T-ε-Constitute` shows that stable ISPs require anti-closure asymmetry under `L_0` irreversibility.
+`Core/SRT_Core_21b_Constitutive_Theorems.md` treats stable ISP as the relevant P1 theory object for persistent perspective and continued selectability. Under ST-A, the former `T-ε-Constitute` no longer shows an unconditional anti-closure necessity; the stronger claim is a P2/P3 conditional candidate in 21C B13.
 
 `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold` gives a mechanism for how successful stable ISP history can become background `L_2` scaffolding through path traces.
 
@@ -291,6 +294,15 @@ Then connect them through explicit bridge terms such as `\rho(p,t)`, `\rho^*`, s
 What this resolves: the ambiguity between entry definition and entry dynamics is now scoped — P1-T06 reads as the **result-state criterion**, T-IND-2 as the **entry-dynamics criterion**, and they are explicitly non-equivalent.
 
 What remains open: the operator-layer `σ` is still at the proposal stage and does not yet have cleanly measurable proxies; its relation to the path-layer `ρ` (T-L2-Scaffold) needs cross-domain testing; `σ_sub` and `σ_self` are not numerically specified. This tension is therefore **not fully resolved**, but the entry-dynamics gap is now occupied by a candidate theory rather than a void.
+
+### Status Update (2026-08-11: phenomenality and adjacent-case guards)
+
+Later philosophy materials add two burdens without changing P1-T06:
+
+1. **Phenomenal necessity remains open.** Stable ISP, individuation, `d > 0`, same-bearer consequence return, and non-substitutable stake specify increasingly strong bearer / perspective architecture. They are not currently canonical proofs that qualia must be present. The live deletion question is whether a fully individuated, stake-bearing Stable-ISP-like perspective center can coherently remain phenomenally empty. `Philosophy/hooks/PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Integration_Hook.md` registers this as the SRT-zombie pressure.
+2. **The natural-boundary interpretation needs an adjacent-case test.** P1-T06 remains the canonical constitutive result-state criterion, but `σ_{sr}^{sub}` / `σ_{sr}^{self}` are still P3/P4 entry-dynamics candidates. Until matched boundary-negative / boundary-positive cases show an independently measurable discontinuity in perspective-bearing, same-unit consequence return, history writeback, future-selectability change, or boundary continuity, a chosen cutoff does not by itself establish an ontological phase transition. `Philosophy/hooks/PH_MR01_Representational_Gradualism_Integration_Hook.md` supplies this guard.
+
+Neither burden demotes P1-T06, makes Stable ISP merely conventional, or turns a real choice moment into a graded event. They constrain only the stronger claims of phenomenal necessity and naturally discontinuous entry.
 
 ---
 
@@ -336,15 +348,15 @@ Only systems meeting such a window could be candidates for surrogate stake. Even
 
 ---
 
-## 7. P0-04: Origin of Selectability
+## 7. P0-04: Primitive Actualisation / Selectability Boundary
 
 ### Current State
 
-`Core/SRT_Core_21_Minimal_Axioms.md P0-04` currently constrains operator well-formedness. It does not explain where selectability itself comes from, nor does it fully derive the first selecting capacity from a prior non-selective ground.
+AM-A was selected by the author on 2026-08-11. `Core/SRT_Core_21_Minimal_Axioms.md P0-01` now explicitly carries the irreducible actualisation kernel, while P0-04 constrains its well-formed formal carrier. Current SRT deliberately does not derive this primitive from a prior non-selective ground.
 
 ### Problem Point
 
-This is an unresolved core exposure point, not a solved theorem. The repo must not let bridge layers quietly smuggle in a pre-existing chooser, subject, agent, will, or "capacity to select" and then cite SRT Core as if that origin had already been derived.
+This is a declared primitive boundary, not a solved mechanism theorem. The repo must not let bridge layers quietly smuggle in a pre-existing chooser, subject, agent, will, or stable “capacity to select” and then cite it as the origin of P0 actualisation. Equally, it must not portray the absence of a deeper derivation as something already solved by notation.
 
 The weak point is especially visible when a domain says:
 
@@ -354,11 +366,11 @@ The weak point is especially visible when a domain says:
 - "the community reselects";
 - "the practice increases agency."
 
-Those phrases may be useful bridge language, but they are not answers to the origin of selectability.
+Those phrases may be useful bridge language, but they are downstream realizations or patterns, not definitions of the primitive kernel.
 
 ### Minimal Guardrail
 
-> **Level**: governance / core exposure. This is a boundary rule, not a solution.
+> **Level**: governance guard for an author-decided P0 primitive boundary.
 
 Any bridge that uses a selector-like term must mark which layer it is using:
 
@@ -366,16 +378,68 @@ Any bridge that uses a selector-like term must mark which layer it is using:
 2. **Stable pattern**: selector is a stabilized `L_1/L_2` pattern, not a primitive.
 3. **Assumed interface**: selector is taken as a domain interface and must not be cited as core derivation.
 
-Until the origin question is actually hardened, P0-04 should be cited as an open exposure point. Do not add a formula here to make the gap look closed.
+P0-04 should be cited as the AM-A primitive boundary. Do not add a formula that pretends to derive the primitive; do not call AM-A a domain mechanism. A future AM-B proposal would require a new author gate plus a non-circular proof of definition domain, existence, branch／uniqueness rule, and event realization.
 
 ### Source-Intuition Testimony (non-resolving, added 2026-07-10)
 
-Two source-intuition choice-traces register direct intuitive testimony on this exposure point. Testimony is not derivation; it does not move P0-04 toward resolution. It is logged here only so the exposure point's intuitive-pressure record does not stay empty.
+Two source-intuition choice-traces register direct intuitive testimony on this boundary. Testimony is not derivation and does not upgrade AM-A into a mechanism theorem.
 
-- `01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md` P2: "selection is prior to the subject; the subject is only a later-stage form the selection structure develops into." This restates the P0-04 exposure rather than closing it — it says the chooser is downstream, not where the first selecting capacity itself comes from.
-- `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md` P2-01: "selection as the minimal non-neutral maintenance of a lucky openness" (the author's own words: "选择是对于幸运产生的最小非中立的维持"). "Lucky" is an intuitive name for the non-selective ground P0-04 asks about; it does not derive selectability from it.
+- `01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_CHOICE_TRACE_2026-07-09.md` P2: "selection is prior to the subject; the subject is only a later-stage form the selection structure develops into." This is consistent with P0-04's no-prior-chooser boundary, but it is testimony rather than an independent proof of the primitive.
+- `01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md` P2-01: "selection as the minimal non-neutral maintenance of a lucky openness" (the author's own words: "选择是对于幸运产生的最小非中立的维持"). "Lucky" is an intuitive name for the opening in which actualisation is posited; it neither derives the primitive nor supplies a universal realization mechanism.
 
-Neither testimony should be read as narrowing the three-way guardrail above (derived process / stable pattern / assumed interface); both remain compatible with all three and do not by themselves pick one.
+Neither testimony should be read as redefining the primitive. The three-way guardrail above (derived process / stable pattern / assumed interface) continues to classify downstream selector language.
+
+### Status Update (2026-08-11: generative selectability and non-preformation pressure)
+
+`Philosophy/hooks/PH_DIFF01_Difference_Individuation_Generative_Selectability_Integration_Hook.md` and `Philosophy/hooks/PH_IND03_Simondon_Transduction_Operator_Structure_Integration_Hook.md` sharpen four questions already latent in P0-04:
+
+1. **Non-exhaustion / non-preformation — resolved at the canonical boundary.** On 2026-08-11 the author selected PC-A. `Core/SRT_Core_12a_Ontology_L0L1.md Ax-L0-02 / T-L0-01`, `Core_Law/SRT_Reference_Axioms.md A13`, and `Core_Law/SRT_Reference_Ontology.md §1.1/§5.1` now state that no finite manifestation exhausts $L_0^{abs}$, while later completed forms need not pre-exist as completed latent objects. The old `dH(L_0)/dt=0`, `L_0(t)=constant`, and `Innovation=Discovery(...)` claims have been removed. This closes the conservation/preformation wording conflict, not the actualisation mechanism.
+2. **Actualisation — author-resolved at P0, realization-open downstream.** AM-A fixes the transition's minimum role as primitive. The abstract map `\hat{G}_\theta : L_0 \to L_1` names that role; it is not its cause. What remains open is how different domains instantiate the kernel and how those implementations can be discriminated.
+3. **Stabilization / metastability / reselectability — author-resolved at the conceptual boundary.** ST-A separates structural stability (recurrent historical reconstitution + continued selectability) from generative health (consequence-sensitive revisability). Fixed points, metastability, reserve, reopening, and option diversity remain implementation/proxy candidates.
+4. **Existence / persistence — author-resolved at the semantic boundary.** EX-A separates a determinate event's manifest actuality (P0-01), its anchoring persistence (P0-02), and stable ISP identity (P1-T06／ST-A). The old `E` entropy ratio is no longer a P0 equation or readout; quantitative persistence measurement remains a future model-level task only under declared domain and measure.
+5. **Selector individuation and self-reselection — partially open.** A persistent selector-position must still be individuated without smuggling in a prior chooser. ST-A resolves the conceptual difference between continued execution and generative reselectability, but measurement of rule/boundary/candidate-generation revision and stake-space restructuring remains P3 work.
+
+Items 1–4 are now recorded author-level boundary decisions rather than P3 material inferences. AM-A adds no second primitive or symbol; ST-A adds no stabilisation primitive or symbol; EX-A adds no existence index. Item 5 remains partly open at selector individuation and operationalization.
+
+### Actualisation Floor Verdict and Author Decision (2026-08-11)
+
+The one-connection floor test for item 2 is recorded in `Operations/SRT_ACTUALISATION_AUTHOR_DECISION_PACKET_2026-08-11.md`. Verdict: **red / soft connection**. `L_0` non-neutrality, gradients, friction and payability constrain admissibility; `\hat G_\theta : L_0 -> L_1` names a formal role; information creation and writeback are postconditions; CG-0—CG-4 are event-audit conditions. None currently supplies the missing non-circular bridge from constrained difference to one determinate event.
+
+Before AM-A landed, this exposed a direct architecture conflict: `Core/SRT_Core_21_Minimal_Axioms.md P0-01/P0-04` treated selection as primitive, while the old `Core/SRT_Core_12a_Ontology_L0L1.md Ax-L0-Bootstrap` claimed that a fixed point / least-friction path had formally resolved the first operator. That expression presupposed an operator candidate space, a pre-actualisation comparison functional, fixed-point / minimum existence, a branch or uniqueness rule, and a bridge from mathematical existence to event occurrence. Those conditions were not derived, so the purported derivation was removed rather than retained as a competing closure.
+
+The author selected **AM-A — primitive kernel + implementation pluralism**. P0-01/P0-04 now form the controlling boundary; Ax-L0-Bootstrap retains only “no prior chooser” and “no temporal predecessor” while its fixed-point / least-friction derivation is removed. `κ_0`, gradients, friction and payability constrain realizations; determinate distinction, information creation and writeback are postconditions; domain mechanisms remain plural. AM-B and AM-C are rejected for this landing. This decision introduces no new symbol and does not advance stabilization, selector individuation, subjecthood, or consciousness.
+
+### Physical Realisation Floor Test (2026-08-11)
+
+The next one-connection test is recorded in `Operations/SRT_PHYSICAL_REALISATION_AUTHOR_DECISION_PACKET_2026-08-11.md`:
+
+> AM-A primitive actualisation → a physically discriminable realization event.
+
+Verdict: **yellow / conditional connection**. Within a declared physical model, event unit, system boundary and interpretation, a chain of non-equivalent candidates, outcome-indexed physical registration, intervention-sensitive path efficacy, and future-access／return-cost change can support a P3/P4 realization-event candidate. Decoherence, dissipation, fixed-point stability, a POVM conditional state, or a durable record is not sufficient by itself.
+
+No interpretation-neutral physical realization mechanism is currently established. Collapse-family global outcome exclusion, Everett branch-relative fact formation, and operational instrument registration carry different commitments and must not be mixed without labels.
+
+The author selected **PHR-A — Interpretation-Plural Realisation Audit**. Physics now uses the shared P3/P4 audit chain while keeping collapse-family, Everett／branch-relative, RQM／frame-relative and operational／instrument readings explicitly indexed. `\hat G_\theta` remains a formal role-carrier rather than a prior physical cause. PHR-B and PHR-C were rejected for this landing. The yellow verdict remains: PHR-A hardens a bounded domain audit, not a universal quantum mechanism or an interpretation-neutral proof of P0 actualisation.
+
+### Stabilisation Floor Verdict and Author Decision (2026-08-11)
+
+The one-connection test is recorded in `Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md`. The author selected **ST-A**.
+
+ST-A fixes three levels: **formed** means an organization is identifiable; **structurally stable** means the same perspective- and history-bearing organization is recurrently reconstituted across a declared perturbation range; **generatively healthy** additionally requires consequence-sensitive revisability of its comparison rules, boundaries, or candidate-generation conditions. P1-T06 carries only the stable-ISP minimum of continued selectability. Generative reselectability remains P2/P3.
+
+The former unconditional P1-T07 anti-closure theorem is withdrawn. Its proof established absorption after `A_t=\varnothing` but did not define a neutral kernel, choose stability semantics, or prove neutral-kernel absorption. A conditional candidate is preserved in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`; any future theorem must declare environment, termination condition, external-reset rule, horizon, and absorption/comparative-risk proof.
+
+Still open: operational measures for consequence return and rule revisability, neutral-kernel formalization, and selector individuation. Fixed points, attractors, metastability, low friction, option diversity, differential reserve, `σ<1`, and positive `ΔR_future` remain plural proxies only. ST-A introduces no new primitive or symbol and establishes no subjecthood, consciousness, legitimacy, or ethical conclusion.
+
+### Existence Floor Verdict and Author Decision (2026-08-11)
+
+The one-connection test is recorded in `Operations/SRT_EXISTENCE_AUTHOR_DECISION_PACKET_2026-08-11.md`. The author selected **EX-A**.
+
+EX-A fixes three layers: **manifest actuality** means that a determinate `L_1` event occurred and belongs to P0-01; **anchoring persistence** asks whether that event leaves effective trace, acquires maintenance conditions, and continues constraining later transitions and belongs to P0-02; **stable ISP** further requires recurrent historical reconstitution and continued selectability under P1-T06／ST-A. Event occurrence does not automatically entail persistence, and persistence does not automatically establish stable-ISP identity.
+
+The former `E = 1-H(L_1)/H(L_0)` expression is withdrawn from P0 and retained only in 21C B14 as a historical P2/P3 heuristic. EX-A adopts no global entropy of `L_0^{abs}`, accessible-domain normalization, probability measure, or quantitative existence index. A transient event may still be actual, and later loss of anchoring does not erase its earlier occurrence under P0-03.
+
+Still open only as conditional model work: a persistence readout with an explicit relative domain, partition／sigma-algebra, measure, finite/nonzero admissibility conditions, event boundary, and time horizon. None of actuality, persistence, or a future readout establishes structural stability, generative health, subjecthood, consciousness, moral status, or legitimacy by itself.
 
 ---
 
@@ -566,6 +630,12 @@ The trace's own follow-up question (CT-21) is unresolved and must travel with th
 
 A companion trace (`01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_TRACE_2026-07-09.md`, P2-14) independently proposes the dual/complementary formulation: "selection is a generative resynchronization of randomness" (a construction reading, additive) against P13's "entropy is the de-selection portrait" (a subtraction reading). The two are registered together because they describe the same boundary from opposite directions and should not be hardened as two separate concepts.
 
+### Terminology Update (2026-08-11, author decision G6-2)
+
+The source phrase "generative resynchronization" remains here only as a source-trace metaphor. Cross-level theory prose now uses **selective reorganization / 选择性再组织**: structural mismatch, decoupling, or random disturbance -> allocation / manifestation -> differential comparison -> comparative selective reorganization -> path formation and historical writeback.
+
+"Synchronization / desynchronization" may still be used when quoting the source trace or in a domain with an independently measurable synchrony variable. It must not be used as the cross-level definition of selection, and selective reorganization must not be interpreted as necessary restoration of unity: a new selection may increase differentiation, heterogeneity, or branching.
+
 ### Minimal Guardrail
 
 > **Level**: source-intuition pressure, not a resolved theorem.
@@ -581,7 +651,7 @@ A companion trace (`01_Source_Intuition/SRT_CHOICEMAP_RANDOM_RESYNCHRONIZATION_T
 
 ### Current State
 
-- `Core/SRT_Core_21_Minimal_Axioms.md P0-01` fixes selection as primitive: existence is the image of selection (`∃x ⟺ x ∈ Range(Ĝ)`). `P0-04` separately exposes the origin of selectability as open (see §7 above).
+- `Core/SRT_Core_21_Minimal_Axioms.md P0-01` fixes selection as primitive and now explicitly carries its minimal actualisation kernel (`∃x ⟺ x ∈ Range(Ĝ)`). Under AM-A, `P0-04` supplies the well-formed formal carrier and no-prior-chooser boundary; it does not open a second internal derivation task for the primitive (see §7 above).
 - `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1` defines the subtractive test for this primitive: remove the word and primitive role of `selection`, retaining only asymmetric constraint, reachable-set restriction, history dependence, cost, and consequence return.
 - Two registers must be kept separate, and neither may borrow the other's authority:
   - **Claim Ladder register**: `selection` is currently a **P0 primitive axiom** (`P0-01`). That is its epistemic-rank registration and is unchanged by this pass.
@@ -598,7 +668,7 @@ Until this produces a concrete difference the competitor vocabulary cannot recon
 Two guardrails on how the test may be run:
 
 1. **Refit-budget relativity (GOV-SUB01 §3, §7.4).** A `broad K` replacement that reconstructs SRT behavior in non-selection vocabulary shows *representational substitutability*, not *absence of the underlying role*. Do not count a variable as removed when its function was merely moved into initialization, a loss term, a prior, preprocessing, or a renamed construct.
-2. **Distinctness from §7.** §7 (P0-04) asks where selectability *comes from*; this tension asks whether the selection *primitive can be dissolved* into non-selection vocabulary without loss. These are distinct exposures and must not be conflated or cited as one closing the other.
+2. **Distinctness from §7.** §7 records AM-A's declared primitive stopping point and the downstream domain-realization burden; this tension asks whether the selection *primitive can be dissolved* into non-selection vocabulary without loss. A successful deletion test could motivate a future author-level revision of that stopping point, but no current domain mechanism may silently perform that revision.
 
 ### Future Hardening Direction
 
@@ -643,33 +713,37 @@ Until then, `CG-0..CG-4`, the graded ladders, and the minima remain **P2-P3 audi
 
 ---
 
-## 15. `P0-02` Existence Index vs. `H(L_0) = ∞` (open, registered 2026-08-11)
+## 15. EX-A Existence Boundary and Former `H(L_0)` Formula Debt (resolved at proof-load level)
 
-### Current State
+### Author Resolution
 
-- `Core/SRT_Core_21_Minimal_Axioms.md` **P0-02** (primitive axiom, freeze Group A) gives existence-as-anchoring the compact form `E = 1 - H(L_1)/H(L_0)`.
-- `Core/SRT_Core_01_Axioms.md` (and its split `Core/Axioms_Split/01_Part02.md`) states, in the finiteness argument against total operator coverage, `H(\theta) \geq H(L_0) = \infty`.
-- `Core/Dynamics_Scaling_Split/01_Master_Equation_and_ScaleCoupling.md` uses `\Delta S = H(L_0) - H(L_1)` as the entropy-reduction basis of the cross-scale isomorphism argument.
+On 2026-08-11 the author selected **EX-A**. Canonical owners now separate:
 
-### Problem Point
+1. **manifest actuality** — a determinate `L_1` event occurred (`P0-01`);
+2. **anchoring persistence** — its trace, maintenance conditions, and constraint on later transitions continue (`P0-02`);
+3. **stable ISP identity** — the same perspective- and history-bearing process is recurrently reconstituted and remains continued-selectable (`P1-T06 / ST-A`).
 
-Taken together at face value these are jointly degenerate, not merely underspecified. With `H(L_0) = \infty` and `H(L_1)` finite, `E \equiv 1` for **every** anchored slice and `\Delta S \equiv \infty` for **every** selection: both quantities lose all discriminating power, and `E` cannot do the work P0-02 assigns it (degree of stable anchoring out of open possibility).
+The former `E = 1-H(L_1)/H(L_0)` expression is no longer a P0 equation. It is retained only in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B14` as a historical heuristic. EX-A adopts no global `H(L_0^{abs})`, accessible-domain normalization, probability measure, or quantitative existence index. The Gate A options remain in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` as history; the author gate itself is closed.
 
-No normalization convention, accessible-horizon restriction, or measure-theoretic guard exists anywhere in the corpus; `H(L_0)` is not a registered row in `_SRT_SYMBOL_TABLE.md`. The formula is still in live circulation as `[P0]` (e.g. `01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md`).
+### Cross-Scale Proof Audit (2026-08-12)
 
-This is distinct from the general "L₀ is structured potentiality, not a set" caution: the issue is that a P0 axiom carries an expression whose only stated inputs are declared infinite elsewhere in Core.
+`Operations/SRT_CROSS_SCALE_ENTROPY_FLOOR_AUDIT_2026-08-12.md` tested the one connection from entropy change to operator isomorphism. Verdict: **red／soft connection**. `Core/SRT_Core_14_Dynamics_Scaling.md` and its active reading surfaces now withdraw unqualified `\Delta S=H(L_0)-H(L_1)`, the coarse-graining entropy expression, and universal `\delta\int\Psi_fdt=0` from proof load. Even a well-defined scalar entropy trajectory does not identify a transition kernel, and ordinary many-to-one coarse-graining does not provide the `\Lambda^{-1}` required by strict conjugacy.
 
-### Status
+The live general interface is now `P3-B06 / T-Scale-02C1`: declared fine/coarse state spaces, a scale map, preserved observables, comparison norm, tolerance, and failure case may support an approximate-commutation test. Strict conjugacy survives only as a special P3 candidate for an explicitly invertible change of representation. `T-Scale-Rhythm-5` is correspondingly conditional P3/P4 model work, not a universal theorem derived from L0/L1.
 
-**Gate 0 constraint added (2026-08-11, adopted).** `Governance/SRT_CLAIM_LADDER.md §0A` classifies a measure or prior over `L_0` as **class B** — a reference-/regime-dependent object. Consequence for this tension, and its exact limits:
+**Gate 0 compatibility note (2026-08-11, adopted).** `Governance/SRT_CLAIM_LADDER.md §0A` classifies a measure or prior over `L_0` as **class B** — a reference-／regime-dependent object. This supports EX-A's demotion of the old ratio: `H(L_0)` is not licensed as a quantitative object under the current core because no measure or reference regime is defined for `L_0`. Gate 0 does not prohibit a future independently justified natural measure in kind, but such a measure would enter as a bounded lower-level model and would not by itself restore the former expression to P0 or prove a cross-scale isomorphism.
 
-- **Added**: `H(L_0)` is **not licensed as a quantitative object under current core**, because no measure / reference regime is defined for `L_0` (`_SRT_SYMBOL_TABLE.md` L₀ row: "measure/cardinality unfixed at core level"). Global notation does not supply the missing commitment.
-- **Not added**: this is an **admission gap, not a prohibition in kind**. A future, independently justified canonical natural measure is **not** ruled out. Do not cite Gate 0 as forbidding a natural measure.
-- **Still unresolved**: a natural `μ`; whether `H(L_1)` is finite; and the final form of P0-02's formula. Gate 0 selects **none** of Options A / B1 / B2 / C.
+The first bounded instantiation, `P3-Scale-NB1` (2026-08-12), tests neural divisive normalization against task-level behavioral choice. Its floor audit found the broad implication `normalized neural response -> behavioral choice` **red／soft**: a relative response vector is not a discrete choice, and `J=H-λE` does not uniquely derive divisive normalization without a specified cost, feasible set, dynamics, and boundary conditions. The narrowed interface is **yellow／conditional P3**: candidate identity mapping, a frozen neural readout, explicit threshold／accumulation or sampling and execution gates, held-out error, rival comparison, and intervention tracking are all required. No named dataset has yet turned this interface green.
 
-**This tension remains OPEN.**
+`papers/ALIFE2026_SelectiveRealityConstruction.md` still retains `dH(L_0)/dt=0` in a paper-specific historical surface; PC-A／EX-A do not silently backwrite that paper.
 
-**Author decision required — not adjudicated here.** Candidate resolutions (finite accessible-domain relativization / entropy-reduction reformulation / demotion of the expression to heuristic) with their respective costs are laid out in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate A**. No option has been adopted, and this tension does **not** license any file to pick one unilaterally. Until a gate verdict lands, cite P0-02's *claim* (existence = degree of stable anchoring) rather than its *formula*, and do not use `E` or `\Delta S = H(L_0) - H(L_1)` as a quantitative readout.
+### Status and Use Rule
+
+- **Resolved**: P0 semantic ownership; status of the old `E` ratio; removal of the `Core_14` entropy／minimum-action proof; invertibility boundary for strict conjugacy.
+- **Open／parked**: any future B14 model-level persistence measure; P3-B07 cross-scale universality and discriminating gain under declared mappings; empirical execution of P3-Scale-NB1 with a named task, dataset, frozen readout, tolerance, rival set, and intervention.
+- **Forbidden**: citing old `E`, unqualified `\Delta S`, `dH(L_0)/dt=0`, strict conjugacy under ordinary coarse-graining, or universal minimum action as canonical existence／persistence readouts or cross-scale proofs; inferring that a transient event never occurred; inferring stable ISP, generative health, subjecthood, consciousness, moral status, or legitimacy from persistence alone.
+
+The B14 measurement candidate and the former strong cross-scale formulas are parked, not active canonical todos. B14 revives only when a named P3 workline supplies the domain, partition／sigma-algebra, measure, admissibility conditions, event boundary, and time horizon. Strong cross-scale formalization revives only when a named workline supplies state spaces, scale map, invertibility or approximation bound, preserved observables, comparison norm, failure case, and discriminating gain over ordinary coarse-graining or path dependence.
 
 ---
 

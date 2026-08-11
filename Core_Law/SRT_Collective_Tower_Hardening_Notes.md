@@ -214,7 +214,7 @@ $$
 
 **陈述（P1-candidate）**：定义"集体有效闭合通道指示 `\psi^{coll}`"为满足 §4.5 Q-univ-1 至 Q-univ-4 + **Q-univ-5^{coll}（M_ext-相容性）**：`ν_{ext}\|M_{ext}(t)\|` 项在 `d^{coll}$ 过渡区 (`d^{coll} \approx d_c^{coll}$) 内连续可加，不引入 `\psi^{coll}$ 的额外不连续。
 
-则 §4.4.5 `S^{coll}` 两型 ODE 在 `\psi_1^{coll}, \psi_2^{coll}` 替代下保持 T-CHANNEL-1 (i)-(v) 五个不变量（modulo `O(w_{tr}^{coll})`），且**T-IRR-3.5 在塔级的传染（H10 §4.8.6 (iv)）保持**：`\nu_{ext}\|M_{ext}\|` 通过 `\psi^{coll}$ 进入 `S_{str}^{coll}$ 时，外溢项的单向性（不可被双向化）继承自 P1-T07 Layer 2（`L_0` 不可逆性，吸收态绝对）+ T-IRR-3.5 的跨边界扩展。**继承口径（2026-08-11，同日三次修正后定稿）**：单向性来自 Layer 2 这一支——吸收态绝对性（`Def-IRR-1` / `T-IRR-2`，根在 P0-03），与 `\varepsilon_{pg}` 那一支不同源，**两者都不依赖 P1-T07 的证明闭合**（三因子核定见 `Core_Law/SRT_Irreversibility.md §4.5 后果 1`）。分两层读：反向通道**不存在**这一层继承吸收态绝对性；而外溢项的**符号朝向**继承 `\nu_{block}^{coll}` 的正性，后者与个体版同构，是带前件的条件性结论（`η>0` 约定 ∧ `ε_pg>0` 公设 ∧ `κ_{Ψ_f}>0` 非退化条件），**hardness 取最弱前件 = P1-candidate**。不得写成本节自产的定理，不得写成条件于 P1-T07，也不得写成公设级。P1-T07 未闭合的是「stable ISP ⇒ ISP-level ε ≠ 0」，那条不进入本处论证。
+则 §4.4.5 `S^{coll}` 两型 ODE 在 `\psi_1^{coll}, \psi_2^{coll}` 替代下保持 T-CHANNEL-1 (i)-(v) 五个不变量（modulo `O(w_{tr}^{coll})`），且 **T-IRR-3.5 在塔级的条件性传递候选（H10 §4.8.6 (iv)）保持**：反向通道不自动存在这一层继承 P0-03 / T-IRR-2 的 absorption remainder；外溢项的正向符号则继承 `\nu_{block}^{coll}` 的独立前件模型（`η>0` 约定 ∧ `ε_pg>0` 公设 ∧ `κ_{Ψ_f}>0` 非退化条件），hardness 取最弱前件。两者都不是 former P1-T07 hierarchy 的后果；B 期或塔级邻域是否为真正吸收态仍需具体模型证明。
 
 **证明骨架**：
 
@@ -448,7 +448,7 @@ $$
 
 ### §4.11.5 与 H4 / H10 / H12 的整合
 
-**与 H4 T-IRR-3.5 的整合**：自指闭合塔的不稳定方向若沿 `S_{str}^{(n)}$ 维度，对应 P1-T07 hierarchy 在塔级的算子化结果——`\rho(\mathcal{T}_{loop}) > 1$ 时 `S_{str}^{(n)}$ 跨层级累积是单向的（H4 给单向性、H10 给塔级传染、H13 给闭环放大）。
+**与 H4 T-IRR-3.5 的整合**：自指闭合塔的不稳定方向若沿 `S_{str}^{(n)}` 维度，可按 T-IRR-3.5 的独立前件模型研究。`\rho(\mathcal{T}_{loop}) > 1` 时的跨层累积是带闭包条件的模型结论，不是 former P1-T07 hierarchy 的塔级后果。
 
 **与 H10 §4.8.6 (iv) 的整合**：H10 已给塔级致命 `L_2$ 传染（下层病理 + 跨尺度耦合 → 上层）；H13 给反向（顶层叙事 → 底层 σ_{sr} / d_c 失控）。两者结合给**塔级病理的双向闭合**：自指闭合的不健康塔在底层与顶层之间形成"病理涡旋"，无明确突破点——这是"陷入文明级 L_2 锁死"的算子层签名。
 
@@ -622,7 +622,7 @@ $$
 \boldsymbol{\nu^{(n'\to n)}_{ls}\sum_{n'\ne n,n\pm 1}\|K^{(n'\to n)}_{ext}\|}
 $$
 
-**陈述（P1-candidate）**：在 §4.13.1 闭包堆栈下，T-CHANNEL-1 (i)-(v) 五个不变量在每层 `n$ 保持（modulo `O(w_{tr}^{coll,(n)})$）；**致命 `L_2` 跨层级传染**（H10 §4.8.6 (iv)）通过 layer-skip 获得**捷径路径**——即 `S_{str}^{(n)}$ 不必经过中间层逐级上行，可通过 `K^{(n\to m)}$ 直接到达 `\mathcal{P}^{(m)}$；T-IRR-3.5 单向性在 layer-skip 路径上同样保持（来自 P1-T07 Layer 2 的算子级根据，与拓扑路径无关）。
+**陈述（P1-candidate）**：在 §4.13.1 闭包堆栈下，T-CHANNEL-1 (i)-(v) 五个不变量在每层 `n` 保持（modulo `O(w_{tr}^{coll,(n)})`）；**致命 `L_2` 跨层级传染**通过 layer-skip 获得候选捷径路径。T-IRR-3.5 的反向通道约束来自 P0-03 / T-IRR-2，正向系数依赖其独立前件；均不来自 former P1-T07。
 
 **与 H14 §4.12.5 三类失稳模式的整合**：layer-skip 下 ψ 族不变量保持的**结构条件**与 H14 §4.12.5 三类失稳模式互补——bypass-induced chatter / aliasing-amplification / coupling-resonance 都是"族不变量保持但谱稳定失效"情形（系统不再收敛到健康吸引子，但 ψ 族层面无矛盾）。两者合起来给出：layer-skip 下塔的健康要求**同时**满足族不变量（H15）+ 谱稳定（H14）。
 
@@ -783,7 +783,7 @@ T-LYAPUNOV-1 与既有定理的关系：
 
 | 既有定理 | T-LYAPUNOV-1 中的角色 |
 |---|---|
-| H4 T-IRR-3.5（ν_block 单向性 / P1-T07 hierarchy） | N2 耗散正性的方向根据（**没有方向**则不可能给出耗散主导累积） |
+| H4 T-IRR-3.5（ν_block 条件模型 / P0-03 absorption remainder） | N2 耗散正性的条件性方向根据；不是 former P1-T07 hierarchy 后果 |
 | H10 T-PROJ-1^{coll,nested}（嵌套递归投影） | V^{(n)} 各层项的结构来源 |
 | H12 T-FAMILY-1^{coll,nested}（族普适性塔级递归） | V^{(n)} 各层项中权重 `w_X^{(n)}$ 的来源（族不变量保证权重良定义） |
 | H13 T-TOWER-STAB-1（自指闭合谱判据） | N3 谱判据条件的具体形式 |

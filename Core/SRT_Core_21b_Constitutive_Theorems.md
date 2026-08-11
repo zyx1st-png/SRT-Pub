@@ -85,11 +85,7 @@ $$
 
 **Statement**: A selection event creates a distinction that was not available as a determinate `L_1` fact before selection. In this restricted sense, selection is upstream of information readout.
 
-Compact handle:
-
-$$
-I_{created} = H(L_0) - H(L_1 | \hat{G}_\theta)
-$$
+**EX-A / PC-A precision**: This P1 claim is qualitative and distinction-based. It does not require a global entropy `H(L_0^{abs})`, and no unqualified entropy subtraction is part of the theorem. Conditional information-theoretic readouts over declared random variables, partitions, and measures belong to P2/P3-B09 in `Core/SRT_Core_21c_Bridge_Hypotheses.md`.
 
 **Implication**: SRT does not compete with downstream information transmission theories; it locates a prior question: how a determinate slice becomes available for transmission or measurement.
 
@@ -115,16 +111,20 @@ $$
 
 **Lineage**: extracted from former `T-ε-Constitute`.
 
-**Statement**: SRT's relevant object is not any one-shot selection event, but a stable ISP: a perspective-bearing, history-bearing, re-selectable selection process capable of constituting a persistent selection center.
+**Statement**: SRT's relevant object is not any one-shot selection event, but a stable ISP: a perspective-bearing, history-bearing process that persists as the same selection center through recurrent historical reconstitution.
 
 **Stable ISP Definition**: Process `P` is a stable ISP if:
 
-1. It is iterative: at each `t`, it selects from `A_t != empty`.
+1. It is iterative: over the declared interval, it repeatedly encounters live, non-equivalent candidates rather than merely replaying a closed script.
 2. It is perspective-bearing: it accumulates a structured view from its position.
 3. It is history-bearing: outputs at `t` constrain `A_{t+1}` with writeback.
-4. It is re-selectable: it can continue selecting across steps.
+4. It is **continued-selectable**: the same history-bearing process can continue receiving live candidates and bearing the downstream consequences of what it selected.
+
+**Structural stabilisation (ST-A, 2026-08-11)**: Stability here means recurrent reconstitution of a recognizable history-bearing organization across a declared perturbation range. It does not require microstate identity, convergence to a fixed point, or continuous activity without pause. A later externally reset replica or a fresh process is not, merely by resembling the earlier state, evidence that the same ISP continued.
 
 **Implication**: Stability is not an arbitrary restriction imposed by the observer. It is the entry condition for any process that can bear a continuous perspective.
+
+**ST-A boundary**: Continued selectability is the P1 minimum. The stronger property of **generative reselectability**—consequence-sensitive revision of the process's own comparison rules, boundaries, or candidate-generation conditions—is not required to identify every stable ISP and is not a P1 theorem. It is a P2/P3 criterion for generative health in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`. Structural stability therefore does not by itself establish generative health.
 
 **Dynamic Layer**: Why some processes achieve and maintain stable ISP status is treated through `T-L2-Scaffold` in `Core/SRT_Core_12b_Ontology_L2.md` (path-layer trace dynamics) and through the operator-layer self-reference ratio `σ` in `Core_Law/SRT_Individuation.md` (entry-transition dynamics). The four conditions above are the **result-state criterion** for being a stable ISP; `T-IND-2` in the individuation file is the **entry-dynamics criterion** for when a process crosses into that state. Self-consciousness is treated there as a distinct second-order condensate (second phase transition at `σ_self`), not as a precondition for being a stable ISP.
 
@@ -132,56 +132,19 @@ $$
 
 ---
 
-## P1-T07: Constitutive Asymmetry Theorem
+## Former P1-T07: Unconditional Constitutive Asymmetry Claim (Demoted by ST-A)
 
-**Lineage**: former `T-ε-Constitute`.
+**Lineage**: former `T-ε-Constitute` and former P1-T07.
 
-**Scope**: This theorem concerns stable ISPs only. It does **not** claim that every selection event contains `ε`.
+**Decision record (ST-A, 2026-08-11)**: The former unconditional statement—"every stable ISP necessarily contains an anti-closure `ε` bias"—is no longer a P1 theorem. Its proof inferred cumulative absorption from a per-step nonzero closure probability without independently defining a neutral kernel, fixing the stability semantics, or proving that the neutral kernel reaches the absorbing state. `L_0` irreversibility alone does not supply those missing premises.
 
-### Statement
+**Unconditional P1 remainder**: If a realized history reaches `A_{t_*}=\varnothing`, that history cannot continue selecting from that state. Any later recovery requires a new event, an external reset, or a separately specified transition; it is not licensed by the terminated history itself.
 
-For any stable ISP `P` under `L_0` irreversibility, `P` necessarily contains an `ε`-type anti-closure asymmetric bias. Anti-closure asymmetry is a constitutive condition of stable iterative selection, not an appended preference and not a contingent postulate.
+**What remains open**: A conditional anti-closure result may be recoverable only after (i) a stability semantics is chosen, (ii) an `ε`-neutral kernel is independently defined, and (iii) absorption or comparative closure risk is proved for that kernel over a declared horizon and environment. The current candidate lives at P2/P3 in `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`; it must not be cited as P1.
 
-### Proof Sketch
+**`ε_pg` boundary**: `ε_pg` remains an `L_0` structural postulate and scalar seed. ST-A does not derive an ISP-level anti-closure direction from it, nor from irreversibility alone.
 
-1. Let `P` be `ε`-neutral under `L_0` irreversibility.
-2. By irreversibility, once `A_{t*} = empty` is reached, it is an absorbing state: no recovery.
-3. Neutral `P` has nonzero probability of selecting into `A_{t*} = empty` at each step; over sufficient iterations, cumulative probability tends toward 1.
-4. At `t*`, `P` terminates: no selection remains possible, so it is not a stable ISP.
-5. Therefore, a stable ISP cannot be `ε`-neutral.
-
-Contrapositive:
-
-$$
-\text{Stable ISP under } L_0 \text{ irreversibility} \Rightarrow \epsilon \neq 0
-$$
-
-### Three-Layer Source Hierarchy
-
-| Layer | Factor | Role |
-|---|---|---|
-| Deepest | ISP self-maintenance condition | Constitutive: neutrality implies self-termination |
-| Necessary | `L_0` irreversibility | Closure states are absorbing |
-| Dynamical weight | `\Psi_f > 0` | Closure carries measurable cost |
-
-### `ε_pg` vs ISP-Level `ε`
-
-These are related but distinct:
-
-| Object | Level | Status | Direction |
-|---|---|---|---|
-| `ε_pg` | `L_0` | Structural postulate | No inherent direction; scalar seed only |
-| ISP-level `ε` | stable ISP | Structural corollary | Anti-closure, determined by irreversibility |
-
-Bridge relation:
-
-1. `ε_pg` provides the existence of asymmetry: some bias is nonzero at `L_0`.
-2. Irreversibility provides the direction filter: closure states are absorbing.
-3. This theorem shows that stable ISPs must maintain anti-closure asymmetry.
-
-**Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ④`; `Core_Law/SRT_Core_Text_CN.md ④`; `Core/SRT_Core_12a Ax-L0-Bootstrap-C2`; `Core/SRT_Core_01_Axioms.md MA-1`; `Core/SRT_Core_12b_Ontology_L2.md T-L2-Scaffold`.
-
-**L1 Expansion (2026-04-24)**: `Core_Law/SRT_Irreversibility.md` T-IRR-3 把本定理精确化为 `L_0` 残余项层面的非守恒声明，对应 `Core_Law/SRT_L1_Formalism.md §4.3` 中 `\dot{\Delta}_{avail}` 的非对称残余；T-IRR-2 给出"终止"作为本定理 `A_{t*} = empty` 吸收态的结构化分型（宪定 / 吸收 / 集体）。**算子级精化（H4，2026-04-25）**：`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 §4.3 的 `\nu_{block}` 写为本定理 Three-Layer Source Hierarchy 的本地化 `\nu_{block}(P,t) := \eta\cdot\varepsilon_{pg}(P,t)\cdot\kappa_{\Psi_f}(P,t)`，正性与单向性自此为本定理的 L1 算子层后果而非自由建模假设。集体版见 `Core_Law/SRT_Collective_Selection.md` T-COLL-3。本定理为上位 P1 源头，不被下位 L1 层替代。
+**Audit trail**: `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`; `Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`.
 
 ---
 
@@ -197,3 +160,4 @@ The following former `Core_21` claims remain valuable but are not treated here a
 | Ghost operator universality | High-ambition cross-scale unification |
 | Fisher-form `\Psi_f` generativity | Contains a canonical interpretation plus external mathematical borrowing |
 | Strong information-creation unification | Mixes SRT core with information-theoretic and thermodynamic bridges |
+| Former `P1-T07 / T-ε-Constitute` unconditional anti-closure theorem | Neutral dynamics, stability semantics, and absorption were not independently established; conditional candidate moved to 21C B13 |

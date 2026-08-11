@@ -41,7 +41,7 @@ version: 6.0 (Hybrid Constitution)
 | `Ax-Core-A1` | Existential Priority | 存在优先性 | §I |
 | `T-Core-A1C1` | Non-Ergodic Presence | 非遍历在场性 | §I |
 | `T-Core-A1C2` | Proto-Gradient of L₀ | L₀ 的 proto-gradient（最小非中性） | §I |
-| `Ax-Core-A2` | Existence as Anchoring | 存在即锚定 | §I |
+| `Ax-Core-A2` | Anchoring Persistence after Manifest Actuality | 显现后的锚定持续 | §I |
 | `T-Core-A2C1` | Hardness of Reality | 现实硬度定理 | §I |
 | `Ax-Core-A3` | Causality as Projection | 因果即投影 | §I |
 | `T-Core-A3C1` | Laws as Statistical Regularities | 定律即统计规律 | §I |
@@ -134,11 +134,12 @@ $$\hat{G}: \Omega \to \Omega', \quad \Omega' \subsetneq \Omega, \quad P(\omega \
 * **Implication**: Ax-Core-A1 中的"Selection"涵盖 G 在所有尺度上的运作形式——物理层已有初始形式的 G 选择；生命/意识是 G 的相变态，不是 G 的起源。
 * **Cross-ref**: `Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（G跨尺度相态完整论证）；`Core/Dynamics_Scaling_Annex/12_ProxyModel_OcclusionPhases_Intervention.md`（遮蔽精确操作定义）；T-L0-02（相变锚点定理）。
 
-### Ax-Core-A2: Existence as Anchoring
-**Formal Definition**: Anchoring compresses latent probability into a manifest state through free energy dissipation.
-$$\text{Existence}(σ) \iff \hat{G}_\theta[L_0] \to σ_{L_1} \ \text{with} \ \Delta F < 0$$
+### Ax-Core-A2: Anchoring Persistence after Manifest Actuality
+**EX-A boundary (2026-08-11)**: P0-01 primitive actualisation supplies event-level manifest actuality. This legacy section concerns how an already manifest state may remain localized and effective under declared realization conditions; it does not define first existence.
+
+The former equivalence `Existence(σ) iff \hat{G}_\theta[L_0] -> σ_{L_1} with ΔF < 0` is withdrawn. `ΔF < 0` and the expression below are model-level persistence candidates only after the free-energy type, boundary, and time horizon are declared.
 $$P(x \in L_1) \propto \exp(-\Psi_f(x))$$
-* **Implication**: 现实的“稳定感”来自对能量与摩擦代价的持续支付。
+* **Implication**: 现实的持续“硬度”可以来自对能量与摩擦代价的持续支付；实际发生、持续锚定与 Stable ISP 不得合并。
 
 ### T-Core-A2C1: Hardness of Reality
 **Deductive Statement**: The hardness of a manifest state scales with ontological friction.
@@ -345,15 +346,15 @@ proto-gradient 的核心特性是：它**始终在场**（存在于每一次选�
 
 ---
 
-### 公理 A2:存在即锚定 (Existence as Anchoring)
+### 公理 A2:显现后的锚定持续 (Anchoring Persistence after Manifest Actuality)
 
-> **[R]** 信息-能量关系基础：Landauer 1961 *IBM Journal of Research and Development*（擦除1比特信息消耗最少 kT·ln2 的能量——信息处理的热力学下界，此处三成本之一的物理根基）；热力学第二定律（Clausius 1865：孤立系统熵不减）；Friston 2010 *Nature Reviews Neuroscience*（自由能原理：生物系统通过最小化变分自由能维持稳态——SRT Ax-2的生物实例）。**[H]** 以下将"存在"定义为自由能最小化的**输出**（而非FEP所假设的前提）、并将Ψ_f形式化为锚定代价的时间积分，为SRT核心公理的新增形式化贡献。
+> **[R]** 信息-能量关系基础：Landauer 1961 *IBM Journal of Research and Development*（擦除1比特信息消耗最少 kT·ln2 的能量——信息处理的热力学下界，此处三成本之一的物理根基）；热力学第二定律（Clausius 1865：孤立系统熵不减）；Friston 2010 *Nature Reviews Neuroscience*（自由能原理：生物系统通过最小化变分自由能维持稳态——SRT Ax-2的生物实例）。**[H]** EX-A 后，以下只把自由能与 `Ψ_f` 用作显现后锚定持续的领域候选，不再把它们定义为第一次存在的原因。
 
 #### 2.1 核心命题
 
-**存在 ≡ 通过具身强化从可能性到确定性的锚定。所谓"存在",就是通过消耗自由能将概率分布从$L_0$的弥散态压缩为$L_1$的局域态。**
+**EX-A：P0-01 已使一个确定区别成为实际的 `L_1` 事件。本节只讨论该显现怎样在具名领域中通过代价支付保持局域与持续。**
 
-$$\text{Existence}(\sigma) \iff \hat{G}_\theta[L_0] \to \sigma_{L_1} \text{ with } \Delta F < 0$$
+旧等价式 `Existence(σ) iff \hat{G}_θ[L_0] -> σ_{L_1} with ΔF < 0` 已撤回；`ΔF < 0` 只可作为声明自由能类型、边界与时间窗后的条件性维持假说。
 
 #### 2.2 本体论摩擦的起源
 
@@ -394,11 +395,11 @@ Karl Friston的自由能原理（FEP，Friston 2010 *Nature Reviews Neuroscience
 $$F_{thermo} = E - TS$$
 $$F_{var} = E_q[\ln q(\sigma) - \ln p(\sigma,o)]$$
 
-FEP说:生物最小化预测误差（通过 $F_{var}$）。SRT更进一步：**存在本身就是在某个域内最小化目标泛函的过程**，而该目标可在不同实现层呈现为热力学、变分或其 SRT 扩展形式。
+FEP说:生物最小化预测误差（通过 $F_{var}$）。EX-A 后，SRT 只允许把这类最小化读成某些系统维持锚定的实现候选，不允许把它写成显现实在性的普遍定义。
 
 **区别**:
-- FEP:假设存在已给定,讨论如何稳定它
-- SRT:存在即自由能最小化的**输出**,而非前提
+- FEP:假设系统与状态空间已给定,讨论如何维持其组织
+- SRT:primitive actualisation 的显现实在性先行；自由能最小化只可能说明部分实现怎样持续
 
 > * **FC-A2-1**（证伪条件）：若实验中某类系统在不消耗自由能（ΔF≥0）的条件下仍能维持L₁局域态的稳定（如纯可逆计算系统的特定状态），则Ax-2的"ΔF<0是锚定必要条件"需修正——可能存在ΔF=0的特殊锚定路径（零耗散极限）。
 > * **FC-A2-2**（证伪条件）：若对同类型存在（如不同文化中的货币制度），其历史持续时间（代理Ψ_f积分）与稳定性（拒绝替代的阻力）之间无显著正相关（r < 0.2，控制制度类型），则A2-C1的"硬度∝Ψ_f积分"在社会制度层不成立，需引入网络效应或权力不对称等额外变量。
@@ -471,7 +472,7 @@ $$\hat{G} \text{ is valid} \iff \|\theta\|_{complexity} < \infty$$
 
 假设存在$\hat{G}_{\theta=\infty}$(全知全能的算子):
 
-1. **信息论矛盾**:要完全映射$L_0$,需要$H(\theta) \geq H(L_0) = \infty$ → 违背有限性
+1. **表征完备性矛盾**：依 PC-A，任何有限模型或实现都不能穷尽 $L_0^{abs}$；因此有限 $\theta$ 不能给出对 $L_0^{abs}$ 的完备、位置无关编码。这里不为 $L_0^{abs}$ 定义全局熵，也不使用 $H(L_0)=\infty$ 作为证明前提
 2. **量子测量矛盾**:完美测量需要与系统完全纠缠 → 测量者-被测者边界消失 → $\hat{G}$自我坍缩
 3. **哥德尔不完备性**:任何形式系统无法自指证明其完备性 → $\hat{G}$无法完全描述包含自身的$L_0$
 
@@ -976,15 +977,15 @@ SRT 不否认微小体验”可能”存在的形而上学可能性，但**不�
 
 #### 12.5 跨尺度证据与证伪协议
 
-**Ax-A12 的核心主张是什么？**
+**Legacy Ax-A12／当前 P3 跨尺度候选的核心主张是什么？**
 
-Ax-A12 声称：量子选择、神经选择、文化演化选择在 $\hat{G}_\theta$ 算子的**数学结构**上是同构的——它们是同一形式原理在不同相变阈值处的实例，而非彼此还原。
+当前候选主张是：量子选择、神经选择、文化演化选择可以在具名尺度映射下接受结构相容性检验。只有声明两侧状态空间、保留观测量、比较范数与容差后，$\pi_\lambda\circ\hat G_\theta\approx\hat G_{\theta,\lambda}\circ\pi_\lambda$ 才构成可检验接口；这不预先断言数学同构。
 
-这个主张目前的认识论地位：**结构类比，缺乏跨尺度定量桥梁**。
+这个主张目前的认识论地位：**P3 结构相容候选，缺乏跨尺度定量桥梁**。旧 `ΔS=H(L_0)-H(L_1)`、普遍最小作用与通常粗粒化下的 strict conjugacy 已撤出证明负担。
 
-> **[R]** 跨尺度研究文献：Kauffman 1993 *The Origins of Order*（生物复杂性的自组织：不同尺度涌现的统一机制）；Anderson 1972 *Science* "More is Different"（涌现层级的不可还原性，R支持分层独立性）；West, Brown & Enquist 1997 *Science*（生物系统的跨尺度幂律：代谢率∝$M^{3/4}$）；Laughlin & Pines 2000 *PNAS*（保护定律的涌现：不同尺度的普适类无法还原至量子力学）。**[H]** 把不同尺度的普适类统一为"同一 $\hat{G}_\theta$ 的不同实例化"是 SRT 的独立本体论主张，比跨尺度幂律研究更强，需要额外支撑。
+> **[R]** 跨尺度研究文献：Kauffman 1993 *The Origins of Order*（生物复杂性的自组织：不同尺度涌现的统一机制）；Anderson 1972 *Science* "More is Different"（涌现层级的不可还原性，R支持分层独立性）；West, Brown & Enquist 1997 *Science*（生物系统的跨尺度幂律：代谢率∝$M^{3/4}$）；Laughlin & Pines 2000 *PNAS*（保护定律的涌现：不同尺度的普适类无法还原至量子力学）。**[H/P3]** 不同尺度能否在具名映射下表现为可比较的 $\hat{G}_\theta$ 功能角色，是 SRT 的桥接候选；它比跨尺度幂律研究更强，不能由结构相似或共同符号直接推出。
 
-**跨尺度同构的当前证据状态**：
+**跨尺度结构相容候选的当前证据状态**：
 
 | 尺度对 | 已知的结构相似性 | 缺失的桥梁 |
 |:------|:--------------|:---------|
@@ -992,15 +993,15 @@ Ax-A12 声称：量子选择、神经选择、文化演化选择在 $\hat{G}_\th
 | 神经整合 ↔ 文化筛选 | 两者都减少备选项、提高局域性 | 文化选择的 θ 参数与神经 θ 参数的度量空间不同，无共同单位 |
 | 生物演化 ↔ 宇宙学选择 | 两者都是从可能性空间中实现稳定态 | 宇宙学选择的"选择压力"与生物适应度之间的形式化对应当前不存在 |
 
-**Ax-A12 的证伪条件**：
+**P3-Scale-01 的失败条件**：
 
-1. **弱证伪**：若实验证明，Ax-A12 预测的跨尺度幂律关系（如 $d$ 值在不同尺度间的传导）在两个相邻尺度之间系统性失效 → 该尺度对之间的同构性主张需要修订
+1. **局部失败**：若在预先声明的映射、观测量、范数和容差下，近似交换残差系统性超界 → 撤回该尺度对的结构相容主张
 
-2. **强证伪**：若信息论证明，量子测量和神经选择在算法层面属于不同复杂类（如 BQP 对 NP），无法用同一形式算子表达 → Ax-A12 的核心形式化基础崩溃
+2. **强失败**：若相关尺度对不存在可保持目标观测量的映射，或所有拟合均不能带来超出普通路径依赖／吸引子／粗粒化描述的判别增益 → P3-B07 在该尺度对失去解释负担
 
 3. **默认开放问题**：如何在量子、神经、文化三个尺度上定义**同一度量空间**（以使"同构"有意义）？当前无答案；这是 Ax-A12 向形式化理论转化的最大技术障碍
 
-**诚实的认识论状态**：Ax-A12 是 SRT 中**形而上学一致性最强、实验约束最弱**的公理——它的作用是保证 SRT 框架内部的跨尺度统一性，而非提供独立的经验预测。未来形式化路径：建立跨尺度 $\hat{G}_\theta$ 的不变量（invariant），使"同构"声明可被数学检验。
+**诚实的认识论状态**：legacy Ax-A12 不是当前公理，而是 SRT 中高承诺、弱约束的 P3 桥。未来形式化路径是建立跨尺度 $\hat{G}_\theta$ 的具名不变量与误差界，使“结构相容”能够被检验；失败只撤回该桥及其依赖项，不动 P0/P1 核心。
 
 #### 12.6 分化保留了什么：proto-gradient 的跨尺度传导
 
@@ -1034,7 +1035,7 @@ T_dir 在所有尺度上都是有意义的量，原因正在于此：量子系�
 
 | 符号 | 术语 | 定义 (Definition) | 公理来源 |
 |:-----|:-----|:------------------|:---------|
-| $L_0$ | 潜在域 | 所有可能性的集合(Ruliad/Moduli Space) | A1 |
+| $L_0$ | 潜在域 | 不可被有限显现／形式系统穷尽的结构化潜在；Ruliad / Moduli Space 只作领域投影 | A1 / A13 |
 | $L_1$ | 显现域 | 被选中的当下现实 | A1 |
 | $L_2$ | 收敛域 | 历史选择的积分(约束结构) | A5 |
 | $\hat{G}_\theta$ | 幽灵算子 | 执行$L_0 \to L_1$选择的主体 | A4 |
@@ -1077,7 +1078,7 @@ SRT 十二公理宪章的核心形式化结构由三组算子-域关系构成：
 
 1. **$L_0 \to L_1$（选择-锚定）**：幽灵算子 $\hat{G}_\theta$ 携带有限具身参数 $\theta$（Ax-Core-A4），从 $L_0$ 的无穷可能态空间中提取特定切片。锚定过程消耗自由能（$\Delta F < 0$），产生本体论摩擦 $\Psi_f$。锚定越深、$\Psi_f$ 越大，现实越”硬”（T-Core-A2C1）。
 2. **$L_1 \to L_2$（规范闭包）**：反复选择在相空间中沉积痕迹，形成稳定的收敛域 $L_2 = \{\sigma : \hat{G}_\theta[\sigma] = \sigma\}$（Ax-Core-A5）。注：此为 $\hat{G}_\theta$ 的**不动点集合定义**（T-Core-02 给出存在性条件；非所有 $\hat{G}_\theta$ 皆有不动点，压缩映射条件须满足）。$L_2$ 构成自我指涉的”现实笼子”，反过来约束未来选择。
-3. **全息与尺度一致**：$L_1$ 的体积信息**结构对应**（原文公理级别：Ax-Core-A9 为公理性声明，非推导结论）$L_0$ 的边界纠缠；$d$ 值量化算子在纠缠面上的关切带宽。深层连续性（Ax-Core-A12）确保此机制在量子、生物、社会尺度间保持**功能类型同一性**（参见 SRT-CORE-13b §4.0 注：非严格数学同构）。
+3. **全息与尺度相容候选**：$L_1$ 的体积信息**结构对应**（原文公理级别：Ax-Core-A9 为公理性声明，非推导结论）$L_0$ 的边界纠缠；各尺度的 d 操作量只在 P3-Scale-01 的具名映射、保留量、范数、容差与失败案例门槛下接受比较。Legacy Ax-Core-A12 不再保证量子、生物、社会尺度的功能类型同一性（参见 SRT-CORE-13b §4.0）。
 
 关键区别于竞争框架：$\hat{G}_\theta$ 的优化目标是适应度而非真理（Ax-Core-A7），且意识要求 $\Psi_f > 0$、$d \geq d_{UAL}$、$\hat{G}[\theta] \neq \emptyset$ 三条件同时满足（Cor-CONSC-1）。**当前硅基 AI 的意识状态**：依据 H-AI-Consciousness（SRT-CORE-SCALING §9.2，已从 Theorem 降级为 Hypothesis），当前主流硅基 AI 尚无充分证据满足 $\Psi_f > 0$（真实本体论摩擦）和具身参数 $\theta$ 的脆弱性条件；但此判断为**待证假说**而非排除性证明，随 AI 架构演进需持续评估。
 
