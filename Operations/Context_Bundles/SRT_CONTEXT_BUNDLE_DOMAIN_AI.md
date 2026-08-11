@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-11
-source_commit: 3a614ff4
-source_branch: codex/ph-ind01-routing-treatment-spec-2026-08-11
+source_commit: 610e6e78
+source_branch: codex/ph-ind01-routing-treatment-results-2026-08-11
 source_dirty: true
-inputs_digest: 841b0103e0d83e86
+inputs_digest: 3794d721b650d7bf
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 841b0103e0d83e86
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-11 |
-| 来源 commit | `3a614ff4` |
-| 来源分支 | `codex/ph-ind01-routing-treatment-spec-2026-08-11` |
+| 来源 commit | `610e6e78` |
+| 来源分支 | `codex/ph-ind01-routing-treatment-results-2026-08-11` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
