@@ -72,6 +72,8 @@ ISBN 0-231-08158-8
 
 The translator's preface describes the book as first published in 1968 and as Deleuze's principal thesis for the Doctorat d'État. This SourceCard is based on a complete close read of the supplied translation: Introduction, Chapters I-V, Conclusion, with repeated checks of the relevant passages on representation, Ideas/problems, virtuality, intensity, individuation and repetition.
 
+Page anchors below refer to the printed pagination of the Paul Patton translation. For load-bearing source-level claims, this card preserves page-level locations rather than treating “full close-read” as sufficient evidence localization.
+
 This is a philosophical monograph. Its references to differential calculus, thermodynamics, embryology, psychoanalysis, biology and other sciences are part of Deleuze's conceptual construction and intellectual context; they are not, by themselves, modern empirical validation of SRT or of Deleuze's ontology.
 
 ## 3. Introduction — repetition is not generality
@@ -193,6 +195,8 @@ The possible is commonly represented as resembling the real minus existence. The
 
 Actualisation therefore does not reproduce a preformed copy. The actual does not resemble the virtual structure it actualises.
 
+**Text anchor:** Patton, pp. 208, 211–212.
+
 ### 7.3 Differentiation / differenciation
 
 The English translation preserves Deleuze's technical distinction:
@@ -206,6 +210,8 @@ differenciation
 ```
 
 The object has two dissimilar halves: virtual differential determination and actual differenciation.
+
+**Text anchor:** Patton, pp. 207, 209.
 
 ## 8. Chapter V — intensity and individuation
 
@@ -224,6 +230,8 @@ heterogeneous series
 -> phenomenon / sign
 ```
 
+**Text anchor:** Patton, p. 222.
+
 ### 8.2 Intensity generates and is covered by extensity and quality
 
 Intensity is implicated difference. In explicating itself it creates qualities and extensities, but the resulting extensive/qualified system tends to cancel or cover the difference that generated it.
@@ -236,9 +244,13 @@ generative condition
 -> result obscures the generative condition
 ```
 
+**Text anchor:** Patton, p. 228.
+
 ### 8.3 Intensity determines actualisation
 
 The chapter explicitly says intensity is the determinant in actualisation and that intensity "dramatises": intensive differences are expressed in spatio-temporal dynamisms that determine virtual differential relations to be incarnated in actual qualities and extensities.
+
+**Text anchor:** Patton, p. 245.
 
 ### 8.4 Individuation before differenciation
 
@@ -254,9 +266,13 @@ metastable pre-individual field
 
 Deleuze explicitly states that individuation precedes differenciation in principle. The individual is not derived by adding particularity to an already-complete species. The individual remains attached to a pre-individual reserve of singularities.
 
+**Text anchor:** Patton, pp. 246–247.
+
 ### 8.5 Interiorisation of difference
 
 In complex systems, constitutive differences increasingly become interiorised in centres of envelopment. Difference and repetition become less dependent on externally reproducing identical conditions and more internal to the organisation of the system.
+
+**Text anchor:** Patton, p. 256.
 
 ## 9. Conclusion — complete generative architecture
 
