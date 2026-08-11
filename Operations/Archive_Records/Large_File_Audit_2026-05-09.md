@@ -87,12 +87,12 @@ canonical: false
 | urgent | 3127.9 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.pdf` | artifact/generated; do not use as primary connector read path |
 | urgent | 2460.1 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx` | artifact/generated; do not use as primary connector read path |
 | urgent | 1070.7 KiB | `papers/CostlySelectiveClosure_AdaptiveBehavior_submission.docx` | artifact/generated; do not use as primary connector read path |
-| urgent | 479.4 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 479.5 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 363.1 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 336.4 KiB | `papers/costly_selective_closure_supplement/figures/figure3_results.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 277.3 KiB | `Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 267.5 KiB | `Archive/root_misc/Pasted image 20260306100654.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 207.7 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 207.8 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 181.2 KiB | `papers/costly_selective_closure_supplement/figures/figure1_framework.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 160.6 KiB | `Operations/Audits/data/srt_material_assimilation_delta_2026-08-11.csv` | artifact/generated; do not use as primary connector read path |
 | urgent | 142.4 KiB | `papers/costly_selective_closure_supplement/figures/figure2_design.png` | artifact/generated; do not use as primary connector read path |
@@ -103,7 +103,7 @@ canonical: false
 | urgent | 111.4 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 108.2 KiB | `Archive/raw_sessions/SRT_SESSION_RAW_TRANSCRIPT_2026-03-31.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 107.2 KiB | `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
-| urgent | 106.1 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 106.2 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 102.7 KiB | `Archive/root_misc/Selection-Reality Theory (SRT).pdf` | artifact/generated; do not use as primary connector read path |
 | action | 97.6 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | artifact/generated; do not use as primary connector read path |
 | action | 91.1 KiB | `papers/ontological_friction/paper_ontological_friction_zh.html` | artifact/generated; do not use as primary connector read path |
@@ -114,7 +114,7 @@ canonical: false
 | action | 81.7 KiB | `papers/costly_selective_closure_supplement/figures/figure3_results.svg` | artifact/generated; do not use as primary connector read path |
 | action | 80.4 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.pdf` | artifact/generated; do not use as primary connector read path |
 | action | 75.1 KiB | `papers/CostlySelectiveClosure_AdaptiveBehavior_submission.tex` | artifact/generated; do not use as primary connector read path |
-| action | 73.9 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | artifact/generated; do not use as primary connector read path |
+| action | 74.0 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | artifact/generated; do not use as primary connector read path |
 | action | 69.2 KiB | `papers/history_dependent_reachability/manuscript/MANUSCRIPT.md` | artifact/generated; do not use as primary connector read path |
 | action | 69.0 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.svg` | artifact/generated; do not use as primary connector read path |
 | warning | 67.6 KiB | `papers/ontological_friction/paper_ontological_friction_zh.md` | artifact/generated; do not use as primary connector read path |
