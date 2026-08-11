@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-11
-source_commit: 9ba57aa3
+source_commit: b5a56105
 source_branch: claude/srt-gate0-l0-contentless-structurality
 source_dirty: true
 inputs_digest: 720d87a4698fa354

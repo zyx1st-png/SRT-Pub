@@ -344,10 +344,10 @@ The withdrawn rule cut on the **left** column and therefore had to delete `κ₀
 
 | Failure | Blocked by | `κ₀` etc. survive because |
 |---|---|---|
-| **L₀ teleology** | G0-2 — a goal is content, however globally written | κ₀ supplies anisotropic cost, no endpoint (`T-L0-Kappa0`: 「无终局预设」) |
-| **God's-eye global optimum** | G0-2 — a complete ranking is content | none of the four ranks latent possibilities |
-| **Domain bridge back-defining canonical** | G0-4 as corrected — citation direction is part of the rule | the four are defined in canonical, never imported from bridges |
-| **Undeclared global entropy** | class B — records the symbol table's existing "measure unfixed at core level" as a *non-licence*, so notation cannot hide the gap. Does **not** ban a future derived canonical measure | none of the four requires a measure to state |
+| **L₀ teleology** | G0-2 — a goal is content, however globally written | κ₀ supplies anisotropic cost geometry with **no endpoint** (`T-L0-Kappa0`: 「无终局预设」); a cost ordering is not a telos |
+| **God's-eye global optimum** | G0-2 — a **complete semantic / evaluative ranking** of latent world-states is content | none of the class-A commitments provides a complete semantic / evaluative ranking of latent world-states or a preferred endpoint / telos. `κ₀` and `ε_pg` do induce a **structural cost ordering / structural preference** (cheaper vs more expensive directions; `B ≥ 2` over `B ≤ 1`) — that is class A and is untouched (§1.1b) |
+| **Domain bridge back-defining canonical** | G0-4 as corrected — citation direction is part of the rule | the class-A commitments are defined in canonical, never imported from bridges |
+| **Undeclared global entropy** | class B — records the symbol table's existing "measure unfixed at core level" as a *non-licence*, so notation cannot hide the gap. Does **not** ban a future derived canonical measure | none of the class-A commitments requires a measure to state |
 
 ### The honest counter-argument
 
