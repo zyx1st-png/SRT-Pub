@@ -101,6 +101,91 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Evidentiary function | Period technical reconstruction with an alternative regular-class formulation, a direct `Reg` contradiction, and an explicit conditional relation to Shen’s grounded classes. |
 | Limitations | One printed page. The equivalence under the axiom of choice is asserted as easy but not proved there. The paper does not establish uptake, exhaustive historical availability, or destruction-versus-degradation under component removal. |
 
+### `FITCH1950-DEMONSTRABLY-CONSISTENT-I`
+
+| Field | Record |
+|---|---|
+| Stable key | `FITCH1950-DEMONSTRABLY-CONSISTENT-I` |
+| Author | Frederic B. Fitch |
+| Exact title | “A Demonstrably Consistent Mathematics—Part I” |
+| Year | 1950 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 15(1), pp. 17–24 |
+| Stable record | JSTOR 2268437 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–9 are printed pp. 17–24. All pages rendered and visually checked. |
+| Exact locations used | pp. 17–18 (§9, rational numbers); pp. 18–20 (§10, real numbers); pp. 20–23 (§11, sequences); pp. 23–24 (§12, intervals and Theorem 12.5). |
+| Evidentiary function | Establishes the existence of a continuous, multi-page numbered construction record in the bounded corpus. |
+| Limitations | Page verification and structural description only. No six-test audit, load-bearing-component analysis, admission, or individuation judgement was performed. |
+
+### `ROSSER-WANG1950-NONSTANDARD-MODELS`
+
+| Field | Record |
+|---|---|
+| Stable key | `ROSSER-WANG1950-NONSTANDARD-MODELS` |
+| Authors | J. Barkley Rosser and Hao Wang |
+| Exact title | “Non-Standard Models for Formal Logics” |
+| Year | 1950 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 15(2), pp. 113–129 |
+| Stable record | JSTOR 2266971 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–18 are printed pp. 113–129. All pages rendered and visually checked. |
+| Exact locations used | pp. 113–117 (§§1–2); pp. 117–121 (§3 and the model/semi-model construction); pp. 122–123 (§§4–6); pp. 124–128 (explicit model-enlargement construction); p. 129 (conclusion and bibliography). |
+| Evidentiary function | Establishes the existence of a multi-section, multi-page model-construction and relative-consistency record in the bounded corpus. |
+| Limitations | The in-block review/erratum notice remains metadata-only. No component-removal test or method-family comparison was performed. |
+
+### `FITCH1951-DEMONSTRABLY-CONSISTENT-II`
+
+| Field | Record |
+|---|---|
+| Stable key | `FITCH1951-DEMONSTRABLY-CONSISTENT-II` |
+| Author | Frederic B. Fitch |
+| Exact title | “A Demonstrably Consistent Mathematics—Part II” |
+| Year | 1951 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 16(2), pp. 121–124 |
+| Stable record | JSTOR 2266684 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–5 are printed pp. 121–124. All pages rendered and visually checked. |
+| Exact locations used | p. 121, opening footnote and definitions 13.1–13.6; pp. 122–123, Theorems 13.7–13.13; p. 124, §§13.14–13.15 and corrections to Part I. |
+| Evidentiary function | Establishes the continuation of Fitch's numbered construction and an authorial correction/qualification record within the bounded block. |
+| Limitations | The author calls the two omitted earlier rules inessential, but this register draws no conclusion about removal, replacement, or individuation. Part I and Part II have not been run through the six tests. |
+
+### `KREISEL1951-NONFINITIST-I`
+
+| Field | Record |
+|---|---|
+| Stable key | `KREISEL1951-NONFINITIST-I` |
+| Author | G. Kreisel |
+| Exact title | “On the Interpretation of Non-Finitist Proofs—Part I” |
+| Year | 1951 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 16(4), pp. 241–267 |
+| Stable record | DOI 10.1017/S0022481200100581 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**, printed pp. 241–267. All 27 PDF pages rendered and visually checked. |
+| Exact locations used | pp. 241–248 (problem, historical remarks, results and applications); pp. 249–253 (preliminary definitions and two interpretations); pp. 254–259 (lemma and Hilbert-substitution section); pp. 260–266 (construction in §§30–33); p. 267 (references). |
+| Evidentiary function | Establishes the existence of a long definition/lemma/construction chain for interpretation of non-finitist proofs in the bounded corpus. |
+| Limitations | Part II, the in-block joint review, and the cited erratum remain unreached at full-text level. No six-test audit or target-line clearance was performed. |
+
+### `WANG1951-LORENZEN-REVIEW`
+
+| Field | Record |
+|---|---|
+| Stable key | `WANG1951-LORENZEN-REVIEW` |
+| Author | Hao Wang |
+| Exact title | “Paul Lorenzen. Algebraische und logistische Untersuchungen über freie Verbände. The Journal of Symbolic Logic, vol. 16 (1951), pp. 81–106.” |
+| Year | 1951 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 16(4), pp. 269–272 |
+| Stable record | JSTOR 2267912 |
+| Source role | `contemporaneous review` |
+| Window status | **inside** fixed 1938–1963 boundary; period review of an in-window primary publication |
+| Full-text/page-verification status | **VERIFIED — complete review entry**. PDF page 1 is the JSTOR cover; the Lorenzen entry begins on printed p. 269 and ends with Wang's signature on p. 272. All five PDF pages were rendered and visually checked. |
+| Exact locations used | pp. 269–270 (two-part structure and lattice/semilattice construction); pp. 270–271 (consistency, decision method, ramified type theory, and cut-elimination synopsis); p. 272 (induction/reducibility discussion, extension result, and listed misprints). |
+| Evidentiary function | Adds one page-verified review-of-record entry and a contemporaneous technical synopsis linked to Lorenzen's primary article. |
+| Limitations | This is not Lorenzen's pp. 81–106 primary text. The primary remains metadata-only, so the review cannot substitute for page verification of the original construction. No six-test audit was performed. |
+
 ## 3. Systematic-sweep metadata sources
 
 These records support `COV-JSL-1950-1955-SYSTEMATIC`. They register publisher/index contact and item metadata, not new page-verified evidence sources. Item-level fields are in `CONTROL_ARCHIVE_SWEEP_JSL_1950_1955_INVENTORY.tsv`.
@@ -166,7 +251,8 @@ Issue landing records reached:
 
 ## 4. Source-handling limits
 
-- The four local PDFs are evidence inputs only and are not committed or reproduced.
+- The local PDFs used for page verification are evidence inputs only and are not committed or reproduced.
+- The supplied 1967 fifth edition of Hilbert and Ackermann's *Grundzüge der theoretischen Logik* is not Ackermann's 1950 target article and is not registered as that source. The supplied Lorenzen-labelled file is registered only for the complete Hao Wang review entry it actually contains.
 - No publisher or JSTOR PDF discovered during the systematic sweep is committed or reproduced.
 - `VERIFIED` is a source/page status, not a candidate-admission or method-individuation verdict.
 - Complete reading does not transform corpus material into a candidate.
