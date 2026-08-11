@@ -39,9 +39,9 @@ updated: 2026-08-11
   - `NODE-CHOICE-GENERATION`：`robustly_observed`（bounded ×3）；此前 unconstrained 对照仍表明 PR #744 的贡献是 `retrieval_efficiency_only`、判断差分为零——**节点可用**与**PR 有增量**是两件事，不得互相代替。
   - `NODE-AI-REASONING`：`robustly_observed`（bounded ×3），零施工达成。
   - **强制前置协议**：任何节点在立项做活跃层之前，先跑 **bounded** 基线探针（`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`）；基线能答对的，不按"活跃层缺口"立项。已按此判定 `NODE-AI-REASONING` 为 Case A，不施工。
-  - **2026-08-11 材料簇基线**：AI 18/18、Neuroscience 18/18，均为 Case A / STOP；Philosophy 17/18，唯一失败 `P-A / P-Q5` 在 unconstrained diagnostic 中通过，故只允许 Case B 检索／压缩 treatment，不授权 AI CompactCore、N1–N13 或 Philosophy synthesis。结果见 `Operations/Audits/SRT_MATERIAL_CLUSTER_BASELINE_PROBE_RESULTS_2026-08-11.md`。
+  - **2026-08-11 材料簇基线与 treatment**：AI 18/18、Neuroscience 18/18，均为 Case A / STOP；Philosophy baseline 17/18 的唯一失败 `P-A / P-Q5` 经 Route 8a treatment 后在同 form 内通过，treatment 有效 observations 18/18、正例零失败、归因门通过。该 Case B 路由缺口已关闭，继续 STOP；不授权 AI CompactCore、N1–N13 或 Philosophy synthesis。见 `Operations/Audits/SRT_MATERIAL_CLUSTER_BASELINE_PROBE_RESULTS_2026-08-11.md`、`Operations/Audits/SRT_PH_IND01_ROUTING_TREATMENT_RESULTS_2026-08-11.md`。
   - **`engineered_not_active` 这一档整体可疑**：它多数依据「patch 没有 hook」，而该推理已被 `NODE-AI-REASONING` 证伪——patch 内容可经非 hook 路径进入 owner，且 `<域>/patches/` 本身就在有界检索可达范围内。
-  - 全仓结构基线见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`；命题级修正与 bounded 前置协议见 `Operations/Audits/SRT_CONFIRMED_PROPOSITION_SEMANTIC_COVERAGE_AUDIT_2026-08-08.md`、`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`；最新材料增量盘点与行为复核见 `Operations/Audits/SRT_MATERIAL_ASSIMILATION_DELTA_AUDIT_2026-08-11.md`、`Operations/Audits/SRT_MATERIAL_CLUSTER_BASELINE_PROBE_RESULTS_2026-08-11.md`；节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`。
+  - 全仓结构基线见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`；命题级修正与 bounded 前置协议见 `Operations/Audits/SRT_CONFIRMED_PROPOSITION_SEMANTIC_COVERAGE_AUDIT_2026-08-08.md`、`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`；最新材料增量盘点、基线与 treatment 见 `Operations/Audits/SRT_MATERIAL_ASSIMILATION_DELTA_AUDIT_2026-08-11.md`、`Operations/Audits/SRT_MATERIAL_CLUSTER_BASELINE_PROBE_RESULTS_2026-08-11.md`、`Operations/Audits/SRT_PH_IND01_ROUTING_TREATMENT_RESULTS_2026-08-11.md`；节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`。
 
 ## 当前仓库状态
 
