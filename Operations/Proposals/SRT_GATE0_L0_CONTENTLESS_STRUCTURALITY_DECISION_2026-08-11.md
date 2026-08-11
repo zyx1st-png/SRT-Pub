@@ -28,6 +28,8 @@ tags: [Governance, Proposal, Gate0, L0, TypeRule, DecisionGate]
 > **Purpose**: Gates A, B and C were registered separately (`Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`) but share one upstream question. This packet proposes the **boundary rule** that would settle what all three are arguing about, so that each gate is then decided *under* a stated type discipline rather than each inventing its own.
 >
 > **Gate 0 is a type / boundary rule, not a physical theorem and not a new axiom.** It says what *kind* of object may sit at L₀. It asserts nothing new about the world.
+>
+> **The classification is three-way** — class A contentless structural invariants (allowed), class B reference-dependent weighting / comparative objects (an *admission gap*, not a prohibition), class C semantic-evaluative content (forbidden). A contentless/contentful binary mis-types class B and would wrongly read a missing measure as forbidden content (§1.1a).
 
 ---
 
@@ -48,7 +50,7 @@ The predecessor packet (`SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` §4, mer
 
 Adopting the withdrawn framing would have required deleting or demoting `κ₀` — which the author has explicitly ruled out, and which would break `Ax-L0-Bootstrap` (κ₀ > 0 is its structural prerequisite) and `T-L0-Kappa0-C1` (the `Ψ_f` floor).
 
-**The real distinction is not *how many* position-independent objects L₀ has. It is *what kind*.** Gate 0 draws that line instead.
+**The real distinction is not *how many* position-independent objects L₀ has. It is *what kind*.** Gate 0 draws that line instead — and draws it in **three** classes, not two, because the object at issue in Gate A (a measure over `L₀`) is neither a contentless invariant nor semantic content. It is a weighting awaiting a reference structure.
 
 ---
 
@@ -58,21 +60,55 @@ Scope-limited by instruction to the eight named files plus at most one dependenc
 
 ### 1.1 Candidate-object table
 
-| Candidate L₀ object | Current status | Position-independent? | Contentless structural? | Contentful / evaluative? | Gate-0 compatible? |
-|---|---|---|---|---|---|
-| **`L₀` (structured potentiality)** | Core, universal. Symbol table: "structured potentiality, not nothingness"; **"measure/cardinality unfixed at core level"** | Yes | **Yes** — a modality with granularity, no preferred content | No | ✅ **Allowed** |
-| **`κ₀ > 0`** (primordial curvature) | `T-L0-Kappa0`, structural prerequisite, not historically generated; ontological status **explicitly open** (`SRT_L0_Ontological_Status.md`); symbol table Usage Rule 15 carries it as "primordial-curvature candidate" without downgrade | Yes | **Yes** — anisotropic *cost geometry*: some paths cheaper. `T-L0-Kappa0` itself states 「协同演化因此有方向性**而无终局预设**」 | No — no target state, no ranking of possibilities | ✅ **Allowed** |
-| **`ε_pg > 0`** (minimum non-neutrality) | L₀ directional postulate; symbol table: "NOT a content-level 'toward order' gradient… scalar seed, no inherent direction" | Yes | **Yes** — a formal asymmetry `B ≥ 2` over `B ≤ 1` | No | ✅ **Allowed** |
-| **irreversibility floor** | `L0_Metaphysics` 正骨架 #3; `P0-03` | Yes | **Yes** — asymmetry of history, no preferred history | No | ✅ **Allowed** |
-| **「order」/ 秩序** | `L0_Metaphysics` explicitly: L₁ read-back name; 「L₀ 本身不承载「秩序」作为内容性属性」 | n/a at L₀ | No | **Yes** — an evaluative pattern-name | ⛔ **Not an L₀ object** (allowed as L₁/P2 read-back) |
-| **初心 / Shoshin** | `L0_Metaphysics` 初心词条 + 正骨架: L1 concept, 「不在 L0 术语裁决范围内」. **But** `_SRT_D_VALUE_CANONICAL.md §5b.1` 规范表述 uses 「初心（全局收敛向量）」 under the Level-A guard; `Spirit_05` Ax-Sho-1 and `Phys_08` Def-Apeiron-1 give it global-variational form (`claim_mode: mixed` / `translation`, `canonical: false`) | Claimed globally in bridge layers | No | **Yes** — a direction *with content* | ⛔ **Not an L₀ object** → **Gate B** |
-| **global free-energy minimum** | Appears only in `d-value §5b` (under guard), `Spirit_04/05`, `Phys_08`. **Not in `L0_Metaphysics`, not in the symbol table, not in `Core_21_Minimal_Axioms`** | Claimed globally in bridge layers | No | **Yes** — a preferred world-state | ⛔ **Forbidden at L₀** → **Gate C** |
-| **universe-wide optimum** | Same as above; `d-value §5b.1` guard already says it is 「**不是一个位置无关的宇宙级最小值**」 | Claimed globally in bridge layers | No | **Yes** — a complete ranking of latent possibilities | ⛔ **Forbidden at L₀** → **Gate C** |
-| **probability measure / prior over `L₀`** | **Never specified anywhere.** Symbol table L₀ row explicitly declines: **"measure/cardinality unfixed at core level"** | Would be, if asserted | No — a measure is a weighting, i.e. content | **Yes** — a prior over what could have been anchored | 🔶 **Indexed-required** → permitted only as `μ_θ` under a declared regime → **Gate A** |
+The classification is **three-way, not binary**. Collapsing it to contentless/contentful mis-types measures and comparative objects (see §1.1a).
+
+| Candidate L₀ object | Current status | Position-independent? | Class | Gate-0 verdict |
+|---|---|---|---|---|
+| **`L₀` (structured potentiality)** | Core, universal. Symbol table: "structured potentiality, not nothingness"; **"measure/cardinality unfixed at core level"** | Yes | **A** — a modality with granularity, no preferred content | ✅ **Allowed at L₀** |
+| **`κ₀ > 0`** (primordial curvature) | `T-L0-Kappa0`, structural prerequisite, not historically generated; ontological status **explicitly open** (`SRT_L0_Ontological_Status.md`); symbol table Usage Rule 15 carries it as "primordial-curvature candidate" without downgrade | Yes | **A** — anisotropic *cost geometry*. It **does** induce a local / path-relative **structural cost ordering** (some directions cheaper). What it does **not** provide is a complete semantic or evaluative ranking of latent world-states, and it specifies **no preferred endpoint or telos** — `T-L0-Kappa0` itself states 「协同演化因此有方向性**而无终局预设**」. See §1.1b | ✅ **Allowed at L₀** |
+| **`ε_pg > 0`** (minimum non-neutrality) | L₀ directional postulate; symbol table: "NOT a content-level 'toward order' gradient… scalar seed, no inherent direction" | Yes | **A** — a formal asymmetry `B ≥ 2` over `B ≤ 1`; a two-class structural preference, not a world-state ranking | ✅ **Allowed at L₀** |
+| **irreversibility floor** | `L0_Metaphysics` 正骨架 #3; `P0-03` | Yes | **A** — asymmetry of history; no preferred history | ✅ **Allowed at L₀** |
+| **「order」/ 秩序** | `L0_Metaphysics` explicitly: L₁ read-back name; 「L₀ 本身不承载「秩序」作为内容性属性」 | n/a at L₀ | **C** — an evaluative pattern-name | ⛔ **Not an L₀ object** (allowed as L₁/P2 read-back) |
+| **初心 / Shoshin** | `L0_Metaphysics` 初心词条 + 正骨架: L1 concept, 「不在 L0 术语裁决范围内」. **But** `_SRT_D_VALUE_CANONICAL.md §5b.1` 规范表述 uses 「初心（全局收敛向量）」 under the Level-A guard; `Spirit_05` Ax-Sho-1 and `Phys_08` Def-Apeiron-1 give it global-variational form (`claim_mode: mixed` / `translation`, `canonical: false`) | Claimed globally in bridge layers | **C** — a global direction *with content* | ⛔ **Not an L₀ object** → **Gate B** |
+| **global free-energy minimum** | Appears only in `d-value §5b` (under guard), `Spirit_04/05`, `Phys_08`. **Not in `L0_Metaphysics`, not in the symbol table, not in `Core_21_Minimal_Axioms`** | Claimed globally in bridge layers | **C** — a preferred world-state | ⛔ **Forbidden at L₀** → **Gate C** |
+| **universe-wide optimum** | Same as above; `d-value §5b.1` guard already says it is 「**不是一个位置无关的宇宙级最小值**」 | Claimed globally in bridge layers | **C** — a complete semantic ranking of latent world-states | ⛔ **Forbidden at L₀** → **Gate C** |
+| **probability measure / prior over `L₀`** | **Never supplied or derived anywhere.** Symbol table L₀ row: **"measure/cardinality unfixed at core level"** | Would be, if asserted | **B** — a weighting that requires a reference structure. **Not thereby semantic or evaluative content**: the defect is that no canonical natural measure has been independently supplied or derived, not that measures are forbidden in kind | 🔶 **Not licensed by current core** → any quantitative use must state or derive its reference regime → **Gate A** |
+
+### 1.1a Why the classification is three-way
+
+A two-way contentless/contentful split mis-types an entire family of objects. Measures, entropies and comparative quantities are **not** semantic content — they are **reference-dependent**: they have no value until a reference structure (a regime, a source, an index) is supplied, but once supplied they carry no goal, telos, or preferred world-state.
+
+| Class | Nature | Members (this audit) | Admission at L₀ |
+|---|---|---|---|
+| **A** | primitive / contentless structural invariants | structured potentiality · `κ₀` · `ε_pg` · irreversibility floor | **allowed** |
+| **B** | reference- / regime- / source-dependent weighting or comparative objects | probability measure or prior · entropy over `L₀` · accessible or reachable optimum · any construct needing a declared reference structure | **not licensed by current core**; admissible only with its reference structure stated or derived |
+| **C** | semantic / evaluative / contentful objects | 「order」 as semantic target · 初心 as global contentful direction · 「good」 · telos · universe-wide preferred world-state or semantic optimum | **forbidden at L₀** |
+
+**The B/C distinction is load-bearing.** A class-C object is refused because of *what it asserts*. A class-B object is refused **only for as long as its reference structure is missing** — it is an admission gap, not a prohibition in kind.
+
+**Consequence for the symbol table's L₀ row.** 「measure/cardinality unfixed at core level」 must **not** be upgraded into "L₀ forbids an unindexed measure in principle." The correct reading is narrower:
+
+> **Current core does not license a probability measure over `L₀`. Any quantitative use requiring one must state or derive its reference regime / source. A future, independently justified canonical natural measure is *not* ruled out by Gate 0.**
+
+Gate 0's job here is only to stop **global notation from hiding a missing commitment**. It does not legislate against the commitment ever being supplied.
+
+### 1.1b Three kinds of ordering — do not collapse them
+
+`κ₀` is the reason this distinction has to be explicit. It **does** induce an ordering, and an earlier draft of this packet wrongly wrote "no ranking of possibilities."
+
+| Kind | What it does | Example | Gate-0 status |
+|---|---|---|---|
+| **structural cost ordering** | some directions are cheaper to traverse than others, locally / path-relatively | `κ₀`'s anisotropic cost geometry; `ε_pg`'s `B ≥ 2` over `B ≤ 1` | **class A — allowed** |
+| **semantic / value ranking** | latent world-states are ranked as better or worse | 「good」; a value ordering over outcomes | **class C — forbidden at L₀** |
+| **global preferred endpoint** | one state is the target the process is toward | telos; universe-wide optimum; 初心 as global convergence vector | **class C — forbidden at L₀** |
+
+**A structural cost ordering is not a semantic ranking, and neither is a preferred endpoint.** This distinction belongs in the Gate 0 summary precisely so that a future pass does not read *any* ordering as content and mistakenly come for `κ₀` or `ε_pg`.
 
 ### 1.2 Three audit findings worth recording independently of the verdict
 
-**(a) The "measure unfixed" line is already canonical.** `_SRT_SYMBOL_TABLE.md`'s L₀ row states the measure and cardinality are *unfixed at core level*. Gate 0's "indexed-required" category for `μ` therefore **codifies an existing canonical refusal** rather than adding a new restriction. This materially strengthens Gate A: an unindexed `H(L₀)` is not merely under-specified, it presupposes exactly what the symbol table declines to fix.
+**(a) The "measure unfixed" line is already canonical — but it is a non-licence, not a prohibition.** `_SRT_SYMBOL_TABLE.md`'s L₀ row states the measure and cardinality are *unfixed at core level*. So Gate 0's class-B treatment of `μ` **records an existing canonical non-commitment** rather than adding a restriction: an unindexed `H(L₀)` presupposes exactly what the symbol table declines to fix.
+
+**This must not be over-read.** "Unfixed at core level" says the current core does **not license** a measure; it does **not** say L₀ forbids one in principle, and Gate 0 does not convert it into such a ban. A future, independently justified canonical natural measure remains open (§1.1a).
 
 **(b) Gate C is *less* broken than the predecessor packet said — correction.** That packet asserted `_SRT_D_VALUE_CANONICAL.md §5b.2` "was never touched" by the Level A de-overload. On re-reading, **§5b.1 carries a scoping clause that explicitly reaches §5b.2**: 「本节下文与 §5b.2 中的「全局最优 / 全局收敛」表述均应在此收口下读取。」 So §5b.2 is **guarded by reference**, not un-narrowed. The residual defect is narrower and should be restated as: §5b.2's own text carries no inline marking and still reads as a positive characterization when quoted alone. That is a **quotability** defect, not an unguarded claim. Gate C's severity drops accordingly.
 
@@ -102,19 +138,37 @@ The four proposed clauses are compatible with current canonical. Three take mini
 
 ### G0-2 · Content prohibition
 
-> A contentful direction, goal, optimum, value, semantic order, or probability assignment over latent possibilities is **not primitive at L₀ merely because it can be written globally**.
+> A contentful direction, goal, optimum, value, or semantic order over latent possibilities is **not primitive at L₀ merely because it can be written globally**.
 
-**Accepted as written.** This is the load-bearing clause and it is already the corpus's own position in three places (`L0_Metaphysics` §七.11 rejects 预置的先验目标; the symbol table's `ε_pg` row rejects a content-level order gradient; `d-value §5b.1`'s Level-A guard rejects a position-independent universe-scale minimum). G0-2 generalizes those three from case law into a rule.
+**Correction proposed — remove "probability assignment" from this clause and route it to the class-B admission rule instead:**
+
+> *A probability assignment over latent possibilities is likewise not primitive at L₀, but for a **different reason** and with a **different remedy**: it is class B (§1.1a), refused for want of a supplied or derived reference structure, not refused as content. Grouping it with goals and values would wrongly imply it is forbidden in kind and could never be canonically supplied.*
+
+**Otherwise accepted as written.** This is the load-bearing clause and it is already the corpus's own position in three places (`L0_Metaphysics` §七.11 rejects 预置的先验目标; the symbol table's `ε_pg` row rejects a content-level order gradient; `d-value §5b.1`'s Level-A guard rejects a position-independent universe-scale minimum). G0-2 generalizes those three from case law into a rule.
 
 ### G0-3 · Situated emergence
 
 > Contentful direction may arise only after L₀ structural asymmetry is conditioned by a finite operator/position, accessible horizon, historical constraints, and — where entropy/probability is used — an explicitly supplied measure.
 
-**Correction proposed — soften "only after … and" to a necessary-condition list, not a sufficient recipe:**
+**Correction proposed — replace the universal conjunction with a dependency-sensitive declaration rule:**
 
-> …*Each item is a **necessary** condition for a contentful direction to be well-posed. The list is not claimed jointly sufficient, and satisfying it does not by itself make any particular direction correct.*
+> **G0-3 (revised).** A situated or contentful object must **declare the reference structures on which its content actually depends**.
+>
+> **Ordinarily required at minimum:**
+> - a finite operator / position;
+> - a declared admissible or reachable domain.
+>
+> **Required conditionally, when and only when the object depends on them:**
+> - *historical constraints* — only when the object is history-dependent;
+> - *a probability measure* — only when probability or entropy is used;
+> - *a payability / reachability horizon* — when claiming reachable- or accessibility-relative quantities;
+> - *any other index* — when the construct depends on it.
+>
+> These are **typing / admission requirements, not a sufficient construction recipe.** Satisfying them makes an object well-posed; it does not make any particular content correct.
 
-**Why**: as written, "may arise only after A, B, C and D" invites reading the conjunction as a construction procedure. It is a gate, not a derivation.
+**Why the original is too strong**: it makes *historical constraints* a universal necessary condition. That would exclude a **first situated manifestation** — a direction arising at a position before any `L_2` historical sediment exists. SRT explicitly needs that case to be statable: `Ax-L0-Bootstrap` has selection getting started without prior selection history, and `T-L0-Kappa0` supplies the first alignment drive 「无需先存在任何选择历史」. A rule that required history for every contentful direction would contradict the bootstrap it is meant to protect.
+
+**Why the conjunction also had to go**: "may arise only after A, B, C and D" reads as a construction procedure. It is a gate, not a derivation — and now a *dependency-indexed* gate, so an object is not charged for indices it does not use.
 
 ### G0-4 · Read-back rule
 
@@ -135,6 +189,9 @@ The four proposed clauses are compatible with current canonical. Three take mini
 | Do not merge `κ₀` and `ε_pg` | ✅ they are separate rows with separate roles (cost geometry vs. non-self-erasure bias); Usage Rule 15's namespace split is cited, not overridden |
 | Do not claim independence or completeness | ✅ G0-1's added clause says the opposite explicitly |
 | Gate 0 is a type/boundary rule, not a physics theorem | ✅ stated in the header, in §1.3, and in §5's non-implications |
+| Do not upgrade "measure unfixed at core level" into a permanent ban | ✅ class B is explicitly an *admission gap*; §1.1a, §1.2(a), §3.1 and §5 all state a future derived canonical measure is not ruled out |
+| Do not describe `κ₀` as providing "no ranking" | ✅ corrected — κ₀ **does** induce a structural cost ordering; what it lacks is a complete semantic ranking and any preferred endpoint (§1.1b) |
+| Do not make historical constraints universally necessary | ✅ G0-3 rewritten as dependency-sensitive; history is required only for history-dependent objects, so first situated manifestation stays statable |
 
 ---
 
@@ -142,16 +199,23 @@ The four proposed clauses are compatible with current canonical. Three take mini
 
 ### 3.1 Gate A
 
-**Does Gate 0 exclude unindexed `H(L₀)` as a quantitative global background?** **Yes** — by G0-2 plus the "indexed-required" row. An unindexed `H(L₀)` presupposes a measure over latent possibilities, and per §1.2(a) the symbol table already declines to fix one at core level. Under Gate 0 that presupposition is not repaired by writing the quantity globally.
+**Does Gate 0 rule out unindexed `H(L₀)` as a quantitative global background?**
+
+The precise statement — **not** "Gate 0 permanently excludes it":
+
+> **Under current SRT, `H(L₀)` is not licensed as a quantitative object, because no measure / reference regime is defined for `L₀`. Gate 0 prevents global notation from hiding that missing commitment; it does not prejudge whether a future canonical natural measure could be derived.**
+
+This is a class-B admission gap (§1.1a), not a class-C content prohibition. The route to repair is therefore *supply or derive the reference structure*, not *abandon the quantity*.
 
 **Explicit non-implications:**
 
-- Gate 0 does **not** adopt `E_{θ,Λ,μ}`. It rules out the *unindexed* form; it does not select among Options A / B1 / B2 / C.
-- `μ_θ` remains **undefined**. Gate 0 says a measure is required to be *supplied and declared*, not what it is. Supplying it is still the hard part and still an author decision.
+- Gate 0 does **not** adopt `E_{θ,Λ,μ}`. It declines to license the *unindexed* form; it does not select among Options A / B1 / B2 / C.
+- `μ_θ` remains **undefined**. Gate 0 says a measure must be *supplied or derived and declared*, not what it is. Supplying it is still the hard part and still an author decision.
+- Gate 0 does **not** foreclose a canonical natural measure. If one is later derived and independently justified, `H(L₀)` becomes admissible without amending Gate 0 — the gate is about declaring the commitment, not about banning it.
 - Gate 0 does **not** settle whether `H(L₁)` is finite.
 - Gate 0 says nothing about `d/dt H(L₀) = 0` beyond what §A.1 of the predecessor packet already recorded: ill-defined without a regularization regime, and not repaired by fixing `E`.
 
-**Interim posture under Gate 0**: unchanged and still the safest — **keep P0-02's ontology claim (existence = degree of stable anchoring), do not use the formula as a quantitative readout**. Gate 0 makes that posture *principled* rather than merely cautious: the formula is not a defective computation awaiting arithmetic, it is a well-formed expression whose measure has been deliberately left unfixed.
+**Interim posture under Gate 0**: unchanged and still the safest — **keep P0-02's ontology claim (existence = degree of stable anchoring), do not use the formula as a quantitative readout**. Gate 0 makes that posture *principled* rather than merely cautious: the formula is a **syntactically well-formed expression, but not a quantitatively defined object under the current core semantics** — its measure has not been supplied. That is a missing commitment, not a defective computation, and not a permanent bar.
 
 ### 3.2 Gate B
 
@@ -201,14 +265,18 @@ This is the **single largest landing consequence** of adopting Gate 0, and the a
 
 ## 5. Allowed / forbidden / indexed-required — the operative summary
 
-**Allowed at L₀** (contentless structural invariants):
+**Class A — allowed at L₀** (primitive / contentless structural invariants):
 structured potentiality with intrinsic granularity · `κ₀ > 0` primordial curvature · `ε_pg > 0` minimum non-neutrality · irreversibility / historical-asymmetry floor · *any future invariant of the same type, subject to its own admission*
 
-**Forbidden at L₀** (contentful, regardless of global writability):
-semantic target · goal / telos · preferred world-state · value content · complete ranking of latent possibilities · universe-wide optimum · global free-energy minimum · 「order」 as a content property · 初心 as an L₀ object
+**Class B — not licensed by current core; admissible with a declared or derived reference structure** (reference- / regime- / source-dependent weighting and comparative objects):
+probability measure or prior over latent possibilities · entropy over `L₀` · accessible or reachable optimum · "convergence direction" relative to a declared domain · any construct whose value requires a reference structure
 
-**Indexed-required** (admissible only under a declared index/regime):
-probability measure or prior over latent possibilities · entropy over `L₀` · "optimum" · "convergence direction" · accessible horizon
+> Class B is an **admission gap, not a prohibition in kind**. These objects are refused only for as long as their reference structure is missing. A future, independently justified canonical natural measure is **not** ruled out.
+
+**Class C — forbidden at L₀** (semantic / evaluative content, regardless of global writability):
+semantic target · goal / telos · preferred world-state · value content · **complete semantic or evaluative ranking of latent world-states** · universe-wide optimum · global free-energy minimum · 「order」 as a content property · 初心 as an L₀ object
+
+**Ordering discipline** (carried into the summary deliberately, per §1.1b): **structural cost ordering ≠ semantic / value ranking ≠ global preferred endpoint.** `κ₀` and `ε_pg` induce the first and are class A. Only the second and third are class C. Do not read *any* ordering as content.
 
 **Explicit non-implications of adopting Gate 0:**
 
@@ -216,7 +284,7 @@ probability measure or prior over latent possibilities · entropy over `L₀` ·
 2. It does **not** assert `κ₀` and `ε_pg` are independent, jointly complete, or irreducible.
 3. It does **not** resolve `κ₀`'s ontological status — Gate 0 is neutral across all three positions debated in `Philosophy/SRT_L0_Ontological_Status.md`, because it constrains *content*, not *mode of existence*.
 4. It does **not** decide Gate A, B, or C. It bounds their option spaces.
-5. It does **not** claim SRT has no direction. ε remains the directional postulate; what is forbidden is *contentful* direction at L₀.
+5. It does **not** claim SRT has no direction, and **not** that L₀ induces no ordering. `ε_pg` remains the directional postulate and `κ₀` remains an anisotropic cost geometry; what class C forbids is *semantic* direction and *complete evaluative ranking* at L₀, not structural cost ordering (§1.1b).
 6. It does **not** touch `Spirituality/`, `Physics/`, or any `canonical: false` file's internal content.
 7. It introduces **no new symbol**.
 
@@ -244,9 +312,10 @@ Items 2 and 3 are the real cost. **If the author is not prepared to authorize it
 Gate 0 should be **withdrawn or amended** if any of the following occurs:
 
 1. **False positive on a needed object.** A future L₀ commitment is structurally necessary yet cannot be phrased without content — e.g. if `κ₀`'s ontological hardening (`SRT_L0_Ontological_Status.md`) concludes that its anisotropy is ineliminably contentful. Gate 0 would then be over-restrictive and G0-1's boundary needs redrawing, not the object deleting.
-2. **The contentless/contentful line proves undecidable in practice.** If two competent readers routinely disagree on which side a candidate falls, the rule is not operational and reduces to preference.
-3. **Enforcement failure repeats.** If, one pass after adoption, a canonical file again carries a contentful L₀ object, then Gate 0 has the same failure mode as the thin-precursor exclusions it was designed to fix (0/2 → 2/2), and it needs a mechanical check rather than a prose rule.
-4. **Layer collapse downstream.** If forbidding contentful L₀ objects makes some domain bridge unstatable rather than merely re-indexed, the boundary is cutting through a real joint and Gate 0 is misplaced.
+2. **The class line proves undecidable in practice.** If two competent readers routinely disagree on which class a candidate falls into, the rule is not operational and reduces to preference. The **B/C boundary is the one to watch**: it is easy to misread a comparative or weighted object as evaluative content merely because it produces an ordering. §1.1b exists to hold that line, and if it fails to hold, Gate 0 needs a mechanical test rather than a prose distinction.
+3. **The B class is used as a permanent refusal.** If "not licensed by current core" starts being cited as "forbidden in principle" — the exact over-reading this packet corrects — then Gate 0 is being applied as a ban it does not license, and the wording needs hardening.
+4. **Enforcement failure repeats.** If, one pass after adoption, a canonical file again carries a class-C L₀ object, then Gate 0 has the same failure mode as the thin-precursor exclusions it was designed to fix (0/2 → 2/2), and it needs a mechanical check rather than a prose rule.
+5. **Layer collapse downstream.** If forbidding class-C L₀ objects makes some domain bridge unstatable rather than merely re-indexed, the boundary is cutting through a real joint and Gate 0 is misplaced.
 
 **Success condition** (what adoption is supposed to buy): Gates A, B and C each become decidable without re-arguing the L₀ question, and no future pass can license a contentful L₀ object by appending a precision note.
 
@@ -260,15 +329,16 @@ Gate 0 should be **withdrawn or amended** if any of the following occurs:
 
 The withdrawn framing conflated two independent axes and would have been **false**:
 
-| | position-independent | contentless |
+| | position-independent | class |
 |---|---|---|
-| `κ₀` | yes | yes |
-| `ε_pg` | yes | yes |
-| irreversibility floor | yes | yes |
-| universe-wide optimum | yes | **no** |
-| 初心 as global convergence vector | yes | **no** |
+| `κ₀` | yes | **A** |
+| `ε_pg` | yes | **A** |
+| irreversibility floor | yes | **A** |
+| measure / entropy over `L₀` | would be | **B** — admission gap |
+| universe-wide optimum | yes | **C** |
+| 初心 as global convergence vector | yes | **C** |
 
-The withdrawn rule cut on the **left** column and therefore had to delete `κ₀` and the irreversibility floor to reach its target. Gate 0 cuts on the **right** column, which is where the actual defects sit — every object the corpus needed to keep is contentless, and every object that caused a Gate is contentful. That is not a coincidence; it is the diagnosis.
+The withdrawn rule cut on the **left** column and therefore had to delete `κ₀` and the irreversibility floor to reach its target. Gate 0 cuts on the **class** column, which is where the actual defects sit — every object the corpus needed to keep is class A, every object that caused Gate B or C is class C, and Gate A's object is class B (repairable by supplying what is missing, not by abandoning it). That three-way split is not decoration: the B column is exactly what a contentless/contentful binary mis-typed.
 
 ### What it blocks, without sacrificing `κ₀` / irreversibility / structured potentiality
 
@@ -277,7 +347,7 @@ The withdrawn rule cut on the **left** column and therefore had to delete `κ₀
 | **L₀ teleology** | G0-2 — a goal is content, however globally written | κ₀ supplies anisotropic cost, no endpoint (`T-L0-Kappa0`: 「无终局预设」) |
 | **God's-eye global optimum** | G0-2 — a complete ranking is content | none of the four ranks latent possibilities |
 | **Domain bridge back-defining canonical** | G0-4 as corrected — citation direction is part of the rule | the four are defined in canonical, never imported from bridges |
-| **Undeclared global entropy** | indexed-required — codifies the symbol table's existing "measure unfixed at core level" | none of the four requires a measure to state |
+| **Undeclared global entropy** | class B — records the symbol table's existing "measure unfixed at core level" as a *non-licence*, so notation cannot hide the gap. Does **not** ban a future derived canonical measure | none of the four requires a measure to state |
 
 ### The honest counter-argument
 
