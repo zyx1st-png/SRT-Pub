@@ -52,7 +52,7 @@ canonical: false
 | action | 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
 | action | 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
 | warning | 66.9 KiB | `Philosophy/Papers/Forcing_CH_Research_Regime_Staged_Draft_EN.md` | missing_or_not_needed |
-| warning | 66.6 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
+| warning | 66.7 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
 | warning | 65.2 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
 | warning | 64.5 KiB | `Physics/SRT_Phys_09_Formalism_Ext.md` | Physics/Formalism_Ext_Split |
 | warning | 63.5 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |
@@ -63,7 +63,7 @@ canonical: false
 | warning | 62.2 KiB | `01_Source_Intuition/Conversations/2026-07-12_SRT_本体论_意识_AI_交流原始转录.md` | missing_or_not_needed |
 | warning | 59.7 KiB | `Philosophy/Papers/Forcing_CH_Evidence/D05b_Forcing_Representation_and_Method_Family_Audit.md` | missing_or_not_needed |
 | warning | 59.5 KiB | `Neuroscience/SRT_Neuro_08_Immune_Dist.md` | Neuroscience/Immune_Dist_Split |
-| warning | 57.7 KiB | `Core_Law/SRT_L1_Formalism.md` | Core_Law/L1_Formalism_Split |
+| warning | 57.8 KiB | `Core_Law/SRT_L1_Formalism.md` | Core_Law/L1_Formalism_Split |
 | warning | 57.2 KiB | `Experiments/stake_future_selectability_mvp/outputs/formal/processed/C_outcomes.json` | - |
 | warning | 57.0 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism_Submission_EN.md` | missing_or_not_needed |
 | warning | 56.9 KiB | `Philosophy/SRT_Social_Cognition.md` | Philosophy/Social_Cognition_Split |
@@ -86,7 +86,7 @@ canonical: false
 | urgent | 3127.9 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.pdf` | artifact/generated; do not use as primary connector read path |
 | urgent | 2460.1 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx` | artifact/generated; do not use as primary connector read path |
 | urgent | 1070.7 KiB | `papers/CostlySelectiveClosure_AdaptiveBehavior_submission.docx` | artifact/generated; do not use as primary connector read path |
-| urgent | 462.4 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 462.8 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 363.1 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 336.4 KiB | `papers/costly_selective_closure_supplement/figures/figure3_results.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 277.3 KiB | `Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |

@@ -214,7 +214,7 @@ $$
 
 **陈述（P1-candidate）**：定义"集体有效闭合通道指示 `\psi^{coll}`"为满足 §4.5 Q-univ-1 至 Q-univ-4 + **Q-univ-5^{coll}（M_ext-相容性）**：`ν_{ext}\|M_{ext}(t)\|` 项在 `d^{coll}$ 过渡区 (`d^{coll} \approx d_c^{coll}$) 内连续可加，不引入 `\psi^{coll}$ 的额外不连续。
 
-则 §4.4.5 `S^{coll}` 两型 ODE 在 `\psi_1^{coll}, \psi_2^{coll}` 替代下保持 T-CHANNEL-1 (i)-(v) 五个不变量（modulo `O(w_{tr}^{coll})`），且**T-IRR-3.5 在塔级的传染（H10 §4.8.6 (iv)）保持**：`\nu_{ext}\|M_{ext}\|` 通过 `\psi^{coll}$ 进入 `S_{str}^{coll}$ 时，外溢项的单向性（不可被双向化）继承自 P1-T07 Layer 2（`L_0` 不可逆性，吸收态绝对）+ T-IRR-3.5 的跨边界扩展。**继承口径（2026-08-11）**：单向性来自 Layer 2 这一支，与 `\varepsilon_{pg}` 正性那一支不同源；但 T-IRR-3.5 整体已按 `Core_Law/SRT_Irreversibility.md §4.5 后果 1` 降为**条件性结论**（P1-T07 证明未闭合，见 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`），故本处的"保持"同样是条件性的，不得写成已证。
+则 §4.4.5 `S^{coll}` 两型 ODE 在 `\psi_1^{coll}, \psi_2^{coll}` 替代下保持 T-CHANNEL-1 (i)-(v) 五个不变量（modulo `O(w_{tr}^{coll})`），且**T-IRR-3.5 在塔级的传染（H10 §4.8.6 (iv)）保持**：`\nu_{ext}\|M_{ext}\|` 通过 `\psi^{coll}$ 进入 `S_{str}^{coll}$ 时，外溢项的单向性（不可被双向化）继承自 P1-T07 Layer 2（`L_0` 不可逆性，吸收态绝对）+ T-IRR-3.5 的跨边界扩展。**继承口径（2026-08-11，同日二次修正）**：单向性来自 Layer 2 这一支——吸收态绝对性（`Def-IRR-1` / `T-IRR-2`，根在 P0-03），与 `\varepsilon_{pg}` 正性那一支不同源，**两者都不依赖 P1-T07 的证明闭合**（最短依赖链见 `Core_Law/SRT_Irreversibility.md §4.5 后果 1`）。本处的"保持"是**继承级**结论：硬度等于吸收态绝对性，不得写成本节自产的定理，也不得写成条件于 P1-T07。P1-T07 未闭合的是「stable ISP ⇒ ISP-level ε ≠ 0」，那条不进入本处论证。
 
 **证明骨架**：
 

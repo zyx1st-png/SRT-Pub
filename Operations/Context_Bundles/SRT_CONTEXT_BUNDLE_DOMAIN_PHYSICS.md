@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-11
-source_commit: c304a981
+source_commit: c511c5ca
 source_branch: claude/srt-theory-consistency-tension-dabe30
 source_dirty: true
-inputs_digest: 0c9ab6c96f8f0a06
+inputs_digest: 44548633c809b90e
 ---
 
 # SRT 物理领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: 0c9ab6c96f8f0a06
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-11 |
-| 来源 commit | `c304a981` |
+| 来源 commit | `c511c5ca` |
 | 来源分支 | `claude/srt-theory-consistency-tension-dabe30` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |

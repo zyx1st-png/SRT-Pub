@@ -13,8 +13,8 @@ dependency: [SRT-COLLECTIVE-TOWER-HARDENING-NOTES]
 # SRT Collective Tower Hardening Notes Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Collective_Tower_Hardening_Notes.md`](../SRT_Collective_Tower_Hardening_Notes.md)
-- Source owner bytes: `68161`
-- Source owner SHA-256: `4be04fdc37f7ef5baad38d92ef5af1b7a16a0900c27f4dd96283d7c6bb5df042`
+- Source owner bytes: `68351`
+- Source owner SHA-256: `0c9389295d457e5bd5f0caf372db19c6849ba559ce85f6086e9a182a13feb70f`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 
