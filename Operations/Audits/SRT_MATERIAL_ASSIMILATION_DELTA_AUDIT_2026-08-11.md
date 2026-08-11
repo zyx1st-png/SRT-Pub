@@ -8,9 +8,11 @@ epistemic_layer: os
 claim_mode: evidence
 canonical: false
 date: 2026-08-11
-source_of_truth: "origin/main @ 13d313389c06150bdeadc2ff7f1592ea7fd8d7d1"
+source_of_truth: "origin/main @ 7688a8df26aa0d7b2be7ff52e9b247155a236283"
 dependency:
   - SRT-OPS-AUDIT-ACTIVE-THEORY-ASSIMILATION-2026-08-06
+  - SRT-CONFIRMED-PROPOSITION-SEMANTIC-COVERAGE-AUDIT-20260808
+  - SRT-BOUNDED-RETRIEVAL-PROTOCOL-20260808
   - SRT-MATERIAL-PIPELINE
   - SRT-MATERIAL-LOG
   - SRT-ACTIVE-THEORY-NODES
@@ -26,26 +28,29 @@ machine_readable: Operations/Audits/data/srt_material_assimilation_delta_2026-08
 >
 > **继承模型**：继续使用“档案化 → 工程化 → 理论生效”三层模型，以及 active-theory checker 的 Axis A `structural_assimilation`、Axis B `behavioral_availability`、Axis C `intervention_effect`。不引入新的永久状态体系。
 >
-> **行为证据纪律**：本轮没有执行新的 bounded retrieval run，因此没有改写任何节点的 Axis B。`untested` 不得因静态文件存在而升级；既有 `observed` / `robustly_observed` 只按现有 run record 继承。
+> **决策单位纪律**：Table A 与 companion CSV 以 material row / file engineering state 做 inventory；是否立项则以**已确认命题与区分**为单位。2026-08-08 semantic-coverage audit 已证明 hook、owner path、fast layer 或 planned synthesis file 的静态缺失会产生假阴性，故它们只能描述工程拓扑，不能单独发出 synthesis / active-layer GO。
+>
+> **行为证据纪律**：本轮没有执行新的 cluster-specific bounded retrieval run，因此没有改写任何节点的 Axis B。任何新活跃层／正文综合立项必须先执行 `SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md` 的 baseline probe，再按 Case A 停／B 修活跃层／C 做内容写回／D 降级档案处置。既有 `observed` / `robustly_observed` 只按现有 run record 继承。
 
 ---
 
 ## 0. 结论先行
 
-截至基线 `13d313389c06150bdeadc2ff7f1592ea7fd8d7d1`：
+截至最终复核基线 `7688a8df26aa0d7b2be7ff52e9b247155a236283`：
 
 - 正式 Material Log 为 **226** 条：A **149** / B **27** / C **50**。
 - 档案化层为 **77 SourceCards**；工程化层为 **52 patches / 44 hooks**，hook 状态 **landed 12 / partial 3 / pending 29**。
-- 相对 2026-08-06 审计口径，正式材料净增 **19 条，全部为 A**；SourceCard `+18`、patch `+21`、hook `+20`。新增 20 张 hook 全部仍为 `pending`，所以材料增长尚未直接转化为 owner landing。
-- 真正达到“值得压缩为稳定 SRT 结构”的三个簇是：
+- 相对 2026-08-06 审计口径，正式材料净增 **19 条，全部为 A**；SourceCard `+18`、patch `+21`、hook `+20`。新增 20 张 hook 全部仍为 `pending`；这只证明 owner landing 未按 hook ledger 关闭，**不证明相关区分不可检索或必须施工**。
+- 三个材料簇已达到“值得冻结命题组并跑 bounded baseline probe”的程度：
   1. Neuroscience N1–N13，特别是 memory/object/history 链与 embodied-eligibility/temporal-closure 支链；
   2. Philosophy 的 individuation / representation / bearer formation 簇；
   3. AI 的 evidence provenance / reason-trace / goal selection / re-selection / stake gate 架构簇。
-- `Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md` 当前仍不存在；本审计判断 **N1–N13 synthesis = GO**，但本 PR 不创建它。
-- 新的 bounded `Individuation / Representation / Bearer Formation synthesis` **值得建立**，但不得重复 Agency–Subjecthood v0.2，也不得把 Simondon / Deleuze 的外部趋同改写成 SRT native identity。
-- AI Architecture CompactCore **应在一次 bounded hardening pass 中吸收** AIEVID01 / AIREASON01 / AIGOAL01 / AIRESEL01；AICONSC01 作为 stake/subjecthood 边界接口附接。当前不需要新建 `AI/_SRT_AI_Hardening_Index.md`。
+- `Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md` 当前仍不存在；文件缺席不是语义缺口证据。修订后裁决为 **N1–N13 = probe candidate；synthesis = NOT YET**。
+- `Individuation / Representation / Bearer Formation` 已形成 bounded-probe candidate；是否需要新 synthesis 尚未裁决。探针必须区分现有 owner 已能回答的内容与真正缺口，并继续禁止把 Simondon / Deleuze 的外部趋同改写成 SRT native identity。
+- AI cluster 也是 **probe candidate**，不是 CompactCore absorption GO。AIEVID01 / AIREASON01 已随既有 `NODE-AI-REASONING` bounded baseline 被证明可用；AIGOAL01 / AIRESEL01 / AICONSC01 的增量命题组仍未被 cluster-specific probe 覆盖。当前不需要新建 `AI/_SRT_AI_Hardening_Index.md`。
 - COLL08 已在 `SRT_Collective_Selection.md` 与 `SRT_Reference_Scaling.md` 完成局部落地；“局部落地完成”不等于跨域综合完成，但目前**不值得为了文件对称再建一份独立 collective synthesis**。
 - Physics hardening index 的触发条件未改变：E05 尚无已登记 discriminator，故 **Physics synthesis remains deferred**。
+- 08-08 已有 bounded 行为证据必须优先于本轮静态表：NEURAL18 与 NEURAL23 在 `nd` 中 0 次导航、8/8 节点题组通过；REP01 在 `px` 中 1 次导航、7/7 节点题组通过。三者在 CSV 中改记为 `verified_active`，不得再从 hook／落点缺失反推内容缺口。
 - 27 条正式 B 中，**9 条**有符合新规的具名复活触发条件，**18 条**仍是旧制日期/说明或缺少当前形式的具名 trigger；本轮没有仓库证据证明任何 trigger 已发生，故 **fired = 0**。这 18 条是 trigger-metadata clarity debt，不是理论 backlog。
 
 ---
@@ -68,12 +73,12 @@ gh pr list --state open
 结果：
 
 ```text
-BASE_SHA=13d313389c06150bdeadc2ff7f1592ea7fd8d7d1
+BASE_SHA=7688a8df26aa0d7b2be7ff52e9b247155a236283
 ```
 
 原工作区 main 含用户未提交改动，本审计因此从该 SHA 建立独立 worktree 与分支，未清理、覆盖或带入原工作区改动。
 
-执行时 open PR 中，PR #780 正在修改 `Operations/Context_Bundles/`、`Operations/Archive_Records/Large_File_Audit_2026-05-09.md` 与 `Operations/Proposals/`。本审计不把其未合并内容当作 main，不修改这些路径，也不手工混入其派生内容。
+初始执行时 PR #780 尚未合并，并修改 `Operations/Context_Bundles/`、`Operations/Archive_Records/Large_File_Audit_2026-05-09.md` 与 `Operations/Proposals/`。在本审计最终收口前，#780 已合入 main；本分支随后重放到 merge commit `7688a8df`，并从合并后的输入重新生成 9 个 Context Bundle 文件，没有手工拼接两组生成物。`13d31338..7688a8df` 只改变上述 proposal / archive / generated-bundle 路径，不改变 Material Log、SourceCard、patch、hook、registry 或理论 owner；本轮数量与处置已在新基线上重跑。
 
 ### 1.2 解析口径
 
@@ -125,6 +130,20 @@ unclear
 owner paragraph exists
 != automatically active / retrievable
 ```
+
+### 1.4 Inventory unit 与 decision unit
+
+本轮保留 material-row inventory，是为了回答数量、provenance、hook topology 与 historical survivor 问题；它不恢复 2026-08-06 的文件工程单位作为立项判据。决策优先级为：
+
+```text
+confirmed proposition / distinction
+-> existing bounded probe evidence
+-> cluster-specific bounded baseline probe
+-> Case A / B / C / D disposition
+-> only then decide whether to build
+```
+
+因此 Table B 的 `Missing landing` 只报告工程拓扑，不能与 `synthesis needed` 画等号。companion CSV 也不是 52 张 patch 的逐 patch coverage table；其覆盖边界在 §18 明列。
 
 ---
 
@@ -186,7 +205,17 @@ not_applicable = 1
 
 推导的 `effectively_assimilated` 节点为 3。本轮没有新 run，因此没有把任何新材料簇的行为状态从 `untested` 升级。
 
-`STATUS.md §Fast Status` 的摘要数字仍写作较早的 `robustly_observed=2 / observed=3 / effectively_assimilated=2`，与当前 manifest + checker 的 `3 / 2 / 3` 不一致。该差异属于 operations status drift；本 PR 不修改 STATUS。
+基线上的 `STATUS.md §Fast Status` 仍写作较早的 `robustly_observed=2 / observed=3 / effectively_assimilated=2`，与 manifest + checker 的 `3 / 2 / 3` 不一致。审阅修订在本 PR 只做最小 operations repair：同步这三个数字、Choice Generation 的 bounded 状态、Material Log 快照，并加入 08-08 语义覆盖／bounded protocol 与本审计的声明式指针；不改任何理论 owner。
+
+### 3.1 继承 08-08 probe 对静态表的修正
+
+| Material increment | Initial 08-11 static reading | Existing bounded evidence | Corrected audit disposition |
+|---|---|---|---|
+| NEURAL18 | `engineered_pending`；fast/router blank | `nd`: 0 navigation；8/8 node set；five-way decodability gate retained | `verified_active` for the sampled proposition |
+| NEURAL23 | `synthesis_candidate`；planned CompactCore target only | `nd`: 0 navigation；8/8 node set；STATUS startup carries the three-way eligibility split | `verified_active` for the sampled proposition |
+| REP01 | `guardrail_only`；fast/router blank | `px`: 1 navigation；7/7 node set；theory-package tuple and falsification target retained | `verified_active` for the sampled proposition |
+
+这些修正不把单次 node run 外推为整个新簇的 `robustly_observed`。它们只说明三条已采样命题不能再被本轮静态 inventory 判成未吸收，也说明 planned synthesis file 不存在不构成立项理由。
 
 ---
 
@@ -251,10 +280,10 @@ preformed-object rejection
 
 回答两个核心问题：
 
-1. **这些 patch 已形成 synthesis cluster。** 共同 SRT-native 增量不是“哲学家都谈个体化”，而是把预成对象拒绝、可重新识别的对象稳定、历史变换、承载位置与现象性残余拆成可判别环节。
-2. **它们尚未形成 current-theory synthesis。** 新 ID 在列出的 owner 中没有直接落地；现有 owner 只能提供地基，不能把 pending patch 自动算作 active。
+1. **这些 patch 已形成 probe-worthy cluster。** 可冻结的候选区分不是“哲学家都谈个体化”，而是预成对象拒绝、可重新识别的对象稳定、历史变换、承载位置与现象性残余之间的非同一关系。
+2. **它们是否缺 current-theory synthesis 尚未实测。** 新 ID 在列出的 owner 中没有直接落地，只说明 hook / owner topology 未关闭；08-08 的五次假阴性禁止把这一静态事实继续推成内容缺口。
 
-结论：未来建立一个 bounded `Individuation / Representation / Bearer Formation synthesis` **有必要**。它应明确排除 Agency–Subjecthood 已完成内容，并把 phenomenality 留作 residual，不写成 bearer 的自动结果。
+结论：为 `Individuation / Representation / Bearer Formation` 冻结一组 bounded baseline questions **有必要**；新 synthesis 是否必要为 `NOT YET`。若 probe 落入 Case C，未来 synthesis 才应明确排除 Agency–Subjecthood 已完成内容，并把 phenomenality 留作 residual，不写成 bearer 的自动结果。
 
 ### 4.3 Simondon / Deleuze 边界
 
@@ -284,7 +313,7 @@ dark precursor = G_hat_theta
 eternal return = t_onto
 ```
 
-审计结论：二者属于高价值 P3 hardening / pressure model。它们的共同出现证明“值得做 SRT-native adjudication”，不证明其哲学概念已经成为 SRT native proposition。
+审计结论：二者属于高价值 P3 hardening / pressure model。它们的共同出现只足以支持 proposition extraction + baseline probe，不证明存在语义缺口，也不证明其哲学概念已经成为 SRT native proposition。
 
 ---
 
@@ -298,7 +327,17 @@ eternal return = t_onto
 Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
 ```
 
-执行时该文件仍不存在。旧的 `N1_N12_v0_2` 也不存在，并且只剩一张旧 hook 仍指向该过时名字；该 target 在本审计中归为 `obsolete target`，不是再创建 N1–N12 的理由。
+执行时该文件仍不存在。旧的 `N1_N12_v0_2` 也不存在。hook-ledger 范围内只有 `NEURAL19_Preattentive...Integration_Hook.md` 仍指向旧名，但全域扫描还发现两处现行施工表面：
+
+```text
+Neuroscience/SRT_Neuroscience_Hardening_N1_N9_Integration_Hooks_for_N10_N12.md
+  - line 22: Recommended future synthesis file
+  - line 125: v0.2 section-generation order
+Neuroscience/patches/SRT_Neuro_NEURAL19_Preattentive_Gist_Binding_Report_Interface_v0_1.md
+  - frontmatter target_documents
+```
+
+因此不是“只剩一张旧 hook”，而是 **1 hook + 1 active construction instruction + 1 patch frontmatter** 的三表面竞争规范。它们应在任何 N1–N13 施工决定之前统一标注 obsolete / superseded；仍不得据此创建 N1–N12 或 N1–N13 文件。
 
 ### 5.2 机制簇分类
 
@@ -328,7 +367,7 @@ NEURAL28: identity formation / re-identification / relational re-entry
 -> NEURAL27: prospective history-use / path-bias readout
 ```
 
-该链已成熟到足以进入 N1–N13 synthesis，原因不是 patch 数量，而是四个阶段各自有：
+该链已成熟到足以成为 N1–N13 **cluster-specific baseline probe** 的题目来源，原因不是 patch 数量，而是四个阶段各自有：
 
 - 独立的负控；
 - 明确的失败条件；
@@ -337,6 +376,8 @@ NEURAL28: identity formation / re-identification / relational re-entry
 - 可进入 Neural CompactCore / predictions 的明确落点。
 
 NEURAL26 必须保持正交：它约束全局 dynamical capacity，不是这条链中的第五个串行阶段。
+
+已有 08-08 `nd` probe 只覆盖到 NEURAL18、NEURAL23 及当时节点题组；它证明两项材料区分已可用，也直接推翻“无 hook / planned file 不存在所以不可达”。它**没有**测试 NEURAL28→29→25→27 的完整关系、NEURAL23→30 的新增闭合关系，或 N1–N13 统一压缩是否产生净判别增益。
 
 NEURAL23 + NEURAL30 是另一条短时标支链：
 
@@ -348,15 +389,16 @@ embodied phase-dependent eligibility
 
 它可以在对象形成之前供给条件，但不能从 phase、P300、decoder 或 report 直接推出 consciousness。
 
-### 5.4 GO / NOT YET
+### 5.4 Probe gate / synthesis verdict
 
 ```text
-N1-N13 synthesis = GO
+N1-N13 cluster = PROBE CANDIDATE
+N1-N13 synthesis = NOT YET
 ```
 
-GO 的含义仅是“值得启动 bounded non-canonical synthesis workline”，不是提升 N1–N13 为 canonical，也不是把 `NODE-NEURAL-DECODABILITY` 的既有 `observed` 行为证据自动转移给新簇。
+下一步只授权冻结命题组、反刷分正例、预算与 rubric，并在 current main 上跑 baseline。不得把 `NODE-NEURAL-DECODABILITY` 的既有 `observed` 或 NEURAL18/23 的样本内成功自动转移给整个新簇。
 
-NO-GO 条件：若施工方案要求把 NEURAL18–30 机械串成单一阶段、把 NEURAL26 串行化、把 proxy 当 SRT primitive、或直接修改 canonical owner，则应停止并重新缩小范围。
+处置必须按 protocol：Case A（baseline 全部可答）停止施工；Case B（内容存在、bounded 失败）只修活跃路由／压缩；Case C（unconstrained 也失败）才考虑 bounded synthesis；Case D 则降级为档案。无论哪一类，若方案要求把 NEURAL18–30 机械串成单一阶段、把 NEURAL26 串行化、把 proxy 当 SRT primitive、或直接修改 canonical owner，都应停止并重新缩小范围。
 
 ---
 
@@ -387,21 +429,21 @@ AIEVID01: evidence provenance / target-overlap discount
 ```text
 Does a unified AI hardening index exist?  NO
 Is one necessary now?                     NO
-Is Architecture CompactCore + root index sufficient?  YES, after bounded hardening
+Is Architecture CompactCore + root index sufficient?  UNDECIDED for the delta; probe first
 ```
 
 原因：当前 root recent-material index 已承担 AI material navigation；active manifest 也已有 `NODE-AI-REASONING`。再建一个目录对称的 index 不增加 owner、fast route 或行为证据。
 
-真正需要的是一次 bounded `AI/SRT_AI_Architecture_CompactCore.md` hardening：先用 `AI/SRT_AI_Claim_Status.md` 的 architecture-state rule 收紧 CompactCore 中未限定的“Transformer 没有 d / scaling 不会生成 judgment / attention-selection isomorphism”表述，再吸收 AIEVID / AIREASON / AIGOAL / AIRESEL。否则新 patch 会落入一个比当前 authority 更宽、更强的旧架构口径。
+现有 `NODE-AI-REASONING` 已在三次 bounded baseline 中 24/24 通过；AIEVID01 / AIREASON01 是 08-08 明确推翻的前两次静态假阴性，不能因无 hook 再列为 absorption 缺口。真正未决的是 AIGOAL01 / AIRESEL01 / AICONSC01 的增量区分是否已可由现有 Claim Status、Positioning、bridge 与 patch route 取得。应先 probe；只有 Case B/C 才讨论 CompactCore hardening 或内容吸收。若届时施工，仍须先用 architecture-state rule 收紧 CompactCore 中未限定的旧措辞。
 
 结论：
 
 ```text
-AI Architecture CompactCore absorption = GO, with authority-scoping prerequisite
+AI Architecture CompactCore absorption = NOT YET / PROBE CANDIDATE
 new AI hardening index = NO-GO
 ```
 
-既有 `NODE-AI-REASONING` 为 `active_complete / robustly_observed`，但这只证明现有节点可用；不证明本轮新增 AIGOAL/AIRESEL/AICONSC 已生效。
+既有 `NODE-AI-REASONING` 为 `active_complete / robustly_observed`；它证明现有 AIEVID/AIREASON 判别可用，但不证明本轮新增 AIGOAL/AIRESEL/AICONSC 已生效，也不授权先改 CompactCore 再测试。
 
 ---
 
@@ -487,24 +529,24 @@ historical "已融入"
 
 | Cluster | Existing node | New node now? | Reason |
 |---|---|---|---|
-| AI reasoning/evidence/goal/reselection | `NODE-AI-REASONING` | **No** | existing node and bounded behavior evidence already exist; absorb delta into current owner/compact route |
-| Neuroscience memory/object/history | `NODE-NEURAL-DECODABILITY` is adjacent | **Not yet** | candidate after N1–N13 owner + compact/router route; current patches are not one active node by themselves |
-| Philosophy individuation/representation/bearer | `NODE-SUBJECTHOOD` is adjacent | **Not yet** | no bounded synthesis owner or fast route; current subjecthood node is only partially active |
+| AI reasoning/evidence/goal/reselection | `NODE-AI-REASONING` | **No** | existing node is robustly observed; probe AIGOAL/AIRESEL/AICONSC increment before any owner/compact change |
+| Neuroscience memory/object/history | `NODE-NEURAL-DECODABILITY` is adjacent | **Not yet** | cluster-specific baseline not run; owner/compact absence is not decision evidence |
+| Philosophy individuation/representation/bearer | `NODE-SUBJECTHOOD` is adjacent | **Not yet** | cluster-specific baseline not run; current subjecthood state does not decide the new proposition set |
 | Collective situated individuation | `NODE-SOCIAL-L2` | **No** | COLL08 is locally landed; broader node remains partial for other reasons |
 | Physics bridge family | `NODE-PHYSICS-MEASUREMENT` | **No** | physics node exists; new bridge material remains deferred/guardrail |
 
-本轮不批量创建节点。只有在 cluster 获得 SRT-native proposition、owner、fast/compact route、router/deep-map route，并摆脱单篇材料复述后，才进入 active-node proposal。Axis B 在那之后仍从 `untested` 开始，除非另有真实 bounded run。
+本轮不创建节点。立项顺序不是先补 owner / fast / router 再测，而是先冻结 SRT-native proposition 与边界，跑 current-main bounded baseline，再按 Case A/B/C/D 决定是否需要 active-node proposal。Case A 必须停止施工；Case B 才修 retrieval/compression；Case C 才讨论内容写回；行为状态只由真实 run record 决定。
 
 ---
 
-## 11. Table B — Real synthesis candidates
+## 11. Table B — Real clusters / synthesis probe candidates
 
-| Cluster | Member patches | Current owners | Missing landing | Native SRT increment | Risk | Recommended action | Priority |
-|---|---|---|---|---|---|---|---|
-| **Neuroscience N1–N13: memory/object/history + short-timescale eligibility/closure** | N1–N12；CONSC14；NEURAL15–30，核心 delta 为 23–30 | neuroscience hardening index；Neural/Consciousness CompactCore；predictions；NEURAL25 protocol | `N1_N13_v0_2` absent；new hooks pending | separates geometry, eligibility, integration, transformation, accessibility, authority, prospective efficacy and global capacity | proxy identity；false serial anatomy；phenomenality overclaim | create bounded non-canonical N1–N13 synthesis in a separate PR | **P1 / GO** |
-| **Individuation / Representation / Bearer Formation** | PH-CONSC03/04；PH-IND01/02/03；PH-DIFF01；PH-MEM01；PH-MR01；SOC-COG03 | Individuation owner；Subjecthood interface；Mental Representation annex；Social Cognition owner | no bounded synthesis owner；no fast route | distinguishes preformation, individuation, re-identification, historical transformation, bearer and phenomenality residual | importing Deleuze/Simondon ontology；duplicating Agency synthesis；solving P0-04 by label | write a scope/adjudication packet, then one bounded synthesis if scope passes | **P2 / warranted** |
-| **AI evidence / trace / goal / re-selection architecture** | AIEVID01；AIREASON01；AIGOAL01；AIRESEL01；AICONSC01 as boundary | AI Positioning；AI Claim Status；Context-Coherence bridge；AI Architecture CompactCore | AIGOAL/AICONSC hooks pending；AIRESEL patch-only；CompactCore not yet scoped | evidence provenance → trace-role separation → completion/selection/generation → reorientation → stake gate | architecture-state overgeneralization；functional selection → stake leap | harden and extend existing Architecture CompactCore; do not create a new index | **P2 / GO with prerequisite** |
-| **Bearer / phenomenality residual pressure** | PH-CONSC03/04；NEURAL24；NEURAL30；AICONSC01 | HardProblem Epistemology；Subjecthood interface；Consciousness owner | all delta hooks pending | preserves `bearing != phenomenality` and supplies deletion / comparator tests | accidentally declaring a solution to the hard problem | keep as a pressure-test subsection, not a positive standalone theory | **P3 / NOT YET as standalone** |
+| Cluster | Member patches | Current owners | Engineering topology（not gap evidence） | Bounded probe status | Native SRT increment | Risk | Recommended action | Priority |
+|---|---|---|---|---|---|---|---|---|
+| **Neuroscience N1–N13: memory/object/history + short-timescale eligibility/closure** | N1–N12；CONSC14；NEURAL15–30，核心 delta 为 23–30 | neuroscience hardening index；Neural/Consciousness CompactCore；predictions；NEURAL25 protocol | `N1_N13_v0_2` absent；new hooks pending；old N1–N12 spec survives on three surfaces | **cluster-specific not_run**；NEURAL18/23 sampled in 08-08 `nd` and passed | separates geometry, eligibility, integration, transformation, accessibility, authority, prospective efficacy and global capacity | proxy identity；false serial anatomy；phenomenality overclaim | freeze exact cluster propositions and run baseline; build only on Case B/C | **P1 probe candidate / synthesis NOT YET** |
+| **Individuation / Representation / Bearer Formation** | PH-CONSC03/04；PH-IND01/02/03；PH-DIFF01；PH-MEM01；PH-MR01；SOC-COG03 | Individuation owner；Subjecthood interface；Mental Representation annex；Social Cognition owner | no bounded synthesis owner；no explicit fast landing for the combined chain | **cluster-specific not_run** | distinguishes preformation, individuation, re-identification, historical transformation, bearer and phenomenality residual | importing Deleuze/Simondon ontology；duplicating Agency synthesis；solving P0-04 by label | scope proposition/rubric, then baseline probe; synthesize only on Case C | **P2 probe candidate / synthesis NOT YET** |
+| **AI evidence / trace / goal / re-selection architecture** | AIEVID01；AIREASON01；AIGOAL01；AIRESEL01；AICONSC01 as boundary | AI Positioning；AI Claim Status；Context-Coherence bridge；AI Architecture CompactCore | AIGOAL/AICONSC hooks pending；AIRESEL patch-only；CompactCore has authority collision | **cluster-specific not_run**；existing AIEVID/AIREASON node baseline is robustly observed | evidence provenance → trace-role separation → completion/selection/generation → reorientation → stake gate | architecture-state overgeneralization；functional selection → stake leap | probe AIGOAL/AIRESEL/AICONSC delta; no CompactCore edit on Case A | **P2 probe candidate / absorption NOT YET** |
+| **Bearer / phenomenality residual pressure** | PH-CONSC03/04；NEURAL24；NEURAL30；AICONSC01 | HardProblem Epistemology；Subjecthood interface；Consciousness owner | delta hooks pending | **standalone proposition set not_run** | preserves `bearing != phenomenality` and supplies deletion / comparator tests | accidentally declaring a solution to the hard problem | keep as probe pressure items, not a positive standalone theory | **P3 / no standalone workline** |
 
 Not listed as synthesis candidates:
 
@@ -521,7 +563,7 @@ The following counts are unresolved **landing-ledger target occurrences**, not �
 | Target class | Target occurrences | Hooks involved | Typical examples | Operational reading |
 |---|---:|---:|---|---|
 | normal owner landing | **29** | 18 | Neural predictions；Subjecthood interface；Core 25；NEURAL25 protocol | eligible for the named owner workline; not automatically urgent |
-| future synthesis target | **42** | 26 | Neural CompactCore / N1–N13；Agency/Philosophy future synthesis；Physics Bridge v0.2 | wait for bounded synthesis workline; not ordinary backlog |
+| future synthesis target | **42** | 26 | Neural CompactCore / N1–N13；Agency/Philosophy future synthesis；Physics Bridge v0.2 | planned target only; wait for baseline Case B/C, not ordinary backlog |
 | canonical/high-risk target | **15** | 13 | `_SRT_T_DIR_CANONICAL.md`；`Core/SRT_OPEN_TENSIONS.md`；Core_Law owners | requires edit protocol / author gate; audit cannot land it |
 | parked target | **13** | 9 | active book body；ChoiceMap incubation；paused experiment extension | wait for workline/revival trigger |
 | missing target | **0** | 0 | — | no currently unplanned missing file after classification |
@@ -536,6 +578,8 @@ pending hooks = 29
 ```
 
 The 101 unresolved/withdrawn ledger target occurrences above include targets inside partial hooks and one withdrawn target inside an otherwise landed hook; they must not be equated with 101 theory tasks.
+
+Table C is deliberately hook-ledger scoped. A broader corpus scan finds the old `N1_N12_v0_2` name on three live surfaces: one NEURAL19 hook, the active N10–N12 integration instruction (including a section-generation plan), and NEURAL19 patch frontmatter. The latter two are outside `*/hooks/`, so they do not change Table C's counts but must be included in the topology repair.
 
 ---
 
@@ -563,7 +607,7 @@ Gate A/B/C remain open authority decisions. Their presence is not classified as 
 | B2 intersection | **9** | guardrail-only component; overlaps B1 on mixed verdicts | reopen only for the named boundary problem |
 | B3 intersection | **1** | public-prose-only component | writing/public workline only |
 | B whose trigger is verified fired | **0** | no repository event evidence | none this round |
-| Rejected C | **50** | original verdict is authoritative | new materially distinct source required |
+| Original-verdict C | **50** | original verdict is authoritative；CSV operational split = 30 `rejected` + 20 `superseded_or_duplicate` | new materially distinct source required |
 | EC cards | **11; accepted=0** | correct hardness-conservation state | separate evidence review, never coverage pressure |
 | Physics P03–P08 / E01–E05 / QBox / REP01 / THERM01 | full family | analogy/bridge/guardrail; E05 discriminator absent | named physics promotion condition |
 | ChoiceMap incubation bundle | 1 indexed bundle, multiple files | product line remains parked; no trigger record fired | IRP / ChoiceMap workline restart |
@@ -576,55 +620,55 @@ Old B calendar/re-review dates are not treated as revival events. Under the curr
 
 Only five actions are recommended.
 
-### 1. Create the bounded Neuroscience N1–N13 v0.2 synthesis
+### 1. Run three cluster-specific bounded baseline probes before any build
 
-- **Action**: create `Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md` in a separate PR, following the current hardening index structure.
-- **Why now**: the memory/object/history sequence and the NEURAL23→30 short-timescale branch now have independent stages, negative controls, failure conditions and declared landings.
-- **Expected theoretical gain**: one native neural architecture separating capacity, eligibility, integration, transformation, accessibility, authority and prospective efficacy.
-- **Risk**: turning overlapping mechanisms into a mandatory serial anatomy; proxy/canonical identity; phenomenality inflation.
-- **Files likely involved**: neuroscience hardening index; new N1–N13 synthesis; Neural/Consciousness CompactCore; predictions; NEURAL18–30 hooks.
-- **GO condition**: preserve NEURAL26 as orthogonal, keep NEURAL23→30 separate from the longer memory chain, and make all proxy/claim-level guards explicit.
-- **NO-GO condition**: synthesis requires modifying canonical `d/Psi_f/T_dir`, asserts behavior evidence for the new cluster, or collapses all patches into one scalar/stage chain.
+- **Action**: freeze proposition sets, prohibited inferences, anti-gaming positives and rubrics for Neuroscience N1–N13, Philosophy individuation/representation/bearer, and the AI AIGOAL/AIRESEL/AICONSC delta; then run each on current main under the 6-file / 2-navigation budget.
+- **Why now**: 08-08 produced five consecutive static-audit false negatives, including NEURAL18, NEURAL23 and REP01; the present cluster decisions otherwise repeat the invalid inference from missing hook / owner / planned file.
+- **Expected theoretical gain**: distinguish no-gap Case A from retrieval Case B, content Case C and archive Case D before spending theory-edit capacity.
+- **Risk**: designing questions that merely quote patch IDs, changing rubrics after results, or transferring sampled-member success to the whole cluster.
+- **Files likely involved**: bounded protocol; a new probe specification/run record; current owners and patches as read-only evidence.
+- **GO condition**: all questions and thresholds are frozen before runs, include positive counterexamples, and record every file/navigation step.
+- **NO-GO condition**: no SRT-native proposition can be stated without importing a source author's vocabulary, or the test cannot distinguish Cases A–D.
 
-### 2. Scope a bounded Philosophy individuation / representation / bearer synthesis
+### 2. Normalize the competing N1–N12 construction topology
 
-- **Action**: first write a short adjudication/scope packet; create the synthesis only if the scope cleanly excludes existing Agency–Subjecthood content.
-- **Why now**: PH-IND/DIFF/MEM/MR and PH-CONSC03/04 now form a shared explanatory sequence rather than isolated comparisons.
-- **Expected theoretical gain**: a native account of how non-preformed structure becomes re-identifiable, history-bearing and bearer-qualified while leaving phenomenality residual.
-- **Risk**: `virtual/preindividual = L0`, `transduction = selection`, generativity→d, or solving P0-04 by imported vocabulary.
-- **Files likely involved**: philosophy hardening index; Individuation owner; Subjecthood interface; Mental Representation annex; Social Cognition owner; Agency synthesis only as a boundary reference.
-- **GO condition**: one SRT-native proposition, explicit owner split, no duplicated Agency synthesis, and external-philosophy guards retained.
-- **NO-GO condition**: the draft is mainly Deleuze/Simondon exposition or needs a new primitive/equation to connect the material.
+- **Action**: after the baseline disposition is known, replace or explicitly supersede the old N1–N12 target on all three live surfaces—not only the hook—and keep the result as navigation/governance repair unless Case C authorizes content work.
+- **Why now**: one hook, one active construction instruction and one patch frontmatter currently compete with the N1–N13 hardening index.
+- **Expected theoretical gain**: none by itself; it prevents two incompatible synthesis specifications from steering the next agent.
+- **Risk**: treating path cleanup as evidence that N1–N13 content is needed, or creating either absent synthesis file to satisfy the ledger.
+- **Files likely involved**: NEURAL19 hook; N10–N12 integration instruction; NEURAL19 patch; neuroscience hardening index.
+- **GO condition**: the replacement target follows the probe's Case disposition and no theory body is created.
+- **NO-GO condition**: cleanup would pre-commit the repository to N1–N13 before the baseline result.
 
-### 3. Harden and extend the existing AI Architecture CompactCore
+### 3. Apply the probe disposition to Neuroscience N1–N13
 
-- **Action**: reconcile the CompactCore with AI Claim Status first, then absorb AIEVID01/AIREASON01/AIGOAL01/AIRESEL01; attach AICONSC01 as a stake gate.
-- **Why now**: the architecture cluster has a stable ladder, but AIRESEL remains patch-only and current owner wording predates the architecture-state hardening.
-- **Expected theoretical gain**: a single fast AI route that separates evidence, trace function, goal competence, reorientation, standard-RL reduction and constitutive stake.
-- **Risk**: blanket all-AI verdicts; functional selection→Real Choice; re-selection protection→d; architecture-state leakage.
-- **Files likely involved**: AI Architecture CompactCore; AI Claim Status; AI Positioning Note; Context-Coherence bridge; Choice Generation bridge; root material index.
-- **GO condition**: every claim declares architecture state and withdrawal conditions; no new hardening index is needed.
-- **NO-GO condition**: the pass merely appends patch summaries or preserves unqualified theorem-like architecture claims.
+- **Action**: Case A stop; Case B make the smallest routing/compression repair; Case C scope a bounded non-canonical synthesis; Case D preserve provenance and remove it from the active candidate list.
+- **Why now**: the memory/object/history and short-timescale chains have enough explicit non-identities to be tested, while only NEURAL18/23 have prior sample-level probe evidence.
+- **Expected theoretical gain**: a justified neural workline, if and only if the current theory actually lacks or cannot retrieve the distinctions.
+- **Risk**: serializing NEURAL26, proxy/canonical identity, phenomenality inflation, or mistaking node-level success for all member coverage.
+- **Files likely involved**: determined by the Case result; possible hardening index, compact route or future N1–N13 synthesis.
+- **GO condition**: Case B or C with a reproducible failed item and explicit smallest repair.
+- **NO-GO condition**: Case A; or any fix requires changing canonical `d/Psi_f/T_dir` or collapsing the mechanisms into one chain.
 
-### 4. Normalize hook topology after the three bounded decisions
+### 4. Apply the probe disposition to Philosophy individuation / representation / bearer
 
-- **Action**: retire the old N1–N12 target, preserve planned/parked/high-risk distinctions, and batch only normal owner landings authorized by the chosen synthesis scopes.
-- **Why now**: 29 pending hooks contain 101 heterogeneous ledger target occurrences; treating them as one backlog would cause unsafe ordering.
-- **Expected theoretical gain**: a truthful engineering→owner transition without reviving parked work or bypassing canonical gates.
-- **Risk**: status laundering, creating missing files solely to satisfy hooks, or marking partial semantic overlap as landed.
-- **Files likely involved**: the affected hooks, domain hardening indexes, hook-closure audit derivatives.
-- **GO condition**: each landing includes anchor evidence and preserves target class.
-- **NO-GO condition**: a batch operation touches canonical/high-risk, book, ChoiceMap or Physics targets without their own workline authorization.
+- **Action**: test the combined non-identities against current Individuation, Subjecthood, Mental Representation, Social Cognition and Agency owners; synthesize only under Case C.
+- **Why now**: the patch family is coherent enough to test, but owner-path absence cannot show that its discriminations are absent.
+- **Expected theoretical gain**: either demonstrate current semantic coverage or identify one bounded native gap without duplicating Agency–Subjecthood.
+- **Risk**: `virtual/preindividual = L0`, `transduction = selection`, generativity→d, or solving phenomenality by imported labels.
+- **Files likely involved**: probe record first; only a Case B/C result may nominate owner/compact files.
+- **GO condition**: a frozen question fails for a bounded, source-independent SRT distinction and survives unconstrained diagnosis.
+- **NO-GO condition**: Case A, or the proposed increment is mainly Deleuze/Simondon exposition.
 
-### 5. Run a bounded active-layer routing pass after synthesis landing
+### 5. Apply the probe disposition to the AI delta without rebuilding AIEVID/AIREASON
 
-- **Action**: after actions 1–3 land, decide whether the philosophy and neuroscience subclusters merit new active-theory nodes or should remain inside existing nodes; then add owner/compact/router routes and run bounded behavior tests.
-- **Why now**: current material indexes make clusters searchable, but searchability is not declarative retrieval; creating nodes before owners would repeat the 2026-08-06 error.
-- **Expected theoretical gain**: converts one or two completed syntheses from owner text into reliably retrievable theory.
-- **Risk**: creating nodes for patch bundles, faking Axis B from static checks, or colliding with PR #780 context-bundle work.
-- **Files likely involved**: active-theory manifest/checker outputs; router; deep map; relevant CompactCore; context bundles only after open-PR reconciliation.
-- **GO condition**: native proposition + owner + fast layer + router/deep-map route all exist, followed by a real bounded run.
-- **NO-GO condition**: any structural carrier is missing or the open context-bundle PR still overlaps the intended derivative edits.
+- **Action**: probe AIGOAL01/AIRESEL01/AICONSC01 against current Claim Status, Positioning, Context-Coherence bridge and Architecture CompactCore; preserve AIEVID01/AIREASON01 as already available evidence.
+- **Why now**: the existing AI node is robustly observed, while the newer goal/reselection/stake combination is the only untested increment.
+- **Expected theoretical gain**: determine whether the existing CompactCore already supports the ladder or needs a scoped routing/content repair.
+- **Risk**: blanket all-AI verdicts, functional selection→Real Choice, re-selection→d, or treating architecture collision as proof of a content gap.
+- **Files likely involved**: AI probe specification/run record; CompactCore or router only under Case B/C.
+- **GO condition**: Case B/C identifies a specific failed discrimination and the repair is architecture-state qualified.
+- **NO-GO condition**: Case A; no new hardening index or CompactCore append pass is then permitted.
 
 ---
 
@@ -632,9 +676,9 @@ Only five actions are recommended.
 
 | Question | Answer |
 |---|---|
-| Is Neuroscience N1–N13 v0.2 mature now? | **YES — GO for a bounded non-canonical synthesis; do not execute in this PR.** |
-| Should PH-IND / PH-DIFF / PH-MEM / PH-MR form a bounded synthesis? | **YES — warranted after a scope/adjudication pass; do not merge Agency or phenomenality into it.** |
-| Should AI Architecture CompactCore absorb AIEVID/AIREASON/AIGOAL/AIRESEL? | **YES — after owner wording is scoped through AI Claim Status; AICONSC is a boundary attachment.** |
+| Is Neuroscience N1–N13 v0.2 mature now? | **UNDECIDED — cluster is a bounded-probe candidate; synthesis = NOT YET.** |
+| Should PH-IND / PH-DIFF / PH-MEM / PH-MR form a bounded synthesis? | **UNDECIDED — a proposition-level probe is warranted; synthesis is authorized only by Case C.** |
+| Should AI Architecture CompactCore absorb AIEVID/AIREASON/AIGOAL/AIRESEL? | **NOT YET — AIEVID/AIREASON are already available; probe the AIGOAL/AIRESEL/AICONSC delta before any CompactCore edit.** |
 | Is a separate collective-selection synthesis still warranted? | **NO, not now — COLL08 is locally landed; wait for a distinct cross-domain increment.** |
 | Does Physics stay deferred? | **YES — E05 discriminator trigger has not fired.** |
 
@@ -651,7 +695,7 @@ Only five actions are recommended.
 | integration-hook closure | **PASS** | 44 hooks；errors 0；checker tests pass |
 | split metadata refresh check | **PASS** | would-change 0；two documented README skips |
 | split freshness | **PASS** | errors 0 / warnings 0 under strict metadata |
-| context bundle freshness | **PASS** | 9 generated files byte-identical to provenance `849a5e63 @ 2026-08-11` |
+| context bundle freshness | **PASS** | STATUS repair forced regeneration；9 generated files byte-identical to `inputs_digest=5f08db5b860ab960` |
 | forbidden local noise | **PASS** | errors 0 / warnings 0 |
 | full governance preflight | **PASS** | `failures=0` with `--skip-write-report --strict-split-metadata` |
 | `git diff --check` | **PASS** | no whitespace errors |
@@ -672,7 +716,7 @@ uv run python scripts/governance_preflight.py --skip-write-report --strict-split
 git diff --check
 ```
 
-The active-theory warning and the 1440 frontmatter baseline entries are repository-wide pre-existing state. They were not introduced by this PR. No governance-generated derivative needed updating.
+The active-theory warning and the 1440 frontmatter baseline entries are repository-wide pre-existing state. They were not introduced by this PR. The STATUS repair forced a script-only refresh of 8 bundles + README after rebasing over merged #780; no generated-file conflict remains.
 
 ---
 
@@ -703,16 +747,19 @@ notes
 
 Important CSV semantics:
 
+- The CSV unit is a **dated Material Log row**, not a patch. It cannot by itself validate Table B's patch-cluster membership or semantic conclusion.
+- 52 patch files exist; 11 have no corresponding CSV row: AIREASON01, AIRESEL01, NEURAL19, NEURAL21, PH-AG01, PH-IND02, and Physics P03/P04/P05/P07/P08. Prose cluster analysis used a separate full patch scan; the CSV is not presented as coverage of those 11 files.
 - `official_declared_scope=no` marks the three historical physical rows outside a split's declared count.
 - `claimed_in_log:` preserves an old Material Log landing claim; it is not machine proof of current active assimilation.
 - `pending_target:` records a fast/compact landing named by a pending hook; it does not say that the target already contains the increment.
 - `unverified_target:` records a plausible current target whose material-specific landing was not verified in this audit.
 - `conflict_with_current_authority` is recorded in `notes`, not introduced as a new disposition.
 - `active_theory_node` records the nearest current node relation; it does not assert that the specific material increment is assimilated into that node.
+- `probe_2026_08_08:` records a real bounded route inherited from the 08-08 run record; it is behavioral evidence for the sampled proposition, not for every member of its cluster.
 - blank fast/router fields mean “not verified for this material increment”, not necessarily “the domain has no route”.
 
 ---
 
 ## 19. Non-actions preserved
 
-This audit modifies no canonical definition, `d/Psi_f/T_dir` owner, OPEN_TENSIONS author decision, A/B/C verdict, book body, submitted paper, SourceCard, active-theory Axis B evidence, or EC acceptance state. It creates no Physics, Neuroscience, Philosophy or AI theory synthesis and deletes no material.
+This audit modifies no canonical definition, `d/Psi_f/T_dir` owner, OPEN_TENSIONS author decision, A/B/C verdict, book body, submitted paper, SourceCard, active-theory Axis B evidence, or EC acceptance state. Apart from the minimal STATUS statistic/navigation correction described in §3, it changes no existing repository content. It creates no Physics, Neuroscience, Philosophy or AI theory synthesis and deletes no material.
