@@ -29,11 +29,13 @@ canonical: false
 | [2026-08_Part01.md](2026-08_Part01.md) | 10 | August split; NEURAL23 added 2026-08-07 |
 | [2026-08_Part02.md](2026-08_Part02.md) | 8 | August continuation through NEURAL27 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
-| [2026-08_Part04.md](2026-08_Part04.md) | 3 | current August continuation; NEURAL28 + Simondon reopening + SOC-COG03 recorded 2026-08-10 |
+| [2026-08_Part04.md](2026-08_Part04.md) | 4 | current August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 through 2026-08-11 |
 
 ## Current note
 
-`2026-08_Part04.md` now records three bounded A-class entries.
+`2026-08_Part04.md` now records four bounded A-class entries.
+
+**Wang / NEURAL29 / PH-MEM01** adds the missing memory-transformation layer between retention and later prospective control. The stable source-backed increment is that consolidation can selectively weaken contextual detail, abstract regularities, integrate previously separated contents and improve later recognition/inference, while the same machinery can also generate false memories. SRT-side hardening keeps `A`, `B`, `C`, `A>B`, `B>C`, `A>C`, named rules and schemas on the objectification side once they become usable units; it separates effective historical constraint from explicit current object, subpersonal mechanism from bearer ownership, cognitive generativity from canonical `d`, and consolidation from monotone `Psi_f` reduction. The resulting memory sequence is `NEURAL28 re-identification -> NEURAL29 retention/transformation -> NEURAL25 accessibility/authority/write-back -> NEURAL27 prospective history-use`. PH-MEM01 adds a P3 understanding candidate with consequence sensitivity and revisability, but neither these additions nor Wang's manuscript modify canonical `L2`, `d`, `Psi_f`, bearer, subjecthood or consciousness. The supplied manuscript remains recorded as a penultimate author draft until publication metadata is independently verified.
 
 **NEURAL28** is a P3/P4 concept-cell / re-identification bridge. Its stable increment is not “concept cells prove objectification,” but a refinement of object stability: a concept-level identity can remain re-identifiable across changed presentations, indirect discourse references, and task-relevant relations. The patch inserts an upstream `Identification -> Re-identification -> Relational recruitment` layer before NEURAL25's accessibility/authority/write-back decomposition and NEURAL27's prospective historical-efficacy readout. The packet explicitly blocks `concept cell = object`, `hippocampus = L2`, `re-identification = L2`, `persistent firing = memory`, and any promotion of Quanta's “Swiss Army cell” possibility into an established result. The Q02 book hook is pending because the current book workline defers local material-triggered rewrites until the material-backflow phase reopens.
 

@@ -141,6 +141,7 @@ AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T
 | PH-IND01 object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | rebuilds Kibbe–Leslie under a strict evidence boundary: object individuation-before-identification is source-backed; subject-position-before-self-identification is only an SRT P3 analogy; tracking continuity is a negative control for bearer continuity | High |
 | PH-IND02 selective closure / perspective / bearer formation | `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` | treats selective stabilization and momentary closure as precursor concepts for dynamic boundary formation, then requires consequence return/history/future-selectability tests before bearer admission; types perspective below phenomenality | High |
 | PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | uses the full-book Simondon close-read to harden `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, dynamic bearer-boundary formation and generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | Very high |
+| PH-MEM01 objectification history / bearer / revisable understanding | `Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md` | treats memory consolidation as one mediator from prior objectification history to future objectification conditions; separates explicit object from effective historical constraint, subpersonal mechanism from bearer ownership, cognitive generativity from `d`, and adds consequence sensitivity/revisability as P3 understanding discriminators | Very high |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
 | SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
 | SOC-COG03 norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating and distributed script constraints; separates supportive automation from choice-replacing closure; routes broad social constraint revision into existing H3/I5/J5 reselectability rather than creating a parallel second-order-selection gate | High |
@@ -258,6 +259,36 @@ yang != L1
 G_hat_theta != Yang entity
 ```
 
+PH-MEM01 remains tied to:
+
+```text
+01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md
+Core_Law/SRT_Individuation.md
+Philosophy/SRT_Subjecthood_Threshold_Interface.md
+Neuroscience/patches/SRT_Neuro_NEURAL29_Memory_Consolidation_Historical_Transformation_v0_1.md
+```
+
+and preserves:
+
+```text
+A / B / C / A>B / B>C / A>C
+are all objectification-level units once explicitly cut out and operable
+
+effective historical constraint
+!= explicit current object
+
+subpersonal causal contribution
+!= bearer ownership
+
+generative objectification
+!= truth
+!= new stake direction
+!= d increase
+
+schema coherence / historical efficacy
+!= mature understanding without consequence-sensitive revisability
+```
+
 SOC-COG03 remains tied to:
 
 ```text
@@ -318,6 +349,8 @@ selection event
 | NEURAL25 memory as historical selection bias | `Neuroscience/patches/SRT_Neuro_NEURAL25_Memory_as_Historical_Selection_Bias_v0_1.md` | separates retained representation, candidate accessibility, control authority, behavioral expression and historical write-back | High |
 | NEURAL26 capacity/accessibility/authority stack | `Neuroscience/patches/SRT_Neuro_NEURAL26_Selection_Capacity_Accessibility_Authority_Stack_v0_1.md` | separates global dynamical capacity from candidate accessibility, control authority, expression and historical write-back | High |
 | NEURAL27 prospective memory / event-boundary historical efficacy | `Neuroscience/patches/SRT_Neuro_NEURAL27_Prospective_Memory_Event_Boundary_Historical_Efficacy_v0_1.md` | treats event boundaries as update opportunities and anticipatory gaze as a no-report history-use/path-bias assay; separates reportable memory from prospective control and full HEF-3 write-back | High |
+| NEURAL28 re-identifiable object identity / dynamic concept index | `Neuroscience/patches/SRT_Neuro_NEURAL28_Reidentifiable_Object_Identity_Dynamic_Concept_Index_v0_1.md` | adds re-identification and relational re-entry between initial identification and later memory-control stages; object stability becomes cross-change re-addressability rather than a static-copy assumption | High |
+| NEURAL29 memory consolidation / historical transformation | `Neuroscience/patches/SRT_Neuro_NEURAL29_Memory_Consolidation_Historical_Transformation_v0_1.md` | inserts retention-vs-transformation between re-identification and later control; abstraction/decontextualization/integration change later objectification conditions, with false memory as a generativity/factivity negative control | Very high |
 
 Recommended synthesis:
 
@@ -328,6 +361,8 @@ N12 -> intercellular non-neuronal biological infrastructure
 NEURAL22 -> intra-astrocytic nested support topology and dynamic-center correction
 NEURAL23 -> pre-anchoring embodied rhythmic eligibility and Phase x Stake test
 NEURAL24 -> affect/stake dissociation + bearer-indexed access + phenomenal-stopping-point audit
+NEURAL28 -> identity formation / re-identification / relational re-entry
+NEURAL29 -> retention / transformation / decontextualization / integration
 NEURAL25 -> memory content / accessibility / authority / expression / write-back decomposition
 NEURAL26 -> system capacity / candidate accessibility / authority stack
 NEURAL27 -> event-boundary update opportunity + prospective history-use / path-bias readout
@@ -338,7 +373,7 @@ Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
 + consciousness / hard-problem synthesis for NEURAL24
 ```
 
-NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL27 remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
+NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL29 remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
 
 NEURAL22 preserves:
 
@@ -380,14 +415,22 @@ bearer-relative relevance
 != phenomenal character derived
 ```
 
-NEURAL25-NEURAL27 preserve:
+NEURAL25-NEURAL29 preserve:
 
 ```text
 retained / decodable memory
+!= transformed history
 != candidate accessibility
 != control authority
 != prospective path bias
 != historical write-back
+
+effective historical constraint
+!= explicit current rule / object
+
+generative consolidation
+!= factivity
+!= healthy history
 
 event boundary
 != Real Choice Moment

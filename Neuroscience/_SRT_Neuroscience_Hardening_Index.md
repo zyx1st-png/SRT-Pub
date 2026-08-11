@@ -102,6 +102,17 @@ Differentiation
 
 Its narrow claim is that object stability need not mean a literally static internal copy. Human concept-neuron work supports a bounded implementation picture in which a relatively stable semantic address can be re-entered across altered presentations, discourse references and task-relevant relations. This must not be read as `concept cell = object`, `hippocampus = L2`, `re-identification = L2`, or `persistent firing = memory`.
 
+NEURAL29 adds a consolidation / historical-transformation layer:
+
+```text
+Retention
+!= Transformation
+!= Re-entry / Accessibility
+!= Authority / Expression / Write-back
+```
+
+Its narrow claim is that retained history can be reorganized before explicit retrieval: selective weakening, decontextualization, abstraction and cross-fragment integration can change what later recognition and inference can do. The patch also uses false-memory results as a negative control: generativity and schema coherence do not guarantee truth or healthy historical constraint. It explicitly blocks `memory = L2`, `learning = Psi_f reduction`, and cognitive-generativity-to-`d` promotion without a separate stake gate.
+
 NEURAL25 adds a candidate-control / history layer:
 
 ```text
@@ -141,11 +152,12 @@ The recommended memory/object sequence is therefore:
 
 ```text
 NEURAL28: identity formation / re-identification / relational re-entry
+-> NEURAL29: retention / transformation / decontextualization / integration
 -> NEURAL25: accessibility / authority / expression / write-back
 -> NEURAL27: prospective history-use / path-bias readout
 ```
 
-with NEURAL26 orthogonally constraining the global dynamical capacity in which those candidate-level processes occur.
+with NEURAL26 orthogonally constraining the global dynamical capacity in which those candidate-level processes occur. These are complementary explanatory decompositions, not mandatory serial anatomical stages.
 
 ---
 
@@ -177,7 +189,7 @@ Proposed structure:
 
 When consciousness-specific hardening reopens, NEURAL24 should be routed to the consciousness owner / hard-problem interface rather than forcing it into this planned neural-mechanisms synthesis.
 
-NEURAL28, NEURAL25, NEURAL26 and NEURAL27 should be retrieved together when the task concerns object identity, memory, strategy competition, accessibility, control authority, anesthesia, network complexity, candidate-state switching, event segmentation or future-guiding memory. They form complementary re-identification, candidate-control, system-capacity and prospective-history-use decompositions and must not be collapsed into one scalar "selection strength."
+NEURAL28, NEURAL29, NEURAL25, NEURAL26 and NEURAL27 should be retrieved together when the task concerns object identity, memory, consolidation, abstraction, strategy competition, accessibility, control authority, anesthesia, network complexity, candidate-state switching, event segmentation or future-guiding memory. They form complementary re-identification, transformation, candidate-control, system-capacity and prospective-history-use decompositions and must not be collapsed into one scalar "selection strength."
 
 ---
 
@@ -200,6 +212,7 @@ NEURAL28, NEURAL25, NEURAL26 and NEURAL27 should be retrieved together when the 
 | NEURAL26 | `Materials/2026/SRC_2026_08_09_Neuro_Qin_Esketamine_DoC_Network_Recovery.md` / `Neuroscience/patches/SRT_Neuro_NEURAL26_Selection_Capacity_Accessibility_Authority_Stack_v0_1.md` | Neural CompactCore + predictions + future NEURAL25 capacity/history crossed experiment | Adds an upstream system-level dynamical-capacity bridge: global neural regime may constrain whether differentiated candidates can form, propagate and compete, while candidate accessibility, control authority, expression and write-back remain separable; entropy/connectivity are proxy families, not selection-capacity identities | Standalone P3/P4 bridge and pending hook added; peer-reviewed prospective non-randomized DoC evidence; no causal long-term recovery claim and no consciousness/entropy identity |
 | NEURAL27 | `Materials/2026/SRC_2026_08_09_Neuro_Ranganath_Prospective_Memory_Event_Boundaries.md` / `Neuroscience/patches/SRT_Neuro_NEURAL27_Prospective_Memory_Event_Boundary_Historical_Efficacy_v0_1.md` | Neural CompactCore + future N1-N13 synthesis + NEURAL25 protocol + HEF protocol | Event boundaries are candidate history-update opportunities, not choice events; anticipatory gaze under repeated viewing provides a no-report prospective history-use / path-bias readout that separates reportable memory from future-guiding control | Standalone P3/P4 bridge and pending hook added; peer-reviewed event-boundary/MEGA anchors; strong HEF-2 and HEF-3-shaped evidence only, with full HEF-3 still gated by causal-carrier and future-organization tests |
 | NEURAL28 | `Materials/2026/SRC_2026_08_10_Neuro_Concept_Cells_Reidentifiable_Object_Identity.md` / `Neuroscience/patches/SRT_Neuro_NEURAL28_Reidentifiable_Object_Identity_Dynamic_Concept_Index_v0_1.md` | Neural CompactCore + future N1-N13 synthesis + future Q02 material-backflow | Human concept-neuron evidence supports a bounded re-identification bridge: relatively stable concept-level identities can be reinstated across changed presentations, pronoun reference and task-relevant relations; identification, re-identification, relational recruitment, maintenance and historical incorporation must remain separable | Standalone P3/P4 bridge and pending landing-ledger hook added; primary human single-neuron anchors verified; no canonical, Neural CompactCore or Q02 body rewrite in this pass |
+| NEURAL29 | `Materials/2026/SRC_2026_08_11_Philosophy_Wang_Memory_Generative_Understanding.md` / `Neuroscience/patches/SRT_Neuro_NEURAL29_Memory_Consolidation_Historical_Transformation_v0_1.md` | Neural CompactCore + future N1-N13 synthesis + optional future NEURAL25 protocol extension | Inserts a transformation layer between retention and later control: consolidation can alter contextual bindings, abstraction and cross-item integration before explicit recall; false memory provides the negative control `generativity != factivity`, and all explicit task relations/rules remain objectification-level objects | Standalone P3/P4 bridge and pending landing-ledger hook added; author penultimate draft plus cited empirical synthesis; no canonical/owner/body rewrite in this pass |
 
 ---
 
@@ -234,9 +247,10 @@ NEURAL25 = Pipeline 1 memory-as-historical-selection-bias bridge, hook and indep
 NEURAL26 = Pipeline 1 system-level dynamical-capacity / candidate accessibility / control-authority bridge and hook added; cross-capacity/history experimental extension pending
 NEURAL27 = Pipeline 1 prospective-memory / event-boundary / anticipatory-gaze historical-efficacy bridge and landing-ledger hook added; compact-core, N1-N13, NEURAL25 and HEF integration targets pending
 NEURAL28 = Pipeline 1 re-identifiable-object-identity / dynamic-concept-index bridge and landing-ledger hook added; compact-core and Q02 material-backflow targets pending
+NEURAL29 = Pipeline 1 consolidation / historical-transformation bridge and landing-ledger hook added; compact-core, N1-N13 and optional future NEURAL25 extension pending
 B1/B2 SourceCards = information-value pressure card and informational-tuning proxy card parked with named revival triggers
 Index = current file
 Full synthesis = pending
 ```
 
-Do not treat N10-N12, CONSC14, or NEURAL15-NEURAL28 as primitive axioms. They are high-value bridge / lab / pressure materials awaiting future synthesis or empirical hardening.
+Do not treat N10-N12, CONSC14, or NEURAL15-NEURAL29 as primitive axioms. They are high-value bridge / lab / pressure materials awaiting future synthesis or empirical hardening.
