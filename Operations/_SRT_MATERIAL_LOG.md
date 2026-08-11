@@ -5,7 +5,7 @@ tags: [MaterialLog, Pipeline1, AuditTrail]
 status: active_v1
 role: split_master_index
 layer: meta
-epistemic_layer: os
+epistem_layer: os
 claim_mode: canonical
 dependency: [SRT-EXECUTION-PLAN]
 ---
@@ -59,6 +59,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part02 | [Material_Log/2026-08_Part02.md](Material_Log/2026-08_Part02.md) | 8 |
 | 2026-08_Part03 | [Material_Log/2026-08_Part03.md](Material_Log/2026-08_Part03.md) | 2 |
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 6 |
+| 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 1 |
 
 ---
 
@@ -94,8 +95,8 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：225 条
-- A（融入）：148 条
+- 总提交：226 条
+- A（融入）：149 条
 - B（观察）：27 条
 - C（拒绝）：50 条
-- 融入率：65.8%
+- 融入率：65.9%
