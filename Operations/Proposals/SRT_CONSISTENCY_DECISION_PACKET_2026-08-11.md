@@ -106,19 +106,31 @@ A natural existing bridge for the *support* (not the measure): define reachabili
 
 **Against.** `E` stops being a single global number and becomes a family indexed by `(θ, Λ, μ_θ)` — every downstream citation must declare its regime, exactly as `D_eff ≥ d_canonical` now must (`§2b.1` proxy-regime rule). Three new implicit parameters, not two, and `μ_θ` is the hard one: a measure over accessible potentiality is close to a theory of prior probability over what could have been anchored, which SRT does not currently have and may not want. It also does **not** rescue `ΔS = H(L_0) − H(L_1)` or `d/dt H(L_0) = 0`; each needs its own treatment.
 
-### A.4 Option B — reformulate as entropy reduction / normalized information gain
+### A.4 Option B — reformulate as entropy reduction / normalized information gain (two sub-options: B1, B2)
 
-Replace the ratio with a **difference of comparable quantities**, or normalize by something finite:
+This is **two different options**, not one, and they do not carry the same conditions. They must be decided separately.
 
-$$E \sim \Delta H = H_{\Lambda}(\text{pre-anchoring}) - H_{\Lambda}(\text{post-anchoring})
-\qquad\text{or}\qquad
-E = \frac{\Delta H}{H_{\Lambda}(\text{pre-anchoring})}$$
+**B1 — unnormalized difference.**
 
-**Measure caveat.** `ΔH` still needs a measure — `H_Λ` is undefined without one, exactly as in Option A. What B avoids is the *infinite denominator* and the *accessible-horizon* apparatus, **not** the probability-assignment requirement. Its advantage is narrower than it first appears: if both entropies are taken over the *same* regime, the regime partly cancels in the difference, so B is more tolerant of an imperfectly specified `μ` than a ratio is — but it does not eliminate `μ`.
+$$\Delta H = H_{\Lambda,\mu}(\text{pre-anchoring}) - H_{\Lambda,\mu}(\text{post-anchoring})$$
 
-**For.** Mathematically the cleanest of the three: no infinite denominator, no accessible-horizon apparatus, no `0 < H < ∞` admissibility side-condition to carry at every citation. Fits the anchoring ontology directly — anchoring is a *transition*, and a transition is naturally scored by a difference, not by a ratio against a background. Aligns P0-02 with `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`, which already treats entropy production as the measurable face of selection asymmetry.
+Needs both entropies **finite** (an `∞ − ∞` is indeterminate), but carries **no denominator condition**. Output is unbounded above and is not a `[0,1]` index, so it does not preserve P0-02's current reading of `E` as a degree.
 
-**Against.** The strongest structural objection is that it **changes what P0-02 asserts**. The current formula says existence is a *degree of anchoredness out of open possibility* — a standing property. `ΔH` says existence is *how much determination this transition performed* — an event property. Those are different claims, and the first is the one the L0 ontology ("存在是选择持续收敛所形成的稳态") appears to want. Also inherits the reference-state problem: "pre-anchoring" needs its own definition, and the obvious candidate (the full latent domain) reintroduces the infinity.
+**B2 — normalized information gain.**
+
+$$E = \frac{\Delta H}{H_{\Lambda,\mu}(\text{pre-anchoring})}$$
+
+Restores the `[0,1]`-style reading, but **re-imposes the very condition B was supposed to avoid**:
+
+$$0 \;<\; H_{\Lambda,\mu}(\text{pre-anchoring}) \;<\; \infty .$$
+
+So **B2 is not exempt from `0 < H < ∞`** — it only moves the requirement from `H(L_0)` to the pre-anchoring reference state. If that reference is taken to be the full latent domain, the infinity returns and B2 collapses into the original defect. B2's advantage over Option A is therefore narrower than it looks: a *possibly more tractable* reference state, not the removal of a condition.
+
+**Measure caveat (both B1 and B2).** `ΔH` still needs a measure — `H_{Λ,μ}` is undefined without one, exactly as in Option A. What B avoids is the *accessible-horizon* apparatus, **not** the probability-assignment requirement. One genuine advantage survives: if both entropies are taken over the *same* regime, the regime partly cancels in the difference, so B is more tolerant of an imperfectly specified `μ` than a ratio against an independent background is — but it does not eliminate `μ`.
+
+**For.** Mathematically the cleanest of the three. **B1** carries no denominator condition at all; **B2** carries one but on a reference state that may be easier to bound than `L_0`. Neither needs the accessible-horizon apparatus. Fits the anchoring ontology directly — anchoring is a *transition*, and a transition is naturally scored by a difference, not by a ratio against a background. Aligns P0-02 with `Core/SRT_Core_25_Thermodynamic_Signatures_of_Selection.md`, which already treats entropy production as the measurable face of selection asymmetry.
+
+**Against.** The strongest structural objection applies to **both** B1 and B2: it **changes what P0-02 asserts**. The current formula says existence is a *degree of anchoredness out of open possibility* — a standing property. `ΔH` says existence is *how much determination this transition performed* — an event property. Those are different claims, and the first is the one the L0 ontology ("存在是选择持续收敛所形成的稳态") appears to want. Both also inherit the reference-state problem: "pre-anchoring" needs its own definition, and the obvious candidate (the full latent domain) reintroduces the infinity — for **B2** this is fatal rather than merely awkward, since that reference sits in its denominator.
 
 ### A.5 Option C — demote the expression to heuristic
 
@@ -132,12 +144,12 @@ Keep P0-02's **claim** (existence = degree of stable anchoring against entropic 
 
 | Criterion | A — accessible relativization | B — entropy reduction | C — demote to heuristic |
 |---|---|---|---|
-| Mathematical well-definedness | **conditional** — needs `Λ` *and* `μ_θ` *and* `0 < H < ∞`; accessible does not imply finite entropy | good, still needs a measure but tolerates an imperfect one | n/a (no longer a formal object) |
+| Mathematical well-definedness | **conditional** — needs `Λ` *and* `μ_θ` *and* `0 < H < ∞`; accessible does not imply finite entropy | **B1** needs both entropies finite, no denominator condition; **B2** re-imposes `0 < H(pre) < ∞` on the reference state. Both still need a measure, but tolerate an imperfect one better | n/a (no longer a formal object) |
 | Consistency with "no God's-eye view" | **strongest** — position-relativity is built in | neutral — silent on position | neutral |
 | Fit with anchoring ontology | strong — keeps degree-of-anchoredness | **weakens** — swaps standing property for event property | keeps the claim, drops the handle |
 | Blast radius | P0-02, `Core_01` finiteness argument, `Dynamics_Scaling` ΔS, symbol table (register `Λ`, horizon), every downstream `E` citation | P0-02 + wherever `E` is read as standing degree; `Core_25` alignment is a bonus | P0-02 marking only; ΔS untouched and still broken |
 | New implicit parameters | **3** (`Λ` partition, `μ_θ` measure, accessibility horizon) — `μ_θ` is the hard one | 2 (`Λ`/`μ` regime, reference state), but regime partly cancels in a difference | 0 |
-| Papers affected | `E` itself does **not** appear in `papers/`; but `papers/ALIFE2026_SelectiveRealityConstruction.md` Eq. (1) carries `d/dt H(L_0) = 0` — a **third** expression over the same infinite quantity (and vacuous for the same reason). Any regime declaration must cover it | same | none — but the ALIFE Eq. (1) issue is untouched and survives |
+| Papers affected | `E` itself does **not** appear in `papers/`; but `papers/ALIFE2026_SelectiveRealityConstruction.md` Eq. (1) carries `d/dt H(L_0) = 0` — a **third** expression over the same unbounded quantity, and per §A.1 it fails **differently**: **ill-defined as an ordinary derivative** without an explicit finite regularization / measure-theoretic regime, not degenerate. A regime declaration must therefore cover it *separately*; fixing `E` does not fix it | same | none — the ALIFE Eq. (1) issue is untouched and survives |
 
 ### A.7 Recommendation (not a verdict)
 
@@ -145,7 +157,7 @@ Keep P0-02's **claim** (existence = degree of stable anchoring against entropic 
 
 **With one qualification added on review:** A as stated is a *candidate framework*, not a fix — it names the jobs (`θ`, `Λ`, `μ_θ`) and the admissibility condition `0 < H < ∞`, but supplying `μ_θ` is the actual work and is itself an author decision. If no natural finite normalized distribution over the accessible domain presents itself, A needs further regularization and its cost rises toward B's.
 
-Reasoning: A is the only option that fixes the defect *using a commitment SRT already has* rather than trading one commitment for another. The finite-position thesis is load-bearing everywhere else in the theory; an existence index that ignores position was always the anomaly, and its degeneracy is a symptom of that, not a coincidence. B is mathematically cleaner but pays for it by changing what the axiom says — the highest cost on the list, and it should not be paid to fix a notation problem. C is honest and free, which makes it the right *interim* state while A is specified, but as a terminal answer it leaves the cross-scale ΔS defect untouched.
+Reasoning: A is the only option that fixes the defect *using a commitment SRT already has* rather than trading one commitment for another. The finite-position thesis is load-bearing everywhere else in the theory; an existence index that ignores position was always the anomaly, and its degeneracy is a symptom of that, not a coincidence. B is mathematically cleaner but pays for it by changing what the axiom says — the highest cost on the list, and it should not be paid to fix a notation problem. Note also that B is **two** options: B1 (unnormalized) genuinely drops the denominator condition but stops being a `[0,1]` degree; B2 (normalized) keeps the degree reading but re-imposes `0 < H(pre) < ∞`, so it is not the condition-free option it first appears to be. C is honest and free, which makes it the right *interim* state while A is specified, but as a terminal answer it leaves the cross-scale ΔS defect untouched.
 
 If A is chosen, sequence: (1) **fix `μ_θ` first** — until there is a measure there is no entropy, so this step gates all the others, and it should be settled before any canonical file is touched; (2) register `H_{Λ,μ}`, `μ_θ` and `L_0^{accessible}(θ)` in the symbol table, with the `0 < H < ∞` admissibility condition stated in the row itself; (3) amend P0-02 under the freeze Group A high-risk protocol; (4) re-derive the `Dynamics_Scaling` ΔS step in the same regime; (5) decide separately whether the regime reaches `papers/ALIFE2026` Eq. (1) — that expression is ill-defined rather than degenerate and does not inherit A's repair automatically; (6) sweep downstream `E` citations for regime declarations.
 
