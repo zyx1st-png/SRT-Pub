@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-11
-source_commit: ec7c5457
-source_branch: HEAD
-source_dirty: true
+source_commit: 849a5e63
+source_branch: claude/srt-consistency-decision-packet-2026-08-11
+source_dirty: false
 inputs_digest: 720d87a4698fa354
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 720d87a4698fa354
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-11 |
-| 来源 commit | `ec7c5457` |
-| 来源分支 | `HEAD` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `849a5e63` |
+| 来源分支 | `claude/srt-consistency-decision-packet-2026-08-11` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
