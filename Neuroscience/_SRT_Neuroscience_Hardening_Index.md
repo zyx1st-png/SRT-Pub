@@ -99,7 +99,7 @@ event occurrence
 -> later report
 ```
 
-Its narrow claim is `not separately manifest != structureless`: SQM event timing can remain decodable even when the event is not consciously accessible as a separate item. A current percept can therefore be treated, at P3 bridge level, as temporally local while its content is temporally thick. This must not be read as `occipital = L0`, `parietal/P300 = L1`, `P300 = consciousness`, `buffer = L2`, or a universal `300–450 ms` consciousness frame rate. NEURAL30 also makes the experimental interface to NEURAL23 explicit: respiration/cardiac phase may be tested as upstream modifiers of SQM integration outcome or transition timing, but the Menétrey et al. study itself does not record those bodily rhythms.
+Its narrow claim is `not separately manifest != structureless`: SQM event timing can remain decodable even when the event is not consciously accessible as a separate item. A current percept can therefore be treated, at P3 bridge level, as temporally local while its content is temporally thick. This must not be read as `occipital = L0`, `parietal/P300 = L1`, `P300 = consciousness`, `buffer = L2`, or a universal `290–450 ms` consciousness frame rate. NEURAL30 also makes the experimental interface to NEURAL23 explicit: respiration/cardiac phase may be tested as upstream modifiers of SQM integration outcome or transition timing, but the Menétrey et al. study itself does not record those bodily rhythms.
 
 NEURAL24 is a different kind of bridge: it adds no new state layer. It separates stake, physiological deviation, regulatory signal, affective salience and action; treats affect as a candidate consequence-compression / bearer-indexing channel; and registers a hard-problem stopping-point audit.
 
