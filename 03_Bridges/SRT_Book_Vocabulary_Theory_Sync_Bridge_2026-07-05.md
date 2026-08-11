@@ -156,6 +156,13 @@ provenance: 全书（Drafts_26Q Q00–Q28 + 术语表 v4，revised 2026-07-04）
 ## 3. 方向三判据的中轴分歧 —— 已裁决（2026-07-05，作者选③：扩为四判据）
 
 > **裁决结果**：作者选**方案③**——秩序增益由三判据扩为**四判据**：可延续 / 可协调 / **不外包** / 可再选择。已落地到 `Core_Law/SRT_Selection_Argument.md §7b.2`（canonical 源）、`Core_Law/SRT_Core_Text_CN.md`（ε+F+M+U 最小闭包：不外包＝ε 后果回流轴，F 的第二副面孔）、`_SRT_D_VALUE_CANONICAL.md §5b.1a`（与 `C_i` 后果回流因子对齐）、`Core_Law/SRT_L0_Metaphysics.md` 秩序增益词条、`Core_Law/SRT_Constitution_Seven_Theses.md`、`Philosophy/SRT_Ethics_Agency.md`、`Core/SRT_Core_22_Equations.md` Eq-Evo-03c、Annex 13、两处 Glossary、`Core/SRT_OPEN_TENSIONS.md §11`。下文保留原分歧分析作裁决依据存档。
+>
+> **落地范围更正（2026-08-11）**：上列清单是**理论层**落地清单，2026-07-05 当时**没有覆盖**两处，本行据实更正——
+>
+> 1. `Core_Law/SRT_Core_Text_EN.md`（中文核心文本的英文镜像，无 frontmatter、不在 registry / index / freeze 任一清单，因此没有任何同步义务把它拉进来）：Step ⑩ 一直停留在三判据，并自带一句 "the three together form the minimal cover, irreducible"，与 CN 侧「四者合取构成最小覆盖，不可再省」直接互斥。**已于 2026-08-11 同步。**
+> 2. 书稿 `Q22_方向.md` / `Q23_共同体.md`：书稿不但没升四判据，还把 canonical 术语「可协调」直接绑成「不外包」的同义词（Q22「可协调（不外包）」、Q23「共同可协调」＝回流通道），正是 §7b.2 明文否认的等同。**已于 2026-08-11 改正**（书稿保留三问结构，但三问被显式标为压缩诊断接口，并在 Q22 章末注八登记与四判据的对应关系）。
+>
+> 因此本节标题的「已裁决」自 2026-07-05 起成立，「已落地」到 2026-08-11 才对**书稿侧与英文镜像**成立。本文件 §5「分歧悬空死法」预警的漂移实际发生过一次，形态是**单侧落地**而非未裁决。
 
 **这是本次全书对账发现的唯一实质分歧，不是白话差异。**
 

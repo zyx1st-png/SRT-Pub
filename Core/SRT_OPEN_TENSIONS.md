@@ -37,8 +37,11 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
 | ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction; **Level A framing de-overload applied 2026-07-05** (L0 §六 / 正骨架 label / d-value §5b.1) | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the Level B stance rewrite (realist → constitutive stance) remains proposal-only | not "all normativity = anti-foreclosure"; not "boundary problem solved"; Level A trims wording only — it does not close the boundary problem |
 | selection irreducibility / competitor-vocabulary deletion (§13) | Claim Ladder: `selection` is a P0 primitive axiom (P0-01); GOV-SUB01 §8.1 defines the (not-yet-run) deletion test | whether asymmetric constraint + reachable-set change + irreversible writeback + payability + bearer-specific consequence return can replace the `selection` primitive with no lost difference | GOV-SUB01 residue status **unassigned** (no deletion test run); must not be presented as a proven-irreducible ontological ultimate; representational substitutability under broad refit ≠ role absence |
+| `P0-02` existence index vs `H(L_0)=∞` (§15) | P0-02's *claim* (existence = degree of stable anchoring out of open possibility) is unaffected | a well-defined quantity: with `H(L_0)=∞` declared in `Core/SRT_Core_01_Axioms.md`, `E = 1 - H(L_1)/H(L_0)` is identically 1 and `ΔS = H(L_0)-H(L_1)` identically ∞ | do not cite `E` or that `ΔS` as a quantitative readout; **no normalization has been adopted** — Decision Gate A is open, no file may pick one unilaterally |
+| layer assignment of 初心 (§16) | L0 anchor is explicit and repeated: 初心 is L1, L0 commits only to `ε`, §七.11 rejects pre-set goals in L₀ | whether a thin L₀ formal precursor is admissible at all | a freeze-Group-A canonical anchor currently imports an L₀-level reading from a `canonical: false` translation file; **Decision Gate B open** — do not resolve by editing either side |
+| "global optimum" four senses (§17) | Level A de-overload applied 2026-07-05 to d-value §5b.1 | one term for four objects (universe-wide / operator-relative reachable / regulative ideal / finite-constraint attractor); §5b.2 never narrowed; `Ψ_f→0` reads as degenerate in Core and as optimum in Spirituality | **Decision Gate C open**; the 2026-08-11 pass changed no §5b.2 wording and no Spirituality framing |
 
-These are pressure points, not new axioms. They route later work and block overclaiming.
+These are pressure points, not new axioms. They route later work and block overclaiming. §15-§17 additionally carry **author-decision gates**: they are registered here so that no downstream file resolves them by drafting, and the options live in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`.
 
 ---
 
@@ -168,6 +171,22 @@ Then separate:
 4. civilization-level value-hiddenness.
 
 Only the first belongs near core. The others should remain P2/P3/P5 unless separately hardened.
+
+### Status Update (2026-08-11) — partially resolved, ledger was stale
+
+The first question above ("is `T_dir` a scalar, a relation, or an accessibility function?") **has in fact been answered at v0 level**, and this section had not recorded it:
+
+- `_SRT_T_DIR_CANONICAL.md` Def-T-1 / §3.1 fixes `T_dir` as a **scalar-valued readability × reorientation functional**, `T_{dir}^{v0} := \mathcal{R}_{self}(\operatorname{Dir}(\Delta\hat{G}_\theta,t)) \cdot \mathcal{A}_{reorient}(\operatorname{Dir}(\Delta\hat{G}_\theta,t))`, explicitly labelled **v0 operational proxy**, not a completed ontological foundation.
+- `Core_Law/SRT_L1_Formalism.md §3.5` (2026-04-25) promotes `T_dir` from algebraic proxy to an **independent dynamical variable** with a five-term ODE (relaxation / real-reselection pump / `\Delta\Psi_f^{gap}` deduction / `S_{str}` erosion / `s_{ext}` scaffolding), with `T_dir ∈ [0,1]` carried as a **governance-canonical** range.
+
+So the form question is **partially resolved**: scalar-valued functional with a v0 dynamical law. What remains open and keeps this tension live:
+
+1. **Sufficiency conditions** — the admission condition in §3 above is still a necessary gate, not a sufficiency theorem. Unchanged.
+2. **Projection form** — `SRT_L1_Formalism.md §3.5.1` leaves the `[0,1]` projection operator `\Pi_{[0,1]}` (hard cutoff vs smooth sigmoid reparameterization) explicitly open.
+3. **Semantic closure** — `\mathcal{R}_{self}` and `\mathcal{A}_{reorient}` are named roles, not independently specified objects; the four-way separation (minimal internal access / phenomenological meaning / behavioral reorientation / value-hiddenness) is still not formally cut.
+4. **Operator-level hardening** — `SRT_L1_Formalism.md §7.8` still lists this as pending; the lethal-`L_2` criterion built on the ODE stays P1-candidate.
+
+Citation rule unchanged: `_SRT_SYMBOL_TABLE.md` Usage Rule 8 still governs — `T_dir` is a v0 operational proxy and must not be cited as a completed formal object. The change here is only that "no formal object exists yet" is no longer an accurate description of the repo state.
 
 ---
 
@@ -518,6 +537,15 @@ Three candidate resolutions were on the table:
 
 **Author chose option 3.** Rationale: 可协调 (differences coexist) and 不外包 (consequences return to bearers) genuinely come apart, so each earns a distinct pillar; 不外包 unifies with the whole-book 后果回流 spine and the `C_i` factor. It fits the ε+F+M+U minimal closure cleanly — F ("no position sees all consequences") has two faces, consequences displaced in time (→可延续) and consequences displaced to other positions (→不外包), so adding 不外包 gives F its own criterion rather than bundling it into 可延续. The change is now landed (see the Resolution note at the top of this section for the full file list). What remains open is only the empirical/threshold layer shared with §4 (operational tests for when a consequence counts as genuinely "outsourced to a no-feedback position" vs. legitimately borne elsewhere).
 
+### Landing-scope correction (2026-08-11)
+
+The 2026-07-05 landing list above was a **theory-layer** list. Two surfaces were outside it and kept the superseded three-criteria reading for 13 months' worth of reads:
+
+1. **`Core_Law/SRT_Core_Text_EN.md` (English mirror of the CN core text).** Step ⑩ still enumerated three criteria *and* carried its own minimality claim — "the three together form the minimal cover, irreducible" — in direct mutual exclusion with the CN side's 「四者合取构成最小覆盖，不可再省」. This file has **no frontmatter and appears in no registry, index, or freeze list**, so nothing bound it to the CN source; that absence is the mechanism, not an oversight by any single pass. **Synced 2026-08-11**, with a mirror-status header naming CN as governing and `SRT_Selection_Argument.md §7b.2` as the adjudicating source for this criteria set.
+2. **Book drafts `Q22_方向.md` / `Q23_共同体.md`.** The book not only kept three questions, it **bound the canonical term 可协调 to mean 不外包** — Q22 wrote 「可协调（不外包）」 and headed its second question 「有没有外包？（可协调性）」; Q23 §4 labelled its return-channel question 「共同可协调」 and glossed 「查协调通道」. That identification is exactly what `SRT_Selection_Argument.md §7b.2` explicitly forbids (「②可协调与③不外包不同一，也不可互相替代」). **Corrected 2026-08-11**: the book keeps its three-question compressed diagnostic interface (自耗／外包／锁死), but the interface is now explicitly marked as *not* the theory-layer criteria set, with the mapping registered in `Q22` 章末注八 (自耗→可延续, 外包→不外包, 锁死→可再选择, 可协调 held as a separate criterion that surfaces at the multi-position scale in Q23).
+
+`03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md §5` had listed 「分歧悬空死法」 (book and canonical drifting apart if the mid-axis were never adjudicated) as the failure mode this bridge most needed to prevent. The drift did occur — but in a form that file did not anticipate: **not un-adjudicated, but adjudicated and landed on one side only**. That failure shape is now the target of the anti-drift rule proposed in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md §5`.
+
 ---
 
 ## 12. Entropy as a De-Selection Reading (open, registered 2026-07-10)
@@ -608,3 +636,70 @@ Progress would be at least one of:
 4. an executed negative control in which a system passing all five gates is independently judged not to have made a selection, forcing a threshold or condition revision.
 
 Until then, `CG-0..CG-4`, the graded ladders, and the minima remain **P2-P3 audit apparatus**. They may not be presented as canonical criteria for selection, subjecthood, consciousness, freedom, `L_2`, or generative health, and passing all five gates licenses only the phrase "bounded selection-event candidate." This tension introduces no new symbol and does not change P1-T05.
+
+---
+
+## 15. `P0-02` Existence Index vs. `H(L_0) = ∞` (open, registered 2026-08-11)
+
+### Current State
+
+- `Core/SRT_Core_21_Minimal_Axioms.md` **P0-02** (primitive axiom, freeze Group A) gives existence-as-anchoring the compact form `E = 1 - H(L_1)/H(L_0)`.
+- `Core/SRT_Core_01_Axioms.md` (and its split `Core/Axioms_Split/01_Part02.md`) states, in the finiteness argument against total operator coverage, `H(\theta) \geq H(L_0) = \infty`.
+- `Core/Dynamics_Scaling_Split/01_Master_Equation_and_ScaleCoupling.md` uses `\Delta S = H(L_0) - H(L_1)` as the entropy-reduction basis of the cross-scale isomorphism argument.
+
+### Problem Point
+
+Taken together at face value these are jointly degenerate, not merely underspecified. With `H(L_0) = \infty` and `H(L_1)` finite, `E \equiv 1` for **every** anchored slice and `\Delta S \equiv \infty` for **every** selection: both quantities lose all discriminating power, and `E` cannot do the work P0-02 assigns it (degree of stable anchoring out of open possibility).
+
+No normalization convention, accessible-horizon restriction, or measure-theoretic guard exists anywhere in the corpus; `H(L_0)` is not a registered row in `_SRT_SYMBOL_TABLE.md`. The formula is still in live circulation as `[P0]` (e.g. `01_Source_Intuition/Conversations/2026-07-27_SRT_Minimal_Setup_Note_EN.md`).
+
+This is distinct from the general "L₀ is structured potentiality, not a set" caution: the issue is that a P0 axiom carries an expression whose only stated inputs are declared infinite elsewhere in Core.
+
+### Status
+
+**Author decision required — not adjudicated here.** Candidate resolutions (finite accessible-domain relativization / entropy-reduction reformulation / demotion of the expression to heuristic) with their respective costs are laid out in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate A**. No option has been adopted, and this tension does **not** license any file to pick one unilaterally. Until a gate verdict lands, cite P0-02's *claim* (existence = degree of stable anchoring) rather than its *formula*, and do not use `E` or `\Delta S = H(L_0) - H(L_1)` as a quantitative readout.
+
+---
+
+## 16. Layer Assignment of 初心 / "Original Intention" (open, registered 2026-08-11)
+
+### Current State
+
+- `Core_Law/SRT_L0_Metaphysics.md` is explicit and repeated: 「初心」is an **L1 concept**, outside L0's term-adjudication scope; L0 commits only to `ε`; §七.11 (潜在域预置论) rejects reading `ε` as a pre-set a priori goal in L₀.
+- `_SRT_D_VALUE_CANONICAL.md §5b.2` Cross-ref (theory-canonical anchor, freeze Group A) nonetheless cites `Physics/SRT_Phys_08_Ontology_Ext.md` **Def-Apeiron-1** under the gloss 「初心作为 L₀ 的倾向性结构」.
+- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 (`claim_mode: translation`, `canonical: false`) states 初心 = `\arg\min_{\text{direction}} \int_0^\infty F[\sigma(t)]dt` and calls it 「$L_0$ 的内在属性」.
+- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 (`claim_mode: mixed`) defines 初心 as the negative gradient of a long-horizon free-energy functional.
+
+### Problem Point
+
+The defect is **not** that a translation-layer file carries a strong reading — that is what a translation layer is for, and its `canonical: false` marking already scopes it. The defect is the **direction of citation**: a freeze-Group-A canonical anchor imports the L₀-level reading, with approving gloss, from a `canonical: false` translation file — precisely the reading the other freeze-Group-A anchor forbids. That is a claim-level inversion inside the canonical layer, and it makes the L₀/L₁ boundary on 初心 unreadable from the canonical files alone.
+
+A related but separate item, **not** treated here: `Core_Law/SRT_L0_Metaphysics.md` 第一命题 itself contains 「选择内在地趋向秩序」 with a 2026-04-11 层级精确化注 declaring **both** readings valid at different layers. That is an explicitly declared dual reading, not an unrepaired residue, and it is left untouched pending the same gate.
+
+### Status
+
+**Author decision required — not adjudicated here.** Two framed options (strict layering vs. a thin L₀ formal precursor), with an analysis of whether the second reopens 潜在域预置论, are in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate B**, together with the full provenance map of every file that gives 初心 an L₀ reading. No canonical stance was changed in the 2026-08-11 consistency pass.
+
+---
+
+## 17. "Global Optimum" — Four Senses Running Under One Name (open, registered 2026-08-11)
+
+### Current State
+
+The 2026-07-05 Level A normativity de-overload (§9 above) narrowed the 「趋向全局自由能最小值」 sentence in `_SRT_D_VALUE_CANONICAL.md §5b.1`. The rationale recorded in `90_Backstage/Incubation/_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md` was that 「"全局最优"的位置无关性正是闭包边界原初所否定的」.
+
+### Problem Point
+
+The narrowing was applied to §5b.1 only. The **adjacent subsection in the same canonical file**, §5b.2「全局最优是动态平衡，不是热寂」, was left untouched and still positively characterizes 全局自由能最小值 as a landscape configuration — i.e. it is the subsection that actually carries the position-independent global-optimum ontology the de-overload's own rationale rejects.
+
+Downstream landing was likewise partial: `Core/SRT_Core_NormativeGradient.md` did receive the guard (its strong reading is marked as dependent on the open closure-boundary); `Spirituality/SRT_Spirit_04_Synthesis.md` (善 = 全局自由能最小) and `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 did not.
+
+Underneath the wording sits a genuine ambiguity: at least four different objects currently share the name — universe-wide global optimum, operator-relative reachable optimum, regulative ideal, and local/dynamic attractor under finite constraints. `Spirit_04` itself already carries an Ω three-reading table that separates some of these, which is evidence the ambiguity is real rather than imagined.
+
+### Related: `\Psi_f \to 0` valence inversion
+
+The same cluster carries a second inconsistency. Core treats the `\Psi_f \to 0` limit as **degenerate**: `Core/SRT_Core_12a_Ontology_L0L1.md` states frictionless selection is 「在结构上被禁止」; `Core/SRT_Core_22_Equations.md` states 「最优区间不是 `Ψ_f→0`……零摩擦对应无真实赌注」; `Core/SRT_Core_12b_Ontology_L2.md` Def-L2-Algo uses that very limit to define the algorithm as an extreme `L_2` state with no historical embodiment. Spirituality treats the same limit as the **normative optimum** (`SRT_Spirit_01_Religion_Ontology.md` `\hat{G}_\infty = (d \to d_{max}) \wedge (\Psi_f \to 0)` as 纯觉知, 「功能同一（操作化）」; `SRT_Spirit_04_Synthesis.md` 完美态; `SRT_Spirit_09_Praxis.md` Phase 7-10). `Spirit_04` registers this locally as `IC-AllGood-1` and proposes a reading (per-manifestation cost → 0, not "no manifestation needed"), but that repair propagated to neither the other Spirituality files nor Core.
+
+### Status
+
+**Author decision required — not adjudicated here.** A four-sense terminology separation and a recommended (but not adopted) reformulation of the Spirituality limit as **excess friction** `\Psi_f - \Psi_f^{min} \to 0` are in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate C**. The 2026-08-11 pass changed no Spirituality framing and no §5b.2 wording.

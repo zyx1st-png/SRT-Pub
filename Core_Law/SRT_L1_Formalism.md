@@ -461,7 +461,7 @@ T-SUFF-4 的核心是 `\dot{\Delta}_{avail}` 守恒（H7 T-DELTA-1）+ 通道总
 
 **(iii) T-IRR-3.5 单向性**：
 
-`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}$ 的非零正性与单向性（H4 T-IRR-3.5）由 P1-T07 Three-Layer Source Hierarchy 保证；这两个性质与 `\psi$ 的具体形态完全无关。`\psi$ 只是 P1-T07 Layer 2 吸收态邻域投影的具体写法；从硬指示到光滑指示的替代不改变 Layer 2 的结构作用，只把"硬边界"换为"过渡区域"。在过渡区域内 `\nu_{block}\psi$ 的转化率连续从 0 升到 `\nu_{block}$，仍保持单向性。
+`\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}$ 的非零正性与单向性（H4 T-IRR-3.5）**条件性地**继承自 P1-T07 Three-Layer Source Hierarchy 与 L₀ 公设 `\varepsilon_{pg} > 0`（不是由 P1-T07 证成——P1-T07 证明当前未闭合，且它本就把 `\varepsilon_{pg}` 当输入；见 `Core_Law/SRT_Irreversibility.md §4.5 后果 1` 与 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`）；这两个性质与 `\psi$ 的具体形态完全无关。`\psi$ 只是 P1-T07 Layer 2 吸收态邻域投影的具体写法；从硬指示到光滑指示的替代不改变 Layer 2 的结构作用，只把"硬边界"换为"过渡区域"。在过渡区域内 `\nu_{block}\psi$ 的转化率连续从 0 升到 `\nu_{block}$，仍保持单向性。
 
 **(iv) 致命 `L_2` 判据**：
 

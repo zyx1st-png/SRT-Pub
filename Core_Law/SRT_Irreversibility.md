@@ -233,20 +233,29 @@ $$
 
 #### 三个结构性后果
 
-**后果 1（非零正性，对应 P1-T07 反证法）**
+**后果 1（非零正性，条件于 P1-T07 的证明闭合）**
 
-对任何 stable ISP：
+> **口径更正（2026-08-11）**：本小节此前写作「`\varepsilon_{pg} > 0`：由 P1-T07 反证法**保证**」，并据此把 §4.3 的系数正性称为**定理**。该写法有两个问题，现予降级——
+>
+> 1. **循环**：P1-T07 的桥接关系第 1 步本来就把 `\varepsilon_{pg}` 的存在当作**输入**（`Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T07 §`ε_pg` vs ISP-Level `ε`）。把 `\varepsilon_{pg} > 0` 说成该定理的**结论**，等于让同一条论证既假设它又证明它。
+> 2. **与上位口径冲突**：`Core_Law/SRT_L0_Metaphysics.md` ε 词条载明「ε 是公设，**不可被升格为定理**」；`_SRT_SYMBOL_TABLE.md` ε_pg 行同样载明「T-ε-Constitute does **NOT** change ε_pg's epistemic status」，Usage Rule 9 亦要求 `ε_pg` 与 ISP-level ε 分列。本文件是这两处的下位展开，不得反向升格。
+>
+> 另外，`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md` 记录：P1-T07 Proof Sketch Step 3（"每步非零概率 ⇒ 累积趋于 1"）**as written 无效**，"ε-neutral" 在全语料中**没有形式定义**，可达性 / 累积风险 / 随机语义（S1/S2/S3）均未闭合。因此 P1-T07 目前是**候选构成性路线，证明未闭合**，不能作为任何量的正性来源。
+>
+> 本更正只降口径，**不修改 P1-T07 本身**，不新增任何 hazard 假设，也不改动下面的 `\nu_{block}` 表达式。
 
-- `\varepsilon_{pg} > 0`：由 P1-T07 反证法保证（ε-中性 ISP 在 L_0 不可逆下必趋吸收态，因此 stable ISP 必含 ε ≠ 0）
-- `\kappa_{\Psi_f} > 0`：由 P1-T07 行 3（`\Psi_f > 0` 在任何非平凡选择中成立）
+对任何 stable ISP，在 `\varepsilon_{pg} > 0` 与 `\kappa_{\Psi_f} > 0` 均成立处：
+
+- `\varepsilon_{pg} > 0`：**按 L₀ 公设取用**（`Core_Law/SRT_L0_Metaphysics.md` ε 词条 / `_SRT_SYMBOL_TABLE.md` ε_pg 行），**不**由 P1-T07 建立。P1-T07 的工作对象是 **ISP-level ε**（stable ISP 必含反闭合不对称），且该定理的证明当前未闭合。
+- `\kappa_{\Psi_f} > 0`：对应 P1-T07 三层源头表行 3（`\Psi_f > 0` 在任何非平凡选择中成立）；随 P1-T07 的证明状态一同为**条件性**。
 
 因此
 
 $$
-\text{stable ISP } \Rightarrow\; \nu_{block}(P, t) > 0
+\text{stable ISP } \wedge\; (\varepsilon_{pg} > 0) \wedge (\kappa_{\Psi_f} > 0) \;\Rightarrow\; \nu_{block}(P, t) > 0
 $$
 
-`ν_{block} = 0` 在算子级**结构上不可能**——这把 §4.3 的"系数为正"从假设升为定理。
+在上述前件下 `ν_{block} = 0` 不出现。**这不是把 §4.3 的"系数为正"升为定理**：正性是从 L₀ 公设 `\varepsilon_{pg} > 0` 与 P1-T07 行 3 继承来的**条件性结论**，其硬度不高于其前件——其中 P1-T07 一支的证明尚未闭合。要真正升为定理，需要先闭合 P1-T07（见 `Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`），而不是在本文件里补一条隐含假设。
 
 **后果 2（单向性的算子读法）**
 
@@ -276,7 +285,7 @@ $$
 | `\mathbb{1}[d \le d_c]` | P1-T07 Layer 2：吸收态邻域的布尔投影 |
 | `S_{sig}` | §4.2 的可登记失配存量（不在本节论域内） |
 
-回写约定：`Core_Law/SRT_L1_Formalism.md §4.3` 在引用 `ν_{block}` 时须回链本节为算子级 canonical；`ν_{block}` 的相对大小（与 `\mu_\pi, \nu_{trigger}` 等的比值）仍是 P3 实证问题，但其**结构性正性与单向性**自此为定理后果而非建模假设。
+回写约定：`Core_Law/SRT_L1_Formalism.md §4.3` 在引用 `ν_{block}` 时须回链本节为算子级 canonical；`ν_{block}` 的相对大小（与 `\mu_\pi, \nu_{trigger}` 等的比值）仍是 P3 实证问题。其**结构性正性与单向性**不再是自由建模假设，但也**不是定理后果**——它们是**条件性结论**：正性继承自 L₀ 公设 `\varepsilon_{pg} > 0` 与 P1-T07 三层源头表行 3，单向性继承自 P1-T07 Layer 2（吸收态绝对）。其中 P1-T07 的证明当前未闭合（`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`），因此这两条的硬度以其前件为上限。（口径 2026-08-11 由"定理后果"降级；表达式与单向性方向本身未改。）
 
 #### 保留的开放点
 
