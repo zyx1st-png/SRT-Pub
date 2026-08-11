@@ -22,7 +22,7 @@ depends_on_protocol:
 
 # D05b — Forcing Representation and Method-Family Audit
 
-**Dossier state:** first multi-representation falsification round under the frozen Method Individuation Protocol v0.1; not submission-ready
+**Dossier state:** first multi-representation falsification round under the frozen Method Individuation Protocol v0.1, with bounded `EVD-D05-0005` and `EVD-D05-0006` adjudication supplements; not submission-ready
 
 **Audit objects:** Cohen's 1963–1964 ramified construction; the later partial-order / generic-filter / generic-extension formulation; the Boolean-valued formulation
 
@@ -39,6 +39,7 @@ depends_on_protocol:
 | Ramified construction ↔ Boolean-valued formulation | `qualified_same_method_family` | A common generative role is recoverable through the generic-filter bridge, but the direct historical and componentwise translation is incomplete. Boolean-valued semantics removes both the ramified hierarchy and the need to organize the proof around Cohen's literal complete sequence, and it can support consistency proofs without an explicit two-valued generic extension. |
 | Higher-level forcing method family | `qualified_same_method_family` | A non-empty common family exists: ordered partial information plus a ground-definable forcing/Boolean truth relation and a generic realization or equivalent quotient that determines truth in a model extension. The family claim is qualified because it preserves the characteristic generation role and extension semantics, not every historical component, metamathematical route, or proof organization. |
 | `EVD-D03-0010` | **qualified — unchanged** | The new evidence supports bounded same-family judgments and an exact generic-filter/Boolean-completion equivalence, but it does not establish unrestricted interchangeability, literal historical identity, or full operation-role identity across all three forms. |
+| `EVD-D05-0005` | **qualified** | Every requested Cohen component has a typed later image and a documented preserved role. The reverse reconstruction is source-backed only as a chosen, Cohen-forcing-specific composition: it requires external countability or a countable requirement family, a selected dense/decision-set enumeration, a fixed condition/name translation, and a designated ground model and generic. It does not canonically recover Cohen's literal complete sequence, ramified syntax, recursive clauses, or historical `N` from an arbitrary `G`, `P`-name system, forcing relation, or bare `M[G]`. |
 | `EVD-D05-0006` | **supported** | Without an explicit generic ultrafilter or an appropriate Boolean-algebra homomorphism and quotient, direct Boolean-valued forcing reaches Boolean validity and theorem-producing semantics, not an ordinary two-valued model or the completed generic-extension operation. The full extension role is recovered when the quotient/generic step is added; Jech's theorem chain then identifies the Boolean and poset routes with the same generic extension. |
 | Method Individuation Protocol v0.1 | **qualified; not falsified** | The representation-invariance test does not force three unrelated methods, and it does not collapse all differences. It succeeds only after distinguishing a representation-specific operation token from a representation-neutral method family. The protocol therefore survives this round but exposes an unresolved level-of-individuation interface that a future v0.2 may need to state explicitly. |
 | D06 target object | **provisional / qualified** | D06 should predicate `H`, `N`, and `S` of the bounded forcing method family specified in §12, not of Cohen's event token, not of every forcing notion, and not of the entire later forcing ecosystem. No `H/N/S` verdict is issued here. |
@@ -98,7 +99,7 @@ The operative question is narrower:
 | `COHEN1963-CH-I` | primary; `VERIFIED` in D03 against complete publisher page images | Paul J. Cohen, “The Independence of the Continuum Hypothesis,” *Proceedings of the National Academy of Sciences* 50(6), 1963, 1143–1148. DOI: 10.1073/pnas.50.6.1143. | pp. 1144–1145, Definitions 2–5; p. 1146, Definitions 6–7; p. 1147, Lemmas 2–5 and Definition 8. | Original ramified terms, finite conditions, forcing relation, complete sequence, interpreted model, and event-stage truth lemma. It does not contain the later literal package `M,P,G,M[G]`. |
 | `COHEN1964-CH-II` | primary; `VERIFIED` in D03 against complete publisher page images | Paul J. Cohen, “The Independence of the Continuum Hypothesis, II,” *Proceedings of the National Academy of Sciences* 51(1), 1964, 105–110. DOI: 10.1073/pnas.51.1.105. | pp. 105–108, Theorem 2 and Lemmas 6–20; p. 109, Lemmas 21–22; p. 110, finite-fragment reduction. | Axiom verification, cardinal preservation, Choice, failure of CH, and the separate formal consistency discharge. It does not establish later representation identity. |
 | `SCOTT1967-BOOLEAN-CH` | primary early Boolean-valued presentation; `VERIFIED` against the complete article scan, printed pp. 89–111 | Dana Scott, “A Proof of the Independence of the Continuum Hypothesis,” *Mathematical Systems Theory* 1(2), 1967, 89–111. DOI: 10.1007/BF01705520. | pp. 95–96, construction and completeness of the Boolean algebra; pp. 97–105, Boolean values for formulas, connectives, quantifiers, logic, functions and witness/fullness property; pp. 106–108, suitable model and direct proof that `(CH')` has Boolean value `0`; pp. 108–110, relation to Cohen forcing and scope of “reformulation”; pp. 110–111, Boolean-valued versus ordinary models, Löwenheim–Skolem, Rasiowa–Sikorski, homomorphism/quotient, complete conditions and order of realization. | Primary source for the direct Boolean-validity endpoint and its historical relation to Cohen's method. It supports a source-level route from Boolean values to ordinary models, but the exact same-generic-extension theorem is supplied by Jech, not attributed to Scott. The complete scan is evidence only and is not committed to this repository. |
-| `SHOENFIELD1971-UNRAMIFIED` | primary early unramified presentation; bibliographic record `VERIFIED`; exact opening location corroborated by the stable scan and Kanamori | J. R. Shoenfield, “Unramified Forcing,” in Dana Scott (ed.), *Axiomatic Set Theory*, Proceedings of Symposia in Pure Mathematics 13, Part I, American Mathematical Society, 1971, 357–381. MR 0280359. | p. 357, opening rationale and stated removal of the ramified hierarchy; pp. 357–381, full construction. | Early source whose explicit purpose is direct construction of forcing models without Cohen's ramified hierarchy. It is evidence of historical reformulation, not evidence that the unramified form was already available in 1963. |
+| `SHOENFIELD1971-UNRAMIFIED` | primary early unramified presentation; `VERIFIED` against the complete stable scan, with the relevant construction pages checked directly | J. R. Shoenfield, “Unramified Forcing,” in Dana Scott (ed.), *Axiomatic Set Theory*, Proceedings of Symposia in Pure Mathematics 13, Part I, American Mathematical Society, 1971, 357–381. MR 0280359. | p. 357, opening rationale and removal of the ramified hierarchy; pp. 359–360, finite-map conditions, partial order, generic-filter clauses, and existence theorem; pp. 361–362, recursive interpretation, `M[G]`, names, and semantic forcing; pp. 362–364, recursively defined modified forcing, definability/extension/truth lemmas, and historical distinction; p. 365, minimality and completion of the model proof. | Primary component-level bridge from Cohen's construction to the unramified generic-filter/name form. It documents reformulation and role preservation, not literal recovery of Cohen's syntax or backward historical availability in 1963. |
 
 ### 2.2 Authoritative technical and historical sources
 
@@ -536,7 +537,7 @@ The present record does not meet all five.
 
 | Evidence ID | Obligation | Closure condition | Withdrawal condition |
 |---|---|---|---|
-| `EVD-D05-0005` | Directly map Cohen's complete sequence, ramified terms, forcing relation, and interpreted `N` to the later generic-filter/name construction using primary or authoritative technical sources, and determine whether a source-backed reverse reconstruction exists. | Close as `supported` when each load-bearing Cohen component has a typed later image, the preserved role is stated, and any reverse direction and its assumptions are documented with exact locations. Close as `qualified` if only the forward functional map or a compositional reverse is available. | Withdraw if the task is shown to be ill-typed because the historical token has no meaningful componentwise reverse and only family-level comparison is legitimate. |
+| `EVD-D05-0005` | Directly map Cohen's complete sequence, ramified terms, finite conditions, forcing relation, and interpreted `N` to the later generic-filter/name construction using primary or authoritative technical sources, and determine whether a source-backed reverse reconstruction exists. | Close as `supported` when each load-bearing Cohen component has a typed later image, the preserved role is stated, and any reverse direction and its assumptions are documented with exact locations. Close as `qualified` if only the forward functional map or a compositional reverse is available. | Withdraw if the task is shown to be ill-typed because the historical token has no meaningful componentwise reverse and only family-level comparison is legitimate. |
 | `EVD-D05-0006` | Determine whether Boolean-valued forcing without an explicit generic ultrafilter preserves the same extension-generating operation role or only a weaker theorem-producing semantic role. | Close when a source-backed comparison states the endpoint, premises, and preserved function for direct Boolean validity versus generic quotient, including at least one exact theorem-level bridge. | Withdraw if D06 explicitly excludes non-extension Boolean-valued proofs from its target family, making the distinction outside the target object's scope. |
 
 No manuscript index is modified in this PR. The obligations are registered only in this evidence directory.
@@ -632,6 +633,115 @@ This theorem chain is conditional in the precise place the endpoint distinction 
 - This verdict does not move the overall `qualified_same_method_family` finding, `EVD-D03-0010`, `EVD-D05-0005`, or the provisional D06 target. It issues no D06 `H/N/S` or institutionalization verdict.
 - Scott 1967 is not admitted to the 1938–1963 control archive. No candidate enumeration, scoring, ranking, selection or individuation is performed.
 - The source PDF is not committed or reproduced; only metadata, exact pages, controlled paraphrases, adjudication and limits are recorded.
+
+---
+
+## 10B. `EVD-D05-0005` — bounded component-role adjudication supplement (2026-08-11)
+
+**Obligation verdict:** `qualified`
+
+**Question adjudicated:** Do Cohen's complete sequence, ramified terms, finite conditions, original forcing relation, and interpreted `N` have typed later images in the generic-filter/name construction, and does a source-backed reverse reconstruction recover the historical components rather than only their functions?
+
+> **SUPPLEMENT SCOPE LOCK**
+>
+> This supplement adjudicates only `EVD-D05-0005`. It does not move `EVD-D05-0006`, `EVD-D03-0010`, `EVD-D05-0001`, or `EVD-D04-0002`; does not adjudicate D06 `H/N/S`, forcing institutionalization, Control A, Control B, Part II, the control archive, C2, the paper as a whole, or SRT; and does not modify the frozen Method Individuation Protocol v0.1, the frozen strategy, or the staged manuscript. No candidate enumeration, scoring, ranking, selection, or individuation is performed.
+
+### 10B.1 Direction and identity standard
+
+The forward question is functional and typed: for each component in Cohen's published operation, identify the later mathematical bearer of its load-bearing role. The reverse question is stricter: determine whether an arbitrary later object recovers Cohen's **literal** sequence, syntax, clauses, and model, or only permits a Cohen-style presentation after choices of forcing, coding, enumeration, and collapse.
+
+Three claims are kept separate throughout:
+
+1. **syntax- or token-level identity:** the later object is Cohen's literal 1963 component;
+2. **role-level preservation:** a later object performs the same load-bearing function in extension generation and truth determination;
+3. **coded or isomorphic reconstruction:** after fixing a presentation, translations produce an extension with the same interpreted content, without making the historical objects literally identical.
+
+Only the second is established without major qualification. The third is available conditionally and compositionally. The first is not established and is false as a general description of the later formulation.
+
+### 10B.2 Component-role matrix
+
+| Cohen component | Later image | Preserved role | Eliminated/replaced? | Forward mapping | Reverse mapping | Exact source |
+|---|---|---|---|---|---|---|
+| Complete sequence `P_0,P_1,...` | An `M`-generic filter `G ⊆ P`; under a chosen descending presentation, `G` is generated by a sequence of conditions | Coherent accumulation of finite information; satisfaction of the enumerated decision/witness requirements; determination of the generic object; support for the truth lemma and extension | **Replaced.** The distinguished enumeration is replaced by a filter meeting all ground-model dense requirements | Cohen's sequence decides every enumerated statement or its negation and supplies the ordinal/term requirements used to interpret `N`. Kanamori identifies this as the external Baire-category generic-completion step. In the later presentation, the same requirements are organized as dense sets, and the upward closure of a descending requirement-meeting sequence is a generic filter | **Qualified, non-canonical.** From an arbitrary `M`-generic `G`, one does not read off a distinguished Cohen sequence. If `M` (or the relevant dense family) is externally countable, and one chooses an enumeration of open dense decision/witness requirements, filter directedness permits a descending sequence inside `G` meeting them. The result is an enumeration-dependent Cohen-style presentation, not recovery of Cohen's literal sequence. Without countability/chosen enumeration, this reverse is unavailable | `COHEN1963-CH-I`, p. 1147, Def. 8 and Lemma 5; `KANAMORI2008-COHEN`, pp. 360–361, especially items (d)–(e); `SHOENFIELD1971-UNRAMIFIED`, p. 360, generic-filter clauses and existence-theorem construction; `JECH2003-SET-THEORY`, Def. 14.1, p. 202, and Lemma 14.4, p. 203 |
+| Ramified terms `F_α` and ranked ramified language | Ground-model `P`-names, recursively interpreted by `G` | Ground-coded placeholders for prospective extension elements; rank-founded interpretation; generation of every object in the extension | **Eliminated and replaced.** The ramified hierarchy and indexed quantifiers disappear; a simpler hereditary name recursion carries the interpretation role | Cohen defines and ranks the terms before interpreting all `F_α` in `N`. Shoenfield explicitly removes ramification, recursively interprets ground-model codes by `G`, and calls those codes names. Jech types the later objects as `P`-names and interprets them by `G` | **Qualified, presentation-dependent.** The cited sources provide no source-backed, lossless inverse from arbitrary `P`-names to Cohen's literal `F_α` syntax, ordinal-indexed quantifiers, or enumeration. In the Cohen-forcing case one may choose a ramified coding whose interpretations agree, but that is a new presentation choice, not recovery of the historical syntax. Role and interpreted value can be reconstructed; syntax cannot | `COHEN1963-CH-I`, pp. 1144–1145, Defs. 1–4, and p. 1147, definition of `N`; `KANAMORI2008-COHEN`, pp. 360–361, items (a) and (e), and p. 370; `SHOENFIELD1971-UNRAMIFIED`, p. 357 and pp. 361–362; `JECH2003-SET-THEORY`, Th. 14.5, p. 203, Def. 14.26, p. 215, and Def. 14.27, p. 216 |
+| Finite conditions | Conditions in a forcing partial order `P`; for the corresponding Cohen forcing, finite partial functions or an isomorphic finite-information presentation | Ordered partial approximation to the generic object; stronger conditions carry more information; compatibility and density organize possible joint extensions | **Abstracted.** Cohen's actor-specific finite membership assertions become elements of an abstract poset | Cohen's finite sets of positive/negative assertions are ordered by information. Shoenfield starts from finite partial maps, extracts the partial order and generic-filter clauses, then generalizes to any notion of forcing. Jech's forcing conditions and Cohen-real example give the mature typed image | **Strong only after fixing the forcing.** The Cohen poset can be returned to Cohen's finite assertions by a chosen coding or isomorphism. An arbitrary forcing poset cannot be reversed into Cohen's literal finite assertions; dense-equivalent presentations need not have the same condition tokens | `COHEN1963-CH-I`, p. 1145, Def. 5; `SHOENFIELD1971-UNRAMIFIED`, pp. 359–360; `JECH2003-SET-THEORY`, pp. 201–202, Def. 14.1 and Example 14.2; `KANAMORI2008-COHEN`, p. 361, item (b), and p. 370 |
+| Cohen's original forcing relation | The later forcing relation on `P`-names, together with its definability/monotonicity/decision properties; ordinary truth is connected by the forcing theorem | A ground-definable relation from finite information to truth in the interpreted extension; stronger conditions preserve forcing; conditions decide formulas densely; truth is recovered from a condition in the generic object | **Definition scheme replaced and generalized.** The ramified limited/unlimited recursion is not the modern clause system | Cohen's Defs. 6–7 recursively define forcing in the ramified language and Lemmas 2–5 establish its basic properties and truth bridge. Shoenfield distinguishes his semantic forcing relation from a recursively defined modified relation, identifies Cohen's concept with the latter in substance, and derives the three fundamental lemmas. Jech separately states the modern forcing relation, its recursive properties, and the forcing theorem | **Qualified.** Specializing the modern relation to the corresponding Cohen poset and translating names/formulas reconstructs the truth-determination role. It does not recover Cohen's literal prenex language, limited/unlimited split, or recursive clauses without the additional ramified coding. The forcing relation, the forcing theorem, and the truth lemma are therefore related but not one object retrojected across 1963 and the later formulation | `COHEN1963-CH-I`, p. 1146, Defs. 6–7, and p. 1147, Lemmas 2–5; `SHOENFIELD1971-UNRAMIFIED`, pp. 362–364; `JECH2003-SET-THEORY`, Th. 14.6, p. 204, Th. 14.7, pp. 204–205, and Def. 14.26, p. 215; `KANAMORI2008-COHEN`, p. 361, item (c), and p. 370 |
+| Interpreted `N` | The generic extension `M[G]`, formed by interpreting all names by the designated generic filter | Ordinary two-valued extension in which the ground is retained, the generic object is present, names receive values, ZF/ZFC is verified, and the target failure of CH is established | **Re-presented, not erased.** `N` becomes the modern minimal generic-extension object after the name/filter translation and, where required, collapse/identification | Cohen defines `N` from the interpreted ramified terms and proves the event-stage truth lemma; Part II verifies the axioms, cardinal preservation, Choice, and `not-CH`. Shoenfield constructs the transitive minimal `M[G]` from recursive name interpretation. Jech states the generic-model theorem and the same interpretation architecture | **Coded/isomorphic, not literal in general.** With the same ground, the corresponding Cohen forcing, a designated `G`, and a fixed term/name translation, the historical interpretation can be reconstructed as the corresponding generic extension up to the chosen coding or collapse. A bare `M[G]` without designated `M`, `P`, `G`, and translation does not determine Cohen's historical `N`; an arbitrary generic extension is not that token | `COHEN1963-CH-I`, p. 1147, Def. 8 and Lemma 5; `COHEN1964-CH-II`, pp. 105–109, Th. 2 and Lemmas 6–22, with p. 110 separating the formal consistency discharge; `SHOENFIELD1971-UNRAMIFIED`, pp. 361–365, Principal Theorem and minimality; `JECH2003-SET-THEORY`, Th. 14.5, p. 203, Def. 14.27, p. 216, Th. 14.29, pp. 216–217, Lemma 14.31, pp. 217–218, and (14.32), p. 218; `KANAMORI2008-COHEN`, p. 361, item (e) |
+
+### 10B.3 Forcing-relation distinctions
+
+The matrix requires four different records, not one transhistorical relation.
+
+1. **Cohen's original definition:** Definitions 6–7 on pp. 1146–1147 recurse through the ramified limited/unlimited language. Lemmas 2–4 establish the relevant consistency, monotonicity, and decision properties; Lemma 5 connects this relation to truth in `N`.
+2. **Shoenfield's unramified reconstruction:** on p. 362 Shoenfield first defines a semantic relation by quantifying over all generics containing a condition. He then defines a modified relation recursively on names and formulas, proves definability, extension, and truth lemmas on pp. 362–364, and states on p. 364 that Cohen's concept corresponds in substance to the modified relation while the semantic relation has a different immediate history.
+3. **The modern recursively controlled relation:** Jech Th. 14.7, pp. 204–205, gives the monotonicity, consistency, decision, connective, quantifier, and witness properties; Def. 14.26, p. 215, types the relation on `P`-names through Boolean support and notes that a direct definition from `P` is also available.
+4. **Forcing theorem / truth lemma:** Cohen Lemma 5 and Shoenfield's Truth Lemma are presentation-specific truth bridges. Jech Th. 14.6, p. 204, is the mature theorem relating truth in `M[G]` to a forcing condition in `G`. Same role does not make the definitions or proof organizations literally identical.
+
+This separation blocks two errors: treating the modern theorem as text already present in Cohen's notation, and treating changed recursive clauses as loss of the truth-determination role.
+
+### 10B.4 Reverse-reconstruction assumptions and status
+
+The sources support only the following conditional **compositional reconstruction schema**, not a theorem furnishing a total inverse. Any use of the schema requires all of the following to be stated:
+
+1. the ground model `M` is externally countable, or the relevant dense/decision requirement family is countable;
+2. the later forcing is Cohen's finite-condition forcing, or a chosen isomorphic/dense-equivalent presentation with a fixed order convention;
+3. an enumeration of the relevant open dense, formula-decision, and witness requirements is fixed;
+4. a translation between the later names/formulas and Cohen's ramified term/formula presentation is chosen;
+5. `M`, `P`, and the generic `G` are designated, rather than only the abstract extension being given;
+6. any coding or Mostowski-collapse identification used to compare the interpreted structures is stated.
+
+Under these assumptions the reverse composition is:
+
+```text
+designated Cohen-forcing generic G
+→ chosen descending requirement-meeting sequence in G
+→ chosen ramified coding of names and formulas
+→ Cohen-style forcing clauses and term interpretation
+→ a coded/isomorphic presentation of the corresponding extension as N.
+```
+
+What is **not** available is an invariant inverse from an arbitrary generic filter to a unique sequence, from arbitrary `P`-names to Cohen's literal syntax, from the modern forcing relation to Cohen's exact clauses without translation, or from a bare `M[G]` to the historical `N`. The reverse exists at role and reconstructed-presentation level, not at literal token level.
+
+### 10B.5 Frozen six-test matrix
+
+| Frozen test | Result | Evidence and rationale |
+|---|---|---|
+| 1. Historical availability | **pass with chronology lock** | Cohen's five components are documented in 1963–1964; Shoenfield and Kanamori document the later unramified form. No later vocabulary is treated as available in 1963. |
+| 2. Functional role | **pass** | Every Cohen component has a typed later bearer, and the matrix states approximation, coherence, interpretation, truth-determination, and extension roles separately. |
+| 3. Load-bearing removal/replacement | **pass, differentiated** | Removing generic coherence or the forcing/truth bridge destroys extension generation. Ramification is removable because Shoenfield constructs the forcing model without it. Replacing sequence by filter and syntax by names preserves the relation but changes its representation. |
+| 4. Conservative substitution | **qualified pass** | The later construction substitutes for the Cohen generation function on the corresponding forcing. The reverse substitution is compositional and depends on countability, enumeration, coding, and designated data; it is not a literal inverse. |
+| 5. Representation invariance | **pass, qualified** | The generation-role verdict survives sequence/filter and ramified/name changes. Literal component identity does not survive and is not used as the family criterion. |
+| 6. Granularity sanity | **pass** | Same independence output is not used as identity, and every syntax token is not counted as a new method. The audit sits at component role and representation-specific operation level. |
+
+### 10B.6 D05b §10.3 closure and withdrawal conditions
+
+| Registered condition | Result | Reason |
+|---|---|---|
+| Each load-bearing Cohen component has a typed later image | **met** | §10B.2 maps all five requested components, including finite conditions, to the later construction. |
+| Preserved role is explicit | **met** | Approximation, coherence, interpretation, truth-determination, and extension roles are stated separately. |
+| Reverse direction and assumptions have exact source support sufficient for `supported` | **not met at the literal/component-inverse level** | The sources support a countability- and presentation-dependent composition. They do not supply a canonical inverse recovering Cohen's literal sequence, ramified syntax, clause system, and `N` from arbitrary later data. |
+| `qualified` if the reverse is compositional or representation-dependent | **met** | §10B.4 gives the composition and its assumptions; the complete-sequence and name inverses depend on chosen enumeration and coding. |
+| Withdraw if componentwise comparison is ill-typed and only family comparison is legitimate | **not triggered** | The forward component map is type-correct and load-bearing; the reverse failures are failures of literal/canonical reconstruction, not type failures. |
+| Remain unresolved if the available sources cannot decide the mapping boundary | **not triggered** | Cohen, Shoenfield, Jech, and Kanamori jointly determine both the preserved roles and the exact boundary on reverse reconstruction. |
+
+### 10B.7 Verdict and mandatory limits
+
+\[
+\boxed{\texttt{EVD-D05-0005: qualified}}
+\]
+
+**Qualified result:** Cohen's five requested operation components have a direct, typed, source-backed forward role map into the later generic-filter/name operation. A reverse reconstruction exists only as a Cohen-forcing-specific, chosen composition under external countability (or a countable requirement family), selected requirement enumeration, fixed condition/name/formula translations, designated `M/P/G`, and stated coding or collapse. It reconstructs a Cohen-style presentation and, at best, a coded/isomorphic extension under those choices; the sources directly support functional extension-role equivalence, not Cohen's literal historical sequence, syntax, clauses, or `N` from arbitrary later objects.
+
+**Mandatory limits:**
+
+- `complete sequence → generic filter` is role preservation through recoding requirements as dense sets; it is not the assertion that Cohen literally defined a modern filter.
+- `generic filter → complete sequence` is enumeration-dependent and non-canonical. An arbitrary `G` by itself does not contain a distinguished sequence.
+- ramified terms → `P`-names preserves interpretation and extension generation. It does not make the syntaxes losslessly invertible.
+- Cohen's original forcing definition, Shoenfield's semantic and modified relations, the modern relation, and the forcing theorem/truth lemma remain distinct records.
+- Cohen's `N` and modern `M[G]` have the same extension role under the fixed reconstruction; literal object identity is not asserted. The sources directly support a functionally equivalent presentation, with coded/isomorphic identification available only under named translation and collapse choices.
+- The overall `qualified_same_method_family` verdict is corroborated, not upgraded. `EVD-D03-0010`, `EVD-D05-0001`, `EVD-D05-0006`, and `EVD-D04-0002` do not move.
+- D06 remains provisional. No `H`, `N`, `S`, institutionalization, control, Part II, manuscript, strategy, protocol, or SRT verdict is issued.
+- No source PDF is committed or reproduced; only metadata, exact locations, controlled paraphrases, adjudication, and limits are recorded.
 
 ---
 
