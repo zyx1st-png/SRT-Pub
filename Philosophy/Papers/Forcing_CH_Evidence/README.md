@@ -8,6 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-05
+updated: 2026-08-11
 binding_strategy: Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md@strategy_note_v0_7
 ---
 
@@ -22,7 +23,7 @@ This directory contains source-adjudicated evidence dossiers for the staged pape
 | [D03_Goedel_Stage_Baseline.md](D03_Goedel_Stage_Baseline.md) | Gödel stage; `EVD-D03-0006`–`0008`; preparation for `EVD-D04-0002` | first evidence dossier | technical baseline supported; historical response-role record qualified; background translation unresolved |
 | [D03_Cohen_Event_Baseline.md](D03_Cohen_Event_Baseline.md) | Cohen event; `EVD-D03-0009`, `0010`, `0013` | first evidence dossier | original operation/output and assumption audit supported; cross-formulation relation qualified; no C5-op or institutionalization verdict |
 | [D05_C5op_Goedel_to_Cohen_Audit.md](D05_C5op_Goedel_to_Cohen_Audit.md) | Gödel stage → Cohen event; `EVD-D05-0001`; carries `EVD-D04-0002` | first comparison dossier | `EVD-D05-0001` **qualified**: bounded C5-op failure supported against five registered translation candidates; unbounded claim blocked pending a stage-wide repertoire inventory; `EVD-D04-0002` unchanged; no institutionalization, CH-regime, global, C2, calibration or SRT verdict |
-| [D05b_Forcing_Representation_and_Method_Family_Audit.md](D05b_Forcing_Representation_and_Method_Family_Audit.md) | Cohen ramified ↔ generic-filter ↔ Boolean-valued representations; applies Method Individuation Protocol v0.1; refines `EVD-D03-0010` and registers `EVD-D05-0005`–`0006` | first multi-representation falsification dossier | overall verdict `qualified_same_method_family`; generic-filter ↔ Boolean-valued is `supported_same_method_family`; both ramified pairs are qualified; `EVD-D03-0010` remains **qualified**; protocol v0.1 is **qualified, not falsified**; D06 target object specified provisionally; no `H/N/S` or institutionalization verdict |
+| [D05b_Forcing_Representation_and_Method_Family_Audit.md](D05b_Forcing_Representation_and_Method_Family_Audit.md) | Cohen ramified ↔ generic-filter ↔ Boolean-valued representations; applies Method Individuation Protocol v0.1; refines `EVD-D03-0010` and registers `EVD-D05-0005`–`0006` | multi-representation falsification dossier with bounded `EVD-D05-0006` supplement | overall verdict `qualified_same_method_family`; generic-filter ↔ Boolean-valued is `supported_same_method_family`; both ramified pairs are qualified; `EVD-D05-0006` is **supported**: direct Boolean validity without generic ultrafilter/quotient preserves theorem-producing semantics but does not itself complete the ordinary-model/generic-extension operation; `EVD-D03-0010` remains **qualified**; protocol v0.1 is **qualified, not falsified**; D06 target object remains provisional; no `H/N/S` or institutionalization verdict |
 
 ## Protocol candidates
 
@@ -53,12 +54,12 @@ Bounded analyses of a single registered question. They carry no obligation verdi
 
 These were registered by a dossier and require promotion into the staged manuscript's evidence index in a later PR.
 
-| Evidence ID | Obligation | Registered by |
-|---|---|---|
-| `EVD-D05-0003` | Historically admissible inventory of the stage-wide 1938–1963 operation repertoire for consistency and independence results, beyond Gödel's own publications | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
-| `EVD-D05-0004` | Whether the documented constructible-inner-model operation, applied alone and with no outer-model or generic-extension operation added to the repertoire, is provably incapable of yielding a `not-CH` model. Scope-restricted by construction: no universal claim about operations over a `V=L` ground model is intended, since the Cohen construction is one such operation and does yield `not-CH` | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
-| `EVD-D05-0005` | Direct component-and-role mapping from Cohen's complete sequence, ramified terms, forcing relation and interpreted `N` to the later generic-filter/name operation, including the status and assumptions of any reverse reconstruction; closure and withdrawal conditions are fixed in D05b §10.3 | `D05b_Forcing_Representation_and_Method_Family_Audit.md` §10.3 |
-| `EVD-D05-0006` | Whether Boolean-valued forcing without an explicit generic ultrafilter preserves the same extension-generating operation role or only a weaker theorem-producing semantic role; closure and withdrawal conditions are fixed in D05b §10.3 | `D05b_Forcing_Representation_and_Method_Family_Audit.md` §10.3 |
+| Evidence ID | Obligation | Current dossier verdict | Registered / adjudicated by |
+|---|---|---|---|
+| `EVD-D05-0003` | Historically admissible inventory of the stage-wide 1938–1963 operation repertoire for consistency and independence results, beyond Gödel's own publications | **unresolved — unchanged** | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
+| `EVD-D05-0004` | Whether the documented constructible-inner-model operation, applied alone and with no outer-model or generic-extension operation added to the repertoire, is provably incapable of yielding a `not-CH` model. Scope-restricted by construction: no universal claim about operations over a `V=L` ground model is intended, since the Cohen construction is one such operation and does yield `not-CH` | **unresolved — unchanged** | `D05_C5op_Goedel_to_Cohen_Audit.md` §11 |
+| `EVD-D05-0005` | Direct component-and-role mapping from Cohen's complete sequence, ramified terms, forcing relation and interpreted `N` to the later generic-filter/name operation, including the status and assumptions of any reverse reconstruction; closure and withdrawal conditions are fixed in D05b §10.3 | **unresolved — unchanged** | `D05b_Forcing_Representation_and_Method_Family_Audit.md` §10.3 |
+| `EVD-D05-0006` | Whether Boolean-valued forcing without an explicit generic ultrafilter preserves the same extension-generating operation role or only a weaker theorem-producing semantic role; closure and withdrawal conditions are fixed in D05b §10.3 | **supported** — direct Boolean validity preserves the load-bearing truth/forcing semantics and theorem-producing role, but the ordinary-model/generic-extension operation requires an added appropriate quotient/generic-realization step | registered at `D05b` §10.3; adjudicated at `D05b` §10A |
 
 ## Evidence discipline
 
