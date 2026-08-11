@@ -141,6 +141,7 @@ AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T
 | PH-IND01 object / subject individuation before identification | `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md` | rebuilds Kibbe–Leslie under a strict evidence boundary: object individuation-before-identification is source-backed; subject-position-before-self-identification is only an SRT P3 analogy; tracking continuity is a negative control for bearer continuity | High |
 | PH-IND02 selective closure / perspective / bearer formation | `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` | treats selective stabilization and momentary closure as precursor concepts for dynamic boundary formation, then requires consequence return/history/future-selectability tests before bearer admission; types perspective below phenomenality | High |
 | PH-IND03 Simondon transduction / operator–structure / second-order selection | `Philosophy/patches/SRT_Philosophy_PH_IND03_Simondon_Transduction_Operator_Structure_Second_Order_Selection_v0_1.md` | uses the full-book Simondon close-read to harden `Operation -> Structure -> Operation`, modulation/transduction negative controls, incompatibility-to-new-dimension restructuring, dynamic bearer-boundary formation and generativity-vs-`d` separation; crosswalks to H3/I5 and yin–yang without canonical identity | Very high |
+| PH-MR01 representational gradualism / adjacent-case audit | `Philosophy/patches/SRT_Philosophy_PH_MR01_Representational_Gradualism_Adjacent_Case_Audit_v0_1.md` | imports adjacent-case pressure testing for purported representation thresholds; separates evidence-degree from ontological-degree gradualism; blocks complexity-as-definition; adds only a P3 history-bearing-recursion hypothesis and keeps representation / bearer / phenomenality axes distinct | High |
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
 | SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
 | SOC-COG03 norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating and distributed script constraints; separates supportive automation from choice-replacing closure; routes broad social constraint revision into existing H3/I5/J5 reselectability rather than creating a parallel second-order-selection gate | High |
@@ -256,6 +257,38 @@ internal/external relation-of-relations boundary candidate
 yin != L0
 yang != L1
 G_hat_theta != Yang entity
+```
+
+PH-MR01 remains tied to:
+
+```text
+Philosophy/Foundations_Annex/10_MentalRepresentation_Interface_Batch.md
+Philosophy/SRT_Subjecthood_Threshold_Interface.md
+```
+
+and preserves:
+
+```text
+evidence strength for representation
+!= ontological degree of representationality
+
+classification threshold
+!= fundamental ontological boundary
+
+information-processing complexity
+!= representation by definition
+
+history-bearing recursive state
+= P3 research hypothesis only
+!= representation theorem
+!= bearer
+
+representation axis
+!= bearer axis
+!= phenomenality axis
+
+graded structural formation
+!= graded actuality of a particular selection event
 ```
 
 SOC-COG03 remains tied to:
