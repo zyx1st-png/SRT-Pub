@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-11
-source_commit: 32e48e2d
+source_commit: 18403dfa
 source_branch: claude/srt-theory-consistency-tension-dabe30
-source_dirty: true
+source_dirty: false
 inputs_digest: 720d87a4698fa354
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 720d87a4698fa354
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-11 |
-| 来源 commit | `32e48e2d` |
+| 来源 commit | `18403dfa` |
 | 来源分支 | `claude/srt-theory-consistency-tension-dabe30` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 16 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -46,7 +46,7 @@ inputs_digest: 720d87a4698fa354
 | 1 | `SRT_AI_START.md` | 2026-08-08 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-08-11 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-05-01 |
-| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-06-05 |
+| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-11 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-11 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-04-22 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-04-27 |
@@ -1311,7 +1311,7 @@ This split changes epistemic placement, not the underlying intended theory.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-06-05 |
+| last_commit | 2026-08-11 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
