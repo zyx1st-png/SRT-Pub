@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: 9613fbc7
+source_commit: fc5b9e96
 source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
-source_dirty: true
+source_dirty: false
 inputs_digest: 7dc27dba4170a938
 ---
 
@@ -23,14 +23,14 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 文件 | 内容 | 来源文件数 | 字符数 | ≈token |
 |---|---|---:|---:|---:|
-| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 311,232 | ~138,672 |
-| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 148,425 | ~70,052 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 67,018 | ~26,055 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 77,419 | ~33,215 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 88,875 | ~33,381 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 5 | 58,651 | ~23,588 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 34,681 | ~13,490 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 20,697 | ~9,262 |
+| `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 311,233 | ~138,672 |
+| `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 148,426 | ~70,052 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 67,019 | ~26,055 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 77,420 | ~33,216 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 88,876 | ~33,381 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 5 | 58,652 | ~23,588 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_SPIRITUALITY.md` | 领域 Spirituality | 3 | 34,682 | ~13,491 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_CORE.md` | 领域 Core | 1 | 20,698 | ~9,262 |
 
 ## 上下文预算
 
@@ -65,10 +65,10 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 | 组合 | 合计 ≈token | 是否在预算内 |
 |---|---:|:---:|
 | `SPINE` + `DOMAIN_AI` | 164,727 | **超预算** |
-| `SPINE` + `DOMAIN_PHYSICS` | 171,887 | **超预算** |
+| `SPINE` + `DOMAIN_PHYSICS` | 171,888 | **超预算** |
 | `SPINE` + `DOMAIN_PHILOSOPHY` | 172,053 | **超预算** |
 | `SPINE` + `DOMAIN_NEUROSCIENCE` | 162,260 | **超预算** |
-| `SPINE` + `DOMAIN_SPIRITUALITY` | 152,162 | 在预算内（但仍不推荐，见下） |
+| `SPINE` + `DOMAIN_SPIRITUALITY` | 152,163 | 在预算内（但仍不推荐，见下） |
 | `SPINE` + `DOMAIN_CORE` | 147,934 | 在预算内（但仍不推荐，见下） |
 
 **两条路线互斥。** 骨架路线用于裁定定义；轻量路线用于领域问答。
