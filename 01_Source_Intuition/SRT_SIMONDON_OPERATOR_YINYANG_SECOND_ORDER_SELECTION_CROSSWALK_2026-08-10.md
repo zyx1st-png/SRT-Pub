@@ -409,7 +409,7 @@ boundary formation
 3. **二阶选择的外部近邻**：Simondon 的 incompatibility → new dimension 为 H3/I5 比较尺度重写提供独立哲学模型，但不替代 SRT 四项门。
 4. **阴阳非实体化**：阳是有限收敛功能，阴是非穷尽差异继续有效的 source-intuition 读法；二者都不等于 canonical 层或实体。
 5. **stake-space 分离**：问题空间重构与 `d` 分开；只有通过 stake gate 的新维度才进入 d-value 接口。
-6. **U5 深化**：选择绝对化可重读为 operator-structure 获得永久元选择豁免；可再选择要求选择机制原则上仍能被后续历史改写。
+6. **U5 深化（证据分级）**：作者确认的是“选择机制自身不能永久退出选择”；把它进一步解释为 operator-structure 获得永久元选择豁免属于 `ASSISTANT-EXPLANATION-AFTER-U5` 的 bridge reading，可用于当前 crosswalk，但不能冒充作者逐字确认。可再选择要求选择机制原则上仍能被后续历史改写。
 
 ---
 
