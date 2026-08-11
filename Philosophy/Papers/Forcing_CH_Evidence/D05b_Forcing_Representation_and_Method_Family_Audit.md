@@ -8,6 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-05
+updated: 2026-08-11
 submission_ready: false
 evidence_state: partially_adjudicated
 binding_strategy: Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md@strategy_note_v0_7
@@ -27,7 +28,7 @@ depends_on_protocol:
 
 **Primary inherited obligation:** `EVD-D03-0010`
 
-**Newly registered bounded obligations:** `EVD-D05-0005`, `EVD-D05-0006`
+**Bounded obligations registered by this dossier:** `EVD-D05-0005`, `EVD-D05-0006`
 
 ## Verdict snapshot
 
@@ -38,6 +39,7 @@ depends_on_protocol:
 | Ramified construction ↔ Boolean-valued formulation | `qualified_same_method_family` | A common generative role is recoverable through the generic-filter bridge, but the direct historical and componentwise translation is incomplete. Boolean-valued semantics removes both the ramified hierarchy and the need to organize the proof around Cohen's literal complete sequence, and it can support consistency proofs without an explicit two-valued generic extension. |
 | Higher-level forcing method family | `qualified_same_method_family` | A non-empty common family exists: ordered partial information plus a ground-definable forcing/Boolean truth relation and a generic realization or equivalent quotient that determines truth in a model extension. The family claim is qualified because it preserves the characteristic generation role and extension semantics, not every historical component, metamathematical route, or proof organization. |
 | `EVD-D03-0010` | **qualified — unchanged** | The new evidence supports bounded same-family judgments and an exact generic-filter/Boolean-completion equivalence, but it does not establish unrestricted interchangeability, literal historical identity, or full operation-role identity across all three forms. |
+| `EVD-D05-0006` | **supported** | Without an explicit generic ultrafilter or an appropriate Boolean-algebra homomorphism and quotient, direct Boolean-valued forcing reaches Boolean validity and theorem-producing semantics, not an ordinary two-valued model or the completed generic-extension operation. The full extension role is recovered when the quotient/generic step is added; Jech's theorem chain then identifies the Boolean and poset routes with the same generic extension. |
 | Method Individuation Protocol v0.1 | **qualified; not falsified** | The representation-invariance test does not force three unrelated methods, and it does not collapse all differences. It succeeds only after distinguishing a representation-specific operation token from a representation-neutral method family. The protocol therefore survives this round but exposes an unresolved level-of-individuation interface that a future v0.2 may need to state explicitly. |
 | D06 target object | **provisional / qualified** | D06 should predicate `H`, `N`, and `S` of the bounded forcing method family specified in §12, not of Cohen's event token, not of every forcing notion, and not of the entire later forcing ecosystem. No `H/N/S` verdict is issued here. |
 
@@ -95,7 +97,7 @@ The operative question is narrower:
 |---|---|---|---|---|
 | `COHEN1963-CH-I` | primary; `VERIFIED` in D03 against complete publisher page images | Paul J. Cohen, “The Independence of the Continuum Hypothesis,” *Proceedings of the National Academy of Sciences* 50(6), 1963, 1143–1148. DOI: 10.1073/pnas.50.6.1143. | pp. 1144–1145, Definitions 2–5; p. 1146, Definitions 6–7; p. 1147, Lemmas 2–5 and Definition 8. | Original ramified terms, finite conditions, forcing relation, complete sequence, interpreted model, and event-stage truth lemma. It does not contain the later literal package `M,P,G,M[G]`. |
 | `COHEN1964-CH-II` | primary; `VERIFIED` in D03 against complete publisher page images | Paul J. Cohen, “The Independence of the Continuum Hypothesis, II,” *Proceedings of the National Academy of Sciences* 51(1), 1964, 105–110. DOI: 10.1073/pnas.51.1.105. | pp. 105–108, Theorem 2 and Lemmas 6–20; p. 109, Lemmas 21–22; p. 110, finite-fragment reduction. | Axiom verification, cardinal preservation, Choice, failure of CH, and the separate formal consistency discharge. It does not establish later representation identity. |
-| `SCOTT1967-BOOLEAN-CH` | primary early Boolean-valued presentation; metadata `VERIFIED`, technical use bounded by the accessible article record and D03's historical bridge | Dana Scott, “A Proof of the Independence of the Continuum Hypothesis,” *Mathematical Systems Theory* 1(2), 1967, 89–111. DOI: 10.1007/BF01705520. | §1 begins at p. 89; article pp. 89–111; reference [8] at p. 111 records the then-in-preparation Scott–Solovay work on Boolean algebras and forcing. | Early published Boolean-model proof and evidence that the Boolean route was not merely a recent textbook repackaging. This dossier does not assign a component-level theorem burden to a page not independently checked. |
+| `SCOTT1967-BOOLEAN-CH` | primary early Boolean-valued presentation; `VERIFIED` against the complete article scan, printed pp. 89–111 | Dana Scott, “A Proof of the Independence of the Continuum Hypothesis,” *Mathematical Systems Theory* 1(2), 1967, 89–111. DOI: 10.1007/BF01705520. | pp. 95–96, construction and completeness of the Boolean algebra; pp. 97–105, Boolean values for formulas, connectives, quantifiers, logic, functions and witness/fullness property; pp. 106–108, suitable model and direct proof that `(CH')` has Boolean value `0`; pp. 108–110, relation to Cohen forcing and scope of “reformulation”; pp. 110–111, Boolean-valued versus ordinary models, Löwenheim–Skolem, Rasiowa–Sikorski, homomorphism/quotient, complete conditions and order of realization. | Primary source for the direct Boolean-validity endpoint and its historical relation to Cohen's method. It supports a source-level route from Boolean values to ordinary models, but the exact same-generic-extension theorem is supplied by Jech, not attributed to Scott. The complete scan is evidence only and is not committed to this repository. |
 | `SHOENFIELD1971-UNRAMIFIED` | primary early unramified presentation; bibliographic record `VERIFIED`; exact opening location corroborated by the stable scan and Kanamori | J. R. Shoenfield, “Unramified Forcing,” in Dana Scott (ed.), *Axiomatic Set Theory*, Proceedings of Symposia in Pure Mathematics 13, Part I, American Mathematical Society, 1971, 357–381. MR 0280359. | p. 357, opening rationale and stated removal of the ramified hierarchy; pp. 357–381, full construction. | Early source whose explicit purpose is direct construction of forcing models without Cohen's ramified hierarchy. It is evidence of historical reformulation, not evidence that the unramified form was already available in 1963. |
 
 ### 2.2 Authoritative technical and historical sources
@@ -103,7 +105,7 @@ The operative question is narrower:
 | Stable key | Type and source-level status | Verified metadata | Exact locations used | Use and limit |
 |---|---|---|---|---|
 | `KANAMORI2008-COHEN` | peer-reviewed historical/technical retrospective; `VERIFIED` in D03 | Akihiro Kanamori, “Cohen and Set Theory,” *The Bulletin of Symbolic Logic* 14(3), 2008, 351–378. DOI: 10.2178/bsl/1231081371. | pp. 359–361, Cohen's original model and five-part scheme; p. 364, semantic and syntactic routes; p. 369, Boolean-valued reformulation; p. 370, Shoenfield's unramified partial-order/generic-filter form and early-1970s stabilization. | Main historical bridge. It distinguishes succession and reformulation from literal identity. |
-| `JECH2003-SET-THEORY` | authoritative technical monograph; `VERIFIED` against the chapter scan and Springer metadata | Thomas Jech, *Set Theory: The Third Millennium Edition, Revised and Expanded*, Springer Monographs in Mathematics, Springer, 2003. DOI: 10.1007/3-540-44761-X. | Ch. 14, pp. 201–224: Def. 14.1; Lemma 14.4; Ths. 14.5–14.7; Th. 14.10; Cor. 14.12; Lemma 14.13; Lemma 14.14; Th. 14.24; Defs. 14.25–14.27; Th. 14.29; Cor. 14.30; Lemma 14.31; equations (14.30)–(14.32). | Exact technical relation among posets, separative quotients, Boolean completions, generic filters/ultrafilters, Boolean values, names, and generic extensions. This is a modern reconstruction, not evidence of 1963 vocabulary. |
+| `JECH2003-SET-THEORY` | authoritative technical monograph; `VERIFIED` against the chapter scan and Springer metadata | Thomas Jech, *Set Theory: The Third Millennium Edition, Revised and Expanded*, Springer Monographs in Mathematics, Springer, 2003. DOI: 10.1007/3-540-44761-X. | Ch. 14, pp. 201–224: Def. 14.1; Lemma 14.4; Ths. 14.5–14.7; Th. 14.10; Cor. 14.12; Lemmas 14.13–14.14 and 14.19; Th. 14.24; Defs. 14.25–14.27; Th. 14.29; Cor. 14.30; Lemma 14.31; equations (14.30)–(14.32). | Exact technical relation among posets, separative quotients, Boolean completions, generic filters/ultrafilters, Boolean values, full Boolean-valued models, ordinary quotients, names, and generic extensions. This is a modern reconstruction, not evidence of 1963 vocabulary. |
 | `MOORE2019-FORCING` | expert technical exposition; `VERIFIED` in D03 | Justin Tatch Moore, “The Method of Forcing,” arXiv:1902.03235v1, 2019. | §3, pp. 4–6, especially Definition 3.1, Definition 3.2, and the dense-equivalence observation; §§5–6, pp. 7–12, names, forcing relation, and forcing theorem. | Independent modern account of the generic-object, condition, name, and truth-determination roles. It does not settle historical identity. |
 | `HAN-VANDOORN2020-CH` | peer-reviewed technical formalization; `VERIFIED` in D03 | Jesse Michael Han and Floris van Doorn, “A Formal Proof of the Independence of the Continuum Hypothesis,” in *CPP 2020*, 2020, 353–366. DOI: 10.1145/3372885.3373826; arXiv:2102.02901. | abstract and §1, pp. 353–354; §1.1, pp. 354–355. | Evidence that a Boolean-valued proof can bypass countable-transitive-model and explicit generic-filter machinery while preserving a forcing proof of both consistency directions. This is important counterevidence to an over-strong “identical mechanism” claim. |
 | `BELL2005-BOOLEAN` | authoritative technical monograph; metadata and chapter ranges `VERIFIED` against Oxford Academic | John L. Bell, *Set Theory: Boolean-Valued Models and Independence Proofs*, 3rd ed., Oxford University Press, 2005. DOI: 10.1093/acprof:oso/9780198568520.001.0001. | Ch. 2, “Forcing and Some Independence Proofs,” pp. 55–70; Ch. 4, “Generic Ultrafilters and Transitive Models of ZFC,” pp. 88–108. | Corroborates the division between Boolean-valued truth calculation and the generic-ultrafilter route to actual two-valued models. No theorem number from an inaccessible page is asserted here. |
@@ -538,6 +540,98 @@ The present record does not meet all five.
 | `EVD-D05-0006` | Determine whether Boolean-valued forcing without an explicit generic ultrafilter preserves the same extension-generating operation role or only a weaker theorem-producing semantic role. | Close when a source-backed comparison states the endpoint, premises, and preserved function for direct Boolean validity versus generic quotient, including at least one exact theorem-level bridge. | Withdraw if D06 explicitly excludes non-extension Boolean-valued proofs from its target family, making the distinction outside the target object's scope. |
 
 No manuscript index is modified in this PR. The obligations are registered only in this evidence directory.
+
+---
+
+## 10A. `EVD-D05-0006` — bounded adjudication supplement (2026-08-11)
+
+**Obligation verdict:** `supported`
+
+**Question adjudicated:** When Boolean-valued forcing is used without an explicit generic ultrafilter, appropriate homomorphism, or two-valued quotient, does it perform the complete extension-generating operation, or does it stop at a weaker theorem-producing semantic role?
+
+> **SUPPLEMENT SCOPE LOCK**
+>
+> This supplement adjudicates only `EVD-D05-0006`. It does not move `EVD-D03-0010`, `EVD-D05-0001`, `EVD-D05-0005`, or `EVD-D04-0002`; does not adjudicate D06 `H/N/S`, institutionalization, Control A, Control B, Part II, C2, the paper as a whole, or SRT; and does not modify the frozen Method Individuation Protocol v0.1 or the staged manuscript. Scott 1967 is outside the 1938–1963 control-archive window and is used only for the forcing-representation question.
+
+### 10A.1 Source-level result from Scott 1967
+
+The complete article scan was checked page by page from printed p. 95 through p. 111. PDF page 7 is printed p. 95 and PDF page 23 is printed p. 111. The following ledger records controlled paraphrases, not substituted source text.
+
+| Printed pages | Checked result | Endpoint implication |
+|---|---|---|
+| pp. 95–96 | Scott begins the model construction by reinterpreting logical as well as non-logical primitives. The quotient event algebra modulo null sets is complete; Scott says this completeness is essential to the method's success. The countable-chain condition permits arbitrary suprema to be reduced to suitable countable subfamilies. | Completeness is a load-bearing resource for assigning values to quantifiers and for later witness/choice constructions. It is not decorative probability notation. |
+| pp. 97–98 | Atomic formulas receive event values; propositional connectives receive the corresponding Boolean operations; universal and existential quantifiers receive infima and suprema over all instances. | The operation directly computes formula values in a complete Boolean algebra. No ultrafilter or ordinary satisfaction relation appears at this endpoint. |
+| pp. 99–105 | Boolean validity is value `1`. Scott distinguishes this from an ordinary model, checks logical inference, defines random functions and functionals, and proves that an existential Boolean value is attained by an instance. | Endpoint A is a genuine semantic model and theorem-producing apparatus. The attained-witness property supplies the fullness needed for controlled quotienting, but does not itself perform a quotient. |
+| pp. 106–108 | Scott constructs the product-space Boolean model and proves directly that the two disjuncts of the selected CH formulation have value `0`; hence `(CH')` has Boolean value `0`. | The independence argument is completed at endpoint A by Boolean-value calculation. No ordinary two-valued model is constructed in this proof step. |
+| pp. 108–109 | Scott reports Solovay's observation that weak forcing conditions determine pairs forming a complete Boolean algebra and that Boolean assignment exposes the algebraic properties carrying the construction. Scott's “reformulation of Cohen's original method” concerns this forcing-to-Boolean-value reconstruction and the use of arbitrary complete Boolean algebras. | “Reformulation” supports same-family status for the truth/forcing resource. It does not erase the later distinction Scott himself draws between Boolean-valued and ordinary endpoints. |
+| pp. 109–110 | Scott explains that one may work with Boolean values without constructing full transfinite set theory and that arbitrary complete Boolean algebras, not probability measure as such, carry the construction. | The theorem-producing endpoint is not merely an abbreviation for a hidden generic filter. It can be used on its own. |
+| pp. 110–111 | Avoiding countable models means retaining Boolean-valued, not ordinary `{0,1}`-valued, models. Scott says forcing can likewise be used without “going over to a model.” To obtain ordinary models one adds a homomorphism to the two-element algebra; an arbitrary homomorphism may yield a nonstandard, non-well-founded model, so Scott first invokes Löwenheim–Skolem for a suitable countable submodel and then Rasiowa–Sikorski for a homomorphism preserving enough suprema. Cohen's complete set of conditions performs the corresponding role in the forcing framework. | The source explicitly separates endpoint A from endpoints B/C. The homomorphism/quotient is an additional load-bearing realization step. Scott's “first” versus “last or not at all” comparison identifies order of realization, not identity of endpoints when the last step is omitted. |
+
+### 10A.2 Three endpoints that must not be collapsed
+
+| Endpoint | Required resources | Output and preserved function | What is not yet obtained |
+|---|---|---|---|
+| **A. Direct Boolean validity / Boolean-valued semantic proof** | Complete Boolean algebra; Boolean-valued domain; recursive values for atomic formulas, connectives and quantifiers; validity as value `1` | Algebra-valued truth determination, validity, and a direct consistency/independence proof; in Scott's construction, `(CH')` has value `0` | No ordinary two-valued satisfaction structure merely from the value calculation; no selected generic extension |
+| **B. Ordinary two-valued model** | A full Boolean-valued model plus an ultrafilter, or equivalently a suitable homomorphism to `{0,1}`, followed by quotient/interpretation | Ordinary satisfaction in the quotient. Jech Lemma 14.14 gives `A/F ⊨ φ([a])` iff `||φ(a)|| ∈ F` | An arbitrary quotient need not be standard, well-founded, transitive, or a generic extension of a specified ground model |
+| **C. Generic extension through quotient or generic ultrafilter** | Ground model `M`; forcing poset `P` or complete Boolean algebra `B(P)`; an `M`-generic filter/ultrafilter; interpretation of names | A transitive ordinary model `M[G]`; forcing truth; minimal extension containing `M` and the generic object; equality with the Boolean route's `M[H]` | Historical identity with Cohen's 1963 token, or identity of every proof architecture |
+
+The shared independence conclusion does not identify these endpoints. Endpoint A preserves the forcing/Boolean truth resource and theorem-producing function. Endpoints B and C require a selection/quotient step that turns algebra-valued truth into ordinary truth; endpoint C additionally requires background-relative genericity and the generic-extension construction.
+
+### 10A.3 Exact theorem-level bridge
+
+The bridge uses Scott for the historical countable-submodel/homomorphism route and Jech Chapter 14 for the exact modern quotient and same-extension results. They are complementary records, not one source silently substituted for the other.
+
+| Bridge step | Exact source location | What is established |
+|---|---|---|
+| Poset to complete Boolean algebra | Jech Th. 14.10, pp. 205–206; Cor. 14.12, p. 206 | A separative poset embeds densely in a complete Boolean algebra; an arbitrary poset has a separative quotient and Boolean completion preserving order/compatibility with dense image. |
+| Boolean-valued model and fullness | Scott pp. 97–105, especially p. 105; Jech Boolean-valued semantics, pp. 206–208, and Lemma 14.19, p. 211 | Formulas and quantifiers have Boolean values; existential values are attained by instances in the full model. |
+| Suitable countable submodel | Scott pp. 110–111 | Löwenheim–Skolem is applied to the Boolean model before the ordinary-model step; the attained-witness property is the stated reason the required submodel can be chosen. This is a source-level route, not a derivation of a countable transitive ground model from bare consistency. |
+| Generic ultrafilter / appropriate homomorphism | Scott pp. 110–111; Jech Lemma 14.4, p. 203, and Lemma 14.13, p. 206 | Rasiowa–Sikorski supplies a homomorphism preserving the required countable suprema; equivalently its `1`-preimage is the relevant ultrafilter. In the modern forcing route, countably many dense requirements yield a generic filter, and filters transfer through separative quotient and dense Boolean embedding. |
+| Quotient to an ordinary model | Jech Lemma 14.14, p. 208 | For a full Boolean-valued model `A` and ultrafilter `F`, the quotient `A/F` is two-valued and its ordinary satisfaction relation is exactly membership of Boolean values in `F`. |
+| Forcing relation from Boolean values | Jech Def. 14.26, p. 215 | `p ⊩ φ(a)` iff `e(p) ≤ ||φ(a)||`; the forcing relation is recovered from Boolean support. |
+| Generic interpretation and ordinary truth | Jech Def. 14.27, p. 216; Th. 14.29, pp. 216–217; Cor. 14.30, p. 217; Lemma 14.31, pp. 217–218 | Interpretation by an `M`-generic ultrafilter yields `M[G]`; ordinary truth is equivalent to membership of the Boolean value in the ultrafilter; the result is a ZFC model containing `M` and the generic object with the stated minimality. |
+| Same generic extension | Jech Lemma 14.13, p. 206; equations (14.32), p. 218 | A poset-generic `G` and the induced Boolean generic ultrafilter `H` are definable from each other; name interpretations agree and `M[G]=M[H]`. |
+
+This theorem chain is conditional in the precise place the endpoint distinction requires. It proves that **adding** an appropriate generic ultrafilter/quotient recovers the full extension-generating operation and the same generic extension. It does not turn a direct Boolean-validity proof that stops before that step into an already performed generic-extension construction.
+
+### 10A.4 Frozen six-test matrix for the endpoint distinction
+
+| Frozen test | Result | Evidence and rationale |
+|---|---|---|
+| 1. Historical availability | **pass with chronology lock** | Scott 1967 directly documents the Boolean endpoint and the later/optional homomorphism step. Nothing is projected into 1963 as Cohen's literal presentation. |
+| 2. Functional role | **pass** | Complete Boolean values perform truth determination and the independence proof; the ultrafilter/homomorphism performs two-valued realization; genericity plus name interpretation performs extension generation. |
+| 3. Load-bearing removal/replacement | **pass** | Removing completeness blocks the required quantifier suprema and witness constructions. Omitting the quotient leaves endpoint A intact but removes endpoints B/C. Adding an appropriate quotient restores them. |
+| 4. Conservative substitution | **pass, endpoint-bounded** | Boolean values substitute for forcing in theorem production and truth support. They do not conservatively substitute for the ordinary/generic-extension output unless the quotient/generic step is included. |
+| 5. Representation invariance | **pass** | Jech's dense Boolean completion preserves genericity, names, forcing truth and the same extension. The A-versus-C distinction remains when notation changes, because it turns on whether realization is performed, not on poset versus Boolean syntax. |
+| 6. Granularity sanity | **pass** | Identifying all three endpoints because they prove the same independence result is too coarse. Treating each Boolean value or completion as a separate method is too fine. The operation-role boundary lies at theorem-producing Boolean semantics versus performed two-valued/generic realization. |
+
+### 10A.5 D05b §10.3 closure and withdrawal conditions
+
+| Registered condition | Result | Reason |
+|---|---|---|
+| State the endpoint for direct Boolean validity versus generic quotient | **met** | §10A.2 distinguishes A, B and C and states their outputs separately. |
+| State the premises for each endpoint | **met** | §10A.2 names completeness/fullness, ultrafilter or homomorphism, ground model, genericity and name interpretation at the endpoint where each is required. |
+| State the preserved function | **met** | §10A.1–§10A.4 distinguish theorem-producing Boolean truth from ordinary satisfaction and extension generation. |
+| Supply at least one exact theorem-level bridge | **met** | §10A.3 supplies the Scott pp. 110–111 route and the Jech Lemma 14.14 / Def. 14.26 / Th. 14.29 / equation (14.32) chain with exact pages. |
+| Withdraw if D06 explicitly excludes non-extension Boolean-valued proofs | **not triggered** | D05b §12.2 includes the complete-Boolean/Boolean-valued representation when its extension-generating **or exact equivalent semantic role** is documented; §12.8 instead requires this endpoint distinction to be resolved. Direct endpoint A is therefore inside the registered audit question, though it is not itself counted as a completed extension token. |
+
+### 10A.6 Verdict and mandatory limits
+
+\[
+\boxed{\texttt{EVD-D05-0006: supported}}
+\]
+
+**Supported result:** Boolean-valued forcing without an explicit generic ultrafilter or appropriate homomorphism/quotient preserves the complete Boolean truth/forcing semantics and can directly produce the independence theorem, but it does **not** by itself perform the full ordinary-model or generic-extension-generating operation. That fuller role is recoverable by adding the quotient/generic-realization step; when the ultrafilter is generic over the stated ground model, Jech's exact bridge yields the same generic extension as the poset route.
+
+**Mandatory limits:**
+
+- “Reformulation of Cohen's original method” is licensed only at the forcing/Boolean-truth and method-family level documented on Scott pp. 108–111. It does not license historical identity or endpoint collapse.
+- Scott's avoidance of countable models concerns endpoint A. It does not say that well-founded ordinary models can be obtained without the countability/genericity conditions Scott reintroduces for endpoint B.
+- An arbitrary Boolean-algebra homomorphism may produce a nonstandard, non-well-founded ordinary model. Endpoint B is not automatically endpoint C.
+- Under the existing §12.2 inclusion criteria, endpoint A alone is not a completed D06 `m_family` operation token; the documented quotient/generic-realization route must be part of the audited operation. This applies the existing target boundary and does not adjudicate `H`, `N`, or `S`.
+- This verdict does not move the overall `qualified_same_method_family` finding, `EVD-D03-0010`, `EVD-D05-0005`, or the provisional D06 target. It issues no D06 `H/N/S` or institutionalization verdict.
+- Scott 1967 is not admitted to the 1938–1963 control archive. No candidate enumeration, scoring, ranking, selection or individuation is performed.
+- The source PDF is not committed or reproduced; only metadata, exact pages, controlled paraphrases, adjudication and limits are recorded.
 
 ---
 
