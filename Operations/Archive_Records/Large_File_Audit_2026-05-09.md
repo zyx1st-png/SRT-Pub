@@ -52,7 +52,7 @@ canonical: false
 | action | 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
 | action | 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
 | warning | 66.9 KiB | `Philosophy/Papers/Forcing_CH_Research_Regime_Staged_Draft_EN.md` | missing_or_not_needed |
-| warning | 66.1 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
+| warning | 66.6 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
 | warning | 65.2 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
 | warning | 64.5 KiB | `Physics/SRT_Phys_09_Formalism_Ext.md` | Physics/Formalism_Ext_Split |
 | warning | 63.5 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |

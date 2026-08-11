@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-11
-source_commit: 8a5ef99a
+source_commit: c304a981
 source_branch: claude/srt-theory-consistency-tension-dabe30
 source_dirty: true
 inputs_digest: 0c9ab6c96f8f0a06
@@ -27,7 +27,7 @@ inputs_digest: 0c9ab6c96f8f0a06
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-11 |
-| 来源 commit | `8a5ef99a` |
+| 来源 commit | `c304a981` |
 | 来源分支 | `claude/srt-theory-consistency-tension-dabe30` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 16 |
@@ -44,10 +44,10 @@ inputs_digest: 0c9ab6c96f8f0a06
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-08-08 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-05-18 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-08-11 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-05-01 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-06-05 |
-| 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-07-07 |
+| 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-11 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-04-22 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-04-27 |
 | 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-04-26 |
@@ -58,7 +58,7 @@ inputs_digest: 0c9ab6c96f8f0a06
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-07-21 |
 | 14 | `Core/SRT_Core_22_Equations.md` | 2026-07-07 |
 | 15 | `_SRT_SYMBOL_TABLE.md` | 2026-07-20 |
-| 16 | `Core/SRT_OPEN_TENSIONS.md` | 2026-08-08 |
+| 16 | `Core/SRT_OPEN_TENSIONS.md` | 2026-08-11 |
 
 ## §0.2 状态护栏
 
@@ -696,7 +696,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-05-18 |
+| last_commit | 2026-08-11 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1562,7 +1562,7 @@ This L1 round 从 P1-candidate 升到 P1 的必经检查项（将来 session 可
 | epistemic_layer | os |
 | layer | L0 |
 | canonical(字段) | - |
-| last_commit | 2026-07-07 |
+| last_commit | 2026-08-11 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -5964,7 +5964,7 @@ SRT 主方程的运作机制如下：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-08 |
+| last_commit | 2026-08-11 |
 
 **权威判读**：**未闭合登记**——其中条目不得被陈述为已封口。
 
