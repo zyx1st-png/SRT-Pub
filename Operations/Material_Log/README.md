@@ -29,11 +29,13 @@ canonical: false
 | [2026-08_Part01.md](2026-08_Part01.md) | 10 | August split; NEURAL23 added 2026-08-07 |
 | [2026-08_Part02.md](2026-08_Part02.md) | 8 | August continuation through NEURAL27 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
-| [2026-08_Part04.md](2026-08_Part04.md) | 5 | current August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 through 2026-08-11 |
+| [2026-08_Part04.md](2026-08_Part04.md) | 6 | current August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 through 2026-08-11 |
 
 ## Current note
 
-`2026-08_Part04.md` now records five bounded A-class entries.
+`2026-08_Part04.md` now records six bounded A-class entries.
+
+**Schulte / PH-MR01** adds a bounded philosophy-of-mind threshold audit rather than a new scalar representation theory. Its stable increment is the `adjacent-case audit`: proposed natural cutoffs should be tested against closely matched cases immediately below and above the criterion, comparing a plural explanatory/causal/behavioral/historical vector rather than assuming a discontinuity. The patch keeps evidence strength distinct from ontological degree, rejects `information-processing complexity = representation`, keeps representation/bearer/phenomenality axes separate, and records history-bearing recursion only as an SRT-side P3 hypothesis. Review hardening keeps P1-T06 as the canonical Stable ISP result-state criterion while routing the stronger natural-phase-boundary question to `Core/SRT_OPEN_TENSIONS.md` as a pending hook target rather than rewriting Core in this material PR.
 
 **Menétrey / NEURAL30** adds a short-timescale temporal-integration / object-formation bridge from peer-reviewed human SQM psychophysics and EEG. The stable source-backed increment is not merely “consciousness is delayed”: individual verniers retain decodable spatiotemporal chronology even when they are not accessible as separate conscious events; an early occipital-dominated decoder regime gives way to a later centro-parietal regime associated with the integrated percept/report; and the timing of this transition varies with the sequence. SRT-side hardening keeps `event occurrence != decodable neural history != separate conscious accessibility != integrated percept-related representation != report`, blocks `occipital=L0`, `parietal/P300=L1`, `P300=consciousness`, fixed `300–450 ms` frame-rate claims and `buffer=L2`, and treats the authors' prestimulus-alpha discussion as cited prior work rather than a result of the current experiment. NEURAL30 connects downstream of NEURAL23: embodied/neural phase may shape momentary eligibility, while the SQM paradigm supplies a separate integration/closure window. The resulting P4 test is SQM + EEG + respiration + ECG, asking whether phase predicts percept dominance or transition timing beyond prestimulus alpha, arousal, eye-movement and sensory-evidence controls. The current paper itself does not measure respiration or cardiac phase.
 
