@@ -15,6 +15,8 @@ dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-00, SRT-QUANT-01-COMPACT-CO
 > **定位**：本文件是 `SRT_Quant_00_Intro.md` 的紧凑主干版。  
 > **用途**：作为 SRT 量子线的总入口，快速说明为什么量子力学需要 SRT 式“选择论诠释”。  
 > **关系**：不替代原文；原文保留双缝、延迟选择、薛定谔猫、量子橡皮擦与 Bell 实验的完整重写。
+>
+> **PHR-A（2026-08-11）**：量子层采用 interpretation-plural realisation audit。`\hat G_\theta` 是 AM-A 的形式角色载体；collapse-family、Everett／branch-relative 与 operational／instrument 读法必须分开。退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项都不充分。
 
 ## 1. 核心问题
 
@@ -23,9 +25,9 @@ dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-00, SRT-QUANT-01-COMPACT-CO
 > **量子力学最难的问题，不是公式不够准，而是我们不知道“坍缩何时、为何、按什么定义发生”。**
 
 SRT 的压缩回答是：
-- 波函数 = `L_0` 的可能性结构
-- 坍缩 = `\hat G_\theta` 执行选择
-- 测量结果 = `L_1` 被锚定后的显现现实
+- 量子形式提供候选、概率与条件态结构
+- 物理 realization candidate 还需要 outcome-indexed record、路径效力与历史效力
+- collapse-family、Everett 与 operational 口径对“结果发生”承担不同本体承诺
 
 ---
 
@@ -37,9 +39,9 @@ SRT 的压缩回答是：
 \]
 
 最压缩句子：
-> **测量不是单纯更新知识，而是在本体论上把未定可能性锚定成确定事实。**
+> **在 collapse-family 中，测量可被翻译为排他结果锚定；在 Everett 中是 branch-relative fact formation；operationally 则是 outcome registration。**
 
-这一步是整个 SRT 量子线的入口。
+三种读法共享事件审计，不共享一个已经证明的全局坍缩机制。`\hat G_\theta` 形式化转化角色，不解释具体结果为何发生。
 
 ### 2.2 Path-Measure View
 \[
@@ -47,8 +49,8 @@ P(k) \propto \int_{\Gamma_k} e^{-\Phi[\gamma]}\,\mathcal D\gamma
 \]
 
 含义：
-- 坍缩不是凭空挑一个结果
-- 而是在可持续路径中完成加权取值
+- 公式可以表达候选路径的相对权重或条件取值
+- 权重、积分或条件态本身不等于结果已经发生
 
 ---
 
@@ -71,16 +73,17 @@ SRT 的改写是：
 
 ## 4. 什么才算“测量”
 
-### 4.1 Objective Measurement Criterion
-一个过程成为测量，至少要满足：
-- 纠缠被打破
-- 经典信息被记录
-- 不可逆性达成
+### 4.1 Bounded Physical Realisation Audit
+在预先声明模型、事件单元、系统边界与诠释后，realisation candidate 至少要在同一事件链上给出：
+- 真实进入过程的非等价候选
+- outcome-indexed 物理记录
+- 对记录做干预会改变后续物理路径
+- 结果改变未来可达性、概率、门槛或返回成本
 
 最压缩意义：
-> **测量不需要神秘意识插手，但需要系统真正完成从可能性到稳定结果的跨越。**
+> **事件审计不要求意识，但审计通过也不证明主体或意识。**
 
-这让 SRT 可以对主流诠释最头痛的问题之一给出客观判据。
+退相干、信息增加、耗散、固定点或稳定／冗余记录可以提供证据或稳定化，任何一项都不是充分条件。
 
 ---
 
@@ -128,17 +131,12 @@ P_{history} \propto D_p\cdot(\Delta t)^{-1}
 
 ## 7. 语义完备性
 
-### 7.1 Basic vs Total Collapse
-\[
-\text{Collapse}_{basic}=\hat G_{phys}[L_0\to L_1]
-\]
-\[
-\text{Collapse}_{total}=\hat G_{phys}[L_0\to L_1]\otimes \hat G_{sem}[L_0\to L_1]
-\]
+### 7.1 Physical Event vs Semantic Anchoring
 
-SRT 在这里做的区分非常关键：
-- 物理坍缩本身足够形成基本现实
-- 但完整历史重量还需要语义锚定
+SRT 在这里区分：
+- 非语义物理过程可以形成 PHR-A 的 event candidate
+- 语义系统随后可以对该记录赋予不同的意义和 `L_2` 历史重量
+- 退相干本身既不等于物理 actualisation，也不等于语义落地
 
 最压缩解释：
 > **一个事件可以物理上已经发生，但在意义层面仍未完全“落地”。**
@@ -148,13 +146,13 @@ SRT 在这里做的区分非常关键：
 ## 8. 为什么现有量子诠释都不够
 
 这篇的总括立场是：
-- Copenhagen 说了测量重要，但没定义测量
-- Many-Worlds 取消坍缩，但本体开销过大
-- QBism 抓住了主体性，却解释不了稳定共识
-- Decoherence 很关键，但不足以解释“为什么是这个结果”
+- collapse-family 提供排他结果的实现候选
+- Everett 提供 branch-relative fact formation
+- RQM / QBism 强调位置、关系或代理索引
+- decoherence 解释相干抑制与稳定化的一部分，不独立裁决结果本体
 
-SRT 的压缩优势在于：
-> **把测量、坍缩、纠缠、经典化与历史形成，统一写成 `\hat G[L_0 \to L_1]` 的选择动力学。**
+SRT 的压缩增量在于：
+> **让不同诠释共享一套有边界的事件审计语法，同时不抹平它们的本体差异。**
 
 ---
 
@@ -162,11 +160,11 @@ SRT 的压缩优势在于：
 
 `Quant 00 Intro` 可以压缩成五句话：
 
-1. **量子测量问题的核心，是缺少对“选择何时发生”的本体定义。**
-2. **SRT 将坍缩重写为 `\hat G` 把 `L_0` 锚定成 `L_1` 的选择行为。**
+1. **量子形式中的概率、条件态与退相干，不自动等于一个结果已经发生。**
+2. **`\hat G` 只承载 AM-A 转化的形式角色；物理实现必须按诠释索引。**
 3. **不确定性、纠缠与非定域性都可被理解为有限算子面对未切分 `L_0` 时的结构后果。**
 4. **历史不是预存实体，而是当前锚定时对过去路径的回投。**
-5. **SRT 的价值，在于把多种量子诠释压回一套统一的选择语法。**
+5. **共同事件审计核是 outcome record、路径效力与未来可达性改变，不是某个单项物理代理。**
 
 ---
 

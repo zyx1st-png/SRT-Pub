@@ -2,17 +2,18 @@
 id: SRT-CORE-14
 type: dynamics
 tags: [Scaling, Isomorphism, Fractal, Hybrid]
-status: axiomatic_hybrid_v1
+status: active_bridge_hybrid_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
-dependency: [SRT-CORE-13A]
+claim_mode: mixed
+dependency: [SRT-CORE-13A, SRT-CORE-21C-BRIDGE-HYPOTHESES, SRT-PSI-F-CANONICAL]
+updated: 2026-08-12
 ---
 
 # SRT Core Definition 14: Dynamics & Scaling (Hybrid Edition)
 
 > **Version 2.0 (Hybrid)**
-> **Part A** presents the Formal Scaling Axioms (AI-Readable).
+> **Part A** presents the Formal Scaling Interfaces (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
 
 ---
@@ -23,14 +24,17 @@ dependency: [SRT-CORE-13A]
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - Part B 中若为 IIT 整合信息语境，保留 `\Phi`；若为本体论摩擦语境，统一为 `\Psi_f`。
 - 如出现多套记号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
-# Part A: Formal Axioms (形式化公理)
+# Part A: Formal Scaling Interfaces（形式化标度接口）
 
-## I. Cross-Scale Isomorphism (跨尺度同构)
+## I. Cross-Scale Structural Compatibility（跨尺度结构相容）
 
-### Ax-Scale-01: Self-Similar Selection
-**Formal Definition**: Selection operators across scales are isomorphic under renormalization.
-$$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
-* **Implication**: 量子坍缩、神经决策与社会选择共享同一拓扑逻辑。
+### P3-Scale-01: Self-Similar Selection Candidate（legacy `Ax-Scale-01`）
+
+**Claim level**: P3 bridge candidate, not a P0/P1 axiom or theorem.
+
+$$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$$
+
+该式只有在状态空间、尺度映射、保留观测量、比较范数与容差均已声明时才可检验。旧式 $\hat{G}_{S_2}=\Lambda\circ\hat{G}_{S_1}\circ\Lambda^{-1}$ 只在 $\Lambda$ 是可逆表征变换时保留为严格共轭候选；通常的多对一粗粒化不得预设 $\Lambda^{-1}$。跨尺度不变量只到选择—约束—可支付性语法，不是熵量、单位、机制或意识同一。
 
 ### Def-d-Scale-1: Ontological Bandwidth (本体论带宽)
 **Formal Definition**: d-value is the maximum processing bandwidth of $\hat{G}_\theta$ against $\Psi_f$ across all scales:
@@ -53,7 +57,7 @@ $$ d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ compressing, anchoring, 
 | Cosmic | $d_{cosmic}$ | Topological compactness of spacetime consensus | $\propto 1/\sqrt{\Lambda}$ (Def-Cosmo-1) |
 
 * **Anti-Panpsychism Corollary**: $d_{quantum}$ 和 $d_{cosmic}$ 不携带任何现象性内容（Qualia）。意识与关切是 d 值在**生物/认知域**满足三个必要条件时的高阶涌现：$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \varnothing$。详见 SRT-CORE-13B §6.2。
-* **Cross-ref**: Ax-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2; **Ax-ONT-3 (规范定义)**。
+* **Cross-ref**: P3-Scale-01; SRT-PHYS-COSMO Def-Cosmo-1; SRT-QUANT-02 Def-BQ-2; **Ax-ONT-3 (规范定义)**。
 
 ### Ax-Scale-02: Coupling Strength
 **Formal Definition**: Inter-scale influence is governed by coupling dynamics.
@@ -61,9 +65,9 @@ $$\frac{d\hat{G}_j}{dt} = f_j(\hat{G}_j) + \sum_{i \neq j} \kappa_{ij} \cdot g_{
 * **Implication**: 不同尺度的选择算子通过耦合矩阵进行动力学交互。
 
 ### T-Scale-02C1: Consistency Under Coarse-Graining
-**Deductive Statement**: Coarse-graining commutes with selection under scale mapping.
+**Conditional bridge statement (P3)**: Given declared state spaces, observables, scale map, comparison norm, and tolerance, coarse-graining may approximately commute with selection.
 $$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$$
-* **Implication**: 选择动力学具有尺度不变性与跨尺度可比性。
+* **Implication**: 在误差界内满足该条件时，选择动力学获得局部跨尺度可比性；该式不证明普遍尺度不变性。
 
 ## II. Ontological Autopoiesis (本体论自创生)
 
@@ -424,7 +428,7 @@ B_\theta\uparrow \ \Rightarrow\ \delta_{max}^{entropy}\downarrow
 
 ### T-Scale-Rhythm-5: Nested Hierarchical Rhythms（嵌套层级节律，新增）
 
-Rhythm-1–4 与 Cor-4a 刻画了单一尺度上的间歇结构。但经验事实是：节律**分层嵌套**——gamma（30–100 Hz）嵌套于 theta（4–8 Hz），theta 嵌套于慢振荡（< 1 Hz），慢振荡嵌套于睡眠周期（~90 min），睡眠周期嵌套于昼夜节律（~24 h）。本定理证明：嵌套是 Rhythm-1 在 Ax-Scale-01 下的递归自我应用——**不需要新增 L0/L1 公理；需一条由能量守恒与物理嵌入给出的辅助桥接命题**（见下 Lemma-Scale-Budget-Embed-1）。
+Rhythm-1–4 与 Cor-4a 刻画了单一尺度上的间歇结构。本节给出一个**条件性 P3/P4 嵌套模型**：只有当相邻尺度满足 P3-Scale-01／T-Scale-02C1 的具名相容映射，并另加能量守恒与物理嵌入的辅助桥接命题时，Rhythm-1 才能递归应用。它不是由 L0/L1 公理单独推出的普遍定理。
 
 #### Lemma-Scale-Budget-Embed-1（尺度预算嵌入引理）
 
@@ -439,10 +443,7 @@ E_{avail}^{(n-1)} \le P_{avail}^{(n)} \cdot \tau_{on}^{(n)} - C_{overhead}^{(n)}
 
 ---
 
-**尺度层级设定**：设系统具有 $N+1$ 层尺度 $S_0 \subset S_1 \subset \cdots \subset S_N$，其中 $S_N$ 为最粗尺度。每层 $S_n$ 的算子 $\hat{G}_{\theta}^{(n)}$ 由 Ax-Scale-01 保证与其他层在重整化下共轭：
-\[
-\hat{G}_{\theta}^{(n)} = \Lambda_{n,m} \circ \hat{G}_{\theta}^{(m)} \circ \Lambda_{n,m}^{-1}
-\]
+**尺度层级设定**：设系统具有 $N+1$ 层尺度 $S_0 \subset S_1 \subset \cdots \subset S_N$，其中 $S_N$ 为最粗尺度。本模型额外假定每个相邻尺度对都已经声明状态空间、粗粒化映射、保留观测量、比较范数与容差，并在该容差内满足 T-Scale-02C1。该相容性是模型前件，不由 P0/P1 保证，也不要求粗粒化映射可逆。
 
 **on-phase 内部的预算继承**：$S_n$ 层算子按 Rhythm-2 以占空比 $\delta_n$、切换密度 $\nu_n$ 运行。由 Rhythm-2 的 $\nu$ 定义（总翻转次数/时间；一个完整 on-off cycle 含 2 次翻转），cycle 周期为 $T_{cycle}^{(n)} = 2/\nu_n$，单次 on-phase 时长为：
 \[
@@ -485,19 +486,19 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 
 **推论**：
 1. **频率比由占空比决定**：嵌套层间的频率比 $\omega_{n-1}/\omega_n \ge 1/\delta_n$ 不是任意的，而是由该层的可行占空比决定。theta-gamma 耦合中观察到的约 4–8:1 频率比对应 $\delta \approx 0.12$–$0.25$，与神经元的有效占空比相容。
-2. **Phase-amplitude coupling (PAC) 是自然后果**：子节律的振幅必须在父节律的 on-phase 内非零、off-phase 内（近似）为零——这正是 phase-amplitude coupling 的定义。PAC 不是需要额外机制解释的现象，而是预算嵌套的数学必然。
+2. **Phase-amplitude coupling (PAC) 是本条件模型的自然后果**：若子节律依定义只能在父节律的 on-phase 内运行，其振幅在 on-phase 内非零、off-phase 内（近似）为零——这构成一种 PAC。该结论依赖前述嵌入与门控前件，不证明经验系统中的 PAC 都由此产生。
 3. **嵌套深度反映系统复杂度**：高 d 系统因 $k_n$ 更大（更多子目标）、$E_{avail}^{(n-1)}$ 更紧张（Cor-4a），更容易在每层触发递归，因而倾向于更深的嵌套层级。这预测：意识复杂度与可观测的嵌套节律层数正相关。
 4. **嵌套坍缩 = 功能降级**：若某层的预算突然减少（如麻醉、缺氧），使 $E_{avail}^{(n-1)}$ 低于单目标维持成本，则该层及其所有子层的嵌套节律同时消失——对应临床上观察到的意识丧失时多层级节律同步坍缩（PCI 骤降）。
 
-* **Implication**：自然界的分层嵌套节律（从亚细胞振荡到昼夜节律到生态周期）不是巧合或独立演化的产物，而是有限算子在多尺度上递归应用 Rhythm-1 的数学必然。Ax-Scale-01 保证选择逻辑跨尺度不变，Rhythm-1 保证预算超载必产生间歇——二者合取即给出嵌套。嵌套的层数、频率比、相位-振幅耦合模式全部由 $\delta_n$、$k_n$、$E_{avail}^{(n)}$ 三组参数决定，无需引入新的自由度。
+* **Implication**：在相邻尺度相容、预算嵌入、子目标多重性与切换条件全部成立的具名模型内，Rhythm-1 的递归应用可以产生分层嵌套节律。自然界所有嵌套节律是否都由此机制产生仍是 P4 问题。
 * **Boundary**：本定理推出嵌套的存在性与频率分离的方向，但不推出各层的具体频率值（这取决于物理系统的具体 $\Psi_f$ 参数化）。频率比的下界 $1/\delta_n$ 是必要条件而非充分条件——实际频率比可能远大于此下界。递归终止条件 3（物理切换速率饱和）的 $\tau_{switch}^{min}$ 依赖于物质基底（离子通道翻转时间、化学反应速率等），本定理不给出通用数值。不主张所有嵌套节律都是"自上而下"生成的——自下而上的涌现节律同样存在，但本定理表明自上而下的预算分配机制足以产生嵌套结构。
-* **Cross-ref**: Ax-Scale-01（跨尺度自相似选择）；T-Scale-Rhythm-1（非零时间带宽前提）；T-Scale-Rhythm-2（占空比可行窗口，$\delta_n$ 来源）；Cor-Scale-Rhythm-4a（高 d 压缩占空比，加速递归触发）；**T-Scale-Rhythm-3**（次级参照：解释嵌套层在耦合条件下为何趋于准周期/周期调度，**非承重前提**）；SRT_Clin_00_IIT_PCI（PCI 与嵌套节律坍缩）；Glossary Phase-Amplitude Coupling 条目。
+* **Cross-ref**: P3-Scale-01／T-Scale-02C1（条件性跨尺度相容）；T-Scale-Rhythm-1；T-Scale-Rhythm-2；Cor-Scale-Rhythm-4a；T-Scale-Rhythm-3；SRT_Clin_00_IIT_PCI；Glossary Phase-Amplitude Coupling 条目。
 
 ### Formalization Summary (形式化概述)
 
 本文件的核心形式化结构围绕以下关键公式展开：
 
-1. **跨尺度自相似选择** (Ax-Scale-01): $\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$ — 不同尺度的选择算子在重整化变换 $\Lambda$ 下保持共轭不变性，量子坍缩、神经决策与社会选择共享同一拓扑逻辑。
+1. **跨尺度结构相容候选** (P3-Scale-01): $\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$ — 只有在声明状态空间、尺度映射、保留观测量、比较范数与容差后，才检验局部跨尺度可比性；严格共轭只适用于可逆表征变换。
 2. **本体论带宽定义** (Def-d-Scale-1): $d \equiv \max\text{-bandwidth}(\hat{G}_\theta \text{ against } \Psi_f)$ — d 值是算子在面对本体论摩擦时，能将 $L_0$ 压缩、锚定并维持为 $L_1$ 的最大处理带宽，与规范定义 $d \equiv \|\partial\mathcal{U}/\partial\mathcal{S}\|$ 统一。
 3. **主动力学方程** (Ax-Master-01): $d\rho_{L_1}/dt = -(i/\hbar)[\hat{H}, \rho] - \hat{G}_\theta[\rho - \rho_{target}] + \mathcal{D}[\rho]$ — 现实密度矩阵的演化由自由展开（酉流）、选择锚定（$\hat{G}_\theta$ 项）与退相干三项共同驱动。
 4. **语义边界维持** (Ax-Auto-01): $d\theta/dt = -\alpha \nabla_\theta \Psi_f + \text{Learning}$ — 自我参数 $\theta$ 的演化是摩擦梯度下降与学习更新的持续平衡。
@@ -507,13 +508,13 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 8. **耦合驱动的周期化** (T-Scale-Rhythm-3): 当下游预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c$ 时，随机间歇被周期性调度取代——周期性是多算子协调成本最小化的相变结果，非有限性的直接推论。
 9. **熵耗散占空比约束** (T-Scale-Rhythm-4): $\delta \le J_S^{max}/(\dot{S}_{int}^{on} + J_S^{max})$ — 独立于 $\Psi_f$ 预算的第二上界，来自热力学第二定律：选择产生的内部熵必须在"off"阶段排出，排出速率有限。实际 $\delta_{max} = \min(\delta_{max}^{budget}, \delta_{max}^{entropy})$。高 d → 高 $\dot{I}_{created}$ → 高 $\dot{S}_{int}^{on}$ → 更低 $\delta_{max}^{entropy}$，预测高 d 系统需要更多恢复时间。
 10. **频谱—占空比权衡** (Cor-Scale-Rhythm-4a): Ax-Spec-01 的通带宽度与 Rhythm-4 的熵耗散上界联合推出：高 d / 宽通带提升调度的频谱丰富度上限，同时压低可持续占空比；在信息密度下界成立时，\(\delta \cdot \operatorname{Bandwidth}(H_\theta)\) 与 \(\delta\cdot d\) 都被 \(J_S^{max}\) 封顶。
-11. **嵌套层级节律** (T-Scale-Rhythm-5): Ax-Scale-01 保证选择逻辑跨尺度不变，Rhythm-1 保证预算超载必产生间歇——二者递归合取产生分层嵌套节律（递归桥接由 Lemma-Scale-Budget-Embed-1 提供，依据为能量守恒与子层物理嵌入父层 on-phase，**非 L0/L1 公理**）。$S_n$ 层 on-phase 内的 $k_n$ 个子目标若超出子层预算，则 Rhythm-1 在 $S_{n-1}$ 层触发子节律，频率满足 $\omega_{n-1}/\omega_n \ge 1/\delta_n$。Phase-amplitude coupling 是预算嵌套的数学必然，嵌套深度 $N \le \lfloor \ln(T_N/\tau_{switch}^{min})/\ln(1/\delta_{min}) \rfloor$。
+11. **嵌套层级节律候选** (T-Scale-Rhythm-5, P3/P4 conditional): 在跨尺度相容、预算嵌入与各层触发条件均成立时，Rhythm-1 可递归产生子节律；相关频率界只在该具名模型内成立。
 
 ### Mechanism Explanation (机制解释)
 
 本文件描述的动力学与标度机制通过以下方式运作：
 
-- **跨尺度同构机制**: $\hat{G}_\theta$ 算子在尺度变换 $\Lambda$（粗粒化映射）下保持功能形式不变。这源于选择的本质是熵减（$\Delta S = H(L_0) - H(L_1)$），而最小作用原理 $\delta \int \Psi_f \, dt = 0$ 在所有尺度上成立。尺度间通过耦合动力学 $d\hat{G}_j/dt = f_j(\hat{G}_j) + \sum \kappa_{ij} g_{ij}$ 进行信息交互，其中向下因果（社会→神经，$\kappa_{S \to N} \approx 10^0$）远强于向上因果。
+- **跨尺度结构相容候选**: 不同尺度的 $\hat{G}_\theta$ 只有在具名尺度映射下满足 P3-Scale-01／T-Scale-02C1 时才获得局部可比性。旧 `\Delta S=H(L_0)-H(L_1)` 与普遍最小作用式不再承担证明；共同项只到选择—约束—可支付性语法。
 - **三项竞争动力学**: 主方程中的酉流项代表 $L_0$ 的自由展开趋势，$\hat{G}_\theta$ 锚定项代表算子的主动选择压力（将 $\rho$ 拉向 $\rho_{target}$），退相干项 $\mathcal{D}[\rho]$ 代表环境引起的信息丢失。三者的竞争平衡决定了 $L_1$ 的稳定性与可预测性。在被动选择退化形式（Cor-Master-01a）中，当约束梯度远大于算子锚定力时，系统进入约束主导的滑行模式。
 - **摩擦驱动的适应度优先机制**: 由于有限算子无法无损编码 $L_0$（$\Psi_f^{Truth} \gg \Psi_f^{Fitness}$），系统在演化上优先选择低摩擦可维持界面（适应度追踪），而非高保真真相重建。偏差-方差热力学（T-Scale-05）进一步表明，总维持成本中方差的边际代价远高于偏差，导致系统倾向”高偏差-低方差”的稳定对象表征。
 - **$\Psi_f$ 作为统一约束**: 本体论摩擦 $\Psi_f$ 贯穿所有机制，既作为 $\theta$ 演化的梯度信号驱动语义边界维持，又作为边界划定的成本项约束对象个体化，还作为适应度-真相权衡的判据。d 值在三个尺度上的不同现象学（量子相干性、生物关切、宇宙拓扑紧致度）均是 $\hat{G}_\theta$ 对抗 $\Psi_f$ 的最大带宽的投影实现。
@@ -522,7 +523,7 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 - **耦合驱动的周期化**: 孤立算子可随机间歇；但当多算子耦合时，下游需要预测上游的锚定窗口，预测成本与调度的时间熵率 $h[A]$ 成正比。当预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c = (C_{per}-C_{rand})/h_{rand}$ 时，周期性调度成为全局最优——这是从间歇到节律的相变。
 - **熵耗散作为独立约束**: 选择的不可逆性产生内部熵（$\dot{S}_{int}^{on} \ge k_BT \cdot \dot{I}_{created} \cdot \ln 2$），必须在"off"阶段通过有限带宽的热耦合通道排出。这给出 $\delta$ 的独立上界 $\delta_{max}^{entropy}$，不可通过增加 $E_{avail}$ 绕过。"off"阶段同时是熵导出窗口（有益）和噪声侵蚀窗口（有害，$S_{noise}$），二者的折中决定最优 $\tau_{off}^*$。高 d 系统因 $\dot{I}_{created}$ 更高而需要更长恢复时间——这是 SRT 对"为什么复杂意识有机体需要更多睡眠"的热力学解释。
 - **谱-热对冲**: Ax-Spec-01 赋予高 d 算子更宽的频谱通带，但 Rhythm-4 同时规定更宽的有效通带会抬高信息创造率与熵产生率，从而压低可持续占空比。结果不是”高 d = 永远更强”，而是”高 d = 更丰富但更难持续”。
-- **嵌套层级节律**: Ax-Scale-01 的跨尺度自相似保证选择逻辑在每一层不变，Rhythm-1 的预算超载定理保证每一层的有限算子必须间歇。当 $S_n$ 层的 on-phase 内部包含多个子目标且子层预算不足以密集锚定时，Rhythm-1 在子层递归触发，产生嵌于父节律 on-phase 内的子节律。频率严格分离（$\omega_{n-1} > \omega_n$），子节律振幅被父节律 on/off 门控——这正是 phase-amplitude coupling。嵌套深度由占空比下界与物理切换速率上限共同封顶。该机制解释了为什么意识系统呈现多层级嵌套振荡（gamma-in-theta-in-slow oscillation-in-sleep cycle-in-circadian），以及为什么麻醉/昏迷下这些层级同步坍缩。
+- **嵌套层级节律候选**: 在相邻尺度相容、子层物理嵌入父层 on-phase 且各层预算超载条件成立时，Rhythm-1 可递归产生子节律；PAC 与频率界是条件模型输出，不是跨尺度语法单独保证的普遍定理。
 
 ## 【理论边界/防误用声明】
 - 不采纳”适应度优先=真理无意义”的推论：SRT 主张的是资源约束下的近似策略，不是否定真值结构。

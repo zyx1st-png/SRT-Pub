@@ -92,6 +92,21 @@ $$
 
 **重要性**：疼痛可无苦难（reflex、depersonalization、某些麻醉态），苦难亦可无疼痛（空心感、意义崩解、T_dir 低迷、自我扭曲型苦难）。两者有耦合通路（躯体化、心身病），但不能互相还原。
 
+### §1.1 结构性损失压力：与 pain / distress / suffering 的对表（2026-08-11）
+
+> **层级**：P2 canonical interpretation / terminology crosswalk。本节落实 `Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md` G5-2 / G5-5 所要求的类型学对表；不修改 `Def-PAIN` 或 `Def-SUFFERING`，也不新增 P1 定理。
+
+G5-2 的「痛苦是具身位上的结构性损失压力」中，「痛苦」是一个跨文件的上位压力词，不等同于本文的 `pain` 或 `suffering` 定义。「结构性损失压力」指：已发生的损失、损失风险、维持失败或未来选择空间收缩，与一个具有真实 stakes 的具身承受位置发生耦合。它是 pain / distress / suffering 可能的上游条件，不是第三个 canonical 量。
+
+| 对象 | 在对表中的位置 | 不能推出 |
+|---|---|---|
+| structural loss pressure | 损失、威胁、维持失败或路径收缩与具身承受位置的关系性耦合 | 不自动构成 pain、suffering 或完整选择事件 |
+| pain | 结构性损失通过 `\theta_{somatic}` 躯体威胁通道被报告时的一种信号形式 | 不是所有损失压力的总称，也不充分构成 suffering |
+| distress | 领域层对急性调节、情感或行为负担的 proxy / bridge 读数 | 不是 canonical 身份判据，不与 `\Psi_f` 或 suffering 建立同一式 |
+| suffering | 稳定 ISP 对实际选择动力学与可用选择动力学失配的第一人称登记 | 不要求同时存在 pain；结构性遮蔽也可使损失存在而登记不成立 |
+
+G5-5 的「最低强制性选择压力」因此必须按最小口径读取：当结构性损失已与具身承受位置耦合时，系统对相关差异不再保持完全中性；它不保证一定出现 `Def-PAIN` 或 `Def-SUFFERING`，不保证完成真实选择，也不保证导向健康重组。
+
 ---
 
 ## §2. T-SUFF-1：苦难作为结构性登记
@@ -114,7 +129,7 @@ $$
 
 ### 与 P1-T06 的关系
 
-T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条件 4（re-selectable）。非 ISP 系统不产生 SRT 意义上的苦难，只产生躯体级伤害感受或功能误差。本文件因此不讨论植物、纯反射系统或尚未达到 σ_{sr}^{sub} 的过程。
+T-SUFF-1 严格依赖 P1-T06 Stable ISP 条件 2（perspective-bearing）与条件 4（continued-selectable）。这里要求同一历史承载过程继续面对 live candidates 并承担后果，不要求 21C B13 的 generative reselectability。非 ISP 系统不产生 SRT 意义上的苦难，只产生躯体级伤害感受或功能误差。本文件因此不讨论植物、纯反射系统或尚未达到 σ_{sr}^{sub} 的过程。
 
 ---
 
@@ -288,7 +303,7 @@ T-SUFF-5 的多主体结构基础由 `Core_Law/SRT_Collective_Selection.md`（`S
 - `\theta_{somatic}` 定义 → `Core/SRT_Core_01_Axioms.md` §θ 分解
 - `T_dir` / `T_dir` 价值遮蔽 → `_SRT_T_DIR_CANONICAL.md`
 - `\Psi_f_actual vs \Psi_f_felt` 分裂 → `_SRT_PSI_F_CANONICAL.md`
-- Stable ISP 四条件（perspective-bearing / re-selectable 为本文件关键依赖）→ `Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T06
+- Stable ISP 四条件（perspective-bearing / continued-selectable 为本文件关键依赖）→ `Core/SRT_Core_21b_Constitutive_Theorems.md` P1-T06；generative reselectability 非本定义前件
 
 ---
 

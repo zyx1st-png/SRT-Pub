@@ -3,7 +3,7 @@ id: HOOK-PH-IND03-SIMONDON-TRANSDUCTION-OPERATOR-STRUCTURE
 type: integration_hook
 status: active
 record_stage: pending
-integration_status: pending
+integration_status: partial
 canonical: false
 layer: operations
 epistemic_layer: bridge
@@ -22,14 +22,14 @@ landing_ledger:
     state: pending
     blocked_by: "Future choice-generation synthesis may add the distinction outcome selection / modulation / transductive restructuring and link H3/I5 comparison-scale rewriting; do not turn these local modes into new canonical stages."
   - target: "Core_Law/SRT_Individuation.md"
-    state: pending
-    blocked_by: "Future individuation hardening may use operation->structure->operation and internal/external/third-transduction as P3 process pressure; canonical/hybrid owner changes require a dedicated theory pass and edit-protocol review."
+    state: landed
+    anchor: "9. **generative reselectability 的操作化**"
   - target: "Core/SRT_Core_13a_Operator_Basics.md"
     state: pending
     blocked_by: "Future operator hardening may state that a current operator can be historically sedimented structure as well as current operation, but must preserve P0-04 origin-of-selectability exposure and current canonical operator definitions."
   - target: "Core/SRT_OPEN_TENSIONS.md"
-    state: pending
-    blocked_by: "Future tension review may register operator self-reselection, stake-space restructuring, and relation-of-relations bearer boundary as open P3 pressures; no new primitive or symbol is licensed now."
+    state: landed
+    anchor: "### Status Update (2026-08-11: generative selectability and non-preformation pressure)"
   - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
     state: pending
     blocked_by: "Future agency/subjecthood synthesis may connect dynamic bearer boundaries and self-modifying selection regimes to existing bearer/concern distinctions while keeping phenomenality separate."
@@ -131,7 +131,7 @@ boundary candidate != bearer theorem != phenomenality theorem
 
 Future operator hardening may add one explicit non-canonical-facing note:
 
-> A current `Ĝ_(θ_t)` can be read simultaneously as a structure sedimented from prior selection history and as an operation organizing the next manifestation. This does not derive the origin of selectability and does not identify `Ĝθ` with any one implementation such as normalization, categorization, modulation, or transduction.
+> A current `Ĝ_(θ_t)` can be read simultaneously as a structure sedimented from prior selection history and as an operation organizing the next manifestation. This is a post-primitive realization account: it neither derives nor replaces AM-A's P0 actualisation kernel, and it does not identify `Ĝθ` with any one implementation such as normalization, categorization, modulation, or transduction.
 
 This is especially useful for blocking the hylomorphic misreading:
 

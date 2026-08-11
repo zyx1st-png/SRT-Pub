@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-11
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-12
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-11
-source_commit: 849a5e63
-source_branch: claude/srt-consistency-decision-packet-2026-08-11
-source_dirty: false
-inputs_digest: 720d87a4698fa354
+generated: 2026-08-12
+source_commit: 13d31338
+source_branch: main
+source_dirty: true
+inputs_digest: db1ef99d1ec3ccef
 ---
 
 # SRT 物理领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: 720d87a4698fa354
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-11 |
-| 来源 commit | `849a5e63` |
-| 来源分支 | `claude/srt-consistency-decision-packet-2026-08-11` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-12 |
+| 来源 commit | `13d31338` |
+| 来源分支 | `main` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -68,38 +68,34 @@ inputs_digest: 720d87a4698fa354
 >   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
 > - **USAGE POLICY** — 由标注的治理文件授权的使用规则。
 
-### G1 — P1-T07 证明未闭合（严重度：高）
+### G1 — former P1-T07 已降阶；条件证明负担仍开放（严重度：高）
 
-**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）
+**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 former P1-T07 absorption remainder，及 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 的 conditional anti-closure candidate
 
 #### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-**审计自述，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
+**ST-A canonical 裁决，来自 `Core/SRT_Core_21b_Constitutive_Theorems.md`**：
 
-> **Status**: non-canonical Operations record. **Proof audit only.** It modifies no theorem, no axiom, no definition, no equation. It does not resolve the proof; it maps exactly where the current proof does and does not close, and hands options to a later controlled amendment PR. Prior Claude/ChatGPT statements about P1-T07 were treated as hypotheses; the only source of truth is `origin/main @ 14c0d7f8`. Archive/book files were read for context but are **not** used to establish anything about the canonical theorem.
+> **Decision record (ST-A, 2026-08-11)**: The former unconditional statement—"every stable ISP necessarily contains an anti-closure `ε` bias"—is no longer a P1 theorem. Its proof inferred cumulative absorption from a per-step nonzero closure probability without independently defining a neutral kernel, fixing the stability semantics, or proving that the neutral kernel reaches the absorbing state. `L_0` irreversibility alone does not supply those missing premises.
 
 **审计 1.3 修订的语义分层条款，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
 
 > (a) `τ<∞` verdicts stratified by semantics — on a realized terminating history only **S1 pathwise** stability fails; **S2** fails only if `P(τ<∞)>0`, **S3** only if `P(τ=∞)=0`; no unconditional *process-level* stable-ISP verdict before the S1/S2/S3 choice (fixed in §0 Q5, §8, Proof Gate)
 
-**审计 §0 第 5 问，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
-
-> 5. **What can P1-T07 prove at most?** Two things must be separated, and the first is **semantics-relative**, not process-unconditional. **(i) True and derivable, per level**: on any realized history with `τ<∞`, that history enters the absorbing `∅` and no further selection is possible — so **S1 (pathwise) stability fails on that history**. At the *process* level, **S2** stability fails only when `P(τ<∞)>0`, and **S3** stability fails only when `P(τ=∞)=0`. Before S1/S2/S3 is chosen, **no unconditional process-level stable-ISP verdict may be issued** from `τ<∞`. **(ii) NOT derivable as written**: *neutral `P` terminates a.s., therefore neutral `P` is not stable* — because a.s. termination of a neutral process is exactly what Step 3 fails to establish. "Positive termination probability" is also **not** unconditional (it needs positive hazard at a surviving step). (§4, §8)
-
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
-该定理 Proof Sketch 第 3 步（*neutral `P` ... cumulative probability tends toward 1*）以肯定句写成，正文未标注任何保留。上述审计判定恰恰是这一步不闭合：语料并未*确立*每步正 hazard，而且即使每步 hazard 为正也不蕴含 almost-sure 终止；`ε-neutral` 在语料中从未被形式定义；P1-T06 的 stable ISP 定义是非概率的，S1/S2/S3 随机语义尚未选定。
+ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只保留 realized history 到达吸收态后不能自行继续的 remainder，以及 P1-T06 continued selectability。neutral-kernel anti-closure 留在 P2/P3，仍须独立定义 neutral kernel、选择 S1/S2/S3 稳定语义，并声明环境、外部重置规则、终止条件与时间窗，再证明吸收或比较性 closure risk。
 
-另需注意：`Core/SRT_OPEN_TENSIONS.md` 目前**未登记**本缺口。
+该降阶与剩余证明负担已登记在 `Core/SRT_OPEN_TENSIONS.md`。
 
 #### USAGE POLICY — 使用规则
 
 *授权依据：`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8*
 
-- 不得把 P1-T07 当作已证 P1 定理引用。
+- 不得把 former P1-T07 当作已证 P1 定理引用；P1 引用仅限 absorption remainder。
+- Stable ISP 的 P1 最低条件是 continued selectability；generative reselectability 与 ISP-level anti-closure 按 P2/P3 conditional candidate 引用。
 - 关于 `τ<∞` 只能作**语义分层**的陈述：若某条 realized history 满足 `τ<∞`，可无条件断言的仅是**该历史上的 S1 / pathwise stability 失败**；process-level 的 S2 需 `P(τ<∞)>0`，S3 需 `P(τ=∞)=0`。**在 S1/S2/S3 语义未选定之前，不得据此推出无条件的 process-level 「not a stable ISP」。**
-- 不要假装 `ε-neutral` 有形式定义。
-- 「查过 `OPEN_TENSIONS` 没找到」**不**足以证明本命题已封口——该缺口尚未登记在那里。
+- 不要假装 `ε-neutral` 已有形式定义，也不要从 `ε_pg`、irreversibility、fixed point、metastability 或 `σ<1` 单独推出 anti-closure。
 
 
 ### G2 — `d`/`q`/`o` 三轴处于禁运状态（严重度：中）
@@ -316,7 +312,7 @@ When answering about SRT:
 
 ### 未收录支持文件
 
-**First Sources 点名、文件存在、但本包未收（15 个）**——回答涉及它们时本包不足以裁定：
+**First Sources 点名、文件存在、但本包未收（14 个）**——回答涉及它们时本包不足以裁定：
 
 - `CANONICAL_REGISTRY.md`
 - `Governance/SRT_CLAIM_LADDER.md`
@@ -332,7 +328,6 @@ When answering about SRT:
 - `_SRT_SYMBOL_TABLE.md`
 - `Core/SRT_Core_21_Formal_Axioms.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
-- `Core/SRT_OPEN_TENSIONS.md`
 
 **⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
@@ -340,7 +335,7 @@ When answering about SRT:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（84 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（83 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -387,7 +382,6 @@ When answering about SRT:
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
-- `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`
 - `Philosophy/01_PH_SS_Objection_Crosswalk.md`
 - `Philosophy/02_PH_SS_Hardening_Execution_Plan.md`
@@ -481,6 +475,9 @@ srt_physics_claim_status:
   default_role: "bridge / interpretation / pressure-test domain"
   not_definition_engine: true
   strongest_current_status: "P3 bridge with local P4 hypotheses and P5 speculative extensions"
+  physical_realisation: "PHR-A: interpretation-plural P3/P4 event audit; no interpretation-neutral universal mechanism"
+  realisation_audit: "non-equivalent candidates -> outcome-indexed physical record -> intervention-sensitive path efficacy -> future-access / return-cost change"
+  single_proxy_insufficient: "decoherence, dissipation, fixed point, POVM conditional state, or stable record alone is insufficient"
   collapse_language: "collapse-family default; must mark collapse-dependent passages"
   mwi_language: "compatibility / translation only; no global collapse"
   discrete_time: "hypothesis / bridge, not derived theorem"
@@ -537,6 +534,36 @@ srt_physics_claim_status:
 > MWI proves SRT, or SRT refutes MWI by definition.
 
 **Guardrail**: Do not mix collapse and MWI language in the same argument paragraph without explicit labels.
+
+---
+
+### 2.2a Physical realisation under PHR-A
+
+**Author decision**: `PHR-A — Interpretation-Plural Realisation Audit`（2026-08-11）.
+
+**Allowed common audit claim**:
+
+> Within a predeclared physical model, event unit, system boundary, and interpretation, a process may be registered as a P3/P4 physical realisation-event candidate when non-equivalent candidates enter the process, one outcome acquires an outcome-indexed physical record, that record has intervention-sensitive path efficacy, and the result changes future accessibility, transition probabilities, thresholds, or return cost.
+
+This is a domain audit for a candidate implementation of the AM-A primitive actualisation kernel. It is not the cause, derivation, or definition of that P0 kernel.
+
+| Interpretation index | Allowed reading | Forbidden slide |
+|---|---|---|
+| collapse-family | an exclusive outcome-anchoring candidate, explicitly marked `[collapse-dependent]` | presenting global collapse as interpretation-neutral physics |
+| Everett / MWI | branch-relative record and fact formation | saying the global wavefunction selected or deleted all other branches |
+| RQM / frame-relative | relation- or frame-indexed fact formation | silently upgrading a relational fact into a global one |
+| operational / instrument | outcome registration, conditional state, record channel, and downstream efficacy | treating formal conditioning alone as ontic occurrence |
+
+**Common evidence floor**:
+
+1. Freeze the event unit, system boundary, and candidate differences before the audit.
+2. Identify an outcome-indexed physical record, not only a researcher's later grouping.
+3. Show by intervention that the record changes later physical transition or resource-routing behavior.
+4. Show that the prior result changes later accessibility, probability, threshold, or return cost at the claimed level.
+
+**Single-proxy guardrail**: decoherence, dissipation, entropy production, Landauer cost, fixed-point stability, a POVM conditional state, or a durable／redundant record may contribute evidence or stabilization. None is sufficient by itself for physical realisation.
+
+**Consciousness boundary**: this audit does not require a human or conscious observer, but passing it does not establish a proxy subject, agency, consciousness, freedom, or probability-bias capacity.
 
 ---
 
@@ -663,6 +690,8 @@ srt_physics_claim_status:
 |---|---|---|
 | "SRT solves the measurement problem" | Overstates physics status | "SRT offers a collapse-family bridge reading of measurement as selection." |
 | "wavefunction collapse is Ghost Operator" | Collapses formalism into identity claim | "collapse-family language can be translated into a `G_hat_theta` anchoring schema." |
+| "decoherence / a stable record is actualisation" | Confuses evidence or stabilization with occurrence | "under a declared interpretation, outcome-indexed record plus intervention-sensitive path and history effects supports a P3/P4 realisation candidate." |
+| "the POVM outcome state proves that result occurred" | Confuses formal conditioning with physical occurrence | "the instrument defines outcome probabilities and conditional states; occurrence additionally requires a physical record and downstream efficacy at the audited boundary." |
 | "time is discrete in SRT" | Treats hypothesis as result | "SRT supports a selection-index reading of time; physical discreteness remains a hypothesis." |
 | "gravity is Psi_f" | Tensor-level overclaim | "gravity and physical `Psi_f` proxies may be weakly compatible as constraint structures." |
 | "Psi_f is Fisher metric" | Scalar/tensor identity overclaim | "Fisher–Rao geometry is a local information-geometric projection / proxy for `Psi_f` under stated model conditions." |
@@ -969,6 +998,8 @@ When in doubt, cross-check:
 > **定位**：本文件是 `SRT_Quant_00_Intro.md` 的紧凑主干版。  
 > **用途**：作为 SRT 量子线的总入口，快速说明为什么量子力学需要 SRT 式“选择论诠释”。  
 > **关系**：不替代原文；原文保留双缝、延迟选择、薛定谔猫、量子橡皮擦与 Bell 实验的完整重写。
+>
+> **PHR-A（2026-08-11）**：量子层采用 interpretation-plural realisation audit。`\hat G_\theta` 是 AM-A 的形式角色载体；collapse-family、Everett／branch-relative 与 operational／instrument 读法必须分开。退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项都不充分。
 
 ## 1. 核心问题
 
@@ -977,9 +1008,9 @@ When in doubt, cross-check:
 > **量子力学最难的问题，不是公式不够准，而是我们不知道“坍缩何时、为何、按什么定义发生”。**
 
 SRT 的压缩回答是：
-- 波函数 = `L_0` 的可能性结构
-- 坍缩 = `\hat G_\theta` 执行选择
-- 测量结果 = `L_1` 被锚定后的显现现实
+- 量子形式提供候选、概率与条件态结构
+- 物理 realization candidate 还需要 outcome-indexed record、路径效力与历史效力
+- collapse-family、Everett 与 operational 口径对“结果发生”承担不同本体承诺
 
 ---
 
@@ -991,9 +1022,9 @@ SRT 的压缩回答是：
 \]
 
 最压缩句子：
-> **测量不是单纯更新知识，而是在本体论上把未定可能性锚定成确定事实。**
+> **在 collapse-family 中，测量可被翻译为排他结果锚定；在 Everett 中是 branch-relative fact formation；operationally 则是 outcome registration。**
 
-这一步是整个 SRT 量子线的入口。
+三种读法共享事件审计，不共享一个已经证明的全局坍缩机制。`\hat G_\theta` 形式化转化角色，不解释具体结果为何发生。
 
 ### 2.2 Path-Measure View
 \[
@@ -1001,8 +1032,8 @@ P(k) \propto \int_{\Gamma_k} e^{-\Phi[\gamma]}\,\mathcal D\gamma
 \]
 
 含义：
-- 坍缩不是凭空挑一个结果
-- 而是在可持续路径中完成加权取值
+- 公式可以表达候选路径的相对权重或条件取值
+- 权重、积分或条件态本身不等于结果已经发生
 
 ---
 
@@ -1025,16 +1056,17 @@ SRT 的改写是：
 
 ## 4. 什么才算“测量”
 
-### 4.1 Objective Measurement Criterion
-一个过程成为测量，至少要满足：
-- 纠缠被打破
-- 经典信息被记录
-- 不可逆性达成
+### 4.1 Bounded Physical Realisation Audit
+在预先声明模型、事件单元、系统边界与诠释后，realisation candidate 至少要在同一事件链上给出：
+- 真实进入过程的非等价候选
+- outcome-indexed 物理记录
+- 对记录做干预会改变后续物理路径
+- 结果改变未来可达性、概率、门槛或返回成本
 
 最压缩意义：
-> **测量不需要神秘意识插手，但需要系统真正完成从可能性到稳定结果的跨越。**
+> **事件审计不要求意识，但审计通过也不证明主体或意识。**
 
-这让 SRT 可以对主流诠释最头痛的问题之一给出客观判据。
+退相干、信息增加、耗散、固定点或稳定／冗余记录可以提供证据或稳定化，任何一项都不是充分条件。
 
 ---
 
@@ -1082,17 +1114,12 @@ P_{history} \propto D_p\cdot(\Delta t)^{-1}
 
 ## 7. 语义完备性
 
-### 7.1 Basic vs Total Collapse
-\[
-\text{Collapse}_{basic}=\hat G_{phys}[L_0\to L_1]
-\]
-\[
-\text{Collapse}_{total}=\hat G_{phys}[L_0\to L_1]\otimes \hat G_{sem}[L_0\to L_1]
-\]
+### 7.1 Physical Event vs Semantic Anchoring
 
-SRT 在这里做的区分非常关键：
-- 物理坍缩本身足够形成基本现实
-- 但完整历史重量还需要语义锚定
+SRT 在这里区分：
+- 非语义物理过程可以形成 PHR-A 的 event candidate
+- 语义系统随后可以对该记录赋予不同的意义和 `L_2` 历史重量
+- 退相干本身既不等于物理 actualisation，也不等于语义落地
 
 最压缩解释：
 > **一个事件可以物理上已经发生，但在意义层面仍未完全“落地”。**
@@ -1102,13 +1129,13 @@ SRT 在这里做的区分非常关键：
 ## 8. 为什么现有量子诠释都不够
 
 这篇的总括立场是：
-- Copenhagen 说了测量重要，但没定义测量
-- Many-Worlds 取消坍缩，但本体开销过大
-- QBism 抓住了主体性，却解释不了稳定共识
-- Decoherence 很关键，但不足以解释“为什么是这个结果”
+- collapse-family 提供排他结果的实现候选
+- Everett 提供 branch-relative fact formation
+- RQM / QBism 强调位置、关系或代理索引
+- decoherence 解释相干抑制与稳定化的一部分，不独立裁决结果本体
 
-SRT 的压缩优势在于：
-> **把测量、坍缩、纠缠、经典化与历史形成，统一写成 `\hat G[L_0 \to L_1]` 的选择动力学。**
+SRT 的压缩增量在于：
+> **让不同诠释共享一套有边界的事件审计语法，同时不抹平它们的本体差异。**
 
 ---
 
@@ -1116,11 +1143,11 @@ SRT 的压缩优势在于：
 
 `Quant 00 Intro` 可以压缩成五句话：
 
-1. **量子测量问题的核心，是缺少对“选择何时发生”的本体定义。**
-2. **SRT 将坍缩重写为 `\hat G` 把 `L_0` 锚定成 `L_1` 的选择行为。**
+1. **量子形式中的概率、条件态与退相干，不自动等于一个结果已经发生。**
+2. **`\hat G` 只承载 AM-A 转化的形式角色；物理实现必须按诠释索引。**
 3. **不确定性、纠缠与非定域性都可被理解为有限算子面对未切分 `L_0` 时的结构后果。**
 4. **历史不是预存实体，而是当前锚定时对过去路径的回投。**
-5. **SRT 的价值，在于把多种量子诠释压回一套统一的选择语法。**
+5. **共同事件审计核是 outcome record、路径效力与未来可达性改变，不是某个单项物理代理。**
 
 ---
 
@@ -1160,17 +1187,19 @@ SRT 的压缩优势在于：
 > **定位**：本文件是 `SRT_Quant_01_Selection.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 对量子测量、选择、概率流与非定域性的最短论证骨架。  
 > **关系**：不替代原文；原文保留详细量子诠释整合、概率流机制与实验预测。
+>
+> **PHR-A（2026-08-11）**：量子测量采用 interpretation-plural P3/P4 event audit。`\hat G_\theta` 是 AM-A 的形式角色载体；POVM 条件态不等于结果已发生；退相干、耗散、固定点或稳定记录中的任一项都不充分。
 
 ## 1. 核心问题
 
 这篇处理的是 SRT 在量子层面的最关键问题：
 
-> **量子测量到底是什么？以及它为什么不是“观察者魔法”，而是一次选择事件？**
+> **哪些物理证据允许我们把一个过程登记为 AM-A 的 physical realisation candidate？**
 
 SRT 的压缩回答是：
-- 测量 = 选择
-- 坍缩 = `L_0 -> L_1` 的锚定
-- 观察者不是神秘人类，而是满足条件的 `\hat G` 结构
+- 先声明模型、事件单元、系统边界与量子诠释
+- 再检验 outcome-indexed record、路径效力与历史效力
+- collapse-family、Everett 与 operational 口径共享审计，不共享一个已证的全局坍缩机制
 
 ---
 
@@ -1181,9 +1210,9 @@ SRT 的压缩回答是：
 \hat{G}_\theta: \mathcal{H} \to \mathcal{P}(\mathcal{H})
 \]
 
-SRT 把量子测量理解为：
-- 潜在态空间中的一个非幺正取值过程
-- 将可能性压成可显现的指针态/结果态
+SRT 把量子 instrument 读作：
+- 候选结果、概率与条件态的形式载体
+- PHR-A 事件审计的一个输入，而不是结果发生的充分证明
 
 在密度矩阵表达下：
 \[
@@ -1191,29 +1220,22 @@ p_k=\text{Tr}(M_k \rho M_k^\dagger),\qquad \rho_k=\frac{M_k \rho M_k^\dagger}{p_
 \]
 
 最压缩句子：
-> **测量不是额外神秘事件，而是选择算子对量子可能性的取值。**
+> **`\hat G_\theta` 标记转化角色；POVM 给出条件更新；物理发生还需要 outcome record、路径效力与历史效力。**
 >
-> **Bridge Clarification**: 这个 `Selection Operator` 不是脱离热力学的纯形式箭头；它在信息热力学中的等价表述，正是 `Generalized Second Law` 与 Landauer 极限对 `L_0 -> L_1` 取值成本的约束。也就是说，选择算子给出“谁在取值”，而广义第二定律给出“这次取值为什么必须付出不可逆代价”。
+> **Cost boundary**: Generalized Second Law、Landauer cost、耗散或 `\Psi_f` proxy 可以约束实现和记录稳定化；它们不说明“谁在取值”，也不造成 primitive actualisation。
 
-### 2.2 Measurement Event Criterion
-SRT 试图把“什么算测量”客观化为三条件：
-- 纠缠熵减少
-- 经典信息增加
-- 不可逆性达成
+### 2.2 Bounded Physical Realisation Audit
+PHR-A 使用四项有界审计：
+- 真实进入过程的非等价候选
+- outcome-indexed physical record
+- 可干预的 downstream path efficacy
+- 未来可达性、概率、门槛或返回成本改变
 
 压缩含义：
-> **测量不依赖“人类意识”参与，而依赖系统是否完成了从关联到确定性的热力学跨越。**
+> **审计不需要意识，但通过审计也不证明主体或意识。**
 
-### 2.3 Proxy Observer
-任何满足测量条件的系统都可作为：
-\[
-\hat{G}_{proxy}
-\]
-
-所以：
-- 探测器可以测量
-- 装置可以测量
-- 测量不需要神秘的人类灵魂注入
+### 2.3 Physical Measurement Interface
+历史符号 `\hat{G}_{proxy}` 只允许表示把候选差异耦合到记录通道的 physical measurement interface。装置可以形成测量记录；这不把装置升级为 proxy subject、agent 或 conscious observer。
 
 ---
 
@@ -1297,7 +1319,7 @@ SRT 的回答是否定的。
 
 SRT 对退相干的最关键判断是：
 
-> **退相干是必要的，但不足以解释为什么是这个结果。**
+> **退相干可以支持相干抑制与记录稳定化，但单独不能裁决全局坍缩、branch-relative fact formation 与 operational update。**
 
 它能解释：
 - 为什么某些态被偏好
@@ -1306,8 +1328,7 @@ SRT 对退相干的最关键判断是：
 但它不能独自解释：
 - 为什么最后是特定结果被实现
 
-SRT 在这里引入 `\hat G_\theta`，认为最终仍需要：
-> **一次真正的选择承诺。**
+PHR-A 不再用 `\hat G_\theta` 填补一个“最终决定机制”。它要求实际审计 outcome record 是否获得路径效力与历史效力，并把本体读法交给已声明的诠释。
 
 ---
 
@@ -1335,8 +1356,8 @@ SRT 试图统一：
 - Wheeler 的信息现实论
 - 退相干理论的环境稳定化
 
-其最压缩统一句是：
-> **观察者不是外加的神秘主体，而是执行自由能最小化、完成 `L_0 -> L_1` 取值的结构体。**
+其最压缩兼容句是：
+> **物理测量描述必须固定位置、边界、interaction 与 record channel；这些条件定义审计位置，不构成一个先在主体。**
 
 ---
 
@@ -1344,8 +1365,8 @@ SRT 试图统一：
 
 `Quant 01` 可以压缩成五句话：
 
-1. **量子测量就是选择，而不是额外神秘坍缩。**
-2. **测量的客观条件是信息与不可逆性的达成，不依赖人类意识。**
+1. **量子 instrument 的概率和条件态不自动等于结果已经发生。**
+2. **物理 realization candidate 需要 outcome record、路径效力与历史效力；不要求意识。**
 3. **现实内容来自历史选择的累积，而不是预先给定的实体清单。**
 4. **SRT 若允许心灵影响物质，也只是通过微观概率流偏置，而不是新力。**
 5. **纠缠与非定域性来自 `L_0` 未被彻底分解，而非宇宙违反理性。**

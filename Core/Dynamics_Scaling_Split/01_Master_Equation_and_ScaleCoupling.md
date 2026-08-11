@@ -124,35 +124,27 @@ $$F_{proxy} \approx F_{closure} - d_{\text{stable}} \cdot U_{\text{incorp}} \qua
 
 ---
 
-## §2. 跨尺度同构:从量子到社会的统一语法
+## §2. 跨尺度结构相容候选：从量子到社会的条件接口
 
-### 2.1 自相似定理的证明要点
+### 2.1 自相似候选的证明审计
 
 #### 2.1.1 主张
 
-$$\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}$$
+跨尺度选择语法的当前强主张是一个 P3 候选，不是已证明的定理。一般接口采用：
 
-**解释**: 在尺度变换$\Lambda$下,算子保持**共轭不变性**。
+$$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\lambda$$
 
-#### 2.1.2 证明草图
+它要求具名的尺度状态空间、粗粒化映射、保留观测量、比较范数与容差。旧式 $\hat{G}_{S_2}=\Lambda\circ\hat{G}_{S_1}\circ\Lambda^{-1}$ 只在 $\Lambda$ 是可逆表征变换时才是定义良好的严格共轭候选；不得把通常的多对一粗粒化同时写成可逆映射。
 
-**步骤1**: 定义尺度变换
-$$\Lambda: L_0^{S_1} \to L_0^{S_2} \quad (\text{粗粒化映射})$$
+#### 2.1.2 旧证明撤回
 
-**步骤2**: 选择的本质 = 熵减
-$$\Delta S = H(L_0) - H(L_1)$$
+原四步证明不成立：PC-A／EX-A 不为 $L_0^{abs}$ 定义全局 $H(L_0)$；粗粒化熵式不是无条件恒等式；`\delta\int\Psi_f dt=0` 未被证明为所有尺度共同满足；而可比较的熵变化也不推出动力学交换或严格共轭。
 
-**步骤3**: 熵在粗粒化下的行为
-$$H(\Lambda[L_0]) = H(L_0) - I_{\text{coarse-grain}}$$
-
-**步骤4**: 最小作用原理
-$$\delta \int \Psi_f \, dt = 0 \quad \text{(所有尺度)}$$
-
-因此功能形式不变 (自相似性)。■
+因此旧 `\Delta S=H(L_0)-H(L_1)` 与普遍最小作用式不再承担跨尺度证明。当前只保留 P3-Scale-01／T-Scale-02C1 的条件接口，是否满足须逐模型给出映射与误差证据。
 
 ---
 
-### 2.1a 跨尺度同构的反泛心论澄清
+### 2.1a 跨尺度结构相容候选的反泛心论澄清
 
 SRT 使用同一个参数 d 描述量子、生物和宇宙三个尺度的选择动力学，这容易产生一个严重误读：认为 SRT 主张"宇宙有意识"或"粒子有关切"，即泛心论（Panpsychism）。
 
@@ -195,6 +187,26 @@ $$\text{Consciousness} \iff \underbrace{\Psi_f > 0}_{\text{具身摩擦成本}} 
 ---
 
 ### 2.2 三尺度映射的具体实例
+
+#### 2.2.0 P3-Scale-NB1：神经归一化 → 行为选择的有界合同
+
+这是 P3-Scale-01 的首个有界实例，不是跨尺度同一性证明。对一个具名任务，声明神经候选空间 `X_N`、除法归一化模型 `N_η:X_N→R_N`、任务候选空间 `X_B`、候选身份映射 `π_X:X_N→X_B`、冻结的神经读出 `π_R:R_N→Δ(A)`、行为模型 `B_φ:X_B→Δ(A)`、比较距离 `D` 与容差 `ε_NB`。在 held-out 条件 `\mathcal T_{test}` 上检验：
+
+\[
+\mathcal E_{NB}
+=
+\sup_{x\in\mathcal T_{test}}
+D\!\left(\pi_R[N_\eta(x)],\,B_\phi[\pi_X(x)]\right)
+\leq \varepsilon_{NB}.
+\]
+
+**防循环门**：`η` 主要从神经数据估计；`π_X`、`π_R`、`D`、`ε_NB`、训练／测试分割与 rival 集合须在测试前冻结；还必须检验神经来源预测对观察行为分布的 held-out 误差，而不能只让两个自由拟合模型互相接近。
+
+**通过条件**：残差过门、相对不含归一化的最佳 rival 有预声明判别增益、具名神经干预带来预测方向的行为变化、读出不需逐条件任意改写。任一条件失败，只撤回该任务上的 neural-to-behavioral bridge。
+
+**事件边界**：`π_R[N_η(x)]` 是选择倾向分布，不是一次实际选择事件。若要输出离散行为，还须另加阈值／证据累积／采样规则与运动执行门；即使预测通过，也不推出 P0 actualisation、agency、subjecthood 或 consciousness。
+
+* **Cross-ref**: `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-03`; `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`; `Operations/SRT_NEURAL_NORMALIZATION_BEHAVIORAL_SELECTION_FLOOR_AUDIT_2026-08-12.md`.
 
 #### 2.2.1 量子 → 神经
 

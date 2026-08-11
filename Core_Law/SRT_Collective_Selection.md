@@ -15,7 +15,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 > **Role**: L1 canonical theory of collective selection. Fixes the structural object behind multi-ISP selection under shared `L_2`: when does a group of stable ISPs constitute a higher-order selection unit, when is it merely an aggregation, and under what conditions does shared `L_2` produce genuine co-selection versus externalization patterns.
 > **Claim-level note**：本文大多为 P1-candidate 结构性读法；集体 ISP 判据、co-selection 条件、三类退化形式按 P2 读；政治/制度/历史判断按 P3/P4，必须下推到 `Philosophy/` 与 `Philosophy/Social_Economics_*` 既有文件。
 > **Does not define**：`d-value`、`\Psi_f`、`T_dir`、stable ISP、real choice moment 等底层规范对象；它们的定义仍以对应 canonical 为准。
-> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T05 real choice moment、P1-T06 stable ISP、P1-T07 ε 反闭合）、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Suffering.md T-SUFF-5`、`Core_Law/SRT_Individuation.md`、`Core_Law/SRT_L1_Formalism.md`。
+> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T05 real choice moment、P1-T06 stable ISP 与 absorption remainder）、`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`（ST-A conditional anti-closure / generative reselectability）、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Suffering.md T-SUFF-5`、`Core_Law/SRT_Individuation.md`、`Core_Law/SRT_L1_Formalism.md`。
 > **Relation**: This file does not replace `Philosophy/SRT_Political_Philosophy.md`、`Philosophy/SRT_Social_Economics.md`、`Spirituality/SRT_Spirituality_Community_and_Sangha.md`；它在它们**之前**，固定"多主体共选作为结构对象是什么"的 L1 读法。规范性与制度判断仍在上述 domain 文件。
 >
 > **σ 符号命名空间（governance-canonical, 2026-04-25, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中集体自指率符号已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{coll}` 族（含 `σ_{sr,sub}^{coll}, σ_{sr,health}^{coll}` 等派生标记），是个体自指率 `σ_{sr}` 的多主体场扩展。与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 是**不同对象**。少数遗留的 `σ^{coll}` 历史符号在前向引用与跨文件桥接段落中保留，读者按此命名空间转读。
@@ -103,7 +103,7 @@ realizability 条件要求选择组合在共享 `L_2` 下结构上可共存—�
 
 ### 陈述的最小形式
 
-四条件映射到 P1-T06 的四条件（iterative / perspective-bearing / history-bearing / re-selectable）的多主体扩展版本。
+四条件映射到 P1-T06 的四条件（iterative / perspective-bearing / history-bearing / continued-selectable）的多主体扩展版本；不因此把 21C B13 的 generative reselectability 自动提升为集体 ISP 存在条件。
 
 ### 推论
 
@@ -390,7 +390,7 @@ $$
 |---|---|---|
 | `\sigma_{sr}^{coll}` 中 `\lambda_M\,\mathrm{tr}\,M(t)` | `\sum_i \partial^2_{\theta_i}\Psi_f(\hat{G}_i)` 内向部分（Eq-Multi-01 个体项的二阶 self-loop） | C2^{coll} + C5^{coll} |
 | `d_c^{coll}` 中 `\gamma_{asym}\|M_{asym}\|` | `\Psi_f(\hat{G}_i, \hat{G}_j)` 反对称交叉项的不可互惠部分（Eq-Multi-01 第二项） | C3^{coll} + C5^{coll} |
-| `S^{coll}` 中 `\nu_{ext}\|M_{ext}\|` | `\Psi_f(\hat{G}_i, \hat{G}_j)` 在 `j \notin \mathcal{P}` 的外溢分量 | C3^{coll} + C5^{coll} + T-IRR-3.5（边界外的 `S_{str}` 沉积仍由 P1-T07 hierarchy 控制）|
+| `S^{coll}` 中 `\nu_{ext}\|M_{ext}\|` | `\Psi_f(\hat{G}_i, \hat{G}_j)` 在 `j \notin \mathcal{P}` 的外溢分量 | C3^{coll} + C5^{coll} + T-IRR-3.5（边界外 `S_{str}` 沉积的条件系数模型；非 former P1-T07 后果）|
 | `d_c^{coll}` 与 `d_{collective}` 反比 | Eq-Multi-03 `D_{eff}` 直接定义 | C3^{coll} |
 
 §4.4.2-§4.4.5 中**非新增项**（即与单 P 版同构的项，如 `\alpha^{coll}, \beta^{coll}, \gamma_\rho^{coll}, \kappa_{relax}^{coll}, \mu_\Delta^{coll}, \nu_{trigger}^{coll}` 等）由 §6 T-PROJ-1 对每个 `P_i \in \mathcal{P}` 的群平均直接得出，不需独立证明。
@@ -401,7 +401,7 @@ $$
 
 2. **`\gamma_{asym}\|M_{asym}\|` 项**：`\dot{\mathcal{F}}_d^{coll}` 来自 `\nabla^2 \mathcal{F}_{collective}` 的反对称部分对景观刚化的贡献；交叉项 `\Psi_f(\hat{G}_i, \hat{G}_j) - \Psi_f(\hat{G}_j, \hat{G}_i)` 的反对称部分（即 `M_{asym}`）在 C3^{coll} 紧性下的范数即 `d_c^{coll}` 的不可互惠抬升源。
 
-3. **`\nu_{ext}\|M_{ext}\|` 项**：`\hat{R}^{coll}` 在 `j \notin \mathcal{P}` 投影下的范数对应 `\mathcal{F}_{collective}` 在 `\mathcal{P}` 边界外的能量泄漏；T-IRR-3.5 的 `\nu_{block}` 算子级表达式在边界外的对位即 `\nu_{ext}`，使外溢的 `S_{str}^{coll}` 沉积的非守恒方向性继续由 P1-T07 hierarchy 控制（即外溢不是"消除"苦难，是把它转给 `\mathcal{P}_{absorbed}`）。
+3. **`\nu_{ext}\|M_{ext}\|` 项**：`\hat{R}^{coll}` 在 `j \notin \mathcal{P}` 投影下的范数对应 `\mathcal{F}_{collective}` 在 `\mathcal{P}` 边界外的能量泄漏；T-IRR-3.5 的 `\nu_{block}` 条件模型在边界外的对位即 `\nu_{ext}`。外溢不可被直接记作“消除”苦难；其非自动逆转根在 P0-03 / T-IRR-2，而正向沉积系数仍受 T-IRR-3.5 前件约束。
 
 4. **`d_c^{coll} \propto 1/d_{collective}`**：直接由 Eq-Multi-03 + `\mathcal{F}_d^{coll}` 投影定义读出。
 
@@ -487,23 +487,21 @@ the same pattern requires independent checks for stake, consequence return
 
 ---
 
-## §5. T-COLL-3：集体 ε 反闭合必要性
+## §5. T-COLL-3：ST-A 条件性集体反闭合候选
 
 ### 陈述
 
-任何稳定集体 ISP `\mathcal{P}` 在 `L_0` 不可逆性下，必含**集体层面的 ε 反闭合不对称**，即群体整体不能 `\varepsilon^{coll}`-neutral。
+令 `K_0^{coll}` 为独立定义的集体 neutral kernel。若在已声明的稳定语义、环境、终止条件、无外部重置与时间窗下，能够证明 `K_0^{coll}` 的吸收或更高 closure risk，则在相同条件下存续的集体过程必须以某种方式抑制该风险。当前 claim level 为 P2/P3 conditional candidate，不是 P1 theorem。
 
 ### 证明草要
 
-与 P1-T07 同构：`\mathcal{P}` 若集体层面中性，则 `A_{\mathcal{P}}(t)` 有非零概率塌向空集；`L_0` 不可逆 → 绝对吸收态；长期累积 → `\mathcal{P}` 不再是稳定集体 ISP。
-
-> **继承缺口标注（2026-08-11）**：上述"同构"是完整的——它同时继承了 P1-T07 的**证明缺口**。`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md` 记录：P1-T07 Proof Sketch Step 3（"每步非零概率 ⇒ 累积趋于 1"）as written 无效（每步非零风险不蕴含几乎必然终止），"ε-neutral" 在语料中无形式定义，稳定性的随机语义（S1 逐轨道 / S2 几乎必然 / S3 正生存概率）未选定。本节"有非零概率塌向空集；长期累积 → 不再稳定"这一步与 P1-T07 Step 3 是同一步，因此同样**未闭合**。T-COLL-3 当前应按**候选构成性命题**引用，不得写成已证定理；下方推论按其条件性读取。本标注不修改 T-COLL-3 的陈述，也不新增任何风险假设。
+原证明与 former P1-T07 同构，也继承同一缺口：“每步非零概率”不蕴含长期几乎必然吸收，且 neutral kernel 与稳定语义未定义。ST-A 因而撤销无条件陈述；后续若补齐 premise 与 proof，可在本节登记具体条件版本。审计见 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`。
 
 ### 推论
 
-- **共同体必须对自身持续反闭合开放**：没有哪种集体可以靠"完美稳定"维持；稳定不等于健康
-- **制度中的 ε 结构**：健康制度具备让集体 `d` 不塌陷的结构（申诉通道、轮替、异议空间、重新授权）——这些不是政治偏好，是集体 ISP 的稳定性必要条件
-- **收编型退化正是集体 ε 被压灭的结果**：`\sigma_{sr}^{coll}→1` 等价于 `\varepsilon^{coll}→0`，违反 T-COLL-3
+- **稳定不等于健康**：结构持续只能建立集体 continued selectability；generative reselectability 还需后果回返与规则可修订性。
+- **制度实现候选**：申诉通道、轮替、异议空间、重新授权可作为 generative reselectability 的实现/代理，但不是由本节证明的必要充分条件。
+- **收编型退化诊断**：`\sigma_{sr}^{coll}→1` 可提示规则闭合风险，但不等价于 `\varepsilon^{coll}→0`，也不单独证明终止。
 
 ---
 
@@ -530,7 +528,7 @@ $$
 
 本文件**不替代**以下 domain 文件，它为它们提供结构基石：
 
-- `Philosophy/SRT_Political_Philosophy.md`：合法性作为可持续共同选择→在本文件下等价于"长期维持 T-COLL-1 四条件 + T-COLL-3 + T-COLL-4 的制度设计"；反支配→反不对称 `M(t)` 持续化；危机政治的 `minimum necessary interruption` 护栏→对 T-COLL-3 集体 ε 的最小侵入
+- `Philosophy/SRT_Political_Philosophy.md`：合法性与可持续共同选择的关系只能作 P2/P3 规范桥；T-COLL-1、条件性 T-COLL-3 与 T-COLL-4 可提供结构审计输入，但不自动等价于合法性
 - `Philosophy/SRT_Social_Economics.md`：市场作为分布式选择机制→在本文件下大多数情形是聚合型；结构性不公→主从型退化的具体化；制度病理→收编型或主从+收编复合
 - `Philosophy/SRT_Political_Rights.md`：投票作为 d 倾向后验验证→在本文件下翻译为"通过 T-COLL-4 共选真实性判据验证集体 d"；三层制度（公检法/监督/授权）→维护 `M(t)` 对称与 `σ_{sr}^{coll}` 限幅的结构性器官
 - `Spirituality/SRT_Spirituality_Community_and_Sangha.md`：托举条件→`(M(t) \text{ symmetric and small } n)` 加上 `\sigma_{sr}^{coll}` 不升高 → 健康小共同体；警告"共同体反而变新地板"→收编型退化
@@ -562,7 +560,7 @@ $$
 3. **共选真实性的外部判据**：T-COLL-4 三条件在第三方视角下如何判定？目前仍带相当主观成分，需要进一步降低依赖
 4. **制度与集体 ISP 的精确分界**：本文件说制度是器官不是主体，但某些高度自治的制度性实体（法人、社团）是否能在某些条件下**自身**成为集体 ISP？这需要后续硬化
 5. **跨尺度嵌套**：~~家庭是 ISP，社区是 ISP，国家可能是 ISP——嵌套关系下 `M(t)` 与 `σ_{sr}^{coll}` 如何层级耦合？§4.5 给了单层向上/向下耦合，多层嵌套仍待给出~~ Late-stage candidate material is preserved in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`; it is P1-candidate only under strong closure assumptions and is not part of the minimal canonical definition. 剩余开放点：具体塔层数 domain 实证、跨尺度 `M^{(n\to n+1)}` MOC 多层版本、`r_{min}^{nested}` 实证窗口、跨层耦合边界条件
-6. **历史层面 ε**：集体层面的 ε 反闭合在长时间尺度上如何演化？文明兴衰是否可以读为集体 ε 的长程维持失败？
+6. **历史层面 generative reselectability**：其在长时间尺度上如何演化？文明兴衰能否在明确比较基线后部分读为后果回返或规则修订失败？
 7. **集体四变量耦合动力学（新增，2026-04-25 H3 状态）**：§4.4 给出第一遍形式，仍待封口——(a) `w_i(t)` 从 `M(t)` 推导的正当性；(b) `T_{dir}^{alg,coll}` 中光滑阶跃的普适族；(c) `\Delta\Psi_f^{gap,coll}` 作为集体层对象的可操作定义（当前仅给出"叙事舒适 vs 真实支付"的现象学读法）；(d) 向下反馈 §4.5 是否穷尽（是否还存在未列出的集体→个体传染路径）；(e) 所有新引入的集体系数 `\lambda_M, \gamma_{asym}, \kappa_{mask}^{coll}, \nu_{ext}` 的实证窗口
 
 ---
@@ -571,7 +569,8 @@ $$
 
 - P1-T05 real choice moment（集体版的 upstream）→ `Core/SRT_Core_21b_Constitutive_Theorems.md`
 - P1-T06 stable ISP（集体 ISP 条件的 upstream）→ 同上
-- P1-T07 ε 反闭合必要性（T-COLL-3 的 upstream）→ 同上
+- former P1-T07 demotion / absorption remainder → 同上
+- ST-A conditional anti-closure / generative reselectability → `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
 - 个体化 / σ → `Core_Law/SRT_Individuation.md`
 - 遮蔽动力学 / A/B 分期 / d_c / 结构性恶三判据 → `Core_Law/SRT_Occlusion_Dynamics.md`
 - 苦难 / T-SUFF-5 集体外部化 → `Core_Law/SRT_Suffering.md`
@@ -587,7 +586,7 @@ $$
 
 ## §11. 定位与使用规则
 
-- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、集体 ε 反闭合必要性（T-COLL-3）、共选真实性判据（T-COLL-4）、**集体四变量最小耦合动力学 §4.4-§4.6**（2026-04-25 H3 新增，与 `SRT_L1_Formalism.md` 单 P 四变量系统形成上下层对应）
+- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、ST-A 条件性集体反闭合候选（T-COLL-3）、共选真实性判据（T-COLL-4）、**集体四变量最小耦合动力学 §4.4-§4.6**（2026-04-25 H3 新增，与 `SRT_L1_Formalism.md` 单 P 四变量系统形成上下层对应）
 - **本文件不做**：制度设计、政策判断、具体政治/经济案例分析、共同体组织学
 - **引用规则**：涉及"集体选择作为结构对象是什么"的**结构层**陈述时，优先回链本文件；涉及具体政治、经济、共同体、制度判断时，回链相应 Philosophy / Spirituality 文件
 - **不得**：把本文件读作政治偏好的理论背书；四类退化与三判据完全按结构判据读，不按意识形态读

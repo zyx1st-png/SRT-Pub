@@ -24,6 +24,7 @@ canonical: false
 - 合法性不是多数、传统、效率或革命叙事中的任一单一点源
 - 合法性来自：更多主体、较低不对称摩擦、更高再选择能力的共同维持
 - 但不得从秩序稳定直接推出合法性；必须先通过制度类型、委托、后果回流、再选择/退出/纠错通道的中间判据
+- ST-A 只区分 structural stability 与 generative reselectability；这些结构审计量仍是 P2/P3 规范桥，不构成合法性的 P1 必要充分定义
 
 ### 1.1 Middle Criteria
 

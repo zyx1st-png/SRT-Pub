@@ -192,25 +192,20 @@ $$\Psi_f^{geom}[\gamma] = \int_\gamma \sqrt{g_{ij}(\theta) \dot{\theta}^i \dot{\
 
 ---
 
-### §6.3 L₀ 自举与时间无前序性
+### §6.3 Primitive Actualisation 与时间无前序性
 
-> **新增（2026-03-11）**：对"谁执行初次 L₀→L₁ 投影"的形式消解。
+> **AM-A 改写（2026-08-11）**：P0-01 承载最小 actualisation kernel；本节不再以 fixed point 或最低摩擦路径推导它。
 
-"初次投影者"的问题导入了一个错误的时序假设。关键论证路径：
+"初次投影者"的问题导入了一个错误的时序假设，但排除先在选择者不等于已经给出一个派生机制。当前边界是：
 
-1. L₀ 不是匀质的可能性空间——Ax-L0-03 已确立 $\nabla \Psi_{potential} \neq 0$（L₀ 具有内禀差分结构）
-2. L₀→L₁ 的映射不是**事件**而是**结构约束**：$\hat{G}_\theta$ 与其 L₀ 定义域共生定义，无时间先后
-3. 存在自参照固定点 $\hat{G}^*$：
+1. P0-01 将非对象化潜在取得确定显现差异的最小 kernel 置为 primitive；不从更早的非选择机制导出。
+2. $\hat{G}_\theta$ 是该 primitive 映射的形式角色载体，不是位于映射之前的 chooser、operator-entity 或充分原因。
+3. L₀ 的非平坦性、$\kappa_0$、$\Psi_f$ 与 payability 可以约束具名领域 realization 的可行方向、代价和稳定性；它们都不能单独把数学可行性升级为确定事件。
+4. 时间（A14 摩擦台账）是不可撤回选择积累后的度量，而非 primitive actualisation 的背景容器。因此"第一次选择在何时发生"是类别错误；这不等于已经给出一个非时间性的生成公式。
 
-$$\hat{G}^* = \arg\min_{\hat{G}'} \Psi_f\!\left(\hat{G}',\, \nabla_{L_0}\Psi_{potential}\right)$$
+**对 §6.1 问题的回答**：量子去相干 $\Psi_f$ 和认知决策 $\Psi_f$ 的数值不可比；二者至多在已经进入各自实现过程后共享某种代价／阻力角色。AM-A 不要求跨领域只有一个 realization mechanism，也不允许用“谁先支付第一笔摩擦”的说法把摩擦倒置为 primitive 的来源。
 
-$\hat{G}^*$ 是 L₀ 梯度场的内禀对象——它的存在是 L₀ 拓扑结构的直接结果，而非外来选择的产物。
-
-4. 时间（A14 摩擦台账）是算子运作的副产品，而非其前提——"初次选择的时间"是类别错误
-
-**对 §6.1 问题的回答**：量子去相干 $\Psi_f$ 和认知决策 $\Psi_f$ 的数值不可比，但**函数角色**相同——它们都是同一个自举完备的选择场在不同尺度的摩擦读数。没有"谁先支付第一笔摩擦"——摩擦结构与算子结构共生。
-
-**Cross-ref**: `Core/SRT_Core_12a_Ontology_L0L1.md Ax-L0-Bootstrap`；`Core_Law/SRT_Reference_Axioms.md`（Ax-L0-Bootstrap 待补）。
+**Cross-ref**: `Core/SRT_Core_21_Minimal_Axioms.md P0-01/P0-04`；`Core/SRT_Core_12a_Ontology_L0L1.md Ax-L0-Bootstrap`；`Core_Law/SRT_Reference_Axioms.md Ax-L0-Bootstrap`。
 
 ---
 

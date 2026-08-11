@@ -2,11 +2,12 @@
 id: SRT-CORE-14-COMPACT-CORE
 type: dynamics
 tags: [Core, Dynamics, Scaling, Compact Core, Cross-Scale]
-status: active_v1
+status: active_v2
 layer: L1
 epistemic_layer: os
-claim_mode: canonical
+claim_mode: mixed
 dependency: [SRT-CANONICAL-REGISTRY, SRT-CORE-14, SRT-D-VALUE-CANONICAL, SRT-CORE-22]
+updated: 2026-08-12
 ---
 
 # SRT Core 14 — Dynamics & Scaling Compact Core
@@ -19,7 +20,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CORE-14, SRT-D-VALUE-CANONICAL, SRT-COR
 
 `Core 14` 解决的是 SRT 中最关键的统一问题：
 
-> **同一套选择动力学，如何在量子—生物—社会—宇宙等不同尺度上保持结构同构？**
+> **不同尺度上的选择动力学，在什么条件下可以保持结构相容？**
 
 它的核心主张不是“万物都一样”，而是：
 
@@ -27,22 +28,28 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CORE-14, SRT-D-VALUE-CANONICAL, SRT-COR
 
 ---
 
-## 2. 跨尺度同构
+## 2. 跨尺度结构相容候选（P3）
 
-### 2.1 Self-Similar Selection
+### 2.1 Self-Similar Selection Candidate
 \[
-\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}
+\pi_\lambda \circ \hat{G}_\theta
+\approx
+\hat{G}_{\theta,\lambda} \circ \pi_\lambda
 \]
 
 含义：
-- 选择算子在尺度变换 \(\Lambda\) 下保持共轭不变性
-- 量子坍缩、神经决策、社会选择、宏观结构稳定可以共享同一种拓扑逻辑
+- 只有在状态空间、尺度映射、保留观测量、比较范数和容差均已声明时，才能检验选择与粗粒化是否近似交换
+- 量子测量、神经决策、社会选择或宏观稳定可以接受“是否共享选择语法”的比较；它们并未被证明为同一机制
 
-> **注（Ax-F-11 / P3-B07）**：粗粒化映射 \(\Lambda\) 本身即幽灵算子在尺度变换下的禀赋展开——量子坍缩、侧抑制、归一化、范畴化均为同一结构的不同尺度实现形式，而非形式类似的独立过程。见 `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07`。
+旧式 \(\hat{G}_{S_2}=\Lambda\circ\hat{G}_{S_1}\circ\Lambda^{-1}\) 只在 \(\Lambda\) 是可逆表征变换时保留为严格共轭候选。通常的粗粒化是多对一映射，不得预设 \(\Lambda^{-1}\)。旧 `\Delta S=H(L_0)-H(L_1)` 与“所有尺度共同满足最小作用”均不再承担证明。
 
-这不是说“所有尺度的对象完全一样”，而是说：
-- 它们的**形成机制**存在同构性
-- 差异主要体现为参数、耦合、预算与带宽条件不同
+> **注（P3-B06／P3-B07）**：当前跨尺度共同项只到选择—约束—可支付性语法，不是熵量、单位、主体性或意识同一。见 `Core/SRT_Core_21c_Bridge_Hypotheses.md`。
+
+这不是说所有尺度对象或机制相同，而是把结构相容性作为一个可失败的 P3 接口：不满足近似交换条件时，撤回的是跨尺度桥，不是 P0/P1 核心。
+
+### 2.2 P3-Scale-NB1：首个有界实例
+
+神经除法归一化只输出相对响应。通向任务行为选择，必须另外冻结候选身份映射与神经读出，声明阈值／证据累积或采样规则及执行门，并在 held-out 条件下同时通过误差容差、rival 判别增益和具名干预跟踪。广义“归一化 → 行为选择”为红灯；上述合同是尚待数据转绿的黄灯 P3 接口。局部通过也不推出 actualisation、agency、subjecthood 或 consciousness。
 
 ---
 
@@ -208,11 +215,11 @@ SRT 的压缩立场是：
 
 `Core 14` 的主干可以压缩成五句话：
 
-1. **选择动力学在不同尺度上保持结构同构。**
+1. **选择动力学可在具名尺度映射下检验结构相容性；这是 P3 候选，不是普遍同构定理。**
 2. **d-value 是算子对抗摩擦的跨尺度带宽表征。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
-5. **跨尺度统一不等于跨尺度泛心；意识仍需额外满足严格条件。**
+5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识仍需额外满足严格条件。**
 
 ---
 

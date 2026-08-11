@@ -20,7 +20,7 @@ created: 2026-04-22
 > **定位**：本文尝试把国家、权利、合法性、民主、结构性不公、危机决断与政治病理，统一重写为多主体选择如何共同生成、稳定、封闭并再打开现实的过程。
 > **Claim-level note**：本文以 P2/P3 为主：政治本体论与规范解释主要为 canonical interpretation / bridge mapping；制度判准、阈值、操作化候选与失效条件属于 P4。不得将本文中的政治制度设计句子反向升级为 P0/P1 core axiom。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P4` 与上述说明一致；本文件是 Philosophy 主文，不是 core definition source。
-> **Canonical Collective Selection Layer (2026-04-24, ODE 层扩展 2026-04-25)**：本文涉及"多主体共同现实选择"、合法性作为可持续共同选择、反支配、结构性不公、危机决断、民主作为 d 倾向后验验证等结构层读法，回链 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）。集体 ISP 存在条件（T-COLL-1）、三类退化（聚合 / 主从 / 收编）、集体 ε 反闭合必要性（T-COLL-3）、共选真实性判据（T-COLL-4）不在本文件重新定义；本文件保留 P2/P3 政治哲学与 P4 制度判准，但其结构基石以 canonical 为准。集体四变量 ODE（§4.4-§4.6）给出了合法性 / 退化 / 健康 / 致命 `L_2` 的**方程化判据**——特别：集体健康区要求 `r^{coll}(t) > r^{coll}_{min} > 0` 这一结构硬条件，意味着**无持续集体真实重选的制度稳定不构成合法**；具体制度设计（投票、选举、代议、直接民主）仍按 P4 读，不因此获得 P1 背书。
+> **Canonical Collective Selection Layer (2026-04-24; ST-A correction 2026-08-11)**：本文涉及"多主体共同现实选择"、合法性、反支配、结构性不公、危机决断与民主等 P2/P3 政治哲学读法，结构层回链 `Core_Law/SRT_Collective_Selection.md`。T-COLL-1、三类退化、ST-A 条件性 T-COLL-3 与 T-COLL-4 不在本文件重新定义。集体四变量 ODE、`r^{coll}(t)>r^{coll}_{min}`、申诉／轮替／异议通道、`M(t)` 或 `ΔR_future` 只能提供 generative-reselectability 与外部化风险的候选审计信号；它们不自动构成合法性的必要充分条件，也不能从结构稳定直接推出规范正当性。具体制度判断继续按 P3/P4 读。
 
 > **Version 1.0 (Hybrid)**
 > **Part A** presents the Political Axioms & Criteria (AI-readable).

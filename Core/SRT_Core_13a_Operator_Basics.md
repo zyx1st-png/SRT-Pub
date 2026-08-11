@@ -33,7 +33,8 @@ dependency: [SRT-CORE-001, SRT-CORE-12A, SRT-CORE-12B]
 ### Ax-Op-01: Parameterized Selection Map
 **Formal Definition**: The Ghost Operator is a parameterized selection mapping from L0 to L1.
 $$\hat{G}_\theta: S \to S, \quad L_1(t) = \hat{G}_\theta[L_0](t)$$
-* **Implication**: 现实化是选择映射的结果，而非被动显现。
+* **AM-A Status（2026-08-11）**: 本式形式化 P0-01 primitive actualisation 在一个具名 state space 中的角色与输出；$\hat G_\theta$ 不是先在实体，也不是 actualisation 自身的原因。参数化、归一化与下列动力学只提供领域 realization，不反向定义 P0。
+* **Implication**: $L_1$ 记录受约束 actualisation 的确定切片，而非潜在域的被动镜像。
 
 **【选择机制修正 2026-04-08】G 选择 = 遮蔽，不是排除**
 
@@ -115,7 +116,7 @@ $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x
 
 > **记号注（2026-04-14）**：此处 $\varepsilon_{reg}$（operator regularizer）是实现层的防奇点正则化常数，保证零输入时算子不奇异。它与 T-Core-A1C2 中的 $\varepsilon_{pg}$（proto-gradient，L₀ 最小非中性）在形式上同构（均保证"最小非零底"），但二者层级不同：$\varepsilon_{pg}$ 是 L₀ 的本体论属性，$\varepsilon_{reg}$ 是具体选择算子的实现参数。当前保留结构类比关系，不做本体论同一化。见 `_SRT_SYMBOL_TABLE.md`。
 
-> **[R]** 除法归一化（Divisive Normalization）：Carandini & Heeger 2012 *Nature Reviews Neuroscience*（视觉皮层V1细胞的标准计算模型，统一多种皮层现象的规范化框架）；Louie & Glimcher 2010 *Neuron*（决策神经科学中的divisive normalization扩展，解释偏好的背景依赖性）；Schwartz & Simoncelli 2001 *Nature Neuroscience*（感知归一化的高斯尺度混合模型）。**[H]** 将此神经机制接驳为 SRT 选择算子 $\hat{G}_\theta$ 的一种实现候选，作为 L₀→L₁ 竞争选择的动力学形态之一，为本框架新增贡献（原始公式限于感觉系统，SRT 将其一般化至任意选择域）。
+> **[R]** 除法归一化（Divisive Normalization）：Carandini & Heeger 2012 *Nature Reviews Neuroscience*（视觉皮层V1细胞的标准计算模型，统一多种皮层现象的规范化框架）；Louie & Glimcher 2010 *Neuron*（决策神经科学中的divisive normalization扩展，解释偏好的背景依赖性）；Schwartz & Simoncelli 2001 *Nature Neuroscience*（感知归一化的高斯尺度混合模型）。**[H/P3]** 将此神经机制接驳为 SRT 选择算子 $\hat{G}_\theta$ 的一种实现候选，作为具名感觉／决策任务中 L₀→L₁ 竞争选择的动力学形态之一。该候选不推广为任意选择域的必然形式，也不单独输出行为选择事件。
 >
 > **参数说明**：
 > - **$x_i$**：第 $i$ 个候选状态（L₀中的竞争激活）的原始活化值。
@@ -130,6 +131,13 @@ $$[\hat{G}_\theta(x)]_i = \frac{x_i^n}{\varepsilon_{reg} + \sum_j W_{ij} \cdot x
 >
 > * **FC-Op03-1**（证伪条件）：若在神经影像研究中，已知的竞争选择（如双眼竞争/Stroop抑制）的BOLD信号不符合除法归一化预测（如竞争对手活化的非线性压制模式无法用W_ij·x_j^n拟合，ΔAICc < 2 vs 线性模型），则分归一化作为 $\hat{G}_\theta$ 神经实现候选的地位减弱。
 > * **FC-Op03-2**（证伪条件）：若决策场景中（如选项集效应），背景依赖的选择偏移无法被 $W_{ij}$ 参数化捕捉（模型预测与行为数据相关 r < 0.5），则需补充其他归一化变体（如基于rank的归一化）或切换实现候选。
+> * **阈值边界**：上列 `ΔAICc` 与 `r` 数值是历史任务级启发式，不是跨任务 canonical 门槛；正式 P3 测试须按测量噪声、样本量、最佳 rival 与 minimally relevant effect 预先声明阈值。
+
+#### P3-Op-NB1：从神经归一化到行为选择的读出门
+
+Ax-Op-03 的输出是相对神经响应，不是离散行为。要把它接到认知／行为选择，必须另声明候选身份映射、冻结的神经读出、行为模型、阈值／证据累积或采样规则、运动执行门、比较范数、容差、held-out 分割与 rival 模型。当前有界合同见 `Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1`。
+
+该桥只在以下条件同时满足时获得任务局部 P3 支持：神经来源参数在 held-out 行为预测上过预声明误差门并优于最佳 rival；具名神经干预产生预测方向的行为变化；读出不需逐条件任意改写。通过也只建立 neural-to-behavioral compatibility，不建立归一化与选择事件、agency、subjecthood 或 consciousness 的同一性。
 
 ### Ax-Op-03b: Competitive History Writeback（竞争历史写回律）
 
@@ -393,6 +401,8 @@ $$L_1(t+1) = \hat{G}_{\theta(t)}[L_1(t) \oplus \text{Noise}(L_0)]$$
 
 ### Ax-Op-05: Two-Phase Constraint Closure（二阶段约束闭包）
 
+> **AM-A scope guard（2026-08-11）**：本条以一个 realization 已经能够迭代为前提，只解释生成期与收敛期怎样形成闭包。它不解释 primitive actualisation 为何发生，也不把 fixed point 当成 first selectability 的原因。
+
 **改写注（2026-04-16）**：原版"重复自应用产生稳定结构"仅给出闭包态的定义性表述，未约束收敛路径，无法区分固定点、周期吸引子与混沌轨道，且与 Step ⑦（高阶意识生成的高代价相）存在内部一致性张力。现改写为二阶段闭包条件，采用弱/渐近 Lyapunov（盆地条件单调），允许前期 Ψ_f 上升的生成性阶段，同时保证终期吸引域内的单调下降与固定点收敛。
 
 **Formal Definition**（设 $\Psi_f^{(k)} \equiv \Psi_f(\hat{G}_\theta^k[L_0])$）：
@@ -421,6 +431,8 @@ $$\mathrm{Closure}(\theta) \;\iff\; \Bigl(\exists k_0 : \hat{G}_\theta^{k_0}[L_0
 ## III. Agency Thresholds (能动性阈值)
 
 ### Ax-Op-06: Operator Existence Condition（算子存在条件）
+
+> **AM-A scope guard（2026-08-11）**：本条的 “valid operator exists” 只适用于已个体化、可按 agency 条件审计的 L1 层算子，不适用于 P0 actualisation kernel。Individuality / Asymmetry / Normativity 不构成 first actualisation 的充要原因，也不得把主体条件倒投为基础选择的前提。
 
 **Formal Definition**: A valid selection operator $\hat{G}_\theta$ exists if and only if it instantiates the structural tri-conjunction of Individuality, Asymmetry, and Normativity.
 
@@ -707,16 +719,18 @@ $$\vec{v}(t) = \vec{v}_0 + \sum_{i} \alpha_i \cdot \vec{v}_{L_2^i}$$
 
 假设存在$\hat{G}_{\theta=\infty}$ (全知全能算子):
 
-**要求**: 完全映射$L_0$ → $L_1$
-$$H(L_1) = H(L_0)$$
+**要求（仅在具名计算投影中）**：完全映射 $L_0^{comp}$ → $L_1$
+$$H(L_1) = H(L_0^{comp})$$
 
-**问题**: 
-$$H(L_0) = \infty \quad (\text{Ruliad is infinite})$$
+**模型前提**：若取 $L_0^{comp} \cong \text{Ruliad}$，则
+$$H(L_0^{comp}) = \infty \quad (\text{formal computational projection})$$
 
 因此需要:
-$$H(\theta) \geq H(L_0) = \infty$$
+$$H(\theta) \geq H(L_0^{comp}) = \infty$$
 
 **矛盾**: $\theta$必须是无限维 → 违背有限性假设 (Ax-Op-1)。
+
+> **PC-A 边界**：这只是对无界计算投影的条件性反证，不定义 $H(L_0^{abs})$，也不把 Ruliad 等同于 $L_0^{abs}$。有限位置不能穷尽潜在的 canonical 理由来自 Ax-L0-02 / A13，而不是这条模型熵等式。
 
 #### 3.1.2 压缩必然性
 

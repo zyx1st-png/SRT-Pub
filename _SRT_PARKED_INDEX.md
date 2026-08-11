@@ -3,7 +3,7 @@ id: SRT-PARKED-INDEX
 type: index
 status: active
 claim_mode: navigation
-updated: 2026-07-20
+updated: 2026-08-12
 ---
 
 # SRT Parked Index — 停驻内容总索引（浮标）
@@ -41,7 +41,13 @@ updated: 2026-07-20
 |---|---|---|
 | Costly Selection common-state probe + Adaptive Behavior build | branch `claude/common-state-probe`（9fde3ff0 / e483a5c6） | Adaptive Behavior 重投轮启动时 |
 
-> P1-T07 证明审计已于 2026-07-25 随 PR #676 合入 main（`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`、`Operations/Audits/Maps/SRT_P1_T07_ASSUMPTION_MAP.md`、`Operations/Proposals/SRT_P1_T07_HARDENING_OPTIONS.md`），本行已销账。Options A/B/C 仍为 proposal-only：Option B 是**最小编辑候选**，但须先清三项前置（选定 S1/S2/S3 稳定性语义；把 "ε-neutral" 定义在独立转移核上；证明该中性基线 a.s. 吸收），未清前不得写成定理。
+> P1-T07 证明审计已于 2026-07-25 随 PR #676 合入 main。2026-08-11 作者选择 ST-A 后，本项作者门已销账：无条件 P1 身份撤销，absorption remainder 留在 21B，neutral-kernel anti-closure 转入 21C B13 的 P2/P3 条件候选。Options A/B/C 仅保留为历史；未来若尝试条件 theorem，仍须选定稳定语义、独立定义 neutral kernel，并证明吸收或比较性 closure-risk bound。
+
+> `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` Gate A 已由 EX-A 销账：manifest actuality、anchoring persistence 与 stable ISP 分层，旧 `E = 1-H(L_1)/H(L_0)` 仅在 21C B14 保留为历史启发式。量化 anchoring readout 不再构成 canonical 待办；只有具名 P3 测量工作线同时给出相对域、分割／sigma-algebra、概率测度、有限性条件与事件／时间窗时，才可复活为模型级候选。Gates B/C 不受此裁决影响。
+
+> `Core_14` 的旧跨尺度熵证明与无条件 strict conjugacy 已于 2026-08-12 停驻。它们只有在具名 P3 跨尺度工作线同时声明两侧状态空间、尺度映射、可逆性或近似交换误差界、保留观测量、比较范数、熵变量／测度以及可区分于普通路径依赖／吸引子／粗粒化描述的失败测试时才可复活。否则只使用 P3-B06／T-Scale-02C1 的条件接口。
+
+> 神经除法归一化的“本体必然／能量—信息唯一交点／直接产生行为选择”强式已于 2026-08-12 停驻。只有具名 `P3-Scale-NB1` 实验同时冻结候选身份映射、神经读出、阈值／累积或采样规则、执行门、held-out 分割、误差容差与 rival 集合，并提供神经参数独立估计及干预跟踪时，才可复活为任务局部机制主张；任何局部成功都不复活“所有选择系统必然归一化”或机制同一主张。
 
 ## 4. 计划存档（`90_Backstage/Plans_Archive/`）
 

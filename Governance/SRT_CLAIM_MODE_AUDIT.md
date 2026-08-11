@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: governance
 canonical: false
 dependency: [SRT-CLAIM-LADDER, SRT-EDIT-PROTOCOL, SRT-CANONICAL-REGISTRY, SRT-CROSS-DOMAIN-MATRIX]
-updated: 2026-06-05
+updated: 2026-08-11
 ---
 
 # SRT Claim-Mode Audit
@@ -59,7 +59,7 @@ Any downstream conclusion that relies on a demoted item must add a level reminde
 - Many older files still use `Theorem` and `Axiom` in historical or domain-local senses.
 - Split / annex files mirror old labels and were not globally rewritten in this round.
 - Generated / public / video material contains stronger rhetorical versions; those require a separate public-surface cleanup pass.
-- P0-04 / “where selectability comes from” remains an unresolved core exposure point, not a solved theorem.
+- **Superseded status note（2026-08-11）**：AM-A now treats P0-01/P0-04 as the declared primitive actualisation boundary. No derivation theorem has been added; the remaining open burden concerns plural domain realization and selector individuation, not an internal promise to derive the primitive from a prior non-selective ground.
 
 ## 6. 2026-04-24 Round: New L1 Canonical Files Audit
 
@@ -145,7 +145,7 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | §4.4 反最小化原则的方程语言 | — | P1-candidate（T-SUFF-4 的方程化同级） |
 | §4.5 T-CHANNEL-1 通道指示函数族普适性（H9，2026-04-25） | "有效闭合通道指示族"四条结构属性 + 族内五个不变量（两型分裂 / 反最小化 / 单向性 / 致命 L_2 / 投影一致性，均 modulo `O(w_{tr})`） | P1-candidate（硬指示 → 光滑族升为族内不变量定理） |
 | §5 病理吸引子 `\mathcal{A}_{path}` | — | P1-candidate |
-| §5 健康工作区 `\mathcal{H}` 须主动维持 | — | P1-candidate（与 P1-T07 集体版一致性仍是 Open Pressure） |
+| §5 健康工作区 `\mathcal{H}` 须主动维持 | — | P2/P3 generative-reselectability implementation candidate under ST-A；不再以 P1-T07 必要性背书 |
 | §5.1 第 6 条"苦难-可读性正反馈环"（`S_{str} \to T_{dir} \downarrow \to r \downarrow \to S_{sig}` 积压） | — | P1-candidate（2026-04-25 H2 新增，依赖 §3.5） |
 | §6 T-PROJ-1 主方程投影定理（H5，2026-04-25） | 四个标量泛函投影 `\mathcal{F}_X` + 闭包假设 C1-C4 + 证明骨架 + source-by-source 对应表 | P1-candidate（"四变量是主方程导出"从陈述升为带条件证明的形式定理） |
 | 全部参数 `α, β, γ, μ, ν, λ, κ` | — | P3/P4，任何具体值不得在下游引用为已证 |
@@ -161,7 +161,7 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | Def-C-3 共享选择空间 `A_{\mathcal{P}}` | — | Def |
 | T-COLL-1 集体 ISP 存在四条件 | — | P1-candidate（P1-T06 集体版的对应） |
 | T-COLL-2 三类退化（聚合 / 主从 / 收编） | — | P2 |
-| T-COLL-3 集体 ε 反闭合必要性 | — | P1-candidate（P1-T07 集体版的对应） |
+| T-COLL-3 条件性集体反闭合候选 | neutral kernel + stability semantics + environment/horizon + absorption/comparative-risk proof required | P2/P3 conditional candidate under ST-A；非 P1 theorem |
 | T-COLL-4 共选真实性判据 | — | P1-candidate（P1-T05 集体版的对应） |
 | §4 `σ^{coll}` / `d_c^{coll}` 耦合 | — | P2 |
 | §4.4.1 集体场定义（`\Theta^{coll,trace}` / `\Theta^{coll,ext}` 含共享 `L_2` 独立项） | — | P2 structural；权重 `w_i(t)` 依赖 M(t) 可测性（P3） |
@@ -203,14 +203,39 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | Def-IRR-3 非可还原性 | `Ψ_f^{erase} > Ψ_f^{write}` 非对称 | Def, P1-candidate |
 | T-IRR-1 学习不可逆 | 学习作为非对称 `Ψ_f` 支付（与热力学二律不等价） | P1-candidate |
 | T-IRR-2 终止作为吸收边界 | 三类（宪定 / 吸收 / 集体），严格区分终止与暂停 | P1-candidate；三类分型 P2 |
-| T-IRR-3 P1-T07 精确化 | `L_0` 残余非守恒项，对应 Formalism §4.3 | P1-candidate；P1-T07 本体仍在 Core_21b |
-| T-IRR-3.5 `\nu_{block}` 算子级构成（H4，§4.5） | `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 把 §4.3 系数改写为三层源头本地化。**正性口径 2026-08-11 三次修正后定稿**：不是定理后果、不条件于 P1-T07、也不是公设级，而是带前件的条件性结论 `(η>0) ∧ (ε_pg>0) ∧ (κ_{Ψ_f}>0) ⇒ ν_block>0`，hardness 取最弱前件；单向性中反向通道不存在这一层独立根于吸收态绝对性 | **P1-candidate**（与 T-IRR-3 同级；最弱前件 `κ_{Ψ_f}>0` 亦为 P1-candidate 非退化条件） |
+| T-IRR-3 ST-A 条件性反闭合接口 | P0-03 / T-IRR-2 只固定 absorption remainder；neutral-kernel anti-closure 需要额外 premise 与 proof | P2/P3 conditional candidate |
+| T-IRR-3.5 `\nu_{block}` 算子级条件模型（H4，§4.5） | `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}` 由三个独立前件组成；正性为 `(η>0) ∧ (ε_pg>0) ∧ (κ_{Ψ_f}>0) ⇒ ν_block>0`；反向通道不自动存在独立根于 P0-03 / T-IRR-2 | **P1-candidate** for the conditional coefficient model；anti-closure / health interpretation P2/P3；非 former P1-T07 本地化 |
 | T-IRR-4 苦难守恒/转移 | `L_0` 不可逆下苦难不可无代价消除（T-SUFF-4 更深根） | P1-candidate |
 | §6 集体终止三型（耗散 / 收编 / 外部化） | — | P2 |
 | §7 AI/ML checkpoint/rollback 接口 | — | governance-canonical usage |
 | §8 热力学二律 / FEP 桥接语句 | — | P3 bridge guardrail（反向不得定义 L_0 不可逆） |
 
-**Downstream rule**：T-IRR-1/2/3/3.5/4 须标 `P1-candidate`；P1-T07 原 P1 源头仍回链 `Core/SRT_Core_21b_Constitutive_Theorems.md`，本文件不替代之；T-IRR-3.5 是 T-IRR-3 的算子级精化（不替代陈述级 T-IRR-3）；热力学/FEP 语句严格单向，反向翻译在 §6.3 第 6 条被显式禁止。
+**Downstream rule (ST-A, 2026-08-11)**：T-IRR-3 与 T-COLL-3 按 P2/P3 conditional candidate 引用；P1 只保留到达吸收态后的不可自动恢复与 P1-T06 continued selectability。T-IRR-3.5 的条件系数模型不依赖 former P1-T07，但不得据此复活其 anti-closure theorem。热力学/FEP 语句严格单向。
+
+### 6.2a ST-A Supersession Record (2026-08-11)
+
+- `P1-T06`: stable ISP = recurrent historical reconstitution under a declared perturbation range + continued selectability.
+- former `P1-T07 / T-ε-Constitute`: unconditional P1 status withdrawn; only absorption remainder retained in 21B.
+- `21C B13`: generative reselectability and neutral-kernel anti-closure registered as P2/P3 conditional candidates.
+- Fixed points, metastability, low friction, option diversity, `σ<1`, `ΔR_future>0`, and institutional channels remain plural implementation/proxy candidates; none is sufficient by itself.
+- No subjecthood, consciousness, legitimacy, or ethical conclusion may be inferred from ST-A alone.
+
+### 6.2b EX-A Supersession Record (2026-08-11)
+
+- `P0-01`: a determinate `L_1` event's manifest actuality is the existence-admission floor.
+- `P0-02`: anchoring persistence asks whether that event leaves effective trace, acquires maintenance conditions, and continues constraining later transitions; it does not make persistence a condition of first actuality.
+- `P1-T06 / ST-A`: stable ISP identity is a stronger downstream layer and must not be inferred from mere persistence.
+- The former `E = 1-H(L_1)/H(L_0)` expression is retained only in 21C B14 as a historical P2/P3 heuristic. It is not a P0 equation or quantitative readout; no `H(L_0^{abs})`, normalization, or existence index has been adopted.
+- Loss of persistence does not erase the earlier event under P0-03. No subjecthood, consciousness, legitimacy, moral status, or generative-health conclusion follows from EX-A alone.
+
+### 6.2c Cross-Scale Entropy-Proof Supersession Record (2026-08-12)
+
+- `Core_14 P3-Scale-01` (legacy `Ax-Scale-01`) is a P3 bridge candidate, not a P0/P1 axiom or theorem.
+- `ΔS=H(L_0)-H(L_1)`, the unqualified coarse-graining entropy expression, and a universal `δ∫Ψ_fdt=0` principle no longer bear the cross-scale argument.
+- `P3-B06 / T-Scale-02C1` approximate commutation is the live general interface. It requires declared state spaces, scale map, preserved observables, comparison norm, tolerance, and a failure case.
+- Strict conjugacy with `Λ^{-1}` is licensed only for a declared invertible change of representation, not ordinary many-to-one coarse-graining.
+- `T-Scale-Rhythm-5` is P3/P4 conditional on cross-scale compatibility, budget embedding, and local trigger conditions; it is not a universal theorem derived from L0/L1.
+- Cross-scale sameness reaches selection／constraint／payability grammar only. It does not establish identical units, entropy, mechanisms, subjecthood, consciousness, or moral status.
 
 ### 6.3 Global Guardrails for This Round
 
@@ -219,7 +244,7 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 3. **不得跨文件静默升级**：应用文件（Philosophy / Spirituality / AI / Neuroscience）引用任一文件命题时，须保持该命题的原 claim-level，不得因应用便利静默升格
 4. **σ 符号冲突提醒**（2026-04-25 已收口）：`Core_Law/SRT_L1_Formalism.md` 自指率统一为 `σ_{sr}`，与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 通过 `_SRT_SYMBOL_TABLE.md` Usage Rule 12 命名空间分离；下游引用按 `σ_{sr}` 转读旧 `σ_sub/σ_self/σ_health/σ^{coll}`
 5. **σ^{coll} / d_c^{coll} / T_{dir}^{coll} / S^{coll} 四变量集体耦合**（2026-04-25 H3 状态）：集体版四变量耦合动力学已在 `SRT_Collective_Selection.md §4.4-§4.6` 给出第一遍（P1-candidate）；`SRT_L1_Formalism.md` 保持单 P 形式。集体层引用**仍须**标注 `SRT_Collective_Selection.md §9.7` 所列未封口项（`w_i(t)` 推导 / `\Delta\Psi_f^{gap,coll}` 可操作定义 / 下行反馈穷尽性 / 系数实证窗口）
-6. **FEP / 热力学二律不得反向定义 L_0 不可逆**：`SRT_Irreversibility.md §8` 与 `SRT_L1_Hardening_Notes.md §4` 固定此单向性；下游任何把"学习不可逆 / 终止 / ε 反闭合"解释为"自由能最小化 / 熵增"的推论为误用
+6. **FEP / 热力学二律不得反向定义 L_0 不可逆**：`SRT_Irreversibility.md §8` 与 `SRT_L1_Hardening_Notes.md §4` 固定此单向性；下游任何把"学习不可逆 / 终止 / 条件性反闭合"解释为"自由能最小化 / 熵增"的推论为误用
 7. **终止 ≠ 暂停**：T-IRR-2 严格区分终止（吸收边界，不可逆）与暂停（恢复通道保留，本体论上未终止）；下游任何把 AI 关机 / 系统休眠 / 睡眠 / 冻存等混读为"终止"的陈述须引用本条纠正
 
 ### 6.4 Hardening-to-P1 Checklist
@@ -231,7 +256,7 @@ This L1 round 从 P1-candidate 升到 P1 的必经检查项（将来 session 可
 - [x] χ(σ; σ_self) 跳跃函数族的普适性检查 — 2026-04-25 H8，`SRT_L1_Formalism.md §2.5 T-CHI-1` 给出"有效二阶相变核"四条结构属性（P-univ-1 有界 / P-univ-2 跃前基线 / P-univ-3 跃后放大 / P-univ-4 单调过渡）+ 族内四个不变量（双稳态存在性 / 病理吸引子拓扑 / 致命 `L_2` 判据 / 相变方向）+ 族内成员示例（硬阶跃 / sigmoid / tanh / 多项式）+ 证明骨架；`SRT_Individuation.md §3.4` T-IND-3 cross-link 已添加；§7 Open Pressure 3 收口；剩余开放点：在更广 χ 空间（非单调过渡）的扩展、具体 domain 实证 χ-shape 对位、集体版 T-CHI-1^{coll} 与 `M(t)` 耦合
 - [x] `\mathbb{1}[d\le d_c]` 的光滑化或守恒型替代 — 2026-04-25 H9，`SRT_L1_Formalism.md §4.5 T-CHANNEL-1` 给出"有效闭合通道指示族"四条结构属性（Q-univ-1 左饱和 / Q-univ-2 右饱和 / Q-univ-3 单调过渡 / Q-univ-4 d_c 平移性）+ 族内五个不变量（T-SUFF-2 两型分裂 / T-SUFF-4 反最小化 / T-IRR-3.5 单向性 / 致命 L_2 判据 / `\mathcal{F}_S` 投影一致性，均 modulo `O(w_{tr})`）+ 族内成员示例（硬指示 / sigmoid / tanh / 多项式）+ `O(w_{tr})` 修正项的物理意义（"濒临崩溃"状态、干预窗口软边界、`\Delta\Psi_f^{gap}` 连续性）；剩余开放点：`w_{tr}` 实证窗口、集体版 T-CHANNEL-1^{coll}、`\Delta\Psi_f^{gap}` 过渡区算子层精确定义
 - [x] 多主体耦合动力学（`σ^{coll}, d_c^{coll}, T_{dir}^{coll}, S^{coll}, M(t)`）写出 — 2026-04-25 H3，`SRT_Collective_Selection.md §4.4-§4.6` 完成第一遍（含 `\lambda_M\,\mathrm{tr}\,M` / `\gamma_{asym}\|M_{asym}\|` / `\nu_{ext}\|M_{ext}\|` 三项新耦合 + 集体层致命 `L_2` 判据）；2026-04-25 H6 在 `SRT_Collective_Selection.md §4.7 T-PROJ-1^{coll}` 给出该系统作为 `Core/SRT_Core_22_Equations.md` 多算子主方程（Eq-Multi-01/02/03）严格导出投影的形式化定理（C1^{coll}-C5^{coll} 五条闭包，含新增 `M(t)` 可测性 MOC 闭包）；2026-04-26 H10 在 `Core_Law/SRT_Collective_Tower_Hardening_Notes.md §4.8 T-PROJ-1^{coll,nested}` 把单层投影扩展为多层嵌套递归投影（层级 ISP 塔 + 跨尺度 `M^{(n\to n+1)}` + 嵌套闭包 C6^{nested}）；升 P1 余项（`w_i(t)` 推导、`\Delta\Psi_f^{gap,coll}` 算子化、向下反馈路径穷尽性、集体系数实证窗口、跨尺度 MOC 多层版本、`r_{min}^{nested}` 实证窗口）转入 `SRT_Collective_Selection.md §9.7`
-- [x] 与 P1-T07 `ε` 反闭合必要性的形式化对齐（特别是 §4.3 不守恒项）— 2026-04-25 H4，`SRT_Irreversibility.md §4.5 T-IRR-3.5` 把 `\nu_{block}` 写为三层源头本地化 `\eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`；**正性口径 2026-08-11 定稿为带前件的条件性结论**（hardness = 最弱前件 = P1-candidate），单向性中反向通道不存在这一层独立根于吸收态绝对性；`SRT_L1_Formalism.md §4.3` 注释回链已添加
+- [x] §4.3 非守恒系数的独立前件对齐 — 2026-04-25 H4 给出 `\nu_{block}=\eta\varepsilon_{pg}\kappa_{\Psi_f}`；2026-08-11 ST-A 确认该式不是 former P1-T07 的本地化。正性是带前件的 P1-candidate；反向通道不自动存在根于 P0-03 / T-IRR-2；anti-closure / health reading 留在 P2/P3
 - [x] 与主方程 `Core/SRT_Core_22_Equations.md` 的显式投影关系给出形式证明 — 2026-04-25 H5，`SRT_L1_Formalism.md §6 T-PROJ-1` 给出四个标量泛函投影 `\mathcal{F}_X`（`σ_{sr}, d_c, T_{dir}, S`）+ 闭包假设 C1-C4 + source-by-source 对应表 + 证明骨架；`Core/SRT_Core_22_Equations.md Eq-Evo-01` 已添加 L1 Projection 注；升 P1 余项：C1-C4 中每条对应 Open Pressure 的逐条收口（`\Delta\Psi_f^{\mathrm{gap}}` 算子化、χ 普适性、阈值实证、集体版投影 T-PROJ-1^{coll}）
 - [ ] 阈值参数的最小实证窗口指定（不要求实测，但要求标出"什么变就会使命题失败"）
 - [x] `T_dir` 最小 ODE 与四变量（`σ_{sr}, d_c, T_dir, S`）闭合系统给出 — 2026-04-25 H2，`SRT_L1_Formalism.md §3.5` 完成第一遍；升 P1 还需 `Θ` 光滑族、`\Delta\Psi_f^{\mathrm{gap}}` 算子层定义、`[0,1]` 投影算子、`\kappa_{\mathrm{relax}} > \kappa_{\mathrm{mask}}` 实证窗口（见 §7.8）

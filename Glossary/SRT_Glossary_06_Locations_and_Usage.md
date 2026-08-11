@@ -38,7 +38,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 | ρ | AI/SRT_AI_Computation.md | §1.4 |
 | PCI | Neuroscience/SRT_Consciousness_Clinical.md | - |
 | d (本体论带宽) | Core/SRT_Core_14_Dynamics_Scaling.md | Def-d-Scale-1 |
-| 跨尺度同构 | Core/SRT_Core_14_Dynamics_Scaling.md | Ax-Scale-01 |
+| 跨尺度结构相容 | Core/SRT_Core_14_Dynamics_Scaling.md | P3-Scale-01／T-Scale-02C1 |
 | 反泛心论 | Core/SRT_Core_14_Dynamics_Scaling.md | §2.1a |
 | 拓扑资本 | Philosophy/SRT_Social_MacroDynamics.md | §8.2 |
 | 本体论短路 | Philosophy/SRT_Social_MacroDynamics.md | §8.3 |

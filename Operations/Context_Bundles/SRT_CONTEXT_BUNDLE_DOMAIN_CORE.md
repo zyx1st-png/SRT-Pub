@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-08-11
+id: SRT-CONTEXT-BUNDLE-DOMAIN-CORE-2026-08-12
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-11
-source_commit: 849a5e63
-source_branch: claude/srt-consistency-decision-packet-2026-08-11
-source_dirty: false
-inputs_digest: 720d87a4698fa354
+generated: 2026-08-12
+source_commit: 13d31338
+source_branch: main
+source_dirty: true
+inputs_digest: db1ef99d1ec3ccef
 ---
 
 # SRT 核心动力学上下文包
@@ -26,10 +26,10 @@ inputs_digest: 720d87a4698fa354
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-11 |
-| 来源 commit | `849a5e63` |
-| 来源分支 | `claude/srt-consistency-decision-packet-2026-08-11` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-12 |
+| 来源 commit | `13d31338` |
+| 来源分支 | `main` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -58,38 +58,34 @@ inputs_digest: 720d87a4698fa354
 >   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
 > - **USAGE POLICY** — 由标注的治理文件授权的使用规则。
 
-### G1 — P1-T07 证明未闭合（严重度：高）
+### G1 — former P1-T07 已降阶；条件证明负担仍开放（严重度：高）
 
-**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）
+**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 former P1-T07 absorption remainder，及 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 的 conditional anti-closure candidate
 
 #### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-**审计自述，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
+**ST-A canonical 裁决，来自 `Core/SRT_Core_21b_Constitutive_Theorems.md`**：
 
-> **Status**: non-canonical Operations record. **Proof audit only.** It modifies no theorem, no axiom, no definition, no equation. It does not resolve the proof; it maps exactly where the current proof does and does not close, and hands options to a later controlled amendment PR. Prior Claude/ChatGPT statements about P1-T07 were treated as hypotheses; the only source of truth is `origin/main @ 14c0d7f8`. Archive/book files were read for context but are **not** used to establish anything about the canonical theorem.
+> **Decision record (ST-A, 2026-08-11)**: The former unconditional statement—"every stable ISP necessarily contains an anti-closure `ε` bias"—is no longer a P1 theorem. Its proof inferred cumulative absorption from a per-step nonzero closure probability without independently defining a neutral kernel, fixing the stability semantics, or proving that the neutral kernel reaches the absorbing state. `L_0` irreversibility alone does not supply those missing premises.
 
 **审计 1.3 修订的语义分层条款，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
 
 > (a) `τ<∞` verdicts stratified by semantics — on a realized terminating history only **S1 pathwise** stability fails; **S2** fails only if `P(τ<∞)>0`, **S3** only if `P(τ=∞)=0`; no unconditional *process-level* stable-ISP verdict before the S1/S2/S3 choice (fixed in §0 Q5, §8, Proof Gate)
 
-**审计 §0 第 5 问，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
-
-> 5. **What can P1-T07 prove at most?** Two things must be separated, and the first is **semantics-relative**, not process-unconditional. **(i) True and derivable, per level**: on any realized history with `τ<∞`, that history enters the absorbing `∅` and no further selection is possible — so **S1 (pathwise) stability fails on that history**. At the *process* level, **S2** stability fails only when `P(τ<∞)>0`, and **S3** stability fails only when `P(τ=∞)=0`. Before S1/S2/S3 is chosen, **no unconditional process-level stable-ISP verdict may be issued** from `τ<∞`. **(ii) NOT derivable as written**: *neutral `P` terminates a.s., therefore neutral `P` is not stable* — because a.s. termination of a neutral process is exactly what Step 3 fails to establish. "Positive termination probability" is also **not** unconditional (it needs positive hazard at a surviving step). (§4, §8)
-
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
-该定理 Proof Sketch 第 3 步（*neutral `P` ... cumulative probability tends toward 1*）以肯定句写成，正文未标注任何保留。上述审计判定恰恰是这一步不闭合：语料并未*确立*每步正 hazard，而且即使每步 hazard 为正也不蕴含 almost-sure 终止；`ε-neutral` 在语料中从未被形式定义；P1-T06 的 stable ISP 定义是非概率的，S1/S2/S3 随机语义尚未选定。
+ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只保留 realized history 到达吸收态后不能自行继续的 remainder，以及 P1-T06 continued selectability。neutral-kernel anti-closure 留在 P2/P3，仍须独立定义 neutral kernel、选择 S1/S2/S3 稳定语义，并声明环境、外部重置规则、终止条件与时间窗，再证明吸收或比较性 closure risk。
 
-另需注意：`Core/SRT_OPEN_TENSIONS.md` 目前**未登记**本缺口。
+该降阶与剩余证明负担已登记在 `Core/SRT_OPEN_TENSIONS.md`。
 
 #### USAGE POLICY — 使用规则
 
 *授权依据：`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8*
 
-- 不得把 P1-T07 当作已证 P1 定理引用。
+- 不得把 former P1-T07 当作已证 P1 定理引用；P1 引用仅限 absorption remainder。
+- Stable ISP 的 P1 最低条件是 continued selectability；generative reselectability 与 ISP-level anti-closure 按 P2/P3 conditional candidate 引用。
 - 关于 `τ<∞` 只能作**语义分层**的陈述：若某条 realized history 满足 `τ<∞`，可无条件断言的仅是**该历史上的 S1 / pathwise stability 失败**；process-level 的 S2 需 `P(τ<∞)>0`，S3 需 `P(τ=∞)=0`。**在 S1/S2/S3 语义未选定之前，不得据此推出无条件的 process-level 「not a stable ISP」。**
-- 不要假装 `ε-neutral` 有形式定义。
-- 「查过 `OPEN_TENSIONS` 没找到」**不**足以证明本命题已封口——该缺口尚未登记在那里。
+- 不要假装 `ε-neutral` 已有形式定义，也不要从 `ε_pg`、irreversibility、fixed point、metastability 或 `σ<1` 单独推出 anti-closure。
 
 
 ### G2 — `d`/`q`/`o` 三轴处于禁运状态（严重度：中）
@@ -278,15 +274,15 @@ When answering about SRT:
 
 ### 已收录
 
-**定义源**（1 个）
+**展开层**（1 个）
 
 | 文件 | 分类依据 | registry 提及 | AI_START §2 |
 |---|---|:---:|:---:|
-| `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | frontmatter claim_mode=canonical | ✓ | — |
+| `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | frontmatter claim_mode=mixed | ✓ | — |
 
 ### 未收录支持文件
 
-**First Sources 点名、文件存在、但本包未收（15 个）**——回答涉及它们时本包不足以裁定：
+**First Sources 点名、文件存在、但本包未收（14 个）**——回答涉及它们时本包不足以裁定：
 
 - `CANONICAL_REGISTRY.md`
 - `Governance/SRT_CLAIM_LADDER.md`
@@ -302,7 +298,6 @@ When answering about SRT:
 - `_SRT_SYMBOL_TABLE.md`
 - `Core/SRT_Core_21_Formal_Axioms.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
-- `Core/SRT_OPEN_TENSIONS.md`
 
 **⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
@@ -310,7 +305,7 @@ When answering about SRT:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（93 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（92 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -356,7 +351,6 @@ When answering about SRT:
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
-- `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`
 - `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md`
 - `Philosophy/01_PH_SS_Objection_Crosswalk.md`
 - `Philosophy/02_PH_SS_Hardening_Execution_Plan.md`
@@ -432,14 +426,14 @@ When answering about SRT:
 |---|---|
 | path | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` |
 | id | SRT-CORE-14-COMPACT-CORE |
-| claim_mode | canonical |
-| status | active_v1 |
+| claim_mode | mixed |
+| status | active_v2 |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
 | last_commit | 2026-04-20 |
 
-**权威判读**：**定义源**——可用于确定 SRT 术语含义。
+**权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
 **dependency**：[SRT-CANONICAL-REGISTRY, SRT-CORE-14, SRT-D-VALUE-CANONICAL, SRT-CORE-22]
 
@@ -455,7 +449,7 @@ When answering about SRT:
 
 `Core 14` 解决的是 SRT 中最关键的统一问题：
 
-> **同一套选择动力学，如何在量子—生物—社会—宇宙等不同尺度上保持结构同构？**
+> **不同尺度上的选择动力学，在什么条件下可以保持结构相容？**
 
 它的核心主张不是“万物都一样”，而是：
 
@@ -463,22 +457,28 @@ When answering about SRT:
 
 ---
 
-## 2. 跨尺度同构
+## 2. 跨尺度结构相容候选（P3）
 
-### 2.1 Self-Similar Selection
+### 2.1 Self-Similar Selection Candidate
 \[
-\hat{G}_{S_2} = \Lambda \circ \hat{G}_{S_1} \circ \Lambda^{-1}
+\pi_\lambda \circ \hat{G}_\theta
+\approx
+\hat{G}_{\theta,\lambda} \circ \pi_\lambda
 \]
 
 含义：
-- 选择算子在尺度变换 \(\Lambda\) 下保持共轭不变性
-- 量子坍缩、神经决策、社会选择、宏观结构稳定可以共享同一种拓扑逻辑
+- 只有在状态空间、尺度映射、保留观测量、比较范数和容差均已声明时，才能检验选择与粗粒化是否近似交换
+- 量子测量、神经决策、社会选择或宏观稳定可以接受“是否共享选择语法”的比较；它们并未被证明为同一机制
 
-> **注（Ax-F-11 / P3-B07）**：粗粒化映射 \(\Lambda\) 本身即幽灵算子在尺度变换下的禀赋展开——量子坍缩、侧抑制、归一化、范畴化均为同一结构的不同尺度实现形式，而非形式类似的独立过程。见 `Core/SRT_Core_21c_Bridge_Hypotheses.md P3-B07`。
+旧式 \(\hat{G}_{S_2}=\Lambda\circ\hat{G}_{S_1}\circ\Lambda^{-1}\) 只在 \(\Lambda\) 是可逆表征变换时保留为严格共轭候选。通常的粗粒化是多对一映射，不得预设 \(\Lambda^{-1}\)。旧 `\Delta S=H(L_0)-H(L_1)` 与“所有尺度共同满足最小作用”均不再承担证明。
 
-这不是说“所有尺度的对象完全一样”，而是说：
-- 它们的**形成机制**存在同构性
-- 差异主要体现为参数、耦合、预算与带宽条件不同
+> **注（P3-B06／P3-B07）**：当前跨尺度共同项只到选择—约束—可支付性语法，不是熵量、单位、主体性或意识同一。见 `Core/SRT_Core_21c_Bridge_Hypotheses.md`。
+
+这不是说所有尺度对象或机制相同，而是把结构相容性作为一个可失败的 P3 接口：不满足近似交换条件时，撤回的是跨尺度桥，不是 P0/P1 核心。
+
+### 2.2 P3-Scale-NB1：首个有界实例
+
+神经除法归一化只输出相对响应。通向任务行为选择，必须另外冻结候选身份映射与神经读出，声明阈值／证据累积或采样规则及执行门，并在 held-out 条件下同时通过误差容差、rival 判别增益和具名干预跟踪。广义“归一化 → 行为选择”为红灯；上述合同是尚待数据转绿的黄灯 P3 接口。局部通过也不推出 actualisation、agency、subjecthood 或 consciousness。
 
 ---
 
@@ -644,11 +644,11 @@ SRT 的压缩立场是：
 
 `Core 14` 的主干可以压缩成五句话：
 
-1. **选择动力学在不同尺度上保持结构同构。**
+1. **选择动力学可在具名尺度映射下检验结构相容性；这是 P3 候选，不是普遍同构定理。**
 2. **d-value 是算子对抗摩擦的跨尺度带宽表征。**
 3. **现实演化由自由展开、选择锚定与耗散三项共同决定。**
 4. **对象边界来自误差、摩擦与切换成本的平衡，而非绝对刻线。**
-5. **跨尺度统一不等于跨尺度泛心；意识仍需额外满足严格条件。**
+5. **即使跨尺度相容成立，也不推出跨尺度泛心；意识仍需额外满足严格条件。**
 
 ---
 

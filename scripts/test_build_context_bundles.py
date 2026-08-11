@@ -78,7 +78,7 @@ def test_hook_grouping() -> None:
 
 
 # --------------------------------------------------------------------------
-# G1 — the S1/pathwise qualifier must survive into the usage policy
+# G1 — ST-A demotion and the S1/pathwise qualifier must both survive
 # --------------------------------------------------------------------------
 
 def test_p1_t07_semantics() -> None:
@@ -91,6 +91,10 @@ def test_p1_t07_semantics() -> None:
     check("G1 policy names the S3 condition", "P(τ=∞)=0" in g.policy)
     check("G1 policy forbids the unqualified process-level verdict",
           "process-level" in g.policy and "不得" in g.policy)
+    check("G1 records the ST-A demotion",
+          "former P1-T07" in rendered and "no longer a P1 theorem" in rendered)
+    check("G1 routes generative reselectability to P2/P3",
+          "generative reselectability" in g.policy and "P2/P3" in g.policy)
 
     # The regression itself: an unqualified "τ<∞ ⇒ not a stable ISP" must not
     # appear as a standalone licensed claim.
@@ -105,8 +109,8 @@ def test_p1_t07_semantics() -> None:
     check("G1 extracts include the S1 pathwise wording",
           "S1 pathwise" in extracts)
 
-    check("G1 flags that OPEN_TENSIONS does not register the gap",
-          "OPEN_TENSIONS" in g.interpretation or "OPEN_TENSIONS" in g.policy)
+    check("G1 says OPEN_TENSIONS registers the remaining burden",
+          "OPEN_TENSIONS" in g.interpretation and "已登记" in g.interpretation)
 
 
 # --------------------------------------------------------------------------
@@ -345,6 +349,10 @@ def test_manifest_completeness() -> None:
                  "Core_Law/SRT_Reference_Ontology.md",
                  "Core_Law/SRT_Constitution_Seven_Theses.md"):
         check(f"{path} 未收录但在报告中列名", path not in B.SPINE and path in report_now)
+    check("OPEN_TENSIONS 按条件检索、不进入定义 spine",
+          "Core/SRT_OPEN_TENSIONS.md" not in B.SPINE)
+    check("OPEN_TENSIONS 在 manifest 差异报告中显式列名",
+          "Core/SRT_OPEN_TENSIONS.md" in report_now)
 
     missing_fs = [p for p in first_sources
                   if p not in B.SPINE and (B.REPO_ROOT / p).is_file()]

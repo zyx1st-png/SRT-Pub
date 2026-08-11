@@ -35,9 +35,9 @@ $$L_2(t+1) = \mathrm{Stabilize}(L_2(t), \{L_1^{(1..n)}(t+1)\})$$
 * **Implication**: 现实不是单一层面的“存在”，而是由潜在域到显现域的选择过程，并在收敛域中形成稳定约束。
 
 ### T-Core-01: Existence as Selection
-**Deductive Statement**: Existence is equivalent to anchored selection from the latent domain under finite embodied constraints.
-$$\text{Existence}(σ) \iff \hat{G}_\theta[L_0] \to σ_{L_1} \land \Delta F < 0$$
-* **Implication**: 所谓“存在”是选择与锚定的结果，而非背景中自然给定的实体。
+**EX-A statement (2026-08-11)**: Event-level manifest actuality is admitted when a determinate distinction enters `L_1` through primitive actualisation. Anchoring persistence is a later question and must not be added as a hidden condition of first existence.
+$$σ \in L_1 \iff σ \in \mathrm{Range}(\hat{G})$$
+* **Implication**: 所谓“存在”最低指选择产生的显现实在性；持续对象性另需锚定，Stable ISP 另需 P1-T06 / ST-A 条件。
 
 ## II. The Ghost Operator (幽灵算子)
 
@@ -283,8 +283,8 @@ SRT将本体论重构为三个相互作用的拓扑流形：
 - **类比**: 量子叠加态、未做的选择、潜意识
 
 **关键性质**:
-$$L_0 = \text{Constant} \quad \text{(守恒律: Ax-13)}$$
-创新不是"无中生有"，而是从$L_0$的阴影中"照亮"新区域。
+
+任何有限的 $L_1/L_2$ 显现或形式投影都不能穷尽 $L_0^{abs}$（A13 / Ax-L0-02）。创新不是无约束的“从无到有”，但后来完成的形式也不必预先作为同一对象藏在 $L_0$ 中；它是受位置、历史、代价与潜在条件约束的确定化。
 
 ---
 
@@ -330,6 +330,8 @@ $$\text{Hardness}(L_2) \propto |\text{Aut}(L_2)|$$
 
 #### **定义与性质**
 $$\hat{G}_\theta: L_0 \times \mathcal{C}(d) \to L_1$$
+
+> **AM-A 边界（2026-08-11）**：$\hat G_\theta$ 形式化 P0 primitive actualisation 的角色，不是选择之前已经存在的实体，也不是用来解释 actualisation 的独立原因。下列注意、能量、归一化与稳定化机制是领域 realization 候选，不能反向定义 P0。
 
 **为什么叫"幽灵"?**
 1. **非物质性**: $\hat{G}$不是物理对象，而是信息-因果模式
@@ -557,7 +559,7 @@ SRT整合了以下思想家的核心洞见:
 | Karl Friston | Free Energy Principle | $F$最小化 |
 | Giulio Tononi | IIT | $ii$作为存在度量 |
 | Donald Hoffman | Interface Theory | Ax-7 (适应度优先) |
-| Stephen Wolfram | Ruliad | $L_0$的计算定义 |
+| Stephen Wolfram | Ruliad | $L_0^{abs}$ 的计算投影候选，不是完整定义 |
 | Hermann Haken | Synergetics | 除法归一化原型 |
 | Francisco Varela | Autopoiesis | Ax-5 (自创生) |
 | 法称 (Dharmakīrti) | 佛教认识论 | 知觉的选择性 |
@@ -615,11 +617,11 @@ SRT 的核心公理体系可由以下形式化结构概括：
    $$\nabla \Psi_f \propto -\nabla F$$
    含义：任何选择的现实化都伴随不可消除的摩擦代价 $\Psi_f$，与自由能梯度对偶。
 
-### Mechanism Explanation (机制解释)
+### Domain Realization Scaffold（领域实现脚手架）
 
-SRT 的运行机制如下：
+在 primitive actualisation 已被承认之后，当前领域模型使用以下实现脚手架：
 
-- **$\hat{G}_\theta$ (幽灵算子) 作为核心引擎**：$\hat{G}_\theta = \text{Attention}(d, \rho, \vec{v})$，以 d 值（关切范围）、分辨率 $\rho$、意向方向 $\vec{v}$ 为参数，从 $L_0$ 中执行具身有限的选择，生成 $L_1$ 现实。算子的非幂等性 ($\hat{G}^2 \neq \hat{G}$) 保证每次选择都改变现实状态。
+- **$\hat{G}_\theta$ (幽灵算子) 作为形式载体**：在认知 realization 中可写成 $\hat{G}_\theta = \text{Attention}(d, \rho, \vec{v})$，以 d 值（关切范围）、分辨率 $\rho$、意向方向 $\vec{v}$ 参数化一个具身有限的选择接口。该表达不把 attention 定义成 universal actualisation mechanism；算子的非幂等性 ($\hat{G}^2 \neq \hat{G}$) 只约束连续事件的状态改变。
 - **$\Psi_f$ (本体论摩擦) 作为代价约束**：将 $L_0$ 高熵叠加压缩为 $L_1$ 低熵确定态需要持续能量耗散。$\Psi_f$ 的尖峰对应认知中断事件（疼痛、惊奇），持续高位对应病理状态（抑郁）。
 - **$d$ 值作为意识判据**：当 $d > d_{UAL}$ 且 $\Psi_f > 0$ 时系统具有意识。$d$ 的大小决定了算子对 $L_0$ 信息的保留比例（压缩比 $\text{CR} \propto e^{-\alpha d}$），从细菌的即时趋化到人类的抽象道德思维形成连续谱。
 - **$L_2$ 收敛域的稳定化机制**：重复选择在相空间留下”磁化”痕迹，形成不动点集 $L_2 = \{\sigma : \hat{G}_\theta[\sigma] = \sigma\}$，其硬度正比于自同构群大小，从个人习惯到物理定律呈层级排列。

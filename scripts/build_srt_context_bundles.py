@@ -75,7 +75,12 @@ SPINE = [
     "_SRT_CROSS_DOMAIN_MATRIX.md",
     "Core/SRT_Core_22_Equations.md",
     "_SRT_SYMBOL_TABLE.md",
-    "Core/SRT_OPEN_TENSIONS.md",
+    # OPEN_TENSIONS is a conditional source in SRT_AI_START ("when a concept is known
+    # to be not fully sealed"), not one of §2 First Sources. Its full text now exceeds
+    # 20K estimated tokens and would push the definition spine over the reserved budget.
+    # The spine keeps fail-loud status guard extracts and lists OPEN_TENSIONS explicitly
+    # in §0.4; deep/open-pressure work must load the owner separately rather than silently
+    # sacrificing the 45K headroom reserve.
 ]
 
 DOMAINS = {
@@ -471,12 +476,6 @@ def guard_p1_t07() -> Guardrail:
     src = "Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md"
     text = read_text(src)
 
-    m = re.search(r"^>\s+\*\*Status\*\*:.*?(?=\n\s*\n)", text, re.M | re.S)
-    if not m:
-        fail(f"锚点缺失：{src} 中找不到 `> **Status**:` 区块")
-    status_para = re.sub(r"^>\s?", "", m.group(0), flags=re.M).strip()
-    status_para = status_para.split("\n**Proof Audit")[0].strip()
-
     # 1.3 修订的语义分层条款。**必须保留**：它限定了 `τ<∞` 只能推出 S1/pathwise
     # 层面的结论；缺了它，读者会把结论提升成无条件的 process-level 判断。
     m13 = re.search(
@@ -486,46 +485,48 @@ def guard_p1_t07() -> Guardrail:
         fail(f"锚点缺失：{src} 中找不到 1.3 修订的 `τ<∞` 语义分层条款")
     stratification = m13.group(0).strip().rstrip(".")
 
-    m5 = re.search(r"^5\.\s+\*\*What can P1-T07 prove at most\?\*\*.*?$", text, re.M)
-    if not m5:
-        fail(f"锚点缺失：{src} 中找不到 §0 第 5 问")
-    q5 = m5.group(0).strip()
-
     thm_src = "Core/SRT_Core_21b_Constitutive_Theorems.md"
     thm = read_text(thm_src)
-    if "cumulative probability tends toward 1" not in thm:
+    m_decision = re.search(
+        r"^\*\*Decision record \(ST-A, 2026-08-11\)\*\*:.*?(?=\n\s*\n)", thm, re.M | re.S
+    )
+    if not m_decision or "no longer a P1 theorem" not in m_decision.group(0):
         fail(
-            f"锚点缺失：{thm_src} 中找不到 P1-T07 Proof Sketch Step 3 的原文。"
-            "定理可能已被修订——请复核本护栏是否仍然适用，再重新生成。"
+            f"锚点缺失：{thm_src} 中找不到 ST-A 对 former P1-T07 的降阶裁决。"
+            "Canonical 状态可能再次变化——请复核本护栏后再生成。"
         )
+    decision = m_decision.group(0).strip()
 
     return Guardrail(
         gid="G1",
-        title="P1-T07 证明未闭合",
+        title="former P1-T07 已降阶；条件证明负担仍开放",
         severity="高",
-        affected=f"`{thm_src}` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）",
+        affected=(
+            f"`{thm_src}` 的 former P1-T07 absorption remainder，及 "
+            "`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 的 conditional anti-closure candidate"
+        ),
         extracts=[
-            (f"审计自述，来自 `{src}`", status_para),
+            (f"ST-A canonical 裁决，来自 `{thm_src}`", decision),
             (f"审计 1.3 修订的语义分层条款，来自 `{src}`", stratification),
-            (f"审计 §0 第 5 问，来自 `{src}`", q5),
         ],
         interpretation=(
-            f"该定理 Proof Sketch 第 3 步（"
-            f"*neutral `P` ... cumulative probability tends toward 1*）以肯定句写成，"
-            f"正文未标注任何保留。上述审计判定恰恰是这一步不闭合：语料并未*确立*每步正 hazard，"
-            f"而且即使每步 hazard 为正也不蕴含 almost-sure 终止；`ε-neutral` 在语料中从未被形式定义；"
-            f"P1-T06 的 stable ISP 定义是非概率的，S1/S2/S3 随机语义尚未选定。\n\n"
-            f"另需注意：`Core/SRT_OPEN_TENSIONS.md` 目前**未登记**本缺口。"
+            "ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只保留 realized "
+            "history 到达吸收态后不能自行继续的 remainder，以及 P1-T06 continued selectability。"
+            "neutral-kernel anti-closure 留在 P2/P3，仍须独立定义 neutral kernel、选择 S1/S2/S3 "
+            "稳定语义，并声明环境、外部重置规则、终止条件与时间窗，再证明吸收或比较性 closure risk。\n\n"
+            "该降阶与剩余证明负担已登记在 `Core/SRT_OPEN_TENSIONS.md`。"
         ),
         policy=(
-            "- 不得把 P1-T07 当作已证 P1 定理引用。\n"
+            "- 不得把 former P1-T07 当作已证 P1 定理引用；P1 引用仅限 absorption remainder。\n"
+            "- Stable ISP 的 P1 最低条件是 continued selectability；generative reselectability 与 ISP-level "
+            "anti-closure 按 P2/P3 conditional candidate 引用。\n"
             "- 关于 `τ<∞` 只能作**语义分层**的陈述：若某条 realized history 满足 `τ<∞`，"
             "可无条件断言的仅是**该历史上的 S1 / pathwise stability 失败**；"
             "process-level 的 S2 需 `P(τ<∞)>0`，S3 需 `P(τ=∞)=0`。"
             "**在 S1/S2/S3 语义未选定之前，不得据此推出无条件的 process-level "
             "「not a stable ISP」。**\n"
-            "- 不要假装 `ε-neutral` 有形式定义。\n"
-            "- 「查过 `OPEN_TENSIONS` 没找到」**不**足以证明本命题已封口——该缺口尚未登记在那里。"
+            "- 不要假装 `ε-neutral` 已有形式定义，也不要从 `ε_pg`、irreversibility、fixed point、"
+            "metastability 或 `σ<1` 单独推出 anti-closure。"
         ),
         policy_source="`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8",
     )
@@ -803,7 +804,12 @@ def parse_first_sources() -> list[str]:
     if start == -1 or end == -1:
         fail("锚点缺失：SRT_AI_START.md 中找不到 §2 First Sources 区段")
     seen: list[str] = []
-    for path in re.findall(r"`([^`]+\.md)`", text[start:end]):
+    # Only the numbered precedence list is unconditional. The prose immediately
+    # below it names conditional sources such as OPEN_TENSIONS; treating every
+    # backticked path in the section as a mandatory spine member defeats that
+    # distinction and makes the budget contract depend on optional deep reads.
+    numbered = re.findall(r"^\d+\.\s+`([^`]+\.md)`", text[start:end], re.M)
+    for path in numbered:
         if path not in seen:
             seen.append(path)
     if not seen:

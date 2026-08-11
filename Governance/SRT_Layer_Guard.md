@@ -125,7 +125,7 @@ Core_Law/
 ├── SRT_Reference_Axioms.md        ← L1  公理形式化
 ├── SRT_Reference_Ontology.md      ← L1  三域形式化 + 跨领域映射
 ├── SRT_Reference_Dynamics.md      ← L1  算子 + 摩擦方程
-├── SRT_Reference_Scaling.md       ← L1  跨尺度同构定理
+├── SRT_Reference_Scaling.md       ← L1/P3  跨尺度结构相容接口（严格共轭仅限可逆表征）
 ├── SRT_Constitution_Seven_Theses.md ← L1  哲学论题 + 框架比较
 └── SRT_Constitution_One_Page_CN.md  ← L1 + OS  入门接口
 ```

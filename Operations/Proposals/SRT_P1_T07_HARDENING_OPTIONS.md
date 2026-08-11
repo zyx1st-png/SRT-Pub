@@ -1,7 +1,7 @@
 ---
 id: SRT-OPS-PROPOSAL-P1-T07-HARDENING-OPTIONS
 type: proposal
-status: draft
+status: superseded_by_author_decision
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -17,7 +17,7 @@ tags: [Governance, Proposal, P1-T07, ProofHardening]
 
 # P1-T07 Hardening — Amendment Options (proposal only)
 
-> **Status**: non-canonical proposal memo. **Nothing here is applied.** It modifies no theorem, axiom, definition, or equation. These are candidate routes for a *later, separately authorized* theorem-amendment PR. Selection among them is the author's call and is out of scope for this pass. Basis: `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`.
+> **Supersession record (2026-08-11)**: This non-canonical options memo is retained as decision history. The author selected ST-A in `Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md`: former P1-T07's unconditional P1 status is withdrawn, the absorption remainder stays in 21B, and the neutral-kernel anti-closure route is registered as a P2/P3 conditional candidate in 21C B13. Options A/B/C below are no longer an open author gate; their mathematical preconditions remain useful if a future conditional theorem is attempted.
 
 ## Shared preconditions for any option
 

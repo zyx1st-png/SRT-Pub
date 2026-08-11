@@ -72,7 +72,7 @@ local proxy explains a phenomenon != local proxy exhausts d's ontological role
 
 | Domain | canonical usage | allowed projection | forbidden shortcut |
 |---|---|---|---|
-| Core | `ε_pg` = L0 minimum non-neutrality postulate; ISP-level ε = P1 corollary when locally sourced; `ε_reg` = operator regularizer; `ε_s` = stake-threshold bridge | ISP anti-closure bias when sourced to P1 theorem | collapse all ε symbols into one empirical constant or one theory-canonical object |
+| Core | `ε_pg` = L0 minimum non-neutrality postulate; ISP-level anti-closure ε = ST-A conditional P2/P3 candidate; `ε_reg` = operator regularizer; `ε_s` = stake-threshold bridge | ISP anti-closure comparison only when stability semantics, neutral baseline, environment, horizon, and proof/model are declared | treat ISP anti-closure as a P1 corollary, or collapse all ε symbols into one empirical constant or one theory-canonical object |
 | Physics | only as implementation or regularization term unless tied to core source | regulator / residual asymmetry proxy | direct empirical theorem from `ε_pg` |
 | Neuroscience | threshold / regularization proxy only | gain floor, stake threshold, signal gate | neural threshold proves L0 proto-gradient |
 | Philosophy / Political | minimum asymmetry or entry condition only with level marking | anti-closure, non-domination threshold proxy | ε grounds legitimacy by itself |

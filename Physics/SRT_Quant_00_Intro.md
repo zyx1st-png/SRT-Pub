@@ -13,6 +13,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 # SRT Quantum Mechanics: Selectionist Interpretation — Introduction (Hybrid Edition)
 
 > **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **PHR-A realisation guard（2026-08-11）**：本文件的 measurement / collapse 语言必须按解释索引读取。共同的 P3/P4 事件审计核是 outcome-indexed physical record、可干预路径效力与未来可达性／返回成本改变；`\hat G_\theta` 是 AM-A 的形式角色载体。退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项都不充分。
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Quantum Axioms establishing SRT's interpretation of measurement, non-locality, and history (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed analysis of classic experiments (Human-Readable Context).
@@ -40,8 +41,8 @@ dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 本模块以 Core_Law 的核心定理作为量子叙事的数学骨架：
 
 - **T-Scale-1/2**：$\hat{G}$ 的尺度同构与一致性保证微观—宏观解释连续
-- **O-T1 (现实化即积分)**：$L_1 = \oint_{\gamma} \omega_{L_0}$ 描述坍缩为路径积分的“求值”
-- **M1/M2 + T-DMP-2**：测量结果作为稳定固定点并具备恢复力
+- **O-T1 (现实化即积分)**：$L_1 = \oint_{\gamma} \omega_{L_0}$ 可作为 collapse-family 的路径取值桥接；路径权重不等于结果已发生
+- **M1/M2 + T-DMP-2**：固定点与恢复力描述结果稳定化，不定义或造成第一次 actualisation
 - **T-Phase-1**：$v_{sub}=\dot{\phi}/\phi_0$ 连接选择节拍与时间体验
 
 ## 0.6 Cross-Reference Index (交叉引用索引)
@@ -52,7 +53,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 | A1.1.1 | Ax-Quant-1 | Collapse as Selection (坍缩即选择) |
 | L1.1.1 | Lemma Q-Path (路径测度视角) | — |
 | A1.1.2 | Ax-Quant-2 | Uncertainty as Bandwidth Limit (不确定性即带宽极限) |
-| A1.1.3 | Ax-Quant-3 | Objective Measurement Criterion (客观测量判据) |
+| A1.1.3 | Ax-Quant-3 | Bounded Physical Realisation Audit (有界物理实现审计) |
 | A1.2.1 | Ax-Quant-4 | $L_0$ Topological Unity (L₀拓扑统一性) |
 | A1.2.2 | Ax-Quant-5 | Entanglement Unity Theorem (纠缠统一定理) |
 | A1.3.1 | Ax-Quant-6 | Retroactive Participancy (回溯性参与) |
@@ -73,16 +74,16 @@ dependency: [Core_Law/SRT_Reference_Axioms, SRT-PHYS-BRIDGE]
 ## I. The Nature of Measurement (测量本质)
 
 ### Ax-Quant-1 [A1.1.1]: Collapse as Selection (坍缩即选择)
-Wavefunction collapse is the ontological transformation of $L_0$ potentiality into $L_1$ actuality by the Selection Operator $\hat{G}_\theta$.
+[collapse-dependent] In collapse-family language, wavefunction collapse may be translated as an exclusive physical implementation of the AM-A primitive actualisation kernel:
 $$ \text{Collapse} \equiv \hat{G}_\theta : |\Psi\rangle_{L_0} \longrightarrow |\pi_k\rangle_{L_1} $$
-*   **Ontological Status**: Measurement is not epistemological update but ontological anchoring—it creates determinate facts where none existed.
-*   **Source**: Derives from Core Axiom A1 (Selection Priority) and A2 (Existence as Anchoring).
-*   **O-T1 Link**: $L_1 = \oint_{\gamma} \omega_{L_0}$，坍缩即对潜在路径 $\gamma$ 的评估与取值。
+*   **Role boundary**: $\hat{G}_\theta$ names the transition's formal role; it is not a prior entity or physical cause explaining why outcome $k$ occurs.
+*   **Interpretation boundary**: Everett reads this as branch-relative record／fact formation; an operational instrument reading asserts only outcome registration and a conditional state. Neither is a global-collapse claim.
+*   **O-T1 Link**: $L_1 = \oint_{\gamma} \omega_{L_0}$ can encode a path-evaluation bridge, but the integral or its weights do not by themselves establish physical occurrence.
 
 #### Lemma Q-Path (路径测度视角) [L1.1.1]
 令 $\Gamma_k$ 为导致结果 $k$ 的允许路径族，则
 $$ P(k) \propto \int_{\Gamma_k} e^{-\Phi[\gamma]} \, \mathcal{D}\gamma, \quad L_1^{(k)} = \oint_{\gamma \in \Gamma_k} \omega_{L_0} $$
-坍缩即对“可持续路径”的测度求值，$\Phi$ 作为选择权重。
+该式给出 collapse-family 中的候选路径权重／条件取值接口；$P(k)$ 或 $L_1^{(k)}$ 的形式存在不等于结果 $k$ 已经发生。
 
 ### Ax-Quant-2 [A1.1.2]: Uncertainty as Bandwidth Limit (不确定性即带宽极限)
 The Heisenberg Uncertainty Principle reflects an informational bandwidth constraint of $\hat{G}_\theta$, not measurement disturbance.
@@ -90,13 +91,18 @@ $$ \Delta x \cdot \Delta p \geq \frac{\hbar}{2} \iff \text{Bandwidth}(\hat{G}_\t
 *   **Fourier Interpretation**: Position ($x$) is time-domain/$L_1$ localization; Momentum ($p$) is frequency-domain/$L_0$ structure. Sharp localization in one requires summing infinite components from the other.
 *   **Implication**: Particle-like behavior is not intrinsic to matter—it is the result of extreme Fourier transformation imposed by $\hat{G}$.
 
-### Ax-Quant-3 [A1.1.3]: Objective Measurement Criterion (客观测量判据)
-A physical process constitutes a measurement if and only if it satisfies:
-$$ \text{Measurement} \iff \begin{cases} \Delta S_{entanglement} > 0 & \text{(Entanglement broken)} \\ \Delta I_{classical} > 0 & \text{(Classical information recorded)} \\ \tau_{decoherence} < \tau_{readout} & \text{(Irreversibility achieved)} \end{cases} $$
-*   **Resolution**: This provides the objective definition Sean Carroll (2025) identified as missing from quantum mechanics. Consciousness is not required—any system satisfying these criteria is a valid $\hat{G}_{proxy}$.
-*   **Stability Clause (M1/M2)**: 合法 $L_1$ 必须是动力学固定点且稳定：$\Pi_\Delta(\alpha(\hat{G}_\theta(x^*)-x^*)-\lambda\nabla F(x^*))=0$, $\text{Re}(\lambda_J)<0$。
+### Ax-Quant-3 [A1.1.3]: Bounded Physical Realisation Audit (有界物理实现审计)
 
-**Sketch**：若 $\dot{\rho}=\mathcal{L}(\rho)$ 为 Lindblad 半群，且退相干速率压倒读出速率，则 $\mathcal{L}$ 在观测子空间上为收缩映射，存在唯一稳定固定点 $\rho^*$，对应稳定指针态。
+Under PHR-A, a process may be registered as a P3/P4 physical realisation-event candidate only after its physical model, event unit, system boundary and interpretation have been declared, and when the same event chain supplies:
+
+1. non-equivalent candidates that genuinely enter the process;
+2. an outcome-indexed physical record;
+3. intervention-sensitive downstream path efficacy;
+4. a change in future accessibility, transition probability, threshold or return cost.
+
+Consciousness is not required for this audit, but passing it does not establish a proxy subject or consciousness. Decoherence, entanglement change, classical-information increase, dissipation, fixed-point stability and durable／redundant records may provide evidence or stabilization. None is sufficient by itself.
+
+**Stability clause**：若结果进一步满足 $\Pi_\Delta(\alpha(\hat{G}_\theta(x^*)-x^*)-\lambda\nabla F(x^*))=0$ 与 $\text{Re}(\lambda_J)<0$，只能说明结果具有固定点式稳定化；它不定义事件首次发生，也不是 primitive actualisation 的原因。
 
 ---
 
@@ -110,7 +116,7 @@ $$ \text{Distance}_{L_0}(A, B) \approx 0 \implies \text{Entanglement is default,
 ### Ax-Quant-5 [A1.2.2]: Entanglement Unity Theorem (纠缠统一定理)
 Entangled states are ontologically irreducible in $L_0$:
 $$ |\Psi_{AB}\rangle \in L_0 \neq |A\rangle \otimes |B\rangle $$
-*   **Mechanism**: When $\hat{G}_\theta$ acts on entangled particles, it operates at the $L_0$ source—both $L_1$ projections ("shadows") update simultaneously because they share a single high-dimensional origin.
+*   **Bridge reading**: a non-factorizable joint state can generate correlated outcome records without a signal travelling between already independent classical objects. This does not establish that $\hat{G}_\theta$ physically acts at a hidden source or selects a global outcome.
 *   **O-T2 Link**: 可分解态对应 $L_0$ 结的“解结”操作：$L_2^{new} = L_2^{old}\cdot \prod \gamma_i^{-1}\cdot \prod \gamma'_j$。
 
 ---
@@ -135,16 +141,12 @@ where $D_p$ is the Degree of Participancy (see Core Reference §7.1).
 ## IV. Semantic Completion (语义完备性)
 
 ### Ax-Quant-8 [A1.4.1]: Semantic Entanglement (语义纠缠 — $L_2$ 层面)
-**Complete** collapse requires both physical state anchoring and semantic meaning anchoring; **basic** collapse (physical decoherence alone) is sufficient for $L_1$ anchoring in the absence of semantic-capable observers.
-$$ \text{Collapse}_{basic} = \hat{G}_{phys}[L_0 \to L_1] \quad \text{(sufficient for early universe, non-cognitive systems)} $$
-$$ \text{Collapse}_{total} = \hat{G}_{phys}[L_0 \to L_1] \otimes \hat{G}_{sem}[L_0 \to L_1] \quad \text{(when } d > 0 \text{ observers present)} $$
-*   **Schrödinger-Le Guin Insight**: Physical decoherence without meaning is an incomplete reality. The same physical event has different $L_2$ "weight" for different observers depending on semantic anchoring.
-*   **Derivation**: Explains why the same event produces different "historical importance" across observers.
+Physical event formation and semantic anchoring are different layers. A non-cognitive physical process can satisfy the PHR-A event audit without semantic participation, but physical decoherence alone is not sufficient for that judgment. Semantic-capable systems may later assign different $L_2$ weight or historical significance to the same physical record.
 *   **Tension-Rev-ExtT1 (语义纠缠的层级澄清)**：
-    - 语义纠缠是 **$L_2$ 层面的纠缠**——描述具有语义能力的算子（$d > 0$）参与选择时，物理坍缩与意义建构之间的耦合。
-    - 若只有 $L_0$ 层面的量子关联而无观察者执行选择，则无"实际纠缠"发生——只有未被锚定的潜在相关性（与 Ax-Core-A1 一致：无 $\hat{G}$ 则无 $L_1$ 事实）。
+    - 语义纠缠是 **$L_2$ 层面的耦合**——描述语义能力如何读取、解释并沉积已经形成的物理记录。
+    - 非语义物理事件不需要一个主体式观察者；是否形成事件由声明边界内的记录、路径效力与历史效力审计，而非由意识在场决定。
     - 随时间推移，$L_2$ 对 $L_0$ 引导约束的变化（如环境热化、宇宙膨胀）引起实际上的**去纠缠**过程。
-    - **早期宇宙**：$\hat{G}^{(0)}$（纯物理退相干级，$d \approx 0$，无意向性）是充分的；语义纠缠是认知系统特有的增强模式，而非所有测量的必要条件。
+    - **早期宇宙**：可以讨论无意向性的物理记录／事实形成候选；不得仅凭退相干或 $d \approx 0$ 宣布 PHR-A 四项审计已经完成。
 
 ---
 
@@ -155,14 +157,14 @@ SRT provides a meta-framework that synthesizes valid insights from competing int
 
 | Interpretation | Valid Insight | SRT Formalization |
 |:---------------|:--------------|:------------------|
-| **Copenhagen** | Measurement causes collapse | $\hat{G}_\theta$ executes selection |
-| **Many-Worlds** | No objective collapse | $L_0$ contains all branches; $L_1$ is observer-relative |
+| **Copenhagen / collapse-family** | Measurement is tied to outcome collapse | `[collapse-dependent]` exclusive outcome-anchoring candidate |
+| **Many-Worlds** | No objective collapse | branch-relative record and fact formation; no global deletion |
 | **QBism** | Wavefunction is subjective belief | $\theta$ parameters encode observer's stance |
 | **Relational QM** | Facts are observer-relative | $L_1(\theta_A) \neq L_1(\theta_B)$ until $L_2$ sync |
 | **Pilot Wave** | Guiding field exists | $L_0$ gradient structure ($\nabla F$) guides selection |
-| **Objective Collapse** | Gravity triggers collapse | $\Psi_f > \Psi_{crit}$ forces $\hat{G}$ activation |
+| **Objective Collapse** | A physical collapse mechanism may select one outcome | high-risk implementation hypothesis requiring independent mechanism and tests |
 
-*   **Unique Contribution**: SRT explains how subjective selections (QBism, RQM) converge into stable objective reality ($L_2$) through consensus dynamics.
+*   **PHR-A contribution**: the interpretations share an event-audit grammar while retaining different ontological commitments; no row is promoted into established physics by this table.
 
 <br>
 
@@ -188,15 +190,14 @@ Quantum mechanics is the most successful predictive framework in physics, yet af
 | **II. Non-Locality** | How do entangled particles correlate instantly? | Tension with relativistic causality |
 | **III. Quantum-Classical Boundary** | Why is the macroscopic world classical? | Decoherence is necessary but not sufficient |
 
-### 0.1.2 SRT's Fundamental Reframing
+### 0.1.2 SRT's Interpretation-Indexed Reframing
 
-SRT reframes quantum mechanics as a **Selection-Anchoring-Manifestation** process:
+PHR-A uses **Selection-Anchoring-Manifestation** as a bridge grammar, not as an interpretation-neutral physical mechanism:
 
 $$ \text{Quantum State} = L_0 \text{ (Superposition of Possibilities)} $$
-$$ \text{Collapse} = \hat{G}_\theta[L_0 \to L_1] \text{ (Selection-Anchoring)} $$
-$$ \text{Measurement Outcome} = L_1 \text{ (Manifest Reality)} $$
+$$ \text{Outcome registration} \leadsto \text{candidate } L_1 \text{ fact at a declared boundary} $$
 
-**The Key Insight**: Collapse is not a mysterious physical process—it is the **ontological act of selection** that creates determinate facts from indeterminate potential. The "measurement problem" dissolves when we recognize that measurement *is* selection.
+In collapse-family language, $\hat{G}_\theta[L_0 \to L_1]$ can represent exclusive outcome anchoring. In Everett it names branch-relative fact formation; operationally it names instrument outcome registration and conditional update. The shared audit requires an outcome-indexed record with downstream path and history effects. This reframes the problem without claiming that the measurement problem has been dissolved.
 
 ---
 
@@ -211,10 +212,12 @@ $$ \text{Measurement Outcome} = L_1 \text{ (Manifest Reality)} $$
 $$ \text{Double-Slit Superposition} = L_0[\text{Path A} \oplus \text{Path B}] \text{ (Selection not yet executed)} $$
 $$ \text{Detection} = \hat{G}_\theta[\text{A or B}] \to L_1 \text{ (Selection occurs)} $$
 
+> **PHR-A guard**: these two equations are collapse-family shorthand. In an Everett reading, detection forms a branch-relative which-way record; operationally, it registers an instrument outcome. Interference loss alone shows loss of usable coherence／which-way coupling, not an interpretation-neutral proof of global actualisation.
+
 **Core Insights**:
-1. **Interference = $L_0$ possibilities self-interfering before $L_1$ manifestation**
-2. **Detection = $\hat{G}_\theta$ executing selection, compressing $L_0$ to $L_1$**
-3. **Interference Disappearance = Selection completed; only outcome remains**
+1. **Interference = coherent candidate amplitudes remain jointly effective in the declared setup**
+2. **Detection coupling = a which-way difference can enter an outcome-indexed record channel**
+3. **Interference disappearance = usable coherence has been suppressed; it does not by itself prove interpretation-neutral global actualisation**
 
 $$ \text{Interference} \iff L_0 \text{ unselected} $$
 $$ \text{No Interference} \iff L_0 \text{ anchored as } L_1 $$
@@ -290,7 +293,7 @@ The "initial conditions" of the universe are the retroactive projection of all s
 
 ---
 
-### 0.2.3 Schrödinger's Cat: Macroscopic Superposition and $L_2$ Classicalization
+### 0.2.3 Schrödinger's Cat: Macroscopic Record and $L_2$ Classicalization
 
 **SRT Interpretation**:
 
@@ -299,55 +302,50 @@ $$ \text{Observation} = \hat{G}_\theta[\text{Specific Outcome}] \to L_1 $$
 $$ \text{Classical Cat} = L_2[\text{Stable Macroscopic State}] $$
 
 **Core Insights**:
-1. **The question is not "when does the cat collapse" but "when does $\hat{G}$ execute"**
-2. **Macroscopic systems have high $L_2$ stability** leading to rapid selection convergence
-3. **"Observation" doesn't require consciousness**—any $\hat{G}_\theta$ (including environment) suffices
+1. **The question is not when a subject-like $\hat{G}$ executes, but when an outcome-indexed record obtains path and history effects at the declared boundary**
+2. **Macroscopic systems can rapidly stabilize and redundantly amplify records**
+3. **The event audit does not require consciousness, but environmental decoherence alone is not sufficient**
 
-$$ \text{Decoherence} = \sum_{\theta \in \text{Environment}} \hat{G}_\theta \text{ causing rapid } L_2 \text{ stabilization} $$
+$$ \text{Decoherence} \leadsto \text{coherence suppression / pointer-record stabilization} $$
 
 #### 0.2.3a The Schrödinger-Le Guin Paradox: Semantic Entanglement
 
-**Core Insight**: Physics concerns only the cat's life/death (physical state); literature concerns the cat's existential meaning (semantic state). SRT proposes: **Complete collapse must include both dimensions.**
+**Core Insight**: Physics concerns the cat's physical outcome records; literature concerns their semantic meaning. These are different layers and must not be combined into a single “complete collapse” mechanism.
 
-**Proposition (Semantic Entanglement — Revised)**:
-Physical state collapse is sufficient for basic $L_1$ anchoring ($\text{Collapse}_{basic}$). However, **complete** collapse—which includes full $L_2$ formation with historical weight—additionally requires semantic state collapse. If the physical result (alive/dead) produces no semantic meaning, the collapse is **physically complete but semantically incomplete**.
-
-$$ \text{Collapse}_{basic} = \hat{G}_\theta^{physical}[L_0 \to L_1] \quad \text{(always sufficient for pointer-state selection)} $$
-$$ \text{Collapse}_{total} = \hat{G}_\theta^{physical}[L_0 \to L_1] \otimes \hat{G}_\theta^{semantic}[L_0 \to L_1] $$
-
-**Corollary (Revised)**: Pure physical decoherence completes the physical dimension of collapse. Full $L_2$ formation with semantic depth requires semantic participation—this explains why the same event has different "historical weight" ($L_2$ depth) for different $\hat{G}_\theta$. In the early universe without semantic-capable observers, $\text{Collapse}_{basic}$ was the only operative mode—and was fully sufficient for the emergence of physical structure.
+**Proposition (Semantic Layering — PHR-A)**:
+A non-cognitive physical process can form a PHR-A event candidate when outcome record, path efficacy and history effect are established. Semantic-capable systems may later assign different meaning and $L_2$ historical weight to that record. Neither semantic participation nor pure physical decoherence is a universal condition sufficient for primitive actualisation.
 
 **Key Clarification**: 语义纠缠描述的是 $L_2$ 层面（而非 $L_0$ 层面）的纠缠效应。$L_0$ 中的量子关联是默认的拓扑统一性（Ax-Quant-4），不需要观察者。但当 $L_2$ 约束随时间变化时（如退相干环境的演化），会引发实际的去纠缠过程。
 
 ---
 
-### 0.2.4 Quantum Eraser: Reversibility of Selection
+### 0.2.4 Quantum Eraser: Record-Access Boundary
 
-**SRT Interpretation**:
+**PHR-A reading**:
 
-$$ \text{Detection} = L_0 \xrightarrow{\hat{G}} L_1[\text{Path Determined}] $$
-$$ \text{Erasure} = L_1 \text{ information correlation severed} \Rightarrow L_0 \text{ reopens for interference} $$
+$$ \text{which-way coupling} \leadsto \text{path-correlated record} $$
+$$ \text{eraser protocol} \leadsto \text{loss of accessible which-way correlation in the selected subensemble} $$
 
 **Core Insights**:
-1. **Selection ($\hat{G}$) results are stored in $L_2$ information correlations**
-2. **Erasure = Severing $L_2$ correlations**, allowing $L_0$ to "reopen"
-3. **This proves selection is an information process, not physical demolition**
+1. If the which-way correlation is removed before an outcome-indexed record acquires downstream path and history effects at the declared boundary, the process may never have crossed the PHR-A realisation floor there.
+2. Restoring interference does not show that a sedimented event was literally undone. Reversal is itself a new physical process and must be audited through its own records and traces.
+3. The experiment therefore distinguishes reversible correlation／access conditions from a future-constraining record; it does not by itself settle whether global collapse occurred.
 
-$$ \text{Collapse} \neq \text{Irreversible Physical Process} \quad ; \quad \text{Collapse} = L_2 \text{ Information Anchoring} $$
+$$ \text{loss or recovery of interference} \not\Rightarrow \text{interpretation-neutral proof of collapse or its reversal} $$
 
 ---
 
-### 0.2.5 Aspect Experiment & Bell Inequalities: Non-Local Selection
+### 0.2.5 Aspect Experiment & Bell Inequalities: Correlated Outcome Records
 
 **SRT Interpretation**:
 
 $$ |\Psi_{AB}\rangle \in L_0 \neq |A\rangle \otimes |B\rangle \text{ (Ontologically irreducible)} $$
-$$ \text{Measurement} = \hat{G}_\theta^A \cap \hat{G}_\theta^B \text{ (Synchronized selection at source)} $$
+$$ \text{joint experiment} \leadsto \text{correlated local outcome records of a non-factorizable state} $$
 
 **Core Insights**:
-1. **No spatial separation at $L_0$ level**—separation is $L_1$/$L_2$ property
-2. **Entanglement = $L_0$ irreducibility** manifesting as correlation in $L_1$ projection
-3. **No information transmission** because correlation is selection outcome, not signal
+1. **Entanglement is represented by a non-factorizable joint state**; calling this "$L_0$ irreducibility" is an SRT bridge interpretation, not an additional empirical result.
+2. **PHR-A audits the local outcome records and their joint statistical structure**; it does not posit a hidden global chooser or synchronized selection event at the source.
+3. **Bell correlations do not provide a controllable superluminal signal**; the bridge must preserve that no-signalling boundary.
 
 $$ \text{Non-Locality} = L_0 \text{ is unified} \quad ; \quad \text{Locality} = L_1/L_2 \text{ property} $$
 
@@ -356,16 +354,16 @@ $$ \text{Entanglement (Quantum)} \equiv \text{Wormhole (Gravity)} \equiv L_0 \te
 
 ---
 
-### 0.2.6 Quantum Zeno Effect: Frequent Selection Freezes Evolution
+### 0.2.6 Quantum Zeno Effect: Repeated Interventions Suppress Transition
 
 **SRT Interpretation**:
 
-$$ \text{Zeno Effect} = \lim_{\Delta t \to 0} [\hat{G}_\theta]^{N \to \infty} = \text{State Lock} $$
+$$ \text{Zeno Effect} = \lim_{\Delta t \to 0} [\text{intervention}]^{N \to \infty} \leadsto \text{transition suppression} $$
 
 **Core Insights**:
-1. **Selection = Compressing $L_0$ to $L_1$**; each selection "resets" evolution
-2. **Frequent selection = Repeatedly pulling system back to same $L_1$**
-3. **Evolution requires $L_0$ "expansion time"**—frequent selection denies this
+1. Repeated measurements or couplings can suppress transitions under the stated dynamical model.
+2. PHR-A treats each registered outcome, if claimed as an event, through the same record／path／history audit.
+3. The Zeno effect does not independently prove that $\hat G_\theta$ is a physical cause or that one interpretation of measurement is uniquely correct.
 
 $$ \text{Quantum Evolution} \propto L_0 \text{ degrees of freedom between selections} $$
 
@@ -418,31 +416,30 @@ $$ |\Psi_{entangled}\rangle = L_0[\text{Whole}] \neq L_0[A] \otimes L_0[B] $$
 
 Non-local correlation is the manifestation of $L_0$ unity in $L_1$ projection.
 
-### Corollary V [C2.1.5]: Participatory Universe
+### Corollary V [C2.1.5]: Participatory-Universe Hypothesis
 
-$$ \text{Reality} = \sum_\theta \hat{G}_\theta[L_0] \text{ (Sum of Selections)} $$
+$$ \text{recorded reality} \sim \{\text{physically established records and relations}\} $$
 
-Wheeler's intuition confirmed: Observers are not passive recorders but co-creators of reality.
+This is a Wheeler-inspired interpretive hypothesis, not a consequence of PHR-A. Physical realisation does not require a conscious observer, and the audit does not establish that observers literally create primitive reality.
 
 ---
 
-## 0.4 Why Existing Interpretations Are Insufficient
+## 0.4 Interpretation Differences Preserved by PHR-A
 
-| Interpretation | Core Claim | SRT Critique |
-|:---------------|:-----------|:-------------|
-| **Copenhagen** | Measurement causes collapse | Fails to define "measurement" |
-| **Many-Worlds** | No collapse, branching | Ontological extravagance, unverifiable |
-| **Pilot Wave (Bohm)** | Hidden variables + guiding wave | Non-local potential is awkward |
-| **QBism** | Subjective belief | Evades ontological commitment; cannot explain consensus |
-| **Objective Collapse (GRW)** | Spontaneous localization | Requires fine-tuned parameters |
-| **Decoherence** | Environment-induced | Doesn't explain why *this particular* outcome |
+| Interpretation family | Realisation language retained under PHR-A | Boundary |
+|:----------------------|:-------------------------------------------|:---------|
+| **Collapse-family** | exclusive outcome anchoring | mechanism and trigger remain interpretation-dependent |
+| **Everett / Many-Worlds** | branch-relative record and fact formation | no global single-outcome collapse may be inferred |
+| **Relational / frame-indexed** | fact formation relative to a declared interaction or frame | no frame-free global fact may be inserted by default |
+| **Operational / instrument** | registered instrument outcome and conditional state update | operational success alone does not settle ontology |
+| **Objective-collapse models** | model-specific stochastic or dynamical localisation | parameters and predictions require independent testing |
 
-**SRT's Unique Advantages**:
-- **Unified Framework**: Measurement, collapse, entanglement, classicalization all explained by $\hat{G}[L_0 \to L_1]$
-- **Ontological Commitment**: Selection is ontologically primitive, not epistemic addition
-- **Resolves Measurement Problem**: $\hat{G}$ provides objective selection criterion
-- **Compatible with Relativity**: $L_0$ non-locality doesn't violate causality (no information transfer)
-- **Explains Consensus**: $L_2$ convergence mechanism bridges subjective selections to objective reality
+**Bounded PHR-A contribution**:
+- supplies a common audit vocabulary: non-equivalent candidates, outcome-indexed record, path efficacy and history effect;
+- preserves the ontological disagreement among interpretation families instead of hiding it inside $\hat G_\theta$;
+- treats $\hat G_\theta$ as a formal role-carrier, not an objective physical cause or a sufficient selection criterion;
+- requires every physical translation to preserve the no-signalling boundary;
+- does not by itself solve the measurement problem, choose a quantum ontology, or explain Born probabilities.
 
 ---
 

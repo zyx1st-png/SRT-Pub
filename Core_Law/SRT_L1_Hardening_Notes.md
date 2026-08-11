@@ -190,7 +190,7 @@ $$
 |---|---|---|
 | `\Pi_{T_{dir}}` | 沿"算子方向可读性"维度的正交投影；与 `T_{dir}` 投影 `\mathcal{F}_T`（`Core_Law/SRT_L1_Formalism.md §6.2`）的微分共享方向场 | "我感知得到我未走的方向"清晰度 |
 | `\Pi_{\Psi_f}` | 沿"支付能力"维度的正交投影；由 `_SRT_PSI_F_CANONICAL.md` friction tensor `\Psi_f^{ij}` 的局部正交基张成 | "我未走那条路所需支付的累积" |
-| `\Pi_{L_0}` | 沿"L_0 残余压力"维度的正交投影；由 P1-T07 hierarchy Layer 1 的 `\varepsilon_{pg}(P, t)` 局部场张成 | "底层选择压力未被路径消化的累积" |
+| `\Pi_{L_0}` | 沿"L_0 残余压力"维度的正交投影；由 L₀ `\varepsilon_{pg}` 公设的 P-本地化候选场张成（本地化形式开放） | "底层选择压力未被路径消化的累积"；非 former P1-T07 hierarchy 后果 |
 
 A2 假设保证三个投影近似互斥；非正交残余以 `o(1)` 修正项进入。
 

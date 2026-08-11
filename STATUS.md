@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-08
+updated: 2026-08-12
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-08
+> **最后更新**：2026-08-12
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -20,6 +20,12 @@ updated: 2026-08-08
 
 - 首读顺序唯一权威：`AGENTS.md §Session Start`。
 - 当前第一优先工作线：完成此前未融合材料的 Pipeline 1 收口，并保持 Material Log、索引、registry 与 hook 一致。
+- 2026-08-11 五项相邻作者级边界裁决已落地：**PC-A**（potential non-exhaustion／non-preformation）、**AM-A**（P0-01 承载 primitive actualisation kernel）、**PHR-A**（物理实现采用 interpretation-plural P3/P4 audit）、**ST-A**（结构稳定／生成可再选择双轴）与 **EX-A**（事件现实性／锚定持续／stable ISP 三层分离）。均不构成材料证据升级，也不推进主体或意识命题。
+- 2026-08-11 作者已选择 **PHR-A**：AM-A 的物理实现采用 interpretation-plural P3/P4 audit。共同审计链为“非等价候选 → outcome-indexed 物理登记 → 可干预路径效力 → 未来可达性／返回成本改变”；collapse-family、Everett／branch-relative 与 operational／instrument 口径显式分开。地板判决仍是**黄灯／条件连接**：退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项均不充分，也没有建立解释中立的普遍物理机制。
+- 2026-08-11 作者已选择 **ST-A**：`P1-T06` 的稳定最低条件为声明扰动范围内的 recurrent historical reconstitution + continued selectability；generative reselectability 进入 21C B13 的 P2/P3 生成健康层。former `P1-T07` 无条件反闭合 theorem 已撤销，只保留 absorption remainder；neutral-kernel anti-closure 须补稳定语义、环境、无重置条件、时间窗与证明。fixed point、metastability、低摩擦、`σ<1`、option diversity 与 `ΔR_future>0` 均不得单项充当稳定／健康／合法性通用判据。
+- 2026-08-11 作者已选择 **EX-A**：`P0-01` 固定 determinate `L_1` event 的 manifest actuality；`P0-02` 只处理该事件是否留下有效痕迹、获得维持条件并持续约束后续转移；stable ISP identity 仍由 `P1-T06 / ST-A` 承担。旧式 `E = 1-H(L_1)/H(L_0)` 已降至 21C B14 的历史启发式，不再是 P0 方程或量化读出；EX-A 未采用全局 `H(L_0^{abs})`、归一化或 existence index。
+- 2026-08-12 `Core_14` 跨尺度熵证明审计已落地：`ΔS=H(L_0)-H(L_1)`、无条件粗粒化熵式与“所有尺度共同满足最小作用”不再支撑同构；strict conjugacy 只在尺度映射可逆时保留为特殊 P3 候选。一般接口回到 `P3-B06 / T-Scale-02C1` 的近似交换，并须声明状态空间、尺度映射、保留观测量、比较范数、容差与失败例。跨尺度共同项只到选择—约束—可支付性语法。
+- 2026-08-12 首个有界实例 `P3-Scale-NB1` 已落地：广义“神经除法归一化 → 认知／行为选择”为**红灯软连接**；相对神经响应不是离散选择，`H-λE` 也不唯一推出除法归一化。当前仅保留**黄灯条件接口**：具名候选映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与神经干预跟踪必须同时过门；尚无具名数据把该桥转绿。
 - 论文线：
   - Frontiers 稿 `1837760` 已接受，但因 APC 过高准备终止原出版路径并转投；在取得原期刊明确终止确认前不得新投，执行卡为 Issue #740；
   - *Costly Selective Closure* / Adaptive Behavior 已投稿，尚未进入外部评审；

@@ -21,7 +21,7 @@ tags: [Governance, Proposal, Consistency, DecisionGate, AntiDrift]
 
 # SRT Consistency — Author Decision Packet (proposal only)
 
-> **Status**: non-canonical Operations proposal. **Nothing here is applied.** It modifies no axiom, theorem, definition, equation, or canonical stance. It exists because a 2026-08-11 consistency sweep found three conflicts that **cannot be repaired without an author decision**, and repairing them by drafting would silently pick a metaphysics.
+> **Status**: non-canonical Operations proposal and historical option record. **Gate A was resolved by the author's EX-A decision on 2026-08-11 and has been landed in the canonical owners. Gates B and C remain open; nothing in their option sections is applied.** This file itself remains non-canonical and does not define any axiom, theorem, equation, or canonical stance.
 >
 > The sweep's **deterministic** repairs shipped separately (Phase 1). This packet is Phase 2: options, costs, and a recommendation per gate — the verdict is the author's.
 >
@@ -37,7 +37,9 @@ These three are different. Each has **at least two internally coherent resolutio
 
 ---
 
-## 1. Decision Gate A — `P0-02` existence index
+## 1. Decision Gate A — `P0-02` existence index (resolved by EX-A)
+
+> **Resolution, 2026-08-11**: The author selected **EX-A**, which supersedes the A/B/C framing below rather than simply choosing one of its original semantic packages. Manifest actuality now belongs to P0-01; P0-02 is anchoring persistence; stable ISP identity remains at P1-T06／ST-A. The former `E = 1-H(L_1)/H(L_0)` expression was demoted to `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B14` as a historical heuristic. No global `H(L_0^{abs})`, accessible-domain normalization, probability measure, or quantitative existence index was adopted. The options below are retained only as the decision history.
 
 ### A.0 The conflict
 
@@ -280,17 +282,17 @@ Adopt the four-way terminology split (§C.2) and fix **`§5b.2` first and alone*
 
 ---
 
-## 4. What the three gates have in common
+## 4. What the three gates appeared to have in common (historical analysis)
 
-Gates B and C leak through the **same cross-reference** (`_SRT_D_VALUE_CANONICAL.md §5b.2` → `Ax-Sho-1` / `Def-Apeiron-1`), and both concern whether SRT permits a **position-independent** object at L₀ — a global direction (B) or a global optimum (C). Gate A is the same question in measurement clothing: `E = 1 − H(L_1)/H(L_0)` is a position-independent quantity, and its degeneracy is what happens when you try to compute one.
+Gates B and C leak through the **same cross-reference** (`_SRT_D_VALUE_CANONICAL.md §5b.2` → `Ax-Sho-1` / `Def-Apeiron-1`), and both concern whether SRT permits a **position-independent** object at L₀ — a global direction (B) or a global optimum (C). Before EX-A landed, Gate A appeared to be the same question in measurement clothing: `E = 1 − H(L_1)/H(L_0)` is a position-independent quantity, and its degeneracy is what happens when you try to compute one.
 
-So the three gates may reduce to **one** author decision:
+The packet therefore originally proposed that the three gates might reduce to **one** author decision:
 
 > Does SRT admit any position-independent object at L₀ — and if so, exactly one (a contentless scalar asymmetry), or more?
 
-If the answer is "exactly one, contentless": Gate A → Option A, Gate B → Option A, Gate C → the four-way split with sense 1 excluded. That is a coherent package, and it is the one the L0 anchor and the symbol table already describe. If the answer is "more than one", each gate needs its own enforcement mechanism, and the packet's option-B branches become live.
+The historical branching was: if the answer were "exactly one, contentless", Gate A → Option A, Gate B → Option A, Gate C → the four-way split with sense 1 excluded; if the answer were "more than one", each gate would need its own enforcement mechanism. EX-A did **not** adopt this bundle: it resolved Gate A by separating actuality, persistence, and stable identity while adopting no quantitative object. Gates B and C therefore remain independent open decisions.
 
-**This is an observation about the option space, not a recommendation to decide all three at once.** They can be taken separately; they are simply not independent.
+**This section is retained as pre-verdict option-space analysis, not as current routing.**
 
 ---
 
@@ -346,11 +348,11 @@ L1 and L5 will be noisy at first. That is expected: the baseline captures curren
 
 ---
 
-## 6. Boundary of this packet
+## 6. Boundary of this packet after EX-A
 
-- Modifies **no** axiom, theorem, definition, equation, threshold, or canonical stance.
-- Adopts **no** option in any gate. The recommendations are arguments, not verdicts, and no file may cite this packet as having settled anything.
-- Does **not** authorize any edit to `_SRT_D_VALUE_CANONICAL.md`, `Core/SRT_Core_21_Minimal_Axioms.md`, `Core_Law/SRT_L0_Metaphysics.md`, `Physics/SRT_Phys_08_Ontology_Ext.md`, or any `Spirituality/` file.
+- This packet itself modifies **no** axiom, theorem, definition, equation, threshold, or canonical stance; EX-A was separately authorized and recorded in `Operations/SRT_EXISTENCE_AUTHOR_DECISION_PACKET_2026-08-11.md`.
+- Gate A is settled only by that author decision and its canonical owner edits. The recommendations below Gates B and C remain arguments, not verdicts, and no file may cite this packet as settling them.
+- Does **not** authorize any edit to `_SRT_D_VALUE_CANONICAL.md`, `Physics/SRT_Phys_08_Ontology_Ext.md`, or any `Spirituality/` file. Its historical Gate A option text is not a competing authority for `Core/SRT_Core_21_Minimal_Axioms.md` or `Core_Law/SRT_L0_Metaphysics.md`.
 - The anti-drift rule in §5 is a **proposal for** `Governance/SRT_EDIT_PROTOCOL.md`, not an amendment to it; the protocol is unchanged until separately authorized.
-- Gate A's Option A is stated as a **candidate framework with an unfilled measure slot**, not as a ready-to-apply formula; no notation in it is proposed as final.
+- Gate A's Option A remains a **rejected historical candidate framework with an unfilled measure slot**; EX-A adopted none of its notation.
 - Companion record: the deterministic repairs are in the Phase-1 consistency PR; the registered tensions are `Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`.

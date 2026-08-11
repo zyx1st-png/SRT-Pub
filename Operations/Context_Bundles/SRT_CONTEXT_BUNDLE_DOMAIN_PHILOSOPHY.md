@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-11
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-12
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-11
-source_commit: 849a5e63
-source_branch: claude/srt-consistency-decision-packet-2026-08-11
-source_dirty: false
-inputs_digest: 720d87a4698fa354
+generated: 2026-08-12
+source_commit: 13d31338
+source_branch: main
+source_dirty: true
+inputs_digest: db1ef99d1ec3ccef
 ---
 
 # SRT 哲学领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: 720d87a4698fa354
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-11 |
-| 来源 commit | `849a5e63` |
-| 来源分支 | `claude/srt-consistency-decision-packet-2026-08-11` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-12 |
+| 来源 commit | `13d31338` |
+| 来源分支 | `main` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -63,38 +63,34 @@ inputs_digest: 720d87a4698fa354
 >   可能丢失限定条件。有疑问时以 SOURCE EXTRACT 为准，再有疑问回查来源文件。
 > - **USAGE POLICY** — 由标注的治理文件授权的使用规则。
 
-### G1 — P1-T07 证明未闭合（严重度：高）
+### G1 — former P1-T07 已降阶；条件证明负担仍开放（严重度：高）
 
-**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T07 Constitutive Asymmetry Theorem**（claim level **P1**）
+**受影响**：`Core/SRT_Core_21b_Constitutive_Theorems.md` 的 former P1-T07 absorption remainder，及 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 的 conditional anti-closure candidate
 
 #### SOURCE EXTRACT — 来源原文（逐字抽取）
 
-**审计自述，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
+**ST-A canonical 裁决，来自 `Core/SRT_Core_21b_Constitutive_Theorems.md`**：
 
-> **Status**: non-canonical Operations record. **Proof audit only.** It modifies no theorem, no axiom, no definition, no equation. It does not resolve the proof; it maps exactly where the current proof does and does not close, and hands options to a later controlled amendment PR. Prior Claude/ChatGPT statements about P1-T07 were treated as hypotheses; the only source of truth is `origin/main @ 14c0d7f8`. Archive/book files were read for context but are **not** used to establish anything about the canonical theorem.
+> **Decision record (ST-A, 2026-08-11)**: The former unconditional statement—"every stable ISP necessarily contains an anti-closure `ε` bias"—is no longer a P1 theorem. Its proof inferred cumulative absorption from a per-step nonzero closure probability without independently defining a neutral kernel, fixing the stability semantics, or proving that the neutral kernel reaches the absorbing state. `L_0` irreversibility alone does not supply those missing premises.
 
 **审计 1.3 修订的语义分层条款，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
 
 > (a) `τ<∞` verdicts stratified by semantics — on a realized terminating history only **S1 pathwise** stability fails; **S2** fails only if `P(τ<∞)>0`, **S3** only if `P(τ=∞)=0`; no unconditional *process-level* stable-ISP verdict before the S1/S2/S3 choice (fixed in §0 Q5, §8, Proof Gate)
 
-**审计 §0 第 5 问，来自 `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`**：
-
-> 5. **What can P1-T07 prove at most?** Two things must be separated, and the first is **semantics-relative**, not process-unconditional. **(i) True and derivable, per level**: on any realized history with `τ<∞`, that history enters the absorbing `∅` and no further selection is possible — so **S1 (pathwise) stability fails on that history**. At the *process* level, **S2** stability fails only when `P(τ<∞)>0`, and **S3** stability fails only when `P(τ=∞)=0`. Before S1/S2/S3 is chosen, **no unconditional process-level stable-ISP verdict may be issued** from `τ<∞`. **(ii) NOT derivable as written**: *neutral `P` terminates a.s., therefore neutral `P` is not stable* — because a.s. termination of a neutral process is exactly what Step 3 fails to establish. "Positive termination probability" is also **not** unconditional (it needs positive hazard at a surviving step). (§4, §8)
-
 #### GENERATED INTERPRETATION — 生成器归纳（**非**来源原文）
 
-该定理 Proof Sketch 第 3 步（*neutral `P` ... cumulative probability tends toward 1*）以肯定句写成，正文未标注任何保留。上述审计判定恰恰是这一步不闭合：语料并未*确立*每步正 hazard，而且即使每步 hazard 为正也不蕴含 almost-sure 终止；`ε-neutral` 在语料中从未被形式定义；P1-T06 的 stable ISP 定义是非概率的，S1/S2/S3 随机语义尚未选定。
+ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只保留 realized history 到达吸收态后不能自行继续的 remainder，以及 P1-T06 continued selectability。neutral-kernel anti-closure 留在 P2/P3，仍须独立定义 neutral kernel、选择 S1/S2/S3 稳定语义，并声明环境、外部重置规则、终止条件与时间窗，再证明吸收或比较性 closure risk。
 
-另需注意：`Core/SRT_OPEN_TENSIONS.md` 目前**未登记**本缺口。
+该降阶与剩余证明负担已登记在 `Core/SRT_OPEN_TENSIONS.md`。
 
 #### USAGE POLICY — 使用规则
 
 *授权依据：`Governance/SRT_CLAIM_LADDER.md`（P0–P5 阶梯）与 `SRT_AI_START.md` §5 / §8*
 
-- 不得把 P1-T07 当作已证 P1 定理引用。
+- 不得把 former P1-T07 当作已证 P1 定理引用；P1 引用仅限 absorption remainder。
+- Stable ISP 的 P1 最低条件是 continued selectability；generative reselectability 与 ISP-level anti-closure 按 P2/P3 conditional candidate 引用。
 - 关于 `τ<∞` 只能作**语义分层**的陈述：若某条 realized history 满足 `τ<∞`，可无条件断言的仅是**该历史上的 S1 / pathwise stability 失败**；process-level 的 S2 需 `P(τ<∞)>0`，S3 需 `P(τ=∞)=0`。**在 S1/S2/S3 语义未选定之前，不得据此推出无条件的 process-level 「not a stable ISP」。**
-- 不要假装 `ε-neutral` 有形式定义。
-- 「查过 `OPEN_TENSIONS` 没找到」**不**足以证明本命题已封口——该缺口尚未登记在那里。
+- 不要假装 `ε-neutral` 已有形式定义，也不要从 `ε_pg`、irreversibility、fixed point、metastability 或 `σ<1` 单独推出 anti-closure。
 
 
 ### G2 — `d`/`q`/`o` 三轴处于禁运状态（严重度：中）
@@ -306,7 +302,7 @@ When answering about SRT:
 
 ### 未收录支持文件
 
-**First Sources 点名、文件存在、但本包未收（15 个）**——回答涉及它们时本包不足以裁定：
+**First Sources 点名、文件存在、但本包未收（14 个）**——回答涉及它们时本包不足以裁定：
 
 - `CANONICAL_REGISTRY.md`
 - `Governance/SRT_CLAIM_LADDER.md`
@@ -322,7 +318,6 @@ When answering about SRT:
 - `_SRT_SYMBOL_TABLE.md`
 - `Core/SRT_Core_21_Formal_Axioms.md`
 - `Core/SRT_Core_21c_Bridge_Hypotheses.md`
-- `Core/SRT_OPEN_TENSIONS.md`
 
 **⚠ 高严重度：registry 提及但文件不存在（1 个）**——指向已删除、拼错或尚未创建的路径。**这类条目不会被静默过滤掉**，因为它本身就是一种 manifest 差异：
 
@@ -330,7 +325,7 @@ When answering about SRT:
 |---|---|
 | `Core_21_Formal_Axioms.md` | 见 §0.2 G4：这是 `Core/SRT_Core_21_Formal_Axioms.md` 的行文简写，非真实路径 |
 
-**registry 提及、文件存在、但本包未收（88 个）**——多为领域主轴、
+**registry 提及、文件存在、但本包未收（87 个）**——多为领域主轴、
 展开层与 PH-SS 护栏文件，按需走领域包或直接读仓库，不在骨架路线内：
 
 <details><summary>展开完整清单</summary>
@@ -377,7 +372,6 @@ When answering about SRT:
 - `Neuroscience/SRT_Neuroscience_Claim_Status.md`
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
-- `Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`
 - `Philosophy/01_PH_SS_Objection_Crosswalk.md`
 - `Philosophy/02_PH_SS_Hardening_Execution_Plan.md`
 - `Philosophy/03_Selection_Realism_Layered_Realism_CompactPatch.md`
@@ -1972,7 +1966,7 @@ Addendum:
 > **用途**：用于快速把握 SRT 如何把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一到选择动力学框架中。  
 > **关系**：不替代原文；原文保留完整推导、传统对比、制度接口与病理学展开。  
 > **回链头部**：本文是 Philosophy domain exposition / bridge support，不新增 P0 primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md`、`_SRT_T_DIR_CANONICAL.md` 或 `Philosophy/SRT_Philosophy_Ethics.md`。本文命题主要为 P2/P3，少量制度判准与阈值为 P4。  
-> **Guardrail pointer**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。政治 `L_2` 的稳定、国家秩序、制度执行力或效率不能直接推出合法性。合法性必须经过 reselection capacity、friction-export、future-selectability、consequence-return、exit/correction 等检验。  
+> **Guardrail pointer (ST-A corrected 2026-08-11)**：本文件必须与 `SRT_Social_Political_PH_SS_Guardrails.md` 一起阅读。政治 `L_2` 的稳定、国家秩序、制度执行力或效率不能直接推出合法性。Reselection capacity、friction-export、future-selectability、consequence-return、exit/correction 是 P2/P3 规范审计条件，不是由结构稳定推出的 P1 必要充分判据；ST-A 本身不建立合法性结论。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P5` 与上述回链头部一致；本文件是 compact exposition，不是 core definition source。
 
 ## 1. 核心问题

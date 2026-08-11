@@ -316,7 +316,7 @@ $$\text{Warm Data} : I(\sigma; L_0^{context}) \gg 0$$
 
 **连续谱注**：冷/暖区分不是二元分类，而是 $I$ 值的连续谱。$\to 0$ 和 $\gg 0$ 是两个极端；实际数据类型在谱上分布（详见 §4.2 表格）。
 
-**与 CR(d) 的结构联系**：暖数据（高 $I$）对应选择路径保留更多 $L_0$ 信息——与 $\text{CR}(d) \propto 1 - e^{-\alpha d}$（信息保留率随 $d$ 增大而增大）同构：高 $d$ 选择算子产生更"暖"的 $L_1$ 锚定。→ Cross-ref: SRT-CORE-12A Mechanism Synthesis §CR公式。
+**与 CR(d) 的结构联系**：暖数据（高 $I$）对应选择路径保留更多 $L_0$ 信息——与 $\text{CR}(d) \propto 1 - e^{-\alpha d}$（信息保留率随 $d$ 增大而增大）同构：高 $d$ 选择算子产生更"暖"的 $L_1$ 锚定。→ Cross-ref: SRT-CORE-12A Conditional Realization Stack §CR公式。
 
 **证伪条件**：若"暖数据"（高语境保留）在实证上不能更好预测系统行为（比较 Cold vs Warm 数据对跨组织干预效果的预测力），则互信息量化的区分价值需重新评估。
 
@@ -1028,7 +1028,7 @@ $$SC_{genuine} \iff \nexists\, S_{pre}^{L_2} : \text{options} \subseteq S_{pre}^
 选项空间在选择发生之前不存在，选择本身是生成行为，不是在L2预指定集合中分类。
 
 * **Implication**: 城市消费决策（菜单、playlist、套餐）是L2预给定集内的分类，不激活$SC_{L_0\to L_1}$。创作、真实情感结晶、对开放环境的具身响应是生成性的，激活$SC_{L_0\to L_1}$。
-* **Cross-ref**: Ax-L0-01（潜在域守恒）；T-L0-01（创新即对L₀已有潜能的重新照明）。
+* **Cross-ref**: Ax-L0-02（潜在不可穷尽，不是内容／基数守恒）；T-L0-01（非预成的新颖性：受约束 actualisation，不是对已完成形式的重新照明）。
 
 ---
 

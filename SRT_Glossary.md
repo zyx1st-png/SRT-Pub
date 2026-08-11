@@ -1085,13 +1085,13 @@ $$\text{Anchoring} : L_0 \xrightarrow{\hat{G}_\theta} L_1$$
 
 #### Anti-Panpsychism - 反泛心论 🟡
 
-**定义**：SRT 对泛心论（panpsychism）的明确拒绝立场。d 值作为数学参数在量子、生物、宇宙三个尺度上同构运作，但只有在生物学层面——同时满足三条件（$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \emptyset$）——时，d 才涌现为"关切"（care）这一主观属性。电子有 $d_{quantum}$（相干性带宽）不意味着电子"关心"什么。
+**定义**：SRT 对泛心论（panpsychism）的明确拒绝立场。量子、生物、宇宙尺度可以分别定义带有 d 记号的领域操作量，但符号复用不推出同一机制、同一单位或数学同构；只有在生物学层面——同时满足三条件（$\Psi_f > 0$, $d > 0$, $\hat{G}[\theta] \neq \emptyset$）——时，d 才涌现为"关切"（care）这一主观属性。电子有 $d_{quantum}$（相干性带宽）不意味着电子"关心"什么。
 
 **核心论断**：关切是 d 值在生物学层面的高阶涌现属性，非底层原初属性。
 
 **首次出现**：Core/SRT_Core_14_Dynamics_Scaling.md §2.1a（权威声明）；Core/SRT_Core_13b_Operator_Advanced.md §6.2（意识三条件）
 
-**相关**：跨尺度同构, 本体论带宽, 意识三条件, d 值
+**相关**：跨尺度结构相容候选, 本体论带宽, 意识三条件, d 值
 
 ---
 
@@ -1166,9 +1166,9 @@ $$R_i = \frac{L_i^n}{\sigma^n + \sum_j w_{ij} L_j^n}$$
 
 ---
 
-#### Cross-Scale Isomorphism - 跨尺度同构 🟡
+#### Cross-Scale Structural Compatibility - 跨尺度结构相容 🟡
 
-**定义**：SRT 的核心结构性主张——选择动力学方程 $d\sigma/dt = \hat{G}_\theta[\sigma] - \Psi_f(\sigma)$ 在量子、生物、宇宙三个尺度上同构成立，d 值作为统一的数学标尺在三个层面分别表现为不同的物理量：
+**定义**：P3 跨尺度桥候选——在两侧状态空间、尺度映射、保留观测量、比较范数和容差均已声明时，检验 $\pi_\lambda\circ\hat G_\theta\approx\hat G_{\theta,\lambda}\circ\pi_\lambda$ 是否成立。通过只建立局部结构相容，不证明量子、生物与宇宙机制同一；d 的各尺度表达仍是受条件约束的投影／proxy：
 
 | 尺度 | d 的具体含义 | 物理对应 | 主观体验 |
 |:-----|:-----------|:---------|:---------|
@@ -1176,9 +1176,9 @@ $$R_i = \frac{L_i^n}{\sigma^n + \sum_j w_{ij} L_j^n}$$
 | 生物 ($d_{bio}$) | 关切范围 | 选择算子考虑的存在范围 | 有（涌现属性） |
 | 宇宙 ($d_{cosmic}$) | 时空共识度 | $\propto 1/\sqrt{\Lambda}$ | 无 |
 
-**关键澄清**："同构"是指数学结构的形式一致，不是还原论式的"同一"。
+**关键澄清**：strict conjugacy 只适用于可逆表征变换；通常的多对一粗粒化不得预设 $\Lambda^{-1}$。跨尺度共同项只到选择—约束—可支付性语法。
 
-**首次出现**：Core/SRT_Core_14_Dynamics_Scaling.md Ax-Scale-01
+**当前入口**：Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-01／T-Scale-02C1
 
 **相关**：本体论带宽, 反泛心论, d 值
 
@@ -1598,7 +1598,7 @@ $$d \equiv \max_{\hat{G}_\theta} \left\{ \dim\left(\hat{G}_\theta[L_0]\right) \;
 
 **首次出现**：Core/SRT_Core_14_Dynamics_Scaling.md Def-d-Scale-1
 
-**相关**：d 值, 跨尺度同构, 反泛心论, 本体论摩擦
+**相关**：d 值, 跨尺度结构相容候选, 反泛心论, 本体论摩擦
 
 ---
 
@@ -1734,12 +1734,12 @@ $$\text{Wisdom}^{proxy} \sim f(\rho, d_{proxy}, d_{mobile}, \kappa_\tau, \text{c
 #### Ruliad - 规则宇宙 🔴
 
 **定义**：
-$$L_0 = \text{Ruliad} = \bigcup_{r \in \text{Rules}} \text{Computation}(r)$$
+$$\text{Ruliad} = \bigcup_{r \in \text{Rules}} \text{Computation}(r), \qquad \text{Ruliad} \not\equiv L_0^{abs}$$
 
-Wolfram概念——所有可能计算规则的叠加;L₀的计算定义。
+Wolfram 概念——所有可能计算规则的叠加。在 SRT 中仅作 $L_0^{comp}$ 的计算投影候选，不是 $L_0^{abs}$ 的完整定义，也不构成完成形式库存。
 
 **与模空间关系**：
-$$\text{Moduli Space} \subseteq \text{Ruliad} |_{\text{物理约束}}$$
+Ruliad 与 Moduli Space 属不同领域投影；SRT 当前不主张二者之间存在无条件包含关系。
 
 **SRT 旧预测（降级 / high-risk metaphor）**：
 - “d→∞时可访问 Ruliad 的非标准规则子集”只保留为历史 speculative bridge，不是当前 SRT 预测。
@@ -2056,7 +2056,7 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 | ρ | AI/SRT_AI_Computation.md | §1.4 |
 | PCI | Neuroscience/SRT_Consciousness_Clinical.md | - |
 | d (本体论带宽) | Core/SRT_Core_14_Dynamics_Scaling.md | Def-d-Scale-1 |
-| 跨尺度同构 | Core/SRT_Core_14_Dynamics_Scaling.md | Ax-Scale-01 |
+| 跨尺度结构相容 | Core/SRT_Core_14_Dynamics_Scaling.md | P3-Scale-01／T-Scale-02C1 |
 | 反泛心论 | Core/SRT_Core_14_Dynamics_Scaling.md | §2.1a |
 | 拓扑资本 | Philosophy/SRT_Social_MacroDynamics.md | §8.2 |
 | 本体论短路 | Philosophy/SRT_Social_MacroDynamics.md | §8.3 |

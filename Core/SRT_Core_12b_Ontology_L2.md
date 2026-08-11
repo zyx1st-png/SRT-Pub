@@ -166,8 +166,8 @@ This note sharpens the reading of Ax-L2-01 and T-L2-Scaffold:
 - repetition is the common path of deposition, closure is the essence, and `κ`-threshold crossing remains the stabilization-mode criterion; $\rho^*$ is this theorem's local scaffold-threshold parameter;
 - the distinction between trace, closure, and L₂-grade scaffold must not be collapsed.
 
-* **Dependence**: Ax-L2-01 (hysteresis accumulation base); Ax-L2-06b (successful-closure write-in gate: $\Psi_f < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$); T-ε-Constitute (stable ISP scope); Ax-Op-05 (two-phase closure, successful closure defined)
-* **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T07` (T-ε-Constitute dynamic layer); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
+* **Dependence**: Ax-L2-01 (hysteresis accumulation base); Ax-L2-06b (successful-closure write-in gate: $\Psi_f < \Psi_{thresh} \Rightarrow \Delta L_2 = \hat{G}^\dagger_\theta[L_1]$); P1-T06 (stable ISP / continued-selectability scope); Ax-Op-05 (two-phase closure, successful closure defined)
+* **Cross-ref**: `Core_Law/SRT_Core_Text_EN.md ⑥` (directed convergence → existence); `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` (structural stabilisation); `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` (generative reselectability); `Core/SRT_Core_12a Co-Evo-1` (operator-landscape co-evolution)
 
 ---
 
@@ -258,25 +258,27 @@ The path layer $\mathcal{P}_{low\text{-}\Psi}$ should be read through the follow
 **Compatibility (working definition)**:
 > Compatibility is defined operationally by **absorbability into the current closure**: a path is compatible if it can be taken up by the current closure without breaking that closure's self-maintenance, and if its entry tends to further lower downstream `Ψ_f` for later compatible traversals.
 
-**Compatibility (deep constraint)**:
-> Operational compatibility is constrained more deeply by congruence with the `ε` direction. A path is not deeply compatible if it preserves local closure only by compressing a broader future selectability.
+**Compatibility (generative-health constraint, ST-A)**:
+> Operational compatibility does not by itself establish generative health. A path is a candidate for healthy compatibility only if its consequences can return to the closure and the closure's own gate rules, boundaries, or candidate-generation conditions remain revisable. This is a P2/P3 criterion, not an `ε`-derived P1 theorem.
 
 Compressed form:
 
-> **兼容性在操作上由闭包的可吸纳性定义，在本体上受 `ε` 方向约束。**
+> **兼容性在操作上由闭包的可吸纳性定义；生成性健康还要求后果可回返、规则可修订。**
 
 This prevents three common drifts:
 1. reducing closure to repetition alone;
 2. reducing compatibility to surface similarity alone;
 3. mistaking locally absorbable but globally self-erasing paths for healthy closure.
 
-**Reading Rule (2026-04-21): future selectability, reselection, and gate health**
+**Reading Rule (updated by ST-A, 2026-08-11): formation, stabilisation, and generative health**
+
+Keep three levels separate: a closure may be **formed** once it becomes identifiable; it is **structurally stable** when its recognizable history-bearing organization is recurrently reconstituted across a declared perturbation range; it is a candidate for **generative health** only when consequence return can revise its own gates or selection conditions. Neither low friction nor structural persistence proves the third level.
 
 In this note, "broader future selectability" should not be read primarily as a larger option count for one isolated subject. The relevant object is the **future choice space of multiple relevant selecting subjects** whose later selection capacity is rewritten by the same or connected scaffold.
 
-The minimum sign of compression is loss of **reselection capacity**, not merely fewer local options. Read that capacity in three layers: **exit** capacity is the lowest threshold; **revision** capacity is the working core; **recomposition** capacity is the higher-order institutional / political layer.
+The P1 minimum for a stable ISP is **continued selectability**. The stronger P2/P3 health criterion is **generative reselectability**, read here in three operational layers: **exit** capacity is the lowest threshold; **revision** capacity is the working core; **recomposition** capacity is the higher-order institutional / political layer.
 
-A healthy closure should therefore be read less as a wall than as a **semipermeable membrane**: channels remain present, gate rules remain revisable, and relevant subjects retain some appeal / pushback capacity. The earliest lesion of pathological closure is not necessarily visible channel disappearance; it is gate-rule rigidity and non-revisability while the closure may still look open from the surface.
+A healthy closure may therefore be pictured as a **semipermeable membrane**: channels remain present, gate rules remain revisable, and relevant subjects retain some appeal / pushback capacity. The image is explanatory only, not a constitutive definition. Generative reselectability means ongoing consequence-sensitive revisability, not total closure followed by an unexplained reopening. The earliest lesion of pathological closure is not necessarily visible channel disappearance; it is gate-rule rigidity and non-revisability while the closure may still look open from the surface.
 
 ---
 
@@ -290,54 +292,50 @@ $$\text{Rights}(a_i) \equiv \mathcal{D}_{auth}(a_i) \subseteq \Omega_{L_1}$$
 
 **权利不是道德概念，而是 L₂ 结构性事实**：某主体"拥有"某权利，等价于其对应选择域被当前 L₂ 代理层承认。"侵权"等价于某主体的实际选择被驱逐出其 $\mathcal{D}_{auth}$，或其 $\mathcal{D}_{auth}$ 本身被结构性压缩。
 
-* **Cross-ref**: T-L₂-Sustain（合法性判据：$\mathcal{D}_{auth}$ 分配的可持续性）; C-Legit-Retroactive（追认机制）。
+* **Cross-ref**: H-L₂-Sustain（可持续性的条件性机制假说）; H-Legit-Retroactive（追认式审计候选）。
 
 ---
 
-### T-L₂-Sustain: Suppressive Closure Self-Defeat Theorem（抑制式闭包自我否定定理）
+### H-L₂-Sustain: Conditional Suppressive-Closure Failure Hypothesis（抑制式闭包条件性失稳假说）
 
-**[从 Ax-Op-01 + Ax-Op-03b + Ax-Op-05 推导；H 标记保守]**
+**Claim level (ST-A)**: P2/P3 mechanism hypothesis. It is not a constitutive theorem.
 
-**命题**：凡仅通过抑制未被编码之 L₀ 压力来恢复 L₂ 闭包者，皆不可持续。
+**条件命题**：若未被编码的压力持续积累、该压力能重新耦合到闭包、且闭包没有外部补给或重置通道，则仅靠抑制恢复的 L₂ 闭包预计会失稳。
 
 **形式表述**：设 $P_{blocked}(t) = \sum_{i \notin \mathcal{A}_{auth}} d_i \cdot \Psi_f^{blocked}(i,t)$ 为被当前代理层排除的主体所产生的累积 L₀ 压力。
 
 若 L₂ 的闭包策略满足"仅抑制型"条件：
 $$\frac{d P_{blocked}}{dt} > 0 \quad \text{（排除主体的压力持续积累）}$$
 
-则：
+在上述条件成立时，候选机制链为：
 1. 由 **Ax-Op-01**（遮蔽非排除）：被压制选择潜力留在 L₀，不消失
 2. 由 **Ax-Op-03b 更新律**：被压制路径持续积累 $\Psi_f^{blocked}$，总压力负载增长
 3. 由 **Ax-Op-05 两阶段闭包**：当 $P_{blocked}$ 增长至超出吸引域 $B(\theta_{L_2})$ 的承载边界时，Phase 2 单调下降条件失效，闭包固定点 $\Psi_f^*$ 不再可维持
-4. 因此：仅抑制型闭包不满足"可持续"条件 ∎
+4. 因此，该模型预测仅抑制型闭包会失去当前稳定域；这不是由闭包或吸收事实单独推出的无条件结论。
 
-**与 ΔR_future 的对接**：
-$$\text{抑制式} \;\Rightarrow\; P_{blocked} \uparrow \;\Rightarrow\; d_{accessible}^{collective} \downarrow \;\Rightarrow\; \Delta R_{future}^{collective} \leq 0$$
-$$\text{包容式} \;\Rightarrow\; P_{blocked} \to 0 \;\Rightarrow\; d_{accessible}^{collective} \uparrow \;\Rightarrow\; \Delta R_{future}^{collective} > 0$$
+**与 ΔR_future 的候选对接**：`P_{blocked}`、`d_{accessible}^{collective}` 与 `\Delta R_{future}^{collective}` 可作为比较性诊断量，但箭头关系需要具体模型分别建立。`\Delta R_{future}^{collective}>0` 既不自动区分包容式与抑制式稳定，也不单独证明生成性健康；还需检查后果回返覆盖、规则可修订性、被外部化的主体/成本、扰动范围与时间窗。
 
-因此 $\Delta R_{future}^{collective} > 0$ 是可持续闭包的形式操作化标准，自动区分包容式与抑制式稳定，无需引入额外判据。
-
-**[H] 标注范围**：$P_{blocked}$ 的聚合公式（对 $d_i \cdot \Psi_f^{blocked}$ 的线性求和）为简化候选，实际积累动力学可能非线性；定理的序关系结论（抑制式不可持续）比具体形式更稳健。
+**[H] 标注范围**：$P_{blocked}$ 的聚合公式（对 $d_i \cdot \Psi_f^{blocked}$ 的线性求和）为简化候选，实际积累动力学可能非线性。失稳方向同样依赖上列边界条件，不保留无条件定理身份。
 
 * **Cross-ref**: Ax-Op-01（遮蔽非排除）; Ax-Op-03b（竞争历史写回律）; Ax-Op-05（两阶段闭包）; `_SRT_D_VALUE_CANONICAL.md Def-d-1a`（$d_{accessible}$ 定义）。
 
 ---
 
-### C-Legit-Retroactive: Retroactive Legitimacy Corollary（追认式合法性推论）
+### H-Legit-Retroactive: Retroactive Legitimacy Audit Candidate（追认式合法性审计候选）
 
-**从 T-L₂-Sustain 直接推出**
+**Claim level (ST-A)**: P2/P3 normative bridge. It does not follow directly from structural stabilisation.
 
-**推论**：L₂ 代理位分配的合法性**不由先验授予**，而由其是否提高未来闭包可持续性来**追认**。
+**候选主张**：L₂ 代理位分配可接受“是否改善未来集体选择条件”的追认式审计，但该审计不能单凭结构存续或单一代理量完成。
 
 **形式表述**：设 $L_2^{new}$ 为 $L_2^{old}$ 合法性危机后的候选替代分配。
 
-$$\text{Legitimate}(L_2^{new}) \;\Longleftrightarrow\; \exists \, T > 0 : \Delta R_{future}^{collective}(L_2^{new}, T) > \Delta R_{future}^{collective}(L_2^{old}, T)$$
+$$\Delta R_{future}^{collective}(L_2^{new},T)>\Delta R_{future}^{collective}(L_2^{old},T)$$
 
-**追认机制**：合法性不由现有 L₂ 结构裁判（避免无限后退），而由继起 L₂ 的多主体收敛事后确认——操作代理：反共错稳健性（跨位置/时间/接口的收敛信号无共享 L₂ 来源）。
+This inequality is a candidate comparison signal, not an `iff` definition of legitimacy. It must be paired with scope coverage, consequence-return channels, rule revisability, non-externalization checks, and plural-subject standing.
 
-**无限后退问题的解决**：无需元 L₂ 裁判，因合法性标准（$\Delta R_{future}^{collective}$）是功能性的，由闭包能力的实证演示确立，而非先验规则体系授予。
+**追认机制**：继起 L₂ 的多主体收敛与反共错稳健性可提供事后证据，但 ST-A 不宣称由此解决规范性无限后退，也不从“结构稳定”直接推出“正当”。
 
-* **Cross-ref**: T-L₂-Sustain; `Core_Law/SRT_Core_Text_CN.md Step ⑩`（正当性不是规则被遵守，而是规则仍然指向共同目标——现精确化为 $\Delta R_{future}^{collective} > 0$）。
+* **Cross-ref**: H-L₂-Sustain; `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`; `Core_Law/SRT_Core_Text_CN.md Step ⑩`.
 
 ---
 
@@ -348,13 +346,13 @@ $$\text{Legitimate}(L_2^{new}) \;\Longleftrightarrow\; \exists \, T > 0 : \Delta
 **规则**：未获代理位的主体对现存 L₂ 结构的挑战，在 SRT 框架内**首先被读作压力信号**，而非预设为越权行为。其效力由是否导向更高 $\Delta R_{future}^{collective}$ 的重分配事后检验，而非由现有 L₂ 的认可标准预先裁判。
 
 **理由**：
-- 由 T-L₂-Sustain：未被编码的 L₀ 压力本身即为可持续闭包的约束信号
+- 由 H-L₂-Sustain：在压力能重新耦合且没有外部补给/重置时，未被编码的 L₀ 压力构成可持续性的约束信号
 - 由 Def-L2-Rights：现有 $\mathcal{D}_{auth}$ 分配由当前 L₂ 定义，不构成判断压力正当性的独立标准
-- 由 C-Legit-Retroactive：合法性追认依赖 $\Delta R_{future}^{collective}$，而非现有代理层授权
+- 由 H-Legit-Retroactive：$\Delta R_{future}^{collective}$ 只提供追认式审计的候选比较信号，而非现有代理层授权或合法性的充分定义
 
 **操作含义**：这不等于"所有挑战都有效"，而是说**检验标准是功能性的**（是否提升集体再选择空间），而非程序性的（是否获得当前结构认可）。
 
-* **Cross-ref**: T-L₂-Sustain; C-Legit-Retroactive; `Core_Law/SRT_Core_Text_CN.md Step ⑧`（遮蔽动态的干预逻辑：Phase B 主体的挑战不是越权，是压力信号）。
+* **Cross-ref**: H-L₂-Sustain; H-Legit-Retroactive; `Core_Law/SRT_Core_Text_CN.md Step ⑧`（遮蔽动态的干预逻辑：Phase B 主体的挑战首先作为压力信号进入审计）。
 
 ---
 
@@ -415,7 +413,7 @@ $$\Delta\Psi_f^{field}(x_{comp},\, t) \;=\; f_\kappa(\kappa(t) - \kappa_0,\, x_{
 
 ### 二维坐标系
 
-**X 轴：$d$（对齐深度）** — 算子关切地图与 L₀ 曲率的当前对齐程度  
+**X 轴：$d$（对齐深度）** — 算子关切地图与 L₀ 曲率的当前对齐程度
 **Y 轴：$d_{\text{mobile}}$（再对齐能力）** — 吸引子迁移时算子重新定向的容量
 
 $$\text{意识状态} \in (d,\; d_{\text{mobile}}) \text{ 空间}$$
@@ -1126,7 +1124,7 @@ $L_2$ 域的运行机制可沿”写入—硬化—改写”三阶段理解，�
 | 长期短路运行 | 低 | Closed 崩溃态 | unsustainable |
 
 ## 【理论边界/防误用声明】
-- 不采纳“短期可跑通=长期可稳定”的推论。  
+- 不采纳“短期可跑通=长期可稳定”的推论。
 - 不采纳“资本逻辑/生态逻辑可无损互换”的推论；需显式态射与约束保持证明。
 
 
@@ -1190,7 +1188,7 @@ $L_2$ 域的运行机制可沿”写入—硬化—改写”三阶段理解，�
 
 ## III. L₂ 规范性判据（Normative L₂ Criterion）
 
-> **新增节（2026-03-11）**：从选择动力学内部推导出 L₂ 的规范理论，无需引入外部价值。
+> **新增节（2026-03-11；ST-A 降阶说明 2026-08-11）**：本节提出从选择动力学通向 L₂ 规范判断的 P2/P3 桥接方案；结构稳定本身不推出规范正当性。
 
 ### Def-L2-Normative: L₂ 规范性判据
 
@@ -1207,7 +1205,7 @@ $$S(\hat{G}, t) \equiv \mu_{L_1}\!\left\{\sigma \in L_1 : \hat{G}_{L_2(t)}[\sigm
 | **自保型 L₂** | $\dfrac{dS}{dt} \geq 0$ 但 $\dfrac{d\mathcal{F}_{collective}}{dt} > 0$ | 短期可存续，集体耦合摩擦中最终被压出 |
 | **退化 L₂** | $\dfrac{dS}{dt} < 0$ | 压缩未来选择空间 → 算子走向绝境 → 被淘汰 |
 
-> **T-Core-02 对接**：可持续 L₂ 的条件（$dS/dt \geq 0 \wedge d\mathcal{F}_{collective}/dt \leq 0$）是 T-Core-02 不动点（$\Psi_f^{cross} \to \min$）的动力学展开——不动点即 $\mathcal{F}_{collective}$ 极小且 S 不再收缩的渐近态。
+> **T-Core-02 对接边界**：条件（$dS/dt \geq 0 \wedge d\mathcal{F}_{collective}/dt \leq 0$）可作为 T-Core-02 不动点的动力学投影候选。局部不动点或 $\mathcal{F}_{collective}$ 极小只说明模型内稳定性，不证明 continued selectability、generative reselectability 或规范正当性。
 
 **最优 L₂**（$L_2^*$）：
 $$L_2^* = \arg\max_{L_2} \frac{d\, d_{collective}(t)}{dt} \quad \text{s.t.} \quad \frac{d\mathcal{F}_{collective}}{dt} \leq 0$$
@@ -1223,7 +1221,7 @@ $$d_{collective} = D_{eff}(\mathcal{F}_{collective}) = \frac{(\sum_k \lambda_k)^
 | 个体层 | $\Psi_f$ 的累积消耗 | 算子无法支付维持成本 |
 | 集体层 | $\mathcal{F}_{collective}$ 景观曲率（Eq-Multi-01/02） | 不指向集体极小的算子被耦合摩擦压出 |
 
-**规范性的内生推导**：无需引入外部价值——“好”的 L₂ 就是维持且扩展集体算子存在的 L₂，由选择动力学内部自然筛选。在选择本体论中，”是”（selection dynamics）包含了”应当”（sustainable L₂ criterion）——这是 SRT 对休谟事实-价值鸿沟的本体论回应。
+**规范性的内生桥接候选**：维持并扩展相关算子的未来选择条件，可构成评价 L₂ 的一个内部理由；但 ST-A 不把该理由等同于“好”，也不声称选择动力学已经单独跨越事实—价值鸿沟。任何规范结论仍需说明相关主体覆盖、后果回返、规则修订、成本外部化与比较时间窗。
 
 > **是-应当推导的适用边界**：该推导的有效性依赖于 $\mathcal{F}_{collective}$ **完整覆盖所有相关算子**。若某 L₂ 通过将部分算子排出核算范围（如剥削/排斥机制）来实现 $dS/dt \geq 0$，则推导失效——此时 S 的”扩展”建立在对被排除算子的选择空间的压缩之上，不满足内生规范性的完备性前提。形式判据：F_collective 的算子集必须等于实际受该 L₂ 影响的完整算子集。
 
@@ -1256,19 +1254,19 @@ Consequence-return paths are commonly cut in three layers: information fails to 
 
 Pseudo-openness names the appearance of responsiveness without structural uptake: expression without decision change, parameter tuning without gate-logic change, or gate optimization without exposing the gate's legitimacy. Experientially, the typical sequence is habituation -> loss of appeal sense -> reality-misrecognition. In the full loop, gate-rule rigidity, consequence-return cuts, pseudo-openness, reselection loss, and reality-misrecognition reinforce one another until a contingent gate is lived as inherited background scaffold. This is a hardening-level diagnostic chain; exact thresholds and domain metrics remain open.
 
-### Thm-L2-Cage-Resolution: L₂ 笼子悖论的消解
+### H-L2-Cage-Resolution: L₂ 笼子悖论的桥接性消解候选
 
 Ax-L2-02 已指出：L₂ 形成为扩展自由，却最终成为限制自由的”笼子”（causal entropy ↑ 驱动 L₂ 形成，L₂ 迟滞 ↑ 又反向限制未来选择）。
 
-Def-L2-Normative 消解这一悖论：**L₂ 结构的规范性不是固定的，而是动态的**——一个 L₂ 结构在某时刻是可持续的（$dS/dt \geq 0$），但随着环境变化，当它开始压缩选择空间（$dS/dt < 0$），它就失去了规范性，应被更新或替代。
+Def-L2-Normative 提供一个条件性读法：**对 L₂ 的规范评价应随其后果而更新**。当一个结构开始压缩所声明范围内的选择空间（$dS/dt < 0$）时，这构成重审或修改它的理由，但不由单一动力学指标自动推出唯一行动结论。
 
 $$\text{L}_2 \text{ 的规范有效期} = \int_{t_0}^{t^*} \mathbf{1}[dS/dt \geq 0]\, dt, \quad t^* = \inf\{t : dS/dt < 0\}$$
 
-这给出了机构、信仰体系、文化规范的演化判据：**它们必须持续证明自己在扩展集体选择空间，否则被淘汰是本体论上合法且必要的。**
+该式可作为机构、信仰体系、文化规范的演化审计指标之一；它不证明淘汰在本体论上“合法且必要”。
 
-### Cor-L2-Norm-1: 对 Ax-L2-04（可塑性阈值）的升格
+### H-L2-Norm-1: 对 Ax-L2-04（可塑性阈值）的审查桥接
 
-Ax-L2-04 给出了 L₂ 可被修改的能量阈值条件（$P_{L_2} > 1$）。Def-L2-Normative 提供了**何时应该**修改 L₂ 的规范条件：当 $dS/dt < 0$ 时，即使 $P_{L_2} \leq 1$（硬化的 L₂），也存在规范性的修改压力——系统将承受集体摩擦的淘汰压力直至 L₂ 被重组。
+Ax-L2-04 给出了 L₂ 可被修改的能量阈值条件（$P_{L_2} > 1$）。Def-L2-Normative 提供了**何时应启动修改审查**的候选条件：当 $dS/dt < 0$ 时，即使 $P_{L_2} \leq 1$（硬化的 L₂），也出现修改压力；是否、如何重组仍需结合覆盖范围、代价分配与替代方案判断。
 
 **Cross-ref**: Def-L2-Normative → `_SRT_VERTICAL_INTEGRATION.md §9`；$\mathcal{F}_{collective}$ 定义 → `Core/SRT_Core_22_Equations.md Eq-Multi-01`；$d_{collective}$ 定义 → `Core/SRT_Core_22_Equations.md Eq-Multi-03`；T-Core-02 不动点 → `Core/SRT_Core_00_Intro.md §T-Core-02`。
 

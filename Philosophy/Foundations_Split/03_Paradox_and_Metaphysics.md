@@ -155,10 +155,10 @@ $$I(Qualia) \gg I(Report)$$
 > *核心对应：`Ax-Core-A1` (Existential Priority)*
 $$\forall L_0 \neq \emptyset, \exists \hat{G}: L_0 \to L_1$$
 
-**公理 AS-2（选择一致性）**：
-> *核心对应：`Ax-L0-01` (Conservation of Possibilia) — 选择结果只能来自 L₀ 的守恒可能性*
-$$\hat{G}[L_0] \subseteq L_0$$
-选择的结果只能来自原有的可能性。
+**公理 AS-2（选择受约束性）**：
+> *核心对应：`Ax-L0-02` (Non-Exhaustion of Potential) — 确定化受相对潜在、位置与历史约束，但不从不可穷尽性推出预成形式库存*
+$$\hat{G}_{\theta_t}: L_0^{rel}(t) \to L_1(t+1)$$
+新显现不是无约束的“从无到有”，但也不要求其完成形式此前已逐项存在。该映射只标记接口，不充当完整 actualisation mechanism。
 
 **公理 AS-3（选择不可逆性）**：
 > *核心对应：`Ax-Core-A3` (Causality as Projection) — 选择的 L₂ 沉积不可逆回到 L₀*

@@ -113,6 +113,10 @@ Safer reading:
 Under metabolic and bandwidth constraints, divisive normalization is a strong candidate form of constrained neural selection.
 ```
 
+**2026-08-12 floor result**：即使神经响应符合除法归一化，也不能直接推出认知／行为选择。当前有界桥为 `Core_14 P3-Scale-NB1`：候选身份映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与具名干预必须同时声明。通过只建立任务局部 neural-to-behavioral compatibility，不建立机制同一、actualisation、agency、subjecthood 或 consciousness。
+
+The energy–information objective `J=H-λE` does not uniquely derive divisive normalization unless the cost functional, feasible set, dynamics, and boundary conditions are specified and the resulting solution is proved to belong to that family.
+
 ### 6.2 Pathology deviation
 
 Current risk:
