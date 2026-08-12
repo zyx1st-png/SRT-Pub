@@ -352,7 +352,7 @@ Safe uses:
 - distinguish problem-space constitution from answer/menu selection;
 - ask for a genetic mechanism between structured selectability and `L1` rather than letting `Ĝθ` function as an explanatory black box;
 - separate productive asymmetry / potential difference from canonical `Psi_f` payability burden;
-- crosswalk individuation-before-identity to PH-IND03 while keeping P0-04 open;
+- crosswalk individuation-before-identity to PH-IND03 while keeping it downstream of AM-A's P0 primitive boundary;
 - use metastability as an anti-closure pressure without defining an optimal `kappa` or modifying phase thresholds;
 - treat stable identity as recurrent historical reconstitution rather than literal microstate equality;
 - apply the Image-of-Selection audit when `selection` risks becoming a universal relabel for structured dynamics.

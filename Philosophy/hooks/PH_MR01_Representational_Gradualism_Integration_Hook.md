@@ -8,7 +8,7 @@ claim_mode: evidence
 canonical: false
 domain: philosophy_of_mind_representation_cognition_demarcation
 status: active
-integration_status: pending
+integration_status: partial
 landing_ledger:
   - target: "Philosophy/Foundations_Annex/10_MentalRepresentation_Interface_Batch.md"
     state: pending
@@ -17,8 +17,8 @@ landing_ledger:
     state: pending
     blocked_by: "Await subjecthood-threshold hardening pass; transfer only the classification-threshold/ontological-boundary guard and representation/bearer/phenomenality separation."
   - target: "Core/SRT_OPEN_TENSIONS.md"
-    state: pending
-    blocked_by: "Apply the PH-MR01 adjacent-case audit to the natural-boundary interpretation of Stable ISP entry, not to demote P1-T06's canonical result-state criterion. Resolve whether adjacent P1-T06-negative/positive systems show an independently measurable discontinuity and whether sigma_sub can supply such a transition beyond its current P3/P4 candidate status."
+    state: landed
+    anchor: "### Status Update (2026-08-11: phenomenality and adjacent-case guards)"
 closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 

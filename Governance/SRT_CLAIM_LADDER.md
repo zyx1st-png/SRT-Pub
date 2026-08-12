@@ -21,6 +21,69 @@ In particular, domain files must not present P3/P4/P5 claims as if they were P0/
 
 ---
 
+## 0A. Gate 0 — L₀ Contentless Structurality Boundary
+
+> **Status**: governance-canonical **type / boundary rule**. Adopted 2026-08-11.
+> **This file is the single primary authority for Gate 0.** `_SRT_SYMBOL_TABLE.md` Usage Rule 16 is a cross-reference for symbol users and does not restate the rule's content.
+> **Gate 0 carries no P-level.** It is **not** a P0 axiom, **not** a P1 theorem, **not** a physics claim, and **not** a new ontological quantity. §0 governs the *hardness* a claim may wear; §0A governs the *kind* of object that may sit at L₀. The two are orthogonal.
+> **Adjudication record**: `Operations/Proposals/SRT_GATE0_L0_CONTENTLESS_STRUCTURALITY_DECISION_2026-08-11.md`.
+
+### The rule
+
+**A contentful direction, goal, optimum, value, or semantic order is not primitive at L₀ merely because it can be written globally.** L₀ may carry universal, position-independent **structural** invariants; it may not carry semantic or evaluative content, and a global notation does not convert the second into the first.
+
+### The three classes
+
+| Class | Nature | Members currently admitted / named | Admission at bare L₀ |
+|---|---|---|---|
+| **A** | primitive / contentless structural | structured potentiality (with intrinsic granularity) · `κ₀` · `ε_pg` · irreversibility floor | **allowed** |
+| **B** | reference- / regime- / source-dependent weighting or comparative object | probability measure or prior over latent possibilities · entropy over `L₀` · reachable / accessible comparative quantities · any construct whose value requires a reference structure | **admission gap** — see below |
+| **C** | semantic / evaluative / contentful | semantic target · good / value · telos · 「order」 as content · 初心 as a global contentful direction · universe-wide preferred world-state · global semantic or evaluative optimum | **not admissible as a bare L₀ primitive** |
+
+**Class A is open, not closed.** The listed members are those currently committed; the class does not assert they are independent, jointly complete, or irreducible, and a future invariant of the same type must pass its own admission. (The `κ₀` / `ε_pg` dependency-graph audit remains deferred — `_SRT_SYMBOL_TABLE.md` Usage Rule 15.)
+
+**Class B is an admission gap, not a prohibition in kind.** The rule is:
+
+> Current core does not license such an object unless its required reference structure is **stated or independently derived**.
+
+This must **not** be written as "L₀ forbids a natural measure." A future, independently justified canonical natural measure remains open. Gate 0's function here is only to stop global notation from hiding a missing commitment.
+
+### Ordering discipline
+
+**Structural cost ordering ≠ semantic / value ranking ≠ preferred endpoint / telos.**
+
+`κ₀` induces an anisotropic cost geometry (some directions are cheaper) and `ε_pg` induces a two-class structural preference (`B ≥ 2` over `B ≤ 1`). **Both produce an ordering and both remain class A.** What class C forbids is a *complete semantic or evaluative ranking of latent world-states* and any *preferred endpoint*. Do not read any ordering as content — that misreading would come for `κ₀` and `ε_pg`, which Gate 0 exists in part to protect.
+
+### Declaration requirement for situated / contentful objects
+
+A situated or contentful object must **declare the reference structures its content actually depends on**.
+
+Ordinarily required at minimum:
+
+- a finite operator / position;
+- a declared admissible or reachable domain.
+
+Required **conditionally, when and only when the object depends on them**:
+
+- historical constraints — only when the object is history-dependent;
+- a probability measure — only when probability or entropy is used;
+- a payability / reachability horizon — when claiming reachable- or accessibility-relative quantities;
+- any other index the construct depends on.
+
+These are **typing / admission requirements, not a sufficient construction recipe.** Satisfying them makes an object well-posed; it does not make any particular content correct. History is deliberately *not* universally required: a first situated manifestation may arise before any `L_2` historical sediment exists (`Core_Law/SRT_L0_Metaphysics.md` Ax-L0-Bootstrap; `Core/SRT_Core_12a` T-L0-Kappa0).
+
+### Read-back rule
+
+「order」, 「初心 / original intention」, 「good」, and 「global convergence」 may exist as **L₁/P2 read-back, regulative language, or domain bridge** — but may not back-define L₀.
+
+**"Back-define" includes the indirect route**: a canonical anchor may not import an L₀-level reading of these terms by cross-referencing a `canonical: false` bridge or translation file. **Direction of citation is part of this rule**, not a separate courtesy.
+
+### What Gate 0 does not do
+
+It does not decide Gate A, Gate B, or Gate C (`Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`) — it bounds their option spaces. It does not resolve `κ₀`'s ontological status, and is neutral across the positions in `Philosophy/SRT_L0_Ontological_Status.md`, because it constrains *content*, not *mode of existence*. It introduces no symbol.
+
+---
+
 ## 1. Claim Levels
 
 | Level | Name | Definition | Allowed Voice |

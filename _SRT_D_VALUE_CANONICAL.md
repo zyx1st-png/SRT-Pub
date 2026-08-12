@@ -221,6 +221,8 @@ $$
 - `R_i / A_i / C_i` 门（§2b.1）是**赌注化闸**：一个已成为"需求"的方向，只有当它承载真实不可逆风险（R）、主体效用梯度对准它（A）、后果回流到主体闭包（C）时，才进入 `d_stakes`。
 - 因此"有微效价／有需求"**不等于**"有 stake-coupled `d`"——发生序把方向送到门前，门决定它是否计入 `d`。绕过门把"有微效价"读成"有 d"是类型错误。
 
+> **候选形成补注（2026-08-11，G5-4）**：关切结构可以在方向进入赌注门之前，与具身位置、结构边界、资源条件和历史共同对扰动做非中性加权，使部分扰动获得与维持、损失、行动或未来路径相关的候选意义。这一 pre-admission 作用不等同于有意识欲望，也不是候选形成的唯一原因；它不把 `d` 重新定义为候选准入加权器。`d` 仍是选择事件中已赌注化关切的标量摘要；候选形成的过程判据回链 `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`。
+
 ### §2a.4 不可替代性的两个操作化测试（book-provenance）
 
 书稿给 "Value as Non-Substitutability" 提供了两把可操作的尺（P3/P4，登记于此）：
@@ -497,7 +499,16 @@ d 扩张的健康模式是渐进的、可支付的、保留调整能力的。不
 
 SRT 的全局最优是一种使最大数量的选择过程能够持续运行、持续产生稳态（存在）的景观配置。它是**最高动态秩序**，不是最低能量的死寂。初心指向的是更多的存在能够共存并持续选择的方向，不是一切归于均匀的方向。
 
-**Cross-ref**: `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1（初心 = 全局收敛向量）；`Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1（初心作为 L₀ 的倾向性结构）。
+> **引用方向护栏（2026-08-11，Gate 0 canonical landing）**：下列 cross-ref 是 **provenance 指针，不是 canonical 背书**。按 `Governance/SRT_CLAIM_LADDER.md §0A`（Gate 0）的 read-back / 引用方向规则：**canonical 锚点不得通过 cross-reference 从 `canonical: false` 的 bridge / translation 文件反向导入 L₀ 层读法**。本节此前把 `Def-Apeiron-1` 标注为「初心作为 **L₀ 的**倾向性结构」，即以 canonical 认可语气导入了一条 L₀ 级 contentful 读法（Gate 0 class C），现予改正。
+>
+> **层级以 `Core_Law/SRT_L0_Metaphysics.md` 为准**：初心不在 L₀ 的原生承诺内，是 L₁/P2 对无内容结构不对称之显现结果的回读。下列两处的全局／变分形式一律按**领域 translation / bridge** 读，不得反定义 L₀，也不得据以在 canonical 层建立「初心 = L₀ 倾向性结构」。
+>
+> **本护栏只堵引用方向，不裁决实质**：初心是否可以有某种严格 contentless 的 L₀ precursor，仍是 `Core/SRT_OPEN_TENSIONS.md §16`（Gate B）未决事项；「全局最优」术语的正式收口仍是 §17（Gate C）未决事项。本节正文措辞与 §5b.1 的 Level A 收口读法均未改动。
+
+**Cross-ref（provenance，非 canonical 背书）**：
+
+- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 — Spirituality 层 translation（`claim_mode: mixed`）：把初心写作长时程自由能泛函的负梯度。**按 bridge 读**；其全局收敛向量形式不构成 L₀ 主张。
+- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 — Physics 层 translation（`claim_mode: translation`，`canonical: false`）：把初心写作 `argmin` 变分形式。**按 bridge 读**；其「L₀ 的内在属性」措辞是该翻译层的表述，**不被本 canonical 文件采纳为 L₀ 层定位**（Gate B 待裁）。
 
 ---
 

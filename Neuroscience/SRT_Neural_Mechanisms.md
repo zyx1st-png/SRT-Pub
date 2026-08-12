@@ -197,30 +197,32 @@ r^{imag}_{i}(o)\approx \gamma_i \sum_k w_{ik} z_k(o)
 
 ## II. Energy-Optimal Selection Dynamics (能量最优的选择动力学)
 
-### Ax-NEURO-MECH-3: Canonical Normalization Axiom
-在代谢约束下，选择动力学必然收敛为除法归一化：
+### P3-NEURO-MECH-3: Divisive-Normalization Mechanism Candidate
+在具名候选集合、竞争池、响应函数与代谢／带宽约束下，除法归一化可作为受限神经竞争的一种机制候选：
 \[
 R_i=\frac{L_i^n}{\sigma^n+\sum_j w_{ij}L_j^n}
 \]
 
 > **与 D3 的关系**：本式为 SRT-REF-DYNAMICS §1.3 Def D3（$\hat{G}_\theta$ 通用原型）在神经系统的特化实例，其中 $L_i \leftrightarrow x_i$，$w_{ij} \leftrightarrow W_{ij}$。**符号差异**：本式分母为 $\sigma^n$（半饱和项带幂次），D3 分母为 $\varepsilon$（无幂次，更简化的一阶原型）；在 $\sigma$ 较小时两式近似等价，精确形式以本式为准（经验上更符合 V1 的对比度增益控制数据）。参见 D3 极限行为表中 $\varepsilon\to 0^+$ 奇点警告。
-> **适用前提**：”必然收敛”的条件为：(1) 系统追求信息最大化（$H(\sigma)$ 最大化）且 (2) 代谢成本 $E(\sigma)$ 受约束（$\lambda > 0$）。在此二条件下，T-NEURO-MECH-1 给出充分性证明。若代谢约束为零（$\lambda=0$），则退化为无约束信息最大化，不必然产生归一化结构。
+> **适用前提**：信息收益与代谢成本的权衡本身不唯一推出除法归一化。若要从目标泛函得到本式，还须声明 $E(\sigma)$ 的具体形式、可行域、竞争耦合、动态方程与边界条件，并证明所得稳态属于该函数族；否则 `H-\lambda E` 只表达权衡，不构成充分性证明。
 > **Bridge boundary（2026-04-24 sync）**：除法归一化是 embodied neural `\hat{G}_\theta` 的实现级 proxy；它覆盖候选竞争与响应压缩，不穷尽 Ghost Operator。完整 neural loop 还需 threshold / ignition、global availability 与 plastic writeback，且这些仍是神经域机制接口，不是跨域 `\hat{G}_\theta` 的总定义。
 
-* **Implication（中文）**：归一化是选择算子的最优形式，不是经验性”电路细节”。
+* **Implication（中文）**：归一化是在若干感觉／决策回路中可检验的受限竞争机制，不是所有选择算子的唯一或本体必然形式。
 
 ---
 
-### T-NEURO-MECH-1: Energy–Information Extremum Theorem
+### P3-NEURO-MECH-1: Energy–Information Extremum Model
 令目标泛函：
 \[
 \mathcal{J}=H(\sigma)-\lambda E(\sigma)
 \]
-在 \(\delta\mathcal{J}=0\) 条件下，稳态解必然满足 Ax-NEURO-MECH-3 的归一化结构。
+`\delta\mathcal J=0` 只给定所声明目标泛函的驻点条件。只有在 $E(\sigma)$、约束集与动力学被具体化并完成推导后，某个驻点才可能落入 P3-NEURO-MECH-3 的除法归一化函数族；当前不主张唯一性或普遍收敛。
 
 > **SRT 量桥接**：拉格朗日乘子 $\lambda \propto \Psi_f^{metabolic}$（本体论摩擦的代谢成分，SRT-CORE-22 §15.5 Eq-IT-E 约束：$\Psi_f \geq k_B T \ln 2 \cdot I_{created}$）。$\lambda \uparrow$（代谢越紧张）→ 归一化越强（竞争抑制越显著）→ $d(\theta) \downarrow$（选择带宽 proxy 被压缩）。这里的 $d(\theta)$ 是神经选择带宽读数；只有当被压缩方向同时满足 stake-coupling 与后果回流时，才可近似 canonical `d`。
 
-* **Implication（中文）**：神经归一化是信息最大化与代谢成本最小化的唯一交点。
+* **Implication（中文）**：能量—信息权衡可用于比较归一化候选与其他受限选择模型；它不预先裁定除法归一化为唯一交点。
+
+> **Neural-to-behavior readout guard（P3-Scale-NB1）**：$R_i$ 是相对神经响应，不是行为选择。通向任务行为还须声明候选身份映射、冻结读出、阈值／证据累积或采样规则、执行门、held-out 误差、rival 模型与干预跟踪。完整合同见 `Core/SRT_Core_14_Dynamics_Scaling.md §2.2.0`；通过该合同也不推出 actualisation、agency、subjecthood 或 consciousness。
 
 ### BOLD-CMRO₂ uncertainty gate (bioRxiv 2026, 2026-05-11, Pipeline 1)
 这条材料真正补上的，不是“BOLD 失效”或“代谢信号总是与 BOLD 同向”，而是给神经代谢 proxy 加上一个必要统计门：**CMRO₂ 方向如果没有稳健不确定性支持，就不能被拿来判定 BOLD 与代谢 concordant / discordant。**
@@ -900,13 +902,13 @@ Source trail: [Imaizumi et al. SourceCard](../Materials/2026/SRC_2026_07_16_Cogn
 
 **传统**: 除法归一化是大脑优化信息编码的"工程解决方案"。
 
-**SRT**: 除法归一化是**选择的必然形式**——在能量受限条件下，任何执行选择的系统都必须收敛到这一形式。
+**SRT 当前桥接口径**：除法归一化是若干能量／带宽受限神经竞争中的强机制候选；是否适用于某一回路或任务，须与其他读出和累积模型比较，不能推广为任何执行选择的系统都必然采用的形式。
 
 这意味着：
 
-1. 除法归一化不是神经系统的"发明"，而是选择过程的**本体论必然**
-2. 不仅 V1，所有需要选择的神经回路都应表现出归一化特征
-3. 这为跨尺度同构性（公理 A12）提供了机制基础
+1. 除法归一化不是 Ghost Operator 的总定义，而是神经竞争的实现候选之一
+2. V1 之外的适用范围必须逐回路、逐任务检验，不从“需要选择”直接推出
+3. 局部成功最多支持 P3-Scale-NB1 的 neural-to-behavioral compatibility，不证明跨尺度同构
 
 ## 2.3 病理学的几何化
 
@@ -1236,7 +1238,7 @@ L_1 = f(\theta) + \epsilon,\quad
 
 三条核心方程构成 SRT 神经机制框架的三个层次：**微观计算原型** → **整合涌现条件** → **具身-行动效率**。
 
-- **能量-信息极值** (T-NEURO-MECH-1)：$\mathcal{J}=H(\sigma)-\lambda E(\sigma)$，稳态解必然满足除法归一化 $R_i=L_i^n/(\sigma^n+\sum_j w_{ij}L_j^n)$。信息最大化与代谢成本最小化的唯一交点。注：$\lambda \propto \Psi_f^{metabolic}$（代谢拉格朗日乘子对应本体论摩擦的代谢成分，详见 Ax-NEURO-MECH-3 注）。
+- **能量—信息极值候选** (P3-NEURO-MECH-1)：$\mathcal{J}=H(\sigma)-\lambda E(\sigma)$ 只表达具名模型中的权衡；除非具体声明 $E$、约束集、动态与边界并完成推导，否则驻点不必然满足除法归一化，也不存在“唯一交点”结论。$\lambda$ 至多作为 $\Psi_f^{metabolic}$ 的模型级 proxy 评估（详见 P3-NEURO-MECH-3 注）。
 - **点燃候选门** (Ax-NEURO-MECH-7)：$\mathcal{A}(\sigma)\ge\tau_{ignite}\;\land\;\Phi_{proxy}\cdot d_{proxy} > C_{critical}$。当前乘法式是结构性偏好，不是已证明相变定理；若数据支持补偿或连续概率访问，应改用加法门或概率门。
 - **具身锚定** (Ax-Mech-9)：$\kappa_{body}=\alpha \cdot F_{grip}/\Psi_f$（$\alpha$ 为量纲匹配系数，$F_{grip}$ 为运动系统效应力代理，量纲尚待精确形式化）。意向性向物理显现转化的效率系数；$\kappa_{body} \downarrow$ 对应衰老/具身退化（算子-基质脱锚）。
 

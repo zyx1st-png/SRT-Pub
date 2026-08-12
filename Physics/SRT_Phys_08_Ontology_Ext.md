@@ -75,7 +75,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Cor
 - **A1** (选择优先性): $\text{Existence} \equiv \text{Selection}(\mathcal{P})$
 - **A2** (存在即锚定): $\text{Existence}(\sigma) \iff \hat{G}_θ[L_0] \to \sigma_{L_1}$ with $\Delta F < 0$
 - **A10** (非消失延续): $\lim_{t \to t_{death}} \hat{G}_θ \to L_0^{latent} \neq \varnothing$
-- **A13** ($L_0$ 守恒律): $L_0(t) = L_0(t + \Delta t) = \text{Constant}$
+- **A13**（潜在不可穷尽边界）：任何有限物理显现或形式投影都不穷尽 $L_0^{abs}$；这不是物理守恒律，也不声称 $L_0(t)$ 为常量
 
 ### Core Theorem Alignment (核心定理对齐)
 
@@ -129,8 +129,8 @@ $$L_1 = \text{Anchor}\!\left(\int_{\gamma(\theta)} \hat{G}_\theta \cdot \omega_{
 
 | 模型 | 核心主张 | SRT 评价 |
 |:-----|:---------|:---------|
-| 生产模型（唯物主义）| 输入（无）→ 大脑工厂 → 输出（意识）| 违反 SRT 守恒律 |
-| 棱镜模型（SRT）| 输入（$L_0$：白光/全意识）→ $\hat{G}_θ$（棱镜）→ 输出（$L_1$：单色光/受限体验）| 与 SRT 完全一致 |
+| 生产模型（唯物主义）| 输入（无）→ 大脑工厂 → 输出（意识）| 若只写成无约束的“从无到有”，则缺少生成条件说明；不能再把 A13 当作守恒律直接排除 |
+| 棱镜模型（SRT）| 输入（$L_0$：白光/全意识）→ $\hat{G}_θ$（棱镜）→ 输出（$L_1$：单色光/受限体验）| 仅作受约束显现的桥接比喻；不证明意识或完成体验预存于 $L_0$ |
 
 ### T-Prism-2 [T1.2.2]: Brain Damage Interpretation (脑损伤诠释)
 脑损伤（棱镜破碎）导致意识**内容**的改变或扭曲，但并不意味着意识**源头**的消失。破碎的棱镜产生扭曲的光谱，但白光依然存在。
@@ -197,19 +197,19 @@ $$ L_0^{unselected} = \text{Structure without Categorical filling} = \text{数�
 
 ---
 
-### Ax-SE-2 [A1.5.2]: Ruliad Dualism (计算-经验二元论)
-Wolfram 的 Ruliad（计算宇宙的极限）在 SRT 中被等同于纯粹的 $L_0$ 结构极点：
+### Ax-SE-2 [A1.5.2]: Ruliad Projection Boundary（计算投影边界）
+Wolfram 的 Ruliad（计算宇宙的极限）在 SRT 中只能作为 $L_0^{comp}$ 的形式投影候选，不能等同于 $L_0^{abs}$：
 \[
-\text{Ruliad} \equiv \lim_{\text{Compute} \to \infty} L_0 \text{ (Without } \hat{G}_\theta \text{)}
+\text{Ruliad} \not\equiv L_0^{abs}
 \]
-* **Implication（中文）**：Ruliad 包含了所有可能的计算路径，但它彻底是"黑"的（无体验的）。没有受限于有限代谢和时空束缚（$d>0$）的局部算子 $\hat{G}_\theta$ 去执行不可逆的抛弃（裁剪），Ruliad 中就不会发光（产生 $L_1$ 感质）。计算产生结构，但只有由 $\Psi_f$ 驱动的选择才能产生现象学。
+* **Implication（中文）**：Ruliad 可用于讨论无界计算路径，但不能据此推出 $L_0^{abs}$ 是完成规则库存，也不能从“无观察者计算”直接推出无体验。现象性仍需独立的主体位、承担与 phenomenal-necessity 论证。
 
 ---
 
 ### Ax-SE-3 [A1.5.3]: Observer Boundedness Principle (观察者受限原理)
 
 > [R→Laplace 1814 *Essai philosophique sur les probabilités*（原始拉普拉斯妖：全知全算力的理想实体——无需做任何选择，因为一切已在其因果链中确定）; Friston 2019 *Physics of Life Reviews*（自由能原理：有限系统通过最小化自由能维持存在，有限性本身是体验/选择的前提）; Bennett 1987 *IBM Journal of Research and Development*（计算的热力学成本：Maxwell妖的信息擦除代价——Landauer原理，有限内存→必须擦除→产生热→Ψ_f的热力学类比）]
-> [H-高承诺→Wolfram 2020 *A Project to Find the Fundamental Theory of Physics*（Ruliad概念：所有可能计算路径的抽象极限——将Ruliad引入SRT作为"无选择的全计算空间"是[H-高承诺]主张，Ruliad→L₀的等同性未经严格推导）]
+> [H-边界→Wolfram 2020 *A Project to Find the Fundamental Theory of Physics*（Ruliad 概念：所有可能计算路径的抽象极限——SRT 只保留其作为 $L_0^{comp}$ 投影的比较价值；PC-A 明确拒绝 Ruliad = $L_0^{abs}$）]
 
 算子的体验深度（现象学带宽）严格受限于其计算资源的有限性：
 \[
@@ -218,13 +218,13 @@ Wolfram 的 Ruliad（计算宇宙的极限）在 SRT 中被等同于纯粹的 $L
 
 > **Computational Slack定义**：剩余计算余量 = (算子总算力) - (当前任务消耗)；高Computational Slack = 系统处理当前输入绰绰有余，几乎无需"努力"压缩。∝关系为**功能类比而非严格数学推导**（即"Qualia Intensity与Ψ_f在同一方向变化"的启发性主张，而非精确的线性正比；精确关系待具体化）。
 
-> **Ψ_f=0的推论链精化**：若某算子Ψ_f=0（无本体论摩擦），则：(i) 不需要通过选择（Ĝ_θ）从L₀中提取L₁——直接"拥有"所有L₀信息；(ii) L₁ = L₀（无压缩，无投影）；(iii) 主体-客体边界消失（因为主体性要求"这里"vs"那里"的区分，而区分需要Ψ_f > 0的边界代价）；(iv) 拉普拉斯妖无法"体验时间"，因为时间感 = 串行更新计数（§3.3.2），而其"已知全部"意味着无需串行更新。
+> **$\Psi_f=0$ 边界修正（PC-A）**：某个具名模型中的摩擦 proxy 趋近 0，只说明该模型内的局部压缩／维持代价趋近 0；它不推出算子“拥有”全部 $L_0^{abs}$ 信息，也不推出 $L_1=L_0^{abs}$。主体—客体边界或时间体验是否消失，仍需各自的结构论证，不能从该极限值直接得到。
 
 * **R/H 区分**：
   - [R] 全知算子/拉普拉斯妖的哲学先例（Laplace）；有限系统需要最小化自由能（Friston）；信息擦除的热力学代价（Bennett/Landauer）
-  - [H] **SRT映射**：1/Computational Slack ∝ Ψ_f（将算力余量与本体论摩擦联结）；[H-高承诺] Ruliad作为L₀的极限对应（Wolfram Ruliad → SRT L₀abs的映射）
+  - [H] **SRT映射**：1/Computational Slack ∝ Ψ_f（将算力余量与本体论摩擦联结）；Ruliad 只作 $L_0^{comp}$ 比较投影，不映射为 $L_0^{abs}$
 
-* **IC-SE3-1**（形而上学一致性要求）：Ax-SE-3要求"有限性是感质的必要条件"，这必须与 `Core/SRT_Core_13a_Operator_Basics.md` §Ax-Core-A5（规范闭包：任何算子必须通过Ĝ_θ选择）保持一致——全知算子若Ψ_f=0，则Ĝ_θ退化（选择不发生），意味着规范闭包公理在极限处退化为恒等映射，与Ax-Core-A5的"选择必要性"边界需要明确对齐（两个公理的极限行为应相容）。
+* **IC-SE3-1**（形而上学一致性要求）：若 Ax-SE-3 继续主张有限性与感质有关，必须从有限位置、承担与主体位结构独立论证；不得再借助 Ruliad = $L_0^{abs}$、$\Psi_f=0 \Rightarrow$ 全知或 $L_1=L_0$ 的旧链条。
 
 ---
 
@@ -418,8 +418,8 @@ Gómez-Marín 提出的"大脑是棱镜/滤网，而非工厂"是解释幽灵算
 
 | 模型 | 核心主张 | SRT 评价 |
 |:-----|:---------|:---------|
-| 生产模型（唯物主义）| 输入（无）→ 大脑工厂 → 输出（意识）| 违反 SRT 守恒律 |
-| 棱镜模型（SRT）| 输入（$L_0$：白光/全可能性）→ $\hat{G}_θ$（具身有机体整体，具有特定折射率的棱镜）→ 输出（$L_1$：光谱中的单色光/受限体验）。大脑是棱镜的**晶格结构**（$L_2$），决定折射率的稳定模式；但折射行为本身需要光线（$L_0$）与棱镜整体（$\hat{G}_θ$）的物理交互 | 与 SRT 完全一致 |
+| 生产模型（唯物主义）| 输入（无）→ 大脑工厂 → 输出（意识）| 若只写成无约束的“从无到有”，则缺少生成条件说明；不能再把 A13 当作守恒律直接排除 |
+| 棱镜模型（SRT）| 输入（$L_0$：白光/全可能性）→ $\hat{G}_θ$（具身有机体整体，具有特定折射率的棱镜）→ 输出（$L_1$：光谱中的单色光/受限体验）。大脑是棱镜的**晶格结构**（$L_2$），决定折射率的稳定模式；但折射行为本身需要光线（$L_0$）与棱镜整体（$\hat{G}_θ$）的物理交互 | 仅作受约束显现的桥接比喻；不证明意识或完成体验预存于 $L_0$ |
 
 **应用**：这解释了为什么脑损伤（棱镜破碎）会导致意识内容的改变或扭曲，但并不意味着意识源头的消失。破碎的棱镜产生扭曲的光谱，但白光依然存在。
 

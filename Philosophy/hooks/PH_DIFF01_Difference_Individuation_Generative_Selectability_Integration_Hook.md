@@ -8,14 +8,14 @@ claim_mode: evidence
 canonical: false
 domain: philosophy_metaphysics_difference_repetition_individuation
 status: active
-integration_status: pending
+integration_status: partial
 landing_ledger:
   - target: "Philosophy/SRT_Philosophy_Foundations.md"
     state: pending
     blocked_by: "Await future philosophy synthesis; de-materialize the anti-preformation, problem-space and stability distinctions rather than importing Deleuzian vocabulary or ontology."
   - target: "Core/SRT_OPEN_TENSIONS.md"
-    state: pending
-    blocked_by: "Register only narrowly scoped pressures: Conservation-of-Possibilia/preformation interpretation, L0->L1 actualisation mechanism, stabilization/metastability/reselectability relation, and selector individuation while P0-04 remains open. No canonical repair is licensed by this material PR."
+    state: landed
+    anchor: "### Status Update (2026-08-11: generative selectability and non-preformation pressure)"
   - target: "Core_Law/SRT_Individuation.md"
     state: pending
     blocked_by: "Await individuation hardening pass; crosswalk only the individuation-before-identity and metastability pressure with PH-IND03, without identifying pre-individual fields with L0 or consciousness."
@@ -85,8 +85,8 @@ and reopening capacity relate without assuming either maximum closure
 or maximum instability is healthy?
 
 D. Selector individuation
-What local process individuates a persistent selector-position from an already
-selectable/differential domain, while explicitly leaving P0-04 origin of selectability open?
+What local process individuates a persistent selector-position from a post-primitive
+selectable/differential domain, without pretending that this process derives or replaces AM-A?
 ```
 
 ### Guard
@@ -94,9 +94,13 @@ selectable/differential domain, while explicitly leaving P0-04 origin of selecta
 ```text
 Do not alter Conservation of Possibilia in this hook.
 Do not define kappa*.
-Do not claim P0-04 is solved.
+Do not claim a Deleuzian or domain mechanism derives the P0 primitive; AM-A is an author-decided stopping point, not a material-backed theorem.
 Do not promote Deleuzian terms to SRT primitives.
 ```
+
+### Author-decision follow-up (2026-08-11)
+
+Pressure item A was later resolved by the creator through PC-A in `Operations/SRT_POSSIBILIA_CONSERVATION_AUTHOR_DECISION_PACKET_2026-08-11.md`: Ax-L0-02 / A13 now state potential non-exhaustion without content/cardinality conservation, and T-L0-01 states novelty without preformation. This is a separate author-level adjudication, not a PH-DIFF01 evidential upgrade. Items B–D remain open; the guard above continues to mean that this hook itself has no authority to rewrite canonical content.
 
 ---
 

@@ -132,6 +132,7 @@ When answering or editing a non-simple SRT question:
 ### Boundary
 
 - Divisive normalization is an implementation proxy, not the full Ghost Operator.
+- A normalized neural response is not yet a behavioral choice: use `Core_14 P3-Scale-NB1` and require a frozen readout, event／execution gate, held-out error, rival comparison, and intervention tracking.
 - Quantum measurement is a physical bridge instance, not the whole `Ĝθ`.
 - GNW ignition is neural stabilization / availability, not the entire selection origin.
 
@@ -240,6 +241,29 @@ When answering or editing a non-simple SRT question:
 - GNW is global availability / broadcast.
 - Neither defines `d-value` or `Ψ_f`.
 - Graphify consciousness pages are support-only and should not outrank canonical consciousness / d-value / Ψ_f sources.
+
+---
+
+## 8a. Route: Object Individuation / Identification / Subjecthood Negative Control
+
+**Use when the query mentions**: object individuation, object identification, object tracking, object index, infant object representation, `still this one`, minimal subject, bearer individuation, subjecthood negative control.
+
+### Primary
+
+- `Philosophy/_SRT_Philosophy_Hardening_Index.md`（§ PH-IND01 object / subject individuation bridge）
+
+### Secondary
+
+- `Philosophy/patches/SRT_Philosophy_PH_IND01_Object_Subject_Individuation_Before_Identification_v0_1.md`
+- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
+- `Core_Law/SRT_Individuation.md`
+
+### Boundary
+
+- Object individuation can precede rich identification; this is a cognition-level distinction.
+- Object-tracking continuity is not consequence-bearing continuity.
+- An object index is not a minimal subject and does not establish consciousness.
+- Use PH-IND01 as a subjecthood negative control, not as evidence transfer from infant object cognition to SRT bearer formation.
 
 ---
 
@@ -637,7 +661,7 @@ When answering or editing a non-simple SRT question:
 - Do **not** reduce reselectability to current reward, long-term reward, entropy, option count, or generic robustness.
 - Do **not** identify toy `pre_div` with canonical d-value, or re-sampling capacity with canonical T_dir.
 - Do **not** claim the toy wedge validates SRT ontology or morality, or infer equal moral status for all objects.
-- Do **not** use this route to solve P0-04, closure-boundary, or externalization/X.
+- Do **not** use this route to derive or override AM-A's P0-04 primitive boundary, nor to solve closure-boundary or externalization/X.
 - Keep three layers separate: ontology (objecthood as maintained consequence-bearing reselectable closure), dynamics (reward/performance can diverge from future reselectability), morality/governance (moral pressure opens when one position's selection compresses another's reselectability, but X/externalization remains under-defined).
 
 ---

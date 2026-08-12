@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-08
+updated: 2026-08-12
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-08
+> **最后更新**：2026-08-12
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -20,6 +20,12 @@ updated: 2026-08-08
 
 - 首读顺序唯一权威：`AGENTS.md §Session Start`。
 - 当前第一优先工作线：完成此前未融合材料的 Pipeline 1 收口，并保持 Material Log、索引、registry 与 hook 一致。
+- 2026-08-11 五项相邻作者级边界裁决已落地：**PC-A**（potential non-exhaustion／non-preformation）、**AM-A**（P0-01 承载 primitive actualisation kernel）、**PHR-A**（物理实现采用 interpretation-plural P3/P4 audit）、**ST-A**（结构稳定／生成可再选择双轴）与 **EX-A**（事件现实性／锚定持续／stable ISP 三层分离）。均不构成材料证据升级，也不推进主体或意识命题。
+- 2026-08-11 作者已选择 **PHR-A**：AM-A 的物理实现采用 interpretation-plural P3/P4 audit。共同审计链为“非等价候选 → outcome-indexed 物理登记 → 可干预路径效力 → 未来可达性／返回成本改变”；collapse-family、Everett／branch-relative 与 operational／instrument 口径显式分开。地板判决仍是**黄灯／条件连接**：退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项均不充分，也没有建立解释中立的普遍物理机制。
+- 2026-08-11 作者已选择 **ST-A**：`P1-T06` 的稳定最低条件为声明扰动范围内的 recurrent historical reconstitution + continued selectability；generative reselectability 进入 21C B13 的 P2/P3 生成健康层。former `P1-T07` 无条件反闭合 theorem 已撤销，只保留 absorption remainder；neutral-kernel anti-closure 须补稳定语义、环境、无重置条件、时间窗与证明。fixed point、metastability、低摩擦、`σ<1`、option diversity 与 `ΔR_future>0` 均不得单项充当稳定／健康／合法性通用判据。
+- 2026-08-11 作者已选择 **EX-A**：`P0-01` 固定 determinate `L_1` event 的 manifest actuality；`P0-02` 只处理该事件是否留下有效痕迹、获得维持条件并持续约束后续转移；stable ISP identity 仍由 `P1-T06 / ST-A` 承担。旧式 `E = 1-H(L_1)/H(L_0)` 已降至 21C B14 的历史启发式，不再是 P0 方程或量化读出；EX-A 未采用全局 `H(L_0^{abs})`、归一化或 existence index。
+- 2026-08-12 `Core_14` 跨尺度熵证明审计已落地：`ΔS=H(L_0)-H(L_1)`、无条件粗粒化熵式与“所有尺度共同满足最小作用”不再支撑同构；strict conjugacy 只在尺度映射可逆时保留为特殊 P3 候选。一般接口回到 `P3-B06 / T-Scale-02C1` 的近似交换，并须声明状态空间、尺度映射、保留观测量、比较范数、容差与失败例。跨尺度共同项只到选择—约束—可支付性语法。
+- 2026-08-12 首个有界实例 `P3-Scale-NB1` 已落地：广义“神经除法归一化 → 认知／行为选择”为**红灯软连接**；相对神经响应不是离散选择，`H-λE` 也不唯一推出除法归一化。当前仅保留**黄灯条件接口**：具名候选映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与神经干预跟踪必须同时过门；尚无具名数据把该桥转绿。
 - 论文线：
   - Frontiers 稿 `1837760` 已接受，但因 APC 过高准备终止原出版路径并转投；在取得原期刊明确终止确认前不得新投，执行卡为 Issue #740；
   - *Costly Selective Closure* / Adaptive Behavior 已投稿，尚未进入外部评审；
@@ -34,13 +40,14 @@ updated: 2026-08-08
   - **Axis A `assimilation_state`**（结构，可静态检查）：理论增量走到哪了。`active_complete` 要求原生命题／活跃 owner／检索路径／快速层可读／旧表述已处理五项齐备。
   - **Axis B `behavior_validation`**（行为，**只能由实跑设定**）：新会话是否已被证明会因此改变判断。**回归套件存在不等于回归套件通过**；CI 永远只能报 `untested`。
   - `effectively_assimilated` 是两轴的**推导值**，不得手写。
-  - 当前 16 节点：Axis A `active_complete` **8** ／ `partially_active` 6 ／ `engineered_not_active` 1 ／ `author_gate` 1；Axis B `robustly_observed` 2 ／ `observed` 3 ／ `untested` 10 ／ `not_applicable` 1；推导出的 `effectively_assimilated` = **2**（要求 bounded + robustly_observed）。
+  - 当前 16 节点：Axis A `active_complete` **8** ／ `partially_active` 6 ／ `engineered_not_active` 1 ／ `author_gate` 1；Axis B `robustly_observed` 3 ／ `observed` 2 ／ `untested` 10 ／ `not_applicable` 1；推导出的 `effectively_assimilated` = **3**（要求 bounded + robustly_observed）。
   - **`engineered_not_active` 从 4 降到 1**，不是因为施工，而是因为探针推翻了静态判断。剩下的 1 个（`NODE-BOOK-BACKFLOW`）依据是内容层核实而非 hook 推理，仍待探针。
-  - `NODE-CHOICE-GENERATION`：`observed`（unconstrained），PR #744 的贡献是 `retrieval_efficiency_only`，判断差分为零——**节点可用**与**PR 有增量**是两件事，不得互相代替。
+  - `NODE-CHOICE-GENERATION`：`robustly_observed`（bounded ×3）；此前 unconstrained 对照仍表明 PR #744 的贡献是 `retrieval_efficiency_only`、判断差分为零——**节点可用**与**PR 有增量**是两件事，不得互相代替。
   - `NODE-AI-REASONING`：`robustly_observed`（bounded ×3），零施工达成。
   - **强制前置协议**：任何节点在立项做活跃层之前，先跑 **bounded** 基线探针（`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`）；基线能答对的，不按"活跃层缺口"立项。已按此判定 `NODE-AI-REASONING` 为 Case A，不施工。
+  - **2026-08-11 材料簇基线与 treatment**：AI 18/18、Neuroscience 18/18，均为 Case A / STOP；Philosophy baseline 17/18 的唯一失败 `P-A / P-Q5` 经 Route 8a treatment 后在同 form 内通过，treatment 有效 observations 18/18、正例零失败、归因门通过。该 Case B 路由缺口已关闭，继续 STOP；不授权 AI CompactCore、N1–N13 或 Philosophy synthesis。见 `Operations/Audits/SRT_MATERIAL_CLUSTER_BASELINE_PROBE_RESULTS_2026-08-11.md`、`Operations/Audits/SRT_PH_IND01_ROUTING_TREATMENT_RESULTS_2026-08-11.md`。
   - **`engineered_not_active` 这一档整体可疑**：它多数依据「patch 没有 hook」，而该推理已被 `NODE-AI-REASONING` 证伪——patch 内容可经非 hook 路径进入 owner，且 `<域>/patches/` 本身就在有界检索可达范围内。
-  - 全仓状态见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`，节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`，行为实跑记录见 `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_RUN_2026-08-07.md`。
+  - 全仓结构基线见 `Operations/Audits/SRT_ACTIVE_THEORY_ASSIMILATION_AUDIT_2026-08-06.md`；命题级修正与 bounded 前置协议见 `Operations/Audits/SRT_CONFIRMED_PROPOSITION_SEMANTIC_COVERAGE_AUDIT_2026-08-08.md`、`Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`；最新材料增量盘点、基线与 treatment 见 `Operations/Audits/SRT_MATERIAL_ASSIMILATION_DELTA_AUDIT_2026-08-11.md`、`Operations/Audits/SRT_MATERIAL_CLUSTER_BASELINE_PROBE_RESULTS_2026-08-11.md`、`Operations/Audits/SRT_PH_IND01_ROUTING_TREATMENT_RESULTS_2026-08-11.md`；节点表见 `Operations/Audits/data/srt_active_theory_nodes.json`。
 
 ## 当前仓库状态
 
@@ -49,7 +56,7 @@ updated: 2026-08-08
 - Choice-trace 作者门已关闭；T-B、T-D、T-E 首轮 bridge 与五域联合压力测试已经完成，不再列为“待建立”。
 - SEA 已形成统一协议、AI 正负校准、生命边界案例、制度配对案例与编码手册；方法贡献仍为 candidate，可靠性 pilot 暂缓。
 - forcing–CH 已完成 D05 C5-op、方法个体化协议、控制案例选择协议、多表征方法族审计和 countable-standard-model premise 窄类型说明；控制档案 Part II 仍未签署。
-- Pipeline 1 截至本轮材料台账为 208 条：A 131、B 27、C 50；2026-08 Part01 为 10 条。
+- Pipeline 1 截至本轮材料台账正式口径为 226 条：A 149、B 27、C 50；最新 split 为 `2026-08_Part04:7`。
 - 本轮开放材料与证据 PR 已完成收口；后续新增工作应从最新 `main` 重新起分支。
 
 ## 当前权威锚点

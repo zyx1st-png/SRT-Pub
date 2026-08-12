@@ -37,6 +37,9 @@ srt_physics_claim_status:
   default_role: "bridge / interpretation / pressure-test domain"
   not_definition_engine: true
   strongest_current_status: "P3 bridge with local P4 hypotheses and P5 speculative extensions"
+  physical_realisation: "PHR-A: interpretation-plural P3/P4 event audit; no interpretation-neutral universal mechanism"
+  realisation_audit: "non-equivalent candidates -> outcome-indexed physical record -> intervention-sensitive path efficacy -> future-access / return-cost change"
+  single_proxy_insufficient: "decoherence, dissipation, fixed point, POVM conditional state, or stable record alone is insufficient"
   collapse_language: "collapse-family default; must mark collapse-dependent passages"
   mwi_language: "compatibility / translation only; no global collapse"
   discrete_time: "hypothesis / bridge, not derived theorem"
@@ -93,6 +96,36 @@ srt_physics_claim_status:
 > MWI proves SRT, or SRT refutes MWI by definition.
 
 **Guardrail**: Do not mix collapse and MWI language in the same argument paragraph without explicit labels.
+
+---
+
+### 2.2a Physical realisation under PHR-A
+
+**Author decision**: `PHR-A — Interpretation-Plural Realisation Audit`（2026-08-11）.
+
+**Allowed common audit claim**:
+
+> Within a predeclared physical model, event unit, system boundary, and interpretation, a process may be registered as a P3/P4 physical realisation-event candidate when non-equivalent candidates enter the process, one outcome acquires an outcome-indexed physical record, that record has intervention-sensitive path efficacy, and the result changes future accessibility, transition probabilities, thresholds, or return cost.
+
+This is a domain audit for a candidate implementation of the AM-A primitive actualisation kernel. It is not the cause, derivation, or definition of that P0 kernel.
+
+| Interpretation index | Allowed reading | Forbidden slide |
+|---|---|---|
+| collapse-family | an exclusive outcome-anchoring candidate, explicitly marked `[collapse-dependent]` | presenting global collapse as interpretation-neutral physics |
+| Everett / MWI | branch-relative record and fact formation | saying the global wavefunction selected or deleted all other branches |
+| RQM / frame-relative | relation- or frame-indexed fact formation | silently upgrading a relational fact into a global one |
+| operational / instrument | outcome registration, conditional state, record channel, and downstream efficacy | treating formal conditioning alone as ontic occurrence |
+
+**Common evidence floor**:
+
+1. Freeze the event unit, system boundary, and candidate differences before the audit.
+2. Identify an outcome-indexed physical record, not only a researcher's later grouping.
+3. Show by intervention that the record changes later physical transition or resource-routing behavior.
+4. Show that the prior result changes later accessibility, probability, threshold, or return cost at the claimed level.
+
+**Single-proxy guardrail**: decoherence, dissipation, entropy production, Landauer cost, fixed-point stability, a POVM conditional state, or a durable／redundant record may contribute evidence or stabilization. None is sufficient by itself for physical realisation.
+
+**Consciousness boundary**: this audit does not require a human or conscious observer, but passing it does not establish a proxy subject, agency, consciousness, freedom, or probability-bias capacity.
 
 ---
 
@@ -219,6 +252,8 @@ srt_physics_claim_status:
 |---|---|---|
 | "SRT solves the measurement problem" | Overstates physics status | "SRT offers a collapse-family bridge reading of measurement as selection." |
 | "wavefunction collapse is Ghost Operator" | Collapses formalism into identity claim | "collapse-family language can be translated into a `G_hat_theta` anchoring schema." |
+| "decoherence / a stable record is actualisation" | Confuses evidence or stabilization with occurrence | "under a declared interpretation, outcome-indexed record plus intervention-sensitive path and history effects supports a P3/P4 realisation candidate." |
+| "the POVM outcome state proves that result occurred" | Confuses formal conditioning with physical occurrence | "the instrument defines outcome probabilities and conditional states; occurrence additionally requires a physical record and downstream efficacy at the audited boundary." |
 | "time is discrete in SRT" | Treats hypothesis as result | "SRT supports a selection-index reading of time; physical discreteness remains a hypothesis." |
 | "gravity is Psi_f" | Tensor-level overclaim | "gravity and physical `Psi_f` proxies may be weakly compatible as constraint structures." |
 | "Psi_f is Fisher metric" | Scalar/tensor identity overclaim | "Fisher–Rao geometry is a local information-geometric projection / proxy for `Psi_f` under stated model conditions." |

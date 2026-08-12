@@ -252,7 +252,7 @@ $$ \text{Hardness}(L_2) = \text{Type}(\text{Grammar}(L_2)) $$
 | Type 3 | 正则语法 | 简单因果链（无递归） | 机械时钟 |
 | Type 2 | 上下文无关 | 嵌套结构（有限递归） | DNA 复制 |
 | Type 1 | 上下文相关 | 依赖语境（有界递归） | 人类语言 |
-| Type 0 | 递归可枚举 | $L_2$ 向 $L_0$ 完全敞开的开放系统（极限，非典型 $L_2$ 实例）| 某些量子意识系统（注：Ruliad ≈ $L_0$，是 $L_0$ 而非 $L_2$ 的类比） |
+| Type 0 | 递归可枚举 | 面向无界计算规则空间的形式极限（非典型 $L_2$ 实例）| Ruliad 仅作计算投影类比，不等同于 $L_0^{abs}$；量子意识例不由此推出 |
 
 ### T-Chomsky-1 [T1.6.1]: d-value Grammar Correspondence ($d$ 值-语法对应)
 $$ d_{required}(\text{Type } n) \geq f(3-n) $$
@@ -520,7 +520,7 @@ $$\text{Hardness}(L_2) = \text{Type}(\text{Grammar}(L_2))$$
 | Type 3 | 正则语法 | 简单因果链 | $L_2$ 极硬，无歧义 | 机械时钟 |
 | Type 2 | 上下文无关 | 嵌套结构 | 中等硬度 | DNA 复制 |
 | Type 1 | 上下文相关 | 依赖语境 | $d$ 值越高处理越高级 | 人类语言 |
-| Type 0 | 递归可枚举 | $L_0$ 整体结构 | 仅高 $d$ 值可达 | Ruliad |
+| Type 0 | 递归可枚举 | 无界计算规则空间（形式投影） | 只允许资源受限的局部访问，不声称可达 $L_0^{abs}$ | Ruliad（比较模型） |
 
 **$d$ 值与语法层级的关系**：
 $$d_{required}(\text{Type } n) \geq f(3-n)$$

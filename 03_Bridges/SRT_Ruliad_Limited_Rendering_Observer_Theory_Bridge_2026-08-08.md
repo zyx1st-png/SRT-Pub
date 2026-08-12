@@ -377,7 +377,7 @@ SRT:
 remove view-from-nowhere completeness -> distinguish internal bearing from external re-objectification
 ```
 
-SRT should not claim that this already derives phenomenal character. The origin of selectability, full subject-entry conditions, and the bearer-to-phenomenality bridge remain open pressure points.
+SRT should not claim that this already derives phenomenal character. AM-A fixes actualisation as a P0 primitive boundary; how a Ruliad-style domain model could instantiate that kernel, along with full subject-entry conditions and the bearer-to-phenomenality bridge, remains open downstream.
 
 ---
 
@@ -553,7 +553,7 @@ This bridge does **not** prove that:
 - `computational bound = d`;
 - `rendering cost = Ψ_f`;
 - boundedness establishes subjecthood or consciousness;
-- SRT has solved the origin of selectability or the full hard problem;
+- a Ruliad / rendering mechanism derives or replaces AM-A's primitive actualisation kernel, or SRT has solved the full hard problem;
 - “Selection-Frame Relativity” is already a formal theory.
 
 ---

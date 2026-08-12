@@ -15,17 +15,19 @@ dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-QUANT-01, SRT-PHYS-BRIDGE]
 > **定位**：本文件是 `SRT_Quant_01_Selection.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 对量子测量、选择、概率流与非定域性的最短论证骨架。  
 > **关系**：不替代原文；原文保留详细量子诠释整合、概率流机制与实验预测。
+>
+> **PHR-A（2026-08-11）**：量子测量采用 interpretation-plural P3/P4 event audit。`\hat G_\theta` 是 AM-A 的形式角色载体；POVM 条件态不等于结果已发生；退相干、耗散、固定点或稳定记录中的任一项都不充分。
 
 ## 1. 核心问题
 
 这篇处理的是 SRT 在量子层面的最关键问题：
 
-> **量子测量到底是什么？以及它为什么不是“观察者魔法”，而是一次选择事件？**
+> **哪些物理证据允许我们把一个过程登记为 AM-A 的 physical realisation candidate？**
 
 SRT 的压缩回答是：
-- 测量 = 选择
-- 坍缩 = `L_0 -> L_1` 的锚定
-- 观察者不是神秘人类，而是满足条件的 `\hat G` 结构
+- 先声明模型、事件单元、系统边界与量子诠释
+- 再检验 outcome-indexed record、路径效力与历史效力
+- collapse-family、Everett 与 operational 口径共享审计，不共享一个已证的全局坍缩机制
 
 ---
 
@@ -36,9 +38,9 @@ SRT 的压缩回答是：
 \hat{G}_\theta: \mathcal{H} \to \mathcal{P}(\mathcal{H})
 \]
 
-SRT 把量子测量理解为：
-- 潜在态空间中的一个非幺正取值过程
-- 将可能性压成可显现的指针态/结果态
+SRT 把量子 instrument 读作：
+- 候选结果、概率与条件态的形式载体
+- PHR-A 事件审计的一个输入，而不是结果发生的充分证明
 
 在密度矩阵表达下：
 \[
@@ -46,29 +48,22 @@ p_k=\text{Tr}(M_k \rho M_k^\dagger),\qquad \rho_k=\frac{M_k \rho M_k^\dagger}{p_
 \]
 
 最压缩句子：
-> **测量不是额外神秘事件，而是选择算子对量子可能性的取值。**
+> **`\hat G_\theta` 标记转化角色；POVM 给出条件更新；物理发生还需要 outcome record、路径效力与历史效力。**
 >
-> **Bridge Clarification**: 这个 `Selection Operator` 不是脱离热力学的纯形式箭头；它在信息热力学中的等价表述，正是 `Generalized Second Law` 与 Landauer 极限对 `L_0 -> L_1` 取值成本的约束。也就是说，选择算子给出“谁在取值”，而广义第二定律给出“这次取值为什么必须付出不可逆代价”。
+> **Cost boundary**: Generalized Second Law、Landauer cost、耗散或 `\Psi_f` proxy 可以约束实现和记录稳定化；它们不说明“谁在取值”，也不造成 primitive actualisation。
 
-### 2.2 Measurement Event Criterion
-SRT 试图把“什么算测量”客观化为三条件：
-- 纠缠熵减少
-- 经典信息增加
-- 不可逆性达成
+### 2.2 Bounded Physical Realisation Audit
+PHR-A 使用四项有界审计：
+- 真实进入过程的非等价候选
+- outcome-indexed physical record
+- 可干预的 downstream path efficacy
+- 未来可达性、概率、门槛或返回成本改变
 
 压缩含义：
-> **测量不依赖“人类意识”参与，而依赖系统是否完成了从关联到确定性的热力学跨越。**
+> **审计不需要意识，但通过审计也不证明主体或意识。**
 
-### 2.3 Proxy Observer
-任何满足测量条件的系统都可作为：
-\[
-\hat{G}_{proxy}
-\]
-
-所以：
-- 探测器可以测量
-- 装置可以测量
-- 测量不需要神秘的人类灵魂注入
+### 2.3 Physical Measurement Interface
+历史符号 `\hat{G}_{proxy}` 只允许表示把候选差异耦合到记录通道的 physical measurement interface。装置可以形成测量记录；这不把装置升级为 proxy subject、agent 或 conscious observer。
 
 ---
 
@@ -152,7 +147,7 @@ SRT 的回答是否定的。
 
 SRT 对退相干的最关键判断是：
 
-> **退相干是必要的，但不足以解释为什么是这个结果。**
+> **退相干可以支持相干抑制与记录稳定化，但单独不能裁决全局坍缩、branch-relative fact formation 与 operational update。**
 
 它能解释：
 - 为什么某些态被偏好
@@ -161,8 +156,7 @@ SRT 对退相干的最关键判断是：
 但它不能独自解释：
 - 为什么最后是特定结果被实现
 
-SRT 在这里引入 `\hat G_\theta`，认为最终仍需要：
-> **一次真正的选择承诺。**
+PHR-A 不再用 `\hat G_\theta` 填补一个“最终决定机制”。它要求实际审计 outcome record 是否获得路径效力与历史效力，并把本体读法交给已声明的诠释。
 
 ---
 
@@ -190,8 +184,8 @@ SRT 试图统一：
 - Wheeler 的信息现实论
 - 退相干理论的环境稳定化
 
-其最压缩统一句是：
-> **观察者不是外加的神秘主体，而是执行自由能最小化、完成 `L_0 -> L_1` 取值的结构体。**
+其最压缩兼容句是：
+> **物理测量描述必须固定位置、边界、interaction 与 record channel；这些条件定义审计位置，不构成一个先在主体。**
 
 ---
 
@@ -199,8 +193,8 @@ SRT 试图统一：
 
 `Quant 01` 可以压缩成五句话：
 
-1. **量子测量就是选择，而不是额外神秘坍缩。**
-2. **测量的客观条件是信息与不可逆性的达成，不依赖人类意识。**
+1. **量子 instrument 的概率和条件态不自动等于结果已经发生。**
+2. **物理 realization candidate 需要 outcome record、路径效力与历史效力；不要求意识。**
 3. **现实内容来自历史选择的累积，而不是预先给定的实体清单。**
 4. **SRT 若允许心灵影响物质，也只是通过微观概率流偏置，而不是新力。**
 5. **纠缠与非定域性来自 `L_0` 未被彻底分解，而非宇宙违反理性。**

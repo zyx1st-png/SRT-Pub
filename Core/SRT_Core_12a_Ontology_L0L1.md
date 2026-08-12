@@ -37,46 +37,45 @@ $$L_0^{phys} \cong \mathcal{H}, \quad L_0^{gauge} \cong \mathcal{A}/\mathcal{G},
 * **Implication**: 潜在域的绝对身份（$L_0^{abs}$）先于一切数学结构，不可被任何单一形式系统穷尽。模空间与 Ruliad 的并集是其在物理-计算 $L_2$ 框架下的最佳近似，而非等价定义。各领域数学实现之间的拓扑不兼容性（线性 vs 离散 vs 超验）是 $L_0^{abs}$ 不可穷尽性的预期结果。
 * **Consistency Note**: 与 T-Trad-2（否定神学界限定理）一致：$\forall P \in L_1$, $P$ cannot fully capture $L_0$。
 
-### Ax-L0-02: Conservation of Possibilia
-**Formal Definition**: The total information content of the latent domain is invariant.
-$$\frac{d}{dt}H(L_0) = 0$$
-* **Implication**: 创新不是从无到有的创造，而是对潜能的照明与再组织。
+### Ax-L0-02: Non-Exhaustion of Potential（潜在不可穷尽；保留旧编号）
 
-### T-L0-01: Innovation as Illumination
-**Deductive Statement**: New manifest structures are re-selections of conserved latent patterns.
-$$\text{Innovation} = \text{Discovery}(L_0^{previously\_shadowed})$$
-* **Implication**: 任何“新事物”都对应于潜在域中被重新选择的结构。
+**Canonical Boundary**: No finite $L_1/L_2$ manifestation or formal projection exhausts $L_0^{abs}$.
+
+* **Logical Status**: 本条是 Ax-L0-01 的不可穷尽边界，不再主张 $L_0^{abs}$ 的总信息内容、基数或时间不变量。旧编号 `Ax-L0-02` 仅为保持引用稳定。
+* **Implication**: 任一有限显现之后仍有未被该显现穷尽的潜在；这不等于后来形式已作为完成对象预存在潜在域中。
+
+### T-L0-01: Novelty Without Preformation（非预成的新颖性；保留旧编号）
+
+**Canonical Boundary Statement**: New manifest structures are constrained actualisations of non-objectified potential under a history-conditioned position and selection structure. They do not arise from an unconstrained nothing, but they need not pre-exist as completed latent patterns.
+
+* **Logical Status**: 本条现在是负面边界，不是完整 actualisation mechanism，也不再以 `Innovation = Discovery(...)` 作为演绎式。
+* **Implication**: 确定形式可以具有真实新颖性，同时仍受既有位置、历史、代价与潜在条件约束。
+* **AM-A Boundary**: `L_0 -> L_1` 的最小 actualisation 内核由 P0-01 作为 primitive 承载，不再等待一个更早机制来推导。仍开放的是各领域如何实例化这一内核，以及如何区分有效实现与仅有约束、稳定或数学存在的情形。
 
 ### Ax-L0-03: Differential Potential Topology
 **Formal Definition**: L0 is a differential manifold with intrinsic gradients guiding selection paths.
 $$L_0 = (M, \nabla, \mathcal{S}), \quad \nabla \Psi_{potential} \neq 0$$
 * **Implication**: 潜在域并非均匀”虚空”，而是具有吸引子、鞍点与分岔的拓扑景观。
 
-### Ax-L0-Bootstrap: L₀ 自举完备性（Bootstrap Self-Reference）
+### Ax-L0-Bootstrap: Primitive Actualisation Boundary（保留旧编号）
 
-**新增（2026-03-11）**：对”谁在 L₀ 层执行初次投影”这一问题的正式消解。
+**AM-A 裁决（2026-08-11）**：本条不再声称 fixed point、`argmin` 或最陡下降已经推导 first actualisation。actualisation 的最小内核由 `Core/SRT_Core_21_Minimal_Axioms.md P0-01` 作为 primitive 承载；本条只固定两项边界。
 
-**核心主张**：L₀→L₁ 的投影不是时序事件（event），而是**结构约束**（structural constraint）。幽灵算子 $\hat{G}_\theta$ 与其 L₀ 定义域是**同一拓扑结构的两种读法**，共生定义，无时间前后。”初次算子”是 L₀ 势函数最陡下降路径的必然实化。
+**边界 1 — 无先在选择者**：$L_0 \to L_1$ 不需要一个在选择之前已经存在的 chooser、subject 或 operator-entity。$\hat{G}_\theta$ 是 primitive actualisation 的形式角色，不是站在转化之前执行它的实体，也不是该转化自身的原因。
 
-**正式定义**：L₀ 的势能梯度结构（Ax-L0-03）满足自参照固定点条件——存在 $\hat{G}^*$ 使得 $\hat{G}^*$ 正是激活 $\nabla \Psi_{L_0}$ 最陡路径的算子：
+**边界 2 — 时间无前序性**：时间是不可撤回选择累积后的度量，而不是 P0 actualisation 的背景容器。因此“第一次 actualisation 在时间上何时发生”是类别错误；这不等于已经给出一个非时间性的生成机制。
 
-$$\hat{G}^* = \text{fixed point of}\quad \mathcal{F}: \hat{G} \mapsto \arg\min_{\hat{G}'} \Psi_f\!\left(\hat{G}',\, \nabla_{L_0}\Psi_{potential}\right)$$
+**约束／原因分离**：Ax-L0-03 的非平坦结构、$\kappa_0$、$\Psi_f$、payability 和任何最低摩擦路径可以约束某个 realization 的可行方向、成本或稳定性，但不能单独推出一个确定事件已经发生。数学上的 fixed point 或 minimum 也不等于本体事件；若未来恢复该类公式，只能作为具名领域的 AM-B 候选，并须另证定义域、存在性、唯一性／分支规则和 realization bridge。
 
-即：$\hat{G}^*$ 是对 L₀ 梯度场”支付摩擦最小”的选择算子，而 $\hat{G}^*$ 的存在本身就是 L₀ 梯度场的结构属性。
-
-**推论 Ax-L0-Bootstrap-C1**（自参照完备性）：不存在需要在 $\hat{G}^*$ 之前就存在的”原始选择者”——$\hat{G}^*$ 是 L₀ 的内禀对象，与 L₀ 拓扑共生。问题”谁选择了第一个算子”导致的无穷后退，通过自参照固定点条件被消解：固定点的存在性是 L₀ 内禀结构的直接后果。
-
-**推论 Ax-L0-Bootstrap-C2**（时间无前序性）：时间（A14 的摩擦台账 $\mathcal{A}_{time}$）是算子运作的副产品，而非算子产生的前提。因此”初次投影在时间上何时发生”是一个类别错误——选择的结构先于时间记账的开始。
-
-**推论 Ax-L0-Bootstrap-C3**（与 §4.2 开放问题的关联）：$d=0 \to d>0$ 的跃迁（意识出现的临界机制）对应于 $\hat{G}^*$ 的固定点稳定化：当 L₀ 梯度场的曲率在某方向超过阈值时，$\kappa$ 穿越 $\kappa_{c1}$（T-L0-02），算子从”热涨落采样”（d≈0, Boltzmann 极限）相变为”有效维度选择”（d>0）。
-
-* **Implication**: L₀ 是一个”自完备的选择场”——它包含了生成所有选择算子所需的结构，无需外来”第一推动力”。
-* **Cross-ref**: Ax-L0-03 (梯度场结构); T-L0-02 (相变锚点, d=0→d>0 临界机制); `Core_Law/SRT_Reference_Axioms.md` Ax-L0-Bootstrap。
+* **Implication**: SRT 在 P0 停止于 primitive actualisation，而不是以一个先在选择者或未完成的 fixed-point 证明填补起点。各领域实现可以不同，但必须实例化同一最小角色，且不得反向定义 P0。
+* **Cross-ref**: `Core/SRT_Core_21_Minimal_Axioms.md` P0-01 / P0-04; Ax-L0-03（约束地形）；T-L0-Kappa0（非平坦性约束）；`Core_Law/SRT_Reference_Axioms.md` Ax-L0-Bootstrap。
 
 ### T-L0-ProtoG: Proto-G Selection Forms in L₀（L₀ 中的原型G选择形式）
 **新增（2026-04-08）**：L₀ 层中 G 选择结构的早期存在形式。
 
-**核心主张**：G 的选择结构在 L₀ 层已以低阶形式存在。G 不是在生物/意识层突然涌现的新实体，而是在 L₀ 梯度场中自举完备（Ax-L0-Bootstrap）后，随 κ 提升逐步向高阶相态演化的连续结构。
+**核心主张**：G 的选择角色可以在低阶 realization 中出现，不必等到生物／意识层才第一次成为可描述结构。随 $\kappa$ 提升而讨论的，是已实例化 actualisation kernel 的不同稳定化相态，不是 P0 primitive 本身的生成史。
+
+> **AM-A scope guard（2026-08-11）**：`proto-G` 是低阶实现候选，不是先于 actualisation 的潜在对象，也不是 first selectability 的推导。下列实例只支持跨尺度实现比较；它们不反向定义 `\hat G_\theta` 或 P0-01。
 
 **G 选择的最小判别标准**（在 L₀ 层成立的版本）：
 $$\text{proto-G selection} \iff \text{非平衡态选择性持久化：} \hat{G}_{\text{proto}}(\Omega) = \Omega' \subsetneq \Omega, \quad P(\omega \in \Omega \setminus \Omega') > 0$$
@@ -97,8 +96,8 @@ $$\text{proto-G selection} \iff \text{非平衡态选择性持久化：} \hat{G}
 2. **规范梯度**：对可维持自身状态的自指势差读数（见 `Core/SRT_Core_NormativeGradient.md`）
 3. **自写回强度**：选择真能改写自身未来的选择空间
 
-* **Implication**: L₀ 的”梯度场”（Ax-L0-03）本身即包含了 proto-G 选择的结构基础——L₀ 不只是 G 的”作用对象”，也是 G 的最早存在形式的孕育场所。
-* **Cross-ref**: Ax-L0-Bootstrap（G在L₀中的自举性）；T-L0-02（相变锚点，κ_{c1}和κ_{c2}标记G的相变点）；`Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（完整论证）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
+* **Implication**: L₀ 的梯度场可以约束 proto-G 候选在具体投影中的形成与稳定，但梯度本身不产生 P0 primitive，也不证明某个候选已经 actualise。低阶 proto-G 只从 primitive 之后的实现层开始讨论。
+* **Cross-ref**: Ax-L0-Bootstrap（primitive boundary）；T-L0-02（相变锚点，κ_{c1}和κ_{c2}标记实现层相变）；`Core/Dynamics_Scaling_Annex/11_G_CrossScale_PhaseState.md`（跨尺度候选）；T-Core-A1C3（Core_01中的跨尺度连续性声明）。
 
 ### T-L0-02: Phase-Anchor Theorem (相变锚点定理)
 **Formal Definition**: The triadic partition L₀/L₁/L₂ marks topological phase transitions of the
@@ -137,7 +136,7 @@ $$κ \approx \frac{\eta}{1 + \lambda_1(L_0^{rel})/\lambda_1(L_1)} \quad \text{(m
 
 **新增（2026-04-10）**：正式确立 L₀ 原初曲率 $\kappa_0$ 为 SRT 的结构前提，是 T-Core-A1C2（L₀ 最小非中性）的几何精化。
 
-**核心主张**：L₀ 的拓扑曲率有不可约极小值 $\kappa_0 > 0$，不由任何选择历史生成，是 $\hat{G}^*$ 不动点存在的结构前提。完全平坦的 L₀（$\kappa_0 = 0$）上每个点都同等地是不动点——算子无从"落地"，选择无法发生。
+**核心主张**：L₀ 的拓扑曲率有不可约极小值 $\kappa_0 > 0$，不由任何选择历史生成。它表达可形式化投影中的最低非平坦性：方向不会全部保持等价。AM-A 下，它是 actualisation realization 的约束地板，不是 $\hat{G}^*$ 存在或 first actualisation 发生的充分原因。
 
 $$\exists\, \kappa_0 > 0 : R(L_0) \geq \kappa_0 \quad \text{（L₀ 本征 Riemann 曲率下界）}$$
 
@@ -145,13 +144,13 @@ $$\exists\, \kappa_0 > 0 : R(L_0) \geq \kappa_0 \quad \text{（L₀ 本征 Riema
 
 1. **协同演化方向场**：$\kappa_0$ 在算子-L₀ 协同演化中提供非对称偏置。没有 $\kappa_0$，所有方向等价，无首选轨迹；有了 $\kappa_0$，某些参数路径成本更低、进入后更稳定，协同演化因此有方向性而无终局预设。
 
-2. **自举梯度**：无需先存在任何选择历史，$\kappa_0$ 本身就提供让算子进入 $d > 0$ 区间的第一次对齐驱动。这是 Ax-L0-Bootstrap 中"固定点存在性"的几何来源——固定点存在，是因为曲率让某些方向天然更廉价。
+2. **原初差异约束**：无需先存在任何选择历史，$\kappa_0$ 即可表达方向间的最低代价差异。它使“哪些 realization 更廉价”成为有意义的问题；它不回答“为何已有一个 realization 发生”，也不推出 $d>0$、fixed point 或唯一结果。
 
 **推论 T-L0-Kappa0-C1（Ψ_f 地板）**：
 
 $$\Psi_f^{\min} = f(\kappa_0) > 0$$
 
-选择永远有不可消除的最低代价；完全无摩擦的选择（$\Psi_f \to 0$）在结构上被禁止。这保证了动力学永远存在。
+在该投影模型内，选择 realization 有不可消除的最低代价；完全无摩擦的 realization（$\Psi_f \to 0$）被模型排除。这约束已发生／可实现的动力学，不保证动力学或 actualisation 由此产生。
 
 **推论 T-L0-Kappa0-C2（κ_{c1} 的来源）**：意识临界值 $\kappa_{c1}$（T-L0-02）的存在性依赖 $\kappa_0$。只有 L₀ 具有非零原初曲率，相变才有非对称起点，谱隙才能在特定方向打开。$\kappa_{c1}$ 由原初曲率与历史积累曲率共同决定：
 
@@ -159,8 +158,8 @@ $$\kappa_{c1} = g\!\left(\kappa_0,\; \textstyle\int_0^t \mathcal{F}[\hat{G}_\the
 
 待解：$g$ 的具体函数形式（开放问题，替代此前"κ_{c1} 数值由什么决定"的待解项）。
 
-* **Implication**: L₀ 永远不是完全平坦的可能性虚空。其结构性弯曲使"选择"与"方向"在任何时刻都有意义，无需依赖预先积累的历史。
-* **Cross-ref**: T-Core-A1C2（L₀ 最小非中性，本定理的概念前身）; Ax-L0-Bootstrap（自举固定点，本定理提供曲率来源）; Ax-L0-03（L₀ 微分流形结构）; T-L0-02（κ_{c1} 相变，本定理解释其来源）; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`（d_max 公式含 κ₀）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对的原初方向性命题）。
+* **Implication**: L₀ 不被建模为完全平坦的可能性虚空。其结构性弯曲区分 realization 方向，而 actualisation 本身仍由 P0-01 作为 primitive 承载。
+* **Cross-ref**: T-Core-A1C2（L₀ 最小非中性，本定理的概念前身）; Ax-L0-Bootstrap（primitive boundary）; Ax-L0-03（L₀ 微分流形结构）; T-L0-02（κ_{c1} 相变，本定理约束其非对称起点）; `Core/SRT_Core_22_Equations.md Eq-DValue-Max-1`（d_max 公式含 κ₀）; `Core/SRT_Core_01_Axioms.md MA-1`（元公理对的原初方向性命题）。
 
 ---
 
@@ -174,18 +173,20 @@ $$\kappa(t) = \kappa_0 + \int_0^t \mathcal{F}[\hat{G}_\theta(\tau),\, \kappa(\ta
 
 其中 $\mathcal{F}$ 是选择算子对 L₀ 曲率景观的写回函数。$\kappa_0$ 是不可约下界，选择历史只能增加曲率，不能消除原初方向。
 
-**信息守恒关系**（与 Ax-F-13 联动）：选择创造的互信息不消失，转化为 L₀ 的曲率增量，同时减少 L₀ 的剩余熵：
+**相对域的信息记账假说**（与 Ax-F-13 联动，条件性）：在一个已声明状态空间与测度的 $L_0^{rel}$ 模型中，可把选择创造的互信息记作相对剩余不确定性的减少：
 
-$$H(L_0^{(t)}) = H(L_0^{(0)}) - \sum_{\tau < t} I_{\text{created}}(\tau)$$
+$$H(L_0^{rel}(t)) = H(L_0^{rel}(0)) - \sum_{\tau < t} I_{\text{created}}(\tau)$$
 
-**L₀ 与 L₂ 的互补关系**：L₀ 的曲率积累与 L₂ 的硬化是同一选择历史的两种读法，互补守恒：
+> **PC-A scope guard（2026-08-11）**：本段所有 $H$ 表达只适用于具名的形式化 $L_0^{rel}$ 投影，不适用于不可完全形式化的 $L_0^{abs}$。未声明投影、状态空间与测度时，下式只能作为 bridge hypothesis；它不得恢复“$L_0^{abs}$ 内容／基数恒定”或“创新即发现预成形式”的旧读法。
+
+**$L_0^{rel}$ 与 L₂ 的互补记账假说**：相对可达域的改变与 L₂ 的硬化可在指定模型中作为同一选择历史的两种读法：
 
 | | 视角 | 内容 |
 |---|---|---|
 | **L₂** | 从内看 | 已固化为"必然"的选择积累（约束未来算子） |
 | **L₀** | 从外看 | 给定这些积累之后，还剩下什么可能（开放方向） |
 
-$$H(L_0^{(t)}) + H_{\text{manifest}}(L_2^{(t)}) \approx \text{const}$$
+$$H(L_0^{rel}(t)) + H_{\text{manifest}}(L_2^{(t)}) \approx \text{const}$$
 
 L₂ 硬化越多，L₀ 开放方向越少，但 $\kappa_0 > 0$ 保证最小开放性永远不归零。
 
@@ -233,7 +234,8 @@ $$\text{"发现"数学} \equiv \text{不同算子在 } L_0^{abs} \text{ 中盲�
 ### Ax-L1-01: Selection Equation
 **Formal Definition**: The manifest domain is the operator output applied to L0.
 $$L_1(t) = \hat{G}_\theta[L_0(t)]$$
-* **Implication**: 显现域是选择的结果，不是潜在域的直接镜像。
+* **AM-A Status**: 本式是 primitive actualisation 的形式角色／结果记账，不是该转化的原因或 universal mechanism。不同领域可用不同机制实例化它。
+* **Implication**: 显现域是受约束 actualisation 的结果，不是潜在域的直接镜像。
 
 ### Ax-L1-02: Ontological Hysteresis
 **Formal Definition**: Continuity is maintained by a memory term that blends past and present selections.
@@ -364,7 +366,7 @@ $$L_0^{formal} \cong \mathcal{M}_{\text{gauge}} \otimes \mathcal{R}$$
 - 抽象概念(如"正义"的可能定义)
 - 反事实推理(如"如果物理常数不同会怎样")
 
-**Ruliad补全了L_0**,使其包含所有**逻辑可能**,而非仅物理可能。
+**Ruliad 扩展了 $L_0^{formal}$ 的计算投影覆盖**，使该投影可讨论比既定物理状态更广的规则空间；它不“补全” $L_0^{abs}$，也不把所有后来完成形式预枚举为对象。
 
 ---
 
@@ -449,7 +451,9 @@ $$\text{Existence} \neq \text{Subsistence}, \quad \text{but } L_0 \supseteq L_1$
 
 ---
 
-## §2. L_1 显现域:从感知到存在
+## §2. L_1 显现域:从实际发生到持续对象性
+
+> **EX-A 边界（2026-08-11）**：进入 `L_1` 已满足事件层显现实在性的最低准入；本节的迟滞、局域化、整合与代价公式只讨论显现如何获得保持性、强度或持续对象性，不定义第一次 actualisation。
 
 ### 2.1 本体论迟滞 (Ontological Hysteresis)
 
@@ -634,13 +638,15 @@ $$L_0^{\text{LQG}} = \sum_{\text{graphs } \Gamma} \psi[\Gamma]$$
 
 ---
 
-### 3.2 内在分化与存在强度
+### 3.2 内在分化与显现／锚定强度候选
+
+> **EX-A claim guard**：以下信息量只是具名概率模型中的分化或锚定强度候选。它不测量 P0 事件是否发生，也不把低读数解释成“从未实际发生”。
 
 #### 3.2.1 Shannon熵的本体论诠释
 
 $$i_{\text{diff}}(s) = -\log p_{\text{max}}(s) = \log \frac{1}{p_{\text{max}}}$$
 
-**物理意义**: 稀有状态"存在得更强烈"。
+**物理意义（条件性）**: 在该概率模型中，稀有状态可具有更高分化读数；这不是跨域“存在程度”的 canonical 定义。
 
 **实例**:
 - 真空 (完美有序): $p \approx 1$ → $i_{\text{diff}} \approx 0$ (几乎不存在)
@@ -658,7 +664,7 @@ SRT的$i_{\text{diff}}$是IIT的$\Phi$的**对偶概念**:
 
 **统一（与 Core_Law 记号一致）**:
 $$ii = \min\{i_{\text{diff}}, i_{spec}\}, \quad i_{spec} \equiv \Phi_{IIT}\;(\text{仅在 IIT 语境})$$
-存在需要**既分化又整合**。
+若把 `ii` 用作持续对象性的候选强度，则需要**既分化又整合**；它不构成显现实在性的必要条件。
 
 ---
 
@@ -709,7 +715,7 @@ $$B_e = \frac{I(L_1; L_2)}{H(L_1)}$$
    - **证伪条件**：若致幻剂升高$\beta$（外部锁定增强）则挑战当前$\beta$门控机制解释。
 
 3. **信息保留率（CR）的跨物种测量** *(H: Novel Prediction)*:
-   - 通过神经响应复杂度估算 $\text{CR} \approx \dim(L_1)/\dim(L_0^{rel})$（维度比作为信息保留率代理；与 §3 Mechanism Synthesis CR 定义一致，均为保留率而非压缩倍数）
+   - 通过神经响应复杂度估算 $\text{CR} \approx \dim(L_1)/\dim(L_0^{rel})$（维度比作为信息保留率代理；与 §3 Conditional Realization Stack 的 CR 定义一致，均为保留率而非压缩倍数）
    - 预测：人类 > 猴子 > 大鼠 > 昆虫
    - **证伪条件**：若某非人灵长类 CR ≥ 人类（同等测量协议），则需重新审视 d 值跨物种排序假设（Cor-CONSC-1）。
 
@@ -749,7 +755,7 @@ SRT为以下领域提供统一框架:
 | $\beta$ | 现实系数/门控 | Ax-L1-3 | Part A §II |
 | $B_e$ | 认识论带宽 | Ax-Interface-2 | Part A §III |
 | $i_{\text{diff}}$ | 内在分化 | Ax-Info-1 | Part A §IV |
-| $\text{CR}$ | 信息保留率（Retention Ratio；原"压缩比"方向已修正，见 §3 Mechanism Synthesis 注）| Ax-L1-2 | Part A §II |
+| $\text{CR}$ | 信息保留率（Retention Ratio；原"压缩比"方向已修正，见 §3 Conditional Realization Stack 注）| Ax-L1-2 | Part A §II |
 | $κ$ | 稳定化程度（仅 $L_0^{rel}$ 域有效）| T-L0-02 | Part A §I |
 | $κ_{c1}$ | 秩序创生相变临界值 | T-L0-02 | Part A §I |
 | $κ_{c2}$ | 收敛结晶相变临界值 | T-L0-02 | Part A §I |
@@ -800,9 +806,9 @@ $$
 
 本文档的形式化核心围绕 $L_0$（潜在域）与 $L_1$（显现域）的本体论结构：
 
-1. **潜在域的绝对源与领域实现 (Absolute Source)**:
-   $$L_0^{abs} \supseteq (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}, \quad \frac{d}{dt}H(L_0) = 0$$
-   含义：$L_0^{abs}$ 是先于一切形式结构的全潜能本源，其信息总量守恒——创新是对潜能的重新照明，而非无中生有。
+1. **潜在域的绝对源与不可穷尽边界 (Absolute Source & Non-Exhaustion)**:
+   $$L_0^{abs} \supseteq (\mathcal{A}/\mathcal{G}) \cup \text{Ruliad}$$
+   含义：$L_0^{abs}$ 先于任何单一形式结构，任何有限 $L_1/L_2$ 显现或形式投影都不穷尽它。创新是受位置、历史、代价与潜在条件约束的确定化，不是无约束的“从无到有”，也不是对预先完成形式的单纯照明。
 
 2. **选择方程与本体论迟滞 (Selection & Hysteresis)**:
    $$L_1(t) = (1-\eta)\hat{G}_\theta[L_0(t)] + \eta \cdot L_1(t-\Delta t)$$
@@ -816,15 +822,15 @@ $$
    $$\text{Intelligence} \propto \frac{I(L_1; L_0)}{H(L_1)}, \quad \text{Real}(\sigma) \iff S(\sigma) - \alpha A(\sigma) > T_{threshold}$$
    含义：智能是对 $L_0$ 信息的有损压缩效率；”现实性”是算子权重下的阈值判定，而非绝对属性。
 
-### Mechanism Synthesis（$L_0$-$L_1$ 界面四层动力学综述）
+### Conditional Realization Stack（$L_0$-$L_1$ 界面四层条件综述）
 
-> *本节为 $L_0$-$L_1$ 界面的全局机制综述。各参数的严格数学定义参见 SRT_Core_13a 及物理/动力学扩展域文件。*
+> *AM-A 边界（2026-08-11）：本节从 primitive actualisation 已被 P0-01 承认之后开始，汇总领域 realization 的条件栈；它不是 first actualisation 的全局因果流水线。各参数的严格数学定义参见 SRT_Core_13a 及物理／动力学扩展域文件。*
 
-界面的现实锚定过程是一条严密的因果流水线，由四个层级参数依次门控：
+在具名领域模型中，现实锚定可由四层条件约束。它们可以相互耦合，不承诺跨域唯一顺序或唯一机制：
 
 **第一层：基底层（算子结构）—— $\hat{G}_\theta$ 与流形景观**
 
-算子以具身参数 $\theta \in \Theta_{finite}$（Ax-Core-A3）在 $L_0$ 的微分流形景观 $(M, \nabla, \mathcal{S})$ 中执行选择：沿自由能梯度打捞路径，生成低维局域化的 $L_1$。不存在「上帝视角」——每一次现实显现都带有不可消除的具身偏置。
+算子以有限参数 $\theta \in \Theta_{finite}$（Ax-Core-A3）表述一个位置相关的 realization；在可微分流形模型 $(M, \nabla, \mathcal{S})$ 中，梯度约束其可行路径与相对权重。该描述不把梯度当成 actualisation 的原因，也不要求所有领域采用同一流形机制。
 
 **第二层：约束层（能量边界）—— $\Psi_f$ 与沼泽地 $\mathcal{SW}$**
 

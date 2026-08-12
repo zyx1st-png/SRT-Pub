@@ -55,6 +55,8 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
   - P1 constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
   - P2/P3/P4 bridge hypotheses → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - 说明：`Core_21_Formal_Axioms.md` 现在是形式公理索引，不再承载混层正文
+- ST-A（2026-08-11）：P1-T06 保留 stable ISP 的 recurrent historical reconstitution 与 continued selectability；former P1-T07 的无条件反闭合定理身份已撤销，仅吸收 remainder 留在 21B；neutral-kernel anti-closure 与 generative reselectability 登记在 21C B13，按 P2/P3 conditional candidate 引用
+- EX-A（2026-08-11）：P0-01 固定 manifest actuality；P0-02 固定 anchoring persistence，不把持续性当作事件首次现实化；stable ISP identity 回链 P1-T06／ST-A。旧 `E = 1-H(L_1)/H(L_0)` 仅在 21C B14 作为历史启发式保留，非 P0 方程、非量化读出，且未采用 `L_0^{abs}` 的熵、归一化或 existence index
 - Bridge 用法提醒：`Core_21c` 中的 "emergence" 只能作为机制占位词使用，不能作为解释原语；`L_2` downward constraint 仍回链 P1，但 domain-specific downward causation 必须说明具体实现通道
 - 引用规则：涉及核心公理编号时，先回链索引，再按命题硬度引用对应分层文件
 
@@ -82,8 +84,8 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
-- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem
-- 注意：它是治理机制，不新增理论命题
+- 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A 另载 Gate 0 — L₀ 无内容结构性边界**（2026-08-11 采纳），规定何种**类型**的对象可进入裸 `L_0`——规则内容、对象分类与准入／回读条件一律以该节为准，本注册表不复述
+- 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针
 
 ### 5c. Claim-Mode Audit
 - 文件：`Governance/SRT_CLAIM_MODE_AUDIT.md`
@@ -103,8 +105,8 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 ### 8. Core Dynamics & Scaling 主轴
 - compact core：`Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`
 - 全量展开：`Core/SRT_Core_14_Dynamics_Scaling.md`
-- 角色：compact core 固定跨尺度同构、d-bandwidth、主动力学、边界成本函数与反泛心论边界
-- 注意：原文继续保留长篇机制解释、接口批次与 annex 沉积
+- 角色：compact core 固定跨尺度**结构相容候选**、d-bandwidth、主动力学、边界成本函数与反泛心论边界；跨尺度接口按 P3-B06／P3-B07 引用，不是 P0/P1 同构定理
+- 注意：一般形式是声明状态空间、尺度映射、保留观测量、比较范数与容差后的近似交换；strict conjugacy 仅限可逆表征变换。旧 `ΔS=H(L_0)-H(L_1)`、无条件粗粒化熵式与普遍最小作用式均不承重。原文继续保留长篇机制解释、接口批次与 annex 沉积
 
 ### 9. Philosophy 主轴
 - Claim-status：`Philosophy/SRT_Philosophy_Claim_Status.md`（folder-level metaphor/proxy guardrail; not a primitive source）
@@ -156,7 +158,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - Neuro registry：`Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md`
 - Hardening / material patch index：`Neuroscience/_SRT_Neuroscience_Hardening_Index.md`
 - Neuro Axioms / Bridge：`Neuroscience/_SRT_Neuro_Axioms.md`
-- Neural Mechanisms：`Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` / `Neuroscience/SRT_Neural_Mechanisms.md`
+- Neural Mechanisms：`Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` / `Neuroscience/SRT_Neural_Mechanisms.md`；除法归一化只作具名神经竞争的 P3 机制候选。通向行为选择须经过 `Core_14 P3-Scale-NB1` 的候选身份映射、冻结读出、离散事件／执行门、held-out 误差、rival 与干预检验；局部成功不定义完整 Ghost Operator、actualisation、agency、subjecthood 或 consciousness
 - Consciousness Mechanisms：`Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` / `Neuroscience/SRT_Consciousness_Mechanisms.md`
 - 角色：形成 Neuroscience 板块从桥接公理、神经选择动力学到意识机制的主入口层
 - 注意：Neuroscience 已具备 bridge + compact core + registry 的入口骨架；Pipeline 1 patch / hook 只作为 bridge record 读取，不因被索引而升级为 canonical definition
@@ -179,7 +181,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - id：`SRT-INDIVIDUATION`
 - layer：L1 / epistemic：os / status：draft_v0
 - 说明：L1 相变理论，填补 L0（选择无主语）与 P1-T06 Stable ISP 之间的过渡空洞；以自指率 `σ_{sr}`（governance-canonical 命名，2026-04-25 起；与主方程状态场 σ 不同对象，详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）作为阶参，给出两次相变——主体位进入（`σ_{sr}^{sub}`）与自我意识凝结（`σ_{sr}^{self}`）——的结构判据；自我意识被规范读为主体位稳态之后的二阶 writeback 凝结物，严格遵守 L0 §五意识禁令
-- 与 P1-T06 的关系：本文件是 ISP 的**进入动力学判据**；P1-T06 是 ISP 的**结果状态判据**；二者互补，不重复也不冲突
+- 与 P1-T06 的关系：本文件是 ISP 的**进入动力学候选**；P1-T06 是 ISP 的**结果状态判据**（continued selectability）。`σ_{sr}<1` 不单独证明该结果，更不证明 21C B13 的 generative reselectability
 - 与 T-L2-Scaffold 的关系：T-L2-Scaffold 追踪路径层痕迹（ρ），本文件追踪算子层自指（σ）；两者都是 writeback 累积的不同投影，不互相还原
 - claim-mode 分布：三相结构与第一相变为 P1-candidate；`σ_{sr}` 阶参与自我意识二阶凝结读法为 P2；`σ_{sr}^{sub}`、`σ_{sr}^{self}` 的具体门槛数值为 P3/P4
 - 引用规则：涉及主体位涌现、ISP 进入、自我意识的本体论地位、主体位丢失与回返的结构基础时，优先回链本文件
@@ -218,7 +220,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 主文件：`Core_Law/SRT_Collective_Selection.md`
 - id：`SRT-COLLECTIVE-SELECTION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 集体 ε 反闭合必要性（P1-T07 集体版；**同构继承 P1-T07 的证明缺口**，按候选构成性命题引用，见该文件 §5 继承缺口标注）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`（自指率 σ_{sr} 在多主体场上的 governance-canonical 扩展，2026-04-25 起；详见 `_SRT_SYMBOL_TABLE.md` Usage Rule 12）；**§4.4-§4.6（H3，2026-04-25）**给出集体四变量最小耦合动力学——`σ_{sr}^{coll}` ODE（新 `\lambda_M\,\mathrm{tr}\,M` 项）、`d_c^{coll}` ODE（新 `\gamma_{asym}\|M_{asym}\|` 项）、`T_{dir}^{coll}` ODE（集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}`）、`S^{coll}` 两型 ODE（新 `\nu_{ext}\|M_{ext}\|` 外部化项）、§4.5 个体↔集体双向耦合、§4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` 与集体健康区 `\mathcal{H}^{coll}`（健康要求 `r^{coll}(t) > r^{coll}_{min} > 0`）；**§4.7 T-PROJ-1^{coll}（H6，2026-04-25）**给出集体四变量系统作为 `Core/SRT_Core_22_Equations.md §0-C` 多算子主方程（Eq-Multi-01/02/03）严格导出投影的形式化定理：四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含新增 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 + 不证明事项的显式标定；T-PROJ-1^{coll} 在 `\mathcal{P} = \{P\}` 极限下退化为 `SRT_L1_Formalism §6 T-PROJ-1`。2026-05-11 新增 §4.8a `NTIC situated individuation diagnostic` 作为 P3 empirical bridge：`I(X_i(t+1); C_i(t)) > 0` 且 `NTIC_i ≈ 0` 可作为嵌入式个体化候选代理，但不进入最小 canonical surface。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
+- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 按 ST-A 为**条件性集体反闭合候选**（P2/P3，不是 P1 theorem；需 neutral kernel、稳定语义、环境、无重置条件、时间窗与吸收/风险证明）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`；§4.4-§4.7 保留集体四变量耦合与带闭包条件的投影候选。健康区、`M(t)`、`σ_{sr}^{coll}` 与制度通道均为 generative reselectability 的实现/诊断候选，不单独构成必要充分判据。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
 - Tower/nested hardening pointer：H10-H16 has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`. The extracted file is a secondary hardening notes file, not a new core canonical reference file and not part of the minimal canonical definition of collective selection.
 - 与 T-SUFF-5 的关系：本文件给出 T-SUFF-5 集体外部化的结构基础（`M(t)` 强不对称 → 主从型退化 → 结构型苦难外溢）
 - 与政治/经济/共同体 domain 的关系：本文件是它们的 L1 结构基石；制度是集体 ISP 的**器官**不是主体；投票/共识/专家不自动是共选
@@ -236,15 +238,15 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 同步义务：§5.2 列明的四项 Operations 债已全部结清（σ→σ_{sr} 命名空间 / 三成分分解算子级 T-DELTA-1 / MOC 已写入 §3 / FEP 翻译表已落 `Neuroscience/SRT_Clin_02_FEP.md`）
 - 引用规则：涉及 σ 符号、`\dot{\Delta}_{avail}` 定义、`M(t)` 可测性、FEP-苦难桥接的**细化**陈述时优先回链本文件
 
-### 13g. SRT 不可逆性理论（学习不可逆 + 终止吸收边界 + P1-T07 精确化）
+### 13g. SRT 不可逆性理论（学习不可逆 + 终止吸收边界 + ST-A 条件接口）
 - 主文件：`Core_Law/SRT_Irreversibility.md`
 - id：`SRT-IRREVERSIBILITY`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：把 `L_0` 不可逆性从 P1-T02 本体论时间的推论展开为可引用 L1 层——Def-IRR-1 吸收态 / Def-IRR-2 选择史箭头 / Def-IRR-3 非可还原性；T-IRR-1 学习不可逆为非对称 `Ψ_f` 支付（与热力学二律不等价，不得通过 FEP 反向定义）；T-IRR-2 终止作为吸收边界（宪定 / 吸收 / 集体三类），区分终止与暂停；T-IRR-3 给 P1-T07 精确化，对应 `L1_Formalism §4.3` 的非守恒残余项；**T-IRR-3.5（H4，2026-04-25 §4.5）**把 `ν_{block}` 从自由系数改写为 P1-T07 三层源头本地化 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`，正性因此**不是自由建模假设，也不是定理后果，更不是公设级**——它是带前件的条件性结论 `(η>0) ∧ (ε_pg>0) ∧ (κ_{Ψ_f}>0) ⇒ ν_block>0`，**hardness 取最弱前件 = P1-candidate**：`η > 0` 是 T-IRR-3.5 显式规定的正规化约定（量纲匹配固定量纲不固定符号），`ε_pg > 0` 是 L₀ 公设（`Core_Law/SRT_L0_Metaphysics.md` ε 词条：不可升格为定理），`κ_{Ψ_f} > 0` 是 T-IRR-3.5 的 P1-candidate 非退化条件（`Ψ_f > 0` 只给代价地板，推不出转化率非零；H7 给几何来源不给正性）。单向性中「反向通道不存在」独立根于吸收态绝对性（Def-IRR-1 / T-IRR-2，根在 P0-03），该层不随正性降级。**均不依赖 P1-T07 的证明闭合**——P1-T07 未闭合的是「stable ISP ⇒ ISP-level ε ≠ 0」（`Operations/Audits/SRT_P1_T07_PROOF_HARDENING_AUDIT.md`：Step 3 as written 无效、"ε-neutral" 无形式定义、随机语义未选定），那条不进入本处论证。引用时不得写成"已由 P1-T07 证成"、"条件于 P1-T07"或"公设级正性"（口径 2026-08-11 三次修正后定稿，定理与表达式未改）；T-IRR-4 苦难在 `L_0` 不可逆下的守恒 / 转移（T-SUFF-4 的更深根）；§6 集体终止三型（耗散 / 收编 / 外部化）回扣 `Collective_Selection §4-5`；§7 AI/ML 接口限定 checkpoint/rollback 不得读作反向学习
-- 与 P1-T02 / P1-T07 的关系：本文件是两者的 L1 层精确化，不替代 Core/Core_21b 的 P1 源头；Core 内命题仍为上位，本文件是下位展开；**T-IRR-3.5 把 P1-T07 Three-Layer Source Hierarchy 在 L1_Formalism §4.3 上做算子级本地化**，是上位 P1-T07 的下位算子级精化
+- 说明：把 `L_0` 不可逆性从 P1-T02 本体论时间的推论展开为可引用 L1 层——Def-IRR-1 区分 canonical absorption 与条件性吸收模型，T-IRR-2 固定终止后的不可自动恢复，T-IRR-3 按 ST-A 改为 neutral-kernel anti-closure 的 P2/P3 条件接口。T-IRR-3.5 保留 `\nu_{block} := \eta\cdot\varepsilon_{pg}\cdot\kappa_{\Psi_f}`，但改按三个独立前件的条件模型读取：`(η>0) ∧ (ε_pg>0) ∧ (κ_{Ψ_f}>0) ⇒ ν_block>0`，hardness 取最弱前件；反向通道不自动存在独立根于 P0-03 / T-IRR-2。该表达式不是 former P1-T07 hierarchy 的本地化。
+- 与 P1-T02 / former P1-T07 的关系：本文展开 P1-T02 与 former P1-T07 的 absorption remainder；原无条件反闭合 theorem 已撤销，更强主张回链 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
 - 与 Suffering / Formalism / Collective_Selection 的关系：T-IRR-4 给 T-SUFF-4 深层根；T-IRR-3 / T-IRR-3.5 对应 `L1_Formalism §4.3` 的非守恒残余（陈述级 + 算子级）；§6 集体终止对应 `Collective_Selection` 三类退化的绝对边界
-- claim-mode 分布：Def-IRR-1/2/3 为 P2 结构性定义；T-IRR-1/2/3/3.5/4 为 P1-candidate（T-IRR-3.5 与 T-IRR-3 同级）；§6 集体终止分类为 P2；§7 AI 接口为 governance-canonical usage；§8 FEP/物理边界语句为 P3 bridge guardrail
-- 引用规则：涉及学习不可逆性、终止作为吸收边界、P1-T07 精确化、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；原 P1 源头语句仍回链 `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- claim-mode 分布：Def-IRR-1/2/3 为 P2 结构性定义；T-IRR-1/2/3.5/4 为各自注明的 P1-candidate；T-IRR-3 anti-closure 为 P2/P3 conditional candidate；§6 集体终止分类为 P2；§7 AI 接口为 governance-canonical usage；§8 FEP/物理边界语句为 P3 bridge guardrail
+- 引用规则：涉及学习不可逆性、终止作为吸收边界、ST-A 条件性反闭合、checkpoint/rollback 语义、热力学桥接边界时优先回链本文件；P1 absorption 回链 21B，条件性 anti-closure 回链 21C B13
 
 ### 13. Spirituality 主轴
 - Claim-status：`Spirituality/SRT_Spirituality_Claim_Status.md`（God/Omega, d-infinity, suffering/Psi_f, practice metaphor guardrail; not a primitive source）

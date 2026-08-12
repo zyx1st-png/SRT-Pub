@@ -81,23 +81,29 @@ $$
 
 **Implication**: Existence is not a passive background given in advance. It is what appears as the output of selection / anchoring.
 
-**Boundary**: This axiom does not by itself specify the domain mechanism, empirical substrate, or consciousness condition of any particular selector.
+### P0-01 AM-A Precision: Primitive Actualisation Kernel
+
+At P0, actualisation is the irreducible kernel already carried by the selection primitive: non-objectified potential, under real constraints, acquires a determinate manifest distinction. This fixes the minimum constitutive role; it does not presuppose a menu of completed latent objects and does not derive the transition from a prior non-selective mechanism.
+
+`\hat{G}_\theta` is the formal role-carrier for this primitive transition. It is not a prior entity that causes selection, and the equation above does not explain actualisation by renaming it as an operator output.
+
+**Boundary**: This axiom does not by itself specify the domain mechanism, empirical substrate, stable selector, or consciousness condition of any particular realization. Gradients, asymmetries, `\Psi_f`, payability, normalization, closure, and writeback may constrain or implement a realization at lower claim levels; none is thereby the universal cause of the P0 kernel.
 
 ---
 
-## P0-02: Existence as Anchoring
+## P0-02: Manifest Actuality / Anchoring Persistence Boundary
 
 **Lineage**: former `Ax-F-02`.
 
-**Formal Definition**: Existence equals stable anchoring against entropic flow.
+**Author decision**: `Existence = EX-A` (2026-08-11).
 
-$$
-E = 1 - \frac{H(L_1)}{H(L_0)}
-$$
+**Primitive boundary**: P0-01 fixes the minimum admission condition for existence in SRT: a non-objectified potential difference acquires determinate manifest actuality as an `L_1` event. P0-02 separates that event-level actuality from the downstream question of **anchoring persistence**—the degree to which the event leaves trace, forms maintenance conditions, and continues constraining later transitions.
 
-**Implication**: Reality is the degree to which a selected slice has been stably anchored from open possibility.
+An event may therefore be actual without already being a persistent object, a recurrently stable organization, or a stable ISP. Persistent objecthood requires additional anchoring and maintenance; stable ISP status additionally requires the P1-T06 identity, perspective, history, and continued-selectability conditions.
 
-**Boundary**: The equation is a compact formal handle for anchoring intensity. It should not be cited as an empirical measurement protocol without a bridge or lab layer.
+**Legacy-formula demotion**: The former compact expression `E = 1 - H(L_1)/H(L_0)` is no longer a P0 formula or a quantitative readout. Under PC-A, no global measure or entropy over `L_0^{abs}` is defined, and EX-A does not adopt a replacement normalization. The expression survives only as historical intuition for comparative anchoring and is governed at P2/P3 by `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B14`.
+
+**Boundary**: Do not infer persistence from occurrence, structural stability from persistence, or stable-ISP identity from a durable record alone. Conversely, loss of persistence does not make the earlier event never have occurred; P0-03 preserves its historical trace.
 
 ---
 
@@ -131,21 +137,24 @@ $$
 
 **Boundary**: This does not assert a specific implementation of `\hat{G}_\theta`; implementation details belong to bridge, domain, or lab layers.
 
-### P0-04 Exposure Note: Origin of Selectability
+### P0-04 Primitive Boundary: Selectability Without a Prior Chooser
 
-> **Level**: core boundary / unresolved ontology exposure. This note does not solve the origin of selectability.
+> **Level**: P0 primitive boundary, author decision AM-A (2026-08-11).
 
-P0-04 gives SRT a minimum object for formal claims: an admissible selection operator. It does **not** derive the first possibility of selecting from a prior non-selective ground.
+P0-01 supplies the primitive actualisation kernel; P0-04 supplies the minimum well-formed formal carrier required to make claims about it. AM-A deliberately does **not** derive the first possibility of selecting from a prior non-selective ground. This is a declared stopping point of the current P0 architecture, not a gap that a fixed-point symbol, least-friction path, or downstream mechanism may be said to have closed.
+
+No prior chooser is required: a selector, subject, agent, or stable operator-pattern is downstream of primitive selection. This negative result follows from the ordering fixed by P0-01; it is not a theorem that an operator object already exists inside `L_0`.
 
 Current dependency split:
 
 | Claim type | Relation to P0-04 |
 |---|---|
-| minimal claims about operator well-formedness, trace, irreversibility, and `L_1/L_2` anchoring | valid once an admissible `\hat{G}_\theta` is given |
-| claims about `d`, `Ψ_f`, `T_dir`, reorientation, concern, agency, or subject-like selection | downstream of assuming a selector / selectable operator exists |
-| bridge claims about biology, AI, spirituality, society, or political agency | may instantiate or constrain selectability, but must not be back-cited as a derivation of its origin |
+| primitive actualisation and its formal role | fixed by P0-01 plus P0-04; not derived from a non-selective predecessor |
+| gradients, cost, payability, normalization, closure, trace, irreversibility, and `L_1/L_2` anchoring | enabling conditions, realization constraints, or postconditions according to their own claim level; none alone causes the P0 kernel |
+| claims about `d`, `Ψ_f`, `T_dir`, reorientation, concern, agency, or subject-like selection | downstream of primitive actualisation; they do not define its origin |
+| bridge claims about physics, biology, AI, spirituality, society, or political agency | may instantiate or constrain the kernel, but must not be back-cited as its universal derivation |
 
-Therefore, files may cite P0-04 as an exposure point or admission condition. They must not cite a downstream bridge as if it had closed the origin problem.
+Therefore, files may cite P0-04 as a primitive boundary or formal admission condition. They must not cite a downstream bridge, fixed point, `argmin`, or minimum-friction path as if it had derived the primitive. A future AM-B-style meta-theory may challenge this stopping point, but it would require a new author decision and the missing non-circular proof obligations; it is not current SRT canonical.
 
 ---
 

@@ -115,6 +115,10 @@ $$
 | confidence | 记录判断确信度 | 可能高置信但方向不可回读 |
 | semantic coherence | 记录叙事或概念一致性 | 可能是 L₂ 后设解释，不保证活选择方向可读 |
 | reward | 记录优化信号或强化结果 | 可塑造选择，但不等于系统对自身选择方向的访问 |
+| directional efficacy / behavioral bias | 记录某个偏置是否真能组织注意、推理或行为轨迹 | 可以因果效力很强，但来源与方向对系统不可及；未独立满足 `R_self` 与 `A_reorient` 时不构成 `T_dir` 证据 |
+| commitment strength / decisiveness | 记录承诺的绑定性、不可逆性或公开可归责性 | 行动可以高度绑定却方向不透明；承诺强度、果断性与事后叙事确定均不代替回读与重取向 |
+
+> **负面判据补注（2026-08-11）**：上表后两行回注 `Philosophy/hooks/PH_AG02_Reasoning_Bias_Integration_Hook.md` 与 `Philosophy/hooks/PH_AG03_Constitutive_Commitment_Integration_Hook.md`。它们只收紧 `T_dir` 的证据边界，不改变 `Def-T-1` 或上述乘积式。
 
 ---
 
@@ -258,7 +262,7 @@ $$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\P
 | `Philosophy/SRT_Ethics_Agency.md` | 价值遮蔽命题的伦理延伸 |
 | `Governance/SRT_POSITIONING.md` | T_dir 应用层作为 SRT 最有力入口的论证 |
 | `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，ODE 含弛豫、真实重选泵入、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀、`s_{ext}` 支架五项。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
-| `Core_Law/SRT_Irreversibility.md` | T-IRR-3 把 P1-T07 ε 反闭合必要性精确化；L1_Formalism §5.3 健康工作区的主动维持条件与之同源 |
+| `Core_Law/SRT_Irreversibility.md` | T-IRR-3 按 ST-A 提供条件性反闭合接口；L1_Formalism §5.3 健康工作区是 generative reselectability 的实现候选，不是 P1-T07 必要性的证明 |
 
 ---
 

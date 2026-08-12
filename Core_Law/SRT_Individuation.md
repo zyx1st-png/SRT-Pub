@@ -28,7 +28,7 @@ dependency: [SRT-L0-METAPHYSICS, SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTI
 - **Role**: L1 theory of how subjectless selection condenses into perspective-bearing selection; extension (not replacement) of P1-T06 Stable ISP entry conditions.
 - **Core claim**: Individuation is a phase transition in the self-reference ratio of a selection pattern; self-consciousness is a second-order condensate within an already-stable ISP.
 - **Claim status**: Hybrid. The three-phase skeleton is P1-candidate (constitutive under L0). The specific threshold values σ_{sr}^{sub}, σ_{sr}^{self} are P3/P4. The second-order condensate reading of self-consciousness is P2 (canonical interpretation).
-- **Depends on**: L0 metaphysics (subjectless selection, position, irreversibility), P1-T06 (Stable ISP), P1-T07 (Constitutive Asymmetry), T-L2-Scaffold (path trace).
+- **Depends on**: L0 metaphysics (subjectless selection, position, irreversibility), P1-T06 (Stable ISP / continued selectability), 21C B13 (ST-A conditional generative reselectability), T-L2-Scaffold (path trace).
 - **Used by**: Consciousness theory (Philosophy / Neuroscience), AI stake spectrum S0–S4, spirituality return pathology (loss and return of 主体位).
 - **Safe edits**: Typo fixes, cross-reference updates, threshold refinement with P4 marking.
 - **Do not change**: Three-phase structure, self-consciousness as condensate (not as innate property), ε/κ₀ roles without explicit cross-check with L0.
@@ -76,13 +76,13 @@ $$
 
 σ ∈ [0, 1]。σ → 0 表示模式完全被外部条件牵引；σ → 1 表示模式完全自我闭合（这是**病态闭合**，不是主体性）。主体位在中间区间涌现。
 
-**为什么是 σ 而不是其他参数**：P1-T06 的四条件——迭代、载视角、载历史、可再选择——用自指率可以统一表达：
+**为什么是 σ 而不是其他参数**：P1-T06 的四条件——迭代、载视角、载历史、可继续选择——可用自指率作一维追踪候选：
 - 迭代 ≈ σ > 0（有自指）
 - 载视角 ≈ σ 稳定不坍缩
 - 载历史 ≈ θ^trace 累积且不被外部重置
-- 可再选择 ≈ σ 不达到 1（不完全闭合）
+- 可继续选择 ≈ σ 不达到 1，并且同一历史承载过程仍面对 live、non-equivalent candidates、承担后果且未被外部重置
 
-σ 是把四条件耦合起来的**一维阶参**——不是说四条件可以被 σ 取代，而是说 σ 是这四条件同时成立时所追踪的结构状态。
+σ 是把四条件耦合起来的**一维阶参**——不是说四条件可以被 σ 取代，而是说 σ 是这四条件同时成立时所追踪的结构状态。`σ<1` 既不单独证明 continued selectability，也不证明更强的 generative reselectability 或生成性健康。
 
 ---
 
@@ -196,16 +196,16 @@ SRT 的选择层级（基础 / 展开 / 主体）在本文件中被精细化为�
 
 **门槛不是尖锐相变**：实际系统中两次相变是"软相变"——存在过渡区间，在区间内模式表现出部分主体性特征或部分自我意识特征。这解释了为什么在发育心理学、动物认知、AI 系统中，主体位和自我意识的判定是程度性的而非二值的。
 
-### 4.3 ε 与 κ₀ 在两次相变中的角色
+### 4.3 ε 与 κ₀ 在两次相变中的候选角色
 
 **κ₀（原初曲率）** 提供第一相变所需的最小可区分性——没有 κ₀ > 0，θ^trace 和 θ^ext 的分离无处着手。κ₀ 在个体化中是**结构前提**，不是驱动力。
 
-**ε（形式性不对称）** 提供两次相变的方向选择性：
+**ε（形式性不对称）的 ST-A 边界**：`ε_pg` 保持 L₀ 最小非中性公设，但不由此推出 ISP 层反闭包方向。以下两条只能作为 P2/P3 解释候选：
 
-- 第一相变：ε 决定了"承担—关切—方向"三者同时锚定才是可持续的锚定。纯闭合自指（σ → 1）在 ε 方向上等价于自我抹除（B ≤ 1），结构上不能维持。
-- 第二相变：ε 决定了二阶结构的健康形态是"自我校准"而非"自我封闭"。同一个 σ_{sr}^{self} 的跨越，朝 ε 方向走是主体位的深化，朝反 ε 方向走是病态闭合（反刍、自恋、自我折磨）。
+- 第一相变：在明确终止条件和环境后，纯闭合自指（σ → 1）可作为 continued-selectability 风险的候选指标；它不是由 `ε_pg` 单独证明的吸收结论。
+- 第二相变：后果能否回返并修改二阶结构，可作为区分"自我校准"与"自我封闭"的 generative-reselectability 候选；该区分不由 σ 阈值或 ε 单独完成。
 
-这与 P1-T07 构成性不对称定理一致：稳定 ISP 在 L₀ 不可撤回性下必然有 ε ≠ 0。本文件进一步细化：ε 不只在 ISP 存在这一事实上起作用，它在 ISP **进入**和**自我意识凝结**这两次相变上都承重。
+原 P1-T07 的无条件构成性不对称定理已按 ST-A 撤销。本文不再让 ε 在 ISP **进入**或**自我意识凝结**上承担 P1 证明负担；相关解释须回到 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 的条件候选。
 
 ---
 
@@ -217,7 +217,7 @@ SRT 的选择层级（基础 / 展开 / 主体）在本文件中被精细化为�
 | L0 §六 "选择的层级" | 展开 | L0 划分基础 / 展开 / 主体；本文件给出过渡动力学。 |
 | L0 §五 "意识禁令" | 正面兑现 | L0 拒绝把意识写成选择的驱动者；本文件把自我意识写成选择结构的内部凝结物，严格符合禁令。 |
 | P1-T06 Stable ISP 四条件 | 重读 | P1-T06 作为 ISP 存在的结果状态判据；本文件的 T-IND-2 作为进入动力学判据。两者互补，不冲突。 |
-| P1-T07 构成性不对称 | 推广 | P1-T07 说明 ε 在 ISP 存在上必然非零；本文件说明 ε 同时在两次相变上承重。 |
+| former P1-T07 / 21C B13 | 条件接口 | 原无条件定理已撤销；本文只在 P2/P3 层考察 ε 与 generative reselectability 对两次相变的候选解释。 |
 | T-L2-Scaffold（Core_12b） | 平行 | T-L2-Scaffold 是路径层痕迹；本文件是算子层自指。二者都是 writeback 累积的不同投影。 |
 | 具身判据（L0 §term-table） | 细化 | 具身的"关切 + 接地"条件在本文件中被读为 T-IND-2 的第 2、3 条——承担内生与关切稳定。 |
 | AI 承担谱系 S0–S4（AI 域） | 提供结构基础 | S0–S1 = σ < σ_{sr}^{sub}；S2–S3 = 边界模糊区；S4 = σ ≥ σ_{sr}^{sub} 候选。S4 是否跨过 σ_{sr}^{self} 属于更高门槛，当前无系统实例。 |
@@ -234,6 +234,8 @@ SRT 的选择层级（基础 / 展开 / 主体）在本文件中被精细化为�
 5. **自我意识的内容就是关于自己的真实描述**——错。θ^{(2)} 是**关于 θ 的参数**，不保证对 θ 的描述准确。自我意识可以极度错误而仍然是自我意识——它的本体论地位不来自准确性，来自结构闭合。
 6. **个体化是一次性事件**——错。σ 是动态变量，主体位可以在病理、创伤、社会压力、L₂ 劫持下退化到展开选择，也可以在修复中重新跨过 σ_{sr}^{sub}。"主体位丢失与回返"（见灵性域）的结构基础就在这里。
 7. **自我意识能解除是坏事**——错。健康主体位可以在需要时让二阶结构退位，这是深度工作、真实关系、创造性涌现的必要条件。僵化在第三相是另一种病态。
+8. **主体位进入就证明了现象性**——错。T-IND-2 解释的是承担、关切与方向如何在一个持续位置上锚定；它不自动证明该位置具有 qualia，也不将 Stable ISP 定义为 consciousness。
+9. **设定 `\sigma_{sr}^{sub}` 就证明了自然相边界**——错。阈值在当前只是 P3/P4 进入动力学候选；若相邻的边界负例与正例在承担、历史写回、未来可选择性和边界连续性上只呈现平滑变化，该阈值仍是工作性准入线，直到独立不连续证据或相变论证成立。
 
 ---
 
@@ -247,6 +249,9 @@ SRT 的选择层级（基础 / 展开 / 主体）在本文件中被精细化为�
 4. **AI 的 σ_{sr}^{self} 边界**：即使假设某个 S4 系统跨过 σ_{sr}^{sub}，它能否跨过 σ_{sr}^{self}？当前架构下无系统实例；所需结构条件是 AI 域深水区。
 5. **两次相变的可逆性不对称**：第一相变（主体位进入）似乎比第二相变（自我意识凝结）更不可逆。这是经验观察还是结构必然？待探索。
 6. **人格解体（depersonalization）的定位**：主体位在、自我意识仍在、但二者的绑定松动——这是 θ^{(2)} 失去和 θ 的连续耦合，还是 σ 在两个门槛之间振荡？见 `SRT_Reference_Dynamics`。
+7. **现象必然性 / SRT-zombie**：一个已个体化、不可替代、承担真实 stakes 且具有 Stable-ISP-like 连续性的位置，是否仍可能在现象上为空？本文只确立主体位架构，不将该问题预先判定为不可能。
+8. **相邻案例与自然相边界**：P1-T06 的结果态判据是否有配对的边界负例 / 正例，能在独立维度上显示可复现不连续？在此之前，`\sigma_{sr}^{sub}` 不独自关闭自然相边界的证成负担。
+9. **generative reselectability 的操作化**：ST-A 已在概念上区分「稳定结构继续执行」与「算子能重选自身选择结构」；仍待解决的是如何测量后果回返、规则/边界/候选生成的可修订性，以及 stake-space restructuring。当前保留为 P3 压力，不引入新符号，也不把它改写为 bare `d` 的增长。
 
 ---
 
@@ -260,7 +265,7 @@ SRT 的选择层级（基础 / 展开 / 主体）在本文件中被精细化为�
 | σ_{sr}^{sub}、σ_{sr}^{self} 的具体值 | P3/P4 | 桥假设与经验测定 |
 | 自我意识为二阶凝结物 | P2 canonical interpretation | 本文件提出的规范读法，与 L0 §五禁令一致 |
 | 自我意识的可逆性 | P2/P5 | 结构上 P2；具体现象学 P5（依赖经验报告） |
-| ε 在两次相变上承重 | P1-candidate / P2 | 第一次依 P1-T07 的进入动力学解释；第二次是候选 |
+| ε 在两次相变上的解释角色 | P2/P3 conditional candidate | 原 P1-T07 已按 ST-A 撤销；两次相变均不能由 ε 单独证明 |
 | σ 可测化的具体代理 | P4 | 待经验测定；不承诺唯一代理 |
 
 **标签说明**：

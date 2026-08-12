@@ -41,13 +41,13 @@ For any phenomenon, SRT asks three prior questions:
 
 ## Thesis 1: Selection Precedes and Produces Existence
 
-**Claim**: Existence is not a primitive background. What appears as real is the stable state produced by a selection process. Selection does not merely "precede" existence in time — it generates existence as its product.
+**Claim (EX-A)**: Existence is not a primitive background. Primitive actualisation gives a determinate event manifest actuality; downstream anchoring determines whether it persists, and neither condition yet establishes stable-ISP identity. Selection does not merely "precede" existence in time — it supplies its event-level admission.
 
 **Constitutional reading**:
 - "To exist" is not merely to be logically possible.
-- A state becomes real insofar as it is selected from a latent domain and stabilized into manifestation.
-- Existence is the stable phase of an ongoing selection process — a cross-section of a verb, not a static noun.
-- When the selection process ceases to converge on a given state, that state ceases to exist.
+- A determinate event becomes manifest through selection; it need not already be a persistent object.
+- Persistent existence is the anchored phase of an ongoing selection process — a cross-section of a verb, not a static noun.
+- When maintenance ceases, the object no longer persists as the same object; its earlier occurrence is not erased.
 
 **Why this must be so**:
 - Determination is structurally asymmetric. Going from undetermined to determined creates information, and information creation irreversibly changes the landscape of possibilities. There is no inverse operation of selection — any attempt to "undo" a selection is itself a new irrevocable selection. This irrevocability does not depend on time; rather, time is the L₂ measure of accumulated irrevocable selections.

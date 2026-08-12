@@ -41,6 +41,8 @@ Claims in this file may be cited as SRT interpretations, bridges, or hypotheses.
 | `Ax-F-11` ghost operator universality | P3 | High-ambition cross-scale bridge |
 | `Ax-F-12` `\Psi_f` as generative principle | P2/P3 | Canonical interpretation plus Fisher-geometry borrowing |
 | `Ax-F-13` selection-information creation equivalence | P2/P3 | Minimal theorem in 21B; strong unification lives here |
+| former `P1-T07 / T-ε-Constitute` | P2/P3 conditional candidate | Absorption is P1; neutral-kernel anti-closure requires additional semantics and proof |
+| former `P0-02` entropy-ratio existence index | P2/P3 historical heuristic | EX-A keeps anchoring persistence at P0 but demotes the ungrounded quantitative readout to B14 |
 | Part B assembly / deep-time notes | P3/P4 | Bridge / empirical-theoretical extrapolation |
 
 ---
@@ -155,11 +157,21 @@ $$
 
 **Lineage**: former `Ax-F-11`.
 
-**Formal Definition**: Across scales, selection from `L_0` to `L_1` may be modeled as the same ghost-operator structure `\hat{G}_\theta` unfolding under different embodiments.
+**Formal interface**: Across scales, selection from `L_0` to `L_1` may be tested for structural consistency under different embodiments. The live general interface is P3-B06's approximate commuting condition:
+
+$$
+\pi_\lambda \circ \hat{G}^{(n)}
+\approx
+\hat{G}^{(n+1)} \circ \pi_\lambda
+$$
+
+The former strict-conjugacy expression
 
 $$
 \hat{G}^{(n+1)} = \Lambda_{n \to n+1} \circ \hat{G}^{(n)} \circ \Lambda_{n \to n+1}^{-1}
 $$
+
+is retained only for the special case where `\Lambda_{n\to n+1}` is a declared invertible change of representation. It is not licensed for ordinary many-to-one coarse-graining. Neither expression is derived from `H(L_0)-H(L_1)` or from a universal minimum-action principle.
 
 Legacy scale table:
 
@@ -169,15 +181,15 @@ Legacy scale table:
 | Neural | lateral inhibition | competitive selection and sparse `L_2` maintenance |
 | Cognitive | categorization | continuous `L_0` to discrete `L_2` labels |
 | Statistical | normalization | selection-measure consistency over a manifold |
-| Cross-scale | coarse-graining | `\hat{G}^{(n+1)} = \Lambda \circ \hat{G}^{(n)} \circ \Lambda^{-1}` |
+| Cross-scale | declared scale mapping | test whether `\pi_\lambda \circ \hat{G}^{(n)} \approx \hat{G}^{(n+1)} \circ \pi_\lambda` within an explicit comparison norm and tolerance |
 
 **Implication**: These phenomena may be read as implementations of one selection grammar.
 
-**Boundary**: The phrase "same structure" is a high-ambition bridge, not a P0 identity statement.
+**Boundary**: The phrase "same structure" is a high-ambition bridge, not a P0 identity statement. A valid use must declare the two state spaces, the scale map, preserved observables, comparison norm, approximation tolerance, and failure case. Cross-scale invariance lies at most in selection／constraint／payability grammar; it does not establish unit, entropy, mechanism, subjecthood, or consciousness identity.
 
 **One-way load note (2026-07-05, Q26 backflow)**: The failure of this bridge is one-directional. If cross-scale selection universality — including any pre-life / pre-consciousness "cosmic horizon" reading that pushes selection-condensation below the biological scale — cannot show explanatory gain over path dependence, attractors, dissipative structures, active inference, or ordinary causal history, then the retraction target is **this P3 bridge and its dependents**, not the P0/P1 core. The minimal axioms (`Core/SRT_Core_21_Minimal_Axioms.md`) and constitutive theorems (`Core/SRT_Core_21b_Constitutive_Theorems.md`) do not depend on this universality claim and survive its withdrawal. Provenance: book chapter `01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md §3` (the cosmic-horizon reading "必须自带死法，是最高读法不是地基"); the book is provenance, not authority.
 
-**Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §8.1`; `Core/SRT_Core_14_Dynamics_Scaling.md Ax-Scale-01`.
+**Cross-ref**: `_SRT_VERTICAL_INTEGRATION.md §8.1`; `Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-01 / T-Scale-02C1`.
 
 ---
 
@@ -214,11 +226,7 @@ where `g_{ij}^{(i,j)}` is the joint Fisher information metric over the coupled p
 
 **Minimal P1 Core**: Selection creates a determinate distinction; see `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T04`.
 
-**Strong Formal Definition**:
-
-$$
-I_{created} = H(L_0) - H(L_1 | \hat{G}_\theta) = I(L_0\,;\,\hat{G}_\theta)
-$$
+**Conditional formalization boundary (PC-A / EX-A)**: The former unqualified expression `H(L_0) - H(L_1 | \hat{G}_\theta) = I(L_0;\hat{G}_\theta)` is withdrawn: it both leaves the `L_0` measure undeclared and mismatches the random variables in the mutual-information identity. Inside a declared domain model `M` with specified pre-event candidate variable `X`, outcome record `Y`, partition, and probability measure, a candidate readout may instead use `I_M(X;Y)` or another explicitly justified information-gain functional. No such model-level quantity defines `L_0^{abs}`, event actuality, or anchoring persistence at P0.
 
 **Three-Part Relation**:
 
@@ -309,12 +317,68 @@ SRT's `L_2` downward constraint is therefore not a separate configurational forc
 
 ---
 
+## P2/P3-B13: ST-A Structural Stabilisation and Generative Reselectability
+
+**Author decision**: `Stabilisation = ST-A` (2026-08-11).
+
+### Three-level distinction
+
+1. **Formed process**: a selection organization has become identifiable at all.
+2. **Structurally stable ISP**: the same perspective- and history-bearing organization is recurrently reconstituted across a declared perturbation range. Its P1 minimum is **continued selectability**: it continues to receive live, non-equivalent candidates and to bear the consequences of its selections.
+3. **Generatively healthy ISP**: in addition, consequence return can revise its own comparison rules, boundaries, or candidate-generation conditions. This stronger property is **generative reselectability**.
+
+Structural stabilisation is therefore not microstate identity, continuous activity, a fixed point, or an attractor label. Generative reselectability is ongoing consequence-sensitive revisability, not total closure followed by an unexplained reopening. It is important for generative health but is neither necessary for every individual selection event nor sufficient by itself to establish health.
+
+### Conditional anti-closure candidate
+
+Let `K_0` be a kernel independently defined as neutral. If a declared stability semantics, environment, termination condition, and horizon establish
+
+$$
+\Pr_{K_0}(\tau_{\varnothing}<\infty)=1,
+$$
+
+then any kernel `K` that remains stable under the same comparison conditions must differ from `K_0` in a way that suppresses closure risk. This is a **conditional P2/P3 candidate**, not a theorem. Until neutral-kernel absorption or an appropriate comparative bound is proved, neither `L_0` irreversibility nor `\epsilon_{pg}\neq 0` establishes the conclusion.
+
+### Operational boundary
+
+Metastability, fixed-point avoidance, low friction, differential reserve, option diversity, and positive future-access proxies may each implement or indicate part of this distinction. None is a constitutive definition or sufficient test by itself. Operational use must declare perturbation range, consequence-return channel, revision target, external-reset conditions, and time horizon.
+
+**Inference guard**: This distinction does not by itself establish subjecthood, consciousness, moral status, or legitimacy.
+
+**Cross-ref**: `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06 / former P1-T07`; `Core_Law/SRT_Irreversibility.md T-IRR-3`; `Core_Law/SRT_Individuation.md`; `Core/SRT_Core_12b_Ontology_L2.md`.
+
+---
+
+## P2/P3-B14: EX-A Anchoring-Persistence Readout
+
+**Author decision**: `Existence = EX-A` (2026-08-11).
+
+EX-A separates three objects that the former P0-02 compressed into one word:
+
+1. **Manifest actuality**: a determinate `L_1` event has occurred; this is the P0-01 admission floor.
+2. **Anchoring persistence**: the event leaves effective trace, acquires maintenance conditions, and continues constraining later transitions.
+3. **Stable ISP**: the same perspective- and history-bearing process is recurrently reconstituted and remains continued-selectable under P1-T06 / ST-A.
+
+The former expression
+
+$$
+E = 1 - \frac{H(L_1)}{H(L_0)}
+$$
+
+is retained only as a **historical heuristic for comparative anchoring intensity**. It is not a P0 equation, not an empirical readout, and not licensed with `L_0^{abs}`. A future quantitative proposal must declare at minimum (i) a relative or accessible domain, (ii) an outcome partition or sigma-algebra, (iii) a probability measure, (iv) finite/nonzero admissibility conditions where a ratio is used, and (v) the event and time horizon over which persistence is compared. No normalization is adopted by EX-A.
+
+**Inference guard**: A high persistence readout would not by itself establish structural stability, stable-ISP identity, generative health, subjecthood, consciousness, or legitimacy. A transient event may still be actual, and a later loss of anchoring does not erase its historical occurrence.
+
+**Cross-ref**: `Core/SRT_Core_21_Minimal_Axioms.md P0-01/P0-02`; `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06`; `Core/SRT_OPEN_TENSIONS.md §15`; `Core_Law/SRT_L0_Metaphysics.md`.
+
+---
+
 ## Mechanism Summary After Demotion
 
 Former `Core_21` described SRT as a "selection-anchoring-constraint" loop. The loop remains useful, but its claims now have levels:
 
 1. **Selection**: P0/P1 when referring to `\hat{G}_\theta` anchoring from `L_0` to `L_1`.
-2. **Anchoring**: P0/P2 when referring to stable existence and canonical `\Psi_f`; P3 when using Fisher or cross-domain unification.
+2. **Anchoring**: P0 only as the EX-A persistence boundary; P2/P3 when proposing persistence readouts or using canonical `\Psi_f`, Fisher, or cross-domain implementations.
 3. **Constraint**: P1 when referring to `L_2` downward constraint; P3/P4 when mapped to domain-specific mechanisms.
 
 This summary is a reading guide, not an additional axiom.

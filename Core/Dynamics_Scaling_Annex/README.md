@@ -11,6 +11,8 @@ dependency: []
 
 # SRT-CORE-14 Annex Index
 
+> **2026-08-12 supersession guard**：以下 annex 保留旧 `Ax-Scale-01`、熵差与 strict-conjugacy 文本作为历史接口语境，不得据此覆盖 owner 当前口径。通用入口为 `Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-01 / T-Scale-02C1`；严格共轭仅限可逆表征变换，普通粗粒化只检验带误差界的近似交换。
+
 - 原始总文：[`../SRT_Core_14_Dynamics_Scaling.md`](../SRT_Core_14_Dynamics_Scaling.md)
 - 00_General_Boundary_Block：[`00_General_Boundary_Block.md`](00_General_Boundary_Block.md)
 - 01_AT_SRT_Interface_Batch：[`01_AT_SRT_Interface_Batch.md`](01_AT_SRT_Interface_Batch.md)

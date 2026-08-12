@@ -103,11 +103,11 @@ The arrow of time = the direction of irreversible accumulation. Selection is irr
 
 > **Scope note (hardened 2026-04-16):** This step claims time-ordering and ontological time $t_{onto}$. It does not directly derive physical metric time (SI seconds, Minkowski metric). Physical metric time is a projection or calibration instance of ontological time at a specific protocol and measurement-convention layer — a downstream compatibility, not an output of this step. The sand-pile analogy captures the necessity of ordering, not the derivation of equal intervals.
 
-### Step ⑥: Directed Selection Converges into Existence
+### Step ⑥: Directed Selection Converges into Persistent Existence
 
 A process oriented by order tends to return to patterns that preserve more order conditions under current constraints. Repeating patterns that preserve order conditions = convergence. The product of convergence = stable state.
 
-A stable state is what we ordinarily call "existence." A table is not "existing" — it is "being continuously selected as stable." When the constraints maintaining it are exhausted (e.g., it burns), it ceases to exist — not because some external force destroyed it, but because the selection process that produced it no longer converges to that stable state.
+Under EX-A, "existence" in this step means **persistent existence / objecthood**, not first manifest actuality. P0-01 primitive actualisation has already made a determinate event actual; selective retention, latching, feedback, and historical writeback explain how it becomes persistently anchored. A table is maintained as the same object through continuing stabilization. When those conditions are exhausted (e.g., it burns), it no longer persists as that object, but the events that occurred are not retroactively cancelled.
 
 Existence is a cross-section of a verb, not a premise for a noun.
 
@@ -214,15 +214,12 @@ Selection is not isolated — we delegate selection authority to others, institu
 ② Information creation → landscape change                 [analytic]
 ③ Landscape change → irreversible (absolute in spacetime) [structural]
 ④ Irreversibility → temporal directionality (past/future)  [from ③, solid]
-   ε_pg > 0: L₀ minimal non-neutrality (scalar, no inherent direction) [L₀ structural postulate — status UNCHANGED by T-ε-Constitute]
-   ISP-level ε: anti-closure asymmetric bias of stable ISPs [T-ε-Constitute: structural corollary, not primitive axiom]
-   ε_pg ↔ ISP-level ε bridge: ε_pg (seed: asymmetry exists) + Ax-F-03b (direction filter: closure=absorbing → only anti-closure stable-ISP-compatible) → ISP-level ε (anti-closure direction, non-contingent for stable ISPs)
-   ⚠ Scope: stable ISPs only (perspective-bearing, history-bearing, re-enterable selection centers)
-      Short-lived/one-shot events are NOT counter-examples — they are outside the theory object's scope
-      Stable ISP is not an observer's arbitrary restriction; it is filtered out by the requirement
-      "can constitute a persistent perspective center" — minimum carrier of subjectivity + re-selectability
-   Derivation: neutral stable ISP under L₀ irreversibility → self-terminates (absorbing state, Ax-F-01+F-03b)
-             → stable ISP ⟹ ε ≠ 0 (contrapositive)
+   ε_pg > 0: L₀ minimal non-neutrality (scalar, no inherent ISP-level direction) [L₀ structural postulate]
+   Stable ISP: recurrent historical reconstitution across a declared perturbation range + continued selectability [P1-T06]
+   Generative reselectability: consequence-sensitive revision of rules, boundaries, or candidate generation [P2/P3, 21C B13]
+   Absorption remainder: once a history reaches A_t=∅, it cannot continue by itself; later recovery requires a new event or external reset
+   Conditional candidate: only an independently defined neutral kernel plus declared stability semantics, environment, reset rule, horizon, and absorption/comparative-risk proof can support an anti-closure conclusion
+   The former unconditional T-ε-Constitute / P1-T07 derivation is withdrawn under ST-A
    Three-layer source: ISP self-maintenance (constitutive, deepest) ← L₀ irreversibility (necessary) ← Ψ_f>0 (dynamical)
    Two-level stability: floor (entry condition, not derived here); dynamic (why processes maintain stable ISP status = separate question, Ax-Op-05)
    Empirical narrowing: specifies magnitude/direction after existence is established; not the foundation
@@ -266,7 +263,7 @@ Selection is not isolated — we delegate selection authority to others, institu
 ⑤ Irreversible accumulation → time-ordering (ordinal) [from ③, solid]
    + ontological time t_onto = ∫||G^θ||ds (Ax-F-03b)   [metric, SRT-internal]
    Physical metric time = downstream calibration projection [not derived here]
-⑥ Directed convergence → existence (stable state)        [from ④]
+⑥ Directed convergence → persistent existence / objecthood        [from ④; not first manifestation]
    Stable ISP history → L₂ scaffolding (not archive): T-L2-Scaffold (2026-04-17)
    Mechanism: successful closure → net-positive directional trace → Ψ_f reduction → accessibility
    amplification → multi-agent superposition crosses ρ* → foreground event → background structure
@@ -350,11 +347,11 @@ If the old framework cancels or shelves all five, meaning naturally cannot be fo
 5. **"Physics is wrong"** — The predictions of physics are entirely correct. This framework challenges not physics, but a specific metaphysical premise (existence is a pre-given background). Physical laws are the most stable products of the selection process; this does not diminish their reality, only places them on deeper foundations.
 6. **"I have fully seen original intention"** — The author of this text is a finite being; all descriptions proceed from a finite position. The current description of original intention ("a dynamic equilibrium sustaining maximum continued existence") is the best available approximation, but it may itself be limited by the describer's occlusion. What lies beyond the domains of existence and determinacy is outside the scope of consideration.
 
-### An Open Question
+### A First-Principles Boundary
 
-The selection process and the possibility space it operates in (the potential domain) co-emerge in a bootstrap relationship. But does this bootstrap have a starting point? If yes, what preceded it? If no, does this framework imply a beginningless, endless cosmology?
+AM-A places the minimal actualisation kernel at P0-01: non-objectified potential acquires a determinate manifest distinction under constraints. No chooser precedes this transition, and $\hat G_\theta$ is the formal role-carrier of the primitive mapping rather than its cause. Gradients, friction, payability conditions, and bootstrap models may constrain domain realizations, but none by itself entails a first determination.
 
-No assertion is made at present. This is an honest open question.
+The framework therefore no longer treats the question of an earlier bootstrap origin as an internal gap awaiting closure by a fixed-point formula. Deeper metaphysical origin questions remain outside P0. What stays open within the theory is how different domains instantiate the primitive and how actualisation, stabilization, and mere mathematical admissibility can be empirically distinguished.
 
 ### Testing Standard
 

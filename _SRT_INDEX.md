@@ -111,18 +111,19 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `T_dir` → `_SRT_T_DIR_CANONICAL.md`
 - cross-domain usage matrix → `_SRT_CROSS_DOMAIN_MATRIX.md`
 - formal axioms → `Core/SRT_Core_21_Formal_Axioms.md`
-- minimal axioms → `Core/SRT_Core_21_Minimal_Axioms.md`
+- minimal axioms / PC-A non-exhaustion / AM-A manifest actuality / EX-A anchoring-persistence boundary → `Core/SRT_Core_21_Minimal_Axioms.md`
 - constitutive theorems → `Core/SRT_Core_21b_Constitutive_Theorems.md`
 - individuation / ISP entry / self-consciousness condensate → `Core_Law/SRT_Individuation.md`
 - occlusion dynamics / A-B phases / d_c / intervention window / vacuum period / structural evil → `Core_Law/SRT_Occlusion_Dynamics.md`
 - suffering / pain vs suffering / signal-vs-structural / four phenomenological types / anti-minimization / collective externalization → `Core_Law/SRT_Suffering.md`
 - L1 formalism / σ dynamics / d_c drift / T_dir ODE (relaxation + real-reselection pump + Ψ_f-gap deduction + S_str erosion + L_2 scaffolding) / S coupled equations / pathological attractor / healthy working region / lethal L_2 equation-level criterion / **T-CHI-1 χ jump-function family universality (H8, §2.5)** / **T-CHANNEL-1 channel-indicator family universality (H9, §4.5)** / **T-PROJ-1 main-equation projection theorem (H5, §6)** → `Core_Law/SRT_L1_Formalism.md`
-- collective selection / multi-ISP shared L_2 / consequence return matrix M(t) / aggregation-dominance-collapsed / collective ε / co-selection reality criterion / collective four-variable coupled ODE (σ^coll, d_c^coll, T_dir^coll, S^coll) / collective lethal L_2 criterion / individual-collective bidirectional coupling / **T-PROJ-1^{coll} collective projection theorem (H6, §4.7)** / **NTIC situated individuation diagnostic (§4.8a, P3 empirical bridge)** / minimal canonical collective-selection surface through §4.7. Tower/nested hardening H10-H16 has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` → `Core_Law/SRT_Collective_Selection.md`
+- collective selection / multi-ISP shared L_2 / consequence return matrix M(t) / aggregation-dominance-collapsed / ST-A conditional collective anti-closure / co-selection reality criterion / collective four-variable coupled ODE (σ^coll, d_c^coll, T_dir^coll, S^coll) / collective lethal L_2 diagnostic / individual-collective bidirectional coupling / **T-PROJ-1^{coll} collective projection theorem (H6, §4.7)** / **NTIC situated individuation diagnostic (§4.8a, P3 empirical bridge)** / minimal canonical collective-selection surface through §4.7 → `Core_Law/SRT_Collective_Selection.md`
 - L1 hardening notes (σ_sr namespace / Δ_avail three-component / **T-DELTA-1 operator-level theorem (H7, §2)** / M(t) MOC / FEP→S_sig bridge) → `Core_Law/SRT_L1_Hardening_Notes.md`
 - core-law hardening index / COLL08 NTIC situated individuation / coupling-qualified NTIC regime guardrail → `Core_Law/_SRT_Core_Law_Hardening_Index.md`
-- irreversibility / learning asymmetry / termination as absorbing boundary / P1-T07 precision / `\nu_{block}` operator-level constitution (T-IRR-3.5, H4) / thermodynamic bridge guardrail → `Core_Law/SRT_Irreversibility.md`
-- bridge hypotheses / emergence hygiene guardrail → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
+- irreversibility / learning asymmetry / termination as absorbing boundary / former P1-T07 demotion + ST-A conditional anti-closure / `\nu_{block}` independent-premise operator model (T-IRR-3.5, H4) / thermodynamic bridge guardrail → `Core_Law/SRT_Irreversibility.md`
+- bridge hypotheses / emergence hygiene guardrail / ST-A B13 / EX-A B14 historical anchoring-readout heuristic → `Core/SRT_Core_21c_Bridge_Hypotheses.md`
 - equations → `Core/SRT_Core_22_Equations.md`
+- dynamics／scaling expansion / P3-B06 approximate scale commutation / P3-B07 universality candidate / strict-conjugacy invertibility guard → `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md`, `Core/SRT_Core_14_Dynamics_Scaling.md`
 - open tensions → `Core/SRT_OPEN_TENSIONS.md`
 
 ## Secondary Hardening Notes
@@ -198,6 +199,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（claim-status audit for the neuro axiom bridge; not a replacement for the axiom file）
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
+- 神经归一化 → 行为选择的有界入口：`Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1`；相对响应、选择倾向与实际行为事件必须分层，经验执行尚未转绿
 - `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`（domain index for hardening drafts and Pipeline 1 neuroscience material patches; not a canonical source）
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（bridge/lab working draft; not a canonical source）
