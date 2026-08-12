@@ -133,7 +133,7 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–18 are printed pp. 113–129. All pages rendered and visually checked. |
 | Exact locations used | pp. 113–117 (§§1–2); pp. 117–121 (§3 and the model/semi-model construction); pp. 122–123 (§§4–6); pp. 124–128 (explicit model-enlargement construction); p. 129 (conclusion and bibliography). |
 | Evidentiary function | Establishes the existence of a multi-section, multi-page model-construction and relative-consistency record in the bounded corpus. |
-| Limitations | The in-block review/erratum notice remains metadata-only. No component-removal test or method-family comparison was performed. |
+| Limitations | The in-block review has only p. 145 of pp. 145–146, and the erratum notice remains unreached. No component-removal test or method-family comparison was performed. |
 
 ### `FITCH1951-DEMONSTRABLY-CONSISTENT-II`
 
@@ -167,7 +167,41 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Full-text/page-verification status | **VERIFIED — complete article**, printed pp. 241–267. All 27 PDF pages rendered and visually checked. |
 | Exact locations used | pp. 241–248 (problem, historical remarks, results and applications); pp. 249–253 (preliminary definitions and two interpretations); pp. 254–259 (lemma and Hilbert-substitution section); pp. 260–266 (construction in §§30–33); p. 267 (references). |
 | Evidentiary function | Establishes the existence of a long definition/lemma/construction chain for interpretation of non-finitist proofs in the bounded corpus. |
-| Limitations | Part II, the in-block joint review, and the cited erratum remain unreached at full-text level. No six-test audit or target-line clearance was performed. |
+| Limitations | Part II is now separately page-verified below; the in-block joint review has only p. 78 of pp. 78–80, and the cited erratum remains unreached. No six-test audit or target-line clearance was performed. |
+
+### `KREISEL1952-NONFINITIST-II`
+
+| Field | Record |
+|---|---|
+| Stable key | `KREISEL1952-NONFINITIST-II` |
+| Author | G. Kreisel |
+| Exact title | “On the Interpretation of Non-Finitist Proofs—Part II. Interpretation of Number Theory. Applications” |
+| Year | 1952 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 17(1), pp. 43–58 |
+| Stable record | JSTOR 2267457; DOI 10.2307/2267457 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–17 are printed pp. 43–58. All pages were rendered and visually checked. Local verification SHA-256: `fc72447e7131fbaaba25ae87faad30f83d58846e3e3147305b80a174e05542af`. |
+| Exact locations used | pp. 43–49 (§§34–39, ordinal-recursive functions/functionals and construction of counterexamples); pp. 50–51 (§§40–41); pp. 52–57 (§§42–45 and analytic applications); pp. 57–58 (Appendices I–II and conclusion). |
+| Evidentiary function | Establishes the complete continuation of Kreisel's multipart definition/theorem/application chain in the bounded corpus. |
+| Limitations | Page verification and structural description only. The joint review is partial at p. 78 of pp. 78–80. No six-test audit, component-removal analysis, or individuation judgement was performed. |
+
+### `CURRY1952-ELIMINATION-MODALITY`
+
+| Field | Record |
+|---|---|
+| Stable key | `CURRY1952-ELIMINATION-MODALITY` |
+| Author | Haskell B. Curry |
+| Exact title | “The Elimination Theorem When Modality Is Present” |
+| Year | 1952 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 17(4), pp. 249–265 |
+| Stable record | JSTOR 2266613; DOI 10.2307/2266613 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–18 are printed pp. 249–265. All pages were rendered and visually checked. Local verification SHA-256: `604f98cd8e24fb0d2d0a162c2dd69e5d17cc1f78c0f89c45ee4fed9a12cf7e6a`. |
+| Exact locations used | pp. 249–251 (§§1–2, conditions and abstract form); pp. 252–255 (staged proof and modifications for necessity); pp. 256–260 (§§4–5, representation and possibility); pp. 261–264 (§§6–7, T-rules and singular form); p. 265 (bibliography and affiliation). |
+| Evidentiary function | Establishes a continuous multi-stage elimination construction with explicit modal modifications in the bounded corpus. |
+| Limitations | The existence of a detailed proof and modifications is recorded only as technical-depth capacity. No rule is classified as load-bearing, and no removal/replacement or individuation test was run. |
 
 ### `MYHILL1952-FINITARY-METALANGUAGE`
 
@@ -185,6 +219,57 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Exact locations used | pp. 164–169 (§§1–5: motivation, construction of system `N`, syntax/axioms, and rational arithmetic); pp. 170–174 (§§5–9: object-language arithmetic, representation, real numbers/least upper bound, and diagonal applications); pp. 175–177 (§§10–13: finitude, convergence, Heine–Borel/Bolzano–Weierstrass, and axiom of choice); p. 178 (closing qualification, references, and author affiliation). |
 | Evidentiary function | Establishes the existence of a thirteen-section, multi-page syntactic and mathematical construction record in the bounded corpus. |
 | Limitations | Page verification and structural description only. No load-bearing component was identified, no removal/replacement test was run, and no admission or individuation judgement was made. The local file is not committed, and its third-party filename is not treated as provenance. |
+
+### `KEMENY1953-LOGICAL-MEASURE`
+
+| Field | Record |
+|---|---|
+| Stable key | `KEMENY1953-LOGICAL-MEASURE` |
+| Author | John G. Kemeny |
+| Exact title | “A Logical Measure Function” |
+| Year | 1953 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 18(4), pp. 289–308 |
+| Stable record | JSTOR 2266553; DOI 10.2307/2266553 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–21 are printed pp. 289–308. All pages were rendered and visually checked. Local verification SHA-256: `8076a7b95abe26b87ac273787527699c1b693d7809bff68e5fdbc300a01a6349`. |
+| Exact locations used | pp. 289–293 (§§1–3, definition and conditions of applicability); pp. 294–300 (§§3–5, model/state-description relation and Theorems 1–10); pp. 301–306 (§§5–6, calculations and examples); pp. 307–308 (§7, applications and closing example). |
+| Evidentiary function | Establishes a twenty-page definition/theorem/calculation/application chain in the bounded corpus. |
+| Limitations | The linked review has only p. 301 of pp. 301–302. No claim is made about component necessity, replacement, candidate status, or method individuation. |
+
+### `ANDERSON1954-IMPROVED-DECISION`
+
+| Field | Record |
+|---|---|
+| Stable key | `ANDERSON1954-IMPROVED-DECISION` |
+| Author | Alan Ross Anderson |
+| Exact title | “Improved Decision Procedures for Lewis's Calculus S4 and von Wright's Calculus M” |
+| Year | 1954 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 19(3), pp. 201–214 |
+| Stable record | JSTOR 2268619; DOI 10.2307/2268619 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–15 are printed pp. 201–214. All pages were rendered and visually checked. Local verification SHA-256: `7a34268d9fb67c0449fe8d0fdafcb834767cf978a25ba25492c4215f703b1f67`. |
+| Exact locations used | pp. 201–204 (§§1–2, preliminaries and normal-form procedure); pp. 205–211 (§3, S4 decision procedure and metatheorem chain); pp. 211–212 (§4, M procedure); pp. 213–214 (§5, comparisons, conclusion, and references). |
+| Evidentiary function | Establishes a complete decision-procedure record and an explicit theorem/proof chain in the bounded corpus. |
+| Limitations | The 1955 correction is separately registered below; the linked review has only p. 302 of pp. 302–303. No six-test audit or individuation judgement was performed. |
+
+### `ANDERSON1955-MODAL-CORRECTION`
+
+| Field | Record |
+|---|---|
+| Stable key | `ANDERSON1955-MODAL-CORRECTION` |
+| Author | Alan Ross Anderson |
+| Exact title | “Correction to a Paper on Modal Logic” |
+| Year | 1955 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 20(2), p. 150 |
+| Stable record | JSTOR 2266901; DOI 10.2307/2266901 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; correction to an in-window mathematical-logic article |
+| Full-text/page-verification status | **VERIFIED — complete one-page correction** on printed p. 150. The full publisher page image was rendered and visually checked. Local verification SHA-256: `b77f401f168b01abb21bd59d564fe03d68e3797d2b2c1c140d8edc1f29854626`. |
+| Exact locations used | p. 150, revised condition II; explanation of the effect on Metatheorem 3.19 and the remaining cases; footnotes linking the correction to the 1954 paper. |
+| Evidentiary function | Establishes the existence and exact location of an in-window source-level correction linked to Anderson's 1954 procedure. |
+| Limitations | Registering an explicit correction is not itself a removal/replacement result and does not authorize candidate or individuation analysis. |
 
 ### `DREBEN1955-MYHILL-REVIEW`
 
@@ -219,6 +304,52 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Exact locations used | pp. 269–270 (two-part structure and lattice/semilattice construction); pp. 270–271 (consistency, decision method, ramified type theory, and cut-elimination synopsis); p. 272 (induction/reducibility discussion, extension result, and listed misprints). |
 | Evidentiary function | Adds one page-verified review-of-record entry and a contemporaneous technical synopsis linked to Lorenzen's primary article. |
 | Limitations | This is not Lorenzen's pp. 81–106 primary text. The primary remains metadata-only, so the review cannot substitute for page verification of the original construction. No six-test audit was performed. |
+
+### `ROSSER1951-ACKERMANN-REVIEW`
+
+| Field | Record |
+|---|---|
+| Stable key | `ROSSER1951-ACKERMANN-REVIEW` |
+| Author | J. Barkley Rosser |
+| Exact title | “Wilhelm Ackermann. Widerspruchsfreier Aufbau der Logik I. Typenfreies System ohne tertium non datur. The Journal of Symbolic Logic, vol. 15 (1950), pp. 33–57.” |
+| Year | 1951 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 16(1), p. 72 |
+| Stable record | JSTOR 2268697; DOI 10.2307/2268697 |
+| Source role | `contemporaneous review` |
+| Window status | **inside** fixed 1938–1963 boundary; period review of an in-window primary publication |
+| Full-text/page-verification status | **VERIFIED — complete review entry** on printed p. 72. The page was visually checked from Ackermann's bibliographic heading through Rosser's signature. Local verification SHA-256: `921a18fcd661e12e6e4151892574f1c6de78760003d4dcb020e1fad330b774a1`. |
+| Exact locations used | p. 72, Ackermann entry between its bibliographic heading and J. Barkley Rosser's signature. |
+| Evidentiary function | Adds a complete contemporaneous synopsis linked to Ackermann's 1950 target article. |
+| Limitations | The primary article remains unreached. This compact review cannot substitute for pp. 33–57 or support a component-removal or individuation judgement. |
+
+### `ACKERMANN1955-CURRY-REVIEW`
+
+| Field | Record |
+|---|---|
+| Stable key | `ACKERMANN1955-CURRY-REVIEW` |
+| Author | Wilhelm Ackermann |
+| Exact title | “Haskell B. Curry. The Elimination Theorem When Modality Is Present. The Journal of Symbolic Logic, Bd. 17 (1952), S. 249–265.” |
+| Year | 1955 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 20(1), p. 67 |
+| Stable record | JSTOR 2268074; DOI 10.2307/2268074 |
+| Source role | `contemporaneous review` |
+| Window status | **inside** fixed 1938–1963 boundary; period review of an in-window primary publication |
+| Full-text/page-verification status | **VERIFIED — complete review entry** on printed p. 67. The page was visually checked from Curry's bibliographic heading through Ackermann's signature. Local verification SHA-256: `802f3c43a683dbad02f19ab4f610db8bb64a82fe64a27c8bd7047a52223ca456`. |
+| Exact locations used | p. 67, Curry entry between its bibliographic heading and Wilhelm Ackermann's signature. |
+| Evidentiary function | Adds a complete contemporaneous German synopsis linked to Curry's 1952 target article. |
+| Limitations | This is reception evidence only. No claim is made about component necessity, replacement, novelty, or individuation. |
+
+### Partial review page captures
+
+These entries have one source page only and are therefore **not** counted as complete review full texts.
+
+| Review key | Reviewer / reviewed work | Reached page | Missing pages | Local verification SHA-256 |
+|---|---|---:|---:|---|
+| `MARTIN1951-FITCH-REVIEW-PARTIAL` | R. M. Martin on Fitch Parts I–II | 268 | 269 | `23b60853e4aae26048cd02e3b20d62ace6ea88d7cbdaa0949cf719b54382bc0c` |
+| `SKOLEM1951-ROSSER-WANG-REVIEW-PARTIAL` | Th. Skolem on Rosser–Wang | 145 | 146 | `807acc8e73c5c8b4da9b8db865d92ce764aab67ce0d16ad4bb42ac57d6b3c03c` |
+| `ROSSER1953-KREISEL-REVIEW-PARTIAL` | J. Barkley Rosser on Kreisel Parts I–II | 78 | 79–80 | `20e52ac87c43af2b8c04e34e0ce2ef1516a1d07074f430c51aeb716bef0191ce` |
+| `BAR-HILLEL1954-KEMENY-REVIEW-PARTIAL` | Yehoshua Bar-Hillel on Kemeny | 301 | 302 | `b9cb6ae193f8cc53ceda4c6ab548ed9442e1a9bbd1a439b2e2fedfd95b427b7d` |
+| `YONEMITSU1955-ANDERSON-REVIEW-PARTIAL` | Naoto Yonemitsu on Anderson and correction | 302 | 303 | `3509591ccadf2f421df5d9b4cfbd97ca9f4168fd9153d345678ea354894a0981` |
 
 ## 3. Systematic-sweep metadata sources
 
@@ -286,7 +417,8 @@ Issue landing records reached:
 ## 4. Source-handling limits
 
 - The local PDFs used for page verification are evidence inputs only and are not committed or reproduced.
-- The supplied 1967 fifth edition of Hilbert and Ackermann's *Grundzüge der theoretischen Logik* is not Ackermann's 1950 target article and is not registered as that source. The supplied Lorenzen-labelled file is registered only for the complete Hao Wang review entry it actually contains.
+- Neither Ackermann-labelled local file is Ackermann's 1950 target article: one is the 1967 fifth edition of Hilbert and Ackermann's *Grundzüge der theoretischen Logik* and the newer file is E. Ackermann's unrelated geological-society report. Neither is registered as the target source.
+- The Lorenzen-labelled local files contain Hao Wang's complete review entry rather than Lorenzen's pp. 81–106 German primary article. They are registered only for the review role they actually supply.
 - No publisher or JSTOR PDF discovered during the systematic sweep is committed or reproduced.
 - `VERIFIED` is a source/page status, not a candidate-admission or method-individuation verdict.
 - Complete reading does not transform corpus material into a candidate.
