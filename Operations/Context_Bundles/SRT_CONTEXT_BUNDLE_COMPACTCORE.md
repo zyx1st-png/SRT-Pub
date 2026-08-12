@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: fc5b9e96
-source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
+source_commit: 8c94d0db
+source_branch: codex/b-a-c-a-nb1-sync-2026-08-12
 source_dirty: false
-inputs_digest: 7dc27dba4170a938
+inputs_digest: b0c5a7c951a2ab0c
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,8 +27,8 @@ inputs_digest: 7dc27dba4170a938
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `fc5b9e96` |
-| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
+| 来源 commit | `8c94d0db` |
+| 来源分支 | `codex/b-a-c-a-nb1-sync-2026-08-12` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
@@ -51,7 +51,7 @@ inputs_digest: 7dc27dba4170a938
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
 | 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-04-29 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
-| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-04-29 |
+| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
 | 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
@@ -59,7 +59,7 @@ inputs_digest: 7dc27dba4170a938
 | 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-12 |
 | 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
-| 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-04-23 |
+| 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-08-12 |
 | 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-08-12 |
 | 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-08 |
 
@@ -2427,7 +2427,7 @@ SRT 的回答是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2440,6 +2440,7 @@ SRT 的回答是：
 > **定位**：本文件是 `SRT_Phys_08_Ontology_Ext.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 在 Physics 板块中最深的本体论延伸：意识、选择因果、泛经验场、Apeiron 与病态选择。  
 > **关系**：不替代原文；原文保留棱镜隐喻、Bohm 主动信息、Russellian Monism 与临床映射的完整展开。
+> **B-A／C-A 护栏（2026-08-12）**：本文件中的初心变分式是具名有限模型内的 L₁/P3 Physics bridge，不是 L₀ 定义、独立前身、无限时域终点或宇宙级最优；`ε_pg` 保持无内容结构角色。
 
 ## 1. 核心问题
 
@@ -2571,16 +2572,16 @@ L_1(\theta)=\text{Unbind}_\theta(\mathcal U)=\hat G_\theta[\mathcal U]
 ### 7.2 Dispositional Structure
 SRT 同时强调：
 - `L_0` 不是均匀混沌
-- 它内部有倾向性结构
-- 某些方向更易被选择
+- 它承载无内容结构不对称
+- 在声明参考结构的领域投影中，路径可呈现不同可行性或代价；这不等于 `L_0` 自带语义目标
 
-### 7.3 Original Intention
+### 7.3 Original Intention Bridge
 \[
 \text{Original Intention}=\arg\min_{\text{direction}}\int_0^\infty F[\sigma(t)]dt
 \]
 
-这给“初心”一个 SRT 版本：
-> **初心不是外加目的论，而是 `L_0` 内部低自由能方向的拓扑偏好。**
+这给“初心”一个 Physics 领域代理：
+> **在状态空间、自由能泛函、可行域与时间域都已声明的模型内，可把该变分方向作为 L₁ 初心的 P3 bridge；它不定义 `L_0`，也不引入 L₀「初心前身」。**
 
 ---
 
@@ -4269,6 +4270,7 @@ SRT 在这里保留的主张是：
 - 神经系统同时受信息收益与能量成本约束
 - 归一化可作为两者权衡下的候选解；目标泛函若未指定成本函数、约束与动态，不能推出唯一解
 - 相对神经响应通向行为选择还需冻结读出、阈值／累积或采样规则、执行门与 held-out 检验（P3-Scale-NB1）
+- 首个具名 P4 工作线为 `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`；当前只到 card-defined 黄灯，跨研究证据不可拼成通过
 
 ---
 
@@ -4917,7 +4919,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-04-23 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -4968,7 +4970,7 @@ T(d)=
 压缩解释：
 - `d` 扩展
 - 旧 `L_2` 僵硬度下降
-- 自身方向与全局自由能下降方向更一致
+- 自身方向与具名有限模型的比较方向更一致
 
 这三件事一起，才叫“进化”。
 
@@ -4978,13 +4980,13 @@ T(d)=
 
 ### 3.1 Shoshin Alignment
 \[
-\text{Shoshin}=\cos\angle(\vec v_{self},-\nabla F_{global})
+\text{Shoshin}^{proxy}_{\theta,\tau,K}=\cos\angle(\vec v_{self},-\nabla F_{\theta,\tau,K}),\qquad \tau<\infty
 \]
 
-> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface and compact default for directional exposition, not a canonical definition of Shoshin or global direction. See `SRT_Spirit_05_Shoshin.md` for metric alternatives and first-person report boundaries.
+> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional interface inside a declared finite model, not a canonical definition of Shoshin, global direction, or universe-wide optimum. See `SRT_Spirit_05_Shoshin.md`.
 
 最短说法：
-> **初心不是抽象美德，而是你当前行动方向与更深层最优方向之间的夹角。**
+> **初心代理不是抽象美德，而是当前行动与一个已声明、可审计的有限比较方向之间的夹角。**
 
 这让“初心”第一次从修辞，变成了：
 - 可比较

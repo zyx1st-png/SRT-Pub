@@ -126,6 +126,7 @@ When answering or editing a non-simple SRT question:
 - `Core/SRT_Core_13a_Operator_Basics.md`
 - `Core/SRT_Core_23_IG_Complexity_Neuro_Hardening.md`
 - `Neuroscience/SRT_Neural_Mechanisms.md`
+- `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`（only for the bounded P4 neural-normalization → task-choice workline）
 - `Physics/SRT_Quant_01_Selection.md`
 - `SRT_Fisher_FEP_Landscape_Interface.md`
 
@@ -418,12 +419,14 @@ When answering or editing a non-simple SRT question:
 - `Core/SRT_Core_22_Equations.md`
 - `papers/ontological_friction/paper_ontological_friction.md`
 - `Operations/_SRT_DEEP_NAV_AUDIT_2026-04-24.md`
+- `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`（local P4 execution card; not a global Lab hard bet）
 
 ### Boundary
 
 - Experimental proxies do not replace canonical definitions.
 - Lab-layer canonical templates do not automatically promote a variable to core theorem status.
 - Proxy conclusions must state operational scope and cannot be back-projected as ontology.
+- `NB1-MOFC-Lottery-v0` remains yellow until formal lock, preregistration, execution, and within-workline intervention/rival gates are complete; cross-study evidence may not be assembled into a pass.
 
 ---
 
@@ -496,6 +499,7 @@ When answering or editing a non-simple SRT question:
 
 - Do not patch a tension by silently upgrading a bridge claim.
 - Record whether the issue is conceptual, mathematical, empirical, or editorial.
+- Gate B / Shoshin layering is closed by B-A; Gate C / global-optimum scope is closed by C-A. Route to `Core_Law/SRT_L0_Metaphysics.md` 初心词条, `_SRT_D_VALUE_CANONICAL.md §5b`, and the two author records `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md` / `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`. The separate CΨ `Ψ_f→0` valence question remains open in `Core/SRT_OPEN_TENSIONS.md §18`.
 
 ---
 

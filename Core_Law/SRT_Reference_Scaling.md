@@ -556,20 +556,14 @@ Agency_proxy = d · A · R_NTIC
 
 其中 `R_NTIC` 表示 coupling-qualified NTIC regime，不是 raw NTIC 数值。
 
-### Def-Scale-TEL-1: d-value Polarity Extension（d 值极性扩展，新增）
-将驱动分解为风险推力与价值牵引：
-\[
-d = d_{push}+d_{pull},\quad
-d_{push}=\left\|\frac{\partial \mathcal{U}_{risk}}{\partial \mathcal{S}}\right\|,
-\quad
-d_{pull}=\left\|\frac{\partial \mathcal{U}_{beauty/good}}{\partial \mathcal{S}}\right\|
-\]
-其中 \(d_{pull}\) 表示算子被高一致性结构（真/善/美）吸引的牵引分量。
+### Def-Scale-TEL-1（历史候选，C-A 后停驻）: d-value Polarity Extension
+
+旧式把 canonical `d` 拆成 $d_{push}+d_{pull}$，并以未定义的“真／善／美”效用梯度规定 $d_{pull}$。该拆分没有通过 stake gate，也把评价内容预装进 `d`，C-A 后不再是有效定义。风险敏感度与价值牵引只能在具名 P3/P4 模型中分别设 proxy，不得相加后冒充 canonical `d`。
 
 | 外部分类（欲望拓扑） | d-value 区间（proxy） | 能流特征 | \(\Psi_f\) 状态 |
 |:--|:--|:--|:--|
 | 生存型欲望 | 低~中 | Semi-open / Closed 倾向 | borderline |
-| 价值型欲望（真善美导向） | 中~高 | Open（探索—整合） | payable |
+| 价值型欲望（具名价值方向） | 模型内 proxy，非 canonical d 分量 | Open（探索—整合） | payable |
 | 至福导向极限 | 高 | Open→稳态 | \(\Psi_f\to\Psi_{min}^{+}\) |
 
 

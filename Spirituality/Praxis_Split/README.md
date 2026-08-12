@@ -11,8 +11,8 @@ dependency: []
 # SRT-SPIRIT-09 Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Spirit_09_Praxis.md`](../SRT_Spirit_09_Praxis.md)
-- Source owner bytes: `36861`
-- Source owner SHA-256: `6c8b3a02319fca4747fed181f38417ebd44ca83f99e0bbc6cdd8b2d96f0229eb`
+- Source owner bytes: `37157`
+- Source owner SHA-256: `e8a8c6108118c821208cd55fdb4e86c701ec249882fb8e04e1e35c626730a090`
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_30Days_to_6Months：[`01_30Days_to_6Months.md`](01_30Days_to_6Months.md)
 - 02_1to3Years_and_LifeIntegration：[`02_1to3Years_and_LifeIntegration.md`](02_1to3Years_and_LifeIntegration.md)

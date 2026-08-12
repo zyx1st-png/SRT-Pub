@@ -161,7 +161,7 @@ Occlusion is not cognitive error, moral failing, or intellectual deficiency. It 
 
 The vacuum period is not a signal of treatment failure. It is the only structural condition under which expected space can be rebuilt on a larger foundation; without it, the expected space cannot escape its compressed range. Inside the vacuum period there is no natural landing point. Original intention is one candidate landing — not the inevitable one. Whether landing toward original intention is achievable depends on whether support is sufficient within the vacuum: external anchor points (other-position reference satisfying the order-gain triple criterion) or field perception (minimum gradient perception of the original-intention direction). The deeper the prior compression, the stronger the dependence on external anchors; insufficient support leads back to the old compressed space or consolidation into a new compressed space.
 
-From this perspective, evil does not exist as an independent category. For **passive occlusion**: all deviation from the global optimum is a consequence of the landscape being too narrow to see where actions lead in the larger picture — the problem is landscape-narrowness, not moral deficiency. For **actively deepened occlusion**: the problem is not only that the landscape is narrow, but that the capacity to perceive order gaps has itself been compressed — the intervention logic differs entirely and cannot be conflated with passive-occlusion intervention.
+Occlusion can explain some selections that visibly damage long-run sustainability, coordination, consequence return, or re-selectability, but it cannot reduce all evil to deviation from one global optimum. Under **passive occlusion**, the landscape may be too narrow to reveal consequences across longer horizons, more positions, or different interfaces. Under **actively deepened occlusion**, the capacity to perceive order gaps has itself been compressed. The intervention logics differ and cannot be conflated.
 
 ### Step ⑨: Concern Scope Is an Intrinsic Structure of Selection
 
@@ -175,9 +175,9 @@ Genuine concern changes your fitness function — after including others' order 
 
 The expansion of concern scope is directionally necessary (original intention points toward expansion), but not executionally necessary — expansion requires paying real costs and can fail at the levels of sensing, weighting, or settlement. More importantly, d-value marks not how much one momentarily wants to include, but **how much concern has been stably written into the selection structure**. Incorporation attempts that roll back under unpayable cost do not count as actual d-growth.
 
-### Step ⑩: Order Increment and Global Convergence
+### Step ⑩: Order Increment and Bounded Expansion
 
-Concern scope expands → visible landscape expands → local optima exposed as local → new, better directions become visible. But seeing a larger landscape does not equal having completed an effective expansion. Bare enlargement of scope, momentary exaltation, or high-intensity concern impulses do not automatically constitute real d-growth.
+Expanding concern scope may enlarge the visible landscape, bring previously excluded consequences or paths into comparison, and reveal that a current option was only locally attractive. These are not equivalences, and they do not guarantee a unique better direction. Seeing a larger landscape does not equal completing an effective expansion. Bare enlargement of scope, momentary exaltation, or high-intensity concern impulses do not automatically constitute real d-growth.
 
 But "toward order" is not an empty direction. Whether a selection truly increments order is assessed by **four** structural criteria: **sustainability** (not depleting future order conditions), **coordinability** (not turning differences into unorganizable friction), **non-outsourcing** (not displacing the cost onto positions that have no feedback channel), **re-selectability** (not prematurely locking future directions). These four criteria are not externally imposed moral rules, nor are they deduced from ε alone — they are the minimal closure derived from the conjunction of four factors:
 
@@ -201,7 +201,7 @@ And whether an expansion path stands up is not judged by local relief alone, but
 
 > **Criteria-set provenance.** Three → four, author-authorized 2026-07-05; adjudicating source `Core_Law/SRT_Selection_Argument.md §7b.2`, adjudication record `Core/SRT_OPEN_TENSIONS.md §11`. This English mirror was synced 2026-08-11; before that date it still carried the superseded three-criteria wording and its own minimality claim.
 
-Therefore, not every d-expansion automatically moves closer to original intention; only expansions that still stand after broader-scale settlement, while keeping the four criteria intact, move selection from local optima toward larger-scale convergence — toward the direction indicated by original intention: dynamic equilibria that, under situated constraints, sustain greater continued existence. This is not heat death (all selection ceasing), but different existences coexisting and cooperating with minimum friction — living order.
+Therefore, not every d-expansion automatically moves closer to original intention. Only expansions that survive broader settlement while keeping all four criteria intact may be read as less occluded, situated improvements that better sustain continued existence. No universe-wide endpoint follows: a reachable comparison must declare its position, reachable domain, comparison rule, horizon, and constraints; original intention is only an L₁ read-back of that finite direction. A terminal state without continuing selection, real stakes, or future re-selectability cannot be called generatively healthy merely because its friction is low.
 
 Selection is not isolated — we delegate selection authority to others, institutions, and systems. Healthy delegation maintains a shared goal and preserves re-selection capacity; pathological delegation lets the agent system's self-maintenance masquerade as the shared goal. Legitimacy is not rules being followed, but rules still pointing toward the shared goal.
 
@@ -314,7 +314,7 @@ But this starting point has five structural blind spots — not "unsolved proble
 
 **Old framework's impasse**: You cannot derive "ought" from "is" (Hume's problem). Value can only be subjective preference or cultural convention.
 
-**This framework's resolution**: Concern scope is an intrinsic structure of the selection process (Step ⑨), not externally appended. Some selection directions are closer to the global optimum than others — this is not a moral commandment but a structural fact of selection dynamics. Value has an objective direction, though its specific content is constrained by the occlusion of finite position.
+**This framework's resolution**: Concern scope is an intrinsic structure of the selection process (Step ⑨), not externally appended. Value does not obtain objectivity from a universe-wide optimal endpoint. It obtains a bounded structural test from sustainability, coordinability, non-outsourcing, and re-selectability, with comparisons remaining indexed to finite position, reachable domain, horizon, constraints, and comparison rule.
 
 ### Blind Spot 4: Qualia
 

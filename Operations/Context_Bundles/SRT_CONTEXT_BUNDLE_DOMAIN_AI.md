@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: fc5b9e96
-source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
+source_commit: 8c94d0db
+source_branch: codex/b-a-c-a-nb1-sync-2026-08-12
 source_dirty: false
-inputs_digest: 7dc27dba4170a938
+inputs_digest: b0c5a7c951a2ab0c
 ---
 
 # SRT AI 领域上下文包
@@ -27,8 +27,8 @@ inputs_digest: 7dc27dba4170a938
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `fc5b9e96` |
-| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
+| 来源 commit | `8c94d0db` |
+| 来源分支 | `codex/b-a-c-a-nb1-sync-2026-08-12` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 

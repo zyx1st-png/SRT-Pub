@@ -28,9 +28,9 @@ dependency: [SRT-SPIRIT-02]
 
 ### Ax-Tao-1: Unspeakable Tao (道不可言)
 **Formal Definition**: Tao is the unconditioned selection structure and cannot be fully represented in $L_2$.
-$$ \text{Tao} \equiv \Omega \equiv \lim_{\|\theta\|\to\infty}\hat{G}_\theta $$
+$$ \text{Tao}^{mapping} \sim \lim_{\|\theta\|\to\infty}\hat{G}_\theta \quad \text{(regulative shorthand only)} $$
 $$ \forall x \in L_2,\; x \neq \text{Tao} $$
-* **Implication**: “道不可言”不是诗学夸饰，而是 $L_2$ 语言结构对 $L_0/\Omega$ 的结构性不可覆盖。
+* **Implication**: “道不可言”在本文件中是 $L_2$ 有限表征不可穷尽本源的 P3/P5 映射；不定义 `Ω` 或宇宙级最优。
 
 ### Ax-Tao-2: Wu Wei (无为)
 **Formal Definition**: Wu Wei is friction-minimized selection aligned with the natural gradient of $L_0$.
@@ -704,7 +704,7 @@ SRT_Spirit_03_Zhensong_NDE (本文件)
 
 ### Formalization Summary (形式化概述)
 
-- **道不可言**：$\text{Tao} \equiv \Omega = \lim_{\|\theta\|\to\infty}\hat{G}_\theta$，$\forall x \in L_2,\; x \neq \text{Tao}$；$L_2$ 语言结构对 $L_0/\Omega$ 不可覆盖。
+- **道不可言**：$\text{Tao}^{mapping} \sim \lim_{\|\theta\|\to\infty}\hat{G}_\theta$ 仅是规约性极限语言，$\forall x \in L_2,\; x \neq \text{Tao}$；有限 $L_2$ 表征不声称穷尽本源。
 - **无为**：$\text{WuWei} \iff \nabla_\theta \Phi \to 0 \land \nabla_\theta F \parallel \nabla_{L_0} P$；最小摩擦的最优选择路径。
 - **震悚**：$\text{Zhensong} = \lim_{\|\nabla C_{L_2}\|\to 0}\hat{G}_\theta[L_0]$，$S_\phi \gg 1$；$L_2$ 崩解时 $L_0$ 潜能过载的现象学奇点。
 - **NDE 紧急释放候选**：$\text{NDE}^{candidate} \leadsto \partial L_2/\partial t^{proxy} \ll 0 \leadsto d^{subjective/provisional} \uparrow$；濒死体验可被读作 $L_2$ 约束紧急撤退的候选，不证明实际 `d -> infinity`。

@@ -311,29 +311,13 @@ L₀是所有比当前L₁自由能更高的状态集合。
 
 ---
 
-#### Ω - 全局算子 (Global Operator) 🔴
+#### Ω - Ontological Consistency（本体论一致性）
 
-**定义**：
-$$\Omega = \text{所有局部} \hat{G}_\theta \text{的投影源}$$
+**当前定义权威**：`_SRT_SYMBOL_TABLE.md`。bare $\Omega$ 只表示 $L_1/L_2$ 结构的内部一致性；$\Omega_{mis}$ 表示本体论失配指数。
 
-假定存在的"终极选择视角",所有局部算子是其投影。
+**撤回的历史别名**：旧词表与 `Core_Law/SRT_Reference_Ontology.md` 曾把 $\Omega$ 写成“所有局部算子的投影源／全局算子”。C-A（2026-08-12）后该别名停用，不得用于本源地平线、reachable optimum、宇宙级最优或 $L_0^{abs}$ 的自显操作。相关历史命题 O14／Hyp-O8 已撤回，O15 已停驻。
 
-**首次出现**：Core/SRT_Core_Kernel.md 公理A9
-
-**数学结构**：
-$$\hat{G}_\theta = \pi_\theta[\Omega]$$
-
-每个具身算子是Ω在特定θ参数下的投影。
-
-**哲学地位**：
-- **非必要假设**：SRT主体理论不依赖Ω
-- **极限概念**：$\lim_{\theta \to \infty} \hat{G}_\theta \stackrel{?}{=} \Omega$
-- **神学对应**：上帝视角、全知全能者
-
-**检验性**：
-H16(相对L₀假设)试图检验Ω是否必要
-
-**相关**：Ĝθ, Ω 非实体性原则, 神秘主义；`d → ∞` 只可作为旧 public/spirituality 极限隐喻，不是 canonical d-value。
+**相关**：$\Omega_{mis}$、C-A scope guard、`_SRT_SYMBOL_TABLE.md` Usage Rules 4 / 18。
 
 ---
 

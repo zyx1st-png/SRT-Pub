@@ -31,7 +31,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 | Ψ_f | `_SRT_PSI_F_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.2` is historical lineage |
 | h(t) | Core/SRT_Core_Kernel.md | §2.2.3 |
 | F | Core/SRT_Core_Kernel.md | §2.4 |
-| Ω | Core/SRT_Core_Kernel.md | 公理A9 |
+| Ω | `_SRT_SYMBOL_TABLE.md` | canonical symbol row + Usage Rules 4 / 18 |
 | γ | Core/SRT_Core_Kernel.md | §1.3.2a |
 | C_r | Core/SRT_Core_Kernel.md | §3.2 |
 | κ_τ | Neuroscience/SRT_Consciousness_Mechanisms.md | §7.2 |

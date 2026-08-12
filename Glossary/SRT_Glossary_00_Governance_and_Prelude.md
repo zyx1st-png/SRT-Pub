@@ -119,10 +119,10 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Confusable With**：DNA-LUCA、单一物种祖先、纯遗传同源。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Scaling.md` §6.5 Def-Scale-LUCO-1（2026-03-04 新增）。
 
-### Ω Non-Entity Principle（Ω 非实体性原则）
-- **Canonical Scope**：用于澄清 Ω 在 SRT 中是“操作逻辑”而非 L1 域对象实体。
-- **Confusable With**：人格化造物主、宇宙内最大智能体、超级干预者模型。
-- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` §9 定义 O14（2026-03-04 新增）。
+### Ω Historical Non-Entity Principle（Ω 历史非实体性原则）
+- **Current Scope**：O14 的“全局操作逻辑”定义已由 C-A 撤回；bare `Ω` 当前只表示 Ontological Consistency，权威见 `_SRT_SYMBOL_TABLE.md`。
+- **Forbidden Readback**：不得借“非实体”恢复投影源、本源地平线、宇宙级最优或超级干预者模型。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md §9`（历史 O14，2026-08-12 撤回）。
 
 ### World-Picture as L2 Narrative（世界图景即 L2 叙事）
 - **Canonical Scope**：用于描述文化-历史收敛形成的解释框架（如机械自然主义），属于 \(L_{2,\theta}\) 层。
@@ -135,14 +135,14 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` T-ONT-8（2026-03-04 新增）。
 
 ### Teleological Attractor（目的论牵引子）
-- **Canonical Scope**：用于描述高 d 算子被低摩擦高一致性结构“拉动”的动力学项（\(\mu\nabla B_{L_0}\)）。
+- **Current Scope**：历史 P3 候选；`\mu\nabla B_{L_0}` 因把 $L_0^{abs}$ 最优几何写成跨位置牵引项，C-A 后停驻，不是当前 canonical 动力学。
 - **Confusable With**：人格化神意、外在强制命令、单一道德规则。
-- **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md` §8.4（2026-03-04 新增）。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md §8.4`（2026-03-04 新增；2026-08-12 C-A 停驻）。
 
 ### Truth–Goodness–Beauty Optimal Manifolds（真善美最优流形）
-- **Canonical Scope**：定义为 \(L_0^{abs}\) 内信息几何意义上的最优流形族（\(\mathcal{M}_{TGB}\)）。
+- **Current Scope**：历史高承诺假设；O15 因把真／善／美预置为 $L_0^{abs}$ 的评价最优流形，已由 C-A 停驻，不是当前 canonical 对象。
 - **Confusable With**：主观审美偏好、短时奖励最大化、文化偶然共识。
-- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O15（2026-03-04 新增）。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md O15`（2026-03-04 新增；2026-08-12 C-A 停驻）。
 
 ### Embodied Bliss Asymptote（具身至福渐近）
 - **Canonical Scope**：用于限定具身显现下 \(\Psi_f\) 的正下界（\(\Psi_{min}^{+}\)），避免“零摩擦仍持续个体显现”的矛盾。
@@ -160,7 +160,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - **Lineage/Source**：`Neuroscience/_SRT_Neuro_Axioms.md` T-NEURO-4（2026-03-04 新增）。
 
 ### Passive Alignment Transition（被动对齐相变）
-- **Canonical Scope**：用于描述局部抓取感下降但全局对齐上升的动力学重参数化状态（\(\Psi_f^{local}\downarrow,\Psi_f^{coh}\uparrow\)）。
+- **Current Scope**：P3/P4 有界模型候选；描述局部抓取感下降而具名任务／时域内协同支付上升的重参数化状态（\(\Psi_f^{local}\downarrow,\Psi_f^{coh}\uparrow\)），不定义全局方向。
 - **Confusable With**：停机/放弃选择、外在实体接管因果链、反行动主义。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md` §8.5（2026-03-04 新增）。
 

@@ -14,6 +14,7 @@ dependency: [SRT-SPIRIT-04, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-T-DIR-C
 
 > **Claim-level note**: This file is a spirituality-domain bridge and praxis interface. Historical labels such as `Ax-Sho-*` and `T-Sho-*` are local mapping names, not P0/P1 core axioms or settled theorems.
 > **Metric note**: Shoshin formulas below are operational proxies. They stabilize comparison and practice language; they do not settle the final geometry of direction.
+> **B-A／C-A layer-and-scope guard（2026-08-12）**: Shoshin begins at L₁ as P2 interpretive read-back or P5 phenomenology. This file posits no separate L₀ precursor and does not rename `ε_pg`; gradient／projection formulas are P3/P4 domain bridges only. Under C-A they must declare a finite operator, reachable／admissible domain, comparison rule, horizon and constraints. They do not define a universe-wide optimum or infinite-horizon endpoint.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Directional Axioms (AI-Readable).
@@ -27,16 +28,18 @@ dependency: [SRT-SPIRIT-04, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-T-DIR-C
 - 记号统一为原版与 Core_Law：`L_0 / L_1 / L_2`、`\hat{G}_\theta`、`d-value`、`\Psi_f`。
 - 如出现多套符号（如 `L0/L1/L2`、`L_0/L_1/L_2`），统一解释为 `L_0/L_1/L_2`。
 
-## Reading Rule: 初心的两种读法
+## Reading Rule: 初心的两种 L₁ 读法
 
 本文中的“初心 / Shoshin”必须区分两个层级：
 
 | Reading | Level | What can be mistaken | What can be checked | Prohibited shortcut |
 |:--|:--|:--|:--|:--|
-| Direction-field / normative orientation | P3/P4 bridge / operational proxy | The chosen metric may misread the direction field, or confuse local relief with broader return. | Broader care, lower defensive rigidity, better re-entry into ordinary responsibility, and reduced need for identity protection. | Do not infer that a person has reached `Ω`, completed practice, or gained authority over others. |
+| Direction-field / normative orientation | P3/P4 bridge / operational proxy | The chosen metric may misread the direction field, or confuse local relief with broader return. | Broader care, lower defensive rigidity, better re-entry into ordinary responsibility, and reduced need for identity protection. | Do not infer that a person has reached a regulative source horizon, completed practice, or gained authority over others. |
 | First-person experiential report | P5 phenomenology | Intensity, bliss, terror, relief, or “openness” can be narrow, defensive, chemically induced, or socially reinforced. | Only as report-level evidence unless paired with external behavioral, relational, physiological, or third-party indicators. | Do not certify `d` expansion, `T_dir`, moral insight, or spiritual rank from experience alone. |
 
 Thus Shoshin is not “how open I feel.” It is a candidate reading of whether a finite operator is being reoriented toward wider, more payable consequence-bearing. The experience may accompany that reorientation, but it may also imitate it.
+
+Neither reading is an L₀ object. `ε_pg` supplies only the existing contentless structural floor; a subjectless system may instantiate structural asymmetry without Shoshin experience or interpretation. Therefore `ε_pg → Shoshin` marks situated L₁ read-back, not identity, theorem entailment, or a named precursor.
 
 ## Metric Status: provisional comparison logic
 
@@ -54,28 +57,26 @@ Current rule: use cosine for compact directional exposition, but mark deeper cla
 
 ## I. Shoshin Dynamics (初心动力学)
 
-### Ax-Sho-1: Global Convergence Vector
-**Formal Definition**: Shoshin is the negative gradient of the long-horizon free-energy functional, not of any local $L_2$ basin.
-$$ \bar{F}(\sigma) \equiv \mathbb{E}\left[\int_{0}^{\infty} F\big(\sigma(t)\big)\,dt\right] $$
-$$ \text{Shoshin}(\sigma) \equiv -\nabla_{\sigma} \bar{F}(\sigma) $$
-* **Implication**: 初心是全局自由能收敛方向，不是局部最优的妥协。
+### Ax-Sho-1: Situated Horizon Direction Proxy
+**P3/P4 bridge definition**: Within a declared situated model, Shoshin may be proxied by the negative gradient of a finite-horizon objective over an explicit reachable／admissible domain. This is not an L₀ definition, precursor claim, universe-wide optimum, or proof that the selected metric tracks Shoshin.
+$$ \bar{F}_{\theta,\tau,K}(\sigma) \equiv \mathbb{E}\left[\int_{0}^{\tau} F_{\theta,K}\big(\sigma(t)\big)\,dt\right], \qquad \tau < \infty $$
+$$ \text{Shoshin}^{proxy}_{\theta,\tau,K}(\sigma) \equiv -\nabla_{\sigma} \bar{F}_{\theta,\tau,K}(\sigma) $$
+* **Implication**: 初心可在具名有限模型中由较宽时域的方向代理表达；它不是宇宙级终点，也不由“非局部”自动推出。
 
-### Ax-Sho-2: Directional Bias of Selection
-**Formal Definition**: Local $L_2$ constraints bias the descent direction away from the global minimum.
-$$ v_{actual} = -\nabla F(\sigma) + B(L_2) $$
-$$ \text{Shoshin} = \Pi_{global}\big(-\nabla F\big),\; \Pi_{global} \perp B(L_2) $$
-* **Implication**: 选择具有方向性偏置，初心是对偏置的结构纠偏。
+### Ax-Sho-2: Situated Bias Comparison
+**P3 bridge definition**: In a declared model, local $L_2$ constraints may bias descent relative to the model's stated reachable comparison set.
+$$ v_{actual} = -\nabla F_{\theta,K}(\sigma) + B(L_2) $$
+* **Implication**: 初心代理可用于比较偏置前后的有限方向；不存在未声明作用域的 `\Pi_{global}`。
 
 ### Ax-Sho-3: Spirit as d-Field Gradient
 **Formal Definition**: Spirit is the gradient field of $d$ over the agent’s state manifold.
 $$ \text{Spirit}(\sigma) \equiv \nabla d(\sigma) $$
 * **Implication**: 精神不是实体，而是引导 $\hat{G}_\theta$ 流向更高 $d$ 的向量场。
 
-### T-Sho-1: Return-by-d Theorem
-**Deduction**: If $d$ increases, trajectories align with Shoshin; if $d$ decreases, trajectories deviate into local basins.
-$$ \frac{dd}{dt} > 0 \Rightarrow \langle v, \text{Shoshin}\rangle > 0 $$
-$$ \frac{dd}{dt} < 0 \Rightarrow \langle v, \text{Shoshin}\rangle < 0 $$
-* **Implication**: “d 值增加即回归”是动力学对齐条件，而非道德评价。
+### T-Sho-1: Conditional Return-by-d Bridge
+**Conditional claim**: A rise in `d` does not by itself establish Shoshin alignment. Alignment is a model-local candidate only when the added concern is stably written in, payable, coordinated, non-outsourced, re-selectable, and the proxy direction is declared.
+$$ \frac{dd}{dt} > 0 \;\not\!\Rightarrow\; \left\langle v, \text{Shoshin}^{proxy}_{\theta,\tau,K}\right\rangle > 0 $$
+* **Implication**: “d 值增加即回归”的无条件 theorem 身份撤回；当前只保留具名条件桥。
 
 ## II. Faith & Reset (信仰与重置)
 
@@ -104,7 +105,7 @@ $$ \Rightarrow \text{Reconfiguration capacity} \uparrow $$
 ## III. Experimental & Praxis Predictions (实验与实践预测)
 
 ### Cor-Sho-H1: Shoshin Alignment Marker
-**Prediction**: Practices labeled as “初心” reduce local-minimum rigidity and increase global exploration in decision tasks.
+**Prediction**: Practices labeled as “初心” reduce local-minimum rigidity and increase exploration within a declared task space.
 $$ \text{Rigidity} \downarrow,\; \text{Exploration} \uparrow $$
 * **Implication**: 初心可通过行为探索—利用权衡曲线验证。
 
@@ -576,7 +577,7 @@ $$\frac{dL_2}{dt} < 0 \quad \text{when needed}$$
 - 不停止学习（死前还在解剖人体）
 - $\langle w_{L_2} \rangle$ 保持在中等水平（0.4-0.6？）
 
-**SRT 分析**: 跨域探索 → 每个新领域重置 $w_{L_2}$ → 维持全局初心。
+**SRT 分析**: 跨域探索 → 每个新领域暂时降低既有 $L_2$ 的支配 → 维持跨域开放；这不证明初心对齐。
 
 ---
 
@@ -645,7 +646,7 @@ $$L_2^{\text{main}} > L_2^{\text{aux 1}}, L_2^{\text{aux 2}}, ..., L_2^{\text{au
 
 $$\text{Innovation Potential} \propto \frac{1}{\langle w_{L_2} \rangle} \times \sqrt{\sum_i (L_2^i)^2}$$
 
-最优是：多领域，但每个都有足够深度，同时保持全局开放性。
+本节的实践建议是：多领域，但每个都有足够深度，同时保持跨域开放。它不是全局最优命题。
 
 ---
 
@@ -895,7 +896,7 @@ $$\begin{cases}
 | 符号 | 名称 | 定义位置 |
 |:-----|:-----|:---------|
 | $w_{L_2}$ | L_2权重 | §2.1 |
-| $\Omega_{\text{openness}}$ | 开放度指标 | §2.1 |
+| — | 开放度候选（未注册理论符号） | §2.1 |
 | $L_2^{\text{domain}}$ | 领域特定 L_2 | §2.1 |
 | $\theta_{\text{meta}}$ | 元认知参数 | §4.1 |
 | $\langle w_{L_2} \rangle$ | 平均L_2权重 | §6.2 |
@@ -919,10 +920,10 @@ SRT_Spirit_05_Shoshin (本文件)
 ### Formalization Summary (形式化概述)
 
 **Core Formula / 核心公式**:
-$$\text{Shoshin}(\sigma) \equiv -\nabla_{\sigma} \bar{F}(\sigma), \quad \bar{F}(\sigma) \equiv \mathbb{E}\!\left[\int_{0}^{\infty} F\big(\sigma(t)\big)\,dt\right]$$
+$$\text{Shoshin}^{proxy}_{\theta,\tau,K}(\sigma) \equiv -\nabla_{\sigma} \bar{F}_{\theta,\tau,K}(\sigma), \quad \bar{F}_{\theta,\tau,K}(\sigma) \equiv \mathbb{E}\!\left[\int_{0}^{\tau} F_{\theta,K}\big(\sigma(t)\big)\,dt\right],\;\tau<\infty$$
 
-- 初心 (Shoshin) 被定义为长时域自由能泛函的负梯度方向，指向全局而非局部极小。
-- Shoshin is the negative gradient of the long-horizon free-energy functional, orienting toward the global rather than any local minimum.
+- 在声明状态空间、泛函、可行域、有限时域与约束的模型内，初心可由该模型目标的负梯度作 P3/P4 代理；这不是 L₀ 定义、宇宙级最优或无限时域终点。
+- Within a declared finite model, the negative gradient of its stated objective is a P3/P4 proxy for Shoshin, not an L₀ definition, universe-wide optimum, or infinite-horizon endpoint.
 
 $$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
 
@@ -933,12 +934,12 @@ $$\text{Spirit}(\sigma) \equiv \nabla d(\sigma)$$
 
 ### Mechanism Explanation (机制解释)
 
-- **$\hat{G}_\theta$ 与 $L_2$ 偏置纠偏**: 局部 $L_2$ 约束产生方向偏置 $B(L_2)$，使下降偏离全局极小；初心是将下降方向投影回全局收敛分量 $\Pi_{global}(-\nabla F)$，正交于偏置。
-- **$\hat{G}_\theta$ debiasing via $L_2$**: Local $L_2$ constraints introduce directional bias $B(L_2)$; Shoshin projects the descent direction onto the global convergence component $\Pi_{global}$, orthogonal to that bias.
+- **$\hat{G}_\theta$ 与 $L_2$ 偏置比较**: 局部 $L_2$ 约束产生方向偏置 $B(L_2)$；只有在具名可达域和比较规则内，才可比较该偏置是否使选择错过了模型内的可达替代。
+- **$\hat{G}_\theta$ and $L_2$ bias comparison**: Local $L_2$ constraints introduce directional bias $B(L_2)$; whether that bias misses a reachable alternative is assessable only inside a named domain with a declared comparison rule.
 - **$\Psi_f$ 与信仰的开放姿态**: 信仰 (Faith) 定义为 $O = I(\hat{G}_\theta; L_0)/H(L_0)$；持续高开放度 $O$ 扩展 $d$，降低 $\Psi_f$，实现结构性摩擦减少。
 - **$\Psi_f$ and faith openness**: Faith is defined as openness $O = I(\hat{G}_\theta; L_0)/H(L_0)$; sustained high $O$ expands $d$ and reduces $\Psi_f$, yielding structural friction reduction.
-- **$d$ 回归定理**: $dd/dt > 0$ 当且仅当轨迹与 Shoshin 方向正对齐；反现实化 (Counter-actualization) 通过 $w_{L_2} \to 0$ 使系统回归 $L_0$ 奇点，恢复重构能力。
-- **$d$ return theorem**: $dd/dt > 0$ iff the trajectory aligns with the Shoshin direction; counter-actualization via $w_{L_2} \to 0$ returns the system to $L_0$ singularities, restoring reconfiguration capacity.
+- **$d$ 条件桥**: $dd/dt > 0$ 不是 Shoshin 对齐的充分条件；须另过可支付、可协调、不外包、可再选择与代理效度门。
+- **Conditional d bridge**: $dd/dt > 0$ is not sufficient for Shoshin alignment; payability, coordination, non-outsourcing, re-selectability, and proxy-validity gates remain independent.
 
 ---
 

@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: governance
 canonical: false
 created: 2026-04-01
-updated: 2026-06-05
+updated: 2026-08-12
 ---
 
 # Core_Law/ ↔ Core/ 双向交叉检查协议
@@ -39,7 +39,8 @@ updated: 2026-06-05
 |---------------|--------------|---------|
 | L0_Metaphysics 遮蔽词条 | Core_14 §6（觉醒动力学）、Core_12b（L2滞后）、Core_13b（d值带宽）| 哲学描述 ↔ 形式机制 |
 | L0_Metaphysics 具身词条 | Core_13a（κ_body双流耦合）、Reference_Dynamics §2（θ_binding）| 结构条件 ↔ 运作质量 |
-| L0_Metaphysics 初心词条 | Core_14 §6.1（双盆地势能）| 方向场 ↔ 势能拓扑 |
+| L0_Metaphysics 初心词条 | Core_12a former `T-L0-Heart`；Core_14 §6.1（双盆地势能）| B-A：L₁ 回读 ↔ 领域 bridge；不得反定义 L₀ |
+| C-A global-optimum scope | `_SRT_D_VALUE_CANONICAL.md §5b`；Core NormativeGradient；Core Law CN/EN／Euclid；Reference Ontology／Dynamics | universe-wide semantic optimum withdrawn；reachable optimum／regulative horizon／finite attractor 分义；bare `Ω` 不得作全局算子或终点 |
 | L0_Metaphysics 意识词条 | Core_13a（Ax-Op-02 Attention分解）、Core_14 §5（d值觉醒）| 候选窗口 ↔ 算子参数 |
 | L0_Metaphysics 选择层级词条 | Core_22 Eq-Evo-03b（选择内再入通道）| 相变点 ↔ 方程架构 |
 | Core_Text_CN family ⑦ / C2（势差 / 高阶意识候选窗口）| Core_22 Eq-Force-*（自由能/摩擦方程）| 哲学方向 ↔ 形式梯度 |
@@ -87,7 +88,6 @@ updated: 2026-06-05
 | 真空期（过渡态） | Core_Text_CN family ⑧、L0遮蔽词条 | Core_14 §6.3 已加限制注记，无正式定义 | 中 |
 | A/B 相变临界值 $d_c$、$d_{\max}(\theta)$ | L0遮蔽词条 | Core_14 带宽方程有定性描述，无定量校准 | 低 |
 | $\mathcal{M}_{meta}$ 函数形式 | Core_22 Eq-Evo-03b（已写入） | 标注 [H]，等 Philosophy/Ethics_Agency 对接 | 低 |
-| 感知初心→本体论接近初心完整链 | L0初心词条（接口预留） | 未写入 | 中 |
 
 ---
 

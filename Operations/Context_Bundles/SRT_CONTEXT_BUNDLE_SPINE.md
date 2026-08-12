@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: fc5b9e96
-source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
+source_commit: 8c94d0db
+source_branch: codex/b-a-c-a-nb1-sync-2026-08-12
 source_dirty: false
-inputs_digest: 7dc27dba4170a938
+inputs_digest: b0c5a7c951a2ab0c
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,8 +27,8 @@ inputs_digest: 7dc27dba4170a938
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `fc5b9e96` |
-| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
+| 来源 commit | `8c94d0db` |
+| 来源分支 | `codex/b-a-c-a-nb1-sync-2026-08-12` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -45,7 +45,7 @@ inputs_digest: 7dc27dba4170a938
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-08-12 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-08-12 |
-| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-11 |
+| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-12 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-12 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-12 |
@@ -760,7 +760,7 @@ When answering about SRT:
 
 ### 4c. Core Open Tensions
 - 主文件：`Core/SRT_OPEN_TENSIONS.md`
-- 说明：记录当前未完全封口的 core pressure points
+- 说明：记录当前未完全封口的 core pressure points，并保留已关闭作者 gate 的审计尾迹；§16 已由 **B-A（2026-08-12）**关闭：无独立 L₀「初心前身」，`ε_pg` 不改名，初心从 L₁/P2／P5 开始，领域公式只作 bridge／proxy；§17 已由 **C-A（2026-08-12）**关闭：撤回位置无关的宇宙级评价性 global optimum，仅保留具名有限模型中的技术性最优，并把 regulative horizon 与 closure／model attractor 分开；§18 的 **CΨ** 价态裁决继续开放
 - 引用规则：凡涉及其中 tension，不得包装成已完成 P0/P1
 
 ### 4d. Cross-Domain Usage Matrix
@@ -778,7 +778,7 @@ When answering about SRT:
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
 - 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A 另载 Gate 0 — L₀ 无内容结构性边界**（2026-08-11 采纳），规定何种**类型**的对象可进入裸 `L_0`——规则内容、对象分类与准入／回读条件一律以该节为准，本注册表不复述
-- 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针
+- 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针。B-A 的术语 owner 是 `Core_Law/SRT_L0_Metaphysics.md` 初心词条；C-A 的 scope owner 是 `_SRT_D_VALUE_CANONICAL.md §5b` 与 Claim Ladder §0A。Symbol Table Rules 17／18 只登记 no-new-symbol／no-alias 与作用域护栏；CΨ 仍开放
 
 ### 5c. Claim-Mode Audit
 - 文件：`Governance/SRT_CLAIM_MODE_AUDIT.md`
@@ -1018,7 +1018,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-11 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1091,13 +1091,26 @@ These are **typing / admission requirements, not a sufficient construction recip
 
 ### Read-back rule
 
-「order」, 「初心 / original intention」, 「good」, and 「global convergence」 may exist as **L₁/P2 read-back, regulative language, or domain bridge** — but may not back-define L₀.
+「order」, 「初心 / original intention」, 「good」, and situated convergence／direction language may exist as **L₁/P2 read-back, regulative language, or domain bridge** — but may not back-define L₀. **B-A（2026-08-12）进一步关闭 Gate B**：当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 重新命名为该前身；`ε_pg` 保持其既有无内容结构角色，初心从 L₁ 回读开始。
+
+### C-A — `global optimum` scope discipline
+
+> **Status**: author-decided and landed 2026-08-12. Adjudication／floor record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`.
+
+C-A adds no L₀ object and no symbol. It separates four objects that previously shared one name:
+
+1. A **universe-wide semantic／evaluative optimum** is not a current positive SRT object. It may remain only as historical provenance, quotation, or an explicitly unestablished high-commitment worldview claim; it may not carry canonical proof load.
+2. An **operator-relative reachable optimum** is admissible only as a situated P2/P3 object with the finite position, reachable／admissible domain, comparison rule, horizon, constraints, and relevant failure conditions stated.
+3. A **regulative horizon** is non-attainable L₁/P2 or P5 orientation language. It is not a formula endpoint, achieved state, or L₀ object.
+4. A **closure／model attractor** is a P3/P4 object of a named finite dynamics. Stability, low friction, or reachability does not by itself make it optimal, good, or generatively healthy.
+
+Technical uses of “global optimum” inside a fully declared optimization problem remain allowed; C-A blocks the slide from **model-global** to **universe-global／normatively complete**. `d ↑` alone entails neither a reachable optimum nor Shoshin alignment. The separate Core／Spirituality `Ψ_f → 0` valence question remains open under the CΨ author gate and is not decided by C-A.
 
 **"Back-define" includes the indirect route**: a canonical anchor may not import an L₀-level reading of these terms by cross-referencing a `canonical: false` bridge or translation file. **Direction of citation is part of this rule**, not a separate courtesy.
 
 ### What Gate 0 does not do
 
-It does not decide Gate A, Gate B, or Gate C (`Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`) — it bounds their option spaces. It does not resolve `κ₀`'s ontological status, and is neutral across the positions in `Philosophy/SRT_L0_Ontological_Status.md`, because it constrains *content*, not *mode of existence*. It introduces no symbol.
+Gate 0 本身没有裁决 Gate A、Gate B 或 Gate C（`Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`），只约束了它们的选项空间。后续作者裁决已分别以 EX-A 关闭 Gate A、以 B-A 关闭 Gate B、以 C-A 关闭 Gate C；`Core/SRT_OPEN_TENSIONS.md §18` 的 CΨ 仍为独立开放作者门。Gate 0 不解决 `κ₀` 的本体论地位，并对 `Philosophy/SRT_L0_Ontological_Status.md` 中各立场保持中立，因为它约束的是 *content*，不是 *mode of existence*。它不引入符号。
 
 ---
 
@@ -1727,7 +1740,7 @@ L₀ 的结构不是完全中性的。它至少承载三类**无内容的结构�
 >
 > **同批处理的另外两处**（列出以免被读成静默删除）：（1）本节小标题原为「确定化自带方向——秩序从一开始就在场」，作为**活跃的权威表面**同样承载被取代的主张，已改为「确定化自带非对称走向——L₀ 不是完全中性的」；（2）原句「初心不是从个体的自我维持中涌现的；个体的自我维持是初心在有限参数下的局部表现」**已删除**——它把初心置于个体自我维持之先，是 Gate 0 class C 的 L₀ 级读法；初心作为 L₁ 回读的定位见本文件§六「初心」词条，其与自我维持的关系属 L1 展开，本轮不在 L0 层重述。
 >
-> **本次改写不做的事**：不把 ε_pg 写成 L₀ 唯一 primitive；不删除、不降级 $\kappa_0$；不合并 $\kappa_0$ 与 ε；不裁决二者的依赖或独立关系（仍为 `_SRT_SYMBOL_TABLE.md` Usage Rule 15 所延后的 GOV-SUB01 Pass 2 事项）；不把「无内容」写成「无任何结构性 ordering」；不触及 Gate A / B / C 的实质裁决。形式化见 `Core/SRT_Core_01_Axioms.md T-Core-A1C2`；$\kappa_0$ 见 `Core/SRT_Core_12a T-L0-Kappa0`。
+> **本次改写不做的事**：不把 ε_pg 写成 L₀ 唯一 primitive；不删除、不降级 $\kappa_0$；不合并 $\kappa_0$ 与 ε；不裁决二者的依赖或独立关系（仍为 `_SRT_SYMBOL_TABLE.md` Usage Rule 15 所延后的 GOV-SUB01 Pass 2 事项）；不把「无内容」写成「无任何结构性 ordering」；不触及 Gate A / B / C 的实质裁决。形式化见 `Core/SRT_Core_01_Axioms.md T-Core-A1C2`；$\kappa_0$ 见 `Core/SRT_Core_12a T-L0-Kappa0`。**后续状态**：Gate B 已由作者于 2026-08-12 选择 B-A 另行关闭；本段仍只记录 2026-08-11 Gate 0 改写本身的边界。
 
 **这不意味着**：
 - 现实是任意意志的产物
@@ -1862,7 +1875,7 @@ L₀ 的结构不是完全中性的。它至少承载三类**无内容的结构�
 
 **时间**：不是选择发生的预先容器；而是对不可撤回选择之累积的度量——一种稳定域中的信息素，标记选择的历史深度。
 
-**初心**：L1 概念，不在 L0 术语裁决范围内。初心是 L1 对 ε（L0 的形式性不对称）的体验性命名——将偏向非自我抹除的结构倾向感知为「基础方向场」。L0 只承诺 ε；初心的全部内容（方向场、震悚标记、场感知/验证条件、近似描述「能维持更多存在持续存在的动态平衡」）均属 L1 展开，见 L1 文档。
+**初心（B-A）**：L1 概念，不在 L0 术语裁决范围内。初心是 L1 对 ε（L0 的形式性不对称）在有限处境中显现结果的体验性／解释性命名——将偏向非自我抹除的结构倾向感知为「基础方向场」。**就初心这条关系而言，当前 canonical 不承认一个独立的 L0 前身，也不把 ε 改名或登记为「初心前身」**；ε 仍只承担其既有的无内容形式性不对称角色。初心的全部内容（方向场、震悚标记、场感知／验证条件、近似描述「能维持更多存在持续存在的动态平衡」）均属 L1 展开，见 L1 文档。这里固定的是当前 SRT 的准入边界，不是对一切未来形而上可能性的否定证明；若要重开，须新的作者裁决与独立准入检验。
 
 **关切**：不是情感附加物，不是道德要求；而是有限位置对其连续性、可支付性与后续选择空间条件的差别性内生纳入。并非所有条件都能同等进入一个选择结构；某些条件会以不可外部化的方式进入该位置，这种内生纳入就是关切。"自身"不是关切的本体起点，而通常只是最先显著、最快把失败代价压回该位置的一簇高权重条件。d-value 标记的不是一时想纳入多少，而是**已经稳定写入选择结构的关切范围**。L1 将这三类条件在更大尺度上回读命名为「秩序条件」；真关切/假关切的判据、写入层级、前向判据、四种假关切形态等展开内容见 L1 文档。
 
@@ -3343,19 +3356,25 @@ d 值描述关切范围，不描述本体论存在。
 
 > **新增（2026-03-26）**：d 扩张的动力学方向与收敛目标的规范说明。对应 `Spirituality/SRT_Spirit_05_Shoshin.md` T-Sho-1。
 
-### §5b.1 d 扩张不是博爱，而是选择优化
+### §5b.1 d 扩张扩大处境化比较范围，不推出宇宙级最优
 
-d-value 的扩张不应被读作道德命令或利他主义要求。**d-value 的健康变化不应被理解为单调扩张，而是指向关切范围的可重组、可承担、可恢复、可再选择能力**；其「全局最优」读法**依赖一个尚待硬化的闭包边界问题**（谁的再选择、什么尺度），不是一个位置无关的宇宙级最小值（2026-07-05 规范性收口 Level A，高风险编辑，见 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`）。本节下文与 §5b.2 中的「全局最优 / 全局收敛」表述均应在此收口下读取。
+d-value 的扩张不应被读作道德命令或利他主义要求。**d-value 的健康变化不应被理解为单调扩张，而是指向关切范围的可重组、可承担、可恢复、可再选择能力。** 每个选择都绑定于有限位置；改变一次选择所整合的关切范围，会改变被纳入的变量、后果回流和可比较候选，但不会自动给出唯一目标函数、跨主体聚合规则、时间范围或闭包边界。
 
-每个算子因 θ 的限制只能看到自由能景观的局部。θ 越窄，算子越容易陷入局部最小值——表现为遮蔽（occlusion）。扩大 d 不是"对别人好"——而是纳入更多主体间的本体论摩擦权衡，使选择避开局部陷阱，收敛到更接近全局最优的方向。
+因此，`d ↑` 只能支持一个较窄的判断：更宽的关切范围**可能**暴露原先被外包的后果、被遮蔽的可达路径或原模型没有纳入的冲突。它不保证新选择更优，也不推出一个位置无关的 universe-wide optimum。
 
-d 扩张的目标是给**指向最小自由能方向**的选择提供更多的注意力和关切。这需要权衡多主体之间的本体论摩擦——而权衡本身就是选择。
+**C-A 规范表述（作者裁决，2026-08-12）**：
 
-**规范表述**：
+$$
+d \uparrow
+\;\not\!\Rightarrow\;
+\text{universe-wide global optimum}
+\quad\text{and}\quad
+d \uparrow
+\;\not\!\Rightarrow\;
+\langle v,\text{Shoshin}\rangle>0 .
+$$
 
-$$d \uparrow \;\Rightarrow\; \text{局部最优} \to \text{全局最优} \;\Rightarrow\; \langle v, \text{Shoshin} \rangle > 0$$
-
-d 的扩张使个体选择方向与初心（全局收敛向量）对齐——不是因为道德义务，而是因为局部景观在更宽视野下的结构变形。
+只有当具名模型同时声明有限算子／位置、可达域、比较规则、时间范围与约束，并通过可延续、可协调、不外包、可再选择四重判据时，才可说某个候选在**该模型的可达域内**更优。初心在这里仍只是 L₁/P2 处境化回读或 P3/P4 代理方向；它不是全局终点，也不由 `d ↑` 单独推出。
 
 ### §5b.1a d 扩张与秩序增益
 
@@ -3385,24 +3404,40 @@ d 扩张的健康模式是渐进的、可支付的、保留调整能力的。不
 
 **Cross-ref**: `Core_Law/SRT_Selection_Argument.md §7c`（真关切与假关切的完整论证）。
 
-### §5b.2 全局最优是动态平衡，不是热寂
+### §5b.2 四义拆分：可达比较、规约性地平线与有限吸引子
 
-全局自由能最小值不是热力学平衡态（热寂），而是**能维持更多存在持续存在的动态平衡**。
+**C-A 不承认一个位置无关、宇宙尺度、带语义／评价内容的 global optimum 作为当前 SRT 的正面理论对象。** 本节只保留以下四义分界：
 
-热寂是所有选择停止、所有确定化耗尽的极限——对应 $d = 0$，所有主体性消失。这不是 SRT 的全局最优，而是选择过程的终止态。
+| 对象 | 当前地位 | 使用条件 |
+|---|---|---|
+| universe-wide semantic / evaluative optimum | 不准入当前正面理论对象 | 可作为历史主张、引文或未建立的高承诺世界观命题留痕，但不得承重 canonical 推导 |
+| operator-relative reachable optimum | P2/P3 条件对象 | 必须声明有限位置 `θ`、可达域、比较规则、时间范围、约束与失败条件；不满足时只能说「扩大比较范围」或「避免已知局部陷阱」 |
+| regulative horizon | L₁/P2 或 P5 方向语言 | 必须标明不可到达；不能充当公式中的终态、现实已达状态或 L₀ 对象 |
+| closure / model attractor | P3/P4 有限动力学对象 | 必须声明具体模型、吸引域与稳定语义；稳定、低摩擦或可达均不自动等于最优、善或生成健康 |
 
-SRT 的全局最优是一种使最大数量的选择过程能够持续运行、持续产生稳态（存在）的景观配置。它是**最高动态秩序**，不是最低能量的死寂。初心指向的是更多的存在能够共存并持续选择的方向，不是一切归于均匀的方向。
+在具名有限模型内，若确实需要最优化形式，可直接写全索引，例如：
+
+$$
+x^*_{\theta,\tau,K,J}
+\in
+\arg\min_{x\in\mathcal{R}_{\theta,\tau,K}}
+J_{\theta,\tau,K}(x).
+$$
+
+这里的 `x*` 只是该模型、该时域与该可达域内的候选；本节不为它注册 repo-wide 新符号，也不把它外推为宇宙终点。
+
+热寂相关论证相应降到更低负担的裸句：**一个没有持续选择、真实 stake 与后续可再选择的终止态，不能仅凭低成本或低摩擦被读成生成健康。** 这个排除判断不需要、也不证明存在一个与之相反的全局最优；「维持最大数量的选择过程」同样不是充分替代，因为它可能被大量低 stake、可替换过程刷高。
 
 > **引用方向护栏（2026-08-11，Gate 0 canonical landing）**：下列 cross-ref 是 **provenance 指针，不是 canonical 背书**。按 `Governance/SRT_CLAIM_LADDER.md §0A`（Gate 0）的 read-back / 引用方向规则：**canonical 锚点不得通过 cross-reference 从 `canonical: false` 的 bridge / translation 文件反向导入 L₀ 层读法**。本节此前把 `Def-Apeiron-1` 标注为「初心作为 **L₀ 的**倾向性结构」，即以 canonical 认可语气导入了一条 L₀ 级 contentful 读法（Gate 0 class C），现予改正。
 >
 > **层级以 `Core_Law/SRT_L0_Metaphysics.md` 为准**：初心不在 L₀ 的原生承诺内，是 L₁/P2 对无内容结构不对称之显现结果的回读。下列两处的全局／变分形式一律按**领域 translation / bridge** 读，不得反定义 L₀，也不得据以在 canonical 层建立「初心 = L₀ 倾向性结构」。
 >
-> **本护栏只堵引用方向，不裁决实质**：初心是否可以有某种严格 contentless 的 L₀ precursor，仍是 `Core/SRT_OPEN_TENSIONS.md §16`（Gate B）未决事项；「全局最优」术语的正式收口仍是 §17（Gate C）未决事项。本节正文措辞与 §5b.1 的 Level A 收口读法均未改动。
+> **B-A／C-A 后续裁决（2026-08-12）**：Gate B 与 Gate C 均已关闭。当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身；初心从 L₁/P2 回读开始。下列公式只能作为具名、有限、完整声明作用域的 bridge / operational proxy 使用；无限时域或 universe-wide 读法不再是当前正面理论对象。
 
 **Cross-ref（provenance，非 canonical 背书）**：
 
-- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 — Spirituality 层 translation（`claim_mode: mixed`）：把初心写作长时程自由能泛函的负梯度。**按 bridge 读**；其全局收敛向量形式不构成 L₀ 主张。
-- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 — Physics 层 translation（`claim_mode: translation`，`canonical: false`）：把初心写作 `argmin` 变分形式。**按 bridge 读**；其「L₀ 的内在属性」措辞是该翻译层的表述，**不被本 canonical 文件采纳为 L₀ 层定位**（Gate B 待裁）。
+- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 — Spirituality 层 translation（`claim_mode: mixed`）：在声明有限时域与可行域的模型中，把初心写作自由能泛函的负梯度代理。**按 bridge 读**；不构成 L₀ 主张或 universe-wide convergence。
+- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 — Physics 层 translation（`claim_mode: translation`，`canonical: false`）：把初心写作 `argmin` 变分形式。**按 bridge 读**；原「L₀ 的内在属性」措辞已按 B-A 撤回，不构成 L₀ 定位。
 
 ---
 
@@ -5981,7 +6016,7 @@ SRT 主方程的运作机制如下：
 | **ε_s** | `\varepsilon_s` | Minimum Stake Threshold | Direction-level threshold for counting a distinguishable Fisher eigendirection as genuinely stake-coupled. A direction v_i with coupling strength s_i enters the effective stake-bearing spectrum only if s_i > ε_s. **NOT stake itself** — it is the minimum coupling strength required for a direction to count as genuinely risk-bearing. Gate function: g_i = max(0, (s_i − ε_s)/(1 − ε_s)); gated eigenvalue: λ̃_i = λ_i · g_i; stake-gated effective dimension: D_stake = (Σλ̃_i)²/Σ(λ̃_i)². Three-way distinction: ε_pg = L₀ minimum non-neutrality floor (ontological layer); ε_reg = implementation-layer regularizer (operator layer); ε_s = direction-level stake threshold (spectral bridge layer). | Scalar (0,1) or positive threshold | Core; proposed bridge term for d-value spectral proxy. See `D_VALUE_ALIGNMENT.md §4.5`; `_SRT_D_VALUE_CANONICAL.md §2b`. |
 | **δ** | `\delta` | Duty Cycle | δ_j ≡ (1/T)∫A_j(t)dt; fraction of time an operator actively maintains anchoring target σ_j. Bounded above by Ψ_f budget and below by looseness penalty. | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
 | **ν** | `\nu` | Switching Density | ν_j ≡ N_{switch,j}/T; number of anchoring state flips per unit time. Same δ with different ν corresponds to qualitatively different schedules. Bounded above by Ψ_f^{switch} budget. | Hz | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-2` |
-| **λ_pred** | `\lambda_{pred}` | Downstream Prediction Cost Weight | Weight of temporal entropy h[A] in coupled multi-operator scheduling cost. When λ_pred > λ_pred^c, periodic scheduling becomes globally optimal (coupling-induced periodization). | Scalar (≥ 0) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
+| **λ_pred** | `\lambda_{pred}` | Downstream Prediction Cost Weight | Weight of temporal entropy h[A] in coupled multi-operator scheduling cost. When λ_pred > λ_pred^c, periodic scheduling beats the declared periodic-vs-random schedule comparison in T-Scale-Rhythm-3; no optimum over every admissible schedule is implied. | Scalar (≥ 0) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-3` |
 | **Ṡ_int^on** | `\dot{S}_{int}^{on}` | On-Phase Entropy Production Rate | Internal entropy production rate during active selection. Lower-bounded by Landauer: ≥ k_BT · İ_created · ln 2. Determines entropy dissipation bound on duty cycle. | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
 | **J_S^max** | `J_S^{max}` | Maximum Entropy Export Flux | Upper bound on the rate at which a system can export entropy to its environment, determined by thermal coupling bandwidth (heat conduction, metabolic waste removal, radiation). | Entropy/time | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
 | **δ_max^entropy** | `\delta_{max}^{entropy}` | Entropy-Limited Maximum Duty Cycle | δ_max^entropy ≡ J_S^max/(Ṡ_int^on + J_S^max). Independent of Ψ_f budget; cannot be bypassed by increasing E_avail. Effective δ_max = min(δ_max^budget, δ_max^entropy). | Scalar (0,1) | Core; canonical source `SRT_Core_14 T-Scale-Rhythm-4` |
@@ -6040,6 +6075,10 @@ SRT 主方程的运作机制如下：
 15. **κ namespace split** (GOV-SUB01 Pass 1, 2026-07-16): the glyph `κ` spans two unrelated object families that must not be read as one continuous quantity. (a) `κ_0` (primordial curvature) and `κ(t)` (dynamic L₀ curvature) are **L₀-curvature** objects — canonical source `Core/SRT_Core_12a T-L0-Kappa0 / T-L0-NonStatic`. `κ_0` is carried as a **primordial-curvature candidate**: its in-table structural-prerequisite role is retained, while its ontological status is explicitly open (`Philosophy/SRT_L0_Ontological_Status.md`); the "candidate" label describes this existing status and does **not** downgrade `κ_0` in this pass. (b) `κ_{c1}` and `κ_{c1.5}` are **consciousness-stage phase-transition thresholds** — canonical source `Philosophy/SRT_Consciousness_Conditions.md §三`. As threshold-bearing points their specific values are lab-level (P4) per `Governance/SRT_CLAIM_LADDER.md`, even where a Scope column reads "Core". The two families share no derivation path: an equation over `κ_0` says nothing about `κ_{c1}`, and vice versa. This rule adds the namespace guard and claim-level annotation **only**; it does not rename any symbol and does not modify any equation referencing `κ_0`, `κ(t)`, `κ_{c1}`, or `κ_{c1.5}`. A full `κ_0` / `ε_pg` dependency-graph audit is deferred to GOV-SUB01 Pass 2.
 
 16. **Gate 0 — L₀ contentless structurality boundary** (adopted 2026-08-11): **pointer only.** Whether a given object may sit at bare `L_0` is a **type** question, not a symbol question, and is decided solely by **`Governance/SRT_CLAIM_LADDER.md §0A`** — the single primary authority for the rule, its object classes, and its admission and read-back conditions. This table does **not** restate that rule and must not be cited in its place. Symbol users touching `L_0`, `κ_0`, `ε_pg`, or any quantity defined over `L_0` must take the type verdict from §0A. Adjudication record: `Operations/Proposals/SRT_GATE0_L0_CONTENTLESS_STRUCTURALITY_DECISION_2026-08-11.md`. This entry adds no symbol, no definition, and no claim level, and Gate 0 itself carries no P-level.
+
+17. **B-A — Shoshin strict-layering guard** (author-decided 2026-08-12): this decision deliberately adds **no symbol**. `ε_pg` remains the registered L₀ minimum-non-neutrality postulate and must not be renamed, aliased, or cited as an independent “Shoshin precursor.” 「初心 / Shoshin」begins at L₁ as P2 read-back / interpretation or P5 phenomenology; any `argmin`, `∇F`, or horizon-bearing form is a declared domain bridge / proxy and cannot define L₀. Canonical term authority: `Core_Law/SRT_L0_Metaphysics.md` 初心词条; decision record: `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`. This guard does not decide the `κ_0 / ε_pg` dependency (Rule 15). Global-optimum scope is now governed separately by Rule 18 / C-A.
+
+18. **C-A — global-optimum scope guard** (author-decided 2026-08-12): this decision adds **no symbol** and does not repurpose `\Omega`. Bare `\Omega` remains Ontological Consistency under Rule 4; it must not be reused for a reachable-path set, a theological source horizon, or a global optimum. A model-local optimum must state the finite position, reachable／admissible domain, comparison rule or functional, horizon, constraints, and failure conditions; write those indices locally rather than registering a repo-wide optimum glyph. Regulative horizons are non-attainable L₁/P2 or P5 language; finite attractors remain P3/P4 model objects. A universe-wide semantic／evaluative optimum is not a current positive SRT object. Technical “global optimum” usage remains valid inside a fully declared optimization problem and does not license universe-wide or normative extrapolation. Decision record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`. C-A does not decide the separate `Ψ_f → 0` valence question (CΨ).
 
 
 ## D-Value Alignment (d 值专题规范)

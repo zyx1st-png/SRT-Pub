@@ -228,6 +228,7 @@ How can SRT core concepts be hardened into modelable structures?
 - `_SRT_D_VALUE_CANONICAL.md`
 - `Neuroscience/SRT_Neural_Mechanisms.md`
 - `Core/SRT_Core_14_Dynamics_Scaling.md`
+- `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`
 
 ### Boundary
 
@@ -439,10 +440,11 @@ How can SRT claims be operationalized, measured, or falsified?
 - `papers/ontological_friction/paper_ontological_friction.md`
 - `_SRT_PSI_F_CANONICAL.md`
 - `_SRT_D_VALUE_CANONICAL.md`
+- `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`
 
 ### Boundary
 
-Lab routes produce proxies and tests; they do not create canonical definitions.
+Lab routes produce proxies and tests; they do not create canonical definitions. The NB1 execution card tests one local neural-to-task-choice bridge and cannot be back-projected into actualisation, agency, subjecthood, or consciousness.
 
 ---
 
@@ -518,6 +520,8 @@ Where are SRT's unresolved problems, vulnerabilities, or claim-level risks?
 ### Boundary
 
 Tensions should be routed and classified, not silently patched by upgrading claims.
+
+Gate-state note (2026-08-12): §16 / Gate B is resolved by B-A strict layering; §17 / Gate C is resolved by C-A bounded plurality. Current authorities are `Core_Law/SRT_L0_Metaphysics.md` 初心词条 and `_SRT_D_VALUE_CANONICAL.md §5b`, with adjudication／floor records `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md` and `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`. §18 / CΨ remains open.
 
 ---
 

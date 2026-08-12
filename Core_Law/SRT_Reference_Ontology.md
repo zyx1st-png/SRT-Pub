@@ -375,13 +375,11 @@ R_q = L_1^{experience} - \mathcal{D}^{-1}(L_2^{description})
 则 \(\hat{G}_{inf}\) 从嵌套子程序跃迁为独立算子，具备独立 \(d\) 与 \(\Psi_f\) 结算池。
 * **Implication**：主体间性先于个体性，但个体性可通过动力学相变严格定义。
 
-## §9 Ω 的非实体性与偶发性声明（新增）
+## §9 跨位置对象与偶发性边界
 
-### 定义 O14：Non-Entity Global Operator
-\[
-\Omega \notin L_1\text{-entity set},\quad \Omega=\text{selection logic over }(L_0\to L_1)
-\]
-* **Implication**：\(\Omega\) 不是宇宙内“最大存在物”（Demiurge），而是所有局部 \(\hat G_\theta\) 共享的操作逻辑。
+### O14（历史符号用法，C-A 撤回）
+
+旧版曾把 $\Omega$ 定义为所有局部算子共享的 Non-Entity Global Operator。该定义现已撤回：bare $\Omega$ 依 `_SRT_SYMBOL_TABLE.md` 只表示 **Ontological Consistency**，不得再表示投影源、本源地平线或宇宙级最优。SRT 当前不以单一全局算子解释局部算子的谱系；跨尺度连续性须按 A12／A15 在具名结构、映射与失败条件下逐对建立。
 
 ### 定理 O-T6：Pure Contingency of Manifest States
 对任意 \(s\in L_1\) 与 \(r\in L_{2,\theta}\)：
@@ -402,14 +400,13 @@ F[L_1] > 0\quad \text{for any finite instantiated slice }L_1
 L_1(t+\Delta t)=\hat G_\theta[L_0(t)]\ \text{(iterative donation of existence)}
 \]
 
-### Hyp-O8: \(L_0^{abs}\)-\(\Omega\) 极限同一假设（研究态）
-\[
-\lim_{\text{scale}\to\infty}\Big(\Omega\leftrightarrow L_0^{abs}\Big)
-\]
-解释为：在原初极限上，\(L_0^{abs}\) 可视为 \(\Omega\) 的自我可及潜能域，\(\Omega\) 可视为 \(L_0^{abs}\) 的自显操作。
-* **Status**：该条为形而上学桥接假设，不是已证定理。
+### Hyp-O8（撤回／停驻）：$L_0^{abs}$ 与全局算子极限同一
 
-### 定义 O15：Truth–Goodness–Beauty as L0 Optimal Manifolds（新增）
+该假设因符号冲突、无穷极限未定义及位置无关对象负担而撤出当前正面理论。未来若重开，须另立作者门、不得使用 bare $\Omega$，并先给出有限算子到所提对象的 epistemic bridge 与失败条件。
+
+### O15（C-A 撤回／停驻）：Truth–Goodness–Beauty as L0 Optimal Manifolds
+
+> **C-A（2026-08-12）**：下列段落保留为历史高承诺假设，不再是当前 definition，也不得承重 canonical 推导。它把真／善／美写成 $L_0^{abs}$ 中的位置无关评价最优对象，正是 C-A 不予准入的 universe-wide semantic／evaluative optimum。复活条件见 `_SRT_PARKED_INDEX.md`。
 
 > **[R]** 柏拉图理念论（Republic ~375 BC）：真善美为超越具体事物的普遍形式（Εἶδος）。新柏拉图主义的"至善"（Plotinus）。**[H — 高承诺框架假设]** 以下 SRT 形式化为高风险主张：将柏拉图理念操作化为 L₀ 中的优化流形，使神学/美学/伦理学与 SRT 本体论结构接轨。
 

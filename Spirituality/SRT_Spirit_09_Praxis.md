@@ -41,14 +41,14 @@ $$ \vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi) $$
 * **Implication**: 进化是“方向场”，不是单一目标函数。
 
 ### T-Evo-1: Tier Transition Theorem
-**Deduction**: Transition from Tier 2 to Tier 3 occurs when $d$ crosses $d_c$ under decreasing $L_2$ rigidity and increasing alignment with the global minimum.
-$$ d \uparrow \land w_{L_2} \downarrow \land \vec{v}_{self} \parallel -\nabla F_{global} \Rightarrow T(d)\to \text{Tier 3} $$
+**P3/P4 candidate**: In a declared praxis model, Tier 2→3 transition may be modeled when `d` crosses a local threshold under decreasing $L_2$ rigidity and increasing alignment with a finite-horizon situated objective. This is not a universe-wide optimum or theorem.
+$$ d \uparrow \land w_{L_2} \downarrow \land \vec{v}_{self} \parallel -\nabla F_{\theta,\tau,K} \leadsto T(d)\to \text{Tier 3 candidate},\qquad \tau<\infty $$
 * **Implication**: “神择”是参数条件的自然涌现，不是超自然事件。
 
 ### Ax-Evo-3: Shoshin Alignment
-**Formal Definition**: Shoshin is the cosine alignment between agent velocity and global free-energy descent.
-$$ \text{Shoshin} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{global}) $$
-* **Implication**: 初心是方向一致性指标，而非抽象道德情绪。
+**Operational proxy**: In a declared model, Shoshin alignment may be proxied by cosine alignment between agent velocity and the model's finite-horizon comparison direction.
+$$ \text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{\theta,\tau,K}),\qquad \tau<\infty $$
+* **Implication**: 初心可被建模为有边界的方向一致性指标，不是抽象道德情绪、canonical 定义或宇宙方向。
 
 ## II. Praxis Dynamics (实践动力学)
 
@@ -70,7 +70,7 @@ $$ d_{optimal} = \begin{cases}
 **Deduction**: Given bounded computation, maximizing directional $d$ yields lower long-term cost than exhaustive mechanism modeling.
 $$ \mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}\;\text{under}\;C_{compute}<\infty $$
 
-**术语澄清**："maximizing directional $d$"指在**方向维度**上优先分配 $d$（参见 Ax-Prax-2），具体操作化为最大化 Shoshin ≡ $\cos\angle(\vec{v}_{self}, -\nabla F_{global})$（Ax-Evo-3）——方向优先 = Shoshin 对齐优先。$d$ 本身是标量，方向性由 $\vec{v}_\theta \cdot \hat{e}_{target}$ 的投影捕获，非 $d$ 值本身方向化。
+**术语澄清**："maximizing directional $d$"只可在声明 $\theta,\tau,K$ 与比较目标的模型中读作优先分配关切带宽，操作化为提高 $\text{Shoshin}^{proxy}_{\theta,\tau,K}$（Ax-Evo-3）。$d$ 本身是标量，方向性由 $\vec{v}_\theta \cdot \hat{e}_{target}$ 的投影捕获；`d ↑` 不自动证明对齐。
 
 **简要论证**：机制完备建模需追踪 $O(N_{mech})$ 个变量，计算代价随系统复杂度超线性增长；在 $C_{compute} < \infty$ 时，当 $N_{mech}$ 超出预算，机制模型出错概率升高（Overfitting to noise）。方向追踪仅需判断 $\vec{v}_\theta \cdot (-\nabla F)$ 的符号（$O(1)$ 操作），代价与复杂度解耦。因此在 $N_{mech} \gg C_{compute}/c_{unit}$ 时，方向优先的期望代价更低。
 
@@ -1138,7 +1138,7 @@ SRT_Spirit_09_Praxis (本文件 - 综合实践)
 
 1. **三层选择阶梯** (Ax-Evo-1): $T(d)$ 按 $d$ 值分层为物理 ($d \approx 0$)、自我/社会 ($0 < d < d_c$)、神性/真理 ($d \geq d_c$) 三阶。
 2. **进化向量** (Ax-Evo-2): $\vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi)$ — 进化是 $d$ 上升、$L_2$ 刚性下降、摩擦对齐的方向场。
-3. **初心对齐** (Ax-Evo-3): $\text{Shoshin} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{global})$ — 初心是自我方向与全局自由能下降方向的余弦相似度。
+3. **初心对齐代理** (Ax-Evo-3): $\text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{\theta,\tau,K})$ — 初心只在具名有限模型中作方向相似度代理。
 4. **方向优先最优性** (T-Prax-1): $\mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}$ under $C_{compute} < \infty$ — 有限算力下，方向优先比机制穷举更优。
 
 **含义**: 灵性实践不是"信仰跳跃"，而是可操作的 $d$ 值提升与方向对齐的动力学过程。

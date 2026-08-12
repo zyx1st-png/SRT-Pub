@@ -74,13 +74,26 @@ These are **typing / admission requirements, not a sufficient construction recip
 
 ### Read-back rule
 
-「order」, 「初心 / original intention」, 「good」, and 「global convergence」 may exist as **L₁/P2 read-back, regulative language, or domain bridge** — but may not back-define L₀.
+「order」, 「初心 / original intention」, 「good」, and situated convergence／direction language may exist as **L₁/P2 read-back, regulative language, or domain bridge** — but may not back-define L₀. **B-A（2026-08-12）进一步关闭 Gate B**：当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 重新命名为该前身；`ε_pg` 保持其既有无内容结构角色，初心从 L₁ 回读开始。
+
+### C-A — `global optimum` scope discipline
+
+> **Status**: author-decided and landed 2026-08-12. Adjudication／floor record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`.
+
+C-A adds no L₀ object and no symbol. It separates four objects that previously shared one name:
+
+1. A **universe-wide semantic／evaluative optimum** is not a current positive SRT object. It may remain only as historical provenance, quotation, or an explicitly unestablished high-commitment worldview claim; it may not carry canonical proof load.
+2. An **operator-relative reachable optimum** is admissible only as a situated P2/P3 object with the finite position, reachable／admissible domain, comparison rule, horizon, constraints, and relevant failure conditions stated.
+3. A **regulative horizon** is non-attainable L₁/P2 or P5 orientation language. It is not a formula endpoint, achieved state, or L₀ object.
+4. A **closure／model attractor** is a P3/P4 object of a named finite dynamics. Stability, low friction, or reachability does not by itself make it optimal, good, or generatively healthy.
+
+Technical uses of “global optimum” inside a fully declared optimization problem remain allowed; C-A blocks the slide from **model-global** to **universe-global／normatively complete**. `d ↑` alone entails neither a reachable optimum nor Shoshin alignment. The separate Core／Spirituality `Ψ_f → 0` valence question remains open under the CΨ author gate and is not decided by C-A.
 
 **"Back-define" includes the indirect route**: a canonical anchor may not import an L₀-level reading of these terms by cross-referencing a `canonical: false` bridge or translation file. **Direction of citation is part of this rule**, not a separate courtesy.
 
 ### What Gate 0 does not do
 
-It does not decide Gate A, Gate B, or Gate C (`Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`) — it bounds their option spaces. It does not resolve `κ₀`'s ontological status, and is neutral across the positions in `Philosophy/SRT_L0_Ontological_Status.md`, because it constrains *content*, not *mode of existence*. It introduces no symbol.
+Gate 0 本身没有裁决 Gate A、Gate B 或 Gate C（`Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`），只约束了它们的选项空间。后续作者裁决已分别以 EX-A 关闭 Gate A、以 B-A 关闭 Gate B、以 C-A 关闭 Gate C；`Core/SRT_OPEN_TENSIONS.md §18` 的 CΨ 仍为独立开放作者门。Gate 0 不解决 `κ₀` 的本体论地位，并对 `Philosophy/SRT_L0_Ontological_Status.md` 中各立场保持中立，因为它约束的是 *content*，不是 *mode of existence*。它不引入符号。
 
 ---
 

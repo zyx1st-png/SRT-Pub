@@ -34,10 +34,8 @@ $$ \forall \varphi \in \mathcal{M}_{spirit}, \exists \mathcal{A} \subset \{A1\ld
 * **Implication**: 本模块的命题必须尽量回链 Core_Law；不能回链者只能保留为 hypothesis / bridge / praxis exposition，禁止引入不可证约束并伪装成 core axiom。
 
 ### H-Spirit-1: The Source (本源)
-**Domain Mapping (not canonical definition)**: The Divine is read as an unconditioned-selection asymptote over the absolute latent-domain language.
-$$ \Omega \equiv \lim_{\|\theta\|\to\infty}\hat{G}_\theta $$
-$$ \text{God}^{mapping} \sim \Omega \sim L_0^{abs} $$
-* **Implication**: “神”不是对象域内实体，而是选择过程的极限结构。
+**P3/P5 Domain Mapping (not canonical definition)**: The Divine may be read through a non-instantiable source-horizon metaphor associated with the formal limit language $\|\theta\|\to\infty$ for $\hat G_\theta$. C-A assigns no symbol to this horizon and does not identify it with `L_0`, an effective operator, or a universe-wide optimum.
+* **Implication**: “神”在本文件中是有限表征边界的神学映射，不是对象域实体或 canonical 定义。
 
 ### H-Spirit-2: Sin/Dukkha (罪/苦) (原文命名，对应 _SRT_Spirit_Axioms 中 H-Spirit-3)
 **Formal Definition**: Suffering is the contraction of $d$ and the amplification of ontological friction.
@@ -845,7 +843,7 @@ SRT_Spirit_01_Religion_Ontology (本文件)
 
 ### Mechanism Explanation (机制解释)
 
-- `\hat{G}_\theta` 在不同传统中可作为映射接口（佛教→空性≈`L_0` language，吠檀多→梵≈`Ω` language，基督教→三位一体≈`\hat{G}` 的三操作模式 language），但这些是 comparative theology mappings，不是 canonical identity。
+- `\hat{G}_\theta` 在不同传统中可作为映射接口（佛教→空性≈`L_0` language，吠檀多→梵≈规约性本源地平线 language，基督教→三位一体≈`\hat{G}` 的三操作模式 language），但这些是 comparative theology mappings，不是 canonical identity。
 - `Ψ_f` 在本文仅作为 spirituality-domain proxy / burden language 使用：`d` 收缩可能伴随 `Ψ_f^{spirit-proxy}` 升高，`d` 扩展可能伴随防御性维护负担下降；它不定义 canonical `Ψ_f`，也不保证修行总是降低负担。
 - 宗教体验的机制是 $L_2$ 约束松弛（$\|\nabla C_{L_2}\| \to 0$）使 $\hat{G}_\theta$ 直接访问 $L_0$，而非超自然实体介入。
 - 跨传统差异映射为 $L_2^{cultural}$ 的编码差异（Level 3），而 Level 1（本体结构）和 Level 2（救赎机制）保持同构。

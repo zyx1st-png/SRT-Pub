@@ -8,12 +8,20 @@ epistemic_layer: os
 claim_mode: historical_record
 canonical: false
 dependency: [_SRT_INDEX]
-updated: 2026-06-05
+updated: 2026-08-12
 ---
 
 # SRT 变更日志（2026）
 
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`_SRT_CHANGELOG_2026_Split/README.md`](_SRT_CHANGELOG_2026_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new governance authority.
+
+## 2026-08-12 C-A global optimum 四义拆分
+
+作者选择 C-A：当前位置无关、宇宙尺度、带语义／评价内容的 global optimum 不再是当前正面理论对象；finite reachable optimum 只在写齐算子／位置、可达域、比较规则、时域与约束后成立，regulative horizon 与 finite-model attractor 分别保持为方向语言和 P3/P4 动力学对象。`d↑` 不推出同一最优或初心对齐；技术性 model-global optimization 保留。bare `Ω` 继续只表示 Ontological Consistency，旧“全局算子／投影源”别名撤回。CΨ 的绝对 `Ψ_f→0` 价态与 `κ_0 / ε_pg` 依赖未裁决。记录：`Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`。
+
+## 2026-08-12 B-A 初心严格分层
+
+作者选择 B-A：当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身；初心从 L₁/P2 处境化回读或 P5 现象学命名开始。former `T-L0-Heart` 的 theorem 身份与 L₀ 梯度身份式撤回；Physics／Spirituality 的 `argmin`、`∇F`、长时域与全局收敛形式仅保留为 P3/P4 bridge／proxy。Gate C 后由 C-A 独立关闭；`κ_0 / ε_pg` 依赖未处理。裁决／地板记录：`Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`。
 
 ## 2026-07-20 治理减负轮（Governance Load Reduction）
 
