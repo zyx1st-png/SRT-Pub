@@ -35,24 +35,24 @@ canonical: false
 | urgent | 125.9 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
 | urgent | 117.8 KiB | `Experiments/choicemap_explicit_scaffolding/outputs/confirmatory/processed/seed_level_metrics.csv` | - |
 | urgent | 113.7 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
-| urgent | 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
-| urgent | 100.4 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
+| urgent | 110.6 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
+| urgent | 100.6 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | action | 96.0 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
 | action | 94.2 KiB | `Experiments/stake_future_selectability_mvp/outputs/formal/processed/preC_features.json` | - |
 | action | 94.1 KiB | `Philosophy/Papers/Forcing_CH_Evidence/D05b_Forcing_Representation_and_Method_Family_Audit.md` | missing_or_not_needed |
-| action | 91.0 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
-| action | 89.3 KiB | `SRT_Glossary.md` | Glossary/README.md |
-| action | 84.0 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |
+| action | 91.3 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
+| action | 89.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | action | 82.7 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
+| action | 82.6 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |
+| action | 82.5 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
 | action | 82.4 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
-| action | 81.8 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
-| action | 80.9 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
+| action | 82.1 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
 | action | 77.2 KiB | `Core/SRT_Core_12b_Ontology_L2.md` | Core/Ontology_L2_Split |
 | action | 76.7 KiB | `Core/SRT_Core_01_Axioms.md` | Core/Axioms_Split |
 | action | 74.9 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
 | action | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
 | action | 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
-| action | 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
+| action | 70.4 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
 | warning | 66.9 KiB | `Philosophy/Papers/Forcing_CH_Research_Regime_Staged_Draft_EN.md` | missing_or_not_needed |
 | warning | 66.2 KiB | `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Core_Law/Collective_Tower_Hardening_Notes_Split |
 | warning | 65.2 KiB | `Core/SRT_Core_22_Equations.md` | Core/Equations_Split |
@@ -67,12 +67,12 @@ canonical: false
 | warning | 57.2 KiB | `Experiments/stake_future_selectability_mvp/outputs/formal/processed/C_outcomes.json` | - |
 | warning | 57.0 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism_Submission_EN.md` | missing_or_not_needed |
 | warning | 56.9 KiB | `Philosophy/SRT_Social_Cognition.md` | Philosophy/Social_Cognition_Split |
-| warning | 56.5 KiB | `Philosophy/SRT_SocTheory_06_L2_Dynamics.md` | Philosophy/L2_Dynamics_Split |
-| warning | 56.3 KiB | `Core/SRT_Core_12a_Ontology_L0L1.md` | Core/Ontology_L0L1_Split |
+| warning | 56.9 KiB | `Core/SRT_Core_12a_Ontology_L0L1.md` | Core/Ontology_L0L1_Split |
+| warning | 56.6 KiB | `Philosophy/SRT_SocTheory_06_L2_Dynamics.md` | Philosophy/L2_Dynamics_Split |
 | warning | 56.1 KiB | `Physics/SRT_Quant_01_Selection.md` | Physics/Selection_Split |
 | warning | 54.6 KiB | `Experiments/selective_resynchronization_mvp/outputs/processed/phase_summary.csv` | - |
-| warning | 53.6 KiB | `Core_Law/SRT_Reference_Dynamics.md` | Core_Law/Reference_Dynamics_Split |
-| warning | 51.0 KiB | `_SRT_D_VALUE_CANONICAL.md` | missing_or_not_needed |
+| warning | 54.1 KiB | `Core_Law/SRT_Reference_Dynamics.md` | Core_Law/Reference_Dynamics_Split |
+| warning | 52.1 KiB | `_SRT_D_VALUE_CANONICAL.md` | missing_or_not_needed |
 | warning | 50.9 KiB | `AI/Ontology_Annex/00_General_Boundary_Block.md` | AI/Ontology_Annex/General_Boundary_Block_Split |
 | warning | 50.7 KiB | `Physics/SRT_Quant_02_Cosmology.md` | Physics/Quant_02_Cosmology_Split |
 | warning | 50.6 KiB | `AI/SRT_AI_Architecture.md` | AI/Architecture_Split |
@@ -87,12 +87,12 @@ canonical: false
 | urgent | 3127.9 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.pdf` | artifact/generated; do not use as primary connector read path |
 | urgent | 2460.1 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.docx` | artifact/generated; do not use as primary connector read path |
 | urgent | 1070.7 KiB | `papers/CostlySelectiveClosure_AdaptiveBehavior_submission.docx` | artifact/generated; do not use as primary connector read path |
-| urgent | 424.8 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 430.9 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_SPINE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 363.1 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 336.4 KiB | `papers/costly_selective_closure_supplement/figures/figure3_results.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 277.3 KiB | `Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 267.5 KiB | `Archive/root_misc/Pasted image 20260306100654.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 209.7 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 210.3 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 181.2 KiB | `papers/costly_selective_closure_supplement/figures/figure1_framework.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 160.6 KiB | `Operations/Audits/data/srt_material_assimilation_delta_2026-08-11.csv` | artifact/generated; do not use as primary connector read path |
 | urgent | 142.4 KiB | `papers/costly_selective_closure_supplement/figures/figure2_design.png` | artifact/generated; do not use as primary connector read path |
@@ -103,9 +103,9 @@ canonical: false
 | urgent | 111.4 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 108.2 KiB | `Archive/raw_sessions/SRT_SESSION_RAW_TRANSCRIPT_2026-03-31.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 107.2 KiB | `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
-| urgent | 105.4 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 105.9 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 103.0 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 102.7 KiB | `Archive/root_misc/Selection-Reality Theory (SRT).pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 101.5 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | artifact/generated; do not use as primary connector read path |
 | action | 91.1 KiB | `papers/ontological_friction/paper_ontological_friction_zh.html` | artifact/generated; do not use as primary connector read path |
 | action | 87.9 KiB | `papers/ontological_friction/paper_ontological_friction.md` | artifact/generated; do not use as primary connector read path |
 | action | 87.9 KiB | `papers/ontological_friction/paper_ontological_friction_preprint.md` | artifact/generated; do not use as primary connector read path |
@@ -113,8 +113,8 @@ canonical: false
 | action | 81.7 KiB | `papers/costly_selective_closure_supplement/figures/figure3_results.svg` | artifact/generated; do not use as primary connector read path |
 | action | 81.7 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | artifact/generated; do not use as primary connector read path |
 | action | 80.4 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.pdf` | artifact/generated; do not use as primary connector read path |
+| action | 75.4 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | artifact/generated; do not use as primary connector read path |
 | action | 75.1 KiB | `papers/CostlySelectiveClosure_AdaptiveBehavior_submission.tex` | artifact/generated; do not use as primary connector read path |
-| action | 73.4 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | artifact/generated; do not use as primary connector read path |
 | action | 69.2 KiB | `papers/history_dependent_reachability/manuscript/MANUSCRIPT.md` | artifact/generated; do not use as primary connector read path |
 | action | 69.0 KiB | `papers/costly_selective_closure_supplement/figures/figure4_common_state_probe.svg` | artifact/generated; do not use as primary connector read path |
 | warning | 67.6 KiB | `papers/ontological_friction/paper_ontological_friction_zh.md` | artifact/generated; do not use as primary connector read path |
@@ -185,20 +185,20 @@ canonical: false
 | 131.9 KiB | `01_Source_Intuition/BOOK/External_Theory_Notes/BARAD_SRT_ALIGNMENT_AND_INSERTION_MAP_2026-06-10.md` | missing_or_not_needed |
 | 125.9 KiB | `01_Source_Intuition/BOOK/BOOK_PROBLEM_CHAIN_REWRITE_2026-05-21.md` | missing_or_not_needed |
 | 113.7 KiB | `Neuroscience/SRT_Neural_Mechanisms.md` | Neuroscience/Neural_Mechanisms_Split |
-| 110.3 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
-| 100.4 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
+| 110.6 KiB | `Philosophy/SRT_Philosophy_Ethics.md` | Philosophy/Ethics_Split |
+| 100.6 KiB | `Core/SRT_Core_14_Dynamics_Scaling.md` | Core/Dynamics_Scaling_Split |
 | 96.0 KiB | `01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md` | missing_or_not_needed |
 | 94.1 KiB | `Philosophy/Papers/Forcing_CH_Evidence/D05b_Forcing_Representation_and_Method_Family_Audit.md` | missing_or_not_needed |
-| 91.0 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
-| 89.3 KiB | `SRT_Glossary.md` | Glossary/README.md |
-| 84.0 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |
+| 91.3 KiB | `Physics/SRT_Physics_Cosmology.md` | Physics/Cosmology_Split |
+| 89.7 KiB | `SRT_Glossary.md` | Glossary/README.md |
 | 82.7 KiB | `Philosophy/SRT_Philosophy_Foundations.md` | Philosophy/Foundations_Split |
+| 82.6 KiB | `Core/SRT_OPEN_TENSIONS.md` | missing_or_not_needed |
+| 82.5 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
 | 82.4 KiB | `AI/SRT_AI_01_Ontology.md` | AI/Ontology_Split |
-| 81.8 KiB | `Core/SRT_Core_13a_Operator_Basics.md` | Core/Operator_Basics_Split |
-| 80.9 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
+| 82.1 KiB | `Governance/_SRT_CHANGELOG_2026.md` | Governance/_SRT_CHANGELOG_2026_Split |
 | 77.2 KiB | `Core/SRT_Core_12b_Ontology_L2.md` | Core/Ontology_L2_Split |
 | 76.7 KiB | `Core/SRT_Core_01_Axioms.md` | Core/Axioms_Split |
 | 74.9 KiB | `AI/SRT_AI_03_Consciousness_Framework.md` | AI/Consciousness_Framework_Split |
 | 74.0 KiB | `SRT/未命名 1.md` | SRT/未命名 1_Split |
 | 72.8 KiB | `Philosophy/Papers/Before_Objects_Selection_Realism.md` | missing_or_not_needed |
-| 70.2 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
+| 70.4 KiB | `Philosophy/SRT_Social_Economics.md` | Philosophy/Social_Economics_Split |
