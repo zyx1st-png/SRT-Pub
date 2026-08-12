@@ -135,7 +135,11 @@ On the two existing formulations: `Def-Apeiron-1` and `Ax-Sho-1` **do not qualif
 **Against.**
 
 - Physics/Spirituality variational forms become *purely* bridge — some may feel that under-describes a claim they take to be structural.
-- It leaves the read-back asymmetry unexplained at `L_0`: if L₁ reliably reads back a direction, one may want an `L_0` story for *why that read-back is stable*. Option A's answer is that `ε_pg` plus the amplification conditions already supply it, and no further object is needed.
+- It leaves the read-back asymmetry unexplained at `L_0`: if L₁ reliably reads back a direction, one may want an `L_0` story for *why that read-back is stable*.
+
+  **Option A does not claim that `ε_pg` plus the amplification conditions already establish the stability of the read-back.** Its narrower claim is that **the current core has not established an explanatory gap that requires an additional `L_0` object**. If such a gap is later demonstrated, §16 should reopen (§9).
+
+  The distinction is load-bearing: **absence of a demonstrated explanatory gap ≠ completed explanation by existing mechanisms.** Option A rests on the first, and asserts nothing about the hardness of `ε_pg` or of the amplification conditions — post-ST-A that hardness is itself not claimed (§0.2).
 
 ---
 
@@ -173,8 +177,8 @@ Admit exactly one additional class-A object `π₀`, deliberately **not** called
 | Consistency with current canonical | **already the stated position** (L0 anchor ×3, post-#784 第一命题) | requires a new class-A admission |
 | Class-A admission status | n/a — posits nothing | **no qualifying candidate currently specified** (§5.1) |
 | Post-ST-A motivation | **strengthened** — the directional work is not claimed | **weakened** — one motivating inference was withdrawn (not refuted in principle) |
-| New commitments | 0 | 1 object + 1 enforcement surface |
-| Blast radius | none (already landed) | symbol table, L0 anchor, claim ladder §0A class-A list |
+| Ontological commitment delta | **0** — adds no `L_0` object | **+1** object + 1 enforcement surface |
+| Landing blast radius | **minimal but non-zero** — §16 ledger update + one freeze-Group-A clarification in the 初心 词条; no new symbol, no domain edit | symbol table, L0 anchor, claim ladder §0A class-A list |
 | Existing formulations as bare-`L_0` candidates | n/a | neither `Ax-Sho-1` nor `Def-Apeiron-1` qualifies (content / reference commitments, **not** variational syntax) |
 | Effect on Physics / Spirituality | none (bridge status already correct) | would upgrade their referent — the only real gain |
 
@@ -189,7 +193,7 @@ Admit exactly one additional class-A object `π₀`, deliberately **not** called
 Three things jointly favour A — none of them a proof of impossibility:
 
 1. **Minimum ontological commitment.** Adding an `L_0` object is a real commitment; the default is not to add one absent warrant.
-2. **Absence of an explanatory gap.** Nothing currently in the corpus needs a precursor to state what it states — and post-ST-A the directional work it was imagined to underwrite is not claimed (§0.2).
+2. **Absence of a *demonstrated* explanatory gap.** Nothing currently in the corpus needs a precursor to state what it states — and post-ST-A the directional work it was imagined to underwrite is not claimed (§0.2). This is **not** the claim that existing mechanisms already complete the explanation (§4); it is the claim that no gap requiring an additional `L_0` object has been demonstrated.
 3. **Absence of a T5-passing candidate.** None is presently specified (§5.1).
 
 This is deliberately **weaker** than the argument an earlier draft of this packet made. That draft claimed T1–T4 leave "no room" for a third object and that Gate B therefore "decides itself." That over-reaches: Gate 0 states class A is **open, not closed**, so the admission test cannot establish that no distinct precursor could ever exist. §16 can close on the current candidate set **without** upgrading "no qualifying candidate today" into "no candidate is logically possible."
