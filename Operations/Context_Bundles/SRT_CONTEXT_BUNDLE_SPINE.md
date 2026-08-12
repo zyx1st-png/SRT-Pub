@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: c2f6a7a0
-source_branch: main
-source_dirty: true
+source_commit: 8c94d0db
+source_branch: codex/b-a-c-a-nb1-sync-2026-08-12
+source_dirty: false
 inputs_digest: b0c5a7c951a2ab0c
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: b0c5a7c951a2ab0c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `c2f6a7a0` |
-| 来源分支 | `main` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `8c94d0db` |
+| 来源分支 | `codex/b-a-c-a-nb1-sync-2026-08-12` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -45,7 +45,7 @@ inputs_digest: b0c5a7c951a2ab0c
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-08-12 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-08-12 |
-| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-11 |
+| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-12 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-12 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-12 |
@@ -1018,7 +1018,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-11 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 

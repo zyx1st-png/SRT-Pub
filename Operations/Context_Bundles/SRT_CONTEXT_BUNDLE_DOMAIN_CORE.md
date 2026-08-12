@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: c2f6a7a0
-source_branch: main
-source_dirty: true
+source_commit: 8c94d0db
+source_branch: codex/b-a-c-a-nb1-sync-2026-08-12
+source_dirty: false
 inputs_digest: b0c5a7c951a2ab0c
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: b0c5a7c951a2ab0c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `c2f6a7a0` |
-| 来源分支 | `main` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `8c94d0db` |
+| 来源分支 | `codex/b-a-c-a-nb1-sync-2026-08-12` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

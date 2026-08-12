@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: c2f6a7a0
-source_branch: main
-source_dirty: true
+source_commit: 8c94d0db
+source_branch: codex/b-a-c-a-nb1-sync-2026-08-12
+source_dirty: false
 inputs_digest: b0c5a7c951a2ab0c
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: b0c5a7c951a2ab0c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `c2f6a7a0` |
-| 来源分支 | `main` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `8c94d0db` |
+| 来源分支 | `codex/b-a-c-a-nb1-sync-2026-08-12` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,7 +43,7 @@ inputs_digest: b0c5a7c951a2ab0c
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-08-08 |
+| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-08-12 |
 | 2 | `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | 2026-04-27 |
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-05-17 |
 | 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
@@ -446,7 +446,7 @@ When answering about SRT:
 | epistemic_layer | governance |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-08 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

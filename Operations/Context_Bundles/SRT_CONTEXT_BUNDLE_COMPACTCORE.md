@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: c2f6a7a0
-source_branch: main
-source_dirty: true
+source_commit: 8c94d0db
+source_branch: codex/b-a-c-a-nb1-sync-2026-08-12
+source_dirty: false
 inputs_digest: b0c5a7c951a2ab0c
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: b0c5a7c951a2ab0c
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `c2f6a7a0` |
-| 来源分支 | `main` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `8c94d0db` |
+| 来源分支 | `codex/b-a-c-a-nb1-sync-2026-08-12` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -51,7 +51,7 @@ inputs_digest: b0c5a7c951a2ab0c
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
 | 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-04-29 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
-| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-04-29 |
+| 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
 | 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
@@ -59,7 +59,7 @@ inputs_digest: b0c5a7c951a2ab0c
 | 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-12 |
 | 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
-| 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-04-23 |
+| 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-08-12 |
 | 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-08-12 |
 | 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-08 |
 
@@ -2427,7 +2427,7 @@ SRT 的回答是：
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -4919,7 +4919,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-04-23 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
