@@ -67,7 +67,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 
 ### 4c. Core Open Tensions
 - 主文件：`Core/SRT_OPEN_TENSIONS.md`
-- 说明：记录当前未完全封口的 core pressure points
+- 说明：记录当前未完全封口的 core pressure points，并保留已关闭作者 gate 的审计尾迹；§16 已由 **B-A（2026-08-12）**关闭：无独立 L₀「初心前身」，`ε_pg` 不改名，初心从 L₁/P2／P5 开始，领域公式只作 bridge／proxy；§17 已由 **C-A（2026-08-12）**关闭：撤回位置无关的宇宙级评价性 global optimum，仅保留具名有限模型中的技术性最优，并把 regulative horizon 与 closure／model attractor 分开；§18 的 **CΨ** 价态裁决继续开放
 - 引用规则：凡涉及其中 tension，不得包装成已完成 P0/P1
 
 ### 4d. Cross-Domain Usage Matrix
@@ -85,7 +85,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 ### 5b. Claim Ladder
 - 文件：`Governance/SRT_CLAIM_LADDER.md`
 - 角色：定义 P0-P5 命题级硬度，防止 bridge / lab / companion 命题伪装成 primitive axiom 或 constitutive theorem；**§0A 另载 Gate 0 — L₀ 无内容结构性边界**（2026-08-11 采纳），规定何种**类型**的对象可进入裸 `L_0`——规则内容、对象分类与准入／回读条件一律以该节为准，本注册表不复述
-- 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针
+- 注意：它是治理机制，不新增理论命题。**Gate 0 无 P-level**（类型规则，非命题），单一主 authority 是 `Governance/SRT_CLAIM_LADDER.md §0A`，`_SRT_SYMBOL_TABLE.md` Usage Rule 16 仅为导航指针。B-A 的术语 owner 是 `Core_Law/SRT_L0_Metaphysics.md` 初心词条；C-A 的 scope owner 是 `_SRT_D_VALUE_CANONICAL.md §5b` 与 Claim Ladder §0A。Symbol Table Rules 17／18 只登记 no-new-symbol／no-alias 与作用域护栏；CΨ 仍开放
 
 ### 5c. Claim-Mode Audit
 - 文件：`Governance/SRT_CLAIM_MODE_AUDIT.md`

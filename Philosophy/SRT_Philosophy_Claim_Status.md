@@ -9,7 +9,7 @@ claim_mode: audit
 canonical: false
 claim_level: P2-P5
 dependency: [SRT-CLAIM-LADDER, SRT-PHILOSOPHY-MACHINE-INDEX, SRT-PHIL-AXIOMS-PH-SS-GUARDRAILS-2026-04-27, SRT-ETHICS-PH-SS-GUARDRAILS-2026-04-27, SRT-SOCIAL-POLITICAL-PH-SS-GUARDRAILS-2026-04-27, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-T-DIR-CANONICAL]
-updated: 2026-08-08
+updated: 2026-08-12
 ---
 
 # SRT Philosophy / Ethics Claim Status
@@ -33,6 +33,8 @@ Forbidden:
 > Philosophy files must not silently define `d-value`, `Ψ_f`, `T_dir`, `L_0/L_1/L_2`, `Ĝ_θ`, consciousness, moral legitimacy, truth, freedom, love, grief, social ontology, political authority, or institutional legitimacy as SRT primitives.
 
 If a phrase sounds like a final metaphysical slogan, attach its layer, formula role, and failure condition.
+
+**C-A scope guard（2026-08-12）**: philosophy／ethics files may use a technical model-global optimum only inside a fully specified optimization problem. They must not infer a universe-wide moral optimum from `d↑`, call a stable attractor good, or treat `Ψ_f^{global}` as a canonical cross-person total. Cross-window ethical comparisons must state bearer scope, horizon, constraints, aggregation／ordering rule and failure conditions. CΨ remains separate and open.
 
 ---
 

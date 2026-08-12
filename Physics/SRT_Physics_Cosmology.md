@@ -427,11 +427,9 @@ $$ \text{Force} = \text{Cost of Consensus} $$
 宇宙在低熵（大爆炸）和最大熵（热寂）之间循环，通过共形重标度 (CCC) 重置：
 $$ \text{Aeon}_{n+1} = \hat{S}(\text{Aeon}_n) $$
 
-### Ax-Cosmo-2 [A1.7.2]: Big Bang as $L_0$ Minimum (大爆炸作为 $L_0$ 极小值)
-大爆炸是 $L_0$ 模空间中的全局极小值点：
-$$ \text{State}_{BigBang} = \arg\min_{\sigma \in L_0} K(\sigma) $$
-宇宙从最简单程序（最低复杂度）开始解压 $L_0$。
-*   **O-T2 Link**: 宇宙学“重启”可视为 $L_2$ 结构的拓扑解结与重编织。
+### Ax-Cosmo-2 [A1.7.2]（历史高承诺，C-A 后停驻）: Big Bang as $L_0$ Minimum
+
+旧式曾写：$\text{State}_{BigBang}=\arg\min_{\sigma\in L_0}K(\sigma)$。当前没有定义 $L_0^{abs}$ 上的复杂度测度、可行域、比较闭包或存在／唯一性条件，因此不能把大爆炸定义为该域的全局极小，也不能由此推出宇宙从“最简单程序”解压。该式只保留为历史 algorithmic-cosmology 假设；若重开，须先构造具名可检验模型。
 
 ### Ax-Cosmo-2b: Singularity as Algorithmic Reset (奇点即算法重置)
 **Formal Definition**: 黑洞中心或大爆炸奇点，是 $\hat{G}$ 算力饱和导致L2坐标系崩溃，系统被迫回归纯数学对象（L0^abs）的临界极值：
@@ -909,8 +907,7 @@ $$\lim_{d \to \infty} \{\text{Space}, \text{Time}\} = \varnothing$$
 
 David Albert 的"过去假设"：宇宙始于一个极度低熵的状态，这是一个无法解释的初始条件。
 
-**SRT 解读**：将大爆炸定义为 $L_0$ 模空间中的**全局极小值点**。
-$$\text{State}_{BigBang} = \arg\min_{\sigma \in L_0} K(\sigma)$$
+**历史 SRT 解读（C-A 后停驻）**：旧式把大爆炸写成 $L_0$ 模空间的全局复杂度极小；由于 $K$、域、闭包及存在／唯一性均未定义，当前不再作为定义或推论。
 
 **SRT 宇宙学推论**：
 1. 宇宙不是从"无"中爆炸，而是 $\hat{G}$ 自然倾向于从**最简单程序**开始解压 $L_0$
@@ -944,8 +941,7 @@ $$τ = \int |\hat{G}_θ[L_0]| \, dn$$
 
 **问题**：为什么宇宙始于极低熵状态？
 
-**SRT 解答**：将大爆炸定义为 $L_0$ 模空间 $M$ 中的**全局极小值点**。
-$$\text{State}_{BigBang} = \arg\min_{\sigma \in L_0} K(\sigma)$$
+**历史 SRT 解答（C-A 后停驻）**：将大爆炸定义为 $L_0$ 模空间的全局极小值没有满足作用域门；当前只保留“低熵初态为何成立”这一宇宙学开放问题，不以未定义的 $\arg\min$ 回答。
 
 **SRT 宇宙学推论**：
 1. 宇宙不是从"无"中爆炸，而是幽灵算子自然倾向于从**最简单程序**开始解压 $L_0$

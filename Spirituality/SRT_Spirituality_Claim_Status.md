@@ -23,6 +23,8 @@ dependency: [SRT-CLAIM-LADDER, SRT-SPIRITUALITY-COMPACT-REGISTRY, SRT-CORE-21, S
 
 Spirituality files may translate SRT into religious, contemplative, therapeutic, and everyday-practice language. They must not be read as primitive ontology.
 
+**B-A／C-A guard（2026-08-12）**：初心从 L₁ 开始，作为 P2 处境化解释回读或 P5 现象学命名；当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身。Spirituality 中的 `∇F` 形式仅在声明有限位置、可达域、比较规则、时域与约束的模型内作为 P3/P4 bridge／proxy；不定义 L₀、无限时域终点或 universe-wide optimum。C-A 不裁决 CΨ 的 `Ψ_f → 0` 价态问题。
+
 Allowed:
 
 > Spirituality language can serve as bridge, companion exposition, praxis support, or metaphorical orientation.
@@ -35,11 +37,11 @@ Forbidden:
 
 ## 2. High-risk claim classes
 
-### 2.1 God / Ω / divine / source language
+### 2.1 God / divine / source-horizon language
 
 **Allowed precise claim**:
 
-> `Ω`, `God`, `Divine`, `Source`, `Tao`, `Brahman`, and related terms are spirituality-domain mappings or regulative asymptotes used to orient finite practice and anti-idolatry boundaries.
+> `God`, `Divine`, `Source`, `Tao`, `Brahman`, and related terms are spirituality-domain mappings or regulative source-horizon language used to orient finite practice and anti-idolatry boundaries. C-A assigns no theory symbol to that horizon; bare `Ω` remains canonical Ontological Consistency.
 
 **Status**: P5 companion / P3 bridge, not P0/P1.
 
@@ -49,7 +51,7 @@ Forbidden:
 
 > SRT proves omniscience, omnipotence, omnibenevolence, divine presence, salvation, or any theological doctrine.
 
-**Guardrail**: `Ω` is a boundary / asymptotic marker. No finite practitioner, teacher, community, experience, tradition, or text may claim to instantiate or fully represent it.
+**Guardrail**: The source horizon is non-attainable praxis language, not an operator or optimum. No finite practitioner, teacher, community, experience, tradition, or text may claim to instantiate or fully represent it.
 
 ### 2.2 `d -> infinity`, liberation, nirvana, awakening
 
@@ -123,7 +125,7 @@ Forbidden:
 
 | Risk phrase | Problem | Safer replacement |
 |---|---|---|
-| “God is `L_0` / `Ĝ` / Ω” | Theological metaphor treated as ontology | “God/Ω is a spirituality-domain asymptotic mapping for total-source language, not a canonical definition.” |
+| “God is `L_0` / `Ĝ` / Ω” | Theological metaphor treated as ontology; `Ω` also collides with Ontological Consistency | “God/source-horizon language is a spirituality-domain regulative mapping, not a canonical definition or symbol.” |
 | “all-knowing / God’s view” | Infinite viewpoint overclaim | “de-parameterized or asymptotic regulative limit; finite systems cannot occupy it.” |
 | “`d -> infinity`” | Actual infinite attainment | “directional shorthand for wider consequence-bearing; finite claims require proxies.” |
 | “suffering is `Ψ_f`” | Subjective pain / moral language collapsed into canonical symbol | “suffering may be modeled through `Ψ_f`-related burden proxies under specified conditions.” |

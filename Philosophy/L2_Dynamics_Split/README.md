@@ -14,8 +14,8 @@ dependency: [SRT-PHILOSOPHY-CLAIM-STATUS, SRT-SOC-THEORY-06]
 
 > **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical/ethics/political/social-theory 句式必须回读 `../SRT_Philosophy_Claim_Status.md` 与相关 PH-SS guardrails。
 - 原始总文（保留，不删内容）：[`../SRT_SocTheory_06_L2_Dynamics.md`](../SRT_SocTheory_06_L2_Dynamics.md)
-- Source owner bytes: `57816`
-- Source owner SHA-256: `ad5e441999f56b7d6054695275f399837e10dadec0e1de4b247c3c8229ed4d33`
+- Source owner bytes: `57926`
+- Source owner SHA-256: `2e0b36607286625a704df301418abc9c4f44c195eb8f37d9aa30ab1c352d943c`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

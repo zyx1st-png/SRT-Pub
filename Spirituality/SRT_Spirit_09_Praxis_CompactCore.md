@@ -53,7 +53,7 @@ T(d)=
 压缩解释：
 - `d` 扩展
 - 旧 `L_2` 僵硬度下降
-- 自身方向与全局自由能下降方向更一致
+- 自身方向与具名有限模型的比较方向更一致
 
 这三件事一起，才叫“进化”。
 
@@ -63,13 +63,13 @@ T(d)=
 
 ### 3.1 Shoshin Alignment
 \[
-\text{Shoshin}=\cos\angle(\vec v_{self},-\nabla F_{global})
+\text{Shoshin}^{proxy}_{\theta,\tau,K}=\cos\angle(\vec v_{self},-\nabla F_{\theta,\tau,K}),\qquad \tau<\infty
 \]
 
-> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface and compact default for directional exposition, not a canonical definition of Shoshin or global direction. See `SRT_Spirit_05_Shoshin.md` for metric alternatives and first-person report boundaries.
+> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional interface inside a declared finite model, not a canonical definition of Shoshin, global direction, or universe-wide optimum. See `SRT_Spirit_05_Shoshin.md`.
 
 最短说法：
-> **初心不是抽象美德，而是你当前行动方向与更深层最优方向之间的夹角。**
+> **初心代理不是抽象美德，而是当前行动与一个已声明、可审计的有限比较方向之间的夹角。**
 
 这让“初心”第一次从修辞，变成了：
 - 可比较

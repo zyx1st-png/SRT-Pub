@@ -28,7 +28,7 @@ dependency: [SRT-CANONICAL-REGISTRY]
 
 ### C. Complexity / Ontology Line
 - `SRT_Phys_07_Complex_Systems_CompactCore.md`
-- `SRT_Phys_08_Ontology_Ext_CompactCore.md`
+- `SRT_Phys_08_Ontology_Ext_CompactCore.md` — B-A／C-A: Original Intention variational form is a declared finite L₁/P3 bridge, not an L₀ definition, precursor, infinite-horizon endpoint or universe-wide optimum
 
 ## Recommended Reading Order
 ### 最短主线（第一次进入 Physics）

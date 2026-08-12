@@ -43,11 +43,17 @@ updated: 2026-08-12
 
 > P1-T07 证明审计已于 2026-07-25 随 PR #676 合入 main。2026-08-11 作者选择 ST-A 后，本项作者门已销账：无条件 P1 身份撤销，absorption remainder 留在 21B，neutral-kernel anti-closure 转入 21C B13 的 P2/P3 条件候选。Options A/B/C 仅保留为历史；未来若尝试条件 theorem，仍须选定稳定语义、独立定义 neutral kernel，并证明吸收或比较性 closure-risk bound。
 
-> `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` Gate A 已由 EX-A 销账：manifest actuality、anchoring persistence 与 stable ISP 分层，旧 `E = 1-H(L_1)/H(L_0)` 仅在 21C B14 保留为历史启发式。量化 anchoring readout 不再构成 canonical 待办；只有具名 P3 测量工作线同时给出相对域、分割／sigma-algebra、概率测度、有限性条件与事件／时间窗时，才可复活为模型级候选。Gates B/C 不受此裁决影响。
+> `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` Gate A 已由 EX-A 销账：manifest actuality、anchoring persistence 与 stable ISP 分层，旧 `E = 1-H(L_1)/H(L_0)` 仅在 21C B14 保留为历史启发式。量化 anchoring readout 不再构成 canonical 待办；只有具名 P3 测量工作线同时给出相对域、分割／sigma-algebra、概率测度、有限性条件与事件／时间窗时，才可复活为模型级候选。Gate B 后由 B-A 关闭，Gate C 后由 C-A 关闭。
+
+> 位置无关、宇宙尺度、带语义／评价内容的 `global optimum` 已由 C-A 停驻，不是当前 canonical 待办。只有作者明确重开 C-B，且同一工作线补齐承载对象、跨主体／尺度／时间的聚合或偏序、闭包边界、可支付／可协调／不外包／可再选择冲突规则、存在性／唯一性、有限算子的 epistemic bridge 与失败条件时，才可复活为 L₁+ 作者级承诺；技术性 model-global optimum 不受此停驻影响。CΨ 的 `Ψ_f→0` 价态是独立开放作者门，不以此条替代。
+
+> C-A 同步停驻的具名旧载体包括 `Core_Law/SRT_Reference_Axioms.md A12` 的“同一原初全局算子分化”、`Core_Law/SRT_Reference_Ontology.md O14 / Hyp-O8 / O15` 的全局算子与 L₀ 真善美最优流形、`Core_Law/SRT_Reference_Dynamics.md §8.4` 的 $B_{L_0}$ 至福牵引项，以及 `Core_Law/SRT_Reference_Scaling.md Def-Scale-TEL-1` 把评价性 $d_{pull}$ 加进 canonical `d` 的旧式。它们共享上一条 C-B 复活门；不得以历史编号、glossary 旧别名或 split 镜像绕过。
+
+> `Physics/SRT_Physics_Cosmology.md Ax-Cosmo-2 / §5.1` 的“Big Bang = $\arg\min_{\sigma\in L_0}K(\sigma)$”亦已停驻。只有具名 cosmology workline 给出可观测关联的状态空间、复杂度量、可行域／闭包、存在与唯一性条件、竞争模型和失败测试时，才可作为 P3/P4 技术模型复活；不得恢复为 $L_0^{abs}$ 的无条件定义。
 
 > `Core_14` 的旧跨尺度熵证明与无条件 strict conjugacy 已于 2026-08-12 停驻。它们只有在具名 P3 跨尺度工作线同时声明两侧状态空间、尺度映射、可逆性或近似交换误差界、保留观测量、比较范数、熵变量／测度以及可区分于普通路径依赖／吸引子／粗粒化描述的失败测试时才可复活。否则只使用 P3-B06／T-Scale-02C1 的条件接口。
 
-> 神经除法归一化的“本体必然／能量—信息唯一交点／直接产生行为选择”强式已于 2026-08-12 停驻。只有具名 `P3-Scale-NB1` 实验同时冻结候选身份映射、神经读出、阈值／累积或采样规则、执行门、held-out 分割、误差容差与 rival 集合，并提供神经参数独立估计及干预跟踪时，才可复活为任务局部机制主张；任何局部成功都不复活“所有选择系统必然归一化”或机制同一主张。
+> 神经除法归一化的“本体必然／能量—信息唯一交点／直接产生行为选择”强式已于 2026-08-12 停驻。具名工作线 `NB1-MOFC-Lottery-v0` 已在 `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` 定义，但只到 P4 card-defined 黄灯，尚未通过 formal lock、预注册或执行门。只有该类实验同时冻结候选身份映射、神经读出、阈值／累积或采样规则、执行门、held-out 分割、误差容差与 rival 集合，并提供神经参数独立估计及干预跟踪时，才可复活为任务局部机制主张；任何局部成功都不复活“所有选择系统必然归一化”或机制同一主张。
 
 ## 4. 计划存档（`90_Backstage/Plans_Archive/`）
 

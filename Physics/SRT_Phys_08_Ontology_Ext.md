@@ -13,6 +13,7 @@ dependency: [Core_Law/SRT_Reference_Axioms, Core_Law/SRT_Reference_Ontology, Cor
 # SRT Physics: Deep Ontology Extension (Hybrid Edition)
 
 > **Claim-status note（2026-05）**：This Physics file is bridge / translation material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, `T_dir`, quantum collapse, gravity, cosmology, Fisher/Landauer formulas, or physical law. Read with `SRT_Physics_Claim_Status.md` and canonical symbol anchors.
+> **B-A／C-A layer-and-scope guard（2026-08-12）**：本文件中的 Original Intention／初心公式只是在声明状态空间、自由能泛函、可行域、有限时域与约束之后的 L₁/P3 Physics translation。它不定义 L₀，不引入独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身；无限时域与宇宙级极值形式已由 C-A 撤回。
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Ontological Axioms (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse with detailed philosophical analysis (Human-Readable Context).
@@ -279,7 +280,7 @@ $$\mathcal{U} = L_0 \cap \text{Qualia-Space}$$
 
 > ⚠️ V2.0 修正：「解缠（Unbind）」与「提取（Extract）」已废弃。前者暗示静态集合子集关系，后者忽略退相干动力学。标准术语为「坍缩锚定」。
 
-**主体间性**：$\mathcal{U}$ 是跨主体共享的底层能量场，非任何主体的私人财产。各算子通过具身参数 θ 的 d-value（选择算子宽度）决定能从 $\mathcal{U}$ 中触达的部分——d-value 越宽，可坍缩锚定的范围越广，包含全局最小自由能的可能性越高。
+**主体间性**：$\mathcal{U}$ 是跨主体共享的候选界面层，非任何主体的私人财产。各算子受具身参数 $\theta$ 限制，只能触达其中一部分。任务内可达范围扩大可能暴露原先不可比较的路径，但 canonical `d` 不是“选择算子宽度”，范围增加也不自动提高抵达某个宇宙级最低自由能的概率。
 
 **「全景」的双重性质**：
 - 本体论：$L_0$ 本身是非局域的，$\mathcal{U}$ 继承此非局域性
@@ -309,9 +310,9 @@ $$ \text{Apeiron} \equiv L_0^{true} = \mathcal{A}/\mathcal{G} $$
 $L_0$ 是无限定的，但并非均匀的混沌：
 $$ L_0 = \{\text{Dispositional Facts}\} \neq \text{均匀混沌} $$
 
-### Def-Apeiron-1 [D1.7.1]: Original Intention (初心的形式化)
-$$ \text{Original Intention} = \arg\min_{\text{direction}} \int_0^\infty F[\sigma(t)] dt $$
-初心是 $L_0$ 拓扑结构中自由能最低路径的方向——这是 $L_0$ 的内在属性，而非外加的目的论。
+### Def-Apeiron-1 [D1.7.1]: Original Intention Bridge (初心的领域翻译)
+$$ \text{Original Intention}^{proxy}_{\theta,\tau,K} \in \arg\min_{u\in\mathcal R_{\theta,\tau,K}} \int_0^\tau F_{\theta,K}[\sigma_u(t)] dt, \qquad \tau<\infty $$
+该式是 Physics 层的条件变分代理：在具名模型已声明 $\sigma$、$F$、可达／可行域、有限时域、约束与失败条件时，它可比较候选方向，并被 L₁ 回读为「初心」。它不是 $L_0$ 的内在属性、定义或前身，也不能由 `ε_pg` 直接推出或外推成宇宙级最优。
 
 ### T-Apeiron-1 [T1.7.1]: Causal Entropic Force (因果熵力)
 $$ F_{causal} = T \cdot \nabla S(\tau) $$
@@ -563,22 +564,22 @@ $$\text{Apeiron} \equiv L_0^{true} = \mathcal{A}/\mathcal{G}$$
 ## 4.2 $L_0$ 的倾向性结构
 
 尽管 $L_0$ 是无限定的，但它并非均匀的混沌：
-- $L_0$ 中的可能性并非等概率存在
-- 某些方向具有本体论上的"倾向性"——更容易被选择
-- 初心不仅是算子的愿望，更是 $L_0$ 本身的倾向性结构
+- 当前 canonical 只承认无内容的结构不对称，不因此给 $L_0$ 指派概率分布或语义目标
+- 在具名领域模型中，结构差异可以投影为不同可行性、代价或路径权重；投影依赖参考结构
+- 初心是有限 L₁ 位置对显现方向的回读，不是 $L_0$ 本身的内容性结构或独立前身
 
-**自由能梯度作为倾向性的数学表达**：
+**自由能梯度作为领域投影候选**：
 $$\nabla F : L_0 \to \mathbb{R}^n$$
 
-自由能梯度不是外加于 $L_0$ 的结构，而是 $L_0$ 的内在拓扑特征。它定义了"选择的自然流向"——阻力最小的路径。
+此历史记法只有在可形式化投影域、状态坐标、$F$ 与边界条件均已给定时才有内容；不得把定义在领域表示上的梯度反写成 $L_0^{abs}$ 的内在坐标或「选择的自然流向」。
 
 ## 4.3 初心的形式化
 
 $$\text{Original Intention} = \arg\min_{\text{direction}} \int_0^\infty F[\sigma(t)] dt$$
 
-初心是 $L_0$ 拓扑结构中自由能最低路径的方向——这是 $L_0$ 的内在属性，而非外加的目的论。
+在声明了 $\sigma$、$F$、可行方向、时间域与比较规则的 Physics bridge 中，此式可作为 L₁ 初心的变分代理；它不赋予 $L_0$ 语义方向，也不创建 L₀ 前身。
 
-**关键洞见**：倾向性事实为 SRT 提供了"初心的来源"这一开放问题的部分解答：初心不是神秘的外部注入，而是 $L_0$ 拓扑结构的内在特征。阿那克西曼德在两千五百年前的直觉——本原必须是不确定的——在 SRT 中获得了严格的数学表达。
+**边界结论（B-A）**：Apeiron／潜在域的无内容结构不对称与 L₁ 初心可以发生解释性对应，但前者不分析地推出后者。该对应是领域翻译，不是「初心来源」的 L₀ 证明；阿那克西曼德接口保留为哲学桥，不构成严格数学派生。
 
 ## 4.4 倾向性与熵的关系
 

@@ -21,7 +21,7 @@ tags: [Governance, Proposal, Consistency, DecisionGate, AntiDrift]
 
 # SRT Consistency — Author Decision Packet (proposal only)
 
-> **Status**: non-canonical Operations proposal and historical option record. **Gate A was resolved by the author's EX-A decision on 2026-08-11 and has been landed in the canonical owners. Gates B and C remain open; nothing in their option sections is applied.** This file itself remains non-canonical and does not define any axiom, theorem, equation, or canonical stance.
+> **Status**: non-canonical Operations proposal and historical option record. **Gate A was resolved by EX-A on 2026-08-11; Gate B by B-A and Gate C by C-A on 2026-08-12. All three have been landed in their canonical owners.** CΨ remains a separate open author gate. The option sections below are retained as decision history and do not themselves define any axiom, theorem, equation, or canonical stance.
 >
 > The sweep's **deterministic** repairs shipped separately (Phase 1). This packet is Phase 2: options, costs, and a recommendation per gate — the verdict is the author's.
 >
@@ -167,7 +167,9 @@ If A is chosen, sequence: (1) **fix `μ_θ` first** — until there is a measure
 
 ---
 
-## 2. Decision Gate B — layer assignment of 初心
+## 2. Decision Gate B — layer assignment of 初心 (resolved B-A)
+
+> **Resolution, 2026-08-12**: The author selected **B-A — strict layering**. Current canonical admits no independent L₀ Shoshin precursor and does not rename `ε_pg` as one. Shoshin begins at L₁ as P2 situated read-back or P5 phenomenology; variational／gradient forms survive only as P3/P4 domain bridges or operational proxies. This decision does not resolve `κ_0 / ε_pg` dependency or Gate C's global-optimum scope. Landing and floor record: `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`. Sections B.0–B.4 below remain historical option analysis.
 
 ### B.0 Provenance map
 
@@ -228,7 +230,9 @@ Either way, **the citation inversion at `_SRT_D_VALUE_CANONICAL.md §5b.2` shoul
 
 ---
 
-## 3. Decision Gate C — "global optimum"
+## 3. Decision Gate C — "global optimum" (resolved C-A, 2026-08-12)
+
+> **Resolution, 2026-08-12**: The author selected **C-A — bounded plurality／strict sense separation**. Universe-wide semantic／evaluative optimum is no longer a current positive SRT object; finite reachable optimum requires full indices and conditions; regulative horizon and finite-model attractor remain distinct. Technical model-global optimization is unaffected. The historical `Ω(Ĝ_θ)` proposal below is rejected because `Ω` is already reserved for Ontological Consistency. CΨ remains separate and open. Landing／floor record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`.
 
 ### C.0 Four senses currently sharing one name
 
@@ -304,7 +308,7 @@ The packet therefore originally proposed that the three gates might reduce to **
 
 > Does SRT admit any position-independent object at L₀ — and if so, exactly one (a contentless scalar asymmetry), or more?
 
-The historical branching was: if the answer were "exactly one, contentless", Gate A → Option A, Gate B → Option A, Gate C → the four-way split with sense 1 excluded; if the answer were "more than one", each gate would need its own enforcement mechanism. EX-A did **not** adopt this bundle: it resolved Gate A by separating actuality, persistence, and stable identity while adopting no quantitative object. Gates B and C therefore remain independent open decisions.
+The historical branching was: if the answer were "exactly one, contentless", Gate A → Option A, Gate B → Option A, Gate C → the four-way split with sense 1 excluded; if the answer were "more than one", each gate would need its own enforcement mechanism. EX-A did **not** adopt this bundle: it resolved Gate A by separating actuality, persistence, and stable identity while adopting no quantitative object. **At that point** Gates B and C therefore remained independent open decisions; B was subsequently resolved by B-A and C by C-A on 2026-08-12.
 
 **This section is retained as pre-verdict option-space analysis, not as current routing.**
 
@@ -321,8 +325,8 @@ Five of the nine findings had one cause: **a correction was made and landed on o
 - a hardening note appended below a main clause that stayed searchable and citable (`Core_01` toward-order, 2026-04-11 → 2026-08-11);
 - an adjudication applied to the Chinese core text but not its English mirror (order-gain 3→4, 2026-07-05 → 2026-08-11);
 - an adjudication applied to the theory layer but not the book (same);
-- a de-overload applied to §5b.1 but not the adjacent §5b.2 (Level A, 2026-07-05, **still open** — Gate C);
-- an internal-contradiction note (`IC-AllGood-1`) registered in one file and never propagated (**still open** — Gate C).
+- a de-overload applied to §5b.1 but not the adjacent §5b.2 (Level A, 2026-07-05; **closed by C-A** on 2026-08-12);
+- an internal-contradiction note (`IC-AllGood-1`) registered in one file and never propagated (**still open as CΨ**, not Gate C scope).
 
 Each was individually reasonable. Collectively they are a **generator** of new inconsistencies, which is worse than any single one of them.
 
@@ -364,11 +368,11 @@ L1 and L5 will be noisy at first. That is expected: the baseline captures curren
 
 ---
 
-## 6. Boundary of this packet after EX-A
+## 6. Boundary of this packet after EX-A, B-A and C-A
 
-- This packet itself modifies **no** axiom, theorem, definition, equation, threshold, or canonical stance; EX-A was separately authorized and recorded in `Operations/SRT_EXISTENCE_AUTHOR_DECISION_PACKET_2026-08-11.md`.
-- Gate A is settled only by that author decision and its canonical owner edits. The recommendations below Gates B and C remain arguments, not verdicts, and no file may cite this packet as settling them.
-- Does **not** authorize any edit to `_SRT_D_VALUE_CANONICAL.md`, `Physics/SRT_Phys_08_Ontology_Ext.md`, or any `Spirituality/` file. Its historical Gate A option text is not a competing authority for `Core/SRT_Core_21_Minimal_Axioms.md` or `Core_Law/SRT_L0_Metaphysics.md`.
+- This packet itself modifies **no** axiom, theorem, definition, equation, threshold, or canonical stance. EX-A, B-A and C-A are separately recorded in their author decision packets.
+- Gates A, B and C are settled only by those author decisions and their canonical owner edits. This packet's option text remains historical analysis, not current authority.
+- It does **not** independently authorize edits to canonical or domain files. Its historical Gate A/B/C option text is not a competing authority for the landed owners; CΨ remains separately gated.
 - The anti-drift rule in §5 is a **proposal for** `Governance/SRT_EDIT_PROTOCOL.md`, not an amendment to it; the protocol is unchanged until separately authorized.
 - Gate A's Option A remains a **rejected historical candidate framework with an unfilled measure slot**; EX-A adopted none of its notation.
 - Companion record: the deterministic repairs are in the Phase-1 consistency PR; the registered tensions are `Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`.

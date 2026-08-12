@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: fc5b9e96
-source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
-source_dirty: false
-inputs_digest: 7dc27dba4170a938
+source_commit: c2f6a7a0
+source_branch: main
+source_dirty: true
+inputs_digest: b0c5a7c951a2ab0c
 ---
 
 # SRT 物理领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 7dc27dba4170a938
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `fc5b9e96` |
-| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `c2f6a7a0` |
+| 来源分支 | `main` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -486,6 +486,7 @@ srt_physics_claim_status:
   deff_dvalue: "D_eff / bandwidth / density formulas are capacity proxies, not canonical d-value"
   constants: "structural placement constraints, not exact-value derivations"
   qbox_post_quantum: "external interface pressure-test, not proof of SRT"
+  shoshin_layer: "B-A: no independent L0 precursor; Phys_08 variational/gradient forms are L1/P3-P4 bridge proxies only"
 ```
 
 ---
@@ -504,6 +505,12 @@ srt_physics_claim_status:
 ---
 
 ## 2. Default domain verdicts
+
+### 2.0 Shoshin / Original Intention under B-A
+
+`SRT_Phys_08_Ontology_Ext.md` and its CompactCore may retain `argmin`／gradient forms only as L₁/P3/P4 Physics translations under a declared state space, functional, feasible domain, finite horizon and constraints. They do not define `L_0`, create an independent L₀ precursor, rename `ε_pg`, or imply a universe-wide optimum. Gate C is closed by C-A; model-global optimization remains permitted only within the declared model.
+
+The former `SRT_Physics_Cosmology.md` claim that the Big Bang is `argmin_{σ∈L_0} K(σ)` is parked: no complexity measure over `L_0^{abs}`, admissible domain, closure, or existence／uniqueness conditions were supplied. It is not a current cosmological definition.
 
 ### 2.1 Measurement / collapse claims
 
@@ -750,7 +757,7 @@ This is a domain audit for a candidate implementation of the AM-A primitive actu
 
 ### C. Complexity / Ontology Line
 - `SRT_Phys_07_Complex_Systems_CompactCore.md`
-- `SRT_Phys_08_Ontology_Ext_CompactCore.md`
+- `SRT_Phys_08_Ontology_Ext_CompactCore.md` — B-A／C-A: Original Intention variational form is a declared finite L₁/P3 bridge, not an L₀ definition, precursor, infinite-horizon endpoint or universe-wide optimum
 
 ## Recommended Reading Order
 ### 最短主线（第一次进入 Physics）
@@ -2179,6 +2186,7 @@ SRT 的回答是：
 > **定位**：本文件是 `SRT_Phys_08_Ontology_Ext.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 在 Physics 板块中最深的本体论延伸：意识、选择因果、泛经验场、Apeiron 与病态选择。  
 > **关系**：不替代原文；原文保留棱镜隐喻、Bohm 主动信息、Russellian Monism 与临床映射的完整展开。
+> **B-A／C-A 护栏（2026-08-12）**：本文件中的初心变分式是具名有限模型内的 L₁/P3 Physics bridge，不是 L₀ 定义、独立前身、无限时域终点或宇宙级最优；`ε_pg` 保持无内容结构角色。
 
 ## 1. 核心问题
 
@@ -2310,16 +2318,16 @@ L_1(\theta)=\text{Unbind}_\theta(\mathcal U)=\hat G_\theta[\mathcal U]
 ### 7.2 Dispositional Structure
 SRT 同时强调：
 - `L_0` 不是均匀混沌
-- 它内部有倾向性结构
-- 某些方向更易被选择
+- 它承载无内容结构不对称
+- 在声明参考结构的领域投影中，路径可呈现不同可行性或代价；这不等于 `L_0` 自带语义目标
 
-### 7.3 Original Intention
+### 7.3 Original Intention Bridge
 \[
 \text{Original Intention}=\arg\min_{\text{direction}}\int_0^\infty F[\sigma(t)]dt
 \]
 
-这给“初心”一个 SRT 版本：
-> **初心不是外加目的论，而是 `L_0` 内部低自由能方向的拓扑偏好。**
+这给“初心”一个 Physics 领域代理：
+> **在状态空间、自由能泛函、可行域与时间域都已声明的模型内，可把该变分方向作为 L₁ 初心的 P3 bridge；它不定义 `L_0`，也不引入 L₀「初心前身」。**
 
 ---
 

@@ -13,8 +13,8 @@ dependency: [SRT-CORE-12A]
 # SRT Core 12A Ontology L0L1 Split Index Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Core_12a_Ontology_L0L1.md`](../SRT_Core_12a_Ontology_L0L1.md)
-- Source owner bytes: `57684`
-- Source owner SHA-256: `0612d16bdfebb4c534ec15e81e2994323dc686f88639974877b3cf8e9a363869`
+- Source owner bytes: `58281`
+- Source owner SHA-256: `e1d2355497c52379108d0adb33d83035833e9a8db57b972cfb84f629522ced0c`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

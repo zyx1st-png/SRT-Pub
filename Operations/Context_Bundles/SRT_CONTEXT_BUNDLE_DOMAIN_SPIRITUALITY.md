@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: fc5b9e96
-source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
-source_dirty: false
-inputs_digest: 7dc27dba4170a938
+source_commit: c2f6a7a0
+source_branch: main
+source_dirty: true
+inputs_digest: b0c5a7c951a2ab0c
 ---
 
 # SRT 灵性领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 7dc27dba4170a938
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `fc5b9e96` |
-| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `c2f6a7a0` |
+| 来源分支 | `main` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 3 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -463,6 +463,8 @@ When answering about SRT:
 
 Spirituality files may translate SRT into religious, contemplative, therapeutic, and everyday-practice language. They must not be read as primitive ontology.
 
+**B-A／C-A guard（2026-08-12）**：初心从 L₁ 开始，作为 P2 处境化解释回读或 P5 现象学命名；当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身。Spirituality 中的 `∇F` 形式仅在声明有限位置、可达域、比较规则、时域与约束的模型内作为 P3/P4 bridge／proxy；不定义 L₀、无限时域终点或 universe-wide optimum。C-A 不裁决 CΨ 的 `Ψ_f → 0` 价态问题。
+
 Allowed:
 
 > Spirituality language can serve as bridge, companion exposition, praxis support, or metaphorical orientation.
@@ -475,11 +477,11 @@ Forbidden:
 
 ## 2. High-risk claim classes
 
-### 2.1 God / Ω / divine / source language
+### 2.1 God / divine / source-horizon language
 
 **Allowed precise claim**:
 
-> `Ω`, `God`, `Divine`, `Source`, `Tao`, `Brahman`, and related terms are spirituality-domain mappings or regulative asymptotes used to orient finite practice and anti-idolatry boundaries.
+> `God`, `Divine`, `Source`, `Tao`, `Brahman`, and related terms are spirituality-domain mappings or regulative source-horizon language used to orient finite practice and anti-idolatry boundaries. C-A assigns no theory symbol to that horizon; bare `Ω` remains canonical Ontological Consistency.
 
 **Status**: P5 companion / P3 bridge, not P0/P1.
 
@@ -489,7 +491,7 @@ Forbidden:
 
 > SRT proves omniscience, omnipotence, omnibenevolence, divine presence, salvation, or any theological doctrine.
 
-**Guardrail**: `Ω` is a boundary / asymptotic marker. No finite practitioner, teacher, community, experience, tradition, or text may claim to instantiate or fully represent it.
+**Guardrail**: The source horizon is non-attainable praxis language, not an operator or optimum. No finite practitioner, teacher, community, experience, tradition, or text may claim to instantiate or fully represent it.
 
 ### 2.2 `d -> infinity`, liberation, nirvana, awakening
 
@@ -563,7 +565,7 @@ Forbidden:
 
 | Risk phrase | Problem | Safer replacement |
 |---|---|---|
-| “God is `L_0` / `Ĝ` / Ω” | Theological metaphor treated as ontology | “God/Ω is a spirituality-domain asymptotic mapping for total-source language, not a canonical definition.” |
+| “God is `L_0` / `Ĝ` / Ω” | Theological metaphor treated as ontology; `Ω` also collides with Ontological Consistency | “God/source-horizon language is a spirituality-domain regulative mapping, not a canonical definition or symbol.” |
 | “all-knowing / God’s view” | Infinite viewpoint overclaim | “de-parameterized or asymptotic regulative limit; finite systems cannot occupy it.” |
 | “`d -> infinity`” | Actual infinite attainment | “directional shorthand for wider consequence-bearing; finite claims require proxies.” |
 | “suffering is `Ψ_f`” | Subjective pain / moral language collapsed into canonical symbol | “suffering may be modeled through `Ψ_f`-related burden proxies under specified conditions.” |
@@ -614,7 +616,7 @@ They do not create SRT primitive axioms, definitions, moral authority, spiritual
 ## Spirituality Entry Coverage
 ### Z. Claim-status / Guardrail
 - `SRT_Spirituality_Claim_Status.md`
-  - Spirituality / praxis / companion writing guardrail for God / Ω / d->infinity / liberation / suffering / Ψ_f / practice / choice-creates-reality language
+  - Spirituality / praxis / companion writing guardrail for God / source-horizon / d->infinity / liberation / suffering / Ψ_f / practice / choice-creates-reality language; C-A reserves bare Ω for Ontological Consistency
 
 ### A. Bridge / Axiomatic Layer
 - `_SRT_Spirit_Axioms.md`
@@ -624,7 +626,7 @@ They do not create SRT primitive axioms, definitions, moral authority, spiritual
 
 ### C. Metric / Direction Detail
 - `SRT_Spirit_05_Shoshin.md`
-  - Shoshin / 初心 as direction-field proxy, first-person report boundary, and provisional metric comparison
+  - B-A: Shoshin / 初心 starts at L₁ as P2 read-back or P5 phenomenology; direction-field formulas are P3/P4 proxies, not an L₀ definition or precursor
 
 ### D. Longform Counterparts
 - `SRT_Spirit_09_Praxis.md`
@@ -673,7 +675,7 @@ They do not create SRT primitive axioms, definitions, moral authority, spiritual
 
 ## Minimal navigation note
 
-- **任何涉及 God / Ω / d->infinity / 解脱 / 苦难 / 修行 / Ψ_f 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读具体正文。
+- **任何涉及 God / 本源地平线 / d->infinity / 解脱 / 苦难 / 修行 / Ψ_f 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读具体正文；不得用 bare `Ω` 表示本源。
 
 若目标是：
 - **理解 Spirituality 板块的旧主轴** → 先读 `SRT_Spirituality_Claim_Status.md`，再读 `_SRT_Spirit_Axioms.md` 与 `SRT_Spirit_09_Praxis_CompactCore.md`
@@ -747,7 +749,7 @@ T(d)=
 压缩解释：
 - `d` 扩展
 - 旧 `L_2` 僵硬度下降
-- 自身方向与全局自由能下降方向更一致
+- 自身方向与具名有限模型的比较方向更一致
 
 这三件事一起，才叫“进化”。
 
@@ -757,13 +759,13 @@ T(d)=
 
 ### 3.1 Shoshin Alignment
 \[
-\text{Shoshin}=\cos\angle(\vec v_{self},-\nabla F_{global})
+\text{Shoshin}^{proxy}_{\theta,\tau,K}=\cos\angle(\vec v_{self},-\nabla F_{\theta,\tau,K}),\qquad \tau<\infty
 \]
 
-> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface and compact default for directional exposition, not a canonical definition of Shoshin or global direction. See `SRT_Spirit_05_Shoshin.md` for metric alternatives and first-person report boundaries.
+> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional interface inside a declared finite model, not a canonical definition of Shoshin, global direction, or universe-wide optimum. See `SRT_Spirit_05_Shoshin.md`.
 
 最短说法：
-> **初心不是抽象美德，而是你当前行动方向与更深层最优方向之间的夹角。**
+> **初心代理不是抽象美德，而是当前行动与一个已声明、可审计的有限比较方向之间的夹角。**
 
 这让“初心”第一次从修辞，变成了：
 - 可比较

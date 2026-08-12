@@ -127,20 +127,21 @@ $$
 \[
 \sigma^{better}
 =
-\arg\min_{\sigma \in \mathcal{A}(\theta)}
-\Psi_f^{global}(\sigma)
+\arg\min_{\sigma \in \mathcal{A}_{\theta,\tau,K}}
+J_{\theta,\tau,K}(\sigma)
 \]
 
-其中：
+其中 `J` 是当前主体范围、时间窗与约束下的任务局部复合比较量，不是跨位置的 canonical 独立量：
 
 \[
-\Psi_f^{global}
-\sim
-\Psi_f^{self,long}
+J_{\theta,\tau,K}
+=
+w_1\Psi_f^{self,long}
 +
-\Psi_f^{others}
+w_2\Psi_f^{others}
 +
-\Psi_f^{future\ branch}
+w_3\Psi_f^{future\ branch},
+\qquad w_i\ \text{须在应用中声明}
 \]
 
 并要求：
@@ -171,12 +172,12 @@ $$
 
 ---
 
-## 7. 真轻与伪轻：全局收敛 vs 局部收敛
+## 7. 真轻与伪轻：有界跨窗结算 vs 局部减压
 
 这轮对话把“更轻”进一步区分为：
 
 - **伪轻**：局部收敛。短时减压，但代价被延后、外包或锁死进未来。
-- **真轻**：全局收敛。在更长时间维度、更多存在维度、以及与初心更深对齐上，总体 `Ψ_f` 更低。
+- **真轻**：在已声明的主体范围、时间窗与约束中，较长窗口的复合负担更低，且未来再选择没有被吃掉。这不是 universe-wide convergence。
 
 真轻的最小操作判据：
 

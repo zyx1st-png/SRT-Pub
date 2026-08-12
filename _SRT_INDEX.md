@@ -109,6 +109,8 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - d-value → `_SRT_D_VALUE_CANONICAL.md`
 - `Ψ_f` → `_SRT_PSI_F_CANONICAL.md`
 - `T_dir` → `_SRT_T_DIR_CANONICAL.md`
+- 初心／Shoshin 层级（B-A strict layering）→ `Core_Law/SRT_L0_Metaphysics.md` 初心词条；作者裁决／地板记录 → `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`
+- `global optimum` 四义与作用域（C-A bounded plurality）→ `_SRT_D_VALUE_CANONICAL.md §5b` + `Governance/SRT_CLAIM_LADDER.md §0A` + `_SRT_SYMBOL_TABLE.md` Usage Rule 18；作者裁决／地板记录 → `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`；CΨ 另见 `Core/SRT_OPEN_TENSIONS.md §18`
 - cross-domain usage matrix → `_SRT_CROSS_DOMAIN_MATRIX.md`
 - formal axioms → `Core/SRT_Core_21_Formal_Axioms.md`
 - minimal axioms / PC-A non-exhaustion / AM-A manifest actuality / EX-A anchoring-persistence boundary → `Core/SRT_Core_21_Minimal_Axioms.md`
@@ -199,7 +201,7 @@ Important retrieval note: "not final definition authority" is not the same as "l
 - `Neuroscience/_SRT_Neuro_Axioms.md`
 - `Neuroscience/SRT_Neuro_Axioms_Claim_Status.md`（claim-status audit for the neuro axiom bridge; not a replacement for the axiom file）
 - `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md`
-- 神经归一化 → 行为选择的有界入口：`Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1`；相对响应、选择倾向与实际行为事件必须分层，经验执行尚未转绿
+- 神经归一化 → 行为选择的有界入口：`Core/SRT_Core_14_Dynamics_Scaling.md P3-Scale-NB1`；P4 工作线：`Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`；相对响应、选择倾向与实际行为事件必须分层，formal lock 与经验执行尚未完成
 - `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md`
 - `Neuroscience/_SRT_Neuroscience_Hardening_Index.md`（domain index for hardening drafts and Pipeline 1 neuroscience material patches; not a canonical source）
 - `Neuroscience/SRT_Neuroscience_Hardening_N1_N9_v0_1.md`（bridge/lab working draft; not a canonical source）

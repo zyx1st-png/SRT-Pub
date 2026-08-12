@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: fc5b9e96
-source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
-source_dirty: false
-inputs_digest: 7dc27dba4170a938
+source_commit: c2f6a7a0
+source_branch: main
+source_dirty: true
+inputs_digest: b0c5a7c951a2ab0c
 ---
 
 # SRT 神经科学领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 7dc27dba4170a938
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `fc5b9e96` |
-| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `c2f6a7a0` |
+| 来源分支 | `main` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 5 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -470,6 +470,8 @@ When answering about SRT:
 - AI consciousness comparison: P3 bridge only when architecture-state is explicit;
 - BioQuantum mechanism mapping: P3/P4 hypothesis unless independently replicated and causally bridged from molecular to neural scale.
 
+**C-A scope guard（2026-08-12）**: broader neural integration, field coherence, global availability, higher PCI／Φ, or more accessible paths do not imply canonical `d↑` or approach to a universe-wide optimum. Any neural optimization claim must name its task, candidate set, readout, horizon, constraints and rival models; “global” in global workspace／whole-brain state is a system-scope term, not C-A's prohibited universe-global optimum.
+
 ---
 
 ## 2. High-risk claim classes
@@ -631,6 +633,8 @@ Neuroscience 现在采用五层结构：
 ### D. Hardening / Lab Draft Layer
 
 - `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` — full staging draft for the 2026-04 N1-N9 neuroscience hardening cycle. Non-canonical unless later promoted through the claim ladder.
+- `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` — local P4 execution card for one bounded neural divisive-normalization → frozen readout → task-choice test. Card-defined only; not formally locked or executed.
+- `SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md` — W0 public-source inventory, Lane A access gate, and unsent minimum data/code request; access remains unknown.
 - `_SRT_Neuroscience_Hardening_Index.md` — domain index for hardening drafts and Pipeline 1 material patches.
 - `patches/` and `hooks/` — Pipeline 1 patch notes and integration hooks. These are bridge records, not canonical definitions.
 
@@ -666,9 +670,10 @@ Neuroscience 现在采用五层结构：
 ### research / lab path
 
 1. `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`
-2. `SRT_Neural_Mechanisms_CompactCore.md` §10 experimental roadmap
-3. `SRT_Consciousness_Mechanisms_CompactCore.md` boundary cases and hardest objections
-4. `SRT_Clin_00_IIT_PCI.md`
+2. `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`（for the selected local P4 workline）
+3. `SRT_Neural_Mechanisms_CompactCore.md` §10 experimental roadmap
+4. `SRT_Consciousness_Mechanisms_CompactCore.md` boundary cases and hardest objections
+5. `SRT_Clin_00_IIT_PCI.md`
 
 ### 第二层展开
 
@@ -685,7 +690,7 @@ Neuroscience 现在采用五层结构：
 | Claim-status audit | `SRT_Neuro_Axioms_Claim_Status.md` | classifies claim status of `_SRT_Neuro_Axioms.md` | audit, not replacement |
 | Canonical-facing bridge | `_SRT_Neuro_Axioms.md` | formal neuro bridge and historical axiom/discourse container | hybrid; not all internal claims are canonical |
 | Compact core | `SRT_Neural_Mechanisms_CompactCore.md`, `SRT_Consciousness_Mechanisms_CompactCore.md` | current concise formal neuroscience summary | hardening content is bridge/lab unless promoted |
-| Hardening draft / material patches | `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`, `_SRT_Neuroscience_Hardening_Index.md`, `patches/`, `hooks/` | full N1-N9 staging record plus Pipeline 1 neuroscience patch records | non-canonical working drafts / bridge records |
+| Hardening draft / lab card / material patches | `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`, `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`, `_SRT_Neuroscience_Hardening_Index.md`, `patches/`, `hooks/` | full N1-N9 staging record, bounded P4 execution card, and Pipeline 1 neuroscience patch records | non-canonical working drafts / bridge records |
 | Longform | `SRT_Neural_Mechanisms.md`, `SRT_Consciousness_Mechanisms.md` | expanded material | may lag compact core |
 | Measurement | `SRT_Clin_00_IIT_PCI.md` | clinical / PCI / IIT interface | measurement proxies are not identities |
 
@@ -702,7 +707,7 @@ Neuroscience 现在采用五层结构：
 | N5 `d-value` | `SRT_Neural_Mechanisms_CompactCore.md` | N1-N9 draft |
 | N6 consciousness as stable concern-weighted `L1` | `SRT_Consciousness_Mechanisms_CompactCore.md` | `SRT_Clin_00_IIT_PCI.md` |
 | N7 psychopathology | both compact core files | N1-N9 draft |
-| N8 experimental roadmap | `SRT_Neural_Mechanisms_CompactCore.md` | future experimental roadmap file |
+| N8 experimental roadmap | `SRT_Neural_Mechanisms_CompactCore.md` | `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` for the first selected bounded workline |
 | N9 mainstream-theory distinction | `SRT_Neural_Mechanisms_CompactCore.md` | N1-N9 draft |
 
 ---
@@ -712,7 +717,7 @@ Neuroscience 现在采用五层结构：
 1. Add citation layer for N1-N9.
 2. Refine the `Psi_f` proxy hierarchy: core proxies, physiological proxies, neural proxies, historical proxies, forbidden identities.
 3. Further distinguish `d-value` from salience, reward, precision, motivational relevance, subjective value, affective valence, arousal, and self-relevance.
-4. Compress N8 into 1-2 flagship experiments suitable for a pilot or pre-registration.
+4. Formally lock and preregister `NB1-MOFC-Lottery-v0`: data access, recovery/power simulation, rival/readout/tolerance/event freeze, ethics/SOP, and immutable adjudication code.
 5. Add sync warnings to longform files if compact cores remain ahead of them.
 6. Regenerate graphify-out / wiki artifacts after merge.
 
@@ -772,6 +777,9 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 6. [`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`](SRT_Neuroscience_Hardening_N1_N9_v0_1.md)
    Bridge / lab working draft that records the full N1-N9 hardening cycle: neural selection, `G_hat_theta`, `Psi_f`, `d-value`, `L1 -> L2` sedimentation, consciousness, psychopathology, experiments, and distinction from mainstream neuroscience frameworks.
 
+7. [`SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`](SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md)
+   Local P4 execution card for the bounded `P3-Scale-NB1` neural divisive-normalization → frozen readout → task-choice workline. Card-defined only; not formally locked, preregistered, or executed. W0 access record: [`SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md`](SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md).
+
 ## Status distinction
 
 - `SRT_Neuroscience_Claim_Status.md`: folder-level proxy/clinical guardrail. Read before public, clinical, AI-consciousness, FEP, NDE, or treatment-facing use.
@@ -780,6 +788,7 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 - `SRT_Neural_Mechanisms_CompactCore.md`: formal mechanism compact core; now contains the current neural-selection hardening summary.
 - `SRT_Consciousness_Mechanisms_CompactCore.md`: formal consciousness compact core; now contains the current consciousness hardening summary.
 - `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`: non-canonical staging draft for theory hardening, experimental design, and future citation work.
+- `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`: non-canonical local P4 protocol candidate. It may adjudicate one task-level bridge but cannot define Core terms or establish agency, subjecthood, or consciousness.
 - [`../Neuroscience_Annex/`](../Neuroscience_Annex/) contains bridge/interface Annex files extracted from Neuroscience owner files. Annex files are `canonical: false` and do not define Core primitives or replace owner-file formal anchors.
 
 ## Current hardening path
@@ -790,7 +799,7 @@ The N1-N9 draft should be treated as a staging document, while the two compact c
 2. map each claim to bridge / lab / candidate-canonical status;
 3. refine `Psi_f` measurement proxies;
 4. sharpen `d-value` against salience, reward, precision, and motivational relevance;
-5. compress the experimental roadmap into 1-2 flagship studies;
+5. formally lock `NB1-MOFC-Lottery-v0`: secure data access, complete parameter-recovery/power simulations, freeze rivals/readout/tolerance/event rules, and preregister before confirmatory execution;
 6. eventually decide which `_SRT_Neuro_Axioms.md` theorem labels should be renamed, downgraded, or formally proven.
 
 ## Cross-domain links
@@ -916,6 +925,7 @@ SRT 在这里保留的主张是：
 - 神经系统同时受信息收益与能量成本约束
 - 归一化可作为两者权衡下的候选解；目标泛函若未指定成本函数、约束与动态，不能推出唯一解
 - 相对神经响应通向行为选择还需冻结读出、阈值／累积或采样规则、执行门与 held-out 检验（P3-Scale-NB1）
+- 首个具名 P4 工作线为 `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`；当前只到 card-defined 黄灯，跨研究证据不可拼成通过
 
 ---
 

@@ -399,20 +399,24 @@ $$L_1 = \int_{\text{path}(\theta)} e^{-\beta F[\sigma]} \mathcal{D}\sigma$$
 
 $\hat{G}_\theta$选择的是"最小作用量路径"(但有量子涨落)。
 
-#### 1.3.3 定理:初心作为梯度场
+#### 1.3.3 B-A 层级边界：撤回 `T-L0-Heart`
 
-**定理 (T-L0-Heart)**:
-$L_0$的内在梯度$\nabla F$对应于"初心"的本体论基础。
+**Former theorem (`T-L0-Heart`) — withdrawn 2026-08-12**:
+旧条目把 $L_0$ 的内在梯度直接写成「初心」的本体论基础，并以
 
 $$\text{Original Intention} = -\nabla F|_{\theta_0}$$
 
-*证明思路*:
-1. 初心 = 未被$L_2$扭曲的原始倾向
-2. $L_2$的形成是路径积分的副产品
-3. 在$t \to 0$时,$L_2 = \emptyset$,只有$L_0$的内在梯度
-4. 因此初心 ∝ $\nabla F$在原始$\theta$处的方向
+作为 L₀ 身份式。该定理身份与公式的 L₀ 定义权均按作者裁决 **B-A** 撤回。结构不对称可以在具名 L₁ 领域模型中投影为梯度、势景或变分代理，但从结构不对称到「初心」的语义／体验内容还需要有限位置、具体处境与解释回读，不能由 $L_0$ 分析地推出。
 
-**推论**: 觉醒 = 重新对齐$\hat{G}$与$\nabla F$(消除$L_2$的扭曲)。
+当前可保留的关系仅为：
+
+$$
+\varepsilon_{pg}\;[L_0,\ \text{contentless}]
+\quad\xrightarrow[\text{situated interpretation}]{L_1/P2\ \text{read-back}}\quad
+\text{Shoshin}
+$$
+
+箭头表示回读，不是恒等、定理推导或额外 L₀ 对象。觉醒与梯度重对齐只能作为 L₁/P3 领域 bridge / operational proxy；具体梯度须声明状态空间、目标泛函、时间域与适用条件。
 
 ---
 
@@ -445,7 +449,7 @@ $$\text{Existence} \neq \text{Subsistence}, \quad \text{but } L_0 \supseteq L_1$
 **核心一致**:
 - **空性 (Śūnyatā)** = $L_0$的无自性 (无固定规范)
 - **缘起 (Pratītyasamutpāda)** = $\hat{G}$的依存选择
-- **如来藏 (Tathāgatagarbha)** = $L_0$的内在梯度(佛性)
+- **如来藏 (Tathāgatagarbha)** ↔ 对 $L_0$ 无内容结构不对称的宗教／哲学 bridge 读法；不构成“佛性 = L₀ 梯度”身份式
 
 **关键差异**: SRT用微分几何和信息论重构了唯识的直觉,使其可操作化。
 

@@ -512,7 +512,7 @@ This gate was added after the 2026 Nature article `Active dissociation of intrac
 ### 12.2 代理指标
 - \(\Psi_f^{local}\)：主观用力感评分 + 执行控制代价（RT/错误率）
 - \(\Psi_f^{coh}\)：跨任务一致性、群体协同增益、叙事-行为同调指数
-- 对齐角 proxy：\(\cos\angle(\vec v_{self},-\nabla F_{global})\) 的行为近似（长期目标一致率）
+- 对齐角 proxy：\(\cos\angle(\vec v_{self},-\nabla J_{\theta,\tau,K})\) 的行为近似（在预先声明的主体范围、任务、时域与约束中的长期目标一致率；非全局方向）
 
 ### 12.3 阈值判据（候选）
 - 被动对齐成立：

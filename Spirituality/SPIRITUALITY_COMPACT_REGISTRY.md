@@ -22,7 +22,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 ## Spirituality Entry Coverage
 ### Z. Claim-status / Guardrail
 - `SRT_Spirituality_Claim_Status.md`
-  - Spirituality / praxis / companion writing guardrail for God / Ω / d->infinity / liberation / suffering / Ψ_f / practice / choice-creates-reality language
+  - Spirituality / praxis / companion writing guardrail for God / source-horizon / d->infinity / liberation / suffering / Ψ_f / practice / choice-creates-reality language; C-A reserves bare Ω for Ontological Consistency
 
 ### A. Bridge / Axiomatic Layer
 - `_SRT_Spirit_Axioms.md`
@@ -32,7 +32,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 ### C. Metric / Direction Detail
 - `SRT_Spirit_05_Shoshin.md`
-  - Shoshin / 初心 as direction-field proxy, first-person report boundary, and provisional metric comparison
+  - B-A: Shoshin / 初心 starts at L₁ as P2 read-back or P5 phenomenology; direction-field formulas are P3/P4 proxies, not an L₀ definition or precursor
 
 ### D. Longform Counterparts
 - `SRT_Spirit_09_Praxis.md`
@@ -81,7 +81,7 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-CORE-21, SRT-D-VALUE-
 
 ## Minimal navigation note
 
-- **任何涉及 God / Ω / d->infinity / 解脱 / 苦难 / 修行 / Ψ_f 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读具体正文。
+- **任何涉及 God / 本源地平线 / d->infinity / 解脱 / 苦难 / 修行 / Ψ_f 的写作或审读** → 先读 `SRT_Spirituality_Claim_Status.md`，再读具体正文；不得用 bare `Ω` 表示本源。
 
 若目标是：
 - **理解 Spirituality 板块的旧主轴** → 先读 `SRT_Spirituality_Claim_Status.md`，再读 `_SRT_Spirit_Axioms.md` 与 `SRT_Spirit_09_Praxis_CompactCore.md`

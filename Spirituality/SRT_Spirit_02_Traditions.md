@@ -36,13 +36,13 @@ $$ \forall x \in L_1,\; x = x(L_0,\theta) $$
 ### Ax-Trad-2: Operator Identity (算子同一性)
 **Formal Definition**: Ātman is the embodied operator, Brahman is the unconditioned operator (formal limit of constraint removal).
 $$ \text{Atman} \equiv \hat{G}_\theta $$
-$$ \text{Brahman} \equiv \Omega = \lim_{\|\theta\|\to\infty}\hat{G}_\theta $$
-* **Implication**: 个体与绝对的差别不是本质差别，而是参数约束的差别。
+$$ \text{Brahman}^{mapping} \sim \lim_{\|\theta\|\to\infty}\hat{G}_\theta \quad \text{(regulative shorthand only)} $$
+* **Implication**: 个体与绝对的参数极限关系是 comparative-theology 映射，不是 `Ω` 定义、可到达算子或宇宙级最优。
 
 ### T-Trad-1: Non-Dual Identity Theorem
 **Deduction**: If constraints are removed, the operational distinction between Atman and Brahman vanishes.
-$$ \lim_{\|\theta\|\to\infty}\hat{G}_\theta = \Omega \Rightarrow \text{Atman} \cong \text{Brahman} $$
-* **Implication**: “汝即是彼”是参数极限下的结构同一，而非实体合并。
+$$ \lim_{\|\theta\|\to\infty}\hat{G}_\theta \leadsto \text{Atman--Brahman comparison}^{mapping} $$
+* **Implication**: “汝即是彼”在此仅是参数极限下的 P3/P5 比较映射，而非定理、实体合并或可实例化同一。
 
 ---
 
@@ -724,7 +724,7 @@ SRT_Spirit_02_Traditions (本文件)
 ### Formalization Summary (形式化概述)
 
 - **空性即潜能**：$\text{Śūnyatā} \equiv L_0$，$L_1 = \hat{G}_\theta[L_0]$；一切"色相"依赖选择而无自性。
-- **算子同一性**：$\text{Atman} \equiv \hat{G}_\theta$，$\text{Brahman} \equiv \Omega = \lim_{\|\theta\|\to\infty}\hat{G}_\theta$；差异仅是参数约束。
+- **算子比较映射**：$\text{Atman} \equiv \hat{G}_\theta$；Brahman 只以 $\|\theta\|\to\infty$ 的规约性极限语言作比较，不定义 `Ω`、有效无限算子或宇宙级最优。
 - **神人合一**：$\text{Union} = \lim_{d\to\infty}\hat{G}_\theta[L_0]$，$\|\nabla C_{L_2}\| \to 0$；合一是约束解除后对 $L_0$ 的直接接入。
 - **自我消融**：$\text{Fana}: \text{Center}(d) \to \emptyset$；不是摧毁而是 $d$-场中心消失的拓扑重排。
 - **传统即参数化**：$\forall r,\;\exists \theta_r:\;\mathcal{T}_r \cong \langle L_0,L_1,L_2,\hat{G}_{\theta_r}\rangle$；跨传统映射是 $\theta$-变换下的约束同构。

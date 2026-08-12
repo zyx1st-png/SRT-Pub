@@ -113,7 +113,7 @@ Safer reading:
 Under metabolic and bandwidth constraints, divisive normalization is a strong candidate form of constrained neural selection.
 ```
 
-**2026-08-12 floor result**：即使神经响应符合除法归一化，也不能直接推出认知／行为选择。当前有界桥为 `Core_14 P3-Scale-NB1`：候选身份映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与具名干预必须同时声明。通过只建立任务局部 neural-to-behavioral compatibility，不建立机制同一、actualisation、agency、subjecthood 或 consciousness。
+**2026-08-12 floor result**：即使神经响应符合除法归一化，也不能直接推出认知／行为选择。当前有界桥为 `Core_14 P3-Scale-NB1`：候选身份映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与具名干预必须同时声明。首个具名工作线 `NB1-MOFC-Lottery-v0` 已在 `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` 定义为本地 P4 执行卡，但尚未正式锁定、预注册或执行。通过只建立任务局部 neural-to-behavioral compatibility，不建立机制同一、actualisation、agency、subjecthood 或 consciousness。
 
 The energy–information objective `J=H-λE` does not uniquely derive divisive normalization unless the cost functional, feasible set, dynamics, and boundary conditions are specified and the resulting solution is proved to belong to that family.
 
@@ -174,7 +174,7 @@ Mapping:
 | N5 d-value | compact core §9 |
 | N6 consciousness as stable concern-weighted L1 | `SRT_Consciousness_Mechanisms_CompactCore.md` |
 | N7 psychopathology | compact core §8 and consciousness compact core §9 |
-| N8 experimental roadmap | compact core §10 |
+| N8 experimental roadmap | compact core §10; `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` for the first bounded P4 workline |
 | N9 mainstream-theory distinction | compact core §10 and PR staging draft |
 
 ## 8. Recommended next edits to `_SRT_Neuro_Axioms.md`

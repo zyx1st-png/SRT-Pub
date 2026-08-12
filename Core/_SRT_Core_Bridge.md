@@ -417,7 +417,7 @@ $$\pi_\lambda \circ \hat{G}_\theta \approx \hat{G}_{\theta,\lambda} \circ \pi_\l
 
 SRT目前**无法解释**:
 - 为什么$\hat{G}$会从$\Omega$(原初算子)中分化(演化起源问题)
-- L_0的内在梯度$\nabla\Psi_{\text{potential}}$的来源(为什么有"初心"?)
+- 有限 L₁ 位置如何形成、校准并区分「初心」回读，以及哪些领域梯度可以充当有效代理（B-A 已排除把该问题写成 L₀ 梯度或独立前身的来源问题）
 - 是否存在超越L_2的更高收敛层(例:跨物种的"集体无意识"?)
 
 ### 5.3 Ontological Manifesto（存在论宣言，新增）
