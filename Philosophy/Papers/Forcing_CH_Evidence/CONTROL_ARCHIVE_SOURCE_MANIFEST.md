@@ -8,7 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-11
-updated: 2026-08-11
+updated: 2026-08-12
 boundary: "mathematical logic, 1938–1963, outside the CH/forcing/independence line"
 candidate_enumeration: false
 part_ii_attested: false
@@ -168,6 +168,40 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Exact locations used | pp. 241–248 (problem, historical remarks, results and applications); pp. 249–253 (preliminary definitions and two interpretations); pp. 254–259 (lemma and Hilbert-substitution section); pp. 260–266 (construction in §§30–33); p. 267 (references). |
 | Evidentiary function | Establishes the existence of a long definition/lemma/construction chain for interpretation of non-finitist proofs in the bounded corpus. |
 | Limitations | Part II, the in-block joint review, and the cited erratum remain unreached at full-text level. No six-test audit or target-line clearance was performed. |
+
+### `MYHILL1952-FINITARY-METALANGUAGE`
+
+| Field | Record |
+|---|---|
+| Stable key | `MYHILL1952-FINITARY-METALANGUAGE` |
+| Author | John Myhill |
+| Exact title | “A Finitary Metalanguage for Extended Basic Logic” |
+| Year | 1952 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 17(3), pp. 164–178 |
+| Stable record | JSTOR 2267688; DOI 10.2307/2267688 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–16 are printed pp. 164–178. All pages were rendered and visually checked. Local verification SHA-256: `a6d165aa44bea194dddef89e0e213458c126828012f8e863f14158be08ef088f`. |
+| Exact locations used | pp. 164–169 (§§1–5: motivation, construction of system `N`, syntax/axioms, and rational arithmetic); pp. 170–174 (§§5–9: object-language arithmetic, representation, real numbers/least upper bound, and diagonal applications); pp. 175–177 (§§10–13: finitude, convergence, Heine–Borel/Bolzano–Weierstrass, and axiom of choice); p. 178 (closing qualification, references, and author affiliation). |
+| Evidentiary function | Establishes the existence of a thirteen-section, multi-page syntactic and mathematical construction record in the bounded corpus. |
+| Limitations | Page verification and structural description only. No load-bearing component was identified, no removal/replacement test was run, and no admission or individuation judgement was made. The local file is not committed, and its third-party filename is not treated as provenance. |
+
+### `DREBEN1955-MYHILL-REVIEW`
+
+| Field | Record |
+|---|---|
+| Stable key | `DREBEN1955-MYHILL-REVIEW` |
+| Author | Burton Dreben |
+| Exact title | “John Myhill. A finitary metalanguage for extended basic logic. The Journal of Symbolic Logic, vol. 17 (1952), pp. 164–178.” |
+| Year | 1955 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 20(1), p. 81 |
+| Stable record | JSTOR 2268099; DOI 10.2307/2268099 |
+| Source role | `contemporaneous review` |
+| Window status | **inside** fixed 1938–1963 boundary; period review of an in-window primary publication |
+| Full-text/page-verification status | **VERIFIED — complete review entry** on printed p. 81. The publisher's full-page image was rendered and visually checked from the Myhill bibliographic heading through Dreben's signature. |
+| Exact locations used | p. 81, Myhill review entry between its bibliographic heading and Burton Dreben's signature. |
+| Evidentiary function | Period characterization of `N` as a first-order finitary metalanguage, its relation to Fitch's `K′`, and Myhill's communicated qualification concerning what the construction does not itself prove. |
+| Limitations | One compact review entry. It is reception evidence, not a replacement for Myhill's primary text and not evidence of component removal, method novelty, or individuation. The page image is not committed or reproduced. |
 
 ### `WANG1951-LORENZEN-REVIEW`
 
