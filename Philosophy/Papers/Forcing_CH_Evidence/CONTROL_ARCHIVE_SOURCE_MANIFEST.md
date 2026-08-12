@@ -288,6 +288,40 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Evidentiary function | Period characterization of `N` as a first-order finitary metalanguage, its relation to Fitch's `K′`, and Myhill's communicated qualification concerning what the construction does not itself prove. |
 | Limitations | One compact review entry. It is reception evidence, not a replacement for Myhill's primary text and not evidence of component removal, method novelty, or individuation. The page image is not committed or reproduced. |
 
+### `ACKERMANN1950-CONSISTENT-LOGIC-I`
+
+| Field | Record |
+|---|---|
+| Stable key | `ACKERMANN1950-CONSISTENT-LOGIC-I` |
+| Author | Wilhelm Ackermann |
+| Exact title | “Widerspruchsfreier Aufbau der Logik I: Typenfreies System ohne tertium non datur” |
+| Year | 1950 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 15(1), pp. 33–57 |
+| Stable record | JSTOR 2268439; DOI 10.2307/2268439 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–26 are printed pp. 33–57. All 26 PDF pages were rendered and visually checked. Local verification SHA-256: `e138c19cfaa01b2fcd1b94e8eb3de617ca4a9b496c6edc9201f702c4c2733e5c`. |
+| Exact locations used | pp. 33–40 (introduction and §1, motivation and basic ideas); pp. 40–46 (§2, axioms and rules); pp. 46–54 (§3, proof-transformation consistency argument); pp. 54–57 (§4, paradoxes and system scope). |
+| Evidentiary function | Establishes a complete formal-system construction and continuous proof-transformation record in the bounded corpus. |
+| Limitations | Page verification and structural description only. Rosser's linked p. 72 review is separately registered below. No component was classified as load-bearing, and no removal/replacement, candidate, or individuation judgement was made. The local PDF is not committed, and its third-party filename is not treated as provenance. |
+
+### `LORENZEN1951-FREE-LATTICES`
+
+| Field | Record |
+|---|---|
+| Stable key | `LORENZEN1951-FREE-LATTICES` |
+| Author | Paul Lorenzen |
+| Exact title | “Algebraische und Logistische Untersuchungen über freie Verbände” |
+| Year | 1951 |
+| Journal / volume / issue / pages | *The Journal of Symbolic Logic* 16(2), pp. 81–106 |
+| Stable record | JSTOR 2266681; DOI 10.2307/2266681 |
+| Source role | `in-window primary publication` |
+| Window status | **inside** fixed 1938–1963 boundary; mathematical logic; no target-line status inferred beyond the inventory's metadata fields |
+| Full-text/page-verification status | **VERIFIED — complete article**. PDF page 1 is the JSTOR cover; PDF pages 2–27 are printed pp. 81–106. All 27 PDF pages were rendered and visually checked. Local verification SHA-256: `26185081d173d15a708f8201f2687c3e60f983c45547d958dff3e56012a22ee6`. |
+| Exact locations used | pp. 81–84 (introduction and §§1–2, basic notions and free semilattices/distributive lattices); pp. 85–90 (§§3–4, free orthocomplemented semilattices and logical application); pp. 90–94 (countably complete Boolean-lattice construction and transition to type logic); pp. 94–100 (§§5–6, deductive and inductive calculi); pp. 100–105 (§7, consistency proof); pp. 105–106 (§8, reducibility-axiom independence). |
+| Evidentiary function | Establishes a complete eight-section algebraic/logistic construction, consistency proof, and concluding independence result in the bounded corpus. |
+| Limitations | Page verification and structural description only. Wang's linked pp. 269–272 review is separately registered below. No component was classified as load-bearing, and no removal/replacement, candidate, or individuation judgement was made. The local PDF is not committed, and its third-party filename is not treated as provenance. |
+
 ### `WANG1951-LORENZEN-REVIEW`
 
 | Field | Record |
@@ -303,7 +337,7 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Full-text/page-verification status | **VERIFIED — complete review entry**. PDF page 1 is the JSTOR cover; the Lorenzen entry begins on printed p. 269 and ends with Wang's signature on p. 272. All five PDF pages were rendered and visually checked. |
 | Exact locations used | pp. 269–270 (two-part structure and lattice/semilattice construction); pp. 270–271 (consistency, decision method, ramified type theory, and cut-elimination synopsis); p. 272 (induction/reducibility discussion, extension result, and listed misprints). |
 | Evidentiary function | Adds one page-verified review-of-record entry and a contemporaneous technical synopsis linked to Lorenzen's primary article. |
-| Limitations | This is not Lorenzen's pp. 81–106 primary text. The primary remains metadata-only, so the review cannot substitute for page verification of the original construction. No six-test audit was performed. |
+| Limitations | This review does not substitute for Lorenzen's pp. 81–106 primary text, which is now separately page-verified above. No six-test audit was performed. |
 
 ### `ROSSER1951-ACKERMANN-REVIEW`
 
@@ -320,7 +354,7 @@ Only the first three roles are instantiated in this assembly. Quine, Russell, an
 | Full-text/page-verification status | **VERIFIED — complete review entry** on printed p. 72. The page was visually checked from Ackermann's bibliographic heading through Rosser's signature. Local verification SHA-256: `921a18fcd661e12e6e4151892574f1c6de78760003d4dcb020e1fad330b774a1`. |
 | Exact locations used | p. 72, Ackermann entry between its bibliographic heading and J. Barkley Rosser's signature. |
 | Evidentiary function | Adds a complete contemporaneous synopsis linked to Ackermann's 1950 target article. |
-| Limitations | The primary article remains unreached. This compact review cannot substitute for pp. 33–57 or support a component-removal or individuation judgement. |
+| Limitations | This compact review cannot substitute for Ackermann's pp. 33–57 primary article, which is now separately page-verified above, or support a component-removal or individuation judgement. |
 
 ### `ACKERMANN1955-CURRY-REVIEW`
 
