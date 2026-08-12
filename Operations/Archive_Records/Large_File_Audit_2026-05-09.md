@@ -19,12 +19,6 @@ canonical: false
 - Urgent threshold: `97.7 KiB`
 - Excluded scan roots: `.git/`, `.claude/`
 
-## operations_log
-
-| Risk | Size | File | Split / handling |
-|---|---:|---|---|
-| urgent | 712.0 KiB | `Operations/Archive_Records/Large_File_Audit_2026-05-09.md` | split by dated Operations archive |
-
 ## active_text
 
 | Risk | Size | File | Split / handling |
@@ -98,7 +92,7 @@ canonical: false
 | urgent | 336.4 KiB | `papers/costly_selective_closure_supplement/figures/figure3_results.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 277.3 KiB | `Operations/_SRT_DEEP_NAV_COVERAGE_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
 | urgent | 267.5 KiB | `Archive/root_misc/Pasted image 20260306100654.png` | artifact/generated; do not use as primary connector read path |
-| urgent | 209.8 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 209.7 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 181.2 KiB | `papers/costly_selective_closure_supplement/figures/figure1_framework.png` | artifact/generated; do not use as primary connector read path |
 | urgent | 160.6 KiB | `Operations/Audits/data/srt_material_assimilation_delta_2026-08-11.csv` | artifact/generated; do not use as primary connector read path |
 | urgent | 142.4 KiB | `papers/costly_selective_closure_supplement/figures/figure2_design.png` | artifact/generated; do not use as primary connector read path |
@@ -109,9 +103,9 @@ canonical: false
 | urgent | 111.4 KiB | `papers/ontological_friction/paper_ontological_friction_frontiers_submission.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 108.2 KiB | `Archive/raw_sessions/SRT_SESSION_RAW_TRANSCRIPT_2026-03-31.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 107.2 KiB | `Operations/_SRT_DEEP_NAV_PATH_AUDIT_REPORT.json` | artifact/generated; do not use as primary connector read path |
-| urgent | 105.5 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 105.4 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | artifact/generated; do not use as primary connector read path |
 | urgent | 102.7 KiB | `Archive/root_misc/Selection-Reality Theory (SRT).pdf` | artifact/generated; do not use as primary connector read path |
-| urgent | 101.6 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | artifact/generated; do not use as primary connector read path |
+| urgent | 101.5 KiB | `Operations/Context_Bundles/SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | artifact/generated; do not use as primary connector read path |
 | action | 91.1 KiB | `papers/ontological_friction/paper_ontological_friction_zh.html` | artifact/generated; do not use as primary connector read path |
 | action | 87.9 KiB | `papers/ontological_friction/paper_ontological_friction.md` | artifact/generated; do not use as primary connector read path |
 | action | 87.9 KiB | `papers/ontological_friction/paper_ontological_friction_preprint.md` | artifact/generated; do not use as primary connector read path |

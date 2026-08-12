@@ -40,9 +40,9 @@ Gate 0 settled that a **contentful** 初心 is **class C** and inadmissible as a
 
 So Gate B is **no longer** "is 初心 L₀ or L₁". That part is decided. What remains is exactly one question, stated in §2.
 
-### 0.2 ST-A landed (#788) — and it removes Option B's main motivation
+### 0.2 ST-A landed (#788) — it removes one specific motivation for Option B
 
-This is the input that did not exist when Gate B's options were written, and it cuts against the option this packet's predecessor treated as live.
+This is the input that did not exist when Gate B's options were written.
 
 `Core/SRT_Core_21b_Constitutive_Theorems.md` now records:
 
@@ -52,9 +52,13 @@ and, decisively for Gate B:
 
 > **`ε_pg` boundary**: `ε_pg` remains an `L_0` structural postulate and scalar seed. **ST-A does not derive an ISP-level anti-closure direction from it, nor from irreversibility alone.**
 
-**Why this matters.** The intuition behind a "thin L₀ precursor of 初心" was that `ε_pg` grounds a directional bias which L₁ then reads back as 初心 — so if the read-back is real, something at `L_0` must be doing the directing. ST-A removes that inference: the `ε_pg` → ISP-level-direction step is now an explicitly **underived** conditional candidate (`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`), not a theorem.
+**Why this matters — stated narrowly.** One motivation for a "thin L₀ precursor of 初心" was that `ε_pg` grounds a directional bias which L₁ then reads back as 初心, so something at `L_0` must be doing the directing. ST-A **removes that specific `ε_pg` → ISP-level-anti-closure-direction motivation**: the step is now an explicitly underived conditional candidate (`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`), not a theorem.
 
-The `L_0` side is therefore **thinner than when Gate B was framed**, and the pull toward positing an additional `L_0` object is correspondingly weaker — the work such an object was imagined to do is work SRT has just declined to claim.
+**What ST-A does and does not do here:**
+
+- It does **not** prove that no distinct precursor can exist.
+- It **removes one previously assumed derivation**, and therefore **weakens the current positive case** for adding an `L_0` commitment — the work such an object was imagined to underwrite is work SRT has now declined to claim.
+- If a future explanatory gap **and** a T5-passing candidate appear, **Gate B can be reopened** (§9).
 
 ### 0.3 What did *not* change
 
@@ -102,17 +106,19 @@ Everything else in §16 is decided. Note what the question is **not**: it is not
 
 ## 3. Gate 0 makes this decidable — the class-A admission test
 
-Gate 0's class A is **open**: "a future invariant of the same type must pass its own admission." Before this, Option B's exclusions were a prose intention with a **demonstrated 2/2 failure rate** (both `Def-Apeiron-1` and `Ax-Sho-1` violated the no-global-functional exclusion *while asserting they complied*). Gate 0 converts that into a checkable admission. A candidate thin precursor `π₀` would have to clear all five:
+Gate 0's class A is **open**: "a future invariant of the same type must pass its own admission." Before this, Option B's exclusions were a prose intention. Gate 0 converts them into a checkable admission. A candidate thin precursor `π₀` would have to clear all five:
+
+On the two existing formulations: `Def-Apeiron-1` and `Ax-Sho-1` **do not qualify as bare-`L_0` candidates** — their global / variational forms carry content or reference commitments incompatible with bare class-A admission. That is **not** because variational syntax is forbidden in itself.
 
 | # | Admission condition | Rationale |
 |---|---|---|
-| **T1** | **No global functional.** `π₀` may not be defined by `argmin`, `∇`, or any extremum over a functional ranging on latent world-states. | This is precisely where 2/2 prior attempts failed. |
+| **T1** | **No hidden teleology or undeclared reference structure in a functional representation.** A functional representation is **not disqualifying by mathematical form alone**. It fails class-A admission if it encodes a preferred endpoint, a complete semantic/evaluative ranking, or requires an **undeclared** class-B reference structure. | Gate 0 forbids content and undeclared reference structure, not variational syntax. |
 | **T2** | **No preferred endpoint.** `π₀` must not designate a target state, attractor, or limit toward which selection tends. | Class C: preferred endpoint. |
 | **T3** | **No complete ranking.** `π₀` may induce a *structural cost ordering* (Gate 0 permits this — `κ₀` and `ε_pg` both do), but not a complete semantic or evaluative ranking of latent world-states. | Gate 0 ordering discipline. |
 | **T4** | **No reference structure required.** If `π₀` needs a measure, horizon, or index to have content, it is class **B**, not class A, and is not an `L_0` primitive at all. | Class B/A boundary. |
-| **T5** | **Non-redundancy.** `π₀` must do work not already done by `L_0` granularity, `κ₀`, or `ε_pg` — otherwise it is a renaming, not an admission. | Class A is a set of commitments, not synonyms. |
+| **T5** | **Non-redundancy.** Does `π₀` perform a **non-redundant structural role** not already carried by the current class-A commitments (`L_0` granularity, `κ₀`, `ε_pg`)? | Class A is a set of commitments, not synonyms. |
 
-**T5 is the one that decides Gate B**, and §4 shows why.
+**T1–T4 fix the admissible type boundary; T5 is where any specific candidate is actually weighed.** Note what this test can and cannot do — see §5.1.
 
 ---
 
@@ -137,22 +143,26 @@ Gate 0's class A is **open**: "a future invariant of the same type must pass its
 
 Admit exactly one additional class-A object `π₀`, deliberately **not** called 初心, passing T1–T5.
 
-**The problem is T5, and it is decisive.** Work through what survives T1–T4:
+### 5.1 What the admission test can and cannot establish
 
-- No global functional (T1), no endpoint (T2), no complete ranking (T3), no required reference structure (T4).
-- What is left is a **contentless scalar structural asymmetry over latent configurations**.
-- But that *is* `ε_pg` — 「formal asymmetry favouring configurations with `B ≥ 2` over `B ≤ 1`… scalar seed, no inherent direction」.
+**T1–T4 determine the admissible *type boundary*; they do not exhaustively enumerate class A.** Gate 0 states class A is **open, not closed**, and nothing in T1–T4 rules out a future contentless structural invariant, relation, or geometry of a **different type** from the ones currently committed. **T5 therefore cannot prove that no distinct precursor could ever exist.** It asks a narrower question: does any *specified* candidate perform a non-redundant structural role not already carried by the current class-A commitments?
 
-So `π₀` either **fails T5** (it is `ε_pg` renamed) or **fails T1–T4** (it has content, and is class C). The exclusions do not leave room for a third thing.
+**The current evidence, stated as such:**
 
-**The honest steelman.** One could argue `π₀` should capture *the stability of the read-back* rather than the asymmetry itself — something like "the property of `L_0` in virtue of which the L₁ read-back converges across positions." But:
+- **No such candidate is presently specified in SRT.**
+- The two existing Shoshin / Apeiron formulations **do not qualify as bare-`L_0` candidates** (§3).
+- The obvious scalar non-neutrality role is **already occupied by `ε_pg`** — 「formal asymmetry favouring configurations with `B ≥ 2` over `B ≤ 1`… scalar seed, no inherent direction」.
 
-- convergence across positions is exactly `L0_Metaphysics §三`'s **objectivity** criterion, which is already a commitment and is **not** an additional `L_0` object;
-- and post-ST-A, SRT no longer claims the ISP-level direction is derived at all, so there is no established convergence for `π₀` to underwrite.
+**Therefore there is currently no positive warrant for adding another `L_0` commitment.** That is a verdict on the present candidate set, not a proof of impossibility.
+
+**The honest steelman.** One could argue `π₀` should capture *the stability of the read-back* rather than the asymmetry itself — "the property of `L_0` in virtue of which the L₁ read-back converges across positions." Two responses, neither of which is a proof of impossibility:
+
+- convergence across positions is already `L0_Metaphysics §三`'s **objectivity** criterion — a commitment SRT holds, not an additional `L_0` object;
+- post-ST-A, SRT no longer claims the ISP-level direction is derived at all, so there is at present no established convergence for `π₀` to underwrite. If that changes, so does this assessment.
 
 **For.** Would let `Def-Apeiron-1` and `Ax-Sho-1` be bridges *to a real `L_0` object* rather than to a read-back.
 
-**Against.** Everything above, plus: it adds an enforcement surface for a distinction whose prior track record is 0/2, in exchange for a naming convention.
+**Against.** Everything above, plus: with no candidate specified, adopting it would add an `L_0` commitment and an enforcement surface without a stated structural role to justify either.
 
 ---
 
@@ -161,32 +171,39 @@ So `π₀` either **fails T5** (it is `ε_pg` renamed) or **fails T1–T4** (it 
 | Criterion | A — strict layering | B — thin precursor |
 |---|---|---|
 | Consistency with current canonical | **already the stated position** (L0 anchor ×3, post-#784 第一命题) | requires a new class-A admission |
-| Survives Gate 0's T1–T5 | n/a — posits nothing | **no** — collapses on T5 into `ε_pg`, or on T1–T4 into class C |
-| Post-ST-A motivation | **strengthened** — the directional work is not claimed | **weakened** — its motivating inference was withdrawn |
+| Class-A admission status | n/a — posits nothing | **no qualifying candidate currently specified** (§5.1) |
+| Post-ST-A motivation | **strengthened** — the directional work is not claimed | **weakened** — one motivating inference was withdrawn (not refuted in principle) |
 | New commitments | 0 | 1 object + 1 enforcement surface |
 | Blast radius | none (already landed) | symbol table, L0 anchor, claim ladder §0A class-A list |
-| Failure record of its exclusions | n/a | **0/2** |
+| Existing formulations as bare-`L_0` candidates | n/a | neither `Ax-Sho-1` nor `Def-Apeiron-1` qualifies (content / reference commitments, **not** variational syntax) |
 | Effect on Physics / Spirituality | none (bridge status already correct) | would upgrade their referent — the only real gain |
 
 ---
 
 ## 7. Recommendation
 
-**Adopt Option A (strict layering), and close §16 on that basis.**
+**Adopt Option A, and close §16 as a current-admission verdict:**
 
-Reasoning, in one line: **Gate B is decidable now, and it decides itself** — Option B has no room to exist between T1–T4 (which push it into class C) and T5 (which pushes it into `ε_pg`).
+> **No additional `L_0` precursor of 初心 is currently admitted or required.** Under the present core, 初心 remains an L₁/P2 read-back; no distinct class-A precursor is added. A future candidate would require a **new Gate-0 admission** showing a non-redundant structural role.
 
-This is a stronger conclusion than the predecessor packet reached. That packet said "B honestly executed converges to A" but treated the convergence as an observation about the option space. With Gate 0's admission test written down and ST-A removing the motivating inference, the convergence is now **demonstrable against a stated criterion** rather than merely likely — and there is no remaining reason to keep §16 open pending it.
+Three things jointly favour A — none of them a proof of impossibility:
+
+1. **Minimum ontological commitment.** Adding an `L_0` object is a real commitment; the default is not to add one absent warrant.
+2. **Absence of an explanatory gap.** Nothing currently in the corpus needs a precursor to state what it states — and post-ST-A the directional work it was imagined to underwrite is not claimed (§0.2).
+3. **Absence of a T5-passing candidate.** None is presently specified (§5.1).
+
+This is deliberately **weaker** than the argument an earlier draft of this packet made. That draft claimed T1–T4 leave "no room" for a third object and that Gate B therefore "decides itself." That over-reaches: Gate 0 states class A is **open, not closed**, so the admission test cannot establish that no distinct precursor could ever exist. §16 can close on the current candidate set **without** upgrading "no qualifying candidate today" into "no candidate is logically possible."
 
 **What adopting A does *not* do:**
 
 1. It does **not** demote 初心. It stays a full L₁/P2 object with its phenomenology, its read-back role, and its domain use intact.
+1b. It does **not** assert that a precursor is impossible — only that none is **currently admitted or required**. §16 closes as a current-admission verdict with reopen conditions, not as a proof.
 2. It does **not** modify `Spirituality/` or `Physics/`. Their forms remain valid **as bridge/translation** — which is what they already are post-#784.
 3. It does **not** resolve the `κ₀` / `ε_pg` dependency relation (GOV-SUB01 Pass 2).
 4. It does **not** touch Gate C. §5b.1's global-convergence-vector phrasing and the "global optimum" terminology remain Gate C's (§1.1).
 5. It does **not** close class A generally. A future *different* class-A candidate may still be proposed; what closes is the **初心-precursor** question specifically.
 
-**If the author instead wants Option B**, the packet's position is that it should be rejected as stated and re-proposed only with a candidate `π₀` that names explicitly what it does that `ε_pg` does not (T5). Without that, adopting B would register a synonym as a commitment.
+**If the author instead wants Option B**, the packet's position is that it cannot be adopted *as currently stated*, because no candidate `π₀` has been specified. It should be re-proposed with a candidate that names explicitly what structural role it performs that the current class-A commitments do not (T5). Absent that, adopting B would register a commitment with no specified content.
 
 ---
 
@@ -196,11 +213,13 @@ Deliberately small — most of Gate B already landed with Gate 0.
 
 | # | Landing | File | Class |
 |---|---|---|---|
-| 1 | Mark §16 **resolved (Option A)**; record that the thin-precursor question is closed by the T1–T5 admission test, and that ST-A removed its motivating inference | `Core/SRT_OPEN_TENSIONS.md` | A |
-| 2 | One clause in the 初心 词条: 初心 has **no** `L_0` precursor; `L_0` commits to `ε_pg` and `κ₀`, and 初心 is read-back only | `Core_Law/SRT_L0_Metaphysics.md` | **B/C — freeze Group A, needs its own authorization** |
-| 3 | *(optional)* one line in Gate 0 §0A noting the 初心-precursor question was tested against class-A admission and closed — as worked precedent for how class A admission runs | `Governance/SRT_CLAIM_LADDER.md` | B |
+| 1 | Mark §16 **`RESOLVED — Option A / no additional precursor currently admitted`**, with the reopen conditions of §9 carried explicitly in the section | `Core/SRT_OPEN_TENSIONS.md` | A |
+| 2 | One clause in the 初心 词条: **no additional `L_0` precursor of 初心 is currently admitted or required**; `L_0` commits to `ε_pg` and `κ₀`; 初心 remains an L₁/P2 read-back; a future candidate would need a new Gate-0 admission showing a non-redundant structural role | `Core_Law/SRT_L0_Metaphysics.md` | **B/C — freeze Group A, needs its own authorization** |
 
-**Not on the list**: any `Spirituality/` or `Physics/` edit; any §5b.1/§5b.2 wording change; any symbol addition.
+**Not on the list**, and deliberately so:
+
+- any `Spirituality/` or `Physics/` edit; any §5b.1 / §5b.2 wording change; any symbol addition;
+- **any line in Gate 0 §0A recording this as precedent.** §0A is a *general* type rule; a Gate B verdict that depends on the **current candidate set** should not be written back into the general authority. If the precedent is worth keeping, its home is `Core/SRT_OPEN_TENSIONS.md §16` or this decision record.
 
 ---
 
