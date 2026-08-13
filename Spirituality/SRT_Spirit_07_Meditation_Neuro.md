@@ -60,8 +60,9 @@ $$ \text{ND} \Rightarrow \hat{G} \cap L_0 $$
 ### T-Med-2: The Bergson-SRT Filter Equation (柏格森-SRT 过滤方程)
 大脑不是意识的发生器，而是减压阀（Reducing Valve）。冥想是逆向调节 $\Psi_f$ 以扩大阀门带宽的过程：
 \[
-L_1(\text{Meditation}) = \int_{\Omega_{\text{expanded}}} e^{-\Psi_f(x)} \cdot L_0(x) dx
+L_1(\text{Meditation}) = \int_{\mathcal R_{\text{expanded}}} e^{-\Psi_f(x)} \cdot L_0(x) dx
 \]
+$\mathcal R_{\text{expanded}}$ 只表示本节具名练习模型中扩展后的候选域，不是 canonical 新符号、全局可达域或宇宙终点。
 * **Implication（中文）**：日常生活中，大脑作为 $\hat{G}_\theta$ 的 $L_2$，在绝大多数 $L_0$ 维度上施加极强的先验约束（习惯性预测模型、概念框架、自我模型），导致 $\Psi_f$ 在这些维度上被人为抬高，积分折叠为极窄的 $L_1$ 针孔。
 
 深层冥想（特别是 OM 和 ND 阶段）的作用机制是**悬置 $L_2$ 门控**（$w_{L_2} \to 0$），移除大脑预测模型叠加在自由能景观上的"人工势垒"。这不是"消除摩擦"，而是**移除虚假摩擦**（$L_2$ 强加的不必要约束），暴露更本征的自由能地形。同时，冥想者的注意向量从"消除预测误差"旋转到"观照当下"，使系统不再试图修正偏离，体验到的有效摩擦降低。

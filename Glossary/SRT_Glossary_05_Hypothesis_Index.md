@@ -108,8 +108,8 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - 位置：Core/SRT_Experimental_Applications.md §4.3
 - 风险：MEDIUM（d-value 道德化风险）
 
-**H16** 🔴 **相对L₀**
-- 内容：是否存在"绝对L₀"(Ω)可检验
+**H16** 🔴 **相对L₀（历史假设，C-A 后停驻）**
+- 内容：是否存在可检验的“绝对 L₀／全局算子”关系；不得使用 bare `Ω`，也不得把它当作当前正面对象
 - 位置：Core/SRT_Experimental_Applications.md §4.4
 - 风险：HIGH(哲学)
 
@@ -182,7 +182,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01]
 - 风险：LOW
 
 **H26** 🟡 **初心可测**
-- 内容：L₀自由能梯度∇F对应"初心"强度
+- 内容：在声明状态空间、泛函、时间域与测量映射的 L₁/P3 模型中，以自由能梯度或方向对齐作“初心”代理；不把 ∇F 定义为 L₀ 初心或独立前身
 - 位置：Core/SRT_Experimental_Applications.md §6.4
 - 风险：MEDIUM
 

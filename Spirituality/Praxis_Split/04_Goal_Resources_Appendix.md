@@ -231,7 +231,7 @@ SRT_Spirit_09_Praxis (本文件 - 综合实践)
 
 1. **三层选择阶梯** (Ax-Evo-1): $T(d)$ 按 $d$ 值分层为物理 ($d \approx 0$)、自我/社会 ($0 < d < d_c$)、神性/真理 ($d \geq d_c$) 三阶。
 2. **进化向量** (Ax-Evo-2): $\vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi)$ — 进化是 $d$ 上升、$L_2$ 刚性下降、摩擦对齐的方向场。
-3. **初心对齐** (Ax-Evo-3): $\text{Shoshin} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{global})$ — 初心是自我方向与全局自由能下降方向的余弦相似度。
+3. **初心对齐代理** (Ax-Evo-3): $\text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{\theta,\tau,K})$ — 初心只在具名有限模型中作方向相似度代理。
 4. **方向优先最优性** (T-Prax-1): $\mathbb{E}[F]_{dir} < \mathbb{E}[F]_{mech}$ under $C_{compute} < \infty$ — 有限算力下，方向优先比机制穷举更优。
 
 **含义**: 灵性实践不是"信仰跳跃"，而是可操作的 $d$ 值提升与方向对齐的动力学过程。

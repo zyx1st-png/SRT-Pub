@@ -449,19 +449,25 @@ d 值描述关切范围，不描述本体论存在。
 
 > **新增（2026-03-26）**：d 扩张的动力学方向与收敛目标的规范说明。对应 `Spirituality/SRT_Spirit_05_Shoshin.md` T-Sho-1。
 
-### §5b.1 d 扩张不是博爱，而是选择优化
+### §5b.1 d 扩张扩大处境化比较范围，不推出宇宙级最优
 
-d-value 的扩张不应被读作道德命令或利他主义要求。**d-value 的健康变化不应被理解为单调扩张，而是指向关切范围的可重组、可承担、可恢复、可再选择能力**；其「全局最优」读法**依赖一个尚待硬化的闭包边界问题**（谁的再选择、什么尺度），不是一个位置无关的宇宙级最小值（2026-07-05 规范性收口 Level A，高风险编辑，见 `_SRT_EPSILON_NORMATIVITY_OPEN_TENSION.md`）。本节下文与 §5b.2 中的「全局最优 / 全局收敛」表述均应在此收口下读取。
+d-value 的扩张不应被读作道德命令或利他主义要求。**d-value 的健康变化不应被理解为单调扩张，而是指向关切范围的可重组、可承担、可恢复、可再选择能力。** 每个选择都绑定于有限位置；改变一次选择所整合的关切范围，会改变被纳入的变量、后果回流和可比较候选，但不会自动给出唯一目标函数、跨主体聚合规则、时间范围或闭包边界。
 
-每个算子因 θ 的限制只能看到自由能景观的局部。θ 越窄，算子越容易陷入局部最小值——表现为遮蔽（occlusion）。扩大 d 不是"对别人好"——而是纳入更多主体间的本体论摩擦权衡，使选择避开局部陷阱，收敛到更接近全局最优的方向。
+因此，`d ↑` 只能支持一个较窄的判断：更宽的关切范围**可能**暴露原先被外包的后果、被遮蔽的可达路径或原模型没有纳入的冲突。它不保证新选择更优，也不推出一个位置无关的 universe-wide optimum。
 
-d 扩张的目标是给**指向最小自由能方向**的选择提供更多的注意力和关切。这需要权衡多主体之间的本体论摩擦——而权衡本身就是选择。
+**C-A 规范表述（作者裁决，2026-08-12）**：
 
-**规范表述**：
+$$
+d \uparrow
+\;\not\!\Rightarrow\;
+\text{universe-wide global optimum}
+\quad\text{and}\quad
+d \uparrow
+\;\not\!\Rightarrow\;
+\langle v,\text{Shoshin}\rangle>0 .
+$$
 
-$$d \uparrow \;\Rightarrow\; \text{局部最优} \to \text{全局最优} \;\Rightarrow\; \langle v, \text{Shoshin} \rangle > 0$$
-
-d 的扩张使个体选择方向与初心（全局收敛向量）对齐——不是因为道德义务，而是因为局部景观在更宽视野下的结构变形。
+只有当具名模型同时声明有限算子／位置、可达域、比较规则、时间范围与约束，并通过可延续、可协调、不外包、可再选择四重判据时，才可说某个候选在**该模型的可达域内**更优。初心在这里仍只是 L₁/P2 处境化回读或 P3/P4 代理方向；它不是全局终点，也不由 `d ↑` 单独推出。
 
 ### §5b.1a d 扩张与秩序增益
 
@@ -491,24 +497,40 @@ d 扩张的健康模式是渐进的、可支付的、保留调整能力的。不
 
 **Cross-ref**: `Core_Law/SRT_Selection_Argument.md §7c`（真关切与假关切的完整论证）。
 
-### §5b.2 全局最优是动态平衡，不是热寂
+### §5b.2 四义拆分：可达比较、规约性地平线与有限吸引子
 
-全局自由能最小值不是热力学平衡态（热寂），而是**能维持更多存在持续存在的动态平衡**。
+**C-A 不承认一个位置无关、宇宙尺度、带语义／评价内容的 global optimum 作为当前 SRT 的正面理论对象。** 本节只保留以下四义分界：
 
-热寂是所有选择停止、所有确定化耗尽的极限——对应 $d = 0$，所有主体性消失。这不是 SRT 的全局最优，而是选择过程的终止态。
+| 对象 | 当前地位 | 使用条件 |
+|---|---|---|
+| universe-wide semantic / evaluative optimum | 不准入当前正面理论对象 | 可作为历史主张、引文或未建立的高承诺世界观命题留痕，但不得承重 canonical 推导 |
+| operator-relative reachable optimum | P2/P3 条件对象 | 必须声明有限位置 `θ`、可达域、比较规则、时间范围、约束与失败条件；不满足时只能说「扩大比较范围」或「避免已知局部陷阱」 |
+| regulative horizon | L₁/P2 或 P5 方向语言 | 必须标明不可到达；不能充当公式中的终态、现实已达状态或 L₀ 对象 |
+| closure / model attractor | P3/P4 有限动力学对象 | 必须声明具体模型、吸引域与稳定语义；稳定、低摩擦或可达均不自动等于最优、善或生成健康 |
 
-SRT 的全局最优是一种使最大数量的选择过程能够持续运行、持续产生稳态（存在）的景观配置。它是**最高动态秩序**，不是最低能量的死寂。初心指向的是更多的存在能够共存并持续选择的方向，不是一切归于均匀的方向。
+在具名有限模型内，若确实需要最优化形式，可直接写全索引，例如：
+
+$$
+x^*_{\theta,\tau,K,J}
+\in
+\arg\min_{x\in\mathcal{R}_{\theta,\tau,K}}
+J_{\theta,\tau,K}(x).
+$$
+
+这里的 `x*` 只是该模型、该时域与该可达域内的候选；本节不为它注册 repo-wide 新符号，也不把它外推为宇宙终点。
+
+热寂相关论证相应降到更低负担的裸句：**一个没有持续选择、真实 stake 与后续可再选择的终止态，不能仅凭低成本或低摩擦被读成生成健康。** 这个排除判断不需要、也不证明存在一个与之相反的全局最优；「维持最大数量的选择过程」同样不是充分替代，因为它可能被大量低 stake、可替换过程刷高。
 
 > **引用方向护栏（2026-08-11，Gate 0 canonical landing）**：下列 cross-ref 是 **provenance 指针，不是 canonical 背书**。按 `Governance/SRT_CLAIM_LADDER.md §0A`（Gate 0）的 read-back / 引用方向规则：**canonical 锚点不得通过 cross-reference 从 `canonical: false` 的 bridge / translation 文件反向导入 L₀ 层读法**。本节此前把 `Def-Apeiron-1` 标注为「初心作为 **L₀ 的**倾向性结构」，即以 canonical 认可语气导入了一条 L₀ 级 contentful 读法（Gate 0 class C），现予改正。
 >
 > **层级以 `Core_Law/SRT_L0_Metaphysics.md` 为准**：初心不在 L₀ 的原生承诺内，是 L₁/P2 对无内容结构不对称之显现结果的回读。下列两处的全局／变分形式一律按**领域 translation / bridge** 读，不得反定义 L₀，也不得据以在 canonical 层建立「初心 = L₀ 倾向性结构」。
 >
-> **本护栏只堵引用方向，不裁决实质**：初心是否可以有某种严格 contentless 的 L₀ precursor，仍是 `Core/SRT_OPEN_TENSIONS.md §16`（Gate B）未决事项；「全局最优」术语的正式收口仍是 §17（Gate C）未决事项。本节正文措辞与 §5b.1 的 Level A 收口读法均未改动。
+> **B-A／C-A 后续裁决（2026-08-12）**：Gate B 与 Gate C 均已关闭。当前 canonical 不承认独立的 L₀「初心前身」，也不把 `ε_pg` 改名为该前身；初心从 L₁/P2 回读开始。下列公式只能作为具名、有限、完整声明作用域的 bridge / operational proxy 使用；无限时域或 universe-wide 读法不再是当前正面理论对象。
 
 **Cross-ref（provenance，非 canonical 背书）**：
 
-- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 — Spirituality 层 translation（`claim_mode: mixed`）：把初心写作长时程自由能泛函的负梯度。**按 bridge 读**；其全局收敛向量形式不构成 L₀ 主张。
-- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 — Physics 层 translation（`claim_mode: translation`，`canonical: false`）：把初心写作 `argmin` 变分形式。**按 bridge 读**；其「L₀ 的内在属性」措辞是该翻译层的表述，**不被本 canonical 文件采纳为 L₀ 层定位**（Gate B 待裁）。
+- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 — Spirituality 层 translation（`claim_mode: mixed`）：在声明有限时域与可行域的模型中，把初心写作自由能泛函的负梯度代理。**按 bridge 读**；不构成 L₀ 主张或 universe-wide convergence。
+- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 — Physics 层 translation（`claim_mode: translation`，`canonical: false`）：把初心写作 `argmin` 变分形式。**按 bridge 读**；原「L₀ 的内在属性」措辞已按 B-A 撤回，不构成 L₀ 定位。
 
 ---
 

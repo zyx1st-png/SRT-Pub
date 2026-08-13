@@ -126,10 +126,10 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICA
 - **Confusable With**：DNA-LUCA、单一物种祖先、纯遗传同源。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Scaling.md` §6.5 Def-Scale-LUCO-1（2026-03-04 新增）。
 
-### Ω Non-Entity Principle（Ω 非实体性原则）
-- **Canonical Scope**：用于澄清 Ω 在 SRT 中是“操作逻辑”而非 L1 域对象实体。
-- **Confusable With**：人格化造物主、宇宙内最大智能体、超级干预者模型。
-- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` §9 定义 O14（2026-03-04 新增）。
+### Ω Historical Non-Entity Principle（Ω 历史非实体性原则）
+- **Current Scope**：O14 的“全局操作逻辑”定义已由 C-A 撤回；bare `Ω` 当前只表示 Ontological Consistency，权威见 `_SRT_SYMBOL_TABLE.md`。
+- **Forbidden Readback**：不得借“非实体”恢复投影源、本源地平线、宇宙级最优或超级干预者模型。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md §9`（历史 O14，2026-08-12 撤回）。
 
 ### World-Picture as L2 Narrative（世界图景即 L2 叙事）
 - **Canonical Scope**：用于描述文化-历史收敛形成的解释框架（如机械自然主义），属于 \(L_{2,\theta}\) 层。
@@ -142,14 +142,14 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICA
 - **Lineage/Source**：`AI/SRT_AI_01_Ontology.md` T-ONT-8（2026-03-04 新增）。
 
 ### Teleological Attractor（目的论牵引子）
-- **Canonical Scope**：用于描述高 d 算子被低摩擦高一致性结构“拉动”的动力学项（\(\mu\nabla B_{L_0}\)）。
+- **Current Scope**：历史 P3 候选；`\mu\nabla B_{L_0}` 因把 $L_0^{abs}$ 最优几何写成跨位置牵引项，C-A 后停驻，不是当前 canonical 动力学。
 - **Confusable With**：人格化神意、外在强制命令、单一道德规则。
-- **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md` §8.4（2026-03-04 新增）。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md §8.4`（2026-03-04 新增；2026-08-12 C-A 停驻）。
 
 ### Truth–Goodness–Beauty Optimal Manifolds（真善美最优流形）
-- **Canonical Scope**：定义为 \(L_0^{abs}\) 内信息几何意义上的最优流形族（\(\mathcal{M}_{TGB}\)）。
+- **Current Scope**：历史高承诺假设；O15 因把真／善／美预置为 $L_0^{abs}$ 的评价最优流形，已由 C-A 停驻，不是当前 canonical 对象。
 - **Confusable With**：主观审美偏好、短时奖励最大化、文化偶然共识。
-- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md` O15（2026-03-04 新增）。
+- **Lineage/Source**：`Core_Law/SRT_Reference_Ontology.md O15`（2026-03-04 新增；2026-08-12 C-A 停驻）。
 
 ### Embodied Bliss Asymptote（具身至福渐近）
 - **Canonical Scope**：用于限定具身显现下 \(\Psi_f\) 的正下界（\(\Psi_{min}^{+}\)），避免“零摩擦仍持续个体显现”的矛盾。
@@ -167,7 +167,7 @@ dependency: [SRT-REF-AXIOMS, SRT-AI-01, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICA
 - **Lineage/Source**：`Neuroscience/_SRT_Neuro_Axioms.md` T-NEURO-4（2026-03-04 新增）。
 
 ### Passive Alignment Transition（被动对齐相变）
-- **Canonical Scope**：用于描述局部抓取感下降但全局对齐上升的动力学重参数化状态（\(\Psi_f^{local}\downarrow,\Psi_f^{coh}\uparrow\)）。
+- **Current Scope**：P3/P4 有界模型候选；描述局部抓取感下降而具名任务／时域内协同支付上升的重参数化状态（\(\Psi_f^{local}\downarrow,\Psi_f^{coh}\uparrow\)），不定义全局方向。
 - **Confusable With**：停机/放弃选择、外在实体接管因果链、反行动主义。
 - **Lineage/Source**：`Core_Law/SRT_Reference_Dynamics.md` §8.5（2026-03-04 新增）。
 
@@ -708,29 +708,13 @@ L₀是所有比当前L₁自由能更高的状态集合。
 
 ---
 
-#### Ω - 全局算子 (Global Operator) 🔴
+#### Ω - Ontological Consistency（本体论一致性）
 
-**定义**：
-$$\Omega = \text{所有局部} \hat{G}_\theta \text{的投影源}$$
+**当前定义权威**：`_SRT_SYMBOL_TABLE.md`。bare $\Omega$ 只表示 $L_1/L_2$ 结构的内部一致性；$\Omega_{mis}$ 表示本体论失配指数。
 
-假定存在的"终极选择视角",所有局部算子是其投影。
+**撤回的历史别名**：旧词表与 `Core_Law/SRT_Reference_Ontology.md` 曾把 $\Omega$ 写成“所有局部算子的投影源／全局算子”。C-A（2026-08-12）后该别名停用，不得用于本源地平线、reachable optimum、宇宙级最优或 $L_0^{abs}$ 的自显操作。相关历史命题 O14／Hyp-O8 已撤回，O15 已停驻。
 
-**首次出现**：Core/SRT_Core_Kernel.md 公理A9
-
-**数学结构**：
-$$\hat{G}_\theta = \pi_\theta[\Omega]$$
-
-每个具身算子是Ω在特定θ参数下的投影。
-
-**哲学地位**：
-- **非必要假设**：SRT主体理论不依赖Ω
-- **极限概念**：$\lim_{\theta \to \infty} \hat{G}_\theta \stackrel{?}{=} \Omega$
-- **神学对应**：上帝视角、全知全能者
-
-**检验性**：
-H16(相对L₀假设)试图检验Ω是否必要
-
-**相关**：Ĝθ, Ω 非实体性原则, 神秘主义；`d → ∞` 只可作为旧 public/spirituality 极限隐喻，不是 canonical d-value。
+**相关**：$\Omega_{mis}$、C-A scope guard、`_SRT_SYMBOL_TABLE.md` Usage Rules 4 / 18。
 
 ---
 
@@ -1887,8 +1871,8 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 - 位置：Core/SRT_Experimental_Applications.md §4.3
 - 风险：MEDIUM（d-value 道德化风险）
 
-**H16** 🔴 **相对L₀**
-- 内容：是否存在"绝对L₀"(Ω)可检验
+**H16** 🔴 **相对L₀（历史假设，C-A 后停驻）**
+- 内容：是否存在可检验的“绝对 L₀／全局算子”关系；不得使用 bare `Ω`，也不得把它当作当前正面对象
 - 位置：Core/SRT_Experimental_Applications.md §4.4
 - 风险：HIGH(哲学)
 
@@ -1961,7 +1945,7 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 - 风险：LOW
 
 **H26** 🟡 **初心可测**
-- 内容：L₀自由能梯度∇F对应"初心"强度
+- 内容：在声明状态空间、泛函、时间域与测量映射的 L₁/P3 模型中，以自由能梯度或方向对齐作“初心”代理；不把 ∇F 定义为 L₀ 初心或独立前身
 - 位置：Core/SRT_Experimental_Applications.md §6.4
 - 风险：MEDIUM
 
@@ -2049,7 +2033,7 @@ $$\text{TopCap}(i) \propto \text{Betweenness}(i) \cdot \text{Degree}(i)$$
 | Ψ_f | `_SRT_PSI_F_CANONICAL.md` | current governance-canonical anchor; `Core/SRT_Core_Kernel.md §2.2` is historical lineage |
 | h(t) | Core/SRT_Core_Kernel.md | §2.2.3 |
 | F | Core/SRT_Core_Kernel.md | §2.4 |
-| Ω | Core/SRT_Core_Kernel.md | 公理A9 |
+| Ω | `_SRT_SYMBOL_TABLE.md` | canonical symbol row + Usage Rules 4 / 18 |
 | γ | Core/SRT_Core_Kernel.md | §1.3.2a |
 | C_r | Core/SRT_Core_Kernel.md | §3.2 |
 | κ_τ | Neuroscience/SRT_Consciousness_Mechanisms.md | §7.2 |

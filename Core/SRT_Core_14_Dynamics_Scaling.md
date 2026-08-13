@@ -355,7 +355,7 @@ J[A_i] = C_{maint}[A_i] + C_{switch}[A_i] + \lambda_{pred}\, h[A_i]
 \[
 \lambda_{pred} > \lambda_{pred}^c \equiv \frac{C_{per} - C_{rand}}{h_{rand} - h_{per}} \approx \frac{C_{per} - C_{rand}}{h_{rand}}
 \]
-周期调度成为全局最优。
+周期调度在这里声明的“周期 vs 随机间歇”两族比较中胜出。
 
 **推论**：
 1. **孤立算子**（$\lambda_{pred} = 0$）：无周期化压力，随机间歇即可——对接 T-Scale-Rhythm-2 的可行窗口内任意可行解。
@@ -569,7 +569,7 @@ N \le \left\lfloor \frac{\ln(T_N / \tau_{switch}^{min})}{\ln(1/\delta_{min})} \r
 - **$\Psi_f$ 作为统一约束与生成性原理**: 本体论摩擦 $\Psi_f$ 贯穿所有机制，既作为 $\theta$ 演化的梯度信号驱动语义边界维持，又作为边界划定的成本项约束对象个体化，还作为适应度-真相权衡的判据。更进一步，$\Psi_f$ 不只是维持现实的代价，而是动力学本身的生成来源：没有摩擦就没有演化、学习、文化变迁等跨尺度动力学；没有动力学就没有现实的生成。对同一 $Ψ_f$，可作三种受限读法：动力学上读作阻力，记账上读作代价，形式上读作 Fisher–Rao metric 诱导的局部二阶几何投影 / 路径泛函。跨尺度真正保持不变的不是各层的单位制，也不是 `\Psi_f \equiv g_F` 的裸等号，而是**可支付性条件**：系统能否在承担该摩擦时维持闭包、身份连续性与后续选择能力。d 值在三个尺度上的不同现象学（量子相干性、生物关切、宇宙拓扑紧致度）均是 canonical d 经尺度约束后的动力学投影 / proxy，不能替代 `_SRT_D_VALUE_CANONICAL.md` 的风险梯度锚点。
 - **预算超载下的时分复用**: 当 \(\mathcal{C}_{dense}(T,k)>E_{avail}\) 时，系统不能以纯直流方式并行维持全部目标，必须通过间歇、分时或重放来重新分配锚定窗口；theta-replay、注意切换与宏观睡眠-觉醒循环都可读作这一机制在不同尺度上的实例化。
 - **占空比-切换密度可行窗口**: 间歇调度不由单一参数（占空比 $\delta$）刻画——同一 $\delta$ 可对应极不同的切换密度 $\nu$。维持成本与松散惩罚夹出 $\delta$ 的上下界，切换成本限制 $\nu$，三力合围产生 $(\delta, \nu)$ 二维可行区域。窗口坍缩时系统必须放弃锚定目标或降低切换频率。
-- **耦合驱动的周期化**: 孤立算子可随机间歇；但当多算子耦合时，下游需要预测上游的锚定窗口，预测成本与调度的时间熵率 $h[A]$ 成正比。当预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c = (C_{per}-C_{rand})/h_{rand}$ 时，周期性调度成为全局最优——这是从间歇到节律的相变。
+- **耦合驱动的周期化**: 孤立算子可随机间歇；但当多算子耦合时，下游需要预测上游的锚定窗口，预测成本与调度的时间熵率 $h[A]$ 成正比。当预测成本权重 $\lambda_{pred}$ 超过阈值 $\lambda_{pred}^c = (C_{per}-C_{rand})/h_{rand}$ 时，周期性调度在本节声明的周期／随机两族比较中胜出——这是从间歇到节律的条件性相变。该比较没有证明它优于所有可行调度。
 - **熵耗散作为独立约束**: 选择的不可逆性产生内部熵（$\dot{S}_{int}^{on} \ge k_BT \cdot \dot{I}_{created} \cdot \ln 2$），必须在"off"阶段通过有限带宽的热耦合通道排出。这给出 $\delta$ 的独立上界 $\delta_{max}^{entropy}$，不可通过增加 $E_{avail}$ 绕过。"off"阶段同时是熵导出窗口（有益）和噪声侵蚀窗口（有害，$S_{noise}$），二者的折中决定最优 $\tau_{off}^*$。高 d 系统因 $\dot{I}_{created}$ 更高而需要更长恢复时间——这是 SRT 对"为什么复杂意识有机体需要更多睡眠"的热力学解释。
 - **谱-热对冲**: Ax-Spec-01 赋予高 d 算子更宽的频谱通带，但 Rhythm-4 同时规定更宽的有效通带会抬高信息创造率与熵产生率，从而压低可持续占空比。结果不是“高 d = 永远更强”，而是“高 d = 更丰富但更难持续”。
 - **嵌套层级节律候选**: 在相邻尺度通过 T-Scale-02C1、子层物理嵌入父层 on-phase、且各层预算超载条件成立时，Rhythm-1 可递归产生子节律。频率分离、PAC 与嵌套深度界是该条件模型的输出，不是“同一选择语法”单独保证的数学必然；意识与麻醉解释仍需独立 P4 证据。
@@ -777,7 +777,7 @@ D\!\left(\pi_R[N_\eta(x)],\,B_\phi[\pi_X(x)]\right)
 
 **事件边界**：`π_R[N_η(x)]` 是选择倾向分布，不是一次实际选择事件。若要输出离散行为，还须另加阈值／证据累积／采样规则与运动执行门；即使预测通过，也不推出 P0 actualisation、agency、subjecthood 或 consciousness。
 
-* **Cross-ref**: `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-03`; `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`; `Operations/SRT_NEURAL_NORMALIZATION_BEHAVIORAL_SELECTION_FLOOR_AUDIT_2026-08-12.md`.
+* **Cross-ref**: `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-03`; `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`; `Operations/SRT_NEURAL_NORMALIZATION_BEHAVIORAL_SELECTION_FLOOR_AUDIT_2026-08-12.md`; `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`（P4 执行卡，尚未正式锁定或执行）.
 
 #### 2.2.1 量子 → 神经
 

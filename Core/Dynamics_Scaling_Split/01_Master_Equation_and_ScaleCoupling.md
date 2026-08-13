@@ -206,7 +206,7 @@ D\!\left(\pi_R[N_\eta(x)],\,B_\phi[\pi_X(x)]\right)
 
 **事件边界**：`π_R[N_η(x)]` 是选择倾向分布，不是一次实际选择事件。若要输出离散行为，还须另加阈值／证据累积／采样规则与运动执行门；即使预测通过，也不推出 P0 actualisation、agency、subjecthood 或 consciousness。
 
-* **Cross-ref**: `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-03`; `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`; `Operations/SRT_NEURAL_NORMALIZATION_BEHAVIORAL_SELECTION_FLOOR_AUDIT_2026-08-12.md`.
+* **Cross-ref**: `Core/SRT_Core_13a_Operator_Basics.md Ax-Op-03`; `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B12`; `Operations/SRT_NEURAL_NORMALIZATION_BEHAVIORAL_SELECTION_FLOOR_AUDIT_2026-08-12.md`; `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`（P4 执行卡，尚未正式锁定或执行）.
 
 #### 2.2.1 量子 → 神经
 

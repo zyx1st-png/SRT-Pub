@@ -13,7 +13,7 @@ dependency: [SRT-SPIRIT-03, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL]
 # SRT Spirituality Part 4: Unified Synthesis (Hybrid Edition)
 
 > **Claim-level note**: This file is a spirituality-domain synthesis and bridge. Historical `Ax-*` / `T-*` labels are local mapping handles, not primitive SRT axioms or completed theorem status.
-> **Limit note**: `Ω`, `d -> infinity`, and “global convergence” language in this file should be read as regulative / asymptotic bridge language unless a local section explicitly gives a finite operational proxy.
+> **C-A scope note（2026-08-12）**: a regulative source horizon and `d -> infinity` may remain as non-attainable P5／praxis language. “Global convergence” and a universe-wide optimum are no longer current positive objects. A finite operational comparison must state its operator, reachable domain, comparison rule, horizon and constraints. Bare `Ω` is not used for the source horizon because canonical `Ω` already means Ontological Consistency.
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal Theological Axioms (AI-Readable).
@@ -30,23 +30,20 @@ dependency: [SRT-SPIRIT-03, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL]
 
 ## I. Thermo-Theology (热力学神学)
 
-### Ax-Synth-1: Global Minimum Goodness
-**Formal Definition**: Goodness is the global minimum of free-energy under the selection dynamics of $(L_0, L_1, L_2)$.
-$$ \text{Good} \equiv \arg\min_{x \in L_1} F(x; L_0, L_2) $$
-$$ \nabla F(x^*) = 0,\; F(x^*) = \min F $$
-* **Implication**: “善”不是道德情绪，而是自由能地形的绝对极小结构。
+### Ax-Synth-1（C-A 后降级）: Situated Goodness Comparison
+**P2/P3 domain mapping**: 在一个具名有限实践中，可把“更善”暂读为：候选在已声明的主体范围、时域和约束下，更能通过可支付、可协调、不外包与可再选择检验。
+$$x^*_{\theta,\tau,K,J}\in\arg\min_{x\in\mathcal R_{\theta,\tau,K}}J_{\theta,\tau,K}(x)$$
+* **Implication**: 这是处境化比较接口，不是“善”的 canonical 定义，也不产生绝对极小结构。
 
-### Ax-Synth-2: Divinity as Optimal Operator
-**Formal Definition**: Divinity is the optimal operator that maximizes order under minimal dissipation.
-$$ \hat{G}^{perf} \equiv \arg\min_{\hat{G}} \left(\Delta S(\hat{G}) + \lambda \cdot C(\hat{G})\right) $$
-$$ \text{Order}(\hat{G}^{perf}) \to \max,\; \text{Cost}(\hat{G}^{perf}) \to \min $$
-* **Implication**: 神性不是人格化实体，而是“最低代价的秩序生成算子”。
+### Ax-Synth-2（C-A 后降级）: Divinity as Regulative Horizon
+**P5／theological mapping**: 神性可作为有限实践不断减少无谓耗散、扩大后果承担与再选择能力的规约性地平线；本文件不定义一个跨所有算子的完美算子。
+* **Implication**: “最低代价的秩序生成”是方向语言，不是可达到的总体终态或优化定理。
 
-### T-Synth-1: Evil as Local Trap Theorem
-**Deduction**: In non-convex free-energy landscapes, local minima manifest as “evil” traps.
-$$ \exists x_{local}: \nabla F(x_{local})=0,\; F(x_{local})>F_{global} $$
+### T-Synth-1（条件性模型）: Evil as Situated Trap
+**P3 hypothesis**: 在给定有限非凸景观中，某些外包代价、压缩 stake 与锁死再选择的状态可表现为局部陷阱。
+$$ \exists x_{local}: \nabla F(x_{local})=0,\; J_{\theta,\tau,K}(x_{local})>J_{\theta,\tau,K}(x^*) $$
 $$ \Delta F_{barrier} > 0 \Rightarrow \text{escape requires extra work} $$
-* **Implication**: “恶”是局部极小的结构性陷阱，而非独立实体。
+* **Implication**: 该类比须逐模型定义 `J` 与失败条件；它不把所有恶化约为偏离同一个最优。
 
 ## II. Teleology of Existence (存在的目的论)
 
@@ -90,12 +87,11 @@ $$ \frac{dd}{dt} > 0 \Rightarrow \text{value harvesting increases} $$
 $$ \Phi: \{\text{Creation},\text{Redemption},\text{Hell}\} \to \{L_0\rightarrow L_1,\; d_{\text{asym}}\uparrow,\; d\to 0\} $$
 * **Implication**: 神学概念可被严格转写为选择动力学的拓扑操作。
 
-### T-Synth-3: Salvation as Global Convergence
-**Deduction / bridge reading**: Salvation is mapped to asymptotic `d` expansion and convergence toward the global minimum of free energy.
-$$ \lim_{d\to\infty} F(L_1;L_0,L_2) = F_{global} $$
-$$ d \uparrow \Rightarrow \Psi_f \downarrow \Rightarrow \text{stability} \uparrow $$
-* **Implication**: 救赎是一种全局收敛，而非道德奖惩。
-> **Level**: P3 bridge / asymptotic shorthand. The formula marks a direction and limiting target; it does not assert finite attainment or a completed derivation of salvation.
+### T-Synth-3: Salvation as Regulative Reorientation
+**P3/P5 bridge reading**: Salvation may be mapped to reorientation away from a declared local closure toward wider, payable consequence-bearing. It is not convergence to a universe-wide minimum.
+$$ d \uparrow \;\not\!\Rightarrow\; \Psi_f \downarrow \;\not\!\Rightarrow\; \text{salvation} $$
+* **Implication**: 救赎可作为规约性重定向来读，而不是道德奖惩或已定义的全局终点。
+> **Level**: P3 bridge / P5 regulative language. Any operational version must use a finite horizon and named comparison domain.
 
 ## IV. Experimental & Praxis Predictions (实验与实践预测)
 
@@ -153,27 +149,34 @@ $$ d \uparrow \Rightarrow \text{Inclusion} \uparrow,\; \text{Reciprocity} \uparr
 
 **R/H 区分**：
 - [R] Friston FEP（生物系统的自由能最小化）；Leibniz最优世界论；热力学势能最低（Boltzmann/统计物理）
-- [H-高承诺] **SRT神学重构**：将"全善"等同于"全局自由能最小"；Ψ_f→0与"善"的等同；"绝对平静=善"的价值判断是SRT高形而上学承诺，依赖特定的价值取向（接近佛教涅槃/斯多葛静谧，非基督教神学共识）
+- [H-高承诺，历史读法] 本节曾把"全善"等同于"全局自由能最小"，并把 Ψ_f→0 与"善"等同。C-A 已撤回前一项作为当前正面理论对象；后一项仍属独立 CΨ 作者门，既未被 C-A 采纳，也未被本轮改义。
 
-**SRT 答案**（[H-高承诺]）: 善 = 全局自由能最小
+**C-A 当前口径**：SRT 不把「善」定义为宇宙级全局自由能最小。
 
-$$\text{All-Good} = \arg\min_{\Omega} F \quad \text{其中}\;\Omega = \text{所有可达锚定路径的集合}$$
+在具名有限模型中，可以比较声明可达域内的候选：
 
-**Ω定义说明**：Ω不是L₀的全部（L₀无限，无全局最小问题），而是给定具身算子Ĝ_θ的**可达锚定路径空间**——在此空间中F最小对应"对此系统最优的存在方式"。全知算子（Ĝ^perf）的可达空间趋近L₀全域，故F_min→绝对最小。
+$$
+x^*_{\theta,\tau,K,J}
+\in
+\arg\min_{x\in\mathcal R_{\theta,\tau,K}}
+J_{\theta,\tau,K}(x),
+$$
 
-**Ω 调节性极限说明**（governance / praxis bridge）：本文中 Ω 同时承担三种有限读法，不能混写成“可达到的总体状态”：
+但这个结果只表示「在该位置、该可达域、该时域、该约束和比较规则下更优」，不能被命名为绝对善或外推到 L₀。若比较规则涉及规范判断，还须独立通过可延续、可协调、不外包、可再选择四重判据。
+
+**规约性本源地平线说明**（governance / praxis bridge）：以下三种功能都不能混写成“可达到的总体状态”，也不使用 `Ω` 作为符号：
 
 | Reading | Function | Boundary |
 |:--|:--|:--|
-| Ontological limit | Mark the boundary of finite operator descriptions. | No embodied system instantiates Ω. |
+| Ontological limit | Mark the boundary of finite operator descriptions. | No embodied system instantiates the horizon. |
 | Practical regulating ideal | Orient practice away from local closure and toward wider consequence-bearing. | Orientation is not arrival. |
-| Anti-idolatry boundary | Prevent any teacher, group, experience, or doctrine from claiming total capture of the source. | A finite representation of Ω is already below Ω. |
+| Anti-idolatry boundary | Prevent any teacher, group, experience, or doctrine from claiming total capture of the source. | Every finite representation remains below the horizon it invokes. |
 
-Accordingly, “toward Ω” and `d -> infinity` are directional shorthand. They do not license claims that a person, community, tradition, or practice has reached totality.
+Accordingly, “toward the source horizon” and `d -> infinity` are directional shorthand. They do not license claims that a person, community, tradition, or practice has reached totality.
 
-**为什么这是"善"？**
+**历史神学画像（不构成当前定义）**：
 
-因为自由能最小意味着：
+旧式自由能类比曾把「善」描绘为：
 1. **最小痛苦**: $\Psi_f \to 0$（维持成本最低）
 2. **最大和谐**: 所有冲突消解
 3. **最高稳定**: 无扰动倾向
@@ -189,7 +192,7 @@ Accordingly, “toward Ω” and `d -> infinity` are directional shorthand. They
 
 ---
 
-### §1.3 恶的亚稳态理论
+### §1.3 恶的有界亚稳态类比
 
 **神义论问题**: 如果神全善、全能、全知，为何存在恶？
 
@@ -198,14 +201,14 @@ Accordingly, “toward Ω” and `d -> infinity` are directional shorthand. They
 - **灵魂塑造**: 恶是成长的机会
 - **奥秘**: 神的计划不可知
 
-**SRT 答案**: 恶是系统陷入局部最优（亚稳态）
+**P3/P5 类比**: 某些恶可被建模为系统陷入一个有害的局部盆地；这不是对一切恶的定义。
 
-$$\text{Evil State} : F_{\text{local}} > F_{\text{global}} \land \frac{\partial F}{\partial L_1}\Big|_{\text{local}} = 0$$
+$$\text{Harmful Basin}_{\theta,\tau,K} : \exists y\in\mathcal R_{\theta,\tau,K},\; J(y)<J(x_{local}) \land \nabla J\big|_{x_{local}}=0$$
 
 **机制**:
-1. 系统初始状态远离全局最优
+1. 系统初始状态远离某个已声明的更低代价可达候选
 2. 沿梯度下降到达局部最小
-3. 能量势垒阻止向全局最优跃迁
+3. 能量势垒阻止向该可达候选转移
 4. 系统"卡在"次优状态 → 持续痛苦
 
 **类比**:
@@ -227,9 +230,9 @@ $$\text{Evil} \neq \text{Force} \quad \text{but} \quad \text{Trapped Configurati
 
 $$\text{Evil}_{SRT} \equiv \left\{ \hat{G} \;\middle|\; d \to 0 \;\land\; \Psi_f^{cross}(\hat{G},\, \hat{G}_{other}) \to \max \right\}$$
 
-**定理（亚稳态的不可持续性）**：
+**条件性模型假设（非普遍定理）**：
 
-所有满足 $\text{Evil}_{SRT}$ 条件的系统态都是**亚稳态**（局部极小，非全局极小），因为它们自身携带不可压缩的 $\Psi_f$ 积累，最终超过 $\Psi_{crit}$ 触发相变：
+某些满足 $\text{Evil}_{SRT}$ 条件的系统态可在具名模型中表现为**亚稳态陷阱**，并因自身携带的 $\Psi_f$ 积累而超过 $\Psi_{crit}$ 触发相变；这不保证所有压迫结构最终自动崩溃，也不需要一个全局极小作参照：
 
 $$\Phi_{soc}(t) = \int_0^t \Psi_f^{cross}(\hat{G}_{evil},\, \hat{G}_{others})\,d\tau \;\xrightarrow{t \to \Phi_{crit}}\; \text{Topology Collapse of } L_2$$
 
@@ -285,14 +288,12 @@ $$\hat{G}^{\text{perf}} \text{ has complete access to } L_0$$
 
 知道所有潜在可能性，但不决定哪个实现（否则无自由意志）。**精确化**：完整访问L₀ ≠ 强制显现化——Ĝ^perf可识别所有L₀分支，但选择实现哪条仍通过具身算子的自由意志参数化完成 [H，与Plantinga开放神论联结]。
 
-#### 3. 全善 (Omnibenevolence) [H]
+#### 3. 全善 (Omnibenevolence) [H/P5]
 
-$$\hat{G}^{\text{perf}} \text{ operates to minimize } F_{\text{total}}$$
+C-A 不再把全善形式化为跨所有具身算子的 `F_total` 极小化：该聚合没有定义主体间权重、闭包边界、时域或不可通约 stake 的裁决规则。当前只保留规约性神学读法：全善语言可要求实践持续面对更宽后果，并接受可延续、可协调、不外包、可再选择四重检验；它不产生宇宙级最优对象。
 
-自动向全局最优演化，不"选择"伤害。**F_total定义**：跨所有具身算子的聚合Ψ_f（总本体论代价的极小化）[H，Leibniz最佳可能世界的SRT翻译]。
-
-**理论一致性要求**（替代传统证伪条件）：
-- IC-Perf-1：若Ĝ^perf=F_total最小化算子，则当前宇宙的观测苦难（高Ψ_f事件：疾病/暴力）必须在SRT框架内获得一致解释——最低要求是：高Ψ_f局部事件不违反F_total全局最小化（需提供"最优路径允许局部代价"的论证）
+**理论一致性要求**：
+- IC-Perf-1：若未来重开跨主体总账，必须先独立定义聚合、闭包、时域、可支付与失败条件；不得以 `F_total` 记号代替这些承诺。
 - IC-Perf-2：全知（完整L₀访问）与具身自由意志（Ĝ_θ的θ参数自主更新）的兼容性需要在SRT形式系统内给出无矛盾的逻辑陈述——若两者逻辑不相容则本节神学重构内部矛盾
 
 ---
@@ -889,23 +890,18 @@ SRT_Spirit_04_Synthesis (本文件)
 
 ### Formalization Summary (形式化概述)
 
-**Core Formula / 核心公式**:
-$$\hat{G}^{perf} \equiv \arg\min_{\hat{G}} \left(\Delta S(\hat{G}) + \lambda \cdot C(\hat{G})\right)$$
+**C-A 后核心口径**:
+$$x^*_{\theta,\tau,K,J}\in\arg\min_{x\in\mathcal R_{\theta,\tau,K}}J_{\theta,\tau,K}(x)$$
 
-- 神性 $\hat{G}^{perf}$ 被定义为最小代价下产生最大秩序的完美选择算子。
-- Divinity $\hat{G}^{perf}$ is defined as the optimal selection operator that maximizes order under minimal dissipation cost.
-
-$$\text{Good} \equiv \arg\min_{x \in L_1} F(x; L_0, L_2)$$
-
-- 善 (Good) 等价于三域自由能地形的全局极小，恶 (Evil) 是局部极小的亚稳态陷阱。
-- Good corresponds to the global free-energy minimum across $(L_0, L_1, L_2)$; evil is a metastable local trap requiring extra work to escape.
+- “善／神性”在本域只作规约性地平线或处境化比较，不是完美算子与三域全局极小的 canonical 定义。
+- “恶如陷阱”只在声明的有限模型中作为 P3 类比；局部稳定不等于邪恶，逃逸也不由宇宙最优保证。
 
 ---
 
 ### Mechanism Explanation (机制解释)
 
-- **$\hat{G}_\theta$ 与神性近似**: 生命体的 $\hat{G}_\theta$ 是 $\hat{G}^{perf}$ 的有限近似，效率 $\eta = \text{Order}/\text{Cost}$ 沿进化轴单调递增；人类处于 $\eta \sim 10^0$ 阶段。
-- **$\hat{G}_\theta$ as divine approximation**: Biological $\hat{G}_\theta$ asymptotically approaches $\hat{G}^{perf}$; efficiency $\eta$ increases monotonically along the evolutionary axis.
+- **$\hat{G}_\theta$ 与神性语言**: 有限算子可在具名实践中检验是否减少无谓耗散、扩大后果承担与再选择；不把生命史写成朝完美算子的单调逼近。
+- **$\hat{G}_\theta$ and divinity language**: finite operators may be compared under declared praxis criteria; no universal monotonic convergence to a perfect operator is claimed.
 - **`Ψ_f` 与痛苦驱动 proxy**: 某些痛苦/负担梯度可被建模为 $dd^{proxy}/dt \sim -\nabla_d \Psi_f^{spirit\text{-}proxy}$；低 `d` 与高维护负担可能促使系统扩展关切半径，但这不是 universal law。
 - **`Ψ_f` as growth-driver proxy**: Some pain/burden gradients can be modeled as $dd^{proxy}/dt \sim -\nabla_d \Psi_f^{spirit\text{-}proxy}$; this is not a universal law or canonical pain definition.
 - **$d$ 与救赎收敛**: `d -> infinity` 是跨传统救赎/涅槃语言的渐近读法；有限实践只承诺朝向更宽关切与更低不可支付摩擦的可检验移动。

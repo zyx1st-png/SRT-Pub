@@ -15,6 +15,7 @@ dependency: [SRT-PHYSICS-COMPACT-REGISTRY, SRT-PHYS-08, SRT-PHYS-07-COMPACT-CORE
 > **定位**：本文件是 `SRT_Phys_08_Ontology_Ext.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 在 Physics 板块中最深的本体论延伸：意识、选择因果、泛经验场、Apeiron 与病态选择。  
 > **关系**：不替代原文；原文保留棱镜隐喻、Bohm 主动信息、Russellian Monism 与临床映射的完整展开。
+> **B-A／C-A 护栏（2026-08-12）**：本文件中的初心变分式是具名有限模型内的 L₁/P3 Physics bridge，不是 L₀ 定义、独立前身、无限时域终点或宇宙级最优；`ε_pg` 保持无内容结构角色。
 
 ## 1. 核心问题
 
@@ -146,16 +147,16 @@ L_1(\theta)=\text{Unbind}_\theta(\mathcal U)=\hat G_\theta[\mathcal U]
 ### 7.2 Dispositional Structure
 SRT 同时强调：
 - `L_0` 不是均匀混沌
-- 它内部有倾向性结构
-- 某些方向更易被选择
+- 它承载无内容结构不对称
+- 在声明参考结构的领域投影中，路径可呈现不同可行性或代价；这不等于 `L_0` 自带语义目标
 
-### 7.3 Original Intention
+### 7.3 Original Intention Bridge
 \[
 \text{Original Intention}=\arg\min_{\text{direction}}\int_0^\infty F[\sigma(t)]dt
 \]
 
-这给“初心”一个 SRT 版本：
-> **初心不是外加目的论，而是 `L_0` 内部低自由能方向的拓扑偏好。**
+这给“初心”一个 Physics 领域代理：
+> **在状态空间、自由能泛函、可行域与时间域都已声明的模型内，可把该变分方向作为 L₁ 初心的 P3 bridge；它不定义 `L_0`，也不引入 L₀「初心前身」。**
 
 ---
 

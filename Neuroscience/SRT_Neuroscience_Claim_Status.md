@@ -9,6 +9,7 @@ claim_mode: audit
 canonical: false
 claim_level: P2-P5
 dependency: [SRT-NEURO-AXIOMS-CLAIM-STATUS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-AI-CLAIM-STATUS, SRT-PHILOSOPHY-CLAIM-STATUS]
+updated: 2026-08-12
 ---
 
 # SRT Neuroscience / Clinical Claim Status
@@ -26,6 +27,8 @@ dependency: [SRT-NEURO-AXIOMS-CLAIM-STATUS, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANO
 - NDE / psychedelic / self-dissolution interpretation: P4/P5 phenomenological bridge;
 - AI consciousness comparison: P3 bridge only when architecture-state is explicit;
 - BioQuantum mechanism mapping: P3/P4 hypothesis unless independently replicated and causally bridged from molecular to neural scale.
+
+**C-A scope guard（2026-08-12）**: broader neural integration, field coherence, global availability, higher PCI／Φ, or more accessible paths do not imply canonical `d↑` or approach to a universe-wide optimum. Any neural optimization claim must name its task, candidate set, readout, horizon, constraints and rival models; “global” in global workspace／whole-brain state is a system-scope term, not C-A's prohibited universe-global optimum.
 
 ---
 

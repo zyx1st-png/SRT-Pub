@@ -143,7 +143,7 @@ For readers who want the final doctrinal shape rather than the staging path, rea
 - `d` 值最早增加首先纳入选择主体本身而非新对象
 - 关切结构同时增厚：长时自我 + 被牵连存在 + 未来再选择空间
 - 新方向最早以生理—情绪层"更轻"出现，非以观念出现
-- 真轻 vs 伪轻：全局收敛 vs 局部收敛
+- 真轻 vs 伪轻：有界跨窗结算 vs 局部减压
 - 再选择空间：价值维度与存在方式的重新打开
 - 新预期两阶段形成：开放 → 重新收敛
 

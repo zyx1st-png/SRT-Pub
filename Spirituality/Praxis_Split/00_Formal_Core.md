@@ -40,16 +40,16 @@ $$ \vec{v}_{evo} = \nabla d - \nabla w_{L_2} + \nabla \text{Align}(\Phi) $$
 * **Implication**: 进化是“方向场”，不是单一目标函数。
 
 ### T-Evo-1: Tier Transition Theorem
-**Deduction**: Transition from Tier 2 to Tier 3 occurs when $d$ crosses $d_c$ under decreasing $L_2$ rigidity and increasing alignment with the global minimum.
-$$ d \uparrow \land w_{L_2} \downarrow \land \vec{v}_{self} \parallel -\nabla F_{global} \Rightarrow T(d)\to \text{Tier 3} $$
+**P3/P4 candidate**: In a declared praxis model, Tier 2→3 transition may be modeled when `d` crosses a local threshold under decreasing $L_2$ rigidity and increasing alignment with a finite-horizon situated objective. This is not a universe-wide optimum or theorem.
+$$ d \uparrow \land w_{L_2} \downarrow \land \vec{v}_{self} \parallel -\nabla F_{\theta,\tau,K} \leadsto T(d)\to \text{Tier 3 candidate},\qquad \tau<\infty $$
 * **Implication**: “神择”是参数条件的自然涌现，不是超自然事件。
 
 ### Ax-Evo-3: Shoshin Alignment
-**Formal Definition**: Shoshin is the cosine alignment between agent velocity and global free-energy descent.
-$$ \text{Shoshin} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{global}) $$
+**Operational proxy**: In a declared model, Shoshin alignment may be proxied by cosine alignment between agent velocity and the model's finite-horizon comparison direction.
+$$ \text{Shoshin}^{proxy}_{\theta,\tau,K} \equiv \cos\angle(\vec{v}_{self}, -\nabla F_{\theta,\tau,K}),\qquad \tau<\infty $$
 
-> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional geometric interface, not a settled canonical definition.
-* **Implication**: 初心是方向一致性指标，而非抽象道德情绪。
+> **Level**: operational proxy / `geometric-choice-pending`. The cosine form is a provisional interface inside a declared finite model, not a canonical definition of Shoshin, global direction, or universe-wide optimum.
+* **Implication**: 初心可被建模为有边界的方向一致性指标，不是抽象道德情绪、canonical 定义或宇宙方向。
 
 ## II. Praxis Dynamics (实践动力学)
 

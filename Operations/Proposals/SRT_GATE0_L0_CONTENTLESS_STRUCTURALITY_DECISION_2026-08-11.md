@@ -23,7 +23,7 @@ tags: [Governance, Proposal, Gate0, L0, TypeRule, DecisionGate]
 
 # Gate 0 — L₀ Contentless Structurality Boundary (author verdict packet)
 
-> **Status**: non-canonical Operations proposal. **Nothing here is applied.** It modifies no axiom, theorem, definition, equation, symbol, or canonical stance, and it does **not** execute Gate A, B, or C.
+> **Status / subsequent history**: this is the non-canonical Gate 0 proposal and adjudication record. Gate 0 was subsequently adopted and landed in `Governance/SRT_CLAIM_LADDER.md §0A`; this file itself remains non-canonical and does not define the live rule. Gate A was later closed by EX-A, Gate B by B-A, and Gate C by C-A (`Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`). CΨ remains separate and open. The prose below records what Gate 0 itself did and did not decide at adoption time.
 >
 > **Purpose**: Gates A, B and C were registered separately (`Core/SRT_OPEN_TENSIONS.md §15 / §16 / §17`) but share one upstream question. This packet proposes the **boundary rule** that would settle what all three are arguing about, so that each gate is then decided *under* a stated type discipline rather than each inventing its own.
 >
@@ -228,6 +228,8 @@ This is a class-B admission gap (§1.1a), not a class-C content prohibition. The
 **What Gate 0 does *not* do for Gate B:** it does not by itself close Option B (the thin L₀ precursor). A contentless formal precursor of 初心 would be *type-admissible* under G0-1. What Gate 0 adds is that its four exclusions become **enforceable as a type rule** rather than a prose intention — which is precisely what the predecessor packet found had failed 2/2. So Gate 0 makes Option B *decidable*; it does not decide it.
 
 ### 3.3 Gate C
+
+> **Subsequent verdict (2026-08-12)**: author selected C-A. The three permitted objects below were explicitly separated; universe-wide semantic／evaluative optimum was withdrawn as a current positive object. Gate 0 did not itself make that decision.
 
 **Does Gate 0 exclude a universe-wide global optimum as an unconditional L₀ positive object?** **Yes** — G0-2, directly: a complete ranking of latent possibilities is the paradigm case of content written globally.
 

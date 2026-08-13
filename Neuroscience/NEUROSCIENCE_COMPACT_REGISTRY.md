@@ -50,6 +50,8 @@ Neuroscience 现在采用五层结构：
 ### D. Hardening / Lab Draft Layer
 
 - `SRT_Neuroscience_Hardening_N1_N9_v0_1.md` — full staging draft for the 2026-04 N1-N9 neuroscience hardening cycle. Non-canonical unless later promoted through the claim ladder.
+- `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` — local P4 execution card for one bounded neural divisive-normalization → frozen readout → task-choice test. Card-defined only; not formally locked or executed.
+- `SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md` — W0 public-source inventory, Lane A access gate, and unsent minimum data/code request; access remains unknown.
 - `_SRT_Neuroscience_Hardening_Index.md` — domain index for hardening drafts and Pipeline 1 material patches.
 - `patches/` and `hooks/` — Pipeline 1 patch notes and integration hooks. These are bridge records, not canonical definitions.
 
@@ -85,9 +87,10 @@ Neuroscience 现在采用五层结构：
 ### research / lab path
 
 1. `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`
-2. `SRT_Neural_Mechanisms_CompactCore.md` §10 experimental roadmap
-3. `SRT_Consciousness_Mechanisms_CompactCore.md` boundary cases and hardest objections
-4. `SRT_Clin_00_IIT_PCI.md`
+2. `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`（for the selected local P4 workline）
+3. `SRT_Neural_Mechanisms_CompactCore.md` §10 experimental roadmap
+4. `SRT_Consciousness_Mechanisms_CompactCore.md` boundary cases and hardest objections
+5. `SRT_Clin_00_IIT_PCI.md`
 
 ### 第二层展开
 
@@ -104,7 +107,7 @@ Neuroscience 现在采用五层结构：
 | Claim-status audit | `SRT_Neuro_Axioms_Claim_Status.md` | classifies claim status of `_SRT_Neuro_Axioms.md` | audit, not replacement |
 | Canonical-facing bridge | `_SRT_Neuro_Axioms.md` | formal neuro bridge and historical axiom/discourse container | hybrid; not all internal claims are canonical |
 | Compact core | `SRT_Neural_Mechanisms_CompactCore.md`, `SRT_Consciousness_Mechanisms_CompactCore.md` | current concise formal neuroscience summary | hardening content is bridge/lab unless promoted |
-| Hardening draft / material patches | `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`, `_SRT_Neuroscience_Hardening_Index.md`, `patches/`, `hooks/` | full N1-N9 staging record plus Pipeline 1 neuroscience patch records | non-canonical working drafts / bridge records |
+| Hardening draft / lab card / material patches | `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`, `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`, `_SRT_Neuroscience_Hardening_Index.md`, `patches/`, `hooks/` | full N1-N9 staging record, bounded P4 execution card, and Pipeline 1 neuroscience patch records | non-canonical working drafts / bridge records |
 | Longform | `SRT_Neural_Mechanisms.md`, `SRT_Consciousness_Mechanisms.md` | expanded material | may lag compact core |
 | Measurement | `SRT_Clin_00_IIT_PCI.md` | clinical / PCI / IIT interface | measurement proxies are not identities |
 
@@ -121,7 +124,7 @@ Neuroscience 现在采用五层结构：
 | N5 `d-value` | `SRT_Neural_Mechanisms_CompactCore.md` | N1-N9 draft |
 | N6 consciousness as stable concern-weighted `L1` | `SRT_Consciousness_Mechanisms_CompactCore.md` | `SRT_Clin_00_IIT_PCI.md` |
 | N7 psychopathology | both compact core files | N1-N9 draft |
-| N8 experimental roadmap | `SRT_Neural_Mechanisms_CompactCore.md` | future experimental roadmap file |
+| N8 experimental roadmap | `SRT_Neural_Mechanisms_CompactCore.md` | `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` for the first selected bounded workline |
 | N9 mainstream-theory distinction | `SRT_Neural_Mechanisms_CompactCore.md` | N1-N9 draft |
 
 ---
@@ -131,7 +134,7 @@ Neuroscience 现在采用五层结构：
 1. Add citation layer for N1-N9.
 2. Refine the `Psi_f` proxy hierarchy: core proxies, physiological proxies, neural proxies, historical proxies, forbidden identities.
 3. Further distinguish `d-value` from salience, reward, precision, motivational relevance, subjective value, affective valence, arousal, and self-relevance.
-4. Compress N8 into 1-2 flagship experiments suitable for a pilot or pre-registration.
+4. Formally lock and preregister `NB1-MOFC-Lottery-v0`: data access, recovery/power simulation, rival/readout/tolerance/event freeze, ethics/SOP, and immutable adjudication code.
 5. Add sync warnings to longform files if compact cores remain ahead of them.
 6. Regenerate graphify-out / wiki artifacts after merge.
 

@@ -27,7 +27,7 @@ Read:
 
 This anchor now carries the canonical entry points for:
 - expectation vs prediction
-- floor (`L_2`) vs direction (`ε / 初心`)
+- historical scaffold (`L_2`) vs contentless structural floor (`ε_pg`) vs situated L₁ direction read-back (初心)
 - healthy success vs pathological success
 - `d` expansion as the first operational criterion
 

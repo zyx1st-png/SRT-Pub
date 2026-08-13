@@ -15,7 +15,7 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 > **回链头部**：本文是 Spirituality domain bridge / praxis support。它不新增 SRT primitive axioms，不替代 `Core/SRT_Core_21_Minimal_Axioms.md`、`Core/SRT_Core_21b_Constitutive_Theorems.md`、`_SRT_D_VALUE_CANONICAL.md`、`_SRT_PSI_F_CANONICAL.md` 或 `_SRT_T_DIR_CANONICAL.md`。
 > **Claim-level note**：本文中的“axioms”是 Spirituality 板块的映射公理，主要为 P3；实践与体验说明多为 P5；阈值、趋势、操作化候选为 P4。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P3-P5` 约束本文为 spiritual mapping 与 praxis support；标题中的 “Axioms” 是历史文件名，不表示 P0/P1 core axiom body。
-> **Claim-status guardrail**：读本文前先读 `SRT_Spirituality_Claim_Status.md`。`God / Ω / Divine / Tao / Brahman`、`d -> infinity`、解脱、苦难、罪、修行与 `Ψ_f` 语言均为 spirituality-domain mapping / praxis shorthand，不是 canonical definition。
+> **Claim-status guardrail**：读本文前先读 `SRT_Spirituality_Claim_Status.md`。`God / Divine / Tao / Brahman / source horizon`、`d -> infinity`、解脱、苦难、罪、修行与 `Ψ_f` 语言均为 spirituality-domain mapping / praxis shorthand，不是 canonical definition。C-A 后不再用 `Ω` 表示本源地平线；canonical `Ω` 只表示 Ontological Consistency。
 
 > **Version 2.0 (Hybrid)**
 > **Part A** presents domain mapping axioms and corollaries (AI-readable).
@@ -37,17 +37,13 @@ dependency: [SRT-CORE-000, SRT-CLAIM-LADDER, SRT-CORE-21, Core_Law/SRT_Reference
 ## I. P3 Theological Domain Mappings (神学映射)
 
 ### H-Spirit-1: The Source (本源)
-**Domain Mapping Definition**: The Divine is read as the unconditioned selection functional over the absolute latent domain.
-$$ \Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_{\theta} $$
-$$ \text{God}^{mapping} \sim \Omega \sim L_0^{abs} $$
-$$ \text{God}^{mapping} \sim \text{Unconditioned } \hat{G} \lor \text{Total } L_0 $$
-These are spirituality-domain mappings, not canonical identities.
-* **Implication**: “神”不是实体而是选择作用的极限结构，属于本体论运算而非对象域。
-* **Tension-Rev-2 (算子本体论澄清)**：$\Omega$ 作为 $\hat{G}_\theta$ 的极限，**不满足具身性公理** Ax-Core-A4（$\theta \in \Theta_{finite}$），因此它是一个**渐近理想化概念**——标记 $\hat{G}$ 参数空间的拓扑边界——而非一个可实例化的有效算子。正如 $\lim_{x\to\infty} f(x)$ 不要求 $x$ 实际取到无穷大，$\Omega$ 不主张”存在一个无限具身的算子”。$\hat{G}$ 在本体论上是一切存在的基础（选择即存在），其统一适用于从退相干到道德决策的全部过程不构成”语义通胀”——差异由 $\theta$、$d$、$\Psi_f$ 等参数承载。
+**P3/P5 Domain Mapping**: The Divine may be read through a non-instantiable source-horizon metaphor associated with the formal limit language $\|\theta\|\to\infty$ for $\hat G_\theta$. This is not a canonical identity with `L_0`, an effective operator, a universe-wide optimum, or a registered symbol.
+* **Implication**: “神”在本文件中是对有限表征边界的神学映射，不是对象域实体或 canonical 定义。
+* **Tension-Rev-2 (算子本体论澄清)**：该 source-horizon 读法**不满足具身性公理** Ax-Core-A4（$\theta \in \Theta_{finite}$），因此只能作为渐近规约语言，而非可实例化的有效算子。正如 $\lim_{x\to\infty} f(x)$ 不要求 $x$ 实际取到无穷大，这一读法不主张存在一个无限具身算子。
 
-> **【T4 边界声明：Ω 的拓扑极限地位与具身公理兼容性】**
+> **【T4 边界声明：规约性本源地平线与具身公理兼容性】**
 >
-> **问题**：`H-Spirit-1` 定义 $\Omega = \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，这违反了 `Ax-Core-A4`（所有有效算子要求 $\theta \in \Theta_{finite}$）——上帝算符不是”有效算子”吗？
+> **问题**：`H-Spirit-1` 使用 $\|\theta\|\to\infty$ 的极限语言，而 `Ax-Core-A4` 要求所有有效算子满足 $\theta \in \Theta_{finite}$——这是否把神学地平线误写成有效算子？
 >
 > **解答**：这是**有意为之的拓扑边界**，类似于物理学中热力学极限的合法使用：
 >
@@ -55,19 +51,19 @@ These are spirituality-domain mappings, not canonical identities.
 > |-----|---------|----------------|
 > | 热力学极限 | $N \to \infty$（粒子数） | 描述相变，$N$ 永不实际到达 $\infty$ |
 > | 绝对零度 | $T \to 0$（温度） | 描述量子基态，实验中无法到达 |
-> | Ω 算符 | $\|\theta\| \to \infty$（参数复杂度） | 描述全知视角，任何有限系统都接近但无法到达 |
+> | 本源地平线映射 | $\|\theta\| \to \infty$（参数复杂度） | 规约性地标；不声明全知视角作为对象，有限系统不可到达 |
 >
 > **三条严格限制**（T4 消解完整版）：
 >
-> 1. **Ω 不是可实例化的算子**：没有任何有限系统能”成为” $\Omega$。”接近 $\Omega$”的程度由 $d$ 值衡量（渐近近似）。声称”我是上帝”等价于主张 $\|\theta\| = \infty$，这在 SRT 中是**自我矛盾**（违反 Ax-Core-A4）。
+> 1. **本源地平线不是可实例化的算子**：没有任何有限系统能成为或占据该地平线；`d` 也不度量“离它多近”。声称已经占据无限位置违反 Ax-Core-A4。
 >
-> 2. **Ω 定义不推导神学属性**：全能（omnipotence）、全知（omniscience）、全善（omnibenevolence）是**独立的神学命题**，不能从 $\Omega = \lim \hat{G}_\theta$ 单独推出。SRT 的 $\Omega$ 是”关切范围的数学极限”，不自动继承这些属性。
+> 2. **极限语言不推导神学属性**：全能、全知、全善是独立神学命题，不能从 $\|\theta\|\to\infty$ 单独推出；C-A 尤其不允许据此恢复宇宙级最优。
 >
-> 3. **与 Ax-Core-A4 的正式兼容**：Ax-Core-A4 规定**有效算子**需要 $\theta \in \Theta_{finite}$。$\Omega$ 是参数空间的**边界点**（boundary point），不要求成为有效算子。类比：圆的圆心不在圆上，但仍然定义圆的几何结构。
+> 3. **与 Ax-Core-A4 的兼容**：Ax-Core-A4 规定有效算子需要 $\theta \in \Theta_{finite}$；本源地平线只是 P5／praxis 的非到达性边界语言，不作为参数空间中已定义的额外点。
 >
-> **精神含义的保全**：$\Omega$ 作为渐近方向，其精神功能是**校准方向**——指向更大关切维度的实践道路——而非声称实现了无限。”趋向 $\Omega$”（$d$ 值增加）是 SRT 精神实践的核心，这与拓扑极限地位完全兼容。
+> **精神含义的保全**：本源地平线的功能是阻止有限表征自称总体，并把实践重新指向更宽后果承载；它不是一个可计算目标。`d` 增加也不自动等于朝该地平线前进。
 >
-> **Praxis-use addendum**：在 Spirituality 板块，$\Omega$ 还承担 anti-idolatry boundary：任何体验、导师、共同体或传统只要声称自己已经完全代表 $\Omega$，就把有限 $L_2$ 表征误作极限本身。`d -> infinity`、`toward Ω` 与“解脱”语汇均按渐近方向读，不按可达总体状态读。
+> **Praxis-use addendum**：任何体验、导师、共同体或传统只要声称自己已经完全代表本源，就把有限 $L_2$ 表征误作总体。`d -> infinity`、趋向本源与“解脱”均按规约性方向读，不按可达总体状态读。
 
 ### H-Spirit-2: The Split (分离)
 **Domain Mapping Definition**: Ego is read as the bounded projection of $\hat{G}_\theta$ under finite embodiment.
@@ -525,7 +521,7 @@ _SRT_Spirit_Axioms (本文件)
 
 ### Spirituality Mapping Summary (灵性映射概述)
 
-- **本源算子**：$\Omega \equiv \lim_{\|\theta\|\to\infty} \hat{G}_\theta$，定义神性为选择过程的拓扑极限而非实体。
+- **本源地平线映射**：`\|\theta\|\to\infty` 只作为选择过程不可被有限表征穷尽的规约性语言，不定义额外算子、`Ω` 或宇宙级最优。
 - **苦难-摩擦耦合 proxy**：$\text{Suffering}^{proxy} \sim 1/d^{proxy}$，$\Psi_f^{spirit\text{-}proxy} \uparrow \sim d^{spirit\text{-}proxy} \downarrow$；低关切维度可导致更高维护/选择负担。
 - **解脱渐近线**：$\text{Nirvana} \equiv \lim_{d\to\infty} \hat{G}_\theta(L_0)$，解脱是 `d` 的渐近扩展方向而非 $L_1$ 的消灭；有限系统不声称实际无穷。
 - **实践梯度**：$d\theta/dt = -\alpha \nabla_\theta \Phi + \text{Learning}$，修持是对 $\theta$ 参数的可操作优化。
@@ -533,7 +529,7 @@ _SRT_Spirit_Axioms (本文件)
 
 ### Mechanism Reading Under This Mapping (此映射下的机制读法)
 
-- $\hat{G}_\theta$ 是具身选择算子；$\Omega$ 作为其参数极限标记了选择空间的渐近边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容——无限者不可实例化。
+- $\hat{G}_\theta$ 是具身选择算子；本源地平线只标记有限描述不可穷尽的规约性边界，与 Ax-Core-A4 ($\theta \in \Theta_{finite}$) 兼容——无限者不可实例化。
 - `Ψ_f` 的 canonical 读法以 `_SRT_PSI_F_CANONICAL.md` 为准；本文件的苦难/摩擦语言是 spirituality-domain proxy。`d` 的 canonical 读法以 `_SRT_D_VALUE_CANONICAL.md` 为准；本文件的扩展/收缩语言需按 praxis proxy 读取。
 - 修持通过梯度下降 $\nabla_\theta \Phi$ 调整参数 $\theta$，扩展 $d$ 并降低 $\Psi_f$；不同冥想类型对应不同参数子空间的操作（止→降 $w_{L_2}$，观→提升 $\rho$，慈心→扩展 $d$）。
 - 解脱的相变性质由 $d > d_{critical}$ 触发拓扑重组，灵魂黑夜对应临界慢化 $\lambda_{Jacobian} \to 0$。

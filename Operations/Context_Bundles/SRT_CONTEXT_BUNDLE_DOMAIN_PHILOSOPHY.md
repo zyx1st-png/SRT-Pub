@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-12
-source_commit: fc5b9e96
-source_branch: codex/author-decisions-cross-scale-audits-2026-08-12
-source_dirty: false
-inputs_digest: 7dc27dba4170a938
+source_commit: 1cd8da72
+source_branch: claude/srt-gateb-shoshin-layer-decision
+source_dirty: true
+inputs_digest: b0c5a7c951a2ab0c
 ---
 
 # SRT 哲学领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: 7dc27dba4170a938
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-12 |
-| 来源 commit | `fc5b9e96` |
-| 来源分支 | `codex/author-decisions-cross-scale-audits-2026-08-12` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `1cd8da72` |
+| 来源分支 | `claude/srt-gateb-shoshin-layer-decision` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,7 +43,7 @@ inputs_digest: 7dc27dba4170a938
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-08-08 |
+| 1 | `Philosophy/SRT_Philosophy_Claim_Status.md` | 2026-08-12 |
 | 2 | `Philosophy/00_READ_FIRST_Philosophy_Hardening_Soft_Spots.md` | 2026-04-27 |
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-05-17 |
 | 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
@@ -446,7 +446,7 @@ When answering about SRT:
 | epistemic_layer | governance |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-08 |
+| last_commit | 2026-08-12 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -475,6 +475,8 @@ Forbidden:
 > Philosophy files must not silently define `d-value`, `Ψ_f`, `T_dir`, `L_0/L_1/L_2`, `Ĝ_θ`, consciousness, moral legitimacy, truth, freedom, love, grief, social ontology, political authority, or institutional legitimacy as SRT primitives.
 
 If a phrase sounds like a final metaphysical slogan, attach its layer, formula role, and failure condition.
+
+**C-A scope guard（2026-08-12）**: philosophy／ethics files may use a technical model-global optimum only inside a fully specified optimization problem. They must not infer a universe-wide moral optimum from `d↑`, call a stable attractor good, or treat `Ψ_f^{global}` as a canonical cross-person total. Cross-window ethical comparisons must state bearer scope, horizon, constraints, aggregation／ordering rule and failure conditions. CΨ remains separate and open.
 
 ---
 

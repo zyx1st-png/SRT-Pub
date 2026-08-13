@@ -13,8 +13,8 @@ dependency: [SRT-CORE-13A]
 # SRT Core 13A Operator Basics Split Index
 
 - 原始总文（保留，不删内容）：[`../SRT_Core_13a_Operator_Basics.md`](../SRT_Core_13a_Operator_Basics.md)
-- Source owner bytes: `83760`
-- Source owner SHA-256: `a1356f2983fb5fc3fe62ce25ee19e2b361d349f290d047573fa170bedeb87b9e`
+- Source owner bytes: `84452`
+- Source owner SHA-256: `53ee7b81115577b6948726d9a080d93dd83f33a0459f8ec9bccc79b5a659ec14`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

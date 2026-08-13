@@ -48,6 +48,7 @@ srt_physics_claim_status:
   deff_dvalue: "D_eff / bandwidth / density formulas are capacity proxies, not canonical d-value"
   constants: "structural placement constraints, not exact-value derivations"
   qbox_post_quantum: "external interface pressure-test, not proof of SRT"
+  shoshin_layer: "B-A: no independent L0 precursor; Phys_08 variational/gradient forms are L1/P3-P4 bridge proxies only"
 ```
 
 ---
@@ -66,6 +67,12 @@ srt_physics_claim_status:
 ---
 
 ## 2. Default domain verdicts
+
+### 2.0 Shoshin / Original Intention under B-A
+
+`SRT_Phys_08_Ontology_Ext.md` and its CompactCore may retain `argmin`／gradient forms only as L₁/P3/P4 Physics translations under a declared state space, functional, feasible domain, finite horizon and constraints. They do not define `L_0`, create an independent L₀ precursor, rename `ε_pg`, or imply a universe-wide optimum. Gate C is closed by C-A; model-global optimization remains permitted only within the declared model.
+
+The former `SRT_Physics_Cosmology.md` claim that the Big Bang is `argmin_{σ∈L_0} K(σ)` is parked: no complexity measure over `L_0^{abs}`, admissible domain, closure, or existence／uniqueness conditions were supplied. It is not a current cosmological definition.
 
 ### 2.1 Measurement / collapse claims
 

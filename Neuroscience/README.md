@@ -25,6 +25,9 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 6. [`SRT_Neuroscience_Hardening_N1_N9_v0_1.md`](SRT_Neuroscience_Hardening_N1_N9_v0_1.md)
    Bridge / lab working draft that records the full N1-N9 hardening cycle: neural selection, `G_hat_theta`, `Psi_f`, `d-value`, `L1 -> L2` sedimentation, consciousness, psychopathology, experiments, and distinction from mainstream neuroscience frameworks.
 
+7. [`SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`](SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md)
+   Local P4 execution card for the bounded `P3-Scale-NB1` neural divisive-normalization → frozen readout → task-choice workline. Card-defined only; not formally locked, preregistered, or executed. W0 access record: [`SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md`](SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md).
+
 ## Status distinction
 
 - `SRT_Neuroscience_Claim_Status.md`: folder-level proxy/clinical guardrail. Read before public, clinical, AI-consciousness, FEP, NDE, or treatment-facing use.
@@ -33,6 +36,7 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 - `SRT_Neural_Mechanisms_CompactCore.md`: formal mechanism compact core; now contains the current neural-selection hardening summary.
 - `SRT_Consciousness_Mechanisms_CompactCore.md`: formal consciousness compact core; now contains the current consciousness hardening summary.
 - `SRT_Neuroscience_Hardening_N1_N9_v0_1.md`: non-canonical staging draft for theory hardening, experimental design, and future citation work.
+- `SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`: non-canonical local P4 protocol candidate. It may adjudicate one task-level bridge but cannot define Core terms or establish agency, subjecthood, or consciousness.
 - [`../Neuroscience_Annex/`](../Neuroscience_Annex/) contains bridge/interface Annex files extracted from Neuroscience owner files. Annex files are `canonical: false` and do not define Core primitives or replace owner-file formal anchors.
 
 ## Current hardening path
@@ -43,7 +47,7 @@ The N1-N9 draft should be treated as a staging document, while the two compact c
 2. map each claim to bridge / lab / candidate-canonical status;
 3. refine `Psi_f` measurement proxies;
 4. sharpen `d-value` against salience, reward, precision, and motivational relevance;
-5. compress the experimental roadmap into 1-2 flagship studies;
+5. formally lock `NB1-MOFC-Lottery-v0`: secure data access, complete parameter-recovery/power simulations, freeze rivals/readout/tolerance/event rules, and preregister before confirmatory execution;
 6. eventually decide which `_SRT_Neuro_Axioms.md` theorem labels should be renamed, downgraded, or formally proven.
 
 ## Cross-domain links

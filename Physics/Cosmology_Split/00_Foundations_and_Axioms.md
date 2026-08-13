@@ -325,11 +325,9 @@ $$ \text{Force} = \text{Cost of Consensus} $$
 宇宙在低熵（大爆炸）和最大熵（热寂）之间循环，通过共形重标度 (CCC) 重置：
 $$ \text{Aeon}_{n+1} = \hat{S}(\text{Aeon}_n) $$
 
-### Ax-Cosmo-2 [A1.7.2]: Big Bang as $L_0$ Minimum (大爆炸作为 $L_0$ 极小值)
-大爆炸是 $L_0$ 模空间中的全局极小值点：
-$$ \text{State}_{BigBang} = \arg\min_{\sigma \in L_0} K(\sigma) $$
-宇宙从最简单程序（最低复杂度）开始解压 $L_0$。
-*   **O-T2 Link**: 宇宙学“重启”可视为 $L_2$ 结构的拓扑解结与重编织。
+### Ax-Cosmo-2 [A1.7.2]（历史高承诺，C-A 后停驻）: Big Bang as $L_0$ Minimum
+
+旧式曾写：$\text{State}_{BigBang}=\arg\min_{\sigma\in L_0}K(\sigma)$。当前没有定义 $L_0^{abs}$ 上的复杂度测度、可行域、比较闭包或存在／唯一性条件，因此不能把大爆炸定义为该域的全局极小，也不能由此推出宇宙从“最简单程序”解压。该式只保留为历史 algorithmic-cosmology 假设；若重开，须先构造具名可检验模型。
 
 ### Ax-Cosmo-2b: Singularity as Algorithmic Reset (奇点即算法重置)
 **Formal Definition**: 黑洞中心或大爆炸奇点，是 $\hat{G}$ 算力饱和导致L2坐标系崩溃，系统被迫回归纯数学对象（L0^abs）的临界极值：

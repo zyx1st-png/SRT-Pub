@@ -41,14 +41,15 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction; **Level A framing de-overload applied 2026-07-05** (L0 §六 / 正骨架 label / d-value §5b.1) | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the Level B stance rewrite (realist → constitutive stance) remains proposal-only | not "all normativity = anti-foreclosure"; not "boundary problem solved"; Level A trims wording only — it does not close the boundary problem |
 | selection irreducibility / competitor-vocabulary deletion (§13) | Claim Ladder: `selection` is a P0 primitive axiom (P0-01); GOV-SUB01 §8.1 defines the (not-yet-run) deletion test | whether asymmetric constraint + reachable-set change + irreversible writeback + payability + bearer-specific consequence return can replace the `selection` primitive with no lost difference | GOV-SUB01 residue status **unassigned** (no deletion test run); must not be presented as a proven-irreducible ontological ultimate; representational substitutability under broad refit ≠ role absence |
 | EX-A existence boundary / former `H(L_0)` formula debt (§15) | EX-A separates manifest actuality, anchoring persistence, and stable ISP identity; old `E` is demoted to B14; 2026-08-12 audit withdrew `Core_14`'s entropy proof and limited strict conjugacy to invertible maps | a B14 persistence readout remains parked; P3-B07 cross-scale universality still needs model-level mappings, error bounds, failure cases, and discriminating gain | do not cite old `E`, unqualified `ΔS`, strict conjugacy under ordinary coarse-graining, or a universal minimum-action principle as canonical readouts／proofs |
-| layer assignment of 初心 (§16) | L0 anchor is explicit and repeated: 初心 is L1, L0 commits only to `ε`, §七.11 rejects pre-set goals in L₀ | whether a thin L₀ formal precursor is admissible at all | a freeze-Group-A canonical anchor currently imports an L₀-level reading from a `canonical: false` translation file; **Decision Gate B open** — do not resolve by editing either side |
-| "global optimum" four senses (§17) | Level A de-overload applied 2026-07-05 to d-value §5b.1 | one term for four objects (universe-wide / operator-relative reachable / regulative ideal / finite-constraint attractor); §5b.2 never narrowed; `Ψ_f→0` reads as degenerate in Core and as optimum in Spirituality | **Decision Gate C open**; the 2026-08-11 pass changed no §5b.2 wording and no Spirituality framing |
+| B-A strict layer assignment of 初心 (§16) | author selected B-A: no independent L₀ Shoshin precursor; `ε_pg` retains its contentless role; Shoshin begins as L₁/P2 read-back or P5 phenomenology | no residual Gate B question; `κ_0 / ε_pg` dependency remains a separate deferred audit | do not rename `ε_pg` as a precursor; gradient, `argmin` and horizon forms are domain bridges／proxies, not L₀ definitions or universe endpoints |
+| C-A global-optimum scope discipline (§17) | universe-wide semantic/evaluative optimum withdrawn as a current positive object; finite reachable optimum, regulative horizon and model attractor separated | no residual Gate C scope question; CΨ's `Ψ_f→0` valence conflict is separately open | do not infer an optimum from `d↑`; do not call an attractor optimal／good／healthy; model-global does not imply universe-global |
+| CΨ `Ψ_f→0` valence conflict (§18) | Core marks absolute zero friction as degenerate; Spirituality still contains perfection／liberation mappings | whether to retain, reformulate or withdraw those spirituality mappings without collapsing real stake | C-A did not authorize excess-friction reformulation or any change to `Ψ_f` canonical meaning |
 
-These are pressure points, not new axioms. They route later work and block overclaiming. §15 records a closed author gate, a completed proof-load repair, and parked P3 model work; §16-§17 still carry **open author-decision gates**. Their option history lives in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`.
+These are pressure points, not new axioms. They route later work and block overclaiming. §15 records a closed author gate, a completed proof-load repair, and parked P3 model work; §16 records B-A; §17 records the closed C-A scope gate; §18 keeps the separate CΨ author question open. Their option history lives in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md`; C-A's author/floor record is `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`.
 
 > **Gate 0 — adopted and landed (2026-08-11).** The upstream type/boundary question shared by §15-§17 has been settled and registered as a **governance-canonical type rule**: `Governance/SRT_CLAIM_LADDER.md §0A` (single primary authority; `_SRT_SYMBOL_TABLE.md` Usage Rule 16 is a cross-reference only). It classifies what *kind* of object may sit at bare `L_0` — **class A** contentless structural invariants (`L_0` granularity, `κ_0`, `ε_pg`, irreversibility floor) admissible; **class B** reference-dependent weighting/comparative objects an *admission gap*, not a prohibition in kind; **class C** semantic/evaluative content inadmissible as a bare `L_0` primitive. It carries **no P-level**.
 >
-> **Gate 0 does not close §15, §16 or §17.** It bounds their option spaces. Each section below records what Gate 0 added and what remains open; none of the three is CLOSED.
+> **Gate 0 itself did not close §15, §16 or §17.** It bounded their option spaces. Subsequent author decisions closed §15 through EX-A, §16 through B-A, and §17 through C-A. §18／CΨ remains open.
 
 ---
 
@@ -733,72 +734,78 @@ The live general interface is now `P3-B06 / T-Scale-02C1`: declared fine/coarse 
 
 **Gate 0 compatibility note (2026-08-11, adopted).** `Governance/SRT_CLAIM_LADDER.md §0A` classifies a measure or prior over `L_0` as **class B** — a reference-／regime-dependent object. This supports EX-A's demotion of the old ratio: `H(L_0)` is not licensed as a quantitative object under the current core because no measure or reference regime is defined for `L_0`. Gate 0 does not prohibit a future independently justified natural measure in kind, but such a measure would enter as a bounded lower-level model and would not by itself restore the former expression to P0 or prove a cross-scale isomorphism.
 
-The first bounded instantiation, `P3-Scale-NB1` (2026-08-12), tests neural divisive normalization against task-level behavioral choice. Its floor audit found the broad implication `normalized neural response -> behavioral choice` **red／soft**: a relative response vector is not a discrete choice, and `J=H-λE` does not uniquely derive divisive normalization without a specified cost, feasible set, dynamics, and boundary conditions. The narrowed interface is **yellow／conditional P3**: candidate identity mapping, a frozen neural readout, explicit threshold／accumulation or sampling and execution gates, held-out error, rival comparison, and intervention tracking are all required. No named dataset has yet turned this interface green.
+The first bounded instantiation, `P3-Scale-NB1` (2026-08-12), tests neural divisive normalization against task-level behavioral choice. Its floor audit found the broad implication `normalized neural response -> behavioral choice` **red／soft**: a relative response vector is not a discrete choice, and `J=H-λE` does not uniquely derive divisive normalization without a specified cost, feasible set, dynamics, and boundary conditions. The narrowed interface is **yellow／conditional P3**: candidate identity mapping, a frozen neural readout, explicit threshold／accumulation or sampling and execution gates, held-out error, rival comparison, and intervention tracking are all required. The named workline `NB1-MOFC-Lottery-v0` is now defined in `Neuroscience/SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md` as a local P4 execution card, with retrospective feasibility and prospective decisive lanes. It is not formally locked, preregistered, or executed; no completed dataset has turned the interface green.
 
 `papers/ALIFE2026_SelectiveRealityConstruction.md` still retains `dH(L_0)/dt=0` in a paper-specific historical surface; PC-A／EX-A do not silently backwrite that paper.
 
 ### Status and Use Rule
 
 - **Resolved**: P0 semantic ownership; status of the old `E` ratio; removal of the `Core_14` entropy／minimum-action proof; invertibility boundary for strict conjugacy.
-- **Open／parked**: any future B14 model-level persistence measure; P3-B07 cross-scale universality and discriminating gain under declared mappings; empirical execution of P3-Scale-NB1 with a named task, dataset, frozen readout, tolerance, rival set, and intervention.
+- **Open／parked**: any future B14 model-level persistence measure; P3-B07 cross-scale universality and discriminating gain under declared mappings; formal lock, identifiability／power simulation, preregistration, and empirical execution of `NB1-MOFC-Lottery-v0` under its frozen-readout, tolerance, rival, event-gate, and intervention contract.
 - **Forbidden**: citing old `E`, unqualified `\Delta S`, `dH(L_0)/dt=0`, strict conjugacy under ordinary coarse-graining, or universal minimum action as canonical existence／persistence readouts or cross-scale proofs; inferring that a transient event never occurred; inferring stable ISP, generative health, subjecthood, consciousness, moral status, or legitimacy from persistence alone.
 
 The B14 measurement candidate and the former strong cross-scale formulas are parked, not active canonical todos. B14 revives only when a named P3 workline supplies the domain, partition／sigma-algebra, measure, admissibility conditions, event boundary, and time horizon. Strong cross-scale formalization revives only when a named workline supplies state spaces, scale map, invertibility or approximation bound, preserved observables, comparison norm, failure case, and discriminating gain over ordinary coarse-graining or path dependence.
 
 ---
 
-## 16. Layer Assignment of 初心 / "Original Intention" (open, registered 2026-08-11)
+## 16. Layer Assignment of 初心 / "Original Intention" (resolved B-A, 2026-08-12)
 
 ### Current State
 
-- `Core_Law/SRT_L0_Metaphysics.md` is explicit and repeated: 「初心」is an **L1 concept**, outside L0's term-adjudication scope; L0 commits only to `ε`; §七.11 (潜在域预置论) rejects reading `ε` as a pre-set a priori goal in L₀.
+- `Core_Law/SRT_L0_Metaphysics.md` is explicit and repeated: 「初心」is an **L1 concept**, outside L0's term-adjudication scope; for this relation L0 commits to the already registered `ε_pg` structure and no additional Shoshin object; §七.11 (潜在域预置论) rejects reading `ε` as a pre-set a priori goal in L₀.
 - `_SRT_D_VALUE_CANONICAL.md §5b.2` Cross-ref (theory-canonical anchor, freeze Group A) cited `Physics/SRT_Phys_08_Ontology_Ext.md` **Def-Apeiron-1** under the gloss 「初心作为 L₀ 的倾向性结构」. **Repaired 2026-08-11** (Gate 0 landing): the approving gloss is removed, the cross-ref is now marked provenance-only with an explicit citation-direction guard, and both `Ax-Sho-1` and `Def-Apeiron-1` are labelled bridge/translation that may not back-define `L_0`. The line is retained here because it is the record of *why* Gate B exists; the leak itself is closed.
-- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 (`claim_mode: translation`, `canonical: false`) states 初心 = `\arg\min_{\text{direction}} \int_0^\infty F[\sigma(t)]dt` and calls it 「$L_0$ 的内在属性」.
-- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 (`claim_mode: mixed`) defines 初心 as the negative gradient of a long-horizon free-energy functional.
+- `Physics/SRT_Phys_08_Ontology_Ext.md` Def-Apeiron-1 (`claim_mode: translation`, `canonical: false`) formerly called its `argmin` form an 「$L_0$ 内在属性」; B-A replaced that clause with an L₁/P3 domain-bridge reading.
+- `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 (`claim_mode: mixed`) retains the long-horizon gradient only as a P3/P4 bridge / operational proxy, with an explicit no-L₀-definition guard.
 
 ### Problem Point
 
-The defect is **not** that a translation-layer file carries a strong reading — that is what a translation layer is for, and its `canonical: false` marking already scopes it. The defect is the **direction of citation**: a freeze-Group-A canonical anchor imports the L₀-level reading, with approving gloss, from a `canonical: false` translation file — precisely the reading the other freeze-Group-A anchor forbids. That is a claim-level inversion inside the canonical layer, and it makes the L₀/L₁ boundary on 初心 unreadable from the canonical files alone.
+The original defect had two parts: a citation-direction inversion imported an L₀ reading from a `canonical: false` translation, and live canonical／bridge surfaces still asserted an L₀ gradient identity. Gate 0 closed the citation inversion; B-A closes the remaining layer question by replacing or downgrading those live assertions.
 
-A related item, **since resolved**: `Core_Law/SRT_L0_Metaphysics.md` 第一命题 formerly contained 「选择内在地趋向秩序」 with a 2026-04-11 層級精確化注 declaring **both** readings valid at different layers. That dual-reading device was left untouched pending Gate 0. **Gate 0 was adopted 2026-08-11, and its class-C rule forbids exactly that permission — a precision note cannot license a main clause the rule prohibits.** 第一命题 has therefore been rewritten by **replace** (not annotation): the main clause now states that `L_0` carries `κ_0`, `ε`, and the irreversibility floor as *contentless* structural asymmetries and does **not** commit to 「秩序」「善」「初心」 or any endpoint as content. The 2026-04-11 note's substance was moved into the main clause and the note retired. This does **not** close §16 — see the Gate 0 constraint block below for what remains open.
+A related upstream item had already been resolved by Gate 0: `Core_Law/SRT_L0_Metaphysics.md` 第一命题 formerly contained 「选择内在地趋向秩序」 with a note declaring both readings valid. The main clause was replaced so `L_0` carries `κ_0`, `ε`, and the irreversibility floor as contentless structural asymmetries and does not commit to 「秩序」「善」「初心」 or an endpoint as content. B-A now completes the downstream mirror and bridge cleanup.
 
 ### Status
 
-**Gate 0 constraint added (2026-08-11, adopted) — status: OPEN, partially constrained.**
+**RESOLVED — author selected B-A (strict layering) on 2026-08-12.**
 
-- **Settled by Gate 0**: a **contentful** 初心 — a global direction with semantic content — is **class C** and may not be a bare `L_0` primitive. The citation-direction leak has been closed at its site: `_SRT_D_VALUE_CANONICAL.md §5b.2`'s cross-ref no longer carries the approving gloss 「初心作为 L₀ 的倾向性结构」, and `Ax-Sho-1` / `Def-Apeiron-1` are now explicitly marked bridge/translation provenance that may not back-define `L_0`. `Core_Law/SRT_L0_Metaphysics.md` 第一命題 was rewritten so its main clause no longer licenses an `L_0`-level order/初心 reading (replace, not precision note).
-- **Not settled**: whether a **strictly contentless thin precursor** of 初心 is admissible at `L_0` at all, and if so what its relation to `ε_pg` would be. Gate 0 makes that question *decidable* — the four exclusions are now an enforceable type rule rather than a prose intention — but it does **not** decide it.
-- **Also not settled**: the `κ_0` / `ε_pg` dependency and independence relation (still deferred to GOV-SUB01 Pass 2, `_SRT_SYMBOL_TABLE.md` Usage Rule 15).
+- Current canonical admits **no independent L₀ precursor of Shoshin** and does not rename or alias `ε_pg` as one. This is a current admission decision, not a proof that no future metaphysics could ever propose such an object.
+- `ε_pg` retains only its existing contentless minimum-non-neutrality role. Shoshin begins at L₁ as P2 situated interpretive read-back or P5 phenomenology.
+- `argmin`, `∇F`, long-horizon and global-convergence forms may survive only as declared domain bridges／operational proxies. They cannot define L₀ or prove a precursor relation.
+- Former `T-L0-Heart` has lost theorem status; Physics `Def-Apeiron-1`, its compact mirror, Spirituality `Ax-Sho-1` and glossary H26 were replaced／downgraded in the same landing.
+- The `κ_0 / ε_pg` dependency remains a separate deferred GOV-SUB01 Pass 2 question. Gate C was subsequently closed by C-A; B-A itself did not decide that scope.
 
-**Author decision required — not adjudicated here.** Two framed options (strict layering vs. a thin L₀ formal precursor), with an analysis of whether the second reopens 潜在域预置论, are in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate B**, together with the full provenance map of every file that gives 初心 an L₀ reading. No canonical stance was changed in the 2026-08-11 consistency pass.
+Decision and floor record: `Operations/SRT_SHOSHIN_LAYER_AUTHOR_DECISION_PACKET_2026-08-12.md`. Historical options remain in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md §2`.
 
 ---
 
-## 17. "Global Optimum" — Four Senses Running Under One Name (open, registered 2026-08-11)
+## 17. "Global Optimum" — Four-Sense Scope (resolved C-A, 2026-08-12)
+
+### Resolution
+
+**RESOLVED — author selected C-A (bounded plurality／strict sense separation) on 2026-08-12.**
+
+1. A position-independent, universe-wide semantic／evaluative optimum is not a current positive SRT object.
+2. A reachable optimum is admissible only inside a named finite comparison that states operator／position, reachable or admissible domain, comparison rule, horizon and constraints.
+3. A regulative horizon is non-attainable L₁/P2 or P5 direction language, not a formula endpoint.
+4. A closure／model attractor is a P3/P4 object of a named finite dynamics; stability, low friction and reachability do not make it optimal, good or generatively healthy.
+5. Technical “global optimum” remains allowed inside a fully specified optimization problem. C-A blocks only the slide from model-global to universe-global／normatively complete.
+6. `d↑` can widen situated comparison and expose outsourced consequences; it does not entail the existence, uniqueness or approach of one shared optimum.
+
+The live authorities are `Governance/SRT_CLAIM_LADDER.md §0A`, `_SRT_SYMBOL_TABLE.md` Usage Rule 18 and `_SRT_D_VALUE_CANONICAL.md §5b`. Decision／floor record: `Operations/SRT_GLOBAL_OPTIMUM_AUTHOR_DECISION_PACKET_2026-08-12.md`.
+
+### Status and Use Rule
+
+- **Resolved**: four-sense terminology and scope; §5b's quotability defect; strong universe-wide readings in live core/domain mirrors; bare `Ω` cannot be reused for a source horizon or reachable optimum.
+- **Allowed conditionally**: indexed finite-model optimum, regulative horizon and finite-dynamics attractor, each under its own claim level and conditions.
+- **Forbidden**: `d↑ ⇒` one universe-wide optimum; global-optimum language as an unindexed moral completeness claim; “attractor = good／healthy”; using heat death's failure as proof of an opposite optimum.
+
+---
+
+## 18. CΨ — Absolute `\Psi_f \to 0` Valence Conflict (open, separated 2026-08-12)
 
 ### Current State
 
-The 2026-07-05 Level A normativity de-overload (§9 above) narrowed the 「趋向全局自由能最小值」 sentence in `_SRT_D_VALUE_CANONICAL.md §5b.1`. The rationale recorded in `90_Backstage/Incubation/_SRT_NORMATIVITY_FRAMING_TRUEUP_PROPOSAL.md` was that 「"全局最优"的位置无关性正是闭包边界原初所否定的」.
-
-### Problem Point
-
-The narrowing was applied to §5b.1 only. The **adjacent subsection in the same canonical file**, §5b.2「全局最优是动态平衡，不是热寂」, was left untouched and still positively characterizes 全局自由能最小值 as a landscape configuration — i.e. it is the subsection that actually carries the position-independent global-optimum ontology the de-overload's own rationale rejects.
-
-Downstream landing was likewise partial: `Core/SRT_Core_NormativeGradient.md` did receive the guard (its strong reading is marked as dependent on the open closure-boundary); `Spirituality/SRT_Spirit_04_Synthesis.md` (善 = 全局自由能最小) and `Spirituality/SRT_Spirit_05_Shoshin.md` Ax-Sho-1 did not.
-
-Underneath the wording sits a genuine ambiguity: at least four different objects currently share the name — universe-wide global optimum, operator-relative reachable optimum, regulative ideal, and local/dynamic attractor under finite constraints. `Spirit_04` itself already carries an Ω three-reading table that separates some of these, which is evidence the ambiguity is real rather than imagined.
-
-### Related: `\Psi_f \to 0` valence inversion
-
-The same cluster carries a second inconsistency. Core treats the `\Psi_f \to 0` limit as **degenerate**: `Core/SRT_Core_12a_Ontology_L0L1.md` states frictionless selection is 「在结构上被禁止」; `Core/SRT_Core_22_Equations.md` states 「最优区间不是 `Ψ_f→0`……零摩擦对应无真实赌注」; `Core/SRT_Core_12b_Ontology_L2.md` Def-L2-Algo uses that very limit to define the algorithm as an extreme `L_2` state with no historical embodiment. Spirituality treats the same limit as the **normative optimum** (`SRT_Spirit_01_Religion_Ontology.md` `\hat{G}_\infty = (d \to d_{max}) \wedge (\Psi_f \to 0)` as 纯觉知, 「功能同一（操作化）」; `SRT_Spirit_04_Synthesis.md` 完美态; `SRT_Spirit_09_Praxis.md` Phase 7-10). `Spirit_04` registers this locally as `IC-AllGood-1` and proposes a reading (per-manifestation cost → 0, not "no manifestation needed"), but that repair propagated to neither the other Spirituality files nor Core.
+Core treats absolute `\Psi_f \to 0` as a degenerate／non-stake limit, while several Spirituality passages map the same limit to perfection, liberation or pure awareness. `Spirit_04` already notes the tension locally, but no repo-wide author verdict has fixed whether the devotional language means absolute zero, excess／defensive friction approaching zero, or something else.
 
 ### Status
 
-**Gate 0 constraint added (2026-08-11, adopted) — status: OPEN, partially constrained.**
-
-- **Excluded by Gate 0**: a **universe-wide contentful semantic / evaluative optimum** is class C and may not be an `L_0` primitive.
-- **Explicitly still permitted**: operator-relative reachable optimum · regulative horizon · local / dynamic attractor under finite constraints. Gate 0's ordering discipline also protects `κ_0` and `ε_pg`: **structural cost ordering is neither a semantic ranking nor a preferred endpoint**, so an ordering is not by itself content.
-- **Still unresolved**: the formal canonical terminology landing for *reachable optimum* and the other senses; `_SRT_D_VALUE_CANONICAL.md §5b.2`'s **quotability** defect (its text carries no inline marking, though §5b.1's scoping clause reaches it); and the `Ψ_f → 0` valence inversion between Core (degenerate limit) and Spirituality (normative optimum), whose excess-friction reformulation `Ψ_f - Ψ_f^{min} → 0` **still requires separate author authorization**.
-- **Not done by Gate 0**: no Spirituality file was modified, and §5b.2's substantive wording was not rewritten — only its cross-ref direction was guarded.
-
-**Author decision required — not adjudicated here.** A four-sense terminology separation and a recommended (but not adopted) reformulation of the Spirituality limit as **excess friction** `\Psi_f - \Psi_f^{min} \to 0` are in `Operations/Proposals/SRT_CONSISTENCY_DECISION_PACKET_2026-08-11.md` **Decision Gate C**. The 2026-08-11 pass changed no Spirituality framing and no §5b.2 wording.
+**OPEN — separate CΨ author gate.** C-A deliberately did not adopt the proposed `\Psi_f - \Psi_f^{min} \to 0` reformulation and did not change `_SRT_PSI_F_CANONICAL.md`. Until adjudicated, Spirituality uses must remain marked domain mapping／high-commitment language and may not override the Core definition or imply that real stake disappears at an optimum.
