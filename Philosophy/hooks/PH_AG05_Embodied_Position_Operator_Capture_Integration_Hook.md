@@ -12,15 +12,19 @@ landing_ledger:
   - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
     state: pending
     anchor: "bearer continuity / reselection / self-model revisability"
+    blocked_by: "defer until the next agency/subjecthood synthesis pass so PH-AG05 can be crosswalked with existing S5 agency and responsibility-position mechanisms without a single-patch owner rewrite"
   - target: "Philosophy/SRT_Subjecthood_Threshold_Interface.md"
     state: pending
     anchor: "bearer continuity and consequence-return guardrails"
+    blocked_by: "defer until the next subjecthood-threshold maintenance pass; current patch is a bridge-level continuity guard and does not justify a standalone S4 threshold edit"
   - target: "Philosophy/SRT_SocTheory_06_L2_Dynamics.md"
     state: pending
     anchor: "alienation / L2 rigidity"
+    blocked_by: "defer until social-L2 synthesis reopens so internalized position capture can be integrated alongside the existing external structural-capture route"
   - target: "Philosophy/SRT_Philosophy_Ethics.md"
     state: pending
     anchor: "freedom / responsibility / revisability"
+    blocked_by: "defer until the next ethics synthesis pass; flexibility/revisability requires cross-checking against existing responsibility and legitimacy guardrails before owner-level landing"
 ---
 
 # PH-AG05 Embodied Position / Operator Capture Integration Hook
