@@ -22,6 +22,7 @@ related_claims:
   - constraint_objectification
   - responsibility_position_trace
   - language
+  - agency
   - subjecthood_guardrails
 tags:
   - perception
@@ -43,7 +44,7 @@ type: theory_hardening_patch
 # SRT Philosophy Patch PH-PER01: Perceptual Learning / Salience / Constraint Reselection v0.1
 
 > **Status:** bounded P3 philosophy/perception bridge and hardening note.  
-> **Canonical caution:** this patch does not define `L_2`, `d-value`, `Psi_f`, `G_hat_theta`, subjecthood, agency, responsibility or second-order selection. It adds a mechanism-oriented bridge between historical learning, salience/candidate shaping and constraint reselectability.
+> **Canonical caution:** this patch does not define `L_2`, `d-value`, `Psi_f`, `G_hat_theta`, subjecthood, agency, responsibility or second-order selection. It adds a mechanism-oriented bridge between historical learning, perceptual organization, later candidate accessibility and constraint reselectability.
 
 ---
 
@@ -69,20 +70,83 @@ The source is a peer-reviewed philosophy article. It offers a reconstruction of 
 
 ---
 
-## 1. Why this matters for SRT
+## 1. Why this matters for SRT — and what is already covered
 
-Current SRT already contains the stronger historical claim that sedimented structure can constrain later manifestation and selection, and current social cognition already distinguishes a broad affordance field from the subset that becomes a live invitation field.
+Current SRT already contains several neighboring claims, so PH-PER01 must not present them as new.
 
-Nagase adds a useful missing middle:
+### Existing coverage A — PH-AG02 already has learned structuring bias
+
+`PH-AG02 Knowledge-biased selection` already distinguishes triggering causes from learned structuring biases and allows learned knowledge to organize attention and input-output coupling without becoming an explicit premise at each use.
+
+Therefore this generic claim is **not** the PH-PER01 increment:
 
 ```text
-historical learning / conceptual training
--> perceptual grouping and salience are reorganized
--> some features and action opportunities become easier to discriminate / notice
--> the later live candidate field can change before explicit deliberation
+learning / knowledge
+-> attention bias
+-> different response accessibility
 ```
 
-The stable increment is therefore not the generic claim that "experience affects perception". It is a more specific bridge in which **grouping and salience are candidate mediators between historical learning and later selectable structure**.
+PH-PER01 instead asks whether learning can alter the organization of the salience/discrimination field itself, rather than merely add another bias term over a fixed field.
+
+### Existing coverage B — SOC-COG03 already has constraint revision
+
+`SOC-COG03` already supplies:
+
+```text
+Visibility
+-> Contestability
+-> Alternative generation
+-> Enactability
+-> Historical writeback
+```
+
+and explicitly routes stronger second-order-selection claims through existing H3/I5/J5 conditions.
+
+Therefore PH-PER01 does **not** add a second social-reselection pathway. Nagase's language discussion is treated only as one possible trigger by which a previously transparent constraint enters the already existing SOC-COG03 revision pathway.
+
+### Existing coverage C — T-Cog-5 already adds history and salience in attention priority
+
+Current `Philosophy/SRT_Social_Cognition.md` states:
+
+```text
+Pi(T_i)
+= w_td * I_intent
++ w_bu * S_salience
++ w_hist * H_value
+```
+
+This additive form already represents top-down intention, bottom-up salience and historical value/habit as contributors to attention priority.
+
+### Stable PH-PER01 delta — reweighting versus reparameterization
+
+Nagase's useful pressure is narrower and more discriminating:
+
+```text
+HISTORICAL REWEIGHTING:
+fixed salience / grouping structure
++ changed weights or priorities
+-> different selected target
+
+versus
+
+HISTORY-CONDITIONED REPARAMETERIZATION:
+training history
+-> changed grouping / discrimination boundaries / salience organization
+-> a changed S_salience landscape itself
+-> different later target / candidate accessibility
+```
+
+The second pattern is the genuine PH-PER01 increment. The claim is **not** that Nagase proves T-Cog-5 false or that `S_salience` must be mathematically redefined now. It registers a P3/P4 pressure: an additive priority map may need a history-conditioned salience term or upstream perceptual-organization map when data show that training changes the feature partition / discrimination geometry itself rather than only the final priority weight.
+
+Compact distinction:
+
+```text
+history as one additive input to priority
+!=
+history changing the salience function / grouping structure that priority operates on
+```
+
+This is the main reason to retain PH-PER01 rather than absorb it entirely into PH-AG02 or SOC-COG03.
 
 ---
 
@@ -95,7 +159,7 @@ Bounded SRT bridge:
 ```text
 historical learning
 + task / goal structure
--> altered grouping / salience
+-> altered grouping / salience organization
 -> altered perceptual discrimination
 ```
 
@@ -103,9 +167,11 @@ At P3, this suggests one possible implementation route for history-conditioned m
 
 ```text
 L2-relevant history
--> constraint on later organization
--> changed L1-level salience / discrimination profile
+-> changed constraint on later perceptual organization
+-> changed constraint on which L1 manifestations / discriminations become available
 ```
+
+Do **not** call the learned salience/discrimination profile itself "L1-level". `L_1` is the manifest selected actuality; the learned profile belongs on the constraint/organization side of the bridge.
 
 The following identities are blocked:
 
@@ -142,6 +208,20 @@ historically shaped perception / norm sensitivity
 
 This does not imply that a physically possible action literally ceases to exist. It means the action may fail to enter the current field as a practically salient invitation.
 
+### Crosswalk to PH-AG02
+
+Use PH-AG02 for the broad claim that learned knowledge can function as an action-organizing bias. Use PH-PER01 only when the proposed effect is stronger:
+
+```text
+PH-AG02 neighboring case:
+learned structure biases attention / coupling over a field
+
+PH-PER01 delta candidate:
+learning changes grouping / discrimination / S_salience organization of the field itself
+```
+
+This boundary prevents the new patch from relabeling existing knowledge-bias content as novelty.
+
 ### Crosswalk to SOC-COG03
 
 PH-PER01 should not create a second affordance theory. Use it as a perceptual-learning companion to:
@@ -154,26 +234,58 @@ SOC-COG03 supplies role/script/history-sensitive social invitation gating; PH-PE
 
 ---
 
-## 4. Main bridge claim C — language can objectify previously transparent constraints
+## 4. Main bridge claim C — linguistic articulation as one SOC-COG03 revision trigger
 
 The source gives language a role stronger than simple storage or report. Stable labels can de-contextualize patterns, make higher-order relations available and bring patterns into joint attention and criticism.
 
-SRT-side bridge:
+Do not encode this as a second pathway parallel to SOC-COG03. The safer relation is:
 
 ```text
-transparent learned pattern / constraint
--> linguistic articulation
--> de-contextualization
--> joint attention
--> inspectability / contestability
--> possible revision
+transparent learned constraint
+-> linguistic articulation / naming
+-> de-contextualization / joint attention
+-> Visibility
+-> Contestability
+-> Alternative generation
+-> Enactability
+-> Historical writeback
 ```
+
+Here the last five stages are inherited from `SOC-COG03`; linguistic articulation is merely one candidate **entry trigger** into that existing pathway.
 
 Compact claim:
 
-> Language can provide one route by which a structure that previously shaped selection from the background becomes an object that the bearer and others can explicitly inspect and potentially revise.
+> Language can provide one route by which a structure that previously shaped selection from the background becomes visible and jointly inspectable; whether this visibility becomes durable reselection remains governed by the existing SOC-COG03 / H3-I5-J5 architecture.
 
-This belongs inside the existing repository `reselectability` family. It does not create a new canonical second-order-selection mechanism.
+### Inherited stronger conditions
+
+If a linguistic challenge is later described as second-order selection, PH-PER01 inherits the same stricter I5 requirements already used by SOC-COG03:
+
+```text
+same historical bearing-position consequence return
++ comparison-scale or generation-rule rewrite
++ changed future selectable space
++ persistent later efficacy
+```
+
+J5 then classifies reopening depth rather than assuming every revision is R3:
+
+```text
+R1-like: weight / priority change
+R2-like: category or role-boundary change
+R3-like: candidate-generation mechanism change
+R4-like: concern-boundary change
+```
+
+Thus:
+
+```text
+linguistic objectification
+!= successful revision
+!= historical writeback
+!= I5-qualified second-order selection
+!= J5 R3 by default
+```
 
 ### Guard against language exceptionalism
 
@@ -188,7 +300,7 @@ Non-linguistic animals can still possess organized perception, concern, memory a
 
 ---
 
-## 5. Main bridge claim D — interpersonal footprint can thicken responsibility-position traces
+## 5. Main bridge claim D — interpersonal footprint as a third responsibility-position thickening route
 
 Nagase's conclusion treats shared life as a web in which actions and attitudes leave interpersonal "footprints". Conversation allows people to negotiate how those footprints are understood and how reactions should be calibrated.
 
@@ -209,10 +321,30 @@ This can enrich the non-canonical `responsibility-position trace` architecture i
 Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
 ```
 
-but the following identity is blocked:
+but it must be cross-read with two already existing routes rather than treated as a standalone third theory:
 
 ```text
-interpersonal footprint = S6 responsibility
+PH-AG03:
+commitment under incomplete guarantee
+-> responsibility-position trace
+
+PH-AG05 / PH-AG05A:
+embodied / relational / collective position maintenance
+-> M_rel / position effects among concrete others
+-> possible reselection or capture consequences
+
+PH-PER01:
+interpersonal footprint
+-> jointly interpreted impact / correction / identification
+-> possible thickening of an already traceable responsibility position
+```
+
+The PH-PER01 contribution is specifically the **joint construal / correction of interpersonal impact**, not the creation of responsibility from social interpretation alone.
+
+The following identity is blocked:
+
+```text
+interpersonal footprint = responsibility-position trace = S6 responsibility
 ```
 
 A footprint is at most candidate material for a later responsibility relation. S6 still requires norm access, consequence understanding, selectable alternatives, revision/inhibition and repair/answerability conditions.
@@ -315,10 +447,10 @@ learning / conceptual training
 
 SRT P3 BRIDGE:
 historical constraint
--> future salience / invitation-field shaping
+-> possible S_salience / grouping reparameterization
+-> future invitation-field shaping
 -> live candidate-field difference
--> possible linguistic constraint objectification
--> reselectability pathway
+-> possible linguistic entry into existing SOC-COG03 revision pathway
 -> possible responsibility-position thickening
 ```
 
@@ -338,25 +470,54 @@ systematic integration != reselectability
 language != subjecthood
 language != agency
 language != responsibility
-interpersonal footprint != S6 responsibility
+linguistic objectification != I5-qualified second-order selection
+interpersonal footprint != responsibility-position trace != S6 responsibility
 rapid expert discrimination != proof of early cognitive penetration
 source argument != evidence for canonical G_hat_theta / Psi_f / d / L2 identities
 ```
 
 ---
 
-## 11. Suggested future differential questions
+## 11. Differential tests — make the delta adjudicable
 
-PH-PER01 supports future tests framed around matched current input with different learning histories:
+The strongest P4 use of PH-PER01 is to distinguish **priority reweighting** from **salience / grouping reparameterization** under matched current input.
+
+### P4-A — T-Cog-5 reweighting versus reparameterization
+
+Use the current T-Cog-5 priority form as the null architecture:
 
 ```text
-same current stimulus
-+ different training history
--> different grouping / salience
--> different candidate accessibility
+Pi(T_i)
+= w_td * I_intent
++ w_bu * S_salience
++ w_hist * H_value
 ```
 
-and, more strongly:
+Compare two model families under the same current stimulus and task:
+
+```text
+MODEL R — reweighting only:
+S_salience feature map / grouping held fixed
+history changes w_hist, w_td, or final priority weights
+
+MODEL P — reparameterization:
+training history changes feature grouping, discrimination boundary,
+or the mapping that produces S_salience before final priority selection
+```
+
+Candidate discriminators:
+
+- same physical stimulus, different training history;
+- early grouping / segmentation or discrimination-boundary differences;
+- transfer to novel exemplars not explainable by a learned final-response weight alone;
+- altered salience structure persisting when explicit task instruction and reward are matched;
+- model comparison asking whether history-conditioned `S_salience` / grouping predicts behavior beyond additive `H_value` reweighting.
+
+Failure / downgrade condition:
+
+> If matched-input expertise effects are fully explained by changed additive weights over an unchanged feature/salience representation, PH-PER01's distinct delta should be downgraded toward PH-AG02 rather than retained as a separate reparameterization bridge.
+
+### P4-B — reselectability under matched competence
 
 ```text
 matched current task competence
@@ -365,13 +526,15 @@ matched current task competence
 -> different reselectability under perturbation
 ```
 
-For social-language cases:
+### P4-C — linguistic trigger into existing revision pathway
 
 ```text
 constraint remains behaviorally effective
-but becomes linguistically objectified
--> does later inhibition / revision / alternative generation increase?
++ linguistic articulation increases Visibility / Contestability
+-> test Alternative generation / Enactability / Historical writeback
 ```
+
+A momentary verbalization effect alone is insufficient. Durable claims must retain SOC-COG03's later-stage and I5/J5 gates.
 
 These are P4-oriented research prompts only; the source itself does not provide these tests.
 
@@ -384,15 +547,15 @@ These are P4-oriented research prompts only; the source itself does not provide 
 Potential future insertion:
 
 ```text
-Historical learning can alter grouping and concern/task-weighted salience before explicit report or final action selection. Treat this as one candidate route by which prior structure changes later phenomenal organization, while keeping salience distinct from canonical d-value.
+The owner already uses concern-weighted salience for stake-gated phenomenal structure. PH-PER01 adds a distinct history/training-weighted route: learning may alter grouping and perceptual salience organization before explicit report or final action selection. Keep history/training-weighted salience distinct from concern-weighted salience and from canonical d-value; the former can modify which L1 manifestations/discriminations become available without by itself establishing bearer-level stake.
 ```
 
 ### Target B — Social Cognition
 
-Potential future insertion near invitation gating:
+Potential future insertion near T-Cog-5 / invitation gating:
 
 ```text
-Role/script-sensitive invitation gating can be complemented by a perceptual-learning route: repeated learning and conceptual training may change which features and action opportunities become perceptually salient before deliberation.
+Role/script-sensitive invitation gating can be complemented by a perceptual-learning pressure on the current additive priority form: history may not only contribute through H_value but may also change the grouping / S_salience map on which priority selection operates. Treat this as a reweighting-versus-reparameterization test, not an immediate rewrite of T-Cog-5.
 ```
 
 ### Target C — Agency / Subjecthood
@@ -400,7 +563,7 @@ Role/script-sensitive invitation gating can be complemented by a perceptual-lear
 Potential future insertion:
 
 ```text
-Language can thicken agency by making background constraints jointly inspectable and contestable, and can thicken responsibility by enabling interpretation, identification and repair of interpersonal footprints. These are S5/S6-supporting capacities, not subjecthood criteria by themselves.
+Language can thicken agency by serving as one trigger into the existing constraint-visibility / contestability pathway, and interpersonal footprint discussion can thicken responsibility-position traces through joint construal, correction and repair. Cross-read this with PH-AG03 commitment and PH-AG05/05A relational position; these are S5/S6-supporting routes, not subjecthood criteria by themselves.
 ```
 
 No target should be rewritten from this single source without a later synthesis pass.
