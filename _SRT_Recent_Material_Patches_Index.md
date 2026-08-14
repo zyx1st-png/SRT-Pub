@@ -146,6 +146,7 @@ AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T
 | PH-CONSC01 depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | binds consciousness claims to bearer, access, memory, stake, consequence return and continuity | Medium-high |
 | SOC-COG02 developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | child-body-caregiver-environment coordination; variability, cascades and degeneracy | Medium-high |
 | SOC-COG03 norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating and distributed script constraints; separates supportive automation from choice-replacing closure; routes broad social constraint revision into existing H3/I5/J5 reselectability rather than creating a parallel second-order-selection gate | High |
+| PH-PER01 perceptual learning / salience reparameterization | `Philosophy/patches/SRT_Philosophy_PH_PER01_Perceptual_Learning_Salience_Reselectability_v0_1.md` | narrows novelty to history-conditioned grouping / `S_salience` reparameterization versus additive reweighting; treats language as a SOC-COG03 revision trigger and preserves `systematic integration != reselectability` | High |
 
 PH-AG01 through PH-AG04 and PH-SEM01 are synthesized in the following non-canonical draft:
 
@@ -437,7 +438,6 @@ stake
 != physiological deviation
 != homeostatic error
 != affect / salience / pain intensity
-
 bearer-relative relevance
 != integrated conscious field proved
 != phenomenal character derived

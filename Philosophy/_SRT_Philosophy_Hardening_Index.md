@@ -27,6 +27,7 @@
 | PH-CONSC01 Depsychologization trap | `Philosophy/patches/SRT_Philosophy_PH_CONSC01_Depsychologization_Trap_v0_1.md` | consciousness claims become unusable for SRT subjecthood when pure feel is detached from bearer unit, access, memory, stake, consequence return, and boundary continuity | Integrated guardrail in `Philosophy/SRT_Subjecthood_Threshold_Interface.md` |
 | SOC-COG02 Developmental coordination scaffold | `Philosophy/patches/SRT_Philosophy_SOC_COG02_Developmental_Coordination_Scaffold_v0_1.md` | cognitive development as stabilization/reconfiguration of child-body-caregiver-environment coordinative structures, with variability/cascades/degeneracy as bridge probes | Integrated bridge in `Philosophy/SRT_Social_Cognition.md` |
 | SOC-COG03 Norm / script / affordance / constraint reselection | `Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md` | role-indexed invitation gating, distributed script carriers, supportive-vs-choice-replacing automation, and a social constraint-revision pathway explicitly routed into existing H3/I5/J5 reselectability rather than a parallel second-order-selection mechanism | A / bounded P3 social-cognition hardening bridge; integration hook pending |
+| PH-PER01 Perceptual learning / salience reparameterization | `Philosophy/patches/SRT_Philosophy_PH_PER01_Perceptual_Learning_Salience_Reselectability_v0_1.md` | narrows novelty to history-conditioned grouping / `S_salience` reparameterization versus additive reweighting; generic learned bias remains PH-AG02 territory, language is routed into SOC-COG03, and `systematic integration != reselectability` is preserved | A / peer-reviewed full-text P3 philosophy/perception hardening; integration hook pending |
 
 ---
 
@@ -477,6 +478,48 @@ salience = d-value
 norm-violation discomfort = Psi_f
 ```
 
+### PH-PER01 perceptual-learning / salience-reparameterization bridge
+
+Use Nagase only for the delta that survives comparison with current SRT coverage:
+
+```text
+PH-AG02 already:
+learned knowledge -> structural bias over attention / input-output coupling
+
+T-Cog-5 already:
+Pi(T_i) = w_td * I_intent + w_bu * S_salience + w_hist * H_value
+
+PH-PER01 pressure:
+history as an additive priority input
+!=
+history changing grouping / discrimination / the S_salience map itself
+```
+
+Safe uses:
+
+- treat the radiologist/perceptual-learning argument as a P3/P4 **reweighting versus reparameterization** pressure;
+- keep a learned salience/discrimination profile on the constraint side, not as an `L_1` manifestation itself;
+- distinguish history/training-weighted salience from the phenomenal-structure owner's concern-weighted salience;
+- route language-mediated objectification into SOC-COG03's existing `Visibility -> Contestability -> Alternative generation -> Enactability -> Historical writeback` pathway;
+- inherit I5 consequence-return / generation-rewrite / future-space / persistence requirements and J5 R1-R4 reopening depth for stronger reselection claims;
+- cross-read interpersonal footprint with PH-AG03 responsibility-position trace and PH-AG05/05A relational position rather than creating a third responsibility theory;
+- preserve `systematic integration != reselectability`.
+
+Do not claim:
+
+```text
+concept = L2
+perceptual learning = L2
+learned salience profile = L1
+salience = d-value
+what matters socially = d-value
+history/training-weighted salience = concern-weighted salience
+linguistic objectification = I5-qualified second-order selection
+interpersonal footprint = S6 responsibility
+rapid expert discrimination = settled proof of early cognitive penetration
+Nagase proves SRT
+```
+
 ---
 
 ## 2. Agency / subjecthood synthesis
@@ -516,6 +559,7 @@ Proposed additions:
 25. Representational adjacent-case threshold audit from PH-MR01, preserving evidence-degree vs ontological-degree and representation/bearer/phenomenality separations
 26. Role-indexed invitation gating and social constraint revision from SOC-COG03, explicitly subordinate to the existing H3/I5/J5 reselectability architecture
 27. PH-DIFF01 anti-preformation / problem-space / actualisation-mechanism / productive-asymmetry / deep-repetition stability pressure, crosswalked to PH-IND03 without canonical identity
+28. PH-PER01 reweighting-vs-reparameterization pressure on learned perceptual salience, with language routed through SOC-COG03 and responsibility thickening cross-read with PH-AG03 / PH-AG05A
 
 ---
 
@@ -599,5 +643,10 @@ SOC-COG03 SourceCard = added
 SOC-COG03 patch = added
 SOC-COG03 integration hook = added / pending
 SOC-COG03 H3/I5/J5 crosswalk = explicit; no canonical promotion
+PH-PER01 Nagase SourceCard = full-text close-read
+PH-PER01 patch = added
+PH-PER01 integration hook = added / pending
+PH-PER01 novelty claim = narrowed to reweighting-vs-reparameterization + integration-vs-reselectability
+PH-PER01 canonical / owner merge = not authorized / not requested
 Full synthesis = Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md (draft_v0_2; canonical: false)
 ```
