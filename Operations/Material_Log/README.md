@@ -30,11 +30,13 @@ canonical: false
 | [2026-08_Part02.md](2026-08_Part02.md) | 8 | August continuation through NEURAL27 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
 | [2026-08_Part04.md](2026-08_Part04.md) | 7 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 through 2026-08-11 |
-| [2026-08_Part05.md](2026-08_Part05.md) | 1 | August continuation; Nagase / McDowell perceptual learning as PH-PER01 on 2026-08-14 |
+| [2026-08_Part05.md](2026-08_Part05.md) | 2 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 on 2026-08-15 |
 
 ## Current note
 
-`2026-08_Part05.md` is the current dated continuation and begins with one bounded A-class PH-PER01 entry. `2026-08_Part04.md` remains historically closed at seven entries through the Deleuze full-book / PH-DIFF01 integration.
+`2026-08_Part05.md` is the current dated continuation and now contains two bounded A-class philosophy entries: PH-PER01 and PH-UNC01. `2026-08_Part04.md` remains historically closed at seven entries through the Deleuze full-book / PH-DIFF01 integration.
+
+**2026-08-15 Morejón / PH-UNC01:** the full-monograph close read is retained as a bounded non-canonical P3 philosophy-of-mind / history / embodied-belief bridge. Source-backed pressure is `thought != consciousness`, `conscious effect != causal transparency`, `truth / adequacy != determining efficacy`, Humean habit as history-conditioned future-transition bias, and the recursive correction problem that there is no habit-free standpoint. The distinct SRT-side increment is explicitly separated from Morejón: `repetition alone != full explanation of bearer-specific belief weight`; candidate bridge is `repeated encounter x embodied position / stakes / consequence return -> differential writeback -> altered threshold / accessibility / salience landscape -> differential reality-guiding belief weight`. Guards remain `unconscious != L0`, `habit != L2`, `force/vivacity != Psi_f/d`, `sub-threshold integration != phenomenality proof`, and no import of Spinozist necessitarianism or Leibnizian pre-established harmony. No canonical owner was changed.
 
 **2026-08-14 PH-PER01:** Nagase's perceptual-learning material is retained only after a novelty audit against PH-AG02, SOC-COG03 and T-Cog-5. The distinct pressure is `reweighting != reparameterization`: training history may change grouping / discrimination / the `S_salience` map itself rather than merely add a historical priority weight over a fixed field. The language route is subordinated to SOC-COG03's existing revision pathway and inherits I5/J5 gates; interpersonal-footprint material is cross-read with PH-AG03 and PH-AG05/05A rather than treated as a new responsibility definition. The material remains non-canonical.
 
