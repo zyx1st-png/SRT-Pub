@@ -23,6 +23,7 @@ related_srt_claims:
   - historical_writeback
   - reselectability
   - constraint_objectification
+  - language
   - agency
   - responsibility_position_trace
   - social_cognition
@@ -182,19 +183,37 @@ The conclusion expands Sellars's "space of reasons" beyond abstract propositiona
 
 The paper's final emphasis is interpersonal: lives affect one another, actions leave "footprints", and conversation lets agents negotiate the meaning of those footprints, calibrate reactions, assume responsibility and participate in deciding what matters.
 
-## 5. Strongest SRT interfaces
+## 5. Strongest SRT interfaces — after novelty audit
 
-### 5.1 Historical learning -> future salience landscape
+### 5.1 Genuine delta: reweighting versus salience/grouping reparameterization
 
-The paper supplies a useful mechanism-level bridge for a claim SRT already carries more abstractly:
+SRT already has neighboring coverage in `PH-AG02`: learned knowledge can organize attention and input-output coupling as a structural bias. `Philosophy/SRT_Social_Cognition.md` also already gives T-Cog-5 an additive priority form:
 
 ```text
-historical learning
--> changed grouping / salience
--> changed future perceptual discrimination
+Pi(T_i)
+= w_td * I_intent
++ w_bu * S_salience
++ w_hist * H_value
 ```
 
-At P3 this can be used to sharpen one possible route by which sedimented history constrains future `L_1` manifestation and selection conditions. It does not license:
+Nagase's distinct pressure is therefore not the generic claim that history biases attention. It is the stronger possibility that training changes the perceptual organization on which priority operates:
+
+```text
+REWEIGHTING:
+fixed grouping / salience map
++ changed priority weights
+
+versus
+
+REPARAMETERIZATION:
+training history
+-> changed grouping / discrimination boundaries / salience organization
+-> changed S_salience map itself
+```
+
+This gives PH-PER01 a bounded P3/P4 delta: ask whether matched-current-input learning effects are explainable by additive history/priority reweighting alone, or whether a history-conditioned change in the salience/grouping representation is required.
+
+At P3 this can sharpen one possible route by which sedimented history constrains future `L_1` manifestation and selection conditions. It does not license:
 
 ```text
 concept = L_2
@@ -215,22 +234,30 @@ history / training / norm-sensitive perception
 -> later action selection
 ```
 
-This is best treated as complementary to `SOC-COG03`, not as a new competing social-affordance architecture.
+This is best treated as complementary to `PH-AG02` and `SOC-COG03`, not as a new competing attention or social-affordance architecture.
 
-### 5.3 Language as constraint objectification route
+### 5.3 Language as an entry trigger into the existing SOC-COG03 revision pathway
 
-The most useful SRT-side increment is not "language creates rationality". It is the route:
+The useful source-level chain is:
 
 ```text
 transparent pattern / constraint
 -> stable linguistic articulation
 -> de-contextualization
 -> joint attention
--> contestability
--> possible revision
 ```
 
-This provides a plausible social-cognitive pathway by which a constraint that shapes what becomes selectable can itself become an object of inspection and revision. The pathway belongs inside the repository's existing `reselectability` family; it is not a new canonical second-order-selection gate.
+SRT already has the broader revision route in SOC-COG03:
+
+```text
+Visibility
+-> Contestability
+-> Alternative generation
+-> Enactability
+-> Historical writeback
+```
+
+PH-PER01 therefore treats linguistic articulation only as one candidate trigger into that existing pathway. It does not create a parallel route and inherits the same stricter I5 conditions for any later second-order-selection claim, plus J5 R1-R4 reopening-depth classification.
 
 ### 5.4 Interpersonal footprint -> responsibility-position thickening
 
@@ -240,8 +267,24 @@ Nagase's "interpersonal footprint" can enrich the current non-canonical SRT resp
 action
 -> impact on others / relationship
 -> shared interpretation
--> possible identification / endorsement
+-> possible correction / identification
 -> answerability / repair pathway
+```
+
+This must be cross-read with existing routes rather than treated as a standalone responsibility theory:
+
+```text
+PH-AG03:
+commitment -> responsibility-position trace
+
+PH-AG05 / PH-AG05A:
+embodied / relational position, including M_rel
+-> social-position maintenance or capture
+
+PH-PER01:
+interpersonal footprint
+-> joint construal / correction / identification
+-> possible thickening of an already traceable responsibility position
 ```
 
 The source does not show that every interpersonal impact produces responsibility. It is therefore safer to treat the footprint as candidate material that can thicken a `responsibility-position trace`, subject to SRT's separate S4/S5/S6 gates.
@@ -256,23 +299,24 @@ The source does not show that every interpersonal impact produces responsibility
 6. **Do not treat rapid expert perception as a direct proof of early cognitive penetration.** The source argues for perceptual reorganization, but the exact empirical boundary between early perception, attention and very rapid post-perceptual processing remains open.
 7. **Do not equate interpersonal footprint with responsibility.** Responsibility requires accessible alternatives, norm/consequence understanding, revision and repair conditions, not mere causal or social impact.
 8. **Do not treat the paper as evidence for canonical `G_hat_theta`, `Psi_f`, `d-value` or `L_2` identities.** It is a philosophy/perception bridge, not a direct test of SRT primitives.
+9. **Do not double-count existing SRT coverage.** Generic learned attention bias belongs to PH-AG02; generic constraint revision belongs to SOC-COG03. PH-PER01 survives as a distinct patch only insofar as salience/grouping reparameterization or the integration-vs-reselectability distinction adds discriminating value.
 
 ## 7. Pipeline 1 six-gate adjudication
 
 | Gate | Verdict | Reason |
 |---|---|---|
 | 1. Relevance | pass | direct relevance to perceptual organization, salience, affordance/candidate shaping, constraint reflection and responsibility |
-| 2. Increment | pass | adds a coherent perceptual-learning mechanism chain and a language-mediated constraint-objectification route beyond generic history-bias language |
+| 2. Increment | pass, narrowed | generic history-to-attention bias and revision are already covered; distinct increment is reweighting-vs-reparameterization pressure on salience/grouping plus `systematic integration != reselectability` |
 | 3. Evidence level | pass with scope | peer-reviewed primary philosophy article; strong for author-level reconstruction and conceptual architecture, not direct SRT or neural validation |
 | 4. Alignability | pass | can land as bounded P3 philosophy hardening without changing canonical definitions |
-| 5. Risk | pass with guardrails | main risks are `concept=L2`, `salience=d`, `what matters=d`, integration=reselectability, language=subjecthood/agency and footprint=responsibility |
+| 5. Risk | pass with guardrails | main risks are double-counting PH-AG02/SOC-COG03, `concept=L2`, `salience=d`, `what matters=d`, integration=reselectability, language=subjecthood/agency and footprint=responsibility |
 | 6. Landing | pass | primary landing is a non-canonical philosophy patch plus pending hooks to phenomenal-structure, social-cognition and agency/responsibility synthesis |
 
 ### Final verdict
 
-**A — bounded non-canonical P3 integration.**
+**A — bounded non-canonical P3 integration, with narrowed novelty claim.**
 
-The article is worth retaining because it supplies a disciplined bridge from historical learning to future salience/candidate-field restructuring and from linguistic articulation to constraint inspectability/revision. It does not justify a canonical rewrite.
+The article is worth retaining chiefly because it supplies a disciplined pressure from **history as additive bias** toward **history-conditioned reorganization of grouping / salience itself**, and because it motivates the independent hardening distinction `systematic integration != reselectability`. The language and responsibility material remain useful crosswalk/thickening material but are not separate new architectures.
 
 ## 8. Suggested patch target
 
@@ -296,11 +340,11 @@ The source does **not** trigger a canonical edit to `L_2`, `d-value`, `Psi_f`, `
 
 ### New interface
 
-- perceptual learning as grouping + salience restructuring;
-- learned salience as one route into live candidate-field shaping;
-- language-mediated de-contextualization and constraint objectification;
-- interpersonal footprint as a responsibility-position thickening route;
-- graded local rationality without collapsing animal cognition into human responsibility.
+- **primary delta:** perceptual learning as possible grouping / `S_salience` reparameterization, not merely additive history-weight change;
+- learned salience as one route into live candidate-field shaping, cross-read with PH-AG02 and SOC-COG03;
+- `systematic integration != reselectability` as an independent two-axis hardening distinction;
+- language-mediated de-contextualization as one trigger into the existing SOC-COG03 revision pathway;
+- interpersonal footprint as a responsibility-position thickening route cross-read with PH-AG03 and PH-AG05/05A.
 
 ### Reverse correction
 
@@ -309,7 +353,24 @@ The source does **not** trigger a canonical edit to `L_2`, `d-value`, `Psi_f`, `
 - task/norm salience is not stake;
 - social/ethical "what matters" is not canonical `d-value`;
 - language is neither necessary for subjecthood nor sufficient for responsibility;
-- rapid expert discrimination does not settle the low-level cognitive-penetration debate.
+- rapid expert discrimination does not settle the low-level cognitive-penetration debate;
+- generic knowledge bias and generic constraint revision must not be re-counted as PH-PER01 novelty.
+
+### P4 discriminating test
+
+Under matched current stimulus/task, compare:
+
+```text
+MODEL R:
+fixed grouping / S_salience map
++ changed additive priority weights
+
+MODEL P:
+training history changes grouping / discrimination boundaries
+or the mapping that produces S_salience before final priority selection
+```
+
+If MODEL P adds no predictive/explanatory increment beyond MODEL R, downgrade the distinct PH-PER01 contribution toward PH-AG02 rather than preserving a redundant patch.
 
 ### SRT-specific remainder
 
