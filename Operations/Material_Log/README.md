@@ -30,10 +30,13 @@ canonical: false
 | [2026-08_Part02.md](2026-08_Part02.md) | 8 | August continuation through NEURAL27 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
 | [2026-08_Part04.md](2026-08_Part04.md) | 7 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 through 2026-08-11 |
+| [2026-08_Part05.md](2026-08_Part05.md) | 1 | August continuation; Nagase / McDowell perceptual learning as PH-PER01 on 2026-08-14 |
 
 ## Current note
 
-`2026-08_Part04.md` now records seven bounded A-class entries through the Deleuze full-book / PH-DIFF01 integration.
+`2026-08_Part05.md` is the current dated continuation and begins with one bounded A-class PH-PER01 entry. `2026-08_Part04.md` remains historically closed at seven entries through the Deleuze full-book / PH-DIFF01 integration.
+
+**2026-08-14 PH-PER01:** Nagase's perceptual-learning material is retained only after a novelty audit against PH-AG02, SOC-COG03 and T-Cog-5. The distinct pressure is `reweighting != reparameterization`: training history may change grouping / discrimination / the `S_salience` map itself rather than merely add a historical priority weight over a fixed field. The language route is subordinated to SOC-COG03's existing revision pathway and inherits I5/J5 gates; interpersonal-footprint material is cross-read with PH-AG03 and PH-AG05/05A rather than treated as a new responsibility definition. The material remains non-canonical.
 
 **2026-08-11 follow-up landing:** six previously pending or partially landed philosophy hooks have been synchronized with their actual targets. PH-AG02 and PH-AG03 now land only their `T_dir` negative controls; PH-CONSC04 lands the SRT-zombie / phenomenality guard in Open Tensions and Individuation; PH-IND03 lands operator self-reselection / `stake-space restructuring` guards in those same two owners; PH-MR01 lands the Stable ISP adjacent-case boundary pressure in Open Tensions; PH-DIFF01 lands generative-selectability / anti-preformation pressure there. All six source packages remain non-canonical P3/P4 inputs, their hooks remain `partial` where other targets are still pending or parked, and this follow-up does not upgrade a theorem, definition, symbol, source claim, or current book passage.
 
