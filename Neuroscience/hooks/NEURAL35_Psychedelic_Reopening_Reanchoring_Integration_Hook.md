@@ -15,14 +15,17 @@ landing_ledger:
     blocked_by: "Neuroscience owner is currently a frozen library. Reopen only in a governed synthesis pass and preserve ST-A / B13 authority plus NEURAL16 and NEURAL26 guards."
   - target: "Neuroscience/SRT_Neuro_Predictions_Table.md"
     state: pending
-    blocked_by: "Land only as a P4 model-comparison cluster after operational definitions of Opening, Reanchoring and ConsequenceReturn are frozen; do not add a generic psychedelic phenomenon row."
+    blocked_by: "Land only as a P4 model-comparison cluster after operational definitions of Opening, Reanchoring and ConsequenceReturn are frozen; require complexity-controlled held-out comparison and do not add a generic psychedelic phenomenon row."
   - target: "Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md"
     state: pending
     target_status: planned
     blocked_by: "Requires joint synthesis with NEURAL20, NEURAL23, NEURAL26 and ST-A / Core 21C B13; no parallel reselectability namespace."
   - target: "Experiments/SRT_Experimental_Roadmap_v1.md"
     state: pending
-    blocked_by: "Prefer a lower-risk behavioral / computational perturbation first. Direct psychedelic work requires ethics approval, clinical collaboration and preregistration."
+    blocked_by: "Prefer a lower-risk behavioral / computational perturbation first. Direct psychedelic work requires ethics approval, clinical collaboration, preregistration and the folder-level clinical guard in Neuroscience/SRT_Neuroscience_Claim_Status.md."
+  - target: "Neuroscience/_SRT_Neuroscience_Hardening_Index.md"
+    state: pending
+    blocked_by: "Domain hardening index is already behind the recent NEURAL31/33/34 sequence. Update NEURAL31/33/34/35 together in a dedicated local governance/index refresh rather than treating NEURAL35 as a PR-local index blocker."
 ---
 
 # NEURAL35 Integration Hook — psychedelic reopening / re-anchoring
@@ -41,6 +44,12 @@ The owner-level sentence to preserve is:
 > **A perturbation can reopen or reshuffle accessible candidates without improving generative reselectability; adaptive revision additionally requires enough anchoring for action, consequence return, historical write-back and later re-entry into choice.**
 
 Claim level: P3 bridge. Any threshold, dose, biomarker or outcome relation remains P4.
+
+For any clinical, therapeutic, safety, or public-facing use, retrieve first:
+
+```text
+Neuroscience/SRT_Neuroscience_Claim_Status.md
+```
 
 ---
 
@@ -77,6 +86,9 @@ NEURAL20
 
 NEURAL16
 -> BOLD proxy requires reliability + mapping-stability + construct-discrimination gates
+
+SRT_Neuroscience_Claim_Status
+-> clinical / treatment-facing claim discipline
 ```
 
 ---
@@ -103,6 +115,12 @@ NEURAL16 measurement reliability
 -> construct discrimination
 ```
 
+Evidence-role boundary:
+
+> **The NEURAL35 discrimination is generated from SRT's existing architecture. Cavallaro supplies a perturbation-domain existence example, not the evidence base for the human clinical P4 model.**
+
+Keep the frequency-selective PPI result visible because it directly blocks a monotonic "open the sensory gate" reading.
+
 ---
 
 ## 5. Under-anchoring guard
@@ -110,6 +128,22 @@ NEURAL16 measurement reliability
 `under-anchoring` may be used only as a local P3/P4 label for:
 
 > a state in which candidate accessibility / switching is high relative to the system's ability to stabilize an action-guiding selection for consequence testing and later revision.
+
+Positive admission requires the patch-level UA-1 through UA-5 structure:
+
+```text
+Opening increases
++
+Reanchoring is disproportionately weak conditional on Opening
++
+selective action-guiding stabilization fails
++
+basic competence remains sufficiently preserved
++
+arousal / sedation / noise / reward / salience / generic-learning controls pass
+```
+
+A test-local contrast such as `z(Opening) - z(Reanchoring)` may summarize the dissociation, but it cannot admit the label by itself.
 
 It must not become:
 
@@ -123,7 +157,7 @@ zero-Psi_f state
 high-entropy identity
 ```
 
-If future data do not distinguish it from nonspecific impairment, arousal, sedation or noise, retire the label.
+If prospective data repeatedly fail the positive admission rule, or the pattern collapses under nuisance controls, retire the label.
 
 ---
 
@@ -179,18 +213,24 @@ M2: Outcome ~ StandardFlexibility
 M3: Outcome ~ Opening + Reanchoring + Opening*Reanchoring + ConsequenceReturn
 ```
 
+`M3` is more flexible than `M1/M2`; therefore an in-sample fit advantage is not evidence. Require preregistered complexity control through held-out / nested cross-validation, information-criterion or penalized comparison, and whenever feasible equal-complexity rival models built from standard constructs. Also require ablation of the interaction and consequence-return terms.
+
 Primary failure:
 
 ```text
-M3 adds no out-of-sample prediction after standard flexibility,
+M3 adds no complexity-controlled out-of-sample prediction after standard flexibility,
 expectancy, alliance, reward, salience, arousal and generic learning controls.
 ```
 
-A second failure:
+Additional failures:
 
 ```text
+M3 wins only in-sample or against under-parameterized rivals;
+
 more destabilization is monotonically better across a well-sampled range
-and re-anchoring quality adds no information.
+and re-anchoring quality adds no information;
+
+UA-1 through UA-5 do not define a reproducible selective under-anchoring region.
 ```
 
 Prefer a non-drug perturbation task first so the bridge is not protected by psychedelic-specific complexity.
@@ -212,6 +252,8 @@ critical-period reopening != personality reopening
 psychological flexibility != canonical reselectability
 ego dissolution != bearer dissolution
 ```
+
+For clinical or treatment-facing language, the above block is necessary but not sufficient; also retrieve `Neuroscience/SRT_Neuroscience_Claim_Status.md`.
 
 ---
 
