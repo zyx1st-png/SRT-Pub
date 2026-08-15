@@ -257,6 +257,12 @@ For clinical or treatment-facing language, the above block is necessary but not 
 
 ---
 
-## 10. Central synthesis sentence
+## 10. Repository-level index backlog note
+
+`_SRT_Recent_Material_Patches_Index.md` and the neuroscience hardening navigation are already behind the current patch sequence; NEURAL31/33/34 are missing there before NEURAL35 arrives. Treat this as a **repository-level navigation backlog**, not as a NEURAL35-specific exception. A dedicated local governance pass should refresh NEURAL31/33/34/35 together and separately review planned-but-not-yet-created synthesis targets such as `SRT_Neuroscience_Hardening_N1_N13_v0_2.md`.
+
+---
+
+## 11. Central synthesis sentence
 
 > **Reopening is valuable only if the system can still anchor, bear consequences, write history and choose again; otherwise flexibility can cross from release of lock-in into loss of usable selection.**
