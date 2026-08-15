@@ -19,7 +19,7 @@ landing_ledger:
   - target: "Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md"
     state: pending
     target_status: planned
-    blocked_by: "Requires joint adjudication with NEURAL23, NEURAL31 and NEURAL33, especially activity-silent, common-driver and metaplasticity boundaries."
+    blocked_by: "Requires joint adjudication with NEURAL23, NEURAL31 and NEURAL33, especially activity-silent, common-driver, timescale and metaplasticity boundaries."
   - target: "Experiments/SRT_Experimental_Roadmap_v1.md"
     state: pending
     blocked_by: "Reopen only if the matched-state relational-history protocol is selected as an active SRT differential experiment."
@@ -48,23 +48,29 @@ Therefore the intended synthesis is:
 
 ```text
 history / writeback
--> relational possibility structure K
+-> relation-disposition family K^(tau)
 -> momentary eligibility / ripple-compatible window
 -> realized relation R
 -> further writeback
 ```
 
-Do not merge `K` and `R`.
+Do not merge `K^(tau)` and `R`, and do not assume `K^(tau1) = K^(tau2)` across timescales.
 
 ---
 
 ## 2. Suggested owner-level paragraph
 
-> Experience-dependent plasticity can alter not only ongoing firing levels but also the conditional structure of future coordinated responses. Across replay, activity-silent working-memory, selection-history ping and metaplasticity paradigms, prior history can remain behaviorally effective after currently observed activity returns toward baseline, becoming visible when a later probe, retrieval cue or plasticity-inducing event recruits the system. This motivates a bounded distinction between a currently realized relation and a history-conditioned disposition for that relation to become realizable. The distinction is an implementation bridge, not a new canonical SRT variable and not evidence that relations are ontologically independent of their physical substrates.
+> Experience-dependent plasticity can alter not only ongoing firing levels but also the conditional structure of future coordinated responses. Across replay, activity-silent working-memory, selection-history ping and metaplasticity paradigms, prior history can remain behaviorally effective after currently observed activity returns toward baseline, becoming visible when a later probe, retrieval cue or plasticity-inducing event recruits the system. This motivates a bounded distinction between a currently realized relation and a timescale-indexed history-conditioned disposition for that relation to become realizable. The cross-paradigm commonality is functional, not evidence that one biological mechanism spans all timescales. The distinction is an implementation bridge, not a new canonical SRT variable and not evidence that relations are ontologically independent of their physical substrates.
 
 ---
 
 ## 3. Evidence sequence to preserve
+
+Primary evidence packet:
+
+```text
+Materials/2026/SRC_2026_08_15_Neuro_History_Conditioned_Relational_Possibility_Evidence_Packet.md
+```
 
 ### Ji & Wilson 2007
 
@@ -73,8 +79,6 @@ PRE sleep
 -> RUN experience
 -> RUN-high visual-cortex / hippocampus cell pairs are high in POST, not PRE
 ```
-
-Use as longitudinal experience-to-later-relation evidence.
 
 ### Miyawaki & Mizuseki 2022
 
@@ -85,37 +89,33 @@ partly preconfigured local ensembles
 -> reappearance during retrieval
 ```
 
-Use to separate local-component availability from inter-regional relation formation.
-
 ### Abbaspoor et al. 2026
 
 ```text
 experience / memory age
--> greater and more stable inter-assembly coupling
+-> reorganized and more stable inter-assembly coupling
 ```
 
-Use only with the explicit cross-sectional limitation: the study did not identify the same assemblies immediately before their original experience.
+Keep the cross-sectional memory-age limitation explicit.
 
 ### Panichello et al. 2024
 
 ```text
 working-memory Off state:
 current firing / cue selectivity near baseline
-while cue-specific functional-connection pattern retains mnemonic information
+while cue-specific ensemble / functional-connection structure retains mnemonic information
 ```
 
-Use to motivate `measured component state != complete latent network state`, not to claim full microstate identity.
+Use to motivate `measured component state != complete latent network state`, not full microstate identity.
 
 ### Barbosa et al. 2020
 
 ```text
-previous-trial trace in PFC synchrony
+previous-trial latent trace inferred from PFC synchrony
 -> later reactivation
 -> behavioral serial bias
 + human TMS perturbation changes bias
 ```
-
-Use for future causal efficacy of latent history-bearing state.
 
 ### Duncan et al. 2023
 
@@ -125,56 +125,63 @@ selection history latent in ongoing EEG
 -> learned priority becomes decodable
 ```
 
-Use for same-class probe revealing different history-conditioned response dispositions.
-
-### Human SMA-to-M1 metaplasticity
+### Hamada et al. 2009
 
 ```text
-priming does not itself change MEP magnitude
-but changes response to later identical plasticity induction
+SMA priming does not itself change MEP magnitude
+but changes later M1 QPS-induced plasticity
+DOI: 10.1113/jphysiol.2009.179101
 ```
 
-Use as a direct human example of `similar current output != similar future transition disposition`.
+Use as a human metaplasticity example of `similar measured current output != similar future transition disposition`.
 
 ---
 
-## 4. Required conceptual distinctions
+## 4. Required timescale guard
+
+The evidence spans distinct regimes:
+
+```text
+seconds / intertrial latent state;
+minutes-to-hours learning / consolidation / metaplasticity;
+days-to-weeks memory-age reorganization.
+```
+
+Use:
+
+\[
+K_{ij}^{(\tau)}
+\]
+
+only as a timescale-indexed local model family.
+
+Default:
+
+\[
+K^{(\tau_1)}\neq K^{(\tau_2)}.
+\]
+
+Cross-scale functional analogy is admissible; cross-scale mechanistic identity is not established.
+
+---
+
+## 5. Required conceptual distinctions
 
 ```text
 similarity != compatibility
-```
-
-Within a brain, different regions need not be homologous to coordinate; complementary roles can become co-adapted.
-
-```text
 current synchrony != latent relational possibility
-```
-
-Synchrony is an event / observable; `K` is a bridge-level conditional disposition.
-
-```text
 functional connectivity != direct synaptic edge
-```
-
-Common input and global state remain alternatives.
-
-```text
 activity-silent != physically inactive
-```
-
-A silent code can reside in synaptic, receptor, excitability, intracellular or circuit variables not captured by firing-rate readouts.
-
-```text
 history-conditioned relation != relation ontology proved
 ```
 
-The evidence supports future causal relevance of history-shaped organization, not ontological priority of relations.
+Within a brain, different regions need not be homologous to coordinate; complementary roles can become co-adapted. A silent code can reside in synaptic, receptor, excitability, intracellular or circuit variables not captured by firing-rate readouts.
 
 ---
 
-## 5. Relation writeback distinction
+## 6. Relation writeback distinction
 
-If later owner synthesis uses `writeback`, distinguish at least:
+If later owner synthesis uses `writeback`, distinguish:
 
 ```text
 node writeback:
@@ -188,25 +195,23 @@ Do not claim the two are independent. A relational writeback can be physically i
 
 ---
 
-## 6. Matrix / geometry language
+## 7. Matrix / geometry language
 
 If a compact abstraction is needed, use only locally:
 
 \[
-\mathcal K_t=[K_{ij}(t)]
+\mathcal K_t^{(\tau)}=[K_{ij}^{(\tau)}(t)].
 \]
-
-for a history-conditioned relational possibility geometry.
 
 The safe interpretation is:
 
-> `K_ij` indexes a conditional future joint-response disposition under declared controls.
+> `K_ij^(tau)` indexes a conditional future joint-response disposition under declared controls and a declared timescale regime.
 
 Do not add `K` or `mathcal K` to the canonical symbol table from this patch.
 
 ---
 
-## 7. Relation to SRT history / L2
+## 8. Relation to SRT history / L2
 
 Permissible bridge:
 
@@ -219,9 +224,9 @@ past selection / consequence
 Blocked identities:
 
 ```text
-K = L2
-K = Psi_f
-K = d-value
+K^(tau) = L2
+K^(tau) = Psi_f
+K^(tau) = d-value
 metaplasticity = L2
 functional connectivity = L2
 ```
@@ -230,7 +235,7 @@ NEURAL34 is one possible implementation pattern for history-conditioned future s
 
 ---
 
-## 8. Relation to interpersonal mutual intelligibility
+## 9. Relation to interpersonal mutual intelligibility
 
 Do not write:
 
@@ -258,7 +263,7 @@ This analogy must remain downstream of independent evidence in each domain.
 
 ---
 
-## 9. Mechanism-level prediction landing
+## 10. Mechanism-level prediction landing
 
 The decisive experiment is not another replay observation.
 
@@ -281,12 +286,12 @@ Neuroscience/SRT_NEURAL34_MATCHED_STATE_RELATIONAL_HISTORY_PROTOCOL_v0_1.md
 Primary failure condition:
 
 ```text
-history adds no relation-specific out-of-sample prediction after rich node-state, PRE-coupling and common-driver controls.
+history adds no relation-specific out-of-sample prediction after rich node-state, PRE-coupling, common-driver and timescale controls.
 ```
 
 ---
 
-## 10. Ontology wording guard
+## 11. Ontology wording guard
 
 Recommended:
 
@@ -304,6 +309,6 @@ Existing evidence does not establish either claim.
 
 ---
 
-## 11. Central synthesis sentence
+## 12. Central synthesis sentence
 
 > **History may alter not only what is currently active, but the conditional geometry of what can coordinate next; a transient synchrony event can therefore be understood as the realization of a previously shaped relational possibility rather than the first appearance of the relation itself.**
