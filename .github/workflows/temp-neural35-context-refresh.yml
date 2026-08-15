@@ -1,0 +1,54 @@
+name: Temp NEURAL35 Context Refresh
+
+on:
+  push:
+    branches:
+      - agent/neural35-psychedelic-reopening
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/neural35-psychedelic-reopening
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Fix material log declared row count
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('Operations/_SRT_MATERIAL_LOG.md')
+          text = p.read_text(encoding='utf-8')
+          old = '| 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 3 |'
+          new = '| 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 4 |'
+          if old not in text:
+              raise SystemExit('expected Part05 row-count anchor not found')
+          p.write_text(text.replace(old, new, 1), encoding='utf-8')
+          PY
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add Operations/_SRT_MATERIAL_LOG.md
+          git commit -m 'Fix Part05 material log row count'
+
+      - name: Regenerate context bundles from repository script
+        run: python scripts/build_srt_context_bundles.py --generated-date 2026-08-15
+
+      - name: Commit generated outputs and remove temporary workflow
+        shell: bash
+        run: |
+          git rm .github/workflows/temp-neural35-context-refresh.yml
+          git add Operations/Context_Bundles
+          git commit -m 'Refresh context bundles after neuroscience routing update'
+          git push origin HEAD:agent/neural35-psychedelic-reopening
