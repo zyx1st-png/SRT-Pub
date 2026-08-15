@@ -35,7 +35,8 @@ tags:
   - PPI
   - reselectability
   - under_anchoring
-status: source_card
+status: active
+record_stage: source_card
 layer: operations
 epistemic_layer: os
 claim_mode: evidence
@@ -149,6 +150,8 @@ over-hardening / lock-in
 ```
 
 `under-anchoring` is introduced only as a P3/P4 bridge label in the associated patch, not as a canonical SRT term.
+
+**Evidence-role boundary:** NEURAL35's `Opening x Reanchoring` discrimination is generated from SRT's existing architecture. Cavallaro et al. provide a bounded existence example that a psychedelic perturbation can alter network organization and sensory gating in a non-uniform way; they do **not** provide the evidence base for the human clinical outcome model used in the P4 proposal.
 
 ## 8. Suggested SRT landing
 
