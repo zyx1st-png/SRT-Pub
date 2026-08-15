@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-12
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-15
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-12
-source_commit: 1cd8da72
-source_branch: claude/srt-gateb-shoshin-layer-decision
-source_dirty: true
-inputs_digest: b0c5a7c951a2ab0c
+generated: 2026-08-15
+source_commit: a74c5164
+source_branch: agent/neural35-psychedelic-reopening
+source_dirty: false
+inputs_digest: 40eb49f1611ead68
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,10 +26,10 @@ inputs_digest: b0c5a7c951a2ab0c
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-12 |
-| 来源 commit | `1cd8da72` |
-| 来源分支 | `claude/srt-gateb-shoshin-layer-decision` |
-| 生成时来源工作树有改动 | 是 |
+| 生成日期 | 2026-08-15 |
+| 来源 commit | `a74c5164` |
+| 来源分支 | `agent/neural35-psychedelic-reopening` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
