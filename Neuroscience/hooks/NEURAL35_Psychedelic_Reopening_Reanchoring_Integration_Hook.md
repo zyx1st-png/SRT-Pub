@@ -259,7 +259,7 @@ For clinical or treatment-facing language, the above block is necessary but not 
 
 ## 10. Repository-level index backlog note
 
-`_SRT_Recent_Material_Patches_Index.md` and the neuroscience hardening navigation are already behind the current patch sequence; NEURAL31/33/34 are missing there before NEURAL35 arrives. Treat this as a **repository-level navigation backlog**, not as a NEURAL35-specific exception. A dedicated local governance pass should refresh NEURAL31/33/34/35 together and separately review planned-but-not-yet-created synthesis targets such as `SRT_Neuroscience_Hardening_N1_N13_v0_2.md`.
+`_SRT_Recent_Material_Patches_Index.md` is already behind the current patch sequence: NEURAL31/33/34 are missing there before NEURAL35 arrives. Treat this as a **repository-level navigation backlog**, not as a NEURAL35-specific exception. The separate neuroscience hardening index should likewise be refreshed for the same recent sequence because the SourceCard lists it as a future landing target. A dedicated local governance pass should refresh NEURAL31/33/34/35 together and separately review planned-but-not-yet-created synthesis targets such as `SRT_Neuroscience_Hardening_N1_N13_v0_2.md`.
 
 ---
 
