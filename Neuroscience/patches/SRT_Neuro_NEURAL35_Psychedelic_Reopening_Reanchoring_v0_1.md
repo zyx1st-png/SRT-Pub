@@ -5,7 +5,8 @@ source_ids:
 domain: neuroscience_psychedelics_reselectability_anchoring
 claim_level: P3/P4
 canonical_status: non_canonical
-status: patch
+status: active
+record_stage: patch
 target_documents:
   - "Neuroscience/SRT_Neural_Mechanisms_CompactCore.md"
   - "Neuroscience/SRT_Neuro_Predictions_Table.md"
@@ -48,6 +49,8 @@ id: PATCH-NEURO-NEURAL35-PSYCHEDELIC-REOPENING-REANCHORING
 > **Novelty audit:** SRT already has ST-A and a P2/P3 generative-reselectability layer. NEURAL35 does **not** create a second definition of reselectability. Its retained increment is the perturbation-side distinction **reopening != reselectability** and the candidate mirror failure mode **under-anchoring**.
 >
 > **Canonical caution:** this patch does not redefine `L_0/L_1/L_2`, `G_hat_theta`, `d`, `Psi_f`, `T_dir`, Stable ISP, Real Choice Moment, freedom, subjecthood, or consciousness.
+>
+> **Clinical-use guard:** any treatment-facing, safety-facing, or public clinical use of this patch must also read `Neuroscience/SRT_Neuroscience_Claim_Status.md` before interpretation or communication.
 
 ## 0. Source anchor
 
@@ -71,6 +74,10 @@ mescaline in awake rats
 ```
 
 The paper's cerebellar prediction/filter account is a mechanism hypothesis. The study does not measure human ego dissolution, psychotherapy, or subjecthood.
+
+**Evidence-role boundary:** the `Opening x Reanchoring` discrimination below is an **SRT-internal P4 proposal**. Cavallaro et al. provide a bounded existence example that a psychedelic perturbation can alter network organization and sensory gating in a non-uniform way; they are **not** the evidence basis for the human therapeutic-outcome, integration, expectancy, or alliance terms used in the proposed clinical-shaped model comparison.
+
+The frequency-selective PPI result is retained because it directly blocks the crude claim that mescaline merely "opens a sensory gate" in one monotonic direction.
 
 ---
 
@@ -163,6 +170,41 @@ Existing structure suppresses live re-entry so strongly that meaningful revision
 A perturbation may expand or reshuffle accessible candidates while weakening the ability to stabilize any candidate long enough for action, consequence testing, cross-time comparison, or useful write-back.
 
 `under-anchoring` is a **P3/P4 working label**, not a new P2 or canonical diagnosis. It must not be used as a catch-all explanation for psychosis, psychedelic adverse events, creativity, meditation, or ordinary uncertainty.
+
+### Positive admission rule for an under-anchoring candidate
+
+The label is admitted only when all of the following are prospectively operationalized and observed relative to a declared baseline / control condition:
+
+```text
+UA-1 Opening increases:
+     previously weak / inaccessible alternatives measurably re-enter competition
+     or prior dominance measurably decreases.
+
+UA-2 Reanchoring is disproportionately weak:
+     persistence / cross-context stabilization / evidence-sensitive policy retention
+     is lower than expected given the measured increase in Opening.
+
+UA-3 The dissociation is selective:
+     basic sensorimotor competence, task comprehension and generic performance capacity
+     are sufficiently preserved that the result is not reducible to global impairment.
+
+UA-4 Consequence-sensitive stabilization is degraded:
+     action-guiding selections show weaker consequence integration and/or unstable
+     later re-entry after the perturbation is removed.
+
+UA-5 The pattern survives preregistered nuisance controls:
+     arousal, sedation, noise, reward, salience and generic learning do not explain it away.
+```
+
+A test-local descriptive contrast may be used:
+
+\[
+UA_{local}=z(Opening)-z(Reanchoring),
+\]
+
+but **the score alone does not admit the label**. A large value caused only by measurement noise, global impairment, or a floor effect fails UA-3/UA-5. `UA_local` is not a canonical SRT variable.
+
+This makes `under-anchoring` a candidate that can receive positive support or fail, rather than a label defined only by inability to exclude alternatives.
 
 The adaptive target is therefore not maximum closure or maximum openness, but a bounded region informally summarized as:
 
@@ -275,7 +317,22 @@ M_3: Outcome \sim Opening + Reanchoring + Opening\times Reanchoring + Consequenc
 
 where every term must be operationalized independently and preregistered.
 
-**NEURAL35-P1:** if the SRT bridge has incremental value, long-term adaptive outcome should depend on the interaction between reopening and successful re-anchoring more strongly than on acute destabilization alone.
+### Model-comparison discipline
+
+`M_3` has more degrees of freedom than `M_1` or `M_2`. Therefore **higher in-sample fit is not evidence for NEURAL35**. A valid comparison must preregister at least one complexity-controlled route and preferably more than one:
+
+```text
+A. held-out / nested cross-validation of predictive log loss, likelihood or error;
+B. information-criterion or penalized-likelihood comparison with declared penalty;
+C. equal-complexity rival models built from standard constructs
+   (e.g. intensity, flexibility, expectancy, alliance, arousal, salience, reward, learning);
+D. nested ablation showing that Opening x Reanchoring and/or ConsequenceReturn
+   add reproducible held-out value beyond matched controls.
+```
+
+A flexible rival with comparable parameter count is required whenever sample size permits. If `M_3` wins only because it contains more terms, the result is **uninformative** for SRT.
+
+**NEURAL35-P1:** if the SRT bridge has incremental value, long-term adaptive outcome should depend on the interaction between reopening and successful re-anchoring more strongly than on acute destabilization alone, under complexity-controlled out-of-sample comparison.
 
 A stronger bounded prediction is:
 
@@ -306,6 +363,24 @@ Candidate measures may include task-specific alternative generation, altered tra
 
 Candidate measures may include persistence of a new action policy under repeated evidence, cross-context transfer, resistance to irrelevant state switching, and successful stabilization after perturbation removal.
 
+### Under-anchoring candidate test
+
+The positive UA-1 through UA-5 rule in §3 must be implemented before using `under-anchoring` as an explanatory label. At minimum the design must demonstrate:
+
+```text
+Opening increases
++
+Reanchoring is lower than expected conditional on Opening
++
+selective action-guiding stabilization fails
++
+basic competence is preserved
++
+confound controls pass
+```
+
+A simple high-switching or high-entropy state is not sufficient.
+
 ### Consequence return
 
 The chosen trajectory must produce consequences that return to the same bearer / history-bearing process and alter later choice conditions. Reward, confidence or report alone is insufficient.
@@ -323,6 +398,8 @@ The experiment should explicitly compare these measures with:
 - reward / valence;
 - generic learning / memory;
 - acute subjective intensity.
+
+Clinical or treatment-facing operationalization must also follow `Neuroscience/SRT_Neuroscience_Claim_Status.md`.
 
 ---
 
@@ -352,6 +429,14 @@ mouse social-reward critical-period reopening
 != human personality reopening
 != therapeutic re-selection proved
 ```
+
+Any clinical, therapeutic, safety, or treatment-facing use of this section is subordinate to the folder-level guardrail:
+
+```text
+Neuroscience/SRT_Neuroscience_Claim_Status.md
+```
+
+NEURAL35 is not a treatment recommendation, dosing rule, patient-selection rule, or clinical-risk model.
 
 ---
 
@@ -392,12 +477,13 @@ Connectivity is a network statistic, not SRT selectability.
 
 NEURAL35 should be narrowed or retired if preregistered work repeatedly finds any of the following:
 
-1. `Opening x Reanchoring` adds no out-of-sample predictive value beyond standard flexibility, expectancy, alliance, reward, salience, arousal and generic learning.
+1. `Opening x Reanchoring` adds no complexity-controlled out-of-sample predictive value beyond standard flexibility, expectancy, alliance, reward, salience, arousal and generic learning.
 2. Adaptive outcome is robustly monotonic with destabilization / plasticity across adequately sampled ranges and does not depend on anchoring quality.
 3. Candidate accessibility and action-guiding anchoring cannot be empirically separated.
 4. Consequence-return measures add no information beyond ordinary reward / confidence / persistence measures.
-5. The proposed "under-anchoring" region cannot be discriminated from measurement noise, acute impairment, sedation, arousal or nonspecific task failure.
+5. The proposed `under-anchoring` candidate repeatedly fails its positive UA-1 through UA-5 admission rule, or its apparent signal collapses after controls for measurement noise, acute impairment, sedation, arousal or nonspecific task failure.
 6. Psychedelic-specific findings fail to generalize to any non-drug perturbation paradigm, leaving the bridge too narrow to bear a general SRT claim.
+7. `M_3` appears superior only under in-sample or under-penalized comparison and loses against held-out or equal-complexity rivals.
 
 Failure of NEURAL35 does not retract ST-A or the P0/P1 core. It retracts this P3/P4 perturbational bridge.
 
@@ -425,6 +511,8 @@ Prefer:
 
 > Psychedelic perturbations provide a bounded stress-test domain for asking whether greater candidate accessibility can be separated from successful anchoring and future reselectability.
 
+For clinical/public-facing interpretation, also retrieve `Neuroscience/SRT_Neuroscience_Claim_Status.md`.
+
 ---
 
 ## 13. Integration relation to existing SRT work
@@ -446,6 +534,9 @@ NEURAL26
 
 NEURAL16
 -> BOLD / metabolic proxy admission
+
+SRT_Neuroscience_Claim_Status
+-> clinical / treatment-facing claim discipline
 ```
 
 The new contribution is only:
@@ -453,9 +544,9 @@ The new contribution is only:
 ```text
 reopening != reselectability
 +
-under-anchoring as a P3/P4 mirror failure candidate
+under-anchoring as a positively testable P3/P4 mirror failure candidate
 +
-Opening x Reanchoring as a P4 differential-test form
+Opening x Reanchoring as a complexity-controlled P4 differential-test form
 ```
 
 No canonical promotion is authorized by this patch.
