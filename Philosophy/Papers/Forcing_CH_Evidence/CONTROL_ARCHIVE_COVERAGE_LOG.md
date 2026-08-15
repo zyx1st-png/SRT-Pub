@@ -8,9 +8,9 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-11
-updated: 2026-08-13
+updated: 2026-08-14
 boundary: "mathematical logic, 1938–1963, outside the CH/forcing/independence line"
-coverage_state: assembly_in_progress_first_systematic_block
+coverage_state: assembly_in_progress_two_systematic_blocks
 candidate_enumeration: false
 part_ii_attested: false
 governed_by: Philosophy/Papers/Forcing_CH_Evidence/CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md
@@ -28,17 +28,19 @@ Expandable log of corpus contact permitted by `CONTROL_ARCHIVE_ADEQUACY_CERTIFIC
 | `COV-JSL-1955-V20-RECEPTION` | *The Journal of Symbolic Logic* | 1955 / vol. 20, nos. 1–2 | Müller p. 84 joint review and Montague p. 140 technical reconstruction; both complete entries | Remaining reviews/articles in vol. 20; other 1955 review and survey venues; no systematic review-of-record sweep | **opportunistic** — supplied items, not a serial sweep | Not a new primary-publication segment; both reached sources complete for their roles | **complete for the reached Müller entry only**; not exhaustive for JSL or the period | Montague supplies a genuine alternative formulation and contradiction proof, but the unit still lacks a strict removal/replacement record | Local JSTOR page scans only; no proof of exhaustive review coverage | Extend review-of-record coverage across a declared venue/year block and add technically deeper in-window construction records. |
 | `COV-UNIT-JSL-1953-1955-PARADOX-01` | *The Journal of Symbolic Logic* cluster | 1953–1955 / vols. 18 and 20 | Two primary publications + one period joint review + one period technical reconstruction, all page-verified | 1938–1952 and 1956–1963; all other mathematical-logic subfields; other venues; exhaustive survey/review coverage; pre-window Russell/Curry/Quine baselines as independently verified sources | **opportunistic corpus unit** | **2/2 reached primary publications complete** | **1/1 reached joint review complete; globally unswept** | Functional reconstruction and representation comparison available; load-bearing removal capacity remains insufficient | The unit was assembled from supplied material, not discovered through a repeatable systematic sweep | Add only the minimum evidence functions listed in the corpus-unit record §8: subfield/time breadth, review-of-record coverage, technically deep construction detail, and explicit sweep boundaries. |
 | `COV-JSL-1950-1955-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1950–1955; vol. 14 no. 4 boundary catchment plus vols. 15–20, all four issues each; **25 issues** | Official all-issues index and all 25 issue landing records; 1,416 deduplicated item records: 130 primary technical publications/corrections, 1,178 review-of-record entries, and 108 other issue records; 25 page-verified complete texts | 1,391 items remain incomplete at the full-text layer, all metadata-only; complete independent loading of every Cambridge dynamic pagination segment; JSL outside the declared block; all other venues | **systematic_but_incomplete** — no issue or item metadata gap, but paywalls and dynamic-page failures prevent an exhaustive claim | **15/130 primary/correction full texts page-verified; 115 metadata-only** | **10/1,178 review full texts page-verified; 1,168 metadata-only; 0 partial**; metadata-level review coverage demonstrated within this block | 12 primary/correction records marked only `technical-depth potentially sufficient`; all 12 are now page-verified, but no audit test was run | Cambridge login/paywall; intermittent dynamic pagination errors; JSTOR direct item access returned access controls; metadata remained reachable through publisher/Crossref/DBLP records | Retain the explicit full-text limits and define any next bounded venue/year block separately; do not screen, score, rank, select, or individuate any record during acquisition. |
+| `COV-JSL-1938-1943-SYSTEMATIC` | *The Journal of Symbolic Logic* | Calendar years 1938–1943; vols. 3–8, all four issues each; **24 issues** | Official all-issues archive; all 24 issue identities; 18 independently loaded issue/TOC landing records; 773 deduplicated item records: 67 primary technical publications/corrections, 601 review-of-record entries/notices, and 105 other issue records | Six issue/TOC landing records did not load independently; all 773 item full texts remain unreached; JSL 1944–1949 and 1956–1963; all other venues | **systematic_but_incomplete** — complete block-level issue identity and item metadata, but six publisher TOCs and the full-text layer remain incomplete | **0/67 primary/correction full texts page-verified; 67 metadata-only** | **0/601 review/notice full texts page-verified; 601 metadata-only**; review metadata is reproducible, but six publisher TOCs remain independently unconfirmed | 12 primary/correction records marked only `technical-depth potentially sufficient`; all remain metadata-only and no audit test was run | Cambridge rate limiting/timeouts and `Get access`; Project Euclid challenge page; no local full text acquired for this block | Acquire only the 12 functionally flagged primary records and eight immediately linked reviews as a minimal next pass; preserve all candidate and individuation prohibitions. |
 
 ## 2. Current coverage statement
 
-The archive now has two provenance-distinct layers:
+The archive now has three coverage entries in two provenance modes:
 
 1. the Shen–Stanley–Müller–Montague unit remains **opportunistic** supplied material; its provenance and local capacity statement are unchanged;
-2. `COV-JSL-1950-1955-SYSTEMATIC` is the first bounded serial/year sweep.
+2. `COV-JSL-1950-1955-SYSTEMATIC` is the first bounded serial/year sweep;
+3. `COV-JSL-1938-1943-SYSTEMATIC` is a separate bounded serial/year sweep of the earlier end of the frozen period.
 
-The new block is **systematic_but_incomplete**, not `exhaustive_within_declared_block`. Every issue identity and item-level bibliographic record in the declared block was reached, but most full texts were paywalled and some Cambridge dynamic pagination segments returned access or internal errors. The block therefore supports a reproducible metadata-level coverage statement only.
+Both systematic blocks are **systematic_but_incomplete**, not `exhaustive_within_declared_block`. In the 1938–1943 block every issue identity and item-level bibliographic record was reached, but six publisher issue/TOC landing records did not load independently and no item full text was acquired. The new block therefore supports a reproducible metadata-level coverage statement with an explicit publisher-TOC qualification only.
 
-It is not evidence of exhaustive JSL coverage for 1938–1963, coverage of other logic venues, full-text review coverage, or the absence of further corpus material.
+It is not evidence of exhaustive JSL coverage for 1938–1963, coverage of other logic venues, full-text review coverage, or the absence of further corpus material. JSL 1944–1949 and 1956–1963 remain outside the two systematic blocks.
 
 ## 3. `COV-JSL-1950-1955-SYSTEMATIC`
 
@@ -236,6 +238,138 @@ Part II remains unsigned because:
 
 No candidate was enumerated, admitted, excluded as a candidate, scored, ranked, selected, or individuated.
 
-## 4. Logging rule for later assembly
+## 4. `COV-JSL-1938-1943-SYSTEMATIC`
+
+### 4.1 Declared boundary and contact record
+
+| Field | Record |
+|---|---|
+| Swept venue | *The Journal of Symbolic Logic* |
+| Years | 1938–1943 inclusive |
+| Volumes | 3–8 |
+| Issues checked | **24/24 issue identities**: nos. 1–4 of each volume |
+| Tables of contents reached | Cambridge all-issues archive and all 24 issue identities; **18/24** issue/TOC landing records loaded independently. Six repeatedly timed out: 3(4), 4(4), 5(3), 6(2), 7(1), and 7(3). Crossref supplied item metadata across all 24 issue/page spans. |
+| Review and bibliographical-notice records reached | **601**: 595 author-attributed reviews plus 6 entries conservatively typed `bibliographical notice / unattributed review` because reviewer metadata was absent |
+| Primary article metadata reached | **67**: 66 primary technical publications plus 1 correction |
+| Other issue records reached | **105**: covers/front/back matter, citation-linkage matter, association records, meeting reports/notices/abstracts, review indexes, errata, and one bibliography supplement |
+| Full-text availability | **0** page-verified complete texts in this block |
+| Partial full-text availability | **0** |
+| Metadata-only items | **773** |
+| Inaccessible/incomplete items | **773 at the complete-full-text layer**. This means full text was not reached in this pass; it does not assert that every item is unavailable from every channel. Six issue/TOC pages also remain unconfirmed by an independently loaded publisher landing record. |
+| Block status | **systematic_but_incomplete** |
+
+The item inventory is `CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv`. It has one row per deduplicated bibliographic item and only the collection fields allowed by the scope lock. The exact Crossref query returned 774 DOI metadata records; one duplicate was collapsed by volume, assigned issue, opening page, and normalized exact title, leaving 773 item rows. Crossref's deposited issue fields were corrected only where a numeric printed page placed the record unambiguously inside the official non-overlapping issue span. Roman-numbered front/back matter retained the deposited issue.
+
+Cambridge's all-issues archive displays 3(2) as pp. 61–124 while also displaying 3(3) as pp. 97–124. The separately loaded 3(2) and 3(3) issue records resolve the overlap as pp. 61–96 and pp. 97–124. The inventory and ledger use those non-overlapping issue spans and retain the anomaly in the source manifest.
+
+### 4.2 Issue ledger
+
+`Review/notice` combines attributed reviews with the six conservatively typed bibliographical/unattributed entries. `Other` includes issue apparatus and association records, not primary publications or reviews.
+
+| Year | Volume | Issue | Printed pages | All items | Primary/correction | Review/notice | Other | Page-verified full text |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 1938 | 3 | 1 | 1–60 | 46 | 2 | 39 | 5 | 0 |
+| 1938 | 3 | 2 | 61–96 | 34 | 2 | 27 | 5 | 0 |
+| 1938 | 3 | 3 | 97–124 | 16 | 2 | 13 | 1 | 0 |
+| 1938 | 3 | 4 | 125–212 | 38 | 3 | 27 | 8 | 0 |
+| 1939 | 4 | 1 | 1–40 | 33 | 3 | 24 | 6 | 0 |
+| 1939 | 4 | 2 | 41–104 | 40 | 7 | 29 | 4 | 0 |
+| 1939 | 4 | 3 | 105–136 | 46 | 3 | 39 | 4 | 0 |
+| 1939 | 4 | 4 | 137–194 | 39 | 3 | 28 | 8 | 0 |
+| 1940 | 5 | 1 | 1–44 | 57 | 1 | 52 | 4 | 0 |
+| 1940 | 5 | 2 | 45–84 | 42 | 2 | 38 | 2 | 0 |
+| 1940 | 5 | 3 | 85–132 | 36 | 4 | 28 | 4 | 0 |
+| 1940 | 5 | 4 | 133–186 | 46 | 3 | 36 | 7 | 0 |
+| 1941 | 6 | 1 | 1–40 | 26 | 3 | 17 | 6 | 0 |
+| 1941 | 6 | 2 | 41–72 | 27 | 2 | 22 | 3 | 0 |
+| 1941 | 6 | 3 | 73–116 | 35 | 3 | 29 | 3 | 0 |
+| 1941 | 6 | 4 | 117–172 | 28 | 4 | 18 | 6 | 0 |
+| 1942 | 7 | 1 | 1–48 | 28 | 4 | 19 | 5 | 0 |
+| 1942 | 7 | 2 | 49–104 | 19 | 2 | 14 | 3 | 0 |
+| 1942 | 7 | 3 | 105–132 | 30 | 2 | 25 | 3 | 0 |
+| 1942 | 7 | 4 | 133–180 | 26 | 4 | 17 | 5 | 0 |
+| 1943 | 8 | 1 | 1–40 | 19 | 3 | 11 | 5 | 0 |
+| 1943 | 8 | 2 | 41–60 | 28 | 1 | 25 | 2 | 0 |
+| 1943 | 8 | 3 | 61–88 | 19 | 1 | 16 | 2 | 0 |
+| 1943 | 8 | 4 | 89–164 | 15 | 3 | 8 | 4 | 0 |
+| **Total** |  | **24** |  | **773** | **67** | **601** | **105** | **0** |
+
+### 4.3 Subfield distribution
+
+Subfields were assigned mechanically from title metadata. Ambiguous records remain `unclassified from title metadata`; no technical-content inference was used to force a classification.
+
+| Subfield | Primary/correction | Review-of-record | All records including issue apparatus |
+|---|---:|---:|---:|
+| Unclassified from title metadata | 11 | 127 | 138 |
+| Philosophy, language, and inductive logic | 7 | 201 | 208 |
+| General mathematical logic | 4 | 78 | 82 |
+| Proof theory and formal systems | 19 | 70 | 89 |
+| Propositional, many-valued, and modal logic | 11 | 58 | 69 |
+| Editorial/association apparatus | 0 | 0 | 105 |
+| Model theory and semantics | 2 | 19 | 21 |
+| Computability, recursion, and decidability | 4 | 14 | 18 |
+| Set theory and foundations | 6 | 12 | 18 |
+| Algebraic logic | 3 | 22 | 25 |
+| **Total** | **67** | **601** | **773** |
+
+Four review rows carry `mechanically obvious target-line exclusion from title/metadata`: one title expressly concerns the continuum problem and three expressly concern Gödel's consistency results for choice/GCH. All other target-line fields remain blank. A blank is not an admission or clearance finding; it means only that the exclusion was not mechanically obvious from the collected metadata.
+
+### 4.4 Review-of-record capacity
+
+The review inventory is reproducible within this block at the Crossref metadata layer:
+
+- all 601 review/bibliographical-notice records are retained in the row-level inventory;
+- 50 of the 67 primary/correction records have an in-block review entry immediately identifiable by exact-title/citation matching;
+- issue-level review indexes and review-section records were retained where deposited;
+- the same exact Crossref query and deduplication rule can regenerate the review subset.
+
+Accordingly, **review metadata coverage is demonstrated within this block**, but publisher-side TOC corroboration remains incomplete for six issues and **full-text review capacity is not demonstrated**: 0/601 review entries is page-verified complete. This conclusion does not extend beyond this JSL block.
+
+### 4.5 Minimal full-text acquisition list
+
+The following primary records are marked only `technical-depth potentially sufficient`. The flag means that pagination plus a multipart, correction, theorem, or immediately identifiable review chain may support a later removal/replacement audit if the full text is obtained. It is not an admission, comparison, or individuation judgement.
+
+| Author | Exact title | Location | Metadata-level function for acquisition | Immediately linked in-block review |
+|---|---|---|---|---|
+| L. Chwistek; W. Hetper | “New foundation of formal metamathematics” | 3(1), pp. 1–36 | long formal construction record | W. V. Quine, 3(3), pp. 120–121 |
+| Józef Pepis | “Ein Verfahren der mathematischen Logik” | 3(2), pp. 61–76 | multi-page method record | Paul Bernays, 3(4), pp. 161–162 |
+| K. Reach | “The name relation and the logical antinomies” | 3(3), pp. 97–111 | multi-page construction plus an in-issue correction | Paul Henle, 4(3), p. 134 |
+| Frederic B. Fitch | “The consistency of the ramified Principia” | 3(4), pp. 140–149 | formal consistency construction | Paul Bernays, 4(2), pp. 97–98 |
+| László Kalmár | “On the reduction of the decision problem. First paper. Ackermann prefix, a single binary predicate” | 4(1), pp. 1–9 | explicitly multipart reduction record | Th. Skolem, 4(3), pp. 127–128 |
+| Barkley Rosser | “An informal exposition of proofs of Gödel's theorems and Church's theorem” | 4(2), pp. 53–60 | proof exposition with separately recorded errata | Evert Beth, 4(4), p. 165 |
+| Alonzo Church | “A formulation of the simple theory of types” | 5(2), pp. 56–68 | multi-page formal-system formulation | W. V. Quine, 5(3), pp. 114–115 |
+| J. C. C. McKinsey | “Postulates for the calculus of binary relations” | 5(3), pp. 85–97 | postulate and theorem-chain record | Everett J. Nelson, 5(4), pp. 167–168 |
+| Paul Bernays | “A system of axiomatic set theory—Part II” | 6(1), pp. 1–17 | continuation of a multipart system record | none immediately identified in this block |
+| Paul Bernays | “A system of axiomatic set theory. Part III. Infinity and enumerability. Analysis” | 7(2), pp. 65–89 | continuation with explicit subject divisions | none immediately identified in this block |
+| Paul Bernays | “A system of axiomatic set theory. Part IV. General set theory” | 7(4), pp. 133–145 | continuation of the multipart system record | none immediately identified in this block |
+| Paul Bernays | “A system of axiomatic set theory. Part V. General set theory (continued)” | 8(4), pp. 89–106 | continuation of the multipart system record | none immediately identified in this block |
+
+The minimal next acquisition pass is therefore these 12 primary texts plus the eight immediately linked reviews, not the whole 773-item block. Acquiring them would improve technical-depth and reception capacity only. It would not authorize the six tests, candidate enumeration, or individuation.
+
+### 4.6 Access result and explicit not-reached boundaries
+
+The publisher all-issues archive established the 24-issue block and printed spans. Direct Cambridge access to sampled article/review pages displayed `Get access`, command-line publisher retrieval was rate-limited, and a Project Euclid route returned a challenge page. No source reached through those probes was registered as full text.
+
+Explicitly not reached in this sweep:
+
+- independent publisher issue/TOC loading for 3(4), 4(4), 5(3), 6(2), 7(1), and 7(3);
+- any page-verified item full text in the 1938–1943 block;
+- JSL 1944–1949 and 1956–1963;
+- every mathematical-logic venue other than JSL;
+- any corpus-wide technical or review sufficiency finding.
+
+### 4.7 Local effect on certificate §2(4)
+
+This block improves §2(4) locally by extending repeatable JSL metadata coverage to the early 1938–1943 boundary: the archive can now state the exact 24-issue universe, retain 773 item records, reproduce the 601-entry review subset, and name the six publisher-TOC and 773 full-text deficits. Together with the earlier 1950–1955 block, this yields bounded systematic metadata coverage for JSL 1938–1943 and 1950–1955 only. It does not close the 1944–1949 or 1956–1963 gaps and supplies no other-venue coverage.
+
+Part II remains unsigned because:
+
+- §2(2) is not established corpus-wide: this entire 773-item block remains metadata-only, including all 67 primary/correction and all 601 review/notice records;
+- §2(3) is not established: the 12 technical-depth flags are acquisition aids only, no full text was reached for them, and none was run through the six tests;
+- §2(4) remains partial: six publisher TOCs are independently unconfirmed, two large JSL year gaps remain, and no additional venue has been systematically swept.
+
+No candidate was enumerated, admitted, excluded as a candidate, scored, ranked, selected, or individuated.
+
+## 5. Logging rule for later assembly
 
 Every later entry must state the concrete venue/year block, whether contact was exhaustive, sampled, opportunistic, or systematic-but-incomplete, and what was not reached. “No material found” may be recorded only against a declared sweep boundary; it may not be inferred from this log’s present silence.

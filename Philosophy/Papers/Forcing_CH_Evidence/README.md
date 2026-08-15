@@ -8,7 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-05
-updated: 2026-08-13
+updated: 2026-08-14
 binding_strategy: Philosophy/Papers/Mathematical_Reachability_and_Problem_Individuation_Strategy.md@strategy_note_v0_7
 ---
 
@@ -40,7 +40,7 @@ Execution records under the protocols above. They carry no verdict.
 
 | File | Scope | State |
 |---|---|---|
-| [CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md](CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md) | Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8: the archive adequacy certificate for control-case selection | **Part I fixed, Part II unattested; archive assembly in progress.** The search boundary (period 1938–1963, mathematical logic outside the CH/forcing/independence line, with forcing-adjacent recursion-theoretic constructions excluded pending explicit clearance) remains unchanged. The first bounded JSL 1950–1955 block now gives §2(4) a reproducible local metadata-level coverage statement and demonstrates review-of-record coverage inside that block, but it is `systematic_but_incomplete`: 1,391/1,416 items remain incomplete at the full-text layer, all metadata-only, and §2(3) is not demonstrated. **Enumeration, scoring, ranking, selection and individuation remain blocked** until Part II is signed; no candidate case appears |
+| [CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md](CONTROL_ARCHIVE_ADEQUACY_CERTIFICATE_v0_1.md) | Step 2 of `CONTROL_CASE_SELECTION_PROTOCOL_v0_1` §8: the archive adequacy certificate for control-case selection | **Part I fixed, Part II unattested; archive assembly in progress.** The frozen search boundary is unchanged. Two bounded JSL sweeps now give §2(4) reproducible local metadata-level coverage for 1938–1943 and 1950–1955, but both are `systematic_but_incomplete`. The new 1938–1943 block has 24 issue identities and 773 item records, yet six publisher TOCs remain independently unconfirmed and all 773 items are metadata-only; JSL 1944–1949 and 1956–1963 and every other venue remain outside these blocks. §2(3) is not demonstrated. **Enumeration, scoring, ranking, selection and individuation remain blocked** until Part II is signed; no candidate case appears |
 
 ## Archive corpus records
 
@@ -48,8 +48,9 @@ Non-canonical corpus-assembly records. They register source contact and local ev
 
 | File | Scope | State |
 |---|---|---|
-| [CONTROL_ARCHIVE_SOURCE_MANIFEST.md](CONTROL_ARCHIVE_SOURCE_MANIFEST.md) | Stable source keys, sweep-metadata provenance, roles, page-verification status, evidentiary functions and limitations | Twenty-five JSL items are fully page-verified, including ten complete review entries; no partial captures remain in current counts; Cambridge/Crossref/DBLP/JSTOR sweep records retained; no PDF or page image committed; no candidate label assigned |
-| [CONTROL_ARCHIVE_COVERAGE_LOG.md](CONTROL_ARCHIVE_COVERAGE_LOG.md) | Reached/not-reached venue and year ranges, coverage mode, access limits and next corpus actions | Preserves the first unit as **opportunistic** and adds `COV-JSL-1950-1955-SYSTEMATIC`: 25 issues, 1,416 item records, 25 page-verified complete texts, 0 partial captures, 1,391 metadata-only, `systematic_but_incomplete`; no global coverage claim |
+| [CONTROL_ARCHIVE_SOURCE_MANIFEST.md](CONTROL_ARCHIVE_SOURCE_MANIFEST.md) | Stable source keys, sweep-metadata provenance, roles, page-verification status, evidentiary functions and limitations | Twenty-five JSL items from the 1950–1955 block remain fully page-verified, including ten complete review entries. Cambridge/Crossref/DBLP records for the separate 1938–1943 block are now registered, but they add **0** page-verified texts. No PDF or page image committed; no candidate label assigned |
+| [CONTROL_ARCHIVE_COVERAGE_LOG.md](CONTROL_ARCHIVE_COVERAGE_LOG.md) | Reached/not-reached venue and year ranges, coverage mode, access limits and next corpus actions | Preserves the first unit as **opportunistic** and separately records two `systematic_but_incomplete` JSL blocks: 1950–1955 (25 issues, 1,416 items, 25 complete texts) and 1938–1943 (24 issues, 773 items, 0 complete texts, six publisher TOC gaps); no global coverage claim |
+| [CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv](CONTROL_ARCHIVE_SWEEP_JSL_1938_1943_INVENTORY.tsv) | Row-level bounded inventory for JSL calendar years 1938–1943, vols. 3–8 | 67 primary publications/corrections, 601 review-of-record entries/notices, and 105 other issue records; 773 metadata-only rows; 12 acquisition-only technical-depth flags and four mechanically obvious target-line title/metadata flags; no admission, scoring, ranking, selection, or individuation fields |
 | [CONTROL_ARCHIVE_SWEEP_JSL_1950_1955_INVENTORY.tsv](CONTROL_ARCHIVE_SWEEP_JSL_1950_1955_INVENTORY.tsv) | Row-level bounded inventory for JSL calendar years 1950–1955, including the January 1950 vol. 14 no. 4 catchment | 130 primary publications/corrections, 1,178 review-of-record entries, and 108 other issue records; title-metadata subfields and access states only; all 12 rows marked `technical-depth potentially sufficient` are page-verified; no admission, scoring, ranking, selection, or individuation fields |
 | [CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE.md](CONTROL_ARCHIVE_UNIT_SHEN_STANLEY_MULLER_MONTAGUE.md) | Shen–Stanley–Müller–Montague corpus archive unit; technical reconstruction and Part II §2(2)–§2(4) capacity audit | `§2(2) demonstrated for this archive unit`; §2(3) not attested because load-bearing removal remains insufficient; §2(4) local JSL 1953–1955 paradox-cluster coverage only; Part II remains unsigned |
 

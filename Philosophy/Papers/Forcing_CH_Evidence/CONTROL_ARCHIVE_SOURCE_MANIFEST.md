@@ -8,7 +8,7 @@ layer: philosophy_bridge
 epistemic_layer: evidence
 claim_mode: evidence
 date: 2026-08-11
-updated: 2026-08-13
+updated: 2026-08-14
 boundary: "mathematical logic, 1938–1963, outside the CH/forcing/independence line"
 candidate_enumeration: false
 part_ii_attested: false
@@ -462,7 +462,7 @@ The earlier one-page captures for these five entries are superseded by the compl
 
 ## 3. Systematic-sweep metadata sources
 
-These records support `COV-JSL-1950-1955-SYSTEMATIC`. They register publisher/index contact and item metadata, not new page-verified evidence sources. Item-level fields are in `CONTROL_ARCHIVE_SWEEP_JSL_1950_1955_INVENTORY.tsv`.
+These records support `COV-JSL-1950-1955-SYSTEMATIC` and `COV-JSL-1938-1943-SYSTEMATIC`. They register publisher/index contact and item metadata, not new page-verified evidence sources. Item-level fields are in the corresponding bounded sweep inventory TSV.
 
 ### `JSL-CAMBRIDGE-1950-1955-ISSUES`
 
@@ -522,6 +522,64 @@ Issue landing records reached:
 | Reach status | Complete issue TOC metadata reached |
 | Full-text status | Direct item/PDF access was access-controlled in this environment |
 | Limitations | One issue spot-check only; it does not upgrade the other 24 issues or any item to full-text verified status. |
+
+### `JSL-CAMBRIDGE-1938-1943-ISSUES`
+
+| Field | Record |
+|---|---|
+| Stable key | `JSL-CAMBRIDGE-1938-1943-ISSUES` |
+| Source | Cambridge Core, *The Journal of Symbolic Logic*, all-issues archive and issue landing records |
+| Stable location | [JSL all-issues archive](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/all-issues) |
+| Exact block reached | Vols. 3–8, nos. 1–4: **24 issue identities**, calendar years 1938–1943 |
+| Function | Official venue/volume/issue boundary; printed-page spans; article/review/index section labels; access-state check |
+| Reach status | The all-issues archive and all 24 issue identities were reached. Eighteen issue/TOC landing records loaded independently; 3(4), 4(4), 5(3), 6(2), 7(1), and 7(3) repeatedly timed out. |
+| Full-text status | No item in this block was page-verified complete. Sampled primary/review pages displayed `Get access`; command-line retrieval was rate-limited. |
+| Metadata anomaly | The all-issues archive displays 3(2) as pp. 61–124 while also displaying 3(3) as pp. 97–124. Independently loaded issue records resolve the printed spans as 3(2), pp. 61–96, and 3(3), pp. 97–124. |
+| Limitations | Publisher-side issue identity is complete for the block, but six independent issue/TOC loads and the entire item full-text layer remain incomplete. The block is therefore `systematic_but_incomplete`. |
+
+Issue landing records contacted:
+
+| Volume | Issues | Cambridge landing records |
+|---:|---|---|
+| 3 | nos. 1–4 | [3(1)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/88BD683451875BB4F5F81015D95F53CB); [3(2)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/95563E691209D7A949BA09952CA53E8C); [3(3)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/7D570EAD0E2722D43F7B93734A522347); [3(4), timed out](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/152BE3A087664723A49472BB6F238B30) |
+| 4 | nos. 1–4 | [4(1)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/6535AD63D7FE93699CD26A4159483A41); [4(2)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/39E37671A489BE7EC9227F9A9EE0138F); [4(3)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/7F9E5EE9EAEB08D01DA37FFD6E54BEA8); [4(4), timed out](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/728B4295959B8719E821D5B4E8EF9CCA) |
+| 5 | nos. 1–4 | [5(1)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/611088F21721754731BD883F98282338); [5(2)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/9716D02D9A298F2CF2F7B340A278BC08); [5(3), timed out](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/58FF1D913C8537658F045F0FA74098EF); [5(4)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/6D6A0431A8F3C8CC883EE22EE5AA51BB) |
+| 6 | nos. 1–4 | [6(1)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/0B1C1755BA0C8FB0574C15E587D23B0A); [6(2), timed out](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/E22EFD8D276F03B3BCB196B1B5A2F2E2); [6(3)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/A8004572D60FD4B705955B015F19CE65); [6(4)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/53B34F4FB4FF4F9E5C44F79F5EB5909A) |
+| 7 | nos. 1–4 | [7(1), timed out](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/DD3E68D88EC005AA4B150856049C1535); [7(2)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/EDE4DF35BBAA0E62E4FD3E29207569A1); [7(3), timed out](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/B1338F2D729D2BFC7010C2C5DD3FA291); [7(4)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/BFDE81BD43368890B3CAFC0CB333B395) |
+| 8 | nos. 1–4 | [8(1)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/CB511D12EB4CEFD63432F3169513F9F9); [8(2)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/02F25CA31016B3B8556772FC9D16A051); [8(3)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/054C0C3F61309146E38CCE5206B19F61); [8(4)](https://www.cambridge.org/core/journals/journal-of-symbolic-logic/issue/B3457D3C4E9D8F60C0B1C9F51ECEF5F4) |
+
+### `JSL-CROSSREF-1938-1943-METADATA`
+
+| Field | Record |
+|---|---|
+| Stable key | `JSL-CROSSREF-1938-1943-METADATA` |
+| Source | Crossref REST metadata for ISSN `0022-4812`, print dates 1938-01-01 through 1943-12-31 |
+| Exact retrieval | [Rows 0–999](https://api.crossref.org/journals/0022-4812/works?filter=from-pub-date:1938-01-01,until-pub-date:1943-12-31&rows=1000&offset=0), retrieved 2026-08-14 |
+| Function | Reproducible item-level author/title/year/volume/issue/page metadata for primary publications, reviews/notices, and issue apparatus across all 24 issue spans |
+| Raw result | **774 DOI metadata records** |
+| Deduplication | One duplicate metadata record collapsed by volume, assigned issue, opening page, and normalized exact title, leaving **773 bibliographic items** |
+| Issue assignment | Numeric printed pages were mapped to the official non-overlapping issue spans where Crossref's deposited issue field conflicted with the page. Roman-numbered front/back matter retained the deposited issue. |
+| Limitations | Crossref metadata does not establish full-text access, technical depth, publisher-side TOC loading, or source-level accuracy beyond the deposited fields. It is not used for candidate judgement. |
+
+### `JSL-DBLP-V3-V8-CROSSCHECK`
+
+| Field | Record |
+|---|---|
+| Stable key | `JSL-DBLP-V3-V8-CROSSCHECK` |
+| Source | DBLP volume records for *The Journal of Symbolic Logic* vols. 3–8 |
+| Exact use | All issues of [vol. 3](https://dblp.org/db/journals/jsyml/jsyml3.html), [4](https://dblp.org/db/journals/jsyml/jsyml4.html), [5](https://dblp.org/db/journals/jsyml/jsyml5.html), [6](https://dblp.org/db/journals/jsyml/jsyml6.html), [7](https://dblp.org/db/journals/jsyml/jsyml7.html), and [8](https://dblp.org/db/journals/jsyml/jsyml8.html); retrieved 2026-08-14 |
+| Function | Cross-check of document type for **72 DBLP-indexed article/meeting/correction records**; all 72 matched a row in the Crossref-derived inventory and no item was added solely because DBLP indexed it |
+| Limitations | DBLP is a metadata cross-check, not a full issue TOC, review index, or replacement for publisher/full-text verification. |
+
+### `JSL-1938-1943-FULLTEXT-ACCESS-PROBE`
+
+| Field | Record |
+|---|---|
+| Stable key | `JSL-1938-1943-FULLTEXT-ACCESS-PROBE` |
+| Channels contacted | Cambridge issue/item routes, DOI redirects, and Project Euclid item routes linked by DBLP |
+| Result | Sampled Cambridge issue pages showed `Get access` for primary and review items; repeated command-line Cambridge retrieval returned rate limits; a Project Euclid route returned a challenge page. No complete item text was acquired through these probes. |
+| Function | Records the access constraint behind the block's 0 full-text count and prevents metadata contact from being misreported as page verification |
+| Limitations | This is an environment-specific access result, not a claim that the 773 items are unobtainable elsewhere. |
 
 ## 4. Source-handling limits
 
