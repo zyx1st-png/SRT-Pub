@@ -38,22 +38,15 @@ ripple oscillations support working memory
 The useful integration is the narrower structural pressure:
 
 ```text
-component activity
-!= complete organizational state
-
-historical trace
-!= current retrievability
-
-current eligibility
-!= content itself
-
-brief coordination window
-can support relation-level reinstantiation
+component activity != complete organizational state
+historical trace != current retrievability
+current eligibility != content itself
+brief coordination window can support relation-level reinstantiation
 ```
 
 The owner-level synthesis should therefore connect **history, eligibility and relational realization** without promoting any one oscillatory mechanism into an SRT primitive.
 
-NEURAL34 now adds the upstream question:
+NEURAL34 adds the upstream question:
 
 ```text
 why is one relation easier to realize than another after different histories?
@@ -62,7 +55,7 @@ why is one relation easier to realize than another after different histories?
 Keep:
 
 ```text
-history-conditioned relational possibility K
+history-conditioned relational possibility K^(tau)
 !=
 current realized relation R
 ```
@@ -81,7 +74,7 @@ retention -> transformation -> later-use consequences
 historical eligibility / retrievability conditions for re-entry
 
 + NEURAL34
-history-conditioned relational possibility / compatibility structure
+history-conditioned relational possibility / compatibility structure K^(tau)
 
 + NEURAL23
 momentary embodied / rhythmic eligibility
@@ -97,7 +90,7 @@ brief distributed coordination window
 expression / write-back / prospective history-use
 ```
 
-The arrows do not claim that one paper experimentally demonstrates this full chain.
+The arrows do not claim that one paper experimentally demonstrates this full chain, and `K^(tau1) != K^(tau2)` by default unless a cross-scale mechanism is independently established.
 
 ---
 
@@ -115,7 +108,7 @@ The arrows do not claim that one paper experimentally demonstrates this full cha
 | What does load change? | coordination demand can increase, sometimes without global mean firing increase | `cognition = firing magnitude` |
 | What is reinstated? | stimulus-related cross-region firing relations in the declared task | `whole memory object is stored in pair relations` |
 | What does history do? | can bias later re-entry probability / organization | `L2 = memory store` |
-| What can NEURAL34 add? | history may alter future relation realizability under matched current conditions | `K = hidden essence` |
+| What can NEURAL34 add? | history may alter future relation realizability under matched current conditions and a declared timescale `tau` | `K = hidden essence` |
 | What does current state do? | may modulate momentary eligibility | `phase = selection` |
 | What does distance result show? | little further attenuation in sampled nonlocal range after local-to-nonlocal drop | `global coordination is distance free` |
 | What does behavior link show? | stronger relation repetition is associated with faster recognition | `co-ripple causally generates recognition` |
@@ -142,9 +135,7 @@ Do not write:
 sigma(t) was previously wrong because it lacked edges
 ```
 
-The existing state-space formalism is sufficiently abstract to allow relational features; NEURAL33 supplies an empirical reason to make that possibility explicit in the neuroscience bridge layer.
-
-NEURAL34 adds a further warning: a current state description may also need to distinguish observed activity from latent history-conditioned transition disposition, but this should be treated as a model-class question rather than a new canonical coordinate by default.
+The existing state-space formalism is sufficiently abstract to allow relational features; NEURAL33 supplies an empirical reason to make that possibility explicit in the neuroscience bridge layer. NEURAL34 adds a further model-class question: observed activity may need to be distinguished from a timescale-indexed history-conditioned transition disposition without making `K^(tau)` canonical.
 
 ---
 
@@ -164,7 +155,7 @@ past experience
 
 ```text
 past joint / coupled history
--> changed conditional ability to realize particular future relations
+-> changed conditional ability to realize particular future relations within declared tau
 ```
 
 ### NEURAL33 owns
@@ -178,12 +169,8 @@ current brief coordination window
 Combined bridge:
 
 ```text
-history changes re-entry / relation conditions
-!=
-current re-entry event
+history changes re-entry / relation conditions != current re-entry event
 ```
-
-Suggested P3 sentence:
 
 > **Historical persistence can be expressed through changed conditions for future re-entry and relation formation, while successful retrieval is a present event in which a related organization is realized again under current constraints.**
 
@@ -194,24 +181,16 @@ Suggested P3 sentence:
 NEURAL23 already states:
 
 ```text
-what is accessible
-!=
-what is momentarily eligible for selection
+what is accessible != what is momentarily eligible for selection
 ```
 
 NEURAL33 can add:
 
 ```text
-what is locally active
-!=
-what is momentarily able to form a distributed coordinated relation
+what is locally active != what is momentarily able to form a distributed coordinated relation
 ```
 
-Potential synthesis sentence:
-
 > **Momentary eligibility may include not only local gain or threshold state but also whether distributed components can enter a shared temporal coordination window.**
-
-Keep as implementation language only.
 
 Blocked:
 
@@ -248,9 +227,7 @@ This is a prediction, not an established result of the Verzhbinsky paper.
 
 ## 9. Mechanism-level prediction landing
 
-The current `SRT_Neuro_Predictions_Table.md` mainly organizes phenomenon-level differential predictions.
-
-When that owner is reopened, add a separate subsection rather than mixing NEURAL33/34 into the existing syndrome / state rows.
+The current `SRT_Neuro_Predictions_Table.md` mainly organizes phenomenon-level differential predictions. When that owner is reopened, add a separate subsection rather than mixing NEURAL33/34 into existing syndrome / state rows.
 
 Suggested header:
 
@@ -265,9 +242,9 @@ Minimum entries:
 | History × eligibility | item history interacts with current physiological / phase state to predict relation reinstatement | only additive history + state effects replicate |
 | Relational residual | relation-level similarity predicts behavior beyond firing / power / arousal | relation metric adds no out-of-sample value |
 | Pre-event content prediction | pre-ripple state predicts which content relation re-enters | predicts only generic readiness / RT |
-| Component turnover | relation similarity retains value after component-overlap control | stable component identity fully explains recurrence |
+| Component turnover | relation similarity retains value after overlap-matching / conditional-permutation controls | stable component identity fully explains recurrence |
 | Retention vs retrievability | comparable retained trace can have different current re-entry probability | retrieval fully follows a fixed trace-strength scalar |
-| Matched-state different-history | prior relation history predicts future relation under matched current state / input / PRE coupling | history term vanishes after rich node/common-driver controls |
+| Matched-state different-history | prior relation history predicts future relation under matched current state / input / PRE coupling within declared `tau` | history term vanishes after rich node/common-driver controls |
 
 Detailed operationalizations remain in:
 
@@ -288,6 +265,7 @@ Neuroscience/SRT_NEURAL34_MATCHED_STATE_RELATIONAL_HISTORY_PROTOCOL_v0_1.md
 - `relation = representation in full`;
 - `relations are ontologically prior to neurons`;
 - `K = L2` or `K` as a new canonical variable;
+- `K^(tau1) = K^(tau2)` without cross-scale evidence;
 - `memory is not stored anywhere`;
 - `astrocyte state causes ripple reinstatement` as a source claim;
 - `large-scale phase scaffold causes co-ripple content selection` as an established causal chain;
@@ -303,28 +281,25 @@ Any owner-level integration must retain at least these downgrade conditions:
 ```text
 if relation metrics add no value after node-level controls -> downgrade organizational-state increment;
 if pre-event state predicts only generic readiness -> downgrade content-selective eligibility;
-if same-content recurrence is fully explained by component identity -> downgrade relational-continuity increment;
+if same-content recurrence is fully explained by component identity after overlap-aware controls -> downgrade relational-continuity increment;
 if matched-current-state relation history adds no prediction beyond PRE coupling / node state / common drivers -> downgrade NEURAL34;
+if cross-scale unity disappears after tau is modeled -> retain only regime-specific K^(tau) claims;
 if ripple specificity fails but another transient coordination event carries the effect -> retain only the broader event-window bridge;
 if causal manipulation changes excitability but not relation-specific retrieval -> downgrade ripple-mediated reinstatement mechanism.
 ```
 
-This keeps the package empirically risky rather than interpretively absorbent.
-
 ---
 
-## 12. Relationship to NEURAL32 / open PR #792
+## 12. Relationship to NEURAL32
 
-NEURAL32 is reserved by the open relational-candidate-construction PR and is not a dependency of NEURAL33/34.
+NEURAL32 is reserved for the separate structured-relational-candidate-construction bridge and is not a dependency of NEURAL33/34.
 
-If it lands later, preserve:
+Preserve:
 
 ```text
 structured candidate construction
-!=
-history-conditioned relational possibility
-!=
-transient distributed coordination / reinstantiation
+!= history-conditioned relational possibility
+!= transient distributed coordination / reinstantiation
 ```
 
 ---
@@ -333,6 +308,7 @@ transient distributed coordination / reinstantiation
 
 ```text
 Materials/2026/SRC_2026_08_15_Neuro_Verzhbinsky_Cross_Region_Ripple_Working_Memory.md
+Materials/2026/SRC_2026_08_15_Neuro_History_Conditioned_Relational_Possibility_Evidence_Packet.md
 Neuroscience/patches/SRT_Neuro_NEURAL33_Distributed_Ripple_Relational_Reinstatement_v0_1.md
 Neuroscience/SRT_NEURAL33_EXPERIMENT_PROTOCOL_v0_1.md
 Neuroscience/patches/SRT_Neuro_NEURAL34_History_Conditioned_Relational_Possibility_v0_1.md
@@ -343,7 +319,5 @@ Neuroscience/hooks/NEURAL34_History_Conditioned_Relational_Possibility_Integrati
 ---
 
 ## 14. Final bridge sentence
-
-Use only as bounded P3 language:
 
 > **History can remain effective by changing both the conditions under which a related organization becomes realizable again and the conditional geometry of which joint transitions are easier or harder to realize next; current neural implementation may therefore depend jointly on component activity, latent history-conditioned relation structure and momentary coordination opportunity.**
