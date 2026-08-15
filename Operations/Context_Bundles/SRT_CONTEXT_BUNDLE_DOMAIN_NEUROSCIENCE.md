@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-08-12
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-08-15
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-12
-source_commit: 1cd8da72
-source_branch: claude/srt-gateb-shoshin-layer-decision
-source_dirty: true
-inputs_digest: b0c5a7c951a2ab0c
+generated: 2026-08-15
+source_commit: a74c5164
+source_branch: agent/neural35-psychedelic-reopening
+source_dirty: false
+inputs_digest: 40eb49f1611ead68
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: b0c5a7c951a2ab0c
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-12 |
-| 来源 commit | `1cd8da72` |
-| 来源分支 | `claude/srt-gateb-shoshin-layer-decision` |
-| 生成时来源工作树有改动 | 是 |
+| 生成日期 | 2026-08-15 |
+| 来源 commit | `a74c5164` |
+| 来源分支 | `agent/neural35-psychedelic-reopening` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 5 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -45,7 +45,7 @@ inputs_digest: b0c5a7c951a2ab0c
 |---|---|---|
 | 1 | `Neuroscience/SRT_Neuroscience_Claim_Status.md` | 2026-08-12 |
 | 2 | `Neuroscience/NEUROSCIENCE_COMPACT_REGISTRY.md` | 2026-08-12 |
-| 3 | `Neuroscience/README.md` | 2026-08-12 |
+| 3 | `Neuroscience/README.md` | 2026-08-15 |
 | 4 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 5 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 
@@ -744,7 +744,7 @@ The current neuroscience compact doctrine is:
 | epistemic_layer | - |
 | layer | - |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-15 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -779,6 +779,10 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 
 7. [`SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md`](SRT_NB1_MOFC_LOTTERY_EXECUTION_CARD_v0_1.md)
    Local P4 execution card for the bounded `P3-Scale-NB1` neural divisive-normalization → frozen readout → task-choice workline. Card-defined only; not formally locked, preregistered, or executed. W0 access record: [`SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md`](SRT_NB1_W0_DATA_ACCESS_PROVENANCE_2026-08-12.md).
+
+## Recent material bridge
+
+- **NEURAL35 — psychedelic reopening / re-anchoring:** [`patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md`](patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md), with [`hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md`](hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md). P3/P4 only: its surviving increment is `reopening != reselectability`, plus `under-anchoring` as a positively testable but disposable mirror-failure label and `Opening × Reanchoring` as a complexity-controlled differential-test form. It does not redefine ST-A / Core 21C B13, and it inherits NEURAL16's BOLD proxy gate and NEURAL26's capacity/accessibility/control/write-back distinctions. **Any clinical, therapeutic, safety, or public-facing use must also retrieve [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md).**
 
 ## Status distinction
 
