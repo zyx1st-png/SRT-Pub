@@ -30,7 +30,7 @@ This directory contains SRT's neuroscience-facing bridge and lab materials.
 
 ## Recent material bridge
 
-- **NEURAL35 — psychedelic reopening / re-anchoring:** [`patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md`](patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md), with [`hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md`](hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md). P3/P4 only: its surviving increment is `reopening != reselectability`, plus `under-anchoring` as a disposable mirror-failure label and `Opening × Reanchoring` as a differential-test form. It does not redefine ST-A / Core 21C B13, and it inherits NEURAL16's BOLD proxy gate and NEURAL26's capacity/accessibility/control/write-back distinctions.
+- **NEURAL35 — psychedelic reopening / re-anchoring:** [`patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md`](patches/SRT_Neuro_NEURAL35_Psychedelic_Reopening_Reanchoring_v0_1.md), with [`hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md`](hooks/NEURAL35_Psychedelic_Reopening_Reanchoring_Integration_Hook.md). P3/P4 only: its surviving increment is `reopening != reselectability`, plus `under-anchoring` as a positively testable but disposable mirror-failure label and `Opening × Reanchoring` as a complexity-controlled differential-test form. It does not redefine ST-A / Core 21C B13, and it inherits NEURAL16's BOLD proxy gate and NEURAL26's capacity/accessibility/control/write-back distinctions. **Any clinical, therapeutic, safety, or public-facing use must also retrieve [`SRT_Neuroscience_Claim_Status.md`](SRT_Neuroscience_Claim_Status.md).**
 
 ## Status distinction
 
