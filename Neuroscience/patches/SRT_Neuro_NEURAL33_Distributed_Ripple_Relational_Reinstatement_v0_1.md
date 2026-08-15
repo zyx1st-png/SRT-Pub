@@ -31,6 +31,7 @@ related_claims:
   - NEURAL28
   - NEURAL29
   - NEURAL31
+  - NEURAL34
 tags:
   - ripple
   - working-memory
@@ -610,7 +611,43 @@ Do not collapse candidate structure into coordination-window structure without a
 
 ---
 
-## 16. SRT-facing compression
+## 16. Upstream extension — NEURAL34
+
+NEURAL33 describes **realized** distributed relation structure. The companion NEURAL34 patch asks why one relation is easier to realize than another after different histories.
+
+Cross-read:
+
+```text
+NEURAL34:
+past joint / coupled history
+-> history-conditioned relational possibility structure
+
+NEURAL33:
+current ripple-compatible window
+-> realized distributed relation / reinstatement
+```
+
+This yields the bounded sequence:
+
+```text
+history-shaped relational disposition K
+-> momentary coordination opportunity
+-> realized relation R
+-> further writeback
+```
+
+`K` is local NEURAL34 notation only and must not be imported into canonical SRT.
+
+Companion files:
+
+```text
+Neuroscience/patches/SRT_Neuro_NEURAL34_History_Conditioned_Relational_Possibility_v0_1.md
+Neuroscience/SRT_NEURAL34_MATCHED_STATE_RELATIONAL_HISTORY_PROTOCOL_v0_1.md
+```
+
+---
+
+## 17. SRT-facing compression
 
 Retain this sentence as the central P3 bridge:
 
