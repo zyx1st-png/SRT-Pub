@@ -1,7 +1,8 @@
 ---
 id: SRT-NEURO-NEURAL33-EXPERIMENT-PROTOCOL
 type: experimental_protocol
-status: draft_active
+status: draft
+record_stage: draft_active
 version: v0_1
 layer: empirical_bridge
 epistemic_layer: experimental
@@ -33,26 +34,30 @@ tags:
 
 ## 1. Core question
 
-Does prior history interact with the organism's current physiological / neural timing state to change the probability that an encoding-related distributed neural relation is reinstantiated during later retrieval?
+Does prior history interact with the organism's current physiological / neural timing state to change the probability or similarity of an encoding-related distributed neural relation during later retrieval?
 
 Compact target:
 
 \[
-\boxed{
 H_m \times E_t
 \rightarrow
-R_m^{reentry}
+S_R(m,t)
 \rightarrow
-Y_t
-}
+Y_t,
 \]
 
 where all symbols are protocol-local:
 
 - `H_m` = item-specific historical / learning-strength variable;
 - `E_t` = current embodied / neural eligibility state before the coordination event;
-- `R_m^{reentry}` = relation-level encoding-to-retrieval reinstatement measure;
+- `S_R(m,t)` = scalar similarity between declared encoding and retrieval relation structures;
 - `Y_t` = behavioral output such as RT, accuracy or confidence.
+
+For binary re-entry analyses use a separate quantity:
+
+\[
+P_{reentry}(m,t).
+\]
 
 The key differential claim is not merely that history matters or phase matters. It is that **history-conditioned re-entry depends on the current state in a way that is not fully reducible to additive memory strength, local firing or generic arousal.**
 
@@ -148,9 +153,35 @@ very-high-gamma event;
 continuous amplitude-envelope correlation.
 ```
 
-### 3.4 Relation-level reinstatement R_m
+### 3.4 Relation structure and reinstatement metrics
 
-Primary relation definition should be preregistered. Candidate measures:
+Use distinct types throughout:
+
+\[
+\mathcal R_m^{enc}
+\]
+
+= encoding relation structure / graph / set for item `m`;
+
+\[
+\mathcal R_m^{ret}(t)
+\]
+
+= retrieval relation structure at time `t`;
+
+\[
+S_R(m,t)=sim\!\left(\mathcal R_m^{enc},\mathcal R_m^{ret}(t)\right)
+\]
+
+= scalar relational similarity;
+
+\[
+P_{reentry}(m,t)
+\]
+
+= probability of a preregistered binary re-entry event when that analysis is used.
+
+Candidate primary relation definitions include:
 
 ```text
 repetition of cell-pair co-firing within a declared temporal window;
@@ -163,7 +194,7 @@ At least one primary measure must preserve stimulus identity and be compared aga
 
 ### 3.5 Component-level state X_t
 
-Controls must include component features that could otherwise explain `R_m`:
+Controls must include component features that could otherwise explain `S_R` or `P_reentry`:
 
 ```text
 single-neuron firing rates;
@@ -207,7 +238,7 @@ Primary comparison:
 
 ```text
 Model A: Y ~ X + task + arousal
-Model B: Y ~ X + R + task + arousal
+Model B: Y ~ X + S_R + task + arousal
 ```
 
 Support criterion:
@@ -219,24 +250,32 @@ Model B improves preregistered held-out prediction / information criterion beyon
 Downgrade criterion:
 
 ```text
-R adds no stable predictive value after X is controlled.
+S_R adds no stable predictive value after X is controlled.
 ```
 
 ### H2 — history and current eligibility interact
 
-Primary model:
+For continuous relational similarity:
 
 \[
-R_m^{reentry}
+S_R(m,t)
 =
 \beta_0
 +\beta_1H_m
 +\beta_2E_t
 +\beta_3(H_m\times E_t)
-+\mathbf{C}\gamma
++\mathbf C\gamma
 +u_{subject}
 +u_{item}
 +\epsilon.
+\]
+
+For binary re-entry use an explicit generalized model, e.g.:
+
+\[
+\operatorname{logit}P_{reentry}(m,t)
+=
+\beta_0+\beta_1H_m+\beta_2E_t+\beta_3(H_m\times E_t)+\mathbf C\gamma+\cdots
 \]
 
 `C` includes preregistered controls.
@@ -277,17 +316,18 @@ For repeated retrieval of the same content, compare:
 O_V=\frac{|V_1\cap V_2|}{|V_1\cup V_2|}
 \]
 
-with a preregistered relational similarity metric `S_R`.
+with preregistered relational similarity `S_R`.
 
-Test whether:
+Because `O_V` and `S_R` are structurally dependent, do **not** interpret a simple residual regression as decisive. Require all of:
 
-```text
-S_R predicts same-content retrieval / behavior after controlling O_V.
-```
+1. **overlap matching / stratification**: compare relation similarity within narrow `O_V` strata where feasible;
+2. **conditional permutation null**: shuffle relation identity while preserving component membership / overlap distributions;
+3. **incremental held-out prediction**: compare `Y ~ O_V + controls` against `Y ~ O_V + S_R + controls`;
+4. **collinearity diagnostics**: report VIF / condition indices or a justified equivalent and show stability across specifications.
 
-Support means organizational similarity has explanatory value beyond stable membership.
+Support means `S_R` carries stable incremental information beyond component overlap under those controls.
 
-Failure means component overlap fully accounts for the effect.
+Failure means component overlap fully accounts for recurrence and the conditional-permutation / held-out relational increment collapses.
 
 ### H5 — coordination windows mediate, rather than merely accompany, load-sensitive re-entry
 
@@ -377,7 +417,7 @@ If directionality is tested, use methods with explicit assumptions and validate 
 
 ## 8. Secondary study family — historical eligibility manipulation
 
-This arm is not implied by the Verzhbinsky human paper. It tests the cross-bridge NEURAL31 × NEURAL33 prediction.
+This arm is not implied by the Verzhbinsky human paper. It is a **conditional bridge-on-bridge prediction** and is admissible only while the independent NEURAL31 historical-eligibility bridge survives its own causal discrimination / downgrade tests.
 
 ### 8.1 Animal design family
 
@@ -409,13 +449,15 @@ post-retrieval persistence.
 
 ### 8.2 Discriminating prediction
 
-A NEURAL31-compatible eligibility result is:
+Conditional on NEURAL31 remaining supported, a NEURAL31-compatible eligibility result is:
 
 ```text
 historical-eligibility manipulation
 -> altered re-entry probability / latency / stability
 while some cue-specific neuronal content coding remains measurable
 ```
+
+If NEURAL31 is downgraded, this arm must be reclassified or removed rather than used as independent support for NEURAL33.
 
 A stronger independent-content result would require substantially different evidence and would force revision of the current NEURAL31 content/eligibility separation.
 
@@ -434,7 +476,7 @@ Trace_A\approx Trace_B
 can coexist with:
 
 \[
-P(R_A^{reentry}|E_t)\neq P(R_B^{reentry}|E_t).
+P_{reentry}(A|E_t)\neq P_{reentry}(B|E_t).
 \]
 
 This directly tests:
@@ -484,7 +526,7 @@ Do not mine many physiological phases and retain only the best interaction witho
 An observational chain:
 
 ```text
-H/E -> W -> R -> Y
+H/E -> W -> S_R -> Y
 ```
 
 is not automatically causal mediation. Report it as predictive / temporal structure unless interventions identify the arrows.
@@ -495,14 +537,14 @@ is not automatically causal mediation. Report it as predictive / temporal struct
 
 | Result | NEURAL33 consequence |
 |---|---|
-| `R` predicts behavior beyond component activity across replications | strengthens `component state != organizational state` bridge |
+| `S_R` predicts behavior beyond component activity across replications | strengthens `component state != organizational state` bridge |
 | `H x E` predicts relation reinstatement | strengthens history-conditioned current eligibility bridge |
 | pre-event state predicts which content relation re-enters | strengthens content-selective eligibility, not just generic readiness |
-| relation similarity survives partial component turnover | strengthens organizational-continuity hypothesis |
+| relation similarity survives overlap matching + conditional permutation + held-out component-overlap controls | strengthens organizational-continuity hypothesis |
 | ripple specificity fails but transient event coordination remains | downgrade ripple specificity; retain relational-window bridge |
 | all relation effects vanish after rate/power controls | major downgrade of NEURAL33 |
 | pre-state predicts only arousal / RT | downgrade content-selective eligibility claim |
-| same-content recurrence fully requires same components | downgrade relation-over-membership increment |
+| same-content recurrence is fully explained by component overlap | downgrade relation-over-membership increment |
 | causal manipulation changes only excitability, not relation-specific retrieval | downgrade coordination-window mechanism |
 
 ---
@@ -536,16 +578,16 @@ Collect:
 item-specific encoding strength H_m;
 respiration + ECG + LFP pre-retrieval state E_t;
 co-ripple timing W_t;
-encoding-to-retrieval relation similarity R_m;
+encoding-to-retrieval relational similarity S_R;
 RT / accuracy Y_t.
 ```
 
 Primary tests:
 
 ```text
-1. R ~ H + E + H:E + controls
-2. Y ~ X + R + controls
-3. content-specific R prediction from pre-event E vs generic RT prediction
+1. S_R ~ H + E + H:E + controls
+2. Y ~ X + S_R + controls
+3. content-specific S_R prediction from pre-event E vs generic RT prediction
 ```
 
 This minimal package targets the most distinctive bridge claim:
