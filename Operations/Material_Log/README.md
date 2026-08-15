@@ -30,11 +30,13 @@ canonical: false
 | [2026-08_Part02.md](2026-08_Part02.md) | 8 | August continuation through NEURAL27 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
 | [2026-08_Part04.md](2026-08_Part04.md) | 7 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 through 2026-08-11 |
-| [2026-08_Part05.md](2026-08_Part05.md) | 3 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 + NEURAL33/34 on 2026-08-15 |
+| [2026-08_Part05.md](2026-08_Part05.md) | 4 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 + NEURAL33/34 + NEURAL35 on 2026-08-15 |
 
 ## Current note
 
-`2026-08_Part05.md` is the current dated continuation and now contains three bounded A-class entries: PH-PER01, PH-UNC01, and the NEURAL33/34 neuroscience package. `2026-08_Part04.md` remains historically closed at seven entries through the Deleuze full-book / PH-DIFF01 integration.
+`2026-08_Part05.md` is the current dated continuation and now contains four bounded A-class entries: PH-PER01, PH-UNC01, the NEURAL33/34 neuroscience package, and NEURAL35. `2026-08_Part04.md` remains historically closed at seven entries through the Deleuze full-book / PH-DIFF01 integration.
+
+**2026-08-15 NEURAL35:** the mescaline material pass is retained as a bounded non-canonical P3/P4 perturbation bridge. Its novelty is not a new reselectability definition but the narrower discriminator `reopening != reselectability`, with `under-anchoring` kept as a positively testable and disposable working label rather than a diagnosis or canonical variable. Cavallaro et al. supply a rat perturbation-domain existence example—cerebellar-weighted BOLD changes, distributed connectivity changes, and frequency-selective PPI—not the evidence base for the human clinical-shaped `Opening x Reanchoring` P4 model. The P4 comparison must be complexity-controlled and out-of-sample; any treatment-facing interpretation also routes through `Neuroscience/SRT_Neuroscience_Claim_Status.md`. No canonical owner was changed.
 
 **2026-08-15 NEURAL33/34:** the neuroscience package separates current realized distributed relation (`NEURAL33`) from a timescale-indexed history-conditioned relation disposition `K^(tau)` (`NEURAL34`). The package is supported by the Verzhbinsky ripple / working-memory SourceCard plus a multi-source primary evidence packet spanning replay, activity-silent working-memory, selection-history ping and metaplasticity. Cross-timescale commonality is retained only as a functional analogy; `K^(tau1) != K^(tau2)` by default. The decisive P4 test is matched-current-state / different-history prediction of future relation identity or probability after PRE-coupling, rich node-state and common-driver controls. No canonical owner was changed.
 
@@ -68,7 +70,7 @@ The part also retains Antonio Damasio's 2026 *Natural Intelligence and the Logic
 
 `2026-08_Part03.md` records two bounded A-class neuroscience bridges:
 
-1. **NEURAL25** — Lu et al. strategy competition: separates representation, candidate accessibility, control authority, expression and historical write-back; memory is not reduced to retained content or to a scalar selection weight.
+1. **NEURAL25** — Lu et al. strategy competition: separates representation, candidate accessibility, control authority, behavioral expression and historical write-back; memory is not reduced to retained content or to a scalar selection weight.
 2. **NEURAL26** — Qin et al. anesthesia / DoC network study: adds an upstream system-level dynamical-capacity bridge and explicitly separates global network regime from candidate accessibility, control authority, expression and historical write-back. Entropy, connectivity and criticality-related measures remain proxy families, not identities with selection capacity or consciousness.
 
 `2026-08_Part01.md` retains the Young–Ericson–Schooler brain-body synchrony review as `NEURAL23`. If a count or route in the root material log temporarily lags this split index, the dated parts themselves are the record source for row contents; reconcile the root summary on the next root-log maintenance touch without rewriting historical rows.
