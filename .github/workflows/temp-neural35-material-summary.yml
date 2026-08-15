@@ -1,0 +1,49 @@
+name: Temp NEURAL35 Material Summary Sync
+
+on:
+  push:
+    branches:
+      - agent/neural35-psychedelic-reopening
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/neural35-psychedelic-reopening
+          fetch-depth: 0
+
+      - name: Sync material summary totals
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('Operations/_SRT_MATERIAL_LOG.md')
+          text = p.read_text(encoding='utf-8')
+          replacements = {
+              '- 总提交：229 条': '- 总提交：230 条',
+              '- A（融入）：152 条': '- A（融入）：153 条',
+              '- 融入率：66.4%': '- 融入率：66.5%',
+          }
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f'expected summary anchor not found: {old}')
+              text = text.replace(old, new, 1)
+          p.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Commit sync and remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git rm .github/workflows/temp-neural35-material-summary.yml
+          git add Operations/_SRT_MATERIAL_LOG.md
+          git commit -m 'Sync NEURAL35 material log summary totals'
+          git push origin HEAD:agent/neural35-psychedelic-reopening
