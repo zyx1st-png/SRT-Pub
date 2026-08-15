@@ -7,10 +7,11 @@ version: v0_1
 canonical: false
 claim_level: P3-P4
 claim_mode: synthesis
-evidence_mode: multi_source_primary_evidence_synthesis
 layer: operations
 epistemic_layer: os
 domain: Neuroscience
+source_ids:
+  - SRC-2026-08-15-NEURO-HISTORY-CONDITIONED-RELATIONAL-POSSIBILITY-PACKET
 created: 2026-08-15
 target_future_doc:
   - Neuroscience/SRT_Neural_Mechanisms_CompactCore.md
@@ -46,6 +47,12 @@ tags:
 
 > **Boundary**: non-canonical P3 synthesis bridge with P4 differential predictions. NEURAL34 does **not** claim that relations are ontologically prior to components, that synchrony is understanding, that ripple is selection, or that a new canonical SRT variable has been discovered. It isolates a narrower empirical pressure: **past co-participation and plastic history can change which coordinated states are later realizable, even when currently observed component activity is similar or when no persistent activity code is detectable.**
 
+Primary-evidence packet:
+
+```text
+Materials/2026/SRC_2026_08_15_Neuro_History_Conditioned_Relational_Possibility_Evidence_Packet.md
+```
+
 ---
 
 ## 1. Core question
@@ -73,13 +80,13 @@ past joint / coupled history
 -> further relational writeback
 ```
 
-Compactly:
+Compactly, within a declared timescale regime `tau`:
 
 \[
-H_t \rightarrow K_t \rightarrow R_t \rightarrow K_{t+1},
+H_t \rightarrow K_t^{(\tau)} \rightarrow R_t \rightarrow K_{t+1}^{(\tau)}.
 \]
 
-where all notation is local to this patch.
+All notation is local to this patch.
 
 ---
 
@@ -88,27 +95,28 @@ where all notation is local to this patch.
 Define, only for analysis:
 
 \[
-K_{ij}(t)
+K_{ij}^{(\tau)}(t)
 =
-\text{history-conditioned transition disposition between components }i,j.
+\text{history-conditioned transition disposition between components }i,j
+\text{ at declared timescale }\tau.
 \]
 
 Operational meaning:
 
-> Given a declared current state, input and context, how strongly does prior history change the conditional probability that components `i` and `j` will enter a particular coordinated / jointly changing state?
+> Given a declared current state, input, context and timescale regime, how strongly does prior history change the conditional probability that components `i` and `j` will enter a particular coordinated / jointly changing state?
 
 Then:
 
 \[
 P\!\left(R_{ij}(t+\Delta t)\right)
 =
-F\!\left(X_t,K_{ij}(t),E_t,C_t,G_t\right),
+F\!\left(X_t,K_{ij}^{(\tau)}(t),E_t,C_t,G_t\right),
 \]
 
 where:
 
 - `X_t` = currently observed component activity;
-- `K_ij` = history-conditioned relational transition disposition;
+- `K_ij^(tau)` = history-conditioned relational transition disposition at a declared timescale;
 - `E_t` = momentary eligibility / timing state;
 - `C_t` = task / cue / ecological context;
 - `G_t` = shared / global driver variables where declared;
@@ -117,20 +125,21 @@ where:
 Guards:
 
 ```text
-K_ij != correlation
-K_ij != synaptic weight by definition
-K_ij != direct anatomical edge
-K_ij != ripple probability
-K_ij != latent consciousness
+K_ij^(tau) != correlation
+K_ij^(tau) != synaptic weight by definition
+K_ij^(tau) != direct anatomical edge
+K_ij^(tau) != ripple probability
+K_ij^(tau) != latent consciousness
+K^(tau1) != K^(tau2) by default
 ```
 
-`K_ij` is a bridge-level conditional property inferred only if matched-state history manipulations or longitudinal evidence justify it.
+`K_ij^(tau)` is a bridge-level conditional property inferred only if matched-state history manipulations or longitudinal evidence justify it. Cross-timescale identity requires separate evidence.
 
 ---
 
 ## 3. Evidence anchor A — Ji & Wilson: experience-specific cross-region relation appears in POST, not PRE
 
-Ji & Wilson, *Nature Neuroscience* 10, 100–107 (2007), DOI `10.1038/nn1825`, simultaneously recorded visual cortex and hippocampus in a `PRE sleep -> RUN -> POST sleep` design.
+Ji & Wilson, *Coordinated memory replay in the visual cortex and hippocampus during sleep*, **Nature Neuroscience** 10, 100–107 (2007), DOI `10.1038/nn1825`, simultaneously recorded visual cortex and hippocampus in a `PRE sleep -> RUN -> POST sleep` design.
 
 The critical relation-level result is:
 
@@ -153,7 +162,7 @@ This does not establish whether the relevant change resides in direct synapses, 
 
 ## 4. Evidence anchor B — Miyawaki & Mizuseki: local ensembles can pre-exist while inter-regional coactivation develops after experience
 
-Miyawaki & Mizuseki, *Nature Communications* 13, 1272 (2022), DOI `10.1038/s41467-022-28929-x`, recorded BLA, vCA1 and prelimbic cortex across fear conditioning.
+Miyawaki & Mizuseki, *De novo inter-regional coactivations of preconfigured local ensembles support memory*, **Nature Communications** 13, 1272 (2022), DOI `10.1038/s41467-022-28929-x`, recorded BLA, vCA1 and prelimbic cortex across fear conditioning.
 
 Key dissociation:
 
@@ -173,65 +182,50 @@ The important inference is not `experience creates every component`. It is:
 This directly motivates:
 
 ```text
-component availability
-!=
-relational compatibility
-```
-
-and:
-
-```text
-oscillatory opportunity
-!=
-which relation is recruited within that opportunity
+component availability != relational compatibility
+oscillatory opportunity != which relation is recruited within that opportunity
 ```
 
 ---
 
 ## 5. Evidence anchor C — Abbaspoor et al.: experience stabilizes higher-order assembly coupling
 
-Abbaspoor, Aljishi & Hoffman, *Nature Neuroscience* (2026), DOI `10.1038/s41593-026-02357-2`, recorded hippocampal and connected-region assemblies in freely moving macaques.
+Abbaspoor, Aljishi & Hoffman, *Experience reorganizes content-specific memory traces in macaques*, **Nature Neuroscience** (2026), DOI `10.1038/s41593-026-02357-2`, recorded hippocampal and associated-region assemblies in freely moving macaques for new, recent and old item-sequence memories and subsequent sleep.
 
-With greater memory age / experience, assemblies showed:
-
-```text
-stronger network connectivity;
-stronger sleep reactivation;
-more stable task-to-sleep assembly coupling;
-longer time-extended interactions.
-```
-
-Importantly, the experience-dependent coupling pattern persisted after excluding assembly pairs with high membership similarity, arguing against the effect being only redundant component composition.
+With greater memory age / experience, assemblies showed reorganized and more stable network interactions / sleep reactivation patterns. Reported controls showed that the experience-dependent coupling pattern was not reducible to simple assembly-membership similarity.
 
 Safe pressure:
 
-> **experience can reorganize higher-order inter-assembly dynamics independently of simple assembly-member overlap.**
+> **experience / memory age can be associated with reorganization of higher-order inter-assembly dynamics beyond simple component-membership overlap.**
 
-This strengthens a relation-level account but does not prove that relation variables are independent of all microphysical component states.
+Critical limitation:
+
+```text
+memory-age comparison
+!= longitudinal matched-PRE demonstration that the same pair acquired K from zero
+```
 
 ---
 
-## 6. Evidence anchor D — Panichello et al.: currently observed firing can return to baseline while cue-specific functional-connection structure remains
+## 6. Evidence anchor D — Panichello et al.: currently observed firing can return toward baseline while cue-specific connection structure remains informative
 
-Panichello et al., *Nature* (2024), DOI `10.1038/s41586-024-08139-9`, recorded large simultaneous lateral-prefrontal populations in monkeys performing working memory.
+Panichello et al., *Intermittent rate coding and cue-specific ensembles support working memory*, **Nature** 636, 422–429 (2024), DOI `10.1038/s41586-024-08139-9`, recorded large simultaneous lateral-prefrontal populations in monkeys performing working memory.
 
 During mnemonic `Off` states:
 
 ```text
-single-neuron cue selectivity collapsed;
-average firing returned to spontaneous levels;
+single-neuron cue selectivity diminished;
+average firing approached spontaneous levels;
 ```
 
-while mnemonic information remained available in cue-specific patterns of functional connections among neuronal ensembles.
-
-The paper used large simultaneous populations and functional-connection analyses to show that mnemonic state cannot be read from firing-rate magnitude alone during these periods.
+while cue-specific ensemble / functional-connection structure retained mnemonic information not captured by firing magnitude alone.
 
 Safe pressure:
 
 \[
 X_A\approx X_B
 \not\Rightarrow
-K_A\approx K_B
+K_A^{(\tau)}\approx K_B^{(\tau)}
 \]
 
 for the **measured state description**.
@@ -244,9 +238,9 @@ Critical guard:
 
 ## 7. Evidence anchor E — Barbosa et al.: latent synchrony trace can causally bias future behavior
 
-Barbosa et al., *Nature Neuroscience* 23, 1016–1024 (2020), DOI `10.1038/s41593-020-0644-4`, found that previous-trial stimulus information was not decodable from ordinary spiking between trials but was retained in PFC spiking-synchrony structure.
+Barbosa et al., *Interplay between persistent activity and activity-silent dynamics in the prefrontal cortex underlies serial biases in working memory*, **Nature Neuroscience** 23, 1016–1024 (2020), DOI `10.1038/s41593-020-0644-4`, found that previous-trial stimulus information was not decodable from ordinary spiking between trials but was retained in a latent state inferred from PFC spiking synchrony.
 
-Before the next stimulus, the latent trace reactivated into an activity pattern related to the previous stimulus; reactivation strength tracked serial behavioral bias. Single-pulse TMS over human PFC during the intertrial period altered subsequent serial bias.
+Before the next stimulus, this trace reactivated into an activity pattern related to the previous stimulus; reactivation strength tracked serial behavioral bias. Single-pulse TMS over human PFC during the intertrial period altered subsequent serial bias.
 
 This supports a causal-shape claim:
 
@@ -262,7 +256,7 @@ It does not prove that synchrony itself is the unique substrate; the paper model
 
 ## 8. Evidence anchor F — selection-history ping: same neutral input can reveal different history-conditioned response dispositions
 
-Duncan, van Moorselaar & Theeuwes, *Nature Communications* 14, 4749 (2023), DOI `10.1038/s41467-023-40405-8`, trained spatial selection history through unequal target-location probabilities.
+Duncan, van Moorselaar & Theeuwes, *Pinging the brain to reveal the hidden attentional priority map using encephalography*, **Nature Communications** 14, 4749 (2023), DOI `10.1038/s41467-023-40405-8`, trained spatial selection history through unequal target-location probabilities.
 
 During the intertrial period:
 
@@ -270,15 +264,7 @@ During the intertrial period:
 ongoing EEG did not reliably expose the high-priority learned location
 ```
 
-but an identical task-irrelevant visual ping revealed the history-mediated priority map in the evoked response. Controls addressed gaze, timing artifacts and preceding-trial repetition.
-
-This is highly relevant to SRT because the logic is:
-
-```text
-same class of neutral probe
-+ different selection history
--> different evoked response
-```
+but an identical task-irrelevant visual ping revealed the history-mediated priority map in the evoked response. Reported controls addressed gaze, timing artifacts and preceding-trial repetition.
 
 Safe pressure:
 
@@ -288,16 +274,18 @@ This remains an attention / statistical-learning result, not proof of a general 
 
 ---
 
-## 9. Evidence anchor G — human inter-regional metaplasticity
+## 9. Evidence anchor G — Hamada et al. 2009 human inter-regional metaplasticity
 
-A human TMS study of SMA-to-M1 metaplasticity showed that priming over supplementary motor area altered the subsequent plastic response of M1 to quadripulse stimulation, while the SMA priming did not itself change motor-evoked potential size.
+Hamada, Hanajima, Terao, Okabe, Nakatani-Enomoto, Furubayashi, Matsumoto, Shirota, Ohminami & Ugawa, *Primary motor cortical metaplasticity induced by priming over the supplementary motor area*, **The Journal of Physiology** 587, 4845–4862 (2009), DOI `10.1113/jphysiol.2009.179101`.
+
+The study applied supplementary-motor-area priming before M1 quadripulse stimulation. SMA priming altered the subsequent plastic response of M1 while not itself changing motor-evoked potential size.
 
 Safe abstraction:
 
 ```text
-current observable output remains approximately baseline
+current measured output remains approximately baseline
 but
-prior activity history changes how the system responds to the same later plasticity-inducing input
+prior activity history changes response to the same later plasticity-inducing input
 ```
 
 This is a direct human example of:
@@ -314,13 +302,13 @@ P(\Delta X_{future}|I,H_A)
 P(\Delta X_{future}|I,H_B).
 \]
 
-Metaplasticity therefore supplies a mechanistic analogue of `future possibility structure`, but it must not be equated with SRT `L2` or with `K_ij` by definition.
+Metaplasticity supplies a mechanistic analogue of `future possibility structure`, but it must not be equated with SRT `L2` or with `K_ij^(tau)` by definition.
 
 ---
 
-## 10. Evidence synthesis — what is now supportable
+## 10. Evidence synthesis — supportable claim and timescale guard
 
-Across these paradigms, a convergent weak-to-moderate claim is supportable:
+Across these paradigms, a convergent weak-to-moderate **functional** claim is supportable:
 
 ```text
 past co-participation / statistical regularity / plastic history
@@ -332,7 +320,34 @@ A stronger but still bounded P3 bridge is:
 
 > **History can become causally effective partly by restructuring the conditional space of future relations, not only by changing the current activation magnitude of individual components.**
 
-This is the core NEURAL34 increment.
+### 10.1 Cross-scale homology is not established
+
+The evidence spans at least:
+
+```text
+fast / intertrial latent state: seconds
+learning-to-rest / consolidation: minutes-to-hours
+memory-age reorganization: days-to-weeks
+metaplasticity: protocol-specific minutes-to-hours regimes
+```
+
+Therefore NEURAL34 does **not** posit one mechanism called `K` across all these scales.
+
+Use:
+
+\[
+K_{ij}^{(\tau)}
+\]
+
+as a timescale-indexed family. By default:
+
+\[
+K^{(\tau_1)}\neq K^{(\tau_2)}.
+\]
+
+The current evidence supports a cross-scale **functional analogy** — history changes later transition / coordination disposition — while the biological mapping across `tau` remains open.
+
+This guard is essential to prevent `K` from becoming a catch-all latent variable.
 
 ---
 
@@ -349,24 +364,14 @@ Different regions can play non-identical, complementary roles and still become t
 The safer concept is:
 
 ```text
-co-adaptive history
--> dynamical compatibility
-```
-
-Analogy:
-
-```text
-key != lock
-but key can fit lock
+co-adaptive history -> dynamical compatibility
 ```
 
 Therefore:
 
 ```text
-homology
-is one possible route to compatibility
-but
-compatibility does not require similarity.
+homology is one possible route to compatibility
+but compatibility does not require similarity.
 ```
 
 For cross-bearer social cognition, `selection-history homology` may remain useful. For within-system neural coordination, `history-conditioned compatibility` is the preferred term.
@@ -380,10 +385,10 @@ NEURAL34 separates:
 ### Latent relational possibility
 
 \[
-K_{ij}(t)
+K_{ij}^{(\tau)}(t)
 \]
 
-= historically conditioned conditional disposition.
+= historically conditioned conditional disposition in a declared timescale regime.
 
 ### Realized relation
 
@@ -396,19 +401,19 @@ R_{ij}(t)
 ### Relational writeback
 
 \[
-\Delta K_{ij}
+\Delta K_{ij}^{(\tau)}
 \]
 
-= change in later coordination disposition caused by learning, coactivation, reward/consequence, consolidation or plasticity.
+= change in later coordination disposition caused by learning, coactivation, reward/consequence, consolidation or plasticity within the declared regime.
 
 Thus:
 
 \[
-K_t
+K_t^{(\tau)}
 \rightarrow
 R_t
 \rightarrow
-K_{t+1}
+K_{t+1}^{(\tau)}
 \]
 
 is a more useful dynamic bridge than treating a relation as a static graph edge.
@@ -420,15 +425,13 @@ is a more useful dynamic bridge than treating a relation as a static graph edge.
 For a system of candidate ensembles, history may reshape not one relation but a compatibility geometry:
 
 \[
-\mathcal K_t = [K_{ij}(t)].
+\mathcal K_t^{(\tau)}=[K_{ij}^{(\tau)}(t)].
 \]
 
 An event can then induce:
 
 \[
-\mathcal K_t
-\rightarrow
-\mathcal K_{t+1},
+\mathcal K_t^{(\tau)}\rightarrow\mathcal K_{t+1}^{(\tau)},
 \]
 
 with some relations strengthened, others weakened, separated or gated by context.
@@ -451,7 +454,7 @@ NEURAL34 supplies an upstream hypothesis:
 
 ```text
 history
--> K / relational possibility structure
+-> K^(tau) / relational possibility structure
 -> ripple-compatible opportunity
 -> specific relation realization
 ```
@@ -483,9 +486,7 @@ A\sim B.
 Therefore a more correct realized-relation model is context-indexed:
 
 \[
-R_{ij}(t)
-=
-F(K_{ij},X_t,E_t,C_t,G_t).
+R_{ij}(t)=F(K_{ij}^{(\tau)},X_t,E_t,C_t,G_t).
 \]
 
 NEURAL34 uses `effective relational compatibility`, not `direct synaptic edge`.
@@ -507,9 +508,7 @@ The strongest defensible philosophical bridge is narrower:
 
 > **A relational property need not be ontologically independent of component microstates to be causally and explanatorily indispensable at a declared level.**
 
-For example, a `key fits lock` relation depends on both material objects but is not a property of either one considered alone.
-
-Likewise, neural coordination compatibility may ultimately be implemented by receptor states, connectivity, excitability, cellular plasticity and shared circuitry while remaining an indispensable relation-level description of future joint behavior.
+Neural coordination compatibility may ultimately be implemented by receptor states, connectivity, excitability, cellular plasticity and shared circuitry while remaining an indispensable relation-level description of future joint behavior.
 
 ---
 
@@ -523,32 +522,30 @@ memory = activity-silent relation state
 
 Persistent and intermittent activity codes remain empirically important, and different tasks / brain areas can mix active and latent mechanisms.
 
-Preferred form:
+Preferred test-local form:
 
 \[
-\text{neural implementation}
-=
-X_t + \mathcal K_t + \text{context / timing variables}
+\text{neural implementation}=X_t+\mathcal K_t^{(\tau)}+\text{context / timing variables}
 \]
 
-where neither `X` nor `K` is assumed universally sufficient.
+where neither `X` nor `K^(tau)` is assumed universally sufficient.
 
 ---
 
 ## 18. Falsification pressure — prevent K from becoming a garbage variable
 
-`K` must not mean `everything unmeasured`.
+`K^(tau)` must not mean `everything unmeasured`.
 
 Operational admission rule:
 
-> A `K`-like history-conditioned relational disposition is justified only when a preregistered history manipulation predicts a later relation-specific response after current observable component state, input and major shared-driver confounds are matched or modeled.
+> A `K^(tau)`-like history-conditioned relational disposition is justified only when a preregistered history manipulation predicts a later relation-specific response after current observable component state, input, timescale regime and major shared-driver confounds are matched or modeled.
 
 Required differential form:
 
 \[
-P(R_{future}|X,E,C,G,H)
+P(R_{future}|X,E,C,G,H,\tau)
 >
-P(R_{future}|X,E,C,G)
+P(R_{future}|X,E,C,G,\tau)
 \]
 
 in stable out-of-sample prediction or intervention.
@@ -560,7 +557,8 @@ history adds no relation-specific prediction after strong current-state controls
 all effects collapse to a single-node excitability variable;
 common input fully explains pair-specific coordination;
 relational metrics add no predictive value beyond component state;
-matched-current-state history manipulations do not alter future joint response.
+matched-current-state history manipulations do not alter future joint response;
+apparent cross-scale unity disappears once tau is modeled, in which case retain only regime-specific claims.
 ```
 
 ---
