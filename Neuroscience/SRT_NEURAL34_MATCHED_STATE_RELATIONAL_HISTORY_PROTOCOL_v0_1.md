@@ -1,7 +1,8 @@
 ---
 id: SRT-NEURO-NEURAL34-MATCHED-STATE-RELATIONAL-HISTORY-PROTOCOL
 type: experimental_protocol
-status: draft_active
+status: draft
+record_stage: draft_active
 version: v0_1
 layer: empirical_bridge
 epistemic_layer: experimental
@@ -36,9 +37,9 @@ Can two trials / systems be closely matched on currently observed component stat
 Target form:
 
 \[
-P(R_{future}|X,E,C,G,H)
+P(R_{future}|X,E,C,G,H,\tau)
 >
-P(R_{future}|X,E,C,G)
+P(R_{future}|X,E,C,G,\tau)
 \]
 
 where:
@@ -48,13 +49,46 @@ where:
 - `C` = cue / task context;
 - `G` = common-driver / global-state proxies;
 - `H` = preregistered relation-specific history;
+- `tau` = declared timescale / retention regime of the hypothesized history-conditioned disposition;
 - `R_future` = future coordinated relation.
 
 If the history term adds no stable predictive or causal value after strong controls, NEURAL34 should be downgraded.
 
 ---
 
-## 2. Minimal within-subject design
+## 2. Timescale declaration before testing
+
+NEURAL34 evidence spans intertrial, learning-to-rest, memory-age and metaplasticity regimes. Do not assume a single biological `K` across them.
+
+For any experiment declare:
+
+\[
+K_{ij}^{(\tau)}
+\]
+
+as a **timescale-indexed test-local relation-disposition family**.
+
+Examples:
+
+```text
+K^(fast): seconds / intertrial latent-state regime
+K^(intermediate): minutes-to-hours learning / consolidation / metaplasticity regime
+K^(slow): days-to-weeks memory-age / long-term reorganization regime
+```
+
+These labels are analytical bins, not claims of three discrete neural substances.
+
+Default guard:
+
+\[
+K^{(\tau_1)} \neq K^{(\tau_2)}
+\]
+
+unless a dedicated experiment establishes cross-scale mapping.
+
+---
+
+## 3. Minimal within-subject design
 
 Create two relation classes using the same component pool where feasible:
 
@@ -93,7 +127,7 @@ The strongest result is a relation-specific history effect under matched current
 
 ---
 
-## 3. Human intracranial version
+## 4. Human intracranial version
 
 Preferred context:
 
@@ -128,7 +162,7 @@ This explicitly improves on a simple `RUN correlation predicts POST correlation`
 
 ---
 
-## 4. Stronger item-pair manipulation
+## 5. Stronger item-pair manipulation
 
 Use an associative-memory design in which the same item can enter different relation histories.
 
@@ -153,13 +187,13 @@ This directly tests whether relational history shapes future coalition identity.
 
 ---
 
-## 5. Ripple-window test
+## 6. Ripple-window test
 
 Cross with NEURAL33:
 
 ```text
 current co-ripple event = opportunity window
-history-conditioned K = relation-selection bias within the window
+history-conditioned K^(tau) = relation-selection bias within the declared timescale regime
 ```
 
 Test:
@@ -185,7 +219,7 @@ If all pairs become equally coordinated once co-ripple occurs, the stronger `his
 
 ---
 
-## 6. Neutral-ping / perturbation test
+## 7. Neutral-ping / perturbation test
 
 Inspired by selection-history ping paradigms, use an identical neutral probe to reveal latent history-conditioned response structure.
 
@@ -211,7 +245,7 @@ The probe should not itself encode the learned relation.
 
 ---
 
-## 7. Animal causal version
+## 8. Animal causal version
 
 A stronger causal test can manipulate relation history while minimizing component-history differences.
 
@@ -235,7 +269,7 @@ A positive result would support history-conditioned relational disposition more 
 
 ---
 
-## 8. Metaplasticity test
+## 9. Metaplasticity test
 
 The cleanest generic form is:
 
@@ -258,9 +292,11 @@ relation-specific reactivation stability.
 
 This establishes future-transition differences despite similar current output, but still requires localization to distinguish relational from single-node hidden-state explanations.
 
+Do not generalize a metaplasticity result at one `tau` to a working-memory or memory-age `K^(tau)` without an explicit bridge experiment.
+
 ---
 
-## 9. Mandatory competing models
+## 10. Mandatory competing models
 
 ### Model N — node-only hidden state
 
@@ -283,17 +319,17 @@ future relation follows pre-existing anatomy;
 learning history contributes no incremental effect.
 ```
 
-### Model K — relational-disposition model
+### Model K — relation-disposition model
 
 ```text
-relation-specific history retains predictive / causal value after node, common-driver and anatomy controls.
+relation-specific history retains predictive / causal value after node, common-driver and anatomy controls within a declared tau regime.
 ```
 
 NEURAL34 requires explicit model comparison, not only significance of `H`.
 
 ---
 
-## 10. State-matching hierarchy
+## 11. State-matching hierarchy
 
 Perfect microphysical matching is impossible in vivo. Therefore claims must be tiered.
 
@@ -329,7 +365,7 @@ No level licenses a metaphysical claim of complete microstate identity.
 
 ---
 
-## 11. Outcome metrics
+## 12. Outcome metrics
 
 Primary:
 
@@ -354,7 +390,7 @@ Prefer relation identity prediction over generic `more synchrony`.
 
 ---
 
-## 12. Statistical criterion
+## 13. Statistical criterion
 
 Use hierarchical subject/session models and held-out prediction.
 
@@ -362,14 +398,16 @@ Required comparison:
 
 ```text
 Base:
-R_future ~ X + E + C + G + PRE_relation
+R_future ~ X + E + C + G + PRE_relation + tau
 
 History model:
-R_future ~ X + E + C + G + PRE_relation + H
+R_future ~ X + E + C + G + PRE_relation + tau + H
 
 Interaction model:
 R_future ~ ... + H:E + H:C
 ```
+
+If multiple timescale regimes are pooled, include explicit `H:tau` and regime effects or fit separate models; do not treat pooled `K` as a single mechanism by default.
 
 A meaningful NEURAL34 result requires:
 
@@ -384,7 +422,7 @@ Very small P values from massive neuron-pair counts are insufficient.
 
 ---
 
-## 13. Direct falsifiers
+## 14. Direct falsifiers
 
 Substantially downgrade NEURAL34 if high-quality studies repeatedly show:
 
@@ -394,11 +432,12 @@ Substantially downgrade NEURAL34 if high-quality studies repeatedly show:
 4. neutral probes reveal only generic readiness, never relation identity;
 5. co-ripple windows erase history-specific coalition differences;
 6. causal manipulation of relational history fails to alter later relation-specific response;
-7. apparent POST relation changes are fully attributable to selection / recording drift.
+7. apparent POST relation changes are fully attributable to selection / recording drift;
+8. apparent cross-scale unity disappears when `tau` is modeled explicitly, in which case retain only regime-specific bridge claims.
 
 ---
 
-## 14. Strongest positive pattern
+## 15. Strongest positive pattern
 
 The most informative result would be:
 
@@ -412,13 +451,13 @@ PRE coupling comparable
 
 This would justify the claim:
 
-> **History is functionally retained partly in the conditional structure of which joint transitions are later realizable.**
+> **History is functionally retained partly in the conditional structure of which joint transitions are later realizable within the tested timescale regime.**
 
 It would still not prove that relations are ontologically independent of physical component states.
 
 ---
 
-## 15. Link back to SRT
+## 16. Link back to SRT
 
 If supported, NEURAL34 would provide a concrete neuroscience implementation pattern for the abstract SRT claim:
 
@@ -435,4 +474,4 @@ writeback may change not only candidate weights
 but the relation geometry among future candidates / components.
 ```
 
-This is the specific empirical increment to test.
+This is the specific empirical increment to test. `K^(tau)` remains a local model family and is not a canonical SRT symbol.
