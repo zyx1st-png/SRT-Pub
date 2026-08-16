@@ -6,11 +6,11 @@ layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-15
-source_commit: a74c5164
-source_branch: agent/neural35-psychedelic-reopening
+generated: 2026-08-16
+source_commit: 225cb071
+source_branch: agent/srt-convergence-hpb-governance
 source_dirty: false
-inputs_digest: 40eb49f1611ead68
+inputs_digest: db7aa92ff9637404
 ---
 
 # SRT 上下文包
