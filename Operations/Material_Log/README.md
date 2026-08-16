@@ -31,10 +31,13 @@ canonical: false
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
 | [2026-08_Part04.md](2026-08_Part04.md) | 8 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 + Yashiro NEURAL32 through 2026-08-12 |
 | [2026-08_Part05.md](2026-08_Part05.md) | 5 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 + NEURAL33/34 + NEURAL35 + Deleuze Logic of Sense audit on 2026-08-15 |
+| [2026-08_Part06.md](2026-08_Part06.md) | 1 | August continuation; Nilsson PH-IND05 on 2026-08-16 |
 
 ## Current note
 
-`2026-08_Part05.md` is the current dated continuation and now contains five bounded A-class entries: PH-PER01, PH-UNC01, the NEURAL33/34 neuroscience package, NEURAL35, and the Deleuze *Logic of Sense* audit-only comparative-philosophy record. `2026-08_Part04.md` remains historically closed at eight entries through the Yashiro body-semantics / NEURAL32 integration.
+`2026-08_Part06.md` is the current dated continuation and contains one bounded A-class entry: Nilsson / PH-IND05. `2026-08_Part05.md` remains historically closed at five entries: PH-PER01, PH-UNC01, the NEURAL33/34 neuroscience package, NEURAL35, and the Deleuze *Logic of Sense* audit-only comparative-philosophy record.
+
+**2026-08-16 Nilsson / PH-IND05:** the first-party Essentia Foundation essay is retained as a bounded non-canonical P3 philosophy-of-time / individuation / consciousness pressure source. Its value is not endorsement of a `realm of mind` ontology, but three discrimination tests: total erasure pressures `actual occurrence != persistent trace != L2 sedimentation`; perfect restoration pressures `state identity != historical identity`; and perfect duplication pressures `qualitative identity !-> numerical identity` while leaving `two bearers !-> two experiencers proven`. The SourceCard uses unique sentence / paragraph-content anchors because the web essay has no stable pagination. No P0/P1 owner was changed.
 
 **2026-08-15 Deleuze / Logic of Sense:** the full main-text Series 1–34 close-read is retained as a novelty-audited comparative pressure source, not a new SRT theory node. After prior-art deduplication, the disposition is 0 P0/P1 edits, 0 new theory patch, and three narrow residuals only: PH-DIFF01-J researcher self-application against solution-vocabulary preformation; P0-03 ↔ PH-SELF01/B13 cross-reference for irreversible occurrence versus later revision; and an OPEN_TENSIONS §5 qualifier asking whether `sigma_sr` remains one-dimensionally sufficient when the bearer boundary itself is history-sensitive and reorganized. Strong term-to-term mappings remain prohibited, and Series 27–34 psychoanalytic/clinical material does not enter neuroscience or clinical claims without contemporary primary evidence.
 
