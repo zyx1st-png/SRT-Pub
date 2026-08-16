@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-16
-source_commit: bdda6636
+source_commit: 7cb0fab2
 source_branch: agent/srt-convergence-hpb-governance
-source_dirty: true
+source_dirty: false
 inputs_digest: 02bffde8a6616bdd
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 02bffde8a6616bdd
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-16 |
-| 来源 commit | `bdda6636` |
+| 来源 commit | `7cb0fab2` |
 | 来源分支 | `agent/srt-convergence-hpb-governance` |
-| 生成时来源工作树有改动 | 是 |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -45,7 +45,7 @@ inputs_digest: 02bffde8a6616bdd
 |---|---|---|
 | 1 | `AI/SRT_AI_Claim_Status.md` | 2026-08-08 |
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-07-16 |
-| 3 | `AI/README.md` | 2026-07-20 |
+| 3 | `AI/README.md` | 2026-08-16 |
 | 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-08 |
 | 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
 | 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
@@ -819,7 +819,7 @@ Do not reduce the AI section to pure negative examples. Do not promote AI bridge
 | epistemic_layer | bridge |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-07-20 |
+| last_commit | 2026-08-16 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
