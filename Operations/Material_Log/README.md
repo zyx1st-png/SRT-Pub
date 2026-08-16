@@ -30,11 +30,13 @@ canonical: false
 | [2026-08_Part02.md](2026-08_Part02.md) | 8 | August continuation through NEURAL27 |
 | [2026-08_Part03.md](2026-08_Part03.md) | 2 | NEURAL25 strategy-control + NEURAL26 dynamical-capacity stack added 2026-08-09 |
 | [2026-08_Part04.md](2026-08_Part04.md) | 8 | August continuation; NEURAL28 + Simondon reopening + SOC-COG03 + Wang NEURAL29/PH-MEM01 + Menétrey NEURAL30 + Schulte PH-MR01 + Deleuze PH-DIFF01 + Yashiro NEURAL32 through 2026-08-12 |
-| [2026-08_Part05.md](2026-08_Part05.md) | 4 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 + NEURAL33/34 + NEURAL35 on 2026-08-15 |
+| [2026-08_Part05.md](2026-08_Part05.md) | 5 | August continuation; PH-PER01 on 2026-08-14 + Morejón PH-UNC01 + NEURAL33/34 + NEURAL35 + Deleuze Logic of Sense audit on 2026-08-15 |
 
 ## Current note
 
-`2026-08_Part05.md` is the current dated continuation and now contains four bounded A-class entries: PH-PER01, PH-UNC01, the NEURAL33/34 neuroscience package, and NEURAL35. `2026-08_Part04.md` remains historically closed at eight entries through the Yashiro body-semantics / NEURAL32 integration.
+`2026-08_Part05.md` is the current dated continuation and now contains five bounded A-class entries: PH-PER01, PH-UNC01, the NEURAL33/34 neuroscience package, NEURAL35, and the Deleuze *Logic of Sense* audit-only comparative-philosophy record. `2026-08_Part04.md` remains historically closed at eight entries through the Yashiro body-semantics / NEURAL32 integration.
+
+**2026-08-15 Deleuze / Logic of Sense:** the full main-text Series 1–34 close-read is retained as a novelty-audited comparative pressure source, not a new SRT theory node. After prior-art deduplication, the disposition is 0 P0/P1 edits, 0 new theory patch, and three narrow residuals only: PH-DIFF01-J researcher self-application against solution-vocabulary preformation; P0-03 ↔ PH-SELF01/B13 cross-reference for irreversible occurrence versus later revision; and an OPEN_TENSIONS §5 qualifier asking whether `sigma_sr` remains one-dimensionally sufficient when the bearer boundary itself is history-sensitive and reorganized. Strong term-to-term mappings remain prohibited, and Series 27–34 psychoanalytic/clinical material does not enter neuroscience or clinical claims without contemporary primary evidence.
 
 **2026-08-15 NEURAL35:** the mescaline material pass is retained as a bounded non-canonical P3/P4 perturbation bridge. Its novelty is not a new reselectability definition but the narrower discriminator `reopening != reselectability`, with `under-anchoring` kept as a positively testable and disposable working label rather than a diagnosis or canonical variable. Cavallaro et al. supply a rat perturbation-domain existence example—cerebellar-weighted BOLD changes, distributed connectivity changes, and frequency-selective PPI—not the evidence base for the human clinical-shaped `Opening x Reanchoring` P4 model. The P4 comparison must be complexity-controlled and out-of-sample; any treatment-facing interpretation also routes through `Neuroscience/SRT_Neuroscience_Claim_Status.md`. No canonical owner was changed.
 
