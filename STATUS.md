@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-12
+updated: 2026-08-16
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-12
+> **最后更新**：2026-08-16
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -20,6 +20,7 @@ updated: 2026-08-12
 
 - 首读顺序唯一权威：`AGENTS.md §Session Start`。
 - 当前第一优先工作线：完成此前未融合材料的 Pipeline 1 收口，并保持 Material Log、索引、registry 与 hook 一致。
+- 2026-08-16 Gilles Deleuze *The Logic of Sense* Series 1–34 close-read 已完成去重式 writeback audit：**0 个 P0/P1 改动、0 个新 theory patch、3 处窄幅 amendment / cross-reference residual**；SourceCard、审计与 Material Log 已登记。三个 residual 仅指向 PH-DIFF01-J researcher self-audit、P0-03 ↔ PH-SELF01/B13 cross-reference、以及 moving/history-sensitive bearer boundary 下 `sigma_sr` 一维充分性的 OPEN_TENSIONS §5 qualifier；本轮不修改 canonical owner、符号、方程或 claim level。
 - 2026-08-11 至 2026-08-12 七项相邻作者级边界裁决已落地：**PC-A**（potential non-exhaustion／non-preformation）、**AM-A**（P0-01 承载 primitive actualisation kernel）、**PHR-A**（物理实现采用 interpretation-plural P3/P4 audit）、**ST-A**（结构稳定／生成可再选择双轴）、**EX-A**（事件现实性／锚定持续／stable ISP 三层分离）、**B-A**（初心严格分层）与 **C-A**（global optimum bounded plurality／四义拆分）。C-A 不承认位置无关的宇宙级语义／评价最优为当前正面对象；有限 reachable optimum 必须写齐作用域，规约性地平线与模型吸引子不得混写，技术性 model-global 用法保留。CΨ 的绝对 `Ψ_f→0` 价态与 `κ_0 / ε_pg` 依赖仍开放。上述裁决不构成材料证据升级，也不推进主体或意识命题。
 - 2026-08-11 作者已选择 **PHR-A**：AM-A 的物理实现采用 interpretation-plural P3/P4 audit。共同审计链为“非等价候选 → outcome-indexed 物理登记 → 可干预路径效力 → 未来可达性／返回成本改变”；collapse-family、Everett／branch-relative 与 operational／instrument 口径显式分开。地板判决仍是**黄灯／条件连接**：退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项均不充分，也没有建立解释中立的普遍物理机制。
 - 2026-08-11 作者已选择 **ST-A**：`P1-T06` 的稳定最低条件为声明扰动范围内的 recurrent historical reconstitution + continued selectability；generative reselectability 进入 21C B13 的 P2/P3 生成健康层。former `P1-T07` 无条件反闭合 theorem 已撤销，只保留 absorption remainder；neutral-kernel anti-closure 须补稳定语义、环境、无重置条件、时间窗与证明。fixed point、metastability、低摩擦、`σ<1`、option diversity 与 `ΔR_future>0` 均不得单项充当稳定／健康／合法性通用判据。
@@ -56,8 +57,8 @@ updated: 2026-08-12
 - Choice-trace 作者门已关闭；T-B、T-D、T-E 首轮 bridge 与五域联合压力测试已经完成，不再列为“待建立”。
 - SEA 已形成统一协议、AI 正负校准、生命边界案例、制度配对案例与编码手册；方法贡献仍为 candidate，可靠性 pilot 暂缓。
 - forcing–CH 已完成 D05 C5-op、方法个体化协议、控制案例选择协议、多表征方法族审计和 countable-standard-model premise 窄类型说明；控制档案 Part II 仍未签署。
-- Pipeline 1 截至本轮材料台账正式口径为 226 条：A 149、B 27、C 50；最新 split 为 `2026-08_Part04:7`。
-- 本轮开放材料与证据 PR 已完成收口；后续新增工作应从最新 `main` 重新起分支。
+- Pipeline 1 截至本轮材料台账正式口径为 232 条：A 155、B 27、C 50；最新 split 为 `2026-08_Part05:5`。
+- 本轮 Deleuze *Logic of Sense* 材料已完成 audit-only 收口；后续三处窄幅 hardening 必须另开 owner-specific PR，不在材料审计 PR 中偷带理论升级。
 
 ## 当前权威锚点
 
