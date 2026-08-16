@@ -6,11 +6,11 @@ layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-15
-source_commit: a74c5164
-source_branch: agent/neural35-psychedelic-reopening
+generated: 2026-08-16
+source_commit: 7cb0fab2
+source_branch: agent/srt-convergence-hpb-governance
 source_dirty: false
-inputs_digest: 40eb49f1611ead68
+inputs_digest: 02bffde8a6616bdd
 ---
 
 # SRT 上下文包
@@ -25,7 +25,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 |---|---|---:|---:|---:|
 | `SRT_CONTEXT_BUNDLE_SPINE.md` | 骨架 spine | 15 | 315,983 | ~140,605 |
 | `SRT_CONTEXT_BUNDLE_COMPACTCORE.md` | CompactCore 全集 | 19 | 148,700 | ~70,259 |
-| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 66,987 | ~26,046 |
+| `SRT_CONTEXT_BUNDLE_DOMAIN_AI.md` | 领域 AI | 6 | 67,378 | ~26,159 |
 | `SRT_CONTEXT_BUNDLE_DOMAIN_PHYSICS.md` | 领域 Physics | 11 | 78,625 | ~33,662 |
 | `SRT_CONTEXT_BUNDLE_DOMAIN_PHILOSOPHY.md` | 领域 Philosophy | 6 | 89,305 | ~33,506 |
 | `SRT_CONTEXT_BUNDLE_DOMAIN_NEUROSCIENCE.md` | 领域 Neuroscience | 5 | 61,518 | ~24,442 |
@@ -64,7 +64,7 @@ ChatGPT Project 或任何单次对话。**目录内所有文件都是生成物�
 
 | 组合 | 合计 ≈token | 是否在预算内 |
 |---|---:|:---:|
-| `SPINE` + `DOMAIN_AI` | 166,651 | **超预算** |
+| `SPINE` + `DOMAIN_AI` | 166,764 | **超预算** |
 | `SPINE` + `DOMAIN_PHYSICS` | 174,267 | **超预算** |
 | `SPINE` + `DOMAIN_PHILOSOPHY` | 174,111 | **超预算** |
 | `SPINE` + `DOMAIN_NEUROSCIENCE` | 165,047 | **超预算** |

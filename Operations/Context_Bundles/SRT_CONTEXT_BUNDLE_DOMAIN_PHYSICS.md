@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-15
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-16
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-15
-source_commit: a74c5164
-source_branch: agent/neural35-psychedelic-reopening
+generated: 2026-08-16
+source_commit: 7cb0fab2
+source_branch: agent/srt-convergence-hpb-governance
 source_dirty: false
-inputs_digest: 40eb49f1611ead68
+inputs_digest: 02bffde8a6616bdd
 ---
 
 # SRT 物理领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 40eb49f1611ead68
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-15 |
-| 来源 commit | `a74c5164` |
-| 来源分支 | `agent/neural35-psychedelic-reopening` |
+| 生成日期 | 2026-08-16 |
+| 来源 commit | `7cb0fab2` |
+| 来源分支 | `agent/srt-convergence-hpb-governance` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 11 |
 

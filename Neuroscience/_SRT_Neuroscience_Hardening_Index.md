@@ -4,6 +4,8 @@
 > Scope: neuroscience-facing bridge hypotheses, experimental handles, and external-material patches.  
 > Canonical caution: indexed files are bridge/hardening notes unless explicitly promoted into a canonical SRT document.
 
+> **Synthesis-target freeze · 2026-08-16:** references below to `SRT_Neuroscience_Hardening_N1_N13_v0_2.md`, Neural CompactCore, or other future synthesis targets are historical engineering routes, **not current construction authorization**. The 2026-08-11 bounded neuroscience cluster probe is Case A / STOP. Reopen synthesis only if a named reactivation gate in `Operations/SRT_SYNTHESIS_TARGET_FREEZE_2026-08-16.md` fires.
+
 ## 0. Core neuroscience sequence
 
 | Range | File | Role |

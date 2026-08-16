@@ -26,6 +26,8 @@ machine_summary: >
 
 > **[休眠层声明 · 2026-07-20]** 本层（`AI/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
 
+> **Synthesis-target freeze · 2026-08-16:** AI CompactCore / future synthesis references are not default landing authorization for new patches or hooks. The 2026-08-11 AI cluster probe is Case A / STOP; reopen synthesis only if a named reactivation gate in `../Operations/SRT_SYNTHESIS_TARGET_FREEZE_2026-08-16.md` fires. Historical target references remain provenance, not active backlog.
+
 
 This directory contains SRT's AI-facing bridge, consciousness, agency, architecture, and operational evaluation materials.
 

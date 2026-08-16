@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-08-15
+id: SRT-CONTEXT-BUNDLE-DOMAIN-AI-2026-08-16
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-15
-source_commit: a74c5164
-source_branch: agent/neural35-psychedelic-reopening
+generated: 2026-08-16
+source_commit: 7cb0fab2
+source_branch: agent/srt-convergence-hpb-governance
 source_dirty: false
-inputs_digest: 40eb49f1611ead68
+inputs_digest: 02bffde8a6616bdd
 ---
 
 # SRT AI 领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 40eb49f1611ead68
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-15 |
-| 来源 commit | `a74c5164` |
-| 来源分支 | `agent/neural35-psychedelic-reopening` |
+| 生成日期 | 2026-08-16 |
+| 来源 commit | `7cb0fab2` |
+| 来源分支 | `agent/srt-convergence-hpb-governance` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 6 |
 
@@ -45,7 +45,7 @@ inputs_digest: 40eb49f1611ead68
 |---|---|---|
 | 1 | `AI/SRT_AI_Claim_Status.md` | 2026-08-08 |
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-07-16 |
-| 3 | `AI/README.md` | 2026-07-20 |
+| 3 | `AI/README.md` | 2026-08-16 |
 | 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-08 |
 | 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
 | 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
@@ -819,7 +819,7 @@ Do not reduce the AI section to pure negative examples. Do not promote AI bridge
 | epistemic_layer | bridge |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-07-20 |
+| last_commit | 2026-08-16 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -830,6 +830,8 @@ Do not reduce the AI section to pure negative examples. Do not promote AI bridge
 # AI
 
 > **[休眠层声明 · 2026-07-20]** 本层（`AI/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+> **Synthesis-target freeze · 2026-08-16:** AI CompactCore / future synthesis references are not default landing authorization for new patches or hooks. The 2026-08-11 AI cluster probe is Case A / STOP; reopen synthesis only if a named reactivation gate in `../Operations/SRT_SYNTHESIS_TARGET_FREEZE_2026-08-16.md` fires. Historical target references remain provenance, not active backlog.
 
 
 This directory contains SRT's AI-facing bridge, consciousness, agency, architecture, and operational evaluation materials.
