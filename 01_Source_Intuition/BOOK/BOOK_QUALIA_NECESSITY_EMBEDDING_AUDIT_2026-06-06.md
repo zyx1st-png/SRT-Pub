@@ -20,6 +20,12 @@ based_on:
 
 > 核心判断：感受质问题不是正文支线，而是全书必要性证明的一枚钉子。它要显示：仅靠对象、信息、功能、行为、报告，无法完整解释"被承受的现实"。因此本书必须引入选择、压缩、承担、具身位、L1/L2 落差这些结构。
 
+> **2026-08-16 HP-B-B 更正 / supersession notice**
+>
+> 本审计是 2026-06-06 的历史编辑提案，早于 2026-08-16 的 phenomenal-necessity 作者裁决（`Operations/SRT_PHENOMENAL_NECESSITY_AUTHOR_DECISION_PACKET_2026-08-16.md`）。凡下文把 `Philosophy/SRT_HardProblem_Epistemology.md` 描述为“完整消解已完成”，把三因子写成足以决定具体感受质，或把解释跳跃全部等同于 `L2` 对 `L1` 的压缩损失，均已被 HP-B-B **实质取代，不再代表当前 SRT 立场**。
+>
+> 当前 owner 为 `claim_mode: mixed`：`B_s != B_p`，`B_s -> B_p` 仍开放；三因子仅是在 phenomenality 已独立成立前提下的 P3 结构锚定候选；对象化、位置差异与 `L2` 压缩只能解释第三人称描述为何不等于原 situated event 的一部分，不能单独推出 phenomenal necessity 或 qualitative character。下文保留原文仅用于保存 2026-06-06 的编辑决策 provenance，不应被 fresh session 读取为新的正文加固授权。
+
 ---
 
 ## A. 总体判断：这条线是否必加，为什么
