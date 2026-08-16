@@ -2,7 +2,7 @@
 id: SRT-SELECTION-EVENT-ATTRIBUTION-AUTHOR-RULING-20260816
 type: author_decision_record
 status: active
-record_stage: author_boundary_resolved
+record_stage: author_boundary_resolved_continuous_convergence
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -12,17 +12,22 @@ date: 2026-08-16
 dependency:
   - SRT-OPS-AUDIT-A2-REAL-CHOICE-RIVAL-ADJUDICATION-20260816
   - SRT-OPS-AUDIT-A3-LIVE-CHOICE-POSITIVE-DISCRIMINATOR-GATE-20260816
+  - SRT-CORE-21A-MINIMAL-AXIOMS
   - SRT-CORE-21B-CONSTITUTIVE-THEOREMS
   - SRT-CORE-21C-BRIDGE-HYPOTHESES
-  - SRT-CHOICE-GENERATION-CONDITIONS-20260804
-tags: [AuthorDecision, Selection, EventAttribution, L2, Irreversibility, Bearer, Friction]
+  - SRT-CORE-12B
+tags: [AuthorDecision, Selection, ContinuousConvergence, L2, Irreversibility, Persistence, BackgroundScaffold, Friction]
 ---
 
-# Selection Event Attribution — Author Ruling
+# Selection / Continuous Convergence — Author Ruling
 
 > **Author ruling (2026-08-16)**: SRT primarily theorizes `Selection`, not `Choice`. Do not introduce new `Choice` terminology such as `Live Choice` as a new SRT concept.
 >
-> The earlier `Live Choice` phrase is retained only as provenance for why A2/A3 exposed a real discrimination problem. It is not adopted into SRT vocabulary.
+> **Author clarification (2026-08-16)**: “survival” in the present discussion means **existential persistence / a change becoming stably continuable**, not biological survival. The intended point is that Selection stabilizes some changes while suppressing others.
+>
+> **Author clarification (2026-08-17 local time)**: convergence toward stability is **continuously operating**. Mature convergences do not stop operating; they become a background “floor” that no longer needs foreground attention. New or unresolved Selection continues on and through that floor.
+
+The earlier `Live Choice` phrase is retained only as provenance for why A2/A3 exposed a discrimination problem. It is not adopted into SRT vocabulary.
 
 ---
 
@@ -33,234 +38,300 @@ The useful pressure from A1–A3 remains:
 1. path efficacy, writeback, consequence-bearing, and future-state change can all occur in scripted or adaptive processes;
 2. CG operational standing is not automatically identical to canonical P1-T05 standing;
 3. a generic causal-history description can reconstruct much of the downstream structure;
-4. SRT still needs to distinguish a **new current selection event** from the mere execution / unfolding of selective constraints sedimented by prior history or `L2`.
+4. SRT still owes prospective discriminating work against bounded rivals.
 
-What is rejected is the attempt to solve this by creating a new taxonomy of `Choice`.
+What is rejected is the attempt to solve this by creating a new taxonomy of `Choice` or by treating Selection as an on/off property that disappears whenever a mature structure executes automatically.
 
 ---
 
 ## 1. Selection-native reformulation
 
-The research question is now:
-
-> **At the current event boundary, is a new irreversible selective differentiation occurring, or is the observed path only the execution of prior selection history / L2 constraint?**
-
-No new formal term is introduced for either side.
-
-A working contrast is:
+The prior binary question—
 
 ```text
-prior selection history / L2
--> constrains current dynamics
--> current process unfolds
+new Selection now
+vs
+old L2 merely executing
 ```
 
-versus:
+—is too coarse.
+
+The author clarification instead supports a continuous picture:
 
 ```text
-current effective difference
--> asymmetric suppression / manifestation
--> irreversible historical increment
--> consequence returns to embodied / bearer position
--> friction / payability structure changes
--> future selection conditions are rewritten
+Selection / convergence keeps operating
+        |
+        +-- some differences are newly foregrounded / unresolved
+        +-- some are actively stabilizing
+        +-- some are highly mature and backgrounded
+        +-- mature background structures continue constraining later dynamics
 ```
 
-The second chain is an audit target only, not a P1 necessary-and-sufficient definition.
+Therefore a mature `L2` floor is not “non-selection.” It is a historically stabilized product of Selection that remains dynamically operative while requiring little or no foreground regulation at the declared scale.
+
+The next research question is:
+
+> **How is selective convergence distributed across scales and dimensions, which parts remain foreground/high-friction, which parts have matured into background scaffold, and under what perturbations does a floor re-enter the foreground?**
+
+No new formal object is introduced for these maturity differences.
 
 ---
 
 ## 2. Author-supplied selection structure
 
-The author clarified four linked features that should guide the next audit.
+### 2.1 Irreversible differentiation
 
-### 2.1 Irreversible change
+Selection is an irreversible change in the historical sense: once a determination has occurred and left trace, later restoration of an earlier-looking state does not make that event never have happened.
 
-Selection is first an irreversible change. The event adds history in a way that cannot be erased merely by restoring an earlier-looking state.
-
-This is compatible with SRT's historical asymmetry / writeback architecture, but does not by itself prove that the current event is a new selection rather than execution of prior structure.
+This aligns directly with P0-03's historical asymmetry.
 
 ### 2.2 Suppression / manifestation asymmetry
 
-Selection is not neutral state transition. Some possible processes / continuations are suppressed, excluded, made less reachable, or made more costly; others are manifested, stabilized, or gain effective reality in the continuing path.
+Selection is non-neutral differentiation:
 
-The target is not “different outputs exist” but an asymmetric change in which continuations can continue to matter.
+- some possible processes / continuations are suppressed, lose effective access, or become harder to realize;
+- others are manifested, stabilized, made causally available, or gain continuing efficacy.
 
-### 2.3 Survival relevance / embodied position
+This does not require a pre-enumerated menu of completed latent objects.
 
-Selection is linked to survival and affects a concrete embodied / bearer position:
+### 2.3 Existential persistence / stable continuation of change
 
-- maintenance;
-- damage;
-- resource access;
-- repair burden;
-- future action capacity;
-- continuation conditions.
+“Survival” here means neither biological life nor subject-level stake by default.
 
-This remains a structural bearer claim. It does not entail phenomenal bearing, consciousness, or subjecthood.
+It means:
 
-### 2.4 Friction rewrite
+> **a change survives selection by acquiring enough stability to continue exerting reality-structuring effects.**
 
-Selection can raise or lower later friction:
+Stability is not absence of change. A stable structure may be continuously reconstituted while its microstate changes.
 
-- some paths become easier / cheaper / more stabilized;
-- others become harder / costlier / less reachable;
-- local friction may fall while switching / escape friction rises;
-- consequence return may reshape future comparison and path structure.
+This should be read through the existing EX-A distinction:
 
-Canonical `Psi_f` keeps its existing definition and guardrails. This record does not redefine `Psi_f`; “friction rewrite” is a role-level target until a domain-specific mapping is supplied.
+1. manifest actuality can occur without mature persistence;
+2. anchoring persistence measures how the event gains maintenance and later constraint;
+3. strong recurrent stabilization can become background scaffold / `L2`.
+
+### 2.4 Friction redistribution
+
+Selection changes later friction / payability structure:
+
+- compatible paths may become easier / cheaper / more accessible;
+- incompatible or alternative paths may become relatively harder / more constrained;
+- local friction can fall while switching / escape friction rises;
+- destabilization of a mature floor can make previously background costs reappear in the foreground.
+
+Canonical `Psi_f` retains its existing definition. This record does not redefine it.
+
+### 2.5 Bearer / embodied-position consequence
+
+Where a sufficiently organized bearer / embodied position exists, selection consequences can return to and reshape that position.
+
+This remains important for stable ISP, `d`, agency, and phenomenology work, but it must not be confused with the present use of “survival.” Existential persistence is broader than biological or subject-level survival.
 
 ---
 
-## 3. Why these four features are not yet sufficient
+## 3. Continuous convergence, not a stage pipeline
 
-A sophisticated automatic process may show all four:
-
-- reinforcement learning can suppress actions and reinforce others;
-- adaptive control can change policies and thresholds;
-- biological regulation can affect survival-relevant variables;
-- a deterministic transaction can create persistent history;
-- learning can alter future cost / friction structures.
-
-Therefore do **not** infer:
+Do not read SRT as:
 
 ```text
-irreversibility
-+ suppression / manifestation
-+ bearer / survival relevance
-+ friction rewrite
-= sufficient proof of a new current selection event
+Selection -> finished
+then stability -> finished
+then L2
 ```
 
-The remaining burden is **event attribution**:
+The author clarification supports:
 
-> which changes are newly generated at the current event, and which are already fixed consequences of prior selective sedimentation?
+```text
+continuous selective convergence
+        |
+        +-- transient trace
+        +-- closure forming
+        +-- mature low-friction path
+        +-- background scaffold / floor
+```
 
----
+Different dimensions of the same system can occupy different maturity regimes at the same time.
 
-## 4. Relation to P1-T05
+A mature floor remains maintained, refreshed, and constraining; it is simply no longer the primary foreground problem.
 
-The canonical owner remains `P1-T05: Real Choice Moment` for now.
-
-This author ruling does not automatically authorize a rename or canonical rewrite.
-
-Until a separate author gate:
-
-1. do not derive new `Choice` terminology from the word `live`;
-2. read its anti-script / anti-habit / anti-gradient / anti-automation clause as a guard against mistaking historical execution for a new real selection event;
-3. use selection-native language in new P3/P4 work;
-4. any future canonical cleanup of the title or wording requires explicit approval.
+This is strongly compatible with `T-L2-Scaffold`, which already models path traces that decay unless refreshed and a threshold transition from foreground event to background scaffold.
 
 ---
 
-## 5. Vocabulary discipline
+## 4. Foreground attention is not a Selection criterion
 
-### Do not introduce as SRT terms
+The phrase “does not need to be attended” is a subject-level / resource-allocation reading of maturity, not an ontological criterion for Selection.
+
+In a conscious or cognitive system, unresolved or destabilized dimensions may recruit more attention because they carry greater mismatch, uncertainty, friction, or regulatory demand.
+
+But across SRT domains the safer structural wording is:
+
+```text
+foreground = currently requires active regulation / comparison / reconfiguration
+background floor = mature enough to function as assumed scaffold
+```
+
+A background floor can remain causally powerful precisely because it no longer needs to be repeatedly reconstructed in the foreground from scratch.
+
+---
+
+## 5. Relation to current L2 architecture
+
+Current `T-L2-Scaffold` already contains the closest formal machinery:
+
+- repeated compatible successful closure deposits path trace;
+- trace can decay and be refreshed;
+- increased trace lowers compatible later `Psi_f`;
+- accessibility of compatible paths rises;
+- crossing a scaffold threshold changes the path from foreground event to background scaffold;
+- mature history becomes the organizational ground for later Selection.
+
+The author's clarification should therefore be treated primarily as a **reading correction / integration instruction**, not as permission to create a new L2 variable or theorem.
+
+The key conceptual compression is:
+
+> **L2 is not where Selection stops. L2 is where parts of prior selective convergence have matured enough to become the floor on which further Selection proceeds.**
+
+---
+
+## 6. Relation to existence
+
+The clarification also sharpens “Selection precedes existence.”
+
+Do not reduce this to “whatever is most stable survives” as a retrospective thermodynamic slogan.
+
+The intended chain is closer to:
+
+```text
+non-neutral selective differentiation
+-> some changes manifest while others are suppressed
+-> manifested differences acquire varying degrees of anchoring persistence
+-> sufficiently mature convergences become reusable/background constraints
+-> later reality proceeds on those inherited constraints
+```
+
+P0-01 still supplies the event actuality floor; P0-02 still distinguishes occurrence from persistence. The new clarification does not collapse those two.
+
+Instead it says that **the convergence process toward greater persistence is continuously active**, even though not every actual event reaches mature closure or L2-grade backgrounding.
+
+---
+
+## 7. Why script / habit / automation no longer supplies the main ontology split
+
+A mature script, habit, grammar, physical regularity, or institutional default may be a strongly backgrounded result of earlier selective convergence.
+
+Its automatic operation therefore does not imply that Selection has vanished from the ontology.
+
+At the same time, automatic operation does not by itself establish the narrower agency / P1-T05 status.
+
+Keep these questions separate:
+
+```text
+Is selection / selective convergence operating?
+```
+
+and
+
+```text
+Does this process satisfy a downstream agency / Real Choice criterion?
+```
+
+The first is SRT's main theoretical axis. The second is downstream and should not generate new `Choice` subclasses.
+
+---
+
+## 8. Revised next workline
+
+Do not run another `live vs script` experiment at the core level.
+
+The next bounded analysis should be a **Continuous Convergence / Backgrounding Audit** asking:
+
+1. Can the existing trace -> closure -> L2 scaffold ladder represent partial, simultaneous maturity across dimensions without new primitives?
+2. What observable signature marks a mature floor that remains active but backgrounded?
+3. What perturbation causes a mature floor to re-enter the foreground?
+4. Can the sequence be expressed using existing `Psi_f`, hysteresis, accessibility, writeback, and scaffold machinery?
+5. Does this produce a stronger D2 experimental target than the abandoned `Live Choice` route?
+
+Candidate measurable shell, not yet a theory claim:
+
+```text
+mature floor:
+low compatible-path cost
++ high re-entry reliability
++ background resource demand
++ hysteresis / global constraint
+
+floor challenge:
+context mismatch / perturbation
+-> local friction rises
+-> active regulation increases
+-> either re-stabilization or scaffold revision
+```
+
+---
+
+## 9. Vocabulary discipline
+
+Do not introduce as SRT terms:
 
 - `Live Choice`
 - `Dead Choice`
 - `True Choice`
 - `Generative Choice`
-- other new Choice subclasses intended to carry selection ontology
+- a new formal noun for “foreground selection” or “background selection” unless a later empirical need requires it.
 
-### Prefer existing vocabulary
+Prefer existing vocabulary:
 
 - `Selection`
-- `selection event`
+- `selective convergence`
 - `selection history`
-- `L2 constraint`
+- `anchoring persistence`
+- `closure`
+- `L2` / background scaffold
 - `historical writeback`
-- `future selection-space constraint`
-- `bearer / embodied-position consequence`
-- `friction / payability change` under existing canonical guards
+- `friction / payability`
+- `hysteresis`
+- `accessibility`
 
-Descriptive phrases such as “execution of prior selection history” are allowed but are not new formal object names.
-
----
-
-## 6. Rival-model correction retained
-
-A2's unrestricted `R_CH` remains useful only as a translation / absorption stress test.
-
-Future D2 competitors must be bounded enough to fail prospectively:
-
-| Rival tier | Valid role |
-|---|---|
-| fixed script / mapping | weak negative control |
-| bounded adaptive model | meaningful basic rival |
-| bounded generative / meta-learning model with frozen calibration | strong rival |
-| unrestricted arbitrary causal-history functions | translation stress only |
-
-A scientific differential requires a rival with frozen state variables, update class, calibration data, and out-of-sample prediction.
+“Floor” is permitted as explanatory prose for mature background scaffold, not as a new canonical object.
 
 ---
 
-## 7. Next workline
-
-Proceed with a **Selection Event Attribution Audit**.
-
-Primary question:
-
-> Can SRT prospectively distinguish a new current selection event from execution of prior selection history / L2 without introducing a new Choice concept?
-
-Test the four author-supplied roles:
-
-1. irreversible increment;
-2. suppression / manifestation asymmetry;
-3. survival / embodied-position consequence;
-4. friction rewrite.
-
-Then assign each observed effect to either:
-
-- prior state / policy / L2 execution;
-- current event-level increment;
-- unresolved / inseparable under current evidence.
-
-### Required negative controls
-
-- fixed deterministic script with persistent writeback;
-- adaptive policy update fully specified by prior state;
-- habit / cached policy with survival-relevant consequences;
-- gradient-following biological control;
-- externally triggered state transition that changes future friction.
-
-The audit must not presuppose what extra positive remainder, if any, a current new selection event has beyond those controls.
-
----
-
-## 8. Author-boundary status
+## 10. Author-boundary status
 
 Resolved:
 
 ```text
 SRT center = Selection
 new Choice terminology = NO
+“survival” here = existential persistence, not biological survival
+convergence toward stability = continuously operating
+mature convergence = background floor, not cessation of dynamics
 ```
 
-Open:
+Open for analysis, not yet an author gate:
 
 ```text
-new selection event
-vs
-execution of prior selection history / L2
+partial maturity across dimensions
+floor re-entry under perturbation
+empirical signature of backgrounding / re-foregrounding
 ```
 
-No further author intervention is required until the attribution audit either:
-
-1. produces a proposed P0/P1 change; or
-2. reaches a new architectural fork not resolvable from existing SRT commitments.
+No canonical edit is authorized by this record.
 
 ---
 
-## 9. Stop rule
+## 11. Stop rule
 
-This record closes the terminology issue because:
+This record now closes the terminology and semantic misunderstanding because:
 
 1. `Live Choice` is explicitly not adopted;
-2. the useful anti-script discrimination problem is preserved;
-3. the author's four selection features are recorded without overpromotion;
-4. P1-T05 is not silently rewritten;
-5. the next workline is selection-event attribution;
-6. no canonical definition, symbol, or equation changes.
+2. Selection remains the primary theoretical object;
+3. “survival” is corrected to existential persistence / stable continuation of change;
+4. stability is treated as continuous convergence rather than a later detached stage;
+5. mature convergence is backgrounded rather than inactive;
+6. bearer / embodied stake is kept separate from existential persistence;
+7. the next workline is continuous convergence / backgrounding, not a new Choice taxonomy;
+8. no canonical definition, symbol, or equation changes.
 
-**Disposition:** continue under `Selection`, with no new `Choice` terminology.
+**Disposition:** continue under Selection and existing L2/scaffold machinery.
