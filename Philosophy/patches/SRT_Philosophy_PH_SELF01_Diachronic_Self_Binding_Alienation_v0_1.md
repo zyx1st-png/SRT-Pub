@@ -10,7 +10,7 @@ status: active
 target_future_doc:
   - Philosophy/SRT_Philosophy_Ethics.md
   - Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md
-  - 01_Source_Intuition/BOOK/Drafts_26Q/Q16_主体问题.md
+  - 01_Source_Intuition/BOOK/Drafts_26Q/Q16_主体沉积.md
 related_claims:
   - diachronic_agency
   - self_binding
