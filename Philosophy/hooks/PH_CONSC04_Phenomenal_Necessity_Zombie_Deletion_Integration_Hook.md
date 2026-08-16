@@ -8,6 +8,7 @@ canonical: false
 layer: operations
 epistemic_layer: bridge
 claim_mode: integration_plan
+updated: 2026-08-16
 source_patch: Philosophy/patches/SRT_Philosophy_PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Test_v0_1.md
 source_ids:
   - SRC-2026-08-08-PHIL-LEWIS-MIND-FROM-MINDLESS-MATTER
@@ -19,8 +20,8 @@ target_documents:
   - AI/AI_POSITIONING_NOTE.md
 landing_ledger:
   - target: "Philosophy/SRT_HardProblem_Epistemology.md"
-    state: pending
-    blocked_by: "Future hard-problem synthesis should split HP-A perspective-center individuation from HP-B phenomenal necessity and keep bearing/first-person identity at constitutive-proposal status unless independently derived."
+    state: landed
+    anchor: "### 3.2 承担与第一人称在场：构成性候选，而非已闭合定理"
   - target: "Philosophy/SRT_Subjecthood_Threshold_Interface.md"
     state: pending
     blocked_by: "Future subjecthood synthesis should preserve subject-position admission != phenomenal-necessity verdict and keep phenomenality separately assessed."
@@ -41,6 +42,8 @@ landing_ledger:
 
 Carry the PH-CONSC04 result into later hard-problem / subjecthood synthesis without turning a secondary source or a bridge thought experiment into canonical proof.
 
+**2026-08-16 landing update:** the author selected **HP-B-B**. `Philosophy/SRT_HardProblem_Epistemology.md` now explicitly separates structural bearing from phenomenal bearing and keeps Z6 open. This hook remains `partial` because subjecthood and AI targets are still pending.
+
 ## Core de-materialized payload
 
 ```text
@@ -53,25 +56,26 @@ SRT currently has substantial structure for the first problem and a strong const
 
 ## Target 1 — `Philosophy/SRT_HardProblem_Epistemology.md`
 
-Candidate future insertion:
+**Landed 2026-08-16 under HP-B-B.** The owner now:
 
-1. Split the residual burden into:
-   - HP-A: persistent perspective-center individuation;
-   - HP-B: phenomenal necessity.
-2. Preserve the view-from-nowhere / re-objectification guard.
-3. Downgrade any wording that can be read as:
+1. splits HP-A perspective-center individuation from HP-B phenomenal necessity;
+2. preserves the view-from-nowhere / re-objectification guard;
+3. writes:
 
 ```text
-bearing -> phenomenality proved
+B_s = structural bearing candidate
+B_p = phenomenal bearing candidate
+
+B_s != B_p
+B_s -> B_p  ?
 ```
 
-into:
+4. keeps Z6 open rather than defining phenomenality into bearing;
+5. treats the qualitative-character formula as a conditional P3 structural anchor rather than a completed derivation.
 
-```text
-bearing / first-person identity = constitutive interpretation under active hardening
-```
+Author decision record:
 
-unless a later theorem closes the Z6 pressure case.
+`Operations/SRT_PHENOMENAL_NECESSITY_AUTHOR_DECISION_PACKET_2026-08-16.md`
 
 ## Target 2 — `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
 
@@ -106,6 +110,8 @@ Recommended future open-pressure entry:
 - unresolved: whether a fully individuated, non-substitutable, stake-bearing Stable-ISP-like perspective center can coherently be phenomenally empty;
 - do not overstate: `bearing`, `d > 0`, same-bearer consequence return or Stable ISP are not currently canonical proofs of qualia.
 
+This target is already landed and remains compatible with HP-B-B.
+
 ## Target 4 — `Core_Law/SRT_Individuation.md`
 
 Preserve the two-transition architecture:
@@ -116,6 +122,8 @@ subject-position entry
 ```
 
 Add only a guardrail that individuation dynamics answer primarily HP-A and do not automatically close HP-B.
+
+This target is already landed.
 
 ## Target 5 — `AI/AI_POSITIONING_NOTE.md`
 
@@ -159,4 +167,4 @@ SRT has solved the hard problem
 
 ## Exit condition
 
-This hook can be marked integrated only when the target synthesis explicitly preserves the HP-A / HP-B distinction and records the Z6 phenomenal-necessity pressure rather than silently closing it.
+This hook can be marked fully integrated only when the remaining target surfaces preserve the HP-A / HP-B distinction and record the Z6 phenomenal-necessity pressure rather than silently closing it.
