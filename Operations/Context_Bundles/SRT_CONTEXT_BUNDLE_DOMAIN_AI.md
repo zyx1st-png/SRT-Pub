@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-16
-source_commit: 225cb071
+source_commit: bdda6636
 source_branch: agent/srt-convergence-hpb-governance
-source_dirty: false
-inputs_digest: db7aa92ff9637404
+source_dirty: true
+inputs_digest: 02bffde8a6616bdd
 ---
 
 # SRT AI 领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: db7aa92ff9637404
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-16 |
-| 来源 commit | `225cb071` |
+| 来源 commit | `bdda6636` |
 | 来源分支 | `agent/srt-convergence-hpb-governance` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -830,6 +830,8 @@ Do not reduce the AI section to pure negative examples. Do not promote AI bridge
 # AI
 
 > **[休眠层声明 · 2026-07-20]** 本层（`AI/`）自 2026-05 起无活跃修订，按"带冻结戳的图书馆"治理：可检索、可引用、被活跃任务触碰时可修（touch-based repair，见 `Governance/_SRT_DOC_ENGINEERING_GUIDE.md`），但不进入例行治理与状态面。本层符号与定义**未随 2026-05 之后的 canonical 变更同步**；引用时以 `CANONICAL_REGISTRY.md`、`_SRT_SYMBOL_TABLE.md` 及各 canonical 锚点为准。
+
+> **Synthesis-target freeze · 2026-08-16:** AI CompactCore / future synthesis references are not default landing authorization for new patches or hooks. The 2026-08-11 AI cluster probe is Case A / STOP; reopen synthesis only if a named reactivation gate in `../Operations/SRT_SYNTHESIS_TARGET_FREEZE_2026-08-16.md` fires. Historical target references remain provenance, not active backlog.
 
 
 This directory contains SRT's AI-facing bridge, consciousness, agency, architecture, and operational evaluation materials.
