@@ -1,8 +1,8 @@
 ---
 id: SRT-OPS-AUDIT-SELECTION-IRREDUCIBILITY-RIVAL-TEST-20260816
 type: audit_record
-status: record_v0_2
-record_stage: executed_pass1_review_hardened
+status: active
+record_stage: record_v0_2
 layer: meta
 epistemic_layer: os
 claim_mode: governance
