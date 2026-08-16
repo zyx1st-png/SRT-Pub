@@ -2,7 +2,7 @@
 id: SRT-OPS-AUDIT-SELECTION-IRREDUCIBILITY-PASS1-5-JOINT-REMOVAL-20260816
 type: audit_record
 status: active
-record_stage: executed_pass1_5
+record_stage: executed_pass1_5_corrected
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -23,61 +23,48 @@ tags: [Governance, SubtractiveAudit, Selection, JointRemoval, Writeback, Consequ
 
 > **Role**: execute the lowest-cost Step-5 test frozen by `SRT_SELECTION_IRREDUCIBILITY_RIVAL_TEST_2026-08-16.md`.
 >
-> **Frozen operation**: remove `irreversible writeback` + `bearer-specific consequence return`, then retest the `Y3 real-choice discrimination` target under a fixed boundary and horizon.
+> **Frozen operation**: remove `irreversible writeback` + `bearer-specific consequence return`, then retest the `Y3 real-choice discrimination` pressure under a fixed boundary and horizon.
 >
 > **Hard boundary**: this pass does not modify `P0-01`, `P1-T05`, the CG protocol, or any canonical definition. It does not assign a formal GOV-SUB01 residue to `selection`.
 
 ---
 
-## 0. Executive result
+## 0. Corrected executive result
 
-**Pass 1.5 result: the frozen joint-removal test is informative, but not in the way a simple “both are necessary” verdict would suggest.**
+**Pass 1.5 exposes a target mismatch rather than proving that the two deleted roles are jointly necessary for canonical real choice.**
 
-The key result is a target split that was hidden inside Pass 1's `Y3` wording:
+The frozen source case—the correct-SHA GitHub transaction—was previously audited as a full-boundary `SEA-3 qualified` event under CG. But its own ordinary explanation is a deterministic compare-and-swap / transaction script. `P1-T05` explicitly says that **script execution does not by itself constitute a real choice moment**.
+
+Therefore the source case is admissible for the operational CG target but **not** as an independently established positive instance of `P1-T05`.
+
+The correct target split is:
 
 ```text
 Y3a = P1-T05 constitutive target:
-      a live event genuinely constrains future selection space
+      a live L0 -> L1 anchoring event in which what is selected
+      genuinely constrains future selection space,
+      with script/habit/gradient/L2-label execution insufficient by itself
 
 Y3b = CG operational target:
       a bounded selection-event candidate passes CG-0..CG-4
+      under the non-compensation rule
 ```
 
-Under the fixed software-transaction case used here:
+Pass-1.5 outcome:
 
-- removing **bearer-specific consequence return only** does **not by itself destroy Y3a** so long as a persistent historical carrier still changes future reachable state;
-- the same removal **does destroy Y3b**, because CG-3 is non-compensable by protocol;
-- removing **irreversible writeback / persistent historical carrier** destroys **Y3a**, because the event no longer demonstrably constrains a later selection space rather than only changing the immediate path;
-- joint removal therefore collapses the case to at most a path-effective transition unless writeback is covertly reintroduced through `history`, `reachable-set transformation`, or another renamed state carrier.
+1. the `W + C` deletion can be validly evaluated against **Y3b / CG**;
+2. the same case is **UNINTERPRETABLE as a positive Y3a / P1-T05 test**, because the anti-script gate is not satisfied independently of the CG verdict;
+3. a stronger and more important result follows: **CG full-pass is not sufficient, by itself, to establish P1-T05**, because a scripted transaction can pass the operational five-gate audit while still lacking the extra evidence required by P1-T05's live-choice exclusion;
+4. the reverse implication is also unproved: P1-T05 does not explicitly require the full bearer-specific CG-3 package;
+5. therefore the current P1-T05 ↔ CG relation is **non-equivalent and not yet nested in either direction**.
 
-The strongest new conclusion is therefore:
-
-> **P1-T05 and the five-gate CG audit are not currently equivalent criteria. CG is a stricter operational package than the wording of P1-T05 in at least one dimension: bearer-specific consequence is required by CG-3 but is not yet shown necessary for the minimal P1-T05 future-selection-space clause.**
-
-This is a hardening result, not a demotion of either object. It identifies a relation that §14 had left explicitly unformalized.
-
-Formal GOV-SUB01 residue for `selection`: **UNASSIGNED**.
+Formal GOV-SUB01 residue for primitive `selection`: **UNASSIGNED**.
 
 ---
 
-## 1. Frozen target and case
+## 1. Frozen case and authority split
 
-### 1.1 Why split `Y3`
-
-Pass 1 defined:
-
-> `Y3 Real-choice discrimination`: distinguish a live event that changes future reachability from script replay / habit / gradient following without merely renaming the distinction.
-
-That sentence mixed two authorities:
-
-1. canonical `P1-T05`, whose positive load is future selection-space constraint;
-2. non-canonical CG operations, whose five gates additionally require consequence bearing as a non-compensable condition.
-
-A Step-5 interaction test cannot be interpreted cleanly until these two targets are separated.
-
-### 1.2 Fixed case
-
-Primary bounded case:
+### 1.1 Primary bounded case
 
 `Operations/SRT_AI_CORRECT_SHA_SUCCESS_CONTROL_UNIFIED_AUDIT_2026-08-05.md`
 
@@ -100,22 +87,37 @@ correct expected blob SHA
 -> later work from the branch inherits the changed state
 ```
 
-The paired wrong-SHA 409 case remains a calibration control for “endpoint contact without target commit.”
+The paired wrong-SHA 409 case remains the negative calibration for endpoint contact without target commit.
 
-### 1.3 Why this case is adequate for Pass 1.5
+### 1.2 What the source case actually establishes
 
-This case does **not** establish a special SRT mechanism; its own report says ordinary compare-and-swap / Git transaction theory explains the engineering process. That is useful here because Pass 1.5 is testing role dependence, not claiming mechanism novelty.
+The source report establishes, at full boundary:
 
-The case has separately identified:
-
+- difference manifestation;
+- internal relation checking at the transaction interface;
 - path efficacy;
-- consequence location;
-- historical carrier;
-- future baseline change;
-- fixed system boundary;
-- matched negative control.
+- bounded consequence attribution;
+- persistent historical writeback;
+- future branch-baseline change;
+- `SEA-3 qualified` under the five-gate operational protocol.
 
-That makes it sufficient for a bounded Step-5 decomposition without running a new live mutation.
+It also explicitly states that ordinary Git blob identity, optimistic concurrency, compare-and-swap, atomic commit/ref update, branch isolation, and human-authorized tool execution sufficiently explain the engineering process.
+
+### 1.3 What the source case does **not** establish
+
+It does not establish that the transaction is a `P1-T05` real choice moment.
+
+Why:
+
+```text
+correct SHA condition
+-> deterministic transaction precondition passes
+-> scripted update commits
+```
+
+That is exactly the kind of case for which P1-T05's exclusion matters: **future-state change alone is insufficient if the process is merely script execution**.
+
+So the original temptation to read the source case as “P1-T05-compatible because future reachability changed” is rejected as incomplete.
 
 ---
 
@@ -126,7 +128,7 @@ Let:
 - `W` = irreversible writeback / persistent historical carrier that preserves the event into later state;
 - `C` = bearer-specific consequence return / identified position to which path-specific loss, obligation, repair cost, or future-option burden returns.
 
-The frozen joint-removal operation is:
+Frozen Step-5 operation:
 
 ```text
 M^{-W,-C}
@@ -134,61 +136,65 @@ M^{-W,-C}
 
 ### 2.1 Anti-laundering rule for `W`
 
-After deleting `W`, the rival may not preserve the same role by saying only:
+After deleting `W`, the model may not preserve the same role by saying only:
 
 - “history remembers it”;
 - “the reachable set is now different”;
 - “the state contains the result”;
-- “a transition kernel is conditioned on the event”;
+- “the transition kernel is conditioned on the event.”
 
-unless an independently specified persistent carrier explains how the earlier event remains causally available later.
-
-If the later reachable set depends on an event only because a state variable, memory, environment modification, commit, parameter, threshold, or equivalent carrier persists, that carrier **is the writeback role for this audit** even if not called `writeback`.
+A persistent state variable, memory, environment modification, commit, parameter, threshold, or equivalent carrier that makes the earlier event causally available later **is the writeback role for this audit**, whatever it is called.
 
 ### 2.2 Anti-laundering rule for `C`
 
-After deleting `C`, the rival may retain ordinary state change and path-specific effects, but may not count generic aggregate change as bearer-specific consequence merely by renaming the affected state “the bearer.”
+After deleting `C`, the model may retain generic state change and path-specific effects, but may not count aggregate change as bearer-specific consequence merely by renaming the affected state “the bearer.”
 
-The affected position must be independently fixed before the result.
+The bearer / consequence position must be independently fixed before the result.
 
 ---
 
 ## 3. Four-cell Step-5 matrix
 
-| Cell | `W` | `C` | `Y3a` P1-T05 target | `Y3b` CG target | Main diagnosis |
+| Cell | `W` | `C` | `Y3a` P1-T05 | `Y3b` CG audit | Main diagnosis |
 |---|---:|---:|---|---|---|
-| A | 1 | 1 | preserved as bounded candidate | preserved as `SEA-3 qualified` in the source case | reference |
-| B | 1 | 0 | **can remain preserved** if persistent writeback still changes later reachable state | **fails** because CG-3 / CBP minimum is removed | separates P1-T05 from CG |
-| C | 0 | 1 | **fails** unless writeback is smuggled back through history/reachability | fails because CG-4 / HEF minimum is removed | writeback carries future-space clause |
-| D | 0 | 0 | **fails**; at most immediate path efficacy remains | fails CG-3 and CG-4 | joint removal collapses event standing |
+| A | 1 | 1 | **not established by this case**; script exclusion remains live | preserved as source `SEA-3 qualified` | CG-positive / P1-T05-insufficient control |
+| B | 1 | 0 | not adjudicable positively from this case | **fails CG-3** | bearer consequence is protocol-load-bearing for CG |
+| C | 0 | 1 | not adjudicable positively; future-space evidence also disappears | **fails CG-4** | writeback is protocol-load-bearing for CG and supports future-effect evidence |
+| D | 0 | 0 | not adjudicable positively; only immediate path efficacy remains | fails CG-3 and CG-4 | joint removal collapses CG event standing |
+
+The matrix therefore licenses a result about the **CG apparatus** and a negative sufficiency result about the **CG → P1-T05 relation**. It does not license a positive P1-T05 indispensability verdict from this scripted case.
 
 ---
 
-## 4. Cell A — reference
+## 4. Cell A — reference case
 
-In the correct-SHA source audit, the full `B3` boundary records:
+The source audit records at `B3`:
 
 ```text
-PEF >= 2
+DMF = 3
+NER = 2 qualified
+PEF = 3 qualified
 CBP = 2
 HEF = 3
-SEA = 3 qualified
+SEA = SEA-3 qualified
 ```
 
-The new commit and branch-head movement persist after the immediate request and alter the baseline from which later branch operations proceed.
+This is sufficient for `Y3b` under the operational protocol.
 
-For this pass:
+But the ordinary event remains a deterministic transaction whose success condition is the expected-SHA equality gate. No independent evidence in the source audit establishes a live `L0 -> L1` anchoring event rather than script execution.
 
-- `Y3a`: preserved as a bounded P1-T05-compatible candidate because later reachable operations are conditioned by the new branch state;
-- `Y3b`: preserved because the source audit passes the five gates at the declared qualified level.
+Therefore:
 
-No stronger claim is imported from the source audit.
+```text
+Y3b: positive operational case
+Y3a: not established
+```
+
+This prevents operational event standing from silently promoting itself into canonical real-choice standing.
 
 ---
 
 ## 5. Cell B — remove bearer-specific consequence return only
-
-### 5.1 Operation
 
 Keep:
 
@@ -196,112 +202,82 @@ Keep:
 - commit creation;
 - branch-head update;
 - persistent historical state;
-- future reachable-state change.
+- future branch-baseline change.
 
-Delete from the model:
+Delete:
 
-- attribution of repair burden, loss, obligation, risk, or future-option cost to a separately identified bearer position.
+- attribution of path-specific burden, repair obligation, risk, loss, or future-option cost to a separately identified bearer position.
 
-### 5.2 Result for `Y3a`
+### 5.1 Result for Y3b / CG
 
-The event can still satisfy the literal future-space part of P1-T05:
-
-```text
-pre-event branch state != post-event branch state
-and
-later admissible / available branch operations inherit the post-event state
-```
-
-Nothing in the minimal wording of P1-T05, by itself, requires a separately identified bearer-specific consequence position.
-
-Therefore:
-
-> `C` is **not shown necessary for Y3a** by current P1-T05 wording.
-
-This is not a formal `R3` verdict for `C` across SRT. It is a bounded candidate reading relative to this target and case.
-
-### 5.3 Result for `Y3b`
-
-The CG protocol is explicitly non-compensatory. Removing the bearer-specific consequence role removes the positive basis for CG-3 / CBP.
-
-Therefore:
+CG is non-compensatory. Removing `C` removes the positive basis for CG-3 / CBP.
 
 ```text
-CG-0/1/2 may still pass
-CG-4 may still pass
+CG-0 may pass
+CG-1 may pass
+CG-2 may pass
 CG-3 fails
--> no bounded selection-event candidate under the five-gate protocol
+CG-4 may pass
+-> no five-gate bounded selection-event candidate
 ```
 
-This loss is **protocol-structural**. It does not yet prove that nature requires bearer-specific consequence for every real choice moment.
+Thus `C` is protocol-load-bearing for the current CG event class.
 
-### 5.4 Cell-B interpretation
+### 5.2 Result for Y3a / P1-T05
 
-Cell B is the decisive separation result:
+No positive conclusion is licensed from this case because Cell A already failed to establish P1-T05 independently of the script exclusion.
 
-> **CG-3 carries additional operational load beyond what is explicitly stated in the minimal P1-T05 future-selection-space criterion.**
+The only safe statement is:
+
+> current P1-T05 wording does not explicitly state the CG-3 bearer-specific consequence condition, so this audit cannot infer `C` as a P1-T05 necessary condition merely from CG failure.
+
+That remains an open relation question.
 
 ---
 
 ## 6. Cell C — remove irreversible writeback only
 
-### 6.1 Operation
-
 Keep:
 
-- immediate request validation;
+- immediate transaction validation;
 - immediate path efficacy;
 - an identified consequence position for the immediate event.
 
 Delete:
 
-- commit/ref persistence as a historical carrier;
+- commit/ref persistence as the historical carrier;
 - any equivalent persistent state that makes the event causally available to later transitions.
 
-### 6.2 Result for `Y3a`
+### 6.1 Result for Y3b / CG
 
-Without a persistent carrier, the model can still describe:
-
-```text
-input difference -> different immediate transition -> immediate consequence
-```
-
-But it cannot establish:
+Without an independently specified persistent carrier capable of changing future reachability, transition probability, return cost, threshold, or rule:
 
 ```text
-this event genuinely constrains the future selection space
+CG-4 / HEF fails
+-> no five-gate bounded selection-event candidate
 ```
 
-unless a later state, memory, modified environment, parameter, branch head, threshold, or equivalent historical carrier preserves the earlier event.
+If “history” or “reachable-set change” is retained by adding a persistent state elsewhere, `W` has been hidden rather than removed.
 
-If such a carrier is reintroduced under `history dependence` or `reachable-set transformation`, the deleted `W` role has been hidden rather than removed.
+### 6.2 Result for Y3a / P1-T05
 
-Therefore:
+Removing the only evidence of later state dependence also removes the case's evidence for the “future selection space is genuinely constrained” clause.
 
-> within this bounded case, a persistent writeback/history-carrier role is a current indispensability **candidate** for `Y3a`.
+But this does **not** turn the scripted transaction into a valid P1-T05 positive test in the reference condition. It only shows:
 
-No cross-context `N1/N2` residue is assigned because the perturbation sweep is not complete.
+> an independently specified persistence / future-effect carrier is required to *evidence* the future-space clause in this domain, while the separate live-vs-script requirement remains unresolved.
 
-### 6.3 Result for `Y3b`
-
-CG-4 requires HEF-3 by the frozen protocol. With no persistent carrier capable of changing future reachability, transition probability, return cost, threshold, or rule:
-
-```text
-CG-4 fails
--> bounded selection-event candidate fails
-```
-
-Again, this is a protocol result plus a bounded structural dependency, not a universal metaphysical theorem.
+This is a support relation, not an attached `N1` residue.
 
 ---
 
 ## 7. Cell D — joint removal `W + C`
 
-With both roles deleted, the strongest remaining description is approximately:
+With both roles deleted, the strongest remaining description is:
 
 ```text
 candidate difference
--> internal/non-equivalent processing
+-> internal relation check
 -> path-effective immediate transition
 ```
 
@@ -311,112 +287,120 @@ This can still distinguish:
 - rejected request vs accepted immediate execution;
 - one immediate path from another.
 
-It cannot, without smuggling deleted roles back in, establish either:
+It cannot establish the five-gate CG event because CG-3 and CG-4 are both absent.
 
-1. that the event changes a later selection space (`Y3a`); or
-2. that all five non-compensable CG gates close (`Y3b`).
+It also cannot establish P1-T05, but importantly **P1-T05 was not established in the reference cell either**. The joint deletion therefore cannot be interpreted as “P1-T05 was present and was destroyed.”
 
-In the source domain, the event therefore collapses from the full-boundary `SEA-3 qualified` pattern toward at most the path-effective process class carried by PEF/SEA-2-like structure.
-
-This is exactly the distinction already visible in the source report between endpoint contact / path effect and persistent target commit.
+That distinction is the main correction to the naive Pass-1.5 reading.
 
 ---
 
-## 8. Interaction result
+## 8. Relation result: CG and P1-T05 are not the same test
 
-### 8.1 The two deletions are asymmetric
+### 8.1 `CG -> P1-T05` is not licensed
 
-The important Step-5 result is **not** simply:
+The correct-SHA transaction passes the operational five-gate audit at full boundary but remains fully explainable as deterministic transaction/script execution.
+
+P1-T05 explicitly says script execution does not by itself constitute a real choice moment.
+
+Therefore:
+
+> **Passing CG-0..CG-4 is not sufficient, by itself, to establish P1-T05.**
+
+This is the strongest result of Pass 1.5.
+
+It does not prove that no CG-positive event could ever also satisfy P1-T05. It proves only that the CG verdict alone does not discharge the live-choice / anti-script burden.
+
+### 8.2 `P1-T05 -> CG` is also not licensed
+
+P1-T05's minimal statement focuses on a live anchoring event whose selected result genuinely constrains future selection space and excludes script/habit/gradient/L2-label execution as sufficient substitutes.
+
+It does not explicitly state all five CG gates, especially a separately identified bearer-specific consequence requirement at the CG-3 level.
+
+Therefore the reverse implication is unproved.
+
+### 8.3 Current relation
+
+The safe current relation is:
 
 ```text
-W necessary + C necessary
+CG full pass  = operational bounded-event package
+P1-T05        = constitutive real-choice distinction
+
+CG != P1-T05
+CG -> P1-T05  [not sufficient as currently shown]
+P1-T05 -> CG  [unproved]
 ```
 
-Instead:
+The two criteria are neither identical nor currently established as nested subsets.
 
-```text
-for Y3a / P1-T05:
-W carries a load that C does not currently carry
+---
 
-for Y3b / CG:
-W and C are both mandatory because CG-3 and CG-4 are separately non-compensable
-```
+## 9. GOV-SUB01 Step-5 result
 
-So the apparent pairwise necessity depends on which target was meant.
+### 9.1 What the joint deletion really shows
 
-### 8.2 Overloaded target detected
+For the declared CG target:
 
-Pass 1's single `Y3` target hid this distinction. The Step-5 audit therefore discovers a **target-definition interaction** rather than a clean component-synergy theorem.
+- `C` is load-bearing because CG-3 is non-compensable;
+- `W` is load-bearing because CG-4 is non-compensable;
+- deleting both collapses the full event class to a lower path-effective process description.
 
-This matters methodologically:
+This is partly **protocol-structural**: the audit was designed so the gates cannot compensate for each other.
 
-> if deleting `C` “fails Y3” only because Y3 silently means “pass the five-gate protocol,” then using that result to prove `C` is necessary for canonical real choice would be target laundering in reverse.
+Therefore it cannot be cited as independent empirical proof that `W` and `C` are metaphysically necessary for every real choice event.
 
-### 8.3 No selection-residue consequence
+### 9.2 Selection residue consequence
 
-The joint-removal result does not show that the primitive `selection` role is irreducible. A non-selection causal-history model can still carry `W` through persistent state and can carry `C` through an explicit bearer ledger.
+Nothing in this pass establishes a differential `E_cf` or `E_int` that ordinary causal-history vocabulary cannot reproduce.
 
-Therefore formal residue for `selection` remains:
+Formal residue for primitive `selection` remains:
 
 ```text
 UNASSIGNED
 ```
 
+No `R* / N* / P` label is attached to `selection`.
+
 ---
 
-## 9. Candidate classifications — explicitly non-formal
+## 10. Candidate readings — explicitly non-formal
 
-| Component / relation | Target | Candidate reading | Why not formal |
+| Object | Target | Candidate reading | Limitation |
 |---|---|---|---|
-| persistent writeback/history carrier `W` | `Y3a` | `N1-like current target-relative indispensability candidate` | one bounded domain/case; no full perturbation sweep |
-| bearer consequence `C` | `Y3a` | `R3-like target-relative dispensability candidate` | only minimal P1-T05 wording tested; other targets may need C |
-| `W` | `Y3b` | protocol-mandatory | CG-4 defines the audit gate; not independent empirical necessity |
-| `C` | `Y3b` | protocol-mandatory | CG-3 defines the audit gate; not independent empirical necessity |
-| primitive `selection` | §13 overall | **no classification change** | no qualifying `E_cf/E_int` exhibit |
-
-Do not quote the `N1-like` or `R3-like` rows as attached GOV-SUB01 residues.
+| `C` bearer consequence | CG / Y3b | protocol-load-bearing | follows from CG-3 non-compensation; not independent P1-T05 necessity |
+| `W` writeback/history carrier | CG / Y3b | protocol-load-bearing | follows from CG-4 non-compensation |
+| `W` persistence role | future-space evidence | structurally supportive | reference case is scripted and not a P1-T05 positive case |
+| CG full pass | P1-T05 | **insufficient by itself** | anti-script/live-choice burden remains |
+| primitive `selection` | §13 overall | no classification change | no qualifying rival differential exhibit |
 
 ---
 
-## 10. Consequence for §14
+## 11. Consequence for §14
 
-Pass 1.5 materially sharpens the open relation between P1-T05 and `CG-0..CG-4`.
+Pass 1.5 materially sharpens the previously open P1-T05 ↔ CG relation.
 
-The current evidence supports at least:
+The relation is no longer merely “unformalized.” There is now a bounded negative sufficiency result:
 
-```text
-CG full pass -> a stricter operational package than the literal minimum stated in P1-T05
-```
+> **The current five-gate CG verdict cannot be used as a sufficient proxy for P1-T05, because a deterministic scripted transaction can satisfy the five-gate audit while P1-T05 still withholds real-choice standing absent additional live-choice evidence.**
 
-It does **not** yet support:
+This does not settle necessity or sufficiency in the other direction.
 
-```text
-CG full pass <-> P1-T05 real choice moment
-```
+The strongest next question is therefore not “does the rival pass the same five gates?” It is:
 
-or:
+> what independent observation or intervention distinguishes a live P1-T05 event from a history-effective scripted process that also passes CG?
 
-```text
-CG-3 bearer consequence is a necessary condition of every P1-T05 real choice moment
-```
-
-The next A2 test must therefore avoid treating “Judge S” and “Judge CG” as automatically identical. At minimum it should separate:
-
-- **Judge S_core**: P1-T05 minimum;
-- **Judge S_CG**: five-gate bounded audit;
-- **Judge R**: strongest ordinary causal-history rival.
-
-This turns A2 from a two-judge vocabulary comparison into a three-way adjudication capable of detecting whether disagreement comes from SRT's canonical criterion, from its stricter audit apparatus, or from the ordinary rival.
+That is exactly the place where A2 can become discriminating rather than terminological.
 
 ---
 
-## 11. A2 handoff contract
+## 12. A2 handoff contract
 
-Freeze the next test as:
+A2 must use **three judges**:
 
 ```text
 Judge S_core = P1-T05 only
-Judge S_CG   = CG-0..CG-4 non-compensable audit
+Judge S_CG   = CG-0..CG-4 non-compensable operational audit
 Judge R      = strongest ordinary causal-history rival
 ```
 
@@ -425,29 +409,35 @@ Use the same event unit, boundary, history, bearer, horizon and evidence.
 Record divergence:
 
 - `D0`: wording only;
-- `D1a`: S_core vs S_CG classification difference;
+- `D1a`: `S_core` vs `S_CG` classification difference;
 - `D1b`: SRT-family vs rival classification difference;
-- `D2`: counterfactual/intervention prediction differs;
+- `D2`: counterfactual / intervention prediction differs;
 - `D3`: preregistered empirical outcome discriminates.
+
+The correct-SHA software case is already a useful **D1a calibration case**:
+
+```text
+S_CG: bounded event candidate
+S_core: real choice not established because scripted execution remains sufficient ordinary explanation
+```
+
+But this is not yet a D2 result.
 
 Only `D2+` can discharge the main §13 discrimination burden.
 
-A `D1a` result is nevertheless theoretically useful because it exposes internal criterion mismatch and can force clarification of whether CG conditions are necessary, sufficient, or intentionally stronger audit guards.
-
 ---
 
-## 12. Stop rule
+## 13. Stop rule
 
 Pass 1.5 stops because:
 
-1. the frozen pairwise joint-removal operation has been executed;
-2. the fixed case, boundary and horizon are explicit;
-3. anti-laundering rules for `W` and `C` are explicit;
-4. the four-cell matrix has been evaluated;
-5. the overloaded `Y3` target has been split into `Y3a` and `Y3b`;
-6. no formal residue is over-assigned;
-7. the next discriminating task is now A2 three-way rival adjudication, not further vocabulary deletion.
+1. the frozen `W + C` joint-removal operation has been executed against a valid CG-positive bounded case;
+2. the source case has been rejected as an unjustified P1-T05 positive proxy;
+3. CG-3 and CG-4 load-bearing roles are separated without overclaiming metaphysical necessity;
+4. the current `CG -> P1-T05` sufficiency inference is blocked by the script exclusion;
+5. formal selection residue remains `UNASSIGNED`;
+6. the next task is A2 three-judge rival adjudication focused on producing or failing to produce D2.
 
 **Final Pass-1.5 verdict:**
 
-> The joint deletion does not establish primitive selection irreducibility. It establishes that persistent writeback is load-bearing for the minimal P1-T05 future-selection-space clause in the bounded case, while bearer-specific consequence is load-bearing for the stricter CG audit but is not yet shown necessary for P1-T05 itself. The main new pressure therefore lands on the unformalized P1-T05 ↔ CG relation and should be carried into A2 as a three-judge comparison.
+> The joint deletion shows that bearer consequence and irreversible writeback are load-bearing for the current non-compensable CG event class, but it does not show they jointly constitute canonical real choice. More importantly, the scripted correct-SHA case passes CG while still failing to establish the extra live-choice condition of P1-T05. The immediate theoretical burden therefore moves from “are the CG gates all present?” to “what observable or intervention distinguishes a live P1-T05 event from a history-effective scripted process that passes those gates?”
