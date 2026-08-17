@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-17
-source_commit: d09333de
-source_branch: agent/srt-rca-stale-route-cleanup
-source_dirty: true
-inputs_digest: 78138a3218b364ad
+source_commit: aae67dfd
+source_branch: agent/srt-p0-03-rca-cleanup
+source_dirty: false
+inputs_digest: 68ad94f21ae317ac
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,9 +27,9 @@ inputs_digest: 78138a3218b364ad
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-17 |
-| 来源 commit | `d09333de` |
-| 来源分支 | `agent/srt-rca-stale-route-cleanup` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `aae67dfd` |
+| 来源分支 | `agent/srt-p0-03-rca-cleanup` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -49,7 +49,7 @@ inputs_digest: 78138a3218b364ad
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-12 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-12 |
-| 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-12 |
+| 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
 | 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-08-17 |
 | 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
 | 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-12 |
@@ -2147,7 +2147,7 @@ For claim governance, read:
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-17 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -2258,9 +2258,9 @@ An event may therefore be actual without already being a persistent object, a re
 
 **Minimal Claim**: Once a selection is anchored into `L_1` and leaves history in `L_2`, it cannot be treated as never having occurred. Any reversal is itself a new selection event with its own trace.
 
-**Implication**: SRT requires historical asymmetry. Without irreversible trace, `L_2`, stable perspective, and real choice moments collapse into reversible bookkeeping.
+**Implication**: SRT requires historical asymmetry. Without irreversible trace, `L_2`, stable perspective, and any stable history-bearing organization collapse into reversible bookkeeping.
 
-**Why P0 here**: This entry does not carry the fuller theory of ontological time, causality, or stable ISP. It only preserves the irreversibility floor needed for `L_2` and real choice to mean anything in SRT. The derived expressions and scoped theorems remain P1 in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
+**Why P0 here**: This entry does not carry the fuller theory of ontological time, causality, agency, or stable ISP. It only preserves the irreversibility floor needed for `L_2` and historically effective selection to be more than reversible bookkeeping. The derived expressions and scoped theorems remain P1 in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 
 **Boundary**: The fuller ontological-time expression is not primitive here; it is carried as a P1 theorem in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 

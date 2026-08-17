@@ -113,9 +113,9 @@ An event may therefore be actual without already being a persistent object, a re
 
 **Minimal Claim**: Once a selection is anchored into `L_1` and leaves history in `L_2`, it cannot be treated as never having occurred. Any reversal is itself a new selection event with its own trace.
 
-**Implication**: SRT requires historical asymmetry. Without irreversible trace, `L_2`, stable perspective, and real choice moments collapse into reversible bookkeeping.
+**Implication**: SRT requires historical asymmetry. Without irreversible trace, `L_2`, stable perspective, and any stable history-bearing organization collapse into reversible bookkeeping.
 
-**Why P0 here**: This entry does not carry the fuller theory of ontological time, causality, or stable ISP. It only preserves the irreversibility floor needed for `L_2` and real choice to mean anything in SRT. The derived expressions and scoped theorems remain P1 in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
+**Why P0 here**: This entry does not carry the fuller theory of ontological time, causality, agency, or stable ISP. It only preserves the irreversibility floor needed for `L_2` and historically effective selection to be more than reversible bookkeeping. The derived expressions and scoped theorems remain P1 in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 
 **Boundary**: The fuller ontological-time expression is not primitive here; it is carried as a P1 theorem in `Core/SRT_Core_21b_Constitutive_Theorems.md`.
 
