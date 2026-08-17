@@ -67,8 +67,9 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 | Trigger | Pipeline / Mode | Action |
 |--------|------------------|--------|
-| `材料 <文本/URL/文件>` | Pipeline 1 | 按 `Operations/_SRT_MATERIAL_PIPELINE.md` 执行材料融合：6项审核门 → A/B/C 结论 → 必要时二轮裁决 → SourceCard / PatchNote / Material Log / Index / Registry / IntegrationHook；A 类正文回写必须先做“去材料化改写”，写成可脱离材料阅读的原生章节。 |
-| `材料裁决 <文本/URL/文件>` | 辅助工作流 | 启动第二轮结构裁决：审查第一轮候选接口，压成最小可承重命题，并给出 A/B/C 建议与主/备/禁止落点；结果必须回注 Pipeline 1。 |
+| `材料 <文本/URL/文件>` | Pipeline 1 | 按 `Operations/_SRT_MATERIAL_PIPELINE.md` 执行材料融合，并同时遵守 `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`：先忠实提取 source claim，再分别判断 O-track 本体论整合价值与 D-track 经验判别增量；**不得为了证明 SRT 独特而强造新变量/机制，也不得因“别人已经解释”就自动判低价值**。随后执行 A/B/C、必要时二轮裁决、SourceCard / PatchNote / Material Log / Index / Registry / IntegrationHook；A 类正文回写必须先做去材料化改写。 |
+| `陪读 <文本/URL/文件>` | Source-grounded reading | 先按来源本身的术语、论证与证据强度陪读，不自动写入仓库。若后续要求“写入/回写/融合”，转入 Pipeline 1，并按 `GOV-SYN01` 分开记录：A) source-derived 内容；B) SRT ontological synthesis；C) 只有在实际声称时才建立 discriminating/empirical increment。外部结果可作为 SRT 本体论构造材料，但不得被改写成“来源证明 SRT”。 |
+| `材料裁决 <文本/URL/文件>` | 辅助工作流 | 启动第二轮结构裁决：审查第一轮候选接口，并按 `GOV-SYN01` 先判 O-track / D-track / O+D / source-only，再压成最小可承重命题，给出 A/B/C 建议与主/备/禁止落点；结果必须回注 Pipeline 1。 |
 | `二轮裁决 <文本/URL/文件>` | 辅助工作流 | 同 `材料裁决` |
 | `信号采集` | Pipeline 3 | 立即执行网络信号采集 |
 | `内审` | Pipeline 6 | 立即执行每日内部审查 |
@@ -82,7 +83,7 @@ When the user sends the following trigger words, use the current `SRT/` structur
 
 - 先读 `STATUS.md`
 - 以 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 为当前节奏入口
-- 若触发 `材料`，还必须读 `Operations/_SRT_MATERIAL_PIPELINE.md` 与 `Operations/_SRT_MATERIAL_LOG.md`
+- 若触发 `材料` 或需要把 `陪读` 结果写回仓库，必须读 `Operations/_SRT_MATERIAL_PIPELINE.md`、`Operations/_SRT_MATERIAL_LOG.md` 与 `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
 
 执行后：
 
@@ -103,6 +104,7 @@ When the user sends the following trigger words, use the current `SRT/` structur
 - 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`
 - Pipeline 1 主流程：`Operations/_SRT_MATERIAL_PIPELINE.md`
 - Pipeline 1 正式台账：`Operations/_SRT_MATERIAL_LOG.md`
+- 本体论整合 / 经验判别双轨纪律：`Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
 - 对话留痕：`Operations/_SRT_DIALOGUE_LOG.md`
 - 书稿当前状态入口：`01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
 - 书稿机器路由：`01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`
