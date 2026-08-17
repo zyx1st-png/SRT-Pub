@@ -1,0 +1,58 @@
+name: RC-A stale-route helper trigger
+
+on:
+  push:
+    branches:
+      - agent/srt-rca-stale-route-cleanup-helper
+
+permissions:
+  contents: write
+
+jobs:
+  apply-cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Apply frozen helper patch to target branch
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Reuse the already-reviewed embedded Python patch from the helper-only
+          # governance workflow instead of duplicating the large replacement text.
+          cp .github/workflows/governance-preflight.yml /tmp/helper-workflow.yml
+          python - <<'PY'
+          from pathlib import Path
+          src = Path('/tmp/helper-workflow.yml').read_text(encoding='utf-8').splitlines()
+          start = next(i for i, line in enumerate(src) if "python - <<'PY'" in line) + 1
+          end = next(i for i in range(start, len(src)) if src[i].strip() == 'PY')
+          block = src[start:end]
+          # YAML run-block indentation is ten spaces in this helper file.
+          cleaned = '\n'.join(line[10:] if line.startswith('          ') else line for line in block) + '\n'
+          Path('/tmp/rca_patch.py').write_text(cleaned, encoding='utf-8')
+          PY
+
+          git fetch origin agent/srt-rca-stale-route-cleanup
+          git switch -C agent/srt-rca-stale-route-cleanup origin/agent/srt-rca-stale-route-cleanup
+          python /tmp/rca_patch.py
+          uv run python scripts/build_srt_context_bundles.py
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Core/SRT_OPEN_TENSIONS.md _SRT_CONTEXT_ROUTER.md Operations/Context_Bundles
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'No cleanup changes produced.'
+            exit 1
+          fi
+          git commit -m 'Synchronize RC-A open tensions and selection-event route'
+          git push origin HEAD:agent/srt-rca-stale-route-cleanup
