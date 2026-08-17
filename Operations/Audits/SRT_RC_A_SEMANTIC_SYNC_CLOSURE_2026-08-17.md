@@ -26,12 +26,7 @@ tags: [Governance, RC-A, Selection, SemanticSync, Closure, Phase0]
 
 **Phase 0 NOT CLOSED.**
 
-已安全完成一组 active semantic contradiction 的最小修复，但仍有两类真实 blocker：
-
-1. **formal/theory dependency author gate**：`Core_Law/SRT_L1_Formalism.md` 与 `Core_Law/SRT_Collective_Selection.md` 仍把 former P1-T05 当作现行承重来源；现有 authority 不足以无争议 re-anchor / demote / quarantine 这些形式或 P1-candidate 结构，不能现场发明新推导。
-2. **execution-environment blocker**：当前 GitHub connector 的 code-search index 对已知存在的字符串返回 false-zero，无法完成可认证的全仓 literal inventory；当前会话也不能实例化 bounded retrieval protocol 要求的独立 fresh sessions，因此不能把 regression 写成 PASS。
-
-因此 PR 必须保持 Draft，不得 Mark Ready / merge。
+安全可做的 active semantic cleanup 已完成，但仍存在 author-gate、检索覆盖、bounded retrieval 与 governance freshness blocker。PR #830 必须保持 Draft，不得 Mark Ready / merge。
 
 ---
 
@@ -40,17 +35,18 @@ tags: [Governance, RC-A, Selection, SemanticSync, Closure, Phase0]
 - repository: `zyx1st-png/SRT-Pub`
 - branch: `agent/rc-a-semantic-sync-phase0`
 - base SHA: `28372d44c1fc77749bed4332a34210f5f1ec59a1`
-- audited pre-closure head SHA: `3659fd82f0411a0329d16925eee45a94f522ceec`
+- audited semantic-patch head before closure: `3659fd82f0411a0329d16925eee45a94f522ceec`
+- governance-tested closure head: `744eed3e75f20e2acf1041282a90364c3ddb3608`
 - execution date: `2026-08-18`
 - PR: `#830` (Draft)
 
-`audited pre-closure head SHA` 指本 closure 文件写入前、已经人工检查的 semantic patch head；closure record 自身的 commit 不被循环写入自己的 head 字段。
+The audit file itself is a closure record; its later CI-result writeback is not used to create a self-referential SHA requirement.
 
 ---
 
 ## 2. Authority actually read
 
-Fresh-session runtime / scope authority 已读取：
+Fresh-session runtime / scope authority was read before editing:
 
 - `AGENTS.md`
 - `SRT_AI_START.md`
@@ -72,77 +68,75 @@ Fresh-session runtime / scope authority 已读取：
 - `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
 - `Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`
 
-Owner-neighborhood sanity pass also directly inspected `Core_Law/SRT_L1_Formalism.md`, its split mirror, `Core_Law/SRT_Irreversibility.md`, `Core_Law/SRT_Collective_Selection.md`, `Core/SRT_OPEN_TENSIONS.md`, `_SRT_CONTEXT_ROUTER.md`, and current topic/routing surfaces.
+Owner-neighborhood sanity pass also inspected `Core_Law/SRT_L1_Formalism.md`, its split mirror, `Core_Law/SRT_Irreversibility.md`, `Core_Law/SRT_Collective_Selection.md`, `Core/SRT_OPEN_TENSIONS.md`, `_SRT_CONTEXT_ROUTER.md`, and current topic/routing surfaces.
 
 ---
 
-## 3. Search execution and coverage
+## 3. Search execution, numbers, and coverage limit
 
-### 3.1 Tools attempted
+### 3.1 Search families actually issued
 
-- GitHub connector code search (`GitHub.search`)
-- GitHub recursive tree / directory / direct file fetch
-- direct owner-neighborhood reads
+Seven GitHub indexed-search calls covered:
 
-A local `rg / grep / git grep` pass could not be run because this environment has no usable local clone and network git access was unavailable. The execution spec therefore falls back to connector best effort.
+1. `P1-T05`
+2. `Real Choice Moment`
+3. `real choice / live choice / active choice`
+4. `真实选择 / 活选择 / L2 替代选择`
+5. `script + Selection / habit + Selection / automation + Selection / gradient + Selection`
+6. `CG + P1-T05`
+7. `T_dir + real/live choice`
 
-### 3.2 Search families actually issued
-
-The indexed search calls covered:
-
-- `P1-T05`
-- `Real Choice Moment`
-- `real choice / live choice / active choice`
-- `真实选择 / 活选择 / L2 替代选择`
-- `script + Selection / habit + Selection / automation + Selection / gradient + Selection`
-- `CG + P1-T05`
-- `T_dir + real/live choice`
-
-### 3.3 Actual indexed-search result
+### 3.2 Indexed result
 
 - indexed search calls: **7**
 - indexed reported hits: **0**
 - indexed reported files: **0**
 
-This `0` is **invalid as a repository fact**. Direct fetches in the same branch prove that `P1-T05`, `Real Choice Moment`, `real choice`, `活选择`, and related language exist in active files. Therefore the connector index is returning a demonstrable false-zero.
+This `0` is **not accepted as a repository fact**. Direct fetches from the same branch prove that the searched terms occur in active files. The connector index therefore returns a demonstrable false-zero.
 
-Accordingly:
+A local `rg / grep / git grep` fallback was attempted by obtaining a complete worktree, but the execution environment has no usable clone and outbound GitHub DNS/network access is unavailable. Therefore:
 
-- **repo-wide literal hit count: UNVERIFIED — search-index limitation**
-- **repo-wide literal file count: UNVERIFIED — search-index limitation**
-- the previously reported `47 files / 145 references` was **not inherited or reused as fact**.
+- **repo-wide literal hit count: UNVERIFIED — environment / search-index limitation**
+- **repo-wide literal file count: UNVERIFIED — environment / search-index limitation**
+- the earlier `47 files / 145 references` hypothesis was **not inherited as fact**.
 
-### 3.4 Bounded manual semantic ledger
+### 3.3 Bounded semantic ledger
 
-The directly inspected RC-A-relevant ledger contains **14 files** classified at file level:
+Fourteen directly inspected RC-A-relevant files were classified at file level:
 
-| Class | Files | Count |
-|---|---|---:|
-| A — active contradiction / stale active dependency | `SRT_AI_START.md`; `03_Bridges/SRT_Selection_Event_CompactCore.md`; `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`; `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`; `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`; `Core_Law/SRT_L1_Formalism.md`; `Core_Law/L1_Formalism_Split/00_Part01.md`; `Core_Law/SRT_Collective_Selection.md` | **8** |
-| B — historical / supersession provenance to preserve | `Core/SRT_Core_21b_Constitutive_Theorems.md`; `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md` | **2** |
-| C — ambiguous active derivative adjudicated by owner | `_SRT_T_DIR_CANONICAL.md` | **1** |
-| D — current-correct active routing / guard surface; no edit required | `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`; `Core/SRT_OPEN_TENSIONS.md`; `_SRT_CONTEXT_ROUTER.md` | **3** |
-| **Total directly classified** |  | **14** |
+| Class | Count | Disposition |
+|---|---:|---|
+| A — active contradiction / stale active dependency | **8** | five fixed; three unresolved formal/theory surfaces |
+| B — historical / supersession provenance | **2** | retained |
+| C — ambiguous active derivative | **1** | adjudicated by current owner; no rewrite |
+| D — current-correct / irrelevant-to-edit active surface | **3** | retained |
+| **Total directly classified** | **14** | bounded ledger only; not exhaustive repo coverage |
 
-This is a **bounded inspected ledger**, not an assertion of exhaustive repository coverage.
+Class A files: `SRT_AI_START.md`; `03_Bridges/SRT_Selection_Event_CompactCore.md`; `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`; `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`; `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`; `Core_Law/SRT_L1_Formalism.md`; `Core_Law/L1_Formalism_Split/00_Part01.md`; `Core_Law/SRT_Collective_Selection.md`.
+
+Class B: `Core/SRT_Core_21b_Constitutive_Theorems.md`; `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`.
+
+Class C: `_SRT_T_DIR_CANONICAL.md`.
+
+Class D: `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`; `Core/SRT_OPEN_TENSIONS.md`; `_SRT_CONTEXT_ROUTER.md`.
 
 ---
 
-## 4. Class A contradictions safely fixed
+## 4. Active contradictions fixed
 
-Five active files were patched:
+Five active files were patched with jurisdiction-narrowing only:
 
 1. `SRT_AI_START.md`
    - former P1-T05 is no longer presented as current P1 authority;
-   - `Selection != Agency` made explicit;
-   - script / habit / gradient / L2 automation no longer imply `no Selection`;
+   - `Selection != Agency` is explicit;
+   - script / habit / gradient / L2 automation do not imply `no Selection`;
    - P1-T06 / continued selectability / generative reselectability are separated by level.
 
 2. `03_Bridges/SRT_Selection_Event_CompactCore.md`
    - CG/SEA is explicitly P2/P3 bounded audit apparatus;
    - all-five-gates pass licenses only `bounded Selection-event candidate`;
    - audit failure does not imply `no Selection`;
-   - practice-layer pseudo/punitive/respect language is blocked from back-defining P0.
+   - practice-layer pseudo/punitive/respect language cannot back-define P0.
 
 3. `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`
    - former `P1-T05 <-> CG` dependence retired;
@@ -152,121 +146,122 @@ Five active files were patched:
 
 4. `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`
    - SEA-0..4 are operations categories, not Selection subtypes;
-   - audit chain is not `Selection -> trace -> persistent constraint` ontology;
+   - the audit chain is not `Selection -> trace -> persistent constraint` ontology;
    - SEA pass cannot prove agency / subjecthood / consciousness / freedom / moral responsibility;
    - SEA failure / automation cannot prove `no Selection`.
 
 5. `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`
-   - former P1-T05 judgments explicitly reclassified as historical provenance;
-   - gradient case no longer uses `gradient -> no Selection`;
-   - tests now distinguish Selection occurrence, Stable ISP, generative health and agency.
+   - former P1-T05 judgments are explicitly historical provenance;
+   - the gradient case no longer uses `gradient -> no Selection`;
+   - tests distinguish Selection occurrence, Stable ISP, generative health and agency.
 
-No all-repository string replacement was used.
+No repository-wide mechanical string replacement was used.
 
 ---
 
 ## 5. Historical provenance preserved
 
-The following were deliberately **not** keyword-cleaned:
+The following were deliberately not keyword-cleaned:
 
-- former P1-T05 theorem/demotion record in `Core/SRT_Core_21b_Constitutive_Theorems.md`;
+- former P1-T05 theorem/demotion history in `Core/SRT_Core_21b_Constitutive_Theorems.md`;
 - RC-A / A2 / A3 provenance and supersession record in `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`;
-- legacy `活选择 / 真实选择 / L2 替代选择` language inside `_SRT_T_DIR_CANONICAL.md`, because the RC-A demotion audit already supplies an active-use override narrowing those phrases to bearer / agency self-readability / reorientation. They were not mechanically rewritten into Selection ontology.
+- legacy `活选择 / 真实选择 / L2 替代选择` language inside `_SRT_T_DIR_CANONICAL.md`, because current RC-A authority already narrows its active use to bearer / agency self-readability / reorientation rather than Selection definition.
 
 ---
 
-## 6. Unresolved Class A formal / theory dependencies
+## 6. Mathematical / formal dependency impact
 
-### 6.1 `Core_Law/SRT_L1_Formalism.md` + split mirror
+### 6.1 `Core_Law/SRT_L1_Formalism.md` + split mirror — BLOCKER / AUTHOR GATE
 
-The owner explicitly declares:
+The owner explicitly declares `r(t)` as reselection-completion rate sourced from `P1-T05 real choice moment`, then uses `r(t)` in existing `d_c`, `T_dir`, suffering and health dynamics, including the `+ kappa_r r(t)` readability-pump term.
 
-- `r(t)` = reselection-completion rate;
-- source = `P1-T05 real choice moment`;
-- `r(t)` is then used inside existing `d_c`, `T_dir`, suffering and health dynamics, including the `+ kappa_r r(t)` readability-pump term.
+This is not merely stale prose. No already-authorized replacement derivation was found. RC-A narrows T_dir jurisdiction but does not derive a replacement formal owner for `r(t)`. Therefore this PR does not invent a proof, rename the source, or edit the equations.
 
-This is not merely stale prose. It is a source claim for an existing formal quantity used by equations.
+### 6.2 `Core_Law/SRT_Collective_Selection.md` — BLOCKER / AUTHOR GATE
 
-No already-authorized replacement derivation was found. RC-A gives a narrower T_dir bearer/reorientation jurisdiction but does not derive `r(t)` as a new formal owner. Therefore Phase 0 must **not** invent a proof or silently rename the source.
+The file explicitly makes a collective-ISP / common-perspective condition substantially depend on a multi-subject version of former P1-T05 and contrasts it with consensus-script / institutional automation. The affected material is a P1-candidate structural condition; no unambiguous existing replacement owner was found.
 
-Disposition: **BLOCKER / AUTHOR GATE**. Owner and split mirror left unchanged.
+### 6.3 Formal status
 
-### 6.2 `Core_Law/SRT_Collective_Selection.md`
+- **formal claims inspected / affected**;
+- **no equation edited**;
+- **no new symbol introduced**;
+- `r(t)` explanatory/source dependency remains unresolved;
+- collective P1-candidate dependency remains unresolved.
 
-The file explicitly states that a collective-ISP condition / common perspective substantially depends on a multi-subject version of P1-T05 real choice moment and contrasts this with consensus-script / institutional automation.
-
-Because former P1-T05 has lost Selection-level anti-script jurisdiction, this dependency is stale. But the affected material is a P1-candidate structural condition; repairing it requires either an existing legal derivation, an explicit demotion/quarantine, or an author decision. No unambiguous existing replacement owner was found in this pass.
-
-Disposition: **BLOCKER / AUTHOR GATE**. No new collective theorem or replacement criterion introduced.
-
-### 6.3 Formal claims inspected / impact
-
-- existing equations were inspected where the former P1-T05 dependency is explicit;
-- **no equation was edited** in this PR;
-- **no new symbol was introduced**;
-- the formal debt is **not unaffected**: the explanatory/source dependency of `r(t)` is genuinely impacted by RC-A and remains unresolved;
-- collective P1-candidate dependency is also genuinely impacted and remains unresolved.
-
----
-
-## 7. Formal hierarchy sanity pass
-
-Current authority after the safe patches preserves:
+Formal hierarchy sanity pass still preserves:
 
 ```text
-T_dir
-!-> Selection definition
-
-CG / SEA
-!-> agency requirement for Selection
-
-Agency
-!-> prerequisite for Selection
-
-Stable ISP
-!-> prerequisite for one-shot Selection occurrence
-
-generative reselectability
-!-> prerequisite for Selection
+T_dir !-> Selection definition
+CG / SEA !-> agency requirement for Selection
+Agency !-> prerequisite for Selection
+Stable ISP !-> prerequisite for one-shot Selection occurrence
+generative reselectability !-> prerequisite for Selection
 ```
-
-No new formalization workline was opened from downstream proxies/equations discovered during this pass.
 
 ---
 
-## 8. Bounded retrieval regression
+## 7. Bounded retrieval regression
 
 Protocol authority: `Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`.
 
-The requested six probes were reviewed against current authority, but this environment cannot create the protocol-required **independent fresh bounded sessions**. Therefore none of the six probes may be reported as an execution PASS.
+The six required probes were checked against authority, but this execution environment cannot instantiate the protocol-required **independent fresh bounded sessions**. Therefore no probe is reported as PASS.
 
-| Probe | Authority answer expected | Execution status | Attribution |
-|---|---|---|---|
-| Q1 · Is Real Choice Moment still P1? | No; former P1-T05 was withdrawn from P1 by RC-A. | **UNTESTED** | environment limitation |
-| Q2 · Do script/habit/gradient/L2 automation imply no Selection? | No. | **UNTESTED** | environment limitation |
-| Q3 · What adjacent P1 remains? | P1-T06 Stable ISP; continued selectability is its condition. | **UNTESTED** | environment limitation |
-| Q4 · Is generative reselectability necessary for Selection/all Stable ISP? | No; P2/P3 generative-health territory. | **UNTESTED** | environment limitation |
-| Q5 · Does CG/SEA pass prove agency? | No; bounded Selection-event candidate only. | **UNTESTED** | environment limitation |
-| Q6 · T_dir after RC-A? | Narrow bearer / agency self-readability / reorientation interface; not Selection ontology. | **UNTESTED** | environment limitation |
+| Probe | Required authority answer | Execution status |
+|---|---|---|
+| Q1 | former P1-T05 is no longer P1 | **UNTESTED — environment limitation** |
+| Q2 | script / habit / gradient / L2 automation do not imply no Selection | **UNTESTED — environment limitation** |
+| Q3 | P1-T06 Stable ISP remains; continued selectability is its condition | **UNTESTED — environment limitation** |
+| Q4 | generative reselectability is P2/P3 generative-health territory, not Selection/all-Stable-ISP necessity | **UNTESTED — environment limitation** |
+| Q5 | CG/SEA pass gives bounded Selection-event candidate only; not agency | **UNTESTED — environment limitation** |
+| Q6 | T_dir is narrower bearer / agency self-readability / reorientation interface; not Selection ontology | **UNTESTED — environment limitation** |
 
-Because the Phase 0 execution spec makes bounded retrieval regression part of the exit gate, this limitation **blocks Phase 0 CLOSED**.
-
----
-
-## 9. Governance / CI
-
-At closure-record creation time the Draft PR has just been opened. Full PR-triggered governance status must be read from the final PR head after this closure commit.
-
-Required interpretation remains:
-
-- attribute any failure as `pr_local`, `base_main`, or `environment / known baseline`;
-- do not repair unrelated base-main debt solely to force green CI.
-
-The final execution report must use the actual PR-head workflow/check result, not this pre-run placeholder.
+Because bounded retrieval regression is an explicit Phase 0 exit gate, this blocks `Phase 0 CLOSED`.
 
 ---
 
-## 10. Change-set declarations
+## 8. Governance / CI
+
+Governance Preflight was run by GitHub Actions on PR #830 at closure head `744eed3e75f20e2acf1041282a90364c3ddb3608` (run `32045621554`).
+
+### 8.1 Passing gates
+
+- base-main governance health: **PASS**
+- PR-local frontmatter: **PASS** (`errors=0`, `warnings=0`)
+- baseline monotonicity: **PASS** (`added=0`, `retired=0`)
+- split metadata freshness: **PASS**
+- registry consistency: **PASS**
+- material-log consistency: **PASS**
+- integration hooks: **PASS** (`checked=58`, `errors=0`)
+- context-bundle builder tests: **PASS**
+- active-theory assimilation checks: **PASS**
+- forbidden local noise: **PASS**
+
+### 8.2 Failing gate
+
+Full merged-repository governance preflight: **FAIL** because **context bundle freshness** failed:
+
+```text
+stored inputs_digest: 6906e8853d7329ab
+current inputs_digest: b3d1bd1b8704507f
+```
+
+The repository generator explicitly requires regeneration of `Operations/Context_Bundles/` after relevant source/guard changes. Those files are generated artifacts and must not be hand-edited.
+
+The workflow attribution is:
+
+- `failure_scope: merged_repository_or_infrastructure`
+- `merge_disposition: do_not_merge`
+- `base_main_health: success`
+- `pr_local_frontmatter: success`
+- `baseline_monotonicity: success`
+- `merged_repository_preflight: failure`
+
+This is **not base-main debt**. In this connector-only execution environment the repository worktree cannot be materialized because outbound GitHub DNS/network access is unavailable, so the generator cannot be safely run here. No generated context bundle was hand-patched merely to force green CI.
+
+---
+
+## 9. Change-set declarations
 
 This Phase 0 patch introduces:
 
@@ -283,17 +278,17 @@ It does not reopen EX-A / ST-A / RC-A / PD-A / PC-A / AM-A / B-A / C-A / PHR-A, 
 
 ---
 
-## 11. Exit gate
+## 10. Exit gate
 
 ### Phase 0 NOT CLOSED
 
 Blockers:
 
 1. `Core_Law/SRT_L1_Formalism.md` / split mirror: `r(t)` formal source still depends on former P1-T05; author gate required.
-2. `Core_Law/SRT_Collective_Selection.md`: collective-ISP P1-candidate condition still directly depends on former P1-T05; author gate required.
-3. repo-wide inventory cannot be certified because connector code search returns demonstrable false-zero and no local `rg/git grep` baseline is available.
-4. bounded retrieval Q1-Q6 are `UNTESTED — environment limitation` because independent fresh sessions cannot be instantiated here.
-5. PR-head governance / CI must still be observed after the closure commit.
+2. `Core_Law/SRT_Collective_Selection.md`: collective-ISP P1-candidate condition still depends on former P1-T05; author gate required.
+3. repo-wide inventory cannot be certified because connector code search returns demonstrable false-zero and a local `rg/git grep` baseline cannot be materialized.
+4. bounded retrieval Q1-Q6 are `UNTESTED — environment limitation` because independent fresh bounded sessions cannot be instantiated here.
+5. governance remains red on context-bundle freshness; regeneration is required but cannot be safely executed in the current connector-only environment.
 
 **Relation-level GOV-SUB01 preconditions are NOT satisfied.**
 
