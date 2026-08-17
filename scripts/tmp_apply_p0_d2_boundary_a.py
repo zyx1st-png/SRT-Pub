@@ -1,0 +1,141 @@
+from pathlib import Path
+import re
+
+# 1) Governance owner: P0 admission and empirical discrimination are different burdens.
+ladder = Path('Governance/SRT_CLAIM_LADDER.md')
+text = ladder.read_text(encoding='utf-8')
+marker = '''| P5 | Phenomenological / companion exposition | A lived, pedagogical, literary, praxis, or companion explanation. It may be valuable but does not bear core-theory proof load. | "as exposition..."; "phenomenologically..."; "companion reading..."; "helps describe..." |
+
+---
+
+## 2. Relation to File Roles'''
+replacement = '''| P5 | Phenomenological / companion exposition | A lived, pedagogical, literary, praxis, or companion explanation. It may be valuable but does not bear core-theory proof load. | "as exposition..."; "phenomenologically..."; "companion reading..."; "helps describe..." |
+
+### 1A. P0 / Empirical Discrimination Boundary — Author Decision A (2026-08-17)
+
+A `P0` primitive is an explicit constitutive starting commitment of SRT. **Direct D2/D3 rival discrimination is not an admission condition for P0.** Requiring a primitive axiom to depend on an empirical threshold or external rival would contradict the P0 definition above.
+
+This separation has four consequences:
+
+1. **P0 is not empirical proof.** `SRT assumes X as primitive` must never be rewritten as `experiments prove X is ontologically primitive`.
+2. **Scientific distinctiveness must be paid downstream.** Any claim that SRT is empirically or scientifically discriminative must be carried by a P3/P4 bridge or lab hypothesis that freezes a bounded rival and produces prospective `D2` (`O_SRT != O_R`) or `D3` preregistered empirical discrimination.
+3. **A downstream D2 does not directly prove the primitive ontology.** It supports the empirical fruitfulness of the SRT architecture and the specific derivation that generated the forecast; it does not convert P0 into an experimentally observed object.
+4. **Persistent empirical underdetermination limits scientific claims, not automatically P0 membership.** If mature P3/P4 bridges repeatedly fail to produce D2, SRT must say that its Selection-first ontology remains empirically underdetermined relative to the tested rivals. P0 may still be reassessed for redundancy, incoherence, lack of derivational fruitfulness, or by a later author architecture decision, but `D2 = 0` alone is not a mechanical demotion rule.
+
+Therefore the correct research sequence is:
+
+```text
+P0 primitive commitment
+-> P1 internal consequences
+-> P2/P3 operational or domain structure
+-> P4 measurable prediction
+-> D2/D3 rival discrimination
+```
+
+Do not reverse this arrow by using a downstream proxy as the definition or proof of the P0 primitive.
+
+---
+
+## 2. Relation to File Roles'''
+if marker not in text:
+    raise SystemExit('claim-ladder insertion marker not found')
+ladder.write_text(text.replace(marker, replacement, 1), encoding='utf-8')
+
+# 2) P0 owner: register the same boundary directly under P0-01.
+core = Path('Core/SRT_Core_21_Minimal_Axioms.md')
+ctext = core.read_text(encoding='utf-8')
+old = '''**Boundary**: This axiom does not by itself specify the domain mechanism, empirical substrate, stable selector, or consciousness condition of any particular realization. Gradients, asymmetries, `\\Psi_f`, payability, normalization, closure, and writeback may constrain or implement a realization at lower claim levels; none is thereby the universal cause of the P0 kernel.
+
+---
+
+## P0-02: Manifest Actuality / Anchoring Persistence Boundary'''
+new = '''**Boundary**: This axiom does not by itself specify the domain mechanism, empirical substrate, stable selector, or consciousness condition of any particular realization. Gradients, asymmetries, `\\Psi_f`, payability, normalization, closure, and writeback may constrain or implement a realization at lower claim levels; none is thereby the universal cause of the P0 kernel.
+
+### P0-01 / D2 Boundary — Author Decision A (2026-08-17)
+
+P0-01 is retained as SRT's explicit Selection-first metaphysical primitive. **It is not required to generate a domain-level D2 contrast by itself as a condition of remaining P0.** This is a claim-level boundary, not an exemption from scientific discipline.
+
+- Correct: `Within SRT, Selection is primitive.`
+- Incorrect: `Empirical data have proved Selection is ontologically primitive.`
+- Correct: a downstream P3/P4 derivation may support SRT scientifically if it prospectively disagrees with a frozen bounded rival and survives D2/D3 testing.
+- Incorrect: a successful downstream proxy or prediction directly proves the P0 ontology.
+
+If mature downstream work remains empirically equivalent to bounded rivals, the required conclusion is that **SRT's Selection-first ontology lacks established empirical distinctiveness in those tested regimes**. That result constrains scientific superiority claims and may motivate a future redundancy / fruitfulness / architecture review; it does not by itself falsify or mechanically demote P0-01.
+
+The corresponding governance rule is `Governance/SRT_CLAIM_LADDER.md §1A`.
+
+---
+
+## P0-02: Manifest Actuality / Anchoring Persistence Boundary'''
+if old not in ctext:
+    raise SystemExit('P0-01 boundary marker not found')
+core.write_text(ctext.replace(old, new, 1), encoding='utf-8')
+
+# 3) Open tension: stop treating direct P0 D2 as the unresolved task.
+tensions = Path('Core/SRT_OPEN_TENSIONS.md')
+ttext = tensions.read_text(encoding='utf-8')
+sec13 = r'''## 13. Selection Primitive Fruitfulness / Derivational Indispensability (open; author decision A 2026-08-17)
+
+### Author Decision A
+
+P0-01 remains SRT's explicit Selection-first primitive commitment. Direct `D2 / D3` rival discrimination is **not** an admission condition for P0. The P0 burden and the empirical-scientific burden are now separated:
+
+- **P0 architecture** asks whether Selection is a necessary, coherent, non-redundant primitive for SRT's own grammar and whether it yields non-trivial downstream structure.
+- **P3/P4 science** asks whether a concrete bridge or lab hypothesis derived within that architecture produces a prospective observation or intervention difference against a frozen bounded rival.
+
+Therefore `D2 = 0` does not mechanically demote P0-01. Symmetrically, P0 status does not count as evidence that Selection is empirically irreducible or experimentally established.
+
+### Current State
+
+- `Core/SRT_Core_21_Minimal_Axioms.md P0-01` and AM-A retain the primitive actualisation kernel with Selection.
+- `Governance/SRT_CLAIM_LADDER.md §1A` now fixes the P0 / empirical-discrimination boundary.
+- GOV-SUB01 Pass 1 found literal `K=0` dependence but substantial limited-/broad-K reconstructability; its formal residue remains **UNASSIGNED**.
+- Pass 1.5 and RC-A removed former `Real Choice Moment` as a primitive-Selection discriminator.
+- A2 found `NO-D2` against the tested ordinary causal-history rival, and later audit restricted fair empirical comparison to frozen bounded rivals (`R2`), not unrestricted representational containers (`R∞`).
+- Core 24 is now a prediction-candidate / falsification-target surface with established D2 count `0`; `P24-1 / P24-3 / P24-4` are currently absorbable by bounded adaptive rivals under their tested formulations.
+
+These results constrain SRT's **current empirical distinctiveness**. They do not by themselves adjudicate whether the P0 primitive is a useful or redundant metaphysical starting point.
+
+### Problem Point
+
+The live question is now:
+
+> Starting from Selection-first rather than object-first ontology, does SRT derive any non-trivial middle-level structure that is not merely a restatement of the primitive, and can at least one mature downstream bridge turn that structure into a genuine D2/D3 scientific disagreement?
+
+This has two distinct tests that must not be collapsed:
+
+1. **Derivational fruitfulness / indispensability**: deleting or replacing Selection should reveal what internal structure, compression, dependency, or explanatory organization is actually lost, after reasonable refit and without hidden reparameterization.
+2. **Empirical discrimination**: a specific P3/P4 workline must freeze a bounded rival and forecast `O_SRT != O_R2` before observing the result.
+
+Passing test 1 is not D2. Passing test 2 does not experimentally prove the P0 ontology. Together they would show that the primitive is both theoretically productive and scientifically fruitful.
+
+### GOV-SUB01 Role After Decision A
+
+The subtractive audit remains useful, but its role changes. It is no longer a direct empirical admission gate for P0-01. It now asks whether the primitive is:
+
+- merely terminological (`R0/R1`-like reconstruction),
+- replaceable only by a hidden copy of the same role,
+- genuinely load-bearing for a derivation,
+- or currently underdetermined.
+
+The formal GOV-SUB01 residue remains **UNASSIGNED** until its own protocol supports a label. Any future residue assignment is an additional irreducibility characterization, not a prerequisite for P0 membership.
+
+### Future Hardening Direction
+
+1. **Derive before testing.** Select one middle-level consequence that follows from P0/P1 without importing the desired empirical result into its definition.
+2. **Run a deletion / replacement check.** Determine whether the consequence survives when Selection is removed under `K=0`, limited-K, and a bounded reasonable refit; explicitly check hidden reparameterization.
+3. **Only then open a P3/P4 workline.** Operationalize the surviving consequence without identifying the proxy with the ontology.
+4. **Freeze a bounded rival and outcome.** Require prospective `O_SRT != O_R2`; D0 vocabulary and D1 classification differences do not count as scientific discrimination.
+5. **Report nulls correctly.** If the rival predicts the same outcome family, record `NO-GO / empirically underdetermined for this workline`, not `P0 falsified` and not `SRT confirmed`.
+6. **Escalate only on repeated mature failure.** If multiple independently motivated, mature downstream derivations remain rival-equivalent, reopen a redundancy / fruitfulness review of P0-01 rather than silently insulating it from revision.
+
+The research priority is therefore no longer “design an experiment that directly proves Selection primitive.” It is:
+
+> **derive a non-circular middle-level consequence from Selection-first, then ask whether that consequence can earn D2 downstream.**
+'''
+tnew, n = re.subn(
+    r'## 13\. Selection Irreducibility / Competitor-Vocabulary Deletion Test.*?(?=\n---\n\n## 14\.)',
+    sec13.rstrip(), ttext, count=1, flags=re.S)
+if n != 1:
+    raise SystemExit(f'expected one §13 replacement, got {n}')
+tensions.write_text(tnew, encoding='utf-8')
