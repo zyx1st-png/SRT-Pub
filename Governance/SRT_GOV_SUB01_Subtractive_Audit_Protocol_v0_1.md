@@ -3,7 +3,7 @@ id: SRT-GOV-SUB01-SUBTRACTIVE-AUDIT
 type: governance_protocol
 status: protocol_v0_1
 layer: meta
-epistemic_layer: os
+epistem_layer: os
 claim_mode: governance
 claim_level: P3/P4_governance
 canonical: false
@@ -13,6 +13,7 @@ dependency:
   - SRT-CLAIM-LADDER
   - SRT-EDIT-PROTOCOL
   - SRT-CORE-21-MINIMAL-AXIOMS
+  - SRT-GOV-SYN01-ONTOLOGICAL-SYNTHESIS-DISCRIMINATION
 tags: [Governance, SubtractiveAudit, Minimality, VariableAudit, ClaimDiscipline, Falsification, Redundancy]
 ---
 
@@ -46,6 +47,43 @@ survives removal testing
 
 This file governs theory editing and model comparison. It does not define SRT ontology and does not authorize empirical deletion of safety, clinical, legal, or rights protections.
 
+### 0.1 Dual-track scope correction
+
+Subtractive audit is primarily a test of **target-relative indispensability / discriminating work**. It is **not a universal theory-value score**.
+
+Under `GOV-SYN01`, a bridge can have:
+
+```text
+D-track empirical increment: none / replaceable
+AND
+O-track ontological synthesis: still useful
+```
+
+Therefore:
+
+```text
+R2 / R3 under a D-track target
+!= automatic deletion of an O-track synthesis
+```
+
+Example:
+
+```text
+"repair has costs" may be replaceable by Disposable Soma / Misrepair
+for empirical novelty,
+while those established mechanisms can still serve as reliable structural material
+inside an SRT account of maintenance, bearer consequence and historical writeback.
+```
+
+The reverse guard also holds:
+
+```text
+strong ontological synthesis
+!= immunity from subtraction
+```
+
+If SRT later claims irreducibility, superiority, a new symbol, a unique prediction or intervention role, the D-track claim must still pass this protocol.
+
 ---
 
 ## 1. When the protocol must be used
@@ -62,6 +100,8 @@ Run a subtractive audit before:
 8. declaring a model simpler after only renaming or redistributing its assumptions.
 
 A lightweight audit is sufficient for prose-level edits. A full audit is required for P0/P1, equations, experiments, canonical definitions and cross-domain identity claims.
+
+Pure O-track integration does not require manufacturing a D-track novelty target merely to justify the bridge. But any claim that the O-track structure is itself necessary, irreducible or empirically superior reactivates the full audit.
 
 ---
 
@@ -99,6 +139,16 @@ time horizon
 ```
 
 An audit without an explicit `Y` and `C` is invalid.
+
+For material-fusion work, state whether `Y` is:
+
+```text
+D-track discrimination / irreducibility
+or
+O-track structural synthesis / distinction preservation
+```
+
+Do not silently switch between those targets during the audit.
 
 ---
 
@@ -143,6 +193,16 @@ where applicable:
 - `E_orient`: whether the model changes actionable orientation rather than only preserving procedure.
 
 A component may be dispensable for prediction and indispensable for intervention, explanation, phenomenology or normative attribution.
+
+For O-track audits, also ask whether deletion destroys:
+
+- cross-domain structural compression;
+- level / bearer / boundary distinctions;
+- recoverability of source-theory roles;
+- a non-trivial compatibility / tension map;
+- constraint backflow from external knowledge into SRT.
+
+These are synthesis properties, not substitutes for empirical evidence.
 
 ---
 
@@ -191,6 +251,7 @@ preserve matched-endpoint path dependence prediction
 preserve bearer-specific consequence-return classification
 preserve directional self-readability distinction
 preserve object re-identification after perturbation
+preserve a cross-domain mechanism-to-ontology map without collapsing source distinctions
 ```
 
 ### Step 2 — Candidate inventory
@@ -230,6 +291,8 @@ x removable, role preserved by x'
 no substitute preserves role
 -> role-level indispensability candidate
 ```
+
+For O-track work, a successful external-theory replacement can remove an SRT-specific empirical claim while leaving the external mechanism usable as synthesis material. Record these as separate outcomes.
 
 ### Step 5 — Joint removal
 
@@ -281,13 +344,25 @@ Use only the following labels:
 
 Do not use `fundamental`, `ultimate`, `real` or `necessary simpliciter` as audit outputs.
 
-### Step 8 — Claim-ladder routing
+### Step 8 — Claim-ladder and synthesis routing
 
-- `R0-R3`: delete, demote or rename.
-- `R4`: keep provisional and design stronger tests.
-- `N1`: may remain at its current claim level.
-- `N2`: may justify stronger attention, not automatic promotion.
+For the **declared audit target**:
+
+- `R0-R3`: delete, demote or rename the target-relative necessity / novelty claim;
+- `R4`: keep provisional and design stronger tests;
+- `N1`: may remain at its current claim level;
+- `N2`: may justify stronger attention, not automatic promotion;
 - `P`: must be marked as primitive admission and remain open to future subtraction.
+
+Then apply the dual-track routing:
+
+```text
+if D-track claim -> R2/R3
+but O-track synthesis remains non-trivial and source-faithful
+-> retain / rewrite as synthesis under GOV-SYN01
+```
+
+Do not preserve a failed D-track claim by merely renaming it “ontology.” The O-track value must independently satisfy synthesis criteria.
 
 Promotion still follows `Governance/SRT_CLAIM_LADDER.md`.
 
@@ -337,6 +412,15 @@ Do not count a variable as removed when its function was merely moved into:
 
 Do not redefine success after deletion.
 
+A frequent material-fusion version is:
+
+```text
+D-track novelty failed
+-> silently redefine the same claim as O-track synthesis
+```
+
+This is prohibited. Synthesis value must be separately demonstrated.
+
 ### 7.6 Scale collapse
 
 A component dispensable at one scale may be necessary for cross-scale translation.
@@ -372,7 +456,9 @@ Remove the word and primitive role of `selection`, retaining only:
 
 Required question:
 
-> What explanatory, counterfactual or experimental difference remains that is lost without selection language?
+> What explanatory, counterfactual, experimental **or cross-domain organizing** difference remains that is lost without selection language?
+
+A positive O-track organizing role does not by itself establish selection as an empirically irreducible primitive.
 
 ### 8.2 L0 / L1 / L2
 
@@ -397,7 +483,7 @@ Required loss:
 - payability;
 - failure-window distinction.
 
-If those survive unchanged, `d` may be only a relabeling.
+If those survive unchanged, `d` may be only a relabeling for the declared target.
 
 ### 8.4 `Psi_f`
 
@@ -406,6 +492,8 @@ Remove `Psi_f` while retaining optimization loss, Fisher geometry, energetic cos
 Required question:
 
 > Does `Psi_f` identify a cross-domain payability / transition-friction role not exhausted by any one proxy?
+
+If domain-specific proxies explain each local mechanism, SRT may still use those mature results in O-track synthesis; this does not establish `Psi_f` as independently measured.
 
 ### 8.5 `T_dir`
 
@@ -449,6 +537,7 @@ The audit does not decide the naming by itself.
 - Date:
 - Auditor:
 - Target Y:
+- Contribution track being tested: O / D / O+D
 - Context C:
   - bearer:
   - scale/grain:
@@ -476,8 +565,11 @@ The audit does not decide the naming by itself.
 #### Classification
 - R0 / R1 / R2 / R3 / R4 / N1 / N2 / P
 
-#### Claim-ladder consequence
+#### D-track consequence
 - delete / demote / retain / redesign test / primitive admission
+
+#### O-track consequence under GOV-SYN01
+- no synthesis value / analogy-only / retain as source-faithful synthesis / redesign synthesis
 
 #### Surviving uncertainty
 -
@@ -516,6 +608,7 @@ A subtractive audit stops when:
 2. remaining components are classified, not sanctified;
 3. unresolved interactions are logged;
 4. no further safe deletion can be tested without changing the target or imposing unacceptable harm;
-5. residue is returned to the claim ladder as `N1`, `N2` or `P`, never as automatic P0 truth.
+5. D-track residue is returned to the claim ladder as `N1`, `N2` or `P`, never as automatic P0 truth;
+6. any remaining O-track synthesis value is separately routed through `GOV-SYN01`, without restoring a failed uniqueness claim.
 
 The audit should be rerun when the target, scale, data, experiment, competing model or canonical architecture changes.
