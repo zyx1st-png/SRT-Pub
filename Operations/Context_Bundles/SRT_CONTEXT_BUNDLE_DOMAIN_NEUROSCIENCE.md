@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-08-16
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-08-17
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-16
-source_commit: 7cb0fab2
-source_branch: agent/srt-convergence-hpb-governance
+generated: 2026-08-17
+source_commit: b2a36cde
+source_branch: agent/srt-demote-p1-t05-agency-guard
 source_dirty: false
-inputs_digest: 02bffde8a6616bdd
+inputs_digest: 78138a3218b364ad
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 02bffde8a6616bdd
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-16 |
-| 来源 commit | `7cb0fab2` |
-| 来源分支 | `agent/srt-convergence-hpb-governance` |
+| 生成日期 | 2026-08-17 |
+| 来源 commit | `b2a36cde` |
+| 来源分支 | `agent/srt-demote-p1-t05-agency-guard` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 5 |
 

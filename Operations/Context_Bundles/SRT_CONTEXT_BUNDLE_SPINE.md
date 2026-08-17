@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-16
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-17
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-16
-source_commit: 7cb0fab2
-source_branch: agent/srt-convergence-hpb-governance
+generated: 2026-08-17
+source_commit: b2a36cde
+source_branch: agent/srt-demote-p1-t05-agency-guard
 source_dirty: false
-inputs_digest: 02bffde8a6616bdd
+inputs_digest: 78138a3218b364ad
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 02bffde8a6616bdd
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-16 |
-| 来源 commit | `7cb0fab2` |
-| 来源分支 | `agent/srt-convergence-hpb-governance` |
+| 生成日期 | 2026-08-17 |
+| 来源 commit | `b2a36cde` |
+| 来源分支 | `agent/srt-demote-p1-t05-agency-guard` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -50,7 +50,7 @@ inputs_digest: 02bffde8a6616bdd
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-12 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-12 |
-| 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-08-12 |
+| 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-08-17 |
 | 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
 | 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-12 |
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
@@ -2333,15 +2333,15 @@ This demotion changes epistemic rank, not the intended theoretical meaning of th
 | path | `Core/SRT_Core_21b_Constitutive_Theorems.md` |
 | id | SRT-CORE-21B-CONSTITUTIVE-THEOREMS |
 | claim_mode | canonical |
-| status | active_v1 |
+| status | active |
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-17 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
-**dependency**：[SRT-CORE-21A-MINIMAL-AXIOMS, SRT-CLAIM-LADDER, SRT-CORE-12B, SRT-T-DIR-CANONICAL]
+**dependency**：[SRT-CORE-21A-MINIMAL-AXIOMS, SRT-CLAIM-LADDER, SRT-CORE-12B]
 
 <!-- 以下为原文逐字保留 -->
 
@@ -2349,6 +2349,8 @@ This demotion changes epistemic rank, not the intended theoretical meaning of th
 
 > **Role**: This file contains P1 claims: not primitive axioms, but constitutive consequences of the SRT core structure.
 > P1 claims may be cited as canonical SRT theorems, but not as primitive axioms.
+>
+> **RC-A author decision (2026-08-17)**: former `P1-T05: Real Choice Moment` is demoted out of P1. Its anti-script insight is retained only as a downstream P2/P3 agency / subjecthood guard. It must not be used as a criterion for whether `Selection` occurs. SRT's primary theoretical object remains `Selection`, not a new taxonomy of `Choice`.
 
 ## Quick Reference
 
@@ -2428,17 +2430,56 @@ $$
 
 ---
 
-## P1-T05: Real Choice Moment
+## Former P1-T05: Real Choice Moment (Demoted by RC-A, 2026-08-17)
 
 **Lineage**: distilled from `SRT_AI_START.md §3.2-§3.3` and `_SRT_T_DIR_CANONICAL.md`.
 
-**Statement**: A real choice moment is a live `L_0 -> L_1` anchoring event in which the system's future selection space is genuinely constrained by what is selected. Script execution, habit replay, gradient following, or `L_2` label optimization do not by themselves constitute a real choice moment.
+**Former statement**: A real choice moment was described as a live `L_0 -> L_1` anchoring event in which the system's future selection space is genuinely constrained by what is selected, with script execution, habit replay, gradient following, or `L_2` label optimization treated as insufficient by themselves.
 
-**Implication**: SRT's account of freedom, agency, education, therapy, praxis, and domain ethics ultimately depends on whether real choice moments are preserved rather than replaced by `L_2` automation.
+**RC-A author decision**: this claim is **no longer a P1 constitutive theorem**.
 
-**Boundary**: The phenomenological and normative exposition of freedom belongs outside P1. This theorem only fixes the structural distinction.
+### Why it was demoted
 
-**Cross-ref**: `_SRT_T_DIR_CANONICAL.md`; `Core/SRT_OPEN_TENSIONS.md`.
+1. SRT's primary theoretical object is `Selection`, not `Choice`.
+2. Canonical L0 already distinguishes basic, unfolding, and subject-level selection. Scripted, habitual, gradient-driven, or `L_2`-scaffolded dynamics therefore cannot be inferred to be selection-free merely because they fail an agency-level criterion.
+3. Mature `L_2` is a background scaffold produced by prior selective convergence and remains dynamically operative. Automation can carry / reproduce selection history and can coexist with ongoing selection at other scales or dimensions.
+4. A2/A3 adversarial work did not produce a positive, non-circular, rival-discriminating observable that would justify treating the former anti-script boundary as a constitutive theorem of Selection.
+5. Treating the anti-script clause as a Selection criterion generated the unnecessary `Live Choice` problem and conflated selection ontology with downstream agency / subjecthood questions.
+
+### What survives
+
+A narrower negative guard remains useful at P2/P3:
+
+> **Script execution, habit replay, gradient following, or `L_2` automation are not by themselves sufficient to establish stronger agency / subject-level revision standing.**
+
+This guard lives downstream in:
+
+`03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`.
+
+### Hard inference guards
+
+Do **not** infer:
+
+```text
+fails former P1-T05
+-> no Selection occurred
+```
+
+Do **not** infer:
+
+```text
+script / habit / gradient / L2 automation
+-> selection-free process
+```
+
+Do **not** infer:
+
+```text
+passes the downstream agency guard
+-> subjecthood / consciousness / freedom / moral responsibility proved
+```
+
+No P1 `Real Choice Moment` theorem remains after RC-A.
 
 ---
 
@@ -2450,10 +2491,12 @@ $$
 
 **Stable ISP Definition**: Process `P` is a stable ISP if:
 
-1. It is iterative: over the declared interval, it repeatedly encounters live, non-equivalent candidates rather than merely replaying a closed script.
+1. It is iterative: over the declared interval, it repeatedly encounters **currently effective, non-equivalent candidates** rather than merely replaying a closed script.
 2. It is perspective-bearing: it accumulates a structured view from its position.
 3. It is history-bearing: outputs at `t` constrain `A_{t+1}` with writeback.
-4. It is **continued-selectable**: the same history-bearing process can continue receiving live candidates and bearing the downstream consequences of what it selected.
+4. It is **continued-selectable**: the same history-bearing process can continue receiving currently effective candidates and bearing the downstream consequences of what it selected.
+
+**Terminology guard (RC-A)**: `currently effective` is descriptive scope language, not a new `Live Choice` / `live selection` concept. P1-T06 concerns stable ISP standing, not the definition of Selection itself.
 
 **Structural stabilisation (ST-A, 2026-08-11)**: Stability here means recurrent reconstitution of a recognizable history-bearing organization across a declared perturbation range. It does not require microstate identity, convergence to a fixed point, or continuous activity without pause. A later externally reset replica or a fresh process is not, merely by resembling the earlier state, evidence that the same ISP continued.
 
@@ -2489,6 +2532,7 @@ The following former `Core_21` claims remain valuable but are not treated here a
 
 | Claim | Reason for demotion |
 |---|---|
+| Former `P1-T05 / Real Choice Moment` | RC-A: anti-script exclusion is an agency/subjecthood bridge guard, not a constitutive theorem or Selection criterion |
 | Fitness beats truth | Requires cross-theory mapping and empirical interpretation |
 | Assembly threshold | Depends on empirical thresholding |
 | Holographic duality | Strong physical / formal bridge |
