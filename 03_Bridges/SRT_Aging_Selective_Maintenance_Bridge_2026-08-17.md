@@ -1,7 +1,8 @@
 ---
 id: SRT-AGING-SELECTIVE-MAINTENANCE-BRIDGE-2026-08-17
 type: bridge
-status: active_v0_1
+status: active
+version: v0_1
 layer: L1
 epistemic_layer: bridge
 claim_mode: bridge
