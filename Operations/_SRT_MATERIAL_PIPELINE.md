@@ -6,13 +6,14 @@ status: active_v2
 layer: meta
 epistemic_layer: os
 claim_mode: canonical
-dependency: [SRT-OPERATIONS-README, SRT-MATERIAL-LOG, SRT-MATERIAL-ADJUDICATION-WORKFLOW]
+dependency: [SRT-OPERATIONS-README, SRT-MATERIAL-LOG, SRT-MATERIAL-ADJUDICATION-WORKFLOW, SRT-GOV-SYN01-ONTOLOGICAL-SYNTHESIS-DISCRIMINATION]
 ---
 
 # SRT 材料融合流水线（Pipeline 1 / v2 结构化写入版）
 
 > **定位**：Pipeline 1 是外部材料进入 SRT 仓库的权威主流程。  
 > **核心原则**：不另起平行流程；`SourceCard / PatchNote / Registry / IntegrationHook` 都是 Pipeline 1 的结构化产物。  
+> **贡献纪律**：材料价值按 `GOV-SYN01` 分成 **O-track 本体论整合** 与 **D-track 经验/判别增量**。没有独有经验增量不自动等于低价值；已有成熟理论建立的内容可以作为 SRT 本体论构造材料，但来源证据不能被偷换成“证明 SRT”。  
 > **正式状态台账**：所有通过 Pipeline 1 处理的材料，最终状态仍以 `Operations/_SRT_MATERIAL_LOG.md` 为准。
 
 ---
@@ -20,10 +21,18 @@ dependency: [SRT-OPERATIONS-README, SRT-MATERIAL-LOG, SRT-MATERIAL-ADJUDICATION-
 ## 0. 一句话原则
 
 ```text
-材料先归档，证据先裁决，补丁再解释，正文最后合并。
+材料先归档，证据先裁决，贡献分双轨，补丁再解释，正文最后合并。
 ```
 
-Pipeline 1 不负责把所有新材料立刻升格为 SRT 结论。它负责判断材料是否进入仓库、以什么等级进入、落在哪里、如何被人和机器检索、以及未来是否合并进正文。
+Pipeline 1 不负责把所有新材料立刻升格为 SRT 结论，也不负责为每条材料制造 SRT 独有增量。它负责判断材料是否进入仓库、以什么等级进入、它对 SRT 的价值属于本体论整合还是经验判别、落在哪里、如何被人和机器检索、以及未来是否合并进正文。
+
+必须保持：
+
+```text
+source evidence supports source claim
+source claim may instantiate / constrain SRT structure
+instantiation != proof of SRT ontology
+```
 
 ---
 
@@ -46,6 +55,23 @@ Pipeline 1 不负责把所有新材料立刻升格为 SRT 结论。它负责判�
 
 触发后执行 `Operations/_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`，其结果必须回注 Pipeline 1；辅助裁决不替代 Pipeline 1。
 
+### 1.3 陪读转写入
+
+`陪读` 本身是 source-grounded reading，不自动触发仓库写入。若用户在陪读过程中随后要求：
+
+```text
+写入
+回写
+融合
+并入仓库
+```
+
+则从当前 source-reading 上下文转入 Pipeline 1，并按 `GOV-SYN01` 明确分开：
+
+1. source-derived 内容；
+2. SRT ontological synthesis；
+3. SRT discriminating claim（如无则明确 none / not claimed）。
+
 ---
 
 ## 2. 输入类型与读取要求
@@ -67,11 +93,53 @@ Pipeline 1 不负责把所有新材料立刻升格为 SRT 结论。它负责判�
 | 审核门 | 问题 | 通过标准 |
 |---|---|---|
 | 1. 相关性 | 是否实质关联 SRT 核心命题？ | 能稳定映射到 L0/L1/L2、Ĝθ、Ψ_f、d-value、硬化、选择、主体性、实验等至少一项 |
-| 2. 增量性 | 是否不是已有内容的重复？ | 能新增接口、反向修正、加固内容、SRT反哺或残余压力 |
+| 2. 贡献性 | 是否提供非空理论贡献，而不只重复或换词？ | 至少有稳定 O-track synthesis / correction / constraint，或 D-track prediction / intervention / counterfactual increment，或明确的 guardrail / residual pressure |
 | 3. 证据等级 | 证据是 primary / peer-reviewed / preprint / review / secondary / commentary？ | 必须标注，不得混淆 |
-| 4. 可对齐性 | 能否转化为 SRT 最小命题？ | 至少能压出 1 条 surviving claim 或明确只作类比 |
-| 5. 风险 | 是否存在过拟合、HARKing、偷换、伪背书？ | 必须明确边界声明 |
+| 4. 可对齐性 | 能否转化为 SRT 最小命题或稳定结构位置？ | 至少能压出 1 条 surviving claim / synthesis relation，或明确只作类比 |
+| 5. 风险 | 是否存在过拟合、HARKing、偷换、伪背书？ | 必须明确边界声明，尤其防止 `source instantiates SRT -> source proves SRT` |
 | 6. 落点清晰 | 应进入哪个文件层？ | 能给出主落点、备选落点、不应落点 |
+
+### 3.1 双轨贡献判定（强制）
+
+每条高价值材料必须在 prose 中标注贡献路线：
+
+```text
+O-track        — ontological synthesis
+D-track        — discriminating / empirical increment
+O + D          — both
+source-only    — source evidence / pressure only
+```
+
+这些标签是治理阅读标签，**不是新 claim-ladder 级别，也不是新的 frontmatter / registry enum**。
+
+#### O-track 先问
+
+```text
+这个外部理论/结果是否能忠实放入 SRT 的共同结构？
+是否澄清 layer / bearer / boundary / history / stability / selection relation？
+是否把多个原本分散的成熟机制放进一个更少但更清楚的关系语法？
+是否反过来约束或修正 SRT？
+```
+
+#### D-track 只在实际声称时问
+
+```text
+SRT 是否额外预测、区分、干预或解释了 bounded rival 不要求的东西？
+```
+
+若答案为 `no`，不要为了 A 类资格强造新变量、机制、scalar、operator 或预测。
+
+### 3.2 三层来源纪律
+
+高价值材料的分析和写入必须能拆成：
+
+```text
+Layer A — source-derived
+Layer B — SRT ontological synthesis
+Layer C — SRT discriminating claim (if any)
+```
+
+Layer B 可以很强而 Layer C 为空。
 
 ---
 
@@ -87,20 +155,34 @@ Pipeline 1 不负责把所有新材料立刻升格为 SRT 结论。它负责判�
 
 只有同时满足以下条件时，才建议 A：
 
-1. 材料有稳定增量；
+1. 材料有稳定贡献，且至少满足以下一条：
+   - **O-track**：形成非平凡的本体论整合、跨域结构压缩、层级澄清、SRT 反向约束或共同结构定位；
+   - **D-track**：形成真实的预测 / 干预 / 反事实 / 机制判别增量；
+   - 两者同时存在；
 2. 证据等级足以承受拟写入层级；
 3. 主落点明确；
 4. 能写出去材料化主句；
-5. 风险声明没有打穿正文动作。
+5. source / synthesis / discrimination 三层可区分；
+6. 风险声明没有打穿正文动作。
+
+特别规则：
+
+```text
+“已有理论已经解释这个局部机制”
+!= 自动 B / C
+```
+
+还必须继续问：该已建立机制是否为 SRT 的本体论整合提供稳定结构材料。
 
 ### B 的门槛
 
 出现以下任一情况，优先 B：
 
-1. 有潜在增量但证据不足；
-2. 一手来源未充分核验；
-3. 文件落点仍摇摆；
-4. 更像待验证窗口，而不是可写正文窗口。
+1. O-track synthesis 有潜力但 source fidelity / mapping 尚未闭合；
+2. D-track increment 疑似存在但证据不足或 bounded rival 未冻结；
+3. 一手来源未充分核验；
+4. 文件落点仍摇摆；
+5. 更像待验证窗口，而不是可写正文窗口。
 
 ### B 类内部细分（自 2026-05-23 起优先标注）
 
@@ -129,10 +211,11 @@ Pipeline 1 不负责把所有新材料立刻升格为 SRT 结论。它负责判�
 
 出现以下任一情况，优先 C：
 
-1. 与已有条目高度重复；
-2. 只有漂亮类比，无稳定新约束；
+1. 与已有条目高度重复，且不增加 synthesis / correction / constraint / discrimination；
+2. 只有漂亮类比或词汇相似，无稳定新结构；
 3. 证据等级与正文负担严重不匹配；
-4. 需要过度改写 SRT 才能吸收。
+4. 需要过度改写来源或 SRT 才能吸收；
+5. 既没有 O-track 组织价值，也没有 D-track 增量，也不构成 guardrail / residual pressure。
 
 ---
 
@@ -186,6 +269,8 @@ tags:
 
 **证据锚点规则（SourceCard owner）**：当材料是可全文核验的一手 / 学术全文，且 `integration_priority` 为 `high` / `very_high`，或其承重主张将支撑 P3 及以上 bridge / hardening 时，SourceCard 的承重 source-level claim 必须保留可回查定位。优先使用来源原生的 page / section / theorem / figure / table 等 anchor；“已完整阅读 / full close-read”不能替代文本定位。PatchNote 默认引用 SourceCard 相应节位，不要求重复维护全部页码；只有 Patch 本身直接承担新的源事实时才重复锚点。若来源没有稳定页码，应记录可用的 section / heading / paragraph / figure，或明确说明定位限制。
 
+**双轨边界**：SourceCard 的正文事实仍属于 source-derived layer。即使它在 O-track 中非常重要，也不得把 SRT synthesis 写成来源作者的结论。建议在 `SRT relevance` 中明确分开 `source-backed pressure` 与 `SRT-side synthesis`。
+
 ### 5.2 PatchNote：SRT 桥接解释层
 
 用途：记录 SRT 如何吸收、降级、约束或反向解释该材料。
@@ -216,14 +301,24 @@ tags:
 
 1. Source anchor
 2. Why this matters for SRT
-3. Main SRT bridge claim
-4. Mapping table
-5. Formal bridge
-6. New claim cluster
-7. Experimental / operational consequences
-8. Boundary cautions
-9. Integration hook
-10. One-paragraph abstract
+3. Contribution route: O / D / O+D / source-only
+4. Main SRT bridge / synthesis claim
+5. Mapping table
+6. Formal bridge（若需要；O-track 不要求为了形式感新增方程）
+7. New discriminating claim cluster（若有；无则明确 none / not claimed）
+8. Experimental / operational consequences（D-track 承重时必写）
+9. Boundary cautions
+10. Integration hook
+11. One-paragraph abstract
+
+PatchNote 必须明确：
+
+```text
+external theories may supply the local mechanisms / evidence
+SRT may supply a candidate ontological organization of their relations
+```
+
+不得在没有 D-track comparison 时写成 “SRT explains what the source cannot explain”。
 
 ### 5.3 Material Log：正式状态层
 
@@ -240,6 +335,14 @@ Material Log 是正式状态台账，优先级高于 patch、index、hook。
 ```text
 新增接口：...；反向修正：...；加固内容：...；SRT反哺：...；残余压力：...
 ```
+
+高价值新记录还应在备注中自然语言写明：
+
+```text
+贡献轨道：O / D / O+D / source-only
+```
+
+不新增 machine enum。
 
 ### 5.4 Markdown Index：人类导航层
 
@@ -272,6 +375,8 @@ Registries/claim_registry.jsonl
 ```json
 {"source_id":"...","patch_id":"...","domain":"...","file":"...","claim_level":"bridge","canonical_status":"non_canonical","integration_priority":"high","related_claims":["..."],"status":"processed"}
 ```
+
+`O / D` 默认留在 Markdown prose，不为本纪律新增一次性 registry 字段值。
 
 ### 5.6 IntegrationHook：正文回写层
 
@@ -406,6 +511,24 @@ PatchNote 是分析层，正文是理论层。未来综合正文应压缩 patch�
 一个 patch -> 2-4 段 + 1 张映射表 + 1 条边界声明
 ```
 
+### 6.4 O-track 正文纪律
+
+当材料主要承担 O-track 时，正文允许把成熟外部机制纳入 SRT 的共同本体论结构，但必须写成：
+
+```text
+外部理论/实验提供局部机制与证据；
+SRT 提供这些机制之间的候选本体论组织。
+```
+
+不能写成：
+
+```text
+因为这些外部机制存在，所以 SRT 被证明；
+因为 SRT 可以重述这些机制，所以它优于原理论。
+```
+
+O-track 正文可以有高理论价值，即使 D-track 明确为 `none / not claimed`。
+
 ---
 
 ## 7. 与第二轮裁决的关系
@@ -418,17 +541,21 @@ PatchNote 是分析层，正文是理论层。未来综合正文应压缩 patch�
 2. 材料跨域，主落点不清楚；
 3. 证据等级不稳；
 4. 第一轮候选接口过多；
-5. 是否 A/B/C 不确定。
+5. 是否 A/B/C 不确定；
+6. “已有理论已解释”正在被当成自动否决理由，但 O-track 尚未审计；
+7. O-track 与 D-track 被混写，可能把 synthesis 冒充 empirical support。
 
 第二轮裁决完成后，回注 Pipeline 1，只保留：
 
 ```text
 A/B/C
+贡献轨道：O / D / O+D / source-only
 surviving claims
 主落点 / 备选 / 不应落点
 五问终裁
 写作动作
 去材料化主句
+三层边界：source / synthesis / discrimination
 风险声明
 ```
 
@@ -465,6 +592,8 @@ N10_BTSP_Integration_Hook.md
 | analogy | 类比材料，只能辅助说明 |
 | watchlist | 暂存，暂不进入正文 |
 
+O-track bridge 可以是高价值 `bridge`，不因为没有 D-track unique prediction 自动降为 `analogy`。
+
 ### 8.3 证据等级标签
 
 建议固定为：
@@ -483,8 +612,14 @@ Pipeline 1 处理材料后，回复用户时至少包含：
 ## Pipeline 1 裁决
 - 结论：A / B / C
 - 证据等级：
+- 贡献轨道：O / D / O+D / source-only
 - 主落点：
 - 融入状态：
+
+## 三层边界
+- Source-derived：
+- SRT ontological synthesis：
+- SRT discriminating claim（无则写 none / not claimed）：
 
 ## 五问
 - 新增接口：
@@ -526,6 +661,8 @@ Registry JSONL
 
 但新材料优先使用 `patches/` 与 `hooks/` 子目录。
 
+旧材料不要求批量回填 O/D 标签；只有在重新陪读、重开 bridge、二轮裁决或正文整合时按 `GOV-SYN01` 重新判定。
+
 ---
 
 ## 11. 守门原则
@@ -533,6 +670,7 @@ Registry JSONL
 ```text
 Pipeline 1 管“是否进入 SRT”；
 SourceCard 管“材料本身说了什么”；
+GOV-SYN01 管“它贡献的是本体论整合、经验判别，还是两者都没有”；
 PatchNote 管“SRT 如何吸收”；
 Registry 管“机器如何索引”；
 IntegrationHook 管“未来如何并入正文”；
@@ -540,3 +678,7 @@ Material Log 管“正式状态与责任留痕”。
 ```
 
 任何工具或代理执行 Pipeline 1 时，必须遵守这个分层，不得把外部材料直接升格为 canonical SRT 结论。
+
+最后一条方法纪律：
+
+> **不要为了最大化 SRT 的独特性而发明理论。优先忠实吸收已经建立的知识，检验它们能否共同构成一个更完整、更少混淆的 SRT 本体论框架；只有当 SRT 真正声称额外预测、干预或不可替代解释时，再要求 D-track 增量并承担可失败风险。**

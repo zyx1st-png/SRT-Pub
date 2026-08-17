@@ -9,7 +9,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-INDEX, SRT-AGENTS]
-updated: 2026-08-03
+updated: 2026-08-17
 ---
 
 # SRT Governance Hub
@@ -50,11 +50,14 @@ updated: 2026-08-03
 
 1. `SRT_CLAIM_LADDER.md`
 2. `SRT_CLAIM_MODE_AUDIT.md`
-3. `SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md`
+3. `SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
+4. `SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md`
 
 `SRT_CLAIM_MODE_AUDIT.md` 是 claim-mode 降级台账，不是完整当前状态表；引用时应说明它的历史批次边界。
 
-`SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md` 用于 primitive、symbol、layer、bridge 与竞争理论的受控删除审计。其输出始终是目标/尺度/时间窗相对的可删除性或当前不可删除性，不把“删除无损”写成不存在，也不把“暂不可删除”写成本体基础。
+`SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md` 把理论贡献拆成两条不能互相替代的轨道：**O-track 本体论整合**与 **D-track 经验/判别增量**。SRT 可以忠实吸收成熟外部理论已经建立的局部机制来构建共同本体论语法；“没有独有经验增量”不自动等于低价值或 bridge 失败。但外部结果只支持其原生事实，作为 SRT 结构实例不等于证明 SRT 本体论。只有当 SRT 声称超越、替代、不可还原或新增预测时，才必须进入 D-track 与 bounded rival comparison。
+
+`SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md` 用于 primitive、symbol、layer、bridge 与竞争理论的受控删除审计。其输出始终是目标/尺度/时间窗相对的可删除性或当前不可删除性，不把“删除无损”写成不存在，也不把“暂不可删除”写成本体基础。对材料/bridge 的价值判断还必须结合 `GOV-SYN01`：D-track 上可替代，不等于 O-track 上没有整合价值。
 
 ### Layer / Metadata
 

@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-STATUS]
-updated: 2026-07-12
+updated: 2026-08-17
 ---
 
 # SRT Operations Hub
@@ -59,9 +59,9 @@ Active execution plan 只负责施工范围、顺序、门控与验收，不定�
 4. `_SRT_PAPER_PIPELINE.md`
 5. `_SRT_MEDIA_PIPELINE.md`
 6. `_SRT_KNOWLEDGE_REVIEW_PIPELINE.md`（Pipeline 7：知识点抽查与回写）
-7. `_SRT_MATERIAL_PIPELINE.md`（Pipeline 1：材料融合 v2 结构化写入版）
+7. `_SRT_MATERIAL_PIPELINE.md`（Pipeline 1：材料融合 v2 结构化写入版；贡献判定遵守 `../Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`）
 8. `_SRT_MATERIAL_LOG.md`（Pipeline 1 正式材料融入台账；长记录读取从 `Material_Log/README.md` 进入）
-9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线）
+9. `_SRT_MATERIAL_ADJUDICATION_WORKFLOW.md`（材料第二轮结构裁决；辅助工作流，不属于 6 条主流水线；同样执行 O-track / D-track 双轨判定）
 10. `_SRT_ARTICLE_WORKFLOW.md`（文章写作工作流：LLM 发散 / 作者收敛 / 记录轨迹；`2026-07-02` 战略重心转向社媒文章后新增，Pipeline 5 主模式改由此文件定义）
 11. `_SRT_CHOICE_TRACE_LOG.md`（收敛轨迹台账：发散→收敛配对留痕，作者收敛函数的 revealed-stake 记录；append-only）
 12. `.agents/skills/srt-humanization-pipeline/SKILL.md`（公共文本三阶段真人化执行层：`shuorenhua → humanizer-zh → stop-slop → protected-spans 核验`；语言通过不等于发布批准）
@@ -84,6 +84,15 @@ Active execution plan 只负责施工范围、顺序、门控与验收，不定�
 ## Pipeline 1 Authority
 
 `Operations/_SRT_MATERIAL_PIPELINE.md` 是材料进入仓库的主流程说明。`SourceCard / PatchNote / Registry / IntegrationHook` 都是 Pipeline 1 的结构化产物，不是平行工作流。
+
+Pipeline 1 的材料价值判定必须同时遵守 `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`：
+
+```text
+O-track = ontological synthesis
+D-track = discriminating / empirical increment
+```
+
+没有 D-track 独有增量不自动等于材料价值低；成熟外部理论可以提供 SRT 本体论整合所需的局部机制与事实。但外部证据仍归属于外部原生命题，不能因被纳入 SRT 结构就写成“证明 SRT”。只有当 SRT 声称额外预测、不可还原或经验优越时，才进入 D-track 与 subtractive / rival comparison。
 
 `Operations/_SRT_MATERIAL_LOG.md` 仍是正式状态台账；任何 patch、hook 或 index 的状态若与台账冲突，以台账为准。
 
