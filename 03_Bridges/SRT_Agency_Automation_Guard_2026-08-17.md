@@ -13,12 +13,15 @@ dependency:
   - SRT-CORE-21C-BRIDGE-HYPOTHESES
   - SRT-INDIVIDUATION
   - SRT-T-DIR-CANONICAL
+  - SRT-OPS-AUDIT-RC-A-P1-T05-DEMOTION-DERIVATIVE-SYNC-20260817
 tags: [Agency, Automation, Script, L2, Reselectability, RC-A]
 ---
 
 # Agency / Automation Guard
 
 > **RC-A (2026-08-17)**: former `P1-T05: Real Choice Moment` is demoted from P1. SRT's primary theoretical object remains `Selection`. The anti-script insight survives only as a P2/P3 guard against overpromoting automation to stronger agency standing.
+>
+> **Derivative-sync status**：claim-level demotion is complete; semantic text burn-down is still active in selected downstream owners. The executable ledger and exit conditions are in `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md §7-§9`.
 
 ## 1. Negative guard
 
@@ -138,5 +141,32 @@ Forbidden:
 Forbidden:
 
 > Passing this guard proves subjecthood, consciousness, freedom, responsibility, or moral status.
+
+## 8. Legacy derivative-owner override during consolidation
+
+Until local text burn-down closes, the following verified live owners contain pre-RC-A wording that must be read through this guard:
+
+| Owner | Legacy pressure | Current read |
+|---|---|---|
+| `Core_Law/SRT_L1_Formalism.md` | `r(t)` derived from P1-T05; `kappa_r r` treated as P1 source | `r(t)` may only be a P2/P3 bearer-level reorientation / reselection activity proxy; `r=0` does not imply no Selection |
+| `Core_Law/SRT_Collective_Selection.md` | T-COLL-1 / T-COLL-4 tied to multi-agent P1-T05 | collective-ISP structure is separate from stronger collective agency / reauthorization; T-COLL-4 cannot decide whether Selection occurred |
+| `Core_Law/SRT_Irreversibility.md` | generative-health candidate uses `r(t)` as “real choice not replaced by script” | retain only P2/P3 reorientation/reselection proxy reading |
+| `_SRT_T_DIR_CANONICAL.md` | `活选择 / 真实选择 / L2替代选择` sometimes used as Selection ontology | read only as bearer-level agency / readability / reorientation shorthand |
+
+The following inference is globally blocked across those owners:
+
+```text
+script / habit / gradient / L2 automation
+-> no Selection
+```
+
+and:
+
+```text
+r = 0 or low T_dir
+-> no Selection
+```
+
+This section does not redefine any owner-level positive concept. It only removes the superseded former-P1-T05 authority from derivative readings.
 
 **Disposition**: P2/P3 downstream guard only. Do not promote back to P1 without a new independent constitutive derivation.
