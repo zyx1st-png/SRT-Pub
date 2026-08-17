@@ -16,6 +16,7 @@ dependency:
   - Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md
   - 03_Bridges/SRT_Aging_Selective_Maintenance_Bridge_2026-08-17.md
   - 03_Bridges/SRT_Selection_Event_CompactCore.md
+  - Core/SRT_Core_21c_Bridge_Hypotheses.md
   - _SRT_PSI_F_CANONICAL.md
   - Core_Law/SRT_Irreversibility.md
 tags: [Aging, SubtractiveAudit, SelectiveMaintenance, OntologicalFriction, Reselectability, RivalTheory, Misrepair, Resilience, Reliability]
@@ -23,7 +24,9 @@ tags: [Aging, SubtractiveAudit, SelectiveMaintenance, OntologicalFriction, Resel
 
 # AGING01 Subtractive Audit — Selective Maintenance, Friction, and Future Path Topology
 
-> **结论先行**：绝大多数直觉在删除 SRT 语言后仍由既有 aging / health 理论保留。当前没有 `N2`。唯一值得继续保留并设计判别实验的残余，是一个 `R4 -> N1 candidate`：**维护历史是否在控制 damage、resource、redundancy / reliability、ordinary resilience 与 measured misrepair 后，仍预测后续维护路径的 accessibility / switching cost / consequence-bearing distribution。**
+> **结论先行**：绝大多数 ageing 直觉在删除 SRT 语言后仍由既有 aging / health 理论保留。当前没有 `N2`。唯一值得继续保留并设计判别实验的残余，是一个 `R4 -> N1 candidate`：**维护历史是否在控制 damage、resource、redundancy / reliability、ordinary resilience 与 measured misrepair 后，仍预测后续维护路径的 accessibility / switching cost / consequence-bearing distribution。**
+
+`generative reselectability` 只按 `Core/SRT_Core_21c_Bridge_Hypotheses.md §P2/P3-B13` 的散文级 conditional candidate 使用；本审计不引入新标量符号。
 
 ---
 
@@ -42,19 +45,16 @@ tags: [Aging, SubtractiveAudit, SelectiveMaintenance, OntologicalFriction, Resel
 ### Model / fragment `M`
 
 ```text
-SRT aging candidate:
 ontological-friction / payability pressure
 -> maintenance / repair
 -> possible selective-maintenance event
 -> consequence resolution / residual / transfer / writeback
--> possible change in future payability / reselectability
+-> possible change in future payability / generative reselectability
 ```
 
 ### Target `Y`
 
-保留对以下现象的解释与可检验区分：
-
-> **在表面 / conventional present state 已尽量匹配的情况下，为什么不同维护历史可能导致未来可进入的恢复路径、路径概率、切换成本、承担位置或返回成本不同。**
+> **在 conventional present state 已尽量匹配的情况下，为什么不同维护历史可能导致未来可进入的恢复路径、路径概率、切换成本、承担位置或返回成本不同。**
 
 不把以下宽泛目标当成本次 `Y`：
 
@@ -100,28 +100,26 @@ formation perturbation
 
 `broad but bounded`：允许竞争理论使用其正常变量、hidden states、clonal state、niche state、network hysteresis、resource allocation、reliability architecture、homeodynamic resilience 与 misrepair；不允许仅把“history topology”改名后宣称已替代。
 
+**Fair-comparison lock**：进入最终 P4 比较的 rival family、可用变量与信息预算必须在 outcome inspection 前冻结；同一信息预算、同一训练/拟合权限、同一 prospective evaluation rule 适用于 AGING01 与 rivals。
+
 ### Evaluation vector `E`
 
-重点使用：
-
 ```text
-E_pred  — out-of-sample future response / path prediction
-E_int   — route-blockade / switching intervention discrimination
-E_cf    — different-history counterfactual discrimination
-E_mech  — causal carrier and writeback identification
-E_norm  — not primary; bearer attribution only where biologically meaningful
+E_pred   — out-of-sample future response / path prediction
+E_int    — route-blockade / switching intervention discrimination
+E_cf     — different-history counterfactual discrimination
+E_mech   — causal carrier and writeback identification
+E_norm   — not primary; bearer attribution only where biologically meaningful
 E_orient — whether model changes what must be measured / intervened on
 ```
 
 ### Threshold `tau`
 
-当前不冻结数值阈值。概念级判定要求至少出现**方向性、预注册、超越 rival state variables 的新增预测 / 干预增益**才可从 `R4` 升为 `N1`。
+当前不冻结数值阈值。概念级判定要求至少出现**方向性、预注册、超越 pre-frozen rival state variables 的新增预测 / 干预增益**才可从 `R4` 升为 `N1`。
 
 ---
 
 ## 2. Candidate inventory
-
-本轮删除对象：
 
 ```text
 X1 aging = friction increase
@@ -130,7 +128,7 @@ X3 maintenance has finite cost
 X4 maintenance / repair itself is selection
 X5 repair leaves irreversible residue
 X6 short-term protection can create long-term cost
-X7 reserve / redundancy depletion as reselectability loss
+X7 reserve / redundancy depletion as generative-reselectability loss
 X8 recovery today changes recovery tomorrow
 X9 bearer-level cost relocation
 X10 historical writeback changes future path accessibility
@@ -145,17 +143,17 @@ X12 marker reset != generative rejuvenation
 | Candidate | Best replacement / rival | Result after removal | Classification |
 |---|---|---|---|
 | `X1` aging = friction increase | damage burden, stress physiology, hallmarks | No unique loss; also fails hormesis counterexample | **R3 target-relative dispensable** |
-| `X2` ROS/inflammation/misfolding = `Psi_f` | direct biological variables | Identity is both unnecessary and category-confusing | **R1 proxy redundancy / rejected identity** |
+| `X2` ROS/inflammation/misfolding = `Psi_f` | direct biological variables | Identity unnecessary and category-confusing | **R1 proxy redundancy / rejected identity** |
 | `X3` finite maintenance cost | Disposable Soma / resource allocation | Core explanatory role preserved | **R2 implementation substitutable** |
-| `X4` maintenance = selection | repair / feedback / homeostasis models | Most maintenance remains explainable without SRT selection; only bounded event candidates need audit | **R3 target-relative dispensable as identity** |
+| `X4` maintenance = selection | repair / feedback / homeostasis models | Most maintenance remains explainable without SRT selection | **R3 target-relative dispensable as identity** |
 | `X5` repair leaves structural residue | Misrepair-accumulation / fibrosis / persistent damage | Main intuition survives without SRT | **R2 implementation substitutable** |
 | `X6` early benefit / late cost | antagonistic pleiotropy + senescence biology | Core trade-off preserved | **R2 implementation substitutable** |
 | `X7` reserve loss | Reliability Theory / stem-cell exhaustion | Backup / redundancy depletion preserved | **R2 implementation substitutable** |
 | `X8` recovery affects later recovery | Hallmarks of Health / hormetic memory / resilience | Simple rechallenge prediction preserved | **R2 implementation substitutable** |
 | `X9` bearer-level cost relocation | multilevel physiology / externality accounting / systems biology | Conceptually replaceable in many cases, but often under-measured | **R4 compensated / unresolved** |
-| `X10` historical writeback changes accessibility | path dependence / hidden-state / hysteresis / clonal evolution | Role survives, but may be fully absorbed by richer state models | **R4 compensated / unresolved** |
+| `X10` historical writeback changes accessibility | path dependence / hidden-state / hysteresis / clonal evolution | May be fully absorbed by richer state models | **R4 compensated / unresolved** |
 | `X11` maintenance-history topology beyond bounded rivals | no demonstrated complete replacement yet | Only prospective discrimination can decide | **R4 -> N1 candidate** |
-| `X12` marker reset != generative rejuvenation | functional rejuvenation / resilience criteria | Non-equivalence is already available without SRT | **R2 implementation substitutable** |
+| `X12` marker reset != generative rejuvenation | functional rejuvenation / resilience criteria | Non-equivalence already available without SRT | **R2 implementation substitutable** |
 
 No item currently qualifies as `N2`.
 
@@ -165,17 +163,9 @@ No item currently qualifies as `N2`.
 
 ### 4.1 Disposable Soma
 
-Delete SRT `Psi_f` / payability language and retain:
+Delete SRT `Psi_f` / payability language and retain finite maintenance resources, somatic allocation trade-offs and imperfect long-run repair.
 
-```text
-finite maintenance resources
-somatic allocation trade-offs
-imperfect long-run repair
-```
-
-Result: the claim “maintenance is costly and finite” is retained. No SRT-specific loss.
-
-**Classification:** `R2` for that claim.
+**Classification:** `R2` for “maintenance is costly and finite.”
 
 Residual question:
 
@@ -200,7 +190,7 @@ biological stressor != Psi_f
 
 ### 4.3 Hallmarks of Health / homeodynamic resilience
 
-Delete `C_reselect` language and retain homeostatic resilience, hormetic regulation, repair and regeneration.
+Delete **generative reselectability** language and retain homeostatic resilience, hormetic regulation, repair and regeneration.
 
 Result: “recovery to baseline is not the whole story” and “adaptive stress can improve later resistance” both remain.
 
@@ -210,11 +200,13 @@ Residual question must concern **path repertoire / accessibility / switching**, 
 
 ### 4.4 Reliability Theory
 
-Delete reselection-reserve language and retain component reliability + redundancy + architecture.
+Delete generative-reselectability language and retain component reliability + redundancy + architecture.
 
 Result: reserve exhaustion and age-related failure risk remain.
 
 **Classification:** `R2` for reserve-depletion claims.
+
+B13 already prevents simple scalar substitution: reserve, option diversity and future-access readouts are possible implementations / proxies, not the constitutive definition of generative reselectability.
 
 Residual condition:
 
@@ -223,13 +215,11 @@ nominal reserve / redundancy / component reliability matched
 but usable path accessibility differs
 ```
 
-If architecture already captures the difference, the SRT residual disappears.
+If reliability architecture captures the difference, the SRT residual disappears.
 
 ### 4.5 Antagonistic Pleiotropy
 
 Delete SRT local-vs-global framing and retain early-benefit / late-cost evolutionary trade-off.
-
-Result: short-term protection with later cost remains.
 
 **Classification:** `R2`.
 
@@ -256,7 +246,7 @@ Surviving pressure only exists if **locally appropriate / successful maintenance
 
 ### 4.7 Ordinary hidden-state / state-augmentation models — final killer rival
 
-Allow a rival to expand current state with all causal carriers discovered after the experiment:
+A rival may include ordinary causal carriers such as:
 
 ```text
 clone composition
@@ -270,7 +260,9 @@ ECM / fibrosis
 reserve accessibility
 ```
 
-If this richer state model predicts future path behavior completely, then abstract “selection history” has no separate empirical work left to do.
+But the final comparison must use a **pre-frozen rival family and variable budget**. It is not legitimate to inspect the result, add arbitrary new state variables until the rival wins, and then call the bridge redundant.
+
+If a pre-frozen richer state model, fitted under the same information budget, prospectively predicts future path behavior as well as the AGING01 specification, abstract “selection history” has no separate empirical work left to do for this target.
 
 This does **not** imply history is unreal. It implies history's efficacy is exhausted by its present causal carriers for the declared target.
 
@@ -282,19 +274,19 @@ This does **not** imply history is unreal. It implies history's efficacy is exha
 
 ### 5.1 Remove `Psi_f` + damage proxies together
 
-If damage / resource / transition-barrier variables are sufficient for the target, `Psi_f` adds no ageing-specific predictive increment. This bridge therefore cannot be used as evidence that `Psi_f` itself is empirically identified in biology.
+If damage / resource / transition-barrier variables are sufficient for the target, `Psi_f` adds no ageing-specific predictive increment. This bridge cannot be used as evidence that `Psi_f` itself is empirically identified in biology.
 
-### 5.2 Remove reselectability + redundancy together
+### 5.2 Remove generative reselectability + redundancy together
 
-If ordinary resilience, reserve, redundancy and switching metrics reconstruct all claimed future-capacity differences, reselectability language is dispensable for this ageing target.
+If ordinary resilience, reserve, redundancy and switching metrics reconstruct all claimed future-capacity differences, generative-reselectability language is dispensable for this ageing target.
 
 ### 5.3 Remove selection + history term together
 
-If clonal evolution / path-dependent state transition models reproduce all future route changes without a distinct selection-event classification, then “selective maintenance” is a descriptive reading only.
+If clonal evolution / path-dependent state-transition models reproduce all future route changes without a distinct selection-event classification, “selective maintenance” is a descriptive reading only.
 
 ### 5.4 Bearer relocation interaction
 
-Aggregate recovery can remain unchanged while cost moves from one bearer / scale to another. Any test that reports only organism-level output without cellular / tissue consequence distribution risks a false `R2/R3` decision caused by bearer relocation.
+Aggregate recovery can remain unchanged while cost moves from one bearer / scale to another. Any test reporting only organism-level output without cellular / tissue consequence distribution risks a false redundancy decision caused by bearer relocation.
 
 ---
 
@@ -321,29 +313,30 @@ Long-lived systems with sustained maintenance challenge but weak age-related dec
 
 ### Senolytics / replacement / partial reprogramming
 
-These cases test whether removing a persistent state, replacing bearer components or resetting molecular state can actually restore future route topology rather than only a static marker.
+These cases test whether removing a persistent state, replacing bearer components or resetting molecular state can restore future route topology rather than only a static marker.
 
 ### Timmons–Brenner / ICE case
 
-The Letter provides a timing / survivorship-bias pressure, not the decisive test. A future ICE-style experiment would need early lineage / cell-death tracking plus later multi-route rechallenge before it could adjudicate this bridge.
+The Letter provides timing / survivorship-bias pressure, not the decisive test. A future ICE-style experiment would need early lineage / cell-death tracking plus later multi-route rechallenge before it could adjudicate this bridge.
 
 ---
 
 ## 7. Decisive P4 design requirement
 
-The bridge earns an `N1` only if a prospective study freezes:
+The bridge earns a local `N1` only if a prospective study freezes:
 
 ```text
 1. maintenance-history manipulation
 2. current-state / rival-variable measurement set
 3. bounded rival models
-4. multi-route rechallenge
-5. path-repertoire endpoint
-6. path-probability endpoint
-7. route-blockade / switching-cost endpoint
-8. consequence-bearing distribution
-9. later writeback endpoint
-10. symmetric failure rule
+4. same information budget / fitting access
+5. multi-route rechallenge
+6. path-repertoire endpoint
+7. path-probability endpoint
+8. route-blockade / switching-cost endpoint
+9. consequence-bearing distribution
+10. later writeback endpoint
+11. symmetric failure rule
 ```
 
 The key contrast is not:
@@ -357,7 +350,7 @@ but:
 ```text
 history-derived SRT topology claim
 vs
-rich ordinary state / path-dependence rival
+pre-frozen rich ordinary state / path-dependence rival
 ```
 
 ### Positive condition
@@ -382,8 +375,6 @@ No patch multiplication is allowed to manufacture residual novelty.
 Biological maintenance should be judged in two steps.
 
 ### Step A — biology first
-
-Establish the actual mechanism without SRT terminology:
 
 ```text
 what was damaged?
@@ -430,7 +421,7 @@ marker reset != functional rejuvenation
 ```text
 bearer-specific cost relocation
 history-conditioned future accessibility
-reselectability beyond ordinary reserve / resilience
+generative reselectability beyond ordinary reserve / resilience
 ```
 
 ### `R4 -> N1 candidate`
@@ -438,8 +429,8 @@ reselectability beyond ordinary reserve / resilience
 ```text
 Maintenance-History Topology Hypothesis:
 maintenance-path history predicts future path repertoire / probability / switching cost /
-consequence-bearing distribution beyond frozen damage, resource, reliability,
-resilience, misrepair and ordinary hidden-state rivals.
+consequence-bearing distribution beyond pre-frozen damage, resource, reliability,
+resilience, misrepair and ordinary hidden-state rivals under the same information budget.
 ```
 
 ### `N2`
@@ -454,11 +445,12 @@ NONE
 
 - Do **not** modify P0/P1.
 - Do **not** modify canonical `Psi_f` / `d` / `T_dir` definitions.
+- Do **not** introduce a scalar symbol for generative reselectability in this bridge.
 - Keep `AGING01` as P3 bridge + P4 experiment seed.
-- Do not add an ageing equation or new scalar.
+- Do not add an ageing equation or master scalar.
 - Do not call this “SRT Theory of Aging”.
 - Do not treat Timmons–Brenner as evidence for SRT.
-- If a bounded rival-equivalent test is negative, downgrade without adding post-hoc latent variables.
+- If a bounded rival-equivalent test is negative, downgrade without adding post-hoc latent SRT variables.
 
 ---
 
@@ -470,4 +462,4 @@ This audit authorizes only one next scientific step:
 
 It does not authorize canonical synthesis, an aging master variable, or a claim that SRT unifies the Hallmarks of Aging.
 
-If ordinary state augmentation / clonal / niche / network models absorb the residual, stop the ageing workline at translation level.
+If pre-frozen ordinary state augmentation / clonal / niche / network models absorb the residual under equal information budget, stop the ageing workline at translation level.
