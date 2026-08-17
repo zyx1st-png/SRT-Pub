@@ -39,7 +39,7 @@ Open tensions may guide future theory work, bridge design, or lab hypotheses. Th
 | potential non-exhaustion / actualisation | PC-A and AM-A are landed: non-exhaustion without preformation; actualisation is the existing P0 selection primitive's minimum kernel with plural domain implementations | sufficient and discriminating realization conditions in each domain; selector individuation remains separate | do not restore `H(L_0^{abs})` invariance or a completed-form inventory; do not turn any one implementation into the definition or cause of the P0 kernel |
 | Core 24 floor replacement / dynamic normativity / non-reductive verification | selection-first framing, L₂ hardening signature, and non-reductive validation rule are now integrated as safe bridge/canonical-addendum material | full promotion of floor replacement, value/morality/framework dynamics, and cross-scale validation into canonical theorem status | do not claim SRT explains everything, is beyond measurement, or that morality-as-L₂ automatically endorses any moral order |
 | ε normativity scope / closure-boundary | ε securable as minimum condition (domain floor) + constitutive stance; reorganizability carries the normative distinction; **Level A framing de-overload applied 2026-07-05** (L0 §六 / 正骨架 label / d-value §5b.1) | a non-arbitrary, **operational** (not merely regulative) closure-boundary; the Level B stance rewrite (realist → constitutive stance) remains proposal-only | not "all normativity = anti-foreclosure"; not "boundary problem solved"; Level A trims wording only — it does not close the boundary problem |
-| selection irreducibility / competitor-vocabulary deletion (§13) | Claim Ladder: `selection` remains a P0 primitive axiom; GOV-SUB01 Pass 1 executed `K=0` / limited-K / broad-K decomposition on 2026-08-16 and found substantial downstream reconstructability | no §13 qualifying `E_cf / E_int / divergence experiment / E_phen-E_norm` exhibit yet; Step 5 joint removal and perturbation sweep remain unexecuted | GOV-SUB01 residue remains **unassigned**; Pass-1 `R* / N* / P` readings are candidate-only; P0 status is not proof of irreducibility and broad-K reconstruction is not proof of role absence |
+| Selection primitive fruitfulness / derivational indispensability (§13) | PD-A separates P0 primitive admission from downstream D2; Pass 1/1.5 establish literal dependence plus substantial reconstructability, but their historical residue verdict remains `UNASSIGNED` | no non-circular middle-level consequence has yet both survived deletion/replacement and earned D2 downstream; no post-PD-A full GOV-SUB01 re-adjudication has reassigned residue | do not treat P0 as empirical proof, D2 null as automatic P0 falsification, or retirement of the old extra §13 exhibit gate as a retroactive residue upgrade |
 | EX-A existence boundary / former `H(L_0)` formula debt (§15) | EX-A separates manifest actuality, anchoring persistence, and stable ISP identity; old `E` is demoted to B14; 2026-08-12 audit withdrew `Core_14`'s entropy proof and limited strict conjugacy to invertible maps | a B14 persistence readout remains parked; P3-B07 cross-scale universality still needs model-level mappings, error bounds, failure cases, and discriminating gain | do not cite old `E`, unqualified `ΔS`, strict conjugacy under ordinary coarse-graining, or a universal minimum-action principle as canonical readouts／proofs |
 | B-A strict layer assignment of 初心 (§16) | author selected B-A: no independent L₀ Shoshin precursor; `ε_pg` retains its contentless role; Shoshin begins as L₁/P2 read-back or P5 phenomenology | no residual Gate B question; `κ_0 / ε_pg` dependency remains a separate deferred audit | do not rename `ε_pg` as a precursor; gradient, `argmin` and horizon forms are domain bridges／proxies, not L₀ definitions or universe endpoints |
 | C-A global-optimum scope discipline (§17) | universe-wide semantic/evaluative optimum withdrawn as a current positive object; finite reachable optimum, regulative horizon and model attractor separated | no residual Gate C scope question; CΨ's `Ψ_f→0` valence conflict is separately open | do not infer an optimum from `d↑`; do not call an attractor optimal／good／healthy; model-global does not imply universe-global |
@@ -648,64 +648,86 @@ The source phrase "generative resynchronization" remains here only as a source-t
 
 ---
 
-## 13. Selection Primitive Fruitfulness / Derivational Indispensability (open; author decision A 2026-08-17)
+## 13. Selection Primitive Fruitfulness / Derivational Indispensability (open; PD-A 2026-08-17)
 
-### Author Decision A
+### PD-A
 
-P0-01 remains SRT's explicit Selection-first primitive commitment. Direct `D2 / D3` rival discrimination is **not** an admission condition for P0. The P0 burden and the empirical-scientific burden are now separated:
+P0-01 remains SRT's explicit Selection-first primitive commitment. Direct `D2 / D3` rival discrimination is **not** an admission condition for P0. The two burdens remain separate:
 
-- **P0 architecture** asks whether Selection is a necessary, coherent, non-redundant primitive for SRT's own grammar and whether it yields non-trivial downstream structure.
-- **P3/P4 science** asks whether a concrete bridge or lab hypothesis derived within that architecture produces a prospective observation or intervention difference against a frozen bounded rival.
+- **P0 architecture**: coherence, non-redundancy, derivational fruitfulness, and load-bearing role inside SRT.
+- **P3/P4 science**: a concrete bridge / lab hypothesis must freeze a bounded rival and produce a prospective counterfactual or intervention disagreement before SRT may claim empirical discrimination.
 
-Therefore `D2 = 0` does not mechanically demote P0-01. Symmetrically, P0 status does not count as evidence that Selection is empirically irreducible or experimentally established.
+Therefore `D2 = 0` does not mechanically demote P0-01, while P0 status is not evidence that Selection is empirically irreducible or experimentally established.
+
+Decision owner: `Governance/SRT_CLAIM_LADDER.md §1A`; record: `Operations/SRT_PD_A_P0_D2_BOUNDARY_AUTHOR_DECISION_PACKET_2026-08-17.md`.
 
 ### Current State
 
-- `Core/SRT_Core_21_Minimal_Axioms.md P0-01` and AM-A retain the primitive actualisation kernel with Selection.
-- `Governance/SRT_CLAIM_LADDER.md §1A` now fixes the P0 / empirical-discrimination boundary.
-- GOV-SUB01 Pass 1 found literal `K=0` dependence but substantial limited-/broad-K reconstructability; its formal residue remains **UNASSIGNED**.
-- Pass 1.5 and RC-A removed former `Real Choice Moment` as a primitive-Selection discriminator.
-- A2 found `NO-D2` against the tested ordinary causal-history rival, and later audit restricted fair empirical comparison to frozen bounded rivals (`R2`), not unrestricted representational containers (`R∞`).
-- Core 24 is now a prediction-candidate / falsification-target surface with established D2 count `0`; `P24-1 / P24-3 / P24-4` are currently absorbable by bounded adaptive rivals under their tested formulations.
+- `Core/SRT_Core_21_Minimal_Axioms.md P0-01 / AM-A` retain the primitive actualisation kernel with Selection.
+- GOV-SUB01 Pass 1 found literal `K=0` dependence but substantial limited-/broad-K reconstruction. At execution time, the then-current §13 imposed an **additional exhibit gate**, so the audit correctly recorded formal residue as `UNASSIGNED` and treated `R* / N* / P` only as candidate readings.
+- Pass 1.5 executed the frozen lowest-cost joint-removal case but did not complete the declared perturbation sweep or a full residue re-adjudication.
+- RC-A removed former `Real Choice Moment` as a primitive-Selection discriminator.
+- Core 24 remains a prediction-candidate / falsification-target surface with established D2 count `0`; current Selection-near P24 candidates remain rival-absorbable under the tested formulations.
 
-These results constrain SRT's **current empirical distinctiveness**. They do not by themselves adjudicate whether the P0 primitive is a useful or redundant metaphysical starting point.
+These results constrain current empirical distinctiveness but do not, by themselves, decide whether the Selection primitive is theoretically fruitful or redundant.
 
 ### Problem Point
 
-The live question is now:
+> Starting from Selection-first rather than object-first ontology, can SRT derive a non-trivial middle-level structure that is not merely a restatement of the primitive, and can a mature downstream workline turn that structure into a genuine D2/D3 disagreement?
 
-> Starting from Selection-first rather than object-first ontology, does SRT derive any non-trivial middle-level structure that is not merely a restatement of the primitive, and can at least one mature downstream bridge turn that structure into a genuine D2/D3 scientific disagreement?
+This remains two tests, not one:
 
-This has two distinct tests that must not be collapsed:
+1. **Derivational fruitfulness / indispensability**: after deleting or replacing Selection under declared refit budgets, what internal structure, compression, dependency, or explanatory organization is lost without hidden reparameterization?
+2. **Empirical discrimination**: does a specific P3/P4 operationalization prospectively forecast `O_SRT != O_R2` against a frozen bounded rival?
 
-1. **Derivational fruitfulness / indispensability**: deleting or replacing Selection should reveal what internal structure, compression, dependency, or explanatory organization is actually lost, after reasonable refit and without hidden reparameterization.
-2. **Empirical discrimination**: a specific P3/P4 workline must freeze a bounded rival and forecast `O_SRT != O_R2` before observing the result.
+Passing (1) is not D2. Passing (2) does not experimentally prove P0 ontology.
 
-Passing test 1 is not D2. Passing test 2 does not experimentally prove the P0 ontology. Together they would show that the primitive is both theoretically productive and scientifically fruitful.
+### GOV-SUB01 after PD-A — residue re-adjudication rule
 
-### GOV-SUB01 Role After Decision A
+The **old §13 extra D2/exhibit gate is retired** by PD-A because direct D2 is no longer a P0-admission requirement. This retirement does **not** retroactively attach a GOV-SUB01 residue label to Pass 1 or Pass 1.5.
 
-The subtractive audit remains useful, but its role changes. It is no longer a direct empirical admission gate for P0-01. It now asks whether the primitive is:
+Their historical `UNASSIGNED` verdict remains the current formal record until a **post-PD-A re-adjudication** explicitly reopens the residue question. Any such pass must, at minimum:
 
-- merely terminological (`R0/R1`-like reconstruction),
-- replaceable only by a hidden copy of the same role,
-- genuinely load-bearing for a derivation,
-- or currently underdetermined.
+1. declare the target, boundary, bearer where relevant, horizon, and refit budget;
+2. use `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1` for primitive-Selection deletion;
+3. execute Step 5 joint-removal / minimum-set tests wherever compensation remains live;
+4. execute Step 6 perturbation robustness before assigning a robust residue reading;
+5. rerun the mandatory hidden-reparameterization, target-laundering, bearer-relocation, short-horizon, and scale-collapse checks;
+6. state an explicit `R* / N* / P` label rationale under GOV-SUB01 and state what evidence would reverse it.
 
-The formal GOV-SUB01 residue remains **UNASSIGNED** until its own protocol supports a label. Any future residue assignment is an additional irreducibility characterization, not a prerequisite for P0 membership.
+Until such a record exists, formal residue stays **`UNASSIGNED`**. D2 remains mandatory for **scientific discrimination claims**, but it is neither a universal prerequisite for every GOV-SUB01 residue label nor a P0-admission condition.
+
+### Mature-workline accounting / anti-immunization trigger
+
+For PD-A governance, a workline counts as `mature` only when all are frozen before result inspection:
+
+1. an independently motivated middle-level consequence, not a restatement of P0-01;
+2. a bounded rival with declared state variables, update family, calibration range, and revision / complexity cost;
+3. a common intervention and observable outcome;
+4. symmetric SRT and rival failure criteria;
+5. a terminal disposition: `spec-stage NO-GO`, executed/preregistered D2-negative or rival-equivalent result, or D2-positive result.
+
+Dataset swaps, wording changes, or multiple implementations of the same derivation are not automatically independent worklines.
+
+**Scoreboard at PD-A adoption**: `0` qualifying mature worklines. Historical A2 / P24 NO-GO results remain relevant pressure evidence but are not automatically back-counted because they were not all frozen under this maturity contract.
+
+**Mandatory negative trigger**: after **3 independent mature worklines spanning at least 2 distinct middle-level consequences** end D2-negative / rival-equivalent, this §13 becomes a mandatory P0-01 fruitfulness / redundancy review **before a fourth substantially similar mature workline may be authorized**. This is a governance stop rule, not a statistical confidence threshold. §13 owns the review record; any P0 change remains an author decision.
+
+**Positive attribution symmetry**: one D2-positive workline supports only that derivation / workline and counts as one architecture-fruitfulness exhibit. Architecture-level empirical-fruitfulness language requires at least **2 independent D2-positive worklines grounded in distinct middle-level consequences**. Neither case directly proves the P0 ontology.
 
 ### Future Hardening Direction
 
-1. **Derive before testing.** Select one middle-level consequence that follows from P0/P1 without importing the desired empirical result into its definition.
-2. **Run a deletion / replacement check.** Determine whether the consequence survives when Selection is removed under `K=0`, limited-K, and a bounded reasonable refit; explicitly check hidden reparameterization.
-3. **Only then open a P3/P4 workline.** Operationalize the surviving consequence without identifying the proxy with the ontology.
-4. **Freeze a bounded rival and outcome.** Require prospective `O_SRT != O_R2`; D0 vocabulary and D1 classification differences do not count as scientific discrimination.
-5. **Report nulls correctly.** If the rival predicts the same outcome family, record `NO-GO / empirically underdetermined for this workline`, not `P0 falsified` and not `SRT confirmed`.
-6. **Escalate only on repeated mature failure.** If multiple independently motivated, mature downstream derivations remain rival-equivalent, reopen a redundancy / fruitfulness review of P0-01 rather than silently insulating it from revision.
+1. **Derive before testing**: choose one non-circular middle-level consequence from P0/P1.
+2. **Run deletion / replacement**: use GOV-SUB01 with hidden-reparameterization controls; if a formal residue label is sought, satisfy the post-PD-A re-adjudication rule above.
+3. **Only then operationalize** at P3/P4 without identifying the proxy with the ontology.
+4. **Freeze bounded R2 + outcome** and require prospective `O_SRT != O_R2`; D0/D1 do not count as scientific discrimination.
+5. **Report nulls symmetrically**: `NO-GO / rival-equivalent for this workline` counts toward the PD-A negative trigger when the workline is mature; a positive remains local until the positive attribution threshold is met.
+6. **Obey the stop rule**: do not open an indefinite sequence of confirmatory-looking worklines once the mandatory review trigger fires.
 
-The research priority is therefore no longer “design an experiment that directly proves Selection primitive.” It is:
+The research priority is therefore:
 
-> **derive a non-circular middle-level consequence from Selection-first, then ask whether that consequence can earn D2 downstream.**
+> **derive a non-circular middle-level consequence from Selection-first, audit its theoretical dependence, then ask whether it can earn D2 downstream.**
+
 ---
 
 ## 14. Selection-Event Threshold Operationalization (open; post-RC-A status synchronized 2026-08-17)

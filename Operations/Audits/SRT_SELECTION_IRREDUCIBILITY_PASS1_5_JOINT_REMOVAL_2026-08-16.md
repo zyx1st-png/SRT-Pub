@@ -26,6 +26,8 @@ tags: [Governance, SubtractiveAudit, Selection, JointRemoval, Writeback, Consequ
 > **Frozen operation**: remove `irreversible writeback` + `bearer-specific consequence return`, then retest the `Y3 real-choice discrimination` pressure under a fixed boundary and horizon.
 >
 > **Hard boundary**: this pass does not modify `P0-01`, `P1-T05`, the CG protocol, or any canonical definition. It does not assign a formal GOV-SUB01 residue to `selection`.
+>
+> **Post-PD-A read-back (2026-08-17)**: PD-A separates P0 admission from downstream D2 and retires the former extra §13 D2/exhibit gate. This historical pass is **not** retroactively upgraded: it did not execute the full declared perturbation sweep or a post-PD-A residue re-adjudication. Its no-formal-residue disposition therefore remains in force until the current `Core/SRT_OPEN_TENSIONS.md §13` re-adjudication rule is satisfied.
 
 ---
 
