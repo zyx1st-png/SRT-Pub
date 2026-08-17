@@ -26,7 +26,9 @@ tags: [Governance, SubtractiveAudit, Selection, Irreducibility, RivalModel, P0, 
 >
 > **Hard boundary**: this record does **not** modify `P0-01`, `P0-04`, `P1-T05`, or any canonical definition. It does not prove selection fundamental, and it does not prove selection unreal.
 >
-> **Residue gate**: `Core/SRT_OPEN_TENSIONS.md §13` currently allows a formal GOV-SUB01 residue label for `selection` only after at least one qualifying exhibit is produced against the reduced vocabulary: differential counterfactual (`E_cf`), differential intervention (`E_int`), an executed real-choice/script divergence the reduced vocabulary cannot carry, or a demonstrable `E_phen / E_norm` loss. Pass 1 produces none of those exhibits. Therefore **formal GOV-SUB01 residue remains `UNASSIGNED`**. All `R* / N* / P` references below are analysis-level **candidate readings only**, not attached residue labels.
+> **Residue gate (historical at execution time)**: when this audit was executed, `Core/SRT_OPEN_TENSIONS.md §13` imposed an additional exhibit gate before a formal GOV-SUB01 residue label could be attached to `selection`: differential counterfactual (`E_cf`), differential intervention (`E_int`), an executed real-choice/script divergence the reduced vocabulary could not carry, or a demonstrable `E_phen / E_norm` loss. Pass 1 produced none of those exhibits, so **formal GOV-SUB01 residue was correctly recorded as `UNASSIGNED`** and all `R* / N* / P` references below remained candidate readings.
+>
+> **Post-PD-A read-back (2026-08-17)**: PD-A later retires that extra D2/exhibit gate because direct D2 is not a P0-admission requirement. This does **not** retroactively attach a residue label. The historical `UNASSIGNED` verdict remains controlling until a post-PD-A re-adjudication explicitly applies GOV-SUB01 `§8.1`, completes relevant Step-5 compensation tests and Step-6 perturbation robustness, reruns the mandatory anti-laundering checks, and records a new label rationale. See `Core/SRT_OPEN_TENSIONS.md §13`.
 
 ---
 
@@ -38,7 +40,7 @@ The three refit budgets produce different analytical pressures that must not be 
 
 1. **`K=0`**: the current architecture literally depends on `selection`; deletion causes immediate loss in the P0 grammar and several downstream constitutive statements. This establishes implementation dependence only.
 2. **limited `K`**: much of the downstream work can be reconstructed from a frozen non-selection vocabulary—historical asymmetry, reachable-set change, bearer-specific consequence return, and much of the real-choice/script distinction—but the primitive actualisation role cannot be counted as removed without either changing the target or risking hidden reparameterization.
-3. **broad `K`**: substantially different process/causal models can reproduce most currently operationalized downstream targets. This demonstrates substantial representational substitutability at the level of current descriptions. It does **not** establish absence of the underlying actualisation role and does not satisfy the §13 residue gate because no external counterfactual/interventional divergence was executed.
+3. **broad `K`**: substantially different process/causal models can reproduce most currently operationalized downstream targets. This demonstrates substantial representational substitutability at the level of current descriptions. It does **not** establish absence of the underlying actualisation role and did not satisfy the then-current §13 residue gate because no external counterfactual/interventional divergence was executed.
 
 Therefore this pass supports neither overclaim:
 
@@ -474,7 +476,7 @@ The absence of a formal residue label does **not** mean P0-01 loses its current 
 
 ### 8.2 Why `P` is not attached in this record
 
-`P unresolved primitive admission` exists in GOV-SUB01's residue vocabulary and superficially resembles the AM-A status of `Y1`. However, §13 currently imposes an additional exhibit gate before any residue label may be attached to `selection`. This record therefore does **not** use `P` as a workaround around that gate.
+`P unresolved primitive admission` exists in GOV-SUB01's residue vocabulary and superficially resembles the AM-A status of `Y1`. However, the then-current §13 imposed an additional exhibit gate before any residue label may be attached to `selection`. This record therefore does **not** use `P` as a workaround around that gate.
 
 The correct statement is:
 

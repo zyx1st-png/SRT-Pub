@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-16
+updated: 2026-08-17
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-16
+> **最后更新**：2026-08-17
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` + 2026-08-16 convergence decisions
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -22,6 +22,8 @@ updated: 2026-08-16
 - **当前第一优先工作线：SRT Consolidation Phase。** 不再以新增 patch / hook 数量作为进展指标；优先关闭 owner-level contradiction、降低 pending-hook backlog，并把现有 hook 分流为 landed / parked / author-gate / obsolete。材料阅读可继续，但新 hardening patch 只用于新反例／作者级边界门／无法由现有结构承载的 direct owner increment。
 - **2026-08-16 作者已选择 HP-B-B**：perspective-center individuation 与 phenomenal necessity 分开；`structural bearing (B_s) != phenomenal bearing (B_p)`，`B_s -> B_p` 当前不是已证定理。`Philosophy/SRT_HardProblem_Epistemology.md` 已从完整“僵尸消解”口径改为“view-from-nowhere 部分消解 + phenomenal necessity 开放构成桥”；Z6/SRT-zombie deletion pressure 保留。裁决见 `Operations/SRT_PHENOMENAL_NECESSITY_AUTHOR_DECISION_PACKET_2026-08-16.md`。
 - **2026-08-16 synthesis target freeze**：继承 2026-08-11 bounded probe 的 Case A / STOP 与 Philosophy Route 8a closure，新的 patch / hook 不再默认指向 AI CompactCore、Neuroscience N1–N13、Neural Mechanisms CompactCore 或为已测 Philosophy cluster 新建 synthesis。历史 target 引用保留为工程记录，不代表当前施工授权。复活条件仅为：新的 bounded probe 转为 Case B/C、owner-level contradiction 无法局部修复，或作者明确重新授权。见 `Operations/SRT_SYNTHESIS_TARGET_FREEZE_2026-08-16.md`。
+- **2026-08-17 RC-A**：former `P1-T05: Real Choice Moment` 已从 P1 降为 P2/P3 Agency / Automation Guard；`Selection != Agency`，script / habit / gradient / L2 automation 不得反推“没有 Selection”。P1-T06 Stable ISP 保留。裁决/同步记录见 `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`。
+- **2026-08-17 PD-A**：P0-01 保留为 Selection-first primitive，但 direct D2/D3 不是 P0 准入条件；科学区分力必须在 P3/P4 以冻结 bounded rival 的 D2/D3 支付。旧 §13 额外 exhibit gate 退役但不追溯升级 residue；3 条成熟独立 null/rival-equivalent 工作线（至少 2 个中层推导）将强制重开 P0-01 fruitfulness/redundancy review。裁决见 `Operations/SRT_PD_A_P0_D2_BOUNDARY_AUTHOR_DECISION_PACKET_2026-08-17.md`。
 - 2026-08-11 至 2026-08-12 七项相邻作者级边界裁决已落地：**PC-A**（potential non-exhaustion／non-preformation）、**AM-A**（P0-01 承载 primitive actualisation kernel）、**PHR-A**（物理实现采用 interpretation-plural P3/P4 audit）、**ST-A**（结构稳定／生成可再选择双轴）、**EX-A**（事件现实性／锚定持续／stable ISP 三层分离）、**B-A**（初心严格分层）与 **C-A**（global optimum bounded plurality／四义拆分）。C-A 不承认位置无关的宇宙级语义／评价最优为当前正面对象；有限 reachable optimum 必须写齐作用域，规约性地平线与模型吸引子不得混写，技术性 model-global 用法保留。CΨ 的绝对 `Ψ_f→0` 价态与 `κ_0 / ε_pg` 依赖仍开放。上述裁决不构成材料证据升级。
 - 2026-08-11 作者已选择 **PHR-A**：AM-A 的物理实现采用 interpretation-plural P3/P4 audit。共同审计链为“非等价候选 → outcome-indexed 物理登记 → 可干预路径效力 → 未来可达性／返回成本改变”；collapse-family、Everett／branch-relative 与 operational／instrument 口径显式分开。地板判决仍是**黄灯／条件连接**：退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项均不充分，也没有建立解释中立的普遍物理机制。
 - 2026-08-11 作者已选择 **ST-A**：`P1-T06` 的稳定最低条件为声明扰动范围内的 recurrent historical reconstitution + continued selectability；generative reselectability 进入 21C B13 的 P2/P3 生成健康层。former `P1-T07` 无条件反闭合 theorem 已撤销，只保留 absorption remainder；neutral-kernel anti-closure 须补稳定语义、环境、无重置条件、时间窗与证明。fixed point、metastability、低摩擦、`σ<1`、option diversity 与 `ΔR_future>0` 均不得单项充当稳定／健康／合法性通用判据。

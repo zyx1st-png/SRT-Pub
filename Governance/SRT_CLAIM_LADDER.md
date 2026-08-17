@@ -108,7 +108,7 @@ Gate 0 本身没有裁决 Gate A、Gate B 或 Gate C（`Core/SRT_OPEN_TENSIONS.m
 | P4 | Lab hypothesis | A testable, measurable, empirical, or threshold-bearing claim. It may generate predictions or operational proxies. | "hypothesis..."; "candidate proxy..."; "to be tested..."; "under these measurement conditions..." |
 | P5 | Phenomenological / companion exposition | A lived, pedagogical, literary, praxis, or companion explanation. It may be valuable but does not bear core-theory proof load. | "as exposition..."; "phenomenologically..."; "companion reading..."; "helps describe..." |
 
-### 1A. P0 / Empirical Discrimination Boundary — Author Decision A (2026-08-17)
+### 1A. P0 / Empirical Discrimination Boundary — PD-A (2026-08-17)
 
 A `P0` primitive is an explicit constitutive starting commitment of SRT. **Direct D2/D3 rival discrimination is not an admission condition for P0.** Requiring a primitive axiom to depend on an empirical threshold or external rival would contradict the P0 definition above.
 
@@ -116,8 +116,16 @@ This separation has four consequences:
 
 1. **P0 is not empirical proof.** `SRT assumes X as primitive` must never be rewritten as `experiments prove X is ontologically primitive`.
 2. **Scientific distinctiveness must be paid downstream.** Any claim that SRT is empirically or scientifically discriminative must be carried by a P3/P4 bridge or lab hypothesis that freezes a bounded rival and produces prospective `D2` (`O_SRT != O_R`) or `D3` preregistered empirical discrimination.
-3. **A downstream D2 does not directly prove the primitive ontology.** It supports the empirical fruitfulness of the SRT architecture and the specific derivation that generated the forecast; it does not convert P0 into an experimentally observed object.
+3. **A downstream D2 does not directly prove the primitive ontology.** One D2-positive workline supports the empirical fruitfulness of that specific derivation / workline and counts as one architecture-fruitfulness exhibit; it does **not** by itself license architecture-wide empirical superiority.
 4. **Persistent empirical underdetermination limits scientific claims, not automatically P0 membership.** If mature P3/P4 bridges repeatedly fail to produce D2, SRT must say that its Selection-first ontology remains empirically underdetermined relative to the tested rivals. P0 may still be reassessed for redundancy, incoherence, lack of derivational fruitfulness, or by a later author architecture decision, but `D2 = 0` alone is not a mechanical demotion rule.
+
+**PD-A governance trigger (not a statistical confidence threshold).** A workline counts as `mature` for this trigger only if it freezes, before outcome inspection: an independently motivated middle-level consequence, a bounded rival state/update/calibration family, a common intervention and observable, symmetric failure criteria, and a terminal disposition (`spec-stage NO-GO`, executed D2-negative/rival-equivalent, or D2-positive). Mere dataset swaps or rephrasings of the same derivation do not count as independent worklines.
+
+- **Negative trigger**: after **3 independent mature worklines** spanning at least **2 distinct middle-level consequences** end D2-negative / rival-equivalent, `Core/SRT_OPEN_TENSIONS.md §13` must open a P0-01 fruitfulness / redundancy review **before a fourth substantially similar mature workline is authorized**. The review owner is §13; any P0 change remains author-gated.
+- **Positive attribution rule**: architecture-level empirical-fruitfulness language requires at least **2 independent D2-positive worklines grounded in distinct middle-level consequences**. A single positive remains local to its derivation / workline.
+- Historical A2 / P24 NO-GO results inform the review but are **not automatically back-counted** under this trigger because they were not all frozen under the PD-A maturity contract. The qualifying count at PD-A adoption is therefore `0`.
+
+Decision record: `Operations/SRT_PD_A_P0_D2_BOUNDARY_AUTHOR_DECISION_PACKET_2026-08-17.md`.
 
 Therefore the correct research sequence is:
 
