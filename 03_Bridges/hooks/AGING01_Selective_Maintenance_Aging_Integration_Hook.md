@@ -9,12 +9,13 @@ canonical: false
 domain: aging_biology_selective_maintenance_history_reselectability
 status: active
 integration_status: pending
-record_stage: pending_novelty_and_discrimination
+record_stage: pending_discrimination
 source_ids:
   - SRC-2026-08-17-BIO-TIMMONS-BRENNER-AGING-INFO-CRITIQUE
 dependency:
   - 03_Bridges/SRT_Aging_Selective_Maintenance_Bridge_2026-08-17.md
   - Operations/Audits/SRT_AGING_SELECTIVE_MAINTENANCE_SUBTRACTIVE_AUDIT_2026-08-17.md
+  - Core/SRT_Core_21c_Bridge_Hypotheses.md
 landing_ledger:
   - target: "03_Bridges/SRT_Selection_Event_CompactCore.md"
     state: pending
@@ -109,9 +110,10 @@ The aim is not to defeat entire theories. The aim is to prevent AGING01 from cla
 ## 5. Primary falsifier
 
 ```text
-if damage + resource + reliability/redundancy + resilience + misrepair
-+ ordinary causal-state / clonal / niche / network variables
-predict the future path endpoints as well as the AGING01 specification,
+if the pre-frozen damage + resource + reliability/redundancy + resilience + misrepair
++ ordinary causal-state / clonal / niche / network rival set,
+fitted under the same information budget and evaluated prospectively,
+predicts the future path endpoints as well as the AGING01 specification,
 then AGING01 has no target-relative empirical increment.
 ```
 
@@ -144,6 +146,7 @@ Positive result requirement:
 maintenance-history/path specification
 adds prospective out-of-sample or intervention discrimination
 beyond the pre-frozen rival variables
+under the same information budget
 ```
 
 Do not count a post-hoc explanatory story as D2.
@@ -175,15 +178,17 @@ Do not land:
 ROS = Psi_f
 inflammation = Psi_f
 aging = Psi_f increase
-aging = C_reselect decline
+aging = generative reselectability decline
 maintenance = selection
 repair = selection
 senescence = SRT pathology by definition
-stem-cell count = reselectability
-clonal diversity = reselectability
+stem-cell count = generative reselectability
+clonal diversity = generative reselectability
 OSK marker reset = rejuvenation
 history as a disembodied causal variable
 ```
+
+`generative reselectability` is the prose-level P2/P3 conditional candidate registered in `Core/SRT_Core_21c_Bridge_Hypotheses.md §P2/P3-B13`; this hook does not introduce a scalar symbol for it.
 
 Do not use the bridge to back-define canonical `Psi_f`, `d`, `T_dir`, `L0/L1/L2`, `G_hat_theta`, Stable ISP or bearer.
 
@@ -195,4 +200,5 @@ Do not use the bridge to back-define canonical `Psi_f`, `d`, `T_dir`, `L0/L1/L2`
 Materials/2026/SRC_2026_08_17_Biology_Timmons_Brenner_Aging_Information_Theory_Critique.md
 03_Bridges/SRT_Aging_Selective_Maintenance_Bridge_2026-08-17.md
 Operations/Audits/SRT_AGING_SELECTIVE_MAINTENANCE_SUBTRACTIVE_AUDIT_2026-08-17.md
+Core/SRT_Core_21c_Bridge_Hypotheses.md §P2/P3-B13
 ```
