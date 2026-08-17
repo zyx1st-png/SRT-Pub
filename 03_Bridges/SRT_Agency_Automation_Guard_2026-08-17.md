@@ -9,35 +9,16 @@ claim_level: P2-P3
 canonical: false
 date: 2026-08-17
 dependency:
-  - SRT-CORE-21A-MINIMAL-AXIOMS
   - SRT-CORE-21B-CONSTITUTIVE-THEOREMS
   - SRT-CORE-21C-BRIDGE-HYPOTHESES
   - SRT-INDIVIDUATION
   - SRT-T-DIR-CANONICAL
-tags: [Agency, Automation, Script, Habit, L2, Reselectability, Subjecthood, RC-A]
+tags: [Agency, Automation, Script, L2, Reselectability, RC-A]
 ---
 
 # Agency / Automation Guard
 
-> **Status**: P2/P3 agency / subjecthood hardening bridge.
->
-> **Author decision RC-A (2026-08-17)**: former canonical `P1-T05: Real Choice Moment` is demoted out of P1. SRT's primary theoretical object is `Selection`, not a new taxonomy of `Choice`. The former anti-script insight survives only as a narrower downstream guard about stronger agency standing.
-
----
-
-## 0. What this guard is for
-
-This bridge answers a narrower question than the Selection core:
-
-> When a process is already selection-bearing / history-bearing, what kinds of evidence are **not enough by themselves** to establish stronger agency, self-revision, or subject-level control?
-
-It does **not** answer:
-
-> Did Selection occur at all?
-
-That distinction is the central RC-A correction.
-
----
+> **RC-A (2026-08-17)**: former `P1-T05: Real Choice Moment` is demoted from P1. SRT's primary theoretical object remains `Selection`. The anti-script insight survives only as a P2/P3 guard against overpromoting automation to stronger agency standing.
 
 ## 1. Negative guard
 
@@ -52,251 +33,110 @@ routine scaffolded automation
 externally specified policy update
 ```
 
-This is a sufficiency guard only.
+This is only a sufficiency guard. It does **not** imply that these processes are unreal, causally inert, history-free, or selection-free.
 
-It does not imply that these processes are:
-
-- unreal;
-- causally inert;
-- selection-free;
-- history-free;
-- incapable of irreversible change;
-- incapable of changing future friction / reachability;
-- incapable of carrying prior selective convergence.
-
----
-
-## 2. Selection and agency must remain separated
-
-Use the hierarchy:
+Core separation:
 
 ```text
-Selection
-!=
-Agency
+Selection != Agency
+Agency may require additional structure
+Selection does not presuppose Agency
 ```
 
-and:
+A scripted transition may still manifest one path, suppress another, leave irreversible history, change later constraints, and carry mature selective convergence.
+
+## 2. Automation can be enabling
+
+A mature `L2` scaffold can lower routine foreground burden and release capacity for unresolved differences at another level.
 
 ```text
-Agency presupposes a selection-bearing / history-bearing process
-but
-Selection does not presuppose agency
-```
-
-A deterministic or scripted transition may still:
-
-- manifest one path while suppressing another;
-- leave irreversible history;
-- modify later constraints;
-- change friction / accessibility;
-- instantiate lower-scale or backgrounded selective convergence.
-
-None of that, by itself, proves stronger agency.
-
-Conversely, failure to satisfy this agency guard must never be used to deny Selection.
-
----
-
-## 3. Why automation can be healthy
-
-A mature `L2` scaffold can reduce the foreground burden of already-converged structure and release capacity for unresolved differences at another level.
-
-Therefore:
-
-```text
-automation
-!=
-loss of Selection
-```
-
-and:
-
-```text
-automation
-!=
-loss of agency by default
-```
-
-A useful distinction is functional:
-
-### Supportive automation
-
-```text
-mature lower-level scaffold
--> routine burden falls
+supportive automation:
+mature scaffold
+-> routine burden down
 -> higher-level regulation / revision remains available
 ```
 
-### Agency-replacing automation candidate
+A stronger agency/pathology concern appears only when an inherited scaffold pre-empts consequence-sensitive revision at the relevant level:
 
 ```text
-scaffold / policy
--> pre-empts the relevant level's consequence-sensitive revision
--> mismatch cannot re-enter regulation
--> later alternatives become inaccessible or non-contestable
+mismatch occurs
+-> cannot re-enter regulation / contestation
+-> later accessibility or revision capacity contracts
 ```
 
-The second pattern is an agency / pathology candidate, not a definition of `L2` or Selection.
+This is not a definition of `L2` or Selection.
 
----
-
-## 4. Positive standing remains intentionally open
+## 3. Positive agency criterion remains open
 
 RC-A does **not** replace former P1-T05 with a new positive essence.
 
-No current P2/P3 variable is established as a necessary-and-sufficient agency criterion.
+Potentially relevant evidence may include stable bearer / ISP continuity, consequence return, mismatch-sensitive reorientation, durable policy or comparison-frame revision, and continued selectability under perturbation. None is individually necessary-and-sufficient here, and no conjunction is promoted to a theorem.
 
-Potentially relevant evidence includes, depending on domain:
+`P1-T06 Stable ISP` remains canonical and separately governed.
 
-- stable bearer / ISP continuity;
-- consequence return to the same history-bearing process;
-- current mismatch becoming internally available for regulation;
-- capacity to revise a policy, comparison frame, boundary, or candidate-generation condition;
-- persistent later efficacy of that revision;
-- preservation of continued selectability under perturbation.
+## 4. Relation to CG / SEA
 
-But none of these individually licenses:
+`CG-0..CG-4` and the Unified Selection Event Audit remain P2/P3 apparatus for **bounded selection-event candidates**.
 
-```text
-agency proved
-```
-
-and no conjunction is promoted here to a theorem.
-
----
-
-## 5. Relation to P1-T06 Stable ISP
-
-`P1-T06` remains canonical.
-
-Stable ISP standing requires a perspective-bearing, history-bearing process recurrently reconstituted across a declared perturbation range and remaining continued-selectable.
-
-This agency guard does not modify that definition.
-
-Use rule:
-
-```text
-stable ISP
-!=
-strong agency automatically proved
-```
-
-and:
-
-```text
-strong agency candidate
-should normally declare which stable bearer / ISP carries the consequence and revision history
-```
-
-Subjecthood, self-consciousness, responsibility and moral standing remain separately gated.
-
----
-
-## 6. Relation to CG / selection-event audits
-
-`CG-0..CG-4` and the Unified Selection Event Audit remain P2/P3 operational apparatus for **bounded selection-event candidates**.
-
-RC-A removes the previous pressure to make CG necessary or sufficient for former P1-T05.
-
-The two surfaces now have different jobs:
+Their job is now explicitly separate from this guard:
 
 ```text
 CG / SEA
--> audit selection-event structure
+-> selection-event audit surface
 
 Agency / Automation Guard
--> block overpromotion from automation to stronger agency standing
+-> anti-overpromotion to stronger agency
 ```
 
 Therefore:
 
 ```text
-CG pass
-!= agency proved
+CG pass != agency proved
+agency-guard failure != CG failure != no Selection
 ```
 
-and:
+The correct-SHA GitHub case is no longer paradoxical: a deterministic transaction can pass a bounded selection-event audit while remaining insufficient evidence for agency.
+
+## 5. Relation to `T_dir`
+
+`T_dir` may contribute evidence about bearer-level self-readability / reorientation, but it is not the positive definition of agency.
+
+Legacy `live choice / 活选择` wording in `_SRT_T_DIR_CANONICAL.md` predates RC-A. In current use it may only be read as shorthand for a **currently consequence-sensitive, direction-readable reorientation opportunity** at the relevant bearer level.
+
+It must not license:
 
 ```text
-agency guard failure
-!= CG failure
-!= no Selection
+L2 automation -> no Selection
 ```
 
-The correct-SHA GitHub negative control is no longer paradoxical: a deterministic transaction can be a bounded selection-event candidate under CG while remaining insufficient evidence for agency.
+or create a new `Live Choice` / `live selection` object.
 
----
+## 6. A2 / A3 status
 
-## 7. Relation to T_dir
+A2/A3 remain historical adversarial records showing:
 
-`T_dir` may contribute evidence about self-readability / reorientation at a bearer level, but it is not the positive definition of agency.
+- no current D2 discriminator for the former agency boundary;
+- no positive non-circular `live` variable ready for execution;
+- ordinary causal-history rivals absorb many candidate agency markers.
 
-Legacy `live choice / 活选择` language in `_SRT_T_DIR_CANONICAL.md` predates RC-A and must now be read conservatively as historical shorthand for a **currently consequence-sensitive, direction-readable reorientation opportunity** at the relevant bearer level.
+After RC-A they may **not** be cited to infer that scripted / gradient processes are selection-free or that failure to define `live` directly weakens P0-01.
 
-It must not be used to infer:
-
-```text
-L2 automation
--> no Selection
-```
-
-or to create a new formal `Live Choice` / `live selection` object.
-
-A later T_dir wording cleanup may replace the shorthand without changing the `T_dir` variable itself.
-
----
-
-## 8. Relation to A2 / A3
-
-A2 and A3 remain valuable historical adversarial audits, but their target is reclassified after RC-A.
-
-They established:
-
-- no current D2 discriminator for the former agency/real-choice boundary;
-- no positive non-circular live-variable ready for empirical execution;
-- ordinary causal-history models can absorb many candidate agency markers.
-
-They did **not** establish:
-
-- that Selection is absent from script / habit / gradient processes;
-- that primitive Selection must possess an additional `live` property;
-- that CG needs to reproduce the former P1-T05 judgment;
-- that the failure to find a live-choice variable weakens P0-01 directly.
-
----
-
-## 9. Failure-bearing conditions
-
-This guard should be revised or withdrawn if any of the following occurs:
-
-1. a domain establishes that a fixed scripted process satisfies an independently accepted strong-agency criterion without any additional bearer-level revision capacity;
-2. a future formal derivation shows the anti-script exclusion follows constitutively from P0/P1 rather than from downstream agency assumptions;
-3. a stronger agency criterion is developed that makes this negative guard redundant;
-4. the terms `script`, `habit`, `gradient`, or `automation` prove too heterogeneous to support even a bounded sufficiency guard without domain-specific qualification.
-
----
-
-## 10. Use rule
+## 7. Use rule
 
 Permitted:
 
-> “Script / habit / gradient / L2 automation is not sufficient by itself to establish stronger agency standing.”
+> Script / habit / gradient / `L2` automation is not sufficient by itself to establish stronger agency standing.
 
 Forbidden:
 
-> “Scripted behavior is not Selection.”
+> Scripted behavior is not Selection.
 
 Forbidden:
 
-> “Only non-automated events are real.”
+> Only non-automated events are real.
 
 Forbidden:
 
-> “SRT has now positively defined genuine choice.”
+> Passing this guard proves subjecthood, consciousness, freedom, responsibility, or moral status.
 
-Forbidden:
-
-> “Passing this guard proves subjecthood, consciousness, freedom, responsibility, or moral status.”
-
-**Disposition**: retain as a P2/P3 agency / subjecthood guard; do not promote back to P1 without a new independent proof.
+**Disposition**: P2/P3 downstream guard only. Do not promote back to P1 without a new independent constitutive derivation.
