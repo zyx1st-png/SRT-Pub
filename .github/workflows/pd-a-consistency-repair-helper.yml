@@ -1,0 +1,53 @@
+name: PD-A consistency repair helper
+
+on:
+  push:
+    branches:
+      - agent/srt-pd-a-consistency-repair-helper
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Apply frozen repair and regenerate clean bundles
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp scripts/tmp_apply_pd_a_consistency_repair.py /tmp/pd_a_base.py
+          cp scripts/tmp_apply_pd_a_consistency_repair_v2.py /tmp/pd_a_v2.py
+          git fetch origin agent/srt-pd-a-consistency-repair
+          git switch -C agent/srt-pd-a-consistency-repair origin/agent/srt-pd-a-consistency-repair
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          python /tmp/pd_a_v2.py
+          git add \
+            Governance/SRT_CLAIM_LADDER.md \
+            Core/SRT_Core_21_Minimal_Axioms.md \
+            Core/SRT_OPEN_TENSIONS.md \
+            Operations/Audits/SRT_SELECTION_IRREDUCIBILITY_RIVAL_TEST_2026-08-16.md \
+            Operations/Audits/SRT_SELECTION_IRREDUCIBILITY_PASS1_5_JOINT_REMOVAL_2026-08-16.md \
+            Operations/SRT_PD_A_P0_D2_BOUNDARY_AUTHOR_DECISION_PACKET_2026-08-17.md \
+            STATUS.md
+          git diff --cached --check
+          git commit -m 'Repair PD-A governance consistency'
+
+          test -z "$(git status --porcelain)"
+          uv run python scripts/build_srt_context_bundles.py
+          git add Operations/Context_Bundles
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh context bundles after PD-A repair'
+          fi
+
+          git push origin HEAD:agent/srt-pd-a-consistency-repair
