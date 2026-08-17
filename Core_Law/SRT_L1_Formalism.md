@@ -243,13 +243,13 @@ T-CHI-1 不掩盖以下 P-依赖：
 
 ### §3.1 d_c 作为可重选边界
 
-`d_c` 定义为：低于此 `d` 值，当前主体的重选容量显著坍塌的 d 边界。操作化为：
+`d_c` 的概念定义仍由 `SRT_Occlusion_Dynamics.md` 承担：它是低于某个 `d` 区域时 bearer-level 可重取向 / 可重选能力显著坍塌的边界。本文件**不以 `r` 反向重定义 `d_c`**；下面只给出一个 P2/P3 local operationalization candidate：
 
 $$
 d_c \;:=\; \inf\{\,d \;:\; r(d, P, t) \geq r_{min}\,\}
 $$
 
-其中 `r(d, P, t)` 是在当前 d 值下可完成的重选率，`r_{min}` 是"非 B 期锁死"所需的最小重选率。
+其中 `r(d, P, t)` 只是在当前 d 值下 bearer-level reorientation / reselection activity 的 P2/P3 proxy，`r_{min}` 是这个 named model 的操作阈值。该式可以用于拟合 / 判别，但不得把 `r` 升格为 `d_c` 的构成性定义，也不得从 `r=0` 推出 no Selection。
 
 ### §3.2 d_c 的漂移方程
 
@@ -272,9 +272,9 @@ $$
 
 | 区间 | 条件 | 动力学含义 |
 |---|---|---|
-| 健康窄化 | `d > d_{narrow}` | `r > r_{min}`，信号型苦难可消化 |
-| A 期 | `d_c < d < d_{narrow}` | `r > 0` 但显著低于健康；结构型苦难开始积累 |
-| B 期 | `d ≤ d_c` | `r → 0`；B 期锁死 |
+| 健康窄化 | `d > d_{narrow}` | 本模型中 `r > r_{min}`；信号型苦难可消化 |
+| A 期 | `d_c < d < d_{narrow}` | 本模型中 `r > 0` 但显著低于健康 proxy 区；结构型苦难开始积累 |
+| B 期 | `d ≤ d_c` | 本模型中 `r → 0`；B 期锁死候选；不等于 no Selection |
 
 A→B 升级判据（Occlusion_Dynamics 原文的"外部化后果 + 主动扩散"）在本方程下对应：
 
@@ -282,7 +282,7 @@ $$
 \text{A→B lock-in} \;:\; \frac{dd_c}{dt} > 0 \;\wedge\; \pi(t) \to 0 \;\wedge\; I_{window}(t) \to 0
 $$
 
-即当三个恢复通道（支付、干预、重选）同时塌向零而 d_c 持续被推高，则进入 B 期锁死。
+即当本模型中的恢复通道（支付、干预、`r` 所代理的 bearer-level reorientation / reselection）同时塌向零而 d_c 持续被推高，则进入 B 期锁死候选。这是 generative-health / occlusion 诊断，不是 Selection ontology 的停止条件。
 
 ### §3.4 T_dir 的代数目标值
 

@@ -36,8 +36,8 @@ SRT 既有文本中，"集体"出现在至少五条线上：
 但**没有一个文件规定"集体选择作为结构对象是什么"**——它是在使用概念，不是在定义概念。结果：
 
 - "共同体"有时指 sangha、有时指国家、有时指市场、有时指家庭；
-- "集体选择"有时按多数决理解、有时按真实共选理解、有时按博弈均衡理解；
-- 集体层面的 d / Ψ_f / σ / S 用法分散，没有结构判据说什么算真正的**集体选择主体**。
+- "集体选择"有时按多数决理解、有时按共同承担 / 共同修订理解、有时按博弈均衡理解；
+- 集体层面的 d / Ψ_f / σ / S 用法分散，没有结构判据说什么算一个 higher-order **collective ISP / consequence-bearing bearer**。
 
 本文件填这一空。它**只固定**：
 
@@ -98,9 +98,9 @@ realizability 条件要求选择组合在共享 `L_2` 下结构上可共存—�
 多 ISP 共享场 `(\mathcal{P}, \mathbf{L_2})` 构成一个**高阶稳定 ISP**（collective ISP），当且仅当：
 
 1. **共同可选择性**：存在非退化的共享选择空间 `A_{\mathcal{P}}(t) \neq \emptyset` 且其维度不随时间塌陷
-2. **共同视角**：`\mathcal{P}` 整体对其自身作为选择主体有结构性的迭代登记（而不是仅每个 `P_i` 独立登记）
+2. **共同视角 / 承担位置**：`\mathcal{P}` 整体对其自身作为 history- and consequence-bearing position 有结构性的迭代登记（而不是仅每个 `P_i` 独立登记）
 3. **后果回路**：`M(t)` 的行和与列和都在健康范围；即**结构不系统性地把后果驱离群体**
-4. **共同重选**：`\mathcal{P}` 能作为整体跨步骤继续选择（不是仅各 `P_i` 独立跨步）
+4. **跨步持续**：`\mathcal{P}` 能作为整体跨步骤保持 continued selectability（不是仅各 `P_i` 独立跨步）
 
 ### 陈述的最小形式
 
@@ -109,7 +109,7 @@ realizability 条件要求选择组合在共享 `L_2` 下结构上可共存—�
 ### 推论
 
 - **绝大多数"集体"不构成集体 ISP**。一堆人同时在同一 `L_2` 下各自做自己的选择——哪怕用同一语言、同一制度——不自动是集体 ISP。它可能只是 `n` 个独立 ISP 的聚合
-- **"共识"不是集体 ISP 的充分条件**。所有 `P_i` 的独立选择碰巧一致，不意味着 `\mathcal{P}` 作为主体在选择
+- **"共识"不是集体 ISP 的充分条件**。所有 `P_i` 的独立选择碰巧一致，不意味着 `\mathcal{P}` 已形成 higher-order history / consequence-bearing ISP
 - **制度可以是集体 ISP 的"器官"，但不是集体 ISP 本身**。制度作为 `L_2` 结构调制 `M(t)` 与 `d_c^i`，但主体位始终在 `\mathcal{P}` 层或子层，不在制度层
 - **集体 ISP 的外观特征**：不确定性与历史在群体层被共同承担，后果能够回到群体未来选择能力；是否进一步具备较强 collective agency / reauthorization 是另一个 P2/P3 问题
 
@@ -552,7 +552,7 @@ scripted / automated collective process
 
 - `Philosophy/SRT_Political_Philosophy.md`：合法性与可持续共同选择的关系只能作 P2/P3 规范桥；T-COLL-1、条件性 T-COLL-3 与 T-COLL-4 可提供结构审计输入，但不自动等价于合法性
 - `Philosophy/SRT_Social_Economics.md`：市场作为分布式选择机制→在本文件下大多数情形是聚合型；结构性不公→主从型退化的具体化；制度病理→收编型或主从+收编复合
-- `Philosophy/SRT_Political_Rights.md`：投票作为 d 倾向后验验证→在本文件下翻译为"通过 T-COLL-4 共选真实性判据验证集体 d"；三层制度（公检法/监督/授权）→维护 `M(t)` 对称与 `σ_{sr}^{coll}` 限幅的结构性器官
+- `Philosophy/SRT_Political_Rights.md`：投票作为 d 倾向后验验证→在本文件下可用 T-COLL-4 审计较强的 collective accountability / reauthorization，而不是把投票本身判成“真/假 Selection”；三层制度（公检法/监督/授权）→维护 `M(t)` 对称与 `σ_{sr}^{coll}` 限幅的结构性器官
 - `Spirituality/SRT_Spirituality_Community_and_Sangha.md`：托举条件→`(M(t) \text{ symmetric and small } n)` 加上 `\sigma_{sr}^{coll}` 不升高 → 健康小共同体；警告"共同体反而变新地板"→收编型退化
 - `Core_Law/SRT_Suffering.md T-SUFF-5`：集体外部化→主从型 `M(t)` 的结构型苦难外溢
 
@@ -591,8 +591,8 @@ scripted / automated collective process
 
 - RC-A Selection ≠ Agency / automation guard → `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`
 - former P1-T05 demotion provenance → `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`
-- P1-T06 stable ISP（集体 ISP 条件的 upstream）→ 同上
-- former P1-T07 demotion / absorption remainder → 同上
+- P1-T06 stable ISP（集体 ISP 条件的 upstream）→ `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- former P1-T07 demotion / absorption remainder → `Core/SRT_Core_21b_Constitutive_Theorems.md`
 - ST-A conditional anti-closure / generative reselectability → `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
 - 个体化 / σ → `Core_Law/SRT_Individuation.md`
 - 遮蔽动力学 / A/B 分期 / d_c / 结构性恶三判据 → `Core_Law/SRT_Occlusion_Dynamics.md`
@@ -609,8 +609,8 @@ scripted / automated collective process
 
 ## §11. 定位与使用规则
 
-- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、ST-A 条件性集体反闭合候选（T-COLL-3）、共选真实性判据（T-COLL-4）、**集体四变量最小耦合动力学 §4.4-§4.6**（2026-04-25 H3 新增，与 `SRT_L1_Formalism.md` 单 P 四变量系统形成上下层对应）
+- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、ST-A 条件性集体反闭合候选（T-COLL-3）、P2/P3 collective agency / consequence-sensitive reauthorization diagnostic（T-COLL-4）、**集体四变量最小耦合动力学 §4.4-§4.6**（2026-04-25 H3 新增，与 `SRT_L1_Formalism.md` 单 P 四变量系统形成上下层对应）
 - **本文件不做**：制度设计、政策判断、具体政治/经济案例分析、共同体组织学
-- **引用规则**：涉及"集体选择作为结构对象是什么"的**结构层**陈述时，优先回链本文件；涉及具体政治、经济、共同体、制度判断时，回链相应 Philosophy / Spirituality 文件
+- **引用规则**：涉及"集体选择作为结构对象是什么"的**结构层**陈述时，优先回链本文件；涉及具体政治、经济、共同体、制度判断时，回链相应 Philosophy / Spirituality 文件；涉及 Selection ≠ Agency 边界时回链 RC-A Agency Guard
 - **不得**：把本文件读作政治偏好的理论背书；四类退化与三判据完全按结构判据读，不按意识形态读
 - **重点**：三类退化（聚合/主从/收编）是**结构性类型**，可以同时存在于任何意识形态立场的群体中——本文件不为任一立场背书
