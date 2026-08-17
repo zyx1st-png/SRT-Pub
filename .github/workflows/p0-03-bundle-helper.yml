@@ -1,0 +1,38 @@
+name: P0-03 bundle helper
+
+on:
+  push:
+    branches:
+      - agent/srt-p0-03-bundle-helper
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Regenerate target branch context bundles
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin agent/srt-p0-03-rca-cleanup
+          git switch -C agent/srt-p0-03-rca-cleanup origin/agent/srt-p0-03-rca-cleanup
+          uv run python scripts/build_srt_context_bundles.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Operations/Context_Bundles
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo 'No bundle changes produced.'
+            exit 1
+          fi
+          git commit -m 'Refresh context bundles after P0-03 RC-A cleanup'
+          git push origin HEAD:agent/srt-p0-03-rca-cleanup
