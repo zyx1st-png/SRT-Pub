@@ -2,7 +2,8 @@
 id: SRT-CORE-21B-CONSTITUTIVE-THEOREMS
 type: theorem_set
 tags: [Formal logic, Constitutive Theorems, Claim Ladder]
-status: active_v2
+status: active
+version: v2
 layer: L1
 epistemic_layer: os
 claim_mode: canonical
