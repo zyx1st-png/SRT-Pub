@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-17
-source_commit: aae67dfd
-source_branch: agent/srt-p0-03-rca-cleanup
-source_dirty: false
-inputs_digest: 68ad94f21ae317ac
+source_commit: 07e6e652
+source_branch: agent/srt-p0-d2-boundary-a
+source_dirty: true
+inputs_digest: e4cbc2bd81b79b01
 ---
 
 # SRT Canonical 骨架上下文包
@@ -27,9 +27,9 @@ inputs_digest: 68ad94f21ae317ac
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-17 |
-| 来源 commit | `aae67dfd` |
-| 来源分支 | `agent/srt-p0-03-rca-cleanup` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `07e6e652` |
+| 来源分支 | `agent/srt-p0-d2-boundary-a` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -45,7 +45,7 @@ inputs_digest: 68ad94f21ae317ac
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-08-12 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-08-12 |
-| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-12 |
+| 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-12 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
 | 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-12 |
@@ -1018,7 +1018,7 @@ These files are **not P0/P1 canonical primitive sources**. They are routing, bri
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-17 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1124,6 +1124,29 @@ Gate 0 本身没有裁决 Gate A、Gate B 或 Gate C（`Core/SRT_OPEN_TENSIONS.m
 | P3 | Bridge mapping | A mapping between SRT and another theory, domain, model, or scale. It may be useful and strong, but it depends on an interface. | "maps to..."; "can be modeled as..."; "bridge claim..."; "under this mapping..." |
 | P4 | Lab hypothesis | A testable, measurable, empirical, or threshold-bearing claim. It may generate predictions or operational proxies. | "hypothesis..."; "candidate proxy..."; "to be tested..."; "under these measurement conditions..." |
 | P5 | Phenomenological / companion exposition | A lived, pedagogical, literary, praxis, or companion explanation. It may be valuable but does not bear core-theory proof load. | "as exposition..."; "phenomenologically..."; "companion reading..."; "helps describe..." |
+
+### 1A. P0 / Empirical Discrimination Boundary — Author Decision A (2026-08-17)
+
+A `P0` primitive is an explicit constitutive starting commitment of SRT. **Direct D2/D3 rival discrimination is not an admission condition for P0.** Requiring a primitive axiom to depend on an empirical threshold or external rival would contradict the P0 definition above.
+
+This separation has four consequences:
+
+1. **P0 is not empirical proof.** `SRT assumes X as primitive` must never be rewritten as `experiments prove X is ontologically primitive`.
+2. **Scientific distinctiveness must be paid downstream.** Any claim that SRT is empirically or scientifically discriminative must be carried by a P3/P4 bridge or lab hypothesis that freezes a bounded rival and produces prospective `D2` (`O_SRT != O_R`) or `D3` preregistered empirical discrimination.
+3. **A downstream D2 does not directly prove the primitive ontology.** It supports the empirical fruitfulness of the SRT architecture and the specific derivation that generated the forecast; it does not convert P0 into an experimentally observed object.
+4. **Persistent empirical underdetermination limits scientific claims, not automatically P0 membership.** If mature P3/P4 bridges repeatedly fail to produce D2, SRT must say that its Selection-first ontology remains empirically underdetermined relative to the tested rivals. P0 may still be reassessed for redundancy, incoherence, lack of derivational fruitfulness, or by a later author architecture decision, but `D2 = 0` alone is not a mechanical demotion rule.
+
+Therefore the correct research sequence is:
+
+```text
+P0 primitive commitment
+-> P1 internal consequences
+-> P2/P3 operational or domain structure
+-> P4 measurable prediction
+-> D2/D3 rival discrimination
+```
+
+Do not reverse this arrow by using a downstream proxy as the definition or proof of the P0 primitive.
 
 ---
 
@@ -2233,6 +2256,19 @@ At P0, actualisation is the irreducible kernel already carried by the selection 
 `\hat{G}_\theta` is the formal role-carrier for this primitive transition. It is not a prior entity that causes selection, and the equation above does not explain actualisation by renaming it as an operator output.
 
 **Boundary**: This axiom does not by itself specify the domain mechanism, empirical substrate, stable selector, or consciousness condition of any particular realization. Gradients, asymmetries, `\Psi_f`, payability, normalization, closure, and writeback may constrain or implement a realization at lower claim levels; none is thereby the universal cause of the P0 kernel.
+
+### P0-01 / D2 Boundary — Author Decision A (2026-08-17)
+
+P0-01 is retained as SRT's explicit Selection-first metaphysical primitive. **It is not required to generate a domain-level D2 contrast by itself as a condition of remaining P0.** This is a claim-level boundary, not an exemption from scientific discipline.
+
+- Correct: `Within SRT, Selection is primitive.`
+- Incorrect: `Empirical data have proved Selection is ontologically primitive.`
+- Correct: a downstream P3/P4 derivation may support SRT scientifically if it prospectively disagrees with a frozen bounded rival and survives D2/D3 testing.
+- Incorrect: a successful downstream proxy or prediction directly proves the P0 ontology.
+
+If mature downstream work remains empirically equivalent to bounded rivals, the required conclusion is that **SRT's Selection-first ontology lacks established empirical distinctiveness in those tested regimes**. That result constrains scientific superiority claims and may motivate a future redundancy / fruitfulness / architecture review; it does not by itself falsify or mechanically demote P0-01.
+
+The corresponding governance rule is `Governance/SRT_CLAIM_LADDER.md §1A`.
 
 ---
 
