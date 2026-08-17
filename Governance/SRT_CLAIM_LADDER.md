@@ -108,6 +108,29 @@ Gate 0 本身没有裁决 Gate A、Gate B 或 Gate C（`Core/SRT_OPEN_TENSIONS.m
 | P4 | Lab hypothesis | A testable, measurable, empirical, or threshold-bearing claim. It may generate predictions or operational proxies. | "hypothesis..."; "candidate proxy..."; "to be tested..."; "under these measurement conditions..." |
 | P5 | Phenomenological / companion exposition | A lived, pedagogical, literary, praxis, or companion explanation. It may be valuable but does not bear core-theory proof load. | "as exposition..."; "phenomenologically..."; "companion reading..."; "helps describe..." |
 
+### 1A. P0 / Empirical Discrimination Boundary — Author Decision A (2026-08-17)
+
+A `P0` primitive is an explicit constitutive starting commitment of SRT. **Direct D2/D3 rival discrimination is not an admission condition for P0.** Requiring a primitive axiom to depend on an empirical threshold or external rival would contradict the P0 definition above.
+
+This separation has four consequences:
+
+1. **P0 is not empirical proof.** `SRT assumes X as primitive` must never be rewritten as `experiments prove X is ontologically primitive`.
+2. **Scientific distinctiveness must be paid downstream.** Any claim that SRT is empirically or scientifically discriminative must be carried by a P3/P4 bridge or lab hypothesis that freezes a bounded rival and produces prospective `D2` (`O_SRT != O_R`) or `D3` preregistered empirical discrimination.
+3. **A downstream D2 does not directly prove the primitive ontology.** It supports the empirical fruitfulness of the SRT architecture and the specific derivation that generated the forecast; it does not convert P0 into an experimentally observed object.
+4. **Persistent empirical underdetermination limits scientific claims, not automatically P0 membership.** If mature P3/P4 bridges repeatedly fail to produce D2, SRT must say that its Selection-first ontology remains empirically underdetermined relative to the tested rivals. P0 may still be reassessed for redundancy, incoherence, lack of derivational fruitfulness, or by a later author architecture decision, but `D2 = 0` alone is not a mechanical demotion rule.
+
+Therefore the correct research sequence is:
+
+```text
+P0 primitive commitment
+-> P1 internal consequences
+-> P2/P3 operational or domain structure
+-> P4 measurable prediction
+-> D2/D3 rival discrimination
+```
+
+Do not reverse this arrow by using a downstream proxy as the definition or proof of the P0 primitive.
+
 ---
 
 ## 2. Relation to File Roles

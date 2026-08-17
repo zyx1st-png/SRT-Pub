@@ -89,6 +89,19 @@ At P0, actualisation is the irreducible kernel already carried by the selection 
 
 **Boundary**: This axiom does not by itself specify the domain mechanism, empirical substrate, stable selector, or consciousness condition of any particular realization. Gradients, asymmetries, `\Psi_f`, payability, normalization, closure, and writeback may constrain or implement a realization at lower claim levels; none is thereby the universal cause of the P0 kernel.
 
+### P0-01 / D2 Boundary — Author Decision A (2026-08-17)
+
+P0-01 is retained as SRT's explicit Selection-first metaphysical primitive. **It is not required to generate a domain-level D2 contrast by itself as a condition of remaining P0.** This is a claim-level boundary, not an exemption from scientific discipline.
+
+- Correct: `Within SRT, Selection is primitive.`
+- Incorrect: `Empirical data have proved Selection is ontologically primitive.`
+- Correct: a downstream P3/P4 derivation may support SRT scientifically if it prospectively disagrees with a frozen bounded rival and survives D2/D3 testing.
+- Incorrect: a successful downstream proxy or prediction directly proves the P0 ontology.
+
+If mature downstream work remains empirically equivalent to bounded rivals, the required conclusion is that **SRT's Selection-first ontology lacks established empirical distinctiveness in those tested regimes**. That result constrains scientific superiority claims and may motivate a future redundancy / fruitfulness / architecture review; it does not by itself falsify or mechanically demote P0-01.
+
+The corresponding governance rule is `Governance/SRT_CLAIM_LADDER.md §1A`.
+
 ---
 
 ## P0-02: Manifest Actuality / Anchoring Persistence Boundary
