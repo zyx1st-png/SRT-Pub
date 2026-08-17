@@ -131,17 +131,19 @@ Route: `01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md`, `Philosophy/SRT_L
 
 For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and `Core/SRT_OPEN_TENSIONS.md`.
 
-### Real Choice Moment
+### Former Real Choice Moment / RC-A
 
-For the canonical statement of real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05). That statement carries a **negative list only** (script execution, habit replay, gradient following, `L_2` label optimization do not qualify); it does not supply a positive discrimination procedure, so it under-determines concrete cases.
+`P1-T05 Real Choice Moment` is a **former** P1 theorem. RC-A withdrew it from P1; current P1 authority is `Core/SRT_Core_21b_Constitutive_Theorems.md`. Do not infer `no Selection` from script execution, habit replay, gradient following, or `L_2` automation. Selection and Agency are not identical.
 
-For concrete "is this a real choice?" judgments, also load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, a non-compensation rule, and the no-choice / pseudo-choice / punitive-choice / respected-choice reading. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only "bounded selection-event candidate", never subjecthood, consciousness, freedom, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
+The adjacent P1 theorem that remains active is `P1-T06 Stable ISP`; its continued-selectability condition belongs to stable-ISP persistence, not to the definition of a one-shot Selection occurrence. Generative reselectability remains P2/P3 generative-health territory.
+
+For concrete Selection-event audits, load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, and a non-compensation rule. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only a bounded Selection-event candidate. It does not prove agency, subjecthood, consciousness, freedom, moral responsibility, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
 
 Three fast negatives worth carrying without loading anything: a different output is not path efficacy; energy spent is not consequence bearing; having memory is not historical efficacy.
 
 ### Freedom
 
-In SRT usage, freedom concerns preservation of real choice moments, not mere option count. Treat this as a pointer to the P1/P2 sources, not as a standalone definition here.
+Freedom is a downstream agency / normative / generative-health question. Legacy language linking freedom to preservation of “real choice moments” must be read through RC-A and must not be used to define Selection or to exclude scripted / habitual / automated selective processes from Selection ontology.
 
 ### Primitive Actualisation / Selectability Boundary
 
