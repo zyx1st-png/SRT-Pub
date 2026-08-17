@@ -7,9 +7,9 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-17
-source_commit: b2a36cde
-source_branch: agent/srt-demote-p1-t05-agency-guard
-source_dirty: false
+source_commit: d09333de
+source_branch: agent/srt-rca-stale-route-cleanup
+source_dirty: true
 inputs_digest: 78138a3218b364ad
 ---
 
@@ -27,9 +27,9 @@ inputs_digest: 78138a3218b364ad
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-17 |
-| 来源 commit | `b2a36cde` |
-| 来源分支 | `agent/srt-demote-p1-t05-agency-guard` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `d09333de` |
+| 来源分支 | `agent/srt-rca-stale-route-cleanup` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 3 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
