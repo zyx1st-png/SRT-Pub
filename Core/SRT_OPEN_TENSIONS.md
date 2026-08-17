@@ -648,92 +648,79 @@ The source phrase "generative resynchronization" remains here only as a source-t
 
 ---
 
-## 13. Selection Irreducibility / Competitor-Vocabulary Deletion Test (open; K-budget Pass 1 executed 2026-08-16)
+## 13. Selection Irreducibility / Competitor-Vocabulary Deletion Test (open; post-RC-A status synchronized 2026-08-17)
 
 ### Current State
 
-- `Core/SRT_Core_21_Minimal_Axioms.md P0-01` fixes selection as primitive and explicitly carries its minimal actualisation kernel (`∃x ⟺ x ∈ Range(Ĝ)`). Under AM-A, `P0-04` supplies the well-formed formal carrier and no-prior-chooser boundary; it does not open a second internal derivation task for the primitive (see §7 above).
-- `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1` defines the subtractive test for this primitive: remove the word and primitive role of `selection`, retaining only asymmetric constraint, reachable-set restriction, history dependence, cost, and consequence return.
-- `Operations/Audits/SRT_SELECTION_IRREDUCIBILITY_RIVAL_TEST_2026-08-16.md` executed the first explicit `K=0 / limited-K / broad-K` decomposition. The analysis found immediate current-grammar dependence at `K=0`, substantial reconstructability of historical asymmetry / bearer consequence / parts of event classification under refit, and an unresolved actualisation row dominated by hidden-reparameterization and target-circularity risk.
-- Two registers remain separate, and neither may borrow the other's authority:
-  - **Claim Ladder / AM-A register**: `selection` remains a **P0 primitive axiom / primitive admission**. That is the current theory architecture and is not reopened by Pass 1.
-  - **GOV-SUB01 residue register**: **UNASSIGNED.** Pass 1 produced no qualifying §13 exhibit in `E_cf`, `E_int`, executed real-choice/script divergence, or demonstrated `E_phen / E_norm` loss. The `R* / N* / P` terms used in the audit are therefore candidate readings only, not attached residue labels.
-- GOV-SUB01 Step 5 joint removal and the declared perturbation sweep were **not executed** in Pass 1. The audit freezes a lowest-cost Pass-1.5 pairwise deletion (`irreversible writeback + bearer-specific consequence return`) before any downstream substitutability/compensation reading is treated as robust.
+- `Core/SRT_Core_21_Minimal_Axioms.md P0-01` still fixes Selection as the current P0 primitive admission. AM-A keeps the minimal actualisation kernel with Selection; this architectural status is unchanged by the subtractive audits.
+- `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md §8.1` remains the controlling deletion test: remove the word and primitive role of Selection while retaining asymmetric constraint, reachable-set restriction, history dependence, cost, and consequence return.
+- Pass 1 established literal `K=0` dependence but substantial limited-/broad-K reconstruction, leaving the formal GOV-SUB01 residue **UNASSIGNED**.
+- Pass 1.5 showed that the deterministic correct-SHA transaction can pass the bounded CG surface while supplying no independent evidence for the former `Real Choice Moment` boundary. After RC-A this is no longer a Selection paradox: `CG pass != agency proved` and `agency-guard failure != no Selection`.
+- A2 produced `NO-D2` against an ordinary causal-history rival. Subsequent rival audit also separated a bounded empirical rival (`R2`) from an unrestricted representational container (`R∞`): only a frozen bounded rival is a fair D2 judge.
+- RC-A (2026-08-17) demoted former `P1-T05: Real Choice Moment` out of P1. Its anti-script content now lives only as a P2/P3 agency guard and **must not** be used as a primitive-Selection residue gate.
+- The post-RC-A Core 24 audit found current Selection-near `P24-1 / P24-3 / P24-4` signatures prospectively absorbable by bounded R2 families; the module is now a prediction-candidate / falsification-target surface with established D2 count `0`.
 
 ### Problem Point
 
-The unresolved question remains the GOV-SUB01 §8.1 form:
+The unresolved question is now cleaner than before:
 
-> Using only asymmetric constraint, reachable-set change, irreversible writeback, payability, and bearer-specific consequence return — and deleting the `selection` primitive — what explanatory, counterfactual, experimental, or interventional difference does SRT actually lose?
+> After deleting the Selection primitive, can a frozen bounded ordinary causal / adaptive model be made to match the same declared state, history, intervention and observables while still yielding a **different prospective prediction** from SRT?
 
-Pass 1 narrows the problem without closing it. It shows that **literal dependence, representational substitutability, and role-level indispensability are different questions**. Much of the downstream work can be reconstructed, while the primitive actualisation row is not cleanly adjudicated because:
-
-1. a rival beginning from an already objectified state/process space may legitimately reject SRT's pre-objectification burden rather than preserve it;
-2. a rival that adds an unexplained “resolution / determinacy / manifestation” primitive risks hiding the deleted role under a new name;
-3. requiring a rival to preserve an SRT-specific metaphysical starting point cannot itself establish the necessity of that starting point.
-
-Therefore the strongest retained Pass-1 sentence is:
-
-> **A metaphysical starting point cannot be declared empirically necessary merely because a rival that rejects the starting point does not preserve the starting point's own vocabulary.**
-
-Until a concrete differential exhibit is produced, `selection` must **not** be presented as a proven-irreducible ontological ultimate. Symmetrically, substantial broad-K reconstruction must not be presented as proof that the underlying role is absent or that P0-01 is “merely a word.”
+Vocabulary dependence, classification difference, or forcing a rival to preserve SRT's own metaphysical starting point do not answer this. A future result must isolate a measurable consequence that is not already prospectively generated by the declared rival update family.
 
 ### Residue Gate
 
-For this tension, completing the K-budget decomposition is **necessary but not sufficient** for formal residue assignment. The existing stricter gate remains controlling: a future pass may attach a GOV-SUB01 residue label to `selection` only if it exhibits at least one of the following against the reduced vocabulary:
+A GOV-SUB01 residue label may be attached to primitive Selection only after at least one qualifying exhibit survives a frozen bounded rival:
 
-1. a counterfactual SRT discriminates that the reduced vocabulary cannot (`E_cf`);
-2. an intervention whose predicted effect differs under a selection framing vs. a pure asymmetric-constraint framing (`E_int`);
-3. an executed case where a real choice moment (`Core/SRT_Core_21b_Constitutive_Theorems.md P1-T05`) and script execution / gradient following diverge in a way the reduced vocabulary cannot carry;
-4. a phenomenological or normative distinction (`E_phen / E_norm`) — such as bearer-specific consequence return or directional self-readability — that the reduced vocabulary demonstrably fails to carry.
+1. `E_cf`: a prospective counterfactual outcome differs (`O_SRT != O_R2`);
+2. `E_int`: a declared intervention produces different predicted effects;
+3. a domain-level dynamical prediction depends on Selection-specific structure and remains different after rival calibration under frozen complexity / revision cost;
+4. `E_phen / E_norm` may support downstream bearer, agency, or normativity distinctions, but **cannot by themselves** establish primitive Selection irreducibility unless they also generate a qualifying D2 consequence against the reduced rival.
 
-Pass 1 hits none of these four gates. Its candidate `R2/R3/R4/N1/P` readings therefore remain analysis scaffolding only.
+Former P1-T05 / `Real Choice Moment` divergence is removed from this gate by RC-A.
 
 ### Future Hardening Direction
 
-The sequence is now constrained more tightly than before:
+1. Freeze a bounded `R2` competitor: declared state variables, update family, calibration range, horizon, bearer / boundary where relevant, and model-revision cost.
+2. Freeze one common intervention and observable outcome before inspecting the result.
+3. Require prospective `O_SRT != O_R2`; D0 vocabulary and D1 classification divergence do not discharge §13.
+4. Use Core 24 candidates only as candidate measurement surfaces. If the frozen rival predicts the same observation family, record **NO-GO at specification stage** rather than executing a confirmatory-looking experiment.
+5. Keep GOV-SUB01 residue **UNASSIGNED** until a qualifying D2+ exhibit exists.
 
-1. **Pass 1.5 joint-removal minimum**: execute the frozen pairwise deletion of irreversible writeback + bearer-specific consequence return and retest the real-choice-discrimination target under a fixed boundary and horizon. This addresses the compensation identified in Pass 1 rather than converting it directly into an `R4` verdict.
-2. **A2 rival adjudication**: freeze an explicit strongest ordinary causal-history rival and compare it with the SRT/CG judge on the same cases, boundaries, histories and bearers.
-3. Record divergence by strength:
-   - `D0`: vocabulary only;
-   - `D1`: classification only;
-   - `D2`: counterfactual / intervention prediction differs;
-   - `D3`: preregistered empirical result discriminates.
-4. Only `D2+` can discharge the main §13 discrimination burden. Existing unified selection-event audits may provide case material but their prior verdicts cannot be reused as proof of SRT superiority.
-
-Absent a qualifying result, domain, book, and public files may cite the current **P0 primitive-axiom / AM-A status**, but they must not attach any GOV-SUB01 residue label to `selection` or present it as proven irreducible. This tension introduces no new symbol and changes neither `P0-01` nor `P0-04`.
-
+The P0 primitive admission and the empirical irreducibility question therefore remain separate registers. P0 status is not proof of D2 irreducibility; rival absorption is not proof that the primitive role is absent.
 ---
 
-## 14. Selection-Event Threshold Operationalization (open, registered 2026-08-06)
+## 14. Selection-Event Threshold Operationalization (open; post-RC-A status synchronized 2026-08-17)
 
 ### Current State
 
-- `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T05` fixes **real choice moment** as a live `L_0 -> L_1` anchoring event whose result genuinely constrains the future selection space, and lists what does *not* qualify (script execution, habit replay, gradient following, `L_2` label optimization).
-- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` (T-D, P2-P3) supplies the positive side P1-T05 does not carry: five functional conditions — difference manifestation (`CG-0`), non-equivalent registration (`CG-1`), path efficacy (`CG-2`), consequence bearing (`CG-3`), historical efficacy (`CG-4`) — plus a three-tier threshold structure (candidate formation / process unfolding / event standing).
-- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` grades each condition (`DMF` 0-3, `NER` 0-4, `PEF` 0-4, `CBP` 0-4, `HEF` 0-4) and sets audit-default minima `DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` under a non-compensation rule.
-- Compact discrimination layer: `03_Bridges/SRT_Selection_Event_CompactCore.md`.
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` supplies five P2/P3 functional conditions for a bounded selection-event candidate: difference manifestation (`CG-0`), non-equivalent registration (`CG-1`), path efficacy (`CG-2`), consequence bearing (`CG-3`), and historical efficacy (`CG-4`).
+- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md` grades the corresponding ladders (`DMF / NER / PEF / CBP / HEF`) and uses audit-default minima `DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` under a non-compensation rule.
+- `03_Bridges/SRT_Selection_Event_CompactCore.md` remains the compact discrimination / audit layer.
+- Pass 1.5 supplied an important negative control: a deterministic correct-SHA transaction can pass the bounded CG surface. This shows that the five-gate audit is not an agency test.
+- RC-A demoted former `P1-T05: Real Choice Moment` out of P1. Therefore there is no longer a requirement to derive a `P1-T05 <-> CG-0..CG-4` necessity / sufficiency mapping.
 
 ### Problem Point
 
-The bridge's own conclusion states that "effective strength at the relevant scale" still requires domain operationalization, and the protocol states that its minima are **audit defaults, not a cross-domain necessary-and-sufficient theorem**. Three exposures follow:
+Two live exposures remain:
 
-1. **Threshold status.** `DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` have no derivation from P0/P1 and no cross-domain calibration. They are currently conventions that make audits comparable, not established thresholds. They must not be cited as SRT-derived criteria.
-2. **Discriminating gain unproven.** Degradation trigger 1 of the bridge is that ordinary causal transition, constraint, and path dependence may already explain every case the `CG` conditions explain. No executed test yet shows a case where the `CG` reading yields a counterfactual or interventional difference that the reduced vocabulary cannot produce. This exposure is the same shape as, but distinct from, §13: §13 asks whether the `selection` primitive dissolves into competitor vocabulary; §14 asks whether the five-gate *event criterion* adds discriminating power over plain causal description.
-3. **Relation to P1-T05 unformalized.** Whether the five gates are necessary conditions for a real choice moment, sufficient conditions, or merely a correlated audit surface is not established. The bridge explicitly declines to reduce P1-T05 to the five conditions.
+1. **Threshold status.** The audit minima are conventions for comparable review, not P0/P1-derived cross-domain thresholds. They still lack domain calibration and must not be cited as universal Selection criteria.
+2. **Discriminating gain.** No executed D2 test shows that a CG-based verdict produces a prospective counterfactual or interventional difference that a frozen bounded ordinary causal / adaptive model cannot already predict.
+
+The five gates therefore remain an **audit surface**, not a completed necessary-and-sufficient definition of Selection, agency, subjecthood, consciousness, freedom, `L_2`, or generative health.
 
 ### Future Hardening Direction
 
 Progress would be at least one of:
 
-1. a case where a `CG`-based verdict and a plain causal-transition verdict **diverge**, with the divergence confirmed by intervention rather than by relabeling;
-2. a domain-specific derivation or calibration of one minimum threshold from independently motivated constraints, replacing the audit-default convention;
-3. a formal statement of the P1-T05 ↔ `CG-0..CG-4` relation (necessary / sufficient / neither), with the failure conditions of that statement made explicit;
-4. an executed negative control in which a system passing all five gates is independently judged not to have made a selection, forcing a threshold or condition revision.
+1. domain-specific calibration of one or more gate minima from independently motivated constraints;
+2. a frozen-rival intervention where the CG/SRT formulation and the ordinary causal/adaptive rival predict different future observations (`D2+`);
+3. a negative control that forces revision of a gate or threshold because the audit produces a false-positive bounded selection-event candidate under an independently frozen domain criterion;
+4. evidence that one gate adds out-of-sample predictive value after matching the rival's declared state/history variables and paying the same model-complexity budget.
 
-Until then, `CG-0..CG-4`, the graded ladders, and the minima remain **P2-P3 audit apparatus**. They may not be presented as canonical criteria for selection, subjecthood, consciousness, freedom, `L_2`, or generative health, and passing all five gates licenses only the phrase "bounded selection-event candidate." This tension introduces no new symbol and does not change P1-T05.
+Do **not** restore former P1-T05 as the missing positive criterion. The downstream `Agency / Automation Guard` is a separate P2/P3 sufficiency guard and may not be used to decide whether Selection occurred.
 
+Until a qualifying calibration or D2 result exists, `CG-0..CG-4`, the graded ladders, and their minima remain **P2/P3 audit apparatus**. Passing all five gates licenses only the phrase **“bounded selection-event candidate.”**
 ---
 
 ## 15. EX-A Existence Boundary and Former `H(L_0)` Formula Debt (resolved at proof-load level)
