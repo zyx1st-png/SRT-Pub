@@ -6,12 +6,11 @@ version: v0_1
 layer: meta
 epistemic_layer: os
 claim_mode: governance
-claim_level: governance
+claim_level: P3/P4_governance
 canonical: false
 dependency:
   - SRT-CLAIM-LADDER
   - SRT-GOV-SUB01-SUBTRACTIVE-AUDIT
-  - SRT-MATERIAL-PIPELINE
   - SRT-EDIT-PROTOCOL
 tags: [Governance, OntologicalSynthesis, EmpiricalDiscrimination, MaterialFusion, TheoryIntegration, ClaimDiscipline]
 ---
