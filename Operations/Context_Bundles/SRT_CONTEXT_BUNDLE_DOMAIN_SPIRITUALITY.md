@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-17
-source_commit: 07e6e652
-source_branch: agent/srt-p0-d2-boundary-a
-source_dirty: true
-inputs_digest: e4cbc2bd81b79b01
+source_commit: 8fcb97fd
+source_branch: agent/srt-pd-a-consistency-repair
+source_dirty: false
+inputs_digest: 6906e8853d7329ab
 ---
 
 # SRT 灵性领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: e4cbc2bd81b79b01
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-17 |
-| 来源 commit | `07e6e652` |
-| 来源分支 | `agent/srt-p0-d2-boundary-a` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `8fcb97fd` |
+| 来源分支 | `agent/srt-pd-a-consistency-repair` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
