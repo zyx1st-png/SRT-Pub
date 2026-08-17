@@ -66,7 +66,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 | `w(t)` | writeback 速率（L_0→L_1 anchoring 到 θ^{trace} 的速率） | `≥ 0` | 从 P1-T02 ontological time 导出 |
 | `i(t)` | 外部输入速率 | `≥ 0` | 从环境驱动导出 |
 | `π(t)` | 可支付性 / Ψ_f 支付率 | `≥ 0` | `_SRT_PSI_F_CANONICAL.md` |
-| `r(t)` | 重选完成率 | `≥ 0` | 从 P1-T05 real choice moment 导出 |
+| `r(t)` | bearer-level reselection / reorientation activity proxy | `≥ 0` | P2/P3 local modeling term；不再从 former P1-T05 导出 |
 | `s_{ext}(t)` | 健康 `L_2` 外部支持率 | `≥ 0` | Suffering §支持机制 |
 | `\Delta\Psi_f^{\mathrm{gap}}(t)` | `Ψ_{f,actual} - Ψ_{f,felt}` 差（隐性债务） | `≥ 0` | `_SRT_PSI_F_CANONICAL.md §10`, `_SRT_T_DIR_CANONICAL.md §5-§6` |
 | `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)` | T_dir 的代数目标值（见 §3.4） | `[0, 1]` | 本文件 §3.4 |
@@ -303,13 +303,13 @@ $$
 #### §3.5.1 最小 ODE
 
 $$
-\boxed{\;\frac{dT_{dir}}{dt} \;=\; \underbrace{-\,\kappa_{\mathrm{relax}} \cdot \bigl(T_{dir} - T_{dir}^{\mathrm{alg}}(t)\bigr)}_{\text{relaxation toward d/σ readability}} \;+\; \underbrace{\kappa_{r} \cdot r(t)}_{\text{real reselection pumps readability}} \;-\; \underbrace{\kappa_{\mathrm{mask}} \cdot \Delta\Psi_f^{\mathrm{gap}}(t)}_{\text{actual-vs-felt friction gap}} \;-\; \underbrace{\kappa_{S} \cdot S_{str}(t)}_{\text{structural suffering opacifies direction}} \;+\; \underbrace{\kappa_{\mathrm{sup}} \cdot s_{ext}(t)}_{\text{healthy } L_2 \text{ scaffolding}} \;$}
+\boxed{\;\frac{dT_{dir}}{dt} \;=\; \underbrace{-\,\kappa_{\mathrm{relax}} \cdot \bigl(T_{dir} - T_{dir}^{\mathrm{alg}}(t)\bigr)}_{\text{relaxation toward d/σ readability}} \;+\; \underbrace{\kappa_{r} \cdot r(t)}_{\text{conditional reorientation / reselection activity term}} \;-\; \underbrace{\kappa_{\mathrm{mask}} \cdot \Delta\Psi_f^{\mathrm{gap}}(t)}_{\text{actual-vs-felt friction gap}} \;-\; \underbrace{\kappa_{S} \cdot S_{str}(t)}_{\text{structural suffering opacifies direction}} \;+\; \underbrace{\kappa_{\mathrm{sup}} \cdot s_{ext}(t)}_{\text{healthy } L_2 \text{ scaffolding}} \;$}
 $$
 
 其中：
 
 - `\kappa_{\mathrm{relax}}`：弛豫率；控制 T_dir 追上代数目标的速率。**大于** 0 且通常**小于** d / σ 通道自身变化率（这正是 T_dir 具有惯性的形式根据）
-- `r(t)`：真实重选完成率（同 §4.2 复用）；完成一次真实选择是对 T_dir 的正向泵入，因为它使系统自身证实"还在选择"
+- `r(t)`：bearer-level consequence-sensitive reorientation / reselection activity proxy（P2/P3）。其非零可以在这个 named model 中形成正向活动项，但不能被读作“系统由此证实 Selection 正在发生”；script / habit / automation 可以与 Selection 共存
 - `\Delta\Psi_f^{\mathrm{gap}}(t) := \Psi_{f,actual}(t) - \Psi_{f,felt}(t) \ge 0`：本体论摩擦的**实支付-感知**差，来自 `_SRT_PSI_F_CANONICAL.md §10` 与 `_SRT_T_DIR_CANONICAL.md §5–§6`。非零差意味着系统在"不知道自己在付"——这是 T_dir 的**隐性侵蚀项**，即使 `T_dir^{\mathrm{alg}}` 高也会把 T_dir 往下拖
 - `S_{str}(t)`：来自 §4.3；结构型苦难侵蚀方向可读性（扭曲 / 断裂感 / 空心都直接降低自身选择秩序的第一人称可见性）
 - `s_{ext}(t)`：健康 `L_2` 外部支持率；可以**暂时**把 T_dir 抬起，但本身不改变 `T_dir^{\mathrm{alg}}`，只是补偿性支架
@@ -357,7 +357,7 @@ $$
 ### §4.2 信号型动力学
 
 $$
-\boxed{\;\frac{dS_{sig}}{dt} \;=\; \underbrace{\mu_{\Delta}\cdot\dot{\Delta}_{avail}(t)}_{\text{new misalignment}} \;-\; \underbrace{\mu_\pi \cdot \pi(t) \cdot \mathbb{1}[d > d_c]}_{\text{payable channel open}} \;-\; \underbrace{\mu_r \cdot r(t)}_{\text{reselection completion}} \;-\; \underbrace{\mu_{sup} \cdot s_{ext}(t)}_{\text{healthy L_2 support}}\;}
+\boxed{\;\frac{dS_{sig}}{dt} \;=\; \underbrace{\mu_{\Delta}\cdot\dot{\Delta}_{avail}(t)}_{\text{new misalignment}} \;-\; \underbrace{\mu_\pi \cdot \pi(t) \cdot \mathbb{1}[d > d_c]}_{\text{payable channel open}} \;-\; \underbrace{\mu_r \cdot r(t)}_{\text{conditional reselection / reorientation activity}} \;-\; \underbrace{\mu_{sup} \cdot s_{ext}(t)}_{\text{healthy L_2 support}}\;}
 $$
 
 - `\dot{\Delta}_{avail}(t)`："可打开结构"的新变化（环境扰动、θ 演化、`L_0` 残压上升）
@@ -532,7 +532,7 @@ $$
 3. **S_{sig} 被外部压制（方程外干预）→ S_{str} ↑ 随 \dot{\Delta}_{avail}**：反最小化原则
 4. **D_{trigger} → S_{str} ↓ 但需 I_{window} 同时打开**：解耦触发不是单独作用，需要窗口协同——这对应 `Occlusion_Dynamics` 的强约束
 5. **T_dir 惯性 + ΔΨ_f^{gap} 扣除 → 致命 `L_2`**（新增）：当 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` 时，T_dir 贴近 `T_dir^{\mathrm{alg}}` 但实支付持续累积；系统无法从 T_dir 读数本身发现债务（§3.5.3 方程化判据）
-6. **S_{str} → T_dir ↓ → r 下降 → S_{sig} 支付效率下降**（新增反馈回路）：结构型苦难降低方向可读性 → 真实重选率 `r(t)` 下降（因为无方向的重选不是真实重选）→ `S_{sig}` 支付通道 `μ_r r` 项减弱 → 信号型苦难积压 → 在 B 期进一步转结构型。这是**苦难-可读性正反馈环**，是病理吸引子的一个新形式根据
+6. **S_{str} → T_dir ↓ → r-proxy 下降 → S_{sig} 支付效率下降**（条件性反馈回路）：结构型苦难降低方向可读性 → bearer-level reorientation / reselection activity proxy `r(t)` 下降 → `S_{sig}` 中 `μ_r r` 候选通道减弱 → 信号型苦难积压 → 在 B 期进一步转结构型。该回路只属于当前 P2/P3 modeling interpretation；`r` 下降不得被读成 Selection 停止
 
 ### §5.2 病理吸引子
 
@@ -546,7 +546,7 @@ $$
 - Occlusion B 期锁死
 - Individuation 病理分支
 - Suffering 结构型主导但外观平静
-- T_dir 致命 `L_2`（§3.5.3 判据）——方向感不低，但不来自真实选择
+- T_dir 致命 `L_2`（§3.5.3 判据）——方向感不低，但 bearer-level consequence-sensitive reorientation / readback 可能被遮蔽；这不推出 no Selection
 
 这正是本轮四理论共同诊断的**静默型致命 `L_2`**。方程化意义：系统稳态**不意味着健康稳态**，它可能是病理吸引子上的稳态。T_dir 加入四变量系统之后，病理吸引子的关键判据**不是 T_dir 低**，而是 `T_dir - T_dir^{\mathrm{alg}}` 平稳但 `\Delta\Psi_f^{\mathrm{gap}}` 持续增加。
 
@@ -558,15 +558,16 @@ $$
 \mathcal{H} \;:\; \sigma \in (\sigma_{sub}^\dagger \pm \delta),\; d > d_{narrow},\; T_{dir} \approx T_{dir}^{\mathrm{alg}} \text{ 且 } \Delta\Psi_f^{\mathrm{gap}} \to 0,\; S_{sig} \in [S_{min}, S_{max}],\; S_{str} \to 0
 $$
 
-关键观察：`\mathcal{H}` 不是单点吸引子，而是一个**持续由非零 `r(t)` 与 `D_{trigger}` 联合维持的区域**。健康不是自动稳定的——它是一个持续需要外部接入（`i(t)`）、持续需要支付（`\pi(t)`）、持续需要真实选择时刻（`r(t)`）、持续需要实-感 `Ψ_f` 差保持低位（即不依赖 `L_2` 伪装可读性）、偶尔需要解耦触发（`D_{trigger}`）的**主动维持状态**。
+关键观察：`\mathcal{H}` 不是单点吸引子，而是一个需要外部接入（`i(t)`）、支付（`\pi(t)`）、低实-感 `Ψ_f` gap、必要时的解耦触发（`D_{trigger}`），以及在具体模型中可能由 `r(t)` 表示的 bearer-level reorientation / reselection activity 共同维持的区域。这里的 `r(t)` 只按 P2/P3 generative-reselectability implementation proxy 读取，不是 Selection 的必要条件。
 
-按 ST-A，这一工作区是 generative reselectability 的实现候选，不是 P1 反闭合必要性的方程证明。模型预测：无真实重选 → `r(t) \to 0` → T_dir 被结构型苦难侵蚀 → 方向感要么塌 (`T_{dir} \to 0`) 要么靠 `s_{ext}` 伪装支撑；该预测需在声明环境与时间窗后检验，不能仅凭工作区边界认定系统必趋 `\mathcal{A}_{path}`。
+按 ST-A，这一工作区是 generative reselectability 的实现候选，不是 P1 反闭合必要性的方程证明。允许检验的较弱预测是：在声明环境与时间窗后，较低 `r(t)` 是否与 T_dir、支付通道或 path concentration 的后续变化相关；禁止从 `r(t) \to 0` 直接推出“无 Selection”。
 
 ---
 
 ## §6. 与已有主方程的关系：T-PROJ-1 投影定理
 
 > **Status (2026-04-25 H5)**：本节把"四变量系统是主方程的导出投影"从陈述提升为**带条件证明的形式定理**。本节之前是 `SRT_L1_Formalism.md §7` 升 P1 检查单第 7 项的开放点；本轮以 P1-candidate 给出第一遍构造。
+> **RC-A qualification（2026-08-17）**：T-PROJ-1 的 P1-candidate standing 不再覆盖 `r(t)` 源项；`+κ_r r(t)` / `-μ_r r(t)` 只按 P2/P3 conditional augmentation 读取，除非未来获得独立于 former P1-T05 的 constitutive source。
 
 ### §6.1 主方程与 L1 四变量的对接
 
@@ -668,7 +669,7 @@ $$
 | `d_c` 漂移项 `\gamma_\sigma \max(0, σ_{sr}-σ_{sr}^{sub})` | `\nabla^2 C_{L_2}` 在 `\theta^{trace}` 占优区的局部刚化 | C2 + C3 |
 | `T_{dir}` 弛豫项 `-\kappa_{\mathrm{relax}}(T_{dir} - T_{dir}^{\mathrm{alg}})` | `\hat{G}_\theta` 与 `\nabla_{L_0}\mathrm{Order}` 的余弦角对 `(d, σ_{sr})` 的代数依赖 | C4 |
 | `T_{dir}` 扣除项 `-\kappa_{\mathrm{mask}}\Delta\Psi_f^{\mathrm{gap}}` | `\nabla F[\sigma_M]` 中实-感分裂部分（不可读分量） | C4 |
-| `T_{dir}` 真实重选泵入 `+\kappa_r r(t)` | P1-T05 real choice moment 在 `\hat{G}_\theta` 的事件结构 | C3 |
+| `T_{dir}` reorientation / reselection activity term `+\kappa_r r(t)` | 无当前 P1 constitutive source；former P1-T05 已撤销 | **P2/P3 conditional augmentation** |
 | `S_{sig}` 新失配项 `\mu_\Delta \dot{\Delta}_{avail}` | `\|\hat{R}\|_{H_P}` 在 `d > d_c` 投影 | C3 |
 | `S_{str}` 阻塞转化项 `\nu_{block}\mathbb{1}[d\le d_c]S_{sig}` | `\|\hat{R}\|_{H_P}` 在 `d \le d_c` 投影；`ν_{block}` 由 T-IRR-3.5 给出独立前件的条件模型 | C3 + T-IRR-3.5 |
 
@@ -678,7 +679,7 @@ $$
 
 2. **d_c 项**：`\dot{\mathcal{F}}_d = \alpha_d \cdot \dot{\mathrm{tr}\,(\nabla^2 C_{L_2})^{-1}}`。`\nabla^2 C_{L_2}` 由 Eq-Bridge-L2-01 的 sediment-rate-and-stiffness 关系决定；其漂移率在 C3 下分解为 `ρ_{local}` 项 + `(σ_{sr}-σ_{sr}^{sub})` 项 + 干预窗口项 - 衰减项，即 §3.2 形式。
 
-3. **T_{dir} 项**：`\dot{\mathcal{F}}_T` 来自余弦角的导数；C4 保证横纵分离，使该导数分解为弛豫项（向代数目标 `T_{dir}^{\mathrm{alg}}`）+ 真实重选泵入项 + 实-感分裂扣除项 + 结构型苦难侵蚀项 + 健康 `L_2` 支架项，即 §3.5 五项 ODE。
+3. **T_{dir} 项**：`\dot{\mathcal{F}}_T` 来自余弦角的导数；C4 可支撑弛豫、实-感分裂扣除、结构型苦难侵蚀与健康 `L_2` 支架等投影候选。`+\kappa_r r(t)` 在 RC-A 后没有 P1 constitutive source，只保留为 P2/P3 conditional augmentation，不计入本证明骨架。
 
 4. **S 项**：`\dot{\mathcal{F}}_S` 来自 `\|\hat{R}\|_{H_P}` 的链式导数；按 `\mathbb{1}[d > d_c]` / `\mathbb{1}[d \le d_c]` 投影分裂为 `S_{sig}` / `S_{str}` 两路；T-IRR-3.5 给出 `ν_{block}` 的条件性算子表达式。反向通道不自动存在根于 P0-03 / T-IRR-2，而正向系数的正性依赖 T-IRR-3.5 的三个前件；均非 former P1-T07 hierarchy 的后果。
 

@@ -14,9 +14,10 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 
 > **Role**: L1 canonical theory of collective selection. Fixes the structural object behind multi-ISP selection under shared `L_2`: when does a group of stable ISPs constitute a higher-order selection unit, when is it merely an aggregation, and under what conditions does shared `L_2` produce genuine co-selection versus externalization patterns.
 > **Claim-level note**：本文大多为 P1-candidate 结构性读法；集体 ISP 判据、co-selection 条件、三类退化形式按 P2 读；政治/制度/历史判断按 P3/P4，必须下推到 `Philosophy/` 与 `Philosophy/Social_Economics_*` 既有文件。
-> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、stable ISP、real choice moment 等底层规范对象；它们的定义仍以对应 canonical 为准。
-> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T05 real choice moment、P1-T06 stable ISP 与 absorption remainder）、`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`（ST-A conditional anti-closure / generative reselectability）、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Suffering.md T-SUFF-5`、`Core_Law/SRT_Individuation.md`、`Core_Law/SRT_L1_Formalism.md`。
+> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、stable ISP，或任何新的 `Choice` subtype。former P1-T05 / Real Choice Moment 已由 RC-A 撤出 P1；本文中的“真实共选 / 真实重选 / 选择时刻”等旧措辞只能按较窄的 collective agency / reauthorization shorthand 读取，不能反向定义 Selection。
+> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T06 stable ISP 与 absorption remainder）、`03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`（RC-A Selection ≠ Agency guard）、`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`（ST-A conditional anti-closure / generative reselectability）、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Suffering.md T-SUFF-5`、`Core_Law/SRT_Individuation.md`、`Core_Law/SRT_L1_Formalism.md`。
 > **Relation**: This file does not replace `Philosophy/SRT_Political_Philosophy.md`、`Philosophy/SRT_Social_Economics.md`、`Spirituality/SRT_Spirituality_Community_and_Sangha.md`；它在它们**之前**，固定"多主体共选作为结构对象是什么"的 L1 读法。规范性与制度判断仍在上述 domain 文件。
+> **RC-A read rule（2026-08-17）**：collective Selection / higher-order ISP structure 与较强 collective agency / reauthorization 必须分层。script / procedure / automation 可以与 Selection 共存；T-COLL-4 通过或失败都不证明 Selection 是否发生。
 >
 > **σ 符号命名空间（governance-canonical, 2026-04-25, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中集体自指率符号已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{coll}` 族（含 `σ_{sr,sub}^{coll}, σ_{sr,health}^{coll}` 等派生标记），是个体自指率 `σ_{sr}` 的多主体场扩展。与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 是**不同对象**。少数遗留的 `σ^{coll}` 历史符号在前向引用与跨文件桥接段落中保留，读者按此命名空间转读。
 
@@ -110,11 +111,11 @@ realizability 条件要求选择组合在共享 `L_2` 下结构上可共存—�
 - **绝大多数"集体"不构成集体 ISP**。一堆人同时在同一 `L_2` 下各自做自己的选择——哪怕用同一语言、同一制度——不自动是集体 ISP。它可能只是 `n` 个独立 ISP 的聚合
 - **"共识"不是集体 ISP 的充分条件**。所有 `P_i` 的独立选择碰巧一致，不意味着 `\mathcal{P}` 作为主体在选择
 - **制度可以是集体 ISP 的"器官"，但不是集体 ISP 本身**。制度作为 `L_2` 结构调制 `M(t)` 与 `d_c^i`，但主体位始终在 `\mathcal{P}` 层或子层，不在制度层
-- **集体 ISP 的外观特征**：不确定性被共担、真实选择时刻在群体层真实发生（不是各自表决后求和）、后果回到群体未来选择能力
+- **集体 ISP 的外观特征**：不确定性与历史在群体层被共同承担，后果能够回到群体未来选择能力；是否进一步具备较强 collective agency / reauthorization 是另一个 P2/P3 问题
 
-### 与 P1-T05 的关系
+### 与 RC-A / Agency Guard 的关系
 
-T-COLL-1 条件 2（共同视角）严重依赖 P1-T05 real choice moment 的多主体版本：集体层面也必须出现真实选择时刻（集体未来选择空间被所选真正约束），否则第 2 条退化到"共识剧本执行"或"制度自动化"。
+RC-A 已撤销“集体层必须出现 Real Choice Moment 才算 Selection / ISP”的上游依赖。T-COLL-1 只承担 higher-order stable ISP / collective-selection structure；较强的 consequence-sensitive collective agency / rule reauthorization 另由 T-COLL-4 以 P2/P3 diagnostic 审计。script / procedure / automation 可以与 Selection 共存，失败 T-COLL-4 不推出 no Selection。
 
 ---
 
@@ -124,7 +125,7 @@ T-COLL-1 条件 2（共同视角）严重依赖 P1-T05 real choice moment 的多
 
 ### 3.1 聚合型（Aggregation）
 
-- **结构**：`\mathcal{P}` 不满足 T-COLL-1 第 2 或第 4 条；各 `P_i` 独立选择，共享 `L_2` 但无群体级真实选择时刻
+- **结构**：`\mathcal{P}` 不满足 T-COLL-1 的 higher-order ISP 条件；各 `P_i` 可继续发生 Selection、共享 `L_2`，但没有稳定的群体级 history-bearing / consequence-return bearer
 - **现象**：市场多数交易、公共广场大多数互动、随机群体
 - **规范判断**：中性。大多数人际场景本就应是聚合型，不必也不应强行升级到集体 ISP
 - **病理边界**：当聚合型被修辞包装成"我们集体决定"，产生虚假集体表象 → 进入后续退化
@@ -140,7 +141,7 @@ T-COLL-1 条件 2（共同视角）严重依赖 P1-T05 real choice moment 的多
 
 - **结构**：`\mathcal{P}` 的 `σ_{sr}^{coll}` 趋向 1（集体层面自指过载）；`L_2` 成为封闭 scaffold 反向写入每个 `P_i` 的 `d_c^i`；群体看起来高度一致与稳定
 - **现象**：意识形态封闭共同体、极权国家、邪教、高度同质化专业群体、高度同质化 AI 中介过的公共空间
-- **规范判断**：对应致命 `L_2`（`Core/SRT_OPEN_TENSIONS.md §4`）；真实选择时刻在个体层与集体层同时被替代
+- **规范判断**：对应致命 `L_2`（`Core/SRT_OPEN_TENSIONS.md §4`）；个体与集体层的可回读 / 可重取向 / 可重新授权空间可能同时被压缩，但这不等于 Selection 本身停止
 - **与 1 和 2 的区别**：收编型往往看起来最"有集体感"——这是其最危险之处
 
 ### 三类退化的联立判据
@@ -225,7 +226,7 @@ $$
 $$
 
 - `T_{dir}^{alg,coll}`：代数目标值，由 `(\sigma_{sr}^{coll}, d^{coll}, d_c^{coll})` 按 `SRT_L1_Formalism.md §3.4` 同结构定义
-- `r^{coll}(t)`：集体真实重选率——严格按 T-COLL-4 的三条件判定（非投票 / 非共识 / 非专家决定自动计入），与个体 `r_i(t)` 的关系是：`r^{coll} \ne \sum_i r_i`（共同体级真实重选不是个体重选的算术和）
+- `r^{coll}(t)`：collective bearer-level reorientation / reselection activity proxy（P2/P3）。T-COLL-4 的后果回返 / 重新授权条件可作为候选操作化，但它不是 former P1-T05 的多主体版本，也不是 Selection 是否发生的判据。与个体 `r_i(t)` 的关系仍为 `r^{coll} \ne \sum_i r_i`
 - `\Delta\Psi_f^{gap,coll}(t)`：集体层面的实-感本体论摩擦差；这是**集体层面**的隐性债务，典型形态是"叙事舒适 vs 真实生态/社会支付"的差距
 - `s_{ext}^{coll}(t)`：**真正来自集体外**的支持（其他群体 / 新接入的 `L_0` 压力被吸收为资源，而非被吸收型收编）；这里要求来源必须不在 `\mathcal{P}` 内，否则退化为 `\kappa_{sup}\cdot` 自身的某种递归伪装
 
@@ -284,6 +285,7 @@ $$
 ### §4.7 T-PROJ-1^{coll}：集体四变量系统作为多算子主方程的投影（H6，2026-04-25）
 
 > **Status**：本节把 §4.4-§4.6 的集体四变量动力学从陈述提升为 `Core/SRT_Core_22_Equations.md §0-C` 多算子主方程（Eq-Multi-01 / 02 / 03）的**带条件投影定理**。结构对位 `Core_Law/SRT_L1_Formalism.md §6 T-PROJ-1`，是其多 ISP 扩展。**Claim level: P1-candidate**。
+> **RC-A qualification（2026-08-17）**：P1-candidate 投影 standing 不自动覆盖 `r^{coll}` 源项；任何 `\kappa_r^{coll}r^{coll}` 对位只按 P2/P3 conditional modeling term 读取，直到获得独立于 former P1-T05 的上游构造。
 >
 > **Closes**：`SRT_L1_Formalism.md §6.6` 列出的"不证明集体版投影"开放点之第一遍构造（P1-candidate）。
 
@@ -505,22 +507,42 @@ the same pattern requires independent checks for stake, consequence return
 
 ---
 
-## §6. T-COLL-4：集体共选的真实性判据
+## §6. T-COLL-4：collective agency / consequence-sensitive reauthorization 判据（P2/P3）
+
+> **RC-A status**：本节原把 collective real choice moment 当作 former P1-T05 的多主体版本。该上游已被 RC-A 撤销。本节保留有用的后果回返、规则重开与非纯程序执行结构，但只作为 P2/P3 collective agency / generative-health diagnostic，不再承担 Selection theorem 或 collective ISP existence gate。
 
 ### 陈述
 
-在满足 T-COLL-1 的集体 ISP 中，群体层面真实选择时刻（collective real choice moment, P1-T05 多主体版）发生当且仅当：
+在一个已独立满足 T-COLL-1 的 collective ISP 中，如果进一步主张该群体具有较强的、可归责的 collective agency / reauthorization capacity，则至少应检查：
 
 $$
-\text{选择结果真正约束 }A_{\mathcal{P}}(t+1)\,\wedge\, \text{后果经 }M(t)\text{ 对称返回 }\mathcal{P}\,\wedge\,\text{非仅集体 }L_2\text{ 脚本执行}
+\text{结果改变后续可行动空间}\,\wedge\, \text{后果经 }M(t)\text{ 回到相关 bearer}\,\wedge\,\text{规则 / 授权在必要时可重新打开}
 $$
+
+这些条件是较强 agency / generative-health 的候选诊断，不是 Selection 的必要条件。
 
 ### 推论
 
-- **投票不自动是共选**：投票若只触发 `L_2` 脚本（既定选项、既定程序、既定后果路径）而不改变 `A_{\mathcal{P}}(t+1)`，它是集体层面的脚本执行，不是 collective real choice moment
-- **共识不自动是共选**：若 `M(t)` 强不对称，少数子群不实际承担任何后果回路，则即便意见一致，该"共识"也是外部化共识
-- **专家决定不自动是共选**：即便专业正确，若 `\mathcal{P}` 全体不对决定承担后果回路，则是以集体名义做个体/小群体选择
-- **真正的共选条件苛刻**：它要求 `A_{\mathcal{P}}` 真实扩展性 + `M(t)` 结构健康 + 非脚本化。历史上真正高频发生真实共选的群体并不多
+- **投票可以是 Selection，但不自动证明 collective agency**：程序化投票完全可能真实改变未来状态和路径；若它只是执行既定授权且没有群体级后果回读 / 重新授权能力，则不应进一步升级为较强 collective agency
+- **共识可以是 Selection，但不自动证明共担**：若 `M(t)` 强不对称，少数子群不实际承担任何后果回路，则“共识”不足以建立对称的 collective accountability
+- **专家决定可以是 Selection，但不自动是群体级重新授权**：专业正确与 Selection 是否发生是一个问题；`\mathcal{P}` 是否作为 bearer 对后果与规则承担历史责任是另一个问题
+- **script / procedure / automation 不能被当作无 Selection 的证据**：它们最多提示 agency / reauthorization 可能较弱，必须另查后果回返、历史写回与未来规则可修改性
+
+### 禁止倒灌
+
+```text
+fails T-COLL-4
+-> no collective Selection
+```
+
+和：
+
+```text
+scripted / automated collective process
+-> no L0->L1 actualisation
+```
+
+均被 RC-A 禁止。
 
 ---
 
@@ -557,7 +579,7 @@ $$
 
 1. **`\Theta^{coll,trace}` 与 `\Theta^{coll,ext}` 的形式化**：§4.4.1 已给出加权聚合 + 共享 `L_2` 独立项；剩余未封口为权重 `w_i(t)`（当前按 `M(t)` 列和给出，但列和本身依赖 `M(t)` 的可测性，即 §9.2）
 2. **`M(t)` 的可测性**：对称/不对称结构在理论上明确，实证提取在大多数社会场景非常困难；本文件不解决此
-3. **共选真实性的外部判据**：T-COLL-4 三条件在第三方视角下如何判定？目前仍带相当主观成分，需要进一步降低依赖
+3. **collective agency / reauthorization 的外部判据**：T-COLL-4 条件在第三方视角下如何判定？目前仍带相当主观成分，需要进一步降低依赖；该开放点不再回指 former P1-T05
 4. **制度与集体 ISP 的精确分界**：本文件说制度是器官不是主体，但某些高度自治的制度性实体（法人、社团）是否能在某些条件下**自身**成为集体 ISP？这需要后续硬化
 5. **跨尺度嵌套**：~~家庭是 ISP，社区是 ISP，国家可能是 ISP——嵌套关系下 `M(t)` 与 `σ_{sr}^{coll}` 如何层级耦合？§4.5 给了单层向上/向下耦合，多层嵌套仍待给出~~ Late-stage candidate material is preserved in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`; it is P1-candidate only under strong closure assumptions and is not part of the minimal canonical definition. 剩余开放点：具体塔层数 domain 实证、跨尺度 `M^{(n\to n+1)}` MOC 多层版本、`r_{min}^{nested}` 实证窗口、跨层耦合边界条件
 6. **历史层面 generative reselectability**：其在长时间尺度上如何演化？文明兴衰能否在明确比较基线后部分读为后果回返或规则修订失败？
@@ -567,7 +589,8 @@ $$
 
 ## §10. Cross-References
 
-- P1-T05 real choice moment（集体版的 upstream）→ `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- RC-A Selection ≠ Agency / automation guard → `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`
+- former P1-T05 demotion provenance → `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`
 - P1-T06 stable ISP（集体 ISP 条件的 upstream）→ 同上
 - former P1-T07 demotion / absorption remainder → 同上
 - ST-A conditional anti-closure / generative reselectability → `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
