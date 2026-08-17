@@ -5,7 +5,7 @@ tags: [Operationalization, UnifiedAudit, SelectionEvent, CG0, DifferenceManifest
 status: active
 record_stage: protocol_v1
 layer: meta
-epistem_layer: os
+epistemic_layer: os
 claim_mode: operations_execution
 claim_level: audit_only
 canonical: false
