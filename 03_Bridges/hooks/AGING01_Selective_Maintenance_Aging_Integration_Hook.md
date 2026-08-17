@@ -8,7 +8,8 @@ claim_mode: evidence
 canonical: false
 domain: aging_biology_selective_maintenance_history_reselectability
 status: active
-integration_status: pending_novelty_and_discrimination
+integration_status: pending
+record_stage: pending_novelty_and_discrimination
 source_ids:
   - SRC-2026-08-17-BIO-TIMMONS-BRENNER-AGING-INFO-CRITIQUE
 dependency:
