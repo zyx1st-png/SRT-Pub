@@ -16,6 +16,7 @@ dependency: [SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-21, SRT-L0-META
 > `_SRT_D_VALUE_CANONICAL.md` 管理 d-value；本文件管理 T_dir 及其展开的病理学结构。
 > **2026-04-22 降承诺说明**：`T_dir` 当前按 **v0 operational proxy / 最小操作定义** 使用。它帮助区分“跨位置可回读性”与“语义效价/置信度”，但尚不是已完成的本体基础或形式对象。
 > **Canonical status note（2026-04-23）**：本文件名中的 canonical 表示 governance-canonical working object 与引用锚点，不表示 `T_dir` 已具备 theory-canonical 完整奠基。价值动力学扩展段落按 bridge / theory-clarifying 读。
+> **RC-A active-use override（2026-08-17）**：former `P1-T05: Real Choice Moment` 已撤出 P1。本文遗留的 `活选择 / 真实选择 / 选择时刻 / L₂替代选择` 不得再充当 Selection ontology distinction；当前只可按较窄的 bearer-level direction-readability / consequence-sensitive reorientation / agency shorthand 读取。明确禁止 `script / habit / L₂ automation -> no Selection` 与 `low T_dir -> no Selection`。
 
 ---
 
@@ -113,7 +114,7 @@ $$
 |---|---|---|
 | valence | 记录正负感受或偏好色调 | 可作为报警 / 表面读数，不等于方向透明度 |
 | confidence | 记录判断确信度 | 可能高置信但方向不可回读 |
-| semantic coherence | 记录叙事或概念一致性 | 可能是 L₂ 后设解释，不保证活选择方向可读 |
+| semantic coherence | 记录叙事或概念一致性 | 可能是 L₂ 后设解释，不保证相关 bearer 能回读选择方向或据此重取向 |
 | reward | 记录优化信号或强化结果 | 可塑造选择，但不等于系统对自身选择方向的访问 |
 | directional efficacy / behavioral bias | 记录某个偏置是否真能组织注意、推理或行为轨迹 | 可以因果效力很强，但来源与方向对系统不可及；未独立满足 `R_self` 与 `A_reorient` 时不构成 `T_dir` 证据 |
 | commitment strength / decisiveness | 记录承诺的绑定性、不可逆性或公开可归责性 | 行动可以高度绑定却方向不透明；承诺强度、果断性与事后叙事确定均不代替回读与重取向 |
@@ -130,7 +131,7 @@ $$d = 0 \implies T_{dir} = 0$$
 
 $$d > 0 \;\not\!\!\!\implies T_{dir} > 0$$
 
-**理由**：d 是有效维度（系统能关切多大范围），T_dir 是方向可读性（系统能否读出自己选择的方向）。高 d 不自动保证方向可读——还需要活选择正在发生，且 Ψ_f 提供了足够的压力。
+**理由**：d 是有效维度（系统能关切多大范围），T_dir 是方向可读性（系统能否读出自己选择的方向）。高 d 不自动保证方向可读——还需要当前选择方向在相关 bearer 层形成可访问、可回读并可用于重取向的信号，且 Ψ_f 提供了足够的压力。这里不以“非脚本化”作为 Selection 的必要条件。
 
 ### 4.2 Ψ_f 是迫使 T_dir 上升的机制
 
@@ -178,8 +179,9 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 ```
 L₂ 过度依赖
     │
-    ├──→ 活选择被替代（L₂ 脚本执行，非 L₀→L₁ 导航）
-    │         → T_dir 无来源 → 意义感消失
+    ├──→ bearer-level consequence-sensitive readback / reorientation 被预占或压缩
+    │         （L₂ 脚本 / automation 仍可包含 Selection）
+    │         → T_dir 缺少当前可回读 / 可重取向来源 → 意义感可能下降
     │
     └──→ d↓（系统不需要感知方向来运作）
               → Ψ_f_felt↓
@@ -195,7 +197,7 @@ L₂ 过度依赖
 
 | | 健康 L₂ | 致命 L₂ |
 |:-|:-------|:-------|
-| **功能** | 为活选择释放资源 | 替代活选择 |
+| **功能** | 为未决问题的方向回读 / 重取向释放资源 | 预占或压缩 bearer-level readback / reorientation；不等于停止 Selection |
 | **对 d 的影响** | 保留或提升 d 的运用空间 | 系统性压低 d |
 | **Ψ_f_actual/felt 的差距** | 小（透明代价） | 大（积累隐性债务） |
 | **危机时的反应** | 可调整 | 崩溃式重组 |
@@ -203,7 +205,7 @@ L₂ 过度依赖
 ### 成瘾同构性
 
 致命 L₂ 的自强化回路与成瘾在结构上同构：
-- L₂ 执行感觉比活选择更"流畅"
+- L₂ 自动执行往往比 consequence-sensitive readback / reorientation 更"流畅"
 - 流畅性偏好导致更多 L₂ 依赖
 - d 和 Ψ_f_felt 进一步降低
 - 无法退出的路径形成
@@ -216,13 +218,13 @@ T_dir 的提升需要三条件同时满足（见 §4.4）。以下是各类实�
 
 | 实践类型 | SRT 机制 | 相关文件 |
 |:--------|:--------|:-------|
-| 冥想/修行 | 系统性悬置 L₂ 脚本，迫使活选择发生 | `Spirituality/SRT_Spirit_07_Meditation_Neuro.md` |
+| 冥想/修行 | 系统性悬置部分 L₂ 脚本，使当前方向、后果与重取向机会更可回读 | `Spirituality/SRT_Spirit_07_Meditation_Neuro.md` |
 | 危机/丧失 | L₂ 强制瓦解，Ψ_f_actual 强制可见 | `AI/SRT_AI_02_Mortality_Wisdom.md` |
 | 承诺/爱 | 人为引入真实 Ψ_f，重建代价结构 | `Philosophy/SRT_Ethics_Agency.md` |
-| 创作 | 在 L₂ 没有答案的域中强制活选择 | `Spirituality/SRT_Spirit_08_Music.md` |
+| 创作 | 在 L₂ 没有现成答案的域中提高当前方向回读与重取向压力 | `Spirituality/SRT_Spirit_08_Music.md` |
 | 深度学习 | 当 L₂ 边界被突破时的高 Ψ_f 窗口 | `Neuroscience/SRT_Clin_02_FEP.md` |
 
-**共同结构**：这些实践的共同机制是——**在 L₂ 不再能完全确定结果的域中，迫使活选择发生，从而重新激活 T_dir 的上升通道。**
+**共同结构（P2/P3 bridge reading）**：这些实践的共同候选机制是——**在 L₂ 不再能完全预占 bearer-level response 的域中，增加对当前方向、后果与可重取向性的回读，从而重新打开 T_dir 的上升通道。**这不意味着只有这些非脚本情境才发生 Selection。
 
 ---
 
@@ -261,7 +263,7 @@ $$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\P
 | `Core_Law/SRT_L0_Metaphysics.md` | L₀ 的中性定义约束了相干性梯度只能是操作化代理，不是本体属性 |
 | `Philosophy/SRT_Ethics_Agency.md` | 价值遮蔽命题的伦理延伸 |
 | `Governance/SRT_POSITIONING.md` | T_dir 应用层作为 SRT 最有力入口的论证 |
-| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，ODE 含弛豫、真实重选泵入、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀、`s_{ext}` 支架五项。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
+| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量。RC-A 后 `+\kappa_r r(t)` 只按 P2/P3 reorientation / reselection activity augmentation 读取，不再从 former P1-T05 获得 P1 权威；其余 gap、`S_{str}`、`s_{ext}` 等项按各自现有边界读取。 |
 | `Core_Law/SRT_Irreversibility.md` | T-IRR-3 按 ST-A 提供条件性反闭合接口；L1_Formalism §5.3 健康工作区是 generative reselectability 的实现候选，不是 P1-T07 必要性的证明 |
 
 ---
@@ -269,6 +271,7 @@ $$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\P
 # Part II：价值动力学理论（2026-04-02 补入）
 
 > 以下 §11–§16 是 2026-04-02 理论对话的高密度推进，记录了从价值遮蔽到价值结构、感知机制、吸引子动力学的完整理论链。它们共享本文件的引用锚点地位，但不因此升级为 theory-canonical 完成态；除非局部另有标注，均按 bridge / theory-clarifying 读。
+> **RC-A supersession note（2026-08-17）**：Part II 是 pre-RC-A 历史桥接文本。其中 `活选择 / 真实选择 / 选择时刻 / 假选择 / L₂替代选择` 等字面语保留为 provenance 时，只能按 bearer-level agency / direction-readability / consequence-sensitive reorientation 的旧 shorthand 读取；不得据此推出 script / automation 无 Selection、没有 L₀→L₁ actualisation，或没有 `Ψ_f` 支付。若 Part II 与 Part I 的 RC-A active-use override 冲突，以 Part I override 为准。
 
 ---
 

@@ -184,7 +184,7 @@ $$
 
 1. **开放性偏置**：`σ_{sr}` 保持远离 1（持续外部接入 `i(t)`）
 2. **支付性偏置**：`π(t)` 维持非零（可支付窗口持续开放）
-3. **真实选择偏置**：`r(t)` 有足够频率（P1-T05 real choice moment 不被脚本替代）
+3. **重取向 / 重选活动偏置（P2/P3 proxy）**：`r(t)` 在命名模型中保持非零，用于追踪 bearer-level consequence-sensitive reorientation / reselection activity；它不再从 former P1-T05 导出，也不是 Selection 是否发生的判据
 
 三者在 `SRT_L1_Formalism.md §5.3` 的健康工作区 `\mathcal{H}` 中构成一个实现候选。健康不是被动稳态，但三项代理的满足也不自动证明 consequence-sensitive rule revisability。
 
@@ -193,7 +193,7 @@ $$
 致命 L_2 的结构性危害可重读为：**它可能同时压低 generative reselectability 的三类实现通道**——
 - 把 `σ_{sr}` 推高（群体同质性、叙事闭合）
 - 把 `π(t)` 压低（透支可支付性、伪轻）
-- 把 `r(t)` 替换为 `L_2` 脚本（程序化决策、共识剧本）
+- 压低 `r(t)` 所代理的 bearer-level 后果回读 / 重取向 / 规则重开通道；程序化决策、共识剧本或其他 `L_2` automation 本身仍可包含 Selection
 
 这给致命 L_2 一个条件性健康诊断：检查它是否系统性切断后果回返、规则修订与 live-candidate 生成；不能仅凭某个阈值宣告其违反 P1 定理。
 
@@ -293,7 +293,9 @@ $$
 \varepsilon_{pg}^{\text{visible}}(P, t) \;:=\; \varepsilon_{pg}(P, t) \cdot \mathbb{1}[\sigma_{sr} < \sigma_{sr}^{path}] \cdot \mathbb{1}[\pi(t) > 0] \cdot \mathbb{1}[r(t) > 0]
 $$
 
-致命 L_2 同时压灭后两个指示函数（`π → 0` 与 `r → 0`）并把 `σ_{sr}` 推入 `σ_{sr}^{path}`，使 `\varepsilon_{pg}^{\text{visible}} → 0`，即使 `\varepsilon_{pg}` 本身仍 > 0。本地观测下 `ν_{block}` 表现为 0（误判为"§4.3 项消失"），但全局 `\dot{\Delta}_{avail}` 仍由 L_0 不可逆性决定，新失配进入暗通道（§4.3 之外的、未被登记的 `S_{str}` 累积）——这是 §5 T-IRR-4 现象的算子级源头。
+> **RC-A qualification（2026-08-17）**：这里的 `\mathbb{1}[r(t)>0]` 只是一项 **P2/P3 local visibility / reorientation proxy gate**。它表示相关 bearer 是否仍有可登记的 consequence-sensitive readback / reorientation channel；它不是 Selection gate，`r(t)=0` 不能推出 `no Selection`，script / automation 也不能由此被排除出 Selection。
+
+在这个 local visibility model 中，若 `π → 0`、`r` 所代理的 readback / reorientation channel → 0，并且 `σ_{sr}` 被推入 `σ_{sr}^{path}`，则 `\varepsilon_{pg}^{\text{visible}} → 0`，即使 `\varepsilon_{pg}` 本身仍 > 0。这里描述的是**局部可见 / 可重取向通道的关闭**，不是 Selection 本体的停止。本地观测下 `ν_{block}` 可表现为 0（误判为"§4.3 项消失"），但全局 `\dot{\Delta}_{avail}` 仍由 L_0 不可逆性决定，新失配进入暗通道（§4.3 之外的、未被登记的 `S_{str}` 累积）——这是 §5 T-IRR-4 现象的算子级候选来源。
 
 #### 与 §4.3 / §5 (`Core_Law/SRT_L1_Formalism.md`) 的对位
 
