@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-17
-source_commit: aae67dfd
-source_branch: agent/srt-p0-03-rca-cleanup
-source_dirty: false
-inputs_digest: 68ad94f21ae317ac
+source_commit: 07e6e652
+source_branch: agent/srt-p0-d2-boundary-a
+source_dirty: true
+inputs_digest: e4cbc2bd81b79b01
 ---
 
 # SRT 核心动力学上下文包
@@ -27,9 +27,9 @@ inputs_digest: 68ad94f21ae317ac
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-17 |
-| 来源 commit | `aae67dfd` |
-| 来源分支 | `agent/srt-p0-03-rca-cleanup` |
-| 生成时来源工作树有改动 | 否 |
+| 来源 commit | `07e6e652` |
+| 来源分支 | `agent/srt-p0-d2-boundary-a` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
