@@ -1,21 +1,24 @@
 ---
 id: SRT-CORE-24-INDEX
 type: navigation_index
-tags: [SRT, Core 24, Index, Floor Replacement, Normativity, Verification, Retrieval, Discriminating Predictions, Anti-Optimization, Scalar Collapse]
-status: active_v4
+tags: [SRT, Core 24, Index, Floor Replacement, Normativity, Verification, Retrieval, Prediction Candidates, Falsification, Anti-Optimization, Scalar Collapse]
+status: active
+version: v5
 layer: meta
 claim_mode: navigation
 epistemic_layer: meta
 dependency: [SRT-CORE-24-FLOOR-NORMATIVITY-VERIFICATION, SRT-CORE-24-CANONICAL-MERGE-DRAFT, SRT-CORE-24-DISCRIMINATING-PREDICTIONS, SRT-CORE-24-NORMATIVITY-ANTI-OPTIMIZATION-INTERFACE, _SRT_CONTEXT_ROUTER, _SRT_DEEP_THEORY_MAP, _SRT_INDEX]
 created: 2026-04-27
-updated: 2026-04-30
+updated: 2026-08-17
 ---
 
 # SRT Core 24 Index — Floor Replacement / Normativity / Non-Reductive Verification
 
 > **Purpose**: Retrieval and integration index for Core 24.
 >
-> Core 24 began as a bridge-hardening supplement, but selected compact claims have now been integrated into the core framework through safe insertion points. It now also includes discriminating-prediction and anti-optimization interface modules for falsification, scalar-collapse analysis, and adjacent-theory contrast.
+> Core 24 began as a bridge-hardening supplement, but selected compact claims have now been integrated into the core framework through safe insertion points. It also includes prediction-candidate / falsification-target and anti-optimization interface modules for empirical pressure, scalar-collapse analysis, and adjacent-theory comparison.
+>
+> **2026-08-17 author decision**: `Core/SRT_Core_24_Discriminating_Predictions.md` retains its historical path for compatibility, but its current epistemic role is **Prediction Candidates and Falsification Targets**. As of this decision, no entry in that module is an established Selection-level D2 discriminator against a frozen bounded R2 rival.
 >
 > This file is an index and does not define theory.
 
@@ -31,10 +34,10 @@ updated: 2026-04-30
 
 - `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md`
 
-### Merge, prediction, and routing files
+### Merge, prediction-candidate, and routing files
 
 - `Core/SRT_Core_24_Canonical_Merge_Draft.md`
-- `Core/SRT_Core_24_Discriminating_Predictions.md`
+- `Core/SRT_Core_24_Discriminating_Predictions.md` — historical filename; current role: prediction candidates / falsification targets
 - `Core/SRT_Core_24_Index.md`
 - `_SRT_CONTEXT_ROUTER.md §21`（原 `_SRT_CONTEXT_ROUTER_CORE24_EXTENSION.md`，2026-07-20 已并入主 router）
 - `Operations/Archive_Records/_SRT_CORE24_NAV_INTEGRATION_PATCH.md`
@@ -71,8 +74,10 @@ Retrieve Core 24 when the query mentions any of the following:
 - Ψ_f、d-value、L2 hardening 的操作化代理；
 - SRT 如何避免玄学化或不可证伪；
 - reviewer-risk guardrails / 审稿风险护栏；
-- discriminating predictions / 区分性预测；
-- SRT 与 FEP / predictive processing / RL / IIT / GNW / social construction / habit theory / bounded rationality 的可检验区分；
+- prediction candidates / falsification targets / 区分性预测候选；
+- SRT 与 FEP / predictive processing / RL / IIT / GNW / social construction / habit theory / bounded adaptive learning 的可检验区分；
+- D2 / D3 discrimination；
+- frozen R2 rival；
 - non-monotonic Ψ_f；
 - non-substitutability beyond reward；
 - L₂ hardening triple signature；
@@ -108,16 +113,19 @@ Retrieve Core 24 when the query mentions any of the following:
 - [x] `_SRT_PSI_F_CANONICAL.md`: inferred-selection-friction bridge reported inserted after `§6` and before `§7`.
 - [x] Addenda preserved for d-value and Ψ_f integrations.
 
-### Phase 3 — Discriminating Prediction Hardening
+### Phase 3 — Prediction-Candidate / Falsification Hardening
 
-- [x] `Core/SRT_Core_24_Discriminating_Predictions.md` created.
-- [x] Six discriminating prediction modules drafted:
+- [x] Historical module `Core/SRT_Core_24_Discriminating_Predictions.md` created.
+- [x] Six single-construct candidate modules drafted:
   - P24-1: non-monotonic `Ψ_f` during new reality formation.
   - P24-2: `d-value` predicts non-substitutability beyond reward / preference.
   - P24-3: `L_2` hardening triple signature.
   - P24-4: frameworks alter visibility and cost before explicit belief change.
   - P24-5: moral norms as cross-subject `L_2` boundaries.
   - P24-6: AI optimization without binding `Ψ_f` fails consequence-return agency tests.
+- [x] P24-7 cross-construct combination signatures registered at P4/P5 observation-hypothesis level.
+- [x] Post-RC-A bounded-rival audit executed for Selection-near candidates.
+- [x] Author decision adopted: module downgraded to **prediction candidates / falsification targets**; current established D2 count = `0`.
 
 ### Phase 4 — Anti-Optimization / Scalar-Collapse Interface
 
@@ -147,12 +155,12 @@ Some long-file insertions were reported as completed by external code-agent runs
 | Core 24 failure conditions | `Core/SRT_OPEN_TENSIONS.md` | integrated | Failure conditions govern overclaim risk. |
 | Value as non-substitutability | `_SRT_D_VALUE_CANONICAL.md` | reported integrated | Does not replace canonical `d-value`; reward / preference / salience remain non-definitional. |
 | Ψ_f as inferred selection friction | `_SRT_PSI_F_CANONICAL.md` | reported integrated | Does not identify `Ψ_f` with task difficulty, pain, effort, energy, Fisher, or prediction error. |
-| Discriminating predictions | `Core/SRT_Core_24_Discriminating_Predictions.md` | drafted | Predictions are pressure tests, not proof of SRT. |
+| Prediction candidates / falsification targets | `Core/SRT_Core_24_Discriminating_Predictions.md` | active candidate surface; D2 count `0` | Testability does not imply SRT-specific discrimination; individual promotion requires a frozen-rival D2 pass. |
 | Normativity as resistance to scalar collapse | `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md` | indexed bridge interface | Does not define `d-value` or `Psi_f`; maps adjacent theory into SRT guardrails. |
 
 ---
 
-## 5. Discriminating Prediction Route
+## 5. Prediction-Candidate and Discrimination Route
 
 When the question asks whether SRT makes distinctive predictions, retrieve:
 
@@ -163,6 +171,12 @@ When the question asks whether SRT makes distinctive predictions, retrieve:
 - `Core/SRT_Core_24_Normativity_Anti_Optimization_Interface.md`
 - `SRT_EXP_MEASURE_MAP.md`
 - `Core/SRT_OPEN_TENSIONS.md`
+
+### Adversarial status records
+
+- `Operations/Audits/SRT_POST_RCA_SELECTION_D2_RANKING_2026-08-17.md`
+- `Operations/Audits/SRT_P24_3_FLOOR_CHALLENGE_R2_DUEL_SPEC_2026-08-17.md`
+- `Operations/Audits/SRT_P24_1_P24_4_R2_TRIAGE_2026-08-17.md`
 
 ### Secondary
 
@@ -176,9 +190,11 @@ When the question asks whether SRT makes distinctive predictions, retrieve:
 
 ### Boundary
 
-- Do not use the predictions as proof that SRT is correct.
-- Use them as discriminating pressure tests.
-- Each prediction should specify adjacent-theory contrast, proxy class, and failure condition.
+- Do not say that the historical `Discriminating_Predictions` filename means the contained items are already discriminating.
+- Current established D2 count is `0` as of 2026-08-17.
+- A candidate may be measurable, falsifiable, and scientifically useful while still being equally predicted by a bounded adjacent model.
+- Use candidates as pressure tests and construct probes unless a frozen rival, common outcome, prospective `O_SRT != O_R2`, and symmetric failure rule are declared.
+- D0 vocabulary and D1 classification differences are not scientific discrimination; D2+ is required for a discriminating-prediction upgrade.
 - Use anti-optimization claims as scalar-collapse guardrails, not as proof that all optimization is non-normative.
 
 ---
@@ -187,15 +203,19 @@ When the question asks whether SRT makes distinctive predictions, retrieve:
 
 Core 24 is no longer merely an isolated supplement. Its selected claims now function as a **canonical framing and bridge-hardening layer** across several files.
 
-However, Core 24 still should not be cited as a completed theorem package.
+However, Core 24 still should not be cited as a completed theorem package, and its prediction module should not be cited as an established SRT-vs-rival discriminator set.
 
 Correct current wording:
 
-> Core 24 has been partially integrated into canonical and canonical-adjacent files as a framing, operational, validation, discriminating-prediction, and anti-optimization layer. Its strongest thesis is that SRT's explanatory power comes from selection-first floor replacement, while its scientific credibility depends on structural, convergent, comparative, falsifiable, and scalar-collapse-sensitive validation.
+> Core 24 has been partially integrated into canonical and canonical-adjacent files as a framing, operational, validation, prediction-candidate / falsification, and anti-optimization layer. Its strongest thesis is that SRT's explanatory power comes from selection-first floor replacement, while its scientific credibility depends on structural, convergent, comparative, falsifiable, scalar-collapse-sensitive, and genuinely rival-discriminating validation. No current P24 item has yet cleared the D2 promotion gate against a frozen bounded R2 rival.
 
 Avoid:
 
 > Core 24 proves SRT explains everything.
+
+Avoid:
+
+> Core 24 already supplies established discriminating predictions against FEP, RL, predictive processing, or bounded adaptive learning.
 
 Avoid:
 
@@ -233,7 +253,7 @@ The following lines are candidates for future higher-level promotion if supporte
 
 ### Candidate 5 — Discriminating Prediction Requirement
 
-> Core 24 claims should be treated as scientifically strengthened only when they generate discriminating predictions not equally entailed by adjacent theories.
+> Core 24 claims should be treated as scientifically strengthened **against a rival** only when they generate a prospective counterfactual or intervention prediction not equally entailed by a frozen bounded adjacent model.
 
 ### Candidate 6 — Anti-Optimization Guardrail
 
@@ -245,20 +265,24 @@ The following lines are candidates for future higher-level promotion if supporte
 
 Core 24 should now be treated as:
 
-> a partially integrated bridge-hardening, canonical-framing, discriminating-prediction, and anti-optimization layer.
+> a partially integrated bridge-hardening, canonical-framing, prediction-candidate / falsification-target, and anti-optimization layer.
+
+Its historical prediction filename should be read as compatibility metadata, not current epistemic rank.
 
 It should not yet be treated as:
 
-> a completed P0/P1 theorem package or replacement for canonical definitions.
+> a completed P0/P1 theorem package, a replacement for canonical definitions, or a set of established SRT-specific discriminating predictions.
 
 ---
 
 ## 9. Next Work
 
-The next hardening task is protocolization:
+The next discrimination task is **not protocolization first**. It is prospective rival separation:
 
-- Convert P24-3 into a concrete lab protocol.
-- Convert P24-1 into a machine-learning regime-shift toy model.
-- Convert P24-2 into a behavioral task distinguishing reward from non-substitutability.
-- Convert scalar-collapse / negative-gate claims into an AI agency evaluation protocol.
-- Add the selected protocol to `SRT_EXP_TEMPLATE.md` or a new `Core/SRT_Core_24_Protocol_Pilot.md` file.
+- freeze a bounded R2 rival before data inspection;
+- declare common measurement and intervention;
+- produce `O_SRT != O_R2` prospectively;
+- declare symmetric failure rules;
+- stop at specification-stage **NO-GO** when the rival predicts the same observation family.
+
+Existing P24 tasks may still proceed as construct-operationalization or falsification studies, but they must be labeled accordingly. `P24-3` is currently best used as a negative-control / calibration surface because the ordinary history-dependent learner absorption is already explicit.
