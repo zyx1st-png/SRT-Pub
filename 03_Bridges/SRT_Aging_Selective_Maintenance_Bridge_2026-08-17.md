@@ -3,7 +3,7 @@ id: SRT-AGING-SELECTIVE-MAINTENANCE-BRIDGE-2026-08-17
 type: bridge
 status: active_v0_1
 layer: L1
- epistemic_layer: bridge
+epistemic_layer: bridge
 claim_mode: bridge
 claim_level: P3-P4
 canonical: false
@@ -12,12 +12,12 @@ created: 2026-08-17
 source_ids:
   - SRC-2026-08-17-BIO-TIMMONS-BRENNER-AGING-INFO-CRITIQUE
 dependency:
-  - SRT-PSIF-CANONICAL
-  - SRT-IRREVERSIBILITY
-  - SRT-SELECTION-EVENT-COMPACTCORE
-  - SRT-ENTROPY-DISTURBANCE-SELECTIVE-REORGANIZATION
-  - SRT-HISTORY-CONDITIONED-LIE-REACHABILITY
-  - SRT-GOV-SUB01
+  - _SRT_PSI_F_CANONICAL.md
+  - Core_Law/SRT_Irreversibility.md
+  - 03_Bridges/SRT_Selection_Event_CompactCore.md
+  - 03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_2026-08-04.md
+  - 03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md
+  - Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md
 related_claims:
   - payability
   - consequence_bearing_position
