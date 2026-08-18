@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: f640ead0
+source_commit: f3f129a1
 source_branch: HEAD
 source_dirty: true
 inputs_digest: a4bf74a2bd75f2f4
@@ -27,7 +27,7 @@ inputs_digest: a4bf74a2bd75f2f4
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `f640ead0` |
+| 来源 commit | `f3f129a1` |
 | 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
@@ -44,17 +44,17 @@ inputs_digest: a4bf74a2bd75f2f4
 | # | 文件 | 最后 commit |
 |---|---|---|
 | 1 | `SRT_AI_START.md` | 2026-08-18 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-08-12 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-08-18 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
-| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-12 |
+| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
-| 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-12 |
+| 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
 | 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-08-17 |
 | 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
 | 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-12 |
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
-| 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-12 |
+| 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
 | 14 | `Core/SRT_Core_22_Equations.md` | 2026-08-12 |
 | 15 | `_SRT_SYMBOL_TABLE.md` | 2026-08-12 |
@@ -696,7 +696,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -1420,7 +1420,7 @@ This split changes epistemic placement, not the underlying intended theory.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2055,7 +2055,7 @@ L0 不负责给出方程和实验，但它必须约束上层该怎么展开。
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -4301,7 +4301,7 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 

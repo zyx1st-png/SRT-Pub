@@ -35,6 +35,8 @@ type: theory_hardening_patch
 
 # SRT Philosophy Patch PH-MR01: Representational Gradualism / Adjacent-Case Audit v0.1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **Status:** P3 philosophy-of-mind / mental-representation hardening patch.  
 > **Canonical caution:** this patch does not redefine representation, `d`, `Psi_f`, `L0/L1/L2`, Stable ISP, bearer, subjecthood, phenomenality or the Real Choice Moment. It imports an audit method and records one SRT-side research hypothesis.
 
@@ -160,7 +162,7 @@ graded formation / strength of an organization
 graded actuality of a particular history-producing event.
 ```
 
-No weakening of the Real Choice Moment follows.
+No weakening of P1-T06 Stable ISP or the downstream RC-A Agency / Automation Guard follows; this adjacent-case audit does not redefine Selection.
 
 ## 4. PH-MR01-C — information-processing complexity is not representation by definition
 

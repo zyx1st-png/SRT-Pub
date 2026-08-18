@@ -16,9 +16,11 @@ dependency: [Core_Law/SRT_L0_Metaphysics, Philosophy/SRT_HardProblem_Epistemolog
 
 # Ruliad / Limited Computational Rendering / Observer Theory ↔ SRT
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **角色说明**：本文件是非 canonical 的 P3 邻接理论桥。它用于翻译和压力测试 Gabriel Proulx 对 Wolfram ruliad / observer framework 的唯心主义重读，不把该文章、Wolfram 的计算本体论、分析唯心主义或“Universal Relativity”写成 SRT 定义、证据确认或 P0/P1 结论。
 >
-> **核心裁决**：本文最值得 SRT 吸收的不是 `reality = experience`，而是四个接口：`computational description != computational ontology`、observer 可以是后成结构、有限边界具有生成作用、物理描述可能带有观察位置依赖。SRT 的主要增量则是把 **rendering 与 selection 分开**：有限渲染只有在差异被非等价登记、改变路径、产生可定位后果并写回未来可达空间时，才升级为具有 SRT 意义的真实选择事件。
+> **核心裁决**：本文最值得 SRT 吸收的不是 `reality = experience`，而是四个接口：`computational description != computational ontology`、observer 可以是后成结构、有限边界具有生成作用、物理描述可能带有观察位置依赖。SRT 的主要增量则是把 **rendering 与 selection 分开**：非等价登记、路径效力、可定位后果与未来可达空间写回可以支持一个 P2/P3 bounded Selection-event candidate，但不定义 Selection，也不自动证明 agency。
 
 ---
 
@@ -78,7 +80,7 @@ Primary SRT interfaces:
 - `L1`: manifest / actualized slice or event;
 - `L2`: stabilized history / constraint domain that shapes later selection;
 - `Ĝ_θ`: parameterized selection / anchoring operator;
-- real choice moment: a live event whose result constrains future reachable paths;
+- bounded Selection-event candidate: a P2/P3 event-audit output under the relevant CG/SEA dimensions; it is not a Selection or agency definition;
 - consequence-bearing position: where costs, losses, constraints, or risks actually land;
 - `Ψ_f`: payability burden, not generic computational cost;
 - `d`: stake-coupled concern summary, not mere bandwidth or computational capacity;
@@ -133,7 +135,7 @@ A rendering can:
 - define an observer-relative object boundary;
 - stabilize a local description;
 
-without yet satisfying the stronger SRT conditions for a real selection event.
+without yet supporting the stronger P2/P3 bounded Selection-event candidate audit dimensions.
 
 For SRT, the escalation path is approximately:
 
@@ -588,4 +590,4 @@ A future synthesis may be triggered if one of the following worklines reopens:
 
 ## 15. One-paragraph abstract
 
-Proulx’s idealist reinterpretation of Wolfram’s ruliad is valuable to SRT not because it establishes that reality is experience, but because it separates computational description from computational substrate, treats observers as potentially downstream constructs, and highlights finite bounds as constitutive conditions for coherent manifestation. SRT preserves these insights while drawing a harder line between **rendering** and **selection**: coarse-grained appearance or bounded access does not yet constitute a real choice event unless differences are non-equivalently registered, alter path organization, produce consequences at a locatable bearing position, and write back into future reachability. This distinction also exposes the main unresolved burdens of the experiential-ruliad proposal—individuation, shared constraints, entropy overreach, and the absence of explicit frame transformations / invariants behind “Universal Relativity.” The resulting research opportunity is a bounded **selection-frame relativity** program in which manifestation is perspective-dependent but cross-perspective comparison remains constrained by consequence, irreversibility, payability, and writeback rather than collapsing into unrestricted perspectivism.
+Proulx’s idealist reinterpretation of Wolfram’s ruliad is valuable to SRT not because it establishes that reality is experience, but because it separates computational description from computational substrate, treats observers as potentially downstream constructs, and highlights finite bounds as constitutive conditions for coherent manifestation. SRT preserves these insights while drawing a harder line between **rendering** and **selection**: coarse-grained appearance or bounded access alone does not establish a bounded Selection-event candidate; non-equivalent registration, path organization, locatable consequence bearing and future-reachability writeback are P2/P3 audit dimensions rather than a definition of Selection. This distinction also exposes the main unresolved burdens of the experiential-ruliad proposal—individuation, shared constraints, entropy overreach, and the absence of explicit frame transformations / invariants behind “Universal Relativity.” The resulting research opportunity is a bounded **selection-frame relativity** program in which manifestation is perspective-dependent but cross-perspective comparison remains constrained by consequence, irreversibility, payability, and writeback rather than collapsing into unrestricted perspectivism.

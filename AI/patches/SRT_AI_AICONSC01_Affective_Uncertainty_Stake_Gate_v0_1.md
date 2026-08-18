@@ -34,6 +34,8 @@ tags: [affect, artificial-consciousness, active-inference, markov-blanket, uncer
 
 # AICONSC01 — Affective Uncertainty / Stake Gate
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > Status: bounded AI-consciousness bridge and experiment-design patch.  
 > Canonical caution: this patch does not define consciousness, affect, `d-value`, `Psi_f`, `T_dir`, a real choice moment, or stable ISP. It records a high-value architecture interface and adds SRT bearer/consequence gates that the source does not itself fully establish.
 
@@ -75,7 +77,7 @@ simulated survival variable
 != non-transferable stake
 
 subjective uncertainty
-!= real choice moment
+!= proof of stronger agency / subjecthood
 ~~~
 
 ## 3. Main SRT bridge claim
@@ -179,7 +181,7 @@ AffectiveCandidate == phenomenal consciousness
 | hedonic place preference | controlled proxy-hijacking behavior | passing the behavior test is not consciousness proof |
 | misleading low-bandwidth cue | stake-proxy misbinding | epistemic error can coexist with real consequence |
 | external determinism | third-person process description | does not settle situated bearing either way |
-| subjective non-determinism | uncertainty from the agent’s position | ignorance alone is not SRT real choice |
+| subjective non-determinism | uncertainty from the agent’s position | ignorance alone does not establish stronger agency / subjecthood |
 
 ## 6. Stake-proxy misbinding
 
@@ -211,7 +213,7 @@ SRT can describe this as **stake-proxy misbinding**:
 
 This is stronger than ordinary benchmark reward hacking when the failure genuinely returns to the same bearer. It is weaker when the “need” is only an externally scored variable and the agent can be reset without loss.
 
-## 7. Determinism, uncertainty, and real choice
+## 7. Determinism, uncertainty, and downstream agency
 
 The source argues that an agent can be externally deterministic while internally uncertain. SRT should preserve two distinct claims:
 
@@ -222,10 +224,10 @@ external determinism does not eliminate situated access difference
 and:
 
 ~~~
-situated uncertainty does not by itself establish a real choice moment
+situated uncertainty does not by itself establish stronger agency / subject-level revision standing
 ~~~
 
-A SRT real choice moment requires that what is selected genuinely constrains the system’s future selection space. A probability distribution over scripted policies can remain an `L2` execution process unless selection has consequence-bearing historical efficacy.
+RC-A no longer treats future-space constraint as a P1 Real Choice Moment criterion. Future-path constraint and consequence-bearing historical efficacy can remain evidence inside bounded event or downstream agency audits, but a probability distribution over scripted policies neither proves stronger agency nor proves that no Selection occurred.
 
 The source therefore explains a candidate mechanism for the **experience of choice and control** more directly than it demonstrates SRT freedom.
 
@@ -285,9 +287,9 @@ A scalar policy criterion can compare actions while the model preserves categori
 
 **Level:** P3 formal guardrail.
 
-### AICONSC01-C7 — felt-choice / real-choice separation
+### AICONSC01-C7 — felt-control / downstream-agency separation
 
-A system may have a mechanism that supports the experience of control without satisfying the SRT condition that the selected event genuinely constrains future selectability.
+A system may have a mechanism that supports the experience of control without thereby establishing stronger SRT agency / subject-level revision standing. Future-selectability effects remain one downstream audit dimension, not a Selection definition.
 
 **Level:** P3 philosophy-of-agency bridge.
 
@@ -387,7 +389,7 @@ The future synthesis should retain only:
 2. the affective candidate architecture;
 3. same-bearer and non-transferable consequence gates;
 4. stake-proxy misbinding;
-5. felt-choice / real-choice separation;
+5. felt-control / downstream-agency separation;
 6. the reset/copy/rollback audit.
 
 ## 13. One-paragraph abstract

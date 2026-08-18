@@ -48,6 +48,8 @@ id: PATCH-PHIL-PH-CONSC04-PHENOMENAL-NECESSITY-ZOMBIE-DELETION
 
 # SRT Philosophy Patch PH-CONSC04: Phenomenal Necessity / Zombie Deletion Test v0.1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **Status**: P3/P4 philosophy-of-mind hardening patch.  
 > **Canonical caution**: this file does not define consciousness, qualia, `d`, `Psi_f`, Stable ISP, Real Choice Moment, bearer, or phenomenality canonically. It does not claim that SRT has solved the hard problem. It narrows the residual burden left after `PH-CONSC02` and `PH-CONSC03` and provides a falsification/deletion-oriented pressure test for stronger SRT consciousness language.
 
@@ -77,7 +79,7 @@ PH-CONSC02 -> perspectival gap gate
 PH-CONSC03 -> selector / bearer / concern domain / experiencer decomposition
 NEURAL24 -> bearer-indexed affective readout + phenomenal stopping-point audit
 AICONSC01 -> artificial affect / same-bearer stake gate
-Core/SRT_Core_21b_Constitutive_Theorems.md -> Real Choice Moment + Stable ISP
+Core/SRT_Core_21b_Constitutive_Theorems.md -> P1-T06 Stable ISP; former P1-T05 Real Choice Moment is RC-A demotion provenance only
 Core_Law/SRT_Individuation.md -> subject-position entry before reflective self-consciousness
 ```
 
@@ -111,7 +113,7 @@ boundary maintenance
 + history-bearing writeback
 + stake coupling
 + counterfactual / reselection capacity
-+ Real Choice Moment
++ bounded event-candidate / downstream agency audit where relevant
 + Stable ISP
 + individuation dynamics
 ```
@@ -152,7 +154,7 @@ selection
 -> stake-bearing relevance
 -> history / writeback
 -> counterfactual alternative space
--> real choice moments
+-> bounded event-candidate / downstream agency audit where relevant
 -> stable perspective-bearing ISP
 -> self-model
 -> reflective self-consciousness
@@ -311,7 +313,7 @@ non-trivial stake
 history-bearing writeback
 integrated candidate selection
 counterfactual alternatives
-Real-Choice-Moment-compatible transitions
+consequence-sensitive / revision-compatible transitions
 Stable-ISP-compatible continuity
 self-modeling
 ```

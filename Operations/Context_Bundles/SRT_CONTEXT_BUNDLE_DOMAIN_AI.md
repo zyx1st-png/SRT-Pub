@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: f640ead0
+source_commit: f3f129a1
 source_branch: HEAD
 source_dirty: true
 inputs_digest: a4bf74a2bd75f2f4
@@ -27,7 +27,7 @@ inputs_digest: a4bf74a2bd75f2f4
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `f640ead0` |
+| 来源 commit | `f3f129a1` |
 | 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
@@ -43,10 +43,10 @@ inputs_digest: a4bf74a2bd75f2f4
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `AI/SRT_AI_Claim_Status.md` | 2026-08-08 |
+| 1 | `AI/SRT_AI_Claim_Status.md` | 2026-08-18 |
 | 2 | `AI/AI_POSITIONING_NOTE.md` | 2026-07-16 |
 | 3 | `AI/README.md` | 2026-08-16 |
-| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-08 |
+| 4 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-18 |
 | 5 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
 | 6 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
 
@@ -447,7 +447,7 @@ When answering about SRT:
 | epistemic_layer | bridge |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-08 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -964,7 +964,7 @@ Paused for future adjudication:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-08 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 

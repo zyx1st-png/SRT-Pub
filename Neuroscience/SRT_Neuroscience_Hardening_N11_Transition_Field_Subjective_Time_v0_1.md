@@ -1,5 +1,7 @@
 # SRT Neuroscience Hardening N11: Transition Field, Subjective Time, and Action Readiness v0.1
 
+> **RC-A namespace note（2026-08-18）**：本文件的 `r(t)` 是来源于 transition-field 框架的局部 **action-readiness / transition-density** P3/P4 bridge quantity；它不是 `Core_Law/SRT_L1_Formalism.md` 中已由 RC-A 删除的 former-P1-T05-derived 全局 `r(t)`，也不从 Selection simpliciter、former P1-T05 或 `ε_pg` 推导。不得把 N11 `r(t)` / `r_SRT(t)` 代入 `T_dir` 或 `S_sig` 方程，也不得据此复活被删除的全局 rate。
+
 > Status: bridge / lab working draft.  
 > Canonical caution: this document does not modify SRT primitive axioms. It proposes a neuroscience-facing implementation and pressure-test layer for SRT.
 

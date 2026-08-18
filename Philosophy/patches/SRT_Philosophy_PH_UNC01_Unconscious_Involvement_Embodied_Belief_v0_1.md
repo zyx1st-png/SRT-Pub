@@ -52,6 +52,8 @@ type: theory_hardening_patch
 
 # SRT Philosophy Patch PH-UNC01: Unconscious Involvement / Embodied Belief v0.1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **Status:** bounded P3 philosophy-of-mind / history / belief / consciousness hardening note.  
 > **Canonical caution:** this patch does not redefine `L0/L1/L2`, `d`, `Psi_f`, `T_dir`, `kappa`, Stable ISP, Real Choice Moment, consciousness, embodied position, or stake. It records the bridge pressure that survived a complete close read of Gil Morejón's *The Unconscious of Thought in Leibniz, Spinoza, and Hume* and separates source-backed claims from SRT-side extensions.
 
@@ -228,7 +230,7 @@ structural openness
 
 An agent may experience two options as equally weighted while obscure differences already bias the field. Likewise, not knowing what will happen next can reflect inadequate access rather than a genuinely live future branch.
 
-### Relation to Real Choice Moment
+### Relation to downstream agency / revision after RC-A
 
 Under RC-A, this strengthens only the **downstream diagnostic discipline** formerly associated with P1-T05:
 
@@ -238,7 +240,7 @@ felt indecision
 introspective unpredictability
 ```
 
-must not be used as sufficient evidence for a Real Choice Moment.
+must not be used as sufficient evidence for stronger agency / subject-level revision standing.
 
 At the same time, SRT must not follow Spinoza or a deterministic Leibnizian reading into the opposite overreach:
 
@@ -373,7 +375,7 @@ history-conditioned choice
 history-exhausted choice
 ```
 
-Any stable ISP is necessarily history-bearing. Therefore a Real Choice Moment cannot require the absence of habit or inherited constraint.
+Any stable ISP is necessarily history-bearing. Therefore stronger agency / revision standing cannot require the absence of habit or inherited constraint; and habit itself cannot be used to infer `no Selection`.
 
 The relevant question is whether the current live field is fully exhausted by prior scaffold:
 
@@ -692,7 +694,7 @@ Preferred future synthesis order:
 1. Q12 embodied position / stakes
 2. Core L2 scaffold / writeback
 3. consciousness conditions / Stable ISP
-4. agency / Real Choice Moment
+4. agency / consequence-sensitive revision
 5. Q16 subject sedimentation
 ```
 
