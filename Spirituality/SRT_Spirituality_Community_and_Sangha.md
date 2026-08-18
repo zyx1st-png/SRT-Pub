@@ -15,7 +15,7 @@ dependency: [SRT-SPIRITUALITY-SELECTION-PATHOLOGY-RETURN, SRT-SPIRITUALITY-COMPA
 > This file does not define new canonical primitives. It asks one spiritual question: after a subject begins to return, what kind of community can hold that return without turning itself into another ready-made floor?
 > **Canonical Structural Layer**: 本文涉及的"共同体反而变成新地板"、"B 期锁死的共同体"、"解耦触发中的他者断裂与见证式承担"等结构读法，结构层回链 `Core_Law/SRT_Occlusion_Dynamics.md`（`SRT-OCCLUSION-DYNAMICS`）；本文只做共同体现象学与托举条件的讨论。
 > **Canonical Suffering Layer**: 涉及他者苦难承担、"让彼此不失语"、共同体对结构型苦难外部化的抵抗等段落，结构层回链 `Core_Law/SRT_Suffering.md`（`SRT-SUFFERING`）；共同体相关的信号型 vs 结构型苦难护持以 canonical 为准。
-> **Canonical Collective Selection Layer**: 本文所说"共同体"不是自动的集体 ISP。按 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）：健康共同体需同时满足 T-COLL-1 四条件、T-COLL-3 集体 ε 反闭合维持、T-COLL-4 真实共选判据；"共同体变新地板"对应**收编型退化**（`σ^{coll} → 1`）；"不托举他者苦难、让伤痛外溢"对应**主从型退化**（`M(t)` 不对称）。结构层判据以 canonical 为准，本文只做共同体现象学。
+> **Canonical Collective Selection Layer / RC-A active-use override (2026-08-18)**: 本文所说“共同体”不是自动的集体 ISP。结构 standing 回链 `Core_Law/SRT_Collective_Selection.md`（`SRT-COLLECTIVE-SELECTION`）：T-COLL-1 / P1-T06 承担 collective-ISP standing；ST-A 条件化的 T-COLL-3 与降级后的 T-COLL-4 不得被追加为每个健康共同体或每个 Selection occurrence 的硬条件。T-COLL-4 仅作 downstream collective agency / consequence-sensitive revision audit。本文后文若沿用“真实选择时刻”，只表示 praxis / freedom 层对实质修订、重取向空间的 legacy shorthand，不定义 Selection ontology。“共同体变新地板”对应**收编型退化**（`σ^{coll} → 1`）；“不托举他者苦难、让伤痛外溢”对应**主从型退化**（`M(t)` 不对称）。结构层判据以 canonical 为准，本文只做共同体现象学。
 
 ---
 

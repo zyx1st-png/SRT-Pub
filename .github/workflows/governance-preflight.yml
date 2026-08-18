@@ -2,18 +2,22 @@ name: Governance Preflight
 
 on:
   pull_request:
+  push:
+    branches:
+      - main
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   governance-preflight:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out PR head
+      - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          # Full history is required for changed-file attribution, base-health
+          # comparison, baseline monotonicity, and context-bundle provenance.
           fetch-depth: 0
 
       - name: Set up uv
@@ -24,94 +28,161 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Apply final-review RC-A repair
-        run: python scripts/_temp_rca_final_review_fix.py
-
-      - name: Refresh split metadata
-        run: uv run python scripts/refresh_split_metadata.py
-
-      - name: Remove temporary machinery and restore workflow
+      - name: Check base main governance health
+        id: base_governance
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
         shell: bash
         run: |
-          rm -f scripts/_temp_rca_final_review_fix.py
-          git show origin/main:.github/workflows/governance-preflight.yml > .github/workflows/governance-preflight.yml
+          set -o pipefail
+          base_ref="origin/${{ github.base_ref }}"
+          rm -rf /tmp/srt-governance-base
+          trap 'git worktree remove --force /tmp/srt-governance-base >/dev/null 2>&1 || true' EXIT
+          git worktree add --detach /tmp/srt-governance-base "$base_ref"
+          (
+            cd /tmp/srt-governance-base
+            uv run python scripts/refresh_split_metadata.py --check
+            uv run python scripts/governance_preflight.py \
+              --skip-write-report \
+              --strict-split-metadata
+          ) 2>&1 | tee base-governance-preflight.log
 
-      - name: Regenerate context bundles
-        run: uv run python scripts/build_srt_context_bundles.py
-
-      - name: Verify generated surfaces and governance
+      - name: Check PR-local frontmatter
+        id: pr_frontmatter
+        if: github.event_name == 'pull_request'
         shell: bash
         run: |
-          set -euo pipefail
-          uv run python scripts/refresh_split_metadata.py --check
-          uv run python scripts/build_srt_context_bundles.py --check
-          uv run python scripts/governance_preflight.py --skip-write-report --strict-split-metadata
-          git diff --check
+          set -o pipefail
+          uv run python scripts/check_frontmatter_changed.py \
+            --base-ref "origin/${{ github.base_ref }}" \
+            --baseline Governance/Frontmatter_Warning_Baseline.txt \
+            --fail-on-new-warnings \
+            --suggest-fixes 2>&1 | tee pr-frontmatter.log
 
-      - name: Build strengthened final-review inventory
+      - name: Enforce frontmatter baseline monotonicity
+        id: baseline_monotonic
+        if: github.event_name == 'pull_request'
         shell: bash
+        env:
+          BASELINE_EXPANSION_APPROVED: ${{ contains(github.event.pull_request.labels.*.name, 'governance-baseline-expansion-approved') }}
+        run: |
+          set -o pipefail
+          args=(
+            --base-ref "origin/${{ github.base_ref }}"
+            --baseline Governance/Frontmatter_Warning_Baseline.txt
+          )
+          if [[ "$BASELINE_EXPANSION_APPROVED" == "true" ]]; then
+            args+=(--allow-added)
+          fi
+          uv run python scripts/check_frontmatter_baseline_monotonic.py "${args[@]}" \
+            2>&1 | tee baseline-monotonic.log
+
+      - name: Check split metadata freshness
+        run: uv run python scripts/refresh_split_metadata.py --check
+
+      - name: Run governance preflight
+        id: full_preflight
+        shell: bash
+        run: |
+          set -o pipefail
+          uv run python scripts/governance_preflight.py \
+            --skip-write-report \
+            --strict-split-metadata 2>&1 | tee governance-preflight.log
+
+      - name: Classify governance result
+        if: always()
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_OUTCOME: ${{ steps.base_governance.outcome }}
+          LOCAL_OUTCOME: ${{ steps.pr_frontmatter.outcome }}
+          BASELINE_OUTCOME: ${{ steps.baseline_monotonic.outcome }}
+          FULL_OUTCOME: ${{ steps.full_preflight.outcome }}
         run: |
           python - <<'PY'
+          import json
+          import os
           from pathlib import Path
-          import subprocess
 
-          terms = [
-              "真实重选率",
-              "共选真实性",
-              "真实共选",
-              "r^{(n→n+1)}",
-              "r^{(n\\to n+1)}",
-              "r^{coll}",
-              "真实选择时刻",
-          ]
-          tracked = subprocess.check_output(["git", "ls-files", "-z"]).split(b"\0")
-          rows = []
-          read_errors = 0
-          scanned = 0
-          for raw in tracked:
-              if not raw:
-                  continue
-              p = Path(raw.decode("utf-8", errors="surrogateescape"))
-              if not p.is_file() or p.is_symlink():
-                  continue
-              try:
-                  data = p.read_text(encoding="utf-8")
-              except (UnicodeDecodeError, OSError):
-                  continue
-              scanned += 1
-              for lineno, line in enumerate(data.splitlines(), 1):
-                  hits = [t for t in terms if t in line]
-                  if hits:
-                      rows.append((str(p), lineno, hits, line))
-          out = Path("rca-final-review-strengthened-inventory.txt")
-          with out.open("w", encoding="utf-8") as f:
-              f.write(f"tracked={len([x for x in tracked if x])}\n")
-              f.write(f"text_scanned={scanned}\n")
-              f.write(f"read_errors={read_errors}\n")
-              f.write(f"hits={len(rows)}\n\n")
-              for path, lineno, hits, line in rows:
-                  f.write(f"{path}:{lineno}: {','.join(hits)} :: {line}\n")
-          print(out.read_text(encoding="utf-8"))
+          def outcome(name: str) -> str:
+              value = os.environ.get(name, "").strip()
+              return value or "not-run"
+
+          event_name = outcome("EVENT_NAME")
+          base = outcome("BASE_OUTCOME")
+          local = outcome("LOCAL_OUTCOME")
+          baseline = outcome("BASELINE_OUTCOME")
+          full = outcome("FULL_OUTCOME")
+
+          if event_name != "pull_request":
+              scope = "main_push"
+              disposition = "inspect_full_preflight"
+              verdict = "MAIN PUSH CHECK — inspect the full preflight result."
+          elif local == "failure":
+              scope = "pr_local"
+              disposition = "do_not_merge"
+              verdict = "PR_LOCAL / LOCAL DIRTY / DO NOT MERGE."
+          elif baseline == "failure":
+              scope = "baseline_expansion"
+              disposition = "do_not_merge"
+              verdict = "PR_LOCAL BASELINE DEBT EXPANSION / DO NOT MERGE."
+          elif base == "failure" and full == "success":
+              scope = "base_main_repaired"
+              disposition = "governance_hotfix_only"
+              verdict = "BASE_MAIN WAS BLOCKED; THIS PR REPAIRS IT / HOTFIX PATH."
+          elif base == "failure":
+              scope = "base_main"
+              disposition = "governance_hotfix_only"
+              verdict = "BASE_MAIN BLOCKED / HOTFIX ONLY."
+          elif full == "failure":
+              scope = "merged_repository_or_infrastructure"
+              disposition = "do_not_merge"
+              verdict = "LOCAL FRONTMATTER CLEAN; FULL REPOSITORY OR INFRA FAILURE / DO NOT MERGE."
+          else:
+              scope = "none"
+              disposition = "normal_merge"
+              verdict = "LOCAL CLEAN / MAIN HEALTHY / NORMAL MERGE."
+
+          payload = {
+              "schema_version": 1,
+              "event_name": event_name,
+              "failure_scope": scope,
+              "merge_disposition": disposition,
+              "base_main_health": base,
+              "pr_local_frontmatter": local,
+              "baseline_monotonicity": baseline,
+              "merged_repository_preflight": full,
+              "verdict": verdict,
+          }
+          Path("governance-attribution.json").write_text(
+              json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          summary = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          with summary.open("a", encoding="utf-8") as handle:
+              handle.write("## Governance failure attribution\n\n")
+              handle.write("| Scope | Outcome |\n")
+              handle.write("|---|---|\n")
+              handle.write(f"| base_main_governance | {base} |\n")
+              handle.write(f"| pr_local_frontmatter | {local} |\n")
+              handle.write(f"| baseline_monotonicity | {baseline} |\n")
+              handle.write(f"| merged_repository_preflight | {full} |\n\n")
+              handle.write(f"**Verdict:** {verdict}\n")
+
+          print(json.dumps(payload, ensure_ascii=False, indent=2))
           PY
 
-      - name: Commit functional repair and restored workflow
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "zyx1st-png"
-          git config user.email "zyx1st@gmail.com"
-          git add -A
-          git diff --cached --check
-          if git diff --cached --quiet; then
-            echo "No functional changes to commit"
-            exit 1
-          fi
-          git commit -m "Close final RC-A review gaps"
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
-
-      - name: Upload strengthened inventory
+      - name: Upload governance preflight diagnostics
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: rc-a-final-review-strengthened-inventory
-          path: rca-final-review-strengthened-inventory.txt
+          name: governance-preflight-diagnostics
+          path: |
+            governance-preflight.log
+            base-governance-preflight.log
+            pr-frontmatter.log
+            baseline-monotonic.log
+            governance-attribution.json
+          if-no-files-found: warn
           retention-days: 14
