@@ -212,13 +212,17 @@ Split metadata was refreshed with the repository's own generator where owner / m
 
 The final OOD-sync execution run `32096756837` (run number `927`) used the PR's actual head checkout, restored the canonical workflow before the functional commit, and validated the exact final working tree that became commit `0aaa72be66272226247297f4b81ecaca811e1eef`.
 
+After closure writeback, the repository's ordinary Governance Preflight also passed on commit `fc416356001f261941bf9e1b519f4b92f3578e6c` in run `32096973779` (run number `932`).
+
 Passing gates include:
 
+- base-main governance health: **PASS**
+- PR-local frontmatter: **PASS**
+- baseline monotonicity: **PASS**
 - split metadata freshness: **PASS**
 - Context Bundle freshness: **PASS**
-- full `governance_preflight.py --skip-write-report --strict-split-metadata`: **PASS**
+- full governance preflight: **PASS**
 - final tracked-file search-family inventory: **PASS**, `read_errors=0`
-- `git diff --cached --check`: **PASS**
 - temporary workflow / helper machinery: **removed before functional commit**
 
 The ordinary workflow file at branch head is restored to the repository's canonical `contents: read` version. The earlier Context Bundle freshness failure is **closed, not waived**.
