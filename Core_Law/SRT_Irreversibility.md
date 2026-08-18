@@ -178,24 +178,23 @@ $$
 
 是单向的——信号型在通道关闭时**转**结构型，但结构型不能自动反向转回信号型。这个不对称方程的不可自动逆转直接由 L_0 irreversibility / absorption remainder 保证；T-IRR-3 只提供条件性反闭合解释，不是该方向性的必要前件。
 
-### generative reselectability 的三种候选实现
+### generative reselectability 的候选实现边界（RC-A 同步）
 
-生成性健康可通过以下结构接受审计（可叠加，但均非充分条件）：
+生成性健康仍可通过开放接入、可支付窗口、后果回返与规则修订等下游结构接受审计，但 **former P1-T05 的 `r(t)` 不再是其中的 P1 派生通道，也不在本文件中被重新定义**。当前保留的两类已有 operational 输入为：
 
-1. **开放性偏置**：`σ_{sr}` 保持远离 1（持续外部接入 `i(t)`）
-2. **支付性偏置**：`π(t)` 维持非零（可支付窗口持续开放）
-3. **真实选择偏置**：`r(t)` 有足够频率（P1-T05 real choice moment 不被脚本替代）
+1. **开放性代理**：`σ_{sr}` 保持远离 1（持续外部接入 `i(t)`）
+2. **支付性代理**：`π(t)` 维持非零（可支付窗口持续开放）
 
-三者在 `SRT_L1_Formalism.md §5.3` 的健康工作区 `\mathcal{H}` 中构成一个实现候选。健康不是被动稳态，但三项代理的满足也不自动证明 consequence-sensitive rule revisability。
+它们都不是 generative reselectability 的充分条件。更强的 consequence-sensitive revision 仍由 `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` 承担；本轮不为它选择新的标量 rate。
 
 ### 对 L_2 的含义
 
-致命 L_2 的结构性危害可重读为：**它可能同时压低 generative reselectability 的三类实现通道**——
+致命 L_2 的结构性危害可重读为：**它可能同时压低多类 generative-health 实现通道**——
 - 把 `σ_{sr}` 推高（群体同质性、叙事闭合）
 - 把 `π(t)` 压低（透支可支付性、伪轻）
-- 把 `r(t)` 替换为 `L_2` 脚本（程序化决策、共识剧本）
+- 切断后果回返、规则修订或新的有效候选生成
 
-这给致命 L_2 一个条件性健康诊断：检查它是否系统性切断后果回返、规则修订与 live-candidate 生成；不能仅凭某个阈值宣告其违反 P1 定理。
+这给致命 L_2 一个条件性健康诊断；不能仅凭某个阈值、自动化程度或脚本执行宣告“没有 Selection”，也不能把该诊断反向提升为 P1 Selection 判据。
 
 ### §4.5 T-IRR-3.5：`ν_{block}` 的算子级构成（H4，2026-04-25）
 
@@ -285,15 +284,17 @@ $$
 
 因此 `ν_{block}\cdot \mathbb{1}[d \le d_c]\cdot S_{sig}` 的单向性是**算子级强约束**，不是建模便利。
 
-**后果 3（致命 L_2 的算子级判据精化）**
+**后果 3（致命 L_2 的算子级判据精化；RC-A source correction 2026-08-18）**
 
 T-IRR-3 给出致命 L_2 的条件性 generative-reselectability 诊断。算子级读法提出：致命 L_2 不能让 `\varepsilon_{pg}` 本身归零（L_0 标量种子是 postulate，不可移除），但可能让其在 `P` 局部的**可见投影** → 0：
 
 $$
-\varepsilon_{pg}^{\text{visible}}(P, t) \;:=\; \varepsilon_{pg}(P, t) \cdot \mathbb{1}[\sigma_{sr} < \sigma_{sr}^{path}] \cdot \mathbb{1}[\pi(t) > 0] \cdot \mathbb{1}[r(t) > 0]
+\varepsilon_{pg}^{\text{visible}}(P, t) \;:=\; \varepsilon_{pg}(P, t) \cdot \mathbb{1}[\sigma_{sr} < \sigma_{sr}^{path}] \cdot \mathbb{1}[\pi(t) > 0]
 $$
 
-致命 L_2 同时压灭后两个指示函数（`π → 0` 与 `r → 0`）并把 `σ_{sr}` 推入 `σ_{sr}^{path}`，使 `\varepsilon_{pg}^{\text{visible}} → 0`，即使 `\varepsilon_{pg}` 本身仍 > 0。本地观测下 `ν_{block}` 表现为 0（误判为"§4.3 项消失"），但全局 `\dot{\Delta}_{avail}` 仍由 L_0 不可逆性决定，新失配进入暗通道（§4.3 之外的、未被登记的 `S_{str}` 累积）——这是 §5 T-IRR-4 现象的算子级源头。
+RC-A 后，former P1-T05 派生的 `\mathbb{1}[r(t)>0]` 因无合法上游而从该诊断中删除；**没有**把它改挂到 Selection simpliciter 或 `\varepsilon_{pg}`。当前式只表示一个 P2/P3 的本地可见性候选：当 `π → 0` 且 `σ_{sr}` 进入 `σ_{sr}^{path}`，该可见投影可趋零，即使 `\varepsilon_{pg}` 本身仍 > 0。它不证明 `ε_pg` 具有 ISP-level anti-closure 方向，也不构成 Selection、agency 或 generative reselectability 的判据。
+
+本地观测下 `ν_{block}` 可表现为 0（误判为"§4.3 项消失"），但全局 `\dot{\Delta}_{avail}` 仍由 L_0 不可逆性决定，新失配可进入暗通道（§4.3 之外的、未被登记的 `S_{str}` 累积）——这是 §5 T-IRR-4 现象的算子级候选源头。
 
 #### 与 §4.3 / §5 (`Core_Law/SRT_L1_Formalism.md`) 的对位
 
