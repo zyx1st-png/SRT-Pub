@@ -153,7 +153,7 @@ $$
 1. **不**承诺特定塔的层数（家庭/社区/国家是不是 3 层？还是有"族系" / "邻里" / 等中间层？）——这是 domain 实证问题
 2. **不**证明跨尺度系数 `M^{(n\to n+1)}` 的具体函数形式——仍依赖 `Hardening_Notes §3` MOC-1/2/3 的多层版本（C5^{(n)}）
 3. ~~**不**承诺塔层之间无跨层耦合（即不排除"层 `n` 直接耦合层 `n+2`"的可能；但此种耦合若存在，需在 C6^{nested} 之外引入额外条件 C6'^{layer-skip}）~~ **已收口（H14，2026-04-26）**：本文件 §4.12 T-LAYER-SKIP-1 给增广多图谱判据 `\rho(\mathbf{A}_{tower}) < 1 - \delta_{stab}^{global}$，把 layer-skip 与多重自指闭合统一处理
-4. **不**给出 `r_{min}^{nested}` 的实证窗口——这是 P3/P4
+4. **RC-A 撤回项**：former `r_{min}^{nested}` scalar-rate window 不再是当前塔级 standing / health 的待定门槛；跨尺度 revision / reorientation 若需实证化，另按 P2/P3 audit 处理，不回填 scalar hard gate。
 5. ~~**不**证明嵌套塔的全局稳定性——本节是局部递归构造，全局塔稳定性需要独立分析（特别是当塔有自指闭合：层 `N` 反向影响层 0 时）~~ **已收口（H13，2026-04-26）**：本文件 §4.11 T-TOWER-STAB-1 给自指闭合塔的谱判据 `\rho(\mathcal{T}_{loop}) < 1 - \delta_{stab}` 与三类失稳方向算子签名；剩余开放点：多重自指闭合复合谱、layer-skip 稳定性、全局非线性 Lyapunov 论证
 
 ### §4.8.9 T-PROJ-1^{coll,nested} 的结构性意义
@@ -162,10 +162,10 @@ $$
 |---|---|---|
 | "嵌套 ISP 多层投影"是开放问题 | §9.7 第 5 项 Open Pressure | T-PROJ-1^{coll,nested} 的递归构造（§4.8）|
 | 跨尺度病理传递机制 | 直觉（"高层 L_2 锁死下层"）| (ii) 显式：下层病理 + `M^{(n\to n+1)}` 放大 |
-| 跨尺度健康硬条件 | 隐含 | (iii) 显式：每层健康 + 跨尺度 `r^{(n\to n+1)} > r_{min}^{nested}` |
+| 跨尺度健康硬条件 | 旧版隐含 | **RC-A 撤回 scalar-rate 硬门**：每层 standing / health 分别审计；跨尺度 revision / reorientation 仅作 P2/P3 audit |
 | 致命 `L_2` 在塔内的传染 | 缺失 | (iv) `S_{str}^{(n)}` 通过 `\|M_{ext}^{(n\to n+1)}\|` 上行 |
 
-**P1-candidate 地位的根据**：T-PROJ-1^{coll,nested} 把"多层嵌套"从开放问题升为递归投影定理。要升 P1：(a) 具体塔的层数与 T-COLL-1 各层验证；(b) 跨尺度 `M^{(n\to n+1)}` 的 MOC 多层版本；(c) `r_{min}^{nested}` 实证窗口；(d) 跨层耦合（layer-skip）的边界条件。
+**P1-candidate 地位的根据（RC-A sync）**：T-PROJ-1^{coll,nested} 把"多层嵌套"从开放问题升为递归投影构造候选。若讨论其更高 claim standing，仍需：(a) 具体塔的层数与 T-COLL-1 各层验证；(b) 跨尺度 `M^{(n\to n+1)}` 的 MOC 多层版本；(c) 跨层耦合（layer-skip）的边界条件。former `r_{min}^{nested}` 不再属于升级条件。
 
 ## §4.9 T-FAMILY-1^{coll}：族普适性三定理的集体扩展（H11，2026-04-26）
 
