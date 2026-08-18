@@ -7,8 +7,13 @@ worklist, not a bibliography; author verification is required for every entry.
 
 Status legend: `NEEDS-VERIFY` = candidate identified by topic, DOI/venue not yet
 confirmed by the author; `VERIFIED` = author confirmed DOI + that the source
-supports the exact sentence; `SELF` = author's own manuscript (status must be
-stated honestly, e.g. "submitted", not "in press", unless true).
+supports the exact sentence; `SELF` = author's own work (status must be stated
+honestly, e.g. "submitted" or "published" only when confirmed).
+
+> **Live-status sync (2026-08-18):** the former Frontiers manuscript `1837760` is now a
+> published article with DOI `10.3389/fnins.2026.1837760` (published 2026-08-06).
+> The older July "in revision" wording is superseded. `Costly Selective Closure` is
+> currently recorded by the repository as submitted to *Adaptive Behavior*.
 
 ## A. Topic areas → sentences needing support
 
@@ -42,8 +47,8 @@ blank pending verification — do not fill with guesses.**
 | R-13 | §1, §3.4 | "future reachability / reachable set" as a behavioral construct | **Successor representation** — Dayan (1993), Neural Computation 5(4):613–624. Read: discounted expected future-state occupancy = policy-conditioned future-occupancy structure. Overlap = **ENDPOINT/background vocabulary** only (NOT a reachable-set protocol precedent); ours is a behavioral arrival distribution under a matched-present protocol. | **10.1162/neco.1993.5.4.613** | **VERIFIED** |
 | R-13b | §1, §2.8 | matched-present / only-slow-memory identification protocol | **No complete protocol precedent found (Rounds 1–2).** Path dependence and hidden-state/POMDP identifiability are background neighbors, not this protocol. | — | ROUNDS1-2: NO-COMPLETE-PRECEDENT |
 | R-13c | §1, §2.8, §5.2 | closest conceptual neighbor: same percept → different appropriate response | **Perceptual aliasing** — Whitehead & Ballard (1991), *Machine Learning* 7:45–83. Read: percepts indistinguishable from immediate input require different responses. Overlap = **MATCHING (conceptual neighbor)**. **MUST cite + demarcate:** aliasing is the *agent's* inference/memory problem; ours is an *experimenter's* matched-present identification protocol with yoked/sham + reachability endpoint. Companion (candidate): Chrisman (1992), AAAI-92. | **10.1007/BF00058926** | **VERIFIED** |
-| R-14 | §2.4, §5.2 | Costly Selective Closure (self) — orthogonal question | self-cite. **Repo status:** v16 after ALIFE-2026 rejection, targeting Adaptive Behavior; no confirmed Adaptive Behavior submission record in repo. State as "revised, targeting Adaptive Behavior" — NOT "submitted/under review" without author confirmation. | — (SELF) | SELF / REPO-VERIFIED; LIVE-STATUS author-to-confirm |
-| R-15 | §2.2, §5.2 | Ontological friction Ψ_f (self) — NOT used as load-bearing here | self-cite. **Repo status:** Frontiers ms **1837760**, in a **revision round** (response-to-reviewers + revision checklist in repo). State as "in revision at Frontiers (ms 1837760)" — NOT "in press"/"published." | — (SELF) | SELF / REPO-VERIFIED; LIVE-STATUS author-to-confirm |
+| R-14 | §2.4, §5.2 | Costly Selective Closure (self) — orthogonal question | self-cite. **Current repo status (2026-08-18): submitted to Adaptive Behavior.** State as "manuscript submitted to Adaptive Behavior"; do not upgrade to "under review" unless confirmed. | — (SELF) | SELF / REPO-VERIFIED |
+| R-15 | §2.2, §5.2 | Ontological friction / executive-friction framework (self) — NOT used as load-bearing here | self-cite. **Published:** Zhang, Y. (2026), *A translational cross-modal control-cost framework for executive breakdown*, *Frontiers in Neuroscience* 20:1837760. DOI `10.3389/fnins.2026.1837760`; publication date 2026-08-06. The former "in revision at Frontiers" status is superseded. | **10.3389/fnins.2026.1837760 / Frontiers in Neuroscience 20** | **SELF / PUBLISHED-VERIFIED** |
 | R-16 | §5.2 (optional) | integrated information theory, IF named at review | IIT reference — currently NOT named in body; decision pending | — | OPTIONAL / not-in-body |
 
 ## B. Verification protocol (author)
@@ -51,8 +56,8 @@ blank pending verification — do not fill with guesses.**
 For each NEEDS-VERIFY row: (1) obtain the canonical reference; (2) confirm the DOI
 and current publication status; (3) read the cited passage and confirm it supports
 the exact manuscript sentence (no citation inflation); (4) mark VERIFIED and only
-then allow insertion. For SELF rows: state the true status; do not upgrade
-"submitted"/"under review" to "in press"/"published" unless confirmed.
+then allow insertion. For SELF rows: state the true status; do not upgrade a status
+beyond the confirmed record.
 
 ## C. Anti-inflation rules
 

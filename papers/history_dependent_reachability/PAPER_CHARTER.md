@@ -7,6 +7,11 @@ and the six frozen commits on `research/selective-anchoring`. This paper branch 
 charter files, figure plan, result-extraction scripts/tables, manuscript, supplementary.
 **No new experiments. No modification of frozen code, params, or results JSON.**
 
+> **Author status-sync decision (2026-08-18):** bibliographic status may be updated
+> without reopening the scientific charter. `Costly Selective Closure` is now recorded
+> as submitted to *Adaptive Behavior*. The former Frontiers manuscript `1837760` is now
+> the published article Zhang (2026), DOI `10.3389/fnins.2026.1837760`.
+
 ## The single question of this paper
 
 > After the observable present state and the fast policy are matched, can past
@@ -50,8 +55,9 @@ first attack a reviewer familiar with the program will make:
   present, different history → different future reachability. Persistence-after-
   withdrawal appears here only as one construct (P) among three, and the flagship
   result is about W_sel and reachability, not stake or life-likeness.
-- **Ontological friction (Ψ_f, Frontiers ms 1837760):** a latent cross-modal
-  control-cost factor for executive breakdown. This paper does **not** use Ψ_A /
+- **Executive-friction / ontological-friction line (Zhang 2026, Frontiers in Neuroscience
+  20:1837760; DOI `10.3389/fnins.2026.1837760`):** a published cross-modal
+  control-cost framework for executive breakdown. This paper does **not** use `Psi_f` /
   anchoring friction as a load-bearing construct; cost appears only as J_ext/J_write
   side-measurements in Phase 1, with the explicit finding that neither tracks W_sel.
 - Also position against: path dependence, metaplasticity, RL habit formation, control
@@ -84,7 +90,7 @@ first attack a reviewer familiar with the program will make:
    reproducibility (bit-identical re-run), seed hygiene, only-m-read verification,
    swap mechanical, null weak, correct CI interpretation.
 9. Discussion — three layers: (i) direct results in designed models; (ii) relation to
-   existing theory INCLUDING self-demarcation from CSC and Ψ_f; (iii) SRT bridge
+   existing theory INCLUDING self-demarcation from CSC and `Psi_f`; (iii) SRT bridge
    L1→L2→L0' as operational bridge only.
 10. Limitations — designed systems; m's future role is architecture-defined; mechanism
     existence + behavioral consequence only; not yet in end-to-end networks / biology /

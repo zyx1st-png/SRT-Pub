@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: 1febdcc0
-source_branch: HEAD
-source_dirty: true
-inputs_digest: 519bcce7e75f9201
+source_commit: 8fa53be1
+source_branch: agent/frontiers-attractor-reachability-bridge
+source_dirty: false
+inputs_digest: baa70243c64d7a49
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,9 +27,9 @@ inputs_digest: 519bcce7e75f9201
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `1febdcc0` |
-| 来源分支 | `HEAD` |
-| 生成时来源工作树有改动 | 是 |
+| 来源 commit | `8fa53be1` |
+| 来源分支 | `agent/frontiers-attractor-reachability-bridge` |
+| 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
