@@ -354,6 +354,7 @@ selection event
 | NEURAL28 re-identifiable object identity / dynamic concept index | `Neuroscience/patches/SRT_Neuro_NEURAL28_Reidentifiable_Object_Identity_Dynamic_Concept_Index_v0_1.md` | adds re-identification and relational re-entry between initial identification and later memory-control stages; object stability becomes cross-change re-addressability rather than a static-copy assumption | High |
 | NEURAL29 memory consolidation / historical transformation | `Neuroscience/patches/SRT_Neuro_NEURAL29_Memory_Consolidation_Historical_Transformation_v0_1.md` | inserts retention-vs-transformation between re-identification and later control; abstraction/decontextualization/integration change later objectification conditions, with false memory as a generativity/factivity negative control | Very high |
 | NEURAL30 temporal integration closure / object formation | `Neuroscience/patches/SRT_Neuro_NEURAL30_Temporal_Integration_Closure_Object_Formation_v0_1.md` | adds a short-timescale structured-history -> integration -> regime-transition -> unitary-percept bridge; separates event decodability, conscious accessibility, integrated percept, P300/report and phenomenal timing; connects downstream of NEURAL23 for a phase-conditioned SQM test | Very high |
+| Attention–immune reweighting | `Neuroscience/ATTENTION_IMMUNE_REWEIGHTING_SRT_BRIDGE_2026-08-18.md` | human causal attention/reweighting -> acute physiology bridge; multi-channel nonidentity; O-track relation placement only, D-track not claimed | Very high |
 
 Recommended synthesis:
 
@@ -372,12 +373,33 @@ NEURAL26 -> system capacity / candidate accessibility / authority stack
 NEURAL27 -> event-boundary update opportunity + prospective history-use / path-bias readout
 NEURAL18-20 -> selection-readiness, resource admission, and script/reselection guards
 NEURAL21 -> state-dependent metabolic supply/payment separation
+Attention–immune -> attentional weighting can enter a measurable body-regulatory loop; no new NEURAL number and no unique D-track yet
 
 Neuroscience/SRT_Neuroscience_Hardening_N1_N13_v0_2.md
 + consciousness / hard-problem synthesis for NEURAL24 and NEURAL30
 ```
 
-NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL30 remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
+NEURAL16 and NEURAL17 remain linked to `SRT_EXP_MEASURE_MAP.md` as measurement-admission gates. NEURAL18-NEURAL30 and the attention–immune bridge remain standalone bridge/guardrail/pressure patches with pending synthesis hooks.
+
+The attention–immune bridge preserves:
+
+```text
+signal magnitude
+!= subjective intensity
+!= attentional/control weight
+!= physiological burden
+!= canonical d
+!= canonical Psi_f
+
+source Cohen's d
+!= SRT d-value
+
+HRV
+!= vagal mediation proof
+
+attention -> physiology
+!= phenomenality is a necessary causal term
+```
 
 NEURAL22 preserves:
 
