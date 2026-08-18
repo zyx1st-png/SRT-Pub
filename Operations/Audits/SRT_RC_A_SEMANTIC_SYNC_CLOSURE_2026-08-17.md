@@ -20,31 +20,31 @@ tags: [Governance, RC-A, Selection, SemanticSync, Closure, Phase0]
 
 > **Scope**: RC-A semantic sync + owner-consistency cleanup + stale-dependency cleanup + bounded retrieval regression + closure.
 >
-> **Nature**: consolidation / burn-down only. No Phase 0.5, relation-level GOV-SUB01, Selection grammar, formal ontology, new primitive alphabet, new operator, new scalar replacement, or new domain bridge is authorized here.
+> **Nature**: consolidation / burn-down only. This record does not authorize Phase 0.5, relation-level GOV-SUB01, Selection grammar, formal ontology, a new primitive alphabet, a replacement scalar rate, or a new domain bridge.
 
 ## 0. Verdict
 
-# **Phase 0 NOT CLOSED — final-review reopen**
+# **Phase 0 CLOSED — after final-review correction**
 
-The previous `Phase 0 CLOSED` verdict was premature. A final independent pre-merge review found active RC-A contradictions outside the literal families used by the earlier inventory. The missed terms include `真实重选率`, `共选真实性`, `真实共选`, and tower-level `r^{(n→n+1)}` language.
+The first closure attempt was **premature**. An independent pre-merge review found active RC-A contradictions missed by the earlier literal inventory. Phase 0 was explicitly reopened, PR #830 was returned to Draft, the missed derivatives were repaired, and a strengthened tracked-file inventory was rerun before this re-closure.
 
 Current gate state:
 
 - theory / author blockers: **0**
+- final-review Class-A contradictions: **REPAIRED**
+- strengthened semantic inventory: **PASS — residual Class A = 0**
+- split metadata freshness on corrective working tree: **PASS**
+- Context Bundle freshness on corrective working tree: **PASS**
+- full Governance Preflight on corrective working tree: **PASS**
 - bounded retrieval Q1-Q6: **PASS / robustly observed**
-- Context Bundle freshness before this reopen: **PASS**
-- split metadata freshness before this reopen: **PASS**
-- full Governance Preflight before this reopen: **PASS**
-- exhaustive semantic inventory: **REOPENED — false-complete claim withdrawn**
-- final-review Class-A contradictions: **OPEN**
 
-PR #830 must remain unmerged until these findings are repaired and the strengthened scan is rerun.
+The correction does not start Phase 0.5 automatically.
 
 ---
 
-## 1. Results that remain valid
+## 1. Authority results preserved
 
-The final review does not reopen the settled authority decisions:
+The final-review repair does not change the settled RC-A hierarchy:
 
 ```text
 former P1-T05 / Real Choice Moment is not P1
@@ -58,91 +58,195 @@ CG / SEA failure !-> no Selection
 T_dir !-> Selection definition
 ```
 
-Global former-P1-T05-derived `r(t)` remains deleted with no replacement rate. Collective T-COLL-1 remains supported by P1-T06 + shared `L2` + `M(t)`. `ε_pg` remains the existing L0 minimum non-neutrality / structural seed and is not promoted into a universal anti-closure / agency / consciousness / order-growth theorem.
+Additional preserved boundaries:
 
-The three independent bounded runs also remain valid: **3/3 runs, 18/18 observations, 100%**.
-
----
-
-## 2. Final-review Class-A findings
-
-### A1 — Collective tower hardening
-
-`Core_Law/SRT_Collective_Tower_Hardening_Notes.md` still uses `r^{(n→n+1)}(t) > r_min^{nested} > 0` as a hard cross-scale health condition, defines it as `真实重选率`, and maps it to T-COLL-4 `共选真实性` in the tower recursion / spectral-stability discussion and connector-safe split mirrors. This contradicts the current collective owner, which removed former-P1-T05-derived reselection rates as hard conditions and forbids reintroducing a replacement scalar rate.
-
-### A2 — Political Rights
-
-`Philosophy/SRT_Political_Rights.md` still describes voting through a T-COLL-4 `共选真实性判据` with the old hard conjunction. Current T-COLL-4 jurisdiction is downstream collective agency / consequence-sensitive revision audit only.
-
-### A3 — Spirituality Community / Sangha
-
-`Spirituality/SRT_Spirituality_Community_and_Sangha.md` still states that a healthy community must simultaneously satisfy T-COLL-1, T-COLL-3, and T-COLL-4 `真实共选判据`. Several normative passages retain `真实选择时刻` as if it were a current Selection-level criterion without an RC-A current-use boundary.
-
-### A4 — Political Philosophy
-
-`Philosophy/SRT_Political_Philosophy.md` still defines freedom as preservation of `真实选择时刻`, contains downstream uses such as `形式在，真实选择时刻消失` without an RC-A boundary, and keeps an active header reference to `r^{coll}(t)>r^{coll}_{min}` even though the collective owner no longer contains that scalar condition.
-
-These are active contradictions / stale dependencies under the Phase-0 A/B/C/D discipline, not historical provenance or generated-only mirrors.
+- global former-P1-T05-derived `r(t)` remains deleted; no replacement rate is introduced;
+- the local `r(d,P,t)` occlusion-capacity function remains a distinct namespaced quantity;
+- Collective Selection T-COLL-1 remains supported by P1-T06 + shared `L2` + `M(t)`;
+- downgraded T-COLL-4 is downstream collective agency / consequence-sensitive revision audit only;
+- `ε_pg` remains the existing L0 minimum non-neutrality / structural seed and is not promoted into a universal anti-closure, agency, consciousness, generative-reselectability, or order-growth theorem;
+- EX-A occurrence / anchoring persistence / Stable-ISP separation remains intact.
 
 ---
 
-## 3. Corrective scope
+## 2. Final-review correction record
 
-Repair only A1-A4 and direct connector-safe split mirrors.
+### 2.1 Why the first exhaustive claim was withdrawn
 
-Rules:
-
-- add minimal RC-A active-use overrides where legacy wording remains useful;
-- delete tower-level scalar reselection-rate hard conditions; **do not replace them with another rate**;
-- retain independent spectral/stability mathematics while deleting mappings that make it a T-COLL-4 Selection-authenticity theorem;
-- re-scope T-COLL-4 to downstream collective agency / consequence-sensitive revision audit;
-- re-scope `真实选择时刻` in political/spiritual normative prose as legacy/downstream freedom/agency shorthand, not Selection ontology;
-- remove dangling `r^{coll}` references whose owner-side quantity was deleted;
-- preserve historical provenance;
-- introduce no new P0/P1 claims, primitives, symbols, equations, rates, thresholds, or Phase-0.5 artifacts.
-
-The strengthened final scan must include at least:
+The earlier inventory covered the frozen RC-A search families but failed to surface two Chinese derivative families and their tower notation strongly enough for semantic adjudication:
 
 ```text
 真实重选率
 共选真实性
 真实共选
-r^{(n→n+1)}
+r^{(n→n+1)} / r^{(n\to n+1)}
 r^{coll}
 真实选择时刻
 ```
 
-These supplement the earlier frozen search families.
+An independent final review therefore falsified the earlier statement that no active RC-A contradiction remained. That statement was withdrawn rather than defended.
+
+### 2.2 Primary Class-A findings
+
+The final review identified four active primary surfaces:
+
+1. `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`
+   - tower health still required `r^{(n→n+1)} > r_min^{nested}`;
+   - the rate was described as `真实重选率` and mapped to T-COLL-4 `共选真实性`;
+   - the same mapping appeared in direct split mirrors and spectral-health prose.
+
+2. `Philosophy/SRT_Political_Rights.md`
+   - voting still used T-COLL-4 as a hard `共选真实性判据`.
+
+3. `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
+   - T-COLL-4 `真实共选` was still written as a simultaneous necessary condition of a healthy community;
+   - `真实选择时刻` remained in normative prose without a current-use boundary.
+
+4. `Philosophy/SRT_Political_Philosophy.md`
+   - freedom was still defined through preservation of `真实选择时刻`;
+   - a deleted `r^{coll}>r^{coll}_{min}` condition remained in an active header note.
+
+The strengthened scan then exposed two direct derivatives of the same A1 debt:
+
+- the tower §4.8.8/§4.8.9 structural-summary row and P1-candidate promotion checklist still retained `r_min^{nested}` as an operative hard-condition debt;
+- `Operations/SRT_CROSS_SCALE_GENERATIVE_EMERGENCE_AUDIT_2026-07-12.md` still treated the old tower scalar as current `P1-candidate hardening / 已有` coverage evidence.
+
+These were repaired as part of A1 rather than treated as a new theory question.
 
 ---
 
-## 4. Bounded retrieval status
+## 3. Corrective dispositions
 
-The earlier fresh bounded retrieval result remains valid because the newly found contradictions sit outside the fast authority path used by all three runs and do not change any frozen Q1-Q6 answer.
+### A1 — Collective tower / cross-scale derivative
 
-- independent valid runs: **3/3**
-- Q1-Q6 observations: **18/18 PASS**
-- pass rate: **100%**
-- budget-invalid runs: **0**
-- critical-distinction retrieval failures: **0**
+Disposition: **subtractive repair, no replacement scalar**.
 
-Do not rerun bounded retrieval unless the corrective patch changes a fast authority surface or a Q1-Q6 answer.
+- removed `r^{(n→n+1)} > r_min^{nested}` as a tower-health hard condition;
+- removed `r_min^{nested}` from the P1-candidate promotion checklist;
+- added an RC-A active-use override stating that former `真实重选率` / T-COLL-4 authenticity mappings are superseded;
+- retained independently meaningful spectral-radius / feedback-stability mathematics while explicitly denying that it proves T-COLL-4, collective agency, or Selection authenticity;
+- direct split mirrors and split metadata were synchronized;
+- the July cross-scale coverage audit now carries an RC-A supersession note and no longer treats the removed scalar rate as current P1-candidate coverage evidence.
+
+### A2 — Political Rights
+
+Disposition: **jurisdiction narrowing**.
+
+Voting no longer uses T-COLL-4 as a constitutive `共选真实性` gate. T-COLL-4 is explicitly downstream collective agency / consequence-sensitive revision audit input; `A_P`, `M(t)` return, and non-scriptedness cannot back-define Selection or add a hard T-COLL-1 condition.
+
+### A3 — Spirituality Community / Sangha
+
+Disposition: **necessary-condition removal + active-use guard**.
+
+T-COLL-1 / P1-T06 carries collective-ISP standing. T-COLL-3 and downgraded T-COLL-4 are not added as universal hard conditions for every healthy community or every Selection occurrence. Remaining `真实选择时刻` language is explicitly scoped as praxis / freedom-level legacy shorthand for substantive revision / reorientation space, not Selection ontology.
+
+### A4 — Political Philosophy
+
+Disposition: **normative rewording + dangling-rate deletion**.
+
+- removed the dangling `r^{coll}>r^{coll}_{min}` reference;
+- replaced `自由 = 真实选择时刻被保留` with a P2/P3 political-normative formulation based on consequence-sensitive revision / reorientation and realistic participation in shared-reality shaping;
+- later `真实选择时刻` shorthand is covered by an explicit RC-A downstream freedom / agency guard.
+
+No new P0/P1 claim, primitive, symbol, equation, scalar rate, threshold, Selection subtype, or formal grammar was introduced by these fixes.
 
 ---
 
-## 5. Exit gate after reopen
+## 4. Strengthened inventory
 
-Phase 0 may be re-closed only when:
+A full GitHub Actions checkout scanned the actual corrective PR-head working tree after the fixes, after temporary helper removal, after canonical workflow restoration, and after generated-surface refresh.
 
-- A1-A4 are repaired;
-- direct split mirrors are synchronized;
-- strengthened search families are rerun against the actual tracked-file tree;
-- the closure record reports the newly found and repaired Class-A findings instead of claiming the earlier inventory was complete;
-- Context Bundles / split metadata are fresh;
-- full Governance Preflight is green;
-- no replacement scalar rate or new ontology machinery is introduced;
-- bounded retrieval remains valid, or is rerun only if fast authority surfaces changed.
+Inventory artifact: `rc-a-final-review-strengthened-inventory-v3` from corrective run `32127517919` (run #962).
 
-**Relation-level GOV-SUB01 preconditions are NOT satisfied while this reopen is active.**
+Execution facts:
 
-Stop at Phase 0. Do not execute Phase 0.5 in this PR.
+- Git index entries observed: **2087**; this snapshot still included one tracked temporary-helper path pending deletion in the working tree before the functional commit was staged;
+- regular UTF-8 text files scanned: **2020**;
+- read errors: **0**;
+- nonregular / missing-at-working-tree paths skipped: **5**;
+- all original Phase-0 families plus the strengthened families above were scanned.
+
+For the **strengthened added families**, residuals after repair were:
+
+- **62 literal hits across 28 files**;
+- file-level semantic classification:
+  - **A — active contradiction: 0 files**;
+  - **B — historical / source / material / old draft-output / closure provenance: 13 files**;
+  - **C — current but explicitly guarded / downstream / deletion-supersession context: 12 files**;
+  - **D — generated bundle mirrors: 3 files**.
+
+Representative Class-C residuals include:
+
+- tower owner / split RC-A supersession guards and negative statements such as “no scalar rate hard condition”;
+- `SRT_Collective_Selection.md` / L1 Formalism / Claim Mode Audit references documenting deletion of `r^{coll}`;
+- the updated cross-scale coverage audit's explicit RC-A supersession note;
+- Political Philosophy / Spirituality active-use guards for legacy `真实选择时刻` wording;
+- `_SRT_T_DIR_CANONICAL.md` legacy wording read through its existing RC-A active-use override.
+
+The April article `papers/SRT_Article_SelectionSubject_v1_2026-04.md` remains an old `status: draft_v1` publication draft rather than current theory authority; it is classified with old draft/output material, not as a current owner. Phase 0 does not rewrite historical/publication drafts merely to erase superseded vocabulary.
+
+The accidentally tracked runtime inventory file from the prior repair attempt was deleted; the final strengthened inventory is retained as an Actions artifact, not a repository theory asset.
+
+---
+
+## 5. Generated surfaces / governance
+
+Corrective run `32127517919` / #962 validated the complete corrective working tree before the functional commit:
+
+- repair helper: **PASS**;
+- split metadata refresh + `--check`: **PASS**;
+- Context Bundle generator + `--check`: **PASS**;
+- full `governance_preflight.py --skip-write-report --strict-split-metadata`: **PASS**;
+- `git diff --check`: **PASS**;
+- immutable-start-head / concurrent-branch guard: **PASS**;
+- functional commit and push: **PASS**.
+
+Functional corrective head before this closure writeback:
+
+`4c21c259ba40c6ad1b8d6149bd531cf76e3eeb1a`
+
+Temporary helper and temporary workflow permission escalation were removed before the functional commit. The ordinary workflow is restored to the repository's canonical read-only version.
+
+The final external execution report must inspect the standard Governance workflow on the newest closure head after this writeback; this record does not require its own commit SHA to be self-referentially embedded.
+
+---
+
+## 6. Bounded retrieval regression
+
+The final-review correction did not modify the fast authority surfaces or any frozen Q1-Q6 answer, so the earlier independent runs remain valid under the registered bounded-retrieval protocol.
+
+- independent valid bounded runs: **3/3**;
+- Q1-Q6 observations: **18/18 PASS**;
+- overall pass rate: **100%**;
+- budget-invalid runs: **0**;
+- critical-distinction retrieval failures: **0**.
+
+The robustly observed hierarchy remains:
+
+1. Real Choice Moment is no longer a P1 theorem.
+2. Script / habit / gradient / L2 automation do not imply no Selection.
+3. P1-T06 Stable ISP remains P1; continued selectability remains the adjacent condition.
+4. Generative reselectability is not required for Selection or every Stable ISP; it remains P2/P3 generative-health territory.
+5. CG / SEA pass gives only a bounded Selection-event candidate, not agency.
+6. `T_dir` is a narrower bearer / agency self-readability / reorientation interface, not Selection ontology.
+
+---
+
+## 7. Exit gate
+
+All frozen Phase-0 exit conditions are now satisfied after incorporating the independent final-review correction:
+
+- no known active file in the frozen + strengthened families treats former P1-T05 as current P1 authority;
+- no known active file uses script / habit / gradient / L2 automation to infer no Selection;
+- tower / collective / T-COLL-4 derivatives no longer reintroduce a scalar reselection-rate hard gate;
+- CG / SEA and T_dir jurisdictions remain consistent with RC-A;
+- P1-T06 / ST-A and generative-reselectability boundaries remain intact;
+- historical provenance is preserved rather than erased;
+- no replacement primitive / scalar / grammar / formal system was introduced;
+- corrective full governance and generated-surface checks passed;
+- bounded retrieval is robustly observed;
+- this closure audit records both the failed first closure and the final corrective pass.
+
+# **Terminal disposition: Phase 0 CLOSED.**
+
+Phase 0 closure is only a prerequisite for a **later, separately authorized** relation-level GOV-SUB01 subtractive audit. It does not authorize or execute Phase 0.5 in PR #830.
