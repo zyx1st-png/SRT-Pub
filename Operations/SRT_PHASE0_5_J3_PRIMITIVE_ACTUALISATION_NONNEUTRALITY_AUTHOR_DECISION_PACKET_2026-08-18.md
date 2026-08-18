@@ -1,11 +1,12 @@
 ---
 id: SRT-OPS-PHASE0-5-J3-PRIMITIVE-ACTUALISATION-NONNEUTRALITY-AUTHOR-PACKET-20260818
 type: author_decision_packet
-status: active
-record_stage: decision_required
+status: frozen
+record_stage: historical_pre_j3d_options_superseded_by_disposition
 layer: meta
 epistemic_layer: os
 claim_mode: governance
+claim_level: P3/P4_governance
 canonical: false
 date: 2026-08-18
 dependency:
