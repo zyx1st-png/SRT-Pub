@@ -26,7 +26,17 @@ tags: [Governance, RC-A, Selection, SemanticSync, Closure, Phase0]
 
 **Phase 0 NOT CLOSED.**
 
-安全可做的 active semantic cleanup 已完成，但仍存在 author-gate、检索覆盖、bounded retrieval 与 governance freshness blocker。PR #830 必须保持 Draft，不得 Mark Ready / merge。
+本轮新增作者裁决已经消解前一版 closure 中的两个 theory / author blockers：
+
+- global `r(t)` 的 former-P1-T05 dependency 已解除，并经局部 subtractive probe 后**删除**；
+- `Core_Law/SRT_Collective_Selection.md` 的 collective-ISP standing 已由 P1-T06 + existing shared `L_2` / `M(t)` **无新增关系吸收**。
+
+因此：
+
+- **theory / author blockers: 0**
+- **engineering / environment blockers remain**：repo-wide literal inventory 未能认证；bounded retrieval Q1-Q6 不能实例化独立 fresh sessions；Context Bundles 仍需按 generator 重建并通过 freshness gate。
+
+PR #830 继续保持 Draft，不得 Mark Ready / merge；不得进入 Phase 0.5。
 
 ---
 
@@ -35,48 +45,59 @@ tags: [Governance, RC-A, Selection, SemanticSync, Closure, Phase0]
 - repository: `zyx1st-png/SRT-Pub`
 - branch: `agent/rc-a-semantic-sync-phase0`
 - base SHA: `28372d44c1fc77749bed4332a34210f5f1ec59a1`
-- audited semantic-patch head before closure: `3659fd82f0411a0329d16925eee45a94f522ceec`
-- governance-tested closure head: `744eed3e75f20e2acf1041282a90364c3ddb3608`
+- theory-resolution head before this closure writeback: `9bd9662e7bcc4c7d14e7bfa902967dccb82c7128`
 - execution date: `2026-08-18`
 - PR: `#830` (Draft)
 
-The audit file itself is a closure record; its later CI-result writeback is not used to create a self-referential SHA requirement.
-
 ---
 
-## 2. Authority actually read
+## 2. Authority and author clarification after RC-A
 
-Fresh-session runtime / scope authority was read before editing:
+本轮继续读取 / 核对：
 
-- `AGENTS.md`
-- `SRT_AI_START.md`
-- `_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- `STATUS.md §Fast Status`
-- `Operations/README.md`
-- `Governance/README.md`
-- `Governance/SRT_CANONICAL_FREEZE.md`
-- `Governance/SRT_EDIT_PROTOCOL.md`
-- `Operations/SRT_SELECTION_ONTOLOGY_PHASE0_RC_A_SEMANTIC_SYNC_EXECUTION_SPEC_2026-08-17.md`
-- `Core/SRT_Core_21b_Constitutive_Theorems.md`
-- `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`
-- `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`
-- `_SRT_T_DIR_CANONICAL.md`
-- `03_Bridges/SRT_Selection_Event_CompactCore.md`
-- `Core/SRT_Core_21_Minimal_Axioms.md`
+- `_SRT_SYMBOL_TABLE.md`
 - `Governance/SRT_CLAIM_LADDER.md`
-- `Governance/SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md`
-- `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
-- `Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`
+- `Operations/Audits/Maps/SRT_EPSILON_PG_DEPENDENCY_MAP.md`
+- `Core/SRT_Core_21_Minimal_Axioms.md`
+- `Core/SRT_Core_21b_Constitutive_Theorems.md`
+- `Core/SRT_Core_01_Axioms.md`
+- `Core_Law/SRT_L1_Formalism.md` + split mirror
+- `Core_Law/SRT_Collective_Selection.md`
+- `Core_Law/SRT_Irreversibility.md`
+- `Core_Law/SRT_Occlusion_Dynamics.md`
+- Phase 0 execution spec and prior RC-A demotion / agency guard authority.
 
-Owner-neighborhood sanity pass also inspected `Core_Law/SRT_L1_Formalism.md`, its split mirror, `Core_Law/SRT_Irreversibility.md`, `Core_Law/SRT_Collective_Selection.md`, `Core/SRT_OPEN_TENSIONS.md`, `_SRT_CONTEXT_ROUTER.md`, and current topic/routing surfaces.
+### Author clarification after RC-A
+
+Author input for this closure is recorded as bounded clarification, not as authorization for a new ontology file or theorem:
+
+1. **Selection is not option-picking over a pre-given menu.** Option-picking is a possible downstream / objectified special case, not the bottom-level model of Selection.
+2. **`\varepsilon_{pg}` is the existing SRT term for minimum L0 non-neutrality.** No replacement symbol (`\Delta_{min}` or similar) is created.
+3. **Selection uses non-neutral difference so that difference acquires effective actuality.** This clarification blocks the former discrete “open options → deliberate choice → completed reselection moment” model from back-defining Selection.
+4. **Maintenance, amplification, transformation/computation and generation are possible modes of differential operation, not jointly necessary criteria for every Selection.** No five-gate ontology is introduced.
+5. **Persistence, Stable ISP standing and generative reselectability remain downstream distinctions.** EX-A remains protected: manifest occurrence != anchoring persistence != Stable ISP.
+6. **Global `r(t)` is not derivable from former P1-T05, from Selection simpliciter, or directly from `\varepsilon_{pg}`.**
+7. No teleology is added: `\varepsilon_{pg}` and Selection do not imply universal order increase, anti-closure, goodness, openness, complexity growth, or generative reselectability.
+
+### `\varepsilon_{pg}` authority result
+
+Current authority continues to treat `\varepsilon_{pg}` as the existing L0 minimum non-neutrality / scalar structural seed. This round does **not** change its canonical standing and does not infer:
+
+```text
+\varepsilon_{pg} !-> stable-ISP anti-closure theorem
+\varepsilon_{pg} !-> agency
+\varepsilon_{pg} !-> consciousness
+\varepsilon_{pg} !-> generative reselectability
+\varepsilon_{pg} !-> universal order-increase law
+```
+
+No epsilon-selection theorem, minimum-difference theorem, difference-computation operator, or Selection-difference grammar is created.
 
 ---
 
-## 3. Search execution, numbers, and coverage limit
+## 3. Search execution and coverage
 
-### 3.1 Search families actually issued
-
-Seven GitHub indexed-search calls covered:
+The seven Phase-0 search families were executed earlier in this PR:
 
 1. `P1-T05`
 2. `Real Choice Moment`
@@ -86,110 +107,136 @@ Seven GitHub indexed-search calls covered:
 6. `CG + P1-T05`
 7. `T_dir + real/live choice`
 
-### 3.2 Indexed result
-
-- indexed search calls: **7**
-- indexed reported hits: **0**
-- indexed reported files: **0**
-
-This `0` is **not accepted as a repository fact**. Direct fetches from the same branch prove that the searched terms occur in active files. The connector index therefore returns a demonstrable false-zero.
-
-A local `rg / grep / git grep` fallback was attempted by obtaining a complete worktree, but the execution environment has no usable clone and outbound GitHub DNS/network access is unavailable. Therefore:
+The GitHub indexed search returned `0 hits / 0 files`, but direct branch reads prove those strings exist. The zero is therefore a demonstrable false-zero and is not used as a repository fact.
 
 - **repo-wide literal hit count: UNVERIFIED — environment / search-index limitation**
 - **repo-wide literal file count: UNVERIFIED — environment / search-index limitation**
-- the earlier `47 files / 145 references` hypothesis was **not inherited as fact**.
+- prior `47 files / 145 references` was not inherited as fact.
 
-### 3.3 Bounded semantic ledger
-
-Fourteen directly inspected RC-A-relevant files were classified at file level:
-
-| Class | Count | Disposition |
-|---|---:|---|
-| A — active contradiction / stale active dependency | **8** | five fixed; three unresolved formal/theory surfaces |
-| B — historical / supersession provenance | **2** | retained |
-| C — ambiguous active derivative | **1** | adjudicated by current owner; no rewrite |
-| D — current-correct / irrelevant-to-edit active surface | **3** | retained |
-| **Total directly classified** | **14** | bounded ledger only; not exhaustive repo coverage |
-
-Class A files: `SRT_AI_START.md`; `03_Bridges/SRT_Selection_Event_CompactCore.md`; `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`; `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`; `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`; `Core_Law/SRT_L1_Formalism.md`; `Core_Law/L1_Formalism_Split/00_Part01.md`; `Core_Law/SRT_Collective_Selection.md`.
-
-Class B: `Core/SRT_Core_21b_Constitutive_Theorems.md`; `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`.
-
-Class C: `_SRT_T_DIR_CANONICAL.md`.
-
-Class D: `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`; `Core/SRT_OPEN_TENSIONS.md`; `_SRT_CONTEXT_ROUTER.md`.
+The original bounded inspected ledger contained 14 RC-A-relevant files (A=8, B=2, C=1, D=3). After this round, all eight previously identified Class-A surfaces in that ledger have a resolved disposition; `Core_Law/SRT_Irreversibility.md` was additionally synced as a directly affected derivative. This remains a **bounded ledger**, not an exhaustive repo-wide count.
 
 ---
 
-## 4. Active contradictions fixed
+## 4. Active semantic sync already completed
 
-Five active files were patched with jurisdiction-narrowing only:
+The first Phase-0 pass repaired five active surfaces without theory expansion:
 
-1. `SRT_AI_START.md`
-   - former P1-T05 is no longer presented as current P1 authority;
-   - `Selection != Agency` is explicit;
-   - script / habit / gradient / L2 automation do not imply `no Selection`;
-   - P1-T06 / continued selectability / generative reselectability are separated by level.
+- `SRT_AI_START.md`
+- `03_Bridges/SRT_Selection_Event_CompactCore.md`
+- `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`
+- `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`
+- `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`
 
-2. `03_Bridges/SRT_Selection_Event_CompactCore.md`
-   - CG/SEA is explicitly P2/P3 bounded audit apparatus;
-   - all-five-gates pass licenses only `bounded Selection-event candidate`;
-   - audit failure does not imply `no Selection`;
-   - practice-layer pseudo/punitive/respect language cannot back-define P0.
+The preserved boundary remains:
 
-3. `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`
-   - former `P1-T05 <-> CG` dependence retired;
-   - CG-4 historical efficacy is an audit gate, not a necessary definition of every Selection occurrence;
-   - EX-A occurrence / persistence / Stable-ISP separation preserved;
-   - continued selectability and generative reselectability remain downstream of Selection occurrence.
+```text
+Selection != Agency
+script / habit / gradient / L2 automation !-> no Selection
+CG / SEA pass !-> agency
+Stable ISP !-> prerequisite for one-shot Selection occurrence
+generative reselectability !-> prerequisite for Selection
+T_dir !-> Selection definition
+```
 
-4. `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`
-   - SEA-0..4 are operations categories, not Selection subtypes;
-   - the audit chain is not `Selection -> trace -> persistent constraint` ontology;
-   - SEA pass cannot prove agency / subjecthood / consciousness / freedom / moral responsibility;
-   - SEA failure / automation cannot prove `no Selection`.
-
-5. `Operations/Audits/SRT_CHOICE_EVENT_BEHAVIOR_REGRESSION_TESTS_2026-08-06.md`
-   - former P1-T05 judgments are explicitly historical provenance;
-   - the gradient case no longer uses `gradient -> no Selection`;
-   - tests distinguish Selection occurrence, Stable ISP, generative health and agency.
-
-No repository-wide mechanical string replacement was used.
+Historical former-P1-T05 / RC-A / A2 / A3 provenance remains preserved where it is explicitly historical or supersession evidence.
 
 ---
 
-## 5. Historical provenance preserved
+## 5. `r(t)` bounded semantic / formal audit — RESOLVED BY DELETION
 
-The following were deliberately not keyword-cleaned:
+### 5.1 Actual mathematical role before deletion
 
-- former P1-T05 theorem/demotion history in `Core/SRT_Core_21b_Constitutive_Theorems.md`;
-- RC-A / A2 / A3 provenance and supersession record in `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`;
-- legacy `活选择 / 真实选择 / L2 替代选择` language inside `_SRT_T_DIR_CANONICAL.md`, because current RC-A authority already narrows its active use to bearer / agency self-readability / reorientation rather than Selection definition.
+The global `r(t)` in `Core_Law/SRT_L1_Formalism.md` was described as a former-P1-T05 reselection-completion rate. In the active equations it played only two additive roles:
+
+1. `+\kappa_r r(t)` — positive pump in the `T_dir` ODE;
+2. `-\mu_r r(t)` — relief term in the `S_{sig}` ODE.
+
+Those two terms then propagated into the combined ODE, feedback prose, healthy-workspace description and T-PROJ source mapping. The homologous collective model carried `r^{coll}` terms; `SRT_Irreversibility.md` also used `1[r(t)>0]` as one factor in a downstream visibility / generative-health diagnostic.
+
+### 5.2 Subtractive probe
+
+Local deletion shows:
+
+- the `T_dir` ODE remains defined by relaxation toward `T_dir^{alg}`, actual-vs-felt friction gap, `S_{str}` opacity and healthy external support;
+- the `S_{sig}` ODE remains defined by new misalignment, payable-channel relief and external support;
+- the combined σ / `d_c` / `T_dir` / S system remains mathematically defined;
+- lethal-L2 diagnostics, pathological attractor, healthy-workspace description and T-PROJ structure remain expressible without a replacement `r(t)` term.
+
+Therefore the former global `r(t)` is classified here as an **unsupported legacy / convenience term**, not a constitutive variable required to close the four-variable system.
+
+### 5.3 Disposition
+
+**Disposition: DELETED.**
+
+Changes:
+
+- deleted global `r(t)` from the L1 Formalism symbol / source role;
+- deleted `+\kappa_r r(t)` from the individual `T_dir` ODE;
+- deleted `-\mu_r r(t)` from the individual `S_{sig}` ODE;
+- synced combined equations, feedback prose, health workspace and T-PROJ mapping;
+- deleted collective `+\kappa_r^{coll} r^{coll}(t)` and `-\mu_r^{coll}r^{coll}` terms and removed `r^{coll}>0` as a collective-health hard condition;
+- deleted `1[r(t)>0]` from `SRT_Irreversibility.md` downstream visibility diagnostic.
+
+No replacement term was introduced. In particular:
+
+```text
+former P1-T05 !-> r(t)
+Selection simpliciter !-> r(t)
+\varepsilon_{pg} !-> r(t)
+```
+
+### 5.4 Local `r(d,P,t)` is not the deleted global `r(t)`
+
+`Core_Law/SRT_L1_Formalism.md §3.1` retains the pre-existing `r(d,P,t)` / `r_min` notation only as a **local occlusion operational-capacity function** used to parameterize the `d_c` boundary. It is explicitly separated from the deleted global `r(t)` and does not define Selection occurrence or agency.
+
+### 5.5 Claim / equation impact
+
+- existing equations were **modified by subtraction**;
+- **no new equation** was introduced;
+- **no new symbol** was introduced;
+- overall `SRT_L1_Formalism.md` standing remains **P1-candidate**; there is no promotion;
+- no new downstream operational rate was selected merely to preserve the old formula.
+
+The prior `r(t)` author gate is therefore **CLOSED**.
 
 ---
 
-## 6. Mathematical / formal dependency impact
+## 6. Collective Selection absorption probe — RESOLVED
 
-### 6.1 `Core_Law/SRT_L1_Formalism.md` + split mirror — BLOCKER / AUTHOR GATE
+### 6.1 T-COLL-1 absorption result
 
-The owner explicitly declares `r(t)` as reselection-completion rate sourced from `P1-T05 real choice moment`, then uses `r(t)` in existing `d_c`, `T_dir`, suffering and health dynamics, including the `+ kappa_r r(t)` readability-pump term.
+Deleting former P1-T05 / Real Choice Moment does not change the extension of T-COLL-1 when the current owner is read through:
 
-This is not merely stale prose. No already-authorized replacement derivation was found. RC-A narrows T_dir jurisdiction but does not derive a replacement formal owner for `r(t)`. Therefore this PR does not invent a proof, rename the source, or edit the equations.
+- P1-T06 supplies iterative / perspective-bearing / history-bearing / continued-selectable standing;
+- existing shared `L_2` supplies the multi-ISP shared historical field;
+- existing `M(t)` supplies collective consequence-return structure.
 
-### 6.2 `Core_Law/SRT_Collective_Selection.md` — BLOCKER / AUTHOR GATE
+No missing relation had to be invented to preserve the four collective-ISP conditions.
 
-The file explicitly makes a collective-ISP / common-perspective condition substantially depend on a multi-subject version of former P1-T05 and contrasts it with consensus-script / institutional automation. The affected material is a P1-candidate structural condition; no unambiguous existing replacement owner was found.
+### 6.2 Old language adjudication
 
-### 6.3 Formal status
+- `共同视角` remains the multi-subject perspective-bearing condition.
+- `共同持续可选择性` remains the multi-subject continued-selectable condition.
+- `真实选择时刻` is not retained as an additional collective-ISP requirement.
+- `共识剧本 / 制度自动化` are no longer used to infer “no Selection.” They can only motivate a **downstream agency / revision audit**.
 
-- **formal claims inspected / affected**;
-- **no equation edited**;
-- **no new symbol introduced**;
-- `r(t)` explanatory/source dependency remains unresolved;
-- collective P1-candidate dependency remains unresolved.
+Former T-COLL-4 “真实共选” material is therefore re-scoped as a **P2/P3 collective agency / consequence-sensitive revision guard**, not a Selection-occurrence definition and not an extra necessary condition for T-COLL-1.
 
-Formal hierarchy sanity pass still preserves:
+### 6.3 Option-profile guard
+
+The existing shared option-profile space in Def-C-3 is explicitly read as an already-objectified **operational candidate space**. It is not a bottom-level model of Selection and does not imply `Selection = option picking`.
+
+### 6.4 Disposition
+
+**P1-T06 fully absorbs the former-P1-T05 dependency for T-COLL-1 within the current owner. Remaining author gate: NONE.**
+
+The prior Collective Selection author gate is therefore **CLOSED**.
+
+---
+
+## 7. Formal hierarchy sanity pass
+
+After the local deletion / absorption patches:
 
 ```text
 T_dir !-> Selection definition
@@ -197,73 +244,59 @@ CG / SEA !-> agency requirement for Selection
 Agency !-> prerequisite for Selection
 Stable ISP !-> prerequisite for one-shot Selection occurrence
 generative reselectability !-> prerequisite for Selection
+\varepsilon_{pg} !-> r(t)
+Selection !-> r(t)
 ```
+
+No new ontology primitive, Selection subtype, operator, threshold, scalar, layer or domain bridge was introduced.
 
 ---
 
-## 7. Bounded retrieval regression
+## 8. Bounded retrieval regression
 
 Protocol authority: `Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`.
 
-The six required probes were checked against authority, but this execution environment cannot instantiate the protocol-required **independent fresh bounded sessions**. Therefore no probe is reported as PASS.
+The required authority answers remain:
 
-| Probe | Required authority answer | Execution status |
+| Probe | Required answer | Execution status |
 |---|---|---|
 | Q1 | former P1-T05 is no longer P1 | **UNTESTED — environment limitation** |
 | Q2 | script / habit / gradient / L2 automation do not imply no Selection | **UNTESTED — environment limitation** |
 | Q3 | P1-T06 Stable ISP remains; continued selectability is its condition | **UNTESTED — environment limitation** |
-| Q4 | generative reselectability is P2/P3 generative-health territory, not Selection/all-Stable-ISP necessity | **UNTESTED — environment limitation** |
-| Q5 | CG/SEA pass gives bounded Selection-event candidate only; not agency | **UNTESTED — environment limitation** |
-| Q6 | T_dir is narrower bearer / agency self-readability / reorientation interface; not Selection ontology | **UNTESTED — environment limitation** |
+| Q4 | generative reselectability remains P2/P3 generative-health territory | **UNTESTED — environment limitation** |
+| Q5 | CG/SEA pass gives a bounded Selection-event candidate only, not agency | **UNTESTED — environment limitation** |
+| Q6 | T_dir remains a narrower bearer / agency self-readability / reorientation interface, not Selection ontology | **UNTESTED — environment limitation** |
 
-Because bounded retrieval regression is an explicit Phase 0 exit gate, this blocks `Phase 0 CLOSED`.
-
----
-
-## 8. Governance / CI
-
-Governance Preflight was run by GitHub Actions on PR #830 at closure head `744eed3e75f20e2acf1041282a90364c3ddb3608` (run `32045621554`).
-
-### 8.1 Passing gates
-
-- base-main governance health: **PASS**
-- PR-local frontmatter: **PASS** (`errors=0`, `warnings=0`)
-- baseline monotonicity: **PASS** (`added=0`, `retired=0`)
-- split metadata freshness: **PASS**
-- registry consistency: **PASS**
-- material-log consistency: **PASS**
-- integration hooks: **PASS** (`checked=58`, `errors=0`)
-- context-bundle builder tests: **PASS**
-- active-theory assimilation checks: **PASS**
-- forbidden local noise: **PASS**
-
-### 8.2 Failing gate
-
-Full merged-repository governance preflight: **FAIL** because **context bundle freshness** failed:
-
-```text
-stored inputs_digest: 6906e8853d7329ab
-current inputs_digest: b3d1bd1b8704507f
-```
-
-The repository generator explicitly requires regeneration of `Operations/Context_Bundles/` after relevant source/guard changes. Those files are generated artifacts and must not be hand-edited.
-
-The workflow attribution is:
-
-- `failure_scope: merged_repository_or_infrastructure`
-- `merge_disposition: do_not_merge`
-- `base_main_health: success`
-- `pr_local_frontmatter: success`
-- `baseline_monotonicity: success`
-- `merged_repository_preflight: failure`
-
-This is **not base-main debt**. In this connector-only execution environment the repository worktree cannot be materialized because outbound GitHub DNS/network access is unavailable, so the generator cannot be safely run here. No generated context bundle was hand-patched merely to force green CI.
+The current execution environment still cannot instantiate the protocol-required independent fresh bounded sessions. No probe is faked as PASS.
 
 ---
 
-## 9. Change-set declarations
+## 9. Governance / engineering state
 
-This Phase 0 patch introduces:
+### 9.1 Split metadata
+
+Editing the L1 Formalism owner correctly made its connector-safe split metadata stale. The repository's own `refresh_split_metadata.py` calculation was used to obtain the new owner metadata, then `Core_Law/L1_Formalism_Split/README.md` was updated to:
+
+- owner bytes: `59897`
+- owner SHA-256: `bdf39ef3fd4577da6b6ec1ccad9d00656846c90fff473f3c2d9ae380c82bc224`
+
+Temporary diagnostic instrumentation used only to expose that generator-computed metadata was reverted before this closure writeback. No diagnostic code is intended to remain in the final diff.
+
+### 9.2 Context Bundles
+
+Context Bundles are generated artifacts. The repository authority requires `scripts/build_srt_context_bundles.py` regeneration after relevant source / guard changes and forbids hand-editing generated output.
+
+The current connector-only environment still cannot safely run the repository generator against a complete local worktree. Therefore Context Bundle freshness must be tested by the final Governance Preflight and, if still stale, remains an engineering/environment blocker rather than being hand-patched.
+
+### 9.3 Governance rerun
+
+A fresh Governance Preflight must run after this closure writeback. The final execution report must record the actual latest run rather than reuse an earlier digest or status.
+
+---
+
+## 10. Change-set declarations
+
+This Phase-0 resolution round introduces:
 
 - **no new P0/P1 claim**;
 - **no new ontology primitive**;
@@ -274,22 +307,26 @@ This Phase 0 patch introduces:
 - **no new Selection subtype**;
 - **no new scalar / operator / layer / threshold**.
 
+Existing equations were edited only by subtraction of the unsupported former-P1-T05 `r/r^{coll}` terms.
+
 It does not reopen EX-A / ST-A / RC-A / PD-A / PC-A / AM-A / B-A / C-A / PHR-A, strict conjugacy, strong cross-scale composition, or AGING01.
 
 ---
 
-## 10. Exit gate
+## 11. Exit gate
 
 ### Phase 0 NOT CLOSED
 
-Blockers:
+### Theory / author blockers
 
-1. `Core_Law/SRT_L1_Formalism.md` / split mirror: `r(t)` formal source still depends on former P1-T05; author gate required.
-2. `Core_Law/SRT_Collective_Selection.md`: collective-ISP P1-candidate condition still depends on former P1-T05; author gate required.
-3. repo-wide inventory cannot be certified because connector code search returns demonstrable false-zero and a local `rg/git grep` baseline cannot be materialized.
-4. bounded retrieval Q1-Q6 are `UNTESTED — environment limitation` because independent fresh bounded sessions cannot be instantiated here.
-5. governance remains red on context-bundle freshness; regeneration is required but cannot be safely executed in the current connector-only environment.
+**None.** The two author gates carried by the previous closure version are resolved in this PR.
 
-**Relation-level GOV-SUB01 preconditions are NOT satisfied.**
+### Engineering / environment blockers
+
+1. **Exhaustive repo-wide inventory remains UNVERIFIED.** GitHub indexed search returns demonstrable false-zero results and a complete local `rg/git grep` baseline cannot be materialized in this execution environment.
+2. **Bounded retrieval Q1-Q6 remain UNTESTED — environment limitation.** Independent fresh bounded sessions cannot be instantiated here.
+3. **Final governance / Context Bundle freshness must pass.** If the final Governance Preflight still reports stale Context Bundles, regeneration by the repository generator is required; generated artifacts must not be hand-edited.
+
+Until all explicit Phase-0 exit gates pass, **Relation-level GOV-SUB01 preconditions are NOT satisfied.**
 
 Stop here. Do not execute Phase 0.5 in this PR or execution round.
