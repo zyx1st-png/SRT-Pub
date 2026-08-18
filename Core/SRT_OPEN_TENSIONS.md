@@ -185,7 +185,7 @@ Only the first belongs near core. The others should remain P2/P3/P5 unless separ
 The first question above ("is `T_dir` a scalar, a relation, or an accessibility function?") **has in fact been answered at v0 level**, and this section had not recorded it:
 
 - `_SRT_T_DIR_CANONICAL.md` Def-T-1 / §3.1 fixes `T_dir` as a **scalar-valued readability × reorientation functional**, `T_{dir}^{v0} := \mathcal{R}_{self}(\operatorname{Dir}(\Delta\hat{G}_\theta,t)) \cdot \mathcal{A}_{reorient}(\operatorname{Dir}(\Delta\hat{G}_\theta,t))`, explicitly labelled **v0 operational proxy**, not a completed ontological foundation.
-- `Core_Law/SRT_L1_Formalism.md §3.5` (2026-04-25) promotes `T_dir` from algebraic proxy to an **independent dynamical variable** with a five-term ODE (relaxation / real-reselection pump / `\Delta\Psi_f^{gap}` deduction / `S_{str}` erosion / `s_{ext}` scaffolding), with `T_dir ∈ [0,1]` carried as a **governance-canonical** range.
+- `Core_Law/SRT_L1_Formalism.md §3.5` (2026-04-25) promotes `T_dir` from algebraic proxy to an **independent dynamical variable** with the former-P1-T05-derived global `r(t)` pump removed by RC-A subtractive probe and no replacement; the current minimal ODE retains relaxation / `\Delta\Psi_f^{gap}` deduction / `S_{str}` erosion / `s_{ext}` scaffolding, with `T_dir ∈ [0,1]` carried as a **governance-canonical** range.
 
 So the form question is **partially resolved**: scalar-valued functional with a v0 dynamical law. What remains open and keeps this tension live:
 

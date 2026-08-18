@@ -123,7 +123,7 @@ future AI architecture synthesis
 architecture-state-specific benchmark design
 ```
 
-AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, Stable ISP or the P1 Real Choice Moment theorem.
+AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T_dir`, `G_hat_theta` or Stable ISP. Former Real Choice Moment is retained only as RC-A demotion provenance, not as a P1 theorem.
 
 ---
 

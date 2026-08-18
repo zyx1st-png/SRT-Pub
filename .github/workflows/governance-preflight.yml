@@ -2,18 +2,22 @@ name: Governance Preflight
 
 on:
   pull_request:
+  push:
+    branches:
+      - main
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   governance-preflight:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out PR head
+      - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          # Full history is required for changed-file attribution, base-health
+          # comparison, baseline monotonicity, and context-bundle provenance.
           fetch-depth: 0
 
       - name: Set up uv
@@ -24,182 +28,161 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Apply bounded RC-A derivative cleanup
+      - name: Check base main governance health
+        id: base_governance
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
+          set -o pipefail
+          base_ref="origin/${{ github.base_ref }}"
+          rm -rf /tmp/srt-governance-base
+          trap 'git worktree remove --force /tmp/srt-governance-base >/dev/null 2>&1 || true' EXIT
+          git worktree add --detach /tmp/srt-governance-base "$base_ref"
+          (
+            cd /tmp/srt-governance-base
+            uv run python scripts/refresh_split_metadata.py --check
+            uv run python scripts/governance_preflight.py \
+              --skip-write-report \
+              --strict-split-metadata
+          ) 2>&1 | tee base-governance-preflight.log
 
-          def replace_once(path, old, new):
-              p = Path(path)
-              text = p.read_text(encoding="utf-8")
-              count = text.count(old)
-              if count != 1:
-                  raise SystemExit(f"{path}: expected exactly one occurrence, got {count}: {old[:120]!r}")
-              p.write_text(text.replace(old, new, 1), encoding="utf-8")
-              print(f"updated {path}")
-
-          def insert_after_once(path, anchor, addition):
-              p = Path(path)
-              text = p.read_text(encoding="utf-8")
-              count = text.count(anchor)
-              if count != 1:
-                  raise SystemExit(f"{path}: expected exactly one anchor, got {count}: {anchor[:120]!r}")
-              p.write_text(text.replace(anchor, anchor + addition, 1), encoding="utf-8")
-              print(f"guarded {path}")
-
-          replace_once("CANONICAL_REGISTRY.md", "T-COLL-4 共选真实性判据（P1-T05 集体版）", "T-COLL-4 集体 agency / revision guard（P2/P3 downstream；不是 P1-T05 集体版，也不是 Selection / collective-ISP existence criterion）")
-          replace_once("_SRT_DEEP_THEORY_MAP.md", "- `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05 Real Choice Moment; canonical carrier)", "- `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T06 Stable ISP is the current P1 carrier; former P1-T05 is retained there only as the RC-A demotion record)")
-          replace_once("STATUS.md", "- `CG-0..CG-4` 门槛值仍是审计默认约定，不是已证定理；claim level 全程 P2-P3，不改 P1-T05。", "- `CG-0..CG-4` 门槛值仍是审计默认约定，不是已证定理；claim level 全程 P2-P3。该历史施工当时未改动 P1-T05；现由 2026-08-17 RC-A supersede，former P1-T05 已撤出 P1。")
-          replace_once("Core/SRT_Core_21_Formal_Axioms.md", "- cite stable ISP continued selectability, real choice moment, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`;", "- cite stable ISP continued selectability, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record;")
-          replace_once("03_Bridges/BRIDGE_INDEX.md", "**Read this first for \"is this a real choice?\" questions.** Compresses T-D plus the four operational tests and the unified audit protocol into five gates with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, the non-compensation rule, three threshold tiers, and the no-choice / pseudo-choice / punitive-choice / respected-choice reading.", "**Read this first for bounded Selection-event candidate audit, including legacy \"is this a real choice?\" queries.** Compresses T-D plus the four operational tests and the unified audit protocol into five gates with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, the non-compensation rule and three threshold tiers. Under RC-A, passing the surface licenses only a bounded Selection-event candidate; it does not define Selection or prove agency, and legacy practice labels do not back-define the ontology.")
-
-          replace_once("Governance/SRT_CLAIM_MODE_AUDIT.md", "| §3.5 T_dir 独立 ODE（弛豫 + r 泵入 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；κ_* 五项系数 P2/P3 |", "| §3.5 T_dir 独立 ODE（弛豫 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；former-P1-T05-derived `r(t)` pump 已由 RC-A subtractive probe 删除；其余 κ_* 系数 P2/P3 |")
-          replace_once("Governance/SRT_CLAIM_MODE_AUDIT.md", "| §5.1 第 6 条\"苦难-可读性正反馈环\"（`S_{str} \\to T_{dir} \\downarrow \\to r \\downarrow \\to S_{sig}` 积压） | — | P1-candidate（2026-04-25 H2 新增，依赖 §3.5） |", "| Former §5.1 第 6 条\"苦难-可读性正反馈环\"（`S_{str} \\to T_{dir} \\downarrow \\to r \\downarrow \\to S_{sig}`） | — | RC-A 已删除该 former-P1-T05-derived feedback path；不再列为当前 P1-candidate 通道 |")
-          replace_once("Governance/SRT_CLAIM_MODE_AUDIT.md", "| T-COLL-4 共选真实性判据 | — | P1-candidate（P1-T05 集体版的对应） |", "| T-COLL-4 collective agency / revision guard | — | P2/P3 downstream guard under RC-A；不是 P1-T05 集体版，也不是 Selection occurrence / T-COLL-1 的必要条件 |")
-          replace_once("Governance/SRT_CLAIM_MODE_AUDIT.md", "| §4.4.4 T_{dir}^{coll} ODE + 集体层致命 `L_2` 判据 `\\kappa_{mask}^{coll} < \\kappa_{\\mathrm{relax}}^{coll}` | — | P1-candidate 结构形式；κ_*^{coll} 五项 P2/P3 |", "| §4.4.4 T_{dir}^{coll} ODE + 集体层致命 `L_2` 判据 `\\kappa_{mask}^{coll} < \\kappa_{\\mathrm{relax}}^{coll}` | — | P1-candidate 结构形式；RC-A 已删除 former-P1-T05-derived `r^{coll}` pump；其余 κ_*^{coll} 系数 P2/P3 |")
-          replace_once("Governance/SRT_CLAIM_MODE_AUDIT.md", "| §4.6 集体病理吸引子 `\\mathcal{A}_{path}^{coll}` / 集体健康区 `\\mathcal{H}^{coll}`（`r^{coll} > r^{coll}_{min}` 硬条件） | — | P1-candidate（T-COLL-4 共选真实性的持续要求在动力学上的形式化） |", "| §4.6 集体病理吸引子 `\\mathcal{A}_{path}^{coll}` / 集体健康区 `\\mathcal{H}^{coll}` | — | P1-candidate / P2-P3 mixed；RC-A 已删除 `r^{coll} > r^{coll}_{min}` 硬条件，generative-health / revision standing 不与 T-COLL-1 混写 |")
-          replace_once("Governance/SRT_CLAIM_MODE_AUDIT.md", "**Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；", "**Downstream rule**：T-COLL-1 须标 `P1-candidate`；T-COLL-3 / T-COLL-4 须标 `P2/P3 downstream`；三类退化的判据须标 `P2`；")
-          replace_once("Governance/SRT_CLAIM_MODE_AUDIT.md", "**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。", "投票 / 共识 / 专家决定本身既不证明更强 collective agency，也不得反推“没有 Selection”；若审计 consequence-sensitive revision，只能把降级后的 T-COLL-4 当 P2/P3 input。")
-
-          t_anchor = '> **Canonical status note（2026-04-23）**：本文件名中的 canonical 表示 governance-canonical working object 与引用锚点，不表示 `T_dir` 已具备 theory-canonical 完整奠基。价值动力学扩展段落按 bridge / theory-clarifying 读。\n'
-          t_note = '> **RC-A active-use override（2026-08-18）**：本文较早段落中的“活选择 / 真实选择 / L₂ 替代选择”等措辞早于 RC-A。当前只能把它们读作 downstream bearer / agency 层关于**后果敏感、方向可回读并可用于重取向**的历史速记，不能当作 Selection occurrence、anchoring persistence、Stable ISP、generative health、合法性或普遍价值方向的判据。script / habit / gradient / `L_2` automation 本身也不得反推“没有 Selection”。`T_dir` 的当前工作角色仍由 Def-T-1 与 `R_self / A_reorient` 边界约束。\n'
-          insert_after_once("_SRT_T_DIR_CANONICAL.md", t_anchor, t_note)
-          replace_once("_SRT_T_DIR_CANONICAL.md", "ODE 含弛豫、真实重选泵入、`\\Delta\\Psi_f^{\\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀、`s_{ext}` 支架五项。", "RC-A subtractive probe 已删除 former-P1-T05-derived 全局 `r(t)` 泵入项，当前最小 ODE 保留弛豫、`\\Delta\\Psi_f^{\\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀与 `s_{ext}` 支架四条通道，不设 replacement rate。")
-          replace_once("Core/SRT_OPEN_TENSIONS.md", "with a five-term ODE (relaxation / real-reselection pump / `\\Delta\\Psi_f^{gap}` deduction / `S_{str}` erosion / `s_{ext}` scaffolding)", "with the former-P1-T05-derived global `r(t)` pump removed by RC-A subtractive probe and no replacement; the current minimal ODE retains relaxation / `\\Delta\\Psi_f^{gap}` deduction / `S_{str}` erosion / `s_{ext}` scaffolding")
-
-          d_anchor = "# 耗散结构与选择结构：P3 对接桥\n"
-          d_note = '\n> **RC-A active-use override（2026-08-18）**：本桥早期的“真实选择 / real choice moment”措辞不得再读作 P1-T05 或 Selection ontology。CG-0..CG-4 仅是 P2/P3 bounded Selection-event candidate audit dimensions；通过或失败都不定义 Selection，也不证明 agency。script / habit / gradient / `L_2` automation 不能据此反推“没有 Selection”。\n'
-          insert_after_once("03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md", d_anchor, d_note)
-          replace_once("03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md", "本桥不重新定义选择事件。按 P1-T05、T-B 与 T-D 的现有分工，选择事件至少需要出现：", "本桥不重新定义 Selection。按 RC-A 后的现有分工，以下条目只构成 T-B / T-D 的 P2/P3 bounded Selection-event candidate 审计面，不是 Selection 的必要条件，也不复活 former P1-T05：")
-
-          b_anchor = "# Book Glossary → Theory-Layer Vocabulary Sync Bridge\n"
-          b_note = '\n> **RC-A active-use override（2026-08-18）**：本桥形成于 RC-A 之前。下文凡把 `P1-T05 / Real Choice Moment` 写成当前理论锚点、domain reading 或第三态能动性的 P1 来源，均由 RC-A supersede：former P1-T05 已撤出 P1；Selection 回到 P0/P1 Selection owners，能动性相关 anti-script / consequence-sensitive revision 只按 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md` 的 P2/P3 downstream guard 使用。书稿措辞本身作为 provenance 保留，不反向定义 Selection。\n'
-          insert_after_once("03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md", b_anchor, b_note)
-          replace_once("03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md", "| 二 | 选择（≠挑选） | `P1-T05` 真实选择时刻 | ✅ |", "| 二 | 选择（≠挑选） | P0/P1 Selection owners；former `P1-T05` 仅作 RC-A demotion provenance | ✅（RC-A 同步） |")
-          replace_once("03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md", "| 三 | **能动性（第三态）** | `P1-T05` + 承担 | ⚑（第三态框架新，见 §2.5） |", "| 三 | **能动性（第三态）** | RC-A Agency / Automation Guard（P2/P3）+ 承担 | ⚑（第三态框架新，见 §2.5） |")
-          replace_once("03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md", "- **理论锚点**：`P1-T05` 真实选择时刻 + 承担闭合（`Eq-Evo-03b` 的 `δθ/δσ ≠ 0`）。「第三态」框架（自由意志与机械反馈之间的第三类）是对 P1-T05 的**新articulation**，理论层未以此对立结构登记。", "- **理论锚点（RC-A superseded reading）**：第三态能动性不再回链 `P1-T05`；其 anti-script / consequence-sensitive revision 部分只接 RC-A Agency / Automation Guard（P2/P3），承担闭合（`Eq-Evo-03b` 的 `δθ/δσ ≠ 0`）仍按原层级单独审计。「第三态」是 downstream articulation，不是 Selection 定义。")
-          replace_once("03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md", "- **登记等级**：P2 canonical interpretation。「程度而非有无」与 d-value 的连续谱一致，可登记为 P1-T05 的 domain 读法。", "- **登记等级**：P2 canonical interpretation。「程度而非有无」可作为 downstream agency / bearer 读法，但不得登记为 former P1-T05 的 domain reading，也不得反推 Selection occurrence。")
-          replace_once("03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md", "- **边界**：不得把「第三态」升格为新公理或第三种本体力；它是 P1-T05 + 承担的白话对立面命名，origin-of-selectability 仍受 `P0-04` 暴露点约束（能动性从回流\"长出\"不等于解决了可选择性起源）。", "- **边界**：不得把「第三态」升格为新公理或第三种本体力；它只是 downstream agency / bearer 层的白话对立面命名，不能替代 Selection ontology。origin-of-selectability 仍受 `P0-04` 暴露点约束（能动性从回流\"长出\"不等于解决了可选择性起源）。")
-          replace_once("03_Bridges/SRT_Book_Vocabulary_Theory_Sync_Bridge_2026-07-05.md", "| 第三态能动性 | `Core/SRT_Core_21b P1-T05` 补一条 domain-reading 注（第三态框架） | 低-中（未做） |", "| 第三态能动性 | RC-A 后不再向 `Core_21b` former P1-T05 补 domain reading；如需施工只进入 P2/P3 Agency / Automation Guard 或相应 bearer bridge | 低-中（RC-A 改路由） |")
-
-          h_anchor = "# CG-4 历史效力：操作化测试协议 v1\n"
-          h_note = '\n> **RC-A active-use override（2026-08-18）**：本协议仍可作为 `CG-4 / HEF` 的 P2/P3 audit-only 工具，但 former P1-T05 / Real Choice Moment 已撤出 P1。HEF/CG 结果不得再与 former P1-T05 做必要/充分映射；通过最多支持 bounded Selection-event candidate，失败也不得推出 `no Selection`。agency / subject-level revision 另走 downstream Agency / Automation Guard。\n'
-          insert_after_once("Operations/SRT_HISTORICAL_EFFICACY_OPERATIONAL_TEST_2026-08-04.md", h_anchor, h_note)
-          replace_once("Operations/SRT_HISTORICAL_EFFICACY_OPERATIONAL_TEST_2026-08-04.md", "- P1-T05 的 real choice moment 判据；", "- RC-A 后不再存在 P1-T05 real-choice criterion；若需要更强 agency / revision standing，另走 P2/P3 Agency / Automation Guard；")
-
-          p_anchor = "# Choice-Trace 回写计划：理论层与书稿层\n"
-          p_note = '\n> **RC-A supersede note（2026-08-18）**：本计划中 2026-08-04 的 `P1-T05 / Real Choice Moment` 路由属于当时施工记录，不再代表当前 authority。当前以 RC-A 为准：former P1-T05 已撤出 P1；CG/T-D 只做 P2/P3 bounded Selection-event candidate audit，不定义 Selection，也不证明 agency。\n'
-          insert_after_once("Operations/_SRT_CHOICE_TRACE_WRITEBACK_PLAN_2026-07-10.md", p_anchor, p_note)
-
-          replace_once("AI/SRT_AI_01_Ontology_CompactCore.md", '> **2026-08-08 bridge hygiene**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。严格 `Real Choice Moment` 仍回到 canonical / CG-0~CG-4 审计。', '> **2026-08-08 bridge hygiene; RC-A sync 2026-08-18**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。former `Real Choice Moment` 已撤出 P1；CG-0~CG-4 仅用于 P2/P3 bounded Selection-event candidate audit，不是 Selection 定义或 agency 证明。更强 agency / revision standing 另走 Agency / Automation Guard。')
-          replace_once("AI/SRT_AI_01_Ontology_CompactCore.md", "则它尚未由此证明意识意义上的锚定或 `Real Choice Moment`。", "则它尚未由此证明意识意义上的锚定、subject-level agency 或其他更强 downstream standing；这也不能反向证明“没有 Selection”。")
-          replace_once("AI/SRT_AI_01_Ontology_CompactCore.md", "### AI-BR-3 功能选择 / Real Choice Moment 边界", "### AI-BR-3 功能选择 / downstream agency 边界（RC-A）")
-          replace_once("AI/SRT_AI_01_Ontology_CompactCore.md", "AI 输出不应一概被称为“伪选择”；更准确的边界是：**功能选择尚不等于 SRT `Real Choice Moment`**。严格事件判据必须进一步检查后果承载、历史写回、未来路径约束以及相关 canonical 锚定条件。", "AI 输出不应一概被称为“伪选择”。RC-A 后，功能选择既不自动证明更强 agency / subject-level revision，也不能因脚本、梯度或自动化特征而被判成 `no Selection`。若要做事件层审计，CG/SEA 最多给出 bounded Selection-event candidate；若要做更强 agency 判断，另走 Agency / Automation Guard。")
-
-          replace_once("AI/SRT_AI_Claim_Status.md", 'selection_terminology: "prefer output selection / functional path selection for L1->L1 behavior; reserve Real Choice Moment for the stronger SRT event claim"', 'selection_terminology: "prefer output selection / functional path selection for L1->L1 behavior; under RC-A, former Real Choice Moment is not a current P1 event criterion; use CG/SEA only for bounded Selection-event candidate audit and Agency / Automation Guard for stronger downstream agency standing"')
-          replace_once("AI/SRT_AI_Claim_Status.md", "The first three are functional / architectural descriptions and do not themselves establish SRT `Real Choice Moment` status. When the strict contrast is needed, say:", "The first three are functional / architectural descriptions. Under RC-A they neither establish stronger downstream agency standing nor license the converse inference `automation -> no Selection`. When the strict contrast is needed, say:")
-          replace_once("AI/SRT_AI_Claim_Status.md", "> **functional selection is not yet a SRT Real Choice Moment.**", "> **functional selection does not by itself establish stronger agency / subject-level revision standing; nor does automation by itself establish no Selection.**")
-          replace_once("AI/SRT_AI_Claim_Status.md", "A stronger event verdict should be routed through the choice-generation audit (`CG-0` through `CG-4`) and the canonical Real Choice Moment source, with particular attention to consequence bearing and historical writeback.", "A bounded event verdict may be routed through the P2/P3 choice-generation / SEA audit (`CG-0` through `CG-4`), which can license only a bounded Selection-event candidate. Stronger agency / revision standing must be routed separately through the RC-A Agency / Automation Guard; there is no current canonical Real Choice Moment source.")
-          replace_once("AI/SRT_AI_Claim_Status.md", "reserve Real Choice Moment for the stronger SRT event verdict.", "use CG/SEA only for bounded event audit and the RC-A Agency / Automation Guard for stronger downstream standing.")
-          replace_once("AI/SRT_AI_Claim_Status.md", "> **Functional selection is not yet a SRT Real Choice Moment.**", "> **Functional selection does not by itself prove stronger agency / subject-level revision; automation does not by itself prove no Selection.**")
-          replace_once("AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md", "Long, coherent or causally active intermediate traces do not by themselves establish a real choice moment. The SRT P1 criterion still requires that what is selected genuinely constrains the system's own future selection space rather than merely extending script, search or `L_2` optimization.", "Long, coherent or causally active intermediate traces do not by themselves establish stronger agency / subject-level revision standing. RC-A removed former P1-T05 as a P1 / Selection criterion: future-space constraint can remain evidence inside bounded event or downstream agency audits, but no single trace property proves agency, and script / search / `L_2` optimization cannot by themselves prove the absence of Selection.")
-
-          replace_once("Neuroscience/SRT_NEURAL25_EXPERIMENT_PROTOCOL_v0_1.md", "- `Core/SRT_Core_21b_Constitutive_Theorems.md` remains the P1 authority for Real Choice Moment.", "- `Core/SRT_Core_21b_Constitutive_Theorems.md` remains the P1 authority for P1-T06 Stable ISP and retains former P1-T05 only as the RC-A demotion record; this protocol does not define Selection or agency.")
-          replace_once("Philosophy/patches/SRT_Philosophy_PH_UNC01_Unconscious_Involvement_Embodied_Belief_v0_1.md", "This strengthens the **diagnostic discipline** around P1-T05:", "Under RC-A, this strengthens only the **downstream diagnostic discipline** formerly associated with P1-T05:")
-          replace_once("Philosophy/patches/SRT_Philosophy_PH_UNC01_Unconscious_Involvement_Embodied_Belief_v0_1.md", "P1-T05 remains the gate for distinguishing a genuinely live anchoring event from script replay or gradient following.", "RC-A removed former P1-T05 as a P1 / Selection gate. Script replay or gradient following may fail to establish stronger agency / subject-level revision, but they cannot by themselves be used to infer that no Selection occurred.")
-          replace_once("Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md", "Current SRT social cognition already distinguishes a broad affordance landscape from the smaller subset that becomes a current invitation field. P1 also states that sedimented `L_2` structures can constrain future selection and that script execution does not by itself constitute a Real Choice Moment.", "Current SRT social cognition already distinguishes a broad affordance landscape from the smaller subset that becomes a current invitation field. P1 states that sedimented `L_2` structures can constrain future selection; under RC-A, the anti-script remainder is only a P2/P3 agency / automation guard, not a Selection criterion.")
-          replace_once("Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md", "P1-T05 remains intact: script execution does not **by itself** count as a Real Choice Moment. This patch only blocks the invalid converse that all script execution is globally anti-choice.", "RC-A supersedes the former P1-T05 reading: script execution does not **by itself** establish stronger agency / consequence-sensitive revision, while the converse inference `script execution -> no Selection` is also invalid.")
-          replace_once("Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md", "### 8.3 P1 Real Choice Moment", "### 8.3 RC-A agency / automation guard (former P1 Real Choice Moment)")
-          replace_once("_SRT_Recent_Material_Patches_Index.md", "AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T_dir`, `G_hat_theta`, Stable ISP or the P1 Real Choice Moment theorem.", "AIEVID01, AIREASON01 and AIGOAL01 do not modify canonical `d-value`, `Psi_f`, `T_dir`, `G_hat_theta` or Stable ISP. Former Real Choice Moment is retained only as RC-A demotion provenance, not as a P1 theorem.")
-          PY
-
-      - name: Restore canonical workflow before final commit
-        run: git show origin/main:.github/workflows/governance-preflight.yml > .github/workflows/governance-preflight.yml
-
-      - name: Regenerate context bundles from cleaned sources
-        run: uv run python scripts/build_srt_context_bundles.py
-
-      - name: Verify regenerated context bundles
-        run: uv run python scripts/build_srt_context_bundles.py --check
-
-      - name: Build final exhaustive inventory
+      - name: Check PR-local frontmatter
+        id: pr_frontmatter
+        if: github.event_name == 'pull_request'
         shell: bash
         run: |
+          set -o pipefail
+          uv run python scripts/check_frontmatter_changed.py \
+            --base-ref "origin/${{ github.base_ref }}" \
+            --baseline Governance/Frontmatter_Warning_Baseline.txt \
+            --fail-on-new-warnings \
+            --suggest-fixes 2>&1 | tee pr-frontmatter.log
+
+      - name: Enforce frontmatter baseline monotonicity
+        id: baseline_monotonic
+        if: github.event_name == 'pull_request'
+        shell: bash
+        env:
+          BASELINE_EXPANSION_APPROVED: ${{ contains(github.event.pull_request.labels.*.name, 'governance-baseline-expansion-approved') }}
+        run: |
+          set -o pipefail
+          args=(
+            --base-ref "origin/${{ github.base_ref }}"
+            --baseline Governance/Frontmatter_Warning_Baseline.txt
+          )
+          if [[ "$BASELINE_EXPANSION_APPROVED" == "true" ]]; then
+            args+=(--allow-added)
+          fi
+          uv run python scripts/check_frontmatter_baseline_monotonic.py "${args[@]}" \
+            2>&1 | tee baseline-monotonic.log
+
+      - name: Check split metadata freshness
+        run: uv run python scripts/refresh_split_metadata.py --check
+
+      - name: Run governance preflight
+        id: full_preflight
+        shell: bash
+        run: |
+          set -o pipefail
+          uv run python scripts/governance_preflight.py \
+            --skip-write-report \
+            --strict-split-metadata 2>&1 | tee governance-preflight.log
+
+      - name: Classify governance result
+        if: always()
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_OUTCOME: ${{ steps.base_governance.outcome }}
+          LOCAL_OUTCOME: ${{ steps.pr_frontmatter.outcome }}
+          BASELINE_OUTCOME: ${{ steps.baseline_monotonic.outcome }}
+          FULL_OUTCOME: ${{ steps.full_preflight.outcome }}
+        run: |
           python - <<'PY'
-          import json, re, subprocess
+          import json
+          import os
           from pathlib import Path
-          raw = subprocess.check_output(["git", "ls-files", "-z"])
-          paths = [p.decode("utf-8", errors="surrogateescape") for p in raw.split(b"\0") if p]
-          texts, nonregular, binary, errors = {}, [], [], []
-          for path in paths:
-              p = Path(path)
-              if p.is_symlink() or not p.is_file(): nonregular.append(path); continue
-              try: data = p.read_bytes()
-              except OSError as exc: errors.append({"path":path,"error":repr(exc)}); continue
-              if b"\0" in data: binary.append(path); continue
-              texts[path] = data.decode("utf-8", errors="replace")
-          def linehits(rx):
-              return [{"path":p,"line":i,"text":line} for p,t in texts.items() for i,line in enumerate(t.splitlines(),1) if rx.search(line)]
-          def both(a,b):
-              out=[]
-              for p,t in texts.items():
-                  if a.search(t) and b.search(t):
-                      out += [{"path":p,"line":i,"text":line} for i,line in enumerate(t.splitlines(),1) if a.search(line) or b.search(line)]
-              return out
-          fam={
-            "F1_P1_T05": linehits(re.compile(r"P1-T05",re.I)),
-            "F2_Real_Choice_Moment": linehits(re.compile(r"Real\s+Choice\s+Moment",re.I)),
-            "F3_real_live_active_choice": linehits(re.compile(r"\b(?:real|live|active)\s+choice\b",re.I)),
-            "F4_zh_real_live_L2_substitute": linehits(re.compile(r"真实选择|活选择|L2\s*替代选择",re.I)),
+
+          def outcome(name: str) -> str:
+              value = os.environ.get(name, "").strip()
+              return value or "not-run"
+
+          event_name = outcome("EVENT_NAME")
+          base = outcome("BASE_OUTCOME")
+          local = outcome("LOCAL_OUTCOME")
+          baseline = outcome("BASELINE_OUTCOME")
+          full = outcome("FULL_OUTCOME")
+
+          if event_name != "pull_request":
+              scope = "main_push"
+              disposition = "inspect_full_preflight"
+              verdict = "MAIN PUSH CHECK — inspect the full preflight result."
+          elif local == "failure":
+              scope = "pr_local"
+              disposition = "do_not_merge"
+              verdict = "PR_LOCAL / LOCAL DIRTY / DO NOT MERGE."
+          elif baseline == "failure":
+              scope = "baseline_expansion"
+              disposition = "do_not_merge"
+              verdict = "PR_LOCAL BASELINE DEBT EXPANSION / DO NOT MERGE."
+          elif base == "failure" and full == "success":
+              scope = "base_main_repaired"
+              disposition = "governance_hotfix_only"
+              verdict = "BASE_MAIN WAS BLOCKED; THIS PR REPAIRS IT / HOTFIX PATH."
+          elif base == "failure":
+              scope = "base_main"
+              disposition = "governance_hotfix_only"
+              verdict = "BASE_MAIN BLOCKED / HOTFIX ONLY."
+          elif full == "failure":
+              scope = "merged_repository_or_infrastructure"
+              disposition = "do_not_merge"
+              verdict = "LOCAL FRONTMATTER CLEAN; FULL REPOSITORY OR INFRA FAILURE / DO NOT MERGE."
+          else:
+              scope = "none"
+              disposition = "normal_merge"
+              verdict = "LOCAL CLEAN / MAIN HEALTHY / NORMAL MERGE."
+
+          payload = {
+              "schema_version": 1,
+              "event_name": event_name,
+              "failure_scope": scope,
+              "merge_disposition": disposition,
+              "base_main_health": base,
+              "pr_local_frontmatter": local,
+              "baseline_monotonicity": baseline,
+              "merged_repository_preflight": full,
+              "verdict": verdict,
           }
-          no_sel=re.compile(r"\bno\s+Selection\b",re.I)
-          for tok in ("script","habit","automation","gradient"):
-              fam[f"F5_{tok}_plus_no_Selection"]=both(re.compile(rf"\b{tok}\w*\b",re.I),no_sel)
-          fam["F6_CG_plus_P1_T05"]=both(re.compile(r"\bCG(?:[-_0-9]|\b)",re.I),re.compile(r"P1-T05",re.I))
-          fam["F7_T_dir_plus_real_live_choice"]=both(re.compile(r"T[_\\]?[{]?dir[}]?",re.I),re.compile(r"\b(?:real|live)\s+choice\b|真实选择|活选择",re.I))
-          fam["F8_global_r_t_literal"]=linehits(re.compile(r"(?<![A-Za-z0-9_])r\(t\)(?![A-Za-z0-9_])"))
-          summary={k:{"hit_count":len(v),"file_count":len({h['path'] for h in v}),"hits":v} for k,v in fam.items()}
-          report={"snapshot_kind":"final working tree before closure commit","base_head":subprocess.check_output(["git","rev-parse","HEAD"],text=True).strip(),"tracked_paths":len(paths),"text_files_scanned":len(texts),"binary_files_skipped":len(binary),"nonregular_or_symlink_paths_skipped":len(nonregular),"skipped_nonregular_paths":nonregular,"read_errors":errors,"families":summary}
-          Path("rc-a-final-inventory.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-          with Path("rc-a-final-inventory.txt").open("w",encoding="utf-8") as f:
-              f.write(f"base_head {report['base_head']}\ntracked_paths {len(paths)}\ntext_files_scanned {len(texts)}\nread_errors {len(errors)}\n\n")
-              for k,v in summary.items():
-                  f.write(f"## {k}: hits={v['hit_count']} files={v['file_count']}\n")
-                  for h in v['hits']: f.write(f"{h['path']}:{h['line']}:{h['text']}\n")
-                  f.write("\n")
-          if errors: raise SystemExit(f"inventory incomplete: {len(errors)} read errors")
+          Path("governance-attribution.json").write_text(
+              json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          summary = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          with summary.open("a", encoding="utf-8") as handle:
+              handle.write("## Governance failure attribution\n\n")
+              handle.write("| Scope | Outcome |\n")
+              handle.write("|---|---|\n")
+              handle.write(f"| base_main_governance | {base} |\n")
+              handle.write(f"| pr_local_frontmatter | {local} |\n")
+              handle.write(f"| baseline_monotonicity | {baseline} |\n")
+              handle.write(f"| merged_repository_preflight | {full} |\n\n")
+              handle.write(f"**Verdict:** {verdict}\n")
+
+          print(json.dumps(payload, ensure_ascii=False, indent=2))
           PY
 
-      - name: Commit cleaned sources, bundles, and restored workflow
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git reset -- rc-a-final-inventory.json rc-a-final-inventory.txt || true
-          git diff --cached --check
-          git commit -m "Complete RC-A exhaustive semantic sync and refresh bundles"
-          git push origin "HEAD:${{ github.head_ref }}"
-          echo "committed_head=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
-
-      - name: Attach committed head to inventory
-        run: |
-          python - <<'PY'
-          import json, os
-          from pathlib import Path
-          p=Path("rc-a-final-inventory.json")
-          d=json.loads(p.read_text(encoding="utf-8")); d["committed_head"]=os.environ["committed_head"]
-          p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-          with Path("rc-a-final-inventory.txt").open("a",encoding="utf-8") as f: f.write(f"committed_head {os.environ['committed_head']}\n")
-          PY
-
-      - name: Upload final RC-A inventory
+      - name: Upload governance preflight diagnostics
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: rc-a-final-exhaustive-inventory
+          name: governance-preflight-diagnostics
           path: |
-            rc-a-final-inventory.json
-            rc-a-final-inventory.txt
-          if-no-files-found: error
-          retention-days: 7
+            governance-preflight.log
+            base-governance-preflight.log
+            pr-frontmatter.log
+            baseline-monotonic.log
+            governance-attribution.json
+          if-no-files-found: warn
+          retention-days: 14

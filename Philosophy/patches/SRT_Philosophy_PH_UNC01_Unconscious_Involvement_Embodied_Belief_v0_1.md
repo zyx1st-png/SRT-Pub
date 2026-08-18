@@ -230,7 +230,7 @@ An agent may experience two options as equally weighted while obscure difference
 
 ### Relation to Real Choice Moment
 
-This strengthens the **diagnostic discipline** around P1-T05:
+Under RC-A, this strengthens only the **downstream diagnostic discipline** formerly associated with P1-T05:
 
 ```text
 felt freedom
@@ -387,7 +387,7 @@ does not imply:
 L2 fully determines A_t
 ```
 
-P1-T05 remains the gate for distinguishing a genuinely live anchoring event from script replay or gradient following.
+RC-A removed former P1-T05 as a P1 / Selection gate. Script replay or gradient following may fail to establish stronger agency / subject-level revision, but they cannot by themselves be used to infer that no Selection occurred.
 
 ---
 

@@ -189,7 +189,7 @@ When verifiers, theorem provers, search systems or agent scaffolds guide an answ
 
 ### AIREASON01-C7 — Real-choice non-inference
 
-Long, coherent or causally active intermediate traces do not by themselves establish a real choice moment. The SRT P1 criterion still requires that what is selected genuinely constrains the system's own future selection space rather than merely extending script, search or `L_2` optimization.
+Long, coherent or causally active intermediate traces do not by themselves establish stronger agency / subject-level revision standing. RC-A removed former P1-T05 as a P1 / Selection criterion: future-space constraint can remain evidence inside bounded event or downstream agency audits, but no single trace property proves agency, and script / search / `L_2` optimization cannot by themselves prove the absence of Selection.
 
 **Level:** P3 application of the canonical P1 boundary.
 

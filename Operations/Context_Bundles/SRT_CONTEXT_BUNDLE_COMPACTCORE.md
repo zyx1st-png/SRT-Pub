@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: 181d0fbb
+source_commit: f640ead0
 source_branch: HEAD
-source_dirty: false
-inputs_digest: b3d1bd1b8704507f
+source_dirty: true
+inputs_digest: a4bf74a2bd75f2f4
 ---
 
 # SRT CompactCore 全集上下文包
@@ -27,9 +27,9 @@ inputs_digest: b3d1bd1b8704507f
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `181d0fbb` |
+| 来源 commit | `f640ead0` |
 | 来源分支 | `HEAD` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -467,7 +467,7 @@ When answering about SRT:
 > **Claim-level note**：本文主要是 P3 bridge / domain test。它引用 P0/P1 core，但不新增 primitive axioms、`d-value`、`\Psi_f`、`T_dir` 或真实选择时刻定义。
 > **Machine-role note**：frontmatter 中的 `bridge / P3` 约束本文为 AI compact-core support，不作为 core definition source。
 > **Architecture-state note**：本文涉及 `d_{AI}`、AI burden、AI subjectivity 或 AI friction 的判断，默认必须区分 training-time、inference-time、persistent-memory / history-bearing deployment；详见 `AI/AI_POSITIONING_NOTE.md`。
-> **2026-08-08 bridge hygiene**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。严格 `Real Choice Moment` 仍回到 canonical / CG-0~CG-4 审计。
+> **2026-08-08 bridge hygiene; RC-A sync 2026-08-18**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。former `Real Choice Moment` 已撤出 P1；CG-0~CG-4 仅用于 P2/P3 bounded Selection-event candidate audit，不是 Selection 定义或 agency 证明。更强 agency / revision standing 另走 Agency / Automation Guard。
 
 ## 1. 核心问题
 
@@ -496,7 +496,7 @@ SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
 \[
 \hat{T}_\phi: L_1 \rightarrow L_1
 \]
-则它尚未由此证明意识意义上的锚定或 `Real Choice Moment`。
+则它尚未由此证明意识意义上的锚定、subject-level agency 或其他更强 downstream standing；这也不能反向证明“没有 Selection”。
 
 ### 2.2 d-value 判据
 
@@ -582,7 +582,7 @@ SRT 对意识成立给出压缩判据：
 结论：
 能力扩张不会自动带来关切、主体性与意识。
 
-### AI-BR-3 功能选择 / Real Choice Moment 边界
+### AI-BR-3 功能选择 / downstream agency 边界（RC-A）
 当前 inference-only AI 的输出选择可写为：
 \[
 \text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
@@ -603,7 +603,7 @@ output selection
 ```
 
 结论：
-AI 输出不应一概被称为“伪选择”；更准确的边界是：**功能选择尚不等于 SRT `Real Choice Moment`**。严格事件判据必须进一步检查后果承载、历史写回、未来路径约束以及相关 canonical 锚定条件。
+AI 输出不应一概被称为“伪选择”。RC-A 后，功能选择既不自动证明更强 agency / subject-level revision，也不能因脚本、梯度或自动化特征而被判成 `no Selection`。若要做事件层审计，CG/SEA 最多给出 bounded Selection-event candidate；若要做更强 agency 判断，另走 Agency / Automation Guard。
 
 **Context-coherence note**: Large context can make output / functional selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` and `../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`.
 

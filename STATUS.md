@@ -141,7 +141,7 @@ updated: 2026-08-17
 - 端到端试点「选择生成条件与真实选择事件」：新增 `03_Bridges/SRT_Selection_Event_CompactCore.md` 快速判别层（五门、五把梯子、三门槛、四类实践判读），登记 `Core/SRT_OPEN_TENSIONS.md §14`，接入 router §23a 与 deep theory map §19a，装入 `COMPACTCORE` 包，配 12 道行为回归题。
 - 作者裁决 G1（可再选择性为限定性健康判据）与 G2（耗散结构与选择结构分层）首次进入活跃层。
 - `scripts/check_active_theory_assimilation.py` 按 Anti-Blocking Gate 以 report-only 接入 preflight；`--strict-node` 只对本轮声称已吸收的节点严格。
-- `CG-0..CG-4` 门槛值仍是审计默认约定，不是已证定理；claim level 全程 P2-P3，不改 P1-T05。
+- `CG-0..CG-4` 门槛值仍是审计默认约定，不是已证定理；claim level 全程 P2-P3。该历史施工当时未改动 P1-T05；现由 2026-08-17 RC-A supersede，former P1-T05 已撤出 P1。
 
 ### 2026-08-05 · 工作线排期与仓库收口
 

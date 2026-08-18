@@ -18,6 +18,8 @@ dependency: [Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md, Operati
 
 # 耗散结构与选择结构：P3 对接桥
 
+> **RC-A active-use override（2026-08-18）**：本桥早期的“真实选择 / real choice moment”措辞不得再读作 P1-T05 或 Selection ontology。CG-0..CG-4 仅是 P2/P3 bounded Selection-event candidate audit dimensions；通过或失败都不定义 Selection，也不证明 agency。script / habit / gradient / `L_2` automation 不能据此反推“没有 Selection”。
+
 > **角色说明**：本文件是 T-E 的 P3 bridge，不是耗散结构的物理学定义、SRT canonical、公理、定理或经验结论。
 >
 > **核心任务**：区分“由通量维持的局部秩序”与“具有非中立比较、路径效力、后果承载和历史写回的选择结构”，并说明前者何时只能作为物理底座，何时可能成为后者的实现机制或机制原型。
@@ -70,7 +72,7 @@ T-E 的工作目标是建立中间关系，而不是在两者之间写一个身�
 
 ### 1.2 选择事件
 
-本桥不重新定义选择事件。按 P1-T05、T-B 与 T-D 的现有分工，选择事件至少需要出现：
+本桥不重新定义 Selection。按 RC-A 后的现有分工，以下条目只构成 T-B / T-D 的 P2/P3 bounded Selection-event candidate 审计面，不是 Selection 的必要条件，也不复活 former P1-T05：
 
 - 活的差异进入，而不是单一路径脚本重放；
 - 非等价登记达到最低非中立门槛；

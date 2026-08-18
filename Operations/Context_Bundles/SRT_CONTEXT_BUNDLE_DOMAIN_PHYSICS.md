@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: 181d0fbb
+source_commit: f640ead0
 source_branch: HEAD
-source_dirty: false
-inputs_digest: b3d1bd1b8704507f
+source_dirty: true
+inputs_digest: a4bf74a2bd75f2f4
 ---
 
 # SRT 物理领域上下文包
@@ -27,9 +27,9 @@ inputs_digest: b3d1bd1b8704507f
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `181d0fbb` |
+| 来源 commit | `f640ead0` |
 | 来源分支 | `HEAD` |
-| 生成时来源工作树有改动 | 否 |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

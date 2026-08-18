@@ -18,6 +18,8 @@ dependency: [Operations/SRT_TB_TD_TE_CROSS_DOMAIN_STRESS_TEST_2026-08-04.md, Ope
 
 # CG-4 历史效力：操作化测试协议 v1
 
+> **RC-A active-use override（2026-08-18）**：本协议仍可作为 `CG-4 / HEF` 的 P2/P3 audit-only 工具，但 former P1-T05 / Real Choice Moment 已撤出 P1。HEF/CG 结果不得再与 former P1-T05 做必要/充分映射；通过最多支持 bounded Selection-event candidate，失败也不得推出 `no Selection`。agency / subject-level revision 另走 downstream Agency / Automation Guard。
+
 > **角色说明**：本文件把 T-D 的 CG-4“结果获得维持、写回或未来约束效力”压缩为可预注册、可重置、可重放、可干预、可失败的操作协议。它不是 canonical、L₂ 判据、不可逆性定义、统一记忆理论或经验验证结论。
 >
 > **核心问题**：怎样区分“过去留下了某种痕迹”，与“过去路径通过一个可识别的因果载体，真实改变了后续可达路径、转换成本、更新规则或系统边界”？
@@ -635,7 +637,7 @@ NER、CBP、HEF 的较高等级联合出现，可以支持 T-D 审计，但仍�
 
 - CG-0 差异是否真实进入；
 - CG-2 是否存在活的路径效力；
-- P1-T05 的 real choice moment 判据；
+- RC-A 后不再存在 P1-T05 real-choice criterion；若需要更强 agency / revision standing，另走 P2/P3 Agency / Automation Guard；
 - 当前领域的最强替代解释。
 
 不得把三个操作协议机械相加为必要充分定理。

@@ -16,6 +16,7 @@ dependency: [SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONICAL, SRT-CORE-21, SRT-L0-META
 > `_SRT_D_VALUE_CANONICAL.md` 管理 d-value；本文件管理 T_dir 及其展开的病理学结构。
 > **2026-04-22 降承诺说明**：`T_dir` 当前按 **v0 operational proxy / 最小操作定义** 使用。它帮助区分“跨位置可回读性”与“语义效价/置信度”，但尚不是已完成的本体基础或形式对象。
 > **Canonical status note（2026-04-23）**：本文件名中的 canonical 表示 governance-canonical working object 与引用锚点，不表示 `T_dir` 已具备 theory-canonical 完整奠基。价值动力学扩展段落按 bridge / theory-clarifying 读。
+> **RC-A active-use override（2026-08-18）**：本文较早段落中的“活选择 / 真实选择 / L₂ 替代选择”等措辞早于 RC-A。当前只能把它们读作 downstream bearer / agency 层关于**后果敏感、方向可回读并可用于重取向**的历史速记，不能当作 Selection occurrence、anchoring persistence、Stable ISP、generative health、合法性或普遍价值方向的判据。script / habit / gradient / `L_2` automation 本身也不得反推“没有 Selection”。`T_dir` 的当前工作角色仍由 Def-T-1 与 `R_self / A_reorient` 边界约束。
 
 ---
 
@@ -261,7 +262,7 @@ $$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\P
 | `Core_Law/SRT_L0_Metaphysics.md` | L₀ 的中性定义约束了相干性梯度只能是操作化代理，不是本体属性 |
 | `Philosophy/SRT_Ethics_Agency.md` | 价值遮蔽命题的伦理延伸 |
 | `Governance/SRT_POSITIONING.md` | T_dir 应用层作为 SRT 最有力入口的论证 |
-| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，ODE 含弛豫、真实重选泵入、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀、`s_{ext}` 支架五项。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
+| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，RC-A subtractive probe 已删除 former-P1-T05-derived 全局 `r(t)` 泵入项，当前最小 ODE 保留弛豫、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀与 `s_{ext}` 支架四条通道，不设 replacement rate。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
 | `Core_Law/SRT_Irreversibility.md` | T-IRR-3 按 ST-A 提供条件性反闭合接口；L1_Formalism §5.3 健康工作区是 generative reselectability 的实现候选，不是 P1-T07 必要性的证明 |
 
 ---

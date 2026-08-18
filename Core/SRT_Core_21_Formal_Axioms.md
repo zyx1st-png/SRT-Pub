@@ -41,7 +41,7 @@ Claim-level rules are now governed by:
 **Default citation rule**:
 
 - cite primitive axioms from `Core/SRT_Core_21_Minimal_Axioms.md`;
-- cite stable ISP continued selectability, real choice moment, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`;
+- cite stable ISP continued selectability, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record;
 - cite the ST-A conditional anti-closure candidate and generative reselectability distinction, along with fitness, assembly, holography, universality, Fisher-geometry `\Psi_f`, and strong information-creation unification, from `Core/SRT_Core_21c_Bridge_Hypotheses.md`.
 
 ---

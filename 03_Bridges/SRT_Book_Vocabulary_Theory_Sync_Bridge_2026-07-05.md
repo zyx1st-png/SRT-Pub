@@ -21,6 +21,8 @@ provenance: 全书（Drafts_26Q Q00–Q28 + 术语表 v4，revised 2026-07-04）
 # 书稿词表 → 理论层同步对接桥
 # Book Glossary → Theory-Layer Vocabulary Sync Bridge
 
+> **RC-A active-use override（2026-08-18）**：本桥形成于 RC-A 之前。下文凡把 `P1-T05 / Real Choice Moment` 写成当前理论锚点、domain reading 或第三态能动性的 P1 来源，均由 RC-A supersede：former P1-T05 已撤出 P1；Selection 回到 P0/P1 Selection owners，能动性相关 anti-script / consequence-sensitive revision 只按 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md` 的 P2/P3 downstream guard 使用。书稿措辞本身作为 provenance 保留，不反向定义 Selection。
+
 > **角色说明（读前必读）**：本文件是**对接桥 / 登记层**，不是定义源。
 > 它把《从存在到秩序》书稿术语表（`附录_术语表.md` v4）里已结晶的词汇，逐条对回理论层锚点，
 > 标出三类状态：**已锚定**（理论层有承重对象，书名是白话重述）／**新候选**（书稿优化中长出、理论层尚未登记，
@@ -55,7 +57,7 @@ provenance: 全书（Drafts_26Q Q00–Q28 + 术语表 v4，revised 2026-07-04）
 | 一 | 最低非中立性 | `ε_pg`（`_SRT_SYMBOL_TABLE.md`；`SRT_Core_01 T-Core-A1C2`） | ✅ |
 | 二 | 排开·定形·写入 | `Ĝθ` 收束 + `L_1` 成形 + `L_1→L_2` 写回 | 🌉 MSD 桥 §2 |
 | 二 | 选择性收束／选择结构 | 过程/结果对偶，映射 `Ĝθ` / 收束结果 | 🌉 MSD 桥 §2 |
-| 二 | 选择（≠挑选） | `P1-T05` 真实选择时刻 | ✅ |
+| 二 | 选择（≠挑选） | P0/P1 Selection owners；former `P1-T05` 仅作 RC-A demotion provenance | ✅（RC-A 同步） |
 | 二 | 阴影·张力·后续摩擦 | 被排除可能的去向；`Ψ_f` 残余 | ⚑（被排开者去向三分，见 §2.4） |
 | 二 | 锚定（留痕/承重/再入场） | `L_0` 锚定；MSD 桥「锚定」 | 🌉 MSD 桥 §2 |
 | 二 | 不可逆性 | `P0-03` 不可逆选择痕迹；`SRT_Irreversibility.md` | ✅ |
@@ -67,7 +69,7 @@ provenance: 全书（Drafts_26Q Q00–Q28 + 术语表 v4，revised 2026-07-04）
 | 三 | 在乎（四错位关切） | `_SRT_D_VALUE_CANONICAL.md §5b.1b` 四种假关切（占有/符号/表演/效率） | ✅（精确对应） |
 | 三 | 价值·**微效价**·affordance·不可替代性 | d-value（Value as Non-Substitutability） | ⚑（微效价+发生链新，见 §2.2） |
 | 三 | 关切维度（深度/数量/质量） | d-value 书稿层用法（`_SRT_D_VALUE_CANONICAL.md` 书稿层说明） | ✅ |
-| 三 | **能动性（第三态）** | `P1-T05` + 承担 | ⚑（第三态框架新，见 §2.5） |
+| 三 | **能动性（第三态）** | RC-A Agency / Automation Guard（P2/P3）+ 承担 | ⚑（第三态框架新，见 §2.5） |
 | 三 | 主体（自指率） | 自指率 = `σ`（`Core_Law/SRT_Individuation.md`） | ✅ |
 | 三 | 感受性／反身意识（三层） | `κ_{c1}/κ_{c1.5}/Layer3`（`Philosophy/SRT_Consciousness_Conditions.md`） | ✅ |
 | 四 | 脚手架／牢笼 | 健康／致命 `L_2`（`Core/SRT_Core_12b`；`SRT_OPEN_TENSIONS §4`） | ✅ |
@@ -120,9 +122,9 @@ provenance: 全书（Drafts_26Q Q00–Q28 + 术语表 v4，revised 2026-07-04）
 ### 2.5 第三态能动性 ⚑（新章 Q15b）
 
 - **书稿（Q15b）**：能动性 = 一个位置不只被后果改写，还能把回流后果带回自身、据此重新进入选择的**非被动能力**。两道边界：**不是自由意志**（有来路，从回流长出）、**不是机械反馈**（要求后果回到会在乎、能承重的位置，而非只绕回输入）。能动性有**程度**（深浅之别，非有无之别）。
-- **理论锚点**：`P1-T05` 真实选择时刻 + 承担闭合（`Eq-Evo-03b` 的 `δθ/δσ ≠ 0`）。「第三态」框架（自由意志与机械反馈之间的第三类）是对 P1-T05 的**新articulation**，理论层未以此对立结构登记。
-- **登记等级**：P2 canonical interpretation。「程度而非有无」与 d-value 的连续谱一致，可登记为 P1-T05 的 domain 读法。
-- **边界**：不得把「第三态」升格为新公理或第三种本体力；它是 P1-T05 + 承担的白话对立面命名，origin-of-selectability 仍受 `P0-04` 暴露点约束（能动性从回流"长出"不等于解决了可选择性起源）。
+- **理论锚点（RC-A superseded reading）**：第三态能动性不再回链 `P1-T05`；其 anti-script / consequence-sensitive revision 部分只接 RC-A Agency / Automation Guard（P2/P3），承担闭合（`Eq-Evo-03b` 的 `δθ/δσ ≠ 0`）仍按原层级单独审计。「第三态」是 downstream articulation，不是 Selection 定义。
+- **登记等级**：P2 canonical interpretation。「程度而非有无」可作为 downstream agency / bearer 读法，但不得登记为 former P1-T05 的 domain reading，也不得反推 Selection occurrence。
+- **边界**：不得把「第三态」升格为新公理或第三种本体力；它只是 downstream agency / bearer 层的白话对立面命名，不能替代 Selection ontology。origin-of-selectability 仍受 `P0-04` 暴露点约束（能动性从回流"长出"不等于解决了可选择性起源）。
 
 ### 2.6 委托四要件（共同体）
 
@@ -211,7 +213,7 @@ provenance: 全书（Drafts_26Q Q00–Q28 + 术语表 v4，revised 2026-07-04）
 |---|---|---|
 | 微效价 + 发生链 | **已落**：`_SRT_D_VALUE_CANONICAL.md §2a` 价值发生序（P3，book-provenance），已与 §2b.1 stake-gate 对账 | — |
 | 方向三判据中轴分歧 | **已裁决③并落地**：秩序增益四判据（见 §3 与全仓同步清单） | — |
-| 第三态能动性 | `Core/SRT_Core_21b P1-T05` 补一条 domain-reading 注（第三态框架） | 低-中（未做） |
+| 第三态能动性 | RC-A 后不再向 `Core_21b` former P1-T05 补 domain reading；如需施工只进入 P2/P3 Agency / Automation Guard 或相应 bearer bridge | 低-中（RC-A 改路由） |
 | 预裁剪四机制 / AI 三型 / 委托四要件 | 各域文件（Philosophy 社会/AI）domain 诊断清单，回链本桥 | 低 |
 | 17 原语生成器 | 保留于 inventory + 本桥登记；可选：`_SRT_AGENT_RETRIEVAL_PROFILE.md` 加一条「跨域难题定位用 17 原语透镜」 | 低 |
 

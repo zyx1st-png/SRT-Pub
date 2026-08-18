@@ -70,7 +70,7 @@ The source is a philosophical synthesis. It uses empirical affordance and norm-p
 
 ## 1. Why this matters for SRT
 
-Current SRT social cognition already distinguishes a broad affordance landscape from the smaller subset that becomes a current invitation field. P1 also states that sedimented `L_2` structures can constrain future selection and that script execution does not by itself constitute a Real Choice Moment.
+Current SRT social cognition already distinguishes a broad affordance landscape from the smaller subset that becomes a current invitation field. P1 states that sedimented `L_2` structures can constrain future selection; under RC-A, the anti-script remainder is only a P2/P3 agency / automation guard, not a Selection criterion.
 
 Berio and Musholt add a useful missing middle:
 
@@ -200,7 +200,7 @@ scripted constraint
 -> future selectability at that level contracts
 ```
 
-P1-T05 remains intact: script execution does not **by itself** count as a Real Choice Moment. This patch only blocks the invalid converse that all script execution is globally anti-choice.
+RC-A supersedes the former P1-T05 reading: script execution does not **by itself** establish stronger agency / consequence-sensitive revision, while the converse inference `script execution -> no Selection` is also invalid.
 
 ---
 
@@ -409,7 +409,7 @@ script is one local carrier / projection candidate
 != entire L_2
 ```
 
-### 8.3 P1 Real Choice Moment
+### 8.3 RC-A agency / automation guard (former P1 Real Choice Moment)
 
 Script made visible / challenged is a **choice opportunity**, not automatically a Real Choice Moment.
 
