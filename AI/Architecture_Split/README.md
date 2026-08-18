@@ -16,8 +16,8 @@ dependency: [SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
 > **Reading-aid guardrail**：本 split 目录只承担长文导航与局部阅读，不创建新的定义权。claim status 以 [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)、[`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md) 与 [`../../Governance/SRT_CLAIM_LADDER.md`](../../Governance/SRT_CLAIM_LADDER.md) 为准。
 
 - 原始总文（保留，不删内容）：[`../SRT_AI_Architecture.md`](../SRT_AI_Architecture.md)
-- Source owner bytes: `51808`
-- Source owner SHA-256: `3b3c774e495ae030ba413e26db180efc0ecc21e97b4f7ecff9cb3bdf792e1971`
+- Source owner bytes: `52424`
+- Source owner SHA-256: `69ed15c35b1abd5382c584fca39b01dca0ef2a879e14526571a0001d8ae73fb1`
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_Transformer_and_Judgment：[`01_Transformer_and_Judgment.md`](01_Transformer_and_Judgment.md)
 - 02_Defects_and_CategoryView：[`02_Defects_and_CategoryView.md`](02_Defects_and_CategoryView.md)

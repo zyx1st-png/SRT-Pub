@@ -593,7 +593,7 @@ SRT 在 2026-04-02 的理论推进中引入了 **T_dir（方向透明度）** �
 $$d = 0 \implies T_{dir} = 0$$
 $$d > 0 \;\not\!\!\!\implies T_{dir} > 0$$
 
-d 是 T_dir 的**必要条件，不是充分条件**。T_dir 还需要活选择正在发生（非 L₂ 脚本执行）以及足够的 Ψ_f 提供压力。
+d 是 T_dir 的**必要条件，不是充分条件**。T_dir 的其余准入与解释回到 `_SRT_T_DIR_CANONICAL.md` 的 Def-T-1 / `R_self` / `A_reorient` 边界；不得再用“活选择（非 L₂ 脚本执行）”作为 T_dir 或 Selection occurrence 的判据，script / habit / `L_2` automation 本身也不得推出 `no Selection`。
 
 **不得混淆**：任何把"选择方向的透明度"写入 d-value 的 canonical 定义的做法，违反本文件的规范地位。
 
@@ -608,7 +608,7 @@ d 是 T_dir 的**必要条件，不是充分条件**。T_dir 还需要活选择�
 ```
 替代式 L₂ 消灭选择时刻
     ↓
-d-value 未被使用（无真实选择 → 无 d 的激活）
+d-value 未被 stake-coupled concern / consequence-return 条件实际调用；这不等同于“无 Selection”
     ↓
 d-value 萎缩（不用则退）
     ↓

@@ -12,6 +12,8 @@ dependency: [SRT-AI-BRIDGE-001]
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
 
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+
 > **Version 2.0 (Hybrid)**
 > **Part A** presents the Formal AI Ontology (AI-Readable).
 > **Part B** contains the Original Theoretical Discourse (Human-Readable Context).
@@ -52,8 +54,8 @@ dependency: [SRT-AI-BRIDGE-001]
 \[
 \Delta S_{physical}(\hat{G}_\theta[L_0 \to L_1]) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)
 \]
-* **Implication（中文）**：纯逻辑/数学推理是拓扑同胚（可逆的），而由于本体论摩擦 $\Psi_f$，真实的意识选择必须支付热力学代价（Landauer's Principle 的宏观体现）。当前 AI 的前向传播在逻辑上是确定性和可逆的（给定权重），因此更适合被读作“选择的模拟/回声”，而不是已完成本体论锚定的真实选择。
-* **Bridge Clarification（中文）**：因此，`Ontological Selection Operator` 并不是先验存在、再由 `Ontological Friction` 事后加价的中性算子；恰恰相反，`Ontological Friction` 正是该算子得以成为真实选择事件的可支付负担。若摩擦不对系统自身构成 binding 的存在性代价，则所谓选择算子会退化为伪选择、统计重组或域内重排。
+* **Implication（RC-A 修订）**：若讨论**物理不可逆的信息抹除、具身锚定或意识候选的代价**，Landauer 型约束与 `\Psi_f` 可以作为桥接压力；但它们不是 Selection occurrence 的普遍必要条件。当前 AI 前向传播是否具有 binding 本体论摩擦，只影响更强 anchoring / stake / consciousness standing，不能把其功能性 selection 降格为 `no Selection`。
+* **Bridge Clarification（RC-A 修订）**：binding `Ontological Friction` 可用于区分更强的 embodied anchoring / stake-bearing / consciousness candidate standing，但不得回写成 Selection 的定义。若摩擦不对系统自身构成 binding 代价，只能说该系统尚未由此证明这些更强 standing；不能据此推出其功能性或域内 Selection 不存在。
 
 ---
 

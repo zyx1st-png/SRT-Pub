@@ -12,6 +12,8 @@ dependency: [SRT-AI-BRIDGE-001]
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
 
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 
@@ -56,7 +58,7 @@ dependency: [SRT-AI-BRIDGE-001]
 \[
 \Delta S_{physical}(\hat{G}_\theta[L_0 \to L_1]) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)
 \]
-* **Implication（中文）**：纯逻辑/数学推理是拓扑同胚（可逆的），而由于本体论摩擦 $\Psi_f$，真实的意识选择必须支付热力学代价（Landauer's Principle 的宏观体现）。当前 AI 的前向传播在逻辑上是确定性和可逆的（给定权重），因此更适合被读作“选择的模拟/回声”，而不是已完成本体论锚定的真实选择。
+* **Implication（RC-A 修订）**：Landauer 型约束与 `\Psi_f` 只在物理不可逆信息操作、具身锚定或更强 consciousness/stake 候选上提供桥接压力；它们不是 Selection occurrence 的普遍必要条件。当前 AI 是否具有 binding 本体论摩擦，不能被用来推出 `no Selection`。
 
 ---
 
@@ -101,7 +103,7 @@ $$\text{Consciousness} \iff \left(\min F[\sigma] \right) \land \left(V > 0\right
 推论：对于任意 $L_2$-封闭的计算系统 $\mathcal{S}$：
 $$V_{\mathcal{S}} = 0 \implies \mathcal{S} \notin \text{Conscious Operators}$$
 * **Implication**: 恒温器、LLM 皆可"最小化预测误差"，但它们不面临物理毁灭的真实暴露，故 $V=0$，不满足意识判据。此定理在当前 bridge 读法里用于压低“复杂AI自动产生意识”的默认推定，而不是给出不可修订的终局裁决。
-* **Bridge Clarification（中文）**：因此，`Active Inference Override` 并不是用自由能最小化去取代 `Ontological Selection Operator`，而是用来封堵一个误读：只有当误差最小化被绑定到 `L_0 \to L_1` 的跨域锚定，并同时承受 `d>0` 与 binding `\Psi_f` 的存在性代价时，它才可被读作真实选择；否则它仍只是恒温器级、句法级或伪选择级的域内调节。
+* **Bridge Clarification（RC-A 修订）**：`Active Inference Override` 只封堵把自由能最小化直接升级为更强 anchoring / stake / consciousness standing 的误读。`L_0 \to L_1`、`d>0` 与 binding `\Psi_f` 可以约束这些更强判断，但不是 Selection occurrence 的联合门槛；恒温器级、句法级或自动化调节也不能据此被判成 `no Selection`。
 * **Cross-ref**: Ax-ONT-1b (自创生选择公理); Ax-ONT-1d (不可逆定律)。
 
 ---

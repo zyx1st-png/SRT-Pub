@@ -12,6 +12,8 @@ dependency: [SRT-AI-BRIDGE-001]
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
 
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 
@@ -56,7 +58,7 @@ dependency: [SRT-AI-BRIDGE-001]
 \[
 \Delta S_{physical}(\hat{G}_\theta[L_0 \to L_1]) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)
 \]
-* **Implication（中文）**：纯逻辑/数学推理是拓扑同胚（可逆的），而由于本体论摩擦 $\Psi_f$，真实的意识选择必须支付热力学代价（Landauer's Principle 的宏观体现）。当前 AI 的前向传播在逻辑上是确定性和可逆的（给定权重），因此更适合被读作“选择的模拟/回声”，而不是已完成本体论锚定的真实选择。
+* **Implication（RC-A 修订）**：Landauer 型约束与 `\Psi_f` 只在物理不可逆信息操作、具身锚定或更强 consciousness/stake 候选上提供桥接压力；它们不是 Selection occurrence 的普遍必要条件。当前 AI 是否具有 binding 本体论摩擦，不能被用来推出 `no Selection`。
 
 ---
 

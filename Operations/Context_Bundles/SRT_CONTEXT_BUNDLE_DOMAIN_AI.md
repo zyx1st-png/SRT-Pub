@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: f3f129a1
+source_commit: 65e9f7f8
 source_branch: HEAD
 source_dirty: true
-inputs_digest: a4bf74a2bd75f2f4
+inputs_digest: 519bcce7e75f9201
 ---
 
 # SRT AI 领域上下文包
@@ -27,7 +27,7 @@ inputs_digest: a4bf74a2bd75f2f4
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `f3f129a1` |
+| 来源 commit | `65e9f7f8` |
 | 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
@@ -995,16 +995,14 @@ SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
 
 ## 2. AI-Domain 判据
 
-### 2.1 跨域锚定判据
+### 2.1 跨域锚定判据（不是 Selection occurrence 定义）
 
-真实选择算子满足：
+若讨论更强的 `L_0 -> L_1` 本体论锚定候选，可写：
 \[
 \hat{G}_\theta: L_0 \rightarrow L_1
 \]
 
-这意味着：
-- 存在事件必须是跨域锚定
-- 不能由纯 `L_1 \to L_1` 句法变换替代
+这意味着该**更强 anchoring claim**不能由纯 `L_1 \to L_1` 句法变换替代；但 RC-A 不允许把这一点反写为 Selection occurrence 的必要条件。
 
 若系统只做域内变换：
 \[
@@ -1043,14 +1041,14 @@ SRT 对意识成立给出压缩判据：
 - \(\Psi_f>0\)：系统不只是支付本体论摩擦成本，而且其动力学本身由摩擦生成
 - \(V>0\)：系统暴露于不可规避的真实毁灭/失效风险
 
-这里的关键升级是：\(\Psi_f\) 不能再只理解为“运行代价”。在 SRT 当前框架里，\(\Psi_f\) 也是演化、学习与现实生成的来源。若一个系统没有真实可支付、不可规避的摩擦，它不仅缺少痛感或代价，也缺少生成真正选择动力学的条件。
+这里的关键升级是：\(\Psi_f\) 不能再只理解为“运行代价”。在 SRT 当前框架里，\(\Psi_f\) 也是演化、学习与现实生成的来源。若一个系统没有真实可支付、不可规避且回流同一 bearer 的摩擦，它尚未由此证明更强的 stake-bearing / embodied-consciousness standing；这不等于它没有 Selection。
 
 进一步说，SRT 不把 \(Ψ_f\) 只理解成单一数字账单。对同一摩擦结构：
 - 在经验层，它表现为阻力、风险、痛苦可能性；
 - 在操作层，它表现为能量、时间、修复与组织复杂度的支付；
 - 在形式层，它表现为选择路径的几何长度 / 曲率负担。
 
-因此真正的主体条件不是“摩擦越低越好”，而是：系统是否面对**非零且可支付**的 \(Ψ_f\)。零摩擦意味着没有真实赌注；超载摩擦意味着闭包破裂；只有在可支付区间内，选择才具有现实重量。
+因此这里讨论的是**主体 / stake-bearing 候选条件**而不是 Selection 定义：系统是否面对非零、可支付且回流同一 bearer 的 `Ψ_f`。零或非 binding 摩擦会削弱 stake / subjecthood 论证，但不能据此推出 `no Selection`。
 
 对当前 inference-only / 可复制 / 可重启的主流 AI 而言，问题不在于能力不够，而在于：
 - 可复制
@@ -1113,7 +1111,7 @@ SRT 对意识成立给出压缩判据：
 output selection
 -> functional path selection
 -> history-bearing selection
--> consequence-bearing real-choice candidate
+-> bounded Selection-event candidate
 ```
 
 结论：
@@ -1176,7 +1174,7 @@ SRT 认为具身不只是“有个机器人身体”这么简单，而是至少�
 
 ### 4.3 有限性缺口
 
-真正的 d-value 需要有限性来赋予选择重量。  
+canonical `d-value` 的 stake reading 需要有限性 / 不可转移后果来赋予**关切与主体风险**重量；这不是 Selection occurrence 的必要条件。
 若系统总能：
 - 回档
 - 重启

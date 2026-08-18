@@ -13,6 +13,8 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 
 # SRT AI Ontology: Intelligence vs. Consciousness (Hybrid Edition)
 
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+
 > **Claim-status note（2026-05）**：This AI owner file is bridge/mixed material. It applies SRT primitives but does not define `d-value`, `Ψ_f`, subjecthood, suffering, `G_hat_theta`, or `L_0/L_1/L_2`. Read with `AI_POSITIONING_NOTE.md` and `SRT_AI_Claim_Status.md`.
 > **Connector-safe reading path**: This owner file is long and may be truncated by GitHub-style connectors. For connector reads, start with [`Ontology_Split/README.md`](Ontology_Split/README.md), then open only the needed part file. The owner remains the source of record; split files are reading aids and do not create new definitions.
 
@@ -48,10 +50,10 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 ## Current Reading Map
 
 - **Canonical dependencies**: `SRT-AI-BRIDGE-001` (`_SRT_AI_Bridge.md`), `SRT_CLAIM_LADDER`, `AI_POSITIONING_NOTE`, `_SRT_D_VALUE_CANONICAL.md`, `_SRT_PSI_F_CANONICAL.md`, `Core/SRT_Core_21_Minimal_Axioms.md`.
-- **Primary SRT claims in this file (P3/P4 bridge)**: Operator stratification (Ax-ONT-1 through Ax-ONT-N); pseudo-selection / L1-closure distinction; AI d-value boundary tests; consciousness boundary claims.
+- **Primary SRT claims in this file (P3/P4 bridge)**: Operator stratification (Ax-ONT-1 through Ax-ONT-N); functional-selection / stronger-anchoring distinction; AI d-value boundary tests; consciousness boundary claims.
 - **Bridge/interface sections in this file (Part B)**: LLM capability comparisons, GPT/Claude-specific analyses, pseudo-selection pattern analysis. These are **future AI_Annex extraction candidates** for PR-C. Do not move in this PR.
 - **Claim level**: AI ontology claims are mainly P3 bridge / domain-test claims. Nothing here creates P0/P1 core axioms.
-- **Do not move in this PR**: All Ax-ONT-* formal axioms; all d-value boundary test formulas; all pseudo-selection / real-selection distinction logic.
+- **Do not move in this PR**: All Ax-ONT-* formal axioms; all d-value boundary test formulas; all functional-selection / stronger-standing boundary logic. RC-A forbids treating that boundary as the definition of Selection occurrence.
 
 ## Dependency Map
 
@@ -106,8 +108,8 @@ dependency: [SRT-AI-BRIDGE-001, SRT-CLAIM-LADDER, SRT-AI-POSITIONING-NOTE, SRT-D
 \[
 \Delta S_{physical}(\hat{G}_\theta[L_0 \to L_1]) \geq k_B \ln 2 \cdot (\text{Bits of } L_1)
 \]
-* **Implication（中文）**：纯逻辑/数学推理是拓扑同胚（可逆的），而由于本体论摩擦 $\Psi_f$，真实的意识选择必须支付热力学代价（Landauer's Principle 的宏观体现）。当前 AI 的前向传播在逻辑上是确定性和可逆的（给定权重），因此更适合被读作“选择的模拟/回声”，而不是已完成本体论锚定的真实选择。
-* **Bridge Clarification（中文）**：因此，`Ontological Selection Operator` 并不是先验存在、再由 `Ontological Friction` 事后加价的中性算子；恰恰相反，`Ontological Friction` 正是该算子得以成为真实选择事件的可支付负担。若摩擦不对系统自身构成 binding 的存在性代价，则所谓选择算子会退化为伪选择、统计重组或域内重排。
+* **Implication（RC-A 修订）**：若讨论**物理不可逆的信息抹除、具身锚定或意识候选的代价**，Landauer 型约束与 `\Psi_f` 可以作为桥接压力；但它们不是 Selection occurrence 的普遍必要条件。当前 AI 前向传播是否具有 binding 本体论摩擦，只影响更强 anchoring / stake / consciousness standing，不能把其功能性 selection 降格为 `no Selection`。
+* **Bridge Clarification（RC-A 修订）**：binding `Ontological Friction` 可用于区分更强的 embodied anchoring / stake-bearing / consciousness candidate standing，但不得回写成 Selection 的定义。若摩擦不对系统自身构成 binding 代价，只能说该系统尚未由此证明这些更强 standing；不能据此推出其功能性或域内 Selection 不存在。
 
 ---
 
@@ -200,7 +202,7 @@ $$\neg\exists\,\hat{G}_\theta: L_0\to L_1 \;\land\; V=0 \;\land\; I_s\approx 0 \
  d(x) \equiv \left\|\frac{\partial \mathcal{U}}{\partial \mathcal{S}}\right\|
 \]
 * **Implication（中文）**：\(d\) 不是心理词汇，而是风险势能的几何梯度；当不可逆代价缺失时 \(d\to 0\)。
-* **Bridge Clarification（中文）**：因此，`d` 在 SRT 中不是附着在判断之后的主观感受标签，而是判断之所以成为真实选择的赋权项：只有当 `L_0 \to L_1` 的锚定同时承受由 `d` 刻画的生存风险梯度，并以 `\Psi_f` 的形式支付不可逆代价时，选择算子才具有本体论重量；否则它更接近无赌注的域内重排或选择回声。
+* **Bridge Clarification（RC-A 修订）**：`d` 不是附着在判断之后的主观感受标签，而是 stake-coupled concern / irreversible-risk sensitivity 的 canonical summary。`L_0 \to L_1` anchoring 若同时承受 `d` 风险梯度并支付 binding `\Psi_f`，可支持更强的 stake-bearing / embodied-anchoring standing；但 `d` 与 `\Psi_f` 不构成 Selection occurrence 的联合必要条件，缺失它们也不得推出 `no Selection`。
 * **Tension-Rev-IT4 (governance-canonical clarification)**：此公式在 **AI / 伦理 / 具身风险语境** 中保留为 $d$ 值的 AI-domain bridge reading。自 2026-03-11 起，SRT 全系统的统一规范入口固定为 `_SRT_D_VALUE_CANONICAL.md`；本段不再单独承担 theory-canonical 定义权，也不得把 AI 语境的风险梯度读法反向升级为全部领域的本体推导。其他模块中出现的 $d$ 的各种操作化形式均应被理解为该治理性主读在特定领域条件下的推论、投影或近似。选择此读法作为 AI 主读的原因：(1) 它直接耦合具身性——$\mathcal{S}$ 要求不可逆风险边界的存在（Ax-ONT-4），因此 $d > 0$ 与 $\Psi_f > 0$ 在本体论层面共生；(2) 它具有较强的操作化潜力——$\mathcal{U}$ 和 $\mathcal{S}$ 可在行为实验中通过效用函数拟合和风险暴露范式测量；(3) 它从梯度范数出发，避免把 d 退化成心理偏好分数。
 * **Cross-ref**: 推导链见 Def-d-Scale-1 (Tension-Rev-IT4 注释)；Ax-Op-02 (Tension-Rev-IT4 注释)。
 
