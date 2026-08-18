@@ -17,6 +17,17 @@ owner_targets:
   - 03_Bridges/SRT_Aging_Selective_Maintenance_Bridge_2026-08-17.md
   - Core/SRT_Core_21c_Bridge_Hypotheses.md
   - AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md
+landing_ledger:
+  - target: "03_Bridges/SRT_Aging_Selective_Maintenance_Bridge_2026-08-17.md"
+    state: pending
+    blocked_by: "The standalone consensus extension already carries the new synthesis. Consolidate into the AGING01 owner only during a named owner-level cleanup, preserving the distinction between maintenance-policy degradation and goal-alignment degradation and without weakening the existing subtractive-audit guards."
+  - target: "Core/SRT_Core_21c_Bridge_Hypotheses.md"
+    state: pending
+    blocked_by: "Goal continuity plus policy revisability is currently only a bridge-level explanatory gloss. No B13 owner edit is allowed until a cross-domain generative-health synthesis independently shows that the wording adds value without redefining or scalarizing generative reselectability."
+  - target: "AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md"
+    state: pending
+    blocked_by: "AIGOAL01 is presently only a terminology guard. Biological morphostatic regulation supplies no evidence requiring an AI goal-selection claim change; reopen only if a later cross-domain goal taxonomy explicitly needs shared wording."
+revival_trigger: "Reopen owner-level landing when AGING01 undergoes a named consolidation pass, when primary aging/regeneration evidence jointly measures large-scale alignment and future maintenance-policy flexibility, or when a cross-domain generative-health synthesis explicitly requires goal-continuity / policy-revisability language."
 ---
 
 # AGING01 Goal-Directedness Consensus Integration Hook
