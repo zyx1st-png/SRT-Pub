@@ -1,0 +1,67 @@
+name: RC-A Routing Cleanup 833
+
+on:
+  push:
+    branches:
+      - agent/rc-a-routing-cleanup-833
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/rc-a-routing-cleanup-833
+          fetch-depth: 0
+
+      - name: Apply exact routing replacements
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path('_SRT_INDEX.md')
+          text = p.read_text(encoding='utf-8')
+
+          replacements = [
+              (
+                  'T_dir ODE (relaxation + real-reselection pump + Ψ_f-gap deduction + S_str erosion + L_2 scaffolding)',
+                  'T_dir ODE (relaxation + Ψ_f-gap deduction + S_str erosion + L_2 scaffolding)',
+              ),
+              (
+                  'ST-A conditional collective anti-closure / co-selection reality criterion / collective four-variable coupled ODE',
+                  'ST-A conditional collective anti-closure / T-COLL-4 downstream collective agency / consequence-sensitive revision guard (P2/P3) / collective four-variable coupled ODE',
+              ),
+          ]
+
+          for old, new in replacements:
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'expected exactly one match for {old!r}, found {count}')
+              text = text.replace(old, new, 1)
+
+          p.write_text(text, encoding='utf-8')
+          PY
+
+          grep -F 'real-reselection pump' _SRT_INDEX.md && exit 1 || true
+          grep -F 'co-selection reality criterion' _SRT_INDEX.md && exit 1 || true
+          grep -F 'T-COLL-4 downstream collective agency / consequence-sensitive revision guard (P2/P3)' _SRT_INDEX.md
+
+      - name: Remove temporary workflow and commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/rc-a-routing-cleanup-833.yml
+          git config user.name 'zyx1st-png'
+          git config user.email 'zyx1st@gmail.com'
+          git add _SRT_INDEX.md .github/workflows/rc-a-routing-cleanup-833.yml
+          git diff --cached --check
+          changed=$(git diff --cached --name-only)
+          test "$changed" = '_SRT_INDEX.md'
+          git commit -m 'Clean stale RC-A routing descriptors'
+          git push origin HEAD:agent/rc-a-routing-cleanup-833
