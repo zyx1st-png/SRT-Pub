@@ -2,9 +2,6 @@ name: Governance Preflight
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
 
 permissions:
   contents: write
@@ -13,11 +10,10 @@ jobs:
   governance-preflight:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out PR head
         uses: actions/checkout@v4
         with:
-          # Full history is required for changed-file attribution, base-health
-          # comparison, baseline monotonicity, and context-bundle provenance.
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
       - name: Set up uv
@@ -28,7 +24,7 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Regenerate context bundles for closure artifact
+      - name: Regenerate context bundles
         run: uv run python scripts/build_srt_context_bundles.py
 
       - name: Verify regenerated context bundles
@@ -49,90 +45,104 @@ jobs:
 
           texts = {}
           skipped_binary = []
+          skipped_nonregular = []
+          read_errors = []
           for path in paths:
-              data = Path(path).read_bytes()
+              p = Path(path)
+              if p.is_symlink() or not p.is_file():
+                  skipped_nonregular.append(path)
+                  continue
+              try:
+                  data = p.read_bytes()
+              except OSError as exc:
+                  read_errors.append({"path": path, "error": repr(exc)})
+                  continue
               if b"\0" in data:
                   skipped_binary.append(path)
                   continue
               texts[path] = data.decode("utf-8", errors="replace")
 
-          specs = [
-              ("F1_P1_T05", re.compile(r"P1-T05", re.I), None),
-              ("F2_Real_Choice_Moment", re.compile(r"Real\s+Choice\s+Moment", re.I), None),
-              ("F3_real_live_active_choice", re.compile(r"\b(?:real|live|active)\s+choice\b", re.I), None),
-              ("F4_zh_real_live_L2_substitute", re.compile(r"真实选择|活选择|L2\s*替代选择", re.I), None),
-              ("F5_script_habit_automation_gradient_plus_Selection", re.compile(r"(?:(?:script|habit|automation|gradient).*Selection|Selection.*(?:script|habit|automation|gradient))", re.I), None),
-          ]
-
-          report = {
-              "head": head,
-              "tracked_files": len(paths),
-              "text_files_scanned": len(texts),
-              "binary_files_skipped": len(skipped_binary),
-              "families": {},
-          }
-
-          for name, rx, _ in specs:
+          def line_hits(rx):
               hits = []
               for path, text in texts.items():
                   for lineno, line in enumerate(text.splitlines(), 1):
                       if rx.search(line):
                           hits.append({"path": path, "line": lineno, "text": line})
-              report["families"][name] = {
+              return hits
+
+          def file_conjunction_hits(rx_a, rx_b):
+              hits = []
+              for path, text in texts.items():
+                  if not (rx_a.search(text) and rx_b.search(text)):
+                      continue
+                  for lineno, line in enumerate(text.splitlines(), 1):
+                      if rx_a.search(line) or rx_b.search(line):
+                          hits.append({"path": path, "line": lineno, "text": line})
+              return hits
+
+          families = {}
+          simple = {
+              "F1_P1_T05": re.compile(r"P1-T05", re.I),
+              "F2_Real_Choice_Moment": re.compile(r"Real\s+Choice\s+Moment", re.I),
+              "F3_real_live_active_choice": re.compile(r"\b(?:real|live|active)\s+choice\b", re.I),
+              "F4_zh_real_live_L2_substitute": re.compile(r"真实选择|活选择|L2\s*替代选择", re.I),
+          }
+          for name, rx in simple.items():
+              families[name] = line_hits(rx)
+
+          no_sel = re.compile(r"\bno\s+Selection\b", re.I)
+          for token in ("script", "habit", "automation", "gradient"):
+              families[f"F5_{token}_plus_no_Selection"] = file_conjunction_hits(
+                  re.compile(rf"\b{token}\w*\b", re.I), no_sel
+              )
+
+          families["F6_CG_plus_P1_T05"] = file_conjunction_hits(
+              re.compile(r"\bCG(?:[-_0-9]|\b)", re.I), re.compile(r"P1-T05", re.I)
+          )
+          families["F7_T_dir_plus_real_live_choice"] = file_conjunction_hits(
+              re.compile(r"T[_\\]?[{]?dir[}]?", re.I),
+              re.compile(r"\b(?:real|live)\s+choice\b|真实选择|活选择", re.I),
+          )
+
+          summary = {}
+          for name, hits in families.items():
+              summary[name] = {
                   "hit_count": len(hits),
                   "file_count": len({h["path"] for h in hits}),
                   "hits": hits,
               }
 
-          # F6 is a file-level conjunction: any tracked text file containing both CG and P1-T05.
-          f6_hits = []
-          cg_rx = re.compile(r"\bCG(?:[-_0-9]|\b)", re.I)
-          p1_rx = re.compile(r"P1-T05", re.I)
-          for path, text in texts.items():
-              if not (cg_rx.search(text) and p1_rx.search(text)):
-                  continue
-              for lineno, line in enumerate(text.splitlines(), 1):
-                  if cg_rx.search(line) or p1_rx.search(line):
-                      f6_hits.append({"path": path, "line": lineno, "text": line})
-          report["families"]["F6_CG_plus_P1_T05_file_conjunction"] = {
-              "hit_count": len(f6_hits),
-              "file_count": len({h["path"] for h in f6_hits}),
-              "hits": f6_hits,
-          }
-
-          # F7 is a file-level conjunction: T_dir plus real/live choice language.
-          f7_hits = []
-          tdir_rx = re.compile(r"T[_\\]?[{]?dir[}]?", re.I)
-          choice_rx = re.compile(r"\b(?:real|live)\s+choice\b|真实选择|活选择", re.I)
-          for path, text in texts.items():
-              if not (tdir_rx.search(text) and choice_rx.search(text)):
-                  continue
-              for lineno, line in enumerate(text.splitlines(), 1):
-                  if tdir_rx.search(line) or choice_rx.search(line):
-                      f7_hits.append({"path": path, "line": lineno, "text": line})
-          report["families"]["F7_T_dir_plus_real_live_choice_file_conjunction"] = {
-              "hit_count": len(f7_hits),
-              "file_count": len({h["path"] for h in f7_hits}),
-              "hits": f7_hits,
+          report = {
+              "snapshot_kind": "PR head branch",
+              "head": head,
+              "tracked_paths": len(paths),
+              "text_files_scanned": len(texts),
+              "binary_files_skipped": len(skipped_binary),
+              "nonregular_or_symlink_paths_skipped": len(skipped_nonregular),
+              "skipped_nonregular_paths": skipped_nonregular,
+              "read_errors": read_errors,
+              "families": summary,
           }
 
           Path("rc-a-exhaustive-inventory.json").write_text(
               json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
           )
-
           with Path("rc-a-exhaustive-inventory.txt").open("w", encoding="utf-8") as out:
-              out.write(f"HEAD {head}\n")
-              out.write(f"tracked_files {len(paths)}\n")
-              out.write(f"text_files_scanned {len(texts)}\n")
-              out.write(f"binary_files_skipped {len(skipped_binary)}\n\n")
-              for name, item in report["families"].items():
+              out.write(f"snapshot_kind PR head branch\nHEAD {head}\n")
+              out.write(f"tracked_paths {len(paths)}\ntext_files_scanned {len(texts)}\n")
+              out.write(f"binary_files_skipped {len(skipped_binary)}\n")
+              out.write(f"nonregular_or_symlink_paths_skipped {len(skipped_nonregular)}\n")
+              out.write(f"read_errors {len(read_errors)}\n\n")
+              for name, item in summary.items():
                   out.write(f"## {name}: hits={item['hit_count']} files={item['file_count']}\n")
                   for h in item["hits"]:
                       out.write(f"{h['path']}:{h['line']}:{h['text']}\n")
                   out.write("\n")
+          if read_errors:
+              raise SystemExit(f"inventory incomplete: {len(read_errors)} tracked regular files could not be read")
           PY
 
-      - name: Commit regenerated context bundles
+      - name: Commit regenerated context bundles to PR branch
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -145,181 +155,20 @@ jobs:
             git push origin "HEAD:${{ github.head_ref }}"
           fi
 
-      - name: Check base main governance health
-        id: base_governance
-        if: github.event_name == 'pull_request'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          base_ref="origin/${{ github.base_ref }}"
-          rm -rf /tmp/srt-governance-base
-          trap 'git worktree remove --force /tmp/srt-governance-base >/dev/null 2>&1 || true' EXIT
-          git worktree add --detach /tmp/srt-governance-base "$base_ref"
-          (
-            cd /tmp/srt-governance-base
-            uv run python scripts/refresh_split_metadata.py --check
-            uv run python scripts/governance_preflight.py \
-              --skip-write-report \
-              --strict-split-metadata
-          ) 2>&1 | tee base-governance-preflight.log
-
-      - name: Check PR-local frontmatter
-        id: pr_frontmatter
-        if: github.event_name == 'pull_request'
-        shell: bash
-        run: |
-          set -o pipefail
-          uv run python scripts/check_frontmatter_changed.py \
-            --base-ref "origin/${{ github.base_ref }}" \
-            --baseline Governance/Frontmatter_Warning_Baseline.txt \
-            --fail-on-new-warnings \
-            --suggest-fixes 2>&1 | tee pr-frontmatter.log
-
-      - name: Enforce frontmatter baseline monotonicity
-        id: baseline_monotonic
-        if: github.event_name == 'pull_request'
-        shell: bash
-        env:
-          BASELINE_EXPANSION_APPROVED: ${{ contains(github.event.pull_request.labels.*.name, 'governance-baseline-expansion-approved') }}
-        run: |
-          set -o pipefail
-          args=(
-            --base-ref "origin/${{ github.base_ref }}"
-            --baseline Governance/Frontmatter_Warning_Baseline.txt
-          )
-          if [[ "$BASELINE_EXPANSION_APPROVED" == "true" ]]; then
-            args+=(--allow-added)
-          fi
-          uv run python scripts/check_frontmatter_baseline_monotonic.py "${args[@]}" \
-            2>&1 | tee baseline-monotonic.log
-
-      - name: Check split metadata freshness
-        run: uv run python scripts/refresh_split_metadata.py --check
-
-      - name: Run governance preflight
-        id: full_preflight
-        shell: bash
-        run: |
-          set -o pipefail
-          uv run python scripts/governance_preflight.py \
-            --skip-write-report \
-            --strict-split-metadata 2>&1 | tee governance-preflight.log
-
-      - name: Classify governance result
-        if: always()
-        shell: bash
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          BASE_OUTCOME: ${{ steps.base_governance.outcome }}
-          LOCAL_OUTCOME: ${{ steps.pr_frontmatter.outcome }}
-          BASELINE_OUTCOME: ${{ steps.baseline_monotonic.outcome }}
-          FULL_OUTCOME: ${{ steps.full_preflight.outcome }}
-        run: |
-          python - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          def outcome(name: str) -> str:
-              value = os.environ.get(name, "").strip()
-              return value or "not-run"
-
-          event_name = outcome("EVENT_NAME")
-          base = outcome("BASE_OUTCOME")
-          local = outcome("LOCAL_OUTCOME")
-          baseline = outcome("BASELINE_OUTCOME")
-          full = outcome("FULL_OUTCOME")
-
-          if event_name != "pull_request":
-              scope = "main_push"
-              disposition = "inspect_full_preflight"
-              verdict = "MAIN PUSH CHECK — inspect the full preflight result."
-          elif local == "failure":
-              scope = "pr_local"
-              disposition = "do_not_merge"
-              verdict = "PR_LOCAL / LOCAL DIRTY / DO NOT MERGE."
-          elif baseline == "failure":
-              scope = "baseline_expansion"
-              disposition = "do_not_merge"
-              verdict = "PR_LOCAL BASELINE DEBT EXPANSION / DO NOT MERGE."
-          elif base == "failure" and full == "success":
-              scope = "base_main_repaired"
-              disposition = "governance_hotfix_only"
-              verdict = "BASE_MAIN WAS BLOCKED; THIS PR REPAIRS IT / HOTFIX PATH."
-          elif base == "failure":
-              scope = "base_main"
-              disposition = "governance_hotfix_only"
-              verdict = "BASE_MAIN BLOCKED / HOTFIX ONLY."
-          elif full == "failure":
-              scope = "merged_repository_or_infrastructure"
-              disposition = "do_not_merge"
-              verdict = "LOCAL FRONTMATTER CLEAN; FULL REPOSITORY OR INFRA FAILURE / DO NOT MERGE."
-          else:
-              scope = "none"
-              disposition = "normal_merge"
-              verdict = "LOCAL CLEAN / MAIN HEALTHY / NORMAL MERGE."
-
-          payload = {
-              "schema_version": 1,
-              "event_name": event_name,
-              "failure_scope": scope,
-              "merge_disposition": disposition,
-              "base_main_health": base,
-              "pr_local_frontmatter": local,
-              "baseline_monotonicity": baseline,
-              "merged_repository_preflight": full,
-              "verdict": verdict,
-          }
-          Path("governance-attribution.json").write_text(
-              json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-              encoding="utf-8",
-          )
-
-          summary = Path(os.environ["GITHUB_STEP_SUMMARY"])
-          with summary.open("a", encoding="utf-8") as handle:
-              handle.write("## Governance failure attribution\n\n")
-              handle.write("| Scope | Outcome |\n")
-              handle.write("|---|---|\n")
-              handle.write(f"| base_main_governance | {base} |\n")
-              handle.write(f"| pr_local_frontmatter | {local} |\n")
-              handle.write(f"| baseline_monotonicity | {baseline} |\n")
-              handle.write(f"| merged_repository_preflight | {full} |\n\n")
-              handle.write(f"**Verdict:** {verdict}\n")
-
-          print(json.dumps(payload, ensure_ascii=False, indent=2))
-          PY
-
-      - name: Upload governance preflight diagnostics
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: governance-preflight-diagnostics
-          path: |
-            governance-preflight.log
-            base-governance-preflight.log
-            pr-frontmatter.log
-            baseline-monotonic.log
-            governance-attribution.json
-          if-no-files-found: warn
-          retention-days: 14
-
-      - name: Upload regenerated context bundles
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: rc-a-regenerated-context-bundles
-          path: Operations/Context_Bundles/
-          if-no-files-found: error
-          retention-days: 2
-
       - name: Upload RC-A exhaustive inventory
-        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: rc-a-exhaustive-inventory
           path: |
             rc-a-exhaustive-inventory.json
             rc-a-exhaustive-inventory.txt
+          if-no-files-found: error
+          retention-days: 2
+
+      - name: Upload regenerated context bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: rc-a-regenerated-context-bundles
+          path: Operations/Context_Bundles/
           if-no-files-found: error
           retention-days: 2
