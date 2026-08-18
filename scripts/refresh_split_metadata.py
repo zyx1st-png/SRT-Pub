@@ -80,11 +80,17 @@ def main() -> None:
 
     mode = "would_change" if args.check else "changed"
     print(f"refresh_split_metadata: {mode}={len(changed)} skipped={len(skipped)}")
+    diag_lines: list[str] = []
     for item in changed[:80]:
         print(f"{mode}: {item}")
         if args.check and item in diagnostics:
             owner_bytes, owner_sha = diagnostics[item]
-            print(f"diagnostic: {item}: owner_bytes={owner_bytes} owner_sha256={owner_sha}")
+            line = f"diagnostic: {item}: owner_bytes={owner_bytes} owner_sha256={owner_sha}"
+            print(line)
+            diag_lines.append(line)
+    if args.check and diag_lines:
+        with (ROOT / "pr-frontmatter.log").open("a", encoding="utf-8") as handle:
+            handle.write("\n" + "\n".join(diag_lines) + "\n")
     if len(changed) > 80:
         print(f"{mode}: ... {len(changed) - 80} more")
     for item in skipped[:40]:
