@@ -7,7 +7,7 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   governance-preflight:
@@ -33,6 +33,117 @@ jobs:
 
       - name: Verify regenerated context bundles
         run: uv run python scripts/build_srt_context_bundles.py --check
+
+      - name: Run RC-A exhaustive tracked-file inventory
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          import subprocess
+          from pathlib import Path
+
+          head = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+          raw = subprocess.check_output(["git", "ls-files", "-z"])
+          paths = [p.decode("utf-8", errors="surrogateescape") for p in raw.split(b"\0") if p]
+
+          texts = {}
+          skipped_binary = []
+          for path in paths:
+              data = Path(path).read_bytes()
+              if b"\0" in data:
+                  skipped_binary.append(path)
+                  continue
+              texts[path] = data.decode("utf-8", errors="replace")
+
+          specs = [
+              ("F1_P1_T05", re.compile(r"P1-T05", re.I), None),
+              ("F2_Real_Choice_Moment", re.compile(r"Real\s+Choice\s+Moment", re.I), None),
+              ("F3_real_live_active_choice", re.compile(r"\b(?:real|live|active)\s+choice\b", re.I), None),
+              ("F4_zh_real_live_L2_substitute", re.compile(r"真实选择|活选择|L2\s*替代选择", re.I), None),
+              ("F5_script_habit_automation_gradient_plus_Selection", re.compile(r"(?:(?:script|habit|automation|gradient).*Selection|Selection.*(?:script|habit|automation|gradient))", re.I), None),
+          ]
+
+          report = {
+              "head": head,
+              "tracked_files": len(paths),
+              "text_files_scanned": len(texts),
+              "binary_files_skipped": len(skipped_binary),
+              "families": {},
+          }
+
+          for name, rx, _ in specs:
+              hits = []
+              for path, text in texts.items():
+                  for lineno, line in enumerate(text.splitlines(), 1):
+                      if rx.search(line):
+                          hits.append({"path": path, "line": lineno, "text": line})
+              report["families"][name] = {
+                  "hit_count": len(hits),
+                  "file_count": len({h["path"] for h in hits}),
+                  "hits": hits,
+              }
+
+          # F6 is a file-level conjunction: any tracked text file containing both CG and P1-T05.
+          f6_hits = []
+          cg_rx = re.compile(r"\bCG(?:[-_0-9]|\b)", re.I)
+          p1_rx = re.compile(r"P1-T05", re.I)
+          for path, text in texts.items():
+              if not (cg_rx.search(text) and p1_rx.search(text)):
+                  continue
+              for lineno, line in enumerate(text.splitlines(), 1):
+                  if cg_rx.search(line) or p1_rx.search(line):
+                      f6_hits.append({"path": path, "line": lineno, "text": line})
+          report["families"]["F6_CG_plus_P1_T05_file_conjunction"] = {
+              "hit_count": len(f6_hits),
+              "file_count": len({h["path"] for h in f6_hits}),
+              "hits": f6_hits,
+          }
+
+          # F7 is a file-level conjunction: T_dir plus real/live choice language.
+          f7_hits = []
+          tdir_rx = re.compile(r"T[_\\]?[{]?dir[}]?", re.I)
+          choice_rx = re.compile(r"\b(?:real|live)\s+choice\b|真实选择|活选择", re.I)
+          for path, text in texts.items():
+              if not (tdir_rx.search(text) and choice_rx.search(text)):
+                  continue
+              for lineno, line in enumerate(text.splitlines(), 1):
+                  if tdir_rx.search(line) or choice_rx.search(line):
+                      f7_hits.append({"path": path, "line": lineno, "text": line})
+          report["families"]["F7_T_dir_plus_real_live_choice_file_conjunction"] = {
+              "hit_count": len(f7_hits),
+              "file_count": len({h["path"] for h in f7_hits}),
+              "hits": f7_hits,
+          }
+
+          Path("rc-a-exhaustive-inventory.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+
+          with Path("rc-a-exhaustive-inventory.txt").open("w", encoding="utf-8") as out:
+              out.write(f"HEAD {head}\n")
+              out.write(f"tracked_files {len(paths)}\n")
+              out.write(f"text_files_scanned {len(texts)}\n")
+              out.write(f"binary_files_skipped {len(skipped_binary)}\n\n")
+              for name, item in report["families"].items():
+                  out.write(f"## {name}: hits={item['hit_count']} files={item['file_count']}\n")
+                  for h in item["hits"]:
+                      out.write(f"{h['path']}:{h['line']}:{h['text']}\n")
+                  out.write("\n")
+          PY
+
+      - name: Commit regenerated context bundles
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Operations/Context_Bundles/
+          if git diff --cached --quiet; then
+            echo "Context bundles already fresh; no commit needed."
+          else
+            git commit -m "Refresh context bundles after RC-A semantic sync"
+            git push origin "HEAD:${{ github.head_ref }}"
+          fi
 
       - name: Check base main governance health
         id: base_governance
@@ -199,5 +310,16 @@ jobs:
         with:
           name: rc-a-regenerated-context-bundles
           path: Operations/Context_Bundles/
+          if-no-files-found: error
+          retention-days: 2
+
+      - name: Upload RC-A exhaustive inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rc-a-exhaustive-inventory
+          path: |
+            rc-a-exhaustive-inventory.json
+            rc-a-exhaustive-inventory.txt
           if-no-files-found: error
           retention-days: 2
