@@ -1,8 +1,8 @@
 ---
 id: SRT-OPS-PHASE0-5-J3-PRIMITIVE-ACTUALISATION-NONNEUTRALITY-AUTHOR-PACKET-20260818
 type: author_decision_packet
-status: decision_required
-record_stage: options_prepared_no_canonical_edit
+status: active
+record_stage: decision_required
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -22,15 +22,15 @@ tags: [Phase0_5, GOV_SUB01, J3, Selection, PrimitiveActualisation, EpsilonPG, No
 
 ## Primitive Actualisation vs Non-Neutrality
 
-> **Decision scope**: whether Phase 0.5 should treat explicit non-neutrality / `ε_pg` as analytically inside primitive actualisation, as a distinct co-present L0 postulate, as a constitutive Selection relation, or leave the ontology unchanged while first running a rival-vocabulary stress test.
+> **Historical decision state**: this packet was prepared after J1/J2 and before J3-D was executed. Its purpose is to preserve the option set and the reason J3 crossed an author-level P0 boundary. The later disposition is recorded separately in `Operations/Audits/SRT_PHASE0_5_J3D_DISPOSITION_2026-08-18.md`.
 >
-> **No canonical edit has been made.** This packet does not authorize Selection Grammar, a new relation alphabet, a new P0/P1 claim, a new symbol, or a new equation.
+> **No canonical edit is authorized here.** This packet does not authorize Selection Grammar, a new relation alphabet, a new P0/P1 claim, a new symbol, or a new equation.
 
 ---
 
-## 0. Why author decision is required here
+## 0. Why J3 required explicit branching
 
-Pass 1 and Pass 2 safely separated downstream relations:
+Pass 1 and Pass 2 safely separated downstream relations from one-shot Selection occurrence:
 
 ```text
 history / writeback
@@ -39,371 +39,224 @@ cost / friction
 consequence return
 ```
 
-from one-shot Selection occurrence.
+J3 is different because it touches the P0 stopping point itself.
 
-J3 is different. It touches the current P0 stopping point itself.
+The current architecture simultaneously says:
 
-The current canonical architecture simultaneously says:
-
-### P0-01 / AM-A
-
-Primitive actualisation is already the irreducible kernel:
+1. **P0-01 / AM-A**: primitive actualisation is already the irreducible kernel:
 
 ```text
 non-objectified potential
 -> determinate manifest distinction
 ```
 
-and gradients, asymmetries, `Ψ_f`, payability, normalization, closure and writeback are **not thereby universal causes** of that kernel.
+2. gradients, asymmetries, `Psi_f`, payability, normalization, closure and writeback may constrain lower-level realizations but are not thereby universal causes of that kernel;
 
-### L0 Metaphysics
+3. **L0 Metaphysics** nevertheless says `L_0` is not completely neutral and carries contentless structural asymmetries including `kappa_0`, `epsilon` / non-self-erasure non-neutrality, and irreversibility;
 
-`L_0` is nevertheless **not completely neutral**. Current L0 explicitly carries three contentless structural asymmetries:
+4. current L0 explicitly does not settle whether those asymmetries are independent, mutually derivable, reducible, or dependent.
 
-1. `κ_0` / granularity-curvature role;
-2. `ε` / non-self-erasure non-neutrality;
-3. historical irreversibility.
-
-The L0 owner also explicitly states that the current round has **not decided whether these three are independent, mutually derivable, reducible or dependent**, and routes that question to GOV-SUB01.
-
-### `ε_pg` bootstrap guard
-
-`ε_pg` remains an L0 minimum non-neutrality postulate. It must not be identified with consciousness or used by itself to derive ISP anti-closure.
-
-Therefore J3 cannot be answered by a mechanical edit. The architecture currently contains a deliberate tension:
+So the unresolved relation is:
 
 ```text
 actualisation is primitive
 AND
 L0 is structurally non-neutral
 BUT
-non-neutrality is not declared the universal cause of actualisation
+non-neutrality is not currently declared the universal cause of actualisation
 ```
 
-The question is what relation, if any, SRT should claim between those statements.
+A mechanical canonical edit would therefore change the target being audited.
 
 ---
 
-## 1. What the older ε_pg deletion audit can and cannot decide now
+## 1. Locked J3 question
 
-`Operations/Audits/SRT_CONCEPT_DELETION_PASS2_KAPPA_EPSILON.md` and `Maps/SRT_EPSILON_PG_DEPENDENCY_MAP.md` remain valuable provenance, but several downstream edges in those 2026-07-17 records are no longer current:
+> When SRT says a non-objectified potential acquires a **determinate manifest distinction**, is an effective non-neutrality / difference-making role already analytically contained in that statement, merely co-present in the L0 background, or an additional constitutive condition of Selection occurrence?
 
-- former P1-T07 has since been demoted by ST-A;
-- former P1-T05 has since been demoted by RC-A;
-- global `r(t)` / real-reselection machinery has since been subtracted;
-- `ε_pg` no longer licenses an unconditional ISP anti-closure theorem.
+This packet does **not** widen the decision into:
 
-What remains useful from the old audit is the methodological finding:
-
-> removing `ε_pg` may preserve many L1 implementations by replacing it with generic positivity / asymmetry vocabulary, but that can be a hidden reparameterization rather than genuine deletion.
-
-The old audit therefore does **not** settle J3. It sharpens the hidden-reparameterization risk.
+- `kappa_0` vs `epsilon_pg` full reducibility;
+- Stable-ISP anti-closure;
+- empirical D2 superiority;
+- generative reselectability;
+- consciousness / subjecthood / agency;
+- Selection Grammar.
 
 ---
 
-## 2. Locked question
+## 2. Option J3-A — distinct co-present postulates
 
-J3 should answer only:
-
-> When SRT says a non-objectified potential acquires a **determinate manifest distinction**, is an effective non-neutrality / difference-making relation already analytically contained in that statement, merely co-present in the L0 background, or an additional constitutive condition of Selection occurrence?
-
-Do **not** widen this decision into:
-
-- whether `κ_0`, `ε_pg` and irreversibility are fully reducible to one another;
-- whether `ε_pg` explains stable ISP anti-closure;
-- whether Selection has empirical D2 superiority;
-- whether generative reselectability is primitive;
-- whether agency / subjecthood is required.
-
-Those are separate questions.
-
----
-
-## 3. Option J3-A — Distinct co-present postulates; no derivation claim
-
-### Statement
-
-Keep the current architecture literally as a layered stopping point:
+### Reading
 
 ```text
 P0-01 primitive actualisation
-!= derived from ε_pg
+!= derived from epsilon_pg
 
-ε_pg / L0 non-neutrality
-= distinct contentless structural postulate
-that constrains the L0 field / realization background
+epsilon_pg / L0 non-neutrality
+= distinct contentless structural commitment
 without defining every Selection occurrence
 ```
 
-### What this preserves
+### Benefit
 
-- current P0-01 AM-A wording;
-- current L0 claim that `L_0` is not completely neutral;
-- current `ε_pg` status;
-- no new Selection criterion;
-- no new primitive alphabet;
-- no need to reopen RC-A.
+- preserves P0-01 / AM-A as written;
+- preserves current L0 non-neutrality commitments;
+- adds no Selection gate;
+- does not reopen RC-A.
 
 ### Cost
 
-The relation between actualisation and non-neutrality remains **under-explained**. A critic can ask whether SRT is carrying two primitive commitments where one would suffice.
+The relation between actualisation and non-neutrality remains under-explained and may represent two primitive commitments where a later audit could show one role is analytically absorbed by the other.
 
-### GOV-SUB01 reading
+### GOV-SUB01 posture
 
-J3 remains:
-
-**`R4 compensated / unresolved`**.
-
-Primitive actualisation may be masking the role that non-neutrality would otherwise need to play.
+```text
+R4 compensated / unresolved
+```
 
 ### Edit burden
 
-**None.** This is the status quo.
+None. This is the status quo.
 
 ---
 
-## 4. Option J3-B — Analytic absorption
+## 3. Option J3-B — analytic absorption
 
-### Statement
+### Reading
 
-Treat effective non-neutrality as analytically contained in the phrase:
+Treat generic effective non-neutrality as analytically contained in:
 
 ```text
 determinate manifest distinction
 ```
 
-so that a wholly neutral "actualisation" is conceptually incoherent.
-
-Under this view:
-
-```text
-actualisation entails some non-neutral difference-making
-```
-
-but the specific `ε_pg` postulate would no longer automatically be an independent P0 burden; it could become one particular L0 formalization / sharpening of that analytic minimum.
+so a wholly neutral actualisation is conceptually incoherent.
 
 ### Benefit
 
 - reduces apparent primitive duplication;
-- makes J3's masking explicit rather than leaving it as R4;
-- gives a clean answer to "how could determination occur in complete neutrality?"
+- gives a direct answer to how determination could occur in complete neutrality.
 
-### Cost / risk
+### Risk
 
-This risks silently demoting or reinterpreting the current L0 `ε` commitment and could force edits across:
+- may turn non-neutrality into a tautological restatement of determinate difference;
+- may force reinterpretation of the independent burden currently carried by `epsilon_pg` and related L0 files;
+- requires high-risk canonical impact analysis before adoption.
 
-- `Core_Law/SRT_L0_Metaphysics.md`;
-- `_SRT_SYMBOL_TABLE.md`;
-- `Core/SRT_Core_01_Axioms.md`;
-- cross-domain / T_dir grounding prose.
+### Key guard
 
-It also risks turning "non-neutrality" into a tautological restatement of "determinate difference" rather than an independently informative postulate.
+Even if generic non-neutrality were analytically absorbed:
 
-### GOV-SUB01 implication
-
-Potentially:
-
-- generic non-neutrality role → **analytic / not independently audited**;
-- specific `ε_pg` carrier → future `R2/R3` candidate depending on what independent work remains.
-
-### Edit burden
-
-**High-risk canonical reinterpretation.** Not suitable for silent execution.
+```text
+generic non-neutrality role
+!-> specific epsilon_pg is the universal Selection cause
+```
 
 ---
 
-## 5. Option J3-C — Constitutive non-neutrality relation for Selection
+## 4. Option J3-C — constitutive non-neutrality gate
 
-### Statement
+### Reading
 
-Make an explicit minimum non-neutrality relation part of Selection occurrence itself, e.g. conceptually:
-
-```text
-Selection occurrence
-requires effective non-neutrality
-such that a difference acquires manifest actuality
-```
-
-with `ε_pg` as the existing L0 carrier of that minimum non-neutrality.
+Make effective non-neutrality an explicit additional condition of Selection occurrence, with `epsilon_pg` as the existing L0 carrier.
 
 ### Benefit
 
-- produces a positive relational account rather than leaving actualisation as a bare primitive;
-- aligns strongly with the intuition that complete neutrality cannot generate a determinate distinction;
-- would give `ε_pg` a clear relation to Selection occurrence.
+It would provide a positive relational account instead of leaving actualisation as a bare primitive.
 
 ### Major risk
 
-This would be a **new constitutive criterion for Selection**.
+This changes the Selection target itself and risks recreating the over-gating that RC-A removed.
 
-It would sit uneasily with current P0-01 AM-A wording that asymmetries are not thereby universal causes of the primitive kernel, and it could recreate the same kind of over-gating that RC-A just removed from Selection.
-
-It would also risk:
+It could encourage invalid inferences such as:
 
 ```text
-ε_pg present
--> Selection
+epsilon_pg present -> Selection
+no independently measured epsilon_pg -> no Selection
 ```
 
-or
+It also sits uneasily with the current AM-A boundary that asymmetries are not thereby universal causes of primitive actualisation.
 
-```text
-no independently measured ε_pg
--> no Selection
-```
+### GOV-SUB01 consequence
 
-unless heavily guarded.
-
-### GOV-SUB01 implication
-
-Would move the non-neutrality role toward `N1` for `Y_SEL`, but only by changing the target architecture first — which is exactly what GOV-SUB01 forbids during a deletion test.
-
-### Edit burden
-
-**Very high.** Requires explicit P0 author decision and cross-repo semantic sync. Not recommended as the next mechanical step.
+Not admissible as a silent deletion-test result. It would require a separate explicit P0 author decision and cross-repo semantic sync.
 
 ---
 
-## 6. Option J3-D — Rival-vocabulary stress first; ontology unchanged
+## 5. Option J3-D — frozen rival-vocabulary stress first
 
-### Statement
+### Reading
 
-Do not settle A/B/C yet.
+Do not settle A/B/C in advance. Freeze the canonical architecture and test whether an independently specified rival vocabulary can preserve the same P0 targets without simply renaming the primitive role.
 
-Freeze the current canonical architecture and run a **broad-K rival-vocabulary rewrite** before deciding whether non-neutrality deserves an independent or constitutive status.
+The rival may not rely on:
 
-The rival is not allowed to invoke the word `Selection`, `ε_pg`, chooser, subject, agency, or pre-given completed option objects.
+- the word `Selection`;
+- `epsilon_pg`;
+- a prior chooser / subject / agent;
+- a complete pre-given option menu.
 
-It may use only a minimal process vocabulary such as:
+### Locked targets
+
+`Y_J3-1` — preserve the pre-objectification boundary.
+
+`Y_J3-2` — preserve transition from non-objectified potential to determinate manifest actuality.
+
+`Y_J3-3` — preserve no-prior-chooser status.
+
+`Y_J3-4` — preserve EX-A:
 
 ```text
-non-objectified possibility / indeterminacy
-+ effective asymmetric constraint or transition
-+ determinate manifestation
+occurrence != persistence != Stable ISP
 ```
 
-The test asks whether that vocabulary preserves every target that P0-01 currently preserves **without merely renaming the Selection primitive**.
-
-### Why this is different from J3-B
-
-J3-B chooses analytic absorption in advance.
-
-J3-D first asks whether a competitor can perform the rewrite without loss. The result may support A, B, or continued unresolved status.
-
-### Locked targets for the duel
-
-`Y_J3-1` — pre-objectification boundary:
-
-> do not require a complete pre-given object/menu space before manifestation.
-
-`Y_J3-2` — determinate actuality:
-
-> explain / state the transition from non-objectified potential to determinate manifest event.
-
-`Y_J3-3` — no prior chooser:
-
-> no subject / selector entity is required before the process.
-
-`Y_J3-4` — EX-A separation:
-
-> occurrence remains distinct from persistence / Stable ISP.
-
-`Y_J3-5` — no hidden reparameterization:
-
-> the rival may not define "asymmetric transition" in a way that simply means "whatever Selection does" and count that as reduction.
-
-### Evaluation
-
-Use:
-
-- `E_cf`: does either vocabulary make a different counterfactual distinction?
-- `E_mech`: is one account structurally more specific, or are both primitive stopping points?
-- `E_orient`: does Selection language change what questions / interventions are licensed?
-- framework-identity loss: does the rival preserve outputs only by deleting SRT's selection-first commitment?
-
-No empirical D2 claim is required or implied.
+`Y_J3-5` — no hidden reparameterization.
 
 ### Possible outcomes
 
-#### D-1 — rival preserves all locked targets with independently defined vocabulary
-
-Pressure increases that the **word / primitive role of Selection is representationally replaceable** at broad K.
-
-This does not prove Selection false, but it requires an explicit framework-identity / fruitfulness defense rather than an irreducibility claim.
-
-#### D-2 — rival preserves output wording only by defining its transition as "the process that makes a possibility determinate"
-
-This is hidden reparameterization. J3 remains `R4`.
-
-#### D-3 — rival loses the pre-objectification or no-prior-chooser boundary
-
-That identifies a concrete role retained by Selection-first architecture without promoting `ε_pg`.
-
-#### D-4 — rival requires an explicit generic non-neutrality relation but not the specific `ε_pg` postulate
-
-This gives evidence toward J3-B rather than J3-C: generic non-neutrality may be analytically / role-level necessary while `ε_pg` remains a specific L0 carrier whose independent burden must be tested separately.
+- an independently defined rival preserves all targets -> pressure toward representational replaceability;
+- the rival preserves targets only by defining a phrase that means “whatever makes possibility determinate” -> hidden reparameterization, J3 remains unresolved;
+- the rival loses pre-objectification or no-prior-chooser -> Selection-first architecture retains a concrete orientation role;
+- the rival requires generic non-neutrality but not specific `epsilon_pg` -> pressure toward J3-B, not J3-C.
 
 ### Edit burden
 
-**None before the test.**
+None before the test.
 
 ---
 
-## 7. Recommended route
+## 6. Pre-execution recommendation
 
-### Recommendation: **J3-D first**
-
-Reason:
-
-1. it obeys GOV-SUB01 rather than changing the target mid-audit;
-2. it preserves the Phase-0 freeze;
-3. it does not repeat the RC-A mistake of turning a useful discriminator into a Selection criterion too early;
-4. it can distinguish generic non-neutrality from the specific `ε_pg` carrier;
-5. it gives J3-A/B/C an evidential basis rather than making the choice stylistically.
-
-Interim canonical posture while D runs:
+At the time this packet was prepared, the recommended route was:
 
 ```text
-J3-A status quo remains in force
-but J3 residue remains R4 unresolved
+J3-D first
 ```
 
-That is not a new author decision; it is simply "do not edit canonical text before the stress test."
+because it obeyed GOV-SUB01 without changing the target mid-audit and did not repeat the RC-A mistake of promoting a useful discriminator into a Selection criterion too early.
+
+The later record `SRT_PHASE0_5_GOV_SUB01_RELATION_AUDIT_PASS3_J3D_RIVAL_VOCABULARY_2026-08-18.md` documents the actual execution and result. The separate J3-D disposition records the post-test governance posture.
 
 ---
 
-## 8. Decision requested
+## 7. Hard non-decisions
 
-Choose one:
+This packet does not decide:
 
-- **J3-A** — retain distinct co-present actualisation + non-neutrality postulates; leave relation unresolved;
-- **J3-B** — analytically absorb generic non-neutrality into determinate actualisation; later reconsider `ε_pg` independent status;
-- **J3-C** — make non-neutrality / `ε_pg` constitutive of Selection occurrence;
-- **J3-D** — run the frozen rival-vocabulary stress first; make no canonical change now.
-
-Recommended: **J3-D**.
-
----
-
-## 9. Hard non-decisions
-
-Whichever option is chosen here, this packet does not decide:
-
-- `κ_0` vs `ε_pg` independence;
-- irreversibility vs `ε_pg` independence;
-- whether any of the three L0 asymmetries can be mathematically derived from another;
+- `kappa_0` vs `epsilon_pg` independence;
+- irreversibility vs `epsilon_pg` independence;
+- mathematical derivability among the three L0 asymmetries;
 - empirical D2 superiority;
-- Stable ISP anti-closure;
-- consciousness, subjecthood, freedom or moral responsibility;
+- Stable-ISP anti-closure;
+- consciousness, subjecthood, freedom, or moral responsibility;
 - generative reselectability;
 - Selection Grammar.
 
-These remain separately governed.
-
 ---
 
-## 10. Current stop rule
+## 8. Provenance stop rule
 
-No canonical file should be edited for J3 until the author selects A/B/C or authorizes D.
+This packet should remain a record of the **pre-J3-D option state** rather than being silently rewritten into a post-hoc verdict. Post-execution status belongs in the Pass-3 audit and J3-D disposition.
 
-**Current disposition:** `J3 DECISION REQUIRED / RECOMMEND D / NO CANONICAL EDIT`.
+**Historical disposition:** `OPTIONS A/B/C/D PREPARED / RECOMMEND D / NO CANONICAL EDIT`.
