@@ -1289,7 +1289,7 @@ $$\text{Moral Status} \propto d \cdot \Psi_f^{self}$$
 2. `Ontology_Annex/README.md`
 3. 本文件尾部的局部补充条款
 
-若只需把握 AI 意识门槛、d-value、伪选择屏障与句法闭包判据，优先阅读主体部分即可；带日期的补充接口以 annex 层为主导航。
+若只需把握 AI 意识门槛、d-value、functional-selection / stronger-standing 边界与句法闭包 profile，优先阅读主体部分即可；legacy “伪选择”仅作 provenance；带日期的补充接口以 annex 层为主导航。
 
 ## 符号索引
 

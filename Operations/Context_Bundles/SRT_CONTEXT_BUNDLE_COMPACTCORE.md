@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: a0324ddc
+source_commit: fcecf6d1
 source_branch: HEAD
 source_dirty: true
 inputs_digest: 519bcce7e75f9201
@@ -27,7 +27,7 @@ inputs_digest: 519bcce7e75f9201
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `a0324ddc` |
+| 来源 commit | `fcecf6d1` |
 | 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
