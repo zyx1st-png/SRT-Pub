@@ -5,14 +5,14 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-17
+updated: 2026-08-18
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-17
-> **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` + 2026-08-16 convergence decisions
+> **最后更新**：2026-08-18
+> **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` + 2026-08-16 convergence decisions + 2026-08-18 Frontiers publication-status sync
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -32,7 +32,7 @@ updated: 2026-08-17
 - 2026-08-12 首个有界实例 `P3-Scale-NB1` 已落地：广义“神经除法归一化 → 认知／行为选择”为**红灯软连接**；相对神经响应不是离散选择，`H-λE` 也不唯一推出除法归一化。当前仅保留**黄灯条件接口**：具名候选映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与神经干预跟踪必须同时过门。具名工作线 `NB1-MOFC-Lottery-v0` 已形成 P4 执行卡；W0 公开核查只确认作者请求路径，未定位到公共 trial-level 数据／代码包，请求草稿已备但未发送。formal lock、预注册与执行均未完成，没有完成态数据把该桥转绿。
 - **Pipeline 1 当前正式口径：233 条，A 156 / B 27 / C 50；最新 split 为 `2026-08_Part06:1`。** 2026-08-14 至 08-16 新增正式记录仍均为 A，但 A verdict 只证明材料裁决，不自动证明 owner-level assimilation。
 - 论文线：
-  - Frontiers 稿 `1837760` 已接受，但因 APC 过高准备终止原出版路径并转投；在取得原期刊明确终止确认前不得新投，执行卡为 Issue #740；
+  - **Frontiers 论文已正式出版**：Zhang Y. (2026), *A translational cross-modal control-cost framework for executive breakdown*, *Frontiers in Neuroscience* 20:1837760，DOI `10.3389/fnins.2026.1837760`，出版日 2026-08-06。此前“因 APC 过高准备终止并转投”的路径已被出版事实 supersede；APC / 费用沟通属于行政事项，不再改变 bibliographic status；
   - *Costly Selective Closure* / Adaptive Behavior 已投稿，尚未进入外部评审；
   - forcing–CH 的硬性历史书籍与同期记录仍在收集，控制档案 Part II 与控制案例程序暂缓；
   - history-dependent reachability 暂不启动统一优化，等待材料收口与 convergence pass。
@@ -63,6 +63,7 @@ updated: 2026-08-17
 - forcing–CH 已完成 D05 C5-op、方法个体化协议、控制案例选择协议、多表征方法族审计和 countable-standard-model premise 窄类型说明；控制档案 Part II 仍未签署。
 - Pipeline 1 截至本轮材料台账正式口径为 **233 条：A 156、B 27、C 50；最新 split 为 `2026-08_Part06:1`**。
 - 2026-08-16 convergence pass 已启动：HP-B-B owner landing + synthesis-target freeze + bootstrap 状态刷新；pending-hook burn-down 是下一独立工作包，不在本轮 PR 内批量执行。
+- **Frontiers `1837760` publication-status sync complete**：仓库当前状态统一以 2026-08-06 published + DOI `10.3389/fnins.2026.1837760` 为准；旧 transfer plan / in-revision 字符串只能作为带日期的历史记录读取。
 
 ## 当前权威锚点
 
@@ -81,6 +82,13 @@ updated: 2026-08-17
 - 当前工作线排期 → `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 
 ## 最近关键推进
+
+### 2026-08-18 · Frontiers 出版状态同步与 post-publication bridge
+
+- Frontiers 稿 `1837760` 已核验为正式出版：*Frontiers in Neuroscience* 20:1837760，DOI `10.3389/fnins.2026.1837760`，出版日 2026-08-06；此前转投路径已 superseded。
+- APC / 费用沟通继续作为行政事项处理，不再改变论文 bibliographic status，也不再触发重复投稿／转投计划。
+- `papers/ontological_friction/POST_PUBLICATION_CONVERGENCE_2026-08-18.md` 建立 executive friction × neural transition landscape × history-dependent reachability 的 P3/P4 post-publication bridge；不改 P0/P1、不修改已发表 Frontiers 正文。
+- bridge 明确区分 structural reachability、pre-execution functional accessibility、transition friction、currently effective candidacy 与 generative reselectability；保留 richer dynamical / RL / active-inference rivals 的可替代性失败条件。
 
 ### 2026-08-16 · SRT Consolidation Phase 启动
 
@@ -146,7 +154,7 @@ updated: 2026-08-17
 ### 2026-08-05 · 工作线排期与仓库收口
 
 - 作者确定：forcing–CH 控制档案和 SEA reliability pilot 暂缓；书稿与 history-dependent reachability 的统一优化等待此前未融合材料全部收口。
-- Frontiers 稿 `1837760` 已接受，但因 APC 过高准备终止原出版路径并转投；Issue #740 负责撤回／终止确认、版权与重复投稿合规、目标期刊选择和状态同步。
+- **历史状态（已 superseded）**：当日 Frontiers 稿 `1837760` 已接受，因 APC 过高曾准备终止原出版路径并转投；该路径已由 2026-08-06 正式出版事实取代，当前不得再按“待撤回／待转投”读取。
 - *Costly Selective Closure* / Adaptive Behavior 已投稿，当前尚未外审；不再写作“重投准备”。
 - 旧书稿路线 Issue #152、#153、#155 已按 superseded / not planned 关闭；#657、#474 保留但延期。
 
@@ -193,7 +201,7 @@ updated: 2026-08-17
 
 1. **Consolidation / owner consistency**：优先处理已知 owner-level contradiction 与 author gate；下一独立工作包为 pending-hook burn-down，按 landed / parked / author-gate / obsolete 四类关闭积压。
 2. **材料收口但限制新 WIP**：继续处理此前未融合材料；按 Pipeline 1 完成所需 SourceCard / Material Log / Index / Registry 留痕。新 patch / hook 只在新反例、作者级边界门或 direct owner increment 三类情况新增，不因 A verdict 自动创建 synthesis debt。
-3. **Frontiers 转投合规**：按 Issue #740 核验 accepted / production / proof / DOI 状态，取得原期刊明确终止确认，再选择并提交新期刊。
+3. **Frontiers post-publication administration**：论文 bibliographic status 已锁定为 published；如 APC / 付款 / 减免沟通仍未闭合，只作为行政与财务事项跟进，不再准备撤回或转投，不得重复投稿。
 4. **Adaptive Behavior 稿件维护**：当前已投稿、未外审；等待编辑处理，除非期刊提出明确要求，不增加实验或扩张 framing。
 5. **Forcing 历史材料收集**：继续收集硬性历史书籍、原始论文和同期评论；只做 corpus 与 coverage 记录，不提前形成控制候选判断。
 6. **延后统一优化**：材料收口与 convergence backlog 明显下降后，再分别启动《从存在到秩序》和 history-dependent reachability 的统一 pass。
@@ -213,7 +221,7 @@ updated: 2026-08-17
 
 - 书稿当前状态与施工许可先看 `01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`；当前只允许材料融合和必要治理修复，不启动统一正文优化。
 - history-dependent reachability 的已有实验、数字、图表和 assembly 记录保持稳定；新材料先停在材料层，待统一 pass 再裁决是否进入正文。
-- Frontiers 原出版路径未明确终止前不得重复投稿；已接受但准备转投不等于 published、in press 或 rejected。
+- **Frontiers `1837760` 已正式出版，不再存在撤回后转投路径；不得把 APC / 费用争议改写为论文未出版，也不得重复投稿该已发表作品。**
 - Adaptive Behavior “已投稿、未外审”不得写成 under review。
 - forcing 书籍收集不等于控制案例枚举；Part II 未签署前继续执行既有阻塞。
 - SEA pilot 暂缓不等于 SEA 被验证或被否定。
