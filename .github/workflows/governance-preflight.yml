@@ -27,6 +27,19 @@ jobs:
       - name: Apply third RC-A cleanup
         run: python scripts/_tmp_rca_phase0_cleanup3.py
 
+      - name: Normalize exact edited Markdown line
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('AI/SRT_AI_01_Ontology_CompactCore.md')
+          s=p.read_text(encoding='utf-8')
+          old='canonical `d-value` 的 stake reading 需要有限性 / 不可转移后果来赋予**关切与主体风险**重量；这不是 Selection occurrence 的必要条件。  \n'
+          new='canonical `d-value` 的 stake reading 需要有限性 / 不可转移后果来赋予**关切与主体风险**重量；这不是 Selection occurrence 的必要条件。\n'
+          if s.count(old)!=1: raise SystemExit(f'expected one trailing-space target, got {s.count(old)}')
+          p.write_text(s.replace(old,new,1),encoding='utf-8')
+          PY
+
       - name: Refresh split metadata
         run: uv run python scripts/refresh_split_metadata.py
 
