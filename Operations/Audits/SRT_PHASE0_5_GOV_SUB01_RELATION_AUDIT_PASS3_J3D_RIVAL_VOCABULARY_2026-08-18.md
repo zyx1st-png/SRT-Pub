@@ -33,15 +33,15 @@ Three rival-vocabulary families were stress-tested against the J3 locked targets
 | Rival family | Pre-objectification preserved? | Determinate actuality preserved? | No prior chooser preserved? | EX-A preserved? | Hidden reparameterization? | Result |
 |---|---:|---:|---:|---:|---:|---|
 | **V1 pre-given state-space transition** | **no** | yes, downstream | yes possible | yes possible | low | loses the SRT target by starting after objectification |
-| **V2 pre-objective asymmetric actualisation** | yes | yes | yes | yes | **high / decisive concern** | preserves targets only by restating the primitive role under new words |
+| **V2 pre-objective asymmetric actualisation** | yes | yes | yes | yes | **high / unresolved** | within the audited rival families, preserves targets only by restating the primitive role under new words; reduction remains unresolved |
 | **V3 domain mechanism substitute** | usually no at P0 scope | yes within domain | usually yes | can be added | medium-high | useful realization model, not a cross-domain primitive replacement |
 
-The stress therefore yields **no broad-`K` rival that is both independently specified and lossless on the locked P0 targets**.
+The stress therefore yields **no broad-`K` rival that is both independently specified and lossless on the locked P0 targets within the audited rival families**.
 
 But the reason is important:
 
 - V1 and V3 lose the **pre-objectification** target by assuming an already specified state/object architecture;
-- V2 preserves that target only by saying, in effect, that a non-objectified possibility undergoes an effective asymmetrical determination into manifest actuality — which is functionally the role currently called Selection.
+- V2 preserves that target in the audited formulations only by saying, in effect, that a non-objectified possibility undergoes an effective asymmetrical determination into manifest actuality — which is functionally the role currently called Selection.
 
 Therefore the current result is **hidden-reparameterization pressure**, not a positive proof of Selection.
 
