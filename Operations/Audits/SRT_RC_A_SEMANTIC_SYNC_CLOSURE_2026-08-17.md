@@ -68,18 +68,11 @@ The three independent bounded runs also remain valid: **3/3 runs, 18/18 observat
 
 ### A1 — Collective tower hardening
 
-`Core_Law/SRT_Collective_Tower_Hardening_Notes.md` still:
-
-- requires `r^{(n→n+1)}(t) > r_min^{nested} > 0` as a hard cross-scale health condition;
-- defines it as a `真实重选率`;
-- calls it a recursive extension / isomorphism of T-COLL-4 `共选真实性`;
-- repeats the same mapping in the tower spectral-stability discussion and connector-safe split mirrors.
-
-This contradicts the current collective owner, which removed former-P1-T05-derived reselection rates as hard conditions and explicitly forbids reintroducing a new scalar rate into P1.
+`Core_Law/SRT_Collective_Tower_Hardening_Notes.md` still uses `r^{(n→n+1)}(t) > r_min^{nested} > 0` as a hard cross-scale health condition, defines it as `真实重选率`, and maps it to T-COLL-4 `共选真实性` in the tower recursion / spectral-stability discussion and connector-safe split mirrors. This contradicts the current collective owner, which removed former-P1-T05-derived reselection rates as hard conditions and forbids reintroducing a replacement scalar rate.
 
 ### A2 — Political Rights
 
-`Philosophy/SRT_Political_Rights.md` still describes voting through a T-COLL-4 `共选真实性判据` with the old hard conjunction (`A_P` real expansion + symmetric `M(t)` + non-scriptedness). Current T-COLL-4 jurisdiction is downstream collective agency / consequence-sensitive revision audit only.
+`Philosophy/SRT_Political_Rights.md` still describes voting through a T-COLL-4 `共选真实性判据` with the old hard conjunction. Current T-COLL-4 jurisdiction is downstream collective agency / consequence-sensitive revision audit only.
 
 ### A3 — Spirituality Community / Sangha
 
@@ -87,11 +80,7 @@ This contradicts the current collective owner, which removed former-P1-T05-deriv
 
 ### A4 — Political Philosophy
 
-`Philosophy/SRT_Political_Philosophy.md` still:
-
-- defines freedom as preservation of `真实选择时刻`;
-- uses downstream statements such as `形式在，真实选择时刻消失` without an RC-A current-use boundary;
-- keeps an active header reference to `r^{coll}(t)>r^{coll}_{min}` even though the collective owner no longer contains that scalar condition.
+`Philosophy/SRT_Political_Philosophy.md` still defines freedom as preservation of `真实选择时刻`, contains downstream uses such as `形式在，真实选择时刻消失` without an RC-A boundary, and keeps an active header reference to `r^{coll}(t)>r^{coll}_{min}` even though the collective owner no longer contains that scalar condition.
 
 These are active contradictions / stale dependencies under the Phase-0 A/B/C/D discipline, not historical provenance or generated-only mirrors.
 
@@ -105,7 +94,7 @@ Rules:
 
 - add minimal RC-A active-use overrides where legacy wording remains useful;
 - delete tower-level scalar reselection-rate hard conditions; **do not replace them with another rate**;
-- retain independent spectral/stability mathematics while deleting any mapping that makes it a T-COLL-4 Selection-authenticity theorem;
+- retain independent spectral/stability mathematics while deleting mappings that make it a T-COLL-4 Selection-authenticity theorem;
 - re-scope T-COLL-4 to downstream collective agency / consequence-sensitive revision audit;
 - re-scope `真实选择时刻` in political/spiritual normative prose as legacy/downstream freedom/agency shorthand, not Selection ontology;
 - remove dangling `r^{coll}` references whose owner-side quantity was deleted;
