@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: 65e9f7f8
+source_commit: a0324ddc
 source_branch: HEAD
 source_dirty: true
 inputs_digest: 519bcce7e75f9201

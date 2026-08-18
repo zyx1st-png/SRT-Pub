@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: 65e9f7f8
+source_commit: a0324ddc
 source_branch: HEAD
 source_dirty: true
 inputs_digest: 519bcce7e75f9201
@@ -27,7 +27,7 @@ inputs_digest: 519bcce7e75f9201
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `65e9f7f8` |
+| 来源 commit | `a0324ddc` |
 | 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
@@ -52,7 +52,7 @@ inputs_digest: 519bcce7e75f9201
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
 | 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-08-17 |
 | 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
-| 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-12 |
+| 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
 | 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
@@ -2998,7 +2998,7 @@ This summary is a reading guide, not an additional axiom.
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 

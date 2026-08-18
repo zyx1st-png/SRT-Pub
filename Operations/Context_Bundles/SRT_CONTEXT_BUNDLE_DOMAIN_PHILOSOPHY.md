@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-18
-source_commit: 65e9f7f8
+source_commit: a0324ddc
 source_branch: HEAD
 source_dirty: true
 inputs_digest: 519bcce7e75f9201
@@ -27,7 +27,7 @@ inputs_digest: 519bcce7e75f9201
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-18 |
-| 来源 commit | `65e9f7f8` |
+| 来源 commit | `a0324ddc` |
 | 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
@@ -48,7 +48,7 @@ inputs_digest: 519bcce7e75f9201
 | 3 | `Philosophy/_PHILOSOPHY_MACHINE_INDEX.md` | 2026-05-17 |
 | 4 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
 | 5 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-04-27 |
-| 6 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-12 |
+| 6 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-18 |
 
 ## §0.2 状态护栏
 
@@ -1954,7 +1954,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
