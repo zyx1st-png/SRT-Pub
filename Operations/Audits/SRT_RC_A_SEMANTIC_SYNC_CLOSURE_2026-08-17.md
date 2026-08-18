@@ -20,279 +20,132 @@ tags: [Governance, RC-A, Selection, SemanticSync, Closure, Phase0]
 
 > **Scope**: RC-A semantic sync + owner-consistency cleanup + stale-dependency cleanup + bounded retrieval regression + closure.
 >
-> **Nature**: consolidation / burn-down only. This record closes Phase 0. It does **not** authorize Phase 0.5, relation-level GOV-SUB01, Selection grammar, formal ontology, a new primitive alphabet, a new operator, or a new domain bridge.
+> **Nature**: consolidation / burn-down only. No Phase 0.5, relation-level GOV-SUB01, Selection grammar, formal ontology, new primitive alphabet, new operator, new scalar replacement, or new domain bridge is authorized here.
 
 ## 0. Verdict
 
-# **Phase 0 CLOSED**
+# **Phase 0 NOT CLOSED — final-review reopen**
 
-All frozen Phase-0 exit gates are satisfied.
+The previous `Phase 0 CLOSED` verdict was premature. A final independent pre-merge review found active RC-A contradictions outside the literal families used by the earlier exhaustive inventory. The missed families include `真实重选率`, `共选真实性`, and tower-level `r^{(n→n+1)}` language.
 
 Current gate state:
 
 - theory / author blockers: **0**
-- exhaustive tracked-file semantic inventory: **PASS**
-- Context Bundle freshness: **PASS**
-- split metadata freshness: **PASS**
-- full Governance Preflight: **PASS**
 - bounded retrieval Q1-Q6: **PASS / robustly observed**
+- Context Bundle freshness before this reopen: **PASS**
+- split metadata freshness before this reopen: **PASS**
+- full Governance Preflight before this reopen: **PASS**
+- exhaustive semantic inventory: **REOPENED — false-complete claim withdrawn**
+- final-review Class-A contradictions: **OPEN**
 
-This closure changes only the status of the already-frozen Phase-0 work. It does not open Phase 0.5 automatically.
-
----
-
-## 1. Execution state
-
-- repository: `zyx1st-png/SRT-Pub`
-- branch: `agent/rc-a-semantic-sync-phase0`
-- base SHA: `28372d44c1fc77749bed4332a34210f5f1ec59a1`
-- final semantic-sync / exhaustive-inventory snapshot: `0aaa72be66272226247297f4b81ecaca811e1eef`
-- ordinary Governance Preflight before bounded-regression closure: run `32097311196` / run number `939` on head `df54fa67c61cd5936ae52e364272be434090870d`, conclusion `success`
-- execution date: `2026-08-18`
-- PR: `#830`
-
-This closure record does not create a self-referential requirement that its own commit SHA be stored inside itself. The external execution report must inspect the newest PR-head workflow after this writeback.
+PR #830 must remain unmerged until the findings below are repaired and the strengthened scan is rerun.
 
 ---
 
-## 2. Author clarification preserved
+## 1. What remains valid
 
-The Phase-0 cleanup preserves the following bounded author clarification without creating a new ontology:
+The following Phase-0 results are not reopened:
 
-1. **Selection is not option-picking over a pre-given menu.** Option-picking is an already-objectified downstream special case.
-2. **`\varepsilon_{pg}` remains the existing L0 minimum non-neutrality / structural seed.** No replacement symbol is created.
-3. Difference generation, maintenance, amplification and transformation/computation are possible Selection modes, not jointly necessary gates.
-4. EX-A remains protected: **manifest occurrence != anchoring persistence != Stable ISP**.
-5. Continued selectability and generative reselectability remain downstream distinctions.
-6. Global `r(t)` is not derivable from former P1-T05, Selection simpliciter, or directly from `\varepsilon_{pg}`.
-7. Neither `\varepsilon_{pg}` nor Selection implies a universal telos toward order, openness, goodness, stability, complexity growth, anti-closure, or generative reselectability.
-
-No epsilon-selection theorem, minimum-difference theorem, difference-computation operator, or Selection-difference grammar was introduced.
-
----
-
-## 3. Exhaustive tracked-file inventory — PASS
-
-The Phase-0 search families were rerun against the **actual PR-head tracked-file tree** inside a GitHub Actions full checkout, bypassing the unreliable GitHub code-search index.
-
-Final exhaustive snapshot:
-
-- tracked paths: **2086**
-- regular text files scanned: **2020**
-- read errors: **0**
-- nonregular / symlink paths skipped: **4**
-- binary files identified separately rather than decoded as text
-
-Search families covered the frozen RC-A terms and combinations, including:
-
-- `P1-T05`
-- `Real Choice Moment`
-- real/live/active choice and Chinese equivalents
-- script / habit / automation / gradient + Selection
-- CG + P1-T05
-- T_dir + real/live choice
-- bounded diagnostics for deleted global `r(t)`
-- bounded diagnostics for legacy `pseudo-selection`
-
-Residual hits were adjudicated by function rather than by literal-zero policy:
-
-- **A — active contradiction**: repair required
-- **B — historical provenance**: preserve
-- **C — guarded legacy/downstream shorthand**: preserve only with current-use boundary
-- **D — generated / mirrored / irrelevant-to-authority occurrence**: no authority effect
-
-All exposed Class-A active contradictions were repaired, including canonical, governance, AI owner/split/annex, glossary, and OOD-regression residues. Remaining old terminology is provenance, guarded legacy shorthand, practice-layer labeling, or generated mirroring rather than active Selection ontology.
-
-**Known active RC-A contradictions in the frozen search families: none.**
+- former P1-T05 / Real Choice Moment remains demoted;
+- `Selection != Agency`;
+- script / habit / gradient / `L2` automation do not imply `no Selection`;
+- P1-T06 Stable ISP remains P1;
+- continued selectability remains the Stable-ISP condition;
+- generative reselectability remains P2/P3 generative-health territory;
+- CG / SEA pass gives only a bounded Selection-event candidate and does not prove agency;
+- CG / SEA failure does not prove `no Selection`;
+- `T_dir` does not define Selection ontology;
+- global former-P1-T05-derived `r(t)` was deleted with no replacement rate;
+- Collective Selection T-COLL-1 remains supported by P1-T06 + shared `L2` + `M(t)`;
+- `ε_pg` remains the existing L0 minimum non-neutrality / structural seed and is not promoted into a universal anti-closure / agency / consciousness / order-growth theorem;
+- the three independent bounded runs remain valid: **3/3 runs, 18/18 observations, 100%**.
 
 ---
 
-## 4. Current hierarchy after semantic sync
+## 2. Final-review findings that reopen closure
 
-The active hierarchy now consistently preserves:
+Independent pre-merge diff/worktree review found at least four active files whose current-use text conflicts with RC-A or with this PR's own collective-selection cleanup:
+
+1. `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`
+   - still uses `r^{(n→n+1)}(t) > r_min^{nested} > 0` as a hard cross-scale health condition;
+   - still calls this a recursive extension / isomorphism of T-COLL-4 `共选真实性`;
+   - this is incompatible with the current collective owner, which removed former-P1-T05-derived scalar reselection rates as hard conditions and forbids reintroducing a replacement scalar rate.
+
+2. `Philosophy/SRT_Political_Rights.md`
+   - still describes voting through a T-COLL-4 `共选真实性判据` with old hard conjunction wording;
+   - current T-COLL-4 jurisdiction is downstream agency / consequence-sensitive revision audit only.
+
+3. `Spirituality/SRT_Spirituality_Community_and_Sangha.md`
+   - still states that a healthy community must simultaneously satisfy T-COLL-1, T-COLL-3, and T-COLL-4 `真实共选判据`;
+   - several normative passages still use `真实选择时刻` without an RC-A current-use boundary.
+
+4. `Philosophy/SRT_Political_Philosophy.md`
+   - still defines freedom as preservation of `真实选择时刻`;
+   - still contains an active header reference to `r^{coll}(t)>r^{coll}_{min}` even though the target collective owner no longer carries that scalar condition.
+
+These are treated as **Class A active contradiction / stale dependency** under the Phase-0 audit's own A/B/C/D discipline. They are not historical provenance and are not generated-only mirrors.
+
+---
+
+## 3. Corrective scope
+
+Repair only the active contradictions above and their direct connector-safe split mirrors.
+
+Required repair discipline:
+
+- add minimal RC-A active-use override where legacy language remains useful;
+- delete tower-level scalar reselection-rate hard conditions rather than inventing a replacement rate;
+- keep spectral / stability mathematics only where it has an independent mathematical role, but remove mappings that make it a T-COLL-4 Selection-authenticity theorem;
+- re-scope T-COLL-4 references to downstream collective agency / consequence-sensitive revision audit;
+- re-scope political/spiritual `真实选择时刻` language as legacy/downstream freedom/agency shorthand, not Selection ontology;
+- remove dangling `r^{coll}` references whose owner-side quantity was deleted;
+- preserve provenance and quoted historical material;
+- do not create new P0/P1 claims, primitives, symbols, equations, rates, thresholds, or Phase-0.5 artifacts.
+
+Strengthened literal families for the final rerun must include at least:
 
 ```text
-Selection != Agency
-script / habit / gradient / L2 automation !-> no Selection
-CG / SEA pass !-> agency
-CG / SEA failure !-> no Selection
-Stable ISP !-> prerequisite for one-shot Selection occurrence
-generative reselectability !-> prerequisite for Selection
-T_dir !-> Selection definition
+真实重选率
+共选真实性
+真实共选
+r^{(n→n+1)}
+r^{coll}
+真实选择时刻
 ```
 
-Historical former-P1-T05 / RC-A / A2 / A3 references remain when they function as explicit provenance or supersession records.
+These supplement, rather than replace, the previously frozen RC-A families.
 
 ---
 
-## 5. Global `r(t)` audit — CLOSED BY DELETION
+## 4. Bounded retrieval status
 
-The former-P1-T05-derived global `r(t)` contributed only legacy/convenience terms to the individual `T_dir` and `S_sig` equations and homologous collective/downstream diagnostics.
+The earlier fresh bounded retrieval result remains valid because the newly found contradictions are outside the fast active path used by all three runs and do not change the frozen Q1-Q6 authority answers.
 
-A local subtractive probe showed that the four-variable system remains mathematically defined without those terms. The global quantity was therefore deleted rather than re-derived from a demoted theorem.
+Current record:
 
-Current non-derivations:
-
-```text
-former P1-T05 !-> r(t)
-Selection simpliciter !-> r(t)
-\varepsilon_{pg} !-> r(t)
-```
-
-The pre-existing `r(d,P,t)` / `r_min` notation remains a distinct local occlusion operational-capacity function.
-
-Impact declaration:
-
-- new equations: **0**
-- new symbols: **0**
-- new theory owner: **0**
-- `SRT_L1_Formalism.md` overall standing: remains **P1-candidate**
-
----
-
-## 6. Collective Selection absorption — CLOSED
-
-T-COLL-1 remains supported without former P1-T05:
-
-- P1-T06 supplies iterative / perspective-bearing / history-bearing / continued-selectable standing;
-- shared `L_2` supplies the multi-ISP historical field;
-- `M(t)` supplies collective consequence-return structure.
-
-Former “real co-selection” material is retained only as a downstream P2/P3 collective agency / consequence-sensitive revision guard. It is not a Selection-occurrence definition and not an extra T-COLL-1 necessary condition.
-
-**Remaining Collective author gate: none.**
-
----
-
-## 7. Bounded retrieval regression — PASS / ROBUSTLY OBSERVED
-
-Protocol authority: `Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md`.
-
-Frozen success gate:
-
-- independent bounded runs: **>= 3**
-- every counted run within budget
-- overall question pass rate: **>= 90%**
-- anti-brush positive failures: **0**
-- each run must reach the critical distinction within budget
-
-Three independent fresh sessions were executed outside the primed closure conversation and supplied back for grading.
-
-### Run 1
-
-- free startup: the four frozen startup files
-- additional theory/body files: **6/6**
-- navigation/search: **0/2**
-- recursive traversal: none
-- Q1-Q6: **6/6 PASS**
-- critical distinctions reached within budget: **YES**
-- note: the protocol file was treated as test-harness instruction rather than theory-body retrieval; even under this accounting the theoretical retrieval stayed at the frozen 6-file ceiling.
-
-### Run 2
-
-- free startup: the four frozen startup files
-- additional body files: **6/6**, conservatively including the protocol file
-- navigation/search: **0/2**
-- recursive traversal: none
-- Q1-Q6: **6/6 PASS**
-- critical distinctions reached within budget: **YES**
-
-### Run 3
-
-- free startup: the four frozen startup files
-- additional body files: **6/6**, conservatively including the protocol file
-- navigation/search: **2/2**
-- recursive traversal: none
-- Q1-Q6: **6/6 PASS**
-- critical distinctions reached within budget: **YES**
-
-### Aggregate grading
-
-- valid independent bounded runs: **3/3**
-- valid question observations: **18/18**
+- independent valid runs: **3/3**
+- Q1-Q6 observations: **18/18 PASS**
 - pass rate: **100%**
 - budget-invalid runs: **0**
 - critical-distinction retrieval failures: **0**
-- anti-brush / adjacent positive-boundary failures: **0**
 
-The three sessions independently converged on the same authority boundaries:
-
-| Probe | Robustly retrieved result |
-|---|---|
-| Q1 | former P1-T05 / Real Choice Moment is no longer P1 |
-| Q2 | script / habit / gradient / L2 automation do not imply no Selection |
-| Q3 | P1-T06 Stable ISP remains P1; continued selectability is the adjacent P1 condition |
-| Q4 | generative reselectability is not required for Selection or every Stable ISP; it remains P2/P3 generative-health territory |
-| Q5 | CG / SEA pass establishes only a bounded Selection-event candidate, not agency |
-| Q6 | T_dir is restricted to narrower bearer / agency self-readability / reorientation use and does not define Selection ontology |
-
-**Behavioral availability of the frozen RC-A distinctions: robustly observed under the registered bounded-retrieval budget.**
+Do **not** rerun bounded retrieval unless the corrective patch changes the fast authority surfaces or any Q1-Q6 answer.
 
 ---
 
-## 8. Generated artifacts / metadata — PASS
+## 5. Exit gate after reopen
 
-Split metadata was refreshed with the repository's own generator where owner / mirror edits required it.
+Phase 0 may be re-closed only when all are true:
 
-`Operations/Context_Bundles/` was regenerated with the repository generator on a full Actions checkout and was not hand-edited to force green status.
+- the four final-review active contradictions are repaired;
+- direct split mirrors are synchronized;
+- strengthened search families are rerun against the actual tracked-file tree;
+- closure record reports the newly found and repaired Class-A count instead of claiming the earlier inventory was complete;
+- Context Bundles / split metadata are fresh;
+- full Governance Preflight is green;
+- no replacement scalar rate or new ontology machinery is introduced;
+- bounded retrieval remains valid or is rerun only if fast authority surfaces changed.
 
-- split metadata freshness: **PASS**
-- Context Bundle freshness: **PASS**
+**Relation-level GOV-SUB01 preconditions are NOT satisfied while this reopen is active.**
 
----
-
-## 9. Governance / CI
-
-Before this final closure writeback, ordinary Governance Preflight repeatedly passed on the branch, including run `32097311196` / run number `939` on head `df54fa67c61cd5936ae52e364272be434090870d`.
-
-Passing gates include:
-
-- base-main governance health: **PASS**
-- PR-local frontmatter: **PASS**
-- baseline monotonicity: **PASS**
-- split metadata freshness: **PASS**
-- Context Bundle freshness: **PASS**
-- full governance preflight: **PASS**
-- tracked-file search-family inventory: **PASS**, `read_errors=0`
-- temporary workflow / helper machinery: **absent from final functional diff**
-
-The newest PR-head workflow after this closure writeback must be inspected externally before merge readiness is declared.
-
----
-
-## 10. Change-set declarations
-
-Phase 0 introduced:
-
-- **no new P0/P1 claim**
-- **no new ontology primitive**
-- **no new grammar**
-- **no new symbol**
-- **no new equation**
-- **no new domain bridge**
-- **no new Selection subtype**
-- **no new scalar / operator / layer / threshold**
-
-Existing equations were edited only by subtraction of unsupported former-P1-T05 `r/r^{coll}` terms.
-
----
-
-## 11. Exit gate
-
-### **Phase 0 CLOSED**
-
-Frozen exit conditions:
-
-- no known active file treats former P1-T05 as current P1 authority: **PASS**
-- no known active file uses script / habit / gradient / L2 automation to infer no Selection: **PASS**
-- CG / SEA and T_dir jurisdictions consistent with RC-A: **PASS**
-- P1-T06 / ST-A and generative-reselectability boundaries preserved: **PASS**
-- historical provenance preserved: **PASS**
-- no replacement primitive / grammar / formal system introduced: **PASS**
-- governance checks green: **PASS**
-- bounded retrieval regression passes frozen Q1-Q6: **PASS / robustly observed**
-- closure audit exists: **PASS**
-
-**Phase 0 is closed cleanly.**
-
-This closure satisfies the Phase-0 prerequisite for a *later, separately authorized* relation-level GOV-SUB01 audit. It does **not** itself authorize or start Phase 0.5.
+Stop at Phase 0. Do not execute Phase 0.5 in this PR.
