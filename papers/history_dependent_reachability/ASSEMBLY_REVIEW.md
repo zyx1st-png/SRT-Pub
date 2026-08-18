@@ -1,14 +1,21 @@
 # Assembly & global review report — MANUSCRIPT.md
 
-> **CURRENT STATUS (2026-07-19).** Sections 1–3 below are the *original* 2026-07-17
-> assembly report and are retained as history. Superseding updates since then:
-> **(a)** the manuscript now carries a full bibliography — `manuscript/08_references.md`
+> **CURRENT STATUS (2026-08-18).** Sections 1–7 remain the original 2026-07-17/19
+> assembly and audit record. The self-citation live-status item in §8 is now resolved:
+> **Costly Selective Closure** is recorded as submitted to *Adaptive Behavior*, and the
+> former Frontiers manuscript `1837760` is the published Zhang (2026) article,
+> *Frontiers in Neuroscience* 20:1837760, DOI `10.3389/fnins.2026.1837760`.
+> `manuscript/08_references.md`, `REFERENCE_LEDGER.md`, `PAPER_CHARTER.md`, the
+> candidate bibliography, and the assembled `MANUSCRIPT.md` have been synchronized.
+>
+> **Previous current-status note (2026-07-19).** Sections 1–3 below are the *original*
+> 2026-07-17 assembly report and are retained as history. Superseding updates since
+> then: **(a)** the manuscript carries a full bibliography — `manuscript/08_references.md`
 > (16 VERIFIED references + 2 self-citations), inserted and novelty-downgraded in
-> commit `33e97207`; §4 "TODO — references" below is therefore **DONE** (see the
-> resolution note in §4). **(b)** The assembled `MANUSCRIPT.md` is now **1121 lines,
-> ~10.0k words** (was 969 / ~8.7k); the "969 lines" figure in §1 is historical.
-> **(c)** The Figure 5 four-vector panels and the S4 two-point extraction are complete
-> (§5, already marked COMPLETED). Open author-review items are listed in §8.
+> commit `33e97207`; §4 "TODO — references" below is therefore **DONE**. **(b)** The
+> assembled `MANUSCRIPT.md` is 1121 lines, ~10.0k words (the "969 lines" figure in §1
+> is historical). **(c)** Figure 5 four-vector panels and the S4 two-point extraction
+> are complete (§5, already marked COMPLETED).
 
 Date: 2026-07-17. Scope: mechanical assembly of manuscript/00–07 into
 `manuscript/MANUSCRIPT.md` (by `assemble_manuscript.py`) plus a global consistency
@@ -61,30 +68,25 @@ impossible, consciousness, subjecthood, independence-claims):
   RESULTS_NUMBERS; deferred panels (Fig 5 four-bar vectors; S4 erosion trace)
   are declared in captions and FIGURE_PLAN, not silently absent.
 
-## 4. TODO — references — **DONE (commit `33e97207`, 2026-07-19)**
+## 4. TODO — references — **DONE (commit `33e97207`, 2026-07-19; status refreshed 2026-08-18)**
 
-**Resolution:** `manuscript/08_references.md` now supplies the bibliography — 16
-VERIFIED references (author-year, full metadata + DOI/URL) plus the two self-citations.
-Citations were inserted with an integrated novelty-downgrade so the information measure,
-its use as a signal, and gated consolidation are each attributed to prior art
-(Methods 2.4 / Intro §1 / Discussion §5.2); the residual novelty is scoped to the
-combination only. Three rounds of literature verification are complete (see
-`LITERATURE_VERIFICATION_REPORT.md`). The original citation-needed checklist below is
-retained as history; every item is now covered:
+**Resolution:** `manuscript/08_references.md` supplies the bibliography — 16 VERIFIED
+references plus two self-citations. Citations were inserted with an integrated
+novelty-downgrade so the information measure, its use as a signal, and gated
+consolidation are each attributed to prior art (Methods 2.4 / Intro §1 / Discussion
+§5.2); the residual novelty is scoped to the combination only. Three rounds of
+literature verification are complete (see `LITERATURE_VERIFICATION_REPORT.md`).
 
-The manuscript currently has **no bibliography**. Citation-needed points:
+The original citation-needed checklist is retained as history; every item is covered:
 
 1. §1/§5.2 framework anchors: dynamical systems & hysteresis; optimal control /
    controllability; RL habit formation & metaplasticity; FEP / active inference;
    predictive processing.
-2. §2.4/§5.2 self-citations once identifiers exist: Costly Selective Closure
-   (Adaptive Behavior submission) and ontological friction Ψ_f (Frontiers ms
-   1837760) — cite as manuscripts; do not overstate status.
-3. §2 methodological anchors: master-yoked control design (learned-helplessness
-   tradition); equivalence testing (TOST-style); percentile bootstrap; committor /
-   Kramers escape (S1 functionals); Euler–Maruyama.
-4. §5.2 possibly IIT if named at review (currently not named in body — decide
-   whether to keep it unnamed).
+2. §2.4/§5.2 self-citations: Costly Selective Closure and the executive-friction
+   Frontiers paper. **Current status is governed by the 2026-08-18 sync above.**
+3. §2 methodological anchors: master-yoked control design; equivalence testing;
+   percentile bootstrap; committor / Kramers escape; Euler–Maruyama.
+4. §5.2 possibly IIT if named at review (currently not named in body).
 
 ## 5. TODO — pre-submission statistical extraction — **COMPLETED 2026-07-17**
 (single authorized deterministic extraction round; see `STATISTICAL_RECHECK.md`)
@@ -121,20 +123,13 @@ not triggered; manuscript body numbers unchanged.
   tight. Cosmetic; deferred to figure polish.
 - The Abstract is 323 words — may need trimming to venue limits.
 
-## 8. Open author-review items (pre-submission; not blocking the Draft)
+## 8. Open author-review items
 
-- **Self-citation live status (author to confirm).** `manuscript/08_references.md`
-  currently lists the two self-citations at their confirmed status: **Costly Selective
-  Closure** as "Unpublished manuscript"; **Ontological friction (Ψ_f)** as "Manuscript
-  in revision at Frontiers, ms 1837760." These strings were moved out of the formal
-  bibliography as inline editorial brackets and recorded here instead. Before
-  submission, confirm each live status and update the reference strings if it has
-  changed — do **not** upgrade CSC to "submitted"/"under review" or Ψ_f to
-  "published"/"in press" without a confirmed record.
-- **Methods 2.6 wording — RESOLVED (branch-sync pass, 2026-07-19).** The "Two
-  reported intervals" passage previously stated "seed × volatility cells as separate
-  resampling units" twice in adjacent sentences; the second occurrence was deduped
-  (now: pooled = provenance; the seed-clustered bootstrap is preferred "because those
-  two within-seed cells are not independent"). Both interval roles preserved. The
-  Audit §4.3 mention of the same phrase is the audit's own finding and is intentional.
+- **Self-citation live status — RESOLVED 2026-08-18.** Source-of-truth bibliography,
+  ledgers and assembled mirror now record CSC as submitted to *Adaptive Behavior* and
+  Zhang (2026) as published in *Frontiers in Neuroscience* 20:1837760, DOI
+  `10.3389/fnins.2026.1837760`.
+- **Methods 2.6 wording — RESOLVED (branch-sync pass, 2026-07-19).** The duplicate
+  "seed × volatility cells as separate resampling units" sentence was deduped; both
+  interval roles remain preserved.
 - **Symbol/format unification and venue** remain as in §6–§7 (deferred, not content).
