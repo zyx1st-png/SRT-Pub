@@ -46,7 +46,6 @@ def main() -> None:
 
     changed: list[str] = []
     skipped: list[str] = []
-    diagnostics: dict[str, tuple[int, str]] = {}
 
     for rel in parse_longform_registry():
         readme = ROOT / rel
@@ -64,33 +63,21 @@ def main() -> None:
         if not owner_path.is_file():
             skipped.append(f"{rel}: owner missing")
             continue
-        owner_bytes = owner_path.stat().st_size
-        owner_sha = sha256_file(owner_path)
         metadata = [
-            f"- Source owner bytes: `{owner_bytes}`",
-            f"- Source owner SHA-256: `{owner_sha}`",
+            f"- Source owner bytes: `{owner_path.stat().st_size}`",
+            f"- Source owner SHA-256: `{sha256_file(owner_path)}`",
         ]
         new_lines = lines[: owner_index + 1] + metadata + lines[owner_index + 1 :]
         new_text = "\n".join(new_lines).rstrip() + "\n"
         if new_text != original:
             changed.append(rel)
-            diagnostics[rel] = (owner_bytes, owner_sha)
             if not args.check:
                 readme.write_text(new_text, encoding="utf-8")
 
     mode = "would_change" if args.check else "changed"
     print(f"refresh_split_metadata: {mode}={len(changed)} skipped={len(skipped)}")
-    diag_lines: list[str] = []
     for item in changed[:80]:
         print(f"{mode}: {item}")
-        if args.check and item in diagnostics:
-            owner_bytes, owner_sha = diagnostics[item]
-            line = f"diagnostic: {item}: owner_bytes={owner_bytes} owner_sha256={owner_sha}"
-            print(line)
-            diag_lines.append(line)
-    if args.check and diag_lines:
-        with (ROOT / "pr-frontmatter.log").open("a", encoding="utf-8") as handle:
-            handle.write("\n" + "\n".join(diag_lines) + "\n")
     if len(changed) > 80:
         print(f"{mode}: ... {len(changed) - 80} more")
     for item in skipped[:40]:
