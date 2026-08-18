@@ -5,13 +5,13 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-17
+updated: 2026-08-18
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-17
+> **最后更新**：2026-08-18
 > **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` + 2026-08-16 convergence decisions
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
@@ -24,13 +24,14 @@ updated: 2026-08-17
 - **2026-08-16 synthesis target freeze**：继承 2026-08-11 bounded probe 的 Case A / STOP 与 Philosophy Route 8a closure，新的 patch / hook 不再默认指向 AI CompactCore、Neuroscience N1–N13、Neural Mechanisms CompactCore 或为已测 Philosophy cluster 新建 synthesis。历史 target 引用保留为工程记录，不代表当前施工授权。复活条件仅为：新的 bounded probe 转为 Case B/C、owner-level contradiction 无法局部修复，或作者明确重新授权。见 `Operations/SRT_SYNTHESIS_TARGET_FREEZE_2026-08-16.md`。
 - **2026-08-17 RC-A**：former `P1-T05: Real Choice Moment` 已从 P1 降为 P2/P3 Agency / Automation Guard；`Selection != Agency`，script / habit / gradient / L2 automation 不得反推“没有 Selection”。P1-T06 Stable ISP 保留。裁决/同步记录见 `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`。
 - **2026-08-17 PD-A**：P0-01 保留为 Selection-first primitive，但 direct D2/D3 不是 P0 准入条件；科学区分力必须在 P3/P4 以冻结 bounded rival 的 D2/D3 支付。旧 §13 额外 exhibit gate 退役但不追溯升级 residue；3 条成熟独立 null/rival-equivalent 工作线（至少 2 个中层推导）将强制重开 P0-01 fruitfulness/redundancy review。裁决见 `Operations/SRT_PD_A_P0_D2_BOUNDARY_AUTHOR_DECISION_PACKET_2026-08-17.md`。
+- **2026-08-18 于春景 subjective-report coupling 材料裁决**：全文 close-read + 作者私下澄清已压成 `B1/B2`，只回写 SourceCard + Material Log；B1 保留“同一第一人称报告线索跨 bearer architecture 不自动继承相同意识证据权重”与 `history-sensitive != bearer-indexed history`，B2 只保留 causal-emergence / continual-learning / grounding / holonomy 的 consciousness 强读法 guardrail。当前不建 patch / hook，不改 AI synthesis / consciousness owner / canonical；复活绑定 Stable ISP / bearer individuation / phenomenal necessity owner pass、persistent-agent vs checkpoint-clone 实验或作者正式修订稿。
 - 2026-08-11 至 2026-08-12 七项相邻作者级边界裁决已落地：**PC-A**（potential non-exhaustion／non-preformation）、**AM-A**（P0-01 承载 primitive actualisation kernel）、**PHR-A**（物理实现采用 interpretation-plural P3/P4 audit）、**ST-A**（结构稳定／生成可再选择双轴）、**EX-A**（事件现实性／锚定持续／stable ISP 三层分离）、**B-A**（初心严格分层）与 **C-A**（global optimum bounded plurality／四义拆分）。C-A 不承认位置无关的宇宙级语义／评价最优为当前正面对象；有限 reachable optimum 必须写齐作用域，规约性地平线与模型吸引子不得混写，技术性 model-global 用法保留。CΨ 的绝对 `Ψ_f→0` 价态与 `κ_0 / ε_pg` 依赖仍开放。上述裁决不构成材料证据升级。
 - 2026-08-11 作者已选择 **PHR-A**：AM-A 的物理实现采用 interpretation-plural P3/P4 audit。共同审计链为“非等价候选 → outcome-indexed 物理登记 → 可干预路径效力 → 未来可达性／返回成本改变”；collapse-family、Everett／branch-relative 与 operational／instrument 口径显式分开。地板判决仍是**黄灯／条件连接**：退相干、耗散、固定点、POVM 条件态或稳定记录中的任一项均不充分，也没有建立解释中立的普遍物理机制。
 - 2026-08-11 作者已选择 **ST-A**：`P1-T06` 的稳定最低条件为声明扰动范围内的 recurrent historical reconstitution + continued selectability；generative reselectability 进入 21C B13 的 P2/P3 生成健康层。former `P1-T07` 无条件反闭合 theorem 已撤销，只保留 absorption remainder；neutral-kernel anti-closure 须补稳定语义、环境、无重置条件、时间窗与证明。fixed point、metastability、低摩擦、`σ<1`、option diversity 与 `ΔR_future>0` 均不得单项充当稳定／健康／合法性通用判据。
 - 2026-08-11 作者已选择 **EX-A**：`P0-01` 固定 determinate `L_1` event 的 manifest actuality；`P0-02` 只处理该事件是否留下有效痕迹、获得维持条件并持续约束后续转移；stable ISP identity 仍由 `P1-T06 / ST-A` 承担。旧式 `E = 1-H(L_1)/H(L_0)` 已降至 21C B14 的历史启发式，不再是 P0 方程或量化读出；EX-A 未采用全局 `H(L_0^{abs})`、归一化或 existence index。
 - 2026-08-12 `Core_14` 跨尺度熵证明审计已落地：`ΔS=H(L_0)-H(L_1)`、无条件粗粒化熵式与“所有尺度共同满足最小作用”不再支撑同构；strict conjugacy 只在尺度映射可逆时保留为特殊 P3 候选。一般接口回到 `P3-B06 / T-Scale-02C1` 的近似交换，并须声明状态空间、尺度映射、保留观测量、比较范数、容差与失败例。跨尺度共同项只到选择—约束—可支付性语法。
 - 2026-08-12 首个有界实例 `P3-Scale-NB1` 已落地：广义“神经除法归一化 → 认知／行为选择”为**红灯软连接**；相对神经响应不是离散选择，`H-λE` 也不唯一推出除法归一化。当前仅保留**黄灯条件接口**：具名候选映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与神经干预跟踪必须同时过门。具名工作线 `NB1-MOFC-Lottery-v0` 已形成 P4 执行卡；W0 公开核查只确认作者请求路径，未定位到公共 trial-level 数据／代码包，请求草稿已备但未发送。formal lock、预注册与执行均未完成，没有完成态数据把该桥转绿。
-- **Pipeline 1 当前正式口径：233 条，A 156 / B 27 / C 50；最新 split 为 `2026-08_Part06:1`。** 2026-08-14 至 08-16 新增正式记录仍均为 A，但 A verdict 只证明材料裁决，不自动证明 owner-level assimilation。
+- **Pipeline 1 当前正式口径：236 条，A 158 / B 28 / C 50；最新 split 为 `2026-08_Part06:4`。** 2026-08-17 至 08-18 新增两条 A 与一条 B1/B2；A verdict 只证明材料裁决，不自动证明 owner-level assimilation，B 继续执行“停驻 + 具名触发条件”。
 - 论文线：
   - Frontiers 稿 `1837760` 已接受，但因 APC 过高准备终止原出版路径并转投；在取得原期刊明确终止确认前不得新投，执行卡为 Issue #740；
   - *Costly Selective Closure* / Adaptive Behavior 已投稿，尚未进入外部评审；
@@ -61,7 +62,7 @@ updated: 2026-08-17
 - Choice-trace 作者门已关闭；T-B、T-D、T-E 首轮 bridge 与五域联合压力测试已经完成，不再列为“待建立”。
 - SEA 已形成统一协议、AI 正负校准、生命边界案例、制度配对案例与编码手册；方法贡献仍为 candidate，可靠性 pilot 暂缓。
 - forcing–CH 已完成 D05 C5-op、方法个体化协议、控制案例选择协议、多表征方法族审计和 countable-standard-model premise 窄类型说明；控制档案 Part II 仍未签署。
-- Pipeline 1 截至本轮材料台账正式口径为 **233 条：A 156、B 27、C 50；最新 split 为 `2026-08_Part06:1`**。
+- Pipeline 1 截至本轮材料台账正式口径为 **236 条：A 158、B 28、C 50；最新 split 为 `2026-08_Part06:4`**。
 - 2026-08-16 convergence pass 已启动：HP-B-B owner landing + synthesis-target freeze + bootstrap 状态刷新；pending-hook burn-down 是下一独立工作包，不在本轮 PR 内批量执行。
 
 ## 当前权威锚点
@@ -82,6 +83,14 @@ updated: 2026-08-17
 
 ## 最近关键推进
 
+### 2026-08-18 · 主观报告—机器意识耦合材料裁决
+
+- 对于春景《主观报告能追踪意识体验吗？大语言模型与机器意识的耦合问题》完成全文 close-read，并把用户提供的作者私下澄清与 PDF 正文严格分层。
+- 裁决为 `B1/B2`：B1 保留 report evidence ecology / architecture-conditioned evidential weight 与 `history-sensitive != bearer-indexed history`；B2 保留三结构标记与 holonomy 的 phenomenality 强读法 guardrail。
+- SRT-side 压力测试形成 memory transplant / checkpoint rollback / perfect duplicate / cost transfer / learning-rule replacement 五组反事实，以及 H1–H7 working gates 和 Counterfactual Bearer Substitution Test；均为非 canonical 工作标签。
+- Holonomy 只保留为 historical-incorporation probe；`long-term memory / online learning / meta-learning != subject history`，`causal emergence != bearer`，`B_s -> B_p` 继续开放。
+- 当前按 consolidation + synthesis-target freeze 只落 SourceCard + Material Log，不建 PatchNote / hook，不改 AI CompactCore、Subjecthood owner 或 canonical。
+
 ### 2026-08-16 · SRT Consolidation Phase 启动
 
 - 作者选择 HP-B-B：Structural Bearing 与 Phenomenal Bearing 分析分离；Z6 保持为非循环 deletion pressure；Hard Problem owner 不再宣称“僵尸已被证明消解”。
@@ -97,6 +106,7 @@ updated: 2026-08-17
 - 冻结 Reach20 有效性门在 T/S 中仅 40/48 通过，故裁决为 **UNINTERPRETABLE PROTOCOL**；不以 Emp5 的正向结果替换预注册 Reach20 门。
 - 锁定预测同样不利：M4 相对 M3 的 LOSO CV R² 变化为 −1.0275，NRMSE 恶化 13.04%；`dV_CF_pre` 标准化 β=0.0300，seed-cluster 95% CI [−0.2610, 0.1924]。
 - 结果只适用于本架构下的 surrogate-stake → counterfactual-sensitivity → future-selectability 桥；不验证 canonical `d`，不推断意识，不改动 Core 与休眠 owner 文件。
+
 ### 2026-08-08 · 命题级语义覆盖审计（审计单位改变）
 
 - **审计单位从"文件工程状态"改为"已确认的理论命题"。** 理由是连续 **5 次假阴性**：静态清单判"未吸收"，行为探针 5 次全部推翻。
@@ -218,4 +228,4 @@ updated: 2026-08-17
 - forcing 书籍收集不等于控制案例枚举；Part II 未签署前继续执行既有阻塞。
 - SEA pilot 暂缓不等于 SEA 被验证或被否定。
 - 理论文件（canonical）编辑先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`。
-- 休眠层只做 touch-based repair，不开专项治理轮；Case A / STOP synthesis 继续冻结直到具名 reactivation gate 触发。
+- 休眠层只做 touch-based repair，不开专项治理轮；Case A / STOP synthesis 继续冻结直到具名 reactivation gate 触发.
