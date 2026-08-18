@@ -1,14 +1,22 @@
 # Literature verification report — round 1 (N3, N4)
 
-> **CURRENT STATUS (2026-07-19).** All **three** verification rounds are complete
-> (Round 1 = N3/N4 below; Round 2 = five-layer overlap map + perceptual-aliasing
+> **CURRENT STATUS (2026-08-18).** All three literature-verification rounds below are
+> historical records of the 2026-07-17 search/audit. Their theory/novelty findings
+> remain in force, but the Round-3 self-citation status snapshot has been superseded:
+> **Costly Selective Closure** is now recorded as submitted to *Adaptive Behavior*;
+> the former Frontiers manuscript `1837760` is the published Zhang (2026) article,
+> *Frontiers in Neuroscience* 20:1837760, DOI `10.3389/fnins.2026.1837760`, published
+> 2026-08-06. Current bibliographic authority is `REFERENCE_LEDGER.md` plus
+> `manuscript/08_references.md`. Any July instruction below saying not to call the
+> Frontiers paper published must be read strictly as a dated historical status check.
+>
+> **Previous current-status note (2026-07-19).** All three verification rounds were
+> complete (Round 1 = N3/N4; Round 2 = five-layer overlap map + perceptual-aliasing
 > neighbor; Round 3 = measure/perseveration/methodology/self-cite). The proposed
-> downgrade wording and the VERIFIED citations **have since been applied to the
-> manuscript** in commit `33e97207` (Methods 2.4, Intro §1, Discussion §5.2, Results
-> §3.4; `manuscript/08_references.md`). Any statement below that a change is "NOT
-> applied to the manuscript this round" or that "PR #675 remains Draft" is the
-> **historical record of Round 1 only** and is superseded by that commit. The live
-> paper PR is now #682 (Draft); PR #675 is merged and closed.
+> downgrade wording and VERIFIED citations had been applied to the manuscript in
+> commit `33e97207` (Methods 2.4, Intro §1, Discussion §5.2, Results §3.4;
+> `manuscript/08_references.md`). Statements that a change was "NOT applied" or that
+> "PR #675 remains Draft" are the historical record of Round 1 only.
 
 Date: 2026-07-17. Method: web verification of primary sources (DOI + venue + read of
 methods/formulas for the closest N3/N4 works). **No citation inserted into
@@ -279,20 +287,20 @@ search"** (search result, not exclusionary proof).
   Kramers (1940), *Physica* 7:284; Euler–Maruyama — Kloeden & Platen (1992), *Numerical
   Solution of Stochastic Differential Equations* (Springer).
 
-## Group 4 — self-citation status (repo records; live status = author to confirm)
+## Group 4 — self-citation status snapshot — **SUPERSEDED 2026-08-18**
 
-Verified against **repository records** only (external submission portals not accessible):
+The text in this subsection originally recorded the repository-only status as of
+2026-07-17. It is superseded by the 2026-08-18 verified live status:
 
-- **Ontological friction (Ψ_f):** Frontiers **manuscript ID 1837760**, in a **revision
-  round** (repo contains `frontiers_response_to_reviewers.md` and a revision-round
-  submission checklist). Honest status: **"in revision at Frontiers (ms 1837760)."** Do
-  not write "in press" or "published." Author to confirm current live decision.
-- **Costly Selective Closure (CSC):** repo shows **v16** following an **ALIFE-2026
-  rejection**, targeting **Adaptive Behavior** (per project records/memory). No confirmed
-  Adaptive Behavior submission record in the repo. Honest status: **"revised (v16) after
-  ALIFE-2026 rejection; targeting Adaptive Behavior; submission status to be confirmed."**
-  Do not upgrade to "submitted/under review at Adaptive Behavior" without author
-  confirmation.
+- **Executive-friction / ontological-friction line:** Zhang, Y. (2026), *A translational
+  cross-modal control-cost framework for executive breakdown*, *Frontiers in
+  Neuroscience* 20:1837760, DOI `10.3389/fnins.2026.1837760`, published 2026-08-06.
+- **Costly Selective Closure (CSC):** manuscript submitted to *Adaptive Behavior*;
+  do not upgrade to "under review" until that stage is confirmed.
+
+The former Round-3 instructions "in revision at Frontiers" and "targeting Adaptive
+Behavior" are retained only by provenance in repository history and must not be used
+as current citation status.
 
 ## Updated N3 residual (after Round 3)
 
