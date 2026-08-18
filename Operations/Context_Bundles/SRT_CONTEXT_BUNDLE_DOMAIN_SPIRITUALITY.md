@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-08-17
+id: SRT-CONTEXT-BUNDLE-DOMAIN-SPIRITUALITY-2026-08-18
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-17
-source_commit: 8fcb97fd
-source_branch: agent/srt-pd-a-consistency-repair
+generated: 2026-08-18
+source_commit: 181d0fbb
+source_branch: HEAD
 source_dirty: false
-inputs_digest: 6906e8853d7329ab
+inputs_digest: b3d1bd1b8704507f
 ---
 
 # SRT 灵性领域上下文包
@@ -26,9 +26,9 @@ inputs_digest: 6906e8853d7329ab
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-17 |
-| 来源 commit | `8fcb97fd` |
-| 来源分支 | `agent/srt-pd-a-consistency-repair` |
+| 生成日期 | 2026-08-18 |
+| 来源 commit | `181d0fbb` |
+| 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 3 |
 

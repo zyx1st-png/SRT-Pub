@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-17
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-18
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-17
-source_commit: 8fcb97fd
-source_branch: agent/srt-pd-a-consistency-repair
+generated: 2026-08-18
+source_commit: 181d0fbb
+source_branch: HEAD
 source_dirty: false
-inputs_digest: 6906e8853d7329ab
+inputs_digest: b3d1bd1b8704507f
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: 6906e8853d7329ab
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-17 |
-| 来源 commit | `8fcb97fd` |
-| 来源分支 | `agent/srt-pd-a-consistency-repair` |
+| 生成日期 | 2026-08-18 |
+| 来源 commit | `181d0fbb` |
+| 来源分支 | `HEAD` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -43,7 +43,7 @@ inputs_digest: 6906e8853d7329ab
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-08-12 |
+| 1 | `SRT_AI_START.md` | 2026-08-18 |
 | 2 | `CANONICAL_REGISTRY.md` | 2026-08-12 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
 | 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-12 |
@@ -433,7 +433,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -560,17 +560,19 @@ Route: `01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md`, `Philosophy/SRT_L
 
 For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and `Core/SRT_OPEN_TENSIONS.md`.
 
-### Real Choice Moment
+### Former Real Choice Moment / RC-A
 
-For the canonical statement of real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05). That statement carries a **negative list only** (script execution, habit replay, gradient following, `L_2` label optimization do not qualify); it does not supply a positive discrimination procedure, so it under-determines concrete cases.
+`P1-T05 Real Choice Moment` is a **former** P1 theorem. RC-A withdrew it from P1; current P1 authority is `Core/SRT_Core_21b_Constitutive_Theorems.md`. Do not infer `no Selection` from script execution, habit replay, gradient following, or `L_2` automation. Selection and Agency are not identical.
 
-For concrete "is this a real choice?" judgments, also load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, a non-compensation rule, and the no-choice / pseudo-choice / punitive-choice / respected-choice reading. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only "bounded selection-event candidate", never subjecthood, consciousness, freedom, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
+The adjacent P1 theorem that remains active is `P1-T06 Stable ISP`; its continued-selectability condition belongs to stable-ISP persistence, not to the definition of a one-shot Selection occurrence. Generative reselectability remains P2/P3 generative-health territory.
+
+For concrete Selection-event audits, load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, and a non-compensation rule. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only a bounded Selection-event candidate. It does not prove agency, subjecthood, consciousness, freedom, moral responsibility, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
 
 Three fast negatives worth carrying without loading anything: a different output is not path efficacy; energy spent is not consequence bearing; having memory is not historical efficacy.
 
 ### Freedom
 
-In SRT usage, freedom concerns preservation of real choice moments, not mere option count. Treat this as a pointer to the P1/P2 sources, not as a standalone definition here.
+Freedom is a downstream agency / normative / generative-health question. Legacy language linking freedom to preservation of “real choice moments” must be read through RC-A and must not be used to define Selection or to exclude scripted / habitual / automated selective processes from Selection ontology.
 
 ### Primitive Actualisation / Selectability Boundary
 
