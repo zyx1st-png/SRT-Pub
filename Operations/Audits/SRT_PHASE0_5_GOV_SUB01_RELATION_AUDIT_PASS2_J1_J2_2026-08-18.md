@@ -4,7 +4,6 @@ type: audit_record
 status: active
 record_stage: executed_joint_removal_j1_j2
 layer: meta
-epistem_layer: os
 epistemic_layer: os
 claim_mode: governance
 claim_level: P3/P4_governance
@@ -22,13 +21,13 @@ tags: [Governance, Phase0_5, GOV_SUB01, Selection, StableISP, JointRemoval, L2, 
 
 # Phase 0.5 · GOV-SUB01 Relation-Level Subtractive Audit · Pass 2 — J1 / J2
 
-> **Scope**: execute the two lower-risk joint-removal tests opened by Pass 1. This record remains governance-only. It changes no canonical definition, equation, symbol, theorem, relation alphabet, or domain bridge.
+> **Scope**: execute the two lower-risk joint-removal tests opened by Pass 1. This record is governance-only. It changes no canonical definition, equation, symbol, theorem, relation alphabet, or domain bridge.
 
 ## 0. Verdict
 
-Two joint-removal results are now clear under `K = 0`:
+Under `K = 0`:
 
-### J1 — history writeback + explicit future-space restriction
+### J1 — history/writeback + explicit future-space restriction
 
 ```text
 remove history/writeback
@@ -39,11 +38,11 @@ Result:
 
 - one-shot Selection occurrence still survives under P0-01 / EX-A;
 - P1-T06 Stable ISP fails because the history-bearing relation is gone;
-- removing explicit future-space narrowing adds **no independently identifiable loss** beyond removal of history/writeback for the P1-T06 target, because P1-T06 already expresses future efficacy through `outputs at t constrain A_{t+1}`.
+- explicit future-space narrowing adds **no independently identifiable loss** beyond removal of effective writeback for the P1-T06 target, because that theorem already states that outputs at `t` constrain `A_{t+1}` with writeback.
 
-Therefore, for the Stable-ISP target, **future-space narrowing is not an independently load-bearing relation beside history efficacy**. In the current P1-T06 architecture it is largely a consequence / surface description of effective writeback rather than a second primitive requirement.
+Therefore, relative to P1-T06, a separately named future-space-narrowing relation is not an additional primitive burden beside historically effective writeback.
 
-### J2 — history writeback + same-process consequence return
+### J2 — history/writeback + same-process consequence return
 
 ```text
 remove history/writeback
@@ -52,226 +51,191 @@ remove history/writeback
 
 Result:
 
-- one-shot Selection occurrence again survives;
-- the recurrent Stable-ISP target fails if either relation is removed;
-- history and consequence return are **not reducible to one another**: memory without same-process consequence bearing can become inert or externally owned record; consequence exposure without history/writeback does not yield a history-bearing perspective center.
+- one-shot Selection occurrence still survives;
+- P1-T06 Stable ISP fails if either relation is removed;
+- the two relations are not reducible to one another.
 
-Thus the two relations are jointly non-additive but independently load-bearing for the declared P1-T06 recurrent target.
+History answers:
 
-### Main consequence
+> what makes the present process historically continuous with prior selections?
 
-The current architecture supports a cleaner separation:
+Consequence return answers:
 
-```text
-Selection occurrence
-    does not require history or consequence return
+> what makes those prior selections continue to matter to that same process rather than merely to an external archive or another bearer?
 
-Stable ISP
-    requires historically effective same-process recurrence
-    and continued consequence bearing
-
-explicit future-space restriction
-    is not an additional independent Stable-ISP primitive
-    once effective writeback is already stated
-```
-
-This is a subtractive simplification of the relation picture. It is **not** a new Selection Grammar.
+The joint loss saturates because either missing relation already breaks the declared recurrent target; saturation is not redundancy.
 
 ---
 
 ## 1. Audit inheritance
 
-This pass inherits without modification from Pass 1:
+This pass inherits from Pass 1 without modification:
 
-- primary target `Y_SEL`: minimal one-shot Selection occurrence;
-- secondary target `Y_ISP`: P1-T06 recurrent history-bearing Stable ISP;
-- `K = 0`;
-- event horizon `H_SEL` and recurrent horizon `H_ISP`;
-- RC-A prohibition on using anti-script / Real Choice as a Selection criterion.
+### `Y_SEL`
 
-No target is redefined after deletion.
+Minimal one-shot Selection occurrence:
+
+> a non-objectified potential acquires determinate manifest actuality as an `L_1` event, without requiring persistence, Stable ISP, agency, or a prior chooser.
+
+### `Y_ISP`
+
+P1-T06 recurrent history-bearing Stable ISP:
+
+> the same perspective- and history-bearing process is recurrently reconstituted, carries writeback, remains continued-selectable, and bears downstream consequences of what it selected.
+
+### Refit budget
+
+```text
+K = 0
+```
+
+No target is redefined after deletion and no substitute relation is introduced.
 
 ---
 
-## 2. J1 — joint removal of history writeback and explicit future-space restriction
+## 2. J1 — history/writeback + explicit future-space restriction
 
-### 2.1 Relations removed
+### 2.1 Joint removal
 
 Remove both:
 
-1. **history carry-forward / writeback** — prior output constrains later state or candidate reception;
-2. **explicit reachable-set restriction / future-space narrowing** — a separately stated relation that future possibilities are narrowed or altered by the event.
+1. history carry-forward / writeback;
+2. a separately stated reachable-set restriction / future-space narrowing relation.
 
-No substitute relation is introduced.
+### 2.2 `Y_SEL`
 
-### 2.2 `Y_SEL` result
-
-The one-shot target remains stateable:
+P0-02 / EX-A already blocks:
 
 ```text
-non-objectified potential
--> determinate manifest L1 event
+occurrence -> persistence
 ```
 
-P0-02 already prevents the inference:
+so removing both relations does not erase the one-shot P0 occurrence target.
+
+Classification:
 
 ```text
-occurrence
--> persistence
+pair relative to Y_SEL = R3 target-relative dispensable
 ```
 
-Therefore J1 does not delete one-shot Selection occurrence from the current architecture.
+### 2.3 `Y_ISP`
 
-Classification for the pair relative to `Y_SEL`:
-
-**`R3 target-relative dispensable`**.
-
-### 2.3 `Y_ISP` result
-
-P1-T06 requires:
+P1-T06 explicitly requires:
 
 ```text
 outputs at t constrain A_{t+1} with writeback
 ```
 
-Once history/writeback is removed, the process no longer satisfies the history-bearing condition. The Stable-ISP target therefore fails even before asking whether an additional future-space relation remains.
+Without effective writeback, the target is no longer history-bearing in the theorem's sense.
 
-The key interaction is that P1-T06's writeback clause already **contains future efficacy**. A history relation that does not affect any later admissibility, state, or candidate reception is not effective writeback in the sense used by the theorem; it is only an inert record.
+A record that persists but changes nothing downstream is not enough; the historical state must remain structurally effective.
 
-Thus a separately named relation:
+### 2.4 Double-counting diagnosis
 
-```text
-future-space narrowing
-```
-
-cannot be counted as an additional independent P1-T06 burden when the theorem already says:
-
-```text
-history at t
--> constrains A_{t+1}
-```
-
-### 2.4 Interaction diagnosis
-
-For `Y_ISP`:
+The P1-T06 writeback clause already contains future efficacy. Therefore, for this target:
 
 ```text
 Delta(history + future-space)
-≈ Delta(history)
+approximately equals
+Delta(history)
 ```
 
-qualitatively under this `K=0` architecture.
+qualitatively under `K=0`.
 
-This is **not** because future efficacy is irrelevant. It is because future efficacy is already carried by the meaning of effective writeback.
+This does **not** mean future efficacy is irrelevant. It means that a second label for the same role should not be counted as a second independent necessity.
 
-Counting both as independent requirements would double-count the same structural role.
-
-### 2.5 J1 classification
+### 2.5 J1 residue
 
 - history/writeback: **`N1 current target-relative indispensable` for `Y_ISP`**;
-- separately named future-space narrowing: **`R2 implementation/representation substitutable` relative to `Y_ISP`**, because its relevant role is already carried by effective writeback;
-- the pair: **`N1` for `Y_ISP`**, with the loss attributable to removal of history efficacy rather than to two independent necessities.
+- separately named future-space narrowing: **`R2 implementation substitutable` relative to `Y_ISP`**, because its relevant role is already carried by effective writeback;
+- pair: **`N1` for `Y_ISP`**, with the loss attributable to historical efficacy.
 
-### 2.6 Governance consequence
+No `N2` is assigned.
 
-Do not write future Phase-0.5 relation inventories as:
+### 2.6 Governance guard
+
+Future relation inventories should not write:
 
 ```text
 history
 + future-space restriction
 ```
 
-if both mean "prior selection affects later admissibility" in the same target.
+as two independent burdens if both mean only:
 
-Preferred discipline:
+```text
+prior output remains effective in later admissibility/state organization
+```
 
-> state the historically effective relation once; only introduce a distinct reachability relation if a later formal model demonstrates a separable role.
-
-This reduces conceptual double-counting without deleting any current theorem.
+A distinct reachability relation should be introduced only if a later formal model demonstrates a separable role.
 
 ---
 
-## 3. J2 — joint removal of history writeback and consequence return
+## 3. J2 — history/writeback + consequence return
 
-### 3.1 Relations removed
+### 3.1 Joint removal
 
 Remove both:
 
-1. **history carry-forward / writeback**;
-2. **same-process consequence return / bearing** — downstream consequences of prior selection no longer return to or constrain the same declared process.
+1. history carry-forward / writeback;
+2. same-process consequence return / bearing.
 
-### 3.2 `Y_SEL` result
+### 3.2 `Y_SEL`
 
-The one-shot P0 event remains possible under the same occurrence/persistence separation used in Pass 1.
+Neither relation is constitutive of the one-shot event under current P0-01 / EX-A.
 
-Therefore the pair is:
+Classification:
 
-**`R3 target-relative dispensable` for `Y_SEL`**.
+```text
+pair relative to Y_SEL = R3 target-relative dispensable
+```
 
-No agent, stable subject, or consequence-bearing bearer is required to define one-shot occurrence.
+### 3.3 Consequence return without history
 
-### 3.3 `Y_ISP` — remove history but retain consequence return
-
-Counterfactual subcase:
+Counterfactual:
 
 ```text
 consequence returns to process P
 but P carries no structured writeback of prior outputs
 ```
 
-The process may be affected repeatedly, but it is not history-bearing in the P1-T06 sense. A repeated target of consequences is not thereby the same historically reconstituted perspective center.
+The process may be repeatedly affected, but it is not history-bearing in the P1-T06 sense.
 
 Result:
 
-**`Y_ISP` fails.**
+```text
+Y_ISP fails
+```
 
-### 3.4 `Y_ISP` — retain history but remove consequence return
+### 3.4 History without consequence return
 
-Counterfactual subcase:
+Counterfactual:
 
 ```text
 records / internal history persist
-but consequences of what was selected are fully externalized
+but consequences of what was selected are externalized
 or cease to constrain the same process
 ```
 
-This can preserve memory-like continuity, but it breaks the P1-T06 continued-selectability clause as currently stated: the same process must continue receiving currently effective candidates **and bearing downstream consequences of what it selected**.
-
-The result is a history store or perspective-like record without the full recurrent bearer relation required by the theorem.
+This can preserve memory-like continuity, but it breaks the P1-T06 continued-selectability clause as currently stated.
 
 Result:
 
-**`Y_ISP` fails.**
-
-### 3.5 Joint interaction
-
-Each relation is individually sufficient to break the declared target when deleted, so the joint loss is not additive:
-
 ```text
-Delta(history + consequence)
-< Delta(history) + Delta(consequence)
+Y_ISP fails
 ```
 
-in the ordinary saturated sense that once the conjunctive target is already broken, deleting the second required relation cannot make it "more failed" on the same binary structural criterion.
-
-This non-additivity should not be mistaken for redundancy.
-
-The two relations answer different questions:
-
-- history/writeback: **what makes the present process historically continuous with prior selections?**
-- consequence return: **what makes those prior selections continue to matter to that same process rather than merely to an external archive or another bearer?**
-
-### 3.6 J2 classification
+### 3.5 J2 residue
 
 Relative to `Y_ISP`:
 
 - history/writeback: **`N1`**;
 - same-process consequence return: **`N1`**;
-- joint pair: **two complementary target-relative necessities, with saturating joint loss**.
+- joint pair: two complementary target-relative necessities with saturating joint loss.
 
-No `N2` classification is assigned. Cross-context indispensability has not been tested.
+No `N2` is assigned because cross-context indispensability has not been tested.
 
-### 3.7 Collective boundary
+### 3.6 Collective boundary
 
 The same distinction helps interpret collective work without reopening T-COLL-4:
 
@@ -287,51 +251,31 @@ M(t) consequence return
 != proof of Selection authenticity
 ```
 
-The first relation may matter for collective history; the second may matter for downstream collective agency / revision auditing. Neither should be back-projected into one-shot Selection ontology.
-
-This pass does not alter `Core_Law/SRT_Collective_Selection.md`.
+Neither relation should be back-projected into one-shot Selection ontology.
 
 ---
 
 ## 4. Relation compression after J1 / J2
 
-The lower-risk persistence architecture can now be stated more economically for audit purposes.
+For audit purposes, the recurrent P1-T06 structure can be described with fewer duplicated labels.
 
-### 4.1 Before subtraction
+Distinct roles are:
 
-A loose prose bundle often lists:
-
-```text
-history
-future-space change
-writeback
-consequence return
-continued selectability
-```
-
-as if these were five independent relation burdens.
-
-### 4.2 After J1 / J2
-
-For the P1-T06 target, the audit finds three distinct roles:
-
-1. **historical efficacy** — prior outputs remain structurally effective in later candidate/state organization;
+1. **historical efficacy** — prior outputs remain structurally effective in later organization;
 2. **same-process recurrence / perspective continuity** — the declared process is recurrently reconstituted as the same history-bearing center;
-3. **same-process consequence bearing under continued selectability** — later consequences remain attached to that recurrent process while it can continue receiving effective candidates.
+3. **same-process consequence bearing under continued selectability** — consequences remain attached to that recurrent process while effective candidates continue to be received.
 
 Important:
 
-> These are **audit-level role descriptions**, not a canonical three-relation grammar and not proposed new theorem wording.
+> These are audit-level role descriptions, **not** a canonical three-relation grammar and not proposed theorem wording.
 
-"Future-space restriction" does not need a fourth independent slot unless a later model separates it from historical efficacy.
+Explicit future-space restriction does not need a fourth independent slot unless later formal work separates it from historical efficacy.
 
 ---
 
-## 5. What J1 / J2 do to the Selection-irreducibility workline
+## 5. Selection-irreducibility consequence
 
-The competitor-vocabulary deletion test becomes cleaner.
-
-A rival that replaces the word `Selection` with:
+A rival vocabulary such as:
 
 ```text
 history dependence
@@ -339,11 +283,9 @@ history dependence
 + consequence return
 ```
 
-is not yet a valid replacement of one-shot Selection, because the bundle mainly reconstructs a **recurrent history-bearing target**.
+mainly reconstructs a recurrent history-bearing target. It is not automatically a replacement for one-shot Selection.
 
-Conversely, failure of those relations in a one-shot case cannot be used to say no Selection occurred.
-
-Future irreducibility work must therefore maintain two frozen model duels:
+Future irreducibility work must therefore keep at least two model duels separate:
 
 ### Duel A — occurrence
 
@@ -353,78 +295,48 @@ Can a rival describe determinate manifest actualisation without merely renaming 
 
 Can a rival preserve historically effective same-process recurrence and consequence bearing without SRT-specific surplus?
 
-A success or failure in Duel B does not settle Duel A.
+A result in Duel B does not settle Duel A.
 
 ---
 
-## 6. J3 gate — now isolated, not executed
+## 6. J3 gate created by J1/J2
 
-Pass 1 identified J3 as the highest-risk test:
+After removing persistence-level double-counting, the high-risk unresolved question becomes narrower:
 
-```text
-remove explicit non-neutrality/asymmetry
-+ remove explicit future-space restriction
--> does primitive actualisation still contain all remaining work by stipulation?
-```
+> Can the P0-01 phrase `determinate manifest distinction` be rival-rewritten without silently importing a non-neutrality / difference-making role?
 
-J1 now removes one source of confusion: explicit future-space restriction is not independently load-bearing for P1-T06 once effective writeback is stated.
+That is a primitive-actualisation question, not a persistence-relation question.
 
-Therefore J3 can be simplified to the real unresolved issue:
-
-> **Can the current P0-01 phrase "determinate manifest distinction" be rival-rewritten without silently importing a non-neutrality / difference-making role?**
-
-This is no longer primarily a persistence-relation question. It is a direct stress test of the AM-A primitive stopping point.
-
-J3 is **not executed here** because selecting a result would affect how SRT interprets the relation between:
-
-- primitive actualisation;
-- non-neutrality / `ε_pg`;
-- rival vocabulary that may redescribe actualisation as ordinary asymmetric transition.
-
-That is an author-level boundary question rather than a mechanical continuation of J1/J2.
+Pass 2 therefore did not make a P0 choice. It routed J3 to a separate decision/stress-test track.
 
 ---
 
 ## 7. Canonical-invariance statement
 
-This pass changes no canonical theory and introduces no formal relation system.
-
-Specifically it does not:
+This pass does not:
 
 - edit P0 or P1 files;
 - change P1-T06 wording;
-- change `L_2` equations or T-L2-Scaffold;
+- change `L_2` equations;
 - change `M(t)` or collective Selection;
-- add a Selection variable, primitive, operator or equation;
+- add a Selection variable, primitive, operator, or equation;
 - promote history or consequence return to P0;
-- demote `ε_pg`;
+- alter `epsilon_pg`;
 - infer agency from consequence return;
 - infer no Selection from absent history or absent consequence bearing.
 
 ---
 
-## 8. Pass-2 closure
+## 8. Closure
 
-### Closed
+Closed here:
 
-1. `J1`: explicit future-space narrowing is not independently load-bearing beside effective writeback for P1-T06; double-counting should stop.
-2. `J2`: history efficacy and same-process consequence return are distinct and each `N1` for the declared recurrent Stable-ISP target.
-3. Neither J1 nor J2 relation bundle is required for one-shot Selection occurrence.
+- J1 history + future-space: **closed**;
+- J2 history + consequence return: **closed**.
 
-### Open
+Open after this pass:
 
-1. J3 primitive-actualisation / non-neutrality rival rewrite.
-2. J4 cost vs consequence-bearing independence under joint perturbation.
-3. empirical or formal D2 work remains separate; no D2 progress is claimed here.
+- J3 primitive actualisation / non-neutrality relation;
+- J4 cost vs consequence-bearing independence.
 
-### Next legitimate action
-
-Prepare an **author-decision packet for J3** with competing interpretations and explicit consequences. Do not silently choose one by editing canonical text.
-
----
-
-## 9. Stop rule
-
-Stop this joint-removal pass because the two lower-risk interaction questions are discharged and the next unresolved test crosses into the declared P0 primitive boundary.
-
-**Final disposition:** `J1 CLOSED / J2 CLOSED / NEXT = J3 AUTHOR-DECISION PACKET / NO CANONICAL EDIT`.
+**Final disposition:** `J1 CLOSED / J2 CLOSED / NO GRAMMAR / NO CANONICAL EDIT`.
