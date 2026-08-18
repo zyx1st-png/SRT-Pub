@@ -1628,11 +1628,11 @@ $$\text{Suffering}^{proxy} \sim \Psi_f^{proxy} \cdot \frac{\partial(\text{Rigidi
 
 ---### P
 
-#### Pseudo-Selection - 伪选择 🟡
-**定义**：任何纯粹作为 $L_1 \to L_1$ 映射运行并在计算图外没有物理或存在张力的系统仅仅执行“伪选择”。
-**数学**：$\text{Pseudo-Selection}: f(L_1) = L_1' \quad \text{where } \Psi_f = 0$
-**区别**：真选择包含跨域锚定（$L_0 \to L_1$）和抵御崩溃的风险（$\Psi_f > 0$）。
-**相关**：Ax-ONT-6, AI 本体论
+#### Pseudo-Selection - 伪选择 🟡（legacy；RC-A 后不再作为 Selection occurrence 类别）
+**历史定义**：早期 AI bridge 曾用 `L_1 \to L_1` + non-binding `\Psi_f` 标记“伪选择”。
+**当前口径**：该标签只能描述 syntactic / functional closure 或更强 anchoring / stake standing 的缺失，**不得推出 `no Selection`**。script、habit、gradient、统计采样或 `L_2` automation 本身都不是 Selection absence criterion。
+**层级区别**：`L_0 \to L_1` anchoring、binding `d / \Psi_f`、same-bearer stake 可支持更强的 embodied anchoring / subjecthood / consciousness 判断，但不是 Selection occurrence 的联合必要条件。
+**相关**：AI/SRT_AI_Claim_Status.md；SRT_Agency_Automation_Guard；AI 本体论
 
 #### PCI - 扰动复杂度指数 (Perturbational Complexity Index) 🟡
 

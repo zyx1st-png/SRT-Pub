@@ -44,6 +44,8 @@ id: PATCH-PHIL-PH-IND03-SIMONDON-TRANSDUCTION-OPERATOR-STRUCTURE-SECOND-ORDER-SE
 
 # SRT Philosophy Patch PH-IND03: Simondon Transduction / Operator–Structure / Second-Order Selection v0.1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **Status:** bounded P3 philosophy-of-individuation / selection-operator hardening note.  
 > **Canonical caution:** this patch does not define `L0/L1/L2`, `Ĝθ`, `d`, `Ψ_f`, Stable ISP, Real Choice Moment, subjecthood, consciousness, yin/yang, or transduction as an SRT primitive. It records what survived a full-book close-read of Simondon and maps only the parts that sharpen already-open SRT interfaces.
 
@@ -167,7 +169,7 @@ selected result
 -> altered later selection
 ```
 
-The Simondon bridge therefore supports the **form** of a writeback loop, but SRT still owns the admission criteria for whether a trace is merely persistent, causally effective, history-bearing, stake-bearing, or a Real Choice Moment.
+The Simondon bridge therefore supports the **form** of a writeback loop, but SRT still separates whether a trace is merely persistent, causally effective, history-bearing or stake-bearing; CG/SEA may support only a bounded Selection-event candidate, while stronger agency/revision standing is audited separately.
 
 ### Negative controls
 
@@ -486,7 +488,7 @@ potential energy = Psi_f
 information tension = d
 allagmatics = Ghost Operator theory
 transduction = SRT selection
-transduction = Real Choice Moment
+transduction = SRT Selection or stronger agency
 crystal / fire = Stable ISP
 individuation = consciousness
 transindividual = collective consciousness
@@ -516,4 +518,4 @@ Current action is deliberately limited to this patch + hook + indexes / log / re
 
 ## 13. One-paragraph abstract
 
-Simondon's strongest contribution to current SRT work is not a rival vocabulary for `L0`, `d`, or `Ĝθ`, but a process discipline: individuation begins from metastable incompatibility; local operations generate structures; structures condition later operations; incompatibilities can be converted into new organizational dimensions; and individuality can be analyzed through ongoing internal/external relations rather than a pre-given substance. SRT can use this as a P3 pressure model for a historically formed selection operator, second-order comparison-scale rewriting, and dynamic bearer-boundary formation, while adding its own gates for same-bearer consequence return, stake coupling, history writeback, future selectability, Real Choice Moments, and phenomenal non-inference.
+Simondon's strongest contribution to current SRT work is not a rival vocabulary for `L0`, `d`, or `Ĝθ`, but a process discipline: individuation begins from metastable incompatibility; local operations generate structures; structures condition later operations; incompatibilities can be converted into new organizational dimensions; and individuality can be analyzed through ongoing internal/external relations rather than a pre-given substance. SRT can use this as a P3 pressure model for a historically formed selection operator, second-order comparison-scale rewriting, and dynamic bearer-boundary formation, while adding its own layered audits for same-bearer consequence return, stake coupling, history writeback, future selectability, bounded Selection-event candidacy, downstream agency/revision, and phenomenal non-inference.

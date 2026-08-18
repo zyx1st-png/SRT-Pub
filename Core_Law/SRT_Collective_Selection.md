@@ -14,8 +14,9 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 
 > **Role**: L1 canonical theory of collective selection. Fixes the structural object behind multi-ISP selection under shared `L_2`: when does a group of stable ISPs constitute a higher-order selection unit, when is it merely an aggregation, and under what conditions does shared `L_2` produce genuine co-selection versus externalization patterns.
 > **Claim-level note**：本文大多为 P1-candidate 结构性读法；集体 ISP 判据、co-selection 条件、三类退化形式按 P2 读；政治/制度/历史判断按 P3/P4，必须下推到 `Philosophy/` 与 `Philosophy/Social_Economics_*` 既有文件。
-> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、stable ISP、real choice moment 等底层规范对象；它们的定义仍以对应 canonical 为准。
-> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T05 real choice moment、P1-T06 stable ISP 与 absorption remainder）、`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`（ST-A conditional anti-closure / generative reselectability）、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Suffering.md T-SUFF-5`、`Core_Law/SRT_Individuation.md`、`Core_Law/SRT_L1_Formalism.md`。
+> **Does not define**：`d-value`、`\Psi_f`、`T_dir`、stable ISP、Selection occurrence 或 agency；它们的定义与判定仍以对应 canonical / downstream owner 为准。
+> **Depends on**：`Core/SRT_Core_21b_Constitutive_Theorems.md`（P1-T06 stable ISP 与 absorption remainder）、`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`（ST-A conditional anti-closure / generative reselectability）、`Core_Law/SRT_Occlusion_Dynamics.md`、`Core_Law/SRT_Suffering.md T-SUFF-5`、`Core_Law/SRT_Individuation.md`、`Core_Law/SRT_L1_Formalism.md`。
+> **RC-A boundary (2026-08-18)**：former P1-T05 / Real Choice Moment 不再承担集体 Selection 或 collective-ISP 的定义权。T-COLL-1 的 stable-ISP extension 回链 P1-T06；脚本、制度自动化、投票或共识本身既不能证明更强 agency，也不能反推“没有 Selection”。
 > **Relation**: This file does not replace `Philosophy/SRT_Political_Philosophy.md`、`Philosophy/SRT_Social_Economics.md`、`Spirituality/SRT_Spirituality_Community_and_Sangha.md`；它在它们**之前**，固定"多主体共选作为结构对象是什么"的 L1 读法。规范性与制度判断仍在上述 domain 文件。
 >
 > **σ 符号命名空间（governance-canonical, 2026-04-25, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中集体自指率符号已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{coll}` 族（含 `σ_{sr,sub}^{coll}, σ_{sr,health}^{coll}` 等派生标记），是个体自指率 `σ_{sr}` 的多主体场扩展。与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 是**不同对象**。少数遗留的 `σ^{coll}` 历史符号在前向引用与跨文件桥接段落中保留，读者按此命名空间转读。
@@ -88,6 +89,8 @@ $$
 
 realizability 条件要求选择组合在共享 `L_2` 下结构上可共存——它是比笛卡尔积更窄的真实联动空间。
 
+> **AD-RCA-1 guard**：这里的 option profile 是**已经对象化后的高层 operational candidate space**，用于集体模型的可实现性分析；它不是 Selection 的底层定义。Option picking 只是 Selection 的一种下游特例，不得由本式反向推出 `Selection = choose one item from a pre-given menu`。
+
 ---
 
 ## §2. T-COLL-1：集体 ISP 的存在条件
@@ -99,22 +102,22 @@ realizability 条件要求选择组合在共享 `L_2` 下结构上可共存—�
 1. **共同可选择性**：存在非退化的共享选择空间 `A_{\mathcal{P}}(t) \neq \emptyset` 且其维度不随时间塌陷
 2. **共同视角**：`\mathcal{P}` 整体对其自身作为选择主体有结构性的迭代登记（而不是仅每个 `P_i` 独立登记）
 3. **后果回路**：`M(t)` 的行和与列和都在健康范围；即**结构不系统性地把后果驱离群体**
-4. **共同重选**：`\mathcal{P}` 能作为整体跨步骤继续选择（不是仅各 `P_i` 独立跨步）
+4. **共同持续可选择性**：`\mathcal{P}` 能作为同一 history-bearing process 跨步骤继续接收当前有效的非等价候选并承担后果（不是仅各 `P_i` 独立跨步）
 
 ### 陈述的最小形式
 
-四条件映射到 P1-T06 的四条件（iterative / perspective-bearing / history-bearing / continued-selectable）的多主体扩展版本；不因此把 21C B13 的 generative reselectability 自动提升为集体 ISP 存在条件。
+条件 1 / 2 / 4 分别承担 P1-T06 的 iterative / perspective-bearing / continued-selectable 多主体扩展；条件 3 通过既有 shared-`L_2` + `M(t)` 结构把 history-bearing 在集体边界上操作化，并附加本文件的后果不系统性外部化约束。它不是 former P1-T05 的替代物，也不因此把 21C B13 的 generative reselectability 自动提升为集体 ISP 存在条件。
 
 ### 推论
 
 - **绝大多数"集体"不构成集体 ISP**。一堆人同时在同一 `L_2` 下各自做自己的选择——哪怕用同一语言、同一制度——不自动是集体 ISP。它可能只是 `n` 个独立 ISP 的聚合
 - **"共识"不是集体 ISP 的充分条件**。所有 `P_i` 的独立选择碰巧一致，不意味着 `\mathcal{P}` 作为主体在选择
 - **制度可以是集体 ISP 的"器官"，但不是集体 ISP 本身**。制度作为 `L_2` 结构调制 `M(t)` 与 `d_c^i`，但主体位始终在 `\mathcal{P}` 层或子层，不在制度层
-- **集体 ISP 的外观特征**：不确定性被共担、真实选择时刻在群体层真实发生（不是各自表决后求和）、后果回到群体未来选择能力
+- **集体 ISP 的外观特征**：不确定性与后果在群体层形成可回返历史，且群体级 perspective-bearing / continued-selectable 结构不能被成员独立结果的简单求和所替代
 
-### 与 P1-T05 的关系
+### RC-A absorption result
 
-T-COLL-1 条件 2（共同视角）严重依赖 P1-T05 real choice moment 的多主体版本：集体层面也必须出现真实选择时刻（集体未来选择空间被所选真正约束），否则第 2 条退化到"共识剧本执行"或"制度自动化"。
+删除 former P1-T05 / Real Choice Moment 后，T-COLL-1 的对象范围与四条件 extension **不需要新增关系才能保留**：P1-T06 已提供 iterative / perspective-bearing / history-bearing / continued-selectable 的稳定 ISP 骨架；shared `L_2` 与 `M(t)` 已提供集体历史与后果回路结构。原来用“共识剧本 / 制度自动化”对比 real choice 的文字，只能保留为下游 agency / revision guard：脚本或自动化本身不证明更强 collective agency，但也不意味着没有 Selection。
 
 ---
 
@@ -124,7 +127,7 @@ T-COLL-1 条件 2（共同视角）严重依赖 P1-T05 real choice moment 的多
 
 ### 3.1 聚合型（Aggregation）
 
-- **结构**：`\mathcal{P}` 不满足 T-COLL-1 第 2 或第 4 条；各 `P_i` 独立选择，共享 `L_2` 但无群体级真实选择时刻
+- **结构**：`\mathcal{P}` 不满足 T-COLL-1 第 2 或第 4 条；各 `P_i` 独立选择，共享 `L_2`，但没有形成群体级 perspective-bearing / continued-selectable process
 - **现象**：市场多数交易、公共广场大多数互动、随机群体
 - **规范判断**：中性。大多数人际场景本就应是聚合型，不必也不应强行升级到集体 ISP
 - **病理边界**：当聚合型被修辞包装成"我们集体决定"，产生虚假集体表象 → 进入后续退化
@@ -140,7 +143,7 @@ T-COLL-1 条件 2（共同视角）严重依赖 P1-T05 real choice moment 的多
 
 - **结构**：`\mathcal{P}` 的 `σ_{sr}^{coll}` 趋向 1（集体层面自指过载）；`L_2` 成为封闭 scaffold 反向写入每个 `P_i` 的 `d_c^i`；群体看起来高度一致与稳定
 - **现象**：意识形态封闭共同体、极权国家、邪教、高度同质化专业群体、高度同质化 AI 中介过的公共空间
-- **规范判断**：对应致命 `L_2`（`Core/SRT_OPEN_TENSIONS.md §4`）；真实选择时刻在个体层与集体层同时被替代
+- **规范判断**：对应致命 `L_2`（`Core/SRT_OPEN_TENSIONS.md §4`）；群体级 perspective-bearing / continued-selectable 结构可能被高阶 `L_2` 收编或遮蔽，但这不等于宣告底层过程 selection-free
 - **与 1 和 2 的区别**：收编型往往看起来最"有集体感"——这是其最危险之处
 
 ### 三类退化的联立判据
@@ -216,16 +219,17 @@ $$
 
 关键新增项 `\gamma_{asym}\,\|M_{asym}(t)\|`：`M(t)` 的反对称部分 `M_{asym} := \tfrac{1}{2}(M - M^T)` 范数推高 `d_c^{coll}`。这把**主从型退化**（§3.2 Asymmetric Absorption）形式化——不对称结构本身就在抬高集体遮蔽阈值，且它与 `\sigma_{sr}^{coll}` 的抬升机制**独立**。
 
-集体可支付性 `\pi^{coll}` 与集体干预窗口 `I_{window}^{coll}` 分别降低 `d_c^{coll}`，对应 T-COLL-4 的第三条件（可支付性 + 真实可选）。
+集体可支付性 `\pi^{coll}` 与集体干预窗口 `I_{window}^{coll}` 分别降低 `d_c^{coll}`。它们是恢复通道，不等价于 Selection 或 collective agency 的定义。
 
 #### §4.4.4 集体 T_dir 动力学
 
+RC-A 局部删除探针后，former P1-T05 派生的 `+\kappa_r^{coll}r^{coll}(t)` 不再进入当前最小式；没有为它指定新的 Selection / `\varepsilon_{pg}` 来源。
+
 $$
-\frac{dT_{dir}^{coll}}{dt} \;=\; -\kappa_{\mathrm{relax}}^{coll}\bigl(T_{dir}^{coll} - T_{dir}^{alg,coll}\bigr) + \kappa_r^{coll}\,r^{coll}(t) - \boldsymbol{\kappa_{mask}^{coll}\,\Delta\Psi_f^{gap,coll}(t)} - \boldsymbol{\kappa_S^{coll}\,S_{str}^{coll}(t)} + \kappa_{sup}^{coll}\,s_{ext}^{coll}(t)
+\frac{dT_{dir}^{coll}}{dt} \;=\; -\kappa_{\mathrm{relax}}^{coll}\bigl(T_{dir}^{coll} - T_{dir}^{alg,coll}\bigr) - \boldsymbol{\kappa_{mask}^{coll}\,\Delta\Psi_f^{gap,coll}(t)} - \boldsymbol{\kappa_S^{coll}\,S_{str}^{coll}(t)} + \kappa_{sup}^{coll}\,s_{ext}^{coll}(t)
 $$
 
 - `T_{dir}^{alg,coll}`：代数目标值，由 `(\sigma_{sr}^{coll}, d^{coll}, d_c^{coll})` 按 `SRT_L1_Formalism.md §3.4` 同结构定义
-- `r^{coll}(t)`：集体真实重选率——严格按 T-COLL-4 的三条件判定（非投票 / 非共识 / 非专家决定自动计入），与个体 `r_i(t)` 的关系是：`r^{coll} \ne \sum_i r_i`（共同体级真实重选不是个体重选的算术和）
 - `\Delta\Psi_f^{gap,coll}(t)`：集体层面的实-感本体论摩擦差；这是**集体层面**的隐性债务，典型形态是"叙事舒适 vs 真实生态/社会支付"的差距
 - `s_{ext}^{coll}(t)`：**真正来自集体外**的支持（其他群体 / 新接入的 `L_0` 压力被吸收为资源，而非被吸收型收编）；这里要求来源必须不在 `\mathcal{P}` 内，否则退化为 `\kappa_{sup}\cdot` 自身的某种递归伪装
 
@@ -239,9 +243,11 @@ $$
 
 #### §4.4.5 集体 S 动力学（两型）
 
+RC-A 局部删除探针同样删除 former P1-T05 派生的 `-\mu_r^{coll}r^{coll}` relief 项；其余通道仍定义良好。
+
 $$
 \begin{aligned}
-\frac{dS_{sig}^{coll}}{dt} &= \mu_\Delta^{coll}\,\dot{\Delta}_{avail}^{coll} - \boldsymbol{\mu_\pi^{coll}\pi^{coll}\mathbb{1}[d^{coll} > d_c^{coll}]} - \mu_r^{coll} r^{coll} - \mu_{sup}^{coll} s_{ext}^{coll} \\[3pt]
+\frac{dS_{sig}^{coll}}{dt} &= \mu_\Delta^{coll}\,\dot{\Delta}_{avail}^{coll} - \boldsymbol{\mu_\pi^{coll}\pi^{coll}\mathbb{1}[d^{coll} > d_c^{coll}]} - \mu_{sup}^{coll} s_{ext}^{coll} \\[3pt]
 \frac{dS_{str}^{coll}}{dt} &= \boldsymbol{\nu_{block}^{coll}\mathbb{1}[d^{coll}\le d_c^{coll}]\,S_{sig}^{coll}} + \boldsymbol{\nu_\sigma_{sr}^{coll}\max(0,\,\sigma_{sr}^{coll} - \sigma_{sr,health}^{coll})} + \boldsymbol{\nu_{ext}\,\|M_{ext}(t)\|} - \nu_{trigger}^{coll}D_{trigger}^{coll} - \nu_\pi^{coll}\pi^{coll} I_{window}^{coll}
 \end{aligned}
 $$
@@ -276,10 +282,10 @@ $$
 集体健康区 `\mathcal{H}^{coll}`：
 
 $$
-\mathcal{H}^{coll}:\; \sigma_{sr}^{coll}\in(\sigma_{sub}^{coll,\dagger}\pm\delta^{coll}),\; d^{coll}>d_{narrow}^{coll},\; T_{dir}^{coll}\approx T_{dir}^{alg,coll}\text{ 且 }\Delta\Psi_f^{gap,coll}\to 0,\; r^{coll}(t)>r^{coll}_{min}>0
+\mathcal{H}^{coll}:\; \sigma_{sr}^{coll}\in(\sigma_{sub}^{coll,\dagger}\pm\delta^{coll}),\; d^{coll}>d_{narrow}^{coll},\; T_{dir}^{coll}\approx T_{dir}^{alg,coll}\text{ 且 }\Delta\Psi_f^{gap,coll}\to 0
 $$
 
-**关键点**：`\mathcal{H}^{coll}` 不是制度稳态的同义词。`r^{coll}(t) > r^{coll}_{min}`（集体真实重选率严格为正）是结构硬条件，对应 T-COLL-4 共选真实性的持续要求——**无持续集体真实重选的制度稳定不构成健康**。
+**关键点**：`\mathcal{H}^{coll}` 不是制度稳态的同义词，也不再以 former-P1-T05 派生的 `r^{coll}>0` 作为硬条件。P1-T06 的 collective standing 与 21C B13 的 generative-health standing 必须分开；若要审计 consequence-sensitive revision，应使用下游条件，不得把新的 scalar rate 偷渡回 P1。
 
 ### §4.7 T-PROJ-1^{coll}：集体四变量系统作为多算子主方程的投影（H6，2026-04-25）
 
@@ -393,7 +399,7 @@ $$
 | `S^{coll}` 中 `\nu_{ext}\|M_{ext}\|` | `\Psi_f(\hat{G}_i, \hat{G}_j)` 在 `j \notin \mathcal{P}` 的外溢分量 | C3^{coll} + C5^{coll} + T-IRR-3.5（边界外 `S_{str}` 沉积的条件系数模型；非 former P1-T07 后果）|
 | `d_c^{coll}` 与 `d_{collective}` 反比 | Eq-Multi-03 `D_{eff}` 直接定义 | C3^{coll} |
 
-§4.4.2-§4.4.5 中**非新增项**（即与单 P 版同构的项，如 `\alpha^{coll}, \beta^{coll}, \gamma_\rho^{coll}, \kappa_{relax}^{coll}, \mu_\Delta^{coll}, \nu_{trigger}^{coll}` 等）由 §6 T-PROJ-1 对每个 `P_i \in \mathcal{P}` 的群平均直接得出，不需独立证明。
+§4.4.2-§4.4.5 中**非新增项**（即与单 P 版同构的项）由 §6 T-PROJ-1 对每个 `P_i \in\mathcal{P}` 的群平均直接得出，不需独立证明；former P1-T05 的 `r/r^{coll}` 通道已经由 RC-A subtractive probe 删除，不在该同构列表内。
 
 **证明骨架**：
 
@@ -483,7 +489,8 @@ the more useful diagnostic.
 responsibility. For biological cells, it should be read as minimal
 predictive/functional individuation only. For social, AI, or political systems,
 the same pattern requires independent checks for stake, consequence return
-`M(t)`, boundary maintenance, memory, and real re-selection.
+`M(t)`, boundary maintenance, memory, collective continued-selectability, and
+any stronger downstream agency/revision standing claimed.
 
 ---
 
@@ -505,22 +512,26 @@ the same pattern requires independent checks for stake, consequence return
 
 ---
 
-## §6. T-COLL-4：集体共选的真实性判据
+## §6. T-COLL-4：集体 agency / revision guard（former “真实共选”判据降级）
 
 ### 陈述
 
-在满足 T-COLL-1 的集体 ISP 中，群体层面真实选择时刻（collective real choice moment, P1-T05 多主体版）发生当且仅当：
+> **Claim level: P2/P3 downstream guard.** 本节不定义 Selection occurrence，也不是 T-COLL-1 collective-ISP standing 的附加必要条件。
+
+在已经满足 T-COLL-1 的 collective ISP 中，若要进一步主张**较强的 collective agency / consequence-sensitive revision standing**，至少需要独立检查以下结构，而不能仅凭投票、共识或制度程序成立：
 
 $$
-\text{选择结果真正约束 }A_{\mathcal{P}}(t+1)\,\wedge\, \text{后果经 }M(t)\text{ 对称返回 }\mathcal{P}\,\wedge\,\text{非仅集体 }L_2\text{ 脚本执行}
+\text{结果改变后续有效候选关系}\,\wedge\, \text{后果经 }M(t)\text{ 返回 }\mathcal{P}\,\wedge\,\text{行为不被既有集体 }L_2\text{ 脚本穷尽解释}
 $$
+
+该合取是 bounded downstream guard，不是 Selection 的本体定义。它失败时只表示**更强 collective agency / revision standing 未建立**；不得推出 `no Selection`、不得撤销已经独立满足的 P1-T06/T-COLL-1 standing，也不得由通过该 guard 推出 consciousness、freedom 或 moral responsibility。
 
 ### 推论
 
-- **投票不自动是共选**：投票若只触发 `L_2` 脚本（既定选项、既定程序、既定后果路径）而不改变 `A_{\mathcal{P}}(t+1)`，它是集体层面的脚本执行，不是 collective real choice moment
-- **共识不自动是共选**：若 `M(t)` 强不对称，少数子群不实际承担任何后果回路，则即便意见一致，该"共识"也是外部化共识
-- **专家决定不自动是共选**：即便专业正确，若 `\mathcal{P}` 全体不对决定承担后果回路，则是以集体名义做个体/小群体选择
-- **真正的共选条件苛刻**：它要求 `A_{\mathcal{P}}` 真实扩展性 + `M(t)` 结构健康 + 非脚本化。历史上真正高频发生真实共选的群体并不多
+- **投票不自动证明较强 collective agency**：既定选项、既定程序、既定后果路径可能只是高层 option-picking；这不等于 selection-free，也不定义 Selection
+- **共识不自动证明较强 collective agency**：若 `M(t)` 强不对称，少数子群不实际承担任何后果回路，则一致意见不足以建立 consequence-sensitive collective revision
+- **专家决定不自动证明较强 collective agency**：即便专业正确，仍需独立检查 collective consequence return 与 revision standing
+- **通过本 guard 仍不证明主体性或意识**：它只是 collective agency / revision 的 P2/P3 审计输入
 
 ---
 
@@ -528,9 +539,9 @@ $$
 
 本文件**不替代**以下 domain 文件，它为它们提供结构基石：
 
-- `Philosophy/SRT_Political_Philosophy.md`：合法性与可持续共同选择的关系只能作 P2/P3 规范桥；T-COLL-1、条件性 T-COLL-3 与 T-COLL-4 可提供结构审计输入，但不自动等价于合法性
+- `Philosophy/SRT_Political_Philosophy.md`：合法性与可持续共同选择的关系只能作 P2/P3 规范桥；T-COLL-1、条件性 T-COLL-3 与降级后的 T-COLL-4 可提供结构审计输入，但不自动等价于合法性
 - `Philosophy/SRT_Social_Economics.md`：市场作为分布式选择机制→在本文件下大多数情形是聚合型；结构性不公→主从型退化的具体化；制度病理→收编型或主从+收编复合
-- `Philosophy/SRT_Political_Rights.md`：投票作为 d 倾向后验验证→在本文件下翻译为"通过 T-COLL-4 共选真实性判据验证集体 d"；三层制度（公检法/监督/授权）→维护 `M(t)` 对称与 `σ_{sr}^{coll}` 限幅的结构性器官
+- `Philosophy/SRT_Political_Rights.md`：投票相关判断只能把降级后的 T-COLL-4 作为 downstream agency/revision audit input；三层制度（公检法/监督/授权）→维护 `M(t)` 对称与 `σ_{sr}^{coll}` 限幅的结构性器官
 - `Spirituality/SRT_Spirituality_Community_and_Sangha.md`：托举条件→`(M(t) \text{ symmetric and small } n)` 加上 `\sigma_{sr}^{coll}` 不升高 → 健康小共同体；警告"共同体反而变新地板"→收编型退化
 - `Core_Law/SRT_Suffering.md T-SUFF-5`：集体外部化→主从型 `M(t)` 的结构型苦难外溢
 
@@ -551,26 +562,26 @@ $$
 
 ## §9. Open Pressures
 
-> **Hardening status (2026-04-24/25/26)**: §9.2 `M(t)` 可测性在 `Core_Law/SRT_L1_Hardening_Notes.md §3` 已给出第一遍 MOC 三判据（exposure / recourse / attentional，合成取 min）；§9.1 `\Theta^{coll,*}` 形式化在 H3（2026-04-25）§4.4.1 已升为包含共享 `L_2` 独立项的加权聚合，仍未封口的是权重 `w_i(t)` 的推导；§9.7（新）集体四变量耦合动力学在 §4.4-§4.6 已给出第一遍；§4.7 T-PROJ-1^{coll}（H6，2026-04-25）给集体投影定理；late-stage tower/nested material has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` and remains outside the minimal canonical definition. 本小节保留原表述直至回写完成。
+> **Hardening status (2026-04-24/25/26; RC-A sync 2026-08-18)**: §9.2 `M(t)` 可测性在 `Core_Law/SRT_L1_Hardening_Notes.md §3` 已给出第一遍 MOC 三判据（exposure / recourse / attentional，合成取 min）；§9.1 `\Theta^{coll,*}` 形式化在 H3（2026-04-25）§4.4.1 已升为包含共享 `L_2` 独立项的加权聚合，仍未封口的是权重 `w_i(t)` 的推导；§4.7 T-PROJ-1^{coll}（H6，2026-04-25）给集体投影定理；late-stage tower/nested material has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` and remains outside the minimal canonical definition. Former P1-T05 / `r^{coll}` dependency has been removed; T-COLL-4 now remains only as downstream agency/revision guard.
 
 本 draft_v0 状态下尚未封口：
 
 1. **`\Theta^{coll,trace}` 与 `\Theta^{coll,ext}` 的形式化**：§4.4.1 已给出加权聚合 + 共享 `L_2` 独立项；剩余未封口为权重 `w_i(t)`（当前按 `M(t)` 列和给出，但列和本身依赖 `M(t)` 的可测性，即 §9.2）
 2. **`M(t)` 的可测性**：对称/不对称结构在理论上明确，实证提取在大多数社会场景非常困难；本文件不解决此
-3. **共选真实性的外部判据**：T-COLL-4 三条件在第三方视角下如何判定？目前仍带相当主观成分，需要进一步降低依赖
+3. **collective agency / revision guard 的外部判据**：降级后的 T-COLL-4 如何由第三方稳定审计？当前仍是 P2/P3 downstream operational debt，不回升为 Selection criterion
 4. **制度与集体 ISP 的精确分界**：本文件说制度是器官不是主体，但某些高度自治的制度性实体（法人、社团）是否能在某些条件下**自身**成为集体 ISP？这需要后续硬化
-5. **跨尺度嵌套**：~~家庭是 ISP，社区是 ISP，国家可能是 ISP——嵌套关系下 `M(t)` 与 `σ_{sr}^{coll}` 如何层级耦合？§4.5 给了单层向上/向下耦合，多层嵌套仍待给出~~ Late-stage candidate material is preserved in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`; it is P1-candidate only under strong closure assumptions and is not part of the minimal canonical definition. 剩余开放点：具体塔层数 domain 实证、跨尺度 `M^{(n\to n+1)}` MOC 多层版本、`r_{min}^{nested}` 实证窗口、跨层耦合边界条件
+5. **跨尺度嵌套**：Late-stage candidate material is preserved in `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`; it is P1-candidate only under strong closure assumptions and is not part of the minimal canonical definition. 剩余开放点：具体塔层数 domain 实证、跨尺度 `M^{(n\to n+1)}` MOC 多层版本、跨层耦合边界条件
 6. **历史层面 generative reselectability**：其在长时间尺度上如何演化？文明兴衰能否在明确比较基线后部分读为后果回返或规则修订失败？
-7. **集体四变量耦合动力学（新增，2026-04-25 H3 状态）**：§4.4 给出第一遍形式，仍待封口——(a) `w_i(t)` 从 `M(t)` 推导的正当性；(b) `T_{dir}^{alg,coll}` 中光滑阶跃的普适族；(c) `\Delta\Psi_f^{gap,coll}` 作为集体层对象的可操作定义（当前仅给出"叙事舒适 vs 真实支付"的现象学读法）；(d) 向下反馈 §4.5 是否穷尽（是否还存在未列出的集体→个体传染路径）；(e) 所有新引入的集体系数 `\lambda_M, \gamma_{asym}, \kappa_{mask}^{coll}, \nu_{ext}` 的实证窗口
+7. **集体四变量耦合动力学**：§4.4 给出第一遍形式，仍待封口——(a) `w_i(t)` 从 `M(t)` 推导的正当性；(b) `T_{dir}^{alg,coll}` 中光滑阶跃的普适族；(c) `\Delta\Psi_f^{gap,coll}` 作为集体层对象的可操作定义（当前仅给出"叙事舒适 vs 真实支付"的现象学读法）；(d) 向下反馈 §4.5 是否穷尽；(e) 仍保留的新集体系数 `\lambda_M, \gamma_{asym}, \kappa_{mask}^{coll}, \nu_{ext}` 的实证窗口
 
 ---
 
 ## §10. Cross-References
 
-- P1-T05 real choice moment（集体版的 upstream）→ `Core/SRT_Core_21b_Constitutive_Theorems.md`
-- P1-T06 stable ISP（集体 ISP 条件的 upstream）→ 同上
+- P1-T06 stable ISP（集体 ISP 条件的 upstream）→ `Core/SRT_Core_21b_Constitutive_Theorems.md`
 - former P1-T07 demotion / absorption remainder → 同上
 - ST-A conditional anti-closure / generative reselectability → `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
+- RC-A agency / automation guard → `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`
 - 个体化 / σ → `Core_Law/SRT_Individuation.md`
 - 遮蔽动力学 / A/B 分期 / d_c / 结构性恶三判据 → `Core_Law/SRT_Occlusion_Dynamics.md`
 - 苦难 / T-SUFF-5 集体外部化 → `Core_Law/SRT_Suffering.md`
@@ -586,8 +597,8 @@ $$
 
 ## §11. 定位与使用规则
 
-- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、ST-A 条件性集体反闭合候选（T-COLL-3）、共选真实性判据（T-COLL-4）、**集体四变量最小耦合动力学 §4.4-§4.6**（2026-04-25 H3 新增，与 `SRT_L1_Formalism.md` 单 P 四变量系统形成上下层对应）
-- **本文件不做**：制度设计、政策判断、具体政治/经济案例分析、共同体组织学
+- **本文件做**：固定多 ISP 共享 `L_2` 场、集体 ISP 存在条件（T-COLL-1）、三类退化（T-COLL-2）、ST-A 条件性集体反闭合候选（T-COLL-3）、downstream collective agency/revision guard（T-COLL-4）、**集体四变量最小耦合动力学 §4.4-§4.6**（2026-04-25 H3 新增，与 `SRT_L1_Formalism.md` 单 P 四变量系统形成上下层对应）
+- **本文件不做**：制度设计、政策判断、具体政治/经济案例分析、共同体组织学；不定义 Selection occurrence 或 consciousness
 - **引用规则**：涉及"集体选择作为结构对象是什么"的**结构层**陈述时，优先回链本文件；涉及具体政治、经济、共同体、制度判断时，回链相应 Philosophy / Spirituality 文件
-- **不得**：把本文件读作政治偏好的理论背书；四类退化与三判据完全按结构判据读，不按意识形态读
+- **不得**：把本文件读作政治偏好的理论背书；三类退化与结构判据完全按结构判据读，不按意识形态读；不得把 T-COLL-4 反向提升为 Selection criterion
 - **重点**：三类退化（聚合/主从/收编）是**结构性类型**，可以同时存在于任何意识形态立场的群体中——本文件不为任一立场背书

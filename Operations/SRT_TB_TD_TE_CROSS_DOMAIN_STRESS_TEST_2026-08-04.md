@@ -18,6 +18,8 @@ dependency: [03_Bridges/SRT_Entropy_Disturbance_Selective_Reorganization_Bridge_
 
 # T-B / T-D / T-E 联合跨域压力测试（第一轮）
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **角色说明**：本文件是对三座 P2/P3 bridge 的反例与替代解释审计，不是 canonical、证据卡、经验确认、形式证明或新的定义来源。
 >
 > **测试目标**：在物理／化学、生命、主体、社会／制度和 AI 五个领域中，分别放入一个支持性案例模型与一个高相似反例，检查普通因果、控制、吸引子、路径依赖或制度理论是否已经足够，并判断 T-B、T-D、T-E 分别留下了什么可区分增益。

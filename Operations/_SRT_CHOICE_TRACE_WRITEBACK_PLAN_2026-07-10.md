@@ -17,6 +17,8 @@ dependency: [01_Source_Intuition/SRT_FIRST_INTUITION_SELECTION_BEFORE_EXISTENCE_
 
 # Choice-Trace 回写计划：理论层与书稿层
 
+> **RC-A supersede note（2026-08-18）**：本计划中 2026-08-04 的 `P1-T05 / Real Choice Moment` 路由属于当时施工记录，不再代表当前 authority。当前以 RC-A 为准：former P1-T05 已撤出 P1；CG/T-D 只做 P2/P3 bounded Selection-event candidate audit，不定义 Selection，也不证明 agency。
+
 > **2026-08-04 T-E 施工记录**：已建立 `03_Bridges/SRT_Dissipative_Structures_and_Selection_Structures_Bridge_2026-08-04.md` 首轮 P3 bridge，并挂入 `03_Bridges/BRIDGE_INDEX.md`。该桥区分物理底座依赖、组织机制依赖与解释充分性，把耗散机制逐项映射到 T-D 五项条件，并分开稳定秩序、死稳定、牢笼性秩序、主体性与生成健康。仍待 PR 验收、一手物理文献证据卡、跨域支持例／反例与领域操作化，不构成耗散—选择关系的经验确认或普遍必要性结论。
 >
 > **2026-08-04 T-D 施工记录**：`03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` 已经 PR #713 合入 main。该框架把选择生成条件拆为差异显现、非等价登记、路径效力、后果承载与历史效力；区分候选形成、过程展开和事件成立；并把生成条件、选择事件判据、实践脚手架和生成健康评价分开。仍待跨域反例、承受位置术语对表与领域操作化，不构成 canonical 定义或必要充分条件证明。

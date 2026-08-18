@@ -27,6 +27,8 @@ machine_summary: >
 
 # SRT Political Philosophy — Compact Core
 
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+
 > **定位**：本文件是 `Philosophy/SRT_Political_Philosophy.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一到选择动力学框架中。  
 > **关系**：不替代原文；原文保留完整推导、传统对比、制度接口与病理学展开。  
@@ -57,7 +59,7 @@ Middle criteria:
 | Institutional type | Is this a floor, gate, delegation, monopoly, emergency tool, or pathological closure? | Stability → legitimacy. |
 | Delegation legitimacy | Are scope, duration, review, and revocation specified? | "Represents the people" without audit. |
 | Consequence-return symmetry | Do costs and risks return to decision sites? | Efficiency while exporting `Psi_f^{maint}`. |
-| Reselection / exit / correction | Can affected subjects reopen, exit, appeal, or revise? | Nominal participation treated as real choice. |
+| Reselection / exit / correction | Can affected subjects reopen, exit, appeal, or revise? | Nominal participation treated as substantive revision / agency. |
 | Friction-export test | Who pays the `Psi_f` that makes the order look stable or efficient? | Low visible friction → justice. |
 | Future-selectability test | Does the order preserve future selectable possibilities for affected agents? | Stable order → legitimate order. |
 
@@ -97,8 +99,8 @@ Guardrail:
 > **国家首先不是终极真理实体，而是把分散选择转写为可执行共同现实的基础设施。**
 
 这意味着国家可以是：
-- 健康地板（托举真实选择）
-- 病理 `L_2`（替代真实选择）
+- 健康地板（托举 consequence-sensitive revision / reorientation）
+- 病理 `L_2`（压缩或替代这些 downstream agency channels；不等于消灭 Selection）
 
 Guardrail:
 
@@ -219,11 +221,11 @@ Guardrail:
 
 ### 5.2 Politics as L2 Disease or Healthy Floor
 SRT 对政治最强的诊断，是区分：
-- **健康 `L_2`**：托举真实选择
-- **致命 `L_2`**：制造参与感、替代真实选择
+- **健康 `L_2`**：托举 consequence-sensitive revision / reorientation
+- **致命 `L_2`**：制造参与感并替代这些 downstream agency channels；自动化本身不等于 `no Selection`
 
 最短说法：
-> **政治最危险的时刻，不是暴力最强时，而是秩序把自己伪装成唯一现实、让真实选择时刻消失时。**
+> **政治最危险的时刻，不是暴力最强时，而是秩序把自己伪装成唯一现实、让受影响主体失去实质性的 revision / exit / reorientation 通道时。**
 
 ### 5.3 Revolution-Relapse Theorem
 \[
@@ -270,7 +272,7 @@ SRT 不等于：
 3. **合法性来自可持续共同选择：更多主体、较低不对称摩擦、较高再选择能力。**
 4. **自由、平等与权利的核心，不是抽象名目，而是防止现实定义权被长期垄断。**
 5. **结构性不公首先表现为维护摩擦、探索预算与恢复能力的跨群体不对称。**
-6. **政治病理的本质，是 `L_2` 从地板变成方向，从托举真实选择变成替代真实选择。**
+6. **政治病理的关键形态之一，是 `L_2` 从地板变成方向，从托举 consequence-sensitive revision / reorientation 变成替代这些 downstream agency channels；这不定义 Selection 是否发生。**
 
 Addendum:
 

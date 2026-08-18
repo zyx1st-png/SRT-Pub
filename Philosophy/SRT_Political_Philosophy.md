@@ -20,7 +20,7 @@ created: 2026-04-22
 > **定位**：本文尝试把国家、权利、合法性、民主、结构性不公、危机决断与政治病理，统一重写为多主体选择如何共同生成、稳定、封闭并再打开现实的过程。
 > **Claim-level note**：本文以 P2/P3 为主：政治本体论与规范解释主要为 canonical interpretation / bridge mapping；制度判准、阈值、操作化候选与失效条件属于 P4。不得将本文中的政治制度设计句子反向升级为 P0/P1 core axiom。
 > **Machine-role note**：frontmatter 的 `bridge / mixed / P2-P4` 与上述说明一致；本文件是 Philosophy 主文，不是 core definition source。
-> **Canonical Collective Selection Layer (2026-04-24; ST-A correction 2026-08-11)**：本文涉及"多主体共同现实选择"、合法性、反支配、结构性不公、危机决断与民主等 P2/P3 政治哲学读法，结构层回链 `Core_Law/SRT_Collective_Selection.md`。T-COLL-1、三类退化、ST-A 条件性 T-COLL-3 与 T-COLL-4 不在本文件重新定义。集体四变量 ODE、`r^{coll}(t)>r^{coll}_{min}`、申诉／轮替／异议通道、`M(t)` 或 `ΔR_future` 只能提供 generative-reselectability 与外部化风险的候选审计信号；它们不自动构成合法性的必要充分条件，也不能从结构稳定直接推出规范正当性。具体制度判断继续按 P3/P4 读。
+> **Canonical Collective Selection Layer (2026-04-24; ST-A correction 2026-08-11; RC-A sync 2026-08-18)**：本文涉及“多主体共同现实选择”、合法性、反支配、结构性不公、危机决断与民主等 P2/P3 政治哲学读法，结构层回链 `Core_Law/SRT_Collective_Selection.md`。T-COLL-1、三类退化、ST-A 条件性 T-COLL-3 与降级后的 T-COLL-4 不在本文件重新定义。集体四变量 ODE、申诉／轮替／异议通道、`M(t)` 或 `ΔR_future` 只能提供 generative-reselectability、consequence-sensitive revision 与外部化风险的候选审计信号；它们不自动构成 Selection、collective agency 或合法性的必要充分条件，也不能从结构稳定直接推出规范正当性。具体制度判断继续按 P3/P4 读。本文若保留旧版“真实选择时刻”措辞，只能按 downstream freedom / agency shorthand 读取，不得反向定义 Selection ontology。
 
 > **Version 1.0 (Hybrid)**
 > **Part A** presents the Political Axioms & Criteria (AI-readable).
@@ -374,11 +374,11 @@ SRT 中没有“永恒合法”的政体。只有：
 
 SRT 的定义更结构化：
 
-> **自由 = 真实选择时刻被保留，以及主体能以可实现方式进入共同现实塑造过程。**
+> **自由（P2/P3 政治规范性读法）= 主体保有可后果敏感地修订 / 重取向其行动，并以可实现方式进入共同现实塑造过程的空间。**
 
 因此：
 
-- 没有真实选择时刻，选项再多也可能不自由
+- 形式选项再多，若实质修订 / 重取向空间被预先锁死，仍可能不自由
 - 只有私人生活自由、没有公共进入权，也是不完整自由
 - 被迫在别人已经写好的 `L_2` 里做微调，不算完整自由
 
@@ -656,7 +656,7 @@ SRT 吸收社会主义最强的洞见：
 
 于是，民主可能从辅助式 `L_2` 退化为替代式 `L_2`：
 
-- 形式在，真实选择时刻消失
+- 形式在，实质修订 / 重取向空间消失
 - 代表在，现实定义权更集中
 - 参与感在，反馈对制度结构不起作用
 

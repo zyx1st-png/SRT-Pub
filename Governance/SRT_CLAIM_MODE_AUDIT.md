@@ -139,14 +139,14 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | §2.5 T-CHI-1 χ 跳跃函数族普适性（H8，2026-04-25） | "有效二阶相变核"四条结构属性 + 族内四个不变量（双稳态 / 病理吸引子 / 致命 `L_2` / 相变方向） | P1-candidate（χ 形式无关性升为定理后果） |
 | §3 d_c 漂移方程 | — | P1-candidate 结构形式；系数 P2/P3 |
 | §3.4 T_{dir}^{alg} 代数目标值 | — | P2 operational proxy（`\Theta` 光滑族留作 Open Pressure） |
-| §3.5 T_dir 独立 ODE（弛豫 + r 泵入 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；κ_* 五项系数 P2/P3 |
+| §3.5 T_dir 独立 ODE（弛豫 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；former-P1-T05-derived `r(t)` pump 已由 RC-A subtractive probe 删除；其余 κ_* 系数 P2/P3 |
 | §3.5.3 致命 `L_2` 方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` | — | P1-candidate（本轮新增；与 `_SRT_T_DIR_CANONICAL §5-§6` 现象学层面一致） |
 | §4 S 两型耦合方程 | — | P1-candidate 结构形式 |
 | §4.4 反最小化原则的方程语言 | — | P1-candidate（T-SUFF-4 的方程化同级） |
 | §4.5 T-CHANNEL-1 通道指示函数族普适性（H9，2026-04-25） | "有效闭合通道指示族"四条结构属性 + 族内五个不变量（两型分裂 / 反最小化 / 单向性 / 致命 L_2 / 投影一致性，均 modulo `O(w_{tr})`） | P1-candidate（硬指示 → 光滑族升为族内不变量定理） |
 | §5 病理吸引子 `\mathcal{A}_{path}` | — | P1-candidate |
 | §5 健康工作区 `\mathcal{H}` 须主动维持 | — | P2/P3 generative-reselectability implementation candidate under ST-A；不再以 P1-T07 必要性背书 |
-| §5.1 第 6 条"苦难-可读性正反馈环"（`S_{str} \to T_{dir} \downarrow \to r \downarrow \to S_{sig}` 积压） | — | P1-candidate（2026-04-25 H2 新增，依赖 §3.5） |
+| Former §5.1 第 6 条"苦难-可读性正反馈环"（`S_{str} \to T_{dir} \downarrow \to r \downarrow \to S_{sig}`） | — | RC-A 已删除该 former-P1-T05-derived feedback path；不再列为当前 P1-candidate 通道 |
 | §6 T-PROJ-1 主方程投影定理（H5，2026-04-25） | 四个标量泛函投影 `\mathcal{F}_X` + 闭包假设 C1-C4 + 证明骨架 + source-by-source 对应表 | P1-candidate（"四变量是主方程导出"从陈述升为带条件证明的形式定理） |
 | 全部参数 `α, β, γ, μ, ν, λ, κ` | — | P3/P4，任何具体值不得在下游引用为已证 |
 
@@ -162,22 +162,22 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | T-COLL-1 集体 ISP 存在四条件 | — | P1-candidate（P1-T06 集体版的对应） |
 | T-COLL-2 三类退化（聚合 / 主从 / 收编） | — | P2 |
 | T-COLL-3 条件性集体反闭合候选 | neutral kernel + stability semantics + environment/horizon + absorption/comparative-risk proof required | P2/P3 conditional candidate under ST-A；非 P1 theorem |
-| T-COLL-4 共选真实性判据 | — | P1-candidate（P1-T05 集体版的对应） |
+| T-COLL-4 collective agency / revision guard | — | P2/P3 downstream guard under RC-A；不是 P1-T05 集体版，也不是 Selection occurrence / T-COLL-1 的必要条件 |
 | §4 `σ^{coll}` / `d_c^{coll}` 耦合 | — | P2 |
 | §4.4.1 集体场定义（`\Theta^{coll,trace}` / `\Theta^{coll,ext}` 含共享 `L_2` 独立项） | — | P2 structural；权重 `w_i(t)` 依赖 M(t) 可测性（P3） |
 | §4.4.2 σ^{coll} ODE（含 `\lambda_M\,\mathrm{tr}\,M` 内向后果放大项） | — | P1-candidate 结构形式；`\lambda_M` P2/P3 |
 | §4.4.3 d_c^{coll} ODE（含 `\gamma_{asym}\|M_{asym}\|` 主从型形式化） | — | P1-candidate 结构形式；`\gamma_{asym}` P2/P3 |
-| §4.4.4 T_{dir}^{coll} ODE + 集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}` | — | P1-candidate 结构形式；κ_*^{coll} 五项 P2/P3 |
+| §4.4.4 T_{dir}^{coll} ODE + 集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}` | — | P1-candidate 结构形式；RC-A 已删除 former-P1-T05-derived `r^{coll}` pump；其余 κ_*^{coll} 系数 P2/P3 |
 | §4.4.5 S^{coll} 两型 ODE（含 `\nu_{ext}\|M_{ext}\|` 外部化项，T-SUFF-5 方程化） | — | P1-candidate 结构形式；`\nu_{ext}` P2/P3 |
 | §4.5 个体↔集体双向耦合三路径 | — | P1-candidate（声明"不穷尽"） |
-| §4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` / 集体健康区 `\mathcal{H}^{coll}`（`r^{coll} > r^{coll}_{min}` 硬条件） | — | P1-candidate（T-COLL-4 共选真实性的持续要求在动力学上的形式化） |
+| §4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` / 集体健康区 `\mathcal{H}^{coll}` | — | P1-candidate / P2-P3 mixed；RC-A 已删除 `r^{coll} > r^{coll}_{min}` 硬条件，generative-health / revision standing 不与 T-COLL-1 混写 |
 | §4.7 T-PROJ-1^{coll} 集体投影定理（H6，2026-04-25） | 四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 | P1-candidate（"集体四变量是多算子主方程导出"从陈述升为带条件证明的形式定理） |
 | §4.8 late-stage tower/nested hardening pointer | H10-H16 tower/nested material has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Pointer only; not part of the minimal canonical definition of collective selection |
 | §8 平台 / 算法 AI 结构性影响评估 | — | P3 bridge |
 
 **Tower / nested scope note**：H10-H16 are late-stage tower/nested hardening notes extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`, not part of the minimal canonical definition of collective selection. They remain P1-candidate only under strong closure assumptions and should not be cited as closed P1.
 
-**Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；H10-H16 不得作为 minimal canonical definitions 引用；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。
+**Downstream rule**：T-COLL-1 须标 `P1-candidate`；T-COLL-3 / T-COLL-4 须标 `P2/P3 downstream`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；H10-H16 不得作为 minimal canonical definitions 引用；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。投票 / 共识 / 专家决定本身既不证明更强 collective agency，也不得反推“没有 Selection”；若审计 consequence-sensitive revision，只能把降级后的 T-COLL-4 当 P2/P3 input。
 
 #### SRT-COLLECTIVE-TOWER-HARDENING-NOTES
 

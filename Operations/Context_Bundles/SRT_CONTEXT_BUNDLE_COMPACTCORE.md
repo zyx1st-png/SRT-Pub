@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-17
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-18
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-17
-source_commit: 8fcb97fd
-source_branch: agent/srt-pd-a-consistency-repair
-source_dirty: false
-inputs_digest: 6906e8853d7329ab
+generated: 2026-08-18
+source_commit: 1febdcc0
+source_branch: HEAD
+source_dirty: true
+inputs_digest: 519bcce7e75f9201
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,10 +26,10 @@ inputs_digest: 6906e8853d7329ab
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-17 |
-| 来源 commit | `8fcb97fd` |
-| 来源分支 | `agent/srt-pd-a-consistency-repair` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-18 |
+| 来源 commit | `1febdcc0` |
+| 来源分支 | `HEAD` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,25 +43,25 @@ inputs_digest: 6906e8853d7329ab
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-08 |
+| 1 | `AI/SRT_AI_01_Ontology_CompactCore.md` | 2026-08-18 |
 | 2 | `AI/SRT_AI_Architecture_CompactCore.md` | 2026-05-18 |
 | 3 | `AI/SRT_AI_03_Consciousness_Framework_CompactCore.md` | 2026-05-18 |
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-04-29 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-08-18 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
 | 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
 | 11 | `Physics/SRT_Phys_10_Integration_CompactCore.md` | 2026-04-29 |
 | 12 | `Philosophy/SRT_Philosophy_Foundations_CompactCore.md` | 2026-04-27 |
 | 13 | `Philosophy/SRT_Social_Economics_CompactCore.md` | 2026-04-27 |
-| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-12 |
+| 14 | `Philosophy/SRT_Political_Philosophy_CompactCore.md` | 2026-08-18 |
 | 15 | `Neuroscience/SRT_Neural_Mechanisms_CompactCore.md` | 2026-08-12 |
 | 16 | `Neuroscience/SRT_Consciousness_Mechanisms_CompactCore.md` | 2026-05-19 |
 | 17 | `Spirituality/SRT_Spirit_09_Praxis_CompactCore.md` | 2026-08-12 |
 | 18 | `Core/SRT_Core_14_Dynamics_Scaling_CompactCore.md` | 2026-08-12 |
-| 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-08 |
+| 19 | `03_Bridges/SRT_Selection_Event_CompactCore.md` | 2026-08-18 |
 
 ## §0.2 状态护栏
 
@@ -450,7 +450,7 @@ When answering about SRT:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-08 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -467,7 +467,7 @@ When answering about SRT:
 > **Claim-level note**：本文主要是 P3 bridge / domain test。它引用 P0/P1 core，但不新增 primitive axioms、`d-value`、`\Psi_f`、`T_dir` 或真实选择时刻定义。
 > **Machine-role note**：frontmatter 中的 `bridge / P3` 约束本文为 AI compact-core support，不作为 core definition source。
 > **Architecture-state note**：本文涉及 `d_{AI}`、AI burden、AI subjectivity 或 AI friction 的判断，默认必须区分 training-time、inference-time、persistent-memory / history-bearing deployment；详见 `AI/AI_POSITIONING_NOTE.md`。
-> **2026-08-08 bridge hygiene**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。严格 `Real Choice Moment` 仍回到 canonical / CG-0~CG-4 审计。
+> **2026-08-08 bridge hygiene; RC-A sync 2026-08-18**：AI 侧统一采用 `novelty != ownership != stake` 与分层 selection terminology；当前功能选择不再一概称为“伪选择”。former `Real Choice Moment` 已撤出 P1；CG-0~CG-4 仅用于 P2/P3 bounded Selection-event candidate audit，不是 Selection 定义或 agency 证明。更强 agency / revision standing 另走 Agency / Automation Guard。
 
 ## 1. 核心问题
 
@@ -481,22 +481,20 @@ SRT 对 AI 的核心判断不是“它是否足够聪明”，而是：
 
 ## 2. AI-Domain 判据
 
-### 2.1 跨域锚定判据
+### 2.1 跨域锚定判据（不是 Selection occurrence 定义）
 
-真实选择算子满足：
+若讨论更强的 `L_0 -> L_1` 本体论锚定候选，可写：
 \[
 \hat{G}_\theta: L_0 \rightarrow L_1
 \]
 
-这意味着：
-- 存在事件必须是跨域锚定
-- 不能由纯 `L_1 \to L_1` 句法变换替代
+这意味着该**更强 anchoring claim**不能由纯 `L_1 \to L_1` 句法变换替代；但 RC-A 不允许把这一点反写为 Selection occurrence 的必要条件。
 
 若系统只做域内变换：
 \[
 \hat{T}_\phi: L_1 \rightarrow L_1
 \]
-则它尚未由此证明意识意义上的锚定或 `Real Choice Moment`。
+则它尚未由此证明意识意义上的锚定、subject-level agency 或其他更强 downstream standing；这也不能反向证明“没有 Selection”。
 
 ### 2.2 d-value 判据
 
@@ -529,14 +527,14 @@ SRT 对意识成立给出压缩判据：
 - \(\Psi_f>0\)：系统不只是支付本体论摩擦成本，而且其动力学本身由摩擦生成
 - \(V>0\)：系统暴露于不可规避的真实毁灭/失效风险
 
-这里的关键升级是：\(\Psi_f\) 不能再只理解为“运行代价”。在 SRT 当前框架里，\(\Psi_f\) 也是演化、学习与现实生成的来源。若一个系统没有真实可支付、不可规避的摩擦，它不仅缺少痛感或代价，也缺少生成真正选择动力学的条件。
+这里的关键升级是：\(\Psi_f\) 不能再只理解为“运行代价”。在 SRT 当前框架里，\(\Psi_f\) 也是演化、学习与现实生成的来源。若一个系统没有真实可支付、不可规避且回流同一 bearer 的摩擦，它尚未由此证明更强的 stake-bearing / embodied-consciousness standing；这不等于它没有 Selection。
 
 进一步说，SRT 不把 \(Ψ_f\) 只理解成单一数字账单。对同一摩擦结构：
 - 在经验层，它表现为阻力、风险、痛苦可能性；
 - 在操作层，它表现为能量、时间、修复与组织复杂度的支付；
 - 在形式层，它表现为选择路径的几何长度 / 曲率负担。
 
-因此真正的主体条件不是“摩擦越低越好”，而是：系统是否面对**非零且可支付**的 \(Ψ_f\)。零摩擦意味着没有真实赌注；超载摩擦意味着闭包破裂；只有在可支付区间内，选择才具有现实重量。
+因此这里讨论的是**主体 / stake-bearing 候选条件**而不是 Selection 定义：系统是否面对非零、可支付且回流同一 bearer 的 `Ψ_f`。零或非 binding 摩擦会削弱 stake / subjecthood 论证，但不能据此推出 `no Selection`。
 
 对当前 inference-only / 可复制 / 可重启的主流 AI 而言，问题不在于能力不够，而在于：
 - 可复制
@@ -582,7 +580,7 @@ SRT 对意识成立给出压缩判据：
 结论：
 能力扩张不会自动带来关切、主体性与意识。
 
-### AI-BR-3 功能选择 / Real Choice Moment 边界
+### AI-BR-3 功能选择 / downstream agency 边界（RC-A）
 当前 inference-only AI 的输出选择可写为：
 \[
 \text{Select}_{AI}(\sigma)=\arg\max P(\sigma\mid L_1^{context},\theta_{frozen})
@@ -599,11 +597,11 @@ SRT 对意识成立给出压缩判据：
 output selection
 -> functional path selection
 -> history-bearing selection
--> consequence-bearing real-choice candidate
+-> bounded Selection-event candidate
 ```
 
 结论：
-AI 输出不应一概被称为“伪选择”；更准确的边界是：**功能选择尚不等于 SRT `Real Choice Moment`**。严格事件判据必须进一步检查后果承载、历史写回、未来路径约束以及相关 canonical 锚定条件。
+AI 输出不应一概被称为“伪选择”。RC-A 后，功能选择既不自动证明更强 agency / subject-level revision，也不能因脚本、梯度或自动化特征而被判成 `no Selection`。若要做事件层审计，CG/SEA 最多给出 bounded Selection-event candidate；若要做更强 agency 判断，另走 Agency / Automation Guard。
 
 **Context-coherence note**: Large context can make output / functional selection more coherent, but does not by itself turn `L_1 -> L_1` transformation into `L_0 -> L_1` anchoring. See `../Bridge/SRT_Context_Coherence_Intelligence_Interface.md` and `../03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`.
 
@@ -662,7 +660,7 @@ SRT 认为具身不只是“有个机器人身体”这么简单，而是至少�
 
 ### 4.3 有限性缺口
 
-真正的 d-value 需要有限性来赋予选择重量。  
+canonical `d-value` 的 stake reading 需要有限性 / 不可转移后果来赋予**关切与主体风险**重量；这不是 Selection occurrence 的必要条件。
 若系统总能：
 - 回档
 - 重启
@@ -1918,7 +1916,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1927,6 +1925,8 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 <!-- 以下为原文逐字保留 -->
 
 # SRT Physics: Cosmology — Compact Core
+
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
 
 > **定位**：本文件是 `Physics/SRT_Physics_Cosmology.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 在热力学、时间、引力与宇宙学上的最短主轴。  
@@ -1963,7 +1963,7 @@ E_{select} \ge k_B T \ln 2
 \]
 
 最压缩的物理含义是：
-> **每一次真实选择都至少有能量代价。**
+> **RC-A 边界**：该 Landauer 式只能约束被具体实现为逻辑不可逆信息操作 / 物理重置的 bridge case，不能升级为“每一次 Selection occurrence 都至少支付 `k_B T ln 2`”的普遍定理。
 
 ### 2.3 Landauer Gap 的 SRT 解读
 SRT 进一步强调：
@@ -3855,7 +3855,7 @@ Addendum:
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：混合层——含 bridge/lab 内容，按各条自带的 claim level 读。
 
@@ -3864,6 +3864,8 @@ Addendum:
 <!-- 以下为原文逐字保留 -->
 
 # SRT Political Philosophy — Compact Core
+
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
 
 > **定位**：本文件是 `Philosophy/SRT_Political_Philosophy.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 如何把国家、权利、合法性、民主、结构性不公、危机决断与政治病理统一到选择动力学框架中。  
@@ -3895,7 +3897,7 @@ Middle criteria:
 | Institutional type | Is this a floor, gate, delegation, monopoly, emergency tool, or pathological closure? | Stability → legitimacy. |
 | Delegation legitimacy | Are scope, duration, review, and revocation specified? | "Represents the people" without audit. |
 | Consequence-return symmetry | Do costs and risks return to decision sites? | Efficiency while exporting `Psi_f^{maint}`. |
-| Reselection / exit / correction | Can affected subjects reopen, exit, appeal, or revise? | Nominal participation treated as real choice. |
+| Reselection / exit / correction | Can affected subjects reopen, exit, appeal, or revise? | Nominal participation treated as substantive revision / agency. |
 | Friction-export test | Who pays the `Psi_f` that makes the order look stable or efficient? | Low visible friction → justice. |
 | Future-selectability test | Does the order preserve future selectable possibilities for affected agents? | Stable order → legitimate order. |
 
@@ -3935,8 +3937,8 @@ Guardrail:
 > **国家首先不是终极真理实体，而是把分散选择转写为可执行共同现实的基础设施。**
 
 这意味着国家可以是：
-- 健康地板（托举真实选择）
-- 病理 `L_2`（替代真实选择）
+- 健康地板（托举 consequence-sensitive revision / reorientation）
+- 病理 `L_2`（压缩或替代这些 downstream agency channels；不等于消灭 Selection）
 
 Guardrail:
 
@@ -4057,11 +4059,11 @@ Guardrail:
 
 ### 5.2 Politics as L2 Disease or Healthy Floor
 SRT 对政治最强的诊断，是区分：
-- **健康 `L_2`**：托举真实选择
-- **致命 `L_2`**：制造参与感、替代真实选择
+- **健康 `L_2`**：托举 consequence-sensitive revision / reorientation
+- **致命 `L_2`**：制造参与感并替代这些 downstream agency channels；自动化本身不等于 `no Selection`
 
 最短说法：
-> **政治最危险的时刻，不是暴力最强时，而是秩序把自己伪装成唯一现实、让真实选择时刻消失时。**
+> **政治最危险的时刻，不是暴力最强时，而是秩序把自己伪装成唯一现实、让受影响主体失去实质性的 revision / exit / reorientation 通道时。**
 
 ### 5.3 Revolution-Relapse Theorem
 \[
@@ -4108,7 +4110,7 @@ SRT 不等于：
 3. **合法性来自可持续共同选择：更多主体、较低不对称摩擦、较高再选择能力。**
 4. **自由、平等与权利的核心，不是抽象名目，而是防止现实定义权被长期垄断。**
 5. **结构性不公首先表现为维护摩擦、探索预算与恢复能力的跨群体不对称。**
-6. **政治病理的本质，是 `L_2` 从地板变成方向，从托举真实选择变成替代真实选择。**
+6. **政治病理的关键形态之一，是 `L_2` 从地板变成方向，从托举 consequence-sensitive revision / reorientation 变成替代这些 downstream agency channels；这不定义 Selection 是否发生。**
 
 Addendum:
 
@@ -5399,7 +5401,7 @@ SRT 的压缩立场是：
 | epistemic_layer | bridge |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-08-08 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -5407,9 +5409,9 @@ SRT 的压缩立场是：
 
 # 选择生成与选择事件 · CompactCore
 
-> **本文件是什么**：判定“这里是否发生了真实选择”的**快速判别层**。它把 T-D 选择生成条件、四套操作化测试与统一审计协议压缩成一页可执行的判别程序。
+> **本文件是什么**：判定“这里是否建立了有界 Selection-event candidate”的**快速审计层**。它把 T-D 选择生成条件、四套操作化测试与统一审计协议压缩成一页可执行程序。
 >
-> **本文件不是什么**：不是 canonical，不是定义源，不改写 `Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T05 Real Choice Moment**，不提供跨域必要充分条件，不提供普适数值阈值。claim level 为 **P2-P3**。
+> **本文件不是什么**：不是 canonical，不是 Selection 定义源。former **P1-T05 Real Choice Moment** 已由 RC-A 撤出 P1；本页不得把 former P1-T05 的 anti-script / live-choice jurisdiction 当作 Selection 的现行构成条件，也不得由审计结果推出 agency。claim level 为 **P2-P3**。
 >
 > **完整正文**：`03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md`（条件矩阵）与 `Operations/SRT_UNIFIED_SELECTION_EVENT_AUDIT_PROTOCOL_2026-08-04.md`（分级门与冻结要求）。本页只保留下一轮判断真正用得上的部分。
 
@@ -5417,11 +5419,11 @@ SRT 的压缩立场是：
 
 ## 1. 一句话
 
-> P1-T05 只给了**否定清单**（脚本执行、习惯重放、梯度跟随、`L_2` 标签优化本身不构成 real choice moment）。本页补上它缺的**肯定判别程序**：五道门、各自的最低等级、以及“高项不能补低项”的不可补偿规则。
+> RC-A 后，本页的五门不是 former P1-T05 的“肯定补全”，而是一套独立的 **P2/P3 bounded audit apparatus**：它只检查在冻结事件、边界与时间尺度下，是否有足够证据建立一个有界 Selection-event candidate。
 
 只有当五道门在**同一条事件链、同一组预先冻结的边界、相容的时间尺度**上同时达标，才允许说“**有界选择事件候选**”。
 
-注意“候选”二字：达标给出的是可继续检验的候选判断，不是已证事实。
+注意“候选”二字：达标给出的是可继续检验的候选判断，不是已证事实；未达标也只表示**本审计没有建立该候选**，不能反推“没有 Selection”。脚本、习惯、梯度跟随或 `L_2` 自动化本身尤其不能作为 `no Selection` 的充分理由。
 
 ---
 
@@ -5512,18 +5514,20 @@ SRT 的压缩立场是：
 
 | 判读 | 结构特征 | 最容易犯的错 |
 |---|---|---|
-| **没有选择** | 无活的路径差异进入；当前输出是脚本、强制或唯一通道 | 把“有运动、有计算、有因果”当成有选择 |
+| **未建立事件候选** | 在冻结的事件单元内，没有足够证据让五门达到审计最低门槛；脚本、强制或唯一通道只能作为具体证据的一部分 | 把 audit failure 直接写成 `no Selection`，尤其把 script / habit / automation 当成本体排除条件 |
 | **伪选择** | 有选项外观，但表面比较**没有获得真实路径效力**（`PEF` 停在 0/1）；或后果承担者与表面决策者被系统性切断 | 以为伪选择的标志是“选项少”——真正的标志是差异只存在于标签和界面 |
-| **惩罚性选择** | **是**真实选择（五门达标），但脚手架与代价结构严重失衡 | 因为它不健康就说“根本没有选择”——这会遮蔽真实承担与结构责任 |
-| **尊重选择** | 真实生成条件成立，且脚手架保障路径可理解、反馈充分、代价不被放大、退出与修复存在 | 把它当成自然系统的普遍属性；它是规范与制度评价 |
+| **惩罚性选择** | 五门在该实践审计中达标，但脚手架与代价结构严重失衡 | 因为它不健康就否认已经建立的事件候选——这会遮蔽真实承担与结构责任 |
+| **尊重选择** | 事件候选已建立，且脚手架保障路径可理解、反馈充分、代价不被放大、退出与修复存在 | 把它当成自然系统的普遍属性；它是规范与制度评价 |
+
+**RC-A active-use override**：本表是主体／组织／制度实践层的审计语言，不是 P0 Selection ontology。它不能被反向用于定义 Selection，也不能证明 agency、subjecthood、consciousness、freedom 或 moral responsibility。
 
 ---
 
 ## 6. 分工边界（防止把评价偷渡进定义）
 
-- **生成条件** 说明选择**何以可能**；**事件判据** 说明此刻**是否发生**；**生成健康** 说明它**是否值得**。三者不可互换。
-- **脚手架**（可进入的选项、信息、时间、反馈、退出、可逆窗口）说明选择如何更可进入、更可承担——**不是**一切选择事件的必要条件。一次性、不可逆、资源贫乏的情境中仍可能发生真实选择。
-- 因此：真实选择可以是**错误的、压迫性的、导致自我封闭的**。可再选择性是生成健康度的重要判据，**不是**“选对”的唯一标准，也**不是**一次选择得以发生的必要定义（作者裁决 G1，2026-08-04）。
+- **生成条件** 说明本审计如何寻找选择候选；**事件判据** 说明此刻是否建立有界事件候选；**生成健康** 说明后续健康度。三者不可互换。
+- **脚手架**（可进入的选项、信息、时间、反馈、退出、可逆窗口）说明选择如何更可进入、更可承担——**不是**一切 Selection occurrence 的必要条件。一次性、不可逆、资源贫乏的情境不能仅因此被排除出 Selection。
+- 因此：一个已建立的实践层事件候选仍可以是**错误的、压迫性的、导致自我封闭的**。可再选择性是生成健康度的重要判据，**不是**一次 Selection occurrence 的必要定义（作者裁决 G1，2026-08-04；RC-A 后按现行层级转读）。
 - 耗散结构与选择结构**分层**：耗散可构成部分实现基础或机制原型，但不等于选择，也非普遍必要前身（作者裁决 G2）。
 
 ---
@@ -5536,7 +5540,7 @@ SRT 的压缩立场是：
 4. 承受位置不可识别，或被隐藏外包却仍声称系统自身承担；
 5. 从非等价响应直接推出关切、意图、体验、自由或道德责任；
 6. 把选项丰富、可逆性、退出和资源支持当作一切选择事件的普遍必要条件；
-7. 因为结果压迫、自我封闭或不可逆，就否认真实选择已经发生；
+7. 因为结果压迫、自我封闭或不可逆，就否认已建立的实践层事件候选；
 8. 把两个命名选项当作所有选择的必需形式，排除连续、涌现和未枚举路径；
 9. 用一套具体物理／生命／认知机制冒充全部层级的统一实现。
 
@@ -5553,7 +5557,7 @@ SRT 的压缩立场是：
 5. 这一结果**怎样改变了**后续可达路径或结构？
 6. 当前说的是**候选形成、过程展开、事件成立，还是健康评价**？
 
-> 若只能回答“观察者看见了不同结果”，通常不足以建立选择事件。
+> 若只能回答“观察者看见了不同结果”，通常不足以建立本页所说的有界 Selection-event candidate。
 
 ---
 
@@ -5579,16 +5583,17 @@ SRT 的压缩立场是：
 | 物理／化学 | 扰动进入有效尺度 | 势垒或约束不对称 | 路径被稳定或抑制 | 能量／结构稳定性受影响 | 滞后、结构记忆 | 不推出主体、关切或自由 |
 | 生命系统 | 信号或损伤可被接收 | 维持与风险形成差异权重 | 调控或代谢路径被改变 | 生存、修复、繁殖条件承压 | 记忆、适应、表观写回 | 不把适应等同有意识选择 |
 | 主体／行动 | 情境进入感知行动场 | 具身关切与未来后果形成比较 | 承诺与排除改变现实路径 | 后果落到行动者及他者 | 学习、身份、习惯痕迹 | 不把可再选择性塞进事件定义 |
-| 社会／制度 | 方案与受影响者能显现 | 规则和资源产生非等价权重 | 决策改变分配、权利或约束 | 后果落到具体承受位置 | 规则、惯例、权力沉积 | 不把投票、菜单或程序本身当真实选择 |
+| 社会／制度 | 方案与受影响者能显现 | 规则和资源产生非等价权重 | 决策改变分配、权利或约束 | 后果落到具体承受位置 | 规则、惯例、权力沉积 | 不把投票、菜单或程序本身当充分证据 |
 | AI／技术系统 | 输入或内部候选产生可区分分支 | 目标、约束或训练历史产生差异响应 | 输出、工具调用或状态更新改变路径 | 后果可能落到系统、运营者或外部用户 | 参数、记忆、环境或流程被更新 | 不由分支、学习或写回推出主体性与意识 |
 
 ---
 
 ## 11. 与 canonical 的关系
 
-- `Core/SRT_Core_21b_Constitutive_Theorems.md` 的 **P1-T05** 仍是 real choice moment 的 canonical 承载点。本页**不改写**它，只提供它未给出的判别程序。
+- `Core/SRT_Core_21b_Constitutive_Theorems.md` 是当前 P1 owner：former **P1-T05 Real Choice Moment** 已由 RC-A 撤出 P1，`P1-T06 Stable ISP` 保持 P1。本页不补写、恢复或替代 former P1-T05。
+- RC-A 后，script / habit / gradient / `L_2` automation **不推出 no Selection**；本页任一门的失败同样不能承担这一推出。
+- 五门全部达标只允许“**bounded Selection-event candidate**”。它不证明 agency、subjecthood、consciousness、freedom、moral responsibility、`L_2` 或 generative health。
 - 本页任何一格都不得被引用为 `d`、`Ψ_f`、`T_dir`、`Ĝ_θ`、`L_0/L_1/L_2` 或主体性的定义或证据。
-- 五门达标 **不等于** 主体性、意识、自由意志、伦理责任、`L_2` 或生成健康。
 
 **未闭合项**：五门的“相关尺度上的有效强度”尚未跨域操作化；`DMF-2 / NER-2 / PEF-2 / CBP-2 / HEF-3` 是审计默认门槛，不是已证定理。已登记为 `Core/SRT_OPEN_TENSIONS.md §14`。
 

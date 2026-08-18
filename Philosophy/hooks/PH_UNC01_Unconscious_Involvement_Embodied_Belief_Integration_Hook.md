@@ -25,7 +25,7 @@ landing_ledger:
     blocked_by: "perspective-as-differential-susceptibility requires cross-read with Stable ISP, PH-IND02/03 and current subject-position criteria before owner-level landing"
   - target: "Philosophy/SRT_Philosophy_Agency_Subjecthood_v0_2.md"
     state: pending
-    blocked_by: "must preserve Real Choice Moment and agency ladder boundaries; involuntarist source material cannot be allowed to collapse history-conditioned choice into history-exhausted determination"
+    blocked_by: "must preserve RC-A Selection/agency separation and agency-ladder boundaries; involuntarist source material cannot be allowed to collapse history-conditioned selection into history-exhausted determination"
   - target: "01_Source_Intuition/BOOK/Drafts_26Q/Q16_主体沉积.md"
     state: pending
     blocked_by: "requires book-line synthesis of habit / sedimentation / embodied belief without turning a material bridge into canonical book doctrine"
@@ -33,6 +33,8 @@ closure_audit: Operations/Audits/Hook_Closure_Audit_2026-07-25.md
 ---
 
 # Integration Hook: PH-UNC01 Unconscious Involvement / Embodied Belief
+
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
 
 ## 1. Primary source and patch
 
@@ -165,13 +167,13 @@ A perspective-bearing center should not be understood merely as a system that se
 
 Do not promote this sentence to P1 without comparison against P1-T06, PH-IND02, PH-IND03 and the current individuation owner.
 
-## 7. Target E — agency / Real Choice Moment
+## 7. Target E — downstream agency / revision
 
 Retain the two-sided guard:
 
 ```text
 felt authorship / conscious indecision / introspective uncertainty
-!= proof of Real Choice Moment
+!= proof of stronger agency / subject-level revision
 
 but
 
@@ -248,7 +250,7 @@ consciousness != habit
 sub-threshold integration != consciousness proof
 Spinozist necessitarianism != SRT
 Leibnizian pre-established harmony != SRT coupling
-felt freedom != Real Choice Moment
+felt freedom != proof of stronger agency / subject-level revision
 introspective opacity != ontological openness
 introspective opacity != determinism
 ```

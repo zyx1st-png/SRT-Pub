@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-17
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-18
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-17
-source_commit: 8fcb97fd
-source_branch: agent/srt-pd-a-consistency-repair
-source_dirty: false
-inputs_digest: 6906e8853d7329ab
+generated: 2026-08-18
+source_commit: 1febdcc0
+source_branch: HEAD
+source_dirty: true
+inputs_digest: 519bcce7e75f9201
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,10 +26,10 @@ inputs_digest: 6906e8853d7329ab
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-17 |
-| 来源 commit | `8fcb97fd` |
-| 来源分支 | `agent/srt-pd-a-consistency-repair` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-18 |
+| 来源 commit | `1febdcc0` |
+| 来源分支 | `HEAD` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 15 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -43,18 +43,18 @@ inputs_digest: 6906e8853d7329ab
 
 | # | 文件 | 最后 commit |
 |---|---|---|
-| 1 | `SRT_AI_START.md` | 2026-08-12 |
-| 2 | `CANONICAL_REGISTRY.md` | 2026-08-12 |
+| 1 | `SRT_AI_START.md` | 2026-08-18 |
+| 2 | `CANONICAL_REGISTRY.md` | 2026-08-18 |
 | 3 | `Governance/SRT_CLAIM_LADDER.md` | 2026-08-17 |
-| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-12 |
+| 4 | `Governance/SRT_CLAIM_MODE_AUDIT.md` | 2026-08-18 |
 | 5 | `Core_Law/SRT_L0_Metaphysics.md` | 2026-08-12 |
-| 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-12 |
+| 6 | `Core/SRT_Core_21_Formal_Axioms.md` | 2026-08-18 |
 | 7 | `Core/SRT_Core_21_Minimal_Axioms.md` | 2026-08-17 |
 | 8 | `Core/SRT_Core_21b_Constitutive_Theorems.md` | 2026-08-17 |
 | 9 | `Core/SRT_Core_21c_Bridge_Hypotheses.md` | 2026-08-12 |
-| 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-12 |
+| 10 | `_SRT_D_VALUE_CANONICAL.md` | 2026-08-18 |
 | 11 | `_SRT_PSI_F_CANONICAL.md` | 2026-07-07 |
-| 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-12 |
+| 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
 | 14 | `Core/SRT_Core_22_Equations.md` | 2026-08-12 |
 | 15 | `_SRT_SYMBOL_TABLE.md` | 2026-08-12 |
@@ -433,7 +433,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -560,17 +560,19 @@ Route: `01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md`, `Philosophy/SRT_L
 
 For the support/replacement boundary of `L_2`, use `_SRT_T_DIR_CANONICAL.md` and `Core/SRT_OPEN_TENSIONS.md`.
 
-### Real Choice Moment
+### Former Real Choice Moment / RC-A
 
-For the canonical statement of real choice moment vs script execution, use `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05). That statement carries a **negative list only** (script execution, habit replay, gradient following, `L_2` label optimization do not qualify); it does not supply a positive discrimination procedure, so it under-determines concrete cases.
+`P1-T05 Real Choice Moment` is a **former** P1 theorem. RC-A withdrew it from P1; current P1 authority is `Core/SRT_Core_21b_Constitutive_Theorems.md`. Do not infer `no Selection` from script execution, habit replay, gradient following, or `L_2` automation. Selection and Agency are not identical.
 
-For concrete "is this a real choice?" judgments, also load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, a non-compensation rule, and the no-choice / pseudo-choice / punitive-choice / respected-choice reading. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only "bounded selection-event candidate", never subjecthood, consciousness, freedom, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
+The adjacent P1 theorem that remains active is `P1-T06 Stable ISP`; its continued-selectability condition belongs to stable-ISP persistence, not to the definition of a one-shot Selection occurrence. Generative reselectability remains P2/P3 generative-health territory.
+
+For concrete Selection-event audits, load `03_Bridges/SRT_Selection_Event_CompactCore.md` — five gates (`CG-0..CG-4`) with graded ladders (`DMF`/`NER`/`PEF`/`CBP`/`HEF`), audit-default minima, and a non-compensation rule. It is **P2-P3 audit apparatus, not a definition source**: passing all five gates licenses only a bounded Selection-event candidate. It does not prove agency, subjecthood, consciousness, freedom, moral responsibility, `L_2`, or generative health. Open exposures are registered at `Core/SRT_OPEN_TENSIONS.md §14`. Route: `_SRT_CONTEXT_ROUTER.md §23a`.
 
 Three fast negatives worth carrying without loading anything: a different output is not path efficacy; energy spent is not consequence bearing; having memory is not historical efficacy.
 
 ### Freedom
 
-In SRT usage, freedom concerns preservation of real choice moments, not mere option count. Treat this as a pointer to the P1/P2 sources, not as a standalone definition here.
+Freedom is a downstream agency / normative / generative-health question. Legacy language linking freedom to preservation of “real choice moments” must be read through RC-A and must not be used to define Selection or to exclude scripted / habitual / automated selective processes from Selection ontology.
 
 ### Primitive Actualisation / Selectability Boundary
 
@@ -694,7 +696,7 @@ When answering about SRT:
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -913,7 +915,7 @@ When answering about SRT:
 - 主文件：`Core_Law/SRT_Collective_Selection.md`
 - id：`SRT-COLLECTIVE-SELECTION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 按 ST-A 为**条件性集体反闭合候选**（P2/P3，不是 P1 theorem；需 neutral kernel、稳定语义、环境、无重置条件、时间窗与吸收/风险证明）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`；§4.4-§4.7 保留集体四变量耦合与带闭包条件的投影候选。健康区、`M(t)`、`σ_{sr}^{coll}` 与制度通道均为 generative reselectability 的实现/诊断候选，不单独构成必要充分判据。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
+- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 按 ST-A 为**条件性集体反闭合候选**（P2/P3，不是 P1 theorem；需 neutral kernel、稳定语义、环境、无重置条件、时间窗与吸收/风险证明）；T-COLL-4 集体 agency / revision guard（P2/P3 downstream；不是 P1-T05 集体版，也不是 Selection / collective-ISP existence criterion）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`；§4.4-§4.7 保留集体四变量耦合与带闭包条件的投影候选。健康区、`M(t)`、`σ_{sr}^{coll}` 与制度通道均为 generative reselectability 的实现/诊断候选，不单独构成必要充分判据。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
 - Tower/nested hardening pointer：H10-H16 has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`. The extracted file is a secondary hardening notes file, not a new core canonical reference file and not part of the minimal canonical definition of collective selection.
 - 与 T-SUFF-5 的关系：本文件给出 T-SUFF-5 集体外部化的结构基础（`M(t)` 强不对称 → 主从型退化 → 结构型苦难外溢）
 - 与政治/经济/共同体 domain 的关系：本文件是它们的 L1 结构基石；制度是集体 ISP 的**器官**不是主体；投票/共识/专家不自动是共选
@@ -1418,7 +1420,7 @@ This split changes epistemic placement, not the underlying intended theory.
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | false |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1554,14 +1556,14 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | §2.5 T-CHI-1 χ 跳跃函数族普适性（H8，2026-04-25） | "有效二阶相变核"四条结构属性 + 族内四个不变量（双稳态 / 病理吸引子 / 致命 `L_2` / 相变方向） | P1-candidate（χ 形式无关性升为定理后果） |
 | §3 d_c 漂移方程 | — | P1-candidate 结构形式；系数 P2/P3 |
 | §3.4 T_{dir}^{alg} 代数目标值 | — | P2 operational proxy（`\Theta` 光滑族留作 Open Pressure） |
-| §3.5 T_dir 独立 ODE（弛豫 + r 泵入 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；κ_* 五项系数 P2/P3 |
+| §3.5 T_dir 独立 ODE（弛豫 + ΔΨ_f^gap 扣除 + S_str 侵蚀 + s_ext 支架） | — | P1-candidate 结构形式；former-P1-T05-derived `r(t)` pump 已由 RC-A subtractive probe 删除；其余 κ_* 系数 P2/P3 |
 | §3.5.3 致命 `L_2` 方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}` | — | P1-candidate（本轮新增；与 `_SRT_T_DIR_CANONICAL §5-§6` 现象学层面一致） |
 | §4 S 两型耦合方程 | — | P1-candidate 结构形式 |
 | §4.4 反最小化原则的方程语言 | — | P1-candidate（T-SUFF-4 的方程化同级） |
 | §4.5 T-CHANNEL-1 通道指示函数族普适性（H9，2026-04-25） | "有效闭合通道指示族"四条结构属性 + 族内五个不变量（两型分裂 / 反最小化 / 单向性 / 致命 L_2 / 投影一致性，均 modulo `O(w_{tr})`） | P1-candidate（硬指示 → 光滑族升为族内不变量定理） |
 | §5 病理吸引子 `\mathcal{A}_{path}` | — | P1-candidate |
 | §5 健康工作区 `\mathcal{H}` 须主动维持 | — | P2/P3 generative-reselectability implementation candidate under ST-A；不再以 P1-T07 必要性背书 |
-| §5.1 第 6 条"苦难-可读性正反馈环"（`S_{str} \to T_{dir} \downarrow \to r \downarrow \to S_{sig}` 积压） | — | P1-candidate（2026-04-25 H2 新增，依赖 §3.5） |
+| Former §5.1 第 6 条"苦难-可读性正反馈环"（`S_{str} \to T_{dir} \downarrow \to r \downarrow \to S_{sig}`） | — | RC-A 已删除该 former-P1-T05-derived feedback path；不再列为当前 P1-candidate 通道 |
 | §6 T-PROJ-1 主方程投影定理（H5，2026-04-25） | 四个标量泛函投影 `\mathcal{F}_X` + 闭包假设 C1-C4 + 证明骨架 + source-by-source 对应表 | P1-candidate（"四变量是主方程导出"从陈述升为带条件证明的形式定理） |
 | 全部参数 `α, β, γ, μ, ν, λ, κ` | — | P3/P4，任何具体值不得在下游引用为已证 |
 
@@ -1577,22 +1579,22 @@ Hardening notes files outside the six L1 theory/formalism canonical reference fi
 | T-COLL-1 集体 ISP 存在四条件 | — | P1-candidate（P1-T06 集体版的对应） |
 | T-COLL-2 三类退化（聚合 / 主从 / 收编） | — | P2 |
 | T-COLL-3 条件性集体反闭合候选 | neutral kernel + stability semantics + environment/horizon + absorption/comparative-risk proof required | P2/P3 conditional candidate under ST-A；非 P1 theorem |
-| T-COLL-4 共选真实性判据 | — | P1-candidate（P1-T05 集体版的对应） |
+| T-COLL-4 collective agency / revision guard | — | P2/P3 downstream guard under RC-A；不是 P1-T05 集体版，也不是 Selection occurrence / T-COLL-1 的必要条件 |
 | §4 `σ^{coll}` / `d_c^{coll}` 耦合 | — | P2 |
 | §4.4.1 集体场定义（`\Theta^{coll,trace}` / `\Theta^{coll,ext}` 含共享 `L_2` 独立项） | — | P2 structural；权重 `w_i(t)` 依赖 M(t) 可测性（P3） |
 | §4.4.2 σ^{coll} ODE（含 `\lambda_M\,\mathrm{tr}\,M` 内向后果放大项） | — | P1-candidate 结构形式；`\lambda_M` P2/P3 |
 | §4.4.3 d_c^{coll} ODE（含 `\gamma_{asym}\|M_{asym}\|` 主从型形式化） | — | P1-candidate 结构形式；`\gamma_{asym}` P2/P3 |
-| §4.4.4 T_{dir}^{coll} ODE + 集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}` | — | P1-candidate 结构形式；κ_*^{coll} 五项 P2/P3 |
+| §4.4.4 T_{dir}^{coll} ODE + 集体层致命 `L_2` 判据 `\kappa_{mask}^{coll} < \kappa_{\mathrm{relax}}^{coll}` | — | P1-candidate 结构形式；RC-A 已删除 former-P1-T05-derived `r^{coll}` pump；其余 κ_*^{coll} 系数 P2/P3 |
 | §4.4.5 S^{coll} 两型 ODE（含 `\nu_{ext}\|M_{ext}\|` 外部化项，T-SUFF-5 方程化） | — | P1-candidate 结构形式；`\nu_{ext}` P2/P3 |
 | §4.5 个体↔集体双向耦合三路径 | — | P1-candidate（声明"不穷尽"） |
-| §4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` / 集体健康区 `\mathcal{H}^{coll}`（`r^{coll} > r^{coll}_{min}` 硬条件） | — | P1-candidate（T-COLL-4 共选真实性的持续要求在动力学上的形式化） |
+| §4.6 集体病理吸引子 `\mathcal{A}_{path}^{coll}` / 集体健康区 `\mathcal{H}^{coll}` | — | P1-candidate / P2-P3 mixed；RC-A 已删除 `r^{coll} > r^{coll}_{min}` 硬条件，generative-health / revision standing 不与 T-COLL-1 混写 |
 | §4.7 T-PROJ-1^{coll} 集体投影定理（H6，2026-04-25） | 四个集体标量泛函投影 `\mathcal{F}_X^{coll}` + 闭包假设 C1^{coll}-C5^{coll}（含 `M(t)` 可测性 MOC 闭包 C5^{coll}）+ `M(t)` 三成分作为 `\Psi_f` 交叉项的结构投影 + 证明骨架 | P1-candidate（"集体四变量是多算子主方程导出"从陈述升为带条件证明的形式定理） |
 | §4.8 late-stage tower/nested hardening pointer | H10-H16 tower/nested material has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md` | Pointer only; not part of the minimal canonical definition of collective selection |
 | §8 平台 / 算法 AI 结构性影响评估 | — | P3 bridge |
 
 **Tower / nested scope note**：H10-H16 are late-stage tower/nested hardening notes extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`, not part of the minimal canonical definition of collective selection. They remain P1-candidate only under strong closure assumptions and should not be cited as closed P1.
 
-**Downstream rule**：T-COLL-1/3/4 须标 `P1-candidate`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；H10-H16 不得作为 minimal canonical definitions 引用；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。**投票 / 共识 / 专家决定不自动是共选** 这一结论可作为 P1-candidate 结构推论下推至 Political Philosophy，但不得在没有 T-COLL-4 三条件检查下单独成立。
+**Downstream rule**：T-COLL-1 须标 `P1-candidate`；T-COLL-3 / T-COLL-4 须标 `P2/P3 downstream`；三类退化的判据须标 `P2`；T-PROJ-1^{coll} 投影对应可按 `P1-candidate` 引用，但 C1^{coll}-C5^{coll} 闭包假设须保留显式标注（特别是 C5^{coll} `M(t)` 可测性 MOC 仍是 P2 operational proxy；任何应用文件不得静默移除该闭包条件）；H10-H16 不得作为 minimal canonical definitions 引用；政治 / 经济 / 制度判断仍走 `Philosophy/*` P2-P4。投票 / 共识 / 专家决定本身既不证明更强 collective agency，也不得反推“没有 Selection”；若审计 consequence-sensitive revision，只能把降级后的 T-COLL-4 当 P2/P3 input。
 
 #### SRT-COLLECTIVE-TOWER-HARDENING-NOTES
 
@@ -2053,7 +2055,7 @@ L0 不负责给出方程和实验，但它必须约束上层该怎么展开。
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -2093,7 +2095,7 @@ Claim-level rules are now governed by:
 **Default citation rule**:
 
 - cite primitive axioms from `Core/SRT_Core_21_Minimal_Axioms.md`;
-- cite stable ISP continued selectability, real choice moment, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`;
+- cite stable ISP continued selectability, ontological time, absorption, and `L_2` downward constraint from `Core/SRT_Core_21b_Constitutive_Theorems.md`; read former Real Choice Moment there only as the RC-A demotion record;
 - cite the ST-A conditional anti-closure candidate and generative reselectability distinction, along with fitness, assembly, holography, universality, Fisher-geometry `\Psi_f`, and strong information-creation unification, from `Core/SRT_Core_21c_Bridge_Hypotheses.md`.
 
 ---
@@ -2996,7 +2998,7 @@ This summary is a reading guide, not an additional axiom.
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -3588,7 +3590,7 @@ SRT 在 2026-04-02 的理论推进中引入了 **T_dir（方向透明度）** �
 $$d = 0 \implies T_{dir} = 0$$
 $$d > 0 \;\not\!\!\!\implies T_{dir} > 0$$
 
-d 是 T_dir 的**必要条件，不是充分条件**。T_dir 还需要活选择正在发生（非 L₂ 脚本执行）以及足够的 Ψ_f 提供压力。
+d 是 T_dir 的**必要条件，不是充分条件**。T_dir 的其余准入与解释回到 `_SRT_T_DIR_CANONICAL.md` 的 Def-T-1 / `R_self` / `A_reorient` 边界；不得再用“活选择（非 L₂ 脚本执行）”作为 T_dir 或 Selection occurrence 的判据，script / habit / `L_2` automation 本身也不得推出 `no Selection`。
 
 **不得混淆**：任何把"选择方向的透明度"写入 d-value 的 canonical 定义的做法，违反本文件的规范地位。
 
@@ -3603,7 +3605,7 @@ d 是 T_dir 的**必要条件，不是充分条件**。T_dir 还需要活选择�
 ```
 替代式 L₂ 消灭选择时刻
     ↓
-d-value 未被使用（无真实选择 → 无 d 的激活）
+d-value 未被 stake-coupled concern / consequence-return 条件实际调用；这不等同于“无 Selection”
     ↓
 d-value 萎缩（不用则退）
     ↓
@@ -4299,7 +4301,7 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -4314,6 +4316,7 @@ $$\Psi_{f,actual} \geq \Psi_{f,felt}$$
 > `_SRT_D_VALUE_CANONICAL.md` 管理 d-value；本文件管理 T_dir 及其展开的病理学结构。
 > **2026-04-22 降承诺说明**：`T_dir` 当前按 **v0 operational proxy / 最小操作定义** 使用。它帮助区分“跨位置可回读性”与“语义效价/置信度”，但尚不是已完成的本体基础或形式对象。
 > **Canonical status note（2026-04-23）**：本文件名中的 canonical 表示 governance-canonical working object 与引用锚点，不表示 `T_dir` 已具备 theory-canonical 完整奠基。价值动力学扩展段落按 bridge / theory-clarifying 读。
+> **RC-A active-use override（2026-08-18）**：本文较早段落中的“活选择 / 真实选择 / L₂ 替代选择”等措辞早于 RC-A。当前只能把它们读作 downstream bearer / agency 层关于**后果敏感、方向可回读并可用于重取向**的历史速记，不能当作 Selection occurrence、anchoring persistence、Stable ISP、generative health、合法性或普遍价值方向的判据。script / habit / gradient / `L_2` automation 本身也不得反推“没有 Selection”。`T_dir` 的当前工作角色仍由 Def-T-1 与 `R_self / A_reorient` 边界约束。
 
 ---
 
@@ -4559,7 +4562,7 @@ $$\boxed{\text{大规模 L₂ 建设系统性压低了 } d\text{，掩藏了 }\P
 | `Core_Law/SRT_L0_Metaphysics.md` | L₀ 的中性定义约束了相干性梯度只能是操作化代理，不是本体属性 |
 | `Philosophy/SRT_Ethics_Agency.md` | 价值遮蔽命题的伦理延伸 |
 | `Governance/SRT_POSITIONING.md` | T_dir 应用层作为 SRT 最有力入口的论证 |
-| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，ODE 含弛豫、真实重选泵入、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀、`s_{ext}` 支架五项。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
+| `Core_Law/SRT_L1_Formalism.md §3.4-§3.5` | T_dir 的 L1 动力学层面：§3.4 代数目标值 `T_{dir}^{\mathrm{alg}}(\sigma, d, d_c)`；§3.5 把 T_dir 升为独立动力学变量，RC-A subtractive probe 已删除 former-P1-T05-derived 全局 `r(t)` 泵入项，当前最小 ODE 保留弛豫、`\Delta\Psi_f^{\mathrm{gap}}` 扣除、`S_{str}` 结构侵蚀与 `s_{ext}` 支架四条通道，不设 replacement rate。§3.5.3 给出"致命 `L_2`"的方程化判据 `\kappa_{\mathrm{mask}} < \kappa_{\mathrm{relax}}`。本文件 §5-§6 的现象学定义在 L1 Formalism 侧对应方程级机制。 |
 | `Core_Law/SRT_Irreversibility.md` | T-IRR-3 按 ST-A 提供条件性反闭合接口；L1_Formalism §5.3 健康工作区是 generative reselectability 的实现候选，不是 P1-T07 必要性的证明 |
 
 ---

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-17
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHYSICS-2026-08-18
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-17
-source_commit: 8fcb97fd
-source_branch: agent/srt-pd-a-consistency-repair
-source_dirty: false
-inputs_digest: 6906e8853d7329ab
+generated: 2026-08-18
+source_commit: 1febdcc0
+source_branch: HEAD
+source_dirty: true
+inputs_digest: 519bcce7e75f9201
 ---
 
 # SRT 物理领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: 6906e8853d7329ab
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-17 |
-| 来源 commit | `8fcb97fd` |
-| 来源分支 | `agent/srt-pd-a-consistency-repair` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-18 |
+| 来源 commit | `1febdcc0` |
+| 来源分支 | `HEAD` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 11 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
@@ -49,7 +49,7 @@ inputs_digest: 6906e8853d7329ab
 | 4 | `Physics/SRT_Quant_00_Intro_CompactCore.md` | 2026-08-12 |
 | 5 | `Physics/SRT_Quant_01_Selection_CompactCore.md` | 2026-08-12 |
 | 6 | `Physics/SRT_Quant_02_Cosmology_CompactCore.md` | 2026-04-29 |
-| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-04-29 |
+| 7 | `Physics/SRT_Physics_Cosmology_CompactCore.md` | 2026-08-18 |
 | 8 | `Physics/SRT_Phys_07_Complex_Systems_CompactCore.md` | 2026-04-29 |
 | 9 | `Physics/SRT_Phys_08_Ontology_Ext_CompactCore.md` | 2026-08-12 |
 | 10 | `Physics/SRT_Phys_09_Formalism_Ext_CompactCore.md` | 2026-05-17 |
@@ -1664,7 +1664,7 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 | epistemic_layer | os |
 | layer | L1 |
 | canonical(字段) | false |
-| last_commit | 2026-04-29 |
+| last_commit | 2026-08-18 |
 
 **权威判读**：**非定义源**——可作检索与支持上下文，不得用于确定术语定义。
 
@@ -1673,6 +1673,8 @@ P(L_1 \cong L_0 \mid \text{Survival}) \to 0
 <!-- 以下为原文逐字保留 -->
 
 # SRT Physics: Cosmology — Compact Core
+
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
 
 > **定位**：本文件是 `Physics/SRT_Physics_Cosmology.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 在热力学、时间、引力与宇宙学上的最短主轴。  
@@ -1709,7 +1711,7 @@ E_{select} \ge k_B T \ln 2
 \]
 
 最压缩的物理含义是：
-> **每一次真实选择都至少有能量代价。**
+> **RC-A 边界**：该 Landauer 式只能约束被具体实现为逻辑不可逆信息操作 / 物理重置的 bridge case，不能升级为“每一次 Selection occurrence 都至少支付 `k_B T ln 2`”的普遍定理。
 
 ### 2.3 Landauer Gap 的 SRT 解读
 SRT 进一步强调：

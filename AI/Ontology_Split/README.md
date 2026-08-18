@@ -18,8 +18,8 @@ dependency: [SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
 > **Reading-aid guardrail**：本 split 目录只承担长文导航与局部阅读，不创建新的定义权。claim status 以 [`../SRT_AI_Claim_Status.md`](../SRT_AI_Claim_Status.md)、[`../AI_POSITIONING_NOTE.md`](../AI_POSITIONING_NOTE.md) 与 [`../../Governance/SRT_CLAIM_LADDER.md`](../../Governance/SRT_CLAIM_LADDER.md) 为准。
 
 - 原始总文（保留，不删内容）：[`../SRT_AI_01_Ontology.md`](../SRT_AI_01_Ontology.md)
-- Source owner bytes: `84330`
-- Source owner SHA-256: `46e2aa9892f69b8e47f1771dfe78321d958f545893fc928101fdc627aeb9f824`
+- Source owner bytes: `85134`
+- Source owner SHA-256: `a03a50cf4d40041a06fc021228d653409365c383de0754fc4d82f586d80c5d34`
 - 00_Formal_Core：[`00_Formal_Core.md`](00_Formal_Core.md)
 - 01_dValue_and_Decoupling：[`01_dValue_and_Decoupling.md`](01_dValue_and_Decoupling.md)
 - 02_PseudoSelection_and_Barrier：[`02_PseudoSelection_and_Barrier.md`](02_PseudoSelection_and_Barrier.md)

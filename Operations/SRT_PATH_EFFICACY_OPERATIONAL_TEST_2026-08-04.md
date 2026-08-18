@@ -18,6 +18,8 @@ dependency: [Operations/SRT_TB_TD_TE_CROSS_DOMAIN_STRESS_TEST_2026-08-04.md, Ope
 
 # CG-2 路径效力：操作化测试协议 v1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **角色说明**：本文件把 T-D 的 CG-2“非等价差异能够形成路径效力”压缩为可预注册、可解耦、可替换、可干预、可失败的操作协议。它不是 canonical、选择事件定义、自由意志判据、统一控制理论或经验验证结论。
 >
 > **核心问题**：怎样区分“系统产生了不同分数、标签、建议、排序或输出”，与“该差异真正进入资源、动作、边界或环境通道，使现实路径的发生概率、持续条件、替代路径状态或返回成本发生改变”？

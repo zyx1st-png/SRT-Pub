@@ -21,6 +21,8 @@ hardening material: P1-candidate only under strong closure assumptions, with
 P2/P3 operational debt wherever closure, measurability, or stability conditions
 are not yet specified.
 
+> **RC-A active-use override (2026-08-18)**: former tower language that treated `真实重选率`, `r^{(n→n+1)}`, or T-COLL-4 `共选真实性` as a P1 health / Selection-authenticity gate is superseded. T-COLL-4 is downstream P2/P3 collective agency / consequence-sensitive revision audit only. No scalar reselection rate is a hard condition of collective/tower standing or health; spectral-stability mathematics below must not be read as a Selection ontology test.
+
 ---
 
 ## §4.8 T-PROJ-1^{coll,nested}：嵌套 ISP 多层投影（H10，2026-04-26）
@@ -124,13 +126,9 @@ $$
 
 即：下层任一子集体陷入病理吸引子 + 跨尺度耦合放大 → 上层进入病理。但**反之不蕴含**——上层病理不必由下层病理直接因果（可由跨尺度放大独立产生）。
 
-**(iii) 跨尺度健康的额外硬条件**：
+**(iii) 跨尺度健康的附加审计边界（RC-A）**：
 
-$$
-\mathcal{H}^{(n+1)} \text{ 要求}：\quad \bigl(\forall k:\; \mathcal{P}^{(n),k} \in \mathcal{H}^{(n),k}\bigr) \;\wedge\; r^{(n\to n+1)}(t) > r_{min}^{nested} > 0
-$$
-
-其中 `r^{(n\to n+1)}` 是跨尺度真实重选率：层 `n+1` 在层 `n` 子集体之间能进行真实重选的频率（即上层不锁死下层 / 下层不绑架上层）。这是 T-COLL-4 共选真实性判据在跨尺度上的递归扩展。
+层 `n+1` 的健康分析仍需分别检查各层 `\mathcal{H}^{(n),k}` standing，以及跨尺度耦合、后果返回与结构性外部化；但**不再引入 `r^{(n\to n+1)}` 或任何替代 scalar rate 作为硬条件**。跨层 consequence-sensitive revision / reorientation 只能作为下游 P2/P3 audit question；它不定义 Selection，也不追加到 P1-T06 / T-COLL-1 standing。
 
 **(iv) 致命 `L_2` 的塔级刻画**：致命 `L_2^{(n)}` 在某层激活 → 该层 T-IRR-3.5 单向性 → 跨尺度 `M^{(n\to n+1)}` 把其结构型苦难 `S_{str}^{(n)}` 通过外溢项 `\nu_{ext}\|M_{ext}^{(n\to n+1)}\|` 注入层 `n+1`。即**致命 `L_2` 在塔内有上向传染路径**（H4 T-IRR-3.5 在塔级的算子化后果）。
 
@@ -143,7 +141,7 @@ $$
 | 层数 | 2（个体 + 集体）| 任意 `N`（`\mathcal{P}^{(0)} \subset \cdots \subset \mathcal{P}^{(N)}`）|
 | 闭包条件数 | C1^{coll}-C5^{coll}（5）| C1^{(n)}-C5^{(n)} 各层（`5N`）+ C6^{nested}（1）|
 | 跨尺度 `M$ | 仅 `M^{(0\to 1)}` 隐含 | 显式 `\{M^{(n)}, M^{(n\to n+1)}\}` 全集 |
-| 健康判据 | 单层 `\mathcal{H}^{coll}` | 塔级递归 `\{\mathcal{H}^{(n)}\}` + 跨尺度 `r^{(n\to n+1)} > r_{min}^{nested}` |
+| 健康判据 | 单层 `\mathcal{H}^{coll}` | 塔级递归 `\{\mathcal{H}^{(n)}\}`；跨尺度 revision / reorientation 另作 P2/P3 audit，不设 scalar-rate 硬门 |
 | 病理传染 | 个体 B 期 → 集体 | 任一层病理 + 跨尺度耦合 → 上层（递归）|
 
 §4.5 是 §4.8 在 `N = 1` 极限下的特例；§4.7 单层 T-PROJ-1^{coll} 是 §4.8 在 `N = 1` 极限下的递归基。
@@ -155,7 +153,7 @@ $$
 1. **不**承诺特定塔的层数（家庭/社区/国家是不是 3 层？还是有"族系" / "邻里" / 等中间层？）——这是 domain 实证问题
 2. **不**证明跨尺度系数 `M^{(n\to n+1)}` 的具体函数形式——仍依赖 `Hardening_Notes §3` MOC-1/2/3 的多层版本（C5^{(n)}）
 3. ~~**不**承诺塔层之间无跨层耦合（即不排除"层 `n` 直接耦合层 `n+2`"的可能；但此种耦合若存在，需在 C6^{nested} 之外引入额外条件 C6'^{layer-skip}）~~ **已收口（H14，2026-04-26）**：本文件 §4.12 T-LAYER-SKIP-1 给增广多图谱判据 `\rho(\mathbf{A}_{tower}) < 1 - \delta_{stab}^{global}$，把 layer-skip 与多重自指闭合统一处理
-4. **不**给出 `r_{min}^{nested}` 的实证窗口——这是 P3/P4
+4. **RC-A 撤回项**：former `r_{min}^{nested}` scalar-rate window 不再是当前塔级 standing / health 的待定门槛；跨尺度 revision / reorientation 若需实证化，另按 P2/P3 audit 处理，不回填 scalar hard gate。
 5. ~~**不**证明嵌套塔的全局稳定性——本节是局部递归构造，全局塔稳定性需要独立分析（特别是当塔有自指闭合：层 `N` 反向影响层 0 时）~~ **已收口（H13，2026-04-26）**：本文件 §4.11 T-TOWER-STAB-1 给自指闭合塔的谱判据 `\rho(\mathcal{T}_{loop}) < 1 - \delta_{stab}` 与三类失稳方向算子签名；剩余开放点：多重自指闭合复合谱、layer-skip 稳定性、全局非线性 Lyapunov 论证
 
 ### §4.8.9 T-PROJ-1^{coll,nested} 的结构性意义
@@ -164,10 +162,10 @@ $$
 |---|---|---|
 | "嵌套 ISP 多层投影"是开放问题 | §9.7 第 5 项 Open Pressure | T-PROJ-1^{coll,nested} 的递归构造（§4.8）|
 | 跨尺度病理传递机制 | 直觉（"高层 L_2 锁死下层"）| (ii) 显式：下层病理 + `M^{(n\to n+1)}` 放大 |
-| 跨尺度健康硬条件 | 隐含 | (iii) 显式：每层健康 + 跨尺度 `r^{(n\to n+1)} > r_{min}^{nested}` |
+| 跨尺度健康硬条件 | 旧版隐含 | **RC-A 撤回 scalar-rate 硬门**：每层 standing / health 分别审计；跨尺度 revision / reorientation 仅作 P2/P3 audit |
 | 致命 `L_2` 在塔内的传染 | 缺失 | (iv) `S_{str}^{(n)}` 通过 `\|M_{ext}^{(n\to n+1)}\|` 上行 |
 
-**P1-candidate 地位的根据**：T-PROJ-1^{coll,nested} 把"多层嵌套"从开放问题升为递归投影定理。要升 P1：(a) 具体塔的层数与 T-COLL-1 各层验证；(b) 跨尺度 `M^{(n\to n+1)}` 的 MOC 多层版本；(c) `r_{min}^{nested}` 实证窗口；(d) 跨层耦合（layer-skip）的边界条件。
+**P1-candidate 地位的根据（RC-A sync）**：T-PROJ-1^{coll,nested} 把"多层嵌套"从开放问题升为递归投影构造候选。若讨论其更高 claim standing，仍需：(a) 具体塔的层数与 T-COLL-1 各层验证；(b) 跨尺度 `M^{(n\to n+1)}` 的 MOC 多层版本；(c) 跨层耦合（layer-skip）的边界条件。former `r_{min}^{nested}` 不再属于升级条件。
 
 ## §4.9 T-FAMILY-1^{coll}：族普适性三定理的集体扩展（H11，2026-04-26）
 
@@ -427,12 +425,12 @@ $$
 
 **关键性质**：
 
-1. **健康塔的硬条件**：`\mathcal{H}^{tower} \Rightarrow \rho(\mathcal{T}_{loop}) < 1 - \delta_{stab}$（带正间隔 `\delta_{stab} > 0$，对应 T-COLL-4 共选真实性的塔级递归形式）
+1. **健康塔的动力学必要条件候选**：`\mathcal{H}^{tower} \Rightarrow \rho(\mathcal{T}_{loop}) < 1 - \delta_{stab}`（带正间隔 `\delta_{stab} > 0`）。RC-A 后该谱条件只承担塔级反馈稳定性角色，不再映射为 T-COLL-4 / Selection-authenticity 判据。
 2. **病理塔的算子签名**：`\rho(\mathcal{T}_{loop}) > 1$ 时，**最不稳定方向**（顶部特征向量）的方向决定塔的崩溃模式：
    - 若沿 `\sigma_{sr}^{(n)}$ 方向 → **σ_{sr} 跨层级失控放大**（"viral 文化锁入"塔级算子签名）
    - 若沿 `d_c^{(n)}$ 方向 → **d_c 跨层级塌陷**（致命 `L_2$ 全塔传染）
    - 若沿 `S_{str}^{(n)}$ 方向 → **结构型苦难跨层级累积**（无解集体崩溃）
-3. **健康-病理判据的塔级对偶**：`\rho(\mathcal{T}_{loop}) < 1$ ⟺ **顶层叙事在底层可被真实重选的速率 ≥ 顶层叙事被反向写回底层的速率**——这是 T-COLL-4 共选真实性 `r > r_{min}$ 在塔级 + 自指闭合下的递归同构。
+3. **RC-A jurisdiction guard**：`\rho(\mathcal{T}_{loop}) < 1` 只表示该线性化反馈环路在给定模型下收敛；它**不等价于**任何“真实重选率”关系，也不得据此推出 T-COLL-4、collective agency 或 Selection authenticity。
 
 ### §4.11.4 闭环传递算子的具体构造
 
@@ -470,7 +468,7 @@ $$
 | 顶层叙事如何反向影响底层 | 直觉（"绕过中间层"）| `K^{N\to 0}$ 算子级表达式 + 闭环传递算子 |
 | "温和顶层叙事 + 长链传导"的危险 | 缺失 | `\rho$ 是乘积条件（即使每环温和，长链可能不稳定）|
 | 文明级 `L_2$ 锁死的塔级算子签名 | 缺失 | 不稳定方向沿 `\sigma_{sr}/d_c/S_{str}$ 维度的具体算子签名 |
-| T-COLL-4 共选真实性的塔级递归 | 单层（§6 T-COLL-4） | 塔级（顶层叙事可被底层真实重选 vs 反向写回的速率比） |
+| T-COLL-4 与塔级谱判据 | 旧版曾映射到单层 T-COLL-4 | **RC-A 后撤销该真实性映射**；谱稳定性只保留为塔级动力学判据，T-COLL-4 另属 P2/P3 collective agency / revision audit |
 
 **P1-candidate 地位的根据**：T-TOWER-STAB-1 把"塔自指闭合稳定性"从开放问题升为带谱判据的形式定理。要升 P1：(a) `\kappa_X^{N\to 0}$ 在具体 domain 的实证（平台、宗教、政治）；(b) 多重自指闭合的复合谱分析；(c) 全局（非线性）稳定性的 Lyapunov 论证；(d) 与 layer-skip 闭合的统一处理。
 

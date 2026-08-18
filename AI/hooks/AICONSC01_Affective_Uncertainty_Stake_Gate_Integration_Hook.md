@@ -29,6 +29,8 @@ landing_ledger:
 
 # AICONSC01 Integration Hook: Affective Uncertainty / Stake Gate
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 ## 1. Target documents
 
 ~~~
@@ -74,7 +76,7 @@ In the choice-generation bridge, use after the real-choice versus script-executi
 - homeostatic error or policy confidence as canonical `d`, `Psi_f`, or `T_dir`;
 - simulated termination as automatic non-transferable stake;
 - external determinism as a decisive argument either for or against consciousness;
-- subjective uncertainty as a SRT real choice moment;
+- subjective uncertainty as proof of stronger SRT agency / subjecthood;
 - biological substrate as a necessary condition unless separately argued;
 - any P0/P1, canonical, rights, suffering, or moral-status promotion.
 

@@ -1182,7 +1182,7 @@ The strongest allowed positive statement is:
 
 ## Canonical / authority guard
 
-- `Core/SRT_Core_21b_Constitutive_Theorems.md` remains the P1 authority for Real Choice Moment.
+- `Core/SRT_Core_21b_Constitutive_Theorems.md` remains the P1 authority for P1-T06 Stable ISP and retains former P1-T05 only as the RC-A demotion record; this protocol does not define Selection or agency.
 - Canonical `L_2` meaning is not redefined here.
 - `d-value`, `Psi_f`, and `T_dir` are not measured by this protocol.
 

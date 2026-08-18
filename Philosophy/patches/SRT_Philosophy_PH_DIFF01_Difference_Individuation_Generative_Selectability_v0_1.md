@@ -48,6 +48,8 @@ type: theory_hardening_patch
 
 # SRT Philosophy Patch PH-DIFF01: Difference / Individuation / Generative Selectability v0.1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **Status:** bounded P3 philosophy / pre-objectification / individuation / selection hardening note.  
 > **Canonical caution:** this patch does not redefine `L0/L1/L2`, `Ĝθ`, `Psi_f`, `d`, `kappa`, Stable ISP, Real Choice Moment, ontological time, consciousness or the origin of selectability. It records the SRT-relevant pressure that survived a complete close read of Deleuze's *Difference and Repetition*.
 
@@ -103,8 +105,8 @@ It also keeps these boundaries:
 Psi_f = payability burden / ontological friction
 not productive difference by definition
 
-Real Choice Moment
-!= script execution / habit replay / gradient following / L2-label optimisation
+script execution / habit replay / gradient following / L2-label optimisation
+!= proof of stronger agency; none of these by itself implies no Selection
 
 origin of selectability / P0-04 = open
 ```
@@ -229,7 +231,7 @@ L3 — problem-space constitution / revision
 L4 — rule-generative revision of how problems/options are produced
 ```
 
-These labels are local to PH-DIFF01. They are **not** a new canonical freedom ladder and do not replace CG-0..CG-4, H3/I5/J5 or the Real Choice Moment criterion.
+These labels are local to PH-DIFF01. They are **not** a new canonical freedom ladder and do not replace P0/P1 Selection authority, the P2/P3 CG/SEA bounded event audit, H3/I5/J5, or the downstream Agency / Automation Guard.
 
 ### Relation to existing selection-event audit
 
@@ -504,13 +506,13 @@ PH-DIFF01 therefore adds a method-level guard:
 
 > A selection claim must specify the concrete difference/non-neutrality, the path efficacy, where consequences fall, and whether/how the result alters later selection conditions. If those cannot be stated, `selection` is functioning as a universal relabel rather than an explanation.
 
-Use existing SRT audit tools for the actual admission decision, especially CG-0..CG-4 and the Real Choice Moment boundary.
+Use existing SRT audit tools at the correct layer: CG/SEA for a bounded Selection-event candidate, P0/P1 owners for Selection authority, and the Agency / Automation Guard for stronger downstream agency/revision standing.
 
 ### Do not infer
 
 ```text
 Deleuze uses "selection"
--> SRT Real Choice Moment is present
+-> stronger SRT agency standing is established
 
 Deleuzean selective test
 = Ĝθ
@@ -544,7 +546,7 @@ Do not write:
 virtual = L0
 intensity = Psi_f
 dark precursor = G_hat_theta
-selective test = Real Choice Moment
+selective test = SRT Selection or stronger agency
 eternal return = ontological time
 simulacrum = L1
 pre-individual field = consciousness

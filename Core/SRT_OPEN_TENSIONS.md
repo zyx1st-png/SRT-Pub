@@ -185,7 +185,7 @@ Only the first belongs near core. The others should remain P2/P3/P5 unless separ
 The first question above ("is `T_dir` a scalar, a relation, or an accessibility function?") **has in fact been answered at v0 level**, and this section had not recorded it:
 
 - `_SRT_T_DIR_CANONICAL.md` Def-T-1 / §3.1 fixes `T_dir` as a **scalar-valued readability × reorientation functional**, `T_{dir}^{v0} := \mathcal{R}_{self}(\operatorname{Dir}(\Delta\hat{G}_\theta,t)) \cdot \mathcal{A}_{reorient}(\operatorname{Dir}(\Delta\hat{G}_\theta,t))`, explicitly labelled **v0 operational proxy**, not a completed ontological foundation.
-- `Core_Law/SRT_L1_Formalism.md §3.5` (2026-04-25) promotes `T_dir` from algebraic proxy to an **independent dynamical variable** with a five-term ODE (relaxation / real-reselection pump / `\Delta\Psi_f^{gap}` deduction / `S_{str}` erosion / `s_{ext}` scaffolding), with `T_dir ∈ [0,1]` carried as a **governance-canonical** range.
+- `Core_Law/SRT_L1_Formalism.md §3.5` (2026-04-25) promotes `T_dir` from algebraic proxy to an **independent dynamical variable** with the former-P1-T05-derived global `r(t)` pump removed by RC-A subtractive probe and no replacement; the current minimal ODE retains relaxation / `\Delta\Psi_f^{gap}` deduction / `S_{str}` erosion / `s_{ext}` scaffolding, with `T_dir ∈ [0,1]` carried as a **governance-canonical** range.
 
 So the form question is **partially resolved**: scalar-valued functional with a v0 dynamical law. What remains open and keeps this tension live:
 
@@ -204,8 +204,8 @@ Citation rule unchanged: `_SRT_SYMBOL_TABLE.md` Usage Rule 8 still governs — `
 
 SRT already distinguishes:
 
-- healthy `L_2`: lowers friction so real choice remains possible;
-- lethal `L_2`: replaces live choice with structure, lowering felt friction and `T_dir` while accumulating hidden debt.
+- healthy `L_2`: may lower friction while preserving consequence-sensitive revision / reorientation opportunities; this is downstream P2/P3 language, not a Selection criterion;
+- lethal `L_2`: may replace consequence-sensitive revision / reorientation with structural automation, lowering felt friction and `T_dir` while accumulating hidden debt; automation itself does not imply `no Selection`.
 
 This distinction is now central to `SRT_AI_START.md`, `_SRT_T_DIR_CANONICAL.md`, Philosophy, and Spirituality.
 
@@ -242,7 +242,7 @@ In that case, "support" and "replacement" can look identical from outside.
 
 Harden the distinction through gates:
 
-1. Does the structure preserve re-entry into real choice moments?
+1. Does the structure preserve re-entry into consequence-sensitive revision / reorientation opportunities?
 2. Do consequences return to the selecting system rather than being absorbed by external structure?
 3. Does friction reduction increase future choice capacity, or reduce the need for choice altogether?
 4. Does `T_dir` rise, remain available, or collapse?
@@ -303,7 +303,7 @@ Later philosophy materials add two burdens without changing P1-T06:
 1. **Phenomenal necessity remains open.** Stable ISP, individuation, `d > 0`, same-bearer consequence return, and non-substitutable stake specify increasingly strong bearer / perspective architecture. They are not currently canonical proofs that qualia must be present. The live deletion question is whether a fully individuated, stake-bearing Stable-ISP-like perspective center can coherently remain phenomenally empty. `Philosophy/hooks/PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Integration_Hook.md` registers this as the SRT-zombie pressure.
 2. **The natural-boundary interpretation needs an adjacent-case test.** P1-T06 remains the canonical constitutive result-state criterion, but `σ_{sr}^{sub}` / `σ_{sr}^{self}` are still P3/P4 entry-dynamics candidates. Until matched boundary-negative / boundary-positive cases show an independently measurable discontinuity in perspective-bearing, same-unit consequence return, history writeback, future-selectability change, or boundary continuity, a chosen cutoff does not by itself establish an ontological phase transition. `Philosophy/hooks/PH_MR01_Representational_Gradualism_Integration_Hook.md` supplies this guard.
 
-Neither burden demotes P1-T06, makes Stable ISP merely conventional, or turns a real choice moment into a graded event. They constrain only the stronger claims of phenomenal necessity and naturally discontinuous entry.
+Neither burden demotes P1-T06, makes Stable ISP merely conventional, or turns Selection occurrence into a graded agency test. They constrain only the stronger claims of phenomenal necessity and naturally discontinuous entry.
 
 ---
 

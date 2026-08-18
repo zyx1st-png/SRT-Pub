@@ -534,7 +534,7 @@ Under what structural conditions does ordinary change qualify as a selection can
 ### Primary files
 
 - `03_Bridges/SRT_Selection_Event_CompactCore.md` (compact discrimination layer; read first)
-- `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T05 Real Choice Moment; canonical carrier)
+- `Core/SRT_Core_21b_Constitutive_Theorems.md` (P1-T06 Stable ISP is the current P1 carrier; former P1-T05 is retained there only as the RC-A demotion record)
 - `03_Bridges/SRT_Choice_Generation_Conditions_2026-08-04.md` (T-D condition matrix, P2-P3)
 - `Core/SRT_OPEN_TENSIONS.md §14` (thresholds and discriminating gain not yet closed)
 

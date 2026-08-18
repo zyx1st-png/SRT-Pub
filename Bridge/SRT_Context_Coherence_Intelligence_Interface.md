@@ -23,6 +23,8 @@ dependency:
 
 # Context-Coherence Intelligence Interface
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **Positioning**: 本文件是 AI × Language × Social Cognition 的 P3 bridge hypothesis。它不新增 canonical definition，不提升当前 LLM 的主体性、意识或 stake 判断。
 
 ## 1. Core claim
@@ -41,7 +43,7 @@ In SRT terms:
 \text{temporary } L_2 \text{ scaffold for coherent } L_1 \to L_1 \text{ transformation}
 \]
 
-This scaffold can make output more stable, more context-sensitive, and more intelligent in the functional sense. It does not by itself establish a SRT `Real Choice Moment`, same-bearer stake, or `L_0 -> L_1` anchoring.
+This scaffold can make output more stable, more context-sensitive, and more intelligent in the functional sense. It does not by itself establish same-bearer stake, `L_0 -> L_1` anchoring, or stronger agency / subject-level revision standing; conversely, functional automation does not establish `no Selection`.
 
 ## 2. AI-side formulation
 
@@ -71,7 +73,7 @@ For inference-time LLMs, prefer the distinction:
 - **output selection**: token / response discrimination under current context;
 - **functional path selection**: multi-step route organization toward a supplied or locally generated condition;
 - **history-bearing selection**: later behavior changes because retained state preserves prior outcomes;
-- **SRT Real Choice Moment candidate**: a stronger event claim requiring the relevant SRT anchoring, consequence-bearing, and future-path constraints.
+- **bounded Selection-event candidate**: a P2/P3 CG/SEA audit output when the relevant event-level dimensions are supported; it is not a Selection definition or agency verdict.
 
 The first three may be real functional differences even when they remain within `L_1 -> L_1` organization. They should not be dismissed as causally empty simply because they do not yet satisfy the stronger SRT event criterion.
 
@@ -80,7 +82,7 @@ Thus:
 \[
 \text{functional selection}
 \neq
-\text{SRT Real Choice Moment}
+\text{proof of stronger agency / subjecthood}
 \]
 
 Selection coherence is therefore not the same as ontological anchoring.
@@ -215,7 +217,7 @@ This separation also blocks the reverse mistake: an unfaithful or non-verbal tra
 - Inference-time LLMs remain architecture-state restricted under `AI/AI_POSITIONING_NOTE.md`.
 - Do not use this note to claim that current LLMs possess subjecthood or suffering.
 - Prefer `output selection`, `functional path selection`, or `history-bearing selection` when those are what the system actually does; do not use `pseudo-selection` as a blanket label.
-- Do not collapse functional selection into SRT `Real Choice Moment`: the stronger event verdict requires the relevant anchoring, consequence-bearing, and historical-writeback conditions.
+- Do not collapse functional selection into proof of stronger agency / subjecthood. CG/SEA can support only a bounded Selection-event candidate; stronger agency/revision claims require their separate downstream guard.
 - Novelty is not ownership; ownership is not stake.
 - Language is not exhausted by fixed reference, but neither is reference or reality-resistance abolished.
 - A generated condition is not automatically a new `L_2`; historical stabilization is required.
@@ -225,7 +227,7 @@ This separation also blocks the reverse mistake: an unfaithful or non-verbal tra
 ## 8. Relation to existing SRT files
 
 - `AI/SRT_AI_Architecture_CompactCore.md` — context coherence amplifies reckoning but does not close the Reckoning-Judgment Gap.
-- `AI/SRT_AI_01_Ontology_CompactCore.md` — historical shorthand such as blanket `pseudo-selection` or novelty-based stake arguments should be read through `AI/SRT_AI_Claim_Status.md`; functional `L_1 -> L_1` selection remains below the stronger SRT Real Choice Moment claim unless additional gates are met.
+- `AI/SRT_AI_01_Ontology_CompactCore.md` — historical shorthand such as blanket `pseudo-selection` or novelty-based stake arguments should be read through `AI/SRT_AI_Claim_Status.md`; functional `L_1 -> L_1` selection does not by itself prove stronger agency, while automation does not prove absence of Selection.
 - `AI/SRT_AI_Claim_Status.md` — owns the AI-domain guardrails `novelty != ownership != stake` and the preferred selection terminology ladder.
 - `AI/AI_POSITIONING_NOTE.md` — inference-time claims remain architecture-state restricted.
 - `AI/patches/SRT_AI_AIREASON01_Reason_Trace_Separation_v0_1.md` — visible-trace semantics, causal contribution, mechanism correspondence and normative validity remain distinct.

@@ -18,6 +18,8 @@ dependency: [Operations/SRT_TB_TD_TE_CROSS_DOMAIN_STRESS_TEST_2026-08-04.md, Ope
 
 # CG-3 后果承受位置：操作化测试协议 v1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **角色说明**：本文件把 T-D 的 CG-3“代价或后果能够落到承受位置”压缩为可预注册、可追踪、可干预、可失败的操作协议。它不是 canonical、主体性判据、stake 定义、伦理归责规则或经验验证结论。
 >
 > **核心问题**：怎样区分“一个过程产生了某种影响或消耗”，与“某条路径的代价、损失、风险、约束或义务实际落到了一个可识别的后果承受位置”？

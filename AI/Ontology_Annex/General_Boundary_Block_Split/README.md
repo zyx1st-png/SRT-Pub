@@ -14,8 +14,8 @@ dependency: [SRT-AI-01, SRT-AI-CLAIM-STATUS, SRT-AI-POSITIONING-NOTE]
 
 > **Metadata cleanup note（2026-05）**：frontmatter 的 `claim_mode: navigation` / `canonical: false` 表示本目录只是阅读切片；历史正文中的 axiom/theorem/canonical 句式必须回读 AI claim-status 与 architecture-state rule。
 - 原始总文（保留，不删内容）：[`../00_General_Boundary_Block.md`](../00_General_Boundary_Block.md)
-- Source owner bytes: `52118`
-- Source owner SHA-256: `9f5106980d258c42f2a3ed8147eea2162f658ef4a212f88c8b430404955bf8c9`
+- Source owner bytes: `52613`
+- Source owner SHA-256: `ae9d7909ab68755409cdd013f609b8c81f5890781f9edfd8897ca9bc1fbfe092`
 - 本目录只承担连接器安全读取、导航与局部检索；不创建新的定义权或 claim status。
 - 修改正文含义时仍以 owner 文件与上游 canonical / governance 文件为准。
 

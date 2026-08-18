@@ -1,5 +1,7 @@
 # SRT Philosophy Hardening Index
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > Status: domain navigation index.  
 > Scope: philosophy-facing bridge hypotheses, agency/subjecthood patches, ontology analogues, and external-material patches.  
 > Canonical caution: indexed files are bridge/hardening notes unless explicitly promoted into a canonical SRT document.

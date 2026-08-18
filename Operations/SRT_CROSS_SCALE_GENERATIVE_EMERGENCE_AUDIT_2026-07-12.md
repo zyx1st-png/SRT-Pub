@@ -24,6 +24,8 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 >
 > **执行基线**：`c47d6b35989f9af09daa132dc9ce64c9b21c0679`（= main HEAD，PR #659 合并点）。所有 SHA、覆盖判断以此基线为准；后续任何目标文件被新 PR 更新，须重跑对应行。
 
+> **RC-A supersession note (2026-08-18)**：本文件是 2026-07-12 coverage snapshot；其中把 tower-level `r^{(n→n+1)}` / `真实重选率` 记作现行 P1-candidate hardening 的行，已被 RC-A Phase-0 后续裁决 supersede。当前 tower owner 已删除 scalar-rate hard gate；跨尺度 consequence-sensitive revision / reorientation 仅属 P2/P3 audit，不得把本审计的旧“已有”判断当作现行 authority。
+
 ---
 
 ## 0. 一句话结论
@@ -52,7 +54,7 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 | 反目的论护栏 | `Reference_Scaling.md` §11 line 716「涌现是被环境逼出的局部负熵代价，而非目的论进步」 | canonical | **已有** |
 | C1–C8 最低生成判据 / 涌现卫生 | `Core_21c` line 304 **Emergence hygiene guardrail**：涌现必须指明下层部件、组织耦合、转变参数、稳定宏观模式/L2 约束、实现通道 | P3 bridge（canonical-adjacent） | **已有**（判据模板已在） |
 | 健康代理判据 | 秩序增益四判据 可延续/可协调/**不外包**/可再选择，canonical 源 `Core_Law/SRT_Selection_Argument.md §7b.2`（决定登记于 `OPEN_TENSIONS` line 485，2026-07-05 作者裁决） | canonical（源为 Selection_Argument） | **已有** |
-| 上层不锁死下层 / 下层不捕获上层 | `Collective_Tower_Hardening_Notes.md` line 133：跨尺度真实重选率 `r^{(n→n+1)}` | P1-candidate hardening | **已有** |
+| 上层不锁死下层 / 下层不捕获上层 | `Collective_Tower_Hardening_Notes.md` 当前以跨尺度耦合、后果返回与 P2/P3 revision / reorientation audit 表述；former scalar `r^{(n→n+1)}` hard gate 已由 RC-A 删除 | P2/P3 audit + P1-candidate tower dynamics | **RC-A 后需分层读取**——方向性风险仍有审计价值，但 scalar reselection-rate 不是当前 hard condition |
 | 中心风险：跨尺度沦为类比 | `OPEN_TENSIONS` line 395 Cross-scale loop failure（登记处）；附录 line 92 | 未决登记（非 canonical） | **已登记** |
 
 **含义**：计划的多数构件属"已有"，Phase C/F/G 就这些构件而言无需新建；但表中三行 **相邻·不可等同**（协调性关闭、局部 optionality 下降、代理层生成对象）是真正未被 canonical 覆盖的生成步，见 §2 与 §4——它们不能被读成"已覆盖"，也不能被静默升级为 canonical 别名。
@@ -134,7 +136,7 @@ dependency: [SRT-CROSS-SCALE-GENERATIVE-EMERGENCE-WRITEBACK-PLAN, SRT-CANONICAL-
 
 - **`Reference_Scaling.md`**（blob `a23319321842`，canonical scaling）：已含跨尺度同构、PCC 原初约束闭包（生命起源语境）、反目的论。**本轮不修改**；协调性关闭与 PCC 是**相邻·不可等同**（PCC 不覆盖多单元局部可能性关闭→宏观自由度），故不写"别名"，也不新增公理（Phase G1 → 不改）。
 - **`Collective_Selection.md`**（blob `df0682ea1181`，L1 canonical）：已含 T-COLL-1 集体 ISP 四条件、制度=器官非主体、三退化型。**本轮不修改**——"代理层≠高阶ISP"这条**判据**已在此定义；但"共同背景如何长成代理层"这一**生成过程**未被定义，属相邻未覆盖（Phase G2 → 不改，仅登记为未决）。§561 已自列"制度能否自身成为集体 ISP"为待硬化——本轮不碰。
-- **`Collective_Tower_Hardening_Notes.md`**（blob `d544080b5789`，P1-candidate hardening）：已含"上层不锁死下层/下层不绑架上层"（`r^{(n→n+1)}`）。**本轮不修改**（Phase G3 → 不改）。
+- **`Collective_Tower_Hardening_Notes.md`**（本文件原基线 blob `d544080b5789`；RC-A superseded 2026-08-18）：原基线曾以 `r^{(n→n+1)}` 表述“上层不锁死下层/下层不绑架上层”。当前 owner 已删除该 scalar-rate hard gate，保留跨尺度耦合 / 后果返回分析，并把 consequence-sensitive revision / reorientation 限于 P2/P3 audit。故本行旧“已有 P1-candidate hardening”判断不再作为现行覆盖证据。
 - **`Core_21c_Bridge_Hypotheses.md`**（blob `fb0a32ea5d28`，P3 bridge）：已含侧抑制映射、涌现卫生护栏、L2 向下约束、cross-scale 单向回撤原则。它与计划想新建的 bridge **高度重叠**；本轮不新建平行 bridge。
 - **`OPEN_TENSIONS.md`**（blob `453f04491e6b`，`claim_mode: open`，**登记处非 canonical**）：已登记 cross-scale loop failure（line 395）、秩序增益四判据决定（line 485）。本轮**新增 1 条 Open Tension**：把"参与式退让/协调性关闭/选择代理层"与既有 PCC / 共享 L2 形成 / 集体 ISP 器官 的关系登记为**候选映射、尚待验证（非别名）**，并登记一条新未决项（局部 optionality↓→协调性关闭→宏观有效选择↑ 的可区分形式化）——防止后续 agent 既误当新术语、也误当已覆盖（见 §4）。
 

@@ -12,6 +12,8 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-PHYS-COSMO, SRT-CORE-14-COMPACT-CORE]
 
 # SRT Physics: Cosmology — Compact Core
 
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+
 > **定位**：本文件是 `Physics/SRT_Physics_Cosmology.md` 的紧凑主干版。  
 > **用途**：用于快速把握 SRT 在热力学、时间、引力与宇宙学上的最短主轴。  
 > **关系**：不替代原文；原文保留详细机制、实验预测、接口批次与长篇推导。
@@ -47,7 +49,7 @@ E_{select} \ge k_B T \ln 2
 \]
 
 最压缩的物理含义是：
-> **每一次真实选择都至少有能量代价。**
+> **RC-A 边界**：该 Landauer 式只能约束被具体实现为逻辑不可逆信息操作 / 物理重置的 bridge case，不能升级为“每一次 Selection occurrence 都至少支付 `k_B T ln 2`”的普遍定理。
 
 ### 2.3 Landauer Gap 的 SRT 解读
 SRT 进一步强调：

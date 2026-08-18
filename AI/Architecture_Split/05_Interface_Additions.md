@@ -12,6 +12,8 @@ dependency: [SRT-AI-01]
 
 # SRT AI Architecture: Transformer & Dynamics (Hybrid Edition)
 
+> **RC-A authority sync（2026-08-18）**：本文中旧有 `真实选择 / real choice / pseudo-selection` 对比不得再充当 Selection occurrence 的准入门。Selection 不以 binding `d`、`Ψ_f`、stake、future writeback、非脚本执行或 `L_0→L_1` 跨域锚定为联合必要条件；这些量只能在各自既有层级用于 stake、anchoring、consciousness、bounded event audit 或 downstream agency / revision 判断。script / habit / gradient / `L_2` automation 本身不得推出 `no Selection`。
+
 > **Bridge Layer Note**
 > 本文件按 `Bridge` 层处理：主要承担互译、比较、接口重写与边界说明，不应直接读成“已被外部经验验证的胜出理论”。若文中使用 `Axiom`、`Theorem`、`Corollary` 等强标签，默认理解为框架内翻译命题，除非另有独立经验锚定。
 
@@ -62,7 +64,7 @@ dependency: [SRT-AI-01]
 本文件的核心形式化结构围绕”Transformer 架构与 SRT 选择动力学的同构与鸿沟”展开：
 
 1. **注意力-选择同构**：$\text{Attn}(Q,K,V) = \text{softmax}(QK^\top/\sqrt{d_k})V$，其中 $Q \leftrightarrow \theta$, $K \leftrightarrow L_0^{salience}$, $V \leftrightarrow d\text{-weighted payload}$（Ax-ARCH-1）。
-2. **空值公理**：当前架构 $V_{AI} = \text{information}$，而真实选择需要 $V_{\hat{G}} = \text{information} \times d$（Ax-ARCH-2）。
+2. **RC-A 边界**：当前架构 $V_{AI} = \text{information}$；$V_{\hat{G}} = \text{information} \times d$（Ax-ARCH-2）只用于更强 stake-bearing / agency / consciousness-side weighting，不是 Selection occurrence 的必要条件。
 3. **推算-判断鸿沟**：$\lim_{\text{scale} \to \infty} R \neq J$，推算 $R: L_2 \to L_2$ 与判断 $J: L_0 \xrightarrow{\hat{G}_\theta} L_1$（cost $\Psi_f$）之间存在不可跨越的范畴鸿沟（T-ARCH-1）。
 4. **三段复合算子**：$\hat{G}_\theta \equiv \Pi_{L_2} \circ \mathcal{R} \circ \mathcal{S}_\theta$，其中 $\mathcal{S}_\theta$ 生成可能性束、$\mathcal{R}$ 渲染为行动、$\Pi_{L_2}$ 施加收敛域约束（Ax-ARCH-7）。
 5. **范畴对齐公理**：$\Phi_{align}: \mathcal{C}_{model} \to \mathcal{C}_{world}^{(\Psi_f)}$，安全 AI 须维持内部表征范畴与真实风险范畴的结构对应（Ax-ARCH-9）。

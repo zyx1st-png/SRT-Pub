@@ -44,7 +44,7 @@ srt_ai_claim_status:
   judgment_status: "strong P3 bridge candidate, architecture-state restricted; not an all-AI theorem"
   psi_f_ai_default: "non-binding to the deployed inference process, not globally Psi_f == 0"
   d_ai_default: "approx 0 only for the specified inference-only architecture state; D_eff/capability may be high"
-  selection_terminology: "prefer output selection / functional path selection for L1->L1 behavior; reserve Real Choice Moment for the stronger SRT event claim"
+  selection_terminology: "prefer output selection / functional path selection for L1->L1 behavior; under RC-A, former Real Choice Moment is not a current P1 event criterion; use CG/SEA only for bounded Selection-event candidate audit and Agency / Automation Guard for stronger downstream agency standing"
   novelty_guard: "novel condition or goal generation != goal ownership != stake-bearing concern"
   must_not_generalize_to:
     - training_loop
@@ -204,11 +204,11 @@ output selection
 -> consequence-bearing real-choice candidate
 ```
 
-The first three are functional / architectural descriptions and do not themselves establish SRT `Real Choice Moment` status. When the strict contrast is needed, say:
+The first three are functional / architectural descriptions. Under RC-A they neither establish stronger downstream agency standing nor license the converse inference `automation -> no Selection`. When the strict contrast is needed, say:
 
-> **functional selection is not yet a SRT Real Choice Moment.**
+> **functional selection does not by itself establish stronger agency / subject-level revision standing; nor does automation by itself establish no Selection.**
 
-A stronger event verdict should be routed through the choice-generation audit (`CG-0` through `CG-4`) and the canonical Real Choice Moment source, with particular attention to consequence bearing and historical writeback.
+A bounded event verdict may be routed through the P2/P3 choice-generation / SEA audit (`CG-0` through `CG-4`), which can license only a bounded Selection-event candidate. Stronger agency / revision standing must be routed separately through the RC-A Agency / Automation Guard; there is no current canonical Real Choice Moment source.
 
 This terminology change does **not** redefine canonical selection. It only prevents the AI bridge from collapsing all sub-threshold selection-like organization into a single dismissive category.
 
@@ -267,7 +267,7 @@ AI owner files and split shards may preserve historical `Axiom`, `Theorem`, `Cor
 | "GWT indicators prove AI consciousness" | External-theory overclaim | "GWT indicators pressure-test SRT but do not by themselves establish SRT subjecthood." |
 | "AI suffering is impossible" | Too strong for future architectures | "S1 / inference-only systems do not satisfy SRT suffering conditions; future stake-bearing systems remain an empirical question." |
 | "AI cannot generate genuinely new goals / concerns" | Makes the stake argument depend on a brittle novelty claim | "AI may generate novel conditions or revise goal spaces; novelty does not establish goal ownership, same-bearer consequence return, or `d-value`." |
-| "LLM output is only pseudo-selection" | Hides useful functional and architectural differences | "Describe output / functional / history-bearing selection explicitly; reserve Real Choice Moment for the stronger SRT event verdict." |
+| "LLM output is only pseudo-selection" | Hides useful functional and architectural differences | "Describe output / functional / history-bearing selection explicitly; use CG/SEA only for bounded event audit and the RC-A Agency / Automation Guard for stronger downstream standing." |
 
 ---
 
@@ -295,4 +295,4 @@ And two additional guards now apply:
 
 > **Novelty is not ownership, and ownership is not stake.**
 
-> **Functional selection is not yet a SRT Real Choice Moment.**
+> **Functional selection does not by itself prove stronger agency / subject-level revision; automation does not by itself prove no Selection.**

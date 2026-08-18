@@ -220,7 +220,7 @@ dependency: [SRT-INDEX, SRT-CLAIM-LADDER, SRT-D-VALUE-CANONICAL, SRT-PSIF-CANONI
 - 主文件：`Core_Law/SRT_Collective_Selection.md`
 - id：`SRT-COLLECTIVE-SELECTION`
 - layer：L1 / epistemic：os / status：draft_v0
-- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 按 ST-A 为**条件性集体反闭合候选**（P2/P3，不是 P1 theorem；需 neutral kernel、稳定语义、环境、无重置条件、时间窗与吸收/风险证明）；T-COLL-4 共选真实性判据（P1-T05 集体版）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`；§4.4-§4.7 保留集体四变量耦合与带闭包条件的投影候选。健康区、`M(t)`、`σ_{sr}^{coll}` 与制度通道均为 generative reselectability 的实现/诊断候选，不单独构成必要充分判据。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
+- 说明：固定多 ISP 共享 `L_2` 场作为结构对象；Def-C-2 后果回路矩阵 `M(t)` 作为诊断工具；T-COLL-1 给集体 ISP 存在四条件（P1-T06 的多主体扩展）；T-COLL-2 三类退化（聚合 / 主从 / 收编）；T-COLL-3 按 ST-A 为**条件性集体反闭合候选**（P2/P3，不是 P1 theorem；需 neutral kernel、稳定语义、环境、无重置条件、时间窗与吸收/风险证明）；T-COLL-4 集体 agency / revision guard（P2/P3 downstream；不是 P1-T05 集体版，也不是 Selection / collective-ISP existence criterion）；§4 扩展 `σ_{sr}^{coll}` / `d_c^{coll}`；§4.4-§4.7 保留集体四变量耦合与带闭包条件的投影候选。健康区、`M(t)`、`σ_{sr}^{coll}` 与制度通道均为 generative reselectability 的实现/诊断候选，不单独构成必要充分判据。最小 collective-selection canonical surface stops at §4.7 and the T-COLL definitions.
 - Tower/nested hardening pointer：H10-H16 has been extracted to `Core_Law/SRT_Collective_Tower_Hardening_Notes.md`. The extracted file is a secondary hardening notes file, not a new core canonical reference file and not part of the minimal canonical definition of collective selection.
 - 与 T-SUFF-5 的关系：本文件给出 T-SUFF-5 集体外部化的结构基础（`M(t)` 强不对称 → 主从型退化 → 结构型苦难外溢）
 - 与政治/经济/共同体 domain 的关系：本文件是它们的 L1 结构基石；制度是集体 ISP 的**器官**不是主体；投票/共识/专家不自动是共选

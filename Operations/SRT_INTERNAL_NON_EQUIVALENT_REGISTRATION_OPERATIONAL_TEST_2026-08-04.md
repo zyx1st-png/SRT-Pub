@@ -18,6 +18,8 @@ dependency: [Operations/SRT_CHOICE_TRACE_AUTHOR_DECISIONS_2026-08-04.md, Operati
 
 # 内部非等价登记：操作化测试协议 v1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **角色说明**：本文件把 T-B 的“比较门槛”和 T-D 的 CG-1“非等价登记”压缩为可干预、可失败、可与固定映射比较的操作协议。它不是 canonical、定义源、公理、统一指标或经验验证结论。
 >
 > **核心问题**：怎样区分“研究者看见了两个不同结果”，与“被研究系统内部确实对差异进行了非等价登记”？

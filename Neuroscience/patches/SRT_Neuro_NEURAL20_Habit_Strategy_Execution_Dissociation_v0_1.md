@@ -35,6 +35,8 @@ id: PATCH-NEURO-NEURAL20-HABIT-STRATEGY-EXECUTION-DISSOCIATION
 
 # SRT Neuroscience Patch NEURAL20: Habit Strategy–Execution Dissociation v0.1
 
+> **RC-A active-use override（2026-08-18）**：本文中早于 RC-A 的 `Real Choice Moment / real choice / live choice` 只保留为历史或 downstream agency / revision 语汇，不再是 P1 Selection criterion。CG/SEA 最多给出 P2/P3 bounded Selection-event candidate；通过不证明 agency，失败也不得推出 `no Selection`。script / habit / gradient / `L_2` automation 本身既不证明更强 agency，也不能反推“没有 Selection”。更强 agency / consequence-sensitive revision 另走 `03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md`。
+
 > **Status**: bounded neuroscience action-control bridge.  
 > **Canonical caution**: this patch does not define `L_2`, real choice, habit, compulsion, or the neural implementation of `G_hat_theta`. It separates two experimentally dissociable dimensions of habitual behavior.
 
@@ -52,12 +54,12 @@ Materials/2026/SRC_2026_08_03_Neuro_Asaoka_Habit_Strategy_Execution_Dissociation
 
 ## 1. Why this matters for SRT
 
-SRT distinguishes real choice moments from script execution and describes `L_2` as historically sedimented constraint. A common operational shortcut is nevertheless too coarse:
+RC-A distinguishes Selection from downstream agency standing and describes `L_2` as historically sedimented constraint; script execution alone neither proves stronger agency nor proves absence of Selection. A common operational shortcut is nevertheless too coarse:
 
 ```text
 more repeated or intense behavior
 -> stronger habit
--> more complete L2 replacement of live choice
+-> stronger `L_2` takeover of consequence-sensitive revision / reorientation
 ```
 
 The source reports a causal dissociation between the mechanism associated with adopting a habitual strategy and the mechanism regulating how much habitual behavior is executed. This means behavioral frequency cannot serve as a unitary readout of historical policy takeover.
@@ -133,11 +135,11 @@ Repeated action is not sufficient evidence that a historical policy has displace
 
 ### NEURAL20c — real-choice claims require reselection evidence
 
-Outcome insensitivity supports an automaticity claim but does not prove ontological absence of real choice. A stronger SRT test must ask whether the policy can be reopened, whether consequences return, and whether future action architecture changes.
+Outcome insensitivity supports an automaticity claim but does not prove absence of Selection. Reopening, consequence return and future-action-architecture change remain useful downstream agency / revision audit dimensions, not a P1 Selection criterion.
 
 ### NEURAL20d — pathological intervention may target different axes
 
-A system may require intervention at strategy admission, execution gain, reselection, or more than one axis. Suppressing output is not the same as restoring live choice.
+A system may require intervention at strategy admission, execution gain, reselection, or more than one axis. Suppressing output is not the same as restoring consequence-sensitive revision / reorientation capacity.
 
 ## 6. Experimental and operational consequences
 
@@ -166,7 +168,7 @@ Compare a trained routine that lowers local burden while preserving rapid revisi
 
 ## 7. Boundary cautions
 
-1. Outcome-insensitive behavior is not proof that real choice is metaphysically absent.
+1. Outcome-insensitive behavior is not proof that Selection is absent.
 2. The identified mouse pathways are task-specific implementation candidates, not universal SRT operators.
 3. The study is not a clinical OCD or addiction trial.
 4. Only male mice were reported in the discovery material used for this pass.

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-08-17
+id: SRT-CONTEXT-BUNDLE-DOMAIN-NEUROSCIENCE-2026-08-18
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-17
-source_commit: 8fcb97fd
-source_branch: agent/srt-pd-a-consistency-repair
-source_dirty: false
-inputs_digest: 6906e8853d7329ab
+generated: 2026-08-18
+source_commit: 1febdcc0
+source_branch: HEAD
+source_dirty: true
+inputs_digest: 519bcce7e75f9201
 ---
 
 # SRT 神经科学领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: 6906e8853d7329ab
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-17 |
-| 来源 commit | `8fcb97fd` |
-| 来源分支 | `agent/srt-pd-a-consistency-repair` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-18 |
+| 来源 commit | `1febdcc0` |
+| 来源分支 | `HEAD` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 5 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
