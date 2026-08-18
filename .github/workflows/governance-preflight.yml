@@ -28,6 +28,12 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Regenerate context bundles for closure artifact
+        run: uv run python scripts/build_srt_context_bundles.py
+
+      - name: Verify regenerated context bundles
+        run: uv run python scripts/build_srt_context_bundles.py --check
+
       - name: Check base main governance health
         id: base_governance
         if: github.event_name == 'pull_request'
@@ -186,3 +192,12 @@ jobs:
             governance-attribution.json
           if-no-files-found: warn
           retention-days: 14
+
+      - name: Upload regenerated context bundles
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rc-a-regenerated-context-bundles
+          path: Operations/Context_Bundles/
+          if-no-files-found: error
+          retention-days: 2
