@@ -22,6 +22,8 @@ tags: [Governance, Phase0_5, GOV_SUB01, Selection, StableISP, JointRemoval, L2, 
 # Phase 0.5 · GOV-SUB01 Relation-Level Subtractive Audit · Pass 2 — J1 / J2
 
 > **Scope**: execute the two lower-risk joint-removal tests opened by Pass 1. This record is governance-only. It changes no canonical definition, equation, symbol, theorem, relation alphabet, or domain bridge.
+>
+> **Naming guard**: this Phase-0.5 relation-audit “Pass 2” is **not** the earlier `Operations/Audits/SRT_CONCEPT_DELETION_PASS2_KAPPA_EPSILON.md`. It does not discharge the separate L0 / Usage-Rule-15 deferred `kappa_0`–`epsilon` independence question.
 
 ## 0. Verdict
 
@@ -69,19 +71,19 @@ The joint loss saturates because either missing relation already breaks the decl
 
 ## 1. Audit inheritance
 
-This pass inherits from Pass 1 without modification:
+This pass inherits the locked targets from Pass 1 by reference. The restatements below preserve the same scope and do not thin or thicken the target.
 
 ### `Y_SEL`
 
 Minimal one-shot Selection occurrence:
 
-> a non-objectified potential acquires determinate manifest actuality as an `L_1` event, without requiring persistence, Stable ISP, agency, or a prior chooser.
+> a non-objectified potential **difference** acquires determinate manifest actuality as an `L_1` event, without requiring persistence, Stable ISP, agency, or a prior chooser.
 
 ### `Y_ISP`
 
 P1-T06 recurrent history-bearing Stable ISP:
 
-> the same perspective- and history-bearing process is recurrently reconstituted, carries writeback, remains continued-selectable, and bears downstream consequences of what it selected.
+> the same perspective- and history-bearing process is recurrently reconstituted, repeatedly encounters currently effective, non-equivalent candidates rather than merely replaying a closed script, carries writeback such that outputs at `t` constrain `A_{t+1}`, remains continued-selectable, and bears downstream consequences of what it selected.
 
 ### Refit budget
 
@@ -151,6 +153,8 @@ This does **not** mean future efficacy is irrelevant. It means that a second lab
 - pair: **`N1` for `Y_ISP`**, with the loss attributable to historical efficacy.
 
 No `N2` is assigned.
+
+This target-relative compression does **not** remove or adjudicate P0-03's separate irreversible-foreclosure role. J1 only asks whether a second future-space label carries independent load for the declared P1-T06 recurrent target.
 
 ### 2.6 Governance guard
 
@@ -331,12 +335,18 @@ This pass does not:
 
 Closed here:
 
-- J1 history + future-space: **closed**;
-- J2 history + consequence return: **closed**.
+- J1 history + future-space: **closed for the declared `Y_ISP` target only**;
+- J2 history + consequence return: **closed for the declared `Y_ISP` target only**.
+
+Not re-adjudicated here:
+
+- P0-02 anchoring persistence as a separate target;
+- objecthood / re-identification / reselectability targets outside P1-T06;
+- the older `kappa_0` / `epsilon` GOV-SUB01 Pass-2 question.
 
 Open after this pass:
 
 - J3 primitive actualisation / non-neutrality relation;
 - J4 cost vs consequence-bearing independence.
 
-**Final disposition:** `J1 CLOSED / J2 CLOSED / NO GRAMMAR / NO CANONICAL EDIT`.
+**Final disposition:** `J1 CLOSED FOR Y_ISP / J2 CLOSED FOR Y_ISP / NO GRAMMAR / NO CANONICAL EDIT`.
