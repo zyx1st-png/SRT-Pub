@@ -805,16 +805,16 @@ history dependence, is itself new; the contribution is the matched-present
 identification protocol and its controls.
 
 Two of the closest neighbors are our own. **Costly selective closure** [Zhang,
-unpublished manuscript] asks what makes an artificial system life-like and isolates
-token-level irreversibility through post-withdrawal cooperation; its central
-operation is persistence after support is withdrawn. The present paper asks an orthogonal question —
+manuscript submitted to *Adaptive Behavior*] asks what makes an artificial system
+life-like and isolates token-level irreversibility through post-withdrawal cooperation;
+its central operation is persistence after support is withdrawn. The present paper asks an orthogonal question —
 identification under a matched present — and treats persistence-after-withdrawal
 not as the target but as one dissociable component (P) that we show is neither
 necessary nor sufficient for selection-specific write-back. The two papers share a
 vocabulary of selection and history but answer different questions with different
-endpoints. **Ontological friction (Ψ_f)** [Zhang, unpublished manuscript] models a
-latent cross-modal control-cost factor for executive breakdown. This paper does not
-use anchoring friction or any
+endpoints. **The executive-friction / ontological-friction line** [Zhang 2026,
+*Frontiers in Neuroscience* 20:1837760] models a latent cross-modal control-cost
+factor for executive breakdown. This paper does not use anchoring friction or any
 Ψ_A as a load-bearing construct; cost enters only as the two side-measurements
 J_ext and J_write in Phase 1, with the explicit finding that neither tracks
 selection-specific write-back — the highest write dissipation belongs to the
@@ -919,7 +919,7 @@ state-tracking slow variable with the two-timescale architecture. The per-class
 four-bar arrival distributions and the latent erosion were completed by the
 authorized extraction round; the latter is reported only as a **two-point erosion
 comparison** (episode-end vs end-of-observation z), because a per-step record is not
-extractable without editing frozen code.
+extractable without editing frozen code, so only the two endpoints are reported.
 
 **9. What this paper does not claim.** Per the claim ledger fixed before
 drafting: no claim that natural systems exhibit historicity write-back; no claim
@@ -994,10 +994,11 @@ Whitehead, S. D., & Ballard, D. H. (1991). Learning to perceive and act by trial
 error. *Machine Learning*, 7, 45–83. https://doi.org/10.1007/BF00058926
 
 Zhang, Y. Costly selective closure: A comparative heuristic for life-likeness in
-artificial systems. *Unpublished manuscript.*
+artificial systems. *Manuscript submitted to Adaptive Behavior.*
 
-Zhang, Y. Ontological friction: A latent cross-modal control-cost factor for
-executive breakdown. *Manuscript in revision at Frontiers, ms 1837760.*
+Zhang, Y. (2026). A translational cross-modal control-cost framework for executive
+breakdown. *Frontiers in Neuroscience*, 20, 1837760.
+https://doi.org/10.3389/fnins.2026.1837760
 
 ---
 
@@ -1065,7 +1066,7 @@ at test (code-verified; the structural zero same-m/different-z = 0 is an
 implementation-level pipeline check confirming only-m carry — it is not independent
 causal evidence). **(B)** Sham mechanism gate:
 outcomes driven by an observable external action produce near-zero self-attribution
-(−0.015) but clearly positive external-attribution (+0.143) — controllable structure
+(−0.015) but clearly positive external-attribution (+0.143 > 0): controllable structure
 that is not attributable to the agent's own actions does not gate consolidation.
 *Source: results_mdp_holdout.json.*
 
