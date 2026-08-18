@@ -19,7 +19,7 @@ dependency: [SRT-EXECUTION-PLAN]
 > - **B（停驻观察）**：材料保留，但不形成自动处理义务；必须写明具名复活触发条件
 >   - `B1`：可转 A 候选，高优先 close-read / 二轮裁决 / 单篇 DOI 拆分
 >   - `B2`：guardrail-only，主要用于边界、降级、防误读、claim-ladder hygiene
->   - `B3`：public-prose-only / expression-only，只可作为公共表达素材
+>   - `B3`：public-prose-only / expression-only，只可作为公共写作素材
 > - **C（不融入）**：记录原因，不修改任何文档
 >
 > **输入格式**：文本粘贴 / PDF附件 / URL（触发 web_fetch）
@@ -60,7 +60,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part03 | [Material_Log/2026-08_Part03.md](Material_Log/2026-08_Part03.md) | 2 |
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 8 |
 | 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 5 |
-| 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 3 |
+| 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 4 |
 
 ---
 
@@ -91,13 +91,14 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-07-21 | trigger-based | Quanta / Philip Ball: *Thermodynamic Computers Go With the (Energy) Flow* + Melanson et al. `10.1038/s41467-025-59011-x`、Whitelam & Casert `10.1038/s41467-025-67958-0`、Whitelam `10.1103/kwyy-1xln`、Jelinčič et al. `10.1038/s44335-026-00075-3`（[SourceCard](../Materials/2026/SRC_2026_07_15_Computing_Ball_Thermodynamic_Computers_Quanta.md)） | `B1/B2` high-priority：`B1` for entropy–randomization–resynchronization bridge、trajectory computation、trained stochastic scaffold、selective-resynchronization related work and HDR external-programming negative control；`B2` for preventing `noise + constraint + readout` from being upgraded into `W_sel + bearer`、canonical `Psi_f`、stake or consciousness。复活触发：selective-resynchronization related work；bridge 获作者成文确认；HDR 增 stochastic control；AI 点名 thermodynamic/probabilistic hardware；`Psi_f` 完整能耗账本；公共文章需要“随机可被利用但噪声本身不选择”案例 |
 | 2026-07-22 | trigger-based | arXiv / Yanbo Zhang & Michael Levin: *Intelligence from Learnable Novelty*（arXiv:`2607.18433v1`；[SourceCard](../Materials/2026/SRC_2026_07_20_AI_Zhang_Levin_Learnable_Novelty.md)） | `B1` high-priority：observer-relative learnable-structure yield、`W_sel x S^phi_future` 二维分解、future learnability endpoint 与 structured-novelty discriminator；严格保留 `S^phi != Psi_f != d != W_sel`，不把 Rule 110、soliton、MNIST 聚类或 RL exploration 写成统一智能、价值、stake 或意识证明。复活触发：HDR 增 future-structure endpoint；selective-resynchronization 需要区分纯噪声与结构重组；完成代码复现或 cross-observer / observer-swap 测试；新版本或同行评审回应 fixed-observer exploitation、超参数依赖、FEP scope 与 universality 外推 |
 | 2026-07-23 | trigger-based | *Entropy* / Tai-Danae Bradley: *Entropy as a Topological Operad Derivation*（doi:`10.3390/e23091195`；arXiv:`2107.09581v2`；[SourceCard](../Materials/2026/SRC_2021_09_09_Math_Bradley_Entropy_Topological_Operad_Derivation.md)） | `B1/B2`：`B1` for operadic probability composition、Shannon-degeneration test、`Psi_f` compositional formalization、Fisher–entropy related work 与 selection-operad research；`B2` for preventing a finite classical probability-simplex theorem from being upgraded into cross-domain entropy unification、general topological invariant、structure-first ontology or SRT proof。严格保留：任意 derivation 只在零向量评价点由定理推出 `d_p(0)=cH(p)`，不是所有点都等于熵。复活触发：`Psi_f` 开始组合律/跨层残差形式化；Fisher 论文补 uniqueness 对照；Core 13a 施工 selection operad；open tensions 增纯概率成本退化压力；公共文章需要结构本位护栏 |
+| 2026-08-18 | trigger-based | 于春景, *主观报告能追踪意识体验吗？大语言模型与机器意识的耦合问题*（[SourceCard](../Materials/2026/SRC_2026_08_18_AI_Yu_Subjective_Report_Coupling.md)） | `B1/B2`：`B1` for architecture-conditioned report evidence 与 `history-sensitive != bearer-indexed history`；`B2` for preventing causal emergence / continual learning / symbol grounding / holonomy from being upgraded into phenomenality necessities or verdicts。复活触发：Stable ISP / bearer individuation / phenomenal necessity owner pass；persistent-agent vs checkpoint-clone same-bearer experiment；AIEVID01 reopen；或作者正式修订稿明确 subject-history / learning-rule plasticity / holonomy 关系。 |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：235 条
+- 总提交：236 条
 - A（融入）：158 条
-- B（观察）：27 条
+- B（观察）：28 条
 - C（拒绝）：50 条
-- 融入率：67.2%
+- 融入率：66.9%
