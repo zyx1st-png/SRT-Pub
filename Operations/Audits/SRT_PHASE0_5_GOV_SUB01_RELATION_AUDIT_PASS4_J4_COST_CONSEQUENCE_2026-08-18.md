@@ -73,19 +73,19 @@ No inverse implication is licensed either.
 
 ## 1. Target lock
 
-This pass inherits the targets from Pass 1 without modification.
+This pass inherits the locked targets from Pass 1 by reference. The restatements below preserve the same scope and do not thin or thicken the target.
 
 ### `Y_SEL`
 
 Minimal one-shot Selection occurrence under P0-01 / EX-A:
 
-> a non-objectified potential acquires determinate manifest actuality as an `L_1` event, without requiring persistence, Stable ISP, agency, or a prior chooser.
+> a non-objectified potential **difference** acquires determinate manifest actuality as an `L_1` event, without requiring persistence, Stable ISP, agency, or a prior chooser.
 
 ### `Y_ISP`
 
 P1-T06 recurrent Stable ISP:
 
-> the same perspective- and history-bearing process is recurrently reconstituted, carries writeback, remains continued-selectable, and bears downstream consequences of what it selected.
+> the same perspective- and history-bearing process is recurrently reconstituted, repeatedly encounters currently effective, non-equivalent candidates rather than merely replaying a closed script, carries writeback such that outputs at `t` constrain `A_{t+1}`, remains continued-selectable, and bears downstream consequences of what it selected.
 
 ### `Y_SEP`
 
@@ -326,8 +326,8 @@ Remain downstream. No Pass 1–4 result promotes a recurrent relation into agenc
 
 | Candidate | `Y_SEL` | `Y_ISP` | `Y_SEP` |
 |---|---|---|---|
-| cost / friction / payability relation | `R3` | `R3` | indispensable as one side of the distinction, but no residue label assigned outside its own burden target |
-| same-process consequence bearing | `R3` | `N1` | indispensable as the other side of the distinction |
+| cost / friction / payability relation | `R3` | `R3` | required as one relatum to state the separation target; no residue label assigned outside its own burden target |
+| same-process consequence bearing | `R3` | `N1` | required as the other relatum to state the separation target; no additional residue label assigned |
 | joint pair | `R3` | `N1` | independence preserved under crossed perturbation |
 
 No `N2` is assigned.
@@ -355,11 +355,11 @@ It does not:
 
 ## 11. Closure of the low-risk relation sweep
 
-With J4 complete, all lower-risk relation interactions opened by Pass 1 are discharged:
+With J4 complete, all lower-risk relation interactions opened by Pass 1 are discharged for their declared targets:
 
-- J1 history + future-space: **closed**;
-- J2 history + consequence return: **closed**;
-- J4 cost + consequence return: **closed**;
+- J1 history + future-space: **closed for `Y_ISP`**;
+- J2 history + consequence return: **closed for `Y_ISP`**;
+- J4 cost + consequence return: **closed for `Y_SEL`, `Y_ISP`, and the narrow `Y_SEP` separation target**;
 - J3-D primitive-role rival stress: **executed separately**; exact actualisation / `epsilon_pg` relation remains unresolved without canonical edit.
 
 No additional low-risk relation should be invented merely to keep Phase 0.5 moving.
