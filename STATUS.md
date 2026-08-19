@@ -5,14 +5,14 @@ status: active
 layer: meta
 epistemic_layer: os
 claim_mode: evidence
-updated: 2026-08-18
+updated: 2026-08-19
 ---
 
 # SRT 当前状态仪表盘
 
 > **角色**：当前状态面板（fast bootstrap 直接读 §Fast Status，本文件已兼任原 `STATUS_FAST.md` 职责）。
-> **最后更新**：2026-08-18
-> **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` + 2026-08-16 convergence decisions + 2026-08-18 Frontiers publication-status sync
+> **最后更新**：2026-08-19
+> **当前排期裁决**：`Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md` + 2026-08-16 convergence decisions + 2026-08-18 Frontiers publication-status sync + 2026-08-19 research-corpus increment adjudication
 > **历史条目**：`Operations/Status_History/`（本面板只保留最近约 30 天）
 > **年度变更摘要**：`Governance/_SRT_CHANGELOG_2026.md`
 
@@ -20,6 +20,7 @@ updated: 2026-08-18
 
 - 首读顺序唯一权威：`AGENTS.md §Session Start`。
 - **当前第一优先工作线：SRT Consolidation Phase。** 不再以新增 patch / hook 数量作为进展指标；优先关闭 owner-level contradiction、降低 pending-hook backlog，并把现有 hook 分流为 landed / parked / author-gate / obsolete。材料阅读可继续，但新 hardening patch 只用于新反例／作者级边界门／无法由现有结构承载的 direct owner increment。
+- **2026-08-19 研究语料增量裁决**：完成 62,103 个文档路径盘点与 86 个候选文件初次深读后的 owner 去重。唯一 owner-level 增量为 Laukkonen–Slagter A 类 bounded corrective guardrail：预测／反事实时间深度降低不推出无 Selection、`L_2` 全局停用、接触 `L_0` 或 `DMN=L_2`；Fields–Levin 停驻为 B2，其他初筛簇不新建节点。无 D-track、canonical、patch、hook 或 registry 增量。
 - **2026-08-16 作者已选择 HP-B-B**：perspective-center individuation 与 phenomenal necessity 分开；`structural bearing (B_s) != phenomenal bearing (B_p)`，`B_s -> B_p` 当前不是已证定理。`Philosophy/SRT_HardProblem_Epistemology.md` 已从完整“僵尸消解”口径改为“view-from-nowhere 部分消解 + phenomenal necessity 开放构成桥”；Z6/SRT-zombie deletion pressure 保留。裁决见 `Operations/SRT_PHENOMENAL_NECESSITY_AUTHOR_DECISION_PACKET_2026-08-16.md`。
 - **2026-08-16 synthesis target freeze**：继承 2026-08-11 bounded probe 的 Case A / STOP 与 Philosophy Route 8a closure，新的 patch / hook 不再默认指向 AI CompactCore、Neuroscience N1–N13、Neural Mechanisms CompactCore 或为已测 Philosophy cluster 新建 synthesis。历史 target 引用保留为工程记录，不代表当前施工授权。复活条件仅为：新的 bounded probe 转为 Case B/C、owner-level contradiction 无法局部修复，或作者明确重新授权。见 `Operations/SRT_SYNTHESIS_TARGET_FREEZE_2026-08-16.md`。
 - **2026-08-17 RC-A**：former `P1-T05: Real Choice Moment` 已从 P1 降为 P2/P3 Agency / Automation Guard；`Selection != Agency`，script / habit / gradient / L2 automation 不得反推“没有 Selection”。P1-T06 Stable ISP 保留。裁决/同步记录见 `Operations/Audits/SRT_RC_A_P1_T05_DEMOTION_DERIVATIVE_SYNC_2026-08-17.md`。
@@ -30,7 +31,7 @@ updated: 2026-08-18
 - 2026-08-11 作者已选择 **EX-A**：`P0-01` 固定 determinate `L_1` event 的 manifest actuality；`P0-02` 只处理该事件是否留下有效痕迹、获得维持条件并持续约束后续转移；stable ISP identity 仍由 `P1-T06 / ST-A` 承担。旧式 `E = 1-H(L_1)/H(L_0)` 已降至 21C B14 的历史启发式，不再是 P0 方程或量化读出；EX-A 未采用全局 `H(L_0^{abs})`、归一化或 existence index。
 - 2026-08-12 `Core_14` 跨尺度熵证明审计已落地：`ΔS=H(L_0)-H(L_1)`、无条件粗粒化熵式与“所有尺度共同满足最小作用”不再支撑同构；strict conjugacy 只在尺度映射可逆时保留为特殊 P3 候选。一般接口回到 `P3-B06 / T-Scale-02C1` 的近似交换，并须声明状态空间、尺度映射、保留观测量、比较范数、容差与失败例。跨尺度共同项只到选择—约束—可支付性语法。
 - 2026-08-12 首个有界实例 `P3-Scale-NB1` 已落地：广义“神经除法归一化 → 认知／行为选择”为**红灯软连接**；相对神经响应不是离散选择，`H-λE` 也不唯一推出除法归一化。当前仅保留**黄灯条件接口**：具名候选映射、冻结读出、阈值／累积或采样规则、执行门、held-out 误差、rival 比较与神经干预跟踪必须同时过门。具名工作线 `NB1-MOFC-Lottery-v0` 已形成 P4 执行卡；W0 公开核查只确认作者请求路径，未定位到公共 trial-level 数据／代码包，请求草稿已备但未发送。formal lock、预注册与执行均未完成，没有完成态数据把该桥转绿。
-- **Pipeline 1 当前正式口径：233 条，A 156 / B 27 / C 50；最新 split 为 `2026-08_Part06:1`。** 2026-08-14 至 08-16 新增正式记录仍均为 A，但 A verdict 只证明材料裁决，不自动证明 owner-level assimilation。
+- **Pipeline 1 当前正式口径：238 条，A 160 / B 28 / C 50；最新 split 为 `2026-08_Part06:6`。** dated-part 汇总此前已到 236 条而本页未同步；本轮在该基线上新增 Laukkonen–Slagter A 与 Fields–Levin B2。A verdict 只证明材料裁决，不自动证明 owner-level assimilation。
 - 论文线：
   - **Frontiers 论文已正式出版**：Zhang Y. (2026), *A translational cross-modal control-cost framework for executive breakdown*, *Frontiers in Neuroscience* 20:1837760，DOI `10.3389/fnins.2026.1837760`，出版日 2026-08-06。此前“因 APC 过高准备终止并转投”的路径已被出版事实 supersede；APC / 费用沟通属于行政事项，不再改变 bibliographic status；
   - *Costly Selective Closure* / Adaptive Behavior 已投稿，尚未进入外部评审；
@@ -61,7 +62,7 @@ updated: 2026-08-18
 - Choice-trace 作者门已关闭；T-B、T-D、T-E 首轮 bridge 与五域联合压力测试已经完成，不再列为“待建立”。
 - SEA 已形成统一协议、AI 正负校准、生命边界案例、制度配对案例与编码手册；方法贡献仍为 candidate，可靠性 pilot 暂缓。
 - forcing–CH 已完成 D05 C5-op、方法个体化协议、控制案例选择协议、多表征方法族审计和 countable-standard-model premise 窄类型说明；控制档案 Part II 仍未签署。
-- Pipeline 1 截至本轮材料台账正式口径为 **233 条：A 156、B 27、C 50；最新 split 为 `2026-08_Part06:1`**。
+- Pipeline 1 截至本轮材料台账正式口径为 **238 条：A 160、B 28、C 50；最新 split 为 `2026-08_Part06:6`**。
 - 2026-08-16 convergence pass 已启动：HP-B-B owner landing + synthesis-target freeze + bootstrap 状态刷新；pending-hook burn-down 是下一独立工作包，不在本轮 PR 内批量执行。
 - **Frontiers `1837760` publication-status sync complete**：仓库当前状态统一以 2026-08-06 published + DOI `10.3389/fnins.2026.1837760` 为准；旧 transfer plan / in-revision 字符串只能作为带日期的历史记录读取。
 
@@ -82,6 +83,13 @@ updated: 2026-08-18
 - 当前工作线排期 → `Operations/SRT_WORKLINE_AUTHOR_PRIORITIES_2026-08-05.md`
 
 ## 最近关键推进
+
+### 2026-08-19 · 研究语料全量召回、86 文件初读与增量去重
+
+- 全量扫描覆盖 62,103 个文档路径、12,039 个独立内容哈希；按优先级对 86 个候选文件完成首次全文级深读，包括 PDF 书籍、论文和碎片笔记。
+- 初筛候选经 current owner、既有 SourceCard 与 `GOV-SYN01` 二轮去重后，只保留一处 direct owner correction：冥想中的 prediction-depth/precision change 不决定 Selection status，也不提供 `L_0/L_1/L_2` 神经身份映射。
+- Laukkonen–Slagter记为 A（bounded corrective guardrail，O-track only，D-track none）；Fields–Levin记为 B2（guardrail / near-duplicate，具名触发复活）；信息、语言、未来效用记忆与宽泛冥想／意识簇不新建节点。
+- 本轮没有 canonical、patch、hook 或 registry 增量；全文抽取缓存、Finder xattr 审计和语料副本不进入版本库。
 
 ### 2026-08-18 · Frontiers 出版状态同步与 post-publication bridge
 

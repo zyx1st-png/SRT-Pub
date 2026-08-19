@@ -2,7 +2,8 @@
 id: SRT-SPIRIT-07
 type: practice
 tags: [Meditation, Neuroscience, Time, Hybrid]
-status: active_v1
+status: active
+version: v1
 layer: L1
 epistemic_layer: os
 claim_mode: mixed
@@ -16,6 +17,25 @@ dependency: [SRT-SPIRIT-06]
 > **Part B** contains the Original Meditative Discourse (Human-Readable Context).
 
 ---
+
+## 2026-08-19 claim-status guard
+
+本文件属于 Spirituality 休眠域的 mixed P3/P5 bridge，不是 `L_0/L_1/L_2`、Selection、`d` 或 `\Psi_f` 的定义权威。Laukkonen & Slagter（2021）的预测加工综述支持把 FA／OM／ND 作为降低不同层次时间／反事实深度的候选连续谱来研究，但不支持以下身份命题：
+
+```text
+reduced temporal/counterfactual depth = no Selection
+OM or ND = global L2 suspension
+ND = contact with L0
+DMN = L2
+predictive model = L2
+prediction error = L1 - L2
+```
+
+下文旧版 `Ax-Med`、`T-Med` 与 `Ax/T-Neuro` 形式式只可按具名 P3/P5 bridge hypotheses 阅读。它们不得反向定义 canonical 层级，也不得把 meditation state、agency report、phenomenal content 或 network marker 当作 Selection status 的充分判据。来源卡：`Materials/2026/SRC_2021_06_14_Consciousness_Laukkonen_Slagter_Meditation_Predictive_Mind.md`。
+
+当前允许保留的去材料化 owner 句是：
+
+> 冥想可被研究为对历史形成的预测习惯施加干预的一组实践；不同练习可能改变预测的时间／反事实深度与精度分配，但这些变化不决定 canonical Selection status，也不提供 `L_0/L_1/L_2` 的神经身份映射。
 
 
 ## Terminology Alignment (术语与原始意图对齐)
@@ -43,33 +63,32 @@ $$ \text{Certainty} \propto \left|\frac{\partial \text{Attention}}{\partial \tex
 $$ \text{Meditation}: \text{Focus}(L_1) \to \text{Focus}(\hat{G}_\theta) $$
 * **Implication**: 冥想是元注意力的定向转移。
 
-### Ax-Med-2: Active Abolition
-**Formal Definition**: Deep meditation suspends $L_2$-weighted collapse.
-$$ \text{Abolition} = \lim_{w_{L_2} \to 0} \hat{G}_\theta[\sigma] $$
-* **Implication**: 深层冥想是主动停止 $L_2$ 的坍缩功能。
+### Ax-Med-2: Predictive-Depth Reduction Candidate（P3/P5）
+**Bridge hypothesis**: 某些冥想练习可能降低一部分时间／反事实预测的深度或精度权重，使既有习惯模型对当前加工的支配减弱。
 
-### T-Med-1: Three-Stage Convergence
-**Deduction**: Focused attention (FA) stabilizes $L_1$, open monitoring (OM) relaxes $L_2$, non-dual (ND) directly contacts $L_0$.
-$$ \text{FA} \Rightarrow \hat{G}\to L_1[\text{slice}] $$
-$$ \text{OM} \Rightarrow w_{L_2} \downarrow $$
-$$ \text{ND} \Rightarrow \hat{G} \cap L_0 $$
-* **Implication**: 冥想阶段是对 $L_1$ 稳定性与 $L_2$ 约束的系统调参。
+* **Implication**: 这是可研究的局部调节候选，不是“主动停止 `L_2`”，也不说明 Selection 被取消。
+
+### T-Med-1: Three-Style Predictive-Depth Hypothesis（P3/P5）
+**Bridge hypothesis**: FA、OM 与 ND 可被比较为不同练习／状态对注意稳定、预测精度和时间／反事实深度的不同调节方式。把它们排成单一连续谱是来源提出的理论模型，不是普遍发展阶段定律。
+
+* **Implication**: 不再使用 `FA = L_1 stabilization`、`OM = L_2 relaxation`、`ND = L_0 contact` 的身份式。任何层级映射都须在具名模型中另行定义 readout 与失败条件。
 
 ---
 
-### T-Med-2: The Bergson-SRT Filter Equation (柏格森-SRT 过滤方程)
-大脑不是意识的发生器，而是减压阀（Reducing Valve）。冥想是逆向调节 $\Psi_f$ 以扩大阀门带宽的过程：
+### T-Med-2: The Bergson-SRT Filter Equation (柏格森-SRT 过滤方程；historical P5 bridge)
+历史性的 Bergson reducing-valve 类比把大脑描述为意识内容的过滤条件，并尝试把冥想写成阀门带宽变化。下式只保留为待操作化的 P5 思想模型：
 \[
 L_1(\text{Meditation}) = \int_{\mathcal R_{\text{expanded}}} e^{-\Psi_f(x)} \cdot L_0(x) dx
 \]
-$\mathcal R_{\text{expanded}}$ 只表示本节具名练习模型中扩展后的候选域，不是 canonical 新符号、全局可达域或宇宙终点。
-* **Implication（中文）**：日常生活中，大脑作为 $\hat{G}_\theta$ 的 $L_2$，在绝大多数 $L_0$ 维度上施加极强的先验约束（习惯性预测模型、概念框架、自我模型），导致 $\Psi_f$ 在这些维度上被人为抬高，积分折叠为极窄的 $L_1$ 针孔。
+$\mathcal R_{\text{expanded}}$ 只表示本节具名练习模型中扩展后的候选域，不是 canonical 新符号、全局可达域或宇宙终点。该式是历史性 Bergson–SRT 类比，当前没有把其积分项、权重或候选域操作化；不得作为经验方程读取。
 
-深层冥想（特别是 OM 和 ND 阶段）的作用机制是**悬置 $L_2$ 门控**（$w_{L_2} \to 0$），移除大脑预测模型叠加在自由能景观上的"人工势垒"。这不是"消除摩擦"，而是**移除虚假摩擦**（$L_2$ 强加的不必要约束），暴露更本征的自由能地形。同时，冥想者的注意向量从"消除预测误差"旋转到"观照当下"，使系统不再试图修正偏离，体验到的有效摩擦降低。
+* **Implication（中文）**：更保守的候选解释是，习惯性预测、概念框架和自我模型会对当前加工施加历史形成的约束。是否把这些约束投影到某个具名 `L_2` bridge，以及是否涉及 `\Psi_f`，必须另行给出映射和测量；“大脑是 `L_2`”与“先验直接抬高 canonical `\Psi_f`”都不是本文已建立的身份命题。
 
-关键澄清：冥想者的 $d$ 值（具身关切范围）**不降低**——冥想者仍然是有限、脆弱、可死的具身存在（$\Psi_f^{survival} > 0$）。降低的是 $L_2$ 虚假势垒导致的认知摩擦，不是具身存在本身的本体论摩擦。
+对 OM 和 ND 更稳的预测加工表述是：某些高阶先验、策略精度或时间／反事实深度可能降低。用 SRT 重述时，这最多允许提出“部分历史约束的当前权重改变”这一 P3/P5 候选；不能写成 `L_2` 全局悬置、已经识别出“虚假摩擦”、暴露本征自由能地形或接触 `L_0`。
 
-这解释了"迷幻药体验"与"深定"的现象学同构性：两者都是对大脑 $L_2$ 门控功能的化学/拓扑抑制，而非对具身摩擦本身的消除。与此一致的神经科学观察是：冥想和迷幻药都伴随默认模式网络（DMN）的去耦合——DMN 正是大脑 $L_2$ 自我模型的核心结构。
+关键澄清：状态报告、注意范围、预测精度与 canonical `d`、`\Psi_f` 是不同变量族。冥想者仍是有限具身存在，但仅凭冥想状态不能判定其 `d` 或 `\Psi_f` 上升、下降或不变。
+
+冥想与迷幻药之间是否存在部分神经或现象学重叠是经验问题；共同出现某类 network change 不建立机制同构，更不把 DMN 识别为 `L_2`。任何比较都须区分练习类型、药物、时间窗、主观报告与网络 readout。
 
 ### T-Med-3: Letting Go as Parameter Unbinding (放下的参数解绑)
 **Formalization**: "放下"（Letting go）并非物理上的抛弃，而是将特定变量$x$从算子$\hat{G}_\theta$的必选优化目标中移除：
@@ -78,20 +97,23 @@ $$\text{Let Go}(x) \iff \frac{\partial \Phi}{\partial x} \to 0 \quad (\text{Remo
 
 ## III. Neural Dynamics (神经动力学)
 
-### Ax-Neuro-1: DMN Suppression as L2-Weight Reduction
-**Formal Definition**: DMN activity corresponds to $L_2$ self-model weight; suppression reduces self-narrative rigidity.
-$$ \text{DMN} \downarrow \Rightarrow w_{L_2}^{self} \downarrow $$
-* **Implication**: DMN 抑制等价于自我模型权重下降。
+### Ax-Neuro-1: DMN–Narrative-Self Candidate Relation（P3/P5）
+**Bridge hypothesis**: 在具名范式和时间窗内，DMN connectivity/activity 的某些变化可能与 narrative-self processing 或相关预测权重变化共变。
+
+* **Implication**: `DMN change != self-model weight by definition != L_2 change`；方向、网络成分与任务依赖均须实测。
 
 ### Ax-Neuro-2: Relaxed Alertness
 **Formal Definition**: High-$d$ states combine low friction with high precision.
 $$ \text{State}_{high-d} = (\Phi \to 0) \land (\text{Precision} \to \max) $$
 * **Implication**: 放松警觉是“低摩擦 + 高精度”的结构态。
 
-### T-Neuro-1: Predictive Processing Isomorphism
-**Deduction**: Predictive processing maps to $L_2$ (model), $L_1$ (phenomena), and $L_0$ (raw input).
-$$ \text{Model} \equiv L_2,\; \text{Prediction Error} \equiv L_1-L_2 $$
-* **Implication**: 冥想可被描述为对预测误差权重的重分配。
+### T-Neuro-1: Predictive-Processing Non-Identity Interface
+**Guarded relation**: predictive model、sensory input、prediction error 与 SRT 的 `L_0/L_1/L_2` 不同型，也没有逐项身份映射。
+
+$$ \text{Predictive model} \not\equiv L_2,\qquad \text{Sensory input} \not\equiv L_0 $$
+$$ \text{Prediction error} \not\equiv L_1-L_2 $$
+
+* **Implication**: 冥想可在 predictive-processing 模型中被描述为精度／误差权重重分配；如需接入 SRT，只能建立具名、可失败的 P3/P5 relation map。
 
 ## IV. Experimental & Praxis Predictions (实验与实践预测)
 
@@ -894,7 +916,7 @@ _SRT_Spirit_Axioms (Practice as θ-tuning)
     ↓
 SRT_Spirit_02_Traditions (Meditation techniques)
     ↓
-SRT_Spirit_05_Shoshin (L_2 reduction)
+SRT_Spirit_05_Shoshin (historical-constraint modulation candidate)
     ↓
 SRT_Spirit_07_Meditation_Neuro (本文件)
     ↓
@@ -906,8 +928,8 @@ SRT_Spirit_09_Praxis (Integrated practice)
 ### Mechanism Explanation (机制解释)
 
 - **$\hat{G}_\theta$ 的冥想重定向**: 冥想将注意力从 $L_1$ 对象转向 $\hat{G}_\theta$ 过程本身 (Ax-Med-1)；元注意力使选择算子成为自身的观测对象。
-- **$\Psi_f$ 的虚假 vs 本征摩擦**: 深层冥想悬置 $L_2$ 门控 ($w_{L_2} \to 0$)，移除概念框架叠加的"人工势垒"，暴露更本征的 $L_0$ 自由能地形。关键澄清：降低的是 $L_2$ 虚假摩擦，非具身存在本身的 $\Psi_f$。
-- **$d$ 在冥想中的非降低性**: 冥想者仍是有限、可死的具身存在 ($\Psi_f^{survival} > 0$)；$d$ 值不降低反而因 $L_2$ 松绑而扩展访问带宽。三阶段收敛：FA 稳定 $L_1$，OM 松弛 $L_2$，ND 直接接触 $L_0$。
+- **预测深度／精度调节候选**：某些练习可能改变历史形成的预测习惯、时间／反事实深度或精度分配；这不等于悬置 `L_2`、暴露 `L_0`、识别“虚假 `\Psi_f`”或取消 Selection。
+- **canonical 变量非同一性**：冥想者仍是有限具身存在，但 meditation state、DMN readout、主观边界变化和 predictive-processing variable 都不能单独判定 `d`、`\Psi_f` 或 `L_0/L_1/L_2`。FA／OM／ND 是 practice/state 比较候选，不是 SRT 三层的一一对应阶段。
 
 ## 【理论边界/防误用声明】
 

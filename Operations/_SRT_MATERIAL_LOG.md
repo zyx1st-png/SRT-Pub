@@ -2,7 +2,8 @@
 id: SRT-MATERIAL-LOG
 type: log
 tags: [MaterialLog, Pipeline1, AuditTrail]
-status: active_v1
+status: active
+version: v1
 role: split_master_index
 layer: meta
 epistemic_layer: os
@@ -60,7 +61,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part03 | [Material_Log/2026-08_Part03.md](Material_Log/2026-08_Part03.md) | 2 |
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 8 |
 | 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 5 |
-| 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 4 |
+| 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 6 |
 
 ---
 
@@ -91,13 +92,14 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-07-21 | trigger-based | Quanta / Philip Ball: *Thermodynamic Computers Go With the (Energy) Flow* + Melanson et al. `10.1038/s41467-025-59011-x`、Whitelam & Casert `10.1038/s41467-025-67958-0`、Whitelam `10.1103/kwyy-1xln`、Jelinčič et al. `10.1038/s44335-026-00075-3`（[SourceCard](../Materials/2026/SRC_2026_07_15_Computing_Ball_Thermodynamic_Computers_Quanta.md)） | `B1/B2` high-priority：`B1` for entropy–randomization–resynchronization bridge、trajectory computation、trained stochastic scaffold、selective-resynchronization related work and HDR external-programming negative control；`B2` for preventing `noise + constraint + readout` from being upgraded into `W_sel + bearer`、canonical `Psi_f`、stake or consciousness。复活触发：selective-resynchronization related work；bridge 获作者成文确认；HDR 增 stochastic control；AI 点名 thermodynamic/probabilistic hardware；`Psi_f` 完整能耗账本；公共文章需要“随机可被利用但噪声本身不选择”案例 |
 | 2026-07-22 | trigger-based | arXiv / Yanbo Zhang & Michael Levin: *Intelligence from Learnable Novelty*（arXiv:`2607.18433v1`；[SourceCard](../Materials/2026/SRC_2026_07_20_AI_Zhang_Levin_Learnable_Novelty.md)） | `B1` high-priority：observer-relative learnable-structure yield、`W_sel x S^phi_future` 二维分解、future learnability endpoint 与 structured-novelty discriminator；严格保留 `S^phi != Psi_f != d != W_sel`，不把 Rule 110、soliton、MNIST 聚类或 RL exploration 写成统一智能、价值、stake 或意识证明。复活触发：HDR 增 future-structure endpoint；selective-resynchronization 需要区分纯噪声与结构重组；完成代码复现或 cross-observer / observer-swap 测试；新版本或同行评审回应 fixed-observer exploitation、超参数依赖、FEP scope 与 universality 外推 |
 | 2026-07-23 | trigger-based | *Entropy* / Tai-Danae Bradley: *Entropy as a Topological Operad Derivation*（doi:`10.3390/e23091195`；arXiv:`2107.09581v2`；[SourceCard](../Materials/2026/SRC_2021_09_09_Math_Bradley_Entropy_Topological_Operad_Derivation.md)） | `B1/B2`：`B1` for operadic probability composition、Shannon-degeneration test、`Psi_f` compositional formalization、Fisher–entropy related work 与 selection-operad research；`B2` for preventing a finite classical probability-simplex theorem from being upgraded into cross-domain entropy unification、general topological invariant、structure-first ontology or SRT proof。严格保留：任意 derivation 只在零向量评价点由定理推出 `d_p(0)=cH(p)`，不是所有点都等于熵。复活触发：`Psi_f` 开始组合律/跨层残差形式化；Fisher 论文补 uniqueness 对照；Core 13a 施工 selection operad；open tensions 增纯概率成本退化压力；公共文章需要结构本位护栏 |
+| 2026-08-19 | trigger-based | Fields & Levin, *Thoughts and thinkers: On the complementarity between objects and processes*（doi:`10.1016/j.plrev.2025.01.008`；[SourceCard](../Materials/2026/SRC_2025_01_17_Philosophy_Fields_Levin_Objects_Processes_Memory.md)） | `B2`：objects/processes 互补与 memory-as-observation-resource 对 ST-A、EX-A、PH-MEM01、PH-DIFF01 有 guardrail 价值，但核心关系已被当前 owner 承载。不得写成 process ontology 证明 SRT、memory=hidden archive、object/process 任一描述单独给出 bearer identity。复活触发：ST-A／selector individuation／bearer-boundary owner 重开；需要 reference/pointer operational test；或出现两种描述产生不同干预预测的具名失败例 |
 
 ---
 
 ## 统计摘要（自动更新）
 
-- 总提交：236 条
-- A（融入）：159 条
-- B（观察）：27 条
+- 总提交：238 条
+- A（融入）：160 条
+- B（观察）：28 条
 - C（拒绝）：50 条
-- 融入率：67.4%
+- 融入率：67.2%
