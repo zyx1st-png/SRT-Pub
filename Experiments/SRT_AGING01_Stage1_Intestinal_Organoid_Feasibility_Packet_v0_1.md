@@ -630,7 +630,7 @@ None of these papers tests the full AGING01 repeated-challenge / matched-present
 
 ---
 
-## 19. Current disposition
+## 19. Current disposition and supersession note
 
 ```text
 Stage-1 model family: SELECTED FOR METHODS REVIEW ONLY
@@ -640,6 +640,22 @@ theory upgrade: NO
 roadmap priority landing: STILL PENDING
 ```
 
-Next required action:
+The methods close-read requested by the original v0.1 packet has now been completed. Read the later audit chain before treating any working family above as current preference:
 
-> **Methods feasibility close-read of the exact organoid genotypes / route perturbation and a bounded novelty review against ordinary epithelial memory / regeneration designs.**
+```text
+Operations/Audits/SRT_AGING01_STAGE1_INTESTINAL_ORGANOID_METHODS_READINESS_AUDIT_2026-08-19.md
+Operations/Audits/SRT_AGING01_STAGE1_G4_G5_REVERSIBLE_FORMATION_GATE_AUDIT_2026-08-19.md
+Operations/Audits/SRT_AGING01_PUBLIC_DATA_G5_PRECHECK_2026-08-19.md
+```
+
+Those audits narrow the current status to:
+
+```text
+G4 feasibility = established in principle;
+G5 partial convergence feasibility = established in principle;
+rich G5 + common P2 + route-specific future residual = not established;
+public-data decisive test = NO-GO at present;
+pilot-ready = NO.
+```
+
+Accordingly, this file is a **pre-pilot design record**, not the current execution plan. Any further injury-route G5 implementation must be handled in a separate Stage-1B branch / PR after #837 closure; no additional experimental-design scope should be added here.
