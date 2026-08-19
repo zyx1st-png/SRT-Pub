@@ -2,7 +2,8 @@
 id: SRT-AUDIT-AGING01-PUBLIC-DATA-G5-PRECHECK-2026-08-19
 type: public_data_feasibility_audit
 status: active
-record_stage: public_data_precheck
+record_stage: closed_v1
+closes_into: 03_Bridges/hooks/AGING01_Goal_Directedness_Consensus_Integration_Hook.md
 layer: operations
 epistemic_layer: experimental
 claim_mode: evidence
@@ -17,7 +18,7 @@ source_anchors:
   - GSE127172
   - GSE178698
   - GSE178700
-  - PMID:41903684
+  - DOI:10.1016/j.jcmgh.2026.101774
   - DOI:10.1016/j.cell.2019.10.015
   - DOI:10.1016/j.celrep.2021.110283
 tags:
@@ -199,9 +200,9 @@ Use these data to test whether the analysis pipeline correctly recognizes **visi
 
 ---
 
-## 4. 2026 human UC organoid inflammatory-memory study
+## 4. Hamdan et al. 2026 — human UC organoid inflammatory memory
 
-**Primary study:** *Intestinal Stem Cells From Patients With Inflammatory Bowel Disease Retain an Epigenetic Memory of Inflammation* (2026; PMID `41903684`).
+**Primary study:** Hamdan et al., *Intestinal Stem Cells From Patients With Inflammatory Bowel Disease Retain an Epigenetic Memory of Inflammation*, *Cellular and Molecular Gastroenterology and Hepatology* (2026), DOI `10.1016/j.jcmgh.2026.101774`.
 
 ### What it adds
 
@@ -273,7 +274,7 @@ This can help design a future T1 panel but cannot establish T1 reconvergence aft
 
 ### 5.3 Positive-control analysis
 
-For the 2026 UC inflammatory-memory dataset, if public data and metadata permit:
+For the Hamdan et al. 2026 UC inflammatory-memory dataset, if public data and metadata permit:
 
 ```text
 show that current chromatin features carry information about later response;
