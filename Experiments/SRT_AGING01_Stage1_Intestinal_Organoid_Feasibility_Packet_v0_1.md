@@ -623,8 +623,8 @@ Primary literature anchors support the following pieces only:
 
 - Ayyaz et al. 2019: Clu+ revival stem cells are injury-induced and can regenerate the intestinal stem-cell compartment.
 - Liu et al. 2021: injury-associated regenerative intestinal organoid states can be maintained / modeled in culture.
-- Moyer et al. 2024: p53 is required for appropriate Clu+ revival-stem-cell induction / regenerative reprogramming after severe radiation injury; organoid lineage-tracing and p53-pathway manipulation are feasible in that context.
-- Castillo et al. 2026: colonic stem cells can retain cell-intrinsic epigenetic memory of prior colitis after disease resolution and organoid isolation.
+- Morral et al. 2024: p53 is required for appropriate Clu+ revival-stem-cell induction / regenerative reprogramming after severe radiation injury; organoid lineage-tracing and p53-pathway manipulation are feasible in that context.
+- Nagaraja et al. 2026: colonic stem cells can retain cell-intrinsic epigenetic memory of prior colitis after disease resolution and organoid isolation.
 
 None of these papers tests the full AGING01 repeated-challenge / matched-present / route-switching protocol proposed here.
 
