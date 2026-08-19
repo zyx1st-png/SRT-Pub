@@ -17,6 +17,7 @@ dependency:
   - 03_Bridges/SRT_Aging_Selective_Maintenance_Bridge_2026-08-17.md
   - AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md
   - Core/SRT_Core_21c_Bridge_Hypotheses.md
+  - Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md
   - _SRT_PSI_F_CANONICAL.md
   - Core_Law/SRT_Irreversibility.md
   - 03_Bridges/SRT_Selection_Event_CompactCore.md
@@ -479,7 +480,26 @@ These need not prove a uniquely SRT-specific mechanism to be scientifically valu
 
 ### 12.3 Distinguishing tests remain optional but available
 
-If later theory advancement requires novelty adjudication, AGING01's existing same-information-budget competitor rules remain active. This consensus extension does not delete the subtractive audit; it changes the research priority from “difference first” to “shared structure first, divergence where consequential”.
+This priority is explicitly authorized by `GOV-SYN01` §4.1: **O-track value does not require a D-track increment**.
+
+Current contribution-track classification:
+
+```text
+O-track:
+  CLAIMED / PRIMARY
+  supported external mechanisms are organized into a bounded common structure
+  of goal-conditioned maintenance, bearer-specific consequence, writeback,
+  alignment and future maintenance accessibility.
+
+D-track:
+  NOT ESTABLISHED BY THIS CONSENSUS EXTENSION
+  the narrower Maintenance-History Topology candidate remains available only
+  under AGING01's pre-frozen rival + same-information-budget prospective tests.
+```
+
+Therefore “shared structure first” does **not** bypass the prior subtractive audit. If later theory advancement claims irreducibility, superiority or unique empirical increment, GOV-SUB01 and the existing AGING01 same-information-budget competitor rules remain mandatory.
+
+This consensus extension changes the research priority from “difference first” to “shared structure first, divergence where consequential”; it does not convert O-track synthesis into empirical validation.
 
 ---
 
@@ -513,6 +533,7 @@ Materials/2026/SRC_2026_08_18_Biology_Pio_Lopez_Levin_Aging_Goal_Directedness.md
 03_Bridges/SRT_Aging_Selective_Maintenance_Bridge_2026-08-17.md
 AI/patches/SRT_AI_AIGOAL01_Goal_Selection_Completion_Separation_v0_1.md
 Core/SRT_Core_21c_Bridge_Hypotheses.md §P2/P3-B13
+Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md
 ```
 
 Owner-level integration is **pending** and is not required for this bridge to remain useful. No P0/P1 theorem, canonical definition or symbol is modified here.
