@@ -291,7 +291,7 @@ Hardening produces both faster default selection and higher cost of alternative 
 Failure condition:
 
 ```text
-Memory / habit strength fully explains automation and rigidity.
+Memory / habit strength fully explain automation and rigidity.
 ```
 
 Narrowing condition:
@@ -506,6 +506,16 @@ Treat scale-invariance as a heuristic analogy rather than a strong SRT structura
 | P1 | AI subjecthood threshold benchmark | flagship application, high public relevance |
 | P1 | institutional friction-export case study | ethics / political application |
 | P2 | cross-domain hardening comparison | ambitious flagship prediction |
+
+### Parked / pre-pilot work — not in execution queue
+
+The roadmap also indexes work that exists under `Experiments/` but is **not** part of the active priority queue.
+
+| Workline | Files | Status | Re-entry condition |
+|---|---|---|---|
+| **AGING01 — Recovered Present / Restored Future** | [`SRT_AGING01_Recovered_Present_Restored_Future_Protocol_v0_1.md`](SRT_AGING01_Recovered_Present_Restored_Future_Protocol_v0_1.md); [`SRT_AGING01_Stage1_Intestinal_Organoid_Feasibility_Packet_v0_1.md`](SRT_AGING01_Stage1_Intestinal_Organoid_Feasibility_Packet_v0_1.md) | **parked / pre-pilot only / not in execution queue** | reopen only in a separate Stage-1B branch/PR after a biologically relevant reversible injury-route history can be removed and a preregisterable Match-2 T1 overlap is feasible before common P2 |
+
+This row is navigation only. It does **not** assign P0/P1/P2 execution priority, mark the packet pilot-ready, freeze wet-lab parameters, or reopen the AGING01 empirical program.
 
 ---
 
