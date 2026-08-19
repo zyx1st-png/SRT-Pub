@@ -70,7 +70,7 @@ A canonical exclusion target was therefore run:
 X0 no-prior-chooser
 ```
 
-SRT-P does carry a genuine primitive-linked negative ordering consequence: P0-01's precedence / exhaustiveness blocks an already existent chooser, subject, agent, or stable selector from being ontologically prior to primitive Selection. Current P0-04 explicitly attributes that negative result to P0-01 ordering.
+SRT-P carries a genuine primitive-linked negative ordering consequence: P0-01's precedence / exhaustiveness blocks an already existent chooser, subject, agent, or stable selector from being ontologically prior to primitive Selection. Current P0-04 explicitly attributes that negative result to P0-01 ordering.
 
 However, frozen V2-PAR was itself constructed to preserve the same pre-objective / no-prior-chooser primitive boundary. The rival comparison therefore reaches:
 
@@ -296,7 +296,7 @@ Retain:
 
 #### SRT-P + `B'`
 
-P0-01 supplies determinate manifest actuality; P0-00 supplies the layer vocabulary in which determinate manifestation is the manifest-event layer. Under this residual background, SRT-P can regenerate the narrow result:
+P0-01 supplies determinate manifest actuality; P0-00 supplies the layer vocabulary in which determinate manifestation is the manifest-event layer. Under this residual background, SRT-P regenerates the narrow result:
 
 ```text
 primitive determinate manifestation
@@ -307,7 +307,7 @@ So the first execution's blanket `C3 = no primitive-link` was too coarse.
 
 #### Rival comparison
 
-V2-PAR has been frozen to preserve the same pre-objective primitive actualisation target. With the same P0-00-style layer vocabulary available in `B'`, it can map its primitive manifest event to `L1` only because it occupies the same primitive role.
+V2-PAR has been frozen to preserve the same pre-objective primitive actualisation target. With the same layer vocabulary available in `B'`, it can map its primitive manifest event to `L1` only because it occupies the same primitive role.
 
 This is not evidence of a successful reduction.
 
@@ -315,27 +315,17 @@ This is not evidence of a successful reduction.
 
 ### C3b — persistence / writeback at `L2`
 
-#### Suspended premises
+Remove direct L2 history/writeback / scaffold commitments carrying this target. P0-01 does not add history persistence, writeback, scaffold maintenance, or sedimented downward constraint.
 
-Remove direct L2 history/writeback / scaffold commitments carrying this target.
-
-#### SRT-P + `B'`
-
-P0-01 does not add history persistence, writeback, scaffold maintenance, or sedimented downward constraint.
-
-**Outcome:** `ADDITIVE NON-ENTAILMENT`.
+**C3b outcome:** `ADDITIVE NON-ENTAILMENT`.
 
 ### C3c — occurrence `!=` persistence
 
 Canonical P0-01's minimum kernel does not require persistence, which supports a narrow non-entailment. But the full structural distinction between occurrence and graded anchoring persistence is supplied by P0-02.
 
-**Outcome:** `PARTIAL PRIMITIVE NON-ENTAILMENT / FULL STRUCTURAL TARGET REQUIRES EXTRA PREMISE / RIVAL ROLE-ISOMORPHIC`.
+**C3c outcome:** `PARTIAL PRIMITIVE NON-ENTAILMENT / FULL STRUCTURAL TARGET REQUIRES EXTRA PREMISE / RIVAL ROLE-ISOMORPHIC`.
 
 ### C3 overall
-
-C3 does **not** support the old six-row claim that every primitive-link is simply `no`.
-
-Correct disposition:
 
 ```text
 L1 event admission: primitive-linked but rival-isomorphic
@@ -432,6 +422,8 @@ P0-01 does not itself supply `R_self`, `A_reorient`, reflective access, or reori
 
 ### C5 overall
 
+The distinction
+
 ```text
 burden/payability
 != stake-coupled concern
@@ -454,36 +446,30 @@ The first execution named P24-1..6 only. The corrected sweep includes:
 - Core 25 thermodynamic signatures;
 - Core 26 MISA attractor interface.
 
-This is still a declared sweep, not a claim to have searched every historical bridge file in the repository.
+This is a declared current routed sweep, not a claim to have exhaustively searched every historical bridge file.
 
 ### Core 24
 
-Current Core 24 already records:
+Current Core 24 records:
 
 - P24-1, P24-3, P24-4 are R2-absorbable at present;
 - P24-2, P24-5, P24-6 are downstream stake / normativity / agency worklines and cannot repair primitive Selection discrimination;
 - P24-7 is a P4/P5 combination hypothesis and combination surprise is not automatically rival-model discrimination;
 - current established D2 count remains zero.
 
-No current Core-24 item supplies a primitive-linked:
-
-```text
-O_SRT != O_R2
-```
-
-before data.
+No current Core-24 item supplies a primitive-linked `O_SRT != O_R2` before data.
 
 ### Core 25
 
 Core 25's thermodynamic signatures include irreversibility, hierarchy, broken detailed balance, cascade / turbulence, plus stake/payability/anchoring terms for consciousness-relevant candidates.
 
-Its own non-claims say these signatures do not prove SRT ontology. The candidate formulas are bridge-level and, where consciousness-relevant, explicitly import downstream `d`, payability, and anchoring. They therefore fail the primitive non-laundering / primitive-link burden for this duel.
+Its own non-claims say these signatures do not prove SRT ontology. The candidate formulas are bridge-level and, where consciousness-relevant, import downstream `d`, payability, and anchoring. They therefore do not satisfy this duel's primitive-link / non-laundering burden.
 
 ### Core 26
 
 Core 26 explicitly says MISA is not a new SRT axiom or metaphysical foundation. It is a dynamical implementation pattern for hardening through mutual inhibition, self-activation, attractor basins, writeback, and hysteresis.
 
-Its content is therefore downstream implementation / hardening machinery, not a primitive-linked observable disagreement supplied by P0-01.
+Its content is downstream implementation / hardening machinery, not a primitive-linked observable disagreement supplied by P0-01.
 
 ### C6 outcome
 
@@ -494,13 +480,13 @@ current primitive-linked prospective D2 affordance
 = not established
 ```
 
-This does not claim every possible future or historical bridge has been exhausted.
+No claim of repository-wide exhaustiveness follows.
 
 ---
 
 ## 9. X0 — canonical exclusion consequence: no prior chooser
 
-X0 is the correction required by the missed exclusion class.
+X0 corrects the missed exclusion class.
 
 ### Canonical source
 
@@ -511,7 +497,7 @@ Selection precedes existence
 exists x iff x in Range(G-hat)
 ```
 
-P0-04 then records the negative boundary:
+P0-04 records the negative boundary:
 
 > no prior chooser is required; a selector, subject, agent, or stable operator-pattern is downstream of primitive Selection, and this negative result follows from the ordering fixed by P0-01.
 
@@ -520,7 +506,7 @@ P0-04 then records the negative boundary:
 Remove from `B`:
 
 - the explicit P0-04 sentence stating the no-prior-chooser negative result;
-- direct downstream mirrors that simply cite the same conclusion.
+- direct downstream mirrors that merely cite the same conclusion.
 
 Retain:
 
@@ -539,15 +525,15 @@ prior existent chooser / subject / agent
 cannot be required as the ontological predecessor of primitive Selection
 ```
 
-This is a real primitive-linked **exclusion consequence**.
+This is a real primitive-linked exclusion consequence.
 
 ### Frozen V2-PAR comparison
 
-V2-PAR was deliberately defined without chooser, subject, or agent as its primitive explanation and to preserve the same pre-objectification target. That means its no-prior-chooser posture is already functionally role-isomorphic at the primitive level.
+V2-PAR was deliberately defined without chooser, subject, or agent as its primitive explanation and to preserve the same pre-objectification target. Its no-prior-chooser posture is therefore functionally role-isomorphic at the primitive level.
 
 It is **not** granted a new range biconditional.
 
-The rival can therefore match the operational exclusion only because the frozen rival itself was built to preserve the same primitive no-prior-chooser orientation. That is exactly the condition specified for Outcome C.
+The rival matches the operational exclusion only because the frozen rival was built to preserve the same primitive no-prior-chooser orientation. That is exactly the condition specified for Outcome C.
 
 ### Gate result
 
@@ -557,7 +543,7 @@ The rival can therefore match the operational exclusion only because the frozen 
 - non-lexical gate: pass — this is an ordering exclusion, not a name difference;
 - non-laundering gate: pass — agency is excluded as prior, not imported as a positive downstream target;
 - rival-stability gate: **unresolved due primitive-role isomorphism**;
-- external-judge gate: pass as a structural ordering claim, but no rival discrimination survives the prior gate.
+- external-judge gate: structurally stateable, but no rival discrimination survives the prior gate.
 
 ### X0 outcome
 
@@ -566,13 +552,11 @@ SRT-SIDE PRIMITIVE-LINKED EXCLUSION = YES
 RIVAL DISCRIMINATION = OUTCOME C / UNRESOLVED
 ```
 
-This corrects the original audit's additive-only blind spot.
-
 ### Scope guard
 
-X0 does not exhaust the exclusion class. Current P1-T01 (`causality not ontologically prior to Selection`) and P1-T04 (`Selection upstream of information readout`) are additional ordering surfaces that were **not** re-adjudicated as separate candidates in this corrected execution.
+X0 does not exhaust the exclusion class. Current P1-T01 (`causality not ontologically prior to Selection`) and P1-T04 (`Selection upstream of information readout`) are additional ordering surfaces that were **not** re-adjudicated as separate candidates here.
 
-Therefore do not cite this record as proving that the exclusion class contains only X0 or that no further primitive-linked negative consequence exists.
+Do not cite this record as proving that the exclusion class contains only X0 or that no further primitive-linked negative consequence exists.
 
 ---
 
@@ -590,7 +574,7 @@ Therefore do not cite this record as proving that the exclusion class contains o
 | C6 declared empirical/bridge sweep | no current incompatible forecast | no current incompatible forecast | no D2 affordance |
 | X0 no-prior-chooser exclusion | **yes** | primitive-role isomorphic | **Outcome C** |
 
-External-judge status is `n/a — not reached` for candidates that fail primitive-link or rival-stability before that gate. X0 is externally stateable, but rival discrimination still stops at role-isomorphism.
+External-judge status is `n/a — not reached` for candidates that fail primitive-link or rival-stability before that gate. X0 is externally stateable, but rival discrimination stops at role-isomorphism.
 
 ---
 
@@ -613,7 +597,7 @@ It carries at least:
 - primitive manifest-event admission in conjunction with the existing layer vocabulary (`C3a`);
 - a canonical exclusion / ordering consequence against a prior existent chooser (`X0`).
 
-But against V2-PAR those consequences reach **Outcome C**, because the rival was deliberately made primitive-role-isomorphic on pre-objectification / no-prior-chooser structure.
+Against V2-PAR those consequences reach **Outcome C**, because the rival was deliberately made primitive-role-isomorphic on pre-objectification / no-prior-chooser structure.
 
 ### Therefore
 
@@ -683,7 +667,7 @@ PD-A mature null / rival-equivalent workline scoreboard increment
 
 The PD-A rule requiring three independent mature null/rival-equivalent worklines across at least two middle-level consequences has **not** been triggered by this single governance derivation record.
 
-Any architecture / redundancy review mentioned below is therefore an **author option**, not a mandatory review triggered by the PD-A scoreboard.
+Any architecture / redundancy review mentioned below is an **author option**, not a mandatory review triggered by the PD-A scoreboard.
 
 ---
 
@@ -706,7 +690,7 @@ They may remain valuable and load-bearing at their own claim levels.
 
 The exclusion / ordering class is not closed. X0 shows one real primitive-linked negative consequence, while rival comparison remains unresolved because V2-PAR is role-isomorphic.
 
-A future fruitfulness review may examine existing canonical exclusion surfaces such as P1-T01 causality ordering or P1-T04 information ordering, but should do so only if independently valuable—not by inventing a new candidate merely to escape the additive negative result.
+A future fruitfulness review may examine existing canonical exclusion surfaces such as P1-T01 causality ordering or P1-T04 information ordering, but only if independently valuable—not by inventing a candidate merely to escape the additive negative result.
 
 ### Route A — retain-and-bound
 
