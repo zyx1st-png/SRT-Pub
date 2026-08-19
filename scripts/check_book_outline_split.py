@@ -125,6 +125,15 @@ def load_manifest() -> dict[str, Any]:
     return data
 
 
+def validate_live_path(path_text: Any, label: str, archive_prefixes: tuple[str, ...]) -> None:
+    if not isinstance(path_text, str) or not path_text:
+        fail(f"{label} must be a non-empty path string")
+    if path_text.startswith(archive_prefixes):
+        fail(f"{label} promotes archive material: {path_text}")
+    if not (ROOT / path_text).is_file():
+        fail(f"{label} does not exist: {path_text}")
+
+
 def validate_manifest(manifest: dict[str, Any]) -> int:
     if manifest.get("status") != "active":
         fail("BOOK_ACTIVE_MANIFEST status must be active")
@@ -138,6 +147,7 @@ def validate_manifest(manifest: dict[str, Any]) -> int:
     archive_roots = set(manifest.get("archive_roots", []))
     if archive_roots != EXPECTED_ARCHIVE_ROOTS:
         fail("BOOK_ACTIVE_MANIFEST archive_roots are incomplete or unexpected")
+    archive_prefixes = tuple(root + "/" for root in EXPECTED_ARCHIVE_ROOTS)
 
     hard_rules = manifest.get("hard_rules")
     if not isinstance(hard_rules, dict):
@@ -146,12 +156,30 @@ def validate_manifest(manifest: dict[str, Any]) -> int:
         if hard_rules.get(key) is not expected:
             fail(f"BOOK_ACTIVE_MANIFEST hard rule mismatch: {key}")
 
+    next_pass_plan = manifest.get("next_pass_plan")
+    if next_pass_plan is not None:
+        validate_live_path(next_pass_plan, "BOOK_ACTIVE_MANIFEST next_pass_plan", archive_prefixes)
+
+    next_pass_focus = manifest.get("next_pass_focus")
+    if next_pass_focus is not None:
+        if not isinstance(next_pass_focus, dict):
+            fail("BOOK_ACTIVE_MANIFEST next_pass_focus must be an object")
+        for key in ("primary_targets", "secondary_targets"):
+            targets = next_pass_focus.get(key)
+            if not isinstance(targets, list):
+                fail(f"BOOK_ACTIVE_MANIFEST next_pass_focus.{key} must be a list")
+            for index, path_text in enumerate(targets, start=1):
+                validate_live_path(
+                    path_text,
+                    f"BOOK_ACTIVE_MANIFEST next_pass_focus.{key}[{index}]",
+                    archive_prefixes,
+                )
+
     routes = manifest.get("concept_routes")
     if not isinstance(routes, list) or not routes:
         fail("BOOK_ACTIVE_MANIFEST concept_routes must be a non-empty list")
 
     primary_count = 0
-    archive_prefixes = tuple(root + "/" for root in EXPECTED_ARCHIVE_ROOTS)
     for index, route in enumerate(routes, start=1):
         if not isinstance(route, dict):
             fail(f"concept route {index} must be an object")
