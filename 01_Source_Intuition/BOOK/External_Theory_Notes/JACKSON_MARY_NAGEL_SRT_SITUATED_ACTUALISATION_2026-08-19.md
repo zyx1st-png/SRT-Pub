@@ -1,15 +1,21 @@
 ---
 id: SRT-BOOK-EXT-JACKSON-MARY-NAGEL-SITUATED-ACTUALISATION-2026-08-19
-type: external_theory_note
+type: external_theory_alignment_note
 status: active
 canonical: false
 scope: philosophy_of_mind_book_bridge
-claim_mode: comparison_pressure
+claim_mode: comparative_positioning_and_pressure_test
 layer: meta
 epistemic_layer: bridge
 created: 2026-08-19
 updated: 2026-08-19
-primary_source: https://www.themontrealreview.com/Articles/Conversation_with_Frank_Jackson.php
+pipeline_status: not_ingested_reading_note
+pipeline_reason: >
+  This file originated from a user-requested陪读 and is retained as a comparative
+  book/theory working note. It is not a Pipeline 1 evidence record, creates no
+  SourceCard or evidence-grade claim, and must not be cited as an ingested material
+  decision unless a later dedicated material-ingestion pass is completed.
+reading_source_url: https://www.themontrealreview.com/Articles/Conversation_with_Frank_Jackson.php
 related:
   - Philosophy/SRT_HardProblem_Epistemology.md
   - Philosophy/patches/SRT_Philosophy_PH_QUAL01_Reselective_Qualia_Geometry_v0_2.md
@@ -20,11 +26,11 @@ related:
 
 # Jackson–Mary–Nagel：从表征到位置化实际化的 SRT 压力桥
 
-> **用途**：记录 Frank Jackson 访谈、Mary 知识论证与 Nagel 视角问题对 SRT 的结构性启发与压力。本文是比较／桥接材料，不证明 SRT，不升级任何 consciousness、qualia、bearer 或 subjecthood 命题。
+> **用途**：记录 Frank Jackson 访谈、Mary 知识论证与 Nagel 视角问题对 SRT 的结构性启发与压力。本文是陪读后的比较／桥接工作笔记，**不是 Pipeline 1 已摄入材料，不证明 SRT，也不升级 consciousness、qualia、bearer 或 subjecthood 命题。**
 
 ## 1. 核心结论
 
-Jackson 后期路线最有价值的地方，不是简单否认 Mary 获得了新东西，而是把 `what-it-is-like` 尽量压入：
+Jackson 后期路线最有价值的地方，不是简单否认 Mary 获得了新东西，而是尽量把 `what-it-is-like` 压入：
 
 ```text
 world/body state
@@ -40,11 +46,11 @@ represented property
 != property instantiated by the representational vehicle
 ```
 
-但它同时形成一个强竞争解释：如果 `representation + recognition` 已经足以穷尽体验事实，那么 SRT 的 bearer、stake、consequence return、history writeback 与 reselectability 必须证明自己有额外的区分力，而不能只宣称“结构更多”。
+但它同时形成一个强竞争解释：如果 `representation + recognition` 已经足以穷尽体验事实，那么 SRT 的 bearer、stake、consequence return、history writeback 与 reselectability 必须证明自己有额外区分力，而不能只宣称“结构更多”。
 
 ## 2. Mary 应拆成四个不同问题
 
-Mary 思想实验最容易混淆的不是 physical / nonphysical，而是以下四层：
+Mary 思想实验最容易混淆的不是 physical / nonphysical，而是：
 
 ```text
 I. Description
@@ -60,13 +66,13 @@ IV. Phenomenality
    该实际事件是否／为何具有 felt presence
 ```
 
-SRT 的安全立场是：
+SRT 当前可以安全坚持：
 
 ```text
 description != situated actualisation
 ```
 
-但当前不得推出：
+但不得推出：
 
 ```text
 situated actualisation = phenomenality
@@ -76,13 +82,13 @@ situated actualisation = phenomenality
 
 这解释的是 `II -> III` 与 `III -> future structure`，不是 `III -> IV` 的 phenomenal-necessity 证明。
 
-## 3. Jackson 的真正薄弱处：recognition 是否已等于 phenomenality
+## 3. Jackson 的真正压力点：recognition 是否已等于 phenomenality
 
 即使接受：
 
 ```text
 R = red representation
-M(R) = the system recognises that it is representing in R-like manner
+M(R) = the system recognises that it is representing in an R-like manner
 ```
 
 仍可追问：
@@ -92,7 +98,7 @@ why M(R) is phenomenally present
 rather than a fully unconscious meta-representation?
 ```
 
-如果继续增加更高阶 recognition，问题可能只是上移一层。因此 SRT 不应说 Jackson “已经解决 hard problem”，也不应仅以更多功能变量反驳 Jackson。当前最强的约束仍是：
+如果继续增加更高阶 recognition，问题可能只是上移一层。因此 SRT 不应说 Jackson “已经解决 hard problem”，也不应仅以更多功能变量反驳 Jackson。当前最强约束仍是：
 
 ```text
 structural bearing != phenomenal bearing proved
@@ -134,7 +140,7 @@ bat process
 bat-side situated actualisation
 ```
 
-这里的关键不是“主观信息神秘不可传递”，而是：外部描述本身是另一个位置上的再次选择、划界、标准化与对象化。
+关键不是“主观信息神秘不可传递”，而是：外部描述本身是另一个位置上的再次选择、划界、标准化与对象化。
 
 ## 5. Nagelian point of view 不得直接等同于 SRT bearer
 
@@ -183,7 +189,7 @@ matched sensory / representational content
 
 ```text
 matched reportable representation
-+ severed / altered consequence-return structure
++ altered consequence-return structure
 -> does ownership / for-me attribution shift?
 ```
 
@@ -197,7 +203,7 @@ matched sensory representation
 
 ## 7. 一个更干净的 SRT 位置
 
-SRT 在 Jackson–Mary–Nagel 这组问题上的最佳当前位置不是传统反物理主义，也不是宣布功能主义已经闭合，而是同时拒绝两次未经论证的跳跃：
+SRT 在 Jackson–Mary–Nagel 这组问题上的最佳当前位置，是同时拒绝两次未经论证的跳跃：
 
 ```text
 objective description cannot replace situated actualisation
@@ -227,12 +233,14 @@ but lacks her own red-event historical anchor
 第一次经验发生：
 
 ```text
-Omega_Mary(t-)
+bearer_state(Mary, t-)
 -> q_red borne / incorporated at Mary-position
--> Omega_Mary(t+)
+-> bearer_state(Mary, t+)
 ```
 
-之后出现：
+这里故意不用 canonical 已占用的 `Omega` 记号；`bearer_state(...)` 只是本文的描述性占位写法，不申请符号表地位。
+
+之后可能出现：
 
 - recognitional basin；
 - 与其他 qualia 的新比较关系；
@@ -255,7 +263,7 @@ actualisation != phenomenality by definition
 本材料不应作为“意识证明”直接塞入正文。优先用于下一轮统一优化时加强两个问题：
 
 1. 科学的客观描述为何极其成功，却不能因此被误读为“没有位置的世界本身”；
-2. 对象化为什么不是错误，而是一种为了可交换、可重复、可预测而主动压低生成位置与生成历史的强大工作方式。
+2. 对象化为什么不是错误，而是一种为了可交换、可重复、可预测而主动标准化位置、边界与工作面的强大方式。
 
 详细施工路线见：
 
@@ -263,17 +271,12 @@ actualisation != phenomenality by definition
 01_Source_Intuition/BOOK/BOOK_NEXT_PASS_SCIENTIFIC_OBJECTIFICATION_POSITION_STRUCTURE_2026-08-19.md
 ```
 
-## 10. Sources / comparison anchors
+## 10. 来源边界
 
-Primary conversation source:
+当前陪读来源：
 
-- Frank Jackson, “Conversation with Frank Jackson,” *The Montreal Review*.
+- Frank Jackson, “Conversation with Frank Jackson,” *The Montreal Review*（见 frontmatter `reading_source_url`）。
 
-Comparison anchors to verify from primary publications before formal citation in book prose:
-
-- Jackson on the knowledge argument and representationalism;
-- Torin Alter on the representationalist reformulation / revenge of the knowledge argument;
-- Thomas Nagel, “What Is It Like to Be a Bat?”;
-- current SRT HP-B-B author decision and PH-CONSC04 zombie deletion pressure.
+后续如果要把 Jackson、Alter、Nagel 作为正式外部证据或引用材料进入 Pipeline 1，应另行完成 SourceCard / Material Log / Index / Registry 流程，并从原始出版物核实正式引用。本文当前状态不得被当作该摄入流程已经完成。
 
 No external author here is recorded as validating SRT.
