@@ -2,7 +2,7 @@
 id: SRT-OPS-AUDIT-SELECTION-EXCLUSION-SURPLUS-X1-X2-EXECUTION-20260819
 type: audit_record
 status: active
-record_stage: executed_x1_candidate_pending_independent_review_x2_outcome_c
+record_stage: final_review_corrected_x1_x2_all_outcome_c
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -13,349 +13,299 @@ dependency:
   - SRT-OPS-AUDIT-SELECTION-EXCLUSION-SURPLUS-X1-X2-SPEC-20260819
   - SRT-CORE-21A-MINIMAL-AXIOMS
   - SRT-CORE-21B-CONSTITUTIVE-THEOREMS
+  - SRT-OPS-AUDIT-SELECTION-PRIMITIVE-DERIVATIONAL-SURPLUS-DUEL-SPEC-20260819
   - SRT-OPS-AUDIT-SELECTION-PRIMITIVE-DERIVATIONAL-SURPLUS-DUEL-EXECUTION-20260819
-tags: [Selection, ExclusionSurplus, Ordering, Causality, Information, CandidateSurplus, OutcomeC, GOV_SUB01]
+tags: [Selection, ExclusionSurplus, Ordering, Causality, Information, OutcomeC, NegativeResult, GOV_SUB01]
 ---
 
-# Selection Exclusion-Surplus Audit — X1/X2 Execution
+# Selection Exclusion-Surplus Audit — X1/X2 Corrected Execution
 
-> **Execution basis**: frozen `SRT_SELECTION_EXCLUSION_SURPLUS_X1_X2_SPEC_2026-08-19.md`.
+> **Execution basis**: final-review-corrected `SRT_SELECTION_EXCLUSION_SURPLUS_X1_X2_SPEC_2026-08-19.md`.
 >
-> **Hard boundary**: governance-only conceptual derivation. No canonical file is edited. `candidate exclusion surplus` is a provisional audit classification, not D2/D3 evidence, not a new P1 theorem, and not proof that Selection is true, unique, fundamental, or empirically superior.
+> **Hard boundary**: governance-only conceptual derivation. No canonical file is edited. This record does not establish D2/D3 evidence, a new P1 theorem, Selection fundamentality, empirical superiority, or a residue promotion.
 
 ---
 
-## 0. Executive result
+## 0. Corrected executive result
+
+Independent final review fired the X1 downgrade gate. The provisional positive candidate is withdrawn.
 
 ```text
-X1-N causality not ontologically prior
-= SRT primitive-link: PASS under the declared ontological-instantiation scope
-= frozen V2-PAR: requires an additional existence/causality ordering premise to match
-= CANDIDATE EXCLUSION SURPLUS
-= PENDING INDEPENDENT REVIEW
+X1-I instantiated causality not ontologically prior
+= SRT primitive-link: YES as an existence-ordering substitution instance
+= frozen V2-PAR: already excludes prior determinate instantiated causality through its pre-objective / non-objectified-potential commitment
+= OUTCOME C / ROLE-ISOMORPHIC
+
+X1-P pre-objective causal propensity not prior
+= SRT can invoke the one-sided range/exhaustiveness biconditional
+= but that biconditional is the target-bearing premise withheld from frozen V2-PAR
+= INVALID SURPLUS UNDER BACKGROUND FAIRNESS
 
 X2-N determinate information readout not prior to manifestation
-= SRT primitive-link: PASS
-= frozen V2-PAR: already matches through the shared primitive actualisation role
+= SRT primitive-link: YES
+= frozen V2-PAR already matches through the shared primitive actualisation role
 = OUTCOME C / ROLE-ISOMORPHIC
 ```
 
-The post-#839 picture is therefore provisionally:
+Therefore:
 
 ```text
 C1-C6 additive surplus = not established
-X0 no-prior-chooser = SRT primitive-linked / Outcome C
-X1 causality negative ordering = candidate exclusion surplus, review-gated
-X2 information-readout ordering = SRT primitive-linked / Outcome C
+X0 no-prior-chooser = Outcome C
+X1 causality ordering = no candidate surplus survives
+X2 information-readout ordering = Outcome C
+
+NO CANDIDATE EXCLUSION SURPLUS ESTABLISHED IN X0-X2
 ```
-
-### Mandatory downgrade gates for X1
-
-The X1 candidate must be downgraded to `Outcome C / unresolved` if independent review establishes either:
-
-1. **domain-membership failure** — P0-01 by itself does not license treating an `ontologically instantiated causal relation` as falling under the `existence / Range(G-hat)` commitment, so that this membership is actually extra P1 content; or
-2. **rival-preemption failure** — frozen V2-PAR's existing prohibition on a prior domain mechanism already functionally excludes the X1 prior-causality target, so no new rival ordering premise is needed.
-
-Until those two checks survive review, do not cite X1 as an established Selection-specific surplus.
 
 ---
 
-## 1. Method
+## 1. Final-review corrections applied
 
-For each target:
+The provisional X1 record failed for three related reasons.
 
-```text
-B' = shared background
-     minus the target P1 theorem
-     minus direct mirrors of the same ordering claim
-```
+### 1.1 Rival-preemption correction
 
-Then test:
+Frozen V2-PAR was under-read in the first execution. It is not merely an assertion that actualisation is primitive; it is explicitly **pre-objective**:
 
 ```text
-SRT-P + B' -> X ?
-V2-PAR + B' -> X ?
-```
-
-### SRT-P
-
-Canonical P0-01 supplies:
-
-```text
-Selection precedes existence;
-existence is an image of Selection;
-exists x iff x in Range(G-hat);
-
-AM-A:
-non-objectified potential difference
--> determinate manifest actuality.
-```
-
-### Frozen V2-PAR
-
-```text
-primitive pre-objective effective actualisation admission:
 non-objectified potential difference
 -> determinate manifest actuality
 ```
 
-V2-PAR receives no range biconditional and no general theorem ordering all ontology, causality, or information after actualisation.
+and it was frozen specifically so it would not be forced to begin from a pre-given object/state space.
+
+An ontologically instantiated causal relation with determinate relata placed prior to primitive actualisation would reintroduce exactly such prior determinate ontology.
+
+So the primary X1-I target is already excluded by frozen V2-PAR without amendment.
+
+### 1.2 Background-fairness correction
+
+A fallback reading can posit a pre-objective causal propensity/disposition without determinate relata. That avoids the rival-preemption route.
+
+SRT-P can then appeal to:
+
+```text
+Selection precedes existence
+exists x iff x in Range(G-hat)
+```
+
+But the merged duel freeze also says an SRT surplus is invalid when produced by an extra target-bearing premise withheld from V2-PAR, while separately forbidding V2-PAR from acquiring a range biconditional after freeze.
+
+For this audit, those rules are reconciled as follows:
+
+> The canonical SRT range biconditional remains part of SRT-P, but its one-sided presence cannot by itself be scored as rival-specific surplus when that same biconditional is the target-bearing difference.
+
+Therefore X1-P is **invalid surplus under background fairness**, not a candidate surplus.
+
+### 1.3 Scope-ambiguity correction
+
+The provisional target phrase `ontologically instantiated causal relation` left open two materially different readings. They are now split:
+
+- X1-I: determinate instantiated relation with determinate relata;
+- X1-P: pre-objective causal propensity/disposition without determinate relata.
+
+Because each reading now receives an explicit adjudication, the final result is not left `unresolved`.
 
 ---
 
-## 2. X1-N — causality negative ordering
+## 2. Target suspension and near-mirror disposal
 
-### 2.1 Frozen target
+For X1, remove from residual background `B'`:
 
-Test only:
+- P1-T01 itself;
+- direct canonical / bridge mirrors saying causality is downstream, projected, or not prior;
+- the inherited governance sentence in the merged duel spec listing a `causality object` among things not licensed as ontologically prior merely to explain Selection.
+
+That inherited sentence is weaker than X1-I because of its `merely to explain` qualifier, but it is explicitly removed so the target-suspension record does not leave a near-mirror silently active.
+
+For X2, remove:
+
+- P1-T04 itself;
+- direct mirrors saying Selection is upstream of information readout;
+- the corresponding inherited governance sentence naming information readout as not prior merely to explain Selection.
+
+No P0-03 irreversibility, agency, `Psi_f`, `d`, stake, phenomenality, or normativity premise is used to generate X1 or X2.
+
+---
+
+## 3. X1 — causality ordering
+
+### 3.1 X1-I: instantiated causal relation
+
+Target:
 
 ```text
 an ontologically instantiated causal structure / relation
-is not licensed as ontologically prior to Selection
+is not licensed as ontologically prior to primitive Selection / actualisation
 ```
 
-Do **not** test or infer the full P1-T01 package:
+The full P1-T01 theorem remains outside target:
 
 ```text
 C_H(A -> B) = P(B | A, L2)
 all causality is an L2 projection
-any specific causal mechanism
 ```
 
-The target excludes purely metalogical or descriptive causal notation that is not itself asserted as ontologically prior.
+#### SRT side
 
-### 2.2 Target suspension
-
-Remove from `B`:
-
-- P1-T01 as a theorem;
-- direct mirrors whose sole function is to say causality is downstream / projected / not prior to Selection;
-- bridge restatements that merely cite P1-T01 for the same target.
-
-Retain:
-
-- P0-00 vocabulary gate;
-- P0-01 precedence / range biconditional / AM-A;
-- non-target P0/P1 structure;
-- RC-A / ST-A guards.
-
-P0-03 irreversibility is not used as a substitute for P0-01 ordering.
-
-### 2.3 SRT-side derivation
-
-P0-01 says:
+If `x` is stipulated to be ontologically instantiated, unrestricted P0-01 existence ordering licenses the schema:
 
 ```text
-Selection precedes existence
+x is ontologically instantiated
+-> x falls under the existence ordering governed by Selection
+-> x is not ontologically prior to Selection
 ```
 
-and:
+So SRT-side primitive-link passes as a substitution instance.
+
+#### Definition-echo caution
+
+Because X1-I builds `ontologically instantiated` into the antecedent, this is close to a definition/substitution echo. It establishes that P0-01 can order the stipulated entity-kind, but it does not by itself establish a distinctive rival surplus.
+
+#### Frozen V2 side
+
+A genuinely instantiated causal relation has instantiated/determinate relata. Placing that relation before V2-PAR's primitive transition would put determinate ontology before the frozen transition from **non-objectified potential difference** to determinate manifestation.
+
+That violates the rival's already-frozen pre-objective / no-pre-given-state-space construction.
+
+No new V2 causality theorem is needed.
+
+#### X1-I verdict
 
 ```text
-exists x iff x in Range(G-hat)
+SRT primitive-link = YES
+RIVAL DISCRIMINATION = OUTCOME C / ROLE-ISOMORPHIC
 ```
 
-Under the declared X1 scope, a causal structure / relation asserted as **ontologically instantiated** is part of the ontology whose existence is being ordered.
+### 3.2 X1-P: pre-objective causal propensity
 
-If such an instantiated causal structure were itself ontologically prior to Selection, an ontologically real relation would be placed before the primitive ordering through which SRT says existence is admitted as an image / range of Selection.
-
-Therefore, conditional on the target's ontological-instantiation scope:
+Target variant:
 
 ```text
-SRT-P + B'
--> instantiated causality is not ontologically prior to Selection
+a causal propensity/disposition exists in non-objectified potential
+without determinate prior relata
 ```
 
-This is the primitive-link basis for X1.
+This reading is not automatically excluded by V2-PAR's pre-objectivity clause.
 
-### 2.4 Explicit boundary
+SRT-P may use its stronger range/exhaustiveness biconditional to order such a posited existent after Selection. But this is exactly the premise asymmetry frozen into the comparison: SRT receives the biconditional; V2 is forbidden to receive a mirror after freeze.
 
-The derivation does not establish:
+Under the merged background-fairness rule, that one-sided target-bearing premise cannot be converted into an automatic surplus victory.
+
+#### X1-P verdict
 
 ```text
-all logical dependence is downstream of Selection
-all descriptive causal language is downstream of Selection
-P1-T01's L2 projection formula follows from P0-01 alone
-all causal processes are literally L2 projections
+INVALID SURPLUS UNDER BACKGROUND FAIRNESS
 ```
 
-The positive `L2` projection theorem remains separately load-bearing P1 content.
-
-### 2.5 Frozen V2 comparison
-
-Frozen V2-PAR has a primitive pre-objective actualisation admission but no exhaustiveness theorem over all existence.
-
-It can therefore retain its primitive actualisation commitment while remaining silent on whether an ontologically real causal order is prior to, co-basic with, or downstream of that admission.
-
-To match X1-N as an **exclusion**, it appears to need an additional substantive premise such as:
+### 3.3 X1 overall
 
 ```text
-all ontologically instantiated causal relations are downstream of primitive actualisation
+X1 = NO CANDIDATE EXCLUSION SURPLUS ESTABLISHED
 ```
 
-or an equivalent existence / precedence rule.
-
-Adding that after freeze would fail the rival-stability gate.
-
-However, this conclusion remains subject to the rival-preemption downgrade gate in §0: if the already-frozen `no prior domain mechanism as primitive explanation` clause is judged extensionally sufficient to exclude X1-N, then X1 must be downgraded.
-
-### 2.6 Provisional gate table
-
-- source gate: pass;
-- shared-background gate: pass;
-- primitive-link gate: **provisional pass**;
-- non-lexical gate: pass;
-- non-laundering gate: pass;
-- rival-stability gate: **provisional pass**;
-- external-judge gate: pass at conceptual level.
-
-### 2.7 X1 disposition
-
-```text
-X1-N
-= CANDIDATE EXCLUSION SURPLUS
-= REVIEW-GATED
-```
-
-This is a conceptual derivational candidate only. It must not be used as a canonical upgrade or empirical superiority claim.
+The full P1-T01 positive projection theorem remains separately load-bearing P1 content and is untouched.
 
 ---
 
-## 3. X2-N — information-readout negative ordering
+## 4. X2 — information-readout ordering
 
-### 3.1 Frozen target
+Target:
 
 ```text
 a readout / transmission / measurement of a determinate manifest fact
 cannot be ontologically prior to the primitive event by which that fact becomes determinate
 ```
 
-Do not test Shannon information, global entropy, universal information creation, or quantitative information thermodynamics.
-
-### 3.2 Target suspension
-
-Remove from `B`:
-
-- P1-T04 as a theorem;
-- direct mirrors saying Selection is upstream of information readout;
-- bridge restatements that simply return the same target.
-
-Retain P0-00, canonical P0-01, non-target P0/P1 structure, and the ordinary shared semantics of `readout of a determinate fact`.
-
-### 3.3 SRT-side derivation
-
-AM-A states:
+AM-A supplies on the SRT side:
 
 ```text
 non-objectified potential
 -> determinate manifest distinction
+-> possible readout of that determinate distinction
 ```
 
-A readout **of that determinate manifest distinction** presupposes that the fact has become determinate and available to be read out, transmitted, or measured.
+So SRT primitive-link passes for the narrow readout target.
 
-Therefore:
-
-```text
-primitive determinate manifestation
-precedes readout of that determinate manifestation
-```
-
-SRT primitive-link passes for the narrow X2 target.
-
-### 3.4 V2 comparison
-
-V2-PAR already carries the same primitive role:
+Frozen V2-PAR has the same primitive role:
 
 ```text
 non-objectified potential
 -> determinate manifest actuality
 ```
 
-Given the same ordinary meaning of a readout of a determinate fact, it obtains the same ordering without an added substantive premise.
+Given the ordinary meaning of `readout of a determinate fact`, it obtains the same ordering with no amendment.
 
 Therefore:
 
 ```text
-X2-N
-= SRT primitive-link YES
-= OUTCOME C / ROLE-ISOMORPHIC
+X2-N = OUTCOME C / ROLE-ISOMORPHIC
 ```
 
-### 3.5 Boundary
-
-Neither side thereby derives:
-
-- universal Shannon-information creation;
-- entropy subtraction over `L0_abs`;
-- information thermodynamics;
-- all semantic or epistemic information.
-
-Those remain outside X2.
+This does not derive Shannon-information creation, global entropy subtraction, information thermodynamics, or all semantic/epistemic information.
 
 ---
 
-## 4. Comparison table
+## 5. Corrected exclusion-class interpretation
 
-| Target | SRT primitive-link | Frozen V2-PAR | Status |
-|---|---|---|---|
-| X0 no-prior-chooser | yes | already role-isomorphic | Outcome C |
-| X1 causality not ontologically prior | **provisional yes** | appears to need new ordering premise | **candidate exclusion surplus / review-gated** |
-| X2 determinate information readout not prior | yes | already role-isomorphic | Outcome C |
+The provisional execution described the exclusion class as non-uniform because the frozen V2 text explicitly named chooser/subject/agent but not causality. Final review showed that this was not a structural difference.
 
-The exclusion class is therefore provisionally non-uniform: some exclusions follow from the shared primitive actualisation role, while X1 may depend on SRT-P's stronger precedence / exhaustiveness commitment.
-
----
-
-## 5. Scientific / governance status
-
-Even if X1 survives review, it does not establish:
+The audited X0-X2 surfaces instantiate one broad ordering schema:
 
 ```text
-SRT empirical superiority
-causality reduced to Selection
-P1-T01 fully derivable from P0-01 alone
-Selection proven fundamental
-V2-PAR false
+something treated as already determinate / ontologically instantiated
+cannot be used as the prior ontological basis of the primitive transition
+that admits determinate actuality
 ```
 
-A future scientific upgrade would require a separately authorized chain:
+The noun substituted into the schema — chooser, causality, determinate readout — does not by itself create a new surplus class.
+
+Within X0-X2:
 
 ```text
-X1 ordering consequence
--> independently specified middle-level consequence M*
--> bounded rival R2
--> prospective observable / intervention O*
--> O_SRT != O_R2
+all valid primary readings = Outcome C / role-isomorphic
+no differentiated Selection-specific exclusion surplus established
 ```
 
-No `M*` or `O*` is created here.
+The X1-P fallback does not overturn this because its apparent asymmetry is invalid under background fairness.
 
-Therefore:
+Current claim-level disposition remains:
 
 ```text
+Selection primitive role = P unresolved primitive admission
 Selection-level D2 count = 0
 PD-A mature-null/rival-equivalent scoreboard increment = 0
 ```
 
+No promotion, demotion, or canonical edit follows.
+
 ---
 
-## 6. Program disposition
+## 6. Research-program disposition
 
-If X1 survives independent review, it **provisionally strengthens retain-and-bound** over opening an architecture/redundancy review, because P0-01 would then have a verified exclusion role not reproduced by frozen V2-PAR without amendment.
+Withdraw the provisional claim that X1 strengthens retain-and-bound over an architecture/redundancy review.
 
-If either downgrade gate fires, this program-level implication must be withdrawn.
+This pass supplies **no new positive pressure** toward either architecture option. It also does not trigger a redundancy review: the residue is unchanged, no mature D2 workline was added, and no PD-A trigger fired.
 
-In either case:
+The disciplined result is simply:
 
-- do not widen P0-01;
-- do not rewrite P1-T01;
-- do not add X3 in this pass;
-- do not open a D2 workline until an independently specified middle-level consequence is frozen.
+```text
+retain current P0-01 status
++
+do not claim X0-X2 as rival-discriminating exclusion surplus
++
+do not manufacture X3 to rescue a positive result
+```
+
+Any future review of whether precedence/exhaustiveness belongs to the primitive role itself or is a separable axiom should be separately authorized; #842 does not decide that canonical architecture question.
 
 ---
 
 ## 7. Stop rule
 
-Stop after X1/X2 and independent review.
+Stop here.
 
-**Final disposition:** `X1 = REVIEW-GATED CANDIDATE EXCLUSION SURPLUS / X2 = OUTCOME C / D2 UNCHANGED / PD-A +0 / NO CANONICAL EDIT / NEXT = INDEPENDENT NARROW REVIEW`.
+Do not add X3, a new symbol, a new Selection subtype, a new causal ontology, or a downstream D2 workline in this pass.
+
+**Final disposition:** `X1-I OUTCOME C / X1-P INVALID SURPLUS UNDER FAIRNESS / X2 OUTCOME C / X0-X2 NO CANDIDATE EXCLUSION SURPLUS / SELECTION REMAINS P UNRESOLVED / D2 0 / PD-A +0 / NO CANONICAL EDIT / MERGEABLE AS NEGATIVE GOVERNANCE RESULT`.
