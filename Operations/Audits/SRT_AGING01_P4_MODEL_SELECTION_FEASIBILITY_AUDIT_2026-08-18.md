@@ -97,8 +97,8 @@ G12 ethical / animal-use burden proportionate to discrimination value
 
 - Ayyaz et al., *Single-cell transcriptomes of the regenerating intestine reveal a revival stem cell*, **Nature** (2019), DOI `10.1038/s41586-019-1154-y`.
 - Liu et al., *Establishment of intestinal organoid cultures modeling injury-associated epithelial regeneration*, **Cell Research** (2021), DOI `10.1038/s41422-020-00453-x`.
-- Moyer et al., *p53 promotes revival stem cells in the regenerating intestine after severe radiation injury*, **Nature Communications** (2024), DOI `10.1038/s41467-024-47124-8`.
-- Castillo et al., *Epigenetic memory of colitis promotes tumour growth*, **Nature** (2026), DOI `10.1038/s41586-026-10258-4`.
+- Morral et al., *p53 promotes revival stem cells in the regenerating intestine after severe radiation injury*, **Nature Communications** (2024), DOI `10.1038/s41467-024-47124-8`.
+- Nagaraja et al., *Epigenetic memory of colitis promotes tumour growth*, **Nature** (2026), DOI `10.1038/s41586-026-10258-4`.
 
 ### What is already available
 
@@ -589,8 +589,8 @@ Primary empirical sources only were used for the scientific feasibility claims a
 1. Zeng AGX et al. *Human haematopoietic stem cells remember inflammatory stress*. Nature. 2026. DOI `10.1038/s41586-026-10522-7`.
 2. Ayyaz A et al. *Single-cell transcriptomes of the regenerating intestine reveal a revival stem cell*. Nature. 2019. DOI `10.1038/s41586-019-1154-y`.
 3. Liu Y et al. *Establishment of intestinal organoid cultures modeling injury-associated epithelial regeneration*. Cell Research. 2021. DOI `10.1038/s41422-020-00453-x`.
-4. Moyer et al. *p53 promotes revival stem cells in the regenerating intestine after severe radiation injury*. Nature Communications. 2024. DOI `10.1038/s41467-024-47124-8`.
-5. Castillo et al. *Epigenetic memory of colitis promotes tumour growth*. Nature. 2026. DOI `10.1038/s41586-026-10258-4`.
+4. Morral et al. *p53 promotes revival stem cells in the regenerating intestine after severe radiation injury*. Nature Communications. 2024. DOI `10.1038/s41467-024-47124-8`.
+5. Nagaraja et al. *Epigenetic memory of colitis promotes tumour growth*. Nature. 2026. DOI `10.1038/s41586-026-10258-4`.
 6. Kato et al. *Dynamic stem cell selection safeguards the genomic integrity of the epidermis*. Developmental Cell. 2021. DOI `10.1016/j.devcel.2021.11.018`.
 7. Rayagiri et al. *Basal lamina remodeling at the skeletal muscle stem cell niche mediates stem cell self-renewal*. Nature Communications. 2018. DOI `10.1038/s41467-018-03425-3`.
 8. Lazure et al. *GLI3 regulates muscle stem cell entry into GAlert and self-renewal*. Nature Communications. 2022. DOI `10.1038/s41467-022-31695-5`.
