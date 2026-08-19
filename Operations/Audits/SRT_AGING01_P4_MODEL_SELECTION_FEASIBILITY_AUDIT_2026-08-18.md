@@ -560,25 +560,37 @@ No candidate is yet `pilot-ready V5` in the strict repository sense because the 
 
 ---
 
-## 12. Next action
+## 12. Closure / supersession note
 
-Do **not** expand AGING01 theory.
+Do **not** expand AGING01 theory from this model-ranking audit.
 
-The next useful artifact is a narrow Stage-1 implementation packet for the intestinal-organoid pilot containing only:
+The Stage-1 implementation packet originally requested by this audit now exists:
 
 ```text
-candidate H_A/H_B manipulation;
-T1 matching panel;
-P2 challenge;
-route definitions;
-blockade;
-Match-2 rivals;
-primary outcome;
-holdout / replication unit;
-GO / NO-GO feasibility criteria.
+Experiments/SRT_AGING01_Stage1_Intestinal_Organoid_Feasibility_Packet_v0_1.md
 ```
 
-Only after that packet survives a methods / novelty review should `Experiments/SRT_Experimental_Roadmap_v1.md` be reopened for priority assignment.
+It has subsequently been narrowed by:
+
+```text
+Operations/Audits/SRT_AGING01_STAGE1_INTESTINAL_ORGANOID_METHODS_READINESS_AUDIT_2026-08-19.md
+Operations/Audits/SRT_AGING01_STAGE1_G4_G5_REVERSIBLE_FORMATION_GATE_AUDIT_2026-08-19.md
+Operations/Audits/SRT_AGING01_PUBLIC_DATA_G5_PRECHECK_2026-08-19.md
+```
+
+Current downstream disposition:
+
+```text
+methods-feasible = YES, conditionally;
+G4 feasibility = established in principle;
+G5 partial convergence feasibility = established in principle;
+repeated injury / altered later recovery = established predecessor;
+public-data decisive matched-present test = NO-GO at present;
+rich G5 + common P2 + route-specific future residual = not established;
+pilot-ready = NO.
+```
+
+Therefore this file remains the **model-selection record**, not an execution roadmap. #837 is scope-frozen; any further injury-route G5 implementation belongs in a separate Stage-1B branch / PR. `Experiments/SRT_Experimental_Roadmap_v1.md` remains closed to this work until that later gate is independently solved.
 
 ---
 
