@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-07-12",
+  "updated": "2026-08-19",
   "status": "active",
   "role": "machine-readable routing guard for current book construction",
   "construction_entry": "01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md",
@@ -8,6 +8,21 @@
   "structure_map": "01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md",
   "content_architecture_reference": "01_Source_Intuition/BOOK/BOOK_ARCHITECTURE_MAP_2026-06-03.md",
   "version_log": "01_Source_Intuition/BOOK/BOOK_VERSION_LOG.md",
+  "next_pass_plan": "01_Source_Intuition/BOOK/BOOK_NEXT_PASS_SCIENTIFIC_OBJECTIFICATION_POSITION_STRUCTURE_2026-08-19.md",
+  "next_pass_focus": {
+    "theme": "scientific objectification, position management, and occluded generative structure",
+    "primary_targets": [
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md",
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md",
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md",
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md"
+    ],
+    "secondary_targets": [
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q26_理论如何失败.md",
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论如何成为牢笼.md"
+    ],
+    "guardrail": "objectification and objectivity are scientific achievements; the target is to recover their positional and generative conditions without anti-science or relativist framing"
+  },
   "archive_roots": [
     "01_Source_Intuition/BOOK/Archive_52Chapter",
     "01_Source_Intuition/BOOK/Archive_Meta"
@@ -21,6 +36,17 @@
     "canonical_anchors_are_accuracy_guardrails_not_book_prose_templates": true
   },
   "concept_routes": [
+    {
+      "keywords": ["客观化", "对象化", "科学对象", "观察位置", "位置退场", "生成位置", "公共对象", "科学描述"],
+      "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md",
+      "secondary": [
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q26_理论如何失败.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论如何成为牢笼.md"
+      ]
+    },
     {
       "keywords": ["选材", "选项生成", "选择之前"],
       "primary": "01_Source_Intuition/BOOK/Drafts_26Q/Q04b_选材.md",
