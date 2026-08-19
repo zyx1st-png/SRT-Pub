@@ -2,7 +2,8 @@
 id: SRT-AUDIT-AGING01-P4-MODEL-SELECTION-FEASIBILITY-2026-08-18
 type: experimental_feasibility_audit
 status: active
-record_stage: audit_v1
+record_stage: closed_v1
+closes_into: 03_Bridges/hooks/AGING01_Goal_Directedness_Consensus_Integration_Hook.md
 layer: operations
 epistemic_layer: experimental
 claim_mode: audit
@@ -590,7 +591,7 @@ rich G5 + common P2 + route-specific future residual = not established;
 pilot-ready = NO.
 ```
 
-Therefore this file remains the **model-selection record**, not an execution roadmap. #837 is scope-frozen; any further injury-route G5 implementation belongs in a separate Stage-1B branch / PR. `Experiments/SRT_Experimental_Roadmap_v1.md` remains closed to this work until that later gate is independently solved.
+Therefore this file remains the **model-selection record**, not an execution roadmap. #837 is scope-frozen; any further injury-route G5 implementation belongs in a separate Stage-1B branch / PR. `Experiments/SRT_Experimental_Roadmap_v1.md` now contains only a navigation-level `parked / pre-pilot / not in execution queue` entry for AGING01; execution priority remains closed until the later gate is independently solved.
 
 ---
 
