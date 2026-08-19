@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated": "2026-08-19",
   "status": "active",
   "role": "machine-readable routing guard for current book construction",
@@ -15,13 +15,15 @@
       "01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md",
       "01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md",
       "01_Source_Intuition/BOOK/Drafts_26Q/Q02_对象化.md",
-      "01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md"
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md",
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md",
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md"
     ],
     "secondary_targets": [
-      "01_Source_Intuition/BOOK/Drafts_26Q/Q26_理论如何失败.md",
-      "01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论如何成为牢笼.md"
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q26_可证伪性.md",
+      "01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论自反.md"
     ],
-    "guardrail": "objectification and objectivity are scientific achievements; the target is to recover their positional and generative conditions without anti-science or relativist framing"
+    "guardrail": "objectification and objectivity are scientific achievements; recover their positional and generative conditions without anti-science, relativist, or phenomenality-by-definition framing"
   },
   "archive_roots": [
     "01_Source_Intuition/BOOK/Archive_52Chapter",
@@ -43,8 +45,9 @@
         "01_Source_Intuition/BOOK/Drafts_26Q/Q00_序章.md",
         "01_Source_Intuition/BOOK/Drafts_26Q/Q01_给定性.md",
         "01_Source_Intuition/BOOK/Drafts_26Q/Q03_前对象场.md",
-        "01_Source_Intuition/BOOK/Drafts_26Q/Q26_理论如何失败.md",
-        "01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论如何成为牢笼.md"
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q19_脚手架与牢笼.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q20_遮蔽.md",
+        "01_Source_Intuition/BOOK/Drafts_26Q/Q27_理论自反.md"
       ]
     },
     {
