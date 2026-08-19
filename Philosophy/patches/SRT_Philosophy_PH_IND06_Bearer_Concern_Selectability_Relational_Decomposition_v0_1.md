@@ -1,9 +1,27 @@
 ---
 patch_id: PATCH-PHIL-PH-IND06-BEARER-CONCERN-SELECTABILITY-RELATIONAL-DECOMPOSITION
+id: PATCH-PHIL-PH-IND06-BEARER-CONCERN-SELECTABILITY-RELATIONAL-DECOMPOSITION
 domain: philosophy_of_individuation_agency_embodiment_ecological_relations
 claim_level: P3_bridge_hardening
 canonical_status: non_canonical
 status: active
+sources_pending_verification: true
+external_comparison_status: primary_source_verification_pending
+related_patches:
+  - PH-CONSC03
+  - PH-IND02
+  - PH-IND04
+  - SOC-COG03
+internal_owners:
+  - Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md
+  - Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md
+  - Philosophy/patches/SRT_Philosophy_PH_IND04_Object_Bearer_Selector_Subject_Experiencer_NonJump_Ladder_v0_1.md
+  - Philosophy/patches/SRT_Philosophy_SOC_COG03_Norm_Script_Affordance_Meta_Selectability_v0_1.md
+  - Core_Law/SRT_Individuation.md
+  - Core/SRT_Core_21c_Bridge_Hypotheses.md
+  - Core/SRT_OPEN_TENSIONS.md
+  - Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md
+  - Neuroscience/patches/SRT_Neuro_NEURAL34_History_Conditioned_Relational_Possibility_v0_1.md
 target_future_doc:
   - Core_Law/SRT_Individuation.md
   - Philosophy/SRT_Subjecthood_Threshold_Interface.md
@@ -16,7 +34,8 @@ related_claims:
   - non_outsourcing
   - concern_domain
   - history_writeback
-  - future_selectability
+  - continued_selectability
+  - generative_reselectability
   - affordance_selectability_distinction
   - niche_bearer_distinction
   - extended_cognition_bearer_distinction
@@ -41,264 +60,314 @@ epistemic_layer: bridge
 claim_mode: synthesis
 canonical: false
 type: theory_hardening_patch
-id: PATCH-PHIL-PH-IND06-BEARER-CONCERN-SELECTABILITY-RELATIONAL-DECOMPOSITION
 ---
 
 # SRT Philosophy Patch PH-IND06: Bearer–Concern–Selectability Relational Decomposition v0.1
 
 > **Status:** P3 philosophy / individuation / embodiment / ecological-relations hardening patch.  
-> **Canonical caution:** this file does not redefine `bearer`, `selection`, Stable ISP, subjecthood, consciousness, `d`, `Psi_f`, `T_dir`, `L0/L1/L2`, ecological niche, or affordance. It records a comparative decomposition and a set of discrimination tests. It must not be cited as establishing that SRT uniquely discovered consequence-bearing, autonomy, viability, embodiment, niche construction, or historical path dependence.
+> **Canonical caution:** this file does not redefine `bearer`, `selection`, Stable ISP, continued selectability, generative reselectability, subjecthood, consciousness, `d`, `Psi_f`, `T_dir`, `L0/L1/L2`, ecological niche or affordance.  
+> **Source caution:** the neighboring-framework comparison in §2 is an **orientation map pending primary-source verification**. It must not be cited as a source-backed literature review until the named comparison anchors have been checked against primary publications and, where appropriate, registered through the material pipeline.
 
 ---
 
-## 0. Why this patch exists
+## 0. Scope, inherited owners, and actual increment
 
-Recent SRT work has increasingly used `bearer` to mark a distinction that is not captured by a mere body boundary, object identity, or system/environment partition. Existing repository hardening already states:
+PH-IND06 does **not** start a new bearer vocabulary.
 
-```text
-Object != Bearer != Selector != Subject != Experiencer
-```
-
-and treats a bearer candidate as requiring more than persistence:
+It inherits the following repository work explicitly:
 
 ```text
+PH-CONSC03 §2:
+B = candidate bearer closure
+C_B = concern domain associated with B
+B != C_B
+
+PH-CONSC03 §3:
+return + history-bearing writeback + future-selectability change
+= candidate bearing interface
+
+PH-IND02:
+bearer admission requires
 same-unit consequence return
 + history-bearing writeback
-+ boundary / identity continuity
-+ non-trivial non-outsourcing
++ future-selectability change
++ continuity
+
+PH-IND04:
+Object != Bearer != Selector != Subject != Experiencer
+
+SOC-COG03:
+current broad affordance field != current invitation field
+and social-history language must route into the existing reselectability family
 ```
 
-A second repository distinction is equally important:
+Therefore `B` and `C_B` in this file are **pointers to PH-CONSC03**, not redefinitions.
+
+The actual PH-IND06 increment is narrower:
+
+1. test **non-outsourcing** as a bearer discriminator;
+2. distinguish current affordance availability from bearer-history-conditioned effective reachability/selectability;
+3. distinguish ecological / cognitive / concern / bearer boundaries;
+4. use institutional and resettable-AI cases to stress-test `Bearer != Subject != Experiencer` and `Selector != Bearer`;
+5. compare this decomposition against neighboring academic traditions without claiming SRT invented autonomy, viability, affordance, niche construction or path dependence.
+
+Compactly:
 
 ```text
-Bearer Boundary != Concern Domain
-```
-
-The unit that bears consequences need not have a concern domain restricted to its own physical boundary. A person may bear a decision while the child, partner, group, institution, principle, ecological condition or future generation enters what genuinely matters to that bearer.
-
-The purpose of PH-IND06 is to compare this structure against major neighboring traditions and to isolate the narrower question on which SRT may still have an independent theoretical increment.
-
-The central discipline is:
-
-```text
-Do not ask only:
-What is the system?
-What does the environment afford?
-What does the organism need?
-
-Also ask:
-Who bears the consequence?
+Who bears?
 What matters to that bearer?
-Which possibilities are available?
-Which possibilities remain selectable for this bearer after its history?
+What is currently afforded?
+What remains effectively reachable/selectable after this bearer's history?
 ```
+
+PH-IND06 asks whether keeping those questions separate produces discrimination that is lost when `body`, `system`, `agent`, `self`, `niche` and `subject` are treated as interchangeable.
 
 ---
 
-## 1. Main decomposition: four relational roles
+## 1. Minimal working decomposition — no new canonical selectability object
 
-For bridge-level analysis only, distinguish four roles:
+### 1.1 Inherited roles: `B` and `C_B`
 
-```text
-B     = candidate bearer
-C_B   = concern domain of B
-A_B   = affordance / action-possibility landscape relative to B and environment
-Omega_B = historically conditioned selectable-future space of B
-```
-
-These are not new canonical variables.
-
-A compact relational tuple is:
+Use PH-CONSC03's notation without modification:
 
 ```text
-R_B = (B, C_B, A_B, Omega_B)
+B   = candidate bearer closure
+C_B = concern domain associated with B
 ```
 
-Each component answers a different question.
-
-### 1.1 Bearer `B`
-
-Question:
-
-> For which continuing unit do consequences become part of that same unit's own history?
-
-Candidate bridge reading:
+Retain:
 
 ```text
-Bearer
-=
-continuing consequence-return locus
+B != C_B
 ```
 
-A stronger bearer candidate additionally requires:
+and route bearer-admission criteria to PH-IND02 rather than repeating them here.
+
+### 1.2 Current affordance field
+
+For current action possibilities, PH-IND06 reuses SOC-COG03's local placeholder:
 
 ```text
-same-unit return
-+ persistence / re-identifiability
-+ history-bearing writeback
-+ non-trivial non-outsourcing
+A_all = current broad affordance field
 ```
 
-### 1.2 Concern domain `C_B`
+PH-IND06 does **not** introduce a parallel `A_B` notation.
 
-Question:
+SOC-COG03 further distinguishes the smaller current invitation field from `A_all`; that distinction remains owned there.
 
-> Which states or futures genuinely enter the stake structure for this bearer?
+### 1.3 Bearer-history-conditioned effective reachability
 
-Guard:
+For local comparison only, use:
 
 ```text
-C_B != physical boundary of B
-C_B != ecological neighborhood by definition
-C_B != current reward channel
-C_B != conscious concern by definition
+Reach_B(H_t, E_t)
 ```
 
-### 1.3 Affordance landscape `A_B`
+as a **non-canonical bookkeeping phrase** for:
 
-Question:
+> the subset/profile of futures that remain effectively reachable or selectable for bearer `B`, given relevant bearer history `H_t`, present environment `E_t`, capacities, costs and constraints.
 
-> Which actions or relations are currently afforded by the bearer–environment configuration?
-
-This is deliberately close to ecological-psychology language and should not be claimed as an SRT invention.
-
-### 1.4 Selectable-future space `Omega_B`
-
-Question:
-
-> Given this bearer's history, current state, costs, capacities, constraints and learned dispositions, which futures remain genuinely selectable for this bearer?
-
-The key bridge distinction is:
+Guards:
 
 ```text
-Affordability != Selectability
+Reach_B != canonical variable
+Reach_B != third selectability theorem
+Reach_B != continued selectability
+Reach_B != generative reselectability
+Reach_B != option count
+Reach_B != health / agency / subjecthood / consciousness scalar
 ```
 
-The world may continue to afford an action while a bearer's history makes that action inaccessible, intolerable, prohibitively costly, policy-incompatible or effectively closed.
+Its only purpose is to state a discrimination question:
+
+```text
+same present affordance field
++ different bearer history
+-> potentially different effective future reachability
+```
+
+without occupying canonical `Omega`, which remains reserved elsewhere for Ontological Consistency.
 
 ---
 
-## 2. Traditional academic neighbors: where the overlap is real
+## 2. Neighboring-framework comparison — orientation map only
 
-SRT should treat the following traditions as serious neighboring accounts rather than as confirmation material.
+### 2.1 Source status
 
-| Tradition / concept | Main question it already addresses | Strong overlap with SRT bearer work | Residual distinction to test |
+This section is **not yet a source-backed comparative literature review**.
+
+Primary comparison anchors to verify before formal citation include, at minimum:
+
+- Maturana / Varela on autopoiesis;
+- Di Paolo and related enactive work on autonomy, adaptivity and precariousness;
+- Bickhard on recursive self-maintenance / interactivism;
+- Mossio / Moreno / Montévil on organizational closure;
+- Friston-line work on Markov blankets / active inference;
+- Gibson-line ecological psychology on affordances;
+- Odling-Smee / Laland-line niche construction;
+- Clark / Chalmers-line extended mind;
+- De Jaegher / Di Paolo on participatory sense-making;
+- Damasio on organismic regulation / feeling / ownership;
+- group-agency literature on agency without assuming group subjecthood;
+- process-ontology / biological-individuality literature on persistence and process identity.
+
+Until those anchors are checked and registered where appropriate:
+
+```text
+§2 = neighborhood hypothesis map
+!= verified historical attribution
+!= source-backed novelty proof
+```
+
+Existing internal support is partial:
+
+- PH-CONSC03 already treats enactivism/autopoiesis and Damasio as originality pressure;
+- SOC-COG03 is source-backed for norms / scripts / social affordance gating;
+- repository FEP and process-individuation materials provide neighboring internal context;
+- none of that licenses pretending the entire table below has already passed primary-source verification.
+
+### 2.2 Comparison map
+
+| Neighboring tradition | Question PH-IND06 expects it to constrain | Overlap pressure on SRT | Residual PH-IND06 test |
 |---|---|---|---|
-| Process ontology / process individual | What persists as the same process across change? | cross-time identity, causal continuity, re-identification | persistence alone does not specify where consequences close |
-| Autopoiesis | What organizational unity produces and maintains itself? | self-production, boundary maintenance, organizational identity | self-maintenance does not by itself prove same-unit consequence bearing |
-| Enactive autonomy / adaptivity / precariousness | What matters for an autonomous living system and how does it regulate viability? | intrinsic normativity, vulnerability, adaptive change, real system-relative stakes | viability-relative concern may not exhaust consequence return or concern beyond self-maintenance |
-| Recursive self-maintenance / interactivism | How does a system maintain itself by changing interaction possibilities? | history-sensitive control, maintenance, future interaction modulation | must test whether the same-unit consequence-return criterion adds discrimination |
-| Organizational closure | What makes constraints jointly constitute one autonomous organization? | individuation, mutual maintenance, autonomy | closure is not yet consequence ownership or phenomenality |
-| Markov blanket / FEP | How can system/environment states be statistically partitioned and regulated? | system/environment boundary, nested organization, regulation | statistical boundary does not determine who bears cost, history or stake |
-| Ecological affordance | What actions does the environment make available relative to an organism/agent? | relational possibilities, agent-relative world structure | available action need not remain selectable after bearer-specific history |
-| Niche construction | How do organisms modify environments and future selection pressures? | reciprocal organism/world shaping and historical feedback | ecological niche is not identical to the bearer's concern domain |
-| Extended mind / extended cognition | When are external resources constitutive of cognition? | coupled system boundary can exceed organism boundary | cognitive constitution does not imply shared consequence bearing |
-| Participatory sense-making | How can interaction processes acquire autonomy and co-generate meaning? | relational autonomy, dyadic history, co-regulation | interaction autonomy does not by itself establish a relational bearer |
-| Damasio-style organismic ownership | How do homeostatic regulation, feeling and organismic ownership relate to subjectivity? | vulnerable organism, ownership, consequence relevance | SRT should preserve Bearer != Subject != Experiencer |
-| Shared / group agency | How can coordinated activity support group-level agency? | distributed selector roles, institutional continuity | group selector or agent need not be a group subject or consequence bearer |
+| Process ontology / biological individuality | what persists as the same process across change? | cross-time identity and causal continuity are not SRT inventions | does persistence identify where consequence becomes same-unit self-history? |
+| Autopoiesis / organizational autonomy | what constitutes and maintains an autonomous unity? | self-maintaining boundary and organization already have mature vocabularies | does organizational closure by itself establish consequence-bearing? |
+| Enactive adaptivity / precariousness | how can states matter relative to viability of an autonomous system? | intrinsic normativity, vulnerability and real system-relative stakes are prior art territory | can same-unit consequence return / non-outsourcing discriminate systems matched for viability regulation? |
+| Recursive self-maintenance / interactivism | how does past interaction reshape maintenance and future action? | history-sensitive regulation and interaction possibility are not novel by themselves | does explicit bearer-indexed consequence closure add a distinct test? |
+| Markov blanket / FEP | how are system/environment states partitioned and regulated? | statistical / dynamical boundary is a serious candidate individuation tool | does the partition identify who pays, what history persists, and where loss closes? |
+| Ecological affordance | what actions are available relative to organism/agent and environment? | relational action possibility is established territory | can `A_all` remain similar while `Reach_B(H_t,E_t)` differs due to bearer-specific history? |
+| Niche construction | how do organism and environment recursively reshape selection pressures? | organism/world historical feedback is not novel | is ecological niche coextensive with `C_B`, or can concern extend beyond present ecological coupling? |
+| Extended / distributed cognition | when do external resources partly constitute cognition? | cognitive boundary can exceed biological boundary | does cognitive constitution imply co-bearing of consequence? |
+| Participatory sense-making / interaction autonomy | when can interaction dynamics acquire relative autonomy? | dyadic / relational dynamics can be more than two independent internal models | does autonomous interaction constitute a higher-order bearer or only coupled bearers? |
+| Damasio-style organismic ownership | how do vulnerable organismic regulation, feeling and ownership connect? | organismic bearing / ownership pressure is strong | preserve `Bearer != Subject != Experiencer`; do not use bearing as phenomenality proof |
+| Group / institutional agency | when can organized groups act as agents? | selector/agency roles may be distributed and supra-individual | can an institution be a consequence bearer without being a subject or experiencer? |
 
-### Guard against novelty inflation
+### 2.3 Novelty discipline
 
 Do not claim:
 
 ```text
-Traditional theory lacks bearer-like concepts.
-SRT uniquely discovered that systems have intrinsic stakes.
-SRT uniquely discovered organism-environment co-constitution.
-SRT uniquely discovered historical path dependence.
-SRT uniquely discovered relational possibility.
+traditional theory lacks bearer-like concepts
+SRT invented intrinsic normativity
+SRT invented embodied agency
+SRT invented organism-environment co-constitution
+SRT invented affordance
+SRT invented path dependence
+SRT invented relational possibility
 ```
 
-The defensible question is narrower:
+The defensible PH-IND06 question is narrower:
 
-> Does SRT's explicit decomposition of consequence-bearing, concern, affordance and historically conditioned selectability distinguish cases that neighboring frameworks otherwise treat as equivalent?
+> Can systems matched on autonomy, viability regulation, current affordance structure and ordinary persistence still differ in same-unit consequence return, non-outsourcing, bearer-specific history writeback or effective future reachability in ways that predict something independently useful?
 
 ---
 
-## 3. Persistent process is not yet bearer
+## 3. Relation to existing selectability surfaces
 
-Process ontology provides a powerful answer to:
+This section is mandatory owner routing.
+
+### 3.1 Continued selectability — P1 owner
+
+`Core_Law/SRT_Individuation.md` P1-T06 owns **continued selectability** as part of the Stable ISP result-state criterion.
+
+PH-IND06 does not modify or broaden P1-T06.
+
+`Reach_B(H_t,E_t)` is not a replacement for continued selectability. It is only a bridge-level way to ask what the bearer can effectively still enter after history.
+
+A reduced or altered `Reach_B` profile does not by itself prove:
 
 ```text
-Which continuing process counts as the same process across time?
+Stable ISP failure
+no Selection
+pathology
+loss of agency
+loss of subjecthood
 ```
 
-But SRT needs a second question:
+### 3.2 Generative reselectability — bridge owner
+
+`Core/SRT_Core_21c_Bridge_Hypotheses.md` B13 owns **generative reselectability** as a P2/P3 conditional candidate.
+
+PH-IND06 does not create a third family between P1-T06 and B13.
+
+If a PH-IND06 case concerns the ability to regenerate / reopen meaningful alternatives, it must route to B13 and its owner constraints rather than promote `Reach_B` into an independent mechanism.
+
+### 3.3 ST-A decision packet and OPEN_TENSIONS
+
+`Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md` is the author-decision surface that separated continued selectability from stronger generative reselectability.
+
+`Core/SRT_OPEN_TENSIONS.md` preserves the active guard that fixed points, metastability, low friction, option diversity or positive future-option deltas cannot individually prove stability, health, legitimacy, subjecthood or consciousness.
+
+PH-IND06 inherits that guard.
+
+### 3.4 SOC-COG03 affordance and history routing
+
+PH-IND06 reuses SOC-COG03's:
 
 ```text
-For which continuing process do consequences return as self-history?
+A_all = current affordance field
+H_t   = relevant learned / interaction history
 ```
 
-Therefore retain:
+where useful.
+
+SOC-COG03's current invitation gating and H3/I5/J5 routing remain distinct from the bearer-level questions in PH-IND06.
+
+Therefore:
+
+```text
+current affordance gating
+!= bearer admission
+!= continued selectability theorem
+!= generative reselectability theorem
+```
+
+---
+
+## 4. Persistent process is not yet bearer
+
+Route the positive bearer criterion to PH-IND02. PH-IND06 keeps only the negative-control distinction:
 
 ```text
 Persistent Process != Bearer
 ```
 
-A stable or re-identifiable process may undergo causal change without satisfying a strong same-bearer return condition.
+A system may be re-identifiable across time without yet showing that relevant consequences close on that same unit as its own history.
 
-Examples requiring separate analysis include:
+This matters for:
 
 - dissipative structures;
 - storms;
+- self-maintaining loops;
 - persistent institutions;
-- self-maintaining biochemical loops;
-- computational services that are restarted from an external state;
-- distributed workflows whose losses close on another legal or biological unit.
+- computational services restored from external checkpoints;
+- distributed workflows in which one component acts while another absorbs the loss.
+
+The important question is not merely:
+
+```text
+Does X persist?
+```
+
+but:
+
+```text
+When consequence q occurs, what continuing unit is altered such that q remains part of that unit's later condition and constraints?
+```
 
 ---
 
-## 4. Autonomy and precariousness are the strongest neighboring pressure
+## 5. Non-outsourcing as the main PH-IND06 discriminator
 
-Enactive autonomy, adaptivity and precariousness are among the strongest traditional competitors to SRT bearer language.
+This is the strongest intended increment of the patch.
 
-They already support a structure of the form:
+### 5.1 Core test
 
-```text
-autonomous organization
-+ possibility of failure
-+ viability-relative regulation
--> states can be better or worse for this system
-```
+For candidate bearer `B`, ask:
 
-This means SRT should not present the mere existence of intrinsic good/bad, vulnerability, stake or self-maintenance as novel.
+> Can the relevant loss, structural damage, correction pressure, liability, memory burden or irreversible change be displaced to another unit while `B` is restored unchanged?
 
-The residual SRT pressure test should instead be:
-
-```text
-Where does the consequence close?
-```
-
-and:
-
-```text
-Can the relevant loss / damage / correction be externally absorbed,
-reset, copied or transferred while the candidate unit remains unchanged?
-```
-
-If yes, a strong bearer attribution is weakened even when the system is causally powerful or adaptive.
-
-### Candidate distinction
-
-```text
-Autonomy asks:
-What constitutes this self-maintaining unity?
-
-Bearing asks:
-For which continuing unity does this consequence become its own history?
-```
-
-These questions may converge in organisms but should not be identified by definition.
-
----
-
-## 5. Non-outsourcing as a potentially useful discriminator
-
-The most promising SRT-specific discriminator may be consequence non-outsourcing rather than the noun `bearer` itself.
-
-Candidate test:
-
-> If the relevant cost, irreversible loss, structural damage, memory burden or correction pressure can be displaced to another unit while the candidate unit is restored unchanged, was the consequence actually borne by the candidate?
+If yes, strong same-unit bearing is weakened.
 
 Compactly:
 
@@ -313,199 +382,233 @@ and:
 ```text
 feedback received
 !=
-consequence irreversibly closing on the same bearer
+consequence closed on the same bearer
 ```
 
-This test is especially useful for:
+### 5.2 Repair is not disproof of bearing
 
-- stateless or resettable AI systems;
-- institutional decision systems;
-- outsourced liability;
-- remote control systems;
-- tool-using human–AI workflows;
-- social systems where one party decides and another party pays.
-
-### Guard
-
-Non-outsourcing must not be interpreted as literal impossibility of repair. A bearer can recover. The relevant question is whether the recovery itself occurs as part of the history and cost structure of the same continuing unit, rather than by substituting an equivalent untouched copy and declaring continuity by fiat.
-
----
-
-## 6. Affordance is not selectability
-
-Ecological psychology already supplies a strong relational account of action possibility. SRT should therefore not relabel affordances as selectability.
-
-Use the bridge distinction:
+Do **not** infer:
 
 ```text
-A_B(E_t) = what the current bearer–environment relation affords
+recoverable consequence -> not borne
+```
+
+The relevant distinction is:
+
+```text
+same bearer is damaged
+-> same bearer undergoes costly repair / adaptation
+-> repair becomes part of its history
 ```
 
 versus:
 
 ```text
-Omega_B(H_t, E_t) = what remains selectable for this historically formed bearer
+candidate instance is discarded
+-> untouched equivalent copy / checkpoint substituted
+-> prior cost and history close elsewhere
 ```
 
-No canonical equation is asserted.
+The first can still be strong bearing. The second pressures the identity and non-outsourcing claim.
 
-### Example: trauma / learned avoidance
+### 5.3 Why this may add something beyond autonomy
 
-A door may remain physically and ecologically openable:
+Autonomy and precariousness already pressure SRT strongly. PH-IND06 therefore does not claim that vulnerability is new.
+
+The possible extra discrimination is:
 
 ```text
-openable in A_B
+same autonomy / viability profile
+but different consequence closure architecture
 ```
 
-while prior events alter the bearer such that entering becomes:
+For example, two controllers may be equally adaptive while only one retains consequences as non-outsourcable modification of the same continuing unit.
+
+Whether this predicts anything independently useful remains an open empirical / bridge question.
+
+---
+
+## 6. Affordance is not effective bearer-relative reachability
+
+PH-IND06 keeps one compact discrimination:
 
 ```text
-high-cost / policy-blocked / effectively inaccessible in Omega_B
+A_all != Reach_B(H_t,E_t)
 ```
 
-The world-side affordance has not disappeared, but the bearer's historically conditioned selectable future has changed.
+where `A_all` is inherited from SOC-COG03 and `Reach_B` is only local bookkeeping.
 
-Therefore:
+### 6.1 Same current world, different history
+
+A physically and socially available action may remain in `A_all` while bearer history makes it:
+
+- prohibitively costly;
+- strongly avoided;
+- inaccessible under learned policy;
+- intolerable under current stake structure;
+- effectively closed under current capacity or trust structure.
+
+Thus:
 
 ```text
-same current environment
-+ different bearer history
--> different Omega_B
+similar A_all
++ different H_t
+-> different effective reachability profile
 ```
 
-This connects directly to current SRT work on history-conditioned relational possibility: history can change future realization dispositions even when currently measured state variables appear similar.
+### 6.2 Trauma / learned avoidance as a diagnostic shape
+
+A door can remain openable in the current affordance field while entry becomes effectively unreachable for a bearer after a severe history-dependent change.
+
+PH-IND06 does not claim that trauma supplies a canonical SRT mechanism. It uses the case only to separate:
+
+```text
+world-side availability
+from
+history-conditioned bearer-side reachability
+```
+
+### 6.3 NEURAL34 compatibility
+
+`Neuroscience/patches/SRT_Neuro_NEURAL34_History_Conditioned_Relational_Possibility_v0_1.md` provides a non-canonical mechanistic analogue:
+
+```text
+past co-participation / plastic history
+-> altered future relational compatibility
+```
+
+including cases where measured current activity can look similar while later response dispositions differ.
+
+This does **not** prove PH-IND06 at organism, person or institution scale. It only supports the plausibility of the thinner bridge idea:
+
+```text
+history can be causally effective by changing future transition dispositions
+rather than only by remaining as explicit current content
+```
 
 ---
 
 ## 7. Ecological niche is not concern domain
 
-Niche construction and ecological coupling already explain how organisms alter environments that subsequently alter their opportunities and selection pressures.
+This distinction is inherited from PH-CONSC03's `B != C_B` logic and extended only as a boundary audit.
 
-SRT should retain a separate question:
-
-```text
-Which external states genuinely enter this bearer's stake structure?
-```
-
-Therefore:
+Retain:
 
 ```text
 Ecological Niche != Concern Domain
 ```
 
-A concern domain may include:
+as a question, not a completed literature verdict.
 
-- a child located elsewhere;
-- a distant partner;
-- a future generation;
-- a social group;
-- an institution;
-- a principle or norm;
-- a scientific theory;
-- a future state not locally instantiated;
-- ecological conditions beyond immediate interaction range.
+`C_B` may include states concerning:
 
-The bearer may even select against its own short-term organismic viability because the concern domain extends beyond the bearer boundary.
+- a distant child or partner;
+- a group or institution;
+- future generations;
+- ecological conditions outside current interaction range;
+- a principle, norm or project;
+- a future state not locally instantiated now.
 
-This creates direct pressure against reducing all normativity to simple self-maintenance.
+Therefore present ecological coupling does not automatically exhaust what enters stake-coupled concern.
 
 ### Guard
 
-Concern beyond the bearer does not prove altruism, reflection, representation or consciousness. A concern relation may be implemented through learned, affective, institutional, evolutionary or other mechanisms.
+Do not repeat PH-CONSC03's self-sacrifice example as if it were new evidence. The only PH-IND06 increment is the boundary discrimination:
+
+```text
+present ecological coupling boundary
+need not equal
+concern-domain boundary
+```
+
+Primary literature grounding for this comparison remains pending.
 
 ---
 
 ## 8. Extended cognition is not extended bearing
 
-Extended-mind and distributed-cognition theories show that cognitive processes may be partly constituted by external resources.
-
-SRT should distinguish:
+Use the following discrimination:
 
 ```text
-Cognitive Boundary
-!=
-Bearer Boundary
+Cognitive Boundary != Bearer Boundary
 ```
 
-Example:
+A phone, notebook, external memory store, AI assistant or public artifact may become constitutive of a cognitive workflow under an extended/distributed account.
+
+That does not by itself show that the external component is a co-bearer of consequences.
+
+### Stress test
+
+For a coupled system:
 
 ```text
-person + phone + navigation system
+person + external cognitive resource
 ```
 
-may constitute a distributed cognitive workflow, while the primary consequences of losing access, making an error, missing an appointment or becoming disoriented still return predominantly to the person or institution.
+ask separately:
 
-Thus:
+1. what performs or supports the cognitive task?
+2. what unit persists across the relevant interval?
+3. where does loss close?
+4. whose history changes?
+5. what cannot be reset / outsourced without changing the claimed bearer?
+
+Therefore:
 
 ```text
 constitutive of cognition
 !=
-co-bearer of consequence
+constitutive of bearing
 ```
 
-A genuine extended bearer would require additional evidence that the external component participates in the same-unit persistence, consequence-return, history-writeback and non-outsourcing structure.
+A genuine extended-bearer claim requires the same bearer-admission work owned by PH-IND02.
 
 ---
 
-## 9. Interaction autonomy is not relational bearing
+## 9. Interaction autonomy is not automatically relational bearing
 
-Participatory sense-making and interaction theory allow an interaction process to acquire dynamics not reducible to either participant considered alone.
-
-SRT should not infer:
+Participatory / interaction approaches motivate a difficult higher-order case:
 
 ```text
-interaction autonomy
--> relational bearer
+interaction process has relatively autonomous dynamics
 ```
 
-A stronger relational-bearer candidate would require something like:
+does not automatically imply:
 
 ```text
-interaction_t
--> consequence
--> persistent change in the same relation-level unit
--> later relational possibility change
+interaction process = bearer
 ```
-
-with evidence that the relevant relation-level history cannot be reduced without loss to two independent participant histories plus current coupling.
-
-This remains a difficult open problem.
 
 ### Dyadic stress test
 
-For a long-term relationship:
-
-- each person is independently a bearer candidate;
-- the relationship has a history;
-- interaction patterns constrain future relational possibilities;
-- some relational states may persist despite personnel-level intentions.
-
-But it remains open whether this licenses:
+For a long-term relation, two descriptions may compete:
 
 ```text
-Relationship = higher-order bearer
+A. two bearers + historically structured coupling
 ```
 
-or only:
+versus:
 
 ```text
-Two bearers + historically structured coupling
+B. a higher-order relational bearer
 ```
 
-The distinction should be treated empirically and analytically rather than settled by vocabulary.
+To prefer B, PH-IND06 would require evidence that consequence and history close at the relation-level unit in a way not reducible, without relevant loss, to participant histories plus current coupling.
+
+This remains open.
 
 ---
 
-## 10. Institutional bearer stress test
+## 10. Institutional bearer candidate without institutional subject
 
-Institutions provide an important non-biological case because they can possess:
+Institutions are the strongest positive stress test in PH-IND06 because they can display:
 
-- persistent legal identity;
+- persistent legal / operational identity;
 - assets and liabilities;
-- reputation;
 - contractual history;
-- policy constraints;
+- reputation;
 - organizational memory;
+- policy constraints;
 - path-dependent future action space.
 
 A failed decision can yield:
@@ -513,52 +616,51 @@ A failed decision can yield:
 ```text
 loss
 -> debt / reputation / legal constraint
--> same institution
--> reduced or redirected future options
+-> same continuing institution
+-> changed later feasible actions
 ```
 
-even when the individual decision-makers later leave.
+even if the individual decision-makers leave.
 
-This supports:
+This supports only:
 
 ```text
 institution-level bearer candidate
 ```
 
-without supporting:
+not:
 
 ```text
 institution-level subject
-```
-
-or:
-
-```text
 institution-level experiencer
 ```
 
-Therefore institutional cases are a strong reason to preserve:
+The case therefore strengthens the usefulness of PH-IND04's inherited non-jump ladder:
 
 ```text
 Bearer != Subject != Experiencer
 ```
 
-They also show why bearer should be substrate-neutral in bridge analysis while remaining highly demanding about unit continuity and consequence return.
+### Institutional non-outsourcing test
+
+The bearer claim becomes stronger where liabilities, reputational constraints, legal obligations and institutional history remain attached to the continuing institution rather than disappearing when personnel change.
+
+It weakens where the apparent "institution" is merely a disposable shell and all relevant costs close on other actors.
 
 ---
 
-## 11. AI stress test: selector without bearer
+## 11. AI reset: selector without strong bearer
 
-A stateless or resettable AI can strongly influence the world while satisfying weak same-bearer consequence conditions.
+A stateless or resettable AI can have large causal effects while satisfying weak same-bearer consequence conditions.
 
-Example:
+Example shape:
 
 ```text
-AI produces consequential decision
--> human / company / user suffers loss
+AI instance produces consequential output
+-> user / company / third party bears loss
 -> model weights unchanged
--> inference instance terminates
--> next instance begins from same checkpoint
+-> instance terminates
+-> next instance starts from same checkpoint
 ```
 
 Then:
@@ -569,36 +671,38 @@ strong selection / execution role
 strong bearer role
 ```
 
-The relevant bearer may instead be:
+The candidate bearer may instead be:
 
 - the user;
-- the deploying company;
-- the persistent agent architecture;
-- a model-plus-memory system;
-- a legally or operationally persistent institution.
+- the deploying institution;
+- a persistent model-plus-memory deployment;
+- an autonomous agent loop;
+- another legally / operationally continuing unit.
 
-For persistent autonomous AI, the correct questions are:
+### Reset / copy identity audit
+
+For digital systems ask:
 
 ```text
-What is the candidate continuing unit?
-Which consequences return to that same unit?
+What is the claimed continuing unit?
 What survives reset?
-Which losses cannot be outsourced?
-What history changes later policy / reachable futures?
-Is the candidate replaceable by an untouched copy without losing the claimed identity?
+Which consequences write into that same unit?
+Can an untouched copy replace it without loss of the claimed identity?
+Where does liability / correction pressure close?
+Does history persist into later policy / reachability?
 ```
 
-No consciousness conclusion follows.
+No consciousness or subjecthood conclusion follows from persistence alone.
 
 ---
 
-## 12. Bearer, concern and selector must remain dissociable
+## 12. Three retained dissociations
 
-The comparative analysis supports at least three dissociations:
+PH-IND06 keeps only three compact stress-test results; it does not re-derive PH-IND04.
 
 ### 12.1 Selector without bearer
 
-A unit may choose, rank or execute while another unit bears the consequences.
+A unit may choose, rank or execute while another unit bears the relevant consequence.
 
 ```text
 Selector != Bearer
@@ -606,261 +710,223 @@ Selector != Bearer
 
 ### 12.2 Bearer without strong selector
 
-A continuing unit may accumulate consequences, damage or history without satisfying a strong SRT selector-position criterion.
-
-Examples include passive scarring, material fatigue or state retention.
+A continuing unit may accumulate consequences or history without meeting a strong selector-position criterion.
 
 ```text
 Bearer != Selector
 ```
 
-### 12.3 Concern beyond bearer
+Passive scarring, damage accumulation and material fatigue remain useful negative controls.
 
-The states that matter may extend far beyond the physical or operational boundary of the bearer.
+### 12.3 Concern beyond bearer boundary
+
+The states that matter can extend beyond the bearer's physical / operational boundary.
 
 ```text
 Bearer Boundary != Concern Domain
 ```
 
-This gives a cleaner architecture than treating one notion of `self`, `system` or `body` as doing all explanatory work.
+This is inherited from PH-CONSC03 and included here only because it interacts with niche / boundary comparisons.
 
 ---
 
-## 13. Candidate full loop
+## 13. Compact recursive architecture
 
-The emerging bridge-level loop can be written:
+After owner routing, the strongest safe PH-IND06 synthesis is:
 
 ```text
 B_t
--> C_B
--> Omega_B(t)
--> Selection_t
--> Consequence_t
--> B_(t+1)
--> Omega_B(t+1)
+-> concern-weighted evaluation through C_B
+-> current afforded / invited possibilities
+-> selection / action
+-> consequence
+-> same-bearer return?        [PH-IND02 / PH-CONSC03]
+-> non-outsourcable history?  [PH-IND06 pressure test]
+-> changed effective reachability
+-> continued selectability?   [P1-T06 owner]
+-> generative reselectability? [B13 owner, only where separately supported]
 ```
 
-while the environment can also change:
+The environment may also change:
 
 ```text
 E_t -> E_(t+1)
 ```
 
-A more explicit joint-history form is:
+so bearer and world can accumulate coupled history.
+
+### Guard
+
+This loop is a routing architecture, not a theorem that:
 
 ```text
-(B_t, E_t, H_t)
--> selection
--> consequence
--> writeback into bearer and/or environment
--> (B_(t+1), E_(t+1), H_(t+1))
--> altered future relational possibility
+every consequence changes every bearer
+every history narrows options
+history-conditioned reachability = Stable ISP
+generative reselectability is required for every bearer
+bearing proves agency or consciousness
 ```
-
-This is a bridge grammar only.
-
-It does not assert that every selection modifies every bearer, that every history narrows possibility, or that `Omega_B` is a canonical SRT state variable.
-
-History can:
-
-- narrow options;
-- open new options;
-- change costs;
-- change relational compatibility;
-- change thresholds;
-- change which options are even recognized;
-- change how concern weights those options.
 
 ---
 
-## 14. Relational possibility as a better niche-adjacent SRT bridge
+## 14. Relational possibility, not a redefinition of niche
 
-If SRT later develops a niche-adjacent concept, it should avoid simply redefining ecological niche.
+If SRT later develops a niche-adjacent bridge concept, PH-IND06 recommends not calling every history-conditioned relation field a `niche`.
 
-A more distinct candidate object is:
+A narrower description is:
 
-> **the historically structured field of relations and futures that remain realizable for a particular bearer.**
+> the historically structured profile of relations and futures effectively reachable for a declared bearer under a declared regime.
 
-This can include:
+This can include physical, social, institutional and technological relations.
 
-- physical actions;
-- social relations;
-- institutional positions;
-- identities;
-- trust relations;
-- learned avoidance;
-- professional trajectories;
-- moral commitments;
-- technological extensions;
-- future cooperative possibilities.
-
-Compact distinction:
+Keep the discrimination stack:
 
 ```text
 Environment
-!=
-Ecological Niche
-!=
-Affordance Landscape
-!=
-Concern Domain
-!=
-Historically Conditioned Selectable-Future Space
+!= Ecological Niche
+!= current Affordance Field
+!= Concern Domain
+!= bearer-history-conditioned effective reachability
 ```
 
-These objects can overlap strongly but should not be collapsed by default.
+These may overlap strongly in organisms. They should not be identified by default across humans, institutions and AI systems.
 
-This bridge is compatible with the current neuroscience-side pressure that history can reshape future relational compatibility rather than merely remain as explicit current-state content.
+NEURAL34 is the named neuroscience-side analogue for history-conditioned relational possibility; no universal mechanism identity is claimed.
 
 ---
 
-## 15. Minimal bearer audit
+## 15. Minimal bearer audit added by PH-IND06
 
-For any proposed bearer `B`, ask at least:
+Do not duplicate PH-IND02's full admission test. Add only the questions needed for the new discrimination.
 
-### Test 1 — Unit continuity
-
-```text
-What makes B_t and B_(t+1) the same relevant continuing unit?
-```
-
-### Test 2 — Consequence return
+### A. Owner check
 
 ```text
-Which consequences return to B rather than merely occur near B or because of B?
+Has the candidate bearer criterion been routed to PH-IND02 / PH-CONSC03 rather than silently redefined here?
 ```
 
-### Test 3 — History writeback
+### B. Non-outsourcing check
 
 ```text
-What part of the consequence persists as history of this same B?
+Can the relevant loss / burden / correction be transferred elsewhere while the candidate is restored unchanged?
 ```
 
-### Test 4 — Non-outsourcing
+### C. Boundary check
 
 ```text
-Can the relevant loss / burden / correction be transferred elsewhere while B is restored unchanged?
+Is a physical, cognitive, ecological, legal, concern or statistical boundary being substituted for bearer boundary without argument?
 ```
 
-### Test 5 — Future-selectability effect
+### D. Reachability check
 
 ```text
-Does the history change what B can later select, sustain, tolerate, enter or reselect?
+Can two cases with similar current affordances differ in effective future reachability because their bearer histories differ?
 ```
 
-### Test 6 — Boundary separation
+### E. Selectability owner check
 
 ```text
-Is the cognitive / ecological / concern / legal / physical boundary being silently substituted for the bearer boundary?
+Is a bridge-level reachability observation being incorrectly promoted into P1 continued selectability or B13 generative reselectability?
 ```
 
-No single test proves subjecthood or phenomenality.
+No item proves subjecthood or phenomenality.
 
 ---
 
-## 16. Novelty discipline: what SRT may and may not claim
+## 16. Novelty claim that may survive
 
-### Allowed candidate claim
+### Allowed candidate increment
 
-A defensible SRT increment may be:
+A defensible formulation is:
 
-> SRT explicitly separates the continuing locus of consequence-bearing, the domain of states that matter to that locus, the environment-relative field of afforded possibilities, and the historically conditioned futures that remain selectable for that same locus; it then asks how selection and consequence recursively rewrite these relations across time.
+> PH-IND06 does not introduce bearer, concern, affordance or reselectability as new primitives. It tests whether **non-outsourcable same-unit consequence closure**, together with explicit separation of bearer boundary, concern domain, current affordance field and history-conditioned effective reachability, discriminates cases that neighboring autonomy / ecological / distributed-cognition descriptions otherwise leave conflated.
 
-### Stronger claim requiring future evidence
+### Evidence burden for a stronger claim
 
-A stronger originality claim would require showing that:
-
-```text
-systems matched on autonomy,
-viability regulation,
-affordance structure,
-information processing,
-and ordinary persistence
-```
-
-can still differ in:
+The stronger claim requires matched-case evidence:
 
 ```text
-same-unit consequence return
-non-outsourcing
-history-bearing rewrite
-future-selectability transformation
+match systems on:
+- autonomy / viability regulation
+- current affordance structure
+- information-processing capacity
+- ordinary persistence
+
+then vary / identify:
+- same-unit consequence return
+- non-outsourcing
+- bearer-specific history writeback
+- later effective reachability
 ```
 
-and that these differences predict behavior, learning, agency attribution, ownership, institutional persistence or other measurable outcomes.
+and show an independent prediction concerning behavior, learning, attribution, persistence, responsibility structure or another declared target.
 
-### Not allowed
+Without such evidence, PH-IND06 remains P3 bridge hardening.
+
+### Forbidden inflation
 
 Do not write:
 
 ```text
-SRT invented intrinsic normativity.
-SRT invented embodied agency.
-SRT invented ecological coupling.
-SRT invented path dependence.
-SRT invented affordance.
-SRT invented the process individual.
-SRT solved the subject / experiencer transition with bearer.
+SRT discovered intrinsic normativity
+SRT discovered embodiment
+SRT discovered ecological coupling
+SRT discovered affordance
+SRT discovered path dependence
+bearer solves subjecthood
+bearer solves phenomenality
+Reach_B is a new canonical selectability variable
 ```
 
 ---
 
 ## 17. Implication for embodiment language
 
-This comparison supports a narrower use of embodiment.
-
-Do not equate:
-
-```text
-embodied
-=
-possessing a biological body
-```
-
-but also do not inflate embodiment until it silently means every SRT role.
-
-A system may be richly embodied yet require separate answers to:
-
-```text
-What is the bearer?
-What is the concern domain?
-What is externally afforded?
-What remains selectable after this system's history?
-Where do consequences close?
-```
-
-Therefore:
+PH-IND06 supports a narrower anti-collapse guard:
 
 ```text
 Embodiment != Bearing
 Body != Bearer by definition
-Environment != Concern Domain
-Affordance != Selectability
+Cognitive Boundary != Bearer Boundary
+Ecological Niche != Concern Domain
+Affordance != effective bearer-relative reachability
 ```
 
-This is especially important when comparing biological organisms, institutions, AI systems and human–AI coupled workflows.
+This does not make embodiment unimportant. It prevents `embodied` from becoming a word that silently performs all of the following jobs at once:
+
+- individuating the continuing unit;
+- assigning consequence ownership;
+- specifying what matters;
+- describing what actions are afforded;
+- determining what remains selectable;
+- proving subjecthood.
+
+Those jobs require separate arguments.
 
 ---
 
-## 18. Integration pressure on existing SRT files
+## 18. Integration status and targets
 
-This patch does not make canonical edits, but records future hardening targets.
+**Integration hook:** `Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md`  
+**Integration status:** pending owner-level landing; no canonical landing is performed by this patch.
+
+Primary targets:
 
 ### `Core_Law/SRT_Individuation.md`
 
-Consider whether bearer analysis should explicitly distinguish:
+Potential future hardening:
 
 ```text
 persistent process
-vs
+!=
 same-unit consequence-bearing process
 ```
 
-and whether non-outsourcing should be a named audit rather than remaining implicit.
+and an explicit non-outsourcing audit, without altering P1-T06 by bridge fiat.
 
 ### `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
 
-Add a future compatibility guard:
+Potential boundary guard:
 
 ```text
 cognitive boundary
@@ -879,52 +945,39 @@ structural bearing
 != phenomenal for-me-ness
 ```
 
-and prevent concern or selectability from being used as hidden phenomenality criteria.
+and prevent concern / reachability from becoming hidden phenomenality criteria.
 
 ### `Core/SRT_Core_14_Dynamics_Scaling.md`
 
-Institutional and dyadic bearer cases should be used as cross-scale stress tests. Similar relational grammar across organisms and institutions does not establish identical mechanisms.
+Use institutions and dyads as cross-scale bearer stress tests, with no inference from shared grammar to shared mechanism.
 
-### Neuroscience bridge compatibility
+### `Core/SRT_OPEN_TENSIONS.md`
 
-Current history-conditioned relational possibility work can be used as a mechanistic analogue for:
-
-```text
-history
--> altered future relational compatibility
-```
-
-but must not be promoted into a universal bearer mechanism.
+If owner review judges the distinction independently useful, register non-outsourcing / copy-reset identity as an explicit open bearer-individuation pressure rather than silently expanding P1-T06.
 
 ---
 
 ## 19. Priority research questions
 
-The next useful questions are discriminative rather than terminological.
+### Q1 — bearing vs autonomy
 
-### Q1 — Bearer vs autonomy
+Can two systems satisfy matched autonomy / viability criteria but differ in same-unit consequence closure or non-outsourcing?
 
-Can two systems satisfy matched autonomy / viability criteria but differ in same-unit consequence return or non-outsourcing?
+### Q2 — affordance vs reachability
 
-### Q2 — Affordance vs selectability
+Can matched current affordance fields yield reliably different future path entry because bearer-specific history differs?
 
-Can matched current affordances produce systematically different realized future paths solely because bearer-specific history changes effective selectability?
+### Q3 — extended cognition vs bearing
 
-### Q3 — Concern beyond viability
+Under what conditions does an external cognitive component become part of the same consequence-bearing unit rather than merely part of task performance?
 
-Can concern-domain effects be demonstrated where selection sacrifices organismic viability without being reducible to delayed self-maintenance?
+### Q4 — institutional bearer
 
-### Q4 — Extended cognition vs bearing
+Can an institution satisfy strong bearer tests while clearly failing any justified subjecthood / phenomenality inference?
 
-When does an external cognitive component become merely constitutive of task performance, and when does it become part of the same consequence-bearing unit?
+### Q5 — dyadic bearer
 
-### Q5 — Institutional bearer
-
-Can an institution satisfy a strong bearer criterion while clearly failing subjecthood / phenomenality criteria?
-
-### Q6 — Dyadic bearer
-
-What evidence would distinguish:
+What evidence distinguishes:
 
 ```text
 two bearers + historical coupling
@@ -933,60 +986,60 @@ two bearers + historical coupling
 from:
 
 ```text
-a genuine higher-order relational bearer?
+genuine higher-order relational bearer
 ```
 
-### Q7 — Copy / reset identity
+### Q6 — digital copy / reset
 
-For AI and digital systems, what continuity criterion prevents costless restoration from silently erasing the very history required for bearer attribution?
+What identity criterion prevents costless restoration from erasing the history required for bearer attribution?
+
+### Q7 — independent payoff
+
+Does non-outsourcing predict anything after autonomy, persistence, affordance structure and information capacity are controlled?
+
+If Q7 fails repeatedly, PH-IND06 vocabulary should be reduced rather than defended.
 
 ---
 
 ## 20. Working synthesis
 
-The current safe synthesis is:
+The safest current map is:
 
 ```text
-Process identity tells us what persists.
-Autonomy tells us what constitutes and maintains a unity.
-Enactive adaptivity tells us why states can matter for that unity.
-Affordance tells us what the world makes available relative to an agent.
-Niche construction tells us how organism and environment recursively reshape one another.
-Extended cognition tells us why cognitive boundaries may exceed biological boundaries.
+Process identity:
+What persists?
 
-SRT bearer analysis asks a narrower additional question:
-For which continuing unit does a consequence become self-history,
-and how does that history alter what remains selectable for that same unit?
+Autonomy / viability:
+What constitutes and matters for a self-maintaining unity?
+
+Affordance:
+What is currently available relative to agent and environment?
+
+SRT bearer owner line (PH-IND02 / PH-CONSC03):
+For which continuing unit do consequences return and become history?
+
+PH-IND06 pressure:
+Can that consequence be outsourced while the claimed bearer is restored unchanged?
+
+Existing selectability owners:
+What counts as continued selectability (P1-T06),
+and when is stronger generative reselectability (B13) supported?
 ```
 
-The resulting bridge architecture is:
+The theoretical opportunity is therefore **not** a new noun called `bearer`.
+
+It is a discrimination program:
 
 ```text
-Who bears?
--> B
-
-What matters to it?
--> C_B
-
-What is available in the world relation?
--> A_B
-
-What remains selectable after its history?
--> Omega_B
+same current world
+same broad affordances
+possibly similar autonomy
+but different consequence-closure architecture
+and different bearer-specific history
+-> test for different later effective reachability
 ```
 
-followed by the recursive loop:
-
-```text
-Bearer
--> Concern-weighted possibility
--> Selection
--> Consequence
--> Same-bearer history
--> Changed future selectability
-```
-
-The theoretical opportunity is therefore not to defend `bearer` as an isolated new noun. It is to test whether this **role decomposition plus recursive closure** yields distinctions and predictions that disappear when body, system boundary, autonomy, concern, affordance, selector and subject are collapsed into one unit.
+If that difference survives matched-case testing and produces independent predictions, PH-IND06 earns further promotion. If not, it should remain a translation / audit layer over neighboring frameworks and existing SRT owners.
 
 ---
 
@@ -995,28 +1048,28 @@ The theoretical opportunity is therefore not to defend `bearer` as an isolated n
 Retain:
 
 ```text
-Object != Bearer != Selector != Subject != Experiencer
-Persistent Process != Bearer
-Autonomy != Bearing
-Cognitive Boundary != Bearer Boundary
-Bearer Boundary != Concern Domain
-Ecological Niche != Concern Domain
-Affordance != Selectability
-Interaction Autonomy != Relational Bearer
-Group Agency != Group Subject
-Bearing != Phenomenality
+Object != Bearer != Selector != Subject != Experiencer       [PH-IND04]
+B != C_B                                                     [PH-CONSC03]
+Persistent Process != Bearer                                 [PH-IND06 negative control]
+Autonomy != Bearing                                          [comparison pressure]
+Cognitive Boundary != Bearer Boundary                        [PH-IND06 audit]
+Ecological Niche != Concern Domain                           [PH-IND06 audit; sources pending]
+A_all != effective bearer-relative Reach_B                   [bridge diagnostic]
+continued selectability != generative reselectability        [existing owner split]
+Reach_B != either owner concept                              [no new selectability family]
+Interaction Autonomy != Relational Bearer                    [open stress test]
+Group / Institutional Agency != Subjecthood                  [open stress test]
+Bearing != Phenomenality                                     [PH-CONSC03/04 guard]
 ```
 
-And treat the following as the main future SRT hardening target:
+Primary PH-IND06 contribution:
 
 ```text
-Bearer
--> Concern
--> Historically Conditioned Selectability
--> Selection
--> Consequence
--> Same-Bearer Writeback
--> New Selectability
+Non-outsourcing test
++
+explicit boundary-role decomposition
++
+matched-case pressure against existing autonomy / affordance accounts
 ```
 
-This remains a P3 bridge architecture until it earns independent discriminative or empirical support.
+Everything stronger remains pending evidence and owner review.
