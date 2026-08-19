@@ -20,6 +20,8 @@ source_anchors:
   - DOI:10.1016/j.stem.2023.09.015
   - DOI:10.1016/j.stem.2017.11.001
   - DOI:10.1038/s41556-024-01550-4
+  - DOI:10.1016/j.cell.2019.10.015
+  - DOI:10.1016/j.celrep.2021.110283
 tags:
   - aging
   - organoid
@@ -30,6 +32,7 @@ tags:
   - YAP-TAZ
   - TGFB1
   - p53
+  - repeated-injury
   - reversible-reprogramming
 ---
 
@@ -37,7 +40,7 @@ tags:
 
 > **Question**: does published primary intestinal-organoid work already support a formation manipulation that can (G4) be fully removed before T1 and (G5) permit a reproducible non-trivial present-state overlap between different histories?
 >
-> **Answer**: no published study yet closes the full G4 + G5 + P2 chain. However, the evidence is no longer symmetric across candidate handles. ECM/YAP-TAZ matrix switching is the strongest G4/G5 engineering-calibration candidate; TGFB1 is a strong G4 / visible-state-persistence control; p53 remains a strong route-control mechanism but weak G4/G5 candidate.
+> **Answer**: no published study yet closes the full G4 + G5 + route-specific P2 chain. However, the evidence is no longer symmetric across candidate handles. ECM/YAP-TAZ matrix switching is the strongest G4/G5 engineering-calibration candidate; TGFB1 is a strong G4 / visible-state-persistence control; p53 remains a strong route-control mechanism but weak G4/G5 candidate. In addition, Wang 2019 and Rees 2022 show that repeated injury/recovery/rechallenge itself is already an established intestinal-model grammar, so AGING01 must not claim novelty for the generic proposition that prior injury changes later recovery.
 
 ---
 
@@ -270,24 +273,90 @@ killer-rival value = high because compensatory redundancy is explicit
 
 ---
 
-## 6. Revised candidate ranking
+## 6. Killer predecessor — repeated injury / recovery is already established
+
+### Wang et al. 2019 — explicit homeostasis / injury / regeneration cycles
+
+**Primary source:** Wang et al. 2019, Cell, DOI `10.1016/j.cell.2019.10.015`.
+
+Wang et al. establish a long-term self-organizing colonic epithelial monolayer system in which an air-liquid-interface condition supports a mature homeostatic-like state, submergence induces a rapid injury response associated with hypoxia / ER stress, and re-exposure to the air-liquid interface initiates Hopx+ fetal-like regenerative expansion followed by restoration of a homeostatic-like monolayer. The same system can reenact repeated homeostasis-injury-regeneration cycles.
+
+This closes an important plumbing question:
+
+```text
+recurrent injury
+-> regenerative state
+-> apparent homeostatic restoration
+-> later repeated injury
+```
+
+is already technically realizable in an intestinal epithelial system.
+
+What it does not establish is AGING01's rich matched-present residual:
+
+```text
+same declared Match-2 T1 state
++ different prior maintenance route history
+-> different later route identity / switching cost
+```
+
+### Rees et al. 2022 — repeated damage already changes future regenerative response
+
+**Primary source:** Rees et al. 2022, Cell Reports, DOI `10.1016/j.celrep.2021.110283`.
+
+Rees et al. extend the air-liquid-interface / submergence logic into a chronic-injury human colonoid model. Repeated rounds of injury and recovery progressively impair regrowth and inflammatory responsiveness and are accompanied by transcriptomic and DNA-methylation changes.
+
+This makes the following claim **pre-existing field knowledge**, not an AGING01 novelty claim:
+
+```text
+repeated injury / recovery history
+can change how intestinal epithelium responds to later injury
+```
+
+The published design is not a clean G5 success because the progressively injured cultures themselves acquire measurable current-state differences in regenerative capacity and molecular state.
+
+### Consequence for AGING01
+
+The predecessor pressure is strong:
+
+```text
+simple rechallenge effect = R2 / already available
+slower later recovery = R2 / already available
+molecular memory after recurrent injury = R2 / already available
+```
+
+The only admissible Stage-1B residual remains:
+
+```text
+rich T1 overlap
++ same P2
++ different route identity / probability / switching / bearer distribution
+beyond pre-frozen current-state rivals
+```
+
+These prior systems should therefore be treated as **baseline / positive-control / killer-predecessor models**, not as validation of SRT.
+
+---
+
+## 7. Revised candidate ranking
 
 For **G4/G5 engineering calibration**, not for theoretical importance:
 
 | Rank | Candidate | G4 | G5 | Best role |
 |---|---|---|---|---|
 | 1 | ECM / YAP-TAZ matrix switch | **GO** | **PARTIAL GO** | best reversible-state / convergence calibration |
-| 2 | single-pulse TGFB1 | **GO** | **not reached in tested window** | durable visible-carrier positive control |
-| 3 | transient TGFbeta/Hippo route bias | plausible | absent | backup formation family / redundancy rival |
-| 4 | PF-alpha p53 inhibition | not demonstrated | absent | route-mechanism evidence, not current G4/G5 leader |
+| 2 | ALI injury-recovery cycle | **GO in cycle design** | homeostatic-like restoration, not rich matched state | injury/recovery plumbing + repeated-challenge predecessor |
+| 3 | single-pulse TGFB1 | **GO** | **not reached in tested window** | durable visible-carrier positive control |
+| 4 | transient TGFbeta/Hippo route bias | plausible | absent | backup formation family / redundancy rival |
+| 5 | PF-alpha p53 inhibition | not demonstrated | absent | route-mechanism evidence, not current G4/G5 leader |
 
-This ranking does not say ECM/YAP is the best aging model. It says it is the cleanest available **methods bridge for the two unresolved gates**.
+This ranking does not say ECM/YAP or ALI cycling is the best aging model. It says they are the cleanest available **methods bridges for the unresolved gates and repeated-challenge plumbing**.
 
 ---
 
-## 7. Revised experimental sequencing
+## 8. Revised experimental sequencing
 
-The Stage-1 program should therefore add a dedicated gate-calibration layer before the full injury-history test.
+The Stage-1 program should add dedicated calibration / predecessor layers before the full injury-route history test.
 
 ### Stage-1A0 — G4/G5 convergence calibration
 
@@ -317,6 +386,12 @@ is a useful successful calibration result because it shows the matching procedur
 
 Separately calibrate a non-saturating Lgr5-route blockade.
 
+### Stage-1A2 — repeated-injury predecessor benchmark
+
+Use the Wang / Rees injury-recovery-cycle architecture only to establish benchmark behavior and to test whether the pipeline correctly attributes future decline to visible current-state / molecular changes when those are measurable.
+
+It must not be described as an SRT-specific test merely because later recovery deteriorates.
+
 ### Stage-1B — full history-topology feasibility
 
 Only then combine:
@@ -328,12 +403,13 @@ common injury P1
 + G5 preregistered T1 overlap
 + common P2
 + optional blockade
++ route-specific future endpoint
 + rich current-state rival
 ```
 
 ---
 
-## 8. Minimal G4/G5 decision rule
+## 9. Minimal G4/G5 decision rule
 
 Do not freeze exact dose, duration or assay chemistry from this audit.
 
@@ -377,7 +453,7 @@ Do not lengthen the recovery horizon post hoc until the groups happen to meet.
 
 ---
 
-## 9. What would count as a genuine G5 success
+## 10. What would count as a genuine G5 success
 
 G5 is stronger than “the markers moved in the same direction.”
 
@@ -399,7 +475,7 @@ The scientific burden is intentionally asymmetric:
 
 ---
 
-## 10. Strong negative interpretations
+## 11. Strong negative interpretations
 
 ### If matrix/YAP histories fully converge and P2 is identical
 
@@ -410,6 +486,17 @@ reversible state history did not leave a detectable future disposition under the
 ```
 
 This validates the matching/control architecture and weakens any generic claim that all maintenance history must alter future topology.
+
+### If repeated-injury cultures show poorer P2 but remain molecularly / functionally different at T1
+
+Interpretation:
+
+```text
+rechallenge effect confirmed
+BUT
+not a matched-present result;
+ordinary current-state / epigenetic / reserve explanation remains sufficient unless beaten prospectively.
+```
 
 ### If TGFB1 history continues to predict P2 but T1 signatures remain different
 
@@ -442,19 +529,21 @@ The next job would be carrier localization and frozen-rival comparison.
 
 ---
 
-## 11. Current gate disposition
+## 12. Current gate disposition
 
 After this close-read:
 
 ```text
-G4 feasibility in intestinal organoids = ESTABLISHED IN PRINCIPLE
+G4 feasibility in intestinal epithelial models = ESTABLISHED IN PRINCIPLE
 G5 partial convergence feasibility = ESTABLISHED IN PRINCIPLE via ECM/YAP state reversal
-G4+G5+common P2 history test = NOT ESTABLISHED
+repeated injury -> recovery -> later challenge plumbing = ALREADY ESTABLISHED
+repeated injury changes later recovery = ALREADY ESTABLISHED / not novel
+G4 + rich G5 + route-specific common P2 history test = NOT ESTABLISHED
 Stage-1 pilot-ready = NO
 ```
 
 The remaining methodological gap is narrower than before:
 
-> **not “can intestinal organoids ever revert after a transient regenerative state?” — yes, that has a strong primary precedent. The unresolved question is whether a biologically relevant injury-route history can be removed, richly re-converged at T1, and still alter a later route-specific rechallenge.**
+> **not “can intestinal epithelium recover and be injured again?” — yes. Not “can repeated injury change later recovery?” — yes. Not even “can a repair-like state revert toward adult-like organization?” — yes. The unresolved question is whether a biologically relevant injury-route history can be removed, richly re-converged at T1, and still alter a later route-specific rechallenge beyond current-state rivals.**
 
 That is the correct Stage-1B target.
