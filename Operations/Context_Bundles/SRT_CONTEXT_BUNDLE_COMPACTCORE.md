@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-18
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-19
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-18
-source_commit: 8fa53be1
-source_branch: agent/frontiers-attractor-reachability-bridge
-source_dirty: false
-inputs_digest: baa70243c64d7a49
+generated: 2026-08-19
+source_commit: b98babd5
+source_branch: codex/research-corpus-increment-pr
+source_dirty: true
+inputs_digest: 67ac034ea93c96e5
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,10 +26,10 @@ inputs_digest: baa70243c64d7a49
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-18 |
-| 来源 commit | `8fa53be1` |
-| 来源分支 | `agent/frontiers-attractor-reachability-bridge` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-19 |
+| 来源 commit | `b98babd5` |
+| 来源分支 | `codex/research-corpus-increment-pr` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 19 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源
