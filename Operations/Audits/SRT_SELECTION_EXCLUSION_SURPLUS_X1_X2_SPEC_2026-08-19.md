@@ -95,9 +95,11 @@ No widening after outcome inspection is permitted.
 Test only:
 
 ```text
-an ontologically instantiated causal structure
-cannot be required as a primitive ontological predecessor of Selection
+an ontologically instantiated causal structure / relation
+is not licensed as ontologically prior to Selection
 ```
+
+This is intentionally the strength of canonical P1-T01's negative ordering phrase `not an ontological primitive prior to selection`. It is stronger than the trivial statement that a prior causal mechanism is merely **not required**.
 
 Do **not** count as primitive consequences:
 
@@ -109,7 +111,7 @@ any specific causal mechanism
 
 Those are additional P1 / domain-level content.
 
-**Scope condition**: X1-N concerns causality proposed as an ontologically real structure / relation inside the ontology. A purely metalogical notation or an external descriptive ordering that is not being asserted as ontologically prior is outside this target.
+**Scope condition**: X1-N concerns causality proposed as an ontologically real structure / relation inside the ontology. A purely metalogical notation or an external descriptive ordering that is not itself asserted as ontologically prior is outside this target.
 
 ### X2-N — information-readout negative ordering target
 
@@ -176,9 +178,10 @@ Retain:
 A valid X1-N primitive-link must show:
 
 1. the negative ordering follows from P0-01's precedence / exhaustiveness rather than from the suspended P1-T01;
-2. it does not require treating `causality` as a chooser, agent, or hidden Selection synonym;
-3. it does not infer the full `L_2` projection formula;
-4. it can be stated to an external evaluator without presupposing SRT vocabulary beyond the compared ordering commitments.
+2. the target is restricted to ontologically instantiated causality, so the derivation does not smuggle a theory of all logical / descriptive dependence into P0-01;
+3. it does not require treating `causality` as a chooser, agent, or hidden Selection synonym;
+4. it does not infer the full `L_2` projection formula;
+5. it can be stated to an external evaluator without presupposing SRT vocabulary beyond the compared ordering commitments.
 
 ---
 
