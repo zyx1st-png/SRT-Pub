@@ -5,11 +5,11 @@ status: active_current
 canonical: false
 scope: 01_source_intuition_book
 role: single_construction_entry
-updated: 2026-07-12
+updated: 2026-08-19
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
-last_pass: book_retrieval_governance_hardening_2026-07-12
+last_pass: book_next_pass_objectification_routing_hardening_2026-08-19
 ---
 
 # 《从存在到秩序》当前唯一施工入口
@@ -89,6 +89,8 @@ SRT 在本书中是发动机，而不是要求读者先接受的一整套说明�
 
 当前优先级是生成哲学战略总装、当前主线一致性、导出顺序、元文件同步与评审准备，不是无目标地平均润色全部章节。
 
+**下一轮统一优化方向（2026-08-19）**：已登记 `BOOK_NEXT_PASS_SCIENTIFIC_OBJECTIFICATION_POSITION_STRUCTURE_2026-08-19.md`。主施工面为 `Q00–Q03 + Q19/Q20`，处理科学客观化、对象化、位置治理与生成条件退入背景；`Q26/Q27` 仅作为失败条件与理论自反的回收／自检位。该文件当前是施工计划，**不表示相关正文或 pending integration hook 已经落地。**
+
 ---
 
 ## 0.3 AI / Agent 施工硬规则
@@ -115,6 +117,7 @@ SRT 在本书中是发动机，而不是要求读者先接受的一整套说明�
 |---|---|---|
 | 唯一施工入口 | `BOOK_CURRENT_STATUS.md` | 本文件；确认当前正文主线、状态和读取顺序 |
 | 机器路由 | `BOOK_ACTIVE_MANIFEST.json` | 当前主稿根目录、概念路由、归档降权和 Agent 硬规则 |
+| 下一轮统一优化 | `BOOK_NEXT_PASS_SCIENTIFIC_OBJECTIFICATION_POSITION_STRUCTURE_2026-08-19.md` | 科学客观化 / 对象化 / 位置治理；Q00–Q03 + Q19/Q20 主施工，Q26/Q27 回收自检 |
 | 当前定位 | `BOOK_CURRENT_STATUS_POSITIONING_ADDENDUM_2026-07-02.md`, `BOOK_POSITIONING_BRIEF_2026-06-07.md` | 生成哲学书定位；SRT 是发动机而非说明书 |
 | 当前结构骨架 | `BOOK_ARCHITECTURE_MAP_5ACT_2026-06-24.md` | 五幕生成运动重构骨架；当前实际形态为 `Q00–Q28 + Q04b + Q15b + 幕前/幕间桥` |
 | 章节内容建筑图 | `BOOK_ARCHITECTURE_MAP_2026-06-03.md` | 六根主梁与各章不可删概念、记忆点；仅作内容引用，结构视图已被五幕骨架取代 |
