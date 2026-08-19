@@ -2,7 +2,7 @@
 id: SRT-OPS-AUDIT-SELECTION-PRIMITIVE-DERIVATIONAL-SURPLUS-DUEL-EXECUTION-20260819
 type: audit_record
 status: active
-record_stage: executed_c1_c6_no_surplus_found
+record_stage: executed_review_corrected_additive_battery_plus_x0
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -22,112 +22,156 @@ dependency:
 tags: [Selection, Primitive, Fruitfulness, DerivationalSurplus, RivalDuel, NegativeResult, Phase0_5, GOV_SUB01]
 ---
 
-# Selection Primitive Fruitfulness / Derivational-Surplus Duel — Execution
+# Selection Primitive Fruitfulness / Derivational-Surplus Duel — Corrected Execution
 
-> **Execution basis**: frozen spec `SRT_SELECTION_PRIMITIVE_DERIVATIONAL_SURPLUS_DUEL_SPEC_2026-08-19.md`.
+> **Execution basis**: amended frozen spec `SRT_SELECTION_PRIMITIVE_DERIVATIONAL_SURPLUS_DUEL_SPEC_2026-08-19.md`.
 >
-> **Hard boundary**: this is a governance-only derivation audit. No canonical file is changed. The result does not prove Selection false, dispensable, conventional, or non-fundamental; it also does not strengthen Selection beyond its current `P unresolved primitive admission` residue.
+> **Hard boundary**: governance-only derivation audit. No canonical file is changed. This record does not prove Selection false, dispensable, rhetorical, unique, empirically established, or non-fundamental; it does not change the current `P unresolved primitive admission` residue.
 
 ---
 
-## 0. Executive verdict
+## 0. Corrected executive verdict
 
-**No candidate derivational surplus `C*` was found in the frozen C1-C6 battery.**
+The final-review correction narrows and improves the original result.
 
-The strongest fair role-matched rival, V2-PAR, can preserve the audited middle-level structure once both sides receive the same independent background commitments. More importantly, when each tested consequence is temporarily removed from the shared background, **SRT-P does not derive that consequence from P0-01 primitive Selection alone either**. The apparent load comes from separate P0/P1 axioms, constitutive criteria, variable definitions, or bridge hypotheses.
-
-Frozen result:
+### What is established
 
 ```text
-C1 EX-A occurrence / persistence        -> no primitive-linked surplus
-C2 irreversible historical trace        -> no primitive-linked surplus
-C3 L0 -> L1 -> L2 architecture          -> no primitive-linked surplus
-C4 P1-T06 Stable ISP                     -> no primitive-linked surplus
-C5 Psi_f / d / T_dir jurisdiction        -> no primitive-linked surplus
-C6 prospective Core-24 / D2 affordance   -> no primitive-linked surplus
-
-AUDITED C1-C6 DERIVATIONAL SURPLUS
+C1-C6 ADDITIVE DERIVATIONAL SURPLUS
 = NOT ESTABLISHED
 ```
 
-This is a **negative fruitfulness result for the audited consequence set**, not an ontological demotion.
+The additive battery does not show that P0-01, with the relevant target-bearing premises removed, independently supplies:
 
-Current Selection residue remains:
+- the full EX-A occurrence / persistence theorem;
+- irreversible historical trace;
+- L2 persistence / writeback;
+- P1-T06 Stable ISP standing;
+- the separate `Psi_f` / `d` / `T_dir` jurisdictions;
+- a current prospective Selection-level D2 disagreement.
+
+### What is no longer claimed
+
+The corrected record does **not** say:
 
 ```text
-P unresolved primitive admission
+Selection has no derivational consequences
+all downstream structure is independent of P0-01
+V2-PAR is a lossless reduction of Selection
+```
+
+C1-C6 were primarily additive targets. Canonical P0-01 also has an **ordering / exclusion** role that the first execution under-tested.
+
+### Corrective exclusion result
+
+A canonical exclusion target was therefore run:
+
+```text
+X0 no-prior-chooser
+```
+
+SRT-P does carry a genuine primitive-linked negative ordering consequence: P0-01's precedence / exhaustiveness blocks an already existent chooser, subject, agent, or stable selector from being ontologically prior to primitive Selection. Current P0-04 explicitly attributes that negative result to P0-01 ordering.
+
+However, frozen V2-PAR was itself constructed to preserve the same pre-objective / no-prior-chooser primitive boundary. The rival comparison therefore reaches:
+
+```text
+OUTCOME C
+= RIVAL COMPARISON UNRESOLVED DUE TO PRIMITIVE ROLE ISOMORPHISM
+```
+
+So X0 is a real SRT-side primitive-linked consequence, but not a discriminating `C*` against this role-matched rival.
+
+### Current overall status
+
+```text
+Selection primitive role
+= P unresolved primitive admission
+
+C1-C6 additive surplus
+= not established
+
+X0 exclusion consequence
+= primitive-linked on SRT side
+= rival-isomorphic / unresolved on comparison
+
+exclusion consequence class beyond X0
+= not exhausted
+
+Selection-level D2
+= not established
 ```
 
 ---
 
-## 1. Execution discipline: target suspension
+## 1. Method correction: actual primitive-link test with `B'`
 
-The frozen spec allowed a shared background `B`, but also required that a target not be smuggled into `B` while that same target is being tested.
+The first execution often asked whether P0-01 **alone** entailed a target. That was weaker than the frozen gate.
 
-Execution therefore used the following rule:
-
-> For each `C_i`, temporarily suspend the axiom / theorem / variable rule that explicitly states `C_i`. Ask first whether SRT-P derives `C_i` from primitive Selection plus the remaining common background. Only then test V2-PAR translation.
-
-This avoids the invalid procedure:
+The corrected gate is:
 
 ```text
-give both sides C_i as a premise
--> both derive C_i
--> conclude no surplus
+B' = shared background B
+     minus every premise that directly states the target under test
+
+ask:
+SRT-P + B' -> target ?
+
+then replace SRT-P with frozen V2-PAR
+while holding B' fixed
 ```
 
-The actual question is:
+If SRT-P itself cannot derive the target, the additive candidate fails the primitive-link gate.
+
+If SRT-P does derive something but V2-PAR matches only because the primitive comparison is role-isomorphic, classify **Outcome C**, not lossless translation.
+
+External-judge status is evaluated only after earlier gates survive. If a candidate fails before then, record:
 
 ```text
-remove the explicit C_i commitment from both sides
--> does P0-01 Selection itself regenerate C_i?
+n/a — not reached
 ```
-
-Across C1-C6, the answer is no.
 
 ---
 
-## 2. Auxiliary C0 — existence-as-range formal role
+## 2. Corrected C0 — range / precedence formal role
 
-Before C1, the P0-01 compact form was stress-tested because it is the most obvious place where a formal Selection-specific surplus might hide:
+### Canonical SRT-P
+
+P0-01 contains more than the AM-A arrow:
 
 ```text
+Selection precedes existence;
+existence is an image of Selection;
+
 exists x iff x in Range(G-hat)
 ```
 
-### SRT-P
+plus the AM-A primitive actualisation kernel.
 
-P0-01 uses `G-hat_theta` as the well-formed role-carrier for primitive actualisation. The canonical boundary explicitly says the operator is not a prior entity that independently explains the primitive transition.
+### First-execution error
 
-### V2-PAR translation
-
-Use an equally non-causal formal carrier for the primitive actualisation admission:
+The first execution granted V2-PAR:
 
 ```text
 exists x iff x in Range(A)
 ```
 
-where `A` is not a chooser or mechanism and carries no content beyond the same admitted transition.
+That was not part of the frozen rival. It was a new substantive exhaustiveness / precedence premise and is withdrawn.
 
-### Difference source
+### Corrected outcome
 
-Only notation / theory-facing framing changes.
+The range biconditional is therefore **not** classified as a lossless lexical translation.
 
-The range expression itself does not generate an observable, historical, persistence, bearer, or normative consequence that V2-PAR cannot state.
+It establishes a formal asymmetry between SRT-P and frozen V2-PAR, but the relevant question is whether that asymmetry yields a structural consequence that survives rival-stability. X0 below runs the clearest current canonical example.
 
-### Outcome
-
-**lossless translation**.
-
-C0 therefore supplies no `C*`.
+**C0 disposition:** `FORMAL ASYMMETRY IDENTIFIED / NO OFF-SPEC V2 BICONDITIONAL / CONSEQUENCE TESTED AT X0`.
 
 ---
 
-## 3. C1 — EX-A occurrence / persistence separation
+## 3. C1 — full EX-A occurrence / persistence separation
 
-### Target suspended
+### Target
 
-Temporarily suspend P0-02's explicit rule:
+Full P0-02 distinction:
 
 ```text
 manifest occurrence
@@ -135,253 +179,258 @@ manifest occurrence
 != Stable ISP
 ```
 
-### SRT-P derivation attempt
+### Suspended target-bearing premises
 
-P0-01 / AM-A states only the minimum primitive actualisation kernel:
+Remove from `B`:
+
+- P0-02 as the explicit EX-A boundary;
+- direct mirrors that simply restate the same graded occurrence/persistence/Stable-ISP separation as a theorem.
+
+### Residual `B'`
+
+Retain:
+
+- P0-00 layer vocabulary;
+- canonical-strength P0-01;
+- P0-03 historical trace floor;
+- P0-04 formal well-formedness / primitive stopping point, except no direct EX-A restatement;
+- non-target P1 / bridge commitments at their existing levels.
+
+### SRT-P + `B'`
+
+P0-01 establishes determinate manifestation and does not require persistence, stable selector, or Stable ISP in the primitive kernel.
+
+That gives a **negative non-entailment pressure**:
 
 ```text
-non-objectified potential difference
--> determinate manifest actuality
+occurrence
+-/-> persistence automatically
 ```
 
-Its own boundary does not add persistence, stable selector, stable ISP, domain mechanism, or consciousness.
-
-But that absence of an added persistence condition is not yet a derivation of the stronger EX-A distinction. P0-02 was introduced precisely to separate event-level actuality from anchoring persistence and stable identity.
+but it does not regenerate the full graded P0-02 theorem specifying anchoring persistence, maintenance, continued constraint, and the Stable-ISP boundary.
 
 Therefore:
 
 ```text
-P0-01 alone
--/-> full P0-02 occurrence/persistence theorem
+SRT-P + B'
+-/-> full EX-A theorem
 ```
 
-### V2-PAR
+### Rival comparison
 
-V2-PAR's primitive actualisation admission likewise gives an event without by itself specifying persistence.
-
-If the same independent EX-A boundary is then added to both sides, the translation is direct:
-
-```text
-selection occurrence      -> actualisation occurrence
-anchoring persistence     -> anchoring persistence
-Stable ISP                -> recurrent Stable-ISP criterion
-```
-
-### Difference source
-
-The load sits in P0-02 / EX-A, not in the word or primitive role `Selection` by itself.
+V2-PAR likewise has primitive actualisation without an intrinsic persistence theorem. Matching the negative non-entailment is role-isomorphic; adding the full graded EX-A theorem would require the same extra premise on either side.
 
 ### Outcome
 
-**extra-premise difference; no primitive-linked surplus**.
+- SRT additive result: **full C1 not entailed**.
+- partial primitive-linked content: occurrence need not already include persistence.
+- rival comparison: **Outcome C / role-isomorphism** for the primitive non-entailment; full EX-A remains an extra-premise target.
+- external judge: `n/a — no discriminating C* reached`.
+
+**C1 disposition:** `FULL ADDITIVE SURPLUS NOT ESTABLISHED / PARTIAL NON-ENTAILMENT SHARED AT ROLE LEVEL`.
 
 ---
 
 ## 4. C2 — irreversible historical trace
 
-### Target suspended
+### Suspended target-bearing premises
 
-Temporarily suspend P0-03's irreversibility floor.
+Remove from `B`:
 
-### SRT-P derivation attempt
+- P0-03;
+- P1-T02 insofar as it restates ontological direction through irreversible trace;
+- direct L1 irreversibility statements that would simply return the same historical-asymmetry target.
 
-P0-01 admits determinate manifestation. It does not state that every manifestation must leave an irreversible historical trace, nor that reversal must count as a new event with its own trace.
+### Residual `B'`
 
-P0-03 is separately registered because historically effective `L_2` requires more than reversible bookkeeping.
+Retain P0-00, P0-01, P0-02 occurrence/persistence distinction, P0-04, P1-T01/T03/T04 where they do not themselves supply the removed irreversibility target, RC-A / ST-A guards, and non-target variable jurisdictions.
+
+### SRT-P + `B'`
+
+Primitive Selection gives determinate actuality. Nothing in the remaining P0-01 ordering says every anchored event must preserve an irreversible historical trace or that reversal must itself count as a new trace-bearing event.
 
 Therefore:
 
 ```text
-P0-01 primitive Selection alone
+SRT-P + B'
 -/-> P0-03 historical irreversibility
 ```
 
-### V2-PAR
+### Rival comparison
 
-Once the same independent irreversibility floor is admitted, V2-PAR can state:
-
-```text
-once an actualisation event is anchored and leaves history,
-it cannot be treated as never having occurred;
-a reversal is another actualisation event with another trace
-```
-
-No chooser, option menu, or Selection-specific extra premise is needed.
-
-### Difference source
-
-The decisive premise is historical asymmetry / P0-03 itself.
+V2-PAR is equally unable to regenerate historical irreversibility without an added history-asymmetry premise.
 
 ### Outcome
 
-**extra-premise difference; no primitive-linked surplus**.
+**additive non-entailment / extra-premise target**.
 
-### Guard
-
-This does not show irreversibility unimportant. It shows only:
+This is the strongest clean negative in the additive battery:
 
 ```text
 irreversibility is load-bearing
 !=
-irreversibility is derived from primitive Selection alone
+irreversibility is derived from primitive Selection
 ```
+
+External judge: `n/a — primitive-link fails on SRT side`.
 
 ---
 
 ## 5. C3 — `L0 -> L1 -> L2` architecture
 
-### Target suspended
+C3 is split exactly as frozen.
 
-Temporarily remove the explicit layer-role rules that assign:
+### C3a — event admission at `L1`
 
-- primitive manifestation to an `L_1` event;
-- persistence / historical writeback to `L_2`;
-- occurrence and persistence to different structural questions.
+#### Suspended target-bearing premises
 
-### SRT-P derivation attempt
+Suspend direct later statements that simply declare the tested event as `L1`, while retaining P0-00 layer vocabulary as a notation gate.
 
-Primitive Selection supplies determinate manifestation, but the three-layer architecture requires additional organization:
+#### Residual `B'`
 
-- a distinction between non-objectified potential and manifest event;
-- a history / scaffold layer;
-- writeback and maintenance rules;
-- explicit occurrence/persistence separation.
+Retain:
 
-Those are not logically generated by the bare fact that the primitive role is called Selection.
+- P0-00 meanings of `L0`, `L1`, `L2`;
+- canonical P0-01 / AM-A;
+- no direct P0-02 sentence is used as the derivation premise.
 
-### V2-PAR translation
+#### SRT-P + `B'`
 
-V2-PAR can use the same architecture:
+P0-01 supplies determinate manifest actuality; P0-00 supplies the layer vocabulary in which determinate manifestation is the manifest-event layer. Under this residual background, SRT-P can regenerate the narrow result:
 
 ```text
-pre-objective potential
--> primitive actualisation event at L1
--> optional anchoring / history / writeback at L2
+primitive determinate manifestation
+-> event admission at L1
 ```
 
-without changing the target.
+So the first execution's blanket `C3 = no primitive-link` was too coarse.
 
-### Difference source
+#### Rival comparison
 
-The load sits in the layer architecture and history rules, not in a Selection-specific primitive consequence.
+V2-PAR has been frozen to preserve the same pre-objective primitive actualisation target. With the same P0-00-style layer vocabulary available in `B'`, it can map its primitive manifest event to `L1` only because it occupies the same primitive role.
 
-### Outcome
+This is not evidence of a successful reduction.
 
-**lossless structural translation once layer commitments are shared; no primitive-linked surplus**.
+**C3a outcome:** `SRT PRIMITIVE-LINK = YES / RIVAL-STABILITY = OUTCOME C DUE TO ROLE ISOMORPHISM / NO DISCRIMINATING C*`.
 
-### Orientation note
+### C3b — persistence / writeback at `L2`
 
-`Selection-first` remains a useful way to emphasize that object/state descriptions should not be treated as prior to manifestation. V2-PAR, however, was deliberately frozen to preserve the same pre-objectification boundary. Therefore that orientation advantage does not become an exclusive derivation in this duel.
+#### Suspended premises
+
+Remove direct L2 history/writeback / scaffold commitments carrying this target.
+
+#### SRT-P + `B'`
+
+P0-01 does not add history persistence, writeback, scaffold maintenance, or sedimented downward constraint.
+
+**Outcome:** `ADDITIVE NON-ENTAILMENT`.
+
+### C3c — occurrence `!=` persistence
+
+Canonical P0-01's minimum kernel does not require persistence, which supports a narrow non-entailment. But the full structural distinction between occurrence and graded anchoring persistence is supplied by P0-02.
+
+**Outcome:** `PARTIAL PRIMITIVE NON-ENTAILMENT / FULL STRUCTURAL TARGET REQUIRES EXTRA PREMISE / RIVAL ROLE-ISOMORPHIC`.
+
+### C3 overall
+
+C3 does **not** support the old six-row claim that every primitive-link is simply `no`.
+
+Correct disposition:
+
+```text
+L1 event admission: primitive-linked but rival-isomorphic
+L2 writeback: additive surplus not established
+full occurrence/persistence architecture: extra-premise beyond P0-01
+```
 
 ---
 
 ## 6. C4 — P1-T06 Stable ISP
 
-### Target suspended
+### Suspended target-bearing premises
 
-Temporarily suspend P1-T06's four result-state conditions:
+Remove:
 
-1. recurrent encounter with currently effective, non-equivalent candidates rather than closed-script replay;
-2. perspective-bearing organization;
-3. history/writeback;
-4. continued-selectability with downstream consequence bearing.
+- P1-T06 four result-state conditions;
+- direct result-state mirrors that simply restate iterative effective candidates, perspective, history/writeback, continued-selectability, and same-process consequence bearing.
 
-### SRT-P derivation attempt
+### Residual `B'`
 
-RC-A already fixes the crucial boundary:
+Retain P0-01 through P0-04, non-target P1 theorems, RC-A separation, and ST-A only insofar as it does not re-import the suspended Stable-ISP criterion.
+
+### SRT-P + `B'`
+
+RC-A deliberately separates:
 
 ```text
 one-shot Selection occurrence
 != Stable ISP
 ```
 
-P0-01 does not imply persistence, perspective, recurrent identity, history writeback, same-process consequence bearing, or continued selectability.
+Primitive Selection does not itself supply recurrent identity, perspective, historical reconstitution, continued-selectability, or consequence bearing.
 
-Therefore SRT's own architecture blocks the inference:
+Therefore:
 
 ```text
-primitive Selection
--> P1-T06 Stable ISP
+SRT-P + B'
+-/-> P1-T06 Stable ISP
 ```
 
-P1-T06 is a thicker constitutive result-state criterion with additional premises.
+### Rival comparison
 
-### V2-PAR reconstruction
-
-The four conditions can be expressed without primitive Selection vocabulary:
-
-1. the recurrent process continues receiving currently effective, non-equivalent admissible continuations rather than only replaying a closed trajectory;
-2. it accumulates a structured perspective from its position;
-3. prior outputs remain effective in later admissibility / state through writeback;
-4. the same history-bearing process continues receiving such continuations and bearing downstream consequences.
-
-This is structurally the same recurrent target.
-
-### Difference source
-
-Calling the recurrent process a `selection center` is framework language. The result-state conditions themselves carry the load.
+V2-PAR also needs the recurrent-process result-state premises. No new primitive advantage appears.
 
 ### Outcome
 
-**lossless translation at the result-state level; no primitive-linked surplus**.
+**additive non-entailment / extra-premise target**.
 
-### Important consequence
+This remains a useful negative precisely because RC-A succeeded in preventing Stable ISP / agency-like conditions from being smuggled into Selection occurrence.
 
-This negative result is partly forced by a success of RC-A: Selection was intentionally prevented from swallowing Stable ISP / agency-like conditions. The cleaner the RC-A separation, the less P1-T06 can be cited as evidence that primitive Selection itself has downstream derivational surplus.
+External judge: `n/a — primitive-link fails on SRT side`.
 
 ---
 
 ## 7. C5 — `Psi_f` / `d` / `T_dir` jurisdiction
 
-### Targets suspended
-
-Temporarily suspend the canonical definitions / jurisdiction rules themselves and ask whether primitive Selection regenerates their distinctions.
+The corrected test explicitly separates semantic dependence from derivational dependence.
 
 ### 7.1 `Psi_f`
 
-Canonical `Psi_f` adds a burden / payability structure to actualisation / maintenance and carefully separates its payability main read from Fisher, energetic, metabolic, pain, or stress projections.
+Canonical `Psi_f` is semantically anchored as burden / impedance borne when Selection compresses open possibility into maintainable actuality. That is a real **semantic dependence** on the primitive role.
 
-Primitive Selection alone does not derive:
+But after suspending the `Psi_f` definition / jurisdiction rules, P0-01 does not independently regenerate:
 
-- the payability interpretation;
-- the Fisher projection conditions;
-- cross-scale proxy rules;
-- the distinction between actual burden and any one measured proxy.
+- payability as the main read;
+- Fisher projection conditions;
+- energetic / metabolic proxy boundaries;
+- cross-scale projection discipline.
 
-V2-PAR can attach the same burden accounting to primitive actualisation / maintained manifestation.
+A role-matched V2-PAR can translate the primitive event slot in the semantic sentence, which is Outcome C pressure, not a proof of reduction.
 
-Result: **no primitive-linked surplus**.
+**Psi_f disposition:** `SEMANTIC DEPENDENCE YES / UNIQUE DERIVATIONAL SURPLUS NOT ESTABLISHED`.
 
 ### 7.2 `d`
 
-Canonical `d` adds stake-coupled concern / irreversible-risk sensitivity and explicitly blocks identifying mere capacity or Fisher distinguishability with concern.
-
-Primitive Selection is broader than stake-bearing systems after RC-A.
+Canonical `d` is stake-coupled concern / irreversible-risk sensitivity. Its derivational load depends on bearer / stake architecture and irreversible-risk state, not on P0-01 alone.
 
 Therefore:
 
 ```text
-Selection
+primitive Selection
 -/-> d > 0
 ```
 
-and V2-PAR can inherit the same stake-coupling gate downstream where a bearer exists.
-
-Result: **no primitive-linked surplus**.
+**d disposition:** `ADDITIVE SURPLUS NOT ESTABLISHED`.
 
 ### 7.3 `T_dir`
 
-Current RC-A override limits `T_dir` to a downstream self-readability / reorientation role. Script, habit, gradient, or `L_2` automation cannot be used to infer no Selection.
+Under RC-A, `T_dir` is a downstream readability / reorientation functional and not a Selection-occurrence gate.
 
-The working role can be translated as readability / reorientation of the current process direction without treating it as a Selection-occurrence criterion.
+P0-01 does not itself supply `R_self`, `A_reorient`, reflective access, or reorientation capacity.
 
-Primitive Selection does not by itself derive `R_self`, `A_reorient`, subject access, or a completed `T_dir` formal object.
+**T_dir disposition:** `ADDITIVE SURPLUS NOT ESTABLISHED`.
 
-Result: **no primitive-linked surplus**.
-
-### Cross-variable outcome
-
-The three-way distinction:
+### C5 overall
 
 ```text
 burden/payability
@@ -389,211 +438,305 @@ burden/payability
 != self-readability/reorientation
 ```
 
-is scientifically useful, but its load is carried by the separate variable jurisdictions.
+remains useful, but the three-way jurisdiction is carried by the variable definitions / downstream architecture.
 
-### Outcome
-
-**lossless downstream jurisdiction translation / orientation-only naming difference; no `C*`**.
+No non-translatable variable-jurisdiction consequence of primitive Selection is established here.
 
 ---
 
-## 8. C6 — prospective empirical / Core-24 affordance
+## 8. C6 — prospective empirical / bridge affordance
 
-### Target suspended
+### Scope of corrected sweep
 
-Do not grant either side an existing P24 candidate as a consequence. Ask whether primitive Selection itself yields a prospective observable difference.
+The first execution named P24-1..6 only. The corrected sweep includes:
 
-### SRT-P derivation attempt
+- P24-1 through P24-7;
+- Core 25 thermodynamic signatures;
+- Core 26 MISA attractor interface.
 
-Current Core 24 explicitly records:
+This is still a declared sweep, not a claim to have searched every historical bridge file in the repository.
 
-- P24-1 non-monotonic friction is prospectively reproducible by bounded adaptive representation / policy-learning rivals;
-- P24-3 local-cost reduction + global constraint + hysteresis is prospectively reproducible by a frozen history-memory / regularization rival;
-- P24-4 pre-belief field shaping is prospectively reproducible by bounded history-conditioned representation / gating rivals;
-- P24-2 / P24-5 / P24-6 are downstream stake, normativity, or agency candidates and cannot repair the primitive burden after RC-A.
+### Core 24
 
-No current candidate provides:
+Current Core 24 already records:
+
+- P24-1, P24-3, P24-4 are R2-absorbable at present;
+- P24-2, P24-5, P24-6 are downstream stake / normativity / agency worklines and cannot repair primitive Selection discrimination;
+- P24-7 is a P4/P5 combination hypothesis and combination surprise is not automatically rival-model discrimination;
+- current established D2 count remains zero.
+
+No current Core-24 item supplies a primitive-linked:
 
 ```text
-primitive Selection
--> O_SRT
-
-V2-PAR + same downstream machinery
--> incompatible O_V2
+O_SRT != O_R2
 ```
 
-### V2-PAR
+before data.
 
-Because V2-PAR is granted the same primitive manifestation target and may use the same bounded downstream learning / history / gating machinery, the current P24 shells translate without an incompatible forecast.
+### Core 25
 
-### Difference source
+Core 25's thermodynamic signatures include irreversibility, hierarchy, broken detailed balance, cascade / turbulence, plus stake/payability/anchoring terms for consciousness-relevant candidates.
 
-No direction, bound, ordering, invariance, or intervention asymmetry currently follows from the primitive name/role alone.
+Its own non-claims say these signatures do not prove SRT ontology. The candidate formulas are bridge-level and, where consciousness-relevant, explicitly import downstream `d`, payability, and anchoring. They therefore fail the primitive non-laundering / primitive-link burden for this duel.
 
-### Outcome
+### Core 26
 
-**lossless prediction-shell translation; no current D2 affordance from the primitive role**.
+Core 26 explicitly says MISA is not a new SRT axiom or metaphysical foundation. It is a dynamical implementation pattern for hardening through mutual inhibition, self-activation, attractor basins, writeback, and hysteresis.
 
-This confirms the existing Core-24 epistemic downgrade rather than creating a new downgrade.
+Its content is therefore downstream implementation / hardening machinery, not a primitive-linked observable disagreement supplied by P0-01.
 
----
+### C6 outcome
 
-## 9. Seven-gate `C*` admission check
-
-No candidate in C1-C6 passed all seven frozen gates.
-
-| Gate | C1 | C2 | C3 | C4 | C5 | C6 |
-|---|---|---|---|---|---|---|
-| source from current SRT-P | yes | yes | yes | yes | yes | yes |
-| same shared background available to rival | yes | yes | yes | yes | yes | yes |
-| primitive-link survives target suspension | **no** | **no** | **no** | **no** | **no** | **no** |
-| non-lexical structural difference | no | no | no | no | no | no |
-| no downstream laundering | yes | yes | yes | yes | yes | yes |
-| rival cannot repair without new premise | no | no | no | no | no | no |
-| external-judge consequence | potentially | potentially | potentially | potentially | potentially | potentially |
-
-The decisive failure is the **primitive-link gate**.
-
-For every audited target, the SRT derivation itself needs an additional commitment beyond primitive Selection. Once that additional commitment is made available symmetrically, V2-PAR can reconstruct the target without adding a new consequence-specific primitive.
-
----
-
-## 10. Strongest surviving value of Selection-first framing
-
-The duel does not show that the Selection vocabulary has no value.
-
-One role survives clearly:
-
-> **orientation / anti-preobjectification discipline** — SRT makes it difficult to forget that a completed object/state/menu description is not supposed to be metaphysically prior to the event of determinate manifestation.
-
-But in this duel V2-PAR was deliberately required to preserve the same pre-objectification boundary.
-
-Therefore the surviving role is currently best described as:
+Within this declared sweep:
 
 ```text
-framework orientation / ontology-facing compression
+current primitive-linked prospective D2 affordance
+= not established
 ```
 
-not as an independently demonstrated middle-level consequence.
-
-This is compatible with keeping P0-01 while being explicit that current derivational surplus is unestablished.
+This does not claim every possible future or historical bridge has been exhausted.
 
 ---
 
-## 11. What this negative result does and does not mean
+## 9. X0 — canonical exclusion consequence: no prior chooser
 
-### It does mean
+X0 is the correction required by the missed exclusion class.
 
-Within the audited C1-C6 consequence set:
+### Canonical source
 
-1. downstream structure is not currently shown to depend specifically on the primitive being named / framed as Selection;
-2. P0-02, P0-03, P1-T06, variable jurisdictions, and Core-24 bridges carry their own additional content;
-3. current derivational fruitfulness should not be overstated as if those downstream commitments were already consequences of P0-01 alone;
-4. the scientific burden remains open.
-
-### It does not mean
+P0-01 states:
 
 ```text
-Selection is false
-Selection is impossible
-Selection is merely rhetorical
-V2-PAR has reduced Selection to a prior mechanism
-P0-01 must be demoted
-SRT and every rival are empirically equivalent in all possible domains
+Selection precedes existence
+exists x iff x in Range(G-hat)
 ```
 
-None follows.
+P0-04 then records the negative boundary:
 
-V2-PAR was intentionally allowed an equally primitive admission. The duel tests **fruitfulness conditional on a role-matched primitive rival**, not ultimate ontology.
+> no prior chooser is required; a selector, subject, agent, or stable operator-pattern is downstream of primitive Selection, and this negative result follows from the ordering fixed by P0-01.
+
+### Target suspension
+
+Remove from `B`:
+
+- the explicit P0-04 sentence stating the no-prior-chooser negative result;
+- direct downstream mirrors that simply cite the same conclusion.
+
+Retain:
+
+- P0-01 precedence and range biconditional;
+- P0-04 well-formedness role minus the target sentence;
+- non-target residual background.
+
+### SRT-P + `B'`
+
+An already existent chooser posited as ontologically prior to Selection would violate the P0-01 ordering: the chooser would be treated as an existent prior to the process through which existence is admitted as an image / range of Selection.
+
+Therefore SRT-P regenerates the negative ordering consequence:
+
+```text
+prior existent chooser / subject / agent
+cannot be required as the ontological predecessor of primitive Selection
+```
+
+This is a real primitive-linked **exclusion consequence**.
+
+### Frozen V2-PAR comparison
+
+V2-PAR was deliberately defined without chooser, subject, or agent as its primitive explanation and to preserve the same pre-objectification target. That means its no-prior-chooser posture is already functionally role-isomorphic at the primitive level.
+
+It is **not** granted a new range biconditional.
+
+The rival can therefore match the operational exclusion only because the frozen rival itself was built to preserve the same primitive no-prior-chooser orientation. That is exactly the condition specified for Outcome C.
+
+### Gate result
+
+- source gate: pass;
+- shared-background gate: pass;
+- primitive-link gate on SRT side: **pass**;
+- non-lexical gate: pass — this is an ordering exclusion, not a name difference;
+- non-laundering gate: pass — agency is excluded as prior, not imported as a positive downstream target;
+- rival-stability gate: **unresolved due primitive-role isomorphism**;
+- external-judge gate: pass as a structural ordering claim, but no rival discrimination survives the prior gate.
+
+### X0 outcome
+
+```text
+SRT-SIDE PRIMITIVE-LINKED EXCLUSION = YES
+RIVAL DISCRIMINATION = OUTCOME C / UNRESOLVED
+```
+
+This corrects the original audit's additive-only blind spot.
+
+### Scope guard
+
+X0 does not exhaust the exclusion class. Current P1-T01 (`causality not ontologically prior to Selection`) and P1-T04 (`Selection upstream of information readout`) are additional ordering surfaces that were **not** re-adjudicated as separate candidates in this corrected execution.
+
+Therefore do not cite this record as proving that the exclusion class contains only X0 or that no further primitive-linked negative consequence exists.
 
 ---
 
-## 12. Residue and claim-level disposition
+## 10. Corrected admission table
 
-Do not change the GOV-SUB01 residue automatically.
+| Target | SRT-P + `B'` primitive-link | Rival result | First decisive status |
+|---|---|---|---|
+| C1 full EX-A | no full entailment; partial occurrence-not-persistence pressure | role-matched | additive target needs extra premise |
+| C2 irreversible trace | no | also needs history-asymmetry premise | primitive-link fails |
+| C3a L1 event admission | **yes** | role-isomorphic | **Outcome C** |
+| C3b L2 writeback | no | also needs history/writeback premise | primitive-link fails |
+| C3c full occurrence/persistence architecture | partial only | role-matched | full target needs extra premise |
+| C4 Stable ISP | no | also needs recurrent result-state premises | primitive-link fails |
+| C5 variable jurisdictions | semantic dependence for `Psi_f`; no unique jurisdiction entailment | role-matched / downstream | no discriminating C* |
+| C6 declared empirical/bridge sweep | no current incompatible forecast | no current incompatible forecast | no D2 affordance |
+| X0 no-prior-chooser exclusion | **yes** | primitive-role isomorphic | **Outcome C** |
 
-Current status remains:
+External-judge status is `n/a — not reached` for candidates that fail primitive-link or rival-stability before that gate. X0 is externally stateable, but rival discrimination still stops at role-isomorphism.
+
+---
+
+## 11. Corrected interpretation
+
+### The negative result means only
+
+Within the **additive C1-C6 battery**:
+
+1. the full tested structures are not established as unique derivational surplus of P0-01;
+2. P0-02, P0-03, P1-T06, variable definitions, and bridge modules carry additional content that must not be retroactively credited to primitive Selection;
+3. current Selection-level D2 remains unestablished.
+
+### The correction additionally shows
+
+P0-01 is not derivationally empty.
+
+It carries at least:
+
+- primitive manifest-event admission in conjunction with the existing layer vocabulary (`C3a`);
+- a canonical exclusion / ordering consequence against a prior existent chooser (`X0`).
+
+But against V2-PAR those consequences reach **Outcome C**, because the rival was deliberately made primitive-role-isomorphic on pre-objectification / no-prior-chooser structure.
+
+### Therefore
+
+Do not cite this PR as:
+
+```text
+Selection derives nothing
+Selection is only a label
+V2 has reduced Selection
+all downstream SRT is independent of P0-01
+```
+
+Also do not cite X0 as empirical superiority or ontological proof.
+
+---
+
+## 12. Residue / claim-level disposition
+
+Current GOV-SUB01 residue remains:
 
 ```text
 primitive role currently named Selection
 = P unresolved primitive admission
 ```
 
-The new information is orthogonal:
+Corrected new information:
 
 ```text
-derivational surplus over role-matched V2-PAR
-= not established in C1-C6
+C1-C6 additive derivational surplus
+= not established
+
+at least one exclusion consequence (X0)
+= primitive-linked on SRT side
+
+rival adjudication of primitive-linked consequences
+= unresolved where V2-PAR is role-isomorphic
 ```
 
 Therefore:
 
 ```text
 P
-!-> demonstrated derivational surplus
+!-> demonstrated empirical distinctiveness
 ```
 
 and:
 
 ```text
-no derivational surplus found
-!-> R2/R3 dispensability
+C1-C6 additive null
+!-> Selection dispensability
 ```
 
-The audit did not derive a new residue label.
+No residue promotion or demotion follows.
 
 ---
 
-## 13. Consequence for the research program
+## 13. PD-A scoreboard and architecture-review guard
 
-The negative result closes one tempting but weak route:
+This audit is not a D2 mature empirical workline. It does not freeze a bounded empirical rival with declared state variables, calibration range, intervention, observable, and incompatible forecast.
 
-> Do not cite EX-A, P0-03, Stable ISP, `Psi_f`, `d`, `T_dir`, or existing P24 candidates as if their mere presence already demonstrates fruitfulness of the primitive Selection commitment.
-
-Those structures may be valuable on their own claim levels, but they do not currently supply the missing primitive-link derivation.
-
-### Next legitimate choices
-
-Only two high-value routes remain.
-
-#### Route A — retain-and-bound
-
-Keep P0-01 as SRT's explicit ontology-facing primitive admission while stating clearly:
+Therefore:
 
 ```text
-current audited derivational surplus = not established
-current Selection-level D2 = not established
+PD-A mature null / rival-equivalent workline scoreboard increment
+= 0
 ```
 
-Then spend research effort on independently useful downstream modules rather than repeatedly trying to make them prove P0.
+The PD-A rule requiring three independent mature null/rival-equivalent worklines across at least two middle-level consequences has **not** been triggered by this single governance derivation record.
 
-#### Route B — separately authorize an architecture / redundancy review
-
-Ask a new author-level question:
-
-> Given a role-matched primitive rival with no detected C1-C6 derivational loss, should `Selection` continue to function as a load-bearing primitive commitment, or should its public/theory-facing role be reframed more explicitly as ontology-first framing / primitive admission while downstream theorems stand on their own premises?
-
-This is **not** authorized by the current duel and must not be silently answered by editing P0-01.
-
-### Not recommended
-
-- invent C7 immediately just to avoid a negative result;
-- add a new Selection variable;
-- restore Real Choice / anti-script as primitive leverage;
-- promote `epsilon_pg`;
-- run P24-1 / 3 / 4 as SRT-superiority experiments;
-- use downstream agency / consciousness / morality to manufacture primitive surplus.
+Any architecture / redundancy review mentioned below is therefore an **author option**, not a mandatory review triggered by the PD-A scoreboard.
 
 ---
 
-## 14. Stop rule
+## 14. Research-program consequence
 
-Stop this execution here because:
+### What is now blocked
 
-1. the frozen C1-C6 battery has been completed;
-2. target suspension was applied to prevent shared-background laundering;
-3. no candidate passed the primitive-link gate;
-4. no new premise, symbol, equation, grammar, or empirical result was introduced;
-5. the negative result is already decision-relevant and should not be diluted by ad hoc candidate proliferation.
+Do not cite the following as if their mere presence already demonstrates **additive** fruitfulness of P0-01:
 
-**Final disposition:** `C1-C6 EXECUTED / NO DERIVATIONAL SURPLUS FOUND / SELECTION REMAINS P UNRESOLVED / NO CANONICAL EDIT / NEXT = AUTHOR-LEVEL RETAIN-AND-BOUND VS ARCHITECTURE-REVIEW DECISION`.
+- full EX-A persistence architecture;
+- P0-03 irreversibility;
+- L2 writeback;
+- P1-T06 Stable ISP;
+- `Psi_f` / `d` / `T_dir` jurisdictions;
+- current Core-24/25/26 bridge candidates.
+
+They may remain valuable and load-bearing at their own claim levels.
+
+### What remains open
+
+The exclusion / ordering class is not closed. X0 shows one real primitive-linked negative consequence, while rival comparison remains unresolved because V2-PAR is role-isomorphic.
+
+A future fruitfulness review may examine existing canonical exclusion surfaces such as P1-T01 causality ordering or P1-T04 information ordering, but should do so only if independently valuable—not by inventing a new candidate merely to escape the additive negative result.
+
+### Route A — retain-and-bound
+
+Keep P0-01 as the ontology-facing primitive admission and state clearly:
+
+```text
+C1-C6 additive surplus = not established
+Selection-level D2 = not established
+exclusion-role comparison vs V2-PAR = unresolved
+```
+
+### Route B — optional architecture / redundancy review
+
+An author may separately ask how much public/theory-facing load P0-01 should carry when many downstream structures stand on additional premises.
+
+This route is not authorized here and is not automatically triggered by PD-A.
+
+---
+
+## 15. Stop rule
+
+Stop because:
+
+1. B1 is corrected by restoring canonical P0-01 and running X0;
+2. B2 is corrected by withdrawing the off-spec V2 range biconditional;
+3. B3 is corrected by using enumerated `B'` and rerunning the primitive-link gate;
+4. Outcome C is now used explicitly for role-isomorphic rival comparisons;
+5. lexical/name-level defeat arguments have been removed;
+6. C6 now states its declared sweep through P24-7, Core 25, and Core 26;
+7. the PD-A scoreboard is protected from miscounting;
+8. no canonical theory, symbol, equation, grammar, variable, P0/P1 claim, or empirical dataset was added.
+
+**Final disposition:** `C1-C6 ADDITIVE SURPLUS NOT ESTABLISHED / C3a + X0 PRIMITIVE-LINKED ON SRT SIDE / V2 COMPARISON OUTCOME C WHERE ROLE-ISOMORPHIC / EXCLUSION CLASS NOT EXHAUSTED / SELECTION REMAINS P UNRESOLVED / PD-A SCORE +0 / NO CANONICAL EDIT`.
