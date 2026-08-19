@@ -2,7 +2,7 @@
 id: SRT-OPS-AUDIT-PRIMITIVE-ROLE-EXHAUSTIVENESS-ADJUDICATION-20260819
 type: audit_record
 status: active
-record_stage: adjudicated
+record_stage: final_review_corrected_adjudication
 layer: meta
 epistemic_layer: os
 claim_mode: governance
@@ -20,13 +20,13 @@ tags: [Selection, PrimitiveRole, Exhaustiveness, Precedence, Range, RivalFairnes
 
 # Primitive Role vs Exhaustiveness / Precedence — Governance Adjudication
 
-> **Purpose**: resolve the fairness tension exposed by the merged derivational-surplus and exclusion-surplus audits. This is a governance attribution ruling only. It does not change P0-01, create a new axiom, demote Selection, or authorize a new Selection Grammar.
+> **Purpose**: resolve the fairness tension exposed by the merged derivational-surplus and exclusion-surplus audits. This is a governance attribution ruling only. It does not change P0-01, create a new axiom, demote Selection, reopen RC-A / Phase 0.5, or authorize a new Selection Grammar.
 
 ---
 
 ## 0. Executive adjudication
 
-Current canonical P0-01 packages two kinds of content together:
+Current canonical P0-01 contains, among its positively load-bearing content, two distinguishable components relevant to this audit:
 
 ```text
 R = audit-isolated AM-A minimal actualisation role
@@ -39,21 +39,27 @@ E = Selection-first existence / exhaustiveness commitment
     exists x iff x in Range(G-hat)
 ```
 
+Canonical source: `Core/SRT_Core_21_Minimal_Axioms.md`, P0-01 formal definition / range biconditional for `E`, and the AM-A minimum actualisation kernel for `R`.
+
 **Canonical guard**:
 
 ```text
-full current canonical P0-01 primitive package = R + E
+full current canonical P0-01 contains R and E,
+plus restrictive scope / boundary riders that carry no additional
+positive derivational load in this adjudication.
 ```
 
-`R` is **not** proposed as a replacement definition of canonical Selection, and this audit does not split P0-01 into two canonical axioms. `R` is isolated only for derivational burden accounting because AM-A already identifies a minimum actualisation kernel inside the fuller P0-01 package.
+`R` is **not** proposed as a replacement definition of canonical Selection, and this audit does not split P0-01 into two canonical axioms. `R` is isolated only for derivational burden accounting because canonical P0-01 itself identifies an AM-A minimum actualisation kernel inside the fuller primitive package.
 
-For **canonical storage**, no split is made here: both remain inside current P0-01.
+For **canonical storage**, no split is made here: the current P0-01 remains intact.
 
-For **derivational attribution and rival fairness**, however, they must be accounted separately.
+For **derivational attribution and rival fairness**, however, the audit must not silently transfer conclusions between the minimal kernel and the fuller package.
 
 ```text
-R -/-> E   (not currently established)
+R -> E = not currently established
 ```
+
+This is an epistemic / audit-status statement. It is **not** an asserted logical independence theorem and must not be rewritten as `R -/-> E`.
 
 Therefore:
 
@@ -68,43 +74,43 @@ This resolves the apparent conflict in the merged duel freeze between:
 1. the background-fairness rule forbidding a target-bearing premise from being granted only to SRT and then counted as surplus; and
 2. the rule that frozen V2-PAR does not automatically receive an `exists x iff x in Range(A)` biconditional.
 
-Both rules can stand once the level of comparison is explicit.
+Both rules can stand once the level of attribution is explicit.
 
 ---
 
-## 1. Why `R` and `E` are separable for audit purposes
+## 1. Why `R` and `E` are separately tracked for audit purposes
 
 ### 1.1 Canonical co-location does not imply derivation
 
-P0-01 currently states both the Selection-first existence claim and the AM-A primitive actualisation kernel. Co-location inside one canonical axiom entry does not by itself prove that the exhaustiveness / precedence content follows from the minimum actualisation role.
+`Core/SRT_Core_21_Minimal_Axioms.md` P0-01 places the Selection-first existence / range commitment and the AM-A minimum actualisation kernel inside the same canonical primitive entry. Canonical co-location does not by itself establish a derivation from the minimum kernel to the stronger exhaustiveness / precedence commitment.
 
 This is an **audit decomposition**, not a canonical ontology decomposition.
 
-### 1.2 Existing rival work already demonstrates logical room between them
+### 1.2 Frozen rival work supplies an audit representation, not an independence demonstration
 
-Frozen V2-PAR preserves the target transition:
+Frozen V2-PAR was stipulated to preserve the target transition:
 
 ```text
 non-objectified potential difference
 -> determinate manifest actuality
 ```
 
-without receiving:
+without being granted:
 
 ```text
 exists x iff x in Range(A)
 ```
 
-The corrected #839 execution explicitly withdrew that biconditional as an off-spec addition. The subsequent #842 review showed that attempting to score the one-sided biconditional as X1 surplus violates background fairness when the target depends on exactly that one-sided premise.
+The corrected #839 execution explicitly withdrew that biconditional as an off-spec addition. The subsequent #842 review showed that attempting to score the one-sided biconditional as rival-specific X1 surplus violates background fairness when the target depends on exactly that one-sided premise.
 
-This establishes an audit fact, not a metaphysical reduction:
+This does **not** prove that `R` is logically consistent with `not-E`, nor does it provide a formal independence proof. The frozen comparison simply supplies an audit representation in which the minimal actualisation role and the exhaustiveness commitment are not treated as the same scored premise.
+
+That is sufficient for the narrower governance requirement:
 
 ```text
-the AM-A minimal actualisation role can be represented in the frozen comparison
-without already carrying E.
+until R -> E is actually established,
+do not attribute an E-carried result to R alone.
 ```
-
-That is sufficient to require separate burden accounting.
 
 ### 1.3 What is NOT concluded
 
@@ -115,6 +121,7 @@ E is false
 E should leave P0-01
 R is the whole canonical Selection primitive
 R is more fundamental than E
+R and E are formally independent
 V2-PAR has reduced Selection
 Selection is dispensable
 ```
@@ -123,11 +130,11 @@ It only states that the current audit record has not established `R -> E`.
 
 ---
 
-## 2. Two legal comparison modes
+## 2. Two legal comparison / attribution modes
 
-Future audits must declare one of the following modes before inspecting outcomes.
+Future audits in this workline must declare one of the following modes before inspecting outcomes.
 
-### Mode R — minimal actualisation-role comparison
+### Mode R — minimal actualisation-role attribution
 
 Question:
 
@@ -155,37 +162,37 @@ In Mode R:
 NOT R-ATTRIBUTABLE / REQUIRES SEPARABLE E COMMITMENT
 ```
 
+**Scope guard**: `Mode R` is a Selection-related audit only because `R` is the canonically identified AM-A minimum kernel inside P0-01. A Mode-R result is not a result about the whole Selection primitive package unless the mode and the narrower premise set are restated alongside it.
+
 ### Mode P0-01 — full canonical primitive-package attribution
 
 Question:
 
-> What follows from SRT's full current P0-01 primitive package, including E?
+> What follows from SRT's full current P0-01 primitive package, including E and its restrictive boundary riders?
 
-Use:
+Use the current canonical P0-01 as the SRT object of attribution. For the positive derivational content at issue here, this includes `R + E`.
 
-```text
-SRT package = R + E
-```
-
-A rival may be compared with or without an analogous `E_rival`, but this must be frozen **before** the target is evaluated.
+A rival may be compared with or without an analogous `E_rival`, but that comparison must be frozen **before** the target is evaluated.
 
 In Mode P0-01:
 
-- consequences of `E` may be recorded as **package-attributed consequences**;
+- consequences carried by `E` may be recorded as **package-attributed consequences**;
 - they must not be relabeled as R-specific surplus;
 - if the rival lacks `E_rival`, the difference is an **explicit axiom/package burden difference**, not a fair-duel victory by itself;
+- merely declaring `comparison_mode: P0-01` does not cure a one-sided target-bearing premise;
 - if robustness matters, a strengthened rival `V2 + E_rival` must be declared prospectively and tested separately rather than added ad hoc after outcome inspection.
 
-**Allowed label**:
+**Allowed non-comparative attribution label**:
 
 ```text
 P0-01 PACKAGE CONSEQUENCE — ATTRIBUTABLE TO E
 ```
 
-**Forbidden label without further work**:
+**Forbidden comparative inference without further work**:
 
 ```text
 AM-A minimal actualisation role uniquely derives this
+SRT defeats the role-matched rival because E was present only on the SRT side
 ```
 
 ---
@@ -212,28 +219,30 @@ R -> target.
 
 ### 3.2 For Mode P0-01
 
-A one-sided substantive commitment may be part of the object being compared, but its consequences must be **burden-attributed**, not treated as if they emerged from a matched minimal actualisation role.
+A one-sided substantive commitment may be part of the SRT package being described, but its consequences must be **burden-attributed**, not treated as if they emerged from a matched minimal actualisation role or as a fair rival victory.
 
 So:
 
 ```text
 (R + E) -> target
-R_v2 -/-> target
+R_v2 does not carry E_rival
 ```
 
-supports only:
+may support the non-comparative statement:
 
 ```text
-target is a consequence of the stronger SRT package under this frozen comparison.
+target is carried by the stronger SRT package under the declared premises.
 ```
 
-It does not by itself support:
+It does **not** by itself support:
 
 ```text
 R has unique derivational surplus
 Selection is empirically or ontologically superior
-V2 is defeated.
+V2 is defeated
 ```
+
+For rival-comparative robustness of an E-carried target, prospectively freeze a symmetric strengthened rival such as `V2 + E_rival` before target inspection.
 
 ---
 
@@ -246,14 +255,15 @@ The correction is interpretive:
 ```text
 no automatic V2 biconditional
 !=
-permission to score SRT's one-sided biconditional as R-level surplus.
+permission to score SRT's one-sided biconditional as R-level surplus
+or as an automatic full-package duel victory.
 ```
 
 For Mode R, neither side may use E-type exhaustiveness to win the minimal-role comparison.
 
-For Mode P0-01, SRT may use canonical E because full P0-01 is the declared object of attribution. If a strengthened rival is needed, it must be frozen prospectively as a separate rival variant.
+For Mode P0-01, SRT may use canonical E for internal package attribution because full P0-01 is the declared object. If rival robustness is tested, the strengthened rival must be frozen prospectively as a separate rival variant.
 
-This removes the previous apparent contradiction without editing the merged historical records.
+This reconciles the two merged #839 rules without editing either historical record.
 
 ---
 
@@ -261,13 +271,19 @@ This removes the previous apparent contradiction without editing the merged hist
 
 ### 5.1 C1-C6 additive battery
 
-No change:
+**No verdict change and no weakening of the merged negative.** The corrected #839 battery ran the SRT side at canonical P0-01 strength, including both the AM-A minimum kernel and the Selection-first precedence / range biconditional.
+
+Authoritative merged result:
 
 ```text
-C1-C6 additive R-level surplus = not established
+C1-C6 additive surplus
+(tested at full current R+E package strength)
+= not established
 ```
 
-Some SRT-side consequences remain primitive-linked at the minimal-role level (for example the narrow manifest-event admission), but no discriminating R-level surplus over role-matched V2 was established.
+This adjudication must not relabel that full-package negative as merely an R-level null. In particular, a future `comparison_mode: P0-01` audit may not reopen C1-C6 on the claim that #839 tested only Mode R.
+
+Where a narrower Mode-R bookkeeping question is asked later, the mode must be stated explicitly and may not replace the stronger historical fact above.
 
 ### 5.2 X0 no-prior-chooser
 
@@ -277,8 +293,8 @@ For rival discrimination:
 
 ```text
 Mode R: Outcome C / role-isomorphic
-Mode P0-01: package consequence may be attributed to E,
-             but this is not R-specific surplus.
+Mode P0-01: the SRT-side ordering consequence may be burden-attributed to E,
+             but the one-sided E difference is not a fair rival victory.
 ```
 
 No Selection-specific D2 follows.
@@ -292,7 +308,15 @@ instantiated-causality reading = Outcome C / role-isomorphic
 pre-objective-propensity reading = invalid surplus under fairness
 ```
 
-This adjudication explains why the second branch is invalid: it attempted to score E as if it were R-specific surplus.
+The second branch failed because the comparison scored SRT at the stronger `R + E` package against a rival frozen at the matched minimal role without `E_rival`, while the target depended on the one-sided E-type premise. The defect was therefore a **level / premise-assignment mismatch across the two sides**, not that #842 had mislabeled itself as an R-specific audit.
+
+Merely declaring a future comparison `Mode P0-01` does not rehabilitate that result. Specifically:
+
+```text
+X1-P remains invalid as a rival-comparative surplus result.
+```
+
+This adjudication does **not** relabel X1-P as a citable `P0-01 PACKAGE CONSEQUENCE`. A future non-comparative package-attribution audit could separately ask what E entails, but any rival-comparative robustness claim would require a prospectively frozen `V2 + E_rival` construction.
 
 ### 5.4 X2 information readout
 
@@ -307,13 +331,31 @@ The narrow readout ordering follows from the shared primitive actualisation role
 ### 5.5 Current overall status
 
 ```text
-full current canonical P0-01 primitive package = R + E
+full current canonical P0-01 remains unchanged
+and contains R + E plus restrictive boundary riders
+
+R -> E = not currently established
+(this is not an independence theorem)
+
+C1-C6 additive surplus
+(tested at full current R+E package strength)
+= not established
+
+R-specific derivational surplus over frozen role-matched V2
+in the separately audited role-level targets
+= not established
+
+X0 = Mode-R Outcome C / full-package ordering consequence without fair-duel victory
+X1-I = Outcome C
+X1-P = invalid surplus under fairness; not rehabilitated here
+X2 = Outcome C
+
 Selection primitive role residue = P unresolved primitive admission
-R-specific derivational surplus over frozen role-matched V2 = not established
-P0-01 package contains additional E burden / commitment
 Selection-level D2 count = 0
 PD-A mature-null/rival-equivalent scoreboard increment = 0
 ```
+
+**Quotation guard**: `Mode R` and `not R-attributable` are premise-attribution labels. Neither is a statement about the whole canonical Selection primitive unless the mode and premise set are restated explicitly.
 
 ---
 
@@ -347,6 +389,8 @@ when the research question concerns the stronger **full canonical Selection-firs
 
 Neither mode is the universal default. The question being asked fixes the mode before outcome inspection.
 
+This PR does not execute a `V2 + E_rival` duel; it only specifies how such a rival would have to be frozen if a later, separately authorized package-robustness question genuinely requires it.
+
 ---
 
 ## 7. Stop rule
@@ -359,10 +403,12 @@ Do not:
 - split P0-01 canonically into two axioms;
 - redefine canonical Selection as R alone;
 - grant or remove a rival biconditional retrospectively;
+- execute a `V2 + E_rival` duel in this pass;
 - add X3/C7;
 - open a D2 workline;
-- infer redundancy or demotion from the lack of R-level surplus.
+- infer redundancy or demotion from the lack of R-level surplus;
+- infer any RC-A or Phase 0.5 change from this bookkeeping ruling.
 
 A later canonical refactor, if ever desired, requires a separate author decision and must distinguish **canonical organization** from **derivational burden accounting**.
 
-**Final disposition:** `R/E AUDIT SPLIT ADOPTED / FULL CANONICAL P0-01 = R+E / R IS AUDIT-ISOLATED MINIMAL KERNEL NOT A REDEFINITION / MODE R FOR MINIMAL-KERNEL ATTRIBUTION / MODE P0-01 FOR FULL-PACKAGE ATTRIBUTION / EXISTING C1-C6 X0-X2 RESULTS UNCHANGED / SELECTION = P UNRESOLVED / D2 0 / PD-A +0 / NO CANONICAL EDIT`.
+**Final disposition:** `R/E BURDEN-ACCOUNTING SPLIT ADOPTED / CANONICAL P0-01 UNCHANGED AND CONTAINS R+E PLUS RESTRICTIVE RIDERS / R->E NOT CURRENTLY ESTABLISHED (NOT AN INDEPENDENCE CLAIM) / C1-C6 FULL-PACKAGE ADDITIVE SURPLUS NOT ESTABLISHED / MODE R FOR MINIMAL-KERNEL ATTRIBUTION / MODE P0-01 FOR FULL-PACKAGE ATTRIBUTION / X0-X2 RESULTS UNCHANGED / SELECTION = P UNRESOLVED / D2 0 / PD-A +0 / RC-A AND PHASE 0.5 UNCHANGED / NO CANONICAL EDIT`.
