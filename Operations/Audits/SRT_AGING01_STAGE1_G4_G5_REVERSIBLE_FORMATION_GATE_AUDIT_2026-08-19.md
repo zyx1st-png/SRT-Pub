@@ -2,7 +2,8 @@
 id: SRT-AUDIT-AGING01-STAGE1-G4-G5-REVERSIBLE-FORMATION-GATE-2026-08-19
 type: methods_gate_audit
 status: active
-record_stage: gate_close_read_v1
+record_stage: closed_v1
+closes_into: 03_Bridges/hooks/AGING01_Goal_Directedness_Consensus_Integration_Hook.md
 layer: operations
 epistemic_layer: experimental
 claim_mode: evidence
