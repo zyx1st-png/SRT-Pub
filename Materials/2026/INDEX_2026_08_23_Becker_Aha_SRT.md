@@ -8,7 +8,7 @@ epistemic_layer: os
 claim_mode: synthesis
 source_id: SRC-2026-08-23-NEURO-BECKER-AHA-REPRESENTATIONAL-RECONSTITUTION
 source_card: Materials/2026/SRC_2026_08_23_Neuro_Becker_Aha_Representational_Reconstitution.md
-primary_hook: Neuroscience/Hooks/SRT_Aha_Representational_Reconstitution_Hook_2026-08-23.md
+primary_hook: Neuroscience/hooks/SRT_Aha_Representational_Reconstitution_Hook_2026-08-23.md
 new_theory_hook: Philosophy/hooks/PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook_2026-08-23.md
 tags:
   - close-read
@@ -27,23 +27,28 @@ tags:
 
 ## 0. Scope and authority
 
-This file records the **full conceptual path of the 2026-08-23 guided reading** of Nora Bradford's Quanta article, Becker et al. 2025, and adjacent primary/review literature.
+This file preserves the **reasoning path** of the 2026-08-23 guided reading while avoiding a second copy of the dialogue-generated theory.
 
-It deliberately separates three layers:
+Authority split:
 
 ```text
-A. source-derived findings
-B. SRT ontological synthesis / pressure
-C. new dialogue-generated SRT hypotheses
+source facts / anchors
+-> Materials/2026/SRC_2026_08_23_Neuro_Becker_Aha_Representational_Reconstitution.md
+
+compact neuroscience-facing synthesis
+-> Neuroscience/hooks/SRT_Aha_Representational_Reconstitution_Hook_2026-08-23.md
+
+new phenomenal-compression hypothesis
+-> Philosophy/hooks/PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook_2026-08-23.md
 ```
 
-Layer C is not attributed to the source authors and is not canonical.
+This index records how the questions developed. It is not a definition source.
 
 ---
 
-## 1. Starting point: Aha is not merely “a brain area lights up”
+## 1. Starting point: Aha is representational change, not merely activation
 
-The most useful source-level object is **representational change (RC)**:
+The central empirical object is **representational change (RC)**:
 
 ```text
 stable external X
@@ -53,29 +58,27 @@ internal organization A
 internal organization B
 ```
 
-In Mooney images, physical input can remain unchanged while a previously meaningless pattern becomes a coherent object.
+Mooney images allow physical input to remain fixed while a previously meaningless pattern becomes a coherent object.
 
-The first SRT-relevant distinction is therefore:
+SRT-relevant distinction:
 
 ```text
-selection inside a fixed candidate field
-!=
-reweighting candidates
-!=
-reconstituting candidate accessibility / organization
+selection inside a candidate field
+!= reweighting candidates
+!= reconstituting candidate accessibility / organization
 ```
 
-But the paper does **not** establish that every RC is an SRT Selection event, agency episode, bearer-level reconfiguration or new candidate generation.
+The experiment does not establish that every RC is an SRT Selection event, agency episode, bearer-level reconfiguration or genuinely new concept generation.
 
 ---
 
-## 2. Cognitive component != evaluative component
+## 2. Cognitive component != evaluative Aha component
 
-The insight literature separates:
+Becker separates:
 
 ```text
 cognitive:
-representational restructuring
+representational reorganization
 
 from
 
@@ -83,77 +86,75 @@ evaluative:
 suddenness + certainty + positive emotion
 ```
 
-This prevents several common collapses:
+This immediately blocks:
 
 ```text
-new representation != felt suddenness
-certainty != truth
-positive affect != correctness
-salience != stake
+new representation = felt Aha
+certainty = truth
+positive affect = correctness
 ```
 
-False insights are especially important because they show that a strongly stabilized solution can feel obvious and memorable while still being wrong.
-
-Working SRT consequence:
+False insight is especially important: a solution can feel sudden, certain, pleasurable and memorable while being wrong.
 
 ```text
-selection / stabilization success
-!= truth success
+stabilization / closure strength
+!= truth tracking
 != adaptive success
 ```
 
 ---
 
-## 3. Suddenness: transition report != demonstrated neural discontinuity
+## 3. Suddenness is transition phenomenology, not proof of a neural jump
 
-The source treats suddenness as a core subjective feature of insight, but fMRI does not resolve a mathematically instantaneous neural jump.
-
-The safe distinction is:
+Subjective report says:
 
 ```text
-subjective transition threshold:
 "I suddenly got it"
-
-!=
-proven discontinuous neural dynamics
 ```
 
-A plausible sequence remains:
+but fMRI does not establish a mathematically discontinuous neural transition.
+
+A compatible sequence remains:
 
 ```text
-latent gradual reorganization
--> threshold crossing / stabilization
--> meta-detection of transition
+latent reorganization
+-> threshold / stabilization crossing
+-> transition detection
 -> Aha report
 ```
 
-Therefore Aha should not be used as direct evidence that SRT reality formation is neurally discontinuous.
+Thus Aha cannot be used as direct evidence that SRT manifestation is neurally discontinuous.
 
 ---
 
-## 4. Network integration: coordinated solution state != central chooser
+## 4. Network integration != chooser, bearer or history
 
-Higher insight is associated with stronger functional integration within a solution-processing network including VOTC, hippocampus and amygdala. Some visual regions display hub-like graph properties.
+Higher insight accompanies stronger functional connectivity and graph integration in a solution-processing network involving VOTC, hippocampus and amygdala.
 
-SRT guard:
+Use:
 
 ```text
-network integration
-!= central controller
-!= agency
-!= bearer
-!= historical writeback
+higher insight
+-> more coordinated solution-state organization
 ```
 
-The graph results are best read as a coordinated solution-state signature.
+Do not use:
+
+```text
+network integration = central controller
+network hub = subject
+network integration = L2 writeback
+```
+
+The connectivity results did not consistently carry the subsequent-memory relation found for specific representational-change and hippocampal measures.
 
 ---
 
-## 5. Memory: occurrence -> trace -> history must remain layered
+## 5. Memory forces an occurrence/trace/history separation
 
-Becker's 5-day memory result supports a persistent consequence of high-insight episodes. It does **not** by itself prove L2-grade future-selectability rewrite.
+The five-day memory advantage supplies a persistent consequence of high-insight episodes, but not automatically L2-grade future-selectability rewrite.
 
-Use PH-IND05:
+Keep PH-IND05:
 
 ```text
 H0 actual occurrence
@@ -163,7 +164,7 @@ H0 actual occurrence
 !-> phenomenal experiencer
 ```
 
-Aha supplies a clean candidate sequence:
+Source-to-SRT bridge:
 
 ```text
 representational transition
@@ -172,161 +173,153 @@ representational transition
 -> persistent trace
 ```
 
-The later arrows require separate evidence.
+The later arrows need separate evidence.
 
 ---
 
-## 6. Episodic memory != one-shot perceptual hardening
+## 6. One-shot perceptual learning adds a stronger future-facing history
 
-Hachisuka et al. 2026 strengthens the historical side by showing that one disambiguating experience can durably change later recognition.
+Hachisuka et al. 2026 shows that one disambiguating experience can durably change later recognition.
 
-This yields two distinct histories:
-
-```text
-A. episodic history
-"I remember that I learned / saw this"
-
-B. perceptual history
-"I now directly see this this way"
-```
-
-The second is especially important for SRT because history can change future selection conditions even when explicit recollection is not the relevant mechanism.
-
-Heuristic only:
+Distinguish:
 
 ```text
-before learning:
-transition into DOG interpretation is difficult
+episodic history:
+"I remember that I learned this"
 
-after learning:
-DOG interpretation becomes much easier / default
+from
+
+perceptual history:
+"I now directly see it this way"
 ```
 
-Do not identify this transition difficulty with canonical `Psi_f` without a separate payability argument.
+The second is a better model of history changing later accessibility without requiring the learning episode itself to be explicitly recalled.
+
+Still:
+
+```text
+perceptual hardening
+!= canonical Psi_f reduction
+!= generative reselectability
+!= new concept generation
+```
 
 ---
 
 ## 7. Aha both opens and closes
 
-The Mooney paradigm reveals a double action:
+The relevant shape is not simply `closed -> open`:
 
 ```text
-old organization destabilized
--> alternative organization becomes accessible
--> new organization rapidly stabilizes
+old organization
+-> destabilization / reorganization
+-> new candidate accessibility
+-> rapid stabilization
+-> new closure
 ```
 
-Thus Aha is not simply “opening possibility.” It can also harden a new closure.
+This explains why a one-shot event can increase historical efficacy while later generative reselectability remains weak.
 
-This matters because:
-
-```text
-one-shot historical efficacy
-can be strong
-while
-later reselectability is weak
-```
-
-The familiar “cannot unsee it” phenomenon is a useful intuition for this distinction.
+The intuitive `cannot unsee it` phenomenon is useful here, but is not itself a formal measure.
 
 ---
 
-## 8. Candidate access != genuine candidate generation
+## 8. Candidate access != candidate generation
 
-Mooney recognition normally uses concepts the participant already possesses. Therefore the paradigm strongly supports:
+Mooney recognition mainly recruits existing object concepts.
+
+Strong evidence:
 
 ```text
-perceptual access shift
+candidate-access shift
 ```
 
-and may support:
+Possible:
 
 ```text
 relational regrouping / restructuring
 ```
 
-but it is weaker evidence for:
+Weak evidence:
 
 ```text
-genuinely new concept generation
 new comparison dimension
 new problem-space constitution
+new concept generation
 ```
 
-A local hierarchy useful for later work is:
+For future work, a local analytic hierarchy is useful:
 
 ```text
-Level 0 — retrieval inside known structure
-Level 1 — candidate access shift
-Level 2 — relational restructuring
-Level 3 — comparison-scale restructuring
-Level 4 — operator / problem-generation restructuring
+retrieval
+-> candidate access
+-> relational restructuring
+-> comparison-scale restructuring
+-> operator / problem restructuring
 ```
 
-These are local analytic labels only, not a new canonical ladder.
+This is not a canonical ladder.
 
 ---
 
-## 9. Scientific insight is stronger than Mooney insight
+## 9. Scientific insight raises a stronger second-order problem
 
-Becker's Kuhnian motivation raises a deeper case than the experiment itself.
+Becker's Kuhnian motivation is stronger than the Mooney experiment itself.
 
-A scientific breakthrough can sometimes change not merely which answer is selected, but:
+A scientific breakthrough can sometimes alter:
 
 ```text
 what counts as the problem
-what differences count as comparable
-which distinctions generate candidate answers
+which differences count as comparable
+what can appear as a candidate answer
 ```
 
-This aligns with PH-IND03's distinction between ordinary outcome selection and stronger transductive / second-order restructuring.
+That fits PH-IND03's transductive / second-order restructuring better than ordinary outcome selection.
 
 Guard:
 
 ```text
-new neural representation
+new representation
 != second-order selection
 ```
 
-A stronger claim requires evidence that comparison rules or reachable candidate structure were rewritten and that the change remains historically efficacious.
+The stronger claim requires evidence that comparison rules or reachable candidate structure were rewritten and remained historically efficacious.
 
 ---
 
-## 10. Reopening: retrieval != destabilization
+## 10. Reopening: retrieval != destabilization != revision
 
-Memory reconsolidation literature provides a useful complementary architecture:
+Reconsolidation literature provides a complementary architecture:
 
 ```text
 stable structure
 -> reactivation
--> under some conditions destabilization
+-> possible destabilization
 -> updating
 -> restabilization
 ```
 
-But:
+Keep:
 
 ```text
 retrieval != reopening
 reopening != successful revision
+reopening != reselectability
 ```
 
-A strong L2 structure can be reactivated and simply reconsolidated or strengthened.
-
-The useful SRT-side distinction is:
+Prediction error may help explain update pressure, but:
 
 ```text
-update pressure
-!= update cost / payability
+prediction error != Psi_f
 ```
 
-Prediction error may help explain why a system should reconsider something now. It is not identical to canonical `Psi_f`, which concerns the burden/payability of actual transition and stabilization.
+A discrepancy signal and the burden/payability of actual restructuring play different roles.
 
 ---
 
 ## 11. Local reopening stages
 
-A P3 local decomposition from the guided reading:
+Working P3 decomposition:
 
 ```text
 R1 Reactivation
@@ -336,553 +329,258 @@ R4 Alternative generation
 R5 Reanchoring
 ```
 
-This is especially important for generative reselectability:
+A structure may stop at any stage. This preserves NEURAL35's core guard:
 
 ```text
-reopening
-!= reselectability
+reopening != reselectability
 ```
-
-A system may become labile without successfully generating alternatives, bearing consequences, or reanchoring a revised structure.
 
 ---
 
-## 12. Identity and stake: contradiction can become self-threat
+## 12. Belief revision can become historically expensive
 
-A belief can acquire historical weight through:
+An initially epistemic structure can acquire downstream coupling:
 
 ```text
-Aha / belief
+belief
 -> action
--> public commitment
--> relationships / status
+-> commitment
+-> relationship / status
 -> identity
 -> future investment
 ```
 
-Then revision is no longer only evidence-vs-belief. The system may effectively compare:
+Then revision is no longer only `evidence vs belief`.
+
+A bearer may effectively face:
 
 ```text
-revise belief + pay identity / social / historical cost
+revise belief + revise self-position/history
 
 vs
 
-preserve belief + absorb epistemic error
+retain belief + absorb epistemic conflict
 ```
 
-This motivates a bridge distinction among:
+Keep the separations:
 
 ```text
-prediction error:
-update pressure
-
-d-like stake structure:
-what would be affected if this changes?
-
-Psi_f-like revision burden:
-what does actual restructuring cost / require?
+prediction error = update-pressure candidate
+stake structure = what consequences matter
+revision burden/payability = what restructuring costs
 ```
 
-None of these are identities; canonical `d` is not “identity strength,” and prediction error is not `Psi_f`.
+and specifically:
+
+```text
+identity != d
+prediction error != Psi_f
+```
 
 ---
 
-## 13. Bearer continuity without self-model invariance
+## 13. Bearer continuity does not require self-model invariance
 
-The reading then turns from belief revision to diachronic identity.
+A continuing bearer can undergo deep representational change.
 
-The key result is:
-
-```text
-bearer continuity
-!= self-model invariance
-```
-
-A continuing bearer may revise beliefs, identity, narrative and policies while remaining the same history-bearing locus if consequences continue to return to and rewrite the same continuing process.
-
-Useful diagnostic:
+Working process view:
 
 ```text
 B_t
--> action / event
+-> event/action
 -> consequence
 -> consequence returns to B
--> B_(t+1) is a transformed continuation
+-> transformed B_(t+1)
 ```
 
-Identity is therefore better tracked by consequence-bearing historical continuation than by unchanged content.
+Thus:
 
-This also distinguishes transformation from replacement / copy.
+```text
+same bearer
+!= same belief
+!= same self-model
+!= same narrative
+!= same policy
+```
+
+Aha is meaningful precisely because the same continuing process can move from not-understanding to understanding.
 
 ---
 
 ## 14. Bearer != experiencer
 
-The next guard is decisive:
-
-```text
-same-unit consequence bearing
-!= phenomenal for-me-ness
-```
-
-SRT can increasingly explain:
-
-- which process carries the consequence;
-- how that consequence enters its history;
-- how future accessibility is altered;
-- why a copy or replacement does not trivially inherit numerical history.
-
-But this does not establish that the process experiences anything.
-
-Retain:
+The close read then reaches the subjectivity boundary:
 
 ```text
 Object !-> Bearer !-> Selector !-> Subject !-> Experiencer
 ```
 
+Same-unit consequence return, non-outsourcing, history writeback and future-selectability change can strengthen bearer attribution without proving phenomenal for-me-ness.
+
+This also blocks a simple AI inference from persistent history to experience.
+
 ---
 
-## 15. Three grades of For-P and the phenomenal-admission residual
+## 15. For-P can become structurally deep without becoming For-me
 
 Using PH-CONSC05:
 
 ```text
-F0 — external attribution:
-event affects P
-
-F1 — self-locating / de-se:
-P treats event as about itself
-
-F2 — bearer-constitutive For-P:
-event returns to same P, writes history and changes Omega_P
+F0 — event affects P
+F1 — P self-locates / tags event as about itself
+F2 — event returns to P, enters its history and changes future accessibility
 ```
 
-Even F2 does not prove:
+Even F2 preserves:
 
 ```text
-phenomenal For-me
+strong For-P
+!= phenomenal For-me proved
 ```
 
-This is the current HP-B residual.
-
-Aha is especially informative because the report has a temporal/indexical form:
+Aha adds a temporal/indexical report:
 
 ```text
 "I did not see it; now I see it"
 ```
 
-This suggests transition ownership, but still does not provide a non-circular phenomenal admission criterion.
+This suggests transition ownership but does not close HP-B.
 
 ---
 
-## 16. HP-C: why Aha feels like “everything suddenly clicks”
+## 16. HP-C: why Aha feels like “everything clicks”
 
-Once phenomenality is assumed, Aha becomes an unusually clean qualitative-character case.
+Once phenomenality is assumed, Aha becomes a clean qualitative-character case.
 
-The working insight is that Aha character may depend not only on terminal content but on **transition geometry**:
+Candidate transition profile:
 
 ```text
 impasse / diffuse candidates
--> abrupt restructuring
+-> restructuring
 -> coherence / fluency gain
 -> alternative suppression
--> certainty / positive affect / relief
+-> certainty / rightness
+-> positive affect / relief
 ```
 
-This makes Aha a candidate test case for PH-QUAL01's forward-facing `RDef_B(q)` interface:
+This suggests that qualitative character may depend partly on trajectory / transition structure, not only terminal content.
+
+PH-QUAL01 is therefore relevant:
 
 ```text
 Omega_B(t-)
--> event
+-> event q_t
 -> Omega_B(t+)
 ```
 
-The paper itself does not measure `Omega_B` in SRT terms; this is a bridge.
+but the paper does not measure `Omega_B` in SRT terms.
 
 ---
 
-## 17. Restructuring != Aha phenomenology remains the key anti-identity control
+## 17. Critical anti-identity control: restructuring != Aha phenomenology
 
-The Wiley/Danek review prevents a strong identity claim:
-
-```text
-large restructuring
-!-> strong Aha necessarily
-```
-
-Therefore no SRT model should use:
+Wiley & Danek prevents the strongest shortcut:
 
 ```text
-large RDef -> phenomenality
+representational restructuring
+!= Aha experience by definition
 ```
 
-or:
+Therefore:
 
 ```text
-attractor formation -> Aha
+large RDef !-> strong Aha necessarily
+attractor formation !-> phenomenality
 ```
 
-as an unconditional rule.
-
-This keeps PH-CONSC05's phenomenal-admission problem open.
+Any later model must accommodate dissociation rather than define it away.
 
 ---
 
-## 18. New dialogue-generated hypothesis: transient phenomenal attractor / compression
+## 18. Dialogue-generated theory is stored elsewhere
 
-The user-generated conceptual step is stronger than the existing PH-QUAL01 statement that a quale may rewrite future accessibility.
+The guided reading then generated a distinct upstream P3/P4 proposal about transient compression, micro-valence, automation and falsification.
 
-The new candidate mechanism is:
-
-> When existing L2 / automatic structure does not cheaply resolve a bearer-relevant selection field, the system may construct a transient low-dimensional attractor / compression surface that narrows immediate effective branching. From the third-person view this is a directional deformation of state / selection dynamics; from the continuing bearer's first-person side, the same non-neutral deformation may be lived as micro-valence or qualitative directional force.
-
-Compact working sequence:
+**Do not duplicate it here.** The authoritative theory file is:
 
 ```text
-unresolved bearer-relevant selection field
-+
-compressible local structure
--> transient attractor / compression
--> bearer-indexed directional asymmetry
--> ? lived non-neutrality / micro-valence
--> next selection becomes easier / more directed
+Philosophy/hooks/PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook_2026-08-23.md
 ```
 
-The `?` is essential. The model does not solve phenomenal necessity.
+It contains the stable propositions:
+
+```text
+PC-1  Representation != selection-active quale-event.
+PC-2  A qualitative episode may function as transient compression of an unresolved bearer-relevant selection field.
+PC-3  Attractor geometry != phenomenality; bearing-indexed non-neutrality -> ? lived non-neutrality.
+PC-4  Micro-valence is provisionally broader than hedonic valence.
+PC-5  Orientation, local valence and pressure trajectory are separable.
+PC-6  Immediate compression can coexist with later generative expansion.
+PC-7  Relief / rightness != truth or generative health.
+PC-8  Automatization should reduce strong task-specific recruitment; policy failure should recruit it again.
+PC-9  Aha is the first high-amplitude P4 test case.
+PC-10 Future-space deformation does not solve phenomenal necessity.
+```
+
+The same file owns the detailed same-terminal-content Aha experiment and F1–F5 falsification conditions.
 
 ---
 
-## 19. Representation != selection-active quale-event
+## 19. Why the new hook survives Consolidation Phase
 
-A major refinement from the dialogue concerns ordinary color perception.
+The package does not open a new owner merely because the material is interesting.
 
-Do not assume:
-
-```text
-red discrimination
-=
-selection-active red quale-event
-```
-
-Many red objects may be processed with little independent effect on immediate selection. The same physical / perceptual red distinction can become strongly recruited when embedded in a bearer-relevant context such as a traffic light, blood, a search task or a learned warning.
-
-This suggests a useful distinction between:
+The retained exception is narrower:
 
 ```text
-phenomenal / perceptual background
+PH-QUAL01 already asks whether RDef_B(q) predicts qualitative geometry.
 
-and
-
-selection-active qualitative recruitment
+The dialogue-generated increment asks why a bearer-relevant deformation
+might be generated/recruited under unresolved selection pressure.
 ```
 
-The terminology remains provisional because broad philosophical use of “qualia” often counts any consciously seen red as phenomenal character.
+That upstream mechanism is not already carried by PH-QUAL01 or NEURAL24. It therefore remains one bounded non-canonical hook while canonical / compact-core / dormant synthesis targets stay frozen.
 
 ---
 
-## 20. Micro-valence as lived directional non-neutrality
-
-The new hypothesis uses `micro-valence` more broadly than ordinary pleasant/unpleasant scoring.
-
-Working sense:
-
-> phenomenally lived local non-neutrality toward immediately reachable futures.
-
-Examples:
+## 20. Cross-file map
 
 ```text
-Aha:
-"settle here / this is right"
+SourceCard
+-> exact external claims + evidence anchors
 
-pain:
-"do not remain here / protect"
+Aha neuroscience hook
+-> compact representation / memory / hardening / reopening / bearer synthesis
 
-curiosity:
-"explore there"
+Phenomenal-compression philosophy hook
+-> unique dialogue-generated P3/P4 theory + P4 experiment + failure conditions
 
-confusion:
-"do not commit yet"
+PH-QUAL01
+-> forward-facing reselective-deformation / qualitative-geometry interface
 
-anxiety:
-"something matters strongly, but no stable resolving direction is available"
-```
+PH-CONSC05
+-> HP-B phenomenal-admission residual
 
-This must not be identified with canonical `d`, reward, salience or `T_dir`.
-
----
-
-## 21. Attractor direction != valence != pressure relief
-
-The dialogue further separates three dimensions:
-
-```text
-1. orientation:
-which next paths become favored?
-
-2. valence / local continuation sign:
-does the current state invite maintenance / approach or change / exit?
-
-3. pressure trajectory:
-is unresolved selection burden increasing, stable or rapidly decreasing?
-```
-
-This distinguishes:
-
-```text
-Aha:
-strong resolving direction + positive local endorsement + rapid pressure release
-
-pain:
-strong protective/withdrawal direction + negative current-state continuation
-
-anxiety:
-strong non-neutrality + high pressure + weak / unstable resolution geometry
-```
-
-No new canonical scalar or vector is proposed.
-
----
-
-## 22. Qualia as reason-compressed control surface
-
-One of the strongest conceptual formulations from the dialogue is:
-
-> Qualia may function not by supplying the bearer with more explicit reasons, but by compressing many underlying conditions into a directly usable qualitative control state.
-
-Examples:
-
-```text
-pain:
-not a report of every physiological variable
-but a compact "change / protect" state
-
-Aha:
-not a display of every posterior comparison
-but a compact "settle here" state
-```
-
-This helps explain apparent directness without granting epistemic infallibility.
-
-False Aha becomes especially informative:
-
-```text
-phenomenal obviousness
-may track internal closure / alternative suppression
-without guaranteeing external truth
+NEURAL24
+-> biological affective-consequence-compression analogue
 ```
 
 ---
 
-## 23. Local compression can enable later expansion
-
-A major guard against treating qualia as mere closure:
-
-```text
-immediate branching reduction
-!= long-horizon future-selectability reduction
-```
-
-A good attractor may temporarily narrow attention or interpretation in order to enable later candidate generation.
-
-Examples:
-
-```text
-curiosity:
-focus locally -> broader later exploration
-
-Aha:
-settle one interpretation -> open new predictions / questions / actions
-```
-
-This creates a time-scale distinction:
-
-```text
-local compression
-vs
-long-horizon generative reselectability
-```
-
-A locally relieving attractor can nevertheless be globally pathological if it repeatedly forecloses later revision.
-
----
-
-## 24. Immediate relief != generative health
-
-False Aha, addiction, compulsive certainty and identity-protective closure all motivate:
-
-```text
-short-term selection-pressure relief
-!= truth
-!= long-term adaptive success
-!= generative reselectability
-```
-
-A pathological attractor candidate can be:
-
-```text
-locally effective at closing competition
-+
-long-term compressive of future revision / calibration
-```
-
-This is compatible with current SRT hardening that generative reselectability is a P2/P3 health criterion, not the definition of Selection.
-
----
-
-## 25. Automation prediction
-
-The new hypothesis predicts a task-specific relation:
-
-```text
-novel / unresolved task
--> stronger selection-active qualitative recruitment
-
-successful repetition / L2 hardening
--> less need for strong task-specific phenomenal compression
-
-rule change / automatic policy failure
--> qualitative recruitment rises again
-```
-
-This must not be rewritten as:
-
-```text
-automation -> no consciousness
-```
-
-The predicted change concerns the control relevance / vivid recruitment of a task-specific quale-event, not the disappearance of the entire phenomenal field.
-
----
-
-## 26. P4 Aha experiment: same terminal content, different formation path
-
-The cleanest initial test is to hold the final recognized object constant while manipulating how it is reached.
-
-Example conditions:
-
-```text
-A. direct answer reveal
-B. gradual cue / analytic arrival
-C. self-generated Aha
-```
-
-All end with:
-
-```text
-content = DOG
-```
-
-Measure independently:
-
-### PRE
-
-- number / distribution of candidate interpretations;
-- switching among candidates;
-- response entropy or uncertainty proxy;
-- search time.
-
-### TRANSITION
-
-- suddenness;
-- rightness;
-- relief;
-- pleasantness;
-- urgency / pull;
-- confidence.
-
-### POST
-
-- suppression of alternatives;
-- switching cost back to prior interpretations;
-- attention capture;
-- transfer to structurally related stimuli;
-- memory weighting;
-- persistence / reopening cost.
-
-The key question is whether independently estimated pre-to-post selection-landscape deformation adds predictive value for phenomenology beyond terminal content, correctness, confidence, arousal and task difficulty.
-
----
-
-## 27. Core falsification conditions
-
-The phenomenal-compression model must weaken substantially if robust experiments find:
-
-### F1 — strong phenomenology without deformation
-
-```text
-vivid / structured quale
-+
-no independently measurable change in immediate candidate accessibility,
-attention, action tendency, memory weighting or switching structure
-```
-
-### F2 — strong same-bearer deformation without phenomenology
-
-```text
-strong bearer-indexed future-space deformation
-+
-matched access / attention / report opportunity
-+
-stable absence of phenomenology
-```
-
-This would show that the deformation is not sufficient for phenomenality.
-
-### F3 — complete absorption by ordinary variables
-
-If apparent `deformation -> qualia` relations are fully explained by sensory features, confidence, arousal, reward, salience, task difficulty or ordinary action-value models under matched budgets, the SRT-specific D-track claim fails.
-
-### F4 — no automation/recruitment relation
-
-If task-specific qualitative recruitment remains invariant despite strong automatization and policy-failure manipulations under matched awareness, the proposed control-compression function is weakened.
-
----
-
-## 28. Relation to current SRT files
-
-This close read should be cross-read with:
-
-```text
-PH-QUAL01:
-qualitative character <-> immediate bearer-indexed future-accessibility rewrite
-
-PH-CONSC05:
-For-P can be structurally deep without For-me being proved
-
-PH-CONSC03:
-Selector != Bearer != Concern Domain != Experiencer
-
-PH-IND05 / PH-IND06:
-trace, history, non-outsourcing and same-unit consequence-bearing guards
-
-NEURAL24:
-affective consequence compression and bearer-indexed affective readout
-
-NEURAL35:
-reopening != reselectability
-
-PH-AG05 / PH-SELF01:
-self-model revisability, operator capture and diachronic continuity
-```
-
-The new phenomenal-compression hook must remain downstream of these guards.
-
----
-
-## 29. Canonical non-identities
-
-The following must survive every later integration:
+## 21. Hard guards
 
 ```text
 Aha != Selection definition
 Selection != Agency
+Aha != former Real Choice Moment
 restructuring != phenomenality
 attractor != phenomenality
 micro-valence != d
 selection pressure != Psi_f
 prediction error != Psi_f
-attention / precision != d
+attention / precision / emotion != d
 memory != L2
+perceptual hardening != generative reselectability
 bearing != experiencer
 immediate relief != truth
 immediate relief != generative health
@@ -891,43 +589,26 @@ option count != reselectability
 
 ---
 
-## 30. Final close-read synthesis
+## 22. Final close-read synthesis
 
-The source package supports a strong but bounded empirical chain:
+Source-backed chain:
 
 ```text
 representational reorganization
 -> evaluative transition signature
--> enhanced memory / possible one-shot perceptual hardening
+-> enhanced memory / one-shot perceptual hardening
 -> changed later accessibility
 ```
 
-The guided reading then exposes a deeper SRT research program:
+SRT synthesis then asks how this interacts with:
 
 ```text
 history
--> unresolved bearer-relevant selection field
--> transient qualitative compression / attractor
--> immediate directional constraint
--> action / interpretation
--> consequence return
--> L2 writeback
--> automatization or closure
--> later reopening / revision
+-> reopening / revision
+-> bearer continuity
+-> structural For-P
+-> unresolved phenomenal For-me
+-> qualitative transition geometry
 ```
 
-The new theoretical conclusion is **not** that qualia have been explained. The stronger but still open proposal is:
-
-> Qualia may be transient bearer-indexed compression surfaces through which unresolved differences acquire lived directional force, reducing immediate effective branching while handing the resulting selection back to consequence-bearing history and later revision.
-
-The unresolved HP-B question remains:
-
-```text
-bearer-indexed directional non-neutrality
--> ?
-lived directional non-neutrality
-```
-
-The tractable HP-C question becomes:
-
-> Do different qualitative characters correspond in part to different profiles of immediate bearer-indexed selection-space deformation, temporal pressure change, directional constraint and reopening structure?
+The final dialogue-generated proposal is intentionally not restated here. Its strongest admissible form and its falsification burden live only in `PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook_2026-08-23.md`.
