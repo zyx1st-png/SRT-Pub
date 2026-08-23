@@ -60,7 +60,7 @@ dependency: [SRT-EXECUTION-PLAN]
 | 2026-08_Part03 | [Material_Log/2026-08_Part03.md](Material_Log/2026-08_Part03.md) | 2 |
 | 2026-08_Part04 | [Material_Log/2026-08_Part04.md](Material_Log/2026-08_Part04.md) | 8 |
 | 2026-08_Part05 | [Material_Log/2026-08_Part05.md](Material_Log/2026-08_Part05.md) | 5 |
-| 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 6 |
+| 2026-08_Part06 | [Material_Log/2026-08_Part06.md](Material_Log/2026-08_Part06.md) | 7 |
 
 ---
 
@@ -96,13 +96,15 @@ dependency: [SRT-EXECUTION-PLAN]
 
 ## 统计摘要（自动更新）
 
-- 总提交：238 条
-- A（融入）：161 条
+- 总提交：239 条
+- A（融入）：162 条
 - B（观察）：27 条
 - C（拒绝）：50 条
-- 融入率：67.6%
+- 融入率：67.8%
 
 ## Current note
+
+**2026-08-23 Nave / processual bearer / FEP reverse pressure:** registered as an A-class bounded non-canonical P3 O-track synthesis after owner-side subtraction. The correction removes the parallel selectability ladder, routes candidate-generation effects to existing HEF/HCLR owners, keeps branching numerical identity open under PH-IND05, disambiguates Nave/Mossio constraint closure from SRT PCC, and records a P3 scope/antecedent-adequacy pressure on treating Core14's approximately stable Markov-blanket condition as a general biological individuation entrance. D-track is not claimed and no P0/P1 definition is changed.
 
 **2026-08-23 Becker / Aha / phenomenal-compression:** retained as a bounded non-canonical P3/P4 A-class package under a named Consolidation Phase exception. Source-level claims now carry section/figure anchors; the material registry and neuroscience route are explicit; the dialogue-generated theory is kept in one philosophy hook rather than duplicated across the close-read index. D-track remains prospective only, and no canonical or dormant synthesis owner is opened.
 
