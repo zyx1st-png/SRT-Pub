@@ -9,6 +9,8 @@ canonical: false
 domain: philosophy_of_individuation_agency_embodiment_ecological_relations
 status: active
 integration_status: pending
+source_ids:
+  - SRC-2026-08-23-PHIL-NAVE-DRIVE-TO-SURVIVE
 landing_ledger:
   - target: "Core_Law/SRT_Individuation.md"
     state: pending
@@ -21,10 +23,10 @@ landing_ledger:
     blocked_by: "Preserve structural-bearing-vs-phenomenality separation; reachability/concern must not become hidden consciousness tests."
   - target: "Core/SRT_Core_14_Dynamics_Scaling.md"
     state: pending
-    blocked_by: "Institutional/dyadic bearer cases require cross-scale mechanism guard; shared grammar must not imply mechanism identity."
+    blocked_by: "Institutional/dyadic bearer cases require cross-scale mechanism guard; shared grammar must not imply mechanism identity. The 2026-08-23 bounded processual bridge may be used as support, not as owner replacement."
   - target: "Core/SRT_OPEN_TENSIONS.md"
     state: pending
-    blocked_by: "Register copy/reset and non-outsourcing only if owner review finds independent value; do not create a new selectability family."
+    blocked_by: "Register copy/reset, non-outsourcing and production-closure dissociation only if owner review finds independent value; do not create a new selectability family."
 ---
 
 # PH-IND06 Bearer / Concern / Selectability Integration Hook
@@ -107,6 +109,16 @@ non-outsourcing audit
 != generative reselectability
 ```
 
+The 2026-08-23 Nave close-read adds a compatible P2/P3 interpretation without changing admission criteria:
+
+```text
+history-bearing
+!=
+history-constituted
+```
+
+`history-bearing` says that prior outputs leave effective trace. `history-constituted` is the stronger interpretation in which the candidate unit's current organization is itself a generative product of earlier historical stages, so continuity can persist through transformation without snapshot similarity or invariant form. This is an interpretation of recurrent historical reconstitution, not a fifth P1-T06 condition.
+
 ---
 
 ## 4. Target B — `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
@@ -175,6 +187,12 @@ same role grammar across scales
 
 Institutional legal / reputational / contractual persistence may instantiate consequence return differently from organismic metabolic / neural continuity.
 
+The bounded P3 support route added on 2026-08-23 is:
+
+`03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`
+
+Its timescale-relative statement is support only: some historically generated processes may function as relatively invariant constraints on faster dynamics while remaining revisable/regenerable on slower scales. It does not install a universal `structure = slow process` ontology.
+
 ---
 
 ## 7. Target E — `Core/SRT_OPEN_TENSIONS.md`
@@ -191,6 +209,42 @@ show no independently useful difference from non-outsourcing / consequence-closu
 ```
 
 If repeated, reduce PH-IND06 to translation / audit vocabulary rather than promote it.
+
+### 7.1 Production closure × consequence non-outsourcing — 2026-08-23 open synthesis
+
+The Nave close-read adds a second diagnostic axis that must remain distinct from PH-IND06's existing non-outsourcing question.
+
+```text
+production closure:
+are persistence-enabling internal constraints themselves regenerated
+by processes of the candidate unit,
+or supplied as free external background?
+
+consequence non-outsourcing:
+can the relevant loss / cost / correction be transferred elsewhere
+while the claimed bearer is restored unchanged?
+```
+
+These are not synonyms. A digital system could have extensive self-maintenance while still permitting near-lossless rollback; an institution can carry legal/reputational consequence across member turnover while relying on large external infrastructures for its persistence conditions.
+
+**Open P3 question**:
+
+> Does strong bearerhood require some coupling between constitutive-production closure and consequence non-outsourcing, or can the two vary independently across biological, digital, institutional and dyadic systems?
+
+Guard:
+
+```text
+production closure
+!= new P1 theorem
+!= metabolism requirement for bearerhood
+!= subjecthood / phenomenality proof
+
+consequence non-outsourcing
+!= new P1 theorem
+!= replacement for P1-T06
+```
+
+Do not promote a double-closure criterion unless matched cases show independent discrimination beyond persistence, autonomy, regulation and the existing PH-IND06 audit.
 
 ---
 
@@ -230,7 +284,11 @@ sources_pending_verification: true
 
 No owner landing should convert those comparison rows into literature claims until primary-source anchors are verified and registered where appropriate.
 
-This hook tracks theory routing only; it does not close the source-verification task.
+The Nave 2025 source itself is now separately registered at:
+
+`Materials/2026/SRC_2026_08_23_Philosophy_Nave_Drive_to_Survive.md`
+
+This hook tracks theory routing only; it does not close unrelated source-verification tasks.
 
 ---
 
@@ -244,6 +302,7 @@ P1-T06 remains continued-selectability owner
 B13 remains generative-reselectability owner
 Reach_B remains local diagnostic notation only
 non-outsourcing remains an audit, not a theorem
+production closure remains a distinct P3 diagnostic, not a metabolism gate
 bearing remains distinct from subjecthood / phenomenality
 external comparison remains source-disciplined
 ```
