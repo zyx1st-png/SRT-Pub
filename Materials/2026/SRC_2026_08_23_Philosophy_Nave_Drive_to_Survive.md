@@ -1,5 +1,11 @@
 ---
+id: SRC-2026-08-23-PHIL-NAVE-DRIVE-TO-SURVIVE
 source_id: SRC-2026-08-23-PHIL-NAVE-DRIVE-TO-SURVIVE
+type: source_card
+status: active
+layer: materials
+epistemic_layer: evidence
+claim_mode: evidence
 title: "A Drive to Survive: The Free Energy Principle and the Meaning of Life"
 source_type: academic_monograph
 domain: philosophy_of_biology_enactivism_free_energy_principle_autonomy
