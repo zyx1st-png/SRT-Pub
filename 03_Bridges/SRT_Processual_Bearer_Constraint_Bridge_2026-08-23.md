@@ -2,26 +2,28 @@
 id: SRT-BRIDGE-PROCESSUAL-BEARER-CONSTRAINT
 type: bridge
 status: active
-version: v0_1
+version: v0_2
 layer: L1
 epistemic_layer: bridge
-claim_mode: evidence
+claim_mode: bridge
 claim_level: P3
 canonical: false
+ai_do_not_use_for_definition: true
 dependency:
   - SRT-CORE-21B-CONSTITUTIVE-THEOREMS
   - SRT-CORE-21C-BRIDGE-HYPOTHESES
   - SRT-INDIVIDUATION
   - SRT-CORE-14
+  - HOOK-PHIL-PH-IND05-OCCURRENCE-TRACE-L2-BEARER-EXPERIENCER
   - HOOK-PHIL-PH-IND06-BEARER-CONCERN-SELECTABILITY
   - HOOK-PHIL-PH-MEM01-OBJECTIFICATION-HISTORY-BEARER-UNDERSTANDING
-tags: [ProcessOntology, Bearer, Individuation, ConstraintClosure, History, PossibilitySpace, Objectification, Multiscale]
+tags: [ProcessOntology, Bearer, Individuation, ConstraintClosure, History, PossibilitySpace, Objectification, Multiscale, FEP]
 source_ids: [SRC-2026-08-23-PHIL-NAVE-DRIVE-TO-SURVIVE]
 ---
 
 # Processual Bearer / Constraint Bridge — Nave 2025 × SRT
 
-> **Role**: bounded P3 synthesis produced from the full guided close-read of Kathryn Nave, *A Drive to Survive* (MIT Press, 2025). It records five direct SRT-side increments without promoting the source into a proof of SRT.
+> **Role**: bounded P3 synthesis produced from the full guided close-read of Kathryn Nave, *A Drive to Survive* (MIT Press, 2025). This v0.2 corrects the first writeback after an owner-side novelty review: it does not create a third selectability ladder, does not supply a numerical-identity theorem, and explicitly records the source's reverse pressure on SRT's FEP scaling interface.
 >
 > **Contribution route**: **O-track strong; D-track not claimed.** Nave supplies philosophical/biological arguments about process identity, constraint closure, open-ended biological change, normativity and Markov-blanket limits. SRT supplies the candidate ontological organization below. Source support and SRT claim status remain separate.
 
@@ -35,7 +37,7 @@ In particular:
 script / habit / gradient / L2 automation
 !-> no Selection
 
-constraint closure
+Nave/Mossio constraint closure
 != SRT Selection
 
 biological autonomy
@@ -49,47 +51,62 @@ The permitted inference is narrower: stability, feedback, automation, constraint
 
 ---
 
-## 1. Five retained SRT increments
+## 1. Retained SRT-side increments after owner subtraction
 
-### 1.1 Generative reselectability: reweighting is weaker than possibility-space rewriting
+### 1.1 Possibility-space rewriting is an HEF-3 internal discrimination problem, not a new ladder
 
-`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` already owns the distinction between **continued selectability** and the stronger **generative reselectability**. This bridge sharpens the latter without changing its claim level.
+`Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` already owns the distinction between **continued selectability** and the stronger **generative reselectability**. The operational historical-efficacy owner is `03_Bridges/SRT_Selection_Event_CompactCore.md`, where `HEF-3` already includes changes in later candidate reachability, transition probability, return cost, thresholds **or candidate generation**, while `HEF-4` is reserved for writeback into update rules, institutional constraints, system boundaries or cross-context path structure.
 
-Distinguish three effects:
+Therefore the Nave material must **not** register a parallel ordered scale such as:
 
-1. **candidate reweighting** — comparative weight, preference or transition probability changes among candidates already effectively represented;
-2. **reachability rewriting** — switching cost, accessibility or transition relations among those candidates change;
-3. **candidate-generation rewriting** — the conditions under which candidates, relations or dimensions become effectively available at all change, including emergence, extinction or restructuring of the effective possibility space.
+```text
+reweighting < reachability rewriting < candidate-generation rewriting
+```
 
-The third is the strongest sense of possibility-space rewriting. Reweighting within a fixed candidate set does not establish it.
+as if candidate generation were automatically a stronger HEF level than reachability.
 
-Native SRT compression:
+Instead, use a bounded **HEF-3 internal discrimination**:
 
-> **历史不只可能改变“选哪个”，还可能改变“以后还有什么可以被选”。**
+- **reweighting / probability change** — comparative weights or transition probabilities change among already effective continuations;
+- **reachability / cost change** — accessibility, switching cost, return cost or threshold structure changes;
+- **candidate-generation effect** — some candidate, relation or effective dimension becomes available or unavailable because historical conditions changed.
+
+All three may remain `HEF-3`. A candidate-generation effect reaches `HEF-4` only when there is independent evidence that the historical effect is carried by a rewrite of the relevant **rule / boundary / composition / cross-context path structure**, rather than being fully reducible to ordinary probability, cost, threshold or accessibility change within the existing operative scheme.
+
+This directly inherits the unresolved `HCLR01` failure mode N5 in `03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md`: if every generator effect can be reduced to ordinary probability/cost change without an independently identifiable rule/composition layer, keep the result at HEF-3. It also routes to the existing `Core/SRT_OPEN_TENSIONS.md` measurement problem for rule/boundary/candidate-generation revision rather than creating a new taxonomy.
+
+Native SRT compression remains useful as an intuition, not a new grading rule:
+
+> **历史不只可能改变“选哪个”，还可能改变“以后还有什么可以被选”；但“候选变了”本身还不能证明规则层已经被改写。**
 
 Guard:
 
 ```text
-candidate-generation rewriting
-= P2/P3 generative-health candidate
-!= P1 requirement for Selection
-!= P1 requirement for every Stable ISP
+candidate-generation effect
+= possible HEF-3 historical efficacy
+
+candidate-generation effect + independently identified rule/boundary/composition rewrite
+= possible HEF-4 candidate
+
+neither
+-> P1 requirement for Selection
+-> P1 requirement for every Stable ISP
 ```
 
-Failure to show candidate-generation rewriting must never be used to infer that no Selection occurred.
+Failure to show either form must never be used to infer that no Selection occurred.
 
-### 1.2 Bearer continuity: history-bearing versus history-constituted
+### 1.2 Bearer continuity: history-bearing versus history-constituted, without solving numerical identity
 
-P1-T06 already defines Stable ISP through recurrent historical reconstitution. This bridge adds a P2/P3 interpretation of what that continuity may consist in:
+P1-T06 already defines Stable ISP through recurrent historical reconstitution of a recognizable history-bearing organization. This bridge adds only a P2/P3 **interpretation** of what historical reconstitution may involve:
 
 - **history-bearing**: earlier outcomes leave traces that constrain later candidates and transitions;
-- **history-constituted**: the current organization of the candidate bearer is itself a generative product of earlier historical stages, so continuity can survive transformation without requiring material identity, snapshot similarity or invariant organization.
+- **history-constituted**: the current organization of a candidate bearer may itself be a generative product of earlier historical stages, so material turnover or organizational transformation need not by themselves destroy diachronic continuity.
 
 Native SRT compression:
 
 > **bearer 不只是携带历史的对象；它可能是由连续历史生成关系暂时个体化出来的持续承载过程。**
 
-A useful continuity test is therefore not only state similarity but:
+The following are therefore useful **continuity diagnostics**:
 
 ```text
 generative continuity
@@ -99,31 +116,44 @@ consequence continuity
 continued selectability
 ```
 
+but they are **not a sufficient criterion of same-bearer numerical identity**. Causal descendants, copies, fission products or branching continuations may inherit all or much of the same history. The unresolved question of what distinguishes shared historical inheritance from numerical bearer identity remains routed to `Philosophy/hooks/PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Integration_Hook.md`.
+
 Guard:
 
 ```text
 history-constituted
 != new P1 admission gate
+!= permission to drop P1-T06 recognizability
+!= numerical-identity theorem
+!= non-branching theorem
 != metabolic self-production requirement
 != subjecthood / consciousness proof
 != generative reselectability by itself
 ```
 
-### 1.3 Production closure and consequence non-outsourcing are distinct axes
+### 1.3 Nave/Mossio constraint closure versus SRT PCC; production-closure shorthand versus consequence non-outsourcing
 
-Constraint-closure biology asks whether the relatively stable conditions that channel a system's activity are themselves regenerated by the same organization rather than treated as free, externally supplied background.
+**Terminology disambiguation is mandatory.** In this file, **Nave/Mossio constraint closure** refers to the organizational-biology proposal in which relatively stable constraints enable processes while the constraint network is itself regenerated through processes enabled within that organization.
+
+This is **not** identical by name or definition to SRT's existing **Primordial Constraint Closure (PCC / `Def-Scale-PCC-1`)** in `SRT_Glossary.md`, nor does it replace the autopoietic `theta <-> L1` material already present in `Core/SRT_Core_01_Axioms.md §5.2` and the Core14 autopoiesis section. Any future mapping among these constructs requires its own subtraction and cannot be inferred from the shared word “closure”.
+
+Within this bridge only, **production closure** is a descriptive shorthand for the following audit question:
+
+> Are persistence-enabling constraints regenerated by the candidate organization, or are crucial enabling conditions treated as free external background?
+
+`production closure` is **not registered here as a new canonical SRT construct, claim-ladder level or glossary term**.
 
 PH-IND06 asks a different question:
 
 > Can the relevant cost / loss / correction be transferred elsewhere while the claimed bearer is restored unchanged?
 
-Keep these separate:
+Keep the two audit directions separate:
 
 ```text
-production closure:
+production-side audit:
 are persistence-enabling constraints regenerated by the candidate organization?
 
-consequence non-outsourcing:
+consequence non-outsourcing audit:
 can failure cost be displaced elsewhere while the candidate returns unchanged?
 ```
 
@@ -131,34 +161,35 @@ They may correlate in organisms without being identical in general.
 
 **Open P3 question**:
 
-> Does strong bearerhood require some coupling between constitutive-production closure and consequence non-outsourcing, or can these dimensions dissociate across biological, digital, institutional and dyadic systems?
+> After subtracting SRT PCC, existing autopoiesis and ordinary persistence/regulation, does coupling between constitutive self-production and consequence non-outsourcing add independent bearer discrimination across biological, digital, institutional or dyadic systems?
 
-This is a research tension, not a new bearer theorem. A positive answer must earn independent discrimination beyond persistence, autonomy, regulation and existing non-outsourcing analysis.
+This is a research tension, not a new bearer theorem.
 
-### 1.4 Unit individuation precedes formal boundary readout
+### 1.4 Unit/grain declaration before formal boundary readout — methodological dependency, not ontological two-stage carving
 
 Markov, causal and statistical models can formalize relations among declared variables/units. They do not, by that fact alone, explain why those units are the right ontological or bearer units.
 
-Safe direction:
+The safe methodological dependency is:
 
 ```text
-unit / variable / grain individuation
--> relation formalization
--> boundary readout
+a formal boundary calculation requires a declared unit / variable / grain
+-> the calculation can then test relations or separations at that declared grain
 ```
+
+This is **not** an ontological sequence in which reality first produces isolated units and only later produces relations or classifications. It therefore does not contradict `Core/SRT_Core_14_Dynamics_Scaling.md Ax-Scale-07`, which rejects a literal “first carve, then classify” two-stage objectification ontology. At the objectification level, unit individuation and relation specification may be co-constitutive in one variable/grain setting operation.
 
 Forbidden reversal:
 
 ```text
 formal statistical boundary
--> therefore the bounded unit has been ontologically individuated
+-> therefore the bounded unit has already been ontologically individuated
 ```
 
 This does not imply that units are arbitrary constructions. Perspective and task can select a grain while reality constrains which cuts and relations remain stable under observation and intervention.
 
 Native SRT compression:
 
-> **对象化具有 perspectival entry，但不是任意 fabrication：位置选择可读的尺度与差异，现实关系反过来约束哪些对象化能够稳定成立。**
+> **对象化具有 perspectival entry，但不是任意 fabrication：一次 variable/grain 的切分同时规定可读的对象与关系，而现实关系反过来约束哪些对象化能够稳定成立。**
 
 For bearer attribution:
 
@@ -198,11 +229,53 @@ is **not** adopted here as a universal SRT ontology. It is a P3 timescale-relati
 
 ---
 
-## 2. Consolidated consequences for existing SRT owners
+## 2. Reverse constraint: Nave pressures the biological adequacy of Core14's FEP antecedents
+
+The strongest repository-side correction from this source is not a new positive SRT construct. It is pressure on the **scope and antecedent adequacy** of the existing FEP interface in `Core/SRT_Core_14_Dynamics_Scaling.md`.
+
+Core14 currently contains `Def-Scale-04: Variational Free-Energy Mapping` and `T-Scale-04: Life–Mind Continuity via Closure Minimization`. The latter is conditional on a closure condition together with an approximately maintained Markov blanket, schematically including:
+
+```text
+Closure(G_hat_theta) = 1
+and
+partial_t B_MB approximately 0
+```
+
+Nave's Chapters 5–9 and Appendix directly pressure the assumption that a stable/fixed Markov-blanket or fixed organizational graph is a sufficiently general **biological individuation condition**. Her argument is that Markov blankets depend on prior unit/grain specification, generic blanket form is too widespread to individuate life, and organismic identity can persist through material, organizational and possibility-space transformation.
+
+**The source does not logically falsify the conditional T-Scale-04.** If a bounded system genuinely satisfies the declared antecedents, the conditional optimization relation may still be a usable local model. The pressure is narrower and more important:
+
+> **Do not silently read `partial_t B_MB approximately 0` or a fixed closure graph as a general definition-level entrance condition for life, organismic identity or bearer continuity.**
+
+Therefore the current status is:
+
+```text
+T-Scale-04 conditional form
+= not falsified here
+
+T-Scale-04 antecedent as general biological individuation condition
+= under P3 scope / adequacy pressure
+
+Def-Scale-04 local predictive-control mapping
+= potentially useful implementation-level model
+!= grounding of biological normativity or individuation
+```
+
+Pending owner routes:
+
+- `Core/SRT_Core_14_Dynamics_Scaling.md` — future FEP/scaling hardening should mark the biological-scope limitation of the stable-blanket antecedent;
+- `Philosophy/SRT_FEP_Comparison.md` — future comparison pass should explicitly register Nave as a counter-pressure to stronger FEP-as-life-principle readings;
+- existing `Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md` — should be cross-read as the positive Active Inference/FEP neighbor rather than left as an unregistered one-sided source pair.
+
+No canonical change is made by this bridge.
+
+---
+
+## 3. Consolidated consequences for existing SRT owners
 
 ### Stable ISP
 
-P1-T06 remains untouched. This bridge only clarifies that `recurrent historical reconstitution` should not be casually read as fixed-point recurrence, material identity or invariant form.
+P1-T06 remains untouched. This bridge only clarifies that `recurrent historical reconstitution` should not be casually read as fixed-point recurrence or material identity. It also does **not** license dropping the theorem's recognizable-organization requirement or resolving fission/branching by fiat.
 
 ### Individuation
 
@@ -212,13 +285,13 @@ The bridge sharpens the question from:
 
 into:
 
-> Does the historical process help generate the conditions under which the same candidate unit continues to bear later consequences?
+> Does the historical process help generate the conditions under which a candidate unit continues to bear later consequences, while remaining distinguishable from mere inherited history after duplication or branching?
 
-This remains an interpretation/audit, not a new subjecthood threshold.
+This remains an interpretation/audit, not a new subjecthood or numerical-identity threshold.
 
 ### Objectification
 
-Formal boundary methods belong downstream of unit/grain specification. They can constrain and test an objectification but cannot replace a theory of how a unit becomes available for such formalization.
+Formal boundary methods require declared variables/grain. They can constrain and test an objectification but cannot replace a theory of how an object/bearer unit becomes available for formalization; this methodological dependency is compatible with simultaneous object–relation determination.
 
 ### d-value / stake
 
@@ -226,20 +299,20 @@ Nave's biological `need` and self-production are useful local realizations of st
 
 ---
 
-## 3. Four-case discrimination matrix for future work
+## 4. Four-case discrimination matrix for future work
 
-| Candidate unit | Production closure question | Consequence non-outsourcing question | Main risk |
+| Candidate unit | Production-side question | Consequence non-outsourcing question | Main risk |
 |---|---|---|---|
 | Organism | Are metabolic/structural constraints regenerated by the organismic network? | Does failure alter the same organism's future viability/selectability? | mistaking life for subjecthood |
 | Digital persistent system | Does the system regenerate persistence-enabling software/hardware conditions, or are they externally maintained? | Can loss be rolled back/copied away while the claimed bearer is restored unchanged? | confusing persistence/memory with bearing |
 | Institution | Are legal/reputational/operational constraints reproduced by institutional activity? | Do liabilities and historical consequences remain attached to the same institution across member turnover? | treating legal continuity as phenomenal subjecthood |
 | Dyad / relation | Are relation-maintaining constraints jointly regenerated? | Can cost be reassigned to either member while the claimed relational bearer is unchanged? | unit inflation / double counting |
 
-A useful future test should match cases on ordinary persistence and regulation, then ask whether production-closure and consequence-closure distinctions add independent explanatory or predictive value.
+A useful future test should match cases on ordinary persistence and regulation, subtract PCC/autopoiesis explanations, and then ask whether production-side regeneration and consequence non-outsourcing add independent explanatory or predictive value.
 
 ---
 
-## 4. Source / synthesis / discrimination separation
+## 5. Source / synthesis / discrimination separation
 
 ### Layer A — source-derived
 
@@ -252,27 +325,36 @@ Nave argues, among other things, that:
 - biological normativity is grounded, in her proposal, in precarious self-production;
 - Markov-blanket realism requires additional metaphysical premises and does not itself provide a principled carving of the world into units.
 
-### Layer B — SRT ontological synthesis
+### Layer B — SRT ontological synthesis / correction
 
-The five sections above organize those source claims around SRT's existing distinctions: Stable ISP, bearer individuation, consequence return, non-outsourcing, generative reselectability, objectification and multiscale constraint.
+After owner-side subtraction, the retained value is primarily:
+
+- a P2/P3 processual interpretation of recurrent historical reconstitution, with branching explicitly unresolved;
+- a bounded production-side audit to compare with, but not replace, existing PCC/autopoiesis and consequence non-outsourcing;
+- objectification/boundary and multiscale-constraint hardening;
+- a reverse constraint on treating stable Markov-blanket antecedents as general biological individuation conditions.
 
 ### Layer C — SRT discriminating claim
 
-**None claimed in this pass.** The production-closure × consequence-closure question is explicitly left open for bounded comparison.
+**None claimed in this pass.** The production-side × consequence-side question is explicitly left open for bounded comparison.
 
 ---
 
-## 5. Hard guardrails
+## 6. Hard guardrails
 
 Do not infer:
 
 - `constraint closure -> SRT Selection`;
+- `Nave/Mossio constraint closure = SRT PCC`;
+- `production closure` is a new canonical SRT construct;
 - `lack of metabolic self-production -> no Selection`;
 - `machine / script / gradient / attractor -> selection-free`;
 - `self-production -> subjecthood / consciousness`;
 - `Markov blanket -> bearer`;
 - `anticipatory biological regulation -> proof of global L0 epsilon_pg`;
 - `history-dependent possibility-space change -> required for every Stable ISP`;
+- `generative continuity -> same-bearer numerical identity`;
+- `Nave falsifies T-Scale-04`;
 - `source argument -> empirical proof of SRT ontology`.
 
 Preserve the user-endorsed compatibility formula only as a current SRT synthesis candidate:
@@ -283,20 +365,26 @@ This permits an organizational kind difference without postulating two ontologic
 
 ---
 
-## 6. Source trail
+## 7. Source trail and existing-owner routes
 
 Primary reading record:
 
 - `Materials/2026/SRC_2026_08_23_Philosophy_Nave_Drive_to_Survive.md`
 - `Materials/2026/READING_2026_08_23_Kathryn_Nave_A_Drive_to_Survive.md`
 
-SRT routes:
+Existing owners / subtraction routes:
 
-- `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06`
-- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13`
-- `Core_Law/SRT_Individuation.md`
-- `Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md`
-- `Philosophy/hooks/PH_MEM01_Objectification_History_Bearer_Understanding_Integration_Hook.md`
-- `Core/SRT_Core_14_Dynamics_Scaling.md`
+- `03_Bridges/SRT_Selection_Event_CompactCore.md` — HEF-3 / HEF-4 historical-efficacy ladder;
+- `03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md` — HCLR01 N5 generator-effect failure mode;
+- `Core/SRT_OPEN_TENSIONS.md` — rule/boundary/candidate-generation revision measurement tension;
+- `Core/SRT_Core_21b_Constitutive_Theorems.md P1-T06` — Stable ISP;
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md P2/P3-B13` — continued vs generative reselectability;
+- `Philosophy/hooks/PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Integration_Hook.md` — fission/branching/numerical-identity pressure;
+- `Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md` — consequence non-outsourcing;
+- `Philosophy/hooks/PH_MEM01_Objectification_History_Bearer_Understanding_Integration_Hook.md` — objectification/history interface;
+- `SRT_Glossary.md` — existing Primordial Constraint Closure (PCC) terminology;
+- `Core/SRT_Core_01_Axioms.md §5.2` — existing autopoiesis material;
+- `Core/SRT_Core_14_Dynamics_Scaling.md` — multiscale bridge plus Def/T-Scale-04 FEP pressure target;
+- `Philosophy/SRT_FEP_Comparison.md` — pending comparison landing.
 
 No P0/P1 claim is added or modified by this bridge.
