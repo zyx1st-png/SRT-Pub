@@ -18,6 +18,8 @@ tags: [GuidedReading, FEP, Enactivism, Autonomy, ConstraintClosure, ProcessOntol
 > **阅读范围**：Introduction + Chapters 1–12 + Appendix 全文。Notes / References 未逐条陪读。
 >
 > **写入原则**：本文件尽量保留陪读过程中形成的论证线、用户明确标记的高优先级句子、SRT 对照与 guardrails；真正的理论写回压缩在 `03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`，不把读书笔记本身当作新 canonical。
+>
+> **Post-writeback correction（2026-08-23）**：本文件保留陪读过程中形成的候选 hooks 与材料侧第一/第二轮去重轨迹，不回写历史过程。其“最终 5 个直接写回项”随后已接受 owner-side novelty probe / subtraction 修正；涉及 HEF 分级、history-constituted bearer、constraint closure / PCC、Markov-boundary 方法顺序与 Core14 FEP pressure 时，以 `03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md` **v0.2** 及其现行 owner routes 为准。尤其下文 `reweighting < reachability rewriting < candidate-generation rewriting` 仅保留为当时的候选整理，不再是现行 SRT 独立阶梯。
 
 ---
 
