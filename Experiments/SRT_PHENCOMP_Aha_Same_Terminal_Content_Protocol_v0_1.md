@@ -15,6 +15,12 @@ owner_hook: Philosophy/hooks/PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook
 dependency:
   - Core/SRT_Validation_Template.md
   - Experiments/SRT_Experimental_Roadmap_v1.md
+  - _SRT_D_VALUE_CANONICAL.md
+  - _SRT_PSI_F_CANONICAL.md
+  - Core/SRT_OPEN_TENSIONS.md
+  - 03_Bridges/SRT_Agency_Automation_Guard_2026-08-17.md
+  - Philosophy/hooks/PH_CONSC04_Phenomenal_Necessity_Zombie_Deletion_Integration_Hook.md
+  - Philosophy/hooks/PH_MR01_Representational_Gradualism_Integration_Hook.md
   - Philosophy/hooks/PH_QUAL_Bearing_Indexed_Phenomenal_Compression_Hook_2026-08-23.md
   - Neuroscience/hooks/SRT_Aha_Representational_Reconstitution_Hook_2026-08-23.md
   - Materials/2026/SRC_2026_08_23_Neuro_Becker_Aha_Representational_Reconstitution.md
@@ -24,7 +30,7 @@ tags:
   - qualia
   - phenomenal-compression
   - candidate-space
-  - micro-valence
+  - lived-directional-non-neutrality
   - representational-change
   - P4
   - falsification
@@ -34,7 +40,7 @@ tags:
 
 > **Decision first:** this is a **parked / pre-pilot design**, not an active execution queue item and not a preregistration. It exists to test whether the dialogue-generated phenomenal-compression hypothesis can survive a clean ordinary-rival audit before any larger consciousness claim is attempted.
 >
-> The protocol is intentionally narrow. It does not attempt to prove phenomenality, define qualia, measure canonical `d` or `Psi_f`, or identify Aha with Selection.
+> The protocol is intentionally narrow. It does not attempt to prove phenomenality, define qualia, measure canonical `d` or `Psi_f`, redefine repository `micro-valence / 微效价`, or identify Aha with Selection.
 
 ---
 
@@ -44,7 +50,7 @@ Hold terminal perceptual content as constant as practicable while varying how th
 
 Ask:
 
-> **Does independently measured pre-to-post candidate-space deformation add held-out predictive value for Aha transition phenomenology beyond terminal content, confidence, processing fluency, arousal/pleasantness, attention and item difficulty?**
+> **Does independently measured pre-to-post candidate-space deformation add held-out predictive value for Aha transition phenomenology beyond terminal content, confidence, processing fluency, arousal/pleasantness, attention, item difficulty and available mismatch / prediction-error proxies?**
 
 The target is an HP-C / qualitative-character bridge only.
 
@@ -66,13 +72,13 @@ bearing -> experiencer
 
 ---
 
-## 1. Claim package
+## 1. Claim package and terminology
 
 ### 1.1 P4 claim under test
 
 A task-specific qualitative episode may sometimes covary with a transient compression / reshaping of an unresolved candidate field, such that the immediate next-selection landscape becomes more directional.
 
-The stronger dialogue-generated bridge remains explicitly open:
+The stronger bridge remains explicitly open:
 
 ```text
 bearing-indexed directional non-neutrality
@@ -98,7 +104,7 @@ R6 generic mismatch / prediction-error-style update pressure where operationally
 
 No SRT-specific increment is claimed if these rivals absorb the effect under a fair information budget.
 
-### 1.3 Claim level discipline
+### 1.3 Claim-level discipline
 
 ```text
 positive result -> bounded P4 support for an HP-C bridge
@@ -107,6 +113,29 @@ negative result -> possible retirement of the proposed incremental mechanism
 ```
 
 No outcome upgrades HP-B phenomenal necessity.
+
+### 1.4 Namespace / canonical guards
+
+The repository already uses `micro-valence / 微效价` in `_SRT_D_VALUE_CANONICAL.md §2a` for a pre-stake P3 value-generation candidate. This protocol does not redefine that term.
+
+Use only:
+
+```text
+lived directional non-neutrality
+```
+
+for the phenomenal-side candidate.
+
+Keep:
+
+```text
+repo micro-valence != epsilon_pg
+repo micro-valence !-> d_stakes
+lived directional non-neutrality is not an alias for repo micro-valence
+lived directional non-neutrality != d
+```
+
+The relation between repo micro-valence and phenomenal lived direction remains open rather than silently identified.
 
 ---
 
@@ -242,6 +271,16 @@ optional urgency / pull
 
 Do not collapse these into one Aha scalar before the main analysis.
 
+`PH_MR01` guard:
+
+```text
+subjective suddenness
+!= demonstrated neural discontinuity
+!= established ontological phase transition
+```
+
+A sharp report threshold may arise from a gradual latent reorganization crossing a reporting / stabilization boundary.
+
 ### 4.3 POST — independently observable landscape change
 
 Primary candidate families:
@@ -264,6 +303,19 @@ reopening cost
 
 The v0.1 primary claim should not depend on delayed memory.
 
+### 4.4 Pressure / relief terminology guard
+
+The protocol may descriptively ask whether **task-level unresolved candidate burden** rises, persists or falls across the transition.
+
+It must not infer:
+
+```text
+task-level pressure trajectory = Psi_f
+relief = Psi_f decrease
+```
+
+`Psi_f` remains the canonical payability / ontological-friction object. Any future local-projection claim requires a separate bridge and canonical projection checks.
+
 ---
 
 ## 5. No new canonical deformation scalar
@@ -279,7 +331,7 @@ alternative suppression
 recoverability / switching cost
 ```
 
-A later scalar is allowed only as an empirical summary after reliability and out-of-sample value are established. It must not be identified with `Psi_f`, `d`, `RDef_B`, valence or consciousness.
+A later scalar is allowed only as an empirical summary after reliability and out-of-sample value are established. It must not be identified with `Psi_f`, `d`, `RDef_B`, valence, repo micro-valence or consciousness.
 
 ---
 
@@ -384,13 +436,17 @@ If strong suddenness / rightness / relief repeatedly occurs without detectable P
 
 If strong candidate-space deformation repeatedly occurs under matched access / attention / report opportunity with stable absence of Aha phenomenology, deformation is not sufficient for Aha experience.
 
-This result is compatible with the existing guard:
+This has a **dual theoretical disposition**:
 
 ```text
-attractor / deformation !-> phenomenality
+phenomenal-compression constitutive sufficiency:
+WEAKEN
+
+PH-CONSC04 / OPEN_TENSIONS §5 zombie-deletion pressure:
+STRENGTHEN
 ```
 
-but weakens any strong constitutive HP-C reading.
+The result must not be hidden as a merely local null. It would support the possibility that a rich structural / control architecture can remain phenomenally empty, while still requiring caution about how “absence of phenomenology” is operationally established.
 
 ### F3 — ordinary-variable absorption
 
@@ -439,7 +495,7 @@ Failure of a STOP gate means **redesign / park**, not “collect more data until
 |---|---|---|
 | M2 adds robust held-out prediction | candidate-space deformation contributes to Aha qualitative-character prediction | deformation causes consciousness |
 | deformation effect fully absorbed by rivals | D-track fails / narrow to ordinary fluency-confidence-attention account | SRT secretly still explains it |
-| strong deformation, weak Aha | deformation is not sufficient; preserve dissociation | participants “must have had unconscious qualia” |
+| strong deformation, weak Aha | deformation not sufficient; constitutive compression weakens; PH-CONSC04 pressure rises | participants “must have had unconscious qualia” |
 | strong Aha, weak deformation | compression model weakened or measurement inadequate; discriminate prospectively | redefine deformation post hoc |
 | direct reveal ~= self-generated Aha after controls | self-generation / transition-path hypothesis weakened | terminal content alone proves qualia theory |
 
@@ -509,11 +565,21 @@ Neural correlates do not replace the behavioral rival test.
 
 ## 12. Relation to automation prediction
 
-The dialogue-generated hook also predicts that successful automatization may reduce strong task-specific qualitative recruitment and policy failure may recruit it again.
+The owner hook also predicts that successful automatization may reduce strong task-specific qualitative recruitment and policy failure may recruit it again.
 
-That is **not part of the primary v0.1 Aha experiment**.
+Its functional skeleton already exists in the RC-A `Agency / Automation Guard`:
 
-If the same-terminal-content protocol survives, a separate Stage-2/Stage-3 experiment may test:
+```text
+mature scaffold
+-> routine burden down
+-> higher-level regulation / revision remains available
+```
+
+The phenomenal recruitment claim is a new P4 extension only.
+
+It is **not part of the primary v0.1 Aha experiment**.
+
+If the same-terminal-content protocol survives, a separate later experiment may test:
 
 ```text
 novel unresolved task
@@ -597,10 +663,14 @@ parked pre-pilot; execution not authorized.
 Aha != Selection definition
 Selection != Agency
 representation change != phenomenality
+subjective suddenness != neural discontinuity proved
 attractor / deformation != consciousness
 bearing != experiencer
-micro-valence != d
-selection pressure != Psi_f
+lived directional non-neutrality is not an alias for repo micro-valence
+repo micro-valence != epsilon_pg
+lived directional non-neutrality != d
+task-level pressure trajectory != Psi_f
+subjective relief != Psi_f decrease proved
 prediction error != Psi_f
 confidence / emotion / attention != d
 memory != L2
