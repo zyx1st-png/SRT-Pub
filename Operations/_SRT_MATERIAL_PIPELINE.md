@@ -141,6 +141,35 @@ Layer C — SRT discriminating claim (if any)
 
 Layer B 可以很强而 Layer C 为空。
 
+### 3.3 Owner-side novelty probe（写回前强制）
+
+**Source-side 去重不等于 repository-side 新颖性。** 在把任何候选“新增接口 / 新分解 / 新阶梯 / 新 construct / 新 bridge claim”写进仓库前，必须对每条候选增量做一次 **bounded owner-side novelty probe**。目标不是无界递归检索，而是确认仓库现有 owner 是否已经能回答同一个角色问题。
+
+最低流程：
+
+1. **先命名最可能的 owner**：canonical owner、现有 bridge、hook、OPEN_TENSIONS、glossary / claim-status 中至少指出 1–3 个最可能落点；
+2. **做有界检索**：至少使用候选术语和一个 role-equivalent 查询（例如不是只搜 `candidate generation`，还要搜“future reachability / rule rewrite / generation condition”）；
+3. **给出 subtraction verdict**：
+   - `already owned` — 不新建平行分类；只作为 source support / hardening / cross-reference；
+   - `partly owned` — 只保留现有 owner 尚不能表达的 residual difference，并明确 owner 边界；
+   - `reverse constraint` — 若材料主要暴露既有 SRT 前件、范围或桥接表述的问题，优先登记对 owner 的压力，而不是强造正向新理论；
+   - `unresolved overlap` — 若无法证明独立增量，路由 `OPEN_TENSIONS` / pending hook，不创建新的 taxonomy / scalar / operator / closure family；
+4. **碰到同名术语必须消歧**：共享词形不能当成共享定义；必须检查 glossary、canonical owner 和历史 bridge 的既有所指；
+5. **落库摘要必须写出 owner subtraction 结果**：尤其是 A 类 O-track 材料，不能只写“与 SRT 高度契合”，还要说明哪些只是已有 owner 的外部支撑、哪些是真 residual、哪些反向约束 SRT。
+
+允许的最小输出：
+
+```text
+Candidate increment:
+Likely owner(s):
+Bounded probe:
+Verdict: already owned / partly owned / reverse constraint / unresolved overlap
+Residual after subtraction:
+Forbidden parallel construct:
+```
+
+该 probe **不要求**每次遍历全仓库，也不替代 GOV-SUB01 / bounded rival audit；它只负责防止“材料内部去重完成，但仓库内部重复理论又新增一次”的失效模式。
+
 ---
 
 ## 4. A/B/C 裁决
