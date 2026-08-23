@@ -20,6 +20,8 @@ dependency: [SRT-CANONICAL-REGISTRY, SRT-CLAIM-LADDER, SRT-PHILOSOPHY-CLAIM-STAT
 
 > **2026-04-29 PHENOMENAL STRUCTURE UPDATE**: For qualia-space, automorphism, structural-turn, IIT/GNWT/FEP consciousness-structure, multistable perception, or first-person/third-person bridge questions, route through `SRT_Phenomenal_Structure_Interface.md`. It introduces stake-gated phenomenal structure and stake-gated automorphism as bridge notions, while preserving the subjecthood and consciousness-threshold guardrails.
 
+> **2026-08-23 NAVE PROCESSUAL-BEARER UPDATE**: For process identity, constraint closure, Markov-blanket individuation, history-constituted continuity, or FEP-as-life-principle questions, cross-read `../03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`. It is a P3 owner-subtracted bridge, not a definition source: HEF grading remains with CompactCore/HCLR01, branching identity remains open under PH-IND05, Nave/Mossio constraint closure is not SRT PCC, and Core14 `T-Scale-04` receives scope/antecedent pressure rather than a falsification claim.
+
 ## 1. What this section is for
 
 The Philosophy section should help readers answer four questions:
@@ -45,6 +47,7 @@ The section is strongest when it does **not** claim to replace all philosophy. I
 | 1.5 | `SRT_Phenomenal_Structure_Interface.md` | Bridge for qualia space, phenomenal structure, structural turn, automorphism, IIT/GNWT/FEP structure questions; not a consciousness or subjecthood definition source. |
 | 1.6 | `SRT_HardProblem_Epistemology.md` | Hard-problem dissolution route; includes the view-from-nowhere trap guardrail for first/third-person explanatory-gap claims. |
 | 1.7 | `SRT_Philosophy_Agency_Subjecthood_v0_2.md` | Non-canonical synthesis of S5 agency mechanisms and the S5-to-S6 responsibility-position route; the S0-S6 ladder remains owned by the Subjecthood Threshold Interface. |
+| 1.8 | `../03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md` | Nave P3 processual-bearer / constraint-closure / Markov-boundary pressure bridge; route HEF, branching identity, PCC and FEP questions back to their existing owners rather than treating this as a new taxonomy. |
 | 2 | `SRT_Philosophy_Objection_Ledger.md` | Hardest-objection map; use before upgrading any philosophical claim. |
 | 3 | `SRT_Philosophy_Hardening_TODO.md` | Concrete checklist for future hardening passes. |
 | 4 | `_SRT_Phil_Axioms.md` | Philosophy-domain mapping axioms; not P0/P1 primitive axioms. |

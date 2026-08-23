@@ -23,10 +23,13 @@ landing_ledger:
     blocked_by: "Preserve structural-bearing-vs-phenomenality separation; reachability/concern must not become hidden consciousness tests."
   - target: "Core/SRT_Core_14_Dynamics_Scaling.md"
     state: pending
-    blocked_by: "Institutional/dyadic bearer cases require cross-scale mechanism guard; shared grammar must not imply mechanism identity. The 2026-08-23 bounded processual bridge may be used as support, not as owner replacement."
+    blocked_by: "Register Nave pressure on the biological scope / antecedent adequacy of T-Scale-04's approximately stable Markov-blanket condition, plus the existing cross-scale mechanism guard. Do not declare the conditional theorem falsified and do not treat the bridge as owner replacement."
+  - target: "Philosophy/SRT_FEP_Comparison.md"
+    state: pending
+    blocked_by: "Add Nave as an explicit counter-pressure to stronger FEP-as-life-principle / stable-blanket individuation readings and cross-read the existing Active Inference/FEP source card; no claim that Nave disproves all FEP modeling."
   - target: "Core/SRT_OPEN_TENSIONS.md"
     state: pending
-    blocked_by: "Register copy/reset, non-outsourcing and production-closure dissociation only if owner review finds independent value; do not create a new selectability family."
+    blocked_by: "Register copy/reset, non-outsourcing and production-side-regeneration dissociation only if owner review finds independent value; do not create a new selectability or closure family."
 ---
 
 # PH-IND06 Bearer / Concern / Selectability Integration Hook
@@ -76,6 +79,15 @@ continued selectability
 generative reselectability
 -> Core/SRT_Core_21c_Bridge_Hypotheses.md B13
 
+historical-efficacy grading
+-> 03_Bridges/SRT_Selection_Event_CompactCore.md HEF-3 / HEF-4
+
+generator/composition residual
+-> 03_Bridges/SRT_History_Conditioned_Lie_Reachability_Bridge_v0_1.md HCLR01 N5
+
+branching / fission numerical identity
+-> PH-IND05
+
 stabilisation author decision
 -> Operations/SRT_STABILISATION_AUTHOR_DECISION_PACKET_2026-08-11.md
 ```
@@ -117,7 +129,9 @@ history-bearing
 history-constituted
 ```
 
-`history-bearing` says that prior outputs leave effective trace. `history-constituted` is the stronger interpretation in which the candidate unit's current organization is itself a generative product of earlier historical stages, so continuity can persist through transformation without snapshot similarity or invariant form. This is an interpretation of recurrent historical reconstitution, not a fifth P1-T06 condition.
+`history-bearing` says that prior outputs leave effective trace. `history-constituted` is the stronger interpretation in which the candidate unit's current organization is itself a generative product of earlier historical stages, so continuity can persist through material or organizational transformation without requiring snapshot identity.
+
+This interpretation does **not** remove P1-T06's recognizable-organization requirement and does **not** solve numerical identity. `generative continuity + consequence continuity + continued selectability` are continuity diagnostics only; fission, duplication and branching remain open under PH-IND05.
 
 ---
 
@@ -166,19 +180,9 @@ PH-IND06 is an individuation / consequence-closure audit, not a consciousness so
 
 ## 6. Target D — `Core/SRT_Core_14_Dynamics_Scaling.md`
 
-Use two cross-scale stress tests:
+Two separate pressures should be kept distinct.
 
-```text
-institution-level bearer candidate
-```
-
-and:
-
-```text
-dyadic / relational bearer candidate
-```
-
-but preserve:
+First, use institution-level and dyadic/relational bearer candidates as cross-scale stress tests while preserving:
 
 ```text
 same role grammar across scales
@@ -187,7 +191,23 @@ same role grammar across scales
 
 Institutional legal / reputational / contractual persistence may instantiate consequence return differently from organismic metabolic / neural continuity.
 
-The bounded P3 support route added on 2026-08-23 is:
+Second, the Nave close-read supplies a **reverse constraint** on Core14's FEP interface. `T-Scale-04` currently uses a closure antecedent together with an approximately stable Markov blanket. Nave's processual biology and Markov-blanket critique pressure reading that stable-blanket condition as a sufficiently general biological individuation entrance.
+
+Safe status:
+
+```text
+T-Scale-04 conditional relation
+!= falsified by Nave
+
+stable Markov-blanket antecedent
+!= established general criterion of living identity / bearer continuity
+
+Def-Scale-04 predictive-control mapping
+may remain locally useful
+!= grounding of normativity / individuation
+```
+
+The bounded P3 support route is:
 
 `03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`
 
@@ -195,27 +215,72 @@ Its timescale-relative statement is support only: some historically generated pr
 
 ---
 
-## 7. Target E — `Core/SRT_OPEN_TENSIONS.md`
+## 7. Target E — `Philosophy/SRT_FEP_Comparison.md`
+
+A future FEP comparison pass should explicitly place two neighboring source routes in tension rather than leaving them as independent positive cards:
+
+```text
+Parr / Pezzulo / Friston-style Active Inference / FEP
+-> predictive-control / self-evidencing implementation neighbor
+
+Nave 2025
+-> pressure against deriving life-individuation / intrinsic normativity
+   from stability, generic Markov blankets, or inference language alone
+```
+
+The comparison must preserve:
+
+```text
+FEP useful as local model
+!= FEP is sufficient first principle of life
+
+Markov blanket useful as statistical formalism
+!= Markov blanket generates the bearer unit
+
+Nave pressure
+!= all predictive processing / active inference is false
+```
+
+Cross-read:
+
+`Materials/2026/SRC_2026_06_11_Philosophy_ActiveInference_FEP_Book_MITPress.md`
+
+---
+
+## 8. Target F — `Core/SRT_OPEN_TENSIONS.md`
 
 Possible future tension entry, only after owner review:
 
-> Does consequence non-outsourcing add independent discrimination beyond autonomy, viability regulation, persistence and current affordance structure, especially in digital copy/reset and institutional cases?
+> After subtracting SRT PCC, existing autopoiesis, ordinary persistence and regulation, does a production-side regeneration audit add independent bearer discrimination beyond consequence non-outsourcing?
 
 Failure condition for PH-IND06 novelty:
 
 ```text
 matched systems on autonomy / persistence / affordance
-show no independently useful difference from non-outsourcing / consequence-closure analysis
+show no independently useful difference from production-side regeneration
+or non-outsourcing / consequence-closure analysis
 ```
 
-If repeated, reduce PH-IND06 to translation / audit vocabulary rather than promote it.
+If repeated, reduce the Nave production-side language to translation / audit vocabulary rather than promote it.
 
-### 7.1 Production closure × consequence non-outsourcing — 2026-08-23 open synthesis
+### 8.1 Nave/Mossio constraint closure × consequence non-outsourcing — local shorthand only
 
-The Nave close-read adds a second diagnostic axis that must remain distinct from PH-IND06's existing non-outsourcing question.
+Terminology guard:
 
 ```text
-production closure:
+Nave/Mossio constraint closure
+!= SRT Primordial Constraint Closure (PCC)
+
+production closure
+= local descriptive shorthand in the Nave bridge
+!= new SRT glossary construct
+!= new closure family
+```
+
+The shorthand asks:
+
+```text
+production-side regeneration:
 are persistence-enabling internal constraints themselves regenerated
 by processes of the candidate unit,
 or supplied as free external background?
@@ -225,30 +290,17 @@ can the relevant loss / cost / correction be transferred elsewhere
 while the claimed bearer is restored unchanged?
 ```
 
-These are not synonyms. A digital system could have extensive self-maintenance while still permitting near-lossless rollback; an institution can carry legal/reputational consequence across member turnover while relying on large external infrastructures for its persistence conditions.
+These audit directions are not synonyms. A digital system could have extensive self-maintenance while still permitting near-lossless rollback; an institution can carry legal/reputational consequence across member turnover while relying on large external infrastructures for its persistence conditions.
 
 **Open P3 question**:
 
-> Does strong bearerhood require some coupling between constitutive-production closure and consequence non-outsourcing, or can the two vary independently across biological, digital, institutional and dyadic systems?
+> After existing PCC/autopoiesis explanations are subtracted, does coupling between constitutive self-production and consequence non-outsourcing add independent discrimination across biological, digital, institutional and dyadic candidate bearers?
 
-Guard:
-
-```text
-production closure
-!= new P1 theorem
-!= metabolism requirement for bearerhood
-!= subjecthood / phenomenality proof
-
-consequence non-outsourcing
-!= new P1 theorem
-!= replacement for P1-T06
-```
-
-Do not promote a double-closure criterion unless matched cases show independent discrimination beyond persistence, autonomy, regulation and the existing PH-IND06 audit.
+Do not promote a double-closure criterion unless matched cases show independent discrimination beyond persistence, autonomy, regulation, PCC/autopoiesis and the existing PH-IND06 audit.
 
 ---
 
-## 8. Neuroscience compatibility pointer
+## 9. Neuroscience compatibility pointer
 
 Named bridge analogue:
 
@@ -274,7 +326,7 @@ NEURAL34 supplies a universal mechanism for institutions / dyads / AI
 
 ---
 
-## 9. Source-verification guard
+## 10. Source-verification guard
 
 PH-IND06 §2 currently marks its multi-tradition comparison as:
 
@@ -284,7 +336,7 @@ sources_pending_verification: true
 
 No owner landing should convert those comparison rows into literature claims until primary-source anchors are verified and registered where appropriate.
 
-The Nave 2025 source itself is now separately registered at:
+The Nave 2025 source itself is separately registered at:
 
 `Materials/2026/SRC_2026_08_23_Philosophy_Nave_Drive_to_Survive.md`
 
@@ -292,7 +344,7 @@ This hook tracks theory routing only; it does not close unrelated source-verific
 
 ---
 
-## 10. Landing criterion
+## 11. Landing criterion
 
 Integration is complete only if future owner edits preserve all of the following:
 
@@ -300,9 +352,14 @@ Integration is complete only if future owner edits preserve all of the following
 PH-IND02 / PH-CONSC03 remain bearer owners
 P1-T06 remains continued-selectability owner
 B13 remains generative-reselectability owner
+CompactCore HEF remains historical-efficacy grading owner
+HCLR01 keeps the generator/composition residual
+PH-IND05 keeps branching/fission numerical identity open
 Reach_B remains local diagnostic notation only
 non-outsourcing remains an audit, not a theorem
-production closure remains a distinct P3 diagnostic, not a metabolism gate
+Nave/Mossio constraint closure remains distinct from SRT PCC
+production closure remains local descriptive shorthand, not a new SRT construct
+T-Scale-04 is pressured on scope/antecedent adequacy, not declared falsified
 bearing remains distinct from subjecthood / phenomenality
 external comparison remains source-disciplined
 ```
