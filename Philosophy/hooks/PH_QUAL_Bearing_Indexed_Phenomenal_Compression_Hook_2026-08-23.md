@@ -15,7 +15,7 @@ related:
   - Philosophy/patches/SRT_Philosophy_PH_CONSC03_Subjectivity_Decomposition_Bearer_Concern_v0_1.md
   - Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md
   - Neuroscience/patches/SRT_Neuro_NEURAL24_Bearer_Indexed_Affective_Readout_Gate_v0_1.md
-  - Neuroscience/Hooks/SRT_Aha_Representational_Reconstitution_Hook_2026-08-23.md
+  - Neuroscience/hooks/SRT_Aha_Representational_Reconstitution_Hook_2026-08-23.md
 tags:
   - qualia
   - phenomenology
@@ -31,122 +31,121 @@ tags:
 
 # Hook: Bearing-Indexed Phenomenal Compression
 
-## 0. Status and purpose
+## 0. Status and consolidation exception
 
-This file records a **new dialogue-generated P3/P4 hypothesis** that emerged during the 2026-08-23 Aha close read.
+This file records the **new dialogue-generated P3/P4 hypothesis** that emerged during the 2026-08-23 Aha close read.
 
-It is intentionally separate from PH-QUAL01 because it adds a candidate **generative / functional mechanism** rather than merely restating the existing forward-facing relation between qualitative character and immediate future-accessibility rewrite.
+It is kept as one standalone hook during the repository's Consolidation Phase because the increment is upstream of PH-QUAL01 rather than a restatement of it:
 
-It does **not** define qualia, consciousness, valence, bearer, `d`, `Psi_f`, `T_dir`, `L0/L1/L2`, Selection or agency.
+```text
+PH-QUAL01 asks:
+Does immediate RDef_B(q) add predictive structure to phenomenal geometry?
 
-It does **not** solve PH-CONSC05's phenomenal-admission problem.
+this hook asks:
+Why might a bearer-relevant future-space deformation be generated / recruited
+under unresolved selection pressure at all?
+```
+
+No canonical owner, dormant synthesis target or new symbol is opened. This hook is the **single authority** for the dialogue-generated phenomenal-compression hypothesis; the close-read index should point here rather than duplicate the hypothesis body.
+
+It does **not** define qualia, consciousness, valence, bearer, `d`, `Psi_f`, `T_dir`, `L0/L1/L2`, Selection or agency, and it does **not** solve PH-CONSC05's phenomenal-admission problem.
 
 ---
 
-## 1. Existing baseline that this hook must not overwrite
+## 1. Baselines this hook must not overwrite
 
-PH-QUAL01 already proposes, at bridge level:
+PH-QUAL01 already supplies a bounded HP-C interface:
 
 ```text
 current qualitative anchoring
 +
 immediate bearer-indexed reselective deformation RDef_B(q)
--> richer HP-C constraint
+-> richer qualitative-character constraint
 ```
 
-and keeps the stronger constitutive identity:
-
-```text
-qualitative character
-=
-first-person mode of reselective deformation
-```
-
-as **NOT PASSED**.
+Its stronger constitutive identity remains **NOT PASSED**.
 
 PH-CONSC05 separately requires:
 
 ```text
 strong For-P
-!=
-phenomenal For-me proved
+!= phenomenal For-me proved
 ```
 
-This hook inherits both guards.
+PH-CONSC03 / PH-IND06 require:
+
+```text
+Selector != Bearer != Concern Domain != Experiencer
+same-unit consequence bearing != phenomenal for-me-ness
+```
+
+All claims below inherit those guards.
 
 ---
 
-## 2. New motivating intuition
+## 2. Generative intuition
 
 The Aha paradigm suggests a stronger possibility than “a quale has downstream effects.”
 
-Working intuition:
+Working hypothesis:
 
-> A qualitative episode may be recruited when an existing automatic / historical structure does not cheaply resolve a bearer-relevant selection field, and the system can compress that unresolved field into a low-dimensional transient attractor that immediately biases what can be selected next.
-
-Compact form:
+> When an existing automatic / historical structure does not cheaply resolve a bearer-relevant selection field, the system may recruit a transient low-dimensional compression / attractor that makes the immediate next-selection field more directional.
 
 ```text
 unresolved bearer-relevant selection field
 +
 compressible local structure
 -> transient compression / attractor
--> next-selection field becomes more directional
+-> immediate candidate priorities sharpen
 ```
 
-The new phenomenal question is whether, in an already phenomenal bearer, this directional deformation is lived as a minimal non-neutral qualitative force.
+From a third-person view, this is ordinary state / selection-landscape deformation. The phenomenal question is whether, in an already phenomenal bearer, such bearer-relative directional non-neutrality can be lived as a minimal qualitative force.
 
 ---
 
-## 3. Main distinctions
+## 3. Three mandatory distinctions
 
 ### 3.1 Representation != selection-active quale-event
 
-A system may discriminate or represent a property without that property becoming an independently selection-active qualitative event.
-
-Example:
+A property can be discriminated or represented without becoming an independently selection-active qualitative episode.
 
 ```text
-red discrimination
+red discrimination / representation
 !=
-selection-active red quale-event
+selection-active red qualitative episode
 ```
 
-The same red sensory content can remain background in one context and become strongly recruited in another:
+The same sensory dimension can remain background or become strongly recruited depending on task, danger, bodily consequence and learned history:
 
 ```text
 red decoration
 red search target
 red traffic light
-blood
-warning signal
+blood / warning
 ```
 
-The proposed difference is not wavelength but how the current distinction enters the bearer's near-future selection field.
+This is a research distinction, not a redefinition of the broad philosophical term `qualia`.
 
 ### 3.2 Attractor != phenomenality
 
-Third-person dynamics can fully contain attractors:
+Third-person dynamics can contain attractors without any phenomenal commitment:
 
 ```text
 state x
 -> basin A deepens
--> transitions toward A become more likely / cheaper
+-> paths toward A become more probable / easier
 ```
-
-No phenomenality follows from this alone.
 
 Therefore:
 
 ```text
-attractor
-!-> consciousness
-!-> qualia
+attractor !-> consciousness
+attractor !-> qualia
 ```
 
 ### 3.3 Bearing-indexed non-neutrality != lived non-neutrality
 
-A stronger third-person relation can be defined once a continuing bearer is independently specified:
+Once a continuing bearer is independently specified, a stronger third-person relation can be stated:
 
 ```text
 future a and future b
@@ -154,7 +153,7 @@ have non-equivalent consequences
 for the same continuing bearer B
 ```
 
-and a current event can reshape which of those futures are locally reachable or prioritized.
+and a current event can alter their relative accessibility or priority.
 
 Working label:
 
@@ -162,9 +161,7 @@ Working label:
 bearing-indexed directional non-neutrality
 ```
 
-This remains third-person characterizable.
-
-The live HP-B bridge question is:
+The unresolved bridge remains:
 
 ```text
 bearing-indexed directional non-neutrality
@@ -178,7 +175,7 @@ No identity is asserted.
 
 ## 4. Minimal phenomenal candidate: felt difference-that-matters
 
-The strongest new philosophical candidate from the dialogue is not that a minimal quale is “red,” “sweet,” or “pain.”
+The dialogue's strongest philosophical candidate is not that the minimum quale must be `red`, `sweet` or `pain`.
 
 Instead:
 
@@ -190,21 +187,17 @@ Working phrase:
 felt difference-that-matters-for-my-next
 ```
 
-This is a P3 phenomenological proposal, not a definition.
-
-It must not be projected backward into `L0` as consciousness or valence.
+This is P3 phenomenological language only. It must not be projected backward into L0 as consciousness or valence.
 
 ---
 
-## 5. Micro-valence: broadened working use
+## 5. Micro-valence: provisional working use
 
-This hook uses `micro-valence` in a deliberately broader working sense than a simple pleasant/unpleasant scalar.
-
-Candidate meaning:
+Here `micro-valence` means more than a pleasant/unpleasant scalar:
 
 > phenomenally lived local non-neutrality toward immediately reachable futures.
 
-Possible forms include:
+Possible forms:
 
 ```text
 settle here
@@ -218,7 +211,7 @@ continue
 not yet
 ```
 
-Hedonic pleasant/unpleasant valence may be one important projection, but not the whole candidate structure.
+Hedonic valence may be one projection, not the whole structure.
 
 Guard:
 
@@ -231,93 +224,74 @@ micro-valence != T_dir
 
 ---
 
-## 6. Attractor direction, valence and pressure trajectory must be separated
+## 6. Orientation, local valence and pressure trajectory are separable
 
-The dialogue generated a useful three-way decomposition.
+Do not compress the proposed geometry into one scalar.
 
-### 6.1 Orientation
-
-Question:
+### Orientation
 
 ```text
 Which immediately reachable paths become favored or suppressed?
 ```
 
-Examples:
+Examples: Aha -> settle; pain -> protect/withdraw; curiosity -> explore.
 
-```text
-Aha -> settle on this organization
-pain -> withdraw / protect
-curiosity -> explore
-fear -> protect / avoid
-```
-
-### 6.2 Local valence / continuation sign
-
-Question:
+### Local valence / continuation sign
 
 ```text
 Does the current bearer-state invite maintenance / approach,
 or change / exit?
 ```
 
-This is not identical to attractor strength.
+A strong attractor can still have negative current-state valence, as in pain.
 
-Pain can create a strong action attractor while current-state valence remains negative.
-
-### 6.3 Pressure trajectory
-
-Question:
+### Pressure trajectory
 
 ```text
 Is unresolved selection burden increasing,
-staying high,
+remaining high,
 or rapidly decreasing?
 ```
 
-This helps distinguish:
+Working profiles:
 
 ```text
 Aha:
 strong resolving direction
-+ local positive endorsement
++ positive local endorsement
 + rapid pressure decrease
 
 pain:
 strong protective direction
 + negative current-state continuation
-+ pressure remains until effective response
++ pressure persists until effective response
 
 anxiety:
 strong non-neutrality
-+ high/persistent pressure
-+ weak or unstable resolving attractor
++ persistent pressure
++ weak / unstable resolving attractor
 ```
 
-No new canonical variables are introduced for these dimensions.
+No canonical vector is introduced.
 
 ---
 
-## 7. Phenomenal compression hypothesis
+## 7. Phenomenal-compression claims
 
-### Claim PC-H1 — transient compression candidate
+### PC-H1 — transient compression candidate
 
-When a bearer-relevant selection field remains unresolved and existing automatic policy does not directly close the competition, a qualitative episode may serve as a transient low-dimensional compression surface that reduces immediate effective branching.
+A qualitative episode may sometimes function as a transient low-dimensional compression surface that reduces immediate effective branching when a bearer-relevant field remains unresolved.
 
 ```text
 high-dimensional unresolved constraints
 -> qualitative compression Q
--> candidate priorities / exclusions become sharper
+-> candidate priorities / exclusions sharpen
 -> next selection becomes more tractable
 ```
 
-This is a functional hypothesis, not a phenomenal-necessity theorem.
+### PC-H2 — reason-compressed control state
 
-### Claim PC-H2 — reason-compressed control state
-
-A qualitative episode need not expose the underlying reasons or variables that produced it.
-
-Examples:
+The qualitative episode need not expose the underlying reasons / variables that generated it.
 
 ```text
 pain
@@ -327,107 +301,81 @@ Aha
 != explicit report of all candidate/posterior computations
 ```
 
-The phenomenology may instead provide a compact control-relevant state:
+Instead it may present a compact control-relevant state:
 
 ```text
 pain -> change / protect
 Aha -> settle here
 ```
 
-This offers a candidate explanation of phenomenological directness without granting truth or infallibility.
+### PC-H3 — obviousness as closure-strength candidate
 
-### Claim PC-H3 — phenomenal obviousness as closure strength candidate
-
-False Aha motivates:
+False Aha motivates the bounded proposal:
 
 ```text
 phenomenal obviousness
-may track internal alternative suppression / local closure strength
+may covary with internal alternative suppression / local closure strength
 without tracking truth
 ```
 
-This is a testable HP-C bridge, not an epistemic theory.
+This is an HP-C bridge, not an epistemic warrant rule.
 
 ---
 
-## 8. Qualia can locally compress while consciousness later expands possibilities
+## 8. Local compression != long-horizon foreclosure
 
 The hypothesis must not become an option-count maximization theory.
 
-Time-scale separation:
-
 ```text
 short horizon:
-qualitative attractor narrows immediate branching
+focus / suppress immediate alternatives
 
 longer horizon:
-focused processing may generate new candidates / actions / interpretations
+new predictions / actions / questions can open
 ```
 
-Examples:
-
-```text
-curiosity:
-local focus -> later exploration expansion
-
-Aha:
-local solution closure -> new predictions/questions/actions
-```
-
-Therefore:
+Thus:
 
 ```text
 immediate compression
-!= long-horizon foreclosure
+!= long-horizon generative foreclosure
+option count != generative reselectability
 ```
 
-and:
+Curiosity and Aha are candidate cases where local closure can support later expansion.
 
-```text
-option count
-!= generative reselectability
-```
+Conversely, a locally relieving attractor can become pathological when it repeatedly returns the bearer to the same basin and progressively blocks later correction.
 
 ---
 
-## 9. Immediate relief != generative health
+## 9. Immediate relief != truth or generative health
 
-A locally successful attractor may rapidly reduce selection pressure while damaging later calibration or revision.
+Keep:
+
+```text
+felt relief / rightness
+!= truth
+!= long-horizon adaptiveness
+!= generative reselectability
+```
 
 Candidate pathological pattern:
 
 ```text
 short-term ambiguity / pressure reduction
 +
-repeated return to same basin
+repeated basin capture
 +
-long-term future-selectability compression
+long-term revision / calibration loss
 ```
 
-Potential examples for future study include:
-
-- false certainty;
-- addictive craving;
-- compulsive closure;
-- identity-protective interpretation;
-- chronic fear / avoidance loops.
-
-Guard:
-
-```text
-felt relief
-!= truth
-!= long-horizon adaptiveness
-!= generative reselectability
-```
-
-This preserves current SRT separation between Selection occurrence and P2/P3 generative health.
+Potential study domains include false certainty, addictive craving, compulsive closure and identity-protective interpretation. These are examples, not diagnoses or source-backed identities.
 
 ---
 
 ## 10. Automation prediction
 
-The hypothesis suggests a bounded task-specific prediction:
+The hypothesis yields a bounded task-specific prediction:
 
 ```text
 novel / unresolved task
@@ -437,22 +385,22 @@ successful repetition / L2-like hardening
 -> less need for strong task-specific phenomenal compression
 
 rule change / automatic-policy failure
--> recruitment increases again
+-> recruitment rises again
 ```
 
-This must not be stated as:
+Forbidden inference:
 
 ```text
 automation -> no phenomenality
 ```
 
-The predicted dependent variable is task-specific qualitative prominence / control participation, not total consciousness.
+The dependent variable is task-specific qualitative prominence / control participation, not total consciousness.
 
 ---
 
-## 11. Aha as a high-amplitude model system
+## 11. Aha as the first high-amplitude P4 model system
 
-Aha is a useful test domain because pre/post deformation is unusually large:
+Aha is useful because its before/after deformation can be unusually large:
 
 ```text
 before:
@@ -462,7 +410,7 @@ after:
 strongly stabilized interpretation
 ```
 
-This makes it easier to compare:
+This makes it suitable for independently comparing:
 
 ```text
 third-person selection-landscape change
@@ -470,15 +418,13 @@ vs
 first-person suddenness / rightness / relief / certainty
 ```
 
-Aha should therefore be treated as a **magnified experimental case** of the proposed mechanism, not as the definition of qualia.
+Aha is a magnified experimental case, not the definition of qualia.
 
 ---
 
-## 12. P4 minimal experiment
+## 12. Minimal experiment: same terminal content, different formation path
 
-Use the same final perceptual content with different formation paths.
-
-Example:
+Hold final perceptual content constant:
 
 ```text
 Condition A — direct answer reveal
@@ -486,20 +432,20 @@ Condition B — gradual hint / analytic recognition
 Condition C — self-generated Aha
 ```
 
-All end in:
+All end in the same recognized object.
 
-```text
-recognized object = DOG
-```
+### PRE
 
-### Independently measure before transition
+Measure independently:
 
-- candidate count / candidate diversity;
-- candidate switching;
-- uncertainty / response entropy proxy;
+- candidate count / diversity;
+- switching among candidates;
+- uncertainty / response-entropy proxy;
 - search duration.
 
-### Measure transition phenomenology
+### TRANSITION
+
+Measure:
 
 - suddenness;
 - rightness;
@@ -508,7 +454,9 @@ recognized object = DOG
 - urgency / pull;
 - confidence.
 
-### Independently measure immediate post-event deformation
+### POST
+
+Measure independently:
 
 - alternative suppression;
 - switching cost;
@@ -520,7 +468,7 @@ recognized object = DOG
 
 ### Primary P4 question
 
-Does independently estimated selection-landscape deformation add held-out predictive value for transition phenomenology beyond:
+Does independently estimated pre/post selection-landscape deformation add held-out predictive value for transition phenomenology beyond:
 
 ```text
 terminal content
@@ -537,60 +485,43 @@ attention
 
 ## 13. Falsification conditions
 
-### F1 — vivid quale without measurable selection deformation
+### F1 — vivid quale without measurable deformation
 
-If strong, structured phenomenal episodes repeatedly occur without detectable changes in candidate accessibility, attention, action tendency, memory weighting or switching under appropriately powered designs, the compression claim weakens.
+Repeated strong phenomenal episodes with no measurable change in candidate accessibility, attention, action tendency, switching or memory weighting weaken the compression claim.
 
 ### F2 — strong same-bearer deformation without phenomenology
 
-If otherwise matched systems / human trials show strong bearer-indexed selection-field deformation while report/access controls indicate no phenomenology, then deformation is not sufficient for phenomenality. This is expected to remain possible under PH-CONSC05.
+Strong bearer-indexed future-space deformation under matched access/attention/report opportunity with stable absence of phenomenology shows deformation is not sufficient for phenomenality.
 
 ### F3 — ordinary-variable absorption
 
-If sensory features, confidence, arousal, reward, salience, generic task difficulty or ordinary action-value models fully explain the relevant phenomenology under the same information budget, the SRT-specific D-track increment fails.
+If sensory features, confidence, arousal, reward, salience, generic task difficulty or ordinary action-value models fully absorb the effect under the same information budget, the SRT-specific D-track increment fails.
 
 ### F4 — automation null
 
-If strong automatization and policy-failure manipulations do not modulate task-specific qualitative recruitment after controlling performance and awareness, the proposed compression function is weakened.
+If strong automatization / policy-failure manipulations do not modulate task-specific qualitative recruitment after controlling performance and awareness, the proposed compression function weakens.
 
-### F5 — restructuring/Aha dissociation
+### F5 — restructuring/Aha dissociation failure
 
-The model must accommodate the established possibility that restructuring and Aha phenomenology dissociate. If it can only explain trials where both co-occur, it is incomplete.
-
----
-
-## 14. Relation to PH-QUAL01
-
-PH-QUAL01 asks:
-
-```text
-Does immediate RDef_B(q)
-add predictive structure to phenomenal geometry?
-```
-
-This hook asks an additional upstream question:
-
-```text
-Why might such a deformation be generated at all,
-and why might it be recruited specifically under unresolved selection pressure?
-```
-
-Thus the new increment is:
-
-```text
-selection pressure / unresolved field
--> transient compression
--> directional deformation
--> possible micro-valence
-```
-
-not a replacement for PH-QUAL01.
+The model must accommodate restructuring without strong Aha and Aha-like phenomenology without demonstrated restructuring of the proposed type. If it cannot, it is incomplete.
 
 ---
 
-## 15. Relation to NEURAL24
+## 14. Relation to existing SRT interfaces
 
-NEURAL24 already proposes a biological candidate:
+### PH-QUAL01
+
+```text
+PH-QUAL01:
+Does RDef_B(q) improve prediction of qualitative geometry?
+
+this hook:
+Why might such a deformation be recruited/generated under unresolved selection pressure?
+```
+
+### NEURAL24
+
+NEURAL24 already supplies a biological candidate architecture:
 
 ```text
 high-dimensional internal consequence state
@@ -598,7 +529,7 @@ high-dimensional internal consequence state
 -> low-dimensional actionable readout
 ```
 
-The present hook generalizes this architecture as a cross-domain **qualia candidate**, while preserving the NEURAL24 guard:
+This hook generalizes that pattern only as a theoretical qualia candidate and retains:
 
 ```text
 affective consequence compression
@@ -606,50 +537,23 @@ affective consequence compression
 != consciousness proved
 ```
 
-This is a theoretical extension, not a source-backed identity.
+### PH-CONSC03 / PH-CONSC05 / PH-IND06
 
----
-
-## 16. Relation to PH-CONSC03 / PH-CONSC05 / PH-IND06
-
-Required sequence:
+Required order:
 
 ```text
 candidate organization
 -> independently specified bearer
--> consequence / history / future-selectability audit
+-> consequence/history/future-selectability audit
 -> structural For-P
 -> ? phenomenal For-me
 ```
 
-Do not bootstrap bearer or phenomenality from the fact that a state acts like an attractor.
+Do not bootstrap bearer or phenomenality from attractor behavior.
 
-Required negatives:
+### L0 non-neutrality
 
-```text
-persistent process != bearer
-bearer != concern domain
-bearer != experiencer
-same-unit consequence bearing != phenomenal for-me-ness
-```
-
----
-
-## 17. L0 non-neutrality guard
-
-The dialogue noticed a conceptual family resemblance between:
-
-```text
-L0 minimum non-neutrality
-bearer-relative non-neutrality
-phenomenal micro-valence
-```
-
-No identity is licensed.
-
-Canonical `epsilon_pg` is a formal minimum non-neutrality / non-self-erasure bias and is explicitly **not** an attractor, content-level value map or consciousness variable.
-
-At most, future philosophy may explore a layered individuation story:
+There is a conceptual family resemblance among structural non-equivalence, bearer-relative non-neutrality and phenomenal micro-valence, but no identity is licensed.
 
 ```text
 formal structural non-equivalence
@@ -658,79 +562,22 @@ formal structural non-equivalence
 -> ? lived non-neutrality
 ```
 
-This remains non-canonical and must not be used to derive consciousness from L0.
+This must not be used to derive consciousness from L0.
 
 ---
 
-## 18. Compact candidate description of a qualitative episode
-
-For experiment design only, not as a new formal vector, describe a qualitative episode along separable dimensions:
-
-```text
-Content
-Direction
-Compression / candidate suppression
-Pressure trajectory
-Bearing / stake coupling
-Temporal profile
-Reopening profile
-```
-
-Examples:
-
-```text
-Aha:
-solution content
-+ settle direction
-+ strong compression
-+ rapidly falling pressure
-+ variable stake
-+ abrupt profile
-
-acute pain:
-bodily-threat content
-+ protect/withdraw direction
-+ strong local pruning
-+ persistent pressure until response
-+ strong bearer coupling
-
-anxiety:
-uncertain-threat content
-+ unstable/multiple direction
-+ weak closure
-+ persistent high pressure
-+ strong bearer coupling
-
-background red:
-red content
-+ weak independent direction
-+ little selection compression
-+ low pressure
-
-red traffic light while driving:
-red content
-+ stop direction
-+ strong immediate pruning
-+ acute resolution demand
-+ potentially high bearer consequence
-```
-
----
-
-## 19. Surviving propositions from the dialogue
-
-The following are the intended stable P3/P4 outputs of this hook:
+## 15. Surviving propositions
 
 ```text
 PC-1  Representation != selection-active quale-event.
 
 PC-2  A transient qualitative episode may function as a low-dimensional compression of an unresolved bearer-relevant selection field.
 
-PC-3  Third-person attractor geometry is not phenomenality; the live bridge is from bearing-indexed directional non-neutrality to possible lived non-neutrality.
+PC-3  Third-person attractor geometry is not phenomenality; the live bridge is bearing-indexed directional non-neutrality -> ? lived non-neutrality.
 
-PC-4  Micro-valence is provisionally broader than hedonic pleasure/displeasure and may index local felt direction toward immediately reachable futures.
+PC-4  Micro-valence is provisionally broader than hedonic pleasure/displeasure and may index felt local direction toward immediately reachable futures.
 
-PC-5  Attractor direction, local valence and pressure trajectory are separable dimensions.
+PC-5  Attractor orientation, local valence and pressure trajectory are separable.
 
 PC-6  Immediate candidate-space compression can coexist with later expansion of generative reachability.
 
@@ -738,20 +585,20 @@ PC-7  Immediate relief / rightness does not imply truth or generative health.
 
 PC-8  Successful automatization should reduce the need for strong task-specific qualitative compression, while policy failure should recruit it again.
 
-PC-9  Aha is a high-amplitude model system for testing the relation between selection-landscape deformation and qualitative transition structure.
+PC-9  Aha is a high-amplitude model system for testing selection-landscape deformation against qualitative transition structure.
 
-PC-10 The strong constitutive claim remains open: selection-space deformation does not by itself explain why there is something it is like.
+PC-10 Selection-space deformation does not by itself explain why there is something it is like.
 ```
 
 ---
 
-## 20. Final boundary
+## 16. Final boundary
 
-The strongest admissible statement is:
+Strongest admissible working statement:
 
 > Qualia may be transient bearer-indexed compression surfaces through which unresolved differences acquire lived directional force, reducing immediate effective branching while passing the resulting selection into consequence-bearing history and later revision.
 
-The central unresolved step remains:
+Central unresolved step:
 
 ```text
 bearing-indexed directional non-neutrality
