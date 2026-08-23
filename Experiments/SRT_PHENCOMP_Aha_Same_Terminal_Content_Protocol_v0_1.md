@@ -1,8 +1,8 @@
 ---
 id: SRT-PHENCOMP-AHA-SAME-TERMINAL-CONTENT-PROTOCOL-V0-1
 type: experimental_protocol
-status: parked_pre_pilot_v0_1
-record_stage: design_candidate
+status: draft
+record_stage: parked_pre_pilot_v0_1
 layer: empirical_bridge
 epistemic_layer: experimental
 claim_mode: protocol
