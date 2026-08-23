@@ -22,7 +22,6 @@ srt_relevance: very_high
 integration_priority: high
 verdict: A
 canonical: false
-contribution_route: O-track_strong_D-track_not_claimed
 related_srt_claims:
   - P1-T06
   - P2/P3-B13
