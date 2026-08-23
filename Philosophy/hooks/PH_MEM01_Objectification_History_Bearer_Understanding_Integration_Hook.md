@@ -58,10 +58,10 @@ Do not turn Q02 into a memory-neuroscience literature review.
 
 The 2026-08-23 full close-read of Kathryn Nave's *A Drive to Survive* adds a second correction to the objectification route. Formal relation and boundary models require a declared variable set, grain and unit structure before they can identify conditional-independence or causal relations.
 
-Safe direction:
+Safe methodological dependency:
 
 ```text
-unit / variable / grain individuation
+declared unit / variable / grain
 -> relation formalization
 -> boundary readout
 ```
@@ -72,6 +72,8 @@ Forbidden reversal:
 formal statistical boundary
 -> therefore the bounded unit has been ontologically individuated
 ```
+
+The arrow above is not an ontological two-stage sequence. Object/unit individuation and relation specification may be co-constitutive; the point is only that a formal boundary calculation cannot supply its own undeclared unit of analysis.
 
 Compact guards:
 
@@ -107,7 +109,21 @@ history-bearing
 != history-constituted
 ```
 
-A process may carry traces without its current organization being generated as the continuation of the same consequence-bearing history. Conversely, organizational transformation need not terminate bearer continuity if the later stage is historically generated from the earlier stage and continues to receive the consequences of that history. This is not a new P1-T06 gate.
+A process may carry traces without its current organization being generated as the continuation of the same consequence-bearing history. Historical generation across organizational transformation can support a continuity reading, but it does **not** by itself establish same-bearer numerical identity. P1-T06 still requires recurrent reconstitution of a **recognizable** history-bearing organization; this hook gives no permission to drop that recognizability requirement.
+
+In particular:
+
+```text
+generative continuity
++
+consequence continuity
++
+continued selectability
+```
+
+are continuity diagnostics, not a sufficient identity test. Causal descendants, copies, fission products and branching continuations can inherit history without thereby being proven numerically identical to one prior bearer. Those cases remain open and route to `Philosophy/hooks/PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Integration_Hook.md`.
+
+This is not a new P1-T06 gate and not a non-branching theorem.
 
 ### Subjecthood Threshold Interface
 
@@ -118,7 +134,7 @@ memory / integration / transfer present
 != specified bearer established
 ```
 
-Ask whether the transformation persists in the same candidate unit, changes that unit's future selectability and receives later consequences.
+Ask whether the transformation persists in the same candidate unit, changes that unit's future selectability and receives later consequences, while keeping numerical-identity questions distinct from mere historical inheritance.
 
 ---
 
@@ -134,9 +150,9 @@ This paragraph is companion prose only and must be re-derived against the active
 
 > A subpersonal process can contribute causally to a later ability without thereby being the bearer of that ability. For SRT, attribution must remain unit-bound: the relevant question is whether the transformation becomes part of the history of the same continuing unit, alters that unit's later selectable space, and receives the consequences of the resulting actions. Mechanism location and bearer ownership are different questions.
 
-2026-08-23 processual supplement:
+2026-08-23 processual supplement, corrected after owner-side subtraction:
 
-> Stable bearer identity need not mean snapshot similarity or invariant form. A stronger historical reading asks whether the later organization is generated from the earlier stage in a way that preserves consequence continuity and continued selectability. This is a P2/P3 interpretation of recurrent historical reconstitution, not an additional Stable-ISP admission criterion.
+> Stable bearer identity need not require snapshot or microstate identity, but this does not license dropping P1-T06's recognizability requirement. A historical reading can ask whether a later organization is generated from an earlier stage while preserving consequence continuity and continued selectability; those features support continuity interpretation but are not sufficient for same-bearer numerical identity. Fission, duplication and branching remain unresolved under PH-IND05. This is a P2/P3 interpretation of recurrent historical reconstitution, not an additional Stable-ISP admission criterion.
 
 ---
 
@@ -145,13 +161,13 @@ This paragraph is companion prose only and must be re-derived against the active
 | Candidate property | Why it matters | Insufficient by itself |
 |---|---|---|
 | history-bearing | past changes later processing | mere stored trace |
-| history-constituted continuity | later organization is generated from the same continuing history | resemblance / lineage label alone |
+| history-constituted continuity | later organization is generated from the same continuing history | resemblance, lineage label, causal descent, copy/fission lineage or shared branching inheritance alone |
 | generative objectification | new high-order object / relation / category can form | novelty alone |
 | transfer | history affects novel inputs | repetition alone |
 | consequence sensitivity | errors encounter reality-dependent cost | coherence alone |
 | revisability | returned consequence can alter future objectification | rigid schema capture |
 
-This table is P3 discrimination architecture, not a canonical definition of understanding.
+This table is P3 discrimination architecture, not a canonical definition of understanding or bearer numerical identity.
 
 ---
 
@@ -165,6 +181,10 @@ This table is P3 discrimination architecture, not a canonical definition of unde
 - `Markov blanket = bearer boundary`;
 - `perspective-relative grain = arbitrary fabrication`;
 - `history-constituted = a new P1-T06 condition`;
+- `history-constituted = same-bearer numerical identity`;
+- `generative continuity + consequence continuity + continued selectability = sufficient identity criterion`;
+- `organizational transformation -> recognizability no longer required`;
+- `fission / duplication / branching = solved by this hook`;
 - `understanding = object count`;
 - `understanding = schema coherence`;
 - new competence/generalization as automatic `d` increase;
@@ -198,9 +218,10 @@ Source patch:
 Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md
 ```
 
-Additional source trail:
+Additional source / guard trail:
 
 ```text
 Materials/2026/SRC_2026_08_23_Philosophy_Nave_Drive_to_Survive.md
 03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md
+Philosophy/hooks/PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Integration_Hook.md
 ```
