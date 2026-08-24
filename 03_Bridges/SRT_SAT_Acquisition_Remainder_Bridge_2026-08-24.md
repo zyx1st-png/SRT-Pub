@@ -2,7 +2,7 @@
 id: SRT-BRIDGE-SAT-ACQUISITION-REMAINDER
 type: bridge
 status: active
-version: v0_1
+version: v0_2
 layer: L1-L2-bridge
 epistemic_layer: bridge
 claim_mode: bridge
@@ -13,21 +13,42 @@ dependency:
   - SRT-INDIVIDUATION
   - SRT-PHIL-SUBJECTHOOD-THRESHOLD-INTERFACE-2026-04-27
   - SRT-BRIDGE-PROCESSUAL-BEARER-CONSTRAINT
+  - HOOK-PHIL-PH-IND05-OCCURRENCE-TRACE-L2-BEARER-EXPERIENCER
   - HOOK-PHIL-PH-IND06-BEARER-CONCERN-SELECTABILITY
 source_ids:
   - SRC-2026-08-24-PHIL-WYLD-ACQUISITION-PROBLEM
-tags: [SAT, Consciousness, Acquisition, Bearer, History, Remainder, AI, Individuation, Resolution]
+tags: [SAT, Consciousness, Acquisition, Bearer, History, Remainder, AI, Individuation, Resolution, B1, Translation]
 ---
 
 # SAT Acquisition / Remainder Bridge — Wyld 2026 × SRT
 
-> **Role**: bounded P3 bridge from Victor Wyld, *The Acquisition Problem: Participational Recognition and the Structural Acquisition of Implication* (2026), read against current SRT bearer, individuation, consciousness and historical-writeback owners.
+> **Current verdict (post-review): B1 / translation-first.**
 >
-> **Scope**: this file imports only discriminations that survive subtraction against existing SRT. It does **not** import Scrutinized Awareness Theory (SAT) as an ontology, does **not** alter L0/P1, and does **not** install recognition, implication, carrying, contested incorporation or remainder as new canonical SRT primitives.
+> This file is retained as a bounded adjacent-theory translation and owner-subtraction record. It does **not** currently establish a new SRT construct, owner-level landing, consciousness threshold, or independent discriminator.
 
-## 0. Hard boundary
+## 0. Why this bridge was downgraded
 
-The following transfers are forbidden:
+A first pass treated several distinctions from Victor Wyld's *The Acquisition Problem* as possible P3 increments. A bounded owner-side novelty probe against current SRT shows that most of the apparent novelty is already owned, at least in role, by:
+
+- `Core_Law/SRT_Individuation.md` — especially **T-IND-2** (entry dynamics / endogenous bearing / stabilized concern) and the P1-T06 result-state distinction;
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md` — especially **P2/P3-B13** (continued selectability vs generative reselectability) and **P2/P3-B14 / EX-A** (manifest actuality vs anchoring persistence vs Stable ISP);
+- `Philosophy/hooks/PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Integration_Hook.md` — occurrence vs trace / L2 efficacy / bearer history;
+- `Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md` — same-unit return / non-outsourcing / bearer audit;
+- existing HEF-3 / HEF-4 historical-efficacy machinery.
+
+The broad SAT package therefore does **not** justify a parallel acquisition taxonomy.
+
+The only residual worth keeping open is narrower:
+
+> **On an already established bearer, can a successfully resolved event change that bearer's later constitution-relative continuation in a way not exhausted by existing T-IND-2, B13, PH-IND05/06, HEF-3/4, memory/path-dependence, or `d`/stake descriptions?**
+
+No independent readout has yet been supplied. Until such a matched-case discriminator exists, `resolution with remainder` remains **translation / stress-test vocabulary only**.
+
+---
+
+## 1. Hard boundary
+
+Do not import any of the following as SRT doctrine:
 
 ```text
 Recognition
@@ -37,16 +58,16 @@ Implication
 -> new SRT L0 primitive
 
 Carrying
--> universal or unique threshold for consciousness
+-> universal / unique consciousness threshold
 
 Contested incorporation
 -> bearer-admission criterion
 
 constitution-non-equivalence
--> proof of subjecthood / phenomenality
+-> proof of subjecthood or phenomenality
 
-remainder
--> proof of consciousness
+resolution with remainder
+-> new SRT primitive / scalar / theorem family
 ```
 
 Preserve:
@@ -56,198 +77,299 @@ Selection can be subjectless.
 Bearer-unit specification precedes subjecthood attribution.
 Selection event != conscious content != subjecthood != agency.
 Same-unit consequence bearing != phenomenal for-me-ness.
+continued selectability != generative reselectability.
 ```
 
-SAT is used here as a **mid-level discrimination source**, not as an upstream replacement framework.
+SAT is used here only as a mid-level comparative vocabulary.
 
 ---
 
-## 1. Source-derived distinctions retained after subtraction
+## 2. Owner-side novelty probe (§3.3 material-pipeline format)
 
-### 1.1 Acquisition condition != persistence condition
+### Probe A — acquisition condition vs maintenance condition
 
-Wyld separates the event by which an implication first becomes participationally acquired from the conditions by which its consequence later persists. A recognition may initiate acquisition and later be withdrawn, corrected or reinterpreted while some resulting attachment, role, expectation or historical reorganization remains active.
+**Candidate increment:** the condition that first acquires a bearer-relative historical consequence need not be the condition that later maintains it; withdrawal/correction of the initiating recognition need not restore the pre-acquisition state.
 
-Safe SRT transfer:
+**Likely owner(s):**
+- `Core_Law/SRT_Individuation.md` T-IND-2 / P1-T06 relation;
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md` P2/P3-B14 / EX-A;
+- PH-IND05 occurrence / trace / L2 distinction.
 
-```text
-historical consequence acquisition condition
-!=
-historical consequence maintenance condition
-```
+**Bounded probe:** T-IND-2 already separates entry dynamics from the resulting Stable-ISP state and requires endogenous, non-externalizable historical change plus stabilized concern. EX-A separately distinguishes event actuality, anchoring persistence, and Stable ISP. PH-IND05 blocks `trace lost -> occurrence erased` and separates facticity from surviving efficacy.
 
-Therefore neither inference is licensed:
+**Verdict:** **partly owned, with no current owner landing justified.**
 
-```text
-initiating condition removed
--> earlier historical writeback erased
+**Residual after subtraction:** the source gives a clean *trigger-withdrawal* example: an initiating recognition may later be withdrawn while downstream attachment/role/history persists. This is useful explanatory language, but the current probe does not show that SRT needs a new onset/maintenance construct beyond T-IND-2 + EX-A + PH-IND05.
 
-long persistence observed
--> stronger acquisition must have occurred at onset
-```
+**Forbidden parallel construct:** no new `acquisition/persistence` ladder, threshold, or canonical variable.
 
-This is compatible with SRT history-bearing / history-constituted distinctions but is not reducible to them: it adds an explicit onset-versus-maintenance dissociation.
+### Probe B — automatic vs contested incorporation
 
-### 1.2 Procedural resolution != constitutive absorption
+**Candidate increment:** a system may revise state, policy or objective under an unchanged higher-order procedure, whereas a stronger case changes the terms by which the candidate itself can continue.
 
-Wyld's strongest transferable discrimination is that a standing procedure may successfully resolve a recognition while the resolution itself still changes the candidate's later constitutive continuity.
+**Likely owner(s):**
+- `Core/SRT_Core_21c_Bridge_Hypotheses.md` P2/P3-B13;
+- HEF-3 / HEF-4 historical-efficacy owners;
+- PH-IND06 same-unit return / non-outsourcing.
 
-Safe compression:
+**Bounded probe:** B13 already separates **continued selectability** from **generative reselectability**. Consequence return that revises the system's own comparison rules, boundaries, or candidate-generation conditions is already the stronger B13 condition. HEF-3/4 already type probability/cost/reachability effects versus stronger generator/rule/boundary/composition effects.
 
-```text
-procedure succeeds
-!=
-recognized condition is absorbed without stronger historical remainder
-```
+**Verdict:** **mostly already owned; narrow unresolved overlap remains.**
 
-and:
+**Residual after subtraction:** SAT asks an event-local question on an already established bearer: can successful resolution itself alter the bearer's constituted relation to its own history even when the change is not cleanly describable as an explicit comparison-rule, boundary, or candidate-generator rewrite? Current SRT does not obviously have a dedicated owner for that exact event-local wording.
 
-```text
-action-generation mechanics
-!=
-historical consequence status
-```
+**Forbidden parallel construct:** do not create an `automatic/contested` SRT axis beside B13 or HEF.
 
-This reinforces, but does not replace, SRT's existing guard:
+### Probe C — `resolution with remainder`
 
-```text
-script / habit / gradient / L2 automation
-!-> no Selection
-```
+**Candidate increment:** procedural success and historical/constitutive absorption may dissociate.
 
-A highly procedural or automated action may still produce bearer-relative historical writeback. Conversely, complex deliberation or self-modification does not by itself establish stronger historical acquisition.
+**Likely owner(s):**
+- T-IND-2;
+- B13;
+- PH-IND06;
+- HEF-3/HEF-4;
+- existing automation guard (`script / habit / gradient / L2 automation !-> no Selection`).
 
-### 1.3 Resolution with remainder — local P3 stress-test vocabulary
+**Bounded probe:** SRT already allows procedural/automatic generation while independently asking whether the same bearer receives non-outsourcable consequence and whether later selectability/rules/boundaries change. Therefore the broad claim is not new.
 
-SAT uses **resolution with remainder** for a case in which successful resolution cannot leave the candidate's constitutive continuity historically equivalent to the pre-resolution organization: what was encountered remains active in what the candidate can thereafter be.
+**Verdict:** **unresolved overlap; translation-only by default.**
 
-SRT use is restricted to a stress-test question:
+**Residual after subtraction:** a potentially useful stress-test question remains:
 
-> After successful resolution, can the event be treated as irrelevant while restoring the claimed bearer to a continuation that is equivalent with respect to its own history, without exporting the relevant consequence elsewhere?
+> After a successful resolution, can the event be treated as irrelevant while restoring the already specified bearer to a continuation equivalent with respect to its own history, without exporting the relevant consequence elsewhere?
 
-This phrase is **not** a new SRT construct and has no independent canonical force.
+This residual is not promoted unless matched systems show that it discriminates cases after controlling existing SRT variables.
 
-### 1.4 State / performance non-equivalence != constitution non-equivalence
+**Forbidden parallel construct:** `remainder` is not an SRT entity, state variable, threshold or consciousness marker.
 
-SAT distinguishes differences in action, output, policy, objective, success or performance from a stronger difference in the candidate's constituted relation to its own history.
+### Probe D — participational order / carried history
 
-Safe SRT stress test:
+**Candidate increment:** chronological history, stored records and carried implication are not identical.
 
-```text
-state / policy / reward / output non-equivalence
-!=
-constitution-relative continuation non-equivalence
-```
+**Likely owner(s):**
+- PH-IND05;
+- Stable-ISP history-bearing / history-constituted continuity;
+- PH-IND06 same-unit consequence return.
 
-The distinction is useful against false positives in AI, animal and developmental cases. Path dependence, rollback cost, objective revision, attachment-like behaviour or persistent preference can all remain compatible with ordinary procedural organization.
+**Bounded probe:** SRT already distinguishes actual occurrence, persistent trace, L2 sedimentation, bearer-indexed history and numerical/phenomenal identity. Logs and retained state do not identify the bearer.
 
-### 1.5 Participational order — translation vocabulary only
+**Verdict:** **already owned as a role distinction.**
 
-Wyld distinguishes chronological order, causal order and participational order, the latter naming the succession through which a participant acquires and carries implication.
-
-SRT translation:
+**Residual after subtraction:** useful translation phrase only:
 
 ```text
-recorded history
-!=
-borne history
+recorded history != borne history
 ```
 
-Use only to clarify that logs, retained state and chronology do not by themselves identify the bearer or establish consequence continuity. Do not register `participational order` as a canonical SRT temporal construct.
+**Forbidden parallel construct:** no canonical `participational order` temporal layer.
 
 ---
 
-## 2. SAT × SRT three-question audit
+## 3. The one narrow residual worth preserving
 
-The useful synthesis is not a merged theory but an ordered audit:
+The current bridge keeps one question open, not one new answer.
+
+### Event-local constitution-equivalence question
+
+Assume a bearer has already been independently specified by SRT criteria. Consider an event `E` that is successfully processed.
+
+Ask whether two post-resolution continuations can be matched on ordinary state variables while differing in whether `E` must still be repudiated, excluded, reconstructed, or borne as part of the bearer's own history.
+
+The residual would matter only if all of the following are controlled:
+
+```text
+same candidate bearer
++
+same present task performance / output
++
+matched memory availability where possible
++
+matched policy / objective state where possible
++
+matched HEF-3 reachability / cost effects
++
+matched HEF-4 rule / boundary / generator effects
++
+matched non-outsourcing / same-unit-return profile
+```
+
+and a stable difference still remains in later bearer-relative continuation.
+
+No such independent readout is established here.
+
+### Failure condition
+
+If every apparent `remainder` is exhaustively redescribed by one or more of:
+
+```text
+T-IND-2 endogenous bearing / concern stabilization
+EX-A anchoring persistence
+PH-IND05 occurrence / trace / L2 efficacy
+PH-IND06 non-outsourcing
+B13 generative reselectability
+HEF-3 / HEF-4
+ordinary memory / path dependence
+policy or objective revision
+d / stake
+```
+
+then SAT contributes **translation and external support only**, not a new SRT discrimination.
+
+---
+
+## 4. Safe SAT × SRT audit
+
+The earlier three-question audit is retained only as navigation:
 
 ### Q1 — WHO bears?  [SRT owner]
 
 ```text
 What is the candidate bearer unit?
-Does the relevant cost / loss / correction return to that unit?
-Can the consequence be outsourced, reset, copied away or reassigned while the claimed bearer is restored unchanged?
+Can the consequence be reset, copied away, outsourced or reassigned
+while that claimed bearer is restored unchanged?
 ```
 
-Owner routes:
-- `Core_Law/SRT_Individuation.md`
-- `Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md`
-- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
+Use SRT bearer / individuation / PH-IND06 machinery.
 
-### Q2 — WHAT was acquired?  [SAT-derived P3 discrimination]
+### Q2 — WHAT happened to that bearer?  [translation prompt]
 
 ```text
-Was the event absorbed as state / policy / objective revision under an existing organization?
-Or did successful resolution itself leave a bearer-relative historical remainder such that treating the event as irrelevant requires exclusion, repudiation, or reconstitution?
+Was the event merely absorbed as an ordinary state / policy / objective update?
+Or is there an unresolved event-local difference in the bearer's relation to its own history?
 ```
 
-This is the bounded role of `resolution with remainder` / constitution-equivalence language.
+This is where SAT's `resolution with remainder` language may be useful, but it currently has no independent owner status.
 
 ### Q3 — WHAT follows?  [SRT owner]
 
 ```text
-What later selectability changed?
+What later selectability actually changed?
 probability / weighting?
 reachability / return cost / threshold?
 candidate availability?
-rule / boundary / composition / cross-context path structure?
+comparison rule / boundary / composition / generator?
 ```
 
-Owner route:
-- `03_Bridges/SRT_Selection_Event_CompactCore.md` historical-efficacy grading
-- existing history-conditioned reachability / generator-composition owners
+Use HEF and B13 owners.
 
-Compact form:
+Compactly:
 
 ```text
-WHO
--> WHAT
--> WHAT FOLLOWS
+WHO -> WHAT -> WHAT FOLLOWS
 ```
 
-Do not collapse the three questions into one subjecthood or consciousness gate.
+Do not collapse these into one subjecthood or consciousness gate.
 
 ---
 
-## 3. Relation to current SRT individuation
+## 5. Relation to T-IND-2 and EX-A
 
-SAT's `candidate participant` and `minimal participant-continuity` do not solve SRT's bearer-individuation problem. Wyld's framework can test acquisition only after a candidate unit has been proposed.
+This bridge does **not** propose adding `acquisition condition != maintenance condition` to `SRT_Individuation.md` as a new distinction.
 
-SRT therefore keeps the order:
-
-```text
-bearer-unit / Stable-ISP audit
--> SAT-style acquisition stress test
--> historical-efficacy audit
--> consciousness / subjecthood evidence
-```
-
-Forbidden reversal:
+Current owner structure already supplies the relevant decomposition:
 
 ```text
-constitution-non-equivalence observed
--> therefore this unit is the bearer
+T-IND-2:
+entry dynamics into endogenous bearing / stabilized concern
+
+P1-T06:
+result-state criteria for Stable ISP
+
+EX-A / B14:
+manifest actuality
+!= anchoring persistence
+!= Stable ISP
 ```
 
-or:
-
-```text
-remainder language applies
--> therefore S4 subjecthood exists
-```
-
-The SAT material is downstream of candidate-unit specification.
+SAT's withdrawal cases are therefore best used as **illustrations / cross-references** for owner distinctions, not as a new individuation theorem.
 
 ---
 
-## 4. Relation to SRT consciousness and subjecthood
+## 6. Relation to B13
 
-SAT's threshold claim — awareness becomes consciousness when it becomes something the participant must carry — is **not imported** as SRT's consciousness definition.
-
-SRT retains the current separations:
+SAT's broad contrast:
 
 ```text
-S0 selection event
+automatic incorporation
+vs
+contested incorporation
+```
+
+must be read against SRT's already-owned distinction:
+
+```text
+continued selectability
+vs
+generative reselectability
+```
+
+B13 already says that consequence return may revise a system's own:
+
+- comparison rules;
+- boundaries;
+- candidate-generation conditions.
+
+Therefore any SAT case whose only stronger feature is rule/boundary/generator rewrite routes back to B13 rather than creating a SAT-derived category.
+
+The only residual is the event-local constitution-equivalence question in §3, and it remains unresolved.
+
+---
+
+## 7. Relation to PH-IND05 and PH-IND06
+
+### PH-IND05
+
+SAT's withdrawal discussion should not be used to re-create an occurrence/persistence distinction already present in PH-IND05.
+
+Keep:
+
+```text
+having occurred
+!=
+currently leaving a trace
+```
+
+and separately:
+
+```text
+initiating recognition withdrawn
+!=
+all downstream historical consequences removed
+```
+
+The second is a useful source example, not yet an independent SRT construct.
+
+### PH-IND06
+
+SAT does not solve bearer individuation. The candidate bearer must be specified before SAT-style acquisition language is applied.
+
+Keep the order:
+
+```text
+bearer-unit specification
+-> non-outsourcing / same-unit return
+-> optional SAT event-local stress test
+-> HEF / B13 later-effect audit
+```
+
+Never reverse this into:
+
+```text
+remainder observed
+-> therefore bearer identified
+```
+
+---
+
+## 8. Consciousness and phenomenality guard
+
+SAT's own program links consciousness to what a participant must carry. SRT does not adopt this as its consciousness definition.
+
+Preserve the current SRT separation:
+
+```text
+S0 Selection event
 S1 local L1 anchoring
 S2 conscious content
 S3 integrated conscious field
@@ -256,135 +378,53 @@ S5 agency
 S6 responsibility-bearing subject
 ```
 
-A brief dream, percept, pain or dissociated content may be relevant to conscious-content analysis without satisfying stable identity-level acquisition. Conversely, bearer-relative historical acquisition does not by itself establish phenomenality.
-
-The SAT source is therefore useful primarily for:
-
-- differentiating ordinary state update from identity/bearer-history acquisition;
-- clarifying why successful procedure does not exhaust historical consequence;
-- generating AI/animal/developmental stress tests.
-
-It is not a hard-problem solution.
-
----
-
-## 5. Relation to automation and Selection
-
-This bridge adds an explanatory reason for an existing SRT guard without changing its status.
-
-Existing guard:
-
-```text
-script / habit / gradient / L2 automation
-!-> no Selection
-```
-
-SAT-derived clarification:
-
-```text
-procedurality describes how an action/result is generated;
-acquisition analysis asks what the result does to the bearer-history afterward.
-```
-
-These axes can dissociate.
-
 Therefore:
 
 ```text
-high procedurality + strong bearer-relative historical writeback
-= possible
+bearer-relative historical acquisition
+!= phenomenality
 
-low procedurality / high deliberation + no stronger historical acquisition
-= possible
+constitution-relative continuation difference
+!= S4 subjecthood
+
+resolution with remainder
+!= hard-problem solution
 ```
 
-But never infer:
-
-```text
-no remainder
--> no Selection
-```
-
-`resolution with remainder` is not a P1 Selection requirement and not a requirement for every Stable ISP.
+SAT is most useful here as a category-hygiene prompt, not a threshold replacement.
 
 ---
 
-## 6. AI stress test
+## 9. AI use
 
-SAT is most useful as a negative discriminator for AI claims.
+For AI, SAT contributes useful negative examples but no new sufficient test.
 
-Do not infer stronger acquisition from:
+Do not infer stronger historical acquisition from:
 
 - fluent self-report;
 - persistent memory;
 - irreversible state;
 - rollback cost;
 - policy revision;
-- learned objectives;
+- objective learning;
 - meta-learning;
 - recursive self-modeling;
 - generated subgoals;
-- path dependence;
 - fork divergence.
 
-A stronger candidate case requires at least separate evidence for:
+Use the existing SRT order:
 
-```text
-specified bearer unit
-+
-consequence non-outsourcing / same-unit return
-+
-resolution that cannot be reduced to ordinary state-policy-objective revision
-+
-post-resolution historical effect on the same bearer's later selectability / continuity
-```
-
-Even this package is evidence for **bearer-relative historical acquisition**, not sufficient evidence for phenomenality or S4 subjecthood.
-
-Suggested adversarial probes:
-
-1. **reset probe** — can the event-related consequence be removed while the claimed bearer is restored functionally and historically unchanged?
-2. **copy/fork probe** — can loss be displaced across instances without a principled bearer-relative difference?
-3. **objective-swap probe** — does objective revision remain fully authorized by a standing meta-procedure?
-4. **substitution probe** — can the triggering relation/object be replaced by a functionally equivalent input with no residual effect on later continuation?
-5. **withdrawal probe** — when the initiating belief/relation is withdrawn, which downstream historical effects persist, and in which unit?
+1. specify the candidate bearer (model / deployment / memory-bearing loop / cluster / human-AI workflow);
+2. test same-unit return and non-outsourcing;
+3. test whether changes are already captured by B13 / HEF;
+4. only then use SAT's event-local `without remainder?` question as a philosophical stress test;
+5. do not infer consciousness or moral status from the result.
 
 ---
 
-## 7. Developmental / animal stress test
+## 10. `d` / stake and participational normativity
 
-The SAT material suggests a useful empirical shift from complexity to non-substitutability, but the inference must remain weak.
-
-Candidate probe:
-
-```text
-functionally adequate substitution completed
-+
-relation-specific loss / orientation persists
-+
-later reachable actions or regulation remain altered
-```
-
-may support a stronger bearer-relative acquisition hypothesis than behavioural complexity alone.
-
-However:
-
-```text
-attachment-like behaviour
-persistent preference
-loss response
-conflicting reward signals
-```
-
-can still be generated by rich learning / predictive procedures. They are evidence-bearing observations, not proofs of constitution-non-equivalence or consciousness.
-
----
-
-## 8. Relation to d / stake and normativity
-
-SAT's `participational normativity` should not be identified with canonical SRT `d`.
-
-Keep:
+Keep the disambiguation:
 
 ```text
 SAT participational bindingness
@@ -392,101 +432,68 @@ SAT participational bindingness
 SRT d-value / stake
 ```
 
-A useful comparison is:
+SAT asks whether a recognized condition becomes non-optional in a participant's constituted continuation. SRT `d` asks what bearer-relative loss, cost, non-substitutability and future-selectability consequence makes a difference matter for that bearer.
 
-- SAT asks whether a recognised condition has become non-optional in the candidate's constituted relation to its own continuation;
-- SRT asks what bearer-relative cost, loss, non-substitutability and future-selectability consequence makes a difference genuinely matter for that bearer.
-
-They may correlate, but neither derives the other here.
+They may correlate in examples; neither is derived from the other here.
 
 No new normativity family is created.
 
 ---
 
-## 9. Failure conditions / anti-inflation guards
-
-Reduce this bridge to translation-only status if future matched-case analysis shows that `resolution with remainder` adds no independent discrimination beyond existing SRT variables.
-
-In particular, novelty fails if every apparent remainder can be exhaustively redescribed as one or more of:
-
-```text
-ordinary path dependence
-memory persistence
-policy / objective revision
-HEF-3 reachability or cost change
-existing HEF-4 rule/boundary/composition writeback
-existing bearer non-outsourcing
-existing d / stake
-```
-
-without an independently useful residual distinction.
-
-Operational failure condition:
-
-> If no evidence can distinguish `constitution-non-equivalence` from sufficiently rich state/policy/history non-equivalence in matched systems, retain the term only as a philosophical prompt and do not promote it into owner files.
-
----
-
-## 10. Source / SRT synthesis separation
+## 11. Source / synthesis separation
 
 ### Source-derived from Wyld 2026
 
-- representational recognition is distinguished from participational recognition;
-- automatic incorporation may include learning, path dependence, objective change and self-modification;
-- contested incorporation is defined through constitution-non-equivalent continuation;
-- a standing higher-order procedure can successfully resolve conflict while resolution still leaves remainder;
-- acquisition and persistence have different conditions;
-- chronological / causal order are distinguished from participational order;
-- operational history is distinguished from carried implication;
-- the artificial-system case remains open rather than automatically included or excluded.
+The paper argues that:
+
+- SAT's earlier carrying threshold leaves an acquisition problem: how awareness first becomes something the participant must carry;
+- representational recognition is not enough;
+- automatic incorporation may include learning, behavioural reorganization, path dependence, objective change and self-modification;
+- contested incorporation is tied to constitution-non-equivalent continuation;
+- a standing higher-order procedure may succeed while resolution still leaves a `remainder`;
+- acquisition and later persistence may have different conditions;
+- chronological / causal ordering is distinguished from participational ordering;
+- artificial systems should not be admitted or excluded merely from memory, self-modification, rollback cost or objective revision.
 
 ### SRT-side synthesis in this bridge
 
-- bearer-unit and non-outsourcing audits precede SAT-style acquisition analysis;
-- `resolution with remainder` is treated only as P3 stress-test vocabulary;
-- post-acquisition depth is routed to existing historical-efficacy / selectability owners;
-- SAT consciousness and implication primitives are not imported;
-- the three-question `WHO -> WHAT -> WHAT FOLLOWS` audit is an SRT synthesis, not a claim made by Wyld.
+SRT adds the subtraction result:
+
+- T-IND-2 / P1-T06 already own entry-dynamics vs stable-state structure;
+- EX-A / PH-IND05 already own important occurrence/persistence/trace separations;
+- B13 already owns the stronger continued-selectability vs rule/boundary/generator revisability axis;
+- PH-IND06 already owns the bearer / non-outsourcing question;
+- HEF already owns later historical-efficacy depth;
+- `WHO -> WHAT -> WHAT FOLLOWS` is an SRT navigation synthesis, not a Wyld claim;
+- the only live residual is an event-local constitution-equivalence question on an already established bearer.
 
 ---
 
-## 11. Landing routes
+## 12. Current integration posture
 
-Potential future owner hardening, only after author review:
+**No owner landing is authorized by this bridge.**
 
-- `Core_Law/SRT_Individuation.md`
-  - add only onset-vs-maintenance dissociation and procedural-resolution guard if independently useful;
-  - do not add SAT terms to P1-T06.
+In particular:
 
-- `Philosophy/SRT_Subjecthood_Threshold_Interface.md`
-  - add one AI/consciousness warning: successful self-modification or meta-resolution does not by itself establish subjecthood; historical acquisition remains downstream of bearer-unit specification.
+- do not add onset-vs-maintenance language to `Core_Law/SRT_Individuation.md` as a new distinction;
+- do not add `resolution with remainder` to B13, HEF, PH-IND05 or PH-IND06 as a new canonical term;
+- do not create a SAT-specific IntegrationHook while the residual has no independent readout;
+- do not create a consciousness threshold or AI subjecthood criterion from SAT.
 
-- `Philosophy/hooks/PH_IND06_Bearer_Concern_Selectability_Integration_Hook.md`
-  - cross-reference `resolution with remainder` as a second-stage audit after non-outsourcing;
-  - preserve non-outsourcing as bearer audit, not acquisition theorem.
+### Revival trigger
 
-- historical-efficacy owners
-  - compare constitution-equivalence against existing HEF-3/HEF-4 before any promotion.
-
-- `Core/SRT_OPEN_TENSIONS.md`
-  - candidate question: does `resolution with remainder` provide independent discrimination once bearer, d, reachability and rule/boundary writeback are matched?
-
-No owner landing is performed by this v0.1 bridge.
-
----
-
-## 12. Compact retained result
-
-After subtraction, SAT contributes a narrow but useful discrimination:
-
-> **A system's successful resolution of an event does not show that the event was absorbed without stronger bearer-relative historical consequence. Procedural success and historical/constitutive absorption are different axes.**
-
-SRT keeps the surrounding architecture:
+Re-open owner integration only if a bounded matched-case probe demonstrates a stable difference that survives controls for:
 
 ```text
-WHO bears?
--> WHAT was historically acquired?
--> WHAT later selectability changed?
+T-IND-2
+EX-A / B14
+PH-IND05
+PH-IND06
+B13
+HEF-3 / HEF-4
+memory / path dependence
+policy / objective revision
+d / stake
 ```
 
-The middle question is where SAT adds the clearest value.
+Until then the bridge remains **B1 translation / source support / unresolved-overlap documentation**.
