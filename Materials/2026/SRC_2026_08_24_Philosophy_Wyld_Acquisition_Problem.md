@@ -1,7 +1,11 @@
 ---
 id: SRC-2026-08-24-PHIL-WYLD-ACQUISITION-PROBLEM
+source_id: SRC-2026-08-24-PHIL-WYLD-ACQUISITION-PROBLEM
 type: source_card
 status: active
+layer: materials
+epistemic_layer: evidence
+claim_mode: evidence
 source_type: paper
 source_date: 2026
 read_date: 2026-08-24
