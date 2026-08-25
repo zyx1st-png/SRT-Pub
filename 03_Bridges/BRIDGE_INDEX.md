@@ -4,6 +4,7 @@ type: index
 tags: [Bridge, Frontstage, Navigation]
 status: active_v1
 layer: meta
+epistem_layer: bridge
 epistemic_layer: bridge
 claim_mode: navigation
 canonical: false
