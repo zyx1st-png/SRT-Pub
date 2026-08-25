@@ -6,247 +6,225 @@ layer: operations
 epistemic_layer: governance
 claim_mode: governance
 canonical: false
-tags: [OwnerSubtraction, Bearer, d-value, Individuation, Irreversibility, Branching]
+tags: [OwnerSubtraction, Bearer, Objectification, d-value, Individuation, Branching, Cancer, CrossScale]
 ---
 
-# PH-IND07 Owner Subtraction Audit — 2026-08-25
+# PH-IND07 Owner Subtraction Audit — revised 2026-08-25
 
-> **Purpose:** verify that the IPA/TBI guided-read writeback does not duplicate existing SRT owners or silently promote bridge-level claims into canonical theory.
-
----
-
-## 1. Inputs checked
-
-Primary internal owners/subtractors:
-
-- `03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`
-- `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md`
-- `Philosophy/patches/SRT_Philosophy_PH_IND04_Object_Bearer_Selector_Subject_Experiencer_NonJump_Ladder_v0_1.md`
-- `Philosophy/patches/SRT_Philosophy_PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Discrimination_v0_1.md`
-- `Philosophy/patches/SRT_Philosophy_PH_IND06_Bearer_Concern_Selectability_Relational_Decomposition_v0_1.md`
-- `Core_Law/SRT_Individuation.md`
-- `Core_Law/SRT_Irreversibility.md`
-- `_SRT_D_VALUE_CANONICAL.md`
-- `Core_Law/SRT_Collective_Selection.md`
-
-New writeback files:
-
-- `Materials/2026/READING_2026_08_25_IPA_TBI_Processual_Bearer_Stake_Integration.md`
-- `Philosophy/patches/SRT_Philosophy_PH_IND07_Processual_Bearer_Active_Maintenance_Stake_Integration_v0_1.md`
+> **Purpose:** determine what, if anything, survives as a genuine PH-IND07 increment after subtracting all directly relevant owners. This revision supersedes the first-pass audit in PR #855.
 
 ---
 
-## 2. Claims rejected as non-novel or overstrong
+## 1. Owners checked
 
-### R1 — history-bearing / history-constituted bearer
-Already owned by Processual Bearer Bridge. PH-IND07 does not create a new continuity ladder or numerical-identity theorem.
+The revised subtraction explicitly checks:
 
-### R2 — consequence return / history writeback / future-selectability as bearer audit
-Already owned by PH-IND02 / PH-IND04 / PH-IND06. PH-IND07 does not redefine bearer through these terms.
+1. `03_Bridges/SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md`
+2. `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md`
+3. `Philosophy/patches/SRT_Philosophy_PH_IND04_Object_Bearer_Selector_Subject_Experiencer_NonJump_Ladder_v0_1.md`
+4. `Philosophy/patches/SRT_Philosophy_PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Discrimination_v0_1.md`
+5. `Philosophy/patches/SRT_Philosophy_PH_IND06_Bearer_Concern_Selectability_Relational_Decomposition_v0_1.md`
+6. `Philosophy/patches/SRT_Philosophy_PH_MEM01_Objectification_History_Bearer_Understanding_v0_1.md`
+7. `_SRT_D_VALUE_CANONICAL.md §1.2 / §2b / §2b.1 / §6`
+8. `Core/SRT_OPEN_TENSIONS.md §1`
+9. `Core_Law/SRT_Individuation.md`
+10. `Core_Law/SRT_Collective_Selection.md`
 
-### R3 — counterfactual consequence separability for branching
-Already owned by PH-IND05. PH-IND07 only adds:
-
-```text
-copying != process bifurcation
-```
-
-and a processual reading of branching as one writable closure becoming two independently writable closures.
-
-### R4 — non-outsourcing
-Already owned by PH-IND06. Keep it independent from production/self-maintenance audits.
-
-### R5 — d as stake-coupled rather than raw capacity
-Already canonical in `_SRT_D_VALUE_CANONICAL.md`. PH-IND07 only extends the interpretation to cross-scale stake integration and blocks additive cross-scale d.
-
-### R6 — continued selectability / generative reselectability
-Already owned by P1-T06 / B13. PH-IND07 creates no third selectability ladder.
-
-### R7 — self-maintenance / autonomy as neighboring prior-art territory
-PH-IND06 already records mature neighboring traditions. PH-IND07 must not claim SRT invented self-maintenance, autonomy, precariousness, organizational closure or intrinsic normativity.
+The first-pass audit was incomplete because it did not subtract PH-MEM01's declared objectification owner, the direction-level `R_i·A_i·C_i` stake gate, the collective-d landscape/subspace relation, or the already-open stake-coupling tension.
 
 ---
 
-## 3. Retained increments after subtraction
+## 2. Subtraction result
 
-### I1 — temporal objectification guard
+| First-pass item | Revised verdict | Reason |
+|---|---|---|
+| I1 temporal objectification guard | **SURVIVES, narrowed** | PH-MEM01 owns objectification, but does not explicitly block reifying different time-indexed readouts of one ongoing process as distinct temporal bearers. PH-IND07 is a diachronic extension of PH-MEM01 §3, not an independent objectification theory. |
+| I2 active-maintenance bearer pressure | **DOES NOT SURVIVE as increment** | Processual Bearer Bridge already owns the production-side regeneration question and explicitly leaves its independent bearer discrimination unproved / Layer C empty. |
+| I3 `self-maintenance != self-sufficiency` | **GUARD ONLY** | useful anti-autarky reading of non-outsourcing / proxy support; no new bearer admission criterion. |
+| I4 copying `!=` bifurcation | **SURVIVES, narrowed** | PH-IND06 §5.2 already uses copy/checkpoint substitution as a non-outsourcing negative control. PH-IND07 keeps the same case for a different discriminator: copy-instantiation does not establish bifurcation of one ongoing consequence-history closure. |
+| I5 cross-scale stake integration chain | **ABSORBED** | `_SRT_D_VALUE_CANONICAL.md §2b` already fixes the qualitative stake gate `w_i = R_i·A_i·C_i`; the first-pass chain restated R/A/C. |
+| I6 `d_whole != sum(d_local)` | **ABSORBED / FIRST-DRAFT GUARD WITHDRAWN** | `_SRT_D_VALUE_CANONICAL.md §6.1` already rejects individual-d aggregation as the definition of collective d and gives the positive landscape/subspace relation; §6.2 permits named aggregation schemes as empirical approximations under specified landscape conditions. |
+| I7 higher-order stake-entry open burden | **ALREADY OWNED** | `Core/SRT_OPEN_TENSIONS.md §1` already tracks the necessary-and-sufficient stake-coupling theorem and measurable R/A/C proxies. No duplicate tension should be opened. |
+
+### Net retained PH-IND07 hardening
+
+Only two direct P3 hardening increments survive:
 
 ```text
-P(t) is a time-indexed readout of one ongoing process P
-!= a distinct temporal bearer token
+A. temporal objectification != temporal bearer multiplication
+B. copy-instantiation != evidence of genuine process bifurcation
 ```
 
-Primary future owner route: Processual Bearer Bridge / Irreversibility.
-
-### I2 — active-maintenance bearer pressure
+One additional item survives as **reverse pressure**, not as a new definition:
 
 ```text
-passive trace + altered future dynamics
-!-> bearer
-```
-
-Audit whether the candidate organization participates in maintaining / reconstituting conditions of its own continuation.
-
-Boundary:
-
-```text
-self-maintenance != bearer by definition
-```
-
-The increment is a negative-control pressure against passive consequence receptacles, not a new sufficient criterion.
-
-### I3 — self-maintenance != self-sufficiency
-
-```text
-external support of maintenance
-!-> bearer transfer
-```
-
-This protects caregiving, life-support, microbiome and distributed-support cases.
-
-### I4 — copying != process bifurcation
-
-PH-IND05 owns branching diagnostics but does not fully separate snapshot/objectification transfer from genuine bifurcation of an ongoing process closure. This distinction survives subtraction.
-
-### I5 — cross-scale stake integration
-
-```text
-local difference enters higher-order stake
-only through genuine coupling to higher-order continuation / irreversible risk
-```
-
-This is not a new d definition.
-
-### I6 — non-additivity and stake alignment
-
-```text
-d_whole != sum(d_local)
-```
-
-Alignment / neutrality / conflict / anti-alignment are the relevant cross-scale discrimination surface.
-
-### I7 — higher-order stake integration open tension
-
-Open question:
-
-> Does joint stake integration plus joint consequence-history closure add bearer discrimination beyond coordination, autonomy, shared L2, mutual dependence and existing collective-ISP conditions?
-
-Status remains P3 open tension.
-
----
-
-## 4. Owner writeback disposition
-
-### Processual Bearer Bridge
-**Future v0.3 candidate**：temporal objectification guard、active-maintenance bearer pressure、process topology、cross-scale stake integration routing。
-
-### PH-IND02
-**Future hardening candidate**：
-
-```text
-Does the candidate organization actively participate
-in maintaining / reconstituting the conditions
-under which that organization itself continues?
-```
-
-以及：
-
-```text
-mere historical persistence != active bearer maintenance
-passive damage accumulation != bearer admission
-```
-
-### PH-IND04
-**Interpretation hardening only**：`continuing consequence-return locus` 不应读成 passive location / container。No ladder change.
-
-### PH-IND05
-**Future discrimination insertion**：
-
-```text
-copying != process bifurcation
-shared pre-branch history != shared post-branch bearer closure
-```
-
-No phenomenality inference.
-
-### PH-IND06
-**Future guard insertion**：
-
-```text
-self-maintenance != self-sufficiency
-proxy support != bearer membership
-```
-
-### d-value canonical
-**Governance clarification candidate only**。Do not alter `Def-d-canonical`。
-
-Potential subsection：cross-scale stake integration，with mandatory guards：
-
-```text
-d_whole != sum(d_local)
-local viability != automatically whole-bearer stake
-local D_eff != local d != whole d
-```
-
-### Irreversibility
-**Ontology notation clarification candidate only**：
-
-```text
-P(t) = time-indexed process readout
-termination = end of bearer-indexed future writeback
-termination != end of all external causal legacy
-```
-
-### Individuation
-**No direct change**：current T-IND-2 already carries stronger subject-entry resources (承担内生化, 关切稳定化, d > 0, directional readability). Bearer pre-entry should be hardened first.
-
-### Collective Selection
-**Open tension only**：do not identify higher-order stake integration with collective ISP. Existing group-level perspective-bearing and continued-selectability burdens remain independent.
-
----
-
-## 5. Required guards before any future owner promotion
-
-```text
-self-maintenance != bearer by definition
-self-maintenance != self-sufficiency
-bearer != subject != experiencer
-active regulation != consciousness
-physical split != bearer bifurcation
-copying != process continuation
-shared history != shared current bearer closure
-d_whole != sum(d_local)
-local stake != whole stake without mapping
-functional integration != bearer membership
-higher-order stake integration != collective ISP theorem
-IPA pretreatment evidence != established clinical post-TBI treatment
+C. cancer / local-lineage escape pressures the antecedent adequacy of
+   d_i = D_eff(F_collective | theta_i)
+   when a lower-level unit develops a partially autonomous competing stake landscape
 ```
 
 ---
 
-## 6. Suggested next novelty probes
+## 3. Detailed owner notes
 
-Before promoting PH-IND07 into existing owners, compare against:
+### 3.1 PH-MEM01 subtraction
 
-1. biological-individuality / organizational-autonomy materials already registered in the repo;
-2. existing cancer / multicellularity / d-value scale notes;
-3. collective ISP consequence-return matrix and group-level stake work;
-4. AI checkpoint / persistent-memory stake spectrum for copying vs continuation;
-5. existing `active maintenance`, `self-maintenance`, `autopoiesis`, `stake alignment`, `cross-scale d`, `bifurcation`, `fusion` terminology.
+PH-MEM01 §3 is the declared owner for objectification of identifiable entities, relations, rules and schemas. PH-IND07 must therefore not claim “objectification” as new.
 
-Promotion is justified only if the wording reduces an existing ambiguity or adds an independently usable discrimination test.
+Residual only:
+
+> Apply the objectification guard diachronically: `Obj_t1(𝒫)` and `Obj_t2(𝒫)` are observational cuts and must not be turned into two bearer substances merely because the model uses time-indexed descriptions.
+
+This is a dimension extension from **what gets objectified** to **how temporal readouts are ontologically interpreted**.
+
+### 3.2 PH-IND06 subtraction on copying
+
+PH-IND06 §5.2 already contrasts costly repair of the same bearer with discarding an instance and substituting an untouched copy/checkpoint. Its target is consequence non-outsourcing.
+
+PH-IND07 reuses the control case for a different target:
+
+```text
+copy/checkpoint substitution
+-> can test outsourcing in PH-IND06
+
+copy/snapshot instantiation
+-> is not itself evidence that one process bifurcated in PH-IND07
+```
+
+Thus the case is shared; the discrimination question differs.
+
+### 3.3 d canonical §2b subtraction
+
+`Def-w_i` already provides:
+
+```text
+R_i = real irreversible risk
+A_i = gradient alignment to that risk
+C_i = consequence return to subject closure / continuity / later selection capacity
+```
+
+The first-draft “local difference -> whole risk -> whole regulation -> history writeback -> future selectability” chain is therefore an explanatory restatement, not a retained increment.
+
+### 3.4 d canonical §6 subtraction
+
+Canonical §6.1 already states:
+
+```text
+d_collective = D_eff(F_collective)
+d_i = D_eff(F_collective | theta_i)
+```
+
+with **inclusion / subspace relation rather than composition relation**. §6.2 then permits historical aggregation schemes as named empirical approximations under specified landscape conditions.
+
+Therefore PH-IND07 must not issue a stricter unconditional ban such as:
+
+```text
+d_collective != any aggregation(d_i)
+```
+
+The valid residual is instead an antecedent question: when is the local unit legitimately a subspace of the higher-order landscape?
+
+### 3.5 OPEN_TENSIONS subtraction
+
+`Core/SRT_OPEN_TENSIONS.md §1` already owns:
+
+- minimal conditions for entry into `d_stakes`;
+- fake / misbound / absorbed-stake failures;
+- domain validity of the `D_eff` proxy relation;
+- missing necessary-and-sufficient stake-coupling theorem;
+- R/A/C measurable proxies.
+
+PH-IND07 therefore opens no parallel stake-entry tension.
 
 ---
 
-## 7. Audit verdict
+## 4. Reverse pressure retained: cancer as a landscape-nesting stress test
 
-**PASS as bounded P3 writeback.**
+The first draft used cancer to argue “d is not additive”. That is redundant. The stronger reading is:
 
-This PR should remain a reading + philosophy-hardening increment rather than a canonical rewrite. Strongest surviving contributions：
+> **Cancer pressures the assumption that a lower-level `d_i` is always adequately represented as a restriction of one higher-order `F_collective`.**
 
-1. temporal objectification guard；
-2. active-maintenance pressure against passive bearer readings；
-3. `self-maintenance != self-sufficiency`；
-4. `copying != process bifurcation`；
-5. cross-scale stake integration / d non-additivity；
-6. higher-order stake integration as an explicit open tension。
+Normal multicellular organization can make local maintenance directions part of organism-level continuation. Cancer can instead produce a lineage whose local maintenance / replication directions become increasingly autonomous and can anti-align with organism-level viability.
+
+The open P3 discriminator becomes:
+
+```text
+nested local landscape
+vs
+partially autonomous / competing local landscape
+```
+
+Possible test question:
+
+> Under what structural conditions does `F_local` remain representable as `F_collective|theta_i`, and what evidence licenses saying that a competing local landscape has emerged?
+
+This is a reverse constraint on the **scope / antecedent adequacy** of the §6.1 interpretation, not a falsification of the canonical relation and not a new formula for `d`.
+
+The existing §2b.1 unified gate table need not be rewritten here. Cancer is a cross-grain ownership conflict rather than simply a fourth same-grain `w_i` failure type.
+
+---
+
+## 5. GOV-SYN01 A/B/C verdict
+
+### Layer A — source-backed evidence
+
+The IPA/TBI paper supports:
+
+- lower serum IPA associated with worse edema / outcome in the human cohort;
+- mouse IPA pretreatment/supplementation changing post-injury lesion, BBB, apoptosis, edema and behavioural outcomes;
+- an astrocyte `AhR -> IRF1 -> RFFL -> MFN2` mechanistic chain with RFFL-deletion support.
+
+### Layer B — SRT synthesis / correction
+
+Retained only as:
+
+- constraint-preserving regulation interpretation;
+- temporal-objectification hardening;
+- copy/bifurcation discrimination;
+- anti-autarky proxy-support guard;
+- cancer landscape-nesting reverse pressure generated during the theory discussion.
+
+### Layer C — discriminating empirical claim
+
+**None claimed in this pass.**
+
+Neither IPA/TBI nor the dialogue-derived cancer pressure supplies a matched empirical discriminator uniquely favouring SRT over existing biological/autonomy/control descriptions.
+
+---
+
+## 6. Governance / landing decision
+
+This pass should land as:
+
+```text
+primary SourceCard
++ one consolidated reading note
++ PH-IND07 P3 hardening patch
++ owner-subtraction audit
++ Material Log + registry entry
++ retrieval-index routes
+```
+
+**Consolidation exception:** no additional IntegrationHook is required in this pass. The direct retained content is already concentrated in PH-IND07, and no canonical/dormant owner landing is authorized. The exception must be named in the Material Log rather than silently omitting Pipeline 1 artifacts.
+
+No direct edit is authorized here to:
+
+- `Def-d-canonical` / `Def-w_i`;
+- `_SRT_D_VALUE_CANONICAL.md §6`;
+- T-IND-2 / P1-T06;
+- Stable ISP;
+- consciousness / phenomenality owners.
+
+---
+
+## 7. Stop conditions
+
+PH-IND07 should be demoted to translation-only if future subtraction shows either retained item already explicitly owned elsewhere:
+
+```text
+time-indexed objectification guard
+or
+copy-instantiation vs genuine process-bifurcation distinction
+```
+
+The cancer pressure should be closed if the collective-d owner already supplies an explicit criterion for when a local landscape ceases to be a subspace/restriction and becomes an autonomous competing landscape.
