@@ -1,10 +1,18 @@
 ---
-hook_id: HOOK-PHIL-PH-ATTN01-REPRESENTATION-WEIGHT-ENGAGEMENT-OPERATIVITY
 id: HOOK-PHIL-PH-ATTN01-REPRESENTATION-WEIGHT-ENGAGEMENT-OPERATIVITY
+patch_id: PATCH-PHIL-PH-ATTN01-REPRESENTATION-WEIGHT-ENGAGEMENT-OPERATIVITY
+type: integration_hook
+layer: operations
+epistemic_layer: os
+claim_mode: evidence
+canonical: false
 domain: philosophy_of_attention_evaluation_selection_interfaces
 status: active
-claim_level: P3_bridge_hook
-canonical: false
+integration_status: pending
+landing_ledger:
+  - target: "Core/SRT_Core_24_Discriminating_Predictions.md"
+    state: pending
+    blocked_by: "This ingestion PR is non-canonical; any owner-level P24 wording change requires a separate owner review after rival calibration."
 source_ids:
   - SRC-2026-08-26-PHIL-AMORNBUNCHORNVEJ-DISAGREEMENT-ATTENTION
 internal_owners:
@@ -21,28 +29,60 @@ tags: [Attention, Representation, Engagement, Operativity, CandidateField, P24-3
 > **Role:** bounded integration hook from Amornbunchornvej 2026 into existing SRT owners.  
 > **Hard boundary:** this hook does not redefine `Selection`, `matter`, `d`, `bearer`, `concern`, `Reach_B`, continued selectability, generative reselectability, HEF, L0/L1/L2, or P24. It is a category-hygiene and rival-hardening surface only.
 
----
+## 1. Target document
 
-## 0. Why this hook exists
-
-The source supplies a compact decomposition that is highly relevant to current SRT work but easy to over-import. It distinguishes:
+Primary future landing target:
 
 ```text
-basis membership / representation
-relative weighting
-engagement
-bounded reweighting dynamics
+Core/SRT_Core_24_Discriminating_Predictions.md
 ```
 
-and gives empirical support for a state in which a dimension is encoded and retrievable yet has little or no measurable online influence.
+The intended landing is a compact rival-calibration note under the P24-3 / P24-4 workline, not a new canonical definition.
 
-SRT already owns thicker questions about bearer, concern, historical writeback, selectability and Selection. The legitimate increment here is therefore not a new construct, but a set of non-identity guards plus an ordinary rival for L2 / candidate-field work.
+## 2. Insert after
 
----
+Preferred insertion point after future owner review:
 
-## 1. Primary non-identity guard
+```text
+P24-3 / P24-4 bounded-rival discussion
+```
 
-For audit and bridge work, keep the following distinctions explicit:
+No direct insertion is made in this PR because the current ingestion is deliberately non-canonical.
+
+## 3. Suggested paragraph
+
+> A represented consideration can remain retrievable while becoming functionally negligible in online evaluation. Attention-learning models with persistent latent gains and gated bounded revision can therefore reproduce fixation, slow reallocation, hysteresis-like persistence, and apparent candidate invisibility without basis loss. P24-3 and P24-4 must distinguish basis absence, negligible weighting, online operativity, and stronger candidate-generation or admissibility change before treating these signatures as evidence of a deeper SRT-specific transition.
+
+## 4. Suggested table
+
+| Diagnostic layer | Minimal question | False-positive risk |
+|---|---|---|
+| Representation / basis | Can the consideration be recognized, retrieved, articulated, or used when a dominant cue is removed? | Behavioral silence misread as absence |
+| Relative weighting | How much relative influence does it receive now? | Low weight misread as candidate deletion |
+| Engagement | How much does the whole domain matter / command attention? | Total involvement collapsed into profile |
+| Online operativity | Does controlled perturbation change evaluation or path? | Representation mistaken for causal efficacy |
+| Candidate generation / admissibility | Can the option be generated / admitted under controlled prompts or structural change? | Reweighting mistaken for generator revision |
+| Historical efficacy | Does the event alter later weighting, reachability, rules, boundaries, or generators? | Current effect mistaken for L2 writeback |
+
+## 5. Do not include
+
+Do not write any of the following into the target owner:
+
+```text
+attention = Selection
+profile w = matter / concern / d
+engagement s = bearer-relative stake / d
+lock = L2
+multiplicative plasticity = SRT law
+source agent = SRT bearer
+recovery nonidentity = new SRT theorem
+```
+
+Also do not create a canonical stage ladder from the diagnostic non-identities below.
+
+## 6. Future synthesis target
+
+The future synthesis should preserve the following as audit distinctions rather than new ontology:
 
 ```text
 representable
@@ -54,42 +94,28 @@ representable
 != historical writeback
 ```
 
-This sequence is not proposed as a canonical stage model. Its role is diagnostic: evidence for one term cannot be silently cited as evidence for the next.
-
-### Forbidden inferences
-
-Do not infer:
-
-```text
-can represent X
--> X mattered in the event
-
-X received attention
--> X was selected in the SRT sense
-
-high total engagement
--> high d-value / bearer-relative stake
-
-behavioral silence
--> X absent from the candidate basis
-
-persistent weighting
--> L2 or Selection-specific hardening
-```
+and should add `R_ATT` only as one bounded ordinary rival family among several P24-3 / P24-4 competitors.
 
 ---
 
-## 2. Basis absence vs negligible weighting
+## 7. Why this hook exists
+
+The source supplies a compact decomposition that is highly relevant to current SRT work but easy to over-import. It distinguishes basis membership / representation, relative weighting, engagement, and bounded reweighting dynamics, while discussing evidence for a state in which a dimension is encoded and retrievable yet has little or no measurable online influence.
+
+SRT already owns thicker questions about bearer, concern, historical writeback, selectability and Selection. The legitimate increment here is therefore not a new construct, but a set of non-identity guards plus an ordinary rival for L2 / candidate-field work.
+
+---
+
+## 8. Basis absence vs negligible weighting
 
 The source's strongest useful distinction is:
 
 ```text
 absent / annihilated dimension
-!=
-present but functionally negligible dimension
+!= present but functionally negligible dimension
 ```
 
-Operationally, the source points to a dissociation shape:
+Operationally:
 
 ```text
 basis-absence candidate:
@@ -101,20 +127,11 @@ recognition above chance
 + absent or near-absent online influence under ordinary evaluation
 ```
 
-### SRT use
-
-This is valuable wherever current work asks whether an option, consideration or proxy is:
-
-- genuinely unavailable;
-- available but suppressed;
-- available and operative;
-- historically effective after operation.
-
-Do not collapse these into one `candidate visible / invisible` variable.
+This is valuable wherever current work asks whether an option, consideration or proxy is genuinely unavailable, available but suppressed, available and operative, or historically effective after operation.
 
 ---
 
-## 3. Profile `w` vs engagement `s`
+## 9. Profile `w` vs engagement `s`
 
 The source factorizes current evaluative expression into:
 
@@ -123,7 +140,7 @@ w = relative profile across represented dimensions
 s = total engagement with the domain
 ```
 
-The SRT-side guard is:
+SRT-side guard:
 
 ```text
 w != concern membership
@@ -134,13 +151,11 @@ s != matter
 s != d
 ```
 
-A bearer can show high engagement without strong bearer-relative non-substitutability, and can have high stake in an outcome without the source's attentional `s` being the correct explanatory variable.
-
-Use `w` and `s` only as source-model variables unless a future bridge explicitly operationalizes a relation to existing SRT owners.
+Use `w` and `s` only as source-model variables unless a future bridge independently operationalizes a relation to existing SRT owners.
 
 ---
 
-## 4. Self-gated revision as an ordinary rival
+## 10. Self-gated revision as an ordinary rival
 
 The source models bounded multiplicative reweighting such that low current gain implies low absolute per-step revision. Structurally:
 
@@ -150,28 +165,7 @@ low current weighting
 -> continued low weighting
 ```
 
-This provides an ordinary mechanism for:
-
-- learned inattention;
-- fixation;
-- selective-history entrenchment;
-- slow alternative reactivation;
-- practical non-reachability within a time horizon;
-- hysteresis-like persistence after perturbation.
-
-### P24-3 consequence
-
-Any P24-3 / L2 floor-challenge study that observes only:
-
-```text
-compatible path cost down
-switching cost up
-alternative accessibility down
-old-path persistence after perturbation
-slow reallocation
-```
-
-must treat self-gated attention / learning dynamics as a live ordinary rival.
+This provides an ordinary mechanism for learned inattention, fixation, selective-history entrenchment, slow alternative reactivation, practical non-reachability within a time horizon, and hysteresis-like persistence after perturbation.
 
 Therefore:
 
@@ -184,11 +178,9 @@ unless a frozen bounded rival prospectively predicts a different outcome.
 
 ---
 
-## 5. P24-4 visibility / admissibility guard
+## 11. P24-4 visibility / admissibility guard
 
-A represented option can behave as if invisible when its current weighting is negligible.
-
-Therefore P24-4 must distinguish at least:
+A represented option can behave as if invisible when its current weighting is negligible. P24-4 must therefore distinguish at least:
 
 ```text
 A. basis / representation absence
@@ -197,20 +189,11 @@ C. represented and operative
 D. genuine change in candidate generation / admissibility architecture
 ```
 
-Evidence of reduced salience, gaze, report frequency or choice probability is not enough to distinguish B from D.
-
-Recommended measurement bundle:
-
-```text
-recognition / retrieval probe
-+ controlled online-influence perturbation
-+ candidate-generation / admissibility probe
-+ later historical-efficacy readout where relevant
-```
+Reduced salience, gaze, report frequency or choice probability is not enough to distinguish B from D.
 
 ---
 
-## 6. Reweighting is not generative reselectability
+## 12. Reweighting is not generative reselectability
 
 The source holds the representational basis fixed. It redistributes weighting over dimensions already given.
 
@@ -218,45 +201,30 @@ Keep the hard boundary:
 
 ```text
 reweighting existing dimensions
-!=
-basis extension
-!=
-candidate-generator revision
-!=
-comparison-rule revision
-!=
-boundary / composition revision
+!= basis extension
+!= candidate-generator revision
+!= comparison-rule revision
+!= boundary / composition revision
 ```
 
 Any stronger change in candidate-generation conditions routes to existing SRT B13 / HEF owners.
 
-This source should be used as the **ordinary lower-order rival** that must be subtracted before a stronger generative-reselectability interpretation is entertained.
-
 ---
 
-## 7. Recovery / restoration guard
+## 13. Recovery / restoration guard
 
-The source observes that a later state need not equal an earlier one even when a formerly dominant weighting is restored, because other coordinates have changed in the interim.
-
-Useful translation:
+Useful translation from the source:
 
 ```text
 functional restoration
 != exact historical restoration
 ```
 
-SRT disposition:
-
-- compatible with existing history-bearing / occurrence-trace / bearer-history work;
-- useful as external support and example;
-- **not** a new SRT history theorem;
-- **not** evidence of same-unit consequence bearing by itself.
-
-The source presupposes an agent; it does not solve bearer individuation or non-outsourcing.
+SRT disposition: compatible with existing history-bearing work, useful as external support, not a new history theorem, and not evidence of same-unit consequence bearing by itself.
 
 ---
 
-## 8. One-state / two-role warning
+## 14. One-state / two-role warning
 
 The source's strongest persistence result depends on identifying:
 
@@ -266,9 +234,7 @@ state that gates learning
 state that weights valuation
 ```
 
-The source itself marks this as an empirical exposure.
-
-SRT-side lesson:
+The source itself marks this as an empirical exposure. SRT should therefore preserve:
 
 ```text
 what controls writing / learning
@@ -276,21 +242,13 @@ what controls writing / learning
 what controls current evaluation / expression
 ```
 
-A bridge must justify role identity rather than infer it from correlated behavior.
-
-This guard is relevant to any SRT attempt to identify one latent variable simultaneously with:
-
-- candidate accessibility;
-- valuation weight;
-- learning rate;
-- L2 writeback;
-- future selectability.
+unless role identity is independently justified.
 
 ---
 
-## 9. History question after subtraction
+## 15. History question after subtraction
 
-The source's persistence bound is history-blind once current margin and plasticity are specified. This creates a useful but non-decisive SRT probe:
+The source's persistence bound is history-blind once current margin and plasticity are specified. A useful but non-decisive probe is:
 
 ```text
 same current apparent weighting / engagement
@@ -298,37 +256,17 @@ same current apparent weighting / engagement
 -> different future response?
 ```
 
-A positive result shows that the current measured state is insufficient. It does **not** establish SRT-specific history because a bounded R2 rival may include preregistered latent memory state.
-
-The correct D2 question remains:
-
-```text
-under a frozen bounded rival state/update family,
-does SRT require a prospective future difference
-that the rival excludes?
-```
+A positive result shows current measured state is insufficient; it does not establish SRT-specific history because a bounded R2 rival may include preregistered latent memory state.
 
 ---
 
-## 10. Empirical assay bundle worth preserving
+## 16. Empirical assay bundle
 
 ### Assay A — representation vs operation
 
-Independently measure:
-
-```text
-recognition / retrieval / articulation
-```
-
-and:
-
-```text
-online influence under controlled perturbation
-```
+Independently measure recognition / retrieval / articulation and online influence under controlled perturbation.
 
 ### Assay B — four-way calibration
-
-Where feasible, create matched cases:
 
 ```text
 A = absent / not encoded
@@ -339,20 +277,11 @@ D = encoded + operative + later historical writeback
 
 ### Assay C — floor challenge with attention rival
 
-For P24-3, preregister an attention/learning rival that can carry:
-
-```text
-latent gain state
-bounded update
-history-dependent weighting
-context modulation
-```
-
-and compare out-of-sample response to a controlled mismatch.
+For P24-3, preregister an attention/learning rival that can carry latent gain state, bounded update, history-dependent weighting and context modulation, then compare out-of-sample response to a controlled mismatch.
 
 ---
 
-## 11. Owner routing
+## 17. Owner routing and stop rule
 
 ```text
 bearer / same-unit consequence / non-outsourcing
@@ -364,31 +293,12 @@ continued vs generative reselectability
 historical-efficacy depth
 -> HEF owners
 
-P24-3 L2 hardening
+P24-3 / P24-4
 -> Core/SRT_Core_24_Discriminating_Predictions.md
    + post-RC-A D2 audit
 
-P24-4 visibility / admissibility
--> same P24 owner surfaces
-
-Selection definition / ontology
+Selection ontology
 -> canonical Selection owners only
 ```
 
-This hook must not become a parallel owner for any of the above.
-
----
-
-## 12. Stop rule
-
-Stop at bounded integration because:
-
-1. the source gives a useful representation/weight/engagement decomposition;
-2. it supplies empirical support for `encoded / retrievable / not consulted`;
-3. it supplies a strong ordinary rival for fixation, hysteresis and candidate invisibility;
-4. its fixed-basis scope sharply distinguishes reweighting from candidate-generation revision;
-5. its multiplicative plasticity law is not established strongly enough for SRT import;
-6. it presupposes the agent and does not solve bearer admission;
-7. it gives no Selection-level D2 result.
-
-**Disposition:** retain as `P3_bridge_hook / rival-hardening / no canonical promotion`.
+Stop at bounded integration because the source gives a useful decomposition and rival, but its multiplicative law is empirically exposed, it presupposes the agent rather than solving bearer admission, and it supplies no Selection-level D2 result.
