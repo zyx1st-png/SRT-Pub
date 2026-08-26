@@ -131,6 +131,35 @@ momentary closure
 -> stronger bearer candidate
 ```
 
+### P3 operationalization — counterfactual history-writeback ablation test
+
+The existing `future-selectability change` condition can be pressure-tested rather than merely restated. Ask:
+
+> **If the candidate same-unit historical writeback were absent while the relevant current state and external inputs were otherwise matched as closely as the domain permits, would a bearer-relevant future difference remain detectable?**
+
+Relevant future differences may include declared changes in:
+
+```text
+reachability
+transition bias
+boundary maintenance
+correction burden
+future-selectability proxy
+```
+
+If removing the alleged historical writeback produces no detectable difference in the candidate unit's later organization under the declared test, then the claim that this history belongs to the bearer rather than functioning as an external, idle or epiphenomenal record is weakened.
+
+Guardrails:
+
+```text
+counterfactual history efficacy != bearer by itself
+any material damage != bearer proof
+future-state difference != subjecthood
+future-state difference != phenomenality
+```
+
+Do **not** introduce a new canonical writeback variable or a universal `do()` equation from this test. It is an operationalization of an existing P3 admission burden, not a new definition.
+
 This remains a P3 discrimination architecture, not a necessary-and-sufficient theorem.
 
 ---
