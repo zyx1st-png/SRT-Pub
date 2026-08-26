@@ -131,11 +131,11 @@ momentary closure
 -> stronger bearer candidate
 ```
 
-### P3 operationalization — counterfactual history-writeback ablation test
+### P3 operationalization — prospective history-writeback ablation test
 
-The existing `future-selectability change` condition can be pressure-tested rather than merely restated. Ask:
+The existing `future-selectability change` condition can be pressure-tested rather than merely restated. The primary intervention should occur **before** the candidate writeback has been incorporated into the continuing unit:
 
-> **If the candidate same-unit historical writeback were absent while the relevant current state and external inputs were otherwise matched as closely as the domain permits, would a bearer-relevant future difference remain detectable?**
+> **If the candidate same-unit history-writeback channel were blocked at the point where the consequence would normally be registered, while the pre-writeback condition and relevant external inputs were matched as closely as the domain permits, would a bearer-relevant future difference become detectable?**
 
 Relevant future differences may include declared changes in:
 
@@ -147,7 +147,11 @@ correction burden
 future-selectability proxy
 ```
 
-If removing the alleged historical writeback produces no detectable difference in the candidate unit's later organization under the declared test, then the claim that this history belongs to the bearer rather than functioning as an external, idle or epiphenomenal record is weakened.
+A valid ablation must not condition on, or "match away", state variables that are themselves downstream effects of the writeback under test. Otherwise the intervention would block the very path whose historical efficacy it is meant to probe.
+
+A current-state-matched / history-divergent comparison can be used only as a secondary design when the matching is independently justified and explicitly coarse-grained. A null result under a fully matched causal state does **not** by itself weaken bearer history, because the history may act precisely by having been incorporated into that state.
+
+If a prospective writeback-channel ablation leaves no detectable difference in the candidate unit's later organization under a valid declared test, then the claim that this history is causally efficacious for that bearer—rather than merely external, idle or epiphenomenal—is weakened.
 
 Guardrails:
 
