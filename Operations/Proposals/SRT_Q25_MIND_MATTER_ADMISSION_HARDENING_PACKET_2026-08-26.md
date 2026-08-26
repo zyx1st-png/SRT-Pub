@@ -6,7 +6,7 @@ date: 2026-08-26
 layer: meta
 epistemic_layer: os
 claim_mode: governance
-claim_level: P3_governance
+claim_level: P3/P4_governance
 canonical: false
 dependency:
   - 01_Source_Intuition/BOOK/Drafts_26Q/Q25_选择广于意识.md
@@ -22,6 +22,8 @@ tags: [Governance, Q25, MindMatter, Objectification, Bearer, Individuation, NonJ
 # Q25 Mind–Matter Admission Hardening — Decision Packet (2026-08-26)
 
 > **Status / boundary**: non-canonical governance packet. It records owner subtraction and a minimal hardening route for Q25 plus two narrow P3 additions to existing individuation owners. It does **not** create a new bridge, symbol, primitive, ontology, mind–matter duality, or canonical bearer criterion. It must not be cited as a theorem that bearerhood entails mind or phenomenality.
+>
+> **Execution state (PR #857):** the Q25 exposition hardening, Q25 professional-note sync, PH-IND05 branching clarification, PH-IND02 writeback test, and owner-side duplicate terminology sweep have all been executed in this PR. This packet remains as the governance/decision record, not as an unexecuted future plan.
 
 ## 0. Executive result
 
@@ -41,11 +43,11 @@ high complexity -> consciousness
 matter / consciousness = two phases
 ```
 
-This wording is too strong because `complexity` is not an SRT admission criterion and because matter-as-object and consciousness are not mutually exclusive states. A conscious person remains physically objectifiable and re-identifiable; therefore the intended relation is **non-exclusive downstream qualification**, not phase replacement.
+This wording is too strong because `complexity` is not an SRT admission criterion and because matter-as-object and consciousness are not mutually exclusive states. A conscious person remains physically objectifiable and re-identifiable; therefore the intended relation is non-exclusive structural differentiation, not phase replacement.
 
 Recommended compression:
 
-> **Complexity is not the gate. Physical objectification does not require bearer admission; mind-side organization requires additional bearer / selector / subject-side structure, while bearerhood still does not by itself establish phenomenality. These qualifications can overlap in one continuing process.**
+> **Complexity is not the gate. Physical objectification does not require bearer admission; mind-side organization requires additional bearer / selector / subject-side structure, while bearerhood still does not by itself establish phenomenality. The resulting categories may overlap in one continuing process.**
 
 No canonical owner is modified by this packet.
 
@@ -115,9 +117,9 @@ lower complexity -> matter
 
 Counterexamples include highly complex non-subject systems and highly complex physical objects that remain matter-as-object even when they are also subjects.
 
-### Q25-H2 — replace phase opposition with overlapping structural admissions
+### Q25-H2 — replace phase opposition with overlapping structural conditions
 
-The ice/steam analogy should be removed or explicitly restricted because it suggests:
+The ice/steam analogy should be removed because it suggests:
 
 ```text
 one token occupies phase A or phase B
@@ -129,14 +131,14 @@ whereas the SRT-compatible relation permits:
 Matter_as_object(X) AND Consciousness_candidate(X)
 ```
 
-A conscious human does not cease to be physically objectifiable when subject/phenomenal qualifications emerge.
+A conscious human does not cease to be physically objectifiable when subject/phenomenal conditions are satisfied.
 
 Therefore prefer:
 
 ```text
 same generation history
--> different downstream qualification families
--> qualifications may overlap
+-> different structural thresholds / conditions
+-> resulting categories may overlap
 ```
 
 rather than:
@@ -178,58 +180,62 @@ A bearer/selector architecture can support functional mind-like organization wit
 
 ---
 
-## 3. Exact proposed Q25 §3 replacement
+## 3. Landed Q25 §3 wording
 
-Replace the two paragraphs beginning with the current low/high-complexity contrast and the ice/steam phase analogy with the following book-level prose after re-deriving against the active chapter:
+The book-level revision landed in PR #857 as:
 
-> 回到三层剃刀，你会看到一个完全不同的宇宙生成史。冰川切出河谷、雪花结出六角晶体，这些结构在执行“排开和写入”时，并不需要先被归入一个叫“物质”的原初箱子。它们先作为真实发生而被锚定，形成稳定、可重复遭遇和重识别的物理结构；“物质对象”是我们对这类稳定结构的下游回读。孩子走向沙坑、感受失望并调整行为，也不是另一个预先存在的“精神原料”突然介入：这里出现的是额外的结构负担——后果回到同一持续承载位置，写入它自己的历史，并改变它以后还能怎样行动。主体与意识要从这些更强的门槛继续往后谈，而不能从“系统更复杂”直接推出。
+> 回到三层剃刀，你会看到一个完全不同的宇宙生成史。冰川切出河谷、雪花结出六角晶体时，世界并不需要先替它们贴上“物质”标签：河谷会承重，晶体会折射，形态能在不同遭遇中被反复认出。孩子走向沙坑、感受失望并调整行为，也不是另一种“精神原料”突然介入。这里真正多出来的是另一组门槛——后果回到同一具身位，写进它自己的历史，并改变下一次还能怎样选择。物质与意识的区分，因此不能压成一条“复杂度越高就越接近意识”的刻度。
 >
-> 所以，“物质”和“意识”不是两种预先存在的原料，也不是同一尺度上彼此替换的两个状态。它们是同一选择生成史上形成的不同下游资格，而且这些资格可以重叠：一个有意识的人并不会因为获得了承重、主体和感受性，就不再是一个可测量、可重复识别的物理对象。客体侧的稳定化可以远早于主体侧出现；但“更早出现”不等于“作为原料制造后者”。二分不是起点，而是在不同结构门槛上逐渐变得可读。
+> 所以，“物质”和“意识”不是两种预先存在的原料，也不是冰和蒸汽那样彼此替换的两个状态。更准确地说，它们是同一生成过程在不同门槛上形成的范畴，而且可以重叠：一个有意识的人并不会因为获得了承重、主体和感受性，就不再是一个可测量、可重复识别的物理对象。客体侧的稳定化可以远早于主体侧出现；但“更早出现”不等于“作为原料制造后者”。二分不是起点，而是生成过程中逐渐出现的区分。
 
-Retain the following Q25 commitments immediately after the replacement:
+Retained Q25 commitments immediately after the replacement:
 
 - pre-object field is a prior condition, not common stuff;
 - `simultaneous` means logical co-origin, not temporal simultaneity;
-- earlier object-side stabilization does not make matter the primitive explanatory ground of subjecthood.
+- earlier object-side stabilization does not make matter the primitive explanatory ground of subjecthood;
+- later subject-side conditions do not cancel physical object conditions.
 
 ---
 
 ## 4. Q25 professional-note hardening
 
-Where the chapter note currently says that matter/consciousness are read back at different `complexity thresholds` or describes the route as `generation path + phase transition threshold`, prefer:
+The chapter note now avoids treating matter/consciousness as products of different `complexity thresholds` or as a `phase transition` pair. It uses existing book vocabulary—`门槛 / 条件 / 范畴`—and keeps the explicit non-exclusivity guard:
 
-```text
-different structural admission burdens / thresholds
-```
+> **一个有意识的人仍然可以同时作为物理对象被测量和重识别。**
 
-and add the explicit non-exclusivity guard:
+The Q26-facing failure conditions are split into independently assessable burdens:
 
-> **这些门槛不是把一个对象从“物质相”切换成“意识相”。主体与意识资格可以在一个仍然满足物理对象化条件的持续过程中出现。**
-
-The falsifiability paragraph should not frame failure solely as failure of a `complexity differentiation` hypothesis. A safer target is:
-
-> if the proposed structural admission distinctions cannot be operationally separated, or if consciousness can be fully predicted without the additional bearer/subject-side constraints that SRT claims are independent, then the layered differentiation requires revision.
+1. consciousness-layer independence;
+2. selection-structure threshold validity;
+3. separability of physical-object re-identification from embodiment/subject/consciousness conditions;
+4. the stronger generative claim that no extra primordial property must be posited outside the generation chain.
 
 ---
 
-## 5. P3 increment A — bearer continuation is not an equivalence relation
+## 5. P3 increment A — branching defeats the equivalence-class shortcut
 
-**Target owner**: `Philosophy/hooks/PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Integration_Hook.md` (or its active patch owner after owner check).
+**Target owner**: `Philosophy/hooks/PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Integration_Hook.md`.
 
 ### Increment
 
-Current SRT already records that shared history does not settle numerical identity under copy/fission/branching. Add the narrower formal reason:
+Directionality already blocks a naive symmetry assumption, but branching is the stronger defeater. If:
 
-> **Bearer continuation should not be assumed to form an equivalence relation. It is temporally directed, generally irreversible, and may branch. Therefore a quotient/equivalence-class construction that is natural for some object re-identification problems cannot by itself solve bearer numerical identity.**
+```text
+B0 -> B1
+B0 -> B2
+```
+
+and `B1` / `B2` thereafter carry independently closing consequences, then the ordinary symmetric-transitive closure of continuation would pull both successors into one equivalence class through `B0`. That erases the post-fission distinction the bearer analysis is supposed to preserve.
 
 Compact P3 form:
 
 ```text
-continuation(B_t, B_t+1)
-!= symmetric equivalence
+shared predecessor
++ symmetric/transitive closure
+!-> one post-branch bearer
 
-shared prior history
-!= one post-branch bearer
+continuation(B_t, B_t+1)
+!= bearer-identity equivalence by default
 ```
 
 ### Boundary
@@ -238,15 +244,19 @@ This does not solve fission, define numerical identity, forbid branching, or int
 
 ---
 
-## 6. P3 increment B — counterfactual history-writeback ablation test
+## 6. P3 increment B — prospective history-writeback ablation test
 
 **Target owner**: `Philosophy/patches/SRT_Philosophy_PH_IND02_Selective_Closure_Perspective_Bearer_Formation_v0_1.md` under the existing `future-selectability change` admission question.
 
 ### Increment
 
-Turn the existing future-efficacy requirement into a narrow discrimination test:
+The primary intervention is prospective: block the candidate same-unit history-writeback channel **before** the consequence has been incorporated into the candidate bearer's continuing state, while matching the pre-writeback condition and relevant external inputs as closely as the domain permits. Then ask whether later reachability, transition bias, boundary maintenance, correction burden, or another declared future-selectability proxy diverges.
 
-> **Counterfactual history-writeback ablation test:** if the candidate same-unit historical writeback were absent while the relevant current state and external inputs were otherwise matched as closely as the domain permits, would a bearer-relevant future difference remain detectable? If removing the alleged writeback makes no difference to later reachability, transition bias, boundary maintenance, correction burden, or other declared future-selectability proxy, then the claim that this history belongs to the bearer rather than merely being an external/epiphenomenal record is weakened.
+Critical mediation guard:
+
+> **Do not condition on or match away state variables that are themselves downstream effects of writeback.** Otherwise the test removes the very path whose historical efficacy it is meant to measure.
+
+A current-state-matched / history-divergent design is secondary only. It is informative when the matching is independently justified and explicitly coarse-grained; a null result under a fully matched causal state does not by itself weaken bearer history, because history may act precisely by being incorporated into that state.
 
 ### Guardrails
 
@@ -288,7 +298,7 @@ Reason:
 
 ## 8. Acceptance tests
 
-A future owner integration should pass all of the following:
+The landed integration should pass all of the following:
 
 ```text
 T1  A conscious human can remain matter-as-object; no phase replacement is implied.
@@ -296,8 +306,8 @@ T2  A highly complex physical/non-subject system does not become conscious by co
 T3  A stable physical object can be admitted without bearerhood.
 T4  An institution may be a bearer candidate without becoming an ordinary matter-as-object category token.
 T5  Object !-> Bearer !-> Selector !-> Subject !-> Experiencer remains intact.
-T6  Bearer continuation is not silently modeled as a symmetric equivalence relation.
-T7  Counterfactual writeback ablation tests historical efficacy only; it does not define bearerhood by itself.
+T6  Branching continuation is not collapsed by a symmetric/transitive equivalence-class shortcut.
+T7  Prospective writeback ablation tests historical efficacy without conditioning away writeback-mediated state change; it does not define bearerhood by itself.
 T8  No new canonical symbol or bridge is required.
 T9  EX-A occurrence / anchoring / Stable ISP distinctions remain untouched.
 T10 Q25 still rejects materialism, idealism, panpsychism, and neutral-substrate monism without claiming that matter and consciousness are mutually exclusive phases.
@@ -305,25 +315,32 @@ T10 Q25 still rejects materialism, idealism, panpsychism, and neutral-substrate 
 
 ---
 
-## 9. Recommended execution order
+## 9. Execution record — PR #857
 
-After this packet is reviewed:
+Completed in this PR:
 
 ```text
 1. Q25 §3
-   -> replace complexity/phase wording with non-exclusive structural admissions
-   -> remove or heavily qualify ice/steam analogy
+   -> removed low/high-complexity criterion
+   -> removed ice/steam phase analogy
+   -> retained overlap guard with book-native vocabulary
 
 2. Q25 professional note
-   -> replace complexity-differentiation test with structural-admission test
+   -> removed complexity-differentiation framing
+   -> split Q26-facing failure burdens
+   -> replaced bare `bearer` in book prose with existing `具身位`
 
 3. PH-IND05
-   -> add directed / irreversible / branching continuation note
+   -> made branching the decisive counterexample to quotient/equivalence shortcut
 
 4. PH-IND02
-   -> add counterfactual history-writeback ablation test below future-selectability condition
+   -> changed state-conditioned ablation into prospective writeback-channel ablation
+   -> added mediation guard against matching away writeback effects
 
-5. Re-run owner-side search for duplicate terminology and governance checks
+5. Owner-side duplicate search / hygiene
+   -> synchronized `附录_跨域难题_重述而非解决.md`
+   -> removed newly coined book-level `下游资格 / 结构资格` vocabulary
+   -> restored trailing newlines on touched P3 files and this packet
 ```
 
-No new bridge should be created from this workline.
+No new bridge was created from this workline.
