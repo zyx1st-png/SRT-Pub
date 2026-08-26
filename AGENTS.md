@@ -71,7 +71,7 @@ When the user sends the following trigger words, use the current `SRT/` structur
 | `陪读 <文本/URL/文件>` | Source-grounded reading | 先按来源本身的术语、论证与证据强度陪读，不自动写入仓库。若后续要求“写入/回写/融合”，转入 Pipeline 1，并按 `GOV-SYN01` 分开记录：A) source-derived 内容；B) SRT ontological synthesis；C) 只有在实际声称时才建立 discriminating/empirical increment。外部结果可作为 SRT 本体论构造材料，但不得被改写成“来源证明 SRT”。 |
 | `材料裁决 <文本/URL/文件>` | 辅助工作流 | 启动第二轮结构裁决：审查第一轮候选接口，并按 `GOV-SYN01` 先判 O-track / D-track / O+D / source-only，再压成最小可承重命题，给出 A/B/C 建议与主/备/禁止落点；结果必须回注 Pipeline 1。 |
 | `二轮裁决 <文本/URL/文件>` | 辅助工作流 | 同 `材料裁决` |
-| `推演回流 <对话/片段>` | 辅助工作流 | 外部模型（ChatGPT / Codex / 其他）上跑的 SRT 理论推演长对话回流。按 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md` 的**直觉挖掘**用途处理：§8 回写模式（默认 `retro_writeback` 降权）→ §9 收尾管线；每条候选增量按 `Operations/_SRT_MATERIAL_PIPELINE.md §3.3` 出四分裁决（`already owned` / `partly owned` / `reverse constraint` / `unresolved overlap`），只保留 `Residual after subtraction` 并写明 `Forbidden parallel construct`。**不走 Pipeline 1**：没有外部作者与 source claim，不建 SourceCard。 |
+| `推演回流 <对话/片段>` | 辅助工作流 | 外部模型（ChatGPT / Codex / 其他）上跑的 SRT 理论推演长对话回流。按 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md` 的**直觉挖掘**用途处理：repo-blind 对话默认走 §8 `retro_writeback` 降权 → §9 收尾；每条候选增量按 `Operations/_SRT_MATERIAL_PIPELINE.md §3.3` 出四分裁决（`already owned` / `partly owned` / `reverse constraint` / `unresolved overlap`），只保留 subtraction 后可承重内容。**对话本身不走 Pipeline 1、不建 SourceCard；但其中实际引用的论文、实验或外部作者 claim 若承担证据角色，必须拆出并单独进入 Pipeline 1。** repo-aware live / checkpoint 的轮间保护规则以 ChoiceMap §6.4a 为准。 |
 | `信号采集` | Pipeline 3 | 立即执行网络信号采集 |
 | `内审` | Pipeline 6 | 立即执行每日内部审查 |
 | `选题` | Pipeline 5 | 生成当日大众路线 + 精英路线选题 |
