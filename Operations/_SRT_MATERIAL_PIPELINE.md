@@ -145,6 +145,8 @@ Layer B 可以很强而 Layer C 为空。
 
 **Source-side 去重不等于 repository-side 新颖性。** 在把任何候选“新增接口 / 新分解 / 新阶梯 / 新 construct / 新 bridge claim”写进仓库前，必须对每条候选增量做一次 **bounded owner-side novelty probe**。目标不是无界递归检索，而是确认仓库现有 owner 是否已经能回答同一个角色问题。
 
+**适用范围与触发词无关（2026-08-26 澄清）**：本 probe 绑定的是**候选增量**，不是 `材料` 触发词。任何来源产生的"新增接口 / 新分解 / 新阶梯 / 新 construct / 新 bridge claim"都必须跑，包括外部模型长对话的产出、ChoiceMap 直觉挖掘 trace、以及作者自己的推演。ChoiceMap trace 的两个调用点见 `_SRT_CHOICEMAP_TRACE_WORKFLOW.md §6.4a`（轮间闸）与 `§9.3`（收尾管线）。
+
 最低流程：
 
 1. **先命名最可能的 owner**：canonical owner、现有 bridge、hook、OPEN_TENSIONS、glossary / claim-status 中至少指出 1–3 个最可能落点；

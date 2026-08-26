@@ -2,15 +2,16 @@
 id: SRT-CHOICEMAP-TRACE-WORKFLOW
 type: workflow
 tags: [ChoiceMap, ChoiceTrace, IntuitionMining, RetroWriteback, Breakout, Convergence, RootReturn, ProblemTree, SpiralWorkflow, Operations]
-status: active_v4
+status: active
+version: v5
 layer: meta
 epistemic_layer: os
 claim_mode: workflow
 canonical: false
 ai_do_not_use_for_definition: true
 created: 2026-07-09
-updated: 2026-07-11
-provenance: 2026-07-09 第一直觉 choice-trace 回写实践复盘。v2（2026-07-09）加入一致性压测、暂停恢复和委托隔离；v3（2026-07-10）加入忠实度复核，防止下游压缩丢失分叉、抢先解决张力或误报完成状态。v4（2026-07-11）根据 concern ecology governance trace 的复盘，修复工作流沿单一分支持续下钻、跨域而不回根、把问题树压成选择链的问题：新增根问题台账、分支树、根问题回返、跨域桥接门、垂直预算、旧 trace 恢复覆盖规则，并把总体运行方式改为螺旋式问题树。
+updated: 2026-08-26
+provenance: 2026-07-09 第一直觉 choice-trace 回写实践复盘。v2（2026-07-09）加入一致性压测、暂停恢复和委托隔离；v3（2026-07-10）加入忠实度复核，防止下游压缩丢失分叉、抢先解决张力或误报完成状态。v4（2026-07-11）根据 concern ecology governance trace 的复盘，修复工作流沿单一分支持续下钻、跨域而不回根、把问题树压成选择链的问题：新增根问题台账、分支树、根问题回返、跨域桥接门、垂直预算、旧 trace 恢复覆盖规则，并把总体运行方式改为螺旋式问题树。v5（2026-08-26）根据一次外部模型（GPT）理论推演长对话的复盘，修复"方向不漂移但整轮落在已覆盖地面上"的失效模式：新增 §6.4a 轮间 owner 闸（引用材料流水线 §3.3，不复制第二套）、把 §9.3 的三分类接到 §3.3 四分裁决、并把外部模型理论长对话显式归入 §1.1 直觉挖掘用途。
 dependency: [SRT-DIRECTION3-CHOICEMAP-PROTOTYPE-SEED, SRT-CHOICE-TRACE-LOG, SRT-ARTICLE-WORKFLOW]
 ---
 
@@ -56,6 +57,14 @@ v4 因此增加**反垂直化协议**：任何长对话都必须维护根问题�
 
 1. 下一问题由作者上一轮选择触发；
 2. 达到回根条件后，assistant 只能呈现方向选项，不能默认继续当前分支。
+
+> **外部模型上的理论长对话（2026-08-26 补）**：在 ChatGPT / Codex / 其他外部模型上跑的 SRT 理论推演长对话，属于本表的**直觉挖掘**用途。**对话本身不是 Pipeline 1 的 source**，也不是「陪读」；但若对话实际引用论文、实验或外部作者主张并让它承担证据角色，该外部 claim 必须拆出并单独进入 Pipeline 1，不能借“推演回流”旁路 source-fidelity discipline。
+>
+> 这类长对话分两种运行条件：
+> 1. **repo-aware live**：当前模型或配对的 repo-aware leg 能读取仓库。可用 `trace_mode: live`，并在候选增量条件化下一轮前强制执行 §6.4a。
+> 2. **repo-blind external**：当前模型读不到仓库。此时**不得声称 §6.4a 已运行**；默认按 §1.2 `retro_writeback` 最低信任等级处理，§9 只能提供事后 owner 审计，不能追回已经花掉的发散预算。若要获得真正的轮间保护，必须在候选增量出现后的 checkpoint 将其交给 repo-aware leg，按 `_SRT_MATERIAL_PIPELINE.md §3.3` 得到 verdict 后再继续下一轮。
+>
+> 未回写者视为未留痕，其结论不得作为下游理论依据。
 
 ### 1.2 两种记录方式
 
@@ -234,6 +243,23 @@ breakout 后必须先做防误读追问，再决定继续、回根或分叉。�
 
 任何活动分支不得连续推进超过 **6 个实质选择轮**而不运行一次根问题回返。张力轮可以与回返轮同一轮执行，但不能替代回返。
 
+### 6.4a 轮间 owner 闸（2026-08-26 新增）
+
+垂直预算防的是**方向漂移**，防不了**已覆盖**：一条分支可以既不跨域、也不漂移，同时整轮落在仓库早已形式化的地面上。§9.3 的 canonical 碰撞检查位于收尾管线，跑得太晚——等它跑完，发散预算已经花光。
+
+因此，在 **repo-aware live** 对话中，或 repo-blind 对话把候选增量送入 **repo-aware checkpoint** 时：**任何候选增量在被用来条件化下一轮之前，必须先跑一次 owner-side novelty probe。** 规格与输出模板直接引用 `_SRT_MATERIAL_PIPELINE.md §3.3`，本文件不复制第二套。
+
+- **有界，不是无界深搜**：先命名 1–3 个最可能 owner，再用候选术语 + 至少一个 role-equivalent 查询检索；
+- 输出四分裁决之一：`already owned` / `partly owned` / `reverse constraint` / `unresolved overlap`；
+- `already owned`：**不得把该内容当成 novelty-bearing increment，也不得把“重新发现它”本身当作继续深钻同一已覆盖分支的理由**。但它可以作为显式引用的既有前提，前提是下一轮问题明确指向 owner 尚未回答的 residual / unresolved question；
+- `partly owned`：只保留 `Residual after subtraction`，并写明 `Forbidden parallel construct`；下一轮只能围绕 residual 展开；
+- `reverse constraint`：优先转成对 owner 的前件、范围或桥接压力；下一轮应问“哪个前提/边界需要修订或检验”，而不是强造一套平行正向 construct；
+- `unresolved overlap`：不得新造 taxonomy / scalar / operator / closure family；下一轮只能转成 discriminating question，或路由 `OPEN_TENSIONS` / pending hook。
+
+**repo-blind external 的硬边界**：如果当前腿读不到仓库，又没有调用 repo-aware checkpoint，就只能继续原始推演并在 §9 做事后审计；不得把这种事后审计写成“轮间闸已执行”。
+
+该闸不改变任何 claim level，也不裁决理论对错。它回答的是：**这一轮是否在重新发现仓库已有的东西；若存在 overlap，下一轮怎样只沿 residual、reverse pressure 或 discriminating question 推进。**
+
 ### 6.5 回返轮的固定呈现
 
 assistant 先展示：
@@ -342,6 +368,8 @@ frontmatter 写 `trace_mode: retro_writeback`、`late_entry: true`，provenance 
 - 一致性全量对表；
 - 根问题回返审计与垂直漂移检查。
 
+对于 repo-blind external，还必须明确哪些 owner verdict 只是**事后 subtraction**；不得倒写成“当轮已通过 §6.4a”。
+
 ### R8 · 完成 §9 收尾管线
 
 未完成收尾管线的回写件是半成品，不得作为“已留痕”或下游理论依据。
@@ -390,6 +418,8 @@ frontmatter 写 `trace_mode: retro_writeback`、`late_entry: true`，provenance 
 
 pending 提案可记录观察，但不能进入新候选路由。
 
+三分类不够用时——尤其"大部分已覆盖、只剩一小块残余"这种最常见的情况——改用 `_SRT_MATERIAL_PIPELINE.md §3.3` 的四分裁决，并逐条填写 `Residual after subtraction` 与 `Forbidden parallel construct`。凡已在 §6.4a 轮间闸跑过 probe 的候选，此处直接引用该轮结果，不重跑。
+
 ### 9.4 术语撞车检查
 
 新词或再定义词对照 `_SRT_SYMBOL_TABLE.md`、`SRT_Glossary.md` 和书稿术语指南。撞车时改名或显式分义。
@@ -417,6 +447,7 @@ pending 提案可记录观察，但不能进入新候选路由。
 - [ ] 根问题回返审计已完成；
 - [ ] 忠实度复核已完成；
 - [ ] canonical / 术语碰撞检查已完成；
+- [ ] 每条候选增量已出 owner-side novelty 四分裁决（§6.4a 轮间闸或 §9.3 收尾），`partly owned` 者已写明 residual 与 forbidden parallel construct；
 - [ ] 下游路由只按实际完成状态表述；
 - [ ] `_SRT_CHOICE_TRACE_LOG.md` 已登记；
 - [ ] 所属目录 INDEX 已登记；
@@ -441,7 +472,7 @@ pending 提案可记录观察，但不能进入新候选路由。
 
 ---
 
-## 11. 粘贴即用提示词（直觉挖掘 · v4）
+## 11. 粘贴即用提示词（直觉挖掘 · v5）
 
 ```text
 你是“ChoiceMap 直觉挖掘”引导者。目标是帮我挖掘对 {{挖掘主题}} 的第一直觉。
@@ -467,6 +498,17 @@ pending 提案可记录观察，但不能进入新候选路由。
 每轮先与承诺台账对表。发现矛盾必须在下一问题前呈现两面，让我选择：
 A 修订旧判断；B 收回新判断；C 分层化解；D 保留张力。
 每约 5 轮和每次 breakout 后做张力轮。
+
+【轮间 owner 闸】
+若你或配对的 repo-aware leg 能读取 SRT 仓库，任何候选增量在条件化下一轮前，
+先按 `_SRT_MATERIAL_PIPELINE.md §3.3` 跑 bounded owner-side novelty probe：
+先命名 1–3 个 likely owner，再做候选术语 + role-equivalent 查询，输出
+already owned / partly owned / reverse constraint / unresolved overlap。
+already owned 不得冒充新发现，但可作为显式既有前提；下一轮必须指向 residual / unresolved。
+partly owned 只沿 residual 推进；reverse constraint 转 owner-pressure；
+unresolved overlap 转 discriminating question 或 pending，不新造平行 construct。
+如果当前腿读不到仓库，不得假装已跑 owner 闸；要获得轮间保护，就把候选增量送到
+repo-aware checkpoint，拿到 verdict 后再继续。否则只能在回写时做事后 subtraction。
 
 【根问题回返——与张力轮同等重要】
 ChoiceMap 不是无限下钻的链，而是螺旋式问题树。出现以下任一情况立即回根：

@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-18
+id: SRT-CONTEXT-BUNDLE-SPINE-2026-08-26
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-18
-source_commit: 8fa53be1
-source_branch: agent/frontiers-attractor-reachability-bridge
+generated: 2026-08-26
+source_commit: 91f99e3c
+source_branch: claude/workflow-theory-divergence-gate
 source_dirty: false
-inputs_digest: baa70243c64d7a49
+inputs_digest: 35eeceafd7b8ebe1
 ---
 
 # SRT Canonical 骨架上下文包
@@ -26,9 +26,9 @@ inputs_digest: baa70243c64d7a49
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-18 |
-| 来源 commit | `8fa53be1` |
-| 来源分支 | `agent/frontiers-attractor-reachability-bridge` |
+| 生成日期 | 2026-08-26 |
+| 来源 commit | `91f99e3c` |
+| 来源分支 | `claude/workflow-theory-divergence-gate` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 15 |
 
@@ -57,7 +57,7 @@ inputs_digest: baa70243c64d7a49
 | 12 | `_SRT_T_DIR_CANONICAL.md` | 2026-08-18 |
 | 13 | `_SRT_CROSS_DOMAIN_MATRIX.md` | 2026-08-12 |
 | 14 | `Core/SRT_Core_22_Equations.md` | 2026-08-12 |
-| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-08-12 |
+| 15 | `_SRT_SYMBOL_TABLE.md` | 2026-08-26 |
 
 ## §0.2 状态护栏
 
@@ -6036,7 +6036,7 @@ SRT 主方程的运作机制如下：
 | epistemic_layer | os |
 | layer | meta |
 | canonical(字段) | - |
-| last_commit | 2026-08-12 |
+| last_commit | 2026-08-26 |
 
 **权威判读**：**定义源**——可用于确定 SRT 术语含义。
 
@@ -6057,6 +6057,7 @@ SRT 主方程的运作机制如下：
 | **L₁** | `L_1` | Manifest Domain | Selected manifest actuality: a determinate event or reality slice produced by primitive actualisation. | Thin: manifest actuality / reality slice (domain-dependent realization) | Core, universal. **EX-A**: event actuality does not by itself imply anchoring persistence, structural stability, or stable-ISP identity. **Domain projection**: the `4D spacetime + qualia` reading is a physics (spacetime) + phenomenology (qualia) bridge realization, **not** the universal atomic definition — see `Core/SRT_Core_12a_Ontology_L0L1.md` (spacetime emergence), `Philosophy/SRT_HardProblem_Epistemology.md` (qualia); thin structural home `Core_Law/SRT_L0_Metaphysics.md`. |
 | **L₂** | `L_2` | Convergence Domain | Stable consensus constraints from repeated/overlapping selections. | Topological manifold | Core, universal |
 | **Ĝ** | `\hat{G}` | Ghost Operator | Formal role-carrier for the primitive selection / actualisation mapping $L_0 \to L_1$. | Operator | AM-A: not a prior entity or the cause of actualisation; domain implementations are plural and cannot redefine the P0 kernel. Never use plain `G` for this. |
+| **Ĝ†** | `\hat{G}^\dagger` | Reverse-Writing Operator (Adjoint) | Formal role-carrier for the **gated** history-writeback mapping $L_1 \to L_2$: $\Delta L_2 = \hat{G}^\dagger_\theta[L_1]$, firing **iff** $\Psi_f(\hat{G}_\theta[L_0]) < \Psi_{thresh}$. | Operator (adjoint of $\hat{G}_\theta$ under the non-commutative reading) | Core; canonical source `Core/SRT_Core_12b_Ontology_L2.md` **Ax-L2-06b**; writeback-magnitude law `Core/SRT_Core_13a_Operator_Basics.md` **Ax-Op-03b**; consumed by `Def-PathTrace` / `T-L2-Scaffold` (`ρ(p,t)` row). **The threshold gate is part of the axiom, not an optional qualifier** — see also the `SRT_Core_12b` Precision Note (2026-04-21) on not collapsing trace / minimal closure / L₂-grade closure / scaffold. Mirrors the `Ĝ` AM-A caution: formal role-carrier, not a prior entity and not the cause of the writeback. `Ĝ†_{encoding} = Ĥ ∘ Ĝ†_θ` (Ax-L2-06c) is a neuro domain realization, not a redefinition. Never use plain `G†` or an ad-hoc writeback symbol for this. |
 | **θ** | `\theta` | Embodiment Parameters | Finite configuration parameters of $\hat{G}$ (biology/model state/context). | Tensor / parameter set | Core, universal |
 | **d** | `d` | d-value (Depth of Care) | Governance-canonical default is a scalar summary of stake-coupled concern / irreversible-risk sensitivity; geometric, Fisher, vector, and gate readings require explicit marking. | Scalar summary by default; proxies are projections | Core, universal; canonical source `_SRT_D_VALUE_CANONICAL.md`; `Def-d-canonical` is the core-facing anchor, while scalar default / vector / gate rules are governance-canonical usage controls; do not mix scalar `d`, `D_eff`, Fisher proxy, `d-vector`, and `d-gate` in one claim without notation |
 | **Ψf** | `\Psi_f` | Ontological Friction | Ontological impedance / information-theoretic payability burden required to compress open possibility into a maintainable reality slice. | Cross-scale readout; units vary by domain | Core, universal; canonical source `_SRT_PSI_F_CANONICAL.md`; v1 governance-canonical main reading is information-theoretic/payability cost; Fisher geometry may induce local second-order proxy `δΨ_f^{geom}=1/2 dθ^T g_F dθ+O(||dθ||^3)` and path functionals, but `Ψ_f ≡ g_F` is never a literal scalar-tensor identity; metabolic readings are budget/load projections only under stated conditions; domain projections do not become theory-canonical by reuse |
