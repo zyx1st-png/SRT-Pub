@@ -187,19 +187,29 @@ Audit:
 Can B1 and B2 each inherit P's history while no longer being the same bearer as each other?
 ```
 
-### P3 hardening — continuation is not assumed to be an equivalence relation
+### P3 hardening — branching defeats the equivalence-class shortcut
 
-The branching problem also supplies a formal caution that is not captured by `shared memory != same bearer` alone. Bearer continuation is temporally directed, generally irreversible, and may branch. It therefore should not be assumed to have the symmetry and transitivity properties needed for an ordinary equivalence-class / quotient construction to solve numerical identity.
+Directionality already tells us that bearer continuation should not simply be treated as a symmetric relation. The stronger problem is **branching**. Suppose:
+
+```text
+B0 -> B1
+B0 -> B2
+```
+
+with `B1` and `B2` thereafter carrying independently closing consequences. If one takes the ordinary symmetric-transitive closure of continuation in order to build an equivalence class, both successors are pulled into the same class through their shared predecessor. That construction therefore collapses precisely the post-fission distinction the bearer analysis is trying to preserve.
 
 Compact guard:
 
 ```text
-continuation(B_t, B_t+1)
-!= symmetric equivalence
+shared predecessor
++ symmetric/transitive closure
+!-> one post-branch bearer
 
-shared pre-branch history
-!= one post-branch bearer
+continuation(B_t, B_t+1)
+!= bearer-identity equivalence by default
 ```
+
+Irreversibility and temporal direction remain supporting reasons, but branching is the decisive counterexample to treating continuation itself as a ready-made quotient solution.
 
 This does **not** define bearer numerical identity or prohibit a domain from using an equivalence relation for some narrower re-identification task. It only blocks an unargued shortcut from object-style equivalence classes to bearer identity.
 
