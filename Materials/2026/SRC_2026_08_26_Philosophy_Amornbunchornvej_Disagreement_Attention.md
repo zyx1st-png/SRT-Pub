@@ -1,375 +1,294 @@
 ---
 id: SRC-2026-08-26-PHIL-AMORNBUNCHORNVEJ-DISAGREEMENT-ATTENTION
-type: source_material
+source_id: SRC-2026-08-26-PHIL-AMORNBUNCHORNVEJ-DISAGREEMENT-ATTENTION
+type: source_card
 status: active
-source_type: paper
-source_scope: uploaded_pdf
-source_verification: conversation_pdf_read_full
-claim_level: source
+layer: materials
+epistemic_layer: evidence
+claim_mode: evidence
+title: "Disagreement without Representational Deficit: Attention Dynamics over a Shared Evaluative Basis"
+source_type: user_supplied_full_text_pdf
+domain: philosophy_cognitive_science_attention_disagreement
+authors: [Chainarong Amornbunchornvej]
+publication: bibliographic_status_not_independently_verified_in_this_pass
+date_published: 2026
+date_added: 2026-08-26
+url: null
+doi: null
+evidence_level: full_text_primary_argument_with_secondary_use_of_cited_empirical_literature
+reliability_level: high_for_source_argument_medium_for_cited_empirical_claims_pending_primary_verification
+srt_relevance: very_high
+integration_priority: high
+verdict: A
 canonical: false
-date: 2026-08-26
+related_srt_claims:
+  - P24-3
+  - P24-4
+  - P2/P3-B13
+  - HEF-3/HEF-4
+  - PH-IND06
+  - SRT-OPEN-TENSIONS
+  - Selection-D2
+  - CandidateField
 tags: [Attention, Disagreement, Representation, Engagement, Plasticity, Lock, LearnedInattention, RivalModel, P24-3, P24-4]
 ---
 
-# Amornbunchornvej 2026 — *Disagreement without Representational Deficit: Attention Dynamics over a Shared Evaluative Basis*
+# SourceCard — Amornbunchornvej, *Disagreement without Representational Deficit*
 
-## 0. Source and disposition
+## 1. One-line summary
 
-Source used for this card: user-provided PDF in the 2026-08-26 reading session.
+Amornbunchornvej argues that persistent evaluative disagreement and fixation need not imply representational deficit: agents can share the same evaluative basis while differing in relative attention profile, total engagement, and slowly changing attentional gain states, so durability of disagreement alone underdetermines the underlying structure.
 
-**SRT disposition:** high-value adjacent model / ordinary rival / empirical bridge; **not** a Selection-core source and **not** evidence that attention, valuation, engagement, bounded plasticity, or disagreement persistence are SRT-specific.
+## 2. Bibliographic / source anchor
 
-Recommended use:
+- Author: Chainarong Amornbunchornvej, National Electronics and Computer Technology Center (NECTEC), Thailand.
+- Title: *Disagreement without Representational Deficit: Attention Dynamics over a Shared Evaluative Basis*.
+- Source used in this intake: user-supplied 23-page full-text PDF.
+- Full close-read completed 2026-08-26.
+- Publication venue / DOI for this paper were **not independently verified in this pass**; do not infer peer-review status from the PDF alone.
 
-```text
-material card
-+ bounded integration hook
-+ P24-3 / P24-4 rival hardening
-```
+## 3. Core claims of the source
 
-Do not promote directly to canonical theory.
+### 3.1 Persistence does not diagnose representational mismatch
 
----
+The paper targets the inference that a disagreement surviving years of mutually intelligible exchange must reflect incompatible representational resources. It instead decomposes cases under a shared evaluative basis into profile difference, engagement difference, and bounded relative plasticity.
 
-## 1. Paper's central target
+**Anchors:** Abstract, PDF p.1; §1, PDF pp.1–3, especially p.2.
 
-The paper breaks the inference:
-
-```text
-persistent evaluative disagreement or fixation
--> representational deficit / framework mismatch
-```
-
-It argues that persistence is compatible with fully shared representation. Given a shared evaluative basis, three separable structures can differ:
+Compact source claim:
 
 ```text
-representation / basis membership
-!= relative attention profile
-!= total engagement
+representational loss
+!= profile disagreement
+!= engagement disagreement
 ```
 
-A disagreement may therefore persist because the same represented considerations receive different relative weights, because the whole domain matters to different degrees, and/or because ordinary reweighting is bounded and slow.
+### 3.2 Shared basis and persistent positive gain state
 
-The paper's central diagnostic conclusion is underdetermination:
-
-```text
-persistence alone does not discriminate
-representational mismatch
-from
-shared representation + different weighting / engagement + bounded plasticity
-```
-
----
-
-## 2. Minimal model
-
-### 2.1 Shared evaluative basis
-
-The representable dimensions are held fixed:
+Representable evaluative dimensions are modeled as a fixed basis:
 
 ```text
 B = {b1, ..., bn}
 ```
 
-The model does not address acquisition of genuinely new evaluative dimensions (basis extension).
-
-### 2.2 Persistent gain state
-
-Each dimension has positive gain:
+with a persistent log-gain state `lambda_t` and strictly positive gains:
 
 ```text
-lambda_t in R^n
 theta_t,i = exp(lambda_t,i) > 0
 ```
 
-Hence a represented dimension may become arbitrarily weak without being mathematically annihilated.
+A dimension can therefore become arbitrarily weak in current evaluation without being mathematically annihilated from the basis.
 
-Critical distinction:
+**Anchors:** §2.1, PDF pp.3–4.
+
+Source distinction:
 
 ```text
 absent from basis
-!=
-present but functionally negligible
+!= present but functionally negligible
 ```
 
-### 2.3 Profile and engagement
+### 3.3 Relative profile and total engagement are separate variables
 
-In context `c`, an unnormalized expression `h(lambda_t,c)` is decomposed into:
+In context `c`, the expressed gain vector is factorized into:
 
 ```text
 w_i(c) = h_i / sum_j h_j
 s(c)   = sum_j h_j
 ```
 
-where:
-
-```text
-w = relative attention profile
-s = total engagement with the domain
-```
-
-The valuation rule is:
+where `w` is the normalized relative profile and `s` is total engagement. The valuation rule is:
 
 ```text
 e_t(x | c) = sum_i h_i(lambda_t,c) x_i
            = s_t(c) * sum_i w_t,i(c) x_i
 ```
 
-Thus identical relative priorities do not imply identical engagement.
+Two agents can therefore rank considerations identically while differing in how much the whole domain matters to them.
 
-### 2.4 Context modulation
+**Anchors:** §§2.2–2.3, PDF pp.4–5.
 
-A reference class uses:
+### 3.4 Context modulates expression without necessarily rewriting disposition
+
+A reference multiplicative expression class is:
 
 ```text
 h_i(lambda,c) = exp(lambda_i + phi_i(c))
 w(c) = softmax(lambda + phi(c))
 ```
 
-The intended distinction is:
+so persistent disposition and context-conditioned expression remain analytically distinct.
 
-```text
-persistent disposition
-+ context-conditioned expression
--> current weighting
-```
+**Anchor:** §2.2, PDF p.5.
 
----
+### 3.5 Bounded relative plasticity yields self-gated revision
 
-## 3. Dynamics and lock
-
-### 3.1 A1 — bounded relative plasticity
-
-Endogenous learning is:
+Endogenous learning is modeled as:
 
 ```text
 lambda_{t+1} = lambda_t + delta_t
 ||delta_t||_infinity <= epsilon
 ```
 
-Equivalently, gain changes by a bounded multiplicative factor per step.
-
-This yields:
+which bounds multiplicative gain change per step. The paper derives:
 
 ```text
 |Delta theta_i| <= (exp(epsilon)-1) theta_i
 ```
 
-so low-gain dimensions can change only a small absolute amount per step.
+and therefore argues that a currently weak dimension can change only a small absolute amount per step. The paper summarizes this mechanism as attention gating its own revision.
 
-Paper's key phrase / mechanism:
+**Anchor:** §3, PDF pp.6–7.
 
-```text
-attention gates its own revision
-```
+### 3.6 Lock is cross-context dominance, not semantic pathology
 
-This can generate a self-maintaining pattern:
+A state is locked on a dimension when that dimension retains near-total profile dominance across a class of contexts that would ordinarily pull attention apart. The definition is content-neutral: scholarly vocation, parental concern, and clinically significant fixation can all instantiate the same formal shape.
 
-```text
-low current weighting
--> little effective revision
--> continued low weighting
-```
+**Anchor:** §4.1, PDF pp.7–8.
 
-### 3.2 Lock
+### 3.7 Persistence is a finite-horizon reachability result, not impossibility
 
-A state is locked on dimension `i*` across context class `C` when that dimension retains near-total profile dominance across contexts that would ordinarily pull weighting apart.
+Given a lock margin and bounded drift, the paper derives a lower bound on the time before the lock can be lost. In the multiplicative reference class the bound is proportional to margin divided by the plasticity ceiling. The author explicitly distinguishes exact impossibility from practical non-reachability within a relevant horizon.
 
-The important structural property is:
+**Anchors:** §4.2, PDF pp.8–9.
 
-```text
-cross-context dominance
-```
+### 3.8 Recovery is generally a new forward state
 
-not the semantic content or normative value of the dominant dimension.
+Even if the previously dominant gain later returns toward its old value, other coordinates may have changed in the interim, so the recovered state generally need not equal the old one. The paper treats recovery as a further forward transition rather than an inverse replay.
 
-### 3.3 Persistence bound
+**Anchor:** §4.2, PDF p.9.
 
-Given a lock margin and bounded per-step drift, the paper derives a finite lower bound on how long the lock must persist. In its multiplicative reference class the sharp form is proportional to:
+### 3.9 Persistent disagreement under shared representation
 
-```text
-margin / plasticity ceiling
-```
+The taxonomy distinguishes basis mismatch from profile difference, engagement difference, and mutual lock. The paper further separates persistence of the underlying profile source from inertia of any one evaluative output gap.
 
-The philosophically useful result is not impossibility, but:
+**Anchors:** §5, PDF pp.9–12; Table 1, PDF p.10.
 
-```text
-exact impossibility
-!= practical non-reachability within a relevant horizon
-```
+### 3.10 Transfer from dimensional attention to evaluative attention is an explicit hypothesis
 
-### 3.4 Recovery
+The paper imports structural commitments—not parameter values—from category-learning work: a fixed stock of dimensions, persistent state, context-conditioned graded weighting, and bounded gated revision. It explicitly states that the transfer is defeasible rather than established by analogy alone.
 
-The paper notes that restoring a formerly dominant gain does not generally restore the full old state because other coordinates have changed meanwhile:
+**Anchors:** §6.1, PDF pp.12–13.
 
-```text
-recovery is a further forward transition
-!= inverse replay to the old state
-```
+### 3.11 One latent state is assigned two roles
 
----
+A pivotal identification treats the state that gates learning as the same state that weights valuation. The paper acknowledges this as a genuine empirical exposure: if learning-gating and valuation-weighting states dissociate, the persistent-disagreement result weakens.
 
-## 4. Taxonomy of evaluative difference
+**Anchors:** §6.2, PDF pp.13–14.
 
-The paper distinguishes at least:
+### 3.12 Encoded / retrievable can dissociate from online influence
 
-1. different bases -> possible representational mismatch;
-2. same basis + same profile + same engagement -> same evaluation under the model;
-3. same basis + different profile -> evaluative disagreement without representational mismatch;
-4. same basis + same profile + different engagement -> same relative priorities, different total domain importance;
-5. same basis + different locked profiles -> persistent disagreement within the bounded-plasticity horizon.
+The paper's strongest SRT-relevant empirical anchor is its discussion of Gao et al. (2024): non-dominant dimensions were reportedly recognized above chance and usable when the dominant dimension was removed, yet had no measurable online effect while that dominant feature remained available.
 
-It further separates:
-
-```text
-persistence of the source structure
-!= inertia of one particular evaluative output gap
-```
-
-This source/output separation is methodologically useful beyond disagreement theory.
-
----
-
-## 5. Empirical anchors consumed by the argument
-
-### 5.1 Encoded, retrievable, not consulted
-
-The strongest SRT-relevant empirical anchor is the Gao et al. (2024) dissociation discussed by the paper:
-
-```text
-feature encoded / recognized above chance
-+ usable when dominant feature removed
-+ no measurable online influence while dominant feature available
-```
-
-Paper's interpretation:
+Paper's compact interpretation:
 
 ```text
 knowledge present, influence absent
 ```
 
-This supports the distinction:
+**Anchor:** §7.1, PDF p.14.
+
+Important source-status guard: this intake verified what **this paper reports** about Gao et al.; the Gao primary paper was not independently re-read in this pass.
+
+### 3.13 Attention need not have a fixed total budget
+
+The paper separates relative profile from total engagement and argues, via its review of attention-model comparisons, that total attention can vary with demand. It allows approximately budget-like behavior to reappear as a regime when an engagement ceiling binds.
+
+**Anchor:** §7.2, PDF pp.14–15.
+
+### 3.14 Learned inattention provides a behavioral analogue of lock
+
+The paper cites learned-inattention, developmental switching-cost, learning-trap, and exploration findings as evidence that selective history can produce entrenched configurations and costly reallocation.
+
+**Anchor:** §7.3, PDF p.16.
+
+### 3.15 Reweighting is not basis extension
+
+The model explicitly holds the representational basis fixed. The author states that attention dynamics redistribute over dimensions already given and do not create genuinely new evaluative dimensions.
+
+**Anchor:** §8, PDF pp.16–17.
+
+### 3.16 Persistence underdetermines “deep” disagreement
+
+The paper's philosophical result is not that deep disagreement never exists, but that persistence under comprehending exchange is a non-diagnostic behavioral signature because a shallower shared-basis attention dynamic can generate it as well.
+
+**Anchor:** §9, PDF pp.17–19.
+
+## 4. Evidence / method
+
+The paper is a formal-philosophical construction with literature-grounded assumptions rather than a new empirical experiment. Its argument has four layers:
+
+1. define a shared representational basis and positive gain state;
+2. factor expression into profile and engagement;
+3. impose bounded relative plasticity and derive persistence bounds;
+4. connect the model to category-learning / attention literature and state explicit falsifiers.
+
+The source's empirical anchors are therefore mostly cited external studies. This SourceCard treats those as **paper-reported evidence** unless independently verified elsewhere in SRT-Pub.
+
+## 5. Limits and failure conditions stated by the source
+
+### 5.1 Fixed basis
+
+The model does not explain acquisition of genuinely new evaluative dimensions or recoding of the basis.
+
+**Anchors:** §2.1, PDF p.4; §8, PDF p.17.
+
+### 5.2 Multiplicative plasticity is the weakest pivotal modeling bet
+
+The paper explicitly states that fitted update rules in the literature it reviews lean additive. Published support is stronger for multiplicative decay than growth; the exact log-gain bounded update should therefore be treated as a modeling choice rather than an established empirical law.
+
+**Anchor:** §7.4, PDF p.16.
+
+### 5.3 Persistence only; no unlocking floor
+
+A1 is a ceiling on update magnitude. It allows `delta_t = 0` and therefore cannot predict when disconfirmation must produce revision. A direction-sensitive floor would require further theory.
+
+**Anchor:** §10, PDF p.20.
+
+### 5.4 History-blind persistence bound
+
+The bound depends on current margin and plasticity ceiling; formation history leaves no independent trace once those variables are given. The paper explicitly leaves open whether history acts only through current state or has additional effects.
+
+**Anchor:** §10, PDF p.20.
+
+### 5.5 Collected falsifiers
+
+The source identifies several failure exposures, including:
+
+- encoded dimensions having exactly zero evaluative contribution rather than graded-negligible influence;
+- a long-ignored dimension leaping to dominance through one ordinary endogenous experience;
+- demonstrated per-stimulus maximum / discrete-system selection replacing the smooth weighted-sum valuation form;
+- dissociation of learning-gating and valuation-weighting states.
+
+**Anchor:** §10, PDF p.20.
+
+## 6. SRT relevance
+
+### 6.1 Source-backed pressure
+
+The source directly pressures any SRT-adjacent inference of the form:
 
 ```text
-basis membership / availability
-!= online operative weighting
+behavioral silence
+-> representation absence
 ```
 
-### 5.2 No fixed total attention budget
-
-The paper argues against treating normalized profile as a fixed total-attention budget. It separates:
+or:
 
 ```text
-relative distribution w
-from
-total engagement s
+persistence / fixation / slow switching
+-> deep framework change
 ```
 
-and cites model-comparison evidence that total attention varies with task demand. A fixed-budget regime may reappear approximately when a soft engagement ceiling binds.
+because the paper supplies a structured ordinary account in which the basis remains shared while weighting and engagement differ and reweighting is slow.
 
-### 5.3 Learned inattention / learning traps
+### 6.2 SRT-side synthesis after owner subtraction
 
-The paper treats learned inattention as the behavioral analogue of lock: dimensions trained as irrelevant become costly to re-attend to when later relevant. It also cites learning-trap / reduced-exploration phenomena as adjacent evidence for history-dependent entrenchment.
-
----
-
-## 6. One state, two roles — pivotal empirical exposure
-
-The paper identifies the state that gates learning with the state that weights valuation:
-
-```text
-learning-gating state
-=
-valuation-weighting state
-```
-
-This identification is necessary for its persistence dynamics to constrain evaluative disagreement directly.
-
-The paper explicitly acknowledges that if these roles dissociate, the main persistent-disagreement result weakens.
-
-SRT-side importance:
-
-```text
-what gets written / learned
-must not be silently equated with
-what currently weights evaluation / action
-```
-
-unless independently justified.
-
----
-
-## 7. Complement to representational annihilation
-
-The paper contrasts two structures:
-
-```text
-annihilation / basis absence
-vs
-negligible weighting within a shared basis
-```
-
-The distinction is empirically testable:
-
-```text
-annihilation candidate:
-encoding / recognition near chance
-
-negligible-weighting candidate:
-encoding above chance
-+ absent or near-absent online influence
-```
-
-This is a useful general diagnostic template for SRT candidate-field work.
-
----
-
-## 8. Explicit scope limits and falsifiers
-
-### 8.1 Fixed basis
-
-The model redistributes over given dimensions. It does not explain:
-
-```text
-basis extension
-new evaluative dimension acquisition
-candidate-generator revision
-```
-
-### 8.2 Multiplicative-plasticity bet
-
-The paper explicitly identifies multiplicative A1 as its weakest pivotal modeling choice. The fitted literature it reviews leans additive; published support is stronger for multiplicative decay than growth.
-
-Therefore SRT must not import the paper's exact persistence law as an established empirical law.
-
-### 8.3 Persistence only
-
-A1 is a ceiling, not a floor. The model constrains how long a configuration can persist, not when disconfirming experience must unlock it.
-
-### 8.4 History-blind bound
-
-The persistence bound depends on current margin and plasticity ceiling; how the state was formed leaves no independent trace in the bound. Whether history matters only through current state or independently remains open.
-
-### 8.5 Collected failure conditions
-
-The paper states that its commitments fail or weaken if, among other things:
-
-- an encoded basis dimension contributes exactly zero rather than graded-negligible influence;
-- a long-ignored dimension leaps to dominance in one ordinary endogenous experience;
-- evaluation follows a per-stimulus discrete maximum / system-selection architecture instead of smooth weighted summation;
-- learning-gating and valuation-weighting states dissociate.
-
----
-
-## 9. SRT relevance after subtraction
-
-### 9.1 High-value contribution
-
-The paper strongly supports maintaining these non-identities at bridge / audit level:
+The useful audit distinctions are:
 
 ```text
 representable
-!= available / retrievable
+!= retrievable / available
 != relatively weighted
 != total engagement
 != online operative influence
@@ -377,149 +296,85 @@ representable
 != historical writeback
 ```
 
-This is a category-hygiene ladder, not a new canonical ontology.
+This is a category-hygiene sequence, **not** a new canonical stage model.
 
-### 9.2 Candidate field
-
-The paper supplies a concrete ordinary mechanism for cases where something remains representable but becomes behaviorally silent:
+Further guards:
 
 ```text
-candidate represented
-+ very low weight
--> apparent invisibility without actual basis loss
+profile w != matter / concern / d
+engagement s != bearer-relative stake / d
+attention lock != bearer admission
+attention lock != L2 by definition
 ```
 
-Therefore behavioral invisibility alone cannot establish candidate absence or generator change.
+### 6.3 Rival value for P24-3
 
-### 9.3 Concern / matter / d guard
+Self-gated attention / learned-inattention dynamics can absorb ordinary signatures such as fixation, slow alternative reactivation, switching cost, history-conditioned weighting, hysteresis-like persistence, and practical non-reachability within a horizon.
 
-Do not equate:
+Therefore these signatures cannot by themselves establish a Selection-level D2 result.
 
-```text
-relative profile w
-with matter / concern membership / d
-```
+### 6.4 Rival value for P24-4
 
-and do not equate:
-
-```text
-total engagement s
-with bearer-relative stake / d-value
-```
-
-The paper's variables describe attentional-evaluative organization, not SRT consequence bearing or non-substitutability.
-
-### 9.4 L2 / P24-3 rival
-
-Self-gated attention dynamics can absorb ordinary signatures including:
-
-- fixation;
-- selective-history entrenchment;
-- slow alternative reactivation;
-- switching cost;
-- hysteresis-like persistence;
-- practical non-reachability within a horizon.
-
-Thus these signatures alone cannot establish SRT-specific L2 hardening or Selection-level D2.
-
-### 9.5 P24-4 rival
-
-The model can produce:
-
-```text
-represented option
-+ negligible current weight
--> option behaves as if invisible in ordinary evaluation
-```
-
-Therefore P24-4 visibility/admissibility work must distinguish at least:
+A represented consideration can become functionally negligible and thereby behave as if invisible in ordinary evaluation. P24-4 visibility / admissibility work must therefore distinguish:
 
 ```text
 basis absence
-vs negligible weighting
+vs represented-but-negligible weighting
+vs current online operativity
 vs genuine candidate-generation / admissibility revision
 ```
 
-### 9.6 Generative reselectability boundary
+### 6.5 Generative-reselectability boundary
 
-The paper's explicit fixed-basis scope reinforces:
+The source's fixed-basis scope gives a clean lower-order rival:
 
 ```text
 reweighting existing dimensions
-!= changing what dimensions / candidates can be generated or admitted
+!= basis extension
+!= candidate-generator revision
+!= comparison-rule revision
+!= boundary / composition revision
 ```
 
-Any stronger rule / boundary / candidate-generator revision remains routed to existing SRT B13 / HEF owners rather than this attention model.
+The stronger cases remain routed to existing B13 / HEF owners; being outside this source model does not automatically make them SRT-specific.
 
-### 9.7 Bearer boundary
+### 6.6 Bearer boundary
 
-The paper presupposes agents and does not identify a consequence bearer. It supplies no same-unit-return, non-outsourcing, identity, or bearer-continuity criterion.
+The source presupposes agents and does not supply SRT's same-unit consequence-return, non-outsourcing, identity, or bearer-continuity criteria. It therefore cannot serve as bearer-admission evidence.
 
-Hence:
+### 6.7 Recovery as support, not novelty
+
+The source's recovery-nonidentity point is compatible with existing SRT history-bearing work, but should be used as external support / example rather than a parallel history theorem.
+
+## 7. Suggested patch target
+
+Primary patch / hook target:
 
 ```text
-attention lock
-!= bearer admission
+Philosophy/patches/SRT_Philosophy_PH_ATTN01_Representational_Weight_Engagement_Operativity_v0_1.md
+Philosophy/hooks/PH_ATTN01_Representation_Weight_Engagement_Operativity_Integration_Hook.md
 ```
 
-### 9.8 Historical support, not novelty
-
-The paper's claim that recovery is a forward transition rather than an inverse is useful external support for existing SRT history-bearing distinctions, but should not create a parallel construct.
-
----
-
-## 10. Strongest SRT empirical reuse
-
-### Assay A — representation vs influence
-
-Measure independently:
+Primary empirical-rival target:
 
 ```text
-recognition / retrieval / articulation
+Operations/Audits/SRT_ATTENTION_DYNAMICS_RIVAL_ADDITION_P24_3_P24_4_2026-08-26.md
 ```
 
-and:
+Future owner landing, if separately authorized:
 
 ```text
-online influence under controlled perturbation
+Core/SRT_Core_24_Discriminating_Predictions.md
 ```
 
-so that behavioral silence cannot be misclassified as basis absence.
-
-### Assay B — absent vs negligible vs operative
-
-Construct matched cases:
+## 8. Final source disposition
 
 ```text
-A: absent / not encoded
-B: encoded but negligible online influence
-C: encoded and operative
-D: encoded + operative + later historical writeback
+A — bounded non-canonical O-track category hygiene + rival hardening
+D-track — not claimed by this source intake
+Selection-core novelty — low
+P24-3 / P24-4 rival value — very high
+empirical calibration value — high
 ```
 
-This can calibrate representation, current efficacy and later historical efficacy separately.
-
-### Assay C — P24-3 floor challenge with frozen attention rival
-
-Include a bounded latent-attention rival with preregistered state/update family when testing L2 hardening. SRT-specific progress would require an outcome difference the frozen rival prospectively excludes, not merely observation of entrenchment or hysteresis.
-
-### Assay D — same apparent weighting, different history
-
-Matching current `w` and `s` while varying formation history can test whether these are sufficient state descriptors. A future difference would show omitted history/state, but would not by itself establish SRT D2 unless a bounded R2 rival had already frozen its allowed memory architecture.
-
----
-
-## 11. Final SRT verdict
-
-```text
-Selection-core novelty: low
-bearer novelty: low
-matter / concern category hygiene: high
-candidate-field clarification: high
-L2 / P24-3 ordinary-rival value: very high
-P24-4 ordinary-rival value: very high
-empirical-assay value: high
-D2 proof value: none by itself
-```
-
-**Final disposition:** retain as a high-value source and rival-hardening material. Use to strengthen SRT's subtraction discipline and empirical decomposition; do not cite persistence, learned inattention, engagement, attention gating or recovery-nonidentity as uniquely SRT phenomena.
+Do not cite attention, engagement, learned inattention, bounded reweighting, persistence or recovery nonidentity as uniquely SRT phenomena.
