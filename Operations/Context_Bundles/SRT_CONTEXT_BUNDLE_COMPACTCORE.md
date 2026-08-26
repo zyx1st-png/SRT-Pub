@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-18
+id: SRT-CONTEXT-BUNDLE-COMPACTCORE-2026-08-26
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-18
-source_commit: 8fa53be1
-source_branch: agent/frontiers-attractor-reachability-bridge
+generated: 2026-08-26
+source_commit: 91f99e3c
+source_branch: claude/workflow-theory-divergence-gate
 source_dirty: false
-inputs_digest: baa70243c64d7a49
+inputs_digest: 35eeceafd7b8ebe1
 ---
 
 # SRT CompactCore 全集上下文包
@@ -26,9 +26,9 @@ inputs_digest: baa70243c64d7a49
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-18 |
-| 来源 commit | `8fa53be1` |
-| 来源分支 | `agent/frontiers-attractor-reachability-bridge` |
+| 生成日期 | 2026-08-26 |
+| 来源 commit | `91f99e3c` |
+| 来源分支 | `claude/workflow-theory-divergence-gate` |
 | 生成时来源工作树有改动 | 否 |
 | 包含文件数 | 19 |
 
