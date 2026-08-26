@@ -187,6 +187,22 @@ Audit:
 Can B1 and B2 each inherit P's history while no longer being the same bearer as each other?
 ```
 
+### P3 hardening — continuation is not assumed to be an equivalence relation
+
+The branching problem also supplies a formal caution that is not captured by `shared memory != same bearer` alone. Bearer continuation is temporally directed, generally irreversible, and may branch. It therefore should not be assumed to have the symmetry and transitivity properties needed for an ordinary equivalence-class / quotient construction to solve numerical identity.
+
+Compact guard:
+
+```text
+continuation(B_t, B_t+1)
+!= symmetric equivalence
+
+shared pre-branch history
+!= one post-branch bearer
+```
+
+This does **not** define bearer numerical identity or prohibit a domain from using an equivalence relation for some narrower re-identification task. It only blocks an unargued shortcut from object-style equivalence classes to bearer identity.
+
 ### Test-local diagnostic
 
 Use only at P3:
