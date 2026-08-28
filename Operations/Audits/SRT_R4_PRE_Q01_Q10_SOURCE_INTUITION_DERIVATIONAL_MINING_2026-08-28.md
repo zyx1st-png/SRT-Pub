@@ -5,7 +5,7 @@ status: active
 record_stage: active_planning
 date: 2026-08-28
 layer: meta
-epistem_layer: os
+epistemic_layer: os
 claim_mode: governance
 claim_level: P3/P4_governance
 canonical: false
@@ -259,7 +259,7 @@ Q04 argues for a thin structural non-neutrality:
 ```text
 not a blueprint
 not value
-ot telos
+not telos
 not a physical force
 not absolute neutrality
 ```
