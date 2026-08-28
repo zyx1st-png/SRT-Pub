@@ -1,374 +1,331 @@
 ---
 id: SRT-OPS-AUDIT-SELECTION-FIRST-REBASE-OWNER-MATRIX-20260828
 type: audit_record
-status: active_planning
+status: active
+record_stage: active_planning
 date: 2026-08-28
 layer: meta
 epistemic_layer: os
 claim_mode: governance
 canonical: false
+ai_do_not_use_for_definition: true
 dependency:
   - Operations/Proposals/SRT_SELECTION_FIRST_ARCHITECTURE_REBASE_MASTER_PLAN_2026-08-28.md
+  - Governance/SRT_CANONICAL_FREEZE.md
+  - Governance/SRT_EDIT_PROTOCOL.md
   - Governance/SRT_CLAIM_LADDER.md
   - Core/SRT_OPEN_TENSIONS.md
+  - Bridge/SRT_Adjacent_Theory_Interface_Index.md
+  - Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md
 tags: [ArchitectureRebase, OwnerMatrix, Dependency, Migration, StaleSurface, WholeRepo]
 ---
 
 # Selection-First Rebase — Owner / Dependency Matrix (2026-08-28)
 
-> **Boundary:** planning audit only. This file routes future rebase work to existing owners and records migration pressure. It does not redefine any construct and must not be cited as canonical authority.
+> **Boundary:** routing audit only. It does not define Selection, L0/L1/L2, object, bearer, subject or consciousness. Any theory sentence here is a pointer to an owner or a proposed audit question.
 
 ---
 
-## 0. Matrix rule
+## 0. Mandatory routing algorithm
 
-For each rebase target, distinguish:
+Before any rebase edit:
+
+### Step 0 — freeze and edit-class check
+
+1. fetch `Governance/SRT_CANONICAL_FREEZE.md`;
+2. fetch `Governance/SRT_EDIT_PROTOCOL.md`;
+3. mark the proposed target as frozen anchor / cross-check core / navigation / bridge / operations;
+4. frozen-anchor semantic edits are C-class high-risk and require explicit justification;
+5. if a documentation-only route can solve the problem, prefer it.
+
+### Step 1 — identify the current owner
 
 ```text
-SOURCE INTUITION
-!=
-CURRENT OWNER
-!=
-BRIDGE / PRESSURE FILE
-!=
-PUBLIC / EXPOSITORY SURFACE
+source intuition
+!= canonical / owner source
+!= bridge / pressure file
+!= public / navigation surface
 ```
 
-A future PR may change an owner only after:
+### Step 2 — subtract owner content
 
-1. fetching the current owner;
-2. subtracting existing owner language;
-3. checking open tensions and prior decision packets;
-4. declaring claim level;
-5. listing downstream files that become stale if the owner changes.
+Do not create a new term or theorem for content already owned.
 
-Public or companion prose may never back-define a canonical owner.
+### Step 3 — check settled gates and open tensions
+
+At minimum inspect `Core/SRT_OPEN_TENSIONS.md` and relevant author-decision packets.
+
+### Step 4 — assign claim ceiling
+
+P0/P1/P2/P3/P4/P5 and maturity are separate.
+
+### Step 5 — enumerate downstream stale surfaces before owner mutation
+
+No owner edit lands without a stale-surface list.
+
+### Step 6 — owner-collision check
+
+A rebase PR fails routing if it creates a parallel owner where one already exists.
 
 ---
 
-## 1. Primitive Selection / actualisation
+## 1. Primitive actualisation / non-menu reading
 
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Primary P0 owner | `Core/SRT_Core_21_Minimal_Axioms.md` | **First authority.** Test whether P0-01 already fully carries non-menu, non-objectified actualisation. Prefer clarification over new primitive. |
-| Metaphysical owner | `Core_Law/SRT_L0_Metaphysics.md` | Audit old `one from many`, chooser, existence and level-language against current P0 precision. |
-| Constitutive consequences | `Core/SRT_Core_21b_Constitutive_Theorems.md` | Recheck only after P0 owner decision. Do not push new P1 consequences upstream. |
-| Formal carrier | P0-04 / related formal anchors | Preserve `G_hat_theta` as role-carrier; block prior-operator reification. |
-| Source intuition | `Q05_选择不是挑选.md` | Recover force; do not treat `排开+定形+写入` as an automatic P0 definition. |
-| Pressure packet | `SRT_SELECTION_ARTICULATION_HARDENING_PACKET_2026-08-28.md` | Audit label / question source only. `articulation` not canonical. |
+| Field | Route |
+|---|---|
+| Primary owner | `Core/SRT_Core_21_Minimal_Axioms.md` P0-01 / AM-A precision |
+| Supporting owner | `Core_Law/SRT_L0_Metaphysics.md` |
+| Theorem downstream | `Core/SRT_Core_21b_Constitutive_Theorems.md` |
+| Split/index downstream | `Core/SRT_Core_21_Formal_Axioms.md` |
+| Freeze | **YES** — all four relevant canonical anchors must be checked under Freeze/Edit Protocol |
+| Already owned | non-objectified potential under real constraints -> determinate manifestation; no completed latent-object menu |
+| Residual audit | whether stale exposition, not P0 itself, is the main source of menu-like readings |
+| Early-exit | if owner language is sufficient, documentation-only; no P0 amendment |
 
-### High-risk stale surfaces
-
-```text
-"one possibility selected from many" at primitive level
-"selection requires a standpoint" without scope typing
-"write-in" used as durable history in every primitive event
-```
+Do not register `determinate articulation` as a second P0 primitive from this rebase.
 
 ---
 
-## 2. `L0`
+## 2. Occurrence / persistence / historical efficacy
 
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Main metaphysical owner | `Core_Law/SRT_L0_Metaphysics.md` | Audit inventory-like language versus non-objectified selectability. |
-| Type governance | `Governance/SRT_CLAIM_LADDER.md §0A Gate 0` | **Do not reopen by default.** Contentless structurality rule remains controlling. |
-| Formal state-space surfaces | `Core_Law/SRT_Reference_Ontology.md`, equations / bridges | Type as model-level / declared-grain where necessary; do not delete useful `S` formalism. |
-| Source intuition | Q01-Q04 | Mine pre-object / givenness / minimal non-neutrality intuitions after R1 freeze. |
-
-### Rebase question
-
-```text
-Can L0 be stated strongly enough to block completed-object menus
-without adding a new substance / field / semantic inventory?
-```
+| Field | Route |
+|---|---|
+| Primitive owner | P0-01 / AM-A |
+| Persistence owner | P0-02 / EX-A surfaces |
+| L2 owner | `Core/SRT_Core_12b_Ontology_L2.md` plus current L2 core routing |
+| Pressure owner | `Philosophy/patches/SRT_Philosophy_PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Discrimination_v0_1.md` |
+| Freeze | P0 owner **YES**; L2 route depends on actual target file |
+| Preserve | `occurrence facticity != persistent trace != L2-grade historical efficacy` |
+| Prohibited shortcut | Q05 `write-in` cannot silently become universal durable writeback at P0 |
 
 ---
 
-## 3. Operator / `theta` / finite position
+## 3. L0 typing
 
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Operator basics | `Core/SRT_Core_13a_Operator_Basics.md` | Audit mature operator role after P0 carrier distinction is fixed. |
-| Reference ontology | `Core_Law/SRT_Reference_Ontology.md` | Mark state-space / operator assumptions explicitly. |
-| Seven Theses | `Core_Law/SRT_Constitution_Seven_Theses.md` | High-priority audit for `parameterized standpoint` scope. |
-| Individuation owner | `Core_Law/SRT_Individuation.md` | Already owns subject / perspective-bearing position formation. Do not create parallel theorem. |
-| Symbol governance | `_SRT_SYMBOL_TABLE.md` | Update only after owner wording lands. |
-
-### Required distinction
-
-```text
-formal carrier of primitive actualisation
-!=
-finite historically constituted operator
-!=
-bearer
-!=
-subject
-```
+| Field | Route |
+|---|---|
+| Owner | `Core_Law/SRT_L0_Metaphysics.md` |
+| Governance | `Governance/SRT_CLAIM_LADDER.md` Gate 0 typing |
+| Freeze | **YES** |
+| Already owned | no completed-form inventory; contentless structural floor constraints only under current gates |
+| Residual audit | whether public / bridge language still depicts L0 as a warehouse of pre-formed options |
+| Do not reopen | Gate 0; B-A; unrelated kappa/epsilon questions |
 
 ---
 
-## 4. Occurrence / trace / historical efficacy / `L2`
+## 4. Operator / theta / state-space scope
 
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Occurrence / persistence owner | P0-02 / EX-A surfaces | Keep primitive event thin. |
-| `L2` owner | `Core/SRT_Core_12b_Ontology_L2.md` | Preserve scaffold / hardening distinctions; no cosmic archive. |
-| History discrimination | `PH_IND05_Occurrence_Trace_L2_Bearer_Experiencer_Discrimination` | Use H0/H1/H2/H3 as P3 audit surface, not new canonical ladder by default. |
-| Memory / history P4 | NEURAL25 / NEURAL29 / NEURAL31 / NEURAL33 / NEURAL34 family | Preserve flexible latent-history rivals and downgrade conditions. |
+| Field | Route |
+|---|---|
+| Primitive role carrier | `Core/SRT_Core_21_Minimal_Axioms.md` P0-04 / AM-A precision |
+| Operator owner | `Core/SRT_Core_13a_Operator_Basics.md` |
+| Ontology / thesis surfaces | `Core_Law/SRT_Reference_Ontology.md`; `Core_Law/SRT_Constitution_Seven_Theses.md` |
+| Equation owner | **`Core/SRT_Core_22_Equations.md`** |
+| Symbol owner | `_SRT_SYMBOL_TABLE.md` |
+| Freeze | `Core_22`, Symbol Table, Minimal Axioms = **YES** |
+| Residual audit | distinguish formal primitive role-carrier from mature / situated finite operator; type `G_theta:S->S` as model-level once grain/state variables are declared |
+| Failure mode | replacing a prior chooser with a prior `operator` or `standpoint` entity |
 
-### Required distinction
-
-```text
-historical facticity
-!=
-persistent trace
-!=
-historical efficacy
-!=
-bearer-owned history
-```
+`Core/SRT_Core_21_Formal_Axioms.md` is a downstream split/index and must be checked for stale routing if P0 language changes.
 
 ---
 
 ## 5. Objectification / physical individuality
 
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Source intuition | `Q02_对象化.md` | Re-read after primitive rebase; extract upstream individuation questions. |
-| Object-stage owner | `PH_IND04` Stage O | Already owns differentiation -> constraint -> invariance -> re-identifiability. |
-| Process bridge | `SRT_Processual_Bearer_Constraint_Bridge_2026-08-23.md` | Use for grain / process / history pressure; not definition authority. |
-| Mind-matter owner | Q25 + 2026-08-26 hardening packet | Preserve physical-object / bearer non-equivalence and overlap. |
-
-### Prior-art guard
-
-Do not claim novelty for:
-
-```text
-individuals are generated
-process precedes thing
-matter as habit
-identity as invariance under transformation
-```
-
-without residual architecture comparison.
-
----
-
-## 6. Habit / scaffold / law
-
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| `L2` / hardening owners | Core 12b + ST-A / bridge files | Route ordinary historical hardening here. |
-| `Psi_f` / cost surfaces | canonical / bridge split | Do not use friction as universal generator unless bridge-level. |
-| Source intuition | Q07-Q10 | Mine `anchoring`, `thickness`, `backgrounding` after P0/history split is stable. |
-| External pressure | Peirce / process-materials | Strong novelty subtraction required. |
-
-### Rebase question
-
-```text
-What, if anything, does Selection-first add beyond generic path dependence / habit formation?
-```
-
----
-
-## 7. Bearer
-
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Formation / closure owner | `PH_IND02` | Same-unit consequence return + history writeback + future-selectability pressure. |
-| History / branching owner | `PH_IND05` | Copy / restoration / branching diagnostics. |
-| Non-outsourcing owner | `PH_IND06` | Strongest current residual discriminator candidate. |
-| Subjectivity decomposition | `PH_CONSC03` | Keep bearer / concern / experiencer roles separated. |
-| AI operational pressure | `AICONSC01` | Reset/copy/rollback already owned; do not duplicate. |
-| Biological bridge | `NEURAL24` | Interoceptive bearer-indexing candidate; not phenomenality proof. |
-| GOV-SUB01 pre-audit | PR #859 / related audit | Strongest rival = Markov blanket / active inference. Outcome-C risk high. |
-
-### Central subtraction target
-
-Give the rival for free:
-
-```text
-persistence
-history dependence
-consequence return
-adaptive learning
-viability regulation
-autonomy
-ordinary hysteresis
-```
-
-Then ask whether:
-
-```text
-non-outsourcing / same-unit consequence ownership
-```
-
-still adds independent classification or prospective consequence.
-
-### Circularity guard
-
-Candidate-unit declaration must be independent of the consequence-closure verdict; otherwise `where is the bearer?` and `where do consequences close?` become circular.
-
----
-
-## 8. Selector / subject / Stable ISP
-
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Primary individuation owner | `Core_Law/SRT_Individuation.md` | Already owns subjectless selection -> perspective-bearing subject-position dynamics. |
-| Stable ISP | P1-T06 / related owner | Preserve result-state criterion and continued-selectability minimum. |
-| Non-jump | `PH_IND04` | Keep bearer != selector != subject. |
-| Concern | PH-CONSC03 / d-value owner | Do not back-project concern into P0. |
-
-### High-risk claim
-
-```text
-history generates position
-```
-
-is not a new 2026-08-28 result; current owner already carries it. New work must identify an actual residual.
-
----
-
-## 9. Experiencer / consciousness
-
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Hard-problem authority | `Philosophy/SRT_HardProblem_Epistemology.md` | **Controlling owner.** Preserve phenomenal-necessity burden. |
-| Consciousness conditions | consciousness / subject-threshold files | Audit any language that turns bearer / concern into sufficiency. |
-| Q17 | companion exposition | Synchronize last, after owner decisions. |
-| Q25 | source / mind-matter | Preserve selection broader than consciousness. |
-| NEURAL24 | Damasio pressure | `for-this-bearer` != phenomenal character. |
-| PH-CONSC04/05 | zombie / deletion pressure | Preserve non-derivation discipline. |
-
-### Required open arrow
-
-```text
-structural bearing / subject-position
--> ?
--> phenomenal presence / qualitative character
-```
-
----
-
-## 10. Value / `d` / concern
-
-| Role | Current surface | Rebase posture |
-|---|---|---|
-| Canonical owner | `_SRT_D_VALUE_CANONICAL.md` | No primitive backflow. |
-| Non-substitutability addendum | existing d-value addendum | Keep value / preference separation downstream. |
-| Q12-Q15 | source intuition | Re-mine only after bearer / concern routing is stable. |
-| Ethics / social files | domain bridges | Update after owner decisions, not before. |
-
-### Guard
-
-```text
-value / concern / stake
-!= primitive Selection condition
-```
-
----
-
-## 11. `Psi_f` / `T_dir` / epsilon / kappa
-
-These are **not primary targets of the architecture rebase** unless an owner dependency is directly broken by the new P0 scope clarification.
-
-| Construct | Owner posture |
+| Field | Route |
 |---|---|
-| `Psi_f` | preserve canonical payability / projection discipline; no universal dynamics inflation |
-| `T_dir` | preserve readability / reorientation scope; no consciousness or value backflow into primitive |
-| `epsilon_pg` | preserve Gate 0 / B-A decisions; no semantic L0 content |
-| `kappa_0` | preserve current structural role; separate deferred dependency audit remains separate |
+| Source intuition | Q02; Q05/Q25 where relevant |
+| Main existing discrimination owner | PH-IND04 Stage O |
+| Process / individuation bridge | existing processual bearer / individuation bridge family |
+| Prior-art pressure | Simondon; process ontology; Peirce habit language |
+| Freeze | normally no direct frozen edit unless an upstream canonical owner is touched |
+| Residual question | what additional SRT dependency structure survives after process-individuation subtraction? |
+| Shorthand | `Object = still this` is exposition only |
 
-Do not use the rebase as a reason to reopen unrelated settled gates.
-
----
-
-## 12. Domain propagation matrix
-
-| Domain | Main rebase risk | Propagation order |
-|---|---|---:|
-| Philosophy | competing definitions of object / bearer / subject / experiencer | after R1, first |
-| Neuroscience | integration/access/bodily-self conflated with bearer or phenomenality | after R2 owner freeze |
-| AI | persistence / reset / stake / bearer / consciousness collapse | after bearer subtraction |
-| Physics | state-space / object units treated as primitive; habit/law novelty inflation | after object/history rebase |
-| Social | institution as bearer/subject by analogy | after bearer criteria settle |
-| Ethics / value | concern / value backflow into Selection | after bearer/concern routing |
-| Spirituality | thick phenomenological terms imported into core | late bounded sync |
-| Public / README | strongest source of stale compression | **last** |
+Do not claim novelty for `individuals are generated`, `objects are processes`, or `matter is habit`.
 
 ---
 
-## 13. Frontstage stale-surface inventory — first pass
+## 6. Position / selector / subject individuation
 
-These are audit targets, not automatic edits.
+| Field | Route |
+|---|---|
+| Primary owner | `Core_Law/SRT_Individuation.md` |
+| Non-jump guard | PH-IND04 |
+| Already owned | subjectless selection can historically condense a perspective-bearing / subject position; `theta_trace + theta_ext` style dynamics already exist |
+| Residual audit | typing and empirical/maturity status, not inventing `Selection -> Position` anew |
+| Freeze | check exact target before edit; do not assume authority from this matrix |
 
-### `README.md`
+This rebase does not own a new position theorem.
 
-Pressure:
+---
+
+## 7. Bearer / non-outsourcing
+
+| Field | Route |
+|---|---|
+| Primary bridge owners | PH-IND02; PH-IND05; PH-IND06; PH-CONSC03 |
+| Open pre-audit | PR #859 GOV-SUB01 middle-level bearer-ladder subtractive pre-audit |
+| Related open input | PR #855 processual bearer / active-maintenance hardening |
+| Strong rival | Markov blanket / active inference / persistent latent-history autonomous system |
+| Rival free grants | persistence; latent history; consequence return; adaptive updating; viability regulation; ordinary hysteresis |
+| Residual candidate | same-unit non-outsourcing / consequence ownership |
+| Current risk | **Outcome-C HIGH** |
+| Required terminal outcome | distinctive residual / translation-Outcome C / unresolved / spec-stage NO-GO |
+
+Do not propagate bearer novelty claims before #859 is resolved and the role-matched subtraction is executed.
+
+---
+
+## 8. Subject / experiencer / phenomenality
+
+| Field | Route |
+|---|---|
+| Role ladder | PH-IND04 |
+| Hard-problem owner | `Philosophy/SRT_HardProblem_Epistemology.md` |
+| Current author decision | HP-B-B: `B_s != B_p`; `B_s -> B_p` open |
+| Preserve | `Bearer / Subject-position !-> Experiencer` |
+| Residual | phenomenal necessity remains an open constitutive bridge |
+
+No rebase document may use bearer hardening as phenomenality proof.
+
+---
+
+## 9. Comparison / novelty owner family
+
+R5 is **not** a blank-slate matrix project.
+
+### Existing comparison index owner
 
 ```text
-L0 = latent possibilities
-G_hat_theta = embodied selection / anchoring operator
-L0 -> G -> L1 -> L2
+Bridge/SRT_Adjacent_Theory_Interface_Index.md
 ```
 
-Risk: completed possibilities + pre-existing operator reading.
+### Existing dedicated comparison family
+
+At minimum route through:
+
+```text
+Philosophy/SRT_IIT_Comparison.md
+Philosophy/SRT_FEP_Comparison.md
+Philosophy/SRT_Process_Logic_and_NPI_Comparison.md
+Philosophy/SRT_MetaTheory_Framework_Comparison.md
+Philosophy/SRT_Philosophy_Tradition_Comparison_PH_SS.md
+Neuroscience_Annex/10_Integration_Theory_Comparisons.md
+```
+
+### Retrieval / assimilation control
+
+```text
+Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md
+scripts/check_active_theory_assimilation.py
+```
+
+### R5 residual increment
+
+Add only a dependency-graph comparison axis **under** the existing Adjacent Theory Interface Index after owner subtraction.
+
+High-density neighbors do not need wholesale re-reading merely for coverage. Thin-neighbor priority currently includes Peirce, structural realism and neutral monism.
+
+---
+
+## 10. Frontstage / public surfaces
+
+### README
+
+Current `L0 -> G_hat_theta -> L1 -> L2` diagram is a navigation compression, not itself an owner. Audit only after owner scope settles.
 
 ### `01_Source_Intuition/CORE_REVERSALS.md`
 
-Pressure 1:
+This file is `canonical:false`, `claim_mode:navigation`, and explicitly does not replace formal anchors.
 
-```text
-Existence = stabilized trace under constraint, cost, concern, history
-```
+The identified problem is **narrow**:
 
-Risk: persistence / concern / history imported into bare actuality.
+- `constraint` is P0-compatible and must not be deleted merely because it appears in the sentence;
+- `stabilized trace` overstates bare actuality by importing persistence;
+- `concern` imports downstream stake;
+- `cost` / `history` are over-thick if presented as universal causes of the primitive kernel.
 
-Pressure 2:
-
-```text
-Consciousness = threshold where selection enters concern, burden, consequence return, self-modulation
-```
-
-Risk: bearer/subject conditions read as sufficient for phenomenality.
-
-### Public one-page / FAQ / quick start
-
-Audit after owner changes; do not edit early.
+Future fix: clause-level navigation correction, not a rewrite.
 
 ---
 
-## 14. PR routing table
+## 11. In-flight manuscripts / status surfaces
 
-| PR | Owner family | Forbidden scope creep |
+The rebase applies to **new topic formation**, not already submitted manuscripts.
+
+Current status owner: `STATUS.md`.
+
+- Frontiers 1837760: published 2026-08-06; APC remains administrative only.
+- *Costly Selective Closure* / *Adaptive Behavior*: submitted, not externally reviewed; do not expand framing or add experiments absent journal request.
+
+R3 propagation must not treat these manuscripts as ordinary editable downstream surfaces while they are in editorial handling.
+
+---
+
+## 12. Open-PR collision matrix
+
+| PR | Rebase relation | Policy |
 |---|---|---|
-| R1A | P0/L0 | bearer, consciousness, d-value, physics mapping |
-| R1B | operator/theta/formal state-space | subject sufficiency, phenomenality |
-| R1C | occurrence/trace/L2 | new memory theory, new time ontology |
-| R2A | objectification | bearer / subject proof |
-| R2B | individuation / position | duplicate `SRT_Individuation` theorem |
-| R2C | bearer | phenomenality, moral status, AI consciousness verdict |
-| R2D | subject / experiencer | solve hard problem by definition |
-| R3 | domain sync | new core claims |
-| R4 | intuition cards | canonical promotion |
-| R5 | comparison matrix | novelty declaration before subtraction |
-| R6 | paper shortlist | venue-driven theory mutation |
-| R7 | public sync | back-defining owners from exposition |
+| #859 | bearer subtractive pre-audit | prerequisite for R2C; resolve first |
+| #855 | processual bearer input | may inform R2A/R2C; do not treat as landed while open |
+| #858 | attention rival | may proceed independently; useful to subtraction |
+| #845 | corpus/consolidation | proceed if no owner collision |
+| #834 | consciousness material archive | proceed if no owner collision |
+| #828 | RC-A semantic burn-down | resolve before any rebase PR edits the same live owners |
+
+Rule:
+
+```text
+overlapping semantic owner -> older PR resolved first
+non-overlapping read-only/material work -> may proceed
+```
 
 ---
 
-## 15. Owner-matrix completion test
+## 13. Routing table for planned work
 
-Before any owner-level rebase PR opens, its target must be locatable in this matrix or an explicit matrix amendment must be made first.
+| Work item | Primary owner / index | Frozen? | First action | Allowed outcome |
+|---|---|---:|---|---|
+| R4-pre intuition extraction | Q01-Q10, then Q11-Q17/Q25-Q28 | no owner edit | read-only extraction | candidate cards / no increment |
+| R5-sub comparison | Adjacent Theory Interface Index + dedicated comparison family | no owner edit | owner subtraction | dependency-axis increment / no change |
+| R2C-pre bearer | PH-IND02/05/06/CONSC03 + #859 | no canonical edit by default | strong-rival subtraction | residual / Outcome C / NO-GO |
+| R1A P0/L0 | Minimal Axioms + L0 + 21b + Formal Axioms index | **yes** for canonical targets | freeze check + early-exit test | documentation-only preferred / high-risk owner edit only if gap survives |
+| R1B operator/state-space | Reference Ontology + Seven Theses + Operator Basics + Core22 + Symbol Table | mixed; Core22/Symbol frozen | scope audit | navigation/bridge clarification or C-class edit |
+| R1C occurrence/L2 | P0/EX-A + L2 owners + PH-IND05 | mixed | owner subtraction | no change / bounded alignment |
+| R2A object | PH-IND04/process owners | usually no | prior-art subtraction | residual / translation |
+| R2B position | Individuation owner | check target | owner audit | no duplicate theorem |
+| R2D subject/experiencer | Individuation + Hard Problem | mixed | non-jump sync | preserve open bridge unless separately gated |
+| R3 domain propagation | domain owners | varies | only after landed owner decision | stale-surface repair only |
+| R7 public sync | README / public / CORE_REVERSALS | mostly navigation | last | narrow synchronization |
+
+---
+
+## 14. Fail-routing conditions
 
 A rebase PR fails routing if it:
 
-- creates a parallel owner for an existing construct;
-- edits a public surface before the owner;
-- upgrades a bridge because the source intuition is rhetorically strong;
-- uses external convergence as proof of a primitive;
-- changes multiple adjacent ladder levels without separate adjudication;
-- hides a rival-matched prior-art claim under new SRT vocabulary.
+1. edits a frozen canonical anchor without declaring C-class/high-risk status;
+2. creates a parallel owner for content already owned;
+3. uses a source-intuition file as definition authority;
+4. treats bridge prior art as proof of SRT;
+5. treats current comparison coverage as blank and rebuilds it from scratch;
+6. changes public wording before relevant owner decisions land;
+7. uses concern / stake / phenomenality to repair a primitive P0 burden;
+8. counts an open PR as landed evidence;
+9. reopens a settled gate without a dedicated author decision;
+10. turns the non-jump role map into a compulsory total evolutionary sequence.
+
+---
+
+## 15. Current routing verdict
+
+The rebase should begin as:
+
+```text
+R4-pre + R5-sub + R2C-pre
+```
+
+not as immediate P0 editing.
+
+If these read-only passes show that AM-A/P0 already owns the new floor and bearer collapses to role-isomorphic prior art, the correct repository upgrade may be mostly **documentation propagation + new topic discovery**, not a canonical rewrite.
