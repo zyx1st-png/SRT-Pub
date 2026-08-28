@@ -186,6 +186,12 @@ Vocabulary convergence with Whitehead, Peirce, Simondon, Barad, enactivism, proc
 
 P0/P1 coherence is not D2/D3. Use Core 24 / PD-A rather than recreating their gates locally.
 
+### G11 — sigma cannot bootstrap its own bearer domain
+
+`SRT_Individuation.md` defines `theta^trace` through writeback from **P's own prior output** and requires that this history not simply be externally reset. Therefore the sigma model already presupposes a trace-attribution / same-unit admission relation.
+
+Do not use `sigma`, `T-IND-1`, or the sigma phase model as evidence that bearer independence has been established. The lower admission relation must be audited without circular appeal to a construct whose domain of definition already assumes it.
+
 ---
 
 ## 4. Revised programme shape: two tracks
@@ -273,20 +279,64 @@ Do not re-read already-dense IIT/FEP/enactivism/process corpora merely to inflat
 
 Run the middle-level bearer target early because it can kill or sharply demote a major downstream workline.
 
-Controlling question:
+The baseline rival still receives for free:
 
-> After giving a rival persistent latent state, history dependence, consequence return, autonomous regulation and viability dependence for free, does non-outsourcing add any independent classification, derivation or prospective prediction?
+```text
+persistent latent state
+history dependence
+consequence return
+autonomous regulation
+viability dependence
+ordinary hysteresis / recurrent memory
+```
 
-PR #859 is a prerequisite owner/audit input. R2C execution must not pretend #859 is landed while it remains open.
+The sharpened residual question is not merely whether the rival can be history-dependent. It is:
+
+> **Can a role-matched Markov-blanket / active-inference or persistent-state rival reproduce the trace/external attribution relation required by the existing sigma owner—distinguishing parameter change written by the candidate unit's own prior output from parameter change imposed through external contribution—under a prospectively frozen unit, grain, and reset/replacement rule? If it can, does non-outsourcing add anything beyond that role match?**
+
+This is an attribution / admission question, not a vocabulary contest. A rival does not fail merely because it lacks the symbols `theta^trace` / `theta^ext`; the role must be compared under matched implementation resources.
+
+**Circularity guard:** R2C may use `SRT_Individuation.md` to identify the role that needs auditing, but it may **not** cite `sigma`, `T-IND-1`, or the sigma transition model as evidence that bearerhood or same-unit ownership is independently established. The sigma definition already assumes own-output writeback attribution.
+
+PR #859 is a prerequisite owner/audit input. It is a target-lock / inventory **pre-audit**, not the eventual full middle-level GOV-SUB01 execution, and must not be treated as a landed residue verdict while open.
 
 Terminal outcomes:
 
 ```text
-distinctive residual
-translation / Outcome C
+distinctive attribution / non-outsourcing residual
+role-isomorphic trace attribution / translation / Outcome C
+lower admission criterion survives but is not transition-shaped
 unresolved
 spec-stage NO-GO
 ```
+
+#### R2-CORE — Selection primitive fruitfulness / middle-level derivational surplus ownership
+
+This programme must not assume that the Selection primitive is already doing indispensable middle-level work merely because R2-DOWN / R2-UP are intelligible research questions.
+
+The authoritative 2026-08-19 §13 sync currently records:
+
+```text
+Selection primitive role = P unresolved primitive admission
+middle-level derivational surplus = open
+downstream Selection-specific D2 differential = not established
+```
+
+Historical `UNASSIGNED` residue records remain provenance only; they are not the current primitive residue.
+
+R2-CORE owns the **remaining §13 burden**:
+
+> **Does retaining the Selection primitive role yield a non-circular middle-level consequence that survives a target-preserving rival rewrite and then earns a prospective bounded-rival D2 disagreement or a comparably strong bounded theoretical surplus?**
+
+#859 may supply candidate target locks, including bearer-related targets, but one bearer Outcome C cannot by itself answer R2-CORE. A later full GOV-SUB01 middle-level execution / re-adjudication must preserve the distinction between:
+
+```text
+primitive admission status
+!= middle-level derivational surplus
+!= downstream empirical D2
+```
+
+R2-CORE need not execute before R0 merges; it must no longer be ownerless.
 
 ### Track B — serial edits only after Track A informs them
 
@@ -422,27 +472,73 @@ selector-position vs stake-bearing subject-position
 subject-position vs experiencer
 ```
 
-### R2 named residual 1 — downward extension before sigma
+### R2-DOWN-O — object individuation below the sigma owner
 
-The current sigma model is defined on an already parameterized selection pattern whose `theta` can be decomposed into trace and external contributions. It therefore does **not by itself derive** earlier object individuation or bearer closure.
+Object individuation and bearer admission have different rival families and must receive separate dispositions.
 
-R2 must ask:
+R2A must ask:
 
-> **Do object individuation and bearer closure each admit a genuine order parameter / transition structure, or are they different kinds of generative stabilization that should not be forced into the sigma phase-transition grammar?**
+> **Does object individuation admit a genuine order parameter / transition structure that survives Simondon / process-ontology / Peircean subtraction, can it be connected non-circularly to later sigma-governed individuation, or is objecthood better modeled as a different reidentification / stabilization mechanism?**
 
-Required outcomes include:
+Allowed outcomes:
 
 ```text
-independent lower order parameter survives subtraction
-sigma can be extended with a non-circular derivation
-different non-phase-transition mechanism
-translation to existing process/autonomy machinery
+independent object-side order parameter survives subtraction
+non-circular bridge into later sigma architecture
+different non-phase-transition reidentification mechanism
+translation to existing process-individuation machinery
 unresolved / NO-GO
 ```
 
-Do not assume `object -> bearer -> sigma` is a total evolutionary sequence. The burden is to determine whether there is any derivable lower extension at all.
+No bearer verdict follows from an object-side result.
 
-### R2 named residual 2 — upward extension beyond structural subject-position
+### R2-DOWN-B — bearer admission as sigma domain-of-definition problem
+
+The sigma owner already defines:
+
+```text
+theta_t^trace = contribution written by P's own prior outputs through writeback
+theta_t^ext   = contribution written by external conditions
+```
+
+and relates history-bearing to `theta^trace` accumulation that is not simply externally reset.
+
+Therefore bearer closure is **not provisionally typed as a lower phase transition**. The prior question is one of admission / well-formedness:
+
+> **What makes the decomposition `theta = theta^trace + theta^ext` well-formed for a candidate unit, and what licenses attribution of a change to P's own history rather than to an external writer, copied state, relocated boundary, or replaceable controller?**
+
+Allowed outcomes:
+
+```text
+lower boundary = sigma domain-of-definition precondition (admission, not transition)
+independent bearer admission criterion survives strong-rival subtraction
+role-isomorphic attribution already supplied by autonomy / active-inference machinery
+different non-phase-transition mechanism
+unresolved / NO-GO
+```
+
+**No-bootstrap rule:** R2C must not use sigma/T-IND-1 to prove the bearer admission relation required to define `theta^trace` in the first place.
+
+### R2-UP-NAT — natural boundary versus conventional admission line
+
+`Core/SRT_OPEN_TENSIONS.md` keeps a distinct Stable-ISP boundary burden open. The existence of a working `sigma_sr^sub` admission threshold and the P3/P4 status of its numerical value do not by themselves establish that there is an independently evidenced natural phase boundary.
+
+R2B, with R2D as boundary cross-check, must ask:
+
+> **Is `sigma_sr^sub` tracking a genuine natural discontinuity / phase boundary, or is it a useful but conventional admission line over a smooth multidimensional transition?**
+
+Allowed outcomes include:
+
+```text
+independent natural-boundary evidence
+soft / graded transition with conventional threshold
+formal no-go against a one-dimensional natural boundary under current resources
+unresolved
+```
+
+This question is separate from phenomenality and must not be left hanging only because HP-B-B remains open.
+
+### R2-UP-PHEN — phenomenal necessity beyond structural subject-position
 
 The current individuation owner reaches subject-position and self-consciousness condensation, but HP-B-B keeps:
 
@@ -456,15 +552,24 @@ B_s -> B_p ?
 
 open. The second transition in `SRT_Individuation.md` is therefore **not** a phenomenality theorem.
 
-R2 must ask:
+R2D must ask:
 
 > **What, if anything, would have to be added above the existing sigma/self-consciousness architecture to explain phenomenal experiencer status without defining phenomenality into structural bearing?**
 
-A valid outcome may be that the bridge remains open; R2 is not required to close HP-B-B.
+Allowed outcomes are not limited to `bridge remains open`:
+
+```text
+bounded structural bridge with independently stated burden
+retained open constitutive bridge
+bounded no-go / impossibility result showing that the admitted structural resources cannot by themselves entail phenomenal presence
+translation to an existing phenomenal-admission framework
+```
+
+A no-go result with clear consequences counts as a successful bounded theoretical outcome under the post-rebase topic protocol; it is not merely permission to fail.
 
 ### R2A — objectification / physical individuality
 
-Use Q02 + PH-IND04 Stage O + existing process / individuation owners. Subtract Simondon, process ontology and Peirce before claiming novelty. R2A is the main input to the **downward-extension** residual.
+Use Q02 + PH-IND04 Stage O + existing process / individuation owners. Subtract Simondon, process ontology and Peirce before claiming novelty. R2A is the owner-facing workstream for **R2-DOWN-O**.
 
 ### R2B — finite position / operator individuation
 
@@ -480,13 +585,21 @@ former P1-T07 unconditional theorem = withdrawn under ST-A
 
 Any attempt to repair former P1-T07 or establish epsilon-pg independence requires its own separately authorized workline; it is not an R2B side task.
 
+R2B additionally owns the first pass on **R2-UP-NAT**. It must distinguish `threshold value is empirical/P3-P4` from the logically separate question `is there a natural phase boundary at all?`.
+
 ### R2C — bearer
 
-Execute Track-A subtraction first. Only after its result is known may bearer language propagate into consciousness / AI framing. R2C is the second main input to the **downward-extension** residual.
+Execute Track-A subtraction first. Only after its result is known may bearer language propagate into consciousness / AI framing. R2C owns **R2-DOWN-B**.
+
+The key comparison is no longer generic `history dependence versus no history`. Freeze the candidate unit and ask whether a strong rival can reproduce the **trace/ext attribution role**: which parameter changes are caused by the unit's own prior outputs, which arrive externally, what survives reset/replacement, and whether the distinction changes prospective classification or prediction.
+
+Role matching must be implementation-level. Lack of the notation `theta^trace` is not evidence of lack of the role.
 
 ### R2D — selector / subject / experiencer boundary
 
-Use the existing sigma owner as the positive middle segment and HP-B-B as the upper stopping condition. No bearer or self-consciousness result may auto-promote phenomenality. R2D is the main input to the **upward-extension** residual.
+Use the existing sigma owner as the positive middle segment and HP-B-B as the upper stopping condition. No bearer or self-consciousness result may auto-promote phenomenality. R2D cross-checks **R2-UP-NAT** and owns **R2-UP-PHEN**.
+
+A bounded proof that the admitted structural resources cannot entail phenomenality is an allowed positive theoretical result.
 
 ---
 
@@ -544,9 +657,10 @@ At B1 ask:
 Has any P2-or-stronger residual increment survived owner + external subtraction?
 Has any owner contradiction required a real repair?
 Has any downstream paper candidate materially improved?
+Has R2-CORE moved the §13 middle-level fruitfulness burden beyond "primitive role = P / derivational surplus open / Selection-specific D2 not established"?
 ```
 
-If all three are no, stop broad rebase propagation and move directly to topic discovery / publication triage.
+If all four are no, stop broad rebase propagation and move directly to topic discovery / publication triage.
 
 ### Partial-success exit PSE-1
 
@@ -558,7 +672,7 @@ AND
 R2C = Outcome C / translation
 ```
 
-then do not manufacture R2/R3 work. Record no-change disposition, run only necessary stale-surface cleanup, and proceed to R4/R5/R6 topic discovery.
+then do not manufacture bearer-specific R2/R3 work. Record the bearer no-change disposition, run only necessary stale-surface cleanup, and proceed to R4/R5/R6 topic discovery. **Do not infer that R2-CORE is answered**: one bearer target returning Outcome C does not settle the programme-level §13 derivational-surplus burden.
 
 ### Partial-success exit PSE-2
 
@@ -572,7 +686,7 @@ Open PRs are not globally frozen by this programme.
 
 Current policy:
 
-- **#859**: prerequisite for R2C; adjudicate/merge/close before bearer execution.
+- **#859**: prerequisite target-lock / inventory pre-audit for R2C and one input to R2-CORE; adjudicate/merge/close before bearer execution, but do not mistake it for the eventual full middle-level GOV-SUB01 execution.
 - **#855**: bearer/processual material may inform R2C/R2A but must not be silently treated as landed while open.
 - **#858**: attention-rival work remains independent and may strengthen R5/R2C subtraction; no need to block it.
 - **#845 / #834**: consolidation/material archive work may proceed if they do not touch frozen rebase owners.
@@ -613,7 +727,9 @@ The programme is complete enough for topic discovery when:
 - no parallel comparison owner was created;
 - R4-pre intuition cards and R5-sub dependency comparison are available;
 - bearer has an explicit residual / Outcome-C / unresolved disposition;
-- the existing sigma individuation owner has been treated as the positive middle segment, with explicit downward and upward residual dispositions rather than duplicated;
+- the existing sigma individuation owner has been treated as the positive middle segment, with **separate** R2-DOWN-O, R2-DOWN-B, R2-UP-NAT and R2-UP-PHEN dispositions rather than duplicated or collapsed;
+- R2-DOWN-B has been treated as a sigma domain-of-definition / attribution admission problem before any transition claim;
+- R2-CORE has an explicit current status and next disposition for the §13 middle-level derivational-surplus burden, even if the answer remains open;
 - in-flight manuscripts were not opportunistically reframed;
 - frontstage/public wording, if changed, points back to landed owners rather than defining theory itself.
 
