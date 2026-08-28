@@ -77,13 +77,9 @@ The current consciousness / neural-models route remains a **candidate downstream
 
 ## 1. Architecture being tested, not pre-declared
 
-The strongest currently landed floor is P0-01 AM-A:
+The strongest currently landed floor is P0-01 AM-A. The following sentence is quoted as the owner wording, not rewritten as rebase terminology:
 
-```text
-non-objectified potential / selectability
-under real constraints
--> determinate manifest distinction / actuality
-```
+> **non-objectified potential, under real constraints, acquires a determinate manifest distinction**
 
 with two already-landed guards:
 
@@ -120,6 +116,8 @@ Before editing any proposed owner:
 2. classify the edit under `Governance/SRT_EDIT_PROTOCOL.md`;
 3. if the target is a frozen canonical anchor, treat any substantive wording change as **C-class / high-risk**;
 4. record why documentation-only routing is insufficient before changing canonical text.
+
+**Definition used throughout this programme:** `documentation-only` means recording the result in navigation, bridge, audit, operations or other non-owner surfaces **without changing theory-owner wording**. Any wording inserted into a frozen canonical anchor—including a scope note or clarification—is an **owner edit**, must pass Step 0, and consumes the B1 owner-edit budget.
 
 Frozen anchors relevant to the current plan include at least:
 
@@ -239,7 +237,27 @@ Neuroscience_Annex/10_Integration_Theory_Comparisons.md
 Operations/Audits/SRT_BOUNDED_RETRIEVAL_PROTOCOL_2026-08-08.md
 ```
 
-The new increment is only a **dependency-graph comparison axis** attached beneath the existing adjacent-theory index after owner subtraction.
+The new increment is only a **dependency-graph comparison axis** attached beneath the existing adjacent-theory index after owner subtraction. The proposed comparison axes are:
+
+```text
+primitive / floor
+potentiality
+actualisation
+one-many / boundary / relation
+individuation
+historical efficacy
+habit / law
+object identity / reidentification
+autonomy / viability
+bearer / consequence ownership
+perspective / position
+selector / subject
+phenomenality
+normativity / value
+scientific-discrimination burden
+```
+
+These axes are an audit scaffold, not a second theory-comparison owner. If an existing comparison owner already answers an axis for a neighbor, R5 records the answer and moves on rather than recreating it.
 
 Initial thin-neighbor priority:
 
@@ -295,6 +313,8 @@ R1A-R1C = documentation-only / scope-routing
 ```
 
 and no P0 amendment is manufactured merely to make the rebase look substantive.
+
+Because `documentation-only` is defined in §2 as **outside the theory owner**, this early-exit consumes **zero** B1 owner-edit slots. A scope note inserted into a frozen owner is not documentation-only under this programme.
 
 Theoretical work then shifts to:
 
@@ -373,11 +393,26 @@ R1 cannot close before R4-pre has completed the first-pass Q01-Q10 extraction, s
 
 ---
 
-## 7. R2 individuation map
+## 7. R2 individuation map — extend the existing positive owner, do not reinvent it
 
-This is a **partial-order audit**, not a total adjacency ladder.
+R2 is a **partial-order generative audit**, not a total adjacency ladder and not a fresh taxonomy exercise.
 
-Required named contrasts are:
+`Core_Law/SRT_Individuation.md` already supplies a positive owner-side mechanism for the selector/subject/self-consciousness region:
+
+```text
+theta_t = theta_t^trace + theta_t^ext
+sigma(P,t) = ||theta^trace|| / (||theta^trace|| + ||theta^ext||)
+
+expanded selection
+-> [candidate first transition]
+-> subject-position
+-> [candidate second transition]
+-> self-consciousness condensation
+```
+
+The owner already types `T-IND-1` as P1-candidate, `sigma / Def-IND-1` as P2 canonical interpretation, the two transitions as P1-candidate / P2 strong candidate, and concrete threshold values as P3/P4. R2B must not spend a round rediscovering that maturity table.
+
+The five role contrasts remain **guards against collapse**, not the primary R2 deliverable:
 
 ```text
 occurrence vs persistent object
@@ -387,31 +422,71 @@ selector-position vs stake-bearing subject-position
 subject-position vs experiencer
 ```
 
-Each contrast must record:
+### R2 named residual 1 — downward extension before sigma
+
+The current sigma model is defined on an already parameterized selection pattern whose `theta` can be decomposed into trace and external contributions. It therefore does **not by itself derive** earlier object individuation or bearer closure.
+
+R2 must ask:
+
+> **Do object individuation and bearer closure each admit a genuine order parameter / transition structure, or are they different kinds of generative stabilization that should not be forced into the sigma phase-transition grammar?**
+
+Required outcomes include:
 
 ```text
-what the weaker role establishes
-what extra burden the stronger role proposes
-what existing theories already own nearby territory
-what would collapse the distinction
-what remains missing
+independent lower order parameter survives subtraction
+sigma can be extended with a non-circular derivation
+different non-phase-transition mechanism
+translation to existing process/autonomy machinery
+unresolved / NO-GO
 ```
+
+Do not assume `object -> bearer -> sigma` is a total evolutionary sequence. The burden is to determine whether there is any derivable lower extension at all.
+
+### R2 named residual 2 — upward extension beyond structural subject-position
+
+The current individuation owner reaches subject-position and self-consciousness condensation, but HP-B-B keeps:
+
+```text
+structural bearing B_s
+!=
+phenomenal bearing B_p
+
+B_s -> B_p ?
+```
+
+open. The second transition in `SRT_Individuation.md` is therefore **not** a phenomenality theorem.
+
+R2 must ask:
+
+> **What, if anything, would have to be added above the existing sigma/self-consciousness architecture to explain phenomenal experiencer status without defining phenomenality into structural bearing?**
+
+A valid outcome may be that the bridge remains open; R2 is not required to close HP-B-B.
 
 ### R2A — objectification / physical individuality
 
-Use Q02 + PH-IND04 Stage O + existing process / individuation owners. Subtract Simondon, process ontology and Peirce before claiming novelty.
+Use Q02 + PH-IND04 Stage O + existing process / individuation owners. Subtract Simondon, process ontology and Peirce before claiming novelty. R2A is the main input to the **downward-extension** residual.
 
 ### R2B — finite position / operator individuation
 
-`Core_Law/SRT_Individuation.md` already owns subjectless-selection -> perspective-bearing position dynamics. Do not create a duplicate `Selection -> Position` theorem.
+`Core_Law/SRT_Individuation.md` already owns subjectless-selection -> perspective-bearing position dynamics and the sigma phase model. Do not create a duplicate `Selection -> Position` theorem or a duplicate maturity table.
+
+For §4.3 specifically, R2B may **cite** the owner’s existing roles for `kappa_0` and `epsilon` as constraints on the current model, but must not re-derive, upgrade, repair or silently reopen them. Preserve exactly the current boundary:
+
+```text
+kappa_0 = structural precondition in the owner model, not a new driver
+ε roles at the two transitions = P2/P3 conditional candidates
+former P1-T07 unconditional theorem = withdrawn under ST-A
+```
+
+Any attempt to repair former P1-T07 or establish epsilon-pg independence requires its own separately authorized workline; it is not an R2B side task.
 
 ### R2C — bearer
 
-Execute Track-A subtraction first. Only after its result is known may bearer language propagate into consciousness / AI framing.
+Execute Track-A subtraction first. Only after its result is known may bearer language propagate into consciousness / AI framing. R2C is the second main input to the **downward-extension** residual.
 
 ### R2D — selector / subject / experiencer boundary
 
-Preserve owner distinctions and HP-B. No bearer result may auto-promote phenomenality.
+Use the existing sigma owner as the positive middle segment and HP-B-B as the upper stopping condition. No bearer or self-consciousness result may auto-promote phenomenality. R2D is the main input to the **upward-extension** residual.
 
 ---
 
@@ -455,7 +530,13 @@ because `stabilized trace` imports persistence and `concern` imports downstream 
 
 After Track A + at most **four owner-edit PRs**, stop and review programme yield.
 
-Count as an owner-edit PR only a PR that touches an actual theory owner; read-only audits do not consume this budget.
+**B1 counter source of truth:** this subsection. Current count at R0 freeze:
+
+```text
+owner-edit PRs landed under this programme: 0 / 4
+```
+
+Every later rebase PR that lands a theory-owner edit must increment this count in the same PR and name the owner touched. Read-only audits, navigation/bridge/operations `documentation-only` records, and the frontmatter governance hotfix do not consume the budget.
 
 At B1 ask:
 
@@ -532,6 +613,7 @@ The programme is complete enough for topic discovery when:
 - no parallel comparison owner was created;
 - R4-pre intuition cards and R5-sub dependency comparison are available;
 - bearer has an explicit residual / Outcome-C / unresolved disposition;
+- the existing sigma individuation owner has been treated as the positive middle segment, with explicit downward and upward residual dispositions rather than duplicated;
 - in-flight manuscripts were not opportunistically reframed;
 - frontstage/public wording, if changed, points back to landed owners rather than defining theory itself.
 
