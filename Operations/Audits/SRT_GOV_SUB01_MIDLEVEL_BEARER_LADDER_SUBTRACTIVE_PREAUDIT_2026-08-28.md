@@ -12,6 +12,7 @@ date: 2026-08-28
 dependency:
   - SRT-GOV-SUB01-SUBTRACTIVE-AUDIT
   - SRT-OPEN-TENSIONS
+  - SRT-INDIVIDUATION
   - SRT-OPS-AUDIT-POST-PHASE0-5-OPEN-TENSIONS-SELECTION-FRUITFULNESS-SYNC-20260819
   - SRT-OPS-AUDIT-PRIMITIVE-ROLE-EXHAUSTIVENESS-ADJUDICATION-20260819
   - SRT-OPS-AUDIT-SELECTION-PRIMITIVE-DERIVATIONAL-SURPLUS-DUEL-EXECUTION-20260819
@@ -143,6 +144,38 @@ Q06 additionally carries a built-in dissociation: 「非人的地形通常没有
 
 This is one of the protocol's own worked examples of an acceptable target (§6 Step 1). Corresponds to `A3 Bearer` in the PH-IND04 ladder.
 
+#### T3 sharpening — attribution admission, not generic history dependence
+
+Per the #860 R2-DOWN-B refinement recorded on this PR, `history dependence / consequence return` is too coarse to lock. `Core_Law/SRT_Individuation.md` (lines 65-74) already defines the σ owner on a decomposition:
+
+```text
+theta_t = theta_t^trace + theta_t^ext
+
+theta^trace = written by P's own prior outputs through writeback (Ax-Op-03b)
+theta^ext   = written by external conditions
+```
+
+So the bearer-side lower burden is first a **domain-of-definition / attribution admission** question, not a transition question:
+
+> Under a prospectively frozen candidate unit, grain, and reset/replacement rule, can the Markov-blanket / active-inference rival reproduce the **role distinction** between parameter changes attributable to the unit's own prior outputs and changes imposed externally? If yes, does non-outsourcing add any further independent classification or prospective prediction?
+
+Two guards bind the later Step 3-7 execution:
+
+**G-T3-1 — role, not notation.** A rival does not fail for lacking the symbols `theta^trace / theta^ext`. It fails only if the matched attribution role cannot be implemented **without re-importing the target relation**. Scoring a rival down for vocabulary is `R0 rhetorical redundancy` on the SRT side, not rival failure.
+
+**G-T3-2 — no σ bootstrap.** `σ` / `T-IND-1` may *identify* the role that needs testing; they may **not** be cited as evidence that bearer independence is established. The reason is internal and checkable: `Def-IND-1` already presupposes own-output writeback attribution, and `T-IND-2` condition 2 (「承担内生化：代价不再可以被环境完全吸收」) already *is* the non-outsourcing relation under test. Citing either as support would be circular. `T-IND-1` is additionally only `P1-candidate` per that file's own claim table.
+
+#### Allowed T3 dispositions
+
+Execution may return, in addition to the protocol's residue labels:
+
+```text
+lower boundary = sigma domain-of-definition precondition
+                 (admission, not transition)
+```
+
+This disposition records that the attribution role is a precondition for σ being well-posed at all, rather than a threshold crossing — and it is a disposition, not a residue label.
+
 ### T4 — Bearer / selector separation
 
 > **Preserve** the classification that distinguishes (a) a system whose consequences return to the same unit but whose future option-structure is unchanged, from (b) a system whose same-bearer history modulates non-equivalent future paths.
@@ -219,7 +252,7 @@ Where each check is predicted to fire, so execution cannot skip it:
 | 7.1 Measurement blindness | T2 — residual excluded-branch force may be real and currently unmeasurable; absence of a proxy is not absence of loss |
 | 7.2 Short-horizon masking | T4 — future-selectability rewrite is by construction long-horizon; a short window will read as no loss |
 | 7.3 Redundancy / degeneracy | T1 — trace floor and write-in may be mutually compensating |
-| 7.4 Hidden reparameterization | **T3 — highest risk.** A Markov-blanket rival can rename bearer-return as blanket-conditional dependence |
+| 7.4 Hidden reparameterization | **T3 — highest risk.** A Markov-blanket rival can rename bearer-return as blanket-conditional dependence. Adjudicate under `G-T3-1`: renaming is not failure; re-importing the target relation is |
 | 7.5 Target laundering | **All targets.** Enforced by §2.1 above; any round that defeats WRONG-1/2/3 is void |
 | 7.6 Scale collapse | T1, T3 — cell / organism / institution readings must not be silently interchanged |
 | 7.7 Bearer relocation | **T3, T4 — highest risk.** Relocating the bearer boundary can manufacture or destroy consequence return at will; the bearer unit must be frozen first, per the Unit-Binding Gate |
@@ -233,7 +266,7 @@ Graded before execution so that a negative result cannot later be framed as a su
 
 | Target | Outcome-C risk | Reasoning |
 |---|---|---|
-| T3 bearer consequence return | **HIGH** | Markov blanket is deliberately role-matched; this is where the strongest published rival already lives |
+| T3 bearer consequence return | **HIGH** | Markov blanket is deliberately role-matched; this is where the strongest published rival already lives. Under the T3 sharpening the live question narrows to whether the rival can carry the `theta^trace / theta^ext` attribution role without re-importing it |
 | T1 three-step threshold | **MEDIUM-HIGH** | Thermodynamic irreversibility accounting may reproduce the trace threshold without the three-step framing |
 | T4 bearer / selector separation | **MEDIUM** | Bounded gating rivals absorbed P24-1/3/4, but future-selectability rewrite has not yet been put to them directly |
 | T5 non-derivation of phenomenality | **N/A** | Ordering consequence; cannot yield D2 by construction. Value is discipline, not discrimination |
@@ -253,6 +286,8 @@ T2 is also the only target whose design maps directly onto an executable empiric
 - Does not claim T2 will produce surplus. A LOW-MEDIUM Outcome-C risk is a planning estimate, not a prediction of success.
 - Does not reopen RC-A, PD-A, Phase 0.5, or the `R`/`E` adjudication.
 - Does not treat the A0-A7 ladder as an evolutionary or generative sequence. It remains an analytical admission discipline, per PH-IND04 §14 and the Q25 packet §1.3.
+- Does not request or supply a residue verdict for T3. The T3 sharpening narrows what will be locked at execution; it does not adjudicate the attribution-admission question, and `σ` / `T-IND-1` are cited here only to *name* the role, never as evidence for it (`G-T3-2`).
+- Does not modify `Core_Law/SRT_Individuation.md`, `Def-IND-1`, `σ_{sr}^{sub}`, `T-IND-1`, or `T-IND-2`.
 
 ---
 
@@ -260,6 +295,7 @@ T2 is also the only target whose design maps directly onto an executable empiric
 
 Before any Step 3 round may begin, the following must be frozen and recorded prospectively:
 
+0. for T3 specifically: the candidate unit, grain, and reset/replacement rule, frozen prospectively, with `G-T3-1` and `G-T3-2` restated in the execution record;
 1. one target from T1-T5, with its mode declared;
 2. the bearer unit (Unit-Binding Gate), before any consequence-return claim;
 3. one named rival family with state variables, update class, calibration range, and revision/complexity cost;
