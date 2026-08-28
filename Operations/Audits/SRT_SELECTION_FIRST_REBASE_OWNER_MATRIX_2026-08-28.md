@@ -38,6 +38,8 @@ Before any rebase edit:
 4. frozen-anchor semantic edits are C-class high-risk and require explicit justification;
 5. if a documentation-only route can solve the problem, prefer it.
 
+`documentation-only` has one fixed meaning in this programme: the result is recorded outside the theory owner, in navigation / bridge / audit / operations or another non-owner surface. **Any wording added inside a frozen anchor, including a scope note, is an owner edit**, requires Step 0 authorization, and consumes the master-plan B1 owner-edit budget.
+
 ### Step 1 — identify the current owner
 
 ```text
@@ -80,7 +82,7 @@ A rebase PR fails routing if it creates a parallel owner where one already exist
 | Freeze | **YES** — all four relevant canonical anchors must be checked under Freeze/Edit Protocol |
 | Already owned | non-objectified potential under real constraints -> determinate manifestation; no completed latent-object menu |
 | Residual audit | whether stale exposition, not P0 itself, is the main source of menu-like readings |
-| Early-exit | if owner language is sufficient, documentation-only; no P0 amendment |
+| Early-exit | if owner language is sufficient, documentation-only outside the owner; no P0 amendment |
 
 Do not register `determinate articulation` as a second P0 primitive from this rebase.
 
@@ -139,24 +141,87 @@ Do not register `determinate articulation` as a second P0 primitive from this re
 | Process / individuation bridge | existing processual bearer / individuation bridge family |
 | Prior-art pressure | Simondon; process ontology; Peirce habit language |
 | Freeze | normally no direct frozen edit unless an upstream canonical owner is touched |
-| Residual question | what additional SRT dependency structure survives after process-individuation subtraction? |
+| Residual question | does object individuation admit an independent order parameter / transition, or should it remain a different stabilization mechanism below the sigma owner? |
 | Shorthand | `Object = still this` is exposition only |
 
 Do not claim novelty for `individuals are generated`, `objects are processes`, or `matter is habit`.
 
 ---
 
-## 6. Position / selector / subject individuation
+## 6. Positive individuation owner and its open extensions
 
-| Field | Route |
-|---|---|
-| Primary owner | `Core_Law/SRT_Individuation.md` |
-| Non-jump guard | PH-IND04 |
-| Already owned | subjectless selection can historically condense a perspective-bearing / subject position; `theta_trace + theta_ext` style dynamics already exist |
-| Residual audit | typing and empirical/maturity status, not inventing `Selection -> Position` anew |
-| Freeze | check exact target before edit; do not assume authority from this matrix |
+`Core_Law/SRT_Individuation.md` is not merely a non-jump guard. It already contains a positive generative model:
 
-This rebase does not own a new position theorem.
+```text
+theta_t = theta_t^trace + theta_t^ext
+sigma(P,t) = ||theta^trace|| / (||theta^trace|| + ||theta^ext||)
+
+expanded selection
+-> candidate first transition
+-> subject-position
+-> candidate second transition
+-> self-consciousness condensation
+```
+
+Its current burden table already assigns:
+
+```text
+T-IND-1 individuation-as-transition = P1-candidate
+sigma / Def-IND-1 = P2 canonical interpretation
+two transitions = P1-candidate / P2 strong candidate
+specific threshold values = P3/P4
+```
+
+Therefore R2B must not duplicate either the `Selection -> Position` mechanism or its maturity typing.
+
+### Residual R2-DOWN — below the sigma model
+
+The sigma definition presupposes an already parameterized selection pattern with trace/external decomposition. It does not itself derive objecthood or bearerhood.
+
+Named question:
+
+> Do object individuation and bearer closure have their own genuine order parameter / transition structure, can either be derived non-circularly as a lower extension of the sigma architecture, or are they categorically different stabilization mechanisms?
+
+Allowed dispositions:
+
+```text
+independent lower order parameter
+non-circular sigma extension
+different non-phase-transition mechanism
+translation to existing process/autonomy machinery
+unresolved / NO-GO
+```
+
+R2A and R2C feed this residual.
+
+### Residual R2-UP — above structural subject-position
+
+HP-B-B remains controlling:
+
+```text
+B_s != B_p
+B_s -> B_p ?
+```
+
+The owner’s second transition to self-consciousness condensation is therefore not a phenomenality theorem.
+
+Named question:
+
+> What, if anything, must be added above the existing sigma / subject-position / self-consciousness architecture to explain phenomenal experiencer status without defining phenomenality into structural bearing?
+
+A retained open bridge is an allowed outcome. R2D feeds this residual.
+
+### R2B epsilon / kappa boundary
+
+For `SRT_Individuation.md §4.3`, R2B may cite the current roles but may not repair or reopen them:
+
+```text
+kappa_0 = structural precondition in the owner model, not a new driver
+epsilon roles at the two transitions = P2/P3 conditional candidates
+former P1-T07 unconditional theorem = withdrawn under ST-A
+```
+
+No R2B side edit may attempt to re-prove former P1-T07, establish epsilon-pg independence, or upgrade these roles. Such work requires a separate authorized workline.
 
 ---
 
@@ -173,7 +238,7 @@ This rebase does not own a new position theorem.
 | Current risk | **Outcome-C HIGH** |
 | Required terminal outcome | distinctive residual / translation-Outcome C / unresolved / spec-stage NO-GO |
 
-Do not propagate bearer novelty claims before #859 is resolved and the role-matched subtraction is executed.
+Do not propagate bearer novelty claims before #859 is resolved and the role-matched subtraction is executed. R2C also supplies the bearer side of R2-DOWN; it must not assume bearer closure is phase-transition-shaped before that audit.
 
 ---
 
@@ -181,13 +246,14 @@ Do not propagate bearer novelty claims before #859 is resolved and the role-matc
 
 | Field | Route |
 |---|---|
-| Role ladder | PH-IND04 |
+| Positive middle owner | `Core_Law/SRT_Individuation.md` sigma / two-transition model |
+| Role ladder guard | PH-IND04 |
 | Hard-problem owner | `Philosophy/SRT_HardProblem_Epistemology.md` |
 | Current author decision | HP-B-B: `B_s != B_p`; `B_s -> B_p` open |
 | Preserve | `Bearer / Subject-position !-> Experiencer` |
-| Residual | phenomenal necessity remains an open constitutive bridge |
+| Residual | R2-UP / phenomenal necessity remains an open constitutive bridge |
 
-No rebase document may use bearer hardening as phenomenality proof.
+No rebase document may use bearer hardening or self-consciousness condensation as phenomenality proof.
 
 ---
 
@@ -223,7 +289,27 @@ scripts/check_active_theory_assimilation.py
 
 ### R5 residual increment
 
-Add only a dependency-graph comparison axis **under** the existing Adjacent Theory Interface Index after owner subtraction.
+Add only a dependency-graph comparison axis **under** the existing Adjacent Theory Interface Index after owner subtraction. Proposed audit axes:
+
+```text
+primitive / floor
+potentiality
+actualisation
+one-many / boundary / relation
+individuation
+historical efficacy
+habit / law
+object identity / reidentification
+autonomy / viability
+bearer / consequence ownership
+perspective / position
+selector / subject
+phenomenality
+normativity / value
+scientific-discrimination burden
+```
+
+These axes are the new comparison scaffold; they are not a parallel comparison owner. Where an existing file already supplies an answer, R5 records and routes it instead of restating it.
 
 High-density neighbors do not need wholesale re-reading merely for coverage. Thin-neighbor priority currently includes Peirce, structural realism and neutral monism.
 
@@ -288,16 +374,19 @@ non-overlapping read-only/material work -> may proceed
 | Work item | Primary owner / index | Frozen? | First action | Allowed outcome |
 |---|---|---:|---|---|
 | R4-pre intuition extraction | Q01-Q10, then Q11-Q17/Q25-Q28 | no owner edit | read-only extraction | candidate cards / no increment |
-| R5-sub comparison | Adjacent Theory Interface Index + dedicated comparison family | no owner edit | owner subtraction | dependency-axis increment / no change |
+| R5-sub comparison | Adjacent Theory Interface Index + dedicated comparison family | no owner edit | owner subtraction across 15 dependency axes | dependency-axis increment / no change |
 | R2C-pre bearer | PH-IND02/05/06/CONSC03 + #859 | no canonical edit by default | strong-rival subtraction | residual / Outcome C / NO-GO |
-| R1A P0/L0 | Minimal Axioms + L0 + 21b + Formal Axioms index | **yes** for canonical targets | freeze check + early-exit test | documentation-only preferred / high-risk owner edit only if gap survives |
+| R1A P0/L0 | Minimal Axioms + L0 + 21b + Formal Axioms index | **yes** for canonical targets | freeze check + early-exit test | documentation-only outside owner preferred / high-risk owner edit only if gap survives |
 | R1B operator/state-space | Reference Ontology + Seven Theses + Operator Basics + Core22 + Symbol Table | mixed; Core22/Symbol frozen | scope audit | navigation/bridge clarification or C-class edit |
 | R1C occurrence/L2 | P0/EX-A + L2 owners + PH-IND05 | mixed | owner subtraction | no change / bounded alignment |
-| R2A object | PH-IND04/process owners | usually no | prior-art subtraction | residual / translation |
-| R2B position | Individuation owner | check target | owner audit | no duplicate theorem |
-| R2D subject/experiencer | Individuation + Hard Problem | mixed | non-jump sync | preserve open bridge unless separately gated |
+| R2A object | PH-IND04/process owners | usually no | test R2-DOWN after prior-art subtraction | lower parameter / different mechanism / translation / unresolved |
+| R2B position | `SRT_Individuation.md` sigma owner | check target | owner subtraction, not maturity retyping | preserve existing sigma model; no duplicate theorem; no epsilon/kappa repair |
+| R2C bearer | PH-IND02/05/06/CONSC03 + #859 | no canonical edit by default | test R2-DOWN + strong rival | bearer residual / translation / NO-GO |
+| R2D subject/experiencer | Individuation + Hard Problem | mixed | test R2-UP under HP-B-B | open bridge / bounded new burden; no phenomenality promotion |
 | R3 domain propagation | domain owners | varies | only after landed owner decision | stale-surface repair only |
 | R7 public sync | README / public / CORE_REVERSALS | mostly navigation | last | narrow synchronization |
+
+B1 owner-edit counting is owned by the master plan §10; this matrix does not maintain a second counter.
 
 ---
 
@@ -306,15 +395,17 @@ non-overlapping read-only/material work -> may proceed
 A rebase PR fails routing if it:
 
 1. edits a frozen canonical anchor without declaring C-class/high-risk status;
-2. creates a parallel owner for content already owned;
-3. uses a source-intuition file as definition authority;
-4. treats bridge prior art as proof of SRT;
-5. treats current comparison coverage as blank and rebuilds it from scratch;
-6. changes public wording before relevant owner decisions land;
-7. uses concern / stake / phenomenality to repair a primitive P0 burden;
-8. counts an open PR as landed evidence;
-9. reopens a settled gate without a dedicated author decision;
-10. turns the non-jump role map into a compulsory total evolutionary sequence.
+2. calls an edit inside a frozen theory owner `documentation-only`;
+3. creates a parallel owner for content already owned;
+4. uses a source-intuition file as definition authority;
+5. treats bridge prior art as proof of SRT;
+6. treats current comparison coverage as blank and rebuilds it from scratch;
+7. changes public wording before relevant owner decisions land;
+8. uses concern / stake / phenomenality to repair a primitive P0 burden;
+9. counts an open PR as landed evidence;
+10. reopens a settled gate, former P1-T07, or epsilon/kappa burden without a dedicated author decision;
+11. turns the non-jump role map into a compulsory total evolutionary sequence;
+12. ignores the existing sigma owner and rebuilds selector/subject individuation from scratch.
 
 ---
 
@@ -328,4 +419,11 @@ R4-pre + R5-sub + R2C-pre
 
 not as immediate P0 editing.
 
-If these read-only passes show that AM-A/P0 already owns the new floor and bearer collapses to role-isomorphic prior art, the correct repository upgrade may be mostly **documentation propagation + new topic discovery**, not a canonical rewrite.
+Its positive R2 programme is now explicit:
+
+```text
+R2-DOWN: object / bearer -> ? -> existing sigma individuation owner
+R2-UP: existing sigma subject/self-consciousness owner -> ? -> phenomenal experiencer
+```
+
+If the read-only passes show that AM-A/P0 already owns the new floor, R2-DOWN collapses to existing process/autonomy machinery, and R2-UP properly remains open under HP-B-B, the correct repository upgrade may be mostly **documentation propagation + new topic discovery**, not a canonical rewrite.
