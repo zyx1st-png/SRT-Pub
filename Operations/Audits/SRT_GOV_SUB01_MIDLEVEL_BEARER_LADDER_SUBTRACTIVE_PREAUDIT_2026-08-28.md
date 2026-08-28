@@ -165,6 +165,8 @@ Two guards bind the later Step 3-7 execution:
 
 **G-T3-2 — no σ bootstrap.** `σ` / `T-IND-1` may *identify* the role that needs testing; they may **not** be cited as evidence that bearer independence is established. The reason is internal and checkable: `Def-IND-1` already presupposes own-output writeback attribution, and `T-IND-2` condition 2 (「承担内生化：代价不再可以被环境完全吸收」) already *is* the non-outsourcing relation under test. Citing either as support would be circular. `T-IND-1` is additionally only `P1-candidate` per that file's own claim table.
 
+**G-T3-3 — attribution ceiling.** `theta^trace / theta^ext` may identify a candidate **middle-level** role. Unless A0 (§6.1) derives that role from the declared primitive mode **without importing same-unit attribution as a premise**, a T3 win is **bearer-package surplus**, not Selection-primitive derivational surplus, and does not score toward §13.
+
 #### Allowed T3 dispositions
 
 Execution may return, in addition to the protocol's residue labels:
@@ -241,6 +243,39 @@ T5  Mode P0-01   (ordering/exclusion consequence, E-adjacent)
 
 `R -> E` is not established, so no T-x result may be transferred between modes.
 
+> **These assignments are attribution *hypotheses*, not earned provenance.** Every target above is sourced from a middle-level owner, not from the kernel: T2 from `Q06` companion exposition, T3 from the bearer / individuation architecture, T4 from the PH-IND04 bearer-selector ladder. `Core_Law/SRT_Individuation.md` marks `T-IND-1` only `P1-candidate` and `σ / Def-IND-1` `P2 canonical interpretation` (§八 claim table), and states at line 292 that 「本文件是 L1，不能反向约束 L0」. **A target does not become Selection-primitive surplus merely because the repository contains it.**
+
+### 6.1 A0 attribution / derivability gate (prospective, precedes Step 3)
+
+Before any replacement or removal duel:
+
+```text
+locked target T-x
+-> declared attribution mode (R or P0-01)
+-> enumerate only premises licensed by that mode
+-> derive T-x without importing the target relation from a downstream owner
+-> only then run rival subtraction
+```
+
+**Allowed A0 dispositions:**
+
+```text
+ATTRIBUTABLE-UNDER-MODE
+NOT-R-ATTRIBUTABLE / MIDDLE-LEVEL-OWNER-ONLY
+REQUIRES-SEPARABLE-E-COMMITMENT
+DERIVATION-UNRESOLVED / NO-GO
+```
+
+**Consequence of failing A0.** The target may still be worth running as a middle-level SRT architecture target, and rival subtraction may still proceed for the middle-level package — but the result **must not score toward `Core/SRT_OPEN_TENSIONS.md §13` Selection-primitive fruitfulness**, and the attribution ceiling must be recorded alongside it.
+
+This is the R2-CORE separation registered in #860:
+
+```text
+primitive admission
+!= middle-level derivational surplus
+!= downstream D2
+```
+
 ---
 
 ## 7. Mandatory failure-check pre-map (§7.1-7.8)
@@ -272,9 +307,13 @@ Graded before execution so that a negative result cannot later be framed as a su
 | T5 non-derivation of phenomenality | **N/A** | Ordering consequence; cannot yield D2 by construction. Value is discipline, not discrimination |
 | T2 excluded-branch continued force | **LOW-MEDIUM** | The one target where standard rivals model the realized trajectory and *not* the counterfactual-branch residue. The three-mode subset-selection claim is harder still for a rival to reproduce than bare residue. Highest expected information per unit of work |
 
-**Planning consequence**: execute **T2 first**, then T4. T3 should be run knowing it will probably return Outcome C — that is still worth recording, but it should not be the first round, and a null there must not be read as a verdict on T2/T4.
+**Planning consequence**: the Outcome-C ordering above is **subordinate to the A0 gate (§6.1)**. Run a cheap A0 derivability triage across T1-T4 **first**; only then order the surviving targets by Outcome-C risk.
+
+Within whatever survives A0: execute **T2 first**, then T4. T3 should be run knowing it will probably return Outcome C — that is still worth recording, but it should not be the first round, and a null there must not be read as a verdict on T2/T4.
 
 T2 is also the only target whose design maps directly onto an executable empirical contrast (matched realized endpoint, different excluded set), which is why it is the natural bridge to the separate publication workline.
+
+> **T2 caveat.** Low Outcome-C risk is a statement about rival sparsity, not about provenance. T2 must **not** be promoted as Selection-specific merely because rivals look thin there, if its connection to `R` has not been earned at A0. Sparse rivals plus an unearned attribution is the most flattering way to fail.
 
 ---
 
@@ -288,6 +327,7 @@ T2 is also the only target whose design maps directly onto an executable empiric
 - Does not treat the A0-A7 ladder as an evolutionary or generative sequence. It remains an analytical admission discipline, per PH-IND04 §14 and the Q25 packet §1.3.
 - Does not request or supply a residue verdict for T3. The T3 sharpening narrows what will be locked at execution; it does not adjudicate the attribution-admission question, and `σ` / `T-IND-1` are cited here only to *name* the role, never as evidence for it (`G-T3-2`).
 - Does not modify `Core_Law/SRT_Individuation.md`, `Def-IND-1`, `σ_{sr}^{sub}`, `T-IND-1`, or `T-IND-2`.
+- Does not claim that any target is `R`-attributable. The §6 mode assignments are hypotheses to be tested at A0 (§6.1), and no target scores toward `§13` Selection-primitive fruitfulness until A0 returns `ATTRIBUTABLE-UNDER-MODE`.
 
 ---
 
@@ -295,7 +335,8 @@ T2 is also the only target whose design maps directly onto an executable empiric
 
 Before any Step 3 round may begin, the following must be frozen and recorded prospectively:
 
-0. for T3 specifically: the candidate unit, grain, and reset/replacement rule, frozen prospectively, with `G-T3-1` and `G-T3-2` restated in the execution record;
+0. the A0 attribution / derivability gate (§6.1) run and its disposition recorded — Step 3 may not begin before this;
+0a. for T3 specifically: the candidate unit, grain, and reset/replacement rule, frozen prospectively, with `G-T3-1`, `G-T3-2` and `G-T3-3` restated in the execution record;
 1. one target from T1-T5, with its mode declared;
 2. the bearer unit (Unit-Binding Gate), before any consequence-return claim;
 3. one named rival family with state variables, update class, calibration range, and revision/complexity cost;
