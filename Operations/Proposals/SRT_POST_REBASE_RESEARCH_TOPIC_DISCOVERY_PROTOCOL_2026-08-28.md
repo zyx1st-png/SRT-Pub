@@ -95,6 +95,28 @@ Then use the relevant dedicated comparison files and bounded retrieval protocol.
 
 Do not construct a second independent comparative matrix when an existing owner can receive the needed dependency-graph axis.
 
+For the current Selection-first rebase, use the following **comparison axes as an audit scaffold beneath the existing index**, not as a new owner:
+
+```text
+primitive / floor
+potentiality
+actualisation
+one-many / boundary / relation
+individuation
+historical efficacy
+habit / law
+object identity / reidentification
+autonomy / viability
+bearer / consequence ownership
+perspective / position
+selector / subject
+phenomenality
+normativity / value
+scientific-discrimination burden
+```
+
+Where an existing comparison owner already contains the relevant answer for one of these axes, record and route it; do not restate the theory merely to fill a matrix cell.
+
 A candidate fails this gate if the supposed novelty is already explicitly recorded in SRT as neighboring-theory convergence / translation / pressure.
 
 ---
