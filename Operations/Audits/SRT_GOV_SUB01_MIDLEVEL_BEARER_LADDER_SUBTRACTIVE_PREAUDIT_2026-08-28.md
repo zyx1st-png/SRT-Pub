@@ -231,21 +231,54 @@ Each target must declare its attribution mode **before** execution:
 - **Mode R** — attribution to the AM-A minimal kernel only; `E` inadmissible as a scored premise.
 - **Mode P0-01** — attribution to the full canonical package; `E`-carried consequences recorded as `P0-01 PACKAGE CONSEQUENCE — ATTRIBUTABLE TO E`, never as kernel surplus.
 
-Provisional assignment for planning (revisable at execution freeze):
-
-```text
-T1  Mode R
-T2  Mode R
-T3  Mode R
-T4  Mode R
-T5  Mode P0-01   (ordering/exclusion consequence, E-adjacent)
-```
-
 `R -> E` is not established, so no T-x result may be transferred between modes.
 
-> **These assignments are attribution *hypotheses*, not earned provenance.** Every target above is sourced from a middle-level owner, not from the kernel: T2 from `Q06` companion exposition, T3 from the bearer / individuation architecture, T4 from the PH-IND04 bearer-selector ladder. `Core_Law/SRT_Individuation.md` marks `T-IND-1` only `P1-candidate` and `σ / Def-IND-1` `P2 canonical interpretation` (§八 claim table), and states at line 292 that 「本文件是 L1，不能反向约束 L0」. **A target does not become Selection-primitive surplus merely because the repository contains it.**
+### 6.0 A0 table — requested mode is not assigned mode
 
-### 6.1 A0 attribution / derivability gate (prospective, precedes Step 3)
+`Mode R` for T1-T4 is **`REQUESTED / NOT YET EARNED`**, not an assignment. Under Mode R the admissible premise set is `R + shared B'` with `E` inadmissible as a scored premise.
+
+| Target | Requested mode | Target owner | Allowed premise set | Missing bridge | A0 status |
+|---|---|---|---|---|---|
+| T1 three-step completeness / forward-constraining trace | R | `Q05` companion exposition + historical-trace machinery | `R + B'`, `E` inadmissible | `R -> irreversible historical trace` | **NOT-R-ATTRIBUTABLE** / historical-selection package target |
+| T2 excluded-branch continued force | R | `Q06` companion exposition | `R + B'`, `E` inadmissible | `R -> persistent differential effect of excluded alternatives` (and it presupposes the trace/writeback C2/C3b already deny) | **NOT-R-ATTRIBUTABLE** / source-intuition bridge required |
+| T3 bearer own-history attribution / non-outsourcing | R | PH-IND + `SRT_Individuation` middle architecture | `R + B'`, `E` inadmissible | `R -> recurrent identity + consequence bearing` | **NOT-R-ATTRIBUTABLE** / middle-level-owner-only pending bridge |
+| T4 bearer → selector separation | R | PH-IND04 + Stable-ISP / selector architecture | `R + B'`, `E` inadmissible | `R -> continued selectability / future-selectability modulation` | **NOT-R-ATTRIBUTABLE** / middle-level-owner-only pending bridge |
+| T5 non-derivation of phenomenal presence | P0-01 | PH-IND04 `A7` | full package incl. `E` | n/a — ordering consequence, not a derivation target | not applicable at A0 |
+
+**Evidence is reused, not re-run.** The negative primitive-link results already exist in `Operations/Audits/SRT_SELECTION_PRIMITIVE_DERIVATIONAL_SURPLUS_DUEL_EXECUTION_2026-08-19.md` and are quoted rather than recomputed:
+
+- **C2** — "Nothing in the remaining P0-01 ordering says every anchored event must preserve an irreversible historical trace"; summary row `primitive-link fails`.
+- **C3b** — `ADDITIVE NON-ENTAILMENT`; "P0-01 does not add history persistence, writeback, scaffold maintenance, or sedimented downward constraint"; summary row `primitive-link fails`.
+- **C4** — "Primitive Selection does not itself supply recurrent identity, perspective, historical reconstitution, continued-selectability, or consequence bearing"; summary row `primitive-link fails`.
+
+The two qualifiers `source-intuition bridge required` and `pending bridge` are sub-labels on `NOT-R-ATTRIBUTABLE`, not new members of the §6.1 disposition enum.
+
+**This is a provenance verdict, not a quality verdict:**
+
+```text
+repo contains T-x
+!=
+AM-A minimal kernel derives T-x
+```
+
+### 6.0a Resolving a `NOT-R-ATTRIBUTABLE` target
+
+For each missing bridge, exactly one of:
+
+1. identify an already-landed P1 / constitutive theorem that non-circularly carries it;
+2. show a derivation from premises legitimately attributable to the declared mode;
+3. downgrade the target to middle-level package auditing only;
+4. record `DERIVATION-UNRESOLVED / NO-GO` and the missing bridge.
+
+Until then, a successful rival discrimination at T2/T3/T4 is **middle-level package surplus** and is not evidence for `Core/SRT_OPEN_TENSIONS.md §13` Selection-primitive fruitfulness.
+
+> **Architecture note.** The weak point this triage exposes is no longer P0 wording. It is the **derivational spine from primitive actualisation to rich middle-level structure** — `P0/AM-A -> ? -> historical selection / excluded-branch residue / bearer / selector`. Each `?` is currently unbridged.
+
+> **These requested modes are attribution *hypotheses*, not earned provenance.** Every target above is sourced from a middle-level owner, not from the kernel: T2 from `Q06` companion exposition, T3 from the bearer / individuation architecture, T4 from the PH-IND04 bearer-selector ladder. `Core_Law/SRT_Individuation.md` marks `T-IND-1` only `P1-candidate` and `σ / Def-IND-1` `P2 canonical interpretation` (§八 claim table), and states at line 292 that 「本文件是 L1，不能反向约束 L0」. **A target does not become Selection-primitive surplus merely because the repository contains it.**
+
+### 6.1 A0 attribution / derivability gate (definition; precedes Step 3)
+
+> §6.0 records the **preliminary A0 pass already run** against the 2026-08-19 duel results. This subsection defines the gate that pass instantiates, and governs any later A0 round.
 
 Before any replacement or removal duel:
 
@@ -307,9 +340,9 @@ Graded before execution so that a negative result cannot later be framed as a su
 | T5 non-derivation of phenomenality | **N/A** | Ordering consequence; cannot yield D2 by construction. Value is discipline, not discrimination |
 | T2 excluded-branch continued force | **LOW-MEDIUM** | The one target where standard rivals model the realized trajectory and *not* the counterfactual-branch residue. The three-mode subset-selection claim is harder still for a rival to reproduce than bare residue. Highest expected information per unit of work |
 
-**Planning consequence**: the Outcome-C ordering above is **subordinate to the A0 gate (§6.1)**. Run a cheap A0 derivability triage across T1-T4 **first**; only then order the surviving targets by Outcome-C risk.
+**Planning consequence**: the Outcome-C ordering below **does not currently control**. The A0 triage (§6.0) has already run and returned `NOT-R-ATTRIBUTABLE` for all of T1-T4, so the live question is no longer "which target first" but "which missing bridge, resolved how" per §6.0a. Outcome-C ranking resumes only for targets that clear A0, or explicitly as middle-level package auditing with the attribution ceiling recorded.
 
-Within whatever survives A0: execute **T2 first**, then T4. T3 should be run knowing it will probably return Outcome C — that is still worth recording, but it should not be the first round, and a null there must not be read as a verdict on T2/T4.
+Held for that case — within whatever clears A0: execute **T2 first**, then T4. T3 should be run knowing it will probably return Outcome C — that is still worth recording, but it should not be the first round, and a null there must not be read as a verdict on T2/T4.
 
 T2 is also the only target whose design maps directly onto an executable empirical contrast (matched realized endpoint, different excluded set), which is why it is the natural bridge to the separate publication workline.
 
