@@ -2,9 +2,9 @@
 id: SRT-OPERATIONS-README
 type: index
 tags: [Operations, Pipeline, Workflow]
-status: active_v3
+status: active
 layer: meta
-epistem_layer: os
+epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-STATUS]
