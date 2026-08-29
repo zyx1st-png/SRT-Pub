@@ -2,7 +2,7 @@
 id: SRT-AI-START
 type: index
 tags: [AI, Entry, Minimal, Runtime, Navigation]
-status: active_v4
+status: active
 layer: meta
 epistemic_layer: os
 claim_mode: index
