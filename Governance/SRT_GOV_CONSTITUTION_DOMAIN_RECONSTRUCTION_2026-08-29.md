@@ -106,7 +106,7 @@ AI divergence
 
 Do not create new Constitution drafts while the author is still choosing between live alternatives.
 
-Exception: bounded source-recovery notes may be written if they contain no new author position and have a clear stop condition.
+Exception: bounded source-recovery notes may be written if they contain no new author position and have a clear stop condition. This exception is additionally constrained by the Phase-1 artifact budget in §14.
 
 ---
 
@@ -175,22 +175,41 @@ If an item only asserts a worldview sentence and no reader can do anything with 
 
 ---
 
-## 8. Neighbor Map gate
+## 8. Two-pass neighbor discipline
 
-Neighbor review happens **after** author convergence and internal red-team.
+Neighbor work has **two different purposes** and therefore two different passes.
+
+### Pass A — Light Neighbor Awareness, before author convergence
+
+Run after repository source recovery / AI divergence but before the author freezes wording.
+
+Purpose:
+
+- prevent accidental rediscovery of a mature formulation in avoidable ignorance;
+- improve terminology and problem precision;
+- warn the author about an obvious inherited distinction or failure before wording hardens.
+
+Rules:
+
+- read-only;
+- bounded to the few most obvious mature neighbors;
+- no novelty score;
+- no permission gate;
+- no `resonance/contrast/pressure/translation` adjudication yet;
+- no repository artifact by default;
+- report source-native claims in their own vocabulary rather than translating them into SRT.
+
+A Light Neighbor pass may say “Husserl/Nagel/Haraway already make a nearby move in this respect”; it may not say “therefore SRT must drop/keep this claim.”
+
+### Pass B — Full Neighbor Map, after author convergence and internal red-team
 
 Purpose:
 
 - prevent rediscovering known failures;
 - supply competent-reader coordinates;
 - distinguish resonance from real difference;
-- inherit mature vocabulary and objections.
-
-Not purpose:
-
-- grant permission to think;
-- score novelty before the author knows what they mean;
-- make external authority prove Constitution.
+- inherit mature vocabulary and objections;
+- prepare external intelligibility after the author knows what they actually mean.
 
 Required labels:
 
@@ -201,7 +220,15 @@ pressure
 translation
 ```
 
+Not purpose:
+
+- grant permission to think;
+- score novelty as a constitutional admission gate;
+- make external authority prove Constitution.
+
 If a novelty claim is later needed, run a separate novelty/increment audit.
+
+The two passes must not collapse into one: Pass A serves **expression precision / blind-spot reduction**; Pass B serves **comparative positioning / external legibility**.
 
 ---
 
@@ -289,9 +316,11 @@ Prospective repository interpretation can change without pretending the old pape
 
 ---
 
-## 14. Document-load control
+## 14. Document-load control and Phase-1 artifact budget
 
-To prevent a second form of governance/document inflation:
+Anti-inflation governance is only real if the next phase produces materially fewer artifacts than the blueprint round.
+
+Persistent limits:
 
 - one active identity blueprint;
 - one active execution plan;
@@ -299,6 +328,35 @@ To prevent a second form of governance/document inflation:
 - source/decision traces only when a real author convergence occurs;
 - no per-thesis programme plan;
 - no new router/index unless another is retired or repurposed.
+
+### Phase-1 quantitative budget
+
+For **Phase 1 source recovery** specifically:
+
+```text
+new programme / governance / map / router / index files = 0
+new standalone human-authored recovery working files = target 0, hard cap 1 total
+per-intuition files = 0
+Light Neighbor Awareness files = 0 by default
+```
+
+Use existing files first:
+
+- `SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` for routing;
+- existing ChoiceTrace / author-trace surfaces for real decisions;
+- conversation output for temporary recovery tables and Light Neighbor notes.
+
+A single rolling recovery packet is allowed only if conversation-only handling becomes genuinely unwieldy; it must replace scattered notes rather than accompany them.
+
+Generated context-bundle refreshes do not count as new conceptual artifacts, but they also do not justify creating new human-authored documents.
+
+### Failure condition
+
+If Phase 1 exceeds the hard cap, stop retrieval and consolidate before doing more work. Do not solve the breach by creating another anti-inflation document.
+
+The operational success criterion is therefore observable:
+
+> Phase 1 must end with **zero new programme-level documents and no more than one net-new human-authored working artifact** before the first substantive Constitution convergence write.
 
 Superseded intermediate proposal files should be converted to short redirect/history pointers or archived; they should not remain competing active authorities.
 
@@ -341,4 +399,5 @@ Before this PR is merge-ready:
 4. no frozen canonical owner is substantively changed;
 5. existing-manuscript carve-out is explicit;
 6. Governance Preflight passes on the final head;
-7. PR body accurately states that this is an identity/programme reconstruction, not a completed new Constitution.
+7. PR body accurately states that this is an identity/programme reconstruction, not a completed new Constitution;
+8. Phase-1 artifact budget and two-pass neighbor discipline are explicit enough that a fresh session cannot silently revert to document proliferation or neighbor-free convergence.
