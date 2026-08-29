@@ -1,9 +1,11 @@
 ---
 id: SRT-SOURCE-INTUITION-CONSTITUTION-IDENTITY-AUTHOR-TRACE-20260829
 type: source_intuition
-status: active_author_trace
+status: active
+record_stage: active_author_trace
 date: 2026-08-29
 layer: source
+epistemic_layer: os
 claim_mode: author_intuition
 canonical: false
 ai_do_not_use_for_definition: true
