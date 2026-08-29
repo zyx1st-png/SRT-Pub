@@ -1,12 +1,12 @@
 ---
 id: SRT-OPS-PROPOSAL-SELECTION-FIRST-CONSTRUCTIVE-ONTOLOGY-DRAFT-20260829
 type: proposal
-status: superseded_input
+status: archived
 record_stage: absorbed_into_constitution_blueprint
 date: 2026-08-29
 layer: meta
 epistemic_layer: os
-claim_mode: historical_candidate
+claim_mode: proposal
 canonical: false
 ai_do_not_use_for_definition: true
 dependency:
