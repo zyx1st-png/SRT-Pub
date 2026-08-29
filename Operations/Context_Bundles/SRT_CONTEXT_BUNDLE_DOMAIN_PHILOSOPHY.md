@@ -1,16 +1,16 @@
 ---
-id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-26
+id: SRT-CONTEXT-BUNDLE-DOMAIN-PHILOSOPHY-2026-08-29
 type: context_bundle
 status: active
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
-generated: 2026-08-26
-source_commit: 91f99e3c
-source_branch: claude/workflow-theory-divergence-gate
-source_dirty: false
-inputs_digest: 35eeceafd7b8ebe1
+generated: 2026-08-29
+source_commit: 46850dc2
+source_branch: claude/srt-selection-rebase-index-eval-izauq1
+source_dirty: true
+inputs_digest: e221d81f2752d82e
 ---
 
 # SRT 哲学领域上下文包
@@ -26,10 +26,10 @@ inputs_digest: 35eeceafd7b8ebe1
 
 | 项 | 值 |
 |---|---|
-| 生成日期 | 2026-08-26 |
-| 来源 commit | `91f99e3c` |
-| 来源分支 | `claude/workflow-theory-divergence-gate` |
-| 生成时来源工作树有改动 | 否 |
+| 生成日期 | 2026-08-29 |
+| 来源 commit | `46850dc2` |
+| 来源分支 | `claude/srt-selection-rebase-index-eval-izauq1` |
+| 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 6 |
 
 > **provenance 契约**：真实性判据是 `inputs_digest`——生成脚本、护栏来源

@@ -93,6 +93,7 @@ updated: 2026-08-29
 - 不因本轮重构删除历史公式、论文或材料卡；先解释它们在新架构里的角色。
 - 不批量开启多领域 programme；一个 deep well 完成 productive-adequacy review 后再开第二个。
 - 理论/owner 编辑仍先看 `Governance/SRT_CANONICAL_FREEZE.md` 与 `Governance/SRT_EDIT_PROTOCOL.md`。
+- `d`/`q`/`o` 三轴仍处于禁运状态（2026-07-25 条目裁决，本轮重构不解除）：三份对话材料**全部路由为候选，无一落地**；已加下游护栏：符号重命名与 `q` / `o` 的形式选择做出前，`d/q/o` 不得进入书稿、公共内容、bridge 或论文。
 
 ## 最近关键推进
 
