@@ -7,7 +7,7 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-29
-source_commit: e328e7eb
+source_commit: c611914a
 source_branch: claude/srt-selection-rebase-index-eval-izauq1
 source_dirty: true
 inputs_digest: b50eba1975e1798a
@@ -27,7 +27,7 @@ inputs_digest: b50eba1975e1798a
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-29 |
-| 来源 commit | `e328e7eb` |
+| 来源 commit | `c611914a` |
 | 来源分支 | `claude/srt-selection-rebase-index-eval-izauq1` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 3 |
