@@ -1,11 +1,7 @@
 ---
 id: SRT-OPS-PROPOSAL-SELECTION-FIRST-CONSTRUCTIVE-ONTOLOGY-DRAFT-20260829
 type: proposal
-<<<<<<< HEAD
-status: frozen
-=======
 status: archived
->>>>>>> 3a0caa827ce22b4f714e9b7fb468dee08c1400f2
 record_stage: absorbed_into_constitution_blueprint
 date: 2026-08-29
 layer: meta
