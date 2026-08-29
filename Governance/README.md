@@ -3,13 +3,13 @@ id: SRT-GOVERNANCE-README
 type: index
 tags: [Governance, Documentation, Quality, Archive]
 status: active
-version: v2
+version: v3
 layer: meta
 epistemic_layer: os
 claim_mode: navigation
 canonical: false
 dependency: [SRT-INDEX, SRT-AGENTS]
-updated: 2026-08-17
+updated: 2026-08-29
 ---
 
 # SRT Governance Hub
@@ -18,14 +18,14 @@ updated: 2026-08-17
 
 ## Proportionality Principles（治理比例原则 · 2026-07-20）
 
-治理减负轮确立的四条元原则，优先于逐条堆积的具体规则。目的：让治理强度随工作面收缩，而不是单向增长。
+治理减负轮确立的四条元原则继续有效：
 
-1. **治理强度跟着活跃度走**。活跃工作线（书稿、papers、canonical 锚点）保持硬护栏；休眠层（域层、coverage 快照、archive）降为"带冻结戳的图书馆"——只读、可检索、零维护义务，按 `_SRT_DOC_ENGINEERING_GUIDE.md` 的 touch-based repair 处理。
-2. **任何过滤器必须自带回流路径**。下沉（降级、B 类裁决、种子停驻、annex 化）必须在 `_SRT_PARKED_INDEX.md` 登记一条**具名复活触发条件**（绑工作线事件，不绑日历）。没有回流路径的下沉等于删除，不允许。
-3. **状态只有一个面**。描述"当前状态"的文件唯一（`STATUS.md`，§Fast Status 兼任 compact 入口）；镜像要么自动生成，要么删除。历史进 `Operations/Status_History/`。
-4. **导航一进一出**。新增任何 index / router / coverage 文件，必须同时合并或废除一个旧的。router 路由折进主 router，不再生 `_*_EXTENSION.md` 侧车文件。
+1. **治理强度跟着活跃度走**。活跃工作线保持硬护栏；休眠层降为带冻结戳的图书馆。
+2. **任何过滤器必须自带回流路径**。下沉必须有具名复活触发条件。
+3. **状态只有一个面**。当前状态唯一入口为 `STATUS.md`；历史进 `Operations/Status_History/`。
+4. **导航一进一出**。新增 index/router 时应合并、废除或 repurpose 一个旧入口。
 
-可观测指标看板见 `_SRT_QUALITY_METRICS.md §Governance Load Indicators`；本轮执行记录见 `Governance/Governance_Load_Reduction_2026-07-20.md`。
+本轮 Constitution reconstruction 额外强调：不要把“治理减负”换成“哲学文档增殖”。一个 active identity blueprint、一个 execution plan、一个 governance protocol 足够。
 
 ## Authority Boundary
 
@@ -33,10 +33,34 @@ updated: 2026-08-17
 
 使用原则：
 
-- 用它判断编辑风险、claim 硬度、元数据规范、流程入口和历史留痕。
-- 不用它评审全书质量，不用它替代当前书稿正文。
-- 不用旧治理计划覆盖 `AGENTS.md` 的 fresh-session read order。
-- 与当前书稿、canonical 锚点或 `Operations/_SRT_MATERIAL_LOG.md` 冲突时，治理旧文降为历史记录。
+- 用它判断编辑风险、claim 硬度、元数据规范、流程入口和历史留痕；
+- 不用它替代 author Constitution、当前书稿、canonical definition；
+- 不用旧治理计划覆盖 `AGENTS.md` 的 fresh-session read order；
+- 与当前书稿、canonical 锚点或 Material Log 冲突时，治理旧文降为历史记录。
+
+## Current Programme Control — 2026-08-29
+
+### GOV-CONST01 — Constitution + Domain Reconstruction
+
+`SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md` 是当前 programme 的 identity/workflow governance。
+
+它新增的不是 theory claim，而是执行边界：
+
+- Constitution + Domain identity freeze；
+- AI divergence / author convergence 分工；
+- no-write-before-convergence；
+- Constitution non-formalization guard；
+- reflexivity / no God-view exemption；
+- ontology situatedness 与 participatory methodology 分离；
+- reader-entry operation gate；
+- Neighbor Map after convergence, not novelty permission gate；
+- domain increment gate；
+- Bearer–Objectification Declaration；
+- sigma worked-example overclaim guard；
+- one-deep-well-before-breadth；
+- existing-manuscript carve-out。
+
+如果旧 programme 文件仍把 `unified ontology -> local formalization -> D2` 写成当前执行顺序，以 2026-08-29 blueprint/plan 为当前 programme 路由；这不自动改变 canonical theory authority。
 
 ## Current Active Control Surface
 
@@ -45,6 +69,7 @@ updated: 2026-08-17
 1. `SRT_CANONICAL_FREEZE.md`
 2. `SRT_EDIT_PROTOCOL.md`
 3. `SRT_HARNESS_TESTS.md`
+4. `SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
 
 ### Claim Discipline
 
@@ -53,11 +78,19 @@ updated: 2026-08-17
 3. `SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
 4. `SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md`
 
-`SRT_CLAIM_MODE_AUDIT.md` 是 claim-mode 降级台账，不是完整当前状态表；引用时应说明它的历史批次边界。
+`SRT_CLAIM_MODE_AUDIT.md` 是 claim-mode 降级台账，不是完整当前状态表。
 
-`SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md` 把理论贡献拆成两条不能互相替代的轨道：**O-track 本体论整合**与 **D-track 经验/判别增量**。SRT 可以忠实吸收成熟外部理论已经建立的局部机制来构建共同本体论语法；“没有独有经验增量”不自动等于低价值或 bridge 失败。但外部结果只支持其原生事实，作为 SRT 结构实例不等于证明 SRT 本体论。只有当 SRT 声称超越、替代、不可还原或新增预测时，才必须进入 D-track 与 bounded rival comparison。
+`GOV-SYN01` 的 O-track / D-track 区分继续有效，但在新 programme 下不要把 O-track 当作 Constitution 的外部“证明”。材料可作为 source-native fact、resonance、contrast、pressure、mechanism example 或 domain constraint。
 
-`SRT_GOV_SUB01_Subtractive_Audit_Protocol_v0_1.md` 用于 primitive、symbol、layer、bridge 与竞争理论的受控删除审计。其输出始终是目标/尺度/时间窗相对的可删除性或当前不可删除性，不把“删除无损”写成不存在，也不把“暂不可删除”写成本体基础。对材料/bridge 的价值判断还必须结合 `GOV-SYN01`：D-track 上可替代，不等于 O-track 上没有整合价值。
+`GOV-SUB01`、A0、bounded-rival 等 subtraction 工具继续有效，但默认从 idea permission gate 移到：
+
+```text
+Constitution internal pressure / anti-overclaim
++
+Domain increment claim gate
++
+repository owner consistency
+```
 
 ### Layer / Metadata
 
@@ -69,20 +102,24 @@ updated: 2026-08-17
 6. `_SRT_DOMAIN_TEMPLATE.md`
 7. `_SRT_EXPLANATION_PROTOCOL.md`
 
+现有 layer/claim metadata 暂时保留为仓库工程与历史 authority map；本轮不把它们静默升格为新 Constitution 的本体结构。
+
 ### Runtime Governance
 
 1. `../Operations/README.md`
-2. `../Operations/_SRT_OPERATIONS_SCHEDULE.md`
-3. `_SRT_GOVERNANCE_PIPELINE.md`
-4. `Governance_Anti_Blocking_Gate.md`
-5. `_SRT_QUALITY_SCORECARD.md`
-6. `_SRT_WEEKLY_THEORY_REVIEW.md`
-7. `_SRT_RELEASE_NOTE_TEMPLATE.md`
-8. `_SRT_CHANGELOG_2026.md`
+2. `../Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+3. `../Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+4. `../Operations/_SRT_OPERATIONS_SCHEDULE.md`
+5. `_SRT_GOVERNANCE_PIPELINE.md`
+6. `Governance_Anti_Blocking_Gate.md`
+7. `_SRT_QUALITY_SCORECARD.md`
+8. `_SRT_WEEKLY_THEORY_REVIEW.md`
+9. `_SRT_RELEASE_NOTE_TEMPLATE.md`
+10. `_SRT_CHANGELOG_2026.md`
 
-`Governance_Anti_Blocking_Gate.md` 定义 PR-local、base-main 与完整仓库三范围检查、失败归因、baseline 单调性和 main-health incident 模式。
+`Governance_Anti_Blocking_Gate.md` 继续定义 PR-local、base-main 与完整仓库三范围检查、失败归因、baseline 单调性和 main-health incident 模式。
 
-`_SRT_EXECUTION_PLAN.md` is retained as a legacy compatibility bridge for old dependencies. Prefer the Operations schedule for current cadence.
+`_SRT_EXECUTION_PLAN.md` 继续作为 legacy compatibility bridge；当前 programme 以 Constitution execution plan 为准。
 
 ### Tooling Baselines
 
@@ -91,6 +128,25 @@ updated: 2026-08-17
 3. `../LONGFORM_SPLITS.md`
 
 Baselines record known debt. They are not quality scores and must not grow in ordinary PRs.
+
+## Constitution-specific governance summary
+
+### Constitution-level prohibited shortcuts
+
+- formal equation as constitutional proof;
+- state space / unit / boundary smuggled in before author clarification;
+- AI agreement counted as author convergence;
+- novelty search used to block a live author intuition;
+- `knowledge is situated` treated as sufficient SRT content without showing what bearer participation changes about individuation/objectification;
+- special access converted into universal epistemic privilege;
+- sigma failures generalized into “mathematics cannot model indexicality”.
+
+### Domain-level required discipline
+
+- declare objectification assumptions when an SRT-sensitive claim depends on them;
+- use the domain’s strongest existing baseline before claiming SRT increment;
+- allow domain to conclude “SRT adds no increment here”;
+- keep formalization, evidence and proof domain-local until independent cross-domain support exists.
 
 ## Archive
 

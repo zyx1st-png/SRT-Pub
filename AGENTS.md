@@ -14,36 +14,85 @@ Use this file as the canonical runtime overlay when the current work is inside t
 
 For a fresh AI session inside this repo, read in this order (3 files):
 
-1. `SRT_AI_START.md` — minimal theory/runtime guard, including the symbol quick guard (§3); not a definition authority.
+1. `SRT_AI_START.md` — minimal theory/runtime guard; not a definition authority.
 2. `_SRT_AGENT_RETRIEVAL_PROFILE.md` — classify the task before choosing context depth.
-3. `STATUS.md §Fast Status` — compact current status for bootstrap (full dashboard in the same file).
+3. `STATUS.md §Fast Status` — compact current status and current programme identity.
+
+### Current programme expansion — Constitution + Domain Reconstruction
+
+For **theory advancement, source-intuition recovery, Constitution work, Core/Core_Law role questions, or a new domain deep-dive**, after the 3-file bootstrap above read:
+
+4. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+5. `Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+6. `Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
+7. `Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` when recovering existing SRT intuition rather than answering a narrow factual question.
+
+Current identity guard:
+
+```text
+SRT Constitution
+= bearer-involved perspective framework
+
+Domain research
+= formalization / evidence / proof / testing layer
+```
+
+Do not restart the older `unified ontology -> local formalization -> D2` sequence as the active programme merely because older proposal files contain it. Do not redesign SRT's identity again before the current identity-freeze reopen conditions are met.
 
 Then load conditionally:
 
-4. `_SRT_INDEX.md` when file routing, domain entrypoints, registry relations, or edit landing zones matter.
-5. `_SRT_SYMBOL_TABLE.md` when exact symbol definitions, notation conflicts, or canonical term precision matters.
-6. `_SRT_CONTEXT_ROUTER.md` for non-simple conceptual, cross-domain, or deep theory questions.
-7. `_SRT_DEEP_THEORY_MAP.md` for cross-domain theory synthesis.
-8. `_SRT_PARKED_INDEX.md` when a task touches parked seeds, B-verdict materials, or unmerged proposal work.
-9. `Operations/Status_History/` when historical status detail matters.
+8. `_SRT_INDEX.md` when file routing, domain entrypoints, registry relations, or edit landing zones matter.
+9. `_SRT_SYMBOL_TABLE.md` when exact symbol definitions, notation conflicts, or canonical term precision matters.
+10. `_SRT_CONTEXT_ROUTER.md` for non-simple conceptual, cross-domain, or deep theory questions.
+11. `_SRT_DEEP_THEORY_MAP.md` for cross-domain theory synthesis.
+12. `_SRT_PARKED_INDEX.md` when a task touches parked seeds, B-verdict materials, or unmerged proposal work.
+13. `Operations/Status_History/` when historical status detail matters.
 
 Read `README.md` when public-facing framing or external onboarding context is useful.
 
 For theory advancement, book writing, domain deep-dives, material fusion, public release, governance work, or any non-trivial SRT answer, classify the task with `_SRT_AGENT_RETRIEVAL_PROFILE.md` before deciding how much context to load. `canonical: false` means "not a definition authority"; it does not mean "do not retrieve."
 
-`Manifesto/SRT_MANIFESTO.md` is a human-first worldview entry (`claim_mode: manifesto`, governed by `Governance/SRT_CLAIM_LADDER.md §2A`). It is **not** part of AI session bootstrap; read it only when the task involves user-facing framing.
+`Manifesto/SRT_MANIFESTO.md` is a human-first worldview entry (`claim_mode: manifesto`). It is not part of AI session bootstrap; read it only when the task involves user-facing framing or source recovery.
 
 Before doing substantial pipeline / governance / theory work:
 
 1. Read `Operations/README.md`
 2. Read `Governance/README.md`
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) if present — the memory layer may be dormant for long stretches; absence is normal, do not go looking for substitutes
+3. Read `memory/YYYY-MM-DD.md` (today + yesterday) if present — absence is normal
 4. Read `HEARTBEAT.md` before heartbeat-style or automation-style work
 
 Before editing theory files, also read:
 
 1. `Governance/SRT_CANONICAL_FREEZE.md`
 2. `Governance/SRT_EDIT_PROTOCOL.md`
+
+## Constitution Dialogue Hard Guard
+
+For Constitution work, the default workflow is:
+
+```text
+existing source recovery
+-> AI divergence
+-> author convergence
+-> repository write
+-> internal reflexivity/circularity red-team
+-> bounded Neighbor Map
+-> author second adjudication
+-> Constitution freeze
+```
+
+Hard rules:
+
+- **No theory write before author convergence.** AI may retrieve and present options, but should not create a Constitution artifact for every live branch.
+- AI-generated alternatives are not author decisions.
+- Two models agreeing is corroboration, not proof and not author convergence.
+- Do not use novelty/prior-art as a permission gate before the author knows what they mean.
+- After convergence, do perform a Neighbor Map to learn mature formulations, objections and failure history.
+- Constitution substantive items should have a `reader-entry operation`; pure worldview propositions without an executable perspective move belong in commentary unless the author decides otherwise.
+- Constitution must not use equations/scalars/thresholds/state-space formalisms as constitutional authority.
+- Domain formalization is allowed and encouraged when the domain declares its objectification assumptions.
+
+Use `Operations/_SRT_CHOICE_TRACE_LOG.md` / ChoiceMap discipline for author convergence when practical. AI may record option sets; author choice, skipped mode, reason and closure boundary must not be invented by AI.
 
 ## Book-Writing Hard Guard
 
@@ -56,65 +105,70 @@ Any task that reads, revises, continues, audits, or writes back to 《从存在�
 
 Hard prohibitions:
 
-- Do not use a file under `Archive_52Chapter/` or `Archive_Meta/` as the first or sole source for current book status, current chapter wording, or a current draft patch.
-- Do not infer currentness from keyword density, a larger version suffix, an old chapter number, or search rank.
-- When archived material is used, label it explicitly as historical and state the current active file it is being compared with.
-- Do not copy archived prose into the current manuscript without re-deriving it against the current chapter, current five-act architecture, and current terminology rules.
+- Do not use archived book material as the first or sole source for current wording.
+- Do not infer currentness from keyword density, version suffix, chapter number, or search rank.
+- When archived material is used, label it historical and name the current active file.
+- Do not copy archived prose into the current manuscript without re-deriving it against the current architecture and terminology.
+
+For Constitution source recovery, the current 26Q book is a **source-intuition reservoir**, not automatic canonical authority. Extract perspective operations and author intuitions; do not promote vivid prose directly into Constitution.
 
 ## SRT Trigger Words
 
-When the user sends the following trigger words, use the current `SRT/` structure rather than any retired `SRT_openclaw/` paths:
+When the user sends the following trigger words, use the current `SRT/` structure rather than retired `SRT_openclaw/` paths:
 
 | Trigger | Pipeline / Mode | Action |
 |--------|------------------|--------|
-| `材料 <文本/URL/文件>` | Pipeline 1 | 按 `Operations/_SRT_MATERIAL_PIPELINE.md` 执行材料融合，并同时遵守 `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`：先忠实提取 source claim，再分别判断 O-track 本体论整合价值与 D-track 经验判别增量；**不得为了证明 SRT 独特而强造新变量/机制，也不得因“别人已经解释”就自动判低价值**。随后执行 A/B/C、必要时二轮裁决、SourceCard / PatchNote / Material Log / Index / Registry / IntegrationHook；A 类正文回写必须先做去材料化改写。 |
-| `陪读 <文本/URL/文件>` | Source-grounded reading | 先按来源本身的术语、论证与证据强度陪读，不自动写入仓库。若后续要求“写入/回写/融合”，转入 Pipeline 1，并按 `GOV-SYN01` 分开记录：A) source-derived 内容；B) SRT ontological synthesis；C) 只有在实际声称时才建立 discriminating/empirical increment。外部结果可作为 SRT 本体论构造材料，但不得被改写成“来源证明 SRT”。 |
-| `材料裁决 <文本/URL/文件>` | 辅助工作流 | 启动第二轮结构裁决：审查第一轮候选接口，并按 `GOV-SYN01` 先判 O-track / D-track / O+D / source-only，再压成最小可承重命题，给出 A/B/C 建议与主/备/禁止落点；结果必须回注 Pipeline 1。 |
-| `二轮裁决 <文本/URL/文件>` | 辅助工作流 | 同 `材料裁决` |
-| `推演回流 <对话/片段>` | 辅助工作流 | 外部模型（ChatGPT / Codex / 其他）上跑的 SRT 理论推演长对话回流。按 `Operations/_SRT_CHOICEMAP_TRACE_WORKFLOW.md` 的**直觉挖掘**用途处理：repo-blind 对话默认走 §8 `retro_writeback` 降权 → §9 收尾；每条候选增量按 `Operations/_SRT_MATERIAL_PIPELINE.md §3.3` 出四分裁决（`already owned` / `partly owned` / `reverse constraint` / `unresolved overlap`），只保留 subtraction 后可承重内容。**对话本身不走 Pipeline 1、不建 SourceCard；但其中实际引用的论文、实验或外部作者 claim 若承担证据角色，必须拆出并单独进入 Pipeline 1。** repo-aware live / checkpoint 的轮间保护规则以 ChoiceMap §6.4a 为准。 |
+| `材料 <文本/URL/文件>` | Pipeline 1 | 按 `Operations/_SRT_MATERIAL_PIPELINE.md` 执行材料融合，并遵守 `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`。先忠实提取 source claim，再区分 Constitution resonance/contrast/pressure、domain mechanism/constraint 与真正 D-track increment。不得把来源写成“证明 Constitution”。 |
+| `陪读 <文本/URL/文件>` | Source-grounded reading | 先按来源本身术语、论证与证据强度陪读，不自动写仓库。若后续要求写回，再转 Pipeline 1。 |
+| `材料裁决 <文本/URL/文件>` | 辅助工作流 | 审查第一轮候选接口，区分 source-native fact / Constitution relevance / domain relevance / D-track increment；结果回注 Pipeline 1。 |
+| `二轮裁决 <文本/URL/文件>` | 辅助工作流 | 同 `材料裁决`。 |
+| `推演回流 <对话/片段>` | 辅助工作流 | 外部模型理论推演回流。当前 Constitution programme 下，优先恢复 author choice / unresolved branch / pressure point；对话本身不建 SourceCard，其中真正承担证据的外部论文需拆出进 Pipeline 1。 |
 | `信号采集` | Pipeline 3 | 立即执行网络信号采集 |
 | `内审` | Pipeline 6 | 立即执行每日内部审查 |
 | `选题` | Pipeline 5 | 生成当日大众路线 + 精英路线选题 |
 | `论文候选` | Pipeline 2 | 更新候选池与期刊匹配 |
 | `周评` | Pipeline 4 | 执行文档治理 + 理论方向评审 |
-| `对话` | Dialogue Mode | 启动自我修补对齐模式 |
-| `学者对话` | Dialogue Mode | 启动学者批判模式 |
+| `对话` | Dialogue Mode | 启动作者发散/收敛对齐模式；若触及 Constitution，遵守 Constitution Dialogue Hard Guard |
+| `学者对话` | Dialogue Mode | 启动学者批判 / red-team 模式 |
 
 执行前：
 
 - 先读 `STATUS.md`
-- 以 `Operations/_SRT_OPERATIONS_SCHEDULE.md` 为当前节奏入口
-- 若触发 `材料` 或需要把 `陪读` 结果写回仓库，必须读 `Operations/_SRT_MATERIAL_PIPELINE.md`、`Operations/_SRT_MATERIAL_LOG.md` 与 `Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
+- 以当前 Constitution execution plan 作为 theory-development programme；日常节奏继续参考 `Operations/_SRT_OPERATIONS_SCHEDULE.md`
+- 材料写回必须读 Material Pipeline、Material Log 与 GOV-SYN01
 
 执行后：
 
-- 更新 `STATUS.md` 中的今日执行状态
-- 需要留痕时追加到相应 `Operations/` 或 `Governance/` 台账
-- Pipeline 1 的正式状态以 `Operations/_SRT_MATERIAL_LOG.md` 为准
-- 不把 `Operations/` 日志、bridge 文件、patch 文件、hook 文件或 split / annex 导航写成新的 canonical 定义
+- 更新 `STATUS.md` 中的当前执行状态（需要时）
+- 需要留痕时追加到相应 Operations/Governance 台账
+- Pipeline 1 正式状态以 `Operations/_SRT_MATERIAL_LOG.md` 为准
+- 不把 Operations 日志、bridge、patch、hook、split/annex 导航写成新的 Constitution 或 canonical definition
 
 ## Canonical Runtime Paths
 
 - AI 最小首读入口：`SRT_AI_START.md`
 - Agent 检索扩展协议：`_SRT_AGENT_RETRIEVAL_PROFILE.md`
-- 当前状态面板（含 §Fast Status 快速入口）：`STATUS.md`
-- 快速符号守门：`SRT_AI_START.md §3`（原 `_SRT_SYMBOL_QUICK_GUARD.md` 已并入）
+- 当前状态面板：`STATUS.md`
+- 当前 programme blueprint：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_RECONSTRUCTION_BLUEPRINT_2026-08-29.md`
+- 当前 programme plan：`Operations/Proposals/SRT_CONSTITUTION_DOMAIN_EXECUTION_PLAN_2026-08-29.md`
+- 当前 programme governance：`Governance/SRT_GOV_CONSTITUTION_DOMAIN_RECONSTRUCTION_2026-08-29.md`
+- Constitution source recovery：`Operations/Proposals/SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md`
+- 作者身份源记录：`01_Source_Intuition/SRT_CONSTITUTION_IDENTITY_AUTHOR_TRACE_2026-08-29.md`
 - 停驻内容总索引：`_SRT_PARKED_INDEX.md`
 - 运行层入口：`Operations/README.md`
 - 治理层入口：`Governance/README.md`
 - 节奏总表：`Operations/_SRT_OPERATIONS_SCHEDULE.md`
-- Pipeline 1 主流程：`Operations/_SRT_MATERIAL_PIPELINE.md`
-- Pipeline 1 正式台账：`Operations/_SRT_MATERIAL_LOG.md`
-- 本体论整合 / 经验判别双轨纪律：`Governance/SRT_GOV_SYN01_Ontological_Synthesis_and_Empirical_Discrimination_Protocol_v0_1.md`
-- 对话留痕：`Operations/_SRT_DIALOGUE_LOG.md`
-- 书稿当前状态入口：`01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
+- Pipeline 1：`Operations/_SRT_MATERIAL_PIPELINE.md`
+- Material Log：`Operations/_SRT_MATERIAL_LOG.md`
+- Choice trace：`Operations/_SRT_CHOICE_TRACE_LOG.md`
+- 书稿当前状态：`01_Source_Intuition/BOOK/BOOK_CURRENT_STATUS.md`
 - 书稿机器路由：`01_Source_Intuition/BOOK/BOOK_ACTIVE_MANIFEST.json`
 
 ## Migration Note
 
-- `SRT_openclaw/` is retired and should be treated as legacy history, not a live path.
-- Active SRT workflow docs now live under `Operations/` and `Governance/`.
-- Root-level entry surfaces now separate public entry, runtime protocol, AI start, machine index, and human map.
+- `SRT_openclaw/` is retired and should be treated as legacy history.
+- Active workflow docs live under `Operations/` and `Governance/`.
+- The 2026-08-29 Constitution reconstruction is prospective: it does not silently rewrite published/submitted manuscripts or frozen canonical owners.
 
 ## ClawX Environment
 
