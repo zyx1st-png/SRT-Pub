@@ -1,7 +1,8 @@
 ---
 id: SRT-OPS-PROPOSAL-CONSTITUTION-SOURCE-RECOVERY-MAP-20260829
 type: proposal
-status: active_source_map
+status: active
+record_stage: active_source_map
 date: 2026-08-29
 layer: meta
 epistemic_layer: os
