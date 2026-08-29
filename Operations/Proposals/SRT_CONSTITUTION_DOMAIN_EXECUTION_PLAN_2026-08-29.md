@@ -27,9 +27,13 @@ The active sequence is:
 ```text
 identity/bootstrap sync
 -> source recovery
--> author-dialogue Constitution convergence
+-> AI divergence
+-> Light Neighbor Awareness (read-only, no gate)
+-> author convergence
+-> repository write
 -> internal red-team
--> Neighbor Map
+-> Full Neighbor Map
+-> author second adjudication
 -> Constitution v1 freeze
 -> Core/Core_Law role-reclassification audit
 -> choose one domain deep well
@@ -90,11 +94,59 @@ what later formal/canonical layer objectified it into
 
 Do not ask novelty at this phase.
 
+### Phase-1 artifact budget
+
+Default handling is conversation-first and existing-file-first.
+
+```text
+new programme / governance / map / router / index files = 0
+new standalone human-authored recovery working files = target 0, hard cap 1 total
+per-intuition files = 0
+```
+
+Use `SRT_CONSTITUTION_SOURCE_RECOVERY_MAP_2026-08-29.md` as the existing route rather than creating follow-on maps. A single rolling recovery packet is allowed only if the recovered material becomes too large to handle safely in dialogue; it must consolidate, not multiply, working notes.
+
+If the hard cap is exceeded, **stop Phase 1 and consolidate** before further retrieval. The anti-inflation rule is failed if the remedy is another governance document.
+
 Stop rule:
 
 - no new Constitution prose file per intuition;
-- extraction output may be one bounded working packet per conversation or one compact source table;
+- no new programme-level document;
 - once sufficient candidates exist for the next author discussion, stop retrieval and move to dialogue.
+
+Exit condition:
+
+> Phase 1 reaches the next author question with zero new programme-level documents and no more than one net-new human-authored recovery artifact.
+
+---
+
+## Phase 1.5 — Light Neighbor Awareness, before convergence
+
+Purpose: reduce avoidable rediscovery and wording rework **without** allowing neighboring theories to become a permission gate.
+
+Run only after repo-internal source recovery and AI divergence have produced a live question, but before the author freezes wording.
+
+For that live question, inspect only the few most obvious mature neighbors. The pass answers:
+
+```text
+What nearby move already exists?
+What mature vocabulary/distinction should the author know before wording hardens?
+What known failure would be wasteful to rediscover?
+```
+
+Rules:
+
+- read-only;
+- source-native wording first;
+- no novelty score;
+- no keep/drop recommendation;
+- no `resonance/contrast/pressure/translation` classification yet;
+- no repository artifact by default;
+- no broad literature sweep.
+
+Its job is **expression precision and blind-spot reduction**, not external positioning.
+
+The author then converges with both the recovered SRT source and this minimal neighbor awareness visible.
 
 ---
 
@@ -118,7 +170,7 @@ The AI must not choose the author’s view for the author.
 
 ### Author role
 
-The author explicitly selects, rejects, hybridizes or rewrites.
+After the Light Neighbor Awareness pass, the author explicitly selects, rejects, hybridizes or rewrites.
 
 Only the author’s converged language becomes a Constitution candidate.
 
@@ -128,7 +180,7 @@ Use the existing choice-trace discipline for `decision` / `intuition_mining` whe
 
 Hard stop:
 
-> no repository theory write during the divergence part of the conversation. Write only after a real author convergence event.
+> no repository theory write during the divergence / Light Neighbor / live-choice part of the conversation. Write only after a real author convergence event.
 
 ---
 
@@ -155,11 +207,11 @@ Exit condition:
 
 ---
 
-## Phase 4 — Neighbor Map
+## Phase 4 — Full Neighbor Map
 
-Only after internal convergence.
+Only after author convergence and internal red-team.
 
-For each thesis, bounded review of mature neighbors answers:
+Unlike the Phase-1.5 light pass, this is a comparative positioning step. For each thesis, bounded review of mature neighbors answers:
 
 ```text
 closest formulations
@@ -181,9 +233,16 @@ Not allowed:
 
 - “X philosopher proves SRT”;
 - “X already said something similar, therefore the author cannot keep the perspective”;
-- novelty-score gating before author convergence.
+- novelty-score gating of constitutional admission.
 
-After Neighbor Map, the author gets one final adjudication opportunity.
+After Full Neighbor Map, the author gets one final adjudication opportunity.
+
+The distinction is explicit:
+
+```text
+Light Neighbor Awareness = pre-convergence precision / blind-spot reduction
+Full Neighbor Map = post-convergence comparison / external legibility
+```
 
 ---
 
