@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-29
-source_commit: 46850dc2
+source_commit: e328e7eb
 source_branch: claude/srt-selection-rebase-index-eval-izauq1
 source_dirty: true
-inputs_digest: e221d81f2752d82e
+inputs_digest: b50eba1975e1798a
 ---
 
 # SRT 核心动力学上下文包
@@ -27,7 +27,7 @@ inputs_digest: e221d81f2752d82e
 | 项 | 值 |
 |---|---|
 | 生成日期 | 2026-08-29 |
-| 来源 commit | `46850dc2` |
+| 来源 commit | `e328e7eb` |
 | 来源分支 | `claude/srt-selection-rebase-index-eval-izauq1` |
 | 生成时来源工作树有改动 | 是 |
 | 包含文件数 | 1 |
@@ -232,9 +232,11 @@ ST-A 已经吸收旧审计结果：former P1-T07 不再是 P1 theorem。P1 只�
 
 以下两节从 `SRT_AI_START.md` 原样抄入，适用于本包全部内容。
 
-### 5. Claim-Level Guard
+### 15. Claim-Level Guard
 
-Use the claim ladder:
+The P0–P5 ladder remains historical/canonical authority until a separate audit and
+author decision reclassify it (see §6 and `STATUS.md` 当前权威锚点). Reconstructing
+SRT's highest identity as a Constitution does not by itself retire it.
 
 - P0: primitive axiom
 - P1: constitutive theorem
@@ -251,18 +253,21 @@ Do not promote bridge or lab claims into core claims. In particular:
 - ghost-operator universality is a bridge unless separately hardened;
 - AI-domain claims do not define the SRT core.
 
+Owner: `Governance/SRT_CLAIM_LADDER.md`.
+
+### 14. Minimal answer protocol
+
+For non-trivial SRT work:
+
+1. recover current programme identity from `STATUS.md`;
+2. distinguish current historical/canonical authority from prospective Constitution reconstruction;
+3. state whether the claim is Constitution candidate, commentary, domain model, bridge, lab, material evidence or governance;
+4. do not close listed open tensions;
+5. for Constitution, use source recovery + author convergence rather than greenfield generation;
+6. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
+7. prefer explicit boundaries to broad unification language.
+
 ---
-
-### 8. Minimal Answer Protocol
-
-When answering about SRT:
-
-1. Name the canonical source you rely on.
-2. State the claim level if hardness matters.
-3. Mark bridge, lab, or companion material explicitly.
-4. If a point is listed in `Core/SRT_OPEN_TENSIONS.md`, do not present it as closed.
-5. For non-trivial questions, name the retrieval route or task profile used.
-6. Prefer short, hard claims over broad unification language unless the question explicitly asks for bridge speculation.
 
 ## §0.4 Manifest 差异报告（本包 vs `CANONICAL_REGISTRY.md`）
 

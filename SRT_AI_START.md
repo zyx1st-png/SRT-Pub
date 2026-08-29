@@ -2,7 +2,8 @@
 id: SRT-AI-START
 type: index
 tags: [AI, Entry, Minimal, Runtime, Navigation]
-status: active_v4
+status: active
+record_stage: active_v4
 layer: meta
 epistemic_layer: os
 claim_mode: index
@@ -295,3 +296,28 @@ For non-trivial SRT work:
 5. for Constitution, use source recovery + author convergence rather than greenfield generation;
 6. for domain increment, compare the strongest existing field baseline before saying SRT adds something;
 7. prefer explicit boundaries to broad unification language.
+
+---
+
+## 15. Claim-Level Guard
+
+The P0–P5 ladder remains historical/canonical authority until a separate audit and
+author decision reclassify it (see §6 and `STATUS.md` 当前权威锚点). Reconstructing
+SRT's highest identity as a Constitution does not by itself retire it.
+
+- P0: primitive axiom
+- P1: constitutive theorem
+- P2: canonical interpretation
+- P3: bridge mapping
+- P4: lab hypothesis
+- P5: companion / phenomenological exposition
+
+Do not promote bridge or lab claims into core claims. In particular:
+
+- fitness beats truth is not P0;
+- assembly thresholds are not P0/P1;
+- holographic duality is not P0/P1;
+- ghost-operator universality is a bridge unless separately hardened;
+- AI-domain claims do not define the SRT core.
+
+Owner: `Governance/SRT_CLAIM_LADDER.md`.
