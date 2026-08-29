@@ -1,7 +1,7 @@
 ---
 id: SRT-OPS-PROPOSAL-CONSTITUTION-DOMAIN-RECONSTRUCTION-BLUEPRINT-20260829
 type: proposal
-status: active_author_blueprint
+status: active
 record_stage: identity_freeze_blueprint_v1
 date: 2026-08-29
 layer: meta

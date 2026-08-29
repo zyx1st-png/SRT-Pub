@@ -1,7 +1,8 @@
 ---
 id: SRT-OPS-PROPOSAL-CONSTITUTION-DOMAIN-EXECUTION-PLAN-20260829
 type: proposal
-status: active_execution_plan
+status: active
+record_stage: active_execution_plan
 date: 2026-08-29
 layer: meta
 epistemic_layer: os
