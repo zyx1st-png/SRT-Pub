@@ -7,10 +7,10 @@ epistemic_layer: os
 claim_mode: navigation
 canonical: false
 generated: 2026-08-29
-source_commit: c611914a
+source_commit: c1a9ff4f
 source_branch: claude/srt-selection-rebase-index-eval-izauq1
 source_dirty: true
-inputs_digest: b50eba1975e1798a
+inputs_digest: 8db5bc0bfdbccc34
 ---
 
 # SRT 上下文包
