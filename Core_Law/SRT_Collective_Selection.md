@@ -20,6 +20,7 @@ dependency: [SRT-CORE-21-MINIMAL-AXIOMS, SRT-CORE-21B-CONSTITUTIVE-THEOREMS, SRT
 > **Relation**: This file does not replace `Philosophy/SRT_Political_Philosophy.md`、`Philosophy/SRT_Social_Economics.md`、`Spirituality/SRT_Spirituality_Community_and_Sangha.md`；它在它们**之前**，固定"多主体共选作为结构对象是什么"的 L1 读法。规范性与制度判断仍在上述 domain 文件。
 >
 > **σ 符号命名空间（governance-canonical, 2026-04-25, `Core_Law/SRT_L1_Hardening_Notes.md §1`）**：本文件中集体自指率符号已在 2026-04-25 L1 Hardening Round 统一改写为 `σ_{sr}^{coll}` 族（含 `σ_{sr,sub}^{coll}, σ_{sr,health}^{coll}` 等派生标记），是个体自指率 `σ_{sr}` 的多主体场扩展。与 `Core/SRT_Core_22_Equations.md` 主方程状态场 σ 是**不同对象**。少数遗留的 `σ^{coll}` 历史符号在前向引用与跨文件桥接段落中保留，读者按此命名空间转读。
+> **σ^{coll} representation / boundary-scope truth-up (2026-08-29, S+R)**：`σ_{sr}^{coll}` 继承单体 `σ_{sr}` 的**规约性、可替换阶参**地位，但它不是单体 provenance 语义的简单复制。§4.4.1 明确把 shared `L_2` 按已声明 collective boundary 重分类为集体内源项，因此这里至少包含 **boundary-relative endogeneity**。当前 bare-norm `σ_{sr}^{coll}` 应读作在已声明集体边界、归属规则、参数表示与 norm/metric 下的 model-local collective historical/endogeneity proxy。不得由同名符号自动推出 `TRACE_individual = TRACE_collective`，也不得把其数值直接读成表示不变的自然量、当前因果控制份额、collective agency 或自然相边界。§4.7 `T-PROJ-1^{coll}` 只在给定该投影后证明条件性 ODE 闭合；C1^{coll}-C5^{coll} 不提供归属唯一性或 invariant metric。
 
 ---
 
@@ -172,6 +173,8 @@ $$
 
 - `\Theta^{coll,trace}`：群体层面历史累积参数（共同叙事、制度、路径痕迹集聚至群体自指层）
 - `\Theta^{coll,ext}`：群体对外部（其他群体、自然、新兴 `L_0` 压力）的开放接入
+
+**Scope**：这里的 `trace/ext` 是相对于已声明集体单元 `\mathcal P` 的边界归属。它可以把个体层具有 external provenance 的 shared scaffold 在集体层重新计入 `trace`；因此本式首先是**边界相对的集体历史/内生性追踪器**，不能自动继承单体 `θ^{trace}=P` 自身 prior-output writeback 的严格 authorship 语义。
 
 ### §4.2 集体遮蔽阈值
 
@@ -405,7 +408,7 @@ $$
 
 1. **`\lambda_M\,\mathrm{tr}\,M` 项**：`\dot{\mathcal{F}}_\sigma^{coll}` 中 `\theta^{coll,trace}` 部分的二阶时间导数由 `\sum_i \partial^2_{\theta_i}\mathcal{F}_{collective}` 主导；C5^{coll} 把这个二阶矩阵的迹的 operational proxy 写为 `\mathrm{tr}\,M(t)`；C2^{coll} 保证写回的 Markov 性使二阶导可写为一阶 ODE 项，得 `\lambda_M\,\mathrm{tr}\,M` 形式。
 
-2. **`\gamma_{asym}\|M_{asym}\|` 项**：`\dot{\mathcal{F}}_d^{coll}` 来自 `\nabla^2 \mathcal{F}_{collective}` 的反对称部分对景观刚化的贡献；交叉项 `\Psi_f(\hat{G}_i, \hat{G}_j) - \Psi_f(\hat{G}_j, \hat{G}_i)` 的反对称部分（即 `M_{asym}`）在 C3^{coll} 紧性下的范数即 `d_c^{coll}` 的不可互惠抬升源。
+2. **`\gamma_{asym}\|M_{asym}\|` 项**：`\dot{\mathcal{F}}_d^{coll}` 来自 `\nabla^2 \mathcal{F}_{collective}` 的反对称部分对景观刚化的贡献；交叉项 `\Psi_f(\hat{G}_i, \hat{G}_j) - \Psi_f(\hat{G}_j,\hat{G}_i)` 的反对称部分（即 `M_{asym}`）在 C3^{coll} 紧性下的范数即 `d_c^{coll}` 的不可互惠抬升源。
 
 3. **`\nu_{ext}\|M_{ext}\|` 项**：`\hat{R}^{coll}` 在 `j \notin \mathcal{P}` 投影下的范数对应 `\mathcal{F}_{collective}` 在 `\mathcal{P}` 边界外的能量泄漏；T-IRR-3.5 的 `\nu_{block}` 条件模型在边界外的对位即 `\nu_{ext}`。外溢不可被直接记作“消除”苦难；其非自动逆转根在 P0-03 / T-IRR-2，而正向沉积系数仍受 T-IRR-3.5 前件约束。
 
@@ -420,6 +423,7 @@ $$
 3. **不**证明嵌套 ISP（家庭 ⊂ 社区 ⊂ 国家）的多层投影——`SRT_Collective_Selection §9.7` 列出的多层嵌套问题不被本节解决
 4. **不**证明 `M(t)` 的非线性时间演化（H6 假设 C1^{coll} 下 `M(t)` 慢于 `σ_i`；快变 `M(t)` 域外）
 5. **不**证明 T-COLL-2 三类退化（聚合 / 主从 / 收编）与 `M(t)` 三成分（`\mathrm{tr}\,M / \|M_{asym}\| / \|M_{ext}\|`）一一对应——这种对应在 §4.4-§4.6 的 P1-candidate 命题里成立，但严格双射证明仍开放
+6. **不**证明 `\mathcal F_\sigma^{coll}` 的 trace/ext 归属唯一、bare norm 在等价集体参数化下表示不变、或其 trace 语义与单体 `P`-own-output provenance 完全同一；也不把 `σ_{sr}^{coll}` 的数值直接等同于 collective causal control / agency 或自然相边界。
 
 #### §4.7.7 与 §6 单 P 版投影的关系
 
