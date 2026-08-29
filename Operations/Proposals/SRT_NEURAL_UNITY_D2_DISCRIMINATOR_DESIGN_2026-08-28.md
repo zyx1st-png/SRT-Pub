@@ -1,7 +1,8 @@
 ---
 id: SRT-PROPOSAL-NEURAL-UNITY-D2-DISCRIMINATOR-2026-08-28
 type: proposal
-status: active_spec_stage
+status: active
+record_stage: active_spec_stage
 date: 2026-08-28
 layer: meta
 epistemic_layer: bridge

@@ -1,7 +1,8 @@
 ---
 id: SRT-AUDIT-SELECTION-ARTICULATION-EXTERNAL-NOVELTY-2026-08-28
 type: audit
-status: active_initial
+status: active
+record_stage: active_initial
 date: 2026-08-28
 layer: meta
 epistemic_layer: bridge

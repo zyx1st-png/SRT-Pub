@@ -1,7 +1,8 @@
 ---
 id: SRT-OPS-PROPOSAL-SELECTION-ARTICULATION-HARDENING-2026-08-28
 type: proposal
-status: active_unexecuted
+status: active
+record_stage: active_unexecuted
 date: 2026-08-28
 layer: meta
 epistemic_layer: os
