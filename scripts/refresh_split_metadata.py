@@ -63,12 +63,9 @@ def main() -> None:
         if not owner_path.is_file():
             skipped.append(f"{rel}: owner missing")
             continue
-        owner_bytes = owner_path.stat().st_size
-        owner_hash = sha256_file(owner_path)
-        print(f"DEBUG_SPLIT_META {rel} bytes={owner_bytes} sha256={owner_hash}")
         metadata = [
-            f"- Source owner bytes: `{owner_bytes}`",
-            f"- Source owner SHA-256: `{owner_hash}`",
+            f"- Source owner bytes: `{owner_path.stat().st_size}`",
+            f"- Source owner SHA-256: `{sha256_file(owner_path)}`",
         ]
         new_lines = lines[: owner_index + 1] + metadata + lines[owner_index + 1 :]
         new_text = "\n".join(new_lines).rstrip() + "\n"
