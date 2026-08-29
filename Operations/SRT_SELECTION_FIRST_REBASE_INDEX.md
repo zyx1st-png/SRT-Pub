@@ -1,7 +1,6 @@
 ---
 id: SRT-OPS-INDEX-SELECTION-FIRST-REBASE
--type: index
-+type: index
+type: index
 status: active
 record_stage: active_execution
 date: 2026-08-29
